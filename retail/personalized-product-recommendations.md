@@ -41,14 +41,14 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
 
 ![proddetails ([]. /media/proddetails.png)]". /media/proddetails.png)
 
-1.  ** ** Buchung auf der Seite die folgenden Schritte aus:
+2.  ** ** Buchung auf der Seite die folgenden Schritte aus:
 
 -   Das Empfehlungsmodul schlägt Artikel auf Basis der gesamten Liste von Artikeln im Korb vor.
 -   Falls die Filiale hinzufügt einem Debitor der Buchung zuordnen, wird das Empfehlungsmodul persönliche Empfehlungen mithilfe der Buchungshistorie des Debitors und die Liste der Artikel im Korb bereit.
 
 ** Hinweis ** Empfehlungen anzeigen ** Buchung ** Seite, der Einzelhändler muss das Bildschirmlayout in Dynamics 365 für Arbeitsgänge aktualisieren. Das Steuerelement ** Empfehlungen ** der Buchung muss ** ** Seite an abgelegt werden. ![transactionscreenmultipleproductslargemessengersbag-5 ([]. /media/transactionscreenmultipleproductslargemessengersbag-5.jpg)]". /media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-1.  Auf der ** Debitorendetails ** Seite:
+3.  Auf der ** Debitorendetails ** Seite:
     -   Das Empfehlungsmodul schlägt Artikel auf Grundlage die Benutzerkennung und Artikel im Wunschzettel des Debitors vor.
 
 ![customerdetailsrecommendations ([]. /media/customerdetailsrecommendations.png)]". /media/customerdetailsrecommendations.png)
