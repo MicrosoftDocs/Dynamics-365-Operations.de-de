@@ -33,9 +33,8 @@ Sie können die folgenden Typen von Dokumenten verwenden, um den Lagerbestand de
 
 ## <a name="purchase-orders"></a>Bestellungen
 Bestellungen werden in der Zentrale erstellt. Wenn ein Kleinlagerort im Bestellkopf enthalten ist, kann der Auftrag in Ihrem Unternehmen eingehen, indem modernes POS MPOS () oder Cloud POS in Microsoft Dynamics 365 für Einzelhandel - Arbeitsgänge verwendet. Nachdem die Mengen, die im Shop eingehen, eingegeben wurden, können sie lokal für weitere Änderungen gespeichert werden. Alternativ können die Mengen eingerichtet und an die Zentrale gesendet werden. In der Firmenzentrale werden die Mengen, die in Ihrem Unternehmen empfangen wurden, in Dynamics 365 für Arbeitsgänge, im ** erhalten Sie nun ** Feld der Bestellung angezeigt.
-Umlagerungsaufträge
----------------
 
+## <a name="transfer-orders"></a>Umlagerungsaufträge
 Mit einem Umlagerungsauftrag kann angegeben werden, dass ein bestimmter Shop ein Lagerplatz ist, von dem Artikel versendet werden können. In diesem Fall wird der Umlagerungsauftrag im Unternehmen als Entnahmeanforderung in MPOS oder in der Cloud POS. Nachdem die angeforderten Mengen entnommen wurden, werden sie kommissioniert und an die Zentrale gesendet. In der Firmenzentrale werden die Mengen, die entnommen wurden im Unternehmen, in Dynamics 365 für Arbeitsgänge, im ** Versand- nun ** Feld auf im Umlagerungsauftrag angezeigt. Mit einem Umlagerungsauftrag kann angegeben werden, dass ein bestimmter Shop ein Lagerplatz ist, an den Artikel versendet werden können. In diesem Fall wird der Umlagerungsauftrag im Unternehmen als Eingangsformular Anforderung in MPOS oder in der Cloud POS. Nachdem die Mengen, die im Shop eingehen, eingegeben wurden, können sie lokal für weitere Änderungen gespeichert werden. Alternativ können die Mengen eingerichtet und an die Zentrale gesendet werden. In der Firmenzentrale werden die Mengen, die in Ihrem Unternehmen empfangen wurden, in Dynamics 365 für Arbeitsgänge, im ** erhalten Sie nun ** Feld auf im Umlagerungsauftrag angezeigt.
 
 ## <a name="stock-counts"></a>Bestandsmengen
