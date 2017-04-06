@@ -1,0 +1,18 @@
+# [Getting started home pageTESTING DE-DE](getting-started-home-page.md)
+# [System requirementsTESTING DE-DE](system-requirements.md)
+# [Demo data overviewTESTING DE-DE](demo-data.md)
+# Help systemTESTING DE-DE
+## [Help system overviewTESTING DE-DE](help-overview.md)
+## [Connect the Help systemTESTING DE-DE](help-connect.md)
+# [What's new or changedTESTING DE-DE](whats-new-changed.md)
+## [Operations version 1611TESTING DE-DE (November 2016)]whats-new-dynamics-365-operations-1611.md)
+## [Operations platform update 3 (November 2016)TESTING DE-DE](whats-new-platform-update-3.md)
+## [Dynamics AX platform update 2 (August 2016)TESTING DE-DE](whats-new-platform-update-2.md) 
+## [Dynamics AX application version 7.0.1 (May 2016)TESTING DE-DE](whats-new-changed-application-version-7-0-1-may-2016.md)
+## [Dynamics AX platform update 1 (May 2016)](whats-new-changed-platform-version-7-1-may-2016.md)
+## Updated task guidesTESTING DE-DE
+### [November 2016 task guidesTESTING DE-DE](new-task-guides-november-2016.md)
+### [August 2016 task guidesTESTING DE-DE](new-updated-task-guides-available-august-2016.md)
+### [May 2016 task guidesTESTING DE-DE](new-updated-task-guides-available-may-2016.md)
+### [February 2016 task guidesTESTING DE-DE](new-task-guides-available-february-2016.md)
+### [Dynamics AX 7.0 (February 2016)](whats-new-changed-7-0-february-2016.md)
