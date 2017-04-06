@@ -14,11 +14,11 @@
 # ControlsTESTING DE-DE
 ## [Action controlsTESTING DE-DE](action-controls.md)
 ## [Input controls and grid column sizesTESTING DE-DE](sizing-input-controls-grid-columns.md)
-## [Check box support in tree controls](check-box-tree-controls.md)
+## [Check box support in tree controlsTESTING DE-DE](check-box-tree-controls.md)
 ## [FiltersTESTING DE-DE](filtering.md)
 ## Window managementTESTING DE-DE
 ## [Migrate context menu codTESTING DE-DEe](../migration-upgrade/../migration-upgrade/code-migration-context-menus.md)
-## [Migration mouse double-click code](../migration-upgrade/../migration-upgrade/code-migration-double-click.md)
+## [Migration mouse double-click codeTESTING DE-DE](../migration-upgrade/../migration-upgrade/code-migration-double-click.md)
 ## [Contextual data entry for lookupsTESTING DE-DE](contextual-data-entry-lookups.md)
 ## [HierarchyViewer control](hierarchy-viewer-control.md)
 ## [Lookup controlsTESTING DE-DE](lookups-controls.md)
@@ -42,7 +42,7 @@
 ## [Details Master form pattern](details-master-form-pattern.md)
 ## [Details Transaction form pattern](details-transaction-form-pattern.md)
 ## [Form Part Section List form pattern](section-list-form-pattern.md)
-## [List Page form pattern](list-page-form-pattern.md)
+## [List Page form patternTESTING DE-DE](list-page-form-pattern.md)
 ## [Simple Details form patternTESTING DE-DE](simple-details-form-pattern.md)
 ## [Simple List and Details form pattern](simple-list-details-form-pattern.md)
 ## [Simple List form pattern](simple-list-form-pattern.md)
