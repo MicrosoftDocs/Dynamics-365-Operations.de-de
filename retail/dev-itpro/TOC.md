@@ -1,45 +1,7 @@
 # [Dynamics 365 for Operations - Retail for IT pros and developersTESTING DE-DE TOC](dev-retail-home-page.md)
 
 # ArchitectureTESTING DE-DE TOC
-## [Retail Server architectureTESTING DE-DE TOC](retail-server-architecture.md)
 ## [Retail channel communications (retail/Commerce Data Exchange)](define-retail-channel-communications-cdx.md)
-## [MPOS architecture](retail-modern-pos-architecture.md)
-## [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
-
-# Retail ServerTESTING DE-DE TOC
-## [Extend a Retail Server OData controllerTESTING DE-DE TOC](extend-retail-server-odata-controller.md)
-## [Web API and OData controllers](odata-controllers-api.md)
-## [Retail Server customer and consumer APIs](retail-server-customer-consumer-api.md)
-## [Extend the metadata](extend-metadata.md)
-## [Call CRT service in offline mode](call-crt-service-offline.md)
-
-# [Retail store system, before you beginTESTING DE-DE TOC](retail-store-system-begin.md)
-# [Retail Store Scale Unit configuration and installationTESTING DE-DE TOC](retail-store-scale-unit-configuration-installation.md)
-
-# [Retail Channel Performance Power BI contentTESTING DE-DE TOC](/dynamics365/operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
-
-# Point of saleTESTING DE-DE TOC
-## [Retail POS device activationTESTING DE-DE TOC](retail-device-activation.md)
-## [Secure retail Cloud POS](secure-retail-cloud-pos.md)
-## [Create a Retail Experience app](create-retail-experience-app.md)
-## [Configure MPOS for offline mode](retail-modern-pos-offline.md)
-## [MPOS and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
-
-# [Hardware StationTESTING DE-DE TOC](hardware-station-extensibility.md)
-
-# Commerce runtimeTESTING DE-DE TOC
-## [Commerce runtime overviewTESTING DE-DE TOC](commerce-runtime-overview.md)
-## [Add customer preference data to a channel database](add-customer-preference-channel.md)
-## [Add properties to a sales order](add-properties-sales-order.md)
-## [Commerce runtime extensibility and triggers](commerce-runtime-extensibility-trigger.md)
-### [Trigger example: Blocking transaction](trigger-example-blocking-transaction.md)
-### [Trigger example: Return policy](trigger-example-return-policy.md)
-
-## [Commerce runtime and Retail Server extensibility ](commerce-runtime-extensibility.md)
-
-# Payment connectorTESTING DE-DE TOC
-## [Deploy a payment connectorTESTING DE-DE TOC](deploy-payment-connector.md)
-## [Create a Windows installer for a payment connector](create-windows-installer-payment-connector.md)
 
 ## e-CommerceTESTING DE-DE TOC
 ## [Configure an online storeTESTING DE-DE TOC](configure-online-store.md)
