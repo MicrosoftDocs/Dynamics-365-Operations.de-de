@@ -48,10 +48,10 @@ Sie können Einzelvorgangstypen, um ähnliche Stellen in Kategorien zu gruppiere
 ## <a name="job-functions"></a>Stellenfunktionen
 Einzelvorgangsverknüpfungen beschreiben funktionale übergeordnete Kategorien und ordnen übergeordnete Aufgaben zu. Stellenfunktionen sind nicht erforderlich. Sie können, Stellenfunktionen werden zusammen mit Stellentypen verwenden, um Vergütungspläne für bestimmte Stellen zu filtern. Sie ordnen Stellenfunktionen und Stellentypen Vergütungsplänen zu, indem Sie im Formular Berechtigungsregeln ** Berechtigungsregeln ** Seite einrichten. Sie können einen Satz Ebenen einem Vergütungsplan dann zugeordnet werden, die für eine bestimmte Kombination eines Stellentyps und der Stellenfunktion gelten, die über eine Berechtigungsregel definiert wurde. (Diese Funktionen gelten für feste Vergütungen und Plänen für variable Vergütung" zu. Planen Sie jedoch, Stellenfunktionen verwenden, wenn von Berechtigungsregeln für die Vergütungsverwaltung einrichten, sollten von Stellenfunktionen einrichten, bevor Sie zugehörige Stellenbezeichnungen einzurichten. Die folgende Tabelle enthält einige Beispiele von Stellenfunktionen anzeigen.
 
-| Stelle           | Stellenfunktion      |
-|---------------|-------------------|
-| Verkaufsleiter | Mittelstufenmanager |
-| Sachbearbeiter Buchhaltung    | Artikeln     |
+| Stelle           | Stellenfunktion         |
+|---------------|----------------------|
+| Verkaufsleiter | Mittelstufenmanager    |
+| Sachbearbeiter Buchhaltung    | Artikeln        |
 
 Verwalten Sie Stellenfunktionen hinzu, indem Sie die Stellenfunktionen ** ** Seite. ** Stellenfunktionen ** Auf der Seite geben Sie einen Kennungscode und eine kurze Beschreibung für die Stellenfunktion ein.
 
