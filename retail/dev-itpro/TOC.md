@@ -1,10 +1,10 @@
-# [Dynamics 365 for Operations - Retail for IT pros and developers](dev-retail-home-page.md)
+# [TEST DE DEDynamics 365 for Operations - Retail for IT pros and developers](dev-retail-home-page.md)
 
-# Architecture
-## [Retail Server architecture](retail-server-architecture.md)
-## [Retail channel communications (retail/Commerce Data Exchange)](define-retail-channel-communications-cdx.md)
-## [MPOS architecture](retail-modern-pos-architecture.md)
-## [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
+# TEST DE DEArchitecture
+## [TEST DE DEetail Server architecture](retail-server-architecture.md)
+## [TEST DE DERetail channel communications (retail/Commerce Data Exchange)](define-retail-channel-communications-cdx.md)
+## [TEST DE DEMPOS architecture](retail-modern-pos-architecture.md)
+## [TEST DE DERetail online store publishing architecture](retail-online-store-publishing-architecture.md)
 
 # Retail Server
 ## [Extend a Retail Server OData controller](extend-retail-server-odata-controller.md)

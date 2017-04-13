@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Supply chain management home page
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Supply chain management home page
+# TEST DE DESupply chain management home page
 
 [!include[banner](includes/banner.md)]
 
-This page points to resources that will help you use the Microsoft Dynamics 365 for Operations - Supply Chain management more effectively. 
+TEST DE DEThis page points to resources that will help you use the Microsoft Dynamics 365 for Operations - Supply Chain management more effectively. 
 
 ## What's new and in development
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 

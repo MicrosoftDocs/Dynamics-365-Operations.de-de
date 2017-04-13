@@ -1,10 +1,10 @@
-# [User interface development home page](user-interface-development-home-page.md)
-# Tutorials
-## [Build the Rental Charge Type form](build-rental-charge-type-form.md)
-## [Build the Customer form](build-customer-form.md)
-## Add contextual BI to forms
-# Forms
-## [Navigation in Dynamics 365 for Operations](page-navigation.md)
+# [TEST DE DEUser interface development home page](user-interface-development-home-page.md)
+# TEST DE DETutorials
+## [TEST DE DEBuild the Rental Charge Type form](build-rental-charge-type-form.md)
+## [TEST DE DEBuild the Customer form](build-customer-form.md)
+## TEST DE DEAdd contextual BI to forms
+# TEST DE DEForms
+## [TEST DE DENavigation in Dynamics 365 for Operations](page-navigation.md)
 ## [Layout in Dynamics 365 for Operations](page-layout.md)
 ## [Symbol font](symbol-font.md)
 ## [Test forms with custom patterns](testing-forms-custom-patterns.md)

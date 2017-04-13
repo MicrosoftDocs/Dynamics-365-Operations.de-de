@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Overview of Microsoft Dynamics 365 for Operations for Developers and IT Pros
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Overview of Microsoft Dynamics 365 for Operations for Developers and IT Pros
+# TEST DE DE Overview of Microsoft Dynamics 365 for Operations for Developers and IT Pros
 
 [!include[banner](includes/banner.md)]
 

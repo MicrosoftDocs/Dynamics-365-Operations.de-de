@@ -1,13 +1,13 @@
-# Create warehouse layout
-# Indbound process
-# Outbound process
-# Set up inventory tracking
-## [Inventory journals](inventory-journals.md)
-## [Inventory locations](inventory-locations.md)
-## [Inventory statuses](inventory-statuses.md)
+# TEST DE DECreate warehouse layout
+# TEST DE DEIndbound process
+# TEST DE DEOutbound process
+# TEST DE DESet up inventory tracking
+## [TEST DE DEInventory journals](inventory-journals.md)
+## [TEST DE DEInventory locations](inventory-locations.md)
+## [TEST DE DEInventory statuses](inventory-statuses.md)
 ## [Reserve inventory quantity](reserve-inventory-quantities.md)
 ## [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)
-# Consignment inventory
+# CTEST DE DEonsignment inventory
 ## [Consignment](consignment.md)
 ## [Set up consignment](set-up-consignment.md)
 # Quality management

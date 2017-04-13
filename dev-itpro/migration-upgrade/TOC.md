@@ -1,13 +1,13 @@
-# [Dynamics 365 for Operations versions and update policy](versions-update-policy.md)
-# [Prepare to move to the latest update](upgrade-latest-update.md)
-# [Upgrade to the latest platform update](upgrade-latest-platform-update.md)
+# [TEST DE DEDynamics 365 for Operations versions and update policy](versions-update-policy.md)
+# [TEST DE DEPrepare to move to the latest update](upgrade-latest-update.md)
+# [TEST DE DEUpgrade to the latest platform update](upgrade-latest-platform-update.md)
 # [Upgrade the Dynamics platform to the August 2016 release](update-platform-each-release.md)
 # [Upgrade a sandbox environment](upgrade-sandbox-environment.md)
 # [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md)
 # [Update development tools](../dev-tools/update-development-tools.md)
 
-# Hotfixes and servicing
-## [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
+# TEST DE DEHotfixes and servicing
+## [TEST DE DEDownload hotfixes from Lifecycle Services](download-hotfix-lcs.md)
 ## [Install a metadata hotfix](install-metadata-hotfix-package.md)
 ## [Install a financial reporting binary hotfix](install-financial-reporting-binary-hotfix.md)
 ## [Patch Reporting Services in a one-box environment](patch-reporting-service-environment.md)

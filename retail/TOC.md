@@ -1,14 +1,14 @@
-# [Introduction](index.md)
-# Call center
-## [Call center overview](call-center-functionality.md)
-## [Call center catalogs](call-center-catalogs.md)
-## [Create a call center catalog](create-call-center-catalogs.md)
+# [TEST DE DEIntroduction](index.md)
+# TEST DE DECall center
+## [TEST DE DECall center overview](call-center-functionality.md)
+## [TEST DE DECall center catalogs](call-center-catalogs.md)
+## [TEST DE DEreate a call center catalog](create-call-center-catalogs.md)
 ## [Set up fraud alerts](set-up-fraud-alerts.md)
 ## [Set up order processing options](set-up-order-processing-options.md)
 ## [Set up a continuity program for a call center](set-up-continuity-program.md)
 ## [Order holds](work-with-order-holds.md)
 ## [Payment options](work-with-payments.md)
-# Channel setup and management
+# TEST DE DEChannel setup and management
 ## [Initialize seed data in a Retail environment](enable-configure-retail-functionality.md)
 ## [Define retail channels](define-maintain-retail-channels.md)
 ## [Online store overview](online-stores.md)

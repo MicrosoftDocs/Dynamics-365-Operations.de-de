@@ -1,10 +1,10 @@
-# [Overview of information access and reporting](information-access-reporting.md)
+# [TEST DE DEOverview of information access and reporting](information-access-reporting.md)
 
-# [Access Power BI content](power-bi-content-microsoft-partners.md)
-## [Compensation and benefits](compensation-and-benefits-analysis-power-bi-content-pack.md)
-## [Cost accounting analysis](cost-accounting-analysis-content-pack.md)
+# [TEST DE DEAccess Power BI content](power-bi-content-microsoft-partners.md)
+## [TEST DE DECompensation and benefits](compensation-and-benefits-analysis-power-bi-content-pack.md)
+## [TEST DE DECost accounting analysis](cost-accounting-analysis-content-pack.md)
 ### [Security for the Cost accounting analysis](setup-security-cost-accounting-content-pack.md)
-## [Cost management](cost-management-content-pack.md)
+## [TEST DE DECost management](cost-management-content-pack.md)
 ## [Credit collections](credit-collections-content-pack-power-bi.md)
 ## [Employee competencies and development](employee-competencies-and-development-analysis-power-bi-content-pack.md)
 ## [Financial performance](financial-performance-power-bi-content-pack.md)
@@ -15,9 +15,9 @@
 ## [Sales and profitability performance](sales-profitability-performance-content-pack.md)
 ## [Workforce analysis](workforce-analysis-power-bi-content-pack.md)
 
-# Document reporting and printing
-## [Document Reporting Services overview](document-reporting-services.md)
-## [Printing](print-documents.md)
+# TEST DE DEDocument reporting and printing
+## [TEST DE DEDocument Reporting Services overview](document-reporting-services.md)
+## [TEST DE DEPrinting](print-documents.md)
 ### [Enable network printer devices](install-document-routing-agent.md)
 ### [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md)
 ## [Help prevent long-running reports from timing out](prevent-long-running-reports-timing-out.md)

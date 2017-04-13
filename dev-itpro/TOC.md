@@ -1,13 +1,13 @@
-# [Introduction](index.md)
+# [TEST DE DEIntroduction](index.md)
 
-# [Overview of Dynamics 365 for Operations](get-started/TOC.md)
+# [TEST DE DEOverview of Dynamics 365 for Operations](get-started/TOC.md)
 
-# [Develop and customize using Visual Studio](dev-tools/TOC.md)
+# [TEST DE DEDevelop and customize using Visual Studio](dev-tools/TOC.md)
 
-# [User interface development](user-interface/TOC.md)
+# [TEST DE DEUser interface development](user-interface/TOC.md)
 
-# Release solutions using Lifecycle Services
-## [Develop and release](lcs-solutions/lcs-solutions-app-source.md)
+# TEST DE DERelease solutions using Lifecycle Services
+## [TEST DE DEDevelop and release](lcs-solutions/lcs-solutions-app-source.md)
 ## [Stage and publish](lcs-solutions/marketing-content-lcs-solutions.md)
 ## [Add a methodology](lcs-solutions/methodologies-lcs-solutions.md)
 ## [Migrate code](lcs-solutions/code-migration-lcs-solutions.md)
@@ -15,8 +15,8 @@
 ## [Process and consume data packages](lcs-solutions/process-data-packages-lcs-solutions.md)
 ## [Back up a solution database](lcs-solutions/database-backup-lcs-solutions.md)
 
-## [Localizations](lcs-solutions/country-region.md)
-### [Classify localization features](lcs-solutions/classify-localization-features.md)
+## [TEST DE DELocalizations](lcs-solutions/country-region.md)
+### [TEST DE DEClassify localization features](lcs-solutions/classify-localization-features.md)
 ### [Country/region context](lcs-solutions/apply-country-context.md)
 ### [Regulatory certifications](lcs-solutions/regulatory-certifications.md)
 ### [Regulatory updates](lcs-solutions/regulatory-watch-communication.md)
@@ -24,12 +24,12 @@
 ### [Submit a regulatory alert](lcs-solutions/submit-localization-alerts.md)
 
 
-# [Analytics](analytics/TOC.md)
+# [TEST DE DEAnalytics](analytics/TOC.md)
 
-# [Data entities](data-entities/TOC.md)
+# [TEST DE DEData entities](data-entities/TOC.md)
 
-# Mobile apps
-## [Install and configure the warehousing app ](/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
+# TEST DE DEMobile apps
+## [TEST DE DEInstall and configure the warehousing app ](/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
 
 # Office integration

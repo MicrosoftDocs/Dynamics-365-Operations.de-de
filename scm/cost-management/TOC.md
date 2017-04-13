@@ -1,11 +1,11 @@
-# Power BI content pack
-## [Cost management content pack](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
-# Predetermined cost
-## [Costing sheet](costing-sheets.md)
-## [Costing version](costing-versions.md)
-## [Simulate cost change by using a costing version for planned cost](simulate-cost-changes-costing-version-planned-costs.md)
-# Inventory costing
-## [Adjust on-hand inventory cost value](adjust-hand-inventory-cost-values.md)
+# TEST DE DEPower BI content pack
+## [TEST DE DECost management content pack](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+# TEST DE DEPredetermined cost
+## [TEST DE DECosting sheet](costing-sheets.md)
+## [TEST DE DECosting version](costing-versions.md)
+## [TEST DE DESimulate cost change by using a costing version for planned cost](simulate-cost-changes-costing-version-planned-costs.md)
+# TEST DE DEInventory costing
+## [TEST DE DEAdjust on-hand inventory cost value](adjust-hand-inventory-cost-values.md)
 ## [Cost object](cost-object.md)
 ## [Cost entry](cost-entries.md)
 ## [Cost group](cost-groups.md)

@@ -1,9 +1,9 @@
-# [Cost management](cost-management/TOC.md)
-# [Inventory management](inventory/TOC.md)
-# Master planning
-## Create demand forecast
-### [Demand forecast overview](master-planning/introduction-demand-forecasting.md)
-### [Set up a demand forecast](master-planning/demand-forecasting-setup.md)
+# [TEST DE DECost management](cost-management/TOC.md)
+# [TEST DE DEInventory management](inventory/TOC.md)
+# TEST DE DEMaster planning
+## TEST DE DECreate demand forecast
+### [TEST DE DEDemand forecast overview](master-planning/introduction-demand-forecasting.md)
+### [TEST DE DESet up a demand forecast](master-planning/demand-forecasting-setup.md)
 ### [Generate a statistical baseline forecast](master-planning/generate-statistical-baseline-forecast.md)
 ### [Make manual adjustment to the baseline forecast](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Authorize an adjusted forecast](master-planning/authorize-adjusted-forecast.md)

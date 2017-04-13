@@ -1,12 +1,12 @@
-# [Human resources home page](index.md)
-# Develop Human resources strategy
-## [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
-## [Set up job components](create-job.md)
+# [TEST DE DEHuman resources home page](index.md)
+# TEST DE DEDevelop Human resources strategy
+## [TEST DE DEOrganize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
+## [TEST DE DESet up job components](create-job.md)
 ## [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
-## [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
-## [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
-## [Use workflow to manage employee information](workflow-manage-employee-information.md)
-# Recruit, hire, and motivate employees
+## [TEST DE DESet up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
+## [TEST DE DESet up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
+## [TEST DE DEUse workflow to manage employee information](workflow-manage-employee-information.md)
+# TEST DE DERecruit, hire, and motivate employees
 ## [Manage a recruiting process](manage-recruiting-process.md)
 ## [Mass hire projects](mass-hire-projects.md)
 ## [Compensation plans](compensation-plans.md)
