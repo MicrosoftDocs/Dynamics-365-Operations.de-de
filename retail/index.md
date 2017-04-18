@@ -1,8 +1,6 @@
-﻿---
-# required metadata
-
-title: Retail home page
-description: Home page for Dynamics 365 for Operations – Retail
+---
+title: Einzelhandel-Homepage
+description: "Homepage für Dynamics 365 für Vorgänge – Einzelhandel"
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,16 +8,8 @@ ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-# ms.reviewer: josaw
 ms.search.scope: Operations, Core
-# ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -27,73 +17,79 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+translationtype: Human Translation
+ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
+ms.openlocfilehash: 0d00f33ce8059acd877d1c177e3def0b5f0b73b1
+ms.lasthandoff: 04/12/2017
+
 
 ---
 
-# TEST DE DERetail home page
+# <a name="retail-home-page"></a>Einzelhandel-Homepage
 
 [!include[banner](includes/banner.md)]
 
-TEST DE DEDynamics 365 for Operations – Retail delivers a complete shopping experience, with a seamless and differentiating omni-channel solution that is modern, mobile, and global. End-to-end capabilities, from modern point of sale (POS) software solutions, store operations, merchandising, e-commerce, call center, marketing, and customer care, to supply chain, financials, and more, can be deployed in the way that makes the most sense for your business.
+Dynamics 365 für Vorgänge – bietet Retail eine vollständige Einkaufserlebnis mit eine nahtlose und Differenzierung Omni-Channel Lösung moderne mobile und globale. End-to-End-Funktionen aus modernen Verkaufsstellen (POS) Software Solutions Speichervorgänge merchandising, e-Commerce, Call-Center, Marketing und Kundendienst, Kette, Finanzdaten und mehr können wie bereitgestellt werden, die für Ihr Unternehmen am sinnvollsten ist.
 
-This page points to resources that will help you use Microsoft Dynamics 365 for Operations - Retail more effectively. On the leftmost pane, select a feature area to learn more about it. 
+Diese Seite zeigt auf Ressourcen, die Ihnen helfen verwenden Microsoft Dynamics 365 für Operationen - Einzelhandel effektiver. Wählen Sie im linken Bereich Featurebereich, Weitere Informationen. 
 
-## Set up Retail channels
-As you set up your Retail experience, you'll decide how to define and configure your brick and mortar store (called *retail store* in Dynamics 365 for Operations) and online store operations. 
+## <a name="set-up-retail-channels"></a>Einrichten von Einzelhandelskanälen
+Entscheiden Sie beim Einrichten der Einzelhandel zum Definieren und Konfigurieren der physische Speicher (aufgerufen *Einzelhandel* in Dynamics 365 für Vorgänge) und Operations online-Shop. 
 
-Each retail store can have its own payment methods, price groups, POS solutions, income accounts, expense accounts, and staff. After you create your retail store, you assign the products that you want the store to carry. You also assign employees, registers, and customers to the store. Finally, you add the new store to an organization hierarchy.
+Jedes Einzelhandelsgeschäft können eigenen Zahlungsmethoden, Preisgruppen, POS Solutions, GuV Konten, Ausgabenkonten und Mitarbeiter. Nach dem Erstellen der Einzelhandel weisen Sie die Produkte, die die Filiale umfassen soll. Sie ordnen außerdem Mitarbeiter, Register und Debitoren der Filiale zu. Fügen Sie den neuen Shop schließlich zu einer Organisationshierarchie hinzu.
 
-When you create your online store, you must set up components such as assortments, attributes, payment methods, and shipping methods. You can also define prices, promotions, discounts, and shipping terms that are specific to the online store.
+Wenn Ihr Onlineshop erstellen, müssen Sie Komponenten wie Sortimente Attribute, Zahlung und Versand einrichten. Sie können auch definieren, Preise, Angebote, Rabatte und Lieferbedingungen, die für den Onlineshop.
 
--   [Define retail channels](define-maintain-retail-channels.md)
+-   [Einzelhandelskanäle definieren](define-maintain-retail-channels.md)
 -   [Online store overview](online-stores.md)
 
-## Set up a call center
-You can set up a call center as a type of retail channel. In a call center, workers take orders from customers over the phone and create sales orders. To help your workers take orders and handle customer service throughout the order fulfillment process, you can set up what a sales order will contain, how pricing will be controlled, and what data about customers, products, and pricing can be accessed. For each call center, you can also set up users, payment methods, price groups, financial dimensions, and modes of delivery.
+## <a name="set-up-a-call-center"></a>Einrichten eines Callcenters
+Sie können ein Call-Center als Typ Einzelhandelskanal einrichten. In einem Callcenter nehmen Arbeitskräfte Aufträge von Debitoren per Telefon entgegen und erstellen Aufträge. Damit Ihre Mitarbeiter Aufträge entgegennehmen und Kundenservice während des Versandprozesses Reihenfolge behandelt werden, können Sie einrichten wie ein Auftrag enthält, wie Preise gesteuert wird und Daten zu Kunden, Produkten und Preisen zugegriffen werden können. Für jeden Callcenter können Sie auch Benutzer, Zahlungsmethoden, Preisgruppen, Finanzdimensionen und Lieferarten einrichten.
 
 -   [Call center functionality](call-center-functionality.md)
 -   [Create call center catalogs](create-call-center-catalogs.md)
 
-## Define your POS and MPOS solutions
-Retail Modern POS (MPOS) is a point-of-sale app for PCs, tablets, and phones. Sales staff can process sales transactions, customer orders, and perform daily operations and inventory management with mobile devices anywhere in the store, as well as at PC-based registers. Cloud POS is a browser-based POS. 
+## <a name="define-your-pos-and-mpos-solutions"></a>Der POS und MPO Lösungen
+Retail moderne POS (MPO) ist ein POS-Anwendung für PCs, Tablets und Telefone. Vertriebsmitarbeiter können Verarbeiten von Verkaufstransaktionen Kundenaufträge, tägliche Operationen und Lagerverwaltung mit mobilen Geräten überall im Speicher sowie PC-basierte registriert. Cloud POS ist eine Browser-basierte POS. 
 
-There are several components you’ll set up to define the relationships among a store, the POS registers or channels within the store, and the retail peripherals that those registers or channels use to process transactions. You’ll also define the characteristics of a specific instance of the POS, including the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who logs on to that register.
+Sind mehrere Komponenten, die das Verhältnis zwischen einem Speicher, POS-Register oder Kanäle im Speicher definiert eingerichtet werden, und die Peripheriegeräte, die registriert oder Kanäle verwenden, um Transaktionen zu verarbeiten. Außerdem definieren Sie die Eigenschaften einer bestimmten Instanz des POS, einschließlich Hardware-Profil oder Setup für Peripheriegeräte, die Register Speicher Register zugeordnet ist und die visuelle Darstellung für den Benutzer verwendet wird, die Anmeldung, anmelden.
 
--   [Define and maintain channel clients, registers, and hardware stations](define-maintain-channel-clients-registers-hw-stations.md)
--   [Configure and install MPOS](retail-modern-pos-device-activation.md)
--   [Offline POS functionality](pos-offline-functionality.md)
+-   [Definieren und Verwalten von Channel-Clients registriert und Hardware-Stationen](define-maintain-channel-clients-registers-hw-stations.md)
+-   [Konfiguration und Installation MPO](retail-modern-pos-device-activation.md)
+-   [Offlinefunktionalität POS](pos-offline-functionality.md)
 
-## Set up a customer loyalty program
-You can set up your loyalty program so that customers earn points based on specific criteria, and the points can be calculated in various ways. Your loyalty program can be simple or complex, and apply across your legal entities in any retail channel.
--   [Set up a customer loyalty program](set-up-customer-loyalty-program.md)
+## <a name="set-up-a-customer-loyalty-program"></a>Richten Sie ein Kundenbindungsprogramm
+Sie können Ihre Treueprogramm einrichten, damit Kunden anhand bestimmter Kriterien Punkte und die Punkte können auf verschiedene Weise berechnet. Ihre Treueprogramm kann einfach oder komplex und juristischen Personen in jeder Einzelhandelskanal nutzen.
+-   [Richten Sie ein Kundenbindungsprogramm](set-up-customer-loyalty-program.md)
 
-## Set up discounts and price adjustments
-You can make price adjustments to products, and can also set up discounts that are applied to a line item or a transaction at the POS, in a call center sales order, or in an online order. 
+## <a name="set-up-discounts-and-price-adjustments"></a>Rabatte und Preiskorrekturen einrichten
+Sie können Preiskorrekturen Produkte und können auch Einrichten der Rabatte, die auf einen Positionsartikel oder eine Buchung am POS in einem Call Center-Auftrag oder eine Bestellung angewendet werden. 
 -   [Price adjustments and discounts](price-adjustments-discounts.md)
 -   [Define channel-specific discounts](define-channel-specific-discounts.md)
--   [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
+-   [Ermitteln Sie die optimale Kombination aus überlappenden Rabatte](optimal-combination-overlapping-discounts.md)
 
-## Set up retail products
-Before you can offer products for sale in your retail channels, you'll need to create and configure the products in Dynamics 365 for Operations. You can create the products, define the product properties and attributes, and assign the products to retail category hierarchies. To make the products available to your retail channels and add them to an active assortment, you'll then release the products to the legal entities in which they are available.
+## <a name="set-up-retail-products"></a>Einrichten von Einzelhandelsprodukten
+Bevor Sie Produkte in den Einzelhandelskanälen anbieten können, müssen Sie zum Erstellen und Konfigurieren der Produkte in Dynamics 365 für Vorgänge. Sie können die Produkte erstellen, die Produkteigenschaften und Attribute definieren und die Produkte den Einzelhandelskategoriehierarchien zuweisen. Produkte für die Einzelhandelskanäle verfügbar zu machen und sie einem aktive Sortiment hinzufügen werden Sie dann Produkte für die juristischen Personen freigeben in denen sie verfügbar sind.
 -   [Set up retail products](set-up-retail-products.md)
 
-## Monitor and analyze performance
-Using your Dynamics 365 for Operations data, you can analyze store performance, customer and product profitability, sales trends, and more.
+## <a name="monitor-and-analyze-performance"></a>Überwachen und Analysieren der Leistung
+Ihre Dynamics 365 für operative Daten verwenden, können Sie die Speicher-Performance, Kunden- und Produktinformationen Rentabilität und Umsatztrends analysieren.
 -   [Assess customer and product profitability](assess-customer-product-profitability.md)
 -   [Analyze store performance](store-performance-information.md)
 
-## Customize and administer Retail environments
-If you have been asked to customize your environment, or if you are tasked with deploying and maintaining your system, check out the developer and system administrator content specific to Retail, as well as the more general content for Microsoft Dynamics 365 for Operations. 
--   [Dynamics 365 for Operations - Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamics 365 for Operations for Developers and IT Pros](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+## <a name="customize-and-administer-retail-environments"></a>Anpassen und Einzelhandel verwalten
+Überprüfen Sie Wenn Sie wurden gebeten, Ihre Umgebung anzupassen oder mit Bereitstellung und Wartung des Systems beauftragt sind, Entwickler und System Administrator Inhalte Einzelhandel sowie allgemeine Inhalte für Microsoft Dynamics 365 für Vorgänge. 
+-   [Dynamics 365 für Vorgänge - Einzelhandel für IT-Spezialisten und Entwickler](dev-itpro/dev-retail-home-page.md)
+-   [Microsoft Dynamics 365 für Operationen für Entwickler und IT-Spezialisten](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
 
-## Additional resources
-### What's new and in development
-Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+### <a name="whats-new-and-in-development"></a>Was ist neu in der Entwicklung
+Zu den <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> freigegeben werden, welche neuen Funktionen und welche neuen Features in der Entwicklung. 
 
-### Blogs
-You can find opinions, news, and other information about Microsoft Dynamics 365 for Operations - Retail and other solutions on the <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 blog</a>.
+### <a name="blogs"></a>Blogs
+Finden Sie Stellungnahmen, Neuigkeiten und sonstige Informationen zu Microsoft Dynamics 365 für Vorgänge - Einzelhandel und andere auf der <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 Blog</a>.
 
-There are many topics about Retail on the <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX product team blog</a>. Some of these posts were written for the previous version of Dynamics 365 for Operations, but the same concepts still apply, and the procedures are similar in the current version.
+Viele Themen über Retail die <a href="https://blogs.msdn.microsoft.com/dax/">Teamblog für Microsoft Dynamics AX-Produkt</a>. Einige dieser Beiträge für die vorherige Version von Dynamics 365 für Vorgänge waren jedoch weiterhin die gleiche Konzepte gelten und Verfahren ähneln in der aktuellen Version.
 
-The <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog</a> provides Microsoft Dynamics Partners with a single resource to learn about what’s new and trending in MBS Operations.
+Die <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operationen Partner Gemeinde Blog</a> bietet Microsoft Dynamics-Partner mit einer einzelnen Ressource erfahren Sie mehr über Neuigkeiten Trends in MBS-Operationen und.
+

@@ -1,8 +1,6 @@
-﻿---
-# required metadata
-
-title: Human resources
-description: Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
+---
+title: Personalverwaltung
+description: "Personalverwaltungen rationalisieren viele routinemäßige Protokollierungsaufgaben und automatisieren zahlreiche Prozesse, die das Personal Ihrer Organisation betrifft. Darüber hinaus stellt es ein Framework bereit, mit dem die Personalverwaltung-Mitarbeiter Aufsichtsbereiche verwalten können. Diese Bereiche enthalten Mitarbeitereinstellung und -Beibehaltung, Vergütungsverwaltung, Schulungen, Leistungsbeurteilungen und Änderungsmanagement."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,95 +8,93 @@ ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
-# ms.tgt_pltfrm: 
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
+ms.openlocfilehash: d434b2169fa39fde65d261acb0b30cda7a37b143
+ms.lasthandoff: 04/12/2017
+
 
 ---
 
-# TEST DE DEWelcome to human resources
+# <a name="welcome-to-human-resources"></a>Willkommen zur Personalverwaltung
 
 [!include[banner](includes/banner.md)]
 
-TEST DE DEHuman resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
+Personalverwaltungen rationalisieren viele routinemäßige Protokollierungsaufgaben und automatisieren zahlreiche Prozesse, die das Personal Ihrer Organisation betrifft. Darüber hinaus stellt es ein Framework bereit, mit dem die Personalverwaltung-Mitarbeiter Aufsichtsbereiche verwalten können. Diese Bereiche enthalten Mitarbeitereinstellung und -Beibehaltung, Vergütungsverwaltung, Schulungen, Leistungsbeurteilungen und Änderungsmanagement.
 
-You can use Human resources to complete these tasks:
+Sie können mit dem Modul "Personalverwaltung" diese Aufgaben durchführen:
 
-Administer organizational structures.
-Maintain comprehensive worker information from hire to retire.
-Define and administer benefit plans, enroll workers, assign dependent coverage, and designate beneficiaries.
-Establish and monitor absence policies.
-Implement and track profile-based time management and generate pay information to export to a payroll system.
-Manage worker competencies.
-Review performance and implement worker goals.
-Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
-Recruit workers and track applicants.
+> + Verwalten Sie organisatorische Strukturen.
+> + Verwalten Sie umfassende Arbeitskraftinformationen, von der Anstellung bis zur Pensionierung.
+> + Definieren und verwalten Sie Vergütungspläne, registrieren Sie Arbeitskräften, weisen Sie die Abdeckung von Unterhaltsberechtigen zu und legen Sie Begünstigte fest.
+> + Richten Sie Abwesenheitsrichtlinien ein und überwachen Sie sie.
+> + Implementieren und verfolgen Sie eine profil-basierte Zeitverwaltung und generieren Sie Zahlungsinformationen, die in ein Lohnsystem exportiert werden sollen.
+> + Verwalten Sie Arbeitskraftkompetenzen.
+> + Überprüfen Sie Leistungen und implementieren Sie Ziele der Arbeitskräfte.
+> + Richten Sie Schulungskurse ein, die Agendas, Sitzungen und Verläufe beinhalten, stellen sie bereit und analysieren sie.
+> + Werben Sie Arbeitskräfte an und verfolgen Bewerber nach.
 
-Develop a human resources strategy
+<a name="develop-a-human-resources-strategy"></a>Entwicklung einer Strategie für die Personalverwaltung
 ---------------------------------------------------------
 
-As you work with Human resources, you'll decide how to structure your organization, using elements, such as departments, jobs, and positions. These are among the foundational elements that you'll configure in Human resources. Individual employees are assigned to positions which are associated with jobs.
+Arbeiten mit Personalverwaltung entscheiden Sie Strukturieren Ihrer Organisation mit Elementen wie Abteilungen, stellen und Positionen. Dies sind die grundlegenden Elemente, die in der Personalverwaltung konfiguriert werden. Einzelne Mitarbeiter werden Positionen zugewiesen, die Stellen zugeordnet sind.
 
--   [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
--   [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
--   [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md) 
+-   [Organisieren Sie Ihre Mitarbeiter mit Abteilungen, stellen und Positionen](departments-jobs-positions.md)
+-   [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](set-up-company-specific-hr-parameters.md)
+-   [Einrichten von Personalverwaltungsparametern in verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md) 
 
-## Recruit, hire, and motivate employees
+## <a name="recruit-hire-and-motivate-employees"></a>Anwerben, Einstellen und Motivieren von Mitarbeitern
 
-Recruitment projects manage the content used in advertisements for open positions, and can help you manage applications for job openings. You can use them to track responses to job postings for a specific recruitment project, or specific applicants, and update the status of open positions. You can also hire single applicants or manage "mass hire projects," that facilitate hiring multiple workers, for example, to meet seasonal business needs.
+Personalbeschaffungsprojekte verwalten den Inhalt, der in Anzeigen für offene Positionen verwendet wird und helfen Ihnen, Bewerbungen auf Stellenangebote zu verwalten. Sie können Sie verwenden, um Antworten auf Stellenausschreibungen für ein bestimmtes Personalbeschaffungsprojekt oder bestimmte Bewerber nachzuverfolgen und aktualisieren den Status offener Stellen. Sie können einzelne Bewerber einstellen oder "Masseneinstellungsprojekte" verwalten, die das Einstellen mehrerer Arbeitskräfte erleichtern, z. B. bei saisonalem Bedarf.
 
 -   [Manage a recruiting process](manage-recruiting-process.md)
 -   [Mass hire projects](mass-hire-projects.md) 
 
-After you've hired staff, you can set up plans to effectively and equitably manage compensation, as well as manage items, such as computers or phones, that your organization lends to its employees. You can create fixed and variable compensation plans, as well as define rules that apply the compensation plan to meet the criteria for that plan.
+Nachdem Sie Mitarbeiter eingestellt haben, können Sie Pläne einrichten, um effektiv und ausgewogen Vergütungen und Objekte zu verwalten, die Ihre Organisation den Mitarbeitern zur Verfügung stellt, wie z. B. Computer oder Telefone. Sie können feste und variable Vergütungspläne erstellen, sowie Regeln für den Vergütungsplan mit entsprechenden Kriterien für den Plan definieren.
 
--   [Compensation plans](compensation-plans.md)
--   [Create fixed compensation plans](create-fixed-compensation-plans.md)
--   [Create variable compensation plans](create-variable-compensation-plans.md)
+-   [Vergütungspläne](compensation-plans.md)
+-   [Erstellen von Plänen für feste Vergütung](create-fixed-compensation-plans.md)
+-   [Erstellen von Plänen für variable Vergütung](create-variable-compensation-plans.md)
 
-## Develop and train employees
+## <a name="develop-and-train-employees"></a>Mitarbeiter fördern und schulen
 
-To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
+Um Ihre Mitarbeiter ihre beruflichen Ziele erreichen und geschäftskritische liefern Sie können Ziele einrichten, Mitarbeitergespräche erstellen und verfolgen Sie Feedback an Mitarbeiter erforderlichen Kenntnisse, Sie können auch Dozenten, Kurstypen Kurse, Kurs Beschreibung, Tagesordnungen, Tracks und Sessions, bevor Sie einen Kursleiter einem Kurs zuweisen oder eine Person für einen Kurs registrieren. Kursleiter müssen bereits als Arbeitskräfte, Bewerber oder Kontakte vorhanden sein.
 
--   [Performance management](performance-management-overview.md)
--   [Align workforce skills and business needs](skills.md)
+-   [Performance-management](performance-management-overview.md)
+-   [Mitarbeiter-Qualifikationen und Unternehmen ausrichten](skills.md)
 -   [Administer training through courses](courses.md)
 
-## Create and maintain benefits
+## <a name="create-and-maintain-benefits"></a>Vergütungen erstellen und verwalten
 
-In addition to compensating your staff with wages, salaries, and bonuses, you can develop benefit programs such as health insurance and retirement plans. You can also manage benefits such as loan programs, in which your company lends items, such as computers or phones, to its employees.
+Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, können Sie Vergütungsprogramme, wie Krankenversicherung und Pensionspläne entwickeln. Sie können Vergütungen (z. B. Verleihprogramme) verwalten, in denen Ihr Unternehmen seinen Mitarbeitern Artikel (z. B. Computer oder Telefone) ausleiht.
 
--   [Manage a benefit program](manage-benefit-program.md)
+-   [Verwalten eines Programms nutzen](manage-benefit-program.md)
 -   [Benefit eligibility policies](benefit-eligibility-policies.md)
 -   [Manage items lent to workers](loan-items.md)
 
-## Maintain workplace safety and compliance
+## <a name="maintain-workplace-safety-and-compliance"></a>Verwalten von Arbeitsplatzsicherheit und Compliance
 
-Microsoft Dynamics AX can help you maintain a safe work environment that’s in compliance with applicable laws, including the Americans with Disabilities Act and immigration and naturalization laws, among others. For example, you can manage the physical requirements for specific jobs, as well as track requests for accommodations that can help your organization optimize the skills of its workforce.
+Microsoft Dynamics AX hilft Ihnen dabei, eine sichere Arbeitsumgebung zu verwalten, die mit den geltenden Gesetzen übereinstimmen, einschließlich der Vorgaben des Americans with Disabilities Act und der Einwanderungs- und Einbürgerunggesetze. So können Sie beispielsweise die physischen Anforderungen für bestimmte Stellen verwalten, sowie Anforderungen von Arbeitsplatzhilfsmitteln verfolgen, um so die Organisation dabei zu unterstützen, die Qualifikationen ihrer Belegschaft zu optimieren.
 
--   [Form I-9 employment verification](localizations/noam-usa-form-i-9-verification.md)
--   [Comply with the Americans with Disabilities Act](localizations/noam-usa-comply-ada.md)
+-   [Überprüfung von Formular i-9-Beschäftigung](localizations/noam-usa-form-i-9-verification.md)
+-   [Einhaltung der Vorgaben des Americans with Disabilities Acts](localizations/noam-usa-comply-ada.md)
 
-## Gather information using questionnaires
+## <a name="gather-information-using-questionnaires"></a>Informationen anhand von Fragebögen sammeln
 
-You can design and administer questionnaires to gather information that’s used for a variety of purposes. The Questionnaire feature lets you design and create questionnaires. When a questionnaire is ready, you distribute it broadly or to a specific set of respondents to complete. After the respondents provide their answers, you can review and analyze the results.
+Sie können Fragebögen entwerfen und verwalten, um Informationen für die verschiedensten Zwecke zu sammeln. Die Fragebogen-Funktion ermöglicht das Entwerfen und Erstellen von Fragebögen. Wenn ein Fragebogen fertig ist, lassen Sie ihn allgemein oder innerhalb einer bestimmten Gruppe von Befragten ausfüllen. Nachdem die Teilnehmer ihre Antworten angegeben haben, überprüfen und analysieren Sie die Ergebnisse.
 
 -   [Questionnaires](questionnaires.md)
 -   [Design a questionnaire](design-questionnaires.md)
 -   [Distribute and complete a questionnaire](distribute-questionnaires.md)
 -   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+
 

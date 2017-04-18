@@ -1,8 +1,6 @@
-﻿---
-# required metadata
-
-title: Introduction to Dynamics 365 for Operations
-description: Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
+---
+title: "Einführung in Dynamics 365 für Vorgänge"
+description: "Microsoft Dynamics 365 für Vorgänge ist Microsoft Anwendung für Unternehmen. Auf dieser Seite können Sie erfahren und das Produkt verwenden."
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,32 +8,28 @@ ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
-
-# optional metadata
-
-# keywords: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: 71
-
-# ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
-# ms.industry: 
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
+ms.openlocfilehash: 0a02712d31a656b0a175d6d5acf8d2ee5fe6346b
+ms.lasthandoff: 04/12/2017
+
 
 ---
-# TEST DE_DEIntroduction to Dynamics 365 for Operations
+# <a name="introduction-to-dynamics-365-for-operations"></a>Einführung in Dynamics 365 für Vorgänge
 
 [!include[banner](includes/banner.md)]
 
-TEST DE_DEMicrosoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
+Microsoft Dynamics 365 für Vorgänge ist Microsoft Anwendung für Unternehmen. Sie können Personen zu schnell Intelligenter über eine intelligente Benutzeroberfläche den Zugriff auf Echtzeit-Einblicke und Daten. Es ermöglicht Unternehmen, Transformation und Innnovate mit bewährten Geschäftslogik, die Geschäftsprozesse schneller entwerfen kann. Es gibt Unternehmen die Flexibilität in ihrem eigenen Tempo wachsen und Geschäfte nahezu überall und jederzeit erlaubt ihnen ihre Operationen Global Geschäftsbedürfnisse skalieren. 
 
-TEST DE_DEThis user guide can help you learn how to make Dynamics 365 for Operations work for your business.    
+Diese Anleitung hilft Ihnen Dynamics 365 Operationen für Ihr Unternehmen arbeiten lernen.    
 
 <table>
 <colgroup>
@@ -44,8 +38,8 @@ TEST DE_DEThis user guide can help you learn how to make Dynamics 365 for Operat
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="get-started/onboarding-home.md">Onboarding your organization</a></p>
-<p>Financials</p>
+<td><p><a href="get-started/onboarding-home.md">Onboarding Ihrer Organisation</a></p>
+<p>Finanzdaten</p>
 <ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
 <li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
 <li><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></li>
@@ -55,24 +49,24 @@ TEST DE_DEThis user guide can help you learn how to make Dynamics 365 for Operat
 <li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
 <li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
 <li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
-<p><a href="dev-itpro/lcs-solutions/country-region.md">Regional features</a></p>
-<p>Human resources</p>
+<p><a href="dev-itpro/lcs-solutions/country-region.md">Regionale Besonderheiten</a></p>
+<p>Personalverwaltung</p>
    <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">HR strategy</a></li>
-  <li><a href="human-resources/manage-recruiting-process.md">Recruit, hire & motivate</a></li>
-  <li><a href="human-resources/performance-management-overview.md">Employee training</a></li>
+  <li><a href="human-resources/departments-jobs-positions.md">HR-Strategie</a></li>
+  <li><a href="human-resources/manage-recruiting-process.md">Werben einstellen und motivieren</a></li>
+  <li><a href="human-resources/performance-management-overview.md">Mitarbeiter</a></li>
   <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
   <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
-  <li><a href="human-resources/localizations/noam-usa-payroll.md">US features</a></li>
+  <li><a href="human-resources/localizations/noam-usa-payroll.md">US-Funktionen</a></li>
 </ul></td>
   <td>
-  <p>Retail</p>
+  <p>Einzelhandel</p>
   <ul>
 <li><a href="retail/call-center-functionality.md">Call center</a></li>
   <li><a href="retail/define-maintain-retail-channels.md">Channel setup and management</a></li>
-  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS and Cloud POS</a></li>
-  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration </a></li></ul>
-  <p>Supply chain management</p>
+  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPO und Cloud POS</a></li>
+  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Einzelhandel-Entwickler und Verwaltung</a></li></ul>
+  <p>Lieferkettenverwaltung</p>
 <ul>
 <li><a href="supply-chain/cost-management/costing-sheets.md">Cost management</a></li>
   <li><a href="supply-chain/inventory/inventory-locations.md">Inventory management</a></li>
@@ -83,13 +77,14 @@ TEST DE_DEThis user guide can help you learn how to make Dynamics 365 for Operat
   <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
   <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportation management</a></li>
   <li><a href="supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
-  <p>Developer & admin functionality</p>
+  <p>Entwickler und Admin-Funktion</p>
   <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
   <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
-  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobile apps</a></li>
+  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobile Anwendungen</a></li>
   <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>
   <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
   <li><a href="dev-itpro/dev-tools/developer-home-page.md">Developer tools</a></li></ul></td>
 </tr>
 </tbody>
 </table>
+
