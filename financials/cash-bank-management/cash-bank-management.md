@@ -27,6 +27,9 @@ ms.lasthandoff: 04/12/2017
 
 # <a name="cash-and-bank-management-home-page"></a>Startseite "Bargeld- und Bankverwaltung"
 
+[!include[banner](../includes/banner.md)]
+
+
 Sie können die Bargeld- und Bankverwaltung verwenden, um die Bankkonten der juristischen Person und die Finanzinstrumente zu verwalten, die diesen Bankkonten zugeordnet sind. 
 
 Zu diesen Finanzinstrumenten gehören Einzahlungsbelege, Schecks, Wechsel und Solawechsel. Darüber hinaus haben Sie die Möglichkeit zum Abstimmen der Bankauszüge sowie zum Drucken von Bankdaten in Standardberichten.
@@ -69,4 +72,6 @@ Zu diesen Finanzinstrumenten gehören Einzahlungsbelege, Schecks, Wechsel und So
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Szenario: Verwenden einer Zahlungseingänge sich mehrere Rechnung, die mehrere Rabattzeiträumen umfassen](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
 

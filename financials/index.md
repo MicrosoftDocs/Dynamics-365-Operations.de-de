@@ -41,3 +41,5 @@ Wählen Sie einen Funktionsbereich aus, um weitere Informationen zu dieser zu er
 - [Public sector](public-sector\public-sector-functionality.md) 
 - [Budgeting](budgeting\budgeting-overview.md) 
 
+
+

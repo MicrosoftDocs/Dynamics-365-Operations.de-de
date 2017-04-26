@@ -55,3 +55,5 @@ Beispielsweise können Sie aktuelle Beiträge lesen:
 ## <a name="elearning-courses"></a>eLearning-Kurse
 Informationen zu Microsoft Dynamics 365 für Vorgänge Schulung, finden Sie unter <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Lernportal</a>. (CustomerSource-Konto erforderlich) 
 
+
+
