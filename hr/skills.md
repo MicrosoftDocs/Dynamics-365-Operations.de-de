@@ -39,18 +39,18 @@ Beispiele für Fähigkeiten, die Sie erfassen können, umfassen Folgendes:
 Bevor Sie eine Qualifikation einer Person oder einer Stelle zuweisen, eine Fähigkeitszuordnungssuche, oder ein Fähigkeitsprofil erstellen, müssen Sie Informationen zu den Qualifikationen auf der Seite **Qualifikationen** eingeben. Für jede Qualifikation können Sie einen Fähigkeitstyp und ein Bewertungsmodell auswählen.
 
 ## <a name="rating-models"></a>Bewertungsmodelle
-Bewertungsmodelle helfen, die tatsächliche Qualifikationsebene einer Person auszuwerten, die Ebene an der sie arbeiten um sie zu erhalten, oder die Qualifikationsebene, die für eine Stelle erforderlich ist. Sie können bis zu 10 Ebenen für ein Bewertungsmodell eingeben.  Jede Ebene in ein Bewertungsmodell wird eines Faktors zugewiesen.  Der Faktorwert wird verwendet, um die normalisieren Bewertungen erstellen und verwalten, die die Verarbeitung zahlreicher Bewertungsmodelle verwenden.  Der Faktor muss eine Zahl zwischen 0-9 und jedem Preisniveau sein muss einen eindeutigen Faktor haben.  Ebenen mit höheren Faktorwerten umfassen mehr Gewicht in einem Bewertungsmodell.
+Bewertungsmodelle helfen, die tatsächliche Qualifikationsebene einer Person auszuwerten, die Ebene an der sie arbeiten um sie zu erhalten, oder die Qualifikationsebene, die für eine Stelle erforderlich ist. Sie können bis zu 10 Ebenen für ein Bewertungsmodell eingeben.  Jede Ebene in einem Bewertungsmodell wird ein Faktor zugewiesen.  Der Faktorwert wird verwendet, um die Bewertungen der Fähigkeiten zu normalisieren, die verschiedene Bewertungsmodelle verwenden.  Der Faktor muss eine Zahl zwischen 0 und 9 sein, und jede Ebene muss einen eindeutigen Faktor haben.  Ebenen mit höheren Faktorwerten umfassen mehr Gewicht in einem Bewertungsmodell.
 
 ## <a name="specify-job-skills"></a>Geben Sie Qualifikationen für eine Stelle an
-Wenn Sie Informationen zu einem Einzelvorgang eingeben, können Sie die Qualifikationen angeben die eine Person, wenn die Arbeit müssen Sie ausführen, die für diese Stelle erforderlich ist.  Darüber hinaus können Sie die gewünschte Stufe für jede Qualifikation auch angeben die Wichtigkeitsstufe der Fähigkeit. Für unterschiedliche Stellen ist eine bestimmte Qualifikation u. U. unterschiedlich wichtig.
+Wenn Sie Informationen zu einer Stelle eingeben, können Sie die Qualifikationen angeben, die eine Person haben sollte, um für die Stelle geeignet zu sein.  Darüber hinaus können Sie die gewünschte Stufe für jede Qualifikation sowie die Wichtigkeit der Fähigkeit angeben. Für unterschiedliche Stellen ist eine bestimmte Qualifikation u. U. unterschiedlich wichtig.
 
 ## <a name="enter-skills-for-workers-applicants-or-contacts"></a>Geben Sie Qualifikationen für Arbeitskräfte, Bewerber oder Kontakte ein
 Sie können Zielqualifikationen oder tatsächliche Qualifikationen für Arbeitskräfte, Bewerber oder Kontakte eingeben. Eine Zielqualifikation ist eine Qualifikation, die eine Person plant zu erreichen. Eine tatsächliche Qualifikation ist eine Qualifikation, die eine Person derzeit hat.
 
 ## <a name="skill-mapping-and-skill-mapping-profiles"></a>Fähigkeitszuordnung und Fähigkeitszuordnungsprofile
-Sie können eine erstellen, um eine Suche Arbeitskraft, eines Bewerbers oder einer Kontaktperson suchen, die qualifiziert sind, um eine bestimmte Art Aufgabe auszuführen. Fähigkeitszuordnungssuchen suchen zu Ausbildung, Qualifikationen, Bescheinigungen, Vertrauenspositionen und Projekterfahrung und geben Ergebnisse zurückgegeben, die die angegebenen Kriterien entsprechen.  Beispielsweise kann es sinnvoll, zu wissen, welche Arbeitskräfte in der Organisation die CPA erhalten haben.
+Sie können eine Qualifikationszuordnungssuche erstellen, um eine Arbeitskraft, einen Bewerber oder einen Kontakt zu finden, die bzw. der für die bestimmte Art der Aufgabe qualifiziert ist. Qualifikationszuordnungssuchen suchen nach Fähigkeiten, Ausbildungen, Bescheinigungen, Positionen mit Vertrauenswürdigkeit und Projekterfahrung und geben Ergebnisse zurück, die den angegebenen Kriterien entsprechen.  Beispielsweise kann es sinnvoll sein, zu wissen, welche Arbeitskräfte in der Organisation ihr CPA erhalten haben.
 
-Qualifikationszuordnungsprofile ermöglichen, um den Mitarbeitern suchen, oder mit Kandidaten Fähigkeiten, die direkt den Unternehmensanforderungen entsprechen, müssen.  So können Sie beispielsweise ein QualifikationZuordnungsprofil für eine offene Position in Ihrer Organisation erstellen. Wenn Sie ein Profil für einen bestimmten Stelle erstellen und Qualifikationen, Bescheinigungen und Ausbildung aus diesem Einzelvorgang auf das Profil kopieren, können Sie Arbeitskräfte, Bewerber und Kontaktpersonen suchen, die mit einer oder mehreren der Kriterien übereinstimmen, die für das Profil eingegeben sind. Sie können eine Liste der Kandidaten anzeigen, deren Qualifikationen am besten mit den Qualifikationen übereinstimmen, die für die Stelle erforderlich sind.
+Mit Qualifikationszuordnungsprofilen finden Sie Mitarbeiter oder Kandidaten mit Fähigkeiten, die den Unternehmensanforderungen entsprechen.  So können Sie beispielsweise ein Qualifikationszuordnungsprofil für eine offene Position in Ihrer Organisation erstellen. Wenn Sie ein Profil für einen bestimmten Stelle erstellen und Qualifikationen, Bescheinigungen und Ausbildung aus diesem Einzelvorgang auf das Profil kopieren, können Sie Arbeitskräfte, Bewerber und Kontaktpersonen suchen, die mit einer oder mehreren der Kriterien übereinstimmen, die für das Profil eingegeben sind. Sie können eine Liste der Kandidaten anzeigen, deren Qualifikationen am besten mit den Qualifikationen übereinstimmen, die für die Stelle erforderlich sind.
 
 <table>
 <thead>
@@ -79,6 +79,6 @@ Sie können eine Qualifikationsprofilanalyse erstellen, um eine Liste der Kompet
 <a name="see-also"></a>Siehe auch
 --------
 
-[Human resources](index.md)
+[Personalverwaltung](index.md)
 
 

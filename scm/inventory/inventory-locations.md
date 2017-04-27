@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-locations"></a>Lagerplätze für Lagerbestand
 
+[!include[banner](../includes/banner.md)]
+
+
 Lagerplätze für Lagerbestand werden mit grundlegendem Warehousing (WMS I) verwendet , um zu bestimmen, wo Artikel in einem WMS I-Lagerort gelagert und entnommen werden.
 
 Dieses Thema gilt für Funktionen im Modul "Bestandsverwaltung". Es gilt nicht für Funktionen im Modul "Lagerverwaltung".
@@ -64,6 +67,8 @@ Es ist möglich, Lagerplätze von einem Lagerort an einen anderen zu kopieren un
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen Sie ein neues Lagerortlayout (Aufgabenleitfaden)]https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/) "
+[Ein neues Lagerortlayout erstellen (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+
+
 
 

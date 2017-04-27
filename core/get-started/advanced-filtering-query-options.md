@@ -1,5 +1,5 @@
 ---
-title: "Erweiterte und Abfragensyntax gewünschten"
+title: Erweiterte Filter- und Abfragesyntax
 description: "In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den &quot;entspricht&quot;-Operator im Dialogfeld &quot;Erweitertes Filtern/Sortieren&quot; verwenden."
 author: jasongre
 manager: AnnBe
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-filtering-and-query-syntax"></a>Erweiterte und Abfragensyntax gewünschten
+# <a name="advanced-filtering-and-query-syntax"></a>Erweiterte Filter- und Abfragesyntax
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den "entspricht"-Operator im Dialogfeld "Erweitertes Filtern/Sortieren" verwenden.
 
-<a name="advanced-query-syntax"></a>Erweiterte Abfragensyntax
+<a name="advanced-query-syntax"></a>Erweiterte Suchsyntax
 ---------------------
 
 <table>
@@ -52,79 +55,79 @@ In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfü
 <td><em>Wert</em></td>
 <td>Gleich dem eingegebenen Wert.</td>
 <td>Geben Sie den zu suchenden Wert ein.</td>
-<td><strong>Smith</strong> Suchen &quot;Smith&quot;.</td>
+<td>Mit der Zeichenfolge <strong>Schnepf </strong>wird der Begriff &quot;Schnepf&quot; gefunden.</td>
 </tr>
 <tr class="even">
-<td>Mit "!<em>Wert</em> Ausrufezeichen ()</td>
+<td>!<em>Wert</em> (Ausrufezeichen)</td>
 <td>Ungleich dem eingegebenen Wert.</td>
 <td>Geben Sie vor dem auszuschließenden Wert ein Ausrufezeichen ein.</td>
-<td><strong>Mit "! Smith</strong> sucht alle Werte außer Smith &quot;.</td>
+<td><strong>!Schnepf</strong> findet alle Werte außer &quot;Schnepf&quot; gefunden.</td>
 </tr>
 <tr class="odd">
 <td><em>Von-Wert</em>..<em>Bis-Wert</em> (zwei Punkte)</td>
 <td>Zwischen zwei eingegebenen Werten, die von zwei Punkten getrennt werden.</td>
 <td>Geben Sie den "Von-Wert", zwei Punkte und dann den "Bis-Wert" ein.</td>
-<td><strong>1..10</strong> sucht alle Werte von 1 bis 10. In einem Zeichenfolgefeld findet, <strong>A.C</strong> sucht alle Werte, die mit " A und &quot; B &quot;,&quot;und beginnen &quot;Werte, die genau gleich C. &quot;z&quot;sind diese Abfrage, CA &quot;nicht finden.&quot; Wenn Sie alle Werte von &quot; " A* &quot;C* &quot;suchen&quot;, eingeben <strong>A.D "</strong>.</td>
+<td><strong>1..10 </strong>findet alle Werte von 1 bis 10. In einem Zeichenfolgefeld findet <strong>A..C</strong> allerdings alle Werte, die mit &quot;A&quot; bzw. &quot;B&quot; beginnen oder gleich &quot;C&quot; sind (Dieses Beispiel findet die Anfrage &quot;Ca&quot; somit nicht. Wenn Sie alle Werte von &quot;A*&quot; bis &quot;C*&quot;, suchen, geben Sie also <strong>A..D</strong> ein.</td>
 </tr>
 <tr class="even">
 <td>..<em>Wert</em> (zwei Punkte)</td>
 <td>Kleiner oder gleich dem eingegebenen Wert.</td>
 <td>Geben Sie zwei Punkte und dann den Wert ein.</td>
-<td><strong>. .1000</strong> sucht alle, die kleiner oder gleich 1000 sind, z 100 &quot;,&quot;ist &quot;999.95&quot;, und &quot;1.000&quot;.</td>
+<td><strong>..1000</strong> sucht alle Zahlen, die kleiner oder gleich 1000 sind, wie &quot;100&quot;, &quot;999.95&quot;, und &quot;1,000&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>Wert</em>.. (zwei Punkte)</td>
 <td>Größer oder gleich dem eingegebenen Wert.</td>
 <td>Geben Sie den Wert und dann zwei Punkte ein.</td>
-<td><strong>1000..</strong> sucht alle, die größer oder gleich 1000 sind, z 1.000 &quot;,&quot;1.000,01 &quot;, 1.000.000&quot;und &quot;.</td>
+<td><strong>1000</strong> sucht alle Zahlen, die größer oder gleich 1000 sind, z. B. &quot;1,000&quot;, &quot;1,000.01&quot;, und &quot;1,000,000&quot;.</td>
 </tr>
 <tr class="even">
-<td>&gt;<em>Wert</em> (Größer-als-Zeichen)</td>
+<td>&gt;<em>Wert</em> ((Zeichen "größer als")</td>
 <td>Größer als der eingegebene Wert.</td>
-<td>Geben Sie einen Größer-als-Zeichen (<strong>&gt;</strong>) und dann den Wert ein.</td>
-<td><strong>&gt;1000</strong> sucht alle, die größer als 1000 sind, z, &quot;1000.01&quot;20.000 &quot;&quot;und 1.000.000 &quot;beträgt&quot;.</td>
+<td>Geben Sie das Zeichen "größer als (<strong>&gt;</strong>)  und dann den Wert ein.</td>
+<td><strong>&gt;1000</strong>sucht alle Zahlen, die größer als 1000 sind, wie &quot;1000.01&quot;, &quot;20,000&quot;, und &quot;1,000,000&quot;.</td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>Wert</em> (Kleiner-als-Zeichen)</td>
+<td>&lt;<em>Wert</em>  (Zeichen "kleiner als")</td>
 <td>Kleiner als der eingegebene Wert.</td>
-<td>Geben Sie einen Kleiner-als-Zeichen (<strong>&lt;</strong>) und dann den Wert ein.</td>
-<td><strong>&lt;1000</strong> sucht alle, die kleiner als 1000 sind, z, &quot;999.99&quot;1 &quot;&quot;und -200 &quot;beträgt&quot;.</td>
+<td>Geben Sie das Zeichen "kleiner als (<strong>&lt;</strong>) und dann den Wert ein.</td>
+<td><strong>&lt;1000</strong> sucht alle Zahlen, die kleiner als 1000 sind, wie z&quot;999.99&quot;, &quot;1&quot;, und &quot;-200&quot;.</td>
 </tr>
 <tr class="even">
-<td><em>Wert</em>* Sternchen ()</td>
+<td><em>Wert</em>* (Stern)</td>
 <td>Beginnend ab dem eingegebenen Wert.</td>
-<td>Geben Sie einen Anfangswert und dann einen Stern ein (<strong>*</strong>).</td>
-<td><strong>Mit " S*</strong> gesucht, die mit " &quot;S,&quot;z Stockholm &quot;,&quot;Sydney &quot;&quot;und San &quot;Francisco beginnt&quot;.</td>
+<td>Geben Sie einen Anfangswert und dann einen Stern (<strong>*</strong>) ein.</td>
+<td><strong>S*</strong> findet alle Zeichenfolgen, die mit &quot;S&quot; beginnen, wie &quot;Stockholm&quot;, &quot;Sydney&quot;, und &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>value</em> (asterisk)</td>
+<td>*<em>Wert</em>* (Stern)</td>
 <td>Endet mit dem eingegebenen Wert.</td>
 <td>Geben Sie einen Stern und dann den Endwert ein.</td>
-<td><strong>*osten</strong> gesucht, die mit " &quot;Ost " Nordosten &quot;Südosten &quot;,&quot;wie und&quot; beendet&quot;.</td>
+<td><strong>*Osten</strong> findet alle Zeichenfolgen, die auf  &quot;Ostent&quot; enden, wie  &quot;Nordosten&quot; und &quot;Südosten&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>Wert</em>* Sternchen ()</td>
+<td>*<em>Wert</em>* (Stern)</td>
 <td>Enthält den eingegebenen Wert.</td>
 <td>Geben Sie einen Stern, den Wert und dann einen weiteren Stern ein.</td>
-<td><strong>*st</strong> gesucht &quot;, die enthält&quot;, z Nordosten&quot; Südosten&quot;und &quot;.</td>
+<td><strong>*st*</strong>  findet alle Zeichenfolgen, die &quot;st&quot; enthalten, wie &quot;Nordosten&quot; und &quot;Südosten&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (Fragezeichen)</td>
 <td>Enthält ein oder mehrere unbekannte Zeichen.</td>
 <td>Geben Sie an der Position des unbekannten Zeichens im Wert ein Fragezeichen ein.</td>
-<td><strong>Inspektion?</strong> Suchen &quot;Smith&quot; Smyth&quot;und &quot;.</td>
+<td><strong>Sm?th</strong> findet das System &quot;Smith&quot; und &quot;Smyth&quot;.</td>
 </tr>
 <tr class="even">
 <td><em>Wert</em>,<em>Wert</em> (Komma)</td>
 <td>Vergleicht die Werte, die durch Kommas getrennt sind.</td>
 <td>Geben Sie alle Kriterien durch Kommas getrennt an.</td>
-<td><strong>A, D, F, G</strong> findet &quot;das System genau "&quot;A ", &quot;D-&quot;, &quot;und &quot;F-&quot;G&quot;<strong>10, 20, 30, 100</strong> . -Suchen genau 10,20,30,100&quot;.</td>
+<td><strong>A, D, F, G</strong> findet genau &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, und &quot;G&quot;. <strong>10, 20, 30, 100</strong> findet genau &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL-Anweisung</span>) (SQL-Anweisung in Klammern)</td>
 <td>Übereinstimmung mit einer definierten Abfrage</td>
 <td>Geben Sie eine Abfrage als SQL-Anweisung in Klammern an.</td>
-<td><strong><span class="code">(Datenquelle. Feldname! = &quot;A&quot;)</span></strong></td>
+<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
 <td>Di</td>
@@ -137,7 +140,7 @@ In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfü
 <td>Abgleichen des Werts oder Wertebereichs, der mit den Parametern der <strong>SysQueryRangeUtil</strong>-Methode angegeben wird</td>
 <td>Geben Sie eine <strong>SysQueryRangeUtil</strong>-Methode mit Parametern ein, die den Wert oder Wertebereich angeben.</td>
 <td><ol>
-<li>Klicken <strong>Debitoren</strong> &gt; <strong>Rechnungen</strong> &gt; <strong>Offene Debitorenrechnungen</strong> Sie auf.</li>
+<li>Klicken Sie auf <strong>Debitoren</strong> &gt; <strong>Rechnungen</strong> &gt; <strong>Offene Debitorenrechnungen</strong>.</li>
 <li>Drücken Sie STRG+UMSCHALT+F3, um die Seite <strong>Abfrage</strong> zu öffnen.</li>
 <li>Klicken Sie auf der Registerkarte <strong>Bereich</strong> auf <strong>Hinzufügen</strong>.</li>
 <li>Wählen Sie im Feld <strong>Tabelle</strong> die Option <strong>Offene Debitorenbuchungen</strong> aus.</li>
@@ -228,6 +231,8 @@ In der Tabelle im nächsten Abschnitt finden Sie zusätzliche Details zu <strong
 </tr>
 </tbody>
 </table>
+
+
 
 
 

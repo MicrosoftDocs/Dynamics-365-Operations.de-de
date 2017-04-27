@@ -45,7 +45,7 @@ Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inha
 Eine Zeilendefinition kann bis zu 20,000 Finanzdimensionszeilen und die folgenden Informationen enthalten:
 
 -   Beschreibender Text, der dem Bericht Bedeutung verleiht, indem Abschnittsüberschriften, Positionen und Leerzeichen hinzugefügt werden, wie z. B. **Bargeld** oder **Gesamtumsatz**
--   Links zu Finanzdaten, die Dimensionswerte im Microsoft Dynamics 365 für Arbeitsgänge umfassen können ** Hinweis: ** Sie können eine Zeilendefinition so einrichten, um Daten aus dem Finanzdimensionssystem jedes Mal zu übernehmen, an dem die Erklärung generiert wird.
+-   Links zu Finanzdaten, die Dimensionswerte im Microsoft Dynamics 365 for Operations umfassen können **Hinweis:** Sie können eine Zeilendefinition so einrichten, um Daten aus dem Finanzdimensionssystem jedes Mal zu übernehmen, an dem die Erklärung generiert wird.
 -   Zeilensummen und -formeln, die auf den verknüpften Finanzdaten basieren
 
 Normalerweise enthält jede Zeile in einer Zeilendefinition eine der folgenden Arten von Informationen:
@@ -64,7 +64,7 @@ Eine Dimension stellt eine Schnittstelle von Daten und Werten dar. Sie können D
 
 | Mit der folgenden Option...                | Beschreibung                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dimensionen             | Das Muster, das die Dimension identifiziert, die der Zeilendefinition hinzugefügt wird. Dieses Muster enthält ein kaufmännisches Und-Zeichen (&.) oder ein Nummernzeichen (\#) für jede Position in den Dimensionen. Verwenden Sie im Allgemeinen immer kaufmännische Und-Zeichen für die Kontodimension und immer Nummernzeichen für andere Dimensionen. |
+| Dimensionen             | Das Muster, das die Dimension identifiziert, die der Zeilendefinition hinzugefügt wird. Dieses Muster enthält ein kaufmännisches Und-Zeichen (\#) oder Nummernzeichen (#) für jede Position in den Dimensionen. Verwenden Sie im Allgemeinen immer kaufmännische Und-Zeichen für die Kontodimension und immer Nummernzeichen für andere Dimensionen. |
 | Dimensionsbereichsanfang | Der erste Wert, der der Zeilendefinition von der Dimension hinzugefügt wird.                                                                                                                                                                                                                 |
 | Dimensionsbereichsende   | Der letzte Wert, der von dieser Dimension der Zeilendefinition hinzugefügt wird.                                                                                                                                                                                                                  |
 
@@ -73,7 +73,7 @@ Um Dimensionen einer Zeilendefinition hinzuzufügen, führen Sie die folgenden S
 1.  Klicken Sie im Berichts-Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2.  Klicken Sie im Menü **Bearbeiten** auf **Zeilen aus Dimensionen einfügen**...
 3.  Wählen Sie im Dialogfeld **Zeilen aus Dimensionen einfügen **in der Zeile **Dimensionen** die Zelle aus, damit die Dimension der Zeilendefinition übertragen werden kann, und klicken Sie anschließend auf **Alle &&&**.
-4.  Um die Zeilendefinition auf einen bestimmten Bereich von Dimensionswerten einzuschränken, geben Sie den Dimensionsstartwert in der Zelle ** Dimensionsbereichsanfang **ein, und geben Sie dann den Enddimensionswert in der Zelle **Dimensionssbereichsende** ein. Um alle Werte für die ausgewählte Dimension einzuschließen, lassen Sie diese Zellen leer. ** Hinweis: **\* oder Platzhalterzeichen (?) zur Angabe von Dimensionsbereichen werden möglicherweise alle Ergebnisse, die Sie wünschen, nicht der zurückgegeben, z der ERP-Datenbank sortiert Daten.
+4.  Um die Zeilendefinition auf einen bestimmten Bereich von Dimensionswerten einzuschränken, geben Sie den Dimensionsstartwert in der Zelle ** Dimensionsbereichsanfang **ein, und geben Sie dann den Enddimensionswert in der Zelle **Dimensionssbereichsende** ein. Um alle Werte für die ausgewählte Dimension einzuschließen, lassen Sie diese Zellen leer. **Hinweis:** Platzhalterzeichen (\* oder ?) in den Dimensionsbereichen geben eventuell nicht alle gewünschten Ergebnisse zurück, je nachdem, wie die ERP-Datenbank Daten sortiert.
 5.  Wählen Sie einen Wert im Feld **Anfangszeilencode** aus, um den Zeilencode für den ersten Dimensionswert anzugeben, der der Zeilendefinition hinzugefügt wird.
 6.  Geben Sie im Feld **Jede Zeile inkrementieren um** die Lücke zwischen aufeinanderfolgenden Zeilencodes an. Wenn beispielsweise der erste Zeilencode ist 100, und der Inkrementwert ist 30, die ersten neuen Zeilen weisen die Codes 100,130,160,190 und 220. Verwenden Sie einen Inkrementwert, der genügend Platz enthält, der Anwerbung neuer Format- und Formelzeilen einzufügen.
 7.  Klicken Sie auf **OK**. Für jeden der ausgewählten Dimensionswerte wird der Zeilendefinition eine Position hinzugefügt.
@@ -146,7 +146,7 @@ Die Formatierung, die in der Zeilendefinition angegeben wird, überschreibt jede
 
 1.  Im Berichts-Designer öffnen Sie die zu ändernde Zeilendefinition.
 2.  Wählen Sie die Zellen aus, die formatiert werden sollen. Um mehrere Zellen auszuwählen, halten Sie die STRG-Taste gedrückt, während Sie die Zelle auswählen.
-3.  Klicken Sie auf die Symbolleistenschaltfläche des Formats, um es anzuwenden. Wählen Sie beispielsweise zum Einrücken einer Zeile, wählen Sie die Zeile aus, und klicken Sie dann Erhöhungs-Einzug ** **! Erhöhungs-Einzug [] ("https://i-technet.sec.s-msft.com/dynimg/IC679497.gif") Erhöhungs-Einzug auf der Symbolleiste.
+3.  Klicken Sie auf die Symbolleistenschaltfläche des Formats, um es anzuwenden. Um beispielsweise eine Zeile einzurücken, wählen Sie die Zeile aus, und klicken Sie anschließend auf **Einrückung erhöhen** ![Einrückung erhöhen](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Einrückung erhöhen") in der Symbolleiste.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Anpassen der Spalten, während des Berichtentwurfs
 
@@ -173,6 +173,6 @@ Um die Ansicht der Spalten, an denen Sie in der Zeilendefinition arbeiten, zu ve
 <a name="see-also"></a>Siehe auch
 --------
 
-[Finanzberichterstellung für Microsoft Dynamics 365 für Arbeitsgänge financial-reporting-intro.md] ()
+[Finanzberichterstellung für Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

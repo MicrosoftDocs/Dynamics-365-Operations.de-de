@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="dimension-based-product-configuration"></a>Dimensionsbasierte Produktkonfiguration
 
+[!include[banner](../includes/banner.md)]
+
+
 Die dimensionenbasierte Produktkonfiguration stellt eine einfache Lösung für das Erstellen vieler Produktvarianten aus einem einzigen Produktmaster und seiner Stückliste dar.
 
-eine dimensionsbasierte Produktkonfiguration ist eine der drei Produktkonfigurationstechnologien integrierten. Die beiden anderen Technologien sind vordefinierte Varianten und die einschränkungsbasierte Konfiguration. Alle drei Technologien verwenden einen Produktmaster als Ausgangspunkt und ermöglichen dem Benutzer, viele Produktvarianten für einen Produktmaster zu erstellen.
+Die dimensionbasierte Produktkonfiguration ist eine von drei integrierten Produktkonfigurationstechnologien. Die beiden anderen Technologien sind vordefinierte Varianten und die einschränkungsbasierte Konfiguration. Alle drei Technologien verwenden einen Produktmaster als Ausgangspunkt und ermöglichen dem Benutzer, viele Produktvarianten für einen Produktmaster zu erstellen.
 
 ## <a name="key-concepts"></a>Schlüsselkonzepte
 Die dimensionbasierte Produktkonfiguration basiert auf den folgenden Schlüsselkonzepten:
@@ -68,10 +71,12 @@ Der Variantenarbeitsplan bestimmt die Reihenfolge der Variantengruppen, also wie
 Die Variantenregeln helfen sicherzustellen, dass ein Produkt, das in einer Variantengruppe in einer Stückliste enthalten ist, entweder eine Einbeziehung oder einen Ausschluss eines Produkts in einer anderen Variantengruppe in der gleichen Stückliste erzwingt.
 
 ## <a name="product-modeling-process"></a>Produktmodellprozess
-Die natürliche Reihenfolge bei der Erstellung eines Produktmodells für ein dimensionsbasiertes Produkt beginnt mit dem Definieren der relevanten Variantengruppen. Es muss sichergestellt werden, dass alle Produkte, die in der Stückliste verwendet werden, für das Unternehmen freigegeben wurden, für das dieses Produktmodell erstellt wird. Mithilfe dieser Bausteine an vorhandenen Reservierungen für, kann er die Stückliste erstellen und Variantengruppen zu den entsprechenden Stücklistenpositionen zuweisen. Wird in der Stückliste abgeschlossen ist, kann ein Variantenarbeitsplan für die Einrichtungen der Variantengruppen in der korrekten Reihenfolge definiert werden. \[id= Beschriftung "\_"align= Anhang 282671 " alignnone" width= "1187" Produktmodellprozess dimensionsbasiertes\][![(![. /media/dimension-based-product-modeling-process-v1.png)]". Dimensionsbasiertes /media/dimension-based-product-modeling-process-v1.png) Produktmodellprozess\[/caption\] wenn bestimmte Produkte von Gruppen die unterschiedliche Konfigurationsanforderungen gibt, die entweder nicht zusammen eingesetzt werden muss oder darf, Variantenregeln erstellen, können Sie die Produktbeziehungen diese erzwingen. Nachdem die Stückliste durch eine Stücklistenversion an einen dimensionsbasierten Produktmaster gebunden wurde und beide genehmigt und aktiviert wurden, können Sie Produktkonfigurationen erstellen und Namen für die einzelnen Konfigurationen eingeben. Die Konfigurationen können definiert werden, bevor eine Buchung generiert wird, oder sie werden definiert, wenn eine bestimmte Konfiguration erforderlich wird.
+Die natürliche Reihenfolge bei der Erstellung eines Produktmodells für ein dimensionsbasiertes Produkt beginnt mit dem Definieren der relevanten Variantengruppen. Es muss sichergestellt werden, dass alle Produkte, die in der Stückliste verwendet werden, für das Unternehmen freigegeben wurden, für das dieses Produktmodell erstellt wird. Mithilfe dieser Bausteine an vorhandenen Reservierungen für kann er die Stückliste erstellen und Variantengruppen zu den entsprechenden Stücklistenpositionen zuweisen. Wird in der Stückliste abgeschlossen ist, kann ein Variantenarbeitsplan für die Einrichtungen der Variantengruppen in der korrekten Reihenfolge definiert werden. \[caption id="attachment\_282671" align="alignnone" width"1187"\][![ Der dimensionsbasierte Produktmodellprozess ](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png)Der dimensionsbasierte Produktmodellprozess \[/caption\] Wenn es bestimmte Produkte aus unterschiedlichen Konfigurationsgruppen gibt, die entweder zusammen verwendet werden müssen oder nicht zusammen verwendet werden dürfen, können Sie Variantenregeln erstellen, die diese Produktbeziehungen durchsetzen. Nachdem die Stückliste durch eine Stücklistenversion an einen dimensionsbasierten Produktmaster gebunden wurde und beide genehmigt und aktiviert wurden, können Sie Produktkonfigurationen erstellen und Namen für die einzelnen Konfigurationen eingeben. Die Konfigurationen können definiert werden, bevor eine Buchung generiert wird, oder sie werden definiert, wenn eine bestimmte Konfiguration erforderlich wird.
 
 ### <a name="suggested-use"></a>Verwendungsempfehlung
 
 Die Technologie der dimensionsbasierten Konfiguration eignet sich insbesondere für Produkte mit begrenzter Variabilität, wenn die Kombination der Standardproduktdimensionen Größe, Farbe, Format und Konfiguration nicht für die Identifikation einer bestimmten Produktvariante geeignet ist. Ein Beispiel wäre ein Fahrrad mit Gestellgröße, Radgröße, Bremssystemen und unterschiedlichen Gängen.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: Finanzleistungs-Energie BIinhalt
-description: "In diesem Thema wird das Microsoft Dynamics 365 für zufriedenes Pack der Arbeitsgangs- leistung für Microsoft-Energie BI. Es wird das Dashboard und Berichte, die im Paket enthalten inhaltliche sind, und enthält Informationen zum Datenmodell und die Entitäten, die verwendet wurde, um das Inhaltstext Pack zu erstellen."
+title: Financial Performance Power BI Inhalt
+description: "Dieser Artikel beschreibt das Microsoft Dynamics 365 for Operations Financial Performance-Inhaltspaket für Microsoft Power BI. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,23 +24,26 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Finanzleistungs-Energie BIinhalt
+# <a name="financial-performance-power-bi-content"></a>Financial Performance Power BI Inhalt
 
-In diesem Thema wird das Microsoft Dynamics 365 für zufriedenes Pack der Arbeitsgangs- leistung für Microsoft-Energie BI. Es wird das Dashboard und Berichte, die im Paket enthalten inhaltliche sind, und enthält Informationen zum Datenmodell und die Entitäten, die verwendet wurde, um das Inhaltstext Pack zu erstellen.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Zugreifen des das Content Packs
+
+Dieser Artikel beschreibt das Microsoft Dynamics 365 for Operations Financial Performance-Inhaltspaket für Microsoft Power BI. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen.
+
+<a name="accessing-the-content-pack"></a>Zugreifen auf das Inhaltspaket
 --------------------------
 
-Zwei Versionen des das Content Packs der finanziellen sind verfügbar. Eine Version ist von den Microsoft Dynamics Lifecycle Services (LCS) verfügbar, während die andere von verfügbar ist PowerBI.com.
+Zwei Versionen des Financial Performance Inhaltspaket sind verfügbar. Eine Version ist vom Microsoft Dynamics Lifecycle Services (LCS) verfügbar, während die andere von  PowerBI.com verfügbar ist.
 
--   ** Version, die von Kreditbriefen verfügbar ist: ** Der Inhaltstext Pack der finanziellen, das der Kreditbriefe verfügbar ist, unterstützt Microsoft Dynamics 365 für Arbeitsgangsversion 1611. Sie können das Inhaltstext Pack in der Bibliothek der freigegebenen Anlage in Kreditbriefen suchen. Weitere Informationen dazu, wie das herunterlädt Inhaltstext Pack und es für Ihr Microsoft Dynamics 365 für Arbeitsgänge, Daten finden Sie in BIinhalt herstellt [Energie Kreditbriefen von Microsoft und von den Partnern]( power-bi-content-microsoft-partners.md).
--   ** Version, die von PowerBI.com verfügbar ist: ** Der Inhaltstext Pack der finanziellen von PowerBI.com, das verfügbar ist, AX-Versionen unterstützt Microsoft Dynamics 7,0 und 7.0.1. Weitere Informationen dazu, wie das Dynamics 365 für Arbeitsgänge Daten, finden Sie Zugriffs-Energie Verbindung hergestellt und lädt [BIinhalt von PowerBI.com ]( power-bi-home-page.md).
+-   **Version, die von LCS verfügbar ist**: Das Financial Performance Inhaltspaket, das von LCS verfügbar ist, unterstützt Microsoft Dynamics 365 for Operations, Version 1611. Sie können das Inhaltspaket in der Bibliothek der freigegebenen Anlage in LCS suchen. Weitere Informationen dazu, wie Sie Inhalte herunterladen und mit Ihrem Microsoft Dynamics 365 for Operations verbinden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
+-   **Version, die von PowerBI.com verfügbar ist**: Das Financial Performance Inhaltspaket, das von PowerBI.com verfügbar ist, unterstützt Microsoft Dynamics AX Version 7.0 und Version 7.0.1. Weitere Informationen dazu, wie Sie Dynamics 365 for Operations Daten verbinden und laden finden Sie unter [Zugriff auf Power Bi Inhalt von PowerBI.com](power-bi-home-page.md).
 
-## <a name="main-account-setup"></a>Hauptkontoeinstellung
-Da Organisationen Verbindlichkeiten und Umsatzerlöse als positive Beträge auf Berichten angezeigt werden sollen, sind die Einstellungen der Hauptkonten in Dynamics 365 für Arbeitsgänge wichtig. Damit diese Hauptkonten als positive Beträge, das Hauptkonto den Typ muss auf festgelegt werden werden ** Verbindlichkeiten ** oder ** Umsatzerlös **. Wenn die Kontenart verwendet werden, Microsoft-Energie Melden von BI storniert die Vorzeichen umkehren und zeigt die Beträge als - an.
+## <a name="main-account-setup"></a>Hauptkonto einrichten
+Da Organisationen möchten, dass Verbindlichkeiten und Umsatzerlöse als positive Beträge auf Berichten angezeigt werden, sind die Einstellungen der Hauptkonten in Dynamics 365 for Operations wichtig. Damit diese Hauptkonten als positive Beträge angezeigt werden, muss das Hauptkonto den Typ auf **Verbindlichkeiten** **Umsatzerlös** festlegen. Wenn diese Kontenarten verwendet werden, wird die Berichterstattung über Microsoft Power BI die Vorzeichen umkehren und die Werte als "positiv" anzeigen.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-content-pack"></a>Dashboard und Berichte, die im Paket enthalten inhaltliche sind
-Nachdem Sie das Inhaltspaket mit Ihren Dynamics 365 for Operations Daten verbunden haben, zeigen das Dashboard und die Berichte Ihre Finanzdaten an. Wenn von Nie Leistungsfähigkeit BI zuvor verwendet haben, können Sie dieser auf mehr zu erfahren [geführt, Seite für Leistung BI] (https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData) erfahrend. Das Dashboard enthält zusammengefasste Kacheln von Daten, die auf grundlegenden Berichten basieren. Jede Kachel enthält zusammengefasste Informationen für das aktuelle Jahr aller Unternehmen in einer Organisation. Nachfolgend sind einige der Kacheln:
+## <a name="dashboard-and-reports-that-are-included-in-the-content-pack"></a>Dashboard und Berichte sind im Paket enthalten
+Nachdem Sie das Inhaltspaket mit Ihren Dynamics 365 for Operations Daten verbunden haben, zeigen das Dashboard und die Berichte Ihre Finanzdaten an. Wenn Sie bisher noch nie Microsoft Power BI verwendet haben, finden Sie weitere Informationen unter [Erste Schritte in Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Das Dashboard enthält zusammengefasste Kacheln von Daten, die auf grundlegenden Berichten basieren. Jede Kachel enthält zusammengefasste Informationen für das aktuelle Jahr aller Unternehmen in einer Organisation. Beispiele für solche Kacheln:
 
 -   Bargeld
 -   Diesjähriger Gesamtumsatz
@@ -56,13 +59,13 @@ Nachdem Sie das Inhaltspaket mit Ihren Dynamics 365 for Operations Daten verbund
 -   Diesjährige Gewinnspanne
 -   Tatsächliche und Budgetausgaben im Vergleich – Alle Unternehmen
 
-Jede Kachel wird durch Schwierigkeiten unterstützenden Bericht unterstützt. Diese Berichte enthalten Diagramme und Tabellen, die weitere Informationen bieten. Die Berichte werden in der folgenden Tabelle näher erläutert.
+Jede dieser Kacheln wird durch einen unterstützenden Bericht gesichert. Diese Berichte enthalten Diagramme und Tabellen, die weitere Informationen bieten. Die Berichte werden in der folgenden Tabelle näher erläutert.
 
 | Bericht                      | Der Bericht enthält die folgenden Informationen:                                                                                                                                                                                                                                                                                                          |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bargeld-Analyse               | Bargeld- nach juristischer Person, Bargeld Quartal, Bargeld und Summe für Bargeld- nach Konto ** Hinweis: ** Der ** Bargeld Quartal ** Bericht umfasst Anfangssalden nicht ganz für das erste Quartal. Er zeigt die Summe von neuen Buchungen an, die für jedes Quartal gebucht werden.                                                                                |
+| Bargeld-Analyse               | Bargeld nach juristischer Person, Bargeld nach Quartal, Total Bargeld und Bargeld nach Konto **Hinweis:** Der **Bargeld nach Quartal** ** Bericht umfasst die Anfangssalden im Total für das erste Quartal nicht. Er zeigt die Summe von neuen Buchungen an, die für jedes Quartal gebucht werden.                                                                                |
 | Analyse des derzeitigen Gewinnanteils      | Gewinnanteil nach juristischer Person, Gewinnanteil nach Quartal und Salden für aktuelle Anlagen und Verbindlichkeiten                                                                                                                                                                                                                              |
-| Analyse des Liquiditätsgrads        | Liquidität ersten Grades nach juristischer Person, Liquidität ersten Grades Quartal und Salden für Bargeld, Debitor und aktuelle Verbindlichkeiten                                                                                                                                                                                                                      |
+| Analyse des Liquiditätsgrads        | Liquiditätsgrad nach juristischer Person, Liquiditätsgrad nach Quartal und Salden für Bargeld, Debitorenkonten und aktuelle Verbindlichkeiten                                                                                                                                                                                                                      |
 | Analyse des Wareneinsatzes | Wareneinsatz (COGS) nach juristischer Person, COGS dieses Jahr und letztes Jahr nach Quartal, COGS verkaufsbezogenen nach juristischer Person, COGS Summe und COGS im Umsatzprozentsatz                                                                                                                                                                                   |
 | Analyse des Betriebskapitals    | Betriebskapital nach juristischer Person, Betriebskapital nach Quartal, aktuellen Anlagen, Verbindlichkeiten und Gesamtbetriebskapital                                                                                                                                                                                                                   |
 | Analyse von Anlagen und Verbindlichkeiten     | Rendite auf gesamtes Anlagevermögen und Verbindlichkeiten für gesamtes Anlagevermögen nach juristischer Person, Verbindlichkeiten für gesamtes Anlagevermögen und Rendite auf gesamtes Anlagevermögen nach Quartal bis heute, Anlagen und Verbindlichkeiten                                                                                                                                                                                     |
@@ -71,17 +74,17 @@ Jede Kachel wird durch Schwierigkeiten unterstützenden Bericht unterstützt. Di
 | Einnahme-Analyse           | Tatsächliche und Budgeteinnahmen vor Zinsen und Steuern (EBIT) nach juristischer Person, EBIT dieses und letztes Jahr, Ausgaben zum Umsatzerlös in Prozent und tatsächliche und Budgetausgaben zum Umsatzerlös                                                                                                                                                          |
 | Analyse des Umsatzerlöses            | Gesamtumsatzerlös, tatsächlicher und Budgetgesamtumsatzerlös nach juristischer Person, Gesamtumsatzerlös dieses und letztes Jahr , Abweichung beim Umsatzerlösbudget nach juristischer Person und Gesamtumsatzerlös in dieser und in der letzten Periode.                                                                                                                                                 |
 | Analyse der Ausgaben            | Die Gesamtausgaben, tatsächliche und Budgetgesamtausgaben nach juristischer Person, tatsächliche und Budgetgesamtausgaben nach Quartal, Gesamtausgaben nach Kontokategorie und Betriebskosten-Verhältnis                                                                                                                                                                 |
-| Analyse des berechneten Umsatzerlöses     | Summenkonto, Summenkonten Ausstehender nach juristischer Person, Summenkonten Ausstehender Quartal und Salden für Debitorkonten ** Hinweis: ** Die Berichte enthalten Folgendes nicht Anfangssalden für die Debitorsachkonten. Sie zeigen die Summe von neuen Buchungen an, die für den Debitor gebucht werden. |
+| Analyse des berechneten Umsatzerlöses     | Total Debitoren, Total Debitoren nach juristischer Person, Total Debitoren nach Quartal und Salden für Debitorkonten **Hinweis:** Die Berichte enthalten keine Anfangssalden für die Debitorsachkonten. Sie zeigen die Summe von neuen Buchungen an, die für den Debitor gebucht werden. |
 
 Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Die Daten, die das Dashboard und Berichten im das Content Pack der finanziellen aufgefüllt werden, Dynamics 365 für Arbeitsgangsdaten. Die folgenden Entitäten wurden als Grundlage des das Content Packs verwendet: ** Die Datenentitäten **
+Die Daten, die verwendet werden, um Dashboard und Berichte im Financial Performance-Inhaltspaket aufzufüllen, sind Dynamics 365 for Operations Daten. Die folgenden Entitäten wurden als Grundlage des Inhaltspakets verwendet: **Aggregierte Datenentitäten**
 
--   ** GeneralLedgerActivities ** – diese Einheit zusammenfasst Hauptbuchsalden nach Kontokategorie.
--   ** BudgetActivities ** – diese Einheit zusammenfasst Budgetsalden nach Kontokategorie.
+-   **GeneralLedgerActivities** – Diese Einheit fasst Hauptbuchsalden nach Kontokategorie zusammen.
+-   **BudgetActivities** – Diese Einheit fasst Hauptbuchsalden nach Kontokategorie zusammen.
 
-**Data entities**
+**Datenentitäten**
 
 -   FiscalCalendars
 -   MainAccounts
@@ -89,7 +92,7 @@ Die Daten, die das Dashboard und Berichten im das Content Pack der finanziellen 
 -   Sachkonten
 -   ChartofAccounts
 
-Diese wurden Entitäten verwendet, um berechnete Kennzahlen im - Datenmodell zu erstellen. Die berechnete Kennzahlen, werden die Leistungskennzahlen (KPIs) und Berichten zu verwendet, die in das Content Pack verwendet werden. Standardmäßig enthält das Inhaltspaket Daten für die letzten drei Jahre und ein zukünftiges Jahr. Um zusätzliche Berechnungen in Ihre Berichten und Dashboards einzubeziehen, können Sie das [Microsoft Excel Arbeitsbuch](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) ändern. Diese Arbeitsmappe ist das Standarddatenmodell, das verwendet wurde, um das Inhaltspaket zu erstellen. Nachdem Sie die Änderungen vorgenommen haben, können Sie ein Organisations-Inhaltspaket und ein Dashboard erstellen, die die von Ihnen hinzugefügten Informationen enthalten.
+Diese Entitäten wurden verwendet, um berechnete Messungen im Datenmodell zu erstellen. Diese berechneten Messungen werden verwendet, um die Messdaten (KPIs) und Berichte zu erstellen, die im Inhaltspaket verwendet werden. Standardmäßig enthält das Inhaltspaket Daten für die letzten drei Jahre und ein zukünftiges Jahr. Um zusätzliche Berechnungen in Ihre Berichten und Dashboards einzubeziehen, können Sie das [Microsoft Excel Arbeitsbuch](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) ändern. Diese Arbeitsmappe ist das Standarddatenmodell, das verwendet wurde, um das Inhaltspaket zu erstellen. Nachdem Sie die Änderungen vorgenommen haben, können Sie ein Organisations-Inhaltspaket und ein Dashboard erstellen, die die von Ihnen hinzugefügten Informationen enthalten.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstellen von Power BI-Inhalten:
@@ -98,6 +101,8 @@ Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstelle
 -   [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](configure-power-bi-integration.md)
+
+
 
 
 

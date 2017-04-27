@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Kreditorenrechnungsabgleich
 
+[!include[banner](../includes/banner.md)]
+
+
 Beim Kreditorenrechnungsabgleich handelt es sich um den Prozess zum Abgleich der Informationen aus der Kreditorenrechnung, der Bestellung und des Produktzugangs.
 
 Beim Abgleich von Dokumenten werden Unterschiede zwischen diesen Dokumenten als Abgleichsabweichung bezeichnet. Abgleichsabweichungen werden mit den angegebenen Toleranzen verglichen. Übersteigt die Abgleichsabweichung den Toleranzprozentsatz oder -betrag, werden auf der Seite "Kreditorenrechnung" und auf er Seite "Details zum Rechnungsabgleich" Abweichungssymbole angezeigt. 
@@ -48,9 +51,9 @@ Die folgenden Arten von Kreditorenrechnungsabgleich können verwendet werden:
 
 Beim zweiseitigen und beim dreiseitigen Abgleich werden Preisinformationen stets nach dem Einheitspreis abgeglichen. Sie können diese Abgleichsrichtlinien für einen Abgleich der Preisinformationen nach dem Preissumme konfigurieren.
 -   Nettostückpreis-Abgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettostückpreises jeder Rechnungsposition mit dem entsprechenden Nettostückpreis der Bestellung abgeglichen. Der Nettostückpreis ergibt sich aus der folgenden Formel: Nettobetrag der Position / die Menge der Position.
--   Preissummenabgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettobetrags (Preissumme) jeder Rechnungsposition mit dem entsprechenden Nettobetrag der Bestellung abgeglichen. Der Nettobetrag ergibt sich aus der folgenden Formel: (Preis je Einheit \* Positionsmenge) + Positionszuschläge - Positionsrabatte
+-   Preissummenabgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettobetrags (Preissumme) jeder Rechnungsposition mit dem entsprechenden Nettobetrag der Bestellung abgeglichen. Der Nettobetrag ergibt sich aus der folgenden Formel: (Einheitspreis \* Positionsmenge) + Positionszuschläge - Positionsrabatte.
 
-Rechnungsabgleichsberechnungen werden in der Regel ausgeführt, wenn Kreditorenrechnungen auf der Seite "Kreditorenrechnung" bearbeitet werden. Alternativ kann der Rechnungsabgleich bei Bedarf ausgeführt werden, falls erforderlich. Rechnungsabgleich bei Bedarf wird für die juristische Person mit dem aktualisierensrechnungskopfstatus automatisch auf der Kreditorparameterseite auf der Rechnungsprüfungsregisterkarte gesteuert. Der Rechnungsabgleich kann auch im Rahmen eines Rechnungsprüfungsprozesses erfolgen. Sie können die Ergebnisse eines Rechnungsabgleichs auf der Seite "Kreditorenrechnung" und den zugehörigen Rechnungsabgleichseiten anzeigen.
+Rechnungsabgleichsberechnungen werden in der Regel ausgeführt, wenn Kreditorenrechnungen auf der Seite "Kreditorenrechnung" bearbeitet werden. Alternativ kann der Rechnungsabgleich bei Bedarf ausgeführt werden, falls erforderlich. Rechnungsabgleich  wird bei Bedarf für die juristische Person mit dem automatisch aktualisierten Rechnungskopfstatus auf der Kreditorparameterseite auf der Rechnungsprüfungsregisterkarte gesteuert. Der Rechnungsabgleich kann auch im Rahmen eines Rechnungsprüfungsprozesses erfolgen. Sie können die Ergebnisse eines Rechnungsabgleichs auf der Seite "Kreditorenrechnung" und den zugehörigen Rechnungsabgleichseiten anzeigen.
 
 ## <a name="invoice-totals-matching"></a>Rechnungssummenabgleich
 Mit dem Rechnungssummenabgleich können Sie sicherstellen, dass die Abweichung der Gesamtbeträge in Rechnungen von den erwarteten Beträgen in einem akzeptablen Rahmen bleibt. Sechs Summen werden auf der Seite "Detailabgleich für Rechnungssummen" verglichen (siehe folgende Tabelle). Wenn die zulässige Toleranz für den Rechnungssummenabgleich bei 20 % liegt, wird der Abweichungsprozentsatz von 100 % für den Gesamtrabattbetrag als Abgleichsabweichung angesehen.
@@ -165,7 +168,7 @@ Auf der Seite "Details zum Rechnungsabgleich" werden dieselben Positionsbeträge
 Der dreiseitige Rechnungssummenabgleich wird für die juristische Person gesteuert, die im Feld Positionsabgleichsrichtlinien der Seite Kreditorenparameter angegeben ist. Abhängig von der Auswahl im Feld "Überschreiben der Abgleichsrichtlinie zulassen" können Sie einen dreiseitigen Abgleich für einen bestimmten Kreditor, Artikel oder eine Kombination aus Artikel und Kreditor auf der Seite "Abgleichsrichtlinie" und für eine bestimmte Bestellung auf der Seite "Bestellung" auswählen.
 
 ## <a name="charges-matching"></a>Abgleich von Belastungen
-Mit dem Abgleich für Zuschläge können Sie sicherstellen, dass die Abweichung der Zuschlagsbeträge von den erwarteten Beträgen in einem akzeptablen Prozentrahmen bleibt. Die Gesamtbeträge der einzelnen Zuschlagscodes, die für die Rechnung und die Bestellung gelten, werden in den vergleichenszuschlagswerten - Rechnung verglichen: Seite, wie in der folgenden Tabelle dargestellt. Wenn die zulässige Toleranz für den Zuschlagscode bei 25 % liegt, wird der Abweichungsprozentsatz von 99.999.999.999,99 % für den Zuschlagscode "Lizenz" als Abgleichsabweichung angesehen.
+Mit dem Abgleich für Zuschläge können Sie sicherstellen, dass die Abweichung der Zuschlagsbeträge von den erwarteten Beträgen in einem akzeptablen Prozentrahmen bleibt. Die Gesamtbeträge der einzelnen Zuschlagscodes, die für die Rechnung und die Bestellung gelten, werden auf der Seite "Werte für Belastungen vergleichen - Rechnung: Seite, wie in der folgenden Tabelle dargestellt. Wenn die zulässige Toleranz für den Zuschlagscode bei 25 % liegt, wird der Abweichungsprozentsatz von 99.999.999.999,99 % für den Zuschlagscode "Lizenz" als Abgleichsabweichung angesehen.
 
 > [!NOTE] 
 > Ein Abweichungsprozentsatz von 99.999.999.999,99 % bedeutet, dass der auf der Bestellung basierende erwartete Betrag null und der tatsächliche Betrag der Rechnung ein positiver Wert ist. 
@@ -188,7 +191,9 @@ Kreditorenrechnungen basieren häufig auf Produktzugängen, die für die tatsäc
 -   Eingeben von Rechnungsbeträgen, die nicht Teil der ursprünglichen Bestellung waren, um die Rechnungsinformationen mit der vom Kreditor erhaltenen Rechnung abzugleichen. Die Zuschläge für Bestellungen können mit den Zuschlägen für Rechnungen verglichen werden. Sie haben auch die Möglichkeit, Rechnungen Zuschläge hinzuzufügen und diese den Rechnungspositionen zuzuweisen.
 -   Anzeigen und Genehmigen von Preisabweichungen zwischen dem Nettostückpreis der Rechnung und dem Nettostückpreis der Bestellung. Sie haben die Möglichkeit zum Einrichten von Preistoleranz-Prozentwerten für juristische Personen, Kreditoren und Artikel. Liegt der Preis in einer Position der Kreditorenrechnung nicht innerhalb der zulässigen Preistoleranz, kann die Rechnung gespeichert werden, bis entweder die Buchung genehmigt wird oder eine Korrektur vom Kreditor eingeht.
 
-Weitere Informationen finden Sie dreiseitige Abgleichsrichtlinien [] (three-way-matching-policies.md).
+Weitere Informationen finden Sie unter [Dreifach abgeglichene Richtlinien](three-way-matching-policies.md)
+
+
 
 
 

@@ -33,7 +33,7 @@ Beim Erstellen einer Bestellung (Purchase Order, PO) werden im Bestellkopf allge
 
 Sie können auch POs erstellen, indem Sie Zeilen aus einem anderen Bestelldokument oder einem Auftragsdokument kopieren. In diesem Fall können Sie das Vorzeigen für den Bestand so umkehren, wie Sie das Vorzeichen auf einer Rechnung für eine Gutschrift umkehren.  
 
-Obwohl POs manuell erstellen werden können, werden sie in der Regel von anderen Prozessen generiert. Aufträge können automatisch auf Basis andere Dokumente (z. B. Anforderungen) erstellt werden. Alternativ können sie als Teil des Produktprogrammplanungsprozesses durch geplante PO erstellt werden. Wenn von Rahmenbestellungen verwenden, können nach PO die ** Freigabeauftrag ** Aktivität erstellt werden. Es gibt außerdem erweiterte Methoden zum automatischen Erstellen einer Bestellung. Beispielsweise können Aufträge erstellt werden, wenn Sie die Direktlieferung oder Intercompany-Auftragsketten nutzen.
+Obwohl POs manuell erstellen werden können, werden sie in der Regel von anderen Prozessen generiert. Aufträge können automatisch auf Basis andere Dokumente (z. B. Anforderungen) erstellt werden. Alternativ können sie als Teil des Produktprogrammplanungsprozesses durch geplante PO erstellt werden. Wenn von Rahmenbestellungen verwenden, können nach PO die **Freigabeauftrag** Aktivität erstellt werden. Es gibt außerdem erweiterte Methoden zum automatischen Erstellen einer Bestellung. Beispielsweise können Aufträge erstellt werden, wenn Sie die Direktlieferung oder Intercompany-Auftragsketten nutzen.
 
 ## <a name="creating-a-purchase-order-header"></a>Erstellen eines Bestellkopfs
 Beim Erstellen einer neuen Bestellung wird ein Dialogfeld angezeigt, in dem Sie die häufigste Informationen für den Bestellkopf eingeben können. Beim Klicken auf **OK** um das Dialogfeld zu schließen, wird der Auftrag erstellt. Anschließend können Sie weitere Informationen in der Kopfzeile festlegen.  
@@ -84,7 +84,7 @@ Möglicherweise müssen Sie den Abschluss einer Bestellung verzögern. Beispiels
 <a name="see-also"></a>Siehe auch
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Überblick über Bestellungen](purchase-order-overview.md)
 
 [Genehmigen und Bestätigen von Bestellungen](purchase-order-approval-confirmation.md)
 

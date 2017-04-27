@@ -1,5 +1,5 @@
 ---
-title: "Unterstützung der Kanban für übergangskarte Strichcodescanner"
+title: "Unterstützung der Kanban-Übertragungskarte für Strichcodescanner"
 description: "Die Kanban-Umlagerungsübersicht unterstützt die Scanner-Eingabe von einem Widgetstrichcodescanner bei der Auswahl, dem Starten, dem Abschluss und dem Leeren eines Kanban-Einzelvorgangs."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Unterstützung der Kanban für übergangskarte Strichcodescanner
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
+
+[!include[banner](../includes/banner.md)]
+
 
 Die Kanban-Umlagerungsübersicht unterstützt die Scanner-Eingabe von einem Widgetstrichcodescanner bei der Auswahl, dem Starten, dem Abschluss und dem Leeren eines Kanban-Einzelvorgangs.
 
@@ -46,13 +49,13 @@ Auf dem Inforegister **Scanner-Erfassung** können Sie den Registrierungsmodus a
 <a name="registration-mode-select"></a>Erfassungsmodusauswahl
 ------------------------
 
-Wenn Sie einen Barcodeleser verwenden, um einen Einzelvorgang auszuwählen, wechselt der Ansichtsmodus der Kanban-Übersicht. In diesem Modus gelten folgende Bedingungen:
+Wenn Sie einen Barcodeleser verwenden, um einen Einzelvorgang auszuwählen, ändert sich der Ansichtsmodus der Kanban-Übersicht. In diesem Modus gelten folgende Bedingungen:
 
 -   Nur der gescannte Kanban-Einzelvorgang wird angezeigt.
 -   Die Details des gewählten Einzelvorgangs werden auf dem Inforegister **Details** angezeigt.
 -   Das Inforegister **Meldungen** zeigt nur Nachrichten für den ausgewählten Einzelvorgang an.
 -   Sie können den Status des Einzelvorgangs ändern, indem Sie die Funktionen verwenden, die im Aktivitätsbereich verfügbar sind. Die Kanban-Übertragungskarte zeigt weiterhin nur einen einzelnen Einzelvorgang für diesen Zeitraum an.
--   Sie können die Informationen in der Liste der Einzelvorgänge manuell aktualisieren, indem Sie auf klicken (UMSCHALT+F5 ** ** Aktualisierung) im Aktivitätsbereich. Nachdem Sie die Informationen aktualisiert haben, werden die vollständigen Ergebnisse für den Einzelvorgangsfilter wieder angezeigt.
+-   Sie können die Informationen in der Liste der Einzelvorgänge manuell aktualisieren, indem Sie auf **Aktualisieren** (UMSCHALT+F5) im Aktivitätsbereich klicken. Nachdem Sie die Informationen aktualisiert haben, werden die vollständigen Ergebnisse für den Einzelvorgangsfilter wieder angezeigt.
 
 ## <a name="job-status-and-possible-actions"></a>Einzelvorgangsstatus und mögliche Maßnahmen
 Der Status des ausgewählten Einzelvorgangs und der Status sämtlicher angeschlossenen Einzelvorgänge für Ereignis-Kanbans bestimmt, ob Sie den Einzelvorgang weiter bearbeiten können. Die folgende Tabelle enthält Informationen zu diesen Status und Aufgaben:
@@ -185,6 +188,8 @@ Der Status des ausgewählten Einzelvorgangs und der Status sämtlicher angeschlo
 </tr>
 </tbody>
 </table>
+
+
 
 
 

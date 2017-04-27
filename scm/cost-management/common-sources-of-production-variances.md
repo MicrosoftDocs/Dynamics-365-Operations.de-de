@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="common-sources-of-production-variances"></a>Allgemeine Ursachen für Produktionsabweichungen
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel werden verschiedene typische Quellen jedes Typs einer Produktionsabweichung beschrieben. 
 
 Nachfolgend sind einige typische Quellen einer **Losgrößen**abweichung:
@@ -57,6 +60,8 @@ Nachfolgend sind einige typische Quellen einer **Produktionsersatz**abweichung:
 -   Manuelles Hinzufügen eines Arbeitsgangs zum Produktionsarbeitsplan und Melden des Arbeitsgangs als verbraucht.
 -   Auswählen einer anderen Stücklistenversion beim Erstellen des Produktionsauftrags, die sich von der in der Standardkostenberechnung verwendeten Stücklistenversion unterscheidet.
 -   Auswählen einer anderen Arbeitsplanversion beim Erstellen des Produktionsauftrags, die sich von der in der Standardkostenberechnung verwendeten Arbeitsplanversion unterscheidet.
+
+
 
 
 

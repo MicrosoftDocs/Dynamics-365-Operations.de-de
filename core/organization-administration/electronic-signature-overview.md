@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="electronic-signature-overview"></a>Elektronische Signatur (Überblick)
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält einen Überblick über elektronische Signaturen und erläutert ihre Verwendung in Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-an-electronic-signature"></a>Was ist eine elektronische Signatur?
@@ -35,7 +38,7 @@ Dieser Artikel enthält einen Überblick über elektronische Signaturen und erl�
 Eine elektronische Signatur bestätigt die Identität einer Person, die im Begriff ist, einen Datenverarbeitungsprozess zu starten oder zu genehmigen. In einigen Branchen ist eine elektronische Signatur ebenso rechtskräftig wie eine handschriftliche Signatur. Elektronische Signaturen sind eine Konformitätsanforderung für verschiedene behördlich regulierte Branchen. Dazu zählen z. B. die Arzneimittel-, Lebensmittel- und Getränke-, Luftfahrt- und Rüstungsindustrie. Sie sind auch erforderlich, um die Konformität mit den Bestimmungen in 21 CFR Teil 11 der Bundesbehörde zur Überwachung von Nahrungs- und Arzneimitteln in den USA (Food and Drug Administration, FDA) zu gewährleisten. **Hinweis:** Eine elektronische Signatur ist nicht das Gleiche wie eine digitale Signatur. Eine elektronische Signatur ist einfach ein Ersatz für eine handschriftliche Signatur, während eine digitale Signatur zusätzliche Sicherheitsmerkmale bietet. Mithilfe einer digitalen Signatur kann festgestellt werden, ob die Daten durch einen anderen Benutzer oder Prozess manipuliert wurden. Außerdem kann eine digitale Signatur überprüft werden, und diese Überprüfung kann nicht vom Besitzer des Zertifikats angefochten werden, das zum Signieren der Daten verwendet wurde. Wie nachfolgend erläutert, verfügen elektronische Signaturen in Microsoft Dynamics 365 for Operations über die integrierte Funktion für digitale Signaturen.
 
 ## <a name="electronic-signatures-in-dynamics-365-for-operations"></a>Elektronische Signaturen in Microsoft Dynamics 365 for Operations
-In Microsoft Dynamics 365 for Operations können Sie elektronische Signaturen für wichtige Geschäftsprozesse verwenden. Einige Prozesse verfügen über integrierte Funktionen der elektronischen Signatur. Darüber hinaus können Sie benutzerdefinierte Signaturanforderungen für Datenbanktabellen und -felder erstellen. Elektronische Signaturen verfügen über die integrierte Funktion für digitale Signatur. Jeder Benutzer, der Dokumente signiert, muss über ein gültiges kryptografisches Zertifikat verfügen. Beim Signieren eines Dokuments wird der diesem Zertifikat zugeordnete private Schlüssel geprüft. Dynamics 365 for Operations zeichnet Daten der elektronischen Signatur in einem Protokoll auf, um Informationen für ein Audit-Trail bereitzustellen. Um elektronische Signaturen einrichten, finden Sie Aufgabenleitfaden [elektronische Signaturen () Einrichten](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+In Microsoft Dynamics 365 for Operations können Sie elektronische Signaturen für wichtige Geschäftsprozesse verwenden. Einige Prozesse verfügen über integrierte Funktionen der elektronischen Signatur. Darüber hinaus können Sie benutzerdefinierte Signaturanforderungen für Datenbanktabellen und -felder erstellen. Elektronische Signaturen verfügen über die integrierte Funktion für digitale Signatur. Jeder Benutzer, der Dokumente signiert, muss über ein gültiges kryptografisches Zertifikat verfügen. Beim Signieren eines Dokuments wird der diesem Zertifikat zugeordnete private Schlüssel geprüft. Dynamics 365 for Operations zeichnet Daten der elektronischen Signatur in einem Protokoll auf, um Informationen für ein Audit-Trail bereitzustellen. Um elektronische Signaturen einzurichten, siehe [Einrichten elektronischer Signaturen (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Benutzer, die Zugriff auf elektronische Signaturen benötigen
 Drei Arten von Benutzern brauchen in der Regel Sicherheitszugriff auf elektronische Signaturen: Administratoren für elektronische Signaturen, Signaturgeber und Wirtschaftsprüfer für elektronische Signaturen.
@@ -78,6 +81,8 @@ Gelegentlich kann es sinnvoll sein, dass ein Benutzer für die Änderungen eines
 1.  Klicken Sie auf der Seite **Optionen**, auf der Registerkarte **Konten** auf **Genehmigende Person festlegen**.
 2.  Wählen Sie im Feld **Benutzerkennung für genehmigende Person** die Kennung des Benutzers aus, der die Änderungen eines anderen Benutzers abzeichnen muss.
 3.  Wählen Sie im Feld **Signatur für Benutzer (Kennung)** die Kennung des Benutzers aus, dessen Änderungen abgezeichnet werden müssen.
+
+
 
 
 

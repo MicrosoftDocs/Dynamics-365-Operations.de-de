@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-invoicing"></a>Projektrechnung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält einen Überblick über die Projektrechnungsstellung für Zeit- und Materialprojekte und Festpreisprojekte. Er umfasst Informationen zu Rechnungsvorschlägen (vorläufige Rechnungen), Rechnungskontrolle, Akonto-Rechnungsstellung, Kreditorenrechnungsstellung und Gutschriften.
 
 Das zu verwendende Fakturierungsverfahren wird durch den Projekttyp bestimmt. Eine Fakturierung kann ausschließlich für die beiden externen Projekttypen Aufwand und Festpreis erfolgen. Aufwands- und Festpreisprojekte sind immer einem Projektvertrag zugeordnet.
@@ -103,7 +106,7 @@ Sie können beispielweise folgenden Fakturierungsplan einrichten:
 Wenden Sie das Verfahren für die Fakturierung von Akontobeträgen an, wenn die Zwischenzahlungen zur Fakturierung bereit sind.
 
 ## <a name="vendor-invoicing"></a>Kreditorenrechnungsstellung
-Wenn Sie einen Artikel von einem Kreditor bestellen und den Artikel einem Projekt zuweisen, bestimmt der Abrechnungscode, den Sie für die Bestellposition dieses Artikel auswählen, ob der eingekaufte Artikel einem Debitor in Rechnung gestellt wird. Wenn Sie Standardpositionseigenschaften einrichten, sind diese für den Artikel in der Bestellposition angezeigt (Positionsdetail-Projekt-Abrechnungscode) &gt;. Es gibt zwei Möglichkeiten, um den Abrechnungscode zu ändern:
+Wenn Sie einen Artikel von einem Kreditor bestellen und den Artikel einem Projekt zuweisen, bestimmt der Abrechnungscode, den Sie für die Bestellposition dieses Artikel auswählen, ob der eingekaufte Artikel einem Debitor in Rechnung gestellt wird. Wenn Sie Standardpositionseigenschaften einrichten, werden diese für den Artikel auf der Bestellposition angezeigt (Positionsdetails &gt; Projekt &gt; Abrechnungscode). Es gibt zwei Möglichkeiten, um den Abrechnungscode zu ändern:
 
 -   Die Rechnungsstellung für den Artikel an den Debitor des Projekts: Legen Sie in der Bestellung den Abrechnungscode für den Artikel auf einen fakturierbaren Wert fest, und stellen Sie dann eine Rechnung an den Debitor, indem Sie die korrekte Rechnungsstellungsmethode anwenden.
 -   Wenn Sie für den Artikel keine Rechnung an den Projektdebitor stellen möchten: Wählen Sie nicht die Positionseigenschaft **Fakturierbar** in der Bestellposition für den Artikel aus. Sie können dann die Bestellung fakturieren, und es sind keine weiteren Schritte erforderlich.
@@ -118,5 +121,7 @@ Das selbe Dokument kann Transaktionen, die für Gutschriften, Kreditbuchungen un
 Wird ein Betrag gutgeschrieben, muss zunächst der fakturierte Betrag ausgewählt werden, für den die Gutschrift erstellt werden soll und dann die Gutschrift erstellt werden. Gehen Sie zum Erstellen der Gutschrift gemäß dem Verfahren vor, das auch zum Generieren einer Debitorenrechnung verwendet wird. 
 
 Sie können eine Rechnung mit einem negativen Betrag erstellen; die dann eine als Gutschrift klassifizierte Rechnung ist. Um eine Gutschrift zu erstellen und zu drucken, müssen Sie die Transaktionen auswählen, die zuvor in Rechnung gestellt wurden und diese Transaktionen dann bearbeiten. Augenommen bei juristischen Personen, deren primäre Adresse sich in Deutschland befindet, ist der Titel der Rechnung "Rechnungskorrektur".
+
+
 
 

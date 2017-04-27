@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Überwachungsrichtlinienverletzungen und -anfragen
 
+[!include[banner](../includes/banner.md)]
+
+
 Der Artikel beschrieben, wie Überwachungsanfragen aus den Verletzungen von Überwachungsrichtlinienregeln generiert werden. Er umfasst außerdem Informationen zu den verschiedenen Methoden, die Überwachungsrichtlinien für den Datumsbereich für die Dokumentauswahl verwenden.
 
 <a name="how-audit-cases-are-generated"></a>Generieren von Überwachungsanfragen
@@ -39,10 +42,10 @@ Mithilfe von Überwachungsrichtlinien werden Spesenabrechnungen, Bestellungen un
 
 Jede Richtlinienregel wertet eine Reihe von Dokumenten aus. Die Richtlinienregel wählt die Dokumente aus, die sich im Datumsbereich für die Dokumentauswahl befinden und den angegebenen Kriterien entsprechen. Mit einer Richtlinienregel können z. B. Spesenabrechnungen ausgewählt werden, die Mahlzeiten für über 50,00 EUR enthalten. Mit einer anderen Richtlinienregel können Kreditorenrechnungen ausgewählt werden, die an einen bestimmten Kreditor zu zahlen sind. Für jedes Dokument, das in der Gruppe ausgewählt wird, wird ein Verstoß generiert. Bei diesem Verstoß wird in einem Datensatz aufgezeichnet, dass ein bestimmtes Dokument (z. B. Rechnung 12345) der Richtlinienregel nicht entspricht. 
 
-Dabei werden mehrere Datensätze für Überwachungsverstöße gruppiert und Überwachungsanfragen zugeordnet. Anfragen für die einzelnen Überwachungsrichtlinien werden standardmäßig nach der Überwachungsrichtlinienregel gruppiert. Wenn Sie es bevorzugen, können Sie andere Gruppierungskriterien auswählen, indem Sie die Seite **Anfragegruppierungskriterien** verwenden. So können Sie Ausgabenenköpfe nach Projektkennung und Kreditorenrechnungen nach Kreditorenkonto gruppieren. In diesem Fall werden alle Ausgabenenkopfverstöße, die dieselbe Projektkennung haben, in derselben Anfrage und allen Kreditorenrechnungen, die mit demselben Kreditorenkonto aufweisen, gruppiert werden in derselben Anfrage gruppiert. 
+Dabei werden mehrere Datensätze für Überwachungsverstöße gruppiert und Überwachungsanfragen zugeordnet. Anfragen für die einzelnen Überwachungsrichtlinien werden standardmäßig nach der Überwachungsrichtlinienregel gruppiert. Wenn Sie es bevorzugen, können Sie andere Gruppierungskriterien auswählen, indem Sie die Seite **Anfragegruppierungskriterien** verwenden. Sie können z. B. Ausgabenkopfdaten nach Projektkennung und Kreditorenrechnungen nach Kreditorenkonto gruppieren. In diesem Fall werden alle Verstöße im Hinblick auf Ausgabenkopfdaten mit der gleichen Projektkennung in derselben Anfrage und alle Kreditorenrechnungsverstöße mit dem gleichen Kreditorenkonto in derselben Anfrage gruppiert. 
 
 > [!NOTE]
-> Bei Überwachungsrichtlinienregeln, die auf Grundlage eine sind ** Duplikat ** Abfragetyp, werden Verstöße nicht nach Richtlinienregel oder nach den Kriterien gruppiert, die der auf ** Anfragegruppierungskriterien ** Seite angegeben werden. Die Gruppierung richtet sich stattdessen nach den in die Überwachungsrichtlinienregel integrierten Kriterien. Wenn beispielsweise eine Richtlinienregel Spesenrechnungen auf doppelte Ausgaben auswertet, bei denen Betrag, Händlerkennung und Datum übereinstimmen, stellen alle Ausgaben mit denselben Werten in diesen Feldern eine Anfrage dar. Alle Ausgaben, die verschiedene Werte besitzen, sind getrennte Anfragen.
+> Hinweis: Bei Überwachungsrichtlinienregeln, die auf dem **Duplizieren**-Abfragetyp basieren, werden Verstöße nicht nach Richtlinienregel oder nach den Kriterien gruppiert, die auf der Seite **Anfragegruppierungskriterien** angegeben werden. Die Gruppierung richtet sich stattdessen nach den in die Überwachungsrichtlinienregel integrierten Kriterien. Wenn beispielsweise eine Richtlinienregel Spesenrechnungen auf doppelte Ausgaben auswertet, bei denen Betrag, Händlerkennung und Datum übereinstimmen, stellen alle Ausgaben mit denselben Werten in diesen Feldern eine Anfrage dar. Alle Ausgaben, die verschiedene Werte besitzen, sind getrennte Anfragen.
 
 Nachdem die Überwachungsanfragen generiert wurden, werden sie mit den üblichen Prozessen der Anfrageverwaltung verarbeitet.
 
@@ -56,6 +59,8 @@ Nachfolgend werden einige andere Methoden aufgeführt, auf die eine Überwachung
 -   Für auf dem Abfragetyp **Listensuche** basierende Richtlinienregeln wertet die Richtlinie Dokumente für überwachte Entitäten aus, die am letzten Tag des Datumsbereichs für die Dokumentauswahl gültig sind.
 
 
-Weitere Informationen finden Sie audit-policy-rules.md Überwachungsrichtlinienregeln [] ()
+Weitere Informationen zu den [Richtlinienregeltypen](audit-policy-rules.md) finden Sie unter .
+
+
 
 

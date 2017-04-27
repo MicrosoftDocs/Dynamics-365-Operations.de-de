@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="performance-management-overview"></a>Überblick über die Leistungsverwaltung
 
+[!include[banner](includes/banner.md)]
+
+
 Anhand des Leistungsverwaltungsprozesses können Mitarbeiter ihre Leistung dokumentieren und mit ihrem Vorgesetzten erörtern. Vorgesetzte können wiederum den Mitarbeitern Rückmeldungen und Ratschläge geben.  
 
 Wie das folgende Diagramm zeigt, gibt es drei Seiten für die Verwaltung dieses Prozesses:
@@ -34,7 +37,7 @@ Wie das folgende Diagramm zeigt, gibt es drei Seiten für die Verwaltung dieses 
 -   Ziele
 -   Leistungsbeurteilung
 
-Im folgenden Diagramm wird dargestellt, wie die Hauptkomponenten der Leistungsverwaltung miteinander verbunden sind. ![Leistungsprozessüberblick ([]. /media/hcm_performanceoverviewdiagram-300x189.png)]". /media/hcm_performanceoverviewdiagram.png)    
+Im folgenden Diagramm wird dargestellt, wie die Hauptkomponenten der Leistungsverwaltung miteinander verbunden sind. [![Überblick über den Leistungsprozess](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Leistungserfassung
 Als Mitarbeiter sammeln Sie vor dem Abschluss einer Leistungsbeurteilung häufig Informationen zu Aktivitäten oder Ereignissen, die Ihnen während der Überprüfungsperiode bei Ihrer Arbeit geholfen haben. Die Leistungserfassung ist die richtige Stelle, um diese Aktivitäten und Ereignisse zu dokumentieren. Darüber hinaus können Sie zukünftige Aktivitäten erstellen, die abgeschlossen werden müssen, damit ein bestimmtes Ziel erreicht wird oder damit die Voraussetzungen für einen Entwicklungsplan oder leistungsorientierte Verpflichtungen erfüllt werden. Leistungserfassungen sind nicht erforderlich, um Ziele oder Leistungsbeurteilungen zu erstellen. 
@@ -132,7 +135,7 @@ Sie können den Workflow für die Arbeitskraftüberprüfung verwenden, um die Ge
 Der Workflow für die Arbeitskraftüberprüfung besteht aus zwei Elementen:
 
 1.  Überprüfung genehmigen. Fügen Sie dieses Element hinzu, um die Änderung des Status von **In Bearbeitung** zu **Bereit für Überprüfung** zu steuern. Ändern Sie die Zuweisung, damit die Führungsebenenhierarchie verwendet wird (Mitarbeiterposition-Managerebene = 1).
-2.  Abschlussüberprüfung. Fügen dieses Element hinzufügen, um die Änderung des Status von zu steuern ** bereiten zur Überprüfung vor ** ** endgültige Prüfung **. Die Zuweisung ändern Sie auf, um die Verwaltungshierarchie verwendet in der die Employee.line-Managerebene = 1, wenn der Manager der letzten Prüfung genehmigen soll. Ändern Sie die Zuweisung in "Workflowbenutzer", wenn die Genehmigung durch den Mitarbeiter erfolgen soll. Wenn die Genehmigung sowohl durch den Mitarbeiter als auch durch den Vorgesetzten erfolgen soll, fügen Sie zwei Schritte im Workflow hinzu. Nehmen Sie die entsprechende Zuweisung für jeden Schritt in der Reihenfolge vor, in der die Genehmigungen ablaufen sollen.
+2.  Abschlussüberprüfung. Fügen Sie dieses Element hinzu, um die Änderung des Status von **In Bearbeitung** zu **Letzte Überprüfung** zu steuern. Die Zuweisung ändern Sie auf, um die Verwaltungshierarchie verwendet in der die Employee.line-Managerebene = 1, wenn der Manager der letzten Prüfung genehmigen soll. Ändern Sie die Zuweisung in "Workflowbenutzer", wenn die Genehmigung durch den Mitarbeiter erfolgen soll. Wenn die Genehmigung sowohl durch den Mitarbeiter als auch durch den Vorgesetzten erfolgen soll, fügen Sie zwei Schritte im Workflow hinzu. Nehmen Sie die entsprechende Zuweisung für jeden Schritt in der Reihenfolge vor, in der die Genehmigungen ablaufen sollen.
 
 ## <a name="setup"></a>Einstellung
 Die folgenden drei Seiten helfen Ihnen beim Einrichten der Informationen, die zum Abschließen des Leistungsprozesses erforderlich sind: Seite **Messungen**, Seite **Leistungserfassungs-Quelltypen** und die Seite **Überprüfungstypen**.
@@ -148,5 +151,7 @@ Leistungserfassungs-Quelltypen beschreiben, woher die Leistungserfassungen stamm
 ### <a name="review-types"></a>Überprüfungstypen
 
 Typen der Leistungsbeurteilung helfen, das Verhalten einer Leistungsbeurteilung zu steuern. Sie können den Workflow für eine Beurteilung aktivieren oder deaktivieren. Wenn die Beurteilung keinem Workflow unterliegt, können Sie den Standardstatus definieren, der beim Erstellen der Beurteilung verwendet wird. Sie können außerdem festlegen, ob der Mitarbeiter, der Vorgesetzte oder beide die Beurteilung abzeichnen müssen.
+
+
 
 

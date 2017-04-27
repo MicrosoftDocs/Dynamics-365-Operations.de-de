@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-conditional-decision-in-a-workflow"></a>Konfigurieren einer bedingten Entscheidung in einem Workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 Verwenden Sie die folgenden Verfahren, um die Eigenschaften der bedingten Entscheidung zu konfigurieren.
 
 Eine bedingte Entscheidung ist ein Punkt, an dem ein Workflow sich in zwei Verzweigungen gabelt. Klicken Sie zum Konfigurieren einer bedingten Entscheidung im Workflow-Editor mit der rechten Maustaste auf die bedingte Entscheidung, und klicken Sie dann auf **Eigenschaften**, um das Formular **Eigenschaften** zu öffnen.
@@ -38,7 +41,7 @@ Gehen Sie folgendermaßen vor, um einen Namen für die bedingte Entscheidung ein
 ## <a name="set-conditions"></a> Festlegen von Bedingungen
 Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten Bedingungen entspricht, welche Verzweigung verwendet wird.
 1.  Klicken Sie im linken Bereich auf **Grundeinstellungen**.
-2.  Click **Add condition**.
+2.  Klicken Sie auf **Bedingung hinzufügen**.
 3.  Geben Sie eine Bedingung ein.
 4.  Geben Sie ggf. zusätzliche Bedingungen ein.
 5.  Führen Sie folgende Schritte aus, um die korrekte Konfiguration der eingegebenen Bedingungen zu überprüfen:
@@ -46,6 +49,8 @@ Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten
     2.  Wählen Sie im Bereich **Bedingung überprüfen** des Formulars einen Datensatz aus.
     3.  Klicken Sie auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht.
     4.  Klicken Sie auf **OK** oder **Abbrechen**, um zum Formular **Eigenschaften** zurückzukehren.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Buchung (Definitionen)
-description: "Dieser Artikel wird Beispiele fest, die zeigen, wie Bestellbelastungen für Budgetzuteilungen und Buchungsdefinitionen verwendet werden."
+description: "Dieser Artikel enthält Beispiele, die zeigen, wie Bestellbelastungen für Budgetzuteilungen und Buchungsdefinitionen verwendet werden."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="posting-definition-examples"></a>Buchungsdefinitionsbeispiele
 
-Dieser Artikel wird Beispiele fest, die zeigen, wie Bestellbelastungen für Budgetzuteilungen und Buchungsdefinitionen verwendet werden.
+[!include[banner](../includes/banner.md)]
+
+
+Dieser Artikel enthält Beispiele, die zeigen, wie Bestellbelastungen für Budgetzuteilungen und Buchungsdefinitionen verwendet werden.
 
 Bevor Sie dieses Thema lesen, sollten Sie sich mit Buchungsdefinitionen und Transaktionsbuchungsdefinitionen vertraut gemacht haben. Informationen zu den Buchungsebenen finden Sie unter [Buchungsdefinitionen](posting-definitions.md). Die folgenden Beispiele können im Formular **Buchungsdefinitionen** eingerichtet werden. Jedes Beispiel umfasst folgende Abschnitte:
 
@@ -39,7 +42,7 @@ Bevor Sie dieses Thema lesen, sollten Sie sich mit Buchungsdefinitionen und Tran
 
 Wenn die Konten und Dimensionswerte im Bereich **Übereinstimmungskriterien** für die Buchungsdefinition mit den Konten und Dimensionswerten der Buchung übereinstimmen, werden Sachkontoeinträge basierend auf dem Bereich **Generierte Einträge** für die Buchungsdefinition generiert. 
 > [!NOTE]
-> Um eine Buchungsdefinition einer bestimmten Buchungsart zuzuordnen, verwenden Sie die Buchungsdefinitionen ** ** Seite. Nachdem Sie einer Buchungsart eine Buchungsdefinition zugeordnet und auf der Verwendungsbuchungsdefinitionen ** ** ** Hauptbuchparameter ** Seite auswählen, müssen für alle Buchungen der ausgewählten Buchungsart Buchungsdefinitionen verwendet.
+> Verwenden Sie die Seite **Transaktions-Buchungsdefinitionen**, um eine Buchungsdefinition einer bestimmten Buchungsart zuzuordnen. Nachdem Sie einer Buchungsart eine Buchungsdefinition zugeordnet und auf der Seite **Hauptbuch-Parameter** **Buchungsdefinitionen verwenden** ausgewählt haben, müssen für alle Buchungen der ausgewählten Buchungsart Buchungsdefinitionen verwendet werden.
 
 ## <a name="example-purchase-order-encumbrances"></a>Beispiel: Bestellbelastungen
 Wenn Sie die Belastungsverarbeitung aktivieren, indem Sie **Belastungsprozess aktivieren** auf der Seite **Hauptbuchparameter** auswählen, müssen Buchungsdefinitionen verwendet werden, um im Hauptbuch Belastungen für beliebige Konten zu erfassen, die reserviert werden sollen. In den meisten Fällen werden alle Spesenkonten in der Bilanz reserviert. 
@@ -69,7 +72,7 @@ Die Konten und Dimensionswerte stammen entweder aus den Buchhaltungsverteilungen
 
 | Konto + Dimensionen           | Soll  | Entlastung | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 606400-OU \_1-OU\_3566-Training | 250,00 |        |         |
+| 606400-OU\_1-OU\_3566-Schulung | 250,00 |        |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Aus der Buchungsdefinition generierte Sachkontoeinträge
 
@@ -77,10 +80,10 @@ Generierte Sachkontoeinträge werden erstellt, um die Belastungen zu erfassen.
 
 | Konto + Dimensionen           | Soll  | Entlastung | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 300143-OU \_1-OU\_3566-Training | 250,00 |        |         |
-| 300144-OU \_1-OU\_3566-Training |        | 250,00 |         |
+| 300143-OU\_1-OU\_3566-Schulung | 250,00 |        |         |
+| 300144-OU\_1-OU\_3566-Schulung |        | 250,00 |         |
 
-In diesem Beispiel stimmt jedes Konto, das Teil der Kontostruktur - GuV ist, mit den Buchungsdefinitionskriterien überein. Wenn 606500-OU \_1-OU\_3566-Training ausgewertet wird, werden generierte Einträge für Konten, die im generierten Einträge ** ** Bereich für die Buchungsdefinition definiert sind.
+In diesem Beispiel stimmt jedes Konto, das Teil der Kontostruktur - GuV ist, mit den Buchungsdefinitionskriterien überein. Wenn daher 606500-OU\_1-OU\_3566-Schulung ausgewertet wird, werden für Konten, die im Bereich **Generierte Einträge** für die Buchungsdefinition definiert sind, Einträge generiert.
 
 ## <a name="example-budget-appropriations"></a>Beispiel: Budgetzuteilungen
 Wenn Sie die Budgetzuteilung aktivieren, indem Sie **Budgetzuteilung aktivieren** auf der Seite **Hauptbuchparameter** auswählen, müssen Buchungsdefinitionen verwendet werden, um Budgetregistereinträge im Hauptbuch zu erfassen. Wenn eine Budgetsteuerungskonfiguration aktiv und aktiviert ist, können Buchungsdefinitionen und Transaktionsbuchungsdefinitionen verwendet werden, um die Erfassung von Einträgen in Bezug auf Verteilung, Überarbeitung, Übertragung, Projekte, Anlagen und die Angebots- sowie Bedarfsplanung im Hauptbuch zu unterstützen. 
@@ -110,7 +113,7 @@ Sie geben Konten, Dimensionswerte und Beträge für den Budgetkontoeintrag auf d
 
 | Konto + Dimensionen           | Soll | Entlastung | Kommentar |
 |--------------------------------|-------|--------|---------|
-| 606400-OU \_1-OU\_3566-Training |       | 250,00 |         |
+| 606400-OU\_1-OU\_3566-Schulung |       | 250,00 |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Aus der Buchungsdefinition generierte Sachkontoeinträge
 
@@ -118,10 +121,12 @@ Generierte Sachkontoeinträge werden erstellt, um das ursprüngliche Budget in j
 
 | Konto + Dimensionen           | Soll  | Entlastung | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 300145-OU \_1-OU\_3566-Training |        | 250,00 |         |
-| 300146-OU \_1-OU\_3566-Training | 250,00 |        |         |
+| 300145-OU\_1-OU\_3566-Schulung |        | 250,00 |         |
+| 300146-OU\_1-OU\_3566-Schulung | 250,00 |        |         |
 
-In diesem Beispiel stimmt jedes Konto, das Teil der Kontostruktur - GuV ist, mit den Buchungsdefinitionskriterien überein. Wenn 606400-OU \_1-OU\_3566-Training ausgewertet wird, werden die generierten Sachkontoeinträge erstellt.
+In diesem Beispiel stimmt jedes Konto, das Teil der Kontostruktur - GuV ist, mit den Buchungsdefinitionskriterien überein. Daher werden die generierten Sachkontoeinträge beim Auswerten von 606400-OU\_1-OU\_3566-Schulung erstellt.
+
+
 
 
 

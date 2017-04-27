@@ -1,6 +1,6 @@
 ---
 title: "Budgetierungsüberblick"
-description: "Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 für Arbeitsgänge verwendet werden, müssen den Status erhalten, Berichte des Budgets durch Vergleich mit den Wirklichkeiten zu erstellen. In diesem Artikel wird beschrieben die Mindstausstattung, die erforderlich ist, um Budgets in Dynamics 365 für Arbeitsgänge erstellen oder er von einem Programm zum Laden von Drittanbietern."
+description: "Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 for Operations verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Dynamics 365 for Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,21 +26,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budgeting-overview"></a>Budgetierungsüberblick
 
-Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 für Arbeitsgänge verwendet werden, müssen den Status erhalten, Berichte des Budgets durch Vergleich mit den Wirklichkeiten zu erstellen. In diesem Artikel wird beschrieben die Mindstausstattung, die erforderlich ist, um Budgets in Dynamics 365 für Arbeitsgänge erstellen oder er von einem Programm zum Laden von Drittanbietern.
+[!include[banner](../includes/banner.md)]
+
+
+Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 for Operations verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Dynamics 365 for Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
 
 <a name="overview"></a>Überblick
 --------
 
-Das genehmigte Budget für eine juristische Person wird in einem Dokument verwaltet, das als *Budgetregistereintrag* bekannt ist. Die Positionen in einem Budgetregistereintragsdokument wird als *budget Einträge enthalten account* und Finanzdimensionsinformationen, Datumsangaben und Beträge genehmigter Budgets. Das Budgetregistereintragsdokument wird mit grundlegenden und Abfragenseiten Finanzberichten integriert, in dem die tatsächlichen Beträge des Sachkontos zu den Budgetbeträgen verglichen werden. 
+Das genehmigte Budget für eine juristische Person wird in einem Dokument verwaltet, das als *Budgetregistereintrag* bekannt ist. Die Positionen in einem Budgetregistereintragsdokument wird als *Budgetkonto*bezeichnet und enthält Finanzdimensionsinformationen, Datumsangaben und Beträge der genehmigten Budgets. Das Budgetregistereintragsdokument wird mit grundlegenden Finanzberichten und Abfragenseiten ergänzt, in dem die tatsächlichen Beträge des Sachkontos mit den Budgetbeträgen verglichen werden. 
 
-Es gibt mehrere Methoden für das Erstellen von Budgetregistereinträgen in Dynamics 365 für Arbeitsgänge:
+Es gibt mehrere Möglichkeiten zum Erstellen von Budgetregistereinträgen in Microsoft 365 for Operations:
 
 -   Geben Sie die Dokumentinformationen auf der Seite **Budgeterfassungseinträge** manuell ein.
 -   Verwenden Sie die Microsoft- Excelvorlage, die geöffnet können, indem Sie auf der Seite **in Excel öffnen** auf die Schaltfläche **Budgetregistereinträge** klicken.
--   Verwenden Sie die **Budgetkontoeinträge** Datenentität in der Datenverwaltung, um Budgetregistereinträge zu importieren. Sie können diese Methode anzuwenden zu aktivieren, und nehmen ** der Wechselkurs basiert ** ** Verarbeitungseinstellungen ** Parameter, wenn Sie zahlreiche Budgetkontoeinträge in das System importiert werden müssen.
+-   Verwenden Sie die **Budgetkontoeinträge** Datenentität in der Datenverwaltung, um Budgetregistereinträge zu importieren. Sie sollten in Betracht ziehen, diese Methode anzuwenden und den Prozessparameter **Set-basiert** setzen,  wenn viele Budgetkontoeinträge in das System importiert werden müssen.
 -   Wenn das Unternehmen Planungsfunktionen plant, um Budgetdaten vorzubereiten, können Sie den periodischen Prozess**Budgetregistereintrag erstellen** verwenden.
 
-Der Budgetregistereintrag wird als abgeschlossen, wenn die Budgetsalden aktualisiert wurden. ** Auf der Budgeterfassungseinträge ** Seite, um Aktualisierungsbudgetsalden ** ** für einen ausgewählten oder mehreren Einträgen den Budgetregistereintrag. Nachdem Sie die Budgetsalden aktualisiert haben, wird der Status des Budgetregistereintrags auf **Abgeschlossen** gesetzt. Ein abgeschlossener Budgetregistereintrag kann nicht erneut zum Bearbeiten geöffnet werden. Wenn die Budgetdaten angepasst werden müssen, müssen Sie einen neuen Budgetregistereintrag erstellen, anstatt die Daten im abgeschlossenen Budgetregistereintrag zu korrigieren.
+Der Budgetregistereintrag wird als abgeschlossen betrachtet, wenn die Budgetsalden aktualisiert wurden. Auf der Seite **Budgeterfassungseinträge** klicken Sie auf **Budgetsalden aktualisieren**, um ausgewählte Budgeteinträge oder Mehrfacheinträge zu machen. Nachdem Sie die Budgetsalden aktualisiert haben, wird der Status des Budgetregistereintrags auf **Abgeschlossen** gesetzt. Ein abgeschlossener Budgetregistereintrag kann nicht erneut zum Bearbeiten geöffnet werden. Wenn die Budgetdaten angepasst werden müssen, müssen Sie einen neuen Budgetregistereintrag erstellen, anstatt die Daten im abgeschlossenen Budgetregistereintrag zu korrigieren.
 
 ## <a name="configuration"></a>Konfiguration
 Wenn Sie die Budgetierung konfigurieren, beginnen Sie auf der Seite **Budgetierungsparameter**. Auf dieser Seite müssen Sie die Budgeterfassung, die Zahlenfolge für die Budgetregistereinträge und das Standardverhalten in den Arbeitsbereichen definieren.
@@ -49,10 +52,10 @@ Wenn es Richtlinien gibt, die die Genehmigung von Budgetregistereinträgen basie
 
 Wählen Sie auf der Seite **Budgetierungsdimensionen** Finanzdimensionen, die für die Budgetierung basierend auf den im Kontenplan verwendeten Dimensionen verwendet werden. Sie können für die Budgetierung alle Finanzdimensionen oder eine Auswahl davon auswählen.
 
-Definieren Sie ein *budget Modell entspricht *that allen oder mehreren der Budgets. Sie können ein einziges Budgetmodell für alle Budgetregistereinträge verwenden. Alternativ können Sie separate Modelle erstellen, die auf dem Budgettyp, dem geografischen Standort oder einen beliebigen anderen Methode, mit der ein Budget klassifiziert werden kann, basiert. 
+Definieren Sie ein *Budgetmodell*, das allen oder einigen Budgets entspricht. Sie können ein einziges Budgetmodell für alle Budgetregistereinträge verwenden. Alternativ können Sie separate Modelle erstellen, die auf dem Budgettyp, dem geografischen Standort oder einen beliebigen anderen Methode, mit der ein Budget klassifiziert werden kann, basiert. 
 
 > [!NOTE] 
-> Wenn die Budgetsteuerung verwendet wird, kann nur ein Budgetmodell mit einer bestimmten Zeitspanne für Budgetzyklus zugeordnet. 
+> Wenn die Budgetsteuerung verwendet wird, können Sie nur ein Budgetmodell einer bestimmten Zeitspanne für den Budgetzyklus zuordnen. 
 
 Erstellen Sie *Budgetcodes *, die den Typ der zu erfassenden Budgettransaktionen und die damit im Zusammenhang stehende Workflows identifizieren. Budgetcodes können die folgende Budgettypen unterstützen:
 
@@ -63,18 +66,20 @@ Erstellen Sie *Budgetcodes *, die den Typ der zu erfassenden Budgettransaktionen
 -   Vorabbelastung
 -   Vortragsbudget
 
-Budgetcodes geben Ihnen einen Audit-Trail mit den im Verlauf des Budgetzyklus genehmigten Budgetänderungen. Wenn ein Workflow einem Budgetcode zugeordnet ist, wird der Workflow aktiviert für alle Budgetregistereinträge, die diesen Budgetcode verwenden, und Workflowschritte müssen ausgeführt werden, bevor dem Budgetregistereintrag ** die abgeschlossen ** Phase eingeben kann.  
+Budgetcodes geben Ihnen einen Audit-Trail mit den im Verlauf des Budgetzyklus genehmigten Budgetänderungen. Wenn ein Workflow einem Budgetcode zugeordnet ist, wird der Workflow aktiviert für alle Budgetregistereinträge, die diesen Budgetcode verwenden, und Workflowschritte müssen ausgeführt werden, bevor dem Budgetregistereintrag Phase **Abgeschlossen** eingeben kann.  
 
-Sie können *budget Übergangs-rules* optional auch einrichten. Wenn Sie folglich zu verwenden, aktivieren Sie ** verwenden Sie Regeln für Budgetübertragungen ** ** Budgetparameter ** auf der Seite aus. Wenn Budgetübertragungsregeln verwendet werden, wenn ein Benutzer ein Dokument mithilfe des Budgetcodes vom Typ **Übertragen** erstellt, werden Budgetsalden nicht aktualisiert, wenn die Budgetübertragungsregeln verletzt werden. Sie können beispielsweise Budgetübertragungsdokumente zulassen, wenn das Ausgabenbudget zwischen den Hauptkonten für die Vertriebs- und Marketingabteilung übertragen werden, kann jedoch verhindern, dass Budget von dieser Abteilung oder zu dieser übertragen wird, sofern keine Workflowgenehmigung für diesen Typ von Budgetkontoeinträgen gewährt wurde.
+Sie können optional auch *Budgetübertragungsregeln* festlegen. Wenn Sie  Budgetübertragungsregeln verwenden, wählen Sie **Regeln für Budgetübertragungen** auf der Seite **Budgetparameter** aus. Wenn Budgetübertragungsregeln verwendet werden, wenn ein Benutzer ein Dokument mithilfe des Budgetcodes vom Typ **Übertragen** erstellt, werden Budgetsalden nicht aktualisiert, wenn die Budgetübertragungsregeln verletzt werden. Sie können beispielsweise Budgetübertragungsdokumente zulassen, wenn das Ausgabenbudget zwischen den Hauptkonten für die Vertriebs- und Marketingabteilung übertragen werden, kann jedoch verhindern, dass Budget von dieser Abteilung oder zu dieser übertragen wird, sofern keine Workflowgenehmigung für diesen Typ von Budgetkontoeinträgen gewährt wurde.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Verwenden der Arbeitsbereiche und Anfragenseiten, um des Budgets im Vergleich zum Istwert zu verfolgen
 Der Budget-Manager kann den aktuellen Status eines Budgets im Arbeitsbereich **Sachkontobudgets und Planungen** überprüfen. Die Registerkarten **Ausgaben über Budget** und **Umsatzerlös unter Budget** geben einen raschen Überblick über die Finanzdimensionskombinationen, wenn Budgetziele nicht erfüllt werden oder sich dem Schwellenwert nähern. Sie können den Budgetschwellenwertprozentsatz und die Finanzdimensionssätze, die in diesen Registerkarten verwendet werden, personalisieren, indem Sie den **Meinen Arbeitsbereich konfigurieren** anklicken. Sie können auf **Einheiten-Manager** klicken, um die Arbeitskräfte anzuzeigen, die für bestimmte Finanzdimensionskombinationen, die auf diesen Registerkarten ausgewählt werden, verantwortlich sind. Wenn Sie beispielsweise sehen, dass das Ausgabenbudget der Betriebsabteilung den Budgetschwellenwert überschreitet, können Sie den Betriebsabteilungsmanager einfach auffinden, um das Problem zu diskutieren. 
 
 > [!NOTE] 
-> ** Der Abteilungsleiter ** Feld auf der Organisationseinheiten ** ** Seite abhängig, welche bestimmte Finanzdimensionskombinationen Manager unterstützen. Klicken Sie **Mehr** am unteren Rand der Registerkarte, um die Abfrageseite**Budget im Vergleich zum Istwert** zu öffnen, um weitere Details zu Budgetbeträge im Vergleich zu den aktuellen Beträgen zu erhalten. 
+> Das Feld **Abteilungsleiter** auf der Seite **Organisationseinheiten** bestimmt, welche Manager bestimmte Finanzdimensionskombinationen unterstützen. Klicken Sie **Mehr** am unteren Rand der Registerkarte, um die Abfrageseite**Budget im Vergleich zum Istwert** zu öffnen, um weitere Details zu Budgetbeträge im Vergleich zu den aktuellen Beträgen zu erhalten. 
 
 Auf der Abfrageseite **Istwert verglichen mit Budget** können Sie zu den Details des Budgets im Vergleich zu den Istwerten blättern. Wählen Sie eine Position auf der Abfrageseite aus und klicken Sie dann **Periodensaldi** an, um das Budget und die Istwerte im Finanzzeitraum anzusehen. Die Seite **Budgetkontoeinträge** enthält Drillthroughs zu den Details des Budgetbetrags im Budgetregistereintrag. Die Seite **Allgemeine Erfassungseinträge **öffnet die Sachkontobuchungen, die im berechneten Betrag **Istwerte** enthalten sind. 
 
 Ein Unternehmen, das Budgetplanungsfunktionen verwendet, kann im Arbeitsbereich unter *Sachkontenbudget und Planung*. **Budgetplanung** verwenden.
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Abschreibungseffekte bei Rückbuchungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel behandelt mögliche Auswirkung beim Stornieren einer Anlagentransaktion. 
 
 Anlagenbuchungen können storniert werden. Gleiches gilt für die Buchungen, die einer Anlage zugeordnet sind. Darüber hinaus besteht die Möglichkeit zum Widerrufen stornierter Buchungen. 
@@ -90,6 +93,8 @@ Die Abschreibung ist um 16,95 (983,62 - 966,67) zu niedrig bewertet.
 <a name="see-also"></a>Siehe auch
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Anlagenabschreibung](fixed-asset-depreciation.md)
+
+
 
 

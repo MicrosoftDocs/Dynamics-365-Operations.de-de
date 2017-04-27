@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Sie App-Feldnamen in der Warehousing-App
-description: "In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 für Arbeitsgänge definiert und konfiguriert."
+description: "In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 for Operations definiert und konfiguriert werden."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,14 +28,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurieren Sie App-Feldnamen in der Warehousing-App
 
-In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 für Arbeitsgänge definiert und konfiguriert. 
+[!include[banner](../includes/banner.md)]
 
-** Hinweis: ** Dieses Thema bezieht sich auf Funktionen in der Lager- zu. Es gilt nicht auf Funktionen in der Lagerverwaltung zu. Dynamics 365 für Arbeitsgänge Warehousing - handelt es sich um eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die und konfigurieren Feldnamen definieren, die in der Zeit-App verwendet werden, sowie die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird erläutert, wie Sie diese Lagerort-App-Feldnamen und -Prioritäten definiert und konfiguriert und wie sie in Dynamics 365 - Warehousing für Arbeitsgänge verwendet werden. Ausführliche Informationen dazu, wie der Verbindung zu Dynamics 365 für Arbeitsgänge - Warehousing, erhalten Sie unter " Referenten an [Installieren und Konfigurieren Sie Dynamics 365 für Arbeitsgänge - Warehousing] (install-configure-warehousing-app.md) konfiguriert.
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurieren Sie Lagerort-App-Feldnamen
+In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 for Operations definiert und konfiguriert werden. 
+
+**Hinweis:** Dieser Artikel gilt für Funktionen im Modul "Lagerortverwaltung". Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Dynamics 365 f for Operations - Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 for Operations definiert und konfiguriert werden. Ausführliche Informationen dazu, wie der Verbindung zu Dynamics 365  for Operations - Warehousing, erhalten Sie unter " Leitfaden unter [Installieren und Konfigurieren Sie Dynamics 365 for Operations - Warehousing](install-configure-warehousing-app.md).
+
+<a name="configure-warehouse-app-field-names"></a>Konfigurieren von Lagerort-Feldnamen in der App
 ===================================
 
-Wenn Sie Arbeitsgänge für Dynamics 365 auf dem - Warehousing mobilen Gerät, Sie konfigurieren können, z Metadaten für das Gerät in angezeigt werden sollen Lagerort-App-Feldnamen ** ** Seite. In ein neues Unternehmen in Dynamics 365 für Arbeitsgänge, wählen Sie ** erstellen Sie Standardeinstellungen aus ** um alle Feldnamen zu generieren, die im Workflow des geräts mobilen Lagerort verwendet werden, und weisen Sie diese dann eines bevorzugten Eingabemodus und geben Sie einen Typ zugewiesen. Nachdem Sie alle Feldnamen generiert wurde, können folgende Eingabeoptionen auswählen.
+Wenn Sie Arbeitsgänge für Dynamics 365  for Operations - Warehousing auf Ihrem mobilen Gerät nutzen, können Sie konfigurieren, wie Metadaten für das Gerät angezeigt werden sollen auf der Seite **Lagerort-App-Feldnamen **. In einem neuen Unternehmen in Dynamics 365  for Operations wählen Sie **Standardeinstellungen erstellen** aus, um alle Feldnamen zu generieren, die im Workflow des mobilen Geräts für Lagerort verwendet werden, und weisen Sie diesen dann einen bevorzugten Eingabemodus zu und geben Sie einen Typ ein. Nachdem Sie alle Feldnamen generiert haben, können folgende Eingabeoptionen auswählen.
 
 <table>
 <colgroup>
@@ -51,25 +54,25 @@ Wenn Sie Arbeitsgänge für Dynamics 365 auf dem - Warehousing mobilen Gerät, S
 <tbody>
 <tr class="odd">
 <td>Bevorzugter Eingabemodus</td>
-<td>Mit dieser Option wird definiert, ob eine Bildfläche oder ein Eingabefeld der manuellen Eingabe für den Feldnamen ausgewählten angezeigt werden sollen. Dies ist nützlich, Optionen entsprechend den von Strichcodes zu unterscheiden, wenn für das Feld verwendet werden. <strong>Hinweis:</strong> Für Feldnamen mit das bevorzugte Eingabemodus, der auf festgelegt ist, können Informationen manuell eingeben, wenn der Strichcode nicht lesbar oder beschädigt wird.</td>
+<td>Mit dieser Option wird definiert, ob eine Bildfläche oder ein Eingabefeld oder eine manuelle Eingabe für den Feldnamen ausgewählt und angezeigt werden sollen. Dies ist nützlich, um Felder entsprechend den Strichcodes zu unterscheiden, wenn solche für das Feld verwendet werden. <strong>Hinweis:</strong> Für Feldnamen mit bevorzugtem Eingabemodus wählen Sie <strong>Durchsuchen</strong>. Sie können Informationen manuell eingeben, wenn der Strichcode nicht lesbar oder beschädigt wird.</td>
 </tr>
 <tr class="even">
 <td>Eingabetyp</td>
-<td>Diese Option definiert, welche eingegebener Typ des ausgewählten Feldnamen verwendet werden soll. Vier Optionen sind verfügbar:
+<td>Diese Option definiert, welcher eingegebene Typ des ausgewählten Feldnamen verwendet werden soll. Es sind vier Optionen verfügbar:
 <ul>
-<li><strong>Auswahl</strong> - enthält eine Liste der Optionen aus, um auszuwählen. Feldnamen mit dieser Option sind nicht bearbeitet werden.</li>
-<li><strong>Datum</strong> - Feldnamen, die ab der das Datum angegeben werden, wird ein mit Datumsformat der Beschriftung an. Damit schaffen Lagerarbeitern, in dem Format anzuzeigen, um das Datum zu geben. Feldnamen mit dieser Option sind nicht bearbeitet werden.</li>
-<li><strong>Alphanumerische</strong> -, wenn es, die Gerätentastatur aktiviert ist, wird verwendet, wenn die manuelle Informationen in der Zeit-App eingibt. Die Tastaturerfahrung kann geändert werden, je nach Gerät verwendet wird.</li>
-<li><strong>Numerisch</strong> Feldnamen für  -, nur die Eingabe numerische verwenden, können Sie diese Option auswählen, um eine benutzerdefinierte Zehnertastatur dem Eingabefeld anstelle der Gerätentastatur anzuzeigen.</li>
+<li><strong>Auswahl</strong> - Enthält eine Liste der Optionen zum Auszuwählen. Feldnamen mit dieser Option können nicht bearbeitet werden.</li>
+<li><strong>Datum</strong> - Feldnamen, definiert als Datum zeigen das Datumsformat der Beschriftung an. Damit können Lagerarbeiter sehen, welches Datumsformat sie eingeben müssen. Feldnamen mit dieser Option können nicht bearbeitet werden.</li>
+<li><strong>Alphanumerische</strong> - Wenn ausgewähltes, wird die Gerätentastatur verwendet, um die Informationen manuell in de App einzugeben. Die Tastaturerfahrung kann geändert werden, je nach Gerät, das verwendet wird.</li>
+<li><strong>Numerisch</strong> - Für Feldnamen, die nur numerische Eingaben verwenden; Sie könne diese Option auswählen, um eine benutzerdefinierte Zehnertastatur dem Eingabefeld anstelle der Gerätentastatur anzuzeigen.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurieren Sie Lagerort-App-Feldpriorität
+<a name="configure-warehouse-app-field-priority"></a>Feldpriorität in Lagerortanwendung konfigurieren
 ======================================
 
-Auf der Seite Lagerort-App-Feldpriorität ** ** können Sie Tabellen- und andere Prioritätsgruppen zu sperren. Auf diese Weise ist es möglich, entscheiden, welche Informationen auf der Hauptaufgabenseite angezeigt werden sollen, wenn Lagerarbeiter Aufgaben mithilfe der Zeit-App ausführen. Beim Klicken auf… ** erstellen Sie Standardeinstellungen **, wird ein Standardsatz Prioritätsgruppen generiert. Es ist möglich, durch sich nach Bedarf erstellen, aber nur drei Prioritätsgruppen werden der auf die angezeigt. Wenn Dynamics 365 für Arbeitsgänge und Metadaten Zeit-App sendet, weist diese jedes der Felder einen relativen Priorität abhängig von seiner Prioritätsstufe zu, und der Zeit-App werden die ersten drei an, die sich in den Metadaten auf der Aufgabenseite enthalten sind. Der Rest der überfließenden Metadaten werden auf einer sekundären Detailseite angezeigt. Die folgende Tabelle enthält ein Beispiel der fünf sich an.
+Auf der Seite L**agerort-App-Feldpriorität** können Sie Feldnamen anderen Prioritätsgruppen zuweisen. Auf diese Weise ist es möglich, zu entscheiden, welche Informationen auf der Hauptaufgabenseite angezeigt werden sollen, wenn Lagerarbeiter Aufgaben mithilfe der App ausführen. We nn Sie auf **Standardeinstellungen erstellen** klicken, wird ein Standardsatz von Prioritätsgruppen generiert. Es ist möglich, beliebig viele Prioritätsgruppen zu erstellen, aber es werden nur drei Prioritätengruppen auf der Aufgabenseite angezeigt. Wenn Dynamics 365  for Operations Metadaten an die App sendet, weist diese jedes der Felder einer relativen Priorität abhängig von seiner Prioritätsstufe zu, und die App zeigt die ersten drei Prioritätengruppen an, die in den Metadaten auf der Aufgabenseite enthalten sind. Der Rest der überfließenden Metadaten wird auf einer sekundären Detailseite angezeigt. Die folgende Tabelle enthält ein Beispiel der fünf Prioritätengruppen.
 
 <table>
 <colgroup>
@@ -78,7 +81,7 @@ Auf der Seite Lagerort-App-Feldpriorität ** ** können Sie Tabellen- und andere
 </colgroup>
 <thead>
 <tr class="header">
-<th>Prioritätsstufe</th>
+<th>Prioritätsgruppe</th>
 <th>Zugewiesene Felder</th>
 </tr>
 </thead>
@@ -123,25 +126,27 @@ Auf der Seite Lagerort-App-Feldpriorität ** ** können Sie Tabellen- und andere
 </tbody>
 </table>
 
-Wenn beispielsweise ein Lagerarbeiter eine Aufgabe auf einem mobilen Gerät ausführt, wenn die Metadaten, die in der Zeit-App angezeigt werden, besteht aus den folgenden Feldern:
+Ein Lagerarbeiter führt beispielsweise eine Aufgabe auf einem mobilen Gerät aus, wenn die Metadaten, die angezeigt werden, folgende Felder aufweisen:
 
 -   Artikel
 -   Leistung
 -   Maßeinheit
 -   Artikelbeschreibung
--   Größe und Lagerplatz
+-   Größe und Standort
 
-Basierend auf den Lagerort-App-Feldpriorität, die in der Tabelle) eingerichtet wird, werden die folgenden Zeilen 3 von der Informationen auf die angezeigt:
+Basierend auf der Lagerort-App-Feldpriorität, die in der Tabelle oben eingerichtet wird, werden die folgenden 3 Zeilen der Informationen auf der Aufgabenseite angezeigt:
 
--   Zeile 1: Artikel, Menge, Einheit
--   Zeile 2: Artikelbeschreibung
+-   Zeile 1: Artikel, Menge, Maßeinheit
+-   Reihe 2: Artikelbeschreibung
 -   Zeile 3: Größe
 
-Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufgabenseite angezeigt, sondern werden auf einer Detailseite angezeigt. Um Weitere Informationen und Beispiele der Benutzeroberfläche anzuzeigen, finden Sie in der Blogbeitrag an an [Dynamics 365 für Arbeitsgänge ankündigend - Warehousing] (https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufgabenseite angezeigt, sondern werden auf einer Detailseite angezeigt. Weitere Informationen und Beispiele der Benutzeroberfläche finden Sie im Blogbeitrag [Ankündigung Dynamics 365  for Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/)
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Installieren und Konfigurieren von Microsoft Dynamics 365 für Arbeitsgänge – Warehousing] (install-configure-warehousing-app.md)
+[Installieren und Konfigurieren von Microsoft Dynamics 365  for Operations – Warehousing](install-configure-warehousing-app.md)
+
+
 
 

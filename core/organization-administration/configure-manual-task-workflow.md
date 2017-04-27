@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren einer manuellen Aufgabe in einem Workflow
+title: Konfigurieren einer manuellen Entscheidung in einem Workflow
 description: "Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Aufgabe konfigurieren können."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurieren einer manuellen Aufgabe in einem Workflow
+# <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurieren einer manuellen Entscheidung in einem Workflow
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Aufgabe konfigurieren können.
 
@@ -124,10 +127,10 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem die manuelle Aufgabe zugewiesen
     </tr>
     <tr class="even">
     <td>Benutzer</td>
-    <td>Bestimmtes Microsoft Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbare Benutzer</strong> Liste enthält alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, um die Aufgabe zuzuweisen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, um die Aufgabe zuzuweisen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -146,7 +149,7 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem die manuelle Aufgabe zugewiesen
     <li>Wählen Sie in der Liste <strong>Warteschlangenname</strong> <strong>Bedingte Warteschlange</strong>aus.</li>
     </ol></li>
     </ol>
-    <strong>Hinweis:</strong> wird dieses Kontrollkästchen nur einige für Workflow, z Anfrageverwaltung verwendet.</td>
+    <strong>Hinweis:</strong> Diese Option wird nur für einige Workflows verwendet, wie z.B. Anfrageverwaltung.</td>
     </tr>
     </tbody>
     </table>
@@ -214,10 +217,10 @@ Wenn ein Benutzer die manuelle Aufgabe nicht innerhalb der vorgesehenen Zeit aus
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmtes Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbare Benutzer</strong> Liste enthält alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, um die Aufgabe zu eskalieren, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, um die Aufgabe zu eskalieren, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -234,7 +237,7 @@ Wenn ein Benutzer die manuelle Aufgabe nicht innerhalb der vorgesehenen Zeit aus
 6.  Wenn die Benutzer im Eskalationspfad die Aufgabe nicht innerhalb der vorgesehenen Zeit ausführen, wird die Aufgabe automatisch bearbeitet. Um die vom System auszuführende Aktivität anzugeben, wählen Sie die Zeile **Aktivität** aus, klicken Sie dann auf die Registerkarte **Aktivität bei Beendigung** und wählen eine Aktivität aus.
 
 ## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Angeben, wann die Aufgabe automatisch bearbeitet wird
-Sie können festlegen, dass unter bestimmten Bedingungen die manuelle Aufgabe automatisch bearbeitet wird. Angenommen, eine Aufgabe erfordert, dass ein Mitglied der für Spesenabrechnungen zuständigen Abteilung die zusammen mit einer Spesenabrechnung eingereichten Belege prüft. Entsprechend den Unternehmensrichtlinien muss diese Aufgabe ausgeführt werden, wenn der Gesamtbetrag der Spesenabrechnung 100 Euro überschreitet. In diesem Szenario können Sie das System so konfigurieren, dass die Aufgabe wie automatisch zu markieren ** Bezieht ab ** wenn der Gesamtbetrag niedriger als 100 ist. Gehen Sie folgendermaßen vor, um anzugeben, wann die manuelle Aufgabe automatisch bearbeitet wird.
+Sie können festlegen, dass unter bestimmten Bedingungen die manuelle Aufgabe automatisch bearbeitet wird. Angenommen, eine Aufgabe erfordert, dass ein Mitglied der für Spesenabrechnungen zuständigen Abteilung die zusammen mit einer Spesenabrechnung eingereichten Belege prüft. Entsprechend den Unternehmensrichtlinien muss diese Aufgabe ausgeführt werden, wenn der Gesamtbetrag der Spesenabrechnung 100 Euro überschreitet. In diesem Szenario können Sie das System zur automatischen Markierung der Aufgabe als **Abschließen** konfigurieren, wenn Gesamtbetrag < 100. Gehen Sie folgendermaßen vor, um anzugeben, wann die manuelle Aufgabe automatisch bearbeitet wird.
 
 1.  Klicken Sie im linken Bereich auf **Automatische Aktivitäten**.
 2.  Aktivieren Sie dieses Kontrollkästchen **Automatische Aktivitäten aktivieren**.
@@ -308,10 +311,10 @@ Sie können Benachrichtigungen an Personen senden, wenn eine manuelle Aufgabe de
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmtes Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbare Benutzer</strong> Liste enthält alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -325,8 +328,8 @@ Gehen Sie folgendermaßen vor, wenn die manuelle Aufgabe in einer bestimmten Zei
 1.  Klicken Sie im linken Bereich auf **Erweiterte Einstellungen**.
 2.  Aktivieren Sie das Kontrollkästchen **Zeitgrenze für das Workflowelement festlegen**.
 3.  Legen Sie im Feld **Dauer** fest, wann die Aufgabe abgeschlossen sein muss. Folgende Optionen stehen zur Auswahl:
-    -   ** Stunden ** – Geben die Anzahl der Stunden ein, in denen die Aufgabe ausgeführt sein muss. Wählen Sie dann den Kalender aus, den Ihre Organisation verwendet, und geben Sie Informationen zur Arbeitswoche der Organisation ein.
-    -   ** ** Tagen – Geben die Anzahl von Tagen, denen die Aufgabe ausgeführt sein müssen. Wählen Sie dann den Kalender aus, den Ihre Organisation verwendet, und geben Sie Informationen zur Arbeitswoche der Organisation ein.
+    -   **Stunden** – Geben Sie die Anzahl der Stunden ein, in denen die Aufgabe ausgeführt sein muss. Wählen Sie dann den Kalender aus, den Ihre Organisation verwendet, und geben Sie Informationen zur Arbeitswoche der Organisation ein.
+    -   **Tage** – Geben Sie die Anzahl von Tagen ein, in denen die Aufgabe ausgeführt sein muss. Wählen Sie dann den Kalender aus, den Ihre Organisation verwendet, und geben Sie Informationen zur Arbeitswoche der Organisation ein.
     -   **Wochen** – Geben Sie die Anzahl von Wochen ein, in denen die Aufgabe ausgeführt sein muss.
     -   **Monate** – Wählen Sie den Tag und die Woche aus, bis zu dem die Aufgabe ausgeführt sein muss. Sie können z. B. angeben, dass die Aufgabe bis Freitag der dritten Woche des Monats abgeschlossen sein soll.
     -   **Jahre** – Wählen Sie den Tag, die Woche und den Monat aus, bis zu dem die Aufgabe ausgeführt sein muss. Sie können z. B. angeben, dass die Aufgabe bis Freitag der dritten Woche im Dezember ausgeführt sein soll.
@@ -343,6 +346,8 @@ Wenn die manuelle Aufgabe einem Benutzer zugewiesen wird, muss der Benutzer die 
 5.  Aktivieren Sie das Kontrollkästchen **Delegieren**, wenn der Benutzer in der Lage sein soll, die Aufgabe einem anderen Benutzer zuzuweisen.
 6.  Aktivieren Sie das Kontrollkästchen **Neu zuordnen**, wenn der Benutzer in der Lage sein soll, die Aufgabe einem anderen Benutzer in der Warteschlange für Arbeitsaufgaben neu zuzuweisen.
 7.  Aktivieren Sie das Kontrollkästchen **Freigeben**, wenn der Benutzer in der Lage sein soll, die Aufgabe der Warteschlange für Arbeitsaufgaben neu zuzuweisen. Ein anderer Benutzer kann die Aufgabe anschließend ausführen.
+
+
 
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-integration-with-other-modules"></a>Budgetplanungsintegration in andere Module
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="periodic-processes-for-generating-budget-plans"></a>Periodische Prozesse für das Generieren von Budgetplänen
@@ -49,13 +52,13 @@ Die grundlegenden Elemente für den periodischen Prozess sind die gleichen für 
 
 Für jeden Generierungsprozess sind drei Aktionen verfügbar:
 
--   ** Erstellen eines neuen Budgetplan ** erstellt einen neuen Plan, die die Attribute enthält, die in aktiviert werden ** Ziel ** Abschnitt. Diese Attribute müssen nicht eindeutig sein. Daher können zwei Pläne denselben Namen und andere Werte haben.
+-   **Neuen Budgetplan erstellen **-– Erstellt eines neuen Plan, der über die Attribute verfügt, die im Bereich **Vorgabe**  aktiviert sind. Diese Attribute müssen nicht eindeutig sein. Daher können zwei Pläne denselben Namen und andere Werte haben.
 -   **Vorhandenes Budgetplanszenario ersetzen** – Löscht alle Daten im Zielbudgetplan im ausgewählten Budgetplanszenario und erstellt neue Positionen, die die ausgewählten Quelldaten verwenden.
 -   **Vorhandenes Budgetplanszenario aktualisieren, neue Daten hinzufügen** – Aktualisiert vorhandene Positionen im Zielplan, damit diese mit den Quellpositionen übereinstimmen, und fügt auch neue Positionen für neue Daten hinzu. Der Abgleich basiert auf dem Sachkonto, dem Datum, der Budgetklasse und verschiedenen anderen Feldern. Wenn Sie zum Beispiel Budgetpläne aus den Prognosepositionen generieren, ist die Positionsnummer ein wichtiges Feld. Alle Positionen, die eine Positionsnummer haben, die mit der Quellpositionsnummer übereinstimmt, werden durch die neuen Positionen aus der Quelle ersetzt.
 
 ### <a name="source"></a>Grundlage
 
-Bei allen Prozessen können die Quelle ** ** Registerkarte Sie Daten filtern, indem die Filter ** ** Schaltfläche verwendet. Standardmäßig werden bestimmte Felder dem Filter für jeden Prozess hinzugefügt. Beispielsweise sind für den Prozess **Budgetplan aus dem Hauptbuch generieren** die Kategorien **Sachkonto** und **Hauptkonto** verfügbar und erscheinen auf der Generierungsseite. Alle Felder, die Sie dem Filter hinzufügen, werden auch zur Seite hinzugefügt, zusammen mit beliebigen Kriterien, die Sie hinzufügen.
+Bei allen Prozessen können die Registerkarte **Quelle**Daten filtern, indem die **Filter**-Schaltfläche verwendet wird. Standardmäßig werden bestimmte Felder dem Filter für jeden Prozess hinzugefügt. Beispielsweise sind für den Prozess **Budgetplan aus dem Hauptbuch generieren** die Kategorien **Sachkonto** und **Hauptkonto** verfügbar und erscheinen auf der Generierungsseite. Alle Felder, die Sie dem Filter hinzufügen, werden auch zur Seite hinzugefügt, zusammen mit beliebigen Kriterien, die Sie hinzufügen.
 
 ### <a name="target"></a>Ziel
 
@@ -63,7 +66,7 @@ Bei allen Prozessen können die Quelle ** ** Registerkarte Sie Daten filtern, in
 
 Das Feld **Gesamtsumme nach** oben auf der Seite bestimmt auch das Datum, das verwendet wird. In diesem Feld werden die Summen zusammengezählt, und optional wird das Gültigkeitsdatum auf den ersten Tag des Geschäftsjahrs oder des Finanzzeitraums festgelegt. 
 
-Viele der Felder der Registerkarte **Vorgabe** werden bearbeitbar oder schreibgeschützt, abhängig von der Aktivität, die Sie auswählen. Wenn Sie vom Erstellen eines neuen Budgetplans zum Aktualisieren eines vorhandenen Plans wechseln, ist das Feld **Budgetplanname** nicht verfügbar und die Felder, die dem Auswählen eines vorhandenen Plans zugeordnet sind, sind verfügbar. ** ** Ziel auf der Registerkarte und die Quelle ** ** Registerkarte, ist das Sachkonto ** ** Feld grundsätzlich nicht verfügbar, da der Wert beim ausgewählten Budgetplanungsprozess bestimmt wird. 
+Viele der Felder der Registerkarte **Vorgabe** werden bearbeitbar oder schreibgeschützt, abhängig von der Aktivität, die Sie auswählen. Wenn Sie vom Erstellen eines neuen Budgetplans zum Aktualisieren eines vorhandenen Plans wechseln, ist das Feld **Budgetplanname** nicht verfügbar und die Felder, die dem Auswählen eines vorhandenen Plans zugeordnet sind, sind verfügbar. Auf den Registerkarten **Vorgabe** und **Quelle** ist das Feld **Sachkonto**  nie verfügbar, da der Wert vom ausgewählten Budgetplanungsprozess bestimmt wird. 
 
 Im Feld **Budgetklasse** können Sie die Haushaltsplanpositionen entweder als Ausgabenbuchungen oder Umsatzerlösbuchungen festlegen. Normalerweise sind Umsatzerlösbuchungen Habenbeträge auf einem Sachkonto und werden daher als negative Beträge gespeichert. In der Regel werden diese Buchungen auch als negative Beträge im Budgetplan angezeigt. Indem Sie die Budgetklasse jedoch als Feld im Planlayout hinzufügen, können Sie festlegen, dass der Umsatzerlös als positive Beträge angezeigt wird.
 
@@ -73,7 +76,7 @@ Drei Felder enthalten zusätzliche Funktionen: **Faktor-**, **Minimum-** und **R
 
 Der Wert im Feld **Faktor** wird durch den Quellbetrag multipliziert, um den Betrag im Budgetplan festzulegen. Sie können dann Anpassungen vornehmen, wenn Sie die Budgetplanpositionen erstellen. Sie können beispielsweise **1,03** für eine 3-Prozent-Zunahme eingeben. Der Faktor muss ein positive Zahl sein. 
 
-Im Feld **Minimum** können Sie den Schwellenbetrag zum Erstellen einer Budgetplanposition festlegen. Wenn der Quellbetrag kleiner als diese Nummer ist, wird die Budgetplanposition nicht erstellt. Ein Wert von 0,00 ** ** zulässig, alle Beträge sind jedoch nicht Unterzeichnungslimitpositionen den positiven Beträgen. Keine (Wertunterzeichnungslimitpositionen den positiven Beträgen. Negative Beträge sind immer enthalten und enthalten normalerweise Habenbuchungen) dar.
+Im Feld **Minimum** können Sie den Schwellenbetrag zum Erstellen einer Budgetplanposition festlegen. Wenn der Quellbetrag kleiner als diese Nummer ist, wird die Budgetplanposition nicht erstellt. Ein Wert von **0.00** ermöglicht alle Beträge, begrenzt Zeilen jedoch nicht auf positive Beträge. (Keine Wertbegrenzungszeilen für positive Beträge). Negative Beträge sind immer enthalten und enthalten normalerweise Habenbuchungen.)
 
 Im Feld **Rundungsregel** können Sie die Genauigkeit der Budgetplanpositionen festlegen, die erstellt werden. Sie können Beträge auf die nächsten 1,00, 10,00, 100,00 usw. der Währung runden.
 
@@ -86,13 +89,13 @@ Im Ziel ist das Feld **Budgetklasse** entweder auf **Ausgaben** oder **Umsatzerl
 
 ### <a name="generate-budget-plan-from-fixed-assets"></a>Budgetplan aus Anlagen generieren
 
-Der Prozess **Budgetplan aus Anlagen generieren**  ist keine Option für das Aggregieren nach Zeitraum oder Tag. Es gibt auch keine Option für das Festlegen des Plans, so z. Sie können dieses periodische Verarbeitung verwenden, um Buchungen stammender für Anlagen in der Budgetplanung einzubeziehen.
+Der Prozess **Budgetplan aus Anlagen generieren**  ist keine Option für das Aggregieren nach Zeitraum oder Tag. Es gibt auch keine Option für das Festlegen des Plans als historisch. Sie können dieses periodische Verarbeitung verwenden, um geplante Buchungen für Anlagen in der Budgetplanung einzubeziehen.
 
 ### <a name="generate-budget-plan-from-forecast-positions"></a>Budgetplan aus Planpositionen generieren
 
 Der Prozess **Budgetplan aus Planpositionen generieren** weist die Quellplanungsposition zur Budgetplanposition zu. Sie können die Position anzeigen, indem Sie entweder die Planungsposition als Zeile im Budgetplanlayout hinzufügen oder die Abfrage **Budgetplanpositionen** verwenden. Wenn Sie nicht möchten, dass die Prognoseposition zu den Budgetplanpositionen zugewiesen werden, legen Sie die Option **Position in Budgetplanposition einbeziehen** auf **Nein** fest.
 
-Positionen werden im Budgetplan nach Sachkonto und Position zusammengefasst. Allerdings können die Positionsnummer ausschließen, damit nur Positionen nach Sachkonto zusammengefasst werden. Legen Sie auf der Registerkarte **Vorgabe** die Option **Position in Budgetplanposition einbeziehen** auf **Nein** fest.
+Positionen werden im Budgetplan nach Sachkonto und Position zusammengefasst. Allerdings können Sie die Positionsnummer ausschließen, damit nur Positionen nach Sachkonto zusammengefasst werden. Legen Sie auf der Registerkarte **Vorgabe** die Option **Position in Budgetplanposition einbeziehen** auf **Nein** fest.
 
 Im Feld **Vollzeitäquivalent-Szenario für Budgetplan** können Sie ein Szenario auswählen, um die Anzahl von Vollzeitentsprechungen (FTEs) in den Budgetplan einzubeziehen. Das Feld ist für Szenarien des Mengentyps beschränkt, die im Layout des Zielbudgetplans enthalten sind. Wenn Sie ein FTE-Szenario auswählen, müssen Sie auch ein FTE-Hauptkonto auswählen. Dieses Konto wird verwendet, um die Positionen des Mengen der Budgetplanpositionen zu erstellen. 
 
@@ -140,5 +143,7 @@ Wählen Sie eine Position aus, und klicken Sie auf die Schaltfläche **Budgetpla
 Verwenden Sie die Schaltflächen **Beschaffungsplanung** und **Bedarfsplanung**, um diese Abfragen auszuführen. In beiden Fällen sucht die Abfrage nach Planungspositionen, die die Budgetplanpositionen erstellt haben könnten. 
 
 Zusätzliche Berichte, die verfügbar sind, sind zum Beispiel **Planpositionen nach Budgetplan**. Dieser Bericht ist insbesondere dann hilfreich, wenn Sie feststellen möchten, ob eine Position korrekt zu den Budgetplänen zugewiesen wurde.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Finanzbericht für die Einkommensaufstellung"
-description: "In diesem Artikel wird beschrieben den Standardbericht für Gewinn- und Verlustrechnung. Er wird zudem beschrieben die Bausteine, die mit diesem Bericht zugeordnet sind."
+description: "In diesem Artikel werden die Standardberichte für Einkommensaufstellung beschrieben. Er beschreibt zudem die die Bausteine, die diesen Bericht zugeordnet werden."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="income-statement-financial-report"></a>Finanzbericht für die Einkommensaufstellung
 
-In diesem Artikel wird beschrieben den Standardbericht für Gewinn- und Verlustrechnung. Er wird zudem beschrieben die Bausteine, die mit diesem Bericht zugeordnet sind. 
+[!include[banner](../includes/banner.md)]
+
+
+In diesem Artikel werden die Standardberichte für Einkommensaufstellung beschrieben. Er beschreibt zudem die die Bausteine, die diesen Bericht zugeordnet werden. 
 
 <a name="default-income-statement-report"></a>Standardbericht für die Einkommensaufstellung
 -------------------------------
@@ -61,10 +64,12 @@ Die Spaltendefinitionen enthalten verschieden Spaltentypen, um verschiedene Stuf
 <a name="see-also"></a>Siehe auch
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Finanzberichterstellung](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Finanzberichte anzeigen](view-financial-reports.md)
 
-[Finanz-Reportign Dynamics Blog (http://blogs.msdn.com/b/dynamics_financial_reporting/)]
+[Dynamics Financial Reporting-Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

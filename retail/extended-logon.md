@@ -1,5 +1,5 @@
 ---
-title: "Einstellungen erweiterte die Funktionen für Cloud POS und MPOS"
+title: "Einrichten der erweiterten Anmeldungfunktionalität für Cloud POS und MPOS"
 description: "Dieses Wiki behandelt die Optionen für die Einrichtung der erweiterten Anmeldung für Cloud-POS und Retail Modern POS (MPOS)."
 author: josaw1
 manager: AnnBe
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Einstellungen erweiterte die Funktionen für Cloud POS und MPOS
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Einrichten der erweiterten Anmeldungfunktionalität für Cloud POS und MPOS
 
 Dieses Wiki behandelt die Optionen für die Einrichtung der erweiterten Anmeldung für Cloud-POS und Retail Modern POS (MPOS).
 
 <a name="setting-up-extended-logon"></a>Einrichten der erweiterten Anmeldung
 =========================
 
-Sie können die Einstellung für Strichcodemasken ** Einzelhandel und Handel ** ** &gt; am richten Kanal suchen ** &gt; ** POS eingerichtet ** &gt; ** POS-Profile ** &gt; ** Funktionsprofile **. Das Inforegister **Funktionen** umfasst folgende Optionen, die der erweiterten Anmeldung zugeordnet sind.
+Sie können die Einstellungen für Strichcodemasken unter **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Funktionsprofile** finden. Das Inforegister **Funktionen** umfasst folgende Optionen, die der erweiterten Anmeldung zugeordnet sind.
 
 ### <a name="staff-bar-code-logon"></a>Personal-Strichcodeanmeldung
 
@@ -53,7 +53,7 @@ Wenn die Option **Personalanmeldung mit Karte erfordert Kennwort** aktiviert ist
 <a name="assigning-an-extended-logon"></a>Zuweisen einer erweiterten Anmeldung
 ===========================
 
-Standardmäßig können nur Manager die erweiterte Anmeldung den Arbeitskräften zuweisen. Damit erweiterte Anmeldung zuzuweisen, fahren Sie mit ** erweiterte Anmeldung ** in POS. Anschließend Suche nach einer Arbeitskraft nach Eingabe der Kennung oder Bediener in der Auswahlliste. Wählen Sie die Arbeitskraft aus, und klicken Sie anschließend auf **Zuweisen**. Auf der nächsten Seite ziehen Sie die Karte durch das Lesegerät oder scannen Sie die Karte, um der Arbeitskraft die erweiterte Anmeldung zuzuweisen. Wenn der Vorgang erfolgreich war, wird die Schaltfläche **OK **verfügbar. Klicken Sie auf **OK**, um die erweiterten Anmeldung für diese Arbeitskraft zu speichern.
+Standardmäßig können nur Manager die erweiterte Anmeldung den Arbeitskräften zuweisen. Um erweiterte Anmeldung zuzuweisen, fahren Sie mit **Erweiterte Anmeldung** in POS fort. Suchen Sie dann nach einer Arbeitskraft nach Eingabe der Kennung in der Auswahlliste. Wählen Sie die Arbeitskraft aus, und klicken Sie anschließend auf **Zuweisen**. Auf der nächsten Seite ziehen Sie die Karte durch das Lesegerät oder scannen Sie die Karte, um der Arbeitskraft die erweiterte Anmeldung zuzuweisen. Wenn der Vorgang erfolgreich war, wird die Schaltfläche **OK **verfügbar. Klicken Sie auf **OK**, um die erweiterten Anmeldung für diese Arbeitskraft zu speichern.
 
 <a name="deleting-an-extended-logon"></a>Löschen einer erweiterten Anmeldung
 ==========================

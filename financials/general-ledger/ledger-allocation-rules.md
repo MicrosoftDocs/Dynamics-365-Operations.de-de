@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-allocation-rules"></a>Sachkonto-Zuordnungsregeln
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu Sachkonto-Zuordnungsregeln. Er beschreibt die verschiedenen Komponenten dieser Zuordnungsregeln und der Zuordnungsmethoden, die für sie verwendet werden können.
 
 Sachkonto-Zuordnungsregeln werden verwendet, um Zuordnungserfassungen und Kontoeinträge für die Zuordnung von Sachkontosalden oder -festen Beträgen automatisch zu berechnen und zu generieren. Zuordnungsmethoden können variabel oder fest sein. Folgende Zuordnungsmethoden können für Sachkontozuordnungsregeln verwendet werden:
@@ -42,10 +45,12 @@ Ist die Zuordnungsmethode Basis als Zuordnungsregel festgelegt ist, muss außerd
 Jede Zuordnungsregel besitzt vier Komponenten: Allgemeines, Quelle, Ziel und Gegenkonto. Eine zusätzliche Komponente, die Sachkontozuordnungsbasisregel, ist erforderlich, wenn "Basis" als Zuordnungsmethode verwendet wird. Jede Komponente enthält eine entscheidende Information, die für die Verarbeitung der Zuordnungen erforderlich sind.
 
 -   **Allgemein** – In dieser Komponente gibt der Benutzer Optionen wie die Zuordnungsmethode, Intercompany-Regeleinstellungen und den Bestimmungsbereich der Regel ein.
--   **Quelle** – Diese Komponente dient zur Angabe der Quelldaten für die Zuordnung durch den Benutzer. Zuordnung kann basierend Sachkontosalden (** Datenquelle ** = ** ** Sachkonto) oder feste Beträge handeln (** Datenquelle ** = ** fester Wert **). Wenn **Datenquelle** auf **Sachkonto** festgelegt ist, müssen Quellfilterkriterien für die Sachkontozuordnungsregel definiert werden (beispielsweise für die Werbekosten).
+-   **Quelle** – Diese Komponente dient zur Angabe der Quelldaten für die Zuordnung durch den Benutzer. Zuteilung können auf Sachkontosalden (**Datenquelle** = **Sachkonto**) oder feste Beträge basieren (**Datenquelle** = **Fester Wert**). Wenn **Datenquelle** auf **Sachkonto** festgelegt ist, müssen Quellfilterkriterien für die Sachkontozuordnungsregel definiert werden (beispielsweise für die Werbekosten).
 -   **Ziel** – Mithilfe dieser wird definiert, wie das Ergebnis der Zuweisungsberechnung auf die verteilt und aufgeteilt werden soll. Beispielsweise kann es eine Zielposition für jede Abteilung geben.
 -   **Gegenkonto** – Diese Komponente definiert, wie Hauptkonten und Dimensionen für die Gegenbuchungen bestimmt werden, die die Zieleinträge ausgleichen. Benutzerdefinierte Optionen werden in der Regel anstelle von Konten und Dimensionen auf Quellbasis verwendet. Wenn **Datenquelle** auf **Fester Wert** festgelegt ist, kann **Quelle** nicht als Option verwendet werden.
 -   **Sachkontozuteilungsbasisregeln** – Diese Regeln verwenden ihre eigenen Quellfilterkriterien, um festzulegen, welche Sachkontosalden für die Zuweisung verwendet werden sollen (beispielsweise, Umsatzerlös pro Abteilung). Jede Zuordnungsbasisregel kann für eine Vielzahl von Zuordnungsregeln verwendet werden.
+
+
 
 
 

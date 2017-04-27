@@ -1,5 +1,5 @@
 ---
-title: "Verwendung, der für die Auflösung nachverfolgt"
+title: "Verwenden der Ablaufverfolgung für die Auflösung"
 description: "In diesem Artikel wird beschrieben, wie Sie die Funktion Nachverfolgung verwenden können, um die Ursachen hinter dem Ergebnis einer Auftragsauflösung zu untersuchen."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>Verwendung, der für die Auflösung nachverfolgt
+# <a name="use-tracing-for-explosion"></a>Verwenden der Ablaufverfolgung für die Auflösung
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Artikel wird beschrieben, wie Sie die Funktion Nachverfolgung verwenden können, um die Ursachen hinter dem Ergebnis einer Auftragsauflösung zu untersuchen.
 
@@ -43,6 +46,8 @@ Sie können Details zu Verfügbarkeit und Aktivitäten für einen ausgewählten 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Master plans](master-plans.md)
+[Produktprogrammpläne](master-plans.md)
+
+
 
 

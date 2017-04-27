@@ -1,6 +1,6 @@
 ---
 title: "Fragebögen"
-description: "Dieses Thema enthält allgemeine Informationen zu den Fragebögen und verknüpft ausführlichere Informationen. Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden. Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren."
+description: "Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu detaillierteren Informationen. Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden. Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="questionnaires"></a>Fragebögen
 
-Dieses Thema enthält allgemeine Informationen zu den Fragebögen und verknüpft ausführlichere Informationen. Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden. Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren. 
+[!include[banner](includes/banner.md)]
 
-Sie können einen Fragebogen anpassen, die den spezifischen Anforderungen anpassen, indem Sie verschiedene Funktionen verwenden, die in Microsoft Dynamics 365 für Arbeitsgänge verfügbar sind. Nachfolgend finden Sie einige Beispiele dazu, wie Sie Fragebögen verwenden können:
+
+Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu detaillierteren Informationen. Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden. Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren. 
+
+Sie können einen Fragebogen den spezifischen Anforderungen anpassen, indem Sie eine Kombination der verschiedenen Funktionen verwenden, die in Microsoft Dynamics 365 for Operations verfügbar sind. Nachfolgend finden Sie einige Beispiele dazu, wie Sie Fragebögen verwenden können:
 
 -   Testen der beruflichen Fähigkeiten von Mitarbeitern und Bewerbern.
 -   Auswerten, ob Kursteilnehmer das Kursmaterial erlernt haben.
@@ -42,9 +45,9 @@ Die folgende Tabelle enthält Links zu Informationen über die Kernaufgaben von 
 
 | Thema| Beschreibung|
 |------|------------|
-| [Design a questionnaire](design-questionnaires.md)  | Dieser Artikel enthält die Verfahrensweise zum Entwerfen von Fragebogenparametern. Der Designprozess umfasst die Einrichtung von Voraussetzungen, Fragen und Antworten und die Kombination dieser Element in einen Fragebogen. |
-| [Distribute and complete a questionnaire](distribute-questionnaires.md)  | Dieser Artikel bietet Informationen zur Verteilung eines Fragebogens an die Befragungsteilnehmern und zum Abschließen von Fragebögen.                                                                       |
-| [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md) | Dieser Artikel enthält Informationen darüber, wie die Ergebnisse ausgefüllter Fragebögen angezeigt und ausgewertet werden.                                                                                        |
+| [Entwerfen eines Fragebogens](design-questionnaires.md)  | Dieser Artikel enthält die Verfahrensweise zum Entwerfen von Fragebogenparametern. Der Designprozess umfasst die Einrichtung von Voraussetzungen, Fragen und Antworten und die Kombination dieser Element in einen Fragebogen. |
+| [Fragebögen verteilen und abschließen](distribute-questionnaires.md)  | Dieser Artikel bietet Informationen zur Verteilung eines Fragebogens an die Befragungsteilnehmern und zum Abschließen von Fragebögen.                                                                       |
+| [Anzeigen und beurteilen der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md) | Dieser Artikel enthält Informationen darüber, wie die Ergebnisse ausgefüllter Fragebögen angezeigt und ausgewertet werden.                                                                                        |
 
 
 
@@ -55,6 +58,8 @@ Die folgende Tabelle enthält Links zu Informationen über die Kernaufgaben von 
 
 [Verteilen und Abschließen von Fragebögen](distribute-questionnaires.md)
 
-[Anzeigen und Bewertung der Ergebnisse von Fragebögen evaluate-questionnaire-results.md] ()
+[Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
+
+
 
 

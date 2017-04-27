@@ -1,6 +1,6 @@
 ---
-title: "Berechnungen für Produktkonfigurationsmodelle FAQ"
-description: "In diesem Artikel wird beschrieben Berechnungen für Produktkonfigurationsmodelle und es wird beschrieben, wie Sie Berechnungen zusammen mit Einschränkungen verwendet."
+title: "Berechnungen für Produktkonfigurationsmodelle, FAQ"
+description: "In diesem Thema werden die Berechnungen für Produktkonfigurationsmodelle beschrieben und erklärt, wie Berechnungen zusammen mit Einschränkungen verwendet werden."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="calculations-for-product-configuration-models-faq"></a>Berechnungen für Produktkonfigurationsmodelle FAQ
+# <a name="calculations-for-product-configuration-models-faq"></a>Berechnungen für Produktkonfigurationsmodelle, FAQ
 
-In diesem Artikel wird beschrieben Berechnungen für Produktkonfigurationsmodelle und es wird beschrieben, wie Sie Berechnungen zusammen mit Einschränkungen verwendet.
+[!include[banner](../includes/banner.md)]
+
+
+In diesem Thema werden die Berechnungen für Produktkonfigurationsmodelle beschrieben und erklärt, wie Berechnungen zusammen mit Einschränkungen verwendet werden.
 
 Berechnungen können für Arithmetik oder logische Operationen verwendet werden. Sie ergänzen Ausdruckseinschränkungen in Produktkonfigurationsmodellen. Sie können Berechnungen auf der Seite **Details zum einschränkungsbasierten Produktkonfigurationsmodell** definieren und Ausdrücke für Berechnungen im Ausdrucks-Editor dann aufbauen. Weitere Informationen finden Sie unter Berechnungen erstellen.
 
@@ -45,9 +48,9 @@ Ein Zielattribut ist ein Attribut, das das Berechnungsergebnis in einem Ausdruck
 
 Im folgenden Ausdruck ist das Zielattribut eine Tischdeckenmessung:  
 
-** Ausdruck: ** Wenn \[decimalAttribute1 &lt;= decimalAttribute2, True, falsches\]  
+**Ausdruck:** If\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]  
 
-** DecimalAttribute1 ** ist und die Tabellenlänge ** decimalAttribute2 ** ist die Tischdeckenlänge. Der Ausdruck gibt dem Zielattribut den Wert **Wahr** zurück, wenn **decimalAttribute2** größer oder gleich **decimalAttribute1** ist. Andernfalls gibt der Ausdruck den Wert **Falsch** zurück. Daher ist die Tischdeckenabmessung akzeptabel, wenn die Tischdeckenlänge gleich oder größer als die Länge des Tisches ist.
+**DecimalAttribute1** is the table length, and **decimalAttribute2** ist die Tischdeckenlänge. Der Ausdruck gibt dem Zielattribut den Wert **Wahr** zurück, wenn **decimalAttribute2** größer oder gleich **decimalAttribute1** ist. Andernfalls gibt der Ausdruck den Wert **Falsch** zurück. Daher ist die Tischdeckenabmessung akzeptabel, wenn die Tischdeckenlänge gleich oder größer als die Länge des Tisches ist.
 
 ## <a name="what-attribute-types-can-be-set-to-target-attributes"></a>Welche Attributtypen können für Attribute festgelegt werden?
 Alle Attributtypen, die der Variantenkonfigurator unterstützt, können für Attribute festgelegt werden, mit Ausnahme von Text ohne eine feste Liste.
@@ -57,11 +60,11 @@ Nein, der Wert eines Zielattributs kann die Werte der Eingabeattribute in einer 
 
 ### <a name="example"></a>Beispiel
 
-Im folgenden Ausdruck ist das Ziel zur Berechnung die Länge eines Netzanschlusskabels, und der Eingabewert ist eine Farbe:  
+Im folgenden Ausdruck ist das Ziel für die Berechnung die Dauer eines Netzanschlusskabels und der Eingabewert eine Farbe.  
 
-** Ausdruck: ** \[wenn "Farbe == Grün" 1,5, 1,0,\]  
+**Ausdruck:** \[Wenn Farbe == "Grün", 1.5, 1.0\]  
 
-Wenn Sie den Artikel konfigurieren, wird die Länge des Netzanschlusskabels auf festgelegt ** 1,5 ** wenn Sie ** Grün ** als der Wert des attributs Farben angeben. Wenn Sie eine andere Farbe angeben, ist die Länge **1,0**. Da jedoch Berechnungen unidirektional sind, legt die Berechnung den Wert des Farbenattributs nicht auf **Grün** fest, wenn Sie eine Länge von **1,5** angeben.
+Wenn Sie den Artikel konfigurieren, generiert die Berechnung **1,5** als Länge des Netzanschlusskabels, wenn Sie **Grün** als Farbenattribut angeben. Wenn Sie eine andere Farbe angeben, ist die Länge **1,0**. Da jedoch Berechnungen unidirektional sind, legt die Berechnung den Wert des Farbenattributs nicht auf **Grün** fest, wenn Sie eine Länge von **1,5** angeben.
 
 ## <a name="what-happens-if-a-calculation-has-a-target-attribute-of-the-integer-type-but-a-calculation-generates-a-decimal-number"></a>Was passiert, wenn eine Berechnung ein Zielattribut vom Typ "Ganzzahl" aufweist, eine Berechnung aber eine Dezimalzahl generiert?
 Wenn ein Zielattribut vom Typ Ganzzahl ist, jedoch eine Berechnung eine Dezimalzahl erzeugt, wird nur der ganzzahlige Teil des berechneten Ergebnisses zurückgegeben. Der Dezimalteil wird entfernt, und das Ergebnis wird nicht gerundet. So wird beispielsweise das Ergebnis 12,70 als 12 angezeigt.
@@ -72,16 +75,16 @@ Berechnungen treten auf, wenn ein Wert für alle Eingabeattribute bereitgestellt
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Kann ich den Wert überschreiben, der für das Zielattribut berechnet wird?
 Sie können den Wert überschreiben, der für das Zielattribut berechnet wird, es sei denn, das Zielattribut ist als ausgeblendet oder schreibgeschützt festgelegt.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Wie werden ich ein Zielattribut fest, z ausgeblendet oder schreibgeschützt?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Wie lege ich ein Zielattribut als ausgeblendet oder schreibgeschützt fest?
 Um ein Attribut als ausgeblendet oder schreibgeschützt festzulegen, führen Sie folgende Schritte aus.
 
-1.  Produktinformationsverwaltung auf ** ** ** &gt; Common ** ** &gt; Produktkonfigurationsmodelle **.
+1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Gemeinsam ** &gt; **Produktkonfigurationsmodelle**.
 2.  Wählen Sie ein Produktkonfigurationsmodell aus, und klicken Sie im Aktivitätsbereich auf **Bearbeiten**.
 3.  Wählen Sie auf der Seite **Details zum einschränkungsbasierten Produktkonfigurationsmodell** das Attribut aus, das als Zielattribut verwendet werden soll.
 4.  Wählen Sie auf dem Inforegister **Attribute** entweder **Ausgeblendet** oder **Schreibgeschützt** aus.
 
 ## <a name="can-a-calculation-overwrite-the-values-that-i-set"></a>Kann eine Berechnung die Werte überschreiben, die ich setze?
-Nr. Die Werte, wenn Sie festgelegt, wenn Sie ein Produkt konfigurieren, wie Werte sind, die verwendet werden. Die Berechnung, die auftritt, wenn die Eingabewerte in einer Berechnung geändert werden, kann die Werte nicht überschreiben, die Sie für ein bestimmtes Attribut bereitstellen.
+Nr. Die Werte, die Sie festlegen, wenn Sie ein Produkt konfigurieren, sind die Werte, die verwendet werden. Die Berechnung, die auftritt, wenn die Eingabewerte in einer Berechnung geändert werden, kann die Werte nicht überschreiben, die Sie für ein bestimmtes Attribut bereitstellen.
 
 ## <a name="what-happens-if-i-remove-an-input-value-in-a-calculation"></a>Was passiert, wenn ich einen Eingabewert in einer Berechnung entferne?
 Wenn Sie einen Eingabewert in einer Berechnung entfernen, wird der Wert des Zielattributs ebenfalls entfernt.
@@ -93,13 +96,15 @@ Diese Meldung wird angezeigt, wenn eine Berechnung einen Fehler enthält, oder e
 -   Ein Konflikt zwischen den folgenden zwei Elementen liegt vor:
     -   Die Werte, die für ein Attribut verfügbar sind und die durch eine Einschränkung beschränkt werden
     -   Ein Wert, der durch eine Berechnung generiert wird
--   Die Werte, die von der Berechnung zurückgegeben werden, sind außerhalb der Domäne des Attributs. Ein Beispiel ist eine Ganzzahl zwischen \[1..10\], das durch 0 berechnet wird.
+-   Die Werte, die von der Berechnung zurückgegeben werden, sind außerhalb der Domäne des Attributs. Ein Beispiel ist eine Ganzzahl zwischen \[[1..10]\] die als 0 berechnet wird.
 
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Warum erhalte ich eine Fehlermeldung, obwohl ich mein Produktmodell erfolgreich geprüft habe?
 Berechnungen werden nicht in die Überprüfung einbezogen. Sie müssen das Produktkonfigurationsmodell testen, um Berechnungsfehler zu suchen. Führen Sie zum Testen eines Produktkonfigurationsmodells die folgenden Schritte aus.
 
-1.  Produktinformationsverwaltung auf ** ** ** &gt; Common ** ** &gt; Produktkonfigurationsmodelle **.
+1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Gemeinsam ** &gt; **Produktkonfigurationsmodelle**.
 2.  Wählen Sie ein Produktkonfigurationsmodell aus, und klicken Sie in der Gruppe **Ausführen** auf **Testen**.
+
+
 
 
 

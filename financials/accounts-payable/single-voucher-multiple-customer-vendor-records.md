@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Einzelner Beleg mit mehreren Debitoren- oder Kreditorendatensätzen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 for Operations nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung. 
 
 Einige allgemeine Beispiele, in denen ein Beleg für mehrere Debitoren oder Kreditoren verwendet wird, sind unter anderem Saldo-Übertragungen zwischen Debitoren und die Ermittlung des Nettowerts von Salden zwischen Debitoren und Kreditoren in derselben Organisation. 
@@ -91,10 +94,10 @@ Wenn der Benutzer damit unzufrieden ist, dass der Skonto über alle Ausgabenvert
 
 |             |                  |              |                 |           |            |                 |                    |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Beleg** | **Kontenart** | **Konto**  | **Beschreibung** | **Soll** | **Entlastung** | **Offset type** | **Offset account** |
-| GNJL001     | Lieferant           | 1001         | INV1            |           | 100,00     | Unternehmen          | &lt;Leerzeichen&gt;      |
-| GNJL001     | Unternehmen           | 606300-001-- | INV1            |   50,00   |            | Unternehmen          | &lt;Leerzeichen&gt;      |
-| GNJL001     | Unternehmen           | 606300-002-- | INV1            |   50,00   |            | Unternehmen          | &lt;Leerzeichen&gt;      |
+| **Beleg** | **Kontenart** | **Konto**  | **Beschreibung** | **Soll** | **Entlastung** | **Gegenbuchungstyp** | **Gegenkonto** |
+| GNJL001     | Lieferant           | 1001         | INV1            |           | 100,00     | Unternehmen          | &lt;leer&gt;:      |
+| GNJL001     | Unternehmen           | 606300-001-- | INV1            |   50,00   |            | Unternehmen          | &lt;leer&gt;:      |
+| GNJL001     | Unternehmen           | 606300-002-- | INV1            |   50,00   |            | Unternehmen          | &lt;leer&gt;      |
 | GNJL002     | Lieferant           | 1001         | INV2            |           | 200,00     | Unternehmen          | 606300-003--       |
 | GNJL003     | Lieferant           | 1001         | INV3            |           | 300,00     | Unternehmen          | 606300-004--       |
 
@@ -248,5 +251,7 @@ Um unerwünschte Probleme bei zukünftigen Ausgleichen für diese Buchung zu ver
 | 002         | Lieferant           | 1001        |                 |  75,00    |            | Unternehmen          | 999999---          |
 
  
+
+
 
 

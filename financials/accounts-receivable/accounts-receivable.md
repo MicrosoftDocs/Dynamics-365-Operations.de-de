@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-receivable-home-page"></a>Startseite für Debitoren
 
-Mithilfe des Debitorenmoduls lassen sich Debitorenrechnungen und eingehende Zahlungen nachverfolgen.
+[!include[banner](../includes/banner.md)]
+
+
+Mithilfe des Debitorenmoduls lassen sich Debitorenrechnungen und eingehende Zahlungen nachverfolgen. 
 
 Sie können Debitorenrechnungen auf Basis von Aufträgen oder Lieferscheinen erstellen. Sie können auch Freittextrechnungen eingeben, die nicht mit Aufträgen verknüpft sind. Für den Eingang von Zahlungen stehen mehrere verschiedene Zahlungsarten zur Verfügung. Hierzu gehören Wechsel, Bargeld, Schecks, Kreditkarten und elektronische Zahlungen. Wenn Ihre Organisation mehrere juristische Personen umfasst, können Sie zentralisierte Zahlungen verwenden, um Zahlungen in einer einzelnen juristischen Person im Auftrag der anderen juristischen Personen zu erfassen.
+
+
 
 
 

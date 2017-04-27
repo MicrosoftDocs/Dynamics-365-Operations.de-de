@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-depreciation"></a>Anlagenabschreibung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält eine Übersicht der Abschreibung von Anlagen.
 
 Eine Abschreibung ist eine periodische Buchung, die normalerweise den Wert des Anlagevermögens in der Bilanz verringert und in einem Gewinn- und Verlustkonto als Ausgabe gebucht wird. Folglich wird ein Hauptkonto normalerweise für die periodische Abschreibung in der Bilanz verwendet. Ein Gegenkonto ist ein Konto im Gewinn- und Verlustteil des Kontenplans.
@@ -51,6 +54,8 @@ Jedes Abschreibungsbuch hat einen Kalender, der verwendet wird, wenn Sie Anlagen
 
 Sie können freigegebene Kalender mithilfe der Seite **Steuerkalender**im Hauptbuch erstellen.
 
-Weitere Informationen finden Sie Abschreibungsmethoden und - konventionen [] (depreciation-methods-conventions.md).
+Weitere Informationen finden Sie untere [Abschreibungsmethoden und - konventionen](depreciation-methods-conventions.md). 
+
+
 
 

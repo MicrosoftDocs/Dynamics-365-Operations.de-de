@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-overview"></a>Beschaffungsübersicht
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält eine Übersicht der Funktionen, die im Beschaffungsmodul verfügbar sind.
 
 Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung für Produkte und Dienste bis zur Beschaffung des Produkts, des Eingangs, der Fakturierung und der Verarbeitung der Zahlung mit Kreditoren. Beschaffungsprozesse können für bestimmte Geschäftsanforderungen konfiguriert werden, indem Einkaufsrichtlinien und Workflows definiert werden.
@@ -37,7 +40,7 @@ Der Bedarf für Produkte oder Dienste entsteht möglicherweise aus *Anforderunge
   
 Die Beschaffungsabteilung identifiziert Lieferanten für erforderliche Produkte und Dienste, und dies kann bedeuten, dass eine *Angebotsanforderung *an mehrere mögliche Lieferanten gesendet wird. Es ist möglich, die Angaben des Produkts, das angefordert wird, freizugeben, und potenzieller Kreditoren können diese Angaben sehen, um festzustellen, ob sie ein Produkt liefern können, das ihnen entspricht. Kreditoren machen dann Angebote, die durch die Beschaffungsabteilung geprüft werden, bevor der Lieferant ausgewählt wird, von dem sie beschaffen möchten.  
 
-Bestellungen beinhalten eine Option zum Senden einer *Einkaufsabfrage *an den Kreditor als Alternative zu einem umfassenderen Angebotsanforderungsprozess. Die Einkaufabfrage kann verwendet werden, um Bedingungen, wie Preise, Rabatte und Lieferdatum, für den Auftrag einzurichten. Wenn Kreditoren eingerichtet werden, um das ** Kreditor ** Portal verwenden, * * Einkaufabfragenfunktionen werden deaktiviert. Stattdessen wird der Auftrag im Portal** Kreditor** freigegeben, und wenn eine *Bestätigungsanforderung* gesendet wird, kann der Kreditor den Auftrag direkt bestätigen.  
+Bestellungen beinhalten eine Option zum Senden einer *Einkaufsabfrage *an den Kreditor als Alternative zu einem umfassenderen Angebotsanforderungsprozess. Die Einkaufabfrage kann verwendet werden, um Bedingungen, wie Preise, Rabatte und Lieferdatum, für den Auftrag einzurichten. Wenn Kreditoren so eingerichtet werden, dass sie das Portal **Kreditor** verwenden können, ist die Funktion Einkaufsabfrage deaktiviert. Stattdessen wird der Auftrag im Portal** Kreditor** freigegeben, und wenn eine *Bestätigungsanforderung* gesendet wird, kann der Kreditor den Auftrag direkt bestätigen.  
 
 *Lieferantenkataloge *können verwendet werden, um Informationen zum Produktsortiment zu sammeln, das Kreditoren bereitstellen können. Kreditoren können eigene Katalog veröffentlichen, sodass es einfacher ist, den Katalog aktuell zu halten. Es ist möglich, einem Produkt eine *Liste genehmigter Kreditoren* hinzuzufügen. Dies kann bei der Kreditorenauswahl helfen, wenn neue Bestellungen geöffnet werden, und verhindern, dass nicht erwünschte Kreditoren verwendet werden.
 
@@ -53,7 +56,7 @@ Bestellungen, die mit *Einkaufgenehmigungsworkflows* konfiguriert werden, müsse
 
 Bestellungen sind *bestätigt*, um darzustellen, dass eine Vereinbarung mit dem Kreditor ausgehandelt wurde. Die Bestellung durchläuft dann verschiedene Status, bis sie schließlich in Rechnung gestellt oder storniert wird.  
 
-Wenn Sie eine Bestellung erstellen, werden viele der Felder unter Umständen bereits ausgefüllt, die standardmäßig aus den Informationen über den Kreditor im Formular Kreditoren ** ** Seite gespeichert. Das bedeutet, dass es eine begrenzte Anzahl an Feldern gibt, die Sie in der Bestellung ausfüllen müssen, obwohl Sie entscheiden können, die Standardwerte zu überschreiben.
+Wenn Sie eine Bestellung erstellen, werden viele der Felder mit Werten vorausgefüllt, die aus den Informationen stammen, die zum Kreditor auf der Seite **Kreditoren **gespeichert sind. Das bedeutet, dass es eine begrenzte Anzahl an Feldern gibt, die Sie in der Bestellung ausfüllen müssen, obwohl Sie entscheiden können, die Standardwerte zu überschreiben.
 
 ### <a name="prices-and-discounts"></a>Preise und Rabatte
 
@@ -86,5 +89,7 @@ Fakturierte Bestellungen erfassen die Verbindlichkeiten im Kreditorenkonto inner
 
 ## <a name="vendor-performance"></a>Kreditorleistung
 Leistung und Prüfung des Einkaufs wird unterstützt durch *Beschaffungs- und Kreditorenberichte,* die eine Ausgabenanalyse und Kreditorenleistungsanalyse enthalten.
+
+
 
 

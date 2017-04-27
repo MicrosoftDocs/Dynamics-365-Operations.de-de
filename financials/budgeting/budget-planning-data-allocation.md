@@ -1,6 +1,6 @@
 ---
 title: "Datenzuteilung für die Budgetplanung"
-description: "In diesem Artikel wird beschrieben die verschiedene Zuordnungsmethoden, die in Microsoft Dynamics 365 für Arbeitsgänge sind verfügbar und wie sie verwendet werden können."
+description: "Dieser Artikel beschreibt die verschiedenen Zuordnungsmethoden, die in Microsoft Dynamics 365 for Operations verfügbar sind und wie sie verwendet werden können."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-data-allocation"></a>Datenzuteilung für die Budgetplanung
 
-In diesem Artikel wird beschrieben die verschiedene Zuordnungsmethoden, die in Microsoft Dynamics 365 für Arbeitsgänge sind verfügbar und wie sie verwendet werden können.  
+[!include[banner](../includes/banner.md)]
+
+
+Dieser Artikel beschreibt die verschiedenen Zuordnungsmethoden, die in Microsoft Dynamics 365 for Operations verfügbar sind und wie sie verwendet werden können.  
 
 Sie können die Daten in einem Budgetplan auf vielfältige Weise verteilen, um die geplanten Beträge genau zu darzustellen.
 
 ## <a name="allocation-methods"></a>Zuweisungsmethoden
 Drei Zuordnungsmethoden (Auf Perioden verteilen, Zu Dimensionen zuordnen und Sachkonto-Zuordnungsregeln verwenden) können Budgetplanpositionen erstellen, die auf den Positionen im gleichen Budgetplan basieren. Drei andere Methoden (Zusammenführen, Verteilen und Aus Budgetplan kopieren), können Budgetplanpositionen in anderen Budgetplänen erstellen. Für alle sechs Zuordnungsmethoden geben Sie das Zielszenario an. Das Zielszenario kann entweder dem Quellszenario gleichen oder sich davon sich unterscheiden. Darüber hinaus können Sie angeben, ob dem Haushaltsplan neue Positionen angehängt oder die aktuellen Positionen im Budgetplan ersetzt werden.
 
-![AllocateAcrossPeriods ([]. /media/allocateacrossperiods-300x259.png)]". /media/allocateacrossperiods.png"
-** Ablehnen periodenübergreifend zu ** – eine Perioden-Zuweisungskategorie wird verwendet, um die Budgetplanpositionen vom Quellbudgetplanszenario periodenübergreifend im Zielszenario zuzuweisen. Der Quellbetrag wird mehreren Positionen im Zielszenario basierend auf dem Prozentsatz und dem Datum zugewiesen, die in der Periodenzuteilungskategorie definiert werden.         
+[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+**Allocate across periods** – Auf Perioden verteilen -Eine Zuteilungskategorie wird verwendet, um die Budgetplanpositionen von den Quellbudgetplanszenarioperioden im Zielszenario zuzuteilen. Der Quellbetrag wird mehreren Positionen im Zielszenario basierend auf dem Prozentsatz und dem Datum zugewiesen, die in der Periodenzuteilungskategorie definiert werden.         
 
 [![AllocateToDimensions](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Zu Dimensionen zuordnen** - die Budgetplanpositionen werden vom Quellbudgetplanungsszenario an einen oder mehrere Positionen im Zielszenario auf Grundlage der Prozentsätze und der Finanzdimensionen zugeordnet, die in einer ausgewählten Bedingung für Budgetzuteilung definiert werden.           
@@ -56,9 +59,9 @@ Drei Zuordnungsmethoden (Auf Perioden verteilen, Zu Dimensionen zuordnen und Sac
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>Verwenden der Zuordnungsmethoden in einem Budgetplan
 Um Zuweisungen auf der Budgetplanseite auszuführen, wählen Sie die zuzuweisenden Positionen aus, und klicken Sie anschließend auf **Budget zuteilen**.
 
-![AllocateBudgetButton ([]. /media/allocatebudgetbutton-300x84.png)]". /media/allocatebudgetbutton.png) 
+[![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
-Als Wählen Sie anschließend eine Zuordnungsmethode aus. Die übrigen Felder werden dann auf Grundlage der Methode festgelegt, die Sie ausgewählt haben. Diese Felder enthalten die Quelle und das Ziel der Budgetplandaten und eine Option, mit der Sie die Quelle durch einen angegebenen Faktor multiplizieren können, wenn die Zielbeträge erstellt werden, um die Massenregulierung zu vereinfachen. Sie können auch die Option **An Plan anheften** festlegen. Wählen Sie **Nein** aus, um die vorhandenen Budgetplanpositionen zu ersetzen, oder **Ja**, um die vorhandenen Budgetplanpositionen zu verwalten und neue Positionen für die zugeteilten Beträge hinzuzufügen.
+Wählen Sie anschließend eine Zuordnungsmethode aus. Die übrigen Felder werden dann auf Grundlage der Methode festgelegt, die Sie ausgewählt haben. Diese Felder enthalten die Quelle und das Ziel der Budgetplandaten und eine Option, mit der Sie die Quelle durch einen angegebenen Faktor multiplizieren können, wenn die Zielbeträge erstellt werden, um die Massenregulierung zu vereinfachen. Sie können auch die Option **An Plan anheften** festlegen. Wählen Sie **Nein** aus, um die vorhandenen Budgetplanpositionen zu ersetzen, oder **Ja**, um die vorhandenen Budgetplanpositionen zu verwalten und neue Positionen für die zugeteilten Beträge hinzuzufügen.
 
 ## <a name="automating-allocations-during-a-workflow"></a>Automatisieren von Zuweisungen während eines Workflows
 Eine leistungsfähige Funktion ermöglicht es Zuweisungen als Teil eines Budgetplanungsworkflows automatisch ausführen zu lassen. Während ein Budgetplan den Workflow durchläuft, können automatisierte Aufgaben eine Zuteilung in einem angegebenen Budgetplanungsstadium aufrufen. 
@@ -69,6 +72,8 @@ Anschließend erstellen Sie eine Phasenzuteilung auf der Seite **Budgetplanungsk
 
 Schließlich fügen Sie in dem gewünschten Workflowstadium eine automatisierte Aufgabe für Budgetplanungsphasenzuteilung hinzu. Im folgenden Beispiel wurden zwei Budgetplanungsphasenzuteilungen (in rot umrissen) in den Workflow eingefügt.
 
-![BudgetPlanningStageAllocations ([]. /media/budgetplanningstageallocations-300x300.png)]". /media/budgetplanningstageallocations.png)
+[![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+
+
 
 

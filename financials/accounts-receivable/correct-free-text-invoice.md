@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="correct-a-free-text-invoice"></a>Berichtigung einer Freitextrechnung
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie eine Freitextrechnung, die gebucht wurde, korrigiert und als korrekte Rechnung erfasst wird.
 
-Um eine Freitextrechnung zu korrigieren die bereits gebucht wurde, öffnen Sie die gebuchte Freitextrechnung. ** Auf der Rechnung ** Seite wählen Sie ** stornieren **, und wählen Sie dann aus ** ** Korrigieren der Rechnung. Wählen Sie einen Ursachencode aus, und geben Sie Kommentare ein, und wählen Sie Datum für die korrigierte Rechnung ein. Sie können die berichtigte Rechnung bearbeiten und buchen. 
+Um eine Freitextrechnung zu korrigieren, die bereit gebucht wurde, öffnen Sie die gebuchte Freitextrechnung. Auf der Seite **Rechnung**  wählen Sie **Abbrechen**, und dann **Rechnung korrigieren**. Wählen Sie einen Ursachencode aus, und geben Sie Kommentare ein, und wählen Sie Datum für die korrigierte Rechnung ein. Sie können die berichtigte Rechnung bearbeiten und buchen. 
 
 Wenn Sie die berichtigte Rechnung buchen, wird eine Stornorechnung für einen Habenbetrag erstellt, der mit dem ursprünglichen Rechnungsbetrag übereinstimmt. Dadurch wird der kombinierte Saldo der ursprünglichen Rechnung und der Stornierung auf 0 gesetzt. Die Stornorechnung wird mit der ursprünglichen Rechnung ausgeglichen. 
 
@@ -43,9 +46,11 @@ Nachdem Sie die berichtigte Rechnung buchen, haben Sie drei Rechnungen:
 Sie können Storno- und Korrekturrechnungen auf zwei Arten identifizieren:
 
 -   Die **Alle Freitextrechnungen**-Seite umfasst eine **Korrektur**-Spalte, in der Sie sehen können, welche Rechnungen Stornorechnungen und berichtigte Rechnungen sind.
--   Der Kopf der Freitextrechnung wird ein Status ** Rechnung "\[Rechnungsnummer\]" abbrechend ** anzeigen oder ** berichtigte Rechnung "\[Rechnungsnummer **\]".
+-   Der Kopf der Freitextrechnung zeigt den Status **Rechnung stornieren **\[Rechnungsnummer\]oder**korrekte Rechnungsnummer '\[Rechnungsnummer\]'**.
 
 > [!NOTE]
-> Diese Funktion ist nur verfügbar, wenn die Korrektur der Freitextrechnung ** ** Konfigurationsschlüssel aktiviert ist.
+> Diese Funktion ist nur verfügbar, wenn der Konfigurarionsschlüsse **Freitext-Rechnungskorrektur** ausgewählt ist.
+
+
 
 

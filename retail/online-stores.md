@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16161
 ms.assetid: 646d560c-f856-4701-b4ca-44e357ef09b8
 ms.search.region: Global
@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 ---
 
 # <a name="online-store-overview"></a>Ohlineshop, Überblick
+
+[!include[banner](includes/banner.md)]
+
 
 Dieser Artikel enthält Informationen zu Onlineshops und wie man sie in Microsoft Dynamics 365 for Operations einrichtet.
 
@@ -50,5 +53,7 @@ Bevor Sie einen Onlineshop erstellen, müssen Sie die Navigationshierarchie für
 
 ## <a name="organization-hierarchies"></a>Organisationshierarchien
 Organisationshierarchien werden verwendet, um Einzelhandelskanäle zu strukturieren. Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht. Wenn Sie Onlineshops einrichten, können Sie diese einer Organisationshierarchie hinzufügen. Die Shops teilen dann Daten, die für Sortimente, Auffüllung und Berichterstellung verwendet werden. Wenn Sie eine Organisationshierarchie erstellen, müssen Sie einen Kostenträger zuweisen. Der Kostenträger gibt an, wie die Hierarchie in der Struktur des Unternehmens verwendet wird. Sie können eine Organisationshierarchie für die Filialenarbeitsgänge erstellen und diese Hierarchie für Sortimente, Auffüllung und Berichte verwenden. Sie können auch eine separate Organisationshierarchie für jeden Kostenträger erstellen. Sie können auch mehrere Hierarchien mit demselben Kostenträger erstellen und diesen je einen separaten Kanal zuweisen. Wenn Sie Einzelhandelsproduktkataloge im Onlineshop veröffentlichen möchten, sollten Sie mindestens den Onlineshop einer Organisationshierarchie für Sortimente hinzufügen. Die Produkte in einem Katalog werden von den Sortimenten ausgewählt, die dem Onlineshop zugewiesen sind. Wenn der Katalog veröffentlicht wird, vergleicht der Veröffentlichungsprozess die Gültigkeitsdaten für das Sortiment, das dem Onlineshop für die Produkte zugewiesen ist, die im Katalog enthalten sind, um zu bestimmen, welche Produkte im Onlineshop verfügbar gemacht werden.
+
+
 
 

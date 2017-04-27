@@ -1,5 +1,5 @@
 ---
-title: "Qualitätsverwaltung (Überblick)"
+title: "Qualitätsmanagement-Übersicht"
 description: "In diesem Artikel wird beschrieben, wie Sie das Qualitätsmanagement in Microsoft Dynamics 365 for Operations verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="quality-management-overview"></a>Qualitätsverwaltung (Überblick)
+# <a name="quality-management-overview"></a>Qualitätsmanagement-Übersicht
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Artikel wird beschrieben, wie Sie das Qualitätsmanagement in Microsoft Dynamics 365 for Operations verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
 
@@ -344,7 +347,7 @@ Sie müssen eine Qualitätszuordnung für jede Variante in einem Geschäftsproze
 </tr>
 <tr class="even">
 <td>Ergebnisse für Testvariable</td>
-<td>Mithilfe dieser Seite werden die möglichen Testergebnisse für eine Testvariable geändert, die einem Qualitätstest zugeordnet ist. Für jedes Ergebnis weisen Sie entweder den Status <strong>Erfolgreich</strong> oder <strong>Fehlgeschlagen</strong> zu. Definieren Sie eine Variable und die Ergebnisse für jeden Qualitätstest, der auf der Seite <strong>Tests</strong> definiert ist. (Für Qualitätstests, wird der Testtyp <strong>Option</strong> die Seite <strong>Tests</strong> )). Verwenden Sie die <strong>Testgruppen</strong> Seite, um eine Testvariable und Standardergebnis einzelnem Qualitätstest zuzuweisen.</td>
+<td>Mithilfe dieser Seite werden die möglichen Testergebnisse für eine Testvariable geändert, die einem Qualitätstest zugeordnet ist. Für jedes Ergebnis weisen Sie entweder den Status <strong>Erfolgreich</strong> oder <strong>Fehlgeschlagen</strong> zu. Definieren Sie eine Variable und die Ergebnisse für jeden Qualitätstest, der auf der Seite <strong>Tests</strong> definiert ist. (Für Qualitätstests, wird der Testtyp auf der Seite <strong>Option</strong> auf<strong>Tests</strong> ) gesetzt. Verwenden Sie die Seite <strong>Testgruppen</strong>, um eine Testvariable und ein Standardergebnis einzelnem Qualitätstest zuzuweisen.</td>
 <td>Ein Unternehmen, das Kekse herstellt, führt einen Prüftest bezüglich des fertigen Produkts aus. Diese Abnahmeprüfung besitzt mehrere Variablen. Eine Variable ist der Geschmack, wobei die möglichen Ergebnisse "gut" oder "schlecht" lauten. Eine zweite Variable ist die Farbe, bei der die möglichen Ergebnisse "zu dunkel", "zu hell" und "in Ordnung" sind. Für jedes Ergebnis wird der Status <strong>Erfolgreich</strong> oder <strong>Fehlgeschlagen</strong> festgelegt. Während der Abnahmeprüfung für jede Variable meldet der Inspektor das Testergebnis, indem er eines der Ergebnisse auswählt.</td>
 </tr>
 </tbody>
@@ -355,8 +358,10 @@ Sie müssen eine Qualitätszuordnung für jede Variante in einem Geschäftsproze
 <a name="see-also"></a>Siehe auch
 --------
 
-[Quality management processes](quality-management-processes.md)
+[Qualitätsmanagement-Prozesse](quality-management-processes.md)
 
 [Verwaltung von Qualitätsmängeln aktivieren](enable-nonconformance-management.md)
+
+
 
 

@@ -28,12 +28,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="print-a-separate-label-for-credit-memos-that-originate-from-sales"></a>Eine separate Beschriftung für die Gutschriften, die vom Vertrieb stammen, drucken
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie die Beschriftung definiert wird, die auf Gutschriften erscheinen, die vom Vertrieb stammen.
 
 Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrektur auf Verkaufsgutschrift drucken** auf der Registerkarte **Außenhandel und Logistik **verwenden, um die Beschriftung anzugeben, die in Gutschriften angezeigt wird, die vom Vertrieb stammen (Aufträge, Nichtartikelvertrieb und Projektvertrieb).
 
 -   Wenn die Option **Rechnungskorrektur auf Verkaufsgutschrift drucken** auf **Nein** festgelegt ist, wird die Beschriftung "Gutschrift" auf alle Gutschriften gedruckt.
 -   Wenn die Option **Rechnungskorrektur auf Verkaufsgutschrift drucken** auf **Ja** festgelegt ist, wird die Beschriftung "Rechnungskorrektur" auf Gutschriften von Aufträgen, Freitextrechnungen und Projektrechnungen gedruckt.
+
+
 
 
 

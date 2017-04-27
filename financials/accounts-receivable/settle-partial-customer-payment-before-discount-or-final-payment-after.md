@@ -1,5 +1,5 @@
 ---
-title: "Ausgleichen einer teilweise Debitorenzahlung vor dem Skontodatum mit einer vollständigen Zahlung nach dem Skontodatum"
+title: "Eine teilweise Debitorenzahlung vor dem Skontodatum mit einer vollständigen Zahlung nach dem Skontodatum abgleichen"
 description: "Dieser Artikel erläutert die Auswirkung von Zahlungsvereinbarungen auf Rechnungen für Debitoren. Das Szenario konzentriert sich auf die Auswirkungen im untergeordneten Sachkonto, nicht im Hauptbuch."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Ausgleichen einer teilweise Debitorenzahlung vor dem Skontodatum mit einer vollständigen Zahlung nach dem Skontodatum
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Eine teilweise Debitorenzahlung vor dem Skontodatum mit einer vollständigen Zahlung nach dem Skontodatum abgleichen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel erläutert die Auswirkung von Zahlungsvereinbarungen auf Rechnungen für Debitoren. Das Szenario konzentriert sich auf die Auswirkungen im untergeordneten Sachkonto, nicht im Hauptbuch.
 
-Fabrikam verkauft Waren an Kunden 4027. Fabrikam bietet ein Skonto von 1 % an, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird. Rechnungen müssen in 30 Tagen bezahlt werden. Fabrikam bietet auch Skonti auf Teilzahlungen an. Die Ausgleichsparameter sind ** ** Debitorenparameter auf der Seite.
+Fabrikam verkauft Waren an Kunde 4027. Fabrikam bietet ein Skonto von 1 % an, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird. Rechnungen müssen in 30 Tagen bezahlt werden. Fabrikam bietet auch Skonti auf Teilzahlungen an. Die Ausgleichsparameter sind auf der Seite **Debitorenkontenparameter** Seite verfügbar.
 
 ## <a name="invoice"></a>Rechnung
-Am 25. Juni gibt Arnie ein und Buchen einer Rechnung in Höhe von 1.000,00 für den Debitor " 4027. Arnie kann diese Rechnung anzeigen, indem er die ** Buchungen ** Schaltfläche in der Debitoren ** ** Seite verwendet.
+Am 25. Juni gibt Arnie eine Rechnung für 1.000,00 für den Debitor 4027 ein und bucht diese. Arnie kann diese Rechnung anzeigen, indem er die **Buchungen** Schaltfläche in der **Debitoren** Seite verwendet.
 
 | Beleg   | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag  | Währung |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -46,7 +49,7 @@ Am 2. Juli leistet Debitor 4027 eine Teilzahlung von 297,00 für die Rechnung. D
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Ausgewählt | Normal            | FTI-10020 | 4027    | 6/25/2015 | 7/25/2015 | 10020   | 1.000,00                             | USD      | 297,00           |
 
-Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt. Wenn Sie den Wert **Auszugleichender Betrag** nicht auf **297,00** ändern, weichen die erscheinenden Werte für Skontobetrag ab. Allerdings werden 3,00 Skonto als das übernommen, wenn die Zahlung gebucht wurde, da Ausgleich automatisch ** den auszugleichenden Betrag ** Wert auf Sie anhält.
+Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt. Wenn Sie den Wert **Auszugleichender Betrag** nicht auf **297,00** ändern, weichen die erscheinenden Werte für Skontobetrag ab. Allerdings werden 3,00 als das Skonto übernommen, wenn die Zahlung gebucht wurde, da der Ausgleich automatisch den Wert **Auszugleichender** Betrag für Sie anpasst.
 
 |                              |           |
 |------------------------------|-----------|
@@ -105,6 +108,8 @@ Arnie ändert der Wert im Feld **Skonto verwenden** wieder zu **Normal**, da er 
 | ARP-10020  |                  | 1. Juli 2015  |         |                                      | 297,00                                | 0,00    | USD      |
 | DISC-10020 |                  | 1. Juli 2015  |         |                                      | 3,00                                  | 0,00    | USD      |
 | ARP-10021  |                  | 11.7.2015 |         |                                      | 700,00                                | 0,00    | USD      |
+
+
 
 
 

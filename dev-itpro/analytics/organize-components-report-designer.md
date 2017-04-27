@@ -49,18 +49,18 @@ Sie können Berichtsdefinitionen gruppieren, um mehrere Berichte gleichzeitig zu
 ### <a name="create-a-report-group"></a>Erstellen einer Berichtsgruppe
 
 1.  Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
-2.  Wählen Sie im Menü ** Datei ** ** klicken Sie erneut auf Berichtsgruppen- ** &gt; ** ** einer neuen Berichtsgruppe im Fenster öffnen. Alternativ klicken Sie auf die Schaltfläche "! ** ** Berichtsgruppe[] Berichtsgruppe "https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Berichtsgruppe") auf der Symbolleiste.
+2.  Klicken Sie im Menü **Datei** auf **Neu** &gt; **Berichtsgruppe**, um eine neue Berichtsgruppe im Viewer-Fenster öffnen. Klicken Sie alternativ auf die **Berichtsgruppe** -Schaltfläche ![Berichtsgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Berichtsgruppe") auf der Symbolleiste.
 3.  Klicken Sie auf die Registerkarte **Berichtsgruppe**. Um die Informationen zu den einzelnen Berichtsdefinitionen für die Generierung dieses Berichts zu überschreiben, aktivieren Sie das Kontrollkästchen **Überschreiben von Unternehmen, Details und Datumseinstellungen von einzelnen Berichtsdefinitionen**. Die Felder Unternehmensname, Detailebene, vorläufige Einstellungen und Datumsinformationen werden automatisch ausgefüllt, aber Sie können Aktualisierungen vornehmen.
 4.  Um mehrere Berichte zu generieren, die die Berichtswährung anzeigen, aktivieren Sie das Kontrollkästchen **Alle Berichtswährungen einschließen**. Es sind mehrere Ansichten verfügbar, wenn Sie den Bericht anzeigen und auf die Schaltfläche **Währung** im Web-Viewer klicken.
 5.  Klicken Sie im Feld **Berichte in Gruppe** auf **Hinzufügen**, um die Berichte zu wählen, die in die Berichtsgruppe einbezogen werden sollen. Um mehrere Berichte im Dialogfeld **Hinzufügen** auszuwählen, halten Sie STRG-Taste gedrückt, während Sie Berichte auswählen. Wenn Sie die Berichtsauswahl abgeschlossen haben, klicken Sie auf **OK**.
-6.  ** Auf Datei ** &gt; ** ** Speichern der neuen Berichtsgruppe speichern.
+6.  Klicken Sie auf **Datei** &gt; **Speichern**, um die neue Berichtsgruppe zu speichern.
 
 ### <a name="modify-a-report-group"></a>Ändern einer Berichtsgruppe
 
 1.  Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
 2.  Doppelklicken Sie auf die zu ändernde Berichtsgruppe.
 3.  Nehmen Sie auf der Registerkarte **Berichtsgruppe** die gewünschten Änderungen vor.
-4.  ** Datei ** Wählen Sie im Menü auf der auf ** ** zum Speichern der geänderten Berichtsgruppe zu sparen alternativ auf die Schaltfläche "! ** ** speichernSpeichern [] (https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Speichern") auf der Symbolleiste.
+4.  Klicken Sie im Menü **Datei** auf **Speichern**, um die geänderte Berichtsgruppe zu speichern. Alternativ klicken Sie auf die **Speichern**-Schaltfläche ![Speichern](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Speichern") in der Symbolleiste.
 
 **Hinweis:** Wenn Sie geplant haben, Berichte in Zeitabständen zu erstellen, können Sie diese Einstellungen überschreiben und einen Bericht sofort generieren.
 
@@ -68,7 +68,7 @@ Sie können Berichtsdefinitionen gruppieren, um mehrere Berichte gleichzeitig zu
 
 1.  Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
 2.  Öffnen Sie die zu generierende Berichtsgruppe.
-3.  Klicken Sie auf Bericht generieren Sie die ** ** Schaltfläche! [Generieren von Bericht (https://i-technet.sec.s-msft.com/dynimg/IC679517.gif] "generieren" Bericht", Berichte generieren.
+3.  Klicken Sie auf die **Bericht generieren** -Schaltfläche ![Bericht generieren](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Bericht generieren") zum Generieren von Berichten.
 
 ### <a name="delete-a-report-group"></a>Löschen einer Berichtsgruppe
 
@@ -104,8 +104,8 @@ In der folgenden Tabelle werden die Steuerelemente der Registerkarte **Berichtsg
 <td>Spezifizieren Sie die für den Bericht gewünschte Detailstufe.
 <ul>
 <li><strong>Finanzen</strong>− Eine Zusammenfassung auf hoher Ebene. Sie können keine Detailinformationen zu Konten und Dimensionen durchführen, ausgenommen derer, die Sie über die Berichtstruktur hinzugefügt haben.</li>
-<li><strong>Finanzen &amp; Konto</strong> - Ein Bericht, der eine übergeordnete Zusammenfassung und Kontodetails enthält.</li>
-<li><strong>Finanzen, Konto, &amp; Buchung</strong> - Ein Bericht, der eine übergeordnete Zusammenfassung und Buchungsdetails enthält.</li>
+<li><strong>Finanzen &amp; Konto</strong>− Ein Bericht, der eine übergeordnete Zusammenfassung und Kontodetails enthält.</li>
+<li><strong>Finanzen, Konto &amp; Buchung</strong> − Ein Bericht, der eine übergeordnete Zusammenfassung und Buchungsdetails enthält.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -154,6 +154,6 @@ Nur Einstellungen zum Standardbasiszeitraum werden mit der Berichtsdefinition ge
 <a name="see-also"></a>Siehe auch
 --------
 
-[Finanzberichterstellung für Microsoft Dynamics 365 für Arbeitsgänge financial-reporting-intro.md] ()
+[Finanzberichterstellung für Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

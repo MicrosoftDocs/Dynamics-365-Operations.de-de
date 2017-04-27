@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-actions"></a>Workflowaktivitäten
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt die Aktivitäten, die jeder Teilnehmer an einen Workflowgenehmigungsprozess ausführen kann.
 
-Ein Workflow kann mehrere Personengruppen umfassen: den Ersteller, Beauftragte für Aufgaben, Entscheidungsträger und genehmigende Personen. Im folgenden Workflow für Spesenabrechnungen ist z. B. Steffen der Ersteller, die Mitglieder der Warteschlange sind Beauftragte für Aufgaben, Jens ein Entscheidungsträger, während Frank, Saskia und Anne genehmigende Personen sind.   [![Workflow\_WithManualDecision] ". /media/workflow_withmanualdecision.gif)]". /media/workflow_withmanualdecision.gif) Die folgenden Abschnitten werden die Workflowaktivitäten, die jede Gruppe ausführen kann.
+Ein Workflow kann mehrere Personengruppen umfassen: den Ersteller, Beauftragte für Aufgaben, Entscheidungsträger und genehmigende Personen. Im folgenden Workflow für Spesenabrechnungen ist z. B. Steffen der Ersteller, die Mitglieder der Warteschlange sind Beauftragte für Aufgaben, Jens ein Entscheidungsträger, während Frank, Saskia und Anne genehmigende Personen sind.   [![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) In den folgenden Abschnitten werden die Workflowaktivitäten erläutert, die von jeder dieser Personengruppen ausgeführt werden können.
 
 ## <a name="actions-that-an-originator-can-perform"></a>Mögliche Aktivitäten eines Erstellers
 Der Ersteller startet eine Arbeitsplaninstanz, indem er ein Dokument zur Bearbeitung übermittelt. Zum Übermitteln seiner Spesenabrechnung muss Steffen z. B. auf der Seite **Spesenabrechnung** auf die Schaltfläche **Absenden** klicken.
@@ -63,7 +66,7 @@ Gelegentlich kann ein Mitglied einer Warteschlange für Arbeitsaufgaben eine Auf
 ## <a name="actions-that-a-decision-maker-can-perform"></a>Mögliche Aktivitäten eines Entscheidungsträgers
 Wird ein Dokument einem Entscheidungsträger zugewiesen, dann in der Regel deshalb, weil eine Frage vom Entscheidungsträger beantwortet werden muss. Die Antwort auf die Frage ist normalerweise **Ja** oder **Nein** oder **Wahr** oder **Falsch**. Falls der Entscheidungsträger keine dieser Möglichkeiten auswählt, kann er oder sie die Entscheidung delegieren.
 
-### <a name="choice-1-or-choice-2"></a>Auswahl \[1\] oder \[2 Auswahl\]
+### <a name="choice-1-or-choice-2"></a>\[Auswahl 1\] oder \[Auswahl 2\]
 
 Ein Entscheidungsträger muss eine Frage zum Dokument beantworten. Die Antwort auf die Frage ist normalerweise **Ja** oder **Nein** oder **Wahr** oder **Falsch**. Durch die vom Entscheidungsträger ausgewählte Antwort wird bestimmt, welche Workflowverzweigung zum Verarbeiten des Dokuments verwendet wird. Steffens Spesenabrechnung wird beispielsweise Jens zugewiesen. Jens muss entscheiden, ob die Informationen im Dokument einen Anruf beim Vorgesetzten von Steffen erfordern. Wenn Jens entscheidet, dass ein Anruf erforderlich ist, wird die Spesenabrechnung Steffi zugewiesen, die dann den Vorgesetzten von Steffen anrufen muss. Wenn Jens entscheidet, dass kein Anruf erforderlich ist, wird die Spesenabrechnung Frank zur Genehmigung zugewiesen.
 
@@ -89,5 +92,7 @@ Wenn eine genehmigende Person ein Dokument delegiert, wird das Dokument zur Gene
 ### <a name="request-change"></a>Änderung anfordern
 
 Fordert eine genehmigende Person Änderungen an einem Dokument an, wird es an den Ersteller zurückgesendet. Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 12.000 Euro übermittelt, und dieses Dokument ist Saskia zugewiesen. Wenn Saskia eine Änderung anfordert, wird die Spesenabrechnung an Steffen zurückgesendet. Steffen kann die Spesenabrechnung erneut übermitteln. Er kann zuerst die angeforderten Änderungen vornehmen, oder er kann die Originalversion der Abrechnung erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, wird sie zur Genehmigung an Frank gesendet, da Frank die erste genehmigende Person im Genehmigungsprozess ist.
+
+
 
 

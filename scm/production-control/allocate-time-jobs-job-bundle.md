@@ -1,5 +1,5 @@
 ---
-title: "Weisen Sie keine Zeit mit Einzelvorgängen im einen zu Einzelvorgangsbündel"
+title: "Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen"
 description: "Sie können Einzelvorgänge in der Fertigungssteuerung bündeln. Sie können mehrere Einzelvorgänge auf der Seite &quot;Einzelvorgangsliste&quot; gleichzeitig starten."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Weisen Sie keine Zeit mit Einzelvorgängen im einen zu Einzelvorgangsbündel
+# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen
+
+[!include[banner](../includes/banner.md)]
+
 
 Sie können Einzelvorgänge in der Fertigungssteuerung bündeln. Sie können mehrere Einzelvorgänge auf der Seite "Einzelvorgangsliste" gleichzeitig starten.
 
@@ -107,5 +110,7 @@ Berücksichtigen Sie die drei Einzelvorgänge, die von einer Arbeitskraft ausgef
 | Einzelvorgang 3 | (3,33 ÷ 5) × 12,00 EUR                 | 8,00 EUR                | 5 Stunden        | 40,00 EUR         |
 
 Die korrigierten Kosten pro Stunde und die Einzelvorgangszeit werden in einer Produktionserfassung gebucht. **Hinweis:** Wenn Sie die Option **Kostenkategorie** auf der Registerkarte **Allgemein** auf der Seite **Produktionsauftragsstandards** auswählen, wird die tatsächliche Zeit für jeden Einzelvorgang zu einer Produktionserfassung übertragen, wo die Kosten auf die Kostenkategorie des spezifischen Einzelvorgangs angewendet werden.
+
+
 
 

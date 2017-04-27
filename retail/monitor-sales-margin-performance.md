@@ -1,6 +1,6 @@
 ---
 title: "Überwachen von Verkaufs- und erstellen Sie ein Leistung"
-description: "Sie können Verkaufs- und Gewinnspannenleistung in Echtzeit mithilfe der Microsoft Dynamics 365 überwachen für Arbeitsgänge."
+description: "Sie können den Verkauf und die Gewinnspannen mit Microsoft Dynamics 365 for Operations in Echtzeit überwachen."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Überwachen von Verkaufs- und erstellen Sie ein Leistung
 
-Sie können Verkaufs- und Gewinnspannenleistung in Echtzeit mithilfe der Microsoft Dynamics 365 überwachen für Arbeitsgänge.
+[!include[banner](includes/banner.md)]
 
-Im Rahmen Dynamics 365 für Arbeitsgänge, können Benutzer in Verkauf und Gewinnspannenleistung der verschiedenen Ebenen zu im der Organisationshierarchie für die folgenden Dimensionen überwacht:
+
+Sie können den Verkauf und die Gewinnspannen mit Microsoft Dynamics 365 for Operations in Echtzeit überwachen.
+
+Im Rahmen von Microsoft Dynamics 365 for Operations können Benutzer den Verkauf und die Gewinnspanne in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für die folgenden Dimensionen überwachen:
 
 -   Produkte
 -   Kategorien
@@ -42,8 +45,10 @@ Im Rahmen Dynamics 365 für Arbeitsgänge, können Benutzer in Verkauf und Gewin
 
 Darüber hinaus können die Benutzer mit zwei eindeutigen Berichte mit der hierarchischen Rasterstrukturierung den Verkauf und die Gewinnspanne vom obersten Konten aus für die einzelnen untergeordneten Knoten der Kategorie in der standardmäßigen Produktkategoriehierarchie detailliert darstellen. Die Benutzer können von der obersten Organisationseinheit aus einen einzelnen Kanal in der Organisationshierarchie detailliert darstellen, die als standardmäßige Organisationshierarchie für die Berichterstellungshierarchie im Einzelhandel definiert wird. Sie können die Berichte über die folgenden Orten öffnen:
 
--   ** Ladengeschäftsverwaltung ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Kanäle ** ** &gt; Ladengeschäftsverwaltung ** ** ** Berichte &gt;
--   ** Kategorie- und Produktverwaltung ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Produkte und Kategorien Ladengeschäftsverwaltung ** ** &gt; ** ** ** Berichte &gt;
--   ** Preiskalkulations- und Rabattverwaltung ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Preiskalkulation und Rabatte ** ** &gt; Ladengeschäftsverwaltung ** ** ** Berichte &gt;
--   ** Abfragen und Berichte ** Abschnitt Dynamics 365 für Arbeitsgänge &gt; ** Einzelhandel und Handel ** &gt; ** Abfragen und Berichte ** &gt; ** Umsatzberichte **
+-   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle **&gt; **Einzelhandelsshopleitung** &gt; **Berichte**
+-   **Kategorie- und Produktverwaltung**-Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Produkt und Kategorien** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
+-   **Verwaltung von Preisen und Rabatten**-Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Verwaltung von Preisen und Rabatten** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
+-   **Abfragen und Berichte** Abschnitt Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte**
+
+
 

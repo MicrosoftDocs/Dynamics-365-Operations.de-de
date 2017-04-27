@@ -1,5 +1,5 @@
 ---
-title: "Produktionsüberblick"
+title: "Lean Manufacturing Übersicht"
 description: "Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics AX bereit."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Produktionsüberblick
+# <a name="lean-manufacturing-overview"></a>Lean Manufacturing Übersicht
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics AX bereit.
 
@@ -76,6 +79,8 @@ Kanban-Einzelvorgänge sind vollständig in aktuelle Prozesse für Lagerbuchunge
 Darüber hinaus unterstützt Lean Manufacturing die Einkaufs- und Rechnungsstellungsverfahren für Dienstleistungen, auf die durch Fremdarbeitsaktivitäten verwiesen wird.
 -   Sie können Kaufvertragspositionen und Dienste Fremdarbeitsaktivitäten zuweisen.
 -   Sie können periodische Bestellungen und Empfangsbestätigungen erstellen, um den Einkauf und die Rechnungsstellung von Dienstleistungen zu unterstützen.
+
+
 
 
 

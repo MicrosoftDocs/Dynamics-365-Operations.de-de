@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 125 Prozent
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel gibt eine Übersicht die 125 Prozent Reduktionssaldomethode der Abschreibung.
 
 Wenn Sie ein Abschreibungsprofil für Anlagen einrichten und **125 % degressiv** im Feld **Methode** auf der Seite **Abschreibungsprofile** auswählen, werden Anlagen, denen das Abschreibungsprofil zugewiesen wird, in jedem Abschreibungszeitraum um denselben Prozentsatz abgeschrieben. Dieser Prozentsatz wird auf Grundlage der Nutzungsdauer der Anlage berechnet. Wenn eine Anlage beispielsweise eine Nutzungsdauer von fünf Jahren hat, beträgt der Prozentsatz 25 Prozent (125 % ÷ 5).
@@ -56,7 +59,7 @@ Wenn als Abschreibungsjahr **Kalender** ausgewählt wird, stehen im Feld **Perio
 
 Wenn Sie **Steuerlich** im Feld **Jahresabschreibung** auswählen, wird die Abschreibungsmethode "125 % degressiv" auf Grundlage des Geschäftsjahres für den Steuerkalender berechnet, der für das Wertmodell oder das Abschreibungsbuch angegeben wird, oder für den Steuerkalender, der auf der Seite **Sachkonto** ausgewählt wird. Steuerkalender werden auf der Seite **Steuerkalender** eingerichtet. 
 
-Beispiel für das Geschäftsjahr dem 1. Juli bis zum 30. Juni, die zum am 1. Juli. Das Geschäftsjahr kann länger oder kürzer als 12 Monate sein. Die Abschreibung wird automatisch für jede Periode angepasst, und die Länge des nächsten Geschäftsjahres wird mit den Einstellungen für die Perioden auf der Seite **Steuerkalender** bestimmt. 
+Für das Geschäftsjahr vom 1. Juli bis zum 30. Juni beginnt die Abschreibungsberechnung am 1. Juli. Das Geschäftsjahr kann länger oder kürzer als 12 Monate sein. Die Abschreibung wird automatisch für jede Periode angepasst, und die Länge des nächsten Geschäftsjahres wird mit den Einstellungen für die Perioden auf der Seite **Steuerkalender** bestimmt. 
 
 Wenn als Abschreibungsjahr **Steuerlich** ausgewählt wird, stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung:
 
@@ -81,6 +84,8 @@ Bei der Abschreibungsmethode "125 % degressiv" werden 125 Prozent durch die Anza
 | Jahr 3 | 5.625 × 25 % = 1.406,25                        | (6.625 – 1.406,25) = 5.218,75 | (5.625 – 1.406,25) = 4.218,75         |
 
 > [!NOTE] 
-> Normalerweise wenn der Betrag, der folgendermaßen berechnet wird, indem die Methode 125% für degressive Abschreibung anwenden soll, niedriger als der Betrag wird, der folgendermaßen berechnet wird, indem die lineare Methode anwendete, gibt es eine Umwandlung der linearen Abschreibungsmethode für die Nutzungsdauer.
+> Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "125% degressiv" berechnet wird, geringer ausfällt, als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
+
+
 
 

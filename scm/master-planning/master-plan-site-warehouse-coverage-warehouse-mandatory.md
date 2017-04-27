@@ -1,5 +1,5 @@
 ---
-title: "Produktprogrammplanung für Disposition an Standort und Lagerort, Lagerort obligatorisch"
+title: Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch
 description: In diesem Thema wird beschrieben wie ein Artikel, der Standort und Lagerort als Deckungsdimension hat, geplant wird. Die Lagerortdimension ist obligatorisch.
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Produktprogrammplanung für Disposition an Standort und Lagerort, Lagerort obligatorisch
+# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird beschrieben wie ein Artikel, der Standort und Lagerort als Deckungsdimension hat, geplant wird. Die Lagerortdimension ist obligatorisch.
 
@@ -38,10 +41,10 @@ Für dieses Produktprogrammplanungsszenario müssen die folgenden Bedingungen er
 -   Die Standort- und Lagerortdimension werden für die Disposition festgelegt. Für die Disposition können auch andere Dimensionen festgelegt werden. Für diese ergeben sich jedoch keinerlei Auswirkungen durch die Funktion für mehrere Standorte.
 
 In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulicht. Die Parameter, auf die in der Grafik Bezug genommen wird, sowie deren Position werden im Folgenden erläutert:
--   The warehouse is set to **Manual**. ** Auf Lagerverwaltungs-Einstellungs-Bestandsaufschlüsselung &gt; Lagerorte &gt; **. Wählen Sie auf dem Inforegister **Produktprogrammplanung** das Feld **Manuell**.
--   Für den Artikel ist die Artikeldeckung definiert. ** Produktinformationsverwaltung auf Produkt-freigegebeneProdukte &gt; **&gt;. Wählen Sie den Artikel aus, und klicken Sie dann im Aktivitätsbereich, auf der Registerkarte, Plan ** ** auf aus ** Artikeldeckung **.
--   Für den Lagerort sind Auffüllbeziehungen definiert. ** Auf Lagerverwaltungs-Einstellungs-Bestandsaufschlüsselung &gt; Lagerorte &gt; **. Wählen Sie auf dem Inforegister **Produktprogrammplanung** die Feldgruppe **Hauptlagerort**.
--   Der standardmäßige Auftragstyp wird zur Produktion, der Bestellung oder dem Kanban festgelegt. ** Produktinformationsverwaltung auf Produkt-freigegebeneProdukte &gt; **&gt;. Wählen Sie den Artikel aus, und klicken Sie dann im Aktivitätsbereich, auf der Registerkarte, Plan ** ** auf aus ** Standardauftragseinstellungen **. Im Formular **Standardauftragseinstellungen** sehen Sie den **Standardauftragstyp**.
+-   Der Lagerort ist auf **Manuell** festgelegt. Klicken Sie auf **Lagerverwaltung &gt; Einstellungen &gt; Lageraufschlüsselung &gt; Lagerorte**. Wählen Sie auf dem Inforegister **Produktprogrammplanung** das Feld **Manuell**.
+-   Für den Artikel ist die Artikeldeckung definiert. Klicken Sie auf **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**. Wählen Sie einen Artikel aus, und klicken Sie anschließend im Aktivitätsbereich auf der Registerkarte **Plan** auf **Artikeldeckung**.
+-   Für den Lagerort sind Auffüllbeziehungen definiert. Klicken Sie auf **Lagerverwaltung &gt; Einstellungen &gt; Lageraufschlüsselung &gt; Lagerorte**. Wählen Sie auf dem Inforegister **Produktprogrammplanung** die Feldgruppe **Hauptlagerort**.
+-   Der standardmäßige Auftragstyp wird zur Produktion, der Bestellung oder dem Kanban festgelegt. Klicken Sie auf **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**. Wählen Sie einen Artikel aus, und klicken Sie anschließend im Aktivitätsbereich auf der Registerkarte **Plan** auf **Standardauftragseinstellungen**. Im Formular **Standardauftragseinstellungen** sehen Sie den **Standardauftragstyp**.
 
 ![Disposition an Bedarfsstandort und Lagerort, Lagerort obligatorisch](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousemandatory.jpg)
 
@@ -50,7 +53,7 @@ In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulic
 <a name="see-also"></a>Siehe auch
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Produktprogrammplanung und Funktion für mehrere Standorte](master-plan-multisite-functionality.md)
 
 [Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch](master-plan-site-coverage-warehouse-mandatory.md)
 
@@ -59,5 +62,7 @@ In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulic
 [Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort nicht obligatorisch](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
 [Produktprogrammplanungslauf - Ermittlung der Stücklistenversion](master-plan-bom-version-determined.md)
+
+
 
 

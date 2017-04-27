@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-catalogs"></a>Beschaffungskataloge
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird zusammenfassend beschrieben, wie Einkäufer Beschaffungskataloge einrichten und verwalten können. Beschaffungskataloge definieren Artikel und Dienstleisungen, die Unternehmensmitarbeiter für den internen Gebrauch bestellen können.
 
 "Einkäufer"können Kataloge von Artikeln und Dienstleistungen erstellen und verwalten, die für den internen Gebrauch einer Organisation gekauft werden können. Nachdem Kataloge eingerichtet sind, können die Mitarbeiter Bestellanforderungen erstellen, um darüber zu bestellen. Die Kataloge können verwendet werden, um Einkaufsrichtlinien zu erzwingen, damit Mitarbeiter nur die Artikel und Dienstleistungen bestellen können, die für ihre kaufende juristische Person zulässig sind. Beim Erstellen eines Beschaffungskatalogs müssen Sie die folgenden Aufgaben beachten:
@@ -52,7 +55,7 @@ In der folgenden Tabelle werden die Aufgaben beschrieben, die abgeschlossen sein
 ## <a name="setting-up-a-catalog"></a>Einrichten eines Katalogs
 Nachdem die Voraussetzungen erfüllt wurden, können Sie Kataloge einrichten. Sie können entweder einen Katalog erstellen, den die gesamte Organisation verwendet oder mehrere Kataloge, die von verschiedenen Abteilungen in der Organisation verwendet werden. Wenn Sie einen Katalog für die gesamte Organisation erstellen, wird der Zugriff auf den Katalog durch Ihre Bestellungsrichtlinien definiert.  
 
-Der Katalog definiert, welche Produkte verfügbar sind, wenn Bestellanforderungen erstellt werden, allerdings können Sie Kategoriezugriffsrichtlinienregeln verwenden, um zusätzliche Einschränkungen anzuwenden. Da die Knoten in einem Katalog Beschaffungskategorien sind, können sie durch eine Richtlinienregel für Kategoriezugriff unterdrückt werden. In diesem Fall werden die Produkte aus dieser Kategorie nicht zur Verfügung, und Mitarbeiter auf Anforderungen verwenden. Sie definieren Kategoriezugriffsrichtlinienregeln ** ** Einkaufsrichtlinien auf der Seite. In der folgenden Tabelle werden die Aufgaben beschrieben, die zum Einrichten eines Katalogs ausgeführt werden müssen.
+Der Katalog definiert, welche Produkte verfügbar sind, wenn Bestellanforderungen erstellt werden, allerdings können Sie Kategoriezugriffsrichtlinienregeln verwenden, um zusätzliche Einschränkungen anzuwenden. Da die Knoten in einem Katalog Beschaffungskategorien sind, können sie durch eine Richtlinienregel für Kategoriezugriff unterdrückt werden. In diesem Fall werden die Produkte aus dieser Kategorie nicht zur Verfügung, und Mitarbeiter auf Anforderungen verwenden. Sie definieren Kategoriezugriffsrichtlinienregeln auf der Seite **Einkaufsrichtlinien**. In der folgenden Tabelle werden die Aufgaben beschrieben, die zum Einrichten eines Katalogs ausgeführt werden müssen.
 
 | Aufgabe                                                   | Rolle             | Beschreibung                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,6 +73,8 @@ Aktualisierungen werden entweder automatisch oder manuell veröffentlicht. Dies 
 <a name="see-also"></a>Siehe auch
 --------
 
-[(Einstellung eine Beschaffungskategoriehierarchie Aufgabenleitfaden)]http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/) "
+[Einrichten einer Beschaffungskategoriehierarchie (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
+
 
 

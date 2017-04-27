@@ -1,5 +1,5 @@
 ---
-title: "Erneutes Berechnen von Wiederbeschaffungskosten und versicherten Werte für Anlagengruppen nach"
+title: "Neuberechnung von Wiederbeschaffungskosten und versicherten Werten für Anlagengruppen"
 description: "Dieser Artikel beschreibt den Prozess der Aktualisierung von Wiederbeschaffungskosten und versicherten Werten für Anlagen."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Erneutes Berechnen von Wiederbeschaffungskosten und versicherten Werte für Anlagengruppen nach
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Neuberechnung von Wiederbeschaffungskosten und versicherten Werten für Anlagengruppen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel beschreibt den Prozess der Aktualisierung von Wiederbeschaffungskosten und versicherten Werten für Anlagen.
 
@@ -38,18 +41,18 @@ Geben Sie zur Neuberechnung von Wiederbeschaffungskosten und versicherten Werten
 
 Wenn Sie das Formular "Wiederbeschaffungskosten und versicherte Werte aktualisieren" verwenden, um die Wiederbeschaffungskosten und den versicherten Wert für die Anlagen neu zu berechnen, werden die folgenden Formeln verwendet:
 
--   \[(Wiederbeschaffungskostenfaktor der Anlagengruppe/100 )+ 1 die vorhandenen Wiederbeschaffungskosten Anlage\] \*
--   \[(Versicherter Wert der Anlagengruppe/100) + 1 vorhandener versicherter Wert der Anlage\] \*
+-   \[Wiederbeschaffungskostenfaktor der Anlagengruppe / 100) + 1\] \* vorhandene Wiederbeschaffungskosten der Anlage
+-   \[(Versicherter Wert der Anlagengruppe / 100) + 1\] \* vorhandener versicherter Wert der Anlage
 
 > [!NOTE] 
 > Wenn Sie das Formular "Wiederbeschaffungskosten und versicherte Werte aktualisieren" verwenden, werden sowohl die Wiederbeschaffungskosten als auch der versicherte Wert der ausgewählten Anlagen aktualisiert. Die Aktualisierung lediglich eines der Werte ist nicht möglich. Soll lediglich einer der Werte aktualisiert werden, während der andere Wert unverändert bleibt, geben Sie als Faktor im Formular "Anlagengruppen" den Wert 0 ein. Wenn Sie den Faktor 0 oder keinen Wert eingeben, wird die Berechnung bei der Aktualisierung übersprungen. Buchwert und Nettobuchwert von Anlagen sind von der periodischen Aktualisierung nicht betroffen. 
 
 ## <a name="how-to-use-a-date-to-select-which-items-to-update"></a>Auswählen der zu aktualisierenden Artikel mithilfe eines Datums
-Standardmäßig werden durch den Aktualisierungsprozess die ausgewählten Anlagen aktualisiert, bei denen am aktuellen Tag noch keine Aktualisierung stattgefunden hat, die aber möglicherweise an früheren Tagen aktualisiert wurden. Beispielsweise &lt; bedeutet aktuelles Datum "vor dem heutigen Datum". Sie können das Datum im Formular Aktualisierungswiederbeschaffungskosten- und -Wertsform ändern, indem Sie auf der Schaltfläche <b>Auswählen</b> klicken. Die angegebenen Datumskriterien werden mit dem Datum der letzten periodischen Aktualisierung für die Anlage (dem Feld "Letzter periodischer Wert/Kostenaktualisierung" des Formulars "Anlagen") verglichen. Nach jeder erfolgreichen Aktualisierung der Wiederbeschaffungskosten oder des versicherten Werts einer Anlage wird das Feld "Letzter periodischer Wert/Kostenaktualisierung" automatisch auf das aktuelle Datum aktualisiert. 
+Standardmäßig werden durch den Aktualisierungsprozess die ausgewählten Anlagen aktualisiert, bei denen am aktuellen Tag noch keine Aktualisierung stattgefunden hat, die aber möglicherweise an früheren Tagen aktualisiert wurden. Beispielsweise &lt; bedeutet aktuelles Datum "vor dem heutigen Datum". Sie können das Datum im Formular Aktualisierungswiederbeschaffungskosten- und Wertsform ändern, indem Sie auf der Schaltfläche "Auswählen" klicken. Die angegebenen Datumskriterien werden mit dem Datum der letzten periodischen Aktualisierung für die Anlage (dem Feld "Letzter periodischer Wert/Kostenaktualisierung" des Formulars "Anlagen") verglichen. Nach jeder erfolgreichen Aktualisierung der Wiederbeschaffungskosten oder des versicherten Werts einer Anlage wird das Feld "Letzter periodischer Wert/Kostenaktualisierung" automatisch auf das aktuelle Datum aktualisiert. 
 
 Beispiel 
 
-Gestern wurden die Wiederbeschaffungskosten für die Gruppe "Fuhrpark, Büroausstattung und Gebäude" per Aktualisierung um fünf Prozent geändert. Damit diese Anlagen von der heutigen Aktualisierung aller anderen Anlagen aktualisieren heute, geben Sie ein Datum im letzten periodischen Wert-/Kostenaktualisierungsgebiet das vor Gestern (Datum des &lt; Vortags), da die letzte Aktualisierung für die Fahrzeuge, Office-Möbel und Gebäude " per Aktualisierung der außerhalb Datumskriterium stattgefunden haben Sie ein.
+Gestern wurden die Wiederbeschaffungskosten für die Gruppe "Fuhrpark, Büroausstattung und Gebäude" per Aktualisierung um fünf Prozent geändert. Damit diese Anlagen von der heutigen Aktualisierung aller anderen Anlagen ausgeschlossen werden, geben Sie im Feld "Letzter periodischer Wert/Kostenaktualisierung" ein Datum ein, das vor dem gestrigen Tag liegt (&lt; Datum von gestern), da die letzte Aktualisierung für die Gruppen "Fuhrpark", "Büroausstattung" und "Gebäude" außerhalb der eingegebenen Datumskriterien stattfand.
 
 ## <a name="cumulative-effect-of-each-update"></a>Kumulative Wirkung der einzelnen Aktualisierungen
 Jede Aktualisierung besitzt eine kumulative Wirkung. Aus diesem Grund müssen die Aktualisierungen stets sehr sorgfältig geplant werden. Beispiel: Am Dienstag werden alle Anlagen um drei Prozent erhöht. Am Freitag wird eine Erhöhung für "Büroausstattung" um vier Prozent vorgenommen. In diesem Fall beträgt die Gesamterhöhung für "Büroausstattung" 7,12 Prozent.
@@ -72,6 +75,8 @@ Am nächsten Tag teilt Ihnen Ihr Vorgesetzter mit, dass die Verringerung bei den
 
 > [!NOTE]  
 > Der Faktor "-10" lässt sich nicht durch Eingabe eines positiven Faktors mit dem Wert "10" (oder durch Eingabe des Faktors "2" – also der Differenz zwischen "-10" und "-8") rückgängig machen, da die Beträge dann nicht korrekt berechnet werden. 
+
+
 
 
 

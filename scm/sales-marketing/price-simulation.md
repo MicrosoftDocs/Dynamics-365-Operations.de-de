@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="price-simulation"></a>Preissimulation
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu Preissimulation für Angebote. Preissimulation unterstützte Sie dabei, die Auswirkung von Abzügen auf künftigen Verkaufspreisen während dem Angebotsprozess zu evaluieren, bevor Sie einen bestimmten Preis festlegen.
 
 In einer Preissimulation für ein Angebot wird ein neuer Gesamtbetrag auf Basis eines neuen vorgeschlagenen Preises angezeigt. In einer Preissimulation kann auch ein neuer Betrag für eine bestimmte Position angezeigt werden, die in einem vorhandenen Angebot erstellt wird. Sie können eine Preissimulation eingeben und zu einem späteren Zeitpunkt verwenden. Alternativ können Sie das ursprüngliche Angebot ohne Preissimulation verwenden und im Laufe des Verkaufsvorgangs weitere Änderungen vornehmen.  
@@ -50,7 +53,7 @@ Gehen Sie beim Ausführen von Preissimulationen für Angebote mit Rabatten sorgf
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Rabatttypen in Handelsvereinbarungen
 
-Handelsvereinbarungen in Microsoft Dynamics 365 für Arbeitsgänge können vier Arten von Preisrabatten zur Auswahl. Diese Rabatte können für unterschiedliche Artikel, Debitoren oder Preisgruppen festgelegt sowie mithilfe eines Datums beschränkt werden. Zur Vermeidung von Berechnungsfehlern müssen beim Ausführen von Preissimulationen Handelsvereinbarungen berücksichtigt werden. Folgende vier Arten von Rabatten stehen in Handelsvereinbarungen zur Verfügung:
+Für die Handelsvereinbarungen in Microsoft Dynamics 365 for Operations stehen vier verschiedene Typen von Preisrabatten zur Auswahl. Diese Rabatte können für unterschiedliche Artikel, Debitoren oder Preisgruppen festgelegt sowie mithilfe eines Datums beschränkt werden. Zur Vermeidung von Berechnungsfehlern müssen beim Ausführen von Preissimulationen Handelsvereinbarungen berücksichtigt werden. Folgende vier Arten von Rabatten stehen in Handelsvereinbarungen zur Verfügung:
 
 -   **Verkaufspreis** – Für Artikel können separate Verkaufspreise angegeben werden. Der korrekte Artikelverkaufspreis wird beim Erstellen der Angebotspositionen vom Programm gesucht und an die Angebotspositionen übertragen. Das bedeutet, dass die Preissimulation durch eine Handelsvereinbarung mit diesem Rabatttyp nicht beeinflusst wird. Der Verkaufspreis, der in der Angebotsposition verwendet wird, spiegelt die Handelsvereinbarung wider.
 -   **Positionsrabatt** – Es wird ein besonderer Artikelrabatt angegeben, der von der bestellten Menge abhängt. Die Positionsbeträge werden üblicherweise um den Positionsrabatt verringert, bevor eine Preissimulation ausgeführt wird. Das bedeutet, dass die Preissimulation durch eine Handelsvereinbarung mit diesem Rabatttyp beeinflusst wird.
@@ -79,7 +82,7 @@ Die Angebotspositionen werden in der folgenden Tabelle veranschaulicht.
 | Verkaufswert in EUR         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Einstandswert in EUR          | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Gewinnspanne in EUR | 318,20 – 184,96                      | 133,24   |
-| Deckungsbeitragsverhältnis         | (\[318.20 – 184.96\] ÷ 318.20) × 100 | 41,87 %   |
+| Deckungsbeitragsverhältnis         | (\[318,20 – 184,96\] ÷ 318,20) × 100 | 41,87 %   |
 
 Sie führen eine Preissimulation mit einem Rechnungsrabatt von 15 % auf das gesamte Angebot oder auf den Angebotskopf aus. In der folgenden Tabelle werden die neuen Summen des Angebots nach dem Ausführen der Preissimulation angezeigt.
 
@@ -89,11 +92,11 @@ Sie führen eine Preissimulation mit einem Rechnungsrabatt von 15 % auf das gesa
 | Alter Verkaufswert in EUR                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
 | Alter Einstandswert in EUR                                | (10 × 9,52) + (12 × 7,48)                 | 184,96   |
 | Alte Gewinnspanne in EUR                       | 318,20 – 184,96                           | 133,24   |
-| Alter Deckungsbeitrag                               | (\[318.20 – (10 × 9.52)\] ÷ 318.20) × 100 | 41,87 %   |
+| Alter Deckungsbeitrag                               | (\[318,20 – (10 × 9,52)\] ÷ 318,20) × 100 | 41,87 %   |
 | Preissimulation: Rechnungsrabatt von 15 % in EUR | (15 × 318,2) ÷ 100                        | 47,73    |
 | Neuer Verkaufswert in EUR                               | 318,20 – 47,73                            | 270,47   |
 | Neue Gewinnspanne in EUR                       | 270,47 – 184,96                           | 85,51    |
-| Neues Deckungsbeitragsverhältnis                               | \[(270.47 – 184.96) ÷ 270.47\] × 100      | 31,61 %   |
+| Neues Deckungsbeitragsverhältnis                               | \[(270,47 – 184,96) ÷ 270,47\] × 100      | 31,61 %   |
 
 ### <a name="price-simulation-for-single-line-items"></a>Preissimulation für einzelne Positionen
 
@@ -113,12 +116,12 @@ Die Angebotspositionen werden in der folgenden Tabelle veranschaulicht.
 | Einstandswert für "BR-14" in EUR          | 12 × 7,48                            | 89,76    |
 | Gewinnspanne für "BR-12" in EUR | 153,20 - 95,20                       | 58,00    |
 | Gewinnspanne für "BR-14" in EUR | 165,00 - 89,76                       | 75,24    |
-| Deckungsbeitrag für "BR-12" in EUR  | \[(153.20 – 95.20) ÷ 153.20\] × 100  | 37,86    |
-| Deckungsbeitrag für "BR-14" in EUR  | \[(165.00 – 89.76) ÷ 165.00\] × 100  | 45,60    |
+| Deckungsbeitrag für "BR-12" in EUR  | \[(153,20 – 95,20) ÷ 153,20\] × 100  | 37,86    |
+| Deckungsbeitrag für "BR-14" in EUR  | \[(165,00 – 89,76) ÷ 165,00\] × 100  | 45,60    |
 | Verkaufswert in EUR (gesamt)             | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Einstandswert in EUR (gesamt)              | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Gewinnspanne in EUR (gesamt)     | 318,20 – 184,96                      | 133,24   |
-| Deckungsbeitrag (gesamt)             | \[(318.20 – 184.96) ÷ 318.20\] × 100 | 41,87 %   |
+| Deckungsbeitrag (gesamt)             | \[(318,20 – 184,96) ÷ 318,20\] × 100 | 41,87 %   |
 
 Sie führen eine Preissimulation mit einem Rechnungsrabatt von 10 % auf Einheiten des Artikels "BR-12" durch. In der folgenden Tabelle werden die neuen Summen des Angebots angezeigt, nachdem die Preissimulation für die einzelne Position ausgeführt wurde.
 
@@ -133,13 +136,15 @@ Sie führen eine Preissimulation mit einem Rechnungsrabatt von 10 % auf Einheite
 | Einstandswert für "BR-14" in EUR                       | 12 × 7,48                               | 89,76    |
 | Neue Gewinnspanne für "BR-12" in EUR          | 137,88 - 95,20                          | 42,68    |
 | Gewinnspanne für "BR-14" in EUR              | 165,00 - 89,76                          | 75,24    |
-| Neuer Deckungsbeitrag für "BR-12" in EUR           | \[(137.88 – 95.20) ÷ 137.88\] × 100     | 30,95    |
-| Deckungsbeitrag für "BR-14" in EUR               | \[(165.00 – 89.76) ÷ 165.00\] × 100     | 45,60    |
-| Neuer Verkaufswert in EUR (gesamt)                      | \[(10 × 15.32) – 15.32\] + (12 × 13.75) | 302,88   |
+| Neuer Deckungsbeitrag für "BR-12" in EUR           | \[(137,88 – 95,20) ÷ 137,88\] × 100     | 30,95    |
+| Deckungsbeitrag für "BR-14" in EUR               | \[(165,00 – 89,76) ÷ 165,00\] × 100     | 45,60    |
+| Neuer Verkaufswert in EUR (gesamt)                      | \[(10 × 15,32) – 15,32\] + (12 × 13,75) | 302,88   |
 | Einstandswert in EUR (gesamt)                           | (10 × 9,52) + (12 × 7,48)               | 184,96   |
 | Neue Gewinnspanne in EUR (gesamt)              | 302,88 – 184,96                         | 117,92   |
-| Neues gesamtes Deckungsbeitragsverhältnis                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38,93%   |
+| Neues gesamtes Deckungsbeitragsverhältnis                      | \[(302,88 – 184,96) ÷ 302,88\] × 100    | 38,93%   |
 
 Die Preissimulation wirkt sich nur auf die ausgewählte Position aus, wodurch sich die Summe dieser Position verringert.
+
+
 
 

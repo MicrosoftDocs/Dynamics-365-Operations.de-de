@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-resources"></a>Operations-Ressourcen
 
+[!include[banner](../includes/banner.md)]
+
+
 Betriebliche Ressourcen führen die Aktivitäten eines Projekts oder eines Produktionsprozesses aus. Sie können unterschiedlicher Art sein und verschiedene Funktionen haben. 
 
 <a name="operations-resources"></a>Operations-Ressourcen
@@ -36,7 +39,7 @@ Betriebliche Ressourcen führen die Aktivitäten eines Projekts oder eines Produ
 Als betriebliche Ressourcen werden die Maschinen, Werkzeuge, Arbeitskräfte, Einrichtungen, physische Bereiche oder Kreditoren bezeichnet, die die Aktivitäten des Projekts oder des Produktionsprozesses ausführen. Sie können unterschiedlicher Arten sein und verschiedene Funktionen haben.
 
 -   **Anbieter** – Eine externe Ressource, die die Projektaktivitäten oder Produktionsarbeitsgänge ausführt. Beispiel: Ein Zulieferer. Sie können Bestellungen für Zulieferer auf Grundlage von Stücklistenpositionen oder Produktionspositionen generiert, indem sie die Kreditorenressourcen mit einem Kreditorenkonto verknüpfen.
--   **Personalverwaltung** - Eine Projekt- oder Produktionsarbeitskraft, die eine Aktivität, entweder allein oder als Operator eines Tools oder einer Maschine ausführt. Wenn Sie die Verwendung wird, kann eine Arbeitskraft Personalverwaltung zu verknüpfen. Das Planungsmodul kann dann die Ressourcen, basierend auf den Kompetenzen, die für die entsprechende Arbeitskraft definiert werden, zuweisen.
+-   **Personalverwaltung** - Eine Projekt- oder Produktionsarbeitskraft, die eine Aktivität, entweder allein oder als Operator eines Tools oder einer Maschine ausführt. Wenn Sie die Personalfunktionen verwenden, können Sie die Personalverwaltung mit einer Arbeitskraft verknüpfen. Das Planungsmodul kann dann die Ressourcen, basierend auf den Kompetenzen, die für die entsprechende Arbeitskraft definiert werden, zuweisen.
 -   **Maschine** - Eine Maschine oder anderes Produktionsarbeitsgerät, das für die Produktion benötigt wird.
 -   **Werkzeug** - Ein Instrument oder Gerät, das üblicherweise zusammen mit einer anderen Ressource benötigt wird, um eine Aktivität in einem Projekt oder in der Produktion auszuführen.
 -   **Lagerplatz** - Ein physischer Standort einer bestimmten Größe, der erforderlich ist, um eine Aktivität auszuführen. Beispiel: Ein Montagebereich.
@@ -80,5 +83,7 @@ Wenn eine Ressourcengruppe als Lean-Arbeitsgruppe verwendet wird, wird die Kapaz
 
 ## <a name="costing-resources"></a>Nachkalkulationsressourcen
 Wenn Sie eine Aktivität wie einen Arbeitsplan-Arbeitsgang oder eine Projektstundenplanung definieren, können Sie die Anforderung für eine bestimmte betriebliche Ressourcen oder -Ressourcengruppe angeben. Sie können jedoch auch die Anforderung für eine betriebliche Ressource eines bestimmten Typs oder einer betrieblichen Ressource mit einer bestimmten Funktion oder Kompetenz angeben. Aus diesem Grund wird die tatsächliche Ressourcenzuweisung nicht getätigt, bis die Aktivität geplant ist und die Kapazität reserviert ist. Daher können Sie auf einem Arbeitsplan-Arbeitsgang angeben, dass Vorkalkulation und Herstellkostenkalkulation auf Basis einer Einzelgeschäftressource erfolgen müssen. Diese betriebliche Ressource wird als Nachkalkulationsressource bezeichnet. Sie können Kostenkategorien und Arbeitsgangzeiten aus der Nachkalkulationsressource zur Aktivität übertragen. Wenn der Arbeitsgang geplant wird, werden Vorkalkulation und Stücklistenberechnung unter Verwendung der tatsächlich geplanten betrieblichen Ressource erstellt.
+
+
 
 

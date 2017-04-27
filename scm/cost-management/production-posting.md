@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-posting"></a>Produktionsbuchungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen über die unterschiedlichen Arten von Buchungen im Produktionsprozess fest.
 
 Aktivitäten rund um Produktionsbuchungen folgen Produktionsprozessen, die in den Bereichen nachfolgend beschrieben werden.
 
 ## <a name="material-consumption"></a>Materialverbrauch
-Materialien werden während der Produktion als verbraucht erfasst, wenn die Produktionskommissionierlistenerfassung gebucht wird. Dieser Prozess generiert Abgangsbuchungen, die den verfügbaren Lagerbestand abziehen. In den Produktionsparametern können Sie angeben, ob der Wert von Rohmaterialien, die in Bearbeitung befinden (Ressource in Fertigung) \[\]RIF im Sachkonto gebucht werden soll. Der Wert von Rohmaterialien, die sich in Bearbeitung befinden (RIF) wird dann in ein dediziertes Kommissionierlistenkonto und in ein dediziertes Kommissionierlistengegenkonto gebucht.
+Materialien werden während der Produktion als verbraucht erfasst, wenn die Produktionskommissionierlistenerfassung gebucht wird. Dieser Prozess generiert Abgangsbuchungen, die den verfügbaren Lagerbestand abziehen. In den Produktionsparametern können Sie angeben, ob der Wert von Rohmaterialien, die sich in Bearbeitung befinden (Ressource in Fertigung \[WIP\]) im Sachkonto gebucht werden soll. Der Wert von Rohmaterialien, die sich in Bearbeitung befinden (RIF) wird dann in ein dediziertes Kommissionierlistenkonto und in ein dediziertes Kommissionierlistengegenkonto gebucht.
 
 ## <a name="time-consumption"></a>Zeitaufwand
 Die Zeit, die Arbeitskräfte für Produktions-Einzelvorgänge arbeiten, wird in der Arbeitsplanlisten-Erfassung oder in der Einzelvorgangslisten-Erfassung erfasst. Wenn diese Erfassungen gebucht werden, werden sie von der Sachkontobuchung in einem dedizierten Konto für Ressourcen verarbeitet, die in Bearbeitung sind (RIF). Diese Buchung repräsentiert den Wert der Zeit, die im Produktionsauftrag entlohnt wird. Nachdem der Produktionsauftrag als Fertig erfasst wurde, werden die RIF-Konten ausgeglichen.
@@ -52,5 +55,7 @@ In den **Produktionssteuerungsparametern** können Sie das Feld **Sachkontobuchu
 -   **Produktionsbuchungsprofile** - Verwenden Sie die Sachkonten, die auf den Produktionsgruppen für Material eingerichtet werden und Zeiteinsatz. Die Produktionsgruppen werden mit den freigegebenen Produkten zugeordnet und zu den Produktionsaufträgen kopiert, wenn diese Aufträge erstellt werden. Die Buchung in den Produktionsaufträgen folgt dann den Produktionsgruppen, die dem Produktionsauftrag zugeordnet sind.
 
 **Hinweis:** Wenn die Standardmethode für die Berechnung der Kosten des Fertigartikels verwendet wurde, wird dies auch in der Abschlussbuchung wiedergegeben. Ergibt sich bei Verwendung der Standardmethode ein Unterschied zwischen den Istkosten und den berechneten Kosten, so wird dieser auf dem Konto als Gewinn oder Verlust gebucht.
+
+
 
 

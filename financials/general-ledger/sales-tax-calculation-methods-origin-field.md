@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Mehrwertsteuer-Berechnungsmethoden im Feld "Ursprung"
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben die Optionen im Feld "Ursprung" auf der Mehrwertsteuercodeseite und wie Mehrwertsteuer basierend auf der ausgewählten Option für einen Mehrwertsteuercode berechnet wird.
 
 Für jeden Mehrwertsteuercode, der auf der Seite "Mehrwertsteuercodes" erstellt wird, wählen Sie im Feld "Ursprung" die Berechnungsmethode aus, die auf den Steuergrundbetrag angewendet werden soll.
@@ -124,5 +127,7 @@ Dokument/Erfassung ist auf "Beträge einschließlich Mehrwertsteuer" festgelegt 
 [Bestimmen von Mehrwertsteuersteuersätzen auf Grundlage der Felder Berechnungsgrundlage und Berechnungsmethode](marginal-base-field.md)
 
 [Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes](whole-amount-interval-options-sales-tax-codes.md)
+
+
 
 

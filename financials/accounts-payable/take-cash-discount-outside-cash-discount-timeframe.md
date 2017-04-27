@@ -1,5 +1,5 @@
 ---
-title: "Nehmen Sie ein Skonto außerhalb des Skontoabzinsungszeitraums"
+title: "Ein Skonto außerhalb der Skontoperiode in Anspruch nehmen"
 description: "Dieser Artikel beschreibt zwei Szenarien, die zeigen, wie ein Skonto übernommen werden kann, wenn die Zahlung außerhalb der Skontoperiode erfolgt."
 author: twheeloc
 manager: AnnBe
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Nehmen Sie ein Skonto außerhalb des Skontoabzinsungszeitraums
+# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Ein Skonto außerhalb der Skontoperiode in Anspruch nehmen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel beschreibt zwei Szenarien, die zeigen, wie ein Skonto übernommen werden kann, wenn die Zahlung außerhalb der Skontoperiode erfolgt.
 
-Am 28. Juni erstellt April eine Rechnung in Höhe von 2.000,00 für den Kreditor " 3052. Für die Rechnung wird ein Skonto von 1 %, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird.
+Am 28. Juni erstellt April eine Rechnung über 2.000,00 für den Kreditor 3052. Von dem Rechnungsbetrag wird ein Skonto von 1 % abgezogen, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird.
 
 ## <a name="use-cash-discount-option--always"></a>Option "Skonto verwenden" = "Immer"
 April erstellt eine Zahlung am 1. Juli, was nach dem Skontodatum ist. April öffnet die Seite **Transaktionen ausgleichen**, um die Transaktionen anzuzeigen, die ausgeglichen werden können. 
 
-April markiert die Rechnung zur Zahlung. Kein Skonto wird genommen, da die Zahlung nach dem Skontodatum ist. Hat jedoch der Kreditor April-Genehmigung angegeben, um das Skonto dennoch zu nehmen. Daher ändert April den Wert im Feld Verwendungsskonto ** ** ** immer **.
+April markiert die Rechnung zur Zahlung. Kein Skonto wird genommen, da die Zahlung nach dem Skontodatum ist. Der Lieferant hat April jedoch erlaubt, den Abzug in jedem Fall in Anspruch zu nehmen. Daher ändert April den Wert im Feld **Skonto verwenden** in **Immer**.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Skontodatum | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
@@ -85,6 +88,8 @@ Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleic
 | Skonto verwenden            | Normal    |
 | Verwendetes Skonto          | 0,00      |
 | Zu verwendender Skontobetrag | -5,05     |
+
+
 
 
 

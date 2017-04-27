@@ -1,6 +1,6 @@
 ---
 title: Verwalten des Lebenszyklus der elektronischen Berichterstellung
-description: "In diesem Thema wird beschrieben, wie Sie den Lebenszyklus elektronischer meldenden (ER)- Konfigurationen für das Microsoft Dynamics 365 für Arbeitsgangslösung verwaltet."
+description: "In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von ER-Konfigurationen für die Microsoft Dynamics 365 for Operations-Lösung verwalten."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,18 +27,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Verwalten des Lebenszyklus der elektronischen Berichterstellung
 
-In diesem Thema wird beschrieben, wie Sie den Lebenszyklus elektronischer meldenden (ER)- Konfigurationen für das Microsoft Dynamics 365 für Arbeitsgangslösung verwaltet.
+[!include[banner](../includes/banner.md)]
+
+
+In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von ER-Konfigurationen für die Microsoft Dynamics 365 for Operations-Lösung verwalten.
 
 <a name="overview"></a>Überblick
 --------
 
-Die elektronische Berichterstellung (ER) ist ein Modul, das gesetzlich vorgeschriebene und länderspezifische elektronische Dokumente in Microsoft Dynamics 365 for Operations unterstützt. Im Allgemeinen setzt ER die Möglichkeit der Ausführung der folgenden Aufgaben für ein einzelnes elektronisches Dokument voraus. Genauere Informationen finden Sie in der Berichterstellungsüberblick []( general-electronic-reporting.md).
+Die elektronische Berichterstellung (ER) ist ein Modul, das gesetzlich vorgeschriebene und länderspezifische elektronische Dokumente in Microsoft Dynamics 365 for Operations unterstützt. Im Allgemeinen setzt ER die Möglichkeit der Ausführung der folgenden Aufgaben für ein einzelnes elektronisches Dokument voraus. Genauere Informationen finden Sie in der [Berichterstellungsüberblick](general-electronic-reporting.md).
 
 -   Entwerfen einer Vorlage für ein elektronisches Dokument:
     -   Identifizieren Sie die erforderlichen Datenquellen, die in diesem Dokument angezeigt werden können.
-        -   Dynamics 365 für Arbeitsgangsdaten, wie Datenentitäten Datentabellen, Klassen und zugrunde liegen.
-        -   Prozess-Besondereeigenschaften, z Ausführungsdatum und Zeit und Zeitzone.
-        -   Benutzereingabeparameter, zur Bearbeitungszeit die vom Endbenutzer.
+        -   Zugrundeliegende Dynamics 365 for Operations-Daten (Datentabellen, Datenentitäten usw.)
+        -   Prozessspezifische Eigenschaften (Ausführungsdatum und Zeit, Zeitzone)
+        -   Benutzereingabeparameter (definiert nach Endbenutzer bei Laufzeit).
     -   Definieren der erforderlichen Dokumentelemente sowie ihrer Topologie, um das Format des endgültigen Dokuments anzugeben;
     -   Konfiguration des gewünschten Datenflusses von ausgewählten Datenquellen in definierten Dokumentelementen über Datenquellenbindungen zu den Dokumentformatkomponenten und Definition der Prozesssteuerungslogik.
 -   Erstellen einer Vorlage zur Verwerdnung in anderen Dynamics 365 for Operations-Instanzen:
@@ -49,19 +52,19 @@ Die elektronische Berichterstellung (ER) ist ein Modul, das gesetzlich vorgeschr
     -   Verschieben einer Vorlage von LCS zur aktuellen Dynamics 365 for Operations Instanz als ER-Konfiguration:
     -   Entwerfen Sie eine benutzerdefinierte Version einer ER-Konfiguration und behalten Sie eine Referenz zur Basisversion.
 -   Integriert eine Vorlage mit einem bestimmten Geschäftsprozess, so das er in Dynamics 365 for Operations verfügbar ist:
-    -   Konfigurieren von Dynamics 365 for Operations-Einstellungen, damit eine ER-Konfiguration verwendet werden kann, indem Sie auf diese Konfiguration in einem prozessbezogenen Parameter verweisen. Beispiel finden Sie die ER-Konfiguration in zu einer Zahlungsmethode der definierten Konten an, wenn Sie eine Meldung für elektronische Zahlung zur Verarbeitung von Rechnungen zu generieren.
+    -   Konfigurieren von Dynamics 365 for Operations-Einstellungen, damit eine ER-Konfiguration verwendet werden kann, indem Sie auf diese Konfiguration in einem prozessbezogenen Parameter verweisen. (Wenn Sie z. B. auf die ER-Konfiguration in einer bestimmten Kreditorenkonten-Zahlungsmethode zur Generierung einer elektronischen Zahlungsnachricht zur Verarbeitung von Rechnungen verweisen.)
 -   Verwenden einer Vorlage in einem bestimmten Geschäftsprozess:
-    -   Ausführen einer bestimmten ER-Konfiguration in einem Geschäftsprozess aus. Sie können eine Nachricht der elektronischen Zahlung zur Verarbeitung von Rechnungen generieren, wenn eine Zahlungsmethode, die die ER-Konfiguration verweist, ausgewählt wird.
+    -   Ausführen einer bestimmten ER-Konfiguration in einem Geschäftsprozess aus. (Wenn Sie z. B. auf die ER-Konfiguration in einer bestimmten Kreditorenkonten-Zahlungsmethode zur Generierung einer elektronischen Zahlungsnachricht zur Verarbeitung von Rechnungen verweisen.)
 
 ## <a name="concepts"></a>Konzepte
-Folgende Rollen und zugehörige Aktivitäten werden mit dem ER-Konfigurationslebenszyklus zugeordnet.
+Folgende Rollen und Aktivitäten gehören zu ER-Konfigurationslebenszyklen.
 
 | Rolle                                       | Aktivitäten                                                      | Beschreibung                                                                                                                                                                                                                  |
 |--------------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Funktionaler Berater für elektronische Berichterstellung | Erstellen und Verwalten von ER-Komponenten (Modelle und Formate).           | Eine Geschäftsperson, die domänenspezifische Datenmodelle, die erforderlichen ER entwirft Vorlagen für elektronische Dokumente entwirft und nach bindet.                                                                           |
-| Entwickler für elektronische Berichterstellung             | Erstellen und Verwalten von Datenmodellzuordnungen.                          | Dynamics 365 für Arbeitsgangsspezialisten, die das erforderliche Dynamics 365 für Arbeitsgangsdatenquellen auswählen und sie zu domänenspezifischen Datenmodellen ER bindet.                                                                 |
-| Supervisor Buchhaltung                      | Konfiguration von prozessbezogenen Einstellungen, die auf ER-Artefakte verweisen. | Beispiel einer Buchhaltungssupervisor ** ** Rolle, die die Einstellungen einer, um eine Nachricht in ermöglicht Kreditorenzahlungsmethode einer bestimmten verwendet werden ER-Konfiguration, " Elektronische Zahlung zur Verarbeitung von Rechnungen zu generieren. |
-| Sachbearbeiter Kreditorenkontozahlungen            | Verwenden von ER-Artefakten in einem bestimmten Geschäftsprozess.                | Beispielsweise eine ** Kreditorenzahlungen werden als Angestellter tätig ** Rolle, die für die Verarbeitung können generiert werden Meldungen der elektronischen Zahlung, Rechnungen, basierend auf dem ER-Format, das für eine bestimmte Zahlungsmethode konfiguriert wird.           |
+| Funktionaler Berater für elektronische Berichterstellung | Erstellen und Verwalten von ER-Komponenten (Modelle und Formate).           | Eine Mitarbeiter, der domänenspezifische ER-Datenmodelle gestaltet, entwirft die erforderlichen Vorlagen für elektronische Dokumente und bindet sie entsprechend.                                                                           |
+| Entwickler für elektronische Berichterstellung             | Erstellen und Verwalten von Datenmodellzuordnungen.                          | Ein Dynamics 365 for Operations-Spezialist, der die erforderlichen Dynamics 365 for Operations-Datenquellen auswählt und sie an domänenspezifische ER-Datenmodelle bindet                                                                 |
+| Supervisor Buchhaltung                      | Konfiguration von prozessbezogenen Einstellungen, die auf ER-Artefakte verweisen. | Zum Beispiele eine Rolle **Supervisor Buchhaltung **, die die Einstellungen einer ER-Konfiguration in einer bestimmten Kreditorenzahlungsmethode zulässt, um eine elektronische Zahlung zur Verarbeitung von Rechnungen zu generieren |
+| Sachbearbeiter Kreditorenkontozahlungen            | Verwenden von ER-Artefakten in einem bestimmten Geschäftsprozess.                | Beispielsweise eine **Sachbearbeiter Kreditorenkontozahlungen **-Rolle, die die für die Generierung von Nachrichten für elektronischen Zahlung zulässt, die auf dem ER-Format basieren, das für eine bestimmte Zahlungsmethode konfiguriert ist           |
 
 ## <a name="er-configuration-development-lifecycle"></a>Er-Konfigurationsentwicklungslebenszyklus
 Bei den folgenden ER-bezogenen Gründen empfehlen wir, Ihre ER-Konfigurationen in der Entwicklungsumgebung als getrennte Instanz von Dynamics 365 for Operations zu entwickeln:
@@ -69,11 +72,13 @@ Bei den folgenden ER-bezogenen Gründen empfehlen wir, Ihre ER-Konfigurationen i
 -   Benutzer, die entweder die Rolle des **Elektronischen Berichterstellungsentwicklers** oder **des funktionalen Beraters der elektronischen Berichterstellung** ausüben, können Konfigurationen bearbeiten und anschließend für Testzwecke ausführen. Dieses Szenario ruft möglicherweise Geschäftsabläufe und Tabellen auf, die für die Daten und die Leistung der Dynamicx 365 for Operations-Instanz schädlich sein können.
 -   Das Aufrufen von Geschäftsabläufen und Tabellen als ER Datenquelle von ER Konfigurationen sind bei Dynamics 365 for Operations-Einstiegspunkten und angemeldeten Unternehmensinhalten nicht beschränkt. Deshalb können Benutzer mit der Rolle **Entwickler für elektronische Berichterstellung** oder **Funktionaler Berater für elektronische Berichterstellung** auf geschäftskritische Daten zugreifen.
 
-Er-Konfigurationen, die in der Entwicklungsumgebung vorgesehen sind, können der Testumgebung (Konfigurationsbewertung für die korrekte Prozeßintegration, Korrektheit Ergebnissen und Leistung) und die Qualitätssicherung, wie von Rolle-getriebenen Korrektheit Zugriffsrechten und der Aufgabentrennung hochgeladen werden. Die Funktionen, die ER-Konfigurationsaustausch aktivieren, können für diesen Zweck verwendet werden. Schließlich können ER-Konfigurationen nachgewiesene hochgeladene jede zu Kreditbriefen, in dem sie mit Service-Abonnenten freigegeben werden kann, z oder Produktionsumgebung für interne Verwendung vorgesehen sein, z angezeigt wurden in der folgenden Abbildung. ![Er-Konfigurationslebenszyklus](./media/ger-configuration-lifecycle.png)
+ER-Konfigurationen, die in der Testumgebung entworfene wurden, können in die Testumgebung hochgeladen werden, um eine Konfigurationsauswertung (korrekte Prozessintegration, Korrektheit der Ergebnisse, Leistung) vorzunehmen und das Qualitätsmanagement (Korrektheit der Rollen getriebener Zugriffsrechts, Aufgabentrennung, usw.) sicherzustellen. Die Funktionen, die den ER-Konfigurationsaustausch ermöglichen, können zu diesem Zweck verwendet werden. Nachgewiesene ER-Konfigurationen können außerdem entweder zu LCS hochgeladen werden (dort können Sie mit Dienstleistungsabonnenten geteilt werden). ![ER-Konfiguration Lebenszyklus](./media/ger-configuration-lifecycle.png)
 
 <a name="see-also"></a>Siehe auch
 --------
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+
+
 
 

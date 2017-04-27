@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reimburse-customers"></a>Ausführen einer Debitorenrückerstattung
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Thema wird erläutert, wie Rückerstattungstransaktlionen für eine Debitorengruppe erstellt werden. Wenn ein Debitor über ein Guthaben verfügt, können Sie dem Debitor den Betrag des Saldos rückerstatten. 
 
 In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sein müssen, bevor Sie beginnen können.
@@ -47,6 +50,8 @@ Wenn Sie Rückerstattungsbuchungen erstellen, wird eine Kreditorenrechnung für 
     Die Habenbeträge werden auf die Kreditorenkonten der Debitoren überwiesen und als gewöhnliche Zahlungen behandelt. Ist für den Debitor kein Kreditorenkonto vorhanden, wird für diesen Debitor automatisch ein einmaliges Kreditorenkonto erstellt.
 3.  Die erstellten Rückerstattungstransaktionen zeigen Sie auf der Seite **Rückerstattung** an.
 4.  Im Kreditorenmodul erstellen Sie eine Zahlung für die Kreditorenrechnungen, die durch den Rückerstattungsprozess erstellt wurden.
+
+
 
 
 

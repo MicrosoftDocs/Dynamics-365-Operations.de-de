@@ -1,6 +1,6 @@
 ---
 title: "Anlagewertmodel und Abschreibungsbuchzusammenführung"
-description: "In älteren Versionen die aus zwei Bewertungskonzepte für Anlagen - Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 zur Freigabe der Arbeitsgänge 1611, werden die Wertmodellfunktionen und die funktionen Abschreibungsbuch in ein einzelnes Konzept zusammengeführt wurde, als das Buch bezeichnet."
+description: "In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations Version 1611, wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als ein Buch bekannt ist."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Anlagewertmodel und Abschreibungsbuchzusammenführung
 
-In älteren Versionen die aus zwei Bewertungskonzepte für Anlagen - Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 zur Freigabe der Arbeitsgänge 1611, werden die Wertmodellfunktionen und die funktionen Abschreibungsbuch in ein einzelnes Konzept zusammengeführt wurde, als das Buch bezeichnet.
+[!include[banner](../includes/banner.md)]
 
-Die neue Buchfunktionalität basiert auf einer früheren Wertmodellfunktionalität, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde. [![als Buch Zusammenführung aus Wertmodell und Abschreibungsbuchfunktionen]" . /media/fixed-assets.png)]". /media/fixed-assets.png) Verwalten, deswegen Sie können einen einzelnen Satz Seiten, Abfragen und Berichten für alle Ihre Anlagenprozesse nun können zusammen verwendet werden. Die Tabellen in diesem Thema beschrieben die vorhergehende Funktionalität für Abschreibungsbücher und Wertmodelle, zusammen mit der neuen Funktionalität für Bücher.
+
+In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations Version 1611, wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als ein Buch bekannt ist.
+
+Die neue Buchfunktionalität basiert auf einer früheren Wertmodellfunktionalität, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde. [![Buchen als eine Zusammenführung von Wertmodell- und Abschreibungsbuchfunktionalität](./media/fixed-assets.png)](./media/fixed-assets.png) Wegen dieser Zusammenführung können Sie jetzt einen einzigen Satz von Seiten, Abfragen und Berichten für alle Ihre Anlagenprozesse verwenden. Die Tabellen in diesem Thema beschrieben die vorhergehende Funktionalität für Abschreibungsbücher und Wertmodelle, zusammen mit der neuen Funktionalität für Bücher.
 
 ## <a name="setup"></a>Einstellung
 Standardmäßig buchen Bücher sowohl in das Hauptbuch als auch in das untergeordnete Anlagensachkonto. Bücher haben eine neue Option **Ins Hauptbuch buchen**. Mit ihr können Sie Buchungen in das Hauptbuch deaktivieren und nur in das untergeordnete Anlagensachkonto buchen. Diese Funktionalität ähnelt dem früheren Buchungsverhalten für Abschreibungsbücher. Das Erfassungsnamenssetup hat eine neue Buchungsebene mit der Bezeichnung „Keine”. Diese Buchungsebene wurde speziell für Anlagenbuchungen hinzugefügt. Um Buchungen für Bücher zu buchen die nicht auf das Hauptkonto buchen, müssen Sie einen Erfassungsnamen verwenden, bei dem die Buchungsebene auf **Keine** festgelegt ist.
@@ -66,5 +69,7 @@ Abfragen und Berichte unterstützen alle Bücher. Berichte, die in der folgenden
 
 ## <a name="upgrade"></a>Upgrade durchführen
 Durch den Upgradeprozess werden Ihre vorhandenen Einstellungen und alle Ihre vorhandenen Transaktionen zur neuen Buchstruktur verschoben. Wertmodelle bleiben, wie sie zurzeit sind, als Buch, das zum Hauptbuch bucht. Allerdings werden Abschreibungsbücher zu einem Buch verschoben, bei dem die Option **Ins Hauptbuch buchen** auf **Nein** festgelegt ist. Abschreibungsbuch-Erfassungsnamen werden zu einem Hauptbuch-Erfassungsnamen verschoben, bei dem die Buchungsebene auf **Keine** festgelegt ist.
+
+
 
 

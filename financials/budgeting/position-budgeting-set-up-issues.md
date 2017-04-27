@@ -1,5 +1,5 @@
 ---
-title: Haushaltsplanungsproblembehandlung der Position
+title: Positionsbudgetierung-Problembehebung
 description: "Diesee Artikel enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Sie die Positionsbudgetierung konfigurieren. Es adressiert häufig gestellten Fragen, wie Budgetkostenelemente, Vergütungsgruppen und Kompensationsraster."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="position-budgeting-troubleshooting"></a>Haushaltsplanungsproblembehandlung der Position
+# <a name="position-budgeting-troubleshooting"></a>Positionsbudgetierung-Problembehebung
+
+[!include[banner](../includes/banner.md)]
+
 
 Diesee Artikel enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Sie die Positionsbudgetierung konfigurieren. Es adressiert häufig gestellten Fragen, wie Budgetkostenelemente, Vergütungsgruppen und Kompensationsraster. 
 
@@ -58,6 +61,8 @@ Die Datumsangaben in der Kostenelementposition der Planungsposition müssen inne
 -   Das Aktivierungs- und Deaktivierungsdatum der Position.
 -   DasAktivierungs- und Deaktivierungsdatum des Budgetkostenelements.
 -   Start- und Enddatum des Budgetzyklus, der dem Budgetplanungsprozess der Planungsposition zugeordnet ist.
+
+
 
 
 

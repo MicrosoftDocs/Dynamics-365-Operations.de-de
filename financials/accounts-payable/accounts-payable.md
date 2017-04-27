@@ -1,6 +1,6 @@
 ---
 title: "Startseite für Kreditorenkonten"
-description: "Dieses Thema bietet eine Übersicht des Kreditors."
+description: "Dieses Thema enthält eine Übersicht über die Kreditorenkonten."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,8 +27,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-home-page"></a>Startseite für Kreditorenkonten
 
-Dieses Thema bietet eine Übersicht des Kreditors.
+[!include[banner](../includes/banner.md)]
 
-Sie können Kreditorenrechnungen manuell eingeben oder sie elektronisch über eine Datenentitä empfangen. Nachdem Rechnungen eingegeben oder empfangen wurden, können Sie die Rechnungen anzeigen und genehmigen, mithilfe einer Rechnungsgenehmigungserfassung oder die Kreditorenrechnung ** ** Seite. Sie können den Prüfungsprozess mit einem Rechnungsabgleich, Kreditorenrechnungsrichtlinien und Workflows automatisieren, sodass bestimmten Kriterien entsprechende Rechnungen automatisch genehmigt und die übrigen Rechnungen zur Prüfung durch einen autorisierten Benutzer markiert werden.
+
+Dieses Thema enthält eine Übersicht über die Kreditorenkonten. 
+
+Sie können Kreditorenrechnungen manuell eingeben oder sie elektronisch über eine Datenentitä empfangen. Nachdem Rechnungen eingegeben oder empfangen wurden, können sie mithilfe einer Rechnungsgenehmigungserfassung oder der Seite **Kreditorenrechnung** geprüft und genehmigt werden. Sie können den Prüfungsprozess mit einem Rechnungsabgleich, Kreditorenrechnungsrichtlinien und Workflows automatisieren, sodass bestimmten Kriterien entsprechende Rechnungen automatisch genehmigt und die übrigen Rechnungen zur Prüfung durch einen autorisierten Benutzer markiert werden.
+
+
 
 

@@ -42,22 +42,22 @@ Um auf die neueste Version zu aktualisieren, lesen Sie [Prozess zum Aktualisiere
 <tr class="header">
 <th><strong>Freigabe</strong></th>
 <th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
-<th><strong><strong>Weitere ermitteln</strong></strong></th>
+<th><strong><strong>Erstellungsnummer</strong></strong></th>
+<th><strong><strong>Verfügbarkeit</strong></strong></th>
+<th><strong><strong>Weitere Informationen</strong></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Plattform Microsoft Dynamics 365 for Operations</td>
-<td>Plattformaktualisierung 4</td>
+<td>Plattform-Update 4</td>
 <td>7.0.4425.16160</td>
-<td>Februar 2017</td>
+<td>2017. Februar</td>
 <td><ol>
-<li>Wechseln Sie <a href="https://roadmap.dynamics.com/">Roadmap Dynamics 365</a>.</li>
-<li>Wählen Sie die <strong>Neuheiten</strong> Registerkarte aus.</li>
-<li>Wählen Sie <strong>Dynamics 365 für Arbeitsgänge</strong> im <strong>Anwendungen</strong>-Abschnitt aus.</li>
-<li>Wählen Sie <strong>Cloud-Plattform</strong> im <strong>Bereiche</strong>-Abschnitt aus.</li>
+<li>Navigieren Sie zu <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a>.</li>
+<li>Wählen Sie die Registerkarte <strong>Neuheiten</strong> aus.</li>
+<li>Wählen Sie im Bereich für <strong>Anwendungen</strong> <strong>Dynamics 365 for Operations</strong> aus.</li>
+<li>Wählen Sie im Abschnitt <strong>Bereiche</strong> die Option für <strong>Cloud-Plattform</strong> aus.</li>
 </ol></td>
 </tr>
 <tr class="even">

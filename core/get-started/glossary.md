@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 für Arbeitsgangsglossar"
+title: Microsoft Dynamics 365 for Operations, Glossar
 description: "Das Microsoft Dynamics A 365 for Operations Glossar enthält Definitionen der wichtigsten Begriffe und Konzepte in Bezug auf das Microsoft Dynamics 365 for Operations Produkt."
 author: tonyafehr
 manager: AnnBe
@@ -25,13 +25,16 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 für Arbeitsgangsglossar
+# <a name="dynamics-365-for-operations-glossary"></a>Microsoft Dynamics 365 for Operations, Glossar
+
+[!include[banner](../includes/banner.md)]
+
 
 Das Microsoft Dynamics A 365 for Operations Glossar enthält Definitionen der wichtigsten Begriffe und Konzepte in Bezug auf das Microsoft Dynamics 365 for Operations Produkt. 
 
 ### <a name="a"></a>**A**
 
-###### <a name="accounting-journal"></a>**accounting journal**
+###### <a name="accounting-journal"></a>**Buchhaltungserfassung**
 
 Eine Erfassung, die verwendet wird, um die finanziellen Auswirkungen von Buchhaltungsereignissen in einem Buchhaltungssystem zu erfassen.
 
@@ -73,7 +76,7 @@ Die Anzahl von Tagen in einem Zeitraum, der dazu dient, überfällige Debitorenz
 
 Eine Aufstellung der Finanzlage einer Organisation, die Auskunft über den Status von Anlagen, Verbindlichkeiten und Eigenkapital an einem bestimmten Datum gibt.
 
-###### <a name="balance-sheet-account"></a>**balance sheet account**
+###### <a name="balance-sheet-account"></a>**Bilanzkonto**
 
 Ein Konto, das die in einer Bilanz aufgeführten Änderungen beschreibt.
 
@@ -89,7 +92,7 @@ Ein Produktattribut einer Fertigungsmenge oder einer Umlagerungsmenge.
 
 Ein empfohlenes Datum, bis zu dem ein Produkt seine optimale Qualität oder seine spezifischen Eigenschaften behält.
 
-###### <a name="best-before-period"></a>**best before period**
+###### <a name="best-before-period"></a>**Zeitraum für Mindesthaltbarkeit**
 
 Der Zeitraum, in dem ein Produkt seine optimale Qualität oder seine spezifischen Eigenschaften besitzt.
 
@@ -109,23 +112,23 @@ Die Aktivität zum Sperren eines Dokuments oder Produkts.
 
 Eine Methode, die dazu dient, Aufwendungen nur dann zu autorisieren, wenn Budgetmittel zur Erfüllung künftiger Zahlungsverpflichtungen reserviert werden können.
 
-###### <a name="budget-control-dimension"></a>**budget control dimension**
+###### <a name="budget-control-dimension"></a>**Budgetsteuerungsdimension**
 
 Eine Kombination aus aktiven Finanzdimensionswerten, die zum Zuteilen von Budgetmitteln verwendet wird, um Zahlungen für geplante Aktivitäten zu leisten.
 
-###### <a name="budget-control-rule"></a>**budget control rule**
+###### <a name="budget-control-rule"></a>**Budgetsteuerungsregel**
 
 Die Verschlüsselung einer Geschäftsentscheidung, um zugesagte und tatsächliche Aufwendungen anhand verfügbarer Budgetmittel zu prüfen, die durch gültige Budgetsteuerungsdimension-Wertkombinationen für detaillierte oder aggregierte Aktivitäten zugeteilt sind.
 
-###### <a name="budget-cycle-time-span"></a>**budget cycle time span**
+###### <a name="budget-cycle-time-span"></a>**Zeitspanne für Budgetzyklus**
 
 Ein Zeitraum, der als eine Reihe von Steuerkalenderperioden angegeben ist. Die Budgetperiode kann sich von der Buchhaltungsperiode unterscheiden.
 
-###### <a name="budget-group"></a>**budget group**
+###### <a name="budget-group"></a>**Budgetgruppe**
 
 Eine Gruppe von Finanzdimensionswerten in einer Budgetdimensionshierarchie, die zum Berechnen der Budgetmittelsumme verwendet werden, die übergeordneten Finanzdimensionswerten zugeteilt wird, indem die den untergeordneten Finanzdimensionswerten zugeteilten Budgetmittel addiert werden.
 
-###### <a name="budget-model"></a>**budget model**
+###### <a name="budget-model"></a>**Budgetmodell**
 
 Eine Planungsstruktur, die zum Planen von Budgetmittelzuteilungen und Aufwendungen verwendet wird.
 
@@ -147,7 +150,7 @@ Eine halbautomatische Organisationseinheit, die zum Erreichen strategischer Unte
 
 Die maximale Menge an geplanter Arbeit, die eine Ressource leisten kann, wenn mit dem definierten Kapazitätsniveau gearbeitet wird.
 
-###### <a name="capacity-planning"></a>**capacity planning**
+###### <a name="capacity-planning"></a>**Kapazitätsplanung**
 
 Ein Verfahren zum Bestimmen der Ressourcenkapazitätsanforderungen, um den Bedarf an künftigen hergestellten Produkten in bestimmten Zeiträumen zu erfüllen.
 
@@ -191,11 +194,11 @@ Ein Artikel, der gemeinsam mit einem anderen Artikel hergestellt wird.
 
 Eine Organisationseinheit, deren Manager für die budgetierten und tatsächlichen Aufwendungen verantwortlich sind.
 
-###### <a name="cost-of-goods-sold"></a>**cost of goods sold**
+###### <a name="cost-of-goods-sold"></a>**Wareneinsatz**
 
 Eine Buchungskategorie, die verwendet wird, um die finanziellen Auswirkungen der Produktherstellung und der Lagerhaltung zusammenzufassen.
 
-###### <a name="cost-variance"></a>**cost variance**
+###### <a name="cost-variance"></a>**Kostenabweichung**
 
 Die Differenz zwischen den erwarteten und den tatsächlichen Kosten.
 
@@ -249,7 +252,7 @@ Die Methode, die für die Bereitstellung auf Benutzerakzeptanztest (UAT) und Pro
 
 Ein Visual Studio-Tool, das Sie verwenden, um Ihre Modellelemente zu erstellen, zu aktualisieren und zu überprüfen.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**. \ \ eine dimensionsbasierte Konfiguration ** Finanzdimensionen
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\dimension-based configuration**
 
 Eine Konfigurationstechnologie, die zum Erstellen von Produktvarianten durch Auswahl von Produktdimensionswerten verwendet wird.
 
@@ -261,7 +264,7 @@ Ein eindeutig identifizierbares Produkt.
 
 Ein Methode zum Sperren eines Arbeitsgangprozesses, während die bestellten Artikel einem Qualitätssicherungsprozess unterzogen werden.
 
-###### <a name="document-management-system"></a>**document management system**
+###### <a name="document-management-system"></a>**Dokumentverwaltungssystem**
 
 Ein Anwendungsdienst zum Speichern und Handhaben der Dokumente in einer Organisation.
 
@@ -293,7 +296,7 @@ Anpassen einer Anwendung, indem dem vorhandenen Code Funktionen hinzugefügt wer
 
 Eine Klassifizierung von Finanzdaten, die auf Grundlage der Parteien, Standorte, Produkte und Aktivitäten in einer Organisation erstellt und für Verwaltungsberichte verwendet wird.
 
-###### <a name="financial-dimension-value"></a>**financial dimension value**
+###### <a name="financial-dimension-value"></a>**Finanzdimensionswert**
 
 Ein Datenelement in der Domäne einer Finanzdimension.
 
@@ -353,7 +356,7 @@ Eine Methode zum Abgleichen von Preisen und Produktmengen in Kreditorenrechnunge
 
 Eine Produktfamiliengruppierung, die zur Absatzplanung und Bedarfsplanung verwendet wird.
 
-###### <a name="item-relation"></a>**item relation**
+###### <a name="item-relation"></a>**Artikelrelation**
 
 Ein Verweis auf die Artikelverteilungsgruppe oder den Artikel und die dazugehörigen Produktdimensionen in einer Kanban-Regel.
 
@@ -375,7 +378,7 @@ Ein Prozess oder eine Umlagerungsaktivität in einem Produktionsfluss, ausgelös
 
 Die Entnahme von Produktkomponenten aus dem Bestand, um die Kanban-Produktions-Einzelvorgänge abzuschließen.
 
-###### <a name="kanban-product-quantity"></a>**kanban product quantity**
+###### <a name="kanban-product-quantity"></a>**Kanban-Produktmenge**
 
 Der Artikelbedarf, den ein Kanban erfüllt, basierend auf einer Kanban-Regel.
 
@@ -499,9 +502,9 @@ Ein Teil eines Produkts.
 
 ###### <a name="product-dimension"></a>**Produktdimension**
 
-Die Größe, Farbe oder die Konfigurations, die für produktattribute. verwendet werden. \ \ Finanzdimensionen eine dimensionsbasierte Konfiguration.
+Die Produktattribute "Variante", "Größe" und "Farbe", die für eine ..\financial-dimensions\dimension-based Konfiguration verwendet werden.
 
-###### <a name="product-family"></a>**product family**
+###### <a name="product-family"></a>**Produktfamilie**
 
 Eine eindeutige Gruppierung von Artikeln, Dienstleistungen oder Rechten, die entweder an denselben Produktions- oder Lieferungsaktivitäten beteiligt sind oder die in denselben Marktsegmenten angeboten werden. In Microsoft Dynamics 365 for Operations wird die Gruppierung mit einem Planungsverteilungsschlüssel dargestellt.
 
@@ -509,23 +512,23 @@ Eine eindeutige Gruppierung von Artikeln, Dienstleistungen oder Rechten, die ent
 
 Eine standardmäßige oder funktionale Darstellung eines Produkts, die als Grundlage für das Konfigurieren von Produktvarianten fungiert.
 
-###### <a name="product-receipt"></a>**product receipt**
+###### <a name="product-receipt"></a>**Produktzugang**
 
 Ein Quelldokument, das den Zugang bestellter Produkte, den Zugang zurückgegebener Produkte oder den Zugang von Produkten, die in Kommission entgegengenommen werden, dokumentiert.
 
-###### <a name="product-variant"></a>**product variant**
+###### <a name="product-variant"></a>**Produktvariante**
 
 Eine Konfiguration eines Produktmasters.
 
-###### <a name="production-flow"></a>**production flow**
+###### <a name="production-flow"></a>**Produktionsfluss**
 
 Ein Produktionsprozess, der auf Lean-Prinzipien basiert.
 
-###### <a name="production-flow-model"></a>**production flow model**
+###### <a name="production-flow-model"></a>**Produktionsflussmodell**
 
 Eine Darstellung der Produktionskapazität einer Gruppe von Arbeitsgruppen in einem Produktionsflussprozess.
 
-###### <a name="production-order"></a>**production order**
+###### <a name="production-order"></a>**Produktionsauftrag**
 
 Ein Quelldokument, das den Bedarf an der Fertigung von Artikeln dokumentiert, um eine Nachfrage zu decken.
 
@@ -599,7 +602,7 @@ Ein Produkt, dessen Verteilung durch eine Regierungsbehörde eingeschränkt wird
 
 Ein Quelldokument, das eine Vereinbarung zwischen zwei oder mehr Parteien dokumentiert und auf dem Einverständnis beruht, dass die verkaufende Partei eine bestimmte Menge oder einen bestimmten Wert des Produkts über einen gewissen Zeitraum gegen Gewährung günstiger Preise und Rabatte verkauft.
 
-###### <a name="sales-agreement-policy"></a>**sales agreement policy**
+###### <a name="sales-agreement-policy"></a>**Kaufvertragsrichtlinie**
 
 Eine Richtlinie, die Parteien zum Ändern von Kaufvertragsbestimmungen autorisiert.
 
@@ -615,7 +618,7 @@ Ein Quelldokument, das ein Angebot zum Liefern einer Menge eines Produkts zu ein
 
 Ein definierter Satz von Anwendungszugriffsrechten. Von der Sicherheitsrolle, die einem Benutzer zugewiesen wurde, hängt ab, welche Aufgaben der Benutzer ausführen kann und welche Teile der Benutzeroberfläche angezeigt werden. Alle Benutzer müssen mindestens einer Sicherheitsrolle zugewiesen sein, um auf das System zugreifen zu können.
 
-###### <a name="segregation-of-duties"></a>**segregation of duties**
+###### <a name="segregation-of-duties"></a>**Aufgabentrennung**
 
 Ein Entwurfsprinzip, das dazu dient, das Betrugsrisiko, Unregelmäßigkeiten und Fehler zu reduzieren, indem die Aufgabenbereichen Erfassung, Prüfung, Autorisierung, Verwahrung von Aktivposten und regelmäßige Überprüfung der Personen, die an der Dokumentation oder Erfassung der finanziellen Auswirkungen wirtschaftlicher Transaktionen beteiligt sind, voneinander getrennt werden.
 
@@ -697,7 +700,7 @@ Eine Organisationseinheit, die mindestens einen Produktionsfluss steuert.
 
 Eine Methode zur Modellierung von Produktmastern und Suchen nach Produktvariantenkonfigurationen.
 
-###### <a name="vat-value-added-tax"></a>** Mehrwertsteuer (MwSt.) **
+###### <a name="vat-value-added-tax"></a>**MwSt (Mehrwertsteuer)**
 
 Eine Steuer, die in jeder Produktionsphase auf ein Produkt erhoben wird und auf der Wertsteigerung in der jeweiligen Phase basiert.
 
@@ -705,7 +708,7 @@ Eine Steuer, die in jeder Produktionsphase auf ein Produkt erhoben wird und auf 
 
 Eine Auflistung von Produktangeboten, die ein Lieferant zum Kauf anbietet.
 
-###### <a name="vendor-invoice"></a>**vendor invoice**
+###### <a name="vendor-invoice"></a>**Kreditorenrechnung**
 
 Ein Quelldokument, das eine Zahlungsaufforderung des Kreditoren dokumentiert. Eine Kreditorenrechnung kann auf eine oder mehrere Bestellungen verweisen. Wenn die Kreditorenrechnung autorisiert ist, kann eine Zahlung an den Kreditor geleistet werden.
 
@@ -722,5 +725,7 @@ Ein Person, die die Rolle eines Mitarbeiters oder Auftragnehmers einnimmt und ge
 ###### <a name="workspace"></a>**Arbeitsbereich**
 
 Eine Seite, die einen Überblick über eine der Aktivitäten bietet, die der Benutzer ausführt. Die Seite verwendet Kacheln, Listen und Diagramme, um ausstehende Arbeit und zugehörige Daten aus mehreren Quellen anzuzeigen, und die Seite zeigt häufige Aufgaben an, die diesen Daten zugeordnet sind. Im Zusammenfassungsbereich angezeigte Kacheln werden auch im zugehörigen Abschnitt im Dashboard angezeigt.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-integration"></a>Integration von Anlagevermögen
 
+[!include[banner](../includes/banner.md)]
+
+
 Anlagen können in die Module "Hauptbuch", "Bestandsverwaltung", "Debitoren" und "Kreditoren" integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden.
 
 <a name="general-ledger"></a>Hauptbuch
@@ -82,7 +85,7 @@ Die Integration wird auf der Registerkarte **Anlagen** lagen im Inforegister **P
 ## <a name="project-management-and-accounting"></a>Projektverwaltung und -verrechnung
 Sie können ein Projekt einer Anlage zuordnen, die durch das Projekt betroffen ist. Zudem kann jede Phase, jede Aufgabe oder jedes Unterprojekt einer anderen Anlage zugeordnet werden. Jedem Projektdatensatz kann eine Anlage zugeordnet werden. Sie erstellen die Zuordnung, wenn Sie eine Anlagennummer im Nummernfeld **Anlagen** auf der Seite **Projekte** eingeben. Der Projekttyp muss entweder **Intern** oder **Kostenprojekt** sein. 
 
-Sie können auch mithilfe der Seite**Projekte** Details zu Anlagen anzeigen, die Projekten zugeordnet sind. Klicken Sie zum Anzeigen des Anlagendatensatzes auf den Anlagenlink im Inforegister **Einstellungen**, um die Seite **Anlagen** zu öffnen. Klicken Sie anschließend auf ** Projekte ** &gt; ** alle Projekte ** die Projekte anzeigen, die der Anlage zugeordnet sind. 
+Sie können auch mithilfe der Seite**Projekte** Details zu Anlagen anzeigen, die Projekten zugeordnet sind. Klicken Sie zum Anzeigen des Anlagendatensatzes auf den Anlagenlink im Inforegister **Einstellungen**, um die Seite **Anlagen** zu öffnen. Klicken Sie anschließend auf **Projekt** &gt; **Alle Projekte**, um die Projekte anzuzeigen, die der Anlage zugeordnet sind. 
 
 Eine Zuordnung von Anlagen zu Projekten wird üblicherweise dann vorgenommen, wenn die Projekte mit Arbeiten an der Anlage, mit der Wartung der Anlage oder mit Verbesserungen an der Anlage zusammenhängen. Nach Abschluss des Projekts erfolgt nicht automatisch eine Höherbewertung der Anlage. Diese muss ggf. manuell ausgeführt werden, wenn eine Höherbewertung erforderlich ist. 
 
@@ -90,6 +93,8 @@ Entfernen Sie auf der Seite **Anlagennummer** auf der Seite **Projekte** den Wer
 
 Eine erstellte oder produzierte Anlage kann auch als Teil eines Vorkalkulationsprojekts ausgewiesen werden. Am Ende eines Vorkalkulationsprojekts kann dann automatisch eine Anlagenanschaffungsbuchung vorgenommen werden.
 
-Weitere Informationen finden Sie [erhalten Sie Anlagen von Beschaffungs-] stornieren "acquire-assets-procurement.md)
+Weitere Informationen finden Sie unter[Anlagen über Beschaffung erhalten](acquire-assets-procurement.md).
+
+
 
 

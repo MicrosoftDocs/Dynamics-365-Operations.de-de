@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-financial-reports"></a>Finanzberichte anzeigen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt, wie Finanzberichte in Microsoft Dynamics AX angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
 
 <a name="financial-reporting-overview"></a>Überblick über die Finanzberichterstellung
@@ -48,7 +51,7 @@ Sie können das Berichtsdatum ändern, Attributs- und Dimensionsfilter anwenden 
 
 -   Um die Basisperiode und das Basisjahr eines Berichts zu ändern, wählen Sie eine Basisperiode und ein Basisjahr aus, und klicken Sie anschließend auf **OK**.
 -   Um Attributfilter auf einen Bericht anzuwenden, wählen Sie **Einen Attributfilter hinzufügen** aus. Wählen Sie das Attribut aus, geben Sie den Attributwert ein, und klicken Sie auf **OK**. Wenn Sie beispielsweise das Attribut **Kontokategorie** auswählen, geben Sie **VERKAUF** als Attributwert ein. Um einen Attributfilter zu entfernen, klicken Sie auf **Löschen**.
--   Dimensionsfilter Um zu einem Bericht zu übernehmen, Auswählen ** Zuordnen eines Dimensionsfilters ** hinzu. Wählen Sie die Dimension aus und anschließend entweder die Dimension Kennung ein oder wählen Sie in der Liste die Dimension aus. Um einen Dimensionsfilter zu entfernen, klicken Sie auf **Löschen**.
+-   Um Dimensionsfilter auf einen Bericht anzuwenden, wählen Sie **Dimensionsfilter hinzufügen** aus. Wählen Sie die Dimension aus, und geben Sie anschließend entweder die Dimensionskennung ein oder wählen Sie die Dimension aus der Liste aus. Um einen Dimensionsfilter zu entfernen, klicken Sie auf **Löschen**.
 -   Um das Szenario in einem Bericht vom Typ **Istwert im Vergleich zu Budget** zu ändern, wählen Sie ein neues Szenario aus, und klicken Sie anschließend auf **OK**. Wenn das ausgewählte Szenario für ein anderes Jahr gilt, müssen Sie das Basisjahr aktualisieren. Wenn beispielsweise das aktuelle Szenario für FJ2015 gilt und Sie ein neues Szenario auswählen, das für FJ2016 gilt, sollten Sie das Basisjahr in **2016** ändern.
 
 Wenn Sie auf **OK** klicken, werden alle Optionen, die Sie ausgewählt haben, auf den Bericht angewendet. Wenn Sie die ausgewählten Optionen doch nicht anwenden möchten, klicken Sie auf **Abbrechen**.
@@ -66,7 +69,7 @@ Ein Finanzbericht kann jederzeit in jeder Währung angezeigt werden. Um einen Be
 Ein Finanzbericht kann Detailpositionen und zusammengefasste Positionen enthalten. Detailpositionen sind Positionen, die Hauptkonten oder Dimensionen enthalten. Zusammengefasste Positionen sind Beschreibungs-, Gesamt- und Berechnungspositionen. Um nur die zusammengefassten Positionen eines Berichts anzuzeigen, klicken Sie auf **Anzeigen** und dann auf **Nur zusammengefasste Positionen**. Der Bericht wird reduziert, und es werden nur die zusammengefassten Positionen angezeigt. Um die Detailpositionen zusammen mit den zusammengefassten Positionen anzuzeigen, klicken Sie auf **Anzeigen** und dann erneut auf **Nur zusammengefasste Positionen**.
 
 ## <a name="open-a-financial-report-from-a-previous-month"></a>Öffnen eines Finanzberichts für einen vorherigen Monat
-Sie können Berichte für den aktuellen Monat oder für ältere Monate anzeigen, ohne den Bericht erneut zu generieren. Wenn Sie den Bericht für einen vorherigen Monat zu öffnen, klicken Sie ** gezeigt **, und klicken Sie dann ** vorherige Berichte **. Eine Liste der vorherigen Monat, für den der Bericht generiert wurde, wird. Erweitern Sie den Monat, für den Sie den Bericht anzeigen möchten, wählen Sie das Datum aus, und klicken Sie anschließend auf **OK**. Der Bericht für den vorherigen Monat wird angezeigt. Um zum Bericht für den aktuellen Monat zurückzukehren, klicken Sie auf **Abbrechen**.
+Sie können Berichte für den aktuellen Monat oder für ältere Monate anzeigen, ohne den Bericht erneut zu generieren. Wenn Sie den Bericht für einen vorherigen Monat öffnen möchten, klicken Sie auf **Anzeigen** und anschließend auf **Vorherige Berichte**. Eine Liste der vorherigen Monate, für die der Bericht generiert wurde, wird angezeigt. Erweitern Sie den Monat, für den Sie den Bericht anzeigen möchten, wählen Sie das Datum aus, und klicken Sie anschließend auf **OK**. Der Bericht für den vorherigen Monat wird angezeigt. Um zum Bericht für den aktuellen Monat zurückzukehren, klicken Sie auf **Abbrechen**.
 
 ## <a name="print-a-financial-report"></a>Drucken eines Finanzberichts
 Um einen Finanzbericht zu drucken, klicken Sie im Aktivitätsbereich auf **Drucken**. Führen Sie dann einen oder mehrere dieser Schritte aus, um die Druckoptionen festzulegen:
@@ -85,5 +88,7 @@ Um einen Finanzbericht zu exportieren, klicken Sie im Aktivitätsbereich auf **E
 --------
 
 [Finanzberichterstellung in Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+
+
 
 

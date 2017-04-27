@@ -1,6 +1,6 @@
 ---
-title: "Konfigurieren Sie globale Adressbücher"
-description: "In diesem Artikel wird beschrieben die Überlegungen und der getroffenen Entscheidungen, die während des Planungsvorgangs vornehmen müssen, bevor Sie das globale Adressbuch und zusätzliche Adressbücher in Microsoft Dynamics 365 für Arbeitsgänge einrichten und konfigurieren. Einige der Entscheidungen erfordern, dass Sie die Entscheidungen bestätigen, die für andere Bereiche des Produkts getroffen wurden, wie die Organisationshierarchie."
+title: Konfigurieren des globalen Adressbuchs
+description: "Dieser Artikel beschreibt die Überlegungen und die Entscheidungen, die Sie während des Planungsprozesses vornehmen müssen, bevor Sie das globale Adressbuch und alle zusätzlichen Adressbücher in Microsoft Dynamics 365 for Operations einrichten und konfigurieren. Einige der Entscheidungen erfordern, dass Sie die Entscheidungen bestätigen, die für andere Bereiche des Produkts getroffen wurden, wie die Organisationshierarchie."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-global-address-books"></a>Konfigurieren Sie globale Adressbücher
+# <a name="configure-global-address-books"></a>Konfigurieren des globalen Adressbuchs
 
-In diesem Artikel wird beschrieben die Überlegungen und der getroffenen Entscheidungen, die während des Planungsvorgangs vornehmen müssen, bevor Sie das globale Adressbuch und zusätzliche Adressbücher in Microsoft Dynamics 365 für Arbeitsgänge einrichten und konfigurieren. Einige der Entscheidungen erfordern, dass Sie die Entscheidungen bestätigen, die für andere Bereiche des Produkts getroffen wurden, wie die Organisationshierarchie.
+[!include[banner](../includes/banner.md)]
+
+
+Dieser Artikel beschreibt die Überlegungen und die Entscheidungen, die Sie während des Planungsprozesses vornehmen müssen, bevor Sie das globale Adressbuch und alle zusätzlichen Adressbücher in Microsoft Dynamics 365 for Operations einrichten und konfigurieren. Einige der Entscheidungen erfordern, dass Sie die Entscheidungen bestätigen, die für andere Bereiche des Produkts getroffen wurden, wie die Organisationshierarchie.
 
 <a name="global-address-book"></a>Globales Adressbuch
 -------------------
@@ -61,6 +64,8 @@ Nachdem Sie das globale Adressbuch erstellt haben, können Sie, wenn nötig, zus
 Adressbücher können jederzeit erstellt werden, und auch Sicherheitsparameter für die Adressbücher können jederzeit festgelegt werden. Sie müssen keine Sicherheitsrechte für ein Adressbuchfestlegen. Wenn Sie es aber nicht tun, können alle Arbeitskräfte in der Organisation alle Parteidatensätze im Adressbuch anzeigen. Sie können Sicherheitsrechte für Parteidatensätze über das Adressbuch festlegen. Sicherheitsrechte basieren auf Teams. Dieser Ansatz garantiert, dass Arbeitskräfte, die einem Team zugewiesen sind, das Zugriff auf ein Adressbuch hat, die Parteidatensätze in diesem Adressbuch anzeigen können. Sie müssen die Teams auswählen, die Zugriff auf jedes Adressbuch haben. Für jedes Adressbuch können Sicherheitsrechte festgelegt werden, die den Zugriff auf bestimmte Teams gestatten oder verweigern. Werden einem Team Rechte für ein Adressbuch gewährt, können alle Mitglieder dieses Teams die Datensätze im Adressbuch anzeigen. Wird einem Team kein Zugriff auf ein Adressbuch gewährt, kann die Mitglieder des Teams das Adressbuch oder dessen Inhalt nicht anzeigen. **Entscheidung:**
 
 -   Welches Team soll Zugriff auf jedes neue Adressbuch haben, das Sie erstellen?
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Produktionsauftragsstandards in der Fertigungssteuerung
+title: "Standardwerte zu Produktionsaufträgen in der Fertigungssteuerung"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-order-defaults-in-manufacturing-execution"></a>Produktionsauftragsstandards in der Fertigungssteuerung
+# <a name="production-order-defaults-in-manufacturing-execution"></a>Standardwerte zu Produktionsaufträgen in der Fertigungssteuerung
+
+[!include[banner](../includes/banner.md)]
 
 
 
-Sie sollten alle Einstellungen auf der Seite Produktionsauftragsstandards ** ** sorgfältig prüfen, bevor Arbeitskraftanfang Erfassungen für Produktions-Einzelvorgänge vorzunehmen. Wenn Ihr Unternehmen die Funktion für mehrere Standorte verwendet, kann es ratsam unterschiedliche Standards für Produktionsaufträge für jeden Standort ein. Die Auftragsstandards für die Integration mit der "Produktionssteuerung" werden auf den folgenden Registerkarten auf der Seite **Produktionsauftragsstandards** eingerichtet:
+
+Sie sollten alle Einstellungen im Formular **Produktionsauftragsstandards** sorgfältig prüfen, bevor Arbeitskräfte mit der Erfassung für Produktions-Einzelvorgänge beginnen. Wenn Ihr Unternehmen die Funktion für mehrere Standorte verwendet, kann es ratsam sein, für die einzelnen Standorte unterschiedliche Produktionsparameter einzurichten. Die Auftragsstandards für die Integration mit der "Produktionssteuerung" werden auf den folgenden Registerkarten auf der Seite **Produktionsauftragsstandards** eingerichtet:
 
 -   **Allgemein** – Allgemeine Auftragsstandards für Produktionseinzelvorgänge in der Fertigungssteuerung.
 -   **Start** – Auftragsstandards, die verwendet werden, wenn Produktionseinzelvorgänge oder Arbeitsgänge gestartet werden.
@@ -68,6 +71,8 @@ Materialverbrauch während des Prozesses "Fertigmeldung" für einen Produktionsa
 -   **Prinzip für automatischen Artikelverbrauch** – Wenn ein Produktionsauftrag als fertig gemeldet wird, werden Materialmengen gemäß dem Prinzip für automatischen Artikelverbrauch verbraucht, das auf den Produktions-Stücklistenpositionen festgelegt wird. Nur Materialpositionen, bei denen das Prinzip für automatischen Artikelverbrauch auf **Fertig stellen** festgelegt ist, werden verbraucht.
 -   **Immer** – Materialmengen, die im Verhältnis zur Menge stehen, die als fertig gemeldet wird, werden immer verbraucht.
 -   **Nie** – Materialmengen werden nie verbraucht.
+
+
 
 
 

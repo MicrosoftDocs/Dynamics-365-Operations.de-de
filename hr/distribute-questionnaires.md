@@ -1,6 +1,6 @@
 ---
 title: "Fragebögen verteilen und abschließen"
-description: "In diesem Thema wird erläutert, wie Sie die Fragebögen verteilen, die von Entwurf, sodass sie der Person oder die Personengruppe fest verfügbar sind, die sie ausführen."
+description: "In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Fragebögen verteilen und abschließen
 
-In diesem Thema wird erläutert, wie Sie die Fragebögen verteilen, die von Entwurf, sodass sie der Person oder die Personengruppe fest verfügbar sind, die sie ausführen. 
+In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen. 
 
 Es gibt mehrere Möglichkeiten, einen Fragebogen zu verteilen:
 
@@ -38,7 +38,7 @@ Es gibt mehrere Möglichkeiten, einen Fragebogen zu verteilen:
 -   Zeitplan erstellen. Der Fragebogen kann dann für mehrere Personen verfügbar sein.
 
 ## <a name="marking-a-questionnaire-as-active"></a>Markieren eines Fragebogens als aktiv
-Mit dem ** aktiv ** Feld auf Ja ** ** auf der Seite ** ** Fragebögen festlegen, starten Sie den Fragebogen zur Verfügung, sodass alle Mitarbeiter ausführen. Die Befragungsteilnehmer können den Fragebogen ausfüllen mehrmals. Diese Funktionalität ist hilfreich, wenn Sie ständige Rückmeldung für das ganze Jahr gesammelt werden sollen. So können Sie beispielsweise einen Fragebogen erstellten, über den die Mitarbeiter ein Feedback zum Mittagessen in der Cafeteria abgeben können.
+Setzen Sie das Feld **Aktiv** auf **Ja** auf der Seite **Fragebögen**. Sie geben den Fragebogen für alle Mitarbeiter zur Beantwortung frei. Die Befragungsteilnehmer können den Fragebogen mehrmals ausfüllen. Diese Funktionalität ist hilfreich, wenn ständige Rückmeldung für das ganze Jahr gesammelt werden sollen. So können Sie beispielsweise einen Fragebogen erstellten, über den die Mitarbeiter ein Feedback zum Mittagessen in der Cafeteria abgeben können.
 
 ## <a name="questionnaire-groups"></a>Fragebogengruppen
 Sie können Fragebogengruppen einrichten und die Befragten einbeziehen, für die ein Fragebogen verteilt werden soll. 
@@ -48,7 +48,7 @@ Sie können Fragebogengruppen von den folgenden Seiten erstellen:
 -   **Fragebogengruppen** – Nur Personen innerhalb einer Fragebogengruppe können einen ausgewählten Fragebogen ausfüllen. Wenn beispielsweise die gewünschte Zielgruppe "Auftragnehmer" ist, können Sie eine Fragebogengruppe erstellen, die für diese Teilnehmer spezifisch ist.
 -   **Fragebogengruppenmitglieder** – Mithilfe dieses Formulars können Sie Personen zu Fragebogengruppen hinzufügen.
 
-Um eine Fragebogengruppe einem Fragebogen darüber, welche Fragebögen ** ** Seite zuweisen, um Benutzerrechte ** **. Nachdem der Fragebogen gespeichert ist, z aktiv, können die Mitglieder der Fragebogengruppe den Fragebogen ausfüllen. Diese Funktion ist hilfreich, wenn Sie eines Fragebogen auf einer Auswählensgruppe von Personen testen möchten, bevor Sie diese in einer - Gruppe oder zurücksetzen, wenn Sie dem Ziel einen Fragebogen einer Zielgruppe sehr bestimmten soll.
+Um eine Fragebogengruppe einem Fragebogen zuzuweisen, klicken Sie auf der Seite **Fragebögen** auf **Benutzerrechte**. Nachdem der Fragebogen als aktiv gespeichert ist, können die Mitglieder der Fragebogengruppe den Fragebogen ausfüllen. Diese Funktion ist hilfreich, wenn Sie einen Fragebogen mit einer Auswählensgruppe von Personen testen möchten, bevor Sie diese in einer größeren Gruppe verteilen, oder wenn Sie den Fragebogen einer Zielgruppe zukommen lassen wollen.
 
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Geplante Beantwortungssitzung in einem Fragebogen
 Geplante Antwortsitzungen sind Fragebogen, die Sie entwickelt und für die Sie die Befragten ausgewählt haben. 
@@ -82,24 +82,24 @@ Sie können Planungstypen für einen Fragebogenzeitplan auf der Seite **Zeitplä
 
 Sie können Referenztypen verwenden, um Kriterien für die Auswahl von Befragungsteilnehmern einzugeben, wenn Sie einen Fragebogen terminieren. 
 
-Verwenden Sie die **Referenztypen**-Seite, um Referenztypen für einen Fragebogen einzurichten. Jeder Referenztyp für eine Tabelle in Microsoft Dynamics 365 für Arbeitsgänge. Wenn Sie Zeitpläne für Fragebögen erstellen, können Sie einzelne Datensätze in der Tabelle oder einen Datensatzbereich angeben, denen bzw. dem der Fragebogen zugeordnet wird. 
+Verwenden Sie die **Referenztypen**-Seite, um Referenztypen für einen Fragebogen einzurichten. Jeder Referenztyp entspricht einer Tabelle in Microsoft Dynamics 365 for Operations. Wenn Sie Zeitpläne für Fragebögen erstellen, können Sie einzelne Datensätze in der Tabelle oder einen Datensatzbereich angeben, denen bzw. dem der Fragebogen zugeordnet wird. 
 
 Wenn Sie beispielsweise die Tabelle Kurse auswählen, können Sie entscheiden, für welchen Kurs der Fragebogen verwendet werden soll. Wenn Sie einen Referenztyp für die Kurstabelle einrichten, sind einige Felder und Schaltflächen auf der Seite **Kurse** verfügbar.
 
 ### <a name="questionnaire-schedules"></a>Zeitpläne für Fragebögen
 
-Sie können Fragebogenzeitpläne verwenden, um mehrere geplante Antwortsitzungen für eine Benutzergruppe, auf Grundlage eines Referenztyps zu generieren. Dient zum Erstellen eines Zeitplans für die Fragebogenzeitpläne ** ** Seite. Wählen Sie den Planungstyp aus, um den Zeitplan zum Kategorisieren, und wählen Sie auch den Referenztyp auswählen, der verwendet werden soll, um das System für bestimmte Benutzer abgefragt werden. Wenn Sie z legen den Referenztyp auf die Kurse Tabelle, Sie einen bestimmten Kurs im Feld Referenz ** ** Feld auswählen können. 
+Sie können Fragebogenzeitpläne verwenden, um mehrere geplante Antwortsitzungen für eine Benutzergruppe auf Grundlage eines Referenztyps zu generieren. Dient zum Erstellen eines Zeitplans für die Seite **Fragebogenzeitpläne**. Wählen Sie den Planungstyp aus, um den Zeitplan zu Kategorisieren, und wählen Sie auch den Referenztyp aus, der verwendet werden soll, um das System für bestimmte Benutzer abzufragen. Wenn Sie zum Beispiel den Referenztyp auf die Kursetabelle festlegen, können Sie einen bestimmten Kurs im Feld **Referenz** auswählen. 
 
-Klicken Sie auf **Einstellungsdetails**, um den Fragebogen und andere Kriterien auszuwählen. Geben Sie beispielsweise den Namen des Kursleiters als Kriterium angezeigt, nachdem der Fragebogen eine Bewertung des Kursleiters ist. Nachdem Sie abschließend, den Einrichtungsdetails eingeben, generiert das System geplanten Antwortsitzungen für die Benutzer, die in der Abfrage enthalten sind. 
+Klicken Sie auf **Einstellungsdetails**, um den Fragebogen und andere Kriterien auszuwählen. Geben Sie beispielsweise den Namen des Kursleiters als Kriterium an, nachdem der Fragebogen eine Bewertung des Kursleiters ist. Nachdem Sie abgeschlossen und die Einrichtungsdetails eingeben haben, generiert das System geplante Antwortsitzungen für die Benutzer, die in der Abfrage enthalten sind. 
 
 Klicken Sie auf **Geplante Antwortsitzungen**, um die Antwortsitzungen für den Zeitplan anzuzeigen. Sie können dann manuell zusätzliche geplante Antwortsitzungen erstellen oder geplante Antwortsitzungen die nicht beantwortet wurden löschen. 
 
-** Auf Funktionen ** &gt; ** Start ** den Fragebogen Katalogs für die Benutzer in die zugehörigen geplanten Antwortsitzungen. Klicken Sie auf **Antworten**, um die abgeschlossenen Antworten für den Fragebogen anzuzeigen. Sie können die Fragebogenzeitplaneinstellungen, geplante Antwortsitzungen und Antworten in einen neuen Fragebogenzeitplan kopieren.
+Klicken Sie auf **Funktionen** &gt; **Starten**, um den Fragebogen für die Benutzer in den zugehörigen geplanten Antwortsitzungen verfügbar zu machen. Klicken Sie auf **Antworten**, um die abgeschlossenen Antworten für den Fragebogen anzuzeigen. Sie können die Fragebogenzeitplaneinstellungen, geplante Antwortsitzungen und Antworten in einen neuen Fragebogenzeitplan kopieren.
 
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Benachrichtigen von Befragungsteilnehmern zu den verfügbaren Fragebögen
 Wenn Sie einen Fragebogen verteilen, müssen Sie die Teilnehmer informieren, dass Fragebögen verfügbar sind. 
 
-** Hinweis: ** Die Befragungsteilnehmer müssen Benutzer in Microsoft Dynamics 365 sein, sodass Arbeitsgänge einen Fragebogen ausfüllen.
+**Hinweis:** Die Befragungsteilnehmer müssen Benutzer in Microsoft Dynamics 365 for Operations sein, um einen Fragebogen ausfüllen zu können.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Benachrichtigen von Befragungsteilnehmern zu einer geplanten Beantwortungssitzung
 
@@ -107,7 +107,7 @@ Wenn Sie eine geplante Antwortsitzung verwenden, müssen Sie die Person z. B. te
 
 ### <a name="notifying-respondents-about-a-scheduling"></a>Benachrichtigen von Befragungsteilnehmern zu einer Planung
 
-Verwenden Sie die Seite **Zeitpläne für Fragebögen**, um eine E-Mail-Nachricht an alle Teilnehmer, die dem Fragebogen zugeordnet sind, zu erstellen und zu senden. Geben Sie den Text der E-Mail auf der Registerkarte **E-Mail für Mitarbeiter-Self-Service** ein. Nachdem der Plan gestartet wurde, klicken Sie auf Funktionen ** ** &gt; ** E-Mail senden ** die E-Mail den Befragungsteilnehmern generieren und senden. Die Befragungsteilnehmer können zur Website dann in signieren und den Fragebogen ausfüllen. 
+Verwenden Sie die Seite **Zeitpläne für Fragebögen**, um eine E-Mail-Nachricht an alle Teilnehmer, die dem Fragebogen zugeordnet sind, zu erstellen und zu senden. Geben Sie den Text der E-Mail auf der Registerkarte **E-Mail für Mitarbeiter-Self-Service** ein. Nachdem der Plan gestartet wurde, klicken Sie auf **Funktionen** &gt; **E-Mail senden**, um die E-Mail an die Befragungsteilnehmern zu generieren und zu senden. Die Befragungsteilnehmer können sich nun auf der Website anmelden und den Fragebogen ausfüllen. 
 
 **Hinweis:** Bevor Sie die E-Mail-Funktionalität verwenden können, muss der IT-Administrator die E-Mail-Einstellungen auf der Seite **E-Mail-Parameter** eingeben.
 
@@ -119,7 +119,7 @@ Sie können einen geplanten Fragebogen beenden, nachdem alle Befragungsteilnehme
 ## <a name="completing-questionnaires"></a>Ausfüllen von Fragebögen
 Nachdem Sie einen Fragebogen entworfen und verteilt haben, kann der Fragebogen von ausgewählten Befragten ausgefüllt werden. Die verfügbaren Fragebögen können von zwei Orten aus aufgerufen werden:
 
--   Im Navigationsbereich auf Fragebögen ** ** &gt; ** Verteilt sich ** &gt; ** füllen Sie einen Fragebogen aus **.
+-   Im Navigationsbereich Klicken Sie auf **Fragebögen** &gt; **Verteilen** &gt; **Fragebogen ausfüllen**.
 -   Im "Mitarbeiter-Self-Service" klicken Sie auf **Auszufüllende Fragebögen**.
 
 Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmten Benutzern oder Benutzergruppen zur Verfügung gestellt werden.
@@ -131,6 +131,6 @@ Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmte
 
 [Verwenden von Fragebögen](questionnaires.md)
 
-[Anzeigen und Bewertung der Ergebnisse von Fragebögen evaluate-questionnaire-results.md] ()
+[Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
 
 

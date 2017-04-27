@@ -1,6 +1,6 @@
 ---
-title: Einrichten eines Kundentreueprogramm
-description: "In diesem Artikel wird beschrieben, wie die Komponenten für ein Treueprogramm eingerichtet werden. Ein Treueprogramm kann dazu beitragen, die Debitorenloyalität durch die Belohnung der Debitoren für das Kaufen von Produkte in den Einzelhandelsgeschäften zu erhöhen. In Microsoft Dynamics 365 für Arbeitsgänge, kann die einfachen oder komplexen Ein Treueprogramm einrichten, die in den juristischen Personen in beliebiger Einzelhandelskanal gelten."
+title: Einrichten eines Kundentreueprogramms
+description: "In diesem Artikel wird beschrieben, wie die Komponenten für ein Treueprogramm eingerichtet werden. Ein Treueprogramm kann dazu beitragen, die Debitorenloyalität durch die Belohnung der Debitoren für das Kaufen von Produkte in den Einzelhandelsgeschäften zu erhöhen. In Microsoft Dynamics 365 for Operations können Sie einfache oder komplexe Treueprogramme einrichten, die für alle juristischen Personen in einem beliebigen Einzelhandelskanal gelten."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-customer-loyalty-program"></a>Einrichten eines Kundentreueprogramm
+# <a name="set-up-a-customer-loyalty-program"></a>Einrichten eines Kundentreueprogramms
 
-In diesem Artikel wird beschrieben, wie die Komponenten für ein Treueprogramm eingerichtet werden. Ein Treueprogramm kann dazu beitragen, die Debitorenloyalität durch die Belohnung der Debitoren für das Kaufen von Produkte in den Einzelhandelsgeschäften zu erhöhen. In Microsoft Dynamics 365 für Arbeitsgänge, kann die einfachen oder komplexen Ein Treueprogramm einrichten, die in den juristischen Personen in beliebiger Einzelhandelskanal gelten.
+[!include[banner](includes/banner.md)]
+
+
+In diesem Artikel wird beschrieben, wie die Komponenten für ein Treueprogramm eingerichtet werden. Ein Treueprogramm kann dazu beitragen, die Debitorenloyalität durch die Belohnung der Debitoren für das Kaufen von Produkte in den Einzelhandelsgeschäften zu erhöhen. In Microsoft Dynamics 365 for Operations können Sie einfache oder komplexe Treueprogramme einrichten, die für alle juristischen Personen in einem beliebigen Einzelhandelskanal gelten.
 
 <a name="loyalty-features"></a>Treuefunktionen
 ----------------
@@ -37,11 +40,11 @@ Sie können Ihr Treueprogramm so einrichten, dass es die folgenden Optionen enth
 -   Richten Sie die mehrere Arten von Belohnungen ein, die Sie in den Treueprogrammen anbieten, und verfolgen Sie Teilnahme an den Treueprogrammen.
 -   Richten Sie Treueprogramme ein, das die verschiedenen Belohnungsanreize abbildet, die Sie anbieten. Sie können Treueprogrammstufen einrichten, um den Debitoren größere Anreize und Belohnungen anzubieten, die häufig einkaufen oder mehr Geld in Ihren Shops ausgeben.
 -   Definieren Sie Einnahmenregeln, um die Aktivitäten zu identifizieren, die ein Debitor ausführen muss, um Belohnungen zu erhalten. Sie können auch Tilgungsregeln festlegen, um zu identifizieren, wann und wie ein Debitor Belohnungen einlösen kann.
--   Geben Sie Treuekarten von einem beliebigen Einzelhandelskanal, der für den Treueprogrammen teilnimmt, und Linktreuekarten einer oder mehreren Treueprogrammen aus, aus, für die der Debitor teilnehmen kann angezeigt. Sie können eines Debitorendatensatzes für eine Treuekarte auch verknüpfen, sodass der Debitor Treuepunkte von mehreren Karten zusammenlegen und sie einlösen kann.
+-   Geben Sie Treuekarten von einem beliebigen Einzelhandelskanal, der für den Treueprogrammen teilnimmt, und Treuekarten einer oder mehreren Treueprogrammen aus, aus, für die der Debitor teilnehmen kann angezeigt. Sie können eines Debitorendatensatzes für eine Treuekarte auch verknüpfen, sodass der Debitor Treuepunkte von mehreren Karten zusammenlegen und sie einlösen kann.
 -   Passen Sie Treuekarten manuell an oder übertragen Sie den Treuebelohnungssaldo von einer Karte auf eine andere, um einem Debitor entgegenzukommen oder um ihn zu belohnen.
 
 ## <a name="setting-up-loyalty-programs"></a>Einrichten von Treueprogrammen
-Sie müssen mehrere Komponenten einrichten, um die Loyalitätsfunktion in Dynamics 365 für Einzelhandel - Arbeitsgänge zu aktivieren. Das folgende Diagramm zeigt die Treuekomponenten und wie diese zueinander in Beziehung stehen. ![Ablaufdiagramm für Treueeinrichtung](./media/loyaltyprocess.gif)
+Sie müssen mehrere Komponenten einrichten, um die Treuefunktion in Dynamics 365 for Operations - Retail zu aktivieren. Das folgende Diagramm zeigt die Treuekomponenten und wie diese zueinander in Beziehung stehen. ![Ablaufdiagramm für Treueeinrichtung](./media/loyaltyprocess.gif)
 
 ## <a name="loyalty-components"></a>Treuekomponenten
 In der folgenden Tabelle werden die einzelnen Komponenten beschrieben und wo sie in der Treueeinrichtung verwendet werden.
@@ -64,10 +67,12 @@ In der folgenden Tabelle werden die Prozesse beschreiben, die ausgeführt werden
 
 | Prozessname                         | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                    | Seitenname                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (Treueinformationen)           | Führen Sie dieses Verfahren aus, um die Loyalitätsdaten von Microsoft Dynamics 365 für Arbeitsgänge zu den Ladengeschäften zu senden. Es wird empfohlen, diesen Vorgang für eine regelmäßige Ausführung zu planen, damit Loyalitätsdaten an allen Filialen gesendet werden.                                                                                                                                                                                               | Vertriebsplan                |
+| 1050 (Treueinformationen)           | Führen Sie diesen Prozess aus, um die Treuedaten von Microsoft Dynamics 365 for Operations an die Einzelhandelsshops zu senden. Es wird empfohlen, diesen Vorgang für eine regelmäßige Ausführung zu planen, damit Loyalitätsdaten an allen Filialen gesendet werden.                                                                                                                                                                                               | Vertriebsplan                |
 | Treueschemas verarbeiten              | Führen Sie diesen Prozess aus, um Treueschemas den Einzelhandelskanälen zuzuordnen, denen das Treueschema zugewiesen ist. Dieser Vorgang kann so geplant werden, dass er als Stapelverarbeitungsvorgang ausgeführt wird. Sie müssen diesen Prozess ausführen, wenn Sie die Loyalitätskonfigurationsdaten (z. B. Treueschemas, Treueprogramme oder Treuebelohnungspunkte) ändern.                                                                                               | Treueschemas verarbeiten              |
-| Offlinetreuebuchungen verarbeiten | Führen Sie diesen Prozess aus, um Treuekarten zu aktualisieren, damit sie Transaktionen einbeziehen, die offline verarbeitet wurden. Dieser Prozess gilt nur, wenn das ** Sie erwerben Offlinewebsites ** Kontrollkästchen auf der gemeinsam genutzte ** Einzelhandel Parameter ** Seite aktiviert, sodass Belohnungen Offlinewebsites erworben werden können.                                                                                                                                               | Offlinetreuebuchungen verarbeiten |
+| Offlinetreuebuchungen verarbeiten | Führen Sie diesen Prozess aus, um Treuekarten zu aktualisieren, damit sie Transaktionen einbeziehen, die offline verarbeitet wurden. Dieser Prozess gilt nur, wenn das **Offline verdienen**-Kontrollkästchen auf der Seite **Freigegebene Einzelhandelsparameter** aktiviert ist, damit Belohnungen offline erworben werden können.                                                                                                                                               | Offlinetreuebuchungen verarbeiten |
 | Treuekartenebenen aktualisieren            | Führen Sie diesen Prozess aus, um die Einnahmenaktivität des Debitors mit den Stufenregeln für ein Treueprogramm zu vergleichen und um den Stufenstatus des Debitors zu aktualisieren. Dieser Prozess ist nur erforderlich, wenn Sie die Stufenregeln in den Treueprogrammen ändern und wenn Sie die aktualisierten Regeln rückwirkend auf die Treuekarten anwenden möchten, die bereits ausgestellt wurden. Dieser Prozess kann für einzelne Karten als Stapelverarbeitungsvorgang ausgeführt werden. | Treuekartenebenen aktualisieren            |
+
+
 
 
 

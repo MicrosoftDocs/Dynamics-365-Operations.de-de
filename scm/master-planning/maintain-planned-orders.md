@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="maintain-planned-orders"></a>Bestellvorschläge verwalten
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel bietet Informationen dazu, wie Bestellvorschläge verwaltet werden. Es wird beschrieben, wie Sie den Status von Bestellvorschlägen aktualisieren, umwandeln und Bestellvorschläge filtern können, die den gleichen Status wie ein ausgewählter Bestellvorschlag haben.
 
 Sie können Bestellvorschläge aus dem Arbeitsbereich **Produktprogrammplanung**, aus der Liste **Bestellvorschlag**, oder aus den Listen **Geplante Produktionsaufträge**, **Geplante Einkaufsbestellungen** und **Geplante Umlagerung** verwalten. Sie können das Feld **Status** verwenden, um Ihren Fortschritt zu verfolgen. Folgende Werte werden verwendet:
@@ -48,6 +51,8 @@ Nachdem ein Bestellvorschlag umgewandelt wurde, wird er in den Abschnitt "Auftr�
 <a name="see-also"></a>Siehe auch
 --------
 
-[Master plans](master-plans.md)
+[Produktprogrammpläne](master-plans.md)
+
+
 
 

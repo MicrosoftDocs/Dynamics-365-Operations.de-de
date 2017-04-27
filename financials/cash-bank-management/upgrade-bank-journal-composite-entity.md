@@ -1,5 +1,5 @@
 ---
-title: "Aktualisieren Sie die Bankerfassungs-Zusammensetzungsentität"
+title: "Aktualisiert die zusammengesetzte Bankerfassungs-Entität"
 description: "Gehen Sie folgendermaßen vor, um das zusätzliche Feld &quot;BankTransactionType&quot; der zusammengesetzten BankJournalEntity hinzuzufügen."
 author: twheeloc
 manager: AnnBe
@@ -24,20 +24,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a>Aktualisieren Sie die Bankerfassungs-Zusammensetzungsentität
+# <a name="update-the-bank-journal-composite-entity"></a>Aktualisiert die zusammengesetzte Bankerfassungs-Entität
+
+[!include[banner](../includes/banner.md)]
+
 
 Gehen Sie folgendermaßen vor, um das zusätzliche Feld "BankTransactionType" der zusammengesetzten BankJournalEntity hinzuzufügen.
 
 Gehen Sie folgendermaßen vor, um den BankTransactionType-Feld der zusammengesetzten BankJournalEntity hinzuzufügen.
 
 1.  Kompilieren und synchronisieren Sie die folgenden zusammengesetzten Bankerfassungsentitäten, Entitäten und Stagingtabellen:
-    -   " Zusammengesetzt (\\BankJournalEntity Entität
-    -   \\BankJournalHeaderEntity Entität
-    -   \\BankJournalLineEntity Entität
-    -   Tabelle BankJournalHeaderStaging \\
-    -   Tabelle BankJournalLineStaging \\
+    -   Zusammengesetzte Entität\\BankJournalEntity
+    -   Entität\\BankJournalHeaderEntity
+    -   Entität\\BankJournalLineEntity
+    -   Tabelle\\BankJournalHeaderStaging
+    -   Tabelle\\BankJournalLineStaging
 
-2.  Datenverwaltungs-\\Datenprojekte
+2.  Datenverwaltung\\Datenprojekte
     -   Macht den Typ **Banktransaktion ** im Layout **Quelldaten ** verfügbar.
         -   Quelldatenformat = XML-Element
         -   Entitätsname j= Bankerfassung
@@ -49,6 +52,8 @@ Gehen Sie folgendermaßen vor, um den BankTransactionType-Feld der zusammengeset
             -   Überprüfen Sie, dass der Banktransaktionstyp von der Quelle zum Bereitstellen zugeordnet ist.
 
 3.  Importieren Sie den neuen Auszug.
+
+
 
 
 

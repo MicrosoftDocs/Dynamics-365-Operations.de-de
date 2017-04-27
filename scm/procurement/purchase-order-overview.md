@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-order-overview"></a>Überblick über Bestellungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält allgemeine Informationen zu Bestellungen (POs) und Links zu Artikeln zu den verschiedenen Phasen die eine Bestellung durchläuft.
 
 Eine Bestellung (PO) ist ein Dokument, das eine Vereinbarung mit einem Lieferanten zum Kauf von Waren oder Dienstleistungen darstellt. Das Dokument unterstützt außerdem die Nachverfolgung von Produktzugängen, die für die Bestellung auftreten und die Buchung der Kreditorenrechnungen für die Bestellung.  
 
-Die **Bestellungen**-Seite enthält eine Übersicht über die verfügbaren Aufträge und ermöglicht das Ändern dieser Aufträge. Wenn Sie eine Bestellung öffnen, können die **Kopfzeile**-Ansicht auswählen. Diese enthält Informationen, die für jede Bestellung nur einmal angegebenen werden (z. B. Kreditordetails). Alternativ können Sie die **Positionen** anzeigen. Dort können Sie Auftragspositionen bearbeiten. Normalerweise Wechseln Sie zwischen diesen zwei Ansichten, um wie Sie PO ändern. Zuschläge sind nicht direkt auf der Seite ** ** Bestellungen aufgeführt, ohne dass jedoch werden auf Menüs im Auftragskopf und den Positionen zugegriffen.  
+Die **Bestellungen**-Seite enthält eine Übersicht über die verfügbaren Aufträge und ermöglicht das Ändern dieser Aufträge. Wenn Sie eine Bestellung öffnen, können die **Kopfzeile**-Ansicht auswählen. Diese enthält Informationen, die für jede Bestellung nur einmal angegebenen werden (z. B. Kreditordetails). Alternativ können Sie die **Positionen** anzeigen. Dort können Sie Auftragspositionen bearbeiten. Normalerweise wechseln Sie zwischen diesen zwei Ansichten, um wie Sie PO ändern. Zuschläge sind nicht direkt auf der Seite **Bestellungen** aufgeführt, ohne dass jedoch werden auf Menüs im Auftragskopf und den Positionen zugegriffen.  
 
 Es gibt viele Berichte, in denen Informationen zu POs, Produktzugänge und Vendorenrechnungen angezeigt werden. Diese Berichte befinden sich den Modulen **Beschaffung** und **Kreditorenkonten**.  
 
-Die Arbeitsbereiche **Bestellungsvorbereitung** und **Bestellungszugang und Weiterverfolgung** zeigen Listen von POs in verschiedenen Zuständen an. Sie stellen zudem eine Zusammenfassung der Aktionen bereit, die ausgeführt werden müssen. der **Bestellungsvorbereitung**-Arbeitsbereich konzentriert sich auf die PO-Erstellung und -Überprüfung, die Verarbeitung der Bestellung während der Genehmigung und die Bestätigung durch den Kreditor. ** Der Bestellungseingang und -Nachverfolgung ** Arbeitsbereich von ist auf dem Verarbeiten des Zugangs von Waren oder Services gegen PO konzentriert. Er umfasst Listen ein, der Einblick in Belege geben, die basierend sind oder bald für die Lieferung vom Lieferanten fällig sind. Diese Arbeitsbereiche werden nicht verwendet, um zugehörige Zugangsaktivitäten für den Lagerort ausführen. Diese Aktivitäten erfolgen über Seiten in den Modulen **Bestandsverwaltung** und **Lagerortverwaltung**. Die Verarbeitung von Kreditorrechnungen sollte über den **Kreditorenrechnungseingabe**-Arbeitsbereich erfolgen. Zahlung sollten über den **Kreditorenzahlungen**-Arbeitsbereich durchgeführt werden.  
+Die Arbeitsbereiche **Bestellungsvorbereitung** und **Bestellungszugang und Weiterverfolgung** zeigen Listen von POs in verschiedenen Zuständen an. Sie stellen zudem eine Zusammenfassung der Aktionen bereit, die ausgeführt werden müssen. der **Bestellungsvorbereitung**-Arbeitsbereich konzentriert sich auf die PO-Erstellung und -Überprüfung, die Verarbeitung der Bestellung während der Genehmigung und die Bestätigung durch den Kreditor. Der **Bestellungseingang und -Nachverfolgung** Arbeitsbereich von ist auf dem Verarbeiten des Zugangs von Waren oder Services gegen PO konzentriert. Er umfasst Listen ein, der Einblick in Belege geben, die basierend sind oder bald für die Lieferung vom Lieferanten fällig sind. Diese Arbeitsbereiche werden nicht verwendet, um zugehörige Zugangsaktivitäten für den Lagerort ausführen. Diese Aktivitäten erfolgen über Seiten in den Modulen **Bestandsverwaltung** und **Lagerortverwaltung**. Die Verarbeitung von Kreditorrechnungen sollte über den **Kreditorenrechnungseingabe**-Arbeitsbereich erfolgen. Zahlung sollten über den **Kreditorenzahlungen**-Arbeitsbereich durchgeführt werden.  
 
 Der folgenden Artikel bieten einen Überblick über die verschiedenen Phasen, die eine Bestellung durchläuft:
 
@@ -45,7 +48,7 @@ Der folgenden Artikel bieten einen Überblick über die verschiedenen Phasen, di
 -   [Überblick der Kreditorenrechnungen](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Typ der Bestellungen
-Es gibt drei Typen PO. Wenn Sie eine Bestellung erstellen, muss der Typ für angegeben. Sie können auf der **Beschaffungsparameter**-Seite einen Standardauftragstyp für neue Aufträge einrichten.
+Es gibt drei Typen von Bestellungen: Wenn Sie eine Bestellung erstellen, muss der Typ für angegeben. Sie können auf der **Beschaffungsparameter**-Seite einen Standardauftragstyp für neue Aufträge einrichten.
 
 | Bestellungstyp        | Beschreibung                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,12 +83,14 @@ Das **Genehmigungsstatus**-Feld wird verwendet, wenn eine Bestellung einen Über
 <a name="see-also"></a>Siehe auch
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Bestellungserstellung](purchase-order-creation.md)
 
 [Genehmigen und Bestätigen von Bestellungen](purchase-order-approval-confirmation.md)
 
 [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 
 [Überblick der Kreditorenrechnungen](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

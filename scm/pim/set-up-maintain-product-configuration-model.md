@@ -1,5 +1,5 @@
 ---
-title: Richten ein Produktkonfigurationsmodell
+title: Einrichten eines Produktkonfigurationsmodells
 description: Dieser Artikel beschreibt die Schritte zum Einrichten und Erstellen eines Produktkonfigurationsmodells.
 author: YuyuScheller
 manager: AnnBe
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-product-configuration-model"></a>Richten ein Produktkonfigurationsmodell
+# <a name="set-up-a-product-configuration-model"></a>Einrichten eines Produktkonfigurationsmodells
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel beschreibt die Schritte zum Einrichten und Erstellen eines Produktkonfigurationsmodells.
 
 | Aufgabe                                                        | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Erstellen Sie einen Produktmaster.                                    | Erstellen Sie einen Produktmaster aus der Liste **Produktmaster**. Geben Sie den Produktmaster den entsprechenden Unternehmen frei. Für einen Produktmaster, der als Versionen für ein Produktkonfigurationsmodell oder als Unterkomponente verwendet wird, einschränkungsbasierte Konfiguration ** ** muss mindestens der Konfigurationstechnologie und die Variantendimension aktiviert werden muss nur für die Produktdimensionsgruppe ausgewählt werden. |
+| Erstellen Sie einen Produktmaster.                                    | Erstellen Sie einen Produktmaster aus der Liste **Produktmaster**. Geben Sie den Produktmaster den entsprechenden Unternehmen frei. Für einen Produktmaster, der als Version für ein Produktkonfigurationsmodell oder als Unterkomponente verwendet wird, muss **Einschränkungsbasierte Konfiguration** ausgewählt werden, und die Konfigurationsdimension darf nur für die Produktdimensionsgruppe ausgewählt werden. |
 | Erstellen Sie Komponenten.                                          | Erstellen Sie Komponenten auf der Seite **Komponenten**. Komponenten sind die Bausteine eines Produktkonfigurationsmodells und können in mehreren Produktkonfigurationsmodellen wiederverwendet werden.                                                                                                                                                                                                                      |
 | Erstellen Sie Attributtypen.                                     | Erstellen Sie Attributtypen auf der Seite **Attributtypen**. Attributtypen geben den Satz von Datentypen für alle Attribute an, die in Produktkonfigurationsmodellen verwendet werden. Attribute von **Boolesch**, **Text** mit einer festen Liste und **Ganzzahl** mit Bereichstypen führen den Satz von Werten auf, die verfügbar sind, wenn Sie eine Produktvariante, basierend auf einem Produktkonfigurationsmodell, konfigurieren.       |
 | Erstellen Sie ein Produktkonfigurationsmodell.                       | Erstellen Sie ein Produktkonfigurationsmodell auf der Seite **Neues Produktkonfigurationsmodell**.                                                                                                                                                                                                                                                                                                              |
@@ -47,6 +50,8 @@ Dieser Artikel beschreibt die Schritte zum Einrichten und Erstellen eines Produk
 | Testen Sie ein Produktkonfigurationsmodell.                         | Testen Sie das Produktkonfigurationsmodell, entweder von der Seite **Details zum einschränkungsbasierten Produktkonfigurationsmodell** oder der Seite **Liste der Produktkonfigurationsmodelle** aus. Beim Testen der Produktkonfigurationsmodelle wird der Produktmodellkonfigurationsprozess simuliert, der während der Auftragsbehandlung abläuft.                                                                                                |
 | Erstellen Sie ein Produktkonfigurationsmodell-Vorlage.                | Erstellen Sie eine Produktkonfigurationsmodell-Vorlage auf der Seite **Konfigurationsvorlage**. Eine Konfigurationsvorlage enthält Werte für Attribute im Produktkonfigurationsmodell. Wählen Sie die Attributwerte auf der Seite **Position konfigurieren** aus. Sie können auswählen, eine Produktmodell-Konfigurationsvorlage während der Produktmodellkonfiguration zu laden.                                                   |
 | Konfigurieren Sie einen Artikel.                                          | Produktkonfigurationsmodelle können aus einem Auftrag, einem Verkaufsangebot, einer Bestellung oder einem Produktionsauftrag heraus konfiguriert werden.                                                                                                                                                                                                                                                                           |
+
+
 
 
 

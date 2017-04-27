@@ -1,6 +1,6 @@
 ---
-title: "Bestimmen Sie die Stücklistenversion"
-description: "Wenn während der Bedarfsauflösung für einen Artikel ein Standardauftragstyp Produktion ist, sucht das Planungsmodul eine gültige Stücklistenversion auf Grundlage des Standorts."
+title: "Stücklistenversion ermitteln"
+description: "Wenn während der Bedarfsauflösung für einen Artikel ein Standard-Bestellvorschlagtyp zur Produktion festgelegt ist, sucht das Planungsmodul eine gültige Stücklistenversion auf Grundlage des Standorts."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="determine-the-bom-version"></a>Bestimmen Sie die Stücklistenversion
+# <a name="determine-the-bom-version"></a>Stücklistenversion ermitteln
 
-Wenn während der Bedarfsauflösung für einen Artikel ein Standardauftragstyp Produktion ist, sucht das Planungsmodul eine gültige Stücklistenversion auf Grundlage des Standorts. 
+[!include[banner](../includes/banner.md)]
+
+
+Wenn während der Bedarfsauflösung für einen Artikel ein Standard-Bestellvorschlagtyp zur Produktion festgelegt ist, sucht das Planungsmodul eine gültige Stücklistenversion auf Grundlage des Standorts. 
 
 Der Standortgröße ist immer bekannt und in der Bedarfsbuchung angegeben. Der folgende Prozess wird verwendet, um die zu verwendende Stücklistenversion zu bestimmen:
 
@@ -38,6 +41,8 @@ Der Standortgröße ist immer bekannt und in der Bedarfsbuchung angegeben. Der f
 -   Falls es keine zu verwendende allgemeine Stücklistenversion gibt, wird die Bedarfsauflösung an diesem Punkt gestoppt.
 
 Eine gültige Stücklistenversion, egal ob standortspezifisch oder allgemein, muss die erforderlichen Kriterien für Datum und Menge erfüllen.
+
+
 
 
 

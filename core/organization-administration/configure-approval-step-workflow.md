@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren eines Genehmigungsschritts in einem Workflow
+title: Einen Genehmigungsschritt in einem Workflow genehmigen
 description: "Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurieren eines Genehmigungsschritts in einem Workflow
+# <a name="configure-an-approval-step-in-a-workflow"></a>Einen Genehmigungsschritt in einem Workflow genehmigen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.
 
@@ -124,10 +127,10 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem der Genehmigungsschritt zugewie
     </tr>
     <tr class="even">
     <td>Benutzer</td>
-    <td>Bestimmtes Microsoft Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbare Benutzer</strong> Liste enthält alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, um den Schritt zuzuweisen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, um den Schritt zuzuweisen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -229,10 +232,10 @@ Wenn ein Benutzer ein Dokument nicht innerhalb der vorgesehenen Zeit bearbeitet,
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmtes Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbare Benutzer</strong> Liste enthält alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, an die das Dokument eskaliert werden soll, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, an die das Dokument eskaliert werden soll, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -247,6 +250,8 @@ Wenn ein Benutzer ein Dokument nicht innerhalb der vorgesehenen Zeit bearbeitet,
 
 5.  Wiederholen Sie die Schritte 3 bis 4 für alle Benutzer, die dem Eskalationspfad hinzugefügt werden sollen. Sie können die Reihenfolge der Benutzer ändern.
 6.  Wenn die Benutzer im Eskalationspfad nicht innerhalb der vorgesehenen Zeit antworten, wird das Dokument automatisch bearbeitet. Um die vom System auszuführende Aktivität anzugeben, wählen Sie die Zeile **Aktivität** aus, klicken Sie dann auf die Registerkarte **Aktivität bei Beendigung** und wählen eine Aktivität aus.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Produktdimensionen
-description: "Es gibt vier - Produktdimensionen Farbe, Variante, Größe und Stil. Sie kombinieren Produktdimensionen in den Dimensionsgruppen und weisen diesen Dimensionsgruppen Produktmaster zu. Diese Kombinationen der Produktdimensionen bestimmen, wie Produktvarianten definiert sind."
+description: "Es gibt vier Produktdimensionen: Farbe, Konfiguration, Größe und Farbe. Sie kombinieren Produktdimensionen in den Dimensionsgruppen und weisen diesen Dimensionsgruppen Produktmaster zu. Diese Kombinationen der Produktdimensionen bestimmen, wie Produktvarianten definiert sind."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,21 +29,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-dimensions"></a>Produktdimensionen
 
-Es gibt vier - Produktdimensionen Farbe, Variante, Größe und Stil. Sie kombinieren Produktdimensionen in den Dimensionsgruppen und weisen diesen Dimensionsgruppen Produktmaster zu. Diese Kombinationen der Produktdimensionen bestimmen, wie Produktvarianten definiert sind.
+[!include[banner](../includes/banner.md)]
+
+
+Es gibt vier Produktdimensionen: Farbe, Konfiguration, Größe und Farbe. Sie kombinieren Produktdimensionen in den Dimensionsgruppen und weisen diesen Dimensionsgruppen Produktmaster zu. Diese Kombinationen der Produktdimensionen bestimmen, wie Produktvarianten definiert sind.
 
 Produktdimensionen sind Merkmale, die dazu dienen, eine Produktvariante zu identifizieren. Sie können Kombinationen der Produktdimensionen verwenden, um Produktvarianten zu definieren. Um eine Produktvariante zu erstellen, müssen Sie mindestens eine Produktdimension für einen Produktmaster definieren.
 Produktvarianten
 ----------------
 
-Produktvarianten werden auch als Artikel bezeichnet. Ein Artikel ist ein materielles Produkt, was ist nicht dasselbe wie eine Dienstleistung ist. Es ist auch möglich, einem Produktmaster mit den Dienstleistungstyp zu definieren. Wenn Sie den Typ "Dienstleistung" verwenden, können Sie Produktvarianten angeben, die Dienstleistungen umfassen. So können Sie beispielsweise einen Produktmaster für Beratungsarbeit und Produktvarianten für Arbeit angeben, die von leitenden Beratern und von Juniorberatern ausgeführt wird.
+Produktvarianten werden auch als Artikel bezeichnet. Ein Artikel ist ein materielles Produkt, was ist nicht dasselbe wie eine Dienstleistung ist. Es ist es jedoch auch möglich, einen Produktmaster mit dem Servicetyp zu definieren. Wenn Sie den Typ "Dienstleistung" verwenden, können Sie Produktvarianten angeben, die Dienstleistungen umfassen. So können Sie beispielsweise einen Produktmaster für Beratungsarbeit und Produktvarianten für Arbeit angeben, die von leitenden Beratern und von Juniorberatern ausgeführt wird.
 
 ## <a name="product-dimensions"></a>Produktdimensionen
-Die folgenden Produktdimensionen sind verfügbar: Konfiguration, Größe, Farbe und Stil. Produktvariante Eine kann auf der Produktdimensionswerte generiert werden.
+Es gibt die folgenden vier Produktdimensionen: Farbe, Konfiguration, Größe und Farbe. Eine Produktvarianten kann basieren auf Produktdimensionenwerten generiert werden.
 
-Produktdimensionswerte beispielsweise Größe, Farbe und Stil können auf ** ** ** Größe, Farbe und Stil ** ** ** Seiten erstellt werden, die von den folgenden Positionen aus zugegriffen werden kann: ** Produktinformationsverwaltung ** ** &gt; Einstellungen ** ** &gt; Dimensions-und Variante Gruppen ** ** &gt; Größen und Farben oder Stile **. Produktdimensionswerte für die Variantendimension werden üblicherweise entweder mithilfe des Variantenkonfigurators oder des dimensionsbasierten Konfigurators erstellt. Produktdimensionen können auch auf der Seite **Produktdimensionen** erstellt und verwaltet werden, auf die Sie von folgenden Orten aus zugreifen können:
--   Produktinformationsverwaltung auf ** ** ** &gt; Produkte ** ** &gt; Produktmaster **. Im Aktivitätsbereich ** **, auf ** Produktdimensionen **.
--   Produktinformationsverwaltung auf ** ** ** &gt; Produkte ** ** &gt; alle Produkte und Produktmaster **. Wählen Sie einen Produktmaster aus. Im Aktivitätsbereich ** **, auf ** Produktdimensionen **.
--   Produktinformationsverwaltung auf ** ** ** &gt; freigegebene Produkte **. Wählen Sie einen Produktmaster aus. Im Aktivitätsbereich ** **, auf ** Produkt **. Klicken Sie in der Gruppe **Produktmaster** auf **Produktdimensionen**.
+Produktdimensionswerte wie Größe, Farbe und Stil können auf den Seiten **Größe**, **Farbe** und **Stil **erstellt werden, auf die an folgenden Orten zugegriffen werden kann: **Produktinformationsverwaltung** &gt; **Einstellungen** &gt; **Dimensions- und Variantengruppen** &gt; **Größen/Farben/Stile**. Produktdimensionswerte für die Variantendimension werden üblicherweise entweder mithilfe des Variantenkonfigurators oder des dimensionsbasierten Konfigurators erstellt. Produktdimensionen können auch auf der Seite **Produktdimensionen** erstellt und verwaltet werden, auf die Sie von folgenden Orten aus zugreifen können:
+-   Klicken Sie auf **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Produktmaster.** Klicken Sie im **Aktivitätsbereich** auf **Produktdimensionen.**
+-   Klicken Sie auf **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Alle Produkte und Produktmaster.** Wählen Sie einen Produktmaster aus. Klicken Sie im **Aktivitätsbereich** auf **Produktdimensionen.**
+-   Klicken Sie auf **Produktinformationsverwaltung** &gt; **Freigegebene Produkte.** Wählen Sie einen Produktmaster aus. Klicken Sie im **Aktivitätsbereich** auf **Produkt**. Klicken Sie in der Gruppe **Produktmaster** auf **Produktdimensionen**.
 
 Die Anzahl von Varianten, die Sie für einen Artikel erstellen können, hängt von der Anzahl der möglichen Produktdimensionskombinationen ab.
 | **Tipp **                                                                                                                                              |
@@ -64,6 +67,8 @@ Ein Unternehmen verkauft Denim-Jeans. Für den Artikel, Jeans, werden die Produk
 | Braun | L    |
 | Braun | XL   |
 | Braun | XXL  |
+
+
 
 
 

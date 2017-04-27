@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Abschreibungsmethode "Lineare Nutzungsdauer"
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode "Lineare verbleibende Nutzungsdauer".
 
 Wenn Sie ein Abschreibungsprofil für Anlagen erstellen und auf der Seite Abschreibungsprofile im Feld Methode den Eintrag "Lineare Nutzungsdauer" auswählen, werden die Anlagen, denen dieses Abschreibungsprofil zugeordnet ist, auf Basis der gesamten Nutzungsdauer der jeweiligen Anlage abgeschrieben. Hierbei wird im Allgemeinen in jeder Abschreibungsperiode der gleiche Abschreibungsbetrag angewendet. 
@@ -98,9 +101,11 @@ Die Nutzungsdauer der Anschaffungsänderung ist die gleiche wie die der Anlage s
 | Jahr 3 | 14.000 / 5 = 2.800                        | 10.200 - 2.800 = 7.400                |
 | Jahr 4 | 14.000 / 5 = 2.800                        | 7.400 - 2.800 = 4.600                 |
 | Jahr 5 | 14.000 / 5 = 2.800                        | 4.600 - 2.800 = 1.800                 |
-| Jahr 6 | Restliches 800\*                           | 1.800 – 800 = 1.000                   |
+| Jahr 6 | Rest 800\*                           | 1.800 – 800 = 1.000                   |
 
-\*, da der Restbetrag geringer als der Abschreibungsbetrag ist, wird nur der Restbetrag abzüglich des Schrottwerts genommen wird.
+\*Da der Restbetrag geringer als der Abschreibungsbetrag ist, wird nur der Restbetrag abzüglich des Schrottwerts genommen.
+
+
 
 
 

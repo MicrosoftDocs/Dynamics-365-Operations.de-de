@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Ausreißer aus den historischen Daten ausgeschlossen werden, die verwendet werden, um eine Bedarfsplanung zu berechnen. Wenn Sie Ausreißer ausschließen, können Sie die Prognosegenauigkeit verbessern.
 
-Sie können Ausreißer ausschließen, um Planungsrichtigkeit zu verbessern. Diese Aufgabe ist optional. Hier ein Überblick über den Prozess:
+Wenn Sie Ausreißer ausschließen, können Sie die Prognosegenauigkeit verbessern. Diese Aufgabe ist optional. Hier ein Überblick über den Prozess:
 
-1.  ** Auf Produktprogrammplanung ** &gt; ** Einstellungen ** &gt; ** Bedarfsplanung ** &gt; ** Ausreißerentfernen ** die Ausreißerentfernen ** ** Seite öffnen, in der Sie eine Abfrage verwenden können, um die Transaktionen, um auszuschließen.
+1.  Klicken Sie auf **Produktprogrammplanung** &gt; **Einstellungen** &gt; **Bedarfsplanung** &gt; **Ausreißer entfernen**, um die Seite **Ausreißer entfernen** zu öffnen, in der Sie eine Abfrage verwenden können, um die Buchungen auswählen, die Sie ausschließen wollen.
 2.  Wählen Sie das Unternehmen, für das die Abfrage gilt, und geben Sie dann einen Namen und eine Beschreibung ein. Das **Abfragendatum** Feld wird automatisch auf das aktuelle Datum festgelegt.
 3.  Aktivieren Sie das Kontrollkästchen **Aktiv**, um die Transaktionen, die von der Abfrage gefunden wurden, von den historischen Daten auszuschließen. Diese Einstellung tritt in Kraft, wenn Sie eine Basisprognose erstellen.
 4.  Auf der Seite **Abfrage für Ausreißerentfernung** können Sie die Kriterien hinzufügen, entfernen und auswählen, welche festlegen, welche Transaktionen ausgeschlossen werden, wenn die Basisprognose berechnet wird. Beispielsweise wählen Sie einen bestimmten Artikel oder eine Auftragsbuchung aus, den bzw. die Sie ausschließen möchten.
@@ -43,8 +46,10 @@ Sie können Ausreißer ausschließen, um Planungsrichtigkeit zu verbessern. Dies
 <a name="see-also"></a>Siehe auch
 --------
 
-[Introduction to demand forecasting](introduction-demand-forecasting.md)
+[Einführung in die Bedarfsplanung](introduction-demand-forecasting.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Überwachen der Planungsgenauigkeit](monitor-forecast-accuracy.md)
+
+
 
 

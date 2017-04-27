@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="warehouse-work-policies"></a>Lagerortarbeitsrichtlinien
 
+[!include[banner](../includes/banner.md)]
+
+
 Eine neue Lagerort-Arbeitsrichtlinie wird in Microsoft Dynamics AX 7.0.1 eingeführt (Update von Mai 2016). Diese Arbeitsrichtlinie steuert, ob Lagerortarbeit für Lagerortprozesse in der Fertigung erstellt wird.
 
-Diese Arbeitsrichtlinie steuert, ob Lagerortarbeit für Lagerortprozesse in der Fertigung erstellt wird. Sie können die Arbeitsrichtlinie einrichten, indem Sie eine Kombination von **Arbeitsauftragstypen**, einen **Bestandslagerbestand** und ein **Produkt** verwenden. Beispielsweise wird L0101 Produkt, "Fertig gemeldet", um relativer Lagerplatz 001 verwendet. Das Endprodukt wird später in einem anderen Ausgaberelativer Produktionsauftrag angezeigt satznummer 001 verbraucht. In diesem Fall können Sie eine Arbeitsrichtlinie einrichten, um die anstehenden für Endartikel anzupassen zu verhindern sich setzen-weg von erstellt werden, wenn Sie L0101 Produkt zu melden, Fertigmeldung erstellt, um relativer Lagerplatz 001 verwendet. Die Arbeitsrichtlinie ist eine einzelne Entität, die durch die folgenden Informationen beschrieben werden kann:
+Diese Arbeitsrichtlinie steuert, ob Lagerortarbeit für Lagerortprozesse in der Fertigung erstellt wird. Sie können die Arbeitsrichtlinie einrichten, indem Sie eine Kombination von **Arbeitsauftragstypen**, einen **Bestandslagerbestand** und ein **Produkt** verwenden. Beispielsweise wird Produkt L0101 dem Ausgangslagerplatz 001 als fertig gemeldet. Das Endprodukt wird später in einem anderen Produktionsauftrag an Ausgangslagerplatz 001 verbraucht. In diesem Fall können Sie eine Arbeitsrichtlinie einrichten, um zu verhindern, dass fertige eingelagerte Waren erstellt werden, wenn Sie Produkt L0101 dem Ausgangslagerort 001 als fertig melden. Die Arbeitsrichtlinie ist eine einzelne Entität, die durch die folgenden Informationen beschrieben werden kann:
 
 -   **Arbeitsrichtlinienname **(der eindeutige Bezeichner der Arbeitsrichtlinie)
 -   **Arbeitsauftragstypen **und** Arbeitserstellungsmethode**
@@ -55,7 +58,7 @@ Sie können ein Produkt auswählen, für den die Arbeitsrichtlinie gilt. Sie kö
 ## <a name="example"></a>Beispiel
 Im folgenden Beispiel gibt es zwei Produktionsaufträge, PRD-001 und PRD-00*2*. Produktionsauftrag PRD-001 hat einen Arbeitsgang, der als **Montage** bezeichnet wird, wo Produkt SC1 an Lagerplatz O1 als fertig gestellt gemeldet ist. Produktionsauftrag PRD-002 hat einen Arbeitsgang, der als **Anstrich** bezeichnet wird und bei dem Produkt SC1 von Lagerplatz O1 verbraucht wird. Produktionsauftrag PRD-002 verbraucht auch Rohmaterial RM1 von Lagerplatz O1. RM1 wird am Lagerort BULK-001 gespeichert und wird an Lagerplatz O1 durch Lagerortarbeit für Rohmaterialentnahme entnommen. Die Entnahmearbeit wird generiert, wenn die Produktion PRD-002 freigegeben wird. 
 
-[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+[![Lagerortarbeitsrichtlinien](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
 
 Wenn Sie planen, eine Lagerort-Arbeitsrichtlinie dieses Szenarios zu konfigurieren, sollten Sie die folgenden Informationen berücksichtigen:
 
@@ -66,11 +69,11 @@ Hier ist ein Beispiel der Arbeitsrichtlinie, die Sie einrichten können, basiere
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-|**Work policy name**<br>                 |**Work order types**<br>                               |
-| Kein gesetztes der 01 `                    |- Fertigprodukt auf gesetzt<br>                           |
-|                                         |**Locations**<br>                                      |
+|**Name für Arbeitsrichtlinien**<br>                 |**Arbeitsauftragstypen**<br>                               |
+| Kein Einlagern von 01     `                    |- Einlagerung von Fertigerzeugnissen<br>                           |
+|                                         |**Lagerplätze**<br>                                      |
 |                                         |- O1   |                                               |
-|                                         |**Products** <br>                                      |
+|                                         |**Produkte** <br>                                      |
 |                                         |- SC1                                                  |
 
 Die folgenden Prozeduren bieten Schritt-für-Schritt-Anweisungen zum Einrichten der Lagerort-Arbeitsrichtlinie für dieses Szenario. Ein Beispielsetup, das zeigt, wie ein Produktionsauftrag an einen Lagerplatz als fertig gestellt gemeldet wird, der nicht kennzeichengesteuert ist, wird ebenfalls beschrieben.
@@ -244,5 +247,7 @@ SCHRITTE (25)
 </tr>
 </tbody>
 </table>
+
+
 
 

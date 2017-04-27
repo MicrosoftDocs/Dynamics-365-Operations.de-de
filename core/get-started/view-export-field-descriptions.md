@@ -36,9 +36,9 @@ Nicht alle Seiten haben Feldbeschreibungen. Wir möchten Beschreibungen nur für
 Wenn Sie Zugriff auf die Entwicklungsumgebung von Dynamics 365 for Operations haben, können Sie neue Feldbeschreibungen hinzufügen. Beispielsweise können Sie einer Feldbeschreibung unternehmensspezifische Informationen hinzufügen. Weitere Informationen finden Sie unter [Feldhilfe anpassen](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Siehe hierzu auch die Feldbeschreibungen auf der Benutzeroberfläche.
-Sie können Felder anzeigen, indem Sie über ein Feld fahren. Ist keine Beschreibung verfügbar, sehen Sie den Feldnamen beim Bewegen über das Feld. "Hinweis: In Version 7.0.0, können Felder nur auf der ** Feldbeschreibungen ** Seite angezeigt werden.) Die folgende Abbildung zeigt die Feldbeschreibungen an, die angezeigt wird, wenn Sie über dem ** sperren Sie Artikel für die Anzahl ** Feld zeigen. 
+Sie können Felder anzeigen, indem Sie über ein Feld fahren. Ist keine Beschreibung verfügbar, sehen Sie den Feldnamen beim Bewegen über das Feld. (Hinweis: In Version 7.0.0 können Feldbeschreibungen nur auf der Seite **Feldbeschreibungen** angezeigt werden). Die folgende Abbildung zeigt die Feldbeschreibung, die angezeigt wird, wenn Sie mit dem Mauszeiger über das Feld **Artikel während der Inventur sperren** fahren. 
 
-![[] (beispielsweise einer Beschreibung. /media/field-description.png)]". /media/field-description.png)
+[![Beispiel einer Feldbeschreibung](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Verwenden Sie die Seite "Feldbeschreibung", um Feldhilfe anzuzeigen und zu exportieren.
 Die Seite **Feldbeschreibungen** ermöglicht es Ihnen, Feldbeschreibungen anzuzeigen und zu exportieren. Sie können die Beschreibungen finden, die für eine Seite jeweils verfügbar sind.
@@ -73,7 +73,7 @@ Es gibt mehrere Möglichkeiten, im Feld **Eine Seite auswählen** eine Seite zu 
     -   Wenn mehr als eine exakte Übereinstimmung vorliegt, werden keine Beschreibungen angezeigt. Öffnen Sie die Dropdownliste, und wählen Sie die gewünschte Seite.
     -   Wenn der Name, den Sie eingeben, Teil des Namens einer anderen Seite ist, werden die Beschreibung für Ihre Seite angezeigt. Wenn Sie aber die Liste öffnen, sehen Sie zusätzliche Seiten, die diesen Namen beinhalten.
 
-Beispielsweise werden keine Beschreibungen angezeigt, wenn Common ** Der Zählvorgang ** im **** auswählen **** Seite ein Feld eingeben. Wenn Sie die Dropdownliste öffnen, sehen Sie, dass es zwei Seiten mit der Bezeichnung **Inventur** gibt, sowie mehrere Seiten, die das Wort "Inventur" im Namen enthalten. Wenn Sie die Seite auswählen, die den AOT-Namen **InventJournalCount** hat, werden die Feldbeschreibungen für diese Seite angezeigt. Wenn Sie jedoch die Dropdownliste erneut öffnen, werden Sie sehen, dass die Liste jetzt alle Seiten enthält, die "InventJournalCount" als Teil ihres AOT-Seitennamens haben.
+Es werden beispielsweise keine Beschreibungen angezeigt, wenn Sie im Feld ****Eine Seite auswählen**** **Inventur** eingeben. Wenn Sie die Dropdownliste öffnen, sehen Sie, dass es zwei Seiten mit der Bezeichnung **Inventur** gibt, sowie mehrere Seiten, die das Wort "Inventur" im Namen enthalten. Wenn Sie die Seite auswählen, die den AOT-Namen **InventJournalCount** hat, werden die Feldbeschreibungen für diese Seite angezeigt. Wenn Sie jedoch die Dropdownliste erneut öffnen, werden Sie sehen, dass die Liste jetzt alle Seiten enthält, die "InventJournalCount" als Teil ihres AOT-Seitennamens haben.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 In den folgenden Abschnitten finden Sie Informationen, zur Behebung von Problem, die auftreten können, wenn Sie Feldbeschreibungen verwenden.

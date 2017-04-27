@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-contracts"></a>Projektverträge
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieses Thema beschreibt Beispiele für Projektverträge, die Sie für Projekte und Finanzierungsquellen erstellen können, und zeigt, wie Sie in Microsoft Dynamics 365 for Operations Verträge verwalten und Rechnungen für Projektdebitoren erstellen können.
 
 Der für einen Projektvertrag erstellte Projekttyp definiert die Methode, nach der das Projekt den Debitoren in Rechnung gestellt wird. Ein Projektvertrag und das zugehörige Projekt können geändert werden, der Projekttyp jedoch nicht. 
@@ -80,7 +83,7 @@ Die folgende Tabelle enthält Szenarien für die Verwaltung der Finanzierungszut
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Scenario</strong></td>
+<td><strong>Szenario</strong></td>
 <td><strong>Finanzierungsquelle </strong></td>
 <td><strong>Zuteilung in Prozent </strong></td>
 <td><strong>Zuweisungspriorität </strong></td>
@@ -192,7 +195,7 @@ In der folgenden Tabelle wird dieses Szenario detaillierter überprüft.
 <tbody>
 <tr class="odd">
 <td><strong>Fokus </strong></td>
-<td><strong>Details</strong></td>
+<td><strong>Detailinformationen </strong></td>
 </tr>
 <tr class="even">
 <td>Finanzierungsregeln</td>
@@ -220,7 +223,7 @@ In der folgenden Tabelle wird dieses Szenario detaillierter überprüft.
 </tr>
 <tr class="odd">
 <td>Buchung 2</td>
-<td><strong>Buchungsbetrag:</strong> 5.000,00<strong>Finanzen:</strong> Ist die Buchung gemäß allen drei Regeln bezahlt.<strong>Regel 1</strong>
+<td><strong>Buchungsbetrag:</strong> 5.000,00<strong>Finanzierung:</strong> Die Zahlung der Buchung gemäß allen drei <strong>Regeln</strong>
 <ul>
 <li>Finanzierungsquelle 2: 450,00</li>
 <li>Finanzierungsquelle 3: 450,00</li>
@@ -339,5 +342,7 @@ Beim Einrichten des Projektvertrags können Sie zustimmen, den Debitor monatlich
 -   Während des Projekts erstellen Sie am Ende jedes Kalendermonats eine Debitorenrechnung.
 
 Im ersten Monat wurden von den Beratern insgesamt 800 Stunden im Projekt erfasst. Die Kosten für das Büromaterial, die für das Projekt berechnet werden, betragen 2.000 Euro. Am Ende des Monats erstellen Sie eine Rechnung über 122.000, berechnet als 800 Stunden zu 150 pro Stunde plus 2.000 für Büromaterial.
+
+
 
 

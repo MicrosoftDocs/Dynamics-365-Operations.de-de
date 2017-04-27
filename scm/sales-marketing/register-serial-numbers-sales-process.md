@@ -1,5 +1,5 @@
 ---
-title: Registerseriennummern im Verkaufsvorgang
+title: Register-Seriennummeren im Verkaufsvorgang
 description: "Dieser Artikel erläutert, wie Sie Seriennummern auf Lieferscheinen oder Rechnungen während des Verkaufsprozesses erfassen können. Diese Funktion ist sinnvoll, wenn ein Unternehmen nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen möchte, aber keine Seriennummern von Zugang bis Abgang im Bestand verwalten muss."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="register-serial-numbers-in-the-sales-process"></a>Registerseriennummern im Verkaufsvorgang
+# <a name="register-serial-numbers-in-the-sales-process"></a>Register-Seriennummeren im Verkaufsvorgang
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel erläutert, wie Sie Seriennummern auf Lieferscheinen oder Rechnungen während des Verkaufsprozesses erfassen können. Diese Funktion ist sinnvoll, wenn ein Unternehmen nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen möchte, aber keine Seriennummern von Zugang bis Abgang im Bestand verwalten muss.
 
@@ -65,7 +68,7 @@ Ja, können Sie eine Abfrage auf der Lieferscheinerfassungsposition oder der Rec
 ## <a name="can-i-view-the-serialized-items-that-i-have-on-hand"></a>Kann ich die serialisierten Artikel anzeigen, die ich am Lager habe?
 Nein, Sie können die serialisierten Artikel nicht anzeigen, die für Sie verfügbar sind, da Seriennummern für Artikel nicht erfasst werden, bis die Artikel verkauft werden.
 
-## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kann ich Seriennummern für catchweight Artikel erfasst?
+## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kann ich Seriennummern für Artikelgewicht-Artikel erfassen?
 Nein, Sie können Seriennummern für Artikelgewichtsartikel während des Verkaufsprozesses nicht erfassen. Wenn darüber hinaus ein Produkt als Artikelgewichtsartikel eingerichtet ist, können Sie das Produkt keiner Rückverfolgungsangabengruppe zuweisen, die eingerichtet ist, um Seriennummern nur während des Verkaufsprozesses zu verwenden.
 Kann ich Seriennummern beim Einzelhandels-POS erfassen?
 ------------------------------------------------
@@ -76,6 +79,8 @@ Ja, die Einzelhandelsverkaufsstelle (POS) fordert den Benutzer dazu auf, eine Se
 Diese Funktionalität ist für alle Rollen verfügbar, die Verkaufslieferscheine und Verkaufsrechnungen verwalten können. Die folgenden Aufgaben ermöglichen Arbeitskräften, Seriennummern zu korrigieren und leere Einträge für Seriennummern zu erfassen, die nicht gelesen oder gescannt werden können:
 -   Korrekturen von Seriennummern verwalten
 -   Registrierung nicht lesbarer Seriennummern verwalten
+
+
 
 
 

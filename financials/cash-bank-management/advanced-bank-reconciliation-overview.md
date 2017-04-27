@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Überblick über die erweiterte Bankabstimmung
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird der Fluss für den erweiterten Bankabstimmungsprozess beschrieben. Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren, die aus Bankbuchungen automatisch abgestimmt werden können.
 
 Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren. Der importierte Bankauszug kann aus Banktransaktionen heraus automatisch abgestimmt werden. Hierbei gelten die Schritte des erweiterten Bankabstimmungsflusses.
@@ -38,13 +41,15 @@ Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren
     -   Die Funktionen können in jedes beliebige Format erweitert werden.
 
 2.  Richten Sie einen Nummernkreis ein, der für erweiterte Bankabstimmung verwendet wird, und definieren Sie die Abgleichsregeln für Bankabstimmung.
-    -   Eine Abstimmungsübereinstimmungsregel ist ein Satz Kriterien, die verwendet werden, um Bankauszugspositionen und Microsoft Dynamics 365 für Arbeitsgangsbankbuchungspositionen während des Abstimmungsvorgangs zu filtern. Abhängig von Ihrer Geschäftspraktik können Sie mehrere Übereinstimmungsregel einrichten, die Ihren Aussöhnungsprozess zu automatisieren und zu optimieren.
+    -   Eine Abgleichsregel für Bankabstimmung ist eine Gruppe von Kriterien, die verwendet wird, um Bankauszugspositionen und Microsoft Dynamics 365 for Operations Banktransaktionspositionen während des Abstimmungsvorgangs zu filtern. Abhängig von Ihrer Geschäftspraktik können Sie mehrere Übereinstimmungsregel einrichten, die Ihren Abstimmungsprozess automatisieren und optimieren.
 
-3.  Stimmen Sie Bankauszüge mit Dynamics 365 für Arbeitsgangsbankbuchungen ab.
+3.  Stimmen Sie Bankauszüge mit Microsoft Dynamics 365 for Operations Banktransaktionen ab.
     -   Führen Sie den automatischen Abgleich und die Erstellung von Abstimmungserfassungen aus.
-    -   Anzeigen von und Bankauszüge Dynamics 365 für Arbeitsgangsbankbuchungen nebeneinander an.
-    -   Buchen Sie automatisch Dynamics 365 für Arbeitsgangsbankbuchungen, wenn sie auf dem Bankauszug angezeigt werden, aber Sie werden nicht in Dynamics 365 für Arbeitsgänge.
+    -   Zeigen Sie Bankauszüge und Dynamics 365 for Operations Banktransaktionen parallel an.
+    -   Buchen Sie Dynamics 365 for Operations Banktransaktionen automatisch, wenn sie auf einem Bankauszug aber nicht in Dynamics 365 for Operations angezeigt werden.
     -   Generieren eines Abstimmungsauszugs
+
+
 
 
 

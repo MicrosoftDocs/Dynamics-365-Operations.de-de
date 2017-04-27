@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen über Verkaufslisten-Berichte der Europäischen Union (EU).
 
 <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
@@ -64,11 +67,11 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 <tbody>
 <tr class="odd">
 <td><strong>Einrichten:</strong> Juristische Person</td>
-<td>Die primäre Adresse der juristischen Person muss in einem EU-Mitgliedsstaat sein. Auf der <strong>Juristische Personen</strong> Seite ") auf <strong>Organisationsverwaltung</strong> &gt; <strong>Organisation</strong> &gt; <strong>Juristische Personen</strong>, wählen Sie die juristische Person aus. Erstellen Sie auf dem <strong>Adressen</strong>-Inforegister eine Adresse, wählen Sie ein Land/eine Region und andere Adressenkomponenten aus, und markieren Sie die Adresse als <strong>Primär</strong>. Geben Sie im <strong>Steuerregistrierung</strong>-Inforegister im Feld <strong>Steuernummer</strong> die Steuernummer für Ihr Unternehmen an.</td>
+<td>Die primäre Adresse der juristischen Person muss in einem EU-Mitgliedsstaat sein. Wählen Sie auf der Seite <strong>Juristische Personen</strong> (klicken Sie auf <strong>Organisationsverwaltung</strong> &gt; <strong>Organisationen</strong> &gt; <strong>Juristische Personen</strong>) und wählen Ihre juristische Person aus. Erstellen Sie auf dem <strong>Adressen</strong>-Inforegister eine Adresse, wählen Sie ein Land/eine Region und andere Adressenkomponenten aus, und markieren Sie die Adresse als <strong>Primär</strong>. Geben Sie im <strong>Steuerregistrierung</strong>-Inforegister im Feld <strong>Steuernummer</strong> die Steuernummer für Ihr Unternehmen an.</td>
 </tr>
 <tr class="even">
 <td><strong>Einrichten:</strong> Parameter für Umsatzsteuernummer</td>
-<td>Einrichten von Kennungsparameter steuerfreie auf der Seite " <strong>Länder-/Regionsparameter</strong> klicken <strong>Steuer</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>Länder-/Regionsparameter</strong> Sie auf). Für jede(s) Land/Region, in dem/der Sie Gegenparteien haben, erstellen Sie einen Datensatz auf der Seite und geben Sie die folgenden Informationen ein:
+<td>Richten Sie die Parameter für Umsatzsteuernummer auf der Seite <strong>Länder-/Regionsparameter</strong> ein (klicken Sie auf <strong>Steuer</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>Länder-/Regionsparameter</strong>). Für jede(s) Land/Region, in dem/der Sie Gegenparteien haben, erstellen Sie einen Datensatz auf der Seite und geben Sie die folgenden Informationen ein:
 <ul>
 <li><strong>Land/Region</strong> – Hier können Sie ein Land/eine Region auswählen, um es bzw. sie einer Umsatzsteuer-Identifikationsnummer zuzuordnen.</li>
 <li><strong>Mehrwertsteuer</strong> – Geben Sie die Umsatzsteuernummer (das heißt, das Umsatzsteuernummernpräfix) für das/die ausgewählte Land/Region ein.</li>
@@ -77,7 +80,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 </tr>
 <tr class="odd">
 <td><strong>Einrichten: </strong>USt-IdNr.</td>
-<td>Erstellen von Umsatzsteuer-ID-Nummern für die Gegenparteien auf der <strong>USt-IdNr.</strong> Seite " klicken <strong>Steuer</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>USt-IdNr.</strong> Sie auf). Erstellen Sie für jede Umsatzsteuernummer einen Datensatz auf der Seite, und geben Sie die folgenden Informationen an:
+<td>Erstellen Sie Umsatzsteuer-ID-Nummern für Ihre Gegenparteien auf der Seite <strong>USt-IdNr.</strong> (klicken Sie auf <strong>Steuer</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>USt-IdNr</strong>.). Erstellen Sie für jede Umsatzsteuernummer einen Datensatz auf der Seite, und geben Sie die folgenden Informationen an:
 <ul>
 <li><strong>Land/Region </strong>– Wählen Sie das Land/die Region der Steuerregistrierung der Gegenpartei aus.</li>
 <li><strong>Umsatzsteuernummer</strong> – Geben Sie die Umsatzsteuernummer der Gegenpartei ein.</li>
@@ -86,11 +89,11 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 </tr>
 <tr class="even">
 <td><strong>Einstellungen: </strong>Steuerregistrierung von Gegenparteien</td>
-<td>Einstellungssteuer-Erfassungsinformationen für die Gegenparteien entweder auf der Seite <strong>Alle Debitoren</strong> " auf, einen <strong>Vertrieb und Marketing</strong> &gt; <strong>Debitoren</strong> &gt; <strong>Alle Debitoren</strong> Debitorendatensatz und anschließend auf die <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong> Option aus) oder ( <strong>Kreditoren</strong> der Seite auf,und wählen <strong>Beschaffung</strong> &gt; <strong>Kreditoren</strong> &gt; <strong>Kreditoren</strong> einen Kreditorendatensatz und klicken Sie dann auf.) <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong> Wählen Sie im <strong>Rechnung und Lieferung</strong>-Inforegister im Feld <strong>Umsatzsteuernummer</strong> die USt-IdNr. aus.</td>
+<td>Richten Sie Steuerregistrierungsinformationen für Ihre Gegenparteien entweder auf der Seite <strong>Alle Debitoren</strong> (klicken Sie auf <strong>Vertrieb und Marketing </strong>&gt; <strong> Debitoren</strong> &gt; <strong>Alle Debitoren</strong>, wählen Sie einen Debitorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong>Ansicht wechseln</strong> &gt; <strong>Detailansicht)</strong> oder der Seite <strong>Kreditoren</strong> (klicken Sie auf <strong>Beschaffung</strong> &gt; <strong>Kreditoren</strong> &gt; <strong>Kreditoren,</strong> wählen Sie einen Kreditorendatensatz aus, und klicken Sie dann auf <strong>Optionen</strong> &gt; <strong> Ansicht wechseln</strong> &gt; <strong>Detailansicht</strong>) ein. Wählen Sie im <strong>Rechnung und Lieferung</strong>-Inforegister im Feld <strong>Umsatzsteuernummer</strong> die USt-IdNr. aus.</td>
 </tr>
 <tr class="odd">
 <td><strong>Einrichten: </strong>Mehrwertsteuer</td>
-<td>Hier können Sie die Mehrwertsteuercodes, die in den Bericht <strong>Zusammenfassende Meldung</strong> zur Seite <strong>Mehrwertsteuercodes</strong> " klicken <strong>Steuer</strong> &gt; <strong>Indirekte Steuern</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>Mehrwertsteuercodes</strong> Sie auf) einzubeziehen. Deaktivieren Sie im <strong>Berichtseinstellungen</strong>-Inforegister für jeden Mehrwertsteuercode, der in den Bericht einbezogen werden soll, das <strong>Ausgeschlossen </strong>-Kontrollkästchen. Mehrwertsteuerparameter Einrichten von für Artikel auf der Seite " <strong>Artikel-Mehrwertsteuergruppen</strong> klicken <strong>Steuer</strong> &gt; <strong>Indirekte Steuern</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>Artikel-Mehrwertsteuergruppen</strong> Sie auf). Wählen Sie für jede Artikel-Mehrwertsteuergruppe im Feld <strong>Berichtstyp</strong> einen Wert aus. Der Wert, den Sie auswählen, bestimmt die ESL-Betragsspalte, in der der Positionsbetrag enthalten ist.
+<td>Richten Sie die Steuercodes für die zusammenfassende Meldung auf der Seite <strong>EU Verkaufsliste</strong> auf der Seite <strong>Steuercodes</strong> (klicken Sie auf <strong>Steuer</strong> &gt; <strong>Indirekte Steuern</strong> &gt; <strong>Verkaufssteuer</strong> &gt; <strong>Verkaufssteuercodede</strong>). Deaktivieren Sie im <strong>Berichtseinstellungen</strong>-Inforegister für jeden Mehrwertsteuercode, der in den Bericht einbezogen werden soll, das <strong>Ausgeschlossen </strong>-Kontrollkästchen. Richten Sie die Mehrwertsteuerparameter für Artikel auf der <strong>Artikel-Mehrwertsteuergruppen</strong>-Seite ein (klicken Sie auf <strong>Steuer</strong> &gt; <strong>Indirekte Steuern</strong> &gt; <strong>Mehrwertsteuer</strong> &gt; <strong>Artikel-Mehrwertsteuergruppen</strong>). Wählen Sie für jede Artikel-Mehrwertsteuergruppe im Feld <strong>Berichtstyp</strong> einen Wert aus. Der Wert, den Sie auswählen, bestimmt die ESL-Betragsspalte, in der der Positionsbetrag enthalten ist.
 <ul>
 <li><strong>Leer</strong> – Der Positionsbetrag wird in die Spalte <strong>Nicht zugewiesener Wert</strong> eingeschlossen.</li>
 <li><strong>Artikel</strong> – Der Positionsbetrag wird in die Spalte <strong>Artikelwert</strong> einbezogen.</li>
@@ -104,7 +107,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 </tr>
 <tr class="odd">
 <td><strong>Einrichten: </strong>Allgemeine Parameter</td>
-<td>Einrichten von ESL-Berichterstellungsparameter auf der Seite " <strong>Außenhandelsparameter</strong> klicken <strong>Steuer</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Außenhandel</strong> &gt; <strong>Außenhandelsparameter</strong> Sie auf). Geben Sie die folgenden Parameter an:
+<td>Richten Sie die ESL-Berichtsparameter auf der Seite <strong>Außenhandelsparameter</strong> ein (klicken Sie auf <strong>Steuer</strong> &gt; <strong>Einrichten</strong>&gt; <strong>Außenhandel</strong> &gt; <strong>Außenhandelsparameter</strong>). Geben Sie die folgenden Parameter an:
 <ul>
 <li>Registerkarte <strong>Zusammenfassende Meldung</strong>:
 <ul>
@@ -147,7 +150,7 @@ Buchungen der folgenden Typen gelten als Innergemeinschaftshandelsbuchungen:
 -   Projektrechnungen
 -   Kreditorenrechnungen
 
-Eine Buchung gilt als eine Innergemeinschaftshandelsbuchung, wenn die Lieferadresse der Buchung in einem Mitgliedsstaat der EU ist. Für solche Länder/Regionen sollte ein Datensatz in der Registerkarte **Länder-/Regionsparameter** der Seite **Außenhandelsparameter** vorhanden sein, und der **Länder-/Regionsart**-Wert sollte auf **EU** festgelegt sein. Innergemeinschaftshandelsbuchungen werden im Feld **Listencode** markiert. Mit diesem Feld können Sie auch allgemeine Innergemeinschaftshandelsbuchungen von Dreieckshandelbuchungen trennen. Sie können Informationen zu Intragemeinschaftshandelsbuchungen ** in der EU-Umsatzliste ** Seite " auf Steuer **** ** Meldungen ** &gt; ** Außenhandel ** &gt; ** zusammenfassende &gt; Meldung) ** indem Sie die Übertragung ** ** Funktion sammeln verwenden. Mit dieser Funktion können Sie Buchungen mit Beträgen von verschiedenen Berichtstypen (d. h. Artikel oder Dienstleistungen) einschließen, gemäß der Artikel-Mehrwertsteuergruppen, die in Buchungspositionen angegeben werden. Sie können auch andere Filter anwenden, um die Buchungen zu definieren, die einbezogen werden sollen. Die **Übertragen**-Funktion erstellt einen Datensatz auf der **Zusammenfassende Meldung**-Seite für jede Innergemeinschaftshandelsbuchung, die einbezogen wird, und gibt eine Gegenparteikontonummer, ein Land/eine Region, eine Umsatzsteuernummer, eine Rechnungsnummer und ein Datum und die Gesamtbeträge von Positionen pro Berichtstyp an. Sie kopiert auch den **Listencode**-Wert aus der Buchung. Sie können den Listencode für eine Buchung auf der Seite **Zusammenfassende Meldung** manuell ändern. Die **Übertragen**-Funktion erstellt Datensätze, wobei der Wert **Berichtsstatus** auf **Enthalten** festgelegt wird. Sie können die Informationen prüfen, die auf der Seite **Zusammenfassende Meldung **erfasst werden, indem Sie die Funktion **Prüfen** verwenden.
+Eine Buchung gilt als eine Innergemeinschaftshandelsbuchung, wenn die Lieferadresse der Buchung in einem Mitgliedsstaat der EU ist. Für solche Länder/Regionen sollte ein Datensatz in der Registerkarte **Länder-/Regionsparameter** der Seite **Außenhandelsparameter** vorhanden sein, und der **Länder-/Regionsart**-Wert sollte auf **EU** festgelegt sein. Innergemeinschaftshandelsbuchungen werden im Feld **Listencode** markiert. Mit diesem Feld können Sie auch allgemeine Innergemeinschaftshandelsbuchungen von Dreieckshandelbuchungen trennen. Sie können Informationen über innergemeinschaftliche Handelsbuchungen auf der Seite **EU-Verkaufsliste** erfassen (klicken Sie auf **Steuer** &gt; **Erklärung** &gt; **Außenhandel** &gt; **EU Verkaufslistet**) mithilfe der Funktion **Übertragung**. Mit dieser Funktion können Sie Buchungen mit Beträgen von verschiedenen Berichtstypen (d. h. Artikel oder Dienstleistungen) einschließen, gemäß der Artikel-Mehrwertsteuergruppen, die in Buchungspositionen angegeben werden. Sie können auch andere Filter anwenden, um die Buchungen zu definieren, die einbezogen werden sollen. Die **Übertragen**-Funktion erstellt einen Datensatz auf der **Zusammenfassende Meldung**-Seite für jede Innergemeinschaftshandelsbuchung, die einbezogen wird, und gibt eine Gegenparteikontonummer, ein Land/eine Region, eine Umsatzsteuernummer, eine Rechnungsnummer und ein Datum und die Gesamtbeträge von Positionen pro Berichtstyp an. Sie kopiert auch den **Listencode**-Wert aus der Buchung. Sie können den Listencode für eine Buchung auf der Seite **Zusammenfassende Meldung** manuell ändern. Die **Übertragen**-Funktion erstellt Datensätze, wobei der Wert **Berichtsstatus** auf **Enthalten** festgelegt wird. Sie können die Informationen prüfen, die auf der Seite **Zusammenfassende Meldung **erfasst werden, indem Sie die Funktion **Prüfen** verwenden.
 
 ### <a name="generating-the-eu-sales-list-report"></a>Erstellen der zusammenfassenden Meldung
 
@@ -156,5 +159,7 @@ Sie können eine **Zusammenfassende Meldung** generieren, indem Sie die Funktion
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Schließen des Zeitraums der zusammenfassenden Meldung
 
 Wenn Sie den Berichterstellungsprozess für eine bestimmte Periode abgeschlossen haben (beispielsweise, wenn Steuerbehörden die **Zusammenfassende Meldung** angenommen haben), können Sie die ESL-Datensätze markieren, die im Bericht für die Periode enthalten sind, indem Sie den Wert **Berichtsstatus** auf **Geschlossen** festlegen. Um diesen Status festzulegen, verwenden Sie die **Als geschlossen markieren**-Funktion auf der Seite **Zusammenfassende Meldung**. Wenn Sie den Abschluss der Periode zurücksetzen, können Sie ESL-Datensätze markieren, indem Sie den Wert **Berichtsstatus** auf **Enthalten** festlegen. Diese Datensätze können erneut in einer **Zusammenfassenden Meldung** eingeschlossen werden. Um diesen Status festzulegen, verwenden Sie die **Als** **einbezogen markieren**-Funktion auf der Seite **Zusammenfassende Meldung**.
+
+
 
 

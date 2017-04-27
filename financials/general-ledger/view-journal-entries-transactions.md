@@ -46,12 +46,12 @@ Neben den Finanzberichten können Sie die folgenden Sachkontoberichte verwenden,
 
 -   **Dimensionsaufstellung** - Dieser Bericht zeigt Buchungen nach Tag und Konto und es gibt auch Optionen, um Transaktionen nach Dimension und Periode anzuzeigen.
 -   **Sachkontobuchungsliste** – Dieser Bericht zeigt Transaktionen in Transaktions-, Buchhaltungs- und Berichtswährungen für ein Konto an.
--   ** Druckterfassung ** – Dieser Bericht zeigt das Ergebnis eine gebuchte Erfassung an. Sie können den Bericht oder -Erfassungstyp nach der Erfassungsstapelnummer ausführen, oder zum Zuordnen zusätzlicher Felder hinzu.
+-   **Erfassung drucken** – Dieser Bericht zeigt das Ergebnis einer gebuchte Erfassung an. Sie können den Bericht auf Basis der Nummer der Stapelverarbeitungserfassung oder des Erfassungstyp ausführen oder zusätzliche Felder hinzufügen.
 -   **Gebuchte Posten nach Erfassung** – In diesem Bericht werden die Transaktionen, die in einer Erfassung gebucht wurden gruppiert nach Beleg angezeigt.
 -   **Sachkontopostenliste nach Datum** – Dieser Bericht zeigt alle Transaktionen nach Datum, zusammen mit der Erfassungsnummer, dem Beleg und dem Sachkonto an. Darin werden auch die Transaktionen in den Transaktions-, Buchhaltungs- und Berichtswährungen angezeigt.
 -   **Buchungsgrundlage** – Dieser Transaktionsbericht zeigt das Konto nach Efassuung und nach Transaktions-, Buchhaltungs- und Berichtswährung an. Es wird auch jede Position der Erfassung angezeigt, die als Ausgleich verwendet wurde.
 
 
-Weitere Informationen finden Sie Hauptbuchkontosalden []( general-ledger-account-balances.md), Buchhaltungsquellexplorer [] (\ \\ Buchhaltung-QuelleExplorer dem Kreditor und Finanzberichte) [] (financial-reporting-getting-started.md)
+Weitere Informationen finden Sie unter [Kontosalden für das Hauptbuch](general-ledger-account-balances.md), [Buchhaltungsquellen-Explorer](\financials\accounts-payable\accounting-source-explorer) und [Finanzberichterstellung](financial-reporting-getting-started.md)
 
 

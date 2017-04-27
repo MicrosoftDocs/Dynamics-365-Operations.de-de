@@ -1,6 +1,6 @@
 ---
-title: Kostenrechnungsstartseite
-description: "Dieses Thema enthält eine Liste der Hilfethemen und andere Ressourcen, die für Kostenrechnung verfügbar sind."
+title: "Startseite für die Kostenbuchhaltung"
+description: "Dieser Artikel enthält eine Liste der Hilfethemen und weiterer Ressourcen, die für die Kostenbuchhaltung verfügbar sind."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-accounting-home-page"></a>Kostenrechnungsstartseite
+# <a name="cost-accounting-home-page"></a>Startseite für die Kostenbuchhaltung
 
-Dieses Thema enthält eine Liste der Hilfethemen und andere Ressourcen, die für Kostenrechnung verfügbar sind.
+[!include[banner](../includes/banner.md)]
 
-Das Modul "Kostenrechnung" ermöglicht es Ihnen, die folgenden Aufgaben auszuführen:
 
--   Definieren Sie Kostenfaktordimensionen, importieren Sie Kostenfaktordimensionsmitglieder, und ordnen Sie Kostenfaktordimensionen zu.
--   Definieren von Kostenträgerdimensionen und importieren Sie Kostenträgerdimensionsmitglieder.
+Dieser Artikel enthält eine Liste der Hilfethemen und weiterer Ressourcen, die für die Kostenbuchhaltung verfügbar sind.
+
+Das Modul "Kostenbuchhaltung" ermöglicht es Ihnen, die folgenden Aufgaben auszuführen:
+
+-   Definieren Sie Kostenelementdimensionen und führen Sie Kostenelement-Dimensionsmitglieder zusammen.
+-   Definieren Sie Kostenobjektdimensionen und importieren Sie Kostenobjekt-Dimensionsmitglieder.
 -   Definieren oder Importieren von statistischen Dimensionen.
 -   Anbietervorlagen für statistische Maßnahmen erstellen.
 -   Kostenrechnungs-Sachkonten erstellen.
@@ -46,29 +49,31 @@ Das Modul "Kostenrechnung" ermöglicht es Ihnen, die folgenden Aufgaben auszufü
 
 ## <a name="get-started"></a>Erste Schritte
 
-Die praktischen Übungseinheiten für Kostenrechnung enthalten die grundlegenden Schritte, um Microsoft Dynamics 365 für Arbeitsgänge zu konfigurieren – Kostenrechnung, damit die Istkostenanalyse vorzunehmen. Sie wird auch eine Reihe von Verfahren vor, die im Auftrag abschließen können, denen sie aufgeführt sein.
+Die praktischen Übungseinheiten für Kostenbuchhaltung enthalten die grundlegenden Schritte, um Microsoft Dynamics 365 for Operations zu konfigurieren – Kostenbuchhaltung, damit die Istkostenanalyse erstellt werden kann. Sie stellt auch eine Reihe von Verfahren dar, die Sie in der Reihenfolge abschließen können, in denen sie  aufgeführt sein.
 
--   [Erste Schritte mit Kostenrechnung zu Adobe (https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)] "und erfordert ein Whitepaper CustomerSource-Konto)
+-   [Erste Schritte mit Kostenrechnung](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (Whitepaper, erfordert ein CustomerSource-Konto)
 
-Zum besseren Verständnis der Verwendungsmöglichkeiten von die Kosten verwendet werden kann, die Ihrer täglichen Arbeit müssen Sie berücksichtigen, Konzepten vertraut sein.
+Zum besseren Verständnis der Verwendungsmöglichkeiten der Kostenbuchhaltung bei Ihrer täglichen Arbeit müssen Sie mit diesen Konzepten vertraut sein.
 
--   [Key terms in Cost accounting](terms-cost-accounting.md)
--   [Kostenfaktoren und Kostenfaktordimensionen] (cost-elements.md)
--   [Map different cost element dimension members to a common set of cost element dimension members](map-cost-elements-dimension-members.md)
--   Erstellen Sie Kostenfaktoren [] (http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (Aufgabenleitfaden)
--   [Cost object dimensions](cost-objects.md)
--   Erstellen Sie Kostenträger [] (http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (Aufgabenleitfaden)
+-   [Wesentliche Begriffe in der Kostenrechnung](terms-cost-accounting.md)
+-   [Kostenfaktoren und Kostenfaktordimensionen](cost-elements.md)
+-   [Verschiedene Kostenelement-Dimensionsmitglieder einem gemeinsamen Satz von Kostenelement-Dimensionsmitgliedern zuweisen](map-cost-elements-dimension-members.md)
+-   [Erstellen von Kostenfaktoren](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (Aufgabenleitfaden)
+-   [Kostenobjektdimensionen](cost-objects.md)
+-   [Erstellen von Kostenfaktoren](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (Aufgabenleitfaden)
 
-## <a name="cost-control-mobile-workspace"></a>Kostenkontrollemobilearbeitsbereich
-Mit dem Arbeitsbereich mobilen der Kostensteuerung können Kostenstellenmanager die Kostenstellenleistung jederzeit und überall finden.
+## <a name="cost-control-mobile-workspace"></a>Mobiler Kostensteuerungs-Arbeitsbereich
+Mit dem mobilen Arbeitsbereich Kostensteuerung können Kostenstellenmanager die Kostenstellenleistung jederzeit und überall finden.
 
--   [Cost control mobile workspace](cost-controlling-mobile-workspace.md)
+-   [Mobiler Kostensteuerungs-Arbeitsbereich](cost-controlling-mobile-workspace.md)
 
-## <a name="cost-accounting-analysis-power-bi-content"></a>Kostenrechnungsanalyse Leistungsfähigkeit BIinhalt
-Der Kostenrechnungsanalyse Microsoft-Energie wird für BIinhalt Controller oder alle Kosten bestimmt, der für die Ausführung der Kostensteuerung eine Organisation verantwortlich ist. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten ein. Er verwendet Buchungsdaten aus der Kostenrechnung in Microsoft Dynamics 365 für Arbeitsgänge und stellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten filtern, um nach Kostenträger der Kostensteuerung Organisationseinheiten auszuführen, wenn die Organisation mehrere juristische Personen haben kann.
+## <a name="cost-accounting-analysis-power-bi-content"></a>Kostenrechnungsanalyse Power BI Inhalt
+Die Kostenrechnungsanalyse Microsoft Power BI Inhalt dient für die Kostencontroller oder alle jene, die für die Ausführung der Kostensteuerung für eine Organisation verantwortlich sind. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten. Er verwendet Buchungsdaten aus der Kostenrechnung in Microsoft Dynamics 365 for Operations und erstellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten nach Kostenträger filtern, um die Kostensteuerung der Organisationseinheiten vorzunehmen, selbst wenn die Organisation mehrere juristische Personen hat.
 
--   [Kostenrechnungsanalyse Leistungsfähigkeit BIinhalt /dynamics365/operations/dev-itpro/analytics/cost] " Buchhaltung - Analyse-InhaltPack )
--   [Sicherheit für den Kostenrechnungsanalyse Leistungsfähigkeit BIinhalt] (/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+-   [Kostenrechnungsanalyse Power BI Inhalt](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
+-   [Aufstellungssicherheit für Kostenrechnungsinhalt für Power BI Inhalt](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+
+
 
 
 

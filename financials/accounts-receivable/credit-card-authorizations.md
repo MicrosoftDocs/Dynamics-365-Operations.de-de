@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Einstellungen, Autorisierung und Erfassung von Kreditkarten
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält einen Überblick über die Kreditkartenautorisierung in Microsoft Dynamics AX. Er umfasst Informationen darüber, wie ein Zahlungsdienst eingerichtet, eine Kreditkarte einem Auftrag hinzugefügt und eine Autorisierung storniert wird.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Einrichten des Kreditkartenzahlungsdienstes
@@ -55,7 +58,7 @@ Sie können den Kartenprüfwert anfordern, der manchmal als Sicherheitscode der 
 
 ### <a name="address-verification"></a>Adressüberprüfung
 
-Adressüberprüfungsinformationen werden immer an den Zahlungsbereitsteller gesendet. Sie können festlegen, wie viele Informationen erforderlich sind, damit eine Buchung akzeptiert werden kann. Stellen Sie sicher, dass mit Ihrem um zu untersuchen, um zu bestimmen, ob er Informationen diese akzeptiert. Hier sind die Optionen für Adressüberprüfung:
+Adressüberprüfungsinformationen werden immer an den Zahlungsbereitsteller gesendet. Sie können entscheiden, wie viele Informationen zum Akzeptieren der Buchung erforderlich sind. Achten Sie darauf, mit Ihrem Anbieter zu überprüfen, ob er diese Informationen akzeptieren kann. Hier sind die Optionen für Adressüberprüfung:
 -   **Buchung immer akzeptieren** – Die Transaktion wird immer akzeptiert, unabhängig von den Ergebnissen der Adressüberprüfung.
 -   **Kontoinhaber** – Vergleich des Namens des Karteninhabers aus der Transaktion mit den Informationen des Kreditkartenunternehmens.
 -   **Rechnungsadresse** – Vergleich des Namens des Karteninhabers und der Rechnungsadresse aus der Transaktion mit den Informationen des Kreditkartenunternehmens.
@@ -68,10 +71,12 @@ Für jeden Kreditkartentyp, der unterstützt wird, können Sie die Detailebene f
 -   **Ebene 3** – Übertragen aller Informationen der "Ebene 2" sowie der Auftragspositionsinformationen.
 
 ## <a name="partial-payments"></a>Teilzahlungen
-Wenn Sie einen Teil eines Auftrags versenden, wird der Betrag der Teilbestellung erfasst, und die Autorisierung, die für den Betrag des gesamten Auftrags galt, wird geschlossen. Eine neue Autorisierung wird dann für den Restbetrag des Auftrags verwendet, die noch nicht geliefert wurde.
+Wenn Sie einen Teil eines Auftrags versenden, wird der Betrag der Teilbestellung erfasst, und die Autorisierung, die für den Betrag des gesamten Auftrags galt, wird geschlossen. Anschließend wird eine neue Autorisierung für den Restbetrag des Auftrags eingereicht, der nicht geliefert wurde.
 
 ## <a name="voiding-an-authorization"></a>Autorisierung stornieren 
 Um eine Kreditkartenautorisierung zu stornieren, können Sie die Zahlungsmethode zu einer anderen Methode ändern die keinen Typ von "Kreditkarte" hat.
+
+
 
 
 

@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="benefit-eligibility-policies"></a>Vorteilsberechtigungsrichtlinien
 
-Dieses Thema enthält Informationen zu Vorteilseignungspolitische Richtlinien, die Ihnen dabei helfen, festzulegen, wer für bestimmte Vorteile freigegeben ist.
+[!include[banner](includes/banner.md)]
+
+
+Dieses Themal enthält Informationen zu Vorteilseberechtigungspolicen, die Sie dabei unterstützen festzulegen, wer für bestimmte Vorteile berechtigt ist.
 
 Wenn Sie Vorteile erstellen, müssen Sie entscheiden, welche Vorteile für welche Mitarbeiter zur Verfügung stehen. Die folgende Tabelle zeigt Beispiele für Vorteile, die Sie vielleicht bestimmten Mitarbeitern zugänglich machen möchten.
 
@@ -38,7 +41,7 @@ Wenn Sie Vorteile erstellen, müssen Sie entscheiden, welche Vorteile für welch
 | Mobiltelefon     | Verkaufspersonal, Führungskräfte         |
 | Parkausweise   | Führungskräfte                      |
 
-Die folgenden Komponenten im eingerichteten Bedingungen werden verwendet, um Eignungspolitische Richtlinien zu erstellen:
+Die folgenden Komponenten werden verwendet, um Berechtigungsrichtlinien zu erstellen:
 
 -   Richtlinienregeltypen
 -   Vorteilsberechtigungsrichtlinien
@@ -51,5 +54,7 @@ Sie definieren den Umfang der Regel innerhalb der Richtlinie. Wenn Sie beispiels
 --------
 
 [Definieren und verwalten eines Vorteilprogramms](manage-benefit-program.md)
+
+
 
 

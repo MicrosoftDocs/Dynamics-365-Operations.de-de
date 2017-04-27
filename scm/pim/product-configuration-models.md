@@ -1,5 +1,5 @@
 ---
-title: "Produktkonfigurationsmodellüberblick"
+title: "Produktkonfigurationsmodelle – Überblick"
 description: "Dieser Artikel definiert Begriffe und Konzepte, die zu den Produktkonfigurationsmodellen relevant sind. Produktkonfigurationsmodelle lassen Sie eine generische Produktstruktur erstellen, die verwendet werden kann, wenn viele Produktvarianten für ein bestimmtes Produkt zu konfigurieren."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-configuration-models-overview"></a>Produktkonfigurationsmodellüberblick
+# <a name="product-configuration-models-overview"></a>Produktkonfigurationsmodelle – Überblick
 
 Dieser Artikel definiert Begriffe und Konzepte, die zu den Produktkonfigurationsmodellen relevant sind. Produktkonfigurationsmodelle lassen Sie eine generische Produktstruktur erstellen, die verwendet werden kann, wenn viele Produktvarianten für ein bestimmtes Produkt zu konfigurieren.
 
@@ -69,14 +69,14 @@ Sie können auch eine Bedingung für Attribute angeben. Wenn die Bedingung erfü
 <li><strong>Text</strong> mit oder ohne eine feste Liste</li>
 <li><strong>Aktiv</strong></li>
 </ul>
-Beim Attributtyp <strong>Boolesch</strong>, <strong>Ganzzahl</strong> mit einem Bereich oder <strong>Text</strong> mit einer festen Liste ist der Satz von Werten verfügbar, wenn ein Produktkonfigurationsmodell eingerichtet ist. <strong>Hinweis:</strong> Der Produktkonfigurationswandler Attributtypen werden nur die folgenden: <strong>Boolesch</strong>, <strong>Text</strong> mit einer festen Liste und <strong>Ganzzahl</strong> umfassen eine Reihe. Daher können nur diese Attributtypen in den Ausdruckseinschränkungen und Bedingungen verwendet werden.</td>
+Beim Attributtyp <strong>Boolesch</strong>, <strong>Ganzzahl</strong> mit einem Bereich oder <strong>Text</strong> mit einer festen Liste ist der Satz von Werten verfügbar, wenn ein Produktkonfigurationsmodell eingerichtet ist. <strong>Hinweis:</strong> Der Produktkonfigurations-Solver erkannt nur die folgenden Attributtypen: <strong>Boolesch</strong>, <strong>Text</strong> mit einer festen Liste und <strong>Ganzzahl</strong> mit einem Bereich. Daher können nur diese Attributtypen in den Ausdruckseinschränkungen und Bedingungen verwendet werden.</td>
 </tr>
 <tr class="even">
 <td>Einschränkungen</td>
 <td>Einschränkungen beschreiben die Einschränkungen der Produktmodellkonfiguration. Einschränkungen werden verwendet, um sicherzustellen, dass nur gültige Werte ausgewählt werden, wenn ein Produkt konfiguriert wird. Bei Einschränkungen kann es sich um Ausdruckseinschränkungen oder Tabelleneinschränkungen handeln:
 <ul>
 <li>Ausdruckseinschränkungen können nur für die Komponente verwendet werden, mit der sie verbunden sind. Die Ausdruckseinschränkungen für eine Komponente können jedoch auf Attribute der Unterkomponenten der Komponente verweisen. Der Produktkonfigurations-Solver wird verwendet, um die Einschränkungen aufzulösen, und Sie müssen die Solver-Syntax verwenden, wenn Sie die Einschränkungen schreiben. Weitere Informationen finden Sie im Wiki-Link zu Ausdruckseinschränkungen und Tabelleneinschränkungen.</li>
-<li>Tabelleneinschränkungen müssen definiert werden, damit sie auf eine Komponente in einem Produktkonfigurationsmodell angewendet werden können. Tabelleneinschränkungen können entweder systemdefiniert benutzerdefiniert oder sein. Eine benutzerdefinierte Tabelleneinschränkung ist eine Art Matrix, der verwendet werden kann, um den Satz der Kombinationen für die Attributwerte zu beschreiben, die von Attributtypen definiert werden. Wenn beispielsweise Lautsprecher produziert werden, kann die Matrix für eine benutzerdefinierte Tabelleneinschränkung Spalten für das Oberflächenmaterial und das Vordergerippe des Lautsprechers anzeigen.</li>
+<li>Tabelleneinschränkungen müssen definiert werden, damit sie auf eine Komponente in einem Produktkonfigurationsmodell angewendet werden können. Tabelleneinschränkungen können als benutzerdefinierte oder als systemdefinierte Einschränkung vorliegen. Eine benutzerdefinierte Tabelleneinschränkung ist eine Art Matrix, der verwendet werden kann, um den Satz der Kombinationen für die Attributwerte zu beschreiben, die von Attributtypen definiert werden. Wenn beispielsweise Lautsprecher produziert werden, kann die Matrix für eine benutzerdefinierte Tabelleneinschränkung Spalten für das Oberflächenmaterial und das Vordergerippe des Lautsprechers anzeigen.</li>
 </ul>
 <strong>Beispiel</strong> Lautsprecher sind in vier Oberflächendesigns verfügbar: Schwarz, Eiche, Rosenholz und Weiß. Die Lautsprecher können einen von drei vorderen Grills haben: Beispiel für schwarzen, Metall oder Weiß. Das Ende schwarze ist für alle Grills verfügbar, die jedoch anderen Ende werden bestimmten Grills beschränkt. Die folgende Tabelle enthält ein Beispiel der Informationen, die auf der Registerkarte auf <strong>Zulässige Kombinationen</strong> der Seite <strong>Tabelleneinschränkung bearbeiten</strong> angezeigt werden.
 <table>
@@ -117,11 +117,11 @@ Beim Attributtyp <strong>Boolesch</strong>, <strong>Ganzzahl</strong> mit einem 
 </tr>
 </tbody>
 </table>
-Eine systemdefinierte Tabelleneinschränkung stellt eine Zuordnung zwischen dem Attributtyp und einem Feld in Dynamics 365 für Arbeitsgangstabelle dar. Eine systemdefinierte Tabelleneinschränkung verknüpft dynamisch den Attributtyp dem Feld. Die Verknüpfung ermöglicht das Attribut in einem Produktkonfigurationsmodell, um die Daten des Feldes im Dynamics 365 für Arbeitsgangstabelle widerzuspiegeln.</td>
+Eine systemdefinierte Tabelleneinschränkung stellt eine Verknüpfung zwischen einem Attributtyp und einem Feld in einer Dynamics 365 for Operations-Tabelle dar. Eine systemdefinierte Tabelleneinschränkung verknüpft dynamisch das Attribut Typ mit dem Feld. Die Verknüpfung ermöglicht das Attribut in einem Produktkonfigurationsmodell, um die Daten des Feldes im Dynamics 365 for Operations-Tabelle widerzuspiegeln.</td>
 </tr>
 <tr class="odd">
 <td>Berechnungen</td>
-<td>Berechnungen geben eine Ergänzung zu den Einschränkungen dar. Sie können eine Berechnung, um arithmetische Operationen auf Attribute vom <strong>Dezimal</strong>-Typ und auszuführen <strong>Ganzzahl</strong> oder logische Operationen verwenden, der Attribute aus in <strong>Text</strong> eine feste Liste und Typen <strong>Boolesch</strong> umfassen. Eine Berechnung hat ein Zielattribut, das das Ergebnis des Berechnungsausdrucks innehat. Der Berechnungsausdruck wird mithilfe des Ausdruckseditors erstellt.</td>
+<td>Berechnungen geben eine Ergänzung zu den Einschränkungen dar. Sie können eine Berechnung nutzen, um arithmetische Operationen auf Attributen vom <strong>Dezimal</strong>-Typ und <strong>Ganzzahl</strong>, oder logische Operationen verwenden, die Attribute des Typs <strong>Text</strong> mit einer festen Liste und des Typs <strong>Boolesch</strong> umfassen. Eine Berechnung hat ein Zielattribut, das das Ergebnis des Berechnungsausdrucks innehat. Der Berechnungsausdruck wird mithilfe des Ausdruckseditors erstellt.</td>
 </tr>
 <tr class="even">
 <td>Unterkomponenten</td>

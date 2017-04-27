@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-statuses"></a>Bestandsstatus
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Sie den Bestandsstatus verwenden können, um Bestand zu kategorisieren und zu verfolgen.
 
 Sie können Bestandsstatus verwenden, um den Bestand in Kategorien einzuteilen. Sie können dann geeignete Aktionen initiieren, wie Wiederbeschaffung oder Aufräumarbeit. 
@@ -47,5 +50,7 @@ Für ausgehende Arbeit verwenden Sie Artikel, die den Bestandsstatus "verfügbar
 Nachdem Sie Bestandsstatus eingerichtet haben, können Sie den standardmäßigen Bestandsstatus für einen Standort, einen Artikel und einen Lagerort festlegen. Sie können auch einen Standardstatus für Verkauf, Umlagerung und Bestellungen festlegen. Beim Standardstatus für Aufträge und ausgehende Umlagerungsaufträge kann die Option **Sperrung von Lagerbestand** nicht auf **Ja** festgelegt sein. Der Bestandsstatus, der von den Standardeinstellungen auf einem Standort, Lagerort, Artikel, einer Bestellung, einem Umlagerungsauftrag oder einem Auftrag übernommen wird, kann mit dem mobilen Gerät oder auf der Position für Bestellung, Auftrag oder Umlagerungsauftrag geändert werden. 
 
 Um Disposition für Artikel mit einem verfügbaren Bestandsstatus zu planen, wählen Sie die Option **Disposition nach Dimensionen** für eine Lagerdimension auf der **Lagerdimensionsgruppen**-Seite aus. Wenn Sie den **Artikeldeckungs**-Assistenten öffnen, erscheinen Artikel mit einem verfügbaren Status auf der Seite **Status**. Um Deckungseinstellungen für diese Artikel zu erstellen, wählen Sie die Bestandsstatuskennung für die verfügbaren Bestandsstatus aus. Basierend auf den Deckungseinstellungen können Sie den Artikelbedarf berechnen und das Angebot und die Nachfrage der verfügbaren Artikeln während der Produktprogrammplanung planen. Sie können keine Artikeldeckungseinstellungen erstellen, die einen gesperrten Bestandsstatus aufweisen. Alternativ können Sie die Seite **Artikeldeckung** verwenden, um die Artikeldeckungsparameter zu erstellen oder zu ändern.
+
+
 
 

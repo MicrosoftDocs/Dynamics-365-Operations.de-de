@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-agreements"></a>Kaufverträge
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel gibt Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen.
 
 Ein Kaufvertrag ist ein Vertrag, der den Debitor verpflichtet, Produkte in einer bestimmten Menge oder einer bestimmten Menge über einen vorgegebenen Zeitraum, gegen die Gewährung von Sonderpreisen, Sonderrabatte und anderen speziellen Bedingungen, wie Zahlungs-und Lieferbedingungen, abzunehmen. Die Preise und Rabatte des Kaufvertrags überschreiben alle Preise und Rabatte, die in sämtlichen vorhandenen Handelsvereinbarungen angegeben sind.  
@@ -36,7 +39,7 @@ Die Gültigkeitsperiode der Kaufvertragsposition wird durch die Felder **Gültig
 
 Sie können einen Auftrag direkt von einem Kaufvertrag erstellen, indem Sie die Aktivität **Freigabeauftrag** verwenden. Alternativ können Sie einen gültigen Kaufvertrag auswählen, wenn Sie Aufträge entgegennehmen (mehr unter "Kaufverträge im Bestellungsprozess übernehmen" in diesem Artikel).  
 
-** Hinweis: ** In älteren Versionen, Kaufverträge als Aufteilung bezeichnet Aufträge.
+**Hinweis:** In früheren Versionen wurden Kaufverträge als Rahmenaufträge bezeichnet.
 
 ## <a name="commitment-types"></a>Zusagetypen
 Jede Position in einem Kaufvertrag drückt eine Zusage für den Verkauf eines Artikels aus. Im Allgemeinen gibt es zwei Kategorien von Zusagen:
@@ -98,16 +101,18 @@ Wenn Sie einen Auftrag gegen einen Kaufvertrag erstellt haben (freigegeben), kö
 | Menge                                                          | Wenn die von Ihnen angegebene Menge die Menge überschreitet, die in einer Kaufvertragsposition mit aktiviertem Kontrollkästchen **Maximum wird erzwungen** angegeben ist, wird ein Dialogfeld zum Speichern der geänderten Menge angezeigt: Klicken Sie auf **Ja**, um die Verknüpfung mit der Kaufvertragsposition zu entfernen und den Preis neu zu berechnen. Klicken Sie auf **Nein**, um die Verknüpfung mit der Kaufvertragsposition ohne erneute Berechnung des Preises zu entfernen.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Rückgabe eines Artikels, der aus einem Kaufvertrag bestellt wurde
-Wenn als ein Produkt, das in einem Kaufvertrag vorgenommen wurde, Microsoft Dynamics 365 für Arbeitsgänge die zugehörige Kaufvertragszusage suchen und automatisch aktualisieren können, die Änderung in Menge oder der Betrag im widerzuspiegeln. Wenn Sie eine Rücklieferung basierend auf dem Originalauftrag erstellen, die mit einem Kaufvertrag verknüpft ist, richten Sie eine Beziehung zwischen der Kaufvertragszusage, der Auftragsposition und der Rücklieferungsrechnung ein.  
+Wenn ein Kunde einen Produkt zurückgibt, das durch einen Kaufvertrag bestellt wurde, kann Microsoft Dynamics 365 for Operations die zugehörige Kaufvertragszusage suchen und automatisch aktualisieren, um die Änderung in der Menge oder im Betrag widerzuspiegeln. Wenn Sie eine Rücklieferung basierend auf dem Originalauftrag erstellen, die mit einem Kaufvertrag verknüpft ist, richten Sie eine Beziehung zwischen der Kaufvertragszusage, der Auftragsposition und der Rücklieferungsrechnung ein.  
 
 Wenn Sie die Menge der zurückgegebenen Artikel nicht aus der Kaufvertragszusage abgezogen werden soll, können Sie das **Verknüpfung entfernen**-Steuerelements auf der Seite **Rücklieferung** verwenden, um die Verknüpfung zwischen der Rücklieferung und dem Kaufvertragszusage zu entfernen. Wenn Sie den Link später neu einrichten müssen, klicken Sie auf **Verknüpfung erstellen**.  
 
 **Hinweis:** Eine Rücklieferung kann mit nur einem Kaufvertrag verknüpft werden. Wenn Ihre Debitoren mehr als ein Produkt retourniert, das von mehr als einem Kaufvertrag bestellt wurde, müssen Sie eine neue Rücklieferung für jedes Produkt erstellen und eine Verbindung zum entsprechenden Rahmenbestellung erstellen.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatische Suche nach Kaufverträgen
-In bestimmten Situationen, in dem Aufträge indirekt erstellt werden, z, wenn Sie eine Gutschrift oder Intercompany-Aufträge erstellt, können Sie steuern ob Microsoft Dynamics 365 für Suchvorgänge der Arbeitsgänge automatisch nach gültigen Kaufverträgen.
+In bestimmten Situationen, in den Aufträge indirekt erstellt werden (beispielsweise, wenn Sie eine Gutschrift oder Intercompany-Aufträge erstellen), können Sie steuern, ob Microsoft Dynamics 365 for Operations automatisch nach gültigen Kaufverträgen sucht.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Finanzdimensionen in Kaufverträgen
 Sie können Finanzdimensionen in Dokumentüberschriften oder einzelne Positionen eines Kaufvertrags kopieren. Sie können die Dimensionen bei einem Vereinbarungskopf oder -Vereinbarungsposition jederzeit ändern. In diesem Fall werden die Dimensionen automatisch auf den Freigabenkopf oder die Freigabenposition von Freigabeaufträgen kopiert.
+
+
 
 

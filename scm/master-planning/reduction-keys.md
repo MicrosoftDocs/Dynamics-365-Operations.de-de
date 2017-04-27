@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reduction-keys"></a>Planzahlenverrechnungsschlüssel
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
 
 <a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Beispiel 1: Prozent - Planzahlenverrechnungsschlüssel-Planungsverringerungsprinzip
@@ -58,7 +61,7 @@ Wird der Umsatzplanungslauf am 1. Januar ausgeführt, wird der Bedarf der Bedarf
 | April                | 750                       |
 | Mai - Dezember | 1.000                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Beispiel 2: Buchungsplanzahlenverrechnungsschlüssel-Planungsverringerungsprinzip
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Beispiel 2: Buchungen - Planzahlenverrechnungsschlüssel-Planungsverringerungsprinzip
 Dieses Beispiel verdeutlicht, wie tatsächliche Aufträge, die in den vom Planzahlenverrechnungsschlüssel definierten Perioden anfallen, den Bedarf der Bedarfsplanung verringern.
 
 -   Auf der **Produktprogrammpläne**-Seite im Feld **Reduktionsprinzip** wählen Sie **Buchungen - Planzahlenverrechnungsschlüssel** aus.
@@ -82,7 +85,7 @@ Unter Verwendung derselben Bedarfsplanung von 1000 Stück pro Monat werden die f
 | April                | 881                       |
 | Mai - Dezember | 1.000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Beispiel 3: Perioden-Planungsverringerungsprinzip dynamisches der Buchungen
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Beispiel 3: Buchungen - dynamische Periode Planungsverringerungsprinzip
 In den meisten Fällen werden Systeme so eingerichtet, das Buchungen Bedarfsplanung innerhalb bestimmter Prognoseperioden reduzieren (Wochen, Monate usw.). Die Perioden werden im Planzahlenverrechnungsschlüssel definiert. Jedoch können die Zeit zwischen zwei Bedarfsplanungspositionen auch eine Periode *implizieren*.
 
 1.  Erstellen Sie eine Bedarfsplanung für die folgenden Datumsangaben und Mengen.
@@ -129,6 +132,8 @@ Hier eine Zusammenfassung der **Buchungen - dynamische Periode**-Verringerung:
 <a name="see-also"></a>Siehe auch
 --------
 
-[Master plans](master-plans.md)
+[Produktprogrammpläne](master-plans.md)
+
+
 
 

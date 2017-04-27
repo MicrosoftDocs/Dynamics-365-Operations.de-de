@@ -1,6 +1,6 @@
 ---
-title: Dient zum Anzeigen und Designfinanzberichte
-description: "Dieser Artikel wird Übungen fest, fest, die Sie durch Anzeigen und Erstellenfinanzberichte für Microsoft Dynamics 365 für Arbeitsgänge erfolgen. Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Dynamics 365 für Arbeitsgänge und Klick-sobald Berichts-Designer, der Finanzberichte erstellen und bearbeiten können."
+title: Finanzberichte entwerfen und verwalten
+description: "Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Operations erfolgen. Die Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Dynamics 365 for Operations und einem Berichts-Designer, der Finanzberichte erstellt und Finanzberichte bearbeitet."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>Dient zum Anzeigen und Designfinanzberichte
+# <a name="view-and-design-financial-reports"></a>Finanzberichte entwerfen und verwalten
 
-Dieser Artikel wird Übungen fest, fest, die Sie durch Anzeigen und Erstellenfinanzberichte für Microsoft Dynamics 365 für Arbeitsgänge erfolgen. Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Dynamics 365 für Arbeitsgänge und Klick-sobald Berichts-Designer, der Finanzberichte erstellen und bearbeiten können.  
+[!include[banner](../includes/banner.md)]
+
+
+Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Operations erfolgen. Die Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Dynamics 365 for Operations und einem Berichts-Designer, der Finanzberichte erstellt und Finanzberichte bearbeitet.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Übung 1: Generieren und untersuchen Sie einen Standardfinanzbericht
 -----------------------------------------------------------
@@ -45,7 +48,7 @@ In dieser Übung generieren und untersuchen Sie einen vorhandenen Standardberich
 3.  Speichern Sie die Dimensionskonfiguration. Danach generieren wir einen Bericht und untersuchen die Daten im Bericht.
 4.  Wechseln Sie zu **Finanzberichte** unter **Abfragen und Berichte** im Hauptbuch.
 5.  Wählen Sie die Zeile für den Bericht namens **Hauptbuchdetail - Standard** aus.
-6.  Wählen Sie **Bearbeiten** aus. Hinweis: Sie werden aufgefordert, Klick-sobald herunterzuladen Berichts-Designer und anzumelden. Verwenden Sie, um Ihre Anmeldeinformationen anzumelden.
+6.  Wählen Sie **Bearbeiten** aus. Hinweis: Sie werden aufgefordert, den Ein-Klick-Berichts-Designer herunterzuladen und sich anzumelden. Verwenden Sie die Anmeldeinformationen, um sich anzumelden. Melden Sie sich mit Ihren Anmeldeinformationen an.
 7.  Ändern Sie das Basisjahr auf 2012, und wählen Sie **Generieren** aus. Wenn ein Bericht vom Berichts-Designer generiert wird, wird er in einer neuen Browserregisterkarte geöffnet. Sie können den Bericht entweder in der neuen Browserregisterkarte untersuchen, oder zu Ihrer ursprünglichen Browserregisterkarte wechseln und den Bericht dort öffnen, indem Sie ihn aus der Liste **Finanzberichte** auswählen.
 8.  Wählen Sie im geöffneten Bericht einen der Beträge zur Anzeige der Kontodetails für den Bericht aus.
 9.  Sobald die Kontodetails angezeigt werden, wählen Sie ein Konto mit Daten aus und rufen Sie die **Berichtbuchungs-Drillstufe** auf. Auf der Berichtsbuchungsstufe können Sie die Eigenschaften (Attribute) anzeigen, die im Entwurf dieses Berichts enthalten sind. Je nach Transaktion und Konto werden möglicherweise einige oder alle Attribute angezeigt.
@@ -55,7 +58,7 @@ In dieser Übung generieren und untersuchen Sie einen vorhandenen Standardberich
 13. Wählen Sie **Berichtsoptionen** aus.
 14. Wählen Sie **Dimensionsfilter hinzufügen** und **Unternehmenseinheit** aus.
 15. Geben Sie "001" in das Feld ein, und wählen Sie **OK** aus. Der Bericht zeigt nun nur die Daten für die 001 Unternehmenseinheit an. Dies ist eine personalisierte Ansicht des Berichts und nicht für Andere verfügbar.
-16. Schließen Sie den gefilterten Bericht. Finanzberichte können in jeder Währung angezeigt werden, die sich auf Dynamics 365 für Arbeitsgänge hinzugefügt wurde.
+16. Schließen Sie den gefilterten Bericht. Finanzberichte können in jeder Währung angezeigt werden, die Dynamics 365 for Operations hinzugefügt wurden.
 17. Wählen Sie **Währung** dann **EUR** aus. Der Berichts wird nun in Euro angezeigt. Alle Währungscodes oder Währungssymbole, die im Berichtsdesign enthalten sind, werden nun in der übernommenen Währung angezeigt. Wenn kein Währungssymbol für eine Währung definiert wird, wird das Währungssymbol nicht angezeigt.
 18. Schließen Sie den Bericht **Hauptbuchdetail**.
 19. Schließen Sie den **Berichts-Designer**.
@@ -66,7 +69,7 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden Zeile
 1.  Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
 2.  Wählen Sie die Zeile für den Bericht namens **Zusammenfassende Zwischenbilanz - Standard Spaltentypen** aus.
 3.  Wählen Sie **Bearbeiten** aus. **Zusammenfassende Zwischenbilanz - Standard** wird im Berichts-Designer geöffnet.
-4.  Wählen Sie **Datei** anschließend **Speichern unter** aus, und nennen Sie den Bericht "Ausführliche Zwischenbilanz mit Attributen". Hinweis: Im Konzessionssystem kann jederzeit (wird ein neuer Bericht im Berichts-Designer, die Finanzberichte erstellt, die Liste in Dynamics 365 für Arbeitsgänge aktualisiert wird.
+4.  Wählen Sie **Datei** anschließend **Speichern unter** aus, und nennen Sie den Bericht "Ausführliche Zwischenbilanz mit Attributen". Hinweis: Wenn ein neuer Bericht im Berichts-Designer erstellt wird, wird die Finanzberichtsliste in Dynamics 365 for Operations aktualisiert.
 5.  Wählen Sie aus der Berichtsdefinition heraus das Zeilendefinitionssymbol aus, um zu die **Zwischenbilanz - Standardzeilendefinition** zu öffnen.
 6.  Speichern Sie die Zeilendefinition als **Ausführliche Zwischenbilanz mit Attributen**
 7.  Klicken Sie mit dem Cursor in Zeile 50, wählen Sie **Bearbeiten** anschließend **Zeilen aus Dimensionen einfügen** aus. Mit "Zeilen aus Dimensionen einfügen" können Sie die Dimensionen in Ihrer Zeilendefinition auswählen. In dieser Übung werden wir die Zeilendefinition mithilfe des Hauptkontos aufbauen.
@@ -96,7 +99,7 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden Zeile
 25. Schließen Sie den Bericht **Ausführliche Zwischenbilanz mit Attributen **.
 26. Schließen Sie den **Berichts-Designer**.
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Übung 3: Erstellen eines mehrdimensionalen Bericht mithilfe einer Berichtsbaumstruktur
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Übung 3: Einen mehrdimensionalen Bericht mithilfe einer Berichtsbaumstruktur erstellen
 In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine Berichtsbaumstruktur erstellen und zu einer Berichtsdefinition hinzufügen, um eine Kostenstelle/Divisionseinkommensaufstellung zu erzeugen. Sobald die Aktualisierungen abgeschlossen sind, generieren Sie die Kostenstelle/Divisionseinkommensaufstellung und untersuchen den Bericht unter Verwendung der Berichtsbaumstruktur. Es beginnen mit der Finanzberichtsliste.
 
 1.  Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
@@ -138,7 +141,7 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine 
 1.  Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
 2.  Wählen Sie die Zeile für den Bericht namens **Bilanz und Einkommensaufstellung parallel - Standard** aus.
 3.  Wählen Sie **Bearbeiten** aus. **Bilanz und Einkommensaufstellung parallel - Standard** wird im Bericht-Designer geöffnet.
-4.  Wählen Sie ** Datei ** &gt; ** Speichern ** wie Name und der Bericht aus ** Bilanz und konsolidierte Gewinn- und Verlustrechnung ** nebeneinander.
+4.  Wählen Sie **Datei** &gt; **Speichern unter**  aus und benennen Sie den Bericht **Konsolidierte Bilanz und Einkommensaufstellung paralle**.
 5.  Ändern Sie das Basisjahr zu 2012.
 6.  Klicken Sie auf den Strukturtyp-Dropdownpfeil, und wählen Sie **Organisationshierarchien** aus.
 7.  Klicken Sie auf den Strukturtyp-Dropdownpfeil, und wählen Sie **Contoso Holdings** aus.
@@ -151,7 +154,7 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden eine 
 14. Schließen Sie **Konsolidierte Bilanz und Einkommensaufstellung parallel**.
 15. Schließen Sie den **Berichts-Designer**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Übung 5: Erstellen eines nebeneinander Abteilungsbericht
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Übung 5: Einen parallelen Abteilungsbericht erstellen
 In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine parallele Einkommensaufstellung der Abteilungen. Sie verwenden eine vorhandene Zeilendefinition, erstellen aber eine neue Berichtsdefinition und eine neue Spaltendefinition, die Dimensionsfilter verwenden. Es beginnen mit der Finanzberichtsliste.
 
 1.  Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
@@ -179,9 +182,10 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 18. **Speichern** Sie Ihre Änderungen und **generieren** Sie. Nachdem der Bericht fertig generiert und geöffnet wurde, können Sie den Bericht untersuchen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-Finanzberichterstellung [] (\ \ \ financial-reporting-getting-started.md dem Hauptbuch" 
-Ansichtsfinanzberichte []( \dem Hauptbuch \ 
-\ view-financial-reports.md) 
-Dynamics-Rechnungslegungs-Blog( http://blogs.msdn.com/b/dynamics_financial_reporting/)]
+[Finanzberichterstattung](\financials\general-ledger\financial-reporting-getting-started.md) 
+[Finanzbericht anzeigen](\financials\general-ledger\view-financial-reports.md) 
+[Dynamics Finanzbericht Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

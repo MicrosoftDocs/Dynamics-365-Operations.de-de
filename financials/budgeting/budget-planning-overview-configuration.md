@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-overview"></a>Budgetplanung (Überblick)
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen die dabei helfen, die Budgetplanung zu konfigurieren und Budgetplanungsprozesse einzurichten.
 
 <a name="overview-of-budget-planning"></a>Über blick zur Budgetplanung
@@ -34,7 +37,7 @@ Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen d
 
 Sie führen Budgetplanung durch, wenn Sie die Budgets vorbereiten, die von einer Organisation implementiert werden. Eine Organisation kann Budgetplanung konfigurieren und anschließend Budgetplanungsprozesse einrichten, um die Richtlinien, die Verfahren und Bedingungen ihrer Organisation für Budgetausarbeitung zu erfüllen. 
 
-Wenn Sie der Konzepte und die Terminologie kennen, die in Microsoft Dynamics 365 für Arbeitsgänge verwendet werden, erleichtert dies für Sie, Budgetplanung in Ihrer Organisation zu implementieren.
+Wenn Sie die Konzepte und die Terminologie verstehen, die in Microsoft Dynamics 365 for Operations verwendet werden, erleichtert dies die Budgetplanung in Ihrer Organisation.
 
 ### <a name="key-terms"></a>Schlüsselbegriffe
 
@@ -44,7 +47,7 @@ Wenn Sie der Konzepte und die Terminologie kennen, die in Microsoft Dynamics 365
 -   **Budgetplanungsphasen** - Budgetplanungsphasen definieren die Schritte, denen ein Budgetplan von Start zur endgültigen Zustimmung folgt. Budgetplanungsphasen werden in Budgetplanungsworkflows angeordnet.
 -   **Budgetplanungsworkflows** - Budgetplanungsworkflows bestehen aus Budgetplanungsphasen und legen diese fest. Budgetplanungsworkflows werden Budgetierungsworkflows zugeordnet. Budgetierungsworkflows sind die automatisierten und manuelle Prozesse, die Budgetpläne durch die Budgetplanungsphasen verschieben.
 
-![Budgetplanungsterminologie ([]. /media/budgetplanning-terms-1024x504.png)]". /media/budgetplanning-terms.png)
+[![Budgetplanungsterminologie](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="common-tasks"></a>Allgemeine Aufgaben
 
@@ -55,7 +58,7 @@ Die folgenden Aufgaben können mit Budgetplanung ausgeführt werden:
 -   Leiten Sie die Budgetpläne automatisch zusammen mit Arbeitsblättern, Begründungsdokumenten und weiteren Anlagen zur Prüfung und Genehmigung weiter.
 -   Konsolidieren Sie mehrere Budgetpläne von einer untergeordneten Ebene der Organisation in einen einzigen Haushaltsplan auf einer höheren Ebene der Organisation. Sie können auch einen einzelnen Budgetplan auf einer höheren Ebene der Organisation entwickeln und das Budget den untergeordneten Ebenen der Organisation zuordnen.
 
-Budgetplanung wird mit anderen Microsoft Dynamics 365 für Arbeitsgangsmodule integriert. Daher können Sie Informationen aus früheren Budgets, tatsächlichen Aufwendungen, Anlagen und der Personalverwaltung einbringen. Da die Budgetplanung ebenfalls in Microsoft Excel und Microsoft Word integriert ist, können Sie diese Programme verwenden, um mit den Budgetplanungsdaten zu arbeiten. So kann ein Budget-Manager Budgetanforderung einer Abteilung aus einem Budgetplanszenario in ein Excel-Arbeitsblatt exportieren. Die Daten können im Arbeitsblatt analysiert, aktualisiert und entworfen werden, und dann wieder in den Budgetplanpositionen veröffentlicht werden.
+Budgetplanung ist in anderen Microsoft Dynamics 365 for Operations-Modulen integriert. Daher können Sie Informationen aus früheren Budgets, tatsächlichen Aufwendungen, Anlagen und der Personalverwaltung einbringen. Da die Budgetplanung ebenfalls in Microsoft Excel und Microsoft Word integriert ist, können Sie diese Programme verwenden, um mit den Budgetplanungsdaten zu arbeiten. So kann ein Budget-Manager Budgetanforderung einer Abteilung aus einem Budgetplanszenario in ein Excel-Arbeitsblatt exportieren. Die Daten können im Arbeitsblatt analysiert, aktualisiert und entworfen werden, und dann wieder in den Budgetplanpositionen veröffentlicht werden.
 
 ## <a name="configuring-budget-planning"></a>Budgetplanung konfigurieren
 Die Seite **Budgetplanungskonfiguration** enthält die meisten Einstellungen, die Sie benötigen, um eine Budgetplanung einzurichten. In folgenden Abschnitte beschreiben wesentliche Faktoren, die Sie bei der Konfiguration der Budgetplanung berücksichtigen sollten. Nachdem die Konfiguration abgeschlossen ist, richten Sie Budgetplanungsprozesse ein.
@@ -64,11 +67,11 @@ Die Seite **Budgetplanungskonfiguration** enthält die meisten Einstellungen, di
 
 Ein optionaler jedoch empfohlener erster Schritt ist die Erstellung eines Schemas, das die Prozedur Ihrer Organisation für die Formulierung eines Budgets anzeigt. Sie können jede Methode verwenden, um dieses Schema zu erstellen. Die folgende Abbildung zeigt ein generisches Beispiel, in dem separate Budgetplanungsworkflows für verschiedene Ebenen der Organisation erstellt werden. Innerhalb jedes Workflows werden Phasen definiert, und bestimmte Szenarien, die die Budgetdaten enthalten, werden jeder Phase zugeordnet. Aufgaben werden durchgeführt, um die Daten von einer Phase zur nächsten zu verschieben. So können Beträge z. B. auf verschiedenen Konten, Genehmigungen oder anderen Überprüfungen zugewiesen oder zusammengefasst werden. In diesem Beispiel zeigt kursiver Text ein Szenario an, das innerhalb der Phase nicht bearbeitbar ist, oder historische in einer vorherigen Phase genehmigte Daten, die daher nicht geändert werden sollten. 
 
-[![Budget, das generisches Schema plant] ". /media/budgetplanninggenericschema-300x145.png)]". /media/budgetplanninggenericschema.png) 
+[![Beispiel eines Budgetplanungsschemas](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
-Im folgenden Beispiel werden die Unternehmenszentraleschätzungen die ersten Budgetbasisbeträge und sie auf die Verkaufsabteilungen. Die Verkaufsabteilungen schätzen dann ihre Planung und senden sie an die Zentralverwaltung zurück, wo der Budget-Manager die Planung zusammenfasst und reguliert. Schließlich sendet der Budget-Manager die angepassten Budgetbeträge zur Prüfung, endgültigen Regulierung und Genehmigung zum CFO. 
+Im folgenden Beispiel schätzt der Unternehmenshauptsitz die ersten Budgetbasisbeträge und verteilt diese auf die Verkaufsabteilungen. Die Verkaufsabteilungen schätzen dann ihre Planung und senden sie an die Zentralverwaltung zurück, wo der Budget-Manager die Planung zusammenfasst und reguliert. Schließlich sendet der Budget-Manager die angepassten Budgetbeträge zur Prüfung, endgültigen Regulierung und Genehmigung zum CFO. 
 
-![Budgetplanungsschemabeispiel ([]. /media/budgetplanningexampleschema-300x145.png)]". /media/budgetplanningexampleschema.png)
+[![Beispiel eines Budgetplanungsschemas](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ###  <a name="organization-hierarchy-for-budget-planning"></a>Organisationshierarchie für Budgetplanung
 
@@ -84,17 +87,17 @@ Budgetplanung kann einem von zwei Sicherheitsmodellen folgen, um Benutzerrechte 
 
 Budgetplanungsworkflows werden zusammen mit Budgetierungsworkflows verwendet, um die Erstellung und Entwicklung von Budgetplänen zu verwalten.
 
-Ein Budgetplanungsworkflow besteht aus einer geordneten Menge von Phasen, die ein Budgetplan durchläuft. Jeder Budgetplanungsworkflow wird einem Budgetierungsworkflow zugeordnet. Budgetierungsworkflows einer sind die Workflowtypen, die für Microsoft Dynamics 365 für Arbeitsgänge verwendet werden. Der Budgetierungsworkflow leitet können Sie den Budgetplan, zusammen mit Arbeitsblättern, Begründungen und Anlagen, automatisch durch die Organisation zur Prüfung und Genehmigung weiterleiten. 
+Ein Budgetplanungsworkflow besteht aus einer geordneten Menge von Phasen, die ein Budgetplan durchläuft. Jeder Budgetplanungsworkflow wird einem Budgetierungsworkflow zugeordnet. Budgetierungsworkflows sind einer der Workflowtypen, die in Microsoft Dynamics 365 for Operations verwendet werden. Der Budgetierungsworkflow leitet können Sie den Budgetplan, zusammen mit Arbeitsblättern, Begründungen und Anlagen, automatisch durch die Organisation zur Prüfung und Genehmigung weiterleiten. 
 
 Sie erstellen den Budgetplanungsworkflow im Abschnitt **Workflowphasen** auf der Seite **Budgetplanungskonfiguration**. Dort können Sie die Phasen und den Budgetierungsworkflow auswählen, der verwendet wird, und auch zusätzliche Einstellungen konfigurieren. 
 
 Eine bewährte Methode ist das Erstellen eines Budgetplanungsworkflows für jedes Ebene einer Budgetplanungshierarchie. Sie weisen dann einen Budgetierungsworkflow zu, der Elemente enthält, die den Phasen im Budgetplanungsworkflow entsprechen. Im Beispielschema früher im Artikel wird ein Budgetplanungsworkflow für die Verkaufsabteilung erstellt, und ein anderes für den Hauptsitz. Ein Budgetierungsworkflow verschiebt die Budgetpläne durch die Phasen. 
 
-Sie erstellen den Budgetierungsworkflow für die Budgetplanung auf der Seite **Budgetierungsworkflows**. Der Vorgang ähnelt dem Vorgang zum Erstellen anderer Workflow in Microsoft Dynamics 365 für Arbeitsgänge. Die folgende Abbildung zeigt das Beispiel eines Hauptsitzworkflows. 
+Sie erstellen den Budgetierungsworkflow für die Budgetplanung auf der Seite **Budgetierungsworkflows**. Der Vorgang ähnelt dem Vorgang zum Erstellen anderer Workflows in Microsoft Dynamics 365 for Operations. Die folgende Abbildung zeigt das Beispiel eines Hauptsitzworkflows. 
 
-[Budgetierungsworkflow ![Budgetplanung] ". /media/budgetingworkflowforbudgetplanning-300x300.png)]". /media/budgetingworkflowforbudgetplanning.png) 
+[![Budgetierungsworkflow für Budgetplanung](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
-Der Workflow enthält Elemente für die Zuweisung auf die Verkaufsabteilungen und zur Aggregation der Unterordnungen, Prüfung an den Budget-Manager, Genehmigung über das CFO und Phasenübergänge zwischen jeder Phase. 
+Der Workflow umfasst Elemente für die Zuordnung zu den Verkaufsabteilungen und zur Aggregation ihrer Unterordnungen, Prüfung durch den Budget-Manager, Genehmigung durch den Leiter der Finanzabteilung und Phasenübergänge zwischen jeder Phase. 
 
 Sie weisen den Budgetierungsworkflow jedem Budgetplan im Abschnitt **Workflowphasen** auf der Seite **Budgetplanungskonfiguration** zu.
 
@@ -112,8 +115,8 @@ In der Budgetplanung können Sie die Beträge zuweisen oder Mengen auf den Budge
 
 Zuteilungszeitpläne weisen Budgetplanpositionen während der Workflowverarbeitung automatisch zu. Sie können Zuteilungen ausführen, indem Sie eine folgenden Methoden in der Liste **Zuordnungsmethode** werden:
 
--   **Auf Perioden verteilen** - Sie verwenden den Planzahlenverteilungsschlüssel, um Budgetplanpositionen von den Quellbudgetplanszenarioperioden im Zielszenario zuzuteilen. ** Hinweis: ** Bevor Sie für Perioden zuordnen können, müssen Sie der Planzahlenverteilungsschlüssel im **** Planzahlenverteilungskategorien **** Seite einrichten.
--   **Zu Dimensionen zuordnen** - Die Budgetplanpositionen werden vom Quellbudgetplanszenario in den Finanzdimensionen im Zielszenario zugewiesen. ** Hinweis: ** Bevor Sie an den Dimensionen zuweisen können, müssen Sie auf der Budgetzuteilungsbedingungen **** Budgetzuteilungsbedingungen **** Seite einrichten.
+-   **Auf Perioden verteilen** - Sie verwenden den Planzahlenverteilungsschlüssel, um Budgetplanpositionen von den Quellbudgetplanszenarioperioden im Zielszenario zuzuteilen. **Hinweis:** Bevor Sie auf Perioden verteilen können, müssen Sie Planzahlenverteilungsschlüssel auf der Seite ****Planzahlenverteilungskategorien**** einrichten.
+-   **Zu Dimensionen zuordnen** - Die Budgetplanpositionen werden vom Quellbudgetplanszenario in den Finanzdimensionen im Zielszenario zugewiesen. **Hinweis:** Bevor Sie auf die Dimensionen zuteilen können, müssen Sie Budgetzuweisungsbedingungen auf der Seite ****Budgetzuweisungsbedingungen**** einrichten.
 -   **Zusammenführen** - Die Budgetplanpositionen werden aus dem Quellbudgetplanszenario in zugeordneten Budgetplänen auf das Zielszenario in den übergeordneten Budgetplan verteilt.
 -   **Verteilen** - Die Budgetplanpositionen werden aus dem Quellbudgetplanszenario im übergeordneten Budgetplan auf das Zielszenario in den zugehörigen Budgetplänen verteilt.
 -   **Sachkonto-Zuordnungsregeln verwenden** - Die Budgetplanpositionen werden vom Quellbudgetplanszenario auf Grundlage der ausgewählten Sachkonto-Zuordnungsregel auf das Zielbudgetplanszenario verteilt.
@@ -123,13 +126,13 @@ Zuteilungszeitpläne weisen Budgetplanpositionen während der Workflowverarbeitu
 
 Phasenzuteilungen werden verwendet, um Budgetplanpositionen während des Workflowverarbeitens zuzuordnen. Wenn Phasenzuteilungen verwendet werden, können Budgetplanpositionen im Zielszenario ohne Eingreifen des Budgetplanantragstellers oder -Überprüfers erstellt und geändert werden, um die Positionen zu erstellen.
 
-Wenn Sie eine Phasenzuteilung einrichten, ordnen Sie den Budgetplanungsworkflow zu und stellen ihn mit dem Zuteilungszeitplan bereit. Der Budgetplanungsworkflow muss einem Budgetierungsworkflow zugeordnet werden, der die Budget-Planungsphasen-Zuweisung der automatisierten Workflowaufgabe **** **** verwendet. Wenn der Workflow die angegebene Phase erreicht, tritt die Zuweisung automatisch auf. Diese automatisierte Aufgabe kann verwendet werden, um Budgetplanpositionen in einem neuen Szenario zu erstellen. 
+Wenn Sie eine Phasenzuteilung einrichten, ordnen Sie den Budgetplanungsworkflow zu und stellen ihn mit dem Zuteilungszeitplan bereit. Der Budgetplanungsworkflow muss einem Budgetierungsworkflow zugeordnet sein, der die automatisierte Workflowaufgabe ****Zuteilung für Budgetplanungsphase**** verwendet. Wenn der Workflow die angegebene Phase erreicht, tritt die Zuweisung automatisch auf. Diese automatisierte Aufgabe kann verwendet werden, um Budgetplanpositionen in einem neuen Szenario zu erstellen. 
 
 Im Beispielsschema früher im Artikel, wird eine Zuordnung ausgeführt, um Beträgen von einem Budgetplan und von Szenarien in der Basislinienphase der Zentralverwaltung zu einem anderen Budgetplan und Szenarien in der Vorkalkulationsphase der Verkaufsabteilung zu übertragen. Die folgende Abbildung zeigt den relevanten Abschnitt des Beispielsschemas.
 
-![Phasen-Zuweisung ([]. /media/stageallocation-204x300.png)]". /media/stageallocation.png) 
+[![Phasenzuteilungen](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
-Darüber hinaus im Beispielsschema, ist eine Aggregation von den Budgetplänen sowie von Szenarien in der Verkaufsabteilung übermittelten Phase an ein übergeordnetes Plan in der Rollupphase Hauptniederlassung ausgeführt. Die folgende Abbildung zeigt den relevanten Abschnitt des Beispielsschemas.
+Außerdem wird im Beispielsschema eine Aggregation von Budgetplänen und Szenarios in der Phase "Übermittelt" der Verkaufsabteilung zu einem übergeordneten Plan in der Rollupphase der Zentralverwaltung ausgeführt. Die folgende Abbildung zeigt den relevanten Abschnitt des Beispielsschemas.
 
 [![Aggregation](./media/aggregation-109x300.png)](./media/aggregation.png)
 
@@ -149,9 +152,9 @@ Zusätzlich zu den Spalten für Budgetbeträge können Sie Spalten für die Feld
 
 Für das Beispielschema sollten Sie Spalten für die Vertriebs-, -Vertrags- und Prognoseszenarien des Vorjahres erstellen (die folgende Abbildung zeigt die relevanten Abschnitt des Schemas). Sie können eins oder alle dieser Szenarien in separate Spalten für jedes Quartal des Geschäftsjahrs aufteilen, sodass der Leiter der Verkaufsabteilung genaue Planungsbeträge für jede Periode eingeben kann.
 
-[![Columns](./media/columns.png)](./media/columns.png) 
+[![Spalten](./media/columns.png)](./media/columns.png) 
 
-Sie können auch auswählen, ob die einzelnen Layoutelement (Spalte) bearbeitet werden kann und ob es in einer Arbeitsblattvorlage verfügbar ist, für die dieses Layout erstellt wird. Im Layout, das im Beispielschema für die Vorkalkulationsphase verwendet wird, sind die Planungsspalten bearbeitbar, während die Spalten für Verkauf und Vertrag des Vorjahres schreibgeschützt sind.
+Sie legen auch fest, ob jedes Layoutelement (Spalte) bearbeitbar ist und ob es in einer beliebigen Arbeitsblattvorlage verfügbar ist, die für dieses Layout erstellt wird. Im Layout, das im Beispielschema für die Vorkalkulationsphase verwendet wird, sind die Planungsspalten bearbeitbar, während die Spalten für Verkauf und Vertrag des Vorjahres schreibgeschützt sind.
 
 ### <a name="templates"></a>Vorlagen
 
@@ -160,7 +163,7 @@ Im **Layouts**-Bereich der Seite **Budgetplanungskonfiguration**, können Sie au
 Sie können eine Vorlage für jedes Layout generieren, anzeigen oder hochladen. Wenn eine Vorlage generiert wird, wird das Layout gesperrt und kann nicht bearbeitet werden. Diese Sperre stellt sicher, dass das Vorlagenformat mit dem Layout des Budgetplans übereinstimmt und dieselben Daten umfasst. Nachdem eine Vorlage generiert wurde, kann sie angezeigt und bearbeitet werden. Sie können der Vorlage z. B. Diagramme hinzufügen oder die Darstellung weiter anpassen.
 
 > [!NOTE] 
-> Die Vorlage muss zu einem Speicherort gespeichert werden, auf das der Benutzer Zugriff auf haben soll, sodass er dem Layout, nachdem das Bearbeiten hochgeladen werden kann abgeschlossen ist. Auf diese Weise wird die Vorlage mit Budgetplänen verwendet, die das Layout verwenden.
+> Die Vorlage soll in einem Speicherort gespeichert werden, auf den der Benutzer Zugriff hat, damit sie zum Layout hochgeladen werden kann, nachdem die Bearbeitung abgeschlossen ist. Auf diese Weise wird die Vorlage mit Budgetplänen verwendet, die das Layout verwenden.
 
 ### <a name="descriptions"></a>Beschreibungen
 
@@ -184,6 +187,8 @@ Im Menü **Aktivitäten** können Sie auch einen neuen Prozess erstellen, indem 
 
 Ein anderer nützlicher Befehl im Menü **Aktivitäten** ist **Budgetprozessstatus anzeigen**. Dieser Befehl stellt die Budgetpläne innerhalb eines Prozesses zusammen mit relevanten Daten, wie den Workflowstatus der Pläne, Zusammenfassungen nach Betrag und nach Einheit sowie Navigation zu den Budgetplänen grafisch dar.
 
-[![Budget planning process status](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Status des Budgetplanungsprozesses](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
 
 

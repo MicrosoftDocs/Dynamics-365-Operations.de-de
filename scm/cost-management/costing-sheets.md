@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-sheets"></a>Nachkalkulationsbögen
 
+[!include[banner](../includes/banner.md)]
+
+
 Durch die Einrichtung des Nachkalkulationsbogens werden zwei Ziele verfolgt: Zum einen wird das Format definiert, das zum Anzeigen von Wareneinsatzinformationen für einen produzierten Artikel oder einen Produktionsauftrag verwendet wird. Die formatierte Anzeige wird als Nachkalkulationsbogen bezeichnet. Zum anderen wird die Grundlage für die Berechnung indirekter Kosten definiert. Die Einstellungen des Nachkalkulationsbogens basieren auf der Kostengruppenfunktion für die Informationsanzeige sowie für die Berechungsformeln für indirekte Kosten. In diesem Artikel werden die beiden Ziele des Nachkalkulationsbogens beschrieben: 
 
 Ein Nachkalkulationsbogen ist die formatierte Anzeige von Informationen zu den Kosten von Waren, die für einen produzierten Artikel oder einen Produktionsauftrag verkauft werden. Wenn Sie einen Nachkalkulationsbogen einrichten, definieren Sie das Format für die Informationen und die Basis für die Berechnung indirekter Kosten. Die Einstellungen des Nachkalkulationsbogens basieren auf der Kostengruppenfunktion für die Informationsanzeige sowie für die Berechungsformeln für indirekte Kosten. Nachfolgend finden Sie weitere Informationen über die zwei Ziele der Einstellungen des Nachkalkulationsbogens:
@@ -43,6 +46,8 @@ Anhand zweier Sperrrichtlinien für Nachkalkulationsversionen wird bestimmt, ob 
 Nach dem Definieren des Formats für den Nachkalkulationsbogen sowie nach den Berechnungen für indirekte Kosten müssen die Informationen in einem separaten Schritt geprüft und gespeichert werden. Bei dem Nachkalkulationsbogen handelt es sich um ein unternehmensweites Format zur einheitlichen Anzeige der Wareneinsatzinformationen. 
 
 Der Nachkalkulationsbogen wird als Teil der Seite **Artikelkosten berechnen** angezeigt. Dieses Formular wird für den Datensatz mit berechneten Kosten eines produzierten Artikels auf der Seite **Artikelpreis** oder für einen Datensatz mit auftragsspezifischen Berechnungen auf der Seite **Ergebnisse der Herstellkostenkalkulation** aufgerufen. Der Nachkalkulationsbogen kann auch als Teil der der Seite **Preiskalkulations** für einen Produktionsauftrag angezeigt.
+
+
 
 
 

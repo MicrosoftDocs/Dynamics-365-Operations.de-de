@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-overview"></a>Mehrwertsteuerüberblick
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält eine Übersicht über das Mehrwertsteuersystem. Er erklärt die Elemente zur Einrichtung der Mehrwertsteuer und wie sie zusammenarbeiten.
 
 <a name="overview"></a>Überblick
 --------
 
-Das Mehrwertsteuerframework unterstützt verschiedene Varianten von indirekten Steuern, wie etwa Mehrwertsteuer, Mehrwertsteuer (VAT), Waren und GST (Goods and Services Tax bezogene), Gebühren und Quellensteuer. Diese Steuern werden während des Einkaufs und der Verkaufsbuchungen berechnet und angegeben. In regelmäßigen Abständen müssen sie gemeldet und entrichtet werden werden die Steuerbehörde. 
+Das Mehrwertsteuerframework unterstützt verschiedene Varianten von indirekten Steuern, wie etwa Mehrwertsteuer, Mehrwertsteuer (VAT), Waren und GST (Goods and Services Tax bezogene), Gebühren und Quellensteuer. Diese Steuern werden während des Einkaufs und der Verkaufsbuchungen berechnet und angegeben. In regelmäßigen Abständen muss Mehrwertsteuer gemeldet werden und an die Steuerbehörde abgeführt werden. 
 
 Das folgende Diagramm zeigt die Entitäten der Steuereinrichtung und wie sie zugeordnet sind.
 
-![TaxOverview ([]. /media/taxoverview1-300x209.jpg)]". /media/taxoverview1.jpg) 
+[![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
-Für jede Mehrwertsteuer, die ein Unternehmen für muss, muss ein Mehrwertsteuercode definiert werden. Ein Mehrwertsteuercode speichert die Steuersätze und die Berechnungsregeln für die Mehrwertsteuer. 
+Für jede Mehrwertsteuer, die ein Unternehmen berechnet, muss ein Mehrwertsteuercode definiert werden. Ein Mehrwertsteuercode speichert die Steuersätze und die Berechnungsregeln für die Mehrwertsteuer. 
 
 Jeder Mehrwertsteuercode muss mit einem Mehrwertsteuer-Ausgleichszeitraum verknüpft werden. Mehrwertsteuer-Abrechnungszeiträume definieren die Intervalle, zu denen die Mehrwertsteuer deklariert werden und abgeführt werden muss. Jeder Mehrwertsteuer-Abrechnungszeitraum muss einer Mehrwertsteuerbehörde zugewiesen werden. Eine Mehrwertsteuerbehörde stellt die Entität dar, an die die Mehrwertsteuer deklariert und entrichtet wird. Sie definieren auch das Layout für die Mehrwertsteuererklärung. Mehrwertsteuerbehörden können Kreditorenkonten zugeordnet werden. 
 
@@ -69,17 +72,17 @@ Für jede Buchung (Auftrag/Einkaufsbelegpositionen, Erfassungen, usw.) müssen S
 Bei jeder Buchung können Sie die berechnete Mehrwertsteuer suchen, indem Sie die Seite **Mehrwertsteuerbuchung** öffnen. Sie können die Mehrwertsteuer für eine Dokumentposition oder für das gesamte Dokument suchen. Für bestimmte Dokumente (z. B. Kreditorenrechnung und allgemeine Erfassungen) können Sie die berechnete Mehrwertsteuer anpassen, wenn im Originaldokument abweichende Beträge angezeigt werden.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Mehrwertsteuerausgleich und -erklärung
-Die Mehrwertsteuer muss in den geregelten Intervallen an die Steuerbehörden gemeldet und abgeführt werden (monatsweise, quartalsweise, usw.). Microsoft Dynamics 365 für Arbeitsgänge beinhaltet Funktionen, die Sie ausgleichen können Steuer für das Intervall und Salden der Salden in SteuerVerrechnungskonto, wie in angegeben. Sachkontobuchungsgruppen Sie können diese Funktion unter ** der Bank- und Beitragsmehrwertsteuer ** Seite zugreifen. Sie müssen den Mehrwertsteuer-Abrechnungszeitraum angegeben, dass Mehrwertsteuer für ausgeglichen werden soll. 
+Die Mehrwertsteuer muss in den geregelten Intervallen an die Steuerbehörden gemeldet und abgeführt werden (monatsweise, quartalsweise, usw.). Microsoft Dynamics 365 for Operations verfügt über Funktionen, mit denen Sie Steuerkonten für das Intervall ausgleichen und die Salden in Steuerverrechnungskonto (wie in den Sachkontobuchungsgruppen angegeben) ausgleichen können. Sie können diese Funktion unter **Mehrwertsteuer abrechnen und buchen** Seite zugreifen. Sie müssen den Mehrwertsteuer-Abrechnungszeitraum angegeben, dass Mehrwertsteuer für ausgeglichen werden soll. 
 
 Nachdem die Mehrwertsteuer bezahlt wurde, sollte der Saldo im Mehrwertsteuer-Abrechnungskonto gegen das Bankkonto ausgeglichen sein. Wenn die Mehrwertsteuerbehörde, die im Mehrwertsteuer-Abrechnungszeitraum angegeben ist, ist einem Kreditorenkonto zugeordnet. Der Mehrwertsteuersaldo wird als offene Kreditorenrechnung gebucht und kann im regulären Zahlungsvorschlag einbezogen werden.
 
 ## <a name="conditional-sales-tax"></a>Mehrwertsteuer nach vereinnahmten Geldern
 Die Mehrwertsteuer nach vereinnahmten Geldern ist eine Mehrwertsteuer, die proportional zu dem tatsächlichen Betrag gezahlt wird, der auf eine Rechnung hin bezahlt wird. Im Gegensatz dazu wird die Standardmehrwertsteuer zur Zeit der Rechnungsstellung berechnet. Mehrwertsteuer nach vereinnahmten Geldern muss bezahlt an die Mehrwertsteuerbehörde abgeführt werden, wenn die Zahlung gebucht wird, nicht wenn die Rechnung gebucht wird. Wenn die Rechnung gebucht wird, muss diese Buchung im Bericht des Mehrwertsteuerbuchs erfasst werden. Die Buchung muss jedoch von der Mehrwertsteuervoranmeldung ausgeschlossen werden. 
 
-Wenn Sie das Geldern-Kontrollkästchen Mehrwertsteuer nach vereinnahmten im Formular "Hauptbuchparameter" auswählen, darf keine Mehrwertsteuer abgezogen werden, bis die Rechnung beglichen wurde. Dies ist in einigen Ländern eine gesetzliche Bestimmung.
+Wenn Sie das Kontrollkästchen "Mehrwertsteuer nach vereinnahmten Geldern" im Formular "Hauptbuchparameter" auswählen, kann keine Mehrwertsteuer abgezogen werden, bis Sie die Rechnung bezahlt haben. Dies ist in einigen Ländern eine gesetzliche Bestimmung.
 
 > [!NOTE]
-> Wenn Sie das Geldern-Kontrollkästchen Mehrwertsteuer nach vereinnahmten auswählen, müssen Mehrwertsteuercodes und Mehrwertsteuergruppen eingerichtet und Sachkontobuchungsgruppen, erstellen auch zur Unterstützung der Funktion. |
+> Beim Auswählen des Kontrollkästchens "Mehrwertsteuer nach vereinnahmten Geldern" müssen Mehrwertsteuercodes und Mehrwertsteuergruppen eingerichtet und auch Sachkontobuchungsgruppen zur Unterstützung der Funktion erstellt werden. |
 
 ###  <a name="example"></a>Beispiel
 
@@ -90,5 +93,7 @@ Sie begleichen Ihre Mehrwertsteuer jeden Monat. Am 15. Juni erstellen Sie eine R
 In der Regel würden Sie 2.500 EUR im Juni an die Steuerbehörde überweisen müssen, wenn die Rechnung im Juni gebucht wird, obwohl die Zahlung noch nicht eingegangen ist. 
 
 Wenn Sie jedoch eine Mehrwertsteuer nach vereinnahmten Geldern anwenden, begleichen Sie die Steuer erst, wenn Sie die Zahlung vom Debitor am 30. Juli erhalten.
+
+
 
 

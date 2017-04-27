@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-methods-and-conventions"></a>Abschreibungsmethoden und -konventionen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel gibt einen Überblick über die Abschreibungskonventionen und Abschreibungsmethoden, die von Microsoft Dynamics AX unterstützt werden.
 
 Es können verschiedene Abschreibungsmethoden und -konventionen ausgewählt werden. Zweck der Methoden ist die Verteilung des abschreibungsfähigen Werts der Anlage auf Finanzzeiträume. Der abschreibungsfähige Wert der Anlage ist der Anschaffungspreis abzüglich eines Schrottwerts (sofern zutreffend). 
@@ -66,26 +69,27 @@ Die folgenden Abschreibungsmethoden stehen zur Auswahl.
 <a name="see-also"></a>Siehe auch
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Anlagenabschreibung](fixed-asset-depreciation.md)
 
-[Straight line service life depreciation](Straight-line-service-life-depreciation.md)
+[Abschreibungsmethode "Lineare Nutzungsdauer"](Straight-line-service-life-depreciation.md)
 
-[Reducing balance depreciation](reduce-balance-depreciation.md)
+[Degressive Abschreibung](reduce-balance-depreciation.md)
 
-[Manual depreciation](manual-depreciation.md)
+[Manuelle Abschreibung](manual-depreciation.md)
 
-[Factor depreciation](factor-depreciation.md)
+[Faktorabschreibung](factor-depreciation.md)
 
-[Consumption depreciation](consumption-depreciation.md)
+[Verbrauchsabschreibung](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
+[Abschreibungsmethode "Verbleibende lineare Nutzungsdauer"](straight-line-life-remaining-depreciation.md)
 
-125-Prozent-degressiveAbschreibung []( 125 percent-reducing-balance-depreciation.md)
+[Degressiven Abschreibung von 125 Prozent](125-percent-reducing-balance-depreciation.md)
 
-150-Prozent-degressiveAbschreibung []( 150 percent-reducing-balance-depreciation.md)
+[Degressiven Abschreibung von 150 Prozent](150-percent-reducing-balance-depreciation.md)
 
-175-Prozent-degressiveAbschreibung []( 175 percent-reducing-balance-depreciation.md)
+[Degressiven Abschreibung von 175 Prozent](175-percent-reducing-balance-depreciation.md)
 
-[200 percent reducing balance depreciation](200-percent-reducing-balance-depreciation.md)
+[Degressiven Abschreibung von 200 Prozent](200-percent-reducing-balance-depreciation.md)
+
 
 

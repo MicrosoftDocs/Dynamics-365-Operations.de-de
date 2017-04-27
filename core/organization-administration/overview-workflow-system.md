@@ -1,6 +1,6 @@
 ---
-title: "Workflowsystemüberblick"
-description: "In diesem Artikel wird beschrieben des Workflowsystems in Microsoft Dynamics 365 für Arbeitsgänge."
+title: "Überblick über das Workflowsystem"
+description: In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Operations beschrieben.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,9 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="workflow-system-overview"></a>Workflowsystemüberblick
+# <a name="workflow-system-overview"></a>Überblick über das Workflowsystem
 
-In diesem Artikel wird beschrieben des Workflowsystems in Microsoft Dynamics 365 für Arbeitsgänge.
+[!include[banner](../includes/banner.md)]
+
+
+In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Operations beschrieben.
 
 <a name="what-is-workflow"></a>Was ist ein Arbeitsplan?
 -----------------
@@ -34,7 +37,7 @@ In diesem Artikel wird beschrieben des Workflowsystems in Microsoft Dynamics 365
 Der Begriff *Workflow* kann auf zwei Arten definiert werden: als System und als Geschäftsprozess.
 ### <a name="workflow-is-a-system"></a>Workflow als System
 
-Der Workflow ist ein System, das mit 365 Dynamics für Arbeitsgänge eingerichtet wird und das auf dem Anwendungsobjektserver (AOS) ausgeführt wird. Das Workflowsystem verfügt über Funktionen, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können.
+Workflow ist ein System, das mit Microsoft Dynamics 365 for Operations installiert wird und auf dem Anwendungsobjektserver (AOS/Application Object Server) ausgeführt wird. Das Workflowsystem verfügt über Funktionen, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können.
 
 ### <a name="workflow-is-a-business-process"></a>Workflow als Geschäftsprozess
 
@@ -46,6 +49,7 @@ Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vortei
 -   **Konsistente Prozesse** – Sie können die Verarbeitung bestimmter Dokumente definieren, z. B. von Bestellanforderungen und Spesenabrechnungen. Das Workflowsystem gewährleistet, dass Dokumente konsistent und effizient verarbeitet und genehmigt werden.
 -   **Prozesssichtbarkeit** – Sie können den Status, die Historie und die Leistungskennzahlen von Workflowinstanzen nachverfolgen. So können Sie besser feststellen, ob zur Effizienzsteigerung Änderungen am Workflow vorgenommen werden sollten.
 -   **Zentralisierte Arbeitsliste** – Benutzer können eine zentralisierte Arbeitsliste öffnen, um die ihnen zugeordneten Workflowaufgaben und -genehmigungen anzuzeigen.
+
 
 
 

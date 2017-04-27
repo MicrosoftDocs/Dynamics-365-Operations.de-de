@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="close-the-general-ledger-at-period-end"></a>Abschluss des Hauptbuchs am Ende der Periode
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Thema werden die Aufgaben beschrieben, die in der Regel ausgeführt werden, wenn ein Periodenabschluss für Hauptbuch ausgeführt wird. 
 
-Im Hauptbuch können Sie Abschlussprozeduren für eine Periode oder ein Jahr ausführen. Abschlussvorgänge bereiten das System auf eine neue Periode vor. Um das System für ein neues Jahr erstellen, müssen Sie den Schließenprozess mit unterschiedlichen Geschäftsjahresenddaten ausführen. Jede Organisation gelten unterschiedliche Verfahren und Schritte, die sie für das Ende einer Periode ausgeführt wird. Nachfolgend sind einige Schritte für optionale Periodenenden:
+Im Hauptbuch können Sie Abschlussprozeduren für eine Periode oder ein Jahr ausführen. Abschlussvorgänge bereiten das System auf eine neue Periode vor. Um das System auf ein neues Jahr vorzubereiten, müssen Sie den Jahresabschlussprozess ausführen. Jede Organisation hat unterschiedliche Verfahren und Schritte, die für das Ende einer Periode ausgeführt werden. Nachfolgend sind einige Schritte für optionale Periodenenden beschrieben:
 
 -   Schließen Sie alle Aufgaben für alle anderen Module ab, z. B. Debitoren, Kreditoren und Bestand.
 -   Überprüfen Sie, ob alle Erfassungen gebucht werden.
@@ -39,9 +42,11 @@ Im Hauptbuch können Sie Abschlussprozeduren für eine Periode oder ein Jahr aus
 -   Journalisieren Sie Transaktionen und überprüfen Sie den **Sachkontoerfassungs** Bericht.
 -   Führen Sie eine Konsolidierung aus, indem Sie ein Konsolidierungsunternehmen oder eine Finanzberichterstellung verwenden.
 -   Generieren Sie Finanzaufstellungen zum Periodenende, indem Sie Finanzberichterstellung verwenden.
--   Legen Sie Sachkontoperioden auf **Gesperrt** fest, damit keine weitere Buchung stattfindet. Sie können für bessere Kontrolle eine Periode auf eine bestimmte Benutzergruppe begrenzen, wenn Aktivitäten zum Periodenende auftreten. Es ist keine der Entlassung, Perioden auf festzulegen ** dauerhaft geschlossen **, da Sie eine Frist nicht erneut geöffnet werden können, die abgeschlossen wurde.
+-   Legen Sie Sachkontoperioden auf **Gesperrt** fest, damit keine weitere Buchung stattfindet. Sie können für bessere Kontrolle eine Periode auf eine bestimmte Benutzergruppe begrenzen, wenn Aktivitäten zum Periodenende auftreten. Es ist nicht sinnvoll, Perioden auf **Ständig Geschlossen** festzulegen, da eine geschlossene Periode nicht erneut geöffnet werden kann.
 
-Der Finanzperiodenschließenarbeitsbereich kann verwendet werden, um Aufgaben zum Organisieren und verfolgen, die für verschiedene Periodenendenprozesse erforderlich sind. Siehe Finanzperiodenschließenarbeitsbereich [] () und das financial-period-close-workspace.md Jahresabschluss [] () Year-end-close.md Themen unter. 
+Der Arbeitsbereich Finanzperioden schließen kann verwendet werden, um die Aufgaben, die für verschiedene Periodenendenprozesse erforderlich sind, zu organisieren und nachzuverfolgen. Siehe [Arbeitsbereich Finanzperioden schließen](financial-period-close-workspace.md) und [Jahresabschluss](Year-end-close.md) für weitere Informationen. 
+
+
 
 
 

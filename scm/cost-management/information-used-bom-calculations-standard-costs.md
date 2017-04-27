@@ -1,5 +1,5 @@
 ---
-title: Herstellkostenkalkulationen mit Standardkosten
+title: Herstellkostenkalkulationen mit Standardkosten.
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-with-standard-costs"></a>Herstellkostenkalkulationen mit Standardkosten
+# <a name="bom-calculations-with-standard-costs"></a>Herstellkostenkalkulationen mit Standardkosten.
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -78,6 +81,8 @@ Die Informationen zur Nachkalkulationsversion, die in einer Herstellkostenkalkul
 -   Inhalt der Nachkalkulationsversion muss Kosten enthalten – Der Inhalt muss Kosten enthalten. Zur Berechnung der vorgeschlagenen Verkaufspreise für produzierte Artikel können optional auch Verkaufspreise enthalten sein.
 
 Beim Initiieren der Herstellkostenkalkulation können eine Reihe von Informationsquellen angegeben werden. Hierzu zählen der Standort, das Berechnungsdatum sowie die Nachkalkulationsversion.
+
+
 
 
 

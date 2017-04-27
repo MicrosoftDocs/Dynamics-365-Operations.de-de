@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Standardkosten für einen neuen produzierten Artikel aktualisieren
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel bietet eine Anleitung zum Aktualisieren von Standardkosten für einen neuen produzierten Artikel. 
 
 Für die folgenden Richtlinien wird die Verwendung des Zwei-Versionen-Ansatzes für Standardkostenaktualisierungen vorausgesetzt. Bei diesem Ansatz enthält eine der Nachkalkulationsversionen die ursprünglich definierten Standardkosten für die unveränderliche Periode, während die andere Nachkalkulationsversion die stufenweisen Aktualisierungen für die neu produzierten Artikel enthält. Die stufenweisen Aktualisierungen werden als Kostendatensätze in der zweiten Nachkalkulationsversion eingeben und schließlich aktiviert. Für den Zwei-Versionen-Ansatz müssen Sie eine zweite Nachkalkulationsversion definieren. Nachfolgend finden Sie die Richtlinien zur Definition dieser Nachkalkulationsversion:
@@ -47,6 +50,8 @@ Führen Sie die folgenden Schritte aus, um innerhalb der unveränderlichen Perio
 5.  Ändern Sie mithilfe der Seite **Einstellungen für Nachkalkulationsversion** die Sperrmarkierung, um in der zweiten Nachkalkulationsversion die Aktivierung von Datensätzen für ausstehende Kosten zu ermöglichen.
 6.  Verwenden Sie die Seite **Preise aktivieren** (die Sie über die Seite **Verwaltung der Nachkalkulationsversion** öffnen), um alle ausstehenden Artikelkostendatensätze in der zweiten Nachkalkulationsversion zu aktivieren. Die Datensätze mit ausstehenden Kosten können auch für einzelne Artikel aktiviert werden, indem Sie auf der Seite **Artikelkosten** auf die Schaltfläche **Aktivieren** klicken.
 7.  Mithilfe der Seite **Einstellungen für Nachkalkulationsversion** können Sie die Sperrmarkierungen in der zweiten Nachkalkulationsversion ändern, um eine weitere Datenverwaltung zu verhindern. Durch die Sperrrichtlinien werden die Eingabe neuer ausstehender Kosten sowie die Aktivierung ausstehender Kosten verhindert.
+
+
 
 
 

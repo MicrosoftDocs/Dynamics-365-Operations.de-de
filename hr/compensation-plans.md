@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="compensation-plans"></a>Vergütungspläne
 
+[!include[banner](includes/banner.md)]
+
+
 Manager Vergütungen und Leistungen können die Vergütungsverwaltung verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation verwalten und verarbeiten.
 
 ### <a name="introduction"></a>Einführung
 
-Die Vergütungsverwaltung wird verwendet, um die Sendung des Grundlohns und der Prämien zu steuern. Machen Der feste Grundlohn eines Mitarbeiters von Plänen für feste Vergütung gesteuert. Die Zahlung leistungsbezogener Prämien, wie Boni, Leistungsprämien, Aktienoptionen und -überlassungen sowie Einmalprämien werden durch Pläne für variable Vergütung gesteuert. 
+Die Vergütungsverwaltung dient zum Steuern der Abwicklung des Grundlohns und der Prämien. Sie steuern den festen Grundlohn eines Mitarbeiters und dessen Lohnsteigerungen nach Plänen für feste Vergütung. Die Zahlung leistungsbezogener Prämien, wie Boni, Leistungsprämien, Aktienoptionen und -überlassungen sowie Einmalprämien werden durch Pläne für variable Vergütung gesteuert. 
 
 Die Mitarbeiter können einem oder mehreren Plänen beider Arten zugeordnet werden. Ein Mitarbeiter muss die folgenden Bedingungen erfüllen, um für die Registrierung in einem Vergütungsplan berechtigt zu sein:
 -   Der Mitarbeiter muss eine aktive Positionszuweisung haben.
@@ -54,7 +57,7 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 <td>Aktivitäten bezüglich fester Vergütung werden aus zwei Gründen eingerichtet:
 <ul>
 <li>Aktivitäten können die Art der Informationen angeben, die erfasst werden muss, wenn sich die Vergütung eines Mitarbeiters ändert. So können z. B. festlegen, dass der Grund eine Änderung (z. B. eine Beförderung oder Zurückstufung) erfasst wird.</li>
-<li>Aktivitäten können sicherstellen, dass einer Berechnung wird angewendet, wenn für feste Vergütung verarbeitet werden.  Beispielsweise vergleichen Aktivitäten vom Typ Eigenkapital die Mitarbeiter erstatten dem Mindest- Referenzpunkt für die Ebene in den Mitarbeiter und sicherstellen, dass der Mitarbeiter mindestens das Minimum gezahlt wird.</li>
+<li>Die Aktivitäten werden auf einen Ereignisprozesses angewendet, wenn feste Vergütungspläne berechnet werden.  Aktivitäten können sicherstellen, dass eine Berechnung angewendet wird, wenn feste Vergütungspläne verarbeitet werden. Aktivitäten vom Typ Vergleich vergleichen beispielsweise die Bezahlung eines Mitarbeiters mit dem Mindestreferenzpunkt für die Stufe des Mitarbeiters und stellen sicher, dass dem Mitarbeiter mindestens das Minimum gezahlt wird.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -83,7 +86,7 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 </tr>
 <tr class="even">
 <td>Lohnzahlungshäufigkeit</td>
-<td>Lohnzahlungshäufigkeiten werden verwendet, um den Zeitraum zu definieren, für die der Vergütungseinstellungen angegeben wird.  Beispielsweise die Lohnzahlungshäufigkeitshilfen verstehen Sie, wenn der Kompensationsbetrag als Gehalt jährliches Stundenlohn für einen angegeben ist. Lohnzahlungshäufigkeiten werden auch verwendet, um Umrechnungsfaktoren einrichten, um Kompensationsbeträge von monatlich, durch wöchentliche, zweiwöchentlich und zu einer Stundenlohnhäufigkeiten jährlichen Lohnzahlungshäufigkeit zu konvertieren.</td>
+<td>Lohnzahlungshäufigkeiten werden verwendet, um den Zeitraum zu definieren, für die der Vergütungseinstellungen angegeben wird.  Beispielsweise hilft Ihnen die Lohnzahlungshäufigkeit zu verstehen, ob der Kompensationsbetrag als jährliches Gehalt oder als Stundenlohn  angegeben ist. Zahlungshäufigkeiten werden auch verwendet, um Umrechnungsfaktoren einzurichten, um Vergütung von monatlich, wöchentlich, zweiwöchentlich und stundenbasiert in eine jährliche Lohnzahlungshäufigkeit umzuwandeln.</td>
 </tr>
 <tr class="odd">
 <td>Ausgleichsregionen</td>
@@ -126,9 +129,11 @@ Ein Prozessereignis kalkuliert Vergütungsinformationen für eine bestimmte Peri
 <a name="compensation-events"></a>Vergütungsereignisse
 -------------------
 
-Zusammen ein Prozessereignis ausgeführt wird, wird ein Kompensationsereignis erstellt.  Kompensationsereignisse enthalten die Ergebnisse des Kompensationsprozesses für jeden Mitarbeiter, das in diesen Prozessereignis enthalten ist.  Wenn die Berechnungen korrekt sind, können Sie das Kompensationsereignis, die Vergütung für die Mitarbeiter zu aktualisieren, die im Rahmen des Prozessereignisses beeinflusst werden.
+Jedes Mal, wenn ein Prozessereignis ausgeführt wird, wird ein Kompensationsereignis erstellt.  Kompensationsereignisse enthalten die Ergebnisse des Kompensationsprozesses für jeden Mitarbeiter, das in diesen Prozessereignis enthalten ist.  Wenn die Berechnungen korrekt sind, können Sie das Prozessereignis laden, um die Vergütungsdatensätze für die Mitarbeiter zu aktualisieren, die vom Prozessereignis betroffen sind.
 
 ## <a name="recommendations"></a>Empfehlungen
 Nachdem Sie ein Prozessereignis ausgeführt haben, können Sie Anpassungen an Lohnsteigerung oder Prämienbetrag eines Mitarbeiters basierend auf den berechneten Richtlinien des Prozessereignisses empfehlen. Um Empfehlungen für Mitarbeiter zu machen, müssen Sie Empfehlungen aktivieren, wenn Sie Vergütungspläne einrichten oder das Prozessereignis erstellen.
+
+
 
 

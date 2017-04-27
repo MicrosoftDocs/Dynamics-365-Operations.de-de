@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-customer-invoice"></a>Erstellen einer Debitorenrechnung
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechnung, die sich auf einen Auftrag bezieht, und die ein Debitor von einer Organisation erhält. Diese Art von Debitorenrechnung wird auf Basis eines Auftrags, der die einzelnen Auftragspositionen und Artikelnummern enthält, erstellt. Die Artikelnummern werden im Sachkonto angegeben und gebucht. Journaleinträge in untergeordnetem Sachkonto sind bei einer Debitorenrechnung für einen Auftrag nicht verfügbar. 
@@ -55,7 +58,7 @@ Auf der Listenseite **Alle Aufträge** können Sie den Status des Auftrags anzei
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Konsolidieren von Aufträgen oder Lieferscheinen für das Buchen
 Verwenden Sie diesen Prozess, wenn eine oder mehrere Aufträge fakturierungsbereit sind, und Sie möchten sie in einer einzelnen Rechnung konsolidieren. 
 
-Sie können mehrere Rechnungen auf der Listenseite **Auftrag** auswählen und dann **Generieren von Rechnungen** verwenden, um sie zu konsolidieren. Auf der Buchungsrechnung ** ** können Sie die Seite, den Zusammenfassungskopf ** Auftrag ** Einstellungen ändern, um nach Auftragsnummer zusammenzufassen (wobei es mehrere Lieferscheine für einen einzelnen Auftrag gelten) oder nach Rechnungskonto (wobei es mehrere Aufträge für ein einzelnes Rechnungskonto wird). Auf der ** Ordnet an ** Schaltfläche, um Aufträge in einzelne Rechnungen, die auf Grundlage ** zusammenfassender Auftrag ** Einstellungen zu konsolidieren.
+Sie können mehrere Rechnungen auf der Listenseite **Auftrag** auswählen und dann **Generieren von Rechnungen** verwenden, um sie zu konsolidieren. Auf der Seite **Rechnung buchen **können Sie die **Einstellungen Sammelaufträge** ändern, um nach Auftragsnummern (wenn es mehrere Lieferscheine für einen einzelnen Auftrag gibt) oder nach Rechnungskonto (wenn es mehrere Aufträge für ein einzelnes Rechnungskonto gibt) zusammenzufassen. Verwenden Sie die Anordnen Schaltfläche, um Aufträge als einzelne Rechnungen, basierend auf den Einstellungen für Sammelaufträge zu konsolidieren. Nutzen Sie die **Ordnet an** Schaltfläche, um Aufträge in einzelne Rechnungen, die auf Grundlage der Einstellungen **Zusammenfassender Auftrag** basieren.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Zusätzliche Einstellungen, die das Buchungsverhalten ändern
 Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
@@ -123,8 +126,8 @@ Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
 <td>Kreditlimit prüfen</td>
 <td>Hier legen Sie die Daten fest, die bei einer Kreditlimitprüfung analysiert werden sollen.
 <ul>
-<li><strong>None</strong> – There is no requirement for the credit limit check.</li>
-<li><strong>Balance</strong> – The credit limit is checked against the customer balance.</li>
+<li><strong>Kein</strong> – Es gelten keine Anforderungen für die Kreditlimitprüfung.</li>
+<li><strong>Saldo</strong> – Der Debitorensaldo wird durch Vergleich mit dem Kreditlimit überprüft.</li>
 <li><strong>Saldo + Lieferschein oder Produktzugang</strong> – Das Kreditlimit wird durch Vergleich mit Debitorensaldo und Lieferungen überprüft.</li>
 <li><strong>Saldo+Alles</strong> – Das Kreditlimit wird durch Vergleich mit Debitorensaldo, Lieferungen und offenen Aufträgen überprüft.</li>
 </ul></td>
@@ -150,6 +153,8 @@ Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
 </tr>
 </tbody>
 </table>
+
+
 
 
 

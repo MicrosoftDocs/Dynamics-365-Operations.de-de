@@ -40,7 +40,7 @@ Tabelleneinschränkungen listen die Kombinationen von Werten auf, die für Attri
 
 ### <a name="example-of-a-table-constraint"></a>Beispiel einer Tabelleneinschränkung
 
-Dieses Beispiel verdeutlicht, wie Sie die Konfiguration eines Lautsprechers auf bestimmte Gehäuseoberflächen und Frontseiten einschränken können. Die erste Tabelle enthält die Oberflächen und die Frontseiten, die allgemein zur Konfiguration verfügbar sind. Die Werte werden für Gehäuseende ** ** und vorderer ** Grill ** Attributtypen definiert.
+Dieses Beispiel verdeutlicht, wie Sie die Konfiguration eines Lautsprechers auf bestimmte Gehäuseoberflächen und Frontseiten einschränken können. Die erste Tabelle enthält die Oberflächen und die Frontseiten, die allgemein zur Konfiguration verfügbar sind. Die Werte werden für die **Gehäuseoberfläche** und **Vordergerippe**-Attributtypen definiert.
 
 | Attributtyp | Werte                      |
 |----------------|-----------------------------|
@@ -60,8 +60,8 @@ In der folgenden Tabelle werden die Kombinationen angezeigt, die von der Tabelle
 
 Sie können die systemdefinierte und benutzerdefinierte Tabelleneinschränkungen erstellen. Weitere Informationen finden Sie unter [Systemdefinierte und benutzerdefinierte Tabelleneinschränkungen](system-defined-user-defined-table-constraints.md).
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Die Syntax verwendet werden soll, um Einschränkungen zu schreiben?
-Sie müssen Optimization Modeling Language (OML)-Syntax verwenden, wenn Sie die Einschränkungen schreiben. Das System verwendet Microsoft Foundations-Einschränkungswandler Solver, um die Einschränkungen zu beheben.
+## <a name="what-syntax-should-be-used-to-write-constraints"></a>Welche Syntax soll verwendet werden, um Einschränkungen in  aufzuheben?
+Sie müssen Optimization Modeling Language (OML)-Syntax verwenden, wenn Sie die Einschränkungen schreiben. Das System verwendet Microsoft Solver Foundation-Einschränkungswandler, um die Einschränkungen zu beheben.
 
 ## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Soll ich Tabelleneinschränkungen oder Ausdruckseinschränkungen verwenden?
 Sie können entweder Ausdruckseinschränkungen oder Tabelleneinschränkungen verwenden, je nachdem, wie Sie die Einschränkungen erstellen möchten. Sie bauen eine Tabelleneinschränkung als Matrix auf, während eine Ausdruckseinschränkung ein einzelner Auszug ist. Wenn Sie ein Produkt konfigurieren, ist es nicht von Bedeutung, welche Art von Einschränkung verwendet wird. Im folgenden Beispiel werden die Unterschiede der zwei zur Verfügung stehenden Optionen veranschaulicht.  
@@ -110,32 +110,32 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 <td>Dies gilt, wenn die erste Bedingung nicht zutrifft, die zweite Bedingung erfüllt wird, oder beide.</td>
 <td>Implies[a, b], infix: a -: b</td>
 <td><ul>
-<li><strong>Operator :</strong> Bedeutet [x! = 0, y &gt;= 0]</li>
-<li><strong>Infixschreibweise:</strong> x! = 0 -: y &gt;= 0</li>
+<li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>Infixschreibweise:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Und</td>
 <td>Dies gilt nur, wenn alle Bedingungen erfüllt sind. Wenn die Anzahl der Bedingungen 0 (Null) ist, ergibt dies <strong>Wahr</strong>.</td>
-<td>Die args [], Infix: ein &amp; ( &amp; z… &amp;</td>
+<td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Operator :</strong> Die x-== [2], y &lt;= 2</li>
-<li><strong>Infixschreibweise:</strong> y &lt;== x 2 &amp; = 2</li>
+<li><strong>Operator:</strong> Und[x == 2, y &lt;= 2]</li>
+<li><strong>Infixschreibweise:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Oder</td>
 <td>Dies trifft zu, wenn jede Bedingung wahr ist. Wenn die Anzahl der Bedingungen 0 (Null) ist, ergibt dies <strong>Falsch</strong>.</td>
-<td>Oder args [], Infix: a _=_ b _=_ … _=_ z</td>
+<td>Oder[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Operator :</strong> Oder x-== [2], y &lt;= 2</li>
-<li><strong>Infixschreibweise:</strong> x == 2 _=_ y &lt;= 2</li>
+<li><strong>Operator:</strong> Oder[x == 2, y &lt;= 2]</li>
+<li><strong>Infixschreibweise:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Plus</td>
 <td>Dies summiert die Bedingungen. Wenn die Anzahl der Bedingungen 0 (Null) ist, ergibt dies <strong>0</strong>.</td>
-<td>Args Plus [], Infix: A + B + + z…</td>
+<td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
 <li><strong>Operator:</strong> Plus[x, y, 2] == z</li>
 <li><strong>Infixschreibweise</strong>: x + y + 2 == z</li>
@@ -159,7 +159,7 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 <tr class="odd">
 <td>Zeiten</td>
 <td>Dies nimmt das Produkt der Bedingungen. Wenn die Anzahl der Bedingungen 0 (Null) ist, ergibt dies <strong>1</strong>.</td>
-<td>Args Zeiten [], Infix: B ein * * * z…</td>
+<td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
 <li><strong>Operator:</strong> Times[x, y, 2] == z</li>
 <li><strong>Infixschreibweise</strong>: x * y * 2 == z</li>
@@ -167,8 +167,8 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 </tr>
 <tr class="even">
 <td>Antriebskraft</td>
-<td>Dies nimmt einen exponentiellen Wert. Dies wendet die Exponenten von rechts nach links an. (Also, ist sie Recht-vereinigend). Daher <strong>Power [A, B, C]</strong> ist zu. <strong>Power</strong> kann nur mit einer positiven Konstante als Exponent verwendet werden.</td>
-<td>Leistung args [], Infix: ein ^ B ^… ^ z</td>
+<td>Dies nimmt einen exponentiellen Wert. Dies wendet die Exponenten von rechts nach links an. (Das bedeutet, dass dies rechtsverknüpfend ist.) Deshalb P<strong>Power[a, b, c]</strong> ist gleich <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> kann nur mit einer positiven Konstante als Exponent verwendet werden.</td>
+<td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
 <li><strong>Infixschreibweise:</strong> x ^ 2 == y</li>
@@ -191,7 +191,7 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 <td>Dies produziert die logische Umkehrung der Bedingung. Dies muss genau eine Bedingung haben.</td>
 <td>Not[expr], Infix: !expr</td>
 <td><ul>
-<li><strong>Operator :</strong> Nicht [x nicht y-==] &amp; [3]</li>
+<li><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infixschreibweise:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -203,7 +203,7 @@ Die Beispiele in der nächsten Tabellen zeigen, wie eine Infixnotation geschrieb
 | Infixschreibweise    | Beschreibung                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
 | x + y + z         | Hinzufügung                                                                                      |
-| x \* \* y z       | Multiplikation                                                                                |
+| x \* y \* z       | Multiplikation                                                                                |
 | x - y             | Die binäre Subtraktion wird auf die gleiche Weise wie die binäre Addition bei einer negierten Sekunde übersetzt. |
 | x ^ y ^ z         | Exponenten mit Rechtsverknüpfung                                                   |
 | !x                | Boolesches not                                                                                   |
@@ -212,14 +212,14 @@ Die Beispiele in der nächsten Tabellen zeigen, wie eine Infixnotation geschrieb
 | x & y & z         | Boolesches and                                                                                   |
 | x == y == z       | Gleichheit                                                                                      |
 | x != y != z       | Getrennt                                                                                      |
-| x &lt; &lt; y z   | Kleiner als                                                                                     |
-| x &gt; &gt; y z   | Größer als                                                                                  |
-| X &lt;= y &lt;z = | Kleiner oder gleich                                                                         |
-| X &gt;= y &gt;z = | Größer oder gleich                                                                      |
+| x &lt; y &lt; z   | Kleiner als                                                                                     |
+| x &gt; y &gt; z   | Größer als                                                                                  |
+| x &lt;= y &lt;= z | Kleiner oder gleich                                                                         |
+| x &gt;= y &gt;= z | Größer oder gleich                                                                      |
 | (x)               | Klammern setzten die standardmäßige Rangfolge außer Kraft.                                                      |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Warum werden meine Ausdruckseinschränkungen nicht ordnungsgemäß validiert?
-Sie können reservierte Schlüsselwörter nicht als Wandlernamen für Attribute, Komponenten oder Unterkomponenten in einem Produktkonfigurationsmodell verwenden. Das hier eine Liste der reservierten Suchbegriffen, die nicht verwendet werden können:
+Sie können reservierte Schlüsselwörter nicht als Wandlernamen für Attribute, Komponenten oder Unterkomponenten in einem Produktkonfigurationsmodell verwenden. Die folgende Tabelle enthält eine Liste der reservierten Schlüsselwörter, die Sie nicht verwenden dürfen.
 
 -   Decke
 -   Element
@@ -245,8 +245,8 @@ Sie können reservierte Schlüsselwörter nicht als Wandlernamen für Attribute,
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen einer Aufgabenleitfaden " Ausdruckseinschränkung)]http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/) "
+[Erstellen einer Ausdruckseinschränkung (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Fügen Sie eine Berechnung ein Produktkonfigurationsmodell hinzufügen "Aufgabenleitfaden)]http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/) "
+[Berechnung zu einem Produktkonfigurationsmodell hinzufügen (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
 
 

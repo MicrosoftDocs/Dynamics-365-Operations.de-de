@@ -1,6 +1,6 @@
 ---
 title: Sachkontoerfassungstypen
-description: "In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Journalseite, um Erfassungen einrichten, die Sie für Microsoft Dynamics 365 für Arbeitsgänge verwenden können."
+description: "In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Erfassungsnamenseite, um Erfassungen einzurichten, die Sie für Microsoft Dynamics 365 for Operations verwenden können."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-journal-types"></a>Sachkontoerfassungstypen
 
-In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Journalseite, um Erfassungen einrichten, die Sie für Microsoft Dynamics 365 für Arbeitsgänge verwenden können.
+[!include[banner](../includes/banner.md)]
+
+
+In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Erfassungsnamenseite, um Erfassungen einzurichten, die Sie für Microsoft Dynamics 365 for Operations verwenden können.
 
 | Journaltyp                      | Kostenträger                                                                                                                                                                                                                                                                                                                                                     | Transaktionen auf dieser Seite eingeben                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -55,11 +58,13 @@ In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerf
 | Kreditoren-Bankrimesse            | Erstellen einer Solawechsel-Rimessedatei, die an die Bank Ihrer Organisation gesendet werden kann.                                                                                                                                                                                                                                                                      | Rimesseerfassung                                             |
 | Kreditorenzahlung               | Erstellen von Buchungen für Kreditorenzahlungen.                                                                                                                                                                                                                                                                                                                    | Zahlungserfassung                                                |
 | Kreditor zieht Solawechsel       | Ziehen der Kreditorensolawechsel als Zahlungsmethode. Um diesen Erfassungstyp zu verwenden, deaktivieren Sie die **Wechselziehungserfassung bei der Buchung von Rechnungen automatisch erstellen und buchen**-Option auf der **Zahlungsmethoden – Kreditoren**-Seite.                                                                                                                                          | Erfassung zum Ziehen von Solawechseln                                   |
-| Kreditorenrechnungspool. ohne Buchungsformular buchen | Erstellen der Kreditorenrechnungsbuchungen, die noch nicht auf ein temporäres Eingangskonto gebucht wurden.                                                                                                                                                                                                                                                             | Kreditorenrechnungspool ohne Buchungsdetails                  |
+| Kreditorenrechnungspoolauschluss buchen | Erstellen der Kreditorenrechnungsbuchungen, die noch nicht auf ein temporäres Eingangskonto gebucht wurden.                                                                                                                                                                                                                                                             | Kreditorenrechnungspool ohne Buchungsdetails                  |
 | Kreditorenrechnungspool               | Erstellen von Buchungen für den Kreditorenrechnungspool.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Buchung der Kreditorenrechnung          | Buchen von Kreditorenrechnungen, die in einer Erfassung sind.                                                                                                                                                                                                                                                                                                                 | Rechnungserfassung                                                |
 | Kreditor zieht erneut Solawechsel     | Erneutes Ziehen eines Solawechsels, der zuvor von der Bank der Organisation eingelöst wurde.                                                                                                                                                                                                                                                                      | Erfassung zum erneuten Ziehen von Solawechseln                                 |
 | Kreditor gleicht Solawechsel aus     | Erstellen von Buchungen für vom Kreditor ausgeglichene Solawechsel.                                                                                                                                                                                                                                                                                                          | Erfassung zum Ausgleich von Solawechseln                                 |
+
+
 
 
 

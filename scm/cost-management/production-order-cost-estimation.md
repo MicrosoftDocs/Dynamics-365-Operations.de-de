@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-order-cost-estimation"></a>Vorkalkulation für Produktionsauftrag
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zur Produktvorkalkulation. Die Produktvorkalkulation stellt die voraussichtlichen Material- und Kapazitätsverbrauchskosten für die Produktion eines Artikels in der geplanten Produktionsauftragsmenge bereit. 
 
 Nachdem Sie einen Produktionsauftrag erstellt haben, müssen Sie die Produktionskosten kalkulieren. Zweck ist es, den Artikel und den Arbeitsverbrauch für den Produktionsprozess zu schätzen, da diese Werte die Grundlage für die nachfolgenden Planungs- und Produktionsprozesse bilden.
@@ -59,6 +62,8 @@ Eine Vorkalkulation stellt auch die folgenden Informationen bereit:
 -   Vergleiche von Kosteninformationen aus vorherigen Produktionen
 -   Budget- und Planungsinformationen
 -   Vorkalkulation der zur Verwaltung bestimmter Kosten erforderlichen Produktionsgröße
+
+
 
 
 

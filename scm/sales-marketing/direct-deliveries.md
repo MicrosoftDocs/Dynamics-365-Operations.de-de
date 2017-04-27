@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="direct-deliveries"></a>Direktlieferungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen über Direktlieferungen. Dirketlieferungen sind Lieferungen, die direkt vom Kreditor an den Debitor gesendet werden.
 
 Direkte Lieferungen lassen sich Lieferzeiten verkürzen und Lagerhaltungskosten verringern, da die Produkte vor dem Versand an den Debitor nicht am eigenen Lagerort gelagert werden müssen.  
@@ -49,5 +52,7 @@ Beim Versuch, eine Auftragsposition mit dem Liefertyp **Direkte Lieferung** zu l
 
 ## <a name="warehouse"></a>Lagerort
 Beim Erstellen einer Direktlieferung kommen die Artikel, die Sie verkaufen, niemals physisch an Ihrem Lagerort an. Sie müssen allerdings trotzdem einen Lagerort in der Auftragsposition angeben. Ebenso können Entnahmeanforderungen in der Artikelmodellgruppe für den Artikel angegeben werden. Da jedoch die Artikel niemals physisch am Lagerort eingehen, werden diese Anforderungen ignoriert, wenn der Auftrag eine Direktlieferung ist.
+
+
 
 

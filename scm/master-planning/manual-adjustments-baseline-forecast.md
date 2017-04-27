@@ -1,5 +1,5 @@
 ---
-title: Nehmen von manuellen Regulierungen der Basisplanung vor
+title: Manuelle Anpassungen an der Grundplanung
 description: "In diesem Artikel wird beschrieben, wie Sie manuelle Anpassungen an einer Grundplanung vornehmen und Details der Planung anzeigen können."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Nehmen von manuellen Regulierungen der Basisplanung vor
+# <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Manuelle Anpassungen an der Grundplanung
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Artikel wird beschrieben, wie Sie manuelle Anpassungen an einer Grundplanung vornehmen und Details der Planung anzeigen können. 
 
@@ -35,11 +38,11 @@ Bevor Sie manuelle Anpassungen vornehmen, ist es wichtig, dass Sie einige Konzep
 ## <a name="grid-on-the-adjusted-demand-forecast-page"></a>Raster auf der Seite "Angepasste Bedarfsplanung“
 Die Seite **Angepasste Bedarfsplanung** umfasst ein Raster, das die folgende Struktur hat:
 
--   Die erste Spalte enthält Artikel, Artikelverteilungsschlüssel, Unternehmen usw., für die die Planung generiert wurde. Der Untertitel der Seite enthält eine Beschreibung der aktuellen Planungsdimensionen, die im Raster angezeigt werden. Wenn beispielsweise der Untertitel der Seite ist ** Unternehmen/Standort/Artikelverteilungsschlüssel **, und eine der Zeilenheader im Raster USMF **/1/D \_Alloc **, ist diese Zeile der die Kapazitätsplanung für das USMF-Unternehmen, 1 und den Standort ** D\_Alloc ** Artikelverteilungsschlüssel.
+-   Die erste Spalte enthält Artikel, Artikelverteilungsschlüssel, Unternehmen usw., für die die Planung generiert wurde. Der Untertitel der Seite enthält eine Beschreibung der aktuellen Planungsdimensionen, die im Raster angezeigt werden. Wenn beispielsweise der Untertitel der Seite **Unternehmen / Standort / Artikelverteilungsschlüssel** ist und eine der Zeilenbeschriftungen im Raster **USMF / 1 / D\_Alloc** ist, enthält diese Zeile die Planung für das Unternehmen USMF, Standort 1 und den Artikelverteilungsschlüssel **D\_Alloc**.
 -   Nachfolgende Spalten stellen die Planungszeitrahmen dar, für die die Planung für generiert wurde. Jede Spaltenüberschrift ist das erste Datum des Planungszeitrahmens, den die Spalte anzeigt.
 -   Die Werte in den Zellen stellen die Planung für einen Artikel, Artikelverteilungsschlüssel usw. für diesen bestimmten Planungszeitrahmen dar.
 
-## <a name="forecast-aggregation-and-deaggregation"></a>Planung und deaggregation Aggregation
+## <a name="forecast-aggregation-and-deaggregation"></a>Planungsaggregation und -disaggregation
 Der Untertitel der Seite enthält die Ebene der Planungsaggregation. 
 
 Wenn beispielsweise der Untertitel der Seite **Unternehmen/Standort/Verteilungsschlüssel/Artikelnummer/Farbe/Größe/Konfiguration/Stil** lautet, gibt es keine Planungsaggregation, und die Planung wird auf der Ebene des Artikels und der Dimensionen angezeigt. Um die Aggregation zu ändern, verwenden Sie die Seite **Planungsdimensionen ändern**, die Sie über das Anwendungsmenü öffnen können. 
@@ -50,7 +53,7 @@ Wenn Sie die Aggregation ändern, um in der Seite aggregiertere Daten anzuzeigen
 
 Beispielsweise haben Sie die Planung auf Artikelebene erzeugt, aber Sie wissen, dass der Bedarf für diesen Artikel für alle Standorte aufgrund einer verkaufsfördernden Maßnahme oder eines anderen ähnlichen Ereignisses zunimmt. In diesem Fall können Sie die Aggregation **Unternehmen/Artikelverteilungsschlüssel/Artikel** auf der Seite **Planungsdimensionen ändern** festlegen. Sie können die globale Planung für den Artikel für alle Standorte im Raster **Angepasste Bedarfsplanung** anpassen. Um die Auswirkung der Änderung für alle Standorte anzuzeigen, öffnen Sie die Seite **Bedarfsplanungspositionen**. Auf dieser Seite finden Sie eine Position für den Artikel für jeden Standort, die regulierte geplante Menge und die ursprüngliche geplante Menge. 
 
-Bei Anpassung der geplanten Menge für einen Planieren aggregierten vorgenommen wird, verwendet das System gewichtete Zuweisung, um die Änderung auf die Positionen zu verteilen, die die Aggregierung erstellen. 
+Wenn die Anpassung der geplanten Menge auf einer aggregierten Ebene vorgenommen wird, verwendet das System die gewichtete Zuteilung, um die Änderung unter den Positionen zu verteilen, die die Aggregation erstellen. 
 
 Sie können auch manuelle Anpassungen auf der Seite **Bedarfsplanungspositionen** vornehmen, indem Sie entweder den Wert **Gesamtmenge** oder die Zellen **Menge** im Raster für die Disaggregation ändern.
 
@@ -69,15 +72,17 @@ Auf der Seite **Bedarfsplanungsdetails** werden die folgenden Informationen in g
 **Hinweise:**
 
 -   Das Zuverlässigkeitsintervall, das im Abschnitt **Planung** der Seite angezeigt wird, stellt die Differenz zwischen der Obergrenze des Zuverlässigkeitsintervalls und der Untergrenze des Zuverlässigkeitsintervalls dar. Um die Werte für den oberen und unteren Grenzwert anzuzeigen, bewegen Sie die Maus über das Diagramm im Abschnitt **Historische(r) Bedarf und Planung, grafisch**.
--   Wenn Sie das Arbeitsgangs-Bedarfsplanungs-MicrosoftAzure-Lernfähigkeit-einer Dynamics 365 für Maschineservice verwenden, können Sie den Vertrauensbereichprozentsatz festlegen, den die Kapazitätsplanung, die generiert wird, besitzen sollten. Eine Zuverlässigkeitsintervall besteht aus einem Wertebereich, der eine gute Einschätzung der Bedarfsplanung ermöglicht. Eine Zuverlässigkeitsstufe von 95 % bedeutet beispielsweise, dass die Bedarfsplanung mit einer Chance von 5 % aus dem Intervallbereich der Zuverlässigkeit fällt.
+-   Wenn Sie den Dynamics 365 for Operations-Bedarfsplanungs Microsoft Azure Machine Learning-Dienst verwenden, können Sie die Zuverlässigkeitsstufe angeben, die die Planung, die generiert wird, haben soll. Eine Zuverlässigkeitsintervall besteht aus einem Wertebereich, der eine gute Einschätzung der Bedarfsplanung ermöglicht. Eine Zuverlässigkeitsstufe von 95 % bedeutet beispielsweise, dass die Bedarfsplanung mit einer Chance von 5 % aus dem Intervallbereich der Zuverlässigkeit fällt.
 
 Sie können manuelle Anpassungen an der Planung auf der Seite **Bedarfsplanungsdetails** vornehmen, indem Sie die Werte in der Zeile **Planung** im Abschnitt **Planung** ändern.
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Überwachen der Planungsgenauigkeit](monitor-forecast-accuracy.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Generieren einer statistischen Grundplanung](generate-statistical-baseline-forecast.md)
+
+
 
 

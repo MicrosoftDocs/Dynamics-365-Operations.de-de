@@ -1,5 +1,5 @@
 ---
-title: Kurzer Importieren/Exportieren der Verwendung
+title: Direktimport/-export verwenden
 description: "Zweck des Direktimports/-exports ist der Import und Export über weniger Schritte."
 author: margoc
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Führen Sie das Test-Datenübertragungs-Tool Beta" (für Dynamics AX auswählen " AX 2012)
+# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Führen Test Data Transfer Tool (Beta) für Dynamics AX (AX 2012) aus
+
+[!include[banner](../../includes/banner.md)]
+
 
 Zweck des Direktimports/-exports ist der Import und Export über weniger Schritte.
 
@@ -36,5 +39,7 @@ Wir haben eine Funktion für den Direktimport/-export hinzugefügt, um den Benut
 -   Sie müssen keine Verarbeitungsgruppe für den Direktimport/-export erstellen. Das System erstellt bei der Ausführung automatisch eine Verarbeitungsgruppe. Sie können außerdem den Verlauf der importieren/exportieren Daten speichern.
 
   Beachten Sie, dass der Direktimport/-export davon ausgeht, dass Sie mit den DIXF-Konzepten vertraut sind.
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Ausgeglichene Erfassungen für Einheitenbezogene Buchhaltung"
+title: "Ausgeglichene Erfassungen für einheitenübergreifende Buchhaltung"
 description: "Dieser Artikel zeigt, wie eine Erfassung automatisch ausgeglichen wird, wenn eine ausgleichende Finanzdimension auf der Sachkontoseite ausgewählt ist."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Ausgeglichene Erfassungen für Einheitenbezogene Buchhaltung
+# <a name="balanced-journals-for-interunit-accounting"></a>Ausgeglichene Erfassungen für einheitenübergreifende Buchhaltung
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel zeigt, wie eine Erfassung automatisch ausgeglichen wird, wenn eine ausgleichende Finanzdimension auf der Sachkontoseite ausgewählt ist. 
 
@@ -34,9 +37,9 @@ Wenn Buchhaltungseinträge nicht auf der Ebene der Finanzdimensionswerte ausgegl
 
 |                      |           |
 |----------------------|-----------|
-| 6100 – MSP – Organisationseinheit \_256 | 100,00 DR |
-| 6100 – NY – Organisationseinheit \_249  | 100,00 DR |
-| 2100 – MSP – Organisationseinheit \_256 | 200,00 CR |
+| 6100 – MSP – OU\_256 | 100,00 DR |
+| 6100 – NY – OU\_249  | 100,00 DR |
+| 2100 – MSP – OU\_256 | 200,00 CR |
 
 In diesem Fall werden die folgenden Salden bestimmt:
 
@@ -47,8 +50,10 @@ Die folgenden Buchhaltungseinträge werden daher automatisch erstellt, damit die
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Interunit-Soll) – MSP – Organisationseinheit \_256 | 100,00 DR |
-| (Interunit-Kredit) – NY – Organisationseinheit \_249 | 100,00 CR |
+| (Einheitenbezogen Soll) – MSP  – OU\_256 | 100,00 DR |
+| (Einheitenbezogen Haben) – NY – OU\_249 | 100,00 CR |
+
+
 
 
 

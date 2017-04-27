@@ -1,5 +1,5 @@
 ---
-title: Planen Sie den Kontenplan
+title: Ihren Kontenplan planen
 description: "Dieser Artikel enthält Informationen, die Ihnen helfen, Kontenpläne für Ihre Organisation zu planen."
 author: RobinARH
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-your-chart-of-accounts"></a>Planen Sie den Kontenplan
+# <a name="plan-your-chart-of-accounts"></a>Ihren Kontenplan planen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel enthält Informationen, die Ihnen helfen, Kontenpläne für Ihre Organisation zu planen.
 
@@ -34,7 +37,7 @@ Um Finanzdaten in einer Organisation zu verfolgen und zu verwalten, können Sie 
 
 Der Kontenplan ist eine strukturierte Liste der Hauptbuchkonten einer juristischen Person. Diese Liste wird verwendet, um Finanzberichte für Behörden und Eigentümer vorzubereiten. Die Konten sind nach Kontenarten gruppiert und wiederum in übergeordneten Kategorien zusammengefasst. Auf der allgemeinsten Ebene sind die Konten in Umsatzerlöse und Kosten (Betriebskonten) sowie Aktiva und Passiva (Bilanzkonten) unterteilt. 
 
-Ein Kontenplan kann freigegeben und von jeder juristischen Person in einer Organisation verwendet werden. Der Kontenplan, der von einer juristischen Person verwendet wird, wird auf der Seite ** Sachkonto ** definiert. 
+Ein Kontenplan kann freigegeben und von jeder juristischen Person in einer Organisation verwendet werden. Der Kontenplan für die juristischen Person wird auf der Seite **Sachkonto** definiert. 
 
 Hier einige der Faktoren, die Sie bei der Strukturierung des Kontenplans für Ihre Organisation berücksichtigen müssen:
 
@@ -48,10 +51,12 @@ Es wird empfohlen, die Hauptkonten mit Hauptkontokategorien verknüpfen, sodass 
 
 Verwenden Sie die Seite **Kontostrukturen konfigurieren**, um Kontostrukturen zu erstellen. Kontostrukturen definieren zulässige Kombinationen. Diese Kombinationen bilden zusammen mit den Hauptkonten einen Kontenplan. 
 
-**Legal entity overrides** 
+**Juristische Person überschreibt** 
 
-Nicht alle Hauptkonten sind für alle juristischen Personen gültig und andere werden möglicherweise nur für eine bestimmte Zeitperiode relevant. In diesem kann der Abschnitt "Überschreibungen der juristischen Person" dazu verwendet werden, um festzulegen, für welche Unternehmen das Hauptkonto ausgesetzt werden soll, wer der Besitzer ist und die Zeitperiode, während der die Dimension aktiv ist. Die Überschreibungen auf der freigegebenen Ebene können nicht einschränkender als die Überschreibungen auf der Ebene der juristischen Person sein.
+Nicht alle Hauptkonten sind für alle juristischen Personen gültig und manche sind möglicherweise nur für eine bestimmte Zeitperiode relevant. In diesem kann der Abschnitt "Überschreibungen der juristischen Person" dazu verwendet werden, um festzulegen, für welche Unternehmen das Hauptkonto ausgesetzt werden soll, wer der Besitzer ist und die Zeitperiode, während der die Dimension aktiv ist. Die Überschreibungen auf der freigegebenen Ebene können nicht einschränkender als die Überschreibungen auf der Ebene der juristischen Person sein.
 
-Weitere Informationen finden Sie financial-dimensions.md Finanzdimensionen [] ().
+Weitere Informationen finden Sie unter [Finanzdimensionen](financial-dimensions.md).
+
+
 
 

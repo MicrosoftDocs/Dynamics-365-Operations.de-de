@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="round-off-amount-for-depreciation-calculations"></a>Betrag der Rundung für Abschreibungsberechnungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel erläutert das Feld "Rundungsart Abschreibung", das Sie im Wertmodell und auf den Einstellungsseiten des Abschreibungsbuchs finden.
 
-Runde-weg Abschreibungsbeträge werden für jedes Buch festgelegt. Runde-weg Abschreibungsbeträge werden im Abschreibungsprofil, die die zukünftige Abschreibung und den Wert der Anlage aufweist, sowie in den Abschreibungsvorschlägen verwendet. Den niedrigsten Abschreibungsbetrag eingeben, der für dieses Buch zulässig ist. 
+Rundungsart Abschreibungbeträge werden für jedes Buch festgelegt. Gerundete Abschreibungsbeträge werden im Anlagenabschreibungsprofil, das die zukünftige Abschreibung und den Wert der Anlage anzeigt, sowie in den Abschreibungsvorschlägen verwendet. Den niedrigsten Abschreibungsbetrag eingeben, der für dieses Buch zulässig ist. 
 
 Unabhängig von der eingerichteten Rundung wird der Abschreibungsbetrag im letzten Abschreibungszeitraum nicht gerundet. Am Ende des letzten Abschreibungszeitraums muss der Wert der Anlage 0 (Null) oder der Schrottwert sein, wenn Schrottwert verwendet wird.
 
@@ -43,6 +46,8 @@ Die Abschreibung ohne Rundung beträgt 2.444,44. Wie die folgende Tabelle zeigt,
 | Rundung 1,00   | 2.444,00            |
 | Rundung 10,00  | 2.440,00            |
 | Rundung 100,00 | 2.400,00            |
+
+
 
 
 

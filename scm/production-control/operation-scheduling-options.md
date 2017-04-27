@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling-options"></a>Terminierungsoptionen für Operations
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Thema werden die Optionen für die Grobterminierung beschrieben. Diese Grobplanung wird häufig verwendet, wenn eine allgemeine Schätzung der Dauer des Produktionsprozesses benötigt wird.
 
 Die Grobterminierung stellt den voraussichtlichen Zeitplan für einen Produktionsauftrag dar:
@@ -128,6 +131,8 @@ Sie können die aktuellen Werte als Standardwerte speichern. Es gibt zwei Option
 <a name="see-also"></a>Siehe auch
 --------
 
-[Operations scheduling](operations-scheduling.md)
+[Grobterminierung](operations-scheduling.md)
+
+
 
 

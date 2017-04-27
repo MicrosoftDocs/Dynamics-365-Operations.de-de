@@ -1,5 +1,5 @@
 ---
-title: Kostenkategorien in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung
+title: Kostenkategorien, die in der Produktionssteuerung und in der Projektverwaltungsbuchhaltung verwendet werden
 description: "Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. Dieser Artikel bietet Informationen zu den Kostenkategorien, die Sie für diese Arten von Produktionsarbeiten für Produktion und Projektzwecke definieren müssen."
 author: YuyuScheller
 manager: AnnBe
@@ -28,14 +28,19 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kostenkategorien in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung
 
+[!include[banner](../includes/banner.md)]
+
+
 Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. Dieser Artikel bietet Informationen zu den Kostenkategorien, die Sie für diese Arten von Produktionsarbeiten für Produktion und Projektzwecke definieren müssen.
 
-Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. In diesem Fall ist eine Kostenkategorie für die Produktion und die Projektzwecke erforderlich. Wenn eine Kostenkategorie in der Produktion als auch in Projekten verwendet wird, müssen zusätzliche projektbezogene Informationen definiert werden. So können sich beispielsweise die Stundenkosten, die Projekten zugeordnet sind, von den Stundenkosten für die Produktion unterscheiden. Verwenden Sie die Seite **Kostenkategorien**, um eine Kostenkategorie zu definieren, die in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung verwendet wird. **Hinweis:** Die Kostenrechnung enthält zwar die Seite **Projektkategorien**, diese steht jedoch in keinerlei Zusammenhang mit den in diesem Thema beschriebenen Funktionen. Wenn Sie eine Kostenkategorie in Projekten verwenden, hat die Seite **Kostenkategorien** zusätzliche Registerkarten, die zusätzliche projektbezogene Informationen anzeigen. Zu diesen Informationen gehören die Kategoriegruppe, ein Abrechnungscode und Sachkonten, die der Kostenkategorie zugewiesen werden.
+Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. In diesem Fall ist eine Kostenkategorie für die Produktion und die Projektzwecke erforderlich. Wenn eine Kostenkategorie in der Produktion und in Projekten verwendet werdeb, müssen zusätzliche, projektbezogene Informationen definiert werden. So können sich beispielsweise die Stundenkosten, die Projekten zugeordnet sind, von den Stundenkosten für die Produktion unterscheiden. Verwenden Sie die Seite **Kostenkategorien**, um eine Kostenkategorie zu definieren, die in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung verwendet wird. **Hinweis:** Die Kostenrechnung enthält zwar die Seite **Projektkategorien**, diese steht jedoch in keinerlei Zusammenhang mit den in diesem Thema beschriebenen Funktionen. Wenn Sie eine Kostenkategorie in Projekten verwenden, hat die Seite **Kostenkategorien** zusätzliche Registerkarten, die zusätzliche projektbezogene Informationen anzeigen. Zu diesen Informationen gehören die Kategoriegruppe, ein Abrechnungscode und Sachkonten, die der Kostenkategorie zugewiesen werden.
 
 -   Die Kostenkategorie muss einer Kategoriegruppe zugewiesen werden, in der der Buchungstyp **Stunden** unterstützt wird.
 -   Die Abrechnungscodes geben Standardinformationen an, auf welche Weise gemeldete Zeiten für ein Projekt in Rechnung gestellt werden.
 -   Üblicherweise werden die kosten- und verkaufsbezogenen Sachkonten für die Kategoriegruppe definiert, die der Kostenkategorie zugewiesen ist. Für eine einzelne Kostenkategorie können jedoch auch individuelle Konten definiert werden.
 
 Zusätzliche Schaltflächen auf der Seite **Kostenkategorien** ermöglichen Ihnen den Zugriff auf projektbezogene Informationen zu einer ausgewählten Kostenkategorie. Durch Klicken auf die Schaltflächen lassen sich beispielsweise projektbezogene Buchungen anzeigen sowie Mitarbeiter oder Projekte, Kosten pro Stunde und Verkaufspreise definieren und Berichte anzeigen.
+
+
 
 

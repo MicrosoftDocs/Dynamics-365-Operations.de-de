@@ -1,5 +1,5 @@
 ---
-title: Berechnen Sie Materialentnahme
+title: Materialentnahme berechnen
 description: "Dieser Artikel enthält Informationen zu unterschiedlichen Optionen, die in Zusammenhang mit der Berechnung des Materialverbrauchs stehen."
 author: YuyuScheller
 manager: AnnBe
@@ -27,22 +27,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="calculate-material-consumption"></a>Berechnen Sie Materialentnahme
+# <a name="calculate-material-consumption"></a>Materialentnahme berechnen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel enthält Informationen zu unterschiedlichen Optionen, die in Zusammenhang mit der Berechnung des Materialverbrauchs stehen. 
 
 Die folgenden Optionen, die mit der Berechnung des Materialverbrauchs zusammenhängen, sind auf den Registerkarten **Einstellungen** und **Verbrauch pro Schritt** auf dem Inforegister **Positionsdetails** der Seite **Stücklisten** verfügbar.
 
 ## <a name="variable-and-constant-consumption"></a>Variabler und konstanter Verbrauch
-** Im Feld Verbrauch ist ** Feld aus, ob als Verbrauch konstante Menge oder auf variable Menge berechnet werden soll. Wählen Sie aus ** Konstante ** wenn eine fixe Menge oder ein Volumen für die Produktion erforderlich, unabhängig von der Menge, die produziert wird. Wählen Sie **Variable** aus, was die Standardeinstellung ist, wenn die erforderliche Menge des Materials in den fertigen Waren im Verhältnis zur Anzahl der fertigen Waren steht, die produziert werden.
+Im Feld **Verbrauch** können Sie auswählen, ob der Verbrauch auf konstanten Mengen oder auf variablen Mengen berechnet werden soll. Wählen Sie **Konstant**  wenn eine feste Menge oder ein festes Volumen benötigt wird, und zwar unabhängig von der produzierten Menge. Wählen Sie **Variable** aus, was die Standardeinstellung ist, wenn die erforderliche Menge des Materials in den fertigen Waren im Verhältnis zur Anzahl der fertigen Waren steht, die produziert werden.
 
 ## <a name="calculating-consumption-from-a-formula"></a>Verbrauch nach einer Formel berechnen
 Im Feld **Formel** können Sie verschiedene Formeln für die Berechnung des Materialverbrauchs einrichten. Wenn Sie den Standardwert **Standard** verwenden, wird der Verbrauch nicht nach einer Formel berechnet. Die folgenden Formeln funktionieren zusammen mit den Feldern **Höhe**, **Breite**, **Tiefe**, **Dichte** und **Konstante**:
 
--   \* Höhen Konstante
--   \* Höhen Breite \* Konstante
--   Breite Höhen \* \* Tiefen \* Konstante
--   (Höhen \* Breite \* Tiefe/-Dichte " \*
+-   Höhe \* Konstante
+-   Höhe \* Breite \* Konstante
+-   Höhe \* Breite \* Tiefe \* Konstante
+-   (Höhe \* Breite \* Tiefe/Dichte) \* Konstante
 
 ## <a name="rounding-up-and-multiples"></a>Aufrunden und Vielfache
 Zusammen ermöglichen Ihnen die Felder **Aufrunden** und **Vielfache**, den Materialverbrauchswert aufzurunden. So können Sie beispielsweise den Wert entsprechend der Handhabungseinheit aufrunden, in der das Rohmaterial für die Produktion entnommen wird. Die folgenden Optionen stehen im Feld **Aufrunden** zur Verfügung: **Menge**, **Messung** und **Verbrauch**.
@@ -53,7 +56,7 @@ Wenn Sie **Menge** als Aufrundungsmechanismus auswählen, muss die Menge ein Meh
 
 ### <a name="measurement"></a>Verbrauchsberechnung
 
-In der Regel wählen Sie **Messung** als Aufrundungsmechanismus aus, wenn das Rohmaterial in bestimmten Abmessungen geliefert wird. Beispielsweise ist ein Stück eines 2-Meter-Metallrohrs für eine fertige Ware erforderlich, und das Metallrohr wird in Längen von 4,5 Metern gelagert. In diesem Fall kann der Aufrundungsmechanismus **Messung** verwendet werden, um zu berechnen, wie viele Metallrohre erforderlich sind, um eine bestimmte Stückanzahl fertige Ware zu erzeugen. Bei diesem Beispiel wird das ** Formel ** Feld auf festgelegt Höhen ** \* Konstante **. ** Höhe ** Das Feld wird auf 2 festgelegt ** ** um die Länge des Rohrs anzugeben, das für das Endprodukt erforderlich ist. Das Feld **Mehrfach** wird auf **4,5** festgelegt, um anzugeben, dass das Rohr in Längen von 4,5 Metern entnommen wird. Hier ist die Berechnung:
+In der Regel wählen Sie **Messung** als Aufrundungsmechanismus aus, wenn das Rohmaterial in bestimmten Abmessungen geliefert wird. Beispielsweise ist ein Stück eines 2-Meter-Metallrohrs für eine fertige Ware erforderlich, und das Metallrohr wird in Längen von 4,5 Metern gelagert. In diesem Fall kann der Aufrundungsmechanismus **Messung** verwendet werden, um zu berechnen, wie viele Metallrohre erforderlich sind, um eine bestimmte Stückanzahl fertige Ware zu erzeugen. Bei diesem Beispiel wird das Feld **Formel** auf festgelegt **Höhen\*Konstante** festgelegt. Das Feld **Höhe** wird auf **2** festgelegt, um die Länge des Rohrs anzugeben, das für das Endprodukt erforderlich ist. Das Feld **Mehrfach** wird auf **4,5** festgelegt, um anzugeben, dass das Rohr in Längen von 4,5 Metern entnommen wird. Hier ist die Berechnung:
 
 1.  Anzahl der Vielfachen, die für 10 Stück der fertigen Ware erforderlich sind: 10 ÷ 2 = 5 Stück
 2.  Gesamtverbrauch: 4,5 × 5 = 22,5 Meter des Metallrohrs
@@ -78,5 +81,7 @@ In der Regel wählen Sie** Verbrauch** als Aufrundungsmechanismus aus, wenn Rohm
 | 200,00      | 40.0000  |
 
 Die Stücklistenmenge (BOM) ist 1 und die Produktionsmenge ist 110. Die Formel für den Verbrauch ist "Von Serien (Menge) = Verbrauch. Da die Produktionsmenge 110 ist, fällt sie in die "Von-100-Serie". Die Menge ist daher 20.
+
+
 
 

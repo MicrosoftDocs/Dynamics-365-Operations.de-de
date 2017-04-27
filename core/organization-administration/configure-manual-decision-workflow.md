@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurieren einer manuellen Entscheidung in einem Workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Entscheidung konfigurieren können.
 
 Klicken Sie zum Konfigurieren einer manuellen Entscheidung im Workflow-Editor mit der rechten Maustaste auf die manuelle Entscheidung, und klicken Sie dann auf **Eigenschaften**, um die Seite **Eigenschaften** zu öffnen. Verwenden Sie dann die folgenden Schritte aus, um die Eigenschaften der manuellen Entscheidung zu konfigurieren.
@@ -95,8 +98,8 @@ Sie können Benachrichtigungen an Personen senden, wenn eine Entscheidung getrof
 
 1.  Klicken Sie im linken Bereich auf **Benachrichtigungen**.
 2.  Aktivieren Sie das Kontrollkästchen neben den Ereignissen, für die Benachrichtigungen gesendet werden sollen:
-    -   **\[Auswahl 1\]** – der zugeordnete Benutzer erhält aktiviert **\[Auswahl 1 **\].
-    -   **\[Auswahl 2\]** – der zugeordnete Benutzer erhält aktiviert **\[Auswahl 2 **\].
+    -   **\[Auswahl 1\]** – Der zugewiesene Benutzer hat **\[Auswahl 1\]** gewählt.
+    -   **\[Auswahl 2\]** – Der zugewiesene Benutzer hat **\[Auswahl 2\]** gewählt.
     -   **Delegieren** – Der zugewiesene Benutzer hat die Entscheidung einem anderen Benutzer zugewiesen.
     -   **Eskalieren** – Der zugewiesene Benutzer hat die Entscheidung nicht innerhalb der vorgesehenen Zeit getroffen.
 
@@ -148,10 +151,10 @@ Sie können Benachrichtigungen an Personen senden, wenn eine Entscheidung getrof
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmtes Microsoft Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbare Benutzer</strong> Liste enthält alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -213,10 +216,10 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem eine manuelle Aufgabe zugewiese
     </tr>
     <tr class="even">
     <td>Benutzer</td>
-    <td>Bestimmtes Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbare Benutzer</strong> Liste enthält alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, um die Entscheidung zuzuweisen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, um die Entscheidung zuzuweisen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -235,7 +238,7 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem eine manuelle Aufgabe zugewiese
     <li>Wählen Sie in der Liste <strong>Warteschlangenname</strong> <strong>Bedingte Warteschlange</strong>aus.</li>
     </ol></li>
     </ol>
-    <strong>Hinweis:</strong> wird dieses Kontrollkästchen nur einige für Workflow, z Anfrageverwaltung verwendet.</td>
+    <strong>Hinweis:</strong> Diese Option wird nur für einige Workflows verwendet, wie z.B. Anfrageverwaltung.</td>
     </tr>
     </tbody>
     </table>
@@ -258,9 +261,9 @@ Wenn der Benutzer die Entscheidung nicht innerhalb der vorgesehenen Zeit trifft,
     |----------|----------------------------|
     | 1        | Zuweisen zu: Doris           |
     | 2        | Zuweisen zu: Elke            |
-    | 3        | Call-Beendigung: \[Auswahl 1\] |
+    | 3        | Abschließende Aktivität: \[Auswahl 1\] |
 
-    In diesem Beispiel wird die überfällige Entscheidung Doris zugewiesen. Trifft Doris die Entscheidung nicht innerhalb der vorgesehenen Zeit, wird die Entscheidung Elke zugewiesen. Trifft Elke die Entscheidung nicht innerhalb der vorgesehenen Zeit trifft, wählt das System **\[Auswahl 1\]** als Entscheidung ausgewählt.
+    In diesem Beispiel wird die überfällige Entscheidung Doris zugewiesen. Trifft Doris die Entscheidung nicht innerhalb der vorgesehenen Zeit, wird die Entscheidung Elke zugewiesen. Wenn Erin die Entscheidung nicht innerhalb der vorgesehenen Zeit trifft, wählt das System  **\[Auswahl 1\]** als Entscheidung.
 3.  Klicken Sie auf **Eskalation hinzufügen**, um dem Eskalationspfad einen Benutzer hinzuzufügen. Wählen Sie eine der Optionen in der folgenden Tabelle aus, und führen Sie dann die zusätzlichen Schritte für diese Option aus, bevor Sie mit Schritt 4 fortfahren.
     <table>
     <colgroup>
@@ -303,10 +306,10 @@ Wenn der Benutzer die Entscheidung nicht innerhalb der vorgesehenen Zeit trifft,
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmtes Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbare Benutzer</strong> Liste enthält alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, an die die Entscheidung eskaliert werden soll, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, an die die Entscheidung eskaliert werden soll, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -335,6 +338,8 @@ Gehen Sie folgendermaßen vor, wenn die Entscheidung in einer bestimmten Zeit ge
     -   **Jahre** – Wählen Sie den Tag, die Woche und den Monat aus, bis zu dem die Entscheidung getroffen werden muss. Sie können z. B. angeben, dass die Entscheidung bis Freitag der dritten Woche im Dezember getroffen werden soll.
 
 4.  Wenn die Zeitgrenze überschritten wird, wird die Entscheidung automatisch getroffen. Wählen Sie in der Liste **Aktivität** die Option aus, die automatisch vom System ausgewählt werden soll.
+
+
 
 
 

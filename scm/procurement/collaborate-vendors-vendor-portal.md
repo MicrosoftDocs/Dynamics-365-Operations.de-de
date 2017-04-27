@@ -1,6 +1,6 @@
 ---
-title: Arbeiten mit Kreditoren zusammen, indem Sie verwenden das Kreditorenportal
-description: "In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen beziehen sich nur auf die Mai 2016 &amp;-Versionen im Februar 2016 von Microsoft Dynamics AX verwendet."
+title: Zusammenarbeit mit Kreditoren mithilfe des Kreditorenportals
+description: "In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen gelten nur für die Versionen Februar 2016 &amp; und Mai 2016 von Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Arbeiten mit Kreditoren zusammen, indem Sie verwenden das Kreditorenportal
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Zusammenarbeit mit Kreditoren mithilfe des Kreditorenportals
 
-In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen beziehen sich nur auf die Mai 2016 &amp;-Versionen im Februar 2016 von Microsoft Dynamics AX verwendet.
+[!include[banner](../includes/banner.md)]
 
-Die Informationen in diesem Thema betreffen nur die Versionen Februar 2016 und Mai 2016 von Microsoft Dynamics AX. Die Kreditorenportalfunktionen sind über erweiterte Kreditorenzusammenarbeitfunktionen in Dynamics 365 für Arbeitsgangsversion 1611 ersetzt. Weitere Informationen zur neuen Kreditorenzusammenarbeitfunktionen, finden [Sie mithilfe der zusammenarbeit Kreditoren, z mit externen Kreditoren] ()vendor-collaboration-work-external-vendors.md zu arbeiten.  
+
+In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen gelten nur für die Versionen Februar 2016 &amp; und Mai 2016 von Dynamics AX.
+
+Die Informationen in diesem Thema betreffen nur die Versionen Februar 2016 und Mai 2016 von Microsoft Dynamics AX. Die Kreditorenportalfunktion wurde durch die erweiterte Kreditorenzusammenarbeitfunktion in Dynamics 365 for Operations Version 1611 ersetzt. Weitere Informationen über die neue Kreditorenzusammenarbeitsfunktion finden Sie unter [Nutzung der Kreditorenzusammenarbeit mit externen Kreditoren](vendor-collaboration-work-external-vendors.md)  
 
 Das Kreditorenportal wendet sich an Kreditoren, die über keine EDI-Iintegration (Electronic Data Interchange) mit Microsoft Dynamics AX für den Austausch von Bestellungsinformationen (PO) verfügen. Das Portal ermöglicht Einkaufsvertretern, eine PO an den Kreditor zu senden und die Antwort „Bestätigt“ oder „Abgelehnt“ direkt in Dynamicx AX zu erhalten.  
 
@@ -66,9 +69,9 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 | Sie senden die neue Version der Bestellung an das Kreditorenportal. | Eine neue Version wird im Kreditorenportal erfasst, und der Status wird in **Externe Prüfung** geändert. |
 | Der Kreditor genehmigt die neue Version der PO.           | Der Status wird zurückgeändert in **Bestätigt**.                                                                |
 
-Um die Versionen der Bestellung, die an den Kreditor gesendet wurden und die Antworten des Kreditors, auf Erfassungen finden ** ** &gt; ** Bestätigungsanforderungen ** aus der Bestellung.  
+Um die Versionen der Bestellung anzuzeigen, die an den Kreditor gesendet wurden, sowie die Antworten des Kreditors, klicken Sie auf **Erfassungen** &gt; **Bestätigungsanforderungen**  der Bestätigungsanforderung  
 
-Bestellungen, die dem Kreditor für eine Antwort zugesendet wurden und den Status **Externe Prüfung**“ haben, werden entweder in der Liste **Bestellungen wurden an das Kreditorenportal gesendet, Warten auf Antwort** oder **Bestellungen wurden an das Kreditorenportal gesendet, Antwort erfordert Aktivität** ausgewählt. Wenn Sie eine Bestellung, die an den Kreditor gesendet wurde, ändern, sodass der Status zurück zu **Genehmigt** wechselt, wird die Bestellung nicht mehr in diesen Listen angezeigt. So finden, ob es zuvor eine Antwort für den Auftrag vom Kreditor vorgenommen, auf ** Erfassungen ** &gt; ** Bestätigungsanforderungen **.  
+Bestellungen, die dem Kreditor für eine Antwort zugesendet wurden und den Status **Externe Prüfung**“ haben, werden entweder in der Liste **Bestellungen wurden an das Kreditorenportal gesendet, Warten auf Antwort** oder **Bestellungen wurden an das Kreditorenportal gesendet, Antwort erfordert Aktivität** ausgewählt. Wenn Sie eine Bestellung, die an den Kreditor gesendet wurde, ändern, sodass der Status zurück zu **Genehmigt** wechselt, wird die Bestellung nicht mehr in diesen Listen angezeigt. Um sehen, ob es zuvor eine Antwort für den Auftrag vom Kreditor gab, klicken Sie auf **Erfassung** &gt; **Bestätigungsanforderungen**.  
 
 Kreditoren müssen die Bestellung im Kreditorenportal nicht bestätigen. Sie können auch eine E-Mail-Nachricht senden oder ihrer Zustimmung zu einer Bestellung über andere Kanäle vermitteln. Sie können den Auftrag dann manuell in Dynamics AX bestätigen. In diesem Fall erhalten Sie eine Warnung, dass der Auftrag bestätigt wird, obwohl keine Antwort vom Kreditor vorhanden ist. Die Bestellung wird dann in der Bestätigungshistorie im Kreditorenportal als offener, bestätigter Auftrag ohne Antworten aufgeführt. Der Kreditor hat zusätzlich nicht mehr die Möglichkeit, die Bestellung zu bestätigen oder abzulehnen.  
 
@@ -97,5 +100,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 [Konfigurieren der Sicherheit für Kreditorenportalbenutzer](configure-security-vendor-portal-users.md)
 
 [Arbeitsbereich für Kreditor-Kooperationsrechungen](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+
+
 
 

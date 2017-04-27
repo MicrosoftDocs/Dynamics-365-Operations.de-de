@@ -1,5 +1,5 @@
 ---
-title: Herstellkostenkalkulationsgruppen
+title: "Stücklistenkalkulationsgruppen"
 description: "Dieser Artikel enthält Informationen zu Herstellungskostenkalkulationsgruppen und wie man sie einrichtet. Um eine Herstellkostenkalkulation auszuführen, müssen Sie entweder Berechnungsgruppen einrichten und sie einzelnen Artikeln zuweisen oder eine Standardberechnungsgruppe festlegen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen dann auf der Seite &quot;Herstellkostenkalkulation&quot; als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation."
 author: YuyuScheller
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-groups"></a>Herstellkostenkalkulationsgruppen
+# <a name="bom-calculations-groups"></a>Stücklistenkalkulationsgruppen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel enthält Informationen zu Herstellungskostenkalkulationsgruppen und wie man sie einrichtet. Um eine Herstellkostenkalkulation auszuführen, müssen Sie entweder Berechnungsgruppen einrichten und sie einzelnen Artikeln zuweisen oder eine Standardberechnungsgruppe festlegen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen dann auf der Seite "Herstellkostenkalkulation" als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation. 
 
-Auf der Seite **Parameter für Lager- und Lagerortverwaltung** ist eine Standardberechnungsgruppe erforderlich oder auf der Seite **Details für freigegebene Produkte** eine produktspezifische Berechnungsgruppe. Das System sucht zunächst die Berechnungsgruppe, die auf der eingerichtet wird ** freigegebene Produkte ** Seite. Sind dort keine Berechnungsgruppe sucht, sieht es auf der ** Bestands- und Lagerverwaltungsparameter ** Seite. Wenn das System eine Berechnungsgruppe nicht gefunden werden, wird dem Benutzer eine Fehlermeldung für die Berechnung. Eine Berechnungsgruppe enthält Richtlinien für das Einstandspreismodell, das Verkaufspreismodell und die Prüfliste der Warnungen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen auf der Seite **Herstellkostenkalkulation** als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation.
+Auf der Seite **Parameter für Lager- und Lagerortverwaltung** ist eine Standardberechnungsgruppe erforderlich oder auf der Seite **Details für freigegebene Produkte** eine produktspezifische Berechnungsgruppe. Das System sucht zuerst nach Berechnungsgruppeneinstellungen auf der Seite **Produktdetails freigeben**. Wenn dort keine Berechnungsgruppe gefunden wird, sucht  esauf der Seite **Parameter für Lager- und Lagerortverwaltung**. Wenn das System keine Berechnungsgruppe findet, erhält der Benutzer während der Berechnung eine Fehlermeldung. Eine Berechnungsgruppe enthält Richtlinien für das Einstandspreismodell, das Verkaufspreismodell und die Prüfliste der Warnungen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen auf der Seite **Herstellkostenkalkulation** als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation.
 
 ## <a name="purposes-of-bom-calculation-groups"></a>Zwecke der Herstellkostenkalkulationsgruppen
 Sie weisen eine Herstellkostenkalkulationsgruppe Artikeln aus mehreren Gründen zu:
@@ -72,7 +75,7 @@ Auf dem Inforegister **Warnungen** wählen Sie die Optionen für alle Warnhinwei
 Standardeinstellungen in den Parametern für Lager- und Lagerortverwaltung.
 --------------------------------------------------------------
 
-Da Berechnungsgruppen erforderlich sind, um Berechnungen durchzuführen, müssen Sie in den Lagerverwaltungsparametern eine Standardberechnungsgruppe einrichten. Diese Einstellung ermöglicht Unternehmen über eine Standardkostengruppe und Gewinnvorgaben für alle Artikel zu verfügen. Werden dann für einen bestimmten Artikel spezielle Berechnungsanforderungen benötigt, kann der Benutzer diesem Artikel eine andere Berechnungsgruppe zuweisen. Normalerweise können Sie keine Berechnungsgruppen für Stücklisten-Komponentenartikel statt für Stücklistenartikel festlegen. Sollten Warnmeldungen angezeigt werden, können Berechnungsgruppen angewendet werden. Eine Berechnungsgruppe, die einem Artikel zugewiesen ist, überschreibt den Standardwert, der in den Lagerverwaltungsparametern eingerichtet ist. Sie können der Standardparameter ** Kostenmanagement ** ** &gt; mit installierten Lagerbuchhaltungsmethoden der buchführung einrichten ** ** &gt;-Parameter ** ** &gt; Bei der Bestandsbuchhaltung ** ** &gt; Berechnungsgruppe **. Wenn Sie eine Standardkonfigurationsgruppe einrichten, können Sie auch Warnbedingungen konfigurieren, die Benutzer während des Vorgangs der Stücklistenberechnung bestätigen müssen, sollte die ausgewählte Komponente Berechnungsfehler verursachen.
+Da Berechnungsgruppen erforderlich sind, um Berechnungen durchzuführen, müssen Sie in den Lagerverwaltungsparametern eine Standardberechnungsgruppe einrichten. Diese Einstellung ermöglicht Unternehmen über eine Standardkostengruppe und Gewinnvorgaben für alle Artikel zu verfügen. Werden dann für einen bestimmten Artikel spezielle Berechnungsanforderungen benötigt, kann der Benutzer diesem Artikel eine andere Berechnungsgruppe zuweisen. Normalerweise können Sie keine Berechnungsgruppen für Stücklisten-Komponentenartikel statt für Stücklistenartikel festlegen. Sollten Warnmeldungen angezeigt werden, können Berechnungsgruppen angewendet werden. Eine Berechnungsgruppe, die einem Artikel zugewiesen ist, überschreibt den Standardwert, der in den Lagerverwaltungsparametern eingerichtet ist. Der Standardparameter kann unter **Kostenmanagement** &gt; **Einrichtung der Bestandsbuchhaltungsrichtlinien** &gt; **Parameter** &gt; **Bestandsbuchhaltung**  &gt; **Berechnungsgruppe** eingerichtet werden. Wenn Sie eine Standardkonfigurationsgruppe einrichten, können Sie auch Warnbedingungen konfigurieren, die Benutzer während des Vorgangs der Stücklistenberechnung bestätigen müssen, sollte die ausgewählte Komponente Berechnungsfehler verursachen.
 Anzeigen von Warnmeldungen auf der Seite "Abschließen"
 ------------------------------------------
 
@@ -85,5 +88,7 @@ Eine Herstellkostenkalkulation generiert Warnmeldungen. Sie können Warnungen zu
 -   Kennzeichnung, wenn von dem Artikel in einer Stücklistenposition der gewünschte Rentabilitätsprozentwert nicht erreicht wird
 
 Sie können mehrere Herstellkostenkalkulationsgruppen je nach Bedarf an Variationen für Warnmeldungen definieren. So kann beispielsweise bereits eine einzelne Herstellkostenkalkulationsgruppe mit Warnbedingungen für eine aktive Stückliste, für eine Nullmenge bei einer Komponente sowie für den Kostenwert "0" (Null) bei einer Komponente ausreichend sein. Beim Starten einer Herstellkostenkalkulation können die Warnbedingungen, die der Herstellkostenkalkulationsgruppe zugeordnet sind, optional außer Kraft gesetzt werden. Sie können auch Warnbedingung hinzufügen oder entfernen. So kann beispielsweise die Warnbedingung für einen aktiven Arbeitsplan entfernt werden, wenn in einer bestimmten Situation keine Arbeitsplandaten vorliegen. **Hinweis:** Zeit und Anwesenheit enthält eine **Berechnungsgruppen**-Seite, jedoch besitzt diese Seite keine Beziehung zu den Herstellkostenkalkulationsgruppen. Arbeitskräfte können in Zeit und Anwesenheit Berechnungsgruppen zugewiesen werden, die die Gruppierung von Arbeitskräften widerspiegeln, die dem gleichen Supervisor oder Manager zugeordnet sind. Die Berechnung der Erfassungen von Arbeitskräften kann entweder automatisch erfolgen oder manuell von einem Supervisor oder Manager vorgenommen werden.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: ESR-Debitorenzahlungsimport
-description: "Dieses Thema enthält Informationen zum Importieren von Debitorenzahlungen in ESR-Format."
+title: "ESR-Debitorenzahlungen für Importe"
+description: Unter dem folgenden Thema finden Sie Informationen zum Importieren von Debitorenzahlungen in das ESR-Forrmat.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,30 +25,35 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="esr-customer-payments-import"></a>ESR-Debitorenzahlungsimport
+# <a name="esr-customer-payments-import"></a>ESR-Debitorenzahlungen für Importe
 
-Dieses Thema enthält Informationen zum Importieren von Debitorenzahlungen in ESR-Format.
+[!include[banner](../includes/banner.md)]
 
-ESR ist ein elektronischer Schuldner-Service, Zahlungsbelege der verwendet, um Geld erfasst. Hierbei handelt es sich um das Standardsystem der elektronische Zahlungsmethode, das von den schweizerischen Buchen erstellt wird. Sie können im ESR-Format Debitorenzahlungsdateien erhalten, das Buchungen und Bankgebühren enthalten kann. Diese Funktionalität wird für importierte Debitorenbuchungen auf Grundlage Zahlungsreferenzen vorgesehen, die ursprünglich in Microsoft Dynamics 365 für Arbeitsgänge generiert wurden und auf den Zahlungsbeleg gedruckt.
 
-## <a name="generate-payment-references"></a>Generieren Sie Zahlungsreferenzen
-Zahlungsreferenzen sollten auf den Zahlungsbeleg gedruckt werden, nachdem sie gebucht wurde. Sie können auf die Zahlungsreferenzen ** Rechnungserfassung ** Seite für den ausgewählten Auftrag auch überprüfen. Um Zahlungsreferenzen zu generieren, müssen die folgenden Einstellungen festgelegt werden.
+Unter dem folgenden Thema finden Sie Informationen zum Importieren von Debitorenzahlungen in das ESR-Forrmat.
 
-1.  Legen Sie die Bankkontoeinstellungen auf ** ESR **, BESR-ID ** ** fest und Bankleitzahl ** **.
-2.  Legt das ** Nummer Zeichen für Postgirokonto ** Feld auf der ** Debitorenparameter ** Seite der ** Sachkonto und Mehrwertsteuer ** Registerkarte fest. Dies definiert, wie viele Symbole vom Debitorenkonto in der Zahlungsreferenz einbezogen werden sollen.
-3.  Der Verkaufsrechnungsnummernkreis soll im richtigen Format (es sollte Symbole nicht anders als Ziffern haben und dieses nicht enthalten soll führende null) sein.
-4.  ** Orange ** Das Format muss für das Debitorenkonto im Feld ** auf einer Debitorenrechnung ** ** Feld auf der Rechnung und Lieferung ** Registerkarte angegeben werden.
+ESR ist ein elektronischer Schuldner-Service, der Zahlungsbelege verwendet, um Geld einzuziehen. Hierbei handelt es sich um das Standardsystem der elektronische Zahlungsmethode, das von den schweizerischen Post erstellt wird. Sie können im ESR-Format Debitorenzahlungsdateien erhalten, das Buchungen und Bankgebühren enthalten kann. Diese Funktionalität wird für importierte Debitorenbuchungen auf Grundlage von Zahlungsreferenzen vorgesehen, die ursprünglich in Microsoft Dynamics 365 for Operations generiert und auf den Zahlungsbeleg gedruckt wurden.
 
-Weitere Informationen finden Sie Zahlungsbelegbericht Giro ([])(emea-eur-payment-slip-report-giro.md).
+## <a name="generate-payment-references"></a>Zahlungsreferenzen generieren
+Zahlungsreferenzen sollten auf den Zahlungsbeleg gedruckt werden, nachdem sie gebucht wurden. Sie können auch die Zahlungsreferenzen auf der Seite **Rechnungserfassung** für den ausgewählten Auftrag überprüfen. Um Zahlungsreferenzen zu generieren, müssen die folgenden Einstellungen festgelegt werden.
 
-## <a name="import-a-payment-file"></a>Importieren einer Zahlungsdatei
-1.  Zur ** Zahlungserfassung ** Seite
+1.  Legen Sie die Bankkontoeinstellungen auf **ESR**, **BESR-ID** und **Bankleitzahl** fest.
+2.  Legt das **Nummer Zeichen für Postgirokonto** Feld auf der **Debitorenparameter** Seite der **Sachkonto und Mehrwertsteuer** Registerkarte fest. Dies definiert, wie viele Symbole vom Debitorenkonto in der Zahlungsreferenz einbezogen werden sollen.
+3.  Der Verkaufsrechnungsnummernkreis soll im richtigen Format (es sollte Symbole nicht anders als Ziffern haben und dieses sollen keine führende Null aufweisen) sein.
+4.  Das Format **Orange** muss für das Debitorenkonto im Feld **Auf einer Debitorenrechnung** auf der **Rechnung und Lieferung** Registerkarte angegeben werden.
+
+Weitere Informationen finden Sie unter [Zahlungsbericht (Giro)](emea-eur-payment-slip-report-giro.md).
+
+## <a name="import-a-payment-file"></a>Zahlungsdatei importieren
+1.  Gehen Sie zur Seite **Zahlungsjournal**
 2.  Klicken Sie auf **Positionen**.
-3.  ** Auf Funktionen ** &gt; ** Importzahlungen **.
-4.  Wählen Sie im Dialogfeld die Zahlungsmethode, und suchen Sie dann zum Speicherort der Datei aus, die importiert werden sollen. 
+3.  Klicken Sie auf **Funktionen** &gt; **Zahlungen importieren**.
+4.  Wählen Sie im Dialogfeld die Zahlungsmethode, und suchen Sie dann den Speicherort der Datei, die importiert werden soll. 
   > [!NOTE]
-  >  Bevor Sie diesen Schritt ausführen können, müssen Sie die CH) (Einzahlungsschein ** ** Konfigurationen aus den Lebenszyklus-Dienstleistungen (LCS) bereits importiert haben und die ESR-Zahlungsmethode einrichten. Weitere Informationen finden Sie [Dateiformate für Methode von Zahlungen emea-select-file-formats-for-the-method-of-payments.md] ().
+  >  Bevor Sie diesen Schritt ausführen können, müssen Sie die **ESR (CH)**Konfigurationen aus dem Lifecycle Services (LCS) bereits importiert haben und die ESR-Zahlungsmethode einrichten. Weitere Informationen finden Sie unter [Dateiformate für Zahlungen](emea-select-file-formats-for-the-method-of-payments.md).
 
-Nachdem die Zahlungsdatei importieren, werden für Zahlungserfassungspositionen Ausgleich mit Debitorenrechnungen anhand die Zahlungsreferenz erstellt und markiert. Wenn vorhanden) Gebühren gibt, die für das Bankkonto angegeben werden, die in der Datei, wie Buchungen zwischen dem und dem Hauptkonto Gebührenkonto angezeigt werden, sind diese Gebühren der Erfassung hinzugefügt.
+Nachdem Sie die Zahlungsdatei importieren haben, werden die Zahlungserfassungspositionen für den Ausgleich mit Debitorenrechnungen anhand der Zahlungsreferenz erstellt und markiert. Wenn es Gebühren gibt, die für das Bankkonto angegeben werden, die in der Datei angezeigt werden, wie Buchungen zwischen dem Hauptkonto und dem Gebührenkonto, sind diese Gebühren der Erfassung hinzuzufügen.
+
+
 
 

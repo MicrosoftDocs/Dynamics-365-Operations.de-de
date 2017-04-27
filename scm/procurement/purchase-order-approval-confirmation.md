@@ -1,5 +1,5 @@
 ---
-title: "Hiermit genehmigen und Bestätigen von Bestellungen"
+title: Genehmigen und Freigeben von Bestellungen
 description: "Dieser Artikel beschreibt die Statuswerte einer Bestellung (PO) nach der Erstellung und den Effekt des Änderungsmanagements für Bestellungen."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="approve-and-confirm-purchase-orders"></a>Hiermit genehmigen und Bestätigen von Bestellungen
+# <a name="approve-and-confirm-purchase-orders"></a>Genehmigen und Freigeben von Bestellungen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel beschreibt die Statuswerte einer Bestellung (PO) nach der Erstellung und den Effekt des Änderungsmanagements für Bestellungen.
 
@@ -73,12 +76,14 @@ Wenn eine Bestellung bestätigt ist, können Sie diese nicht mehr löschen. Sie 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Überblick über Bestellungen](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Bestellungserstellung](purchase-order-creation.md)
 
 [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 
 [Überblick der Kreditorenrechnungen](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: Einstellungsschulungskurse
+title: Kursschulungen einrichten
 description: "Personalverwaltungsadministratoren und ein Manager können die Kursfunktionen verwenden, um Informationen zur Schulung zu verwalten, welche für Arbeitskräfte angeboten wird."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-training-courses"></a>Einstellungsschulungskurse
+# <a name="set-up-training-courses"></a>Kursschulungen einrichten
+
+[!include[banner](includes/banner.md)]
+
 
 Personalverwaltungsadministratoren und ein Manager können die Kursfunktionen verwenden, um Informationen zur Schulung zu verwalten, welche für Arbeitskräfte angeboten wird.
 
@@ -85,7 +88,7 @@ Für jeden Kurs können die folgenden Aufgaben ausgeführt werden.
 -   Empfehlen von Hotels für Kursteilnehmer
 -   Erstellen einer Kursbeschreibung, mit der Sie im Mitarbeiter-Self-Service-Portal werben können.
 
-  >** Hinweis ** Sie können einen Kurs löschen, wenn sie nicht dafür erfasst hat. 
+  >**Hinweis** Sie können einen Kurs nur löschen, wenn niemand für ihn registriert ist. 
     
 ## <a name="course-statuses"></a>Kursstatus
 In der folgenden Tabelle werden die möglichen Kursstatus und Aktivitäten aufgelistet, die ausgeführt werden können, wenn der Kurs einen bestimmten Status hat.
@@ -132,7 +135,9 @@ Kursteilnehmer sind Arbeitskräfte, Bewerber oder Kontaktpersonen, die an einem 
 <a name="workflow"></a>Workflow
 --------
 
-Mitarbeiter, die für einen Kurs erfasst ** durch die Mitarbeiter-Self-Service ** Seite, können deren Erfassung per Workflow zur Genehmigung weitergeleitet werden.  Ein Workflow kann für einen Kurs im ** Allgemein ** Inforegister in der Kurse ** ** Seite zugewiesen werden.
+Mitarbeiter, die sich über die Seite **Mitarbeiter-Self-Service** erfassen, können ihre Erfassung per Workflow zur Genehmigung weiterleiten.  Ein Workflow kann für einen Kurs im Inforegister **Allgemein** auf der Seite**Kurse** zugewiesen werden. 
+
+
 
 
 

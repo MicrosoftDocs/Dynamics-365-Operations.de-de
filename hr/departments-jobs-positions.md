@@ -1,5 +1,5 @@
 ---
-title: "Organisieren Sie Ihre Kenntnisse über die Abteilungen, Einzelvorgänge und Positionen"
+title: Organisieren der Belegschaft mithilfe der Abteilungen, Stellen und Positionen
 description: Abteilungen, Stellen und Positionen sind Organisationselemente, die innerhalb der Personalverwaltung verwaltet werden. Dieses Thema behandelt die grundlegenden Informationen zu diesen Elementen.
 author: rschloma
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisieren Sie Ihre Kenntnisse über die Abteilungen, Einzelvorgänge und Positionen
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisieren der Belegschaft mithilfe der Abteilungen, Stellen und Positionen
+
+[!include[banner](includes/banner.md)]
+
 
 Abteilungen, Stellen und Positionen sind Organisationselemente, die innerhalb der Personalverwaltung verwaltet werden. Dieses Thema behandelt die grundlegenden Informationen zu diesen Elementen. 
 
@@ -37,11 +40,11 @@ Im folgenden Beispiel werden die Konzepte veranschaulicht, die in diesem Thema b
 |**Verkäufe**|Verkaufsleiter (Osten)|Verkaufsleiter|
 |**Verkäufe**|Verkaufsleiter (Westen)|Verkaufsleiter|
 |**Verkäufe**|Verkaufsleiter (Zentral)|Verkaufsleiter|
-|**Accounting**|Supervisor Buchhaltung|Leiter Buchhaltung|
-|**Accounting**|Buchhaltung-A|Sachbearbeiter Buchhaltung|
-|**Human resources**|Leiter der Personalabteilung (Ost)|Leiter der Personalabteilung|
-|**Human resources**|Leiter der Personalabteilung (Westen)|Leiter der Personalabteilung|
-|**Human resources**|Leiter der Personalabteilung (zentral)|Leiter der Personalabteilung|
+|**Buchhaltung**|Supervisor Buchhaltung|Leiter Buchhaltung|
+|**Buchhaltung**|Buchhaltung-A|Sachbearbeiter Buchhaltung|
+|**Personalverwaltung**|Leiter der Personalabteilung (Ost)|Leiter der Personalabteilung|
+|**Personalverwaltung**|Leiter der Personalabteilung (Westen)|Leiter der Personalabteilung|
+|**Personalverwaltung**|Leiter der Personalabteilung (zentral)|Leiter der Personalabteilung|
 
  
  <a name="departments"></a>Abteilungen
@@ -79,7 +82,7 @@ Sie können Arbeitsaufgaben erstellen, die die grundlegenden Aufgaben beschreibe
 
 ### <a name="job-functions"></a>Stellenfunktionen
 
-Stellenfunktionen sind wie Arbeitsaufgaben. Eine Stellenfunktion beschreibt eine oder mehrere Aufgaben, Pflichten und Zuständigkeiten, die einer Stelle zugewiesen sind. Stellenfunktionen können Einzelvorgängen zugewiesen werden und verwendet werden, um Berechtigungsregeln für Vergütungspläne einzurichten und zu implementieren. Beispiele für Stellenfunktionen werden in der folgenden Tabelle aufgeführten.
+Stellenfunktionen sind wie Arbeitsaufgaben. Eine Stellenfunktion beschreibt eine oder mehrere Aufgaben, Pflichten und Zuständigkeiten, die einer Stelle zugewiesen sind. Stellenfunktionen können Einzelvorgängen zugewiesen werden und verwendet werden, um Berechtigungsregeln für Vergütungspläne einzurichten und zu implementieren. Beispiele für Stellenfunktionen sind in der folgenden Tabelle aufgeführt.
 
 | Einzelvorgang           | Stellenfunktion                                                |
 |---------------|-------------------------------------------------------------|
@@ -101,7 +104,7 @@ Verwenden Sie Zuständigkeitsbereiche, um die Arbeitsrollen, Prozesse und Produk
 <a name="positions"></a>Positionen
 ----------
 
-Positionen ist ein wichtiges Element der untergeordneten Ebene einer Organisationshierarchie. Eine Position ist eine einzelne Instanz eines Einzelvorgangs. Beispielsweise ist die Position, "Verkaufsleiter "," Ost) derzeit eine der Positionen, die der Stelle zugeordnet, wird "Verkaufsleiter". Positionen sind in einer Abteilung und werden Arbeitskräften zugewiesen.
+Positionen ist ein wichtiges Element der untergeordneten Ebene einer Organisationshierarchie. Eine Position ist eine einzelne Instanz eines Einzelvorgangs. Beispielsweise ist die Position, "Verkaufsleiter (Ost) derzeit eine der Positionen, die der Stelle "Verkaufsleiter zugeordnet wird. Positionen sind in einer Abteilung und werden Arbeitskräften zugewiesen.
 ### <a name="position-creation-and-maintenance"></a>Erstellung und Verwaltung von Positionen
 
 -   Sie können eine Historie von positionsbezogenen Systemänderungen in einer einfach zugänglichen Listenseite anzeigen.
@@ -161,6 +164,8 @@ Für einige Datensätze können Sie zukünftige Änderungen am Datensatz angeben
 </table>
 
 Sie können die in der vorherigen Tabelle für eine Position oder Einzelvorgangs aufgeführten Informationen ändern und das Datum angeben, an dem die Änderungen an der Position oder dem Einzelvorgang wirksam werden sollen. Zum Beispiel kann eine Position nur einer Arbeitskraft zugewiesen sein, aber Sanjay Patel, dem die Position Buchhalter-A zugewiesen ist, wird in zwei Wochen gehen. Jens Healy ersetzt Sanjay Patel, wenn dieser geht. Obwohl Sanjay noch seiner Position zugeordnet ist, können Sie Jens Healy der gleichen Position zuweisen, sodass die Zuweisung erst nach Sanjays letzten Tag gültig ist.
+
+
 
 
 

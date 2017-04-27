@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-receipt-against-purchase-orders"></a>Produkteingang für Bestellungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten.
 
 Der Produktzugang ist der Vorgang des Festhaltens des Zugangs von bestellten Produkten. So können die Bestellpositionen für die Fakturierung verarbeitet werden. In einigen Fällen durchlaufen Produkte eine Vorregistrierung, bei der weitere Informationen vom Lieferanten vor dem Zugang der Produkte festgehalten werden. Wenn Produkte zugehen werden sie zuerst als **Registriert** markiert. Produkte können dann zusätzliche Prozesse durchlaufen – beispielsweise die Qualitätssicherung – bevor Sie letztendlich als **Eingegangen** markiert werden.
@@ -52,19 +55,21 @@ Sie können mehrere Bestellungen auswählen und den Zugang für alle gemeinsam v
 
 POs können über einen Auftrag mit der Option **Direktlieferung** erstellt werden. Wenn die Direktlieferung verwendet wird, gehen die Produkte niemals am Lagerort zu. Sie werden vom Lieferanten direkt an den Kunden geliefert. In diesem Fall wird der Zugang normalerweise direkt auf der Bestellung festgehalten. Der Zugang kann automatisch durchgeführt werden (beispielsweise über die EDI-Integration mit dem Lieferanten). Wenn die Bestellung eine Intercompany-Bestellung ist, automatisiert Microsoft Dynamics 365 for Operations den Zugang für den Intercompany-Auftrag bei Lieferung. Bei der Direktlieferung werden Produkte weiterhin als Lagerbestand gebucht – obwohl Sie nicht physisch im Lager eintreffen. Wenn ein Produktzugang für die Bestellung registriert wird, wird der Auftrag daher automatisch mit einem Lieferschein aktualisiert. So liegt die Gesamtänderung für den Lagerbestand bei Null (0). Bei Direktlieferungsszenarien sollten Sie keine Vorregistrierung nutzen. Wenn Sie mit Lagerorten mit Lagerortverwaltung arbeiten, können Sie die Ladungsträgerregistrierung über die Angabe eines virtuelles Lagerortes umgehen. Sie geben diesen Lagerort im Feld **Direktversand-Lagerort** des Produkts ein. 
 
-Nachdem der Produktzugang für die Bestellung verarbeitet wurde, wird der Status der Bestellung auf ** erhalten festgelegt ** dass sich die Rechnung für den Auftrag verarbeitet werden kann. Über die Seite **Produktzugangserfassungen** können Sie Informationen zu empfangenden Produkten anzeigen.  
+Nachdem der Produktzugang für die Bestellung verarbeitet wurde, wird der Bestellstatus auf **Empfangen** gesetzt. Dies zeigt an, dass die Rechnung für die Bestellung verarbeitet werden kann. Über die Seite **Produktzugangserfassungen** können Sie Informationen zu empfangenden Produkten anzeigen.  
 
 Sie können über die Aktivitätsgruppe **Zugang** auf der Seite **Bestellung** auf dieser Seite zugreifen. Die Informationen in den Erfassungen enthalten Informationen zu Mengen, Datumsangaben und Dimensionen.
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Überblick über Bestellungen](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Bestellungserstellung](purchase-order-creation.md)
 
 [Genehmigen und Bestätigen von Bestellungen](purchase-order-approval-confirmation.md)
 
 [Überblick der Kreditorenrechnungen](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

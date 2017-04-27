@@ -1,6 +1,6 @@
 ---
 title: Entwerfen eines Fragebogens
-description: "In diesem Thema wird beschrieben den Prozess zum Erstellen eines Fragebogens. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren."
+description: "In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="design-a-questionnaire"></a>Entwerfen eines Fragebogens
 
-In diesem Thema wird beschrieben den Prozess zum Erstellen eines Fragebogens. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren. 
+In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren. 
 
 Mit einer sorgfältigen Gestaltung des Fragebogens sorgen Sie für eine bessere Qualität der gesammelten Daten. Durch sorgfältige Planung können Sie besser die geeigneten Optionen für einen Fragebogen zur richtigen Zeit auswählen. Die folgenden Punkte können Ihnen dabei helfen, einen effektiven Fragebogen zu planen:
 
@@ -87,14 +87,14 @@ Fragebogenparametern sind optional. Je nach den Anforderungen Ihres Unternehmens
 
 Fragebogenparameter definieren die Anonymität, die Nummernkreiscodes und die Referenztypen eines Fragebogens. Wenn eine Organisation einen Fragebogen verteilt, ist die Option, dass Teilnehmer anonym bleiben können, möglicherweise von Relevanz. 
 
-Nummernkreiscodes werden verwendet, um Fragen und Antworten zu organisieren. Basierend auf diesen Nummernkreiscodes werden Werte automatisch zu den Artikeln zugewiesen. 
+Nummernkreiscodes werden verwendet, um Fragen und Antworten zu organisieren. Basierend auf diesen Nummernkreiscodes werden Werte automatisch diesen Elementen in  zugewiesen. 
 
 Alle Parameter sollten definiert worden sein, bevor Sie mit der Datenerstellung beginnen. Sie können die Fragebogenparametereinstellungen jederzeit ändern.
 
 ## <a name="questionnaire-components"></a>Fragebogen-Komponenten
-Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten. Können Sie die Fragen für einen Fragebogen unter Ergebnisgruppen optional gruppieren. Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen. 
+Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten. Sie können die Fragen für einen Fragebogen unter Ergebnisgruppen optional gruppieren. Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen. 
 
-![QuestionnaireComponents ([]. /media/questionnairecomponents-1024x615.png)]". /media/questionnairecomponents.png)
+[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Antwortgruppen und Antworten
 
@@ -235,6 +235,6 @@ Alternativ können Sie einen Fragebogen z. B. so einrichten, dass Frage 2 die n�
 
 [Verteilen und Abschließen von Fragebögen](distribute-questionnaires.md)
 
-[Anzeigen und Bewertung der Ergebnisse von Fragebögen evaluate-questionnaire-results.md] ()
+[Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
 
 

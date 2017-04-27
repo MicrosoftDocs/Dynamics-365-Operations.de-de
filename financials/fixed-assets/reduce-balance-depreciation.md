@@ -1,9 +1,9 @@
 ---
-title: Reduzieren Sie Saldoabschreibung
+title: Degressive Abschreibung
 description: "Dieser Artikel gibt eine Übersicht die Reduktionssaldomethode der Abschreibung."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reduce-balance-depreciation"></a>Reduzieren Sie Saldoabschreibung
+# <a name="reduce-balance-depreciation"></a>Degressive Abschreibung
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel gibt eine Übersicht die Reduktionssaldomethode der Abschreibung.
 
@@ -73,12 +76,14 @@ Mithilfe der Reduktionssaldomethode werden am Ende des vorherigen Abschreibungsz
 
 | Periode | Berechnung des jährlichen Abschreibungsbetrags | Nettobuchwert am Ende des Jahres |
 |--------|-------------------------------------------|---------------------------------------|
-| Jahr 1 | (11,000 - 1,000) \* 30% = 3,000           | (11.000 - 1.000) - 3.000 = 7.000      |
-| Jahr 2 | (7,000 - 1,000) \* 30% = 1,800            | (7.000 - 1.800) = 5.200                |
-| Jahr 3 | (5,200 - 1,000) \* 30% = 1,260            | (5.200 - 1.260) = 3.940               |
+| Jahr 1 | (11.000 - 1.000) \* 30% = 3.000           | (11.000 - 1.000) - 3.000 = 7.000      |
+| Jahr 2 | (7.000 - 1.000) \* 30% = 1.800            | (7.000 - 1.800) = 5.200                |
+| Jahr 3 | (5.200 - 1.000) \* 30% = 1.260            | (5.200 - 1.260) = 3.940               |
 
  
 -
+
+
 
 
 

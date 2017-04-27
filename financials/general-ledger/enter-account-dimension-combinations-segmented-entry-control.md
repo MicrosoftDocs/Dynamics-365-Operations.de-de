@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Eingeben von Konto- und Dimensionskombinationen (segmentierte Eintragssteuerung)
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Konto- und Dimensions-Kombinationen oder Sachkonten eingegeben werden. Die Eintragserfahrung wird häufig als segmentiertes Eintragssteuerelement bezeichnet.
 
-Benutzer geben Konto- und Dimensionskombinationen für verschiedene Seiten, z Seiten allgemeine Erfassungen, für die Budgetierung und die Buchungsdefinitionen ein. Die gültigen Konto- und Dimensionskombinationen hängen von den dem Sachkonto zugewiesenen Kontostrukturen und den erweiterten Regeln ab, die den Kontostrukturen zugewiesen sind. Wenn Benutzer einer Kombination eingeben, können sie entweder die Werte manuell eingeben oder Reiche, Suchenerfahrung nutzen. Wenn Sie das Feld eingeben, können Sie Komponenteninformationen und starten, und es sucht den Wert und die Beschreibung. Wenn Sie z Typ 180 es einen Wert finden, der dieser beginnt Kontocode. Sie geben ein möglicherweise Bargeld und es wird jeder beliebige Wert, der eine Beschreibung hat, die bar beginnt. Sie können einen Platzhalter, wie Bargeld oder \*\*180 auch verwenden, um zu suchen, wenn der Wert oder die Beschreibung als Suchkriterien enthalten. 
+Benutzer geben Konto- und Dimensionskombinationen auf verschiedenen Seiten ein, z. B. auf Seiten für die allgemeine Erfassung, Budgetierung und Buchungsdefinitionen. Die gültigen Konto- und Dimensionskombinationen hängen von den dem Sachkonto zugewiesenen Kontostrukturen und den erweiterten Regeln ab, die den Kontostrukturen zugewiesen sind. Wenn Benutzer eine Kombination eingeben, können sie entweder die Werttypen manuell eingeben oder die vielfältigen Suchfunktionen nutzen. Wenn Sie das Feld eingeben, können Sie mit der Eingabe beginnen und es wird nach dem Wert und der Beschreibung gesucht. Wenn Sie z. B. Typ 180 eingeben wird ein Wert gesucht, der mit dieser Kontokombination beginnt. Oder Sie können Bargeld eingeben und es wird jeder beliebige Wert gesucht, der eine Beschreibung hat, die mit "Bar" beginnt. Sie können einen Platzhalter, wie \*Bargeld oder \*180 eingeben, um den Wert oder die Beschreibung zu suchen, die das Kriterium enthalten. 
 
 In der folgenden Tabelle werden die Tastenkombinationen beschrieben, die verwendet werden können, wenn die Suche geschlossen ist.
 
@@ -108,5 +111,7 @@ In der folgenden Tabelle werden die Tastenkombinationen beschrieben, die verwend
 </table>
 
  
+
+
 
 

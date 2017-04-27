@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 200 Prozent
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel gibt eine Übersicht die 200 Prozent Reduktionssaldomethode der Abschreibung.
 
 Wenn Sie ein Abschreibungsprofil für Anlagen einrichten und **200% degressiv** im Feld **Methode** auf der Seite **Abschreibungsprofile** auswählen, werden Anlagen, denen das Abschreibungsprofil zugewiesen wird, in jedem Abschreibungszeitraum um denselben Prozentsatz abgeschrieben. Der Prozentsatz wird auf Grundlage der Nutzungsdauer der Anlage berechnet. Wenn eine Anlage beispielsweise eine Nutzungsdauer von fünf Jahren hat, beträgt der Prozentsatz 40 Prozent (200% ÷ 5). 
@@ -44,7 +47,7 @@ Durch Ihre Auswahl werden die Optionen bestimmt, die im Feld **Periodenhäufigke
 
 Falls gewünscht, können Sie im Feld **Abschreibungsjahr** den Standardwert **Kalender** beibehalten. 
 
-Die **Kalender** Option aktualisiert die Abschreibungsbasis am 1. Januar jedes Jahres. In der Regel basiert die Abschreibung der Nettobuchwert abzüglich des Schrottwerts. In den Beispielen weiter unten in diesem Thema ist der Zähler im ersten Ausdruck in Berechnungen in der Spalte "Berechnung" die Abschreibungsbasis. 
+Die **Kalender** Option aktualisiert die Abschreibungsbasis am 1. Januar jedes Jahres. Normalerweise ist die Abschreibung der Nettobuchwert abzüglich des Restwerts. In den Beispielen weiter unten in diesem Thema ist der Zähler im ersten Ausdruck in Berechnungen in der Spalte "Berechnung" die Abschreibungsbasis. 
 
 Wenn als Abschreibungsjahr **Kalender** ausgewählt wird, stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung:
 
@@ -58,7 +61,7 @@ Wenn als Abschreibungsjahr **Kalender** ausgewählt wird, stehen im Feld **Perio
 
 Wenn Sie **Steuerlich** im Jahrfeld **Abschreibung** auswählen, wird die Abschreibungsmethode "200 % degressiv" auf Grundlage des Geschäftsjahres für den Steuerkalender berechnet, der für das Wertmodell oder das Abschreibungsbuch angegeben wird, oder für den Steuerkalender, der auf der Seite **Sachkonto** ausgewählt wird. Steuerkalender werden auf der Seite **Steuerkalender** eingerichtet. 
 
-Beispiel für das Geschäftsjahr dem 1. Juli bis zum 30. Juni, die zum am 1. Juli. Das Geschäftsjahr kann länger oder kürzer als 12 Monate sein. Die Abschreibung wird für jede Periode angepasst. Die Länge des nächsten Geschäftsjahrs wird anhand der Finanzzeiträume bestimmt, die auf der Seite **Steuerkalender** eingerichtet werden. 
+Für das Geschäftsjahr vom 1. Juli bis zum 30. Juni beginnt die Abschreibungsberechnung am 1. Juli. Das Geschäftsjahr kann länger oder kürzer als 12 Monate sein. Die Abschreibung wird für jede Periode angepasst. Die Länge des nächsten Geschäftsjahrs wird anhand der Finanzzeiträume bestimmt, die auf der Seite **Steuerkalender** eingerichtet werden. 
 
 Wenn **Steuerlich** als Abschreibungsjahr ausgewählt wird, stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung:
 
@@ -83,6 +86,8 @@ Bei der Abschreibungsmethode "200 % degressiv" werden 200 Prozent durch die Anza
 | Jahr 3 | 3.600 × 40% = 1.440                           | 4.600 – 1.440 = 3.160  | 3.600 – 1.440 = 2.160                 |
 
 > [!NOTE] 
-> Normalerweise wenn der Betrag, der folgendermaßen berechnet wird, indem die Methode 200% für degressive Abschreibung anwenden soll, niedriger als der Betrag wird, der folgendermaßen berechnet wird, indem die lineare Methode anwendete, gibt es eine Umwandlung der linearen Abschreibungsmethode für die Nutzungsdauer.
+> Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "200% degressiv" berechnet wird, geringer ausfällt, als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
+
+
 
 

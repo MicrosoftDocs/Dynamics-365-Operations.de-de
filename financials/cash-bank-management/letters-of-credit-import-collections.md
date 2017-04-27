@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Kreditbrief und Importinkasso
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält allgemeine Informationen über Kreditbrief und Importinkasso. Beide Arten von Bankdokumenten werden häufig für den Einkauf und Verkauf im internationalen Warenverkehr verwendet werden.
 
 <a name="letters-of-credit"></a>Kreditbriefe
 -----------------
 
-Kreditbriefen für internationale werden Buchungen und Hilfegarantie verwendet, dass eine Zahlung geleistet wird. Ein Kreditbrief ist eine Vereinbarung, die von einer Bank ausgestellt wird, in der sich die Bank befindet, Zahlung im Auftrag des Käufers sicherzustellen, vorausgesetzt, dass die Vertragsbedingungen zwischen dem Käufer und dem Verkäufer erfüllt werden. Ein Kreditbrief wird auch als durch Haben (DC).
+Mit Kreditbriefen wird bei internationalen Transaktionen sichergestellt, dass eine Zahlung geleistet wird. Ein Kreditbrief stellt eine Vereinbarung dar, die von einer Bank ausgegeben wird. Darin gewährleistet die Bank die Zahlung im Auftrag des Einkäufers, sofern die Vertragsbedingungen zwischen Einkäufer und Verkäufer erfüllt sind. Ein Kreditbrief wird auch als durch Dokumente belegter Kredit bezeichnet.
 
 Für einen Importkreditbrief, ist die juristische Person der Einkäufer bzw. der Bewerber für den Kreditbrief. Für einen Exportkreditbrief ist die juristische Person der Verkäufer bzw. der Begünstige für Akkreditivs. Die folgenden Parteien sind bei einem Kreditbrief beteiligt:
 
@@ -50,5 +53,7 @@ Ein Kreditbrief kann entweder **widerrufbar** oder **unwiderruflich** sein. Die 
 Ein Importinkasso stellt eine Vereinbarung zwischen der Bank und dem Exporteur (Verkäufer) dar, in der die Bank zustimmt, die Versandunterlagen an den internationalen Importeur (Einkäufer) zu liefern. Die Bank muss die Versandunterlagen bei Erhalt der Zahlung für die gelieferten Waren in bar oder als unterschriebenen Wechsel aushändigen. 
 
 Einem Importinkasso hilft, die Zahlung für den Verkäufer sicherzustellen, wenn der Einkäufer die Versandunterlagen und somit die importierten Waren entgegennimmt.
+
+
 
 

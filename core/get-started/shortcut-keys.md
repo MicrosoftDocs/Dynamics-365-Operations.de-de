@@ -1,6 +1,6 @@
 ---
 title: Tastenkombinationen
-description: "Die folgenden Tastenkürzel gelten in Microsoft Dynamics 365 Arbeitsgänge."
+description: "In Microsoft Dynamics 365 for Operations stehen die folgenden Tastenkombinationen zur Verfügung."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
-Die folgenden Tastenkürzel gelten in Microsoft Dynamics 365 Arbeitsgänge. 
+[!include[banner](../includes/banner.md)]
+
+
+In Microsoft Dynamics 365 for Operations stehen die folgenden Tastenkombinationen zur Verfügung. 
 
 **Hinweis:** Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
 
@@ -40,7 +43,7 @@ Die folgenden Tastenkürzel gelten in Microsoft Dynamics 365 Arbeitsgänge.
 | Zur nächsten/vorherigen Option in einem Menü wechseln            | NACH-UNTEN-TASTE / NACH-OBEN-TASTE            |
 | Schließen einer Registerkarte im Aktionsbereich oder einem Menü          | ESC                              |
 | Simulieren eines Klicks mit der rechten Maustaste                            | UMSCHALT+F10                        |
-| Öffnet das Dynamics 365 für Arbeitsgangskontextmenü | STRG+F10                         |
+| Öffnen des Dynamics 365 for Operations-Kontextmenüs | STRG+F10                         |
 | Ausführen der Standardschaltfläche auf einem Formular/in einem Dialog       | ALT+EINGABETASTE                        |
 | Auf eine Schaltfläche oder Kachel klicken                            | EINGABETASTE oder LEERTASTE                   |
 | Aktualisierungsinformationen für eine Anzahlkachel anzeigen         | ALT+NACH-OBEN-TASTE                     |
@@ -64,7 +67,7 @@ Die folgenden Tastenkürzel gelten in Microsoft Dynamics 365 Arbeitsgänge.
 | Öffnen des Infoboxbereichs (oder Verschieben des Fokus zum Infoboxbereich, wenn bereits offen ist) | STRG+F2                                   |
 | Schließen des Infoboxbereichs (mit Fokus im Infoboxbereich)                         | ESC                                       |
 | Zur nächsten/vorherigen Infobox (mit Fokus im Infoboxbereich) wechseln              | ALT+UMSCHALT+NACH-UNTEN-TASTE / ALT+UMSCHALT+NACH-OBEN-TASTE |
-| Zur &lt;n-te&gt;Infobox (mit Fokus im Infoboxbereich)                | Alt+n &lt;&gt; (&lt;n&gt; ) = 1-9           |
+| Zur &lt;n&gt;nten Infobox (mit Fokus im Infoboxbereich) wechseln                | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Erweitern einer Infobox (mit Fokus auf dem Infoboxkopf)                             | LEERTASTE oder EINGABETASTE                            |
 | Die aktuelle Infobox reduzieren                                                    | ALT+0                                     |
 
@@ -111,8 +114,8 @@ Die folgenden Tastenkürzel gelten in Microsoft Dynamics 365 Arbeitsgänge.
 | Zum nächsten/vorherigen Feld wechseln                     | Registerkarte / UMSCHALT+TAB                              |
 | Zur nächsten/vorherigen Registerkarte wechseln                       | ALT+UMSCHALT+NACH-RECHTS-TASTE / ALT+UMSCHALT+NACH-LINKS-TASTE |
 | Zum nächsten/vorherigen Inforegister wechseln                   | ALT+UMSCHALT+NACH-UNTEN-TASTE / ALT+UMSCHALT+NACH-OBEN-TASTE    |
-| Zum &lt;n-te&gt;Inforegister                     | Alt+n &lt;&gt; (&lt;n&gt; ) = 1-9              |
-| Zur &lt;n-te&gt;Registerkarte                         | Alt+Shift+n &lt;&gt; (&lt;n&gt; ) = 1-9        |
+| Zum &lt;n&gt;nten Inforegister wechseln                     | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Zur &lt;n&gt;nten Registerkarte wechseln                         | ALT+UMSCHALT+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Erweitern eines Inforegisters (mit Fokus auf dem Inforegisterkopf) | LEERTASTE oder EINGABETASTE                               |
 | Das aktuelle Inforegister reduzieren                        | ALT+0                                        |
 | Zur Rasteransicht wechseln                                 | STRG+UMSCHALT+G                                 |
@@ -152,7 +155,7 @@ Die folgenden Tastenkürzel gelten in Microsoft Dynamics 365 Arbeitsgänge.
 | Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld öffnen           | ALT+NACH-UNTEN-TASTE                |
 | Suche, Kombinationsfeld, Datumsauswahl, Ablagedialogfeld schließen          | ESC                           |
 | Fokus in eine Suche verschieben (wenn die Suche bereits offen ist) | ALT+NACH-UNTEN-TASTE                |
-| Öffnen Sie die erweiterte Vorschau des Steuer                        | ALT+NACH-OBEN-TASTE                  |
+| Erweitere Vorschau des Steuerelements öffnen                        | ALT+NACH-OBEN-TASTE                  |
 | Text im aktuellen Feld auswählen                           | STRG+A                        |
 | Ein- und Austritt im Textbereich in einem HTML-Editorsteuerelement        | ALT+NACH-UNTEN-TASTE / ALT+NACH-OBEN-TASTE |
 
@@ -174,18 +177,18 @@ Die folgenden Tastenkürzel gelten in Microsoft Dynamics 365 Arbeitsgänge.
 | Zum Dashboard wechseln                                                       | Alt+UMSCHALT+POS1  |
 | Zur Meldungsleiste wechseln                                                  | ALT+UMSCHALT+F1    |
 | Zum Navigationsbereich wechseln                                                 | ALT+F1          |
-| Favorite/un-favorite ein Formular (mit Fokus auf einem Formular in Navigationsbereich) | UMSCHALT+F         |
+| Ein Formular (mit Fokus auf einem Formular in Navigationsbereich) favorisieren/nicht favorisieren | UMSCHALT+F         |
 | Zur Unternehmensauswahl wechseln                                                  | STRG+UMSCHALT+O    |
 | Zur Navigationssuche wechseln                                                   | STRG+/ oder ALT+G |
-| Öffnet den Hilfebereich                                                        | +?          |
-| Öffnet den Ablaufverfolgungsparser                                                     | Alt+Shift+T     |
+| Hilfefenster öffnen                                                        | STRG +?          |
+| Ablaufverfolgungs-Parser öffnen                                                     | ALT+SHIFT+T     |
 
  
 
 ## <a name="segmented-entry-shortcuts"></a>Segmentierte Eintragsverknüpfungen
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **To do this**                                                                                                          | **Press**                        |
+| **Aufgabe**                                                                                                          | **Drücken**                        |
 | Die Dropdownliste öffnen (wenn die Dropdownliste geschlossen ist)                                                             | ALT+NACH-UNTEN-TASTE                   |
 | Fokus ins Eingabefeld für das aktuelle Segment in der Dropdownliste verschieben (wenn die Dropdownliste bereits offen ist) | ALT+NACH-UNTEN-TASTE                   |
 | Die Dropdownliste schließen                                                                                                | ALT+NACH-OBEN-TASTE                     |
@@ -199,5 +202,7 @@ Die folgenden Tastenkürzel gelten in Microsoft Dynamics 365 Arbeitsgänge.
 | Ganz nach oben/unten in der Suche wechseln                                                                                    | POS1 / ENDE                       |
 
  
+
+
 
 

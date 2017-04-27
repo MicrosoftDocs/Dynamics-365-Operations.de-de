@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-credit-and-collections"></a>Kredit und Inkasso einrichten
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden.
 
 <a name="set-up-aging-period-definitions"></a>Zahlungsfristdefinitionen einrichten
@@ -46,7 +49,7 @@ Wenn mehrere Personen in der Organisation mit Inkassi beschäftigt sind, können
 ## <a name="set-up-a-collections-case-category"></a>Einrichten einer Kategorie für Inkassoanfragen
 Wenn Sie die Inkassoaktivitäten nach Anfragen organisieren, richten Sie eine Anfragenkategorie mit dem Kategorietyp **Inkassi** ein. Diese Einrichtung ist nur erforderlich, wenn Sie die Anfragefunktion auf der Seite **Inkassi** verwenden möchten.
 
-## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Die Einrichtung von Journalen (Ausgleich, Abschreibung und KD)
+## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Einrichten von Journalen (Ausgleich, Abschreibung und KD)
 Richten Sie die Namen der Erfassungen ein, die verwendet werden, wenn Buchungen auf der Seite **Inkassi** verarbeitet werden. Zu dieser Verarbeitung gehören der Ausgleich einer Buchung, das Abschreiben einer Buchung und das Verarbeiten einer Zahlung mit unzureichender Deckung.
 
 | Beschreibung | Erfassungstyp     |
@@ -67,7 +70,7 @@ Richten Sie die Debitorenparameter ein, die auf der Registerkarte **Inkassi** er
 ## <a name="optional-set-up-collections-agents"></a>Optional: Einrichten von Inkassobeauftragten
 Wenn mehrere Personen in der Organisation mit Inkassi beschäftigt sind, können Sie Inkassobeauftragte einrichten. Inkassobeauftragte sind Arbeitskräfte, die auf der Seite **Benutzerbeziehungen** als Benutzer eingerichtet sind. Sie können Inkassobeauftragten zur besseren Strukturierung ihrer Arbeit Debitorenpools (Debitorenanfragen) zuweisen. Die Inkassobeauftragten werden dem Team hinzugefügt, das auf der Seite **Debitorenparameter** ausgewählt ist. Ist auf dieser Seite kein Team ausgewählt, wird automatisch ein neues Team mit dem Namen **Inkassi** erstellt, und die Inkassobeauftragten werden diesem Team hinzugefügt.
 
-## <a name="set-up-a-writeoff-account"></a>Richten Sie ein Abschreibungskonto
+## <a name="set-up-a-writeoff-account"></a>Einrichten eines Abschreibungskontos
 Richten Sie das Abschreibungskonto ein, das beim Abschreiben einer Buchung für den Hauptbuch-Abschreibungseintrag verwendet werden soll. Dieses Konto wird im Debitoren-Buchungsprofil gespeichert.
 
 ## <a name="set-up-nsf-information-for-bank-accounts"></a>Einrichten von KD-Informationen für Bankkonten
@@ -88,5 +91,7 @@ Wählen Sie auf dem Inforegister **Kredit und Inkasso** für einen Debitor im Fe
 Richten Sie E-Mail-Adressen für Verkäufer ein, wenn Sie mit der Seite **Inkassi** E-Mail-Nachrichten an Verkäufer senden möchten. Richten Sie für jeden Verkäufer in allen Provisionsverkaufsgruppen eine E-Mail-Adresse ein. Der Verkäufer, für den die Option **Kontakt** aktiviert ist, fungiert als Standardverkäufer, an den E-Mail-Nachrichten gesendet werden. 
 
 Ist kein Verkäufer angegeben, wird der primäre Verkäufer für die Organisation des Debitors verwendet. Falls kein primärer Verkäufer angegeben ist, werden E-Mails an den ersten auf der Seite aufgeführten Verkäufer gesendet.
+
+
 
 

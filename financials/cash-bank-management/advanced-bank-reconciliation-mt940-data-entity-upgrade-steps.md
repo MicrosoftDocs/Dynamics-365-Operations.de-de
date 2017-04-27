@@ -1,5 +1,5 @@
 ---
-title: "Erweiterter Bankabstimmung MT940 Import – zusammengesetzte Datenentitätsaktualisierung"
+title: "Erweiterte Bankabstimmung MT940 Import – Zusammengesetzter Datenentitäts-Upgrade"
 description: "Eine Sequenznummer muss der Bankauszugs-Importentität hinzugefügt werden, um das Format MT940 zu unterstützen."
 author: twheeloc
 manager: AnnBe
@@ -24,21 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Erweiterter Bankabstimmung MT940 Import – zusammengesetzte Datenentitätsaktualisierung
+# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Erweiterte Bankabstimmung MT940 Import – Zusammengesetzter Datenentitäts-Upgrade
+
+[!include[banner](../includes/banner.md)]
+
 
 Eine Sequenznummer muss der Bankauszugs-Importentität hinzugefügt werden, um das Format MT940 zu unterstützen. 
 
 Gehen Sie folgendermaßen vor, um die Bankauszugs-Importentität hinzuzufügen, um das Format MT940 zu unterstützen.
 
 1.  Kompilieren und synchronisieren Sie Folgendes:
-    -   " Zusammengesetzt (\\BankStatementImportEntity Entität
-    -   \\BankStatementBalanceEntity Entität
-    -   \\BankStatementDocumentEntity Entität
-    -   \\BankStatementEntity Entität
-    -   \\BankStatementLineEntity Entität
-    -   Tabellen BankStatementStaging \\
+    -   Zusammengesetzte Entität\\BankStatementImportEntity
+    -   Entity\\BankStatementBalanceEntity
+    -   Entity\\BankStatementDocumentEntity
+    -   Entity\\BankStatementEntity
+    -   Entity\\BankStatementLineEntity
+    -   Tables\\BankStatementStaging
 
-2.  Datenverwaltungs-\\Datenprojekte.
+2.  Datenverwaltung\\Datenprojekte.
     1.  Laden Sie MT940-Importprojekt(e)
         1.  Ändern Sie XSLT.
             -   Klicken Sie auf **Zuordnung anzeigen**.
@@ -58,6 +61,8 @@ Gehen Sie folgendermaßen vor, um die Bankauszugs-Importentität hinzuzufügen, 
                 -   Überprüfen Sie, dass **SequenceNumber** von der Quelle zum Bereitstellen zugeordnet ist.
 
 3.  Importieren Sie den neuen Auszug.
+
+
 
 
 

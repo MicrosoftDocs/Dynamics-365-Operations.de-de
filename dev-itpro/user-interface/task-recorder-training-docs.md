@@ -1,6 +1,6 @@
 ---
 title: Dokumentation oder Schulungen mithilfe von&quot;Aufgabenaufzeichnungen&quot; erstellen
-description: "In diesem Thema wird erläutert, welche Aufgabenleitfäden Aufgabenaufzeichnung und sind, wie Aufgabenaufzeichnungen erstellt und wie Microsoft-Aufgabenleitfäden passt und in der Hilfe enthält."
+description: "In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,19 +27,22 @@ ms.lasthandoff: 03/31/2017
 ---
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>Dokumentation oder Schulungen mithilfe von"Aufgabenaufzeichnungen" erstellen
-In diesem Thema wird erläutert, welche Aufgabenleitfäden Aufgabenaufzeichnung und sind, wie Aufgabenaufzeichnungen erstellt und wie Microsoft-Aufgabenleitfäden passt und in der Hilfe enthält.
+
+[!include[banner](../includes/banner.md)]
+
+In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
 
 <a name="learn-about-task-recorder"></a>Mehr über die "Aufgabenaufzeichnung" erfahren
 -------------------------
 
-Aufgabenaufzeichnung ist Microsoft Dynamics 365 für Arbeitsgangstool, das Sie verwenden können, um Projektvorgänge registrieren, dass Sie die Produktbenutzeroberfläche (UI) einlassen. Wenn Sie die Aufgabenaufzeichnung anwenden, werden alle Ereignisse, die in der Benutzeroberfläche vom Server abgerufen werden - einschließlich dem Hinzufügen von Werten, der Änderung von Einstellungen und dem Entfernen von Daten - aufgezeichnet. Die Schritte, die Sie erfassen, werden zusammenfassend als *Aufgabenaufzeichnung* bezeichnet. Aufgabenaufzeichnungen können auf unterschiedliche Weise verwendet werden:
+Die Aufgabenaufzeichnung ist ein Microsoft Dynamics 365 for Operations-Tool, das Sie verwenden können, um Aktivitäten aufzuzeichnen, die Sie in der Produktbenutzeroberfläche (UI) ausgeführt haben. Wenn Sie die Aufgabenaufzeichnung anwenden, werden alle Ereignisse, die in der Benutzeroberfläche vom Server abgerufen werden - einschließlich dem Hinzufügen von Werten, der Änderung von Einstellungen und dem Entfernen von Daten - aufgezeichnet. Die Schritte, die Sie erfassen, werden zusammenfassend als *Aufgabenaufzeichnung* bezeichnet. Aufgabenaufzeichnungen können auf unterschiedliche Weise verwendet werden:
 
--   **Aufgabenaufzeichnungen können als Aufgabenleitfäden wiedergegeben werden.** Aufgabenleitfäden sind ein ganzzahliges Stück des Dynamics 365 für Arbeitsgänge Hilfe zu erhalten. Ein Aufgabenleitfaden ist eine Lagersteuerung, geführte interaktive, Erfahrung durch die Schritte eines Geschäftsprozesses. Der Benutzer wird aufgefordert, jeden Schritt einer Popupeingabeaufforderung (oder "Blase") abzuschließen, die über die Benutzeroberfläche animiert wird und auf das Benutzeroberflächenelement verweist, mit dem der Benutzer interagieren soll. Die "Blase" bietet auch Informationen dazu, wie dem Element, wie hier "auf" interagiert, oder "in diesem Feld, geben Sie einen Wert ein." Ein Aufgabenleitfaden wird anhand den Satz der Daten des aktuellen Benutzers ausgeführt und die Daten, die eingegeben wird, werden in der Anwenderkonfiguration gespeichert.
--   ** Aufgabenaufzeichnungen können als prozedurale Schritte im Hilfebereich angezeigt werden. ** Sie können den Hilfebereich verwenden, der für die Suche und Aufgabenaufzeichnungen anzuzeigen. Sie können den Hilfebereich zugreifen, indem Sie auf klicken **? ** Symbol in der Leiste Navigationsleiste oder beim kann die Tastenkombination, Ctrl+Shift+ **? **. Auf der Schritte einer Aufgabenaufzeichnung im Hilfebereich lesen, oder Sie können entscheiden, Erfassung als Aufgabenleitfaden wiederzugeben, so, das er Sie die Benutzeroberfläche führt.
--   **Aufgabenaufzeichnungen können im BPM gespeichert werden.** Sie können Ihre Aufgabenaufzeichnungen in einer Position einer Hierarchie der Bibliothek des Geschäftsprozessmodellierers (BPM) in den Lifecycle Services (LCS) speichern. Aus der Aufzeichnung wird eine Liste von Schritten und ein Geschäftsprozessflussdiagramm generiert. Aufgabenaufzeichnungen einer BPM-Bibliothek, die gespeichert wurden, können in Dynamics 365 für Arbeitsgänge als Hilfe angezeigt werden.
+-   **Aufgabenaufzeichnungen können als Aufgabenleitfäden wiedergegeben werden.** Aufgabenleitfäden sind ein integrierter Bestandteil der Dynamics 365 for Operations-Hilfe-Erfahrung. Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte eines Geschäftsprozesses führt. Der Benutzer wird aufgefordert, jeden Schritt einer Popupeingabeaufforderung (oder "Blase") abzuschließen, die über die Benutzeroberfläche animiert wird und auf das Benutzeroberflächenelement verweist, mit dem der Benutzer interagieren soll. Die "Blase" enthält auch Informationen zur Interaktion mit Elementen, wie "Hier klicken" oder "Geben Sie in diesem Feld einen Wert ein". Ein Aufgabenleitfaden wird mit dem Datensatz des aktuellen Benutzers ausgeführt, und die Daten, die eingegeben werden, werden in der Anwenderkonfiguration gespeichert.
+-   **Aufgabenaufzeichnungen können als Verfahrensschritte im Hilfebereich angezeigt werden.** Sie können den Hilfebereich verwenden, um nach Aufgabenaufzeichnungen zu suchen und sie anzuzeigen. Sie können auf den Hilfebereich zugreifen, indem Sie auf das Symbol **?** in der oberen Navigationsleiste klicken oder die Tastenkombination **STRG+UMSCHALTTASTE+?** verwenden. Im Hilfebereich können Sie die Schritte einer Aufgabenerfassung nachlesen, oder die Aufzeichnung optional als Aufgabenleitfaden wiedergeben, damit sie Sie durch die Benutzeroberfläche führt.
+-   **Aufgabenaufzeichnungen können im BPM gespeichert werden.** Sie können Ihre Aufgabenaufzeichnungen in einer Position einer Hierarchie der Bibliothek des Geschäftsprozessmodellierers (BPM) in den Lifecycle Services (LCS) speichern. Aus der Aufzeichnung wird eine Liste von Schritten und ein Geschäftsprozessflussdiagramm generiert. Aufgabenaufzeichnungen, die in einer BPM-Bibliothek gespeichert wurden, können in Dynamics 365 for Operations als Hilfe angezeigt werden.
 -   **Aufgabenaufzeichnungen können als Word-Dokumente gespeichert werden.** Dadurch wird es Ihnen ermöglicht, druckbare Trainingshandbücher einfach zu erzeugen.
 
-Sie können eigene Aufgabenaufzeichnungen, die Spielaufgabenaufzeichnungen erstellen, die von Microsoft bereitgestellten, oder Ändern von Microsoft-zurVerfügung bereitgestellte Aufgabenaufzeichnungen, um die Konfiguration zu entsprechen. Weitere Informationen finden Sie, Aufgabenaufzeichnung zu [Aufgabenaufzeichnung in Dynamics 365] "Arbeitsgänge für task-recorder.md).
+Sie können eigene Aufgabenaufzeichnungen erstellen, Aufgabenaufzeichnungen wiedergeben, die von Microsoft bereitgestellt werden, oder von Microsoft zur Verfügung gestellte Aufgabenaufzeichnungen ändern, um sie Ihrer Konfiguration anzupassen. Weitere Informationen zur Aufgabenaufzeichnung finden Sie unter [Aufgabenaufzeichnung in Dynamics 365 for Operations](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Ihre Aufgabenaufzeichnung planen
 Ob Sie eine neue Aufgabenaufzeichnung erstellen oder Ihre Aufzeichnung einer Microsoft-Aufgabenaufzeichnung anpassen, berücksichtigen Sie die folgenden Informationen.
@@ -55,31 +58,31 @@ Ob Sie eine neue Aufgabenaufzeichnung erstellen oder Ihre Aufzeichnung einer Mic
 **Beschreibung und Anmerkungen im Voraus erstellen**
 
 -   Zu Beginn jeder Aufgabenaufzeichnung gibt es ein Textfeld, das Ihnen gestattet, der Aufzeichnung eine Einführung hinzuzufügen. Es wird empfohlen, die Beschreibung in einem separaten Dokument im Voraus zu verfassen und zu speichern, sodass Sie sie während der Aufnahme in die Aufgabenaufzeichnung kopieren und einfügen können. So können Sie mehr Zeit auf die Textverfeinerung verwenden, wenn Sie nicht im Aufzeichnungsprozess sind. Das Schneiden und Einfügen des Texts ermöglicht einen schnelleren und problemloseren Aufzeichnungsprozess.
--   Für jeden Schritt in einer Aufgabenaufzeichnung können Sie Anmerkungen erstellen. Während der Wiedergabe eines Aufgabenleitfadens, werden Anmerkungen in der " Blase" als Hinweise über oder unter dem Text für den Schritt angezeigt. Wenn sie als Text im Hilfebereich angezeigt werden, werden inline Anmerkungen als Text im Schritt. Für die Beschreibung wird empfohlen, Ihre Anmerkungen in einem separaten Dokument zu verfassen und zu speichern. Wenn Sie die Aufgabenaufzeichnung aufnehmen, sollten Sie die Anmerkungen aus diesem Dokument ausschneiden und einfügen.
+-   Für jeden Schritt in einer Aufgabenaufzeichnung können Sie Anmerkungen erstellen. Während der Wiedergabe eines Aufgabenleitfadens, werden Anmerkungen in der " Blase" als Hinweise über oder unter dem Text für den Schritt angezeigt. Wenn dieser als Text im Hilfebereich angezeigt wird, erscheinen Anmerkungen als Text innerhalb des Schritts. Für die Beschreibung wird empfohlen, Ihre Anmerkungen in einem separaten Dokument zu verfassen und zu speichern. Wenn Sie die Aufgabenaufzeichnung aufnehmen, sollten Sie die Anmerkungen aus diesem Dokument ausschneiden und einfügen.
 
 **Unterschiedliche Arten von Anmerkungen verstehen** Alle Anmerkungen sind optional. Fügen Sie sie nur hinzu, wenn sie hilfreiche Informationen für den Benutzer darstellen.
 
--   ** Titel **: Eine Titelanmerkung wird vor dem Schritttext Aufgabenaufzeichnung, dass automatisch generiert. Im Aufgabenleitfaden wird die Titelanmerkung über dem automatisch generierten Text. Verwenden Sie diesen Typ der Anmerkung, um zu erläutern, warum der Benutzer den Schritt ausführt oder um einen zusätzlichen Kontext anzugeben.
+-   **Titel**: Eine Titelanmerkung wird vor dem Schritt angezeigt, den die Aufgabenaufzeichnung automatisch generiert. Im Aufgabenleitfaden wird die Titelanmerkung über dem automatisch generierten Text angezeigt. Verwenden Sie diesen Typ der Anmerkung, um zu erläutern, warum der Benutzer den Schritt ausführt oder um einen zusätzlichen Kontext anzugeben.
 
 Dies ist der Bearbeitungsbereich, den Sie sehen, wenn Sie eine Anmerkung hinzufügen, während Sie die Aufzeichnung erstellen. Geben Sie eine Titelanmerkung im Feld **Titel** ein. 
 
-![screen1 ([]. /media/screen1.png)]". /media/screen1.png) 
+[![screen1](./media/screen1.png)](./media/screen1.png) 
 
 So sieht die Titelanmerkung in der "Blase" im Aufgabenleitfaden aus. 
 
-![screen2 ([]. /media/screen2.png)]". /media/screen2.png)
+[![screen2](./media/screen2.png)](./media/screen2.png)
 
 -   **Hinweise:** Eine Hinweisanmerkung, die automatisch von der Aufgabenaufzeichnung generiert wurde, wird nach dem Text zum Schritt angezeigt. Im Aufgabenleitfaden wird sie nur angezeigt, wenn der Benutzer auf den Link **Mehr anzeigen** in der Aufgabenleitfadenblase klickt. Verwenden Sie diesen Typ der Anmerkung, um alles Wissenswerte zu beschreiben, das der Benutzer benötigt, um den Schritt abzuschließen.
 
 Dies ist der Bearbeitungsbereich, den Sie sehen, wenn Sie eine Anmerkung hinzufügen, während Sie die Aufzeichnung erstellen. Geben Sie eine Titelanmerkung im Feld **Anmerkung** ein. 
 
-![screen3 ([]. /media/screen3.png)]". /media/screen3.png) 
+[![screen3](./media/screen3.png)](./media/screen3.png) 
 
-Dies ist, was die Hinweisanmerkungsaussehung wie in der " Blase "im Aufgabenleitfaden.
+So sieht die Hinweisanmerkung in der "Blase" im Aufgabenleitfaden aus.
 
-![screen4 ([]. /media/screen4.png)]". /media/screen4.png)
+[![screen4](./media/screen4.png)](./media/screen4.png)
 
--   ** Informationensschritt **: Diese Anmerkungen werden, indem auf einem Steuerelement oder an beliebiger Stelle auf ein Formular mit der rechten Maustaste klickt ** &lt; Aufgabenaufzeichnung ** ** &lt; hinzufügen Informationensschritt erstellt. ** Informationensschritte werden für ein numerierter Schritt an, was Punkt Sie ihn einfügen, obwohl keine Aktivitäten in der Benutzeroberfläche erfasst wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Informationensschritt mangelhafte Konfiguration einer Kontrolle hin zugeordnet ist, wird die Aufgabenleitfaden "Blase" auf dem Steuerelement, wenn der Aufgabenleitfaden wiedergegeben wird. Der Hilfebereich wird eine Informationensschrittanmerkung als numerierter, was mit Schritt eingegebenen Text. Verwendungsinformationensschritte, z des Benutzers für die nächsten Schritte vorbereiten, der Schritte beschreiben, die außerhalb von Microsoft Dynamics 365 fertig für Arbeitsgänge werden müssen, oder andere Buchungen beziehen (in den hyperinks doch können Sie Anmerkungen nicht erstellen können.).
+-   **Info-Schritt**: Diese Anmerkungen werden erstellt, indem mit der rechten Maustaste auf ein Steuerelement oder Formular geklickt wird &lt; **Aufgabenaufzeichnung** &lt; **Infoschritt hinzufügen. ** Info-Schritte werden als nummerierte Schritte an dem Punkt angezeigt, an dem sie eingefügt werden, auch wenn keine Aktivität in der UI aufgezeichnet wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Infoschritt einem Steuerelement zugeordnet ist, wird die "Blase" des Aufgabenleitfadens auf das Steuerelement zeigen, wenn der Aufgabenleitfaden wiedergegeben wird. Im Hilfebereich wird ein Info-Schritt als nummerierter Schritt mit dem Text angezeigt, den Sie eingegeben haben. Verwenden Sie Infoschritte, um den Benutzer auf die nächsten Schritte vorzubereiten, Schritte zu beschreiben, die außerhalb von Dynamics 365 for Operations abgeschlossen werden müssen, oder um auf andere Aufzeichnungen zu verweisen (jedoch können Sie in den Anmerkungen keine Hyperlinks erstellen).
 
 **Die Länge der Aufzeichnung bestimmen**
 
@@ -89,42 +92,44 @@ Dies ist, was die Hinweisanmerkungsaussehung wie in der " Blase "im Aufgabenleit
 -   Wenn der Prozess mehrere Aufgaben betrifft, die die Person wahrscheinlich nicht alle auf einmal erledigt, können Sie die Aufgaben in einer Aufzeichnung beibehalten, beispielsweise "Funktionsprofile einrichten und zuweisen."
 -   Wenn es sich um etwas handelt, dass nur einmalig ausgeführt werden muß (beispielsweise eine Konfiguration) und dann eine andere Aufgabe, die sofort danach, jedoch wiederholt und eigenständig, ausgeführt wird, teilen Sie sie in zwei Aufgabenaufzeichnungen auf.
 
-** Legen Sie fest, wo in der Benutzeroberfläche, um eine Erfassung zu starten ** die Seite, dass Sie sich befinden, wenn Sie das Erfassen von wirkt einer Aufgabenaufzeichnung starten, die der Aufgabenleitfaden für Seite angezeigt wird. Wenn Sie z die Aufgabenaufzeichnung im Hilfebereich aufgeführt werden soll, wenn ein Benutzer auf Hilfe auf die Hauptbuchparameter Seite können, müssen Sie die Erfassung auf der Hauptbuchparameterseite starten. **Aufzeichnungen als .axtr-Dateien speichern** Wenn Sie das Erstellen oder Bearbeiten einer Aufgabenaufzeichnung beendet haben, werden Ihnen mehrere Optionen zum Herunterladen, oder Speichern der Aufzeichnung dargestellt. Sie können die Datei als Aufgabeaufzeichnungspaket (.axtr), als unformatierte Aufzeichnungsdatei (.xml) oder als Word-Dokument herunterladen, oder die Datei in einer LCS-Bibliothek speichern. Es wird empfohlen, Ihre Aufgabenaufzeichnung immer als Aufgabenaufzeichnungspaketdatei (.axtr) zu speichern. Dies unterstützt Sie dabei, die Verwaltung der Datei zu vereinfachen, wenn Prozeduren oder Anmerkungen später geändert werden müssen. Wenn Sie die Datei als Word-Dokument herunterladen möchten, speichern Sie sie ebenfalls als Aufgabenaufzeichnungspaketdatei.
+**Legen Sie fest, wo in der Benutzeroberfläche eine Erfassung gestartet wird** Die Seite, auf der Sie sich befinden, wenn Sie mit der Aufnahme einer Aufgabenaufzeichnung starten, hat Auswirkungen darauf, für welche Seite der Aufgabenleitfaden angezeigt wird. Wenn also beispielsweise Ihre Aufgabenaufzeichnung im Hilfebereich aufgeführt werden soll, wenn ein Benutzer auf Hilfe auf der Seite "Hauptbuchparameter" klickt, müssen Sie die Aufzeichnung auf der Hauptbuchparameterseite starten. **Aufzeichnungen als .axtr-Dateien speichern** Wenn Sie das Erstellen oder Bearbeiten einer Aufgabenaufzeichnung beendet haben, werden Ihnen mehrere Optionen zum Herunterladen, oder Speichern der Aufzeichnung dargestellt. Sie können die Datei als Aufgabeaufzeichnungspaket (.axtr), als unformatierte Aufzeichnungsdatei (.xml) oder als Word-Dokument herunterladen, oder die Datei in einer LCS-Bibliothek speichern. Es wird empfohlen, Ihre Aufgabenaufzeichnung immer als Aufgabenaufzeichnungspaketdatei (.axtr) zu speichern. Dies unterstützt Sie dabei, die Verwaltung der Datei zu vereinfachen, wenn Prozeduren oder Anmerkungen später geändert werden müssen. Wenn Sie die Datei als Word-Dokument herunterladen möchten, speichern Sie sie ebenfalls als Aufgabenaufzeichnungspaketdatei.
 
 ## <a name="create-your-task-recording"></a>Ihre Aufgabenaufzeichnung erstellen
-Ausführliche Anweisungen finden der exemplarischen Vorgehensweise Sie [Aufgabenaufzeichnung erstellt wie eine task-recorder.md] ().
+Eine ausführliche Anleitung erhalten Sie unter [Eine Aufgabenaufzeichnung erstellen](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopieren und Anpassen von Microsoft Aufgabenaufzeichnungen
-Sie können von Microsoft Aufgabenaufzeichnungen herunterladen und bearbeitet, um sie für Ihre eigene -Trainingsmaterialien Hilfedokumentation oder zu verwenden. Um eine Microsoft Aufgabenaufzeichnung herunterzuladen, führen Sie die folgenden Schritte aus:
+Sie können die Microsoft Aufgabenaufzeichnungen herunterladen und bearbeiten, um sie für eine eigene Hilfedokumentation oder Trainingsmaterialien zu verwenden. Um eine Microsoft Aufgabenaufzeichnung herunterzuladen, führen Sie die folgenden Schritte aus:
 
-1.  In Dynamics 365 für Arbeitsgänge, öffnen Sie Aufgabenaufzeichnung. Die Aufgabenaufzeichnung finden Sie im Menü **Einstellungen**.
+1.  Öffnen Sie in Dynamics 365 for Operations die Aufgabenaufzeichnung. Die Aufgabenaufzeichnung finden Sie im Menü **Einstellungen**.
 2.  Im klicken Sie Aufgabenaufzeichnungsbereich **Eine Aufzeichnung verwalten.**
 3.  Klicken Sie unter **Wo ist die Aufzeichnung** auf **Befindet sich in einer LCS-Bibliothek**.
 4.  Klicken Sie auf **LCS-Bibliothek auswählen**.
-5.  Hier wählen Sie die globale Bibliothek Microsoft aus.
+5.  Wählen Sie die globale Microsoft-Bibliothek aus.
 6.  Wählen Sie in der Strukturdarstellung den Geschäftsprozessbibliotheksknoten aus, dem die Aufgabenaufzeichnung zugeordnet ist.
 7.  Klicken Sie auf **OK**.
 8.  Klicken Sie auf **Start**.
-9.  An diesem Punkt Schritt durch die Aufzeichnung, eine vor geändert wird, z, fahren Sie sie zu überspielen. ** Hinweis **: Wenn Sie nur den Text einer Erfassung ändern müssen, können Sie die Erfassung unter öffnen ** Bearbeiten der Anmerkungen einer Aufzeichnung ** Modus und ihn dann speichern.
+9.  An diesem Punkt durchlaufen Sie die Aufzeichnung und ändern dabei alle notwendigen Schritte, um sie zu überspielen. **Hinweis**: Wenn Sie nur den Text der Aufzeichnung ändern müssen, können Sie die Aufzeichnung im Modus **Anmerkungen einer Aufzeichnung bearbeiten** öffnen und anschließend speichern.
 10. Nachdem die Aufzeichnung bis zum Ende abgespielt wurde, klicken Sie auf **Anhalten** in der Symbolleiste für die Aufgabenaufzeichnung am oberen Rand des Bildschirms.
 11. Wählen Sie aus, wie Sie die Aufgabenaufzeichnung speichern wollen.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Führen Sie die im Aufgabenaufzeichnungen Hilfebereich ein
-Wenn Sie Ihre benutzerdefinierten im eigenen Aufgabenaufzeichnungen Hilfebereich anzuzeigen dass sie die wiedergegebene Rückseite als Aufgabenleitfäden oder Text angezeigt werden können, müssen Sie Ihre Aufgabenaufzeichnungen zu Ihrer eigenen BPM-Bibliothek speichern und aktualisieren anschließend die Hilfesystemparameter die auf der BPM-Bibliothek zu verweisen. Weitere Informationen finden Sie [schließen Sie im Hilfesystem.] angezeigt. ". /get-started/help-connect.md)
+## <a name="include-your-task-recordings-in-the-help-pane"></a>Ihre Aufgabenaufzeichnungen in den Hilfebereich einbeziehen
+Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich angezeigt werden, sodass sie als Aufgabenleitfaden wiedergegeben oder als Text angezeigt werden können, müssen Sie die Aufgabenaufzeichnungen in Ihrer eigenen BPM-Bibliothek speichern und Ihre Hilfesystemparameter so aktualisieren, dass sie auf die BPM-Bibliothek verweisen. Weitere Informationen finden Sie unter [Verbinden des Hilfesystems](../get-started/help-connect.md)
 
 <a name="see-also"></a>Siehe auch
 --------
 
-Dynamics für Arbeitsgangs-Hilfe [365] ". \ \ anfangen help-overview.md)
+[Dynamics 365 for Operations-Hilfe](..\get-started\help-overview.md)
 
-Führen [] (die Hilfe an. \ \ anfangen help-connect.md)
+[Hilfe verbinden](..\get-started\help-connect.md)
 
-[Aufgabenaufzeichnung in Dynamics 365 für Arbeitsgänge task-recorder.md] ()
+[Aufgabenaufzeichnung in Dynamics 365 for Operations](task-recorder.md)
 
-[Vor kurzem hinzugefügte Aufgabenaufzeichnungsfunktionen] (\\ fangen Kernsatz an, Neu-hinzugefügte-Bearbeitung-Funktion-in-AufgabeRekorder \ "
+[Vor kurzem hinzugefügte Aufgabenaufzeichnungsfunktionen](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Neue Trainingsbibliotheken für Dynamics AX in der Lebenszyklus- mithilfe der Aufgabenaufzeichnung (externer Link) Erstellen]https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax) "
+[Erstellen von neuen Schulungsbibliotheken für Dynamics AX innerhalb der Lifecycle Services mithilfe der Aufgabenaufzeichnung (externer Link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
-[Erstellen Sie Ihr Hilfethemen mit Aufgabenerfassung "externen Link)]https://mbspartner.microsoft.com/AX/Videos/970) "
+[Erstellen von umfangreicher Hilfethemen mit der Aufgabenaufzeichnung (externer Link)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
 
 

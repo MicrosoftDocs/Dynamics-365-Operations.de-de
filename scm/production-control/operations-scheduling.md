@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling"></a>Grobterminierung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieses Thema enthält allgemeine Informationen zur Grobterminierung. Diese Grobplanung wird häufig verwendet, wenn eine allgemeine Schätzung der Dauer des Produktionsprozesses benötigt wird.
 
 Sie können die Produktion auf der Arbeitsgangsebene und auf der Einzelvorgangebene planen. Mit der Grobterminierung werden die Arbeitsgänge im Produktionsarbeitsplan nicht in Einzelvorgänge aufgelöst. Wenn Sie weitere Details in die Planung aufnehmen möchten, beispielsweise Informationen über die aktuelle Kapazität, können Sie die Feinterminierung nach der Grobterminierung ausführen. Sie können auch nur eine Feinterminierung ausführen. Die Feinterminierung wird normalerweise verwendet, um Einzelvorgänge im Fertigungsbereich für einen sofortigen oder kurzfristigen Zeitrahmen zu planen.
@@ -76,5 +79,7 @@ Wenn Sie mit begrenztem Material arbeiten, hängt die Planung auch von der Verf�
 --------
 
 [Optionen für die Grobterminierung](operation-scheduling-options.md)
+
+
 
 

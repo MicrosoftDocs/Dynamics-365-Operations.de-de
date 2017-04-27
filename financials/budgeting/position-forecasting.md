@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="position-forecasting"></a>Positionsplanung
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Ausgaben, die Arbeitskräften zugeordnet sind, machen häufig einem Großteil der Kosten einer Organisation aus. Mit der Positionsplanung können Sie diese Ausgaben planen und in die Planung von Budgets einbeziehen.
 
 ## <a name="position-forecasting-in-budget-planning"></a>Positionsplanung in der Budgetplanung
 
-[] (oben grafische ![. /media/graphic-top.png)]". /media/graphic-top.png) 
+[![Grafik oben](./media/graphic-top.png)](./media/graphic-top.png) 
 
-Positionsplanung verwendet drei Hauptkomponenten, um für Positionsausgaben genaue Budgetbeträge bereitzustellen. Diese Beträge können in einen Budgetplan für Budgetberechnungen einfließen. 
+Die Positionsplanung verwendet drei Hauptkomponenten, um genaue Budgetbeträge für Positionsausgaben bereitzustellen. Diese Beträge können in einen Budgetplan für Budgetberechnungen einfließen. 
 
 Der Hauptbestandteil ist die **Planungsposition**, die alle Kostendaten darstellt, die einer einzelnen Position zugeordnet sind. Sie können mehrere Versionen einer Planungsposition erstellen, indem Sie ein anderes Budgetplanszenario zu jeder Version zuweisen. Mehrere Versionen lassen einen sich wiederholenden Ansatz für die Budgetierung zu und ermöglichen Ihnen den Vergleich von Was-Wenn-Szenarios. Jede Planungsposition hat eine entsprechende Position in der Personalverwaltung.
 
@@ -45,14 +48,14 @@ Eine **Vergütungsgruppe** ist eine optionale Einstellungskomponente, die verwen
 
 ### <a name="position-forecasting-processes"></a>Positionsplanungsprozesse
 
-![graphic1b ([]. /media/graphic1b.png)]". /media/graphic1b.png) 
+[![graphic1b](./media/graphic1b.png)](./media/graphic1b.png) 
 
-In einem typischen Prozess für Positionsplanung, erstellen Sie zunächst die Budgetkostelemente Einstellungskomponenten (und Kompensationsgruppen). Planungspositionen werden dann anhand von vorhandenen Positionen generiert. Sie können Anpassungen nach Bedarf vornehmen. So können Sie Positionen hinzufügen oder beenden, Lohnsätze und Vorteilskosten ändern sowie Lohnerhöhungen hinzufügen. Sie können mehrere Versionen einer Planungsposition erstellen, um den Vergleich verschiedener Budgetszenarios zu vereinfachen. Danach können Sie die Planungspositionen in die Budgetpläne einfügen und die Kosten aus den Prognosepositionen als Budgetplanpositionen einführen.
+In einem typischen Prozess für die Positionsplanung erstellen Sie zunächst die Einstellungskomponenten (Budgetkostenelemente und Vergütungsgruppen). Planungspositionen werden dann anhand von vorhandenen Positionen generiert. Sie können Anpassungen nach Bedarf vornehmen. So können Sie Positionen hinzufügen oder beenden, Lohnsätze und Vorteilskosten ändern sowie Lohnerhöhungen hinzufügen. Sie können mehrere Versionen einer Planungsposition erstellen, um den Vergleich verschiedener Budgetszenarios zu vereinfachen. Danach können Sie die Planungspositionen in die Budgetpläne einfügen und die Kosten aus den Prognosepositionen als Budgetplanpositionen einführen.
 
 Sie können zusätzliche Planungspositionsversionen erstellen, während Budgetpläne überarbeitet werden. Diese neuen Versionen bieten eine Basis für die Überarbeitungen.
 
 ## <a name="position-forecasting-setup"></a>Einrichten der Positionsplanung
-![graphic2 ([]. /media/graphic2-1024x327.png)]". /media/graphic2.png)
+[![graphic2](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Budgetkostenelemente
 
@@ -64,9 +67,9 @@ Die Berechnung des Kostenbetrags des Budgetkostenelements verwendet Gültigkeits
 
 Wenn das Kostenelement auf einem Prozentsatz basiert, müssen Sie die Budgetkostenelemente angeben, die als Grundlage für die Berechnung verwendet werden.
 
-**Example** 
+**Beispiel** 
 
-Jodis Organisation enthält eine Ausbildungsvergütung von 5 Prozent Grundlohn eines Mitarbeiters. Jodi möchte ein Budgetkostenelement für diese Kosten erstellen. Sie erstellt ein neues Budgetkostelement und weist den Budgetkostentyp **Vergütung** zu.
+Jodis Organisation bietet eine Ausbildungsvergütung von 5 Prozent des Grundlohns eines Mitarbeiters. Jodi möchte ein Budgetkostenelement für diese Kosten erstellen. Sie erstellt ein neues Budgetkostelement und weist den Budgetkostentyp **Vergütung** zu.
 
 Jodis möchte nicht, dass Manager den Betrag der Vergütung ändern. Daher wählt sie **Kostenänderungen nicht zulassen** im Feld **Planungspositionsüberschreibung** aus. Die Organisation wünscht, dass diese Kosten jeden Monat gleichmäßig zugewiesen werden. Daher wählt Jodi **Vierteljährlich** im Feld **Zuordnungsmethode** aus. 
 
@@ -82,18 +85,18 @@ Eine Grundfunktion von Vergütungsgruppen ist, einen Satz Budgetkostenelemente z
 
 Vergütungsgruppen können die Ertragswerte für eine Planungsposition außerdem bestimmen. Sie richten eine Gruppe ein, um entweder eine stündliche Grundlage oder eine Basis des jährlichen Gehalts zu verwenden, um Planungspositionseinkommen zu berechnen. Auf der Registerkarte **Vergütungssatztabellen** bestimmt ein Vergütungsraster von Lohnsätzen die Einnahmen, die einer Planungsposition hinzugefügt werden, auf einer zugewiesene Ebene und einem zugewiesenen Schritt. Diese Raster können auf vorhandenen Vergütungsrastern in der Personalverwaltung basieren. Alternativ können Sie neue Vergütungsraster für die Budgetplanung erstellen. 
 
-Mit den Gültigkeitsdaten und den Ablaufdaten in den Vergütungssatztabellen können Sie Lohnsätze an einem beliebigen Datum ändern. Diese Funktion ist hilfreich, wenn bei einer Verhandlung eine pauschale Erhöhung mitten in einem Budgetzyklus ausgehandelt wurde. In diesem Fall Ändern Sie das Ablaufdatum der vorhandenen Tabelle Tag vor dem Datum der Satzänderung und fügen eine neue Satztabelle hinzu, die am neuen Datum beginnt. Wenn Sie eine neue Satztabelle erstellen, wenn Sie den Wert wählen ** Erstellen eines neuen Vergütungsraster von einem vorhandenen Raster **, können Sie eine vorhandene Satztabelle aus der Personalverwaltung auswählen. Wählen Sie in der Satztabelle, die erstellt wird, die Option **Massenänderung**, um einen Prozentsatz oder eine feste Betragserhöhung oder -verringerung auf alle Sätze des Rasters anzuwenden. 
+Mit den Gültigkeitsdaten und den Ablaufdaten in den Vergütungssatztabellen können Sie Lohnsätze an einem beliebigen Datum ändern. Diese Funktion ist hilfreich, wenn bei einer Verhandlung eine pauschale Erhöhung mitten in einem Budgetzyklus ausgehandelt wurde. In diesem Fall Ändern Sie das Ablaufdatum der vorhandenen Tabelle Tag vor dem Datum der Satzänderung und fügen eine neue Satztabelle hinzu, die am neuen Datum beginnt. Wenn Sie eine neue Satztabelle erstellen, wenn Sie den Wert **Erstellen eines neuen Vergütungsraster von einem vorhandenen Raster** wählen, können Sie eine vorhandene Satztabelle aus der Personalverwaltung auswählen. Wählen Sie in der Satztabelle, die erstellt wird, die Option **Massenänderung**, um einen Prozentsatz oder eine feste Betragserhöhung oder -verringerung auf alle Sätze des Rasters anzuwenden. 
 
 Die Felder **Zeitplan für Erhöhungen** und **Datum der Erhöhung** in der Vergütungsgruppe werden verwendet, wenn Sie Lohnerhöhungen erstellen müssen, weil Positionen von einem Schritt zum nächsten wechseln. Eine jährliche Lohnerhöhung ist ein typisches Szenario. Der Zeitplan für Erhöhungen bestimmt, ob das Jahrestagsdatum der Position oder ein einzelnes allgemeines Datum für die Schritterhöhung verwendet wird. Der Zeitplan gilt für alle Planungspositionen in der Vergütungsgruppe. 
 
 Das Einkommenskostenelement, das für die Lohngruppe aktiviert ist, wird verwendet, wenn Sie Einkünfte für die Planungspositionen in der Gruppe erstellen, einschließlich ihres Grundlohns und aller Schritterhöhungen. Das Feld **Plan für feste Vergütung** verknüpft die Vergütungsgruppe mit einem Plan für feste Vergütung in der Personalverwaltung. Dieser Link kann Informationen bezüglich fester Vergütung einer Arbeitskraft einer Planungsposition zuweisen und kann das Budget genauer machen. Bedenken Sie, dass die Struktur für das Vergütungsraster (die Ebenen und die Schritte) für die Vergütungsgruppe mit der Struktur des festen Vergütungsplans übereinstimmen soll. Andernfalls kann das System die Vergütungsgruppe und den festen Vergütungsplan nicht ordnungsgemäß verknüpfen.
 
 ## <a name="creating-forecast-positions"></a>Planungspositionen erstellen
-![graphic3 ([]. /media/graphic3-1024x327.png)]". /media/graphic3.png)
+[![graphic3](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Erstellen von Planungspositionen für vorhandene Positionen
 
-Für die genauste Budgetplanung Planungspositionen können Sie erstellen, indem Sie Details auf den vorhandenen Zeilen in Microsoft Dynamics 365 für Arbeitsgänge verwendet, unabhängig davon, ob die Position nur ausgefüllt ungefüllt oder ist. 
+Für die genauste Budgetplanung können Sie Planungspositionen erstellen, indem Sie Details vorhandener Positionen in Microsoft Dynamics 365 for Operations verwenden, unabhängig davon, ob die Position gerade ausgefüllt ist oder nicht. 
 
 Die Funktion **Vorhandene Positionen hinzufügen** zeigt alle Positionen für eine Organisation an. Wenn Sie das Datum** Per Datum** festlegen, können Sie die Liste der Positionen ändern, sodass sie die Positionen enthält, die an einem Datum in der Vergangenheit existierten oder in der Zukunft existieren (beispielsweise Start des nächsten Budgetzyklus). Wählen Sie einen Budgetplanungsprozess und ein Budgetplanszenario, wählen Sie Positionen in der Liste und klicken Sie dann auf **OK**, um Planungspositionen für die ausgewählten Positionen zu erstellen. Beachten Sie, dass Sie nur eine geplante Position für jede vorhandene Position in einem Budgetplanungsprozess und -szenario erstellen können. Sie können jedoch weitere Versionen erstellen, indem Sie verschiedene Budgetplanszenarios zuweisen. 
 
@@ -103,9 +106,9 @@ Wenn ein Budgetkostenfaktor aktiviert ist, wird der jährliche Betrag der festen
 
 Wenn die Option **Vergütungsgruppe zuweisen** auf **Ja** festgelegt ist, wenn die Arbeitskraft, die der Position zugewiesen ist, einen Schritt-basierten festen Vergütungsplan hat, der mit einer Vergütungsgruppe (wie im Vorfeld beschrieben) verknüpft ist, werden die Ebene und der Schritt von der Arbeitskraft der Planungsposition zusammen mit der Vergütungsgruppe zugewiesen. Das Budgetkostenelement vom Typ Einkünfte aus der Vergütungsgruppe wird der Planungsposition hinzugefügt, und der Lohnsatz der Ebene und des Schritts aus der Vergütungsgruppe werden verwendet. 
 
-Die Einstellung der Option **Vergütungsgruppe zuweisen** besitzt Vorrang vor der Einstellung der **Budgetkostenelementzuweisung**. Die beiden Einstellungen können gleichzeitig verwendet werden. 
+Die Einstellung der Option **Vergütungsgruppe zuweisen** besitzt Vorrang vor der Einstellung der **Budgetkostenelementzuweisung**. Bis zu zwei Einstellungen können gleichzeitig verwendet werden. 
 
-![graphic4 ([]. /media/graphic4.png)]". /media/graphic4.png) 
+[![graphic4](./media/graphic4.png)](./media/graphic4.png) 
 
 Eine weitere Option ist, ein Jahrestagsdatum zuzuweisen. Das ausgewählte Datum (reguliertes Startdatum, Arbeitskraftstartdatum, Beschäftigungsstartdatum oder Dienstalter) aus der zugewiesenen Arbeitskraft wird dann als Jahrestag der Planungsposition festgelegt und wird zu Informationszwecken verwendet und wenn Lohnerhöhungen generiert werden.
 
@@ -118,7 +121,7 @@ Wenn eine Planungsposition aktiviert ist, wählen Sie **Ausgewählte Planungspos
 Sie können auch eine vollständig neue Planungsposition erstellen. Wählen Sie einen vorhandenen Einzelvorgang aus, und auch wählen Sie den Budgetplanungsprozess aus und das Budgetplanszenario. Sie können ggf. weitere Details hinzufügen, die Sie hinzufügen möchten. Noch einmal wird gleichzeitig eine neue Position in der Personalverwaltung erstellt.
 
 ## <a name="working-with-forecast-positions"></a>Arbeiten mit Planungspositionen
-![graphic5 ([]. /media/graphic5-1024x327.png)]". /media/graphic5.png)
+[![graphic5](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Mehrere Versionen einer Planungsposition
 
@@ -138,9 +141,9 @@ Beispiel: Eine Budgetkostenelementposition vom 1. Januar 2017 bis zum 30. Juni 2
 
 Die Positionen des Budgetkostenelements müssen neu berechnet werden, wenn der FTE-Wert in der Planungsposition geändert wird. Die Positionen müssen auch neu berechnet werden, wenn die Aktivierungsdaten oder die Deaktivierungsdaten geändert werden. Änderungen dieser Daten können eine Aktualisierung der Start- und Enddatumsangaben im Budgetkostenelement verursachen, die innerhalb der Daten der Planungsposition sein müssen. Wenn eine Neuberechnung erforderlich ist, wird die Schaltfläche **Neu berechnen** verfügbar, und die Meldung „Erfordert eine Berechnung“ wird angezeigt. Die Neuberechnung wird auch erforderlich, wenn Sie einen Budgetkostenelement hinzufügen oder entfernen.
 
-**Example** 
+**Beispiel** 
 
-Die Organisation berücksichtigt zwei Optionen für das Reduzieren der Kosten einer Buchhalterposition. Eine Option ist, die Position nach einem halben Jahr zu beenden. Die andere Option ist, die Position für das gesamte Jahr in Teilzeit zu ändern. Brad hat eine Planungsposition für die vorhandene Buchhalterposition in einem Basisszenario erstellt. Er kopiert diese Basisplanungsposition in Szenario A, legt das Rückzugsdatum 31. Mai fest und berechnet neu. Brad kopiert dann die Basisplanungsposition in Szenario B, ändert den FTE-Wert in **0,50** und berechnet neu. Brad besitzt nun drei Versionen, die jeweils Kostensummen aufweisen, die mit den Optionen abgestimmt sind.
+Die Organisation erwägt zwei Optionen für das Reduzieren der Kosten einer Buchhalterposition. Eine Option ist, die Position nach einem halben Jahr zu beenden. Die andere Option ist, die Position für das gesamte Jahr in Teilzeit zu ändern. Brad hat eine Planungsposition für die vorhandene Buchhalterposition in einem Basisszenario erstellt. Er kopiert diese Basisplanungsposition in Szenario A, legt das Rückzugsdatum 31. Mai fest und berechnet neu. Brad kopiert dann die Basisplanungsposition in Szenario B, ändert den FTE-Wert in **0,50** und berechnet neu. Brad besitzt nun drei Versionen, die jeweils Kostensummen aufweisen, die mit den Optionen abgestimmt sind.
 
 #### <a name="assigning-a-compensation-group"></a>Zuweisen einer Vergütungsgruppe
 
@@ -160,9 +163,9 @@ Wenn Sie ein zweites Mal auf **Erhöhungen generieren** klicken, wird der Prozes
 
 Aktualisierungen der Planungspositionen können auch aus anderen Bereichen stammen, beispielsweise aus den Seiten für die Einstellungen von Budgetkostenelementen und Vergütungsgruppen. Sie können Planungspositionen auch ändern, indem Sie die Massenaktualisierung verwenden. 
 
-Zwei Optionen sind auf der Seite Einstellungen Budgetkostelement ** ** verfügbar: ** Hinzufügen von Positionen und Positionen aktualisieren ** ** ** hinzu. Die Option **Zu Positionen hinzufügen** fügt das Budgetkostenelement zu den ausgewählten Planungspositionen hinzu. Wenn das Element bereits einer Planungsposition zugewiesen ist, wird diese Planungsposition übersprungen. Die Option **Positionen aktualisieren** wendet die aktuellen Werte (Hauptkonto, Prozentsatz, jährlicher Betrag usw.) auf die ausgewählten Planungspositionen an. 
+Zwei Optionen stehen auf der Seite mit den Einstellungen für das **Budgetkostenelement** zur Verfügung: **Zu Positionen hinzufügen** und **Positionen aktualisieren**. Die Option **Zu Positionen hinzufügen** fügt das Budgetkostenelement zu den ausgewählten Planungspositionen hinzu. Wenn das Element bereits einer Planungsposition zugewiesen ist, wird diese Planungsposition übersprungen. Die Option **Positionen aktualisieren** wendet die aktuellen Werte (Hauptkonto, Prozentsatz, jährlicher Betrag usw.) auf die ausgewählten Planungspositionen an. 
 
-Jeder Prozess hat eine ähnliche Seite, auf der Sie Planungspositionen auswählen können. Auf der Seite **Zu Positionen hinzufügen** werden alle Planungspositionen angezeigt, die zur Auswahl stehen, während auf der Seite **Positionen aktualisieren** nur die Planungspositionen angezeigt werden, denen bereits ein Budgetkostenelement zugewiesen ist. Daher gibt ", Positionen aktualisieren die Seite ** ** Ihnen die Möglichkeit, zu erfragen, der bereits den Planungspositionen zugeordneten Ausgaben ist). Sie verschieben Planungspositionen eines oberen Raster ein im unteren Raster, in die Aktualisierung einzubeziehen. 
+Jeder Prozess hat eine ähnliche Seite, auf der Sie Planungspositionen auswählen können. Auf der Seite **Zu Positionen hinzufügen** werden alle Planungspositionen angezeigt, die zur Auswahl stehen, während auf der Seite **Positionen aktualisieren** nur die Planungspositionen angezeigt werden, denen bereits ein Budgetkostenelement zugewiesen ist. (Daher bietet die **Positionen aktualisieren** Seite Ihnen die Möglichkeit, zu erfragen, der bereits den Planungspositionen zugeordneten Ausgaben ist). Sie verschieben Planungspositionen eines oberen Raster ein im unteren Raster, in die Aktualisierung einzubeziehen. 
 
 Beachten Sie, dass die Funktion **Datum ändern** in der Registerkarte **Kostenberechnung** sofort das Start- und Enddatum des Budgetkostenelements in den Planungspositionen ändert. Es stehen keine Auswahloptionen zur Verfügung. 
 
@@ -174,9 +177,9 @@ Der Neuberechnungsvorgang wird automatisch auf jede Planungsposition angewendet,
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Einfügen von Planungspositionen in Budgetpläne
 
-![graphic6 ([]. /media/graphic6-1024x327.png)]". /media/graphic6.png)
+[![graphic6](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
-Der Kostenträger der Berichterstellung und eines von Planungspositionen ist, sie Budgetplänen hinzuzufügen, sodass die Budgetpläne die genausten Budgetbeträge enthalten. Es gibt zwei Methoden zum Hinzufügen von Planungspositionen zu Budgetplänen. Sie können entweder einen Generierungs- oder einen Auswahlprozess im Budgetplan verwenden.
+Der Zweck der Erstellung und Änderung von Planungspositionen ist, sie Budgetplänen hinzuzufügen, damit die Budgetpläne die genausten Budgetbeträge enthalten. Es gibt zwei Methoden zum Hinzufügen von Planungspositionen zu Budgetplänen. Sie können entweder einen Generierungs- oder einen Auswahlprozess im Budgetplan verwenden.
 
 ### <a name="generating-a-budget-plan-from-forecast-positions"></a>Generieren eines Budgetplans aus Planungspositionen
 
@@ -215,5 +218,7 @@ Für den Generierungs- und Auswahlprozess bestimmt das Startdatum für die Posit
 Budgetplanpositionen zeigen die Quelle der Budgetbeträge an (die Planungspositionsnummer), werden jedoch nicht verknüpft. Daher werden Änderungen an der Planungsposition nicht in der Budgetplanposition angezeigt, und Änderungen an der Budgetplanposition werden in der Planungsposition angezeigt. Wenn Sie eine Planungsposition ändern und die Aktualisierungen in einen Budgetplan aufgenommen werden soll, müssen Sie die Planungsposition erneut in den Plan aufnehmen. Allerdings müssen Sie berücksichtigen, dass dieser Prozess alle Positionen entfernt, in denen diese Planungsposition zugewiesen ist. Daher werden die Änderungen, die Sie an diesen Positionen vorgenommen haben, entfernt. 
 
 Um festzustellen, in welche Budgetpläne eine Planungsposition eingefügt wurde, können Sie in den Bericht **Planpositionen nach Budgetplan** generieren. Alternativ können Sie in der Prognoseposition die Infobox **Zugeordnete Budgetpläne** öffnen, um die Pläne anzuzeigen.
+
+
 
 

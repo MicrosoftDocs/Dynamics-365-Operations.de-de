@@ -30,7 +30,7 @@ ms.lasthandoff: 03/29/2017
 
 Dieser Artikel enthält Informationen zu Berichtsdefinitionen. Eine Berichtsdefinition ist eine Berichtskomponente (oder Baustein), die eine Zeilendefinition, eine Spaltendefinition und eine optionale Berichtstruktur-Definition verwendet, um den Bericht zu erstellen. Eine Berichtsdefinition enthält auch Optionen und Einstellungen zum Anpassen eines Berichts. 
 
-Eine Berichtsdefinition ist eine Berichtskomponente (oder Baustein), die eine Zeilendefinition, eine Spaltendefinition und eine optionale Berichtstruktur-Definition verwendet, um den Bericht zu erstellen. Eine Berichtsdefinition enthält auch Optionen und Einstellungen, die Sie verwenden können, um Anpassen eines Berichts. Nachdem Sie Zeilendefinitionen und Spaltendefinitionen definieren, müssen Sie sie in einer Berichtsdefinition kombinieren. An diesem Punkt definieren Sie auch andere Aspekte der Definitionen wie die Detailebene und das Berichtsdatum. Sie können einen Bericht dann speichern und generieren. Die Finanzberichterstellung bietet die folgenden Detailebenen an:
+Eine Berichtsdefinition ist eine Berichtskomponente (oder Baustein), die eine Zeilendefinition, eine Spaltendefinition und eine optionale Berichtstruktur-Definition verwendet, um den Bericht zu erstellen. Eine Berichtsdefinition bietet auch zusätzliche Optionen und Einstellungen, die Sie verwenden können, um einen Bericht anzupassen. Nachdem Sie Zeilendefinitionen und Spaltendefinitionen definieren, müssen Sie sie in einer Berichtsdefinition kombinieren. An diesem Punkt definieren Sie auch andere Aspekte der Definitionen wie die Detailebene und das Berichtsdatum. Sie können einen Bericht dann speichern und generieren. Die Finanzberichterstellung bietet die folgenden Detailebenen an:
 
 -   Wertmäßig
 -   Finanzen und Konto
@@ -89,6 +89,6 @@ In der folgenden Tabelle werden die Registerkarten in einer Berichtsdefinition u
 <a name="see-also"></a>Siehe auch
 --------
 
-[Finanzberichterstellung für Microsoft Dynamics 365 für Arbeitsgänge financial-reporting-intro.md] ()
+[Finanzberichterstellung für Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

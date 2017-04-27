@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-workflows"></a>Beschaffungsworkflows
 
+[!include[banner](../includes/banner.md)]
+
+
 Einige Organisationen verlangen, dass Bestellanforderungen und Bestellungen von einem Benutzer bestätigt werden, der die Transaktion nicht eingegeben hat. Zum Einrichten eines Genehmigungsprozesses können Sie einen Workflow erstellen.
 
 Ein Workflow stellt einen Geschäftsprozess dar. Ein Workflow definiert, wie ein Dokument das System durchläuft und zeigt an, wer eine Aufgabe abschließen oder ein Dokument genehmigen muss. Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vorteile:
 -   **Konsistente Prozesse** – Sie können den Genehmigungsprozess für bestimmte Dokumente definieren, z. B. Bestellanforderungen und Spesenabrechnungen. Das Workflowsystem trägt dazu bei, dass Dokumente konsistent und effizient verarbeitet und genehmigt werden.
 -   **Prozesssichtbarkeit** – Sie können den Status, die Historie und die Leistungskennzahlen einer bestimmten Workflowinstanz nachverfolgen. So können Sie besser feststellen, ob zur Effizienzsteigerung Änderungen am Workflow vorgenommen werden sollten.
--   ** ** Zentralisierte Arbeitsliste — Benutzer können eine zentralisierte Arbeitsliste öffnen, um die Workflowaufgaben und - genehmigungen anzuzeigen, die Ihnen über den Workflow zugewiesen wurden alle, wie er in teilnehmen. Dies ist in der Arbeitsaufgabenseite verfügbar.
+-   **Zentralisierte Arbeitsliste**- Benutzer können eine zentralisierte Arbeitsliste öffnen, um die Workflowaufgaben und ‑genehmigungen anzuzeigen, die ihnen zu allen Workflows zugewiesen werden, an denen sie teilnehmen. Dies ist in der Arbeitsaufgabenseite verfügbar.
 
 ## <a name="the-types-of-workflows-that-you-can-create"></a> Erstellbare Workflowtypen
 Die folgenden Workflowtypen stehen für die Beschaffung zur Verfügung.
@@ -46,7 +49,7 @@ Die folgenden Workflowtypen stehen für die Beschaffung zur Verfügung.
 | Bestellpositionsworkflow     | Erstellen Sie Prüfungs- und Genehmigungsworkflows für Bestellpositionen. |
 
 ## <a name="creating-a-workflow"></a>Erstellen eines Workflows
-So erstellen Sie einen Workflow, den Einstellungsbeschaffungs- &gt; Beschaffungs- Beschaffung und &gt; -Bevorratungsworkflow und fahren einen neuen Workflow durch die Auswählen des Typs des Workflows erstellen, den Sie erstellen möchten.  
+Um einen Workflow zu erstellen, wechseln Sie zu Beschaffung &gt; Einrichtung &gt; Beschaffungsworkflows und erstellen Sie einen neuen Workflow, indem sie den Workflowtyp auswählen, den Sie erstellen möchten.  
 
 Auf der Workflowarbeitsfläche können Sie Workflowelemente in den Designer ziehen und die Elemente in einen Fluss verknüpfen. Die Workflowelemente sollten konfiguriert werden. Für Genehmigungs- und Aufgabenworkflowelemente können Sie konfigurieren, welcher Teilnehmer Aktivitäten ausführen soll.
 Teilnehmertypen
@@ -69,6 +72,8 @@ Sie können folgenden Teilnehmergruppen einen Genehmigungsschritt zuweisen.
 
 [Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Bestellanforderungsworkflow](purchase-requisitions-workflow.md)
+
+
 
 

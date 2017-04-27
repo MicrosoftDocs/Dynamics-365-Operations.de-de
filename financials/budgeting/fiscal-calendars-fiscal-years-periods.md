@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Steuerkalender, Geschäftsjahre und Finanzzeiträume
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel behandelt Steuerkalender, Geschäftsjahre und Perioden und erläutert, wie diese für juristische Personen, Anlagen und die Budgetierung verwendet werden.
 
 Steuerkalender bieten einen Rahmen für die finanziellen Aktivitäten einer Organisation. Jeder Steuerkalender beinhaltet mindestens ein Geschäftsjahr, und jedes Geschäftsjahr besteht aus mehreren Perioden. Steuerkalender können auf Geschäftsjahren mit Beginn am 1. Januar und Ende am 31. Dezember oder auf beliebigen anderen Datumsangaben für Geschäftsjahre basieren. In einigen Organisationen beginnt das Geschäftsjahr zum Beispiel am 1. Juli eines Jahres und endet am 30. Juni des darauf folgenden Jahres. 
@@ -58,6 +61,8 @@ Budgetzyklen sind der Zeitraum, in dem ein Budget verwendet wird. Budgetzyklen k
 
 ## <a name="maintain-periods-for-your-organization"></a>Verwalten von Perioden für die Organisation
 Auf der Seite Sachkontokalender können Sie die Details zum Steuerkalender, zu den Geschäftsjahren und zu den Perioden angezeigt werden, die in Ihrer Organisation verwendet werden. Sie können auch den Status der Perioden ändern und auswählen, welche Benutzer Buchungen für bestimmte Perioden vornehmen können. Zu Beginn einer neuen Periode soll zum Beispiel eine Gruppe von Benutzern die Buchung von Posten aus der vorherigen Periode abschließen, während andere Gruppen nur in der neuen Periode arbeiten.
+
+
 
 
 

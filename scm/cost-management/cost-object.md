@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-objects"></a>Kostenobjekte
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu den Kostenobjekten und beschreibt, wie Kosten und Mengen kumuliert werden. Ein Kostenträger ist eine Entität, für die Kosten und Mengen kumuliert werden. Eine Kostenträgerentität kann entweder ein Produkt oder Produktvarianten, wie Varianten für Format und Farbe sein.  
 
 <a name="cost-objects"></a>Kostenobjekte
@@ -65,19 +68,21 @@ In der folgenden Tabelle zeigt, was ein Kostenobjekte ist und was ein Bestandsob
     -   Gebuchte Menge
 -   Das Feld **Durchschnittlichen Einheitenkosten** ist ein berechnetes Feld. Der Wert wird berechnet, indem der Wert **Wert** durch den Wert **Menge** geteilt wird.
 
-** Hinweis: ** Der ** zum Einbeziehen des physischen Wertes ** ein Parameter haben keinerlei Auswirkungen auf Berechnungen die vorhergehenden.
+**Hinweis:** Der Parameter **Physischen Wert einbeziehen** hat keinen Einfluss auf die vorhergehenden Berechnungen.
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Produktdimensionsgruppe](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Lagerdimensionsgruppe](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Rückverfolgungsgruppe](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Die neu oder Microsoft Dynamics AX ist /dynamics365/operations/dev-itpro/get-started/what] "geändert wurde - neu-geändert)
+[Neuheiten oder Änderungen in der Architektur von Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
-[Cost entries](cost-entries.md)
+[Kosteneinträge](cost-entries.md)
+
+
 
 

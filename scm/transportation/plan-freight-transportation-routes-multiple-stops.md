@@ -1,5 +1,5 @@
 ---
-title: "Mit mehreren Planfracht-Transportarbeitspläne stoppt"
+title: Frachtverkehrsrouten mit mehreren Zwischenstopps planen
 description: Dieser Artikel beschreibt die verschiedenen Elemente zur Planung von Transportrouten in Microsoft Dynamics AX.
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Mit mehreren Planfracht-Transportarbeitspläne stoppt
+# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Frachtverkehrsrouten mit mehreren Zwischenstopps planen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel beschreibt die verschiedenen Elemente zur Planung von Transportrouten in Microsoft Dynamics AX.
 
@@ -48,5 +51,7 @@ Eine geplante Route ist ein vordefinierter Routenplan, der über einen Zeitplan 
 
 ## <a name="load-building-workbench"></a>Ladungserstellungsworkbench
 Die Seite Ladungserstellungsworkbench verwendet die Adressen und Lieferdaten aus Aufträgen und die verfügbaren geplanten Routen, um eine Ladung vorzuschlagen. Standardmäßig werden die Werte der Route über die Arbeitsfläche eingegeben. Allerdings können Sie ein "Von"-Datum auswählen, das vor dem "Von"-Datum der Route liegt. Wenn eine Ladung vorgeschlagen wird, werden die Lieferadresse und das Lieferdatum für alle offenen Auftrage überprüft. Wenn die Postleitzahl der Lieferadresse der Postleitzahl eines Hubs im Routenplan entspricht, und wenn das Lieferdatum innerhalb des in den Kriterien gewählten Bereichs liegt, wird der Auftrag für die Ladung vorgeschlagen. Die Kapazität der Ladungsvorlage wird ebenfalls berücksichtigt. Es wird immer nur eine Ladung vorgeschlagen. Wenn Sie einen Auftrag haben, der nicht einbezogen ist, möchten Sie möglicherweise eine andere Ladungsvorlage verwenden (z. B. eine Ladungsvorlage für einen größeren LKW oder Container) oder eine zusätzliche Lieferung planen.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-process-recurring-invoices"></a>Einrichten und Verarbeiten von Serienrechnungen
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Serienrechnungen eingerichtet und verarbeitet werden. Sie können Serienrechnungen verwenden, wenn Sie Debitoren regelmäßig für den gleichen Betrag eine Rechnung stellen müssen.
 
 <a name="create-a-recurring-free-text-invoice-template"></a>Erstellen einer Vorlage für Freitext-Serienrechnungen
@@ -61,5 +64,7 @@ Drucken von Freitext-Serienrechnungen
 ----------------------------------
 
 Nach dem Buchen von Serienrechnungen können Sie die Rechnungen auf der Seite mit der Liste mit Freitextrechnungen drucken. Sie können die ausgewählten Rechnungen drucken oder einen Bereich von Rechnungen auswählen und drucken.
+
+
 
 

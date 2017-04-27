@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Konvertieren von Buchhaltungs- oder Berichtswährungen
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Ein Unternehmen, das die Buchhaltungswährung oder Berichtswährung ändern muss, verfügt über zwei Optionen. Die erste Option ist, ein neues Unternehmen zu erstellen und neu zu beginnen. Die zweite Option ist, den Buchhaltungs- und den Berichtswährungsumwandlungsprozess auszuführen. Dies ist ein Prozess mit sehr langer Laufzeit, der jede Buchung im System ändert. Bevor Sie den Prozess ausführen können, sind zusätzliche Einstellungen erforderlich.
@@ -72,6 +75,8 @@ Nach der Währungskonvertierung müssen Sie alle neu Abstimmungsberichte neu gen
 -   Wenn die Konvertierung von Hauptbuch-Buchhaltungswährung Rundungsdifferenzen verursacht, werden diese Differenzen nicht unter Verwendung des Belegs gebucht, der Ursache der Rundungsdifferenz ist. Stattdessen werden die Differenzen über den Beleg gebucht, die für die Konvertierungsbuchungen eingegeben wurde. Auf diese Weise werden die Rundungsdifferenzen in allen nach der Konvertierung ausgeführten Berichten ausgegeben, die auf Beleg und Datum prüfen. Dieses Verahlten ist korrekt und kann ignoriert werden.
 -   Wird in den Abgleichberichten für Debitoren und Kreditoren ein abweichender Betrag angezeigt und war dies vor der Konvertierung nicht der Fall, muss dieser Differenzbetrag gebucht werden, und zwar auf dem Summenkonto für Debitoren und Kreditoren. Als Gegenkonto wird das Sachkonto für Konvertierungsverlust oder Konvertierungsgewinn verwendet.
 
-Nachdem alle Sachkonto-Buchungserfassungen gelöscht wurden, können Sie die Sachkontobuchungen journalisieren. ** Hauptbuch auf ** &gt; ** Periodisch ** &gt; ** Erfassungen ** &gt; ** journalisierend **. Sie können Fremdwährungsbeträge nach der Währungsumrechnung neu bewertet wenn die Neubewertung erforderlich ist. Sie bewerten Fremdwährungsbeträge neu, indem Sie **Standard** im Feld **Methode** für die Neubewertung auswählen.
+Nachdem alle Sachkonto-Buchungserfassungen gelöscht wurden, können Sie die Sachkontobuchungen journalisieren. Klicken Sie auf **Hauptbuch** &gt; **Periodisch** &gt; **Erfassungs** &gt; **Journalisierung**. Sie können Fremdwährungsbeträge nach der Währungsumrechnung neu bewertet wenn die Neubewertung erforderlich ist. Sie bewerten Fremdwährungsbeträge neu, indem Sie **Standard** im Feld **Methode** für die Neubewertung auswählen.
+
+
 
 

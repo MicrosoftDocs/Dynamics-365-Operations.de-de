@@ -1,6 +1,6 @@
 ---
 title: "Stücklisten und Formeln"
-description: "Dieser Artikel wird Informationen zu Stücklisten (BOMs) und Formeln fest, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind. Stücklisten und Formeln können die erforderlichen Inhaltsstoffe oder Materialien den für ein bestimmtes Produkt angezeigt. Formeln gibt außerdem den Kuppel- und Nebenprodukten, die in einem bestimmten Produktionskontext eingehen."
+description: "Dieser Artikel enthält Informationen zu Stücklisten (BOMs) und Formeln, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind. Stücklisten und Formeln können die erforderlichen Inhaltsstoffe oder Materialien für ein bestimmtes Produkt angezeigt. Formeln definieren außerdem die Kuppel- und Nebenprodukten, die in einem bestimmten Produktionskontext eingehen."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Stücklisten und Formeln
 
-Dieser Artikel wird Informationen zu Stücklisten (BOMs) und Formeln fest, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind. Stücklisten und Formeln können die erforderlichen Inhaltsstoffe oder Materialien den für ein bestimmtes Produkt angezeigt. Formeln gibt außerdem den Kuppel- und Nebenprodukten, die in einem bestimmten Produktionskontext eingehen. 
+[!include[banner](../includes/banner.md)]
+
+
+Dieser Artikel enthält Informationen zu Stücklisten (BOMs) und Formeln, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind. Stücklisten und Formeln können die erforderlichen Inhaltsstoffe oder Materialien für ein bestimmtes Produkt angezeigt. Formeln definieren außerdem die Kuppel- und Nebenprodukten, die in einem bestimmten Produktionskontext eingehen. 
 
 <a name="bills-of-materials"></a>Stücklisten
 ------------------
@@ -38,7 +41,7 @@ Eine Stückliste (BOM) definiert die Komponenten, die erforderlich sind, um ein 
 
 Wenn sie mit dem Arbeitsplan oder einem Produktionsfluss kombiniert wird, die die Arbeitsgänge und Ressourcen beschreibt, die erforderlich sind, um ein Produkt zu erstellen, bildet die Stückliste die Grundlage für die Berechnung der vorkalkulierten Kosten des Produkts.  
 
-Eine Stückliste ist eine einzelne Entität, die von den folgenden Informationen beschrieben wird:
+Eine Stückliste ist eine einzelne Entität, die mit den folgenden Informationen beschrieben wird:
 
 -   BOM-Kennung
 -   Stücklistenname
@@ -49,7 +52,7 @@ Eine einzelne Stückliste beschreibt eine einzelne Ebene, die durch eine eindeut
 
 ### <a name="formulas-co-products-and-by-products"></a>Formeln, Kuppel- und Nebenprodukte
 
-Eine Formel ist ein Untertyp der Stückliste, die normalerweise für die Fertigungsverarbeitung verwendet wird. Zusätzlich zu Komponenten und Zutaten beschreibt eine Formel Kuppel- und Nebenprodukte. In die tatsächliche Version erfordert die Definierung von Co- und Nebenprodukte sowie für die Formel die Formelversion. Eine Formel wird normalerweise für ein bestimmtes Produkt definiert (Produktion einer Formel oder eines Planungsartikel) sicher Formelversion im Formular definiert ist.
+Eine Formel ist ein Untertyp der Stückliste, die normalerweise für die Fertigungsverarbeitung verwendet wird. Zusätzlich zu Komponenten und Zutaten beschreibt eine Formel Kuppel- und Nebenprodukte. In der tatsächlichen Version erfordert die Definierung von Co- und Nebenprodukte für die Formel die Formelversion. Eine Formel wird normalerweise für ein bestimmtes Produkt definiert (Produktion einer Formel oder eines Planungsartikel) die in der Formelversion im Formular definiert ist.
 
 ### <a name="boms-in-the-product-lifecycle"></a>Stücklisten im Produktlebenszyklus
 
@@ -61,7 +64,7 @@ Im Produktlebenszyklus werden zahlreiche Arten von Stücklisten aus unterschiedl
 -   **Produktionsstückliste** - Dies ist die tatsächliche Stückliste, die für eine bestimmte Produktion verwendet wird. Eine Produktionsstückliste muss die tatsächlichen Ressourcen berücksichtigen, die verwendet werden, um das Endprodukt zu produzieren. Wenn ein Produktionsauftrag, ein Chargenauftrag oder ein Kanban erstellt wird, werden die mehrere Ebenen von Stücklisten, die von Phantome dargestellt werden, auf eine Ebene verringert und zu den Arbeitsgängen für den Auftrag verteilt.
 -   **Kalkulationsstückliste** Der Preis, der zum Berechnen der vorkalkulierten Kosten eines Produkts verwendet wird. So können Sie beispielsweise eine Kalkulationsstückliste nutzen, wenn Standardkosten verwendet werden, oder vorkalkulierte Kosten eines bestimmten Produkts berechnet werden. Kalkulationsstücklisten können auf eine bestimmte Mischung von Materialien und Ressourcen verweisen, die erwartungsgemäß verwendet werden. Daher können Sie die Kalkulationsstückliste verwenden, um repräsentativ vorkalkulierte Kosten für eine Periode zu erstellen und Abweichungen im Zeitverlauf zu vermeiden.
 
-Die Typen der Stückliste, die bereits in einer - Implementierung verwendet werden, hängt von der Implementierung und auch von den Geschäftsszenarien und Anforderungen aus. In den einfachen Implementierungen können eine Planung Stückliste, eine Produktionsstückliste und eine Kalkulationsstückliste als eine Stückliste modelliert werden. In der Umgebung, in der allgemeine Konstruktionsänderungen und mehrere alternative Arbeitspläne vorhanden sind, ist wahrscheinlich ein größerer Satz Stücklistentypen erforderlich.
+Die Typen der Stückliste, die tatsächlich in einer Implementierung verwendet werden, hängen von der Implementierung und ebenso von den Geschäftsszenarien und Anforderungen ab. In den einfachen Implementierungen können eine Planung Stückliste, eine Produktionsstückliste und eine Kalkulationsstückliste als eine Stückliste modelliert werden. In der Umgebung, in der allgemeine Konstruktionsänderungen und mehrere alternative Arbeitspläne vorhanden sind, ist wahrscheinlich ein größerer Satz Stücklistentypen erforderlich.
 
 ### <a name="approval-of-boms-and-formulas"></a>Genehmigung von Stücklisten und von Formeln
 
@@ -78,7 +81,7 @@ Bevor eine Stücklistenversion in der Planung oder im Produktionsprozess verwend
 
 ### <a name="activation-of-the-default-bom-or-formula-version"></a>Aktivierung der standardmäßigen Stücklisten- oder Formelversion
 
-Wenn Sie eine bestimmte Stückliste oder eine Formel als standardmäßige Stücklisten- oder Formelversion festlegen wollen, die von der Produktprogrammplanung verwendet wird oder verwendet wird, um Produktionsaufträge zu erstellen, müssen Sie die Version aktivieren. Wenn die Version aktiviert ist, wird die Eindeutigkeit der Version für die angegebenen Einschränkungen (beispielsweise Gesamtlayout, Periode, Standort oder" Menge geprüft. Sie erhalten eine Fehlermeldung, dass die Version, wenn Sie versuchen, Konflikte mit einer Version zu ermöglichen, die bereits aktiv ist. Sie müssen dann entweder die Konflikt verursachende Version deaktivieren oder die Versionseinschränkungen (meist die Periode) ändern, um eine mehrdeutige Aktivierung zu verhindern.
+Wenn Sie eine bestimmte Stückliste oder eine Formel als standardmäßige Stücklisten- oder Formelversion festlegen wollen, die von der Produktprogrammplanung verwendet wird oder verwendet wird, um Produktionsaufträge zu erstellen, müssen Sie die Version aktivieren. Wenn die Version aktiviert ist, wird die Eindeutigkeit der Version für die angegebenen Einschränkungen (beispielsweise Gesamtlayout, Periode, Standort oder Menge) geprüft. Sie erhalten eine Fehlermeldung, wenn die Version, die Sie aktivieren möchten,  einen Konflikt mit einer Version ergibt, die bereits aktiv ist. Sie müssen dann entweder die Konflikt verursachende Version deaktivieren oder die Versionseinschränkungen (meist die Periode) ändern, um eine mehrdeutige Aktivierung zu verhindern.
 
 ### <a name="product-change-with-case-management"></a>Produktänderung mit Anfrageverwaltung
 
@@ -114,5 +117,7 @@ Wählen Sie den** Lieferung mit Bedarfsverursachung** Positionstyp aus, wenn Sie
 Wählen Sie den Positionstyp **Händler** wenn für den Produktionsprozess ein Zulieferer zum Einsatz kommt und für diesen automatisch eine Unterproduktion oder eine Bestellung erstellt werden soll.  
 
 **Hinweis zu Fremdarbeitsdiensten in einer Stückliste:** Die Dienstleistung oder Arbeit, die der Zulieferer ausführt wird, muss als Dienstleistungsartikel erstellt werden, der im Bestand nachverfolgt wird. Sie müssen den Dienstleistungsartikel dem übergeordneten Artikel als Stücklistenposition zuordnen. Der Arbeitsplan muss einen Arbeitsgang enthalten, der der betrieblichen Ressource des Zulieferers zugewiesen ist.
+
+
 
 

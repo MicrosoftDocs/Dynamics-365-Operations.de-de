@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Intercompany-Ausgleich für zentralisierte Zahlungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Dadurch wird vermieden, dass die gleiche Buchung für mehrere juristische Personen eingegeben werden muss. Dies hat eine Zeitersparnis zur Folge, da so der Zahlungsvorschlagsprozess, der Ausgleichsprozess, die Bearbeitung offener Posten sowie die Bearbeitung abgeschlossener Buchungen bei zentralisierten Zahlungen optimiert werden. 
 
 Wird eine Debitoren- oder Kreditorenzahlung für eine juristische Person eingegeben und mit einer Rechnung ausgeglichen, die für eine andere juristische Person eingegeben wurde, werden die entsprechenden Buchungen vom Typ "Ausgleich", "Fällig bis" und "Fällig von" für jede juristische Person automatisch generiert. Für jede Rechnungs- und Zahlungskombination der Buchung wird ein Ausgleichsdatensatz erstellt. Jedem Ausgleichsdatensatz wird eine neue Belegnummer zugewiesen, die auf der Nummernkreisserie basiert, die auf der Seite **Debitoren-Parameter**für Kunden und auf der Seite**Kreditorenkontenparameter** für Kreditoren definiert wird. 
@@ -108,6 +111,8 @@ Bei Kreditorenzahlungen werden für die Buchungen vom Typ "Fällig bis" und "Fä
 
 ## <a name="withholding-tax"></a>Quellensteuer
 Anhand des Kreditorenkontos, das der Rechnung zugeordnet ist, wird bestimmt, ob Quellensteuer berechnet werden soll. Wenn Quellensteuer anfällt, wird sie für die juristische Person berechnet, die der Rechnung zugeordnet ist. Wenn die juristischen Personen unterschiedliche Währungen verwenden, wird der Wechselkurs der juristischen verwendet, die der Rechnung zugeordnet ist.
+
+
 
 
 

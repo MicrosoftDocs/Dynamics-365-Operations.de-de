@@ -1,6 +1,6 @@
 ---
-title: MwSt Berichterstattung Europa.
-description: "Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung Mehrwertsteuer des Auszugs europäische (VAT)- für einige Länder verfügbar."
+title: "MwSt-Berichterstattung für Europa"
+description: "Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung  des Mehrwertsteuer-Auszugs für einige europäische Länder."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 2017-04-04
@@ -25,11 +25,11 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vat-reporting-for-europe"></a>MwSt Berichterstattung Europa.
+# <a name="vat-reporting-for-europe"></a>MwSt-Berichterstattung für Europa
 
-Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung Mehrwertsteuer des Auszugs europäische (VAT)- für einige Länder verfügbar.
+Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung  des Mehrwertsteuer-Auszugs für einige europäische Länder.
 
-Dieses Thema bietet einen allgemeinen Ansatz zum Einrichten und zum Generieren der Mehrwertsteuererklärung. -Auszugs. Durch diesen Ansatz ist für Benutzer in juristischen Personen in den folgenden Land/Region wird:
+Dieses Thema bietet einen allgemeinen Ansatz zum Einrichten und zum Generieren der Mehrwertsteuererklärung. Dieser Ansatz ist für Benutzer in juristischen Personen in den folgenden Ländern/Regionen üblich:
 
 -   Österreich
 -   Belgien
@@ -42,28 +42,28 @@ Dieses Thema bietet einen allgemeinen Ansatz zum Einrichten und zum Generieren d
 -   Niederlande
 -   Schweden
 
-## <a name="vat-statement-overview"></a>MwSt.-Auszugsüberblick
-Der Mehrwertsteuertyp. im basiert auf die Beträge der Steuerbuchungen. Die Generierung eines MwSt. -Auszugs ist Teil des Mehrwertsteuerzahlungsprozesses, der durch die Bank- und Beitragsmehrwertsteuerfunktion implementiert ist. Diese Funktion wird die Mehrwertsteuer, die für eine Periode fällige ist. Die Ausgleichsberechnung enthält die gebuchte Mehrwertsteuer für die ausgewählte Ausgleichsperiode für Steuerbuchungen. Der Prozess zum Berechnen von Daten für ein MwSt. im ist auf Basis der Beziehung zwischen Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes, in denen Mehrwertsteuer-Erklärungscodes die MwSt. -Auszugsfelder übereinstimmen (oder die Markierungen in XML). Für jeden Mehrwertsteuercode sollen Mehrwertsteuer-Erklärungscodes für jede Buchungsart, z steuerpflichtigen Verkäufe eingerichtet werden, steuerpflichtigen Einkäufe, steuerpflichtiger Import. Hiermit werden Buchungsarten im Feld [Mehrwertsteuercodes für Mehrwertsteuer. Berichte in Bezug]( #Sales Steuercodes für Mehrwertsteuer. Berichte in Bezug,) beschrieben, Abschnitt weiter unten in diesem Thema.
+## <a name="vat-statement-overview"></a>MwSt.-Auszugs, Überblick
+Der MwSt-Auszug basiert auf dem Steuerbuchungsbeträgen. Die Generierung eines MwSt. -Auszugs ist Teil des Mehrwertsteuerzahlungsprozesses, der durch die Bank- und Beitragsmehrwertsteuerfunktion implementiert ist. Mithilfe dieses Funkltion können Sie die für eine Periode fällige Mehrwertsteuer berechnen. Die Ausgleichsberechnung enthält die gebuchte Mehrwertsteuer für den ausgewählten Abrechnungszeitraum für die Steuerbuchungen im Formular . Der Prozess zum Berechnen von Daten für einen MwSt.-Auszug basiert auf der Beziehung zwischen  Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes, in denen Mehrwertsteuer-Erklärungscodes mit den MwSt.-Auszugsfelder übereinstimmen (oder die Markierungen in XML). Für jeden Mehrwertsteuercode sollen Mehrwertsteuer-Erklärungscodes für jede Buchungsart, zum Beispiel steuerpflichtige Verkäufe, steuerpflichtige Einkäufe, steuerpflichtiger Import eingerichtet werden. Hiermit werden Buchungsarten im Feld [Mehrwertsteuercodes für Mehrwertsteuer-Berichte](#Sales tax codes for VAT reporting) im Abschnitt weiter unten in diesem Thema.
 
-Für jeden Mehrwertsteuer-Erklärungscode soll ein bestimmtes Berichtslayout bestimmt werden. Gleichzeitig werden Mehrwertsteuercodes auf eine bestimmte Mehrwertsteuerbehörde von Mehrwertsteuer-Ausgleichsperioden verknüpft. Für jede Mehrwertsteuerbehörde soll ein Berichtslayout bestimmt werden. Auf diese Weise können nur mit Mehrwertsteuer-Erklärungscodes demselben Berichtslayout, das für die Mehrwertsteuerbehörde in Mehrwertsteuer-Abrechnungszeiträume für den Mehrwertsteuercode wird festgelegt, in der Berichtseinstellung des Mehrwertsteuercodes ausgewählt werden. Eine Mehrwertsteuerbuchung generierte nach dem Buchen eines Auftrags, oder eine Erfassung, enthält einen Mehrwertsteuercode, eine quelle Mehrwertsteuer, eine und Mehrwertsteuerart Buchungsbeträge (und -Steuerbetrag Steuergrundlagenbetrag in der Buchhaltungswährung, in der Mehrwertsteuerwährung und in der Buchungswährung). Durch die Kombination aus Steuerbuchungsattributen, verfassen Buchungsbeträge Gesamtbeträge für die Mehrwertsteuer-Erklärungscodes, die für Mehrwertsteuercodes angegeben werden. Die folgende Abbildung zeigt die Datenenbeziehung angezeigt.
+Für jeden Mehrwertsteuer-Erklärungscode soll ein bestimmtes Berichtslayout bestimmt werden. Gleichzeitig werden Mehrwertsteuercodes auf eine bestimmte Mehrwertsteuerbehörde von Mehrwertsteuer-Ausgleichsperioden verknüpft. Für jede Mehrwertsteuer-Behörde sollte ein bestimmtes Berichtslayout bestimmt werden. Auf diese Weise können nur mit Mehrwertsteuer-Erklärungscodes demselben Berichtslayout, das für die Mehrwertsteuerbehörde in Mehrwertsteuer-Abrechnungszeiträume für den Mehrwertsteuercode errichtet wird, in der Berichtseinstellung des Mehrwertsteuercodes ausgewählt werden. Eine Mehrwertsteuerbuchung, die nach dem Buchen eines Auftrags oder eine Erfassung erstellt wurde, enthält einen Mehrwertsteuercode, eine Mehrwertsteuerquelle, Mehrwertsteuerart und Buchungsbeträge (Steuergrundbetrag und Steuerbetrag in der Buchhaltungswährung, in der Mehrwertsteuerwährung und in der Buchungswährung). Durch die Kombination aus Steuerbuchungsattributen, verfassen Buchungsbeträge Gesamtbeträge für die Mehrwertsteuer-Erklärungscodes, die für Mehrwertsteuercodes angegeben werden. Die folgende Abbildung zeigt diese Datenbeziehung.
 
 ![Diagramm](./media/diagram4.jpg)
 
-## <a name="vat-statement-setup"></a>MwSt.-Auszugseinstellung
-Um einer Mehrwertsteuererklärung. im zu generieren müssen Sie Folgendes einrichten.
+## <a name="vat-statement-setup"></a>MwST-Bericht, Einrichtung
+Um einen MwSt-Bericht zu zu Erstellen, müssen Sie Folgendes erstellen:
 
-### <a name="sales-tax-authorities-for-vat-reporting"></a>Mehrwertsteuerbehörden für Mehrwertsteuer. Berichte in Bezug
+### <a name="sales-tax-authorities-for-vat-reporting"></a>MwST-Behörde für MwST-Beichterstattung
 
 <!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-authorities/). -->
-Bevor Sie Mehrwertsteuer-Erklärungscodes einrichten können, müssen Sie das gewünschte Berichtslayout für die Mehrwertsteuerbehörde auswählen. Auf der Mehrwertsteuerbehörden ** ** Seite im ** Allgemein ** Abschnitt, wählen Sie eine aus ** Berichtslayout **. Dieses Layout wird verwendet, wenn Sie Mehrwertsteuer-Erklärungscodes einrichten.
+Bevor Sie Mehrwertsteuer-Erklärungscodes einrichten können, müssen Sie das gewünschte Berichtslayout für die Mehrwertsteuerbehörde auswählen. Sie müssen auch das Feld **Berichtslayout** im Bereich **Allgemein** auf der Seite **Mehrwertsteuer-Behörden** auswählen. Dieses Layout wird verwendet, wenn Sie Mehrwertsteuer-Erklärungscodes einrichten.
 
 ### <a name="sales-tax-reporting-codes"></a>Mehrwertsteuer-Erklärungscodes
 
-Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. im oder markiert Namen im XML-Format. Diese Codes werden verwendet, um Beträge für den Bericht zu aggregieren und vorbereitet. Wenn Sie das elektronische Berichterstellungsformat des MwSt.-Auszugs konfigurieren, werden die Namen der Ergebnisbeträge verwendet. Sie können auf der Mehrwertsteuer-Erklärungscodes ** Mehrwertsteuer-Erklärungscodes ** Seite erstellen und verwalten. Sie müssen jeden Code ein Berichtslayout zuweisen. Nachdem Sie die Mehrwertsteuer-Erklärungscodes erstellt haben, können Sie die Codes im ** der Bericht eingerichtet ** Abschnitt auf der Mehrwertsteuercodes ** ** Seite auswählen. <!---For more information, see [Set up sales tax reporting codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-reporting-codes/) and [Sales tax reporting codes page (Field descriptions)](http://ax.help.dynamics.com/en/wiki/sales-tax-reporting-codes-page-field-descriptions/).-->
+Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen im XML-Format eingegeben. Diese Codes werden verwendet, um Beträge für den Bericht zu aggregieren und vorzubereiten. Wenn Sie das elektronische Berichterstellungsformat des MwSt.-Auszugs konfigurieren, werden die Namen der Ergebnisbeträge verwendet. Sie können auf der Seite "Mehrwertsteuer-Erklärungscodes" **Mehrwertsteuer-Erklärungscodes** erstellen und verwalten. Sie müssen jedem Code ein Berichtslayout zuweisen. Nachdem Sie die Mehrwertsteuer-Erklärungscodes erstellt haben, können Sie auf dem Inforegister **Berichtseinstellungen** auf der Seite **Mehrwertsteuercode** auf sie verweisen. <!---For more information, see [Set up sales tax reporting codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-reporting-codes/) and [Sales tax reporting codes page (Field descriptions)](http://ax.help.dynamics.com/en/wiki/sales-tax-reporting-codes-page-field-descriptions/).-->
 
-### <a name="sales-tax-codes-for-vat-reporting"></a>Mehrwertsteuercodes für Mehrwertsteuer. Berichte in Bezug
+### <a name="sales-tax-codes-for-vat-reporting"></a>Mehrwertsteuercodes für MwSt-Berichterstattung
 
- Und Grundbeträge Steuerbeträge Mehrwertsteuerbuchungen können auf Erklärungscodes im MwSt. im zusammengefasst werden (XML-Markierungen oder Meldungsfelder). Sie können dieses einrichten, indem von Mehrwertsteuer-Erklärungscodes für verschiedene Buchungsarten für Mehrwertsteuercodes auf der Seite ** ** Mehrwertsteuercodes zugeordnet. Die folgende Tabelle beschreibt die Buchungsarten im Bericht, der für Mehrwertsteuercodes eingerichtet ist. Die Berechnung umfasst Buchungen für alle Typen Quellen außer Mehrwertsteuer.
+<!---For general information about setting up sales tax codes, see [Set up sales tax codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-codes/).--> Grundbeträge und Steuerbeträge von Mehrwertsteuerbuchungen können auf Erklärungscodes im MwSt.-Bericht (XML-Markierungen oder Meldungsfelder) zusammengefasst werden. Sie können dieses einrichten, indem Sie Mehrwertsteuer-Erklärungscodes für verschiedene Buchungsarten für Mehrwertsteuercodes auf der Seite  **Mehrwertsteuercodes** zuordnen. Die folgende Tabelle beschreibt die Buchungsarten im Bericht, der für Mehrwertsteuercodes eingerichtet ist. Die Berechnung umfasst Buchungen für alle  Quellenarten außer Mehrwertsteuer.
 
 <table>
 <colgroup>
@@ -72,202 +72,202 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. im oder markiert Namen
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Transaction type</strong></td>
-<td><strong>Beschreibung von den auf der Buchungsart zu zählenden Buchungen und Beträgen,</strong></td>
+<td><strong>Buchungstyp</strong></td>
+<td><strong>Die Buchungsart sowie eine Beschreibung der Buchungsart auf dem Buchungstyp</strong></td>
 </tr>
 <tr class="even">
 <td><strong>Steuerpflichtiger Umsatz</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist im ausgewählten Zeitraum</li>
-<li>Der Verkauf erfolgt inländisch (ist)<strong>Steuerart</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode/</li>
+<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>)..</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Steuerfreier Verkauf</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Verkauf erfolgt (<strong>Steuerart</strong> Export).</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Verkauf erfolgt im Ausland <strong>Steuerart</strong> ist <strong>steuerfreier Umsatz</strong>)..</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Sales tax payable</strong></td>
-<td>Summe <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Mehrwertsteuer</strong></td>
+<td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Verkauf erfolgt inländisch (ist)<strong>Steuerart</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>)..</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Taxable sales credit note</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Steuerpflichtige Verkaufsgutschrift</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Verkauf erfolgt inländisch (ist)<strong>Steuerart</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>)..</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Ausgenommene des Faxes Verkaufsgutschrift</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Steuerbefreite Verkaufsgutschrift</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Verkauf erfolgt (<strong>Steuerart</strong> Export).</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Verkauf erfolgt im Ausland <strong>Steuerart</strong> ist <strong>steuerfreier Umsatz</strong>)..</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Sales tax on sales credit note</strong></td>
-<td>Summe <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Mehrwertsteuer auf Verkaufsgutschrift</strong></td>
+<td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Verkauf erfolgt inländisch (ist)<strong>Steuerart</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>)..</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Taxable purchases</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Steuerpflichtige Einkäufe</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Kauf ist inländisch (ist)<strong>Steuerart</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Tax-free purchase</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Steuerfreier Einkauf</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Import ist Einkauf (is)<strong>Steuerart</strong>  <strong>Steuerfreier Einkauf</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Kauf erfolgt im Ausland <strong>Steuerart</strong> ist <strong>steuerfreier Einkauf</strong>)..</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Sales tax receivable</strong></td>
-<td>Summe <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Vorsteuer</strong></td>
+<td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Kauf ist inländisch (ist)<strong>Steuerart</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Taxable purchase credit note</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Steuerpflichtige Einkaufsgutschrift</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Kauf ist inländisch (ist)<strong>Steuerart</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Tax exempt purchase credit note</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Steuerbefreite Einkaufsgutschrift</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Import ist Einkauf (is)<strong>Steuerart</strong>  <strong>Steuerfreier Einkauf</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Kauf erfolgt im Ausland <strong>Steuerart</strong> ist <strong>steuerfreier Einkauf</strong>)..</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Sales tax on purchase credit note</strong></td>
-<td>Summe <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Mehrwertsteuer auf Einkaufsgutschrift</strong></td>
+<td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Der Kauf ist inländisch (ist)<strong>Steuerart</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Taxable import</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Steuerpflichtiger Import</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li><strong>Steuerart</strong> ist <strong>Verbrauchssteuer (USA)</strong></li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li><strong>Steuerart</strong> ist <strong>Steuernutzung</strong></li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Offset taxable import</strong></td>
-<td>Stornierte Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Gegenkonto zum steuerpflichtigen Import</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li><strong>Steuerart</strong> ist <strong>Verbrauchssteuer (USA)</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li><strong>Steuerart</strong> ist <strong>Steuernutzung</strong></li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Taxable import credit note</strong></td>
-<td>Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Steuerpflichtige Importgutschrift</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-e<li><strong>Steuerart</strong> ist <strong>Verbrauchssteuer (USA)</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+e<li><strong>Steuerart</strong> ist <strong>Steuernutzung</strong></li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Offset taxable import credit note</strong></td>
-<td>Stornierte Summe <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Gegenkonto zur steuerpflichtigen Import-Gutschrift</strong></td>
+<td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li>Ist Steuerart. <strong>Verbrauchssteuer (USA)</strong></li>
-d<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li>Steuerart ist <strong>Steuernutzung</strong>.</li>
+d<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Use tax</strong></td>
-<td>Summe <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Verbrauchssteuer</strong></td>
+<td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li><strong>Steuerart</strong> ist <strong>Verbrauchssteuer (USA)</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li><strong>Steuerart</strong> ist <strong>Steuernutzung</strong></li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Offset use tax</strong></td>
-<td>Stornierte Summe <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
+<td><strong>Gegenkonto Verbrauchssteuer</strong></td>
+<td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
-<li>Buchungsdatum ist in der ausgewählten Periode.</li>
-<li><strong>Steuerart</strong> ist <strong>Verbrauchssteuer (USA)</strong>.</li>
-<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; das 0.</li>
+<li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
+<li><strong>Steuerart</strong> ist <strong>Steuernutzung</strong></li>
+<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> Für die Tabelle), wird angenommen, dass die folgenden Kriterien erfüllt sein: 
-> -   Der Steuergrundbetrag ist ein vom ** Ursprung Buchungsbetrag in der Buchhaltungswährung ** Feld.
-> -   Der Steuerbetrag ist ein vom Übergangsbetrag ** tatsächlicher Mehrwertsteuerbetrag in der Buchhaltungswährung ** Feld.
+> Für die Tabelle oben wird angenommen, dass die folgenden Kriterien erfüllt sein: 
+> -   Der Steuergrundbetrag ist ein Transaktionsbetrag aus dem Feld **Ursprung in der Buchungswährung**.
+> -   Der Steuerbetrag ist ein Transaktionsbetrag aus dem Feld **Aktueller Mehrwertsteuerbetrag in der  Buchungswährung**.
 
 ### <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurieren Sie das ER-Modell und -Format für den Bericht
 
-Sie können meldendes elektronisches (ER) verwenden, um Auszüge und Bericht konfiguriert, und verschiedene Formate elektronische der Daten exportiert, ohne X++-Code zu ändern. Weitere Informationen:
+Sie können Elektronische Berichterstattung (ER) verwenden, um Auszüge und Berichte zu konfigurieren und verschiedene elektronische Datenformate zu exportieren, ohne den X++-Code zu ändern. Zusätzliche Informationen:
 
 -   [Überblick über die elektronische Berichterstellung](/dynamics365/operations/dev-itpro/dev-itpro/analytics/general-electronic-reporting)
 -   [Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Services herunter](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
--   [Lokalisierungsanforderungen - Erstellen Sie eine GER-Konfiguration]( /dynamics365/operations/dev-itpro/analytics/electronic-reporting-configuration)
+-   [[Lokalisierungsanforderungen - Erstellen Sie eine GER-Konfiguration](/dynamics365/operations/dev-itpro/analytics/electronic-reporting-configuration)
 
-## <a name="countryspecific-resources-for-vat-statements"></a>Countryspecific Ressourcen für Mehrwertsteuer. -Auszüge
-Der Mehrwertsteuertyp. im für jedes Land muss den Bedingungen der Gesetzgeber des Lands erfüllen. Es gibt vordefinierten allgemeine Modelle und Formate der der MwSt. -Auszügen für die Länder, die in der weiter unten dargestellten Tabelle.
+## <a name="countryspecific-resources-for-vat-statements"></a>Länderspezifische Ressourcen für Mehrwertsteuer-Auszüge
+Der Mehrwertsteuertyp. im für jedes Land muss den Bedingungen der Gesetzgeber des Lands erfüllen. Es gibt vordefinierten allgemeine Modelle und Formate der MwSt.-Auszügen für die Länder, die in der weiter unten dargestellten Tabelle aufgeführt sind.
 
 
 | Land        | Weitere Informationen                                                          |
 |----------------|---------------------------------------------------------------------------------|
-| Österreich        |  [MwSt.-Auszugsdetails für Österreich] (emea-aut-vat-statement-details.md)         |
+| Österreich        |  [MwSt-Berichtdetails für Österreich](emea-aut-vat-statement-details.md)         |
 | Belgien        |                                                                                 |
-| Tschechische Republik |  [MwSt.-Auszugsdetails für Tschechische Republik] (emea-cze-vat-statement-details.md)   |
-| Estland        |  [MwSt.-Auszugsdetails für Estland] (emea-est-vat-statement-details.md) |
+| Tschechische Republik |  [MwSt.-Berichtsdetails für die Tschechische Republik](emea-cze-vat-statement-details.md)   |
+| Estland        |  [MwSt-Berichtadetails für Estland](emea-est-vat-statement-details.md) |
 | Finnland        |                                                                                 |
 | Deutschland        |                                                                                 |
-| Italien          | [MwSt. -Auszugsdetails für Italien (emea-ita-vat-statements-details.md )]            |
-| Lettland         | [MwSt.-Auszugsdetails für Lettland] (emea-lva-vat-statement-details.md)           |
-| Litauen      | [MwSt.-Auszugsdetails für Litauen] (emea-ltu-vat-statement-details.md)         |
+| Italien          | [MwSt-Berichtdetail für Italien](emea-ita-vat-statements-details.md)            |
+| Lettland         | [MwSt-Berichtdetail für Lettland](emea-lva-vat-statement-details.md)           |
+| Litauen      | [MwSt-Berichtdetail für Litauen](emea-ltu-vat-statement-details.md)         |
 | Niederlande    |                                                                                 |
 | Schweden         |                                                                                 |
 

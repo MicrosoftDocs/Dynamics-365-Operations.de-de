@@ -1,6 +1,6 @@
 ---
-title: Personalized product recommendations overview
-description: "In Dynamics 365 für Arbeitsgänge, können Produktempfehlungen im Feld Verkaufsstelle (POS)- Gerät angezeigt werden. Die Empfehlungen sind Artikel, die der Debitor möglicherweise unter auf der Grundlage ihrer Einkaufshistorie, Artikel an seinem Wunschzettel und Artikel interessiert ist, dass weitere online in Debitoren und der physische Filiale &quot;Eingekauft&quot;. Für Einzelhändler mit großen Katalogen, von Empfehlungen den Debitor mit Produkterfassung. Indem die Produkte an Schau stellen, die Zinsen eines Debitors und die Kaufgewohnheiten Zielgruppe werden, können Produktempfehlungen Einzelhändlern mit Obenverkauf und Kreuzverkauf helfen und können einbehaltenen erhöhen. In Dynamics 365 für Arbeitsgänge, Produktempfehlungen werden durch kognitive Dienst- und Microsoft Azure-Lernfähigkeiteiner Maschine betrieben."
+title: "Personalisierte Produktempfehlungen, Übersicht"
+description: "In Dynamics 365 for Operations können Produktempfehlungen im Feld Verkaufsstelle (POS)- Gerät angezeigt werden. Empfehlungen sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben. Für Einzelhändler mit großen Katalogen, helfen Empfehlungen den Kunden bei der Produkterfassung. Indem Produkte zur Schau gestellt werden, die sich an den Interessen und Kaufgewohnheiten eines Kunden orientieren, erhalten Einzelhändler Upsell-Möglichkeiten und die Kundenbindung wird gestärkt. In Dynamics 365 for Operations werden Produktempfehlungen durch kognitive Dienste und Microsoft Azure Machine Learning unterstützt."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,59 +25,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="personalized-product-recommendations-overview"></a>Personalized product recommendations overview
+# <a name="personalized-product-recommendations-overview"></a>Personalisierte Produktempfehlungen, Übersicht
 
-In Dynamics 365 für Arbeitsgänge, können Produktempfehlungen im Feld Verkaufsstelle (POS)- Gerät angezeigt werden. Die Empfehlungen sind Artikel, die der Debitor möglicherweise unter auf der Grundlage ihrer Einkaufshistorie, Artikel an seinem Wunschzettel und Artikel interessiert ist, dass weitere online in Debitoren und der physische Filiale "Eingekauft". Für Einzelhändler mit großen Katalogen, von Empfehlungen den Debitor mit Produkterfassung. Indem die Produkte an Schau stellen, die Zinsen eines Debitors und die Kaufgewohnheiten Zielgruppe werden, können Produktempfehlungen Einzelhändlern mit Obenverkauf und Kreuzverkauf helfen und können einbehaltenen erhöhen. In Dynamics 365 für Arbeitsgänge, Produktempfehlungen werden durch kognitive Dienst- und Microsoft Azure-Lernfähigkeiteiner Maschine betrieben.
+[!include[banner](includes/banner.md)]
+
+
+In Dynamics 365 for Operations können Produktempfehlungen im Feld Verkaufsstelle (POS)- Gerät angezeigt werden. Empfehlungen sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben. Für Einzelhändler mit großen Katalogen, helfen Empfehlungen den Kunden bei der Produkterfassung. Indem Produkte zur Schau gestellt werden, die sich an den Interessen und Kaufgewohnheiten eines Kunden orientieren, erhalten Einzelhändler Upsell-Möglichkeiten und die Kundenbindung wird gestärkt. In Dynamics 365 for Operations werden Produktempfehlungen durch kognitive Dienste und Microsoft Azure Machine Learning unterstützt.
 
 <a name="scenarios"></a>Szenarien
 ---------
 
-Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind Mitglied der Cloud POS oder modernes POS (MPOS) verfügbar.
+Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind in Cloud POS oder Modern POS (MPOS) verfügbar.
 
-1.  ** Produktdetails ** auf der Seite die folgenden Schritte aus:
+1.  Auf der **Produktdetails** Seite:
 
--   Wenn eine Filiale einen geplanten Besuchen zuordnen ** Produktdetails ** Seite, wenn die vorherige Buchungen über verschiedene Kanälen, das vorgeschlagen Empfehlungsmodul zusätzliche Artikel berücksichtigt, die wahrscheinlich Konfigurationsfehler, zusammen eingekauft werden.
--   Falls die Filiale hinzufügt einem Debitor der Buchung zuordnen und endet erst dann eine ** Produktdetails ** Seite, das Empfehlungsmodul bereitstellt personalisierte Empfehlungen mithilfe der Buchungshistorie des Debitors.
+-   Wenn ein Shopmitarbeiter eine **Produktdetails** Seite besucht, wenn er auf die vorherigen Buchungen über verschiedene Kanälen schaut, schlägt das Empfehlungsmodul zusätzliche Artikel vor, die wahrscheinlich zusammen eingekauft werden.
+-   Falls der Shopmitarbeiter einen Kunden der Buchung hinzufügt und dann eine **Produktdetails** Seite besucht, stellt das Empfehlungsmodul personalisierte Empfehlungen mithilfe der Buchungshistorie des Kunden zur Verfügung.
 
-![proddetails ([]. /media/proddetails.png)]". /media/proddetails.png)
+[![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-2.  ** ** Buchung auf der Seite die folgenden Schritte aus:
+2.  Auf der **Transaktionen** Seite:
 
--   Das Empfehlungsmodul schlägt Artikel auf Basis der gesamten Liste von Artikeln im Korb vor.
--   Falls die Filiale hinzufügt einem Debitor der Buchung zuordnen, wird das Empfehlungsmodul persönliche Empfehlungen mithilfe der Buchungshistorie des Debitors und die Liste der Artikel im Korb bereit.
+-   Das Empfehlungsmodul schlägt Artikel auf Basis der gesamten Liste von Artikeln im Warenkorb vor.
+-   Falls der Shopmitarbeiter einen Kunden der Buchung hinzufügt stellt das Empfehlungsmodul personalisierte Empfehlungen mithilfe der Buchungshistorie des Kunden und des Warenkorbs zur Verfügung.
 
-** Hinweis ** Empfehlungen anzeigen ** Buchung ** Seite, der Einzelhändler muss das Bildschirmlayout in Dynamics 365 für Arbeitsgänge aktualisieren. Das Steuerelement ** Empfehlungen ** der Buchung muss ** ** Seite an abgelegt werden. ![transactionscreenmultipleproductslargemessengersbag-5 ([]. /media/transactionscreenmultipleproductslargemessengersbag-5.jpg)]". /media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+**Hinweis** Um Empfehlungen auf der Seite **Buchung**anzuzeigen, der Einzelhändler muss das Bildschirmlayout in Dynamics 365 for Operations aktualisieren. Das Steuerelement **Empfehlungen** muss auf der Seite **Buchung ** abgelegt werden. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3.  Auf der ** Debitorendetails ** Seite:
-    -   Das Empfehlungsmodul schlägt Artikel auf Grundlage die Benutzerkennung und Artikel im Wunschzettel des Debitors vor.
+3.  Auf der **Kundendetails** Seite:
+    -   Das Empfehlungsmodul schlägt Artikel auf Basis der Benutzerkennung und von Artikeln in der Wunschliste vor.
 
-![customerdetailsrecommendations ([]. /media/customerdetailsrecommendations.png)]". /media/customerdetailsrecommendations.png)
+[![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>Konfigurieren Dynamics 365, um Arbeitsgänge POS-Empfehlungen aktivieren
-Um Produktempfehlungen einzurichten, müssen Sie folgende Schritte ausführen.
+## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>Konfigurieren Dynamics 365 for Operations für POS-Empfehlungen
+Um Produktempfehlungen einzurichten, muss Folgendes eingerichtet werden:
 
-1.  Überprüfen Sie, ob Sie das richtige ausgewählt haben ** ** juristische Person.
-2.  Navigieren Sie Entitätsshop ** **, wählen Sie ** Einzelhandelsverkauf ** aus, und klicken Sie dann ** ** Aktualisierung. ** ** Diese Angaben werden verwendet die Demodaten (oder Ihre Daten) aus der betrieblichen Datenbank werden und es auf Entitätsshop.
-3.  Optional: Wenn Empfehlungen zum Buchungsbildschirm anzuzeigen, navigieren Sie ** Bildschirmlayout ** auswählen, vom Bildschirmlayout, starten, Bildschirmlayoutdesigner ** ** ** ** und dann fallenlassen ** Empfehlungssteuerelement ** wo erforderlich.
-4.  Wechseln Sie ** Einzelhandelsparameter **, wählen Sie aus Maschine-Lernen ** **, wählen Sie die Option Ja ** ** unter aus ** aktivieren Sie POS-Empfehlungen **.
-5.  Weitere Empfehlungen finden POS, Konfigurationseinzelvorgang globaler des Durchlaufs ** **1110. Um Änderungen widerzuspiegeln der dem POS- designer, aktivieren Kanalkonfigurationseinzelvorgang ** **1070.
+1.  Überprüfen Sie, ob Sie die richtige **Juristische Person** ausgewählt haben.
+2.  Navigieren Sie zu **Entitätsspeicher**, wählen Sie **Einzelhandelsverkauf** aus, und klicken Sie dann **Aktualisierung**. Diese Angaben werden verwendet die Demodaten (oder Ihre Daten) aus der betrieblichen Datenbank werden und es auf Entitätsspeicher.
+3.  Optional: Um Empfehlungen zum Buchungsbildschirm anzuzeigen, navigieren Sie zu **Bildschirmlayout**, wählen das Bildschirmlayout, starten den **Bildschirmlayoutdesigner** und dann legen das **Empfehlungssteuerelement** ab.
+4.  Wechseln Sie **Einzelhandelsparameter**, wählen Sie **Machine-learning** aus, wählen Sie die Option **Ja** unter **POS-Empfehlungen aktivieren** aus.
+5.  Weitere Empfehlungen zu POS erhalten Sie mit dem Konfigurationseinzelvorgang **1110**. Um Änderungen widerzuspiegeln der im POS-Designer durchgeführt wurden, aktivieren Sie Kanalkonfigurationseinzelvorgang **1070**.
 
-## <a name="how-does-it-work"></a>[]()[]() Funktionsweise?
-Wenn Sie die Entitätsshop ** ** Entität aktualisieren, werden folgenden Aktionen statt.
+## <a name="how-does-it-work"></a>[]()Wie funktioniert das?
+Wenn Sie die **Entitätsspeicher** Entität aktualisieren, finden folgenden Aktionen statt.
 
--   Daten im Format, das von den kognitiven Services erforderlich ist, werden vom Dynamics 365 für betriebliche Datenbank der Arbeitsgänge zum Entitätsshop extrahiert und gesendet.
--   Die Daten werden von Azure Datenen-Fabrik (ADF) verwendet, um die Daten mithilfe der Bienenstockskripte als Teil ADF-Aktivitäten zu reinigen. Gereinigte Daten werden im BLOB- gespeichert.
--   Daten vom BLOB- werden von den kognitiven API Dienstleistungen verwendet, um ein Empfehlungsmodell zu schulen.
+-   Daten im Format, das von den Cognitive-Services erforderlich ist, werden vom Dynamics 365 for Operations-Datenbank zum Entitätsstore extrahiert und gesendet.
+-   Die Daten werden von Azure Data Factory (ADF) verwendet, um die Daten mithilfe der Hive-Skripte als Teil der ADF-Aktivitäten bereinigen. Bereinigte Daten werden im Blob gespeichert.
+-   Daten vom Blob-Speicher werden von den Cognitive-Services-API verwendet, um ein Empfehlungsmodell zu schulen.
 
-Wenn Sie aktivieren ** aktivieren Sie Empfehlungen ** und die Konfigurationseinzelvorgänge aktivieren, werden folgenden Aktionen statt.
+Wenn Sie **Empfehlungen aktivieren** aktivieren und die Konfigurationseinzelvorgänge aktivieren, werden folgenden Aktionen ausgeführt.
 
--   Entwerfen Sie Anmeldeinformationen und - kennung werden vom API abgeholt und gespeichert im Dynamics 365 für betriebliche Datenbank, der Arbeitsgänge im web.config für AOS und auch im Retail Server.
--   Entwerfen Sie Anmeldeinformationen und - kennung bereitgestellt werden für CRT vorgenommen, dass Anforderungen der empfehlungen Produkt aus der Cloud POS und MPOS im rechnerabhängigen Betriebs- eingelöst werden können.
+-   Model-Anmeldeinformationen und - kennung werden von der API geholt und in der Dynamics 365 for Operations-Datenbank gespeichert, in der web.config für AOS und auch im Retail Server.
+-   Model-Anmeldeinformationen und - kennung werden für CRT bereitgestellt, so dass Anforderungen für Produktempfehlungen aus Cloud POS und MPOS im onlinemodus durchgeführt werden können.
 
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Hinzufügen eines Empfehlungssteuerelement der Buchungsseite auf einem POS-Gerät] hinzufügen" add-recommendations-control-pos-screen.md )
+[Hinzufügen eines Empfehlungssteuerelement der Buchungsseite auf einem POS-Gerät](add-recommendations-control-pos-screen.md)
+
+
 
 

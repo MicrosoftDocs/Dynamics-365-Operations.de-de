@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit"></a>Akkreditive
 
+[!include[banner](../includes/banner.md)]
+
+
 Kreditbriefe sind Bankdokumente, die häufig für den Einkauf und Verkauf im internationalen Warenverkehr verwendet werden. 
 
 Mit Kreditbriefen wird bei internationalen Transaktionen sichergestellt, dass eine Zahlung geleistet wird. Ein Kreditbrief stellt eine Vereinbarung dar, die von einer Bank ausgegeben wird. Darin gewährleistet die Bank die Zahlung im Auftrag des Einkäufers, sofern die Vertragsbedingungen zwischen Einkäufer und Verkäufer erfüllt sind. Ein Kreditbrief wird auch als durch Dokumente belegter Kredit bezeichnet. 
@@ -41,5 +44,7 @@ Für einen Importkreditbrief, ist die juristische Person der Einkäufer bzw. der
 Der Kreditbrief umfasst eine Beschreibung der Waren, die erforderlichen Dokumente, das Lieferdatum und das Ablaufdatum, nach dem keine Zahlung mehr geleistet wird. Die ausstellende Bank behält eine Marge für den Kreditbrief ein. 
 
 Ein Kreditbrief kann entweder widerrufbar oder unwiderruflich sein. Die Art eines Kreditbrief kann übertragbar, nicht übertragbar oder revolvierend sein. In der Regel stellt ein Kreditbrief eine unwiderrufliche und bestätigte Vereinbarung dar, nach der die Zahlung bei Vorlage vollständiger und richtiger Versandunterlagen an einen speziellen Begünstigen geleistet wird.
+
+
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um Informationen über die Bestellungen und den Lieferbestand auszutauschen.
 
 Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 for Operations haben. Es ermöglicht Kreditoren die Arbeit mit Bestellung, Rechnung und Lieferungsbestandsinformationen. In diesem Thema wird beschrieben, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitschnittstelle verwenden, um mit PO und Lieferungsbestand zu arbeiten. Außerdem wird beschrieben, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten. Weitere Informationen dazu, was externe Kreditoren in der Kreditorenzusammenarbeitschnittstelle tun können, finden Sie unter [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)  
@@ -64,11 +67,11 @@ Wenn Sie Preisangaben wie Einheitenpreise, Rabatte und Belastungen über die Zus
 ## <a name="work-with-pos-when-using-vendor-collaboration"></a>Arbeiten mit Bestellungen, wenn Sie Kreditorenzusammenarbeit verwenden
 ### <a name="sending-a-po-to-the-vendor"></a>Eine Bestellung an den Kreditor senden
 
-Bestellungen werden in Dynamics 365 for Operations vorbereitet. Wenn die Bestellung den Status aufweist ** genehmigt **, senden Sie ihn an den Kreditor, der die verwendet ** senden Sie zur Bestätigung ** Aktivität auf der Bestellung ** ** Seite. Der Status der Bestellung ändert auf **externe Prüfung**. Nachdem die Bestellung versendet wurde, kann der Kreditor diese auf der Seite **Bestellungen zur Prüfung** in der Kreditorenzusammenarbeitschnittstelle finden, wo er die Änderungen am Auftrag akzeptieren, ablehnen oder Änderungen vorschlagen kann. Der Kreditor kann auch Kommentare hinzufügen, um Informationen wie Änderungen an der Bestellung mitzuteilen. Wenn Sie die Aufmerksamkeit des Kreditors auf die neue Bestellung lenken möchten, können Sie die Bestellung auch per E-Mail senden, indem Sie das Druckverwaltungssystem verwenden.
+Bestellungen werden in Dynamics 365 for Operations vorbereitet. Wenn die Bestellung den Status **Genehmigt** hat, senden Sie diese mithilfe der Aktion **Zur Bestätigung senden ** auf der Seite **Bestellung** an den Kreditor. Der Status der Bestellung ändert auf **externe Prüfung**. Nachdem die Bestellung versendet wurde, kann der Kreditor diese auf der Seite **Bestellungen zur Prüfung** in der Kreditorenzusammenarbeitschnittstelle finden, wo er die Änderungen am Auftrag akzeptieren, ablehnen oder Änderungen vorschlagen kann. Der Kreditor kann auch Kommentare hinzufügen, um Informationen wie Änderungen an der Bestellung mitzuteilen. Wenn Sie die Aufmerksamkeit des Kreditors auf die neue Bestellung lenken möchten, können Sie die Bestellung auch per E-Mail senden, indem Sie das Druckverwaltungssystem verwenden.
 
 ### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Bestätigung und Akzeptieren der Bestellung durch den Kreditor
 
-Wenn ein Lieferant eine Bestellung angenommen hat, wird die Bestellung automatisch bestätigt werden, oder sie muss möglicherweise manuell bestätigt werden. Auf dieses hängt ab an, ob das Feld Kreditorenaktivierung ** ** ** aktiv ( Bestellung) Auto-bestätigt** für den Kreditor festgelegt, oder zu ** aktiv ( Bestellung wird nicht Auto-bestätigt**).  
+Wenn ein Lieferant eine Bestellung angenommen hat, wird die Bestellung automatisch bestätigt werden, oder sie muss möglicherweise manuell bestätigt werden. Dies ist davon abhängig, ob das Feld **Kreditorenaktivierung **für den Kreditor auf **Aktiv (Bestellung wird automatisch bestätigt)** oder **Aktiv (Bestellung wird nicht automatisch bestätigt)** gesetzt ist.  
 
 Die folgende Tabelle zeigt den üblichen Nachrichtenaustausch, abhängig davon, wie der Kreditor antwortet, wenn Sie ihm eine Bestellung zur Bestätigung senden.
 
@@ -95,19 +98,19 @@ Die folgende Tabelle zeigt den üblichen Nachrichtenaustausch, abhängig davon, 
 <td>Die Antwort des Kreditors wird als <strong>Abgelehnt</strong> erfasst, die Bestellung bliebt jedoch im Status <strong>Externe Prüfung</strong>. Die Ablehnung wird zusammen mit dem Kreditoren-Hinweis empfangen</td>
 </tr>
 <tr class="odd">
-<td>Der Kreditor <strong>wird der Auftrag mit Änderungen an</strong>. Änderungen werden auf Positionsebene vorgeschlagen. Es ist möglich, eine einzelne Positionen anzunehmen oder abzulehnen. Andere mögliche Änderungen sind:
+<td>Der Kreditor <strong>akzeptiert den Auftrag mit Änderungen</strong>. Änderungen werden auf Positionsebene vorgeschlagen. Es ist möglich, eine einzelne Positionen anzunehmen oder abzulehnen. Andere mögliche Änderungen sind:
 <ul>
 <li>Ändern von Mengen oder Datumsangaben.</li>
 <li>Aufteilen von Positionen für sonstige Lieferdaten und Mengen.</li>
 <li>Artikelersatz.</li>
 </ul>
 Preisangaben und Zuschläge können vom Kreditor nicht geändert werden. Vorschläge bei Änderungen dazu können mithilfe von Hinweisen vorgenommen werden.</td>
-<td>Die Antwort des Kreditors wird z erfasst, <strong>Angenommen mit Änderungen</strong> und <strong></strong> der Status der Bestellung. <strong>In der externen Prüfung</strong></td>
+<td>Die Antwort des Kreditors wir als <strong>Mit Änderungen akzeptiert</strong>, <strong></strong> erfasst und der Status der Bestellung bleibt <strong>Externe Prüfung</strong>.</td>
 </tr>
 </tbody>
 </table>
 
-Sie können die Bestellung ** ** ** Vorbereitung verwenden ** der Arbeitsbereich zu überwachen, PO, den der Kreditor auf reagiert hat. Der Arbeitsbereich enthält zwei Listen, dessen Bestellungen mit dem Status einbezogen Sie ** in der externen Prüfung **:
+Mit dem Arbeitsbereich **Bestellung** **Vorbereitung** können Sie überwachen, auf welche Bestellungen der Kreditor geantwortet hat. Der Arbeitsbereich enthält zwei Listen mit Bestellungen mit dem Status **Externe Prüfung**:
 
 -   Externe Prüfung erfordert Aktivität.
 -   In externer Überprüfung Lieferantenantwort erwartet.
@@ -125,7 +128,7 @@ Wenn Sie eine Bestellung stornieren, wird der Status wieder zu **Genehmigt** ge�
 Sie können Zuordnungen wie Dateien, Bilder und Hinweise für die Bestellung unter Verwendung des Dokumentverwaltungssystems hinzufügen. Die Anlagen, die mit der Einschränkung vom Typ **Extern** hinzugefügt werden, werden für den Kreditor angezeigt, wenn Sie die Bestellung an den Debitor senden.
 
 ## <a name="purchase-order-statuses-and-versions"></a>Status und Versionen der Bestellung
-In diesem Abschnitt werden die verschiedenen Statuswerte, die eine Bestellung bis zum Zeitpunkt der Bestätigung haben kann und der Zeitpunkt, an dem neue Versionen der Bestellung für den Lieferant bereitstehen, beschrieben. Es gibt Unterschiede diesbezüglich, je nachdem, ob Sie das Änderungsmanagement für Bestellungen verwenden. 
+In diesem Abschnitt werden die verschiedenen Statuswerte, die eine Bestellung bis zum Zeitpunkt der Bestätigung haben kann und der Zeitpunkt, an dem neue Versionen der Bestellung für den Lieferant bereitstehen, beschrieben. Es gibt Unterschiede diesbezüglich, je nachdem, ob Sie das Änderungsmanagement für Bestellungen verwenden. 
 
 ### <a name="versions-and-statuses-if-you-dont-use-change-management"></a>Versionen und Status, wenn Sie das Änderungsmanagement nicht verwenden
 
@@ -168,6 +171,8 @@ Wenn Sie Lieferungsbestand verwenden, können Kreditoren die Kreditorenzusammena
 -   **Bestellungen, die Lieferungsbestand verbrauchen -** Bestellungen für Lieferungsbestand werden erzeugt, wenn das Eigentum vom Bestand vom Lieferant an Ihr Unternehmen übergeht. Eine Produktquittung wird gleichzeitig gebucht. Diese Lieferungsbestellungen werden nur auf der Seite **Bestellungen, die Lieferungsbestands verbrauchen** angezeigt. Sie werden nicht auf der Seite **Alle bestätigen Bestellungen** im Modul **Kreditorenzusammenarbeit** angezeigt.
 -   **Produkte erhalten vom Lieferungsbestand** - Diese Seite enthält alle Buchunge, in denen der Besitz der Prdukte vom Kreditor an das Unternehmen übertragen wurde. Verkäufer können diese Informationen verwenden, für die Rechnungsstellung.
 -   **Verfügbarer Lieferungsbestand** - Diese Seite zeigt  den Lieferungsbestand des Lieferanten, der an unserem Lagerort eingetroffen ist.
+
+
 
 
 

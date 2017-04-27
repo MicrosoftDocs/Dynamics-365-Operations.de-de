@@ -1,6 +1,6 @@
 ---
 title: "Aktivitätssuche"
-description: "In diesem Artikel wird beschrieben die Aktivitätssuchenfunktionen in Microsoft Dynamics 365 für Arbeitsgänge. Aktivitätssuche können Sie Aktivitäten, wenn eine Palette suchen und auszuführen."
+description: "Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 for Operations.. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,30 +26,33 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="action-search"></a>Aktivitätssuche
 
-In diesem Artikel wird beschrieben die Aktivitätssuchenfunktionen in Microsoft Dynamics 365 für Arbeitsgänge. Aktivitätssuche können Sie Aktivitäten, wenn eine Palette suchen und auszuführen.
+[!include[banner](../includes/banner.md)]
+
+
+Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 for Operations.. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen.
 
 <a name="introduction"></a>Einführung
 ------------
 
-Seiten in Microsoft Dynamics 365 für Arbeitsgänge vornehmen hauptsächlich Befehle auf Aktivitätsbereichen, der Standardaktivitätsbereich xxxx_4, der am Anfang einer Seite und der Symbolleisten wird, die in verschiedenen Bereichen der Seite angezeigt werden. In den Vorgängerversionen Bereich eine entscheidende Tippfunktion schnell jede Schaltfläche im Aktivitätsbereich zugreifen, indem Sie die Schlüssel und anschließend von Buchstaben drückte. 
+Seiten in Microsoft Dynamics 365 for Operations enthalten hauptsächlich Befehle auf Aktivitätsbereichen, sowohl auf dem Standardaktivitätsbereich am Anfang einer Seite und auf den Symbolleisten wird, die in verschiedenen Bereichen der Seite angezeigt werden. In den Vorgängerversionen konnte mit einer Tippfunktion schnell auf jede Schaltfläche im Aktivitätsbereich zugegriffen werden, indem Sie die Taste ALT und eine Reihe von Buchstaben drückten. 
 
-![keyTipsAX6 ([]. /media/keytipsax6.png)]". /media/keytipsax6.png), Jedoch in der aktuellen Version von Microsoft Dynamics 365 für Arbeitsgänge, Tasteninfos sind nicht mehr verfügbar, werden jedoch durch die AktivitätsSuchfunktion ersetzt. Mit dieser neuen Funktion können Sie schnell nach einer Schaltfläche suchen und sie von jedem sichtbaren Aktivitätsbereich ausführen.
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) Allerdings sind in der aktuellen Version von Microsoft Dynamics 365 for Operations Tastenkombinationen nicht mehr verfügbar, wurden jedoch durch die Funktion Aktivitätssuche ersetzt. Mit dieser neuen Funktion können Sie schnell nach einer Schaltfläche suchen und sie von jedem sichtbaren Aktivitätsbereich ausführen.
 
 ## <a name="using-action-search"></a>Verwenden der Aktivitätssuche
 Um die Funktion „Aktivitätssuche“ zu verwenden, führen Sie die folgenden Schritte aus:
 
 1.  Klicken Sie im Aktivitätsbereich auf das Feld **Aktivitätssuche**. (Das Feld **Aktivitätssuche** enthält ein Lupensymbol.)
-2.  Geben Sie alle oder einen Teil des Namens der Schaltfläche ein, die Sie ausführen möchten. Sie können auch nach Arbeitskräften suchen, indem Sie Wörter verwenden vom Pfad der Schaltfläche "Löschen". (Weitere Informationen, finden Sie im nächsten Abschnitt dieses Artikels). Normalerweise wird die Schaltfläche nach der Spitze der Ergebnisliste, nachdem Sie zwei bis zu vier Zeichen eingegeben haben.
+2.  Geben Sie den vollständigen Namen oder einen Teil des Namens der Schaltfläche ein, die Sie ausführen möchten. Sie können auch suchen, indem Sie Wörter von der Schaltfläche "Pfad" verwenden. (Weitere Informationen, finden Sie im nächsten Abschnitt dieses Artikels). Normalerweise wird die Schaltfläche in der Nähe der Ergebnisliste angezeigt, nachdem Sie zwei bis zu vier Zeichen eingegeben haben.
 3.  Suchen Sie die Schaltfläche in der Ergebnisliste, und führen Sie sie aus (mithilfe der Maus oder Tastatur).
 
 Nachdem die Schaltfläche ausgeführt wird, kehrt der Fokus auf Ihre letzte Position auf der Seite zurück, sodass Sie mit der Arbeit fortfahren können. 
 
-![Aktivität-SucheFeld( [] . /media/action-search-field.png)]". /media/action-search-field.png)
+[![Suchfeld Aktivität](./media/action-search-field.png)](./media/action-search-field.png)
 
 Sie können die Aktivitätssuche auch starten, indem Sie Strg+/ oder ALT+Q drücken. Drücken Sie die Tastenkombination erneut, um den Fokus zu Ihrer letzten Position auf der Seite zurückzukehren.
 
 ## <a name="understanding-the-results-list"></a>Verstehen der Ergebnisliste
-Häufig in Dynamics 365 für Arbeitsgänge, müssen Sie dessen Position und den Kontext einer Schaltfläche kennen, um den Zweck dieser Schaltfläche vollständig zu verstehen. Daher wird zusätzliche Information für jeden Artikel der Ergebnisliste angezeigt, um Sie zu unterstützen, genau zu veranschaulichen, welche Schaltflächen in der Liste angezeigt werden. Insbesondere wird der „Pfad“ der Schaltfläche angezeigt. Dieser Pfad kann möglicherweise die Beschriftungen der folgenden Benutzeroberflächenelemente enthalten, wie relevant:
+In Dynamics 365 for Operations müssen Sie oft die Position und den Kontext einer Schaltfläche kennen, um den Zweck dieser Schaltfläche vollständig zu verstehen. Daher werden zusätzliche Information für jeden Artikel der Ergebnisliste angezeigt, um Sie zu unterstützen, genau zu veranschaulichen, welche Schaltflächen in der Liste angezeigt werden. Insbesondere wird der „Pfad“ der Schaltfläche angezeigt. Dieser Pfad kann möglicherweise die Beschriftungen der folgenden Benutzeroberflächenelemente enthalten, wie relevant:
 
 -   Registerkarte (Aktivitätsbereich)
 -   Schaltflächengruppe
@@ -57,15 +60,17 @@ Häufig in Dynamics 365 für Arbeitsgänge, müssen Sie dessen Position und den 
 -   Menütrennzeichen (wenn die Schaltfläche innerhalb einer benannten Gruppe innerhalb einer Menüschaltfläche ist)
 -   Gruppe oder Registerkarte auf der Seite (beispielsweise der Name eines Inforegisters)
 
-Beispielsweise haben Sie **tot** in das Feld **Aktivitätssuche** eingegeben und überprüfen nun die Ergebnisliste. Der erste Eintrag, für eine Schaltfläche, die Bezeichnung ** Summen **, wird markiert. Ein Schaltflächenpfad ** Auftrag ** &gt; ** der Ansicht ** wird auch angezeigt. ** Der Auftrag ** Teil des Pfades entspricht der Reihenfolge ** ** Registerkarte im Aktivitätsbereich, und der Ansicht ** ** Teil des Pfades entspricht der Ansicht ** ** Gruppe auf dieser Registerkarte. Ebenso informiert der Pfad der Rechnungsrabatt ** ** Schaltfläche (** Verkauf &gt; ** ** berechnen Sie **) Sie, dass die Schaltfläche in ist ** berechnen ** Gruppe auf Verkauf ** ** Registerkarte des Aktivitätsbereichs. Daher können diese Informationen, Ihnen genau zu veranschaulichen, die Schaltfläche nach Aktivitätssuche ausgelöst wird (falls diese Schaltfläche in der Ergebnisliste ausgewählt). 
+Beispielsweise haben Sie **tot** in das Feld **Aktivitätssuche** eingegeben und überprüfen nun die Ergebnisliste. Der erste Eintrag, für eine Schaltfläche mit der Bezeichnung **Summen ** wird markiert. Ein Schaltflächenpfad der **Ansicht** &gt; **Auftrag** wird auch angezeigt. Der Teil des **Auftrags** des Pfads, der der Registerkarte **Auftrag** im Aktivitätsbereich entspricht und der Teil **Ansicht** des Pfads, der der Gruppe auf der Registerkarte **Ansicht** entspricht. Ebenso informiert der Pfad der Schaltfläche **Rechnungsrabatt** (**Verkauf** &gt; **berechnen**) Sie, dass sich die Schaltfläche in der Gruppe  **Berechnen** auf der Registerkarte des Aktivitätsbereichs **Verkauf** befindet. Daher können diese Informationen Ihnen genau veranschaulichen, welche Schaltfläche nach Aktivitätssuche ausgelöst wird (falls diese Schaltfläche in der Ergebnisliste ausgewählt ist). 
 
-![Aktivität-Suche-Feld-mitDaten( [] . /media/action-search-field-with-data.png)]". /media/action-search-field-with-data.png) 
+[![Aktivität-Suche-Feld-mit Daten](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png) 
 
-Im vorherigen Beispiel ergibt sich die angezeigte Aktivitätssuche vom Standardaktivitätsbereich oben einer Seite. Allerdings zeigt die Aktivitätssuche auch Ergebnisse aus sichtbaren Symbolleisten an, die sich an anderen Stellen auf der Seite befinden. So finden Sie die für ** verfügbarer Lagerbestand ** Schaltfläche, die auf dem Inforegister ** Auftragspositionen ** ist. In diesem Fall wird in der Schaltflächenpfad in der Ergebnisliste (**Auftragspositionen ** &gt; ** Lager ** &gt; ** Ansicht ** ) Sie, dass die Schaltfläche unter der Ansicht ** ** Überschrift ** der auf Lager ** Menüschaltfläche im ** Auftragspositionen ** Inforegister werden. 
+Im vorherigen Beispiel ergibt sich die angezeigte Aktivitätssuche vom Standardaktivitätsbereich oben einer Seite. Allerdings zeigt die Aktivitätssuche auch Ergebnisse aus sichtbaren Symbolleisten an, die sich an anderen Stellen auf der Seite befinden. So finden Sie die Schaltfläche für **Verfügbarer Lagerbestand**, die auf dem Inforegister **Auftragspositionen **** ist. In diesem Fall wird im Schaltflächenpfad in der Ergebnisliste (**Auftragspositionen** &gt; **Lager ** &gt; **Ansicht**) Sie informieren, dass die Schaltfläche unter Überschrift **Ansicht** in der Menüschaltfläche **Bestand** im Inforegister **Auftragsposition** ist. 
 
-[] (![verfügbare Lagerbestand. -/media/onhand - inventory.png)]". -/media/onhand - inventory.png)
+[![Verfügbarer Lagerbestand](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 ## <a name="action-search-vs-navigation-search"></a>Aktivitätssuche im Vergleich zur Navigationssuche
-Während Aktivitätssuche bezieht, um zu suchen und Ausführungsaktivitäten auf einer Seite, es einen separaten Suchenmechanismus für die Suche und zum Navigieren zu Seiten in Dynamics 365 für Arbeitsgänge vorhanden sind. Weitere Informationen zu dieser Funktion finden Sie Navigationssuche, [](), navigation-search.md, Artikel.
+Während die Aktivitätssuche vorgesehen ist, um Aktivitäten auf einer Seite zu suchen und auszuführen, gibt es einen separaten Suchenmechanismus für die Suche und zum Navigieren zu Seiten in Dynamics 365 for Operations gibt. Weitere Informationen zu dieser Funktion finden Sie im Artikel [Navigationssuche](navigation-search.md)
+
+
 
 

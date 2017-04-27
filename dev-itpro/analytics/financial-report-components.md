@@ -101,7 +101,7 @@ Sie können eine vorhandene Bausteingruppe unter einen neuen Namen speichern. An
 
 ### <a name="export-a-building-block-group"></a> Eine Baustein-Gruppe exportieren
 
-Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren. Sie können die exportierte Bausteingruppe als Sicherung verwenden. Auf der exportierten Daten zwischen Bausteingruppen oder Dynamics 365 für Arbeitsgangsinstallationen Ziele kopieren. Berichts-Designer schließt die verwiesen Schriftschnitte und Dimensionssätze zusammen mit der Bausteingruppe ein.
+Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren. Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Bausteingruppen oder Dynamics 365 for Operations-Installationen kopieren. Der Berichtsdesigner umfasst die referenzierten Schriftschnitte und Dimensionssätze mit der Bausteingruppe.
 1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Bausteingruppen**.
 2.  Wählen Sie im Dialogfeld **Baustein-Gruppen** die Bausteingruppe aus, die exportiert werden soll, und klicken Sie auf **Exportieren**.
 3.  Wählen Sie im Dialogfeld **Exportieren** die Berichtsdefinitionen aus, die exportiert werden soll:

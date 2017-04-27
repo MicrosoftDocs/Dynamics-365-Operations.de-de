@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="additional-acquisition-depreciation"></a>Zusätzliche Anschaffungsabschreibung
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie die Abschreibung für zusätzliche Anschaffungen in Deutschland berechnet wird und gibt ein Beispiel. Anschaffungregulierungen für Anlagen müssen so kalkuliert werden, als ob die Regulierungen am ersten Tag des Geschäftsjahres vorgenommen wurden, unabhängig davon, wann die Regulierungsbuchungen tatsächlich erstellt wurden.
 
 Anschaffungregulierungen für Anlagen müssen so kalkuliert werden, als ob die Regulierungen am ersten Tag des Geschäftsjahres vorgenommen wurden, unabhängig davon, wann die Regulierungsbuchungen tatsächlich erstellt wurden. Die folgende Formel wird verwendet, um den Grundbetrag der Anlage zur Abschreibung zu berechnen: Nettobuchwert der Anlage am letzten Tag des vorherigen Geschäftsjahres + alle Anschaffungsänderungen für die Anlage im aktuellen Jahr.
 
 ## <a name="example"></a>Beispiel
-Im Jahre 2015 erwarb Ihre Organisation eine Anlage für 60.000. Ihre Organisation verwendet die Abschreibungsmethode "Verbleibende lineare Nutzungsdauer" über fünf Jahre. Im Jahre 2015 wenn Sie den Abschreibungsvorschlag jeden Monat 1.000 verarbeiten, wird als der Monatsabschreibungsbetrag berechnet (60.000 × 12\]\[5). Im März 2016 buchen Sie eine zusätzliche Anschaffung für die Anlage. Der Betrag der zusätzlichen Anschaffung beträgt 12.000. Sie können die Anschaffung müssen zusätzliche, als ob sie am 1. Januar 2016 gebucht wurde. Daher ist hier, wie die monatliche Abschreibung von 12.000 für die restlichen vier Jahre berechnet werden muss: 12.000 ÷ (4 × 12) = 250,welche die tatsächliche Abschreibung der zusätzlichen Anschaffung nur im Monat beginnen kann, wenn die zusätzlichen Anschaffung aufgetreten ist (für). Daher müssen die Abschreibungsbeträge für Januar und Februar dem Abschreibungsbetrag für März hinzugefügt werden. In der folgenden Tabelle werden die Monatsabschreibungsbeträge für die ursprüngliche Anschaffung und die Anschaffungsregulierung für die ersten fünf Monate des Jahres angezeigt.
+Im Jahre 2015 erwarb Ihre Organisation eine Anlage für 60.000. Ihre Organisation verwendet die Abschreibungsmethode "Verbleibende lineare Nutzungsdauer" über fünf Jahre. Im Jahre 2015, wenn Sie den Abschreibungsvorschlag jeden Monat verarbeiten, wird 1.000 als Monatsabschreibungsbetrag (60.000/\[(5 * 12\])) berechnet. Im März 2016 buchen Sie eine zusätzliche Anschaffung für die Anlage. Der Betrag der zusätzlichen Anschaffung beträgt 12.000. Sie müssen die zusätzliche Anschaffung so behandeln, als wenn sie am 1. Januar 2016 gebucht worden wären. Deshalb muss die monatliche Abschreibung von 12.000 für die restlichen vier Jahre wie folgt berechnet werden: 12.000 ÷ (4 × 12) = 250. Die tatsächliche Abschreibung der zusätzlichen Anschaffung kann nur im Monat beginnen, wenn die zusätzlichen Anschaffung aufgetreten ist (März). Daher müssen die Abschreibungsbeträge für Januar und Februar dem Abschreibungsbetrag für März hinzugefügt werden. In der folgenden Tabelle werden die Monatsabschreibungsbeträge für die ursprüngliche Anschaffung und die Anschaffungsregulierung für die ersten fünf Monate des Jahres angezeigt.
 
 | Monat         | Monatsabschreibungsbetrag für die ursprüngliche Anschaffung in Höhe von 60.000 | Monatsabschreibungsbetrag für die Anschaffungsregulierung in Höhe von 12.000 | Gesamtabschreibungsbetrag |
 |---------------|-----------------------------------------------------------------|-------------------------------------------------------------------|---------------------------|
@@ -41,6 +44,8 @@ Im Jahre 2015 erwarb Ihre Organisation eine Anlage für 60.000. Ihre Organisatio
 | März 2016    | 1.000                                                           | 250 für Januar, 250 für Februar und 250 für März              | 1,750                     |
 | April 2016    | 1.000                                                           | 250                                                               | 1,250                     |
 | Mai 2016      | 1.000                                                           | 250                                                               | 1,250                     |
+
+
 
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="acquire-assets-through-procurement"></a>Abrufen von Anlagen durch Beschaffung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt, wie eine Integration zwischen den Modulen "Anlagevermögen" und "Kreditoren" eingerichtet wird. Dadurch können Anlagen automatisch auf Grundlage von Bestellungen oder Kreditorenrechnungen erstellt oder Anschaffungs- und Anschaffungsänderungsbuchungen für Anlagen automatisch vorgenommen werden.
 
  Für die Integration von Anlagen und Kreditoren stehen die folgenden Methoden zur Verfügung. Dabei muss für alle Anlagen die gleiche Methode verwendet werden:
@@ -103,6 +106,8 @@ Im Folgenden finden Sie Variationen dieses Szenarios:
 -   Geht nur eine Teilmenge ein, wird für die erste Kreditorenrechnung aufgrund der Benutzergruppeneinschränkungen keine Anlagenanschaffung erstellt. Eine Anschaffung für die zweite Kreditorenrechnung, durch die die bestellte Menge komplettiert wird, kann nur gebucht werden, wenn bereits für die erste Kreditorenrechnung eine Anschaffungsbuchung eingegeben wurde und Sie Mitglied einer Benutzergruppe sind, die zum Buchen von Anschaffungen berechtigt ist.
 
 
-Weitere Informationen finden Sie fixed-asset-integration.md Integration von Anlagen( []).
+Weitere Informationen finden Sie unter [Anlage-Integration](fixed-asset-integration.md). 
+
+
 
 

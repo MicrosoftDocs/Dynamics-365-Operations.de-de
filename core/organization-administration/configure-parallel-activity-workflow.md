@@ -32,7 +32,7 @@ Eine parallele Aktivität besteht aus Workflowverzweigungen, die gleichzeitig au
 
 ## <a name="name-a-parallel-activity"></a>Name der Parallelaktivität
 Gehen Sie folgendermaßen vor, um einen Namen für die parallele Aktivität einzugeben.
-1.  Klicken Sie auf die parallele Aktivität, mit der rechten Maustaste und klicken Sie anschließend auf Eigenschaften ** ** ** Eigenschaften ** um das Formular zu öffnen.
+1.  Klicken Sie mit der rechten Maustaste auf die parallele Aktivität, und klicken Sie anschließend auf **Eigenschaften**, um das Formular **Eigenschaften** zu öffnen.
 2.  Klicken Sie im linken Bereich auf **Grundeinstellungen**.
 3.  Geben Sie im Feld **Name** einen eindeutigen Namen für die parallele Aktivität ein.
 4.  Klicken Sie auf **Schließen**.

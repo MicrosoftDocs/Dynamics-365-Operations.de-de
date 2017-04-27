@@ -1,5 +1,5 @@
 ---
-title: "Dient zum Ausgleich einer Kreditorenzahlung teilweise und die vollständigen Zahlung vor dem Skontodatum abgeschlossen"
+title: "Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der vollständigen Zahlung vollständig vor dem Skontodatum"
 description: "Dieser Artikel führt Sie durch ein Szenario, in dem Teilzahlungen für eine Kreditorenrechnung vorgenommen werden, und ein Skonto abgezogen wird."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Dient zum Ausgleich einer Kreditorenzahlung teilweise und die vollständigen Zahlung vor dem Skontodatum abgeschlossen
+# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der vollständigen Zahlung vollständig vor dem Skontodatum
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel führt Sie durch ein Szenario, in dem Teilzahlungen für eine Kreditorenrechnung vorgenommen werden, und ein Skonto abgezogen wird.
 
-Fabrikam 3064 kauft Waren vom Lieferanten. Der Lieferant gibt Fabrikam ein Skonto von 1 %, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird. Rechnungen müssen in 30 Tagen bezahlt werden. Der Kreditor ermöglicht Fabrikam auch, Skonti auf Teilzahlungen zu erhalten. Die Ausgleichsparameter sind auf der Kreditorenparameter ** ** Seite. Am 25. Juni gibt April eine Rechnung für 1.000,00 für den Kreditor 3064 ein.
+Fabrikam kauf Waren von Kreditor 3064. Der Kreditor gibt Fabrikam ein Skonto von 1 Prozent, wenn eine Rechnung in 14 Tagen beglichen wird. Rechnungen müssen in 30 Tagen bezahlt werden. Der Kreditor ermöglicht Fabrikam auch, Skonti auf Teilzahlungen zu erhalten. Die Ausgleichsparameter sind auf der Seite **Kreditorenkontenparameter** verfügbar. Am 25. Juni gibt April eine Rechnung für 1.000,00 für den Kreditor 3064 ein.
 
 ## <a name="vendor-invoice-on-june-25"></a>Kreditorenrechnung am 25. Juni
-Am 25. Juni gibt April ein und Buchen einer Rechnung in Höhe von 1.000,00 für den Kreditor " 3064. Auf der Seite **Kreditorenbuchungen** kann April diese Transaktion anzeigen.
+Am 25. Juni gibt April eine Rechnung für 1.000,00 für den Kreditor 3064 ein und bucht diese. Auf der Seite **Kreditorenbuchungen** kann April diese Transaktion anzeigen.
 
 | Beleg   | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag   | Währung |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -63,7 +66,7 @@ April klickt auf die Registerkarte **Skonto**, um den Rabattbetrag anzuzeigen.
 | 7/25/2015          | 0,00                 | 1.000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Teilzahlung am 1. Juli durch Verwendung der Seite "Buchungen ausgleichen"
-April kann eine Zahlungserfassung für diese Zahlung erstellen, indem sie die Kreditorenseite **Zahlungserfassung** öffnet. Sie stellt eine neue Erfassung und gibt eine Position für Kreditor " 3064 ein. Sie öffnet anschließend die Bankbuchungen ** ** Seite, damit die Rechnung für den Ausgleich markieren können. April markiert die Rechnung und ändert den Wert im Feld **Auszugleichender Betrag** zu **–500,00**. Sie sieht wieder, dass der Wert im Feld **Skontobetrag** der Betrag **–10,00** für die gesamte Rechnung ist, und der Wert im Feld **In Anspruch zu nehmender Skontobetrag** beträgt **–5,05**. Daher gleicht April -505,05 dieser Rechnung aus.
+April kann eine Zahlungserfassung für diese Zahlung erstellen, indem sie die Kreditorenseite **Zahlungserfassung** öffnet. Sie erstellt eine neue Zahlungserfassung und gibt die Position für Kreditor 3064 ein. Sie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass sie die Rechnung zum Ausgeleichen markieren kann. April markiert die Rechnung und ändert den Wert im Feld **Auszugleichender Betrag** zu **–500,00**. Sie sieht wieder, dass der Wert im Feld **Skontobetrag** der Betrag **–10,00** für die gesamte Rechnung ist, und der Wert im Feld **In Anspruch zu nehmender Skontobetrag** beträgt **–5,05**. Daher gleicht April -505,05 dieser Rechnung aus.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -95,7 +98,7 @@ Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleic
 | Verwendetes Skonto          | 0,00      |
 | Zu verwendender Skontobetrag | -5,00     |
 
-April schließt die Seite **Transaktionen abgleichen**. Eine Zahlungsposition für 495,00 wird in der Erfassung erstellt, und April dann bucht die Erfassung. April kann die Kreditorenbuchungen in der Kreditorenbuchungen ** ** Seite überprüfen. Sehen Sie, dass die Rechnung mit einem Saldo von -500,00 hat. Sie sieht auch eine Zahlung von 495,00 und ein Skonto von 5,00.
+April schließt die Seite **Transaktionen abgleichen**. Eine Zahlungsposition für 495,00 wird in der Erfassung erstellt, und April dann bucht die Erfassung. Auf der Seite **Kreditorenbuchungen** kann April diese Transaktion prüfen. In diesem Formular sieht sie, dass die Rechnung ein Saldo von -500,00 hat. Sie sieht auch eine Zahlung von 495,00 und ein Skonto von 5,00.
 
 | Beleg    | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag | Währung |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -136,6 +139,8 @@ April bucht diese Zahlungserfassung und prüft die Kreditorentransaktionen auf d
 | DISC-10010 | Skonto    | 1. Juli 2015  |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10011  | Zahlung          | 8. Juli 2015  |         | 495,00                               |                                       | 0,00    | USD      |
 | DISC-10011 | Skonto    | 8. Juli 2015  |         | 5,00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

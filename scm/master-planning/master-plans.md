@@ -1,6 +1,6 @@
 ---
 title: "Produktprogrammpläne"
-description: "Verwenden Sie verschiedene Produktprogrammpläne, die täglichen Arbeitsabläufe Ihres Unternehmens, zum Simulieren Sie unterschiedlicher Planungsstrategien, die überwacht werden sollen, und Ausführen einer Unternehmensrichtlinie, z eine Richtlinie für interne Leistung oder Kundenzufriedenheit durch."
+description: "Zur Unterstützung der täglichen Arbeitsabläufe Ihres Unternehmens, zum Simulieren unterschiedlicher Planungsstrategien, die überwacht werden sollen, und zum Implementieren einer Unternehmensrichtlinie, z. B. eine Richtlinie für die interne Leistung oder die Kundenzufriedenheit, können Sie verschiedene Produktprogrammpläne einrichten und verwenden."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="master-plans"></a>Produktprogrammpläne
 
-Verwenden Sie verschiedene Produktprogrammpläne, die täglichen Arbeitsabläufe Ihres Unternehmens, zum Simulieren Sie unterschiedlicher Planungsstrategien, die überwacht werden sollen, und Ausführen einer Unternehmensrichtlinie, z eine Richtlinie für interne Leistung oder Kundenzufriedenheit durch. 
+[!include[banner](../includes/banner.md)]
+
+
+Zur Unterstützung der täglichen Arbeitsabläufe Ihres Unternehmens, zum Simulieren unterschiedlicher Planungsstrategien, die überwacht werden sollen, und zum Implementieren einer Unternehmensrichtlinie, z. B. eine Richtlinie für die interne Leistung oder die Kundenzufriedenheit, können Sie verschiedene Produktprogrammpläne einrichten und verwenden. 
 
 Sie können Produktprogrammpläne auf der Seite **Produktprogrammpläne** konfigurieren.
 
@@ -50,8 +53,10 @@ Der anfängliche dynamische Produktprogrammplan kann auch so eingerichtet werden
 
 [Dispositionseinstellungen](coverage-settings.md)
 
-[Taktische und Betriebsplanung für den Produktprogrammplanungslauf trennend( http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)]
+[Taktische und Betriebsplanung für den Produktprogrammplanungslauf trennen](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[Produktprogrammplanung: Verwenden eines statischen und dynamischen Produktprogrammplan oder verwenden Sie einen Plan?] (https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+[Produktprogrammplanung: Verwenden eines statischen und dynamischen Produktprogrammplan oder verwenden Sie einen Plan?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+
+
 
 

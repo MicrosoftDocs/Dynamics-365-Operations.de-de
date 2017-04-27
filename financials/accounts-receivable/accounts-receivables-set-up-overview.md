@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurieren von Debitoren und Kredit und Inkasso
 
+[!include[banner](../includes/banner.md)]
+
+
 Debitoren und Kredit und Inkasso konfigurieren, um Rechnungen und eingehenden Zahlungen von Debitoren nachzuverfolgen.
 
 Sie haben die Möglichkeit zum Einrichten der folgenden Elemente: Debitorengruppen, Debitoren, Buchungsprofile, verschiedene Zahlungsoptionen, Zinsrechnungen, Mahnschreiben, Provisionen, Parameter für Debitoren, Gebühren, Lieferungen und Zielorte, Wechsel sowie andere Arten von Debitoren- und Kredit- und Inkassoinformationen.
 In der folgenden Tabelle führt die Seiten für die Konfiguration und Verwaltung von Debitoren und Kredit und Inkasso unterstützen. Die Tabelleneinträge sind nach Aufgabe und dann alphabetisch nach Seitenname sortiert.
 
-| Mit "! Hinweis [] (https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Hinweis" Hinweis ** **)          |
+| ![Hinweis](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Hinweis")**Hinweis**          |
 |--------------------------------------------------------------------------------------------------|
 | Für die Navigation zu einigen der in der folgenden Tabelle enthaltenen Seiten müssen Informationen oder Parameter festgelegt werden. |
 
@@ -98,14 +101,16 @@ In der folgenden Tabelle führt die Seiten für die Konfiguration und Verwaltung
 |                                                      | Debitorenkontakte und E-Mail-Einstellungen | Einrichtung von Kontakten für Debitoren mit deren E-Mail-Adressen. Diese Adressen werden in der Inkassoseite angezieigt und zur E-Mails-Erstellung an den Debitor verwendet. Installieren Sie auch einen standardmäßigen Inkassokontakt für jeden Debitor, der zuerst in der Inkassoseite angezeigt wird. |
 |                                                      | Debitorenpools                       | Dient zum Einrichten von Debitorenpools. Debitorenpools sind Abfragen, durch die eine Gruppe von Debitorenkonten definiert wird, die für Inkassi oder Fälligkeitsprozesse angezeigt und verwaltet werden können.                                                                                                                           |
 |                                                      | Debitoren-Buchungsprofil             | Dient zum Einrichten der Profile, durch die die Ausführung von Debitorenbuchungen in das Hauptbuch gesteuert werden.                                                                                                                                                                                      |
-|                                                      | Debitorenursachencodes                | Einstellungsdebitoren-Grundcodes.                                                                                                                                                                                                                                                    |
-|                                                      | Debitorentilgungsursachencodes      | Einrichten von Debitorentilgungs-Grundcodes, die für Abschreibungsbuchungen verwendet werden.                                                                                                                                                                                             |
+|                                                      | Debitorenursachencodes                | Debitorenursachencodes einrichten.                                                                                                                                                                                                                                                    |
+|                                                      | Debitoren-Abschreibungsgrundcode      | Richten Sie Debitorenabschreibungsursachencodes ein, die für Abschreibungsbuchungen verwendet werden.                                                                                                                                                                                             |
 |                                                      | Formulareinstellungen                           | Dient zum Definieren von Formularhinweisparametern für Angebote, Bestätigungen, Kommissionierlisten, Lieferscheine, Debitorenrechnungen, Freitextrechnungen und Zinsrechnungen.                                                                                                                               |
 |                                                      | Interesse                             | Dient zum Einrichten und Verwalten von Zinscodes.                                                                                                                                                                                                                                                 |
 |                                                      | KD-Informationen.                     | Richten Sie KD-Informationen für das Bankkonto ein, das verwendet wird, wenn eine Zahlung als KD-Buchung auf der Inkassoseite markiert ist.                                                                                                                                              |
 |                                                      | Verkäuferinformationen              | Richten Sie die E-Mail-Adresse für Verkäufer ein. Diese Adressen werden in den Inkassi-Seite angezeigt. Sie können zum Senden einer E-Mail an einen Verkäufer über diese Seite verwendet werden.                                                                                                                |
 
  
-Weitere Informationen finden Sie [Kredit und Inkasso im Debitorenmodul] (collections-credit-accounts-receivable.md).
+Weitere Informationen finden Sie unter [Kreditl und Inkassi in Debitorenparametern](collections-credit-accounts-receivable.md).
+
+
 
 

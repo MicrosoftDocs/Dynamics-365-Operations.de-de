@@ -1,6 +1,6 @@
 ---
 title: Analysieren der Shopleistung
-description: "In diesem Artikel wird beschrieben, wie die Echtzeitanalyse und verwenden können im Arbeitsspeicher Einblick, um zu Shopleistung zuzugreifen, zu untersuchen und zu erhalten, auf Basis Ihrer Microsoft Dynamics 365 für Arbeitsgangsdaten."
+description: "In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke zu Speicherleistung basierend auf Ihren Microsoft Dynamics 365 for Operations-Daten zu erhalten."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 57811
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
 ms.search.region: global
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="analyze-store-performance"></a>Analysieren der Shopleistung
 
-In diesem Artikel wird beschrieben, wie die Echtzeitanalyse und verwenden können im Arbeitsspeicher Einblick, um zu Shopleistung zuzugreifen, zu untersuchen und zu erhalten, auf Basis Ihrer Microsoft Dynamics 365 für Arbeitsgangsdaten. 
+[!include[banner](includes/banner.md)]
 
-Im Rahmen Dynamics 365 für Arbeitsgänge, können Benutzer Shopleistung in Echtzeit zu der verschiedenen Ebenen der Organisationshierarchie zu einer ausgewählten Periode studieren, indem das vordefinierte Kanalzusammenfassung ** ** melden von einem der folgenden Orte öffnen:
 
--   ** Ladengeschäftsverwaltung ** Arbeitsbereich Dynamics 365 für Arbeitsgänge &gt; ** Einzelhandel und Handel ** &gt; ** Kanäle ** &gt; ** Ladengeschäftsverwaltung ** &gt; ** Berichte ** &gt; ** Kanalzusammenfassungsbericht **
--   ** Ladengeschäftsfinanzverhältnisse ** Arbeitsbereich Dynamics 365 für Arbeitsgänge &gt; ** Einzelhandel und Handel ** &gt; ** Kanäle ** &gt; ** Ladengeschäftsfinanzverhältnisse ** &gt; ** Berichte ** &gt; ** Kanalzusammenfassungsbericht **
--   ** Abfragen und Berichte ** Abschnitt Dynamics 365 für Arbeitsgänge &gt; ** Einzelhandel und Handel ** &gt; ** Abfragen und Berichte ** &gt; ** Umsatzberichte ** &gt; ** Kanalzusammenfassungsbericht **
+In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke zu Speicherleistung basierend auf Ihren Microsoft Dynamics 365 for Operations-Daten zu erhalten. 
+
+In Microsoft Dynamics 365 for Operations können Benutzer die Shopleistung in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für eine ausgewählte Periode überprüfen, indem sie den vordefinierten Bericht **Kanalzusammenfassung** an einer der folgenden Stellen öffnen:
+
+-   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht 'Kanalzusammenfassung'**
+-   **Finanzdaten für den Einzelhandelsshop** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht 'Kanalzusammenfassung'**
+-   **Abfragen und Berichte** Abschnitt Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht 'Kanalzusammenfassung'**
 
 Der Bericht enthält eine Momentaufnahme der folgenden Zusammenfassungen im Rahmen der Shopleistung:
 
@@ -42,4 +45,6 @@ Der Bericht enthält eine Momentaufnahme der folgenden Zusammenfassungen im Rahm
 -   Steuerzusammenfassung
 -   Preisüberschreibungsübersicht
 -   Rabattübersicht
+
+
 

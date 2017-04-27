@@ -1,5 +1,5 @@
 ---
-title: Hybrid customer orders
+title: "Hybrid-Kundenaufträge"
 description: "Ein hybrider Kundenauftrag ist einen einzelnen Auftrag, der Produkte enthält, die vom Shop des Debitors ausgeführt werden können, sowie Produkte, die verarbeitet werden oder später geliefert."
 author: josaw1
 manager: AnnBe
@@ -25,20 +25,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="hybrid-customer-orders"></a>Hybrid customer orders
+# <a name="hybrid-customer-orders"></a>Hybrid-Kundenaufträge
+
+[!include[banner](includes/banner.md)]
+
 
 Ein hybrider Kundenauftrag ist einen einzelnen Auftrag, der Produkte enthält, die vom Shop des Debitors ausgeführt werden können, sowie Produkte, die verarbeitet werden oder später geliefert.
 
-In Microsoft Dynamics 365 - Arbeitsgänge für Einzelhandel, können Sie festlegen werden entweder alle oder ausgewählte Produkte ausführen für einen Kundenauftrag. Die Produktgruppen, die z ausführen fakturiert werden automatisch markiert werden, nachdem der Auftrag erstellt wurde, auf ähnliche Weise diese ist identisch für einen Auftrag, die eingeschlossen werden soll, nachdem der Auftrag erstellt wurde. Zahlbarer Betrag auf hybriden Aufträgen wird ermittelt, indem der Einzahlungsprozentsatz auf Entnahme- und Schiffsproduktgruppen mit dem Gesamtbetrag der Durchführungspositionen hinzufügt. Für hybride Aufträge die Systemschalter zwischen Debitorenauftragsmodus und Abholgrosshandelmodus, wie folgt:
+In Microsoft Dynamics 365 for Operations - Retail können Sie festlegen werden entweder alle oder ausgewählte Produkte ausführen für einen Kundenauftrag. Die Produktgruppen, die z ausführen fakturiert werden automatisch markiert werden, nachdem der Auftrag erstellt wurde, auf ähnliche Weise diese ist identisch für einen Auftrag, die eingeschlossen werden soll, nachdem der Auftrag erstellt wurde. Zahlbarer Betrag auf hybriden Aufträgen wird ermittelt, indem der Einzahlungsprozentsatz auf Entnahme- und Schiffsproduktgruppen mit dem Gesamtbetrag der Durchführungspositionen hinzufügt. Für hybride Aufträge die Systemschalter zwischen Debitorenauftragsmodus und Abholgrosshandelmodus, wie folgt:
 
--   Wenn alle Produkte im Einkaufskorb auf festgelegt werden ** Ausführen Lieferung durch **, wird der Auftrag als Cash-and-carry Buchung behandelt.
--   Werden irgendwelche oder alle Positionen werden im Einkaufskorb auf entweder ** Entnahme oder festgelegt ** ** Schiffslieferung **, wird der Auftrag als Debitorenauftragsbuchung behandelt.
+-   Wenn alle Produkte im Einkaufskorb auf **Lieferung ausführen** festgelegt werden, wird der Auftrag als Cash-and-carry Buchung behandelt.
+-   Werden irgendwelche oder alle Positionen werden im Einkaufskorb auf entweder **Entnahme** oder **Lieferung versenden** festgelegt, wird der Auftrag als Debitorenauftragsbuchung behandelt.
 
-Wenn eine Einkaufswagenposition und aktiviert ** die Übertragung ausgewählt **, ** Versand- wählte aus ** oder ** Carry Kassenlayout aktiviert ** ist aktiviert, nur bestimmte Einkaufswagenposition die mit der Zahlungsbedingung festgelegt wird. In diesem Fall wird der Ablauf des Arbeitsgangs abwärts gerichtete wie gewohnt fort. Wenn ** Entnahme wählte aus ** ** Versand- wählte aus, oder Carry ** ** Kassenlayout aktiviert ** ohne eine Einkaufswagenposition aktiviert, die ausgewählt wird, wird geöffnet eine neue Seite, die alle Einkaufswagenpositionen aufgelistet werden. Auf diesem Fenster können Sie mehrere Zeilen für das Festlegen der Zahlungsbedingung gleichzeitig auswählen. Bei dieser Methode für die Auswahl von Zeilen verwenden, wird einer vorherigen Übermittlungsmethode, die der Position zugewiesen wurde, überschrieben.
+Wenn eine Einkaufswagenposition ausgewählt und **Auswahl entnehmen**, **Auswahl senden** oder **Auswahl ausliefern** aktiviert ist, nur bestimmte Einkaufswagenposition die mit der Zahlungsbedingung festgelegt wird. In diesem Fall wird der Ablauf des Arbeitsgangs abwärts gerichtete wie gewohnt fort. Wenn **Auswahl entnehmen**, **Auswahl senden** oder **Auswahl ausliefern** aktiviert ist, ohne das eine Einkaufswagenposition aktiviert ist, die ausgewählt wird, wird geöffnet eine neue Seite, die alle Einkaufswagenpositionen aufgelistet werden. Auf diesem Fenster können Sie mehrere Zeilen für das Festlegen der Zahlungsbedingung gleichzeitig auswählen. Bei dieser Methode für die Auswahl von Zeilen verwenden, wird einer vorherigen Übermittlungsmethode, die der Position zugewiesen wurde, überschrieben.
 
 <a name="see-also"></a>Siehe auch
 --------
 
-Debitorenauftragsüberblick []( customer-orders-overview.md)
+[Anzeigen der Kundenaufträge](customer-orders-overview.md)
+
+
 
 

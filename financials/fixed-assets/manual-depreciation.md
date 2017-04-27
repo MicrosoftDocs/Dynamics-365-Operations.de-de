@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manual-depreciation"></a>Manuelle Abschreibung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält eine Übersicht der manuellen Abschreibungsmethode.
 
 Wenn Sie ein Anlagenabschreibungsprofil einrichten und auf der Seite **Abschreibungsprofile** im Feld **Methode** die Option **Manuell** auswählen, entspricht die Abschreibung von Anlagen, die diesem Abschreibungsprofil zugeordnet sind, dem Prozentsatz, den Sie für jedes Intervall im Kalenderjahr eingeben. Die Intervalle, für die Sie Prozentsätze einrichten, werden gemäß Ihrer Auswahl auf der Seite **Abschreibungsprofile** auf dem Inforegister **Allgemeines** im Feld **Periodenhäufigkeit** gebucht. Folgende Werte stehen zur Auswahl:
@@ -63,13 +66,15 @@ Wenn Sie im Feld** Periodenhäufigkeit** die Option **Monatlich** auswählen, ha
 | Januar  | (11.000 – 1.000) × 10 % = 1.000 |
 | Februar | (11.000 – 1.000) × 50 % = 5.000 |
 
-Wenn Sie ** halbjährlich ** in der Periodenhäufigkeit **** auswählen ** Feld **, richten Sie zwei manuellen Zeitplanintervalle. Die folgende Tabelle zeigt die Abschreibungsbeträge für diese beiden Intervalle.
+Wenn Sie im **Feld ****Periodenhäufigkeit** die Option **Halbjährlich** auswählen, haben Sie im manuellen Zeitplan zwei Intervalle eingerichtet. Die folgende Tabelle zeigt die Abschreibungsbeträge für diese beiden Intervalle.
 
 | Intervall    | Abschreibungsbetrag            |
 |-------------|--------------------------------|
 | 30. Juni     | (11.000 – 1.000) × 10 % = 1.000 |
 | 31. Dezember | (11.000 – 1.000) × 50 % = 5.000 |
 
-Die Summe der Prozentsätze für alle Intervalle muss nicht unbedingt 100 ergeben. Allerdings wird eine Meldung angezeigt, wenn der Wert im Feld ** kumulierter Prozentsatz ** Feld auf der Seite ** Anlagenabschreibungsprofil plant ** ** **nicht ist 100.
+Die Summe der Prozentsätze für alle Intervalle muss nicht unbedingt 100 ergeben. Allerdings wird eine Meldung angezeigt, wenn der Wert im Feld **Kumulierter Prozentsatz** Feld auf der Seite **Zeitplan für Anlagenabschreibungsprofil** ist nicht **100**.
+
+
 
 

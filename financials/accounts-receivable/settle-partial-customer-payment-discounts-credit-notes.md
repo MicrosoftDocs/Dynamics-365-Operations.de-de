@@ -1,5 +1,5 @@
 ---
-title: "Ausgleichen einer teilweise Debitorenzahlung, Rabatte für Gutschriften verfügt"
+title: Eine teilweise Debitorenzahlung, bei der Rechnungsrabatte auf Debitorengutschriften vorhanden sind, ausgleichen
 description: "Dieser Artikel führt Sie durch ein Szenario, in dem ein Skonto in eine Gutschrift übernommen wird, wenn die Originalrechnung auch ein Skonto beinhaltet."
 author: twheeloc
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Ausgleichen einer teilweise Debitorenzahlung, Rabatte für Gutschriften verfügt
+# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Eine teilweise Debitorenzahlung, bei der Rechnungsrabatte auf Debitorengutschriften vorhanden sind, ausgleichen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel führt Sie durch ein Szenario, in dem ein Skonto in eine Gutschrift übernommen wird, wenn die Originalrechnung auch ein Skonto beinhaltet. 
 
-Fabrikam ermöglicht Debitoren, Skonti auf Teilzahlungen und auf Gutschriften. Ein Skonto kann für eine Gutschrift in Anspruch genommen werden, wenn die Gutschrift für eine Rechnung ausgegeben wird, für die der Debitor ein Skonto angenommen hat. Anstatt einen Habenbetrag für den Gesamtbetrag bereitzustellen, können Sie den Saldo des Debitors für einen Betrag gutschreiben, der das Skontoprozent des Debitors ausschließt. Die Ausgleichsparameter sind ** ** Debitorenparameter auf der Seite.
+Fabrikam ermöglicht Debitoren, Skonti auf Teilzahlungen und auf Gutschriften. Ein Skonto kann für eine Gutschrift in Anspruch genommen werden, wenn die Gutschrift für eine Rechnung ausgegeben wird, für die der Debitor ein Skonto angenommen hat. Anstatt einen Habenbetrag für den Gesamtbetrag bereitzustellen, können Sie den Saldo des Debitors für einen Betrag gutschreiben, der das Skontoprozent des Debitors ausschließt. Die Ausgleichsparameter sind auf der Seite **Debitorenkontenparameter** Seite verfügbar.
 
 ## <a name="invoice-and-credit-note"></a>Rechnung und Gutschrift
 Debitor 4035 enthält eine Rechnung über 1.000,00 und eine Gutschrift für 100,00. Jedes Dokument hat einen 1-Prozent-Rabatt, wenn es in 14 Tagen beglichen wird. Auf der Seite** Debitorenbuchungen** können Sie diese Information anzeigen.
@@ -59,5 +62,7 @@ Rabattinformationen werden am unteren Rand der Seite **Buchungen ausgleichen** a
 | Zu verwendender Skontobetrag | -1,00     |
 
 Der Ausgleich ist 100,00 und umfasst eine Zahlung von 99,00 und einen Rabatt von 1,00.
+
+
 
 

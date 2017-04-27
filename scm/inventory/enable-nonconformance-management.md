@@ -1,5 +1,5 @@
 ---
-title: "Qualitätsmangelverwaltung"
+title: "Qualitätsmangel-Verwaltung"
 description: "In diesem Artikel werden die Basiseinstellungen beschrieben, die erforderlich sind, um Qualitätsmängel zu verwenden. Zusätzliche Einstellungen sind erforderlich, wenn Sie Testbestellungen verwenden möchten."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="nonconformance-management"></a>Qualitätsmangelverwaltung
+# <a name="nonconformance-management"></a>Qualitätsmangel-Verwaltung
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Artikel werden die Basiseinstellungen beschrieben, die erforderlich sind, um Qualitätsmängel zu verwenden. Zusätzliche Einstellungen sind erforderlich, wenn Sie Testbestellungen verwenden möchten. 
 
@@ -34,7 +37,7 @@ Um die Verwaltung von Qualitätsmängeln zu aktivieren, führen Sie die folgende
 1.  Definieren Sie die Bestands- und Lagerparameter, die sich auf Qualitätsmängel beziehen:
     -   Setzen Sie die Option **Qualitätsmanagement verwenden** auf **Ja**.
     -   Geben Sie im Feld **Stundensatz** einen Arbeitsstundensatz in lokaler Währung ein. Der Stundensatz wird zur Berechnung der Kosten für Arbeitsgänge verwendet, die sich auf einen Qualitätsmangel beziehen. Der Stundensatz sowie die berechneten Kosten fungieren als Referenzinformationen für einen Qualitätsmangel. Sie interagieren nicht mit anderen Funktionen.
-    -   Auf der ** Qualitätsmanagement ** Registerkarte der ** der Bericht eingerichtet ** Seite, um den Dokumenttyp zu definieren, um den Profilbericht zu drucken. Sie können einen Nichtübereinstimmungsbericht, eine Nichtübereinstimmungsmarkierung und einen Korrekturbericht drucken. Sie können mehrere Datensätze definieren, um unterschiedliche Dokumenttypen für einen Bericht bzw. interne oder externe Hinweise zu drucken. Eventuell hilft es, mithilfe der Seite **Dokumenttyp** einen eindeutigen Dokumenttyp für Qualitätsmängel sowie einen eindeutigen Dokumenttyp für Korrekturen zu definieren. Beispielsweise könnten Sie Hinweise zu einem Qualitätsmangel eingeben, indem Sie den eindeutigen Dokumenttyp für Qualitätsmängel verwenden. In diesem Fall kennzeichnen Sie den eindeutigen Dokumenttyp in den Berichtsoptionen.
+    -   Auf der Registerkarte **Qualitätsmanagement** auf der Seite **Berichteinstellung** definiueren Sie den Dokumenttyp, der gedruckt werden soll. Sie können einen Nichtübereinstimmungsbericht, eine Nichtübereinstimmungsmarkierung oder einen Korrekturbericht drucken. Sie können mehrere Datensätze definieren, um unterschiedliche Dokumenttypen für einen Bericht bzw. interne oder externe Hinweise zu drucken. Eventuell hilft es, mithilfe der Seite **Dokumenttyp** einen eindeutigen Dokumenttyp für Qualitätsmängel sowie einen eindeutigen Dokumenttyp für Korrekturen zu definieren. Beispielsweise könnten Sie Hinweise zu einem Qualitätsmangel eingeben, indem Sie den eindeutigen Dokumenttyp für Qualitätsmängel verwenden. In diesem Fall kennzeichnen Sie den eindeutigen Dokumenttyp in den Berichtsoptionen.
     -   Aktivieren Sie Nummernkreise für Qualitätsmängel und Korrekturreferenzen.
 
 2.  Aktivieren Sie die Benutzergenehmigung für einen Qualitätsmangel. Weisen Sie mithilfe des Felds **Name** auf der Seite **Benutzer** jedem Benutzer, von dem Qualitätsmängel genehmigt werden müssen, einen Mitarbeiter zu. Das System verwendet die Mitarbeiter, die den Status eines Qualitätsmangels ändern, um die Qualitätsmängelhistorie zu verfolgen. Benutzer können einen Qualitätsmangel nicht genehmigen, es sei denn, dass ihnen eine Mitarbeiterkennung zugewiesen wurde.
@@ -47,10 +50,12 @@ Um die Verwaltung von Qualitätsmängeln zu aktivieren, führen Sie die folgende
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen und verarbeiten Sie einen Qualitätsmangel " Aufgabenleitfaden)]https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/) "
+[Erstellen und Verarbeiten einer Nichtübereinstimmung (Aufgabenleitfaden) ](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
-[Quality management processes](quality-management-processes.md)
+[Qualitätsnabgelprozesse](quality-management-processes.md)
 
-[Informationen für Qualitätsmangelverwaltung (Aufgabenleitfaden )]https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/) "
+[Richten Sie Voraussetzungen für die Qualitätsmangelverwaltung ein (Aufgabenleitfaden) ](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+
+
 
 

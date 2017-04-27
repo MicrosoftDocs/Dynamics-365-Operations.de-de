@@ -1,6 +1,6 @@
 ---
 title: Allgemeine Erfassungsverarbeitung
-description: "Diese bezeichnet Artikel Funktionen in Microsoft Dynamics 365 für Arbeitsgänge, die von Marketingkanälen, Verarbeiten der allgemeinen Erfassung zu vereinfachen und außerdem von Marketingkanälen Feld, um sicherzustellen, den, korrekten Daten Kostengruppe dennoch und internen Kontrollen nicht beeinträchtigt wird."
+description: "Dieser Artikel beschreibt die Funktionen in Microsoft Dynamics 365 for Operations, mit denen die allgemeine Erfassung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-journal-processing"></a>Allgemeine Erfassungsverarbeitung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt die Funktionen in Microsoft Dynamics AX, mit denen die allgemeine Erfassung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden.  
 
 Journale
@@ -36,24 +39,24 @@ Einer der wichtigsten Bereiche einrichten ist Journale. Es empfiehlt sich, besti
 
 Auf der Seite **Journale** können Sie folgende Elemente einrichten:
 
--   **Workflowgenehmigung** - Definieren Sie Journal-Workflows, die basierend auf Kriterien wie „Gesamt“ oder „Betrag“ Wesentlichkeitsgrenzen für Überprüfung- und Genehmigungsschritte festlegen, um die interne Kontrolle zu erhöhen. Sie richten für Workflow die allgemeinen Erfassungen auf der Seite. ** ** Hauptbuchworkflows
+-   **Workflowgenehmigung** - Definieren Sie Journal-Workflows, die basierend auf Kriterien wie „Gesamt“ oder „Betrag“ Wesentlichkeitsgrenzen für Überprüfung- und Genehmigungsschritte festlegen, um die interne Kontrolle zu erhöhen. Sie richten Workflows für die allgemeinen Erfassungen auf der Seite **Hauptbuchworkflows** ein.
 -   **Standardwerte** – Wählen Sie Standardwerte für Gegenkonten, Währung und Finanzdimensionen aus.
 -   **Erfassungssteuerung** – Richten Sie Einschränkungen für den Unternehmens- und Kontotyp und die Segmentwerte ein. 
 
 **Beispiele**
 
-Ein Journal kann nur für Regulierungen verwendet werden. In diesem Fall können Sie angeben, dass nur die **Sachkonto**-Kontenart für alle Unternehmen gültig ist. ![Erfassungssteuerungskontenart( [] . /media/journal-control-account-types1.png)]". /media/journal-control-account-types1.png)
+Ein Journal kann nur für Regulierungen verwendet werden. In diesem Fall können Sie angeben, dass nur die **Sachkonto**-Kontenart für alle Unternehmen gültig ist. [![Erfassungssteuerungs-Kontotypen](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
-Ein Journal kann nur für ein bestimmtes Segment oder für einen Bereich für Hauptkonten verwendet werden. ![Erfassungssteuerungssegment( [] . /media/journal-control-segment1.png)]". /media/journal-control-segment1.png)
+Ein Journal kann nur für ein bestimmtes Segment oder für einen Bereich für Hauptkonten verwendet werden. [![Erfassungssteuerungssegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Die Option **Automatische Rückbuchung** ist nur in allgemeinen Erfassungen verfügbar. Beispiel: Sie haben eine Abgrenzungsregulierung, in der das eigentliche Dokument noch nicht verarbeitet wurde, wie in der folgenden Abbildung dargestellt.
-[Rückbuchungen] (![allgemeine Erfassung. /media/general-journal-reversing1.png)]". /media/general-journal-reversing1.png) 
+[![Erfassungsrücksetzung](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-Das Microsoft Excel-Add-In für Erfassungseintrag enthält einen zusätzlichen Automatisierungsgrad vornimmt Dateneingabe und einfacher. Die **Positionen in Excel öffnen**-Aktivität ist auf den Seiten **Allgemeine Erfassung** und **Alle Journale** verfügbar. 
+Rückbuchung allgemeine Erfassung Das Microsoft Excel-Add-in für Journaleinträge bietet eine weitere Ebene der Automatisierung und erleichtert die Dateneingabe. Die **Positionen in Excel öffnen**-Aktivität ist auf den Seiten **Allgemeine Erfassung** und **Alle Journale** verfügbar. 
 
 Auf der Seite **Periodische Erfassungen** können Sie wiederholende Erfassungen einrichten, um die Erfassungsverarbeitung zu automatisieren. 
 
-Belegvorlagen können jederzeit verwenden. ** Auf der allgemeine Erfassungen ** Seite, ** Speichern ** ** Belegvorlage und wählen Sie aus ** Aktivitäten auf werden der Erfassungsbeleg ** ** Seite, unter ** Funktionen ** für Belegpositionen die gesucht.
+Belegvorlagen können jederzeit verwenden. Auf der Seite **Allgemeine Erfassungen** finden Sie die Aktivitäten **Speichern** und **Belegvorlage auswählen** auf der Seite **Alle Journale** unter **Funktionen**.
 
 ## <a name="related-setup"></a>Verwandte Einstellung
 Die folgende Einstellung ist für allgemeine Erfassungen nicht spezifisch, sorgt aber dafür, dass die Dateneingabe richtig und einfach ist.
@@ -78,6 +81,7 @@ Die Hauptkontoeinstellung stellt viele Optionen zum Verarbeiten der allgemeinen 
 
 Buchhaltungsstrukturen und Strukturen für erweiterte Regeln sind sehr wichtig, um sicherzustellen, dass die Daten, die für die Finanzberichterstellung und die Leistungsnachverfolgung erforderlich sind, während der allgemeinen Erfassungsverarbeitung und in allen Dokumentationen erfasst werden. Mit Buchhaltungsstrukturen und Strukturen für erweiterten Regeln können Sie die Dateneingabeerfahrung anpassen. Sie können die Dateneingabe nur für Finanzdimensionen zulassen, die in jeder Situation relevant sind. Sie können auch die Anforderung erzwingen, dass erforderliche und korrekte Daten immer erfasst werden.
 
-Weitere Informationen finden Sie unter: [Planung Kontenplan (plan-chart-of-accounts.md]). 
+Weitere Informationen finden Sie unter: [Planung Kontenplan](plan-chart-of-accounts.md) 
+
 
 

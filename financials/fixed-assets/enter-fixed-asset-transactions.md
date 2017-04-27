@@ -1,5 +1,5 @@
 ---
-title: Anlagenbuchungsoptionen
+title: Anlagenbudgetbuchungsoptione
 description: "In diesem Artikel werden die unterschiedlichen, verfügbaren Methoden beschrieben, um Transaktionen für Anlagen zu erstellen."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-asset-transaction-options"></a>Anlagenbuchungsoptionen
+# <a name="fixed-asset-transaction-options"></a>Anlagenbudgetbuchungsoptione
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Artikel werden die unterschiedlichen, verfügbaren Methoden beschrieben, um Transaktionen für Anlagen zu erstellen.
 
@@ -36,7 +39,7 @@ Sie können Anlagen für die Integration in Kreditoren, Debitoren, Beschaffung u
 Sie können Anlagenbuchungen auf der Seite "Alle Journale" eingeben. Diese Seite kann über die Seite "Rechnungserfassung" geöffnet werden. Sie können die Erfassungsbelegseite aus der Rechnungsgenehmigungserfassungsseite öffnen. Wählen Sie im Feld "Gegenkontenart" "Anlagen" aus. Wählen Sie dann im Feld "Gegenkonto" eine Anlagennummer aus. Geben Sie auf der Registerkarte "Anlagen" die Werte in den Feldern "Transaktionstyp" und "Buch" ein.
 
 ## <a name="accounts-receivable"></a>Debitorenkonten
-Anlagenbuchungen können Sie in der Freitextrechnungsseite eingeben.  In der Freitextrechnungsseite im Rechnungspositionsraster, wählen Sie eine Position aus. Klicken Sie auf das Inforegister "Positionsdetails". Geben Sie die Anlagennummer das Buch für die Abgangsbuchung ein. Bei Freitextrechnungen lautet die Anlagenbuchungsart stets "Veräußerung".
+Sie können Anlagenbuchungen auf der Seite "Freitextrechung" eingeben.  In der Freitextrechnungsseite im Rechnungspositionsraster, wählen Sie eine Position aus. Klicken Sie auf das Inforegister "Positionsdetails". Geben Sie die Anlagennummer das Buch für die Abgangsbuchung ein. Bei Freitextrechnungen lautet die Anlagenbuchungsart stets "Veräußerung".
 
 ## <a name="procurement-and-sourcing"></a>Beschaffung
 Sie können Anlagenbuchungen auf der Seite "Bestellung" eingeben. Geben Sie die erforderlichen Informationen zum Erstellen einer Bestellung ein, und klicken Sie anschließend auf OK. In der Bestellungsseite klicken Sie auf das Positionsdetail-Inforegister. Geben Sie danach auf der Registerkarte "Anlagen" Informationen zur Anlage ein. 
@@ -65,6 +68,8 @@ Jede Anlagenbuchungsart kann auf der Seite "Allgemeine Erfassung" gebucht werden
 
 
 
-Weitere Informationen finden Sie fixed-asset-integration.md Integration von Anlagen( []).
+Weitere Informationen finden Sie unter [Anlage-Integration](fixed-asset-integration.md).
+
+
 
 

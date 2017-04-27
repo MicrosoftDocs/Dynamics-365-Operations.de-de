@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurieren einer automatisierten Aufgabe in einem Workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieses Thema erläutert, wie Sie die Eigenschaften einer automatisierten Aufgabe konfigurieren können.
 
 Klicken Sie zum Konfigurieren einer automatisierten Aufgabe im Workflow-Editor mit der rechten Maustaste auf die Aufgabe, und klicken Sie dann auf **Eigenschaften**, umdie Seite **Eigenschaften** zu öffnen. Verwenden Sie dann die folgenden Verfahren, um die Eigenschaften der automatisierten Aufgabe zu konfigurieren.
@@ -92,16 +95,18 @@ Sie können Benachrichtigungen an Personen senden, wenn eine automatisierte Aufg
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmtes Microsoft Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbare Benutzer</strong> Liste enthält alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-8.  Wiederholen Sie die Schritte 3 bis 7 für jedes in Schritt 2 ausgewählte Ereignis.
+8.  Wiederholen Sie die Schritte 3 bis 7 für jedes in Schritt 2 ausgewählte Ereignis.
+
+
 
 
 

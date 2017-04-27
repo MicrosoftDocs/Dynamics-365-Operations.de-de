@@ -1,6 +1,6 @@
 ---
 title: "Debitoren- und Produktrentabilität bewerten"
-description: "In diesem Artikel wird beschrieben, wie die Echtzeitanalyse und verwenden können, um im Arbeitsspeicher Einblick zu Debitoren und Produktrentabilität aus Ihrem Microsoft Dynamics 365 für Arbeitsgangsdaten zuzugreifen, zu untersuchen und zu erhalten."
+description: "In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblick zur Rentabilität der Debitoren und Produkte basierend auf Ihrer Microsoft Dynamics 365 for Operations -Daten zu erhalten."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="assess-customer-and-product-profitability"></a>Debitoren- und Produktrentabilität bewerten
 
-In diesem Artikel wird beschrieben, wie die Echtzeitanalyse und verwenden können, um im Arbeitsspeicher Einblick zu Debitoren und Produktrentabilität aus Ihrem Microsoft Dynamics 365 für Arbeitsgangsdaten zuzugreifen, zu untersuchen und zu erhalten. 
+[!include[banner](includes/banner.md)]
 
-Im Rahmen Dynamics 365 für Arbeitsgänge, können Benutzer die wichtigsten Rentabilität für Debitoren (10 bis 100) zu unterschiedlichen Ebenen der Organisationshierarchie, auf Grundlage einer der folgenden Kriterien studieren:
+
+In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblick zur Rentabilität der Debitoren und Produkte basierend auf Ihrer Microsoft Dynamics 365 for Operations -Daten zu erhalten. 
+
+Im Rahmen von Microsoft Dynamics 365 for Operations  können Benutzer die Rentabilität für die wichtigsten Debitoren (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage eines der folgenden Kriterien überprüfen:
 
 -   Verkaufsbetrag
 -   Menge
@@ -38,8 +41,8 @@ Im Rahmen Dynamics 365 für Arbeitsgänge, können Benutzer die wichtigsten Rent
 
 Für diese Bewertung können Sie den vordefinierten Bericht **Wichtigste Debitoren** verwenden, den Sie an folgenden Stellen öffnen können:
 
--   ** Ladengeschäftsverwaltung ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Kanäle ** ** &gt; Ladengeschäftsverwaltung ** ** Berichte &gt; ** ** oberste &gt; meldet ** Debitoren
--   ** Abfragen und Berichte ** Abschnitt Dynamics 365 für Arbeitsgänge &gt; ** Einzelhandel und Handel ** &gt; ** Abfragen und Berichte ** &gt; ** Umsatzberichte ** &gt; ** oberste Debitoren ** melden
+-   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Top-Kunden**
+-   **Abfragen und Berichte** Abschnitt Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Top-Kunden'**
 
 Auf ähnliche weise können Benutzer die Rentabilität für die besten Produkte (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage eines der folgenden Kriterien überprüfen:
 
@@ -50,8 +53,10 @@ Auf ähnliche weise können Benutzer die Rentabilität für die besten Produkte 
 
 Für diese Bewertung können Sie den vordefinierten **Bericht über Top-Produkte** verwenden, den Sie an folgenden Stellen öffnen können:
 
--   ** Ladengeschäftsverwaltung ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Kanäle ** ** &gt; Ladengeschäftsverwaltung ** ** Berichte &gt; ** ** oberste &gt; meldet ** Produkte
--   ** Kategorie- und Produktverwaltung ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Produkte und Kategorien Ladengeschäftsverwaltung ** ** &gt; ** ** Berichte &gt; ** ** oberste &gt; meldet ** Produkte
--   ** Abfragen und Berichte ** Abschnitt Dynamics 365 für Arbeitsgänge &gt; ** Einzelhandel und Handel ** &gt; ** Abfragen und Berichte ** &gt; ** Umsatzberichte ** &gt; ** oberste Produkte ** melden
+-   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Top-Produkte**
+-   **Kategorie- und Produktmanagement** Arbeitsbereich Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Produkte und Kategorien** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Top-Produkte**
+-   **Abfragen und Berichte** Abschnitt Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Top-Produkte**
+
+
 
 

@@ -26,55 +26,60 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-bills-of-exchange"></a>Einrichten von Wechseln
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Thema werden die Schritte zum Einrichten von Wechseln.
 
-Bei einem Wechsel handelt es sich um den schriftlichen oder elektronischen Auftrag eines Kunden, der angibt, mit dem ein Dritter, normalerweise eine Bank, einen angegebenen Betrag an das Unternehmen zu zahlen. Bei Verwendung eines Wechsels als Zahlungsmittel für eine Auftrags- oder Freitextrechnung erfolgt eine Habenbuchung auf dem Debitorenkonto. Diese Habenbuchung ist durch den Wechsel so lange gesichert, bis der Debitor den Wechsel an die Bank bezahlt. Normalerweise Gleichen Sie die Rechnung zum Fälligkeitsdatum mit dem Wechsel ausgeglichen. Nachdem die Benachrichtigung über die Einlösung des Wechsels von der Bank eingegangen ist, kann der Wechsel abgeschlossen werden. Sie können eines Wechsels von der Bank zu jedem der folgenden Zeitpunkte gezogen werden:
+Bei einem Wechsel handelt es sich um den schriftlichen oder elektronischen Auftrag eines Kunden, mit dem ein Dritter (üblicherweise eine Bank) angewiesen wird, einen angegebenen Betrag an das Unternehmen zu zahlen. Bei Verwendung eines Wechsels als Zahlungsmittel für eine Auftrags- oder Freitextrechnung erfolgt eine Habenbuchung auf dem Debitorenkonto. Diese Habenbuchung ist durch den Wechsel so lange gesichert, bis der Debitor den Wechsel an die Bank bezahlt. Üblicherweise wird die Rechnung zum Fälligkeitsdatum mit dem Wechsel ausgeglichen. Nachdem die Benachrichtigung über die Einlösung des Wechsels von der Bank eingegangen ist, kann der Wechsel abgeschlossen werden. Der Wechsel kann über die Bank zu jedem der folgenden Zeitpunkte gezogen werden:
 
--   Zum Fälligkeitsdatum. Durch diesen Ansatz Fall wird auch als Inkassorimesse bezeichnet.
--   Vor dem Fälligkeitsdatum (üblicherweise zum Skontodatum, das in den Zahlungsbedingungen angegeben wird, die für den Debitor eingerichtet werden. Beim Ausführen der Buchung wird der Skontobetrag auf ein Ausgabenkonto gebucht. Der Restbetrag verbleibt als Verbindlichkeit, bis die Zahlung des Debitors bei der Bank eingeht. Durch diesen Ansatz Fall wird auch als Zum Diskont einreichen.
+-   Zum Fälligkeitsdatum. Dieser Ansatz wird auch als Inkassorimesse bezeichnet.
+-   Vor dem Fälligkeitsdatum (üblicherweise zum Skontodatum, das in den vom Debitor festgelegten Zahlungsbedingungen angegeben ist). Beim Ausführen der Buchung wird der Skontobetrag auf ein Ausgabenkonto gebucht. Der Restbetrag verbleibt als Verbindlichkeit, bis die Zahlung des Debitors bei der Bank eingeht. Dieser Ansatz wird auch als Zum Diskont einreichen bezeichnet.
 
 ## <a name="set-up-posting-profiles-for-bills-of-exchange"></a>Einrichten von Buchungsprofilen für Wechsel
-Verwenden Sie die Seite ** Debitoren-Buchungsprofile **, um Buchungsprofile einrichten, die Sie für Wechsel, protestierte Wechsel, Inkassorimessen und Skontorimessen zum Diskont verwenden können. ** Sammelkonto ** Wählen Sie im Feld das Sammelkonto aus, auf das die Beträge von Wechseln gebucht werden sollen. Dieses Konto wird, abhängig vom Typ der Wechsel buchung belastet oder gutgeschrieben:
--   Für Wechsel wird dieses Konto belastet, wenn ein Wechsel gebucht wird, und es wurde eine Gutschrift, wenn die Buchung einer Diskont- oder Inkassorimesse erfolgt auf diesem Konto eine Sollbuchung.
+Verwenden Sie zum Einrichten von **Buchungsprofilen für Debitoren**, protestierte Wechsel, Inkassorimessen und Diskontrimessen das Formular : Wählen Sie im Feld **Sammelkonto** das Sammelkonto aus, auf das die Beträge von Wechseln gebucht werden sollen. Basierend auf dem Typ der Wechselbuchung wird dieses Konto belastet, oder auf dem Konto wird ein Betrag gutgeschrieben:
+-   Wechsel: Durch die Buchung eines Wechsels erfolgt auf diesem Konto eine Sollbuchung, durch die Buchung einer Diskont- oder Inkassorimesse eine Habenbuchung.
 -   Wechsel protestieren: Durch die Buchung eines protestierten Wechsels erfolgt auf diesem Konto eine Sollbuchung.
 -   Inkassorimesse: Durch die Buchung einer Inkassorimesse erfolgt auf diesem Konto eine Sollbuchung.
 -   Skontorimesse: Durch die Buchung einer Skontorimesse erfolgt auf diesem Konto eine Sollbuchung.
 
-Auf dem Bankkonto ** ** Feld das Bargeldkonto aus, um Beträge von Wechseln gebucht werden sollen. Dieses Konto wird durch den Ausgleich eines Wechsels belastet. ** Mehrwertsteuervorauszahlungen ** Wählen Sie im Feld das Sammelkonto aus, auf das die Mehrwertsteuerbeträge gebucht werden, wenn ein Wechsel für Vorauszahlungen verwendet werden. Wählen Sie im ** Verbindlichkeiten für Diskontverbindlichkeiten ** Feld das Konto aus, auf das der Skontobetrag für Diskontrimessen gebucht werden. Auf diesem Konto erfolgt beim Buchen einer Diskontrimesse eine Habenbuchung.
+Wählen Sie im Feld **Konto ausgleichen** das Bargeldkonto aus, auf das die Beträge von Wechseln gebucht werden sollen. Dieses Konto wird durch den Ausgleich eines Wechsels belastet. Wählen Sie für den Fall, dass Vorauszahlungen per Wechsel abgewickelt werden, im Feld **Mehrwertsteuervorauszahlungen** das Sammelkonto zum Buchen von Mehrwertsteuerbeträgen aus. Wählen Sie für Diskontrimessen im Feld **Konto für Diskontverbindlichkeiten** das Konto aus, auf das der Diskontbetrag gebucht werden soll. Auf diesem Konto erfolgt beim Buchen einer Diskontrimesse eine Habenbuchung.
 
 ## <a name="set-up-accounts-receivable-parameters-for-bills-of-exchange"></a>Einrichten von Debitorenparametern für Wechsel
-** Debitorenparameter ** Auf der Seite werden die standardmäßigen Buchungsprofilen für Wechsel auf die ** Sachkonto und Mehrwertsteuer ** Registerkarte eingegeben. Nummernkreise werden Nummernkreise ** ** auf der Registerkarte definiert.
+Das Buchungsprofil wird im **Sachkonto- und Mehrwertsteuer**-Inforegister auf der **Debitorenparameterseite** definiert. Die Nummernkreise werden im Formular **Nummernkreise** eingerichtet.
 Einrichten von Journalen für Wechsel
 ------------------------------------------
 
-** Erfassungsnamen ** Auf der Seite erstellen Sie mindestens fünf Journale ein, die für Wechsel verwendet wird. Hierbei gelten die Erfassungstypen:
--   ** Debitorenziehenwechsel ** - Erstellen Sie ein Journal für die Erfassung zum Ziehen von Wechseln.
--   ** Debitorenprotestwechsel ** - Erstellen Sie ein Journal für die Erfassung.
--   ** Debitor gezogene Wechsel ** – Dient zum Erstellen eines Journals für die neu gezogene Wechsel erneut.
--   ** Debitorenbankrimesse ** - Erstellen Sie ein Journal für die Rimesseerfassung.
--   ** Debitorenbankwechsel ** - Erstellen Sie ein Journal für die. Erfassung für ausgeglichene Wechsel
+Erstellen Sie auf der Seite **Erfassungnamen**mindestens fünf Journale für Wechsel. Hier sind die Erfassungstypen:
+-   **Debitor zieht Wechsel** - Erstellen Sie ein Journal für die Erfassung zum Ziehen von Wechseln.
+-   **Debitor protestiert Wechsel** - Erstellen Sie ein Journal für die Erfassung zum Protestien von Wechseln.
+-   **Debitor zieht erneut Wechsel** - Erstellen Sie ein Journal für die Erfassung zum erneuten Ziehen von Wechseln.
+-   **Debitoren-Bankrimesse** - Erstellen Sie ein Journal für die Rimesseerfassung.
+-   **Debitor gleicht Wechsel aus** - Erstellen Sie ein Journal für die Erfassung zum Ausgleichen von Wechseln.
 
-Auf der Erfassungsbelegseite für jede Wechselerfassung, geben Sie Informationen zum Wechsel ** ** Wechsel auf der Registerkarte ein. Nachdem die Wechselerfassungspositionen gebucht wurden, können Sie auf der Wechselerfassungsabfrage ** ** Seite und der ** Wechselstatistik ** Seite anzeigen.
+Für jede Wechselerfassung können Sie im jeweiligen Formular "Alle Erfassungen" auf der Registerkarte **Wechsel** Informationen zum Wechsel eingeben. Nachdem die Wechselerfassungspositionen gebucht wurden, können Sie auf der **Wechselerfassungsabfrage** Seite und der **Wechselstatistik** Seite anzeigen.
 Einrichten von Zahlungsmethoden für Wechsel
 -----------------------------------------------
 
-** Zahlungsmethoden ** auf der Seite Einstellungen mindestens eine Zahlungsmethode für Wechsel. Sollten Sie Kunde bei mehreren Banken sein, richten Sie eine Zahlungsmethode ein, die dem Rimesseformat entspricht, das jeder Bank für Wechsel sind.
+Auf der Seite **Zahlungsmethoden** Einstellungen mindestens eine Zahlungsmethode für Wechsel. Sollten Sie Kunde bei mehreren Banken sein, richten Sie eine Zahlungsmethode ein, die dem für die jeweilige Bank erforderlichen Rimesseformat entspricht.
 Einrichten von Zahlungsgebühren für Wechsel
 -----------------------------------------
 
-Bei einer Zahlungsgebühr handelt es sich um eine Belastung für das Einziehen der Zahlungen von Debitoren. Mehreren zugeordnet werden können Zahlungsgebühreneinstellungspositionen jede Zahlungsgebühr. Zudem können Sie verwenden, um zu steuern, wie Standardbeträge für Zahlungsgebühren berechnet werden. Sie können beispielsweise Einstellungen für Zahlungsmethoden, Zahlungsspezifikationen, Währungen und Zeitperioden einrichten. Zudem können Sie einen Prozentsatz oder einen Betrag auch erstellen, der auf Tagesintervallen basierenden ist. Sie können beispielsweise einen Zinssatz einrichten, der auf der Zeit basiert, die, eine Zahlung überfällig ist. Erhebt eine Bank unterschiedliche Gebühren für unterschiedliche Rimessetypen, z ** Inkasso ** oder ** Rabatt **, muss für jeden Rimessetyp eine eigene Zahlungsgebührposition eingerichtet.
+Bei einer Zahlungsgebühr handelt es sich um eine Belastung für das Einziehen der Zahlungen von Debitoren. Jede Zahlungsgebühr kann mit mehreren Einstellungen für Zahlungsgebühren versehen werden. Mithilfe dieser Einstellungen wird die Berechnung der Standardbeträge für Zahlungsgebühren gesteuert. Sie können beispielsweise Einstellungen für Zahlungsmethoden, Zahlungsspezifikationen, Währungen und Zeitperioden einrichten. Zudem können Sie einen Prozentsatz oder einen Betrag auch erstellen, der auf Tagesintervallen basierenden ist. Sie können beispielsweise einen Zinssatz einrichten, der auf der Zeit basiert, die, eine Zahlung überfällig ist. Erhebt eine Bank unterschiedliche Gebühren für unterschiedliche Rimessetypen (beispielsweise **Inkasso** oder **Rabatt**), muss für jeden Rimessetyp eine eigene Zahlungsgebührposition eingerichtet werden.
 Einrichten von Rimessegebühren für Bankrimessedateien
 ------------------------------------------------
 
-** Bankkonten ** Auf der Seite können Sie die Möglichkeit zum Einrichten von Rimessegebühren Bankgebühren dieses für jede Rimessedatei, die generiert wird. Die Buchung der Rimessegebühren erfolgt, nachdem die Rimesse bestätigt wurde und die anfallenden Gebührenbeträge feststehen. Rimessegebühren unterscheiden sich von den Zahlungsgebühren, die von Debitoren eingezogen werden und mit Erfassungspositionen verknüpft.
+Sie haben auf der Seite **Bankkonten** die Möglichkeit zum Einrichten von Rimessegebühren, die von einer Bank für jede generierte Rimessedatei erhoben werden. Die Buchung der Rimessegebühren erfolgt, nachdem die Rimesse bestätigt wurde und die anfallenden Gebührenbeträge feststehen. Diese Rimessegebühren unterscheiden sich von den Zahlungsgebühren insofern, als letztere an von Debitoren eingezogen werden und mit Erfassungspositionen verknüpft sind.
 Einrichten von Dokumentlayouts für Wechsel
 ---------------------------------------------
 
-** ** Bankkonten auf der Seite klicken Sie ** ** Einstellungen, und geben Sie auf das erforderliche Dokumentlayout an für jedes Bankkonto, erforderlich, das zum Generieren von Wechseldokumenten verwendet.
+Klicken Sie auf der Seite **Bankkoknten** auf **Einrichten**, und geben Sie für jedes Bankkonto, das zum Generieren von Wechseldokumenten verwendet wird, das erforderliche Dokumentlayout an.
 Einrichten von Debitoren für Wechsel
 --------------------------------------
 
-** ** Debitoren auf der Seite für jeden Debitor, der einer Bezahlung zugestimmt hat, indem Sie einen Wechsel verwendete, kann eine Standardzahlungsmethode für Wechsel Zahlungsausfälle ** ** auf der Registerkarte einrichten.
+Auf der Seite **Debitoren** für jeden Debitor, der einer Bezahlung per Wechsel zugestimmt hat, kann eine Standardzahlungsmethode für Wechsel auf der Seite **Standardwerte für Zahlungen**eingerichtet werden.
+
+
 
 
 

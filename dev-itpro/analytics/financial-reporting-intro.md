@@ -85,6 +85,6 @@ Weitere Informationen finden Sie im Abschnitt "Interaktive Komponenten und Navig
 
 #<a name="see-also"></a>Siehe auch
 
-[Generieren von Finanzberichten] ((\ \ dynamics365 Arbeitsgänge dem Hauptbuch \ \ Generierte-Finanz-Bericht)
+[Generieren von Finanzberichten] ((dynamics365\operations\financials\general-ledger\generate-financial-report)
 
 

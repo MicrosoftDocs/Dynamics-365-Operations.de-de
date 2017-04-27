@@ -1,5 +1,5 @@
 ---
-title: Organisationen und Organisationshierarchien &quot; Handelsgrundlagen)
+title: Arbeiten mit Organisationen und Organisationshierarchien (Grundlagen zum Handel)
 description: "Handelsgrundlagen hat drei Typen interne Organisationen, die Sie definieren können, die eine Organisation zu unterstützen, einen Geschäftsprozess durchzuführen oder ein Ziel zu erreichen."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 21251
 ms.assetid: 2bfc6bfe-784b-42e8-8bf0-116e9f0a558e
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organisationen und Organisationshierarchien " Handelsgrundlagen)
+# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Arbeiten mit Organisationen und Organisationshierarchien (Grundlagen zum Handel)
+
+[!include[banner](includes/banner.md)]
+
 
 Handelsgrundlagen hat drei Typen interne Organisationen, die Sie definieren können, die eine Organisation zu unterstützen, einen Geschäftsprozess durchzuführen oder ein Ziel zu erreichen. 
 
@@ -68,6 +71,8 @@ In der folgenden Tabelle werden die Szenarien von "Grundlagen zum Handel" aufgef
 | Einzelhandelsauffüllung verwalten                                                    | Gruppieren Sie Filialen, um Lagerbestand auf der Grundlage von Auffüllregeln wiederzubeschaffen.                                                                                                                                                                                                                                          | Einzelhandel-Auffüllung |
 | Daten für Filialen berichten                                                         | Gruppieren Sie Shops für Berichterstellung.                                                                                                                                                                                                                                                                                | Berichterstellung im Einzelhandel     |
 | Buchen von Bestand, Berechnen von Aufstellungen oder Buchen von Auszügen für eine Gruppe von Shops | Erstellen Sie eine Gruppe von Shops, die einem Stapelverarbeitungsauftrag zugewiesen werden können. Wenn Sie einen Batchauftrag zum Buchen von Lagerbestand, zum Berechnen von Aufstellungen oder zum Buchen von Auszügen festlegen, können Sie angeben, für welche Hierarchie der Auftrag gilt. Wenn Shops der Hierarchie hinzugefügt oder aus ihr entfernt werden, müssen Sie den Batchauftrag nicht ändern. | Retail POS-Buchung   |
+
+
 
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="intrastat"></a>Intrastat
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen.
 
 Intrastat ist das System für die Sammlung von Informationen und Generierung von statistischen Daten über den Warenhandel zwischen Ländern/Regionen der Europäischen Union (EU). Intrastat-Berichte werden benötigt, wenn ein Produkt die Grenze eines anderen EU-Landes/einer anderen Region überschreitet. In einigen Ländern/Regionen sind Intrastat-Berichte außerdem für Dienstleistungen nötig. Erforderliche und optionale Elemente können im Intrastat-Bericht erfasst werden. Die folgenden Elemente sind erforderlich: Die Umsatzsteuernummer (VAT ID) der Partei, die für die Bereitstellung der Informationen verantwortlich ist, der Referenzzeitraum, der Flow (Eingang oder Ausgang), der Warencode mit acht Ziffern, der Mitgliedsstaat des Partners (Mitgliedsstaat der Lieferung bei Eingang und Mitgliedsstaat des Ziels bei Ausgang), der Warenwert, die Warenmenge (Nettogewicht und zugehörige Einheit) sowie die Art der Transaktion. Länder/Regionen können auch optionale Elemente gemäß verschiedenen Bedingungen erfassen. Einige optionale Elemente sind Ursprungsland/-region, Lieferbedingungen, die Art des Transports, ein ausführlicherer Warencode als CN8, die Region des Ursprungs auf Dispositionen und die Region des Ziels auf Eingängen, das Statistikverfahren, der statistische Wert, einer Beschreibung der Waren und der Anschluss/der Flughafen des Ladens/Entladens.
@@ -34,24 +37,24 @@ Intrastat ist das System für die Sammlung von Informationen und Generierung von
 ## <a name="overview-of-the-intrastat-reporting-process"></a>Überblick des Intrastat-Berichterstellungsprozesses
 Die folgenden Abschnitte beschreiben den allgemeinen Informationsfluss, der für Intrastat-Berichte verwendet wird.
 
-### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Geben Sie ein, die eine Buchung den Kontext eines anderen EU-Landes/Region wird
+### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Geben Sie eine Buchung ein, welche die Grenze eines anderen EU-Landes/einer anderen Region überschreitet
 
-Eine Debitorenrechnung, eine Freitextrechnung, eine Einkaufsrechnung, Projektrechnung, ein Debitorenlieferschein, ein Kreditorenproduktzugang oder Umlagerungsauftrag wird in die Intrastat-Erfassung übertragen, wenn die Länder-/Regionsart des Ziels (auf Dispositionen) oder Lieferung (auf Eingängen) ist **EU**. Diese Funktion wurde für Microsoft Dynamics 365 für Arbeitsgangsversion 1611 erweitert und gestattet, Ladungsadressen für eine Intragemeinschaftsbuchung anzugeben. Wenn eine Ladungsadresse mit einer KreditorenGeschäftsadresse unterscheidet (oder DebitorenGeschäftsadresse für Rücklieferung) funktioniert der Intrastat-Bericht mit diesen Informationen. Wenn Sie einen Auftrag, eine Freitextrechnung, eine Bestellung, eine Kreditorenrechnung, Projektrechnung oder einen Umlagerungsauftrag erstellen, besitzen einige Felder, die für Außenhandel zugeordnet sind, Standardwerte im Dokumentkopf oder in der Position. Der standardmäßige Buchungscode wird aus dem entsprechenden Feld auf der Seite **Außenhandelsparameter** entnommen. Der standardmäßige Warencode, Ursprungsland/-region und Bundesland/Kanton des Ursprungs werden dem Artikel selbst übernommen. Sie können die Standardwerte ändern und können auch andere außenhandelsbezogene Informationen ausfüllen: Statistiken-Verfahren, Transportmethode und Port.
+Eine Debitorenrechnung, eine Freitextrechnung, eine Einkaufsrechnung, Projektrechnung, ein Debitorenlieferschein, ein Kreditorenproduktzugang oder Umlagerungsauftrag wird in die Intrastat-Erfassung übertragen, wenn die Länder-/Regionsart des Ziels (auf Dispositionen) oder Lieferung (auf Eingängen) ist **EU**. Diese Funktion wurde für Microsoft Dynamics 365 for Operations Version 1611 erweitert und gestattet, Ladungsadressen für eine Intragemeinschaftsbuchung anzugeben. Wenn eine Ladungsadresse sich von einer Kreditoren-Geschäftsadresse unterscheidet (oder Debitoren-Geschäftsadresse für Rücklieferung) funktioniert der Intrastat-Bericht mit diesen Informationen. Wenn Sie einen Auftrag, eine Freitextrechnung, eine Bestellung, eine Kreditorenrechnung, Projektrechnung oder einen Umlagerungsauftrag erstellen, besitzen einige Felder, die für Außenhandel zugeordnet sind, Standardwerte im Dokumentkopf oder in der Position. Der standardmäßige Buchungscode wird aus dem entsprechenden Feld auf der Seite **Außenhandelsparameter** entnommen. Der standardmäßige Warencode, Ursprungsland/-region und Bundesland/Kanton des Ursprungs werden dem Artikel selbst übernommen. Sie können die Standardwerte ändern und können auch andere außenhandelsbezogene Informationen ausfüllen: Statistiken-Verfahren, Transportmethode und Port.
 
-### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Verwenden Sie die Intrastat-Erfassung, um Informationen zum Handel zwischen EU-Ländern/Regionen generieren
+### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Mithilfe der Intrastat-Erfassung können Sie Informationen zum Handel zwischen EU-Ländern/Regionen generieren und melden
 
 Zu statistischen Zwecken generieren Sie Informationen zum Handel zwischen EU-Ländern/Regionen jeden Monat. Sie können Buchungen übertragen aus einer Freitextrechnung, einer Debitorenrechnung, einem Debitorenlieferschein, einer Kreditorenrechnung, einem Lieferschein des Kreditors, einer Projektrechnung oder aus einem Umlagerungsauftrag, entsprechend den Übertragungskriterien, die auf der Seite **Außenhandelsparameter** eingerichtet werden. Ersatzweise können Sie Transaktionen manuell eingeben. Sie können übertragene Buchungen in der Intrastat-Erfassung manuell aktualisieren, wenn derzeit Aktualisierungen erforderlich sind. Unter bestimmten Bedingungen, die auf der Seite **Komprimierung von Intrastat** eingerichtet werden, können Sie die Buchungen in der Intrastat-Erfassung komprimieren. In einigen Ländern/Regionen können Sie einen kleinen Buchungsschwellenwert übernehmen. Sie können dann Buchungen melden, die unter dem Schwellenwert unter dem angegebenen Warencode sind. Sie können den Warencode in den entsprechenden Intrastat-Erfassungspositionen aktualisieren, basierend auf der Einstellung **Untergrenze** auf der Seite **Außenhandelsparameter**. Sie können diese Buchungen auch komprimieren, basierend auf den Einstellungen auch **Komprimierung von Intrastat**. Sie können die Vollständigkeit der Buchungen in der Intrastat-Erfassung überprüfen, basierend auf der Einstellung **Einstellungen prüfen** auf der Seite **Außenhandelsparameter**. Die Daten in den entsprechenden Feldern werden auf Vollständigkeit geprüft möglicherweise: Land/Region, Bundesland oder Kanton., Gewicht, Warencode, Buchungscode, zusätzliche Einheit, Port, Buchungsgrundlage, Lieferbedingungen, Transportmethode und Steuernummer. Buchungen, die nicht abgeschlossen sind, werden markiert als ungültig.
 
-### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Verwenden Sie die Intrastat-Erfassung, können Sie Informationen zum Handel zwischen EU-Ländern/Region zu melden
+### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Mithilfe der Intrastat-Erfassung können Sie Informationen zum Handel zwischen EU-Ländern/Regionen melden
 
-Zu statistischen Zwecken melden Sie Informationen zum Handel zwischen EU-Ländern/Regionen jeden Monat. Sie können den Intrastat-Bericht, basierend auf den Einstellungen **Berichtsformatzuordnung** drucken auf der **Außenhandelsparameter** Seite. Sie können auch eine elektronische Datei generieren, basierend auf den Einstellungen **Dateiformatzuordnung** auf der **Außenhandelsparameter** Seite. Weitere Informationen, einschließlich erforderliche Intrastat-Bericht zu Voraussetzungen, finden Sie die Intrastat-Berichts-Aufgabenaufzeichnungen:
+Zu statistischen Zwecken melden Sie Informationen zum Handel zwischen EU-Ländern/Regionen jeden Monat. Sie können den Intrastat-Bericht, basierend auf den Einstellungen **Berichtsformatzuordnung** drucken auf der **Außenhandelsparameter** Seite. Sie können auch eine elektronische Datei generieren, basierend auf den Einstellungen **Dateiformatzuordnung** auf der **Außenhandelsparameter** Seite. Siehe auch die zusammenfassende Meldungs-Berichterstellungs-Wiki-Seite für weitere Informationen zu zusammenfassenden Meldungen, einschließlich der erforderlichen Komponenten.
 
--   Generieren eines EU-Intrastat-Meldung,
--   Buchungen an Intrastat,
--   Angeben der Ladungsadresse für eine Intragemeinschaftsbuchung.
+-   Generieren Sie eine EU-Intrastat-Meldung
+-   Übertragen Sie Transaktionen an den Intrastat
+-   Angeben der Ladungsadresse für eine Innergemeinschaftliche Buchung.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-In der folgenden Tabelle werden die Voraussetzungen für Intrastat-Berichte in.
+In der folgenden Tabelle werden die Komponenten für Intrastat-Berichte angezeigt.
 
 <table>
 <colgroup>
@@ -235,5 +238,7 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 </table>
 
  
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="main-account-types"></a>Hauptkontotypen
 
+[!include[banner](../includes/banner.md)]
+
+
 Die Hauptkontotypen bestimmen, wie ein Hauptkonto im Kontenplan verwendet wird.
 
 Sie müssen einen Hauptkontotyp auswählen, wenn Sie auf der Seite "Hauptkonten" – "Kostenplan" ein Hauptkonto erstellen.
@@ -35,6 +38,8 @@ Sie müssen einen Hauptkontotyp auswählen, wenn Sie auf der Seite "Hauptkonten"
 -   "Bilanz", "Anlage", "Verbindlichkeiten" und "Eigenkapital" – Diese Hauptkonten werden als Transaktionskonten verwendet, um die Beträge zu erfassen, die eine juristische Person besitzt oder schuldet.
 -   "Gesamt" – Diese Hauptkonten dienen dazu, Kontointervalle hinzuzufügen. Konfigurieren Sie den Hauptkontotyp "Gesamt", indem Sie die Seite "Kontointervall" verwenden, auf der die Summe der Gruppensalden für alle Kontointervalle angezeigt wird. Greifen Sie auf die Seite "Kontointervall" zu, indem Sie auf "Summen" auf der Registerkarte "Allgemein" klicken, sobald Sie ein Kontotyp "Gesamt" ausgewählt haben.
 -   "Berichterstellung" – Diese Hauptkonten werden für Finanzaufstellungsberichte ausschließlich für Brasilien verwendet.
+
+
 
 
 

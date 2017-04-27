@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="replenishment"></a>Wiederbeschaffung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt die Beschaffungsstrategien, die für Lagerorte, die die Funktionen der Lagerortverwaltung verwenden, verfügbar sind.
 
 Dieser Artikel beschreibt die Beschaffungsstrategien, die für Lagerorte, die die Funktionen der Lagerortverwaltung verwenden, verfügbar sind. Dieser Artikel gilt nicht für die Lagerort-Lösung, die in der Lagerverwaltung verfügbar ist. Drei Beschaffungsstrategien sind verfügbar:
@@ -67,6 +70,8 @@ Ladungsbedarfs-Wiederbeschaffung summiert den Bedarf für verschiedene Ladungen 
 | Lagerplatzprofile       | Lagerplatzprofile sind erforderlich, um Lagerplätze zu erstellen.                                                                                                                                                                                       |
 | Lagerplatzrichtlinien     | Lagerplatzrichtlinien sind erforderlich, um die Arbeit zu den Lagerplätzen zu leiten, an denen Wiederbeschaffung benötigt wird und zu Lagerplätzen, aus denen der Bestand stammt.                                                                                     |
 | Arbeitsvorlagen          | Arbeitsvorlagen des Typs **Wiederbeschaffung** sind erforderlich, um Wiederbeschaffungsarbeit zu erstellen, damit der Bestand an die gewünschten Lagerplätze verschoben werden kann.                                                                                           |
+
+
 
 
 

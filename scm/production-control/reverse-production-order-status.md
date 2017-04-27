@@ -1,5 +1,5 @@
 ---
-title: Storniert den Status um
+title: "Produktionsauftragsstatus zurücksetzen"
 description: "In diesem Thema wird beschrieben, wie sie den Produktionsauftragsstatus zurücksetzen."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reverse-the-production-order-status"></a>Storniert den Status um
+# <a name="reverse-the-production-order-status"></a>Produktionsauftragsstatus zurücksetzen
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird beschrieben, wie sie den Produktionsauftragsstatus zurücksetzen. 
 
@@ -49,5 +52,7 @@ Wenn Sie den Status eines Produktionsauftrags von **Freigegeben** auf **Eingepla
 
 ## <a name="from-started-to-released"></a>Von "Gestartet" auf "Freigegeben"
 Wenn Sie den Status eines Produktionsauftrags von **Gestartet** auf **Freigegeben** zurücksetzen, werden alle Artikel, die als fertig gemeldet wurden, ebenfalls zurückgesetzt. Wenn Material entnommen wurde bzw. eingehende und ausgehende Lieferungen an die Produktion erfolgt sind, werden diese Einstellungen ebenfalls zurückgesetzt. Das Feld **Rückstandsstatus** in den Stücklistenpositionen des Produktionsauftrags ändert sich von **Abgeschlossen** in **Materialverbrauch**. Wenn Zeit erfasst wurde oder Mengen als für die Arbeitsgänge im Produktionsarbeitsplan fertig gemeldet wurden, werden diese Einstellungen zurückgesetzt. Das Feld **Rückstandsstatus** ändert sich von **Abgeschlossen** in **Arbeitsplanrückmeldung** im Produktionsarbeitsplan. Die Einstellungen für alle Artikel, die als in Bearbeitung oder als Ressource in Fertigung gebucht sind, werden ebenfalls zurückgesetzt. Auf der Seite **Produktionsauftragsdetails** werden Felder zurückgesetzt, die eine Menge anzeigen, die gestartet oder als fertig gemeldet wurde. Die Datumsangaben für diese Buchungen werden auch zurückgesetzt.
+
+
 
 

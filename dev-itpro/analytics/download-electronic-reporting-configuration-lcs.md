@@ -1,6 +1,6 @@
 ---
 title: Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Services herunter
-description: "In diesem Thema wird erläutert, wie Sie elektronische meldende (ER)- von den Konfigurationen Microsoft Dynamics Lifecycle Services (LCS) herunterlädt."
+description: Dieses Thema zeigt, wie Sie elektronische Berichterstattungskonfiguration (ER) von Microsoft Dynamics Lifecyle Services LCS herunterladen.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Services herunter
 
-In diesem Thema wird erläutert, wie Sie elektronische meldende (ER)- von den Konfigurationen Microsoft Dynamics Lifecycle Services (LCS) herunterlädt.
+Dieses Thema zeigt, wie Sie elektronische Berichterstattungskonfiguration (ER) von Microsoft Dynamics Lifecyle Services LCS herunterladen.
 
 Dieses Lernprogramm erläutert das Herunterladen der aktuellen Version der Microsoft Dynamics AX Electronic Reporting (ER) Konfigurationen von Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -36,9 +36,9 @@ Dieses Lernprogramm erläutert das Herunterladen der aktuellen Version der Micro
     -   Funktionaler Berater für elektronische Berichterstellung
     -   Systemadministrator
 
-2.  Wechseln ** Organisationsverwaltung ** ** &gt; elektronische ** Berichterstellung.
+2.  Wechseln Sie zu ** Organisationsverwaltung **&gt; **Elektronische Berichterstellung**..
 3.  Wählen Sie im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus.
-4.  Klicken Sie auf der Kachel **Microsoft** auf **Repositorys**. ![Aktualisierung-äh-von-LCS-für-Frau-offen-Frau-RepositoryListe( [] . /media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)]". /media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+4.  Klicken Sie auf der Kachel **Microsoft** auf **Repositorys**. [![Aktualisieren von ER über LCS für MS - MS Repositorys-Liste öffnen](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 5.  Auf der Seite **Konfigurationsrepositorys** wählen Sie im Raster ein vorhandenes Repository vom Typ **LCS** aus. Wenn dieses Repository nicht im Raster angezeigt wird, führen Sie die folgenden Schritte aus:
     1.  Klicken Sie zum Hinzufügen neuer Repository auf **Hinzufügen**.
     2.  Aktivieren Sie **LCS** als Repository-Typ.
@@ -47,12 +47,12 @@ Dieses Lernprogramm erläutert das Herunterladen der aktuellen Version der Micro
     5.  Klicken Sie auf **OK**, um den neuen Repositoryeintrag zu bestätigen.
     6.  Wählen Sie im Raster das neue Repository vom Typ **LCS** aus.
 
-6.  Klicken Sie auf **Öffnen**, um die Liste der ER-Konfigurationen für das ausgewählte Repository anzuzeigen. ![Aktualisierung-äh-von-LCS-für-Frau-machen-LCSRepository( [] . /media/update-er-from-lcs-for-ms-make-lcs-repository.png)]". /media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+6.  Klicken Sie auf **Öffnen**, um die Liste der ER-Konfigurationen für das ausgewählte Repository anzuzeigen. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  Wählen Sie in der Konfigurationsstruktur im linken Bereich die ER-Konfiguration aus, die Sie benötigen.
 8.  Wählen Sie im Inforegister **Versionen** die erforderliche Version der ausgewählten ER-Konfiguration aus.
-9.  Klicken Sie auf **Importieren**, um die ausgewählte Version vom LCS auf die aktuelle Dynamics 365 for Operations Instanz herunterzuladen. **Hinweis:** Die Schaltfläche **Importieren** ist nicht für ER-Konfigurationsversionen verfügbar, die in der aktuellen Dynamics 365 for Operations-Instanz bereits vorhanden sind. ![Aktualisierung-äh-von-LCS-für-Frau-DownloadKonfiguration( [] . /media/update-er-from-lcs-for-ms-download-configuration.png)]". /media/update-er-from-lcs-for-ms-download-configuration.png)
+9.  Klicken Sie auf **Importieren**, um die ausgewählte Version vom LCS auf die aktuelle Dynamics 365 for Operations Instanz herunterzuladen. **Hinweis:** Die Schaltfläche **Importieren** ist nicht für ER-Konfigurationsversionen verfügbar, die in der aktuellen Dynamics 365 for Operations-Instanz bereits vorhanden sind. [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
-**Hinweis:** Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden. Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden. Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können. Weitere Informationen finden die Liste von zugehörigen Artikeln für dieses Thema.
+**Hinweis:** Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden. Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden. Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können. Weitere Informationen finden Sie in der Liste der zugehörigen Artikel.
 
 <a name="see-also"></a>Siehe auch
 --------

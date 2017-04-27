@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel erklärt, wie die Auswirkungen von Kostenänderungen auf die berechneten Kosten eines produzierten Artikels mithilfe einer separaten Nachkalkulationsversion für geplante Kosten simuliert werden können.
 
 Die Auswirkungen von Kostenänderungen auf die berechneten Kosten eines produzierten Artikels lassen sich mithilfe einer separaten Nachkalkulationsversion für geplante Kosten simulieren. Verwenden Sie die separate Nachkalkulationsversion zum Eingeben von Datensätzen für ausstehende Kosten, die stufenweise Kostenänderungen darstellen, sowie zum Berechnen der Kostenauswirkungen auf produzierte Artikel. Da in den Stücklistenkalkulationen ein Fallback-Prinzip für aktive Kosten verwendet wird, müssen lediglich die stufenweisen Kostenänderungen eingegeben werden.
@@ -54,5 +57,7 @@ In den folgenden Szenarios wird die Verwendung der Nachkalkulationsversion vom T
 -   Simulieren der Kostenänderung in einer Formel zur Berechnung indirekter Kosten. Im Rahmen der Kostenänderung kann beispielsweise eine erwartete Kostensteigerung oder -senkung bei den Fertigungsgemeinkosten berücksichtigt werden. Verwenden Sie zum Definieren der Änderung in einer Formel zur Berechnung indirekter Kosten das Formular **Nachkalkulationsbogen**, und geben Sie einen Datensatz für ausstehende Kosten in der Nachkalkulationsversion vom Typ "Simulation" ein. Dieses Formular dient auch zum Überprüfen und Speichern der Änderung.
 
 Berechnen Sie nach Eingabe der simulierten Kostenänderungen die Kosten für produzierte Artikel, die von den Kostenänderungen betroffen sind. Verwenden Sie die Seite **Kalkulation** für die Nachkalkulationsversion vom Typ "Simulation", und kennzeichnen Sie die ausgewählten produzierten Artikel, die von den Kostenänderungen betroffen sind. Werden keine der ausgewählten Artikel gekennzeichnet, gelten die Herstellkostenkalkulationen für alle produzierten Artikel. Alternativ kann auch die Herstellkostenkalkulationsoption für Aktualisierungen vom Typ "Wo verwendet" ausgewählt werden. Zeigen Sie die Datensätze für Artikelkosten in der Nachkalkulationsversion vom Typ "Simulation" an, und analysieren Sie, inwiefern sich die simulierten Kostenänderungen auf die Kosten der ausgewählten produzierten Artikel ausgewirkt haben. Verwenden Sie die **Artikelpreis** Seite und die Seite **Artikelpreis berechnen**, um die Kosten anzuzeigen und zu analysieren.
+
+
 
 

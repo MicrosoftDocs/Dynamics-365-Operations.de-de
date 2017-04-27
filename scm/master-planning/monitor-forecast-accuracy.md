@@ -1,6 +1,6 @@
 ---
-title: Bildschirmplanungsrichtigkeit
-description: "In diesem Artikel wird beschrieben die Typen der Planungs richtigkeit, die Microsoft Dynamics 365 für Arbeitsgänge berechnet, und es wird beschrieben, wie Sie die Richtigkeitswerte anzeigen können."
+title: "Überwachen der Planungsgenauigkeit"
+description: "In diesem Artikel werden die Typen der Planungsgenauigkeit beschrieben, die Microsoft Dynamics 365 for Operations berechnet, und es wird beschrieben, wie Sie die Genauigkeitswerte anzeigen können."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,23 +25,28 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="monitor-forecast-accuracy"></a>Bildschirmplanungsrichtigkeit
+# <a name="monitor-forecast-accuracy"></a>Überwachen der Planungsgenauigkeit
 
-In diesem Artikel wird beschrieben die Typen der Planungs richtigkeit, die Microsoft Dynamics 365 für Arbeitsgänge berechnet, und es wird beschrieben, wie Sie die Richtigkeitswerte anzeigen können.
+[!include[banner](../includes/banner.md)]
 
-Dynamics 365 für Arbeitsgänge berechnet die folgenden Typen der Planungsrichtigkeit:
+
+In diesem Artikel werden die Typen der Planungsgenauigkeit beschrieben, die Microsoft Dynamics 365 for Operations berechnet, und es wird beschrieben, wie Sie die Genauigkeitswerte anzeigen können.
+
+Microsoft Dynamics 365 for Operations berechnet die folgenden Typen der Planungsgenauigkeit:
 
 -   Genauigkeit der historischen Planung durch Vergleich der historischen Planung, die der Produktprogrammplan verwendet, mit dem historischen Bedarf. Um die Werte (absolute Werte und Prozentwerte) für die Genauigkeit der historischen Planung anzuzeigen, klicken Sie auf **Genauigkeit anzeigen** auf der Seite **Bedarfsplanungsdetails**.
 -   Die geschätzte Genauigkeit des Planungsmodells, das verwendet wird, um die Vorhersagen zu generieren. Sie können die prozentuale Genauigkeit unter **Modelldetails - MAPE** auf der Seite **Bedarfsplanungsdetails** anzeigen. 
 
-** Hinweis: ** Wenn Sie das Arbeitsgangs-Bedarfsplanungs-MicrosoftAzure-Lernfähigkeit-einer Dynamics 365 für Maschineservice verwenden, lautet die Berechnung des internen Projekt-Planzahlenmodells Genauigkeit auf dem Testdataset. Geben Sie die Größe des Testdatasets anzugeben, legen Sie den TESTEN Sie GRÖSSEN- ** Sie \_PROZENT\_\_FESTGELEGTES ** Parameter auf der Seite Bedarfsplanungsparameter ** ** fest. Wenn Sie zum Beispiel den Wert auf **20** gesetzt haben, werden die letzten 20 Prozent der historischen Daten verwendet, um die interne Modellgenauigkeit zu berechnen.
+**Hinweis:** Wenn Sie den Microsoft Dynamics 365 for Operations-Bedarfsplanung verwenden, basiert die Berechnung der internen Modellgenauigkeit auf dem Testdataset. Um die Größe des Testdatasets anzugeben, legen Sie den Parameter **TEST\_SET\_SIZE\_PERCENT** Parameter auf der Seite **Bedarfsplanungsparameter** fest. Wenn Sie zum Beispiel den Wert auf **20** gesetzt haben, werden die letzten 20 Prozent der historischen Daten verwendet, um die interne Modellgenauigkeit zu berechnen.
 
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Autorisieren der angepassten Planung](authorize-adjusted-forecast.md)
 
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+[Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 
 

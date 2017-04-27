@@ -1,6 +1,6 @@
 ---
 title: Vordatierte Schecks
-description: "Dieser Artikel wird Unterstützung Informationen zu für vordatierte Schecks in Microsoft Dynamics 365 für Arbeitsgänge festgelegt. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden."
+description: "Dieser Artikel führt Informationen zu Unterstützung für vordatierte Schecks in Microsoft Dynamics 365 for Operations fest. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="postdated-checks"></a>Vordatierte Schecks
 
-Dieser Artikel wird Unterstützung Informationen zu für vordatierte Schecks in Microsoft Dynamics 365 für Arbeitsgänge festgelegt. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden.
+[!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 für Arbeitsgänge unterstützt den vollständigen Verwaltungszyklus für vordatierte Schecks in "Debitoren" und " Kreditor, wie in der folgenden Tabelle dargestellt.
+
+Dieser Artikel führt Informationen zu Unterstützung für vordatierte Schecks in Microsoft Dynamics 365 for Operations fest. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden.
+
+Microsoft Dynamics 365 for Operations unterstützt den vollständigen Verwaltungszyklus für vordatierte Schecks in Debitoren und Kreditoren wie in der folgenden Tabelle dargestellt.
 <table>
 <colgroup>
 <col width="50%" />
@@ -48,14 +51,14 @@ Microsoft Dynamics 365 für Arbeitsgänge unterstützt den vollständigen Verwal
 </tr>
 <tr class="even">
 <td>Erfassen und Buchen eines vordatierten Schecks für einen Kreditor</td>
-<td>Erfassung eines vordatierten Schecks, bevor der Scheck an einen Kreditor ausgestellt wird. Beim Buchen wird, die die Verbindlichkeiten dem Kreditor gegenüber werden erkannt, doch das Bankkonto ist noch keine Gutschrift. Stattdessen wird ein Verrechnungskonto für diesen Zweck verwendet.</td>
+<td>Erfassung eines vordatierten Schecks, bevor der Scheck an einen Kreditor ausgestellt wird. Wenn die Zahlung gebucht wird, werden die die Verbindlichkeiten dem Kreditor gegenüber erkannt, doch der Betrag wurde dem Bankkonto noch nicht gutgeschrieben. Stattdessen wird ein Verrechnungskonto für diesen Zweck verwendet.</td>
 </tr>
 <tr class="odd">
 <td>Erfassen und Buchen eines vordatierten Schecks von einem Debitor</td>
-<td>Sie können die Details eines vordatierten Schecks erfassen, den Sie von einem Debitor erhalten haben. Beim Buchen wird, ist die Debitorenforderung Haben, aber das Bankkonto ist noch Sollbuchung. Stattdessen wird ein Verrechnungskonto für diesen Zweck verwendet.</td>
+<td>Sie können die Details eines vordatierten Schecks erfassen, den Sie von einem Debitor erhalten haben. Wenn die Zahlung gebucht wird, werden die die Verbindlichkeiten dem Kreditor gegenüber erkannt, doch der Betrag wurde dem Bankkonto noch nicht gutgeschrieben. Stattdessen wird ein Verrechnungskonto für diesen Zweck verwendet.</td>
 </tr>
 <tr class="even">
-<td>Erfassen und Buchen eines vordatierten Ersatzschecks für einen Debitor oder einen Kreditor</td>
+<td>Erfassen und Buchen eines vordatierten Ersatzschecks für einen Kunden oder einen Händler.</td>
 <td>
 Wenn Ihr Originalscheck an einen Händler oder von einem Kunden verloren ging oder beschädigt wird, können Sie für den Kreditor einen vordatierten Ersatzscheck ausstellen. Geben Sie beim Erfassen der Scheckdetails einen Verweis auf den Originalscheck an, und weisen Sie darauf hin, dass der neue Scheck als Ersatz für das Original gilt. Sie können den Ersatzscheck auch buchen.</td>
 </tr>
@@ -71,15 +74,17 @@ Wenn Ihr Originalscheck an einen Händler oder von einem Kunden verloren ging od
 <td>Stornieren eines vordatierten Schecks für einen Kreditor</td>
 <td>Sie können einen vordatierten Scheck in diesen Fällen stornieren: - Die Bank verweigert die Annahme des Schecks.
 - Der Scheck wurde auf eine falsche Rechnung angewendet.
-- Eine Barzahlung des Schecks wird vorgenommen.
+- Für den Betrag des Schecks wird eine Barzahlung geleistet.
 </td>
 </tr>
 <tr class="even">
-<td>Zahlungsstop für einen vordatierten Schecks</td>
+<td>Beenden der Zahlung eines vordatierten Schecks.</td>
 <td>Sie können die Zahlung für einen vordatierten Scheck stoppen, der für einen Kreditor ausgestellt wurde. Gründe dafür können eine mangelnde Deckung, eine Änderung der vertraglichen Vereinbarungen mit dem Kreditor, die Lieferung fehlerhafter Waren durch den Kreditor oder die Rückgabe von Waren an den Kreditor sein. Sie können Zahlungen nur für Schecks stoppen, die noch nicht verrechnet wurden.</td>
 </tr>
 </tbody>
 </table>
+
+
 
 
 

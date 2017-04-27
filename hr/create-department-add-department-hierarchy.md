@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Eine Abteilung erstellen und der Abteilungshierarchie zuordnen
 
+[!include[banner](includes/banner.md)]
+
+
 Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen funktionalen Bereich einer Organisation darstellt. Eine Abteilung ist für einen bestimmten Bereich der Organisation wie zum Beispiel Verkauf, Buchhaltung oder Personalverwaltung zuständig. Sie können Abteilungen verwenden, um zu Funktionsbereiche zu melden. Abteilungen können Gewinn- und Verlustzuständigkeit haben.
 
-Eine Abteilung kann möglicherweise auch eine Gruppe von Kostenstellen umfassen. Positionen können Abteilungen zugeordnet sein. Um eine Abteilung zu erstellen, klicken Sie auf Personalverwaltung ** ** &gt; ** Abteilungen ** &gt; ** ** Abteilung. In der folgenden Tabellen werden die Felder beschrieben, die verfügbar sind.
+Eine Abteilung kann möglicherweise auch eine Gruppe von Kostenstellen umfassen. Positionen können Abteilungen zugeordnet sein. Um eine Abteilung zu erstellen, klicken Sie auf **Personalverwaltung** &gt; **Abteilungen** &gt; **Abteilung**. In der folgenden Tabelle werden die Felder beschrieben, die zur Verfügung stehen.
 
 | Feld               | Beschreibung                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,12 +49,14 @@ Eine Abteilung kann möglicherweise auch eine Gruppe von Kostenstellen umfassen.
 
 Um der Abteilungshierarchie eine Abteilung hinzuzufügen, führen Sie folgende Schritte aus.
 
-1.  ** Auf Personalverwaltung ** &gt; ** Abteilungen ** &gt; ** Abteilungshierarchie **.
+1.  Klicken Sie auf **Personalverwaltung** &gt; **Abteilungen** &gt; **Abteilungshierarchie**.
 2.  Klicken Sie auf **Bearbeiten** und wählen Sie dann die Organisation, unter der die Abteilung eingefügt werden soll.
 3.  Klicken Sie auf **Einfügen** und wählen Sie aus der Liste **Abteilung**.
 4.  In der Liste der Abteilungen, die angezeigt werden, wählen Sie die Abteilung aus, die der Hierarchie hinzugefügt werden soll.
-5.  Speichern Sie die Änderungen. Es wird eine Nachricht, dass eine Entwurfsversion der Hierarchie erstellt wurde.
-6.  Wenn Sie fertig sind, klicken ** Veröffentlichen ** im Hierarchie-Designer. Sie können ein Gültigkeitsdatum ein, das angibt, wann die Hierarchie veröffentlicht werden soll. Um beispielsweise eine neue Abteilung zu Beginn des folgenden Kalenderjahrs hinzuzufügen, legen Sie das Gültigkeitsdatum auf den 1. Januar des neuen Kalenderjahrs fest. Die Änderungen an der Hierarchie treten an diesem Datum in Kraft.
+5.  Speichern Sie die Änderungen. Sie erhalten eine Meldung, dass eine Entwurfsversion der Hierarchie erstellt wurde.
+6.  Wenn Sie fertig sind, klicken auf **Veröffentlichen** im Hierarchie-Designer. Sie können ein Gültigkeitsdatum eingeben, das angibt, wann die Hierarchie veröffentlicht werden soll. Um beispielsweise eine neue Abteilung zu Beginn des folgenden Kalenderjahrs hinzuzufügen, legen Sie das Gültigkeitsdatum auf den 1. Januar des neuen Kalenderjahrs fest. Die Änderungen an der Hierarchie treten an diesem Datum in Kraft.
+
+
 
 
 

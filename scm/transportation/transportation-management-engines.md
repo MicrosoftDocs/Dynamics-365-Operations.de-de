@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-engines"></a>Transportverwaltungsmodule
 
+[!include[banner](../includes/banner.md)]
+
+
 Transportverwaltungsmodule definieren die Logik, die verwendet wird, um Transportsätze in der Transportverwaltung zu generieren und zu verarbeiten. 
 
 Ein Transportverwaltungsmodul berechnet Aufgaben wie z. B. den Transportsatz des Spediteurs. Mit dem Modulsystem können Sie Berechnungsstrategien zur Laufzeit ändern, basierend auf Daten in Microsoft Dynamics 365 for Operations. Ein Transportverwaltungsmodul ähnelt einem Plug-In, das einem bestimmten Spediteursvertrag zugeordnet ist.
@@ -58,7 +61,7 @@ Ein Transportverwaltungsmodul erfordert, dass Sie Initialisierungsdaten einricht
 In den meisten Fällen können Sie auf die Schaltfläche **Parameter** in den Einrichtungsformularen des Transportverwaltungsmoduls klicken, um die Initialisierungsdaten zu konfigurieren. **Beispiel für die Konfiguration eines Tarifmoduls, das auf ein Kilometerleistungsmodul verweist** Im folgenden Beispiel werden die Einstellungen gezeigt, die für ein Tarifmodul erforderlich sind, das auf dem .NET-Modultyp Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine basiert und auf ein Kilometerleistungsmodul verweist.
 | Parameter             | Beschreibung                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | Der .NET-Typ, der die Satz-Basiszuweisungsdaten für ein bestimmtes Schema interpretiert. Die Syntax des Parameterwerts besteht aus zwei Segmenten, die von einem senkrechten Strich abgegrenzt werden "|) generiert. Das erste Segment enthält den Assemblynamen, der den Typ „assigner“ definiert. Das zweite Segment definiert den vollqualifizierten Namen des Typs „assigner“. Dazu gehört der Namespace des Typs. |
+| *RateBaseAssigner*    | Der .NET-Typ, der die Satz-Basiszuweisungsdaten für ein bestimmtes Schema interpretiert. Die Syntax des Parameterwerts besteht aus zwei Segmenten, getrennt durch einen senkrechten Strich (|) generiert. Das erste Segment enthält den Assemblynamen, der den Typ „assigner“ definiert. Das zweite Segment definiert den vollqualifizierten Namen des Typs „assigner“. Dazu gehört der Namespace des Typs. |
 | *MileageEngineCode*   | Code des Kilometerleistungsmoduls, der den Datensatz des Kilometerleistungsmoduls in der Microsoft Dynamics 365 for Operations Datenbank kennzeichnet.                                                                                                                                                                                                                                                             |
 | *ApportionmentEngine* | Allgemeiner Modulcode, der das Umlagenmodul in der Microsoft Dynamics 365 for Operations Datenbank kennzeichnet.                                                                                                                                                                                                                                                              |
 
@@ -87,7 +90,7 @@ Metadaten für Transportverwaltungsmodule werden für die verschiedenen Arten vo
 | **Transitzeitmodul** und **Kilometerleistungsmodul** | Ruft die Metadaten direkt aus dem Formular für die Konfigurationseinrichtung des Kilometerleistungsmoduls ab.                                                                                                                                                                                                                                                                                                                                                                                  |
 
   **Beispiel für Metadaten für ein Tarifmodul** Das Transportverwaltungsmodul erfordert die Kennung der Ursprungsadresse, des Zielstaats und des Ziellands/der Zielregion sowie des Ausgangs-und Endpunkts der Lieferung. Wenn Sie diese Anforderungen verwenden, würden die Metadaten wie die Daten in der folgenden Tabelle aussehen. Die Tabelle enthält auch Informationen zum Typ der Eingabedaten, der erforderlich ist.
--   Definieren Sie diese Informationen in Transportverwaltung ** ** ** &gt; ** Einstellungen auf der Steuerbemessungsgrundlagetyp ** ** Seite.
+-   Definieren Sie diese Informationen unter **Transportverwaltung** &gt; **Einstellungen** auf der Seite **Satzbasistyp**.
 
 | Sequenz | Name                          | Feldtyp | Datentyp | Suchtyp    | Obligatorisch |
 |----------|-------------------------------|------------|-----------|----------------|-----------|
@@ -96,6 +99,8 @@ Metadaten für Transportverwaltungsmodule werden für die verschiedenen Arten vo
 | 3        | Zielstartpostleitzahl | Zuweisung | Zeichenfolge    | Postleitzahl    | Ausgewählt  |
 | 4        | Zielendepostleitzahl   | Zuweisung | Zeichenfolge    | Postleitzahl    | Ausgewählt  |
 | 5        | Zielland           | Zuweisung | Zeichenfolge    | Land/Region |           |
+
+
 
 
 

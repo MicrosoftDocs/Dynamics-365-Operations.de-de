@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren eines Genehmigungsprozesses in einem Workflow
+title: Einen Genehmigungsschritt in einem Workflow genehmigen
 description: Verwenden Sie das folgende Verfahren, um die Eigenschaften des Genehmigungsprozesses zu konfigurieren.
 author: sericks007
 manager: AnnBe
@@ -24,11 +24,11 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurieren eines Genehmigungsprozesses in einem Workflow
+# <a name="configure-an-approval-process-in-a-workflow"></a>Einen Genehmigungsschritt in einem Workflow genehmigen
 
 Verwenden Sie das folgende Verfahren, um die Eigenschaften des Genehmigungsprozesses zu konfigurieren.
 
-Um einen Genehmigungsprozess, im Workflow-Editor zu konfigurieren, klicken auf das Genehmigungselement mit der rechten Maustaste und klicken dann ** Eigenschaften ** ** Eigenschaften ** um das Formular zu öffnen.
+Klicken Sie zum Konfigurieren eines Genehmigungsprozesses im Workflow-Editor mit der rechten Maustaste auf das Genehmigungselement, und klicken Sie dann auf **Eigenschaften**, um das Formular  **Eigenschaftens** zu öffnen.
 Benennen des Genehmigungsprozesses
 -------------------------
 
@@ -40,7 +40,7 @@ Gehen Sie folgendermaßen vor, um einen Namen für den Genehmigungsprozess einzu
 Sie können festlegen, dass eine automatische Aktivität für das Dokument ausgeführt wird, wenn bestimmte Bedingungen erfüllt sind. So können z. B. Spesenabrechnungen mit einem Gesamtbetrag unter 100 Euro automatisch genehmigt werden. Gehen Sie folgendermaßen vor, um anzugeben, wann das Dokument automatisch bearbeitet wird.
 1.  Klicken Sie im linken Bereich auf **Automatische Aktivitäten**.
 2.  Aktivieren Sie dieses Kontrollkästchen **Automatische Aktivitäten aktivieren**.
-3.  Click **Add condition**.
+3.  Klicken Sie auf **Bedingung hinzufügen**.
 4.  Geben Sie eine Bedingung ein.
 5.  Geben Sie ggf. zusätzliche Bedingungen ein.
 6.  Führen Sie folgende Schritte aus, um die korrekte Konfiguration der eingegebenen Bedingungen zu überprüfen:
@@ -71,7 +71,7 @@ Sie können Benachrichtigungen an Personen senden, wenn ein Dokument genehmigt, 
     4.  Klicken Sie auf **Einfügen**.
 
 7.  Klicken Sie auf **Übersetzungen**, um Übersetzungen der Benachrichtigung hinzuzufügen. Führen Sie im angezeigten Formular die folgenden Schritte aus:
-    1.  Click **Add**.
+    1.  Klicken Sie auf **Hinzufügen**.
     2.  Wählen Sie in der angezeigten Liste die Sprache aus, in der Sie den Text eingeben.
     3.  Geben Sie den Text im Feld **Übersetzter Text** ein.
     4.  Fügen Sie zum Personalisieren des Texts Platzhalter ein.
@@ -112,11 +112,11 @@ Sie können Benachrichtigungen an Personen senden, wenn ein Dokument genehmigt, 
     </ol></td>
     </tr>
     <tr class="odd">
-    <td><strong>User</strong></td>
-    <td>Bestimmtes Microsoft Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td><strong>Benutzer</strong></td>
+    <td>Bestimmte Benutzer von Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li><strong>Verfügbare Benutzer</strong>: Liste umfasst alle Microsoft Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste <strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Microsoft Dynamics 365 for Operations. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

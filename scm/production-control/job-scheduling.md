@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="job-scheduling"></a>Feinterminierung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zur Einzelvorgangsterminierung, die ein ausführlicheres Formular der Planung der Grobterminierung ist. Sie können die Feinterminierung verwenden, um Einzelvorgänge oder Bestellungen zu planen und die Fertigungsumgebung zu steuern.
 
 Sie können die Feinterminierung verwenden, um Einzelvorgänge oder Bestellungen zu planen und die Fertigungsumgebung zu steuern. Bei der Feinterminierung werden die einzelnen Arbeitsgänge in individuelle Einzelaufgaben oder ‑vorgänge aufgeteilt. Diese Einzelvorgänge werden dann den betrieblichen Ressourcen zugewiesen, die sie ausführen. Die Feinterminierung ermöglicht Ihnen zudem, alle Einzelvorgänge zu synchronisieren, auf die beim ausgewählten Einzelvorgang verwiesen wird. Sie können ein Startdatum sowie eine Startuhrzeit oder ein Enddatum und eine Enduhrzeit für den Einzelvorgang angeben und führen dann die Planung aus. Abhängig von der Planungsrichtung, kann der Start- oder Endzeitpunkt angegeben werden. Diese Funktion ist beispielsweise hilfreich, wenn ein Einzelvorgang nicht auf mehreren Maschinen gleichzeitig ausgeführt werden kann, oder wenn Sie den Einzelvorgang optimieren möchten, der für jede Ressource ausgeführt wird.
@@ -73,5 +76,7 @@ Ressourcen werden über die Feinterminierung Einzelvorgängen zugewiesen. Sie k�
 
 ## <a name="resource-efficiency"></a>Ressourceneffizienz
 Bei der Feinterminierung werden die für die Ressourcen angegebenen Effizienzgrade berücksichtigt. Mithilfe des Effizienzgrads wird die für eine Ressource reservierte Zeit entweder verringert oder erhöht. Dies wirkt sich zugleich entsprechend auf die Durchlaufzeit aus. Die folgende Formel wird für die Berechnung verwendet: Terminierungszeit = Zeit × 100 ÷ Effizienzgrad. In dieser Formel umfasst *Zeit* sowohl die Fertigungszeit als auch die Rüstzeit.
+
+
 
 

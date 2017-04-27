@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="post-with-derived-books"></a>Buchen mit abgeleiteten Büchern
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt, wie Sie die abgeleiteten Bücher verwenden.
 
 Beim Buchen einer Transaktion für ein Buch, das abgeleitete Bücher enthält, werden die Transaktionen für das abgeleitete Buch automatisch aus Erfassungen, Bestellungen oder Freitextrechnungen gebucht. Wenn Sie die primären Buchtransaktionen in der Anlagenerfassung vorbereiten, können Sie die Beträge der abgeleiteten Buchungen anzeigen und ändern, bevor diese gebucht werden.
@@ -49,11 +52,13 @@ Nachfolgend wird beschrieben, wie Anschaffungsbuchungen mit der Funktion für ab
 
 Das Buch kann nun bestimmten Anlagen zugeordnet werden. 
 
-Sollte eine Anschaffung für eine Anlage mit Buch WM 1 gebucht wird, wird diese Anschaffung nicht nur für WM 1, sondern auch im abgeleiteten Abschreibungsbuch WM 2 gebucht. Der Status beider einbezogen wird aktualisiert, um sie zu öffnen.
+Wenn für eine Anlage mit Wertmodell WM 1 eine Anschaffung gebucht wird, wird diese Anschaffung nicht nur für WM 1, sondern auch im abgeleiteten Abschreibungsbuch WM 2 gebucht. Der Status beider Anlagenwertbücher wird auf Offen aktualisiert.
 
 > [!NOTE]                                                                                                         
 > Wenn Sie nicht mit abgeleiteten Abschreibungsbüchern arbeiten, müssen Sie die Anschaffung der Anlage sowohl für Buch WM 1 als auch für Abschreibungsbuch WM 2 buchen.
 
-Weitere Informationen finden Sie abgeleitete Bücher [] (derived-books.md)
+Weitere Informationen finden Sie unter [Abgeleitete Bücher](derived-books.md).
+
+
 
 

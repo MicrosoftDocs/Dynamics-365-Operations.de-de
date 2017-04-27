@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
 
+[!include[banner](../includes/banner.md)]
+
+
 Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Operations automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess.  
 
 <a name="import-an-electronic-bank-statement"></a>Import eines elektronischen Bankauszugs
@@ -74,7 +77,7 @@ Es gibt drei Möglichkeiten zum Abgleich oder zur Abstimmung von Bankauszugsbuch
 -   Zuordnen der Transaktionen mit einer Rückbuchungsbankauszugsbuchung.
 -   Markieren Sie die Transaktionen als **Neu**, sodass sie später als Bankbuchung in Dynamics 365 for Operations gebucht werden können.
 
-Um Buchungen manuell abgeglichen werden, wählen Sie die Buchungen im Bankauszugsbuchungen ** ** Raster, und die entsprechenden Einträge in Arbeitsgangsbankbuchungen ** ** Raster aus und klicken dann ** Übereinstimmung **. Die ausgewählten Buchungen werden von den oberen Rastern für nicht zugeordnete Buchungen in die unteren Raster für zugeordnete Buchungen verschoben. Außerdem werden die Gesamtbeträge für zugeordnete und nicht zugeordnete Buchungen aktualisiert. Sie können Buchungen 1:1, 1:n und n:n zuordnen. Abgleiche müssen den Regeln für zulässigen Datumsabweichungen und Buchungstypen entsprechen. Diese Regeln werden auf der Seite **Bargeld- und Bankverwaltungsparameter** eingerichtet.
+Um manuell Transaktionen zuzuordnen, wählen Sie die Transaktionen im Raster **Bankauszugbuchungen** aus, wählen Sie die entsprechenden Buchungen im Raster **Operations-Bankbuchungen** aus, und klicken Sie dann auf **Zuordnen**. Die ausgewählten Buchungen werden von den oberen Rastern für nicht zugeordnete Buchungen in die unteren Raster für zugeordnete Buchungen verschoben. Außerdem werden die Gesamtbeträge für zugeordnete und nicht zugeordnete Buchungen aktualisiert. Sie können Buchungen 1:1, 1:n und n:n zuordnen. Abgleiche müssen den Regeln für zulässigen Datumsabweichungen und Buchungstypen entsprechen. Diese Regeln werden auf der Seite **Bargeld- und Bankverwaltungsparameter** eingerichtet.
 
 Bei der Abstimmung können Centdifferenzen auftreten. Sie können eine einzelne Bankauszugsbuchung und eine einzelne Operations-Bankbuchung zuordnen, die Centdifferenzen aufweisen, wenn diese Centdifferenzen innerhalb der über das Feld **Zulässige Centdifferenz** des Bankkontos definierten Toleranz liegen. Der Betrag wird im Feld **Korrekturbetrag** auf der abgeglichenen Operations-Bankbuchung angezeigt. Wenn die Bankabstimmung als abgestimmt markiert ist, werden Korrekturen mithilfe des im zugeordneten Bankbchungstyps definierten Hauptkontos automatisch gebucht. Korrekturen werden für die Dokumenttypen **Scheck** und **Einzahlung** nicht unterstützt. 
 
@@ -90,5 +93,7 @@ Nachdem alle Auszugspositionen verarbeitet wurden, sollten Sie das Bankabstimmun
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Buchen neuer Transaktionen, die der Abstimmung zugeordnet sind
 Bankauszugsbuchungen, die Sie auf dem Abstimmungsarbeitsblatt als **Neu** gekennzeichnet haben, werden über die Seite **Bankauszug** gebucht. Auf der Seite **Bankauszug** wählen Sie Auszugskennung, um die Abstimmungsdetails anzuzeigen. Im **Buchhaltung**-Menü können Sie die Optionen **Verteilung anzeigen** und **Buchung anzeigen** nutzen, um die Details hinter den neuen Transaktionen und die zugeordneten Hauptbucheinträge anzuzeigen. Wählen Sie die Option **Buchen**, um die Bankauszugspositionen zu buchen, die im Hauptbuch als **Neu** markiert sind. Beachten Sie, dass die Buchung nur einmal pro Bankauszug durchgeführt werden kann.
+
+
 
 

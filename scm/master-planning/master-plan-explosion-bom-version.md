@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="explosion-of-a-bom-version"></a>Auflösung einer Stücklistenversion
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben ein, das Produktprogrammplanungsszenario Auflösung einer Stückliste (BOM)- Version betrifft.
 
 Eine Bedarfsauflösung einer Stücklistenversion erstellt einen Bedarf für jeden Stücklistenpositionsartikel an einem bestimmten Standort (und ggf. in einem bestimmten Lager). In einer standortspezifischen Stückliste kann ein bestimmtes Lager für jede Stücklistenposition definiert werden. Zudem bestimmen die Dimensionseinstellungen des Artikels für jede Stücklistenposition, ob das Lager erforderlich ist. Der resultierende Bedarf für jeden Stücklistenpositionsartikel wird dann Ausgangspunkt für weitere Bedarfsauflösungen. Für dieses Produktprogrammplanungsszenario müssen die folgenden Bedingungen erfüllt sein:
@@ -41,8 +44,10 @@ In der folgenden Illustration ist der Ablauf der Bedarfsauflösung für die Prod
 <a name="see-also"></a>Siehe auch
 --------
 
-[Produktprogrammplanungslauf - Ermittlung der Stücklistenversion master-plan-bom-version-determined.md] ()
+[Produktprogrammplanungslauf - Ermittlung der Stücklistenversion](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Produktprogrammplanung und Funktion für mehrere Standorte](master-plan-multisite-functionality.md)
+
+
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-overview"></a>Übersicht Transportverwaltungsaufgaben
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieses Thema enthält eine Übersicht der Transportverwaltungsfunktionen in Microsoft Dynamics 365 for Operations.
 
 Mit der Transportverwaltung können Sie den Transport Ihres Unternehmens verwalten und Kreditor- und Routing-Lösungen für ein- und ausgehende Aufträge identifizieren. So können Sie beispielsweise die schnellste Route oder den günstigsten Satz für eine Lieferung identifizieren. In der folgenden Tabelle werden die wichtigsten Szenarien für die Nutzung der Transportverwaltung in Microsoft Dynamics 365 for Operations beschrieben.
@@ -67,19 +70,21 @@ Mit der Transportverwaltung können Sie den Transport Ihres Unternehmens verwalt
 ## <a name="planning-transportation-in-dynamics-365-for-operations"></a>Transportplanung in Dynamics 365 for Operations
 In der Transportverwaltung kann die Transportplanung entweder auf Aufträgen oder auf Lieferungen basieren, die auf Basis dieser Aufträge erstellt werden. Die Lieferungen sind immer irgendwann vorhanden. Sie sind jedoch nicht zur Transportplanung erforderlich. Umlagerungsaufträge sind Teil des ausgehenden Szenarios und können zusammen mit Aufträgen geplant werden. 
 
-![Auslastungszeichnung](./media/Load-drawing1-1024x477.jpg)
+![Auslastungabbildung](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Eingehender Transport
-Wenn von Artikeln von einem Kreditor sowie auf die Artikel Ihrem Lagerort geliefert werden sollen, Sie müssen den Transport der Artikel angeordnet werden sollen. Sie können Dynamics 365 verwenden, um Arbeitsgänge des Transport sowie der Empfangs- der eingehenden Auslastung planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung des Transports einer eingehenen Auslastung. 
+Wenn Sie Artikel von einem Kreditor zur Lieferung an Ihren Lagerort bestellen, möchten Sie den Transport der Artikel möglicherweise selbst organisieren. Sie können Dynamics 365 for Operations nutzen, um den Transport und den Empfang einer eingehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung des Transports einer eingehenen Auslastung. 
 
 ![Geschäftsprozessfluss für den Transport eingehender Auslastungen](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Ausgehender Transport
 Sie können eine ausgehende Ladung planen und verarbeiten, um bestimmte Artikel aus dem Lagerort eines Unternehmens an einen Debitor zu versenden. Sie können Dynamics 365 for Operations nutzen, um den Transport und den Versand einer ausgehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung und Verarbeitung von ausgehenden Ladungen für den Versand. 
 
-![Planung und ausgehende Verarbeitung in](./media/Planningandprocessingoutboundloads.jpg)
+![Planung und Verarbeitung von ausgehenden Ladungen](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Ladungserstellung
 Dynamics 365 for Operations enthält eine Ladungserstellungsstrategie mit dem Namen "Volumenbasierte Ladungserstellungsstrategie". Mit dieser Strategie können Sie die Höchstwerte verwenden, die für Höhe und Gewicht in der Ladungsvorlage angegeben sind, oder die Einstellungen überschreiben, indem sie neuen Werte eingeben. Um diese Strategie zu verwenden, wählen Sie sie im Feld **Ladungserstellungsstrategie** im Inforegister **Einstellungen** auf der Seite **Ladungserstellungsworkbench** aus. Darüber hinaus können Sie eigene Ladungserstellungsstrategien hinzufügen, indem Sie eine neue Klasse in der Entwicklungsumgebung erstellen.
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-agreements"></a>Rahmenbestellungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel gibt Informationen zu Kaufverträge. Ein Kaufvertrag ist ein Vertrag, der eine Organisation bindet, eine angegebene Menge oder einen Betrag zu kaufen, indem sie mehrere Bestellungen tätigt. Für diese Zusage erhält der Käufer Sonderpreise und Rabatte. 
 
 Kaufverträge können für eine bestimmte Menge eines Produkts, einen bestimmten Währungsbetrag eines Produkts oder einen bestimmten Währungsbetrag der Produkte in einer Beschaffungskategorie gelten. Die Preise und Rabatte des Kaufvertrags setzen alle Preise und Rabatte außer Kraft, die in anderen ggf. vorhandenen Handelsvereinbarungen angegeben sind.  
@@ -70,7 +73,7 @@ Im **Vereinbarung** Bereich werden die Gesamtmenge oder den Gesamtbetrag angezei
 Sie können auf die Bestellpositionen und Rechnungspositionen zugreifen, die zur Erfüllungsberechnung beitragen, indem Sie die Aktivität in **Zugehörige Informationen** für die Positionen oder im Kopf eines Kaufvertrags auswählen.
 
 ## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Bestätigungen sowie Versionshistorie für Kaufverträge
-Wenn Sie einen Kaufvertrag bestätigen, wird die aktuelle Version des Kauftrags in einer Historientabelle gespeichert. Wenn Sie den Kaufvertrag ändern, können Sie ihn erneut bestätigen, um eine andere Version des Kaufvertrags in der Historie zu speichern. Wenn keinerlei Rahmenbestellung bestätigen, können Sie sie trotzdem verwenden, um PO zu erstellen. Allerdings werden die Informationen für die Rahmenbestellung nicht gespeichert. Sie können alle Versionen der Vereinbarung in der Vorschau anzeigen oder drucken. Sie können die Überarbeitungen dann an den Kreditor weitergeben, um sie genehmigen zu lassen.
+Wenn Sie einen Kaufvertrag bestätigen, wird die aktuelle Version des Kauftrags in einer Historientabelle gespeichert. Wenn Sie den Kaufvertrag ändern, können Sie ihn erneut bestätigen, um eine andere Version des Kaufvertrags in der Historie zu speichern. Wenn Sie einen Verkaufvertrag nicht bestätigen, können Sie ihn trotzdem zum Erstellen von Aufträgen verwendet. Allerdings werden Informationen für den Kaufvertrag nicht gespeichert. Sie können alle Versionen der Vereinbarung in der Vorschau anzeigen oder drucken. Sie können die Überarbeitungen dann an den Kreditor weitergeben, um sie genehmigen zu lassen.
 
 ## <a name="applying-purchase-agreements-in-the-ordering-process"></a>Anwenden on Kaufverträgen im Bestellungsprozess
 Wenn Sie eine Bestellung erstellen, können Sie einen Kaufvertrag für sie übernehmen. Informationen aus den Bedingungen für die Vereinbarung, wie die Zahlungsbedingungen, Lieferbedingungen und Lieferadresse, werden dann in den Kopf der Bestellung kopiert. Wenn die Bestellung eine oder mehrere Auftragspositionen für Produkte und Kategorien enthält, die im Kaufvertrag angegeben sind, werden die Preise und Rabatte aus dem Kaufvertrag für diese Positionen verwendet. Der Betrag oder die Menge in der Auftragsposition trägt zur Erfüllung der Zusage im Kaufvertrag bei. Die gleiche Bestellung kann sowohl Positionen enthalten, die mit keinem Kaufvertrag verknüpft sind, als auch Positionen, für die eine Zusage in einem Kaufvertrag besteht.  
@@ -91,8 +94,10 @@ Sie können Finanzdimensionen in Dokumentüberschriften oder einzelne Positionen
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen einer Rahmenbestellung (Aufgabenleitfaden)]https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/) "
+[Unteraufgabe: Erstellen Sie einen neuen Kaufvertrag (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
-[Erstellen eines Freigabeauftrags für Einkauf einer Rahmenbestellung (Aufgabenleitfaden)]https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/) "
+[Erstellen eines Freigabeauftrags für Einkauf aus einem Kaufvertrag (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+
+
 
 

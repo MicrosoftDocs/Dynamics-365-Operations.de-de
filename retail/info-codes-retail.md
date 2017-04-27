@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="info-codes"></a>Infocodes
 
+[!include[banner](includes/banner.md)]
+
+
 Dieser Artikel enthält einen Überblick über Infocodes, Infocodegruppen und wie sie verwendet werden.
 
 Infocodes bieten eine Methode, um Daten an einem Point-of-Sale (POS) Register zu erfassen. Mithilfe von Infocodes können Sie das Kassenpersonal auffordern, Informationen zu den verschiedenen Aktionen am POS, wie Artikelverkauf, Artikelrücklieferungen oder Auswählen von Debitoren einzugeben. Kassierer können Eingabe aus einer Liste auswählen oder als Code, Nummer, Datum oder Text eingeben. Infocodes können vordefinierten Shopaktionen, Einzelhandelsartikeln, Zahlungsmethoden, Debitoren oder bestimmten Point-of-Sale-Aktivitäten zugewiesen werden. Folgende Aufgaben können mit Infocodes ausgeführt werden:
@@ -38,7 +41,7 @@ Infocodes bieten eine Methode, um Daten an einem Point-of-Sale (POS) Register zu
 -   Den Kassierer auffordern, einen Wert einzugeben oder aus einer Liste von Untercodes auszuwählen, wenn er die Registerkassenlade öffnet, ohne einen Verkaufsarbeitsgang auszuführen.
 
 ## <a name="info-codes-group-in-retail-and-commerce"></a>Infocodegruppe im Einzelhandel und im Handel
-In Dynamics 365 - Arbeitsgänge für Einzelhandel, Infocodes können Sie Gruppen erstellen. Infocodegruppen fügen Flexibilität hinzu, indem Sie Ihnen ermöglichen, weniger Infocodes zu definieren und sie dann auf vielseitigere Arten zu verwenden. Infocodes können wie im Folgenden beschrieben verwendet werden:
+In Dynamics 365 for Operations - Retail Infocodes können Sie Gruppen erstellen. Infocodegruppen fügen Flexibilität hinzu, indem Sie Ihnen ermöglichen, weniger Infocodes zu definieren und sie dann auf vielseitigere Arten zu verwenden. Infocodes können wie im Folgenden beschrieben verwendet werden:
 -   Definieren Sie weniger Infocodes und verwenden Sie diese leicht erneut. Infocodes, die in den Infocodegruppen enthalten sind, besitzen keine vordefinierten Abhängigkeiten von anderen Infocodes. Sie können den gleichen Infocode in mehreren Infocodegruppen einfügen und dann Priorisierung verwenden, um die gleichen Infocodes in der Reihenfolge darzustellen, der in einem bestimmten Fall sinnvoll ist.
 -   Verknüpfen Sie Infocodes so mit anderen Infocodes oder Infocodegruppen, um Informationen über ein Produkt oder eine Transaktion zu sammeln, ohne einen separaten Infocode oder verknüpften Infocode für jedes Szenario zu definieren.
 
@@ -47,6 +50,8 @@ In Dynamics 365 - Arbeitsgänge für Einzelhandel, Infocodes können Sie Gruppen
 
  
 -
+
+
 
 
 

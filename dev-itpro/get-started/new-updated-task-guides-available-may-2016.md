@@ -1,6 +1,6 @@
 ---
-title: "Neue oder aktualisierte Aufgabenleitfäden () Mai 2016"
-description: "Dieser Artikel werden die neuen oder aktualisierten Aufgabenleitfäden auf, aufgelistet, die der Bibliothek vereinheitlichten Microsoft (Mai 2016 - alle Sprachen&quot; APQC für Microsoft Dynamics AX freigegeben wurden. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht."
+title: "Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)"
+description: "Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (Mai 2016 -- alle Sprachen) für Microsoft Dynamics AX auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-may-2016"></a>Neue oder aktualisierte Aufgabenleitfäden () Mai 2016
+# <a name="new-or-updated-task-guides-may-2016"></a>Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)
 
-Dieser Artikel werden die neuen oder aktualisierten Aufgabenleitfäden auf, aufgelistet, die der Bibliothek vereinheitlichten Microsoft (Mai 2016 - alle Sprachen" APQC für Microsoft Dynamics AX freigegeben wurden. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht. 
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()-Im Aufgabenleitfäden (Mai 2016 - alle Sprachen" APQC vereinheitlichten Bibliothek für Microsoft Dynamics AX
+
+Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (Mai 2016 -- alle Sprachen) für Microsoft Dynamics AX auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht. 
+
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Mai 2016 - alle Sprachen)
 ------------------------------------------------------------------------------------------------
 
-Die (Mai 2016) APQC vereinheitlichte Bibliothek enthält, die Aufgabenleitfäden, die bewirken werden, um Unterstützung beim Upgrade Microsoft Dynamics AX im Mai 2016 und der Version Microsoft Dynamics AX verwendet werden. im Februar 2016 Lokalisierte Versionen der Aufgabenleitfäden, die im Formular (Februar 2016) APQC vereinheitlichten Bibliothek freigegeben wurden, sind in diesem Bibliothek verfügbar. Weitere Informationen dazu, wie im Hilfesystem an eine Aufgabenleitfadenbibliothek, finden Sie fangen Sie mithilfe herstellt []() an help-overview.md. ** Hinweis: ** Ein Stern (**\***" neben dem Titel einer Geschäftsprozessmodellierer (BPM)-, Position gibt an, dass der Aufgabenleitfaden für diesen Geschäftsprozess für Aktualisierung Dynamics AX im Mai 2016 erstellt wurde und nicht im frühere Versionen von Microsoft Dynamics AX.
+Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden zur Aktualisierung der Hilfe von Microsoft Dynamics AX können 2016 und Microsoft Dynamics AX Februar 2016. Die in der APQC Unified-Bibliothek aus Februar 2016 veröffentlichten Aufgabenleitfäden sind in dieser Bibliothek enthalten. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md). **Hinweis: **Das Sternchen (**\***) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass die Aufgabe für diesen Geschäftsprozess für Dynamics AX 2016 (Mai 2016) erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
 
 ### <a name="countryregion-functionality"></a>Land/Region-Funktion
 
@@ -65,7 +68,7 @@ Die (Mai 2016) APQC vereinheitlichte Bibliothek enthält, die Aufgabenleitfäden
 | ER Entwerfen einer Konfiguration für das Erstellen von Berichten im OPENXML-Format         | Global         |
 | ER Generieren Sie elektronische Dokumente für Zahlungen mithilfe einer Formatkonfiguration | Global         |
 | ER Import einer Konfiguration von Lifecycle Services                          | Global         |
-| **\***ER Select service provider                                           | Global         |
+| **\***ER Dienstanbieter auswählen                                           | Global         |
 | ER Upgrade Ihres Formats durch Verwendung einer neuen Basisversion dieses Formats      | Global         |
 | ER Upload einer Konfiguration nach Lifecycle Services                          | Global         |
 
@@ -126,7 +129,7 @@ Die (Mai 2016) APQC vereinheitlichte Bibliothek enthält, die Aufgabenleitfäden
 | BPM-Zeile                                                 | Land/Region |
 |----------------------------------------------------------|----------------|
 | Neues Produkt erstellen                                     | Global         |
-| Erstellen Sie die. \ \ eine dimensionsbasierte Konfigurationen Finanzdimensionen                    | Global         |
+| ..\financial-dimensions\dimension-based configurations erstellen                    | Global         |
 | Erstellen Sie vordefinierte Produktvarianten                       | Global         |
 | Verkaufspreisauswahlkriterien erstellen                    | Global         |
 | Bestellungen für konfigurierbare Produkte eingeben                   | Global         |
@@ -176,22 +179,24 @@ Die (Mai 2016) APQC vereinheitlichte Bibliothek enthält, die Aufgabenleitfäden
 | BPM-Zeile                                                            | Land/Region |
 |---------------------------------------------------------------------|----------------|
 | Konfigurieren Sie Wellenverarbeitung                                           | Global         |
-| **\*** Bericht, beispielsweise zu einem Speicherort der NichtLizenz gesteuerten beendet Platte | Global         |
+| **\***Melden Sie einen nicht kennzeichengesteuerte Lagerplatz als beendet | Global         |
 | Richten Sie einen Min-Max-Auffüllungsprozess ein                              | Global         |
 | Containerisierung einrichten                                             | Global         |
 | Richten Sie manuelle Verpackung ein                                               | Global         |
 | Richten Sie Transporteinschränkungen für einen Artikel ein                       | Global         |
-| **\***Set up warehouse work policies                                | Global         |
+| **\***Richten Sie Lagerortarbeitsrichtlinien ein                                | Global         |
 
 
 
 <a name="see-also"></a>Siehe auch
 --------
 
-Neue Aufgabenleitfäden ([]) Februar 2016(new-task-guides-available-february-2016.md)
+[Neuer Aufgabenleitfaden verfügbar (Februar 2016)](new-task-guides-available-february-2016.md)
 
-[Neue oder aktualisierte Aufgabenleitfäden (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
+
+
 
 

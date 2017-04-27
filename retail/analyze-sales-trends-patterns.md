@@ -1,6 +1,6 @@
 ---
 title: Verkaufstrends und -muster analysieren
-description: "Sie können in der -Muster Überwachen von Absatzentwicklungen und in im Microsoft Dynamics 365 für Arbeitsgänge studieren - Einzelhandel."
+description: "Sie können die Verkaufstrends und -muster mit Microsoft Dynamics 365 for Operations - Retail in Echtzeit überwachen."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -27,17 +27,22 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="analyze-sales-trends-and-patterns"></a>Verkaufstrends und -muster analysieren
 
-Sie können in der -Muster Überwachen von Absatzentwicklungen und in im Microsoft Dynamics 365 für Arbeitsgänge studieren - Einzelhandel.
+[!include[banner](includes/banner.md)]
 
-Im Rahmen Dynamics 365 für Arbeitsgänge, können Benutzer -Muster und Überwachen von Absatzentwicklungen in Echtzeit zu der verschiedenen Ebenen der Organisationshierarchie über einen Zeitraum von Jahren studieren, mithilfe des vordefinierten ** Kanalvertrieb nach Jahr ** Bericht verwenden. Sie können den Bericht über die folgenden Orte öffnen:
 
--   ** Ladengeschäftsverwaltung ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Kanäle ** ** &gt; Ladengeschäftsverwaltung ** ** Berichte &gt; ** ** Kanalvertriebe &gt; nach Jahrbericht **
--   ** Ladengeschäftsfinanzverhältnisse ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Kanäle ** ** &gt; Ladengeschäftsfinanzverhältnisse ** ** Berichte &gt; ** ** Kanalvertrieb &gt; nach Jahrbericht **
--   ** Abfragen und Berichte ** Abschnitt Dynamics 365 für Arbeitsgänge &gt; ** Einzelhandel und Handel ** &gt; ** Abfragen und Berichte ** &gt; ** Umsatzberichte ** &gt; ** Kanalvertriebe nach Jahrbericht **
+Sie können die Verkaufstrends und -muster mit Microsoft Dynamics 365 for Operations - Retail in Echtzeit überwachen.
+
+In Microsoft Dynamics 365 for Operations können Benutzer die Verkaufstrends und -muster in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für ausgewählte Jahre überprüfen, indem sie den vordefinierten Bericht **Bericht 'Kanal Umsatz nach Jahr'** an einer der folgenden Stellen öffnen: Sie können den Bericht über die folgenden Orte öffnen:
+
+-   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Kanalverkäufe nach Jahr**
+-   **Finanzdaten für den Einzelhandelsshop** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht Kanalverkäufe nach Jahr**
+-   **Abfragen und Berichte** Abschnitt Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Kanalverkäfue nach Jahr**
 
 Benutzer können die Verkaufstrends und -muster pro Stunde in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für eine ausgewählte Periode überprüfen, indem sie den vordefinierten Bericht **Bericht 'Kanal Umsatz nach Stunde'** an einer der folgenden Stellen öffnen: Sie können den Bericht über die folgenden Orte öffnen:
 
--   ** Ladengeschäftsverwaltung ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Kanäle ** ** &gt; Ladengeschäftsverwaltung ** ** Berichte &gt; ** ** Kanalvertrieb &gt; nach Stundenbericht **
--   ** Ladengeschäftsfinanzverhältnisse ** Arbeitsbereich Dynamics 365 für Arbeitsgänge ** &gt; Einzelhandel und Handel ** ** &gt; Kanäle ** ** &gt; Ladengeschäftsfinanzverhältnisse ** ** Berichte &gt; ** ** Kanalvertriebe &gt; nach Stundenbericht **
--   ** Abfragen und Berichte ** Abschnitt Dynamics 365 für Arbeitsgänge &gt; ** Einzelhandel und Handel ** &gt; ** Abfragen und Berichte ** &gt; ** Umsatzberichte ** &gt; ** Kanalvertrieb nach Stundenbericht **
+-   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Kanalverkäufe nach Stunde**
+-   **Finanzdaten für den Einzelhandelsshop** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht Kanalverkäufe nach Stunde**
+-   **Abfragen und Berichte** Abschnitt Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Kanalverkäfue nach Stunde**
+
+
 

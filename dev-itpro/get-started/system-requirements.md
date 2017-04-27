@@ -1,6 +1,6 @@
 ---
 title: Systemanforderungen
-description: "Dieses Thema werden die Systemanforderungen für die aktuelle Version von Microsoft Dynamics 365 für Arbeitsgänge auf."
+description: "In diesem Thema werden die Systemanforderungen für die aktuelle Version von Microsoft Dynamics 365 for Operations aufgeführt."
 author: sericks007
 manager: AnnBe
 ms.date: 2017-04-04
@@ -26,102 +26,102 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-requirements"></a>Systemanforderungen
 
-Dieses Thema werden die Systemanforderungen für die aktuelle Version von Microsoft Dynamics 365 für Arbeitsgänge auf.
+In diesem Thema werden die Systemanforderungen für die aktuelle Version von Microsoft Dynamics 365 for Operations aufgeführt.
 
 <a name="supported-web-browsers"></a>Unterstützte Webbrowser
 ----------------------
 
-Das Microsoft Dynamics 365 für Arbeitsgangswebanwendung kann in folgende Webbrowser ausgeführt werden, die für die angegebenen Betriebssysteme ausgeführt werden:
+Die Microsoft Dynamics 365 for Operations-Webanwendung kann in den folgenden Webbrowsern ausgeführt werden, die auf den angegebenen Betriebssysteme ausgeführt werden:
 
--   Microsoft umranden spät öffentlich - verfügbare (Version) unter Windows 10
+-   Microsoft Edge (letzte öffentlich verfügbare Version) unter Windows 10
 -   Internet Explorer 11 unter Windows 10, Windows 8.1 oder Windows 7
--   Google Chrome (zu spät öffentlich - verfügbare Version) unter Windows 10 - 8,1 -, Windows, Windows, Windows 8 - 7 - oder- Google Nexus-10 Tablet
--   Apple Safari spät öffentlich - verfügbare (Version) auf Mac OS X 10,10 (Yosemite), 10,11 (EL Capitan) oder 10,12 (Sierra) oder APPLE-iPad
+-   Google Chrome (letzte öffentlich verfügbare Version) unter Windows 10, Windows 8.1, Windows 8, Windows 7 oder Google Nexus 10 Tablet
+-   Apple Safari (letzte öffentlich verfügbare Version) auf Mac OS X 10.10 (Yosemite), 10.11 (El Capitan), 10.12 (Sierra) oder Apple iPad
 
 Um die neueste Version für jeden Webbrowser zu suchen, wechseln Sie zur Website des Softwareherstellers. **Hinweise:**
 
--   Wenn Sie Bilder aufzuzeichnen die von der Aufgabenaufzeichnung und in den Microsoft Word-Dokumenten einzubeziehen generiert werden, muss eine Chrome-Erweiterung installierte haben. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
--   Der Workflow-Editor wird als ClickOnce-Bewerbung gestartet. Nur umranden und Microsoft Internet Explorers (auf einer unterstützten Version von Microsoft Windows Unterstützungs-ClickOnce-Bewerbungen). Die Workflow-Editor-ClickOnce-Bewerbung erforderlich kompatibles 64-Bit-Betriebssystem ein.
--   Der für Berichts-Designer Finanzberichterstellung wird als ClickOnce-Bewerbung gestartet. Sie müssen ein kompatibles 64-Bit-Betriebssystem. Wenn Sie Chrome verwenden, müssen Sie eine ClickOnce-Erweiterung einrichten, um den Berichts-Designer-Kunden herunterzuladen. Wenn Sie dem Chrome unbekannten Modus verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für unbekannten Modus aktiviert ist.
+-   Wenn Sie Bilder aufzuzeichnen, die über die Aufgabenaufzeichnung generiert wurden, und diese in Microsoft Word-Dokumente aufnehmen, müssen Sie eine Chrome-Erweiterung installiert haben. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
+-   Der Workflow-Editor wird als ClickOnce-Anwendung gestartet. Nur Microsoft Edge and Internet Explorer (auf einer unterstützten Microsoft Windows-Version) unterstützen ClickOnce-Anwendungen. Die Workflow-Editor-ClickOnce-Anwendung erfordert ein kompatibles 64-Bit-Betriebssystem.
+-   Der Berichts-Designer für Finanzberichterstellung wird als ClickOnce-Anwendung gestartet. Er erfordert ein kompatibles 64-Bit-Betriebssystem. Wenn Sie Chrome verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichtsdesigner-Client herunterzuladen. Wenn Sie Chrome im unbekannten Modus verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den unbekannten Modus aktiviert ist.
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Unterstützte Webbrowser für Retail Cloud POS
 
-Kleincloud POS für Dynamics 365 für Arbeitsgänge kann in folgende Webbrowser ausgeführt werden, die für die angegebenen Betriebssysteme ausgeführt werden:
+Retail Cloud POS für Dynamics 365 for Operations kann in den folgenden Webbrowsern ausgeführt werden, die auf den angegebenen Betriebssysteme ausgeführt werden:
 
--   Microsoft umranden spät öffentlich - verfügbare (Version) unter Windows 10
+-   Microsoft Edge (letzte öffentlich verfügbare Version) unter Windows 10
 -   Internet Explorer 11 unter Windows 10, Windows 8.1 oder Windows 7
--   Chrome (zu spät öffentlich - verfügbare Version) 10 unter Windows, Windows 8,1 oder Windows 7
+-   Chrome (letzte öffentlich verfügbare Version) unter Windows 10, Windows 8.1 oder Windows 7
 
 ## <a name="network-requirements"></a>Netzwerkanforderungen
--   Dynamics 365 für Arbeitsgänge ist für Wartezeit Netzwerke mit von weniger als 150 Millisekunden (ms) entwickelt. Dies ist die Wartezeit von einem Browserclienten auf Microsoft Dynamics Azure-Rechenzentrum, das 365 hostet für Arbeitsgänge. Es wird empfohlen, dass Sie Netzwerkwartezeit unter http://www.azurespeed.com < testen.>
--   Bandbreitenanforderungen für Dynamics 365 für Arbeitsgänge sind von dem Szenario ab. Die meisten typischen Szenarien benötigen einer Bandbreite von mehr als 50 Kilobytes pro Sekunde (KBit/s). Für Szenarien, die hohe Ladungsanforderungen haben, z oder Arbeitsbereiche Szenarien, die Ihr Anpassung umfassen, wird empfohlen Bandbreite mehr.
+-   Dynamics 365 for Operations wurde für Netzwerke mit eine Latenzzeit von weniger als 150 Millisekunden (ms) entwickelt. Dies ist die Latenzzeit von einem Browser-Client zum Microsoft Azure-Rechenzentrum, das Dynamics 365 for Operations hostet. Es wird empfohlen, dass Sie die Netzwerkwartezeit unter <http://www.azurespeed.com> testen.
+-   Bandbreitenanforderungen für Dynamics 365 for Operations sind vom Szenario abhängig. In den meisten Fällen wird eine Bandbreite von mehr als 50 Kilobytes pro Sekunde (kbps) benötigt. Bei hohen Nutzlastanforderungen, beispielsweise Arbeitsbereiche oder Szenarien mit umfangreichen Anpassungen, wird eine höhere Bandbreite empfohlen.
 
-Im Allgemeinen wird Dynamics 365 für Arbeitsgänge für das Internet finden. Die Anzahl von Roundtrips von einem Browserclienten dem Azure Rechenzentrum ist sehr klein, und die gesamte Hierbei wird zusammengefasst. ** Warnend: ** Berechnen Sie Bandbreitenanforderungen von einem Kundenlagerplatz nicht, indem Sie die Anzahl der Benutzer durch die Mindestbandbreitenanforderungen multiplizieren. Die Verwendung eines bestimmten Lagerplatzes gleichzeitige ist sehr schwierig zu berechnen. Für Debitoren, die über Bandbreitenanforderungen Planungsreihenfolge, verwenden Sie eine Vorschauversion von Microsoft Dynamics 365 für Arbeitsgänge.
+Im Allgemeinen ist Dynamics 365 for Operations für das Internet optimiert. Die Anzahl von Roundtrips von einem Browserclient zum Azure Rechenzentrum ist sehr klein, und die gesamte Nutzlast ist komprimiert. **Warnung:** Berechnen Sie Bandbreitenanforderungen von einem Clientstandort nicht, indem Sie die Anzahl der Benutzer mit den Mindestbandbreitenanforderungen multiplizieren. Die gleichzeitige Nutzung eines bestimmten Standorts ist schwierig zu berechnen. Kunden, die sich Gedanken machen über die Bandbreitenanforderungen, sollten eine Vorabversion von Dynamics 365 for Operations verwenden.
 
 ## <a name="net-framework-requirements"></a>.NET Framework-Anforderungen
-Dynamics 365 für Arbeitsgänge erfordert .NET Framework Version 4.6.2 für alle Klick-sobald Bewerbungen, wie der Dokumentroutingagent. Für Installationsanweisungen finden Sie [] (https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx) .NET Framework werden müssen.
+Dynamics 365 for Operations erfordert .NET Framework Version 4.6.2 für alle ClickOnce-Anwendungen, beispielsweise dem Dokumentweiterleitungsagenten. Installationsanweisungen erhalten Sie unter [Installieren von .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
-## <a name="supported-microsoft-office-applications"></a>Unterstützte Microsoft Office-Bewerbungen
--   Für die Microsoft Excel- und Word-Add-Ins ausführen möchten, müssen Sie Microsoft Office 2016 für Windows oder Mac haben, die eingerichtet wurden. Genauere Informationen zu Versionsanforderungen, finden Sie Office-Integrationsproblembehandlung [] (/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting ).
--   Um Dokumente anzuzeigen die vom Export in Excel erzeugt oder in Word-Funktionen exportieren, müssen Sie Microsoft Office 2007 oder später installiert haben.
+## <a name="supported-microsoft-office-applications"></a>Unterstützte Microsoft Office-Anwendungen
+-   Zum Ausführen von Microsoft Excel- und Word-Add-Ins muss Microsoft Office 2016 für Windows oder Mac installiert sein. Genauere Informationen zu Versionsanforderungen erhalten Sie unter [Office-Integration – Problembehebung](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Um Dokumente anzuzeigen, die über die Funktionen für einen Export nach Excel oder einen Export nach Word erzeugt wurden, muss Microsoft Office 2007 oder höher installiert sein.
 
-## <a name="retail-modern-pos-requirements"></a>Moderne POS-KleinAnforderungen
+## <a name="retail-modern-pos-requirements"></a>Retail Modern POS-Anforderungen
 ### <a name="supported-operating-systems"></a>Unterstützte Betriebssysteme
 
--   Modernes KleinPOS ist eine 32-Bit-Anwendung, doch es wird auf x86- und x64-Architekturen ausgeführt.
--   Modernes wird nur auf KleinPOS Zweigstelle Windows 10s Pro, Enterprises und Verwalten Enterprises langfristige (LTSB)- Editionen unterstützt.
+-   Retail Modern POS ist eine 32-Bit-Anwendung, die sowohl auf x86- als auch auf x64-Architekturen ausgeführt werden kann.
+-   Retail Modern POS wird von den Editionen Windows 10 Pro, Enterprise und Enterprise Long Term Servicing Branch (LTSB) unterstützt.
 
-### <a name="minimum-system-requirements"></a>Systemanforderungen
+### <a name="minimum-system-requirements"></a>Mindestsystemanforderungen
 
--   Die Höchst- unterstützte Lösung × 1280 1024.
--   Der Computer, modernes den KleinPOS ausgeführt wird, muss diese Anforderungen erfüllen:
-    -   Er muss mindestens einen Dual-Core-Prozessor haben, der an kein weniger als 2 Gigahertz (GHz) ausgeführt wird.
-    -   Er muss mindestens 3 Gigabytes (GB) von RAM haben.
-    -   Er muss Internetzugriff haben.
+-   Die unterstützte Mindestauflösung ist 1280 × 1024.
+-   Der Computer, auf dem Retail Modern POS ausgeführt wird, muss folgende Anforderungen erfüllen:
+    -   Er muss mindestens einen Dual-Core-Prozessor haben, der mit mindestens 2 Gigahertz (GHz) ausgeführt wird.
+    -   Er muss einen RAM von mindestens 3 Gigabytes (GB) haben.
+    -   Er muss einen Internetzugriff haben.
 
-## <a name="retail-hardware-station-requirements"></a>Kleinhardwarestationsanforderungen
+## <a name="retail-hardware-station-requirements"></a>Retail Hardware station-Anfoderungen
 ### <a name="supported-operating-systems"></a>Unterstützte Betriebssysteme
 
--   Kleinhardwarestation ist eine 32-Bit-Anwendung, diese werden jedoch auf x86- und x64-Architekturen ausgeführt.
--   Kleinhardwarestation wird auf folgende Betriebssysteme unterstützt:
-    -   Windows 7, Enterprise Professional und die wichtigsten Editionen ** Hinweis: ** Windows 7 wird unterstützt, wenn Internet Explorer 11 manuell im System eingerichtet ist.
-    -   Windows 8,1, Enterprise Professional Update 1 und Embedded Editionen
-    -   Editionen Windows 10s Pro, Enterprises und Enterprises LTSB
+-   Retail Hardware station ist eine 32-Bit-Anwendung, die sowohl auf x86- als auch auf x64-Architekturen ausgeführt werden kann.
+-   Retail Hardware station wird auf folgenden Betriebssystemen unterstützt:
+    -   Windows 7 Professional, Enterprise und Ultimate **Hinweis:** Windows 7 wird nur unterstützt, wenn der Internet Explorer 11 manuell auf dem System installiert ist.
+    -   Windows 8.1, Update 1 Professional, Enterprise und Embedded
+    -   Windows 10 Pro, Enterprise und Enterprise LTSB
 
-### <a name="minimum-system-requirements"></a>Systemanforderungen
+### <a name="minimum-system-requirements"></a>Mindestsystemanforderungen
 
-Der Computer muss alle Systemanforderungen für das Einrichten und Verwenden der folgenden Artikel entsprechen:
+Der Computer muss alle Systemanforderungen für das Einrichten und Verwenden der folgenden Elemente erfüllen:
 
 -   Internetinformationsdienste (IIS)
 -   Hardware von Drittanbietern
 
-## <a name="retail-store-scale-unit-requirements"></a>Ladengeschäfts-Maßeinheitsanforderungen
+## <a name="retail-store-scale-unit-requirements"></a>Retail Store Scale Unit-Anforderungen
 ### <a name="supported-operating-systems"></a>Unterstützte Betriebssysteme
 
--   Ladengeschäfts-Maßeinheit ist eine 32-Bit-Anwendung, diese werden jedoch auf x86- und x64-Architekturen ausgeführt.
--   Ladengeschäfts-Maßeinheit wird auf folgende Betriebssysteme unterstützt:
-    -   Windows 7, Enterprise Professional und Editionen entscheidende
-    -   Windows 8,1, Enterprise Professional Update 1 und Embedded Editionen
-    -   Editionen Windows 10s Pro, Enterprises und Enterprises LTSB
+-   Retail Store Scale Unit ist eine 32-Bit-Anwendung, die sowohl auf x86- als auch auf x64-Architekturen ausgeführt werden kann.
+-   Retail Store Scale Unit wird auf folgenden Betriebssystemen unterstützt:
+    -   Windows 7 Professional, Enterprise und Ultimate
+    -   Windows 8.1, Update 1 Professional, Enterprise und Embedded
+    -   Windows 10 Pro, Enterprise und Enterprise LTSB
 
-### <a name="minimum-system-requirements"></a>Systemanforderungen
+### <a name="minimum-system-requirements"></a>Mindestsystemanforderungen
 
--   4 GB RAM von
--   1.6 GHz-Spitze pro CPU-Geschwindigkeit Kernsatz (zwei Kerne sind die Mindestsystemanforderungen.)
--   Mindestens 10 GB von freiem Speicherplatz (die Kanaldatenbank kann einen großen Platz benötigt.)
+-   4 GB RAM
+-   1.6 GHz maximale CPU-Geschwindigkeit pro Kern (mindestens zwei Kerne erforderlich)
+-   Mindestens 10 GB freier Speicherplatz (die Kanaldatenbank benötigt viel Speicherplatz)
 
 ### <a name="recommended-system-requirements"></a>Empfohlene Systemanforderungen
 
--   6 GB RAM von
--   2.4 Anfang GHzs (nicht i7 oder) pro CPU-Geschwindigkeit Kernsatz (vier Kerne empfohlen werden.)
--   Mindestens 10 GB von freiem Speicherplatz (die Kanaldatenbank kann einen großen Platz benötigt.)
+-   6 GB RAM
+-   2.4 GHz i7 (oder vergleichbar) maximale CPU-Geschwindigkeit pro Kern (vier Kerne empfohlen)
+-   Mindestens 10 GB freier Speicherplatz (die Kanaldatenbank benötigt viel Speicherplatz)
 
-## <a name="requirements-for-development-on-local-vms"></a>Anforderungen für Entwicklung in lokaler Variable WM
-Weitere Informationen zu den Anforderungen für Entwicklung auf lokalen virtuellen Computern (VMs), finden Sie VM-Ausführen lokal [] (/dynamics365/operations/dev-itpro/dev-tools/access-instances #vm-that-is-running-in-premises).
+## <a name="requirements-for-development-on-local-vms"></a>Anforderungen für Entwicklung auf lokalen VMs
+Weitere Informationen zu den Anforderungen für die Entwicklung auf lokalen virtuellen Maschinen (VMs) finden Sie unter [Lokale VM-Ausführung](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erhalten einer Bewertungskopie von Microsoft Dynamics 365 für Arbeitsgänge ab]( /dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Evaluierungsversion von Dynamics 365 for Operations erhalten](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="merge-inventory-batches"></a>Lagerchargen zusammenführen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieses Thema enthält Informationen, wie zwei oder mehr Lagerchargen in einer zusammengeführte Charge konsolidiert werden. 
 
 Wenn Sie Chargen zusammenführen, können Berechnungen dabei helfen, die Merkmale und die Chargenattribute der zusammengeführten Charge zu optimieren. Nachdem Sie die Quellchargen ausgewählt haben, können Sie die zusammengeführte Charge prüfen und ändern, bevor Sie sie buchen. Sie können auch die Chargenzusammenführung in eine Lagererfassung zur Genehmigung übertragen. Der Bestand kann direkt aus der Lagererfassung reserviert oder gebucht werden. Wenn Sie eine zusammengeführte Charge buchen, wird der Bestand für die Quellchargen und die zusammengeführte Charge angepasst.
@@ -48,7 +51,7 @@ Ja, gibt es mehrere Dinge, die Sie einrichten müssen, bevor Sie die Zusammenfü
 <tbody>
 <tr class="odd">
 <td>Journale, Lager</td>
-<td>Sie müssen ein Journal erstellen, das standardmäßig verwendet wird, wenn Sie Chargenzusammenführungen in Bestandserfassungen buchen. Optional aber empfohlen: Sie können angeben, dass Reservierungen automatisch vorgenommen werden, wenn die Chargenzusammenführung in die Bestandserfassung übertragen wird. Andernfalls besteht ein Risiko, dass der verfügbare Bestand nach der Einrichtung und Buchung der Chargenzusammenführungsdetails geändert wird. Damit automatische Reservierungen für das Journal zu aktivieren, wählen Sie <strong>Automatisch</strong> im <strong><strong>Reservierung</strong></strong> Feld aus.</td>
+<td>Sie müssen ein Journal erstellen, das standardmäßig verwendet wird, wenn Sie Chargenzusammenführungen in Bestandserfassungen buchen. Optional aber empfohlen: Sie können angeben, dass Reservierungen automatisch vorgenommen werden, wenn die Chargenzusammenführung in die Bestandserfassung übertragen wird. Andernfalls besteht ein Risiko, dass der verfügbare Bestand nach der Einrichtung und Buchung der Chargenzusammenführungsdetails geändert wird. Um automatische Reservierungen für die Erfassung zu aktivieren, wählen Sie im Feld <strong><strong>Reservierung</strong> </strong>den Wert <strong>Automatisch</strong> aus.</td>
 </tr>
 <tr class="even">
 <td>Parameter für Lager- und Lagerortverwaltung</td>
@@ -134,9 +137,11 @@ Das Buchen geschieht auf zwei Arten, je nachdem, ob Sie einen Genehmigungsprozes
 -   **In Erfassung übertragen** - Überträgt die Chargenzusammenführungsdetails in eine neue Lagererfassung. Wenn Sie automatische Reservierungen eingerichtet haben, werden die Mengen in den Quellchargen reserviert. Die Details der Chargenzusammenführung können nicht geändert werden. Um die Chargenzusammenführung zu ändern, müssen Sie die Erfassung löschen. Die Erfassung kann als Aufgabe verwendet werden, die ein anderer Mitarbeiter später ausführen muss. Die Reservierung der Chargenmenge in der Erfassungsposition ist geschützt. Diese Zuteilung ermöglicht einem Qualitätsplaner oder einem Lagerortleiter, Aufgaben für seine Mitarbeiter erstellen.
 -   **Chargenzusammenführung buchen** - Direkte Buchung der Chargenzusammenführung. Diese Aktivität kann ausgeführt werden , nachdem die physische Zusammenführung erfolgt ist.
 
-Sie können die Bestandserfassung für die Chargenzusammenführung auf der Listenseite **Alle Chargenzusammenführungen** genehmigen. ** Auf Erfassung ** &gt; ** Beitrag **. Nachdem eine Erfassung gebucht wurde, können Sie die Details in der zusammengeführten Charge nicht mehr ändern. Nachdem Sie eine Chargenzusammenführung zu einer Bestandserfassung übertragen haben, können Sie die Details nur ändern, wenn die Erfassung gelöscht wird.
+Sie können die Bestandserfassung für die Chargenzusammenführung auf der Listenseite **Alle Chargenzusammenführungen** genehmigen. Klicken Sie auf **Erfassung** &gt; **Buchen**. Nachdem eine Erfassung gebucht wurde, können Sie die Details in der zusammengeführten Charge nicht mehr ändern. Nachdem Sie eine Chargenzusammenführung zu einer Bestandserfassung übertragen haben, können Sie die Details nur ändern, wenn die Erfassung gelöscht wird.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Nachdem ich einen catchweight Artikel zusammengeführt wurde, warum kann ich die catchweight Informationen in der Lagererfassung nicht angezeigt?
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Warum kann ich, nachdem ich einen Artikelgewichtsartikel zusammengeführt habe, die Artikelgewichtsinformationen in der Lagererfassung nicht anzeigen?
 Sie können Chargen von Artikelgewichtsartikeln ebenso wie alle anderen Artikel zusammenführen. Allerdings werden die Artikelgewichtsinformationen nicht in der Lagererfassung angezeigt. Es wird empfohlen, die Artikelgewichtsinformationen zu prüfen, bevor Sie die Chargenzusammenführung in die Bestandserfassung übertragen.
+
+
 
 

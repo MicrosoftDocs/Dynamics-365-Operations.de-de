@@ -46,7 +46,7 @@ Wählen Sie auf der Seite **Masseneinstellungsprojekte** das Projekt “SummerIn
 
 Nachdem Sie Studenten für die Praktikumspositionen ausgewählt haben, geben Sie die Informationen jedes Studenten unter **Positionsdetails** für die Position ein, für die sie eingestellt werden. Wenn Sie alle Positionsdetails eingegeben haben, wählen Sie die Position auf der Seite "Masseneinstellungsprojekte" aus, und dann klicken Sie auf **Einstellen**. Für jede Position wird ein Positionsdatensatz erstellt, und für jede Person, die Sie einstellen, wird ein Arbeitskraftdatensatz erstellt und der richtigen Position zugewiesen.
 
-## <a name="masshire-project-statuses"></a>Status eines Masseneinstellungsprojekts
+## <a name="masshire-project-statuses"></a>Projektstatus-Masseneinstellung
 Ein Masseneinstellungsprojekt kann folgende Status besitzen.
 -   Erstellt
 -   Geöffnet

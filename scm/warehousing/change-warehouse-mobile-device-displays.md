@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="warehouse-mobile-device-display-settings"></a>Seite "Anzeigeeinstellungen für das mobile Gerät für das Lager"
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Thema wird beschrieben, wie die Darstellung einer Anzeige eines Mobilgeräts eingerichtet wird, und wie Tastenkombinationen den Steuerelementen, beispielsweise Schaltflächen zugeordnet werden. 
 
 Dieser Artikel gilt für "erweiterte Funktionen" im Modul Lagerortverwaltung. Mobile Geräte können für viele der Aufgaben verwendet werden, die Lagerarbeiter ausführen.
@@ -39,13 +42,13 @@ Als Teil der Konfiguration des mobilen Geräts können Sie unterschiedliche Layo
 
 Die CSS- und ASPX-Dateien müssen sich in einem bestimmten Verzeichnis befinden, damit die Internet Information Services-Anwendung (IIS) sie laden kann. Es kann hilfreich sein, verschiedene CSS-Dateien zu definieren, wenn Sie die mobile Gerätefunktionen in verschiedenen Browsern oder auf unterschiedlichen Arten der Hardware ausführen, die unterschiedliche Layoutsteuerelemente erfordern. Einfache Einstellungen wie die Hintergrundfarbe, die Schriftart und der Schriftgrad für Text und die Breite und das Verhalten der Schaltflächen können mithilfe einer unterschiedlichen Verwendung von CSS-Dateien leicht gesteuert werden. Die ASPX-Datei wird verwendet, um den mobilen Standort auf der serverseitigen ASP.NET-Anwendung anzuzeigen. Die Dateikontrollen, wie die gesamte HTML-Struktur ausgebreitet wird. Es wird empfohlen, diese Funktionen nur anzupassen, wenn Sie ernsthafte strukturelle Probleme mit HTML und JavaScript haben und diesen Code für Ihre spezifischen Geräte ändern müssen. Um die HTML-Steuerung auf der Seite des mobilen Geräts auf Tastenkombinationen zu ändern, müssen Sie auf der Seite **Anzeigeeinstellungen für mobiles Gerät** im Feld **Tastenkombination** die numerischen Codes für die Tasten zuweisen. Sie können das Menü **Codes für Tastenkombinationen ansehen** im mobilen Gerät verwenden, um die numerischen Zeichencodes zu finden. Beachten Sie, dass die Zuordnungen anders sein kann, je nach Hardware, die verwendet wird. Sie müssen die folgende Syntax verwenden, um die Zuordnung zu erstellen:
 
-&lt;Steuern Sie Name&gt;Schlüsselname&gt;(&lt;;) =key&lt;Code&gt;
+&lt;Steuerungsnam&gt;(&lt;Schlüsselname&gt;)=&lt;Schlüsselcode&gt;;
 
 Hier ist eine Erläuterung der Teile der Syntax:
 
--   **&lt;Steuername **&gt;– Der Name des Steuerelements (beispielsweise Gesamtlayout, eine Schaltfläche) sicher in HTML angezeigt wird.
--   ** (&lt;) Schlüsselname&gt;** – Der Name der Taste, dass Sie die Verknüpfung für erstellen.
--   **&lt;Tastencode&gt;** – Der Code des numerischen Zeichens, damit der Schlüssel als Tastenkombination verwendet.
+-   **&lt;Steuername&gt;**> - Der Name des Steuerelements, beispielsweise eine Schaltfläche, die in HTML angezeigt wird.
+-   **(&lt;Tastenname&gt;)**  – Der Name der Taste, für die Sie die Verknüpfung erstellen.
+-   **&lt;Zeichencode&gt;**  – Der numerischen Zeichencode für die Taste, den Sie für die Tastenkombination verwenden möchten.
 
 Hier ist ein Beispiel:
 
@@ -57,17 +60,17 @@ Auf allen Seiten, die eine Schaltfläche **Abbrechen** haben, wird die Schaltfl�
 
 Das Drücken der ESC-TASTE auf der Tastatur wird die Schaltfläche **Abbrechen** aktivieren. Um die Format- und Tastenkombinationseinstellungen auf einem bestimmtem Gerät zu aktivieren, müssen Sie eine Zuordnung im Feld **Kriterien** erstellen. Sie müssen einen regulärer. NET-Ausdruck verwenden, um die Zuordnung zu erstellen, und der Ausdruck muss aus drei Bereichen bestehen, die durch einen senkrechten Strich (|) getrennt sind , so wie hier angezeigt:
 
-Request.UserHostAddress=user-&lt;host address&gt;_=_HostName=user-&lt;Hostname&gt;_=_Request.UserAgent=user-&lt;Agent&gt;
+Request.UserHostAddress=&lt;user host address&gt;|HostName=&lt;user host name&gt;|Request.UserAgent=&lt;user agent&gt;
 
 Hier ist eine Erläuterung der Ausdrucksteile:
 
--   **&lt;Benutzerhost address&gt;** – Ein regulärer. NET-Ausdruck, der, die Bittsteller IP-Adresse übereinstimmt.
--   **&lt;Benutzerhostname **&gt;– Ein regulärer. NET-Ausdruck, der den Netzwerknamen des Bittstellers übereinstimmt.
--   **&lt;Benutzer-Agent&gt;** – Ein regulärer. NET-Ausdruck, der, die Kennung des Browsers übereinstimmt, der den Bittsteller verwendet.
+-   **&lt;Host-Benutzeradresse&gt;** – Ein regulärer .NET-Ausdruck, der der IP-Adresse des Anforderers entspricht
+-   **&lt;Host-Benutzername&gt;**– Ein regulärer .NET-Ausdruck, der dem Netzwerknamen des Anforderers entspricht.
+-   **&lt;Benutzer-Agent&gt;** – Ein regulärer. NET-Ausdruck, der der Bezeichnung des Browsers entspricht, die der Anforderer verwendet.
 
 Das folgende Beispiel zeigt, wie der Internet Explorer 8 am besten verwendet wird:
 
-Request.UserHostAddress=.\*_=_HostName=.\*_=_Request.UserAgent=MSIE\\\\s8 .0
+Request.UserHostAddress=.\*|HostName=.\*|Request.UserAgent=MSIE\\s8\\.0
 
 Sie können das Menü **Serverkonfiguration für Anzeigeeinstellungen ansehen** auf dem mobilen Gerät verwenden, um die Informationen zu den Einstellungen zu suchen.
 
@@ -84,19 +87,21 @@ Sie können die Seite **Textfarben des mobilen Geräts** verwenden, um die versc
 Um die Farbe zu wählen, klicken Sie auf der Seite **Farbe wählen** auf die Palette oder geben einen hexadezimalen Farbcode ein.
 
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>Definieren des Datumsformats, das auf mobilen Geräten verwendet werden soll
-Sie können die Liste der akzeptierten Datumsformate für jede Installation erweitern. Diese Funktion kann hilfreich sein, beispielsweise wenn Sie ein Format angeben möchten, das es für eine Arbeitskraft einfacher macht, Daten auf einem mobilen Gerät einzugeben. Das Standardformat wird durch die Standardsprache des Benutzers bestimmt, die im Feld **Sprache** auf der Seite **Benutzeroptionen** definiert ist. (Die gleiche Seite wird auch verwendet, um einem Mitarbeiter mit einem bestimmten Lagerortarbeitsbenutzer zuzuordnen.) ** Hinweis: ** Die Portal verwendet Lagerort-mobilenGeräte nicht die Einstellung des ** Datums-/Uhrzeit und Zahlenformat ** Feldes in der Sprachen- ** und Regionseinstellungen ** Seite. Um ein Datumsformat zu ändern, müssen Sie mit regulären Ausdrücken in Microsoft .NET Framework vertraut sein. Weitere Informationen finden Sie unter [.NET Reguläre Framework- Ausdrücke](http://go.microsoft.com/fwlink/?LinkId=391260). Um Datumsformat definieren, bearbeiten Sie die Dates.ini-Datei die an das Content \\\\Dates.ini Einstellungen im Feld Portalserver der Lagerort- Geräte befindet. Diese Datei verwendet reguläre .NET-Ausdrücke, um das Datumsformat zu bestimmen. Der reguläre Ausdruck muss Teilausdrücke enthalten, die benannte Gruppen für Tag, Monat und Jahr (DDMMYY) erstellen, wie im folgenden Beispiel gezeigt:
+Sie können die Liste der akzeptierten Datumsformate für jede Installation erweitern. Diese Funktion kann hilfreich sein, beispielsweise wenn Sie ein Format angeben möchten, das es für eine Arbeitskraft einfacher macht, Daten auf einem mobilen Gerät einzugeben. Das Standardformat wird durch die Standardsprache des Benutzers bestimmt, die im Feld **Sprache** auf der Seite **Benutzeroptionen** definiert ist. (Die gleiche Seite wird auch verwendet, um einen Mitarbeiter einem bestimmten Lagerortarbeitsbenutzer zuzuordnen.) **Hinweis: ** * Das Portal Lagerort-mobiles Geräte verwendet nicht die Einstellung des Felds **Datum, Uhrzeit und Zahlenformat**  auf der Seite **Sprache und Regionseinstellungen**. Um ein Datumsformat zu ändern, müssen Sie mit regulären Ausdrücken in Microsoft .NET Framework vertraut sein. Weitere Informationen finden Sie unter [.NET Reguläre Framework- Ausdrücke](http://go.microsoft.com/fwlink/?LinkId=391260). Um Datumsformate zu definieren, bearbeiten Sie die Datei Daten.ini, die sich unter Inhalt\\Einstellungen\\Daten.ini auf den Portalserver der mobilen Geräte für den Lagerort befindet. Diese Datei verwendet reguläre .NET-Ausdrücke, um das Datumsformat zu bestimmen. Der reguläre Ausdruck muss Teilausdrücke enthalten, die benannte Gruppen für Tag, Monat und Jahr (DDMMYY) erstellen, wie im folgenden Beispiel gezeigt:
 
-^ (?&lt;Tag&gt;\\d {2}) (?&lt;Monat&gt;\\d {2}) (?&lt;Jahr&gt;\\d {2}) $
+^(?&lt;day&gt;\\d{2})(?&lt;month&gt;\\d{2})(?&lt;year&gt;\\d{2})$
 
 Jeder Teilausdruck erfordert eine Zahl mit einer oder Ziffern für den Tag und den Monat und eine Zahl mit einer bis zu vier Ziffern für das Jahr. Beispielsweise definiert der nachfolgende Teilausdruck eine benannte Gruppe für ein Jahr und erfordert mindestens zwei und maximal vier Ziffern:
 
-(?&lt;Jahr&gt;\\d {2,4})
+(?&lt;year&gt;\\d{2,4})
 
 Sie können mehr als einen Ausdruck in der gleichen Datei angeben. Jeder Ausdruck muss sich auf einer separaten Zeile befinden. Der erste Ausdruck, der übereinstimmt, wird verwendet, um das Datum zu analysieren.
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Configuration of mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+[Konfigurieren von mobilen Geräten für Lagerarbeiten](configure-mobile-devices-warehouse.md)
+
+
 
 

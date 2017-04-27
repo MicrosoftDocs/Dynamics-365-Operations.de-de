@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-overview"></a>Übersicht über Bestellanforderung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt den Bestellanforderungsworkflow und die verschiedenen Statuswerte, die eine Bestellanforderung haben kann.
 
 Je nach Einstellungen Ihrer Organisation können Sie unter Umständen Bestellanforderungen für von der Organisation verwendete Produkte erstellen. Bei einer Bestellanforderung handelt es sich um ein internes Dokument, durch das die Einkaufsabteilung zum Einkauf von Artikeln oder Dienstleistungen autorisiert wird.  
@@ -48,7 +51,7 @@ Der Workflowprozess für Bestellanforderungen kann so konfiguriert werden, dass 
 
 Das folgende Diagramm zeigt die Statuswerte an, die einer Bestellanforderung und einer Bestellanforderungsposition zugewiesen werden, wenn diese den Workflowprozess durchlaufen.  
 
-[![Purchase requisition header and line statuses](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Statuswerte von Bestellanforderungskopf und -position](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Statusbeziehungen von Bestellanforderungskopf und -position
 
@@ -77,7 +80,7 @@ Der Gesamtstatus einer Bestellanforderung wird durch den Status der Bestellanfor
 <td>Wenn der Workflow so konfiguriert wurde, dass die Bestellanforderungspositionen an einzelne Prüfer geleitet werden, kann jede einzelne Position den Status <strong>Wird überprüft</strong> oder <strong>Abgelehnt</strong> aufweisen. Der Bestellanforderungsstatus wird aktualisiert, wenn der Prüfprozess für alle Bestellanforderungspositionen abgeschlossen ist und für die Bestellanforderung keine Prüfschritte mehr ausstehen.
 <ul>
 <li><strong>Wird überprüft</strong> – Die Bestellanforderungspositionen wurden zur Prüfung übermittelt. Wenn der Workflowprozess für eine Bestellanforderungsposition abgeschlossen ist, verbleibt der Status dieser Position <strong>Wird überprüft</strong>, bis alle verbleibenden Bestellanforderungspositionen geprüft wurden.</li>
-<li><strong>Abgelehnt</strong> – Eine Bestellanforderungsposition wurde abgelehnt. Bestellanforderungspositionen, die abgelehnt wurden, können geändert und erneut übermittelt werden.</li>
+<li><strong>Abgelehnt</strong> – Die Bestellanforderung wurde abgelehnt. Abgelehnte Bestellanforderungspositionen können geändert und erneut übermittelt werden.</li>
 </ul>
 Wenn Sie eine Bestellanforderungsposition, die abgelehnt wurde, erneut übermitteln, wird der Prüfprozess für alle Positionen in der Bestellanforderung, die noch geprüft werden, erneut gestartet. <strong>Hinweis:</strong> Eine Bestellanforderung, die bereits übermittelt wurde, kann erneut aufgerufen werden. Wenn Sie eine Bestellanforderung erneut aufrufen, werden auch alle anderen Bestellanforderungspositionen erneut aufgerufen. Erneut aufgerufene Bestellanforderungspositionen können gelöscht werden.</td>
 </tr>
@@ -133,7 +136,7 @@ Wenn Sie eine Bestellanforderungsposition, die abgelehnt wurde, erneut übermitt
 Die Kosten eines Produkts, das in einer Bestellanforderung enthalten ist, können auf mehrere Finanzkonten verteilt werden. Wenn in der Organisation Dimensionen (beispielsweise Kostenstellen oder Abteilungen) verwendet werden, können die Kosten eines Produkts auf Dimensionen für Finanzkonten verteilt werden.
 
 ## <a name="requisition-purposes"></a>Anforderungszwecke
-Durch Anforderungszwecke wird der Prozess des Erfüllens des Anforderungsbedarfs flexibler. Wenn Sie eine Anforderung erstellen, können Sie ihm einen von zwei Zwecken zuweisen: Verbrauch oder Auffüllung. Abhängig vom Materialanforderungszweck und der Einstellungen Ihrer Organisation, kann Materialanforderungsbedarf durch eine Bestellung, einen Umlagerungsauftrag, einen Produktionsauftrag oder ein Kanban erfüllt werden.  
+Durch Anforderungszwecke wird der Prozess des Erfüllens des Anforderungsbedarfs flexibler. Wenn Sie eine Anforderung erstellen, können Sie ihm einen von zwei Zwecken zuweisen: Verbrauch oder Auffüllung. Abhängig vom Materialanforderungszweck und der Einrichtung Ihre Organisation, kann Anforderungsbedarf durch eine Bestellung, einen Umlagerungsauftrag, einen Produktionsauftrag oder ein Kanban erfüllt werden.  
 
 In den Beschaffungsrichtlinien können Sie die Anforderungszwecke steuern, die verfügbar sind, wenn eine Anforderung für die Organisation erstellt wird.
 
@@ -152,7 +155,7 @@ Um Bestellanforderungen zu verwenden, deren Zweck Auffüllung ist, müssen Sie d
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>Bestellanforderungen und Angebotsanforderungen
 In einigen Fällen müssen Sie einen Angebotsanforderungsprozess beginnen, um den Händler und Preis für Produkte zu identifizieren, die in einer Bestellanforderung angefordert werden. Eine Angebotsanforderung kann generiert werden, wenn die Bestellanforderung überprüft wird. Wenn Sie ein Angebot akzeptieren, werden Informationen zu Händler, Preis usw. zur Anforderung übertragen.  
 
-Sie können eine Bestellanforderung sperren, indem Sie das Kontrollkästchen auf ** gesperrt ** die ** Bestellanforderungsdetails ** Seite auswählen. Die Verarbeitung der Bestellanforderung kann fortfahren, nachdem der aufgehoben, indem Sie das Kontrollkästchen deaktivieren.  
+Sie können eine Bestellanforderung sperren, indem Sie das Kontrollkästchen auf **Gesperrt** die **Bestellanforderungsdetails** Seite auswählen. Die Verarbeitung der Bestellanforderung kann fortfahren, nachdem der aufgehoben, indem Sie das Kontrollkästchen deaktivieren.  
 
 **Hinweis:** Im eProcurement lässt es die Angebotsanforderung für Ihre Bestellanforderung möglicherweise Händlern zu, alternative Positionen hinzuzufügen. In diesem Fall spiegelt Ihre Bestellanforderung genehmigte Alternativen wieder.
 
@@ -178,7 +181,7 @@ Um eine Bestellung für Bestellanforderungspositionen zu erstellen, die nicht f�
 
 Der Prozess für die Bedarfskonsolidierung beginnt, wenn eine Bestellanforderung in einem Workflow genehmigt wird und wenn die Budgetsteuerung für Ihre Organisation konfiguriert wird, wenn die Budgetreservierungen und Vorabbelastungen erfasst worden sind. Das folgende Diagramm zeigt den Prozessfluss für die Bedarfskonsolidierung an.  
 
-[![Arbeitsablauf für die Bedarfskonsolidierung]" . /media/demand-consolidation.gif)]". /media/demand-consolidation.gif)  
+[![Ablaufdiagramm zur Bedarfskonsolidierung](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Um genehmigte Bestellanforderungspositionen zu konsolidieren, führen Sie folgende Schritte aus:
 
@@ -192,8 +195,10 @@ Um genehmigte Bestellanforderungspositionen zu konsolidieren, führen Sie folgen
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen einer Anforderung für Verbrauch (Aufgabenleitfaden)]https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/) "
+[Erstellen einer Anforderung für Verbrauch (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Bestellanforderungsworkflow](purchase-requisitions-workflow.md)
+
+
 
 

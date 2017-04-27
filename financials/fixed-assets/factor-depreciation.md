@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="factor-depreciation"></a>Faktorabschreibung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel gibt einen Überblick über die Faktorabschreibungsmethode.
 
 Faktoren sind die zum Abschreiben von Anlagen verwendeten Prozentsätze. Wenn Sie ein Anlagenabschreibungsprofil einrichten und **Faktor** im Feld **Methode** auf der Seite **Abschreibungsprofile**auswählen, können Sie progressive, degressive oder lineare Abschreibung einrichten:
@@ -39,7 +42,7 @@ Faktoren sind die zum Abschreiben von Anlagen verwendeten Prozentsätze. Wenn Si
 In den nachstehenden Regeln und Beispielen wird gezeigt, wie Sie Faktoren für die einzelnen Abschreibungstypen einrichten können. 
 
 > [!NOTE] 
-> Wenn Sie ** ** Faktor im ** Methode ** Feld auswählen, werden das ** Faktor ** Feld und das Intervall ** ** Feld angezeigt.
+> Hinweis: Wenn Sie  **Faktor** im Feld  **Methode** auswählen, werden die Felder **Faktor** und **Intervall**  angezeigt.
 
 ## <a name="progressive-depreciation"></a>Progressive Abschreibung
 Der Wert im Feld **Faktor** ist größer als **50**.
@@ -75,5 +78,7 @@ Der Anschaffungspreis beträgt 100.000, der Faktor ist 20, die Nutzungsdauer lie
 
 ## <a name="straight-line-depreciation"></a>Lineare Abschreibung
 Der Wert im Feld **Faktor** ist gleich **50**. In diesem Fall ist die Abschreibung in jedem Zeitraum identisch. Sie sollten die Konsequenzen Ihrer Wertangaben in anderen Feldern entsprechend der Beschreibung in [Abschreibungsmethode "Lineare Nutzungsdauer"](straight-line-service-life-depreciation.md) berücksichtigen.
+
+
 
 

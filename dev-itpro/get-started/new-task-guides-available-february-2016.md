@@ -1,6 +1,6 @@
 ---
-title: "Neue Aufgabenleitfäden () Februar 2016"
-description: "Dieses Wiki werden die Aufgabenleitfäden auf, auf, die BPM Bibliotheken Microsoft seit Februar 2016 freigegeben wurden.  Die Bibliotheken, die veröffentlicht wurde, die (Februar 2016) APQC vereinheitlichte Bibliothek für Microsoft Dynamics 365 für Arbeitsgänge und (Februar 2016&quot; Erste Schritte."
+title: "Neuer Aufgabenleitfaden verfügbar (Februar 2016)"
+description: "Dieses Wiki werden die Aufgabenleitfäden auf, auf, die Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden.  Die Bibliotheken, die veröffentlicht wurde, die (Februar 2016) APQC vereinheitlichte Bibliothek für Microsoft Dynamics 365 for Operations und (Februar 2016) Erste Schritte."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Neue Aufgabenleitfäden () Februar 2016
+# <a name="new-task-guides-february-2016"></a>Neuer Aufgabenleitfaden verfügbar (Februar 2016)
 
-Dieses Wiki werden die Aufgabenleitfäden auf, auf, die BPM Bibliotheken Microsoft seit Februar 2016 freigegeben wurden.  Die Bibliotheken, die veröffentlicht wurde, die (Februar 2016) APQC vereinheitlichte Bibliothek für Microsoft Dynamics 365 für Arbeitsgänge und (Februar 2016" Erste Schritte.
+Dieses Wiki werden die Aufgabenleitfäden auf, auf, die Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden.  Die Bibliotheken, die veröffentlicht wurde, die (Februar 2016) APQC vereinheitlichte Bibliothek für Microsoft Dynamics 365 for Operations und (Februar 2016) Erste Schritte.
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Aufgabenleitfäden im Formular () Februar 2016 einheitlichen Bibliothek APQC für Microsoft Dynamics 365 für Arbeitsgänge
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics 365 for Operations (Februar 2016)
 ---------------------------------------------------------------------------------
 
-Die (Februar 2016) APQC vereinheitlichte Bibliothek enthält, die Aufgabenleitfäden, die bewirken werden, um Unterstützung dem Dynamics 365 zur Freigabe 7.0.0 der Arbeitsgänge verwendet werden. Wenn Sie lokalisierte Versionen dieser Aufgabenleitfäden benötigen, geschieht dies in der (Mai 2016) APQC vereinheitlichten Bibliothek für Microsoft Dynamics 365 für Arbeitsgänge verfügbar. Weitere Informationen dazu, wie im Hilfesystem an eine Aufgabenleitfadenbibliothek, finden Sie fangen Sie mithilfe herstellt []() an help-overview.md.
+Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die Nutzung mit Dynamics 365 for Operations 7.0.0. Wenn Sie lokalisierte Versionen von Aufgabenleitfäden benötigen, stehen diese in der APQC Unified-Bibliothek für Microsoft Dynamics 365 for Operations (Mai 2016) zur Verfügung. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kreditorenkonten
 
@@ -531,7 +531,7 @@ Die (Februar 2016) APQC vereinheitlichte Bibliothek enthält, die Aufgabenleitf�
 | Berechnung zu einem Produktkonfigurationsmodell hinzufügen    | Global             |
 | Produktkonfigurationsmodell genehmigen                 | Global             |
 | Schließen Sie die Grundeinrichtung eines freigegebenen Produktmasters ab | Global             |
-| Erstellen Sie also " A. \ \ Finanzdimensionen dimensionsbasiertes Produktmaster               | Global             |
+| Erstellen eines ..\financial-dimensions\dimension-based Produktmasters               | Global             |
 | Erstellen Sie eine Hierarchie zur Produktklassifizierung          | Global             |
 | Produktkonfigurationsmodell erstellen                  | Global             |
 | Erstellen eines Produktmasters                               | Global             |
@@ -544,7 +544,7 @@ Die (Februar 2016) APQC vereinheitlichte Bibliothek enthält, die Aufgabenleitf�
 | Stückliste für ein Produktkonfigurationsmodell verwalten        | Global             |
 | Arbeitsplan für ein Produktmodell verwalten                    | Global             |
 | Details für freigegebene Produkte verwalten                              | Global             |
-| Freigabe A. \ \ Finanzdimensionen dimensionsbasiertes Produktmaster              | Global             |
+| Freigeben eines ..\financial-dimensions\dimension-based Produktmasters              | Global             |
 | Daten für Produktmodelle                      | Global             |
 
  
@@ -720,7 +720,7 @@ Die (Februar 2016) APQC vereinheitlichte Bibliothek enthält, die Aufgabenleitf�
 
 [Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Neue oder aktualisierte Aufgabenleitfäden (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
 

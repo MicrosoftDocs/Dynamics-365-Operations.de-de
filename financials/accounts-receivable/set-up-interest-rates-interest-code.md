@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Einrichten von Zinssätzen für einen Zinscode
 
+[!include[banner](../includes/banner.md)]
+
+
 Zinscodes enthalten Einstellungen, die festlegen, wann Zinsen erhoben werden und wie Zinsen für fällige Rechnungen berechnet werden.
 
 Sie können einen einzelnen Zinscode einrichten und diesen auf mehrere Debitorenbuchungsprofile, Abrechnungscodes  oder auf bestimmte Rechnungspositionen anwenden. Wenn die Details des Zinscodes geändert werden, werden diese Änderungen für alle Funktionen, in denen dieser Code verwendet wird, automatisch bei neuen Buchungen übernommen. Für jeden Zinscode können Sie zwei Typen von Sätzen einrichten:
@@ -44,17 +47,17 @@ Sie können Zinssätze einrichten, die einen angegebenen Prozentsatz berechnen.
 
 -   Der Zinsbetrag gilt für alle Währungen.
 -   Es können optional Zinsbetraggrenzen eingegeben werden.
--   ** Prozentsatz ** ist aktiviert ** ** in ** Zinsen auf Grundlage ** Feld auf Einstellungs-Zinscodes ** ** Seite.
+-   Der **Prozentsatz** wird im Feld **Grundlage für Zinsberechnung** auf der Seite **Einrichten von Zinscodes** ausgewählt.
 
-Um beispielsweise einen Zinscode einrichten, das die 5-Prozent-Zinsen für alle zwei Monate angegebenen, dass die Zahlung das Fälligkeitsdatum ist, geben Sie im Feld 2 ** berechnen die jede Zinsen ** Feld eingeben und auswählen ** Monat **.
+Um beispielsweise einen Zinscode einzurichten, der Zinsen in Höhe von 5 Prozent für alle 2 Monate festlegt die die Rechnungszahlung das Fälligkeitsdatum überschreitet, geben Sie 2 im Feld **Zinsen berechnen alle** ein wählen Sie **Monat** aus.
 
 ## <a name="interest-rates-based-on-amounts"></a>Zinssätzen auf der Basis von Beträgen
 Sie können Zinssätze einrichten, die einen angegebenen Betrag pro Währung berechnen.
 -   Für jede Währung wird im Zinscode ein Zinsbetrag angegeben.
 -   Es können optional Zinsbetraggrenzen eingegeben werden.
--   ** ** Betrag wird in ausgewählt ** Zinsen auf Grundlage ** Feld auf Einstellungs-Zinscodes ** ** Seite.
+-   Der **Betrag** wird im Feld **Grundlage für Zinsberechnung** auf der Seite **Einrichten von Zinscodes** ausgewählt.
 
-Um beispielsweise einen Zinscode einrichten, die Zinsen von 25,00 für alle angegebenen Tage 20, dass die Zahlung das Fälligkeitsdatum ist, geben Sie im Feld 20 ** berechnen die jede Zinsen ** Feld eingeben und auswählen ** ** Tag.
+Um beispielsweise einen Zinscode einzurichten, der Zinsen in Höhe von 25,00 für alle 20 Tage festlegt die die Rechnungszahlung das Fälligkeitsdatum überschreitet, geben Sie 20 im Feld **Zinsen berechnen alle** ein wählen Sie **Tag** aus.
 
 ## <a name="interest-rates-based-on-ranges"></a>Zinssätzen auf der Basis von Bereichen
 Sie können Zinssätze einrichten, die je nach überfälligem Betrag, der Anzahl der Überfälligkeitstage oder der Anzahl der Überfälligkeitsmonate variieren.
@@ -67,13 +70,13 @@ Sie richten einen Zinscode ein, der Zinsen einmal für alle drei Monate, um die 
 | **Feldname**                  | **Feldwert** |
 |---------------------------------|-----------------|
 | **Zinscode**               | 3M%ByAmt        |
-| **Zinsen berechnen alle**    | 3/Month         |
+| **Zinsen berechnen alle**    | 3/Monat         |
 | **Zinsen nach Bereich**           | Betrag          |
 | **Grundlage für Zinsberechnung** | Prozentsatz      |
 
 Sie richten die Bereichsinformationen wie folgt ein.
 
-| **From value** | **Interest value** |
+| **Von Wert** | **Zinswert** |
 |----------------|--------------------|
 | 0              | 1                  |
 | 1,001          | 2                  |
@@ -94,7 +97,7 @@ Sie richten einen Zinscode ein, der Zinsen einmal für alle 15 Tage, um die die 
 
 Sie richten die Bereichsinformationen wie folgt ein.
 
-| **From value** | **Interest value** |
+| **Von Wert** | **Zinswert** |
 |----------------|--------------------|
 | 0              | 10                 |
 | 61             | September                 |
@@ -109,13 +112,13 @@ Sie richten einen Zinscode ein, der Zinsen einmal für jeden Monat, um die die R
 | **Feldname**                  | **Feldwert** |
 |---------------------------------|-----------------|
 | **Zinscode**               | 1M%ByMth        |
-| **Zinsen berechnen alle**    | 1/Month         |
+| **Zinsen berechnen alle**    | 1/Monat         |
 | **Zinsen nach Bereich**           | Monate          |
 | **Grundlage für Zinsberechnung** | Prozentsatz      |
 
 Sie richten die Bereichsinformationen wie folgt ein.
 
-| **From value** | **Interest value** |
+| **Von Wert** | **Zinswert** |
 |----------------|--------------------|
 | 0              | 1.5                |
 | 4              | 2                  |
@@ -125,5 +128,7 @@ Sie richten die Bereichsinformationen wie folgt ein.
 Zinscodes sind ein Gültigkeitsdatum. Wenn Sie den Zinssatz ändern möchten, können Sie eine **neue Version** mit einem zukünftigen Gültigkeitsdatum erstellten.
 
 Um die verschiedenen Versionen anzeigen, können Sie die Menüauswahl **Anfangsdatum.** verwenden, um das Abschnittsdatum auszuwählen. Sie können auch **Alle Datensätze anzeigen** auswählen, um alle Zinscodes auf der Seite anzuzeigen.
+
+
 
 

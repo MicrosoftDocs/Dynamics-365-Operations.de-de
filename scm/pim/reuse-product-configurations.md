@@ -1,5 +1,5 @@
 ---
-title: Mithilfe Sie erneut Produktkonfigurationen
+title: Produktkonfigurationen wiederverwenden
 description: "Sie können angeben, dass Sie eine Variante für ein Produkt automatisch recyceln möchten. Wenn der Benutzer eine Konfigurationssitzung beendet hat, prüft das System, ob eine Konfiguration, die mit der Auswahl des Benutzers übereinstimmt, bereits vorhanden ist. Wenn eine übereinstimmende Variante gefunden wird, werden die Konfigurationskennung, die korrekte Stückliste (BOM) und der Arbeitsplan recycelt."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reuse-product-configurations"></a>Mithilfe Sie erneut Produktkonfigurationen
+# <a name="reuse-product-configurations"></a>Produktkonfigurationen wiederverwenden
+
+[!include[banner](../includes/banner.md)]
+
 
 Sie können angeben, dass Sie eine Variante für ein Produkt automatisch recyceln möchten. Wenn der Benutzer eine Konfigurationssitzung beendet hat, prüft das System, ob eine Konfiguration, die mit der Auswahl des Benutzers übereinstimmt, bereits vorhanden ist. Wenn eine übereinstimmende Variante gefunden wird, werden die Konfigurationskennung, die korrekte Stückliste (BOM) und der Arbeitsplan recycelt.
 
@@ -41,5 +44,7 @@ Damit Konfigurationen wieder verwendet werden können, müssen Sie die folgenden
 
 ## <a name="resetting-configuration-reuse"></a>Wiederverwendung der Konfiguration zurücksetzen
 Wenn Sie die Konfigurationswiederverwendung zurücksetzen, werden zuvor erstellte Konfigurationen nicht mehr berücksichtigt. Sie wollen möglicherweise die Konfigurationswiederverwendung zurücksetzen, wenn die Stückliste oder der Arbeitsplan geändert aber keine entsprechenden Attribute geändert wurden. Sie können die Konfiguration auf dem Inforegister **Allgemeines** für die Komponente wieder verwenden.
+
+
 
 

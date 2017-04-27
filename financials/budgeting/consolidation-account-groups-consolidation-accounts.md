@@ -1,6 +1,6 @@
 ---
-title: "Konsolidierungskontogruppen und zusätzliche Konsolidierungskontos"
-description: "Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskontos und erläutert, wie sie in Microsoft Dynamics 365 für Arbeitsgänge verwendet werden."
+title: "Erstellen von Konsolidierungskontengruppen und zusätzlicher Konsolidierungskonten"
+description: "Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskontos und erläutert, wie sie in Microsoft Dynamics 365 for Operations verwendet werden."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,27 +24,32 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konsolidierungskontogruppen und zusätzliche Konsolidierungskontos
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Erstellen von Konsolidierungskontengruppen und zusätzlicher Konsolidierungskonten
 
-Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskontos und erläutert, wie sie in Microsoft Dynamics 365 für Arbeitsgänge verwendet werden.
+[!include[banner](../includes/banner.md)]
+
+
+Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskontos und erläutert, wie sie in Microsoft Dynamics 365 for Operations verwendet werden.
 
 <a name="consolidation-account-groups"></a>Konsolidierungskontengruppen
 ----------------------------
 
-Konsolidierungskontogruppen lassen Sie Gruppen der Konten erstellen, die Sie verwenden möchten, um Daten konsolidieren können. Meistens stellt eine Konsolidierungskontogruppe einen Kontenplan Behörde-vorgegebenen dar oder die Konten einer Gruppe zugeordnet werden, die von den Headquartern des Unternehmens definiert wird. Sie können im Konsolidierungskontogruppen ** Einstellungen ** Bereich des ** Konsolidierungen ** Moduls suchen. Wenn Sie eine neue Gruppe hinzufügen, erteilen Sie eine eindeutige Kennung für die Kontengruppe und einen Namen ein.
+Mit Konsolidierungskontogruppen können Sie Gruppen von Konten erstellen, die Sie verwenden möchten, um Daten konsolidieren zu können. Meistens stellt eine Konsolidierungskontogruppe einen von Behörden vorgegebenen Kontenplan dar oder führt Konten in einer Gruppe zusammen, die vom Hauptsitz des Unternehmens definiert wird. Sie finden die Konsolidierungskontogruppen im Bereich **Einstellungen** im Modul **Konsolidierungen**. Wenn Sie eine neue Gruppe hinzufügen, geben Sie eine eindeutige Kennung für die Kontengruppe und einen Namen ein.
 
 ## <a name="additional-consolidation-accounts"></a>Zusätzliche Konsolidierungskonten
-Zusätzliche Konsolidierungskontos können Sie ein Konto aus einem vorhandenen Kontenplans zuweisen einer Konsolidierungskontogruppe. Sie können einem Konsolidierungskontowert und dann einen Namen angeben. 
+Zusätzliche Konsolidierungskonten können einem Konto aus einem vorhandenen Kontenplan einer Konsolidierungskontogruppe zugewiesen werden. Sie können einen Konsolidierungskontowert und dann einen Namen angeben. 
 
-Sie können zusätzliche Konsolidierungskontos im ** Einstellungen ** Bereich des ** Konsolidierungen ** Moduls suchen. Wenn Sie ein neues Konsolidierungskonto erstellen, müssen Sie die folgenden Informationen angeben:
+Sie finden die zusätzlichen Konsolidierungskontogruppen im Bereich **Einstellungen** im Modul **Konsolidierungen**. Wenn Sie ein neues Konsolidierungskonto erstellen, müssen Sie die folgenden Informationen angeben:
 
--   ** Hauptkonto ** – Dieses Feld ist eine Suche, die alle Hauptkonten angezeigt, die auf dem Kontenplan werden, der auf der Seite ausgewählten. Wenn Sie ein Konto auswählen, wird der Name automatisch im Feld Name des Hauptkontos ** ** Feld eingegeben.
--   ** Konsolidierungskontogruppe ** – Verwenden Sie dieses Feld, um anzugeben der Gruppe, um das Konto zugewiesen werden soll. Wenn Sie auf zwei unterschiedliche Arten ausgeführt, müssen Sie dasselbe Konto alle vier Konsolidierungskontogruppen hinzufügen.
--   ** Konsolidierungskonto ** – Geben Sie den Wert der Konsolidierungskontos ein. Dieser Wert muss kein Konto in einem Kontenplan. sein Es kann jeder Wert sein, die Sie benötigen.
--   ** Konsolidierungskontoname ** – Geben Sie den Namen des Kontos ein, der in Abfragen und Berichten angezeigt.
--   ** Sat-Ebene ** – Dieses Feld wird verwendet, um Kontoauszüge mexikanischen die Steuerbehörde zu melden. 
+-   **Hauptkonto ** – Dieses Feld ist ein Suchfeld, das alle Hauptkonten anzeigt, die auf dem Kontenplan basieren, den Sie auf der Seite ausgewählt haben. Wenn Sie ein Konto auswählen, wird der Name automatisch im Feld **Name des Hauptkontos** eingegeben.
+-   **Konsolidierungskontogruppe** – Verwenden Sie dieses Feld, um die Gruppe anzugeben, der das Konto zugewiesen werden soll. Wenn Sie auf zwei unterschiedliche Arten konsolidieren, müssen Sie dasselbe Konto allen vier Konsolidierungskontogruppen hinzufügen.
+-   **Konsolidierungskonto ** – Geben Sie den Wert des Konsolidierungskontos ein. Dieser Wert muss kein Konto in einem Kontenplan. sein Es kann jeder Wert sein, den Sie benötigen.
+-   **Konsolidierungskontoname**– Geben Sie den Namen des Kontos an, das auf Anfragen und Berichten angezeigt werden soll.
+-   **Sat-Ebene **– Dieses Feld wird verwendet, um Kontoauszüge der mexikanischen Steuerbehörde zu melden. 
 
-Wenn Sie fertig sind, die Konsolidierungskontogruppen und zusätzlichen Konsolidierungskontos zu erstellen, können Sie die Gruppe im Prozess für Online konsolidierte auswählen.
+Wenn Sie mit dem Erstellen der Konsolidierungskontogruppen und der zusätzlichen Konsolidierungskonten fertig sind, können Sie die Gruppe im Oline-Konsolidierungsprozess auswählen.
+
+
 
 
 

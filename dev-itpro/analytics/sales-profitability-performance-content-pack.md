@@ -1,6 +1,6 @@
 ---
-title: "Vertriebs-und Rentabilitätsleistung Leistungsfähigkeit BIinhalt"
-description: "In diesem Thema wird beschrieben, was im Dynamics 365 - zufriedenes Pack für Arbeitsgänge des Vertriebs und der Rentabilitätsleistung für Microsoft-Energie BI enthalten ist. Es erläutert, wie auf die Berichte, die im Paket enthalten inhaltliche sind und enthält Informationen zum Datenmodell und die Entitäten, die verwendet werden, um das Inhaltstext Pack zu erstellen."
+title: "Vertriebs-und Rentabilitätsleistung Power BI Inhalt"
+description: "In diesem Thema wird beschrieben, was im Dynamics 365 for Operations - Vertriebs-und Rentabilitätsleistung-Inhaltspaket für Microsoft Power BI enthalten ist. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,84 +24,84 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Vertriebs-und Rentabilitätsleistung Leistungsfähigkeit BIinhalt
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Vertriebs-und Rentabilitätsleistung Power BI Inhalt
 
-In diesem Thema wird beschrieben, was im Dynamics 365 - zufriedenes Pack für Arbeitsgänge des Vertriebs und der Rentabilitätsleistung für Microsoft-Energie BI enthalten ist. Es erläutert, wie auf die Berichte, die im Paket enthalten inhaltliche sind und enthält Informationen zum Datenmodell und die Entitäten, die verwendet werden, um das Inhaltstext Pack zu erstellen.
+In diesem Thema wird beschrieben, was im Dynamics 365 for Operations - Vertriebs-und Rentabilitätsleistung-Inhaltspaket für Microsoft Power BI enthalten ist. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen.
 
 <a name="overview"></a>Überblick
 --------
 
-Dies Inhaltstext Pack wurde erstellt, sodass Verkaufsleiter schließlich die eigentliche Vertriebsmetrik des Umsatzerlöses, des Bruttogewinns und der Ränder überwachen. Es verwendet - Transaktionsdaten vornehmen des Vertriebs von Microsoft Dynamics 365 für Arbeitsgänge und stellt eine gesamte wertberichtigt unternehmensweiten Shoppersonals und eine Aufschlüsselung des Verkaufsergebnisses für Debitoren und Produkte zur Verfügung. Durch das Hervorheben, wird Umsatzerlös und im Gewinn-Wachstum im Zeitverlauf, Berichte verwendet werden kann, um Manager über die positiven und negativen Trends für einzelne Debitoren und Produkte hinzuweisen. Kategorie und Manager regionale suchen es sinnvoll, Diagramme zu haben, mit der Umsatzerlöse und Rentabilität verschiedener Produktkategorien von Debitorengruppen und miteinander vergleichen, um Trödler und auszusortieren Füllzeichen. Ein Bericht, der umfassender einzelnen Umsatzerlös des Debitors mit Gewinnspanne zeichnet, bietet Account Managern eine Daten-unterstützte Basis an, um die Verkaufs- und Marketings-Aufwände dem Profil jedes abzustimmen jeweiligen Debitors. Der Inhaltstext Pack Verkäufen und der Rentabilitätsleistung aktiviert Verkaufsleiter Verkaufsleistung, um von zu analysieren:
+Dies Inhaltspaket wurde erstellt für Verkaufsleiter zum Überwachen die Vertriebsmetrik Umsatzerlöses, des Bruttogewinns und der Margen. Es verwendet Transaktionsdaten aus von Dynamics 365 for Operations und stellt eine Gesamtübesicht zu unternehmensweiten Umsatzahlen und eine Aufschlüsselung des Verkaufsergebnisses für Debitoren und Produkte zur Verfügung. Durch das Hervorheben von Umsatzerlösänderungen und Gewinnwachstum im Zeitverlauf, können Berichte verwendet werden, um Manager über die positiven und negativen Trends für einzelne Debitoren und Produkte hinzuweisen. Kategorie- und regionale Manager können Diagramme zu haben, mit denen Umsatzerlöse und Rentabilität verschiedener Produktkategorien und Debitorengruppen miteinander vergleichen, um schlechte und gute Elemente zu erlennen. Ein umfassender Bericht zu einzelnen Umsatzerlösen des Debitors mit Gewinnspanne bietet Account Managern eine Daten-unterstützte Basis an, um die Verkaufs- und Marketings-Aufwände mit dem Profil jedes Debitors abzustimmen. Das Vertriebs-und Rentabilitätsleistung-Inhaltspaket ermöglicht Verkaufsleiter die Verkaufsleistung zu analysieren:
 
--   Umsatzerlös, des laufenden Jahres (nach Debitorengruppen-, und Personendebitoren Verkaufskategorien und Einzelprodukte und bestimmte geografische Region)
+-   Umsatzerlös, laufenden Jahres (nach Debitorengruppen- und Personendebitoren, Verkaufskategorien und Einzelprodukte und bestimmte geografische Region)
 -   Umsatzerlösänderung, jährlich (nach Debitorenregionen und -Verkaufskategorien)
 
 Rentabilität kann wie folgt analysiert werden:
 
--   Bruttogewinn und Gewinnspanne (Comma-Separated Debitorengruppen und Produktverkaufskategorien)
--   Bruttogewinnänderung jährlich,
--   Debitorenrentabilität (nach Umsatz für Bruttogewinn)
+-   Bruttogewinn und Gewinnspanne (nach Debitorengruppen und Produktverkaufskategorien)
+-   Bruttogewinnänderung, jährlich
+-   Debitorenrentabilität (nach Umsatz gegen Bruttogewinn)
 
-## <a name="accessing-the-content-pack"></a>Zugreifen des das Content Packs
-Der Inhaltstext Pack Vertriebs-und Rentabilitätsleistung Leistungsfähigkeit BI wird als Implementierungsanlage in den Lebenszyklus-Dienstleistungen (LCS) veröffentlicht und kann von Microsoft Dynamics 365 für Arbeitsgänge zugegriffen werden. Weitere Informationen dazu, wie BIberichte Energie, finden Sie auf zugreift und startet [Leistung in BIinhalt Kreditbriefen von Microsoft und von den Partnern] (power-bi-content-microsoft-partners.md ).
+## <a name="accessing-the-content-pack"></a>Zugreifen auf das Inhaltspaket
+Der Vertriebs-und Rentabilitätsleistung-Inhaltspaket für Power BI wird als Implementierungsressource in Lifecycle Services (LCS) veröffentlicht und kann von Dynamics 365 for Operations zugegriffen werden. Weitere Informationen dazu, wie Power BI-Bericht erstellt werden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
 
-## <a name="metrics-included-in-the-content-pack"></a>Metrik enthalten inhaltliche Pack im
-Der Inhaltstext Pack enthält einen Bericht, der einem Satz Metriken visuell dargestellt als Diagramme, Kacheln und Tabellen besteht. Die folgende Tabelle enthält eine Übersicht der im Visualisierungen das Content Pack.
+## <a name="metrics-included-in-the-content-pack"></a>Metrik im Inhaltspaket
+Der Inhaltspaket enthält einen Bericht, der einem Satz Metriken visuell dargestellt als Diagramme, Kacheln und Tabellen besteht. Die folgende Tabelle enthält eine Übersicht der im Visualisierungen im Inhaltspaket.
 
 |                        |                                            |                                                         |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
-| ** Berichtsseite **        | **Charts**                                 | ** Kacheln **                                               |
-| Umsatz nach Kunden    | Top 10 Debitoren nach Umsatzerlös                | Gesamtumsatz                                           |
+| **Berichtsseiten**        | **Diagramme**                                 | **Kacheln**                                               |
+| Umsatz nach Debitor    | Beste 10 Debitoren nach Umsatz                | Gesamtumsatz                                           |
 |                        | Gesamtumsatzerlös nach Debitorengruppe            | YOY-Umstatzsteigerung                                      |
 |                        | Durchschnittskundeumsatzerlös nach Debitorengruppe | Bruttogewinn                                            |
 |                        | Umsatzerlös und Bruttogewinn nach Debitorengruppe.   |                                                         |
-| Umsatzerlösnebenprodukt     | Umsatzerlös und Bruttogewinn nach Verkaufskategorie.   | - Gesamt \# von Produkten                                    |
-|                        | Produkte nach Umsatzerlös Top 10                 | Gesamtanzahl aktive und Prozentsatz der Summe Produkte |
-|                        | Nach Verkaufskategorie Gesamtumsatzerlös            | Produkte, die Nummer 80% betragen Umsatzerlös           |
-| Umsatzerlös nach Periode \*    | Umsatzerlös nach Monat                           | YOY-Umstatzsteigerung                                      |
-|                        | Nachfolgende Umsatzerlösabweichung, YOY             | YOY-Umstatzsteigerung %                                    |
+| Umsatz nach Produkt     | Umsatzerlös und Bruttogewinn nach Verkaufskategorie.   | Produkte \# gesamt                                    |
+|                        | Beste 10 Produkte nach Umsatz                 | Gesamtanzahl der aktiven Produkte und Gesamtprozentsatz |
+|                        | Gesamtumsatzerlös nach Verkaufskategorie            | Zahl der Produkte, die zu 80% Umsatzerlös betragen           |
+| Umsatz nach Zeitraum\*    | Umsatz nach Monat                           | YOY-Umstatzsteigerung                                      |
+|                        | Nachfolgende Abweichung bei Umsatze, YOY             | YOY-Umstatzsteigerung %                                    |
 |                        | Gesamte Verkaufsmengenabweichung nach Debitorenregion    |                                                         |
-| Umsatzerlös nach Lagerplatz    | Nach Ort Umsatzerlöse                      |                                                         |
+| Umsatz nach Lagerplatz    | Umsatzerlöse nach Ort                      |                                                         |
 |                        | YOY-Umstatzsteigerung %                       |                                                         |
-|                        | Umsatzerlöse nach Regionen                    |                                                         |
-| Debitorenrentabilität | Bruttogewinn für Zinsausgaben, nach Debitor   | Bruttogewinn, Bruttogewinn, YOY-Umstatzsteigerung          |
+|                        | Umsatz nach Regionen                    |                                                         |
+| Debitorenrentabilität | Bruttogewinn versus Umsatz nach Debitor   | Bruttogewinn, Bruttoerlös, YOY-Umstatzsteigerung          |
 | Rentabilitätsanalyse | Umsatzerlös und Bruttogewinn nach Monat          |                                                         |
-|                        | 15 Debitoren der Bruttogewinn nach oben           |                                                         |
+|                        | Top 15 Debitoren nach Bruttogewinn           |                                                         |
 |                        | Bruttogewinn nach Monat, YOY                 |                                                         |
 
-dieser \* Umsatzerlös und letzten Jahr und Wachstum nach Verkaufskategorie.
+\* Umsatzerlös dieser und letzten Jahr und Wachstum nach Verkaufskategorie.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Dynamics 365 für Arbeitsgangsdaten wird verwendet, um den Bericht im das Content Pack Verkäufen und der Rentabilitätsleistung aufzufüllen. Dieser wird als vollständige Messungen dargestellt, die im Entitätsshop bereitgestellt werden, der eine Microsoft SQL-Datenbank ist, die zwecks Analyse optimiert ist. Lesen Sie sich über dies im Blog [Power BI-Integration mit Entitäts-Shop in Dynamics]( https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die gesamten Messungen in diesem das Content Pack sind die Teilmenge der gesamten Messungen, die im Vertriebs-Cuben in Dynamics AX 2012 und im AX 2012 R3 verfügbar waren. Zur Phase die gesamten Messungen des Cubes im Entitätsshop müssen Sie diese zur Bereitstellung geeignet ist. Weitere Informationen finden Sie unter in den Phasenaggregatsmessungen Vorgehensweise in den Entitätsshop im Blog [Power BI-Integration mit Entitäts-Shop in Dynamics] (https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die folgenden Schlüsselaggregatsmessungen der Rechnungspositionsentität werden als Grundlage des das Content Packs verwendet.
+Dynamics 365 for Operations-Daten werden für die Berichte im Vertriebs-und Rentabilitätsleistung-Inhaltspaket verwendet. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden, der eine Microsoft SQL-Datenbank ist, die zwecks Analyse optimiert ist. Lesen Sie mehr im Blog [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Sales Cube in Dynamics AX 2012 und AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Inhaltspakets verwendet.
 
 |               |                                              |                                                 |                                              |                                          |
 |---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
-| **Entity**    | ** Gesamt Messungen des Schlüssels **               | ** Datenquelle für Dynamics 365 für Arbeitsgänge ** | **Field**                                    | **Description**                          |
-| Rechnungspositionen | Umsatzerlös                                      | CustInvoiceTrans                                | SUMME (LineAmountMST)                           | Betrag in Buchhaltungswährung            |
-|               | Wareneinsatz                           | InventTrans                                     | SUMME (CostAmountPosted + CostAmountAdjustment) | Einstandspreis + Anpassung                 |
-|               | Betrag der Provisionsposition - Buchhaltungswährung | CustInvoiceTrans                                | SUMME (CommissAmountMST)                        | Provisionsbetrag in der Buchhaltungswährung |
+| **Entität**    | **Zentrale aggregierte Messungen**               | **Datenquelle für Dynamics 365 for Operations** | **Feld**                                    | **Beschreibung**                          |
+| Rechnungspositionen | Umsatzerlös                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Betrag in Buchhaltungswährung            |
+|               | Wareneinsatz                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Cost amount + adjustment                 |
+|               | Betrag der Provisionsposition - Buchhaltungswährung | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Betrag der Provision in Buchhaltungswährung |
 
-Die folgende Tabelle zeigt die Tastenfunktionen gesamten Messungen der Rechnungspositionsentität angezeigt, die verwendet werden, um mehrere berechnete Kennzahlen das Content im Dataset des Packs zu erstellen.
+Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet werden, um mehrere berechnete Kennzahlen der Rechnungspositionsentität im Dataset des Inhalts zu erstellen.
 
 |                   |                                                                                                  |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| **Measure**       | ** Berechnet wie **                                                                                |
-| Bruttogewinn      | SUMME – Umsatzerlös (COGS – Provision – Mehrwertsteuer einbezogen (im Debitorenrechnungspositions Minderbetrag))          |
-| Bruttogewinn      | SUMME (Bruttogewinn/(Umsatzerlös - Mehrwertsteuer einbezogen (im Debitorenrechnungspositions Mehrbetrag)))             |
-| Umsatzerlösletztes des | Umsatzerlösletztes des BERECHNEN = (SUMME ('Rechnung lines'entity_PLACEHOLDER \ [Umsatzerlös \], SAMEPERIODLASTYEAR Datumsangaben\[\](\[\] |
+| **Kennzahl**       | **Berechnet als**                                                                                |
+| Bruttogewinn      | SUM(Umsatz – COGS – Provision – Mehrwertsteuer (in Rechnungsposition enthalten))          |
+| Bruttogewinn      | SUM(Gross profit / (Revenue - Sales tax (in Rechnungsposition enthalten)))             |
+| Umsatzerlös letztes des | Revenue last year = CALCULATE(SUM('Invoice lines'\[Revenue\]), SAMEPERIODLASTYEAR(Dates\[Date\]) |
 
-Die folgenden wichtigen Dimensionen in Vertriebscube ** ** werden als Filter verwendet, um die gesamten Messungen ein Crossdocking, um größere Granularität und analytische tiefere Einblicke zu erreichen.
+Die folgenden wichtigen Dimensionen im **Sales-Cube** werden als Filter verwendet, um die aggregierte Messungen zu teilen, um eine größere Granularität zu erreichen und tiefere und analytische Einblicke bereitzustellen.
 
 |                  |                                                      |
 |------------------|------------------------------------------------------|
-| **Entity**       | ** Beispiele für Attribute **                           |
-| Debitoren        | Debitorengruppen, Debitorenregionen, Adresse, Industrie |
+| **Entität**       | **Beispiele für Attribute**                           |
+| Debitoren        | Customer groups, Customer regions, Address, Industry |
 | Produkte         | Produktnummer, Produktname, Artikelgruppenname       |
 | Verkaufskategorien | Verkaufskategorienamen                                 |
-| Juristische Personen   | Namen der juristischen Person                                   |
+| Juristische Personen   | Name der juristischen Person                                   |
 | Daten            | Daten                                                |
 
-Standardmäßig zeigt das Inhaltstext Pack Daten während des laufenden Kalenderjahr angezeigt, aber Sie können den Berichtsfilterabschnitt den Datumsfilter öffnen und ändern. Sie können den Unternehmensfilter auch ändern.
+Standardmäßig zeigt das Inhaltspaket Daten während des laufenden Kalenderjahr an. Aber Sie können den Berichtsfilterabschnitt den Datumsfilter öffnen und ändern. Sie können das den Unternehmensfilter auch ändern.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstellen von Power BI-Inhalten:

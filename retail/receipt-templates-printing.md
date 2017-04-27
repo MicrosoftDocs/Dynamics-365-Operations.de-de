@@ -1,6 +1,6 @@
 ---
 title: Bonvorlagen und Drucken
-description: "Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um zu steuern, wie Bons, Rechnungen und andere Dokumente gedruckt werden. Microsoft Dynamics 365 für Einzelhandel - Arbeitsgänge umfasst einen Designer für Formularlayout, den Sie verwenden können, um unterschiedliche Arten von Formularlayouts zu erstellen und zu ändern."
+description: "Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um zu steuern, wie Bons, Rechnungen und andere Dokumente gedruckt werden. Microsoft Dynamics 365 for Operations - Retail umfasst einen Formularlayout-Designer, mit dem Sie einfach verschiedene Formularlayouts erstellen und ändern können."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="receipt-templates-and-printing"></a>Bonvorlagen und Drucken
 
-Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um zu steuern, wie Bons, Rechnungen und andere Dokumente gedruckt werden. Microsoft Dynamics 365 für Einzelhandel - Arbeitsgänge umfasst einen Designer für Formularlayout, den Sie verwenden können, um unterschiedliche Arten von Formularlayouts zu erstellen und zu ändern.
+[!include[banner](includes/banner.md)]
 
-** Wichtig: ** Sie Formularlayouts und Bonprofile müssen eingerichtet werden, um Bons und andere Dokumente über modernem KleinPOS POS zu drucken und bewölken. Sie können mehrere Formularlayouts in ein Bonprofil einfügen. Sie können dann das Bonprofil einem Drucker zuweisen, indem Sie ein Hardwareprofil ändern.
+
+Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um zu steuern, wie Bons, Rechnungen und andere Dokumente gedruckt werden. Microsoft Dynamics 365 for Operations - Retail umfasst einen Formularlayout-Designer, mit dem Sie einfach verschiedene Formularlayouts erstellen und ändern können.
+
+**Wichtig: **Formularlayouts und Bonprofile müssen eingerichtet werden, um Bons und andere Dokumente in Retail Modern POS und Cloud POS. ausdrucken zu können. Sie können mehrere Formularlayouts in ein Bonprofil einfügen. Sie können dann das Bonprofil einem Drucker zuweisen, indem Sie ein Hardwareprofil ändern.
 
 ## <a name="set-up-a-receipt-format"></a>Einrichten eines Bonformats
-1.  ** Sie Einzelhandel und Handel ** &gt; ** Kanal Einstellungen ** &gt; ** POS eingerichtet ** &gt; ** POS ** &gt; ** Bonlayouts **.
+1.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS** &gt; **Bonlayouts**.
 2.  Klicken Sie auf der Seite **Bonlayout** auf **Neu**, um ein neues Formularlayout zu erstellen oder ein vorhandenes Formularlayout auszuwählen.
 3.  Geben Sie im Feld **Bonlayout** eine Kennung für das Formularlayout ein, und wählen Sie anschließend den Bontyp aus, für den dieses Layout verwendet wird. Sie können auch eine Beschreibung und einen Kurznamen für den Bon in das Feld **Titel** eingeben.
 4.  Wählen Sie auf dem Inforegister **Allgemein** eine Option aus, um das Druckverhalten zu definieren:
@@ -44,11 +47,11 @@ Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um
 ## <a name="design-a-receipt-format"></a>Entwerfen eines Bonformats
 Mit dem Designer für Formularlayout können Sie das Layout des Formulardokuments grafisch erstellen. Die Seite **Designer für Bonformat** hat drei Abschnitte: **Kopfzeile**, **Positionen** und **Fußzeile**. Bei einigen Formularlayouttypen werden Elemente aus allen drei Abschnitten werden, bei anderen nur Elemente aus einem oder zwei der Abschnitte. Klicken Sie zum Anzeigen der verfügbaren Elemente für jeden Abschnitt auf die entsprechende Schaltfläche im Navigationsbereich links auf der Seite.
 
-1.  ** Sie Einzelhandel und Handel ** &gt; ** Kanal Einstellungen ** &gt; ** POS eingerichtet ** &gt; ** POS ** &gt; ** Bonlayouts **.
+1.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS** &gt; **Bonlayouts**.
 2.  Wählen Sie auf der Seite **Bonlayout** ein Formularlayout aus, und klicken Sie anschließend auf **Designer**.
 3.  Klicken Sie auf **Ausführen**, um zu starten, um den Retail Designer-Host zu installieren.
 4.  Klicken Sie auf der Benachrichtigungsleiste, die unten im Internet Explorer-Fenster angezeigt wird, auf **Öffnen**, um den Ein-Klick-Designer zu installieren. (Die Benachrichtigungsleiste wird möglicherweise an einem anderen Speicherort in anderen Browsern.) Anhand der Statusleiste wird der Fortschritt des Installationsvorgangs angezeigt.
-5.  Nachdem die Installation abgeschlossen ist, geben Sie den Dynamics 365 für Arbeitsgänge Benutzername und Kennwort ein, und klicken Sie dann unter ** signieren ** um den Designer zu starten.
+5.  Nachdem die Installation abgeschlossen ist, geben Sie den Dynamics 365 for Operations-Benutzernamen und das Kennwort ein, und klicken Sie auf **Anmelden**, um den Designer zu starten.
 6.  Nachdem die Anmeldeinformationen validiert wurden und der Designer gestartet wurde, können Sie damit beginnen, das Bonlayout zu entwerfen oder ein vorhandenes Layout zu ändern.
 7.  Wählen Sie zum Erstellen der Elemente des Formulars den Abschnitt **Kopfzeile**, **Positionen** oder **Fußzeile** aus, und ziehen Sie dann ein Element aus diesem Abschnitt in den Arbeitsbereich. Die meisten Elemente enthalten Variablen, die automatisch mit Daten aus der Datenbank aufgefüllt werden. Andere Elemente (z. B. **Text**) ermöglichen das Drucken eines benutzerdefinierten Texts auf den Bon. **Hinweis**: Sie können angeben, über wie viele Zeilen sich jeder Abschnitt erstreckt, indem Sie die Zahl in der unteren rechten Ecke dieses Abschnitts anpassen. Um das Ändern eines Abschnitts zu vereinfachen, vergrößern Sie seine Höhe, indem Sie unten im Abschnitt an der Größenänderungsleiste ziehen. Die Höhe des Abschnitts im Arbeitsbereich hat keinen Einfluss auf die Anzahl von Zeilen auf dem tatsächlichen Bon.
 8.  Nachdem Sie ein Element in den Arbeitsbereich gezogen haben, legen Sie im Bereich **Objektinformationen** unten auf der Seite die Eigenschaften für den Abschnitt fest. Geben Sie eine oder mehrere der folgenden Einstellungen ein:
@@ -63,9 +66,11 @@ Mit dem Designer für Formularlayout können Sie das Layout des Formulardokument
 ## <a name="assign-receipt-profiles"></a>Zuweisen von Bonprofilen
 Bonprofile werden durch das Hardwareprofil direkt zu den Druckern zugewiesen.
 
-1.  Öffnet das Hardwareprofil, indem ** Sie Einzelhandel und Handel ** ** &gt; auf installierten Kanals klicken ** &gt; ** POS eingerichtet ** &gt; ** POS-Profile ** &gt; ** Hardwareprofil **.
+1.  Öffnen Sie das Hardwareprofil, indem Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwareprofil** klicken.
 2.  Wählen Sie den Drucker aus, und weisen Sie dann im Feld **Bonprofil** das Bonprofil zu, das im Register verwendet werden soll.
 
 **Hinweis:** Wenn zwei Drucker verwendet werden, kann ein Drucker verwendet werden, um standardmäßige Thermobons mit 40 Spalten zu drucken. Der zweite Drucker wird in der Regel verwendet, um ganzseitige Bontypen zu drucken, die weitere Informationen enthalten. Zu diesen Bontypen gehören Bons für Debitorenaufträge und Debitorenrechnungen.
+
+
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-elements"></a>Workflowelemente
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt die verschiedenen Elemente, die einen Workflow darstellen.
 
 Ein Workflow besteht aus Elementen. In den folgenden Abschnitten wird jeder Elementtyp beschrieben.
@@ -55,14 +58,14 @@ Bei einem *Genehmigungsprozess* handelt es sich um einen Prozess, der aus getren
 -   eine Änderung am Dokument anzufordern,
 -   Dokument einem anderen Benutzer zur Genehmigung zuweisen.
 
-## <a name="lineitem-workflow-elements"></a>Lineitem-Workflowelemente
-Ein Workflow kann zum Verarbeiten von Dokumenten oder der Positionen in einem Dokument erstellt werden. Angenommen, Sie haben einen Genehmigungsworkflow für Arbeitszeitnachweise erstellt. (Wir bezeichnen diesen Workflow als das *document workflow*) angezeigt. Sie können ein *line-item Element workflow* Diesem Dokumentworkflow hinzufügen. Bei der Ausführung des Positionselements wird jede Position im Dokument zur Verarbeitung übermittelt. Dabei können alle Positionen durch denselben Positionsworkflow oder jede Position durch einen anderen Positionsworkflow verarbeitet werden. Angenommen, ein Mitarbeiter hat einen Arbeitszeitnachweis übermittelt, der der folgenden Abbildung ähnelt. ![Workflow mit Positionen](./media/workflow_lineitemworkflow.gif) In diesem Szenario sollten Sie die folgenden Positionsworkflows erstellen:
+## <a name="lineitem-workflow-elements"></a>Lineitem-Workflow-Elemente
+Ein Workflow kann zum Verarbeiten von Dokumenten oder der Positionen in einem Dokument erstellt werden. Angenommen, Sie haben einen Genehmigungsworkflow für Arbeitszeitnachweise erstellt. (Wir bezeichnen diesen Workflow als *Dokumentworkflow*.) Sie können ein *Positionsworkflow*-Element zu diesem Dokumentworkflow hinzufügen. Bei der Ausführung des Positionselements wird jede Position im Dokument zur Verarbeitung übermittelt. Dabei können alle Positionen durch denselben Positionsworkflow oder jede Position durch einen anderen Positionsworkflow verarbeitet werden. Angenommen, ein Mitarbeiter hat einen Arbeitszeitnachweis übermittelt, der der folgenden Abbildung ähnelt. ![Workflow mit Positionen](./media/workflow_lineitemworkflow.gif) In diesem Szenario sollten Sie die folgenden Positionsworkflows erstellen:
 
 -   **Positionsworkflow 1** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 1111 verwendet.
 -   **Positionsworkflow 2** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 2222 verwendet.
 -   **Positionsworkflow 3** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 3333 verwendet.
 
-## <a name="flowcontrol-elements"></a>Flusssteuerelemente
+## <a name="flowcontrol-elements"></a>Flowcontrol-Elemente
 Mithilfe der folgenden Elemente können Sie Workflows mit alternativen Verzweigungen oder gleichzeitig ausgeführten Verzweigungen entwerfen.
 
 ### <a name="manual-decision"></a>Manuelle Entscheidung
@@ -80,5 +83,7 @@ Eine *parallele Aktivität* ist ein Workflowelement, das zwei oder mehr Workflow
 ### <a name="subworkflow"></a>Untergeordneter Workflow
 
 Ein *untergeordneter Workflow* ist ein Workflow, der im Kontext eines anderen Workflows ausgeführt wird.
+
+
 
 

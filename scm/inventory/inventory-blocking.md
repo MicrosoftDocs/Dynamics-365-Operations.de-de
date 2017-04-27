@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-blocking"></a>Sperrung von Lagerbestand
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel gibt einen Überblick über die Sperrung von Lagerbestand, die Teil des Qualitätsprüfungsprozesses in Microsoft Dynamics AX ist. Sie können die Sperrung von Lagerbestand verwenden, um die Verarbeitung oder den Verbrauch von Artikeln zu verhindern.
 
 Sie können Lagerartikel auf die folgenden Arten sperren:
@@ -53,17 +56,19 @@ Im folgenden Beispiel wird ein Qualitätsprüfungsauftrag generiert, wenn ein Li
 | Eine Qualitätszuordnung gibt an, dass beim Buchen eines Lieferscheins für eine Bestellung eine Testbestellung generiert werden muss. In den Einstellungen für die Artikelmusteraufnahme der Testbestellung ist angegeben, dass 10 Prozent der Menge der Bestellposition geprüft werden müssen. Weil darüber hinaus die Option **Vollständige Sperrung** bei den Einstellungen für die Artikelmusteraufnahme ausgewählt ist, muss die gesamte Menge der Bestellposition während der Prüfung unabhängig von der zur Prüfung eingereichten Menge gesperrt werden. | Der Lieferschein wird gebucht. | Ein Qualitätsprüfungsauftrag wird generiert. Zehn Prozent der Bestellmenge für den Artikel wird Prüfung eingereicht. Die Gesamtmenge der Bestellposition wird gesperrt. |
 
 ## <a name="blocking-items-by-using-inventory-status-blocking"></a>Sperrung von Artikeln mithilfe der Lagerstatussperrung
-Sie können angeben, das blockierende Bestandsstatus Status sind, indem den ** Sperrung von Lagerbestand ** Parameter auf der ** Bestandsstatus ** Seite.  Sie können Lagerstatus nicht als Sperrenstatus für Produktionsaufträge, Aufträge, Umlagerungsaufträge, ausgehende Transaktionen oder Projektintegrationen verwenden. Für ausgehende Arbeit verwenden Sie Artikel, die den Bestandsstatus "verfügbar" aufweisen. Wenn Artikel den Status **Kaputt** haben und der Produktprogrammplan für diese Artikel ausgeführt wird, werden die Artikel als fehlend betrachtet und der Bestand wird automatisch aufgefüllt.
+Sie können angeben, welche Lagerstatus Sperrenstatus sind, indem Sie den Parameter **Sperrung von Lagerbestand** auf der Seite **Lagerstatus** verwenden.  Sie können Lagerstatus nicht als Sperrenstatus für Produktionsaufträge, Aufträge, Umlagerungsaufträge, ausgehende Transaktionen oder Projektintegrationen verwenden. Für ausgehende Arbeit verwenden Sie Artikel, die den Bestandsstatus "verfügbar" aufweisen. Wenn Artikel den Status **Kaputt** haben und der Produktprogrammplan für diese Artikel ausgeführt wird, werden die Artikel als fehlend betrachtet und der Bestand wird automatisch aufgefüllt.
 
 
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen und pflegen Sie eine Sperrung von Lagerbestand verwalten "Aufgabenleitfaden)]https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/) "
+[Erstellen und Verwalten einer Sperrung von Lagerbestand (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
 
-[Quality management processes](quality-management-processes.md)
+[Qualitätsmanagementprozesse](quality-management-processes.md)
 
-[Überprüfen Sie die Qualität von Gütern (Aufgabenleitfaden)]https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/) "
+[Überprüfen Sie die Qualität von Waren (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 
 

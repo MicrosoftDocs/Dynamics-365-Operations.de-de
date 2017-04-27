@@ -1,5 +1,5 @@
 ---
-title: "Hilfeüberblick"
+title: "Hilfe – Überblick"
 description: "Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Operations-Hilfesystems. Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können."
 author: margoc
 manager: AnnBe
@@ -25,34 +25,34 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="help-overview"></a>Hilfeüberblick
+# <a name="help-overview"></a>Hilfe – Überblick
 
 Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Operations-Hilfesystems. Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können. 
 
 Dynamics 365 for Operations umfasst ein vollständig neues Hilfesystem, das auf zwei Hauptkomponenten basiert:
 
--   Ein Dokumentationsstandort
+-   Eine Dokumentationswebsite
 -   Aufgabenleitfäden
 
-Sie können Artikel und Aufgabenleitfäden vom Hilfebereich in Dynamics 365 für Vorgänge wie im folgenden Bildschirmabbild angezeigt zugreifen. [](![Hilfebereich . /media/help-pane-ops-task-guides-1024x741.png)]". /media/help-pane-ops-task-guides.png) Dieser Artikel wird beschrieben im Hilfesystem und es wird beschrieben, wie Sie benutzerdefinierte Dokumentationen und Trainingsbetriebsmittel für Ihre Organisation erstellen können.
+Sie können sowohl auf Wiki-Artikel als auch auf Aufgabenleitfäden über den Hilfe Bereich in Dynamics 365 for Operations, wie im folgenden Screenshot angezeigt, zugreifen. [![Hilfebereich](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) Dieser Artikel beschreibt das Hilfesystem und erläutert, wie Sie debitorenspezifische Dokumentationen und Ressourcen zur Produktschulung für Ihre Organisation erstellen können.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hilfe auf docs.microsoft.com
-Der Standort (docs.microsoft.com-] [docs.microsoft.com/dynamics365/operations (https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) ist die primäre Quelle für Produkt dokumentation für Dynamics 365 für Arbeitsgänge. Der Standort bieten die folgenden Funktionen angezeigt:
+docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) ist die primäre Quelle für Produktdokumentation für Dynamics 365 for Operations. Die Seite enthält die folgenden Funktionen:
 
--   ** Zugriff auf die aktuellsten Inhalt ** – Der Standort wird empfohlen eine schnellere und Weise, flexibelere Produktdokumentationen erstellen, Liefern und aktualisieren. So können wir besser sicherstellen, dass Zugriff auf den neuesten technischen Informationen enthalten.
--    ** Inhalt, der aus den Experten ** – Der Standort geschrieben wird, enthält einen umfangreicheren Satz Produktdokumentationen, der von den Gemeindemitgliedern sowohl in als auch Microsoft außerhalb erhöht werden kann.
--   ** Zugriff auf die verschiedenen Arten des Inhalts ** – Der Standort können Sie schnell unterschiedliche Arten des Inhalts zu Dynamics 365 für Arbeitsgänge, wie Microsoft Office-Mischungspräsentationen, Aufgabenleitfäden, Videos und Wiki-Artikel zugreifen.
--    ** Inhalt, der Ihre Geschäftsprozesse ** – Der Standort umfasst Unternehmen unterstützt, Prozess-fokussierten Inhalt, der den Geschäftsprozessmodellierer (BPM) in den Microsoft Dynamics Lifecycle Services (LCS) nutzt.
+-   **Zugriff auf aktuellsten Inhalt **- Die Seite ist eine schnellere und flexiblere Methode, Produktdokumentationen zu erstellen, zu liefern und zu aktualisieren. So können wir besser sicherstellen, dass Zugriff auf den neuesten technischen Informationen enthalten.
+-    **Inhalte, die von den Experten geschrieben wurden **- Die Seite bietet eine umfangreichere Zusammenstellung von Produktdokumentationen, die von Community-Mitgliedern, sowohl innerhalb als auch außerhalb von Microsoft, weiterentwickelt werden können.
+-   **Zugriff auf unterschiedliche Arten von Inhalten** - Die Seite können Sie schnell auf unterschiedliche Arten von Inhalten von Dynamics 365 for Operations zugreifen, wie z.B. Microsoft Office Mix-Präsentationen, Aufgabenleitfäden, Videos und Wiki-Artikel.
+-    **Inhalte, die Ihre Geschäftsprozesse unterstützen **- Die Seite beinhaltet Geschäftsprozess-fokussierten Inhalt, der den Geschäftsprozessmodellierer (BPM) in Microsoft Dynamics Lifecycle Services (LCS) nutzt.
 
-Es haben den gesamten Inhalt in unserem vorherigen Hilfe-Wiki zu Doc. migriert. Es sind zu unseren neuen Standort sehr aufgeregt und hoffen, die Sie auch sind.
+Es haben den gesamten Inhalt in unserem vorherigen Hilfe-Wiki zu Doc migriert. Wir freuen uns sehr über unser neue Seite und hoffen, Sie auch.
 
 ### <a name="when-can-we-use-it"></a>Wann können wir es verwenden?
 
-Sie können Inhalte auf Doc. am Point-of-Sale lesen -- er kann vollständig öffentliche und, ohne als Anmeldekonto festzulegen. Sie können jede Ihrer bevorzugten Suchmaschinen verwenden, um Inhalte zu suchen. Sie kann Kommentar für Artikel auf der Katalogwebsite, wenn Sie festlegen, indem Sie in einem GitHub-Konto signieren.
+Sie können Inhalte in docs sofort lesen- es ist vollständig öffentlich und ohne Anmeldung durchsuchbar. Sie können jede Ihrer bevorzugten Suchmaschinen verwenden, um Inhalte zu suchen. Sie kann Kommentar für Artikel auf der Seite Sie festlegen, indem Sie in einem GitHub-Konto signieren.
 
 
 ## <a name="task-guides"></a>Aufgabenleitfäden
-Ein Aufgabenleitfaden ist eine Lagersteuerung, geführte interaktive, Erfahrung, die Sie durch die Schritte einer Aufgabe führt, oder einen Geschäftsprozess. Sie können "Spiel) einen aus dem Aufgabenleitfaden Hilfebereich öffnen. Beim ersten auf einen Aufgabenleitfaden klicken, werden im Hilfebereich die schrittweisen Anweisungen für die Aufgabe. Lokalisierte Aufgabenleitfäden ist jetzt zur Verfügung. ![Aufgabenleitfadenlesenansicht ([]. /media/task-guide-ops-1024x742.png)]". /media/task-guide-ops.png) Um die geführten interaktiven, Erfahrung, auf Anfangsaufgabenleitfaden ** ** unten im Hilfebereich zu starten. Ein schwarzer Mauszeiger öffnet und gibt die Aktivität an, die Sie ausführen müssen. Folgen Sie den Richtungen, die in der Benutzeroberfläche angezeigt werden, und geben Sie Daten ein, wie vorgesehen. ![Aufgabenleitfadenschrittanweisung ([]. /media/task-guide-step-1-ops.png)]". ** wichtig: /media/task-guide-step-1-ops.png)** Die Daten, die Sie eingeben, wenn Sie einen Aufgabenleitfaden wiedergeben, sind eigentlich. In einer Produktionsumgebung werden die Daten in das Unternehmen eingegeben, das Sie derzeit verwenden.
+Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können einen Aufgabenleitfaden aus dem Hilfe-Bereich öffnen (wiedergeben).  Wenn Sie zuerst auf einen Aufgabenleitfaden klicken, werden im Hilfe-Bereich Schritt für Schritt die Anweisungen für die Aufgabe angezeigt. Lokalisierte Aufgabenleitfäden sind jetzt verfügbar. [![Aufgabenleitfaden-Leseansicht](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) Um die geführte, interaktive Erfahrung zu starten, klicken Sie auf **Aufgabenleitfaden** starten unten im Hilfe-Bereich. Ein schwarzer Mauszeiger öffnet und gibt die Aktivität an, die Sie ausführen müssen. Folgen Sie den Richtungen, die in der Benutzeroberfläche angezeigt werden, und geben Sie Daten ein, wie vorgesehen. [![Aufgabeleitfaden Anweisung](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **Wichtig: **Die Daten, die Sie eingeben, wenn Sie einen Aufgabenleitfaden wiedergeben, sind real. In einer Produktionsumgebung werden die Daten in das Unternehmen eingegeben, das Sie derzeit verwenden.
 
 ### <a name="it-all-begins-with-task-recorder"></a>Alles beginnt mit der Aufgabenaufzeichnung
 
@@ -61,70 +61,70 @@ Aufgabenleitfäden werden mit der Aufgabenaufzeichnung erstellt. Wenn Sie die Au
 -   **Speichern von Aufgabenaufzeichnungen im BPM** - Sie können eine Aufgabenaufzeichnungin einer Hierarchie einer BPM-Bibliothek in LCS speichern Wenn Sie eine Aufgabenaufzeichung in BPM speichern, wird ein Flussdiagramm zusammen mit den Schritten der Aufzeichnung generiert und angezeigt. **Hinweis:** Um eine Aufgabenaufzeichnung im Hilfe-Bereich von Dynamics 365 for Operations anzuzeigen und sie als Aufgabenleitfaden wiederzugeben, müssen Sie die Aufzeichnung in einer BPM-Bibliothek speichern.
 -   **Aufgabenaufzeichnungen als Word-Dokumente speichern** - Indem Sie eine Aufgabenaufzeichnung als Word Dokument speichern, können Sie einfach druckbare Trainingshandbücher für Ihre Organisation erstellen.
 
-Weitere Informationen finden Sie, Aufgabenaufzeichnung zu [Aufgabenaufzeichnung in Dynamics 365 für Arbeitsgänge.] ". /user-interface/task-recorder.md).
+Weitere Informationen zur Aufgabenaufzeichnung finden Sie unter [Aufgabenaufzeichnung in Dynamics 365 for Operations](../user-interface/task-recorder.md).
 
 ### <a name="creating-customized-task-recordings"></a>Erstellen von angepassten Aufgabenaufzeichnungen
 
-Sie können eigene Aufgabenaufzeichnungen erstellen, oder Sie können von Microsoft zur Verfügung gestellte Aufgabenaufzeichnungen herunterladen und anpassen. Daher können Sie eine benutzerdefinierte Hilfe für Ihre Organisation erstellen, die Ihre spezifische Dynamics 365 for Operations-Implementierung anzeigt. Um eine Aufgabenaufzeichnung im Dynamics 365 für Arbeitsgänge anzeigen Hilfe Sie Bereich und geben Sie diese als Aufgabenleitfaden, muss Ihnen die Erfassung einer BPM-Bibliothek in Kreditbriefen speichern erneut. Wenn Sie ein Partner sind und eine Bibliothek zu einer Unternehmensbibliothek höher stufen und in einer Lösung enthalten, ist sie an die Debitoren zur Verfügung. Umfassende Anweisungen finden [Sie mithilfe der Aufgabenaufzeichnungen, um der Dokumentation oder des Trainings erstellen.] ". /user-interface/task-recorder.md).
+Sie können eigene Aufgabenaufzeichnungen erstellen, oder Sie können von Microsoft zur Verfügung gestellte Aufgabenaufzeichnungen herunterladen und anpassen. Daher können Sie eine benutzerdefinierte Hilfe für Ihre Organisation erstellen, die Ihre spezifische Dynamics 365 for Operations-Implementierung anzeigt. Hinweis: Um eine Aufgabenaufzeichnung im Hilfe-Bereich von Dynamics 365 for Operations anzuzeigen und sie als Aufgabenleitfaden wiederzugeben, müssen Sie die Aufzeichnung in einer BPM-Bibliothek in LCS speichern. Wenn Partner eine Bibliothek auf eine Unternehmensbibliothek hochstufen und in eine Lösung aufnehmen, wir diese für die Kunden verfügbar. Ausführliche Anweisungen finden Sie unter [Verwenden der Aufgabenaufzeichnungen zum Erstellen einer Dokumentation oder eines Trainings](../user-interface/task-recorder.md).
 
 ## <a name="in-product-help"></a>Produkthilfe
-Weitere Hilfeinhalt in Dynamics 365 für Arbeitsgänge zuzugreifen, entweder auf Hilfe ** ** ** (? **) Wählen Symbol Hilfe und anschließend aus oder drücken Ctrl+Shift+?. In beiden Fällen wird der Bereich Hilfe geöffnet. Über Hilfebereich können Sie Artikel oder Aufgabenleitfäden zugreifen. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+Um auf Hilfeinhalte innerhalb von Dynamics 365 for Operations zuzugreifen, klicken Sie entweder auf das **Hilfe** (**?**) Symbol oder drücken Sie Ctrl+Shift+?. In beiden Fällen wird der Bereich Hilfe geöffnet. Über den Bereich Hilfe können Sie auf Artikel oder Aufgabenleitfäden zugreifen. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
 
-### <a name="accessing-articles-from-the-help-pane"></a>Zugreifen von Artikeln aus dem Hilfebereich
+### <a name="accessing-articles-from-the-help-pane"></a>Auf Artikel über den Hilfebereich zugreifen
 
-Über Hilfebereich können Sie Artikel, die auf zugreifen das Dynamics 365 für Arbeitsgangskunden gelten. Wenn Sie zuvor Hilfebereich öffnen und die Wiki ** ** Registerkarte klicken, können Sie die Artikel, die auf der Seite sind, an denen Sie derzeit in Dynamics 365 für Arbeitsgänge sind. Wenn keine Artikel gefunden, können Sie Schlüsselwörter eingeben, um die Suche verfeinern zu entwickeln. Wenn auf einen Artikel klicken, im Hilfebereich wird geöffnet eine neue Registerkarte in Ihrem Browser und wird der Artikel an. 
+Im Hilfe-Bereich können Sie auf Artikel zugreifen, die für den Dynamics 365 for Operations Client gelten. Wenn Sie zuerst den Hilfebereich öffnen und auf die Registerkarte **Wiki** klicken, finden Sie die Artikel, die für die Seite gelten, an denen Sie derzeit in Dynamics 365 for Operations sind. Wenn keine Artikel gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Wenn Sie auf einen Artikel im Bereich Hilfe klicken, wird eine neue Registerkarte in Ihrem Browser geöffnet und der Artikel angezeigt. 
 
-### <a name="accessing-task-guides-from-the-help-pane"></a>Zugreifen auf Aufgabenleitfäden vom Hilfebereich
+### <a name="accessing-task-guides-from-the-help-pane"></a>Auf Aufgabenleitfäden über den Hilfebereich zugreifen
 
-Bevor Sie Aufgabenleitfäden vom Hilfebereich zugreifen können, muss ein Systemadministrator der ** Systemparameter ** Seite in Dynamics 365 für Arbeitsgänge und fahren einige Einstellungen konfigurieren. **Hinweise:**
+Bevor Sie auf Aufgabenleitfäden aus dem Bereich **Hilfe** zugreifen können, muss ein Systemadministrator auf der Seite Systemparameter in Dynamics 365 for Operations einige Einstellungen konfigurieren. **Hinweise:**
 
 -   Um Hilfe zu konfigurieren, müssen Sie mit einem Konto des Mandanten angemeldet sein, für den Dynamics 365 for Operations bereitgestellt ist.
 -   Es ist nicht möglich, sich mit einer LCS-Bibliothek aus einer Instanz von Dynamics 365 for Operations zu verbinden, die auf einer virtuelle Festplatte (VHD) ausgeführt wird.
 
-[Systemparameterformular ![mit Hilfeeinstellungen] ". /media/system-parameters_ops-1024x437.png)]". /media/system-parameters_ops.png) Auf Bundesebene ** Systemparameter ** Seite, gehen folgendermaßen vor:
+[![Systemparameterformular aus Hilfeeinstellungen](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Auf der Seite **Systemparameter** folgen Sie diesen Schritten:
 
-1.  **Wichtig: ** Beim erstmaligen Öffnen der Registerkarte "Hilfe" müssen Sie die Verbindung zu den Lifecycle Services herstellen. Vergewissern Sie sich, auf den Link mitten in im Formular auf, warten Sie auf die Verknüpfung, schließen Sie das Dialogfeld, und klicken Sie anschließend auf OK., um Parameter an das Formular zu gelangen. [![Verbinden mit Kreditbriefen] angezeigt. (/media/connect-to-lcs-crop-1024x365.png)]". /media/connect-to-lcs-crop.png)
+1.  **Wichtig: ** Beim erstmaligen Öffnen der Registerkarte "Hilfe" müssen Sie die Verbindung zu den Lifecycle Services herstellen. Klicken Sie auf den Link mitten im Formular, warten Sie auf die Verbindung, schließen Sie das Dialogfeld, und klicken Sie anschließend auf OK, um zu den Parameterformularen zu gelangen.[![Mit LCS verbinden](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
 2.  Wählen Sie das Projekt Lifecycle Services, um eine Verbindung herzustellen.
 3.  Wählen Sie die BPM-Bibliotheken (innerhalb des ausgewählten Projekts) aus, von denen Sie die Aufgabenaufzeichnungen abrufen wollen.
 4.  Wählen Sie die Anzeigereihenfolge der BMP-Bibliotheken aus. So können Sie bestimmen, in welcher Reihenfolge Aufgabenaufzeichnungen aus den Bibliotheken im Bereich Hilfe angezeigt werden.
 
-Nachdem ein Systemadministrator diese Schritte abgeschlossen hat, können Sie den Bereich **Hilfe** öffnen und auf die Registerkarte Aufgabenleitfäden klicken. Sie finden die jetzt Aufgabenleitfäden, die auf der Seite sind, an denen Sie derzeit in Dynamics 365 für Arbeitsgänge sind. Wenn keine Aufgabenleitfäden gefunden, können Sie Schlüsselwörter eingeben, um die Suche verfeinern zu entwickeln. Nachdem Sie auf einen Aufgabenleitfaden im Hilfebereich klicken, werden im Hilfebereich die schrittweisen Anweisungen angezeigt, und Sie können den Aufgabenleitfaden wiedergeben. ![Aufgabenleitfadenlesenansicht ([]. /media/task-guide-ops-1024x742.png)]". /media/task-guide-ops.png)
+Nachdem ein Systemadministrator diese Schritte abgeschlossen hat, können Sie den Bereich **Hilfe** öffnen und auf die Registerkarte Aufgabenleitfäden klicken. Sie finden nun die Aufgabenhandbücher, die für die Seite gelten, an denen Sie derzeit in Dynamics 365 for Operations sind. Wenn keine Aufgabenhandbücher gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Nachdem Sie auf einen Aufgabenleitfaden im Bereich Hilfe geklickt haben, zeigt Ihnen der Bereich Hilfe die schrittweisen Anweisungen, und Sie können den Aufgabenleitfaden wiedergeben. [![Leseansicht Aufgabenleitfaden](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides"></a>Wo sind die Aufgabenleitfäden übersetzten?
+### <a name="where-are-the-translated-task-guides"></a>Wo sind die übersetzten Aufgabenleitfäden?
 
-Aufgabenleitfäden Übersetzte werden in die Bibliotheken mit "alle Sprachen" im Titel freigegeben. In Dynamics 365 für Arbeitsgänge, lokalisierte Aufgabenleitfadenhilfe anzuzeigen, prüfen Sie, ob Sie die Verbindung zu einer apppropriate Bibliothek verbunden werden. Die Sprache, die ein Aufgabenleitfaden in verwendet, wird für jeden Benutzer durch die Spracheinstellungen unter ** Optionen ** ** Einstellungen &gt; gesteuert **. 
--   Wenn ein Aufgabenleitfaden übersetzt wurde, wenn von geöffnet wird, dass der Aufgabenleitfaden ganzer Text des Aufgabenleitfadens in der ausgewählten Sprache angezeigt wird.
--   Wenn ein Aufgabenleitfaden noch nicht umgewandelt wurde, wenn Sie es öffnen, nur Einige der im Text (der Text der Steuerelemente) in der ausgewählten Sprache angezeigt werden.
+Übersetzte Aufgabenleitfäden werden in die Bibliotheken mit "Alle Sprachen" im Titel freigegeben. Um lokalisierte Aufgabenleitfäden in Microsoft Dynamics 365 for Operations anzuzeigen, stellen Sie sicher, dass die mit eine passenen Bibliothek verbunden sind. Die im Aufgabenleitfaden angezeigte Sprache wird für jeden Benutzer durch Spracheinstellungen unter **Optionen** &gt; **Voreinstellungen** gesteuert. 
+-   Wenn ein Aufgabenleitfaden übersetzt wurde, wird beim Öffnen der gesamte Text des Leitfadens in der ausgewählten Sprache angezeigt.
+-   Wenn ein Aufgabenleitfaden noch nicht übersetzt wurde, wird beim Öffnen nur ein Teil des Texts (der Text der Steuerelemente) in der ausgewählten Sprache angezeigt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-In der folgenden Tabelle werden Websites aufgeführt, die Microsoft Dynamics 365 for Operations-Inhalte enthalten. Unsere Content Websites werden organisiert, um den Debitorenlebenszyklus zu unterstützen. Jede Phase wird durch eine andere gruppe von Sites unterstützt. Standorte, die ein Sternchen (\*" neben dem Namen haben, erfordern, dass Sie in signieren, indem Sie ein Konto verwenden, das mit einem Service-Plan zugeordnet ist.
+In der folgenden Tabelle werden Websites aufgeführt, die Microsoft Dynamics 365 for Operations-Inhalte enthalten. Unsere Content Websites werden organisiert, um den Debitorenlebenszyklus zu unterstützen. Jede Phase wird durch eine andere gruppe von Sites unterstützt. Für Sites, die ein Sternchen (\*) neben dem Namen besitzen,ist es erforderlich, dass Sie sich über ein Konto anmelden, das einem Dienstleistungsplan zugeordnet ist.
 
 | Standort                                                                     | Beschreibung                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Docs.microsoft.com (https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations)] | Hosts oder Links zu allen Produktdokumentationen für Dynamics 365 for Operations.                                                                                                                                                               |
+| [Docs.microsoft.com](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) | Hosts oder Links zu allen Produktdokumentationen für Dynamics 365 for Operations.                                                                                                                                                               |
 | [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Bietet einen Cloud-basierten Kooperationsbereich, den Debitoren und Partner verwenden können, um Dynamics 365 for Operations-Projekte von Presales bis zur Implementierung und den Arbeitsgängen zu verwalten. Diese Site ist in alle Phasen einer Implementierung hilfreich. |
-| [] CustomerSource (http://www.customersource.com/)\*                       | Hostet Ressourcen des umfangreichen Trainings und ist die primäre Stützsite für Dynamics 365 for Operations. Eine Anmeldung kann in erforderlich sein, um auf bestimmte Ressourcen auf der Website zugreifen.                                                                      |
-| [Stützblog( http://aka.ms/AXSupportBlog)]                              | Hält Tipps und Tricks bereit, die vom Dynamics 365 for Operations-Support-Team gepostet werden.                                                                                                                                                  |
-| [Der MSDN-Website (http://aka.ms/AXMSDN)]                                             | Hostet Inhalte aus früheren Versionen, die für Entwickler geschrieben wurden.                                                                                                                                                                       |
-| [TechNet (http://aka.ms/TechNet)]                                         | Hostet Inhalte aus früheren Versionen, die für IT-Experten und Anwendungsbenutzer geschrieben wurden.                                                                                                                                           |
-| [Dynamics-Community (http://community.dynamics.com/en/)]                  | Hostet Blogs, Foren und Videos.                                                                                                                                                                                                           |
-| [(Microsoft.com/Dynamics/ http://www.microsoft.com/dynamics/)]                 | Stellt Auswertungen und Verkaufsinformationen bereit.                                                                                                                                                                                                 |
+| [CustomerSource](http://www.customersource.com/)\*                       | Hostet Ressourcen des umfangreichen Trainings und ist die primäre Stützsite für Dynamics 365 for Operations. Eine Anmeldung kann in erforderlich sein, um auf bestimmte Ressourcen auf der Website zugreifen.                                                                      |
+| [Support-Blog](http://aka.ms/AXSupportBlog)                              | Hält Tipps und Tricks bereit, die vom Dynamics 365 for Operations-Support-Team gepostet werden.                                                                                                                                                  |
+| [MSDN](http://aka.ms/AXMSDN)                                             | Hostet Inhalte aus früheren Versionen, die für Entwickler geschrieben wurden.                                                                                                                                                                       |
+| [TechNet](http://aka.ms/TechNet)                                         | Hostet Inhalte aus früheren Versionen, die für IT-Experten und Anwendungsbenutzer geschrieben wurden.                                                                                                                                           |
+| [Dynamics-Community](http://community.dynamics.com/en/)                  | Hostet Blogs, Foren und Videos.                                                                                                                                                                                                           |
+| [Microsoft.com/Dynamics/](http://www.microsoft.com/dynamics/)                 | Stellt Auswertungen und Verkaufsinformationen bereit.                                                                                                                                                                                                 |
 
 
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Dynamics 365 für Arbeitsgangshilfesystem (herunterladbares Merkblatt)]https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf) "
+[Dynamics 365 for Operations-Hilfesystem (herunterladbares Datenblatt)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
 
-[Aufgabenaufzeichnung in Microsoft Dynamics 365 für Arbeitsgänge.] ". /user-interface/task-recorder.md)
+[Aufgabenaufzeichnung in Microsoft Dynamics 365 for Operations](../user-interface/task-recorder.md)
 
 [Dokumentation oder Schulungen mithilfe von"Aufgabenaufzeichnungen" erstellen](../user-interface/task-recorder.md)
 
-[Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md 
-) [neue oder aktualisierte Aufgabenleitfäden (August 2016)](new-updated-task-guides-available-august-2016.md
-) [neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md
-) [Aufgabenleitfäden neue (Februar 2016)](new-task-guides-available-february-2016.md)
+[Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
+[Neue oder aktualisierte Aufgabenleitfäden (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)
+[Neue oder aktualisierte Aufgabenleitfäden (Februar 2016)](new-task-guides-available-february-2016.md)
 
 
 

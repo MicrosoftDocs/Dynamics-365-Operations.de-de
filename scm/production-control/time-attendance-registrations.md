@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="time-and-attendance-registration"></a>Zeit- und Anwesenheitserfassung
 
+[!include[banner](../includes/banner.md)]
+
+
 Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. In diesem Artikel beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen. 
 
 <a name="registrations"></a>Registrierungen
@@ -62,7 +65,7 @@ Nach der Einrichtung können die Arbeitskräfte unterschiedliche Arten von Erfas
 -   Indirekte Aktivitäten, die unproduktive Aktivitäten einer Arbeitskraft während eines Arbeitstags sind. Beispiele dieser Aktivitäten sind Besprechungen oder das Säubern des Arbeitsbereichs.
 -   Überstunden, die als zusätzlich geleistete Stunden entweder als Zusatzstunden, Gleitzeit oder Überstunden erfasst werden können.
 
-## <a name="adding-clockout-registrations"></a>Hinzufügen von clockout Erfassungen
+## <a name="adding-clockout-registrations"></a>Hinzufügen von Ausstempelerfassungen
 Wenn Arbeitskräfte vergessen, am Ende des Arbeitstags auszustempeln, können Sie die fehlende Erfassungen für diese erstellen, indem Sie einen Batchauftrag ausführen. Das System vergleicht die Einstempeluhrzeit und die Ausstempeluhrzeit gemäß dem zugeordneten Profil der Arbeitskraft und fügt automatisch die fehlenden Ausstempelerfassung ein, um die Endzeit des Profils abzugleichen. Die Ein- und Ausstempelerfassungen sind für die folgende Berechnung und die Genehmigung von Zeiterfassungen vor der Übertragung an Lohnabrechnung enorm wichtig.
 
 ## <a name="calculating-registrations"></a>Berechnen von Erfassungen
@@ -113,6 +116,8 @@ Arbeitskräfte mit Arbeitsaufgaben, die kein direktes Feedback erfordern (z. B. 
 -   Zeitaufwand
 -   Projektgebühren
 -   Projektartikeln
+
+
 
 
 

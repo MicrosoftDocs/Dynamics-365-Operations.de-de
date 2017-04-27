@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delays"></a>Verzögerungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu verzögerten Daten in der Masterplanung. Ein verzögertes Datum ist ein realistisches Fälligkeitsdatum, das eine Transaktion erhält, wenn das früheste Erfüllungsdatum, das die Masterplanung berechnet, später ist als das angeforderte Datum.
 
 Der Produktprogrammplan kann das früheste Erfüllungsdatum für eine Buchung, für den Lieferzeiten, Materialverfügbarkeit, Kapazitätsverfügbarkeit und verschiedene Planungsparameter berechnen. 
@@ -41,11 +44,13 @@ Sie können konfigurieren, wie Verzögerungen für eine Dispositionssteuerungsgr
 
 Auf der Seite **Parameter für Produktprogrammplanung** können Sie die Startzeit für die Berechnung von Verzögerungen festlegen. Wenn ein Auftrag nach dieser Zeit erfüllt wird, addiert das System einen Tag Verzögerung zum Verzögerungsdatum des Auftrags hinzu. 
 
-** Hinweis: ** In älteren Versionen, bekannt berechnete Verzögerungen als *futures messages*, wird das Datum als *futures wenn das date*, und wenn eine Buchung werden als *a Buchung, die Sie set* war.
+**Hinweis:** In früheren Versionen waren berechnete Verzögerungen als *Verfügbarkeitsmeldungen* bekannt, das verzögerte Datum als *Verfügbarkeitsdatum*, und eine verzögerte Buchung war als *eine Buchung mit Erfüllung in der Zukunft* bekannt.
 
 <a name="see-also"></a>Siehe auch
 --------
 
 [Dispositionseinstellungen](coverage-settings.md)
+
+
 
 

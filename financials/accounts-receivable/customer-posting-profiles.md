@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="customer-posting-profiles"></a>Debitoren-Buchungsprofile
 
+[!include[banner](../includes/banner.md)]
+
+
 Kundenbuchungsprofile steuern die Buchungen von Kundentransaktionen im Hauptbuch.
 
 <a name="customer-posting-profiles"></a>Debitoren-Buchungsprofile
 -------------------------
 
-Debitoren-Buchungsprofile ermöglichen das Zuweisen von Hauptbuchkonten und Dokumenteinstellungen zu allen Debitoren, einer Debitorengruppe oder einem bestimmten Debitor. Diese Einstellungen werden verwendet, wenn Aufträge, Freitextrechnungen, Barzahlungen, Mahnschreiben und Zinsrechnungen erstellen. Bei einigen Buchungen können Sie ein Buchungsprofil auswählen, das sich von den in diesem Formular für Buchungen eingerichteten Buchungsprofilen unterscheidet und Vorrang vor diesen hat. 
+Debitoren-Buchungsprofile ermöglichen das Zuweisen von Hauptbuchkonten und Dokumenteinstellungen zu allen Debitoren, einer Debitorengruppe oder einem bestimmten Debitor. Diese Einstellungen werden verwendet, wenn Aufträge, Freitextrechnungen, Barzahlungen, Mahnschreiben und Zinsrechnungen erstellen werden. Bei einigen Buchungen können Sie ein Buchungsprofil auswählen, das sich von den in diesem Formular für Buchungen eingerichteten Buchungsprofilen unterscheidet und Vorrang vor diesen hat. 
 
 Das Buchungsprofil wird im Sachkonto- und Mehrwertsteuer-Inforegister auf der Debitorenparameterseite definiert. Das Buchungsprofil wird dann automatisch in den Kopf neuer Dokumente einbezogen. Dort können es bei Bedarf zu einem anderen Buchungsprofil ändern.
 
@@ -126,7 +129,7 @@ Wenn alle Debitorenbuchungen das gleiche Buchungsprofil besitzen sollen, richten
 
 ### 
 
-### <a name="table-restrictions"></a>**Table restrictions**
+### <a name="table-restrictions"></a>**Tabelleneinschränkungen**
 
 Hier können Sie für Buchungen mit dem ausgewählten Buchungsprofil angeben, ob die Buchungen automatisch ausgeglichen werden, ob eine Zinsberechnung erfolgt und ob Mahnschreiben erstellt werden. Darüber hinaus können Sie das Konto auswählen, das beim Abschließen von Buchungen mit dem ausgewählten Buchungsprofil verwendet wird.
 
@@ -138,6 +141,8 @@ Geben Sie die folgenden Werte an, um das Buchungsprofil einzurichten:
 | **Interesse**          | Aktivieren Sie diese Option, wenn für Debitorenkonten mit diesem Profil Zinsen auf Außenstände berechnet werden sollen. Ist diese Option deaktiviert, werden für diese Debitoren keine Zinsen berechnet.                                           |
 | **Mahnschreiben** | Aktivieren Sie diese Option, wenn für Debitorenkonten mit diesem Profil Mahnschreiben generiert werden sollen. Ist diese Option deaktiviert, werden für diese Debitoren keine Mahnschreiben generiert.                                                 |
 | **Schließen**             | Wählen Sie ein Buchungsprofil aus, das geändert werden soll, wenn Buchungen mit diesem Buchungsprofil abgeschlossen werden. Eine Buchung gilt als abgeschlossen, wenn sie vollständig ausgeglichen wurde.                                                                           |
+
+
 
 
 

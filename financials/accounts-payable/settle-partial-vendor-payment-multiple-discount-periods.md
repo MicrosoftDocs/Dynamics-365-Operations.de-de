@@ -1,5 +1,5 @@
 ---
-title: "Ausgleichen einer teilweise Kreditorenzahlung, die mehrere Rabattzeiträume hat"
+title: "Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat"
 description: "Dieser Artikel führt Sie durch ein Szenario, in dem mehrere Teilzahlungen an einen Kreditoren vorgenommen werden, der mehrere Skonti anbietet."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Ausgleichen einer teilweise Kreditorenzahlung, die mehrere Rabattzeiträume hat
+# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel führt Sie durch ein Szenario, in dem mehrere Teilzahlungen an einen Kreditoren vorgenommen werden, der mehrere Skonti anbietet. 
 
 Kreditor 3054 bietet Fabrikam ein Skonto von 2 Prozent, wenn eine Rechnung in fünf Tagen bezahlt wird, und ein Skonto von 1 Prozent, wenn die Rechnung in 14 Tagen beglichen wird.
 
 ## <a name="invoice"></a>Rechnung
-Am 28. Juni erstellt April eine Rechnung in Höhe von 1.000,00 für den Kreditor " 3054. Auf der Seite **Kreditorenbuchungen** kann April diese Transaktion anzeigen.
+Am 28. Juni erstellt April eine Rechnung über 1.000,00 für den Kreditor 3054. Auf der Seite **Kreditorenbuchungen** kann April diese Transaktion anzeigen.
 
 | Beleg   | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag   | Währung |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -48,7 +51,7 @@ Die folgenden Skontodatumsangaben und Beträge sind für diese Rechnung verfügb
 | 7/25/2015          | 0,00                 | 1.000,00                       |
 
 ## <a name="payment-on-july-2"></a>Zahlung am 2. Juli
-Am 2. Juli möchte April 300,00 für diese Rechnung leisten. Sie erstellt eine einmalige Zahlung, indem die Zahlungserfassung ** ** Seite im Kreditor verwendet. Sie fügt eine Position für Kreditor 3054 hinzu und gibt einen Zahlungsbetrag von **300.00** ein. April öffnet anschließend die Seite **Buchungen ausgleichen**, sodass Sie die Rechnung markieren kann, die ausgeglichen wird. Sie aktualisiert den Wert im Feld **Auszugleichender Betrag** auf **300,00** und bemerkt, dass der Wert im Feld **Zu verwendender Skontobetrag** auf **6,12** geändert ist. Da diese Zahlung im ersten Rabattzeitraum geleistet wird, wird ein Rabatt von 2 Prozent genommen.
+Am 2. Juli möchte April 300,00 Euro dieser Rechnung ausgleichen. Sie erfasst eine einmalige Zahlung, indem er die **Zahlungserfassung** in "Kreditoren" verwendet. Sie fügt eine Position für Kreditor 3054 hinzu und gibt einen Zahlungsbetrag von **300.00** ein. April öffnet anschließend die Seite **Buchungen ausgleichen**, sodass Sie die Rechnung markieren kann, die ausgeglichen wird. Sie aktualisiert den Wert im Feld **Auszugleichender Betrag** auf **300,00** und bemerkt, dass der Wert im Feld **Zu verwendender Skontobetrag** auf **6,12** geändert ist. Da diese Zahlung im ersten Rabattzeitraum geleistet wird, wird ein Rabatt von 2 Prozent genommen.
 
 | Markieren | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -134,6 +137,8 @@ Am 20. Juli erstellt April eine endgültige Zahlung von 200,00. Kein Rabatt wird
 | APP-10061  | 7/12/2015 |         | 495,00                               |                                       | 0,00    | USD      |
 | DISC-10061 | 7/12/2015 |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10062  | 20.07.2015 |         | 200,00                               |                                       | 0,00    | USD      |
+
+
 
 
 

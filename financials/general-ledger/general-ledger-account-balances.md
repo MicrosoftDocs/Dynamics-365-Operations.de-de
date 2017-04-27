@@ -1,6 +1,6 @@
 ---
 title: "Kontosalden für das Hauptbuch"
-description: "In diesem Artikel wird beschrieben zwei Möglichkeiten, Hauptbuchkontosalden anzeigen - Die Zwischenbilanzlistenseite und -Finanzberichte. Er erläutert auch, wie Dimensionssatzsalden aktualisiert werden."
+description: "In diesem Artikel werden zwei Möglichkeiten beschrieben, Hauptbuchkontosalden anzuzeigen: die Zwischenbilanzlistenseite und die Finanzberichte. Er erläutert auch, wie Dimensionssatzsalden aktualisiert werden."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger-account-balances"></a>Kontosalden für das Hauptbuch
 
-In diesem Artikel wird beschrieben zwei Möglichkeiten, Hauptbuchkontosalden anzeigen - Die Zwischenbilanzlistenseite und -Finanzberichte. Er erläutert auch, wie Dimensionssatzsalden aktualisiert werden.
+[!include[banner](../includes/banner.md)]
+
+
+In diesem Artikel werden zwei Möglichkeiten beschrieben, Hauptbuchkontosalden anzuzeigen: die Zwischenbilanzlistenseite und die Finanzberichte. Er erläutert auch, wie Dimensionssatzsalden aktualisiert werden.
 
 Es gibt verschiedene Methoden, mit denen Benutzer Salden im Hauptbuch anzeigen können. Zu den häufig verwendeten Optionen gehören Folgende:
 
@@ -46,6 +49,8 @@ Wenn ein Benutzer die Parameter ändert, werden die Salden aktualisiert. Benutze
 
 Benutzer können Details für die Salden und somit die Transaktionen anzeigen, die den Saldo bilden.    
 
-Weitere Informationen finden Sie Ansichtsfinanzberichte []( view-financial-reports.md).
+Weitere Informationen hierzu finden Sie unter [Finanzberichte anzeigen](view-financial-reports.md).
+
+
 
 

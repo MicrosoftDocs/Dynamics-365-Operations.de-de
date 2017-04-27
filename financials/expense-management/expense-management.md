@@ -26,8 +26,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="expense-management"></a>Spesenverwaltung
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 [Planung der Spesenverwaltung](plan-expense-management.md) weitere Informationen werden später hinzugefügt.
+
+
 
 

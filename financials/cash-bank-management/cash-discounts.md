@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cash-discounts"></a>Skonti
 
+[!include[banner](../includes/banner.md)]
+
+
 Skonti werden für Kreditoren und Debitoren eingerichtet und freigegeben.  Das verfügbare Skonto kann auf der Debitorenrechnung oder der Kreditorenrechnung definiert werden und wird übernommen, wenn die Rechnung innerhalb des Skontodatums bezahlt wird. 
 
 <a name="cash-discounts"></a>Skonti
@@ -61,8 +64,8 @@ Die Buchhaltungswährung der juristischen Person ist EUR, und für US-Dollar sin
 -   1. Februar = 110
 -   1. März = 80
 
-Eine Rechnung in Höhe von 1.000 US-Dollar mit den Skontobedingungen von 20D2% wird am 15. Februar gebucht. Der Rechnungsbetrag in der Buchhaltungswährung beträgt 1.100 EUR. Eine Zahlung in Höhe von 980 US-Dollar wird mit der Rechnung vom 1. März ausgeglichen. Der Skontobetrag ist 20 US-Dollar. Der Zahlungsbetrag in der Buchhaltungswährung ist 784 EUR. Der Buchhaltungswährungsbetrag des Skontos wird berechnet, indem seit dem 1. März den Wechselkurs verwendet: 20 \* 80/100 = 16 EUR.
-| **Note**                                                                                                                                                                                                                             |
+Eine Rechnung in Höhe von 1.000 US-Dollar mit den Skontobedingungen von 20D2% wird am 15. Februar gebucht. Der Rechnungsbetrag in der Buchhaltungswährung beträgt 1.100 EUR. Eine Zahlung in Höhe von 980 US-Dollar wird mit der Rechnung vom 1. März ausgeglichen. Der Skontobetrag ist 20 US-Dollar. Der Zahlungsbetrag in der Buchhaltungswährung ist 784 EUR. Der Buchhaltungswährungsbetrag des Skontos wird mit dem Wechselkurs am 1. März berechnet: 20 \* 80 / 100 = 16 EUR.
+| **Hinweis**                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wenn die Option "Skonti für Teilzahlungen berechnen" auf der Debitorenparameter- oder Kreditorenparameterseite aktiviert ist, wird der Wechselkurs, der am Tag der jeweiligen Teilzahlung gültig ist, verwendet. |
 
@@ -70,5 +73,7 @@ Eine Rechnung in Höhe von 1.000 US-Dollar mit den Skontobedingungen von 20D2% w
 =
 
  
+
+
 
 

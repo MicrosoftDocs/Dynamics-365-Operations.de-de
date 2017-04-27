@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-entry-deadlines"></a>Fristen für Auftrag
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu Auftragserfassungsfristen. Eine Auftragserfassungsfrist ist eine Sperrzeit, die bestimmt, ob ein Kundenauftrag als am aktuellen Tag oder dem nächsten Tag empfangen behandelt (und erfüllt) werden soll.
 
 In vielen Unternehmen werden Aufträge, die bis zu einer bestimmten Uhrzeit eingegangen sind, so behandelt, als er wären sie am gleichen Tag erfasst worden. Alle Aufträge, die nach diesem Zeitpunkt eingehen, werden so behandelt, als ob sie am nächsten Werktag eingehen. Diese Sperrzeit für Aufträge wird Frist für die Auftragserfassung genannt.  
@@ -43,7 +46,7 @@ Verfügt das Unternehmen über mehrere Standorte, lassen sich Auftragsfristen f�
 Auf der Seite **Fristenkombinationen für Aufträge aktivieren** definieren Sie die Kombinationen von Standorten und Fristengruppen für Aufträge, die zulässig sind.
 
 ## <a name="example-order-entry-deadline"></a>Beispiel: Auftragsfrist
-Die Frist für den Auftrag an Dienstagen wurde auf 16:00 festgelegt. An einem bestimmten Dienstag versuchen Sie um 17:00 Uhr, das aktuelle Datum als Versanddatum festzulegen. "Hinweis, dass keine Lieferzeit für dieses Beispiel wird). ** Lieferdatumskontrolle ** Wenn das Kontrollkästchen aktiviert ist, erhalten Sie eine Warnung, die angibt, dass das Datum nicht gültig ist. Diese Warnung wird auf der Seite **Verfügbare Versand- und Eingangsdaten** angezeigt, auf der Sie dann auch alternative Daten auswählen können.
+Die Frist für den Auftrag an Dienstagen wurde auf 16:00 festgelegt. An einem bestimmten Dienstag versuchen Sie um 17:00 Uhr, das aktuelle Datum als Versanddatum festzulegen. (Beachten Sie, dass es keine Lieferzeit für dieses Beispiel gibt). Wenn das Kontrollkästchen **Lieferdatumskontrolle** aktiviert ist, erhalten Sie eine Warnung, dass das Datum nicht gültig ist. Diese Warnung wird auf der Seite **Verfügbare Versand- und Eingangsdaten** angezeigt, auf der Sie dann auch alternative Daten auswählen können.
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Beispiel: Unterschiedliche Auftragsfristen pro Standort
 Ihr Unternehmen verfügt über zwei Standorte. Die Standorte befinden sich in verschiedenen Zeitzonen, wie in der folgenden Tabelle gezeigt.
@@ -55,7 +58,7 @@ Ihr Unternehmen verfügt über zwei Standorte. Die Standorte befinden sich in ve
 
 Für Standort A und B sind die folgenden Auftragsfristen definiert.
 
-| Tag der Woche             | A: Auftragsfristen (PST) | B: Auftragsfristen (EST) |
+| Tag der Woche             | A: Fristen für Auftrag (PST) | B: Fristen für Auftrag (EST) |
 |-----------------------------|--------------------------------|--------------------------------|
 | Montag                      | 13:00                          | 14:00                          |
 | Dienstag                     | 13:00                          | 14:00                          |
@@ -67,7 +70,7 @@ Sie sind Auftragsbearbeiter und befinden sich in Utah, also in der Zeitzone MST 
 
 In der folgenden Tabelle sind die in MST umgerechneten Auftragsfristen für Standort A und B dargestellt.
 
-| Standort A: PST         | Standort A: MST        | Standort B: EST           | Standort B: MST        |
+| Standort A (PST)         | Standort A (MST)        | Standort B (EST)           | Standort B (MST)        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 14:00                 | 12:00              |
 
@@ -95,7 +98,7 @@ Sie sind Auftragsbearbeiter und befinden sich in Utah, also in der Zeitzone MST 
 
 In der folgenden Tabelle sind die in MST umgerechneten Auftragsfristen für Standort A und B dargestellt.
 
-| Standort A: PST         | Standort A: MST        | Standort B: EST           | Standort B: MST        |
+| Standort A (PST)         | Standort A (MST)        | Standort B (EST)           | Standort B (MST)        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 13:00                 | 11:00              |
 
@@ -104,6 +107,8 @@ In der folgenden Tabelle sind die in MST umgerechneten Auftragsfristen für Stan
 <a name="see-also"></a>Siehe auch
 --------
 
-[Delivery schedules](delivery-schedules.md)
+[Lieferzeitpläne](delivery-schedules.md)
+
+
 
 

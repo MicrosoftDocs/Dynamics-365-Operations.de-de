@@ -1,6 +1,6 @@
 ---
-title: Produktnummerennomenklatur
-description: "In diesem Thema wird beschrieben, wie Sie eine Produktnummerennomenklatur einrichten können, um das Format zu ersetzen feste, [Produktmasternummer - Konfiguration - Größe - Farbe - Stil ]gezielten, einem Format, das Produktmasternummer, die aktive Produktdimensionen Text und die trennzeichen Auswahl enthält. Sie können auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten."
+title: Produktnummerbezeichnung
+description: "In diesem Thema wird beschrieben, wie Sie eine Produktnummerbezeichnung einrichten können, um das feste Format [Produktmasternummer: Konfiguration: Größe: Farbe: Stil] mit einem Zielfoirmat zu ersetzen, das Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen für Ihre Auswahl enthält. Sie können auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-number-nomenclature"></a>Produktnummerennomenklatur
+# <a name="product-number-nomenclature"></a>Produktnummerbezeichnung
 
-In diesem Thema wird beschrieben, wie Sie eine Produktnummerennomenklatur einrichten können, um das Format zu ersetzen feste, [Produktmasternummer - Konfiguration - Größe - Farbe - Stil ]gezielten, einem Format, das Produktmasternummer, die aktive Produktdimensionen Text und die trennzeichen Auswahl enthält. Sie können auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten.
+[!include[banner](../includes/banner.md)]
+
+
+In diesem Thema wird beschrieben, wie Sie eine Produktnummerbezeichnung einrichten können, um das feste Format [Produktmasternummer: Konfiguration: Größe: Farbe: Stil] mit einem Zielfoirmat zu ersetzen, das Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen für Ihre Auswahl enthält. Sie können auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten.
 
 Die neue Bezeichnung  der Produktvariantennummernbezeichnung ermöglicht den Einbezug von Segmenten im Produktvariantenbezeichner. Diese Segmente können die Produktmasternummern, Produktdimensionen, Nummernkreise, Sequenzen, Textkonstanten und Attribute enthalten. Mit dieser Funktionalität können Sie schnell eine bestimmte Produktvariante suchen, wenn einen Auftrag oder eine Bestellung erstellen.
 
@@ -66,7 +69,7 @@ Ein T-Shirt (TS1234) wird in 3 verschiedenen Größen (S, M, L), 4 verschiedenen
 
 Die Produktvariantennummer für Rot, Small, Polo ist: TS1234-Rot-Small-Polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Zum von constraintbased Konfigurationen
+## <a name="nomenclature-of-constraintbased-configurations"></a>Einschränkungsbasierte Konfigurationen-Bezeichnung
 Für einschränkungsbasierte Konfigurationen kann eine für die dedizierte zum Konfigurationsproduktdimension angegeben werden. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen.
 
 -   Nummernkreiswert
@@ -90,8 +93,8 @@ Eine Konfigurationsbezeichnung wird nach folgenden Segmenten definiert:
 
 Die Kennung für hölzernes Material mit einer Länge von 78 erhält folgende Konfiguration: ID: WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Zum von dimensionbased Konfigurationen
-Für eine dimensionsbasierte Konfigurationen kann eine für die dedizierte zum Konfigurationsproduktdimension angegeben werden. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen.
+## <a name="nomenclature-of-dimensionbased-configurations"></a>Dimensionsbasierte Konfigurationsbezeichnung
+Für dimensionsbasierte Konfigurationen kann eine für die dedizierte zum Konfigurationsproduktdimension angegeben werden. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen.
 
 -   Nummernkreiswert
 -   Textkonstante
@@ -132,7 +135,7 @@ Wenn Sie entweder einschränkungsbasierte oder dimensionsbasierte Konfigurations
 In diesem Beispiel können Sie eine Produktvariantennummernbezeichnung verwenden, die aus den folgenden Segmente besteht:
 
 1.  Produktmasternummer
-2.  Konstantes Text"\_"
+2.  Textkonstante '\_'
 3.  Variante
 
 Die Konfigurationsbezeichnung kann aus den folgenden Segmenten bestehen:
@@ -180,7 +183,7 @@ Ein Fehler tritt auf, wenn Sie manuell oder automatisch versuchen, Produktvarian
 
 ### <a name="constraint-based-configurations"></a>Einschränkungsbasierte Konfigurationen
 
-Abhängig von der Bezeichung versucht das System möglicherweise, eine nicht eindeutige Produktvariantennummer zu einer Konfiguration hinzuzufügen. In diesem Fall verwendete das System den Nummernkreis die Variantendimension für die als Produktvariantennummer stattdessen. Wenn dies der Fall ist, erhalten Sie eine Warnung. Um dies zu vermeiden, sollten Sie genügend Attribute in der Bezeichnung einschließen, um die Eindeutigkeit sicherzustellen und sicherzustellen, dass die Option **Wiederverwenden** für die Komponente aktiviert ist.
+Abhängig von der Bezeichung versucht das System möglicherweise, eine nicht eindeutige Produktvariantennummer zu einer Konfiguration hinzuzufügen. In diesem Fall verwendete das System den Nummernkreis für die Konfigurationsdimension als Produktvariantennummer stattdessen. Wenn dies der Fall ist, erhalten Sie eine Warnung. Um dies zu vermeiden, sollten Sie genügend Attribute in der Bezeichnung einschließen, um die Eindeutigkeit sicherzustellen und sicherzustellen, dass die Option **Wiederverwenden** für die Komponente aktiviert ist.
 
 ### <a name="dimension-based-configurations"></a>Dimensionsbasierte Konfigurationen
 
@@ -191,8 +194,10 @@ Der Konfigurationsprozess enthält einen Schritt, in dem das System einen Konfig
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen einer Produktnummerennomenklatur für vordefinierte Produktvarianten " Aufgabenleitfaden)]http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/) "
+[Erstellen einer Produktnummerenbezeichnung für vordefinierte Produktvarianten (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
-[Erstellen einer Produktnummerennomenklatur für konfigurierte Produktvarianten " Aufgabenleitfaden)]http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/) "
+[Erstellen einer Produktnummerenbezeichnung für vordefinierte Produktvarianten (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+
+
 
 

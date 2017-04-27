@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-line-item-workflow"></a>Konfigurieren eines Positionsworkflows
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Thema wird erläutert, wie das Positionsworkflowelement konfiguriert wird.
 
 Klicken Sie zum Konfigurieren eines Positionsworkflowelements im Workflow-Editor mit der rechten Maustaste auf das Element, und klicken Sie dann auf **Eigenschaften**, um die Seite **Eigenschaften** zu öffnen. Verwenden Sie die folgenden Verfahren, um die Eigenschaften des Positionsworkflowelements zu konfigurieren.
 
-## <a name="name-the-lineitem-workflow-element"></a>Name lineitem das Workflowelement
+## <a name="name-the-lineitem-workflow-element"></a>Benennen des Positionsworkflowelements
 Gehen Sie folgendermaßen vor, um einen Namen für das Positionsworkflowelement einzugeben.
 
 1.  Klicken Sie im linken Bereich auf **Grundeinstellungen**.
@@ -50,6 +53,8 @@ Gehen Sie folgendermaßen vor, um anzugeben, ob derselbe Workflow zum Verarbeite
     6.  Klicken Sie auf **Test**, um zu überprüfen, ob die eingegebenen Bedingungen korrekt konfiguriert sind. Auf der Seite **Workflowbedingung testen** im Bereich **Bedingung überprüfen** wählen Sie einen Datensatz aus und klicken auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht. Klicken Sie auf **OK** oder **Abbrechen**, um zur Seite **Eigenschaften** zurückzukehren.
 
     Wählen Sie auf der Registerkarte **Workflow** den Workflow aus, der verwendet werden soll zum Verarbeiten von Positionen, die die definierten Bedingungen erfüllen.
+
+
 
 
 

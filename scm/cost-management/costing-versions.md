@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-versions"></a>Nachkalkulationsversionen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu Nachkalkulationsversionen, deren Verwaltung und die Datentypen, die Sie darin einschließen können. Der Hauptzweck einer Nachkalkulationsversion besteht in der Speicherung von Kostendatensätzen für Artikel sowie von Kostenkategorien und Berechnungsformeln für indirekte Kosten.
 
 Abhängig von den in einer Nachkalkulationsversion enthaltenen Daten kann eine Nachkalkulation einen oder auch mehrere Zwecke erfüllen. Der Hauptzweck einer Nachkalkulationsversion besteht in der Speicherung von Kostendatensätzen für Artikel sowie von Kostenkategorien und Berechnungsformeln für indirekte Kosten. Eine Nachkalkulationsversion kann eine Gruppe von Standardkostendatensätzen oder eine Gruppe von Datensätzen mit geplanten Kosten enthalten, die auf dem der Nachkalkulationsversion zugewiesenen Nachkalkulationstyp basieren.
@@ -63,5 +66,7 @@ Der Hauptgrund zum Aktivieren von Einkaufspreisdaten besteht im Definieren von E
 Zum Aktivieren von Einkaufspreisinformationen definieren Sie zunächst eine Herstellkostenkalkulationsgruppe mit dem Einstandspreismodell für den Einkaufspreis des Artikels, und weisen Sie die Herstellkostenkalkulationsgruppe eingekauften Artikeln zu. Daraufhin verwenden Sie ein Einstandspreismodell für die Herstellkostenkalkulationsgruppe, wenn Herstellkostenkalkulationen mit geplanten Kosten ausgeführt werden, um den Verkaufspreis produzierter Artikel zu berechnen. 
 
 Die Einkaufspreisdatensätze für Artikel dienen auch zu Referenzzwecken. Durch Ändern des Status des Einkaufspreisdatensatzes eines Artikels von **Ausstehend** zu **Aktiv** kann der Basiseinkaufspreis des Artikels aktualisiert werden. Der Basiseinkaufspreis ist jedoch nicht standortspezifisch und kann manuell außer Kraft gesetzt werden. Der Basiseinkaufspreis des Artikels wird als Standardeinkaufspreis für Bestellungen genutzt.
+
+
 
 

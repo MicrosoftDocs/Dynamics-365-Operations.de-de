@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Standardgegenkonten für Kreditorenrechnungserfassungen und Rechnungsgenehmigungserfassungen
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Standardgegenkonten werden auf den folgenden Kreditorenrechnungserfassungs-Seiten verwendet:
@@ -92,6 +95,8 @@ Verwenden Sie die folgende Tabelle, um zu entscheiden, wohin Standardkonten für
 </tr>
 </tbody>
 </table>
+
+
 
 
 

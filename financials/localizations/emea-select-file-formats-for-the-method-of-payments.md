@@ -1,6 +1,6 @@
 ---
 title: "Dateiformate für Zahlungsmethoden"
-description: "In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwenden können."
+description: "In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwendet werden können, beschrieben."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,29 +27,34 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="file-formats-for-methods-of-payment"></a>Dateiformate für Zahlungsmethoden
 
-In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwenden können.
+[!include[banner](../includes/banner.md)]
 
-Zwei Methoden, die Sie verwenden können, um die Dateiformate für die Verwendung mit Zahlungsmethoden, elektronische meldende Dateiformate (ER)- oder X++-Dateiformate abzurufen. Wenn Sie eine Zahlungsmethode für einen Debitor oder Kreditor einrichten, geben Sie an, welche Dateiformate und Standardwerten für Zahlungen verwendet werden sollen und wie Zahlungen verarbeitet werden. Sie können folgende Typen von Formaten auswählen:
+
+In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwendet werden können, beschrieben.
+
+Es gibt zwei Methoden, die Sie verwenden können, um die Dateiformate für die Verwendung mit Zahlungsmethoden, elektronischen Meldedateiformaten (ER)- oder X++-Dateiformate abzurufen. Wenn Sie eine Zahlungsmethode für einen Debitor oder Kreditor einrichten, geben Sie an, welche Dateiformate und Standardwerten für Zahlungen verwendet werden sollen und wie Zahlungen verarbeitet werden. Folgende Formattypenb stehen zur Auswahl:
 
 -   Warenexport
 -   Warenimport
 -   Zurück
 -   Geldtransfer
 
-### <a name="method-1-electronic-reporting-file-formats"></a>Methode 1: Elektronische Berichterstellungsdateiformate
+### <a name="method-1-electronic-reporting-file-formats"></a>Methode 1: Elektronische Berichterstellungsformate
 
-Die Dateiformate, die auf Grundlage ER-Konfigurationen befinden, müssen Sie die von den Konfigurationen Lebenszyklus-Dienstleistungen (LCS) importieren. Weitere Informationen finden Sie Berichterstellungskonfigurationen [elektronische des Downloads von den Lebenszyklus-Dienstleistungen]( /dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Nachdem Sie diese Berichterstellungskonfigurationen für Dateiformate, importieren sind die importierten Formate verfügbar, Zahlungsmethoden ** ** auf der Seite auswählen. Der Prozess für den Import und die Auswahl von Dateiformaten für Europa ist der Verfahren für ähnlich Japan. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
+Für Dateiformate, die auf der Grundlage der ER-Konfigurationen basieren, müssen Sie die Konfigurationen aus dem Lifecycle Services (LCS) importieren. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Nachdem Sie diese Berichterstellungskonfigurationen für Dateiformate importieren haben, sind die importierten Formate verfügbar auf der Seite **Zahlungsmethoden**. Der Prozess für den Import und die Auswahl von Dateiformaten für Europa ist gleich wie die Prozedur für Japan. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
 
 ### <a name="method-2-x-file-formats"></a>Methode 2: X++-Dateiformate
 
-Dateiformate auszuwählen Um die auf Grundlage X++-Code sind, führen Sie die folgenden Schritte aus.
+Um Dateiformate auszuwählen, die auf der Grundlage X++-Code basieren, führen Sie die folgenden Schritte aus.
 
-1.  Zur ** Zahlungsmethoden ** Seite.
-2.  Wählen Sie im Inforegister ** Dateiformate ** klicken Sie ** ** Einstellungen.
+1.  Gehen Sie zur Seite **Zahlungsmethode**
+2.  Wählen Sie im Inforegister **Dateiformate** **Einstellungen**.
 3.  Wählen Sie die Registerkarte aus, die dem Dateiformattyp entspricht.
-4.  Wählen Sie ein Dateiformat aus der Liste verfügbar ** ** aus und verschieben Sie diese in die Liste aktiviert ** ** mit dem Pfeilsteuerelement.
-5.  Schließt die ** Dateiformate für Zahlungsmethoden ** Seite.
-6.  Wählen Sie im Inforegister ** Dateiformate ** Wählen Sie das Dateiformat aus, um für die Zahlungsmethode aus dem entsprechenden Dateiformatfeld zu verwenden. Die allgemeinen elektronischen Berichtsoptionen sollen ** no ** für X++-Dateiformate festgelegt werden.
+4.  Wählen Sie ein Dateiformat aus der Liste **Verfügbar** aus und verschieben Sie diese mit dem Pfeilsteuerelement in die Liste **Ausgewählt**.
+5.  Schließen Sie das Formular **Dateiformate für Zahlungsmethoden**.
+6.  Wählen Sie im Inforegister **Dateiformate** das Dateiformat für die Zahlungsmethode aus dem entsprechenden Dateiformatfeld aus. Die allgemeinen elektronischen Berichtsoptionen sollen **Nein** für X++-Dateiformate sein.
+
+
 
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Aufheben, Wiedererheben oder Stornieren von Zinsgebühren
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Belastungen für Zinsen und Gebühren erlassen, erfasst und umgekehrt werden.
 
 Sie können durch Klicken auf die Schaltflächen der Registerkarte **Mahnen** auf der Listenseite **Alle Debitoren** Gebühren aufheben, stornieren oder wiedererheben:
@@ -43,7 +46,7 @@ Mit all diesen Aktivitäten werden Zinsrechnungen geändert. Dabei handelt es si
 | Stornieren vollständiger Zinsrechnungen. – Oder – Stornieren von ausgewählten Zinsbuchungen, die Teil von Zinsrechnungen sind. **Hinweis:** Sie können eine Gebühr nicht stornieren. Sie können jedoch eine ganze Zinsrechnung stornieren, die eine Gebühr umfasst. | Die Gebühren sind seitens des Debitors nicht mehr fällig. Allerdings werden die Gebühren wieder fällig, wenn die Zinsen neu berechnet werden. | Der Prozess ist identisch mit der Aufhebung von Zinsrechnungen oder von ausgewählten Zinsbuchungen. Eine Gutschrift oder eine Anpassungsrechnung wird für den Debitor erstellt. Diese Gutschrift wird zum automatischen Ausgleich der Zinsrechnung verwendet. Sie können Zinsen in einem separaten Prozess neu berechnen und eine neue Zinsrechnung erstellen.                                                                                                                                                                                                                                                                                                                                                                                              |
 
 > [!NOTE] 
-> Sie können einen separaten Prozess auch verwenden, um Dabei werden. Durch diesen Prozess werden alle Debitorenbuchungen für den Ausgleich markiert, anstatt nur die Gebühren als Teil von Zinsrechnungen aufzuheben.
+> Sie können auch einen separaten Prozess verwenden, um uneinbringliche Außenstände abzuschreiben. Durch diesen Prozess werden alle Debitorenbuchungen für den Ausgleich markiert, anstatt nur die Gebühren als Teil von Zinsrechnungen aufzuheben.
 
 ## <a name="adjust-interest-for-invoices"></a>Zinsanpassung für Rechnungen
 Neben der Anpassung von Zinsrechnungen können mit einem der folgenden Prozesse auch Zinskosten in Rechnungen entfernt werden. In beiden Prozessen können auch Anpassungen an den zugehörigen Zinsrechnungen vorgenommen werden.
@@ -89,5 +92,7 @@ Sie können Zinsbuchungen stornieren, indem Sie die Schaltfläche **Buchungszins
 Sie können den detaillierten Verlauf der Anpassungen anzeigen, die für Zinsrechnungen vorgenommen wurden, zum Beispiel den Benutzer, von dem die Anpassung eingegeben wurde, den Typ der Anpassung, den Betrag und den Zeitpunkt, zu dem die Anpassung eingegeben wurde. Zum Beispiel möchten Sie vor dem Erstellen einer neuen Zinsrechnung die vorherigen Anpassungen anzeigen, die für eine Zinsrechnung eingegeben wurden. 
 
 Sie können Zinsbuchungen stornieren, indem Sie die Schaltfläche **Verlauf** auf der Registerkarte **Mahnen** der Seite **Debitor** verwenden.
+
+
 
 

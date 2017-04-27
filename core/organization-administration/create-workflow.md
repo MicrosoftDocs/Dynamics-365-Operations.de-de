@@ -26,15 +26,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-workflow"></a>Erstellen eines Workflows
 
+[!include[banner](../includes/banner.md)]
+
+
 Diese Themen erläutert, wie Sie einen Workflow erstellen.
 
 <a name="open-the-workflow-editor"></a>Öffnen des Workflow-Editors
 ------------------------
 
-Das Microsoft Dynamics 365 für Arbeitsgangsmodul, in dem Sie arbeiten, bestimmt die Workflowtypen, die Sie erstellen können. Gehen Sie folgendermaßen vor, um den Workflowtyp zum Erstellen und Öffnen des Workflow-Editors auszuwählen.
+Das Microsoft Dynamics 365 for Operations-Modul, in dem Sie arbeiten, bestimmt die Workflowtypen, die Sie erstellen können. Gehen Sie folgendermaßen vor, um den Workflowtyp zum Erstellen und Öffnen des Workflow-Editors auszuwählen.
 
 1.  Öffnen Sie das Modul, für das Sie einen neuen Workflow erstellen möchten. Sie können beispielsweise einen Workflow für Bestellanforderungen erstellen. Klicken Sie dazu auf **Beschaffung**.
-2.  ** Auf Einstellungen ** &gt; **\[Modulnamen-\] **.
+2.  Klicken Sie auf **Einrichten** &gt; **\[Modulname\] Workflows**.
 3.  Klicken Sie auf der Listenseite im Aktivitätsbereich auf der Registerkarte auf **Neu**.
 4.  Wählen Sie auf der Seite **Workflow erstellen** den Typ des Workflows aus, den Sie erstellen möchten und klicken Sie dann **Workflow erstellen**. Der Workflow-Editor wird angezeigt. Verwenden Sie jetzt die folgenden Verfahren zum Entwerfen des Workflows.
 
@@ -75,6 +78,8 @@ Führen Sie zum Speichern und Aktivieren des Workflows die folgenden Schritte au
 3.  Wenn alle Fehler und Warnungen behoben wurden, wird die Seite **Workflow aktivieren** angezeigt. Folgende Optionen stehen zur Auswahl:
     -   Klicken Sie zum Aktivieren dieser Version des Workflows auf **Neue Version aktivieren**. Wenn ein Workflow aktiv ist, können Benutzer Dokumente zwecks Verarbeitung übermitteln.
     -   Wenn diese Version nicht aktiviert werden soll, klicken Sie **Neue Version nicht aktivieren** an. Der Workflow kann auch später aktiviert werden.
+
+
 
 
 

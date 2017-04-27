@@ -40,7 +40,7 @@ Ein Umlagerungserfassungsereignis wird erfasst. Das Ereignis überträgt ein St�
 
 ### <a name="example-2-cost-entries-are-created"></a>Beispiel 2: Kosteneinträge werden erstellt
 
-Ein Umlagerungserfassungsereignis wird erfasst. Das Ereignis überträgt zur Produktion eines Artikels von einem Standort an Standort 1. 2. Die Standortlagerdimension wird als Teil des Kostenträgers. Daher erstellt das Ereignis zwei Lagerbuchungen und zwei Kosteneinträge.
+Ein Umlagerungserfassungsereignis wird erfasst. Das Ereignis überträgt zur Produktion eines Artikels von einem Standort 1 an Standort 2. Die Standortlagerdimension wird als Teil des Kostenträgers betrachtet. Daher erstellt das Ereignis zwei Lagerbuchungen und zwei Kosteneinträge.
 
 ### <a name="example-3-one-cost-entry-is-created"></a>Beispiel 3: Ein Kosteneintrag wird erstellt
 
@@ -59,11 +59,11 @@ Die neue **Kosteneinträge**-Seite ermöglicht die Anzeige und Steuerung von Erf
 | 00002   | 20.01.2015 | Bestellung | 100001 | 0000101 |               |               |          | 100,00  |
 | 00003   | 31.01.2015 | Regulierung     | 100001 | 0000101 |               |               |          | 15:00   |
 
-Die **Kosteneinträge**-Seite ermöglicht das Filter nach der Dokumentenkennung und dem Dokumentdatum. ** Hinweis: ** Einträge mit Kosten sind nur für cost-object.md [] (Kostenträger) oder freigegebene Produkte verfügbar.
+Die **Kosteneinträge**-Seite ermöglicht das Filter nach der Dokumentenkennung und dem Dokumentdatum. **Hinweis:** Kosteneinträge sind nur für [Kostenobjekte](cost-object.md) oder freigegebene Produkte verfügbar.
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Cost objects](cost-object.md)
+[Kostenobjekte](cost-object.md)
 
 

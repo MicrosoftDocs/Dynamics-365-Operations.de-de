@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-rules"></a>Überwachungsrichtlinienregeln
 
+[!include[banner](../includes/banner.md)]
+
+
 Mithilfe von Überwachungsrichtlinien kann zur Sicherheit überprüft werden, ob Spesenabrechnungen, Kreditorenrechnungen und Bestellungen den von Ihnen erstellten Richtlinienregeln entsprechen. Alle Regeln, die einer Überwachungsrichtlinie zugeordnet sind, werden nach einem von Ihnen angegeben Zeitplan im Stapelverarbeitungsmodus ausgeführt.  Jede Richtlinienregel ist eine Instanz eines Richtlinienregeltyps. Für jeden Richtlinienregeltyp kann jeweils nur eine Richtlinienregel aktiv sein. 
 
 <a name="queries-and-query-types"></a>Abfragen und Abfragetypen
@@ -97,5 +100,7 @@ Alle Richtlinienregeln für eine bestimmte Überwachungsrichtlinie besitzen dies
 --------
 
 [Überwachungsrichtlinienverletzungen und -anfragen](audit-policy-violations-cases.md)
+
+
 
 

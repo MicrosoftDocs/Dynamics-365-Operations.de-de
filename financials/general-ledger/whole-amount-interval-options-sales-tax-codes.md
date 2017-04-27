@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt die Optionen des Felds "Berechnungsmethoden" für Mehrwertsteuercodes und wie die Mehrwertsteuer für Intervalle und gesamte Beträge berechnet wird.
 
 Sie können einen Mehrwertsteuercode so einrichten, dass er basierend auf einen ganzen Betrag oder einen Intervallbetrag berechnet wird. Verwenden Sie auf der Seite "Mehrwertsteuercodes" das Feld "Berechnungsmethode" im Inforegister "Berechnung", um auszuwählen, wie der Mehrwertsteuercode berechnet werden soll.
@@ -56,10 +59,10 @@ Die Mehrwertsteuer wird mit dem gesamten steuerpflichtigen Betrag veranschlagt.
 
 | Steuerpflichtiger Betrag (Preis) | Herstellkostenkalkulation    | Mehrwertsteuer |
 |------------------------|----------------|-----------|
-| 35,00                  | 35.00 \* 0.30  | 10,50     |
-| 50,00                  | 50.00 \* 0.30  | 15:00     |
-| 85,00                  | 85.00 \* 0.20  | 17,00     |
-| 305,00                 | 305.00 \* 0.10 | 30,50     |
+| 35,00                  | 35,00 \* 0,30  | 10,50     |
+| 50,00                  | 50,00 \* 0,30  | 15:00     |
+| 85,00                  | 85,00 \* 0,20  | 17,00     |
+| 305,00                 | 305,00 \* 0,10 | 30,50     |
 
 ## <a name="example-interval-method-of-calculation"></a>Beispiel: Berechnungsmethode mit Intervall
 Auf der Seite "Werte" werden Mehrwertsteuersätze für die folgenden Intervalle eingerichtet:
@@ -75,14 +78,16 @@ Die Mehrwertsteuer wird aus der Summe der Steuerbeträge gebildet, die für die 
 
 | Steuerpflichtiger Betrag (Preis) | Herstellkostenkalkulation                                                               | Mehrwertsteuer |
 |------------------------|---------------------------------------------------------------------------|-----------|
-| 35,00                  | 35.00 \* 0.30                                                             | 10,50     |
-| 50,00                  | 50.00 \* 0.30                                                             | 15:00     |
-| 85,00                  | (50.00 \* 0.30 = 15.00) + (35.00 \* 0.20 = 7.00)                          | 22,00     |
-| 305,00                 | (50.00 \* 0.30 = 15.00) + (50.00 \* 0.20 = 10.00) + (205 \* 0.10 = 20.50) | 45,50     |
+| 35,00                  | 35,00 \* 0,30                                                             | 10,50     |
+| 50,00                  | 50,00 \* 0,30                                                             | 15:00     |
+| 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
+| 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
 
  
 
-Weitere Informationen finden Sie Verkaufssteuersätze [auf Grundlage die Berechnungsgrundlage und Berechnungsmethoden die Felder marginal-base-field.md]() festgelegt.
+Weitere Informationen erhalten Sie unter [Bestimmen von Mehrwertsteuersteuersätzen auf Grundlage der Felder Berechnungsgrundlage und Berechnungsmethode](marginal-base-field.md).
+
+
 
 
 

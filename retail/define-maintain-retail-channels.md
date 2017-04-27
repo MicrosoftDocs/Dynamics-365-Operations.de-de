@@ -1,6 +1,6 @@
 ---
 title: "Einzelhandelskanäle definieren und verwalten"
-description: "Dieser Artikel wird eine Übersicht über den Prozess zum Einrichten von Filialen physischen fest, die diesen als in Microsoft Dynamics 365 für Arbeitsgänge belegen. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten."
+description: "Dieser Artikel gibt einen Überblick über den Prozess für das Einrichten von physischen Shops, die in Microsoft Dynamics 365 for Operations als Einzelhandelsshops bezeichnet werden. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="define-and-maintain-retail-channels"></a>Einzelhandelskanäle definieren und verwalten
 
-Dieser Artikel wird eine Übersicht über den Prozess zum Einrichten von Filialen physischen fest, die diesen als in Microsoft Dynamics 365 für Arbeitsgänge belegen. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten.
+[!include[banner](includes/banner.md)]
 
-Einzelhandel und Handel in Dynamics 365 für Arbeitsgänge unterstützt mehrere Einzelhandelskanäle, wie, Onlineshops Callcenter und physische Filiale. In "Einzelhandel und Handel" wird ein physischer Laden "Einzelhandelsshop" genannt. Jeder Einzelhandelsshop kann seine eigenen Zahlungsmethoden, Preisgruppen, POS-Register, Ein- und Ausgabenkonten und Mitarbeiter einrichten. Sie müssen alle Elemente für einen Shop einrichten, bevor Sie ihn erstellen. Nachdem Sie einen Einzelhandelsshop erstellt haben, weisen Sie die Produkte zu, die der Shop umfassen soll. Sie ordnen außerdem Mitarbeiter, Register und Debitoren der Filiale zu. Fügen Sie den neuen Shop schließlich zu einer Organisationshierarchie hinzu.
+
+Dieser Artikel gibt einen Überblick über den Prozess für das Einrichten von physischen Shops, die in Microsoft Dynamics 365 for Operations als Einzelhandelsshops bezeichnet werden. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten.
+
+Einzelhandel und Handel in Microsoft Dynamics 365 for Operations unterstützt mehrere Einzelhandelskanäle, wie Onlineshops, Callcenter und physische Geschäfte. In "Einzelhandel und Handel" wird ein physischer Laden "Einzelhandelsshop" genannt. Jeder Einzelhandelsshop kann seine eigenen Zahlungsmethoden, Preisgruppen, POS-Register, Ein- und Ausgabenkonten und Mitarbeiter einrichten. Sie müssen alle Elemente für einen Shop einrichten, bevor Sie ihn erstellen. Nachdem Sie einen Einzelhandelsshop erstellt haben, weisen Sie die Produkte zu, die der Shop umfassen soll. Sie ordnen außerdem Mitarbeiter, Register und Debitoren der Filiale zu. Fügen Sie den neuen Shop schließlich zu einer Organisationshierarchie hinzu.
 
 ## <a name="setting-up-retail-stores"></a>Einrichten von Einzelhandelsgeschäften
-Bevor Sie ein auf Shop Lagermanagement in Dynamics 365 für Arbeitsgänge einrichten können, müssen Sie mehrere erforderlichen Aufgaben ausführen. Sie können dann den Shop erstellen und Details hinzufügen.
+Bevor Sie einen Einzelhandelsshop in Microsoft Dynamics 365 for Operations einrichten können, müssen Sie mehrere erforderliche Aufgaben ausführen. Sie können dann den Shop erstellen und Details hinzufügen.
 
 ### <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -49,7 +52,7 @@ Bevor Sie einen Einzelhandelsshop einrichten können, müssen Sie die folgenden 
 8.  Einrichten von Einzelhandelsprodukten. Als Teil dieser Aufgabe richten Sie auch Produkthierarchien, Produktvarianten und Sortimente ein.
 9.  Einrichten von Produktpreisgruppen.
 10. Einrichten von Einzelhandelsproduktpreiskalkulation. Als Teil dieser Aufgabe richten Sie auch Preisregulierungen, Rabatte und Rabattzeiträume ein.
-11. Einrichten von Mitarbeitern. ** Hinweis: ** Sie müssen auch die entsprechenden Berechtigungen zuweisen Arbeitskräften, sodass diese Aufgaben in signieren und ausführen können, indem das Dynamics 365 für Arbeitsgänge für Retail POS-System verwendet werden.
+11. Einrichten von Mitarbeitern. **Hinweis:** Sie müssen die entsprechenden Berechtigungen zu den Arbeitskräften zuweisen, sodass diese sich anmelden und Aufgaben mit dem Microsoft Dynamics 365 for Operations für Retail POS-System ausführen können.
 12. Konfigurieren der Retail POS-Profile, um sie dem Shop zuzuweisen. Diese Aufgabe beinhaltet zahlreiche weitere Aufgaben, wie das Einrichten von Registern, Einrichten von Offlineprofilen, und das Einrichten von Bonformaten und Profilen.
 
 Prüfen Sie alle Aufgaben, die Voraussetzung sind, und führen Sie nur die Aufgaben aus, die für Sie gelten.
@@ -77,5 +80,7 @@ Nachdem Sie die Details für den Einzelhandelsshop eingeben, schließen Sie dies
 
 ## <a name="organization-hierarchies"></a>Organisationshierarchien
 Der Einzelhandel verwendet Organisationshierarchien in Microsoft Dynamics AX, um Einzelhandelskanäle zu strukturieren. Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht. Wenn Sie Filialen einrichten, können Sie diese einer Organisationshierarchie hinzufügen. Die Filialen teilen dann Daten, die für Sortimente, Auffüllung und Berichterstellung verwendet werden.
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Handhabungsskontos für Über-/Unterzahlung"
+title: "Skontobehandlung für Überzahlungen"
 description: "Dieser Artikel enthält Szenarien, die zeigen, wie eine Zahlung behandelt wird, wenn der Debitor ein Skonto abzieht aber auch zu viel bezahlt."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Handhabungsskontos für Über-/Unterzahlung
+# <a name="handling-cash-discounts-for-overpayments"></a>Skontobehandlung für Überzahlungen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel enthält Szenarien, die zeigen, wie eine Zahlung behandelt wird, wenn der Debitor ein Skonto abzieht aber auch zu viel bezahlt. 
 
@@ -133,6 +136,8 @@ Der Skontobetrag wird von 10,50 auf 10,00 verringert. Die Zahlung und die Rechnu
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Skonto (das Feld **Hauptkonto für Debitorenrabatte** auf der **Skonti** Seite) | 10,50        |               |
 | Debitoren                                                                              |              | 10,50         |
+
+
 
 
 

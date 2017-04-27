@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-payable"></a>Kreditoren konfigurieren
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel werden die Seiten beschrieben, die Sie verwenden, um die grundlegenden und optionalen Funktionen für Kreditoren in Microsoft Dynamics AX einzurichten. Er beschreibt zudem die Einrichtungsschritte, die Sie durchführen müssen, bevor Sie damit beginnen, die Kreditoren einzurichten.
 
 <a name="prerequisites-for-accounts-payable-setup"></a>Voraussetzungen für die Einstellungen von Kreditoren
@@ -40,7 +43,7 @@ Die folgenden Einstellungen müssen abgeschlossen werden, bevor Sie Kreditoren e
     -   Wenn Sie Wechselkursregulierungen ausführen möchten, müssen Sie die Währungscodes auf der Seite "Fremdwährungen", die Wechselkurstypen auf der Seite "Wechselkurstyp" und die Währungswechselkurse auf der Seite "Währungswechselkurse" einrichten.
 -   Richten Sie Bankkonten zur Verwendung mit Zahlungsmethoden unter "Bargeld- und Bankverwaltung" ein.
 
-## <a name="setup-pages-for-accounts-payable"></a>Einstellungsseiten für Kreditor
+## <a name="setup-pages-for-accounts-payable"></a>Seiten für Kreditorenkonten einrichten
 
 Verwenden Sie die folgenden Seiten, um die grundlegenden Funktionen von Kreditoren für jede juristische Person einzurichten. Die Seiten sind in der empfohlenen Einrichtungsreihenfolge aufgeführt. Erstellen Sie aus den ersten erstellten Datensätzen Vorlagen, um das Verfahren zu erleichtern. Eine Vorlage umfasst normalerweise Werte in einer Vielzahl von Feldern, die die Funktionen widerspiegeln, die die Organisation für einen bestimmten Kreditorentyp implementieren möchte.
 1.  Legen Sie auf der Seite "Zahlungsbedingungen", die Zahlungsbedingungen fest, die Sie Aufträgen, Bestellungen, Debitoren und Kreditoren zuweisen wollen und die die Fälligkeitsdaten bestimmen.
@@ -51,15 +54,15 @@ Verwenden Sie die folgenden Seiten, um die grundlegenden Funktionen von Kreditor
 6.  Legen Sie auf der Seite "Formular" das Format für verschiedene Dokumente fest, die sich auf Händler beziehen und in der Organisation verwendet werden, um Zugänge von Händlern zu verfolgen und Gründe für den Zahlungsfluss an Händler einzugeben.
 7.  Erstellen und pflegen Sie auf der Seite "Händler" die Kreditorenkonten, einschließlich der Steuerbehörden, bei denen Ihre Organisation die Mehrwertsteuer meldet.
 
-## <a name="optional-setup-pages-for-accounts-payable"></a>Optionale Einstellungsseiten für Kreditor
+## <a name="optional-setup-pages-for-accounts-payable"></a>Optionale Einrichtungsseiten für Kreditorenkonten
 Neben den grundlegenden Funktionen, können Sie weitere Funktionen für Kreditoren einrichten.
 
 Die Seiten für zusätzliche Einstellungen sind nach Funktionen geordnet.
 
-**Policies**
+**Richtlinien**
 -   Richten Sie auf der Seite "Kreditorenrechnungsrichtlinie" Kreditorenrechnungsrichtlinien ein.
 
-**Invoice matching**
+**Rechnungsabgleich**
 
 -   Richten Sie auf der Seite "Rechnungssummentoleranzen" Toleranzen für Rechnungssummen ein.
 -   Richten Sie auf der Seite "Abgleichsrichtlinie" zweiseitige und dreiseitige Abgleichsrichtlinien ein.
@@ -72,35 +75,35 @@ Die Seiten für zusätzliche Einstellungen sind nach Funktionen geordnet.
 
 -   Richten Sie auf der Seite "Kreditorenkontenworkflows" die Workflowkonfigurationen für Erfassungsgenehmigungen und Bestellanforderung ein
 
-**Reasons**
+**Ursachen**
 
 -   Richten Sie auf der Seite "Ursachen für Kreditorenbuchungen" Ursachencodes ein.
 
-**Charges**
+**Belastungen**
 
 -   Richten Sie auf der Seite "Belastungscodes" Codes für die Belastungen ein, die in Bestellungen verwendet werden.
--   Auf der Kreditorenbelastungsgruppenseite Erstellen und Verwalten von Belastungsgruppen für Kreditoren.
+-   Auf der Seite "Gruppe für Kreditorenbelastungen" können Sie Belastungsgruppen für Kreditoren erstellen und verwalten.
 -   Auf der Seite "Gruppen für Artikelbelastungen" können Sie Belastungsgruppen für Artikel erstellen und verwalten.
 -   Definieren Sie auf der Seite "Auto-Belastungen" Belastungen, die Aufträgen automatisch zugeordnet werden.
 
-**Supplementary items**
+**Zusätzliche Artikel**
 
 -   Auf der Seite "Zusätzliche Artikelgruppen - Kreditor", erstellen und verwalten Sie zusätzliche Artikelgruppen für Kreditoren.
 -   Auf der Seite "Zusätzliche Artikelgruppen - Bestand", erstellen und verwalten Sie zusätzliche Artikelgruppen für Artikel.
 
-**Distribution**
+**Verteilung**
 
 -   Auf der Seite "Lieferbedingungen" erstellen und pflegen Sie die Bedingungen für den Transport eines Artikels vom Verkäufer zum Einkäufer.
 -   Auf der Seite "Lieferarten" erstellen und pflegen Sie die Transportmethoden, die beim Liefern eines Auftrags vom Verkäufer an den Käufer verwendet werden.
 -   Auf der Seite "Bestimmungsortcodes" erstellen und pflegen Sie Kennungungen und Beschreibungen für Lieferziele.
 
-**Forms**
+**Formulare**
 
 -   Erstellen Sie auf der Seite "Formularhinweise" den Standardtext, der auf verschiedenen Seiten angezeigt wird.
 -   Richten Sie auf der Seite "Sortierparameter für Formulare" die Sortierreihenfolgen für Anforderungen, Eingangslisten, Lieferscheine und Rechnungen ein.
 -   Richten Sie auf der Seite "Druckverwaltungseinstellungen" Druckverwaltungsinformationen für Originale und Kopien von Seiten ein.
 
-**Payments**
+**Zahlungen**
 
 -   Richten Sie auf der Seite "Skonto" die Bedingungen für den Erhalt von Skonti ein, und verwalten Sie diese. Die Skontocodes sind mit Kreditoren verknüpft und werden auf Bestellungen angewendet.
 -   Auf der Seite "Zahlungspläne" richten Sie die Zahlungspläne ein, die verwendet werden, um Teilzahlungszahlungen an Kreditoren zu verwalten.
@@ -108,17 +111,17 @@ Die Seiten für zusätzliche Einstellungen sind nach Funktionen geordnet.
 -   Erstellen und pflegen Sie auf der Seite "Zahlungsgebühr" Zahlungsgebühren, die den Kreditoren zugeordnet sind.
 -   Erstellen und verwalten Sie auf der Seite "Zahlungsanweisungen" Zahlungsanweisungen.
 
-**Statistics**
+**Statistik**
 
 -   Richten Sie auf der Seite "Zahlungsfristdefinitionen" benutzerdefinierte Intervalle zum Analysieren der Fälligkeitsverteilung von Kreditorenkonten ein.
 -   Erstellen Sie auf der Seite "Sparte" die Spartencodes, die den Kreditoren zugewiesen sind.
 
 **Steuererklärung (US 1099)**
 
--   Auf der ** 1099 Felder ** Seite prüfen und aktualisieren Sie die Mindestbeträge, die an den Internal Revenue Service (IRS) mitgeteilt werden müssen, basierend auf der neuesten IRS-Anforderungen.
+-   Überprüfen und aktualisieren Sie auf der Seite **1099 Felder** die Mindestbeträge, die dem Internal Revenue Service (IRS) auf Grundlage der neuesten IRS-Anforderungen gemeldet werden müssen.
 
-## <a name="optional-setup-for-other-modules"></a>** Optionale Einstellung für andere Module **
-**Organization administration**
+## <a name="optional-setup-for-other-modules"></a>**Optionaler Setup für andere Module**
+**Organisationsverwaltung**
 
 -   Richten Sie auf der Seite "Nummernkreise" die Nummernkreisgruppen für Rechnungsnummern ein.
 -   Richten Sie auf den folgenden Seiten Adressdaten ein:
@@ -126,7 +129,7 @@ Die Seiten für zusätzliche Einstellungen sind nach Funktionen geordnet.
     -   NAF-Codes
     -   Postleitzahlen importieren
 
-**General ledger**
+**Hauptbuch**
 
 -   Richten Sie auf der Seite "Finanzdimensionen" Finanzdimensionen ein.
 -   Richten Sie auf den folgenden Seiten Steuerinformationen ein:
@@ -139,9 +142,10 @@ Die Seiten für zusätzliche Einstellungen sind nach Funktionen geordnet.
     -   Mehrwertsteuer-Behörden
     -   Mehrwertsteuer-Abrechnungszeiträume
 
-**Cash and bank management**
+**Bargeld- und Bankverwaltung**
 
 -   Richten Sie auf der Seite "Zahlungszweckcodes" den Code für die Zentralbank ein.
+
 
 
 

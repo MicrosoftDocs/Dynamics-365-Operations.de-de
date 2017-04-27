@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Freitextrechnungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Mithilfe von Buchhaltungsverteilungen wird definiert, wie ein Betrag kalkuliert wird, beispielsweise wie Umsatzerlöse, Steuern oder Zuschläge auf einer Freitextrechnung kalkuliert werden. Jeder Betrag, der kalkuliert werden muss, wenn die Freitextrechnung journalisiert wird, enthält eine oder mehrere Buchhaltungsverteilungen.
 
 <a name="accounting-distributions"></a>Buchhaltungsverteilungen
@@ -35,7 +38,7 @@ Mithilfe von Buchhaltungsverteilungen wird definiert, wie ein Betrag kalkuliert 
 
 Sie können die folgenden Schaltflächen auf der Seite "Freitextrechnung" verwenden, um die Buchhaltungsverteilungen für jeden Betrag auf der Freitextrechnung anzuzeigen und eventuell zu ändern.
 
--   ** Verteilen Sie Beträge ** — Anzeigen und Ändern der Buchhaltungsverteilungen für eine einzelne Position und Positionen, wie alle untergeordneten oder Steuern. Zuschläge Sie können auch die Buchhaltungsverteilungen für die untergeordnete Position direkt von der Seite "Mehrwertsteuerbuchungen" oder der Seite "Belastungsbuchungen" aus anzeigen und ändern.
+-   **Beträge verteilen**– Dient zum Anzeigen und Ändern der Buchhaltungsverteilungen für eine einzelne Position und alle untergeordneten Positionen wie Steuern oder Belastungen. Sie können auch die Buchhaltungsverteilungen für die untergeordnete Position direkt von der Seite "Mehrwertsteuerbuchungen" oder der Seite "Belastungsbuchungen" aus anzeigen und ändern.
     -   Ändern Sie Kopfzeilenbeträge von Freitextrechnungen wie Zuschläge oder Währungsrundungsbeträge.
     -   Ändern von Freitextrechnungpositionsbeträgen.
 -   **Verteilungen anzeigen** – Dient zum Anzeigen der Buchhaltungsverteilungen für alle Positionen im Dokument. Sie können die Buchhaltungsverteilungen in dieser Ansicht nicht ändern.
@@ -132,5 +135,7 @@ Buchhaltungsverteilungen für Steuern können erst erstellt werden, nachdem Steu
 
 ## <a name="subledger-journals-for-free-text-invoices"></a>Erfassungen im untergeordneten Sachkonto für Freitextrechnungen
 Bevor Sie eine Freitextrechnung buchen, können Sie den vollständigen Buchhaltungseintrag der Rechnung anzeigen, der Soll- und Habenbeträge enthält, um sicherzustellen, dass die Rechnung auf die richtigen Konten gebucht wird. Diese Ansicht des vollständigen Buchhaltungseintrags wird als Erfassung im untergeordneten Sachkonto bezeichnet. Wenn der Erfassungseintrag im untergeordneten Sachkonto falsch ist, wenn Sie ihn in der Vorschau anzeigen, bevor Sie die Freitextrechnung journalisieren, können Sie den Erfassungseintrag im untergeordneten Sachkonto nicht ändern. Stattdessen müssen Sie die Buchhaltungsverteilungen oder das Buchungsprofil ändern. Die Buchhaltungsverteilungen dienen dazu, eine Seite des Buchhaltungseintrags, der Soll- oder Habenbetrag, zu definieren. Der Ausgleichskontoeintrag in der Erfassung im untergeordneten Sachkonto wird aus den Buchungsprofilen erstellt, beispielsweise aus dem Debitorenkonto oder der Steuer.
+
+
 
 

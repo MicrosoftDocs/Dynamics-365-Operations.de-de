@@ -1,5 +1,5 @@
 ---
-title: "Produktprogrammplanung für Disposition an Standort, Lagerort nicht obligatorisch"
+title: Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort nicht obligatorisch
 description: "In diesem Thema wird beschrieben wie ein Artikel, der die Site-Dimension für den Deckung gesetzt hat, geplant wird."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Produktprogrammplanung für Disposition an Standort, Lagerort nicht obligatorisch
+# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort nicht obligatorisch
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird beschrieben wie ein Artikel, der die Site-Dimension für den Deckung gesetzt hat, geplant wird.
 
@@ -39,9 +42,9 @@ Für dieses Produktprogrammplanungsszenario müssen die folgenden Bedingungen er
 -   Die Lagerortdimension ist nicht für die Disposition festgelegt. Deshalb werden Angebot und Nachfrage nach Standort und möglicherweise auch nach weiteren Dispositionsdimensionen zusammengefasst.
 
 In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulicht. Die Parameter, auf die in der Grafik Bezug genommen wird, sowie deren Position werden im Folgenden erläutert:
--   Für den Artikel ist die Artikeldeckung definiert. ** Produktinformationsverwaltung auf Produkt-freigegebeneProdukte &gt; **&gt;. Wählen Sie den Artikel aus, und klicken Sie dann Plan-Artikeldeckung &gt; ** **.
--   Für den Lagerort sind Auffüllbeziehungen definiert. ** Auf Lagerverwaltungs-Einstellungs-Bestandsaufschlüsselung &gt; Lagerorte &gt; **. Wählen Sie auf der Registerkarte **Produktprogrammplanung** die Feldgruppe **Hauptlagerort**.
--   Der standardmäßige Auftragstyp wird zur Produktion, der Bestellung oder dem Kanban festgelegt. ** Produktinformationsverwaltung auf Produkt-freigegebeneProdukte &gt; **&gt;. Wählen Sie den Artikel aus, und klicken Sie dann ** Sie &gt; planen Standardauftragseinstellungen **. Im Formular **Standardauftragseinstellungen** sehen Sie das Feld **Standardauftragstyp**.
+-   Für den Artikel ist die Artikeldeckung definiert. Klicken Sie auf **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**. Wählen Sie den Artikel aus, und klicken Sie auf **Planen &gt; Artikeldeckung**.
+-   Für den Lagerort sind Auffüllbeziehungen definiert. Klicken Sie auf **Lagerverwaltung &gt; Einstellungen &gt; Lageraufschlüsselung &gt; Lagerorte**. Wählen Sie auf der Registerkarte **Produktprogrammplanung** die Feldgruppe **Hauptlagerort**.
+-   Der standardmäßige Auftragstyp wird zur Produktion, der Bestellung oder dem Kanban festgelegt. Klicken Sie auf **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**. Wählen Sie den Artikel aus, und klicken Sie auf **Planen &gt; Standardauftragseinstellungen**. Im Formular **Standardauftragseinstellungen** sehen Sie das Feld **Standardauftragstyp**.
 
 ![Bedarf für Disposition an Standort, Lagerort nicht obligatorisch](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
@@ -50,7 +53,7 @@ In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulic
 <a name="see-also"></a>Siehe auch
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Produktprogrammplanung und Funktion für mehrere Standorte](master-plan-multisite-functionality.md)
 
 [Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch](master-plan-site-coverage-warehouse-mandatory.md)
 
@@ -58,6 +61,8 @@ In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulic
 
 [Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Produktprogrammplanungslauf - Ermittlung der Stücklistenversion master-plan-bom-version-determined.md] ()
+[Produktprogrammplanungslauf - Ermittlung der Stücklistenversion](master-plan-bom-version-determined.md)
+
+
 
 

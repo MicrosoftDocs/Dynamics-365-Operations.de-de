@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="physical-and-financial-updates"></a>Physische und wertmäßige Aktualisierungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieses Thema bietet einen Überblick darüber, welche Buchungsarten eine Erhöhung oder eine Verringerung der Lagermenge zur Folge haben. 
 
-Lagerbuchungen können in Microsoft Dynamics 365 für Arbeitsgänge in sowohl physisch als auch wertmäßig aktualisiert werden. Einige Typen physischer und wertmäßiger Buchungen erhöhen die Lagermenge, während andere die Menge verringern.
+Lagerbuchungen können in Microsoft Dynamics 365 for Operations sowohl physisch als auch wertmäßig aktualisiert werden. Einige Typen physischer und wertmäßiger Buchungen erhöhen die Lagermenge, während andere die Menge verringern.
 
 ## <a name="physical-increases"></a>Physische Erhöhung
 Beim Ausführen einer physischen Buchung besitzt der Buchungsdatensatz den Status **Eingegangen**. Folgende Buchungen gelten als physische Zunahmen:
@@ -49,10 +52,10 @@ Beim Ausführen einer wertmäßigen Buchung besitzt der Buchungsdatensatz, durch
 -   Lagererfassungen mit positiver Menge (beispielsweise Bewegungs-, Gewinn- und Verlust-, Inventur-, Stücklisten- oder Umlagerungserfassungen)
 
 ## <a name="transactions-that-increase-quantity"></a>Buchungen mit Mengenerhöhung
-Buchungen, durch die sich eine Erhöhung der Menge ergibt, werden zum laufenden Durchschnittseinstandspreis ausgeführt. Dynamics 365 für Arbeitsgänge ein laufender Durchschnittseinstandspreis berechnet, der auf der Grundlage der Kosten der einzelnen Buchungen für jede verwendete Lagerungsdimension ist, die wertmäßig verfolgt werden. Informationen zu laufenden Durchschnittseinstandspreisen finden Sie unter [Laufender Durchschnittseinstandspreis](running-average-cost-price.md).
+Buchungen, durch die sich eine Erhöhung der Menge ergibt, werden zum laufenden Durchschnittseinstandspreis ausgeführt. Dynamics 365 for Operations berechnet einen laufenden Durchschnittseinstandspreis, der auf den Kosten der einzelnen Buchungen für jede Lagerungsdimension basiert, die wertmäßig verfolgt wird. Informationen zu laufenden Durchschnittseinstandspreisen finden Sie unter [Laufender Durchschnittseinstandspreis](running-average-cost-price.md).
 
 ## <a name="transactions-that-decrease-quantity"></a>Buchungen mit Mengenverringerung
-Dynamics 365 für Arbeitsgänge verwendet den berechneten Durchschnittseinstandspreis, wenn eine Buchung, die Menge verringert, wird unabhängig davon, welches Lagermodell, das dem jeweiligen Lager zugeordnet ist. Die Buchung, durch die sich eine Verringerung der Menge ergibt, darf vor der Buchung nicht per Markierung mit einer anderen Buchung verknüpft worden sein. Wenn der physisch verfügbaren Lagerbestands negativ wird, verwendet Dynamics 365 für Arbeitsgänge die Lagerkosten verwendet, die für den Artikel auf der Seite ** ** Artikel definiert wird. **Hinweis:** Bei aktivierter Funktion für mehrere Standorte werden statt dieser Kosten die Lagerkosten verwendet, die auf der Seite **Standardauftragseinstellungen** für den Standort definiert sind.
+Der laufende Durchschnittseinstandspreis wird von Dynamics 365 for Operations beim Ausführen einer Buchung verwendet, durch die sich eine Verringerung der Menge ergibt – unabhängig davon, welches Lagermodell dem jeweiligen Lager zugeordnet ist. Die Buchung, durch die sich eine Verringerung der Menge ergibt, darf vor der Buchung nicht per Markierung mit einer anderen Buchung verknüpft worden sein. Wird der Wert des physisch verfügbaren Lagerbestands negativ, werden von Dynamics 365 for Operations die Lagerkosten verwendet, die für den Artikel auf der Seite **Artikel** definiert sind. **Hinweis:** Bei aktivierter Funktion für mehrere Standorte werden statt dieser Kosten die Lagerkosten verwendet, die auf der Seite **Standardauftragseinstellungen** für den Standort definiert sind.
 
 ## <a name="physical-issues-vs-financial-issues"></a>Vergleich zwischen physischen und wertmäßigen Abgängen
 Beim Ausführen einer physischen Abgangsbuchung besitzt der Buchungsdatensatz den Status **Abgesetzt**. Folgende Buchungen gelten als physische Abgänge:
@@ -69,5 +72,7 @@ Beim Ausführen einer wertmäßigen Buchung besitzt der Buchungsdatensatz den St
 -   Lagererfassungen mit negativer Menge (beispielsweise Bewegungs-, Gewinn- und Verlust-, Inventur-, Stücklisten- oder Umlagerungserfassungen)
 
 Buchungen, durch die sich eine Verringerung der Menge ergibt, werden zum laufenden Durchschnittseinstandspreis ausgeführt. Daher müssen Abgangsbuchungen beim Lagerabschluss mit Zugangsbuchungen ausgeglichen werden. Die Grundlage hierfür bildet das den einzelnen Artikeln zugewiesene Lagermodell.
+
+
 
 

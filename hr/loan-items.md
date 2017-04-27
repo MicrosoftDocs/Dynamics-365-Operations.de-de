@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-items-lent-to-workers"></a>Verwalten von Artikeln, die an Arbeitskräfte ausgeliehen werden
 
+[!include[banner](includes/banner.md)]
+
+
 Ausleihartikel sind Datensätze, die Managern helfen, die physischen Artikel zu verfolgen, die Ihr Unternehmen an Arbeitskräfte ausleiht. 
 
 Einige Beispiele von Artikeln, die Unternehmen an Arbeitskräfte verleihen können, sind in der folgenden Liste enthalten:
@@ -39,7 +42,7 @@ Jeder physische Artikel muss einen entsprechenden Ausleihartikel haben. Jeder Au
 
 Erfassen Sie beim Ausleihen eines Artikels das Datum der Ausleihe und das geplante Rückgabedatum. Geben Sie bei der Rückgabe des Artikels das tatsächliche Rückgabedatum ein.
 
-Mitarbeiter können die Artikel anzeigen, die ihnen mithilfe des Mitarbeiter-Self-Service-Arbeitsbereichs ausgeliehen wurden. Sie können die vorhandenen Datensätze auch bearbeiten oder neuen Ausleihartikel eingeben, wenn sie weitere physikalische Artikel eingegangen sind.  Workflow kann so eingerichtet werden, dass Änderungen für die neuen oder vorhandenen Ausleihartikeln durch einen Genehmigungsprozess weitergeleitet werden. 
+Mitarbeiter können die Datensätze der Artikel anzeigen, die ihnen über den Arbeitsbereich "Mitarbeiter-Self-Service" ausgeliehen wurden. Sie können die vorhandenen Datensätze auch bearbeiten oder neuen Ausleihartikel eingeben, wenn sie weitere physikalische Artikel eingegangen sind.  Workflow kann so eingerichtet werden, dass Änderungen für die neuen oder vorhandenen Ausleihartikeln durch einen Genehmigungsprozess weitergeleitet werden. 
 
 Manager können ausgeliehene Artikel für ihre direkten Berichte anzeigen. Sie können auch Berechtigung gewähren, um neue Ausleihartikeln im Auftrag ihrer Mitarbeiter hinzuzufügen.
 
@@ -52,6 +55,8 @@ Wenn ein Artikel beschädigt oder verlegt wurde, geben Sie einen fiktive Rückga
 <a name="see-also"></a>Siehe auch
 --------
 
-[Human resources](index.md)
+[Personalverwaltung](index.md)
+
+
 
 

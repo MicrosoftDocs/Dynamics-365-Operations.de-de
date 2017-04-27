@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consumption-depreciation"></a>Verbrauchsabschreibung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält eine Übersicht der Verbrauchsabschreibungsmethode.
 
 Wenn Sie beim Einrichten eines Anlagenabschreibungsprofils **Verbrauch** im Feld **Methode** auf der Seite **Abschreibungsprofile** auswählen, basiert die Abschreibung von Anlagen, die diesem Abschreibungsprofil zugeordnet sind, auf der Nutzung der jeweiligen Anlage. Sie müssen Prozentsätze und Intervalle nicht auf der Seite **Abschreibungsprofile** einrichten. Nach der Erstellung des Profils für die Methode "Verbrauch" kann die Methode auf vielfältige Weise eingerichtet werden.
@@ -64,5 +67,7 @@ Für den 31. Januar wird der folgende Faktor für die Verbrauchsabschreibung ein
 -   Die vorkalkulierte Menge der Anlage ist 2.000.
 
 Der Abschreibungsvorschlag am 31. Januar lautet wie folgt: Abschreibung pro Einheit × Prozentsatz × Abschreibung pro Einheit 2.000 × 0,10 × 1,5 = 300
+
+
 
 

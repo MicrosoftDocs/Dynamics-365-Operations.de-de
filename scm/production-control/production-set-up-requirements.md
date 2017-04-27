@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-setup-requirements"></a>Anforderungen für Produktionseinstellungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel gibt Informationen zu Einrichtungsanforderungen, bevor Sie mit der Produktionssteuerung arbeiten können. 
 
-Produktionssteuerung wird mit Funktionen in andere Module integriert. Dadurch besteht die Möglichkeit zum Ändern von Produktionsaufträgen, und es wird sichergestellt, dass diese automatisch in allen anderen zugehörigen Prozessen und Berechnungen des Systems aktualisiert werden. Die folgenden Einrichtungsverfahren sind in der Reihenfolge aufgeführt, in der sie abgeschlossen werden sollten.
+Produktionssteuerung wird mit Funktionen in anderen Modulen integriert. Dadurch besteht die Möglichkeit zum Ändern von Produktionsaufträgen, und es wird sichergestellt, dass diese automatisch in allen anderen zugehörigen Prozessen und Berechnungen des Systems aktualisiert werden. Die folgenden Einrichtungsverfahren sind in der Reihenfolge aufgeführt, in der sie abgeschlossen werden sollten.
 
 ## <a name="required-baseline-setup-in-other-modules"></a>Erforderliche Grundeinstellungen in anderen Modulen
 Vor der Verwendung des Moduls Produktionssteuerung müssen zunächst Informationen in anderen Modulen eingerichtet werden. Diese Einrichtung umfasst die folgenden Aufgaben:
@@ -52,7 +55,7 @@ Vor der Verwendung des Moduls Produktionssteuerung müssen zunächst Information
 4.  **Ressourcen** – Richten Sie betrieblichen Ressourcen ein, um die Ressourcen festzulegen, die zum Ausführen des Produktionsvorgangs sowie zum Planen von Kapazitäten verwendet werden.
 
 ## <a name="required-production-parameters-setup"></a>Erforderliche Einstellungen für Produktionsparameter
-** Produktionssteuerungsparameter ** – Hiermit richten die grundlegenden Produktionsparameter ein, und definieren das System, wie Produktionsaufträge behandelt und verarbeitet. Definieren Sie, wie Produktionsaufträge erstellt, geplant und ausgeführt werden. Darüber hinaus können Sie die gewünschte Rückmeldungsart sowie die gewünschte Ausführung der Kostenrechnung auswählen.
+**Produktionssteuerungsparameter** – Richten Sie die grundlegenden Produktionsparameter ein, um die Behandlung und Verarbeitung von Produktionsaufträgen im System festzulegen. Definieren Sie, wie Produktionsaufträge erstellt, geplant und ausgeführt werden. Darüber hinaus können Sie die gewünschte Rückmeldungsart sowie die gewünschte Ausführung der Kostenrechnung auswählen.
 
 ## <a name="required-journal-name-identification"></a>Erforderliche Angabe von Journalen
 **Produktionserfassungsnamen** – Geben Sie die Produktionserfassungsnamen an, die verwendet werden, um Buchungen zu registrieren und zu buchen.
@@ -76,6 +79,8 @@ Bei Verwendung von Arbeitsplänen müssen Arbeitsgänge für jeden einzelnen ein
 1.  **Produktionsgruppen** – Richten Sie Produktionsgruppen ein, um Beziehungen zwischen dem Produktionsauftrag und den Sachkonten herzustellen. Die Sachkonten dienen zum Buchen oder zum Gruppieren von Aufträgen für die Berichterstellung.
 2.  **Produktionspools** – Erstellen Sie Produktionspools zum Gruppieren von Produktionsaufträgen ein, sodass Sie dringende Produktionsaufträge verarbeiten oder Auftragsgruppen löschen und buchen können.
 3.  **Eigenschaften** – Sie können Eigenschaften festlegen, um spezielle Attribute zu erstellen, die Ressourcen zugewiesen werden können, um die Reihenfolge der Produktionen zu steuern. Diese Attribute sind mit dem Schichtplan verbunden.
+
+
 
 
 

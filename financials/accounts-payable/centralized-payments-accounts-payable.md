@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Zentralisierte Zahlungen für Kreditorenkonten
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher müssen die gleichen Zahlungen nicht in mehrere juristische Personen eingegeben werden. Dieser Artikel enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird.
 
 Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher müssen die gleichen Zahlungen nicht in mehrere juristische Personen eingegeben werden. Darüber hinaus spart die Organisation Zeit, da der Zahlungsvorgang rationalisiert wird.
@@ -66,14 +69,14 @@ Für Fabrikam Ost liegt eine offene Rechnung für das Kreditorenkonto "100" (Fou
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**
 
 | Konto                           | Sollbetrag | Habenbetrag |
 |-----------------------------------|--------------|---------------|
 | Fällig von Fabrikam Ost (Fabrikam) | 600,00       |               |
 | Kreditoren (Fabrikam)       |              | 600,00        |
 
-**Fabrikam East posting**
+**Buchung für Fabrikam Ost**
 
 | Konto                          | Sollbetrag | Habenbetrag |
 |----------------------------------|--------------|---------------|
@@ -99,14 +102,14 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**
 
 | Konto                           | Sollbetrag | Habenbetrag |
 |-----------------------------------|--------------|---------------|
 | Fällig von Fabrikam Ost (Fabrikam) | 580,00       |               |
 | Kreditoren (Fabrikam)       |              | 580,00        |
 
-**Fabrikam East posting**
+**Buchung für Fabrikam Ost**
 
 | Konto                          | Sollbetrag | Habenbetrag |
 |----------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam posting**
+**Fabrikam Buchung**
 
 | Konto                           | Sollbetrag            | Habenbetrag           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 | Realisierter Verlust (Fabrikam)          | 0,00 EUR/12,90 USD    |                         |
 | Fällig von Fabrikam Ost (Fabrikam) |                         | 0,00 EUR/12,90 USD    |
 
-**Fabrikam East posting**
+**Fabrikam Ost Buchung**
 
 | Konto                          | Sollbetrag            | Habenbetrag           |
 |----------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam posting**
+**Fabrikam Buchung**
 
 | Konto                           | Sollbetrag            | Habenbetrag           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 | Realisierter Verlust (Fabrikam)          | 0,00 EUR/12,66 USD    |                         |
 | Fällig von Fabrikam Ost (Fabrikam) |                         | 0,00 EUR/12,66 USD    |
 
-**Fabrikam East posting**
+**Fabrikam Ost Buchung**
 
 | Konto                          | Sollbetrag            | Habenbetrag           |
 |----------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 | Skonto (Fabrikam Ost)    |                         | 11,28 EUR/13,61 USD   |
 
 ## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Beispiel 5: Kreditorengutschrift mit primärer Zahlung
-Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Fourth Coffee) generiert. Die Zahlung wird mit einer offenen Rechnung für den Kreditor "3004" von Fabrikam West und einer offenen Gutschrift für den Kreditor "100" von Fabrikam Ost ausgeglichen. Die Zahlung wird für die primäre Zahlung auf der Bankbuchungen ** ** Seite ausgewählt.
+Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Fourth Coffee) generiert. Die Zahlung wird mit einer offenen Rechnung für den Kreditor "3004" von Fabrikam West und einer offenen Gutschrift für den Kreditor "100" von Fabrikam Ost ausgeglichen. Die Zahlung wird im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** dargestellt.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Buchung der Rechnung an Fabrikam West für Kreditor "3004"
 
@@ -224,7 +227,7 @@ Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Four
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**
 
 | Konto                           | Sollbetrag | Habenbetrag |
 |-----------------------------------|--------------|---------------|
@@ -240,7 +243,7 @@ Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Four
 | Fällig von Fabrikam (Fabrikam Ost) | 25,00        |               |
 | Kreditoren (Fabrikam Ost)  |              | 25,00         |
 
-**Fabrikam West posting**
+**Buchung für Fabrikam West**B
 
 | Konto                          | Sollbetrag | Habenbetrag |
 |----------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Four
 | Fällig an Fabrikam (Fabrikam West)  |              | 100,00        |
 
 ## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Beispiel 6: Kreditorengutschrift ohne primäre Zahlung
-Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Fourth Coffee) generiert. Die Zahlung wird mit einer offenen Rechnung für den Kreditor "3004" von Fabrikam West und einer offenen Gutschrift für den Kreditor "100" von Fabrikam Ost ausgeglichen. Die Zahlung wird der nicht als primäre Zahlung auf der Bankbuchungen ** ** Seite ausgewählt.
+Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Fourth Coffee) generiert. Die Zahlung wird mit einer offenen Rechnung für den Kreditor "3004" von Fabrikam West und einer offenen Gutschrift für den Kreditor "100" von Fabrikam Ost ausgeglichen. Die Zahlung ist im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** nicht ausgewählt.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Buchung der Rechnung an Fabrikam West für Kreditor "3004"
 
@@ -273,21 +276,21 @@ Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Four
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**B
 
 | Konto                           | Sollbetrag | Habenbetrag |
 |-----------------------------------|--------------|---------------|
 | Fällig von Fabrikam West (Fabrikam) | 75,00        |               |
 | Kreditoren (Fabrikam)       |              | 75,00         |
 
-**Fabrikam East posting**
+**Fabrikam Ost Buchung**
 
 | Konto                                | Sollbetrag | Habenbetrag |
 |----------------------------------------|--------------|---------------|
 | Fällig von Fabrikam West (Fabrikam Ost) | 25,00        |               |
 | Kreditoren (Fabrikam Ost)       |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam West Buchung**
 
 | Konto                              | Sollbetrag | Habenbetrag |
 |--------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Four
 | Fällig an Fabrikam (Fabrikam West)      |              | 75,00         |
 | Kreditoren (Fabrikam West)     | 25,00        |               |
 | Fällig an Fabrikam Ost (Fabrikam West) |              | 25,00         |
+
+
 
 
 

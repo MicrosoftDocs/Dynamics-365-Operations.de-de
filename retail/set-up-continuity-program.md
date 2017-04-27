@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16081
 ms.assetid: 426a9be7-a931-4780-b372-e06f6083dd60
 ms.search.region: global
@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-a-continuity-program-for-a-call-center"></a>Einrichten eines Anschlussprogramms für ein Callcenter
 
+[!include[banner](includes/banner.md)]
+
+
 In diesem Atikel wird beschrieben, wie ein Anschlussprogramm für ein Callcenter eingerichtet wird.
 
 In einem Anschlussprogramm, auch als wiederkehrendes Auftragsprogramm bekannt, erhalten Debitoren reguläre Produktlieferungen gemäß einem vordefinierten Zeitplan. Jede Lieferung kann ein anderes Produkt enthalten, wie im Falle eines Buch-des-Monats-Vereins, oder das gleiche Produkt kann wiederholt gesendet werden. Für die Konfiguration eines Anschlussprogramms müssen die folgenden Aufgaben ausgeführt werden.
@@ -37,7 +40,7 @@ In einem Anschlussprogramm, auch als wiederkehrendes Auftragsprogramm bekannt, e
     -   Wenn Kunden ein unterschiedliches Produkt in jeder Lieferung erhalten, werden die Produkte sequenziell auf Grundlage ihrer Ereigniskennung und beginnend mit dem aktuellen Ereignis übermittelt.
     -   Wenn Kunden das gleiche Produkt in jeder Lieferung erhalten, enthält die Liste nur ein Produkt, das eine Ereignis-ID hat. Dasselbe Ereignis tritt wiederholt auf. Sie können angeben, wie oft, jedes Ereignis wiederholt wird.
 
-3.  Erstellen Sie ein übergeordnetes Produkt, das das Kontinuitätsprogramm ein, das Sie in Aufgabe. 2 erstellt haben. Wenn Sie dieses Produkt einem Auftrag, hinzugefügt wird die Kontinuität ** ** Seite. Sie können dann diese Seite verwenden, um den tatsächlichen Anschlussauftrag zu erstellen. Das übergeordnete Produkt gibt nicht die Einzelprodukte an, die der Debitor in jeder Lieferung erhält.
+3.  Erstellen Sie ein übergeordnetes Produkt, das das Kontinuitätsprogramm ein, das Sie in Aufgabe. 2 erstellt haben. Wenn Sie dieses Produkt einem Auftrag, hinzugefügt wird die **Kontinuität** Seite. Sie können dann diese Seite verwenden, um den tatsächlichen Anschlussauftrag zu erstellen. Das übergeordnete Produkt gibt nicht die Einzelprodukte an, die der Debitor in jeder Lieferung erhält.
 
 Nachdem Sie ein Anschlussprogramm eingerichtet haben, wie oben beschrieben, können Sie einen Anschlussauftrag für einen Debitor erstellen. Unter Umständen müssen Sie auch die folgenden zusätzlichen Verwaltungsaufgaben ausführen.
 
@@ -47,6 +50,8 @@ Nachdem Sie ein Anschlussprogramm eingerichtet haben, wie oben beschrieben, kön
 -   **Erweitern von Anschlusspositionen** (Nach Bedarf) – Erweitern Sie die Anzahl der Male, die ein Anschlussereignis wiederholt werden kann. Die Wiederholung von Lieferungen kann sich dann über den Zeitpunkt hinaus verlängern, die im Feld **Anschlusswiederholungs-Schwellenwert** in den Callcenterparametern festgelegt wurde.
 -   **Ausführen einer Anschlusssaktualisierung** (Nach Bedarf) – Synchronisieren Sie Änderungen zwischen dem Anschlussprogramm und den übergeordneten Anschlussaufträgen.
 -   **Übergeordnete Anschlusspositionen und -aufträge schließen** – Schließen Sie Anschlussaufträge.
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Verpackungsmaterialien und Gebühren"
+title: "Verpackungsmaterial und Gebühren"
 description: "Verpackungsmaterialgebühren werden in bestimmten Zeitabständen an ein Recyclingunternehmen entrichtet. Für jedes Material, aus dem eine Verpackung besteht, muss ein bestimmter Betrag pro Gewichtseinheit bezahlt werden. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="packing-materials-and-fees"></a>Verpackungsmaterialien und Gebühren
+# <a name="packing-materials-and-fees"></a>Verpackungsmaterial und Gebühren
+
+[!include[banner](../includes/banner.md)]
+
 
 Verpackungsmaterialgebühren werden in bestimmten Zeitabständen an ein Recyclingunternehmen entrichtet. Für jedes Material, aus dem eine Verpackung besteht, muss ein bestimmter Betrag pro Gewichtseinheit bezahlt werden. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind.
 
@@ -52,7 +55,7 @@ Wenn Sie eine Auftragsposition erstellen, wird geprüft, ob für den Artikel Ver
 ## <a name="packing-units-on-purchase-order-lines"></a>Verpackungseinheiten in Bestellpositionen
 Verpackungsmaterialbuchungen für eine Bestellposition werden nicht vom System erstellt. Sie erstellen Buchungen für fakturierte Bestellpositionen manuell auf der Seite **Verpackungsmaterialbuchungen**.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Einstellungsdebitor packagingmaterialfee Lizenznummern
+## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Einrichten von Lizenznummern für Verpackungsmaterialgebühren bei Debitoren
 Geben Sie im Formular **Debitoren** die Lizenznummer des Debitors für die Verpackungsmaterialgebühren an, wenn die Verpackungsmaterialgebühren durch den Debitor bezahlt werden. Wurde einem Debitor eine Lizenznummer zugeordnet, werden die Verpackungsmaterialgebühren automatisch beim Fakturieren von Aufträgen ermittelt. Nach der Fakturierung wird im Formular **Verpackungsmaterialbuchungen** das Kontrollkästchen **Gebühr berechnen** deaktiviert, da kein Bericht berechnet und gedruckt werden muss. Sie können das Gewicht des Verpackungsmaterials auf der Rechnung angeben und den Debitor darüber informieren, dass die Gebühren zu seinen Lasten gehen. 
 
 Wenn die Verpackungsmaterialgebühren von Ihrem Unternehmen getragen werden, geben Sie keine Lizenznummern des Debitors an. Nach der Fakturierung wird das **Gebühr berechnen**-Kontrollkästchen auf der Seite **Verpackungsmaterialbuchungen** ausgewählt. Dadurch wird angegeben, dass die Gebühren beim Erstellen eines Berichts berechnet werden. Sie können das Gewicht auf der Rechnung angeben und darauf hinweisen, dass die Gebühren von Ihrem Unternehmen getragen werden.
@@ -60,6 +63,8 @@ Wenn die Verpackungsmaterialgebühren von Ihrem Unternehmen getragen werden, geb
 ## <a name="print-packaging-material-weights-on-invoices"></a>Angeben des Verpackungsmaterialgewichts auf Rechnungen
 Sie können das Gewicht des Verpackungsmaterials auf der Rechnung ausweisen und angeben, wer für die aufgeführten Gebühren aufkommt. Das Gewicht wird nach Verpackungscode zusammengefasst.
  
+
+
 
 
 

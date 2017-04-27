@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="three-way-matching-policies"></a>Dreiseitige Abgleichsrichtlinien
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Beispiele für den dreiseitigen Abgleich.
 
 <a name="example-three-way-matching-for-items"></a>Beispiel: Dreiseitiger Abgleich für Artikel
@@ -62,7 +65,7 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 1.  Thomas, eine Arbeitskraft in der Empfangsabteilung bei Fabrikam, nimmt die Gesamtmenge der Maschinen in Empfang, die von Contoso geliefert werden. Er gibt auf einem Produktzugang die Menge 5 ein. Da die Bestellung vollständig eingegangen ist, ändert sich der Status der Bestellung in "Eingegangen".
 2.  April, die Kreditorenkoordinatorin bei Fabrikam, gibt die von Contoso übermittelte Rechnung ein und überprüft sie. Sie prüft die folgenden Informationen:
     -   Bei Artikeln, für die ein dreiseitiger Abgleich erforderlich ist, muss die in der Rechnungsposition angegebene Menge der eingegangenen Menge entsprechen. Die eingegangene Menge wird auf dem Produktzugang angegeben, der mit der Rechnung abgeglichen wird.
-    -   Für Artikel, die zweiseitigen oder dreiseitiger Abgleich erforderlich, sind die Preise auf der Rechnungsposition innerhalb der Toleranz, die in Microsoft Dynamics 365 für Operations.This enthält die folgenden Arten von Preis werden definiert werden:
+    -   Für Artikel, für die ein zweiseitiger oder dreiseitiger Abgleich erforderlich ist, liegen die Preise auf der Rechnungsposition innerhalb der Toleranzen, die in Microsoft Dynamics 365 for Operations definiert sind. Dies umfasst die folgenden Typen des Preisabgleichs:
         -   Nettostückpreis-Abgleich – Der Nettostückpreis der Rechnungsposition entspricht im Rahmen des Toleranzprozentsatzes dem Nettostückpreis der Bestellposition. In diesem Beispiel beträgt die Nettostückpreistoleranz +8 %.
         -   Preissummenabgleich – Der Nettobetrag der Rechnungsposition entspricht dem Nettobetrag den Bestellposition und liegt innerhalb des Toleranzprozentsatzes und/oder des Toleranzbetrags. In diesem Beispiel beträgt die Toleranz für den Preissummenabgleich +15 %.
 
@@ -75,7 +78,7 @@ Die Papierrechnung von Contoso enthält folgende Informationen.
 | Steuerl. Buchung                         |          |            | 0,00       |
 | Gesamt                       |          |            | 44.500,00  |
 
-In Microsoft Dynamics 365 für Arbeitsgänge, enthält die Rechnungsposition die folgenden Informationen.
+In Microsoft Dynamics 365 for Operations umfasst die Rechnungsposition die folgenden Informationen.
 
 | Artikelnummer                 | Menge | Preis je Einheit | Nettobetrag der Position | Abgleichsrichtlinie    | Produktzugang-Mengenabgleich | Preisabgleich | Preissummenabgleich |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -111,7 +114,7 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 1.  Die Artikel treffen ein. Thomas, eine Arbeitskraft in der Empfangsabteilung der Malaysia-Division von Fabrikam, wird gestört und bucht den Produktzugang nicht sofort.
 2.  April, die Kreditorenkoordinatorin bei Fabrikam, gibt die von Contoso übermittelte Rechnung ein und überprüft sie. Sie prüft die folgenden Informationen:
     -   Bei Artikeln, für die ein dreiseitiger Abgleich erforderlich ist, muss die in der Rechnungsposition angegebene Menge der eingegangenen Menge entsprechen. Die eingegangene Menge wird auf dem Produktzugang angegeben, der mit der Rechnung abgeglichen wird.
-    -   Für Artikel, die zweiseitigen oder dreiseitiger Abgleich erforderlich, sind die Preise auf der Rechnungsposition innerhalb der Toleranz, die in Microsoft Dynamics 365 für Arbeitsgänge definiert werden. Dazu zählen die folgenden Preisabgleichsarten:
+    -   Bei Artikeln, für die ein zweiseitiger oder dreiseitiger Abgleich erforderlich ist, müssen die Preise auf der Rechnungsposition innerhalb der Toleranzen liegen, die in Microsoft Dynamics 365 for Operations definiert sind. Dazu zählen die folgenden Preisabgleichsarten:
         -   Nettostückpreis-Abgleich – Der Nettostückpreis der Rechnungsposition entspricht im Rahmen des Toleranzprozentsatzes dem Nettostückpreis der Bestellposition. In diesem Beispiel beträgt die Nettostückpreistoleranz +2 %.
         -   Preissummenabgleich – Der Nettobetrag der Rechnungsposition entspricht dem Nettobetrag den Bestellposition und liegt innerhalb des Toleranzprozentsatzes und/oder des Toleranzbetrags. In diesem Beispiel beträgt die Toleranz für den Preissummenabgleich +10 %.
 
@@ -124,7 +127,7 @@ Die Papierrechnung von Contoso enthält folgende Informationen.
 | USB-Laufwerk             | 200      | 10,05      | 2.010,00   |
 | Gesamtrechnung         |          |            | 7.092,00   |
 
-In Microsoft Dynamics 365 für Arbeitsgänge, enthält die Rechnungsposition die folgenden Informationen.
+In Microsoft Dynamics 365 for Operations umfasst die Rechnungsposition die folgenden Informationen.
 
 | Artikelnummer           | Menge | Preis je Einheit | Nettobetrag der Position | Abgleichsrichtlinie    | Produktzugang-Mengenabgleich | Preisabgleich | Preissummenabgleich |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -140,6 +143,8 @@ Beachten Sie die folgenden Punkte:
 Wenn eine Genehmigung erforderlich ist, damit Rechnungen mit Abweichungen beim Rechnungsabgleich gebucht werden können, muss die Umschaltfläche "Buchungen mit beim Abgleich erkannten Abweichungen genehmigen" auf der Seite "Details zum Rechnungsabgleich" ausgewählt sein. Erst dann kann die Rechnung mit Preis- und Mengenabgleichsfehlern gebucht werden. Ist keine Genehmigung erforderlich, kann die Fakturierung fortgesetzt werden, wenn es keine weiteren Buchungsfehler gibt.
 
 
-Weitere Informationen finden Sie accounts-payable-invoice-matching.md Kreditorenrechnungsabgleich []().
+Weitere Informationen finden Sie unter [Kreditorenrechnungsabgleich](accounts-payable-invoice-matching.md).
+
+
 
 

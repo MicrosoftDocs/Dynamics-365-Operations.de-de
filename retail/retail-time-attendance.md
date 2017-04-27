@@ -1,6 +1,6 @@
 ---
 title: Zeit und Anwesenheit im Einzelhandel
-description: "In diesem Thema werden die möglichen Szenarien, die für Aufwandsprojekte Anwesenheitsverwaltung in Microsoft Dynamics 365 für Einzelhandel - Arbeitsgänge unterstützt werden."
+description: "In diesem Thema werden Szenarien beschreiben, die für die Verwaltung von Zeit und Anwesenheit Microsoft Dynamics 365 for Operations - Retail unterstützt werden."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="retail-time-and-attendance"></a>Zeit und Anwesenheit im Einzelhandel
 
-In diesem Thema werden die möglichen Szenarien, die für Aufwandsprojekte Anwesenheitsverwaltung in Microsoft Dynamics 365 für Einzelhandel - Arbeitsgänge unterstützt werden. 
+[!include[banner](includes/banner.md)]
+
+
+In diesem Thema werden Szenarien beschreiben, die für die Verwaltung von Zeit und Anwesenheit Microsoft Dynamics 365 for Operations - Retail unterstützt werden. 
 
 <a name="manage-worker-setup-and-scheduling"></a>Verwalten Sie Arbeitskrafteinstellung und Feinterminierung
 ----------------------------------
@@ -45,8 +48,8 @@ Informationen zu den Konfigurationsschritten finden Sie unter <https://technet.m
 
 ### <a name="retail-specific-configuration"></a>Einzelhandelsspezifische Konfiguration
 
--   Aktivieren Sie ein Funktionsprofil für die Zeiterfassung für Arbeitskräfte, für die Sie Zeiterfassungen aktivieren möchten. ** Auf POS-Funktionsprofilen ** &gt; ** Funktionen ** &gt; ** POS-Zeiterfassungen ** &gt; ** aktivieren Sie Zeiterfassungen **.
--   Konfigurieren Sie Point-of-Sale-Berechtigungsgruppen (POS), um die Berechtigung zum Anzeigen von Zeiterfassungseinträgen zu aktivieren. Diese Berechtigung ermöglicht einem Benutzer die Anzeige der Zeiterfassungen anderer Arbeitskräfte im Shop (und von jedem anderen Shops, dem der Benutzer zugeordnet ist, über das Adressbuch). Sie sollten diese Berechtigung für eine Managerrolle aber nicht für eine Kassiererrolle aktivieren. ** Auf POS-Berechtigungsgruppen ** &gt; ** zeigen Sie Stempeluhreinträge ** angezeigt.
+-   Aktivieren Sie ein Funktionsprofil für die Zeiterfassung für Arbeitskräfte, für die Sie Zeiterfassungen aktivieren möchten. Klicken Sie auf **POS-Funktionensprofile** &gt; **Funktionen** &gt; **POS-Zeiterfassungen** &gt; **Zeiterfassungen aktivieren.**
+-   Konfigurieren Sie Point-of-Sale-Berechtigungsgruppen (POS), um die Berechtigung zum Anzeigen von Zeiterfassungseinträgen zu aktivieren. Diese Berechtigung ermöglicht einem Benutzer die Anzeige der Zeiterfassungen anderer Arbeitskräfte im Shop (und von jedem anderen Shops, dem der Benutzer zugeordnet ist, über das Adressbuch). Sie sollten diese Berechtigung für eine Managerrolle aber nicht für eine Kassiererrolle aktivieren. Klicken Sie auf **POS-Berechtigungsgruppen** &gt; **Zeiterfassungseinträge anzeigen.**
 
 ## <a name="register-time"></a>Kassenzeit
 ### <a name="cashier-and-non-cashier-time-registrations"></a>Kassierer- und Nichtkassiererzeiterfassungen
@@ -96,7 +99,7 @@ Informationen zu den Konfigurationsschritten finden Sie unter <https://technet.m
     </tbody>
     </table>
 
-    ![TimeClockStates ([]. /media/timeclockstates.png)]". /media/timeclockstates.png)
+    [![TimeClockStates](./media/timeclockstates.png)](./media/timeclockstates.png)
 -   Sehen Sie die Bestätigungsmeldung an, und überprüfen Sie, ob die Uhrzeit der aktuellen Aktivität korrekt ist.
 -   Arbeitsprotokoll:
     -   Klicken Sie auf **Arbeitsprotokoll**, um die Zeituhraktivität anzuzeigen.
@@ -108,7 +111,7 @@ Informationen zu den Konfigurationsschritten finden Sie unter <https://technet.m
 -   Unterschiedliche Zeitzonen:
     -   Wenn Sie Zeit von einem anderen Standort (für das Kassiererarbeitsprotokoll oder mithilfe von **Zeiterfassungseinträge anzeigen** für ein Managerszenario) anzeigen und dieser Standort in einer anderen Zeitzone ist, werden die Zeiterfassungen, die Sie sehen, in Ihre lokale Zeitzone umgewandelt. Beispielsweise sind Sie ein Manager für zwei Shops, eine in Arizona und der andere im Nevada. Ein Kassierer Einstempeln erfasst ein an 9:00 Uhr in Arizona. In diesem Moment ist es in Nevada 8:00 Uhr. Wenn Sie also im Shop in Nevada sind und Zeiterfassungen anzeigen, wird die Zeiterfassung als 8 Uhr angegeben.
 
-## <a name="view-worker-time-registrations"></a>Ansichtsarbeitskraftzeiterfassungen
+## <a name="view-worker-time-registrations"></a>Zeiterfassungsarbeitskräfte anzeigen
 ### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Anzeigen von Arbeitskraftzeiterfassungen und Filtern nach Shop oder Aktivitätstyp
 
 Im POS:
@@ -117,8 +120,8 @@ Im POS:
 -   Sie sehen Zeituhrerfassungsaktivitäten von allen Arbeitskräften, die den gleichen Filialen zugewiesen sind, denen Sie zugewiesen sind.
 -   Sie können den Aktivitätstyp und Shopfilter verwenden, um Zeiterfassungen zu filtern.
 
-## <a name="process-and-manage-time-registrations"></a>Prozess und Verwalten von Erfassungen
-Dynamics 365 für Arbeitsgänge - Kleinbenutzer folgt den Workflow, um zum Berechnen, Genehmigen und Übertragen von Zeiterfassungen zur Lohnabrechnung.
+## <a name="process-and-manage-time-registrations"></a>Verarbeiten und Verwalten von Zeit- und Anwesenheitserfassungen
+Ein Dynamics 365 for Operations - Retail -Benutzer folgt dem Workflow, um Zeiterfassungen zu berechnen, zu genehmigen und in die Lohnabrechnung zu übertragen.
 
 ### <a name="primary-operations"></a>Primäre Vorgänge
 
@@ -132,5 +135,7 @@ Dynamics 365 für Arbeitsgänge - Kleinbenutzer folgt den Workflow, um zum Berec
 -   Erfassen der Abwesenheit
 
 Weitere Informationen zum Verarbeiten von Zeit- und Anwesenheitserfassungen finden Sie unter <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+
+
 
 

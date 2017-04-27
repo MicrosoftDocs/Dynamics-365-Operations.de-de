@@ -1,5 +1,5 @@
 ---
-title: "Hiermit können Sie verschiedene Kostenfaktordimensionsmitgliedern einem Common zu, das von den Dimensionsmitgliedern festgelegt wird"
+title: Verschiedene Kostenelement-Dimensionsmitglieder einem gemeinsamen Satz von Dimensionsmitgliedern zuweisen
 description: "Indem Sie verschiedene Kostenelement-Dimensionsmitglieder einem gemeinsamen Satz von Kostenelement-Dimensionsmitgliedern zuordnen, führen Sie Daten in einem gemeinsamen Format zu Analysezwecken zusammen."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Hiermit können Sie verschiedene Kostenfaktordimensionsmitgliedern einem Common zu, das von den Dimensionsmitgliedern festgelegt wird
+# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Verschiedene Kostenelement-Dimensionsmitglieder einem gemeinsamen Satz von Dimensionsmitgliedern zuweisen
 
 Indem Sie verschiedene Kostenelement-Dimensionsmitglieder einem gemeinsamen Satz von Kostenelement-Dimensionsmitgliedern zuordnen, führen Sie Daten in einem gemeinsamen Format zu Analysezwecken zusammen.
 
@@ -38,10 +38,10 @@ Das folgende Beispiel veranschaulicht, wie Sie als Kostencontroller eine neue Ko
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Importierte Kostenelement-Dimensionsmitglieder vom US-Kontenplan | Importierte Kostenelement-Dimensionsmitglieder aus dem französischen Kontenplan | Zuordnung von US-amerikanischen und französischen Kostenelement-Dimensionsmitgliedern zu einem gemeinsamen Satz |
 | 5001: Vertrieb                                                           | 5001: Vertrieb und Werbung                                               | 5000: Vertrieb und Werbung                                             |
-| 5030: Werbung                                                     | 6390: Aktienkauf \*                                                    | 7000: Reinigungsausgaben                                                 |
+| 5030: Werbung                                                     | 6390: Bestandseinkauf*\*                                                    | 7000: Reinigungsausgaben                                                 |
 | 7001: Reinigungsausgaben                                               | 7001: Reisekosten                                                      | 7001: Reisekosten                                                   |
 
-\*Das französische Kostenfaktor-Dimensionsmitglied des Aktienkaufs wird nicht zugeordnet.
+\*Das französische Kostenelement-Dimensionsmitglied des Bestandskaufs ist nicht zugeordnet.
 
 ## <a name="currency-conversion"></a>Währungskonvertierung
 Die verschiedenen Kontenpläne, die Sie verwenden, sind möglicherweise für die Verwendung verschiedener Währungen eingerichtet. In diesem Fall sollten Sie sicherstellen, dass Sie eine Währungsumrechnung angeben, sodass Kostendaten mithilfe der korrekten Währung verarbeitet werden, wie im Kostenrechnungs-Sachkonto definiert, wo die Kostenelement-Dimensionsmitglieder verwendet werden. Wenn im vorherigen Beispiel US-Dollar (USD) im Kostenrechnungs-Sachkonto verwendet werden, müssen Sie eine Währungsumrechnung von USD zu Euro (EUR) erstellen, um Buchungen für die zugeordneten Kostenelement-Dimensionsmitglieder zu verarbeiten.

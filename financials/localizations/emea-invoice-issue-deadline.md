@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="invoice-issue-deadline"></a>Rechnungsabgangsfrist
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird erläutert, wie Parameter eingerichtet werden, um die Fälligkeitsdaten für die Erstellung von Debitorenrechnungen und Kreditorenrechnungen in der Europäischen Union zu berechnen.
 
 Die Direktive 45/2010 der Europäischen Union (EU) und andere Richtlinien erfordern, dass Lieferungen innerhalb der EU (innergemeinschaftliche Lieferungen) am oder vor dem fünfzehnten Tag des Monats im Anschluss an die erfolgte Lieferung fakturiert werden müssen. Gleichzeitig kann jedes EU-Land verschiedene Rechnungsstellungsfristen für inländische Lieferungen aufweisen. Über das Fälligkeitsdatum für die Ausstellung von Rechnungen können Sie das Datumsintervall an die Länder-/Regionsart anpassen. Dann wird das Fälligkeitsdatum für die Ausstellung von Rechnungen für alle Lieferungen in Länder/Regionen eines bestimmten Typs oder aus diesen Ländern/Regionen unter Verwendung von Regeln berechnet, die für das angegebene Datumsintervall festgelegt wurden. Darüber hinaus können Sie alle Lieferscheine abrufen, die ein bestimmtes Fälligkeitsdatum für die Ausstellung von Rechnungen enthalten, nach dem Fälligkeitsdatum für die Ausstellung von Rechnungen während der periodischen Vertriebsrechnungsstellung filtern und das Fälligkeitsdatum für die Ausstellung von Rechnungen bei der Rechnungsbuchung steuern. Sie können einen Datumsintervallcode und dann eine Berechnungsregel für das Rechnungsausgabedatum einrichten, indem Sie den Datumsintervallcode einem Länder-/Regionstyp zuweisen. Die Berechnungsregel wird verwendet, um das Fälligkeitsdatum für die Erstellung von Rechnungen für die folgenden Transaktionen zu berechnen:
@@ -42,7 +45,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die erfüllt sein
 | Kategorie            | Voraussetzung                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Land/Region      | Die primäre Adresse der juristischen Person muss in einem EU-Mitgliedsstaat sein.                                                                                                                                                                                                                                                                                                                    |
-| Zugehörige Einrichtungsaufgaben | Richten Sie auf der Seite **Datumsintervalle** ein Datumsintervall ein, das verwendet wird, um das Fälligkeitsdatum der Rechnungsausstellung zu berechnen. (Auf ** Hauptbuch ** &gt; ** Sachkonto-Einstellungen ** &gt; ** Datumsintervalle **.) Auf der Seite Außenhandeleigenschaften ** Außenhandelsparameter ** der Einstellung für verschiedene Länder/Regionen. ** (Auf Steuer ** &gt; ** Einstellungen ** &gt; ** Außenhandel ** &gt; ** Außenhandelsparameter **.) |
+| Zugehörige Einrichtungsaufgaben | Richten Sie auf der Seite **Datumsintervalle** ein Datumsintervall ein, das verwendet wird, um das Fälligkeitsdatum der Rechnungsausstellung zu berechnen. (Klicken Sie auf **Hauptbuch** &gt; **Sachkonto-Einstellungen ** &gt; **Datumsintervalle**.) Auf der Seite **Außenhandeleigenschaften** setzen Sie die Außenhandelsparameter für verschiedene Länder/Regionen fest. (Klicken Sie  **Steuer** &gt; **Einrichten** &gt; **Außenhandel** &gt; **Außenhandelsparameter**.) |
 
 ## <a name="invoice-issue-due-date-calculation-rule"></a>Berechnungsregel für Fälligkeitsdaten für die Ausstellung von Rechnungen
 Verwenden Sie die Seite **Berechnung für Fälligkeitsdatum der Rechnungsausstellung einrichten**, um eine Berechnungsregel für Fälligkeitsdaten für die Ausstellung von Rechnungen einzurichten, indem Sie einem Länder-/Regionstyp einen Datumsintervallcode zuweisen.
@@ -51,7 +54,7 @@ Verwenden Sie die Seite **Berechnung für Fälligkeitsdatum der Rechnungsausstel
 Sie können auch Datumskontrollenparameter einrichten, um sicherzustellen, dass Debitorenrechnungen und Gutschriften für Debitorentransaktionen innerhalb des angegebenen Zeitraums generiert werden, nachdem die Lieferung erfolgt ist. Sie finden diese Parameter im Bereich **Rechnungsdatenkontrolle** auf der Seite **Debitorenkontenparameter**.
 
 ## <a name="example"></a>Beispiel
-Wenn Sie mit Microsoft Dynamics 365 einzurichten für Arbeitsgänge berechnet Rechnungsausgabedatumsfälligkeitsdatum für innergemeinschaftliche Lieferungen am Tag des Monats Zugang nach die Lieferung geliefert ist, erstellen Sie einen Datumsintervallcode und eine Berechnungs regel die die folgenden Einstellungen besitzen.
+Um Microsoft Dynamics 365 for Operations einzurichten, dass Fälligkeitsdaten für die Ausstellung von Rechnungen für Lieferungen innerhalb der EU am 15. Tag des Folgemonats, nachdem die Lieferung zugestellt wurde, berechnet werden, erstellen Sie einen Datumsintervallcode und eine Berechnungsregel, die die folgenden Einstellungen besitzen:
 
 ### <a name="date-interval-code"></a>Datumsintervallcode
 
@@ -75,8 +78,8 @@ Wenn Sie mit Microsoft Dynamics 365 einzurichten für Arbeitsgänge berechnet Re
 ## <a name="next-steps"></a>Nächste Schritte
 Nachdem Sie die Parameter eingerichtet haben, die zur Berechnung von Fälligkeitsdaten für die Ausstellung von Rechnungen verwendet werden, können Sie die folgenden Transaktionen erstellen und buchen, um die Fälligkeitsdaten für die Ausstellung von Rechnungen automatisch zu berechnen und zu aktualisieren:
 
--   **Aufträge** – Wenn Sie einen Auftrag erstellen und einen Lieferschein buchen, wird das Fälligkeitsdatum für die Ausstellung der Rechnung berechnet und auf dem Lieferschein aktualisiert. Das Fälligkeitsdatum wird basierend das Datumsintervall berechnet, mit der das Land/Region zugeordnet ist, der für die Lieferadresse des Auftrags angegeben wird. Nachdem Sie den Lieferschein buchen, können Sie das Rechnungsausgabedatumsfälligkeitsdatum ** fakturieren Sie im Feld auf der Ausgabedatumsfälligkeitsdatum ** ** Lieferscheinerfassung ** Seite überprüfen. ** Auf (Vertrieb und Marketing ** &gt; ** Auftrag ** &gt; ** Auftragsversand ** ** &gt; Lieferschein **.) Sie können alle Lieferscheine, die nicht fakturiert werden, und ihr Rechnungsausgabedatumsfälligkeitsdatum **, auf der die Lieferscheine nicht fakturiert ** Seite anzeigen. ** Auf (Vertrieb und Marketing ** &gt; ** Auftrag ** &gt; ** Auftragsversand ** ** &gt; Lieferscheine nicht fakturiert **.)
--   **Bestellungen** – Wenn Sie eine Bestellung erstellen und einen Produktzugang buchen, wird das Fälligkeitsdatum für die Ausstellung der Rechnung berechnet und auf dem Produktzugang aktualisiert. Das Fälligkeitsdatum wird anhand des Datumsintervalls berechnet, das dem Land bzw. der Region zugewiesen ist, das bzw. die in der primären Adresse des Kreditors angegeben ist. Nachdem Sie den Produktzugang gebucht haben, können Sie das Fälligkeitsdatum der Rechnungsausstellung im Feld **Fälligkeitsdatum für Rechnungserstellung** auf der Seite **Produktzugangserfassung** überprüfen. ** Auf (Beschaffung ** &gt; ** Bestellungen ** &gt; ** Produkte Empfangssystem ** &gt; ** Produktzugang **.) Sie können alle Produktzugänge, die nicht fakturiert werden, und ihr Rechnungsausgabedatumsfälligkeitsdatum, auf der die Produktzugänge ** nicht fakturiert ** Seite anzeigen. ** Auf (Beschaffung ** &gt; ** Bestellungen ** &gt; ** Produkte Empfangssystem ** &gt; ** Produktzugängen ** nicht fakturiert.)
+-   **Aufträge** – Wenn Sie einen Auftrag erstellen und einen Lieferschein buchen, wird das Fälligkeitsdatum für die Ausstellung der Rechnung berechnet und auf dem Lieferschein aktualisiert. Das Fälligkeitsdatum wird anhand des Datumsintervalls berechnet, das dem Land/der Region zugewiesen ist, das in der Lieferadresse des Auftrags angegeben ist. Nachdem Sie den Lieferschein gebucht haben, können Sie das Fälligkeitsdatum der Rechnungsausstellung im Feld **Fälligkeitsdatum für Rechnungserstellung** auf der Seite **Lieferscheinerfassung** überprüfen. (Klicken Sie auf **Vertrieb und Marketing** &gt; **Auftrag** &gt; **Auftragsversand** &gt; **Lieferschein**.) Sie können alle Lieferscheine, die nicht fakturiert werden, und das Rechnungsausgabefälligkeitsdatum auf der Seite **Lieferscheine nicht fakturiert** anzeigen. (Klicken Sie auf **Vertrieb und Marketing** &gt; **Auftrag** &gt; **Versandgebühr** &gt; **Nicht in Rechnung gestellte Lieferscheine**.)
+-   **Bestellungen** – Wenn Sie eine Bestellung erstellen und einen Produktzugang buchen, wird das Fälligkeitsdatum für die Ausstellung der Rechnung berechnet und auf dem Produktzugang aktualisiert. Das Fälligkeitsdatum wird anhand des Datumsintervalls berechnet, das dem Land bzw. der Region zugewiesen ist, das bzw. die in der primären Adresse des Kreditors angegeben ist. Nachdem Sie den Produktzugang gebucht haben, können Sie das Fälligkeitsdatum der Rechnungsausstellung im Feld **Fälligkeitsdatum für Rechnungserstellung** auf der Seite **Produktzugangserfassung** überprüfen. (Klicken Sie auf **Beschaffung** &gt; **Bestellungen** &gt; **Produkte Empfangen** &gt;  **Produktzugang**.) Sie können alle Produktzugänge, die nicht fakturiert werden, und ihr Rechnungsausgabefälligkeitsdatum, auf der Seite **Produktzugänge nicht fakturiert** anzeigen. (Klicken Sie auf ** Beschaffung**&gt; **Bestellungen** &gt; **Empfangene Produkte** &gt; **Nicht fakturierte Produktzugänge**.)
 
 ## <a name="technical-information-for-system-administrators"></a>Technische Informationen für Systemadministratoren
 Wenn Sie keinen Zugriff auf die Seiten für die Durchführung der in diesem Artikel beschriebenen Aufgaben haben, wenden Sie sich mit den Informationen aus der folgenden Tabelle an Ihren Systemadministrator.
@@ -95,7 +98,7 @@ Wenn Sie keinen Zugriff auf die Seiten für die Durchführung der in diesem Arti
 <tbody>
 <tr class="odd">
 <td>Konfigurationsschlüssel</td>
-<td>Klicken <strong>Systemverwaltung</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Lizenzierung</strong> &gt; <strong>Lizenzkonfiguration</strong> Sie auf. Klicken Sie auf den Konfigurationsschlüssel <strong>Hauptbuch</strong>.</td>
+<td>Klicken Sie auf <strong>Systemverwaltung</strong> &gt; <strong>Einstellungen</strong> &gt; <strong>Lizenzierung</strong> &gt; <strong>Lizenzkonfiguration.</strong>. Klicken Sie auf den Konfigurationsschlüssel <strong>Hauptbuch</strong>.</td>
 </tr>
 <tr class="even">
 <td>Sicherheitsrollen und Aufgaben</td>
@@ -116,6 +119,8 @@ Wenn Sie keinen Zugriff auf die Seiten für die Durchführung der in diesem Arti
 </tr>
 </tbody>
 </table>
+
+
 
 
 

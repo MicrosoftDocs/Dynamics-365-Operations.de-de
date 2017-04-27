@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-fixed-compensation-plans"></a>Erstellen von Plänen für feste Vergütung
 
-Feste Vergütung bezieht sich auf das reguläre Bruttogehalt oder den Lohn eines Mitarbeiters. In diesem Thema werden die Komponenten, die eingerichtet werden müssen, bevor Sie einen festen Vergütungsplan Mitarbeiter erstellen und registrieren können.
+[!include[banner](includes/banner.md)]
 
-Für Ihre Mitarbeiter können feste Vergütungsbeträge berechnet werden, die auf Faktoren wie Leistung, Region und Budgeterweiterungen basieren. Microsoft Dynamics 365 für Arbeitsgänge unterstützt Schritt, älteren und Inforegistervergütungstypen.
+
+Feste Vergütung bezieht sich auf das reguläre Bruttogehalt oder den Lohn eines Mitarbeiters. In diesem Artikel werden die Komponenten beschrieben die eingerichtet werden müssen, bevor Sie einen festen Vergütungsplan erstellen und Mitarbeiter registrieren können.
+
+Für Ihre Mitarbeiter können feste Vergütungsbeträge berechnet werden, die auf Faktoren wie Leistung, Region und Budgeterweiterungen basieren. Microsoft Dynamics 365 for Operations unterstützt die Kompensationsarten "Schritt", "Klasse" und "Bereich".
 
 ## <a name="fixed-compensation-components"></a>Feste Vergütungskomponenten
 ### <a name="compensation-levels"></a>Vergütungsstufen
 
-Sie können die verwenden ** Vergütungsstufen ** die Vergütung für bestimmte Stellen festzulegen, zu unterstützen, sicherzustellen, dass die Mitarbeiter, die diese Einzelvorgänge vorgesehen, ziemlich bezahlt werden. ** Vergütungsstufen ** Auf der Seite können Sie die Vergütungsstufen ein, die für jeden Schritt, älteren und Inforegisterplan erforderlich sind. Verwenden Sie die Schaltflächen **Nach oben** bzw. **Nach unten**, um die Stufen in der richtigen Reihenfolge nach Typ anzuordnen. Indem Sie Vergütungsstufen für eine Stelle festlegen, können Sie sicherstellen, dass alle Mitarbeiter, die diese Stelle innehaben, auf derselben Vergütungsstufe bezahlt werden.
+Sie können die verwenden **Vergütungsstufen** für bestimmte Stellen festlegen, um sicherzustellen, dass die Mitarbeiter, die für diese Einzelvorgänge vorgesehen, fair bezahlt werden. Auf der Seite **Vergütungsstufen**können Sie die Vergütungsstufen einrichten, die für jeden Schritt, Grad und Gehaltsplan erforderlich sind. Verwenden Sie die Schaltflächen **Nach oben** bzw. **Nach unten**, um die Stufen in der richtigen Reihenfolge nach Typ anzuordnen. Indem Sie Vergütungsstufen für eine Stelle festlegen, können Sie sicherstellen, dass alle Mitarbeiter, die diese Stelle innehaben, auf derselben Vergütungsstufe bezahlt werden.
 
 ### <a name="reference-points"></a>Referenzpunkte
 
-**Referenzpunkte** sind die Spalten im Raster, die die Vergütungsbereiche für jede Stufe definieren. Die Vergütungsstufe ist die Zeile im Raster. Typische Referenzpunkte für einen Plan für Gradtyps sind ein Minimum, Mittelwert und maximal ein. Erstellen Sie Referenzpunkte für die Referenzpunkteinstellungen ** ** Seite.
+**Referenzpunkte** sind die Spalten im Raster, die die Vergütungsbereiche für jede Stufe definieren. Die Vergütungsstufe ist die Zeile im Raster. Typische Referenzpunkte für einen Plan für Gradtypen sind ein Minimumwer, ein Mittelwert und ein Maximalwert. Dient zum Erstellen von Referenzpunkten für eine **Referenzpunkteinstellung**.
 
 ### <a name="compensation-grids"></a>Vergütungsraster
 
@@ -56,11 +59,11 @@ Sie können den Plan für feste Vergütung so anlegen, dass alle von Ihnen konfi
 
 Über die Einstellung **Außerhalb des zulässigen Bereichs** können Sie angeben, wie strikt sichergestellt werden soll, dass Vergütungsbeträge zwischen dem Mindest- und dem Höchstbetrag liegen. Durch die Toleranzeinstellung **Hart** wird durchgesetzt, dass die Vergütung innerhalb des Bereichs liegt, der für eine bestimmte Stufe definiert wurde. Wenn Sie als Toleranz die Option **Weich** festlegen, werden Sie gewarnt, wenn der Vergütungsbetrag außerhalb des Bereichs liegt. Allerdings können Sie den Vorgang fortsetzen. Wenn Sie als Toleranz **Keine** festlegen, können Sie jeden Vergütungsbetrag für einen Mitarbeiter eingeben, ohne dass eine Warn- oder Fehlermeldung angezeigt wird. 
 
-** Einstellungsregel ** Die Einstellungen können Sie, dass alle Mitarbeiter die gleiche Erhöhung erhalten soll, unabhängig davon das Datum angeben, bis sie gestartet wurden (**Einstellungsregel ** = ** = **), ob Mitarbeiter oder einen Prozentsatz der Prämie erhalten sollen, basierend, wie lange sie während des Lebenszyklus verwendet wurden (** Einstellungsregel ** = ** = Prozent ). 
+Über die **Einstellungsregel** können Sie festlegen, ob alle Mitarbeiter unabhängig von ihrem Einstellungsdatum die gleiche Erhöhung erhalten sollen (**Einstellungsregel** = **Keine**) oder ob Mitarbeiter basierend auf der Länge ihrer Beschäftigungsdauer in diesem Zyklus einen Prozentsatz der Prämie erhalten sollen (**Einstellungsregel **  = **Prozent**). 
 
 Eine **Bereichsauslastungsmatrix** ist hilfreich, wenn Sie entweder den Zeitraum verkürzen möchten, nach dem Mitarbeiter den Mittelwert ihres Bereichs erreichen, oder wenn Sie den Zeitraum verlängern möchten, nach dem Mitarbeiter den maximalen Referenzpunkt im Bereich erreichen können. Beispiel: Sie möchten Mitarbeitern, die in den unteren 25 Prozent ihres jeweiligen Bereichs liegen, 110 Prozent ihrer Erfolgsprämie zuteilen, während Mitarbeiter, die in den obersten 25 Prozent ihres Bereichs liegen, nur 80 Prozent ihrer Erfolgsprämie erhalten sollen, damit sie nicht so schnell das Maximum erreichen. 
 
-Nachdem Sie die Grundlagen eines Plan für feste Vergütung definiert haben, können Sie die Vergütungsstruktur für den Plan einrichten. ** Auf Einstellungskompensation **. Ein Dialogfeldschieberegler geöffnet, mit dem Sie gibt drei Optionen:
+Nachdem Sie die Grundlagen eines Plan für feste Vergütung definiert haben, können Sie die Vergütungsstruktur für den Plan einrichten. Klicken Sie auf **Vergütung einrichten**. Es öffnet sich ein Dialogfeld mit drei Optionen:
 
 -   Erstellen Sie ein neues Vergütungsraster, indem Sie eine Referenzpunkteinstellung auswählen und dem Raster einen Namen geben.
 -   Erstellen Sie ein neues Vergütungsraster, indem Sie eine Kopie eines vorhandenen Rasters erstellen, das Sie als Ausgangspunkt verwenden können.
@@ -71,7 +74,7 @@ Nachdem Sie eine Option ausgewählt haben, wird die Seite **Vergütungsstruktur*
 ## <a name="fixed-compensation-enrollment"></a>Registrierung für feste Vergütung
 ### <a name="determine-who-is-eligible-for-the-plan"></a>Bestimmen der Berechtigung für einen Plan
 
-Wenn Sie Mitarbeiter für einen Plan für feste Vergütung registrieren, müssen Sie als Erstes bestimmen, wer für die im Plan definierte Vergütung berechtigt ist. Erst nachdem Sie die Berechtigung bestimmt haben, können Sie Mitarbeitern den Plan zuweisen. Um Beschäftigungsberechtigung einrichten, öffnen Sie die Berechtigungsregeln ** ** Seite. Hier erstellen Sie eine neue Berechtigungsregel für den Vergütungsplan und legen die Kriterien, dass ein Mitarbeiter angewendet werden muss, um für einen Plan in Anspruch genommen werden kann. Sie können die Berechtigung nach Abteilung, Gewerkschaft, Vergütungsregion (Standort), Stelle, Stellenfunktion, Stellentyp oder Vergütungsstufe begrenzen. Mitarbeiter können nur für einen Vergütungsplan registriert werden, wenn sie alle Bedingungen erfüllen, die über die Berechtigungsregel festgelegt wurden. 
+Wenn Sie Mitarbeiter für einen Plan für feste Vergütung registrieren, müssen Sie als Erstes bestimmen, wer für die im Plan definierte Vergütung berechtigt ist. Erst nachdem Sie die Berechtigung bestimmt haben, können Sie Mitarbeitern den Plan zuweisen. Um Beschäftigungsberechtigung einzurichten, öffnen Sie die Seite **Berechtigungsregeln**. Hier erstellen Sie eine neue Berechtigungsregel für den Vergütungsplan und legen die Kriterien fest, die für einen Mitarbeiter angewendet werden müssen, damit er in einen Plan aufgenommen werden kann. Sie können die Berechtigung nach Abteilung, Gewerkschaft, Vergütungsregion (Standort), Stelle, Stellenfunktion, Stellentyp oder Vergütungsstufe begrenzen. Mitarbeiter können nur für einen Vergütungsplan registriert werden, wenn sie alle Bedingungen erfüllen, die über die Berechtigungsregel festgelegt wurden. 
 
 **Hinweis:** Berechtigungsregeln werden sowohl für Pläne für eine feste Vergütung als auch für Pläne für eine variable Vergütung verwendet, um die Berechtigung zu ermitteln. 
 
@@ -83,7 +86,7 @@ Die Berechtigungsregel berücksichtigt den Wert bestimmter Felder in den Datens�
     -   Auf der Registerkarte **Vergütung**: das Feld **Ebene**
 -   Auf der Seite **Positionen** berücksichtigt die Berechtigungsregel die Felder **Abteilung** und **Vergütungsregion**.
 
-Die Berechtigungsregel werden außerdem Gewerkschaften, die dem Mitarbeiter zugeordnet sind (der Mitarbeiter auf ** ** Seite, auf der Registerkarte, Arbeitskraft ** ** ** auf persönliche Informationen ** ** &gt; Gewerkschaften **).
+Die Berechtigungsregel berücksichtigt außerdem Gewerkschaften für diesen Mitarbeiter. (Klicken Sie auf der Seite **Mitarbeiter** auf der Registerkarte **Arbeitskraft** auf **Persönliche Informationen** &gt; **Gewerkschaften**).
 
 ### <a name="define-fixed-compensation-actions"></a>Definieren von Aktivitäten bezüglich fester Vergütung
 
@@ -93,7 +96,7 @@ Wenn beispielsweise die feste Vergütung für einen Mitarbeiter eingerichtet wur
 
 ### <a name="enroll-the-employee"></a>Registrieren des Mitarbeiters
 
-Sie können nun einen Mitarbeiter zu einem Plan für feste Vergütung zuweisen. Öffnen Sie die Seite **Mitarbeiter**, und wählen Sie den Mitarbeiter aus, der für den Vergütungsplan registriert werden soll. Klicken Sie im Aktivitätsbereich auf ** Vergütung ** &gt; ** festen Plan **. Sie können eine neue Aktivität bezüglich fester Vergütung an diesem Mitarbeiter nun erstellen. 
+Sie können nun einen Mitarbeiter zu einem Plan für feste Vergütung zuweisen. Öffnen Sie die Seite **Mitarbeiter**, und wählen Sie den Mitarbeiter aus, der für den Vergütungsplan registriert werden soll. Klicken Sie im Aktivitätsbereich auf **Kompensation** &gt; **Fester Plan**. Sie können nun eine neue Aktivität feste Kompensation für diesen Mitarbeiter erstellen. 
 
 **Hinweis:** Im Feld für den Vergütungsplan werden nur die Pläne angezeigt, für die ein Mitarbeiter laut den Berechtigungsregeln berechtigt ist, die für den jeweiligen Plan eingerichtet wurden. Wenn für einen Plan keine Berechtigungsregel eingerichtet wurde, sind keine Mitarbeiter für diesen Plan berechtigt. 
 
@@ -103,5 +106,7 @@ Das System überprüft, ob der Vergütungsbetrag, der für einen Vergütungsplan
 --------
 
 [Vergütungspläne](compensation-plans.md)
+
+
 
 

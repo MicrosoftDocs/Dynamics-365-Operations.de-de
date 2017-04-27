@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consolidated-batch-orders"></a>Konsolidierte Chargenaufträge
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt das Konzept der konsolidierten Chargenaufträgen.
 
 Ein produzierter Sammelartikel wird als übergeordneter Artikel angesehen, und ein verpackter Artikel ist ein untergeordneter Artikel. Die Beziehung zwischen dem Sammelartikel und dem verpackten Artikel wird in einer Konvertierung von Sammelartikeln ausgedrückt. Diese Konvertierung von Sammelartikeln wird im Sammelartikel selbst definiert.  
@@ -41,6 +44,8 @@ Ein konsolidierter Chargenauftrag kann eine beliebige Kombination der folgenden 
 -   Mehrere Sammelaufträge und mehrere Verpackungsaufträge
 -   Mehrere Sammelaufträge und ein einzelner Verpackungsauftrag
 -   Nur Verpackungsaufträge
+
+
 
 
 

@@ -54,9 +54,9 @@ Wenn als Abschreibungsjahr **Kalender** ausgewählt wird, stehen im Feld **Perio
 
 ### <a name="fiscal"></a>Steuerlich
 
-Wenn Sie **Steuerlich** im Feld **Jahresabschreibung** auswählen, wird die Abschreibungsmethode "175 % degressiv" auf Grundlage des Geschäftsjahres für den Steuerkalender berechnet, der für das Wertmodell oder das Abschreibungsbuch angegeben wird, oder für den Steuerkalender, der auf der Seite **Sachkonto** ausgewählt wird. Steuerkalender werden auf der Seite **Steuerkalender** eingerichtet. Weitere Informationen finden Sie [Steuerkalender, Geschäftsjahre und Perioden.] (\ \ \ fiscal-calendars-fiscal-years-periods.md Budgetierung Finanzdaten).
+Wenn Sie **Steuerlich** im Feld **Jahresabschreibung** auswählen, wird die Abschreibungsmethode "175 % degressiv" auf Grundlage des Geschäftsjahres für den Steuerkalender berechnet, der für das Wertmodell oder das Abschreibungsbuch angegeben wird, oder für den Steuerkalender, der auf der Seite **Sachkonto** ausgewählt wird. Steuerkalender werden auf der Seite **Steuerkalender** eingerichtet. Weitere Informationen finden Sie unter [Steuerkalender, Geschäftsjahre und Perioden.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md)
 
-Beispiel für das Geschäftsjahr dem 1. Juli bis zum 30. Juni, die zum am 1. Juli. Das Geschäftsjahr kann länger oder kürzer als 12 Monate sein. Die Abschreibung wird automatisch für jede Periode angepasst, und die Länge des nächsten Geschäftsjahres wird mit den Einstellungen für die Perioden auf der Seite **Steuerkalender** bestimmt. 
+Für das Geschäftsjahr vom 1. Juli bis zum 30. Juni beginnt die Abschreibungsberechnung am 1. Juli. Das Geschäftsjahr kann länger oder kürzer als 12 Monate sein. Die Abschreibung wird automatisch für jede Periode angepasst, und die Länge des nächsten Geschäftsjahres wird mit den Einstellungen für die Perioden auf der Seite **Steuerkalender** bestimmt. 
 
 Wenn als Abschreibungsjahr **Steuerlich** ausgewählt wird, stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung:
 
@@ -81,6 +81,6 @@ Bei der Abschreibungsmethode "175 % degressiv" werden 175 Prozent durch die Anza
 | Jahr 3 | 4.225 × 35 % = 1.478,75                        | 5.225 – 1.478,75 = 3.746,25 | 4.225 – 1.478,75 = 2.746,25           |
 
 > [!NOTE] 
-> Normalerweise wenn der Betrag, der folgendermaßen berechnet wird, indem die Methode 175% für degressive Abschreibung anwenden soll, niedriger als der Betrag wird, der folgendermaßen berechnet wird, indem die lineare Methode anwendete, gibt es eine Umwandlung der linearen Abschreibungsmethode für die Nutzungsdauer.
+> Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "175% degressiv" berechnet wird, geringer ausfällt, als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
 
 

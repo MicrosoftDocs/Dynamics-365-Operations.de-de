@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-groups"></a>Kostengruppen
 
+[!include[banner](../includes/banner.md)]
+
+
 Kostengruppen bilden die Grundlage für die Segmentierung und Analyse von Kostenbeiträgen in den berechneten Kosten eines produzierten Artikels – beispielsweise Kostenbeiträge für Material, Arbeit oder Gemeinkosten. Die Segmentierung von Kostengruppen wird in Produktionsumgebungen auch als Kostenaufschlüsselung, Kostenzerlegung oder Kostenklassifizierung bezeichnet. 
 
 Die Segmentierung von Kostengruppen wird in Produktionsumgebungen auch als Kostenaufschlüsselung, Kostenzerlegung oder Kostenklassifizierung bezeichnet. Es gibt viele Einsatzmöglichkeiten für die Kostengruppensegmentierung. Nachfolgend finden Sie einige Beispiele:
@@ -48,6 +51,8 @@ Eine Kostengruppe kann zur weiteren Segmentierung mit einem Kostengruppentyp sow
 
 -   **Kostengruppentyp** – Jeder Kostengruppe muss ein Kostengruppentyp zugewiesen werden, durch den angegeben wird, ob sich die Kostengruppe auf "Direktmaterialien", "Direktfertigung" oder "Direktes Outsourcing" bezieht, oder um sie als "Indirekt" oder "Nicht definiert" zu kennzeichnen. Eine als "Direktmaterialien" festgelegte Kostengruppe kann Artikeln zugewiesen werden. Eine Kostengruppe vom Typ "Direktfertigung" kann Kostenkategorien zugewiesen werden. Eine direkte Kostengruppe "Direktes Outsourcing" kann einem Produkttyp "Service" zugewiesen werden, die es Ihnen ermöglicht, Kosten zu klassifizieren, die dem Dienstleistungseinkauf zu Fremdarbeitsaktivitäten zugeordnet sind. Eine Kostengruppe vom Typ "Indirekt" kann indirekten Kosten für (Zu-)Sätze zugewiesen werden. Eine Kostengruppe vom Typ "Nicht definiert" kann Artikeln, Kostenkategorien oder indirekten Kosten zugewiesen werden. Die Zuweisung eines Kostengruppentyps erfüllt mehrere Zwecke. Erstens: Sie schränkt die Möglichkeit zum Zuweisen einer Kostengruppe sowie die Möglichkeit zum Anzeigen einer Liste mit anwendbaren Kostengruppen ein. Zweitens: Sie ermöglicht eine zusätzliche Segmentierung für die Erstellung von Berichten. Drittens: Sie kann zum Zuweisen von Sachkonten für Abweichungen verwendet werden.
 -   **Verhalten** − Jeder Kostengruppe kann optional ein Verhalten zugewiesen werden, mit dem festgelegt wird, ob sich die Kostengruppe auf Fixkosten oder auf variable Kosten bezieht. Kostengruppen ohne Verhaltenswert gelten als variable Kosten. Die Zuweisung eines Verhaltens wirkt sich lediglich auf die Berichterstellung aus. So können beispielsweise Kosten mit einer Segmentierung für Fixkosten und für variable Kosten sowohl im Nachkalkulationsbogen als auch auf der Seite **Kostenaufschlüsselung nach Kostengruppe** angezeigt werden. Wenn Sie jeder Kostengruppe einen Gewinnvorgabe-Prozentsatz zuweisen, kann über die Herstellkostenkalkulation die Berechnung eines vorgeschlagenen Verkaufspreises auf Basis eines Kosten-plus-Aufschlag-Ansatzes bereitgestellt werden.
+
+
 
 
 

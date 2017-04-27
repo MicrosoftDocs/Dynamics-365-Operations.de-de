@@ -1,9 +1,9 @@
 ---
-title: Einstellungsanlagen
+title: Einrichten von Anlagen
 description: "Dieses Thema bietet einen Überblick über Anlagen-Moduleinstellung."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-fixed-assets"></a>Einstellungsanlagen
+# <a name="set-up-fixed-assets"></a>Einrichten von Anlagen
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieses Thema bietet einen Überblick über Anlagen-Moduleinstellung.
 
@@ -43,9 +46,9 @@ Anlagen werden bei der Erstellung einer Gruppe zugeordnet. Standardmäßig werde
 Abschreibungsprofile sollten zuerst eingerichtet werden. Im Abschreibungsprofil konfigurieren Sie, wie der Wert einer Anlage im Laufe der Zeit abgeschrieben wird. Sie müssen die Abschreibungsmethode, das Abschreibungsjahr (Kalenderjahr oder Geschäftsjahr) und die Häufigkeit der Abschreibung festlegen.
 
 ## <a name="books"></a>Bücher
-Nachdem Sie das Abschreibungsprofile erstellt haben, müssen Sie die erforderlichen Bücher für die Anlagen erstellen. Jedes Abschreibungsbuch verfolgt einen unabhängigen wertmäßigen Lebenszyklus einer Anlage. Bücher können konfiguriert werden, um zugehörige Buchungen im Hauptbuch zu buchen. Diese Konfiguration ist die Standardeinstellung, da sie in der Regel für Unternehmensrechnungslegung verwendet wird. Bücher, die nicht dem Hauptbuchbeitrag nur dem Anlagenuntergeordneten Sachkonto buchen und normalerweise für die Steuererklärung, verwendet werden soll.
+Nachdem Sie das Abschreibungsprofile erstellt haben, müssen Sie die erforderlichen Bücher für die Anlagen erstellen. Jedes Abschreibungsbuch verfolgt einen unabhängigen wertmäßigen Lebenszyklus einer Anlage. Bücher können konfiguriert werden, um zugehörige Buchungen im Hauptbuch zu buchen. Diese Konfiguration ist die Standardeinstellung, da sie in der Regel für Unternehmensrechnungslegung verwendet wird. Bücher, die nicht im Hauptbuch gebucht werden, werden nur in den Anlagenuntersachkonten gebucht und werden in der Regel für die Steuerberichterstattung verwendet.
 
-Ein primäres Abschreibungsprofil wird jedem Buch zugewiesen. Bücher haben auch ein alternatives oder wechselbares Abschreibungsprofil, wenn diese Art des Profils anwendbar ist. Um das Anlagenbuch in den Abschreibungsausführungen automatisch einzubeziehen, müssen Sie die Option Berechnen der Abschreibung aktivieren. Wenn diese Option nicht für eine Anlage ausgewählt wird, übersprungen werden der Abschreibungsvorschlag die Anlage.
+Ein primäres Abschreibungsprofil wird jedem Buch zugewiesen. Bücher haben auch ein alternatives oder wechselbares Abschreibungsprofil, wenn diese Art des Profils anwendbar ist. Um das Anlagenbuch in den Abschreibungsausführungen automatisch einzubeziehen, müssen Sie die Option Berechnen der Abschreibung aktivieren. Wenn diese Option nicht für eine Anlage ausgewählt wird, überspringt der Abschreibungsvorschlag die Anlage.
 
 Sie können auch abgeleitete Bücher einrichten. Die angegebenen abgeleiteten Transaktionen werden als genaue Kopie der primären Transaktion in den abgeleiteten Büchern gebucht. Daher werden normalerweise die abgeleitete Buchungen für Anschaffungen und Abgänge und nicht für Abschreibungsbuchungen eingerichtet.
 
@@ -62,14 +65,16 @@ Sie können Sonderabschreibungsbeträge oder Bonusabschreibungen für eine besti
 ## <a name="fixed-asset-parameters"></a>Anlagenparameter
 Der letzte Schritt ist, das Aktualisieren der Anlagenparameter.
 
-Das Feld Aktivierungsschwelle bestimmt die Anlagen, die abgeschrieben werden. Wenn eine Bestellposition als Anlage aktiviert, aber nicht den angegebenen Aktivierungsschwellenwert erreicht, ist eine Anlage noch erstellt oder aktualisiert, wobei die berechnensabschreibungsoption wird auf "Nein" festgelegt. Daher wird die Anlage nicht automatisch im Rahmen der Abschreibungsvorschläge abgeschrieben.
+Das Feld Aktivierungsschwelle bestimmt die Anlagen, die abgeschrieben werden. Wenn eine Bestellposition als Anlage ausgewählt wird, aber nicht den angegebenen Aktivierungsschwellenwert erreicht, ist eine Anlage noch erstellt oder aktualisiert, wobei die Option Berechnung der Abschreibung auf Nein festgelegt ist. Daher wird die Anlage nicht automatisch im Rahmen der Abschreibungsvorschläge abgeschrieben.
 
 Eine wichtige Option ist Automatisch Abschreibungsregulierungsbeträge mit Abgang erstellen. Wenn Sie diese Option auf Ja festlegen, wird die Anlagenabschreibung automatisch angepasst, basierend auf den Abschreibungseinstellungen zum Zeitpunkt der Anlagenbeseitigung. Eine weitere Option ist es, Skonti von Ihrem Anschaffungsbetrag abzuziehen, wenn Sie Anlagen erwerben, indem Sie eine Kreditorenrechnung verwenden.
 
-Im Inforegister Bestellung können Sie konfigurieren, wie Anlagen als Teil des Einkaufsprozesses erstellt werden sollen. Die erste Option ist Anlagenanschaffung aus Einkauf zulassen. Wenn Sie diese Option auf Ja festlegen, erfolgt die Anlagenanschaffung, wenn die Rechnung gebucht wird. Durch Festlegen dieser Option auf Nein, Ihnen eine Anlage auf eine Bestellung (PO) und Rechnung, wohingegen, noch aufnehmen können die Anschaffung wird nicht gebucht. Die Buchung muss als separater Schritt aus der Anlagenerfassung ausgeführt werden. Die erstellensanlage während der Produktzugangs- oder Rechnungsbuchungsoption können Sie eine neue Anlage bei der Buchung " spontan" erstellen,sodass diese nicht als Anlage vor der Buchung eingerichtet werden muss. Die letzte Option Während Positionseingabe auf Anlagenerstellung überprüfen, bezieht sich nur auf Bestellanforderungen.
+Im Inforegister Bestellung können Sie konfigurieren, wie Anlagen als Teil des Einkaufsprozesses erstellt werden sollen. Die erste Option ist Anlagenanschaffung aus Einkauf zulassen. Wenn Sie diese Option auf Ja festlegen, erfolgt die Anlagenanschaffung, wenn die Rechnung gebucht wird. Wenn Sie diese Option auf Nein festlegen, können Sie immer noch eine Anlage in eine Bestellung (PO) und Rechnung geben, aber die Anschaffung wird nicht gebucht werden. Die Buchung muss als separater Schritt aus der Anlagenerfassung ausgeführt werden. Mit der Option Anlage bei Buchung von Produktzugang oder Rechnung erstellen können Sie eine neue Anlage bei der Buchung "spontan" erstellen, sodass diese nicht als Anlage vor der Buchung eingerichtet werden muss. Die letzte Option Während Positionseingabe auf Anlagenerstellung überprüfen, bezieht sich nur auf Bestellanforderungen.
 
 Sie können Ursachencodes konfigurieren, damit sie für Änderungen an einer Anlage oder für bestimmte Anlagenbuchungen erforderlich sind.
 
 Schließlich definieren Sie auf der Registerkarte Nummernkreise den Nummernkreis für Anlagen. Der Anlagennummernkreis kann von der Anlagengruppe überschrieben werden, wenn er angegeben wurde.
+
+
 
 

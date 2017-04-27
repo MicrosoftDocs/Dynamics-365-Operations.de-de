@@ -1,5 +1,5 @@
 ---
-title: "Einstellungsmobile geräte für Lagerortarbeit"
+title: "Konfigurieren von mobile Geräten für Lagerortarbeit"
 description: "In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Einstellungsmobile geräte für Lagerortarbeit
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurieren von mobile Geräten für Lagerortarbeit
 
 In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 
@@ -35,7 +35,7 @@ In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arb
 -   Erstellen Sie Arbeit, die durch einen anderen Prozess ausgeführt wird. Beispielsweise kann das Empfangen eines Artikels für eine Bestellung Einlagerungsarbeit für einen anderen Arbeiter erzeugen.
 -   Führen Sie Arbeit aus, die von einem anderen Prozess (vorhandene Arbeit) erstellt wurde, beispielsweise Einlagerungsarbeit für einen Artikel, der für eine Bestellung eingegangen ist.
 
-Um eine Menüoption für eine Aktivität oder eine Abfrage zu erstellen, legen Sie das ** Modus ** Feld auf fest ** indirekt **. Eine Liste von ** Aktivitätscode ** Optionen wird dann verfügbar, damit Sie den Typ der Abfrage oder die Aktivität auswählen können, dass die Menüoption für ist. Um eine Menüoption erstellen um Lagerortarbeit zu generieren, legen als ** Modus ** Feld auf fest ** Arbeit **. Eine Liste von Arbeitserstellungsprozess ** ** Optionen wird dann verfügbar. Um eine Menüoption zur Verarbeitung vorhandener Lagerortarbeit zu erstellen , legen Sie das Feld **Modus** auf **Work** fest, und legen Sie dann die Option **Vorhandene Arbeit verwenden** auf **Ja** fest. ** Hinweis: ** Zusätzliche Felder sind für Menüoptionen, abhängig vom im Modus verfügbar, den Sie für die Menüoption ausgewählt, und ob die Menüoption verwendet wird, um vorhandene Arbeit auszuführen. Informationen zur Feld-Auswahl zusätzliche, lesen Sie den Abschnitt "der zusätzlichen Menüoptionsoptionen" weiter unten in diesem Artikel.
+Um eine Menüoption für eine Aktivität oder eine Abfrage zu erstellen, legen Sie das **Modus** Feld auf  **Indirekt** fest. Eine Liste von ** Aktivitätscode** Optionen wird dann verfügbar, damit Sie den Typ der Abfrage oder die Aktivität auswählen können, dass die Menüoption dafür ist. Um eine Menüoption zu erstellen um Lagerortarbeit zu generieren, legen Sie das Feld **Modus** auf **Arbeit** fest. Eine Liste von **Arbeitserstellungsprozessen** wird dann verfügbar. Um eine Menüoption zur Verarbeitung vorhandener Lagerortarbeit zu erstellen , legen Sie das Feld **Modus** auf **Work** fest, und legen Sie dann die Option **Vorhandene Arbeit verwenden** auf **Ja** fest. **Hinweis:**Abhängig vom Modus, den Sie für die Menüoption auswählen, und ob das Menüelement verwendet wird, um vorhandene Arbeit auszuführen, sind zusätzliche Felder für die Menüoption verfügbar. Informationen zu den zusätzlichen Feldauswahlen finden Sie im Abschnitt „Zusätzliche Menüelementoptionen“ in diesem Thema weiter unten.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurieren von Menüelementen für Aktivitäten und Abfragen
 Wenn das Feld **Modus** für eine Menüoption auf **Indirekt** festgelegt ist, können Sie eine Menüoption erstellen, um eine allgemeine Aktivität oder eine Abfrage auszuführen, die keine Arbeit erstellt. Die Beispiele umfassen Aktivitäten, wie das erneute Drucken von Ladungsträgerbeschriftungen, und eine Abfrage zu den Artikel in einem Lagerplatz. In der folgenden Tabelle sind die Optionen aufgelistet, die zur Verfügung stehen.
@@ -190,7 +190,7 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurieren von Menüoptionen, um vorhandene Arbeit zu verarbeiten
-Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Sie Menüelemente zur Verarbeitung der Arbeit einrichten, die bereits erstellt wurde. Legen Sie das Feld **Modus** auf **Arbeit** fest, und wählen Sie die Option **Vorhandene Arbeit verwenden** aus. Einige Optionen werden dann auf der Registerkarte Allgemein ** ** verfügbar. Sie können den Zugriff auf die Menüoption steuern, indem Sie mindestens eine Arbeitsklassen auf dem Inforegister Arbeitsklasse ** ** zuweisen. Die Arbeitsklassen definieren die Arbeit, die die Menüoption verarbeiten kann. Die Arbeitsklasse kann auch verwendet werden, um den Zugriff auf die bestimmten Benutzerrollen oder zum separaten Verarbeiten für unterschiedliche Arten von Arbeitsgängen zu gewähren. In der folgenden Tabelle werden die Optionen beschrieben, die zur Verfügung stehen.
+Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Sie Menüelemente zur Verarbeitung der Arbeit einrichten, die bereits erstellt wurde. Legen Sie das Feld **Modus** auf **Arbeit** fest, und wählen Sie die Option **Vorhandene Arbeit verwenden** aus. Einige Optionen werden dann auf der Registerkarte **Allgemein** verfügbar. Sie können den Zugriff auf die Menüoption steuern, indem Sie mindestens eine Arbeitsklasse auf dem Inforegister **Arbeitsklasse ** zuweisen. Die Arbeitsklassen definieren die Arbeit, die die Menüoption verarbeiten kann. Die Arbeitsklasse kann auch verwendet werden, um den Zugriff auf die bestimmten Benutzerrollen oder zum separaten Verarbeiten für unterschiedliche Arten von Arbeitsgängen zu gewähren. In der folgenden Tabelle werden die Optionen beschrieben, die zur Verfügung stehen.
 
 <table>
 
@@ -210,7 +210,7 @@ Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Si
 </tr>
 <tr class="even">
 <td>Systemgeleitet</td>
-<td>Microsoft Dynamics 365 für die Systemverwaltung der Art der Arbeit, einer Arbeitskraft und dem Auftrag zugewiesen wird, wenn die Arbeitskraft die Arbeit in ausgeführt wird. Wenn Sie diese Option auswählen, können Sie im <strong>System-verwiesene Arbeit</strong>-Aktivitätsbereich auf klicken, um die Seite <strong>System-verwiesene Sortierreihenfolge</strong> zu öffnen, in der Sie Sortierkriterien für die Arbeit einrichten können. Die Sortierkriterien steuern die Reihenfolge, in der die Arbeit Arbeitskraft in ausgeführt wird. Sie können beliebig viele Kriterien hinzufügen, Sie benötigen.</td>
+<td>Microsoft Dynamics 365 for Operations steuert die Art der Arbeit, einer Arbeitskraft und der Auftrag, der zugewiesen wird, wenn die Arbeitskraft die Arbeit ausführt. Wenn Sie diese Option auswählen, können Sie im Aktivitätsbereich auf <strong>System-zugewiesene Arbeit</strong> klicken, um die Seite <strong>System-zugewiesene Sortierreihenfolge</strong> zu öffnen, in der Sie Sortierkriterien für die Arbeit einrichten können. Die Sortierkriterien steuern die Reihenfolge, in dem die Arbeitskraft die Arbeit ausführt. Sie können beliebig viele Kriterien hinzufügen.</td>
 </tr>
 <tr class="odd">
 <td>Benutzergeleitet</td>
@@ -230,7 +230,7 @@ Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Si
 </tr>
 <tr class="even">
 <td>Benutzergeleitet – überprüft</td>
-<td>Die Arbeitskraft wählt die Arbeit aus, die ausgeführt werden soll, wenn Arbeit mit einer größeren Entität verbunden ist, wie Ladung oder Lieferung. Die Arbeitskraft bestimmt die Reihenfolge, in dem die Artikel entnommen werden. Wählen Sie diese Option auswählen, sind die folgenden Felder erforderlich:
+<td>Die Arbeitskraft wählt die Arbeit aus, die ausgeführt werden soll, wenn Arbeit mit einer größeren Entität verbunden ist, wie Ladung oder Lieferung. Die Arbeitskraft bestimmt, in welcher Reihenfolge die Artikel entnommen werden. Wählen Sie diese Option auswählen, sind die folgenden Felder erforderlich:
 <ul>
 <li><strong>Überprüftes benutzergeleitetes Feld</strong> – Wählen Sie das Feld aus, das die Arbeitskraft scannt, um die Arbeit zu gruppieren.</li>
 <li><strong>Überprüfte benutzergeleitete Beschriftung</strong> – Geben Sie den Text ein, der die Arbeitskraft darüber informiert, was zu scannen ist, wenn Entnahmearbeit vom System gruppiert wird.</li>
@@ -271,7 +271,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="even">
 <td>Verankern</td>
-<td>Aktivieren Sie diese Option, um Arbeitskräften zu ermöglichen, einen Lagerplatz anzugeben, der den vorgeschlagenen Bereitstellungs- oder Ladungslagerplatz überschreibt. Alle verbleibende Entnahmearbeit wird an den neuen Lagerplatz weitergeleitet. Diese Option ist beispielsweise hilfreich, wenn eine Arbeitskraft Artikel für Auftrag 1 in einen Bereitstellungslagerplatz bei Rampe 1 platzieren muss, dies jedoch nicht kann, da eine vorherige Ladung nicht vom Lagerplatz entfernt wurde. Anstatt Staginglagerplatz des, auf den Docks 1 zu warten, dass verfügbar werden, kann die Arbeitskraft festlegen, dass den Staginglagerplatz für 2 Rampe. zu verwenden. In diesem Fall wird die Arbeitskraft den vorgeschlagenen bereitstellenden Lagerplatz. Der Einlagerungsort für alle verbleibenden Artikel für den Arbeitsauftrag wird dann auf Bereitstellungslagerplatz für Rampe 2 aktualisiert. Wenn Sie diese Option auswählen, muss auch das Feld <strong>Anker von</strong> festgelegt werden.</td>
+<td>Aktivieren Sie diese Option, um Arbeitskräften zu ermöglichen, einen Lagerplatz anzugeben, der den vorgeschlagenen Bereitstellungs- oder Ladungslagerplatz überschreibt. Alle verbleibende Entnahmearbeit wird an den neuen Lagerplatz weitergeleitet. Diese Option ist beispielsweise hilfreich, wenn eine Arbeitskraft Artikel für Auftrag 1 in einen Bereitstellungslagerplatz bei Rampe 1 platzieren muss, dies jedoch nicht kann, da eine vorherige Ladung nicht vom Lagerplatz entfernt wurde. Anstatt auf den Staginglagerplatz des Docks 1 zu warten, kann die Arbeitskraft festlegen, dass sie den Staginglagerplatz Dock 2 verwendet. In diesem Fall wird die Arbeitskraft den vorgeschlagenen bereitgestellten Lagerplatz überschreiben. Der Einlagerungsort für alle verbleibenden Artikel für den Arbeitsauftrag wird dann auf Bereitstellungslagerplatz für Rampe 2 aktualisiert. Wenn Sie diese Option auswählen, muss auch das Feld <strong>Anker von</strong> festgelegt werden.</td>
 </tr>
 <tr class="odd">
 <td>Anker von</td>
@@ -380,7 +380,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Arbeitsvorlagencode</td>
-<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie beispielsweise einen Artikel einer Bestellung erhalten, setzenSie Arbeit wird auf Basis der Arbeitsvorlage. Wenn Sie keine Arbeitsvorlage auswählen, weist Microsoft Dynamics 365 für Arbeitsgänge eine Vorlage, basierend Abfragekriterien zu. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
+<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie zum Beispiel einen Artikel für eine Bestellung erhalten, wird die Entnahmearbeit auf Grundlage der Arbeitsvorlage generiert. Wenn Sie keine Arbeitsvorlage auswählen, weist Microsoft Dynamics 365 for Operations eine Vorlage, basierend auf den Abfragekriterien zuweisen. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -409,8 +409,8 @@ In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei 
 
 [Anzeigeeinstellungen für das mobile Gerät für das Lager](change-warehouse-mobile-device-displays.md)
 
-[Einstellung eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ "Bestellung Aufgabenleitfaden)]https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/) "
+[Einrichten einer Menüoption für mobile Geräts für das Abschließen der Arbeit von Typ Bestellung (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Einstellung eine Menüoption des mobilen Geräts, um der empfangenen Artikeln (Aufgabenleitfaden) zu erfassen]https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/) "
+[Einrichten einer Menüoption für das mobile Gerät, um die eingegangenen Artikel zu erfassen (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 
 

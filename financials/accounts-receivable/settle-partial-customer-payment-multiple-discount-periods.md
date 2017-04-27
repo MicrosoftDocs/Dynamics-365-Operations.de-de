@@ -1,5 +1,5 @@
 ---
-title: "Ausgleichen einer teilweise Debitorenzahlung, die mehrere Rabattzeiträume hat"
+title: "Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat"
 description: "Dieser Artikel beschreibt, wie Debitorenteilzahlungen ausgeglichen werden, die mehrere Rabattzeiträume enthalten."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Ausgleichen einer teilweise Debitorenzahlung, die mehrere Rabattzeiträume hat
+# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel beschreibt, wie Debitorenteilzahlungen ausgeglichen werden, die mehrere Rabattzeiträume enthalten.
 
-Fabrikam bietet Debitor 4031 zwei Skontozeiträume. Der Debitor erhält ein 2-Prozent Skonto, wenn die Rechnung in fünf Tagen bezahlt wird, und ein 1-Prozent-Skonto, wenn die Rechnung in 14 Tagen beglichen wird. Fabrikam bietet auch Skonti auf Teilzahlungen an. Die Ausgleichsparameter sind ** ** Debitorenparameter auf der Seite.
+Fabrikam bietet Debitor 4031 zwei Skontozeiträume. Der Debitor erhält ein 2-Prozent Skonto, wenn die Rechnung in fünf Tagen bezahlt wird, und ein 1-Prozent-Skonto, wenn die Rechnung in 14 Tagen beglichen wird. Fabrikam bietet auch Skonti auf Teilzahlungen an. Die Ausgleichsparameter sind auf der Seite **Debitorenkontenparameter** Seite verfügbar.
 
 ## <a name="invoice"></a>Rechnung
-Am 25. Juni gibt Arnie ein und Buchen einer Rechnung in Höhe von 1.000,00 für den Debitor " 4031. Beim Zuweisen der Skonto für diese Rechnung geprüft, sieht Arnie, dass 4031 Debitoren einen Rabatt 20,00 erhält, wenn die Rechnung bis 30. Juni bezahlt wird. Wenn die Rechnung bis 9. Juli bezahlt wird, erhält der Debitor ein Skonto 10,00.
+Am 25. Juni gibt Arnie eine Rechnung für 1.000,00 für den Debitor 4031 ein und bucht diese. Beim Zuweisen der Skonto für diese Rechnung geprüft, sieht Arnie, dass 4031 Debitoren einen Rabatt 20,00 erhält, wenn die Rechnung bis 30. Juni bezahlt wird. Wenn die Rechnung bis 9. Juli bezahlt wird, erhält der Debitor ein Skonto 10,00.
 
 | Skontodatum | Skontobetrag | Betrag in Buchungswährung |
 |--------------------|----------------------|--------------------------------|
@@ -92,6 +95,8 @@ Der Rechnungssaldo ist jetzt 0,00. Auf der Seite **Debitorenbuchungen** zeigt Ar
 | DISC-10030 |  Skonto   | 6/28/2015 |         |                                      | 6,00                                  | 0,00    | USD      |
 | ARP-10031  |  Zahlung         | 8. Juli 2015  |         |                                      | 693,00                                | 0,00    | USD      |
 | DISC-1031  |  Skonto   | 8. Juli 2015  |         |                                      | 7:00                                  | 0,00    | USD      |
+
+
 
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-the-properties-of-a-workflow"></a>Konfigurieren der Eigenschaften eines Workflows
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieses Thema erläutert, wie Sie die verschiedenen Eigenschaften eines Workflows konfigurieren können.
 
 Öffnen Sie zum Konfigurieren der Eigenschaften eines Workflows den Workflow im Workflow-Editor. Klicken Sie auf die Canvas des Workflow-Editors und dann auf **Eigenschaften**, um die Seite **Eigenschaften** zu öffnen. Verwenden Sie dann die folgenden Prozeduren, um die verschiedenen Eigenschaften des Workflows zu konfigurieren.
@@ -147,10 +150,10 @@ Wenn ein Dokument zur Verarbeitung übermittelt wird, wird eine Workflowinstanz 
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmtes Dynamics 365 für Arbeitsgangsbenutzer</td>
+    <td>Bestimmte Benutzer von Dynamics 365 for Operations</td>
     <td><ol>
     <li>Klicken Sie auf der Registerkarte <strong>Empfänger</strong> auf <strong>Benutzer</strong>.</li>
-    <li>Auf der <strong>Benutzer</strong> Registerkarte enthält <strong>Verfügbare Benutzer</strong> die Liste alle Dynamics 365 für Arbeitsgangsbenutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>In der Registerkarte <strong>Benutzer</strong> enthält die Liste <strong>Verfügbare Benutzer</strong> alle Dynamics 365 for Operations-Benutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -165,6 +168,8 @@ Gehen Sie folgendermaßen vor, um Kommentare zu den Änderungen am Workflow einz
 2.  Geben Sie im Feld **Kommentare zum Workflow eingeben** Ihre Kommentare ein.
 3.  Prüfen Sie die Kommentare. Nach dem Hinzufügen von Kommentaren können diese nicht mehr geändert werden.
 4.  Klicken Sie auf **Hinzufügen**, um Ihre Kommentare dem Bereich **Kommentarhistorie** hinzuzufügen.
+
+
 
 
 

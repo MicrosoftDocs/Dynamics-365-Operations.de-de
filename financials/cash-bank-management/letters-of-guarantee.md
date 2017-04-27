@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-guarantee"></a>Bankgarantien
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu Garantiebriefen. Ein Garantiebrief ist eine Einverständniserklärung seitens einer Bank, einen bestimmten Geldbetrag an eine andere Person zu zahlen, falls seitens eines Debitors der Bank eine regelmäßige Zahlungsverpflichtung gegenüber dieser Person besteht. 
 
 Ein Garantiebrief ist eine Einverständniserklärung seitens einer Bank (der Bürge), einen bestimmten Geldbetrag an eine andere Person zu zahlen (den Begünstigten), falls seitens eines Debitors der Bank (der Auftraggeber) eine regelmäßige Zahlungsverpflichtung gegenüber dem Begünstigten besteht. Garantiebriefe sind nicht übertragbar. Sie richten sich nur an den Begünstigten, der in der Vereinbarung benennt wird. Der Auftraggeber kann im Rahmen der Bedingungen der Vereinbarung eine Erhöhung oder Verringerung des Werts eines Garantiebriefs fordern. 
@@ -55,6 +58,8 @@ In der folgenden Tabelle werden die Aktivitäten beschrieben, die mit einem Gara
 | Verlängern              | Wenn Sie den Garantiebrief an den Begünstigten übergeben haben, verlängern Sie ggf. die Gültigkeitsdauer. |
 | Stornieren              | Wenn der Zweck, zu dem der Garantiebrief angefordert wurde, nicht mehr zutrifft, stornieren Sie die Vereinbarung.                  |
 | Tilgen           | Wenn der Begünstigte den Garantiebrief bei der Bank vorlegt, kann dieser Garantiebrief liquidiert werden.                      |
+
+
 
 
 

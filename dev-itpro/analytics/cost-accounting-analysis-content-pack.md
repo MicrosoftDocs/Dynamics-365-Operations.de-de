@@ -1,6 +1,6 @@
 ---
-title: "Kostenrechnungsanalyse Leistungsfähigkeit BIinhalt"
-description: "In diesem Thema wird beschrieben, was im Kostenrechnungsanalyse Leistungsfähigkeit BIinhalt enthalten ist. Es wird erläutert, wie Sie die Leistungsfähigkeit BIberichte zugreift und enthält Informationen zum Datenmodell und die Entitäten, die verwendet wurde, um den Inhalt zu erstellen."
+title: Kostenrechnungsanalyse Power BI Inhalt
+description: "In diesem Thema wird beschrieben, was im Buchhaltungsanalyse Power Bl enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-04-04
@@ -24,90 +24,90 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-accounting-analysis-power-bi-content"></a>Kostenrechnungsanalyse Leistungsfähigkeit BIinhalt
+# <a name="cost-accounting-analysis-power-bi-content"></a>Kostenrechnungsanalyse Power BI Inhalt
 
-In diesem Thema wird beschrieben, was im Kostenrechnungsanalyse Leistungsfähigkeit BIinhalt enthalten ist. Es wird erläutert, wie Sie die Leistungsfähigkeit BIberichte zugreift und enthält Informationen zum Datenmodell und die Entitäten, die verwendet wurde, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im Buchhaltungsanalyse Power Bl enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
 <a name="overview"></a>Überblick
 --------
 
-** Der Kostenrechnungsanalyse ** Microsoft-Energie wird für BIinhalt Controller oder alle Kosten bestimmt, der für die Ausführung der Kostensteuerung eine Organisation verantwortlich ist. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten ein. Er verwendet Buchungsdaten aus der Kostenrechnung in Microsoft Dynamics 365 für Arbeitsgänge und stellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten filtern, um nach Kostenträger der Kostensteuerung Organisationseinheiten auszuführen, wenn die Organisation mehrere juristische Personen haben kann. Da der Kostenrechnungsanalyse ** ** Leistungsfähigkeit BIinhalt Abweichungen zwischen den Istkosten und den budgetierten Kosten hervorhebt, können Manager über die positiven und negativen Trends für ihre Einsatzkräfte informiert werden. Manager können zu den Kostenfaktorhierarchien oder den einzelnen Kostenfaktoren navigieren, verschaffen des in detaillierten Einblickes, wie Kostenabweichungen aufgetreten sind, und von wirksamer Maßnahme dann ausgeführt werden. ** Der Kostenrechnungsanalyse ** Leistungsfähigkeit BIinhalt ermöglicht Buchhalter Kosten analysieren, wie Kosten die Kostenträger der gesamten Organisation. durchfließen Weitere Informationen zur Kostenrechnung zu ermitteln, finden Sie Kostenrechnungsstartseite [] (- /dynamics365/operations/financials/costbuchhaltung/Kostenrechnung - home-page.md ). Wenn Sie ZugriffEbenensicherheit in der Kostenrechnung festgelegt haben und mit Sicherheit auf Positionsebene Leistung in BI kombinieren, können Sie alle Kostenträgereigentümern Zugriff auf Kostenrechnungsanalyse ** ** Leistungsfähigkeit BIinhalt gewähren. Alle Daten in den Visualisierungen werden anschließend auf Basis die Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zu ZugriffEbenensicherheit und Sicherheit zu ermitteln auf Positionsebene, [für Sicherheit finden Sie Kostenrechnungsinhalt für Leistung BI] (setup-security-cost-accounting-content-pack.md) einrichten.
+Die **Kostenrechnungsanalyse** Microsoft Power BI Inhalt dient für die Kostencontroller oder alle jene, die für die Ausführung der Kostensteuerung für eine Organisation verantwortlich sind. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten. Er verwendet Buchungsdaten aus der Kostenrechnung in Microsoft Dynamics 365 for Operations und erstellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten nach Kostenträger filtern, um die Kostensteuerung der Organisationseinheiten vorzunehmen, selbst wenn die Organisation mehrere juristische Personen hat. Da der **Kostenrechnungsanalyse ** Power BI Inhalt Abweichungen zwischen den Istkosten und den budgetierten Kosten hervorhebt, können Manager über die positiven und negativen Trends für ihre Einsatzkräfte informiert werden. Manager können zu den Kostenfaktorhierarchien oder den einzelnen Kostenfaktoren navigieren, sich detaillierte Einblicke verschaffen, wie Kostenabweichungen aufgetreten sind, und dannwirksame Maßnahmen ergreifen. Der **Kostenrechnungsanalyse** Power BI Inhalt ermöglicht es Buchhaltern,  Kosten zu analysieren, um zu sehen, wie Kosten die Kostenträger der gesamten Organisation durchlaufen. Weitere Informationen zur Kostenrechnung finden Sie unter [Startseite Kostenrechnung](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Durch das Festlegen der  Zugriffsebenensicherheit in der Kostenrechnung und durch die Kombination mit Zeilenebenensicherheit in Power BI können Sie allen Kostenträgereigentümern Zugriff auf den **Kostenrechnungsanalyse** Power BI Inhalt geben. Alle Daten in den Visualisierungen werden anschließend auf Basis der Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zur Zugriffsebenensicherheit und zur Sicherheit auf Zeilenebene finden Sie unter [Sicherheit für Kostenbuchhaltung für Power BI einrichten](setup-security-cost-accounting-content-pack.md)..
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen Leistung des BIinhalts
-Sie können den Kostenrechnungsanalyse ** ** Leistungsfähigkeit BIinhalt in der Bibliothek der kommenden Anlagen in den Microsoft Dynamics Lifecycle Services (LCS) suchen. Weitere Informationen dazu, wie der Inhalt herunterlädt und diesen für Ihr Dynamics 365 für Arbeitsgänge, Daten finden Sie in BIinhalt herstellt [Energie Kreditbriefen von Microsoft und von den Partnern]( power-bi-content-microsoft-partners.md). ** Hinweis: ** KB4011327 ** ** ist eine Voraussetzung für den Kostenrechnungsanalyse ** ** Leistungsfähigkeit BIinhalt.  Nachdem Sie in Lebenszyklus-Dienstleistungen signieren, können Sie hier das KB zugreifen: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
+Sie finden die  **Kostenbuchhaltungsanalyse** Power BI Inhalt in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Inhalte herunterladen und mit Ihrem Microsoft Dynamics 365 for Operations verbinden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md). **Hinweis:** KB4011327 ** ** ist eine Voraussetzung für die **Kostenrechnungsanalyse** Power BI Inhalt.  Nachdem Sie sich bei Lifecycle Services angemeldet haben, können Sie hier auf KB zugreifen: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, das im BIinhalt Energie enthalten sind
-Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, das als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der im Kostenrechnungsanalyse Visualisierungen ** ** Leistungsfähigkeit BIinhalt.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
+Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im **Kostenbuchhaltungsanalyse** Power Bl Inhalt.
 
-| Berichtsseite                      | Diagramm                                                                                                                         | Kachel                                          |
+| Berichtsseiten                      | Diagramm                                                                                                                         | Kachel                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| Kostenkontrolle nach Finanzzeitraum    | Istkosten und Budgetkost nach Kostenfaktorhierarchieebene                                                                   | Istkosten im Vergleich Budgetkost                    |
-|                                  | Planabweichung nach Kostenfaktorhierarchieebene                                                                               | Istkostensatz für Budgetkostsatz          |
-|                                  | Liste der ersten 10 Debitoren Planabweichung in Prozent von Ausgaben                                                                          | Tatsächliche Größe für Budgetgröße          |
-| Kostenkontrolle nach Seit Jahresbeginn     | Istkosten und Budgetkost nach Kalenderjahrs-Periode                                                                           | Istkosten im Vergleich Budgetkost                    |
-|                                  | Planabweichung nach Kalenderjahrs-Periode                                                                                       | Istkostensatz für Budgetkostsatz          |
-|                                  | Liste der ersten 10 Debitoren Planabweichung in Prozent von Ausgaben                                                                          | Tatsächliche Größe für Budgetgröße          |
-| Verrechnungssatz nach Geschäftsjahr         | Verhalten Istkostensatz von Kosten                                                                                             | Istkostensatz für Budgetkostsatz          |
-|                                  | Istkostensatz, Budgetkostsatzabweichung, Budgetkostsatzprozentsatz und Budgetkost bewerten nach Kostenfaktorhierarchieebene | Tatsächliche Größe für Budgetgröße          |
+| Kostenkontrolle nach Finanzzeitraum    | Istkosten und Budgetkost nach Kostenfaktorhierarchieebene                                                                   | Ist-Kosten im Vergleich zu Budgetkosten                    |
+|                                  | Planabweichung nach Kostenfaktorhierarchieebene                                                                               | Istkostenrate verglichen mit der Budgetkostenrate          |
+|                                  | Liste der größten 10 Budgetabweichungen in Prozent nach Kostenenelement                                                                          | Tatsächliche Größe für Budgetgröße          |
+| Kostenkontrolle seit Jahresbeginn     | Istkosten und Budgetkost nach Kalenderjahrs-Periode                                                                           | Ist-Kosten im Vergleich zu Budgetkosten                    |
+|                                  | Planabweichung nach Kalenderjahrs-Periode                                                                                       | Istkostenrate verglichen mit der Budgetkostenrate          |
+|                                  | Liste der größten 10 Budgetabweichungen in Prozent nach Kostenenelement                                                                          | Tatsächliche Größe für Budgetgröße          |
+| Verrechnungssatz nach Geschäftsjahr         | Verhalten Istkostensatz nach Kosten                                                                                             | Istkostenrate verglichen mit der Budgetkostenrate          |
+|                                  | Istkostensatz, Budgetkostsatzabweichung, Budgetkostsatzprozentsatz und Budgetkosten bewerten nach Kostenfaktorhierarchieebene | Tatsächliche Größe für Budgetgröße          |
 |                                  | Planabweichung nach Kostenfaktorhierarchieebene                                                                               |                                               |
-|                                  | Liste der ersten 10 Debitoren Planabweichung in Prozent von Ausgaben                                                                          |                                               |
-| Flexibles Budget nach Finanzzeitraum | Istkosten, und Budgetkost flexibles Budget nach Kostenfaktorhierarchieebene im                                             | Tatsächliche Größe für Budgetgröße          |
-|                                  | Planabweichung und Variante des flexiblen Budgets nach Kostenfaktorhierarchieebene                                                  | Istkosten mit flexiblen Budgetkosten           |
-|                                  | Istkosten, Budgetkost und flexible Kosten nach Verhalten Kosten und Kostenfaktorhierarchieebene                                  | Istkostensatz anhand Verrechnungssatz für flexible Budgets |
-| Kostenaufstellung nach Finanzzeitraum  | Istkosten nach Kostenfaktorhierarchieebenen- und Kostenträgerdimensionsmitgliedsnamen                                             |                                               |
-|                                  | Istkosten nach Mitgliedsnamen des Kostenträgerdimensionsmitgliedsnamens und der Kostenfaktordimension                                       |                                               |
+|                                  | Liste der größten 10 Budgetabweichungen in Prozent nach Kostenenelement                                                                          |                                               |
+| Flexibles Budget nach Finanzzeitraum | Istkosten und Budgetkost nach flexiblen Budgetkosten nach Kostenfaktorhierarchieebene                                             | Tatsächliche Größe für Budgetgröße          |
+|                                  | Budgetabweichungen und flexible Budgetabweichungen nach Kostenfaktorhierarchieebene                                                  | Ist-Kosten im Vergleich zu flexiblen Budgetkosten           |
+|                                  | Istkosten, Budgetkost und flexible Budgetkosten nach Kostenverhalten und Kostenfaktorhierarchieebene                                  | Istkostenrate verglichen mit der fleixblen Budgetkostenrate |
+| Kostenkontrolle nach Finanzzeitraum  | Istkosten nach Kostenelementhierarchie und Kostenobjektdimensions-Mitgliedsname                                             |                                               |
+|                                  | Istkosten nach Kostenelementhierarchie und Kostenobjektdimensions-Mitgliedsname                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Dynamics 365 für Arbeitsgangsdaten wird verwendet, um in der Berichtsseiten ** Kostenrechnungsanalyse ** Leistungsfähigkeit BIinhalt auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden, der eine Microsoft SQL-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der Übersicht [Power BI-Integration mit Entitätsshop] (power-bi-integration-entity-store.md ). Die folgenden Schlüsselaggregatsmessungen werden als Grundlage des Inhalts verwendet.
+Dynamics 365 for Operations-Daten werden für die Berichte in **Kostenbuchhaltungsanalyse** Power BI Inhalt ergänzt. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden, der eine Microsoft SQL-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md). Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verwendet.
 
-| Entität                  | Gesamte Messung des Schlüssels | Datenquelle für Dynamics 365 für Arbeitsgänge | Feld     | Beschreibung                                   |
+| Entität                  | Zentrale aggregierte Messungen | Datenquelle für Dynamics 365 for Operations | Feld     | Beschreibung                                   |
 |-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Kostenrechnungseinträge | SUMME (Betrag)               | CAMDATAAggregatedCostEntry                  | Betrag    | Betrag in der Kostenrechnungssachkontowährung |
-| Statistische Einträge     | SUMME (Größe)            | CAMDATAAggregatedStatisctialEntry           | Größe |                                               |
+| Kostenrechnungseinträge | SUM (Betrag)               | CAMDATAAggregatedCostEntry                  | Betrag    | Betrag in der Kostenbuchhaltungs-Sachkontowährung |
+| Statistische Einträge     | SUM(Größe)            | CAMDATAAggregatedStatisctialEntry           | Größe |                                               |
 
-Die folgende Tabelle zeigt, wie die Tastenfunktionen gesamten Messungen verwendet werden, um mehrere berechnete Kennzahlen im Dataset des Inhalts zu erstellen.
+Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet werden, um mehrere berechnete Kennzahlen im Dataset des Inhalts zu erstellen.
 
 | Kennzahl                                       | Wie die festgelegte Kennzahl berechnet wird                                                                                          |
 |-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Istkosten                                   | BERECHNEN Sie "Kostenrechnung "entries'entity_PLACEHOLDER [Kennzahl \\]\ versions'entity_PLACEHOLDER Buchung ", [ISSOURCEVERSIONBUDGET\_WERT\] = 0)            |
-| Budgetkosten                                   | BERECHNEN Sie "Kostenrechnung "entries'entity_PLACEHOLDER [Kennzahl \\]\ versions'entity_PLACEHOLDER Buchung ", [ISSOURCEVERSIONBUDGET\_WERT\] = 1)            |
-| Budgetkostabweichung                          | Istkosten \]\[Budgetkost__ent_dict_PLACEHOLDER\] -                                                                                       |
-| Planabweichungsprozentsatz                    | IF (\[Budgetkost\] = 0, blank(), Budgetkost\]\[Planabweichungs-__ent_dict_PLACEHOLDER\] / \[                                                |
-| Tatsächliche Größe                              | Sie BERECHNEN Sie ("entries'entity_PLACEHOLDER statistisches [FullMagnitude \\]\ versions'entity_PLACEHOLDER Buchung ", [ISSOURCEVERSIONBUDGET\_WERT\] = 0)          |
-| Budgetgröße                              | Sie BERECHNEN Sie \[,\]FullMagnitude ('Buchung versions'entity_PLACEHOLDER \ [ISSOURCEVERSIONBUDGET\_WERT\] = 1)                               |
-| Statistische Planabweichung                   | tatsächliche Größe \]\[Budgetgrößen-__ent_dict_PLACEHOLDER\] -                                                                             |
-| Statistischer Planabweichungsprozentsatz        | IF (\[Budgetgröße\] 0, blank()blank() Planabweichungs-__ent_dict_PLACEHOLDER\] / \[\[)                          |
-| Istkostensatz                              | IF tatsächliche (Größe \]\[= 0, BLANK(), tatsächliche Größe\]\[Istkosten__ent_dict_PLACEHOLDER\] / \[                                          |
-| Budgetverrechnungssatz                              | IF (\[Budgetgröße\] 0, BLANK()BLANK() Budgetgröße\]\[\]\] / \]                                          |
-| Budgetkostsatzabweichung                     | Istkostensatz \]\[\] -                                                                             |
-| Budgetkostsatz-Abweichungsprozentsatz          | IF (\[Budgetkost\] = 0, blank(), Budgetkostsatz\]\[\] / )                                 |
-| Feste Budgetkost                             | Sie BERECHNEN Sie \[,\]Budgetkost ('Kostenrechnung entries'entity_PLACEHOLDER \ [COSTBEHAVIOR\] = 1)                                              |
-| Variable Budgetkost                          | Sie BERECHNEN Sie \[,\]Budgetkost ('Kostenrechnung entries'entity_PLACEHOLDER \ [COSTBEHAVIOR\] = 2)                                              |
-| Feste flexible Budgetkosten                    | \[Feste Budgetkost\]                                                                                                  |
-| Variable Kosten des flexiblen Budgets                 | IF (\[Budgetgröße\] 0, BLANK()BLANK()" Budgetkost__ent_dict_PLACEHOLDER\] / \[\[) tatsächliche\]\]\*\]       |
-| Flexible Budgetkosten                          | \[korrigierte flexibles Budget\]Kosten + \[variables flexibles Budget\]Kosten                                                     |
-| Variante des flexiblen Budgets                      | Istkosten mit Kosten \]\] - \[\[flexiblen Budgets                                                                             |
-| Prozentsatz für flexible Budgets           | IF (\[flexibles Budget\] Kosten mit = 0, BLANK(), Abweichungs-__ent_dict_PLACEHOLDER\] / \[\[Budgets flexibles Budget \[Kosten)                     |
-| Verrechnungssatz für flexible Budgets                     | IF tatsächliche (Größe \]\[= 0, BLANK(), \[flexibles Budget\]Kosten / \[tatsächliche Größe\])                                 |
-| Kostensatzabweichung für flexible Budgets            | Kostensatz__ent_dict_PLACEHOLDER \] - \[\[Budgets Istkostensatz\[                                                                   |
-| Kostensatz-Abweichungsprozentsatz für flexible Budgets | IF (Verrechnungssatz \]\[flexiblen Budgets = 0, BLANK(), Kostensatzabweichungs__ent_dict_PLACEHOLDER\] / \[\[Verrechnungssatz \[Flexibles\]" |
+| Istkosten                                   | BERECHNEN Sie "Kostenrechnungeinträge'\[Messung\], Transaktionsversion\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)            |
+| Budgetkosten                                   | BERECHNEN Sie "Kostenrechnungeinträge'\[Messung\], Transaktionsversion\[ISSOURCEVERSIONBUDGET\_VALUE\] = 1)            |
+| Budgetabweichung                          | \[Budgetkosten\] - \[Istkosten\]                                                                                      |
+| Budgetabweichung in Prozent                    | IF(\[Budgetkosten\] = 0, blank(), \[Budgetabweichung\] / \[Budgetkosten\])                                                |
+| Tatsächliche Größe                              | BERECHNEN('Statische Einträge'\[FullMagnitude\], 'Transaktionsversionen'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)          |
+| Budgetgröße                              | BERECHNEN(\[FullMagnitude\], 'Transaktionsversionen'\[ISSOURCEVERSIONBUDGET\_WERT\] = 1)                               |
+| Statistische Planabweichung                   | \[Budgetgröße\] - \[Tatsächliche Größe\]                                                                            |
+| Statische Budgetabweichung in Prozent        | IF(\[Budgetgröße\] = 0, blank(), \[Statistische Budgetabweichung\] / \[Budgetgröße\])                          |
+| Istkostensatz                              | IF(\[Tatsächliche Größe\] = 0, BLANK(), \[Aktuelle Kosten\] / \[Aktuelle Größe\])                                          |
+| Budgetverrechnungssatz                              | IF(\[Budgetgröße\] = 0, BLANK(), \[Budgetkosten\] / \[Budgetgröße\])                                          |
+| Abweichung Budgetkostensatz                     | \[Budgetkostensatz\] - \[Tatsächlicher Kostensatz\]                                                                            |
+| Budgetkostensatz-Abweichung in Prozent          | IF(\[Budgetkosten\] = 0, blank(), \[Budgetkostensatz Abweichung\] / \[Budgetkostensatz\])                                 |
+| Anlagenbudgetkosten                             | BERECHNE(\[Budgetkosten\], 'Buchhaltungskosten-Einträge'\[KOSTENVERHALTEN\] = 1)                                              |
+| Varialbe Budgetkosten                          | BERECHNE(\[Budgetkosten\], 'Buchhaltungskosten-Einträge'\[KOSTENVERHALTEN\] = 2)                                              |
+| Flexible Anlagenbudgetkosten                    | \[Anlagenbudgetkosten\]                                                                                                  |
+| Variable Anlagenbudgetkosten                 | IF(\[Budgetgröße\] = 0, BLANK(), (\[Variable Budgetkosten\] / \[Budgetgröße\]) \* \[Tatsächliche Größe\])       |
+| Flexible Budgetkosten                          | \[Flexibles Anlagebudget\] + \[Variable flexible Budgetkosten\]                                                     |
+| Flexibles Budgetabweichungen                      | \[Flexible Budgetkosten\] - \[Tatsächliche Kosten\]                                                                             |
+| Flexible Budgetabweichung in Prozent           | IF(\[Flexible Budgetkosten\] = 0, BLANK(), \[Flexible Budgetabweichungen\] / \[Flexible Budgetkosten\])                     |
+| Flexibler Budgetkostensatz                     | IF(\[Tatsächliche Größe\] = 0, BLANK(), \[Flexible Budgetkosten\] / \[Tatsächliche Größe\])                                 |
+| Flexible Budgetkostensatz-Abweichung in Prozent            | \[Flexibler Budgetkostensatz\] - \[Aktueller Kostensatz\]                                                                   |
+| Flexible Budgetkostensatz-Abweichung in Prozent | IF(\[Flexibler Budgetkostensatz\] = 0, BLANK(), \[Flexibler Budgetkostensatz, Abweichung\] / \[Flexibler Budgetkostensatz\]) |
 
-Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die gesamten Messungen ein Crossdocking, um größere Granularität zu erreichen tiefere und analytische Einblicke bereitzustellen.
+Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregierte Messungen zu teilen, um eine größere Granularität zu erreichen und tiefere und analytische Einblicke bereitzustellen.
 
 | Entität                             | Beispiele für Attribute                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Kostenrechnungssachkonten            | Kostenrechnungssachkonto                                                                                               |
 | Kostensteuerungseinheiten                 | Name der Kostensteuerungseinheit                                                                                               |
-| Kostenelementdimensionen            | Kostenfaktordimensionsname, Kostenfaktordimensionsmitgliedsname, Kostenfaktordimensionsmitgliedsbeschreibung          |
-| Kostenobjektdimensionen             | Kostenträgerdimensionsname, Kostenträgerdimensions-Mitgliedsname, Kostenträgerdimensions-Mitgliedsbeschreibung              |
-| Statistische Dimensionen             | Statistischer Dimensionsname, Dimensionsmitgliedsname, statistische Dimensionsmitgliedsbeschreibung statistischer              |
-| Kostenträgerdimensionshierarchien  | Kostenträgerdimensionshierarchiename, Kostenträgerdimensionshierarchieebene, Kostenträgerdimensionshierarchiestruktur    |
-| Kostenfaktordimensionshierarchien | Kostenfaktordimensionshierarchiename, Kostenfaktordimensionshierarchieebene, Kostenfaktordimensionshierarchiestruktur |
-| Statistische Dimensionshierarchien  | Statistischer Dimensionshierarchiename, statistische Dimensionshierarchieebene, statistische Dimensionshierarchiestruktur    |
+| Kostenelementdimensionen            | Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung          |
+| Kostenobjektdimensionen             | Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung              |
+| Statistische Dimensionen             | Statistischer Dimensionsname, Statistischer Dimensionsmitgliedsname, Statistischer Dimensionsmitgliedsbeschfreibung              |
+| Kostenobjekt-Dimensionshierarchie  | Kostenträgerdimensionshierarchiename, Kostenträgerdimensionshierarchieebene, Kostenträgerdimensionshierarchiestruktur    |
+| Kostenelement-Dimensionshierarchie | Kostenelementdimensionshierarchiename, Kostenelementdimensionshierarchieebene, Kostenelementdimensionshierarchiestruktur |
+| Statistische Dimensionshierarchie  | Statistische Dimensionshierarchiename, Statistischer Dimenstionhierarchieebene, statistische Kostenträgerdimensionshierarchiestruktur    |
 | Transaktionsversionen               | Versionsname                                                                                                         |
-| Steuerkalender                   | Kalender, Kalenderbeschreibung                                                                                       |
-| Geschäftsjahre                       | Kalenderjahr                                                                                                        |
-| Finanzzeiträume                     | Kalenderjahrsperiode                                                                                                 |
+| Steuerkalender                   | Kalender, Beschreibung des Kalenders                                                                                       |
+| Geschäftsjahr                       | Kalenderjahr                                                                                                        |
+| Finanzzeiträume                     | Kalenderperioden                                                                                                 |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstellen von Power BI-Inhalten:
@@ -116,6 +116,6 @@ Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstelle
 -   [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](configure-power-bi-integration.md)
--   [Aufstellungssicherheit für Kostenrechnungsinhalt für Leistung BI] (setup-security-cost-accounting-content-pack.md )
+-   [Aufstellungssicherheit für Kostenrechnungsinhalt für Power B]](setup-security-cost-accounting-content-pack.md)
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Aktualisieren der Standardkosten in einer Umgebung ohne Produktionstätigkeit
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel bietet eine Anleitung zum Aktualisieren von Standardkosten in einer Umgebung ohne Produktionstätigkeit.
 
 Für die folgenden Richtlinien wird die Verwendung des Zwei-Versionen-Ansatzes für Standardkostenaktualisierungen vorausgesetzt. Hierbei enthält eine der Nachkalkulationsversionen die ursprünglich definierten Standardkosten für die unveränderliche Periode, während die andere Nachkalkulationsversion die stufenweisen Aktualisierungen beinhaltet. Jede Aktualisierung wird als Kostendatensatz innerhalb der zweiten Nachkalkulationsversion eingegeben und schließlich aktiviert. Eine alternative Lösung stellt der Einzelversionsansatz dar, bei dem die ursprünglich definierte Gruppe von Standardkosten verwendet wird. Für den Zwei-Versionen-Ansatz müssen Sie eine zweite Nachkalkulationsversion definieren. Nachfolgend finden Sie die Richtlinien zur Definition dieser Nachkalkulationsversion:
@@ -46,6 +49,8 @@ Gehen Sie zum Korrigieren, Regulieren oder Aktualisieren der Standardkosten für
 4.  Ändern Sie mithilfe der Seite **Verwaltung der Nachkalkulationsversion** die Sperrmarkierung, um in der zweiten Nachkalkulationsversion die Aktivierung von Datensätzen für ausstehende Kosten zu ermöglichen.
 5.  Verwenden Sie die Seite **Preise aktivieren** (die Sie über die Seite **Verwaltung der Nachkalkulationsversion** öffnen), um alle ausstehenden Artikelkostendatensätze in der zweiten Nachkalkulationsversion zu aktivieren. Die Datensätze mit ausstehenden Kosten können auch für einzelne Artikel aktiviert werden, indem Sie auf der Seite **Artikelkosten** auf die Schaltfläche **Ausstehende Preise aktivieren** klicken.
 6.  Mithilfe der Seite **Einstellungen für Nachkalkulationsversion** können Sie die Sperrmarkierungen in der zweiten Nachkalkulationsversion ändern, um eine weitere Datenverwaltung zu verhindern. Durch die Sperrrichtlinien werden die Eingabe neuer ausstehender Kosten sowie die Aktivierung ausstehender Kosten verhindert.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: BI &amp; berichterstellungsstartseite
-description: "Dieses Thema enthält eine Liste BIberichterstellungsbetriebsmittel &amp; auf, die in Microsoft Dynamics 365 für Arbeitsgänge verfügbar sind."
+title: "Startseite für BI &amp;und Berichterstellung"
+description: "Auf dieser Seite werden die BI- &amp; Berichterstellungsressourcen aufgeführt, die in Microsoft Dynamics 365 for Operations verfügbar sind."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,26 +24,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>BI &amp; berichterstellungsstartseite
+# <a name="bi-amp-reporting-home-page"></a>Startseite für BI &amp;und Berichterstellung
 
-Dieses Thema enthält eine Liste BIberichterstellungsbetriebsmittel &amp; auf, die in Microsoft Dynamics 365 für Arbeitsgänge verfügbar sind.
+[!include[banner](../includes/banner.md)]
+
+
+Auf dieser Seite werden die BI- &amp; Berichterstellungsressourcen aufgeführt, die in Microsoft Dynamics 365 for Operations verfügbar sind. 
 
 <a name="working-with-aggregate-data"></a>Arbeiten mit aggregierten Daten
 ---------------------------
 
 -   [Analytics](analytics.md)
 -   [Echtzeit-Im Speicher-Zusammenstellungsmodelle ersetzen SSAS-Cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Modell- und Verwendung von Daten model-aggregate-data.md gesamten] ()
--   [Migrieren eines Cubes AX-Vertriebs R3 aktualisierten Dynamics 2012 auf Entitätsshop]( .. \ \ MigrationAktualisierung migrate-upgraded-cube-entity-store.md)
+-   [Modellierung und Nutzung aggregierter Daten](model-aggregate-data.md)
+-   [Migrieren eines aktualisierten Dynamics AX 2012 R3 Verkufs an die Entität](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>Self-Service-Berichterstellung
+## <a name="self-service-reporting"></a>Self-Service-Reporting
 -   [Power BI integration](power-bi-integration.md)
 -   [Konfigurieren der Power BI-Integration für Arbeitsbereiche](configure-power-bi-integration.md)
 -   [Erstellen eines Power BI-Berichts mithilfe von Microsoft Dynamics 365 for Operations-Daten](create-powerbi-report-data.md)
--   [Erstellen eines BIbericht und Energie ein Dashboard] erstellen" create-powerbi-report-dashboard.md)
--   [Einzelhandelskanal-Leistungs-Energie BIinhalt] (retail-channel-performance-dashboard-power-bi-data.md)
--   [Finanzleistungs-Energie BIinhalt] (financial-performance-power-bi-content-pack.md)
--   [Vertriebs-und Rentabilitätsleistung Leistungsfähigkeit BIinhalt] (sales-profitability-performance-content-pack.md )
+-   [Power BI Bericht und Dashboard erstellen](create-powerbi-report-dashboard.md)
+-   [Retail Channel Performance Power BI Inhalt](retail-channel-performance-dashboard-power-bi-data.md)
+-   [Financial Performance Power BI Inhalt](financial-performance-power-bi-content-pack.md)
+-   [Vertriebs-und Rentabilitätsleistung Power BI Inhalt](sales-profitability-performance-content-pack.md)
 -   [Verwenden Sie eine Konfiguration der "Elektronischen Berichterstellung", um Power BI Daten aus Dynamics 365 for Operations bereitzustellen](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Eingebettete analytische Erfahrungen im Dynamics 365 for Operations-Client erstellen
@@ -95,6 +98,8 @@ Dieses Thema enthält eine Liste BIberichterstellungsbetriebsmittel &amp; auf, d
 -   [ER - Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 5: Format verändern und ausführen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (Aufgabenleitfaden)
 -   [ER - Generieren Sie elektronische Dokumente für Zahlungen mithilfe einer Formatkonfiguration](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (Aufgabenleitfaden)
 -   [ER - Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (Aufgabenleitfaden)
+
+
 
 
 

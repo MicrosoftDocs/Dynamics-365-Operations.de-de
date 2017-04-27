@@ -1,6 +1,6 @@
 ---
 title: Zwischenbilanzfinanzberichte
-description: "In diesem Artikel wird beschrieben die für Standardberichte Zwischenbilanzen. Er wird zudem beschrieben die Bausteine, die mit diesen Berichten zugeordnet werden und wie die Berichte ändern können, um Ihren geschäftlichen Anforderungen anpassen."
+description: "In diesem Artikel werden die Standardberichte für Zwischenbilanzen beschrieben. Zudem werden die Bausteine beschrieben, die mit diesen Berichten zugeordnet werden und wie Sie Berichte ändern können, um diese an Ihre geschäftlichen Anforderungen anpassen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="trial-balance-financial-reports"></a>Zwischenbilanzfinanzberichte
 
-In diesem Artikel wird beschrieben die für Standardberichte Zwischenbilanzen. Er wird zudem beschrieben die Bausteine, die mit diesen Berichten zugeordnet werden und wie die Berichte ändern können, um Ihren geschäftlichen Anforderungen anpassen. 
+[!include[banner](../includes/banner.md)]
+
+
+In diesem Artikel werden die Standardberichte für Zwischenbilanzen beschrieben. Zudem werden die Bausteine beschrieben, die mit diesen Berichten zugeordnet werden und wie Sie Berichte ändern können, um diese an Ihre geschäftlichen Anforderungen anpassen. 
 
 <a name="default-trial-balance-reports"></a>Standardzwischenbilanzberichte
 -----------------------------
@@ -51,7 +54,7 @@ Die Zwischenbilanzfinanzberichte verwenden die folgenden Bausteine.
 
 ### <a name="row-definition"></a>Zeilendefinition
 
-Die Zeilendefinition, Zwischenbilanz – Standard, enthält eine einzelne Zeile, in die alle Hauptkonten übernimmt. Daher kann jeder Benutzer den Bericht erstellen, ohne Änderungen vorzunehmen zu müssen. Wenn Sie den Bericht anzeigen, führen Sie einen Drilldown der Einzelzeile durch, um Details zu jedem Konto zu sehen. Sie können die Zeilendefinition ändern, sodass sie weitere Details umfasst. Um die Zeilendefinition "Zwischenbilanz - Standard" zu ändern, sodass sie Zeilen für alle Konten umfasst, führen Sie die folgenden Schritte aus.
+Die Zeilendefinition, Zwischenbilanz – Standard, enthält eine einzelne Zeile, die alle Hauptkonten übernimmt. Daher kann jeder Benutzer den Bericht erstellen, ohne Änderungen vorzunehmen zu müssen. Wenn Sie den Bericht anzeigen, führen Sie einen Drilldown der Einzelzeile durch, um Details zu jedem Konto zu sehen. Sie können die Zeilendefinition ändern, sodass sie weitere Details umfasst. Um die Zeilendefinition "Zwischenbilanz - Standard" zu ändern, sodass sie Zeilen für alle Konten umfasst, führen Sie die folgenden Schritte aus.
 
 1.  Klicken Sie auf **Bearbeiten** und dann auf **Zeilen aus Dimensionen einfügen**. Mit dem Befehl **Zeilen aus Dimensionen einfügen** können Sie die Dimensionen auswählen, die Sie in Ihrer Zeile haben möchten. Für diese Zeilendefinition werden Sie **Hauptkonto** verwenden.
 2.  Stellen Sie sicher, dass das **Hauptkonto** alle kaufmännischen Und-Zeichen (&) enthält, und klicken Sie auf **OK**.
@@ -100,10 +103,12 @@ Jeder Zwischenbilanzbericht verwendet eine andere Spaltendefinition. Diese Spalt
 <a name="see-also"></a>Siehe auch
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Finanzberichterstellung](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Finanzberichte anzeigen](view-financial-reports.md)
 
-[Dynamics-Rechnungslegungs-Blog (http://blogs.msdn.com/b/dynamics_financial_reporting/)]
+[Dynamics Financial Reporting-Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

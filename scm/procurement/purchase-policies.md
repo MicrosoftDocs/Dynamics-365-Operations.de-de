@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchasing-policies"></a>Einkaufsrichtlinien
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu Einkaufsrichtlinien. Eine Einkaufsrichtlinie ist Sammlung von Regeln, mit denen der Bestellanforderungsprozess kontrolliert wird. Einkaufsrichtlinien unterstützen Beschaffungsadministratoren beim Implementieren der Beschaffungsstrategie, indem eine Richtlinienstruktur erstellt wird, die auf die Anforderungen einer Organisation für den strategischen Einkauf ausgerichtet ist.
 
 Eine Einkaufsrichtlinie besteht aus einer Gruppe von Richtlinienregeln. Beim Definieren einer Richtlinienregel wird zuerst ein Regeltyp ausgewählt. Dann erstellen Sie eine Regel für den Richtlinientyp, indem Sie Einstellungen, Startdatum und Enddatum der Regel definieren.  
@@ -41,11 +44,11 @@ Abhängig von der Konfiguration der Einkaufsrichtlinien können mehrere Regeln d
 
 ### <a name="example-1-simple-purchasing-policy-configuration"></a>Beispiel 1: Konfiguration einfacher Einkaufsrichtlinien
 
-Organisationen, der auszugleichende sind und weniger komplexe Einkaufsrichtlinien nach juristischer Person einrichten kann und können nur die Unternehmensorganisationshierarchie verwenden.  
+Organisationen, die klein und weniger komplex sind, können Einkaufsrichtlinien nach juristischer Person einrichten und nur die Organisationshierarchie Unternehmen verwenden.  
 
 Bei Fabrikam, einem kleinen Unternehmen, gibt es bei den Einkaufsanforderungen nur geringfügige Abweichungen innerhalb der Organisation. Die Einkaufsregeln variieren nur zwischen den juristischen Personen der Organisation. Mitarbeiter von Fabrikam Kanada und Mitarbeiter von Fabrikam USA kaufen Waren und Dienstleistungen aus verschiedenen Katalogen und bei verschiedenen Lieferanten. Fabrikam richtet die Einkaufsrichtlinien daher auf der Ebene der juristischen Personen ein.  
 
-Fabrikam erstellt zwei Einkaufsrichtlinien. Richtlinie A betrifft die US-juristischePerson, 1111. Richtlinie B betrifft die juristische Person 2222 von Fabrikam. Wenn ein Mitarbeiter in juristischen Person 1111 eine Bestellanforderung erstellt, werden die Richtlinienregeln aus der Richtlinie A., beispielsweise den Produktkatalog, den der Mitarbeiter angegeben in der Katalogrichtlinienregel für Richtlinie A. werden.  
+Fabrikam erstellt zwei Einkaufsrichtlinien. Richtlinie A betrifft die juristische Person 1111 USA. Richtlinie B betrifft die juristische Person 2222 Kanada. Wenn ein Mitarbeiter in juristischen Person 1111 eine Bestellanforderung erstellt, werden die Richtlinienregeln aus der Richtlinie A., beispielsweise den Produktkatalog, den der Mitarbeiter angegeben in der Katalogrichtlinienregel für Richtlinie A. werden.  
 
 Wenn ein Mitarbeiter in juristischen Person 2222 eine Bestellanforderung erstellt, werden die Richtlinienregeln aus der Richtlinie B abgeleitet.  
 
@@ -117,7 +120,7 @@ Die Regel für die Auffüllungssteuerung ist eine optionale Regel, die die Felde
 
 ### <a name="purchase-order-creation-and-demand-consolidation-rule"></a>Regel für die Erstellung von Bestellungen und die Bedarfskonsolidierung
 
-Die der Bestellung und Bedarfskonsolidierung definiert die Richtlinienregeln, verwendet werden soll, wenn eine Bestellung anhand einer genehmigten Bestellanforderung generiert. Wenn Sie Regeln dieses Typs erstellen, können Sie Optionen auf verschiedenen Registerkarten festlegen:
+Die Richtlinie definiert Richtlinienregeln, die beim Generieren einer Bestellung verwendet werden sollen, die auf einer genehmigten Bestellanforderung basiert. Wenn Sie Regeln dieses Typs erstellen, können Sie Optionen auf verschiedenen Registerkarten festlegen:
 
 -   Auf der Registerkarte **Bestellungsaufteilung** können Sie durch Definieren von Kriterien angeben, wann Bestellanforderungspositionen auf separate Bestellungen aufgeteilt werden sollen.
 -   Auf der **Preis/Rabatt-Übertragung** Registerkarte können Sie definieren, wann die Preisvereinbarung neu berechnet werden soll, wenn eine Bestellung erstellt wird:
@@ -126,7 +129,7 @@ Die der Bestellung und Bedarfskonsolidierung definiert die Richtlinienregeln, ve
 
     Sie können der anfordernden Person auch gestatten, die Methode der Preis- und Rabattübertragung für einzelne Bestellanforderungspositionen zu ändern, unabhängig von der Preis/Rabattübergangsregel, die festgelegt ist. Aktivieren Sie die Option **Manuelle Aufhebung pro Bestellanforderungsposition zulassen**, wenn Sie diese Funktion aktivieren möchten.
 -   Auf der **Artikelbezeichnungs-Übertragung** Registerkarte können Sie die Artikelbeschreibung aus der Anforderung übertragen, wenn sie aus einer Angebotsanforderung stammt.
--   Auf der Registerkarte **Preistoleranz** können Sie Preistoleranzregeln definieren, um genehmigte Bestellanforderungen erneut durch den Prüfprozess zu leiten, wenn sich der Preis eines Beschaffungskatalogartikels erhöht. Legen Sie den maximalen Betrag fest, um den der Nettobetrag einer Position in einer Bestellanforderung zwischen der Genehmigungszeitpunkt der Bestellanforderung und dem Erstellungszeitpunkt der Bestellung erhöht werden kann. Der Nettobetrag wird berechnet, indem der folgenden Formel verwendet:\[× Menge ((Preis je Einheit – Rabatt ÷\] Preiseinheit) + sonstige Zuschläge) × (100 – Rabattprozentsatz) 100 ÷ Bestellanforderungspositionen, die die festgelegte Preistoleranz überschreiten, müssen manuell bearbeitet werden. Mit den auf der Registerkarte **Fehlerverarbeitung** konfigurierten Regeln wird bestimmt, wie die Bestellanforderungspositionen verarbeitet werden.
+-   Auf der Registerkarte **Preistoleranz** können Sie Preistoleranzregeln definieren, um genehmigte Bestellanforderungen erneut durch den Prüfprozess zu leiten, wenn sich der Preis eines Beschaffungskatalogartikels erhöht. Legen Sie den maximalen Betrag fest, um den der Nettobetrag einer Position in einer Bestellanforderung zwischen der Genehmigungszeitpunkt der Bestellanforderung und dem Erstellungszeitpunkt der Bestellung erhöht werden kann. Der Nettobetrag wird berechnet, indem die folgende Formel verwendet wird: (\[Menge × (Preis je Einheit – Rabatt) ÷ Preiseinheit\] + Sonstige Zuschläge) × (100 – Rabattprozent) ÷ 100. Bestellanforderungspositionen, die die Preistoleranz überschreiten, müssen manuell verarbeitet werden. Mit den auf der Registerkarte **Fehlerverarbeitung** konfigurierten Regeln wird bestimmt, wie die Bestellanforderungspositionen verarbeitet werden.
 -   Auf der Registerkarte **Fehlerverarbeitung** konfigurieren Sie die Verarbeitungsregel, die auf eine Bestellanforderung angewendet wird, wenn die Prüfung bei der Erstellung der Bestellung aufgrund eines Kreditoren- oder Preistoleranzfehlers nicht erfolgreich ist. Folgende Optionen stehen zur Auswahl:
     -   **Keine Aktion** – Die Bestellanforderungspositionen verbleiben auf der **Genehmigte Bestellanforderungen freigeben** Seite. Der Status der Bestellanforderungspositionen ist weiterhin **Genehmigt**. Die Fehler müssen jedoch behoben werden, bevor für die Bestellanforderungspositionen eine Bestellung generiert werden kann.
     -   **Bestellanforderungsposition stornieren** – Die Bestellanforderungspositionen werden storniert. Die anfordernde Person kann eine neue Bestellanforderung für die stornierten Positionen erstellen, wenn die Positionen immer noch angefordert werden sollen.
@@ -141,6 +144,8 @@ Die der Bestellung und Bedarfskonsolidierung definiert die Richtlinienregeln, ve
     -   **Keine Bedarfskonsolidierung zulassen** – Keine genehmigten Bestellanforderungspositionen kommen für die Bedarfskonsolidierung in Frage. Diese Option ist standardmäßig ausgewählt und betrifft nur Bestellanforderungspositionen, die zur Erstellung einer Bestellung manuell verarbeitet werden müssen.
     -   **Immer Bedarfskonsolidierung zulassen** – Alle genehmigten Bestellanforderungspositionen kommen für die Bedarfskonsolidierung in Frage. **Hinweis:** Wenn Sie die Option **Immer Bedarfskonsolidierung zulassen** auf der Registerkarte **Bedarfskonsolidierung** auswählen, jedoch die Option **Bestellungen automatisch erstellen** auf der Registerkarte **Manuelle Erstellung der Bestellung** auswählen, werden alle Bestellanforderungen für die manuelle Bearbeitung vorgesehen.
     -   **Bedarfskonsolidierung unter diesen Bedingungen zulassen** – Definieren Sie die Kriterien, die bestimmen, ob genehmigte Bestellanforderungspositionen für die Bedarfskonsolidierung infrage kommen. Für jeden Typ der Bestellanforderungsposition können Sie die Kriterien nach Beschaffungskategorie und Kreditor festlegen. Wenn Sie die Option **Bedarfskonsolidierung unter diesen Bedingungen zulassen** auswählen, können Sie die Kriterien nach Beschaffungskategorie und Kreditor für jeden Typ der Bestellanforderungsposition festlegen. Wenn Sie eine Beschaffungskategorie auswählen, werden auch Unterkategorien für diese Beschaffungskategorie ausgewählt. Wenn Sie die Option **Alle** für einen bestimmten Positionstyp auswählen, kommen alle Bestellanforderungspositionen dieses Positionstyps für die Bedarfskonsolidierung in Frage.
+
+
 
 
 

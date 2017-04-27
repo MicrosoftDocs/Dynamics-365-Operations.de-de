@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-journals"></a>Lagererfassungen
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Sie die Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandtransaktionen zu buchen. 
 
 Die Bestanderfassungen in Microsoft Dynamics 365 for Operations AX werden verwendet, um physische Lagerbuchungen unterschiedlicher Arten, wie Abgangs-und Zugangsbuchungen Lagerumlagerungen, die Erstellung von Stücklisten (BOMs) zu buchen und zur Abstimmung des physischen Bestands. Alle diese Lagererfassungen werden auf ähnliche Weise verwendet, sie werden jedoch in verschiedene Arten unterteilt.
@@ -72,7 +75,7 @@ Produktions-Wareneingangserfassungen arbeiten wie Wareneingangserfassungen, werd
 
 ### <a name="counting"></a>Inventur
 
-Mit Inventurerfassungen können Sie den aktuell verfügbaren Lagerbestand korrigieren, der für Artikel oder Gruppen Artikel erfasst wird, und dann die tatsächliche physische Zählung buchen, um die Korrekturen vorzunehmen, die erforderlich sind, um die Abweichungen abzustimmen. Sie können Inventurrichtlinien Inventurgruppen zuordnen, um die Gruppierung von Artikeln zu unterstützen, die verschiedene Merkmale haben, sodass diese Artikel in eine Inventurerfassung einbezogen werden können. So können Sie beispielsweise Inventurgruppen einrichten, um Artikel zu zählen, die eine bestimmte Häufigkeit haben, oder um Artikel zu zählen, wenn Bestand unter eine bestimmte Menge sinkt. Informationen darüber, wie Sie Inventurgruppen, finden Sie unter Bestandszählprozesse ([definieren Sie Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Mit Inventurerfassungen können Sie den aktuell verfügbaren Lagerbestand korrigieren, der für Artikel oder Gruppen Artikel erfasst wird, und dann die tatsächliche physische Zählung buchen, um die Korrekturen vorzunehmen, die erforderlich sind, um die Abweichungen abzustimmen. Sie können Inventurrichtlinien Inventurgruppen zuordnen, um die Gruppierung von Artikeln zu unterstützen, die verschiedene Merkmale haben, sodass diese Artikel in eine Inventurerfassung einbezogen werden können. So können Sie beispielsweise Inventurgruppen einrichten, um Artikel zu zählen, die eine bestimmte Häufigkeit haben, oder um Artikel zu zählen, wenn Bestand unter eine bestimmte Menge sinkt. Informationen darüber, wie Sie Inventurgruppen definieren, finden Sie unter [Lagerinventurprozesse definieren (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/) definieren.
 
 ### <a name="tag-counting"></a>Markierungen zählen
 
@@ -89,5 +92,7 @@ Auf eine Erfassungsposition kann zu einem gegebenen Zeitpunkt jeweils nur ein Be
 
 ## <a name="posting-journal-lines"></a>Buchungserfassungspositionen
 Sie können die Erfassungspositionen, die Sie erstellt haben, jederzeit buchen, bis Sie einen Artikel aus weiteren Buchungen sperren. Daten, die Sie in eine Erfassung eingeben, bleiben selbst dann in der Erfassung, wenn Sie die Erfassung schließen, ohne die Positionen zu buchen.
+
+
 
 

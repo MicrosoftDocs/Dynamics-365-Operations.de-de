@@ -1,5 +1,5 @@
 ---
-title: Erstellen Sie ein Produktkonfigurationsmodell
+title: "Wählen Sie ein Produktkonfigurationsmodell aus."
 description: "Die Notwendigkeit, Produkte zu konfigurieren, um bestimmte Anforderungen zu erfüllen, wird eher die Regel anstatt die Ausnahme, sowohl in B2B- als auch in den B2C-Beziehungen."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="build-a-product-configuration-model"></a>Erstellen Sie ein Produktkonfigurationsmodell
+# <a name="build-a-product-configuration-model"></a>Wählen Sie ein Produktkonfigurationsmodell aus.
+
+[!include[banner](../includes/banner.md)]
+
 
 Die Notwendigkeit, Produkte zu konfigurieren, um bestimmte Anforderungen zu erfüllen, wird eher die Regel anstatt die Ausnahme, sowohl in B2B- als auch in den B2C-Beziehungen.
 
@@ -34,7 +37,7 @@ Ein Hersteller, der Konfigurieren-zum Auftrag-Szenarien unterstützt, hat die Ge
 
 Ein erfolgreicher Umstieg von der Fertigung-zu-Bestand-Einstellung zur Konfigurieren-zum Auftrag-Einstellung erfordert eine sorgfältige Analyse der Produktstrukturen, Kennung der Produktfamilien und Komponentisierung. Um die Anzahl von Teilen zu reduzieren und die Zahl von Waren im Prozess zu minimieren, ist es sehr wichtig dass Sie die Produktschnittstellen verstehen und dass Sie für Wiederverwendungsmöglichkeit entwerfen.  
 
-Es gibt mehrere Produktkonfigurationsmodellierungsprinzipien, wie die regelbasierte, dimensionsbasierte und einschränkungsbasierte Modellstruktur. Untersuchungen zeigen, dass die einschränkungsbasierte Methode die Anzahl von Codezeilen in den Modellen um ungefähr 50 Prozent verringern kann, wenn mit anderen Modellierungsprinzipien verglichen wird. Daher kann diese Methode die Gesamtkosten (TCO) reduzieren. Wenn Sie von einem regelbasierten Modell bewegen, das auf Grundlage X++-Code zu einem Einschränkung-basierten Modell ist, nicht mehr benötigen Sie eine Entwicklerlizenz, um Produktmodelle verwalten.
+Es gibt mehrere Produktkonfigurationsmodellierungsprinzipien, wie die regelbasierte, dimensionsbasierte und einschränkungsbasierte Modellstruktur. Untersuchungen zeigen, dass die einschränkungsbasierte Methode die Anzahl von Codezeilen in den Modellen um ungefähr 50 Prozent verringern kann, wenn mit anderen Modellierungsprinzipien verglichen wird. Daher kann diese Methode die Gesamtkosten (TCO) reduzieren. Wenn Sie von einem regelbasierten Modell, das auf X++-Code basiert, zu einem einschränkungsbasierten Modell übergehen, benötigen Sie keine Entwicklerlizenz mehr, um Produktmodelle zu verwalten.
 
 ## <a name="product-configuration"></a>Produktkonfiguration
 Die Industrialisierungsperiode hat zu großen Leistungen beim Erzeugen hochwertiger und funktionsreicher Produkte zu erschwinglichen Preise geführt. Die Kostendegression hat es für die meisten Personen in der industrialisierten Welt möglich gemacht, Autos, Fernseher, Haushaltswaren und andere Waren zu kaufen, die die meisten als einen erforderlichen Teil unseres Alltagslebens erachten.  
@@ -64,11 +67,11 @@ Die Verwendung eines einschränkungsbasierten Produktkonfigurationsmodell bedeut
 
 ### <a name="table-constraints"></a>Tabelleneinschränkungen
 
-Tabelleneinschränkungen können systemdefiniert benutzerdefiniert oder sein.  
+Tabelleneinschränkungen können als benutzerdefinierte oder als systemdefinierte Einschränkung vorliegen.  
 
 Eine benutzerdefinierte Tabelleneinschränkung wird vom Benutzer erstellt. Der Benutzer wählt eine Kombination von Attributtypen aus, um die Spalten der Tabelle darzustellen und gibt dann Werte aus den Domänen der ausgewählten Attributtypen ein, um die Zeilen in der Tabelleneinschränkung zu bilden.  
 
-Eine systemdefinierte Tabelleneinschränkung wird definiert, durch Auswahl, der Microsoft Dynamics 365, damit Arbeitsgangstabelle Referenz und dann das Festlegen Felder aus dieser Tabelle zum Formular die Spalten in der Einschränkung verwendet. Die Zeilen der Tabelleneinschränkung sind die Zeilen des Dynamics 365 für Arbeitsgangstabelle, die mit der Konfiguration vorhanden sind.  
+Eine systemdefinierte Tabelleneinschränkung wird definiert, indem ausgewählt wird, welche Microsoft Dynamics 365 for Operations-Tabelle als Referenz verwendet wird, und dann durch das Festlegen von Feldern aus dieser Tabelle, um die Spalten in der Einschränkung zu bilden. Die Zeilen der Tabelleneinschränkung sind die Zeilen der Dynamics 365 for Operations-Tabelle, die bei der Konfiguration vorhanden sind.  
 
 Eine Tabelleneinschränkung wird in einem Produktkonfigurationsmodell einbezogen, indem die Tabelleneinschränkungsdefinition verwiesen und die betreffenden Attribute im Modell zu den Spalten in der Tabelleneinschränkung zuordnet werden.
 
@@ -103,7 +106,7 @@ Schließlich kann die Prüfung für ein vollständiges Produktkonfigurationsmode
 
 ### <a name="testing"></a>Testen
 
-Ein Modell testen ist zum Ausführen einer tatsächlichen Konfigurationssitzung vergleichbar. Der Benutzer kann durch die Konfigurationsseiten durchzugehen und überprüfen, ob die vorbildliche Struktur den Konfigurationsvorgang unterstützt. Der Benutzer kann überprüfen, ob die Attributwerte korrekt sind und die Attributbeschreibungen den Benutzer führen, um die richtigen Werte auszuwählen. Schließlich, nachdem eine Testsitzung abgeschlossen wurde, versucht das System, die Stückliste und den Arbeitsplan zu erstellen, der den ausgewählten Attributwerten entspricht und eine Fehlermeldung anzeigt, wenn ein Fehler auftritt.
+Ein Modell testen ist gleich, wie wenn man eine tatsächliche Konfigurationssitzung startet. Der Benutzer kann durch die Konfigurationsseiten durchgehen und überprüfen, ob die vorbildliche Struktur den Konfigurationsvorgang unterstützt. Der Benutzer kann überprüfen, ob die Attributwerte korrekt sind und die Attributbeschreibungen den Benutzer führen, um die richtigen Werte auszuwählen. Schließlich, nachdem eine Testsitzung abgeschlossen wurde, versucht das System, die Stückliste und den Arbeitsplan zu erstellen, der den ausgewählten Attributwerten entspricht und eine Fehlermeldung anzeigt, wenn ein Fehler auftritt.
 
 ### <a name="the-configuration-page"></a>Die Konfigurationsseite
 
@@ -129,17 +132,17 @@ Wenn das Produkt in verschiedenen Ländern/Regionen verkauft wird, können Über
 Der letzte und der wichtigste Schritt im Abschlussprozess ist, eine Version für das Produktkonfigurationsmodell zu erstellen. Die Version stellt die Beziehung zwischen dem Produktmaster, der für die Konfiguration in einem Auftrag oder einer Angebotsposition ausgewählt werden kann, und dem Produktkonfigurationsmodell dar. Eine Version muss genehmigt und aktiviert werden, bevor sie in einer Konfigurationssitzung verwendet werden kann.
 
 ## <a name="extending-a-product-configuration-model-through-the-api"></a>Erweitern eines Produktkonfigurationsmodells durch das API
-Eine dedizierte Anwendungsprogrammierschnittstelle (API) wurde implementiert, sodass Partner und andere, die eine Entwicklerlizenz haben, den Funktionsumfang eines Produktkonfigurationsmodells erweitern können. Der Hauptschwerpunkt liegt, ein Mechanismus einzurichten, der aktualisiert Partner können und Debitoren, die den vorhandenen Produktgenerator verwenden, den Code migrieren, in den der Produktgeneratormodelle dem API eingebettet ist. Auf diese Weise können sie ihre Modelle vom Produktgenerator in eine Produktkonfiguration migrieren. Allerdings können neue Partner und Kunden auch von der Verwendung der API zum Erweitern neuer Produktkonfigurationsmodelle profitieren.
+Eine dedizierte Anwendungsprogrammierschnittstelle (API) wurde implementiert, sodass Partner und andere, die eine Entwicklerlizenz haben, den Funktionsumfang eines Produktkonfigurationsmodells erweitern können. Das Hauptziel war, einen Mechanismus einzurichten, mit dem Partner und Debitoren, die den vorhandenen Produktgenerator verwenden, den Code, der in den Produktgeneratormodellen eingebettet ist, in die API migrieren können. Auf diese Weise können sie ihre Modelle vom Produktgenerator in eine Produktkonfiguration migrieren. Allerdings können neue Partner und Kunden auch von der Verwendung der API zum Erweitern neuer Produktkonfigurationsmodelle profitieren.
 
 ### <a name="pcadaptor-class"></a>PCAdaptor-Klasse
 
-Das API ist so implementiert, dass sie einen Satz **PCAdaptor**-Klassen verwendet, die die Datenstruktur der Produktkonfigurationsmodelle verfügbar machen. Eine Instanz der PCAdaptor ** ** Klasse muss für jedes Modell erstellt werden, das als Kreditor erfasst wird. Nachdem eine Konfigurationssitzung abgeschlossen ist, überprüft das System für eine Instanz dieser Klasse und Durchläufe werden, wenn es gefunden hat.  
+Das API ist so implementiert, dass sie einen Satz **PCAdaptor**-Klassen verwendet, die die Datenstruktur der Produktkonfigurationsmodelle verfügbar machen. Eine Instanz der **PCAdaptor Klasse**  muss für jedes Modell erstellt werden, das als Kreditor erfasst wird. Nachdem eine Konfigurationssitzung abgeschlossen ist, sucht das System nach einer Instanz dieser Klasse und führt diese aus, wenn es sie gefunden hat.  
 
 Das folgende Flussdiagramm veranschaulicht den Prozess.  
 
-[] (Flussdiagramm ![. /media/product_configuration_2.png)]". /media/product_configuration_2.png)  
+[![Flussidagramm](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
-Flussdiagramm die Produktkonfiguration API
+Produktkonfiguration für das API-Flussdiagramm
 
 ## <a name="product-configuration"></a>Produktkonfiguration
 Die Produktkonfiguration kann von den folgenden Stellen ausgeführt werden:
@@ -155,5 +158,7 @@ Der Zweck der Konfiguration ist, eine unterschiedliche Variante des Produkts zu 
 ### <a name="multiple-sites-and-intercompany"></a>Mehrere Standorte und Intercompany
 
 Wenn eine Variante an einem Standort erfolgt oder auch an einem Unternehmen, das von der Site oder dem Unternehmen der Produktion abweicht, werden die Stückliste und der Arbeitsplan für die Lieferantensite im Lieferunternehmen erstellt und dort eingelagert. Die Produktvariante wird in allen Unternehmen freigegeben, die an der Lieferkette teilnehmen.
+
+
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="release-production-orders"></a>Freigeben von Produktionsaufträgen
 
+[!include[banner](../includes/banner.md)]
+
+
 Ein freigegebener Produktionsauftrag ist ein Auftrag, der für die Produktion autorisiert wurde. Der Begriff "Freigegeben" wird verwendet, um einen Status im Lebenszyklus eines Produktionsauftrags zu beschreiben, in dem der Produktionsauftrag für die Ausführung im Fertigungsbereich und für Lagerortprozesse verfügbar ist. 
 
 <a name="characteristics-of-the-released-state"></a>Merkmale des Status "Freigegeben"
@@ -42,7 +45,7 @@ Der Status **Freigegeben** ist ein Status im Lebenszyklus eines Produktionsauftr
 -   Für Materialien, die physisch reserviert werden, wird Lagerortarbeit generiert, um Materialien für den Produktionsauftrag zu entnehmen.
 
 ## <a name="releasing-jobs-to-the-shop-floor"></a>Freigeben von Einzelvorgängen für die Fertigung
-Nachdem ein Produktionsauftrag freigegeben ist, werden Produktionseinzelvorgänge, die dem Auftrag zugeordnet sind, angezeigt und sind zur Registrierung bereit. Die Operatoren Einzelvorgangserfassungen können, z, Start und stoppt Abschluss, entweder auf der Einzelvorgangslistenterminal ** ** Seite vornehmen oder die Einzelvorgangslistengerät ** ** Seite. Die erfasste Zeit und die Menge werden automatisch aus den Erfassungsseiten auf Produktionserfassungen übertragen, die verbrauchte Zeit und Menge zu verfolgen.
+Nachdem ein Produktionsauftrag freigegeben ist, werden Produktionseinzelvorgänge, die dem Auftrag zugeordnet sind, angezeigt und sind zur Registrierung bereit. Die Operatoren Einzelvorgangserfassungen können, z.B. Start und stoppt Abschluss, entweder auf der **Einzelvorgangslistenterminal** Seite vornehmen oder die **Einzelvorgangslistengerät** Seite. Die erfasste Zeit und die Menge werden automatisch aus den Erfassungsseiten auf Produktionserfassungen übertragen, die verbrauchte Zeit und Menge zu verfolgen.
 
 ## <a name="route-cards"></a>Arbeitsplanlisten
 Eine Arbeitsplanliste bietet einen Überblick über die Informationen aus den Einstellungen der Arbeitspläne und Arbeitsgänge sowie aus der Grob- und Feinterminierung.
@@ -59,6 +62,8 @@ Arbeit für Rohmaterialentnahme wird während der Freigabe generiert. Vorgang wi
 -   Eine Lagerplatzrichtlinie für die Rohmaterialentnahme, die bestimmt, an welchem Lagerort-Lagerplatz die Materialien zu entnehmen sind
 -   Eine Wellenvorlage für Rohmaterialen, in denen Richtlinien für die Ausführung der Lagerortarbeit konfiguriert werden
 -   Ein Lagerplatz für den Produktionswareneingang, der bestimmt, wo Materialien eingelagert werden
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Anzeigen und beurteilen der Ergebnisse eines Fragebogens
-description: "In diesem Thema wird erläutert, wie die Ergebnisse von Fragebögen anzeigen und bewerten können, die von Befragungsteilnehmern ausgefüllt werden."
+description: "In diesem Thema wird beschrieben, wie Sie die Ergebnisse von Fragebögen anzeigen und bewerten können, die die Befragten abgeschlossen haben."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Anzeigen und beurteilen der Ergebnisse eines Fragebogens
 
-In diesem Thema wird erläutert, wie die Ergebnisse von Fragebögen anzeigen und bewerten können, die von Befragungsteilnehmern ausgefüllt werden. 
+In diesem Thema wird beschrieben, wie Sie die Ergebnisse von Fragebögen anzeigen und bewerten können, die die Befragten abgeschlossen haben. 
 
 Nachdem die Befragungsteilnehmer einen Fragebogen ausgefüllt haben, können Sie die Fragebogenergebnisse folgendermaßen anzeigen und auswerten:
 

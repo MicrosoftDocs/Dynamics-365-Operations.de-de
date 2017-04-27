@@ -1,6 +1,6 @@
 ---
-title: Organisatorischer Trainings-Energie BIinhalt
-description: "In diesem Thema wird das Dynamics 365 - Trainings-Energie organisatorischer für Arbeitsgänge BIinhalt. Er zeigt, wie das Inhaltstext Pack zugreift und wird das - Datenmodell und die Entitäten, die verwendet wurde, um das Inhaltstext Pack zu erstellen."
+title: Organisatorische Trainings-Power BI-Inhalt
+description: "In diesem Thema wird der Dynamics 365 for Operations - (Organisatorische Trainings-Power BI-Inhalt beschrieben. Es wird erläutert, wie Sie auf das Content-Pack zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,45 +24,48 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizational-training-power-bi-content"></a>Organisatorischer Trainings-Energie BIinhalt
+# <a name="organizational-training-power-bi-content"></a>Organisatorische Trainings-Power BI-Inhalt
 
-In diesem Thema wird das Dynamics 365 - Trainings-Energie organisatorischer für Arbeitsgänge BIinhalt. Er zeigt, wie das Inhaltstext Pack zugreift und wird das - Datenmodell und die Entitäten, die verwendet wurde, um das Inhaltstext Pack zu erstellen.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Zugreifen des das Content Packs
+
+In diesem Thema wird der Dynamics 365 for Operations - (Organisatorische Trainings-Power BI-Inhalt beschrieben. Es wird erläutert, wie Sie auf das Content-Pack zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+
+<a name="accessing-the-content-pack"></a>Zugreifen auf das Inhaltspaket
 --------------------------
 
-Sie können das Trainings organisatorischen Inhaltstext Pack des in der Bibliothek der kommenden Anlagen in den Microsoft Dynamics Lifecycle Services (LCS) suchen. Weitere Informationen dazu, wie das herunterlädt Inhaltstext Pack und es für Ihr Microsoft Dynamics 365 für Arbeitsgänge, Daten finden Sie in BIinhalt herstellt [Energie Kreditbriefen von Microsoft und von den Partnern]( power-bi-content-microsoft-partners.md).
+Sie finden das Organisatorische Trainings-Content-Pack in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Inhalte herunterladen und mit Ihrem Microsoft Dynamics 365 for Operations verbinden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Berichte, die im Paket enthalten inhaltliche sind
-Nachdem das Inhaltstext Pack für Ihr Dynamics 365 für Arbeitsgangsdaten verbunden wurde, zeigen die Berichte die Daten der Organisation an. Wenn Sie nicht Microsoft-Energie vor BI verwendet haben, können Sie dieser auf mehr zu erfahren [geführt, Seite für Leistung BI] (https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData) erfahrend. Die Berichte, die im Paket enthalten inhaltliche werden, weisen den Diagrammen und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Berichte, die im Paket enthalten sind
+Nachdem Sie das Inhaltspaket mit Ihren Dynamics 365 for Operations Daten verbunden haben, zeigen das Dashboard und die Berichte Ihre Organisationsdaten an. Wenn Sie bisher noch nie Microsoft Power BI verwendet haben, finden Sie weitere Informationen unter [Erste Schritte in Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Die Berichte, die im Paket enthalten sind, haben Diagrammen und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
 
 | Bericht          | Inhalt                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
 | Kurs-Analyse | Erfassung nach Lagerplatz, Kursteilnehmer nach Status und Erfassungsliste |
 | Kurstypen    | Kurstypen nach Qualifikation                                                       |
 
-Sie können die und die Kacheln Diagramme in diesen Erklärungen Stift und die Diagramme und die Kacheln das Dashboard filtern. Weitere Informationen dazu, wie und Energie Stift in finden Sie BI, gefiltert [Dient zum Erstellen und Konfigurieren eines Dashboard] (https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Dynamics 365 für Arbeitsgangsdaten wird verwendet, um die Berichte im das Content Pack des Trainings organisatorischen aufzufüllen. Die folgende Tabelle enthält die von Entitäten, dass das Inhaltstext Pack auf Grundlage war.
+Dynamics 365 for Operations-Daten werden für die Berichte des Organizational Training-Inhaltspakets verwendet. Die folgende Tabelle zeigt die Entitäten, auf denen das Paket basiert.
 
 | Entität                    | Inhalt                                                         | Beziehungen mit anderen Entitäten                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_CalendarOffset Schulung  | Kalendergegenkonten zu den Segmentberichten                                | Schulungskurse \_CourseAgenda, das\_CourseAttendees schult                                                                                                                                                   |
-| \_Trainings Unternehmen         | Unternehmen, z von Berichten nach filtern                                   | Schulungskurse \_CourseAgenda, das\_CourseAttendees schult                                                                                                                                                   |
-| \_Trainings Kurs          | Kurs, Beschreibung, Kursleitername, Standort, Status ist und | Schulungskurse \_CourseAgenda, das\_CourseAttendees schult\_CourseSkill schult                                                                                                                             |
-| \_CourseAgenda Schulung    | Kursprogrammen, Kurs und Start- und Endzeiten                          | \_Trainings Unternehmen, das schult\_\_CalendarOffset Datum schult\_schult Kurs                                                                                                                         |
-| \_CourseAttendees Schulung | Name, Status, Einzelvorgang und Erstzulassung                         | \_Trainings Unternehmen, das schult\_\_CalendarOffset Datum schult\_Demographie\_schult Beschäftigung schult\_Kurs schult\_WorkerName schult\_WorkerTitle schult\_\_Berufsausbildungs Position schult |
-| \_CourseSkill Schulung     | Qualifikation, Fähigkeitstyp und Ebene                                     | \_Trainings Kurs                                                                                                                                                                                   |
-| \_Trainings Datum            | Tagen, Wochen, Monaten und Jahre                                   | Schulungskurse \_CourseAgenda, das\_CourseAttendees schult                                                                                                                                                   |
-| Trainings \_Demographie    | Geburtsdatum, Geschlecht, Familienstand Nationalität und         | Schulungskurse \_CourseAgenda, das\_CourseAttendees schult                                                                                                                                                   |
-| Trainings Beschäftigung \_      | Startdatum, Enddatum und Umbuchungsdatum                        | Schulungskurse \_CourseAgenda, das\_CourseAttendees schult                                                                                                                                                   |
-| \_Trainings Stelle             | Funktion, Typ und Titel                                        | Schulungskurse \_CourseAgenda, das\_CourseAttendees schult                                                                                                                                                   |
-| \_Trainings Position        | Position, Titel und entsprechendes ganztägig(FTE)                  | Schulungskurse \_CourseAgenda, das\_CourseAttendees schult                                                                                                                                                   |
-| \_WorkerName Schulung      | Vorname, Nachname und der Name                             | \_CourseAttendees Schulung                                                                                                                                                                          |
-| \_WorkerTitle Schulung     | Titel- und Dienstalter                                         | \_CourseAttendees Schulung                                                                                                                                                                          |
+| Training\_CalendarOffset  | Kalendergegenkonten zu den Segmentberichten                                | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Company         | Unternehmen, nach denen Berichte gefiltert werden können                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Course          | Kurs, Beschreibung, Kursleitername, Standort und Status | Training\_CourseAgenda Training\_CourseAttendees Training\_CourseSkill                                                                                                                             |
+| Training\_CourseAgenda    | Kursprogrammen, Kurs und Start- und Endzeiten                          | Training\_Company Training\_CalendarOffset Training\_Date Training\_Course                                                                                                                         |
+| Training\_CourseAttendees | Name, Status, Einzelvorgang und Erstzulassung                         | Training\_Company Training\_CalendarOffset Training\_Date Training\_Demographics Training\_Employment Training\_Course Training\_WorkerName Training\_WorkerTitle Training\_Job Training\_Position |
+| Training\_CourseSkill     | Qualifikation, Fähigkeitstyp und Level                                     | Training\_Course                                                                                                                                                                                   |
+| Training\_Date            | Tage, Wochen, Monate und Jahre                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Demographics    | Geburtsdatum, Geschlecht, Familienstand und Nationalität         | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Employment      | Startdatum, Enddatum und Umbuchungsdatum                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Job             | Funktion, Typ und Titel                                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Position        | Position, Titel und FTE                  | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_WorkerName      | Vorname, Nachname, vollständiger Name                             | Training\_CourseAttendees                                                                                                                                                                          |
+| Training\_WorkerTitle     | Titel- und Dienstalter                                         | Training\_CourseAttendees                                                                                                                                                                          |
 
-Diese wurden Entitäten verwendet, um berechnete Kennzahlen im - Datenmodell zu erstellen. Diese berechneten Kennzahlen, werden dann die Leistungskennzahlen (KPIs) und Berichten zu verwendet, die in das Content Pack verwendet werden. Wenn zusätzliche Berechnungen in Ihren Berichten und Dashboard einbeziehen möchten, können Sie die Training.pbix-Datei der Kreditbriefe herunterladen und ändern. Diese Datei ist das Standarddatmodell, das verwendet wurde, um das Inhaltstext Pack zu erstellen. Wenn Sie die gewünschten Änderungen vorgenommen haben, können Sie ein organisatorisches Pack und ein zufriedenes Dashboard erstellen, die die Informationen enthalten, denen Sie Gäste hinzugefügt sind.
+Diese Entitäten wurden verwendet, um berechnete Messungen im Datenmodell zu erstellen. Diese berechneten Messungen werden verwendet, um die Messdaten (KPIs) und Berichte zu erstellen, die im Inhaltspaket verwendet werden. Wenn Sie zusätzliche Berechnungen in Ihren Berichten und Dashboard einbeziehen möchten, können Sie die Training.pbix Datei von LCS herunterladen und bearbeiten. Diese Datei ist das Standarddatenmodell, das verwendet wurde, um das Inhaltspaket zu erstellen. Nachdem Sie die Änderungen vorgenommen haben, können Sie ein Organisations-Inhaltspaket und ein Dashboard erstellen, die die von Ihnen hinzugefügten Informationen enthalten.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstellen von Power BI-Inhalten:
@@ -71,6 +74,8 @@ Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstelle
 -   [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

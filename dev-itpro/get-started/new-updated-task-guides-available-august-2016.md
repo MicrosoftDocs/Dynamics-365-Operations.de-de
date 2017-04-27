@@ -1,6 +1,6 @@
 ---
-title: "Neue oder aktualisierte Aufgabenleitfäden () August 2016"
-description: "Dieses Thema werden die neuen oder aktualisierten Aufgabenleitfäden auf, aufgelistet, die der Bibliothek vereinheitlichten Microsoft (August 2016 - alle Sprachen&quot; APQC für Microsoft Dynamics AX freigegeben wurden. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht."
+title: "Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)"
+description: "Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (August 2016 -- alle Sprachen) für Microsoft Dynamics AX auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-august-2016"></a>Neue oder aktualisierte Aufgabenleitfäden () August 2016
+# <a name="new-or-updated-task-guides-august-2016"></a>Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)
 
-Dieses Thema werden die neuen oder aktualisierten Aufgabenleitfäden auf, aufgelistet, die der Bibliothek vereinheitlichten Microsoft (August 2016 - alle Sprachen" APQC für Microsoft Dynamics AX freigegeben wurden. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht.
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()-Im Aufgabenleitfäden (August 2016 - alle Sprachen" APQC vereinheitlichten Bibliothek für Microsoft Dynamics AX
+
+Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (August 2016 -- alle Sprachen) für Microsoft Dynamics AX auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht.
+
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (August 2016 - alle Sprachen)
 ---------------------------------------------------------------------------------------------------
 
-Die (August 2016 - alle Sprachen" APQC vereinheitlichte Bibliothek enthält, die Aufgabenleitfäden, die bewirken, werden mithilfe für Microsoft Dynamics AX-Plattformaktualisierung 2 (August 2016 ), der Bewerbungsaktualisierung Dynamics AX im Mai 2016 und der Version Microsoft Dynamics AX verwendet werden. im Februar 2016 Weitere Informationen zu diesen Versionen, finden Sie [was neu oder geändert wurde] (was ist - new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in diesem Bibliothek verfügbar. Weitere Informationen dazu, wie im Hilfesystem an eine Aufgabenleitfadenbibliothek, finden Sie fangen Sie mithilfe herstellt []() an help-overview.md.
+Die APQC Unified-Bibliothek (August 2016 -- Alle Sprachen) enthält Aufgabenleitfäden zur Aktualisierung der Hilfe von Microsoft Dynamics AX Platform Update 2, Dynamicx AX (August 2016), Update Mai 2016 und Microsoft Dynamics AX, Release Februar 2016. Weitere Informationen zu diesen Versionen, finden Sie unter [Was ist neu oder geändert](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
 
 ### <a name="data-access"></a>Datenzugriff
 
@@ -97,10 +100,12 @@ Die (August 2016 - alle Sprachen" APQC vereinheitlichte Bibliothek enthält, die
 <a name="see-also"></a>Siehe auch
 --------
 
-Neue Aufgabenleitfäden ([]) Februar 2016(new-task-guides-available-february-2016.md)
+[Neuer Aufgabenleitfaden verfügbar (Februar 2016)](new-task-guides-available-february-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
+
+
 
 

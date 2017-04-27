@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reverse-a-vendor-payment"></a>Kreditorenzahlung stornieren
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel beschriebt die Unterschiede zwischen dem Rückbuchen, Löschen, Stornieren und Ablehnen einer Zahlung. Desweiteren werden die zwei Methoden zur Rückbuchung eines Kreditorenschecks erläutert. 
 
-Gelegentlich kann es erforderlich sein, eine Zahlung zurückzubuchen, nachdem eine Kreditorenzahlung gebucht wurde. Die Rückbuchung unterscheidet sich vom Löschen, vom Stornieren oder der Ablehnung einer Zahlung. Sie können eine Zahlung nur löschen, wenn der Status **Erstellt** ist. Dieser Status besagt, dass die Zahlung erstellt wurde, jedoch noch nicht berücksichtigt wurde generiert. Diese Einschränkung gilt immer, unabhängig von der Zahlungsmethode verwendet. Sie können noch nicht gebuchte Schecks für storniert erklärt, nachdem die Periode erzeugt wurden, jedoch bevor sie gebucht wurden. Wenn die Zahlung generiert wurde als elektronischen Zahlungsverkehr (EFT) erfolgt, können Sie die Zahlung abgelehnt, bevor sie gebucht wurde. Wenn Sie eine Zahlung ablehnen, ändern Sie den Zahlungsstatus ** ** Wert. Eine Zahlung, die storniert gekennzeichnet oder abgelehnt wurde, kann erneut generiert werden, wenn der Zahlungsstatus ** ** Wert zurück zu geändert wurde kein ** **. 
+Gelegentlich kann es erforderlich sein, eine Zahlung zurückzubuchen, nachdem eine Kreditorenzahlung gebucht wurde. Die Rückbuchung unterscheidet sich vom Löschen, vom Stornieren oder der Ablehnung einer Zahlung. Sie können eine Zahlung nur löschen, wenn der Status **Erstellt** ist. Dieser Status besagt, dass die Zahlung erstellt wurde, jedoch noch nicht berücksichtigt wurde generiert. Diese Einschränkung gilt immer, unabhängig von der Zahlungsmethode verwendet. Sie können noch nicht gebuchte Schecks für storniert erklärt, nachdem die Periode erzeugt wurden, jedoch bevor sie gebucht wurden. Wenn die Zahlung generiert wurde als elektronischen Zahlungsverkehr (EFT) erfolgt, können Sie die Zahlung abgelehnt, bevor sie gebucht wurde. Wenn Sie eine Zahlung ablehnen, ändern Sie den **Zahlungsstatus** Wert. Eine Zahlung, die storniert gekennzeichnet oder abgelehnt wurde, kann erneut generiert werden, wenn der **Zahlungsstatus** Wert zurück zu **Keiner** geändert wurde. 
 
-Nachdem eine Zahlung gebucht wurde, werden Rückbuchungen verwendet. Zahlungen, die elektronisch vorgenommen werden, können nicht storniert werden, nachdem sie gebucht wurden. Stattdessen muss eine neue Buchung für den Betrag der Zahlung erstellt werden, um die Verbindlichkeitenrückseite im Feld Konto des Kreditors abgerufen werden. Es gibt zwei Methoden für die Stornierung bereits gebuchter Schecks. In einer Methode werden Rückbuchungen umgehend gebucht, wenn Sie auf **Zahlungsrückbuchung** auf der Seite **Scheck** klicken. Bei der anderen Methode wird die Rückbuchung nach dem Klicken auf die Schaltfläche **Zahlungsrückbuchung** im Feld **Scheck** zunächst an die Scheckrückbuchungserfassung in der Bargeld- und Bankverwaltung gesendet, in der sie dann von einem Prüfer entweder gebucht oder abgelehnt werden kann. 
+Nachdem eine Zahlung gebucht wurde, werden Rückbuchungen verwendet. Zahlungen, die elektronisch vorgenommen werden, können nicht storniert werden, nachdem sie gebucht wurden. Stattdessen muss eine neue Transaktion für den Betrag der Zahlung erstellt werden, um die Verbindlichkeiten auf das Bankkonto des Kreditors zurückzubuchen. Es gibt zwei Methoden zur Rückbuchung von gebuchten Schecks. In einer Methode werden Rückbuchungen umgehend gebucht, wenn Sie auf **Zahlungsrückbuchung** auf der Seite **Scheck** klicken. Bei der anderen Methode wird die Rückbuchung nach dem Klicken auf die Schaltfläche **Zahlungsrückbuchung** im Feld **Scheck** zunächst an die Scheckrückbuchungserfassung in der Bargeld- und Bankverwaltung gesendet, in der sie dann von einem Prüfer entweder gebucht oder abgelehnt werden kann. 
 
 Um ermitteln, welche Methode Ihre Organisation verwendet, sehen Sie sich die Seite **Bargeld- und Bankverwaltungsparameter** an. Wenn die **Überprüfungsprozess für Zahlungsrückbuchungen verwenden** Option auf **Ja** festgelegt ist, werden Rückbuchungen an die Scheckrückbuchungserfassung zur Prüfung gesendet. In der folgenden Tabelle wird beschrieben, wie sich die Scheckumrückbuchungsverfahren unterscheiden.
 
@@ -57,7 +60,7 @@ Als Benutzer, der mit der Überprüfung von Rückbuchungen betraut ist, können 
 -   Zum Ablehnen einer Rückbuchung löschen Sie die Scheckrückbuchungserfassung.
 
 > [!NOTE]
-> Wenn Sie die Erfassung löschen, wird die Rückbuchung aus dem System entfernt, aber der Originalscheck bleibt ** Scheck ** auf der Seite. Der Status des Schecks lautet dann nicht mehr **Storno ausstehend**.
+> Durch das Löschen der Erfassung wird lediglich die Rückbuchung aus dem System entfernt; der ursprüngliche Scheck verbleibt jedoch auf der Seite **Scheck**. Der Status des Schecks lautet dann nicht mehr **Storno ausstehend**.
 
 ## <a name="results-of-posting-a-reversal"></a>Ergebnis einer ausgeführten Rückbuchung
 Beim Buchen einer Scheckrückbuchung geschieht Folgendes:
@@ -78,6 +81,8 @@ Wurde der rückgeholte Scheck für eine Debitorenrückerstattung ausgestellt, gi
 
 -   Für das Debitorenkonto der Zahlungsstornierung erfolgt eine entsprechende Buchung, und der Ausgleich zwischen der ursprünglichen Zahlung und dem Dokument, mit dem die Zahlung ursprünglich ausgeglichen wurde, wird rückgängig gemacht (eine negative Zahlung wird erstellt).
 -   Auf die ursprüngliche Zahlung wird eine Zahlungsstornierung angewendet. Das Feld **Letzter Ausgleichsbeleg** auf der Seite **Debitorenbuchungen** für die ursprüngliche Debitorenzahlung wird mit der Belegnummer der stornierten Buchung aktualisiert.
+
+
 
 
 

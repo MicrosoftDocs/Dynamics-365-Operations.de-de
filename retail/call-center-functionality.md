@@ -1,6 +1,6 @@
 ---
 title: Callcenterfunktionen
-description: "Dieser Artikel wird eine Übersicht der Callcentervertriebsfunktionen in Microsoft Dynamics 365 für Arbeitsgänge festgelegt."
+description: "Dieser Artikel gibt eine Übersicht über die Call Center Verkaufsfunktionalität in Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="call-center-functionality"></a>Callcenterfunktionen
 
-Dieser Artikel wird eine Übersicht der Callcentervertriebsfunktionen in Microsoft Dynamics 365 für Arbeitsgänge festgelegt.
+[!include[banner](includes/banner.md)]
+
+
+Dieser Artikel gibt eine Übersicht über die Call Center Verkaufsfunktionalität in Microsoft Dynamics 365 for Operations.
 
 Einzelhandel und Handel in Microsoft Dynamics AX unterstützt Callcenter als Typ "Einzelhandelskanal". In einem Callcenter nehmen Arbeitskräfte Aufträge von Debitoren per Telefon entgegen und erstellen Aufträge. Callcenterfunktionen umfassen Funktionen, die vorgesehen sind, um es zu vereinfachen, Telephonaufträge anzunehmen und Kundenservice während des Auftragserfüllungsprozesses zu behandeln. So können Callcenterarbeitskräfte Zahlungsinformationen direkt in den Auftrag eingeben und können eine detaillierte Übersicht von Belastungen und der Zahlungen anzeigen, bevor sie den Auftrag versenden. Arbeitskräfte haben auch Optionen zum Steuern der Preisgestaltung und können auf verschiedene Daten zu Debitoren, Produkten und Preisen von der **Auftrag**-Seite zugreifen. Callcenter verfügen zudem über Funktionen für die Verfolgung der Debitorenhistorie sowie und des Auftragsstatus. Jedes Callcenter kann eigene Benutzer, Zahlungsmethoden, Preisgruppen, Finanzdimensionen und Lieferarten haben. Sie können diese Optionen konfigurieren, wenn Sie das Callcenter erstellen. Darüber hinaus können Sie die Seite **Callcenter** verwenden, um die folgenden Gruppen von Funktionen zu aktivieren oder zu deaktivieren, die für Callcenter eindeutig sind:
 
@@ -44,6 +47,8 @@ Wenn Sie diese Funktionen in den Callcentereinstellungen aktiviert haben, sind s
 -   Verkaufssachbearbeiter können die Coupons eines Einzelhändlers dem Auftrag hinzufügen.
 -   Verkaufssachbearbeiter können Anschlussprogramme verkaufen.
 -   Aufträge können manuell oder automatisch gesperrt werden, um anzugeben, dass weitere Untersuchungen erforderlich sind, bevor der Auftrag bearbeitet werden kann.
+
+
 
 
 

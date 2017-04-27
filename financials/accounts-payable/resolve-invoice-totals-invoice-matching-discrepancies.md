@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a>Beheben von Abweichungen beim Abgleich von Rechnungssummen
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Ein Typ der Rechnungsabgleichüberprüfung ist der Rechnungssummenabgleich. Um anzugeben, dass das System einen Rechnungssummenabgleich ausführen soll, legen Sie auf der Seite **Kreditorenkontenparameter** auf der Registerkarte **Rechnungsprüfung** die **Rechnungssummen abgleichen**-Option auf **Ja** fest. 
@@ -39,6 +42,8 @@ Sollten Sie nach Erkennung der Abweichung der Meinung sein, die Abweichung sei a
 -   Akzeptieren der Preisabweichung und Buchen der Rechnung mit den Abgleichsabweichungen Ihr System kann auch so eingerichtet werden, dass eine Genehmigung vor dem Buchen erforderlich ist, wenn es Abgleichsabweichungen gibt. In diesem Fall müssen Sie die Abgleichsabweichung genehmigen und können einen Genehmigungskommentar optional eingeben. Sie können dann die Buchung der Rechnung auswählen.
 -   Ändern des Rechnungsbetrags auf den erwarteten Betrag und Buchen der Rechnung
 -   Anfordern einer Gutschrift über den vollen Betrag sowie einer neuen korrigierten Rechnung des Kreditors
+
+
 
 
 

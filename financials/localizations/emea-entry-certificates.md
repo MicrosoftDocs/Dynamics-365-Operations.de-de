@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-entry-certificates"></a>EU-Gelangensbestätigungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu Gelangensbestätigungen der Europäischen Union (EU).
 
 Sie können die folgenden Aufgaben für eine EU-Gelangensbestätigung ausführen:
@@ -76,7 +79,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 </table>
 
 ## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>Erstellen, Erfassen und Hochladen einer EU-Gelangensbestätigung
-Sie können eine EU-Gelangensbestätigung automatisch oder manuell erstellen. Eine EU-Eintragsbescheinigung wird automatisch erstellt und gedruckt, wenn Sie einen Lieferschein buchen oder einen Debitor stellen, indem die Lieferscheinbuchung ** ** oder die Seite Buchungsrechnung ** ** Seite. Um eine EU-Eintragsbescheinigung für eine Debitorenrechnung erstellen manuell oder erneut drucken möchten, verwenden Sie die ** Rechnungserfassung ** Seite. Darüber hinaus können Sie mithilfe der Seite **Gelangensbestätigungsjournal** Details zu einer EU-Gelangensbestätigung eingeben, die von einem Dritten ausgestellt wurde.
+Sie können eine EU-Gelangensbestätigung automatisch oder manuell erstellen. Eine EU-Eingangssbestätigung wird automatisch erstellt und gedruckt, wenn Sie einen Lieferschein oder eine Rechnung für einen Debitor über die Seite **Lieferschein buchen** oder **Rechnung buchen**. Um eine EU-Eingangsbestätigung für eine Kundenrechnung manuell zu erstellen oder neu zu drucken, verwenden Sie die Seite**Rechnungserfassung**-. Darüber hinaus können Sie mithilfe der Seite **Gelangensbestätigungsjournal** Details zu einer EU-Gelangensbestätigung eingeben, die von einem Dritten ausgestellt wurde.
 
 ### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>Eine EU-Gelangensbestätigung automatisch oder manuell erstellen
 
@@ -121,6 +124,8 @@ Wenn Sie keinen Zugriff auf die Seiten für die Durchführung dieser Aufgabe hab
 </tr>
 </tbody>
 </table>
+
+
 
 
 

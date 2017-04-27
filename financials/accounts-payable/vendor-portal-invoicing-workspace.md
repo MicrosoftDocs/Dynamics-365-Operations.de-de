@@ -43,11 +43,11 @@ Die Kacheln **Zusammenfassung** bieten einen Überblick über die Rechnungen fü
 Durch Klicken auf eine Kachel öffnet sich eine gefilterte Ansicht der Seite **Rechnungsliste**.
 ### <a name="tabular-lists"></a>Tabellarische Listen
 
-Im Abschnitt **Tabellarische Listen **wird der Status der Rechnungsstellung auf ähnliche Weise aufgeteilt, wie die Zusammenfassung der Kacheln: Entwurfs- und übermittelte nicht genehmigte Listen. Im Entwurfstatus kann eine Rechnung an einen Workflow gesendet oder gelöscht werden. Die letzten tabellarische Liste ist eine Möglichkeit, Rechnungen zu suchen. Sie können wie die Suche filtern, schnellere Suchen zuzulassen.
+Im Abschnitt **Tabellarische Listen **wird der Status der Rechnungsstellung auf ähnliche Weise aufgeteilt, wie die Zusammenfassung der Kacheln: Entwurfs- und übermittelte nicht genehmigte Listen. Im Entwurfstatus kann eine Rechnung an einen Workflow gesendet oder gelöscht werden. Die letzte tabellarische Liste ist eine Möglichkeit, Rechnungen zu suchen. Sie können Ihre Suche filtern, um schnellere Suchen zuzulassen.
 Listenseite "Alle Kreditorenrechnungen"
 -----------------------------
 
-Sie können alle gebuchten und nicht gebuchten Kreditorenrechnungen auf der Kreditorenzusammenarbeitrechnungen ** ** Listenseite angezeigt. Sie können mit dieser Listenseite verwenden, um den Zahlungsstatus der Rechnungen anzuzeigen. Der Zahlungsstatus enthält " Nicht gebuicht, unbezahlt, teilweise bezahlt und vollständig bezahlt.
+Sie können alle gebuchten und nicht gebuchten Kreditorenrechnungen auf der Listenseite **Kreditor-Kooperationsrechnungen** anzeigen. Sie können mit dieser Listenseite den Zahlungsstatus der Rechnungen anzuzeigen. Der Zahlungsstatus enthält " Nicht gebuicht, unbezahlt, teilweise bezahlt und vollständig bezahlt.
 Eine neue Rechnung aus einer Bestellung erstellen
 --------------------------------------------
 
@@ -55,6 +55,6 @@ Sie können eine neue Kreditorenrechnung erstellen, indem Sie die Aktivität **N
 
 
 
-Weitere Informationen finden Sie zusammenarbeitend [mit Kreditoren mithilfe des Kreditorenportals] (/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Weitere Informationen finden Sie unter [Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
 
 

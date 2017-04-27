@@ -1,6 +1,6 @@
 ---
 title: "Systemdefinierte und benutzerdefinierte Tabelleneinschränkungen"
-description: "In diesem Artikel wird beschrieben die beiden Arten von Tabelleneinschränkung für Komponenten in einem benutzerdefinierten und systemdefinierten Produktkonfigurationsmodell -. Tabelleneinschränkungen stellen Matrizes der zulässigen Attributkombinationen dar, in denen jede Zeile einen Satz möglicher Attributwerte definiert."
+description: "Dieser Artikel beschreibt die zwei Arten von Tabelleneinschränkungen für Komponenten in einem Produktkonfigurationsmodell: benutzerdefiniert und systemdefiniert. Tabelleneinschränkungen stellen Matrizes der zulässigen Attributkombinationen dar, in denen jede Zeile einen Satz möglicher Attributwerte definiert."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Systemdefinierte und benutzerdefinierte Tabelleneinschränkungen
 
-In diesem Artikel wird beschrieben die beiden Arten von Tabelleneinschränkung für Komponenten in einem benutzerdefinierten und systemdefinierten Produktkonfigurationsmodell -. Tabelleneinschränkungen stellen Matrizes der zulässigen Attributkombinationen dar, in denen jede Zeile einen Satz möglicher Attributwerte definiert.
+[!include[banner](../includes/banner.md)]
+
+
+Dieser Artikel beschreibt die zwei Arten von Tabelleneinschränkungen für Komponenten in einem Produktkonfigurationsmodell: benutzerdefiniert und systemdefiniert. Tabelleneinschränkungen stellen Matrizes der zulässigen Attributkombinationen dar, in denen jede Zeile einen Satz möglicher Attributwerte definiert.
 
 Tabelleneinschränkungen stellen Matrizen aus Kombinationen von Attribute dar, die für Komponenten in einem Produktkonfigurationsmodell zulässig sind. Jede Zeile in der Tabelle definiert einen Satz möglicher Attributwerte. Sie können zwei Typen von Einschränkungen in einem Produktmodell deklarieren:
 
@@ -57,11 +60,13 @@ Eine systemdefinierte Tabelleneinschränkung schafft eine dynamische Verknüpfun
 
 Wenn Sie eine systemdefinierte Tabelleneinschränkung erstellen, wählen Sie eine Tabelle aus, definieren die optional zu verwendende Abfrage, und ordnen Attributtypen den Feldern in der ausgewählten Tabelle zu. Die Typen der Felder müssen mit den Typen der Attributtypen übereinstimmen.  
 
-Bevor eine Tabelleneinschränkung für ein Produktkonfigurationsmodell wirksam werden kann, muss die Tabelleneinschränkung in einer Einschränkung für eine der Komponenten des Modells einbezogen werden. Das Verfahren ist, eine neue Einschränkung zu erstellen, wählt den Tabelleneinschränkungstyp aus und wählt dann die Tabelleneinschränkungsdefinition aus, der verwendet werden soll. Schließlich müssen alle Felder in der Tabelleneinschränkung zu den Attributen im Produktkonfigurationsmodell zugeordnet werden.
+Bevor sich eine Tabelleneinschränkung auf ein Produktkonfigurationsmodell auswirken kann, muss die Tabelleneinschränkung in einer Einschränkung für eine der Komponenten des Modells einbezogen werden. Dazu muss eine neue Einschränkung erstellt und dann erst der Tabelleneinschränkungstyp und anschließend die Tabelleneinschränkungsdefinition gewählt werden, die verwendet werden soll. Schließlich müssen alle Felder in der Tabelleneinschränkung zu den Attributen im Produktkonfigurationsmodell zugeordnet werden.
 
 <a name="see-also"></a>Siehe auch
 --------
 
 [Schlüsselkonzepte bei Produktkonfigurationsmodellen](product-configuration-models.md)
+
+
 
 

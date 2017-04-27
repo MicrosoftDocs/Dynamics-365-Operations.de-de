@@ -73,9 +73,9 @@ Der Unterschied des Preises je Einheit, 2,00, wird zum Konto "Preisdifferenz fü
 ## <a name="moving-average-product-and-inventory-adjustment"></a>Produkt und Lagerregulierung des flexiblen Durchschnitts
 Wenn Sie die flexiblen Durchschnittskosten eines Produkts anpassen müssen, werden Lagerregulierungen ab dem aktuellen Datum zulässig. Sie können eine Lagerregulierung nicht zurückdatieren, um die flexiblen Durchschnittskosten eines Produkts zu korrigieren. Sie können die Kosten nicht durch die folgenden Buchungen fließen lassen. In diesem Beispiel werden die flexiblen Durchschnittskosten für ein Produkt angepasst.
 1.  Wählen Sie das Produkt aus, für das Sie die gleitenden Durchschnittskosten anpassen möchten.
-    | **Note**                                                                                    |
+    | **Hinweis**                                                                                    |
     |---------------------------------------------------------------------------------------------|
-    | ** Die Neubewertung für das flexible Durchschnitt ** Seite prüft den Bestand für ein Produkt, der verfügbar ist. |
+    | Auf der Seite **Neubewertung für gleitenden Durchschnitt** wird der für ein Produkt verfügbare Lagerbestand überprüft. |
 
     Das Produkt, das aktiviert ist, hat eine gebuchte Menge von 1, einen gebuchten Wert von 12,00, gebuchte Einheitenkosten von 12,00 und Einheitenkosten von 12,00.
 2.  Aktualisieren Sie das Feld **Einheitenkosten** auf 16,00. Das System berechnet die verbleibenden Felder.
@@ -88,7 +88,7 @@ Wenn Sie die flexiblen Durchschnittskosten eines Produkts anpassen müssen, werd
 Auf der Seite **Ausgleiche für Beleg** können Sie eine Regulierung von 4,00 sehen, die zum Konto "Kostenneubewertung für gleitenden Durchschnitt" gebucht wird.
 
 ## <a name="moving-average-with-production"></a>Flexibler Durchschnitt mit Produktion
-Der flexible Durchschnitt unterstützt produzierte Artikel. Planen Sie, flexiblen Durchschnitt in einer Produktionsumgebung zu verwenden, sollte der ** Preis der Verwendungs vorkalkulierten Kosten ** Schieberegler in der selcted ** Produktionssteuerungsparameter ** Seite. Dies bedeutet, dass der Einstandspreis, der bei der Vorkalkulation berechnet wird, anstelle des tatsächlichen Herstellkostenkalkulationspreises verwendet wird.
+Der flexible Durchschnitt unterstützt produzierte Artikel. Wenn Sie planen, den gleitenden Durchschnitt in einer Produktionsumgebung zu verwenden, sollte der Schieberegler **Vorkalkulierten Einstandspreis** verwenden auf der Seite **Produktionssteuerungsparameter** ausgewählt werden. Dies bedeutet, dass der Einstandspreis, der bei der Vorkalkulation berechnet wird, anstelle des tatsächlichen Herstellkostenkalkulationspreises verwendet wird.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Flexibler Durchschnitt mit einer rückdatierten Transaktion
 Rückdatierten Transaktionen werden die aktuellen flexiblen Durchschnittskosten zugeordnet, und die physische Menge des Produkts wird aktualisiert, die flexiblen Durchschnittskosten des Produkts sind jedoch nicht betroffen. In diesem Beispiel für flexiblen Durchschnitt wird eine rückdatierte Transaktion für ein Produkt flexiblen Durchschnitts gebucht.

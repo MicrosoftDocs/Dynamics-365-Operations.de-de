@@ -1,5 +1,5 @@
 ---
-title: "Anfordern Sie für Angebote (RFQs) an"
+title: Angebotsanforderungen (Request for quotations, RFQs)
 description: "Dieser Artikel bietet einen Überblick über Angebotsanforderungen (RFQs/requests for quotation), die Organisationen ausstellen, um vor einem Einkauf von mehreren Kreditoren Angebote für Artikel oder Dienstleistungen zwecks Vergleich anzufordern. Mit einer Angebotsanforderung werden Kreditoren gebeten, Preise und Lieferzeiten für die angegebenen Produktmengen bereitzustellen. Sie können Kreditoren auch bitten, anzugeben, ob zusätzliche Gebühren, etwa Lieferkosten, anfallen, oder ob der Kreditor Rabatte für große Bestellungen oder bei frühzeitiger Bezahlung der Rechnung anbietet."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Anfordern Sie für Angebote (RFQs) an
+# <a name="request-for-quotations-rfqs"></a>Angebotsanforderungen (Request for quotations, RFQs)
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel bietet einen Überblick über Angebotsanforderungen (RFQs/requests for quotation), die Organisationen ausstellen, um vor einem Einkauf von mehreren Kreditoren Angebote für Artikel oder Dienstleistungen zwecks Vergleich anzufordern. Mit einer Angebotsanforderung werden Kreditoren gebeten, Preise und Lieferzeiten für die angegebenen Produktmengen bereitzustellen. Sie können Kreditoren auch bitten, anzugeben, ob zusätzliche Gebühren, etwa Lieferkosten, anfallen, oder ob der Kreditor Rabatte für große Bestellungen oder bei frühzeitiger Bezahlung der Rechnung anbietet.
 
@@ -37,9 +40,9 @@ Der Angebotsanforderungsprozess umfasst die folgenden Aufgaben:
 
 Die folgende Abbildung bietet eine Übersicht über den Angebotsanforderungsprozess.  
 
-[](![Angebotsanforderungsprozess . /media/rfq-process-458x1024.jpg)]". /media/rfq-process.jpg)  
+[![Angebotsanforderungsprozess](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
 
-Sie können eine Angebotsanforderung aus geplanten Aufträgen, einer Bestellanforderung oder aus einem manuellen Eintrag erstellen. Die Angebotsanforderung, die Sie erstellen, wird als Angebotsanforderungsanfrage bezeichnet und dies ist das Basisdokument, das Sie verwenden, um eine Angebotsanforderung an jedem Kreditor auszustellen. Nachdem die Angebotsanforderungsanfrage vorbereiten und Kreditoren hinzufügen, wird auf ** Übermitteln ** im Angebotsanforderungsanfrage und für jeden Kreditor eine Angebotsanforderungserfassung erstellt, für den die Angebotsanforderung zu schickten. Druckverwaltungseinstellungen können Sie die für die sendensaktivität entweder von Scheckbegleitschreiben ein Bericht für jeden Kreditor in einem Archiv konfigurieren oder einen Bericht an die E-Mail-Adresse jedes Kreditors gesendet. Außerdem kann die Angebotsanforderungserfassung für jeden Kreditor verwendet werden, um einen Bericht zu generieren, den Sie später an einen Kreditor senden oder erneut senden können. Sie können die Aktion "Senden" auch so konfigurieren, dass ein Antwortbogen generiert wird, den der Kreditor ausfüllen kann.  
+Sie können eine Angebotsanforderung aus geplanten Aufträgen, einer Bestellanforderung oder aus einem manuellen Eintrag erstellen. Die Angebotsanforderung, die Sie erstellen, wird als Angebotsanforderungsanfrage bezeichnet und dies ist das Basisdokument, das Sie verwenden, um eine Angebotsanforderung an jedem Kreditor auszustellen. Nachdem die Angebotsanforderungsanfrage vorbereiten und Kreditoren hinzufügen, wird auf **Übermitteln** im Angebotsanforderungsanfrage und für jeden Kreditor eine Angebotsanforderungserfassung erstellt, für den die Angebotsanforderung zu schickten. Druckverwaltungseinstellungen können Sie die für die Sendenaktivität entweder von Scheckbegleitschreiben ein Bericht für jeden Kreditor in einem Archiv konfigurieren oder einen Bericht an die E-Mail-Adresse jedes Kreditors gesendet. Außerdem kann die Angebotsanforderungserfassung für jeden Kreditor verwendet werden, um einen Bericht zu generieren, den Sie später an einen Kreditor senden oder erneut senden können. Sie können die Aktion "Senden" auch so konfigurieren, dass ein Antwortbogen generiert wird, den der Kreditor ausfüllen kann.  
 
 Wenn Sie eine Angebotsanforderung ergänzen müssen, nachdem Sie diese senden, können Sie die Angebotsanforderung erneut an Kreditoren senden, wenn Sie fertig sind.  
 
@@ -49,18 +52,18 @@ Wenn eine zweite Iteration einer Antwort für einen bestimmten Kreditor erforder
 
 Wenn Sie Bewertungskriterien zu Ihrer Angebotsanforderungsanfrage hinzugefügt haben, hat die Antwort auf Angebotsanforderung einen Bewertungsbereich, in dem Sie die Punktzahlen eingeben können. Die Gesamtpunktzahlen werden angezeigt, wenn Sie die Antworten auf der Seite **Antworten vergleichen **vergleichen, wo Sie auch andere Antwortdaten vergleichen können, wie beispielsweise den Positionspreis, das Lieferdatum und den Gesamtpreis.  
 
-Nachdem Sie sich zu einem Angebot oder Teilangeboten entscheiden, können Sie diese annehmen und die restlichen ablehnen. Annahmenerfassungen, Ablehnungserfassungen und entsprechende Berichte werden generiert. Diese werden entsprechend den Druckverwaltungseinstellungen archiviert, gedruckt und gesendet. Wenn Sie ein Angebot oder Besonderepositionen in einem Angebot akzeptiert, entweder einen Kaufvertrag oder Bestellung generiert wird, oder eine Bestellanforderung wird aktualisiert, je nach Angebotsanforderungsbestelltyp. Sie können eine Handelsvereinbarung erstellen, die Sie später für jede der Antworten verwenden können, unabhängig davon, ob Sie diese akzeptiert oder zurückgewiesen haben.  
+Nachdem Sie sich zu einem Angebot oder Teilangeboten entscheiden, können Sie diese annehmen und die restlichen ablehnen. Annahmenerfassungen, Ablehnungserfassungen und entsprechende Berichte werden generiert. Diese werden gemäß Ihren Druckverwaltungseinstellungen gedruckt, archiviert und übermittelt. Wenn Sie ein Angebot oder bestimmte Positionen in einem Angebot akzeptieren, wird entweder ein Kaufvertrag oder eine Bestellung generiert, oder eine Bestellanforderung wird aktualisiert, je nach Bestelltyp der Angebotsanforderung. Sie können eine Handelsvereinbarung erstellen, die Sie später für jede der Antworten verwenden können, unabhängig davon, ob Sie diese akzeptiert oder zurückgewiesen haben.  
 
 Der Status einer Angebotsanforderung wird im Angebotsanforderungskopf angezeigt und hängt vom Status der Angebotsanforderungspositionen ab. Der Status gibt an, wie weit die Verarbeitung der Angebotsanforderung fortgeschritten ist. Jede Angebotsanforderung besitzt zwei Werte für den Status: den niedrigsten und denhöchsten. Der niedrigste Status steht für die am wenigsten fortgeschrittene Phase und der höchste Status für die am weitesten fortgeschrittene Phase einer Position in der Angebotsanforderung. Wenn beispielsweise die am wenigsten fortgeschrittene Phase in einer Angebotsanforderung für eine Position besteht, die erstellt wurde, ist der niedrigste Status für die Angebotsanforderung **Erstellt**. Wenn die am weitesten fortgeschrittene Phase in der Angebotsanforderung für eine Position besteht, die an Kreditoren gesendet wurde, ist der höchste Status für die Angebotsanforderung **Versendet**. Die Statusangaben werden bei der Verarbeitung einer Angebotsanforderung automatisch aktualisiert.  
 
 Sie können den niedrigsten und höchsten Status eines Angebotsanforderungskopfs auf der Seite **Alle Angebotsanforderungen** anzeigen. Sie können den niedrigsten und höchsten Status einer Angebotsanforderungsposition auf der Registerkarte **Positionen** auf der Seite **Angebotsanforderungen** anzeigen.  
 
-Das hier die Reihenfolge der Statusangaben bei der Verarbeitung von Angebotsanforderungen:
+Hier ist die Reihenfolge der Statusangaben bei der Verarbeitung einer Angebotsanforderung:
 
 1.  **Erstellt**
-2.  **Sent**
-3.  **Received**
-4.  ** Angenommen **/** storniert **/** abgelehnt **
+2.  **Versendet**
+3.  **Eingegangen**
+4.  **Angenommen**/**Storniert**/**Abgelehnt**
 
 Die Statusangaben werden detaillierter in späteren Abschnitten dieses Artikels beschrieben.
 
@@ -72,7 +75,7 @@ Bevor Sie eine Angebotsanforderungsanfrage erstellen können, müssen Sie Angebo
 -   Lieferinformationen und Zahlungsbedingungen.
 -   Felder, die in der Antwort auf Angebotsanforderung einbezogen werden sollen
 
-Sie können diese Werte für eine bestimmte Angebotsanforderungsanfrage überschreiben. Sie sollten auch den Ergänzungsprozess konfigurieren. Als Teil dieser Konfiguration können Sie Feldsperre aktivieren. Wenn Feldsperre aktiviert ist, muss ein Beschaffungsspezialist, der eine Angebotsanforderung ergänzen möchte, zuerst auf **Erstellen** im Abschnitt **Ergänzung** auf der Registerkarte **Angebot** klicken. Nachdem die Angebotsanforderung mit der Ergänzung aktualisiert wurde, muss der Beschaffungsspezialist den Prozess abschließen, indem er klickt ** stellen Sie abschließen **. ** ** Die Fertigstellensaktivität generiert eine E-Mail-Nachricht, die Kreditoren zur Angebotsanforderung ausgefüllt benachrichtigt. Sie wählen die Vorlage für die E-Mail-Benachrichtigung aus, die an Kreditoren auf der Seite **Beschaffungsparameter** gesendet wird. Wenn eine Vorlage erstellt wird, kann sie die folgenden Ersatztoken enthalten:
+Sie können diese Werte für eine bestimmte Angebotsanforderungsanfrage überschreiben. Sie sollten auch den Ergänzungsprozess konfigurieren. Als Teil dieser Konfiguration können Sie Feldsperre aktivieren. Wenn Feldsperre aktiviert ist, muss ein Beschaffungsspezialist, der eine Angebotsanforderung ergänzen möchte, zuerst auf **Erstellen** im Abschnitt **Ergänzung** auf der Registerkarte **Angebot** klicken. Nachdem die Angebotsanforderung mit der Ergänzung aktualisiert wurde, muss der Beschaffungsspezialist den Prozess abschließen, indem er auf **Abschließen** klickt. Die Aktion "Abschließen" generiert eine E-Mail-Nachricht, die die Kreditoren über die ergänzte Angebotsanforderung benachrichtigt. Sie wählen die Vorlage für die E-Mail-Benachrichtigung aus, die an Kreditoren auf der Seite **Beschaffungsparameter** gesendet wird. Wenn eine Vorlage erstellt wird, kann sie die folgenden Ersatztoken enthalten:
 
 -   %Grund für Rücksendung des Angebots%
 -   %Grund für den Zusatz%
@@ -124,7 +127,7 @@ In der folgenden Tabelle wird angezeigt, wie sich der Angebotsanforderungsstatus
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Action**                         | **Lowest RFQ header status** | **Highest RFQ header status**                   | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Aktion**                         | **Niedrigster Status des Angebotsanforderungskopfes ** | **Höchster Status des Angebotsanforderungskopfes **                   | **Niedrigster Status einer Angebotsanforderungsposition ** | **Höchster Status einer Angebotsanforderungsposition ** |
 | Erstellen Sie den Angebotsanforderungskopf und die -position.    | Erstellt                      | Erstellt                                         | Erstellt                    | Erstellt                     |
 | Senden Sie die Angebotsanforderung an einen bestimmten Kreditor. | Versendet                         | Versendet                                            | Versendet                       | Versendet                        |
 | Einen weiteren Kreditor hinzufügen                | Erstellt                      | Versendet (Die Angebotsanforderung ist nur einem Kreditor zugesendet worden). | Erstellt                    | Versendet                        |
@@ -154,7 +157,7 @@ In der folgenden Tabelle wird angezeigt, wie der Angebotsanforderungsstatus sich
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**                                     | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Aktion**                                     | **Niedrigster Angebotsstatus ** | **Höchster Angebotsstatus ** | **Niedrigster Status des Angebotsanforderungskopfes ** | **Höchster Status des Angebotsanforderungskopfes ** | **Niedrigster Status einer Angebotsanforderungsposition ** | **Höchster Status einer Angebotsanforderungsposition ** |
 | Erfassen Sie das ein Angebot eines Kreditors, und speichern Sie es.        | Versendet                  | Empfangen               | Versendet                         | Empfangen                      | Versendet                       | Empfangen                    |
 | Erfassen Sie das ein Angebot des zweiten Kreditors, und speichern Sie es. | Empfangen              | Empfangen               | Empfangen                     | Empfangen                      | Empfangen                   | Empfangen                    |
 
@@ -183,9 +186,11 @@ In der folgenden Tabelle wird angezeigt, wie sich der Angebotsanforderungs-Statu
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Aktivität**              | **Niedrigster Angebotsstatus ** | **Höchster Angebotsstatus ** | **Niedrigster Status des Angebotsanforderungskopfes ** | **Höchster Status des Angebotsanforderungskopfes ** | **Niedrigster Status einer Angebotsanforderungsposition ** | **Höchster Status einer Angebotsanforderungsposition ** |
 | Nehmen Sie eines derAngebote an. | Empfangen              | Akzeptiert               | Empfangen                     | Akzeptiert                      | Empfangen                   | Akzeptiert                    |
 | Lehnen Sie die anderen Angebote ab.  | Abgelehnt              | Akzeptiert               | Abgelehnt                     | Akzeptiert                      | Abgelehnt                   | Akzeptiert                    |
+
+
 
 
 

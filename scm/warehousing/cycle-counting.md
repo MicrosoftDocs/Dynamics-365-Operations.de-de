@@ -102,7 +102,7 @@ Es gibt zwei Möglichkeiten, um die Serienerstellung der Zykluszählungsarbeit z
 
 ### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Zykluszählungsarbeit auf der Basis der Schwellenwertparameter für Artikel erstellen
 
-Die Zykluszählungsarbeit kann erstellt werden, wenn die Anzahl der Artikel unter einem bestimmten Schwellenwert an einem Lagerplatz liegt. Beispielsweise gibt es 60 Artikel an einem Ort, der einen Zykluszählungsschwellenwert von 40 an. Während einer Auftragsbuchung werden 25 Artikel vom Lagerplatz entnommen und Fortsetzen sich bei den Staginglagerplatz. Da die Menge des neuen Artikels mit 35 geringer ist als die Schwellenmenge, wird automatisch Zykluszählungsarbeit für den Speicherort erstellt.
+Die Zykluszählungsarbeit kann erstellt werden, wenn die Anzahl der Artikel unter einem bestimmten Schwellenwert an einem Lagerplatz liegt. Beispielsweise gibt es 60 Artikel an einem Ort, der einen Zykluszählungsschwellenwert von 40 hat. Während einer Auftragsbuchung werden 25 Artikel vom Lagerplatz entnommen und in den Staginglagerplatz gelegt. Da die Menge des neuen Artikels mit 35 geringer ist als die Schwellenmenge, wird automatisch Zykluszählungsarbeit für den Speicherort erstellt.
 
 ### <a name="schedule-cycle-counting-work"></a>Zykluszählungsarbeit planen
 
@@ -129,7 +129,7 @@ Das folgende Beispiel zeigt, wie Sie Stichprobenzykluszählungen ausführen kön
 ## <a name="resolve-cycle-counting-differences"></a>Zykluszählungsdifferenzen beheben
 Eine Zykluszählungsdifferenz tritt in den folgenden Szenarien auf, wenn die Option **Ist ein Zykluszählungssupervisor** für eine Arbeitsbenutzerkennung auf **Nein** gesetzt ist:
 
--   Der im Zyklus gezählte Wert befindet sich nicht innerhalb der Abweichungsgrenzen, die in den Feldern **Prozentsatzobergrenze** oder **Mengenobergrenze** auf der Seite **Arbeitsbenutzer** angegeben werden. Beispielsweise ist die Menge des verfügbaren Lagerbestands an einem Ort 50, und das für den Arbeitsbenutzer Abweichungsgrenzen ist 10. Wenn der Arbeitsbenutzer einen Wert eingeben, der nicht zwischen 40 und 60 beträgt, tritt eine Differenz auf.
+-   Der im Zyklus gezählte Wert befindet sich nicht innerhalb der Abweichungsgrenzen, die in den Feldern **Prozentsatzobergrenze** oder **Mengenobergrenze** auf der Seite **Arbeitsbenutzer** angegeben werden. Beispielsweise ist die Menge des verfügbaren Lagerbestands an einem Ort 50, und die Abweichungsgrenze für den Arbeitsbenutzer ist 10. Wenn der Arbeitsbenutzer einen Wert eingeben, der nicht zwischen 40 und 60 liegt, tritt eine Differenz auf.
 -   Der gezählte Wert unterscheidet sich von der Menge des verfügbaren Bestands und es gibt keine festen Abweichungsgrenzen.
 
 Sie können Abweichungen in den gezählten Werten anpassen und dann den gezählten Wert auf der Seite **Ausstehende Prüfung der Zykluszählung** akzeptieren. Sie können die geänderte Anzahl der Artikelmenge auf der Seite **Verfügbarer Lagerbestand nach Lagerplatz** überprüfen. Der gezählte Wert wird abgelehnt, wenn die Differenz nicht genehmigt werden kann.

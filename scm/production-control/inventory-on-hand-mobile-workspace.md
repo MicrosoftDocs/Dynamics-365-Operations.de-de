@@ -1,6 +1,6 @@
 ---
-title: "Mobiler Arbeitsbereich des Lagerbestandes für Microsoft Dynamics 365 für Arbeitsgangs-App"
-description: "Die Arbeitsbereichhilfen mobilen des Lagerbestandes Sie erhalten Einblicke mobile in zur reservierten und zur verfügbaren Bestand jederzeit und überall."
+title: "Mobilen Arbeitsbereich für die Lagerbestand für die Microsoft Dynamics 365 for Operations-App"
+description: "Die mobile Arbeitbereich für Lagerbestand bietet mobile Einblicke in reservierte und zur verfügbaren Bestand jederzeit und überall."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,72 +25,72 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobiler Arbeitsbereich des Lagerbestandes für Microsoft Dynamics 365 für Arbeitsgangs-App
+# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobilen Arbeitsbereich für die Lagerbestand für die Microsoft Dynamics 365 for Operations-App
 
-Die Arbeitsbereichhilfen mobilen des Lagerbestandes Sie erhalten Einblicke mobile in zur reservierten und zur verfügbaren Bestand jederzeit und überall. 
+Die mobile Arbeitbereich für Lagerbestand bietet mobile Einblicke in reservierte und zur verfügbaren Bestand jederzeit und überall. 
 
 <a name="prerequisites"></a>Voraussetzungen
 -------------
 
 | Voraussetzung                                                         | Beschreibung                                                                                                                                        |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lesen Sie zum Microsoft Dynamics 365 für Arbeitsgangsmobileplattform | [Dynamics 365 für mobile Plattform der Arbeitsgänge (/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)]                                   |
-| Dynamics 365 für Arbeitsgänge                                          | Eine Umgebung, zur Microsoft Dynamics 365 für Arbeitsgangsversion 1611 und Microsoft Dynamics for Arbeitsgangsplattformaktualisierung 3 (November 2016) |
-| Hotfix KB 3215650                                                    | Installieren des Hotfix Arbeitsbereiche, um die zu aktivieren, die im Microsoft Dynamics 365 für Arbeitsgänge bereitgestellt werden.                                       |
-| Mobiles Gerät, das das Dynamics 365 für die Einstellungen Arbeitsgangs-App hat | Lädt die Dynamics 365 für Arbeitsgangs-App von Ihrem App-Shop mobilen herunter.                                                                           |
+| Lesen Sie mehr über die Microsoft Dynamics 365 für operations mobile Plattform | [Mobile Plattform für Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                   |
+| Dynamics 365 for Operations                                          | Eine Umgebung, die Microsoft Dynamics 365 for Operations Version 1611 und Microsoft Dynamics for Operations Platform Update 3 (November 2016) nutzen. |
+| Hotfix KB 3215650                                                    | Installieren Sie den Hotfix, um die Arbeitsbereiche zu aktivieren, die in Microsoft Dynamics 365 for Operations bereitgestellt werden.                                       |
+| Mobiles Gerät, auf dem die Dynamics 365 for Operations-App installiert ist | Laden Sie die Dynamics 365 for Operations-App aus dem mobilen App Store herunter.                                                                           |
 
 ## <a name="introduction"></a>Einführung
-Normalerweise haben Unternehmen mehrere Lieferungen und mehrere Anzeigen des Lagers jeden Tag. Diese Bewegungen ändern ständig den Status des verfügbaren Lagerbestands. Der Arbeitsbereich mobile des Lagerbestandes können Sie den Status des unternehmensübergreifenden verfügbaren Lagerbestand finden, um die neuesten Einblicke in Bestandsdaten im mobilen Gerät Auswahl erhalten können. Unabhängig davon, ob Sie am Lagerort, Einkaufs-, in Verkaufs-, bei der Herstellung oder bei der Verwaltung arbeiten oder haben Sie andere Rollen, können Sie die Daten des verfügbaren Lagerbestands jederzeit und überall zugreifen. Der Arbeitsbereich mobile enthält eine einzige Ansicht des Lagerstatus zur Einrichtung und schließt der verfügbare Lagerbestand oberhalb Einrichtungen, aktuellen Formulars und Reservierungen vorbehaltlosem verfügbarem Lagerbestand angezeigt. Sie können Artikelnummern auch eingeben, um verfügbaren Lagebestand abzufragen und führen eine gefilterte Dient zur Suche nach verfügbaren Produkte oder Varianten aus. Speziell enthält der Arbeitsbereich mobile diese Funktionen:
+Normalerweise haben Unternehmen mehrere Lieferungen und mehrere Anzeigen des Lagers jeden Tag. Diese Bewegungen ändern ständig den Status des verfügbaren Lagerbestands. Der Arbeitsbereich mobile des Lagerbestandes können Sie den Status des unternehmensübergreifenden verfügbaren Lagerbestand finden, um die neuesten Einblicke in Bestandsdaten im mobilen Gerät Auswahl erhalten können. Unabhängig davon, ob Sie am Lagerort, Einkaufs-, in Verkaufs-, bei der Herstellung oder bei der Verwaltung arbeiten oder haben Sie andere Rollen, können Sie die Daten des verfügbaren Lagerbestands jederzeit und überall zugreifen. Der Arbeitsbereich mobile enthält eine einzige Ansicht des Lagerstatus zur Einrichtung und schließt der verfügbare Lagerbestand oberhalb Einrichtungen, aktuellen Formulars und Reservierungen vorbehaltlosem verfügbarem Lagerbestand angezeigt. Sie können Artikelnummern auch eingeben, um verfügbaren Lagebestand abzufragen und führen eine gefilterte Dient zur Suche nach verfügbaren Produkte oder Varianten aus. Speziell enthält der mobile Arbeitsbereich diese Funktionen:
 
 -   Sie können Nebenproduktnummer oder -Produktnamen suchen, um Produkte anzuzeigen, um den Status des verfügbaren Lagerbestands für angezeigt.
 -   Für die ausgewählten Produkte können die folgenden Informationen angezeigt werden:
-    -   Verfügbarer Lagerbestand pro Standort
-    -   Verfügbarer Lagerbestand pro Lagerort
-    -   Verfügbarer Lagerbestand pro Standort
-    -   Verfügbarer Lagerbestand pro Charge (Produkte für chargengesteuerte)
-    -   Verfügbarer Lagerbestand pro Bestandsstatus
+    -   Verfügbarer Lagerbestand nach Standort
+    -   Verfügbaren Bestand nach Lagerort
+    -   Verfügbarer Lagerbestand nach Standort
+    -   Verfügbarer Lagerbestand nach Charge (für chargengesteuerte Produkte)
+    -   Verfügbaren Bestand nach Bestandsstatus
 
 <!-- -->
 
--   Produktverfügbarer Lagerbestand wird folgendermaßen angezeigt:
-    -   Durch physischen Bestand (In dieser Ansicht bietet den Gesamtbetrag) dar.
-    -   Durch den physisch reserviert "dieser Ansicht bietet den reservierten Betrag) dar.
-    -   Durch verfügbare physische Menge "dieser Ansicht bietet verfügbare Betrag dar, der keine Reservierungen hat).
+-   Verfügbarer Lagerbestand wird folgendermaßen angezeigt:
+    -   Durch physischen Bestand (Ansicht stellt den Gesamtbetrag dar).
+    -   Durch physischen Reservierungen (Ansicht stellt den reservierten Betrag dar).
+    -   Durch verfügbare physische Menge (Ansicht stellt den verfügbare Betrag dar, der keine Reservierungen hat).
 
 ## <a name="get-started"></a>Erste Schritte
-Klicken Sie auf dem mobiles Gerät anfangen:
+Erste Schritte auf dem mobiles Gerät:
 
-1.  In Ihrem App-Shop mobilen Hochladen der Dateien herunter und Einrichten des Microsoft Dynamics 365 für Arbeitsgangs-App.
-2.  Starten der Zeit-App auf Ihrem Gerät.
+1.  Laden Sie die App im App Store herunter und installieren Sie die Microsoft Dynamics 365 for Operations-App.
+2.  Starten Sie die App auf Ihrem Gerät.
 3.  Geben Sie die URL Dynamics 365 ein.
-4.  Geben Sie das Unternehmen, um in zu signieren. Geben Sie beispielsweise ein USMF ** **.
-5.  Das zum ersten Mal, in dem Sie gerade signieren, werden für Sie den Benutzernamen und das Kennwort für Ihr Microsoft Dynamics 365 für Arbeitsgangskonto aufgefordert. Geben Sie Ihre Anmeldeinformationen ein. Nachdem Sie in signieren, wird im verfügbaren Arbeitsbereiche für Ihr Unternehmen.
+4.  Geben Sie das Unternehmen ein. Geben Sie beispielsweise **USMF** ein.
+5.  Wenn Sie sich zum ersten Mal anwenden, werden Sie nach einem Benutzernamen und einem Kennwort für Ihr Microsoft Dynamics 365 for Operations Konto gefragt. Geben Sie Ihre Anmeldeinformationen ein. Nachdem Sie sich angemeldet haben, sehen Sie verfügbaren Arbeitsbereiche für Ihr Unternehmen.
 
-Um auf Arbeitsbereiche der Zeit-App mobilen anzuzeigen, müssen Sie die gewünschten Arbeitsbereiche dem Dynamics 365 für Arbeitsgangs-App zuerst veröffentlichen.
+Um die Arbeitsbereiche auf der mobilen App zu sehen, müssen Sie zuerst die gewünschten Arbeitsbereiche in Dynamics 365 for Operations-App veröffentlichen.
 
-1.  Start Dynamics 365 für Arbeitsgänge.
-2.  Wechseln ** Systemverwaltung ** &gt; ** Einstellungen ** &gt; ** Systemparameter **.
-3.  Wählen Sie aus ** Verwalten mobile Zeit-App **.
-4.  Wählen Sie den aus, die der Verknüpfung mobilen Plattform zu veröffentlichen.
-5.  Wählen Sie aus ** Veröffentlichen Arbeitsbereich **.
+1.  Starten Sie Dynamics 365 for Operations.
+2.  Gehen Sie zu **ystemadministration**&gt; **Einrichten** &gt; **Systemparameter**.
+3.  Wählen Sie **Mobile App verwalten**.
+4.  Wählen Sie den Arbeitsbereich, um auf der mobilen Plattform zu veröffentlichen.
+5.  Wählen Sie **Arbeitsbereich veröffentlichen**.
 6.  Aktualisieren Sie das Gerät, um die veröffentlichten Arbeitsbereiche anzuzeigen.
 
-## <a name="view-the-onhand-inventory-for-a-product"></a>Zeigt den verfügbaren Bestand für ein Produkt an
-1.  Auf einem mobilen Gerät wählen Sie den Lagerbestand ** ** Arbeitsbereich aus.
-2.  Wählen Sie aus ** überprüfen Sie Bestand für einen Artikel **. Sie wird eine Liste der Produkte, die sich in der Zeit-App für offline Verwendung geladen werden. Standardmäßig sind 50 Artikel geladen, aber Sie können diese Nummer ändern. Weitere Informationen finden Sie im Doppellesehandbuch.
-3.  Wenn der Artikel nicht in der Liste, wählen Sie ** suchen Sie mehr aus ** um eine Suche in Dynamics Online 365 für Vorgänge auszuführen. Suchen Sie Nebenproduktnummer oder wechseln Sie zu einem Suchennebenproduktnamen.
+## <a name="view-the-onhand-inventory-for-a-product"></a>Verfügbarer Lagerbestand für das ausgewählte Produkt anzeigen
+1.  Wählen Sie auf Ihrem mobilen Gerät den Arbeitsbereich **Verfügbarer Bestand**.
+2.  Wählen Sie aus **Überprüfen des verfügbaren Bestand für einen Artikel**. Sie wird eine Liste der Produkte, die sich in der Zeit-App für offline Verwendung geladen werden. Standardmäßig sind 50 Artikel geladen, aber Sie können diese Nummer ändern. Weitere Informationen finden Sie im Handbuch in den Voraussetzungen.
+3.  Wenn der Artikel nicht in der Liste, wählen Sie **Weitere suchen** aus, um eine Suche in Dynamics Online 365 for Operations auszuführen. Suchen Sie Nebenproduktnummer oder wechseln Sie zu einem Suchennebenproduktnamen.
 4.  Wählen Sie ein Produkt aus. Wenn der Artikel ein Bild hat das Bild, wird angezeigt.
 5.  Wählen Sie eine der folgenden Optionen aus, um den Status für verfügbaren Lagerbestand anzeigen aus:
-    -   Dient zum Anzeigen verfügbarer Bestand pro Standort an
-    -   Dient zum Anzeigen verfügbarer Bestand pro Lagerort angezeigt
-    -   Dient zum Anzeigen verfügbarer Bestand pro Standort anzeigen
-    -   Dient zum Anzeigen verfügbarer Bestand pro Charge an (Produkte für chargengesteuerte)
-    -   Dient zum Anzeigen verfügbarer Bestand pro Bestandsstatus an
+    -   Verfügbaren Lagerbestand pro Site anzeigen
+    -   Verfügbaren Lagerbestand pro Lagerort anzeigen
+    -   Verfügbaren Lagerbestand pro Standort anzeigen
+    -   Verfügbarer Lagerbestand nach Charge (für chargengesteuerte Produkte) anzeigen
+    -   Verfügbaren Lagerbestand pro Bestandsstatus anzeigen
 
-    Produktverfügbarer Lagerbestand wird folgendermaßen angezeigt:
-    -   Durch physischen Bestand (In dieser Ansicht bietet den Gesamtbetrag) dar.
-    -   Durch den physisch reserviert "dieser Ansicht bietet den reservierten Betrag) dar.
-    -   Durch verfügbare physische Menge (In dieser Ansicht werden der verfügbare Betrag dar, der keine Reservierungen hat).
+    Verfügbarer Lagerbestand wird folgendermaßen angezeigt:
+    -   Durch physischen Bestand (Ansicht stellt den Gesamtbetrag dar).
+    -   Durch physischen Reservierungen (Ansicht stellt den reservierten Betrag dar).
+    -   Durch verfügbare physische Menge (Ansicht stellt den verfügbare Betrag dar, der keine Reservierungen hat).
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Löschungsregeln"
-description: "Dieser Abschnitt enthält Informationen über Löschungsregeln und die verschiedenen Optionen für die Berichterstellung zu Vorkalkulationen verfügbar."
+description: "Dieser Artikel enthält Informationen zu Löschungsregeln und die verschiedenen Optionen für die Berichterstellung zu Löschungen."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="elimination-rules"></a>Löschungsregeln
 
-Dieser Abschnitt enthält Informationen über Löschungsregeln und die verschiedenen Optionen für die Berichterstellung zu Vorkalkulationen verfügbar.
+[!include[banner](../includes/banner.md)]
 
-Löschungsbuchungen sind erforderlich, wenn eine übergeordnete juristische Person Geschäftsbeziehungen mit mindestens einer Tochterfirma der juristischen Person unterhält und konsolidierte Finanzberichte verwendet. Konsolidierte Finanzaufstellungen müssen nur Buchungen enthalten, die zwischen der konsolidierten Organisation und anderer Entitäten außerhalb der Organisation auftreten. Daher müssen Buchungen zwischen juristischen Personen, die Teil der gleichen Organisation sind, im Hauptbuch, also davon entfernt oder gelöscht werden werden nicht in Finanzberichten. Es gibt mehrere Möglichkeiten, Löschungen zu melden:
+
+Dieser Artikel enthält Informationen zu Löschungsregeln und die verschiedenen Optionen für die Berichterstellung zu Löschungen.
+
+Löschungsbuchungen sind erforderlich, wenn eine übergeordnete juristische Person Geschäftsbeziehungen mit mindestens einer Tochterfirma der juristischen Person unterhält und konsolidierte Finanzberichte verwendet. Konsolidierte Finanzaufstellungen müssen nur Buchungen enthalten, die zwischen der konsolidierten Organisation und anderer Entitäten außerhalb der Organisation auftreten. Daher müssen Buchungen zwischen juristischen Personen, die zu derselben Organisation gehören, aus dem Hauptbuch entfernt oder gelöscht werden, sodass diese nicht in Finanzberichten angezeigt werden. Es gibt mehrere Möglichkeiten, Löschungen zu melden:
 
 -   Eine Löschungsregel kann in einem Konsolidierungs- oder Unternehmen mit Löschungseinträgen erstellt und verarbeitet werden.
 -   Finanzberichterstellung kann verwendet werden, um die Beseitigungskonten und Dimensionen auf einer bestimmten Zeile oder einer Spalte anzuzeigen.
@@ -129,27 +132,29 @@ Ihre juristische Person, juristische Person A, verkauft Produkte an eine andere 
 Alle diese Buchungen erzeugen Intercompany-Buchungen, die auf Konten vom Typ "Fällig bis" und "Fällig von" ausgeführt werden. Darüber hinaus können diese Buchungen Zu- oder Abschläge für den Fall enthalten, dass der Betrag des Intercompany-Verkaufs und die Kosten der verkauften Waren nicht übereinstimmen.
 
 ## <a name="set-up-elimination-rules"></a>Sie können Löschungsregeln einrichten.
-Wenn wir Löschungsregeln in Dynamics 365 für Arbeitsgänge einrichten, empfehlen wir, dass Sie eine Finanzdimension speziell auf die Löschungszwecken erstellen. Der Debitorenname es besonders Handelspartner oder einige vergleichbar. Wenn Sie sich entscheiden, die eine Finanzdimension nicht zu verwenden, müssen Sie darauf achten, Hauptkonten anzuzeigen, die nur für Intercompany-Buchungen bestimmt sind. 
+Wenn wir Löschungsregeln in Dynamics 365 for Operations einrichten, empfehlen wir, dass Sie eine Finanzdimension speziell für Löschungszwecke erstellen. Die meisten Debitoren nennen ihn Handelspartner oder ähnlich. Wenn Sie sich entscheiden, die eine Finanzdimension nicht zu verwenden, müssen Sie darauf achten, Hauptkonten anzuzeigen, die nur für Intercompany-Buchungen bestimmt sind. 
 
-Die Einstellung für die Löschungen wird im Aufsetzbereich des Konsolidierungsmoduls gefunden. Nachdem Sie eine Beschreibung für die Regel eingeben, muss das Unternehmen, zu dem die Löschungserfassung gebucht wird. Dieser sollte ein Unternehmen sein, das für Finanzlöschungsprozess ** ** Verwendung in den Einstellungen für die juristische Person aktiviert. 
+Die Einstellung für die Löschungen wird im Aufsetzbereich des Konsolidierungsmoduls gefunden. Nachdem Sie eine Beschreibung für die Regel eingeben, müssen Sie das Unternehmen wählen, zu dem die Löschungserfassung gebucht wird. Dies sollte ein Unternehmen sein, das **Für finanziellen Löschungsprozess verwenden** in den Einstellungen für die juristische Person ausgewählt wurde. 
 
-Sie können ein Datum nach Bedarf festlegen, an dem die Löschungsregel wirksam wird und wann sie abgelaufen ist, d. Sie müssen ** aktiv ** auf setzen ** Ja ** wenn Sie es im Löschungsvorschlagsprozess verfügbar sein soll. Wählen Sie ein Journal aus, deren Typ ist ** Löschung **.
+Sie können ein Datum nach Bedarf festlegen, an dem die Löschungsregel wirksam wird und an dem sie abläuft. Sie müssen **Aktiv** auf **Ja** setzen,  wenn Sie  möchten, dass sie im Löschungsvorschlagsprozess verfügbar sein sollen. Wählen Sie ein Journal aus, das einen Typ **Löschung**  hat.
 
-Nachdem die Grundlagen definiert haben, können Sie die tatsächlichen Verarbeitungsregeln definieren, indem Sie Positionen ** ** klicken. Es gibt zwei Optionen für Löschungen, müssen Sie den Nettoveränderungsbetrag oder definiert einen festen Betrag. 
+Nachdem Sie die Grundlagen definiert haben, können Sie die tatsächlichen Verarbeitungsregeln definieren, indem Sie **Positionen ** anklicken. Es gibt zwei Optionen für Löschungen, nämlich den Nettoveränderungsbetrag eliminieren oder einen festen Betrag definieren. 
 
-Wählen Sie Ihr Quellkonto aus. Sie können ein Sternchen (\*) als Platzhalter verwenden. So würde beispielsweise 1\* alle Konten auswählen, die mit 1 als Quelle der Daten für die Zuweisung starten. 
+Wählen Sie Ihr Quellkonto aus. Sie können Platzhalter wie Sternchen wie einen (\*) verwenden. Im Beispiel würde 1\* alle Konten auswählen, die mit 1 als Quelle für die Zuordnung der Daten beginnen. 
 
-Nachdem Sie Ihre Quellkonten ausgewählt haben, Kontoenspezifikation ** ** bestimmt das Konto vom Zielunternehmen, das verwendet wird. Wählen Sie aus ** Quelle ** wenn Sie dasselbe Hauptkonto verwendet werden soll, das im definiert ist ** Quelle ** Konto. Wenn Sie auswählen ** benutzerdefiniert **, dann müssen ein Zielkonto angeben. 
+Nachdem Sie Ihre Quellkonten ausgewählt haben, bestimmen die **Kontospezifikation** das Konto vom Zielunternehmen, das verwendet wird. Wählen Sie **Quelle** aus, wenn Sie dasselbe Hauptkonto verwendet werden soll, das im Konto **Quelle** definiert ist. Wenn Sie auswählen**Benutzerdefiniert** auswählen, dann müssen Sie ein Zielkonto angeben. 
 
-Die Dimensionsspezifikationstaten können. Wenn Sie auswählen ** Quelle **, verwendet er die gleichen Dimensionen wie im Zielunternehmen das Ausgangsunternehmen. Wenn Sie auswählen ** benutzerdefiniert **, müssen Sie die Dimensionen im Zielunternehmen angeben, indem Sie auf die Zieldimensionen ** ** Menüoption klicken. 
+Die Dimensionsspezifikation funktioniert genau gleich. Wenn Sie **Quelle** auswählen, verwendet er die gleichen Dimensionen im Zielunternehmen wie im Ausgangsunternehmen. Wenn Sie **Benutzerdefiniert** auswählen, müssen Sie die Dimensionen im Zielunternehmen angeben, indem Sie auf die **Zieldimensionen** Menüoption klicken. 
 
 Wählen Sie Quelldimensionen und Finanzdimensionen und die Werte aus, die als Quelle der Löschung verwendet werden.
 
 ## <a name="process-elimination-transactions"></a>Löschungsbuchung verarbeiten
-Es gibt zwei Möglichkeiten, Löschungsbuchungen, während des Prozesses Online des konsolidierten zu verarbeiten, oder, indem er eine Löschungserfassung und Ausführen erstellt, Verarbeiten der Löschungsvorschlag. Dieser Bereich bezieht sich auf das Erstellen der Erfassung sowie des Betriebs der Löschungsprozess. 
+Es gibt zwei Möglichkeiten, Löschungsbuchungen zu verarbeiten, nämlich während des Online-Konsolidierungsprozesses oder durch die Erstellung eines Löschungsjournals und mithilfe des Löschungsvorschlagsprozesses. Dieser Bereich bezieht sich auf das Erstellen der Erfassung sowie dem Betriebs der Löschungsprozesses. 
 
-In einem Unternehmen, das als Unternehmen mit Löschungseinträgen definiert wird, wählen Sie im Konsolidierungsmodul ** Löschungserfassung ** aus. Nachdem Sie das Journal aktiviert haben, klicken Sie ** ** Positionen. Sie können den Vorschlag ausgeführt, indem Sie das ** Vorschläge ** Menü auswählen und dann auswählen ** Löschungsvorschlag **.
+In einem Unternehmen, das als Unternehmen mit Löschungseinträgen definiert wird, wählen Sie im Konsolidierungsmodul **Löschungserfassung** aus. Klicken Sie nach Auswahl des Erfassungsnamen auf **Positionen**. Sie können den Vorschlag ausführen, indem Sie das Menü **Vorschläge** auswählen und dann  **Löschungsvorschlag löschen** auswählen.
 
-Wählen Sie das Unternehmen, das die Quelle der konsolidierten Daten ist, und wählen Sie dann die Regel aus, die Sie bearbeiten möchten. Geben Sie ein Startdatum ein, um die Suche für Löschungsbeträge zu starten und ein Enddatum an, bis zum Ende Suchendatum Löschungsbeträge für das. Das Hauptbuchbuchungsdatum ** ** Feld ist das Datum, das zum Buchen der Erfassung in das Hauptbuch verwendet wird. Nach Klicken auf OK ** **, können Sie die Beträge anzeigen und die Erfassung buchen.
+Wählen Sie das Unternehmen, das die Quelle der konsolidierten Daten ist, und wählen Sie dann die Regel aus, die Sie bearbeiten möchten. Geben Sie ein Startdatum ein, um die Suche für Löschungsbeträge zu starten und ein Enddatum, um die Suche nach den Löschungsbeträgen zu beenden. Geben Sie im Feld **Datum für Sachkontobuchung** das Datum ein, an dem die Löschungserfassung im Hauptbuch gebucht werden soll. Klicken Sie auf **OK**, und Sie können die Beträge anzeigen und die Erfassung buchen.
+
+
 
 

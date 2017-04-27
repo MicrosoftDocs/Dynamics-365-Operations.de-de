@@ -1,6 +1,6 @@
 ---
 title: "Startseite für Anlagen"
-description: "Anlagen sind Objekte von Wert, wie Gebäude, Fahrzeuge, Grundbesitz und Maschinen, die einer Person oder Organisation zugeordnet sein."
+description: "Anlagen sind Objekte von Wert, wie Gebäude, Fahrzeuge, Grundbesitz und Maschinen, die sich im Besitz einer Einzelperson oder eines Unternehmens befinden."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-home-page"></a>Startseite für Anlagen
 
-Anlagen sind Objekte von Wert, wie Gebäude, Fahrzeuge, Grundbesitz und Maschinen, die einer Person oder Organisation zugeordnet sein.
+[!include[banner](../includes/banner.md)]
+
+
+Anlagen sind Objekte von Wert, wie Gebäude, Fahrzeuge, Grundbesitz und Maschinen, die sich im Besitz einer Einzelperson oder eines Unternehmens befinden. 
 
 Für Anlagen können Anschaffungsinformationen eingerichtet und eingegeben werden. Anschließend können sie verwaltet werden, indem sie abgeschrieben werden und ein Aktivierungsschwellenwert zum Bestimmen der Abschreibung festgelegt wird. Für die Anlagen können Regulierungen berechnet werden und sie können verschrottet werden. Wenn Anlagen zusammen mit dem Hauptbuch verwenden, können Sie den aktuellen Wert aller Anlagen anzeigen. Die Art und Weise, wie Anlagen verwaltet werden, muss sowohl internationalen Buchführungsstandards auch den Buchführungsgesetzen des jeweiligen Landes/der jeweiligen Region entsprechen. Anforderungen in Bezug auf Anschaffungs- und Abgangsbuchungen, Abschreibung, Nutzungsdauer sowie Höher- und Niedrigerbewertung von Anlagen sind Beispiele für solche Regeln. Viele dieser Standards und Regeln sind Bestandteil der Anlagenverwaltungsfunktionen.
+
+
 
 
 

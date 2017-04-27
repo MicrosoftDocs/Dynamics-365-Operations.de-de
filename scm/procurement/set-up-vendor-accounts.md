@@ -1,5 +1,5 @@
 ---
-title: Einstellungskreditorenkonten
+title: Einrichten von Kreditorenkonten
 description: "In diesem Thema werden die Typen von Informationen beschrieben, die Sie angeben müssen, wenn Sie ein neues Kreditorenkonto erstellen."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-vendor-accounts"></a>Einstellungskreditorenkonten
+# <a name="set-up-vendor-accounts"></a>Einrichten von Kreditorenkonten
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema werden die Typen von Informationen beschrieben, die Sie angeben müssen, wenn Sie ein neues Kreditorenkonto erstellen.
 
@@ -40,7 +43,7 @@ Wenn Sie ein Kreditorenkonto erstellen, geben Sie Informationen zum Kreditor ein
 -   Richten Sie Informationen zu Gebühren, Steuern, Zahlung und Lieferung für den Kreditor ein. Standardmäßig werden diese Einstellungen in neue Dokumente kopiert, die für den Kreditor erstellt werden.
 -   Richten Sie standardmäßige Finanzdimensionen ein, die verwendet werden, um Buchungen mit dem Kreditor automatisch auf Finanzkonten zu buchen.
 
-Um den Prozess der Erstellung von Kreditorenkonten zu beschleunigen, können Sie Vorlagen erstellen. Um ein Original, auf der Seite, ** ** Kreditor im Aktivitätsbereich erstellen, auf ** Optionen ** &gt; ** Datensatzinformationen **. Klicken Sie dann auf **Unternehmenskontovorlage**. Unternehmenskontovorlagen werden auch von anderen Benutzer verwendet.  
+Um den Prozess der Erstellung von Kreditorenkonten zu beschleunigen, können Sie Vorlagen erstellen. Um eine Vorlage zu erstellen, klicken Sie auf der Seite **Kreditor** im Aktivitätsbereich auf **Optionen** &gt; **Datensatzinformationen.** Klicken Sie dann auf **Unternehmenskontovorlage**. Unternehmenskontovorlagen werden auch von anderen Benutzer verwendet.  
 
 Sie können auch eine Benutzervorlage für den Eigengebrauch erstellen. Sie können einen Kreditor nicht löschen, wenn dieser anderen Datensätzen zugeordnet ist, z. B. Kontakten und Produkten.
 
@@ -56,7 +59,7 @@ Für jeden Kreditor können mehrere Adressen definiert werden, von denen jede f�
 ## <a name="vendor-contacts"></a>Kreditorenkontakte
 Können Sie Kontakte für einen Kreditoren speichern. Diese Kontakte können dann für Dokumente wie Bestellungen oder Angebotsanforderungen (RFQs) verwendet werden.  
 
-Um Kontakten für einen Kreditor, der für alle Kreditoren ** ** Seite, auf der Registerkarte, Kreditor ** ** in der Einstellung ** ** Gruppe hinzuzufügen, klicken Sie Kontakte ** ** &gt; ** fügen Sie Kontakte hinzu **.  
+Um Kontakte für einen Kreditor hinzuzufügen, klicken Sie auf der Seite **Alle Kreditoren** auf der Registerkarte **Kreditor** in der Gruppe **Einstellungen** auf **Kontakte** &gt; **Kontakte hinzufügen**.  
 
 Sie können Kreditorenkontakte von Grund auf neu erstellen. Alternativ können Sie auch Details einer anderen Person kopieren, die bereits in Microsoft Dynamics 365 for Operations registriert ist und die Informationen nach Bedarf bearbeiten.  
 
@@ -64,7 +67,7 @@ Sie können Kreditorenkontakte von Grund auf neu erstellen. Alternativ können S
 
 Sie können keinen Kontaktpersondatensatz löschen, wenn der Kontakt auf ein Dokument verweist. Stattdessen können Sie den Kontakt deaktivieren.  
 
-Sie können von Kreditorenkontakten Ihren persönlichen Kontakten in Microsoft Office 365 addiert. Allerdings müssen Sie Synchronisierung zwischen Dynamics 365 für Arbeitsgänge und Office 365 in Microsoft Exchange Server- und Microsoft Outlook-Setup-Assistenten zuerst zu installieren.
+Sie können Kreditorenkontakte Ihren persönlichen Kontakten in Microsoft Office 365 hinzufügen. Allerdings müssen Sie zuerst die Synchronisierung zwischen Dynamics 365 for Operations und Office 365 sowohl in der Microsoft Exchange Server-Synchronisierung als auch im Microsoft Outlook-Setup-Assistenten einrichten.
 
 ## <a name="vendors-in-different-legal-entities"></a>Kreditoren in verschiedenen juristischen Personen
 Wenn ein Kreditor für eine juristische Person in der Organisation erfasst ist und andere juristische Personen den gleichen Kreditor erfassen müssen, können Sie die Seite **Kreditor zu anderer juristischer Person hinzufügen** verwenden, um den Kreditor zu so konfigurieren, dass er Geschäfte mit einer anderen juristischen Person tätigen kann. Wählen Sie für den Kreditor in der ausgewählten juristischen Person eine Kreditorengruppe, eine Währung und einen Sperrstatus aus.  
@@ -101,5 +104,7 @@ Wenn Sie Zahlungen an ein Kreditorenbankkonto veranlassen müssen, können Sie I
 Sie können Standardkonten angeben, die in Kreditorenrechnungserfassungen automatisch für den angegebenen Kreditor angezeigt werden. Verwenden Sie diese Funktion, wenn Sie normaler Weise im Laufe der Zeit für dieselbe Art von Produkten oder Dienstleistungen derselben Kreditoren bezahlen. Wenn Sie ein Standardkonto angeben, können Sie Erfassungseinträge in der Rechnungserfassung schnell und effizient eingeben. Die in diesem Formular angegebenen Standardkonten werden nicht für Bestellungen oder Kreditorenrechnungen verwendet, die auf der Seite **Kreditorenrechnung** eingegeben wurden.  
 
 Wählen Sie Standardkonten auf der Seite **Standardkontoeinstellungen** aus, die Sie auf der Registerkarte **Rechnung** im Kreditorendatensatz öffnen können. Die Konten, die Sie hier auswählen, werden in der gefilterten Liste der Konten für das Kreditorenkonto angezeigt, wenn Sie einen Erfassungseintrag eingeben. Sie können eines der Konten als Standardkonto festgelegt.
+
+
 
 

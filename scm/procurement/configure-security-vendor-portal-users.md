@@ -1,6 +1,6 @@
 ---
 title: Kreditorenportalbenutzersicherheit
-description: "In diesem Artikel wird beschrieben, wie Sie die Sicherheit für externe Kreditoren einrichten, die das Kreditorenportal verwenden. Diese Informationen beziehen sich nur auf die Mai 2016 &amp;-Versionen im Februar 2016 von Microsoft Dynamics AX verwendet."
+description: "In diesem Artikel wird beschrieben, wie Sie die Sicherheit für externe Kreditoren einrichten, die das Kreditorenportal verwenden. Diese Informationen gelten nur für die Versionen Februar 2016 &amp; und Mai 2016 von Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-portal-user-security"></a>Kreditorenportalbenutzersicherheit
 
-In diesem Artikel wird beschrieben, wie Sie die Sicherheit für externe Kreditoren einrichten, die das Kreditorenportal verwenden. Diese Informationen beziehen sich nur auf die Mai 2016 &amp;-Versionen im Februar 2016 von Microsoft Dynamics AX verwendet.
+[!include[banner](../includes/banner.md)]
 
-Die Kreditorenportalfunktionen sind über erweiterte Kreditorenzusammenarbeitfunktionen in Dynamics 365 für Arbeitsgangsversion 1611 ersetzt. Weitere Informationen zu Aufstellungssicherheit für Kreditorenzusammenarbeit, finden Sie unter Einrichten und Verwalten Kreditorenzusammenarbeit [] (bei setup-maintain-vendor-collaboration.md). Das Kreditorenportal macht einen begrenzten Satz von Informationen zu Bestellungen (POs) für externe Kreditoren verfügbar. Es ist wichtig, dass Sie die Benutzerrechte für das Kreditorenportal in Microsoft Dynamics AX ordnungsgemäß einrichten, damit Kreditoren nicht unerwünschten Zugriff auf zusätzliche Informationen in Ihrer Dynamics AX-Installation haben. **Wichtig:** Im Gegensatz zu anderen Benutzer sollten externe Kreditoren nicht die Rolle **SystemUser** haben. Die Rolle **SystemUser** gewährt Zugriff auf eine Reihe von Rechten, die nicht für externe Benutzer geeignet sind.
+
+In diesem Artikel wird beschrieben, wie Sie die Sicherheit für externe Kreditoren einrichten, die das Kreditorenportal verwenden. Diese Informationen gelten nur für die Versionen Februar 2016 &amp; und Mai 2016 von Dynamics AX.
+
+Die Kreditorenportalfunktion wurde durch die erweiterte Kreditorenzusammenarbeitfunktion in Dynamics 365 for Operations Version 1611 ersetzt. Weitere Informationen zur Einrichtung der Sicherheit für Kreditorenzusammenarbeit finden Sie unter [Konfiguration und Verwaltung der Sicherheit für Kreditorenzusammenarbeit](set-up-maintain-vendor-collaboration.md) Das Kreditorenportal macht einen begrenzten Satz von Informationen zu Bestellungen (POs) für externe Kreditoren verfügbar. Es ist wichtig, dass Sie die Benutzerrechte für das Kreditorenportal in Microsoft Dynamics AX ordnungsgemäß einrichten, damit Kreditoren nicht unerwünschten Zugriff auf zusätzliche Informationen in Ihrer Dynamics AX-Installation haben. **Wichtig:** Im Gegensatz zu anderen Benutzer sollten externe Kreditoren nicht die Rolle **SystemUser** haben. Die Rolle **SystemUser** gewährt Zugriff auf eine Reihe von Rechten, die nicht für externe Benutzer geeignet sind.
 
 ## <a name="setting-up-a-vendor-portal-user"></a>Einrichten eines Kreditorenportalbenutzers
 Bevor Sie ein Benutzerkonto für jemanden, der das Kreditorenportal verwenden wird, erstellen, müssen Sie den Kreditor einrichten, um eine Kreditorenportalzusammenarbeit zuzulassen. Verwenden Sie das Feld **Bestellungszusammenarbeit** auf der Registerkarte **Allgemeines** auf der Seite **Kreditoren**. Externe Kreditoren, die das Kreditorenportal verwenden, müssen die folgenden Einstellungen haben:
@@ -44,6 +47,8 @@ Wenn die gleiche Person Zugriff auf das Kreditorenportal für mehrere Kreditoren
 <a name="see-also"></a>Siehe auch
 --------
 
-[Vendor collaboration](collaborate-vendors-vendor-portal.md)
+[Kreditor-Zusammenarbeit](collaborate-vendors-vendor-portal.md)
+
+
 
 

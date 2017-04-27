@@ -118,7 +118,7 @@ eGiro basiert auf den internationalen UN EDIFACT CREMUL (Mehrere Gutschriftsanze
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
-| Ersetzt durch eine andere Funktion? | Nr. Das Format wird durch 20022-Auszugsimportformate ISO in künftigen Versionen ersetzt. |
+| Ersetzt durch eine andere Funktion? | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
 | Betroffene Module             | Debitorenkonten                                                                       |
 
 ### <a name="external-inventory-for-poland"></a>Externer Bestand für Polen
@@ -138,7 +138,7 @@ Ein Tool, um die Datenerfassung für die Berechnung und die Steuererklärungen e
 |                              |                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Begrenzte Verwendung                                                                            |
-| Ersetzt durch eine andere Funktion? | Nr. Das Tool wird über elektronische Berichterstellungskonfigurationen in künftigen Versionen ersetzt. |
+| Ersetzt durch eine andere Funktion? | Nr. Das Tool wird durch die elektronische Berichterstellungskonfigurationen in künftigen Versionen ersetzt. |
 | Betroffene Module             | Hauptbuch                                                                           |
 
 ### <a name="import-of-customer-payment-transactions-for-finland"></a>Import von Buchungen für Debitorenzahlungen für Finnland
@@ -148,7 +148,7 @@ Sie können ein Importformat für finnische Zahlungen auswählen, das Debitorenz
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
-| Ersetzt durch eine andere Funktion? | Nr. Das Format wird durch 20022-Auszugsimportformate ISO in künftigen Versionen ersetzt. |
+| Ersetzt durch eine andere Funktion? | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
 | Betroffene Module             | Debitorenkonten                                                                       |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import von Zahlungsbuchungen in eine Hauptbucherfassung für Finnland
@@ -158,7 +158,7 @@ Ein Sonderformat für Finnland zum Import von Buchhaltungsbuchungen in das Haupt
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
-| Ersetzt durch eine andere Funktion? | Nr. Das Format wird durch 20022-Auszugsimportformate ISO in künftigen Versionen ersetzt. |
+| Ersetzt durch eine andere Funktion? | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
 | Betroffene Module             | Debitorenkonten                                                                       |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integration mit Isabel synchronisiert (CIS) für Belgien
@@ -168,7 +168,7 @@ Isabel ist das Framework für Electronic Banking in Europa und kein tatsächlich
 |                              |                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Integration mit Isabel-Kunden ist eingestellt.                                                                |
-| Ersetzt durch eine andere Funktion? | Nr. Zahlungsformate Die, die nicht mehr verwendet werden, werden durch Transferzahlungsformat des Kredits ISO20022 für Belgien ersetzt. |
+| Ersetzt durch eine andere Funktion? | Nr. Die Zahlungsformate, die nicht mehr verwendet werden, werden durch Transferzahlungsformat des Kredits ISO20022 für Belgien ersetzt. |
 | Betroffene Module             | Kreditorenkonten                                                                                                     |
 
 ### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Änderungen im Kontenplan und bei den Buchhaltungsvorschriften für Spanien
@@ -218,7 +218,7 @@ Die Formate Telehansa und TeleTeenus werden für den Bankzahlungimport verwendet
 |                              |                                                                                            |
 |------------------------------|--------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                                                    |
-| Ersetzt durch eine andere Funktion? | Nr. Die Formate werden durch 20022-Auszugsimportformate ISO in künftigen Versionen ersetzt. |
+| Ersetzt durch eine andere Funktion? | Nr. Die Formate werden durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
 | Betroffene Module             | Debitorenkonten                                                                        |
 
 ### <a name="performance-management-goal-workflow"></a>Leistungsverwaltungsziel-Workflow
@@ -228,7 +228,7 @@ Leistungsverwaltung enthält Zielverwaltung und Integration mit Leistungsbeurtei
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Leistungsverwaltung wurde neu gestaltet und die Anzahl von Zielseiten wurde verringert, um den Prozess zu vereinfachen.                 |
-| Ersetzt durch eine andere Funktion? | Nr. Ziele sind für Manager über das Manager-Self-Service-Portal vom Manager angezeigt und können geändert und angezeigt werden. |
+| Ersetzt durch eine andere Funktion? | Nr. Ziele sind für Manager über das Manager-Self-Service-Portal sichtbar und können vom Manager angezeigt und geändert werden. |
 | Betroffene Module             | Human Capital Management                                                                                                 |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Zahlungsformate Postgirot und Postgirot Utland für Schweden
@@ -241,19 +241,19 @@ Zahlungsformate Postgirot und Postgirot Utland für Schweden.
 | Ersetzt durch eine andere Funktion? | Ja, ISO20022 Kredittransferzahlungsformat für Schweden |
 | Betroffene Module             | Kreditorenkonten                                        |
 
-### <a name="radio-frequency-identifier"></a>Hochfrequenzkennung
+### <a name="radio-frequency-identifier"></a>Kennung für Funkübertragung
 
 RFID (Radiofrequenz-Identifikation) ist eine Technologie zum Sammeln von Daten. Bei dieser Technologie werden Daten mithilfe elektronischer Markierungen zum Speichern von Identifizierungsdaten sowie mittels eines Lesegeräts erfasst, das ohne direkte Sichtverbindung funktioniert.
 
 |                              |                                               |
 |------------------------------|-----------------------------------------------|
-| Grund für Abschreibung       | Niedrige von begrenzter Funktionsumfang und ein. |
+| Grund für Abschreibung       | Geringe Kundennutzung und ein begrenzter Funktionsumfang. |
 | Ersetzt durch eine andere Funktion? | Nr.                                            |
 | Betroffene Module             | Lagerverwaltung                          |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Bericht zu Bundeslandrechnungsnummerierung für Lettland
 
-Lettische Gesetzgebung schafft bestimmte Regeln dazu, wie Verkaufsrechnungen nummeriert werden sollen. Die Funktionalität können Sie bestimmte Nummern zuzuweisen Verkaufsrechnungen, basierend auf dem Benutzer oder die Benutzergruppe zuordnen. Sie können eines Berichts oder dann eine XML-Datei generieren. Sie können auch einen Bericht zu Rechnungsnummern drucken, die verwendet werden.
+Lettische Gesetzgebung schafft bestimmte Regeln dazu, wie Verkaufsrechnungen nummeriert werden sollen. Mit der Funktionalität können Sie bestimmte Nummern Verkaufsrechnungen zuweisen, basierend auf dem Benutzer oder den Benutzergruppen. Sie können einen Bericht oder eine XML-Datei generieren. Sie können auch einen Bericht zu Rechnungsnummern drucken, die verwendet werden.
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -312,7 +312,7 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integration mit AIF, AxD und AxBC
 
-In Application Integration Framework (AIF), können Daten mit externen Systemen über Geschäftslogik ausgetauscht werden, die als Dienst verfügbar gemacht wird. Dynamics AX verfügt über Dienste, die auf Dokumenten und .NET Business Connector (AxBC) basieren. Ein Dokument wird über XML erstellt. Das XML umfasst Kopfinformationen, die hinzugefügt werden, um eine *Meldung* zu erstellen, die zu oder aus Dynamics AX übertragen werden kann. Beispiele zu Dokumenten sind Aufträge und Bestellungen. Fast jede Entität, z. B. ein Debitor, kann über Dokument dargestellt werden. Dienstleistungen, die auf Grundlage Dokumente verwenden sind Axd-*Document &lt;** ***&gt;Klassen.
+In Application Integration Framework (AIF), können Daten mit externen Systemen über Geschäftslogik ausgetauscht werden, die als Dienst verfügbar gemacht wird. Dynamics AX verfügt über Dienste, die auf Dokumenten und .NET Business Connector (AxBC) basieren. Ein Dokument wird über XML erstellt. Das XML umfasst Kopfinformationen, die hinzugefügt werden, um eine *Meldung* zu erstellen, die zu oder aus Dynamics AX übertragen werden kann. Beispiele zu Dokumenten sind Aufträge und Bestellungen. Fast jede Entität, z. B. ein Debitor, kann über Dokument dargestellt werden. Dienste, die auf Dokumente basieren verwenden**Axd &lt;*Dokument*&gt;** Klassen.
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -347,7 +347,7 @@ Bundessteuerauszug für ICMS-Steuer
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Dieser Auszug gilt nicht mehr für einige brasilianische Bundesländer.                                                     |
-| Ersetzt durch eine andere Funktion? | Nr. Benutzer können generisches elektronisches Berichtstool verwenden, um den Auszug unter bestimmten Situationen nach Bedarf zu konfigurieren. |
+| Ersetzt durch eine andere Funktion? | Nr. Benutzer können das generische elektronische Berichtstool verwenden, um sofern erforderlich den Auszug für bestimmten Situationen zu konfigurieren. |
 | Betroffene Module             | Steuerbücher                                                                                                          |
 
 ### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brasilianischer SCAN Notfallmodus für NF-e
@@ -631,7 +631,7 @@ Personalverwaltung-Lohndaten
 |                              |                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Diese Funktion wurde durch zentrale Lohn- und Personalverwaltungsseiten ersetzt.                                                                                                                                                                                                                                              |
-| Ersetzt durch eine andere Funktion? | **Vergütungen**, **Einnahmen** und zugehörige Seiten, die zuvor in US-Lohn waren, sind umkonfiguriert worden und sind jetzt Teil der zentralen Personalverwaltungskonfiguration, um die externe Lohnverarbeitung besser zu unterstützen.. Diese Funktionen zugegriffen werden, indem der Personalverwaltung ** 1 ** ** &gt; Lohn verwendet ** Konfigurationsschlüssel. |
+| Ersetzt durch eine andere Funktion? | **Vergütungen**, **Einnahmen** und zugehörige Seiten, die zuvor in US-Lohn waren, sind umkonfiguriert worden und sind jetzt Teil der zentralen Personalverwaltungskonfiguration, um die externe Lohnverarbeitung besser zu unterstützen.. Diese Funktionen steht über den Konfigurationsschlüssel **Personalverwaltung 1** &gt; **Lohnabrechnung** bereit. |
 | Betroffene Module             | Personalverwaltung, Lohnabrechnung                                                                                                                                                                                                                                                                                                     |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Private Sperrung von Lager- und Lagerortverwaltungserfassungen
@@ -698,12 +698,12 @@ Sites Services lassen Sie Websites erstellen, die Ihre Geschäftsprozesse mit de
 | Ersetzt durch eine andere Funktion? | Nein                                                                                                                                       |
 | Betroffene Module             | Personalrekrutierung, Fallverwaltung, Angebotsanforderungen, Kreditorenregistrierung                                                                  |
 
-### <a name="ssas-demand-forecasting-strategy"></a>SSAS-Bedarfsplanungsstrategie
+### <a name="ssas-demand-forecasting-strategy"></a>SSAS Bedarfsplanungsdienste
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Das Design der Funktion kann nicht in die neue Cloudarchitektur unterstützt werden. |
-| Ersetzt durch eine andere Funktion? | Azure Lernfähigkeit- einer Maschinebedarfsplanungsstrategie                           |
+| Grund für Abschreibung       | Das Design der Funktion kann nicht von der neuen Cloudarchitektur unterstützt werden. |
+| Ersetzt durch eine andere Funktion? | Azure Machine Learning Bedarfsplanungsstrategie                           |
 | Betroffene Module             | Planung                                                                     |
 
 ### <a name="travel-requisitions"></a>Reiseanforderungen

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bonus-depreciation"></a>Vorzeitige Abschreibung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält eine Übersicht der Bonusabschreibungsfunktionalität.
 
 Die vorzeitige Abschreibung ermöglicht es Ihnen, im ersten Jahr der Inbetriebnahme und Abschreibung einer Anlage zusätzliche Abschreibungsbeträge vorzeitig geltend zu machen. Vorzeitige Abschreibung muss vor jeder anderen Abschreibungsberechnung durchgeführt werden. Daher empfiehlt es sich, vorzeitige Abschreibung von Büchern zu verwenden, in denen der Anteil an die Hauptbuchfunktionen deaktiviert wird. Mithilfe der Option **Löschungsbuchungen nicht im Hauptbuch gebucht** können Sie historische Buchungen für Bücher löschen, die nicht im Hauptbuch gebucht werden. Sie können die vorzeitige Abschreibung im Anlagenlebenszyklus später aufnehmen, indem Sie Abschreibungsbuchungen löschen, die bereits gebucht wurden. 
@@ -61,5 +64,7 @@ Wenn die vorzeitige Abschreibung unter Verwendung des Vorschlagsprozesses berech
 Sie können eine unbegrenzte Anzahl von Datensätzen für die vorzeitige Abschreibung erstellen. Nach deren Zuordnung zu einem Anlagengruppen-Abschreibungsbuch werden sie auf das Anlagenabschreibungsbuch angewendet. 
 
 Die vorzeitige Abschreibung wird als Prozentsatz oder als fester Wert eingegeben. Beim Buchen von Abschreibungsvorschlägen werden Buchungen für die vorzeitige Abschreibung im Abschreibungsbuch getrennt von Abschreibungsbuchungen erfasst.
+
+
 
 

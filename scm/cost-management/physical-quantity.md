@@ -31,10 +31,10 @@ ms.lasthandoff: 03/29/2017
 
 Dieser Artikel erläutert, wie die Werte eines Bestandsobjekts berechnet werden. 
 
-Neuen Funktionen, die Bezeichnung ** physische Menge ** lassen Sie die Werte eines bestimmten Bestandsobjekts finden. Ein Kostenobjekt stellt die Entitätsebene dar, in der Bestandsbuchhaltung ausgeführt wird. Weitere Informationen zu den Kostenobjekten finden Sie unter [Kostenobjekte](cost-object.md). Damit die Werte eines bestimmten Bestandsobjekts anzuzeigen, klicken Sie ** physische Menge ** ** Kostenträger ** auf der Seite. Das hier, wie der Wert eines Bestandsobjekts berechnet wird: Bestandsobjekt. Wert = Kostenträger. Durchschnittliches Einheitenkosten × Bestandsobjekt. Menge die folgenden Beispielsshows, wie die Werte eines Bestandsobjekts und des Kostenträgers berechnet werden. Zwei Produktzugangsereignisse werden auf Artikel A erfasst:
+Eine Neuen Funktionen mit der Bezeichnung, **physische Menge** zeigt die Werte eines bestimmten Bestandsobjekts an. Ein Kostenobjekt stellt die Entitätsebene dar, in der Bestandsbuchhaltung ausgeführt wird. Weitere Informationen zu den Kostenobjekten finden Sie unter [Kostenobjekte](cost-object.md). Damit die Werte eines bestimmten Bestandsobjekts anzuzeigen, klicken Sie **Physische Menge** auf der Seite **Kostenträger**. So wird der Wert eines Bestandsobjekts berechnet: Bestandsobjekt.Wert = Kostenobjekt.Durchschnittliche Einheitenkosten × Bestandsobjekt.Menge. Das folgende Beispiel veranschaulicht, wie die Werte eines Bestandsobjekts und des Kostenobjekts berechnet werden. Zwei Produktzugangsereignisse werden auf Artikel A erfasst:
 
--   Produktzugang 1: Menge = 100. Stk, Betrag = 00 Euro, = 1, Standort, Lagerort =11, Charge Nein. = B1
--   Produktzugang 2: Menge = 50. Stk, Betrag = $800,00 = 1, Standort, Lagerort =11, Charge Nein. = B2
+-   Produktzugang 1: Menge = 100 PCs, Betrag = 1.000,00 €, Standort = 1, Lagerort =11, Chargennummer = B1
+-   Produktzugang 2: Menge = 50 PCs, Betrag = 800,00 €, Standort = 1, Lagerort =11, Chargennummer = B2
 
 In der folgenden Tabelle wird das Berechnungsergebnis für einen Kostenträger angezeigt. Das Ergebnis sehen Sie auf der Seite **Kostenobjekt**.
 
@@ -130,10 +130,10 @@ In der folgenden Tabelle wird das Berechnungsergebnis für ein Bestandsobjekt an
 <a name="see-also"></a>Siehe auch
 --------
 
-[Cost objects](cost-object.md)
+[Kostenobjekte](cost-object.md)
 
-[Cost entries](cost-entries.md)
+[Kosteneinträge](cost-entries.md)
 
-[Die neu in und Microsoft Dynamics AX ist /dynamics365/operations/dev-itpro/get-started/what] "geändert wurde - neu-geändert)
+[Neuheiten in Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 

@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Einrichten und Generieren von Dateien für positive Zahlungen
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie positiven Lohndateien eingerichtet und positive Lohndateien generiert werden. 
 
 Sie können positiven Lohn verwenden, um eine elektronische Liste mit Schecks zu generieren, die für die Bank bereitgestellt wird. Wenn der Scheck der Bank präsentiert wird, vergleicht die Bank den Scheck mit der Liste der Schecks. Wenn der Originalscheck mit einem Scheck in der Liste übereinstimmt, löscht die Bank den Scheck. Wenn der Scheck mit keinem Scheck iin der Liste übereinstimmt, hält die Bank den Scheck zur Prüfung zurück.
 
 ## <a name="security-for-positive-pay-files"></a>Sicherheit für Dateien für positive Zahlungen
-Positive Lohndateien können vertrauliche Informationen zu Zahlungsempfänger und Scheckbeträgen enthalten. Daher stellen Sie sicher, dass Sie entsprechende Sicherheitspraktiken ab dem Zeitpunkt verwenden, an dem die Dateien generiert werden, bis sie von der Bank empfangen werden. Positive Lohndateien werden an den Speicherort heruntergeladen, der von Ihrem Webbrowser angegeben wurde. Da positive Lohndateien vertrauliche Informationen enthalten können, ist es wichtig, dass nur berechtigte Benutzer, der Zugriff haben, diese Informationen in Microsoft Dynamics 365 für Arbeitsgänge zu generieren und anzeigen. Nutzen Sie die folgende Tabelle, um die Rechte zu bestimmen, die erforderlich sind.
+Positive Lohndateien können vertrauliche Informationen zu Zahlungsempfänger und Scheckbeträgen enthalten. Daher stellen Sie sicher, dass Sie entsprechende Sicherheitspraktiken ab dem Zeitpunkt verwenden, an dem die Dateien generiert werden, bis sie von der Bank empfangen werden. Positive Lohndateien werden an den Speicherort heruntergeladen, der von Ihrem Webbrowser angegeben wurde. Da positive Lohndateien vertrauliche Informationen enthalten können, ist es wichtig, dass nur autorisierte Benutzer diese Informationen in Microsoft Dynamics 365 for Operations generieren und anzeigen können. Nutzen Sie die folgende Tabelle, um die Rechte zu bestimmen, die erforderlich sind.
 
 <table>
 <colgroup>
@@ -156,5 +159,7 @@ Nachdem die Schecks, die in einer positiven Lohndatei aufgeführt sind, bezahlt 
 
 ## <a name="recall-a-positive-pay-file"></a>Datei für eine positive Zahlung zurückrufen
 Wenn Sie eine Datei für positive Zahlungen ändern müssen, können Sie diese erneut aufrufen. Wählen Sie auf der **Zusammenfassung der Datei für positive Zahlungen**-Seite eine positive Lohndatei deren Status **Erstellt** ist aus, und wählen Sie dann die Aktivität **Zurückziehen** aus. Für jeden Scheck in der positiven Lohndatei zeigt das Feld an, ob der Scheck in einer positiven Lohndatei zurückgesetzt wurde. Sie können dann eine neue positive Lohndatei erstellen, die dem Scheck umfasst, der erneut aufgerufen wurde.
+
+
 
 

@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delivery-schedules"></a>Lieferzeitpläne
 
+[!include[banner](../includes/banner.md)]
+
+
 Lieferzeitpläne ermöglichen Ihnen, Auftragspositionsmengen zu verfolgen, wenn Sie mehrere Lieferungen für einen einzelnen Auftrag, ein Verkaufsangebot oder eine Bestellung verwenden.
 
-Mithilfe eines Lieferzeitplans, wenn die Gesamtmenge in einem Auftrag oder einer Angebotsposition in mehreren Lieferungen geliefert werden muss. Einzelne Sendungen werden von Lieferpositionen angezeigt. Zwei oder mehr Lieferpositionen bilden einen Lieferzeitplan. Die Lieferpositionen können verschiedene Lieferdaten, Mengen, Lieferarten und Lagerdimensionen haben, wie Standort und Lagerort.  
+Ein Lieferzeitplan wird verwendet, wenn eine Gesamtmenge für einen Auftrag oder ein Angebot angefordert wird, um in mehreren Lieferungen geliefert zu werden. Einzelne Sendungen werden von Lieferpositionen angezeigt. Zwei oder mehr Lieferpositionen bilden einen Lieferzeitplan. Die Lieferpositionen können verschiedene Lieferdaten, Mengen, Lieferarten und Lagerdimensionen haben, wie Standort und Lagerort.  
 
 **Beispiel zum Löschen eines gesamten Lieferzeitplans**
 
@@ -42,7 +45,7 @@ Mithilfe eines Lieferzeitplans, wenn die Gesamtmenge in einem Auftrag oder einer
 
 In diesem Szenario fordert der Debitor die Lieferung von 600 Stühlen in Chargen von 100 Stühlen über einen Zeitraum von sechs Monaten hinweg. Um die Lieferungsanforderungen zu verfolgen, erstellen Sie einen Lieferzeitplan. Erstellen Sie auf der Lieferzeitplan-Seite sechs separate Lieferpositionen. Jede Lieferposition umfasst 100 Stühle und gibt das Lieferdatum für die jeweiligen 100 Stühle an. In diesem Fall wird die erste Position sechs Monate hintereinander jeweils für den 1. des Monats versetzt.  
 
-Wenn Sie den Lieferzeitplan erstellt haben, wird der Typ der ursprünglichen Auftragsposition automatisch auf **Auftragsposition mit mehreren Lieferungen** geändert. Eine Position dieses Typs verweist auf eine geschäftsbezogene Position und wird durch ein Symbol gekennzeichnet. Die Lieferposition wird durch ein anderes Symbol gekennzeichnet. Wenn Sie eine Menge in eine Lieferposition ändern, wird der Handelszweig der Gesamtmenge des Lieferzeitplans aktualisiert. Wenn eine Handelsvereinbarung ein Rechnungsrabatt für den Auftrag definiert ist, wird mithilfe des Lieferzeitplans, dass Ihr für den Auftrag gilt hat, auch wenn der Auftrag in einzelne Lieferungen unterteilt ist.  
+Wenn Sie den Lieferzeitplan erstellt haben, wird der Typ der ursprünglichen Auftragsposition automatisch auf **Auftragsposition mit mehreren Lieferungen** geändert. Eine Position dieses Typs verweist auf eine geschäftsbezogene Position und wird durch ein Symbol gekennzeichnet. Die Lieferposition wird durch ein anderes Symbol gekennzeichnet. Wenn Sie eine Menge in einer Lieferposition ändern, wird die Position in der Gesamtmenge des Lieferzeitplans aktualisiert. Falls eine Handelsvereinbarung mit einem definierten Gesamtauftragsrabatt besteht, wird mithilfe des Lieferzeitplans außerdem sichergestellt, dass der Gesamtauftragsrabatt auch dann für den Auftrag gilt, wenn dieser in einzelne Lieferungen unterteilt ist.  
 
 Aufträge, die einen Lieferzeitplan haben, werden mit den Lieferpositionen verarbeitet. Die Verarbeitung umfasst die Buchung von Lieferscheinen, Produktzugängen und die Rechnungsstellung.  
 
@@ -53,5 +56,7 @@ Dokumentausdrucke von Aufträgen und Angeboten mit Lieferzeitplan zeigen nur die
 -   Durchsuchen von Listenseiten und Berichten
 
 Beim Bestätigen eines Verkaufsangebots zeigt der Auftrag den gesamte Lieferzeitplan Auftragsposition an – auch dann, wenn Auftragspositionen mehrere Lieferungen haben. Außerdem wird der gesamte Lieferzeitplan in allen Haupseiten angezeigt, z. B. Aufträgen, Verkaufsangeboten und Bestellungen.
+
+
 
 

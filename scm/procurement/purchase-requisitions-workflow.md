@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-workflow"></a>Bestellanforderungsworkflow
 
+[!include[banner](../includes/banner.md)]
+
+
 Der Workflowprozess leitet Bestellanforderungen durch den Prüfungsprozess, vom Anfangsstatus "Übersicht" bis zum Endstatus "Genehmigt". Wenn eine Bestellanforderung zur Prüfung übermittelt wird, wird der Workflowprozess gestartet. Nachdem die Bestellanforderung genehmigt wurde, kann eine Bestellung für die Bestellanforderungspositionen generiert und zur Auftragserfüllung an den Kreditor übermittelt werden.
 
 Bevor eine Bestellanforderung zur Prüfung übermittelt werden kann, müssen Sie einen Workflow konfigurieren. Der Workflowprozess kann einen oder mehrere Prüfschritte in beliebiger Reihenfolge umfassen. Der Workflowprozess kann auch so konfiguriert werden, dass die Prüfaufgaben übersprungen werden und die Bestellanforderung automatisch genehmigt wird Sie können den Workflow so konfigurieren, dass die Bestellanforderung als einzelnes Dokument durch den Prüfprozess weitergeleitet wird, oder einzelne Bestellanforderungspositionen an die geeigneten Prüfer weitergeleitet werden. Sie können auch ein Szenario erstellen, in dem die Bestellanforderung als einzelnes Dokument an einige Prüfer und ausgewählte Bestellanforderungspositionen an andere Prüfer weitergeleitet werden.  
@@ -106,12 +109,14 @@ Um einen der Aufwendungsprüfer zu verwenden, den Sie in einem Workflow eingeric
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen einer Anforderung für Verbrauch (Aufgabenleitfaden)]https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/) "
+[Erstellen einer Anforderung für Verbrauch (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
+[Beschaffungsworkflows](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](purchase-requisitions-overview.md)
+[Bestellanforderungsüberblick](purchase-requisitions-overview.md)
+
+
 
 

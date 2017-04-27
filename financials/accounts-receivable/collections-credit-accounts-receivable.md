@@ -1,6 +1,6 @@
 ---
 title: Haben und Inkassi in Debitoren
-description: "Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht im Microsoft Dynamics 365 für Arbeitsgangs-Inkassoseite verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite &quot;Debitoren&quot;."
+description: "Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht auf der Seite &quot;Inkassi&quot; in Microsoft Dynamics 365 for Operations verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite &quot;Debitoren&quot;."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Haben und Inkassi in Debitoren
 
-Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht im Microsoft Dynamics 365 für Arbeitsgangs-Inkassoseite verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite "Debitoren".
+[!include[banner](../includes/banner.md)]
+
+
+Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht auf der Seite "Inkassi" in Microsoft Dynamics 365 for Operations verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite "Debitoren".
 
 Bevor Sie mit dem Einrichten oder Verwenden von Inkassovorgängen beginnen, sollten Sie über Folgendes informiert sein:
 -   Fälligkeitsmomentaufnahmen zu Debitoren enthalten Saldorückblickinformationen zu einem bestimmten Zeitpunkt
@@ -55,9 +58,9 @@ Für jede Zahlungsfrist wird in der Zahlungsfristdefinition ein Fälligkeitsmome
 Debitorenpools sind Abfragen, durch die eine Gruppe von Debitorendatensätzen definiert wird, die für Inkassi oder Fälligkeitsprozesse angezeigt und verwaltet werden können. Verwenden Sie Debitorenpools, um Informationen auf den Listenseiten "Saldenrückblick", "Inkassoaktivitäten" und "Inkassofälle" zu filtern. Sie verwenden Debitorenpools auch zum Filtern der Debitorenkonten, die einbezogen werden, wenn Fälligkeitsmomentaufnahmen erstellt werden.
 
 ## <a name="collections-agents"></a>Inkassobeauftragte
-Standardmäßig kann Microsoft Dynamics 365 für Arbeitsgangsbenutzer alle Debitoreninformationen auf Inkassolistenseiten anzeigen. Sie können Datensätze von Inkassobeauftragten verwenden, um die Debitorenpools zu ermitteln, die zum Filtern von Informationen auf den Inkassolistenseiten und im auf der Seite "Inkassi" verfügbar sind. 
+Standardmäßig können Benutzer von Microsoft Dynamics 365 for Operations alle Debitoreninformationen auf Inkassolistenseiten anzeigen. Sie können Datensätze von Inkassobeauftragten verwenden, um die Debitorenpools zu ermitteln, die zum Filtern von Informationen auf den Inkassolistenseiten und im auf der Seite "Inkassi" verfügbar sind. 
 
-Ein Inkassobeauftragter ist eine Person, die in Zusammenarbeit mit Debitoren sicherstellt, dass Zahlungen rechtzeitig eingehen. In Microsoft Dynamics 365 für Arbeitsgänge, Inkassobeauftragte sind Arbeitskräfte, den Benutzern in der Benutzereinstellungsseite die zugewiesen werden.
+Ein Inkassobeauftragter ist eine Person, die in Zusammenarbeit mit Debitoren sicherstellt, dass Zahlungen rechtzeitig eingehen. In Microsoft Dynamics 365 for Operations sind Inkassobeauftragte Arbeitskräfte, die Benutzern auf der Seite "Benutzereinstellungen" zugewiesen werden.
 
 ## <a name="collections-list-pages"></a> Listenseiten "Inkassi" 
 Die folgenden Listenseiten können zum Organisieren von Inkassoinformationen verwendet werden.
@@ -67,7 +70,7 @@ Die folgenden Listenseiten können zum Organisieren von Inkassoinformationen ver
 
 > [!NOTE]
 > Es muss eine Fälligkeitsmomentaufnahme erstellt werden, bevor Sie die Informationen auf diesen Listenseiten anzeigen können. Es werden nur Informationen für Debitoren angezeigt, für die eine Fälligkeitsmomentaufnahme erstellt wurde. Die Datensätze, die auf der Listenseite angezeigt werden, können zusätzlich gefiltert werden, wie folgt:
-<li>Standardmäßig hat Microsoft Dynamics 365 für Arbeitsgangsbenutzer Zugriff auf alle Debitoren, die über eine Fälligkeitsmomentaufnahme verfügen.</li>
+<li>Standardmäßig hat ein Benutzer von Microsoft Dynamics 365 for Operations Zugriff auf alle Debitoren, die über eine Fälligkeitsmomentaufnahme verfügen.</li>
 <li>Falls Debitorenpools vorhanden sind, muss ein Benutzer als Inkassobeauftragter eingerichtet werden, um die Pools zum Filtern von Informationen auf den Inkassolistenseiten zu verwenden. Die Informationen sind auf die Debitoren beschränkt, die im ausgewählten Debitorenpool enthalten sind.</li>
 <li>Wenn ein Benutzer als Inkassobeauftragter eingerichtet ist, sind nur die für diesen Inkassobeauftragten ausgewählten Pools auf der Listenseite verfügbar. Wenn die Umschaltfläche "Inkassobeauftragtem das Anzeigen aller Debitorenpools erlauben" auf der Seite "Inkassobeauftragter" für den Inkassobeauftragten ausgewählt ist, sind für den Beauftragten alle Pools verfügbar.</li>
 
@@ -75,7 +78,7 @@ Die folgenden Listenseiten können zum Organisieren von Inkassoinformationen ver
 ## <a name="collections-page"></a> Seite "Inkassi"
 Verwenden Sie die Seite "Inkassi", um Inkassoinformationen, Aktivitäten und Anfragen für einen Debitor anzuzeigen, zu verwalten und Aktionen dafür auszuführen. 
 
-Das Einkommen des oberen Bereichs für den ausgewählten Debitor. Compliance Der Bereich werden Buchungen für den Debitor angezeigt. Im unteren Bereich werden Aktivitäten für den ausgewählten Debitor angezeigt. Sie können Inkassoanfragen erstellen, um Inkassoinformationen für eine oder mehrere Buchungen und Aktivitäten nachzuverfolgen. Die Informationen im oberen und unteren Bereich können nach Anfrage gefiltert werden. 
+Im oberen Bereich werden Buchungen für den ausgewählten Debitor angezeigt. Im mittleren Bereich werden Buchungen für den ausgewählten Debitor angezeigt. Im unteren Bereich werden Aktivitäten für den ausgewählten Debitor angezeigt. Sie können Inkassoanfragen erstellen, um Inkassoinformationen für eine oder mehrere Buchungen und Aktivitäten nachzuverfolgen. Die Informationen im oberen und unteren Bereich können nach Anfrage gefiltert werden. 
 
 In Infoboxen werden Saldenrückblicke und Kreditlimitinformationen für den ausgewählten Debitor angezeigt. Diese Informationen werden in der Fälligkeitsmomentaufnahme gespeichert. Bei Bedarf können Sie die Fälligkeitsmomentaufnahme mit aktuellen Informationen aktualisieren. 
 
@@ -86,7 +89,7 @@ Sie können ganze Zinsrechnungen oder mit Zinsrechnungen zusammenhängende Gebü
 
 Diese Regulierungen wirken sich nur auf Zinsrechnungen und die darin enthaltenen Zinsen und Gebühren aus. Verwenden Sie die Schritte im Abschnitt "Erstellen Sie Abschreibungsbuchungen in einem Schritt", um alle Gebühren abzuschreiben, die ein Debitor schuldet.
 
-## <a name="create-writeoff-transactions"></a>Erstellen Sie Abschreibungsbuchungen
+## <a name="create-writeoff-transactions"></a>Abschreibungsbuchungen erstellen
 Sie können uneinbringliche Außenstände abschreiben, indem Sie im Formular "Inkassi" auf "Abschreiben" klicken, sowie auf den Listenseiten "Saldenrückblick" und "Offene Debitorenrechnungen". 
 
 Wenn Sie Buchungen für einen Debitor abschreiben, werden alle Buchungen für den Debitor automatisch für den Ausgleich markiert. Der Betrag, der abgeschrieben wird, hängt vom Nettobetrag der markierten Buchungen ab. Die Abschreibungsbuchung wird in einer allgemeinen Erfassung erstellt und kann bis zu drei Arten von Erfassungspositionen enthalten.
@@ -100,6 +103,8 @@ Verarbeiten von Zahlungen ohne ausreichende Deckung (NSF)
 --------------------------------------------
 
 Sie können NSF-Zahlungen verarbeiten, indem Sie auf der Seite "Inkassi" auf "NSF-Zahlung" klicken. Wenn Sie auf diese Schaltfläche klicken, wird die Zahlung storniert. Falls für den Debitor eine NSF-Gebühr anfällt, wird in der Zahlungserfassung eine Belastungsbuchung erstellt. Der Betrag der Gebühr hängt von den Einstellungen für die automatischen Belastungen ab. Die für NSF-Zahlungen geltenden automatischen Belastungen werden durch die Belastungsgruppe angegeben, die auf der Seite "Bankkonten" für das jeweilige Bankkonto ausgewählt wird.
+
+
 
 
 

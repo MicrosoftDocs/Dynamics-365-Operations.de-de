@@ -86,5 +86,5 @@ Die Option **Finanzberichterstellung** ist die Lösung. Organisationshierarchien
 Wenn Sie die Option **Unternehmenssalden exportieren** verwenden, um von einer Instanz zu exportieren, und anschließend die Option **Mit Import konsolidieren** auf der anderen Instanz verwenden, können Sie die Daten konsolidieren.
 
 
-Weitere Informationen finden Sie revalution [Währung in einem Konsolidierungsunternehmen] (\ \ finanicials Hauptbuch \ Währung-Neubewertung-KonsolidierungUnternehmen).
+Weitere Informationen finden Sie unter [Neubewertung in einem konsolidierten Unternehmen](\finanicials\general-ledger\currency-revaluation-consolidation-company).
 

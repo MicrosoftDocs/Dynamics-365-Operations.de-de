@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-expense-management"></a>Ausgabenverwaltung konfigurieren
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel beschreibt die Überlegungen und Entscheidungen, die Sie während des Planungsprozesses machen müssen, bevor Sie die Ausgabenverwaltung in Microsoft Dynamics AX konfigurieren. Im Spesenverwaltungsbereich können Sie unter anderem Informationen zu Zahlungsmethoden, Reiseanforderungen, Spesenabrechnungen und Richtlinien speichern. 
 
 Da viele der Entscheidungen, die Sie treffen, wenn Sie die Konfiguration für Spesenverwaltung planen, auf der Hierarchie und die Finanzstruktur der Organisation basieren, müssen Sie die Planungsdokumente für diese Bereiche mit einbeziehen.
@@ -133,6 +136,8 @@ Sie können Spesenabrechnungsrichtlinien erstellen, wenn Mitarbeiter Ausgaben im
 -   Wann läuft die Richtlinie ab?
 -   Was ist die Richtlinienregel?
 -   Was ist das Ergebnis der Richtlinie?
+
+
 
 
 

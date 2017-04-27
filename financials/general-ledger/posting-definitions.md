@@ -59,5 +59,5 @@ Die folgenden Einschränkungen gelten für das Erstellen von Verknüpfungen in B
 -   Sie können eine Buchungsdefinition jeder beliebigen Buchungsart zuweisen, diese muss sich jedoch im selben Modul wie die Buchungsdefinition befinden. Verwenden Sie die Seite **Buchung - Definitionen**, um festzustellen, aus welchem Modul eine Buchungsart ist.
 
 
-Weitere Informationen finden Sie [Buchungsdefinitionsbeispiele]( /general-ledger/example-posting-definitions.md). 
+Weitere Informationen in [Beispiele zu Buchungsdefinitionen](/general-ledger/example-posting-definitions.md). 
 

@@ -1,6 +1,6 @@
 ---
 title: Bilanzfinanzberichte
-description: "In diesem Artikel wird beschrieben Standardberichte die für Bilanzen. Er wird zudem beschrieben die Bausteine, die mit diesen Berichten zugeordnet werden."
+description: "In diesem Artikel werden die Standardberichte für Bilanzen beschrieben. Er beschreibt zudem die die Bausteine, die diesen Berichten zugeordnet werden."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="balance-sheet-financial-reports"></a>Bilanzfinanzberichte
 
-In diesem Artikel wird beschrieben Standardberichte die für Bilanzen. Er wird zudem beschrieben die Bausteine, die mit diesen Berichten zugeordnet werden. 
+[!include[banner](../includes/banner.md)]
+
+
+In diesem Artikel werden die Standardberichte für Bilanzen beschrieben. Er beschreibt zudem die die Bausteine, die diesen Berichten zugeordnet werden. 
 
 <a name="default-balance-sheet-reports"></a>Standardbilanzberichte
 -----------------------------
@@ -72,10 +75,12 @@ Die Spaltendefinitionen enthalten verschieden Spaltentypen, um verschiedene Stuf
 <a name="see-also"></a>Siehe auch
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Finanzberichterstellung](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Finanzberichte anzeigen](view-financial-reports.md)
 
-[Dynamics-Rechnungslegungs-Blog (http://blogs.msdn.com/b/dynamics_financial_reporting/)]
+[Dynamics Financial Reporting-Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

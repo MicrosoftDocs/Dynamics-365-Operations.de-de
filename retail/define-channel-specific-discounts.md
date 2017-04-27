@@ -34,14 +34,14 @@ Einzelhändler legen häufig verschiedene Rabatte in verschiedenen Kanälen fest
 <a name="channel-specific-discounts"></a>Kanalspezifische Rabatte
 --------------------------
 
-Einzelhändler bilden häufig verschiedene Rabatte in verschiedenen Kanälen angezeigt. Dies ist für den lokalen Marktlagen der Adresse erfolgen oder möglicherweise von konkurrierende Einzelhändler.
+Einzelhändler legen häufig verschiedene Rabatte in verschiedenen Kanälen fest. Dies kann erfolgen, um die lokalen Marktbedingungen anzusprechenoder mit einem konkurrierenden Einzelhändler in den Wettbewerb zu treten..
 
-Einzelhandel und Handel in Microsoft Dynamics 365 für Arbeitsgänge verwendet Preisgruppen, um Kanalbesondererabatte zu definieren. Preisgruppen können einer oder mehreren der folgenden Entitäten zugewiesen werden: Kanäle, Kataloge, Zugehörigkeiten und Treueprogramme. Dieser Artikel behandelt Kanäle. Aber die gleichen Konzepte gelten für Katalograbatte, Zugehörigkeitsrabatte und Treuerabatte.
+Einzelhandel und Handel in Microsoft Dynamics 365 for Operations  verwenden Preisgruppen, um kanalspezifische Rabatte zu definieren. Preisgruppen können einer oder mehreren der folgenden Entitäten zugewiesen werden: Kanäle, Kataloge, Zugehörigkeiten und Treueprogramme. Dieser Artikel behandelt Kanäle. Aber die gleichen Konzepte gelten für Katalograbatte, Zugehörigkeitsrabatte und Treuerabatte.
 
 ## <a name="price-groups"></a>Preisgruppen
-\[id= Beschriftung "\_"align= Anhang 256084 " alignnone" width= " 640 "\]![Preisgruppen ([]. /media/price-groups-1024x608.png)]". /media/price-groups.png) Verknüpft Klein-__ent_dict_PLACEHOLDER Preisgruppe für\[/caption
+\[caption id="attachment\_256084" align="alignnone" width="640"\][![Price groups](./media/price-groups-1024x608.png)](./media/price-groups.png) reisgruppenverknüpfungen für Einzelhandel\[/caption\]
 
-Im Diagramm wird veranschaulicht die Beziehung zwischen Entitäten, die auf eine Buchung (Kanal, Katalog, Zugehörigkeit, Debitor, Treuekarte) und verschiedenen Rabatttypen sind, die konfiguriert werden können. Alle Buchungen werden in einem Kanal auf, daher wird der Kanal wird sichergestellt, um nach einer Buchung vorhanden sein. Die verbleibende Entitäten sind optional. Auf jeder Masterdaten Seite ist ein Link zu einer zugehörigen Preisgruppenseite, in der Sie Preisgruppen nach Bedarf anzeigen und hinzufügen können. Bei einer Preisgruppe wird verwendet, um vier unterschiedliche Arten Entitäten auf Rabatte, den und Preisregulierungen auf Handelsvereinbarungen zugeordnet werden soll. Es wird empfohlen, eine Strategie für Planung, wie der Name die Preisgruppen sie organisiert beibehalten. Eine Option wird, einen Buchstaben oder eine Nummer präfix oder Suffix zu verwenden sein, um zwischen unterschiedlichen Arten zu unterscheiden. Beispiel 1 xxxxx für Kanalpreisgruppen und 2 xxxxx für Katalogpreisgruppen. Es gibt vier Abfrageseiten für die verschiedenen Einzelhandeltsentitäten für die Rabatten möglich sind.
+Im Diagramm wird die Beziehung zwischen Entitäten dargelegt die auf einer Buchung (Kanal, Katalog, Zugehörigkeit, Debitor, Treuekarte) erscheinen und die verschiedenen Rabatttypen, die konfiguriert werden können. Alle Buchungen sind in einem Kanal vorhanden, daher ist sichergestellt, dass der Kanal in einer Buchung vorhanden ist. Die verbleibende Entitäten sind optional. Auf jeder Masterdaten Seite ist ein Link zu einer zugehörigen Preisgruppenseite, in der Sie Preisgruppen nach Bedarf anzeigen und hinzufügen können. Eine Preisgruppe wird verwendet, um vier unterschiedliche Arten Entitäten zu unterscheiden die auf Rabatte, Preisregulierungen und Handelsvereinbarungen angewendet werden soll. Es wird empfohlen, eine Strategie für die Planung zu erstellen, wie die Preisgruppen benannt werden sollen, um sie organisiert zu behalten. Eine Option wäre, einen Buchstaben oder eine Nummer als Präfix oder Suffix zu verwenden, um zwischen unterschiedlichen Arten zu unterscheiden. Beispiel 1 xxxxx für Kanalpreisgruppen und 2 xxxxx für Katalogpreisgruppen. Es gibt vier Abfrageseiten für die verschiedenen Einzelhandeltsentitäten für die Rabatten möglich sind.
 
 -   **Preisgruppen Retail Channel **- Diese Seite enthält eine Liste der Kanäle und Rabatte, die für die jeweilige Preisgruppe verknüpft sind.
 -   **Katalogpreisgruppen **- Diese Seite enthält eine Liste der Kataloge und Rabatte, die für die jeweilige Preisgruppe verknüpft sind.
@@ -62,6 +62,6 @@ Das folgende Beispiel veranschaulicht die Aufgaben zur Einrichtung von Kanalraba
 <a name="see-also"></a>Siehe auch
 --------
 
-[Price adjustments and discounts](price-adjustments-discounts.md)
+[Preisregulierungen und Rabatte](price-adjustments-discounts.md)
 
 

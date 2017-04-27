@@ -1,6 +1,6 @@
 ---
 title: Anlagen-Massenaktualisierung
-description: "Wenn Sie von verwenden, können Sie die Gruppen Abschreibungskonventionen für Anlagen geändert werden, die dem gleichen Buchs sind."
+description: "Bei Verwendung von Büchern können die Abschreibungskonventionen für Gruppen von Anlagen geändert werden, die zum gleichen Buch gehören."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-mass-update"></a>Anlagen-Massenaktualisierung
 
-Wenn Sie von verwenden, können Sie die Gruppen Abschreibungskonventionen für Anlagen geändert werden, die dem gleichen Buchs sind.
+[!include[banner](../includes/banner.md)]
+
+
+Bei Verwendung von Büchern können die Abschreibungskonventionen für Gruppen von Anlagen geändert werden, die zum gleichen Buch gehören.
 
 Wenn Sie z. B. in den USA 40 Prozent Ihrer Anlagen im vierten Quartal des Jahres in Betrieb genommen wurden, müssen Sie die Abschreibungskonvention für Quartalsmitte verwenden. Mithilfe der Massenaktualisierung können alle Anlagen geändert werden, für die die neue Abschreibungskonvention erforderlich ist. 
 
@@ -36,6 +39,8 @@ Wenn Sie die Abschreibungskonvention für Anlagen aktualisieren, löschen Sie al
 Um die Abschreibungskonvention für Anlagen zu aktualisieren, die bereits veräußert wurden, müssen Sie die vorhandenen Abgangsbuchungen erst löschen. Sie müssen alle Buchungen löschen, die wegen der Veräußerung generiert wurden. 
 
 Nachdem Sie die Abschreibungskonvention für Anlagen aktualisiert haben, können Sie die Abschreibung und die außerordentliche Abschreibung für jede Anlage verarbeiten. Sie können auch manuelle Abschreibungsregulierungen vornehmen, wenn Anpassungen erforderlich sind.
+
+
 
 
 

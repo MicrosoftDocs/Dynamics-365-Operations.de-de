@@ -1,5 +1,5 @@
 ---
-title: "Verwenden Sie eine Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattzeiträume enthalten"
+title: "Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattzeiträume enthalten"
 description: Dieser Artikel zeigt, wie mehrere Rechnungen bezahlt werden, wenn jede einzelne Rechnung zum Abzug eines Skontos berechtigt ist. Die Szenarien in diesem Artikel zeigen auf, wie Skonti je nach Zeitpunkt der Zahlung variieren.
 author: twheeloc
 manager: AnnBe
@@ -26,18 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Verwenden Sie eine Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattzeiträume enthalten
+# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattzeiträume enthalten
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel zeigt, wie mehrere Rechnungen bezahlt werden, wenn jede einzelne Rechnung zum Abzug eines Skontos berechtigt ist. Die Szenarien in diesem Artikel zeigen auf, wie Skonti je nach Zeitpunkt der Zahlung variieren.
 
-Fabrikam verkauft Waren an Kunden 4032. Fabrikam bietet ein Skonto von 1 % an, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird. Fabrikam bietet auch Skonti auf Teilzahlungen an. Die Parameter sind settement ** ** Debitorenparameter auf der Seite.
+Fabrikam verkauft Waren an Kunde 4032. Fabrikam bietet ein Skonto von 1 % an, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird. Fabrikam bietet auch Skonti auf Teilzahlungen an. Die Ausgleichsparameter sind auf der Seite **Debitorenkontenparameter** verfügbar.
 
 ## <a name="invoices"></a>Rechnungen
 Debitor 4032 hat drei Rechnungen, die Summe ist 3.000,00:
 
--   Fakturieren Sie FTI-10040, für 1.000,00, eingegeben wurde. am 15. Mai Diese Rechnung für ist ein Skonto von 1 Prozent verwendet, wenn sie in 14 Tagen bezahlt hat.
--   Fakturieren Sie FTI-10041, für 1.000,00, eingegeben wurde. am 25. Juni Diese Rechnung für ist ein Skonto von 1 Prozent verwendet, wenn sie in 14 Tagen bezahlt hat.
--   Fakturieren Sie FTI-10042, für 1.000,00, eingegeben wurde. am 25. Juni Diese Rechnung für ist ein Skonto von 2 Prozent verwendet, wenn sie in fünf Tagen und einen Rabatt von 1 Prozent bezahlt hat, wenn sie in 14 Tagen bezahlt hat.
+-   Rechnung FTI-10040, für 1.000,00 wurde am 15. Mai eingegeben. Von dem Rechnungsbetrag wird ein Skonto von 1 % abgezogen, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird.
+-   Rechnung FTI-10041, für 1.000,00 wurde am 25. Mai eingegeben. Von dem Rechnungsbetrag wird ein Skonto von 1 % abgezogen, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird.
+-   Rechnung FTI-10042, für 1.000,00 wurde am 25. Mai eingegeben. Diese Rechnung berechtigt für einen Rabatt von 2 Prozent, wenn sie in fünf Tagen und einen Rabatt von 1 Prozent, wenn sie in 14 Tagen bezahlt wird.
 
 ## <a name="settle-all-invoices-on-june-29"></a>Begleichen aller Rechnungen am 29. Juni
 Wenn Arnie eine Zahlungserfassung erstellt, um diese Rechnungen am 29. Juni vollständig zu begleichen, beträgt die Zahlung 2.970,00. Die Summe aller Rabattbeträge ist 30.00. Arnie erstellt eine Zahlung für Debitor 4032 und öffnet anschließend die Seite **Buchungen ausgleichen**. Auf der Seite **Buchungen ausgleichen** markiert Arnie alle drei Rechnungspositionen für den Ausgleich:
@@ -76,7 +79,7 @@ Debitor 4032 kann einen Teilbetrag, wie etwa die Hälfte jeder Rechnung, bezahle
 | Ausgewählt                 | Normal            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1.000,00                             |                                       | USD      | 495,00           |
 | Ausgewählt und hervorgehoben | Normal            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1.000,00                             |                                       | USD      | 490,00           |
 
-Arnie dem Zahlungsbetrag von 1.485,00 kann auch manuell eingeben, bevor er die Bankbuchungen ** ** Seite öffnet. Wenn Arnie manuell den Zahlungsbetrag eingeben und dann alle drei Buchungen markiert, doch er den Wert im auszugleichenden Betrag ** ** Feld nicht für jede Buchung Einstellen, erhält er die nächste Nachricht, wenn er die Seite enthält:
+Arnie kann auch manuell den Zahlungsbetrag von 1.485,00 eingeben, bevor er die Seite **Bankbuchungen** öffnet. Wenn Arnie manuell den Zahlungsbetrag eingeben und dann alle drei Buchungen markiert hat, doch den Wert im Feld **Auszugleichenden Betrag** nicht für jede Buchung anpasst, erhält er folgende Nachricht, wenn er die Seite beendet:
 
 > Der Gesamtbetrag der markierten Transaktionen unterscheidet sich vom Erfassungsbetrag. Erfassungsbetrag ändern?
 
@@ -95,6 +98,8 @@ Auf der Seite **Debitorenbuchungen** zeigt Arnie diese Transaktion an.
 | FTI-10042  | Rechnung          | 6/25/2015 | 10042   | 1.000,00                             |                                       | 505,10   | USD      |
 | ARP-10040  | Zahlung          | 6/29/2015 |         |                                      | 1.485,00                              | 0,00     | USD      |
 | DISC-10040 | Skonto    | 6/29/2015 |         |                                      | 9,90                                  | 0,00     | USD      |
+
+
 
 
 

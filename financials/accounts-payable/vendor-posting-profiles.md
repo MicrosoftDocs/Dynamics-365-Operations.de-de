@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-posting-profiles"></a>Kreditoren-Buchungsprofile
 
+[!include[banner](../includes/banner.md)]
+
+
 Händlerbuchungsprofile steuern die Buchung von Händlertransaktionen im Hauptbuch.
 
 <a name="vendor-posting-profiles"></a>Kreditoren-Buchungsprofile
@@ -146,6 +149,8 @@ Geben Sie die folgenden Werte an, um das Buchungsprofil einzurichten:
 | **Ausgleich** | Aktivieren Sie diese Option, um den automatischen Ausgleich von Buchungen mit diesem Buchungsprofil zu aktivieren. Ist diese Option deaktiviert, müssen die Buchungen manuell mithilfe der Seite "Offene Buchungen ausgleichen" ausgeglichen werden. |
 | **Stornieren**     | Aktivieren Sie diese Option, wenn Sie in der Lage sein möchten, Buchungen mit diesem Buchungsprofil zu stornieren.                                                                                                               |
 | **Schließen**      | Wählen Sie ein Buchungsprofil aus, das geändert werden soll, wenn Buchungen mit diesem Buchungsprofil abgeschlossen werden. Eine Buchung gilt als abgeschlossen, wenn sie vollständig ausgeglichen wurde.                                       |
+
+
 
 
 

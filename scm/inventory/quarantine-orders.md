@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="quarantine-orders"></a>Quarantäneaufträge
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Quarantäneaufträge zum Sperren von Beständen verwendet werden. 
 
 Quarantäneaufträge können verwendet werden, um Bestand zu sperren. Beispielsweise empfiehlt es sich, Artikel aus Gründen der Qualitätskontrolle unter Quarantäne zu stellen. Bestand, der unter Quarantäne gestellt wurde, wird an einen Quarantänelagerort übertragen. **Hinweis:** Wenn Sie die erweiterten Lagerortverwaltungsprozesse (in der Lagerortverwaltung) verwenden, wir die Quarantäneauftragsverarbeitung nur für Rückholaufträge verwendet.
 
-## <a name="quarantine-onhand-inventory-items"></a>Verfügbare Lagerartikel Quarantäne
+## <a name="quarantine-onhand-inventory-items"></a>Verfügbare Lagerartikel unter Quarantäne stellen
 Wenn Sie Artikel unter Quarantäne stellen, können Sie die Quarantäneaufträge entweder manuell erstellen oder das System so einrichten, dass die Quarantäneaufträge automatisch erstellt werden. Um Quarantäneaufträge automatisch zu erstellen, wählen Sie die **Quarantäneverwaltung**-Option auf der **Richtlinien für Lagerbestand**-Registerkarte auf der **Lagersteuerungsgruppen**-Seite aus. Sie müssen außerdem im Feld **Quarantänelagerort** einen standardmäßigen Quarantänelagerort für den empfangenden Lagerort eingeben. Wenn der physisch verfügbare Lagerbestand in einer Bestellung oder einem Produktionsauftrag erfasst wird, werden Quarantäneelemente automatisch an einen Quarantänelagerort in Microsoft Dynamics 365 for Operations verschoben. Diese Verschiebung tritt auf, da der Status des Quarantäneauftrags in **Gestartet** geändert wird. Wenn Sie Quarantäneaufträge manuell erstellen, ist es nicht nötig anzufordern, dass der Artikel in der Artikelmodellgruppe für die Quarantäneverwaltung zugeordnet wird. Für diesen Vorgang müssen Sie den verfügbaren Lagerbestand, der unter Quarantäne gestellt werden soll, und den Quarantänelagerort angeben, der verwendet werden soll. Sie können den Quarantäneauftragsstatus verwenden, um die Planung des Vorgangs zu unterstützen.
 
 ## <a name="quarantine-order-statuses"></a>Status des Quarantäneauftrags
@@ -64,6 +67,8 @@ Als Teil des Quarantäneauftragsprozesses ist es möglich, Bestand als Ausschuss
 <a name="see-also"></a>Siehe auch
 --------
 
-[Inventory blocking](inventory-blocking.md)
+[Sperrung von Lagerbestand](inventory-blocking.md)
+
+
 
 

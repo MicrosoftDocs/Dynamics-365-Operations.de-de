@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>Kostenkategorien in Produktionsarbeitsplänen
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel bietet Informationen über Kostenkategorien, die für Produktionsumgebungen gelten, die Arbeitspläne verwenden.
 
 Kostenkategorien gelten für Produktionsumgebungen mit Arbeitsplänen. Sie werden betrieblichen Ressourcen und Arbeitsgängen des Arbeitsplans zugewiesen, um Stundenkosten zu definieren und Kostenbeiträge in den berechneten Kosten eines produzierten Artikels zu segmentieren. Die Produktionskostenbeiträge durch die Kostengruppen, die Kostenkategorien zugewiesen sind, werden nach betrieblicher Ressource und Aktivitätstyp (beispielsweise Rüst- und Bearbeitungszeit) klassifiziert. Die Genauigkeit der Kostengruppenzuweisung erlaubt die Berechnung von Produktionsgemeinkosten auf Basis von Arbeitsplaninformationen. 
@@ -51,5 +54,7 @@ Der Kostendatensatz für eine Kostenkategorie kann sich auf einen bestimmten Sta
 Von einem Arbeitsgang des Arbeitsplan werden in der Regel die Kostenkategorien, die dem Arbeitsgang für betriebliche Ressourcen oder dem Masterarbeitsgang zugewiesen sind, übernommen. Bei der Erstellung eines Produktionsauftrags wird die ausgewählte Arbeitsplanversion durch die Arbeitsgänge des Arbeitsplans innerhalb des Produktionsarbeitsplans widergespiegelt. Die Kostenkategorien, die den Arbeitsgängen im Produktionsarbeitsplan zugewiesen sind, können außer Kraft gesetzt werden. 
 
 Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. In diesem Fall ist eine Kostenkategorie für die Produktion und die Projektzwecke erforderlich. Sie müssen zusätzlich projektbezogene Informationen definieren, wenn eine Kostenkategorie für die Verwendung in Projekten gekennzeichnet ist.
+
+
 
 

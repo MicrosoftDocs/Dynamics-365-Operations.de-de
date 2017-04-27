@@ -1,5 +1,5 @@
 ---
-title: Zahlungsmethoden das einem Callcenter
+title: Zahlungsmethoden in einem Callcenter
 description: "Dieses Thema behandelt verschiedene Zahlungsmethoden, die in einem Callcenter in Einzelhandel und Handel verwendet werden können."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Zahlungsmethoden das einem Callcenter
+# <a name="payment-methods-in-a-call-center"></a>Zahlungsmethoden in einem Callcenter
+
+[!include[banner](includes/banner.md)]
+
 
 Dieses Thema behandelt verschiedene Zahlungsmethoden, die in einem Callcenter in Einzelhandel und Handel verwendet werden können.
 
@@ -43,6 +46,8 @@ Wenn Sie eine Kreditkartenzahlung vom Formular **Auftrag** übermitteln und eine
 
 -   Mit Schecksperren können Finanzmitarbeiter Aufträge verarbeiten, die gesperrt wurden, wenn die Zahlungsmethode "Scheck" eingegeben wurde und der Schwellenwertbetrag der Schecksperre überschritten wurde. Die Sperre kann manuell freigegeben werden oder automatisch am Ende des konfigurierten Zeitraums ablaufen.
 -   Sie können durch Schwellenwerte festlegen, welche Rückerstattung über Scheck oder Kreditkarte manuell genehmigt werden muss. Jede Rückerstattung, die größer als der Schwellenbetrag ist, wird der Genehmigungswarteschlange hinzugefügt. Nachdem Sie die Rückerstattung genehmigt haben, kann die Auftragsrücksendung fakturiert werden.
+
+
 
 
 

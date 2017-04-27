@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-receivable"></a>Zentralisierte Zahlungen für Debitorenkonten
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher muss die gleiche Buchung nicht in mehrere juristische Personen eingegeben werden. Dieser Artikel enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird.
 
 Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher muss die gleiche Buchung nicht in mehrere juristische Personen eingegeben werden. Darüber hinaus spart die Organisation Zeit, da die Prozesse für Zahlungsvorschläge, Bedarfsdeckung und die offene Bearbeitung und geschlossenen Buchungen für zentralisierte Zahlungen rationalisiert werden. 
 
-In einer Organisation mit zentralisierten Zahlungen gibt es viele juristische Personen für betriebliche Vorgänge. Dabei werden die Informationen zu ausstehenden Rechnungen von den einzelnen juristischen Personen verwaltet. Zahlungen für alle tätigen juristischen Personen werden von einer einzigen juristischen Person empfangen, die als die juristische Person für die Zahlung bekannt ist. Im Zuge des Ausgleichsprozesses werden die erforderlichen Buchungen vom Typ "Fällig bis" und "Fällig von" generiert. Sie können angeben, welche juristische Person in der Organisation die Buchungen für realisierte Gewinne oder Verluste erhalten soll und wie Skontobuchungen für zentralisierte Zahlungen zu behandeln sind. 
+In einer Organisation mit zentralisierten Zahlungen gibt es viele juristische Personen für betriebliche Vorgänge. Dabei werden die Informationen zu ausstehenden Rechnungen von den einzelnen juristischen Personen verwaltet. Die Zahlungen für alle tätigen juristischen Personen werden von einer einzigen juristischen Person (der so genannten juristischen Person für die Zahlung) entgegengenommen. Im Zuge des Ausgleichsprozesses werden die erforderlichen Buchungen vom Typ "Fällig bis" und "Fällig von" generiert. Sie können angeben, welche juristische Person in der Organisation die Buchungen für realisierte Gewinne oder Verluste erhalten soll und wie Skontobuchungen für zentralisierte Zahlungen zu behandeln sind. 
 
 In den folgenden Beispielen wird die Behandlung von Buchungen in unterschiedlichen Szenarios erläutert. Allen Beispielen liegt die folgende Konfiguration zugrunde:
 
@@ -66,14 +69,14 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 600,00 für das Fabrikam-Debito
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**
 
 | Konto                         | Sollbetrag | Habenbetrag |
 |---------------------------------|--------------|---------------|
 | Debitoren (Fabrikam)  | 600,00       |               |
 | Fällig an Fabrikam Ost (Fabrikam) |              | 600,00        |
 
-**Fabrikam East posting**
+**Buchung für Fabrikam Ost**
 
 | Konto                             | Sollbetrag | Habenbetrag |
 |-------------------------------------|--------------|---------------|
@@ -81,7 +84,7 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 600,00 für das Fabrikam-Debito
 | Debitoren (Fabrikam Ost) |              | 600,00        |
 
 ## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Beispiel 2: Debitorenzahlung der Rechnung einer anderen juristischen Person mit Skonto
-Bei Fabrikam geht eine Zahlung in Höhe von EUR 580,00 für den Fabrikam-Debitor "4000" (Northwind Traders) ein. Für Fabrikam Ost liegt eine offene Rechnung für den Debitor " 4000. Für die Rechnung wird ein Skonto in Höhe von EUR 20,00 gewährt. Die Zahlung wird mit den offenen Rechnungen für Fabrikam Ost ausgeglichen. Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost) gebucht.
+Bei Fabrikam geht eine Zahlung in Höhe von EUR 580,00 für den Fabrikam-Debitor "4000" (Northwind Traders) ein. Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "4000" vor. Für die Rechnung wird ein Skonto in Höhe von EUR 20,00 gewährt. Die Zahlung wird mit den offenen Rechnungen für Fabrikam Ost ausgeglichen. Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost) gebucht.
 
 ### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Buchung der Rechnung in Fabrikam Ost für Debitor "4000" von Fabrikam Ost
 
@@ -99,14 +102,14 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 580,00 für den Fabrikam-Debitor
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**
 
 | Konto                         | Sollbetrag | Habenbetrag |
 |---------------------------------|--------------|---------------|
 | Debitoren (Fabrikam)  | 580,00       |               |
 | Fällig an Fabrikam Ost (Fabrikam) |              | 580,00        |
 
-**Fabrikam East posting**
+**Buchung für Fabrikam Ost**
 
 | Konto                             | Sollbetrag | Habenbetrag |
 |-------------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Bei Fabrikam geht eine Zahlung in Höhe von 600,00 Euro für den Fabrikam-Debito
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**
 
 | Konto                         | Sollbetrag            | Habenbetrag           |
 |---------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Bei Fabrikam geht eine Zahlung in Höhe von 600,00 Euro für den Fabrikam-Debito
 | Fällig an Fabrikam Ost (Fabrikam) | EUR 0,00/USD 12,90    |                         |
 | Realisierter Gewinn (Fabrikam)        |                         | EUR 0,00/USD 12,90    |
 
-**Fabrikam East posting**
+**Buchung für Fabrikam Ost**
 
 | Konto                             | Sollbetrag            | Habenbetrag           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Von Fabrikam wird eine Zahlung für den Fabrikam-Debitor "4000" (Northwind Trade
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**
 
 | Konto                         | Sollbetrag            | Habenbetrag           |
 |---------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Von Fabrikam wird eine Zahlung für den Fabrikam-Debitor "4000" (Northwind Trade
 | Fällig an Fabrikam Ost (Fabrikam) | EUR 0,00/USD 13,46    |                         |
 | Realisierter Gewinn (Fabrikam)        |                         | EUR 0,00/USD 13,46    |
 
-**Fabrikam East posting**
+**Buchung für Fabrikam Ost**
 
 | Konto                             | Sollbetrag            | Habenbetrag           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Von Fabrikam wird eine Zahlung für den Fabrikam-Debitor "4000" (Northwind Trade
 | Debitoren (Fabrikam Ost) |                         | EUR 12,00/USD 14,47   |
 
 ## <a name="example-5-customer-credit-note-with-primary-payment"></a>Beispiel 5: Debitorengutschrift mit primärer Zahlung
-Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (Northwind Traders) ein. Die Zahlung wird mit einer offenen Rechnung für den Debitor "10.000" von Fabrikam West und einer offenen Gutschrift für den Debitor "4000" von Fabrikam Ost ausgeglichen. Die Zahlung wird für die primäre Zahlung auf der Bankbuchungen ** ** Seite ausgewählt.
+Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (Northwind Traders) ein. Die Zahlung wird mit einer offenen Rechnung für den Debitor "10.000" von Fabrikam West und einer offenen Gutschrift für den Debitor "4000" von Fabrikam Ost ausgeglichen. Die Zahlung wird im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** dargestellt.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Buchung der Rechnung in Fabrikam West für Debitor "10.000"
 
@@ -224,7 +227,7 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (North
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**
 
 | Konto                           | Sollbetrag | Habenbetrag |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (North
 | Debitoren (Fabrikam)    | 100,00       |               |
 | Fällig an Fabrikam West (Fabrikam)   |              | 100,00        |
 
-**Fabrikam East posting**
+**Buchung für Fabrikam Ost**
 
 | Konto                             | Sollbetrag | Habenbetrag |
 |-------------------------------------|--------------|---------------|
 | Debitoren (Fabrikam Ost) | 25,00        |               |
 | Fällig an Fabrikam (Fabrikam Ost)     |              | 25,00         |
 
-**Fabrikam West posting**
+**Buchung für Fabrikam West**
 
 | Konto                             | Sollbetrag | Habenbetrag |
 |-------------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (North
 | Debitoren (Fabrikam West) |              | 100,00        |
 
 ## <a name="example-6-customer-credit-note-without-primary-payment"></a>Beispiel 6: Debitorengutschrift ohne primäre Zahlung
-Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (Northwind Traders) ein. Die Zahlung wird mit einer offenen Rechnung für den Debitor "10.000" von Fabrikam West und einer offenen Gutschrift für den Debitor "4000" von Fabrikam Ost ausgeglichen. Die Zahlung wird der nicht als primäre Zahlung auf der Bankbuchungen ** ** Seite ausgewählt.
+Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (Northwind Traders) ein. Die Zahlung wird mit einer offenen Rechnung für den Debitor "10.000" von Fabrikam West und einer offenen Gutschrift für den Debitor "4000" von Fabrikam Ost ausgeglichen. Die Zahlung ist im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** nicht ausgewählt.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Buchung der Rechnung in Fabrikam West für Debitor "10.000"
 
@@ -273,21 +276,21 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (North
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost
 
-**Fabrikam posting**
+**Buchung für Fabrikam**
 
 | Konto                         | Sollbetrag | Habenbetrag |
 |---------------------------------|--------------|---------------|
 | Debitoren (Fabrikam)  | 75,00        |               |
 | Fällig an Fabrikam West (Fabrikam) |              | 75,00         |
 
-**Fabrikam East posting**
+**Buchung für Fabrikam Ost**
 
 | Konto                              | Sollbetrag | Habenbetrag |
 |--------------------------------------|--------------|---------------|
 | Debitoren (Fabrikam Ost)  | 25,00        |               |
 | Fällig an Fabrikam West (Fabrikam Ost) |              | 25,00         |
 
-**Fabrikam West posting**
+**Buchung für Fabrikam West**
 
 | Konto                                | Sollbetrag | Habenbetrag |
 |----------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (North
 | Debitoren (Fabrikam West)    |              | 75,00         |
 | Fällig von Fabrikam Ost (Fabrikam West) | 25,00        |               |
 | Debitoren (Fabrikam West)    |              | 25,00         |
+
+
 
 
 

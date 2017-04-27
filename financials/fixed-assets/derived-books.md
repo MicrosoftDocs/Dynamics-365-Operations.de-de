@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="derived-books"></a>Abgeleitete Bücher
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält eine Übersicht der Funktion für abgeleitete Bücher.
 
-Der Zweck abgeleiteter Bücher, ist die Buchung von Anlagenbuchbuchungen vereinfachen, indem für die regelmäßige Zeitabstände geplant werden.  Sie wählen ein Buch als primäres Buch aus. Dies ist üblicherweise das Buch für die buchhalterische Abschreibung. Anschließend werden diesem Buch andere Bücher zugeordnet, die für Buchungen in den gleichen Intervallen eingerichtet werden wie das primäre Buch. Bücher für steuerliche Abschreibung werden oft als abgeleitete Bücher eingerichtet. 
+Abgeleitete Wertmodelle sollen Wertmodellbuchungen für Anlagen vereinfachen, die in regelmäßigen Zeitabständen erfolgen.  Sie wählen ein Buch als primäres Buch aus. Dies ist üblicherweise das Buch für die buchhalterische Abschreibung. Anschließend werden diesem Buch andere Bücher zugeordnet, die für Buchungen in den gleichen Intervallen eingerichtet werden wie das primäre Buch. Bücher für steuerliche Abschreibung werden oft als abgeleitete Bücher eingerichtet. 
 
 Die häufigsten Posten, die zum Buchen in abgeleitete Abschreibungsbücher eingerichtet werden, sind Anschaffungen, Anschaffungsänderungen und Veräußerungen. 
 
@@ -42,6 +45,8 @@ Beim Buchen wird eine Anschaffungsbuchung in der Anlage 123 für das Buch B und 
 > [!NOTE]                                                                                                                               
 > Bücher, die zum Buchen von Posten in Intervallen eingerichtet werden, bei denen es sich nicht um die Intervalle des primären Buches handelt, müssen der Anlage als separate Bücher (und nicht als abgeleitete Bücher) zugeordnet werden.  
 
-Weitere Informationen finden Sie [Buchen mit abgeleiteten Büchern] (post-derived-value-models.md).
+Weitere Informationen finden Sie unter [Buchen mit abgeleiteten Büchern](post-derived-value-models.md).
+
+
 
 

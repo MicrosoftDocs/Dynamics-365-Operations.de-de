@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-orders-for-a-project"></a>Bestellungen für ein Projekt
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel werden die verschiedenen Methoden beschrieben, die Sie verwenden können, um Bestellungen für ein Projekt zu erstellen. Die Methode, die Sie verwenden, wird durch den Zweck der Bestellung, durch den Verbrauchszeitpunkt der eingekauften Artikel und dem Zeitpunkt der Fakturierung für ein Projekt bestimmt.
 
-In Microsoft Dynamics 365 für Arbeitsgänge, können Sie mehrere Methoden zur Verfügung, um Bestellungen für ein Projekt erstellen. Die Methode, die Sie verwenden, wird durch den Zweck der Bestellung, durch den Verbrauchszeitpunkt der eingekauften Artikel oder dem Zeitpunkt der Fakturierung der eingekauften Artikel für ein Projekt bestimmt.
+In Microsoft Dynamics 365 for Operations können Sie mehrere Methoden verwenden, um Bestellungen für ein Projekt zu erstellen. Die Methode, die Sie verwenden, wird durch den Zweck der Bestellung, durch den Verbrauchszeitpunkt der eingekauften Artikel oder dem Zeitpunkt der Fakturierung der eingekauften Artikel für ein Projekt bestimmt.
 
 ### <a name="methods-for-creating-a-purchase-order"></a>Methoden zum Erstellen einer Bestellung
 
@@ -72,5 +75,7 @@ Im Projektverwaltungs- und Buchhaltungsmodul stehen die folgenden Methoden zum E
 
 > [!NOTE] 
 > Wenn die Kreditorenrechnung oder der Lieferschein aktualisiert wird, werden Sie aufgefordert, den Lieferschein für den Artikelbedarf zu aktualisieren.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: Verarbeiten von Zuteilungen
-description: "Dieser Artikel wird Informationen über, Zuweisungen die Optionen für die Verarbeitung in Microsoft Dynamics 365 für Arbeitsgänge setzen und wie sie in der Budgetplanung verwendet werden können. Zuweisungen werden verwendet, um Beträge über mehrere Sachkontokombinationen zu verteilen. Sie unterstützen, um sicherzustellen, dass eine Ausgabe oder Umsatzerlös zum richtigen Objekt Buchhaltungsmodul in der Buchhaltung berechnet wird."
+description: "Dieser Artikel enthält Informationen zu Zuweisungen, die Optionen zum Verarbeitung in Microsoft Dynamics 365 for Operations und wie sie in der Budgetplanung verwendet werden können. Zuweisungen werden verwendet, um Beträge über mehrere Sachkontokombinationen zu verteilen. Sie unterstützen, um sicherzustellen, dass eine Ausgabe oder Umsatzerlös zum richtigen Objekt Buchhaltungsmodul in der Buchhaltung berechnet wird."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -28,11 +28,11 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="process-allocations"></a>Verarbeiten von Zuteilungen
 
-Dieser Artikel wird Informationen über, Zuweisungen die Optionen für die Verarbeitung in Microsoft Dynamics 365 für Arbeitsgänge setzen und wie sie in der Budgetplanung verwendet werden können. Zuweisungen werden verwendet, um Beträge über mehrere Sachkontokombinationen zu verteilen. Sie unterstützen, um sicherzustellen, dass eine Ausgabe oder Umsatzerlös zum richtigen Objekt Buchhaltungsmodul in der Buchhaltung berechnet wird.
+Dieser Artikel enthält Informationen zu Zuweisungen, die Optionen zum Verarbeitung in Microsoft Dynamics 365 for Operations und wie sie in der Budgetplanung verwendet werden können. Zuweisungen werden verwendet, um Beträge über mehrere Sachkontokombinationen zu verteilen. Sie unterstützen, um sicherzustellen, dass eine Ausgabe oder Umsatzerlös zum richtigen Objekt Buchhaltungsmodul in der Buchhaltung berechnet wird.
 
-Microsoft Dynamics 365 Arbeitsgänge für bietet die folgenden Leistungsmerkmale, diesen Prozess zu unterstützen:
+Microsoft Dynamics Dynamics 365 for Operations enthält die folgenden Funktionen zur Unterstützung dieses Vorgangs:
 
--   Weisen Sie manuell Buchungsbeträge, indem Sie in die der gesplittete Aktivität den Buchhaltungsverteilungen Standardvorlagen für Finanzdimensionen verwenden oder indem Sie auf ein Dokument angewendet. Weitere Informationen finden Sie Buchhaltungsverteilungen. [] (\ \ accounting-distributions.md Kreditor)
+-   Manuelle Zuteilung von Transaktionsbeträgen: Verwenden Sie dazu die Aktivität "Teilen" in den Buchhaltungsverteilungen oder wenden Sie Standardvorlagen für Finanzdimensionen auf ein Dokument an. Weitere Informationen finden Sie unter [Buchhaltungsverteilungen](\accounts-payable\accounting-distributions.md).
 -   Automatische Zuteilung von Transaktionsbeträgen: Dies geschieht auf der Grundlage von Zuteilungsbedingungen, die für das jeweilige Hauptkonto definiert sind. Zuteilungskontoeinträge werden basierend auf dem Prozentsatz und dem Zielsachkonto für jede Erfassung generiert, wenn ein Buchhaltungseintrag die für das Quellsachkonto definierten Kriterien erfüllt.
 -   Automatische Zuteilung von Sachkontosalden oder festen Beträgen auf der Grundlage von Sachkonto-Zuordnungsregeln. Die Sachkonto-Zuordnungsregeln werden periodisch mithilfe der Zuordnungserfassungen verarbeitet. 
 

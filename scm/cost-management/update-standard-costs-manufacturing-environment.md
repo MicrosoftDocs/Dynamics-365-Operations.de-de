@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Aktualisieren der Standardkosten in einer Produktionsumgebung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel bietet eine Anleitung zum Aktualisieren von Standardkosten in einer Umgebung ohne Produktionstätigkeit. 
 
 Aktualisierungen können neue Artikel, Kostenkategorien oder Berechnungsformeln für indirekte Kosten darstellen. Sie können auch Korrekturen und Kostenänderungen wiedergeben. Der Typ der Aktualisierung beeinflusst die Schritte, die erforderlich sind, um Standardkosten zu aktualisieren, wie in den folgenden Fällen veranschaulicht wird.
@@ -43,5 +46,7 @@ Aktualisierungen können neue Artikel, Kostenkategorien oder Berechnungsformeln 
 -   Sie berechnen die Kosten für einen neuen produzierten Artikel auf Basis der Informationen zur definierten, genehmigten und aktiven Stückliste bzw. zum Arbeitsplan.
 
 Überlegen Sie in jedem der aufgeführten Fälle sehr sorgfältig, wie die Standardkosten aktualisiert werden können.
+
+
 
 

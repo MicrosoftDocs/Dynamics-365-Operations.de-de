@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-element-dimensions"></a>Kostenelementdimensionen
 
+[!include[banner](../includes/banner.md)]
+
+
 Als eine der Kernpfeiler bei der Kostenrechnung werden Kostenelementdimensionen verwendet, um zu kategorisieren und nachzuverfolgen, wo Kosten hinfließen. 
 
 Ein Kostenelement entspricht einem kostenrelevanten Artikel in dem Kontenplan. Grundsätzlich kann es jeder Elementtyp auf der untersten Ebene in einem Unternehmen sein, wohin die Kosten fließen können. Kostenelemente als Konzeptbereich von Sachkonten zu allen kostenrelevanten Ressourcen. Aktuell unterstützt die Kostenrechnung Sachkonten.
@@ -64,12 +67,14 @@ Es gibt zwei Typen von Kostenelementen: primäre Kostenelemente und sekundäre K
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Kostenelementdimensionen und Kostenelement-Dimensionsmitglieder
 Kostenelemente werden als *Kostenelementdimensionen* bezeichnet. Die einzelnen Dimensionswerte werden *Kostenelement-Dimensionsmitglieder* genannt. Beispielsweise haben Sie eine US-Kontenplanstruktur (COA), die die Basis für ihre Offenlegungspflicht ist. Diese COA wird als Kostenelementdimension verwendet. Die Konten, die primäre Kostenelemente sind, werden als Kostenelement-Dimensionsmitglieder in der Kostenrechnung dargestellt. Das folgende Screenshot zeigt ein Beispiel der Hauptkonten als die Kostenelementdimension mit ihren tatsächlichen Hauptkonten als die Kostenelement-Dimensionsmitglieder an. 
 
-![Kosten-ElementDimensionen( [] . /media/cost-element-dimensions.png)]". /media/cost-element-dimensions.png)
+[![Kostenelementdimensionen](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Kostenelement-Dimensionsmitglieder über Datenkonnektoren importieren
 Um die Einstellungen der Kostenelement-Dimensionsmitglieder in der Kostenrechnung zu vereinfachen, können Sie Datenkonnektoren verwenden, die entweder vorkonfiguriert sind oder Ihr benutzerdefinierter Build sind, um die primären Kostenelemente aus einem oder mehreren Quellsystemen abzurufen.
 
 ## <a name="implementation-considerations"></a>Implementierungsüberlegungen
 Da Kostenelemente die unterste Ebene der Kostendetails darstellen, sollten Sie sicherstellen, dass alle Kostenelemente, die zur Berichterstellung auf Führungsebene erforderlich sind, einbezogen werden, wenn Sie die Kostenelementstruktur implementieren. Es kann eine Herausforderung sein, eine entsprechenden Anzahl von Kostenelementen für die Kostensteuerung zu finden. Wenn Sie Tausende von Kostenelementen haben, kann es schwierig sein, jedes Kostenelement zu steuern. Alternativ können Sie Kostenelemente gruppieren und die Kostensteuerung auf einer aggregierten Ebene verwalten.
+
+
 
 

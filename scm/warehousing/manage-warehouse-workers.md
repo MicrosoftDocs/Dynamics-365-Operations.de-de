@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-warehouse-workers"></a>Verwalten der Lagerortarbeitskräfte
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie Sie Microsoft Dynamics AX verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern in Ihren Lagerorten ausgeführt wird.
 
 Wenn Sie die Funktionen in der Lagerortverwaltung verwenden, werden alle Arbeitsgänge der Lagerarbeiter als *Arbeit* bezeichnet. Arbeit, wie die Entnahme, das Umlagern und das Zählen des verfügbaren Lagerbestands wird mithilfe von mobilen Geräten erfasst. Bevor ein Lagerarbeiter Arbeit ausführen kann, muss er einer Arbeitskraft in der Personalverwaltung zugeordnet werden. Jedes **Arbeitskraftkonto** kann mehrere Lagerortarbeitsbenutzer haben, die ihm zugeordnet sind. Diese Arbeitsbenutzer können in verschiedenen Lagerorten arbeiten und verschiedene Zugriffsebenen auf unterschiedliche Menüs des mobilen Geräts haben. Sie können die Lagerortarbeitsbenutzer als mehrere Anmeldungen für die ausgewählte Arbeitskraft betrachten. Jeder Arbeitsbenutzer hat einen Standardlagerort, und bestimmte Workflows werden durch die Menüartikel, die diesem Arbeitsbenutzer verfügbar sind, offengelegt. 
@@ -51,6 +54,8 @@ Eine Analyse der Zeit, die benötigt wird, um Arbeitsaufgaben zu verarbeiten, ka
 
 -   **Arbeit nach Benutzer** – Dieser Bericht zeigt die Arbeitskraftproduktivität, auf der Grundlage der tatsächlichen Zeiten im Vergleich mit erwarteten Zeiten.
 -   **Arbeit nach Arbeitstransaktionstyp** – Sie können diesen Bericht verwenden, um Unwirtschaftlichkeiten in bestimmten Lagerortprozessen zu untersuchen. Beispielsweise stellen Sie fest, dass Entnahmen für Umlagerungsaufträge diese Woche länger als in den Vorwochen dauern. Sie können diese Informationen dann für weitere Untersuchungen verwenden.
+
+
 
 
 

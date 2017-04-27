@@ -1,6 +1,6 @@
 ---
-title: "Budgetsteuerungsüberblick"
-description: "Dieser Artikel Budgetsteuerung stellt vor und fügt Informationen fest, um Sie Informationen, Budgetsteuerung in Microsoft Dynamics 365 für Arbeitsgänge zu konfigurieren, sodass Sie Finanzquellen verwalten können."
+title: "Überblick zur Budgetsteuerung"
+description: "Dieser Artikel stellt Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in Microsoft Dynamics 365 for Operations so konfigurieren können, damit Sie Finanzquellen verwalten können."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,39 +24,42 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="budget-control-overview"></a>Budgetsteuerungsüberblick
+# <a name="budget-control-overview"></a>Überblick zur Budgetsteuerung
 
-Dieser Artikel Budgetsteuerung stellt vor und fügt Informationen fest, um Sie Informationen, Budgetsteuerung in Microsoft Dynamics 365 für Arbeitsgänge zu konfigurieren, sodass Sie Finanzquellen verwalten können.
+[!include[banner](../includes/banner.md)]
+
+
+Dieser Artikel stellt Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in Microsoft Dynamics 365 for Operations so konfigurieren können, damit Sie Finanzquellen verwalten können.
 
 <a name="overview"></a>Überblick
 --------
 
-Budgetsteuerung in Microsoft Dynamics 365 für Arbeitsgänge unterstützt Verwaltung der Finanzquellen eine Organisation im Kontenplan, die Workflows, die, Benutzergruppen die entsprechenden Quelldokumente und Erfassungen, konfigurierbare die Berechnung des verfügbaren Budgetzyklen Mittels, die und die Schwellenwerte. Mit Steuerelementen kann eine Organisation während des Geschäftsjahrs seine Finanzquellen planen, messen und verwalten. 
+Die Budgetsteuerung in Microsoft Dynamics 365 for Operations  unterstützt die Verwaltung der Finanzquellen einer Organisation über den Kontenplan, den Workflow, die Benutzergruppen, die Quelldokumente und Erfassungen, konfigurierbare Berechnung der verfügbaren Budgetmittel, die Budgetzyklen und die Schwellenwerte. Mit Steuerelementen kann eine Organisation während des Geschäftsjahrs seine Finanzquellen planen, messen und verwalten. 
 
-Nachdem Budgets in Dynamics 365 für Arbeitsgänge genehmigt wurden, können Sie Budgetpläne verwenden, Budgetregistereinträge zu generieren, um das Aufwendungensbudget für eine Organisation erfassen. Alternativ können Sie Budgetregistereinträge von einem Programm erstellen oder Importieren des Fremdherstellers, anstatt, Budget- planungsfunktionen zu verwenden. 
+Nachdem Budgets in Dynamics 365 for Operations  genehmigt wurden, können Sie Budgetpläne verwenden, um Budgetregistereinträge zu generieren, um das Aufwendungensbudget für eine Organisation zu erfassen. Alternativ können Sie Budgetregistereinträge von einem Programm von einem Drittanbieter erstellen oder importieren, anstatt Budgetplanungsfunktionen zu verwenden. 
 
 Ausgaben können erfasst werden, indem Hauptkonten und Finanzdimensionen verwendet werden. Sie können Steuerelement der gesamten Aufwendungen so konfigurieren, dass sie die Richtlinien und Bedingungen der Organisation erfüllen, indem Sie Kombinationen von Finanzdimensionen und von Hauptkonten gruppieren. 
 
 Das folgende Diagramm zeigt die Funktion der Budgetsteuerung in den Phasen für einen typischen Budgetzyklus.
 
-![BudgetingCycle ([]. /media/budgetingcycle-300x198.png)]". /media/budgetingcycle.png) 
+[![BudgetingCycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
-Sie können nach verschiedenen Faktoren Budgetsteuerung konfigurieren:
+Sie können die Budgetsteuerung gemäß verschiedenen Faktoren konfigurieren:
 
 -   **Finanzdimensionen**– Welche Finanzdimensionen müssen verwendet werden, um einen Bericht des Budgets und der Istwerte zu erstellen und welche Finanzdimensionen sind erforderlich, um das Budget zu steuern? Gibt es bestimmte Dimensionskombinationen oder Hauptkonten, die besondere Aufmerksamkeit erfordern? Gibt es beispielsweise eine Anforderung, das Budget zu den Istwerten nach Kostenstelle und Programm zu verfolgen? Erfordern Reisekosten bestimmte Aufmerksamkeit?
 -   **Zeit** – Welcher Zeitrahmen (Finanzzeitraum, Finanzzeitraum seit Jahresbeginn usw.) wird verwendet, um verfügbare Budgets auszuwerten?
--   ** Quelldokumente ** – welche Quelldokumente müssen für Budgetsteuerung ausgewertet werden? Müssen die Dokumente pro Position oder pro Dokument ausgewertet werden?
+-   **Quelldokumente ** – welche Quelldokumente müssen für Budgetsteuerung ausgewertet werden? Müssen die Dokumente pro Position oder pro Dokument ausgewertet werden?
 -   **Berechnung der verfügbaren Budgetmittel** – Sollten Dokumente wie Bestellanforderungen (Vorabbelastung) sowie Bestellungen (Belastungen) in die Berechnung der Budgetmittel berücksichtigt werden? Müssen Dokumente in einem Entwurfsstatus in die Berechnung der Budgetmittel berücksichtigt werden?
 -   **Berechtigung für Außerkraftsetzung**– Wer ist berechtigt, das verfügbare Budget zu überschreiten?
 
-Die Budgetsteuerung ist vollständig in Dynamics 365 für Arbeitsgänge integriert. Daher können Sie das verfügbare Budget für geplante Einkäufe und tatsächliche Einkäufe überprüfen. Budgetanfragen und Berichte sind verfügbar. Benutzer können das Budget über Budgetzyklen evaluieren und die erforderlichen Anpassungen in Form einer Budgetüberarbeitung oder einer Übertrag vornehmen. Ein Budget-Manager kann das Budget und die Istwerte in Microsoft Excel auch exportieren, um besser nach Bedarf zu analysieren und zu planen.
+Budgetsteuerung ist vollständig in Dynamics 365 for Operations integriert. Daher können Sie das verfügbare Budget für geplante Einkäufe und tatsächliche Einkäufe überprüfen. Budgetanfragen und Berichte sind verfügbar. Benutzer können das Budget über Budgetzyklen evaluieren und die erforderlichen Anpassungen in Form einer Budgetüberarbeitung oder einer Übertrag vornehmen. Ein Budget-Manager kann das Budget und die Istwerte in Microsoft Excel auch exportieren, um besser nach Bedarf zu analysieren und zu planen.
 
 ## <a name="configuring-budget-control"></a>Konfigurieren der Budgetsteuerung
 ### <a name="budget-cycle-time-span"></a>Zeitspanne für Budgetzyklus
 
 Nachdem die grundlegende Budgetierung konfiguriert ist, definieren Sie die Zeit oder die Start- und Endperioden für die Budgetierung und Budgetsteuerung auf der Seite **Zeitspanne für Budgetzyklus**. Budgetzyklen entsprechen häufig dem Steuerkalender, können aber Geschäftsjahre umfassen.
 
-Die nächsten Schritte in der Konfiguration werden auf den verschiedenen Registerkarten für die Budgetsteuerungskonfiguration ** ** Seite abgeschlossen.
+Die nächsten Schritte in der Konfiguration werden auf den verschiedenen Registerkarten auf der Seite **Budgetsteuerungskonfiguration** abgeschlossen.
 
 ### <a name="define-parameters"></a>Parameter definieren
 
@@ -77,7 +80,7 @@ Dann können Sie auf der Registerkarte **Berechtigungen für Budgetüberschreitu
 Dann können Sie auf der Registerkarte **Verfügbare Budgetmittel** die Formel definieren, die verwendet wird, um die verfügbaren Budgetmittel zu berechnen. Je nachdem wie konservativ eine Organisation ihre Finanzquellen verwaltet oder unter Berücksichtigung der Bestimmungen oder der Industrieanforderungen, kann die Berechnung einen Entwurf oder ungebuchte Dokumenten enthalten. 
 
 > [!NOTE] 
-> Wenn die Berechnung für einen Budgetzyklus geändert wird, haben die Änderungen keine Dokumente, die zuvor die Budgetsteuerungsschecks übergaben und die gebucht oder abgeschlossen wurden.
+> Wenn diese Berechnung während eines Budgetzyklus geändert wird, beachten Sie, dass Dokumente, die möglicherweise zuvor Budgetsteuerungsüberprüfungen bestanden haben und gebucht oder abgeschlossen wurden, diesen Status beibehalten.
 
 ### <a name="documents-and-journals"></a>Dokumente und Erfassungen
 
@@ -96,7 +99,7 @@ Dann sollten Sie auf der Registerkarte **Budgetmodelle zuweisen** der Zeitspanne
 Auf der Registerkarte **Budgetsteuerungsregeln definieren** müssen Sie spezifische Regeln basierend auf den Finanzdimensionen erstellen, die für die Budgetsteuerung aktiviert sind. Wenn es beispielsweise einen Fokus basierend auf den Aufwendungen oder dem Ausgabenbereich für eine Abteilung gibt, dann kann das mit den Einstellungen hier definiert und ausgewertet werden. Verschiedene Schwellenwerte können für jede Budgetsteuerungsregel definiert werden. 
 
 > [!Important]
-> Die Budgetsteuerung ist für ein beliebiges Hauptkonto von ** Gewinn und Verlust **, ** Ausgaben **, ** von Umsatzerlösen, " Bilanz, Passivposten, oder Eigenkapital ** ** Anlage ** des Typs aktiviert. Wenn dieser Registerkarte eine Regel enthält, die leere Kriterien hat, wird die Budgetsteuerung für **alle **Finanzdimensionskombinationen aktiviert, die Hauptkonten dieses Typs umfassen. Daher ist es wichtig, Budgetsteuerungsregeln zu erstellen, die nur die Bereiche der Finanzdimensionskombinationen definieren, in denen eine aktivierte Budgetsteuerung von Bedeutung ist.  
+> Die Budgetsteuerung wird für ein Hauptkonto **Gewinn und Verlust**, **Ausgaben**, **Einnahmen, Bilanz, Verbindlichkeiten, Eigenkapital** oder **Anlage**-Typen. Wenn dieser Registerkarte eine Regel enthält, die leere Kriterien hat, wird die Budgetsteuerung für **alle **Finanzdimensionskombinationen aktiviert, die Hauptkonten dieses Typs umfassen. Daher ist es wichtig, Budgetsteuerungsregeln zu erstellen, die nur die Bereiche der Finanzdimensionskombinationen definieren, in denen eine aktivierte Budgetsteuerung von Bedeutung ist.  
 
 ### <a name="select-main-accounts"></a>Hauptkonten auswählen
 
@@ -114,15 +117,17 @@ Wenn Warnmeldungen zur Budgetsteuerung für alle Benutzergruppen unterdrückt we
 
 Nachdem die Budgetsteuerung konfiguriert wurde, können Sie diese Nutzung auf der Registerkarte **Budgetsteuerung aktivieren** aktivieren. Die Entwurfsversion wird dann wirksam.
 > [!Important]
-> Nachdem die Budgetsteuerung und aktiv und aktiviert ist nach Buchungen gebucht werden, sollte diese nicht zu verlassen der gedreht oder werden. Wenn die Budgetsteuerung deaktiviert ist, werden Budgettransaktionen nicht in der Budgetquellennachverfolgung erfasst, und es werden keine Budgetprüfungen mehr ausgeführt. Daher beinhalteten möglicherweise Dokumente, die bereits gebucht wurden, ordnungsgemäß keine Entlastungsbeträge oder Salden in Abfragen und Berichten, die zur Budgetsteuerung zugeordnet sind. Dazu zählen die Budgetsteuerungsstatistiken für alle Downstream-Aktivitäten oder das Anpassen von Dokumenten und Erfassungen. 
+> Wenn die Budgetsteuerung aktiviert wird und Transaktionen gebucht werden, sollte sie während des Jahres nicht abgeschaltet werden. Wenn die Budgetsteuerung deaktiviert ist, werden Budgettransaktionen nicht in der Budgetquellennachverfolgung erfasst, und es werden keine Budgetprüfungen mehr ausgeführt. Daher beinhalteten möglicherweise Dokumente, die bereits gebucht wurden, ordnungsgemäß keine Entlastungsbeträge oder Salden in Abfragen und Berichten, die zur Budgetsteuerung zugeordnet sind. Dazu zählen die Budgetsteuerungsstatistiken für alle Downstream-Aktivitäten oder das Anpassen von Dokumenten und Erfassungen. 
 
 Beachten Sie zudem, dass Transaktionen, die gebucht wurden, bevor die Budgetsteuerung aktiviert wurde, nicht für die Budgetsteuerung berücksichtigt werden. Daher empfiehlt es sich, die Budgetsteuerung nur zu Beginn eines neuen Budgetzyklus zu aktivieren. Stellen Sie sicher, dass für die Budgetregistereinträge, die Anfangsbudgetsalden für die Budgetsteuerung enthalten, nur aktualisierte Budgetsalden verwendet werden, nachdem die Budgetsteuerung aktiviert ist. Jedes offene Dokument (beispielsweise eine Bestellung) wird auf verfügbare Budgetmittel überprüft und erhält eine Budgetreservierung für die Budgetsteuerung, wenn Benutzer die Budgetsteuerungsüberprüfung im Dokument manuell auslösen.
 
 ## <a name="using-budget-control"></a>Verwenden der Budgetsteuerung
 Sobald die Budgetsteuerung aktiviert wird, erhalten Benutzer Budgetsteuerungswarnungen und -fehlermeldungen in Dokumenten und Erfassungen, die für die Budgetsteuerung konfiguriert werden. Denken Sie daran, Sie können die Budgetsteuerung konfigurieren, sodass Benutzer, wenn sie die Budgetmittel überschreiten, gewarnt werden, aber trotzdem weiterhin die Buchung bestätigen oder buchen können. Benutzer können die Details von fehlgeschlagenen Budgetprüfungen auf der Seite **Budgetsteuerungsfehler und Warnungen** anzeigen.   
 
-Von dieser Seite aus können Benutzer in die ** Budgetsteuerungsstatistiken nach Periode ** Seite bohren, um Budgetverfügbarkeit Detail konfiguriert und -Reservierungen für eine ausgewählte Budgetsteuerungsdimensionskombination anzuzeigen. Benutzer können auf der Seite **Budgetsteuerungsstatistik **auch die Budgetverfügbarkeit für alle Finanzdimensionskombinationen anzeigen, die in der Budgetsteuerung verwendet werden. 
+Von dieser Seite aus können Benutzer auf der Seite **Budgetsteuerungsstatistiken** Budgetverfügbarkeiten nach Perioden anzeigen und Reservierungen für eine ausgewählte Budgetsteuerungsdimensionskombination anzeigen. Benutzer können auf der Seite **Budgetsteuerungsstatistik **auch die Budgetverfügbarkeit für alle Finanzdimensionskombinationen anzeigen, die in der Budgetsteuerung verwendet werden. 
 
 Wenn die Budgetsteuerung für Bestellungen aktiviert ist, kann der Budget-Manager den Arbeitsbereich **Sachkontobudgets und Planungen** verwenden, um die Warteschlange aller nicht bestätigter Bestellungen mit Budgetprüfungswarnungen und -fehlern überprüfen. Wenn der Budget-Manager Berechtigungen für Budgetüberschreitung konfiguriert hat, kann er oder sie die Bestellung direkt im Arbeitsbereich bestätigen.    
+
+
 
 
