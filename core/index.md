@@ -1,6 +1,6 @@
 ---
-title: "Einführung in Dynamics 365 für Vorgänge"
-description: "Microsoft Dynamics 365 für Vorgänge ist Microsoft Anwendung für Unternehmen. Auf dieser Seite können Sie erfahren und das Produkt verwenden."
+title: "Einführung in Dynamics 365 for Operations"
+description: "Microsoft Dynamics 365 for Operations ist die Geschäftsanwendung von Microsoft für Unternehmen. Mithilfe dieser Seite können Sie das Produkt kennenlernen und in ihm die ersten Schritte unternehmen."
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -23,13 +23,13 @@ ms.lasthandoff: 04/12/2017
 
 
 ---
-# <a name="introduction-to-dynamics-365-for-operations"></a>Einführung in Dynamics 365 für Vorgänge
+# <a name="introduction-to-dynamics-365-for-operations"></a>Einführung in Dynamics 365 for Operations
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 für Vorgänge ist Microsoft Anwendung für Unternehmen. Sie können Personen zu schnell Intelligenter über eine intelligente Benutzeroberfläche den Zugriff auf Echtzeit-Einblicke und Daten. Es ermöglicht Unternehmen, Transformation und Innnovate mit bewährten Geschäftslogik, die Geschäftsprozesse schneller entwerfen kann. Es gibt Unternehmen die Flexibilität in ihrem eigenen Tempo wachsen und Geschäfte nahezu überall und jederzeit erlaubt ihnen ihre Operationen Global Geschäftsbedürfnisse skalieren. 
+Microsoft Dynamics 365 for Operations ist die Geschäftsanwendung von Microsoft für Unternehmen. Damit können schneller die richtigen Entscheidungen getroffen werden, und zwar dank einer intelligenten Benutzeroberfläche, die Zugriff auf Echtzeitinformationen und Daten ermöglicht. Unternehmen können sich so verändern und innovativer werden. Mit einer bewährten Geschäftslogik können sie ihre Geschäftsprozesse schneller neu konzipieren. Unternehmen erhalten die Flexibilität, in ihrem eigenen Tempo zu wachsen und praktisch überall und jederzeit Geschäften nachzugehen. Sie können so ihre Unternehmenstätigkeit global wahrnehmen, im Einklang mit ihren Geschäftsanforderungen. 
 
-Diese Anleitung hilft Ihnen Dynamics 365 Operationen für Ihr Unternehmen arbeiten lernen.    
+Mithilfe dieses Benutzerhandbuchs kann Dynamics 365 for Operations in Ihrem Unternehmen gewinnbringend eingesetzt werden.    
 
 <table>
 <colgroup>
@@ -40,50 +40,50 @@ Diese Anleitung hilft Ihnen Dynamics 365 Operationen für Ihr Unternehmen arbeit
 <tr class="odd">
 <td><p><a href="get-started/onboarding-home.md">Onboarding Ihrer Organisation</a></p>
 <p>Finanzdaten</p>
-<ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
-<li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
-<li><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></li>
-<li><a href="financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></li>
-<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></li>
-<li><a href="financials/fixed-assets/fixed-assets.md">Fixed assets</a></li>
-<li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
-<li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
-<li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
-<p><a href="dev-itpro/lcs-solutions/country-region.md">Regionale Besonderheiten</a></p>
+<ul><li><a href="financials/accounts-payable/accounts-payable.md">Kreditorenkonten</a></li>
+<li><a href="financials/accounts-receivable/accounts-receivable.md">Debitoren</a></li>
+<li><a href="financials/budgeting/budgeting-overview.md">Budgetierung</a></li>
+<li><a href="financials/cash-bank-management/cash-bank-management.md">Bargeld- und Bankverwaltung</a></li>
+<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Kostenrechnung</a></li>
+<li><a href="financials/fixed-assets/fixed-assets.md">Anlagen</a></li>
+<li><a href="financials/general-ledger/general-ledger.md">Hauptbuch</a></li>
+<li><a href="financials/project-management/overview-project-management-accounting.md">Projektverwaltung</a></li>
+<li><a href="financials/public-sector/public-sector-functionality.md">Öffentlicher Sektor</a></li></ul>
+<p><a href="dev-itpro/lcs-solutions/country-region.md">Regionale Funktionen</a></p>
 <p>Personalverwaltung</p>
    <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">HR-Strategie</a></li>
-  <li><a href="human-resources/manage-recruiting-process.md">Werben einstellen und motivieren</a></li>
-  <li><a href="human-resources/performance-management-overview.md">Mitarbeiter</a></li>
-  <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
-  <li><a href="human-resources/localizations/noam-usa-payroll.md">US-Funktionen</a></li>
+  <li><a href="human-resources/departments-jobs-positions.md">Personalverwaltungsstrategie</a></li>
+  <li><a href="human-resources/manage-recruiting-process.md">Personal beschaffen, einstellen und motivieren</a></li>
+  <li><a href="human-resources/performance-management-overview.md">Mitarbeiterschulung</a></li>
+  <li><a href="human-resources/manage-benefit-program.md">Vorteile</a></li>
+  <li><a href="human-resources/questionnaires.md">Fragebogen</a></li>
+  <li><a href="human-resources/localizations/noam-usa-payroll.md">Funktionen für die USA</a></li>
 </ul></td>
   <td>
   <p>Einzelhandel</p>
   <ul>
-<li><a href="retail/call-center-functionality.md">Call center</a></li>
-  <li><a href="retail/define-maintain-retail-channels.md">Channel setup and management</a></li>
-  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPO und Cloud POS</a></li>
-  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Einzelhandel-Entwickler und Verwaltung</a></li></ul>
+<li><a href="retail/call-center-functionality.md">Callcenter</a></li>
+  <li><a href="retail/define-maintain-retail-channels.md">Kanaleinrichtung und Verwaltung</a></li>
+  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS und Cloud POS</a></li>
+  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Einzelhandelsentwickler und Verwaltung </a></li></ul>
   <p>Lieferkettenverwaltung</p>
 <ul>
-<li><a href="supply-chain/cost-management/costing-sheets.md">Cost management</a></li>
-  <li><a href="supply-chain/inventory/inventory-locations.md">Inventory management</a></li>
-  <li><a href="supply-chain/master-planning/master-plans.md">Master planning</a></li>
-  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
-  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
-  <li><a href="supply-chain/production-control/create-production-orders">Production control</a></li>
-  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
-  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportation management</a></li>
-  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
-  <p>Entwickler und Admin-Funktion</p>
-  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
-  <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
-  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobile Anwendungen</a></li>
-  <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>
-  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
-  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Developer tools</a></li></ul></td>
+<li><a href="supply-chain/cost-management/costing-sheets.md">Kostenverwaltung</a></li>
+  <li><a href="supply-chain/inventory/inventory-locations.md">Lagerverwaltung</a></li>
+  <li><a href="supply-chain/master-planning/master-plans.md">Produktprogrammplanung</a></li>
+  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Beschaffung</a></li>
+  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Produktinformationsverwaltung</a></li>
+  <li><a href="supply-chain/production-control/create-production-orders">Produktionssteuerung</a></li>
+  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Vertrieb und Marketing</a></li>
+  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportverwaltung</a></li>
+  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Lagerortverwaltung</a></li></ul>
+  <p>Entwickler- und Verwaltungsfunktionalität</p>
+  <ul><li><a href="dev-itpro/analytics/analytics.md">Analysen</a></li>
+  <li><a href="dev-itpro/data-entities/data-entities.md">Datenentitäten</a></li>
+  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobile Apps</a></li>
+  <li><a href="dev-itpro/office-integration/office-integration.md">Office-Integration</a></li>
+  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Verwaltung</a></li>
+  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Entwicklertools</a></li></ul></td>
 </tr>
 </tbody>
 </table>

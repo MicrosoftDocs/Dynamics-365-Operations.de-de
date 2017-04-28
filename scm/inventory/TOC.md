@@ -1,21 +1,21 @@
-# Lagerort erstellen
-# Indbound Prozess
+# Lagerortlayout erstellen
+# Eingangsprozess
 # Ausgangsprozess
-# Inventory tracking einrichten
-## [Inventory journals](inventory-journals.md)
-## [Inventory locations](inventory-locations.md)
-## [Inventory statuses](inventory-statuses.md)
-## [Lagerbestand reservieren](reserve-inventory-quantities.md)
-## [Demselben Stapel für einen Auftrag reservieren](../sales-marketing/reserve-same-batch-sales-order.md)
+# Bestandsnachverfolgung einrichten
+## [Lagererfassungen](inventory-journals.md)
+## [Lagerplätze für Lagerbestand](inventory-locations.md)
+## [Lagerstatus](inventory-statuses.md)
+## [Reservieren von Lagermenge](reserve-inventory-quantities.md)
+## [Reservieren derselben Charge für einen Auftrag](../sales-marketing/reserve-same-batch-sales-order.md)
 # Lieferbestand
-## [Consignment](consignment.md)
-## [Lieferung einrichten](set-up-consignment.md)
+## [Sendung](consignment.md)
+## [Sendung einrichten](set-up-consignment.md)
 # Qualitätsmanagement
-## [Enable quality management](enable-quality-management.md)
-## [Inventory blocking](inventory-blocking.md)
-## [Nichtübereinstimmung management](enable-nonconformance-management.md)
-## [Quarantine order](quarantine-orders.md)
-## [Qualitätsmanagement](quality-management-processes.md)
-# Trace-Element und Stapelverarbeitung
-## [Zusammenführen der Lagercharge.](merge-inventory-batches.md)
-## [Trace-Artikel und Rohmaterialien](trace-items-raw-materials-inventory-production-sales.md)
+## [Qualitätsmanagement aktivieren](enable-quality-management.md)
+## [Sperrung von Lagerbestand](inventory-blocking.md)
+## [Qualitätsmangelverwaltung](enable-nonconformance-management.md)
+## [Quarantäneauftrag](quarantine-orders.md)
+## [Qualitätsmanagementprozess](quality-management-processes.md)
+# Artikel und Charge verfolgen
+## [Lagercharge zusammenführen](merge-inventory-batches.md)
+## [Artikel und Rohmaterial verfolgen](trace-items-raw-materials-inventory-production-sales.md)

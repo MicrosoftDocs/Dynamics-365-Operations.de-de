@@ -1,5 +1,5 @@
 ---
-title: Startseite &quot;Bargeld- und Bankverwaltung&quot;
+title: "Startseite für Bargeld- und Bankverwaltung"
 description: "Sie können die Bargeld- und Bankverwaltung verwenden, um die Bankkonten der juristischen Person und die Finanzinstrumente zu verwalten, die diesen Bankkonten zugeordnet sind."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="cash-and-bank-management-home-page"></a>Startseite "Bargeld- und Bankverwaltung"
+# <a name="cash-and-bank-management-home-page"></a>Startseite für Bargeld- und Bankverwaltung
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,44 +34,44 @@ Sie können die Bargeld- und Bankverwaltung verwenden, um die Bankkonten der jur
 
 Zu diesen Finanzinstrumenten gehören Einzahlungsbelege, Schecks, Wechsel und Solawechsel. Darüber hinaus haben Sie die Möglichkeit zum Abstimmen der Bankauszüge sowie zum Drucken von Bankdaten in Standardberichten.
 
--   [Cash discounts](cash-discounts.md)
--   [Settlement overview](settlement-overview.md)
--   [Configure settlement](configure-settlement.md)
--   [Foreign currency revaluation for Accounts payable and Accounts receivable](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
--   [Akkreditive](letters-of-credit.md)
--   [Kreditbrief und Importinkasso](letters-of-credit-import-collections.md)
+-   [Skonti](cash-discounts.md)
+-   [Ausgleichsüberblick](settlement-overview.md)
+-   [Konfigurieren eines Ausgleichs](configure-settlement.md)
+-   [Neubewertung der Fremdwährung für Kreditorenkonten und Debitoren](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
+-   [Kreditbriefe](letters-of-credit.md)
+-   [Kreditbriefe und Importinkasso](letters-of-credit-import-collections.md)
 -   [Bankgarantie](letters-of-guarantee.md)
 -   [Überblick über die erweiterte Bankabstimmung](advanced-bank-reconciliation-overview.md)
--   [Configure advanced bank reconciliation](configure-advanced-bank-reconciliation.md)
+-   [Konfigurieren der erweiterten Bankabstimmung](configure-advanced-bank-reconciliation.md)
 -   [Einrichten des erweiterten Bankabstimmungsimports](set-up-advanced-bank-reconciliation-import-process.md)
 -   [Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung](reconcile-bank-statements-advanced-bank-reconciliation.md)
--   [Einrichtung von Abgleichsregeln für Bankabstimmung](set-up-bank-reconciliation-matching-rules.md)
+-   [Einrichten von Abgleichsregeln für Bankabstimmung](set-up-bank-reconciliation-matching-rules.md)
 -   [Einrichten zentralisierter Zahlungen](set-up-centralized-payments.md)
 
-## <a name="accounts-payable-payments-and-settlements"></a>Kreditorenzahlungen und Ausgleiche
--   [Centralized payments for Accounts payable](../accounts-payable/centralized-payments-accounts-payable.md)
--   [Erstellen eines Zahlungsvorschlags mit Vendorenrechnungen](../accounts-payable/create-vendor-payments-payment-proposal.md)
--   [Reverse a vendor payment](../accounts-payable/reverse-vendor-payment.md)
--   [Vendor payments for a partial amount](../accounts-payable/vendor-payments-partial-amount.md)
--   [Vorauszahlungsrechnungen und Vorauszahlungen (Übersicht)](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [Scenario: Settle a partial vendor payment and settle the final payment in full before the discount date](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Scenario: Settle a partial vendor payment before the discount date with a final payment after the discount date](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [Scenario: Settle a partial vendor payment that has discounts on vendor credit notes](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [Scenario: Settle a partial vendor payment that has multiple discount periods](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [Scenario: Take a discount that is more than the calculated discount for a vendor payment](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [Scenario: Take a cash discount outside the cash discount period](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+## <a name="accounts-payable-payments-and-settlements"></a>Kreditorenkontenzahlungen und Ausgleiche
+-   [Zentralisierte Zahlungen für Kreditorenkonten](../accounts-payable/centralized-payments-accounts-payable.md)
+-   [Erstellen von Kreditorenrechnungen unter Verwendung eines Zahlungsvorschlags](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [Stornieren einer Kreditorenzahlung](../accounts-payable/reverse-vendor-payment.md)
+-   [Kreditorenzahlungen für einen Teilbetrag](../accounts-payable/vendor-payments-partial-amount.md)
+-   [Überblick über Vorauszahlungsrechnungen und Vorauszahlungen](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Szenario: Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der abschließenden vollständigen Zahlung vor dem Skontodatum](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [Szenario: Eine teilweise Kreditorenzahlung vor dem Skontodatum mit einer abschließenden Zahlung nach dem Skontodatum abgleichen](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Szenario: Eine teilweise Kreditorenzahlung, bei der Rabatte auf Kreditorengutschriften vorhanden sind, ausgleichen](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [Szenario: Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [Szenario: Nehmen Sie einen Rabatt in Anspruch, der höher ist, als der berechnete Rabatt für eine Kreditorenzahlung](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [Szenario: Ein Skonto außerhalb der Skontoperiode in Anspruch nehmen](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
 ## <a name="accounts-receivable-payments-and-settlements"></a>Debitorenzahlungen und Ausgleiche
--   [Centralized payments for Accounts receivable](../accounts-receivable/centralized-payments-accounts-receivable.md)
--   [Customer payments for a partial amount](../accounts-receivable/customer-payments-partial-amount.md)
--   [Reimburse customers](../accounts-receivable/reimburse-customers.md)
--   [Scenario: Automatic settlement and prioritization](../accounts-receivable/automatic-settlement-prioritization.md)
--   [Szenario: Behandlung Skonto für Überzahlungen](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Scenario: Settle a partial customer payment and settle the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [Scenario: Settle a partial customer payment before the discount date with a final payment after the discount date](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [Szenario: Verwenden einer Zahlungseingänge sich mehrere Rechnung, die mehrere Rabattzeiträumen umfassen](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+-   [Zentralisierte Zahlungen für Debitoren](../accounts-receivable/centralized-payments-accounts-receivable.md)
+-   [Debitorenzahlungen für einen Teilbetrag](../accounts-receivable/customer-payments-partial-amount.md)
+-   [Ausführen einer Debitorenrückerstattung](../accounts-receivable/reimburse-customers.md)
+-   [Szenario: Automatischer Ausgleich und Priorisierung](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [Szenario: Skonto für Überzahlungen behandeln](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [Szenario: Ausgleichen einer teilweisen Debitorenzahlung und Ausgleichen der abschließenden vollständigen Zahlung vor dem Skontodatum](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Szenario: Eine teilweise Debitorenzahlung vor dem Skontodatum mit einer abschließenden Zahlung nach dem Skontodatum ausgleichen](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [Szenario: Eine teilweise Debitorenzahlung, bei der Rabatte auf Gutschriften vorhanden sind, ausgleichen](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [Szenario: Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [Szenario: Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattzeiträume enthalten](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 

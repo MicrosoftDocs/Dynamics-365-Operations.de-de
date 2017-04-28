@@ -1,6 +1,6 @@
 ---
 title: "Startseite für die Finanzverwaltung"
-description: "Dieses Thema enthält eine Liste der Hilfethemen und andere Ressourcen für die Finanzverwaltung in Microsoft Dynamics 365 for Operations."
+description: "Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Finanzverwaltungsfunktionen in Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,18 +28,18 @@ ms.lasthandoff: 04/12/2017
 
 [!include[banner](includes/banner.md)]
 
-Dieses Thema enthält eine Liste der Hilfethemen und andere Ressourcen für die Finanzverwaltung in Microsoft Dynamics 365 for Operations. 
+Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Finanzverwaltungsfunktionen in Microsoft Dynamics 365 for Operations. 
 
-Wählen Sie einen Funktionsbereich aus, um weitere Informationen zu dieser zu ermitteln.
-- [Accounts payable](accounts-payable\accounts-payable.md) 
-- [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management\cash-bank-management.md)
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
-- [Fixed assets](fixed-assets\fixed-assets.md)
-- [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\overview-project-management-accounting.md)
-- [Public sector](public-sector\public-sector-functionality.md) 
-- [Budgeting](budgeting\budgeting-overview.md) 
+Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.
+- [Kreditorenkonten](accounts-payable\accounts-payable.md) 
+- [Debitoren](accounts-receivable\accounts-receivable.md) 
+- [Bargeld- und Bankverwaltung](cash-bank-management\cash-bank-management.md)
+- [Kostenrechnung](cost-accounting\cost-accounting-home-page.md)
+- [Anlagen](fixed-assets\fixed-assets.md)
+- [Hauptbuch](general-ledger\general-ledger.md) 
+- [Projektverwaltung](project-management\overview-project-management-accounting.md)
+- [Öffentlicher Sektor](public-sector\public-sector-functionality.md) 
+- [Budgetierung](budgeting\budgeting-overview.md) 
 
 
 
