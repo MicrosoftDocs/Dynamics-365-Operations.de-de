@@ -42,6 +42,7 @@
 ## [Rechnungs-IDs zu Aufträgen bearbeiten](emea-edit-invoice-id-sales-orders.md)
 ## [EU-Gelangensbestätigungen](emea-entry-certificates.md)
 ## [Zusammenfassende Meldung](emea-eu-sales-list.md)
+## [Wechselkursregulierungen](emea-exchange-rate-adjustments.md)
 ## [Dateiformate für Zahlungsmethoden](emea-select-file-formats-for-the-method-of-payments.md)
 ## [Anlagenveräußerungen für Estland und Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 ## [Intrastat](emea-intrastat.md)
@@ -56,18 +57,19 @@
 ## [SEPA-Kreditübertragungsüberblick](../accounts-payable/sepa-credit-transfer.md)
 ## [SEPA-Lastschriftüberblick](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Signaturgeber für Druckformulare einrichten](emea-set-up-signers-for-printing-forms.md)
-## [Perioden in periodischen Erfassungen teilen](emea-create-post-periodic-journals.md)
-## [Aktualisieren, wie Beträge in Berichten und Dokumenten angezeigt werden](emea-amount-printing-forms.md)
-## [VAT-Berichterstattung](emea-vat-reporting.md)
+## [MwSt.-Wechselkurse](emea-vat-exchange-rate.md)
 ## [Buchungen zum Ausgleich anzeigen](emea-transactions-settlement-form.md)
 ## Österreich
+### [Halbjahresabschreibung](emea-aut-half-year-depreciation.md)
 ### [Verpackungsmaterialgebühren](emea-aut-packing-material-fee-calculation.md)
 ### [MwSt.-Abrechnung](emea-aut-vat-statement-details.md)
 ## Belgien
 ### [CODA-Bankauszug](emea-bel-coda-bank-statement-import.md)
+### [Intervat-Steuererklärung](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM-Berichtseinrichtung](emea-bel-prodcom-report.md)
 
 ## Die Tschechische Republik
+### [Skonto für Gutschrift](emea-cze-credit-note-cash-discount.md)
 ### [Abschreibungsrundung](emea-cze-depreciation-rounding.md)
 ### [Abschreibungsunterbrechung](emea-cze-depreciation-suspension-holidays.md)
 ### [Anlagenabschreibung](emea-cze-fixed-assets-depreciation.md)
@@ -94,7 +96,9 @@
 ### [Erfassungslistenbericht](emea-deu-journal-list-report.md)
 ### [Eine separate Beschriftung für Gutschriften drucken, die ihren Ursprung im Vertrieb haben](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Ungarn
+### [Abschreibungsmethoden für Anlagen](emea-hun-fixed-assets-depreciation-methods.md)    
 ### [Kostengünstige Anlagen](emea-hun-low-cost-fixed-assets.md)
+### [Anlage in den Bestand verschieben](emea-hun-fixed-asset-to-inventory.md)
 ## Italien
 ### [Details von MwSt.-Abrechnung](emea-ita-vat-statements-details.md)
 ### [Bericht mit der schwarzen Liste](emea-ita-black-list-report.md)
@@ -103,6 +107,7 @@
 ### [Lieferschein-Datumsprüfung auf Rechnungen](emea-ita-packing-slip-date-verification-on-invoice.md)
 ### [Mehrwertsteuerbücher](emea-ita-fiscal-books.md)
 ### [Geteilte Zahlung für Rechnungen, die der öffentlichen Verwaltung ausgestellt wurden](emea-ita-split-payment-invoices-issued-public-administration.md)
+### [Quellensteuer](emea-ita-withholding tax.md)
 ## Lettland
 ### [Anlagenbuchhaltung](emea-lva-fixed-assets-accounting.md)
 ### [Nachverfolgung von Änderung des Anlagenstandorts](emea-lva-fixed-assets-location-fields-change.md)
@@ -119,13 +124,18 @@
 ### [Duplizierte Verkaufsrechnungsnummerierung](emea-pol-sales-invoice-duplicates-numbering.md)
 ### [Anlagenabschreibung](emea-pol-fixed-assets-depreciation.md)
 ### [Anlagenveräußerungs-Funktionenerweiterung](emea-pol-fixed-asset-disposal-functionality-extension.md)
+### [Retourfähige Verpackung](emea-pol-returnable-packages.md)
+### [Mehrwertsteuerberichte](emea-pol-sales-tax-reports.md)
+### [Standardprotokolldatei (SAF-T)](emea-pol-standard-audit-file-saf.md)
 ### [Umsatzsaldenbericht](emea-pol-turnover-balances-statement.md)
 ## Spanien
-### [Wechseloptionen](emea-esp-bill-of-exchange-options.md)
 ### [Skonten auf die Rechnung anwenden](emea-esp-cash-discount-applied-invoice.md)
+### [Wechseloptionen](emea-esp-bill-of-exchange-options.md)
+### [Mehrwertsteuer nach vereinnahmten Geldern](emea-esp-conditional-sales-tax.md)
 ### [Rechnungskonto für Steuerdaten](emea-esp-fiscal-data-invoice-account.md)
 ### [Anlagengruppenneubewertung](emea-esp-fixed-asset-group-revaluation.md)
-### [Einmaliger Debitoren](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [Innergemeinschaftliche MwSt.](emea-esp-intra-community-vat.md)
+### [Einmalige Debitoren](emea-esp-no-one-time-customer-for-project-contracts.md)
 ### [Solawechseloptionen](emea-esp-promissory-note-options.md)
 ### [Verkaufs- und Kaufzyklen](emea-esp-sales-purchase-cycle.md)
 ### [Besondere Einträge und Eröffnungsbögen](emea-esp-opening-sheets-spain.md)
@@ -163,3 +173,4 @@
 
 # Nordamerika
 ## [Jahresendsteuererklärung (US 1099) für die Vereinigten Staaten](noam-usa-year-end-1099-reporting.md)
+

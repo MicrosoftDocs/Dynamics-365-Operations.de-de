@@ -170,6 +170,7 @@
 ## [Kostenelementdimensionen](cost-accounting/cost-elements.md)
 ## [Kostenobjektdimensionen](cost-accounting/cost-objects.md)
 ## [Kostenelement-Dimensionselemente einem allgemeinen Satz von Dimensionselementen zuordnen](cost-accounting/map-cost-elements-dimension-members.md)
+## [Gemeinkostenberechnung](cost-accounting/overhead-calculation.md)
 ## [Mobiler Arbeitsbereich für die Kostensteuerung](cost-accounting/cost-controlling-mobile-workspace.md)
 ## [Power BI-Inhalt der Kostenrechnungsanalyse](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
 ## [Sicherheit für den Power BI-Inhalt der Kostenrechnungsanalyse einrichten](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
@@ -206,4 +207,18 @@
 ## [Projektangebote](project-management/project-quotations.md)
 ## [Projektressourcenzuordnung](project-management/project-resourcing.md)
 ## [Projektstrukturpläne](project-management/work-breakdown-structures.md)
+## [Mobiler Arbeitsbereich für Projektzeiterfassung](project-management/project-time-entry-mobile-workspace.md)
 # [Lokalisierungen](localizations/TOC.md)
+
+# [Personalverwaltung](/dynamics365/operations/human-resources/index)
+
+# [Einzelhandel](/dynamics365/operations/retail/index)
+
+# [Lieferkettenverwaltung](/dynamics365/operations/supply-chain/index)
+
+# [Entwickler und Administrator](/dynamics365/operations/dev-itpro/index)
+
+# Weitere Ressourcen
+## [Dynamics 365 for Operations – Glossar](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [Neuheiten und Änderungen](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
+

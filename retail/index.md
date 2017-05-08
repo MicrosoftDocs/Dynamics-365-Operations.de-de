@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: 0d00f33ce8059acd877d1c177e3def0b5f0b73b1
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a8385e7103b74be33fd79c1143e481ad8edca31c
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,11 +35,9 @@ Dynamics 365 for Operations – Retail bietet eine vollständige Shoppingerfahru
 Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der effektiveren Verwendung von Microsoft Dynamics 365 for Operations – Retail unterstützen. Im Bereich ganz links wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten. 
 
 ## <a name="set-up-retail-channels"></a>Retail Channels einrichten
-Während Sie Ihre Einzelhandelsumgebung einrichten, entscheiden Sie, wie Sie Ihren physischen Laden (bezeichnet als *Einzelhandelsgeschäft* in Dynamics 365 for Operations) und Ihre Onlinegeschäftsvorgänge definieren und konfigurieren. 
+Während Sie Ihre Einzelhandelsumgebung einrichten, entscheiden Sie, wie Sie Ihre Läden (physische Läden, Onlinegeschäfte und Callcenter) definieren und konfigurieren. 
 
-Jedes Einzelhandelsgeschäft kann seine eigenen Zahlungsmethoden, Preisgruppen, POS-Lösungen, Zahlungseingangskonten, Ausgabenkonten und Mitarbeiter haben. Nachdem Sie Ihr Einzelhandelsgeschäft erstellt haben, weisen Sie die Produkte zu, die das Geschäft umfassen soll. Sie weisen dem Geschäft außerdem Mitarbeiter, Kassen und Debitoren zu. Fügen Sie das neue Geschäft schließlich einer Organisationshierarchie hinzu.
-
-Wenn Sie Ihren Onlineshop erstellen, müssen Sie Komponenten, wie Sortimente, Attribute, Zahlungs- und Versandmethoden, einrichten. Sie können auch Preise, verkaufsfördernde Maßnahmen, Rabatte und Versandbedingungen festlegen, die speziell für diesen Onlineshop bestimmt sind.
+Jedes Einzelhandelsgeschäft kann seine eigenen Zahlungsmethoden, Liefermethoden, Preisgruppen, Zahlungseingangskonten, Ausgabenkonten, Kassen und Mitarbeiter haben. Nachdem Sie Ihr Einzelhandelsgeschäft erstellt haben, erstellen Sie ein Produktsortiment für das Geschäft. Sie können auch filialspezifische Preise und Rabatte definieren, die Produkten zugeordnet sind, die im Shop verfügbar sind.
 
 -   [Retail Channels definieren](define-maintain-retail-channels.md)
 -   [Onlineshop – Überblick](online-stores.md)
@@ -49,10 +48,10 @@ Sie können einen Callcenter als Typ eines Retail Channels einrichten. In einem 
 -   [Callcenterfunktionen](call-center-functionality.md)
 -   [Erstellen von Callcenterkatalogen](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Definieren Ihrer POS- und MPOS-Lösungen
-Retail Modern POS (MPOS) ist eine Verkaufsstellen-App für PCs, Tablets und Smartphones. Verkaufspersonal kann Verkaufsbuchungen und Debitorenbestellungen verarbeiten sowie tägliche Vorgänge und die Lagerverwaltung mit mobilen Geräten überall im Geschäft sowie an PC-basierten Kassen ausführen. Cloud POS ist ein browserbasierter POS. 
+## <a name="define-your-pos-solutions"></a>Definieren Ihrer POS-Lösungen
+Retail Modern POS (MPOS) ist eine Verkaufsstellen-App für PCs, Tablets und Smartphones. Verkaufspersonal kann Verkaufsbuchungen und Debitorenbestellungen verarbeiten, Kundenaktivitäten durchführen sowie tägliche Vorgänge und die Lagerverwaltung mit mobilen Geräten überall im Geschäft sowie an PC-basierten Kassen ausführen. Cloud POS ist ein browserbasierter POS, der in jedem Standardbrowser gestartet werden kann. 
 
-Es gibt mehrere Komponenten, die Sie einrichten, um die Beziehungen innerhalb eines Geschäfts zu definieren, die POS-Kassen oder Kanäle innerhalb des Geschäfts sowie die Einzelhandelsperipheriegeräte, die diese Kassen oder Kanäle verwenden, um Transaktionen zu verarbeiten. Sie definieren außerdem die Merkmale einer bestimmten POS-Instanz, einschließlich des Hardwareprofils oder Setups für Einzelhandelsperipheriegeräte, die an der Kasse verwendet werden, das Geschäft, dem die Kasse zugeordnet ist sowie die visuelle Oberfläche für den Benutzer, der sich an dieser Kasse anmeldet.
+Es gibt mehrere Komponenten, die Sie einrichten, um die Beziehungen innerhalb eines Geschäfts zu definieren, die POS-Kassen innerhalb des Geschäfts sowie die Einzelhandelsperipheriegeräte, die diese Kassen verwenden, um Transaktionen zu verarbeiten. Sie definieren außerdem die Merkmale einer bestimmten POS-Instanz, einschließlich des Hardwareprofils oder Setups für Einzelhandelsperipheriegeräte, die an der Kasse verwendet werden, das Geschäft, dem die Kasse zugeordnet ist, die visuelle Oberfläche für den Benutzer, der sich an dieser Kasse anmeldet, sowie die Funktionen, die für die Kasse aktiviert sind. Sie legen außerdem fest, ob die Kasse mit getrennter Verbindung oder offline betrieben werden kann.
 
 -   [Definieren und Verwalten von Kanal-Clients, Kassen und Hardwarestationen](define-maintain-channel-clients-registers-hw-stations.md)
 -   [MPOS konfigurieren und installieren](retail-modern-pos-device-activation.md)
@@ -92,4 +91,6 @@ Meinungen, Neuigkeiten und weitere Informationen zu Microsoft Dynamics 365 for O
 Es gibt viele Themen zu Einzelhandel im <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX-Produktteamblog</a>. Einige dieser Beiträge wurden für die ältere Version von Dynamics 365 for Operations erstellt, aber die gleichen Konzepte gelten noch und die Prozeduren sind in der aktuellen Version vergleichbar.
 
 Der <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations-Partner-Community-Blog</a> bietet Microsoft Dynamics-Partnern eine einzige Ressource, in der sie über Neuigkeiten und Trends bei MBS Operations erfahren können.
+
+
 

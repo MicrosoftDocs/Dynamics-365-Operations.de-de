@@ -56,6 +56,7 @@
 ### [Stückliste und Formel](production-control/bill-of-material-bom.md)
 ### [Funktionen des Stücklistendesigners](production-control/bom-designer-functionality.md)
 ### [Produktdimension](pim/product-dimensions.md)
+### [Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten](production-control/default-order-settings.md)
 ### [Produktnummernbezeichnung](pim/product-variant-identification-nomenclature.md)
 ### [FAQ zu produktbezogener Übersetzung](pim/translations-product-related-information.md)
 ### [Seriennummer im Vertriebsprozess registrieren](sales-marketing/register-serial-numbers-sales-process.md)
@@ -70,49 +71,77 @@
 ### [Ein Konfigurationsmodell einrichten](pim/set-up-maintain-product-configuration-model.md)
 ### [Vom System und Benutzer definierte Tabelleneinschränkung](pim/system-defined-user-defined-table-constraints.md)
 # Produktionssteuerung
-## Produktionsprozess    
-### [Aktivitätsbasierte Fremdarbeit](production-control/activity-based-subcontracting.md)
-### [Chargenattribute](production-control/batch-attributes.md)
-### [Stücklisten und Formeln](production-control/bill-of-material-bom.md)
-### [Funktionen des Stücklistendesigners](production-control/bom-designer-functionality.md)
-### [Konsolidierte Chargenaufträge](production-control/consolidated-batch-orders.md)
-### [Fremdarbeit in Produktion verwalten](production-control/manage-subcontract-work-production.md)
-### [Mischplanung: Diskrete Beschaffung, Prozessbeschaffung und Lean-Beschaffung kombinieren](production-control/mixed-mode-plan.md)
-### [Produktionsprozess](production-control/production-process-overview.md)
-### [Anforderungen für Produktionseinstellungen](production-control/production-set-up-requirements.md)
-### [Arbeitspläne und Arbeitsgänge](production-control/routes-operations.md)
-## Produktionsaufträge
-### [Produktionsaufträge erstellen](production-control/create-production-orders.md)
-### [Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten](production-control/default-order-settings.md)
-### [Freigeben von Produktionsaufträgen](production-control/release-production-orders.md)
-### [Den Produktionsauftragsstatus zurücksetzen](production-control/reverse-production-order-status.md)
-### [Fertigmeldung für Stücklisten](production-control/report-boms-as-finished.md)
-### [Fertigmeldung für Produktionsaufträge](production-control/report-production-orders-as-finished.md)
-## Lean-Produktion 
-### [Unterstützung der Kanban-Übertragungskarte für Strichcodescanner](production-control/kanban-transfer-board-support-barcode-scanner.md) 
-### [Kanban-Feinterminierung für Lean Manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+## [Produktionsprozessübersicht](production-control/production-process-overview.md)
+## [Mischplanung: Diskrete Beschaffung, Prozessbeschaffung und Lean-Beschaffung kombinieren](production-control/mixed-mode-plan.md)
+## [Fremdarbeit in Produktion verwalten](production-control/manage-subcontract-work-production.md)
+## Einzelfertigung
+### Produktionsmasterdaten verwalten
+#### [Anforderungen für Produktionseinstellungen](production-control/production-set-up-requirements.md)
+#### [Stücklisten und Formeln](production-control/bill-of-material-bom.md)
+#### [Funktionen des Stücklistendesigners](production-control/bom-designer-functionality.md)
+#### [Herstellkostenkalkulationen](cost-management/bom-calculations.md)
+#### [Betriebliche Ressourcen](production-control/operations-resources.md)
+#### [Ressourcenfähigkeiten](production-control/resource-capabilities.md)
+#### [Arbeitspläne und Arbeitsgänge](production-control/routes-operations.md)
+#### [Standardwerte zu Produktionsaufträgen in der Fertigungssteuerung](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Lagerortarbeitsrichtlinien](warehousing/warehouse-work-policies.md)
+### Produktionsarbeitsgänge planen
+#### [Grobterminierung](production-control/operations-scheduling.md)
+#### [Feinterminierung](production-control/job-scheduling.md)
+#### [Grobterminierungsoptionen](production-control/operation-scheduling-options.md)
+### Produktionseinzelvorgänge betreiben
+#### [Produktionsaufträge erstellen](production-control/create-production-orders.md)
+#### [Freigeben von Produktionsaufträgen](production-control/release-production-orders.md)
+#### [Den Produktionsauftragsstatus zurücksetzen](production-control/reverse-production-order-status.md)
+#### [Fertigmeldung für Produktionsaufträge](production-control/report-production-orders-as-finished.md)
+#### [Fertigmeldung für Stücklisten](production-control/report-boms-as-finished.md)
+#### [Materialersatz in der Fertigung](production-control/substitute-items-bom-lines.md)
+#### [Registrierung für Fertigungssteuerung](production-control/registration-manufacturing-execution.md)
+#### [Produktionsrückmeldung](production-control/production-feedback.md)
+#### [Zeit- und Anwesenheitserfassung](production-control/time-attendance-registrations.md)
+### Finanzdaten in der Produktion verwalten
+#### [Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen](production-control/allocate-time-jobs-job-bundle.md)
+#### [Materialentnahme berechnen](production-control/consumption.md)
+#### [Produktionsbuchung](cost-management/production-posting.md)
+## Lean Manufacturing 
 ### [Übersicht über Lean Manufacturing](production-control/lean-manufacturing-overview.md)
-### [Eine Lean Organization modellieren](production-control/lean-manufacturing-modeling-lean-organization.md)
-## Arbeitsgänge und Einzelvorgänge planen
-### [Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen](production-control/allocate-time-jobs-job-bundle.md)
-### [Feinterminierung](production-control/job-scheduling.md)
-### [Grobterminierungsoptionen](production-control/operation-scheduling-options.md)
-### [Grobterminierung](production-control/operations-scheduling.md)
-## Ressourcen
-### [Betriebliche Ressourcen](production-control/operations-resources.md)
-### [Ressourcenfähigkeiten](production-control/resource-capabilities.md)
-### [Zeit- und Anwesenheitserfassung](production-control/time-attendance-registrations.md)
-## Fertigungssteuerung
-### [Materialersatz in der Fertigung](production-control/substitute-items-bom-lines.md)
-### [Materialentnahme berechnen](production-control/consumption.md)
-### [Produktionsrückmeldung](production-control/production-feedback.md)
-### [Standardwerte zu Produktionsaufträgen in der Fertigungssteuerung](production-control/production-order-defaults-manufacturing-execution.md)
-### [Produktionsbuchung](cost-management/production-posting.md)
-### [Registrierung für Fertigungssteuerung](production-control/registration-manufacturing-execution.md)
+### [Aktivitätsbasierte Fremdarbeit](production-control/activity-based-subcontracting.md)
+### Produktionsmasterdaten verwalten
+#### [Eine Lean Organization modellieren](production-control/lean-manufacturing-modeling-lean-organization.md)
+#### [Betriebliche Ressourcen](production-control/operations-resources.md)
+### Kanban-Einzelvorgänge planen
+#### [Kanban-Feinterminierung für Lean Manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+#### [Feinterminierung](production-control/job-scheduling.md)
+### Kanban-Einzelvorgänge betreiben
+#### [Unterstützung der Kanban-Übertragungskarte für Strichcodescanner](production-control/kanban-transfer-board-support-barcode-scanner.md)
+#### [Produktionsrückmeldung](production-control/production-feedback.md)
+## Prozessfertigung
+### Produktionsmasterdaten verwalten
+#### [Stücklisten und Formeln](production-control/bill-of-material-bom.md)
+#### [Betriebliche Ressourcen](production-control/operations-resources.md)
+#### [Ressourcenfähigkeiten](production-control/resource-capabilities.md)
+#### [Chargenattribute](production-control/batch-attributes.md)
+#### [Standardwerte zu Produktionsaufträgen in der Fertigungssteuerung](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Anforderungen für Produktionseinstellungen](production-control/production-set-up-requirements.md)
+### Produktionsarbeitsgänge planen
+#### [Grobterminierung](production-control/operations-scheduling.md)
+#### [Grobterminierungsoptionen](production-control/operation-scheduling-options.md)
+#### [Feinterminierung](production-control/job-scheduling.md)
+### Produktionseinzelvorgänge betreiben
+#### [Konsolidierte Chargenaufträge](production-control/consolidated-batch-orders.md)
+#### [Materialersatz in der Fertigung](production-control/substitute-items-bom-lines.md)
+#### [Registrierung für Fertigungssteuerung](production-control/registration-manufacturing-execution.md)
+#### [Produktionsrückmeldung](production-control/production-feedback.md)
+#### [Zeit- und Anwesenheitserfassung](production-control/time-attendance-registrations.md) 
+### Finanzdaten in der Produktion verwalten
+#### [Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen](production-control/allocate-time-jobs-job-bundle.md)
+#### [Materialentnahme berechnen](production-control/consumption.md)
+#### [Produktionsbuchung](cost-management/production-posting.md)
 # Vertrieb und Marketing
 ## [Marketing](sales-marketing/overview-sales-marketing.md)
 ## Aufträge
 ### [Lieferterminzusage](sales-marketing/delivery-dates-available-promise-calculations.md)
+### [Alternative Lieferung](sales-marketing/delivery-alternatives.md)
 ### [Fristen für Auftrag](sales-marketing/order-entry-deadlines.md)
 ### [Direktlieferungen](sales-marketing/direct-deliveries.md)
 ### [Lieferzeitpläne](sales-marketing/delivery-schedules.md)
@@ -138,6 +167,7 @@
 ### [Layout einrichten](warehousing/warehouse-configuration.md)
 ### [Lagerortarbeitsrichtlinien](warehousing/warehouse-work-policies.md)
 ### [Maßeinheit und Lagerrichtlinien](warehousing/unit-measure-stocking-policies.md)
+### [Power BI-Lagerhausinhalt](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
 ## Entnahme und Verpackung
 ### [Verpackungsmaterialien und Gebühren](warehousing/pack-materials-packing-material-fees.md)
 ## Lagerinventur
@@ -151,7 +181,21 @@
 ## Wiederbeschaffung
 ### [Wiederbeschaffung](warehousing/replenishment.md)
 ## Mobile Geräte
+### [Einrichten und Konfigurieren der Warehousing-App ](warehousing/install-configure-warehousing-app.md)
 ### [Feldnamen in Lagerort-App konfigurieren](warehousing/configure-app-field-names-priorities-warehouse.md)
 ### [Mobile Geräte für Lagerarbeiten einrichten](warehousing/configure-mobile-devices-warehouse.md)
 ### [Portal für mobile Geräte für das Lager (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Anzeigeeinstellungen für mobile Geräte für das Lager](warehousing/change-warehouse-mobile-device-displays.md)
+
+# [Finanzdaten](/dynamics365/operations/financials/index)
+
+# [Personalverwaltung](/dynamics365/operations/human-resources/index)
+
+# [Einzelhandel](/dynamics365/operations/retail/index)
+
+# [Entwickler und Administrator](/dynamics365/operations/dev-itpro/index)
+
+# Weitere Ressourcen
+## [Dynamics 365 for Operations – Glossar](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Neuheiten und Änderungen](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+

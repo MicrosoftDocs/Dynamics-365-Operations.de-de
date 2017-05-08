@@ -68,3 +68,16 @@
 ## [Überblick über Handelsgrundlagen](commerce-essentials.md)
 ## [Organisationen und Organisationshierarchien (Handelsgrundlagen)](organizational-hierarchies-commerce-essentials.md)
 # [Inhalt für IT-Fachkräfte und Entwickler](dev-itpro/TOC.md)
+
+# [Finanzdaten](/dynamics365/operations/financials/index)
+
+# [Personalverwaltung](/dynamics365/operations/human-resources/index)
+
+# [Lieferkettenverwaltung](/dynamics365/operations/supply-chain/index)
+
+# [Entwickler und Administrator](/dynamics365/operations/dev-itpro/index)
+
+# Weitere Ressourcen
+## [Dynamics 365 for Operations – Glossar](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
+## [Neuheiten und Änderungen](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+

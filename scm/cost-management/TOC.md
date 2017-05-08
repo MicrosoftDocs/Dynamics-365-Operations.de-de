@@ -22,10 +22,14 @@
 ## [Gewichteter Durchschnitt (Datum)](weighted-average-date.md)
 ## [Gewichteter Durchschnitt mit physischem Wert und Markierung](weighted-average-physical-value-marking.md)
 # Fertigungsnachkalkulation
+## [Amortisierung konstanter Kosten für einen produzierten Artikel](amortize-constant-costs-manufactured-item.md)
+## [Nachkalkulation für Produktionskosten](backflush-costing.md)
+## [Herstellkostenkalkulationen](bom-calculations.md)
 ## [Herstellkosten-Kalkulationsgruppe](bom-calculation-groups.md)
 ## [Allgemeine Ursachen für Produktionsabweichung](common-sources-of-production-variances.md)
 ## [Kostenkategorie in Produktionsrouting](cost-categories-used-production-routings.md)
 ## [Kostenkategorie in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung](cost-categories-used-production-control-project-management-accounting.md)
+## [Anzeigen von Belastungen für einen produzierten Artikel](charges-manufactured-item.md)
 ## [Kostenanalyse für Produktionsauftrag](production-order-cost-analysis.md)
 ## [Vorkalkulation für Produktionsauftrag](production-order-cost-estimation.md)
 ## [Produktionsbuchung](production-posting.md)
@@ -39,5 +43,6 @@
 ## [Aktualisieren der Standardkosten in einer Produktionsumgebung](update-standard-costs-manufacturing-environment.md)
 ## [Aktualisieren der Standardkosten für einen neuen produzierten Artikel](update-standard-costs-new-manufactured-item.md)
 ## [Aktualisieren der Standardkosten in einer Umgebung ohne Produktion](update-standard-costs-non-manufacturing-environment.md)
+
 
 
