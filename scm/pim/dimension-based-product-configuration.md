@@ -1,0 +1,82 @@
+---
+title: Dimensionsbasierte Produktkonfiguration
+description: "Die dimensionenbasierte Produktkonfiguration stellt eine einfache Lösung für das Erstellen vieler Produktvarianten aus einem einzigen Produktmaster und seiner Stückliste dar."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, ConfigHierarchy, EcoResDimensionBasedConfiguration
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 19821
+ms.assetid: 4db9890b-306b-4be7-ba98-3be2094d561f
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: yuyus
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
+ms.openlocfilehash: 7fbf69dc217a2f61ec3aeda952ff221491e9385a
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="dimension-based-product-configuration"></a>Dimensionsbasierte Produktkonfiguration
+
+[!include[banner](../includes/banner.md)]
+
+
+Die dimensionenbasierte Produktkonfiguration stellt eine einfache Lösung für das Erstellen vieler Produktvarianten aus einem einzigen Produktmaster und seiner Stückliste dar.
+
+Die dimensionbasierte Produktkonfiguration ist eine von drei integrierten Produktkonfigurationstechnologien. Die beiden anderen Technologien sind vordefinierte Varianten und die einschränkungsbasierte Konfiguration. Alle drei Technologien verwenden einen Produktmaster als Ausgangspunkt und ermöglichen dem Benutzer, viele Produktvarianten für einen Produktmaster zu erstellen.
+
+## <a name="key-concepts"></a>Schlüsselkonzepte
+Die dimensionbasierte Produktkonfiguration basiert auf den folgenden Schlüsselkonzepten:
+
+-   Produktmaster
+-   Konfigurationsproduktdimension
+-   Variantengruppen
+-   Stücklisten
+-   Variantenarbeitsplan
+-   Variantenregeln
+
+### <a name="product-masters"></a>Produktmaster
+
+Ein Produktmaster ist der Ausgangspunkt für jeden Produktkonfigurationsprozess. Für die dimensionsbasierte Produktkonfiguration benötigen Sie einen Produktmaster mit eben dieser Konfigurationstechnologie und eine Produktdimensionsgruppe, die die Produktdimension der Konfiguration umfasst.
+
+### <a name="configuration-product-dimension"></a>Konfigurationsproduktdimension
+
+Die Produktdimension der Konfiguration wird dazu verwendet, die Produktvarianten für einen Produktmaster mithilfe der dimensionsbasierten Konfigurationstechnologie zu identifizieren. Der Konfigurationsdimensionswert wird vom Benutzer eingegeben und sollte helfen, die einzelnen Produktvarianten zu identifizieren.
+
+### <a name="configuration-groups"></a>Variantengruppen
+
+Variantengruppen werden in einem zentralen Repository definiert und können für alle dimensionsbasierten Produktkonfigurationsmodelle verwendet werden. Variantengruppen werden den einzelnen Stücklistenpositionen zugeordnet und halten eine Gruppe von Positionen zusammen, die sich gegenseitig ausschließen. Das bedeutet, dass lediglich eine Position in einer Gruppe für eine einzelne Produktvariante ausgewählt werden kann.
+
+### <a name="bill-of-materials-bom"></a>Stücklisten
+
+Die Stückliste stellt die Bausteine für eine dimensionsbasierte Produktkonfiguration dar. Sie muss alle verschiedenen Produkte enthalten, die in einer beliebigen Produktvariante verwendet werden können. Jede Position in der Stückliste kann auf eine Variantengruppe verweisen. Wenn eine Position nicht auf eine Variantengruppe verweist, wird sie in alle Produktvarianten einbezogen.
+
+### <a name="configuration-route"></a>Variantenarbeitsplan
+
+Der Variantenarbeitsplan bestimmt die Reihenfolge der Variantengruppen, also wie diese dem Benutzer während des Produktkonfigurationsprozesses angezeigt werden.
+
+### <a name="configuration-rules"></a>Variantenregeln
+
+Die Variantenregeln helfen sicherzustellen, dass ein Produkt, das in einer Variantengruppe in einer Stückliste enthalten ist, entweder eine Einbeziehung oder einen Ausschluss eines Produkts in einer anderen Variantengruppe in der gleichen Stückliste erzwingt.
+
+## <a name="product-modeling-process"></a>Produktmodellprozess
+Die natürliche Reihenfolge bei der Erstellung eines Produktmodells für ein dimensionsbasiertes Produkt beginnt mit dem Definieren der relevanten Variantengruppen. Es muss sichergestellt werden, dass alle Produkte, die in der Stückliste verwendet werden, für das Unternehmen freigegeben wurden, für das dieses Produktmodell erstellt wird. Mithilfe dieser Bausteine an vorhandenen Reservierungen für kann er die Stückliste erstellen und Variantengruppen zu den entsprechenden Stücklistenpositionen zuweisen. Wird in der Stückliste abgeschlossen ist, kann ein Variantenarbeitsplan für die Einrichtungen der Variantengruppen in der korrekten Reihenfolge definiert werden. \[caption id="attachment\_282671" align="alignnone" width"1187"\][![ Der dimensionsbasierte Produktmodellprozess ](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png)Der dimensionsbasierte Produktmodellprozess \[/caption\] Wenn es bestimmte Produkte aus unterschiedlichen Konfigurationsgruppen gibt, die entweder zusammen verwendet werden müssen oder nicht zusammen verwendet werden dürfen, können Sie Variantenregeln erstellen, die diese Produktbeziehungen durchsetzen. Nachdem die Stückliste durch eine Stücklistenversion an einen dimensionsbasierten Produktmaster gebunden wurde und beide genehmigt und aktiviert wurden, können Sie Produktkonfigurationen erstellen und Namen für die einzelnen Konfigurationen eingeben. Die Konfigurationen können definiert werden, bevor eine Buchung generiert wird, oder sie werden definiert, wenn eine bestimmte Konfiguration erforderlich wird.
+
+### <a name="suggested-use"></a>Verwendungsempfehlung
+
+Die Technologie der dimensionsbasierten Konfiguration eignet sich insbesondere für Produkte mit begrenzter Variabilität, wenn die Kombination der Standardproduktdimensionen Größe, Farbe, Format und Konfiguration nicht für die Identifikation einer bestimmten Produktvariante geeignet ist. Ein Beispiel wäre ein Fahrrad mit Gestellgröße, Radgröße, Bremssystemen und unterschiedlichen Gängen.
+
+
+
+
