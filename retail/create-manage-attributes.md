@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 26c628e10aaa5f47bc87d7510ca8f41ab3630204
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a5c45bb0b9ed10c989a3222a751df3f454b14a0b
+ms.contentlocale: de-de
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="create-and-manage-attributes"></a>Attribute erstellen und verwalten
+
+[!include[banner](includes/banner.md)]
+
 
 Dieser Artikel beschreibt Attribute in Microsoft Dynamics 365 for Operations. Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten Feldern beschreiben.
 
@@ -34,110 +38,28 @@ Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten 
 
 #### <a name="examples"></a>Beispiele
 
-Kategorie
+| Kategorie   | Attribut                | Zulässige Werte          | Standardwert |
+|------------|--------------------------|-----------------------------|---------------|
+| TV & Video | Marke                    | Jeder gültige Marke-Wert       | Keines          |
+| TV         | Bildschirmgröße              | 20″–80″                     | Keines          |
+| TV         | Vertikale Auflösung      | 480i, 720p, 1080i oder 1080p | 1080p         |
+| TV         | Bildschirm-Aktualisierungsrate      | 60 Hz, 120 Hz oder 240 Hz       | 60 Hz          |
+| TV         | HDMI-Eingaben              | 0 – 10                        | 3             |
+| TV         | DVI-Eingaben               | 0 – 10                        | 1             |
+| TV         | Zusammengesetzte Eingaben         | 0 – 10                        | 2             |
+| TV         | Komponenten-Eingaben         | 0 – 10                        | 1             |
+| LCD        | 3D-fähig                 | Ja oder Nein                   | Ja           |
+| LCD        | 3D-aktiviert               | Ja oder Nein                   | Nr.            |
+| Plasma     | Betriebstemperatur von      | 32–110 Grad              | 32            |
+| Plasma     | Betriebstemperatur bis        | 32–110 Grad              | 100           |
+| Projektion | Projektionstubus-Garantie | 6, 12 oder 18 Monate         | 12            |
+| Projektion | #  des Projektionstubus    | 1 – 5                         | 3             |
 
-Attribut
-
-Zulässige Werte
-
-Standardwert
-
-TV & Video
-
-Marke
-
-Jeder gültige **Marke**-Wert
-
-Keine
-
-TV
-
-Bildschirmgröße
-
-**20"**–**80"**
-
-Keine
-
-Vertikale Auflösung
-
-**480i**, **720p**, **1080i** oder **1080p**
-
-**1080p**
-
-Bildschirm-Aktualisierungsrate
-
-**60 Hz**, **120 Hz** oder **240 Hz**
-
-**60 Hz**
-
-HDMI-Eingaben
-
-**0**–**10**
-
-**3**
-
-DVI-Eingaben
-
-**0**–**10**
-
-**1**
-
-Zusammengesetzte Eingaben
-
-**0**–**10**
-
-**2**
-
-Komponenten-Eingaben
-
-**0**–**10**
-
-**1**
-
-LCD
-
-3D-fähig
-
-**Ja** oder **Nein**
-
-**Ja**
-
-3D-aktiviert
-
-**Ja** oder **Nein**
-
-**Nein**
-
-Plasma
-
-Betriebstemperatur von
-
-**32**–**110** Grad
-
-**32**
-
-Betriebstemperatur bis
-
-**32**–**110** Grad
-
-**100**
-
-Projektion
-
-Projektionstubus-Garantie
-
-**6**, **12** oder **18** Monate
-
-**12**
-
-\# des Projektionstubus
-
-**1**–**5**
-
-**3**
 
 ## <a name="attribute-type"></a>Attributtyp
-  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Attribute basieren auf Attributarten Attributtypen identifizieren die Art von Daten, die für ein bestimmtes Attribut eingegeben werden können. Derzeit unterstützt Microsoft Dynamics 365 für Operations die folgenden Attributtypen:
+  [![Anlagenattribute](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
+  
+Attribute basieren auf Attributtypen. Attributtypen identifizieren die Art von Daten, die für ein bestimmtes Attribut eingegeben werden können. Derzeit unterstützt Microsoft Dynamics 365 für Operations die folgenden Attributtypen:
 
 -   **Währung** – Dieser Attributtyp unterstützt Währungswerte. Er kann begrenzt (das heißt, kann er einen Wertebereich unterstützen) oder offengelassen werden.
 -   **DateTime** – Dieser Attributtyp unterstützt Datums- und Uhrzeitwerte. Er kann begrenzt (das heißt, kann er einen Wertebereich unterstützen) oder offengelassen werden.
@@ -174,5 +96,7 @@ Projektionstubus-Garantie
 ### <a name="at-the-retail-channel-level"></a>Auf der Einzelhandelskanalebene
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Die Standardwerte von Attributen können für einzelne Produkte in bestimmten Katalogen überschrieben werden, die für bestimmte Einzelhandelskanäle ausgerichtet werden.
+
+
 
 

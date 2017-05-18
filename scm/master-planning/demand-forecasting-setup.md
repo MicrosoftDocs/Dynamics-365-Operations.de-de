@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f629329f4f50bd7c8edcfd70641bace01a1c53aa
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5074f3ded26f55c6244feba9fcf0199c81cad468
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -76,7 +77,7 @@ Um die Planung zu generieren, verwendet Dynamics 365 for Operations einen Machin
 Um Bedarfsvorhersagen zu erstellen, können Sie Ihren eigenen Dienst bereitstellen, indem Sie Machine Learning Studio- oder Dynamics 365 for Operations-Bedarfsplanungsexperimente verwenden. Anweisungen für das Bereitstellen der Dynamics 365 for Operations-Bedarfsplanungexperimente als Webdienst sind in Dynamics 365 for Operations verfügbar. Klicken Sie auf der Seite **Bedarfsplanungsparameter** auf die Registerkarte **Azure Machine Learning**.
 
 ## <a name="settings-for-the-dynamics-365-for-operations-demand-forecasting-machine-learning-service"></a>Einstellungen für den Machine Learning-Dienst der Dynamics 365 for Operations-Bedarfsplanung
-Um die Parameter anzuzeigen die für die Dynamics 365 for Operations Bedarfsplanung konfiguriert werden können, gehen Sie zu **Masterplanung** &gt; **Einstellungen** &gt; **Bedarfsplanung** &gt; **Planungsalgorithmusparameter **. Die **Planungsalgorithmusparameter** Seite zeigt die Standardwerte für die Parameter an. Sie können mithilfe der Parameter die **Bedarfsplanungsparameter** überschreiben. Verwenden Sie die Registerkarte **Allgemein**, um die Parameter global zu überschreiben, oder klicken Sie auf die Registerkarte **Artikelverteilungsschlüssel**, um die Parameter pro Artikelverteilungsschlüssel zu überschreiben. Parameter, die für einen Artikelverteilungsschlüssel überschreiben werden, wirken sich nur auf die Planung von Artikeln aus, die diesem Artikelverteilungsschlüssel zugeordnet sind.
+Um die Parameter anzuzeigen die für die Dynamics 365 for Operations Bedarfsplanung konfiguriert werden können, gehen Sie zu **Masterplanung** &gt; **Einstellungen** &gt; **Bedarfsplanung** &gt; **Planungsalgorithmusparameter**. Die **Planungsalgorithmusparameter** Seite zeigt die Standardwerte für die Parameter an. Sie können mithilfe der Parameter die **Bedarfsplanungsparameter** überschreiben. Verwenden Sie die Registerkarte **Allgemein**, um die Parameter global zu überschreiben, oder klicken Sie auf die Registerkarte **Artikelverteilungsschlüssel**, um die Parameter pro Artikelverteilungsschlüssel zu überschreiben. Parameter, die für einen Artikelverteilungsschlüssel überschreiben werden, wirken sich nur auf die Planung von Artikeln aus, die diesem Artikelverteilungsschlüssel zugeordnet sind.
 
 <a name="see-also"></a>Siehe auch
 --------

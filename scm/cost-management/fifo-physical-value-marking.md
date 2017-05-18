@@ -3,7 +3,7 @@ title: FIFO mit physischem Wert und Markierung
 description: "Bei FIFO (First in, First out) handelt es sich um eine Lagersteuerung, bei der die zuerst erworbenen Zugänge das Lager als Erstes wieder verlassen. Wertmäßig aktualisierte Abgänge aus dem Lager werden mit dem ältesten wertmäßig aktualisierten Zugang zu einem Lagerbestand ausgeglichen, der auf dem wertmäßigen Datum der Lagerbuchung basiert."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18 - 57 - 00
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8e3d189fc4dbc5c747a3473d3a221c739c323050
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b0be852bde33e8dfc82ceb42dd98be10537f318d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO mit physischem Wert und Markierung
+
+[!include[banner](../includes/banner.md)]
+
 
 Bei FIFO (First in, First out) handelt es sich um eine Lagersteuerung, bei der die zuerst erworbenen Zugänge das Lager als Erstes wieder verlassen. Wertmäßig aktualisierte Abgänge aus dem Lager werden mit dem ältesten wertmäßig aktualisierten Zugang zu einem Lagerbestand ausgeglichen, der auf dem wertmäßigen Datum der Lagerbuchung basiert. 
 
@@ -50,7 +54,9 @@ In diesem Beispiel ist die Artikelmodellgruppe so konfiguriert, dass der physisc
 -   5b. Wertmäßiger Lagerabgang für die Menge "1" zu einem Einstandspreis von EUR 20,00 (laufender Durchschnitt wertmäßig aktualisierter Buchungen).
 -   6. Lagerabschluss wird vorgenommen. Der erste wertmäßig aktualisierte Abgang wird auf Basis der FIFO-Methode gegen den ersten wertmäßig aktualisierten Zugang ausgeglichen. Für die Abgangsbuchung erfolgt eine Regulierung in Höhe von EUR –10,00.
 
-In dem neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen berücksichtigt. Die folgenden Abbildungen zeigen die Auswirkungen des Lagermodells FIFO auf diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. ![FIFO ohne Physischen Wert einbeziehen](./media/fifowithoutincludephysicalvalue.gif) **Diagrammschlüssel**
+In dem neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen berücksichtigt. Die folgenden Abbildungen zeigen die Auswirkungen des Lagermodells FIFO auf diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. ![FIFO ohne Einbeziehung des physischen Werts](./media/fifowithoutincludephysicalvalue.gif) 
+
+**Diagrammschlüssel**
 
 -   Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 -   Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
@@ -78,7 +84,9 @@ Wenn auf der Seite **Artikelmodellgruppe** das Kontrollkästchen **Physischen We
 -   6a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von jeweils EUR 21,25.
 -   7. Lagerabschluss wird vorgenommen. Die erste wertmäßige Abgangsbuchung wird auf Basis der FIFO-Methode reguliert oder mit dem ersten (entweder wertmäßig oder physisch) aktualisierten Zugang ausgeglichen.
 
-Die Buchung "5b" wird mit der Zugangsbuchung "1b" ausgeglichen. Dabei erfolgt für die Abgangsbuchung eine Regulierung in Höhe von EUR –11,25. Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung zeigt die Auswirkungen des Lagermodells FIFO für diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. ![FIFO-Datum mit Physischen Wert einbeziehen](./media/fifowithincludephysicalvalue.gif) **Diagrammschlüssel**
+Die Buchung "5b" wird mit der Zugangsbuchung "1b" ausgeglichen. Dabei erfolgt für die Abgangsbuchung eine Regulierung in Höhe von EUR –11,25. Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung zeigt die Auswirkungen des Lagermodells FIFO für diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. ![FIFO mit "Physischen Wert einbeziehen"](./media/fifowithincludephysicalvalue.gif) 
+
+**Diagrammschlüssel**
 
 -   Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 -   Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
@@ -106,7 +114,9 @@ Der Begriff "Markierung" bezeichnet ein Verfahren zum Verknüpfen (oder Markiere
 -   6a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von jeweils EUR 21,25.
 -   7. Lagerabschluss wird vorgenommen. Da die wertmäßig aktualisierte FIFO-Buchung für einen vorhandenen Zugang markiert ist, werden diese Buchungen gegenseitig ausgeglichen, und es ist keine Regulierung erforderlich.
 
-Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung gibt Aufschluss über die Auswirkungen des FIFO-Lagermodells auf diese Reihe von Buchungen, die bei markierten Ab- und Zugängen anfallen. ![FIFO mit Markierung](./media/fifowithmarking.gif) **Diagrammschlüssel**
+Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. Die folgende Abbildung gibt Aufschluss über die Auswirkungen des FIFO-Lagermodells auf diese Reihe von Buchungen, die bei markierten Ab- und Zugängen anfallen. ![FIFO mit Markierung](./media/fifowithmarking.gif) 
+
+**Diagrammschlüssel**
 
 -   Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 -   Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
@@ -118,6 +128,8 @@ Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmä�
 -   Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
 -   Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung *Lagerabschluss* gekennzeichnet.
 -   Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
+
+
 
 
 

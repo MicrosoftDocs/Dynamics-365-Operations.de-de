@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 79a43c35691f16d773b88faad63c4ab79cb93f1f
-ms.openlocfilehash: c6fb3922ba2c4b15f1043d0bcbac40ff2da9a469
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 82891b44a3ba3da23f3ce7a9b86be5e8f88d2afd
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -65,7 +66,7 @@ POS-Peripheriegeräte sidn Geräte, die für POS-Funktionen explizit unterstütz
 
 ### <a name="hardware-station"></a>Hardwarestation
 
-Navigieren: Klicken Sie auf **Einzelhandel und Handel **&gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**. Wählen Sie einen Shop aus, und klicken Sie anschließend auf die Registerkarte **Hardwarestationen**. Die **Hardwarestation**-Einstellung ist eine kanalbasierte Einstellung, die verwendet wird, um Instanzen zu definieren, in denen die Einzelhandelsperipherie bereitgestellt wird. Diese Einstellung auf der Kanalebene wird verwendet, um die Merkmale der Hardwarestation zu bestimmen. Sie wird außerdem zum Auflisten von Hardwarestationen verwendet, die für eine Modern POS-Instanz eine moderne in einem bestimmten Shop verfügbar sind. Die Hardwarestation ist in das Modern POS-Programm für Windows integriert. Die Hardwarestation kann auch unabhängig bereitgestellt werden als ein eigenständiges Microsoft-Internetinformationsdienste-Programm (IIS). In diesem Fall können Sie über ein Netzwerk zugreifen.
+Navigieren: Klicken Sie auf **Einzelhandel und Handel**&gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**. Wählen Sie einen Shop aus, und klicken Sie anschließend auf die Registerkarte **Hardwarestationen**. Die **Hardwarestation**-Einstellung ist eine kanalbasierte Einstellung, die verwendet wird, um Instanzen zu definieren, in denen die Einzelhandelsperipherie bereitgestellt wird. Diese Einstellung auf der Kanalebene wird verwendet, um die Merkmale der Hardwarestation zu bestimmen. Sie wird außerdem zum Auflisten von Hardwarestationen verwendet, die für eine Modern POS-Instanz eine moderne in einem bestimmten Shop verfügbar sind. Die Hardwarestation ist in das Modern POS-Programm für Windows integriert. Die Hardwarestation kann auch unabhängig bereitgestellt werden als ein eigenständiges Microsoft-Internetinformationsdienste-Programm (IIS). In diesem Fall können Sie über ein Netzwerk zugreifen.
 
 ### <a name="hardware-profile"></a>Hardwareprofil
 
@@ -796,7 +797,7 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 -   Während Sie häufiger Änderungen an den Peripheriegeräten vornehmen, oder häufig den POS-Clients starten und beenden, kann der dllhost Prozess aus einer vorherigen POS-Sitzung die aktuelle Sitzung stören. In diesem Fall könnte Geräte nicht verwendbar sein, bis der Dynamic Link Library (DLL)- Host der früheren Sitzung geschlossen ist. Um den DDL-Host zu schließen, führen Sie folgende Schritte aus:
     1.  Im Menü **Start** geben Sie **Task-Manager** ein.
     2.  In den Suchergebnissen klicken Sie auf **Task-Manager**.
-    3.  Im Task-Manager auf der Registerkarte **Details ** klicken Sie auf der Spaltenkopf **Name**, um die Tabelle alphabetisch nach Name zu sortieren.
+    3.  Im Task-Manager auf der Registerkarte **Details** klicken Sie auf der Spaltenkopf **Name**, um die Tabelle alphabetisch nach Name zu sortieren.
     4.  Navigieren Sie nach unten, bis Sie dllhost.exe finden.
     5.  Wählen Sie jeden DLL-Host aus, und klicken Sie dann auf **Task beenden**.
     6.  Nachdem die DLL-Hosts geschlossen wurden, starten Sie neu Modern POS.

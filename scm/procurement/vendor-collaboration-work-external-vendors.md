@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: d585ae0716a4bd9c3531e8639cd7c6b3cab780ac
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c8947f9335b3a2de83ab00bad1043ee14d35f2c8
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -57,8 +58,8 @@ Die allgemeinen Einstellungen für Kreditorenzusammenarbeit in Dynamics 365 for 
 
 Bevor Benutzerkonten erstellt werden können für einen externen Lieferanten, müssen Sie das Kreditorenkonto konfigurieren, um die Nutzung der Kreditorenzusammenarbeit zu ermöglichen. Um dies zu bewerkstelligen, legen Sie das Feld **Zusammenarbeitaktivierung** in der Registerkarte **Allgemein** auf der Seite **Kreditor** fest. Es gibt zwei Möglichkeiten, die Sie auswählen können:
 
--   **Aktiv (Bestellung wird automatisch bestätigt) **- Bestellungen werden automatisch bestätigt, wenn der Kreditor diese akzeptiert ohne Änderungen.
--   **Aktiv (Bestellung wird nicht automatisch bestätigt) **- Bestellungen müssen manuell von der Organisation bestätigt werden, nachdem der Kreditor diese akzeptiert hat.
+-   **Aktiv (Bestellung wird automatisch bestätigt)**- Bestellungen werden automatisch bestätigt, wenn der Kreditor diese akzeptiert ohne Änderungen.
+-   **Aktiv (Bestellung wird nicht automatisch bestätigt)**- Bestellungen müssen manuell von der Organisation bestätigt werden, nachdem der Kreditor diese akzeptiert hat.
 
 ### <a name="decide-whether-you-want-the-vendor-to-see-price-information"></a>Legen Sie fest, ob Sie möchten, dass dem Kreditor Preisinformationen angezeigt werden.
 
@@ -142,7 +143,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 | Der Kreditor übermittelt eine Antwort **Angenommen mit Änderungen**.                  | Der Status ist weiterhin **In externer Prüfung**.                                                                                                                  |
 | Sie nehmen einige Änderungen vor, die vom Kreditor gefordert werden.                  | Der Status wird zurückgeändert in **Genehmigt**.                                                                                                                        |
 | Sie senden die neue Version der Bestellung an den Kreditor.                        | Eine neue Version wird in der Kreditorenportalschnittstelle erfasst und der Status wird in **Externe Prüfung** geändert.                                      |
-| Der Kreditor genehmigt die neue Version der Bestellung.                            | Der Status ist weiterhin **In externer Prüfung, **, es sei denn, das Kreditorenkonto ist so konfiguriert, dass die Bestellung automatisch den Status **Bestätigt** erhält, wenn er akzeptiert wird. |
+| Der Kreditor genehmigt die neue Version der Bestellung.                            | Der Status ist weiterhin **In externer Prüfung,**, es sei denn, das Kreditorenkonto ist so konfiguriert, dass die Bestellung automatisch den Status **Bestätigt** erhält, wenn er akzeptiert wird. |
 
 Kreditoren müssen die Bestellung in der Kreditorenzusammenarbeitsschnittstelle nicht bestätigen. Sie können auch eine E-Mail-Nachricht senden oder ihrer Zustimmung zu einer Bestellung über andere Kanäle vermitteln. Sie können den Auftrag dann manuell in Dynamics 365 for Operations bestätigen. In diesem Fall erhalten Sie eine Warnung, dass der Auftrag bestätigt wird, obwohl keine Antwort vom Kreditor vorhanden ist. Die Bestellung wird dann in der Bestätigungshistorie im Kreditorenportal als offener, bestätigter Auftrag ohne Antworten aufgeführt. Der Kreditor hat zusätzlich nicht mehr die Möglichkeit, die Bestellung zu bestätigen oder abzulehnen.  
 

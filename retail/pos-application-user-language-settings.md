@@ -18,10 +18,11 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: bf5b75572529bb497d3079752de187f30aa59294
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: e979eaddb04c96fabb6e5e2693b300674fad8ee2
+ms.contentlocale: de-de
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -52,7 +53,7 @@ Die Sprache der Filiale wird auch für den POS-Haupt-Anmelden Bildschirm verwend
 
 ### <a name="configuring-the-stores-language-setting"></a>Konfigurieren der Spracheinstellung des Shops
 
-Die Spracheinstellung eines Shops wird über **“Alle Einzelhandelsgeschäfte” **auf der Seite “**Ladengeschäft”** unter **Allgemein &gt; Regionaleinstellungen &gt; Sprache festgelegt. **Verwenden Sie das Dropdownfeld, um eine Sprache für jeden Shop auszuwählen.
+Die Spracheinstellung eines Shops wird über **“Alle Einzelhandelsgeschäfte”**auf der Seite “**Ladengeschäft”** unter **Allgemein &gt; Regionaleinstellungen &gt; Sprache festgelegt. **Verwenden Sie das Dropdownfeld, um eine Sprache für jeden Shop auszuwählen.
 
 ## <a name="user-interface-language"></a>Benutzeroberflächensprache
 Die Einstellung des POS- Benutzers werden die Übersetzungen, die in der Bewerbungsbenutzeroberfläche verwendet werden. Dies umfasst alle Beschriftungen, Menüs und Listen ein, die nicht als Daten anwenden. Eine Ausnahme ist der Text, der in POS-Schaltflächenrastern angezeigt wird. Die Schaltflächenraster nicht unterstützt Übersetzungen, sodass die Konten immer Text anzeigen, wie auf der Schaltfläche definiert. Um zu unterstützen übersetzte Schaltflächen, müssen Sie separate Schaltflächenraster kopieren und verwalten und diese den entsprechenden Benutzer zuweisen.
@@ -63,7 +64,7 @@ Die Spracheinstellung des POS-Benutzers wird unter "**Alle Arbeitskräfte**" auf
 
 |             |                            |                                                                   |
 |-------------|----------------------------|-------------------------------------------------------------------|
-| ** **       | **Sprache der Benutzeroberfläche ** ** **      | **Datensprache (Produkte, Bonlayouts, Zeilenanzeige usw.)** |
+| ** **       | **Sprache der Benutzeroberfläche** ** **      | **Datensprache (Produkte, Bonlayouts, Zeilenanzeige usw.)** |
 | **Unternehmen** | Standard                    | Standard                                                           |
 | **Shop**   | Überschreibt Unternehmen          | Überschreibt Unternehmen                                                 |
 | **Benutzer**    | Überschreibt Shop oder Unternehmen | Nie                                                             |

@@ -3,7 +3,7 @@ title: "MwSt-Berichterstattung für Europa"
 description: "Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung  des Mehrwertsteuer-Auszugs für einige europäische Länder."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 84a639b25c64821e00ca4397f42f69298953e599
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 190977af579a025b6f46646dfab153b1879d3e76
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="vat-reporting-for-europe"></a>MwSt-Berichterstattung für Europa
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung  des Mehrwertsteuer-Auszugs für einige europäische Länder.
 
@@ -43,7 +47,7 @@ Dieses Thema bietet einen allgemeinen Ansatz zum Einrichten und zum Generieren d
 -   Schweden
 
 ## <a name="vat-statement-overview"></a>MwSt.-Auszugs, Überblick
-Der MwSt-Auszug basiert auf dem Steuerbuchungsbeträgen. Die Generierung eines MwSt. -Auszugs ist Teil des Mehrwertsteuerzahlungsprozesses, der durch die Bank- und Beitragsmehrwertsteuerfunktion implementiert ist. Mithilfe dieses Funkltion können Sie die für eine Periode fällige Mehrwertsteuer berechnen. Die Ausgleichsberechnung enthält die gebuchte Mehrwertsteuer für den ausgewählten Abrechnungszeitraum für die Steuerbuchungen im Formular . Der Prozess zum Berechnen von Daten für einen MwSt.-Auszug basiert auf der Beziehung zwischen  Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes, in denen Mehrwertsteuer-Erklärungscodes mit den MwSt.-Auszugsfelder übereinstimmen (oder die Markierungen in XML). Für jeden Mehrwertsteuercode sollen Mehrwertsteuer-Erklärungscodes für jede Buchungsart, zum Beispiel steuerpflichtige Verkäufe, steuerpflichtige Einkäufe, steuerpflichtiger Import eingerichtet werden. Hiermit werden Buchungsarten im Feld [Mehrwertsteuercodes für Mehrwertsteuer-Berichte](#Sales tax codes for VAT reporting) im Abschnitt weiter unten in diesem Thema.
+Der MwSt-Auszug basiert auf dem Steuerbuchungsbeträgen. Die Generierung eines MwSt. -Auszugs ist Teil des Mehrwertsteuerzahlungsprozesses, der durch die Bank- und Beitragsmehrwertsteuerfunktion implementiert ist. Mithilfe dieses Funkltion können Sie die für eine Periode fällige Mehrwertsteuer berechnen. Die Ausgleichsberechnung enthält die gebuchte Mehrwertsteuer für den ausgewählten Abrechnungszeitraum für die Steuerbuchungen im Formular . Der Prozess zum Berechnen von Daten für einen MwSt.-Auszug basiert auf der Beziehung zwischen  Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes, in denen Mehrwertsteuer-Erklärungscodes mit den MwSt.-Auszugsfelder übereinstimmen (oder die Markierungen in XML). Für jeden Mehrwertsteuercode sollen Mehrwertsteuer-Erklärungscodes für jede Buchungsart, zum Beispiel steuerpflichtige Verkäufe, steuerpflichtige Einkäufe, steuerpflichtiger Import eingerichtet werden. Hiermit werden Buchungsarten im Feld Mehrwertsteuercodes für Mehrwertsteuer-Berichte im Abschnitt weiter unten in diesem Thema.
 
 Für jeden Mehrwertsteuer-Erklärungscode soll ein bestimmtes Berichtslayout bestimmt werden. Gleichzeitig werden Mehrwertsteuercodes auf eine bestimmte Mehrwertsteuerbehörde von Mehrwertsteuer-Ausgleichsperioden verknüpft. Für jede Mehrwertsteuer-Behörde sollte ein bestimmtes Berichtslayout bestimmt werden. Auf diese Weise können nur mit Mehrwertsteuer-Erklärungscodes demselben Berichtslayout, das für die Mehrwertsteuerbehörde in Mehrwertsteuer-Abrechnungszeiträume für den Mehrwertsteuercode errichtet wird, in der Berichtseinstellung des Mehrwertsteuercodes ausgewählt werden. Eine Mehrwertsteuerbuchung, die nach dem Buchen eines Auftrags oder eine Erfassung erstellt wurde, enthält einen Mehrwertsteuercode, eine Mehrwertsteuerquelle, Mehrwertsteuerart und Buchungsbeträge (Steuergrundbetrag und Steuerbetrag in der Buchhaltungswährung, in der Mehrwertsteuerwährung und in der Buchungswährung). Durch die Kombination aus Steuerbuchungsattributen, verfassen Buchungsbeträge Gesamtbeträge für die Mehrwertsteuer-Erklärungscodes, die für Mehrwertsteuercodes angegeben werden. Die folgende Abbildung zeigt diese Datenbeziehung.
 
@@ -249,7 +253,7 @@ d<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</s
 
 Sie können Elektronische Berichterstattung (ER) verwenden, um Auszüge und Berichte zu konfigurieren und verschiedene elektronische Datenformate zu exportieren, ohne den X++-Code zu ändern. Zusätzliche Informationen:
 
--   [Überblick über die elektronische Berichterstellung](/dynamics365/operations/dev-itpro/dev-itpro/analytics/general-electronic-reporting)
+-   [Überblick über die elektronische Berichterstellung](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
 -   [Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Services herunter](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 -   [[Lokalisierungsanforderungen - Erstellen Sie eine GER-Konfiguration](/dynamics365/operations/dev-itpro/analytics/electronic-reporting-configuration)
 
@@ -270,6 +274,8 @@ Der Mehrwertsteuertyp. im für jedes Land muss den Bedingungen der Gesetzgeber d
 | Litauen      | [MwSt-Berichtdetail für Litauen](emea-ltu-vat-statement-details.md)         |
 | Niederlande    |                                                                                 |
 | Schweden         |                                                                                 |
+
+
 
 
 

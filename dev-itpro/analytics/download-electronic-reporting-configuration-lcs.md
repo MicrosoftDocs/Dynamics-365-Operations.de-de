@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 9dca5dec846670da25926826f59d7bce0fa0dcea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e2f3a352ca70472de838271fdedfede575cb839d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Services herunter
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieses Thema zeigt, wie Sie elektronische Berichterstattungskonfiguration (ER) von Microsoft Dynamics Lifecyle Services LCS herunterladen.
 
@@ -36,16 +40,17 @@ Dieses Lernprogramm erläutert das Herunterladen der aktuellen Version der Micro
     -   Funktionaler Berater für elektronische Berichterstellung
     -   Systemadministrator
 
-2.  Wechseln Sie zu ** Organisationsverwaltung **&gt; **Elektronische Berichterstellung**..
+2.  Wechseln Sie zu **Organisationsverwaltung**&gt; **Elektronische Berichterstellung**..
 3.  Wählen Sie im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus.
 4.  Klicken Sie auf der Kachel **Microsoft** auf **Repositorys**. [![Aktualisieren von ER über LCS für MS - MS Repositorys-Liste öffnen](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 5.  Auf der Seite **Konfigurationsrepositorys** wählen Sie im Raster ein vorhandenes Repository vom Typ **LCS** aus. Wenn dieses Repository nicht im Raster angezeigt wird, führen Sie die folgenden Schritte aus:
     1.  Klicken Sie zum Hinzufügen neuer Repository auf **Hinzufügen**.
     2.  Aktivieren Sie **LCS** als Repository-Typ.
     3.  Klicken Sie auf **Repository erstellen**.
-    4.  Geben Sie einen Namen und eine Beschreibung für das Repository ein.
-    5.  Klicken Sie auf **OK**, um den neuen Repositoryeintrag zu bestätigen.
-    6.  Wählen Sie im Raster das neue Repository vom Typ **LCS** aus.
+    4. Wenn Sie aufgefordert werden, folgen Sie den Autorisierungsanweisungen.
+    5.  Geben Sie einen Namen und eine Beschreibung für das Repository ein.
+    6.  Klicken Sie auf **OK**, um den neuen Repositoryeintrag zu bestätigen.
+    7.  Wählen Sie im Raster das neue Repository vom Typ **LCS** aus.
 
 6.  Klicken Sie auf **Öffnen**, um die Liste der ER-Konfigurationen für das ausgewählte Repository anzuzeigen. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  Wählen Sie in der Konfigurationsstruktur im linken Bereich die ER-Konfiguration aus, die Sie benötigen.
@@ -58,5 +63,7 @@ Dieses Lernprogramm erläutert das Herunterladen der aktuellen Version der Micro
 --------
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+
+
 
 

@@ -3,7 +3,7 @@ title: So starten Sie
 description: "Starten Sie hier, um schnell aktiv zu werden und die Microsoft Dynamics 365 for Operations-Benutzeroberfläche kennenzulernen."
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15 - 19 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ o# ms.search.industry:
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 8f75131c6be6ce0f23cce456405d5e211912f19a
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69995d2f8a463e82e7a26b673737889b4ea17402
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="where-to-start"></a>So starten Sie
+
+[!include[banner](../includes/banner.md)]
+
 
 Starten Sie hier, um schnell aktiv zu werden und die Microsoft Dynamics 365 for Operations-Benutzeroberfläche kennenzulernen.
 
@@ -36,7 +40,7 @@ Die folgenden Ressourcen finden Sie einen Überblick darüber, wie mit Ihrem Par
 - [Microsoft-FastTrack Überblick für Dynamics 365](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [Anmelden für ein Abonnement](../dev-tools/sign-up-preview-subscription.md) 
 - [Lebenszyklus-Services (LCS) für Microsoft Dynamics 365 for Operations-Kunden](../lifecycle-services/lcs-works-lcs.md) 
-- [Wie Kunden, die Dynamics 365 for Operations über einen Cloud Service Provider gekauft haben, die lokale Version von Microsoft Dynamics 365 for Operations 2012 abrufen](../deployment/csp-download-customersource.md)
+- [Wie Kunden, die Mircosoft Dynamics 365 for Operations über einen Cloud Service Provider gekauft haben, die lokale Version von Dynamics AX 2012 abrufen können](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Benutzeroberfläche
 Die folgenden Ressourcen enthalten Informationen zur Dynamics 365 for Operations-Benutzerfreundlichkeit. 
@@ -71,12 +75,12 @@ Die Aufgabenaufzeichnung ist ein Microsoft Dynamics 365 for Operations-Tool, das
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen von neuen Schulungsbibliotheken für Dynamics 365 for Operations innerhalb der Lifecycle Services mithilfe der Aufgabenaufzeichnung (externer Link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Neuer Aufgabenleitfaden verfügbar (Februar 2016)](new-task-guides-available-february-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
+
+
 
 

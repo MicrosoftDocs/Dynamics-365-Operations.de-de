@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 84b9f91f49e988244b98aeb7a6a6344548d6a8c0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fb9f7b8aa9198b66f196613641de5237fac2ac2c
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Für die folgenden Richtlinien wird die Verwendung des Zwei-Versionen-Ansatzes f
 -   Weisen Sie den Nachkalkulationstyp **Standardkosten** zu.
 -   Weisen Sie eine aussagekräftige Kennung zu, die Aufschluss über den Zweck der Nachkalkulationsversion gibt, wie z. B. **2016-AKTUALISIERUNGEN**.
 -   Überprüfen Sie, ob in der Feldgruppe **Preistyp zulassen** der **Einstandspreis** auf **Ja** festgelegt ist.
--   Kostendatensätze müssen für jeden Standort eingegeben werden können (lassen Sie daher das Feld **Standort **leer). Durch Angabe eines Standorts können Kostendatensätze nur für diesen Standort eingegeben werden.
+-   Kostendatensätze müssen für jeden Standort eingegeben werden können (lassen Sie daher das Feld **Standort**leer). Durch Angabe eines Standorts können Kostendatensätze nur für diesen Standort eingegeben werden.
 -   Verwenden Sie das Fallback-Prinzip **Aktiv**.
 
 Führen Sie die folgenden Schritte aus, um innerhalb der unveränderlichen Periode neue produzierte Artikel hinzuzufügen.

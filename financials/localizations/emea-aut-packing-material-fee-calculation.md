@@ -16,10 +16,11 @@ ms.search.region: Austria
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
-ms.openlocfilehash: 39874b32184221d165ca7ed3b89cf7524c43f28c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 55578117df512db04cdd335acd11d12fe07e772c
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -84,7 +85,7 @@ In Europa gibt es Verpackungsmüll-Bestimmungen. Diese Bestimmungen arbeiten mit
 ## <a name="manually-create-packing-material-transactions"></a>Manuelles Erstellen von Verpackungsmaterialbuchungen
 Gehen Sie folgendermaßen vor, um für Verpackungsmaterialbuchungen einen fakturierten Auftrag oder eine Bestellung zu erstellen:
 
-1.  Auf der Seite **Verpackungsmaterialbuchungen** klicken Sie auf **Neu** und geben Sie die folgenden Informationen auf der Seite **Verpackungsmaterialbuchung erstellen ** ein:
+1.  Auf der Seite **Verpackungsmaterialbuchungen** klicken Sie auf **Neu** und geben Sie die folgenden Informationen auf der Seite **Verpackungsmaterialbuchung erstellen** ein:
     -   Wählen Sie in der Liste eine Rechnungszeile aus.
     -   Wählen Sie einen Verpackungsmaterialcode aus der **Verpackungsmaterialcode**-Dropdownliste aus.
     -   Wählen Sie eine Verpackungsklasse aus der **Verpackungsklasse**-Dropdownliste aus.

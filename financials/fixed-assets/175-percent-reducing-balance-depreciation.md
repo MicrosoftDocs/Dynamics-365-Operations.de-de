@@ -3,7 +3,7 @@ title: Degressiven Abschreibung von 175 Prozent
 description: "Dieser Artikel gibt eine Übersicht der 175 prozentigen Reduktionssaldomethode der Abschreibung."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 812fbb3cc3159783e9908e537c366ffc7f934092
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: cf428d61f89ea70a83e440c656fbc84d7dbded8d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="175-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 175 Prozent
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel gibt eine Übersicht der 175 prozentigen Reduktionssaldomethode der Abschreibung.
 
@@ -54,7 +58,7 @@ Wenn als Abschreibungsjahr **Kalender** ausgewählt wird, stehen im Feld **Perio
 
 ### <a name="fiscal"></a>Steuerlich
 
-Wenn Sie **Steuerlich** im Feld **Jahresabschreibung** auswählen, wird die Abschreibungsmethode "175 % degressiv" auf Grundlage des Geschäftsjahres für den Steuerkalender berechnet, der für das Wertmodell oder das Abschreibungsbuch angegeben wird, oder für den Steuerkalender, der auf der Seite **Sachkonto** ausgewählt wird. Steuerkalender werden auf der Seite **Steuerkalender** eingerichtet. Weitere Informationen finden Sie unter [Steuerkalender, Geschäftsjahre und Perioden.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md)
+Wenn Sie **Steuerlich** im Feld **Jahresabschreibung** auswählen, wird die Abschreibungsmethode "175 % degressiv" auf Grundlage des Geschäftsjahres für den Steuerkalender berechnet, der für das Wertmodell oder das Abschreibungsbuch angegeben wird, oder für den Steuerkalender, der auf der Seite **Sachkonto** ausgewählt wird. Steuerkalender werden auf der Seite **Steuerkalender** eingerichtet. Weitere Informationen finden Sie unter [Steuerkalender, Geschäftsjahre und Perioden.](..\budgeting\fiscal-calendars-fiscal-years-periods.md)
 
 Für das Geschäftsjahr vom 1. Juli bis zum 30. Juni beginnt die Abschreibungsberechnung am 1. Juli. Das Geschäftsjahr kann länger oder kürzer als 12 Monate sein. Die Abschreibung wird automatisch für jede Periode angepasst, und die Länge des nächsten Geschäftsjahres wird mit den Einstellungen für die Perioden auf der Seite **Steuerkalender** bestimmt. 
 
@@ -82,5 +86,7 @@ Bei der Abschreibungsmethode "175 % degressiv" werden 175 Prozent durch die Anza
 
 > [!NOTE] 
 > Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "175% degressiv" berechnet wird, geringer ausfällt, als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
+
+
 
 

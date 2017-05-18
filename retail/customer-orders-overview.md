@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 2f466dfe53ccf0be15ed0793b4a6dd371bdacc0d
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 557ddaeb9253566d512bf76bd6a5e8f798f7d69d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -48,7 +49,7 @@ Nachfolgend sind einige der Parameter, die auf der Seite e **Einzelhandelsparame
 -   **Annullierungsgebührcode** – Wenn ein Zuschlag angewendet wird, wenn ein Kundenauftrag zurückgezogen wird, wird diese Belastung auf einen Zuschlagscode im Auftrag von Microsoft Dynamics AX angezeigt. Verwenden Sie diesen Parameter, um den Annullierungsgebührcode zu definieren.
 -   **Versandkostencode** ** - Einzelhändler können eine Zuschlagsgebühr für den Versand von Waren an einen Debitor erheben. Der Betrag wird auf Versandkosten dieser unter einem Zuschlagscode im Auftrag von Dynamics AX angezeigt. Verwenden Sie diesen Parameter, um den Versandkostencode den Versandkosten im Kundenauftrag zuzuordnen.
 -   **Rückerstattungsversandkosten**  – Gibt an, ob Versandkosten, die einem Kundenauftrag zugeordnet werden, rückvergütbar sind.
--   **Maximaler Betrag ohne Genehmigung ** – wenn Versandkosten rückvergütbar sind, geben den Höchstbetrag der Versandkostenrückerstattungen über Rücklieferungen anzeigen. Wenn dieser Betrag überschritten wird, ist eine Manageraußerkraftsetzung erforderlich, um die Rückerstattung fortzusetzen. Um die folgenden Szenarien zu gewährleisten, kann eine Gebührenerstattung der Versandkosten den Betrag  überschreiten, der ursprünglich geleistet wurde:
+-   **Maximaler Betrag ohne Genehmigung** – wenn Versandkosten rückvergütbar sind, geben den Höchstbetrag der Versandkostenrückerstattungen über Rücklieferungen anzeigen. Wenn dieser Betrag überschritten wird, ist eine Manageraußerkraftsetzung erforderlich, um die Rückerstattung fortzusetzen. Um die folgenden Szenarien zu gewährleisten, kann eine Gebührenerstattung der Versandkosten den Betrag  überschreiten, der ursprünglich geleistet wurde:
     -   Zuschläge werden auf Ebene Auftragsüberschrift angewendet und wenn eine beliebige Menge einer Produktgruppe zurückgegeben wird, kann die Gebührenerstattung für die maximalen Versandkosten, die für die Produkte und die Menge zugelassen ist nicht für alle Einzelhandelskunden gleich angewendet werden.
     -   Versandkosten werden für jede Versandinstanz erhoben. Wenn ein Kunde Produkte mehrmals zurücksendet und die Richtlinie des Einzelhändlers angibt, dass der Einzelhändler die Kosten für den Rückversand übernimmt, dann sind die Rückholversandkosten höher als die tatsächlichen Versandkosten.
 
@@ -57,7 +58,7 @@ Nachfolgend sind einige der Parameter, die auf der Seite e **Einzelhandelsparame
 
 1.  Dient zum Hinzufügen eines Debitors zur Buchung.
 2.  Produkte zum Warenkorb hinzufügen
-3.  Klicken Sie auf **Kundenauftrag erstellen** und wählen Sie dann den Auftragstyp aus. Der Auftragstyp kann entweder **Kundenauftrag** oder ** Angebot** sein.
+3.  Klicken Sie auf **Kundenauftrag erstellen** und wählen Sie dann den Auftragstyp aus. Der Auftragstyp kann entweder **Kundenauftrag** oder **Angebot** sein.
 4.  Klicken Sie auf **Versand aktivier** oder  **Alle versenden**, um die Produkte für eine Adresse im Feld Debitorenkonto zu versenden, geben das angeforderte Versanddatum und geben die Versandkosten an.
 5.  Klicken Sie auf **Ausgewählte entnehmen** oder **Alle entnehmen**, um die Produkte auswählen, die vom aktuellen Shop oder aus einem anderen Shop an einem bestimmten Datum verarbeitet werden.
 6.  Fordern Sie den Anzahlungsbetrag ein, wenn eine Anzahlung erforderlich ist.

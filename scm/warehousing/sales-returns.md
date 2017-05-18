@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: b265a20a271230de5dba6df93900a24aad642885
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: efc932d24e20721c024e8da735ccdbbeca58beb1
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -239,7 +240,7 @@ Obwohl die **Rücklieferung** Seite die Informationen und Aktivitäten enthält,
 
 ### <a name="credit-correction"></a>Habenkorrektur
 
-Als Teil des Rechnungsstellungsprozesses überprüften Sie, ob sonstige Zuschläge korrekt sind. Sollen die Sachkontobuchungen zu Korrekturen (Storno) werden, sollten Sie die Option **Kreditkorrektur** auf der Registerkarte **Andere** der Seite **Buchungsrechnung**  verwenden wenn Sie die Rechnung/eine Gutschrift buchen. **Hinweis**: Standardmäßig ist die **Habenkorrektur** Option aktiviert, wenn die **Gutschrift als Korrektur** Option auf der Seite **Debitorenparameter **aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
+Als Teil des Rechnungsstellungsprozesses überprüften Sie, ob sonstige Zuschläge korrekt sind. Sollen die Sachkontobuchungen zu Korrekturen (Storno) werden, sollten Sie die Option **Kreditkorrektur** auf der Registerkarte **Andere** der Seite **Buchungsrechnung**  verwenden wenn Sie die Rechnung/eine Gutschrift buchen. **Hinweis**: Standardmäßig ist die **Habenkorrektur** Option aktiviert, wenn die **Gutschrift als Korrektur** Option auf der Seite **Debitorenparameter**aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
 
 ## <a name="create-intercompany-return-orders"></a>Intercompany-Rücklieferung erstellen
 Rücklieferungen können zwischen zwei Unternehmen innerhalb Ihrer Organisation abgeschlossen werden. Folgende Szenarios werden unterstützt:
@@ -301,7 +302,7 @@ Beispiel 2 entspricht Beispiel 1, aber der **Habenkorrektur** Parameter ist akti
 
 [![Habenkorrektur ist für die Rücklieferung ausgewählt](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
 
-**Hinweis: **Die Sachkontobuchungen werden als negative Korrekturen eingegeben.
+**Hinweis:**Die Sachkontobuchungen werden als negative Korrekturen eingegeben.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Beispiel 3: Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird
 

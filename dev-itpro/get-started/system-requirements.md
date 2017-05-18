@@ -3,7 +3,7 @@ title: Systemanforderungen
 description: "In diesem Thema werden die Systemanforderungen für die aktuelle Version von Microsoft Dynamics 365 for Operations aufgeführt."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: 9220c093d3f6d6700127c93651db4083be300311
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="system-requirements"></a>Systemanforderungen
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema werden die Systemanforderungen für die aktuelle Version von Microsoft Dynamics 365 for Operations aufgeführt.
 
@@ -43,6 +47,8 @@ Um die neueste Version für jeden Webbrowser zu suchen, wechseln Sie zur Website
 -   Wenn Sie Bilder aufzuzeichnen, die über die Aufgabenaufzeichnung generiert wurden, und diese in Microsoft Word-Dokumente aufnehmen, müssen Sie eine Chrome-Erweiterung installiert haben. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   Der Workflow-Editor wird als ClickOnce-Anwendung gestartet. Nur Microsoft Edge and Internet Explorer (auf einer unterstützten Microsoft Windows-Version) unterstützen ClickOnce-Anwendungen. Die Workflow-Editor-ClickOnce-Anwendung erfordert ein kompatibles 64-Bit-Betriebssystem.
 -   Der Berichts-Designer für Finanzberichterstellung wird als ClickOnce-Anwendung gestartet. Er erfordert ein kompatibles 64-Bit-Betriebssystem. Wenn Sie Chrome verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichtsdesigner-Client herunterzuladen. Wenn Sie Chrome im unbekannten Modus verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den unbekannten Modus aktiviert ist.
+-   Um PDF-Dateien in der Vorschau anzeigen, sollten Sie moderne Browser wie Microsoft Edge verwenden (aktuellste verfügbare Version) unter Windows 10 oder Google Chrome (aktuellste verfügbare Version) unter Windows 10, 8,1, Windows 8, Windows 7 oder Google Nexus-10 Tablet.
+
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Unterstützte Webbrowser für Retail Cloud POS
 
@@ -117,11 +123,13 @@ Der Computer muss alle Systemanforderungen für das Einrichten und Verwenden der
 -   Mindestens 10 GB freier Speicherplatz (die Kanaldatenbank benötigt viel Speicherplatz)
 
 ## <a name="requirements-for-development-on-local-vms"></a>Anforderungen für Entwicklung auf lokalen VMs
-Weitere Informationen zu den Anforderungen für die Entwicklung auf lokalen virtuellen Maschinen (VMs) finden Sie unter [Lokale VM-Ausführung](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
+Weitere Informationen zu den Anforderungen für die Entwicklung auf lokalen virtuellen Maschinen (VMs) finden Sie unter [Lokale VM-Ausführung](../dev-tools/access-instances.md).
 
 <a name="see-also"></a>Siehe auch
 --------
 
 [Evaluierungsversion von Dynamics 365 for Operations erhalten](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+
+
 
 

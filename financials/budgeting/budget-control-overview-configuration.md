@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 04e0c066511c1fedf33784944441326201fc2df8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4caef8eb4d11ad5d2ba1ce0e23d869c0b26b5466
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -48,7 +49,7 @@ Sie können die Budgetsteuerung gemäß verschiedenen Faktoren konfigurieren:
 
 -   **Finanzdimensionen**– Welche Finanzdimensionen müssen verwendet werden, um einen Bericht des Budgets und der Istwerte zu erstellen und welche Finanzdimensionen sind erforderlich, um das Budget zu steuern? Gibt es bestimmte Dimensionskombinationen oder Hauptkonten, die besondere Aufmerksamkeit erfordern? Gibt es beispielsweise eine Anforderung, das Budget zu den Istwerten nach Kostenstelle und Programm zu verfolgen? Erfordern Reisekosten bestimmte Aufmerksamkeit?
 -   **Zeit** – Welcher Zeitrahmen (Finanzzeitraum, Finanzzeitraum seit Jahresbeginn usw.) wird verwendet, um verfügbare Budgets auszuwerten?
--   **Quelldokumente ** – welche Quelldokumente müssen für Budgetsteuerung ausgewertet werden? Müssen die Dokumente pro Position oder pro Dokument ausgewertet werden?
+-   **Quelldokumente** – welche Quelldokumente müssen für Budgetsteuerung ausgewertet werden? Müssen die Dokumente pro Position oder pro Dokument ausgewertet werden?
 -   **Berechnung der verfügbaren Budgetmittel** – Sollten Dokumente wie Bestellanforderungen (Vorabbelastung) sowie Bestellungen (Belastungen) in die Berechnung der Budgetmittel berücksichtigt werden? Müssen Dokumente in einem Entwurfsstatus in die Berechnung der Budgetmittel berücksichtigt werden?
 -   **Berechtigung für Außerkraftsetzung**– Wer ist berechtigt, das verfügbare Budget zu überschreiten?
 
@@ -99,7 +100,7 @@ Dann sollten Sie auf der Registerkarte **Budgetmodelle zuweisen** der Zeitspanne
 Auf der Registerkarte **Budgetsteuerungsregeln definieren** müssen Sie spezifische Regeln basierend auf den Finanzdimensionen erstellen, die für die Budgetsteuerung aktiviert sind. Wenn es beispielsweise einen Fokus basierend auf den Aufwendungen oder dem Ausgabenbereich für eine Abteilung gibt, dann kann das mit den Einstellungen hier definiert und ausgewertet werden. Verschiedene Schwellenwerte können für jede Budgetsteuerungsregel definiert werden. 
 
 > [!Important]
-> Die Budgetsteuerung wird für ein Hauptkonto **Gewinn und Verlust**, **Ausgaben**, **Einnahmen, Bilanz, Verbindlichkeiten, Eigenkapital** oder **Anlage**-Typen. Wenn dieser Registerkarte eine Regel enthält, die leere Kriterien hat, wird die Budgetsteuerung für **alle **Finanzdimensionskombinationen aktiviert, die Hauptkonten dieses Typs umfassen. Daher ist es wichtig, Budgetsteuerungsregeln zu erstellen, die nur die Bereiche der Finanzdimensionskombinationen definieren, in denen eine aktivierte Budgetsteuerung von Bedeutung ist.  
+> Die Budgetsteuerung wird für ein Hauptkonto **Gewinn und Verlust**, **Ausgaben**, **Einnahmen, Bilanz, Verbindlichkeiten, Eigenkapital** oder **Anlage**-Typen. Wenn dieser Registerkarte eine Regel enthält, die leere Kriterien hat, wird die Budgetsteuerung für **alle**Finanzdimensionskombinationen aktiviert, die Hauptkonten dieses Typs umfassen. Daher ist es wichtig, Budgetsteuerungsregeln zu erstellen, die nur die Bereiche der Finanzdimensionskombinationen definieren, in denen eine aktivierte Budgetsteuerung von Bedeutung ist.  
 
 ### <a name="select-main-accounts"></a>Hauptkonten auswählen
 
@@ -124,7 +125,7 @@ Beachten Sie zudem, dass Transaktionen, die gebucht wurden, bevor die Budgetsteu
 ## <a name="using-budget-control"></a>Verwenden der Budgetsteuerung
 Sobald die Budgetsteuerung aktiviert wird, erhalten Benutzer Budgetsteuerungswarnungen und -fehlermeldungen in Dokumenten und Erfassungen, die für die Budgetsteuerung konfiguriert werden. Denken Sie daran, Sie können die Budgetsteuerung konfigurieren, sodass Benutzer, wenn sie die Budgetmittel überschreiten, gewarnt werden, aber trotzdem weiterhin die Buchung bestätigen oder buchen können. Benutzer können die Details von fehlgeschlagenen Budgetprüfungen auf der Seite **Budgetsteuerungsfehler und Warnungen** anzeigen.   
 
-Von dieser Seite aus können Benutzer auf der Seite **Budgetsteuerungsstatistiken** Budgetverfügbarkeiten nach Perioden anzeigen und Reservierungen für eine ausgewählte Budgetsteuerungsdimensionskombination anzeigen. Benutzer können auf der Seite **Budgetsteuerungsstatistik **auch die Budgetverfügbarkeit für alle Finanzdimensionskombinationen anzeigen, die in der Budgetsteuerung verwendet werden. 
+Von dieser Seite aus können Benutzer auf der Seite **Budgetsteuerungsstatistiken** Budgetverfügbarkeiten nach Perioden anzeigen und Reservierungen für eine ausgewählte Budgetsteuerungsdimensionskombination anzeigen. Benutzer können auf der Seite **Budgetsteuerungsstatistik**auch die Budgetverfügbarkeit für alle Finanzdimensionskombinationen anzeigen, die in der Budgetsteuerung verwendet werden. 
 
 Wenn die Budgetsteuerung für Bestellungen aktiviert ist, kann der Budget-Manager den Arbeitsbereich **Sachkontobudgets und Planungen** verwenden, um die Warteschlange aller nicht bestätigter Bestellungen mit Budgetprüfungswarnungen und -fehlern überprüfen. Wenn der Budget-Manager Berechtigungen für Budgetüberschreitung konfiguriert hat, kann er oder sie die Bestellung direkt im Arbeitsbereich bestätigen.    
 

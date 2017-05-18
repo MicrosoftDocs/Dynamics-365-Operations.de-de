@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: be156afa73de731e54985485b617bcbae883db3a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 917771596a0c56561bf302ae990d95a987f442e0
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Die Berechnung von Beträgen für variable Vergütung für Ihre Mitarbeiter kann
 ## <a name="variable-compensation-components"></a>Variable Vergütungskomponenten
 ### <a name="create-compensation-types"></a>Erstellen von Vergütungstypen
 
-**Typen für variable Vergütung **sind eine erforderliche Komponente. Anhand der Typen für variable Vergütung können Sie die Arten der variablen Vergütung beschreiben, die Ihre Organisation gewährt. Sie können Sie auch angeben, ob die Vergütung in bar oder in nicht monetärer Form erfolgt (z. B. durch Bestand).
+**Typen für variable Vergütung**sind eine erforderliche Komponente. Anhand der Typen für variable Vergütung können Sie die Arten der variablen Vergütung beschreiben, die Ihre Organisation gewährt. Sie können Sie auch angeben, ob die Vergütung in bar oder in nicht monetärer Form erfolgt (z. B. durch Bestand).
 
 ### <a name="describe-vesting-rules"></a>Beschreiben von Übertragungsregeln
 
@@ -53,17 +54,17 @@ Der **Plan für variable Vergütung** enthält die Regeln, Berechnungsmethoden u
 Der Betrag für variable Prämien kann entweder auf einem Prozentsatz des regulären Basiseinkommens des Mitarbeiters basieren oder auf einer festgelegten Anzahl von Einheiten.
 
 -   Wählen Sie die Option **Prozentsatz des Basiswerts** aus, um einen Standardprozentsatz einzugeben, und geben Sie an, ob der feste Lohnsatz des Mitarbeiters oder der Kontrollpunkt für die Vergütungsstufe des Mitarbeiters als Grundlage dienen soll. Die Vergütungsstufe wird auf der Stufe des Mitarbeiters festgelegt. Einer der Referenzpunkte aus der Vergütungsstruktur kann als Kontrollpunkt im Plan für feste Vergütung eingerichtet werden. Das System verwendet die Vergütungsstufe der Stufe des Mitarbeiters und überprüft sie mit dem Kontrollpunkt, der im Plan für feste Vergütung des Mitarbeiters aufgeführt ist, um den Kontrollpunktbetrag der Vergütungsstufe des Mitarbeiters zu suchen. Der Kontrollpunktbetrag wird anschließend anstelle des festen Lohnsatzes des Mitarbeiters als Basis für die Prämie verwendet.
--   Wählen Sie die Option** Anzahl der Einheiten** aus, um eine Standardanzahl von Einheiten, den Wert der einzelnen Einheiten und die Währung für den Wert der Einheiten einzugeben, wenn der Vergütungsplan eine nicht monetäre Prämie vorsieht (beispielsweise 200 Einheiten des Bestands mit einem Wert von EUR 40 pro Einheit). Wenn es sich um einen Vergütungsplan für eine Bargeldprämie handelt, geben Sie hier einfach die Anzahl der Einheiten ein. Für eine Bargeldprämie erhält der Mitarbeiter die angegebene Anzahl von Einheiten der Währung, die für den Plan für feste Vergütung verwendet wird (z, 500 Einheiten von 1 EUR). Das 1:1-Beziehungs-Steuerelement kann verwendet werden, um anzugeben, ob es eine direkte eins-zu-eins Zuordnung zwischen der Anzahl der Einheiten und dem Einheitenwert gibt. Wenn Sie einen Plan für variable Vergütung für einen Bargeld-basierten Plan erstellen, indem Sie die Anzahl der Einheiten verwenden, ist diese Option automatisch gesperrt auf **Ja** und der Einheitswert ist **1.0000**.
+-   Wählen Sie die Option**Anzahl der Einheiten** aus, um eine Standardanzahl von Einheiten, den Wert der einzelnen Einheiten und die Währung für den Wert der Einheiten einzugeben, wenn der Vergütungsplan eine nicht monetäre Prämie vorsieht (beispielsweise 200 Einheiten des Bestands mit einem Wert von EUR 40 pro Einheit). Wenn es sich um einen Vergütungsplan für eine Bargeldprämie handelt, geben Sie hier einfach die Anzahl der Einheiten ein. Für eine Bargeldprämie erhält der Mitarbeiter die angegebene Anzahl von Einheiten der Währung, die für den Plan für feste Vergütung verwendet wird (z, 500 Einheiten von 1 EUR). Das 1:1-Beziehungs-Steuerelement kann verwendet werden, um anzugeben, ob es eine direkte eins-zu-eins Zuordnung zwischen der Anzahl der Einheiten und dem Einheitenwert gibt. Wenn Sie einen Plan für variable Vergütung für einen Bargeld-basierten Plan erstellen, indem Sie die Anzahl der Einheiten verwenden, ist diese Option automatisch gesperrt auf **Ja** und der Einheitswert ist **1.0000**.
 
-Über die **Einstellungsregel **können Sie festlegen, ob alle Mitarbeiter unabhängig von ihrem Einstellungsdatum die gleiche Erhöhung erhalten sollen (**Einstellungsregel ** = **Keine**), oder ob Mitarbeiter basierend auf der Länge ihrer Beschäftigungsdauer in diesem Zyklus einen Prozentsatz der Prämie erhalten sollen (**Einstellungsregel ** = **Prozent**). 
+Über die **Einstellungsregel**können Sie festlegen, ob alle Mitarbeiter unabhängig von ihrem Einstellungsdatum die gleiche Erhöhung erhalten sollen (**Einstellungsregel** = **Keine**), oder ob Mitarbeiter basierend auf der Länge ihrer Beschäftigungsdauer in diesem Zyklus einen Prozentsatz der Prämie erhalten sollen (**Einstellungsregel** = **Prozent**). 
 
 Mi der **Hebelwirkung** können die Prämie eines Mitarbeiters, basierend auf der Leistung der Abteilung des Mitarbeiters erfolgen. Leistungskennzahlen können für jede Abteilung auf der Seite **Abteilung** unter **Zugehörige Formulare**  &gt; **Vergütung** &gt; **Leistung** festgelegt werden.. Die Prämie, die Mitarbeiter in dieser Abteilung erhalten, hängt vom Wert im Feld **Prozent der erzielten Zielvorgabe** ab, die Leistung der Abteilung angibt:
 
--   Wenn die Leistung der Abteilung 100 Prozent beträgt, wird die Prämie für die Mitarbeiter in dieser Abteilung über den Prozentsatz berechnet, der im Feld** Auszahlung bei 100 %** festgelegt wurde.
+-   Wenn die Leistung der Abteilung 100 Prozent beträgt, wird die Prämie für die Mitarbeiter in dieser Abteilung über den Prozentsatz berechnet, der im Feld**Auszahlung bei 100 %** festgelegt wurde.
 -   Wenn die Leistung der Abteilung 100 Prozent übersteigt, addiert das System den Prozentsatz, der im Feld **Pro 1 % über Zielvorgabe** festgelegt wurde, zu dem Prozentsatz hinzu, der im Feld **Auszahlung bei 100 %** angegeben ist, bis der Wert im Feld **Höchste zulässige Auszahlung** erreicht ist.
 -   Wenn die Leistung der Abteilung unter 100 Prozent liegt, subtrahiert das System den Prozentsatz, der im Feld **Pro 1 % unter Ziel** festgelegt wurde, von dem Prozentsatz, der im Feld **Auszahlung bei 100 %** angegeben ist, bis der Wert im Feld **Geringste zulässige Auszahlung** erreicht ist.
 
-Sie können** Toleranzstufen** für die Schwellenwertprozentsätze festlegen, damit eine Warnmeldung angezeigt wird, wenn die Hebelwirkung bewirkt, dass der Prozentsatz außerhalb des Schwellenwertprozentsatzes liegt. 
+Sie können**Toleranzstufen** für die Schwellenwertprozentsätze festlegen, damit eine Warnmeldung angezeigt wird, wenn die Hebelwirkung bewirkt, dass der Prozentsatz außerhalb des Schwellenwertprozentsatzes liegt. 
 
 Standardmäßig sucht das System nach der Abteilung, die für die Position des Mitarbeiters festgelegt wird. Hängt jedoch möglicherweise die Zuerkennung für einige Mitarbeiter von der Leistung von mehreren Abteilungen ab.- In diesem Fall können die unterschiedlichen Abteilungen und der Prozentsatz der Prämie, der mit der Leistung der einzelnen Abteilungen verbunden ist, für die Registrierung für variable Vergütung des Mitarbeiters festgelegt werden. Weitere Informationen finden Sie im Abschnitt" Registrierungs für variable Vergütung". 
 
@@ -97,7 +98,7 @@ Nun können Sie Mitarbeiter in einem Plan für variable Vergütung registrieren.
 
 Stellen Sie sicher, dass das Feld **Effektives Datum** korrekt festgelegt ist. Stellen Sie sicher, dass das Feld Gültigkeitsdatum die **zusammengesetzte** Berechnungsmethode  verwendet. Das effektive Gültigkeitsdatum der Registrierung wird möglicherweise bei der Berechnung der Prämie für den Mitarbeiter berücksichtigt. 
 
-Sie können die Registerkarte **Überschreibung** verwenden, um bestimmte Werte für den Mitarbeiter zu überschreiben. Wenn beispielsweise **Einstellungsregel ** **Prozent** auf den Vergütungsplan festgelegt wird, und ein anderes Einstellungsdatum sollte bei der Berechnung des Prozentsatzes des Mitarbeiters verwendet werden können Sie das Einstellungsatum im Feld **Einstellungsdatum** definieren. Sie können entweder den **Prämienprozent**-Wert oder die **Anzahl der Einheiten** für einen bestimmten Mitarbeiter, abhängig von den Planeinstellungen überschreiben. Diese Werte werden immer noch durch die Einstellungsregel, die Leistungsfaktoren und andere Einstellungen für den Plan berücksichtigt. 
+Sie können die Registerkarte **Überschreibung** verwenden, um bestimmte Werte für den Mitarbeiter zu überschreiben. Wenn beispielsweise **Einstellungsregel** **Prozent** auf den Vergütungsplan festgelegt wird, und ein anderes Einstellungsdatum sollte bei der Berechnung des Prozentsatzes des Mitarbeiters verwendet werden können Sie das Einstellungsatum im Feld **Einstellungsdatum** definieren. Sie können entweder den **Prämienprozent**-Wert oder die **Anzahl der Einheiten** für einen bestimmten Mitarbeiter, abhängig von den Planeinstellungen überschreiben. Diese Werte werden immer noch durch die Einstellungsregel, die Leistungsfaktoren und andere Einstellungen für den Plan berücksichtigt. 
 
 **Organisatorische Überschreibungen** werden verwendet, um die Prämie eines Mitarbeiters auf die Leistung einer oder mehreren Abteilungen zu basieren. Der Prozentsatz, der über die Abteilungen hinweg zugewiesen wird, sollte insgesamt 100 Prozent betragen. Die Einzelleistung des Mitarbeiters wird auch berücksichtigt. Diese Einstellungen werden nur verwendet, wenn beim Ausführen des Vergütungsprozesses die Option **Leistungsbezogene Bezahlung** ausgewählt wird.
 

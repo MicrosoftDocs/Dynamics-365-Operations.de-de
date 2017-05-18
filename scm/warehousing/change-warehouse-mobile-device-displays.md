@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 721b293d1f8c76458ca510732f9bb94f003ac6e3
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 796ed86b9a351d690edbee1adc0631d62b8011ac
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -87,7 +88,7 @@ Sie können die Seite **Textfarben des mobilen Geräts** verwenden, um die versc
 Um die Farbe zu wählen, klicken Sie auf der Seite **Farbe wählen** auf die Palette oder geben einen hexadezimalen Farbcode ein.
 
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>Definieren des Datumsformats, das auf mobilen Geräten verwendet werden soll
-Sie können die Liste der akzeptierten Datumsformate für jede Installation erweitern. Diese Funktion kann hilfreich sein, beispielsweise wenn Sie ein Format angeben möchten, das es für eine Arbeitskraft einfacher macht, Daten auf einem mobilen Gerät einzugeben. Das Standardformat wird durch die Standardsprache des Benutzers bestimmt, die im Feld **Sprache** auf der Seite **Benutzeroptionen** definiert ist. (Die gleiche Seite wird auch verwendet, um einen Mitarbeiter einem bestimmten Lagerortarbeitsbenutzer zuzuordnen.) **Hinweis: ** * Das Portal Lagerort-mobiles Geräte verwendet nicht die Einstellung des Felds **Datum, Uhrzeit und Zahlenformat**  auf der Seite **Sprache und Regionseinstellungen**. Um ein Datumsformat zu ändern, müssen Sie mit regulären Ausdrücken in Microsoft .NET Framework vertraut sein. Weitere Informationen finden Sie unter [.NET Reguläre Framework- Ausdrücke](http://go.microsoft.com/fwlink/?LinkId=391260). Um Datumsformate zu definieren, bearbeiten Sie die Datei Daten.ini, die sich unter Inhalt\\Einstellungen\\Daten.ini auf den Portalserver der mobilen Geräte für den Lagerort befindet. Diese Datei verwendet reguläre .NET-Ausdrücke, um das Datumsformat zu bestimmen. Der reguläre Ausdruck muss Teilausdrücke enthalten, die benannte Gruppen für Tag, Monat und Jahr (DDMMYY) erstellen, wie im folgenden Beispiel gezeigt:
+Sie können die Liste der akzeptierten Datumsformate für jede Installation erweitern. Diese Funktion kann hilfreich sein, beispielsweise wenn Sie ein Format angeben möchten, das es für eine Arbeitskraft einfacher macht, Daten auf einem mobilen Gerät einzugeben. Das Standardformat wird durch die Standardsprache des Benutzers bestimmt, die im Feld **Sprache** auf der Seite **Benutzeroptionen** definiert ist. (Die gleiche Seite wird auch verwendet, um einen Mitarbeiter einem bestimmten Lagerortarbeitsbenutzer zuzuordnen.) **Hinweis:** * Das Portal Lagerort-mobiles Geräte verwendet nicht die Einstellung des Felds **Datum, Uhrzeit und Zahlenformat**  auf der Seite **Sprache und Regionseinstellungen**. Um ein Datumsformat zu ändern, müssen Sie mit regulären Ausdrücken in Microsoft .NET Framework vertraut sein. Weitere Informationen finden Sie unter [.NET Reguläre Framework- Ausdrücke](http://go.microsoft.com/fwlink/?LinkId=391260). Um Datumsformate zu definieren, bearbeiten Sie die Datei Daten.ini, die sich unter Inhalt\\Einstellungen\\Daten.ini auf den Portalserver der mobilen Geräte für den Lagerort befindet. Diese Datei verwendet reguläre .NET-Ausdrücke, um das Datumsformat zu bestimmen. Der reguläre Ausdruck muss Teilausdrücke enthalten, die benannte Gruppen für Tag, Monat und Jahr (DDMMYY) erstellen, wie im folgenden Beispiel gezeigt:
 
 ^(?&lt;day&gt;\\d{2})(?&lt;month&gt;\\d{2})(?&lt;year&gt;\\d{2})$
 

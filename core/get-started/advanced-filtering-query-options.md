@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 5ee7a04572e350a7c08d0418bade6d332aa920c6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e186073d672c05407831f15a66b58ae44d068d0b
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -67,7 +68,7 @@ In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfü
 <td><em>Von-Wert</em>..<em>Bis-Wert</em> (zwei Punkte)</td>
 <td>Zwischen zwei eingegebenen Werten, die von zwei Punkten getrennt werden.</td>
 <td>Geben Sie den "Von-Wert", zwei Punkte und dann den "Bis-Wert" ein.</td>
-<td><strong>1..10 </strong>findet alle Werte von 1 bis 10. In einem Zeichenfolgefeld findet <strong>A..C</strong> allerdings alle Werte, die mit &quot;A&quot; bzw. &quot;B&quot; beginnen oder gleich &quot;C&quot; sind (Dieses Beispiel findet die Anfrage &quot;Ca&quot; somit nicht. Wenn Sie alle Werte von &quot;A*&quot; bis &quot;C*&quot;, suchen, geben Sie also <strong>A..D</strong> ein.</td>
+<td><strong>1..10</strong> findet alle Werte von 1 bis 10. In einem Zeichenfolgefeld findet <strong>A..C</strong> allerdings alle Werte, die mit &quot;A&quot; bzw. &quot;B&quot; beginnen oder gleich &quot;C&quot; sind (Dieses Beispiel findet die Anfrage &quot;Ca&quot; somit nicht. Wenn Sie alle Werte von &quot;A*&quot; bis &quot;C*&quot;, suchen, geben Sie also <strong>A..D</strong> ein.</td>
 </tr>
 <tr class="even">
 <td>..<em>Wert</em> (zwei Punkte)</td>

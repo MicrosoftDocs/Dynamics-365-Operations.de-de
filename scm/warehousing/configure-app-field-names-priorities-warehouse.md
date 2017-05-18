@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: ce8f6d6f7090995bc44db1ba0103a7d6c0416620
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 73fcc19b9ee17a691206019efbff29c4967f4e2f
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten i
 <a name="configure-warehouse-app-field-names"></a>Konfigurieren von Lagerort-Feldnamen in der App
 ===================================
 
-Wenn Sie Arbeitsgänge für Dynamics 365  for Operations - Warehousing auf Ihrem mobilen Gerät nutzen, können Sie konfigurieren, wie Metadaten für das Gerät angezeigt werden sollen auf der Seite **Lagerort-App-Feldnamen **. In einem neuen Unternehmen in Dynamics 365  for Operations wählen Sie **Standardeinstellungen erstellen** aus, um alle Feldnamen zu generieren, die im Workflow des mobilen Geräts für Lagerort verwendet werden, und weisen Sie diesen dann einen bevorzugten Eingabemodus zu und geben Sie einen Typ ein. Nachdem Sie alle Feldnamen generiert haben, können folgende Eingabeoptionen auswählen.
+Wenn Sie Arbeitsgänge für Dynamics 365  for Operations - Warehousing auf Ihrem mobilen Gerät nutzen, können Sie konfigurieren, wie Metadaten für das Gerät angezeigt werden sollen auf der Seite **Lagerort-App-Feldnamen**. In einem neuen Unternehmen in Dynamics 365  for Operations wählen Sie **Standardeinstellungen erstellen** aus, um alle Feldnamen zu generieren, die im Workflow des mobilen Geräts für Lagerort verwendet werden, und weisen Sie diesen dann einen bevorzugten Eingabemodus zu und geben Sie einen Typ ein. Nachdem Sie alle Feldnamen generiert haben, können folgende Eingabeoptionen auswählen.
 
 <table>
 <colgroup>

@@ -3,7 +3,7 @@ title: Navigationssuche
 description: In diesem Artikel wird beschrieben, wie die die Suchfunktion verwendet wird, um zu den Seiten in Microsoft Dynamics 365 for Operations zu navigieren.
 author: aneesmsft
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 87fed576f8cf358520d94f5cd5b326ff9801913a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 650c8b60ba8204e8990cf607c1c9901b8f0bb762
+ms.openlocfilehash: 9f2cbafa3e21006f458067baf99ea5abaef8bb86
+ms.contentlocale: de-de
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -31,25 +32,32 @@ ms.lasthandoff: 03/31/2017
 
 In diesem Artikel wird beschrieben, wie die die Suchfunktion verwendet wird, um zu den Seiten in Microsoft Dynamics 365 for Operations zu navigieren.
 
-Microsoft Dynamics 365 for Operations bietet Funktionen für eine große Auswahl an Branchen und Segmenten. Die Bewerbung beinhaltet mehrere Bereiche und Seiten, um Ihnen dabei zu unterstützten, verschiedene Funktionen auszuführen. Um die Seiten rasch zu finden, die Sie mit Ihren Aufgaben durchführen müssen, verwenden Sie die Navigations-Suchfunktion. Zur Verwendung dieser Funktion, klicken Sie auf das Symbol **Suche** um das Feld **Suchen** anzuzeigen. Sie können dann eines oder mehrere Wörter im Feld eingeben. Das Systems durchsucht sofort in der Anwendung nach entsprechenden Seiten, die den Begriffen entsprechen, die Sie eingegeben haben. So können Sie beispielsweise "Kreditorenrechnung" als Eingabe eingeben, und dann zeigt das System Ergebnisse an, die mit diese Eingabe übereinstimmen. **Hinweis:** Das Feld **Suchen** hilft Ihnen dabei, Seiten finden und zu navigieren. Es unterstützt Sie nicht dabei, bestimmte Daten oder Aktivitäten zu suchen. 
+Microsoft Dynamics 365 for Operations bietet Funktionen für eine große Auswahl an Branchen und Segmenten. Die Bewerbung beinhaltet mehrere Bereiche und Seiten, um Ihnen dabei zu unterstützten, verschiedene Funktionen auszuführen. Um die Seiten rasch zu finden, die Sie mit Ihren Aufgaben durchführen müssen, verwenden Sie die Navigations-Suchfunktion. 
 
-[![search-box](./media/search-box.png)](./media/search-box.png) Die Navigationssuchfunktion dient auch dazu, Sie schnell zu einer bestimmten Seite zu navigieren. Wenn Sie beispielsweise ein Kreditorsekretär sind, der häufig die **Zahlungserfassung** Seite verwendet, können Sie " Zahlungserfassung" im Suchfeld eingeben. Da die Eingabe ein exaktes gleich wie der Seitentitel, wird die Seite oben der Suchergebnisse angezeigt, und Sie können sie schnell zu navigieren. 
+Zur Verwendung dieser Funktion, klicken Sie auf das Symbol **Suche** um das Feld **Suchen** anzuzeigen. Sie können dann eines oder mehrere Wörter im Feld eingeben. Das Systems durchsucht sofort in der Anwendung nach entsprechenden Seiten, die den Begriffen entsprechen, die Sie eingegeben haben. So können Sie beispielsweise "Kreditorenrechnung" als Eingabe eingeben, und dann zeigt das System Ergebnisse an, die mit diese Eingabe übereinstimmen. 
 
-[![searching-for-payment-journal](./media/searching-for-payment-journal.png)](./media/searching-for-payment-journal.png) 
+**Hinweis:** Das Feld **Suchen** hilft Ihnen dabei, Seiten finden und zu navigieren. Es unterstützt Sie nicht dabei, bestimmte Daten oder Aktivitäten zu suchen. 
 
-Die Suchergebnisliste zeigt sowohl den Seitentitel als auch den Navigationspfad an. So können Sie sich den Speicherort der Seite in der Anwendung bewußt machen. Darüber hinaus hilft es dabei, zwischen zwei oder mehr ähnlichen Seiten in den Ergebnissen zu unterscheiden. Wenn Sie nach einer Seite suchen, wird die Eingabe mit dem Seitentitel sowie dem Navigationspfad abgeglichen. Wenn Sie zum Beispiel "erhältlich" im** **Suchfeld eingeben, finden Sie Ergebnisse für die Seiten, die im Debitorenbereich verfügbar sind-obwohl der Seitentitel nicht das Wort "erhältlich" enthält. 
+[![Suchfeld](media/navigation-search.png "Suchfeld") 
 
-[![search-for-the-word-receivable](./media/search-for-the-word-receivable.png)](./media/search-for-the-word-receivable.png) 
+## <a name="quickly-navigate-to-a-particular-page"></a>Navigieren Sie schnell zu einer bestimmten Seite
+Die Navigationssuchfunktion dient auch dazu, damit Sie schnell zu einer bestimmten Seite navigieren können. Wenn Sie beispielsweise Buchhalter für die Kreditorenkonten sind, der häufig die Seite **Zahlungserfassung verwendet**, können Sie " Zahlungserfassung" im **Suchfeld** eingeben. Da die Eingabe ein exaktes gleich wie der Seitentitel, wird die Seite oben der Suchergebnisse angezeigt, und Sie können sie schnell zu navigieren. 
 
-Aus Sicht einer Verwaltungs- und Sicherheitsperspektive, tauchen in den Navigationssuchenfunktionen nur auf:
+Die Suchergebnisliste zeigt sowohl den Seitentitel als auch den Navigationspfad an. Dies zeigt die Position der Seite in der Anwendung an. Darüber hinaus hilft es dabei, zwischen zwei oder mehr ähnlichen Seiten in den Ergebnissen zu unterscheiden. 
+
+Wenn Sie nach einer Seite suchen, wird die Eingabe mit dem Seitentitel sowie dem Navigationspfad abgeglichen. Wenn Sie zum Beispiel "Forderung" im **Such**feld eingeben, finden Sie Ergebnisse für die Seiten, die im Debitorenbereich verfügbar sind, obwohl der Seitentitel nicht das Wort "Forderung" enthält. 
+
+## <a name="quickly-navigate-to-a-page-based-on-the-technical-form-name"></a>Navigieren Sie schnell zu einer Seite basierend auf dem technischen Formularnamen
+Die Navigationssuchfunktionen enthalten außerdem eine vielgenutzte Funktion für Poweruser: die Möglichkeit, schnell zu einer Seite basierend auf dem technischen Formularname zu navigieren. Viele Benutzer sind mit dem System so vertraut, dass ihnen die genauen Formularnamen bekannt sind, mit denen sie arbeiten. Wenn Sie einer dieser Benutzer sind, können Sie **Formular:** eingeben, gefolgt vom Namen des Formulars nach dem Sie suchen. Wenn Sie beispielsweise **Formular: vendinvoice** eingeben, enthalten die Suchergebnisse alle Seiten, in denen die Formularnamen mit **vendinvoice** beginnen. 
+
+## <a name="administration-and-security"></a>Administration und Sicherheit
+Aus Sicht einer Verwaltungs- und Sicherheitsperspektive tauchen in den Navigationssuchenfunktionen nur zwei Ergebnisstypen auf:
 
 -   Seiten, die in der aktuellen Konfiguration aktiviert sind (über Konfigurationsschlüssel).
--   Seiten, auf die der Benutzer aufgrund seiner Rolle Zugriff hat
+-   Seiten, auf die der Benutzer aufgrund seiner Rolle Zugriff hat.
 
-Die Liste von Suchergebnissen ist auf 10 Artikeln beschränkt. Wenn Sie nicht gefunden, wonach Sie in den Ergebnisse suchen, sollten Sie versuchen, die Eingabe zu verfeinern oder den Inhalt aktualisieren. Aus der Entwicklungsperspektive sind die Navigationssuchenfunktionen sehr einfach nutzen, da es virtuell keine Verzögerung zwischen der Bereitstellung von Menüelementen und deren Anzeige in den Suchergebnissen gibt. Solange die Menüelemente entweder mit dem Navigationsbereich oder dem Dashboard verknüpft sind, werden diese automatisch durchsuchbar. Die Navigationssuchfunktionen enthalten außerdem eine vielgenutzte Funktion für Poweruser: die Möglichkeit, schnell zu einer Seite basierend auf dem technischen Formularname zu navigieren. Viele Benutzer sind mit dem System so vertraut, dass ihnen die genauen Formularnamen bekannt sind, mit denen sie arbeiten. Wenn Sie einer dieser Benutzer sind, können Sie **Formular:** eingeben, gefolgt vom Namen des Formulars nach dem Sie suchen. Wenn Sie beispielsweise **Formular: vendinvoice** eingeben, enthalten die Suchergebnisse alle Seiten, in denen die Formularnamen mit **vendinvoice** beginnen. 
+Die Liste von Suchergebnissen ist auf 10 Artikeln beschränkt. Wenn Sie nicht gefunden, wonach Sie in den Ergebnisse suchen, sollten Sie versuchen, die Eingabe zu verfeinern oder den Inhalt aktualisieren. 
 
-[![search-for-form-vendinvoice](./media/search-for-form-vendinvoice.png)](./media/search-for-form-vendinvoice.png)
-
-
-
+## <a name="development"></a>Entwicklung 
+Aus der Entwicklungsperspektive sind die Navigationssuchenfunktionen sehr einfach zu nutzen, da es virtuell keine Verzögerung zwischen der Bereitstellung von Menüelementen und deren Anzeige in den Suchergebnissen gibt. Solange die Menüelemente entweder mit dem Navigationsbereich oder dem Dashboard verknüpft sind, werden diese automatisch durchsuchbar. 
 

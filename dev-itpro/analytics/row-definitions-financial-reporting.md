@@ -1,16 +1,16 @@
 ---
 title: Zeilendefinitionen im Finanzberichtdesigner
 description: "Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Zeile eines Finanzberichts angibt. Zeilendefinitionen können mit Spaltendefinitionen, Berichtsstruktur-Definitionen und Berichtsdefinitionen kombiniert werden, um eine Bausteingruppe zu erstellen, die von mehreren Unternehmen verwendet werden kann."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 42 - 39
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: a2f92effd1cfdc1d5da2c5ec895c0487a6fc82a4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aa9fcc4d0c122d2355362b75ca210af4c2ef4338
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>Zeilendefinitionen im Finanzberichtdesigner
+
+[!include[banner](../includes/banner.md)]
+
 
 Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Zeile eines Finanzberichts angibt. Zeilendefinitionen können mit Spaltendefinitionen, Berichtsstruktur-Definitionen und Berichtsdefinitionen kombiniert werden, um eine Bausteingruppe zu erstellen, die von mehreren Unternehmen verwendet werden kann.
 
@@ -72,8 +76,8 @@ Um Dimensionen einer Zeilendefinition hinzuzufügen, führen Sie die folgenden S
 
 1.  Klicken Sie im Berichts-Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2.  Klicken Sie im Menü **Bearbeiten** auf **Zeilen aus Dimensionen einfügen**...
-3.  Wählen Sie im Dialogfeld **Zeilen aus Dimensionen einfügen **in der Zeile **Dimensionen** die Zelle aus, damit die Dimension der Zeilendefinition übertragen werden kann, und klicken Sie anschließend auf **Alle &&&**.
-4.  Um die Zeilendefinition auf einen bestimmten Bereich von Dimensionswerten einzuschränken, geben Sie den Dimensionsstartwert in der Zelle ** Dimensionsbereichsanfang **ein, und geben Sie dann den Enddimensionswert in der Zelle **Dimensionssbereichsende** ein. Um alle Werte für die ausgewählte Dimension einzuschließen, lassen Sie diese Zellen leer. **Hinweis:** Platzhalterzeichen (\* oder ?) in den Dimensionsbereichen geben eventuell nicht alle gewünschten Ergebnisse zurück, je nachdem, wie die ERP-Datenbank Daten sortiert.
+3.  Wählen Sie im Dialogfeld **Zeilen aus Dimensionen einfügen**in der Zeile **Dimensionen** die Zelle aus, damit die Dimension der Zeilendefinition übertragen werden kann, und klicken Sie anschließend auf **Alle &&&**.
+4.  Um die Zeilendefinition auf einen bestimmten Bereich von Dimensionswerten einzuschränken, geben Sie den Dimensionsstartwert in der Zelle **Dimensionsbereichsanfang**ein, und geben Sie dann den Enddimensionswert in der Zelle **Dimensionssbereichsende** ein. Um alle Werte für die ausgewählte Dimension einzuschließen, lassen Sie diese Zellen leer. **Hinweis:** Platzhalterzeichen (\* oder ?) in den Dimensionsbereichen geben eventuell nicht alle gewünschten Ergebnisse zurück, je nachdem, wie die ERP-Datenbank Daten sortiert.
 5.  Wählen Sie einen Wert im Feld **Anfangszeilencode** aus, um den Zeilencode für den ersten Dimensionswert anzugeben, der der Zeilendefinition hinzugefügt wird.
 6.  Geben Sie im Feld **Jede Zeile inkrementieren um** die Lücke zwischen aufeinanderfolgenden Zeilencodes an. Wenn beispielsweise der erste Zeilencode ist 100, und der Inkrementwert ist 30, die ersten neuen Zeilen weisen die Codes 100,130,160,190 und 220. Verwenden Sie einen Inkrementwert, der genügend Platz enthält, der Anwerbung neuer Format- und Formelzeilen einzufügen.
 7.  Klicken Sie auf **OK**. Für jeden der ausgewählten Dimensionswerte wird der Zeilendefinition eine Position hinzugefügt.
@@ -97,9 +101,9 @@ Um Rundung in einer Bilanz anzupassen, führen Sie die folgenden Schritte aus.
     -   **Summenzeile der Verbindlichkeiten und des Eigenkapitals** - Der Zeilencode für die Zeile in der Bilanz, die die Summe der Verbindlichkeiten und des Eigenkapitals beinhaltet.
     -   **Ausgleichsbetraggrenze** - Eine positive Ganzzahl, die bei automatischen Regulierungen die Grenze angibt. Dieser Betrag wird mit dem absoluten Wert der tatsächlichen Rundungsdifferenz verglichen.
 
-    **Hinweis: **Diese Zeilencodes müssen mit den Finanzdaten verknüpft werden. Das bedeutet, die Zeile muss in seiner Zelle **Mit Finanzdimensionen verknüpfen** über einen Dimensionswert verfügen. Verweisen Sie **keine** Beschreibungs- (**DESC**) , Berechnet- (**CALC**) oder Gesamt- (**KNIRPS**) zeile.
+    **Hinweis:**Diese Zeilencodes müssen mit den Finanzdaten verknüpft werden. Das bedeutet, die Zeile muss in seiner Zelle **Mit Finanzdimensionen verknüpfen** über einen Dimensionswert verfügen. Verweisen Sie **keine** Beschreibungs- (**DESC**) , Berechnet- (**CALC**) oder Gesamt- (**KNIRPS**) zeile.
 
-Die Beträge in der Bilanz werden jetzt gleichmäßig ausgeglichen, wenn Runden aktiviert ist. **Hinweis: **Die Regulierungsgrenze wird anhand der Option **Rundungsgenauigkeit** angewendet, die für die Berichtsdefinition angegeben ist. Wenn Sie beispielsweise Ihren Bericht auf Tausend runden und **2** im Feld **Ausgleichsbetraggrenze** eingeben, wird eine Warnmeldung angezeigt, wenn der Wert im Feld **Rundungsausgleichszeile** um mehr als 2.000 Dollar steigt oder reduziert wird.
+Die Beträge in der Bilanz werden jetzt gleichmäßig ausgeglichen, wenn Runden aktiviert ist. **Hinweis:**Die Regulierungsgrenze wird anhand der Option **Rundungsgenauigkeit** angewendet, die für die Berichtsdefinition angegeben ist. Wenn Sie beispielsweise Ihren Bericht auf Tausend runden und **2** im Feld **Ausgleichsbetraggrenze** eingeben, wird eine Warnmeldung angezeigt, wenn der Wert im Feld **Rundungsausgleichszeile** um mehr als 2.000 Dollar steigt oder reduziert wird.
 
 ## <a name="format-row-and-column-text"></a>Formatieren von Zeilen- und Spaltentext
 Sie können die Darstellung Ihrer Berichte anpassen, indem Sie Schriftarten ändern und Text formatieren. In den folgenden Abschnitten wird erklärt, wie die Darstellung der Zeilen und der Spalten in Berichten formatiert wird.
@@ -117,7 +121,7 @@ Sie können Schriftarten für Ihren Bericht erstellen und ändern. Sie können d
 <tr class="odd">
 <td>Erstellen eines Schriftschnitts</td>
 <td><ol>
-<li>Im Berichts-Designer im Menü <strong>Format </strong>klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
+<li>Im Berichts-Designer im Menü <strong>Format</strong> klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
 <li>Klicken Sie im Dialogfeld <strong>Formate und Formatierung</strong> auf <strong>Neu</strong>, und geben Sie dann einen eindeutigen Namen für das neue Format ein.</li>
 <li>Treffen Sie Ihre Schriftschnittauswahl, und klicken Sie dann auf <strong>OK</strong>.</li>
 </ol></td>
@@ -125,7 +129,7 @@ Sie können Schriftarten für Ihren Bericht erstellen und ändern. Sie können d
 <tr class="even">
 <td>Ändern eines Schriftschnitts</td>
 <td><ol>
-<li>Im Berichts-Designer im Menü <strong>Format </strong>klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
+<li>Im Berichts-Designer im Menü <strong>Format</strong> klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
 <li>Wählen Sie ein zu änderndes Format im Dialogfeld <strong>Formate und Formatierung</strong>, und klicken Sie anschließend auf <strong>Ändern</strong>.</li>
 <li>Treffen Sie Ihre Schriftschnittauswahl, und klicken Sie dann auf <strong>OK</strong>.</li>
 </ol></td>
@@ -173,6 +177,8 @@ Um die Ansicht der Spalten, an denen Sie in der Zeilendefinition arbeiten, zu ve
 <a name="see-also"></a>Siehe auch
 --------
 
-[Finanzberichterstellung für Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Finanzberichterstellung](financial-reporting-intro.md)
+
+
 
 

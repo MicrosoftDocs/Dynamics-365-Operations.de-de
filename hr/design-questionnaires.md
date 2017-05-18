@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 25703ea2bde70c5c2d3de9f2dc9d3d1d889e4ac9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aae20fa2b899ab51bad5aeb54e21a7c9cbadb9be
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="design-a-questionnaire"></a>Entwerfen eines Fragebogens
+
+[!include[banner](includes/banner.md)]
+
 
 In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren. 
 
@@ -87,7 +91,7 @@ Fragebogenparametern sind optional. Je nach den Anforderungen Ihres Unternehmens
 
 Fragebogenparameter definieren die Anonymität, die Nummernkreiscodes und die Referenztypen eines Fragebogens. Wenn eine Organisation einen Fragebogen verteilt, ist die Option, dass Teilnehmer anonym bleiben können, möglicherweise von Relevanz. 
 
-Nummernkreiscodes werden verwendet, um Fragen und Antworten zu organisieren. Basierend auf diesen Nummernkreiscodes werden Werte automatisch diesen Elementen in  zugewiesen. 
+Nummernkreiscodes werden verwendet, um Fragen und Antworten zu organisieren. Basierend auf diesen Nummernkreiscodes werden Werte automatisch diesen Elementen in zugewiesen. 
 
 Alle Parameter sollten definiert worden sein, bevor Sie mit der Datenerstellung beginnen. Sie können die Fragebogenparametereinstellungen jederzeit ändern.
 
@@ -109,7 +113,7 @@ Antwortgruppen und Antworten sind Komponenten der Informationen, aus denen Frage
 
 Eine Antwortgruppe kann für mehrere Fragen im gleichen Fragebogen oder in mehreren Fragebögen verwendet werden. 
 
-**Hinweis:** Wenn Sie Antworttexte in den Antwortgruppen ändern, die bereits in ausgefüllten Fragebögen verwendet wurden, kann es schwierig werden, die Daten zu überprüfen und Fragebogenergebnisse sind möglicherweise nicht mehr gültig. Wenn Sie eine Antwortgruppe ändern müssen, sollten Sie erwägen, eine neue Antwortgruppe zu erstellen, anstatt eine vorhandene zu ändern. Antwortgruppen, die einer Frage oder Antwort zugeordnet sind oder bereits beantwortet wurden, können nicht gelöscht werden.
+>**Hinweis:** Wenn Sie Antworttexte in den Antwortgruppen ändern, die bereits in ausgefüllten Fragebögen verwendet wurden, kann es schwierig werden, die Daten zu überprüfen und Fragebogenergebnisse sind möglicherweise nicht mehr gültig. Wenn Sie eine Antwortgruppe ändern müssen, sollten Sie erwägen, eine neue Antwortgruppe zu erstellen, anstatt eine vorhandene zu ändern. Antwortgruppen, die einer Frage oder Antwort zugeordnet sind oder bereits beantwortet wurden, können nicht gelöscht werden.
 
 ### <a name="questions"></a>Fragen
 
@@ -117,12 +121,13 @@ Fragebögen müssen Fragen beinhalten. Für Fragen können entweder offene Antwo
 
 -   Die Antworten auf offene Fragen werden nicht gesteuert, sodass die Befragungsteilnehmer ihre die Antworten eingeben können.
 -   Fragen mit vordefinierten Antworten setzen eine Liste mit vordefinierten Antwortoptionen voraus, und die Antworten können so strukturiert sein, dass die Befragten mehrere Antworten auswählen können. Fragen sollten so konzipiert werden, dass sie dem Befragten spezifische Informationen "entlocken" und müssen mit einer Antwortgruppe verknüpft sind, die die Antwortoptionen für jede Frage mit vordefinierten Antworten bereitstellt. 
-     -  **Hinweis:** Bevor Sie Fragen mit vordefinierten Antworten einrichten können, müssen Sie Antwortgruppen und Antworten erstellen.
+    >**Hinweis** Bevor Sie Fragen mit vordefinierten Antworten einrichten können, müssen Sie Antwortgruppen und Antworten erstellen.
 
 Fragen können in einer Hierarchie aus bedingten Fragen angeordnet werden, sodass sekundäre Fragen von der Antwort abhängen, die von einem Befragungsteilnehmer für die vorherige Frage ausgewählt wurde. Sie können Fragen auch zuerst formulieren und später in einer Hierarchie anordnen.
 
 ## <a name="setting-up-questionnaires"></a>Erstellen von Fragebögen
-**Hinweis:** Bevor Sie einen Fragebogen einrichten können, müssen Sie Fragen, Antworten und Voraussetzungen einrichten. 
+>**Hinweis**
+>  Bevor Sie einen Fragebogen einrichten können, müssen Sie Fragen, Antworten und Voraussetzungen einrichten. 
 
 Für jeden Fragebogen können folgende Informationen angegeben werden:
 
@@ -158,7 +163,7 @@ Sie können auf der Seite **Fragebögen** die folgenden Aufgaben ausführen:
 -   Löschen und Hinzufügen von Fragen.
 -   Vornehmen von Änderungen an den Ergebnisgruppen und der laufenden Nummer. 
 
-**Achtung:** Seien Sie vorsichtig bei Änderungen an Fragebögen, die bereits beantwortet wurden. Änderungen können die Genauigkeit von Statistiken mindern und so eine unzulängliche Beurteilungsbasis schaffen. Es ist besser, eine neue Frage zu erstellen, als eine bereits beantwortete Frage zu ändern.
+>**Achtung:** Seien Sie vorsichtig bei Änderungen an Fragebögen, die bereits beantwortet wurden. Änderungen können die Genauigkeit von Statistiken mindern und so eine unzulängliche Beurteilungsbasis schaffen. Es ist besser, eine neue Frage zu erstellen, als eine bereits beantwortete Frage zu ändern.
 
 In einem Fragebogen können Sie die folgenden Typen von Fragen nicht löschen:
 
@@ -176,7 +181,8 @@ Eine Ergebnisgruppe wird verwendet, um Punkte zu berechnen und die Ergebnisse ei
 -   Sie können zur Vereinfachung der Analyse von Ergebnissen eine Statistik für die einzelnen Ergebnisgruppen generieren.
 -   Einen Bericht drucken, der Ergebnisse für jede Ergebnisgruppe, sowie optionale Punkte/Texte auf der Grundlage der in jeder Ergebnisgruppe erzielten Punkte anzeigt.
 
-**Hinweis:** Die folgenden Aufgaben müssen abgeschlossen werden, bevor Sie Ergebnisgruppen einrichten können:
+> **Hinweis**
+>   Die folgenden Aufgaben müssen abgeschlossen werden, bevor Sie Ergebnisgruppen einrichten können:
 
 -   Richten Sie Fragen mit vordefinierten Antworten ein. Für eine Frage mit vordefinierten Antworten muss der Eingabetyp auf der Seite **Fragen** entweder **Kontrollkästchen**, **Alternative Schaltfläche** oder **Eingabe-Listenfeld** sein .
 -   Legen Sie Punkte für Antworten in Antwortgruppen fest, die den einzelnen Fragen zugewiesen sind.
@@ -186,7 +192,8 @@ Um Fragen zu einem Fragebogen mit Ergebnisgruppen hinzuzufügen, richten Sie zue
 
 Sie können mehrere Ergebnisgruppen einrichten, um die Punkte zu überprüfen, die ein Teilnehmer in jeder Kategorie erworben hat. Nachdem ein Fragebogen ausgefüllt wurde, können Sie die Punkte anzeigen, die für jede Ergebnisgruppe erreicht wurden. 
 
-**Tipp:** Um einen Fragebogen mithilfe der Punkte, aber nicht separater Kategorien, zu bewerten, können Sie alle Fragen einer einzelnen Ergebnisgruppe hinzufügen. 
+> **Tipp:**
+>    Um einen Fragebogen mithilfe der Punkte, aber nicht separater Kategorien, zu bewerten, können Sie alle Fragen einer einzelnen Ergebnisgruppe hinzufügen. 
 
 Für jede Ergebnisgruppe können Sie einen oder mehrere punktbasierte Nachrichten einrichten, die einem Teilnehmer nach Beantwortung des Fragebogens angezeigt werden. Der angezeigte Text kann je nach erreichter Punktzahl des Befragten in einer Ergebnisgruppe unterschiedlich sein. Um punktbasierte Nachrichten zu verwenden, müssen Sie Punktintervalle sowie eine Beschreibung für jedes Intervall definieren. Wenn die Punktzahl eines Befragten in einem bestimmten Intervall liegt, wird der Text für dieses Intervall in den Ergebnisbericht aufgenommen. 
 
@@ -210,15 +217,17 @@ Die folgende Tabelle zeigt die punktbasierten Nachrichten, die Sie für die "Fü
 | 4 bis 7         | Sie haben gute Führungsqualitäten.        |
 | 8 bis 10        | Sie haben hervorragende Führungsqualitäten. |
 
-Sie können Punktintervalle und  Texte für die einzelnen Ergebnisgruppen in einem Fragebogen einrichten. Texte, die der Punktzahl jedes Befragten entsprechen, werden für jede Ergebnisgruppe angezeigt. 
+Sie können Punktintervalle und Texte für die einzelnen Ergebnisgruppen in einem Fragebogen einrichten. Texte, die der Punktzahl jedes Befragten entsprechen, werden für jede Ergebnisgruppe angezeigt. 
 
-**Hinweis:** Sie können Intervalle und Texte ändern. Wenn ein Fragebogen jedoch abgeschlossen wurde, können Änderungen zu Diskrepanzen zwischen alten und neuen Ergebnisberichten führen.
+> **Hinweis**
+>   Sie können Intervalle und Texte ändern. Wenn ein Fragebogen jedoch abgeschlossen wurde, können Änderungen zu Diskrepanzen zwischen alten und neuen Ergebnisberichten führen.
 
 ### <a name="conditional-question-hierarchies"></a>Bedingte Fragenhierarchien
 
 Bedingte Fragenhierarchien sind optional, wenn Sie einen Fragebogen einrichten. 
 
-**Hinweis:** Bevor Sie eine Hierarchie aus bedingten Fragen einrichten können, müssen dem Fragebogen bereits Fragen zugeordnet sein, mit denen Antwortgruppen verknüpft sind. 
+> **Hinweis**
+>   Bevor Sie eine Hierarchie aus bedingten Fragen einrichten können, müssen dem Fragebogen bereits Fragen zugeordnet sein, mit denen Antwortgruppen verknüpft sind. 
 
 Um mithilfe bedingter Fragen eine Fragenhierarchie in einem Fragebogen zu erstellen, können Sie die Reihenfolge, in der die Fragen präsentiert werden, von den Antworten abhängig machen, die von einem Befragten für die verschiedenen Fragen ausgewählt werden. Somit können Sie den Fragebogen an den Befragten anpassen.
 
@@ -236,5 +245,7 @@ Alternativ können Sie einen Fragebogen z. B. so einrichten, dass Frage 2 die n�
 [Verteilen und Abschließen von Fragebögen](distribute-questionnaires.md)
 
 [Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
+
+
 
 

@@ -1,16 +1,16 @@
 ---
 title: Benutzereinstellungen im Finanzberichtsdesigner
 description: "Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutzerinteraktionen im Finanzberichtsdesigner eingerichtet werden und wie sie die erstmalige Anmeldung steuern. Sie können auch steuern, wie einzelne Berichte, die Berichtsbibliothek und die Standardspeicherorte angezeigt werden."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-02-04 19 - 44 - 33
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 31161
 ms.assetid: 59da4854-0f8c-4021-acd1-b303c06f4a34
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 371c095e925ba833216263eed6595e749acc6ab7
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 1e7f0665feb24d56fc931052a46f88e7b872aaf1
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="user-preferences-in-financial-report-designer"></a>Benutzereinstellungen im Finanzberichtsdesigner
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutzerinteraktionen im Finanzberichtsdesigner eingerichtet werden und wie sie die erstmalige Anmeldung steuern. Sie können auch steuern, wie einzelne Berichte, die Berichtsbibliothek und die Standardspeicherorte angezeigt werden. 
 
@@ -39,10 +43,6 @@ Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutze
 
 ## <a name="options-dialog-box-options"></a>Optionen des Dialogfelds "Optionen"
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Benutzeroption</th>
@@ -52,7 +52,7 @@ Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutze
 <tbody>
 <tr class="odd">
 <td>Beim Start</td>
-<td>Wählen Sie aus, was angezeigt wird, wenn der Management Reporter gestartet wird. Folgende Optionen stehen zur Auswahl:
+<td>Wählen Sie aus, was angezeigt wird, wenn der Bericht-Designer gestartet wird. Folgende Optionen stehen zur Auswahl:
 <ul>
 <li><strong>Zuletzt geladenen Bericht laden</strong>- Öffnet den Bericht, den Sie zuletzt angezeigt haben an.</li>
 <li><strong>Fenster "Öffnen" anzeigen</strong> - Zeigt das Fenster <strong>Öffnen</strong> an. Das Fenster <strong>Öffnen</strong> stellt ein Suchfenster bereit, um schnell nach Bausteinen zu suchen.</li>
@@ -60,7 +60,7 @@ Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutze
 </ul></td>
 </tr>
 <tr class="even">
-<td>Bestätigung anzeigen, bevor Management Reporter beendet wird</td>
+<td>Bestätigung anzeigen, bevor der Bericht-Designer beendet wird</td>
 <td>Wählen Sie aus, ob eine Warnung angezeigt wird, wenn Sie die Anwendung beenden. Diese Meldung stellt sicher, dass Sie das Programm nicht versehentlich beenden.</td>
 </tr>
 <tr class="odd">
@@ -79,6 +79,8 @@ Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutze
 <a name="see-also"></a>Siehe auch
 --------
 
-[Finanzberichterstellung in Microsoft Dynamics ERP](financial-reporting-intro.md)
+[Finanzberichterstellung](financial-reporting-intro.md)
+
+
 
 

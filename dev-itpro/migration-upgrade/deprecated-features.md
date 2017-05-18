@@ -3,7 +3,7 @@ title: Veraltete Funktionen
 description: In diesem Thema wird die Funktion beschrieben, die in Dynamics 365 for Operations entfernt wurden oder entfernt werden sollen. Es sind auch Funktionen, die in der Ausgabe Dynamics AX 7.0 veraltet sind.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,16 +15,20 @@ ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: e9ba7239b9ff8b9b97c9dabc06fb2c68760d19d4
-ms.lasthandoff: 03/31/2017
+ms.dyn365.ops.version: Platform update 6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8fbfc8c91c836eb9922f2bf1165ec887d8a0bc8e
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="deprecated-features"></a>Veraltete Funktionen
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird die Funktion beschrieben, die in Dynamics 365 for Operations entfernt wurden oder entfernt werden sollen. Es sind auch Funktionen, die in der Ausgabe Dynamics AX 7.0 veraltet sind.
 
@@ -474,6 +478,16 @@ Datenpartitionen enthalten eine logische Trennung von Daten in der Microsoft Dyn
 | Ersetzt durch eine andere Funktion? | Der neue Webclient basiert auf den Desktop-Formularmetadaten und -Programmiermodell, die geändert wurden, um eine umfangreiche Internet-Plattform bereitzustellen. |
 | Betroffene Module             | Alle                                                                                                                                    |
 
+### <a name="direct-database-connection"></a>Direkte Datenbankverbindung
+
+In Dynamics AX 2012 R3, konnte sich Retail Modern POS direkt mit dem Kanal DB in ähnlicher Weise mit dem Enterprise POS verbinden. Dies war zusätzlich zur Standardkommunikationsmethode von Retail Modern POS über den Retail Server.  
+
+|                              |                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| Grund für Abschreibung       | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistung und der Sicherheitserweiterungen, die in Dynamics 365 for Operations aufgetreten sind, führen diese Funktionen nun zu mehr Problemen, als es löst. |
+| Ersetzt durch eine andere Funktion? | Nr. Nur Standard Retail Server Kommunikation wird nun unterstützt.    |
+| Betroffene Module             | Kanal DB/Retail Modern POS                                    |
+
 ### <a name="dutch-swift-mt940"></a>Niederländisches SWIFT MT940
 
 |                              |                                                                                                                                                                                                                                       |
@@ -661,8 +675,18 @@ Mit dieser Funktion können Sie den Namen einer der drei Standardproduktdimensio
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Die aktuelle Version von Dynamics AX unterstützt Beschriftungsänderungen zur Laufzeit nicht. |
-| Ersetzt durch eine andere Funktion? | Nein                                                                            |
+| Ersetzt durch eine andere Funktion? | Nr.                                                                            |
 | Betroffene Module             | Produktinformationsverwaltung                                                |
+
+### <a name="retail-server-connectivity-using-http"></a>Retail Serververbindung mithilfe von HTTP
+
+In Dynamics AX 2012 R3, könnte der Retail Server mithilfe der HTTP-Kommunikation arbeiten (nicht-gesichert). Dies war zusätzlich zur Standardkommunikation mithilfe HTTPS.
+
+|                              |                                                                               |
+|------------------------------|-------------------------------------------------------------------------------|
+| Grund für Abschreibung       | Aufgrund der neuen Sicherheitsanforderungen wird nur noch die gesicherte Kommunikation mit TLS 1.2 (oder höher, wenn verfügbar) unterstützt. Der Self-Service-Installer konfiguriert automatisch den Computer für die Kommunikation. |
+| Ersetzt durch eine andere Funktion? | Nr. Nur Standard HTTPS-Kommunikation wird nun unterstützt.                                                                           |
+| Betroffene Module             | Retail Server                                                |
 
 ### <a name="role-center-pages"></a>Rollencenterseiten
 
@@ -784,6 +808,8 @@ Personalverwaltung-Lohndaten
 | Grund für Abschreibung       | Die Funktion wurde durch eine andere Funktion ersetzt.                                    |
 | Ersetzt durch eine andere Funktion? | Management Reporter (**Finanzberichterstellung** in der aktuellen Version von Dynamics AX) |
 | Betroffene Module             | Hauptbuch                                                                              |
+
+
 
 
 

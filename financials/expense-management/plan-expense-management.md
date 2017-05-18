@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 88cdf531b6da615034f9982d3503b9add0100479
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 447ba56a279a29392b00119730c3594fa4ea80f6
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,7 +43,7 @@ Die Ausgabenverwaltung ist eng mit der Finanzverwaltung der Organisation verbund
 
 ### <a name="per-diems"></a>Tagessätze
 
-Sie müssen die Mitarbeitertagessätze definieren, die Ihre Organisation bereitstellt. Da Tagessätze in der Regel verwendet werden, um Ausgaben wie Mahlzeiten, Unterkunft und andere Nebenkosten abzudecken, können Sie Regeln für die täglichen Vergütungen erstellen, die Ihre Organisation anbietet. Tagessätze können abhängig von der Jahreszeit, dem Reiseziel oder in Abhängigkeit von beidem festgelegt werden. Beim Definieren einer Tagessatzregel können Sie angeben, dass ein prozentualer Anteil des Tagessatzes einbehalten werden soll, wenn eine Arbeitskraft kostenfreie Verpflegung oder andere Leistungen erhält. Darüber hinaus können Sie einen Tagessatz (Ebenen) für die Reise einer Arbeitskraft festlegen, um eine Mindest- und eine Höchstanzahl von Stunden zu bestimmen. **Entscheidung: **
+Sie müssen die Mitarbeitertagessätze definieren, die Ihre Organisation bereitstellt. Da Tagessätze in der Regel verwendet werden, um Ausgaben wie Mahlzeiten, Unterkunft und andere Nebenkosten abzudecken, können Sie Regeln für die täglichen Vergütungen erstellen, die Ihre Organisation anbietet. Tagessätze können abhängig von der Jahreszeit, dem Reiseziel oder in Abhängigkeit von beidem festgelegt werden. Beim Definieren einer Tagessatzregel können Sie angeben, dass ein prozentualer Anteil des Tagessatzes einbehalten werden soll, wenn eine Arbeitskraft kostenfreie Verpflegung oder andere Leistungen erhält. Darüber hinaus können Sie einen Tagessatz (Ebenen) für die Reise einer Arbeitskraft festlegen, um eine Mindest- und eine Höchstanzahl von Stunden zu bestimmen. **Entscheidung:**
 
 -   Standard-Tagessatzregeln für den ersten und letzten Tag:
     -   Was ist die Mindeststundenzahl, die ein Mitarbeiter für einen Tag beanspruchen kann, um noch den Tagessatz zu erhalten?
@@ -127,7 +128,7 @@ Für ausgabenbezogene Steuern müssen Sie bestimmen, was Spesenabrechnungen bein
 Beachten Sie, dass Sie die Steuerbeitreibung auf Ausgaben nicht aktivieren können, wenn Sie für die Planung des Hauptbuchs die US-Mehrwert- und Erwerbssteuerregeln anwenden, indem Sie im Feld **Mehrwertsteuerregeln anwenden** auf "Ja" umschalten.
 
 ## <a name="policies"></a>Richtlinien
-Sie können Spesenabrechnungsrichtlinien erstellen, wenn Mitarbeiter Ausgaben im Auftrag der Organisation tätigen, um dieser Zeit und Geld zu speichern. Richtlinien stellen sicher, dass Mitarbeiter innerhalb des Budgets bleiben, alle erforderlichen Informationen bereitstellen und Geld nur nach Bedarf ausgeben. Sie müssen folgende Entscheidungen für jede Spesenabrechnungsrichtlinie und jede zu genehmigende Spesenabrechnungsrichtlinie treffen, die die Sie erstellen. **Entscheidung: **
+Sie können Spesenabrechnungsrichtlinien erstellen, wenn Mitarbeiter Ausgaben im Auftrag der Organisation tätigen, um dieser Zeit und Geld zu speichern. Richtlinien stellen sicher, dass Mitarbeiter innerhalb des Budgets bleiben, alle erforderlichen Informationen bereitstellen und Geld nur nach Bedarf ausgeben. Sie müssen folgende Entscheidungen für jede Spesenabrechnungsrichtlinie und jede zu genehmigende Spesenabrechnungsrichtlinie treffen, die die Sie erstellen. **Entscheidung:**
 
 -   Wie ist der Name der Richtlinie?
 -   Wofür ist die Ausgabenrichtlinie?

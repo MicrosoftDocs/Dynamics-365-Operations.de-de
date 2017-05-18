@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 0e2eb6e7c130f03edbf60a185d397d94b5d61d7d
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2ae8255a84f36af624e915e85bc769a8ca37fa7e
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,7 +35,7 @@ In diesem Thema wird beschrieben, wie Microsoft Excel-Vorlagen erstellt werden, 
 Dieses Thema zeigt, wie Excel-Vorlagen erstellt werden, die mit Budgetplänen mithilfe des Standarddemodatsatzes und der Benutzer Admin-Anmeldung verwendet werden. Weitere Informationen zu Budgetplanung, finden Sie unter [Budgetplanungsüberblick](budget-planning-overview-configuration.md) Sie können auch auf das Lernprogramm [Budgetplanung 101](budget-plan.md) zugreifen, um die Grundeinstellungsmodulkonfigurations- und -Verwendungsprinzipien zu ermitteln.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Erstellt ein Arbeitsblatt mithilfe der Budgetplandokumentvorlage.
-Budgetplandokumente können mithilfe einer oder mehrerer Layouts angezeigt und bearbeitet werden. Jedes Layout kann eine zugeordnete Budgetplandokumentvorlage haben, um die Budgetplandaten in einer Excel-Kalkulationstabelle anzuzeigen und zu bearbeiten. In diesem Thema wird eine Budgetplandokumentvorlage mit einer vorhandenen Layoutkonfiguration generiert. Öffnen Sie** Budgetplanliste** (**Planung**&gt; **Budgetplan**). Klicken Sie auf **Neu**, um einen neuen Budgetplan zu erstellen. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+Budgetplandokumente können mithilfe einer oder mehrerer Layouts angezeigt und bearbeitet werden. Jedes Layout kann eine zugeordnete Budgetplandokumentvorlage haben, um die Budgetplandaten in einer Excel-Kalkulationstabelle anzuzeigen und zu bearbeiten. In diesem Thema wird eine Budgetplandokumentvorlage mit einer vorhandenen Layoutkonfiguration generiert. Öffnen Sie**Budgetplanliste** (**Planung**&gt; **Budgetplan**). Klicken Sie auf **Neu**, um einen neuen Budgetplan zu erstellen. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Mithilfe der Zeilenoption **Hinzufügen** fügen Sie Zeilen hinzu. **Layouts** klicken, um die Budgetplandokument-Layoutkonfiguration anzuzeigen. 
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 

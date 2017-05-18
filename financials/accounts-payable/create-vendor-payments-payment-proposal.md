@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: b46037b9509f329e18f0da69d530f6b1f88c8888
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fef518bf156aa45dff66d21d49b433ed613cead1
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Die Zahlungsvorschlagsabfrage enthält verschiedene Registerkarten. Jede davon h
 
 ## <a name="parameters"></a>Parameter
 -   **Wählen Sie Rechnungen nach**  – Rechnungen innerhalb des Datumsbereichs aus, der nach ** **Von-Datum** angegeben wird und **Bis-Datum** ** Felder definiert wird und nach Fälligkeitsdatum, Skontodatum oder beidem aktiviert werden kann. Wenn Sie das Skontodatum verwenden, sucht das System zuerst nach Rechnungen, die zwischen dem Von-Datum und dem Bis-Datum liegen. Das System bestimmt dann, ob die Rechnung für das Skonto berechtigt ist, indem es Sitzungsdatum verwendet, um zu überprüfen, dass das Skontodatum nicht bereits verstrichen ist.
--   **Von Datum** und** Bis Datum** – Rechnungen, die ein Fälligkeitsdatum oder Skontodatum innerhalb dieses Datumsbereichs haben, werden zur Zahlung ausgewählt.
+-   **Von Datum** und**Bis Datum** – Rechnungen, die ein Fälligkeitsdatum oder Skontodatum innerhalb dieses Datumsbereichs haben, werden zur Zahlung ausgewählt.
 -   **Zahlungsdatum** – Wenn ein Datum definiert wird, werden alle Zahlungen an diesem Datum erstellt. Das Feld **Mindestzahlungsdatum** wird ignoriert.
 -   **Mindestzahlungsdatum** – Geben Sie das Mindestzahlungsdatum ein. Beispielsweise zeigen die Felder **Von-Datum** und **Bis Datum** einen Bereich vom 1. September bis zum 10. September anzeigen und das und das Mindestzahlungsdatum ist.am 5. September In diesem Fall haben alle Rechnungen ein Fälligkeitsdatum vom 1. September bis zum 5. September und ein Zahlungsdatum vom 5. September. Allerdings haben alle Rechnungen, die ein Fälligkeitsdatum vom 5. September bis zum 10. September, ein Zahlungsdatum, das dem Fälligkeitsdatum jeder Rechnung entspricht.
 -   **Betragsgrenze** – Geben Sie den maximalen Gesamtbetrag für alle Zahlungen ein.
@@ -54,7 +55,7 @@ Die Zahlungsvorschlagsabfrage enthält verschiedene Registerkarten. Jede davon h
 -   **Separate Kreditorenzahlung pro juristischer Person vorschlagen** – Wenn diese Option auf **Ja** festgelegt ist, wird eine separate Zahlung für jede juristische Person pro Kreditor erstellt. Der Kreditor auf der Zahlung ist der Kreditor aus der Rechnung von jeder juristischen Person. Wenn diese Option auf **Nein** festgelegt ist und derselbe Kreditor Rechnungen in mehreren juristischen Personen hat, wird eine Zahlung für den Gesamtbetrag der ausgewählten Rechnungen erstellt. Der Kreditor zur Zahlung ist der Kreditor in der aktuellen juristischen Person. Wenn das Kreditorenkonto in der aktuellen juristischen Person nicht vorhanden ist, wird das Kreditorenkonto der ersten zu bezahlenden Rechnung verwendet.
 -   **Zahlungswährung**  – Dieses Feld gibt die Währung an, in der alle Zahlungen erstellt werden. Wenn eine Währung nicht definiert ist, wird die Rechnung in der Währung der Rechnung bezahlt.
 -   **Wochentag für Zahlung** – Geben Sie den Wochentag ein, an dem die Zahlung erfolgen soll. Dieses Feld wird nur verwendet, wenn die Zahlungsmethode für gesamte Rechnungen zur Zahlung an einem bestimmten Wochentag eingerichtet ist.
--   **Gegenkontenart ** und **Gegenkonto** - Legen Sie diese Felder fest, um einen bestimmten Typ des Kontos (wie **Sachkonto** oder **Bank**) und Gegenkonto (wie ein bestimmtes Ausgleichskonto) zu definieren. Die Zahlungsmethode für die Rechnung legt die Standardgegenkontenart und das Gegenkonto fest, doch Sie können diese Felder verwenden, um die Standardwerte zu überschreiben.
+-   **Gegenkontenart** und **Gegenkonto** - Legen Sie diese Felder fest, um einen bestimmten Typ des Kontos (wie **Sachkonto** oder **Bank**) und Gegenkonto (wie ein bestimmtes Ausgleichskonto) zu definieren. Die Zahlungsmethode für die Rechnung legt die Standardgegenkontenart und das Gegenkonto fest, doch Sie können diese Felder verwenden, um die Standardwerte zu überschreiben.
 -   **Zusätzliche Filter**– Im Inforegister **Einzubeziehen Datensätze** können Sie weitere Bereiche von Kriterien definieren. Wenn Sie beispielsweise nur einen bestimmten Bereich von Kreditoren zahlen möchten, können Sie einen Filter für den Kreditorenbereich definieren. Diese Funktion wird häufig verwendet, um Rechnungen für eine bestimmte Zahlungsmethode auszuwählen. Wenn Sie beispielsweise einen Filter unter **Zahlungsmethode** = **Scheck** definieren, werden nur Rechnungen ausgewählt, die dieser Zahlungsmethode entsprechen, vorausgesetzt, dass diese auch anderen Kriterien entsprechen, die in der Abfrage angegebenen sind.
 
 ## <a name="scenarios"></a>Szenarien
@@ -118,7 +119,7 @@ Mit der Dimensionssteuerung können Steuergruppierung von generierten Positionen
 
 #### <a name="bank-account-selection"></a>Bankkontoauswahl
 
-Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmahethoden** einrichten, indem Sie die Schaltfläche **Bankkonten **verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp**  = **Bank** verfügbar ist.
+Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmahethoden** einrichten, indem Sie die Schaltfläche **Bankkonten**verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp**  = **Bank** verfügbar ist.
 
 
 

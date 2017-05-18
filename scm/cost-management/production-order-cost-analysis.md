@@ -3,7 +3,7 @@ title: "Kostenanalyse für Produktionsauftrag"
 description: "Dieser Artikel bietet Informationen zur Kostenanalyse, die Sie für abgeschlossene und aktuelle Produktionsaufträge ausführen können. Sie können die vorkalkulierten Kosten und tatsächlichen Kosten analysieren, indem Sie die Seite &quot;Preiskalkulation&quot; oder den Bericht &quot;Vor- und Nachkalkulation&quot; verwenden. Sie können für jeden Komponentenartikel, jeden Arbeitsplan-Arbeitsgang sowie für alle indirekten Kosten Informationen zu den vorkalkulierten Kosten sowie zu den Istkosten (und zur entsprechenden Menge) anzeigen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-11 13 - 25 - 42
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f931432f6dc919d448ed690a1deae3d64bebe455
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: acb8e49ed86d3e22ba8e343280f77c0644f057c6
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="production-order-cost-analysis"></a>Kostenanalyse für Produktionsauftrag
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel bietet Informationen zur Kostenanalyse, die Sie für abgeschlossene und aktuelle Produktionsaufträge ausführen können. Sie können die vorkalkulierten Kosten und tatsächlichen Kosten analysieren, indem Sie die Seite "Preiskalkulation" oder den Bericht "Vor- und Nachkalkulation" verwenden. Sie können für jeden Komponentenartikel, jeden Arbeitsplan-Arbeitsgang sowie für alle indirekten Kosten Informationen zu den vorkalkulierten Kosten sowie zu den Istkosten (und zur entsprechenden Menge) anzeigen.
 
@@ -40,21 +44,27 @@ Bei den Produktionsabweichungen handelt es sich um das Ergebnis des Vergleichs z
 -   Produktionspreisabweichung
 -   Abweichung bei Produktionsersetzung
 
-Das folgende Diagramm zeigt die vier Abweichungen zur Erfassung der Differenz zwischen den tatsächlichen Kosten eines Produktionsauftrags und den berechneten Kosten aus dem Kostendatensatz des Artikels am Ende des Produktionsauftrags: ![Abweichungen, zur Erfassung der Differenz bei einem abgeschlossenen Produktionsauftrag](./media/control.jpg) Sie können die Produktionsabweichungen analysieren, indem die Seite **Abweichung** oder den Bericht **Produktionsabweichungen** verwenden. Verwenden Sie die Anzeigeoptionen, um ausführliche Abweichungen nach Artikel und betrieblichen Ressourcen oder nach Kostengruppe anzuzeigen. Die Richtlinie für die Kostenaufschlüsselung in den Lagerparametern bestimmt, ob die Abweichungen nach Kostengruppe verfolgt werden. Sie können auch die Anzeigeoptionen **Einzeln**, **Mehrere** und **Summe** verwenden, um zusammengefasste Abweichungen anzuzeigen. Die Informationen zu detaillierten Abweichungen können helfen, die Quelle der einzelnen Abweichungen zu erkennen. Um Abweichungen vor dem Ende eines Produktionsauftrags vorhersagen zu können, analysieren Sie die ausführlichen Informationen des Berichts **Vor- und Nachkalkulation**.
+Das folgende Diagramm zeigt die vier Abweichungen zur Erfassung der Differenz zwischen den tatsächlichen Kosten eines Produktionsauftrags und den berechneten Kosten aus dem Kostendatensatz des Artikels am Ende des Produktionsauftrags: 
+
+![Abweichungen, die Unterschiede bei einem abgeschlossenen Produktionsauftrag berücksichtigen](./media/control.jpg) 
+
+Sie können Produktionsabweichungen analysieren, indem Sie die Seite **Abweichung** oder den Bericht **Produktionsabweichung** verwenden. Verwenden Sie die Anzeigeoptionen, um ausführliche Abweichungen nach Artikel und betrieblichen Ressourcen oder nach Kostengruppe anzuzeigen. Die Richtlinie für die Kostenaufschlüsselung in den Lagerparametern bestimmt, ob die Abweichungen nach Kostengruppe verfolgt werden. Sie können auch die Anzeigeoptionen **Einzeln**, **Mehrere** und **Summe** verwenden, um zusammengefasste Abweichungen anzuzeigen. Die Informationen zu detaillierten Abweichungen können helfen, die Quelle der einzelnen Abweichungen zu erkennen. Um Abweichungen vor dem Ende eines Produktionsauftrags vorhersagen zu können, analysieren Sie die ausführlichen Informationen des Berichts **Vor- und Nachkalkulation**.
 
 ## <a name="cost-analysis-for-current-production-orders"></a>Kostenanalyse für aktuelle Produktionsaufträge
-Separate Berichte enthalten Informationen zu den einzelnen Buchungstypen. Diese Berichte dienen zum Analysieren der Kosten für gemeldete Produktionsaktivitäten. Die Informationen werden ausschließlich für aktuelle Produktionsaufträge mit dem Status **Gestartet** oder** Als fertig gemeldet** angezeigt.
+Separate Berichte enthalten Informationen zu den einzelnen Buchungstypen. Diese Berichte dienen zum Analysieren der Kosten für gemeldete Produktionsaktivitäten. Die Informationen werden ausschließlich für aktuelle Produktionsaufträge mit dem Status **Gestartet** oder  **Als fertig gemeldet** angezeigt.
 
--   **Material in Bearbeitung **− In diesem Bericht sind die Kommissionierlistenbuchungen aufgeführt, die für die aktuellen Produktionsaufträge ab dem angegebenen Buchungsdatum gemeldet wurden. Der Bericht gibt Aufschluss über die ausgegebene Menge der Komponente sowie über den Einstandsbetrag für die einzelnen Buchungen. Verwenden Sie die Auswahlkriterien für einen einzelnen Komponentenartikel. Sie können beispielsweise Informationen zur Ausgabemenge der Komponente für entsprechende Produktionsaufträge ausdrucken. Die Ausgabemenge wird nicht anhand der fertig gemeldeten Mengen des übergeordneten Artikels aktualisiert. Dadurch kann sich eine Überbewertung der Istmenge von Rohmaterialien ergeben.
--   **Arbeit in Verarbeitung **− In diesem Bericht sind Arbeitsplanbuchungen (oder Einzelvorgangsbuchungen) aufgeführt, die für die aktuellen Produktionsaufträge ab dem angegebenen Buchungsdatum gemeldet wurden. Im Bericht werden die Stunden, der Betrag und die Menge angegeben (sowohl Gutmenge als auch Ausschussmenge) die für jede Buchung gemeldet werden. Er umfasst auch Informationen wie Vorgangsnummer, die Vorgangskennung und die betriebliche Ressource. In diesem Bericht werden auch Gesamtzeit und -betrag für alle Buchungen des Produktionsauftrags und die fertig gemeldete Menge angezeigt.
--   **Indirekte Kosten in Bearbeitung **− In diesem Bericht sind die indirekten Kosten der Produktionsaufträge aufgeführt. Die Werte basieren auf dem gemeldeten Verbrauch durch die Arbeitsgänge des Arbeitsplans und der Komponenten ab dem angegebenen Buchungsdatum. Der Bericht gibt die Art der indirekten Kosten (Zuschlag oder Satz), den Nachkalkulationsbogen-Code für die indirekten Kosten und den Kostenbetrag für jede Buchung an. Der Bericht enthält keine Informationen zur Arbeitsplanlisten- oder Kommissionierlistenbuchung, durch die die indirekten Kosten generiert wurden.
--   **Nachkalkulation für Produktion in Bearbeitung **− In diesem Bericht ist der kombinierte Verbrauch von Material, Arbeitsplanvorgänge sowie indirekte Kosten der Produktionsaufträge ab dem angegebenen Buchungsdatum aufgeführt.
--   **Fertigartikel in Bearbeitung **− In diesem Bericht sind die derzeitigen Produktionsaufträge sowie die fertig gemeldeten Buchungen ab dem angegebenen Buchungsdatum aufgeführt.
+-   **Material in Bearbeitung** − In diesem Bericht sind die Kommissionierlistenbuchungen aufgeführt, die für die aktuellen Produktionsaufträge ab dem angegebenen Buchungsdatum gemeldet wurden. Der Bericht gibt Aufschluss über die ausgegebene Menge der Komponente sowie über den Einstandsbetrag für die einzelnen Buchungen. Verwenden Sie die Auswahlkriterien für einen einzelnen Komponentenartikel. Sie können beispielsweise Informationen zur Ausgabemenge der Komponente für entsprechende Produktionsaufträge ausdrucken. Die Ausgabemenge wird nicht anhand der fertig gemeldeten Mengen des übergeordneten Artikels aktualisiert. Dadurch kann sich eine Überbewertung der Istmenge von Rohmaterialien ergeben.
+-   **Arbeit in Verarbeitung** − In diesem Bericht sind Arbeitsplanbuchungen (oder Einzelvorgangsbuchungen) aufgeführt, die für die aktuellen Produktionsaufträge ab dem angegebenen Buchungsdatum gemeldet wurden. Im Bericht werden die Stunden, der Betrag und die Menge angegeben (sowohl Gutmenge als auch Ausschussmenge) die für jede Buchung gemeldet werden. Er umfasst auch Informationen wie Vorgangsnummer, die Vorgangskennung und die betriebliche Ressource. In diesem Bericht werden auch Gesamtzeit und -betrag für alle Buchungen des Produktionsauftrags und die fertig gemeldete Menge angezeigt.
+-   **Indirekte Kosten in Bearbeitung** − In diesem Bericht sind die indirekten Kosten der Produktionsaufträge aufgeführt. Die Werte basieren auf dem gemeldeten Verbrauch durch die Arbeitsgänge des Arbeitsplans und der Komponenten ab dem angegebenen Buchungsdatum. Der Bericht gibt die Art der indirekten Kosten (Zuschlag oder Satz), den Nachkalkulationsbogen-Code für die indirekten Kosten und den Kostenbetrag für jede Buchung an. Der Bericht enthält keine Informationen zur Arbeitsplanlisten- oder Kommissionierlistenbuchung, durch die die indirekten Kosten generiert wurden.
+-   **Nachkalkulation für Produktion in Bearbeitung** − In diesem Bericht ist der kombinierte Verbrauch von Material, Arbeitsplanvorgänge sowie indirekte Kosten der Produktionsaufträge ab dem angegebenen Buchungsdatum aufgeführt.
+-   **Fertigartikel in Bearbeitung** − In diesem Bericht sind die derzeitigen Produktionsaufträge sowie die fertig gemeldeten Buchungen ab dem angegebenen Buchungsdatum aufgeführt.
 
 
 <a name="see-also"></a>Siehe auch
 --------
 
 [Allgemeine Ursachen für Produktionsabweichungen](common-sources-of-production-variances.md)
+
+
 
 

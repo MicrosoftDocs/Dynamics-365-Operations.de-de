@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: 0a716310a3b813e08d46ac609e8ac6ce9a2db3e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5f3d0e2016a3ffe5500ecae9508d44a115c56880
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Die Steuerbehörde sieht für einen Artikel die Zahlung spezieller Abgaben vor. 
 -   MEHRWERTSTEUER = 25 %, mit Berechnungsmethode "Prozentanteil am Bruttobetrag"
 
 Wenn der Nettobetrag 10,00 beträgt, dann ist ABGABE 1 "1,00 (10,00 x 10 %)" und ABGABE 2 "2,00 (10,00 x 20 %)". Die Beträge wären wie folgt: Bruttobetrag: Nettobetrag + Betrag ABGABE 1 + Betrag ABGABE 2 (10,00 + 1,00 + 2,00) = 13,00 MEHRWERTSTEUER = 13,00 x 25 % = 3,25 gesamte ABGABEN und MEHRWERTSTEUER: 1,00 + 2,00 + 3,25 = 6,25 Gesamtbetrag: 10,00 + 6,25 = 16,25
-| **Hinweis **                                                                                                                                                                                                                 |
+| **Hinweis**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nur ein Steuercode mit Ursprung = "Prozentanteil des Bruttobetrags" kann für eine Buchung verwendet werden. Wenn mehr als ein Steuercode für eine Buchung bestimmt wird, wird ein Fehler angezeigt, dass keine Steuer berechnet werden kann. |
 
@@ -68,7 +69,7 @@ Folgende Mehrwertsteuercodes werden verwendet:
 -   MEHRWERTSTEUER = 25 %, mit Methode "Prozentanteil am Bruttobetrag"
 
 Nettobetrag: 10,00 ABGABE 1: 10,00 x 10 % = 1,00 ABGABE 2: 1,00 x 20 % = 0,20 Bruttobetrag: 10,00 + 1,00 + 0,20 = 11,20 MEHRWERTSTEUER: 11,20 x 25 % = 2,80 ABGABE und MEHRWERTSTEUER gesamt: 1,00 + 0,20 + 2,80 = 4,00 Gesamtbetrag: 10,00 + 4,00 = 14,00
-| **Hinweis **                                                                                                                                                                                                                    |
+| **Hinweis**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Mehrstufige Berechnungen für Steuer auf Steuer sind nicht möglich. Eine Steuer kann nicht basierend auf einer Steuer berechnet werden, die bereits auf Basis einer anderen Steuer berechnet wurde. Mehrere einstufige "Steuer auf Steuer"-Codes können für eine Buchung berechnet werden. |
 
@@ -77,7 +78,7 @@ Wenn Sie "Betrag pro Einheit" im Feld "Ursprung" auswählen, wird die Mehrwertst
 ### <a name="example"></a>Beispiel
 
 Der Mehrwertsteuercode wird folgendermaßen eingerichtet: EUR 1,20 pro Einheit = Schachtel, bei einer Verkaufsrechnungsposition von 25 Schachteln eines verkauften Artikels wird die Verkaufsmehrwertsteuer berechnet als 25 x 1,20 = 30,00
-| **Hinweis **                                                                                                                                                                                                 |
+| **Hinweis**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wenn die Buchung in einer anderen Einheit eingegeben wurde als die im Mehrwertsteuercode angegebene, wird sie automatisch basierend auf der Einheitenumrechnung umgewandelt, die auf der Seite "Einheitenumrechnungen" eingerichtet wurde. |
 

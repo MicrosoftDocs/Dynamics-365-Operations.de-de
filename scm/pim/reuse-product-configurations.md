@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: a846c5fee2736fb8f137f7c2bdd759be43220d14
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 6d5e4988f123bfd70de0b54bf4dc75c4e32c0565
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,9 +38,9 @@ Sie können angeben, dass Sie eine Variante für ein Produkt automatisch recycel
 <a name="requirements-for-reusing-configurations"></a>Anforderungen für die Wiederverwendung von Konfigurationen
 ---------------------------------------
 
-Damit Konfigurationen wieder verwendet werden können, müssen Sie die folgenden Informationen für die Komponenten und Attribute auf der Seite **Produktkonfigurationsmodelldetails ** angeben:
+Damit Konfigurationen wieder verwendet werden können, müssen Sie die folgenden Informationen für die Komponenten und Attribute auf der Seite **Produktkonfigurationsmodelldetails** angeben:
 
--   **Komponenten und Unterkomponenten** – Wählen Sie im Inforegister** Allgemein ** im Feld **Konfiguration wiederverwenden** **Ja**.
+-   **Komponenten und Unterkomponenten** – Wählen Sie im Inforegister**Allgemein** im Feld **Konfiguration wiederverwenden** **Ja**.
 -   **Attribute** – Auf dem Inforegister **Attribute** wählen Sie die Option **In Wiederverwendung einbeziehen** aus. Diese Option wird nur angezeigt, wenn die zugehörige Komponente zur Wiederverwendung aktiviert ist. Wenn Sie keine Attribute zur Wiederverwendung auswählen, wird die Konfiguration immer recycelt, unabhängig von der Auswahl des Benutzers für eine Konfigurationssitzung. Die Attributwerte in der vorhandenen Konfiguration müssen der Auswahl des Benutzers entsprechen. Wenn der Benutzer zum Beispiel die Farbe **Blau** für eine Farbe während der Konfigurationssitzung auswählt, prüft das System, ob eine Variante der Komponente ein Attribut für die Farbe Blau hat.
 
 ## <a name="resetting-configuration-reuse"></a>Wiederverwendung der Konfiguration zurücksetzen

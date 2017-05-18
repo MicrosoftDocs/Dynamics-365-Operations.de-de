@@ -3,7 +3,7 @@ title: Buchung (Definitionen)
 description: "Dieser Artikel enthält Informationen zu Buchungsdefinitionen und erläutert, wie sie definiert und verknüpft werden. Für unterstützte Buchungstypen und Dokumente können Sie Buchungsdefinitionen anstelle von Buchungsprofilen verwenden, um Hauptkonten und Finanzdimensionen in Buchhaltungseinträge zu klassifizieren."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,26 +18,30 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9f4d7fdd8cfa7a540fce219f6ae4792e57dfbe44
-ms.openlocfilehash: 357ae498e84ef27e46142c7dcc0f90ecb0ee9f1c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aea0a5c078e4fb3a47cce3a7b427b56bf7a9bcf5
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="posting-definitions"></a>Buchung (Definitionen)
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zu Buchungsdefinitionen und erläutert, wie sie definiert und verknüpft werden. Für unterstützte Buchungstypen und Dokumente können Sie Buchungsdefinitionen anstelle von Buchungsprofilen verwenden, um Hauptkonten und Finanzdimensionen in Buchhaltungseinträge zu klassifizieren.
 
 Für unterstützte Buchungstypen und Dokumente können Sie Buchungsdefinitionen anstelle von Buchungsprofilen verwenden, um Hauptkonten und Finanzdimensionen in Buchhaltungseinträge zu klassifizieren. Sie können die unterstützten Dokumente und die Buchungstypen auf der Seite **Buchung - Definitionen** anzeigen. 
 
-Um Buchungsdefinitionen zu verwenden, aktivieren Sie die Option** Buchungsdefinitionen verwenden** auf der Seite **Hauptbuchparameter**. Auch wenn Buchungsdefinitionen verwendet werden, müssen Sie immer noch Buchungsprofile für die Ursprungseinträge und nicht unterstützte Buchungstypen und ‑dokumente definieren. 
+Um Buchungsdefinitionen zu verwenden, aktivieren Sie die Option**Buchungsdefinitionen verwenden** auf der Seite **Hauptbuchparameter**. Auch wenn Buchungsdefinitionen verwendet werden, müssen Sie immer noch Buchungsprofile für die Ursprungseinträge und nicht unterstützte Buchungstypen und ‑dokumente definieren. 
 
 Sie müssen Buchungsdefinitionen verwenden, um einen Belastungsverarbeitungsprozess für Bestellungen und Prozesse zur Verarbeitung von Vorabbelastungen für Bestellanforderungen zu aktivieren.
 
 ## <a name="defining-posting-definitions"></a>Buchungsdefinitionen definieren
-Verwenden Sie die Seite** Buchung (Definitionen)**, um die Übereinstimmungskriterien anzugeben und die Einträge zu definieren, die generiert werden sollen, wenn eine Übereinstimmung auftritt. Die Übereinstimmungskriterien werden für die ursprünglichen Posten als Buchhaltungsverteilungen ausgewertet. 
+Verwenden Sie die Seite**Buchung (Definitionen)**, um die Übereinstimmungskriterien anzugeben und die Einträge zu definieren, die generiert werden sollen, wenn eine Übereinstimmung auftritt. Die Übereinstimmungskriterien werden für die ursprünglichen Posten als Buchhaltungsverteilungen ausgewertet. 
 
 Auf der Seite **Buchung (Definitionen)** können Sie Erfassungspositionen auch Prioritätsnummern zuweisen, um die Reihenfolge für die Auswertung der Positionen zu steuern. Die Positionen, die die niedrigste Prioritätsnummer haben, werden zuerst ausgewertet. Beispielsweise werden alle Positionen ausgewertet, die eine Priorität von 1 haben, und dann Positionen, die über eine Priorität von 2 verfügen, usw. Wenn eine Übereinstimmung gefunden wird, werden die anderen Übereinstimmungskriterien ignoriert. Zudem wird nur für die Kriterien in der Gruppe, die mit der Ursprungsbuchung übereinstimmen, ein Eintrag generiert. 
 
@@ -59,5 +63,7 @@ Die folgenden Einschränkungen gelten für das Erstellen von Verknüpfungen in B
 -   Sie können eine Buchungsdefinition jeder beliebigen Buchungsart zuweisen, diese muss sich jedoch im selben Modul wie die Buchungsdefinition befinden. Verwenden Sie die Seite **Buchung - Definitionen**, um festzustellen, aus welchem Modul eine Buchungsart ist.
 
 
-Weitere Informationen in [Beispiele zu Buchungsdefinitionen](/general-ledger/example-posting-definitions.md). 
+Weitere Informationen in [Beispiele zu Buchungsdefinitionen](example-posting-definitions.md). 
+
+
 

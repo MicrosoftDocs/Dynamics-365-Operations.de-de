@@ -16,10 +16,11 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-translationtype: Human Translation
-ms.sourcegitcommit: 8904a5d19d5f1a65e411694f4858a4b61a69bd53
-ms.openlocfilehash: 69365c3dfc2734d55690bccdb2a658982a829f0f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d54240eb29ede3c1361f14dea186776f6d11a4d8
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,7 +35,7 @@ Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Un
 <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Mai 2016 - alle Sprachen)
 ------------------------------------------------------------------------------------------------
 
-Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden zur Aktualisierung der Hilfe von Microsoft Dynamics AX können 2016 und Microsoft Dynamics AX Februar 2016. Die in der APQC Unified-Bibliothek aus Februar 2016 veröffentlichten Aufgabenleitfäden sind in dieser Bibliothek enthalten. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md). **Hinweis: **Das Sternchen (**\***) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass die Aufgabe für diesen Geschäftsprozess für Dynamics AX 2016 (Mai 2016) erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
+Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden zur Aktualisierung der Hilfe von Microsoft Dynamics AX können 2016 und Microsoft Dynamics AX Februar 2016. Die in der APQC Unified-Bibliothek aus Februar 2016 veröffentlichten Aufgabenleitfäden sind in dieser Bibliothek enthalten. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md). **Hinweis:**Das Sternchen (**\***) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass die Aufgabe für diesen Geschäftsprozess für Dynamics AX 2016 (Mai 2016) erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
 
 ### <a name="countryregion-functionality"></a>Land/Region-Funktion
 

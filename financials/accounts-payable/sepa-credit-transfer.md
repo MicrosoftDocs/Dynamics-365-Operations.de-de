@@ -3,7 +3,7 @@ title: "Überblick zur SEPA-Kreditübertragung"
 description: "Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen bereit, die SEPA (Single Euro Payments Area) Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen. Eine SEPA-Überweisung ist eine Zahlung (in Euro) von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Der Artikel beschreibt zudem, wie eine SEPA-Überweisung-Zahlungsdatei eingerichtet und übermittelt wird."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,21 +17,25 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 848df5e3898f37284d7746c59bff8b38d35ac883
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f7adaf2f3a14d2c0e094314f0b36b5d4bdb0a65c
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sepa-credit-transfer-overview"></a>Überblick zur SEPA-Kreditübertragung
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen bereit, die SEPA (Single Euro Payments Area) Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen. Eine SEPA-Überweisung ist eine Zahlung (in Euro) von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Der Artikel beschreibt zudem, wie eine SEPA-Überweisung-Zahlungsdatei eingerichtet und übermittelt wird.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Was ist eine SEPA-Mitteilung?
 Die Banküberweisungsnachricht ist eine Anforderung, die eine initiierende Partei (Ihr Unternehmen) zum Verschieben von einem separaten Konto zu einem Kreditgeber sendet. Es gibt viele länder-/regionsspezifische und bankspezifisch Implementierungen von Banküberweisungsnachrichten. Viele hiervon werden innerhalb eines Landes/Regionen verwendet, und werden Standards. Ein Standard ist globaler ISO 20022 und seine Startnachrichten, z.B. Banküberweisung. Die folgende Abbildung zeigt die Beziehungen und Disposition für die ausgewählte Banküberweisungsnachrichten angezeigt. 
-![Credit tansfer](./media/credit-transfer.jpg) Credit transfer messages\[/caption\] 
+![Credit tansfer](./media/credit-transfer.jpg) Kreditübertragungsnachricht\[/Überschrift\] 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Was sind ISO 20022 SEPA-Zahlungen?
 Single Euro Payments Area (SEPA) wurde von der Europäischen Kommission eingerichtet und schreibt vor, dass alle elektronischen Zahlungen als Inlandszahlungen gelten, unabhängig vom Land/von der Region in der sich die Person, das Unternehmen oder die Organisation und die Bank befindet. Es gibt keine Differenz zwischen nationalen und grenzüberschreitenden Zahlungen. Zu SEPA zählen die 28 Mitgliedsstaaten der Europäischen Union (EU) sowie Island, Liechtenstein, Norwegen, die Schweiz, Monaco und San Marino. SEPA hilft dabei, einen gemeinsamen Markt für Zahlungsbuchungen innerhalb des europäischen Wirtschaftsraums (EEA) zu bilden. Letztlich wird von SEPA erwartet, die Anzahl von Zahlungsformaten zu reduzieren, mit denen Banken, Unternehmen und Personen arbeiten müssen. Die Europäische Kommission hat die Rechtsgrundlage für SEPA-Zahlungen über die Payment Services-Direktive (PSD) definiert. Der European Payments Council (EPC) unterstützt SEPA durch die folgenden Aktivitäten:
@@ -55,7 +59,7 @@ Das SEPA-Überweisungsformat wird über die generische elektronische Berichterst
 Sie sollten für die Bibliothek der freigegebenen Anlage auf Microsoft Dynamics Lifecycle Services (LCS) nutzen und die neuesten Liste der verfügbaren Dateien mit dem Anlagentyp **GER-Konfiguration** sehen. Im nächsten Abschnitt "Was muss ich einrichten?" wird ein Link zum Thema bereitgestellt, der erläutert, wie ein LCS-Repository herstellt, um verfügbare Konfigurationen und Importieren ausgewählter Konfigurationen zu prüfen.
 
 ## <a name="what-do-i-have-to-set-up"></a>Was muss ich einrichten?
--   Bevor Sie Überweisungsdateien erstellen können, muss mindestens eine aktive Banküberweisungskonfiguration in die generischen elektronischen Berichterstellungskonfigurationen importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Bevor Sie Überweisungsdateien erstellen können, muss mindestens eine aktive Banküberweisungskonfiguration in die generischen elektronischen Berichterstellungskonfigurationen importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 -   Wenn Sie Kreditorenkonten-Zahlungsmethoden konfigurieren, wählen Sie die **Elektronische Berichterstellung**-Kontrollkästchen und wählen das passende Banküberweisungsformat (z. B. **ISO 20022 Credit transfer (AT)**)
 -   Sie müssen die juristische Person und die Bankkontoinformationen in Microsoft 365 for Operations einrichten.
 -   Kontonummern, IBAN und manchmal SWIFT-Codes (BICs) oder andere Nummern werden benötigt, um spezifische Kredittransferzahlungen zu erstellen. Daher müssen diese für das Bankkonto des Kreditors einrichten und das Bankkonto der Organisation, die die Übertragung angefordert werden.
@@ -121,5 +125,7 @@ Die International Bank Account Number (IBAN) und Bank Identifier Code (BIC) werd
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Wie übertrage ich eine Zahlungsdatei an die Bank?
 Wenn Sie Zahlungen generieren, wird die Zahlungsdatei generiert, und Sie werden aufgefordert, diesen von Ihrem Webbrowser aus in einem verfügbaren Speicherort zu speichern. Im nächsten Schritt senden Sie die XML-Datei an die Bank. Dieser Prozess variiert von Bank zu Bank. Befolgen Sie die Anweisungen der Bank, um die Dateien an die Bank zur senden.
+
+
 
 

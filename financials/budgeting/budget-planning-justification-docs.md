@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: c86d01fec3d8d7c210c7e73a034f4e9e384a0dcf
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a1a00d646624b6e0d6c79b1c1efcee98203e191b
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -56,7 +57,7 @@ Eine Budgetplanvorlage wird vom Budget-Manager in Microsoft Word erstellt und zu
 
 ##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Richten Sie den Budgetplanungsprozess ein, den Sie mit der Begründungsvorlage verwenden möchten.
 
-1.  In Microsoft Dynamics 365 for Operations gehen Sie zu **Planung** &gt; **Einstellungen**  &gt;  **Budgetplanung** &gt; **Begründungsdokumentvorlagen **.
+1.  In Microsoft Dynamics 365 for Operations gehen Sie zu **Planung** &gt; **Einstellungen**  &gt;  **Budgetplanung** &gt; **Begründungsdokumentvorlagen**.
 2.  Klicken Sie auf **Neu** und durchsuchen Sie Ihre neu erstellten Microsoft Word-Dokumente.
 3.  Vorlagenname und Beschreibung eingeben. Klicken Sie auf **OK**.
 4.  Navigieren Sie zu **Budgetierung** &gt; **Einrichtung** &gt; **Budget** **Planung** &gt; **Butgetplanungsprozess**.

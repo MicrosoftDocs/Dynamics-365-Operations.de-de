@@ -3,7 +3,7 @@ title: Allgemeine Erfassungsverarbeitung
 description: "Dieser Artikel beschreibt die Funktionen in Microsoft Dynamics 365 for Operations, mit denen die allgemeine Erfassung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 50cd203025be8857de943e458fc32315e494fb7a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c020566928cecc15bd7de504164f5adbf34eda44
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt die Funktionen in Microsoft Dynamics AX, mit denen die allgemeine Erfassung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden.  
+Dieser Artikel beschreibt die Funktionen in Microsoft Dynamics 365 for Operations, mit denen die allgemeine Erfassung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden.  
 
 Journale
 
@@ -82,6 +83,7 @@ Die Hauptkontoeinstellung stellt viele Optionen zum Verarbeiten der allgemeinen 
 Buchhaltungsstrukturen und Strukturen für erweiterte Regeln sind sehr wichtig, um sicherzustellen, dass die Daten, die für die Finanzberichterstellung und die Leistungsnachverfolgung erforderlich sind, während der allgemeinen Erfassungsverarbeitung und in allen Dokumentationen erfasst werden. Mit Buchhaltungsstrukturen und Strukturen für erweiterten Regeln können Sie die Dateneingabeerfahrung anpassen. Sie können die Dateneingabe nur für Finanzdimensionen zulassen, die in jeder Situation relevant sind. Sie können auch die Anforderung erzwingen, dass erforderliche und korrekte Daten immer erfasst werden.
 
 Weitere Informationen finden Sie unter: [Planung Kontenplan](plan-chart-of-accounts.md) 
+
 
 
 

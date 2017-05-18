@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: d64f9228c538a08a2fc938bc6ff4ce11278b6fed
-ms.openlocfilehash: 4b516e3460f58ef1c7f4a76357371eefde1bae49
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f2b29978fd0e0cb5e90937a15bd5be6b3674b06c
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -52,7 +53,7 @@ Die grundlegenden Elemente für den periodischen Prozess sind die gleichen für 
 
 Für jeden Generierungsprozess sind drei Aktionen verfügbar:
 
--   **Neuen Budgetplan erstellen **-– Erstellt eines neuen Plan, der über die Attribute verfügt, die im Bereich **Vorgabe**  aktiviert sind. Diese Attribute müssen nicht eindeutig sein. Daher können zwei Pläne denselben Namen und andere Werte haben.
+-   **Neuen Budgetplan erstellen**-– Erstellt eines neuen Plan, der über die Attribute verfügt, die im Bereich **Vorgabe**  aktiviert sind. Diese Attribute müssen nicht eindeutig sein. Daher können zwei Pläne denselben Namen und andere Werte haben.
 -   **Vorhandenes Budgetplanszenario ersetzen** – Löscht alle Daten im Zielbudgetplan im ausgewählten Budgetplanszenario und erstellt neue Positionen, die die ausgewählten Quelldaten verwenden.
 -   **Vorhandenes Budgetplanszenario aktualisieren, neue Daten hinzufügen** – Aktualisiert vorhandene Positionen im Zielplan, damit diese mit den Quellpositionen übereinstimmen, und fügt auch neue Positionen für neue Daten hinzu. Der Abgleich basiert auf dem Sachkonto, dem Datum, der Budgetklasse und verschiedenen anderen Feldern. Wenn Sie zum Beispiel Budgetpläne aus den Prognosepositionen generieren, ist die Positionsnummer ein wichtiges Feld. Alle Positionen, die eine Positionsnummer haben, die mit der Quellpositionsnummer übereinstimmt, werden durch die neuen Positionen aus der Quelle ersetzt.
 

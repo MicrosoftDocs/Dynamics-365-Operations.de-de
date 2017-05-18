@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d70b4ae0a6b177508021ee72481333cf6f265069
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 20ad50ab5c2dddf4fe07ebb5bb940954c0408f8d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -48,9 +49,9 @@ Wenn Sie eine Angebotsanforderung ergänzen müssen, nachdem Sie diese senden, k
 
 Wenn Sie Angebote erhalten, müssen Sie sie auf der Seite **Antworten auf Angebotsanforderung** eingeben. Wenn Sie die Option **Daten in Antwort kopieren** auswählen, werden Daten, wie die Menge und Daten aus der Angebotsanforderungsanfrage in die Antwort kopiert. Sie können diese Daten ändern, um das Angebot des Kreditors widerzuspiegeln.  
 
-Wenn eine zweite Iteration einer Antwort für einen bestimmten Kreditor erforderlich ist, klicken Sie auf **Zurück **auf der Seite** Antwort auf Angebotsanforderung**. Die Aktion "Zurück" generiert eine neue Erfassung und einen Bericht, die gemäß den Druckverwaltungseinstellungen gedruckt, archiviert und gesendet werden.  
+Wenn eine zweite Iteration einer Antwort für einen bestimmten Kreditor erforderlich ist, klicken Sie auf **Zurück**auf der Seite**Antwort auf Angebotsanforderung**. Die Aktion "Zurück" generiert eine neue Erfassung und einen Bericht, die gemäß den Druckverwaltungseinstellungen gedruckt, archiviert und gesendet werden.  
 
-Wenn Sie Bewertungskriterien zu Ihrer Angebotsanforderungsanfrage hinzugefügt haben, hat die Antwort auf Angebotsanforderung einen Bewertungsbereich, in dem Sie die Punktzahlen eingeben können. Die Gesamtpunktzahlen werden angezeigt, wenn Sie die Antworten auf der Seite **Antworten vergleichen **vergleichen, wo Sie auch andere Antwortdaten vergleichen können, wie beispielsweise den Positionspreis, das Lieferdatum und den Gesamtpreis.  
+Wenn Sie Bewertungskriterien zu Ihrer Angebotsanforderungsanfrage hinzugefügt haben, hat die Antwort auf Angebotsanforderung einen Bewertungsbereich, in dem Sie die Punktzahlen eingeben können. Die Gesamtpunktzahlen werden angezeigt, wenn Sie die Antworten auf der Seite **Antworten vergleichen**vergleichen, wo Sie auch andere Antwortdaten vergleichen können, wie beispielsweise den Positionspreis, das Lieferdatum und den Gesamtpreis.  
 
 Nachdem Sie sich zu einem Angebot oder Teilangeboten entscheiden, können Sie diese annehmen und die restlichen ablehnen. Annahmenerfassungen, Ablehnungserfassungen und entsprechende Berichte werden generiert. Diese werden gemäß Ihren Druckverwaltungseinstellungen gedruckt, archiviert und übermittelt. Wenn Sie ein Angebot oder bestimmte Positionen in einem Angebot akzeptieren, wird entweder ein Kaufvertrag oder eine Bestellung generiert, oder eine Bestellanforderung wird aktualisiert, je nach Bestelltyp der Angebotsanforderung. Sie können eine Handelsvereinbarung erstellen, die Sie später für jede der Antworten verwenden können, unabhängig davon, ob Sie diese akzeptiert oder zurückgewiesen haben.  
 
@@ -107,7 +108,7 @@ Wenn die Angebotsanforderung vom Typ **Kaufvertrag** ist:
 -   Die Angebotsanforderung wird für eine Vereinbarung zum Einkauf einer bestimmten Produktmenge oder eines bestimmten Produktwerts über einen gewissen Zeitraum verwendet. Sie müssen den Datumsbereich auswählen, der für den Kaufvertrag und den Namen des Mitarbeiters gilt, der mit der Verwaltung der Rahmenbestellung betraut ist.
 -   Wenn Sie ein Angebot annehmen, wird ein Kaufvertrag generiert.
 
-Sie können nur eine Angebotsanforderung aus einer Bestellanforderung erstellen, wenn der Status der Bestellanforderung **Wird überprüft **ist und Ihnen die Erledigung der nächsten Workflowaufgabe zugewiesen ist. Die Positionen der Bestellanforderung werden automatisch aktualisiert, wenn Sie Positionen aus den Antworten auf Angebotsanforderung (Angebote) annehmen die Sie von Kreditoren erhalten haben. Solange sich eine Angebotsanforderung in Bearbeitung befindet, können Sie eine Bestellanforderung also weder abschließen, ablehnen, genehmigen, noch irgendwelche anderen Aktionen an ihr ausführen.  
+Sie können nur eine Angebotsanforderung aus einer Bestellanforderung erstellen, wenn der Status der Bestellanforderung **Wird überprüft**ist und Ihnen die Erledigung der nächsten Workflowaufgabe zugewiesen ist. Die Positionen der Bestellanforderung werden automatisch aktualisiert, wenn Sie Positionen aus den Antworten auf Angebotsanforderung (Angebote) annehmen die Sie von Kreditoren erhalten haben. Solange sich eine Angebotsanforderung in Bearbeitung befindet, können Sie eine Bestellanforderung also weder abschließen, ablehnen, genehmigen, noch irgendwelche anderen Aktionen an ihr ausführen.  
 
 Wenn Sie eine Angebotsanforderung erstellen, können Sie einen bestimmten Anfragentyp auswählen. Der Anfragentyp bestimmt die Gruppe von Bewertungskriterien, die verwendet wird, um Antworten auf die Angebotsanforderung zu bewerten.  
 
@@ -127,7 +128,7 @@ In der folgenden Tabelle wird angezeigt, wie sich der Angebotsanforderungsstatus
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Aktion**                         | **Niedrigster Status des Angebotsanforderungskopfes ** | **Höchster Status des Angebotsanforderungskopfes **                   | **Niedrigster Status einer Angebotsanforderungsposition ** | **Höchster Status einer Angebotsanforderungsposition ** |
+| **Aktion**                         | **Niedrigster Status des Angebotsanforderungskopfes** | **Höchster Status des Angebotsanforderungskopfes**                   | **Niedrigster Status einer Angebotsanforderungsposition** | **Höchster Status einer Angebotsanforderungsposition** |
 | Erstellen Sie den Angebotsanforderungskopf und die -position.    | Erstellt                      | Erstellt                                         | Erstellt                    | Erstellt                     |
 | Senden Sie die Angebotsanforderung an einen bestimmten Kreditor. | Versendet                         | Versendet                                            | Versendet                       | Versendet                        |
 | Einen weiteren Kreditor hinzufügen                | Erstellt                      | Versendet (Die Angebotsanforderung ist nur einem Kreditor zugesendet worden). | Erstellt                    | Versendet                        |
@@ -157,7 +158,7 @@ In der folgenden Tabelle wird angezeigt, wie der Angebotsanforderungsstatus sich
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Aktion**                                     | **Niedrigster Angebotsstatus ** | **Höchster Angebotsstatus ** | **Niedrigster Status des Angebotsanforderungskopfes ** | **Höchster Status des Angebotsanforderungskopfes ** | **Niedrigster Status einer Angebotsanforderungsposition ** | **Höchster Status einer Angebotsanforderungsposition ** |
+| **Aktion**                                     | **Niedrigster Angebotsstatus** | **Höchster Angebotsstatus** | **Niedrigster Status des Angebotsanforderungskopfes** | **Höchster Status des Angebotsanforderungskopfes** | **Niedrigster Status einer Angebotsanforderungsposition** | **Höchster Status einer Angebotsanforderungsposition** |
 | Erfassen Sie das ein Angebot eines Kreditors, und speichern Sie es.        | Versendet                  | Empfangen               | Versendet                         | Empfangen                      | Versendet                       | Empfangen                    |
 | Erfassen Sie das ein Angebot des zweiten Kreditors, und speichern Sie es. | Empfangen              | Empfangen               | Empfangen                     | Empfangen                      | Empfangen                   | Empfangen                    |
 
@@ -186,7 +187,7 @@ In der folgenden Tabelle wird angezeigt, wie sich der Angebotsanforderungs-Statu
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Aktivität**              | **Niedrigster Angebotsstatus ** | **Höchster Angebotsstatus ** | **Niedrigster Status des Angebotsanforderungskopfes ** | **Höchster Status des Angebotsanforderungskopfes ** | **Niedrigster Status einer Angebotsanforderungsposition ** | **Höchster Status einer Angebotsanforderungsposition ** |
+| **Aktivität**              | **Niedrigster Angebotsstatus** | **Höchster Angebotsstatus** | **Niedrigster Status des Angebotsanforderungskopfes** | **Höchster Status des Angebotsanforderungskopfes** | **Niedrigster Status einer Angebotsanforderungsposition** | **Höchster Status einer Angebotsanforderungsposition** |
 | Nehmen Sie eines derAngebote an. | Empfangen              | Akzeptiert               | Empfangen                     | Akzeptiert                      | Empfangen                   | Akzeptiert                    |
 | Lehnen Sie die anderen Angebote ab.  | Abgelehnt              | Akzeptiert               | Abgelehnt                     | Akzeptiert                      | Abgelehnt                   | Akzeptiert                    |
 

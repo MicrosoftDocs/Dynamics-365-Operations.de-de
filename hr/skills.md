@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 720a1f272948eb310dc3cd02588aeec40b556d20
-ms.openlocfilehash: 31dda85ff2e4a4e5380401b031b2dd74acff394b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4fd6e61e88ca3ca3fa63308dead1258c0263e5aa
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a>Angleichen der Belegschaftsqualifikationen mit der Geschäftstätigkeit
+
+[!include[banner](includes/banner.md)]
+
 
 Sie können auch die Qualifikationen nachverfolgen, die Arbeitskräfte, Bewerber oder Kontaktpersonen haben oder haben sollen um ihre Rollen effektiv auszuführen. Sie können auch die Qualifikationen angeben, die für eine bestimmte Stelle erforderlich sind.
 
@@ -52,24 +56,12 @@ Sie können eine Qualifikationszuordnungssuche erstellen, um eine Arbeitskraft, 
 
 Mit Qualifikationszuordnungsprofilen finden Sie Mitarbeiter oder Kandidaten mit Fähigkeiten, die den Unternehmensanforderungen entsprechen.  So können Sie beispielsweise ein Qualifikationszuordnungsprofil für eine offene Position in Ihrer Organisation erstellen. Wenn Sie ein Profil für einen bestimmten Stelle erstellen und Qualifikationen, Bescheinigungen und Ausbildung aus diesem Einzelvorgang auf das Profil kopieren, können Sie Arbeitskräfte, Bewerber und Kontaktpersonen suchen, die mit einer oder mehreren der Kriterien übereinstimmen, die für das Profil eingegeben sind. Sie können eine Liste der Kandidaten anzeigen, deren Qualifikationen am besten mit den Qualifikationen übereinstimmen, die für die Stelle erforderlich sind.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Hinweis </strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nur Arbeitskräfte, Bewerber und Kontaktpersonen, die ausgewählt werden, um in die Qualifikationszuordnungssuchen einbezogen zu werden, können in einer Qualifikationszuordnungsergebnisliste angezeigt werden oder in einem Qualifikationsprofil einbezogen werden. Wenn Sie eine Arbeitskraft, einen Bewerber oder eine Kontaktperson in Qualifikationszuordnungssuchen, wählen Sie auf den folgenden Seiten in <strong>Qualifikationszuordnung einschließen</strong> "Ja" aus:
-<ul>
-<li>Arbeitskraft</li>
-<li>Mitarbeiter</li>
-<li>Bewerber</li>
-<li>Kontakte</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+>**Hinweis** Nur Arbeitskräfte, Bewerber und Kontaktpersonen, die ausgewählt werden, um in die Qualifikationszuordnungssuchen einbezogen zu werden, können in einer Qualifikationszuordnungsergebnisliste angezeigt werden oder in einem Qualifikationsprofil einbezogen werden. Wenn Sie eine Arbeitskraft, einen Bewerber oder eine Kontaktperson in Qualifikationszuordnungssuchen, wählen Sie auf den folgenden Seiten in **Qualifikationszuordnung einschließen** "Ja" aus:
+
+> + Arbeitskraft
+> + Mitarbeiter
+> + Bewerber
+> + Kontakte
 
 ## <a name="skill-gap-analysis-and-skill-profile-analysis"></a>Qualifikationsdefizitanalyse und Qualifikationsprofilanalyse
 Sie können eine Qualifikationsprofilanalyse erstellen, um eine Liste der Kompetenzen für eine Arbeitskraft, einen Bewerber oder eine Kontaktperson zu einem bestimmten Datum anzuzeigen. Sie können eine Qualifikationsdefizitanalyse erstellen, um die Qualifikationen einer Person zu vergleichen und die Qualifikationen, die für eine spezifische Stelle erforderlich sind.  
@@ -80,5 +72,7 @@ Sie können eine Qualifikationsprofilanalyse erstellen, um eine Liste der Kompet
 --------
 
 [Personalverwaltung](index.md)
+
+
 
 

@@ -71,7 +71,7 @@ Der Prozess zum Klassifizieren von Zeiträumen nach Frist.
 
 Die Anzahl von Tagen in einem Zeitraum, der dazu dient, überfällige Debitorenzahlungen zu melden.
 
-### <a name="b"></a>**Mrd**
+### <a name="b"></a>**B**
 
 ###### <a name="balance-sheet"></a>**Bilanz**
 
@@ -253,7 +253,7 @@ Die Methode, die für die Bereitstellung im Benutzerakzeptanztest (UAT) und in P
 
 Ein Visual Studio-Tool, das Sie verwenden, um Ihre Modellelemente zu erstellen, zu aktualisieren und zu überprüfen.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\dimension-based configuration**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**Dimensionsbasierte Produktkonfiguration**
 
 Eine Konfigurationstechnologie, die zum Erstellen von Produktvarianten durch Auswahl von Produktdimensionswerten verwendet wird.
 
@@ -503,7 +503,7 @@ Ein Teil eines Produkts.
 
 ###### <a name="product-dimension"></a>**Produktdimension**
 
-Die Produktattribute „Größe”, „Farbe” oder „Konfiguration”, die für eine „..\financial-dimensions\dimension-based configuration” verwendet werden.
+Die Produktattribute „Größe”, „Farbe” oder „Konfiguration”, die für eine dimensionsbasierte Produktkonfiguration verwendet werden.
 
 ###### <a name="product-family"></a>**Produktfamilie**
 

@@ -1,16 +1,16 @@
 ---
 title: Spaltendefinitionen in Finanzberichten
 description: "Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Spalte eines Berichts angibt. Wie auch Zeilendefinitionen können grundlegende Spaltendefinitionen in mehreren Berichten verwendet werden."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-08-09 21 - 27 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: af336db81f659d80248aa4ab1fbba96ed1ff48c2
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Spaltendefinitionen in Finanzberichten
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Spalte eines Berichts angibt. Wie auch Zeilendefinitionen können grundlegende Spaltendefinitionen in mehreren Berichten verwendet werden.
 
@@ -150,7 +154,7 @@ Sie können das Dialogfeld **Spaltenüberschrift** verwenden, um Überschriften 
 
 1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
 2.  Wählen Sie eine Zelle in der Kopfzeile aus.
-3.  Klicken Sie im Menü **Bearbeiten** auf **Zeile einfügen**. Die neue Zeile wird über der Zeile eingefügt, die Sie in Schritt 2 ausgewählt haben. **Hinweis: **Wenn Sie mehr als vier Zeilen für Kopfzeilen auf einem Bericht haben, überschneiden sich die Kopfzeilen, wenn der Bericht in ein Excel-Arbeitsblatt exportiert wird. Um alle Überschriften im Bericht anzuzeigen, vergrößern Sie den oberen Rand in der Berichtsdefinition.
+3.  Klicken Sie im Menü **Bearbeiten** auf **Zeile einfügen**. Die neue Zeile wird über der Zeile eingefügt, die Sie in Schritt 2 ausgewählt haben. **Hinweis:**Wenn Sie mehr als vier Zeilen für Kopfzeilen auf einem Bericht haben, überschneiden sich die Kopfzeilen, wenn der Bericht in ein Excel-Arbeitsblatt exportiert wird. Um alle Überschriften im Bericht anzuzeigen, vergrößern Sie den oberen Rand in der Berichtsdefinition.
 
 ### <a name="delete-a-column-header-row"></a>Löschen einer Spaltenüberschriftzeile
 
@@ -320,9 +324,9 @@ Die Zelle **Drucksteuerung** kann Codes enthalten, die die Anzeige oder die Druc
 4.  Wählen Sie im Feld **Bedingte Druckoptionen** eine Option aus. Standardmäßig ist **(keine)** aktiviert. Sie können nur jeweils einen bedingten Druckcode auswählen.
 5.  Klicken Sie auf **OK**.
 
-**Tipp:** Sie können die Druckcodes direkt in die Zelle **Drucksteuerung** eingeben. Trennen Sie mehrere Drucksteuerungscodes mit einem Komma voneinander.
+> [!TIP]
+> Sie können die Druckcodes direkt in die Zelle **Drucksteuerung** eingeben. Trennen Sie mehrere Drucksteuerungscodes mit einem Komma voneinander.
 
-### 
 
 ## <a name="column-types"></a>Spaltentypen
 Der Typ der Informationen, die jede Spalte in einem Bericht umfasst, wird vom Wert in der Zeile **Spaltentyp** in der Spaltendefinition angegeben. Jede Spaltendefinition muss mindestens eine Beschreibungspalte (**DESC**) und eine Betragsspalte (**FD**, **WKS** oder **CALC**) enthalten. **Hinweis:** Die Spaltencodes gelten nicht für alle Buchhaltungssysteme. Wenn Sie einen Typ auswählen, der für Ihr Buchhaltungssystem nicht gültig ist, ist diese Spalte im Bericht leer.
@@ -507,7 +511,8 @@ Ein Bericht mit mehreren Währungen kann Beträge in der natürlichen (lokalen) 
 -   **Währungs-Anzeige** – Geben Sie die Art der Währung an (natürliche oder funktionale Währung oder Berichtswährung), in dem die Buchungen angezeigt werden. Diese Funktion wird manchmal auch als Währungsumrechnung bezeichnet. Währungsübersetzung ist die Möglichkeit, einen Bericht zu Hauptbuchbeträgen in einer Fremdwährung zu erstellen, die möglicherweise nicht die funktionelle Währung des Unternehmens ist oder die Währung, in der die Transaktion eingegeben wurde.
 -   **Währungsfilter** - Geben Sie einen Währungsfilter an. Nur Transaktionen, die in der ausgewählten Währung eingegeben werden, werden im Bericht angezeigt.
 
-**Hinweis:** Um Berichte zu erstellen, die mehrere Währungen verwenden, müssen Sie das Kontrollkästchen **Alle Berichtswährungen einschließen** auf der Registerkarte **Bericht** der Berichtsdefinition auswählen. Führen Sie die folgenden Schritte aus, um die funktionalen Währung eines Unternehmens zu bestimmen.
+> [!NOTE]
+> Um Berichte zu erstellen, die mehrere Währungen verwenden, müssen Sie das Kontrollkästchen **Alle Berichtswährungen einschließen** auf der Registerkarte **Bericht** der Berichtsdefinition auswählen. Führen Sie die folgenden Schritte aus, um die funktionalen Währung eines Unternehmens zu bestimmen.
 
 1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Unternehmen**.
 2.  Wählen Sie im Dialogfeld **Unternehmen** ein Unternehmen aus, und klicken Sie anschließend auf **Anzeigen**.
@@ -516,10 +521,11 @@ Ein Bericht mit mehreren Währungen kann Beträge in der natürlichen (lokalen) 
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Angeben der Währung für einen Bericht mit mehreren Währungen
 
 1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle ** Wähungsanzeige** in der entsprechenden **FD**-Spalte, und wählen Sie dann die Option für das Anzeigen von Währungsinformationen aus: **Natürlich/ursprüngliche Währung**, **Funktionale Währung aus Unternehmensinformationen** oder die Berichtswährung.
+2.  Doppelklicken Sie auf die Zelle **Wähungsanzeige** in der entsprechenden **FD**-Spalte, und wählen Sie dann die Option für das Anzeigen von Währungsinformationen aus: **Natürlich/ursprüngliche Währung**, **Funktionale Währung aus Unternehmensinformationen** oder die Berichtswährung.
 3.  Doppelklicken Sie auf die Zelle **Währungsfilter** in der entsprechenden **FD**-Spalte, und wählen Sie dann den entsprechenden Währungscode in der Liste aus. Es werden nur Transaktionen im Bericht angezeigt, die in dieser Währung eingegeben werden.
 
-**Hinweis:** Die Optionen, die hier beschriebenen werden, unterschieden sich je nach ERP-System. Weitere Informationen finden Sie in der Dokumentation des [Microsoft ERP-Systems](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
+> [!NOTE]
+> Die Optionen, die hier beschriebenen werden, hängen vom ERP-System ab. Weitere Informationen finden Sie in der Dokumentation des [Microsoft ERP-Systems](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Beispiel für Währungsanzeige und Währungsfiltertellen
 
@@ -543,7 +549,7 @@ In der folgenden Tabelle werden die Berichtsergebnisse aufgelistet, die aufgrund
 
 ### <a name="calculation-column-in-a-column-definition"></a>Berechnungsspalte in einer Spaltendefinition
 
-Ein **CALC** Spaltentyp in einer Spaltendefinition unterstützt komplexe Berechnungen in der **Formel ** Zelle und kann **+**, **-**, **\***, und **/** Operatoren, und auch **IF/THEN/ELSE** Aussagen enthalten. Eine Berechnungsspalte kann auf jede beliebige andere Spalte auch auf nachfolgende Spalten verweisen. Darüber hinaus kann eine Spalte das Geschäftsjahr und die Periode umfassen, um Überschriften für die Spalte zu unterstützen. Die Berechnungsformel kann bis zu 1.024 Zeichen lang sein. Um das Berechnungsergebnis als Prozentsatz auszudrücken, verwenden Sie eine spezielle Formataußerkraftsetzung. **Hinweis:** Die Ergebnisse der Berechnungsformeln enthalten keine Werte der nicht druckbaren Spaltenbereiche. Beispielsweise **A:D** druckt **0** (null), wobei **A+B+C** für nicht druckbare Werte den Wert berechnet.
+Ein **CALC** Spaltentyp in einer Spaltendefinition unterstützt komplexe Berechnungen in der **Formel** Zelle und kann **+**, **-**, **\***, und **/** Operatoren, und auch **IF/THEN/ELSE** Aussagen enthalten. Eine Berechnungsspalte kann auf jede beliebige andere Spalte auch auf nachfolgende Spalten verweisen. Darüber hinaus kann eine Spalte das Geschäftsjahr und die Periode umfassen, um Überschriften für die Spalte zu unterstützen. Die Berechnungsformel kann bis zu 1.024 Zeichen lang sein. Um das Berechnungsergebnis als Prozentsatz auszudrücken, verwenden Sie eine spezielle Formataußerkraftsetzung. **Hinweis:** Die Ergebnisse der Berechnungsformeln enthalten keine Werte der nicht druckbaren Spaltenbereiche. Beispielsweise **A:D** druckt **0** (null), wobei **A+B+C** für nicht druckbare Werte den Wert berechnet.
 
 #### <a name="operators-in-calculation-columns"></a>Operatoren in den Berechnungsspalten
 
@@ -572,7 +578,7 @@ Sie können eine bestimmte Berichtszelle verweisen, indem Sie einen Spaltenbuchs
 
 #### <a name="multiply-or-divide-a-column-by-a-base-row"></a>Multiplizieren oder dividieren einer Spalte mit einer Basiszeile
 
-Sie können eine Spalte erstellen, die alle Werte in einer angegebenen Spalte als Prozentsatz einer Basiszahl anzeigt. Daher können Sie Beziehungen zwischen Zeilen, wie den Prozentsatz einer Vertriebszeile oder den Prozentsatz einer Gesamtkostenzeile, anzeigen. Um jede Zeile in einer bestimmten Spalte mit einer Basiszeile zu multiplizieren oder zu dividieren, geben Sie die zu verwendeten Spalte in die Berechnung ein und geben Sie anschließend **\*BASEROW** oder **/BASEROW** ein. Geben Sie **C\*BASEROW** or **C/BASEROW**.  ** Hinweis:** Wenn Sie eine Basiszeilenberechnung in einer Spaltendefinition verwenden, sollten Sie sicherstellen, dass jede Zeilendefinition, die mit dieser Spaltendefinition verwendet wird, mindestens eine Basiszeile für Berechnungen enthält.
+Sie können eine Spalte erstellen, die alle Werte in einer angegebenen Spalte als Prozentsatz einer Basiszahl anzeigt. Daher können Sie Beziehungen zwischen Zeilen, wie den Prozentsatz einer Vertriebszeile oder den Prozentsatz einer Gesamtkostenzeile, anzeigen. Um jede Zeile in einer bestimmten Spalte mit einer Basiszeile zu multiplizieren oder zu dividieren, geben Sie die zu verwendeten Spalte in die Berechnung ein und geben Sie anschließend **\*BASEROW** oder **/BASEROW** ein. Geben Sie **C\*BASEROW** or **C/BASEROW**.  **Hinweis:** Wenn Sie eine Basiszeilenberechnung in einer Spaltendefinition verwenden, sollten Sie sicherstellen, dass jede Zeilendefinition, die mit dieser Spaltendefinition verwendet wird, mindestens eine Basiszeile für Berechnungen enthält.
 
 #### <a name="divide-the-amount-in-a-column-by-the-number-of-periods"></a>Dividieren des Betrag in einer Spalte durch die Anzahl der Perioden
 
@@ -584,5 +590,7 @@ Sie können den Betrag in einer Spalte durch eine angegebene Anzahl von Perioden
 [Zeilendefinitionen in der Finanzberichterstellung](row-definitions-financial-reporting.md)
 
 [Erweiterte Formatierungsoptionen in der Finanzberichterstellung](advanced-formatting-options-financial-reporting.md)
+
+
 
 

@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 114dee90b0fe525f0b3efabbf651d2804a22dd7d
-ms.openlocfilehash: ba0d709d123f56edb2a5287376c06c1f41181b1c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8d3fca57ca5f2c899a5d1994df1dc2d4d8d0b818
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -56,7 +57,7 @@ Zwei Indikatoren werden für Aufgaben verwendet:
 
 Der Aufgabenname ist ein Link zur Seite Microsoft Dynamics 365 for Operations oder einer anderen Webseite, auf der ein Benutzer die Arbeit abschließen muss. Sie können diesen Link festlegen, indem Sie das Feld **Aufgabenlink** verwenden, wenn Sie eine Aufgabe bearbeiten oder erstellen. 
 
-Sie können Dateien, Hinweise, Bilder und URLs zu einer Aufgabe zuordnen, indem Sie die Aktivität **Zuordnungen** verwenden. So können Sie beispielsweise die Erfassungsnummern angeben, die als Teil einer Aufgabe verwendet werden, Kommentare zu einer bestimmten Aufgabe hinzufügen oder eine Berichtsdatei anhängen, die für eine Aufgabe gedruckt wurde. Ein Symbol wird in der Spalte ** Anlag** für die Aufgabe angezeigt, wenn eine Anlage vorhanden ist. 
+Sie können Dateien, Hinweise, Bilder und URLs zu einer Aufgabe zuordnen, indem Sie die Aktivität **Zuordnungen** verwenden. So können Sie beispielsweise die Erfassungsnummern angeben, die als Teil einer Aufgabe verwendet werden, Kommentare zu einer bestimmten Aufgabe hinzufügen oder eine Berichtsdatei anhängen, die für eine Aufgabe gedruckt wurde. Ein Symbol wird in der Spalte **Anlag** für die Aufgabe angezeigt, wenn eine Anlage vorhanden ist. 
 
 Die Option **Aufgabe abgeschlossen** muss manuell aktiviert werden, nachdem die Aufgabe abgeschlossen ist. Wenn eine Aufgabe markiert wird, die als abgeschlossen markiert wird, wird das Feld **Datum abgeschlossen** automatisch mit dem aktuellen Datum und der Systemzeit aktualisiert. Abhängigkeitsindikatoren werden ebenfalls bei Bedarf aktualisiert.
 
@@ -64,7 +65,7 @@ Die Option **Aufgabe abgeschlossen** muss manuell aktiviert werden, nachdem die 
 Sie können alle Aufgaben der laufenden und der vorherigen Periode auf der Seite **Alle Aufgaben der Finanzperiode schließe**, anzeigen. Diese Listenseite eignet zur historischen Analyse Ihres Abschlussprozess, da sie die Informationen zum geplanten Fälligkeitsdatum, dem tatsächlichen Abschlussdatum und die Person beinhaltet, die die Aufgabe abgeschlossen hat. Nun können Sie die Informationen auf dieser Listenseite in Microsoft Excel zum Melden und Überwachen der Zwecke einfacher exportieren.
 
 ## <a name="financial-period-close-configuration-page"></a>Seite der Finanzperiodenabschluss-Konfiguration
-Bevor Sie den Arbeitsbereich **Finanzperiodenabschluss** verwenden können, müssen Sie den Prozess in Microsoft Dynamics 365 for Operations konfigurieren, indem Sie  die Seite **Finanzperiodenkonfiguration abschließen** verwenden. (Klicken Sie auf **Hauptbuch** &gt; ** Periode schließen** &gt; **Finanzperiodenkonfiguration abschließe**.)
+Bevor Sie den Arbeitsbereich **Finanzperiodenabschluss** verwenden können, müssen Sie den Prozess in Microsoft Dynamics 365 for Operations konfigurieren, indem Sie  die Seite **Finanzperiodenkonfiguration abschließen** verwenden. (Klicken Sie auf **Hauptbuch** &gt; **Periode schließen** &gt; **Finanzperiodenkonfiguration abschließe**.)
 
 ### <a name="resources"></a>Ressourcen
 

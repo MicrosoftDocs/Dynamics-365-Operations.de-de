@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 19eeee753c15cf2670948ce2c615a112813c16ad
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2112d6dd45c76af3cea75a4e06b06f9577c572ad
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="master-planning-and-multisite-functionality"></a>Produktprogrammplanung und Funktion für mehrere Standorte
+
+[!include[banner](../includes/banner.md)]
+
 
 Der Produktprogrammplan berücksichtigt die Einstellungen der Site Lagerortlagerdimensionen. 
 
@@ -37,7 +41,7 @@ Wenn eine Dimension obligatorisch ist, muss bei allen Lagerbuchungen ein Dimensi
 
 Wenn der Lagerort nicht auf obligatorisch festgelegt ist, ist er möglicherweise nicht aus dem Anfangsbedarf bekannt. Das Planungsmodul muss den zu verwendenden Lagerort auf Grundlage der für den Artikel festgelegten Einstellungen, einzelner Lagerorte und der Details der Auftragsposition bestimmen.
 
-In den folgenden Wiki-Artikeln wird die Funktionsweise des Planungsmoduls bei Definition unterschiedlicher Einstellungen zur Bestimmung des zu verwendenden Lagerorts erläutert.
+In den folgenden Themen wird die Funktionsweise des Planungsmoduls bei Definition unterschiedlicher Einstellungen zur Bestimmung des zu verwendenden Lagerorts erläutert.
 
 [Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
@@ -48,5 +52,7 @@ In den folgenden Wiki-Artikeln wird die Funktionsweise des Planungsmoduls bei De
 [Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort nicht obligatorisch](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Produktprogrammplanungslauf - Ermittlung der Stücklistenversion](master-plan-bom-version-determined.md)
+
+
 
 

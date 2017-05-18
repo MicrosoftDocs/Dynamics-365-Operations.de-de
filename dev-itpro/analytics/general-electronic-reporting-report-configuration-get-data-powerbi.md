@@ -1,9 +1,9 @@
 ---
-title: Einrichten der &quot;Elektronischen Berichterstellung&quot;, um Power BI Daten aus Dynamics 365 for Operations bereitzustellen
+title: "Konfigurieren Sie elektronische Berichterstattung, um Daten im Power BI zu berücksichtigen"
 description: "In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung verwenden können, um die Übertragung von Daten aus Ihrer Instanz von Microsoft Dynamics 365 for Operations zu den Power BI-Diensten zu veranlassen. Als Beispiel verwendet dieses Thema Intrastat-Buchungen als Geschäftsdaten, die übertragen werden müssen. Die Power BI-Zuordnungsvisualisierung verwendet diese Intrastat-Buchungsdaten, um eine Ansicht zur Analyse von Import-/Exportaktivitäten von Unternehmen im Power BI-Bericht darzustellen."
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-31 13 - 22 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: ed0192c44b6d7e88120c64e539ebb0ac3b379831
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4bbc77eb1edfe0c109434ce4d26228ed031f48bc
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="set-up-electronic-reporting-to-provide-power-bi-with-data-from-dynamics-365-for-operations"></a>Einrichten der "Elektronischen Berichterstellung", um Power BI Daten aus Dynamics 365 for Operations bereitzustellen
+# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurieren Sie elektronische Berichterstattung, um Daten im Power BI zu berücksichtigen
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung verwenden können, um die Übertragung von Daten aus Ihrer Instanz von Microsoft Dynamics 365 for Operations zu den Power BI-Diensten zu veranlassen. Als Beispiel verwendet dieses Thema Intrastat-Buchungen als Geschäftsdaten, die übertragen werden müssen. Die Power BI-Zuordnungsvisualisierung verwendet diese Intrastat-Buchungsdaten, um eine Ansicht zur Analyse von Import-/Exportaktivitäten von Unternehmen im Power BI-Bericht darzustellen.
 
@@ -61,7 +65,7 @@ Um das Beispiel in diesem Thema abzuschließen, müssen Sie den folgenden Zugrif
 3.  Machen Sie im Arbeitsbereich **Elektronische Berichterstellung** den erforderlichen Anbieter aktiv, indem Sie auf **Auf "aktiv" festlegen** klicken. Um weitere Informationen zu erhalten, geben Sie den Aufgabenleitfaden **Elektronische Berichterstellung – Dienstanbieter auswählen** wieder.
 
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>Verwenden eines Datenmodells zur elektronischen Berichterstellung als die Datenquelle
-Sie müssen ein Datenmodell zur elektronischen Berichterstellung als Quelle von Geschäftsdaten haben, die bei Power BI-Berichten verwendet werden. Dieses Datenmodell wir vom Konfigurationsrepository der elektronischen Berichterstellung hochgeladen. Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen des Downloads von Lebenszyklusdiensten](download-electronic-reporting-configuration-lcs.md), oder geben Sie den Aufgabenleitfaden **Elektronische Berichterstellung – Importieren einer Konfiguration aus den Lebenszyklusdiensten** wieder. Wählen Sie **Intrastat **als das Datenmodell aus, das vom ausgewählten Konfigurationsrepository der elektronischen Berichterstellung hochgeladen wird. (In diesem Beispiel wird Version 1 des Modells verwendet). Sie können die **Intrastat** ER-Modell-Konfiguration auf der **Konfigurationen** Seite zugreifen. [![Seite "Konfigurationen"](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+Sie müssen ein Datenmodell zur elektronischen Berichterstellung als Quelle von Geschäftsdaten haben, die bei Power BI-Berichten verwendet werden. Dieses Datenmodell wir vom Konfigurationsrepository der elektronischen Berichterstellung hochgeladen. Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen des Downloads von Lebenszyklusdiensten](download-electronic-reporting-configuration-lcs.md), oder geben Sie den Aufgabenleitfaden **Elektronische Berichterstellung – Importieren einer Konfiguration aus den Lebenszyklusdiensten** wieder. Wählen Sie **Intrastat**als das Datenmodell aus, das vom ausgewählten Konfigurationsrepository der elektronischen Berichterstellung hochgeladen wird. (In diesem Beispiel wird Version 1 des Modells verwendet). Sie können die **Intrastat** ER-Modell-Konfiguration auf der **Konfigurationen** Seite zugreifen. [![Seite "Konfigurationen"](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Eine Formatkonfiguration für die elektronische Berichterstellung entwerfen
 Sie müssen eine neue Formatkonfiguration für elektronische Berichterstellung erstellen, die das Datenmodell **Intrastat** als Quelle von Geschäftsdaten verwendet. Diese Formatkonfiguration muss Ausgabeergebnisse als elektronische Dokumente im OpenXML-(Excel-Datei)-Format erstellen. Für weitere Informationen geben Sie den Aufgabenleitfaden **Elektronische Berichterstellung – Eine Konfiguration für Berichte im OPENXML-Format erstellen** wieder. Benennen Sie die neue Konfiguration **Aktivitäten importieren / exportieren**, wie in der folgenden Abbildung dargestellt. Verwenden Sie die [Daten der elektronischen Berichterstellung – Details importieren und exportieren](https://go.microsoft.com/fwlink/?linkid=845208) Excel-Datei als Vorlage, wenn Sie das Format der elektronischen Berichterstellung entwerfen. (Weitere Informationen dazu, wie eine Formatvorlage, wiedergeben Sie den Aufgabenleitfaden importiert.[![Konfiguration von Import/Exportaktiitäten](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png) zur Bearbeitung der **Import/exportaktivitäten** Formatskonfiguration folgen Sie diesen Schritten.
@@ -119,5 +123,7 @@ Richten Sie die Integration zwischen Dynamics 365 for Operations und Power BI ei
 [Zielorte für elektronische Berichterstellung](electronic-reporting-destinations.md)
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+
+
 
 

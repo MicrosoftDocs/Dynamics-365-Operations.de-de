@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 81b5c9056001b26c33b2b42a95711ff5b50243e6
-ms.openlocfilehash: 4bd934091c80ab9a4d244499d2bce2c4646c3e99
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 769680aff8c018bc042ffce98ee50a9760a65fcf
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -126,7 +127,7 @@ Sie können ein Dokument im Bereich **Anhänge** auf der Seite **Überprüfungen
 Sie können den Workflow für die Arbeitskraftüberprüfung verwenden, um die Genehmigung einer Beurteilung zu steuern. Sie können auch festlegen, dass der automatisierte Workflow übersprungen wird, und Sie können den Status der Beurteilung manuell ändern. So können Sie einfachere Dokumente wie zum Beispiel Einzelbeurteilungen erstellen, ohne den Workflowprozess zu verwenden. Der Zugriff auf eine Beurteilung wird durch den Status der Beurteilung gesteuert.
 
 1.  Wenn die Beurteilung erstellt wird, erhält sie den Status **Nicht gestartet**. Die Beurteilung kann von jedem Benutzer bearbeitet werden.
-2.  Wenn der Mitarbeiter auf die Schaltfläche **Überprüfung beginnen** geklickt hat, erhält die Beurteilung den Status** In Bearbeitung**. Der Mitarbeiter fügt dann Inhalt hinzu. An diesem Punkt kann der Vorgesetzte das Beurteilungsdokument nicht mehr anzeigen.
+2.  Wenn der Mitarbeiter auf die Schaltfläche **Überprüfung beginnen** geklickt hat, erhält die Beurteilung den Status**In Bearbeitung**. Der Mitarbeiter fügt dann Inhalt hinzu. An diesem Punkt kann der Vorgesetzte das Beurteilungsdokument nicht mehr anzeigen.
 3.  Der Status des Mitarbeiters wechselt zu **Bereit für Überprüfung**.
 4.  Der Vorgesetzte kann Kommentare und Bewertungen hinzufügen. Zu diesem Zeitpunkt kann nur der Vorgesetzte die Beurteilung anzeigen.
 5.  Der Vorgesetzte ändert den Status zu **Abschlussüberprüfung**, damit sowohl der Mitarbeiter als auch der Vorgesetzte die Beurteilung anzeigen und erörtern können. Sie können in den Parametern angeben, ob die Beurteilung nun bearbeitet werden kann. Dieser Schritt ist auch optional. Der Vorgesetzte kann auch einfach die Beurteilung für den Mitarbeiter freigeben und sie abschließend als **Abgeschlossen** markieren.

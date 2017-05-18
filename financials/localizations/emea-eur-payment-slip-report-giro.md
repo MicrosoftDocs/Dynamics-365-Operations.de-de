@@ -16,10 +16,11 @@ ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
-ms.openlocfilehash: c795466753ca1515790b7961b989aac6e7d63c2c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 53b03f70ea10a340599ef73f12a9a1aa67bfcac4
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,7 +37,7 @@ Die Funktionen für Zahlungsbelegberichte sind für die juristische Personen ver
 ## <a name="set-up-a-creditor-id-number-denmark-only"></a>Einrichten einer Kreditorenkennung (Nur Dänemark)
 Gehen Sie folgendermaßen vor, um Gläubigerkennung (ID)- Nummer des Unternehmens eingeben. Ihr Finanzinstitut stellt diese Nummer bereit. Diese Nummer wird als Referenz verwendet, wenn Debitorenzahlungen über Finanzinstitutionen empfangen werden.
 
-1.  Klicken Sie auf **Organisationsverwaltung** &gt; **Einrichten **&gt; **Organisationen** &gt; **Juristische Personen**.
+1.  Klicken Sie auf **Organisationsverwaltung** &gt; **Einrichten**&gt; **Organisationen** &gt; **Juristische Personen**.
 2.  Im Inforegister **Bankkontoinformationen** Wählen Sie das Feld **FI-Gläubiger-Kennung** und geben Sie die eindeutige achtstellige Kreditorenkennung ein.
 3.  Schließen Sie das Formular, um Ihre Änderungen zu speichern.
 
@@ -50,7 +51,7 @@ Folgen Sie diesen Schritten und richten Sie ein Format für einen Zahlungsbeleg 
 
 Folgen Sie diesen Schritten und richten Sie ein Format für einen Zahlungsbeleg ein, der Projektrechnungen beigelegt werden soll.
 
-1.  Klicken Sie auf **Projektverwaltung und -buchhaltung **&gt; **Einrichten** &gt; **Formular** &gt; **Formulareinstellungen**.
+1.  Klicken Sie auf **Projektverwaltung und -buchhaltung**&gt; **Einrichten** &gt; **Formular** &gt; **Formulareinstellungen**.
 2.  Klicken Sie auf die Registerkarte **Zugeordnete Zahlungsbeilagen** und wählen Sie im Feld das Format für den Zahlungsbeleg aus.
 
 ## <a name="assign-a-payment-slip-attachment-format-to-a-customer-account"></a>Zuweisen einer Zahlungsbelegsbeilage zu einem Debitorenkonto

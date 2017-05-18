@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 42dc414ff2bb6359b47d89c3bd3c510e4258f816
-ms.openlocfilehash: b2229466040351d8c2b9494b30b4c928651820b8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 11a4633b0a1254f3a8cbdcba8d7aa99bb7c936c1
+ms.contentlocale: de-de
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -92,7 +93,7 @@ Sie können den Peripheriesimulator verwenden, um Produktstrichcodes, Bonlayouts
 1.  Nachdem das Hardwareprofil erstellt wurde, fahren **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **Register**.
 2.  In der **POS-Register** Liste klicken Sie auf den Link für das **Registernummer** Feld für das Register, das den Peripheriesimulator verwenden.
 3.  Klicken Sie auf **Bearbeiten**.
-4.  Im **Profile **Abschnitt im Feld **Hardwareprofil** Feld, wählen Sie das Hardwareprofil aus, das Sie für virtuelle Peripheriegeräte erstellt haben.
+4.  Im **Profile**Abschnitt im Feld **Hardwareprofil** Feld, wählen Sie das Hardwareprofil aus, das Sie für virtuelle Peripheriegeräte erstellt haben.
 5.  Klicken Sie auf **Speichern**.
 
 ### <a name="synchronize-changes-to-the-channel-database"></a>Änderungen an die Kanaldatenbank synchronisieren
@@ -180,7 +181,7 @@ Das virtuelle Gerät für elektronische Unterschriften fordert den Benutzer auf,
 4.  Klicken Sie auf **Einstellungen** und dann auf **Einstellungen** im Abschnitt **Zahlungsmethoden**.
 5.  Klicken Sie auf **Bearbeiten**.
 6.  Wählen Sie eine Zahlungsmethode aus, die eine Unterschrift erfordert.
-7.  Im Abschnitt **Allgemein ** unter **Unterschrifterfassung** legen Sie die **Gerät für elektronische Unterschriften verwenden** Option auf **Ja** fest.
+7.  Im Abschnitt **Allgemein** unter **Unterschrifterfassung** legen Sie die **Gerät für elektronische Unterschriften verwenden** Option auf **Ja** fest.
 8.  Wählen Sie im **Mindestbetrag für Signaturerfassung** Feld geben Sie den Mindestbetrag ein, der Signatur auslösen soll aufzeichnen.
 
 #### <a name="synchronize-changes-to-the-channel-database"></a>Änderungen an die Kanaldatenbank synchronisieren

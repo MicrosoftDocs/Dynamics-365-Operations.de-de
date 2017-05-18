@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: fabaacbc7187b38a1745c2139a9eb7760f2be987
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a0a105ade7e47d7c554d62ee112ed03437bb7521
+ms.contentlocale: de-de
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Dieser Artikel beschreibt, Sie wie Sie Formularlayouts erstellen und ändern, um zu steuern, wie Bons, Rechnungen und andere Dokumente gedruckt werden. Microsoft Dynamics 365 for Operations - Retail umfasst einen Formularlayout-Designer, mit dem Sie einfach verschiedene Formularlayouts erstellen und ändern können.
 
-**Wichtig: **Formularlayouts und Bonprofile müssen eingerichtet werden, um Bons und andere Dokumente in Retail Modern POS und Cloud POS. ausdrucken zu können. Sie können mehrere Formularlayouts in ein Bonprofil einfügen. Sie können dann das Bonprofil einem Drucker zuweisen, indem Sie ein Hardwareprofil ändern.
+**Wichtig:**Formularlayouts und Bonprofile müssen eingerichtet werden, um Bons und andere Dokumente in Retail Modern POS und Cloud POS. ausdrucken zu können. Sie können mehrere Formularlayouts in ein Bonprofil einfügen. Sie können dann das Bonprofil einem Drucker zuweisen, indem Sie ein Hardwareprofil ändern.
 
 ## <a name="set-up-a-receipt-format"></a>Einrichten eines Bonformats
 1.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS** &gt; **Bonlayouts**.
@@ -57,7 +58,7 @@ Mit dem Designer für Formularlayout können Sie das Layout des Formulardokument
 8.  Nachdem Sie ein Element in den Arbeitsbereich gezogen haben, legen Sie im Bereich **Objektinformationen** unten auf der Seite die Eigenschaften für den Abschnitt fest. Geben Sie eine oder mehrere der folgenden Einstellungen ein:
     -   **Ausrichten** – Legen Sie die Ausrichtung des Felds auf **Links** oder **Rechts** fest.
     -   **Füllzeichen** – Geben Sie das Leerzeichen an. Standardmäßig wird ein Leerzeichen verwendet, Sie können aber ein beliebiges Zeichen eingeben.
-    -   **Präfix** – Geben Sie den Wert ein, der am Anfang des Felds angezeigt wird. Diese Einstellung trifft nur auf den Abschnitt **Positionen **des Layouts zu.
+    -   **Präfix** – Geben Sie den Wert ein, der am Anfang des Felds angezeigt wird. Diese Einstellung trifft nur auf den Abschnitt **Positionen**des Layouts zu.
     -   **Zeichen** - Geben Sie die maximale Anzahl von Zeichen an, die das Feld enthalten kann, wenn das Element eine Variable aufweist. Wenn der Text im Feld länger ist als die angegebene Anzahl von Zeichen, wird er abgeschnitten, damit er in das Feld passt.
     -   **Variable** – Dieses Kontrollkästchen wird automatisch aktiviert, wenn das Element eine Variable enthält und nicht angepasst werden kann.
     -   **Schrifttyp** – Legen Sie den Schriftschnitt auf **Normal** oder **Fett** fest. Fett formatierte Buchstaben nehmen doppelt so viel Platz ein wie normal formatierte Buchstaben. Daher werden einige Zeichen möglicherweise abgeschnitten.

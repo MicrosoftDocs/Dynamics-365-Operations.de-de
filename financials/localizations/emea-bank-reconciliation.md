@@ -17,10 +17,11 @@ ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 22d93d7b3618d4f5931c6a7e39d681173734b0b9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 74f0d63b0a5a88eec425f28bc6a7a59692e28d83
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -58,7 +59,7 @@ Neben einem Bankauszug können Banken bestimmte Meldungen bereitstellen, die Inf
 ##### <a name="return-formats"></a>Rückgabeformat
 
 -   Zahlungsstatusbericht ISO 20022 pain.002
--   (DNK) BetalingsserviceBasis-returformat – Return format for customer Betalingsservice export format
+-   (DNK) BetalingsserviceBasis-returformat – Rückgabeformat für Kunden Betalingsservice-Exportformat
 -   [Importzahlungsformate für Schweden](emea-swe-payment-formats-import.md)
 -   (SWE) BankGirot-Rücklieferung – Kreditorenzahlungen geben das Format zurück, das dem Bankgirot-Exportformat entspricht
 

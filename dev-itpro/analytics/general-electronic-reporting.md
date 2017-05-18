@@ -18,10 +18,11 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: b3e8174d07c9b9fd4210486c369c640fe07c49eb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: abe9212372fb7429d68c1fb6b32ec1d15c20a6d7
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ Das ER-Modul hat folgende Funktionen:
 ## <a name="concepts"></a>Konzepte
 ### <a name="components"></a>Komponenten
 
-ER unterstützt zwei Komponententypen: **Datenmodell **und **Format**.
+ER unterstützt zwei Komponententypen: **Datenmodell**und **Format**.
 
 #### <a name="data-model-components"></a>Datenmodellkomponenten
 
@@ -93,9 +94,9 @@ Eine Formatkomponente bietet die Möglichkeit, bestimmte Dateien anzufügen, die
 Die Versionsverwaltung wird für ER-Komponenten unterstützt. Der folgende Workflow wird für die Verwaltung von Änderungen in ER-Komponenten bereitgestellt:
 
 -   Die Version, die ursprünglich erstellt wurde, ist als **ENTWURF**-Version gekennzeichnet. Diese Version kann bearbeitet werden und ist für Testläufe verfügbar.
--   Die** ENTWURF**-Version kann in eine **ABGESCHLOSSEN**-Version konvertiert werden. Diese Version kann in lokalen Berichtsprozessen verwendet werden.
--   Die **ABGESCHLOSSEN **-Version kann in eine **FREIGEGEBEN**-Version konvertiert werden. Diese Version wird im LCS veröffentlicht und kann in den globalen Berichterstellungsprozessen verwendet werden.
--   Die **GEMEINSAM GENUTZT **-Version kann in eine **EINGESTELLT**-Version konvertiert werden. Diese Version kann anschließend gelöscht werden.
+-   Die**ENTWURF**-Version kann in eine **ABGESCHLOSSEN**-Version konvertiert werden. Diese Version kann in lokalen Berichtsprozessen verwendet werden.
+-   Die **ABGESCHLOSSEN**-Version kann in eine **FREIGEGEBEN**-Version konvertiert werden. Diese Version wird im LCS veröffentlicht und kann in den globalen Berichterstellungsprozessen verwendet werden.
+-   Die **GEMEINSAM GENUTZT**-Version kann in eine **EINGESTELLT**-Version konvertiert werden. Diese Version kann anschließend gelöscht werden.
 
 Versionen in einem **ABGESCHLOSSEN** oder **GEMEINSAM**-Status sind für anderen Datenaustausch verfügbar. Für eine Komponente mit diesen Status können folgende Aktionen ausgeführt werden:
 
@@ -104,7 +105,7 @@ Versionen in einem **ABGESCHLOSSEN** oder **GEMEINSAM**-Status sind für ander
 
 #### <a name="component-date-effectivity"></a>Teildatumswirksamkeit
 
-ER-Komponentenversionen haben ein Gültigkeitsdatum. Das** Gültig ab **-Datum kann für eine ER-Komponente definiert werden, um das Datum anzugeben, ab dem diese Komponente für Berichtsprozesse wirksam wird. Das Microsoft Dynamics 365 for Operations-Sitzungsdatum wird verwendet, um zu definieren, ob eine Komponente für die Ausführung gültig ist. Wenn mehrere Versionen für ein bestimmtes Datum gültig sind, wird die aktuellste Version für die Berichterstattung verwendet.
+ER-Komponentenversionen haben ein Gültigkeitsdatum. Das**Gültig ab**-Datum kann für eine ER-Komponente definiert werden, um das Datum anzugeben, ab dem diese Komponente für Berichtsprozesse wirksam wird. Das Microsoft Dynamics 365 for Operations-Sitzungsdatum wird verwendet, um zu definieren, ob eine Komponente für die Ausführung gültig ist. Wenn mehrere Versionen für ein bestimmtes Datum gültig sind, wird die aktuellste Version für die Berichterstattung verwendet.
 
 #### <a name="component-access"></a>Teilzugriff
 
@@ -112,7 +113,7 @@ Der Zugriff auf ER-Formatkomponenten hängt von den Einstellungen des ISO-Lände
 
 #### <a name="configuration"></a>Konfiguration
 
-Eine ER-Konfiguration ist der Wrapper einer bestimmten ER-Komponente, entweder **Datenmodell **oder **Format**. Eine Konfiguration kann unterschiedliche Versionen einer bestimmten ER-Komponente beinhalten. Jede Konfiguration wird markiert als im Besitz von einem bestimmten Konfigurationsanbieter. Die **ENTWURF**-Version einer Konfigurationskomponente kann bearbeitet werden, wenn der Besitzer einer Konfiguration als aktiver Anbieter in den ER-Einstellungen in Microsoft Dynamics 365 for Operations ausgewählt wurde. Jede Modellkonfiguration enthält eine **Datenmodell**-Komponente. Eine neue Format-Konfiguration kann von einer bestimmten Datenmodellkonfiguration stammen (abgeleitet sein). Die erstellte Formatkonfiguration wird in der Konfigurationsstruktur als untergeordnetes Element der ursprünglichen Modellkonfiguration aufgeführt. Die erstellte Formatkonfiguration enthält eine **Format **Komponente. Die **Datenmodell**-Komponente der ursprünglichen Modellkonfiguration wird automatisch in die **Format **-Komponente der untergeordneten Formatkonfiguration als Standard-Datenquelle eingefügt. Eine ER-Konfiguration wird für Dynamics 365 for Operations-Unternehmen gemeinsam genutzt.
+Eine ER-Konfiguration ist der Wrapper einer bestimmten ER-Komponente, entweder **Datenmodell**oder **Format**. Eine Konfiguration kann unterschiedliche Versionen einer bestimmten ER-Komponente beinhalten. Jede Konfiguration wird markiert als im Besitz von einem bestimmten Konfigurationsanbieter. Die **ENTWURF**-Version einer Konfigurationskomponente kann bearbeitet werden, wenn der Besitzer einer Konfiguration als aktiver Anbieter in den ER-Einstellungen in Microsoft Dynamics 365 for Operations ausgewählt wurde. Jede Modellkonfiguration enthält eine **Datenmodell**-Komponente. Eine neue Format-Konfiguration kann von einer bestimmten Datenmodellkonfiguration stammen (abgeleitet sein). Die erstellte Formatkonfiguration wird in der Konfigurationsstruktur als untergeordnetes Element der ursprünglichen Modellkonfiguration aufgeführt. Die erstellte Formatkonfiguration enthält eine **Format**Komponente. Die **Datenmodell**-Komponente der ursprünglichen Modellkonfiguration wird automatisch in die **Format**-Komponente der untergeordneten Formatkonfiguration als Standard-Datenquelle eingefügt. Eine ER-Konfiguration wird für Dynamics 365 for Operations-Unternehmen gemeinsam genutzt.
 
 #### <a name="provider"></a>Anbieter
 
@@ -120,7 +121,7 @@ Der ER-Anbieter ist der Bezeichner einer Partei, die verwendet wird, um den Auto
 
 #### <a name="repository"></a>Repository
 
-Ein ER-Repository speichert ER-Konfigurationen. Folgende Typen von ER-Repositorys werden derzeit unterstützt: **Operations-Ressourcen **und **LCS-Projekt**. Ein **Operations-Ressourcen**-Repository bietet Zugriff auf die Konfigurationsliste, die als Teil der Dynamics 365 for Operations-Lösung von Microsoft als ER-Konfigurationsanbieter freigegeben werden. Diese Konfigurationen können in die aktuelle Dynamics 365 for Operations-Instanz importiert und für elektronische Berichterstellung verwendet werden. Sie können auch für zusätzliche Lokalisierungen/Anpassungen verwendet werden. Ein **LCS-Projekt **-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das in dem Repository-Registrierungsstadium ausgewählt wurde. ER ermöglicht das Hochladen freigegebener Konfigurationen aus der aktuellen Dynamics 365 for Operations-Instanz zu einem bestimmten **LCS-Projekt **-Repository. Sie können auch Konfigurationen aus einem bestimmten **LCS-Projekt**-Repository in die aktuelle Dynamics 365 for Operations-Instanz importerien. Erforderliche **LCS-Projekt **-Repositorys können für jeden Konfigurationsanbieter der aktuellen Dynamics 365 for Operations-Instanz einzeln erfasst werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
+Ein ER-Repository speichert ER-Konfigurationen. Folgende Typen von ER-Repositorys werden derzeit unterstützt: **Operations-Ressourcen**und **LCS-Projekt**. Ein **Operations-Ressourcen**-Repository bietet Zugriff auf die Konfigurationsliste, die als Teil der Dynamics 365 for Operations-Lösung von Microsoft als ER-Konfigurationsanbieter freigegeben werden. Diese Konfigurationen können in die aktuelle Dynamics 365 for Operations-Instanz importiert und für elektronische Berichterstellung verwendet werden. Sie können auch für zusätzliche Lokalisierungen/Anpassungen verwendet werden. Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das in dem Repository-Registrierungsstadium ausgewählt wurde. ER ermöglicht das Hochladen freigegebener Konfigurationen aus der aktuellen Dynamics 365 for Operations-Instanz zu einem bestimmten **LCS-Projekt**-Repository. Sie können auch Konfigurationen aus einem bestimmten **LCS-Projekt**-Repository in die aktuelle Dynamics 365 for Operations-Instanz importerien. Erforderliche **LCS-Projekt**-Repositorys können für jeden Konfigurationsanbieter der aktuellen Dynamics 365 for Operations-Instanz einzeln erfasst werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
 
 ## <a name="supported-scenarios"></a>Unterstützte Szenarien
 ### <a name="building-a-data-model"></a>Erstellen eines Datenmodells
@@ -150,11 +151,11 @@ ER unterstützt einen Formatdesigner, um ein Format eines bestimmten elektronisc
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-openxml-worksheet-format"></a>Erstellen einer Konfiguration, um elektronische Dokumente im OPENXML-Arbeitsblattformat zu generieren
 
-Der ER-Formatdesigner kann zum Erstellen eines bestimmten elektronischen Dokuments im OPENXML-Arbeitsblattformat verwendet werden. Die folgende Abbildung zeigt ein Beispiel des Formats dieses Typs angeben "eine Formatkonfiguration, um von OPENXML-Arbeitsblatt mit Details einer ausgewählten Zahlungserfassung zu generieren: [![Pic-ER-format-Excel](./media/pic-er-format-excel.jpg)](./media/pic-er-format-excel.jpg) Mit dem mit den Details dieses Szenarios vertraut werden, geben Sie den **ER Erstellen einer Konfiguration für Berichte in OPENXML-Format** erneut Aufgabenleitfaden wieder (Teil **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677**)-Geschäftsprozesses). Verwenden Sie die unten genannte Excel-Datei als Vorlage zum Entwerfen eines ER-Formates um den Schritt zum Importieren einer Formatvorlage dieses Handbuchs abzuschließen: [Template of Payment Report (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202)
+Der ER-Formatdesigner kann zum Erstellen eines bestimmten elektronischen Dokuments im OPENXML-Arbeitsblattformat verwendet werden. Die folgende Abbildung zeigt ein Beispiel des Formats dieses Typs angeben "eine Formatkonfiguration, um von OPENXML-Arbeitsblatt mit Details einer ausgewählten Zahlungserfassung zu generieren: [![Pic-ER-format-Excel](./media/pic-er-format-excel.jpg)](./media/pic-er-format-excel.jpg) Mit dem mit den Details dieses Szenarios vertraut werden, geben Sie den **ER Erstellen einer Konfiguration für Berichte in OPENXML-Format** erneut Aufgabenleitfaden wieder (Teil **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677**)-Geschäftsprozesses). Verwenden Sie die unten genannte Excel-Datei als Vorlage zum Entwerfen eines ER-Formates um den Schritt zum Importieren einer Formatvorlage dieses Handbuchs abzuschließen: [Vorlage Zahlungsbericht (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
 ### <a name="storing-a-designed-format-component-in-a-format-configuration"></a>Speichern einer entworfenen Formatkomponente in der Formatkonfiguration
 
-Mit ER kann ein entworfenes Format zusammen mit den konfigurierten Datenzuordnungen als Formatkonfiguration der aktuellen Dynamics 365 for Operations-Instanz gespeichert werden. Die vorherige Abbildung zeigt ein Beispiel für diesen Formatkonfigurationstyp (**BACS (UK)**, der der **Zahlungsmodell **-Konfiguration untergeordnet ist). Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Domänenspezifisches Format entwerfen** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
+Mit ER kann ein entworfenes Format zusammen mit den konfigurierten Datenzuordnungen als Formatkonfiguration der aktuellen Dynamics 365 for Operations-Instanz gespeichert werden. Die vorherige Abbildung zeigt ein Beispiel für diesen Formatkonfigurationstyp (**BACS (UK)**, der der **Zahlungsmodell**-Konfiguration untergeordnet ist). Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Domänenspezifisches Format entwerfen** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
 
 ### <a name="configuring-dynamics-365-for-operations-to-start-to-use-a-created-format-internally"></a>Dynamics 365 for Operations konfigurieren, um mit der internen Verwendung eines erstellten Formats zu beginnen
 
@@ -169,11 +170,11 @@ Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufga
 ## <a name="handling-er-components"></a>ER-Komponenten handhaben
 ### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>Veröffentlichen einer ER-Komponente in LCS, um diese extern anzubieten (Lokalisierung)
 
-Der Eigentümer einer erstellten Komponente (Modell oder Format) kann ER zum Veröffentlichen der abgeschlossenen Version dieser Komponente in LCS verwenden. HIerfür ist ein Repository des **LCS-Projekt **-Typs für den aktuellen ER-Konfigurationsanbieter erforderlich. Wenn der Status der abgeschlossenen Version einer Komponente von **ABGESCHLOSSEN** in **GEMEINSAM GENUTZT** geändert wird, wird diese Version in LCS veröffentlicht. Wenn eine Komponente in LCS veröffentlicht wurde, wird der Besitzer dieser Komponente ein Anbieter des Dienstes, und betreut diesen. Wenn beispielsweise diese Formatkomponente erstellt wurde, um ein elektronisches Dokument zu generieren, das gesetzlich obligatorisch ist (beispielsweise in Übereinstimmung mit dem Lokalisierungsszenario), wird vorausgesetzt, dass dieses Format mit den Gesetzesänderungen konform ist und der Anbieter neue Versionen der Komponente bereitstellt, sobald neue Gesetzgebungsanforderungen auftreten. Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Upload einer Konfiguration nach Lifecycle Services **(Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
+Der Eigentümer einer erstellten Komponente (Modell oder Format) kann ER zum Veröffentlichen der abgeschlossenen Version dieser Komponente in LCS verwenden. HIerfür ist ein Repository des **LCS-Projekt**-Typs für den aktuellen ER-Konfigurationsanbieter erforderlich. Wenn der Status der abgeschlossenen Version einer Komponente von **ABGESCHLOSSEN** in **GEMEINSAM GENUTZT** geändert wird, wird diese Version in LCS veröffentlicht. Wenn eine Komponente in LCS veröffentlicht wurde, wird der Besitzer dieser Komponente ein Anbieter des Dienstes, und betreut diesen. Wenn beispielsweise diese Formatkomponente erstellt wurde, um ein elektronisches Dokument zu generieren, das gesetzlich obligatorisch ist (beispielsweise in Übereinstimmung mit dem Lokalisierungsszenario), wird vorausgesetzt, dass dieses Format mit den Gesetzesänderungen konform ist und der Anbieter neue Versionen der Komponente bereitstellt, sobald neue Gesetzgebungsanforderungen auftreten. Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Upload einer Konfiguration nach Lifecycle Services**(Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
 
 ### <a name="importing-an-er-component-from-lcs-to-use-it-internally"></a>Importieren einer ER-Komponente aus LCS zur internen Nutzung
 
-Mit ER können Sie ER-Komponenten aus LCS in die aktuelle Dynamics 365 for Operations-Instanz importieren. Hierfür ist ein Repository des **LCS-Projekt **-Typs erforderlich. Wenn eine ER-Komponente aus LCS in die aktuelle Dynamics 365 for Operations-Instanz importiert wurde, wird der Besitzer der Instanz ein Nutzer des Dienstes, der vom Besitzer der importierten Komponente (Autor) bereitgestellt wird. Wenn beispielsweise diese Formatkomponente entworfen wurde, um von Dynamics 365 for Operations ein bestimmtes elektronisches Dokument in einem bestimmten Länder-/Regionsformat zu generieren (Lokalisierungsszenario), wird davon ausgegangen, dass der Nutzer des Dienstes alle Aktualisierungen dieses Formats erhält, damit dieses weiter die Gesetzgebungsanforderungen erfüllt. Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Import einer Konfiguration von Lifecycle Services** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
+Mit ER können Sie ER-Komponenten aus LCS in die aktuelle Dynamics 365 for Operations-Instanz importieren. Hierfür ist ein Repository des **LCS-Projekt**-Typs erforderlich. Wenn eine ER-Komponente aus LCS in die aktuelle Dynamics 365 for Operations-Instanz importiert wurde, wird der Besitzer der Instanz ein Nutzer des Dienstes, der vom Besitzer der importierten Komponente (Autor) bereitgestellt wird. Wenn beispielsweise diese Formatkomponente entworfen wurde, um von Dynamics 365 for Operations ein bestimmtes elektronisches Dokument in einem bestimmten Länder-/Regionsformat zu generieren (Lokalisierungsszenario), wird davon ausgegangen, dass der Nutzer des Dienstes alle Aktualisierungen dieses Formats erhält, damit dieses weiter die Gesetzgebungsanforderungen erfüllt. Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Import einer Konfiguration von Lifecycle Services** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
 
 ### <a name="building-a-format-selecting-another-format-as-a-base-customization"></a>Erstellen eines Formats, das ein anderes Format als Basis (Anpassung) auswählt
 

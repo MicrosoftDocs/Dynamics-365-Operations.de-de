@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 32cd09975861083b8940368ed53ae16e89bcd748
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 712eb9ec22f4eea4a969a7bd23b7d3728b35772e
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +51,7 @@ Bevor Sie Registrierungsnummern-IDs einrichten können, müssen Sie die Registri
 | Primär für Land | Wenn eine Partei Ländern mit einer oder mehreren Lieferverarbeitungs-Adressen zugeordnet ist und die Erfassungskennung für alle Adressen gültig ist, müssen Sie eine Hauptadresse für das Land auswählen. Sie können nur eine Kennung als primär erfassen. Definiert, wenn die Registrierungsnummer nur promär für Landadresse eingegeben werden kann. |
 
 ## <a name="assign-a-registration-type-to-a-registration-category"></a>Zuweisen eines Typs für eine Kategoriehierarchie.
-Erfassungskategorie ist die Land/Regionskennung, die für Länder/Regionen für Steuer, Zoll und insbesondere anderen Zwecken verwendet wird. Diese Kategorie definiert Validierungsregeln bestimmter Erfassungskennung (einschließlich Prüfzifferenvusw.) und unter Einbeziehung der Erfassungskennung in den unterschiedlichen Berichten. Verwenden Sie die Seite **Organisationsverwaltung** &gt; ** Globales Adressbuch** &gt; **Erfassungstypen** &gt; **Erfassungskategorien**, Erfassungstypen des bestimmtes Land zuzuweisen, um die Erfassungskategorie zu unterstützen..
+Erfassungskategorie ist die Land/Regionskennung, die für Länder/Regionen für Steuer, Zoll und insbesondere anderen Zwecken verwendet wird. Diese Kategorie definiert Validierungsregeln bestimmter Erfassungskennung (einschließlich Prüfzifferenvusw.) und unter Einbeziehung der Erfassungskennung in den unterschiedlichen Berichten. Verwenden Sie die Seite **Organisationsverwaltung** &gt; **Globales Adressbuch** &gt; **Erfassungstypen** &gt; **Erfassungskategorien**, Erfassungstypen des bestimmtes Land zuzuweisen, um die Erfassungskategorie zu unterstützen..
 
 | Feld            | Beschreibung|
 |-----------------------|----------------|
@@ -59,7 +60,7 @@ Erfassungskategorie ist die Land/Regionskennung, die für Länder/Regionen für 
 | Registrierungskategorie | …Die eindeutige Erfassungskennung genehmigt für die Verwendung im Land. Die vollständige Liste der unterstütztem in den Kategorien AX7.1 befindet sich unten. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Geben die Erfassung-ID für globale Adressbuchdatensätze ein
-Das globale Adressbuch (GAB) in Microsoft Dynamics 365 or Operations enthält konsolidierte Adressinformationen für Debitoren, Kreditoren, Kontakte, Geschäftsbeziehungen und juristischen Personen. Weitere Informationen finden Sie unter [Globales Adressbuch](/dynamics365/operations/organization-administration/overview-global-address-book). Die Parteidatensätze, die im globalen Adressbuch gespeichert sind, können einen oder mehrere Adressdatensätze enthalten. Diese Adressen werden für verschiedene Zwecke verwendet, z. B. für Rechnungsstellung oder Lieferung. Sie können Erfassungs-IDs für Adressinformationen für Debitoren, Kreditoren, Arbeitskräfte und juristische Personen einrichten. Suchen Sie den Datensatz für die Partei (juristische Personen, Kreditoren, Debitoren, Arbeitskraft) für die Sie die Registerkennung eingeben möchten, und klicken dann **Erfassungs-IDs ** in den Formularen, die mit der Partei, juristischen Personen, Kreditoren, Debitoren, Arbeitskraft verknüpft ist, um die Seite **Adresse verwalten** zu öffnen. Auf der **Steuerregistrierung** Registerkarte klicken Sie **Hinzufüge** und geben folgende Informationen zur Erfassungs-ID ein
+Das globale Adressbuch (GAB) in Microsoft Dynamics 365 or Operations enthält konsolidierte Adressinformationen für Debitoren, Kreditoren, Kontakte, Geschäftsbeziehungen und juristischen Personen. Weitere Informationen finden Sie unter [Globales Adressbuch](/dynamics365/operations/organization-administration/overview-global-address-book). Die Parteidatensätze, die im globalen Adressbuch gespeichert sind, können einen oder mehrere Adressdatensätze enthalten. Diese Adressen werden für verschiedene Zwecke verwendet, z. B. für Rechnungsstellung oder Lieferung. Sie können Erfassungs-IDs für Adressinformationen für Debitoren, Kreditoren, Arbeitskräfte und juristische Personen einrichten. Suchen Sie den Datensatz für die Partei (juristische Personen, Kreditoren, Debitoren, Arbeitskraft) für die Sie die Registerkennung eingeben möchten, und klicken dann **Erfassungs-IDs** in den Formularen, die mit der Partei, juristischen Personen, Kreditoren, Debitoren, Arbeitskraft verknüpft ist, um die Seite **Adresse verwalten** zu öffnen. Auf der **Steuerregistrierung** Registerkarte klicken Sie **Hinzufüge** und geben folgende Informationen zur Erfassungs-ID ein
 
 |Feld                |Beschreibung                                                |
 |---------------------|-----------------------------------------------------------|
@@ -76,7 +77,7 @@ Das globale Adressbuch (GAB) in Microsoft Dynamics 365 or Operations enthält ko
 > Die Umsatzsteuernummer der juristischen Person, Kreditor, Debitor kann von der Registrations-IDs ausgewählt werden, die der MwSt.-ID zugeordnet sind und für die Partei eingegeben wurden.
 
 ## <a name="search-for-records-by-registration-id"></a>Suche für Datensätze nach Erfassungskennung
-Suche für Parteidatensätze auf einer Erfassungskennung ist in die Steuerformulare verfügbar, die für die Partei, zur juristischen Person, den Kreditor, z Debitor und der Arbeitskraft zugeordnet werden. Klicken Sie auf **Erfassung ID-Suche**, um die Seite** Erfassung ID-Suchkriterien** zu öffnen. Definieren Sie die Suchkriterien und klicken Sie auf **Suchen**. Im System werden die ausgewählten Datensätze aus dem globalen Adressbuch zugeordnet und die Typen des Parteidatensatzes angezeigt.
+Suche für Parteidatensätze auf einer Erfassungskennung ist in die Steuerformulare verfügbar, die für die Partei, zur juristischen Person, den Kreditor, z Debitor und der Arbeitskraft zugeordnet werden. Klicken Sie auf **Erfassung ID-Suche**, um die Seite**Erfassung ID-Suchkriterien** zu öffnen. Definieren Sie die Suchkriterien und klicken Sie auf **Suchen**. Im System werden die ausgewählten Datensätze aus dem globalen Adressbuch zugeordnet und die Typen des Parteidatensatzes angezeigt.
 
 ## <a name="supported-registration-categories"></a>Unterstützte Registrierungskategorien
 In der folgenden Tabelle werden die unterstützten Erfassungstypen in Dynamics 365 for Operations aufgeführt. Wenn Sie mit den Microsoft Dynamics AX 2012-Feldern für IDs Erfassung vertraut sind, ordnet diese Tabelle auch diese Felder in Dynamics 365 for Operations Registrationskategorien zu.
