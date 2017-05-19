@@ -17,10 +17,11 @@ ms.search.region: Austria
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: bec019d218d80ba059d5a1c232072f46b1ae3ee2
-ms.openlocfilehash: bf323371c79ab5b2b6b4e829057ddad0b590c043
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b7ed2f61f5593282b99bf141f4538193cbec13f0
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---

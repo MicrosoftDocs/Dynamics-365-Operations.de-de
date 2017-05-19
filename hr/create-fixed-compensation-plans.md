@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: bbf08a9620dbc8ad928fe40a3ae5e9b2a2fcb373
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 77e3dc8e8d7b81a366bdf3a164e38c394c90e15f
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -59,7 +60,7 @@ Sie können den Plan für feste Vergütung so anlegen, dass alle von Ihnen konfi
 
 Über die Einstellung **Außerhalb des zulässigen Bereichs** können Sie angeben, wie strikt sichergestellt werden soll, dass Vergütungsbeträge zwischen dem Mindest- und dem Höchstbetrag liegen. Durch die Toleranzeinstellung **Hart** wird durchgesetzt, dass die Vergütung innerhalb des Bereichs liegt, der für eine bestimmte Stufe definiert wurde. Wenn Sie als Toleranz die Option **Weich** festlegen, werden Sie gewarnt, wenn der Vergütungsbetrag außerhalb des Bereichs liegt. Allerdings können Sie den Vorgang fortsetzen. Wenn Sie als Toleranz **Keine** festlegen, können Sie jeden Vergütungsbetrag für einen Mitarbeiter eingeben, ohne dass eine Warn- oder Fehlermeldung angezeigt wird. 
 
-Über die **Einstellungsregel** können Sie festlegen, ob alle Mitarbeiter unabhängig von ihrem Einstellungsdatum die gleiche Erhöhung erhalten sollen (**Einstellungsregel** = **Keine**) oder ob Mitarbeiter basierend auf der Länge ihrer Beschäftigungsdauer in diesem Zyklus einen Prozentsatz der Prämie erhalten sollen (**Einstellungsregel **  = **Prozent**). 
+Über die **Einstellungsregel** können Sie festlegen, ob alle Mitarbeiter unabhängig von ihrem Einstellungsdatum die gleiche Erhöhung erhalten sollen (**Einstellungsregel** = **Keine**) oder ob Mitarbeiter basierend auf der Länge ihrer Beschäftigungsdauer in diesem Zyklus einen Prozentsatz der Prämie erhalten sollen (**Einstellungsregel**  = **Prozent**). 
 
 Eine **Bereichsauslastungsmatrix** ist hilfreich, wenn Sie entweder den Zeitraum verkürzen möchten, nach dem Mitarbeiter den Mittelwert ihres Bereichs erreichen, oder wenn Sie den Zeitraum verlängern möchten, nach dem Mitarbeiter den maximalen Referenzpunkt im Bereich erreichen können. Beispiel: Sie möchten Mitarbeitern, die in den unteren 25 Prozent ihres jeweiligen Bereichs liegen, 110 Prozent ihrer Erfolgsprämie zuteilen, während Mitarbeiter, die in den obersten 25 Prozent ihres Bereichs liegen, nur 80 Prozent ihrer Erfolgsprämie erhalten sollen, damit sie nicht so schnell das Maximum erreichen. 
 

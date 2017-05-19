@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 60abaa69debd891b2fe2dd98184c0dab50b0bf9f
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 26ad7fb0e9371b8e1d45d61f2348241c6aca16b9
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/29/2017
 
 Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode. Standardauftragseinstellungen werden verwendet, wenn Bestellungen, Aufträge, Umlagerungsaufträge, Bestandsjournale erstellt werden, sowie durch den Produktprogrammplan für die Generierung geplanter Aufträge. Standardauftragseinstellungen können artikelspezifisch, standortpsezifsch, produktvariantenspezfisch oder produktdimensionsspezifisch sein.
 
-Sie können die Standardauftragseinstellungen auf der Seite **Standardauftragseinstellungen** definieren. Um diese Seite zu öffnen, wechseln Sie zu **Produktinformationsverwaltung ** &gt; **Produkte** &gt; **Freigegebene Produkte** &gt; wählen Sie ein freigegebenes Produkt aus im Aktionsbereich &gt; **Plan** oder ****Bestand verwalten**** &gt; **Auftragseinstellungen** &gt; S**tandardauftragseinstellungen.**.
+Sie können die Standardauftragseinstellungen auf der Seite **Standardauftragseinstellungen** definieren. Um diese Seite zu öffnen, wechseln Sie zu **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte** &gt; wählen Sie ein freigegebenes Produkt aus im Aktionsbereich &gt; **Plan** oder ****Bestand verwalten**** &gt; **Auftragseinstellungen** &gt; S**tandardauftragseinstellungen.**.
 
 ## <a name="default-order-settings"></a>Standardauftragseinstellungen
 Es gibt drei Typen von Standardauftragseinstellungen für Einkäufe, Verkäufe und den Bestand. Die Standardauftragseinstellungen für Einkäufe werden verwendet, wenn Folgendes erstellt wird:
@@ -90,7 +91,7 @@ Die Standardauftrags-Einstellungsregeln haben Ränge. Je höher der Rang, desto 
 
 ### <a name="default-order-settings-for-released-products"></a>Standardmäßige Auftragseinstellungen für freigegebene Produkte
 
-Für eindeutig identifizierbare, freigegebene Produkte können Sie allgemeine Auftragseinstellungen oder standortspezifische Auftragseinstellungen definieren. Die allgemeinen Auftragseinstellungen haben immer den Rang null. Wenn Sie neue Verkaufs-, Einkaufs- und Lagerauftragseinstellungen zusammen zur gleichen Zeit einrichten, ist es zu empfehlen, dass Sie die **Detailansicht** auf der Seite **Standardauftragseinstellungen **verwenden. Um zur Detailansicht zu wechseln, gehen Sie zum Aktionsbereich **Optionen** &gt; **Seitenoptionen** &gt; **Ansicht wechseln** &gt; **Detailansicht**.
+Für eindeutig identifizierbare, freigegebene Produkte können Sie allgemeine Auftragseinstellungen oder standortspezifische Auftragseinstellungen definieren. Die allgemeinen Auftragseinstellungen haben immer den Rang null. Wenn Sie neue Verkaufs-, Einkaufs- und Lagerauftragseinstellungen zusammen zur gleichen Zeit einrichten, ist es zu empfehlen, dass Sie die **Detailansicht** auf der Seite **Standardauftragseinstellungen**verwenden. Um zur Detailansicht zu wechseln, gehen Sie zum Aktionsbereich **Optionen** &gt; **Seitenoptionen** &gt; **Ansicht wechseln** &gt; **Detailansicht**.
 
 ### <a name="site-specific-order-settings"></a>Standortspezifische Auftragseinstellungen
 
@@ -149,9 +150,9 @@ Als allgemeiner Leitfaden erhalten spezifische Regeln und Regeln für Dimensione
 
 Die Regel mit Rang null dient als Sicherheitsnetz. Wenn keine anderen Regeln betroffen sind, dann werden die Standardauftragseinstellungen von Regel null verwendet. 
 
-Da die Rangnummer so wichtig ist, befinden sich im Aktionsbereich **Standardauftragseinstellungen **Funktionen, um eine Regel nach oben oder unten zu verschieben und um die Regeln neu zu nummerieren, sodass sie immer in Abstufungen von 10 sind. 
+Da die Rangnummer so wichtig ist, befinden sich im Aktionsbereich **Standardauftragseinstellungen**Funktionen, um eine Regel nach oben oder unten zu verschieben und um die Regeln neu zu nummerieren, sodass sie immer in Abstufungen von 10 sind. 
 
-Die Anzahl von Regeln, die für ein freigegebenes Produkt erstellt werden, sind möglicherweise viele. Um einen besseren Eindruck davon zu erhalten, was jede Regel überschreibt und warum es notwendig ist, empfehlen wir Ihnen, die **Rasteransicht** auf der Seite** Standardauftragseinstellungen** zu verwenden. Sie können die Rasteransicht aktivieren, indem Sie zum Aktionsbereich **Optionen ** &gt; **Seitenoptionen **&gt; **Ansicht wechseln** &gt; **Rasteransicht** wechseln. Die Anzahl der im Raster angezeigten Spalten könnte ziemlich bedeutsam sein, insbesondere für die Registerkarten "Vertrieb" und "Bestand". Um die Anzahl der im Raster angezeigten Spalten einzuschränken, können Gruppen von Spalten ausgeblendet oder angezeigt werden, indem die Schaltflächen im Menü** Standardauftragseinstellungen** &gt; **Spaltenanzeige ** verwendet werden.
+Die Anzahl von Regeln, die für ein freigegebenes Produkt erstellt werden, sind möglicherweise viele. Um einen besseren Eindruck davon zu erhalten, was jede Regel überschreibt und warum es notwendig ist, empfehlen wir Ihnen, die **Rasteransicht** auf der Seite**Standardauftragseinstellungen** zu verwenden. Sie können die Rasteransicht aktivieren, indem Sie zum Aktionsbereich **Optionen** &gt; **Seitenoptionen**&gt; **Ansicht wechseln** &gt; **Rasteransicht** wechseln. Die Anzahl der im Raster angezeigten Spalten könnte ziemlich bedeutsam sein, insbesondere für die Registerkarten "Vertrieb" und "Bestand". Um die Anzahl der im Raster angezeigten Spalten einzuschränken, können Gruppen von Spalten ausgeblendet oder angezeigt werden, indem die Schaltflächen im Menü**Standardauftragseinstellungen** &gt; **Spaltenanzeige** verwendet werden.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Spezifische Auftragseinstellungen für freigegebene Produktvariante
 

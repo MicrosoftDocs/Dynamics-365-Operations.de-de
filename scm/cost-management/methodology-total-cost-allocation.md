@@ -3,7 +3,7 @@ title: Die Gesamtkostenzuweisungsmethode.
 description: "Dieser Artikel zeigt die Richtlinien für die Verwendung der Gesamtkostenzuteilung auf. Gesamtkostenzuteilung ist eine Methode zur Berechnung der Kosten zwischen dem Hauptformelartikel für einen Chargenauftrag und den Kuppelprodukten, die für die Formel definiert werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c26dcc5a8caa461bce90f931bb5c584f1816526b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a5c5788a3145dd6cabeed097d25a03a243577b8f
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="total-cost-allocation-method"></a>Die Gesamtkostenzuweisungsmethode.
+
+[!include[banner](../includes/banner.md)]
+
 
 Dieser Artikel zeigt die Richtlinien für die Verwendung der Gesamtkostenzuteilung auf. Gesamtkostenzuteilung ist eine Methode zur Berechnung der Kosten zwischen dem Hauptformelartikel für einen Chargenauftrag und den Kuppelprodukten, die für die Formel definiert werden.
 
@@ -36,6 +40,11 @@ Gesamtkostenzuteilung (TCA) ist eine Methode zur Berechnung der Kosten zwischen 
 Im Folgenden sehen Sie einige der Richtlinien für die Verwendung von Gesamtkostenzuweisungen für Kuppelprodukte:
 
 -   Wenn Sie den Schieberegler **Gesamtkostenzuweisung** auf **Ja** für eine Formelversion festlegen, muss der Einstandspreis für Kuppelprodukte mehr als 0 (null) betragen. Der Wert kann aus der Version der aktiven Kosten des selben Standorts oder für den ersten Standort einer Formel, die nicht standortspezifisch ist, abgerufen werden. Diese Bedingung wird geprüft, wenn die Formel genehmigt wurde.
+
+    -   Sie müssen die Kostenzuteilungsprozentsätze für Kuppelprodukte nicht manuell eingeben. Stattdessen erstellt das System automatisch den Kostenzuweisungsprozentsatz als Durchschnitt der aktiven Kosten von Kuppelprodukten. 
+    -   Sie müssen die Standardkosten für nichtstandardisierte Kostenfaktoren, die Kuppelprodukte sind, nicht eingeben. Es gibt zwei Typen von Kostenversionen im System: Standardkosten und geplante Kosten 
+    -   Wenn ein Artikel nicht von der Standardkostenbewertungsmethode bewertet wird, empfehlen wir Ihnen, einen aktiven Kostenpreis in der geplanten Version zu berücksichtigen. Dieser Preis wird für die Vorkalkulation verwendet, beispielsweise für Stücklistenkalkulation,  Produktionskostenvorkalkulation und Herstellkostenkalkulation, und Fallback-Preis im Lagerbewertungsprozess. 
+
 -   Wenn Sie den Schieberegler **Gesamtkostenzuweisung** auf **Ja** für die Formelversion festlegen und die folgenden Bedingungen zutreffen, ist die Methode der Kostenzuweisung **Gesamtkostenzuweisung**, und der Prozentsatz der Kostenzuweisung wird nicht geändert:
     -   Sie haben Kuppelprodukte hinzugefügt.
     -   Sie haben eine andere Methode der Kostenzuweisung für die Kuppelprodukte verwendet.
@@ -53,6 +62,8 @@ Das Feld **Nebenproduktkostenzuweisung** auf der Seite **Kuppelprodukte** ist ei
 -   **Prozent** ─ Der Einstandsbetrag wird als Prozentsatz der Gesamtkosten der Rohmaterialien berechnet, die bei der Produktion verbraucht werden. Der Prozentsatz, der für die Berechnung der Quellensteuer verwendet wird, wird im Feld eingegeben.
 -   **Pro Serie** ─ Der Einstandsbetrag wird als Betrag pro Standardchargengröße des Produktionsauftrags berechnet. Dieser Betrag ist unabhängig von der gemeldeten Menge in der Produktion. Der Betrag, der für die Berechnung verwendet wird, wird im Feld eingegeben.
 -   **Nach Menge** ─ Der Einstandsbetrag wird als Betrag pro gemeldeter Menge des Formelartikels in der Produktion berechnet. Der Betrag, der für die Berechnung verwendet wird, wird im Feld eingegeben.
+
+
 
 
 

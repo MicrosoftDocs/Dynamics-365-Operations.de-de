@@ -3,7 +3,7 @@ title: "Funktionen des Stücklisten-Designers"
 description: "In diesem Artikel wird beschrieben, wie Sie die Stücklisten-Designer-Seite verwenden können, um Strukturdarstellungen für Stücklisten (BOMs) zu entwerfen und anzuwenden. Sie können verschiedene Konfigurationen auswählen und festlegen, welche Informationen in den Positionen der Struktur enthalten sein sollen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-08 21 - 09 - 22
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2c98039c9fa8179408394f9f66b9fca0f8cad3fe
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ff482c183276a99a3c9a632d41d9121bf77befbf
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="bom-designer-functionality"></a>Funktionen des Stücklisten-Designers
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Artikel wird beschrieben, wie Sie die Stücklisten-Designer-Seite verwenden können, um Strukturdarstellungen für Stücklisten (BOMs) zu entwerfen und anzuwenden. Sie können verschiedene Konfigurationen auswählen und festlegen, welche Informationen in den Positionen der Struktur enthalten sein sollen.
 
@@ -95,7 +99,7 @@ Der Filter, der für die Stückliste und Arbeitsplan angewendet wird, wird im Ko
 Wenn Sie den Stücklisten-Designer verwenden, um Stücklisten zu prüfen oder zu bearbeiten, die aus einer oder mehreren Ebenen von Phantomen bestehen, umfasst der Arbeitsplan, der dem obersten Artikel zugeordnet ist, in der Regel die vollständige Stücklistenhierarchie. Um die Übersicht zu vereinfachen, können Sie den Arbeitsplan der obersten Ebene sperren. Klicken Sie dazu auf **Anzeige**&gt; **Arbeitsplan sperren**. Wenn Sie den Arbeitsplan entsperren möchten, klicken Sie auf **Ansicht** &gt; **Arbeitsplan entsperren**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Stücklisten und Stücklistenpositionen hinzufügen und bearbeiten
-Verwenden Sie die Funktionen **Stücklistenpositionen** oder **Stücklisten**funktionen, um Stücklistenpositionen oder die Stücklisten zu ändern. Wenn Sie einen Knoten in der Struktur auswählen, bestimmt der Typ des Knotens die Funktionen, die zur Verfügung stehen.
+Verwenden Sie die Funktionen **Stücklistenpositionen**oder **Stückliste**, um Stücklistenpositionen oder die Stückliste zu ändern. Wenn Sie einen Knoten in der Struktur auswählen, bestimmt der Typ des Knotens die Funktionen, die zur Verfügung stehen.
 
 | Funktion                            | Beschreibung                                                                                               | Knotentyp und Bedingungen                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -115,6 +119,8 @@ Klicken Sie auf **Einstellungen**, um die Informationen anzupassen, die in der S
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Stückliste         | Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die in der Strukturansicht angezeigt werden sollen. Die ausgewählten Kriterien werden im Stücklisten-Designer am unteren Rand der beiden Registerkarten angezeigt. |
 | Route       | Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die für die Arbeitspläne angezeigt werden sollen.                                                                                    |
+
+
 
 
 

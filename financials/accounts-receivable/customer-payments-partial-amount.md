@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: 7025072cd29aac4ceb13b5594c3e321350777cf1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11fa0f0afa7ab400c87d6e7558292385ae80c8b2
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,10 +52,10 @@ Es kann beispielsweise sein, dass Sie ein Skonto in Höhe von 2 % gewährt wird,
 ## <a name="credit-notes-with-discounts"></a>Gutschriften mit Rabatten
 Es kann auch vorkommen, dass Debitoren einige in einer Rechnung enthaltenen Artikel zurückgeben und dafür eine Gutschrift erhalten. Wenn ein Skonto in der ursprünglichen Rechnung stammt, sollte die Gutschrift für den Debitor ein Teil des Skontos sein, das vom Debitor in Anspruch genommen wurde. Wenn die Option **Skonti für Gutschriften berechnen** auf **Ja** auf der Seite **Debitorenkontenparameter** festgelegt ist, wird der Rabatt für die Gutschrift automatisch berechnet. 
 
-Es kann beispielsweise sein, dass Sie in den Zahlungsbedingungen einen Rabatt in Höhe von 2 % gewährt haben, wenn die Rechnung innerhalb von 10 Tagen nach der Ausstellung beglichen wird. Eine Rechnung über 100,00 wurde gebucht, und der Debitor hat das Skonto in Anspruch genommen. Wenn der Debitor die Waren zurückgibt und Sie eine Gutschrift ausstellen, können Sie die Gutschrift von -100,00 Euro eingeben. Wenn Sie die Gutschrift auf der Seite **Offene Buchungen ausgleichen** anzeigen, wird im Feld **Auszugleichender Betrag**** 98,00** angezeigt, und **-2,00** wird im Feld **Skontobetrag** angezeigt. Der Skontobetrag wird auf ein Skontokonto gebucht.
+Es kann beispielsweise sein, dass Sie in den Zahlungsbedingungen einen Rabatt in Höhe von 2 % gewährt haben, wenn die Rechnung innerhalb von 10 Tagen nach der Ausstellung beglichen wird. Eine Rechnung über 100,00 wurde gebucht, und der Debitor hat das Skonto in Anspruch genommen. Wenn der Debitor die Waren zurückgibt und Sie eine Gutschrift ausstellen, können Sie die Gutschrift von -100,00 Euro eingeben. Wenn Sie die Gutschrift auf der Seite **Offene Buchungen ausgleichen** anzeigen, wird im Feld **Auszugleichender Betrag****98,00** angezeigt, und **-2,00** wird im Feld **Skontobetrag** angezeigt. Der Skontobetrag wird auf ein Skontokonto gebucht.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Überzahlungs-/Unterzahlungsbeträge
-Wenn Kunden eine Zahlung leisten, muss möglicherweise ein sehr kleiner Betrag noch ausgeglichen werden. Beispiel: Sie stellen dem Debitor eine Rechnung über 1.000,00 Euro aus, und der Debitor bezahlt davon 999,90 Euro. Falls der verbleibende Betrag niedriger als der Betrag ist, der für Überzahlungen oder Unterzahlungen auf der Seite** Debitorenparameter** angegeben ist, wird die Differenz automatisch zu einem Sachkonto für Über-/Unterzahlungen gebucht.
+Wenn Kunden eine Zahlung leisten, muss möglicherweise ein sehr kleiner Betrag noch ausgeglichen werden. Beispiel: Sie stellen dem Debitor eine Rechnung über 1.000,00 Euro aus, und der Debitor bezahlt davon 999,90 Euro. Falls der verbleibende Betrag niedriger als der Betrag ist, der für Überzahlungen oder Unterzahlungen auf der Seite**Debitorenparameter** angegeben ist, wird die Differenz automatisch zu einem Sachkonto für Über-/Unterzahlungen gebucht.
 
 ## <a name="full-settlement"></a>Vollständiger Ausgleich
 Debitoren machen möglicherweise eine Teilzahlung, in der der verbleibende Betrag nicht bezahlt wird, jedoch größer ist als der Unterzahlungsbetrag, der auf der **Kreditorenparameter**-Seite angegeben wird. Wenn Sie die Rechnung markieren möchten, z. B. vollständig ausgeglichen, können Sie die **Vollständigen Ausgleich**-Option auf der Seite **Bankbuchung** verwenden. (Sie können die vollständigen Ausgleich aktivieren, indem Sie einen Konfigurationsschlüssel verwendet wird). Beispielsweise wird eine Rechnung über 1.000,00 gebucht, und der Debitor leistet eine Zahlung in Höhe von 990,00. Sie sind damit einverstanden, dass der Debitor die verbleibenden 10.00 nicht zahlen muss. Nachdem Sie die Rechnung für den Ausgleich markieren, können Sie auch **Kein vollständiger Ausgleich** markieren **. Die Rechnung dann wird dann als vollständig ausgeglichen angesehen. Die Differenz von 10,00 Euro wird als zusätzlicher Skontobetrag auf ein Skontokonto gebucht.

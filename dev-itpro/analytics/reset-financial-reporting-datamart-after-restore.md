@@ -1,9 +1,9 @@
 ---
 title: "Finanzberichts-Data Mart noch Wiederherstellung der Datenbank Zurücksetzen"
 description: "In diesem Thema wird beschrieben, wie Finanzberichts-Data Mart zurückgesetzt wird, nachdem die Microsoft Dynamics 365 for Operations-Datenbank wiederhergestellt wurde."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-08 16 - 20 - 13
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3967cbb869fbb23d5d7716f619e4c22b4a273921
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d4ce390c62cbfb1f693410b004aa296c0ed75eb2
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Finanzberichts-Data Mart noch Wiederherstellung der Datenbank Zurücksetzen
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird beschrieben, wie Finanzberichts-Data Mart zurückgesetzt wird, nachdem die Microsoft Dynamics 365 for Operations-Datenbank wiederhergestellt wurde. 
 
@@ -43,7 +47,11 @@ Zuerst exportieren Sie die Berichtsdesigns im Berichts-Designer, und zwar mithil
 5.  Geben Sie einen Dateinamen eingeben und einen sicheren Ort aus, an dem Sie die exportierten Berichtsdefinitionen speichern möchten.
 6.  Klicken Sie auf **Speichern**.
 
-Die Datei kann an einem sicheren Speicherort kopiert oder hochgeladen werden und in einer anderen Umgebung, in einer anderen der Zeitpunkt importiert werden können. Informationen zur Verwendung eines Microsoft Azure Storage-Kontos können gefunden werden in [Daten mit dem AzCopy-Kommandozeilenutility übertragen](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Hinweis:** Microsoft stellt ein Speicherkonto nicht im Rahmen Ihrer Dynamics 365 for Operations Vereinbarung bereit. Sie müssen entweder ein Speicherkonto kaufen oder ein Speicherkonto von einem separaten Azure-Abonnement verwenden. **Wichtig:** Berücksichtigen Sie das Verhalten des D-Laufwerks von Azure Virtual Machines. Speichern Sie nicht die exportierten Bausteingruppen dort dauerhaft. Weitere Informationen zu temporären, finden Sie unter [Informationen zum temporären Laufwerk in Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+Die Datei kann an einem sicheren Speicherort kopiert oder hochgeladen werden und in einer anderen Umgebung, in einer anderen der Zeitpunkt importiert werden können. Informationen zur Verwendung eines Microsoft Azure Storage-Kontos können gefunden werden in [Daten mit dem AzCopy-Kommandozeilenutility übertragen](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
+> [!NOTE]
+> Microsoft stellt kein Speicherkonto im Rahmen der Dynamics 365 for Operations Vereinbarung bereit. Sie müssen entweder ein Speicherkonto kaufen oder ein Speicherkonto von einem separaten Azure-Abonnement verwenden. 
+> [!WARNING]
+> Wichtig: Berücksichtigen Sie das Verhalten des D-Laufwerks von Azure Virtual Machines. Speichern Sie nicht die exportierten Bausteingruppen dort dauerhaft. Weitere Informationen zu temporären, finden Sie unter [Informationen zum temporären Laufwerk in Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ## <a name="stop-services"></a>Services anhalten
 Verwenden den Remotedesktop, um sich mit allen Computern in der Umgebung zu verbinden und die folgenden Windows-Dienste zu beenden, indem Sie services.msc verwenden:
@@ -57,7 +65,7 @@ Diese Dienste haben offene Verbindungen zur Dynamics 365 for Operations-Datenban
 ## <a name="reset"></a>Zurücksetzen
 #### <a name="locate-the-latest-dataupgradezip-package"></a>Suchen Sie das letzte DataUpgrade.zip-Paket
 
-Suchen Sie das letzte DataUpgrade.zip-Paket mithilfe Anweisungen aus [Download the DataUpgrade.zip script](..\migration-upgrade\upgrade-data-to-latest-update.md). Die Anweisungen zeigen, wie Sie die korrekte Version des Datenaktualisierungspakets für Ihre Umgebung lokalisieren.
+Suchen Sie das letzte DataUpgrade.zip-Paket mithilfe Anweisungen aus [Skript DataUpgrade.zip herunterladen](..\migration-upgrade\upgrade-data-to-latest-update.md). Die Anweisungen zeigen, wie Sie die korrekte Version des Datenaktualisierungspakets für Ihre Umgebung lokalisieren.
 
 #### <a name="execute-scripts-against-dynamics-365-for-operations-database"></a>Ausführen von Skripts für die Dynamics 365 for Operations-Datenbank
 
@@ -96,7 +104,9 @@ Verwenden Sie services.msc, um die Services neu zu starten, die Sie eben beendet
 Importieren Sie die Berichtsdesigns im Berichts-Designer, und zwar mithilfe der Datei, die während des Exports erstellt wird:
 
 1.  Wechseln Sie im Berichts-Designer zu **Unternehmen** &gt; **Bausteingruppen**.
-2.  Wählen Sie die Bausteingruppe aus, die exportiert werden soll, und klicken Sie **Export**. **Hinweis:** Für Dynamics 365 for Operations wird nur eine Bausteingruppe, unterstützt (**Standard**).
+2.  Wählen Sie die Bausteingruppe aus, die exportiert werden soll, und klicken Sie **Export**. 
+    > [!NOTE]
+    > Für Dynamics 365 for Operations wird nur eine Bausteingruppe, unterstützt **Standard**.
 3.  Wählen Sie den **Standard**-Baustein und klicken Sie auf **Importieren**.
 4.  Wählen Sie die Datei aus, welche die exportierten Berichtsdefinitionen enthält und klicken Sie auf **Öffnen**.
 5.  Wählen Sie im Dialogfeld Importieren die Berichtsdefinitionen aus, die importiert werden soll:
@@ -104,6 +114,8 @@ Importieren Sie die Berichtsdesigns im Berichts-Designer, und zwar mithilfe der 
     -   Um bestimmte Berichte, Zeilen, Spalten, Baumstrukturen oder Dimensionssätze zu importieren, wählen Sie die Berichte, Zeilen, Spalten, Baumstrukturen oder Dimensionssätze aus, die importiert werden sollen.
 
 6.  Klicken Sie auf **Importieren**.
+
+
 
 
 

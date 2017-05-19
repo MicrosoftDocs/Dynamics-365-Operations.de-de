@@ -3,7 +3,7 @@ title: "Kaban-Einzelvorgang für Lean-Manufacturing"
 description: "Dieser Artikel enthält Informationen zum Sichtsteuerelement zur Kanban-Einzelvorgangs-Planung und zu unterschiedlichen Methoden, um Kanban-Einzelvorgänge zu planen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 02 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,22 +18,28 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 062cbbc8a4fd3b4dc738f24ee0606a3741736377
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 019974b96985748c82641b73e40a3131d5b27232
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kaban-Einzelvorgang für Lean-Manufacturing
 
+[!include[banner](../includes/banner.md)]
+
+
 Dieser Artikel enthält Informationen zum Sichtsteuerelement zur Kanban-Einzelvorgangs-Planung und zu unterschiedlichen Methoden, um Kanban-Einzelvorgänge zu planen.  
 
 Die **Kanban-Feinterminierung**-Seite bietet die visuelle Steuerung der Zeitpläne von Lean Manufacturing-Arbeitsgruppen. Sie enthält eine Übersicht aller Kanban-Einzelvorgänge und bietet mehrere Filterfunktionen. Von dieser Seite können Sie zu allen anderen Seiten wechseln, die zur Kanban-Konfiguration und -Ausführung zugeordnet sind.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Automatische Planung von Kanban-Einzelvorgängen
-Planung kann automatisch eingeräumt werden beim Festlegen wurde dem **Automatische Planungsmenge** Parameter auf der Kanban-Regel. Wenn Sie festgelegt **Automatische Planungsmenge** auf **1**, umgehend jeder Kanban-Einzelvorgang geplant werden, wenn dieser erstellt hat. Das Ergebnis ist eine Reihe von "Was zuerst abgerufen wird, kommt zuerst dran"-Vorgängen. Wenn Sie **Automatische Planungsmenge** auf einen Wert festlegen, der größer ist als 1, werden Kanban-Einzelvorgänge gruppiert, bevor sie geplant werden. So können Kanban-Größen unter die tatsächlichen wirtschaftlichen Chargengrößen reduziert werden. Beispielsweise ist die wirtschaftliche Chargengröße für einen bestimmten Artikel oder Artikelfamilie (30). Anstatt Kanbans, erstellen, die die Fertigproduktmenge verwenden, 30, können Sie die Kanban-Regel, dass sie eine Produktmenge von 10 und besitzt den **Automatische Planungsmenge** Wert von **3** konfigurieren. Obwohl die automatische Planung die Kanban-Einzelvorgänge für die Arbeitsgruppe nur plant, wenn drei ungeplante Einzelvorgänge vorhanden sind, wird dem Terminplaner und dem Vorgesetzten für Zeiterfassung/BDE vollständig angezeigt, dass zwei ungeplante Einzelvorgänge möglicherweise die Ausführung erwarten. Der Terminplaner oder Vorgesetzte für Zeiterfassung/BDE kann dann diese beiden Einzelvorgänge in die Produktion übernehmen, indem sie manuell geplant oder zusätzlicher Kanbans erstellt werden.
+Planung kann automatisch eingeräumt werden beim Festlegen wurde dem **Automatische Planungsmenge** Parameter auf der Kanban-Regel. Wenn Sie festgelegt **Automatische Planungsmenge** auf **1**, umgehend jeder Kanban-Einzelvorgang geplant werden, wenn dieser erstellt hat. Das Ergebnis ist eine Reihe von "Was zuerst abgerufen wird, kommt zuerst dran"-Vorgängen. Wenn Sie **Automatische Planungsmenge** auf einen Wert festlegen, der größer ist als 1, werden Kanban-Einzelvorgänge gruppiert, bevor sie geplant werden. 
+
+So können Kanban-Größen unter die tatsächlichen wirtschaftlichen Chargengrößen reduziert werden. Beispielsweise ist die wirtschaftliche Chargengröße für einen bestimmten Artikel oder Artikelfamilie (30). Anstatt Kanbans zu erstellen, die die Fertigproduktmenge 30 verwenden, können Sie die Kanban-Regel konfigurieren, so dass Sie eine Produktmenge von 10 und einen **Automatischen Planungsmengen**-Wert von **3** haben. Obwohl die automatische Planung die Kanban-Einzelvorgänge für die Arbeitsgruppe nur plant, wenn drei ungeplante Einzelvorgänge vorhanden sind, wird dem Terminplaner und dem Vorgesetzten für Zeiterfassung/BDE vollständig angezeigt, dass zwei ungeplante Einzelvorgänge möglicherweise die Ausführung erwarten. Der Terminplaner oder Vorgesetzte für Zeiterfassung/BDE kann dann diese beiden Einzelvorgänge in die Produktion übernehmen, indem sie manuell geplant oder zusätzlicher Kanbans erstellt werden.
 
 ## <a name="manual-scheduling"></a>Manuelle Zeitplanung
 Für die manuelle Planung hat Microsoft Dynamics AX 2012 die Kanban-Zeitplanübersicht eingeführt. Manuelle Planung kann mit automatischer Planung kombiniert werden. Mit der Kanban-Zeitplanübersicht können Sie Einzelvorgänge planen und nicht planen, nacheinander verschieben oder von Periode zu Periode verschieben. Einzelvorgänge, die auf einer Kanban-Regel basieren, in der der **Automatische Planung**-Wert mehr als **0** ist, können manuell ungeplant sein. Jedoch werden diese Einzelvorgänge neu geplant, wenn das nächste automatische Planungsereignis auftritt (das heißt, wenn ein neues Kanban erstellt wird). Die folgenden Optionen sind für die manuelle Zeitplanung verfügbar:
@@ -66,5 +72,7 @@ Die **Kanban-Feinterminierung**-Listenseite enthält eine Infobox, die die verf�
 
 <a name="see-also"></a>Siehe auch
 --------
+
+
 
 

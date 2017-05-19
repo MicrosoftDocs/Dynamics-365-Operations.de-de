@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9f82bf6373e8076fb6786fe9ef184f47f3cf7b84
-ms.openlocfilehash: 5b8104b570c7679dff7157696d08355627312f71
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: fb8f31a88b63d8c046d28478cc29175ed8c39cb6
+ms.contentlocale: de-de
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -45,7 +46,7 @@ Im Rahmen von Microsoft Dynamics 365 for Operations können Benutzer den Verkauf
 
 Darüber hinaus können die Benutzer mit zwei eindeutigen Berichte mit der hierarchischen Rasterstrukturierung den Verkauf und die Gewinnspanne vom obersten Konten aus für die einzelnen untergeordneten Knoten der Kategorie in der standardmäßigen Produktkategoriehierarchie detailliert darstellen. Die Benutzer können von der obersten Organisationseinheit aus einen einzelnen Kanal in der Organisationshierarchie detailliert darstellen, die als standardmäßige Organisationshierarchie für die Berichterstellungshierarchie im Einzelhandel definiert wird. Sie können die Berichte über die folgenden Orten öffnen:
 
--   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle **&gt; **Einzelhandelsshopleitung** &gt; **Berichte**
+-   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle**&gt; **Einzelhandelsshopleitung** &gt; **Berichte**
 -   **Kategorie- und Produktverwaltung**-Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Produkt und Kategorien** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
 -   **Verwaltung von Preisen und Rabatten**-Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Verwaltung von Preisen und Rabatten** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
 -   **Abfragen und Berichte** Abschnitt Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte**

@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: 3a82fdb8532c79e33c167c43554a3de7d3061fcb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 34bebe1f7a324f2d77668d0eb3d6b2303f2544a4
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -78,7 +79,7 @@ Sie können den Wert überschreiben, der für das Zielattribut berechnet wird, e
 ## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Wie lege ich ein Zielattribut als ausgeblendet oder schreibgeschützt fest?
 Um ein Attribut als ausgeblendet oder schreibgeschützt festzulegen, führen Sie folgende Schritte aus.
 
-1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Gemeinsam ** &gt; **Produktkonfigurationsmodelle**.
+1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Gemeinsam** &gt; **Produktkonfigurationsmodelle**.
 2.  Wählen Sie ein Produktkonfigurationsmodell aus, und klicken Sie im Aktivitätsbereich auf **Bearbeiten**.
 3.  Wählen Sie auf der Seite **Details zum einschränkungsbasierten Produktkonfigurationsmodell** das Attribut aus, das als Zielattribut verwendet werden soll.
 4.  Wählen Sie auf dem Inforegister **Attribute** entweder **Ausgeblendet** oder **Schreibgeschützt** aus.
@@ -101,7 +102,7 @@ Diese Meldung wird angezeigt, wenn eine Berechnung einen Fehler enthält, oder e
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Warum erhalte ich eine Fehlermeldung, obwohl ich mein Produktmodell erfolgreich geprüft habe?
 Berechnungen werden nicht in die Überprüfung einbezogen. Sie müssen das Produktkonfigurationsmodell testen, um Berechnungsfehler zu suchen. Führen Sie zum Testen eines Produktkonfigurationsmodells die folgenden Schritte aus.
 
-1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Gemeinsam ** &gt; **Produktkonfigurationsmodelle**.
+1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Gemeinsam** &gt; **Produktkonfigurationsmodelle**.
 2.  Wählen Sie ein Produktkonfigurationsmodell aus, und klicken Sie in der Gruppe **Ausführen** auf **Testen**.
 
 

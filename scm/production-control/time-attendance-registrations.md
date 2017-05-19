@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f82033798dbe603c0f2e2c92f91d28985c12b3b4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 144a1adbff74aef468dd4b2c9f69bf479a5ec671
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ In Unternehmen, die Zeit und Anwesenheit verwenden, müssen Arbeitskräfte die Z
 -   Arbeitskräfte, die regelmäßig Zeit und Anwesenheit erfassen müssen, z. B. täglich, wöchentlich oder alle zwei Wochen.
 -   Supervisor, Manager und Lohnbuchhalter, die die Erfassungen der Arbeitskräfte zur weiteren Verarbeitung berechnen, genehmigen und übertragen.
 
-| **Hinweis **                                                                                                                                                                                                                                                    |
+| **Hinweis**                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wenn Sie Zeit und Anwesenheit zusammen mit der Fertigungssteuerung nutzen, werden alle Erfassungen für Projekte, Projektaktivitäten, indirekte Projektvorgänge, Abwesenheitscodes und Überstunden und Gleitzeit aufgezeichnet und zur Berechnung des Lohns in beiden Modulen verwendet. |
 
@@ -53,7 +54,7 @@ Nach der Einrichtung können die Arbeitskräfte unterschiedliche Arten von Erfas
 -   Zeit und den Artikelverbrauch für Produktions-Einzelvorgänge.
 -   Zeit an einer Maschine im Fertigungsbereich (wenn die Maschine als Ressource definiert wurde).
 
-| **Hinweis **                                                                                                                                                                                                                      |
+| **Hinweis**                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Einer Arbeitskraft kann automatisch die Zeiterfassungen zugewiesen werden, die im Fertigungsbereich für eine bestimmte Maschine vorgenommen wurde, wenn die Arbeitskraft die Arbeit als Assistent für die Maschine beim Start des Produktions-Einzelvorgangs auswählt. |
 
@@ -82,7 +83,7 @@ So wie Sie einer Arbeitskraft für Zeiterfassung eine Berechnungsgruppe zuweisen
 -   Manuelle Zulagen hinzuzufügen.
 -   Zusätzliche Informationen über den Grund für Abwesenheitserfassungen einzugeben.
 
-| **Hinweis **                                                                                                                                                                             |
+| **Hinweis**                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wenn für bestimmte Arbeitskräfte Überstunden berechnet wurden, können diese Überstunden bestimmten Einzelvorgängen im Verlauf eines Tages zugeordnet werden. Dies ist relevant, wenn Einzelvorgangskosten auf Basis des Lohns von Arbeitskräften berechnet werden. |
 
@@ -102,7 +103,7 @@ Nach dem Genehmigen der Erfassungen können Sie sie an einen periodischen Lohnei
 ## <a name="reversing-transferred-registrations"></a>Stornieren von übertragenen Erfassungen
 Das Stornieren von Erfassungen (das Zurücksetzen) kann erfolgen, bis der Zahlungstransfer für die Lohnperiode ausgeführt wurde. Das bedeutet, dass die Lohndaten in eine externe Datei übertragen wurden. Bei einem Storno werden alle Erfassungen widerrufen, und alle Buchungen, die für Produktionsaufträge oder Projekte erfolgt sind, werden ausgeglichen und damit neutralisiert.
 
-| **Hinweis **                                                 |
+| **Hinweis**                                                 |
 |----------------------------------------------------------|
 | Die externe Datei kann in ein Lohnbuchhaltungssystem importiert werden. |
 

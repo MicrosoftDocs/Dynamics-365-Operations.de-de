@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2225707329c67a30d9234bef5282d49834ea042a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: dad6d4ec3788ae73386d582433a8585602e1290e
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -65,7 +66,7 @@ Es wird angenommen, dass 0,5 Meter des Rohrs für alle fünf Stücke des Rohrs v
 
 ### <a name="consumption"></a>Verbrauch
 
-In der Regel wählen Sie** Verbrauch** als Aufrundungsmechanismus aus, wenn Rohmaterial in gesamten Mengen einer bestimmten Handhabungseinheit des Produkts entnommen werden muss. Beispielsweise werden 2 Liter Farbe verwendet, die zur Produktion einer fertigen Ware verwendet werden, und die Farbe wird in 25-Liter-Eimern entnommen. In diesem Fall kann der Aufrundungsmechanismus **Verbrauch** verwendet werden, um den Verbrauch auf ganze Anzahlen von 25-Liter-Eimern aufzurunden. Ist hier die Berechnung für die benötigte Farbmenge, wenn 180 Stück fertige Ware produziert werden müssen:
+In der Regel wählen Sie**Verbrauch** als Aufrundungsmechanismus aus, wenn Rohmaterial in gesamten Mengen einer bestimmten Handhabungseinheit des Produkts entnommen werden muss. Beispielsweise werden 2 Liter Farbe verwendet, die zur Produktion einer fertigen Ware verwendet werden, und die Farbe wird in 25-Liter-Eimern entnommen. In diesem Fall kann der Aufrundungsmechanismus **Verbrauch** verwendet werden, um den Verbrauch auf ganze Anzahlen von 25-Liter-Eimern aufzurunden. Ist hier die Berechnung für die benötigte Farbmenge, wenn 180 Stück fertige Ware produziert werden müssen:
 
 1.  Farbe, die erforderlich ist, abzüglich des Ausschusses: 180 × 2 = 360 Liter
 2.  Anzahl der Farbeimer: 360 ÷ 25 = 14,4, das auf 15 aufgerundet wird

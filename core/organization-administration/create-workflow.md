@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 1255cf90498f1968568dd2fa5a1377d989f40182
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b4d4f14753f1755c251e1ae12dd9addec31d2fdd
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Wenn Sie ein Workflowelement mit einem anderen verbinden möchten, halten Sie de
 Gehen Sie folgendermaßen vor, um die Eigenschaften des Workflows zu konfigurieren.
 
 1.  Klicken Sie auf die Canvas, um sicherzustellen, dass kein Workflowelement ausgewählt ist.
-2.  Klicken Sie auf **Eigenschaften****, um die Seite ** Eigenschaften für den Workflow zu öffnen.
+2.  Klicken Sie auf **Eigenschaften****, um die Seite** Eigenschaften für den Workflow zu öffnen.
 3.  Folgen Sie der Prozedur unter [Eigenschaften für einen Workflow konfigurieren](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurieren der Elemente des Workflows

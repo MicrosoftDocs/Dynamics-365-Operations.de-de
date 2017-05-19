@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 3bba3d849d02cd84c2c0e0c5c15f7b649b3e125c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d3efb6106df7d66ebe9b1a061f9976b8978704b1
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten
 3.  Geben Sie eine Bedingung ein.
 4.  Geben Sie ggf. zusätzliche Bedingungen ein.
 5.  Führen Sie folgende Schritte aus, um die korrekte Konfiguration der eingegebenen Bedingungen zu überprüfen:
-    1.  Klicken Sie auf **Test**, um das Formular ** Workflow-Bedingungen testen** zu öffnen.
+    1.  Klicken Sie auf **Test**, um das Formular **Workflow-Bedingungen testen** zu öffnen.
     2.  Wählen Sie im Bereich **Bedingung überprüfen** des Formulars einen Datensatz aus.
     3.  Klicken Sie auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht.
     4.  Klicken Sie auf **OK** oder **Abbrechen**, um zum Formular **Eigenschaften** zurückzukehren.

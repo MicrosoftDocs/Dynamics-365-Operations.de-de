@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 1bc458d58834be1e2e9b602619f76424b3bb449b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 62dcc8a9b17ad044ac63080a94593a5f6ae2f182
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -98,7 +99,7 @@ Das Einkommenskostenelement, das für die Lohngruppe aktiviert ist, wird verwend
 
 Für die genauste Budgetplanung können Sie Planungspositionen erstellen, indem Sie Details vorhandener Positionen in Microsoft Dynamics 365 for Operations verwenden, unabhängig davon, ob die Position gerade ausgefüllt ist oder nicht. 
 
-Die Funktion **Vorhandene Positionen hinzufügen** zeigt alle Positionen für eine Organisation an. Wenn Sie das Datum** Per Datum** festlegen, können Sie die Liste der Positionen ändern, sodass sie die Positionen enthält, die an einem Datum in der Vergangenheit existierten oder in der Zukunft existieren (beispielsweise Start des nächsten Budgetzyklus). Wählen Sie einen Budgetplanungsprozess und ein Budgetplanszenario, wählen Sie Positionen in der Liste und klicken Sie dann auf **OK**, um Planungspositionen für die ausgewählten Positionen zu erstellen. Beachten Sie, dass Sie nur eine geplante Position für jede vorhandene Position in einem Budgetplanungsprozess und -szenario erstellen können. Sie können jedoch weitere Versionen erstellen, indem Sie verschiedene Budgetplanszenarios zuweisen. 
+Die Funktion **Vorhandene Positionen hinzufügen** zeigt alle Positionen für eine Organisation an. Wenn Sie das Datum**Per Datum** festlegen, können Sie die Liste der Positionen ändern, sodass sie die Positionen enthält, die an einem Datum in der Vergangenheit existierten oder in der Zukunft existieren (beispielsweise Start des nächsten Budgetzyklus). Wählen Sie einen Budgetplanungsprozess und ein Budgetplanszenario, wählen Sie Positionen in der Liste und klicken Sie dann auf **OK**, um Planungspositionen für die ausgewählten Positionen zu erstellen. Beachten Sie, dass Sie nur eine geplante Position für jede vorhandene Position in einem Budgetplanungsprozess und -szenario erstellen können. Sie können jedoch weitere Versionen erstellen, indem Sie verschiedene Budgetplanszenarios zuweisen. 
 
 Wenn Budgetkostenelemente der Position in der Personalverwaltung zugewiesen wurden, werden diese Budgetkostenelemente auch der Planungsposition zugewiesen und die standardmäßigen Beträge verwendet. Das Feld **Zugewiesene Arbeitskraft** in der Prognoseposition wird auf den Namen der Arbeitskraft festgelegt, die der Position zugewiesen wird, wenn eine Arbeitskraft zugewiesen ist. Dieses Feld ist ein einfaches Textfeld. Kein direkter Link wird erstellt. 
 
@@ -127,7 +128,7 @@ Sie können auch eine vollständig neue Planungsposition erstellen. Wählen Sie 
 
 Sie können Planungspositionen ändern, um entweder bekannte Änderungen für den Budgetzyklus anzuwenden oder vorgeschlagene Änderungen zu modellieren. Häufig wird eine Basislinie von Planungspositionen erstellt, werden Kopien für diese Planungspositionen erstellt und dann zum Modellieren von verschiedenen Gruppen von Änderungen verwendet. Die Kopien werden einem anderen Budgetplanszenario zugewiesen, sind jedoch mit den Planungspositionen identisch, aus denen sie kopiert wurden, zumindestens bis Änderungen vorgenommen werden. Die Vorlagen und Kopien teilen die gleiche Position in der Personalverwaltung. 
 
-Die Funktion **In Szenario kopieren **stellt diese Funktionalität bereit. Beachten Sie, dass jede Personalverwaltungsposition nur eine Planungsposition in jedem Budgetplanszenario haben kann.
+Die Funktion **In Szenario kopieren**stellt diese Funktionalität bereit. Beachten Sie, dass jede Personalverwaltungsposition nur eine Planungsposition in jedem Budgetplanszenario haben kann.
 
 ### <a name="modifying-forecast-positions"></a>Ändern von Planungspositionen
 

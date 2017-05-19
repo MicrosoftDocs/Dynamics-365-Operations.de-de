@@ -17,10 +17,11 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
-ms.openlocfilehash: 6121be0dd02659e4e8466b0c1381678be64fefc2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f1e572ae423a05337117bcd5ea3ac3e12bd0d42b
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die erfüllt sein
 | Kategorie            | Voraussetzung                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Land/Region      | Die primäre Adresse der juristischen Person muss in einem EU-Mitgliedsstaat sein.                                                                                                                                                                                                                                                                                                                    |
-| Zugehörige Einrichtungsaufgaben | Richten Sie auf der Seite **Datumsintervalle** ein Datumsintervall ein, das verwendet wird, um das Fälligkeitsdatum der Rechnungsausstellung zu berechnen. (Klicken Sie auf **Hauptbuch** &gt; **Sachkonto-Einstellungen ** &gt; **Datumsintervalle**.) Auf der Seite **Außenhandeleigenschaften** setzen Sie die Außenhandelsparameter für verschiedene Länder/Regionen fest. (Klicken Sie  **Steuer** &gt; **Einrichten** &gt; **Außenhandel** &gt; **Außenhandelsparameter**.) |
+| Zugehörige Einrichtungsaufgaben | Richten Sie auf der Seite **Datumsintervalle** ein Datumsintervall ein, das verwendet wird, um das Fälligkeitsdatum der Rechnungsausstellung zu berechnen. (Klicken Sie auf **Hauptbuch** &gt; **Sachkonto-Einstellungen** &gt; **Datumsintervalle**.) Auf der Seite **Außenhandeleigenschaften** setzen Sie die Außenhandelsparameter für verschiedene Länder/Regionen fest. (Klicken Sie  **Steuer** &gt; **Einrichten** &gt; **Außenhandel** &gt; **Außenhandelsparameter**.) |
 
 ## <a name="invoice-issue-due-date-calculation-rule"></a>Berechnungsregel für Fälligkeitsdaten für die Ausstellung von Rechnungen
 Verwenden Sie die Seite **Berechnung für Fälligkeitsdatum der Rechnungsausstellung einrichten**, um eine Berechnungsregel für Fälligkeitsdaten für die Ausstellung von Rechnungen einzurichten, indem Sie einem Länder-/Regionstyp einen Datumsintervallcode zuweisen.

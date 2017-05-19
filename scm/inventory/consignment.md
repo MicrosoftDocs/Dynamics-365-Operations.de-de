@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: d9dcdd63649d6dbff96efe2eec7cad34025ab2ee
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 01ab473951bc04c68a0248b37041a116eebcaea9
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +56,7 @@ In diesem Beispielszenario hat Unternehmen USMF eine Lieferungsvereinbarung mit 
 USMF führt zusätzliche periodische Prozesse durch:
 
 -   Die physische Bewegung des im Besitz des Kreditors befindlichen Bestands zwischen verschiedenen Lagerorten wird mithilfe einer Umlagerungserfassung verarbeitet.
--   Der physische verfügbare Lagerbestand wird mithilfe einer Erfassung** Artikelinventur **aktualisiert. Die Inventur kann auch vom Kreditor verwendet werden, um den verfügbaren Lagerbestand zu aktualisieren, sofern sie dafür über die notwendige Berechtigung verfügen.
+-   Der physische verfügbare Lagerbestand wird mithilfe einer Erfassung**Artikelinventur**aktualisiert. Die Inventur kann auch vom Kreditor verwendet werden, um den verfügbaren Lagerbestand zu aktualisieren, sofern sie dafür über die notwendige Berechtigung verfügen.
 
 Der Kreditor, US-104, kann die Aktualisierungen mithilfe der Seite **Verfügbarer Lieferungsbestand** überwachen.
 
@@ -67,7 +68,7 @@ Ein Lieferungswiederbeschaffungsauftrag ist ein Dokument, das verwendet wird, um
 ## <a name="inventory-ownership-change-journal"></a>Erfassung für die Änderung von Bestandseigentümern
 Der Prozess der Änderung des Besitzers des Bestands vom Kreditor zur empfangenden juristischen Person erfolgt mithilfe einer Bestandsbesitzänderungs-Erfassung. Es werden keine voraussichtlichen Lagerbuchungen für die Erfassung erstellt. Es werden nur Lagerbuchungen erstellt, die einer gebuchten Erfassung zugeordnet sind. Wenn die Erfassung gebucht wird:
 
--   Der im Besitz des Kreditors befindliche Bestand wird mithilfe einer Referenz **Besitzänderung** mit dem Status **Verkauft **ausgegeben.
+-   Der im Besitz des Kreditors befindliche Bestand wird mithilfe einer Referenz **Besitzänderung** mit dem Status **Verkauft**ausgegeben.
 -   Der verfügbare Lagerbestand wird von der juristischen Person empfangen, die ihn verbraucht. Dies erfolgt mithilfe einer durch den Produktzugang aktualisierten Bestandsbuchung zur Bestellung. Dadurch wird der Status des Auftrags auf **Eingegangen** festgelegt. Bei Bestellungen, die zur Lieferung verwendet werden, wird das Feld **Ursprung** auf **Lieferung** festgelegt.
 
 Es ist nicht möglich, die Menge auf Lieferungsbestellpositionen zu aktualisieren, nachdem der Auftrag erstellt wurde. 

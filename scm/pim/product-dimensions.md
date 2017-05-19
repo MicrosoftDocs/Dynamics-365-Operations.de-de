@@ -19,10 +19,11 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8854ab94a71cc363bcd073d2df47bc01a243b6cd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 43cb4ed2ca77592fc23100fd74cb2bfa23c17f47
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -43,13 +44,13 @@ Produktvarianten werden auch als Artikel bezeichnet. Ein Artikel ist ein materie
 ## <a name="product-dimensions"></a>Produktdimensionen
 Es gibt die folgenden vier Produktdimensionen: Farbe, Konfiguration, Größe und Farbe. Eine Produktvarianten kann basieren auf Produktdimensionenwerten generiert werden.
 
-Produktdimensionswerte wie Größe, Farbe und Stil können auf den Seiten **Größe**, **Farbe** und **Stil **erstellt werden, auf die an folgenden Orten zugegriffen werden kann: **Produktinformationsverwaltung** &gt; **Einstellungen** &gt; **Dimensions- und Variantengruppen** &gt; **Größen/Farben/Stile**. Produktdimensionswerte für die Variantendimension werden üblicherweise entweder mithilfe des Variantenkonfigurators oder des dimensionsbasierten Konfigurators erstellt. Produktdimensionen können auch auf der Seite **Produktdimensionen** erstellt und verwaltet werden, auf die Sie von folgenden Orten aus zugreifen können:
+Produktdimensionswerte wie Größe, Farbe und Stil können auf den Seiten **Größe**, **Farbe** und **Stil**erstellt werden, auf die an folgenden Orten zugegriffen werden kann: **Produktinformationsverwaltung** &gt; **Einstellungen** &gt; **Dimensions- und Variantengruppen** &gt; **Größen/Farben/Stile**. Produktdimensionswerte für die Variantendimension werden üblicherweise entweder mithilfe des Variantenkonfigurators oder des dimensionsbasierten Konfigurators erstellt. Produktdimensionen können auch auf der Seite **Produktdimensionen** erstellt und verwaltet werden, auf die Sie von folgenden Orten aus zugreifen können:
 -   Klicken Sie auf **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Produktmaster.** Klicken Sie im **Aktivitätsbereich** auf **Produktdimensionen.**
 -   Klicken Sie auf **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Alle Produkte und Produktmaster.** Wählen Sie einen Produktmaster aus. Klicken Sie im **Aktivitätsbereich** auf **Produktdimensionen.**
 -   Klicken Sie auf **Produktinformationsverwaltung** &gt; **Freigegebene Produkte.** Wählen Sie einen Produktmaster aus. Klicken Sie im **Aktivitätsbereich** auf **Produkt**. Klicken Sie in der Gruppe **Produktmaster** auf **Produktdimensionen**.
 
 Die Anzahl von Varianten, die Sie für einen Artikel erstellen können, hängt von der Anzahl der möglichen Produktdimensionskombinationen ab.
-| **Tipp **                                                                                                                                              |
+| **Tipp**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wenn Sie ein Produkt beispielsweise auf einer Auftragsposition verwenden, wählen Sie die Produktdimensionen aus, um die Produktvariante zu ermitteln, mit der Sie arbeiten möchten. |
 

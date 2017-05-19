@@ -1,6 +1,6 @@
 ---
-title: "Definieren und Verwalten von Kanal-Clients, einschließlich Registern und Hardwarestationen"
-description: "Dieses Wiki erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden."
+title: Definieren und Verwalten von Kanal-Clients, Kassen und Hardwarestationen
+description: "Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -17,17 +17,21 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: dee5745670ad86000795f2913f99f49c0f123a00
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: db8b059309ecf4da9728394fc3acb091d60baf4d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
-# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definieren und Verwalten von Kanal-Clients, einschließlich Registern und Hardwarestationen
+# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definieren und Verwalten von Kanal-Clients, Kassen und Hardwarestationen
 
-Dieses Wiki erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden.
+[!include[banner](includes/banner.md)]
+
+
+Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden.
 
 **Hinweis:** Spezifische Installationshinweise finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md) und [Retail Modern POS Self-Service-Download/-Installation und Geräteaktivierung von Modern POS und Cloud POS](retail-modern-pos-device-activation.md).
 
@@ -56,20 +60,23 @@ Navigation: Klicken Sie auf **Handel** &gt; **Kanaleinstellungen** &gt; **POS-Ei
 
 ### <a name="hardware-station"></a>Hardwarestation
 
-Navigieren: Klicken Sie auf **Einzelhandel und Handel **&gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**. Wählen Sie einen Shop aus, und klicken Sie anschließend auf die Registerkarte **Hardwarestationen**. Eine Hardwarestation ist eine Instanz der Geschäftslogik, die POS-Peripheriegeräte steuert. Eine Hardwarestation wird automatisch mit MPOS zusammen installiert. Eine Hardwarestation kann als eigenständige Komponente installiert werden, auf die dann mit MPO oder Cloud POS über einen Webdienst zugegriffen werden kann. Die Hardwarestation muss auf der Kanalebene definiert werden.
+Navigieren: Klicken Sie auf **Einzelhandel und Handel**&gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**. Wählen Sie einen Shop aus, und klicken Sie anschließend auf die Registerkarte **Hardwarestationen**. Eine Hardwarestation ist eine Instanz der Geschäftslogik, die POS-Peripheriegeräte steuert. Eine Hardwarestation wird automatisch mit MPOS zusammen installiert. Eine Hardwarestation kann als eigenständige Komponente installiert werden, auf die dann mit MPO oder Cloud POS über einen Webdienst zugegriffen werden kann. Die Hardwarestation muss auf der Kanalebene definiert werden.
 
 ### <a name="hardware-station-profile"></a>Hardwarestation-Profil
 
-Navigation: Klicken Sie auf H**Handel ** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationprofile**. Während die Hardwarestation selbst auf der Kanalebene unter Einbeziehung Instanzen-spezifischer Informationen, wie z. B. der URL für die Hardwarestation, festgelegt wird, beinhaltet das Hardwarestationsprofil Informationen, die statisch sind oder für mehrere Hardware-Stationen freigegeben sind. Statische Informationen umfassen den Port, der verwendet werden soll, das Hardwarestation-Paket und das Hardwareprofil. Die statischen Informationen enthalten auch eine Beschreibung der Art der bereitgestellten Hardwarestation, wie z.B. **Auschecken **oder **Retouren**, je nach Hardware, die für jede spezifische Hardwarestation erforderlich ist.
+Navigation: Klicken Sie auf H**Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationprofile**. Während die Hardwarestation selbst auf der Kanalebene unter Einbeziehung Instanzen-spezifischer Informationen, wie z. B. der URL für die Hardwarestation, festgelegt wird, beinhaltet das Hardwarestationsprofil Informationen, die statisch sind oder für mehrere Hardware-Stationen freigegeben sind. Statische Informationen umfassen den Port, der verwendet werden soll, das Hardwarestation-Paket und das Hardwareprofil. Die statischen Informationen enthalten auch eine Beschreibung der Art der bereitgestellten Hardwarestation, wie z.B. **Auschecken**oder **Retouren**, je nach Hardware, die für jede spezifische Hardwarestation erforderlich ist.
 
 ## <a name="scenarios"></a>Szenarien
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS mit verbundenen Peripheriegeräten
 
-[![Herkömmliche, feste Verkaufsstelle](./media/traditional-300x279.png)](./media/traditional.png)Um MPOS mit POS-Peripheriegeräte in einem herkömmlichen, festen POS-Szenario zu verbinden, navigieren Sie zuerst zum Register selbst und weisen Sie dann ein Hardwareprofil zu. Sie finden die POS-Register unter **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. Nachdem Sie das Hardwareprofil zugewiesen haben, synchronisieren Sie die Änderungen mit der Kanaldatenbank unter Verwendung des Vertriebsplans "Register". Sie finden die Vertriebspläne unter **Einzelhandel und Handel ** &gt; **IT für den Einzelhandel ** &gt; **Vertriebsplan**. Nun richten Sie eine "lokale" Hardwarestation auf dem Kanal ein. Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte** und wählen einen Shop aus. Klicken Sie dann im Inforegister **Hardwarestationen** auf **Hinzufügen**, um eine Hardwarestation hinzuzufügen. Geben Sie eine Beschreibung ein, **Localhost** als Hostname und synchronisieren Sie dann die Änderungen mit dem Kanal, indem Sie den Vertriebsplan "Kanalkonfiguration"verwenden. Sie finden die Vertriebspläne unter **Einzelhandel und Handel ** &gt; **IT für den Einzelhandel ** &gt; **Vertriebsplan**. Abschließend verwenden Sie den Vorgang **Hardwarestation auswählen** in MPOS und wählen die Hardwarestation **Localhost**. Legen Sie die Hardwarestation auf **Aktiv** fest. Das Hardwareprofil, das in diesem Szenario verwendet wird, sollte aus dem POS-Register selbst stammen. Für dieses Szenario ist kein Hardwarestationsprofil notwendig. **Hinweis:** Für einige Hardwareprofiländerungen, wie z. B. Änderungen an Geldladen, ist es erforderlich, dass eine neue Schicht geöffnet wird, nachdem die Änderungen mit dem Kanal synchronisiert wurden. **Hinweis:** Cloud POS muss die eigenständige Hardwarestation verwenden, um mit Einzelhandels-Peripheriegeräten zu kommunizieren.
+[![Herkömmlich, feste Verkaufsstelle](./media/traditional-300x279.png)](./media/traditional.png) 
+
+Um MPOS mit POS-Peripheriegeräte in einem herkömmlichen, festen POS-Szenario zu verbinden, navigieren Sie zuerst zum Register selbst und weisen Sie dann ein Hardwareprofil zu. Sie finden die POS-Register unter **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. Nachdem Sie das Hardwareprofil zugewiesen haben, synchronisieren Sie die Änderungen mit der Kanaldatenbank unter Verwendung des Vertriebsplans "Register". Sie finden die Vertriebspläne unter **Einzelhandel und Handel** &gt; **IT für den Einzelhandel** &gt; **Vertriebsplan**. Nun richten Sie eine "lokale" Hardwarestation auf dem Kanal ein. Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte** und wählen einen Shop aus. Klicken Sie dann im Inforegister **Hardwarestationen** auf **Hinzufügen**, um eine Hardwarestation hinzuzufügen. Geben Sie eine Beschreibung ein, **Localhost** als Hostname und synchronisieren Sie dann die Änderungen mit dem Kanal, indem Sie den Vertriebsplan "Kanalkonfiguration"verwenden. Sie finden die Vertriebspläne unter **Einzelhandel und Handel** &gt; **IT für den Einzelhandel** &gt; **Vertriebsplan**. Abschließend verwenden Sie den Vorgang **Hardwarestation auswählen** in MPOS und wählen die Hardwarestation **Localhost**. Legen Sie die Hardwarestation auf **Aktiv** fest. Das Hardwareprofil, das in diesem Szenario verwendet wird, sollte aus dem POS-Register selbst stammen. Für dieses Szenario ist kein Hardwarestationsprofil notwendig. **Hinweis:** Für einige Hardwareprofiländerungen, wie z. B. Änderungen an Geldladen, ist es erforderlich, dass eine neue Schicht geöffnet wird, nachdem die Änderungen mit dem Kanal synchronisiert wurden. **Hinweis:** Cloud POS muss die eigenständige Hardwarestation verwenden, um mit Einzelhandels-Peripheriegeräten zu kommunizieren.
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS oder Cloud POS mit eigenständiger Hardwarestation
+[![Freigegebene Peripheriegeräte](./media/shared-300x254.png)](./media/shared.png)
 
-\[id= Beschriftung "\_"align= Anhang 340041 " alignleft" width= " 300 "\][f![Freigegebene Peripheriegeräte ](./media/shared-300x254.png)](./media/shared.png) Freigegebene Peripheriegeräte\[/Caption\] in diesem Szenario wird eine eigenständige Hardwarestation unter MPOS und Kunden der Cloud POS freigegeben. Dieses Szenario erfordert die Erstellung eines Hardwarestationsprofils zum Spezifizieren des Download-Pakets, des Ports und des Hardwareprofils, das die Hardwarestation verwendet. Sie können die Hardwarestationsprofile unter **Einzelhandel und Handel **&gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationsprofile** finden. Nachdem Sie das Hardwarestationsprofil erstellt haben, navigieren Sie zum entsprechenden Einzelhandelskanal (**Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**), und fügen Sie eine neue Hardwarestation hinzu. Weisen Sie diese neue Hardwarestation dem Hardwarestationsprofil zu, das zuvor erstellt wurde. Als Nächstes erstellen Sie eine Beschreibung, die dem Kassierer hilft, die Hardwarestation zu identifizieren. Geben Sie im Feld **Hostname** die URL des Host-Computers im folgenden Format ein: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Ersetzen Sie **&lt;MachineName:Port&gt;** mit dem tatsächlichen Maschinennamen der Hardwarestation und der Anschluss, der im Hardwarestationsprofil angegeben ist). Eine eigenständige sollten Sie die Hardwarestation (EFT)- Terminal Kennung für elektronische Überweisungen auch angeben Dieser Wert gibt den EFT-Terminal an, der mit der Hardwarestation verbunden ist, wenn der Zahlung-Connector mit dem Zahlungsanbieter kommuniziert. Anschließend wechseln Sie vom tatsächlichen Hardwarestationsgerät zum Kanal und wählen die Hardwarestation aus. Klicken Sie dann auf **Herunterladen** und installieren Sie die Hardwarestation. Als nächstes führen Sie aus MPOS oder Cloud POS den Vorgang **Hardwarestation auswählen** aus, um die zuvor installierte Hardwarestation auszuwählen. Wählen Sie **Koppeln**, um eine sichere Beziehung zwischen dem POS und der Hardware einzurichten. Dieser Schritt muss einmal für jede Kombination von einem POS und einer Hardwarestation abgeschlossen werden. Nachdem die Hardwarestation gekoppelt wurde, wird derselbe Vorgang verwendet, um die Hardwarestation zu aktivieren. Für dieses Szenario sollte das Hardwareprofil dem Hardwarestationsprofil zugewiesen werden und nicht dem  Register selbst. Wenn aus einem bestimmten Grund eine Hardwarestation kein direkt zugewiesenes Hardwareprofil enthält, wird das Hardwareprofil, das dem Register zugewiesen, verwendet
+In diesem Szenario ist eine eigenständige Hardwarestation für MPO- und Cloud POS-Kunden freigegeben. Dieses Szenario erfordert die Erstellung eines Hardwarestationsprofils zum Spezifizieren des Download-Pakets, des Ports und des Hardwareprofils, das die Hardwarestation verwendet. Sie können die Hardwarestationsprofile unter **Einzelhandel und Handel**&gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationsprofile** finden. Nachdem Sie das Hardwarestationsprofil erstellt haben, navigieren Sie zum entsprechenden Einzelhandelskanal (**Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**), und fügen Sie eine neue Hardwarestation hinzu. Weisen Sie diese neue Hardwarestation dem Hardwarestationsprofil zu, das zuvor erstellt wurde. Als Nächstes erstellen Sie eine Beschreibung, die dem Kassierer hilft, die Hardwarestation zu identifizieren. Geben Sie im Feld **Hostname** die URL des Host-Computers im folgenden Format ein: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Ersetzen Sie **&lt;MachineName:Port&gt;** mit dem tatsächlichen Maschinennamen der Hardwarestation und der Anschluss, der im Hardwarestationsprofil angegeben ist). Eine eigenständige sollten Sie die Hardwarestation (EFT)- Terminal Kennung für elektronische Überweisungen auch angeben Dieser Wert gibt den EFT-Terminal an, der mit der Hardwarestation verbunden ist, wenn der Zahlung-Connector mit dem Zahlungsanbieter kommuniziert. Anschließend wechseln Sie vom tatsächlichen Hardwarestationsgerät zum Kanal und wählen die Hardwarestation aus. Klicken Sie dann auf **Herunterladen** und installieren Sie die Hardwarestation. Als nächstes führen Sie aus MPOS oder Cloud POS den Vorgang **Hardwarestation auswählen** aus, um die zuvor installierte Hardwarestation auszuwählen. Wählen Sie **Koppeln**, um eine sichere Beziehung zwischen dem POS und der Hardware einzurichten. Dieser Schritt muss einmal für jede Kombination von einem POS und einer Hardwarestation abgeschlossen werden. Nachdem die Hardwarestation gekoppelt wurde, wird derselbe Vorgang verwendet, um die Hardwarestation zu aktivieren. Für dieses Szenario sollte das Hardwareprofil dem Hardwarestationsprofil zugewiesen werden und nicht dem  Register selbst. Wenn aus einem bestimmten Grund eine Hardwarestation kein direkt zugewiesenes Hardwareprofil enthält, wird das Hardwareprofil, das dem Register zugewiesen, verwendet
 
 ## <a name="client-maintenance"></a>Client-Wartung
 ### <a name="registers"></a>Register
@@ -151,6 +158,8 @@ Zusätzliche Informationen zur Aktivierungen beinhalten die Arbeitskraft,die den
 
 ### <a name="client-data-synchronization"></a>Client-Datensynchronisierung
 
-Alle Änderungen an einem POS-Client, ausgenommen der Änderungen am Geräteaktivierungsstatus, müssen mit der Kanaldatenbank synchronisiert werden, um wirksam zu werden. Um Änderungen an der Kanaldatenbank zu synchronisieren, navigieren Sie zu **Einzelhandel und Handel** &gt; **IT für den Einzelhandel ** &gt; **Vertriebsplan**, und führen Sie den erforderlichen Vertriebsplan aus. Für Änderungen am Client sollten Sie die Vertriebszeitpläne "Register" und "Kanalkonfiguration" ausführen.
+Alle Änderungen an einem POS-Client, ausgenommen der Änderungen am Geräteaktivierungsstatus, müssen mit der Kanaldatenbank synchronisiert werden, um wirksam zu werden. Um Änderungen an der Kanaldatenbank zu synchronisieren, navigieren Sie zu **Einzelhandel und Handel** &gt; **IT für den Einzelhandel** &gt; **Vertriebsplan**, und führen Sie den erforderlichen Vertriebsplan aus. Für Änderungen am Client sollten Sie die Vertriebszeitpläne "Register" und "Kanalkonfiguration" ausführen.
+
+
 
 

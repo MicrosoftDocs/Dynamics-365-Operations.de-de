@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 4d243e6a9a68b69a6b32748344fc606ff3f2d965
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: eeed8bc4ad0fc24b04055e26bb33c2c56856c52b
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -49,7 +50,7 @@ Es kann beispielsweise sein, dass Ihnen ein Skonto in Höhe von 2 % gewährt wir
 ## <a name="credit-notes-with-cash-discounts"></a>Gutschriften mit Skonti
 Es kann auch vorkommen, dass Sie einige in einer Rechnung enthaltene Artikel zurückgeben und dafür eine Gutschrift erhalten. Falls ein Skonto für die ursprüngliche Rechnung in Anspruch genommen wurde, können Sie den Wert des Rabatts subtrahieren, um eine Rückerstattung über den korrekten Betrag zu erhalten. Wenn die Option **Skonti für Gutschriften berechnen** auf der Seite **Kreditorenkontenparameter** auf **Ja** festgelegt ist, wird der Rabatt für die Gutschrift automatisch berechnet. 
 
-Es kann beispielsweise sein, dass Ihnen ein Skonto in Höhe von 2 % gewährt wird, wenn die Rechnung innerhalb von 10 Tagen nach ihrer Ausstellung bezahlt wird. Es wird eine Rechnung über 100,00 Euro gebucht. Falls Sie die Waren zurückgeben und eine Gutschrift erhalten, können Sie die Gutschrift für den Gesamtbetrag der Originalrechnung, 100,00, zusammen mit den 2 % Skonto eingeben, das ebenfalls in der Gutschrift definiert wird.  Wenn Sie die Gutschrift auf der Seite **Buchungen ausgleichen** anzeigen, wird im Feld **Auszugleichender Betrag** ** 98,00** angezeigt. **-2,00** wird im Feld **Skontobetrag** angezeigt. Der Skontobetrag wird auf ein Skontokonto gebucht.
+Es kann beispielsweise sein, dass Ihnen ein Skonto in Höhe von 2 % gewährt wird, wenn die Rechnung innerhalb von 10 Tagen nach ihrer Ausstellung bezahlt wird. Es wird eine Rechnung über 100,00 Euro gebucht. Falls Sie die Waren zurückgeben und eine Gutschrift erhalten, können Sie die Gutschrift für den Gesamtbetrag der Originalrechnung, 100,00, zusammen mit den 2 % Skonto eingeben, das ebenfalls in der Gutschrift definiert wird.  Wenn Sie die Gutschrift auf der Seite **Buchungen ausgleichen** anzeigen, wird im Feld **Auszugleichender Betrag** **98,00** angezeigt. **-2,00** wird im Feld **Skontobetrag** angezeigt. Der Skontobetrag wird auf ein Skontokonto gebucht.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Überzahlungs-/Unterzahlungsbeträge
 Es kann vorkommen, dass Sie eine Teilzahlung ausführen, wobei der Betrag, der noch ausgeglichen werden muss, sehr gering ist. Beispielsweise ist die Kreditorenrechnung für 1.000,00 und Sie zahlen 999.90. Falls der verbleibende Betrag niedriger als der Betrag ist, der für Überzahlungen oder Unterzahlungen auf der Seite **Kreditorenparameter** angegeben ist, wird die Differenz automatisch zu einem Sachkonto für Über-/Unterzahlungen gebucht.

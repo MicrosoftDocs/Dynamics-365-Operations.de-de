@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 2c99b2e1f7ddecb61be62832ca1a8d3ac1fd21a8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 94f5874cb24b53476843f1a073dc9c4cfdb36ac9
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,7 +37,7 @@ Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum Microsoft Dyn
 
 Die Sicherheitseinstellungen in Ihrem Browser verhinderten möglicherweise, das die Symbole ordnungsgemäß geladen werden. Zur Behebung dieses Problems wird Folgendes empfohlen:
 
--   Falls dieses Problem in Internet Explorer ermitteln, klicken Sie **Tools**, und klicken Sie dann **Internetoptione **.  Im Internetoptionsdialogfeld **Datenschutz** auf der Registerkarte, klicken Sie **Benutzerdefinierte  Ebene** an, und vergewissern Sie sich, dass die **Schriftartdownload** Option ausgewählt wird.
+-   Falls dieses Problem in Internet Explorer ermitteln, klicken Sie **Tools**, und klicken Sie dann **Internetoptione**.  Im Internetoptionsdialogfeld **Datenschutz** auf der Registerkarte, klicken Sie **Benutzerdefinierte  Ebene** an, und vergewissern Sie sich, dass die **Schriftartdownload** Option ausgewählt wird.
 -   Andernfalls müssen Sie möglicherweise die Microsoft Dynamics 365 for Operations-Website der Liste der vertrauenswürdigen Standorte hinzufügen.
 
 ## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Ich vermisse das Menüband von Microsoft Dynamics AX 2012. Kann ich Registerkarten ständig offen anhalten?
@@ -52,7 +53,7 @@ Um den Tastaturzugriff zu vereinfachen, planen wir eine Tastenkombination zu imp
 ## <a name="where-is-the-view-details-functionality-in-dynamics-365-for-operations"></a>Wo ist in Dynamics 365 for Operations die "Details anzeigen"-Funktion?
 Die **Details anzeigen**-Option ist auf mehrere Arten verfügbar:
 
--   Wenn ein Steuerelemente die Funktionen **Details anzeigen ** hat, und wenn das Steuerelement einen Wert enthält, dann wird der Wert als Link angezeigt. Sie können auf die Verknüpfung klicken, um die Seite zu öffnen, die zusätzliche Details enthält.
+-   Wenn ein Steuerelemente die Funktionen **Details anzeigen** hat, und wenn das Steuerelement einen Wert enthält, dann wird der Wert als Link angezeigt. Sie können auf die Verknüpfung klicken, um die Seite zu öffnen, die zusätzliche Details enthält.
 -   **Details anzeigen** ist außerdem eine Option in den Kontextmenüs von Dynamics 365 for Operations. Weitere Informationen zur Anzeige von Dynamics 365 for Operations-Kontextmenü beim Rechtsklick finden Sie im vorherigen Abschnitt.
 
 

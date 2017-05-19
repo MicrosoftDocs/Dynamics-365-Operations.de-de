@@ -1,9 +1,9 @@
 ---
 title: Finanzberichterstellung mit Dynamics 365 for Operations
 description: "Die Finanzberichterstellung für Dynamics 365 for Operations ermöglicht Finanz- und Geschäftsexperten Finanzaufstellungen zu erstellen, zu verwalten, bereitzustellen und anzuzeigen. Es bewegt sich über die traditionellen Berichtseinschränkungen hinaus, um effizient verschiedene Arten von Berichten zu entwerfen."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 519b3d3fb53b20d0014c97bcb1b9b21802a376d6
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fee79dad870bfbf8852198c7e825cfaa95a8d10b
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="financial-reporting-for-dynamics-365-for-operations"></a>Finanzberichterstellung mit Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 Die Finanzberichterstellung für Dynamics 365 for Operations ermöglicht Finanz- und Geschäftsexperten Finanzaufstellungen zu erstellen, zu verwalten, bereitzustellen und anzuzeigen. Es bewegt sich über die traditionellen Berichtseinschränkungen hinaus, um effizient verschiedene Arten von Berichten zu entwerfen.
 
@@ -36,8 +40,7 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 | Komponente        | Funktionen                                                                                                                                                                                                                                                                           | Weitere Informationen:                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Berichts-Designer  | Erstellen Sie Berichtsbausteine, die kombiniert werden können, um einen Bericht zu definieren und zu generieren. Der Berichts-Assistent führt weniger erfahrene Benutzer durch den Designprozess. Erfahrene Benutzer können neue Berichtsbausteine erstellen oder vorhandene Bausteine den Anforderungen entsprechend ändern. |                                                                                                 |
-| Web-Viewer       | Zeigen Sie Finanzberichte in einem Webbrowser an. Für Web Viewer müssen keine zusätzlichen Serverkomponenten zur Finanzberichtserstellung installiert werden.                                                                                                                                                        | [Web-Viewer](financial-reporter-designer-web-client.md)            |
-| Berichtszeitpläne | Planen Sie einen einzelnen Bericht oder eine Gruppe von Berichten so, dass sie regelmäßig generiert werden.                                                                                                                                                                                          | [Einen Bericht generieren](/dynamics365/operations/financials/general-ledger/generate-financial-report) |
+| Berichtszeitpläne | Planen Sie einen einzelnen Bericht oder eine Gruppe von Berichten so, dass sie regelmäßig generiert werden.                                                                                                                                                                                          | [Finanzbericht generieren](generate-financial-report.md) |
 
 ## <a name="features"></a>Funktionen
 <table>
@@ -78,13 +81,15 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 <li>Fügen Sie Dimensionsfilter hinzu, um Berichtsinhalte auf eine bestimmte Dimension oder eine Kombination aus Dimensionen zu begrenzen.</li>
 <li>Fügen Sie Attributfilter hinzu, um Berichtsinhalte auf ein bestimmtes Attribut oder eine Kombination aus Attributen zu begrenzen.</li>
 </ul>
-Weitere Informationen finden Sie im Abschnitt "Interaktive Komponenten und Navigationsfunktionen" auf der <a href="https://technet.microsoft.com/en-us/library/dn469079.aspx">Desktop-Viewer-Benutzeroberfläche</a>.</td>
+</td>
 </tr>
 </tbody>
 </table>
 
 #<a name="see-also"></a>Siehe auch
+[Finanzbericht generieren](generate-financial-report.md)
 
-[Generieren von Finanzberichten] ((dynamics365\operations\financials\general-ledger\generate-financial-report)
+
+
 
 

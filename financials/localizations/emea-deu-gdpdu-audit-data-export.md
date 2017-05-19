@@ -16,10 +16,11 @@ ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d1f8187904e023a7c289b4d81c445287c9b94703
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a221664d23bbbc95caf6ffd306ab675b70e80df4
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -135,7 +136,7 @@ In den folgenden Tabellen werden die allgemeinen Steuerdatenstrukturdefinitionen
 | 12  | BELEGWAHRUNG           | Zeichen   | Belegwährung                                | TaxTrans                             | SourceCurrencyCode                             |
 | 13  | GRUNDLAGE              | Num(2Dez) | Grundlage                                   | TaxTrans                             | SourceBaseAmountCur                            |
 | 14  | PROZENTSATZ            | Num(2Dez) | Prozentsatz                                 | TaxTrans                             | TaxValue                                       |
-| September  | MWST\_GRUPPE           | Zeichen   | MwSt Gruppe                                 | TaxTrans                             | TaxGroup                                       |
+| 15  | MWST\_GRUPPE           | Zeichen   | MwSt Gruppe                                 | TaxTrans                             | TaxGroup                                       |
 | 16  | KONTO\_MWST\_AUSGABEN  | Zeichen   | Konto MwSt Ausgaben                         | TaxTrans                             | mainAccountTaxRef ()                           |
 | 17  | SACHKONTO              | Zeichen   | Sachkonto                                   | TaxTrans                             | mainAccountOperation()                         |
 | 18  | ARTIKEL\_MWST\_GRUPPE  | Zeichen   | Artikel-Mehrwertsteuergruppe                | TaxTrans                             | TaxItemGroup                                   |

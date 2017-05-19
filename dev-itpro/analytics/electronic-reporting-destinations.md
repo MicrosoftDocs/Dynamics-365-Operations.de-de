@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: d38d05fe445bf0326d408038dff84ccf8c0ff64c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b6b0edfbbcebed323be63d5bc892dba1170b9c67
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -60,7 +61,7 @@ Es werden verschiedene Zieltypen unterstützt. Sie können alle gleichzeitig akt
 
 ### <a name="email-destination"></a>E-Mail-Ziel
 
-Legen Sie **Aktiviert ** auf **Ja** fest, um eine Ausgabedatei per E-Mail zu senden. Wenn diese Option aktiviert ist, können Sie den E-Mail-Betreff bearbeiten und die E-Mail-Empfänger angeben. Sie können für den E-Mail-Betreff konstante Texte und den Text einrichten, oder Sie können ER-Formeln verwenden, um E-Mail-Texte dynamisch zu erstellen. Sie könnne E-Mail-Adressen für ER auf zwei Arten konfigurieren. Die Konfiguration kann gleich abgeschlossen werden wie die Druckverwaltungsfunktion in Dynamics 365 for Operations. Alternativ können Sie eine E-Mail-Adresse auflösen, indem Sie einen direkten Verweis auf die ER-Konfiguration mit einer Formel verwenden.
+Legen Sie **Aktiviert** auf **Ja** fest, um eine Ausgabedatei per E-Mail zu senden. Wenn diese Option aktiviert ist, können Sie den E-Mail-Betreff bearbeiten und die E-Mail-Empfänger angeben. Sie können für den E-Mail-Betreff konstante Texte und den Text einrichten, oder Sie können ER-Formeln verwenden, um E-Mail-Texte dynamisch zu erstellen. Sie könnne E-Mail-Adressen für ER auf zwei Arten konfigurieren. Die Konfiguration kann gleich abgeschlossen werden wie die Druckverwaltungsfunktion in Dynamics 365 for Operations. Alternativ können Sie eine E-Mail-Adresse auflösen, indem Sie einen direkten Verweis auf die ER-Konfiguration mit einer Formel verwenden.
 
 ### <a name="email-address-types"></a>E-Mail-Adressen-Arten
 
@@ -92,11 +93,11 @@ Verwenden Sie diesen E-Mail-Typ, wenn die Konfiguration, die Sie verwenden, eine
 
 ### <a name="archive-destination"></a>Archivziel
 
-Mit dieser Option können Ausgaben als Microsoft SharePoint-Ordner oder Microsoft Azure Storage senden. Legen Sie **Aktiviert** auf **Ja **fest, um die Ausgabe an ein Ziel zu senden, das über den ausgewählten Dokumenttyp definiert ist. Nur Dokumenttypen mit der Gruppe **Datei** stehen zur Auswahl. Sie legen die Dokumenttypen unter **Organisationsadministration** &gt; **Dokumentenmanagement** &gt; **Dokumenttypen** fest. Die Konfiguration für ER-Ziele ist identisch mit der Konfiguration für das Dokumentverwaltungssystem.
+Mit dieser Option können Ausgaben als Microsoft SharePoint-Ordner oder Microsoft Azure Storage senden. Legen Sie **Aktiviert** auf **Ja**fest, um die Ausgabe an ein Ziel zu senden, das über den ausgewählten Dokumenttyp definiert ist. Nur Dokumenttypen mit der Gruppe **Datei** stehen zur Auswahl. Sie legen die Dokumenttypen unter **Organisationsadministration** &gt; **Dokumentenmanagement** &gt; **Dokumenttypen** fest. Die Konfiguration für ER-Ziele ist identisch mit der Konfiguration für das Dokumentverwaltungssystem.
 
 [![Seite „Dokumenttypen”](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 
-Der Speicherort bestimmt, wo die Datei gespeichert wird. Nachdem das Ziel **Archiv** aktiviert ist, können Sie die Ergebnisse der Konfigurationsausführung im Einzelvorgangsarchiv gespeichert werden. Sie können die Ergebnisse **Organisationsverwaltung**&gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstellung archivierte Einzelvorgänge** anzeigen. **Hinweis** Sie können einen Dokumenttyp für das Einzelvorgangsarchiv in Dynamics 365 for **Organisationsverwaltung** &gt; ** Arbeitsbereiche** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstattungsparameter** auswählen.
+Der Speicherort bestimmt, wo die Datei gespeichert wird. Nachdem das Ziel **Archiv** aktiviert ist, können Sie die Ergebnisse der Konfigurationsausführung im Einzelvorgangsarchiv gespeichert werden. Sie können die Ergebnisse **Organisationsverwaltung**&gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstellung archivierte Einzelvorgänge** anzeigen. **Hinweis** Sie können einen Dokumenttyp für das Einzelvorgangsarchiv in Dynamics 365 for **Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstattungsparameter** auswählen.
 
 #### <a name="sharepoint"></a>SharePoint
 
@@ -110,7 +111,7 @@ Wenn der Dokumenttypspeicherort auf **Archivverzeichnis** festgelegt ist, könne
 
 ### <a name="file-destination"></a>Dateizielort
 
-Legen Sie **Aktiviert** auf **Ja **fest, um das Öffnen- oder Speichern-Dialogfeld nach der Ausführung der Konfiguration anzuzeigen.
+Legen Sie **Aktiviert** auf **Ja**fest, um das Öffnen- oder Speichern-Dialogfeld nach der Ausführung der Konfiguration anzuzeigen.
 
 ### <a name="screen-destination"></a>Bildschirmziel
 

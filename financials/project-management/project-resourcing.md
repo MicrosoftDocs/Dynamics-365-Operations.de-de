@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: c29c95fc6abd13e668c44d3ccf437bb0e879e46b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11755e4ab4b3c1f55da80e57ff96e0b13c84c697
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -130,7 +131,7 @@ Ein Projektmanager kann die Projektressourcenfunktionen verwenden, um die Rollen
 
 [![Beispiel einer Rolle](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
 
-**Szenario: **Contoso wurde für ein Aufwandsprojekt gebucht, das eine genehmigte Projektcharter hat. Der Juniorprojektmanager arbeitet noch am Umfang des Projekts. Der Ressourcen-Manager identifiziert derzeit zugewiesene Ressourcen, die reserviert für die Arbeit an dem neuen Projekt zugewiesen werden. Eine der Rollen, die der Projektträger aufgrund der Wichtigkeit des Projekts angefordert hat, ist ein Senior-Projektmanager. Der Ressourcen-Manager muss die neue Ressource abgerufen und beschließt, die Rolle im System zu definieren, falls der Juniorprojektmanager die Ressourceninformationen während der Projektplanung benötigt. 
+**Szenario:**Contoso wurde für ein Aufwandsprojekt gebucht, das eine genehmigte Projektcharter hat. Der Juniorprojektmanager arbeitet noch am Umfang des Projekts. Der Ressourcen-Manager identifiziert derzeit zugewiesene Ressourcen, die reserviert für die Arbeit an dem neuen Projekt zugewiesen werden. Eine der Rollen, die der Projektträger aufgrund der Wichtigkeit des Projekts angefordert hat, ist ein Senior-Projektmanager. Der Ressourcen-Manager muss die neue Ressource abgerufen und beschließt, die Rolle im System zu definieren, falls der Juniorprojektmanager die Ressourceninformationen während der Projektplanung benötigt. 
 
 Die folgenden Schritte zeigen, wie der Ressourcen-Manager den Senior-Projektmanager einrichten und Ressourcenmerkmale zuordnen kann. Später kann die Rolle verwendet werden, um für verfügbare Ressourcen zu finden, die die erforderlichen Ressourcenkompetenzen aufweisen.
 
@@ -316,7 +317,7 @@ Es wurden zusätzliche Optionen im PSP zur besseren Verwendung der Ressourcenfun
 
 > [!NOTE] 
 > Es wird keine Warnung angezeigt, dass die angegebene Ressource jetzt 2 ist, da die Anzahl der Ressourcen bei 1 bleibt.
-18. Prüfen Sie auf der Seite **Projektstrukturplan ** Seite die Ressourcenzuweisung im PSP, und klicken Sie anschließend auf **Speichern**.
+18. Prüfen Sie auf der Seite **Projektstrukturplan** Seite die Ressourcenzuweisung im PSP, und klicken Sie anschließend auf **Speichern**.
 
 ## <a name="resource-fulfillment-for-planned-resources"></a>Ressourcenerfüllung für geplante Ressourcen
 Ein Projektmanager kann erforderliche Ressourcenrollen für ein Projekt planen. Der Ressourcen-Manager sieht diese geplanten Ressourcen als Anforderungen auf der **Ressourcenerfüllung**-Seite und kann die tatsächliche Ressourcen zuweisen.

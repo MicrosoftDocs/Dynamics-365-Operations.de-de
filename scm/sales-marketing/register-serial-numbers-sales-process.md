@@ -19,10 +19,11 @@ ms.search.industry: Distribution
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: ec2907129e68f39e6e5f56f0617b7599598312d2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: de1d8bc2fa1080e549cb8c33657ad0f373644d38
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +56,7 @@ Die Einstellungen der Rückverfolgungsangabengruppe, die dem Produkt zugewiesen 
 Sie können Teilrechnungen und Lieferscheine für Aufträge erstellen und nur die Seriennummern für Artikel erfassen, die diese Rechnungen und Lieferscheine beinhalten. Wenn Sie eine Teilrechnung erstellen möchten und Sie mehr als einen Lieferschein für den Auftrag haben, können Sie Seriennummern von mehr als einem Lieferschein einschließen. Es kann jedoch nur einen Lieferschein geben, der nicht alle Seriennummern umfasst. Wenn also beispielsweise drei Lieferscheine vorliegen und jeder Lieferschein zwei serialisierte Artikel umfasst, können Sie keine Teilrechnung für einen Artikel von jedem Lieferschein erstellen.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Was tue ich, wenn eine Seriennummer nicht lesbar ist?
-Wenn eine Seriennummer nicht gelesen oder gescannt werden kann, können Sie eine Leerzeile für den Artikel erstellen, indem Sie auf **Nicht lesbar **auf der Seite **Seriennummern **klicken. Wenn die Seriennummer später verfügbar wird, können Sie die Rechnung oder der Lieferschein aktualisieren. Weitere Informationen finden Sie im nächsten Abschnitt, "Kann ich die Seriennummern korrigieren oder ändern, die ich für einen Auftrag erfasst habe?"
+Wenn eine Seriennummer nicht gelesen oder gescannt werden kann, können Sie eine Leerzeile für den Artikel erstellen, indem Sie auf **Nicht lesbar**auf der Seite **Seriennummern**klicken. Wenn die Seriennummer später verfügbar wird, können Sie die Rechnung oder der Lieferschein aktualisieren. Weitere Informationen finden Sie im nächsten Abschnitt, "Kann ich die Seriennummern korrigieren oder ändern, die ich für einen Auftrag erfasst habe?"
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Kann ich die Seriennummern korrigieren oder ändern, die ich für einen Auftrag erfasst habe?
 Ja, Sie können Seriennummern ändern, wenn die folgenden Bedingungen erfüllt sind:

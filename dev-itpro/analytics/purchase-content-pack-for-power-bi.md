@@ -3,7 +3,7 @@ title: Einkaufausgabenanalyse Power BI-Inhalt
 description: "In diesem Thema wird beschrieben, was im Einkaufausgabenanalyse-Inhaltspaket für Microsoft Power Bl enthalten ist. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-12-30 09 - 40 - 51
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 8cb928cbf1316e63a8c7de833587168cd36a455c
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d392b88942f4b7d7365b000df1cd69809060b910
+ms.openlocfilehash: e39b1677038037cd91cfad8d104d0130bc20fb9b
+ms.contentlocale: de-de
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a>Einkaufausgabenanalyse Power BI-Inhalt
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird beschrieben, was im Einkaufausgabenanalyse-Inhaltspaket für Microsoft Power Bl enthalten ist. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen.
 
@@ -38,6 +42,7 @@ Das Einkaufausgabenanalyse-Inhaltspaket für Microsoft Power BI wurde für Einka
 
 ## <a name="accessing-the-content-pack"></a>Zugreifen auf das Inhaltspaket
 Der Einkaufausgabenanalyse-Inhaltspaket für Power BI wird als Implementierungsressource in Microsoft Dynamics Lifecycle Services (LCS) veröffentlicht und kann von Dynamics 365 for Operations zugegriffen werden. Weitere Informationen dazu, wie Power BI-Bericht erstellt werden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
+Hinweis: KB4011327 ist eine Voraussetzung für diesen Power BI Inhalt Nachdem Sie sich bei Lifecycle Services angemeldet haben, können Sie hier auf KB zugreifen: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="metrics-that-are-included-in-the-content-pack"></a>Metriken, die im Paket enthalten sind
 Der Einkaufausgabenanalyse-Inhaltspaket enthält einen Bericht, der einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Tabelle enthält eine Übersicht der im Visualisierungen im Inhaltspaket.
@@ -129,7 +134,7 @@ Der Einkaufausgabenanalyse-Inhaltspaket enthält einen Bericht, der einem Satz M
 \*Einkauf dieser und letzten Jahr und Wachstum nach Beschaffungskategorie.
 
 ## <a name="data-model-and-entities"></a>Datenmodell und Entitäten
-Dynamics 365 for Operations-Daten werden für den Bericht des Einkaufausgabenanalyse-Inhaltspakets verwendet. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden, der eine Microsoft SQL-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen zum Entitätsspeicher finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Purchase Cube in Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Operations 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Inhaltspakets verwendet.
+Dynamics 365 for Operations-Daten werden für den Bericht des Einkaufausgabenanalyse-Inhaltspakets verwendet. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden, der eine Microsoft SQL-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen zum Entitätsspeicher finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Purchase Cube in Microsoft Dynamics AX 2012 und Microsoft Dynamics AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Inhaltspakets verwendet.
 
 | Entität        | Zentrale aggregierte Messungen | Datenquelle für Dynamics 365 for Operations | Feld              | Beschreibung                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
@@ -162,6 +167,8 @@ Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstelle
 -   [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](configure-power-bi-integration.md)
+
+
 
 
 

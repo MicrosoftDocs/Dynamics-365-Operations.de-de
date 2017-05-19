@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: e7cc68b1b40b6a0361d7c215af466ae5a17a2aaa
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 6bf6194b2e198cdbb8e0acf9efda7d7279b072f6
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -140,7 +141,7 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam Buchung**
+**Buchung für Fabrikam**
 
 | Konto                           | Sollbetrag            | Habenbetrag           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -149,7 +150,7 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 | Realisierter Verlust (Fabrikam)          | 0,00 EUR/12,90 USD    |                         |
 | Fällig von Fabrikam Ost (Fabrikam) |                         | 0,00 EUR/12,90 USD    |
 
-**Fabrikam Ost Buchung**
+**Buchung für Fabrikam Ost**
 
 | Konto                          | Sollbetrag            | Habenbetrag           |
 |----------------------------------|-------------------------|-------------------------|
@@ -181,7 +182,7 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
 
-**Fabrikam Buchung**
+**Buchung für Fabrikam**
 
 | Konto                           | Sollbetrag            | Habenbetrag           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -190,7 +191,7 @@ Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Cof
 | Realisierter Verlust (Fabrikam)          | 0,00 EUR/12,66 USD    |                         |
 | Fällig von Fabrikam Ost (Fabrikam) |                         | 0,00 EUR/12,66 USD    |
 
-**Fabrikam Ost Buchung**
+**Buchung für Fabrikam Ost**
 
 | Konto                          | Sollbetrag            | Habenbetrag           |
 |----------------------------------|-------------------------|-------------------------|
@@ -236,14 +237,14 @@ Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Four
 | Fällig von Fabrikam West (Fabrikam) | 100,00       |               |
 | Kreditoren (Fabrikam)       |              | 100,00        |
 
-**Fabrikam East posting**
+**Buchung für Fabrikam Ost**
 
 | Konto                           | Sollbetrag | Habenbetrag |
 |-----------------------------------|--------------|---------------|
 | Fällig von Fabrikam (Fabrikam Ost) | 25,00        |               |
 | Kreditoren (Fabrikam Ost)  |              | 25,00         |
 
-**Buchung für Fabrikam West**B
+**Buchung für Fabrikam West**
 
 | Konto                          | Sollbetrag | Habenbetrag |
 |----------------------------------|--------------|---------------|
@@ -276,21 +277,21 @@ Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Four
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost
 
-**Buchung für Fabrikam**B
+**Buchung für Fabrikam**
 
 | Konto                           | Sollbetrag | Habenbetrag |
 |-----------------------------------|--------------|---------------|
 | Fällig von Fabrikam West (Fabrikam) | 75,00        |               |
 | Kreditoren (Fabrikam)       |              | 75,00         |
 
-**Fabrikam Ost Buchung**
+**Buchung für Fabrikam Ost**
 
 | Konto                                | Sollbetrag | Habenbetrag |
 |----------------------------------------|--------------|---------------|
 | Fällig von Fabrikam West (Fabrikam Ost) | 25,00        |               |
 | Kreditoren (Fabrikam Ost)       |              | 25,00         |
 
-**Fabrikam West Buchung**
+**Buchung für Fabrikam West**
 
 | Konto                              | Sollbetrag | Habenbetrag |
 |--------------------------------------|--------------|---------------|

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 8965c193839002776b3c61036b23b54625c974a4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 734bf8a5cd71d218942e1a57fbb6af8fef4dc998
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,10 +40,10 @@ Alle Personalisierungen jeden Typs, die ein Benutzer in Dynamics 365 for Operati
 ## <a name="systemwide-options-for-the-current-user"></a>Systemweite Optionen für den aktuellen Benutzer
 In der Navigationsleiste sehen Sie ein Zahnrad, das als Menüschaltfläche **Einstellungen** bezeichnet wird. Durch Öffnen des Menüs **Einstellungen** werden einige Optionen angezeigt. Durch Auswählen von **Optionen** wird die Seite **Benutzeroptionen** geöffnet. Dort finden Sie vier Optionsregisterkarten: **Visuell**, **Voreinstellungen**, **Konto** und **Workflow**.
 
--   **Visuell: ** Wird verwendet, um ein Farbenthema und die standardmäßige Größe der Elemente auf den Seiten auszuwählen.
--   **Voreinstellungen: **Hier können Sie Standards für jedes Mal, wenn Sie Dynamics 365 for Operations öffnen, auswählen, einschließlich Unternehmen, Startseite und Standardansicht/Bearbeitungsmodus (wodurch bestimmt wird, ob eine Seite jedes Mal, wenn Sie die öffnen, nur angezeigt oder bearbeitet werden kann). Sie finden auch Optionen für Sprache, Zeitzone, Datum, Uhrzeit und Zahlenformat. Schließlich enthält diese Seite mehrere verschiedene Voreinstellungen, die von Freigabe zu Freigabe variieren.
--   **Konto: **Wird verwendet, um Ihre Benutzerkennung und andere kontobezogene Optionen bereitzustellen.
--   **Workflow: **Hier können Sie workflowbezogene Optionen auswählen.
+-   **Visuell:** Wird verwendet, um ein Farbenthema und die standardmäßige Größe der Elemente auf den Seiten auszuwählen.
+-   **Voreinstellungen:**Hier können Sie Standards für jedes Mal, wenn Sie Dynamics 365 for Operations öffnen, auswählen, einschließlich Unternehmen, Startseite und Standardansicht/Bearbeitungsmodus (wodurch bestimmt wird, ob eine Seite jedes Mal, wenn Sie die öffnen, nur angezeigt oder bearbeitet werden kann). Sie finden auch Optionen für Sprache, Zeitzone, Datum, Uhrzeit und Zahlenformat. Schließlich enthält diese Seite mehrere verschiedene Voreinstellungen, die von Freigabe zu Freigabe variieren.
+-   **Konto:**Wird verwendet, um Ihre Benutzerkennung und andere kontobezogene Optionen bereitzustellen.
+-   **Workflow:**Hier können Sie workflowbezogene Optionen auswählen.
 
 ## <a name="implicit-personalizations"></a>Implizite Personalisierungen
 Implizite Personalisierungen sind die Personalisierungen, die Sie ausführen, indem Sie einfach mit bestimmten Steuerelementen interagieren, die sich an ihren aktuell sichtbaren Status erinnern. 
@@ -106,7 +107,7 @@ Einige Arbeitsbereiche enthalten die Anzahl kacheln (Kacheln mit Zahlen für sie
 Das Dashboard ist häufig die erste Seite, die Sie sehen, wenn Sie Dynamics 365 for Operations öffnen. Sie können das Dashboard personalisieren, um die Arbeitsbereichsnavigationskacheln umzubenennen, um nur nur Kacheln anzuzeigen, die Sie sehen möchten, um die Kacheln umzubenennen oder um die Kacheln in der Reihenfolge anzuordnen, in der Sie sie sehen möchten. Um das Dashboard zu personalisieren, wählen Sie eine beliebige Kachel aus und klicken Sie mit der rechten Maustaste, um ein Kontextmenü zu öffnen. Wählen Sie im Kontextmenü **Anpassen** aus. Wenn die ausgewählte Kachel eine ist, die Sie ausblenden oder umbenennen oder übersprungen möchten, können Sie diese Änderung direkt im anzeigten Eigenschaftenfenster vornehmen. Wenn Sie die Kacheln anordnen möchten, wählen Sie **Dieses Formular personalisieren** im Eigenschaftenfenster aus, um die Personalisierungssymbolleiste zu öffnen. Sie können das Tool „Umlagern“ dann verwenden, um die Kacheln anzuordnen.
 
 ## <a name="administration-of-personalization"></a>Verwalten der Personalisierung
-Es ist möglich, eine Seite zu personalisieren und sie für andere Benutzer freizugeben, indem Sie einfach die personalisierte Seite exportieren und die anderen Benutzer auffordern, zur personalisierten Seite zu navigieren und die Personalisierungsdatei zu importieren, die Sie erstellt haben. Wenn ein Benutzer Administratorrechte besitzt, können sie die Personalisierungen auch für andere Benutzer in der Seite **Personalisierungseinstellung** verwalten. Navigieren Sie zur b-Seite. Auf der Seite **Personalisierung** finden Sie zwei Registerkarten, **System** und** Benutzer**. 
+Es ist möglich, eine Seite zu personalisieren und sie für andere Benutzer freizugeben, indem Sie einfach die personalisierte Seite exportieren und die anderen Benutzer auffordern, zur personalisierten Seite zu navigieren und die Personalisierungsdatei zu importieren, die Sie erstellt haben. Wenn ein Benutzer Administratorrechte besitzt, können sie die Personalisierungen auch für andere Benutzer in der Seite **Personalisierungseinstellung** verwalten. Navigieren Sie zur b-Seite. Auf der Seite **Personalisierung** finden Sie zwei Registerkarten, **System** und**Benutzer**. 
 
 **System:** Hier können Sie vorübergehend alle Personalisierungen im System deaktivieren oder „ausschalten“. Damit werden die Personalisierungen nicht gelöscht, stattdessen werden alle Formulare auf ihren Standardstatus zurückgesetzt. Sie können Personalisierung später erneut aktivieren, damit alle Personalisierungen erneut auf die einzelnen Benutzerformulare angewendet werden. Sie können auch Personalisierungen für alle Benutzer löschen. Beachten Sie, dass wenn Sie Personalisierungen löschen, keine Möglichkeit besteht, Personalisierungen vom System automatisch zu aktivieren. Stellen Sie sicher, dass sie Personalisierungen exportiert haben, die Sie vielleicht später importieren möchten, bevor Sie diesen Schritt durchführen. 
 

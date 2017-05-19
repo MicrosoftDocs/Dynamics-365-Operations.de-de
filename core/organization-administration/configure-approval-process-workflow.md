@@ -3,7 +3,7 @@ title: Einen Genehmigungsschritt in einem Workflow genehmigen
 description: Verwenden Sie das folgende Verfahren, um die Eigenschaften des Genehmigungsprozesses zu konfigurieren.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 579e393ef64bc5ad72d129ac08ac215c524d5c55
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 99decd86602e7537af6393c6d28c262f20ca1f00
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Einen Genehmigungsschritt in einem Workflow genehmigen
+
+[!include[banner](../includes/banner.md)]
+
 
 Verwenden Sie das folgende Verfahren, um die Eigenschaften des Genehmigungsprozesses zu konfigurieren.
 
@@ -44,7 +48,7 @@ Sie können festlegen, dass eine automatische Aktivität für das Dokument ausge
 4.  Geben Sie eine Bedingung ein.
 5.  Geben Sie ggf. zusätzliche Bedingungen ein.
 6.  Führen Sie folgende Schritte aus, um die korrekte Konfiguration der eingegebenen Bedingungen zu überprüfen:
-    1.  Klicken Sie auf **Test**, um das Formular ** Workflow-Bedingungen testen** zu öffnen.
+    1.  Klicken Sie auf **Test**, um das Formular **Workflow-Bedingungen testen** zu öffnen.
     2.  Wählen Sie im Bereich **Bedingung überprüfen** des Formulars einen Datensatz aus.
     3.  Klicken Sie auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht.
     4.  Klicken Sie auf **OK** oder **Abbrechen**, um zum Formular **Eigenschaften** zurückzukehren.
@@ -132,7 +136,7 @@ Eine letzte genehmigende Person sollte für Szenarios festgelegt werden, in dene
 
 ## <a name="set-a-time-limit"></a>Festlegen einer Zeitgrenze
 Gehen Sie folgendermaßen vor, wenn der Genehmigungsprozess in einer bestimmten Zeit abgeschlossen werden muss.
-| **Hinweis **                                                                                                                                                |
+| **Hinweis**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Die in diesen Schritten ausgewählten Optionen setzen die Optionen außer Kraft, die Sie in den Bereichen **Zuweisung** und **Eskalation** jedes Genehmigungsschritts ausgewählt haben. |
 
@@ -155,13 +159,15 @@ Wenn ein Dokument einem Benutzer zur Genehmigung zugewiesen wird, muss der Benut
 4.  Aktivieren Sie das Kontrollkästchen **Änderung anfordern**, wenn der Benutzer Änderungen des Dokuments anfordern kann.
 5.  Aktivieren Sie das Kontrollkästchen **Delegieren**, wenn der Benutzer das Dokument einem anderen Benutzer zur Genehmigung zuweisen kann.
 
-**Hinweis**: Das Kontrollkästchen **Aktionen von der Arbeitsliste in Enterprise Portal aktivieren ** ist nicht mehr vorhanden.
+**Hinweis**: Das Kontrollkästchen **Aktionen von der Arbeitsliste in Enterprise Portal aktivieren** ist nicht mehr vorhanden.
 
 ## <a name="configure-the-approval-steps"></a> Konfigurieren der Genehmigungsschritte
 Ein Genehmigungsprozess besteht aus Genehmigungsschritten. Führen Sie die folgende Prozedur aus, um dem Genehmigungsprozess Schritte hinzuzufügen und die Schritte zu konfigurieren.
 1.  Doppelklicken Sie im Workflow-Editor auf den Genehmigungsprozess. Im Workflow-Editor werden die Schritte des Genehmigungsprozesses angezeigt.
 2.  Ziehen Sie zum Hinzufügen eines Genehmigungsschritts den Schritt aus dem Bereich **Workflow-Elemente** auf die Canvas.
-3.  Informationen zum Konfigurieren eines Genehmigungsschritts finden, finden Sie unter[Konfigurieren eines Genehmigungsschritts](http://axhelp.dynamics.com/en/wiki/configure-an-approval-step/).
+3.  Informationen zum Konfigurieren eines Genehmigungsschritts finden, finden Sie unter[Konfigurieren eines Genehmigungsschritts](configure-approval-step-workflow.md).
+
+
 
 
 

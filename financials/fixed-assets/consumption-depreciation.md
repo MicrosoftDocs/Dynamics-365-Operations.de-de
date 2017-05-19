@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 7fa432ebfc433b6396589df053b2b485b2ec6dbd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ccf73e1c87a7a3e14205eee7e5510688fbf56eee
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -46,7 +47,7 @@ Wenn Sie beim Einrichten eines Anlagenabschreibungsprofils **Verbrauch** im Feld
     -   Abschreibung pro Einheit
     -   Vorkalkulierter Verbrauch
 
-    Das Feld** Gebuchter Verbrauch** enthält die Verbrauchsabschreibung (in Einheiten), die bereits für die Kombination aus Anlage und Wertmodell oder für das Abschreibungsbuch gebucht wurde. Sie können diesen Feldwert nicht manuell aktualisieren.
+    Das Feld**Gebuchter Verbrauch** enthält die Verbrauchsabschreibung (in Einheiten), die bereits für die Kombination aus Anlage und Wertmodell oder für das Abschreibungsbuch gebucht wurde. Sie können diesen Feldwert nicht manuell aktualisieren.
 
 ## <a name="examples"></a>Beispiele
 ### <a name="example-1"></a>Beispiel 1

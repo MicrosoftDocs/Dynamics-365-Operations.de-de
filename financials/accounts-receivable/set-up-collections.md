@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 1a9bf1067d0f6e0e139ef13d939d2f0e9bf2126b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8dd5cc110e83e1b10db233547b0ac2081cc6c380
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden.
 Eine Zahlungsfristdefinition einrichten. Eine Zahlungsfristdefinition legt die in den Listenseiten **Saldenrückblick**, **Inkassoaktivitäten** und **Inkassofälle** angezeigten Spalten fest. Sie definiert auch die Perioden, die auf der Seite **Inkassi** angezeigt werden. Beim Einrichten eines Debitorenpools wird die Zahlungsfristdefinition für den Pool verwendet. Werden keine Pools eingerichtet, wird die standardmäßige Zahlungsfristdefinition verwendet, die auf der Seite **Debitorenparameter** angegeben ist. Ist keine standardmäßige Zahlungsfristdefinition angegeben, wird die erste Zahlungsfristdefinition auf der Seite **Zahlungsfristdefinitionen** verwendet.
 
 ## <a name="create-an-aging-snapshot"></a>Erstellen einer Fälligkeitsmomentaufnahme
-Sie können Datensätze mit einer Fälligkeitsmomentaufnahme für alle Debitoren oder für die Debitoren in einem Debitorenpool erstellen. Informationen zu Fälligkeitsmomentaufnahmen werden auf der Listenseite** Saldenrückblick** und auf der Seite **Inkassi** angezeigt. Sie müssen zuerst eine Fälligkeitsmomentaufnahme erstellen, bevor Sie die Listenseite verwenden können. Auf der Listenseite werden nur Informationen für Debitoren angezeigt, für die eine Fälligkeitsmomentaufnahme erstellt wurde.
+Sie können Datensätze mit einer Fälligkeitsmomentaufnahme für alle Debitoren oder für die Debitoren in einem Debitorenpool erstellen. Informationen zu Fälligkeitsmomentaufnahmen werden auf der Listenseite**Saldenrückblick** und auf der Seite **Inkassi** angezeigt. Sie müssen zuerst eine Fälligkeitsmomentaufnahme erstellen, bevor Sie die Listenseite verwenden können. Auf der Listenseite werden nur Informationen für Debitoren angezeigt, für die eine Fälligkeitsmomentaufnahme erstellt wurde.
 
 ## <a name="optional-set-up-customer-pools"></a>Optional: Einrichten von Debitorenpools
 Sie können Debitorenpools für Gruppen von Debitoren einrichten. Auf den Listenseiten **Inkassi**, auf der Seite **Inkassi** oder beim Erstellen von Fälligkeitsmomentaufnahmen können Debitorenpools als Filter für Debitoreninformationen verwendet werden.

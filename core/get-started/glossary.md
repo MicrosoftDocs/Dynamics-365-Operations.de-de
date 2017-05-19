@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Operations, Glossar
-description: "Das Microsoft Dynamics A 365 for Operations Glossar enthält Definitionen der wichtigsten Begriffe und Konzepte in Bezug auf das Microsoft Dynamics 365 for Operations Produkt."
+title: "Dynamics 365 for Operations – Glossar"
+description: "Das Microsoft Dynamics 365 for Operations-Glossar enthält Definitionen zu den wichtigsten Begriffen und Konzepten des Produkts Microsoft Dynamics 365 for Operations."
 author: tonyafehr
 manager: AnnBe
 ms.date: 04/04/2017
@@ -17,20 +17,21 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0d8af341c8020f756f1a736f6f74402e992d6e16
-ms.openlocfilehash: c6372e366db6abc7b586c2f1185ecd44bbf28502
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: dd9f65e045367aeba081d026da53894679ee7ed0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Microsoft Dynamics 365 for Operations, Glossar
+# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations – Glossar
 
 [!include[banner](../includes/banner.md)]
 
 
-Das Microsoft Dynamics A 365 for Operations Glossar enthält Definitionen der wichtigsten Begriffe und Konzepte in Bezug auf das Microsoft Dynamics 365 for Operations Produkt. 
+Das Microsoft Dynamics 365 for Operations-Glossar enthält Definitionen zu den wichtigsten Begriffen und Konzepten des Produkts Microsoft Dynamics 365 for Operations. 
 
 ### <a name="a"></a>**A**
 
@@ -40,9 +41,9 @@ Eine Erfassung, die verwendet wird, um die finanziellen Auswirkungen von Buchhal
 
 ###### <a name="accounting-rule"></a>**Buchhaltungsvorschrift**
 
-Eine Regel in einem Buchhaltungssystem, mit der Prinzipien, Methoden und Verfahren zum Klassifizieren und Erfassen der finanziellen Auswirkungen von Buchhaltungsereignissen einschließlich Berichterstattung kontrolliert werden.
+Eine Regel in einem Buchhaltungssystem, mit der Prinzipien, Methoden und Prozeduren zum Klassifizieren und Erfassen der finanziellen Auswirkungen von Buchhaltungsereignissen einschließlich Berichterstattung gesteuert werden.
 
-###### <a name="ach-automated-clearing-house"></a>**ACH (Automated Clearing House, US)**
+###### <a name="ach-automated-clearing-house"></a>**ACH – Automated Clearing House (US)**
 
 Ein in den USA verfügbares System für elektronische Überweisungen, dass Überweisungen zwischen den Bankkonten von Zahlungsempfänger und Zahlungsauftraggeber vereinfacht.
 
@@ -70,7 +71,7 @@ Der Prozess zum Klassifizieren von Zeiträumen nach Frist.
 
 Die Anzahl von Tagen in einem Zeitraum, der dazu dient, überfällige Debitorenzahlungen zu melden.
 
-### <a name="b"></a>**Mrd**
+### <a name="b"></a>**B**
 
 ###### <a name="balance-sheet"></a>**Bilanz**
 
@@ -152,15 +153,15 @@ Die maximale Menge an geplanter Arbeit, die eine Ressource leisten kann, wenn mi
 
 ###### <a name="capacity-planning"></a>**Kapazitätsplanung**
 
-Ein Verfahren zum Bestimmen der Ressourcenkapazitätsanforderungen, um den Bedarf an künftigen hergestellten Produkten in bestimmten Zeiträumen zu erfüllen.
+Eine Prozedur zum Bestimmen der Ressourcenkapazitätsanforderungen, um den Bedarf an künftigen hergestellten Produkten in bestimmten Zeiträumen zu erfüllen.
 
 ###### <a name="carry-forward-budget"></a>**Vortragsbudget**
 
 Das Budget, das aus einem Geschäftsjahr in das nächste Geschäftsjahr übertragen wird und das für offene Bestellungen im neuen Geschäftsjahr reserviert ist.
 
-###### <a name="cash-generating-unit"></a>**zahlungsmittelgenerierende Einheit**
+###### <a name="cash-generating-unit"></a>**Zahlungsmittelgenerierende Einheit**
 
-Die niedrigste Gruppe von klassifizierbaren Anlagen, die Bargeld unabhängig von anderen Anlagen innerhalb einer Organisation generiert. Diese Gruppen von Anlagen werden verwendet, um Beeinträchtigungsverluste zu messen, die anfallen.
+Die kleinste Gruppe klassifizierbarer Anlagen, die Bargeld unabhängig von anderen Anlagen innerhalb einer Organisation generiert. Diese Gruppen von Anlagen werden zum Messen von anfallenden Beeinträchtigungsverlusten verwendet.
 
 ###### <a name="catch-weight"></a>**Artikelgewicht**
 
@@ -168,7 +169,7 @@ Das tatsächliche oder Nenngewicht eines Verkaufsartikels oder Lagerartikels.
 
 ###### <a name="chart-of-accounts"></a>**Kontenplan**
 
-Eine Liste der Hauptkonten.
+Eine Liste von Hauptkonten.
 
 ###### <a name="cogs-cost-of-goods-sold"></a>**COGS (Wareneinsatz)**
 
@@ -178,7 +179,7 @@ Eine Buchungskategorie, die verwendet wird, um die finanziellen Auswirkungen der
 
 Eine Preisgestaltungsstrategie zur Aktualisierung der Preise von Verkaufsartikeln, die aus Rohstoffen hergestellt werden, die häufigen Preisschwankungen unterliegen.
 
-###### <a name="consolidated-order"></a>**konsolidierter Auftrag**
+###### <a name="consolidated-order"></a>**Konsolidierter Auftrag**
 
 Ein Quelldokument, das mehrere Referenzaufträge dokumentiert.
 
@@ -218,17 +219,17 @@ Eine alphanumerische Kennung, die eine Währungseinheit darstellt.
 
 Die Zeit, die zum Abschließen einer Aktivität erforderlich ist.
 
-### <a name="d"></a>**S**
+### <a name="d"></a>**D**
 
 ###### <a name="dashboard"></a>**Dashboard**
 
-Die typische Startseite in Microsoft Dynamics 365 for Operations. Auf dem Dashboard finden Benutzer einen Abschnitt für jeden Arbeitsbereich, auf den sie Zugriff haben. Jeder Abschnitt zeigt die Kacheln aus den Zusammenfassungsabschnitten im zugehörigen Arbeitsbereich an. Das Dashboard besteht aus einem Namen und aus Abschnitten mit Kacheln.
+Die typische Startseite in Dynamics 365 for Operations. Auf dem Dashboard sehen Benutzer einen Abschnitt für jeden Arbeitsbereich, auf den sie Zugriff haben. Jeder Abschnitt zeigt die Kacheln aus den Zusammenfassungsabschnitten im zugehörigen Arbeitsbereich an. Das Dashboard besteht aus einem Namen und aus Abschnitten mit Kacheln.
 
 ###### <a name="data-entity"></a>**Datenentität**
 
-Eine Datenstruktur, die das Datenmerkmal einer Entität darstellt.
+Eine Informationsstruktur, die das Datenmerkmal einer Entität darstellt.
 
-###### <a name="delegate"></a>**Stellvertreter**
+###### <a name="delegate"></a>**Delegat**
 
 Ein Delegat ist ein Typ, der Referenzen zu anderen Methoden mit einer bestimmten Parameterliste und einem Rückgabetyp darstellt.
 
@@ -242,21 +243,21 @@ Eine Vorhersage des künftigen Produktbedarfs.
 
 ###### <a name="demand-forecasting"></a>**Bedarfsplanung**
 
-Ein Geschäftsprozess, der zukünftigen Bedarf bewertet und Bedarfsplanungen basierend auf früheren Buchungsdaten erstellt.
+Ein Geschäftsprozess, der zukünftigen Bedarf vorkalkuliert und Bedarfsplanungen basierend auf früheren Buchungsdaten erstellt.
 
 ###### <a name="deployable-package"></a>**Bereitstellbares Paket**
 
-Die Methode, die für die Bereitstellung auf Benutzerakzeptanztest (UAT) und Produktionsumgebungen verwendet wird.
+Die Methode, die für die Bereitstellung im Benutzerakzeptanztest (UAT) und in Produktionsumgebungen verwendet wird.
 
 ###### <a name="designer"></a>**Designer**
 
 Ein Visual Studio-Tool, das Sie verwenden, um Ihre Modellelemente zu erstellen, zu aktualisieren und zu überprüfen.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\dimension-based configuration**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**Dimensionsbasierte Produktkonfiguration**
 
 Eine Konfigurationstechnologie, die zum Erstellen von Produktvarianten durch Auswahl von Produktdimensionswerten verwendet wird.
 
-###### <a name="distinct-product"></a>**eindeutig identifizierbares Produkt**
+###### <a name="distinct-product"></a>**Eindeutig identifizierbares Produkt**
 
 Ein eindeutig identifizierbares Produkt.
 
@@ -276,7 +277,7 @@ Im Sicherheitsmodell eine Gruppe von Anwendungszugriffsrechten, die erforderlich
 
 ###### <a name="eft-electronic-funds-transfer"></a>**EFT (elektronische Überweisung)**
 
-Ein vernetztes System zum Überweisen von Beträgen von einer Bank an eine andere.
+Ein vernetztes System zum Überweisen von Beträgen von einem Bankkonto zu einem anderen.
 
 ###### <a name="event"></a>**Ereignis**
 
@@ -286,11 +287,11 @@ Ein Ereignis, bei dem eine Klasse oder ein Objekt andere Klassen oder Objekte be
 
 Ein Lean-Konzept, das verwendet wird, um einen regelmäßig wiederkehrenden Produktionszyklus einzurichten.
 
-###### <a name="extension"></a>**Erweiterung **
+###### <a name="extension"></a>**Erweiterung**
 
 Anpassen einer Anwendung, indem dem vorhandenen Code Funktionen hinzugefügt werden.
 
-### <a name="f"></a>**Fr**
+### <a name="f"></a>**F**
 
 ###### <a name="financial-dimension"></a>**Finanzdimension**
 
@@ -308,15 +309,15 @@ Ein Bericht, der die Finanzdaten und Finanzlage einer Organisation dokumentiert.
 
 Kosten, die unabhängig vom Produktlieferungsdurchsatz oder der hergestellten Produktmenge stets konstant bleiben.
 
-###### <a name="fixed-currency"></a>**feste Währung**
+###### <a name="fixed-currency"></a>**Feste Währung**
 
 Eine Währung, die einen festen Wechselkurs in Bezug auf eine andere Währung hat.
 
 ###### <a name="fixed-quantity-kanban"></a>**Kanban für feste Menge**
 
-Eine Kanban-Art, die verwendet wird, wenn einer Kanban-Regel eine konstante Anzahl von Kanbans zugeordnet ist.
+Ein Kanban-Typ, der verwendet wird, wenn einer Kanban-Regel eine konstante Anzahl von Kanbans zugewiesen ist.
 
-###### <a name="flexible-authentication"></a>**flexible Authentifizierung**
+###### <a name="flexible-authentication"></a>**Flexible Authentifizierung**
 
 Ein Automatisierungsprozess, bei dem Benutzer mithilfe einer Vielzahl von Identitätsverwaltungssystemen authentifiziert werden können.
 
@@ -330,7 +331,7 @@ Ein Ergebnis eines Stapelverarbeitungsvorgangs, der auf einer Formel basiert.
 
 ### <a name="g"></a>**G**
 
-###### <a name="general-budget-reservation"></a>**allgemeine Budgetreservierung**
+###### <a name="general-budget-reservation"></a>**Allgemeine Budgetreservierung**
 
 Ein Dokument, das häufig von Entitäten des öffentlichen Sektors verwendet wird, um budgetierte Geldmittel zurückzustellen oder zu markieren, damit diese Mittel nicht für andere Zwecke verfügbar sind.
 
@@ -390,11 +391,11 @@ Eine Regel in einem Lean Manufacturing-System, die Richtlinien für Materialplan
 
 ###### <a name="lean-manufacturing"></a>**Lean Manufacturing**
 
-Eine Philosophie, in der Produktionsvorgänge Lean-Geschäftsvorgänge und -Unternehmensaktivitäten fördern.
+Eine Philosophie, in der durch Produktionsvorgänge Lean-Produktionsflüsse und Geschäftsaktivitäten höher gestuft werden.
 
 ###### <a name="lean-schedule-group"></a>**Lean Schedule-Gruppe**
 
-Eine Methode zur Zusammenführung der Artikel für die Produktion, beispielsweise auf der Grundlage einer Versand- oder Transportgruppe erfolgen.
+Eine Methode zur Zusammenführung von Artikeln für die Produktion, beispielsweise auf der Grundlage einer Versand- oder Transportgruppe.
 
 ###### <a name="ledger-account"></a>**Sachkonto**
 
@@ -408,9 +409,9 @@ Ein alphanumerischer Schlüssel, der einer Partei das Recht einräumt, Software 
 
 Die Fähigkeit einer Partei, aktuelle Verbindlichkeiten mit aktuellen Aktivposten auszugleichen.
 
-### <a name="m"></a>**Mio**
+### <a name="m"></a>**M**
 
-###### <a name="manufacturing-overhead-based-on-material"></a>**materialbasierte Produktionsgemeinkosten**
+###### <a name="manufacturing-overhead-based-on-material"></a>**Materialbasierte Produktionsgemeinkosten**
 
 Produktionsgemeinkosten werden als Formeln zur Berechnung indirekter Kosten für einen Zuschlagsprozentsatz ausgedrückt. Als Grundlage für eine Berechnungsformel fungiert eine Kostengruppe, die Materialkomponenten zugewiesen wurde. Berechnungsformeln können entweder für einzelne Produkte oder für Produkten zugewiesene Artikelgruppen definiert werden. Dadurch erhöht sich die Flexibilität bei der Berechnung von materialbasierten Produktionsgemeinkosten.
 
@@ -428,7 +429,7 @@ Ein Modell ist eine Elementgruppe (Quelldateien und Metadaten), die eine verteil
 
 ### <a name="n"></a>**N**
 
-###### <a name="nbv-net-book-value"></a>**NBV (Nettobuchwert)**
+###### <a name="nbv-net-book-value"></a>**NBW (Nettobuchwert)**
 
 Der Wert einer Anlage, der als Differenz zwischen den ursprünglichen Kosten der Anlage abzüglich der kumulierten Abschreibungen berechnet wird.
 
@@ -468,7 +469,7 @@ Eine Person oder Organisation, die an wirtschaftlichen Aktivitäten teilnimmt.
 
 Der Prozess zur Nachverfolgung der Menge eines erforderlichen Artikels bis zu dessen Ursprung.
 
-###### <a name="pegging-event"></a>**bedarfsverursachendes Ereignis**
+###### <a name="pegging-event"></a>**Bedarfsverursachendes Ereignis**
 
 Ein Ressourcenflussereignis, das den Bedarf an einem Produkt signalisiert.
 
@@ -480,13 +481,13 @@ Ein Artikel, der hergestellt, aber nicht gelagert wird.
 
 Der voraussichtliche Bedarf an einem Produkt einer juristischen Person, die die Rolle eines Lieferanten übernimmt. Der geplante Bedarf wird aus dem geplanten Produktbedarf einer juristischen Person (Downstream) generiert.
 
-###### <a name="post"></a>**buchen**
+###### <a name="post"></a>**Buchen**
 
 Das Erfassen des Geldwerts eines wirtschaftsbezogenen Ereignisses in einem bestimmten Konto oder das Zusammenfassen und erneute Klassifizieren allgemeiner und sekundärer Erfassungskontoeinträge zu allgemeinen und sekundären Sachkontoeinträgen.
 
 ###### <a name="preparer"></a>**Antragsteller**
 
-Eine Person, die ein Quelldokument zur Beantragung wirtschaftlicher Ressource erstellt.
+Eine Person, die ein Quelldokument zur Beantragung wirtschaftlicher Ressourcen erstellt.
 
 ###### <a name="privilege"></a>**Recht**
 
@@ -502,11 +503,11 @@ Ein Teil eines Produkts.
 
 ###### <a name="product-dimension"></a>**Produktdimension**
 
-Die Produktattribute "Variante", "Größe" und "Farbe", die für eine ..\financial-dimensions\dimension-based Konfiguration verwendet werden.
+Die Produktattribute „Größe”, „Farbe” oder „Konfiguration”, die für eine dimensionsbasierte Produktkonfiguration verwendet werden.
 
 ###### <a name="product-family"></a>**Produktfamilie**
 
-Eine eindeutige Gruppierung von Artikeln, Dienstleistungen oder Rechten, die entweder an denselben Produktions- oder Lieferungsaktivitäten beteiligt sind oder die in denselben Marktsegmenten angeboten werden. In Microsoft Dynamics 365 for Operations wird die Gruppierung mit einem Planungsverteilungsschlüssel dargestellt.
+Eine eindeutige Gruppierung von Artikeln, Dienstleistungen oder Rechten, die entweder an denselben Produktions- oder Lieferungsaktivitäten beteiligt sind oder die in denselben Marktsegmenten angeboten werden. In Dynamics 365 for Operations wird die Gruppierung mit einem Planungsverteilungsschlüssel dargestellt.
 
 ###### <a name="product-master"></a>**Produktmaster**
 
@@ -556,7 +557,7 @@ Ein Quelldokument, das ein Angebot zum Kauf einer Menge eines Produkts zu einem 
 
 Ein Quelldokument, das Produktanforderungen dokumentiert, damit diese zur Prüfung übermittelt und dazu verwendet werden können, Bestellungen durch eine Einkaufsorganisation zu autorisieren.
 
-### <a name="q"></a>**Bld**
+### <a name="q"></a>**Q**
 
 ###### <a name="quantity-variance"></a>**Mengenabweichung**
 
@@ -574,9 +575,9 @@ Eine Methode zum Regulieren von zwei oder mehr Konten oder Finanzaufstellungen, 
 
 ###### <a name="reduction-key"></a>**Planzahlenverrechnungsschlüssel**
 
-Eine Methode, die verwendet wird, um Planbedarfe in der Produktprogrammplanung zu erhöhen oder zu verringern, basierend auf benutzerdefinierten Prozentsätzen, die in bestimmten Perioden angewendet werden.
+Eine Methode, die verwendet wird, um Plananforderungen in der Produktprogrammplanung zu erhöhen oder zu verringern, basierend auf benutzerdefinierten Prozentsätzen, die in bestimmten Perioden angewendet werden.
 
-###### <a name="register"></a>**registrieren**
+###### <a name="register"></a>**Register**
 
 Ein Datensatz, der verwendet wird, um die betrieblichen, rechtlichen und finanziellen Auswirkungen von Ressourcenflussereignissen in einem Buchhaltungssystem zu erfassen.
 
@@ -584,11 +585,11 @@ Ein Datensatz, der verwendet wird, um die betrieblichen, rechtlichen und finanzi
 
 Ein Produkt, das durch eine Regierungsbehörde reguliert wird und das einer Prüfung auf Einhaltung aller Vorschriften unterzogen wird.
 
-###### <a name="rfq-request-for-quotation"></a>**RFQ (Angebotsanforderung)**
+###### <a name="rfq-request-for-quotation"></a>**Angebotsanforderung**
 
 Ein Quelldokument, das eine Ausschreibung zum Liefern einer Menge eines Produkts zu einem bestimmten Preis und bis zu einem bestimmten Termin dokumentiert.
 
-###### <a name="requester"></a>**anfordernde Person**
+###### <a name="requester"></a>**Anfordernde Person**
 
 Die Person, die wirtschaftliche Ressourcen anfordert.
 
@@ -596,7 +597,7 @@ Die Person, die wirtschaftliche Ressourcen anfordert.
 
 Ein Produkt, dessen Verteilung durch eine Regierungsbehörde eingeschränkt wird.
 
-### <a name="s"></a>**So**
+### <a name="s"></a>**S**
 
 ###### <a name="sales-agreement"></a>**Kaufvertrag**
 
@@ -620,15 +621,15 @@ Ein definierter Satz von Anwendungszugriffsrechten. Von der Sicherheitsrolle, di
 
 ###### <a name="segregation-of-duties"></a>**Aufgabentrennung**
 
-Ein Entwurfsprinzip, das dazu dient, das Betrugsrisiko, Unregelmäßigkeiten und Fehler zu reduzieren, indem die Aufgabenbereichen Erfassung, Prüfung, Autorisierung, Verwahrung von Aktivposten und regelmäßige Überprüfung der Personen, die an der Dokumentation oder Erfassung der finanziellen Auswirkungen wirtschaftlicher Transaktionen beteiligt sind, voneinander getrennt werden.
+Ein Entwurfsprinzip, das dazu dient, das Betrugsrisiko, Unregelmäßigkeiten und Fehler zu reduzieren, indem die Aufgabenbereiche Erfassung, Prüfung, Autorisierung, Verwahrung von Aktivposten und regelmäßige Überprüfung der Personen, die an der Dokumentation oder Erfassung der finanziellen Auswirkungen wirtschaftlicher Transaktionen beteiligt sind, voneinander getrennt werden.
 
 ###### <a name="sequencing"></a>**Abfolge**
 
 Die Reihenfolge, in der Einzelvorgänge oder Arbeitsgänge in einer Produktionsstätte ausgeführt werden, um Ziele zu erreichen.
 
-###### <a name="shared-asset"></a>**freigegebene Anlagen**
+###### <a name="shared-asset"></a>**Freigegebene Anlagen**
 
-Eine Anlage, die von mehr als einer zahlungsmittelgenerierenden Einheit verwendet wird. Ein Beispiel ist ein Verteilzentrum, das verwendet wird, um Artikel zu lagern, bevor sie in verschiedene Märkte transportiert werden, die das gleiche Verteilzentrum haben.
+Eine Anlage, die von mehr als einer zahlungsmittelgenerierenden Einheit (ZGE) verwendet wird. Ein Beispiel ist ein Verteilzentrum, das verwendet wird, um Artikel zu lagern, bevor sie in verschiedene Märkte transportiert werden, die das gleiche Verteilzentrum haben.
 
 ###### <a name="single-use-kanban"></a>**Kanban (einmalige Verwendung)**
 
@@ -644,49 +645,49 @@ Die in einer Quelldokumentposition dokumentierte Produktmenge, die einen Bedarf 
 
 ###### <a name="statistical-baseline-forecast"></a>**Statistische Grundplanung**
 
-Ein Seschätzung der zukünftigen Bedarfs, die erstellt wird, indem ein Planungsalgorithmus auf historische Buchungsdaten angewendet wird.
+Ein Vorkalkulation des zukünftigen Bedarfs, die erstellt wird, indem ein Planungsalgorithmus auf historische Buchungsdaten angewendet wird.
 
 ###### <a name="supermarket"></a>**Supermarkt**
 
 Ein Just-in-Time-Lagerplatz für Lagerbestand mit einer begrenzten Kapazität, der dazu dient, Material in der Nähe der Abnahmestelle zu lagern.
 
-###### <a name="system-defined-financial-dimension-type"></a>**vom System definierter Finanzdimensionstyp**
+###### <a name="system-defined-financial-dimension-type"></a>**Vom System definierter Finanzdimensionstyp**
 
 Eine Finanzdimension, die einer Tabelle oder Sicht in der Datenbank zugeordnet ist und einen Entitätstyp darstellt und deren Werte sich in der Domäne eines der Attribute dieses Entitätstyps befinden.
 
-### <a name="t"></a>**Bio**
+### <a name="t"></a>**T**
 
-###### <a name="takt-time"></a>**Zeit pro Einheit**
+###### <a name="takt-time"></a>**Taktzeit**
 
 Die für die Produktion einer Produkteinheit erforderliche Zeit.
 
 ###### <a name="task-guide"></a>**Aufgabenleitfaden**
 
-Eine kontrollierte, geführte Erfahrung durch die Schritte in einer Aufgabenerfassung. Ein Aufgabenleitfaden führt den Benutzer durch die Erfahrung, die erfasst wurde. Alle Sicherheit, Daten und Bewerbungsverhalten sind identisch, wenn Sie einen Aufgabenleitfaden abschließen, die sie ohne den Aufgabenleitfaden sind. Der Aufgabenleitfaden verwendet dieselbe Instrumentation wie die Aufgabenaufzeichnung, um zu wissen, wenn ein Benutzer den gewünschten Schritt abgeschlossen hat, sodass der Benutzer aufgefordert werden kann, den nächsten Schritt in der Aufzeichnung zu machen.
+Eine kontrollierte, geführte Erfahrung durch die Schritte in einer Aufgabenerfassung. Ein Aufgabenleitfaden führt den Benutzer durch die Erfahrung, die erfasst wurde. Sämtliches Verhalten hinsichtlich Sicherheit, Daten und Anwendung ist identisch, wenn Sie einen Aufgabenleitfaden abschließen, da sie ohne den Aufgabenleitfaden sind. Der Aufgabenleitfaden verwendet dieselbe Instrumentierung wie die Aufgabenaufzeichnung, um zu wissen, wann ein Benutzer den gewünschten Schritt abgeschlossen hat, sodass der Benutzer aufgefordert werden kann, den nächsten Schritt in der Aufzeichnung vorzunehmen.
 
 ###### <a name="task-recorder"></a>**Aufgabenaufzeichnung**
 
-Ein Tool, das in Microsoft Dynamics 365 for Operations vorinstalliert ist. Beim Erfassen werden alle Ereignisse erfasst, die der Benutzer in die Dynamics 365 for Operations Benutzeroberfläche eingibt, die vom Server ausgeführt wird – einschließlich hinzugefügter Werte, geänderter Einstellungen, entfernter Daten usw.
+Ein Tool, das in Dynamics 365 for Operations vorinstalliert ist. Beim Erfassen werden alle Ereignisse erfasst, die der Benutzer in die Dynamics 365 for Operations-Benutzeroberfläche eingibt, die in Kommunikation mit dem Server ausgeführt werden – einschließlich hinzugefügter Werte, geänderter Einstellungen, entfernter Daten usw.
 
 ###### <a name="task-recording"></a>**Aufgabenaufzeichnung**
 
 Eine Datei, die die Aktivitäten und die Anmerkungen enthält, die aufgezeichnet werden, wenn die Aufgabenaufzeichnung in Microsoft Dynamics 365 for Operations ausgeführt wird.
 
-###### <a name="three-way-matching-policy"></a>**dreiseitige Abgleichsrichtlinie**
+###### <a name="three-way-matching-policy"></a>**Dreiseitige Abgleichsrichtlinie**
 
 Eine Abgleichsrichtlinie, mit der die Preis- und Mengenangaben in Kreditorenrechnungen mit den Preisangaben in Bestellungen und den Mengenangaben in Produktzugängen abgeglichen werden.
 
-###### <a name="transfer-batch"></a>**Umlagerungsmenge**
+###### <a name="transfer-batch"></a>**Übertragungsmenge**
 
 Die Menge mindestens eines Artikels, der übertragen wird oder übertragen werden kann.
 
-###### <a name="two-way-matching-policy"></a>**zweiseitige Abgleichsrichtlinie**
+###### <a name="two-way-matching-policy"></a>**Zweiseitige Abgleichsrichtlinie**
 
 Eine Abgleichsrichtlinie, die den Abgleich der Preisangaben in Kreditorenrechnungen mit den Preisangaben in Bestellungen erfordert.
 
 ### <a name="u"></a>**U**
 
-###### <a name="user-defined-financial-dimension-type"></a>**benutzerdefinierter Finanzdimensionstyp**
+###### <a name="user-defined-financial-dimension-type"></a>**Benutzerdefinierter Finanzdimensionstyp**
 
 Eine Finanzdimension, die einer benutzerdefinierten Liste von Werten zugeordnet ist.
 
@@ -700,7 +701,7 @@ Eine Organisationseinheit, die mindestens einen Produktionsfluss steuert.
 
 Eine Methode zur Modellierung von Produktmastern und Suchen nach Produktvariantenkonfigurationen.
 
-###### <a name="vat-value-added-tax"></a>**MwSt (Mehrwertsteuer)**
+###### <a name="vat-value-added-tax"></a>**MwSt. (Mehrwertsteuer)**
 
 Eine Steuer, die in jeder Produktionsphase auf ein Produkt erhoben wird und auf der Wertsteigerung in der jeweiligen Phase basiert.
 
@@ -712,11 +713,11 @@ Eine Auflistung von Produktangeboten, die ein Lieferant zum Kauf anbietet.
 
 Ein Quelldokument, das eine Zahlungsaufforderung des Kreditoren dokumentiert. Eine Kreditorenrechnung kann auf eine oder mehrere Bestellungen verweisen. Wenn die Kreditorenrechnung autorisiert ist, kann eine Zahlung an den Kreditor geleistet werden.
 
-### <a name="w"></a>**Mi**
+### <a name="w"></a>**W**
 
 ###### <a name="work-cell"></a>**Arbeitsgruppe**
 
-Eine Ressourcengruppe, die an einer Produktionsflussentität teilnimmt.
+Eine Ressourcengruppe, die an einer Produktionsflussaktivität teilnimmt.
 
 ###### <a name="worker"></a>**Arbeitskraft**
 
@@ -724,7 +725,7 @@ Ein Person, die die Rolle eines Mitarbeiters oder Auftragnehmers einnimmt und ge
 
 ###### <a name="workspace"></a>**Arbeitsbereich**
 
-Eine Seite, die einen Überblick über eine der Aktivitäten bietet, die der Benutzer ausführt. Die Seite verwendet Kacheln, Listen und Diagramme, um ausstehende Arbeit und zugehörige Daten aus mehreren Quellen anzuzeigen, und die Seite zeigt häufige Aufgaben an, die diesen Daten zugeordnet sind. Im Zusammenfassungsbereich angezeigte Kacheln werden auch im zugehörigen Abschnitt im Dashboard angezeigt.
+Eine Seite, die einen Überblick über eine der Aktivitäten bietet, die der Benutzer ausführt. Die Seite verwendet Kacheln, Listen und Diagramme, um ausstehende Arbeit und zugehörige Daten aus mehreren Quellen anzuzeigen, und die Seite zeigt häufige Aufgaben an, die diesen Daten zugeordnet sind. Im Zusammenfassungsabschnitt des Arbeitsbereichs angezeigte Kacheln werden auch im zugehörigen Abschnitt im Dashboard angezeigt.
 
 
 

@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 8e09c6b042d557e3b2d608fb5e278169fc3c1d88
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4a5e6164f8aea2d4a6a063966c10f33a5e1f0cdd
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Fragebögen verteilen und abschließen
+
+[!include[banner](includes/banner.md)]
+
 
 In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen. 
 
@@ -53,7 +57,8 @@ Um eine Fragebogengruppe einem Fragebogen zuzuweisen, klicken Sie auf der Seite 
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Geplante Beantwortungssitzung in einem Fragebogen
 Geplante Antwortsitzungen sind Fragebogen, die Sie entwickelt und für die Sie die Befragten ausgewählt haben. 
 
-**Hinweis:** Bevor Sie geplante Antwortsitzungen einrichten können, müssen Sie einen Fragebogen entwerfen. 
+> **Hinweis**
+>   Bevor Sie geplante Antwortsitzungen einrichten können, müssen Sie einen Fragebogen entwerfen. 
 
 Auf der Seite **Geplante Antwortsitzung** können Sie eine geplante Antwortsitzung für einen einzelnen Mitarbeiter erstellen. In der Liste auf der Seite werden alle geplanten Fragebögen angezeigt. 
 
@@ -99,7 +104,8 @@ Klicken Sie auf **Funktionen** &gt; **Starten**, um den Fragebogen für die Benu
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Benachrichtigen von Befragungsteilnehmern zu den verfügbaren Fragebögen
 Wenn Sie einen Fragebogen verteilen, müssen Sie die Teilnehmer informieren, dass Fragebögen verfügbar sind. 
 
-**Hinweis:** Die Befragungsteilnehmer müssen Benutzer in Microsoft Dynamics 365 for Operations sein, um einen Fragebogen ausfüllen zu können.
+> **Hinweis**
+>   Die Befragungsteilnehmer müssen Benutzer in Microsoft Dynamics 365 for Operations sein, um einen Fragebogen ausfüllen zu können.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Benachrichtigen von Befragungsteilnehmern zu einer geplanten Beantwortungssitzung
 
@@ -109,12 +115,14 @@ Wenn Sie eine geplante Antwortsitzung verwenden, müssen Sie die Person z. B. te
 
 Verwenden Sie die Seite **Zeitpläne für Fragebögen**, um eine E-Mail-Nachricht an alle Teilnehmer, die dem Fragebogen zugeordnet sind, zu erstellen und zu senden. Geben Sie den Text der E-Mail auf der Registerkarte **E-Mail für Mitarbeiter-Self-Service** ein. Nachdem der Plan gestartet wurde, klicken Sie auf **Funktionen** &gt; **E-Mail senden**, um die E-Mail an die Befragungsteilnehmern zu generieren und zu senden. Die Befragungsteilnehmer können sich nun auf der Website anmelden und den Fragebogen ausfüllen. 
 
-**Hinweis:** Bevor Sie die E-Mail-Funktionalität verwenden können, muss der IT-Administrator die E-Mail-Einstellungen auf der Seite **E-Mail-Parameter** eingeben.
+> **Hinweis**
+>   Bevor Sie die E-Mail-Funktionalität verwenden können, muss der IT-Administrator die E-Mail-Einstellungen auf der Seite **E-Mail-Parameter** eingeben.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Beenden eines geplanten Fragebogens
 Sie können einen geplanten Fragebogen beenden, nachdem alle Befragungsteilnehmer ihre zugewiesenen Antwortsitzungen abgeschlossen haben. Nachdem ein geplanter Fragebogen beendet ist, können Sie seine Einstellungen nicht in eine neue Planung kopieren. 
 
-**Hinweis:** Wenn der Fragebogen von einem oder mehreren Befragungsteilnehmern noch nicht ausgefüllt wurde, Sie die Planung aber trotzdem beenden möchten, löschen Sie zuerst die betreffenden Teilnehmer aus der Liste auf der Seite **Geplante Antwortsitzung**. Dann können Sie die Planung beenden.
+> **Hinweis**
+>   Wenn der Fragebogen von einem oder mehreren Befragungsteilnehmern noch nicht ausgefüllt wurde, Sie die Planung aber trotzdem beenden möchten, löschen Sie zuerst die betreffenden Teilnehmer aus der Liste auf der Seite **Geplante Antwortsitzung**. Dann können Sie die Planung beenden.
 
 ## <a name="completing-questionnaires"></a>Ausfüllen von Fragebögen
 Nachdem Sie einen Fragebogen entworfen und verteilt haben, kann der Fragebogen von ausgewählten Befragten ausgefüllt werden. Die verfügbaren Fragebögen können von zwei Orten aus aufgerufen werden:
@@ -132,5 +140,7 @@ Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmte
 [Verwenden von Fragebögen](questionnaires.md)
 
 [Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
+
+
 
 

@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 758c516b378b4858c248fbca2befc6b9c47cc32a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: e8a12f846bb24c9fc79c3533d4e65a2d3ece257b
+ms.openlocfilehash: 6d4d476e294e1b5cbe91a61a7ffe151a6c865ea6
+ms.contentlocale: de-de
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -40,7 +41,7 @@ Der Bedarf für Produkte oder Dienste entsteht möglicherweise aus *Anforderunge
   
 Die Beschaffungsabteilung identifiziert Lieferanten für erforderliche Produkte und Dienste, und dies kann bedeuten, dass eine *Angebotsanforderung *an mehrere mögliche Lieferanten gesendet wird. Es ist möglich, die Angaben des Produkts, das angefordert wird, freizugeben, und potenzieller Kreditoren können diese Angaben sehen, um festzustellen, ob sie ein Produkt liefern können, das ihnen entspricht. Kreditoren machen dann Angebote, die durch die Beschaffungsabteilung geprüft werden, bevor der Lieferant ausgewählt wird, von dem sie beschaffen möchten.  
 
-Bestellungen beinhalten eine Option zum Senden einer *Einkaufsabfrage *an den Kreditor als Alternative zu einem umfassenderen Angebotsanforderungsprozess. Die Einkaufabfrage kann verwendet werden, um Bedingungen, wie Preise, Rabatte und Lieferdatum, für den Auftrag einzurichten. Wenn Kreditoren so eingerichtet werden, dass sie das Portal **Kreditor** verwenden können, ist die Funktion Einkaufsabfrage deaktiviert. Stattdessen wird der Auftrag im Portal** Kreditor** freigegeben, und wenn eine *Bestätigungsanforderung* gesendet wird, kann der Kreditor den Auftrag direkt bestätigen.  
+Bestellungen beinhalten eine Option zum Senden einer *Einkaufsabfrage *an den Kreditor als Alternative zu einem umfassenderen Angebotsanforderungsprozess. Die Einkaufabfrage kann verwendet werden, um Bedingungen, wie Preise, Rabatte und Lieferdatum, für den Auftrag einzurichten. Wenn Kreditoren so eingerichtet werden, dass sie das Portal **Kreditor** verwenden können, ist die Funktion Einkaufsabfrage deaktiviert. Stattdessen wird der Auftrag im Portal**Kreditor** freigegeben, und wenn eine *Bestätigungsanforderung* gesendet wird, kann der Kreditor den Auftrag direkt bestätigen.  
 
 *Lieferantenkataloge *können verwendet werden, um Informationen zum Produktsortiment zu sammeln, das Kreditoren bereitstellen können. Kreditoren können eigene Katalog veröffentlichen, sodass es einfacher ist, den Katalog aktuell zu halten. Es ist möglich, einem Produkt eine *Liste genehmigter Kreditoren* hinzuzufügen. Dies kann bei der Kreditorenauswahl helfen, wenn neue Bestellungen geöffnet werden, und verhindern, dass nicht erwünschte Kreditoren verwendet werden.
 
@@ -56,7 +57,7 @@ Bestellungen, die mit *Einkaufgenehmigungsworkflows* konfiguriert werden, müsse
 
 Bestellungen sind *bestätigt*, um darzustellen, dass eine Vereinbarung mit dem Kreditor ausgehandelt wurde. Die Bestellung durchläuft dann verschiedene Status, bis sie schließlich in Rechnung gestellt oder storniert wird.  
 
-Wenn Sie eine Bestellung erstellen, werden viele der Felder mit Werten vorausgefüllt, die aus den Informationen stammen, die zum Kreditor auf der Seite **Kreditoren **gespeichert sind. Das bedeutet, dass es eine begrenzte Anzahl an Feldern gibt, die Sie in der Bestellung ausfüllen müssen, obwohl Sie entscheiden können, die Standardwerte zu überschreiben.
+Wenn Sie eine Bestellung erstellen, werden viele der Felder mit Werten vorausgefüllt, die aus den Informationen stammen, die zum Kreditor auf der Seite **Kreditoren**gespeichert sind. Das bedeutet, dass es eine begrenzte Anzahl an Feldern gibt, die Sie in der Bestellung ausfüllen müssen, obwohl Sie entscheiden können, die Standardwerte zu überschreiben.
 
 ### <a name="prices-and-discounts"></a>Preise und Rabatte
 

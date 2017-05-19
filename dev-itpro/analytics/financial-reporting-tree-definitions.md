@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 288605570462c2e7659a894731c12933410d7636
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7e6a3c25dd97d242e28bff319c75a64718c39f55
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -124,7 +125,7 @@ Sie können die Organisationsstruktur einer Berichtsbaumstruktur-Definition neu 
 1.  Öffnen Sie die zu ändernde Berichtsbaumstruktur-Definition im Berichts-Designer.
 2.  Wählen Sie in der grafischen Ansicht der Berichtsbaumstruktur-Definition eine Berichtseinheit aus.
 3.  Ziehen Sie die Einheit an eine neue Position. Alternativ klicken Sie mit der rechten Maustaste auf die Einheit, und wählen dann **Berichtseinheit höherstufen** oder **Berichtseinheit herunterstufen** aus.
-4.  Klicken Sie auf **Datei ** &gt; **Speichern**, um die Änderungen zu speichern.
+4.  Klicken Sie auf **Datei** &gt; **Speichern**, um die Änderungen zu speichern.
 
 ### <a name="add-text-about-a-reporting-unit"></a> Hinzufügen von Text über eine Berichtseinheit
 

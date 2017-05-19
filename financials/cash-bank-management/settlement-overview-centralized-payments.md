@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: 08c0af5eabc31dca0b36a2dc62ce2f739b808cde
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7389844e8b05582294f644b31c872866967a6721
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -33,7 +34,7 @@ Organisationen mit mehreren juristischen Personen können zum Erstellen und Verw
 
 Wird eine Debitoren- oder Kreditorenzahlung für eine juristische Person eingegeben und mit einer Rechnung ausgeglichen, die für eine andere juristische Person eingegeben wurde, werden die entsprechenden Buchungen vom Typ "Ausgleich", "Fällig bis" und "Fällig von" für jede juristische Person automatisch generiert. Für jede Rechnungs- und Zahlungskombination der Buchung wird ein Ausgleichsdatensatz erstellt. Jedem Ausgleichsdatensatz wird eine neue Belegnummer zugewiesen, die auf der Nummernkreisserie basiert, die auf der Seite **Debitoren-Parameter**für Kunden und auf der Seite**Kreditorenkontenparameter** für Kreditoren definiert wird. 
 
-Zusätzlich generierten Datensätzen für Skonti, Neubewertungen der Fremdwährung, Centdifferenzen, Überzahlungen oder Unterzahlungen wird entweder das Datum der Zahlungs- oder das Datum der Rechnungsbuchung zugewiesen – je nachdem, welches Datum weniger weit zurückliegt. Erfolgt der Ausgleich, nachdem die Zahlung gebucht wurde, werden für die Ausgleichsdatensätze das Buchungsdatum des Ausgleichs verwendet, das im Formular **Offene Transaktionen abschließen ** angegeben wurde.
+Zusätzlich generierten Datensätzen für Skonti, Neubewertungen der Fremdwährung, Centdifferenzen, Überzahlungen oder Unterzahlungen wird entweder das Datum der Zahlungs- oder das Datum der Rechnungsbuchung zugewiesen – je nachdem, welches Datum weniger weit zurückliegt. Erfolgt der Ausgleich, nachdem die Zahlung gebucht wurde, werden für die Ausgleichsdatensätze das Buchungsdatum des Ausgleichs verwendet, das im Formular **Offene Transaktionen abschließen** angegeben wurde.
 Buchungsarten, Buchungstext und Standardbeschreibungen
 ----------------------------------------------------------
 
@@ -81,7 +82,7 @@ Liegt ein Wechselkursgewinn oder - verlust vor, wird der Gewinn/Verlust auf die 
 <a name="cash-discounts"></a>Skonti
 --------------
 
-Skonti, die im Zuge des unternehmensübergreifenden Ausgleichs generiert wurden, werden – abhängig davon, welche Option für die juristische Person für die Zahlung im Formular **Skonto buchen ** auf der Seite **Intercompany Buchhaltung** für die juristische Person der Zahlung ausgewählt wurde, gebucht. Unter der juristischen Person für die Rechnung wird eine entsprechende Ausgleichsbuchung generiert.
+Skonti, die im Zuge des unternehmensübergreifenden Ausgleichs generiert wurden, werden – abhängig davon, welche Option für die juristische Person für die Zahlung im Formular **Skonto buchen** auf der Seite **Intercompany Buchhaltung** für die juristische Person der Zahlung ausgewählt wurde, gebucht. Unter der juristischen Person für die Rechnung wird eine entsprechende Ausgleichsbuchung generiert.
 
 <a name="overpayments-and-underpayments"></a>Überzahlungen und Unterzahlungen
 ------------------------------

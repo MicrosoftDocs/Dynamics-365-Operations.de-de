@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: a3d2d9d2d8dd518d04b289bb5326bcbf34f0cdc2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e7a2b316b7c7f153c0d41e31a0dffea1cf6f20b0
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -110,7 +111,7 @@ Beachten Sie, dass Phantome in der Regel verwendet werden, um den Verfahrensproz
 
 ### <a name="pegged-supply"></a>Lieferung mit Bedarfsverursachung
 
-Wählen Sie den** Lieferung mit Bedarfsverursachung** Positionstyp aus, wenn Sie eine Unterproduktion, einen Stücklistenpositions-Ereignis-Kanban oder eine direkte Bestellung für jede Produktvariante erstellen möchten auf die die Stücklistenposition verweist. Die Unterproduktion, der Ereignis-Kanban oder die Bestellung wird erstellt, wenn der Produktionsauftrag vorkalkuliert wurde. Die erforderlichen Artikelmengen werden automatisch für den Auftrag der Verbrauchsproduktion reserviert.
+Wählen Sie den**Lieferung mit Bedarfsverursachung** Positionstyp aus, wenn Sie eine Unterproduktion, einen Stücklistenpositions-Ereignis-Kanban oder eine direkte Bestellung für jede Produktvariante erstellen möchten auf die die Stücklistenposition verweist. Die Unterproduktion, der Ereignis-Kanban oder die Bestellung wird erstellt, wenn der Produktionsauftrag vorkalkuliert wurde. Die erforderlichen Artikelmengen werden automatisch für den Auftrag der Verbrauchsproduktion reserviert.
 
 ### <a name="vendor"></a>Händler
 

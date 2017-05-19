@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: db4b05bc55d735513d7580ca5908a1e84eb760c6
-ms.openlocfilehash: 152b63fdfc78b3c4e79b93340d18c5cf69257024
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c65168ae62f2d890cf2a7be67b1123cfae96ef23
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -138,7 +139,7 @@ Die Einstellung für die Löschungen wird im Aufsetzbereich des Konsolidierungsm
 
 Sie können ein Datum nach Bedarf festlegen, an dem die Löschungsregel wirksam wird und an dem sie abläuft. Sie müssen **Aktiv** auf **Ja** setzen,  wenn Sie  möchten, dass sie im Löschungsvorschlagsprozess verfügbar sein sollen. Wählen Sie ein Journal aus, das einen Typ **Löschung**  hat.
 
-Nachdem Sie die Grundlagen definiert haben, können Sie die tatsächlichen Verarbeitungsregeln definieren, indem Sie **Positionen ** anklicken. Es gibt zwei Optionen für Löschungen, nämlich den Nettoveränderungsbetrag eliminieren oder einen festen Betrag definieren. 
+Nachdem Sie die Grundlagen definiert haben, können Sie die tatsächlichen Verarbeitungsregeln definieren, indem Sie **Positionen** anklicken. Es gibt zwei Optionen für Löschungen, nämlich den Nettoveränderungsbetrag eliminieren oder einen festen Betrag definieren. 
 
 Wählen Sie Ihr Quellkonto aus. Sie können Platzhalter wie Sternchen wie einen (\*) verwenden. Im Beispiel würde 1\* alle Konten auswählen, die mit 1 als Quelle für die Zuordnung der Daten beginnen. 
 

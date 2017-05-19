@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 0719a49bee069dc49be084a3fbc4ba5eb4883d03
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2f0ddf0e4cff0d799a7baf6bdc9d5c2da0622f4d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -98,7 +99,7 @@ Wenn Sie einen Kreditor sperren, können Sie auch einen Grund und ein Datum ange
 Wenn mehrere Ihrer Kreditoren dieselbe Rechnungsadresse haben, oder wenn Rechnungen an den Kreditor über Dritte abgewickelt werden, können Sie ein Rechnungskonto im Kreditorendatensatz erstellen. Das Rechnungskonto ist das Konto, auf dem der Rechnungsbetrag gutgeschrieben wird, wenn Sie eine Kreditorenrechnung für eine Bestellung erstellen. Wenn Sie kein Rechnungskonto im Kreditorendatensatz angeben, wird das Kreditorenkonto als Rechnungskonto verwendet.
 
 ## <a name="vendor-bank-accounts"></a>Kreditoren-Bankkonten
-Wenn Sie Zahlungen an ein Kreditorenbankkonto veranlassen müssen, können Sie Informationen über die Bank des Kreditors und Bankkonten auf der Seite **Kreditorenbankkonten **eingeben. Sie können auch Informationen zu Prüfungen und Zahlungen für das ausgewählte Bankkonto eingeben. Beispielsweise können Sie Testtransaktionen zu Kreditoren-Bankkonten hinzufügen. Diese Testtransaktionen können verwendet werden, um die Genauigkeit von Kontodaten zu überprüfen, zum Beispiel Bankleitzahlen und Kontonummern. Sie müssen ein Standardkonto für Zahlungen an den Kreditor angeben. Wenn Sie allerdings eine tatsächliche Zahlung leisten, können Sie dieses Konto auf eines der anderen Konten des Kreditors ändern.
+Wenn Sie Zahlungen an ein Kreditorenbankkonto veranlassen müssen, können Sie Informationen über die Bank des Kreditors und Bankkonten auf der Seite **Kreditorenbankkonten**eingeben. Sie können auch Informationen zu Prüfungen und Zahlungen für das ausgewählte Bankkonto eingeben. Beispielsweise können Sie Testtransaktionen zu Kreditoren-Bankkonten hinzufügen. Diese Testtransaktionen können verwendet werden, um die Genauigkeit von Kontodaten zu überprüfen, zum Beispiel Bankleitzahlen und Kontonummern. Sie müssen ein Standardkonto für Zahlungen an den Kreditor angeben. Wenn Sie allerdings eine tatsächliche Zahlung leisten, können Sie dieses Konto auf eines der anderen Konten des Kreditors ändern.
 
 ## <a name="ledger-accounts"></a>Sachkonten
 Sie können Standardkonten angeben, die in Kreditorenrechnungserfassungen automatisch für den angegebenen Kreditor angezeigt werden. Verwenden Sie diese Funktion, wenn Sie normaler Weise im Laufe der Zeit für dieselbe Art von Produkten oder Dienstleistungen derselben Kreditoren bezahlen. Wenn Sie ein Standardkonto angeben, können Sie Erfassungseinträge in der Rechnungserfassung schnell und effizient eingeben. Die in diesem Formular angegebenen Standardkonten werden nicht für Bestellungen oder Kreditorenrechnungen verwendet, die auf der Seite **Kreditorenrechnung** eingegeben wurden.  

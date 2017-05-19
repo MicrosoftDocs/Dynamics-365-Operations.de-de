@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 3e6b48768bb8e69d46f1555d9300f3b878b01ff1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35d34f9a356f8a041f2abf0aa8d6c3a6d9ca4a46
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Vertriebs-und Rentabilitätsleistung Power BI Inhalt
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird beschrieben, was im Dynamics 365 for Operations - Vertriebs-und Rentabilitätsleistung-Inhaltspaket für Microsoft Power BI enthalten ist. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen.
 
@@ -44,6 +48,7 @@ Rentabilität kann wie folgt analysiert werden:
 
 ## <a name="accessing-the-content-pack"></a>Zugreifen auf das Inhaltspaket
 Der Vertriebs-und Rentabilitätsleistung-Inhaltspaket für Power BI wird als Implementierungsressource in Lifecycle Services (LCS) veröffentlicht und kann von Dynamics 365 for Operations zugegriffen werden. Weitere Informationen dazu, wie Power BI-Bericht erstellt werden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
+Hinweis: **KB4011327** ist eine Voraussetzung für diesen Power BI Inhalt Nachdem Sie sich bei Lifecycle Services angemeldet haben, können Sie hier auf KB zugreifen: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
 
 ## <a name="metrics-included-in-the-content-pack"></a>Metrik im Inhaltspaket
 Der Inhaltspaket enthält einen Bericht, der einem Satz Metriken visuell dargestellt als Diagramme, Kacheln und Tabellen besteht. Die folgende Tabelle enthält eine Übersicht der im Visualisierungen im Inhaltspaket.
@@ -110,6 +115,8 @@ Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstelle
 -   [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](configure-power-bi-integration.md)
+
+
 
 
 

@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6f4429202efd0506378d681188035c5cc69f56a1
-ms.openlocfilehash: d330f73ee9cbdd6bdcc197c3783a9230b26e04d8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5ba5816b65bcaa3a71ab3367cfbe6a115e52062a
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="mass-hire-projects"></a>Masseneinstellungsprojekte
+
+[!include[banner](includes/banner.md)]
+
 
 Masseneinstellungsprojekte ermöglichen dem Personalverwaltungsspezialisten mehrere Positionen zu erstellen und effektiv mehrere Arbeitskräfte für diese Positionen einzustellen.
 
@@ -46,7 +50,7 @@ Wählen Sie auf der Seite **Masseneinstellungsprojekte** das Projekt “SummerIn
 
 Nachdem Sie Studenten für die Praktikumspositionen ausgewählt haben, geben Sie die Informationen jedes Studenten unter **Positionsdetails** für die Position ein, für die sie eingestellt werden. Wenn Sie alle Positionsdetails eingegeben haben, wählen Sie die Position auf der Seite "Masseneinstellungsprojekte" aus, und dann klicken Sie auf **Einstellen**. Für jede Position wird ein Positionsdatensatz erstellt, und für jede Person, die Sie einstellen, wird ein Arbeitskraftdatensatz erstellt und der richtigen Position zugewiesen.
 
-## <a name="masshire-project-statuses"></a>Projektstatus-Masseneinstellung
+## <a name="mass-hire-project-statuses"></a>Status eines Masseneinstellungsprojekts
 Ein Masseneinstellungsprojekt kann folgende Status besitzen.
 -   Erstellt
 -   Geöffnet
@@ -92,6 +96,8 @@ Klicken Sie auf der Seite **Masseneinstellungsprojekt** auf **Projekt öffnen** 
 </table>
 
  
+
+
 
 
 

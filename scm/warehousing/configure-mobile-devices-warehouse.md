@@ -3,7 +3,7 @@ title: "Konfigurieren von mobile Geräten für Lagerortarbeit"
 description: "In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 34d7b246d74d1546b54494944903d160e31f7678
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a964587fa5dd48f0ed4e9f2c67fb52e5071ac98d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurieren von mobile Geräten für Lagerortarbeit
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 
@@ -35,7 +39,7 @@ In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arb
 -   Erstellen Sie Arbeit, die durch einen anderen Prozess ausgeführt wird. Beispielsweise kann das Empfangen eines Artikels für eine Bestellung Einlagerungsarbeit für einen anderen Arbeiter erzeugen.
 -   Führen Sie Arbeit aus, die von einem anderen Prozess (vorhandene Arbeit) erstellt wurde, beispielsweise Einlagerungsarbeit für einen Artikel, der für eine Bestellung eingegangen ist.
 
-Um eine Menüoption für eine Aktivität oder eine Abfrage zu erstellen, legen Sie das **Modus** Feld auf  **Indirekt** fest. Eine Liste von ** Aktivitätscode** Optionen wird dann verfügbar, damit Sie den Typ der Abfrage oder die Aktivität auswählen können, dass die Menüoption dafür ist. Um eine Menüoption zu erstellen um Lagerortarbeit zu generieren, legen Sie das Feld **Modus** auf **Arbeit** fest. Eine Liste von **Arbeitserstellungsprozessen** wird dann verfügbar. Um eine Menüoption zur Verarbeitung vorhandener Lagerortarbeit zu erstellen , legen Sie das Feld **Modus** auf **Work** fest, und legen Sie dann die Option **Vorhandene Arbeit verwenden** auf **Ja** fest. **Hinweis:**Abhängig vom Modus, den Sie für die Menüoption auswählen, und ob das Menüelement verwendet wird, um vorhandene Arbeit auszuführen, sind zusätzliche Felder für die Menüoption verfügbar. Informationen zu den zusätzlichen Feldauswahlen finden Sie im Abschnitt „Zusätzliche Menüelementoptionen“ in diesem Thema weiter unten.
+Um eine Menüoption für eine Aktivität oder eine Abfrage zu erstellen, legen Sie das **Modus** Feld auf  **Indirekt** fest. Eine Liste von **Aktivitätscode** Optionen wird dann verfügbar, damit Sie den Typ der Abfrage oder die Aktivität auswählen können, dass die Menüoption dafür ist. Um eine Menüoption zu erstellen um Lagerortarbeit zu generieren, legen Sie das Feld **Modus** auf **Arbeit** fest. Eine Liste von **Arbeitserstellungsprozessen** wird dann verfügbar. Um eine Menüoption zur Verarbeitung vorhandener Lagerortarbeit zu erstellen , legen Sie das Feld **Modus** auf **Work** fest, und legen Sie dann die Option **Vorhandene Arbeit verwenden** auf **Ja** fest. **Hinweis** Abhängig vom Modus, den Sie für die Menüoption auswählen, und ob das Menüelement verwendet wird, um vorhandene Arbeit auszuführen, sind zusätzliche Felder für die Menüoption verfügbar. Informationen zu den zusätzlichen Feldauswahlen finden Sie im Abschnitt „Zusätzliche Menüelementoptionen“ in diesem Thema weiter unten.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurieren von Menüelementen für Aktivitäten und Abfragen
 Wenn das Feld **Modus** für eine Menüoption auf **Indirekt** festgelegt ist, können Sie eine Menüoption erstellen, um eine allgemeine Aktivität oder eine Abfrage auszuführen, die keine Arbeit erstellt. Die Beispiele umfassen Aktivitäten, wie das erneute Drucken von Ladungsträgerbeschriftungen, und eine Abfrage zu den Artikel in einem Lagerplatz. In der folgenden Tabelle sind die Optionen aufgelistet, die zur Verfügung stehen.
@@ -190,7 +194,7 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurieren von Menüoptionen, um vorhandene Arbeit zu verarbeiten
-Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Sie Menüelemente zur Verarbeitung der Arbeit einrichten, die bereits erstellt wurde. Legen Sie das Feld **Modus** auf **Arbeit** fest, und wählen Sie die Option **Vorhandene Arbeit verwenden** aus. Einige Optionen werden dann auf der Registerkarte **Allgemein** verfügbar. Sie können den Zugriff auf die Menüoption steuern, indem Sie mindestens eine Arbeitsklasse auf dem Inforegister **Arbeitsklasse ** zuweisen. Die Arbeitsklassen definieren die Arbeit, die die Menüoption verarbeiten kann. Die Arbeitsklasse kann auch verwendet werden, um den Zugriff auf die bestimmten Benutzerrollen oder zum separaten Verarbeiten für unterschiedliche Arten von Arbeitsgängen zu gewähren. In der folgenden Tabelle werden die Optionen beschrieben, die zur Verfügung stehen.
+Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Sie Menüelemente zur Verarbeitung der Arbeit einrichten, die bereits erstellt wurde. Legen Sie das Feld **Modus** auf **Arbeit** fest, und wählen Sie die Option **Vorhandene Arbeit verwenden** aus. Einige Optionen werden dann auf der Registerkarte **Allgemein** verfügbar. Sie können den Zugriff auf die Menüoption steuern, indem Sie mindestens eine Arbeitsklasse auf dem Inforegister **Arbeitsklasse** zuweisen. Die Arbeitsklassen definieren die Arbeit, die die Menüoption verarbeiten kann. Die Arbeitsklasse kann auch verwendet werden, um den Zugriff auf die bestimmten Benutzerrollen oder zum separaten Verarbeiten für unterschiedliche Arten von Arbeitsgängen zu gewähren. In der folgenden Tabelle werden die Optionen beschrieben, die zur Verfügung stehen.
 
 <table>
 
@@ -315,7 +319,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="even">
 <td>Bestandsstatus anzeigen</td>
-<td>Aktivieren Sie diese Option, um den Status des Artikels im Bestand anzuzeigen. Weitere Informationen finden Sie unter <a href="/inventory/inventory-statuses.md">Vorteile der Verwendung von Bestandsstatus</a>. Diese Option ist für alle Menüoptionen verfügbar, die vorhandene Arbeit verwenden, außer Zykluszählung.</td>
+<td>Aktivieren Sie diese Option, um den Status des Artikels im Bestand anzuzeigen. Diese Option ist für alle Menüoptionen verfügbar, die vorhandene Arbeit verwenden, außer Zykluszählung.</td>
 </tr>
 <tr class="odd">
 <td>Übersicht des Entnahmebildschirms anzeigen</td>
@@ -412,5 +416,7 @@ In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei 
 [Einrichten einer Menüoption für mobile Geräts für das Abschließen der Arbeit von Typ Bestellung (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
 [Einrichten einer Menüoption für das mobile Gerät, um die eingegangenen Artikel zu erfassen (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Vorteile der Verwendung von Bestand-Status](../inventory/inventory-statuses.md)
+
 
 

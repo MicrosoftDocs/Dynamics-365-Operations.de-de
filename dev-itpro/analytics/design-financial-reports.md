@@ -1,7 +1,7 @@
 ---
 title: Finanzberichte entwerfen und verwalten
-description: "Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Operations erfolgen. Die Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Dynamics 365 for Operations und einem Berichts-Designer, der Finanzberichte erstellt und Finanzberichte bearbeitet."
-author: twheeloc
+description: "Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Operations erfolgen."
+author: jcart1106
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3319fa0a919ca5e2737319f5cdc4190cf32d59b6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: 635e9e90c63330b3d8b0cc46f16a36fa44ef915d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -96,7 +97,7 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden Zeile
 22. Wählen Sie in der Berichtsdefinition **Ausführliche Zwischenbilanz mit Attributen** für die Zeilen- und Spaltendefinition " Ausführliche Zwischenbilanz mit Attributen" aus.
 23. Ändern Sie das Basisjahr zu **2012.**
 24. **Speichern** Sie die Berichtsdefinition und **generieren** Sie. Sobald der Bericht fertig generiert wurde und geöffnet wird, können Sie in den Bericht untersuchen, wie Sie schon in der ersten Übung. Führen Sie auf verschiedenen Konten einen Drilldown durch, um zu sehen, wie die zusätzlichen Attribute angezeigt werden.
-25. Schließen Sie den Bericht **Ausführliche Zwischenbilanz mit Attributen **.
+25. Schließen Sie den Bericht **Ausführliche Zwischenbilanz mit Attributen**.
 26. Schließen Sie den **Berichts-Designer**.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Übung 3: Einen mehrdimensionalen Bericht mithilfe einer Berichtsbaumstruktur erstellen
@@ -165,7 +166,7 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 6.  Doppelklick Sie im Feld **Dimensionsfilter**.
 7.  Doppelklicken Sie im Fenster **Dimension** auf die Spalte **Abteilung**.
 8.  Klicken Sie im Bereich "Einzel" oder "Bereich" des Dialogfelds, auf die Schaltfläche mit **...**, damit das Feld **Von** eine Liste der Abteilungen anzeigt.
-9.  Wählen Sie Abteilung **022**, **Vertrieb und Marketing** aus, und klicken Sie dann auf** OK**.
+9.  Wählen Sie Abteilung **022**, **Vertrieb und Marketing** aus, und klicken Sie dann auf **OK**.
 10. Wiederholen Sie die Schritte 5 bis 8 für die Abteilungen 23-25.
 11. Geben Sie auf der Zeile **Überschrift 2** für jede FD-Spalte die folgenden Abteilungsbeschreibungen ein:
     -   Spalte B: Vertriebs- und Marketing
@@ -182,8 +183,8 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 18. **Speichern** Sie Ihre Änderungen und **generieren** Sie. Nachdem der Bericht fertig generiert und geöffnet wurde, können Sie den Bericht untersuchen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-[Finanzberichterstattung](\financials\general-ledger\financial-reporting-getting-started.md) 
-[Finanzbericht anzeigen](\financials\general-ledger\view-financial-reports.md) 
+[Finanzberichterstattung](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
+[Finanzbericht anzeigen](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
 [Dynamics Finanzbericht Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 68cac68e1ea3db35b44c91f2c1901abf2aa521be
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4b79b21c6c4ceebfd24225643d099a2e2789d303
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -52,10 +53,10 @@ Die folgenden Optionen sind verfügbar:
 
 -   **Vorwärts ab heute**– Die Terminierung erfolgt vorwärts ab dem aktuellen Datum. (Das aktuelle Datum ist das Systemdatum.)
 -   **Vorwärts ab dem geplanten Start** – Die Terminierung erfolgt vorwärts ab einem früheren Startdatum. Wenn keine frühere Terminierung vorliegt, wird das Enddatum auf das aktuelle Datum festgelegt.
--   **Vorwärts ab Planungsdatum **– Die Terminierung erfolgt ab dem Datum, das im Feld **Geplantes Datum** angegebenen ist. Wenn Sie kein Planungsdatum angeben, erfolgt die Terminierung vorwärts ab dem aktuellen Datum.
+-   **Vorwärts ab Planungsdatum**– Die Terminierung erfolgt ab dem Datum, das im Feld **Geplantes Datum** angegebenen ist. Wenn Sie kein Planungsdatum angeben, erfolgt die Terminierung vorwärts ab dem aktuellen Datum.
 -   **Rückwärts ab Lieferdatum** – Die Terminierung erfolgt rückwärts ab dem Lieferdatum, das für den Produktionsauftrag angegeben ist. Bei Auswahl dieser Planungsoption ohne Angabe eines Lieferdatums wird das Lieferdatum auf das aktuelle Datum festgelegt.
 -   **Rückwärts ab geplantem Ende** – Die Terminierung erfolgt rückwärts ab einem zuvor berechneten Enddatum. Wenn keine frühere Terminierung vorliegt, wird das Enddatum auf das aktuelle Datum festgelegt.
--   **Rückwärts ab Planungsdatum **– Die Terminierung erfolgt rückwärts ab dem Datum, das im Feld **Geplantes Datum** angegebenen ist. Wenn Sie kein Planungsdatum angeben, wird das aktuelle Datum verwendet. Rückwärts ab Aktivitätsdatum wird für den Produktionsauftrag bei der letzten Produktprogrammplanung berechnet. Wenn kein Aktivitätsdatum für den Produktionsauftrag angegeben ist, wird dieses auf das aktuelle Systemdatum festgelegt.
+-   **Rückwärts ab Planungsdatum**– Die Terminierung erfolgt rückwärts ab dem Datum, das im Feld **Geplantes Datum** angegebenen ist. Wenn Sie kein Planungsdatum angeben, wird das aktuelle Datum verwendet. Rückwärts ab Aktivitätsdatum wird für den Produktionsauftrag bei der letzten Produktprogrammplanung berechnet. Wenn kein Aktivitätsdatum für den Produktionsauftrag angegeben ist, wird dieses auf das aktuelle Systemdatum festgelegt.
 -   **Rückwärts ab Verfügbarkeitsdatum** – Die Terminierung erfolgt rückwärts ab dem Verfügbarkeitsdatum, das für den Produktionsauftrag bei der letzten Produktprogrammplanung berechnet wurde. Wenn kein Datum in der Zukunft für den Produktionsauftrag angegeben ist, wird dieses auf das aktuelle Systemdatum festgelegt.
 -   **Laut letzter Planung** – Im Zusammenhang mit der Grobterminierung und der Feinterminierung werden die ausgewählte Planungsrichtung und das Datum gespeichert. Sie können diese Option für nachfolgende Terminierungen auswählen. Liegt keine vorherige Planung des Produktionsauftrags vor, läuft die Planung rückwärts ab dem aktuellen Systemdatum.
 -   **Vorwärts ab morgen** – Die Terminierung erfolgt vorwärts ab dem aktuellen Datum plus ein Tag.

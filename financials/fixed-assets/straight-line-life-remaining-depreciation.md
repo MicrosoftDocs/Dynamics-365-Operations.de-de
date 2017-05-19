@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b41901d573e977a89fcd1a7c1ebf7185e162c654
-ms.openlocfilehash: 9b690b80f148e7ccecba19850bd78c81216d8658
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3b424d34a1469ac37e96927dea5627f5f2fed8ee
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -54,7 +55,7 @@ Wenn Sie z. B. **Jährlich** auswählen, wird die jährliche Abschreibung nur ei
 Wenn Sie die Option **Steuerlich** im Feld **Abschreibungsjahr** auswählen, wird die Abschreibungsmethode "Verbleibende lineare Nutzungsdauer" verwendet. Die Abschreibung wird anhand der verbleibenden Geschäftsjahre berechnet. Für ein Geschäftsjahr vom 1. Juli 2015 bis zum 30. Juni 2016 beginnt die Abschreibungsberechnung am 1. Juli. Das Geschäftsjahr kann länger oder kürzer als 12 Monate sein. Die Abschreibung wird für jede Steuerperiode angepasst. Die Länge des nächsten Geschäftsjahrs wird anhand der Finanzzeiträume bestimmt, die auf der Seite **Steuerkalender** eingerichtet werden. Wenn als Abschreibungsjahr **Steuerlich** ausgewählt wird, stehen im Feld **Periodenhäufigkeit** die folgenden Optionen zur Verfügung:
 
 -   Bei Auswahl von **Jährlich** wird der Gesamtbetrag der Abschreibung, der für das Geschäftsjahr berechnet wird, am letzten Tag des Geschäftsjahrs als einzelner Betrag gebucht.
--   **Finanzzeitraum **berechnet den Gesamtbetrag der Abschreibung für das Geschäftsjahr. Dieser Betrag wird dann in Finanzzeiträume aufgeteilt, die auf der Seite **Steuerkalender** für den Steuerkalender definiert werden, der für das Wertmodell oder Abschreibungsbuch angegeben wird.
+-   **Finanzzeitraum**berechnet den Gesamtbetrag der Abschreibung für das Geschäftsjahr. Dieser Betrag wird dann in Finanzzeiträume aufgeteilt, die auf der Seite **Steuerkalender** für den Steuerkalender definiert werden, der für das Wertmodell oder Abschreibungsbuch angegeben wird.
 
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Beispiel für eine lineare Abschreibung einer unveränderten Anlage
 Eine Anlage weist die folgenden Merkmale auf.

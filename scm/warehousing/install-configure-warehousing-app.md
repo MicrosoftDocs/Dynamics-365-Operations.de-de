@@ -3,7 +3,7 @@ title: Installieren und Konfigurieren von Microsoft Dynamics 365 for Operations 
 description: In diesem Thema wird beschrieben, wie Microsoft Dynamics 365 for Operations - Warehousing eingerichtet und konfiguriert wird.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 231c087ddc976aa552fc9cd6c89188f82a0247d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bbf6df8d43889e7a62bfe28921997c45c8b4c632
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-operations-8211-warehousing"></a>Installieren und Konfigurieren von Microsoft Dynamics 365 for Operations &#8211; Warehousing
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Thema wird beschrieben, wie Microsoft Dynamics 365 for Operations - Warehousing eingerichtet und konfiguriert wird.
 
@@ -67,7 +71,7 @@ Um der App die Möglichkeit mit bestimmten Dynamics 365 for Operations-Servern z
 ## <a name="create-and-configure-a-user-account-in-dynamics-365-for-operations"></a>Erstellen und Konfigurieren Sie ein Benutzerkonto in Dynamics 365 for Operations
 Um Dynamics 365 for Operations zu aktivieren für Ihre Azure AD-Anwendung, müssen folgende Konfigurationsschritte abgeschlossen werden:
 
-1.  Erstellen eines neuen Benutzerkontos in Azure Active Directory für die Dynamics 365 for Operations-Mandant. Der Zweck dieses Benutzerkontos ist, auf bestimmte benutzerdefinierte Dienste der Warehousing-App zuzugreifen, die Dynamics 365 for Operations verfügbar macht. Nachdem Sie diesen Schritt abgeschlossen wurde, besitzen Sie WMDP-Benutzeranmeldeinformationen, die einer WMDP-E-Mail-Adresse und einem WMDP-Kennwort bestehen. Um die grundlegenden Schritte zum Hinzufügen von Benutzern zur Azure AD und von Microsoft Dynamics 365 for Operations zu ermitteln, lesen Sie dieses Lernprogramm [Anmelden für ein Microsoft Dynamics 365 for Operations Abonnement](/dynamics365/operations/dev-itpro/sign-up-preview-subscription).
+1.  Erstellen eines neuen Benutzerkontos in Azure Active Directory für die Dynamics 365 for Operations-Mandant. Der Zweck dieses Benutzerkontos ist, auf bestimmte benutzerdefinierte Dienste der Warehousing-App zuzugreifen, die Dynamics 365 for Operations verfügbar macht. Nachdem Sie diesen Schritt abgeschlossen wurde, besitzen Sie WMDP-Benutzeranmeldeinformationen, die einer WMDP-E-Mail-Adresse und einem WMDP-Kennwort bestehen. Um die grundlegenden Schritte zum Hinzufügen von Benutzern zur Azure AD und von Microsoft Dynamics 365 for Operations zu ermitteln, lesen Sie dieses Lernprogramm [Anmelden für ein Microsoft Dynamics 365 for Operations Abonnement](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 2.  Erstellen Sie Dynamics 365 for Operations-Benutzer der den Warehousing-App-Benutzeranmeldeinformationen entspricht.
     1.  In Dynamics 365 for Operations wechseln Sie zu **Systemverwaltung** &gt; **Allgemein** &gt; **Benutzer**.
     2.  Erstellen Sie einen neuen Benutzer
@@ -98,6 +102,8 @@ Im Fall von verlorenen oder beeinträchtigten Geräts müssen Sie den Zugriff zu
 6.  Klicken Sie auf die Registerkarte **konfigurieren**, scrollen sie nach unten und stellen Sie sicher, dass die **Client-ID** der Anwendung das gleiche wie in Schritt 2 dieses Abschnitts ist.
 7.  Klicken Sie in der Befehlsleiste auf die Schaltfläche '**Löschen**'.
 8.  Klicken Sie in der daraufhin angezeigten Meldung auf **Ja**.
+
+
 
 
 

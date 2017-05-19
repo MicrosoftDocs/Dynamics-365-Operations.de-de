@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: 3f96d12960e90bb05497d1bc2900d4477551c091
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ee3d306eecc7eeaca57522245f86dba32b75f942
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ Jede Position in einem Kaufvertrag drückt eine Zusage für den Kauf eines Artik
 -   **Wertzusage** - Sie kaufen eine einem bestimmten Währungsbetrag entsprechende Menge eines oder mehrerer Produkte in einer Beschaffungskategorie.
 
 ## <a name="pricing-terms-for-purchase-agreements"></a>Preisgestaltungsbedingungen für Kaufverträge
-Die Preisgestaltungsbedingungen können je nach Typ der Zusage variieren. Die Preisgestaltungsbedingungen von Rahmenbestellungen überschreiben alle anderen Preisgestaltungsbedingungen, die für Handelsvereinbarungen festgelegt wurden. In der folgenden Tabelle werden die preisbezogene Felder beschrieben, die von jedem Zusagetyp betroffen sind. Felder, die **Ja **enthalten, können in einer Auftragsposition aktualisiert werden.
+Die Preisgestaltungsbedingungen können je nach Typ der Zusage variieren. Die Preisgestaltungsbedingungen von Rahmenbestellungen überschreiben alle anderen Preisgestaltungsbedingungen, die für Handelsvereinbarungen festgelegt wurden. In der folgenden Tabelle werden die preisbezogene Felder beschrieben, die von jedem Zusagetyp betroffen sind. Felder, die **Ja**enthalten, können in einer Auftragsposition aktualisiert werden.
 
 | Zusagetyp                   | Preis je Einheit | Preiseinheit | Rabatt in Prozent | Skontobetrag |
 |-----------------------------------|------------|------------|------------------|----------------------|

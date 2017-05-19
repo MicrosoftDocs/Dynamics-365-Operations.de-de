@@ -3,7 +3,7 @@ title: Permanente Inventur
 description: "In diesem Artikel wird beschrieben, wie Sie Zykluszählungen mit der Warehousing-Lösung verwenden können, die in der Warehouse-Verwaltung verfügbar ist. Dieser Artikel gilt nicht für die Warehousing-Lösung, die in der Lagerverwaltung verfügbar ist."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 11 - 46 - 20
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: ffc1523d53732616d77511f39b72efc8f97744eb
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 387d114936567fc471cdcafcb2e93c1704db7ead
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cycle-counting"></a>Permanente Inventur
+
+[!include[banner](../includes/banner.md)]
+
 
 In diesem Artikel wird beschrieben, wie Sie Zykluszählungen mit der Warehousing-Lösung verwenden können, die in der Warehouse-Verwaltung verfügbar ist. Dieser Artikel gilt nicht für die Warehousing-Lösung, die in der Lagerverwaltung verfügbar ist.
 
@@ -39,7 +43,6 @@ Die folgende Abbildung zeigt den Zykluszählprozess. ![Prozessfluss für Zyklusz
 
 ## <a name="cycle-counting-prerequisites"></a>Zykluszählung-Voraussetzungen
 In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sein müssen, bevor Sie die Zykluszählung verwenden können.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,7 +85,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 <li>Permanente Inventur-Gruppierung</li>
 <li>Permanente Lagerplatzinventur</li>
 </ul>
-Weitere Informationen finden Sie unter <a href="configure-mobile-devices-warehouse">Konfigurieren von mobilen Geräten für Lagerortarbeit</a>.</li>
+</li>
 <li>Richten Sie ein Menü für das mobile Gerät ein.</li>
 <li>Erstellen Sie ein Arbeitsbenutzerkonto, und weisen Sie ein Menü des mobilen Geräts der Arbeitsbenutzerkennung zu.</li>
 </ul></td>
@@ -133,6 +136,9 @@ Eine Zykluszählungsdifferenz tritt in den folgenden Szenarien auf, wenn die Opt
 -   Der gezählte Wert unterscheidet sich von der Menge des verfügbaren Bestands und es gibt keine festen Abweichungsgrenzen.
 
 Sie können Abweichungen in den gezählten Werten anpassen und dann den gezählten Wert auf der Seite **Ausstehende Prüfung der Zykluszählung** akzeptieren. Sie können die geänderte Anzahl der Artikelmenge auf der Seite **Verfügbarer Lagerbestand nach Lagerplatz** überprüfen. Der gezählte Wert wird abgelehnt, wenn die Differenz nicht genehmigt werden kann.
+
+# <a name="see-also"></a>Siehe auch
+[Konfigurieren von mobile Geräten für Lagerortarbeit](configure-mobile-devices-warehouse.md)
 
 
 

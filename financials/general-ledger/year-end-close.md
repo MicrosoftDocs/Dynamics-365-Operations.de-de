@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 926ee087a0e0c4743f29315b1d82c7d37e95be28
-ms.openlocfilehash: 22233cfa1df79076c8ea42f75ea309bac990d574
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7913a0be0eb6e109d0c2ccdebd0ac19d94435df5
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ Auf der Seite **Hauptkonto**:
 Auf der Seite **Hauptbuchparameter** unter **Geschäftsjahresschluss**:
 
 -   Die Option **Jahresabschlussbuchungen löschen** wird verwendet, um anzugeben, ob die von System generierte Primobuchung aus einem vorherigen Jahresabschluss gelöscht werden soll, wenn der Jahresabschluss erneut ausgeführt wird. Ist die Option auf **Ja** festgelegt, wird die vorherige Primobuchung gelöscht und eine neue Primobuchung basierend auf den aktuellen Salden erstellt. Ist die Option auf **Nein** festgelegt, bleibt die vorherige Primobuchung erhalten und es wird eine weitere Primobuchung erstellt, um die Salden aus angepassten Buchungen zu übertragen, die nach dem vorherigen Jahresabschluss gebucht wurden.
--   Die Option **Abschlussbuchungen bei Umbuchung erstellen ** wird verwendet, um Abschlussbuchungen für das Geschäftsjahr zu erstellen, das abgeschlossen wird, um die Salden der Gewinn- und Verlustkonten auf Null zu bringen. Ist die Option auf **Ja** festgelegt, werden die Primobuchung und die Abschlussbuchung erstellt. Ist die Option auf **Nein** festgelegt, wird nur die Primobuchung für das nächste Geschäftsjahr erstellt, um die Salden zu übertragen. Die GuV-Konto-Salden verbleiben am Ende des Geschäftsjahrs.
+-   Die Option **Abschlussbuchungen bei Umbuchung erstellen** wird verwendet, um Abschlussbuchungen für das Geschäftsjahr zu erstellen, das abgeschlossen wird, um die Salden der Gewinn- und Verlustkonten auf Null zu bringen. Ist die Option auf **Ja** festgelegt, werden die Primobuchung und die Abschlussbuchung erstellt. Ist die Option auf **Nein** festgelegt, wird nur die Primobuchung für das nächste Geschäftsjahr erstellt, um die Salden zu übertragen. Die GuV-Konto-Salden verbleiben am Ende des Geschäftsjahrs.
 -   Die Option **Geschäftsjahresstatus auf dauerhaft abgeschlossen festlegen** wird verwendet, um den Geschäftsjahresstatus dauerhaft auf abgeschlossen zu setzen. Verwenden Sie diese Einstellung mit Vorsicht, da alle Perioden mit einem Dauerhaft geschlossen-Status nicht erneut geöffnet werden können und keine Regulierungen im Geschäftsjahr gebucht werden können. Es ist eine bewährte Methode, diese Option auf **Nein** festzulegen.
 -   Die Option **Belegnummer muss angegeben werden** wird verwendet, um festzulegen, ob eine Belegnummer erforderlich ist, wenn der Jahresabschlussprozess ausgeführt wird. Eine Belegnummer sollte erforderlich sein, um die Primobuchung einfach identifizieren zu können.
 

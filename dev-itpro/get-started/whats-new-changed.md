@@ -3,33 +3,37 @@ title: "Neuheiten und Änderungen"
 description: "Diese Seite weist auf Themen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 for Operations zu erlernen."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Core
+ms.search.scope: Operations, Core
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0d954043c461975a70f9e0ab867f30cadd9800b5
-ms.openlocfilehash: 2896a11f79d5cbb00137a439e0a2c8caaee705a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c9f1e32986238739fc7eee519fd1d17a6ce6731e
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed"></a>Neuheiten und Änderungen
 
+[!include[banner](../includes/banner.md)]
+
+
 Diese Seite weist auf Themen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 for Operations zu erlernen.
 
-Um auf die neueste Version zu aktualisieren, lesen Sie [Prozess zum Aktualisieren auf das neueste Dynamics 365 for Operations](/migration-upgrade/upgrade-latest-update.md).
+Um auf die neueste Version zu aktualisieren, lesen Sie [Prozess zum Aktualisieren auf das neueste Dynamics 365 for Operations](../migration-upgrade/upgrade-latest-update.md).
 <table>
 <colgroup>
 <col width="20%" />
@@ -50,15 +54,24 @@ Um auf die neueste Version zu aktualisieren, lesen Sie [Prozess zum Aktualisiere
 <tbody>
 <tr class="odd">
 <td>Plattform Microsoft Dynamics 365 for Operations</td>
+<td>Plattform-Update 6</td>
+<td> 7.0.4509.16180</td>
+<td>2017. April</td>
+<td><a href="whats-new-platform-update-6.md">Neuheiten und Änderungen in Dynamics 365 for Operations Platformupdate 6 (April 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Plattform Microsoft Dynamics 365 for Operations</td>
+<td>Plattform-Update 5</td>
+<td> 7.0.4475.16165</td>
+<td>2017. März</td>
+<td><a href="whats-new-platform-update-5.md">Neuheiten und Änderungen in Dynamics 365 for Operations Platformupdate 5 (März 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Plattform Microsoft Dynamics 365 for Operations</td>
 <td>Plattform-Update 4</td>
-<td>7.0.4425.16160</td>
+<td> 7.0.4425.16161</td>
 <td>2017. Februar</td>
-<td><ol>
-<li>Navigieren Sie zu <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a>.</li>
-<li>Wählen Sie die Registerkarte <strong>Neuheiten</strong> aus.</li>
-<li>Wählen Sie im Bereich für <strong>Anwendungen</strong> <strong>Dynamics 365 for Operations</strong> aus.</li>
-<li>Wählen Sie im Abschnitt <strong>Bereiche</strong> die Option für <strong>Cloud-Plattform</strong> aus.</li>
-</ol></td>
+<td><a href="whats-new-platform-update-4.md">Neuheiten und Änderungen in Dynamics 365 for Operations Platformupdate 4 (Februar 2017)</a></td>
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Operations</td>
@@ -111,6 +124,8 @@ Um auf die neueste Version zu aktualisieren, lesen Sie [Prozess zum Aktualisiere
 </tr>
 </tbody>
 </table>
+
+
 
 
 

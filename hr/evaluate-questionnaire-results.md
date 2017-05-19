@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: bcf59ea8862280675c9fb711d2aab1e8dff18806
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0285103ef30ebf8322f2bf60941b07c7496e9c70
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Anzeigen und beurteilen der Ergebnisse eines Fragebogens
+
+[!include[banner](includes/banner.md)]
+
 
 In diesem Thema wird beschrieben, wie Sie die Ergebnisse von Fragebögen anzeigen und bewerten können, die die Befragten abgeschlossen haben. 
 
@@ -56,7 +60,8 @@ Auf der Seite **Antworten** können Sie Details zu Antworten, erzielten Punkten,
 -   **Antwortbericht** - In diesem Bericht werden die Antworten angezeigt, die der Befragte für jede Frage zum Fragebogen ausgewählt hat.
 -   **Falsche Antworten** - Dieser Bericht werden Informationen zu den falschen Antworten des Befragten angezeigt.
 
-**Hinweis:** Der **Ergebnisse**-Bericht ist nur verfügbar, wenn Sie Ergebnisgruppen im Fragebogen verwendet und wenn Sie auf der Seite **Ergebnisse** auf der Seite **Fragebögen** ausgewählt haben. Der **Antwort**-Bericht und der **Falsche Antworten**-Bericht sind nur verfügbar, wenn Sie auf der Seite **Antwortbericht** der Seite **Fragebögen** ausgewählt haben.
+> **Hinweis**
+>   Der **Ergebnisse**-Bericht ist nur verfügbar, wenn Sie Ergebnisgruppen im Fragebogen verwendet und wenn Sie auf der **Seite Ergebnisse** die **Seite Fragebögen** ausgewählt haben. Der **Antwort**-Bericht und der **Falsche Antworten**-Bericht sind nur verfügbar, wenn Sie auf der Seite **Antwortbericht** der Seite **Fragebögen** ausgewählt haben.
 
 ## <a name="questionnaire-statistics"></a>Fragebogenstatistik
 Mithilfe der Fragebogenstatistik können Sie die Ergebnisse eines ausgefüllten Fragebogen analysieren, der auf den Berechnungen beruht, die Sie definieren. Um Berechnungen zu definieren, müssen Sie die folgenden Aufgaben ausführen:
@@ -79,5 +84,7 @@ Die festgelegten Einstellungen werden gespeichert und können zur regelmäßigen
 [Verwenden von Fragebögen](questionnaires.md)
 
 [Verteilen und Abschließen von Fragebögen](distribute-questionnaires.md)
+
+
 
 

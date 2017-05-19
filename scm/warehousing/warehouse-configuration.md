@@ -3,7 +3,7 @@ title: Lagerortkonfiguration
 description: "In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enthält Informationen zum Aktivieren eines Lagerortlayouts und Lagerortverfahren."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 43
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,19 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 437f2348603db432df6d7589e4043d8145c52a1e
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e312f953d6a29d26b98794ed213d6ec70f6aa4b7
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="warehouse-configuration"></a>Lagerortkonfiguration
 
+[!include[banner](../includes/banner.md)]
+
+
 In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enthält Informationen zum Aktivieren eines Lagerortlayouts und Lagerortverfahren.
 
-**Hinweis:** Dieser Artikel gilt für Funktionen im Modul** Lagerortverwaltung** (erweiterte Lagerung). Es gilt nicht für Lagerort-Funktionen im Modul** Bestandsverwaltung**.
+**Hinweis:** Dieser Artikel gilt für Funktionen im Modul**Lagerortverwaltung** (erweiterte Lagerung). Es gilt nicht für Lagerort-Funktionen im Modul**Bestandsverwaltung**.
 
 ## <a name="warehouse-layout"></a>Lagerortlayout
 Das Lagerortverwaltungssystem in Microsoft Dynamics 365 for Operations ermöglicht flexible Methoden, Ihr Lagerortlayout zu definieren, um notwendige Anpassungen und somit eine optimale Lagerorteffizienz zu ermöglichen.
@@ -40,7 +44,7 @@ Das Lagerortverwaltungssystem in Microsoft Dynamics 365 for Operations ermöglic
 -   Sie können Lagerplätze gruppieren, indem Sie die Einstellungen für physische Kapazitätsengspässe verwenden.
 -   Sie können basierend auf Regeln, die über Abfragen definiert werden, steuern, wie Artikel gelagert und entnommen werden.
 
-Um die Lagerortverwaltung in Microsoft Dynamics 365 for Operations zu verwenden, müssen Sie einen Lagerort erstellen und diesen für die erweiterten oder spezialisierten Lagerortverwaltungsaktivitäten aktivieren. Wählen Sie auf der Seite **Lagerorte** die Option **Lagerortverwaltungsprozesse verwenden **aus.
+Um die Lagerortverwaltung in Microsoft Dynamics 365 for Operations zu verwenden, müssen Sie einen Lagerort erstellen und diesen für die erweiterten oder spezialisierten Lagerortverwaltungsaktivitäten aktivieren. Wählen Sie auf der Seite **Lagerorte** die Option **Lagerortverwaltungsprozesse verwenden**aus.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zonengruppen, Zonen, Lagerplatztypen und Lagerplätze
 
@@ -66,7 +70,7 @@ Um optimale ausgehende Prozesse zu erreichen, sollten Sie auswerten, ob feste En
 
 ### <a name="location-setup-wizard"></a>Lagerplatz-Setup-Assistent
 
-Um die Lagerplätze innerhalb eines Lagerorts schnell zu erstellen, können Sie den Assistenten **Lagerplatz-Setup** verwenden. Im Rahmen dieses Prozesses können Sie das Format der Lagerplatznamen problemlos verwalten.
+Um die Lagerplätze innerhalb eines Lagerorts schnell zu erstellen, können Sie den Assistenten **Lagerplatzeinstellung**verwenden. Im Rahmen dieses Prozesses können Sie das Format der Lagerplatznamen problemlos verwalten.
 
 ## <a name="warehouse-processes"></a>Lagerortprozesse
 Als Teil der Konfiguration des Lagerorts, ist es wichtig, dass Sie Lagerortprozesse gemäß der Geschäftsanforderungen aktivieren. Die wichtigsten Komponenten, die Sie konfigurieren müssen, sind Wellenvorlagen, Arbeitsvorlagen, Arbeitspools und Lagerplatzrichtlinien.
@@ -75,7 +79,12 @@ Als Teil der Konfiguration des Lagerorts, ist es wichtig, dass Sie Lagerortproze
 
 Wellenvorlagen unterstützen dabei, den ausgehenden Prozess "Für Lagerort freigeben" zu aktiviere n. Sobald Auftragspositionen freigegeben werden (entweder direkt aus Quelldokumenten, über Stapelverarbeitungsauftragsprozesse oder über Ladungen, die bereits erstellt wurden), wird die Wellenvorlagenfunktion verwendet. 
 
-Sie können drei Arten von Wellenvorlagen erstellen: **Versand**, **Produktionsauftrag** und **Kanban**. Parameter werden verwendet, um festzulegen, wie weit das System automatisch in die ausgehende Arbeitsverarbeitung wechseln soll. Eine Wellenvorlage wird anhand der Wellenvorlagensequenz und der Kriterien ausgewählt, die in der Vorlage angegeben werden. Wenn eine Vorlage oben in der Sequenz aufgeführt ist, werden die Kriterien in dieser Vorlage zuerst geprüft. Wenn die Kriterien erfüllt werden, wird die Wellenvorlage verarbeitet. Andernfalls werden die Kriterien in der nächsten Vorlage, usw. geprüft. Daher wird empfohlen, die Vorlage mit den spezifischsten Kriterien an den Anfang der Wellenvorlagen-Sequenzliste zu setzen, damit diese zuerst verarbeitet wird. Sie möchten beispielsweise die gesamte Arbeit für einen bestimmten Spediteur heute verarbeiten und die Verarbeitung der Arbeit für andere Spediteure vorübergehend verschieben. In diesem Fall sollte die Wellenvorlage, die die Arbeiten für diesen Spediteur auswählt, in der Sequenz höher aufgelistet werden als die anderen Vorlagen. Andernfalls würden Arbeiten für andere Spediteure vor der Arbeit für diesen Spediteur verarbeitet werden. 
+Folgenden drei Vorlagenarten können erstellt werden: 
+-   **Versand**
+-   **Produktionsauftrag**
+-   **Kanban** 
+
+Parameter werden verwendet, um festzulegen, wie weit das System automatisch in die ausgehende Arbeitsverarbeitung wechseln soll. Eine Wellenvorlage wird anhand der Wellenvorlagensequenz und der Kriterien ausgewählt, die in der Vorlage angegeben werden. Wenn eine Vorlage oben in der Sequenz aufgeführt ist, werden die Kriterien in dieser Vorlage zuerst geprüft. Wenn die Kriterien erfüllt werden, wird die Wellenvorlage verarbeitet. Andernfalls werden die Kriterien in der nächsten Vorlage, usw. geprüft. Daher wird empfohlen, die Vorlage mit den spezifischsten Kriterien an den Anfang der Wellenvorlagen-Sequenzliste zu setzen, damit diese zuerst verarbeitet wird. Sie möchten beispielsweise die gesamte Arbeit für einen bestimmten Spediteur heute verarbeiten und die Verarbeitung der Arbeit für andere Spediteure vorübergehend verschieben. In diesem Fall sollte die Wellenvorlage, die die Arbeiten für diesen Spediteur auswählt, in der Sequenz höher aufgelistet werden als die anderen Vorlagen. Andernfalls würden Arbeiten für andere Spediteure vor der Arbeit für diesen Spediteur verarbeitet werden. 
 
 Sie müssen die Wellenprozessmethoden in jeder Wellenvorlage angeben. Die verfügbaren Methoden variieren je nach Wellenvorlagentyp.
 
@@ -107,6 +116,8 @@ Um das Definieren der Aktivitäten, die den einzelnen Richtlinienpositionen für
 <a name="see-also"></a>Siehe auch
 --------
 
-[Konfigurieren von Lagerplätzen in einem WMS-aktivierten Lagerort (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurieren von Lagerplätzen in einem WMS-aktivierten Lagerort (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
+
 
 

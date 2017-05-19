@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 1666691ec122e65128b74056817a0c40551f49b5
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c85c90feb7f314db6b47f64402f8b9455ed53d9d
+ms.contentlocale: de-de
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -67,7 +68,7 @@ Um die Arbeitstage und die Arbeitsstunden für einen Kalender einzurichten, oder
 Damit die vollständigen Vorkalkulationsfunktionen des PSP verwendet werden können, richten Sie Kosten und Verkaufspreise für Arbeitskräfte, Arbeitskategorien, Ausgaben, Gebühren und Artikel ein.
 
 -   Um die Kosten und den Verkaufspreis der Arbeit, die Ausgaben und die Gebührenkategorien einzurichten, klicken Sie auf **Projektverwaltung und -buchhaltung** &gt; **Einstellungen** &gt; **Preise**.
--   Um die Kosten und den Verkaufspreis von Artikeln einzurichten, verwenden Sie die **Handelsvereinbarungen **-Seite für jeden Artikel auf der **Freigegebene Produkte**-Listenseite im Produkt-Informationsmanagement.
+-   Um die Kosten und den Verkaufspreis von Artikeln einzurichten, verwenden Sie die **Handelsvereinbarungen**-Seite für jeden Artikel auf der **Freigegebene Produkte**-Listenseite im Produkt-Informationsmanagement.
 
 ## <a name="creating-a-wbs"></a>Erstellen eines PSP
 Die Erstellung eines PSP umfasst drei Aktivitäten:
