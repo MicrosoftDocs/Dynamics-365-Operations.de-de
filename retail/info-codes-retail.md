@@ -1,15 +1,15 @@
 ---
 title: Infocodes
 description: "Dieser Artikel enthält einen Überblick über Infocodes, Infocodegruppen und wie sie verwendet werden."
-author: RobinARH
+author: mumani
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
@@ -47,13 +47,12 @@ In Dynamics 365 for Operations - Retail Infocodes können Sie Gruppen erstellen.
 -   Verknüpfen Sie Infocodes so mit anderen Infocodes oder Infocodegruppen, um Informationen über ein Produkt oder eine Transaktion zu sammeln, ohne einen separaten Infocode oder verknüpften Infocode für jedes Szenario zu definieren.
 
 ## <a name="info-code-examples"></a>Infocodebeispiele
-**Beispiel 1: Wiederverwendung von Infocodes** Sie können Linkinformationenscodes so verknüpfen, dass, wenn ein Infocode ausgelöst wurde, ein anderer Infocode direkt nach ihm ausgelöst wird. Wenn Sie also beispielsweise bestimmte Produkte verkaufen, möchten Sie den Kassierer auffordern, den Debitor zu fragen, ob er Batterien und eine Produktgarantie kaufen möchte. Für andere Produkte, möchten Sie den Kassierer auffordern, den Debitor zu fragen, ob er Batterien kaufen möchten, und auch dessen Postleitzahl erfragen. Wenn Sie verknüpfte Infocodes für diese Szenarien erstellen, müssen Sie jede Variation des Infocodes einrichten, damit der Kassierer aufgefordert wird, die richtigen Informationen anzufordern. Wenn Sie jedoch Infocodegruppen verwenden, können allgemeine Infocodes, wie Fragen nach Batterien, einmal eingerichtet werden und in mehreren Infocodegruppen dann wieder verwendet werden. Sie können Priorisierung in den Infocodegruppen auch verwenden, um den Auftrag zu identifizieren, in dem die Aufforderungen angezeigt werden. **Beispiel 2: Verknüpfen von Infocodes zu Infocodegruppen** Wenn Sie bestimmte Produkte verkaufen, beispielsweise mobile Geräte, möchten Sie immer einen Satz spezifische Informationen, beispielsweise Telefonnummer, Mobilgerätekennung (MEID) und Seriennummer, erfassen. Jedoch möchten Sie auch unterschiedliche Informationen für ein Tablet gegenüber einem Mobiltelefon erfassen. Sie können eine Infocodegruppe einrichten, die Aufforderungen für die Telefonnummer, MEID und die Seriennummer umfasst und dann die Infocodegruppe mit einem einzelnen Infocode verknüpfen. Wenn der produktspezifische Infocode ausgelöst wurde, kann als Nächstes die Infocodegruppe aktiviert werden, um es Ihnen zu ermöglichen, die allgemeinen Daten zu sammeln, ohne mehrere Sätze von verknüpften Infocodes für jedes Gerät zu definieren.
+**Beispiel 1: Wiederverwendung von Infocodes** Sie können Linkinformationenscodes so verknüpfen, dass, wenn ein Infocode ausgelöst wurde, ein anderer Infocode direkt nach ihm ausgelöst wird. Wenn Sie also beispielsweise bestimmte Produkte verkaufen, möchten Sie den Kassierer auffordern, den Debitor zu fragen, ob er Batterien und eine Produktgarantie kaufen möchte. Für andere Produkte, möchten Sie den Kassierer auffordern, den Debitor zu fragen, ob er Batterien kaufen möchten, und auch dessen Postleitzahl erfragen. Wenn Sie verknüpfte Infocodes für diese Szenarien erstellen, müssen Sie jede Variation des Infocodes einrichten, damit der Kassierer aufgefordert wird, die richtigen Informationen anzufordern. Wenn Sie jedoch Infocodegruppen verwenden, können allgemeine Infocodes, wie Fragen nach Batterien, einmal eingerichtet werden und in mehreren Infocodegruppen dann wieder verwendet werden. Sie können Priorisierung in den Infocodegruppen auch verwenden, um den Auftrag zu identifizieren, in dem die Aufforderungen angezeigt werden.
+
+
+**Beispiel 2: Verknüpfen von Infocodes zu Infocodegruppen** Wenn Sie bestimmte Produkte verkaufen, beispielsweise mobile Geräte, möchten Sie immer einen Satz spezifische Informationen, beispielsweise Telefonnummer, Mobilgerätekennung (MEID) und Seriennummer, erfassen. Jedoch möchten Sie auch unterschiedliche Informationen für ein Tablet gegenüber einem Mobiltelefon erfassen. Sie können eine Infocodegruppe einrichten, die Aufforderungen für die Telefonnummer, MEID und die Seriennummer umfasst und dann die Infocodegruppe mit einem einzelnen Infocode verknüpfen. Wenn der produktspezifische Infocode ausgelöst wurde, kann als Nächstes die Infocodegruppe aktiviert werden, um es Ihnen zu ermöglichen, die allgemeinen Daten zu sammeln, ohne mehrere Sätze von verknüpften Infocodes für jedes Gerät zu definieren.
 
  
--
-
-
-
 
 
 
