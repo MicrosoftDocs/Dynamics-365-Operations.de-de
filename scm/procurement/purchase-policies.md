@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 3df3144b08c54441699d9c0b48fe507857877586
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5208dc64d86345de4e53c5e293fbc861351a63ef
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -59,6 +59,7 @@ Wenn ein Mitarbeiter in juristischen Person 2222 eine Bestellanforderung erstell
 
 Im vorherigen Beispiel wurden alle Richtlinienregeln in einer einzelnen Organisationshierarchie definiert, und zwar der Organisationshierarchie Unternehmen. In einer komplexen Organisation können allerdings Richtlinien für mehrere Organisationshierarchien definiert werden.  
 
+
 Contoso ist ein großes Unternehmen, das komplexe Einkaufsregeln benötigt, um den Bestellanforderungsprozess zu kontrollieren. Contoso hat Regeln für zwei verschiedene Organisationshierarchien definiert: Abteilung und Globale Einkaufskontrolle.  
 
 Richtlinie 123 ist für die Organisationshierarchie "Abteilung" für "Verkauf UK – Vertriebsabteilung" definiert. In Richtlinie 123 legt die Regel "Bestellanforderungskontrolle" fest, dass Einschränkungen zu Mindestbestellmengen erzwungen werden müssen. In dieser Regel ist die Option **Einschränkungen der Mindestbestellmenge erzwingen** ausgewählt.  
@@ -93,6 +94,9 @@ Die Kategorierichtlinienregel definiert, wie Benutzer Kreditoren für jede Kateg
 ### <a name="re-approval-rule-for-purchase-orders"></a>Regel für die erneute Genehmigung von Bestellungen
 
 Die Regel für die erneute Genehmigung ist eine optionale Regel, die Kriterien für die Erforderlichkeit einer erneuten Genehmigung definiert, wenn eine Bestellung geändert wird. Die ausgewählten Felder werden in den Bestellungsworkflow ausgewertet, wenn die Bedingung "Bestellungswiedergenehmigung" eingerichtet wird im Workflow.
+
+> [!NOTE]
+> Buchhaltungsverteilung wird immer zurückgesetzt, wenn eine genehmigte Bestellung mit aktiviertem Änderungsmanagement geändert wird. Falls Sie eine erneute Genehmigung einer Bestellung verhindern möchten, wenn bestimmte Felder geändert werden, sollten Sie daran denken, dass das Feld Buchhaltungsverteilung.geändert NICHT als ausgewähltes Feld für eine erneute Genehmigung einbezogen werden darf. 
 
 ### <a name="purchase-requisition-rfq-rule"></a>Angebotsanforderungsregel für Bestellanforderung
 

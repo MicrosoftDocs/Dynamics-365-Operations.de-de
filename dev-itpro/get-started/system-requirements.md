@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.search.scope: Core
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: de2f71a21c5aac953349559c84283d0f76082d42
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -42,7 +42,9 @@ Die Microsoft Dynamics 365 for Operations-Webanwendung kann in den folgenden Web
 -   Google Chrome (letzte öffentlich verfügbare Version) unter Windows 10, Windows 8.1, Windows 8, Windows 7 oder Google Nexus 10 Tablet
 -   Apple Safari (letzte öffentlich verfügbare Version) auf Mac OS X 10.10 (Yosemite), 10.11 (El Capitan), 10.12 (Sierra) oder Apple iPad
 
-Um die neueste Version für jeden Webbrowser zu suchen, wechseln Sie zur Website des Softwareherstellers. **Hinweise:**
+Um die neueste Version für jeden Webbrowser zu suchen, wechseln Sie zur Website des Softwareherstellers. 
+
+**Hinweise:**
 
 -   Wenn Sie Bilder aufzuzeichnen, die über die Aufgabenaufzeichnung generiert wurden, und diese in Microsoft Word-Dokumente aufnehmen, müssen Sie eine Chrome-Erweiterung installiert haben. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   Der Workflow-Editor wird als ClickOnce-Anwendung gestartet. Nur Microsoft Edge and Internet Explorer (auf einer unterstützten Microsoft Windows-Version) unterstützen ClickOnce-Anwendungen. Die Workflow-Editor-ClickOnce-Anwendung erfordert ein kompatibles 64-Bit-Betriebssystem.
@@ -59,10 +61,12 @@ Retail Cloud POS für Dynamics 365 for Operations kann in den folgenden Webbrows
 -   Chrome (letzte öffentlich verfügbare Version) unter Windows 10, Windows 8.1 oder Windows 7
 
 ## <a name="network-requirements"></a>Netzwerkanforderungen
--   Dynamics 365 for Operations wurde für Netzwerke mit eine Latenzzeit von weniger als 150 Millisekunden (ms) entwickelt. Dies ist die Latenzzeit von einem Browser-Client zum Microsoft Azure-Rechenzentrum, das Dynamics 365 for Operations hostet. Es wird empfohlen, dass Sie die Netzwerkwartezeit unter <http://www.azurespeed.com> testen.
+-   Dynamics 365 for Operations wurde für Netzwerke mit eine Latenzzeit von 250-300 Millisekunden (ms) oder weniger entwickelt. Dies ist die Latenzzeit von einem Browser-Client zum Microsoft Azure-Rechenzentrum, das Dynamics 365 for Operations hostet. Es wird empfohlen, dass Sie die Netzwerkwartezeit unter <http://www.azurespeed.com> testen.
 -   Bandbreitenanforderungen für Dynamics 365 for Operations sind vom Szenario abhängig. In den meisten Fällen wird eine Bandbreite von mehr als 50 Kilobytes pro Sekunde (kbps) benötigt. Bei hohen Nutzlastanforderungen, beispielsweise Arbeitsbereiche oder Szenarien mit umfangreichen Anpassungen, wird eine höhere Bandbreite empfohlen.
 
-Im Allgemeinen ist Dynamics 365 for Operations für das Internet optimiert. Die Anzahl von Roundtrips von einem Browserclient zum Azure Rechenzentrum ist sehr klein, und die gesamte Nutzlast ist komprimiert. **Warnung:** Berechnen Sie Bandbreitenanforderungen von einem Clientstandort nicht, indem Sie die Anzahl der Benutzer mit den Mindestbandbreitenanforderungen multiplizieren. Die gleichzeitige Nutzung eines bestimmten Standorts ist schwierig zu berechnen. Kunden, die sich Gedanken machen über die Bandbreitenanforderungen, sollten eine Vorabversion von Dynamics 365 for Operations verwenden.
+Im Allgemeinen ist Dynamics 365 for Operations für das Internet optimiert. Die Anzahl von Roundtrips von einem Browserclient zum Azure Rechenzentrum ist sehr klein, und die gesamte Nutzlast ist komprimiert. 
+
+**Warnung:** Berechnen Sie Bandbreitenanforderungen von einem Clientstandort nicht, indem Sie die Anzahl der Benutzer mit den Mindestbandbreitenanforderungen multiplizieren. Die gleichzeitige Nutzung eines bestimmten Standorts ist schwierig zu berechnen. Kunden, die sich Gedanken machen über die Bandbreitenanforderungen, sollten eine Vorabversion von Dynamics 365 for Operations verwenden.
 
 ## <a name="net-framework-requirements"></a>.NET Framework-Anforderungen
 Dynamics 365 for Operations erfordert .NET Framework Version 4.6.2 für alle ClickOnce-Anwendungen, beispielsweise dem Dokumentweiterleitungsagenten. Installationsanweisungen erhalten Sie unter [Installieren von .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).

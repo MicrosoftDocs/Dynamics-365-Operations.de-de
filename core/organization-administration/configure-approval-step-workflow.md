@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 052cec3010c0d5ecbb9ed341fb23d0ec64682467
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem der Genehmigungsschritt zugewie
     <td>Benutzer in einer bestimmten Organisationshierarchie</td>
     <td><ol>
     <li>Nachdem Sie <strong>Hierarchie</strong> auf der Registerkarte <strong>Hierarchieauswahl</strong> in der Liste <strong>Hierarchietyp</strong> ausgewählt haben, wählen Sie den Typ der Hierarchie aus, dem der Schritt zugewiesen werden soll.</li>
-    <li>Vom System muss eine Reihe von Benutzernamen aus der Hierarchie abgerufen werden. Diese Namen stellen Benutzer dar, denen der Schritt zugewiesen werden kann. Gehen Sie folgendermaßen vor, um den Anfangs- und Endpunkt des Bereichs von Benutzernamen anzugeben, die vom System abgerufen werden:
-    <ol>
+    <li>Vom System muss eine Reihe von Benutzernamen aus der Hierarchie abgerufen werden. Diese Namen stellen Benutzer dar, denen der Schritt zugewiesen werden kann. Gehen Sie folgendermaßen vor, um den Anfangs- und Endpunkt des Bereichs von Benutzernamen anzugeben, die vom System abgerufen werden: <ol>
     <li>Wählen Sie zum Angeben eines Startpunkts eine Person in der Liste <strong>Beginn</strong> aus.</li>
     <li>Klicken Sie zum Angeben des Endpunkts auf <strong>Bedingung hinzufügen</strong>. Geben Sie dann eine Bedingung ein, die bestimmt, an welcher Position in der Hierarchie das Abrufen von Namen beendet werden soll.</li>
     </ol></li>
-    <li>Geben Sie auf der Registerkarte <strong>Hierarchieoptionen</strong> an, welchen Benutzern im Bereich der Schritt zugewiesen werden soll:
-    <ul>
+    <li>Geben Sie auf der Registerkarte <strong>Hierarchieoptionen</strong> an, welchen Benutzern im Bereich der Schritt zugewiesen werden soll: <ul>
     <li><strong>Allen abgerufenen Benutzern zuordnen</strong> – Der Schritt wird allen Benutzern im Bereich zugeordnet.</li>
     <li><strong>Nur letztem abgerufenen Benutzer zuordnen</strong> – Der Schritt wird nur dem letzten Benutzer im Bereich zugewiesen.</li>
     <li><strong>Benutzer ausschließen, die die folgenden Bedingung erfüllen</strong> – Der Schritt wird keinem Benutzer im Bereich zugewiesen, der eine bestimmte Bedingung erfüllt. Klicken Sie auf <strong>Bedingung hinzufügen</strong>, um die Bedingung anzugeben.</li>
@@ -211,13 +209,11 @@ Wenn ein Benutzer ein Dokument nicht innerhalb der vorgesehenen Zeit bearbeitet,
     <td>Benutzer in einer bestimmten Organisationshierarchie</td>
     <td><ol>
     <li>Nachdem Sie <strong>Hierarchie</strong> auf der Registerkarte <strong>Hierarchieauswahl</strong> in der Liste <strong>Hierarchietyp</strong> ausgewählt haben, wählen Sie den Typ der Hierarchie aus, an den das Dokument eskaliert werden soll.</li>
-    <li>Vom System muss eine Reihe von Benutzernamen aus der Hierarchie abgerufen werden. Diese Namen stellen Benutzer dar, an die das Dokument unter Umständen eskaliert werden kann. Gehen Sie folgendermaßen vor, um den Anfangs- und Endpunkt des Bereichs von Benutzernamen anzugeben, die vom System abgerufen werden:
-    <ol>
+    <li>Vom System muss eine Reihe von Benutzernamen aus der Hierarchie abgerufen werden. Diese Namen stellen Benutzer dar, an die das Dokument unter Umständen eskaliert werden kann. Gehen Sie folgendermaßen vor, um den Anfangs- und Endpunkt des Bereichs von Benutzernamen anzugeben, die vom System abgerufen werden: <ol>
     <li>Wählen Sie zum Angeben eines Startpunkts eine Person in der Liste <strong>Beginn</strong> aus.</li>
     <li>Klicken Sie zum Angeben des Endpunkts auf <strong>Bedingung hinzufügen</strong>. Geben Sie dann eine Bedingung ein, die bestimmt, an welcher Position in der Hierarchie das Abrufen von Namen beendet werden soll.</li>
     </ol></li>
-    <li>Geben Sie auf der Registerkarte <strong>Hierarchieoptionen</strong> an, an welche Benutzer im Bereich das Dokument eskaliert werden soll:
-    <ul>
+    <li>Geben Sie auf der Registerkarte <strong>Hierarchieoptionen</strong> an, an welche Benutzer im Bereich das Dokument eskaliert werden soll: <ul>
     <li><strong>Allen abgerufenen Benutzern zuordnen</strong> – Das Dokument wird an alle Benutzer im Bereich eskaliert.</li>
     <li><strong>Nur letztem abgerufenen Benutzer zuordnen</strong> – Das Dokument wird nur an den letzten Benutzer im Bereich eskaliert.</li>
     <li><strong>Benutzer ausschließen, die die folgenden Bedingung erfüllen</strong> – Das Dokument wird an keinen Benutzer im Bereich eskaliert, der eine bestimmte Bedingung erfüllt. Klicken Sie auf <strong>Bedingung hinzufügen</strong>, um die Bedingung anzugeben.</li>

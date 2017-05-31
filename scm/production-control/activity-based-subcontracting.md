@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 4d8ebe2c0a8b4fe08fa7f63ba310c1d9203c1150
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 4cf93c861345ad11b995ac2fe50c9a94dddcbd56
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -90,7 +90,7 @@ Wie für Prozessaktivitäten müssen Sie einen Standard-Service für weiterverge
 ## <a name="service-quantity-calculation"></a>Servicemengenberechnung
 Der ganze Einkaufsprozess basiert auf einer Artikelreferenz für einen Service. Diese Artikelreferenz wird in eine Maßeinheit eines Dienstes gemessen. Services werden üblicherweise entweder in Anzahl Dienstleistungen (Einheiten) oder in Zeit gemessen. Um die Service-Menge, basierend auf den erfassten Abschluss von Kanban-Einzelvorgängen zu berechnen, können die folgenden Methoden zur Verfügung gestellt werden:
 
--   **Berechnung, die auf der Anzahl von Einzelvorgängen basiert** – Ein Kanban-Einzelvorgang entspricht *n* Service-Einheiten, unabhängig davon, wie die Fertigproduktmenge beschafft wird. Im Lean Manufacturing, ein Einzelvorgang entspricht einer Handhabungseinheit. Diese Berechnungsmethode betrifft alle Services, die einen Festpreis pro Handhabungseinheit haben. Daher gilt diese Methode normalerweise für Umlagerungsaktivitäten. Allerdings kann dies auch für Prozessaktivitäten gelten, die gesamte Handhabungseinheiten verarbeiten.
+-   **Berechnung, die auf der Anzahl von Einzelvorgängen basiert** – Ein Kanban-Einzelvorgang entspricht *n* Service-Einheiten, unabhängig von der beschafften Produktmenge. Im Lean Manufacturing, ein Einzelvorgang entspricht einer Handhabungseinheit. Diese Berechnungsmethode betrifft alle Services, die einen Festpreis pro Handhabungseinheit haben. Daher gilt diese Methode normalerweise für Umlagerungsaktivitäten. Allerdings kann dies auch für Prozessaktivitäten gelten, die gesamte Handhabungseinheiten verarbeiten.
 -   **Berechnung, die auf Grundlage der Produktmenge basiert** ** – Die Service-Menge ist relativ zu der Produktmenge, die geplant/beschafft wird. Wenn die beschaffte Produktmenge berechnet wird, können Ausschussmengen entweder einbezogen oder nicht berücksichtigt werden. Diese Berechnungsmethode gilt für alle Anfragen, in denen der Service-Preis pro Einheit des verarbeiteten Produkts ausgeglichen wird.
 -   **Berechnung, die auf der Aktivitätszeit basiert** – Die theoretischen Aktivitätszeiten werden, basierend auf der Laufzeit der Aktivität, der verarbeiteten Summe der Menge und des Durchsatz-Verhältnisses des verarbeiteten Produkts berechnet. Diese Berechnungsmethode gilt für Dienste, die stundenweise bezahlt werden und Abweichungen in Zeit pro verarbeitetes Produkt aufweisen.
 

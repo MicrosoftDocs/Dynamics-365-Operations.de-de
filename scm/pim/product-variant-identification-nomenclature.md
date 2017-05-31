@@ -1,40 +1,38 @@
 ---
-title: Produktnummerbezeichnung
-description: "In diesem Thema wird beschrieben, wie Sie eine Produktnummerbezeichnung einrichten können, um das feste Format [Produktmasternummer: Konfiguration: Größe: Farbe: Stil] mit einem Zielfoirmat zu ersetzen, das Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen für Ihre Auswahl enthält. Sie können auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten."
-author: YuyuScheller
+title: Bezeichnung der Produktvariantennummern und Namen
+description: "In diesem Thema wird beschrieben, wie Sie eine Produktnummernbezeichnung einrichten können, um das feste Format [Produktmasternummer – Konfiguration – Größe – Farbe – Stil] zu ersetzen. Die neue Bezeichnung hat ein gezieltes Format, das die Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen Ihrer Wahl umfasst. Darüber hinaus können Sie auch eine Bezeichnung für Produktnamen erstellen. Sie können schließlich auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten."
+author: roxanadiaconu
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
 audience: Application User
+ms.reviewer: annbe
 ms.search.scope: Operations, Core
 ms.custom: 220104
-ms.assetid: 31c9efb4-b5f6-4af3-b884-8f1e128469bd
+ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: roxanad
+ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: deda2b7986333e0d865aa87e6b34b6acdc8f6a6d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 0e19b18a2900a0b42dc9a1a984b9c884ca0c17cc
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
-# <a name="product-number-nomenclature"></a>Produktnummerbezeichnung
+# <a name="nomenclature-of-product-variant-numbers-and-names"></a>Bezeichnung der Produktvariantennummern und Namen
 
-[!include[banner](../includes/banner.md)]
+In diesem Thema wird beschrieben, wie Sie eine Produktnummernbezeichnung einrichten können, um das feste Format [Produktmasternummer – Konfiguration – Größe – Farbe – Stil] zu ersetzen. Die neue Bezeichnung hat ein gezieltes Format, das die Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen Ihrer Wahl umfasst. Darüber hinaus können Sie auch eine Bezeichnung für Produktnamen erstellen. Sie können schließlich auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten.
 
-
-In diesem Thema wird beschrieben, wie Sie eine Produktnummerbezeichnung einrichten können, um das feste Format [Produktmasternummer: Konfiguration: Größe: Farbe: Stil] mit einem Zielfoirmat zu ersetzen, das Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen für Ihre Auswahl enthält. Sie können auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten.
-
-Die neue Bezeichnung  der Produktvariantennummernbezeichnung ermöglicht den Einbezug von Segmenten im Produktvariantenbezeichner. Diese Segmente können die Produktmasternummern, Produktdimensionen, Nummernkreise, Sequenzen, Textkonstanten und Attribute enthalten. Mit dieser Funktionalität können Sie schnell eine bestimmte Produktvariante suchen, wenn einen Auftrag oder eine Bestellung erstellen.
+Die neuen Bezeichnungen für Produktvariantennummern und Produktvariantennamen ermöglichen es Ihnen, Segmente in die Bezeichner für Produktvarianten einzubeziehen. Diese Segmente können die Produktmasternummer und den Produktmasternamen, die Produktdimensionskennungen und -namen, die Nummernkreise, Textkonstanten und Attribute umfassen. Mit dieser Funktionalität können Sie schnell eine bestimmte Produktvariante suchen, wenn einen Auftrag oder eine Bestellung erstellen. Sie erstellen Bezeichnungen sowohl für Produktvariantennummern als auch Produktvariantennamen mithilfe der Seite **Produktbezeichnung**. Um diese Seite zu öffnen, klicken Sie auf **Produktinformationsverwaltung** &gt; **Setup**.
 
 ## <a name="nomenclature-of-predefined-product-variants"></a>Bezeichnung der vordefinierten Produktvarianten
 Produktvarianten für Produktmaster werden entsprechend einer der drei Konfigurationstechnologien generiert:
@@ -43,69 +41,70 @@ Produktvarianten für Produktmaster werden entsprechend einer der drei Konfigura
 -   Einschränkungsbasiert
 -   Dimensionsbasiert
 
-Jede Produktvariante hat eine Nummer, und mit der Produktvariantenkennungsbezeichnung können Sie die Segmente auswählen, die in jeder Produktvariantennummer enthalten sind. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen.
+Jede Produktvariante hat eine Nummer und einen Namen, und mit den Produktvarianten-Kennungsbezeichnungen können Sie die Segmente auswählen, die in jede Produktvariantennummer oder -name einbezogen werden. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen:
 
 -   Produktmasternummer
+-   Produktmastername
 -   Nummernkreiswert
 -   Textkonstante
 -   Produktdimensionen
-    -   Variante
-    -   Farbe
-    -   Größe
-    -   Formatvorlage
+    -   Konfigurationskennung oder Name
+    -   Farbkennung oder Name
+    -   Größenkennung oder Name
+    -   Stilkennung oder Name
 
-Nachdem eine Produktvariantenkennungsbezeichnung definiert wurde, kann sie einer Produktdimensionsgruppe zugewiesen werden. Anschließend stehen allen Produktmaster, die auf diese Produktdimensionsgruppe verweisen, Produktvariantennummern entsprechend der Bezeichnugn zur Verfügung. Es ist auch möglich, eine Produktvariantenkennungsbezeichnung direkt einem Produktmaster, in diesem Fall die Produktvarianten, die diesem Master gehören, Produktvariantennummern entsprechend der Bezeichnung zuzuweisen.
+Nachdem Sie eine Produktvarianten-Kennungsnummernbezeichnung definieren, können Sie diese einer Produktdimensionsgruppe zuordnen. Allen Produktmastern, die auf diese Produktdimensionsgruppe verweisen, werden dann Produktvariantennummern entsprechend der Bezeichnung zugewiesen. Allerdings können Produktvarianten-Namensbezeichnungen nicht Produktdimensionsgruppen zugeordnet werden. Sie können auch eine Produktvarianten-Kennungsbezeichnung einem Produktmaster direkt zuweisen. In diesem Fall werden die Produktvarianten, die zum Produktmaster gehören, Produktvariantennummern und Namen entsprechend den Bezeichnungen zugewiesen.
 
 ### <a name="example"></a>Beispiel
 
-Ein T-Shirt (TS1234) wird in 3 verschiedenen Größen (S, M, L), 4 verschiedenen Farben (Rot, Dunkelblau, Gelb, Blau,) und 2 Typen (Polo, V-Ausschnitt) produziert, was insgesamt 24 mögliche Produktvarianten ergibt. Eine Produktvariantenkennungsnomenklatur wird mit folgenden Segmente erstellt:
+Ein T-Shirt (TS1234) wird in drei Größen (S, M, L), in vier Farben (rot, grün, blau, gelb) sowie in zwei Stilen (Polo, mit V-Ausschnitt) hergestellt. Daher sind 24 Produktvarianten möglich (= 3 × 4 × 2). Sie erstellen eine Produktvarianten-Nummernbezeichnung, die die folgenden Segmente hat:
 
 1.  Produktmasternummer
-2.  Textkonstante: '-'
+2.  Textkonstante: "-"
 3.  Farbe
-4.  Textkonstante: '-'
+4.  Textkonstante: "-"
 5.  Größe
-6.  Textkonstante: '-'
+6.  Textkonstante: "-"
 7.  Formatvorlage
 
-Die Produktvariantennummer für Rot, Small, Polo ist: TS1234-Rot-Small-Polo.
+In diesem Fall ist die Produktvariantennummer für ein rotes kleines Polo-T-Shirt TS1234-rot-klein-Polo.
 
 ## <a name="nomenclature-of-constraintbased-configurations"></a>Einschränkungsbasierte Konfigurationen-Bezeichnung
-Für einschränkungsbasierte Konfigurationen kann eine für die dedizierte zum Konfigurationsproduktdimension angegeben werden. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen.
+Für einschränkungsbasierte Konfigurationen können Sie eine dedizierte Bezeichnung für die Konfigurationsproduktdimension erstellen. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen:
 
 -   Nummernkreiswert
 -   Textkonstante
--   Attributwert 
+-   Attributwert
 
-Jede Komponente in einem Produktkonfigurationsmodell kann eine eigene Konfigurationsbezeichnung haben. Nur Attribute, die möglicherweise der Komponente angehören, werden verwendet. Attribute aus Unterkomponenten oder Benutzeranforderungen sind nicht verfügbar.
+Jede Komponente in einem Produktkonfigurationsmodell kann eine eigene Konfigurationsbezeichnung haben. Nur Attribute, die der Komponente angehören, können verwendet werden. Attribute aus Unterkomponenten oder Benutzeranforderungen können nicht verwendet werden.
 
 ### <a name="example"></a>Beispiel
 
-Ein Produktkonfigurationsmodell hat eine Stammkomponente mit zwei Attributen.
+Ein Produktkonfigurationsmodell hat eine Stammkomponente, die zwei Attribute hat:
 
 -   Material (Plastik, Holz Stahl)
 -   Länge (10… 100)
 
-Eine Konfigurationsbezeichnung wird nach folgenden Segmenten definiert:
+Sie erstellen eine Konfigurationsbezeichnung, die die folgenden Segmente hat:
 
 1.  Attributwert: Material
-2.  Textkonstante: 'AAA'
+2.  Textkonstante: "AAA"
 3.  Attributwert: Länge
 
-Die Kennung für hölzernes Material mit einer Länge von 78 erhält folgende Konfiguration: ID: WoodAAA78.
+In diesem Fall ist die Konfigurationskennung für Holzmaterial mit einer Länge von 78 WoodAAA78.
 
 ## <a name="nomenclature-of-dimensionbased-configurations"></a>Dimensionsbasierte Konfigurationsbezeichnung
-Für dimensionsbasierte Konfigurationen kann eine für die dedizierte zum Konfigurationsproduktdimension angegeben werden. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen.
+Für dimensionsbasierte Konfigurationen können Sie eine dedizierte Bezeichnung für die Konfigurationsproduktdimension erstellen. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen:
 
 -   Nummernkreiswert
 -   Textkonstante
 -   Konfigurationsgruppenartikel
 
-Eine Konfigurationsbezeichnung kann für eine Stückliste (BOM) definiert werden.
+Sie können eine Konfigurationsbezeichnung für eine Stückliste (BOM) definieren.
 
 ### <a name="example"></a>Beispiel
 
-Eine Stückliste verfügt über 4 Stücklistenpositionen die in 2 Konfigurationsgruppen aufgeteilt werden.
+Eine Stückliste besitzt vier Stücklistenpositionen, die in zwei Variantengruppen unterteilt sind:
 
 -   Stücklistenposition: M0007, Standardgehäuse
     -   Konfigurationsgruppe: Gehäuse
@@ -116,89 +115,87 @@ Eine Stückliste verfügt über 4 Stücklistenpositionen die in 2 Konfigurations
 -   Stücklistenposition: M0022, Vordergrill Metall
     -   Konfigurationsgruppe: Vordergrill
 
-Eine Konfigurationsbezeichnung wird nach folgenden Segmenten definiert:
+Sie erstellen eine Konfigurationsbezeichnung, die die folgenden Segmente hat:
 
 1.  Konfigurationsgruppe: Gehäuse
-2.  Textkonstante: '&'
+2.  Textkonstante: "&"
 3.  Konfigurationsgruppe: Vordergrill
 
-Die Kennung für ein Standardgehäuse mit Tuchvordergrill ist: M0007&M0021.
+In diesem Fall ist die Konfigurationskennung für ein Standardgehäuse mit Tuchvordergrill M0007&M0021.
 
-## <a name="nomenclature-of-a-combination-of-product-variants-and-configurations"></a>Bezeichnung einer Kombination mit Produktvarianten und Konfigurationen
-Wenn Sie entweder einschränkungsbasierte oder dimensionsbasierte Konfigurationstechnologie verwenden, um Produktvarianten für einen Produktmaster zu konfigurieren, können die Produktvarianten, Produktvariantennummern abrufen, die Bezeichnung der Konfigurationsdimension enthalten. Folgen Sie diesen Schritten, um Varianten zu konfigurieren:
+## <a name="nomenclature-for-a-combination-of-product-variants-and-configurations"></a>Bezeichnung für eine Kombination mit Produktvarianten und Konfigurationen
+Wenn Sie entweder die einschränkungsbasierte Konfigurationstechnologie oder die dimensionsbasierte Konfigurationstechnologie verwenden, um Produktvarianten für einen Produktmaster zu konfigurieren, können die Produktvariantennummern der Produktvarianten die Bezeichnung aus der Konfigurationsdimension umfassen. Folgen Sie diesen Schritten, um Varianten zu konfigurieren.
 
-1.  Definieren Sie eine Produktvariantennummernbezeichnung, die die Konfigurationsdimension auf der Seite **Produktbezeichnung** enthält.
-2.  Bezeichnung einer Produktdimensionsgruppe mit der Konfigurationsdimension zuweisen.
+1.  Definieren Sie auf der Seite **Produktbezeichnung** eine Produktvarianten-Nummernbezeichnung, die die Konfigurationsdimension umfasst.
+2.  Weisen Sie die Bezeichnung einer Produktdimensionsgruppe zu, die die Konfigurationsdimension besitzt.
 3.  Definieren Sie eine Konfigurationsbezeichnung für die Komponenten oder die Stücklisten, die für das Konfigurieren von Produktvarianten verwendet werden.
+
+Sie können auch eine Bezeichnungen für die Produktvariantennamen erstellen. Die Produktvariantennamen können konfiguriert werden, um die Konfigurationskennung oder den Namen zu umfassen.
 
 ### <a name="example-for-constraint-based-configurations"></a>Beispiele für einschränkungsbasierte Konfigurationen
 
-In diesem Beispiel können Sie eine Produktvariantennummernbezeichnung verwenden, die aus den folgenden Segmente besteht:
+Für dieses Beispiel können Sie eine Produktvarianten-Nummernbezeichnung verwenden, die aus den folgenden Segmenten besteht:
 
 1.  Produktmasternummer
-2.  Textkonstante '\_'
+2.  Textkonstante "\_"
 3.  Variante
 
-Die Konfigurationsbezeichnung kann aus den folgenden Segmenten bestehen:
+Die Konfigurationsbezeichnung besteht aus den folgenden Segmenten:
 
 1.  Attributwert: Material
-2.  Textkonstante: 'AAA'
+2.  Textkonstante: "AAA"
 3.  Attributwert: Länge
 
-Sie können den folgenden Werten für Segmente eingegeben:
+Sie geben die folgenden Werte für Segmente ein:
 
--   Produktmasternummer = M0099
--   Material = Plastik
--   Länge = 12
+-   Produktmasternummer = **M0099**
+-   Material = **Plastik**
+-   Länge = **12**
 
-Die Produktvariantennummer wird: M0099\_PlasticAAA12.
+In diesem Fall wird die Produktvariantennummer M0099\_PlasticAAA12 lauten.
 
 ### <a name="example-for-dimension-based-configurations"></a>Beispiele für einschränkungsbasierte Konfigurationen
 
-In diesem Beispiel können Sie eine Produktvariantennummernbezeichnung verwenden, die aus den folgenden Segmente besteht:
+Für dieses Beispiel können Sie eine Produktvarianten-Nummernbezeichnung verwenden, die aus den folgenden Segmenten besteht:
 
 1.  Produktmasternummer
-2.  Textkonstante: '//'
+2.  Textkonstante "//"
 3.  Variante
 
-Die Konfigurationsbezeichnung kann aus den folgenden Segmenten bestehen:
+Die Konfigurationsbezeichnung besteht aus den folgenden Segmenten:
 
 1.  Konfigurationsgruppe: Gehäuse
-2.  Textkonstante: '&'
+2.  Textkonstante: "&"
 3.  Konfigurationsgruppe: Vordergrill
 
-Sie können den folgenden Werten für Segmente eingegeben:
+Sie geben die folgenden Werte für Segmente ein:
 
--   Produktmasternummer = D0123
--   Gehäuse = M0008
--   Vordergrill = M0022
+-   Produktmasternummer = **D0123**
+-   Gehäuse = **M0008**
+-   Vordergrill = **M0022**
 
-Die Produktvariantennummer wird: D0123//M0008&M0022.
+In diesem Fall wird die Produktvariantennummer D0123//M0008&M0022 lauten.
 
 ## <a name="numbering-conflicts"></a>Anzahl von Konflikten
-Es ist möglich, Produktvariantennummernbezeichnungen einzurichten, die nicht zu eindeutigen Produktvariantennummern führen. So kann dies beispielsweise auftreten, wenn eine aktive Produktdimensionen nicht in der Bezeichnung für den Produktmaster enthalten ist, der vordefinierte Technologie für Variantenkonfiguration verwendet. Konflikte werden für die verschiedenen Konfigurationstechnologien unterschiedlich behandelt.
+In einigen Fällen erzeugt eine Produktvarianten-Nummernbezeichnung, die Sie eingerichtet haben, möglicherweise keine eindeutigen Produktvariantennummern. Die Produktvariantennummern sind beispielsweise nicht eindeutig, wenn eine aktive Produktdimension nicht in der Bezeichnung für einen Produktmaster enthalten ist, der die vordefinierte Technologie für Variantenkonfiguration verwendet. Die Art, wie Sie Konflikte handhaben, ist je nach Konfigurationstechnik unterschiedlich.
 
 ### <a name="predefined-variants"></a>Vordefinierte Variante
 
-Ein Fehler tritt auf, wenn Sie manuell oder automatisch versuchen, Produktvarianten zu generieren, bei denen eine oder mehrere mit der gleichen Produktvariantennummer enden. Um dies zu vermeiden, sollten Sie alle aktiven Produktdimensionen in der Produktdimensionsgruppe verwenden, oder führen Sie einen Nummernkreis ein, um sicherzustellen, dass die Produktvariantennummern eindeutig sind.
+Ein Fehler tritt auf, wenn Sie manuell oder automatisch versuchen, Produktvarianten zu erstellen, bzw. zu generieren, und mehr als eine Produktvariante letztendlich dieselbe Produktvariantennummer besitzt. Um dieses Szenarios zu vermeiden, sollten Sie alle aktiven Produktdimensionen in der Produktdimensionsgruppe verwenden. Alternativ beziehen Sie einen Nummernkreis ein, um sicherzustellen, dass die Produktvariantennummern eindeutig sind.
 
 ### <a name="constraint-based-configurations"></a>Einschränkungsbasierte Konfigurationen
 
-Abhängig von der Bezeichung versucht das System möglicherweise, eine nicht eindeutige Produktvariantennummer zu einer Konfiguration hinzuzufügen. In diesem Fall verwendete das System den Nummernkreis für die Konfigurationsdimension als Produktvariantennummer stattdessen. Wenn dies der Fall ist, erhalten Sie eine Warnung. Um dies zu vermeiden, sollten Sie genügend Attribute in der Bezeichnung einschließen, um die Eindeutigkeit sicherzustellen und sicherzustellen, dass die Option **Wiederverwenden** für die Komponente aktiviert ist.
+Abhängig von der Bezeichung versucht das System möglicherweise, eine nicht eindeutige Produktvariantennummer zu einer Konfiguration hinzuzufügen. In diesem Fall verwendet das System stattdessen den Nummernkreis für die Konfigurationsdimension als Produktvariantennummer, und Sie erhalten eine Warnung. Um dieses Szenarios zu vermeiden, sollten Sie genügend Attribute in die Bezeichnung einbeziehen, um eindeutige Produktvariantennummern zu gewährleisten. Sie sollten auch sicherstellen, dass die Option **Wiederverwenden** für die Komponente eingeschaltet ist.
 
 ### <a name="dimension-based-configurations"></a>Dimensionsbasierte Konfigurationen
 
-Der Konfigurationsprozess enthält einen Schritt, in dem das System einen Konfigurationswert entsprechend der Bezeichnung vorschlägt. In diesem Schritt können Sie den Konfigurationswert manuell ändern. Wenn Sie die Konfiguration speichern, prüft das System, ob der Konfigurationswert eindeutig ist. Ist dies nicht der Fall, wird eine Fehlermeldung angezeigt. Sie müssen einen eindeutigen Konfigurationswert eingeben, um die Konfiguration zu speichern.
-
-
+Während eines Schritts im Konfigurationsprozess schlägt das System einen Konfigurationswert gemäß der Bezeichnung vor. In diesem Schritt können Sie den Konfigurationswert manuell ändern. Wenn Sie die Konfiguration speichern, überprüft das System, dass der Konfigurationswert eindeutig ist. Wenn der Wert, den Sie eingegeben haben, nicht eindeutig ist, erhalten Sie eine Fehlermeldung. Um die Konfiguration zu speichern, müssen Sie einen eindeutigen Konfigurationswert eingeben.
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen einer Produktnummerenbezeichnung für vordefinierte Produktvarianten (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
+[Erstellen einer Produktnummerenbezeichnung für vordefinierte Produktvarianten](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
-[Erstellen einer Produktnummerenbezeichnung für vordefinierte Produktvarianten (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
-
-
+[Erstellen einer Produktnummerenbezeichnung für konfigurierte Produktvarianten](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
 
 

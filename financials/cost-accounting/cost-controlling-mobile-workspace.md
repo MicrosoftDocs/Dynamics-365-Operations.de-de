@@ -3,10 +3,10 @@ title: "Mobiler Arbeitsbereich für die Kostensteuerung"
 description: "Dieses Thema enthält Informationen zum mobilen Arbeitsbereich Kostensteuerung, der für Microsoft Dynamics 365 for Operations mobile App verfügbar ist. Dieser Arbeitsbereich Kostenstellenmanager zeigt Informationen über die Kostenstellenleistung, jederzeit und überall."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/04/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 31a9650774b2ddb70827ffa210154ca10c761236
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 09383c24b0dd2ad61a836f6c8dc97f4389915772
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -36,11 +36,15 @@ Dieses Thema enthält Informationen zum mobilen Arbeitsbereich Kostensteuerung, 
 <a name="overview-of-the-cost-controlling-mobile-workspace"></a>Übersicht über den mobilen Arbeitsbereich Kostensteuerung
 -------------------------------------------------
 
-Der Arbeitsbereich **Kostensteuerung** enthält eine einzige Ansicht der Leistung der aktuellen Kostenstellen aus dem Vergleich von Ist-Kosten im Vergleich zu den geplanten Kosten. Sie können den Status einzelner Kostenfaktoren mit Detailinformationen anzeigen. Zum Beispiel empfängt ein Mitarbeiter eine Einladung zu einer internationalen Konferenz, aber die Organisation muss alle Reisespesen enthalten. Der Mitarbeiter fragt den Vorgesetzten, ob er an der Konferenz teilnehmen darf. Der Vorgesetzte öffnet schnell den Arbeitsbereich **Kostenkontrolle**auf seinem Mobiltelefon, um festzustellen, ob er das Budget hat, und der Mitarbeiter die Konferenz besuchen kann.
+Der Arbeitsbereich **Kostensteuerung** enthält eine einzige Ansicht der Leistung der aktuellen Kostenstellen aus dem Vergleich von Ist-Kosten im Vergleich zu den geplanten Kosten. Sie können den Status einzelner Kostenfaktoren mit Detailinformationen anzeigen. 
+
+Zum Beispiel empfängt ein Mitarbeiter eine Einladung zu einer internationalen Konferenz, aber die Organisation muss alle Reisespesen enthalten. Der Mitarbeiter fragt den Vorgesetzten, ob er an der Konferenz teilnehmen darf. Der Vorgesetzte öffnet schnell den Arbeitsbereich **Kostenkontrolle**auf seinem Mobiltelefon, um festzustellen, ob er das Budget hat, und der Mitarbeiter die Konferenz besuchen kann.
 
 ### <a name="data-security"></a>Datensicherheit
 
-Die Daten im mobilen Arbeitsbereich **Kostensteuerung**werden mit Anmeldeinformationen geschützt. Ein Kostenstellenmanager kann nur Daten für seine eigene Kostenstelle sehen. Die Zugriffsebenensicherheit wird im Modul **Kostenrechnung** verwaltet. Buchhalter definieren den mobilen Arbeitsbereich **Kostensteuerung** im Modul **Buchhaltungskosten**. Nachdem der Arbeitsbereich auf Microsoft Dynamics 365 For Operations auf der App veröffentlicht ist, ist er in der mobilen App für Dynamics 365 for Operations verfügbar. Dadurch wird sichergestellt, dass alle Kostenstellenmanager in der gleichen Organisation Daten im selben Format sehen.
+Die Daten im mobilen Arbeitsbereich **Kostensteuerung**werden mit Anmeldeinformationen geschützt. Ein Kostenstellenmanager kann nur Daten für seine eigene Kostenstelle sehen. Die Zugriffsebenensicherheit wird im Modul **Kostenrechnung** verwaltet. 
+
+Buchhalter definieren den mobilen Arbeitsbereich **Kostensteuerung** im Modul **Buchhaltungskosten**. Nachdem der Arbeitsbereich auf Microsoft Dynamics 365 For Operations auf der App veröffentlicht ist, ist er in der mobilen App für Dynamics 365 for Operations verfügbar. Dadurch wird sichergestellt, dass alle Kostenstellenmanager in der gleichen Organisation Daten im selben Format sehen.
 
 ### <a name="actions-views-and-links"></a>Aktivitäten, Ansichten und Links
 
@@ -87,7 +91,7 @@ Bevor Sie den mobilen Arbeitsbereich **Kostensteuerung** verwenden können, übe
 <tr class="odd">
 <td>Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder späterem muss implementiert werden.</td>
 <td>Systemadministrator</td>
-<td>Wenn Sie nicht bereits Dynamics 365 for Operations in Ihrer Organisation bereitgestellt haben, sollte Ihr Systemadministrator <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Microsoft Dynamics 365 for Operations Testumgebung bereitstellen</a> sehen.</td>
+<td>Wenn Sie nicht bereits Dynamics 365 for Operations in Ihrer Organisation bereitgestellt haben, sollte Ihr Systemadministrator <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations Testumgebung bereitstellen</a> sehen.</td>
 </tr>
 <tr class="even">
 <td>4013633 KB muss implementiert werden.</td>
@@ -95,9 +99,9 @@ Bevor Sie den mobilen Arbeitsbereich **Kostensteuerung** verwenden können, übe
 <td>KB 4013633 (eine X++-Aktualisierung oder ein Metadatenhotfix) enthält vier mobile Arbeitsbereiche für die Lieferkettenverwaltung. Um KB 4013633 zu implementieren, muss Ihr Systemadministrator folgende Schritte ausführen:
 <ol>
 <li>Herunterladen von KB 4013633 von Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Installieren Sie den Metadatenhotfix</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Anwenden eines Bereitstellungspaket</a> auf einem Microsoft Dynamics 365 for Operations-System</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installieren Sie den Metadatenhotfix</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Anwenden eines Bereitstellungspaket</a> auf einem Microsoft Dynamics 365 for Operations-System</li>
 </ol></td>
 </tr>
 <tr class="odd">

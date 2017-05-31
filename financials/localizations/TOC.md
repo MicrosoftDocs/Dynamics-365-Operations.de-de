@@ -67,6 +67,7 @@
 ### [CODA-Bankauszug](emea-bel-coda-bank-statement-import.md)
 ### [Intervat-Steuererklärung](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM-Berichtseinrichtung](emea-bel-prodcom-report.md)
+### [Abstimmungsbericht](emea-bel-reconciliation-reports.md)
 
 ## Die Tschechische Republik
 ### [Skonto für Gutschrift](emea-cze-credit-note-cash-discount.md)
@@ -74,6 +75,7 @@
 ### [Abschreibungsunterbrechung](emea-cze-depreciation-suspension-holidays.md)
 ### [Anlagenabschreibung](emea-cze-fixed-assets-depreciation.md)
 ### [Halbjahresabschreibung](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [Mehrwertsteuererklärung](emea-cze-intra-community-vat-transactions.md)
 ### [MwSt.-Abrechnung](emea-cze-vat-statement-details.md)
 ## Estland
 ### [MwSt.-Abrechnung](emea-est-vat-statement-details.md)

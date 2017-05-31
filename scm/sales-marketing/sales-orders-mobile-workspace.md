@@ -3,10 +3,10 @@ title: "Aufträge, mobiler Arbeitsbereich"
 description: "Dieses Thema enthält Informationen zum mobilen Arbeitsbereich verfügbarer Bestand, der für Microsoft Dynamics 365 for Operations mobile App verfügbar ist. Mit diesem Arbeitsbereich sind Sie jederzeit auf dem neuesten Stand hinsichtlich Ihrer Aufträge, jederzeit und überall."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 119b80e5d8067ffbf75d8b067f4803558c2c94b0
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 11898146a13756a6bb22a769e37e8773484e0d04
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,7 +37,9 @@ Dieses Thema enthält Informationen zum mobilen Arbeitsbereich verfügbarer Best
 <a name="overview-of-the-sales-orders-mobile-workspace"></a>Überblick über den mobilen Arbeitsbereich Aufträge
 ---------------------------------------------
 
-Der mobile Arbeitsbereich **Aufträge** greift auf Microsoft Dynamics 365 for Operations zu. Sie können detaillierte Informationen zu den einzelnen Aufträgen anzeigen. Diese Informationen enthalten den Auftragsstatus, Kontaktinformationen für den Debitor und die Kontaktinformationen der Auftragsannahme. Der mobile Arbeitsbereich **Aufträge** enthält eine einzige Ansicht für die Aufträge. Sie können alle Aufträge nach Debitor anzeigen, oder zeigen Sie alle Aufträge oder Informationen über einen bestimmten Auftrag an. Der mobile Arbeitsbereich enthält zwei Ansichten, um Ihnen dabei zu unterstützten, die detaillierten Verkaufsaufträge analysieren.
+Der mobile Arbeitsbereich **Aufträge** greift auf Microsoft Dynamics 365 for Operations zu. Sie können detaillierte Informationen zu den einzelnen Aufträgen anzeigen. Diese Informationen enthalten den Auftragsstatus, Kontaktinformationen für den Debitor und die Kontaktinformationen der Auftragsannahme. Der mobile Arbeitsbereich **Aufträge** enthält eine einzige Ansicht für die Aufträge. Sie können alle Aufträge nach Debitor anzeigen, oder zeigen Sie alle Aufträge oder Informationen über einen bestimmten Auftrag an. 
+
+Der mobile Arbeitsbereich enthält zwei Ansichten, um Ihnen dabei zu unterstützten, die detaillierten Verkaufsaufträge analysieren.
 
 ### <a name="view-all-sales-orders"></a>Alle Aufträge anzeigen
 
@@ -50,6 +52,7 @@ Bei dieser Ansicht werden alle Aufträge auf.
     -   Nach Status suchen
     -   Nach Veröffentlichung suchen
     -   Nach Datum und Uhrzeit suchen
+    
 -   Nach der Auswahl der Aufträge können Sie die Details auf der Seite Auftrag anzeigen betrachten. Sie können die folgenden Informationen anzeigen:
     -   Debitorenname und Adressinformationen
     -   Verschiedene Daten für den Auftrag wie das angeforderte Lieferdatum und das bestätigte Versanddatum
@@ -65,6 +68,7 @@ Zeigt Listen mit Aufträgen nach Debitor an.
 -   Nutzen Sie einen der nachfolgenden Filter, um Aufträge für einen Debitor anzuzeigen:
     -   Suche nach Name
     -   Suche nach Konto
+
 -   Nachdem Sie einen Debitor ausgewählt haben, können Sie Folgendes anzeigen:
     -   Debitorname und Gruppe
     -   Kontaktinformationen für den Debitor
@@ -96,7 +100,7 @@ Bevor Sie den mobilen Arbeitsbereich **Aufträge** verwenden können, überprüf
 <tr class="odd">
 <td>Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder späterem muss implementiert werden.</td>
 <td>Systemadministrator</td>
-<td>Wenn Sie nicht bereits Dynamics 365 for Operations in Ihrer Organisation bereitgestellt haben, sollte Ihr Systemadministrator <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Microsoft Dynamics 365 for Operations Testumgebung bereitstellen</a> sehen.</td>
+<td>Wenn Sie nicht bereits Dynamics 365 for Operations in Ihrer Organisation bereitgestellt haben, sollte Ihr Systemadministrator <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment/">Microsoft Dynamics 365 for Operations Testumgebung bereitstellen</a> sehen.</td>
 </tr>
 <tr class="even">
 <td>4013633 KB muss implementiert werden.</td>
@@ -104,9 +108,9 @@ Bevor Sie den mobilen Arbeitsbereich **Aufträge** verwenden können, überprüf
 <td>KB 4013633 (eine X++-Aktualisierung oder ein Metadatenhotfix) enthält vier mobile Arbeitsbereiche für die Lieferkettenverwaltung. Um KB 4013633 zu implementieren, muss Ihr Systemadministrator folgende Schritte ausführen:
 <ol>
 <li>Herunterladen von KB 4013633 von Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Installieren Sie den Metadatenhotfix</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Anwenden eines Bereitstellungspaket</a> auf einem Microsoft Dynamics 365 for Operations-System</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installieren Sie den Metadatenhotfix</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das das <strong>SCMMobile</strong> Modell enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Anwenden eines Bereitstellungspaket</a> auf einem Microsoft Dynamics 365 for Operations-System</li>
 </ol></td>
 </tr>
 <tr class="odd">

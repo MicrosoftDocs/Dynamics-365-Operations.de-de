@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,17 +18,15 @@ ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e1a9e0eeb45f011ccb2aa091e68aff92782e1ae7
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5962fa36b061382e7f0ad55c08c81ac2cebc047d
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
 # <a name="dynamics-365-for-operations-mobile-app-home-page"></a>Startseite für Dynamics 365 for Operations Mobile App
-
-[!include[banner](../includes/banner.md)]
 
 [!include[banner](../includes/banner.md)]
 
@@ -61,7 +59,7 @@ Die Navigation in der mobilen App besteht aus vier einfachen Konzepten: Dashboar
 ## <a name="implementation-process"></a>Implementierungsprozess
 Die folgende Abbildung veranschaulicht den Prozess zum Implementieren der Dynamics 365 for Operations mobilen App in Ihrer Organisation. 
 
-[![](./media/mobile-implementation-process_4.png)](./media/mobile-implementation-process_4.png) 
+![Implementierungsprozess für mobile Apps](./media/mobile-implementation-process_4.png)
 
 Die folgende Tabelle umfass Links zu Ressourcen, die Ihnen bei der Implementierung von Microsoft Dynamics 365 for Operations mobile App in Ihrer Organisation helfen. Die Nummern in der ersten Spalte entsprechen den nummerierten Schritten in der vorherigen Abbildung.
 
@@ -85,7 +83,7 @@ Die folgende Tabelle umfass Links zu Ressourcen, die Ihnen bei der Implementieru
 <td>1</td>
 <td>Systemadministrator</td>
 <td>Implementieren Sie Dynamics 365 for Operations für Ihre Organisation.</td>
-<td>Wenn Sie nicht bereits Dynamics 365 for Operations in Ihrer Organisation bereitgestellt haben, gehen Sie zu  <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations bereitstellen, Testumgebung</a>.</td>
+<td>Wenn Sie nicht bereits Dynamics 365 for Operations in Ihrer Organisation bereitgestellt haben, gehen Sie zu  <a href="../deployment/deploy-demo-environment.md">Microsoft Dynamics 365 for Operations bereitstellen, Testumgebung</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -93,32 +91,27 @@ Die folgende Tabelle umfass Links zu Ressourcen, die Ihnen bei der Implementieru
 <td>Laden Sie KBs herunter und installieren Sie diese, die den mobilen Arbeitsbereich aktivieren, der von Microsoft bereitgestellt wird.</td>
 <td>Siehe Abschnitt &quot;Voraussetzungen&quot; im Thema zum mobilen Arbeitsbereich, den Ihre Organisation verwenden möchte:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobiler Arbeitsbereich für die Kostensteuerung</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Verfügbarer Lagerbestand, mobiler Arbeitsbereich</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Aufträge, mobiler Arbeitsbereich</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobiler Arbeitsbereich für Kreditorenzusammenarbeit</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektzeiterfassungs, mobiler Arbeitsbereich</a></li>
+<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobiler Arbeitsbereich für die Kostensteuerung</a></li>
+<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Verfügbarer Lagerbestand, mobiler Arbeitsbereich</a></li>
+<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Aufträge, mobiler Arbeitsbereich</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobiler Arbeitsbereich für Kreditorenzusammenarbeit</a></li>
+<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobiler Arbeitsbereich für Projektzeiterfassung</a></li>
+<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Mobiler Arbeitsbereich für Spesenverwaltung</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Systemadministrator</td>
 <td>Veröffentlichen Sie die mobilen Arbeitsbereiche, die von Microsoft zur Verfügung gestellt werden.</td>
-<td>Siehe Abschnitt &quot;Voraussetzungen&quot; im Thema zum mobilen Arbeitsbereich, den Ihre Organisation verwenden möchte:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobiler Arbeitsbereich für die Kostensteuerung</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Verfügbarer Lagerbestand, mobiler Arbeitsbereich</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Aufträge, mobiler Arbeitsbereich</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobiler Arbeitsbereich für Kreditorenzusammenarbeit</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektzeiterfassungs, mobiler Arbeitsbereich</a></li>
-</ul></td>
+<td><a href="publish-mobile-workspace.md">Mobilen Arbeitsbereich veröffentlichen</a>
+</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Entwickler oder unabhängiger Softwarehersteller (ISV)</td>
 <td>Nutzen Sie Dynamics 365 for Operations mobiles Framework, um benutzerdefinierte mobile Arbeitsbereiche zu erstellen.</td>
 <td><ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Mobiles Framework für Dynamics 365 for Operations</a></li>
+<li><a href="mobile-platform.md">Mobiles Framework für Dynamics 365 for Operations</a></li>
 <li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Dynamics 365 for Operations Arbeitsbereich X++-APIs</a></li>
 </ul></td>
 </tr>
@@ -126,19 +119,19 @@ Die folgende Tabelle umfass Links zu Ressourcen, die Ihnen bei der Implementieru
 <td>5</td>
 <td>ISV</td>
 <td>Erstellen eines Bereitstellungspaket, das benutzerdefinierte mobile Arbeitsbereiche enthält, und laden Sie das Paket zu den Microsoft Dynamics Lifecycle Services (LCS) hoch.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Ein Bereitstellungspaket erstellen</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Ein Bereitstellungspaket erstellen</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Systemadministrator</td>
 <td>Wenden Sie das Bereitstellungspaket an, das die benutzerdefinierten Arbeitsbereiche enthält, die vom ISV bereitgestellt werden.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Anwenden eines Bereitstellungspaket auf einem Microsoft Dynamics 365 for Operations-System</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Anwenden eines Bereitstellungspaket auf einem Microsoft Dynamics 365 for Operations-System</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Systemadministrator</td>
 <td>Veröffentlichen Sie die benutzerdefinierten mobilen Arbeitsbereiche, die von ISV zur Verfügung gestellt werden.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobilen Arbeitsbereich veröffentlichen</a></td>
+<td><a href="publish-mobile-workspace.md">Mobilen Arbeitsbereich veröffentlichen</a></td>
 </tr>
 <tr class="even">
 <td>8</td>
@@ -153,24 +146,12 @@ Die folgende Tabelle umfass Links zu Ressourcen, die Ihnen bei der Implementieru
 <td>9</td>
 <td>Benutzer</td>
 <td>Melden Sie sich an und nutzen Sie Dynamics 365 for Operations mobile App. Die App umfasst die mobilen Arbeitsbereiche, die veröffentlicht wurden.</td>
-<td>Microsoft hat folgende mobilen Arbeitsbereiche bereitgestellt:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobiler Arbeitsbereich für die Kostensteuerung</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Verfügbarer Lagerbestand, mobiler Arbeitsbereich</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Aufträge, mobiler Arbeitsbereich</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobiler Arbeitsbereich für Kreditorenzusammenarbeit</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektzeiterfassungs, mobiler Arbeitsbereich</a></li>
-</ul></td>
+<td>Um eine Liste der mobilen Arbeitsbereiche anzuzeigen, die von Microsoft bereitgestellt werden, gehen Sie zu <a href="mobile-workspaces-released.md">Mobile Arbeitsbereiche, die vor kurzem für die mobile App von Dynamics 365 for Operations veröffentlicht wurden</a>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="see-also"></a>Siehe auch
---------
-
-[Mobile Arbeitsbereiche, die vor kurzem für Dynamics 365 for Operations mobile App freigegeben wurden](mobile-workspaces-released.md)
 
 
 

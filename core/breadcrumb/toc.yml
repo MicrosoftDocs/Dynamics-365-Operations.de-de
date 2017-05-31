@@ -18,6 +18,7 @@
     - name: Einzelhandel
       tocHref: /dynamics365/operations/retail/
       topicHref: /dynamics365/operations/retail/index
-    - name: Lieferkette 
+    - name: Lieferkette
+ 
       tocHref: /dynamics365/operations/supply-chain/
       topicHref: /dynamics365/operations/supply-chain/index

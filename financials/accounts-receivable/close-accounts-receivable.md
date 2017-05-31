@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 1ab51f90be918ee60e99fe11e5425383beefb26e
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 6e8e87df88aace213f50db617229383eba4d86ec
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -47,15 +47,13 @@ Periodenabschluss im Hauptbuch
 |Auftrag bestätigen                   | Dient zum Aktualisieren von Aufträgen.                                                                       |
 |Neubewertung der Fremdwährung          | Dient zum Generieren von Buchungen, durch die der Wert offener Debitorenbuchungen in Fremdwährungen aktualisiert wird.                                                                                                                         |
 | Erfassung                              | Dient zum Buchen von Rechnungen, Zahlungen und Solawechseln.                                             |
-| Alle Journale                      | -   **Zahlungsjournal** –Dient zum Generieren, Verarbeiten und Buchen von Zahlungen.
-                                         -   **Draw bill of exchange journal** – Post bills of exchange.
-                                         -   **Protest bill of exchange journal** – Post protested bills of exchange.
-                                         -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
-                                         -   **Remittance journal** – Post remittances.
-                                         -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
-| Lieferscheine für Aufträge         | Aktualisieren von Lieferscheinen für Verkaufsaufträge                                                     | | Freitextrechnung buchen               | Buchen von Freitextrechnungen.                                                                   |Rechnung buchen                      |Buchen von Rechnungen für Aufträge.                                                            | Kommissionierliste buchen                 _|Aktualisierungskommissionierlisten für Aufträge.                                                      |
+| Alle Journale                      |<ul><li>**Zahlungserfassung** – Dient zum Generieren, Verarbeiten und Buchen von Zahlungen.</li><li>**Wechselerfassung ziehen** – Dient zum Buchen von Wechseln.</li><li>**Wechselerfassung protestieren** – Dient zum Buchen protestierter Wechsel.</li><li>**Wechselerfassung neu ziehen** – Dient zum Buchen erneut gezogener Wechsel.</li><li>**Rimesseerfassung** – Dient zum Buchen von Rimessen.</li><li>**Wechselerfassung ausgleichen** – Dient zum Buchen ausgeglichener Wechsel</li></ul>                   |
+| Lieferschein buchen                 | Dient zum Aktualisieren von Lieferscheinen für Aufträge.                                                     |
+| Freitextrechnung buchen               | Dient zum Buchen von Freitextrechnungen.                                                                   |
+| Rechnung buchen                      | Dient zum Buchen von Rechnungen für Aufträge.                                                            |
+| Kommissionierliste buchen                 |Dient zum Aktualisieren von Kommissionierlisten für Aufträge.                                                      |
 
-**Geschäftsprozesskomponente**   
+**Aufgabe der jeweiligen Geschäftsprozesskomponente**   
 
 Erstellen und Übermitteln der zusammenfassenden Meldung
 

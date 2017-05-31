@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: c9f1e32986238739fc7eee519fd1d17a6ce6731e
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 55a3252aa2d84ac5af68a1a6eebeaa909d95b33b
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -34,6 +34,9 @@ ms.lasthandoff: 04/25/2017
 Diese Seite weist auf Themen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 for Operations zu erlernen.
 
 Um auf die neueste Version zu aktualisieren, lesen Sie [Prozess zum Aktualisieren auf das neueste Dynamics 365 for Operations](../migration-upgrade/upgrade-latest-update.md).
+
+Weitere Informationen über die mobilen Arbeitsbereiche und Power BI-Inhalt, der kürzlich veröffentlicht wurde, finden Sie unter [Mobile Arbeitsbereiche, die kürzlich für die mobile App von Dynamics 365 for Operations veröffentlicht wurden](../mobile-apps/mobile-workspaces-released.md) sowie [Power BI-Inhalt, der kürzlich für Dynamics 365 for Operations veröffentlicht wurde](../analytics/power-bi-content-released.md)
+
 <table>
 <colgroup>
 <col width="20%" />
@@ -53,6 +56,12 @@ Um auf die neueste Version zu aktualisieren, lesen Sie [Prozess zum Aktualisiere
 </thead>
 <tbody>
 <tr class="odd">
+<td>Plattform Microsoft Dynamics 365 for Operations</td>
+<td>Plattform-Update 7</td>
+<td> 7.0.4542.16189</td>
+<td>2017. Mai</td>
+<td><a href="whats-new-platform-update-7.md">Neuheiten und Änderungen in Dynamics 365 for Operations Plattformupdate 7 (Mai 2017)</a></td>
+</tr><tr class="odd">
 <td>Plattform Microsoft Dynamics 365 for Operations</td>
 <td>Plattform-Update 6</td>
 <td> 7.0.4509.16180</td>

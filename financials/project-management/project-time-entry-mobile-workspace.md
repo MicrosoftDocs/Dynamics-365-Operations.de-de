@@ -3,10 +3,10 @@ title: "Mobiler Arbeitsbereich für die Projektzeiterfassung für die Microsoft 
 description: "Dieses Thema enthält Informationen zur Projektzeiterfassungs im mobilen Arbeitsbereich. Dieser Verknüpfung ermöglicht Benutzern Zeit für ein Projekt einzugeben und zu speichern, indem sie das mobile Gerät verwenden."
 author: annbe
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: annbe
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e3e0be36c045acc3750efbb739d79d81ab937c65
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 9c592c301908898915164e9236850759b73543fe
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -31,7 +31,6 @@ ms.lasthandoff: 04/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 Dieses Thema enthält Informationen zur Projektzeiterfassung im mobilen Arbeitsbereich für Dynamics 365 for Operations mobile App. Dieser Verknüpfung ermöglicht Benutzern Zeit für ein Projekt einzugeben und zu speichern, indem sie das mobile Gerät verwenden.
@@ -71,7 +70,7 @@ Bevor Sie den mobilen Arbeitsbereich **Projektzeiterfasssung** verwenden können
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder späterem muss implementiert werden.</td>
 <td>Systemadministrator</td>
-<td>Wenn Sie nicht bereits Dynamics 365 for Operations in Ihrer Organisation bereitgestellt haben, sollte Ihr Systemadministrator <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations bereitstellen, Testumgebung</a> sehen.</td>
+<td>Wenn Sie nicht bereits Dynamics 365 for Operations in Ihrer Organisation bereitgestellt haben, sollte Ihr Systemadministrator <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations Testumgebung bereitstellen</a> sehen.</td>
 </tr>
 <tr class="even">
 <td>4018050 KB muss implementiert werden.</td>
@@ -79,9 +78,9 @@ Bevor Sie den mobilen Arbeitsbereich **Projektzeiterfasssung** verwenden können
 <td>4018050 KB ist ein X++-Aktualisierungs- oder -Metadatenhotfix, der den mobilen Arbeitsbereich <strong>Projektzeiterfassung</strong> enthält. Um KB 4018050 muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
 <li>Herunterladen von KB 4018050 von Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installieren Sie den Metadatenhotfix</a>.</li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das die <strong>ApplicationSuite</strong> und <strong>ProjectMobile</strong> Modelle enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Anwenden eines Bereitstellungspaket</a> auf einem Microsoft Dynamics 365 for Operations-System</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installieren Sie den Metadatenhotfix</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das die <strong>ApplicationSuite</strong> und <strong>ProjectMobile</strong> Modelle enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Anwenden eines Bereitstellungspaket</a> auf einem Microsoft Dynamics 365 for Operations-System</li>
 </ol></td>
 </tr>
 <tr class="odd">
