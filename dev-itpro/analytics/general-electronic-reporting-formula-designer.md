@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 335a0d7ca466028e8b157cb4e04df7d0f4880e73
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5726a6fc60977a82b49e00ca653696e4051cbb10
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -474,7 +474,7 @@ Die Beschriftungs- und Beschreibungsfelder geben zur L‎aufzeit festgelegte Wer
 </tr>
 <tr class="even">
 <td>FORMAT (Zeichenfolge 1, Zeichenfolge 2 [, Zeichenfolge 3,...])</td>
-<td>Geben Sie die angegebene Zeichenfolge zurück, die formatiert werden soll, indem alle Vorkommnisse mit <strong>%N</strong> des <em>n</em>-Arguments ersetzt wird. Die Argumente sind Zeichenfolgen. Wenn eine Anfrage nicht für einen Parameter angegeben wird, wird der Parameter als <strong>&quot;%N&quot;</strong> in der Zeichenfolge zurückgegeben. Für Werte für den<strong>tatsächlich</strong> Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</td>
+<td>Geben Sie die angegebene Zeichenfolge zurück, die formatiert wird, indem alle Vorkommnisse von <strong>%N</strong> mit dem <em>n</em>. Argument ersetzt werden. Die Argumente sind Zeichenfolgen. Wenn eine Anfrage nicht für einen Parameter angegeben wird, wird der Parameter als <strong>&quot;%N&quot;</strong> in der Zeichenfolge zurückgegeben. Für Werte für den<strong>tatsächlich</strong> Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</td>
 <td>In diesem Beispiel gibt die <strong>PaymentModel</strong>Datenquelle die Liste von Kundeneinträgen über die <strong>-Kunden</strong>komponente und die Prozessdatenwerte über das Feld <strong>ProcessingDate</strong> ein. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a>Im ER-Format, das entworfen wurde, um eine Datei für ausgewählte Debitoren zu generieren, wird <strong>PaymentModel</strong> als Datenquelle ausgewählt, um den Prozessablauf zu steuern. Eine Ausnahme wird für Endbenutzer ausgelöst, wenn ein ausgewählter Debitoren für das Datum beendet wird, an dem der Bericht verarbeitet wird. Die Formel, die für diese Art von Prozesssteuerung entworfen wurde, kann die folgenden Ressourcen verwenden:
 <ul>
 <li>Dynamics 365 for Operations-Beschriftung SYS70894, die den folgenden Text hat:

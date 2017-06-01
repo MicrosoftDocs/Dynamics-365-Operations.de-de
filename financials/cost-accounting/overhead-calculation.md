@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bb02e0756d675726f6c3b9f456b980a7ed695463
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,8 @@ Gemeinkostenberechnung wird in der Kostenrechnungsmethoden in der korrekten Reih
 -   Geschäftsjahr
 -   Finanzzeitraum
 
-Die Gemeinkostenberechnung wird unabhängig von der Version ausgeführt. Daher können Sie die Budgetversion vor der tatsächlichen Version berechnen. Gemeinkostenberechnung besteht aus vier Schritten, wie in der folgenden Abbildung dargestellt. In jedem Schritt wird ein Erfassungskopf erstellt, der Journaleinträge hat. Dieser Erfassungskopf führt die Eingabedaten für jeden Berechnungsschritt aus. Richtlinien und Regeln werden für jede Erfassungsposition übernommen, und Kosteneinträge werden generiert. Deshalb ist die Nachweisbarkeit immer gegeben. [![Gemeinkostenberechnung](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+Die Gemeinkostenberechnung wird unabhängig von der Version ausgeführt. Daher können Sie die Budgetversion vor der tatsächlichen Version berechnen. Gemeinkostenberechnung besteht aus vier Schritten, wie in der folgenden Abbildung dargestellt. In jedem Schritt wird ein Erfassungskopf erstellt, der Journaleinträge hat. Dieser Erfassungskopf führt die Eingabedaten für jeden Berechnungsschritt aus. Richtlinien und Regeln werden für jede Erfassungsposition übernommen, und Kosteneinträge werden generiert. Deshalb ist die Nachweisbarkeit immer gegeben. 
+[![Gemeinkostenberechnung](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Berechnen Sie die Elektrizitäts-Gemeinkosten und weisen Sie diese zu
 In der Finanzbuchhaltung werden einige Kosten wie Elektrizität als Pauschalbetrag erfasst. Daher wird ein detaillierter Verwaltungseinblick für Kostenrechnung nicht bereitgestellt. In der Kostenrechnung müssen die Kosten die Organisationseinheit durchlaufen, um auf allen Organisationsstufen und Ebenen korrekt dargestellt zu werden. Dieser Fluss muss entweder auf einem genauen Datensatz des Verbrauchs oder einer reellen Bewertung basieren. Im Hauptbuch können Stromkosten wie unten in der Tabelle dargelegt gebucht werden.
@@ -622,7 +623,7 @@ Detaillierte Informationen zur Richtlinie über Gemeinkostensätze finden Sie in
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Schritt 4: Verarbeiten Sie die Kostenaufteilungsberechnung
 
-Die Zuteilung wird verwendet, um den Saldo eines Kostenträgers zu anderen Kostenträgern zuweisen, indem eine Verrechnungsgrundlage angewendet wird. Microsoft Dynamics 365 for Operations unterstützt die gegenseitige Zuordnungsmethode. In der gegenseitigen Zuordnungsmethode werden die gegenseitigen Dienstleistungen, die Unterkostenobjekte austauschen, vollständig berücksichtigt werden. Das System bestimmt automatisch die korrekte Reihenfolge, in der die Zuordnungen ausgeführt werden. Der Saldo eines Kostenträgers wird durch eine einzelne Verrechnungsgrundlage zugewiesen. Zuweisungen für Kostenträgerdimensionen und ihre jeweiligen Mitglieder werden unterstützt. Der Zuweisungsauftrag wird durch die Kostenkontrollsteuereinheit gesteuert. [![](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+Die Zuteilung wird verwendet, um den Saldo eines Kostenträgers zu anderen Kostenträgern zuweisen, indem eine Verrechnungsgrundlage angewendet wird. Microsoft Dynamics 365 for Operations unterstützt die gegenseitige Zuordnungsmethode. In der gegenseitigen Zuordnungsmethode werden die gegenseitigen Dienstleistungen, die Unterkostenobjekte austauschen, vollständig berücksichtigt werden. Das System bestimmt automatisch die korrekte Reihenfolge, in der die Zuordnungen ausgeführt werden. Der Saldo eines Kostenträgers wird durch eine einzelne Verrechnungsgrundlage zugewiesen. Zuweisungen für Kostenträgerdimensionen und ihre jeweiligen Mitglieder werden unterstützt. Der Zuweisungsauftrag wird durch die Kostenkontrollsteuereinheit gesteuert. []![Reziproke Methode](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Kostenzuteilung definieren
 

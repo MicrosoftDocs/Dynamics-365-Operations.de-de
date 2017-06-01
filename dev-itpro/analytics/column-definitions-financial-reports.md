@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -350,8 +350,7 @@ Der Typ der Informationen, die jede Spalte in einem Bericht umfasst, wird vom We
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Hier können Sie Finanzdaten oder Daten aus einem Excel-Arbeitsblatt anzeigen, wenn Sie eine <strong>Mit Finanzdimensionen verknüpfen</strong>-Spalte oder eine <strong>Mit Arbeitsblatt verknüpfen</strong>-Spalte in der Zeilendefinition verwenden. Wenn Sie den Spaltentyp <strong>FD</strong> auswählen, werden Standardeinstellungen automatisch für die folgenden Zeilen angegeben:
-    <ul>
+    <td>Hier können Sie Finanzdaten oder Daten aus einem Excel-Arbeitsblatt anzeigen, wenn Sie eine <strong>Mit Finanzdimensionen verknüpfen</strong>-Spalte oder eine <strong>Mit Arbeitsblatt verknüpfen</strong>-Spalte in der Zeilendefinition verwenden. Wenn Sie den Spaltentyp <strong>FD</strong> auswählen, werden Standardeinstellungen automatisch für die folgenden Zeilen angegeben: <ul>
     <li><strong>Buchcode/Attributkategorie:</strong> ISTWERT</li>
     <li><strong>Buchcode/Attributkategorie:</strong> ISTWERT</li>
     <li><strong>Geschäftsjahr</strong> BASIS</li>
@@ -359,7 +358,7 @@ Der Typ der Informationen, die jede Spalte in einem Bericht umfasst, wird vom We
     <li><strong>Abgedeckte Perioden:</strong> PERIODISCH</li>
     <li><strong>Spaltenbreite:</strong> 14</li>
     </ul>
-    Diese Standardeinstellungen können geändert werden.</td>
+Diese Standardeinstellungen können geändert werden.</td>
     </tr>
     <tr class="even">
     <td>KALK</td>
@@ -387,12 +386,11 @@ Der Typ der Informationen, die jede Spalte in einem Bericht umfasst, wird vom We
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Zeigen Sie die Daten an, die aus einem Excel-Arbeitsblatt abgerufen wurden. Wenn Sie den Spaltentyp <strong>WKS</strong> auswählen, werden Standardeinstellungen automatisch für die folgenden Zeilen angegeben:
-    <ul>
+    <td>Zeigen Sie die Daten an, die aus einem Excel-Arbeitsblatt abgerufen wurden. Wenn Sie den Spaltentyp <strong>WKS</strong> auswählen, werden Standardeinstellungen automatisch für die folgenden Zeilen angegeben: <ul>
     <li><strong>Geschäftsjahr:</strong> PERIODISCH</li>
     <li><strong>Periode:</strong> BASIS</li>
     </ul>
-    Diese Standardeinstellungen können geändert werden.</td>
+Diese Standardeinstellungen können geändert werden.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>

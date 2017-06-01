@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ef434747c075a32887035fa1d3c0e6fecd4e0a0d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7d146f3dfe1d71e8d3031a851f47fac35d0f1a58
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -68,7 +68,7 @@ In Microsoft Dynamics 365 for Operations stehen die folgenden Tastenkombinatione
 | Öffnen des Infoboxbereichs (oder Verschieben des Fokus zum Infoboxbereich, wenn bereits offen ist) | STRG+F2                                   |
 | Schließen des Infoboxbereichs (mit Fokus im Infoboxbereich)                         | ESC                                       |
 | Zur nächsten/vorherigen Infobox (mit Fokus im Infoboxbereich) wechseln              | ALT+UMSCHALT+NACH-UNTEN-TASTE / ALT+UMSCHALT+NACH-OBEN-TASTE |
-| Zur &lt;n&gt;nten Infobox (mit Fokus im Infoboxbereich) wechseln                | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Zur &lt;n&gt;. Infobox (mit Fokus im Infoboxbereich) wechseln                | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Erweitern einer Infobox (mit Fokus auf dem Infoboxkopf)                             | LEERTASTE oder EINGABETASTE                            |
 | Die aktuelle Infobox reduzieren                                                    | ALT+0                                     |
 
@@ -115,8 +115,8 @@ In Microsoft Dynamics 365 for Operations stehen die folgenden Tastenkombinatione
 | Zum nächsten/vorherigen Feld wechseln                     | Registerkarte / UMSCHALT+TAB                              |
 | Zur nächsten/vorherigen Registerkarte wechseln                       | ALT+UMSCHALT+NACH-RECHTS-TASTE / ALT+UMSCHALT+NACH-LINKS-TASTE |
 | Zum nächsten/vorherigen Inforegister wechseln                   | ALT+UMSCHALT+NACH-UNTEN-TASTE / ALT+UMSCHALT+NACH-OBEN-TASTE    |
-| Zum &lt;n&gt;nten Inforegister wechseln                     | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Zur &lt;n&gt;nten Registerkarte wechseln                         | ALT+UMSCHALT+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Zum &lt;n&gt;. Inforegister wechseln                     | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Zur &lt;n&gt;. Registerkarte wechseln                         | ALT+UMSCHALT+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Erweitern eines Inforegisters (mit Fokus auf dem Inforegisterkopf) | LEERTASTE oder EINGABETASTE                               |
 | Das aktuelle Inforegister reduzieren                        | ALT+0                                        |
 | Zur Rasteransicht wechseln                                 | STRG+UMSCHALT+G                                 |

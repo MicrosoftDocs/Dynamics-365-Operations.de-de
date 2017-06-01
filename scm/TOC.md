@@ -4,6 +4,7 @@
 ## Bedarfsplanung erstellen
 ### [Bedarfsplanung – Übersicht](master-planning/introduction-demand-forecasting.md)
 ### [Einrichten einer Bedarfsplanung](master-planning/demand-forecasting-setup.md)
+### [Historische Daten für Bedarfsplanungen importieren](master-planning/import-historical-data.md)
 ### [Eine statistische Grundplanung generieren](master-planning/generate-statistical-baseline-forecast.md)
 ### [Manuelle Regulierung der Grundplanung vornehmen](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Eine angepasste Planung autorisieren](master-planning/authorize-adjusted-forecast.md)

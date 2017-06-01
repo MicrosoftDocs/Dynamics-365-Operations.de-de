@@ -3,10 +3,10 @@ title: Einrichten zentralisierter Zahlungen
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerInterCompany
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 474453e7f33526bc7bebc60ef68f560d489a1841
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 60cc59911cf2d10d73206885eb97b346ec3e3e87
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -41,7 +41,7 @@ Mithilfe dieses Verfahrens wird die Verarbeitung von Zahlungen einer juristische
 -   Richten Sie die Verrechnung ein.
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>Einrichten einer Organisationshierarchie für zentralisierte Zahlungen
-Für zentralisierte Zahlungen muss eine Organisationshierarchie eingerichtet werden. Diese Organisationshierarchie wird für die Verarbeitung zentralisierter Kreditorenzahlungen und für die Verarbeitung zentralisierter Debitorenzahlungen verwendet. **Hinweis:** Die Struktur der Hierarchie ist für zentralisierte Zahlungen unerheblich. Jede juristische Person in der Hierarchie kann Zahlungen im Auftrag anderer juristischer Personen in der Hierarchie verarbeiten. Auf der Seite **Organisationshierarchien** können Sie eine neue Organisationshierarchie erstellen.
+Für zentralisierte Zahlungen muss eine Organisationshierarchie eingerichtet werden. Diese Organisationshierarchie wird für die Verarbeitung zentralisierter Kreditorenzahlungen und für die Verarbeitung zentralisierter Debitorenzahlungen verwendet. **Hinweis:** Die Struktur der Hierarchie ist für zentralisierte Zahlungen unerheblich. Jede juristische Person in der Hierarchie kann Zahlungen im Auftrag anderer juristischer Personen in der Hierarchie verarbeiten. Auf der Seite **Organisationshierarchien** können Sie eine neue Organisationshierarchie erstellen. Im Feld **Zweck** müssen Sie **Zentralisierte Zahlungen** auswählen. 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>Einrichten eines Verrechnungskontos für zentralisierte Zahlungen
 Beim Ausgleich von Zahlungsbuchungen der aktuellen juristischen Person durch Rechnungen anderer juristischer Personen werden für jede einzelne juristische Person die entsprechenden Buchungen vom Typ "Fällig bis" und "Fällig von" erstellt. Geben Sie die juristische Person für die Buchung realisierter Skonti sowie für die Buchung realisierter Gewinne/Verluste an. Entscheiden Sie zunächst, welche juristische Person zum Verarbeiten von Kreditoren- und Debitorenzahlungen verwendet werden soll. Wenn eine juristische Person Kreditorenzahlungen verarbeitet, aber eine andere juristische Person Debitorenzahlungen verarbeitet, müssen Sie zu jeder juristischen Person wechseln. Wählen Sie einen **Intercompany-Beziehungsdatensatz**für eine juristische Person aus, in deren Auftrag Zahlungen verarbeitet werden sollen. Wählen Sie auf der Registerkarte **Zentralisierte Zahlungen** aus, ob Skonti auf die juristische Person für die Zahlung (oder einer anderen Buchung, durch die sich der Saldo des Kreditorenkontos verringert) oder auf die juristische Person für die Rechnung (oder einer anderen Buchung, durch die sich der Saldo des Kreditorenkontos erhöht) gebucht werden sollen. Diese Auswahl funktioniert zusammen mit dem Feld **Skontoverwaltung** und den Seiten **Kreditorenparameter** und **Debitorenparameter**. Bei Überzahlungen und Centdifferenztoleranzen wird die Einstellung der juristischen Person für die Zahlung verwendet. Bei Unterzahlungen und Centdifferenztoleranzen wird die Einstellung der juristischen Person für die Rechnung verwendet.
