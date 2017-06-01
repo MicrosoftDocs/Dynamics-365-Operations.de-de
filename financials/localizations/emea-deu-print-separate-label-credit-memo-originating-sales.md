@@ -10,10 +10,9 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: OMLegalEntity
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 28871
-ms.assetid: d277b35b-f75a-433a-a049-da0792793143
 ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
