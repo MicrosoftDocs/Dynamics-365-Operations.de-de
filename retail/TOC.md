@@ -15,9 +15,10 @@
 ## [Eine Retail Hardware station konfigurieren und installieren](retail-hardware-station-configuration-installation.md)
 ## [Einzelhandelszeit und Anwesenheit](retail-time-attendance.md)
 # Moderne Verkaufsstellen (Modern Point of Sale, MPOS) und Cloud POS
-## Hardwareperipheriegeräte
+## Hardware und Peripheriegeräte
 ### [Einzelhandelsperipheriegeräte – Überblick](retail-peripherals-overview.md)
-### [Microsoft testete POS-Hardwareperipheriegeräte](microsoft-tested-pos-hardware-peripherals.md)
+### [Einzelhandels-Peripheriesimulator](retail-peripheral-simulator.md)
+### [Von Microsoft getestete POS-Hardwareperipheriegeräte](microsoft-tested-pos-hardware-peripherals.md)
 ### [Definieren und Verwalten von Kanal-Clients, Kassen und Hardwarestationen](define-maintain-channel-clients-registers-hw-stations.md)
 ## Bildschirmlayout
 ### [Konfigurieren von Bildschirmlayouts für POS](pos-screen-layouts.md)
@@ -42,6 +43,7 @@
 ## Zugänge
 ### [Lieferungsvorlagen einrichten](receipt-templates-printing.md) 
 ### [E-Mail-Zugänge von MPOS senden](email-receipts.md)
+## [Aufgabenaufzeichnung und Hilfe für POS](task-recorder-retail-pos.md)
 # Überwachung und Analyse
 ## [Verkaufs- und Margenleistung überwachen](monitor-sales-margin-performance.md)
 ## [Verkaufstrends und -muster analysieren](analyze-sales-trends-patterns.md)
@@ -53,15 +55,17 @@
 ## [Preisregulierungen und Rabatte](price-adjustments-discounts.md)
 ## [Die optimale Kombination sich überschneidender Rabatte bestimmen](optimal-combination-overlapping-discounts.md)
 ## [Kanalspezifische Rabatte definieren](define-channel-specific-discounts.md)
+## [Coupons für Einzelhandelsverkäufe erstellen](retail-coupons.md)
 # Produkte und Verkaufsförderung
 ## [Einzelhandelshierarchien](retail-hierarchies.md)
 ## [Attribute erstellen und verwalten](create-manage-attributes.md)
-## [Einrichten von Einzelhandelsprodukten](set-up-retail-products.md)
+## [Einzelhandelsprodukte einrichten](set-up-retail-products.md)
 ## [Strichcodes einrichten](set-up-bar-codes.md)
 ## [Strichcodemasken einrichten](set-up-bar-code-masks.md)
 ## [Sortimente einrichten](set-up-assortments.md)
+## [Produkte außerhalb eines Sortiments verkaufen und zurückgeben](sell-return-outside-assortments.md)
 # Loyalität
-## [Einrichten eines Kundentreueprogramms](set-up-customer-loyalty-program.md)
+## [Ein Kundentreueprogramm einrichten](set-up-customer-loyalty-program.md)
 # Bestand
 ## [Filiallager verwalten](work-with-store-inventory.md)
 # Handelsgrundlagen
@@ -69,15 +73,15 @@
 ## [Organisationen und Organisationshierarchien (Handelsgrundlagen)](organizational-hierarchies-commerce-essentials.md)
 # [Inhalt für IT-Fachkräfte und Entwickler](dev-itpro/TOC.md)
 
-# [Finanzdaten](/dynamics365/operations/financials/index)
+# [Finanzdaten](/dynamics365/unified-operations/financials/index)
 
-# [Personalverwaltung](/dynamics365/operations/human-resources/index)
+# [Personalverwaltung](/dynamics365/unified-operations/talent/index)
 
-# [Lieferkettenverwaltung](/dynamics365/operations/supply-chain/index)
+# [Lieferkettenverwaltung](/dynamics365/unified-operations/supply-chain/index)
 
-# [Entwickler und Administrator](/dynamics365/operations/dev-itpro/index)
+# [Entwickler und Administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Weitere Ressourcen
-## [Dynamics 365 for Operations – Glossar](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [Neuheiten und Änderungen](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+## [Dynamics 365 for Retail – Glossar](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Neuheiten und Änderungen](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 

@@ -21,4 +21,5 @@
 # Artikel und Charge verfolgen
 ## [Lagercharge zusammenführen](merge-inventory-batches.md)
 ## [Artikel und Rohmaterial verfolgen](trace-items-raw-materials-inventory-production-sales.md)
+## [Seriennummer im Vertriebsprozess registrieren](../sales-marketing/register-serial-numbers-sales-process.md)
 

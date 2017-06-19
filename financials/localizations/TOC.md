@@ -1,4 +1,4 @@
-# [Lokalisierungsüberblick](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [Lokalisierungsüberblick](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 # Asien-Pazifik
 ## Australien
 ### [Bankdateiformate](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -54,6 +54,7 @@
 ## [Den vor der Anschaffung bestehenden Wert einer Anlage buchen](emea-pre-acquisition-acquisition-fixed-asset.md)
 ## [Postleitzahlen](emea-import-create-postal-codes-manually.md)
 ## [Registrierungskennungen](emea-registration-ids.md)
+## [Verlagerung der Steuerschuld](emea-reverse-charge.md)
 ## [SEPA-Kreditübertragungsüberblick](../accounts-payable/sepa-credit-transfer.md)
 ## [SEPA-Lastschriftüberblick](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Signaturgeber für Druckformulare einrichten](emea-set-up-signers-for-printing-forms.md)
@@ -75,7 +76,7 @@
 ### [Abschreibungsunterbrechung](emea-cze-depreciation-suspension-holidays.md)
 ### [Anlagenabschreibung](emea-cze-fixed-assets-depreciation.md)
 ### [Halbjahresabschreibung](emea-cze-half-depreciation-fixed-asset-disposal.md)
-### [Mehrwertsteuererklärung](emea-cze-intra-community-vat-transactions.md)
+### [Mehrwertsteuererklärung ](emea-cze-intra-community-vat-transactions.md)
 ### [MwSt.-Abrechnung](emea-cze-vat-statement-details.md)
 ## Estland
 ### [MwSt.-Abrechnung](emea-est-vat-statement-details.md)
@@ -98,7 +99,7 @@
 ### [Erfassungslistenbericht](emea-deu-journal-list-report.md)
 ### [Eine separate Beschriftung für Gutschriften drucken, die ihren Ursprung im Vertrieb haben](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Ungarn
-### [Abschreibungsmethoden für Anlagen](emea-hun-fixed-assets-depreciation-methods.md)    
+### [Abschreibungsmethoden für Anlagen](emea-hun-fixed-assets-depreciation-methods.md)   
 ### [Kostengünstige Anlagen](emea-hun-low-cost-fixed-assets.md)
 ### [Anlage in den Bestand verschieben](emea-hun-fixed-asset-to-inventory.md)
 ## Italien
@@ -138,6 +139,7 @@
 ### [Anlagengruppenneubewertung](emea-esp-fixed-asset-group-revaluation.md)
 ### [Innergemeinschaftliche MwSt.](emea-esp-intra-community-vat.md)
 ### [Einmalige Debitoren](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [Schecks mit spanischem Layout drucken](emea-esp-print-checks-with-spanish-layout.md)
 ### [Solawechseloptionen](emea-esp-promissory-note-options.md)
 ### [Verkaufs- und Kaufzyklen](emea-esp-sales-purchase-cycle.md)
 ### [Besondere Einträge und Eröffnungsbögen](emea-esp-opening-sheets-spain.md)
@@ -153,7 +155,9 @@
 ### [Steuerbücher](latam-bra-fiscal-books.md)
 #### [Steuerdokumente für ICMS-Steuer](latam-bra-icms-tax-fiscal-documents.md)
 #### [Steuerdokumente importieren](latam-bra-import-fiscal-documents.md)
+#### [Exportieren und Importieren von Buchungen der juristischen Person aus der Hauptbuchkonsolidierung](latam-bra-general-ledger-consolidation-transactions.md)
 #### [Importieren und Überprüfen von XML-Dokumenten für NF-e sowie DANFE-Dateien](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [Elektronische Zahlungsrimessen verarbeiten](latam-bra-process-electronic-payment-remittances.md)
 #### [Steuerdokumente](latam-bra-fiscal-documents-fiscal-document-framework.md)
 #### [Steuerdokument-Textplatzhalter](latam-bra-fiscal-document-text-placeholders.md)
 #### [Ergänzende steuerliche Dokumente für Einkauf](latam-bra-purchase-complementary-fiscal-documents.md)
@@ -163,6 +167,8 @@
 ### [Erfassungen, die während des elektronischen Zahlungsrückgabeprozesses generiert wurden](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 ### [NF-e-Prozess](latam-bra-nf-e-process.md)
 ### [Parameter für juristische Personen](latam-bra-legal-entity-parameters.md)
+### [Erwerben einer CIAP-Anlage](latam-bra-ciap-fixed-asset.md)
+### [Veräußerung einer CIAP-Anlage](latam-bra-ciap-fixed-asset.md)
 ### [Steuern](latam-bra-calculate-taxes.md)
 #### [Steuerattribute](latam-bra-tax-attributes.md)
 #### [Steuerzahlungen](latam-bra-tax-payments.md)
