@@ -3,7 +3,7 @@ title: Einrichten von Produkten, die produziert werden oder beschafft werden
 description: "Produkte können auf unterschiedliche Arten bezogen werden: Sie können produziert (hergestellt) oder beschafft (eingekauft) werden. In diesem Artikel werden einige typische Punkte beschrieben, die Sie berücksichtigen müssen, wenn Sie Produkte zur Inanspruchnahme mehrerer Quellen konfigurieren."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

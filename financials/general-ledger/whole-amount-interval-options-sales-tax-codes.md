@@ -1,9 +1,9 @@
 ---
 title: "Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes"
-description: "Dieser Artikel beschreibt die Optionen des Felds &quot;Berechnungsmethoden&quot; für Mehrwertsteuercodes und wie die Mehrwertsteuer für Intervalle und gesamte Beträge berechnet wird."
+description: "Dieser Artikel beschreibt die Optionen des Felds \"Berechnungsmethoden\" für Mehrwertsteuercodes und wie die Mehrwertsteuer für Intervalle und gesamte Beträge berechnet wird."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

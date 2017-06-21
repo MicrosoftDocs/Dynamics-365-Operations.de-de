@@ -3,7 +3,7 @@ title: "Qualitätsmanagementprozesse"
 description: "Dieser Artikel enthält Informationen zum Qualitätssicherungsprozess für fehlerhafte Produkte. Es beschreibt, wie Sie Qualitätskontrollfunktionen verwenden können, wie Sie Qualitätsmängel definieren und verwalten und wie Korrekturen behandelt werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

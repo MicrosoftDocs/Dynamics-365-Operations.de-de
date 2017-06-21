@@ -3,7 +3,7 @@ title: "SEPA-Direktbelastungsüberblick"
 description: "Der einheitliche Euro-Zahlungsverkehrsraum (SEPA) wird von der Europäischen Kommission eingerichtet und schreibt vor, dass alle elektronischen Zahlungen als Inland gelten, unabhängig vom Land/Region, wo die Person, Geschäfte, oder Organisation und die Bank sich befinden. Es gibt keine Differenz zwischen nationalen und grenzüberschreitenden Zahlungen. Zu SEPA zählen die 28 Mitgliedsstaaten der Europäischen Union (EU) sowie Island, Liechtenstein, Norwegen, die Schweiz, Monaco und San Marino. SEPA hilft dabei, einen gemeinsamen Markt für Zahlungsbuchungen innerhalb des europäischen Wirtschaftsraums (EEA) zu bilden. Letztlich wird von SEPA erwartet, die Anzahl von Zahlungsformaten zu reduzieren, mit denen Banken, Unternehmen und Personen arbeiten müssen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

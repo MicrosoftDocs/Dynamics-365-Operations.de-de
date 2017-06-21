@@ -3,7 +3,7 @@ title: "Konsolidierungs- und Löschungsüberblick"
 description: "Dieser Artikel enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess. Er enthält Antworten auf mehrere häufig gestellten Fragen."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

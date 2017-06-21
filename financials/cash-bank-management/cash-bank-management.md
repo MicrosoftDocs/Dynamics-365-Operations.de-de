@@ -3,7 +3,7 @@ title: "Startseite für Bargeld- und Bankverwaltung"
 description: "Sie können die Bargeld- und Bankverwaltung verwenden, um die Bankkonten der juristischen Person und die Finanzinstrumente zu verwalten, die diesen Bankkonten zugeordnet sind."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

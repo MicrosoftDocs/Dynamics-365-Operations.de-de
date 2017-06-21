@@ -3,7 +3,7 @@ title: Direktimport/-export verwenden
 description: "Zweck des Direktimports/-exports ist der Import und Export über weniger Schritte."
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
 ms.service: 

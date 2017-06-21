@@ -3,7 +3,7 @@ title: "Zahlung bei Zahlungsempfang-Lieferantenverträge"
 description: "Dieser Artikel erklärt die Pay-When-Paid (PWP) Bestimmungen für Händlervereinbarungen. PWP-Bestimmungen erlauben es, Zahlungen teilweise oder vollständig zurückzustellen, bis Sie vom Kreditor im Projekt bezahlt wurden. Dieser Artikel setzt auch ein aus dem wirklichem Leben Beispiel fest, um anzuzeigen, wie Sie PWP-Begriffe für ein Projekt verwenden können."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

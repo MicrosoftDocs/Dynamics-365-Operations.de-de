@@ -3,7 +3,7 @@ title: Beschaffungskataloge
 description: "In diesem Artikel wird zusammenfassend beschrieben, wie Einkäufer Beschaffungskataloge einrichten und verwalten können. Beschaffungskataloge definieren Artikel und Dienstleisungen, die Unternehmensmitarbeiter für den internen Gebrauch bestellen können."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

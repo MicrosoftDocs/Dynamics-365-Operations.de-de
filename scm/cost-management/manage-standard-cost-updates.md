@@ -3,7 +3,7 @@ title: Standardkostenaktualisierungen verwalten
 description: 'Die Aktualisierung von Standardkostendaten kann auf zwei unterschiedliche Arten verwaltet werden: durch den Einzelversionsansatz oder durch den Zwei-Versionen-Ansatz.'
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

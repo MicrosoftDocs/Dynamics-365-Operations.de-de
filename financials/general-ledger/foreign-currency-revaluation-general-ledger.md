@@ -3,7 +3,7 @@ title: "Neubewertung der Fremdwährung für das Sachkonto"
 description: "Dieses Thema enthält einen Überblick der folgenden Hauptbuchneubewertung für den Prozess der Neubewertung der Fremdwährungen im Hauptbuch bereit: Einrichten, Vorgang ausführen, Berechnung für den Prozess und sofern erforderlich Stornierung der Neubewertungsbuchungen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

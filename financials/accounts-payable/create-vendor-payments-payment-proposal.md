@@ -3,7 +3,7 @@ title: Kreditorenrzahlung unter Verwendung eines Zahlungsvorschlags erstellen
 description: "Dieser Artikel gibt einen Überblick über die Zahlungsvorschlagsoptionen und umfasst einige Beispiele, die zeigen, wie Zahlungsvorschläge funktionieren. Zahlungsvorschläge werden oft verwendet, um Kreditorenzahlungen zu erstellen, da die Abfrage dazu verwendet werden kann, Kreditorenrechnungen für die Zahlung, basierend auf Kriterien wie dem Fälligkeitsdatum und dem Skonto, schnell auszuwählen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

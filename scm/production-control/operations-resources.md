@@ -3,7 +3,7 @@ title: Operations-Ressourcen
 description: "Betriebliche Ressourcen führen die Aktivitäten eines Projekts oder eines Produktionsprozesses aus. Sie können unterschiedlicher Art sein und verschiedene Funktionen haben."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

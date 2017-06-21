@@ -1,9 +1,9 @@
 ---
 title: Bestellanforderungsworkflow
-description: "Der Workflowprozess leitet Bestellanforderungen durch den Prüfungsprozess, vom Anfangsstatus &quot;Übersicht&quot; bis zum Endstatus &quot;Genehmigt&quot;. Wenn eine Bestellanforderung zur Prüfung übermittelt wird, wird der Workflowprozess gestartet. Nachdem die Bestellanforderung genehmigt wurde, kann eine Bestellung für die Bestellanforderungspositionen generiert und zur Auftragserfüllung an den Kreditor übermittelt werden."
+description: "Der Workflowprozess leitet Bestellanforderungen durch den Prüfungsprozess, vom Anfangsstatus \"Übersicht\" bis zum Endstatus \"Genehmigt\". Wenn eine Bestellanforderung zur Prüfung übermittelt wird, wird der Workflowprozess gestartet. Nachdem die Bestellanforderung genehmigt wurde, kann eine Bestellung für die Bestellanforderungspositionen generiert und zur Auftragserfüllung an den Kreditor übermittelt werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

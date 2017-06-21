@@ -3,7 +3,7 @@ title: Arbeitsbereiche konfigurieren und Filtern
 description: "Dieser Artikel gibt einen Überblick darüber, wie Arbeitsbereiche konfiguriert und gefiltert werden."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

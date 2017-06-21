@@ -3,7 +3,7 @@ title: Skonti
 description: "Skonti werden für Kreditoren und Debitoren eingerichtet und freigegeben.  Das verfügbare Skonto kann auf der Debitorenrechnung oder der Kreditorenrechnung definiert werden und wird übernommen, wenn die Rechnung innerhalb des Skontodatums bezahlt wird."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

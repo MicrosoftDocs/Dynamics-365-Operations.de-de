@@ -3,7 +3,7 @@ title: "Skontobehandlung für Überzahlungen"
 description: "Dieser Artikel enthält Szenarien, die zeigen, wie eine Zahlung behandelt wird, wenn der Debitor ein Skonto abzieht aber auch zu viel bezahlt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

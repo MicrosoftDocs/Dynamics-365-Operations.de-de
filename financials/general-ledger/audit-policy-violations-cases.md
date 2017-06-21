@@ -3,7 +3,7 @@ title: "Überwachungsrichtlinienverletzungen und -anfragen"
 description: "Der Artikel beschrieben, wie Überwachungsanfragen aus den Verletzungen von Überwachungsrichtlinienregeln generiert werden. Er umfasst außerdem Informationen zu den verschiedenen Methoden, die Überwachungsrichtlinien für den Datumsbereich für die Dokumentauswahl verwenden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

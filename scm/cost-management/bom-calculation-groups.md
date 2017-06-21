@@ -1,9 +1,9 @@
 ---
 title: "Stücklistenkalkulationsgruppen"
-description: "Dieser Artikel enthält Informationen zu Herstellungskostenkalkulationsgruppen und wie man sie einrichtet. Um eine Herstellkostenkalkulation auszuführen, müssen Sie entweder Berechnungsgruppen einrichten und sie einzelnen Artikeln zuweisen oder eine Standardberechnungsgruppe festlegen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen dann auf der Seite &quot;Herstellkostenkalkulation&quot; als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation."
+description: "Dieser Artikel enthält Informationen zu Herstellungskostenkalkulationsgruppen und wie man sie einrichtet. Um eine Herstellkostenkalkulation auszuführen, müssen Sie entweder Berechnungsgruppen einrichten und sie einzelnen Artikeln zuweisen oder eine Standardberechnungsgruppe festlegen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen dann auf der Seite \"Herstellkostenkalkulation\" als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

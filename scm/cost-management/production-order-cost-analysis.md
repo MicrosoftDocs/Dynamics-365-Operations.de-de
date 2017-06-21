@@ -1,9 +1,9 @@
 ---
 title: "Kostenanalyse für Produktionsauftrag"
-description: "Dieser Artikel bietet Informationen zur Kostenanalyse, die Sie für abgeschlossene und aktuelle Produktionsaufträge ausführen können. Sie können die vorkalkulierten Kosten und tatsächlichen Kosten analysieren, indem Sie die Seite &quot;Preiskalkulation&quot; oder den Bericht &quot;Vor- und Nachkalkulation&quot; verwenden. Sie können für jeden Komponentenartikel, jeden Arbeitsplan-Arbeitsgang sowie für alle indirekten Kosten Informationen zu den vorkalkulierten Kosten sowie zu den Istkosten (und zur entsprechenden Menge) anzeigen."
+description: "Dieser Artikel bietet Informationen zur Kostenanalyse, die Sie für abgeschlossene und aktuelle Produktionsaufträge ausführen können. Sie können die vorkalkulierten Kosten und tatsächlichen Kosten analysieren, indem Sie die Seite \"Preiskalkulation\" oder den Bericht \"Vor- und Nachkalkulation\" verwenden. Sie können für jeden Komponentenartikel, jeden Arbeitsplan-Arbeitsgang sowie für alle indirekten Kosten Informationen zu den vorkalkulierten Kosten sowie zu den Istkosten (und zur entsprechenden Menge) anzeigen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -1,9 +1,9 @@
 ---
 title: "Integration von Anlagevermögen"
-description: "Anlagen können in die Module &quot;Hauptbuch&quot;, &quot;Bestandsverwaltung&quot;, &quot;Debitoren&quot; und &quot;Kreditoren&quot; integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden."
+description: "Anlagen können in die Module \"Hauptbuch\", \"Bestandsverwaltung\", \"Debitoren\" und \"Kreditoren\" integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

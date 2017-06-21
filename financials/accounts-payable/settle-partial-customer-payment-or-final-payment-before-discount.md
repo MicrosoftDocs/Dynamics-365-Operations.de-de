@@ -3,7 +3,7 @@ title: "Ausgleichen einer teilweisen Debitorenzahlung und Ausgleichen der vollst
 description: "Dieser Artikel beschreibt Szenarien, die zeigen, wie Teilzahlungen für einen Debitor erfasst und Skonti innerhalb der Skontoperiode übernommen werden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

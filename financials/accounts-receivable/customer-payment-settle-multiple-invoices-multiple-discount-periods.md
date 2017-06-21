@@ -3,7 +3,7 @@ title: "Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, d
 description: Dieser Artikel zeigt, wie mehrere Rechnungen bezahlt werden, wenn jede einzelne Rechnung zum Abzug eines Skontos berechtigt ist. Die Szenarien in diesem Artikel zeigen auf, wie Skonti je nach Zeitpunkt der Zahlung variieren.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

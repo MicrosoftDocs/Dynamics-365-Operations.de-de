@@ -3,7 +3,7 @@ title: "Registrierung für Fertigungssteuerung"
 description: "In diesem Thema wird beschrieben Konzepte und Begriffe erläutert, die für müssen, um Fertigungssteuerungsfunktionen zu konfigurieren und zu verwenden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

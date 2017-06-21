@@ -3,10 +3,10 @@ title: Komponenten eines Einzelvorgangs einrichten
 description: "In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle
 audience: Application User

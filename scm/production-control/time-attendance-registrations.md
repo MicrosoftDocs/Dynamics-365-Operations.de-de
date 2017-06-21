@@ -3,7 +3,7 @@ title: Zeit- und Anwesenheitserfassung
 description: "Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. In diesem Artikel beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

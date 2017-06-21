@@ -3,7 +3,7 @@ title: Direktlieferungen
 description: "Dieser Artikel enthält Informationen über Direktlieferungen. Dirketlieferungen sind Lieferungen, die direkt vom Kreditor an den Debitor gesendet werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

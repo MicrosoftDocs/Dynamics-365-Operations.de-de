@@ -3,7 +3,7 @@ title: Kostengruppen
 description: "Kostengruppen bilden die Grundlage für die Segmentierung und Analyse von Kostenbeiträgen in den berechneten Kosten eines produzierten Artikels – beispielsweise Kostenbeiträge für Material, Arbeit oder Gemeinkosten. Die Segmentierung von Kostengruppen wird in Produktionsumgebungen auch als Kostenaufschlüsselung, Kostenzerlegung oder Kostenklassifizierung bezeichnet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

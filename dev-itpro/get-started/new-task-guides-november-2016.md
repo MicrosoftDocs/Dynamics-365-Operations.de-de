@@ -3,7 +3,7 @@ title: "Neue oder aktualisierte Aufgabenleitfäden (November 2016)"
 description: "Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (November 2016 -- alle Sprachen) für Microsoft Dynamicx 365 for Operations auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

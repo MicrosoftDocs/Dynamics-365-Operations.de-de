@@ -3,7 +3,7 @@ title: Projektrechnung
 description: "Dieser Artikel enthält einen Überblick über die Projektrechnungsstellung für Zeit- und Materialprojekte und Festpreisprojekte. Er umfasst Informationen zu Rechnungsvorschlägen (vorläufige Rechnungen), Rechnungskontrolle, Akonto-Rechnungsstellung, Kreditorenrechnungsstellung und Gutschriften."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

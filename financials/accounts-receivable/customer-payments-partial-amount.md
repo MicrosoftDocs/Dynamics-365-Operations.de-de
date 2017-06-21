@@ -3,7 +3,7 @@ title: "Debitorenzahlungen für einen Teilbetrag"
 description: "Es kann vorkommen, dass Debitoren eine Zahlung leisten, die geringer als der in der Rechnung gestellte Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

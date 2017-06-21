@@ -3,7 +3,7 @@ title: "Aufheben, Wiedererheben oder Stornieren von Zinsgebühren"
 description: "In diesem Artikel wird beschrieben, wie Belastungen für Zinsen und Gebühren erlassen, erfasst und umgekehrt werden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

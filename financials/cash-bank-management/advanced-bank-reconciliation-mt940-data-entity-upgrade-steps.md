@@ -3,7 +3,7 @@ title: "Erweiterte Bankabstimmung MT940 Import – Zusammengesetzter Datenentit�
 description: "Eine Sequenznummer muss der Bankauszugs-Importentität hinzugefügt werden, um das Format MT940 zu unterstützen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Kontosalden für das Hauptbuch"
 description: "In diesem Artikel werden zwei Möglichkeiten beschrieben, Hauptbuchkontosalden anzuzeigen: die Zwischenbilanzlistenseite und die Finanzberichte. Er erläutert auch, wie Dimensionssatzsalden aktualisiert werden."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

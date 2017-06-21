@@ -3,7 +3,7 @@ title: Sachkonto-Zuordnungsregeln
 description: "Dieser Artikel enthält Informationen zu Sachkonto-Zuordnungsregeln. Er beschreibt die verschiedenen Komponenten dieser Zuordnungsregeln und der Zuordnungsmethoden, die für sie verwendet werden können."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

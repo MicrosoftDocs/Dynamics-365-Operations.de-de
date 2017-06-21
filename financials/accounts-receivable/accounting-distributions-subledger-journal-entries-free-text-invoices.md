@@ -3,7 +3,7 @@ title: "Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sach
 description: "Mithilfe von Buchhaltungsverteilungen wird definiert, wie ein Betrag kalkuliert wird, beispielsweise wie Umsatzerlöse, Steuern oder Zuschläge auf einer Freitextrechnung kalkuliert werden. Jeder Betrag, der kalkuliert werden muss, wenn die Freitextrechnung journalisiert wird, enthält eine oder mehrere Buchhaltungsverteilungen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

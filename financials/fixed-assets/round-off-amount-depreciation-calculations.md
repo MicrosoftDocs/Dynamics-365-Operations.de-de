@@ -1,9 +1,9 @@
 ---
 title: "Betrag der Rundung für Abschreibungsberechnungen"
-description: "Dieser Artikel erläutert das Feld &quot;Rundungsart Abschreibung&quot;, das Sie im Wertmodell und auf den Einstellungsseiten des Abschreibungsbuchs finden."
+description: "Dieser Artikel erläutert das Feld \"Rundungsart Abschreibung\", das Sie im Wertmodell und auf den Einstellungsseiten des Abschreibungsbuchs finden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

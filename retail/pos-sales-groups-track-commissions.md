@@ -3,12 +3,13 @@ title: Provisionen in POS mit Verkaufsgruppen nachverfolgen
 description: "Es ist übliche Praxis Umsätze nach Verkäufer für einen Debitor nachzuverfolgen, um zu Unterstützen, Up-Selling und Cross-Selling zu ermöglichen und die Buchung zu verarbeiten."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations, Core
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa

@@ -1,9 +1,9 @@
 ---
 title: "Aktualisiert die zusammengesetzte Bankerfassungs-Entität"
-description: "Gehen Sie folgendermaßen vor, um das zusätzliche Feld &quot;BankTransactionType&quot; der zusammengesetzten BankJournalEntity hinzuzufügen."
+description: "Gehen Sie folgendermaßen vor, um das zusätzliche Feld \"BankTransactionType\" der zusammengesetzten BankJournalEntity hinzuzufügen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

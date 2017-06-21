@@ -1,9 +1,9 @@
 ---
-title: "Bericht &quot;Berechnung der Verpackungsmaterialgebühren&quot; für Österreich"
+title: "Bericht \"Berechnung der Verpackungsmaterialgebühren\" für Österreich"
 description: "Dieses Thema enthält Informationen zu Verpackungsmaterialsätze und Gebühren in Österreich."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

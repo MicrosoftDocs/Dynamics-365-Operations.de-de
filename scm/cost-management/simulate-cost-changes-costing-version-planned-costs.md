@@ -3,7 +3,7 @@ title: "Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion 
 description: "Dieser Artikel erklärt, wie die Auswirkungen von Kostenänderungen auf die berechneten Kosten eines produzierten Artikels mithilfe einer separaten Nachkalkulationsversion für geplante Kosten simuliert werden können."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

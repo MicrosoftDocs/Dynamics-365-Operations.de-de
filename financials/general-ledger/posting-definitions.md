@@ -3,7 +3,7 @@ title: Buchung (Definitionen)
 description: "Dieser Artikel enthält Informationen zu Buchungsdefinitionen und erläutert, wie sie definiert und verknüpft werden. Für unterstützte Buchungstypen und Dokumente können Sie Buchungsdefinitionen anstelle von Buchungsprofilen verwenden, um Hauptkonten und Finanzdimensionen in Buchhaltungseinträge zu klassifizieren."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

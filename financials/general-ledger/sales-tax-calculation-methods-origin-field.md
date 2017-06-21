@@ -1,9 +1,9 @@
 ---
-title: Mehrwertsteuer-Berechnungsmethoden im Feld &quot;Ursprung&quot;
-description: "In diesem Artikel wird beschrieben die Optionen im Feld &quot;Ursprung&quot; auf der Mehrwertsteuercodeseite und wie Mehrwertsteuer basierend auf der ausgewählten Option für einen Mehrwertsteuercode berechnet wird."
+title: Mehrwertsteuer-Berechnungsmethoden im Feld "Ursprung"
+description: "In diesem Artikel wird beschrieben die Optionen im Feld \"Ursprung\" auf der Mehrwertsteuercodeseite und wie Mehrwertsteuer basierend auf der ausgewählten Option für einen Mehrwertsteuercode berechnet wird."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

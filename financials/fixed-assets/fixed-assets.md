@@ -3,7 +3,7 @@ title: "Startseite für Anlagen"
 description: "Anlagen sind Objekte von Wert, wie Gebäude, Fahrzeuge, Grundbesitz und Maschinen, die sich im Besitz einer Einzelperson oder einer Organisation befinden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Konfigurieren von Debitoren und Kredit und Inkasso
 description: Debitoren und Kredit und Inkasso konfigurieren, um Rechnungen und eingehenden Zahlungen von Debitoren nachzuverfolgen.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

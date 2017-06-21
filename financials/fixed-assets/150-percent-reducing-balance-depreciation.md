@@ -3,7 +3,7 @@ title: Degressiven Abschreibung von 150 Prozent
 description: "Dieser Artikel gibt eine Übersicht die 150 Prozent Reduktionssaldomethode der Abschreibung."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Ein Skonto außerhalb der Skontoperiode in Anspruch nehmen"
 description: "Dieser Artikel beschreibt zwei Szenarien, die zeigen, wie ein Skonto übernommen werden kann, wenn die Zahlung außerhalb der Skontoperiode erfolgt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Einkaufsrichtlinien
 description: "Dieser Artikel enthält Informationen zu Einkaufsrichtlinien. Eine Einkaufsrichtlinie ist Sammlung von Regeln, mit denen der Bestellanforderungsprozess kontrolliert wird. Einkaufsrichtlinien unterstützen Beschaffungsadministratoren beim Implementieren der Beschaffungsstrategie, indem eine Richtlinienstruktur erstellt wird, die auf die Anforderungen einer Organisation für den strategischen Einkauf ausgerichtet ist."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der volls
 description: "Dieser Artikel führt Sie durch ein Szenario, in dem Teilzahlungen für eine Kreditorenrechnung vorgenommen werden, und ein Skonto abgezogen wird."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

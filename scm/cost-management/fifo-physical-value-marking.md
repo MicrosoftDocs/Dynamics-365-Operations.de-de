@@ -3,7 +3,7 @@ title: FIFO mit physischem Wert und Markierung
 description: "Bei FIFO (First in, First out) handelt es sich um eine Lagersteuerung, bei der die zuerst erworbenen Zugänge das Lager als Erstes wieder verlassen. Wertmäßig aktualisierte Abgänge aus dem Lager werden mit dem ältesten wertmäßig aktualisierten Zugang zu einem Lagerbestand ausgeglichen, der auf dem wertmäßigen Datum der Lagerbuchung basiert."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

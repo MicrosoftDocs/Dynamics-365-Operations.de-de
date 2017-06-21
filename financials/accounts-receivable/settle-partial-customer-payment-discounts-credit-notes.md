@@ -3,7 +3,7 @@ title: Eine teilweise Debitorenzahlung, bei der Rechnungsrabatte auf Debitorengu
 description: "Dieser Artikel führt Sie durch ein Szenario, in dem ein Skonto in eine Gutschrift übernommen wird, wenn die Originalrechnung auch ein Skonto beinhaltet."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

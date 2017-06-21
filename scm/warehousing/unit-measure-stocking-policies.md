@@ -3,7 +3,7 @@ title: "Maßeinheit und Lagerrichtlinien"
 description: "Dieser Artikel beschreibt, wie Standardmaßeinheiten, Einheitssequenzen und Einheitenumrechnungen in den Lagerortprozessen verwendet werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
