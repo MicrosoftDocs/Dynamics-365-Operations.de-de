@@ -3,7 +3,7 @@ title: Nachkalkulationsversionen
 description: "Dieser Artikel enthält Informationen zu Nachkalkulationsversionen, deren Verwaltung und die Datentypen, die Sie darin einschließen können. Der Hauptzweck einer Nachkalkulationsversion besteht in der Speicherung von Kostendatensätzen für Artikel sowie von Kostenkategorien und Berechnungsformeln für indirekte Kosten."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

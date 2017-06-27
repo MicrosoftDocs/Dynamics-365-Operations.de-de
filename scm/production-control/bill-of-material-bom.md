@@ -3,7 +3,7 @@ title: "Stücklisten und Formeln"
 description: "Dieser Artikel enthält Informationen zu Stücklisten (BOMs) und Formeln, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind. Stücklisten und Formeln können die erforderlichen Inhaltsstoffe oder Materialien für ein bestimmtes Produkt angezeigt. Formeln definieren außerdem die Kuppel- und Nebenprodukten, die in einem bestimmten Produktionskontext eingehen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

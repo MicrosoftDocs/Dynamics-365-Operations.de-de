@@ -3,7 +3,7 @@ title: "Funktionen des Stücklisten-Designers"
 description: "In diesem Artikel wird beschrieben, wie Sie die Stücklisten-Designer-Seite verwenden können, um Strukturdarstellungen für Stücklisten (BOMs) zu entwerfen und anzuwenden. Sie können verschiedene Konfigurationen auswählen und festlegen, welche Informationen in den Positionen der Struktur enthalten sein sollen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

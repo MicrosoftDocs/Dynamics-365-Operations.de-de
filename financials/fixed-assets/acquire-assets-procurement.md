@@ -1,9 +1,9 @@
 ---
 title: Abrufen von Anlagen durch Beschaffung
-description: "Dieser Artikel beschreibt, wie eine Integration zwischen den Modulen &quot;Anlagevermögen&quot; und &quot;Kreditoren&quot; eingerichtet wird. Dadurch können Anlagen automatisch auf Grundlage von Bestellungen oder Kreditorenrechnungen erstellt oder Anschaffungs- und Anschaffungsänderungsbuchungen für Anlagen automatisch vorgenommen werden."
+description: "Dieser Artikel beschreibt, wie eine Integration zwischen den Modulen \"Anlagevermögen\" und \"Kreditoren\" eingerichtet wird. Dadurch können Anlagen automatisch auf Grundlage von Bestellungen oder Kreditorenrechnungen erstellt oder Anschaffungs- und Anschaffungsänderungsbuchungen für Anlagen automatisch vorgenommen werden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

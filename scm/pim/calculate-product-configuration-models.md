@@ -3,7 +3,7 @@ title: "Berechnungen für Produktkonfigurationsmodelle, FAQ"
 description: "In diesem Thema werden die Berechnungen für Produktkonfigurationsmodelle beschrieben und erklärt, wie Berechnungen zusammen mit Einschränkungen verwendet werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

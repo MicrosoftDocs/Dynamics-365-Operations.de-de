@@ -3,7 +3,7 @@ title: "Standardkostenumrechnung (Überblick)"
 description: "Dieser Eintrag stellt eine Prozessübersicht bereit, die Sie beim Einrichten und Ausführen einer Standardkostenumrechnung unterstützt. Die aufgeführten Schritte werden ausgeführt, nachdem Sie die Voraussetzungen für eine Standardkostenumrechnung abgeschlossen haben."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

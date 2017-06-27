@@ -3,7 +3,7 @@ title: "Anforderungen für Produktionseinstellungen"
 description: "Dieser Artikel gibt Informationen zu Einrichtungsanforderungen, bevor Sie mit der Produktionssteuerung arbeiten können."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

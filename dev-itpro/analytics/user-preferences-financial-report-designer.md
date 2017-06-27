@@ -3,7 +3,7 @@ title: Benutzereinstellungen im Finanzberichtsdesigner
 description: "Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutzerinteraktionen im Finanzberichtsdesigner eingerichtet werden und wie sie die erstmalige Anmeldung steuern. Sie können auch steuern, wie einzelne Berichte, die Berichtsbibliothek und die Standardspeicherorte angezeigt werden."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

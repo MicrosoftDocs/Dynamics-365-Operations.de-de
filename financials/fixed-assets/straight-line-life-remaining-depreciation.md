@@ -1,9 +1,9 @@
 ---
-title: Abschreibungsmethode &quot;Verbleibende lineare Nutzungsdauer&quot;
-description: "Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode &quot;Verbleibende lineare Nutzungsdauer&quot;."
+title: Abschreibungsmethode "Verbleibende lineare Nutzungsdauer"
+description: "Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode \"Verbleibende lineare Nutzungsdauer\"."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

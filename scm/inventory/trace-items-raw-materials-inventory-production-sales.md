@@ -3,7 +3,7 @@ title: Verfolgen von Artikeln und Rohmaterialien im Bestand, in der Produktion u
 description: "In diesem Thema wird beschrieben, wie Sie Artikelverfolgung verwenden können, um erkennen zu können, wo Artikel oder Rohmaterial verwendet wurden, verwendet werden oder zukünftig in der Produktion und in den Verkaufsprozessen verwendet werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

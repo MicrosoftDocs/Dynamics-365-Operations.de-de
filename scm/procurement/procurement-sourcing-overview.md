@@ -3,7 +3,7 @@ title: "Beschaffungsübersicht"
 description: "Dieser Artikel enthält eine Übersicht der Funktionen, die im Beschaffungsmodul verfügbar sind."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

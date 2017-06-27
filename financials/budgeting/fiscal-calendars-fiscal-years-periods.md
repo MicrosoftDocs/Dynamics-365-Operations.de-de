@@ -3,7 +3,7 @@ title: "Steuerkalender, Geschäftsjahre und Finanzzeiträume"
 description: "Dieser Artikel behandelt Steuerkalender, Geschäftsjahre und Perioden und erläutert, wie diese für juristische Personen, Anlagen und die Budgetierung verwendet werden."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

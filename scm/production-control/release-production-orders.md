@@ -1,9 +1,9 @@
 ---
 title: "Freigeben von Produktionsaufträgen"
-description: "Ein freigegebener Produktionsauftrag ist ein Auftrag, der für die Produktion autorisiert wurde. Der Begriff &quot;Freigegeben&quot; wird verwendet, um einen Status im Lebenszyklus eines Produktionsauftrags zu beschreiben, in dem der Produktionsauftrag für die Ausführung im Fertigungsbereich und für Lagerortprozesse verfügbar ist."
+description: "Ein freigegebener Produktionsauftrag ist ein Auftrag, der für die Produktion autorisiert wurde. Der Begriff \"Freigegeben\" wird verwendet, um einen Status im Lebenszyklus eines Produktionsauftrags zu beschreiben, in dem der Produktionsauftrag für die Ausführung im Fertigungsbereich und für Lagerortprozesse verfügbar ist."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

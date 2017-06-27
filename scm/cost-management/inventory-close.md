@@ -3,7 +3,7 @@ title: Lagerabschluss
 description: "Im Rahmen des Prozesses, um Abgangstransaktionen mit Zugangstransaktionen auszugleichen, können Sie wählen, dass das Hauptbuch ausgeglichen wird, um die Regulierungen widerzuspiegeln, die vorgenommen wurden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

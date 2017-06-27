@@ -3,7 +3,7 @@ title: "Fristen für Auftrag"
 description: "Dieser Artikel enthält Informationen zu Auftragserfassungsfristen. Eine Auftragserfassungsfrist ist eine Sperrzeit, die bestimmt, ob ein Kundenauftrag als am aktuellen Tag oder dem nächsten Tag empfangen behandelt (und erfüllt) werden soll."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

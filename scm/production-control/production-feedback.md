@@ -3,7 +3,7 @@ title: "Produktionsrückmeldung"
 description: "Dieser Artikel enthält Informationen über Produktionsrückmeldungen, die den Arbeitskräften ein Feedback zu Produktionseinzelvorgängen geben. Der Artikel umfasst Informationen zu den verschiedenen Methoden, wie Produktionsrückmeldungen aktualisiert werden können."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,16 +3,16 @@ title: "MwSt-Berichtdetails für Österreich"
 description: "In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 264334
-ms.assetid: 2542c9e1-ed47-416f-9773-7b87eef66e78
 ms.search.region: Austria
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31

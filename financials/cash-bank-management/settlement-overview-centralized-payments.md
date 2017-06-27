@@ -3,7 +3,7 @@ title: "Intercompany-Ausgleich für zentralisierte Zahlungen"
 description: "Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Dadurch wird vermieden, dass die gleiche Buchung für mehrere juristische Personen eingegeben werden muss. Dies hat eine Zeitersparnis zur Folge, da so der Zahlungsvorschlagsprozess, der Ausgleichsprozess, die Bearbeitung offener Posten sowie die Bearbeitung abgeschlossener Buchungen bei zentralisierten Zahlungen optimiert werden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

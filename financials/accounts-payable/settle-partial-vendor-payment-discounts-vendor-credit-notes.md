@@ -3,7 +3,7 @@ title: Eine teilweise Kreditorenzahlung, bei der Rechnungsrabatte auf Kreditoren
 description: "Dieser Artikel führt Sie durch ein Szenario, in dem eine Gutschrift mit einer Rechnung ausgeglichen wird."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -1,9 +1,9 @@
 ---
 title: Physischen Wert einbeziehen
-description: "Verwenden Sie das Kontrollkästchen &quot;Physischen Wert einbeziehen&quot;auf dem Inforegister &quot;Lagermodell&quot; im Formular &quot;Artikelmodellgruppen&quot;, um anzugeben, ob physisch aktualisierte Buchungen in der Berechnung des laufenden Durchschnittseinstandspreises für einen Artikel berücksichtigt werden sollen."
+description: "Verwenden Sie das Kontrollkästchen \"Physischen Wert einbeziehen\"auf dem Inforegister \"Lagermodell\" im Formular \"Artikelmodellgruppen\", um anzugeben, ob physisch aktualisierte Buchungen in der Berechnung des laufenden Durchschnittseinstandspreises für einen Artikel berücksichtigt werden sollen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

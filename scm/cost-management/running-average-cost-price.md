@@ -3,7 +3,7 @@ title: Laufender Durchschnittseinstandspreis
 description: "Durch den Lagerabschluss werden Abgangsbuchungen mit Zugangsbuchungen ausgeglichen. Grundlage hierfür bildet die Lagerbewertungsmethode, die in der Artikelmodellgruppe des Artikels ausgewählt ist. Vor Ausführung des Lagerabschlusses wird vom System jedoch ein laufender Durchschnittseinstandspreis berechnet, der in der Regel zum Ausführen von Abgangsbuchungen verwendet wird."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

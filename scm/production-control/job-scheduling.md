@@ -3,7 +3,7 @@ title: Feinterminierung
 description: "Dieser Artikel enthält Informationen zur Einzelvorgangsterminierung, die ein ausführlicheres Formular der Planung der Grobterminierung ist. Sie können die Feinterminierung verwenden, um Einzelvorgänge oder Bestellungen zu planen und die Fertigungsumgebung zu steuern."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

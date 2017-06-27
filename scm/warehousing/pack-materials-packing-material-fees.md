@@ -3,7 +3,7 @@ title: "Verpackungsmaterial und Gebühren"
 description: "Verpackungsmaterialgebühren werden in bestimmten Zeitabständen an ein Recyclingunternehmen entrichtet. Für jedes Material, aus dem eine Verpackung besteht, muss ein bestimmter Betrag pro Gewichtseinheit bezahlt werden. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

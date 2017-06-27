@@ -3,7 +3,7 @@ title: Anlagen-Massenaktualisierung
 description: "Bei Verwendung von Büchern können die Abschreibungskonventionen für Gruppen von Anlagen geändert werden, die zum gleichen Buch gehören."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

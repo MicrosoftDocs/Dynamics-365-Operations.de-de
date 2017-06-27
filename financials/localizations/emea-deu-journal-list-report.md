@@ -1,19 +1,18 @@
 ---
-title: Bericht &quot;Deutsches Journal&quot;
+title: Bericht "Deutsches Journal"
 description: "In diesem Artikel wird beschrieben, für was der deutsche Erfassungslistenbericht verwendet wird, wer ihn in der Regel verwendet und wie er ausgeführt wird."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalizeReport
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 28831
-ms.assetid: dc9699d8-5b24-43f4-9a8a-39d9c8021553
 ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-02-28

@@ -3,7 +3,7 @@ title: "Startseite für Debitoren"
 description: Mithilfe des Debitorenmoduls lassen sich Debitorenrechnungen und eingehende Zahlungen nachverfolgen.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

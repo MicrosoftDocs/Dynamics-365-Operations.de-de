@@ -1,9 +1,9 @@
 ---
-title: "Seite &quot;Anzeigeeinstellungen für das mobile Gerät für das Lager&quot;"
+title: "Seite \"Anzeigeeinstellungen für das mobile Gerät für das Lager\""
 description: "In diesem Thema wird beschrieben, wie die Darstellung einer Anzeige eines Mobilgeräts eingerichtet wird, und wie Tastenkombinationen den Steuerelementen, beispielsweise Schaltflächen zugeordnet werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

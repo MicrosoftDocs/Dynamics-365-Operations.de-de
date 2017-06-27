@@ -3,7 +3,7 @@ title: "Kostenkategorien in Produktionsarbeitsplänen"
 description: "Dieser Artikel bietet Informationen über Kostenkategorien, die für Produktionsumgebungen gelten, die Arbeitspläne verwenden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

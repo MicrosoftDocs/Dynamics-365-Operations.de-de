@@ -3,7 +3,7 @@ title: Reservieren von Lagermengen
 description: "In diesem Thema werden die verschiedenen Optionen beschrieben, die für die Reservierung von Bestand verfügbar sind."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

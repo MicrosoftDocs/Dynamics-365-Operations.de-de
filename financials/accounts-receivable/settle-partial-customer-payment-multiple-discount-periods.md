@@ -3,7 +3,7 @@ title: "Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträ
 description: "Dieser Artikel beschreibt, wie Debitorenteilzahlungen ausgeglichen werden, die mehrere Rabattzeiträume enthalten."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

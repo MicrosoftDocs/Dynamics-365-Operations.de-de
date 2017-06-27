@@ -3,7 +3,7 @@ title: Kreditorenzahlung stornieren
 description: "In diesem Artikel beschriebt die Unterschiede zwischen dem Rückbuchen, Löschen, Stornieren und Ablehnen einer Zahlung. Desweiteren werden die zwei Methoden zur Rückbuchung eines Kreditorenschecks erläutert."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

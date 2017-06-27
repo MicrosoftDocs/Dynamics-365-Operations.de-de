@@ -1,9 +1,9 @@
 ---
 title: "Regulieren der Einstandswerte für verfügbaren Bestand"
-description: "Verwenden Sie die Seite &quot;Anpassung des verfügbaren Lagerbestands&quot;, um den Einstandswert der Mengen des verfügbaren Lagerbestands zu regulieren, nachdem ein Lagerabschlusses durchgeführt wurde."
+description: "Verwenden Sie die Seite \"Anpassung des verfügbaren Lagerbestands\", um den Einstandswert der Mengen des verfügbaren Lagerbestands zu regulieren, nachdem ein Lagerabschlusses durchgeführt wurde."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Produktionsbuchungen
 description: "Dieser Artikel enthält Informationen über die unterschiedlichen Arten von Buchungen im Produktionsprozess fest."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

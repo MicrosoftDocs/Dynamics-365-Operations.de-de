@@ -3,7 +3,7 @@ title: Einrichten der Intercompany-Verrechnung
 description: "In diesem Thema wird erläutert, wie die Intercompany-Verrechnung eingerichtet wird, sodass Sie Intercompany-Erfassungen für Sachkonto-Zuweisungen Finanzerfassung, z. B. Tageserfassungen, Kreditorenrechnungserfassungen und Zahlungserfassungen, verwenden können."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

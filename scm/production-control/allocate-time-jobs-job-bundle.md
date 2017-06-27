@@ -1,9 +1,9 @@
 ---
 title: "Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen"
-description: "Sie können Einzelvorgänge in der Fertigungssteuerung bündeln. Sie können mehrere Einzelvorgänge auf der Seite &quot;Einzelvorgangsliste&quot; gleichzeitig starten."
+description: "Sie können Einzelvorgänge in der Fertigungssteuerung bündeln. Sie können mehrere Einzelvorgänge auf der Seite \"Einzelvorgangsliste\" gleichzeitig starten."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

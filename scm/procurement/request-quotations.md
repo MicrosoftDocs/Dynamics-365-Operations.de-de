@@ -3,7 +3,7 @@ title: Angebotsanforderungen (Request for quotations, RFQs)
 description: "Dieser Artikel bietet einen Überblick über Angebotsanforderungen (RFQs/requests for quotation), die Organisationen ausstellen, um vor einem Einkauf von mehreren Kreditoren Angebote für Artikel oder Dienstleistungen zwecks Vergleich anzufordern. Mit einer Angebotsanforderung werden Kreditoren gebeten, Preise und Lieferzeiten für die angegebenen Produktmengen bereitzustellen. Sie können Kreditoren auch bitten, anzugeben, ob zusätzliche Gebühren, etwa Lieferkosten, anfallen, oder ob der Kreditor Rabatte für große Bestellungen oder bei frühzeitiger Bezahlung der Rechnung anbietet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

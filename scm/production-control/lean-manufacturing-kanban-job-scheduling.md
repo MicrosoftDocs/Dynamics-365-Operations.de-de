@@ -3,7 +3,7 @@ title: "Kaban-Einzelvorgang für Lean-Manufacturing"
 description: "Dieser Artikel enthält Informationen zum Sichtsteuerelement zur Kanban-Einzelvorgangs-Planung und zu unterschiedlichen Methoden, um Kanban-Einzelvorgänge zu planen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

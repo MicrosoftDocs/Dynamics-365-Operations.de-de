@@ -3,7 +3,7 @@ title: "Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeitr√
 description: "Dieser Artikel f√ºhrt Sie durch ein Szenario, in dem mehrere Teilzahlungen an einen Kreditoren vorgenommen werden, der mehrere Skonti anbietet."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

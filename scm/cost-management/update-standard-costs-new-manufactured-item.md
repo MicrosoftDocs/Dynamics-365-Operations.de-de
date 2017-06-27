@@ -3,7 +3,7 @@ title: "Standardkosten für einen neuen produzierten Artikel aktualisieren"
 description: "Dieser Artikel bietet eine Anleitung zum Aktualisieren von Standardkosten für einen neuen produzierten Artikel."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

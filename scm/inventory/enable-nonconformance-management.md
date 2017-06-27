@@ -3,7 +3,7 @@ title: "Qualitätsmangel-Verwaltung"
 description: "In diesem Artikel werden die Basiseinstellungen beschrieben, die erforderlich sind, um Qualitätsmängel zu verwenden. Zusätzliche Einstellungen sind erforderlich, wenn Sie Testbestellungen verwenden möchten."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

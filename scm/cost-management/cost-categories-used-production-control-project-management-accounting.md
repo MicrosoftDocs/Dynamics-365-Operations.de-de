@@ -3,7 +3,7 @@ title: Kostenkategorien, die in der Produktionssteuerung und in der Projektverwa
 description: "Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. Dieser Artikel bietet Informationen zu den Kostenkategorien, die Sie für diese Arten von Produktionsarbeiten für Produktion und Projektzwecke definieren müssen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

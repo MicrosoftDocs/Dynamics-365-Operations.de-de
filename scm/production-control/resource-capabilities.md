@@ -3,7 +3,7 @@ title: "Ressourcenfähigkeiten"
 description: "«»Dieser Artikel enthält Informationen zu Ressourcenfunktionen. Eine Funktion ist die Fähigkeit einer betrieblichen Ressource, eine bestimmte Aktivität auszuführen. Der Artikel wird beschrieben, wie Funktionen und zugehörige Konzepte, wie Leistungsfähigkeitsebene und Priorität, verwendet werden, damit entsprechende Ressourcen für eine Aktivität verwendet werden können."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
