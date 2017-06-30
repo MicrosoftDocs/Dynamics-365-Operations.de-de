@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetBook, AssetDepreciationProfile, AssetParameters
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272663
 ms.search.region: Austria
 ms.author: sndray
