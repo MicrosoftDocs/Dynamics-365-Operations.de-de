@@ -40,7 +40,7 @@ Mithilfe dieser Dokumentation kann Dynamics 365 for Finance and Operations in I
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>Finanzdaten</h3>
+<td><h3>Financials</h3>
 <p><a href="../financials/general-ledger/audit-policy-rules">Konformität</a></p>
 <p>Finanzverwaltung</p>
 <ul style="list-style-type:none">
