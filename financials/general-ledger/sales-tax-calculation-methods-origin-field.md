@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Mehrwertsteuer-Berechnungsmethoden im Feld "Ursprung"
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 In diesem Artikel wird beschrieben die Optionen im Feld "Ursprung" auf der Mehrwertsteuercodeseite und wie Mehrwertsteuer basierend auf der ausgewählten Option für einen Mehrwertsteuercode berechnet wird.

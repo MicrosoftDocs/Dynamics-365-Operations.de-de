@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="weighted-average-date"></a>Gewichteter Durchschnitt (Datum)
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Datum des gewichteten Durchschnitts ist ein Lagermodell, das auf dem Prinzip des gewichteten Durchschnitts basiert. Für das Prinzip des gewichteten Durchschnitts werden Abgänge aus dem Lagerbestand zum Durchschnittswert der Artikel bewertet, die im Lager für jeden Tag während der Lagerabschlussperiode eingehen. Beim Ausführen eines Lagerabschlusses mithilfe des Datums des gewichteten Durchschnitts werden alle täglichen Zugänge anhand eines virtuellen Abgangs ausgeglichen. Dieser virtuelle Abgang enthält die Gesamtmenge und Gesamtwert der Zugänge für den jeweiligen Tag. Der virtuelle Abgang hat auch einen entsprechenden virtuellen Zugang, gegenüber dem die Abgänge ausgeglichen werden. Daher erhalten alle Abgänge die gleichen Durchschnittskosten. Der virtuelle Abgang sowie der virtuelle Zugang können als virtueller Übertrag betrachtet werden. Dieser ist als *Gewichteter Durchschnitt des Lagerabschlussübertrags* bekannt. 
