@@ -6,22 +6,21 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
-ms.assetid: 2e299a38-16e5-474e-b993-d88cebfadca0
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: 25a9885a31871a19285cdd30987e3d1caa99bc04
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: ac77d2d374dc77aa4cf43ae2621b3692e556c9d0
 ms.contentlocale: de-de
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -54,6 +53,9 @@ Die folgenden Ressourcen enthalten Informationen zu geplanten und neuen Lokalisi
 -   [Rechtliche Überwachung und rechtliche Updatekommunikation](regulatory-watch-communication.md)
 -   [Microsoft zu Landes-/Regionsbestimmungswarnungen informieren und den Status von rechtlichen Funktionen nachverfolgen](submit-localization-alerts.md)
 
+### <a name="dynamics-365-roadmap"></a>Produktplan für Dynamics 365
+Im [Produktplan für Dynamics 365](https://roadmap.dynamics.com/) finden Sie eine Übersicht über unsere aktuellen Fortschritte. Verwenden Sie diesen Produktplan, um zu erfahren, welche Funktionen zur allgemeinen Verfügung stehen und welche sich in der Entwicklung befinden. Alle Daten und Funktionen, die sich in der Entwicklung befinden, sind vorläufig, basieren auf aktuellen Erwartungen und können ohne vorherige Ankündigung geändert werden.
+
 ## <a name="electronic-reporting"></a>Elektronische Berichterstellung
 Das Tool für die „Elektronische Berichterstellung” (ER) ermöglicht es Ihnen, Formate für elektronische Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen zu konfigurieren. ER ermöglicht Ihnen, diese Formate während ihres Lebenszyklus zu verwalten. Weitere Informationen finden Sie unter einem der folgenden Themen:
 -   [Überblick über die elektronische Berichterstellung](../analytics/general-electronic-reporting.md)
@@ -62,7 +64,9 @@ Das Tool für die „Elektronische Berichterstellung” (ER) ermöglicht es Ihne
 -   [Die Liste der elektronischen Berichterstellungsfunktionen erweitern](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Zielorte für elektronische Berichterstellung](../analytics/electronic-reporting-destinations.md)
 -   [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Elektronische Berichtskonfigurationen importieren](../analytics/electronic-reporting-import-ger-configurations.md)
 -   [Konfigurieren elektronischer Berichterstattung, um Daten in Power BI einzubeziehen](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Elektronische Dokumente generieren und Anwendungsdaten mithilfe des elektronischen Berichterstellungstools aktualisieren](../analytics/generate-electronic-documents-update-application-data.md)
 
 ## <a name="task-guides"></a>Aufgabenleitfäden
 Aufgabenleitfäden sind im Produkthilfebereich verfügbar und enthalten eine angeleitete exemplarische Vorgehensweise für wichtige Geschäftsprozesse. Sie können einen Aufgabenleitfaden öffnen, um die Schritte eines Geschäftsprozesses zu lesen, oder Sie können einen Aufgabenleitfaden wiedergeben, um durch einen Geschäftsprozess geführt zu werden und Daten einzugeben.
@@ -83,9 +87,10 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 
 ### <a name="austria"></a>Österreich
 
--   [Halbjahresabschreibung](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
--   [Verpackungsmaterialgebühren](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
--   [MwSt.-Abrechnung](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
+- [Halbjahresabschreibung](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
+- [Verpackungsmaterialgebühren](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
+- [Einkaufssteuern](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties)
+- [MwSt.-Abrechnung](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### <a name="belgium"></a>Belgien
 
@@ -130,7 +135,6 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 -   [Halbjährliche Abschreibung auf Anlageveräußerungen für die Tschechische Republik](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [Abschreibungsunterbrechung (Feiertage)](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
 -   [Anlagenabschreibungsmethoden für die Tschechische Republik](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
-
 -   [Den vor der Anschaffung bestehenden Wert einer Anlage buchen](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [MwSt.-Abrechnung für die Tschechische Republik](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Mehrwertsteuererklärung](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions)
@@ -144,30 +148,39 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 -   [Anlagenveräußerung](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 
 ### <a name="europe"></a>Europa
--   [Vorauszahlungsinhaber](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
--   [Rechnungs-IDs zu Aufträgen bearbeiten](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
--   [EU-Gelangensbestätigungen](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
--   [Zusammenfassende Meldung](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
--   [Wechselkursregulierungen](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
--   [Dateiformate für Zahlungsmethoden](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
--   [Anlagenveräußerungen für Estland und Litauen](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
--   [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
--   [Rechnungs- und Lieferscheinnummerierung für Lettland und Litauen](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [Rechnungsabgangsfristen](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
--   [OIOUBL-Standards](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
--   [Zahlungsbelegbericht](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
--   [Handkasse](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
--   [Den vor der Anschaffung bestehenden Wert einer Anlage buchen](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
--   [Postleitzahlen](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
--   [Registrierungskennungen](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
--   [SEPA-Kreditübertragungsüberblick](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
--   [SEPA-Lastschriftüberblick](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
--   [Signaturgeber für Druckformulare einrichten](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
--   [Perioden in periodischen Erfassungen teilen](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
--   [Aktualisieren, wie Beträge in Berichten und Dokumenten angezeigt werden](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms)
--   [MwSt.-Wechselkurse](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
--   [MwSt.-Abrechnung für Europa](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
--   [Buchungen zum Ausgleich anzeigen](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
+- [Vorauszahlungsinhaber](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
+- [Vorschussinhaberbuchungen](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions)
+- [Erweiterte Rechnungsstellung](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice)
+- [Bankabstimmung](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation)
+- [Berichtigte Rechnungen](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice)
+- [Erstellung und Buchung von periodischen Erfassungen](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
+- [Rechnungs-IDs zu Aufträgen bearbeiten](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
+- [EU-Gelangensbestätigungen](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
+- [Zusammenfassende Meldung](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
+- [Wechselkursregulierungen](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
+- [Dateiformate für Zahlungsmethoden](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
+- [Anlagenveräußerungen für Estland und Litauen](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
+- [Lagererfassungsberichte](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
+- [Rechnungs- und Lieferscheinnummerierung für Lettland und Litauen](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+- [Rechnungsabgangsfristen](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
+- [OIOUBL-Standards](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
+- [Zahlungsbelegbericht](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
+- [Handkasse](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
+- [Den vor der Anschaffung bestehenden Wert einer Anlage buchen](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
+- [Postleitzahlen](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
+- [Registrierungskennungen](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
+- [Verlagerung der Steuerschuld](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge)
+- [SEPA-Kreditübertragungsüberblick](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
+- [SEPA-Lastschriftüberblick](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
+- [Einrichten der Debitoren- und Kreditorenvergütung](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
+- [Signaturgeber für Druckformulare einrichten](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Steuerrichtlinien](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
+- [Aktualisieren, wie Beträge in Berichten und Dokumenten angezeigt werden](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
+- [MwSt.-Wechselkurse](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
+- [MwSt.-Register-Buchungen für Osteuropa](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions)
+- [MwSt.-Berichterstattung](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
+- [Buchungen zum Ausgleich anzeigen](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
 
 ### <a name="france"></a>Frankreich
 -   [Chronologische Rechnungs- und Belegnummern](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -180,6 +193,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 #### <a name="public-sector"></a>Öffentlicher Sektor
    -   [Zusagen im öffentlichen Sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector)
    -   [Mandats de Paiement im öffentlichen Sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement)
+   -   [Beschaffung](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
    -   [Buchhaltung im öffentlichen Sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting)
    -   [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Zahlungssperren für Kreditorenrechnung](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
@@ -205,22 +219,21 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 -   [Lieferschein-Datumsprüfung auf Rechnungen für Italien](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Italienische Mehrwertsteuerbücher](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books)
 -   [Geteilte Zahlung für Rechnungen, die der öffentlichen Verwaltung ausgestellt wurden](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
--   [Quellensteuer](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax)
+-   [Quellensteuer](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax)
 
 ### <a name="japan"></a>Japan
 
--   [Von Kreditoren abgedeckte Bankzahlungsgebühren](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
--   [Konsolidierte Rechnungen](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
-
-#### <a name="fixed-assets"></a>Anlagen
-   -  [Zuteilungsregeln für Anlagen](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
-   -  [Abschreibungsmethode in gleichen Teilen](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
-   -  [Anlagenabschreibung](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
-   -  [Anlagen-Wertminderungsverwaltung bei zahlungsmittelgenerierender Einheit](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
-   -  [Anlagenveräußerungsverpflichtung für Anlagen einrichten](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
-   -  [Planzahlenverrechnungseinträge für Anlagen einrichten](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
--   [Einem Kreditor durch Indossierung eines Wechsels bezahlen](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
--   [Progressive Quellensteuerberechnung](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
+-  [Von Kreditoren abgedeckte Bankzahlungsgebühren](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
+-  [Konsolidierte Rechnungen](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
+-  [Zuteilungsregeln für Anlagen](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
+-  [Abschreibungsmethode in gleichen Teilen](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
+-  [Anlagenabschreibung](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
+-  [Anlagen-Wertminderungsverwaltung bei zahlungsmittelgenerierender Einheit](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
+-  [Postleitzahlen importieren](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes)
+-  [Anlagenveräußerungsverpflichtung für Anlagen einrichten](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
+-  [Planzahlenverrechnungseinträge für Anlagen einrichten](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
+-  [Einem Kreditor durch Indossierung eines Wechsels bezahlen](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
+-  [Progressive Quellensteuerberechnung](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
 
 ### <a name="latvia"></a>Lettland
 
@@ -254,6 +267,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 ### <a name="norway"></a>Norwegen
 
 -   [Nettoimportformat](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format)
+-   [MwSt.-Abrechnung](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report)
 
 ### <a name="poland"></a>Polen
 
@@ -291,6 +305,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 ### <a name="sweden"></a>Schweden
 
 -   [Importzahlungsformate für Schweden](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import)
+-   [Kassen für Schweden](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers)
 
 ### <a name="switzerland"></a>Schweiz
 

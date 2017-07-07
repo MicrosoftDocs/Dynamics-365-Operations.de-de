@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-Datum mit physischem Wert und Markierung
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Beim LIFO-Datum (Last In, First Out) handelt es sich um ein Lagermodell, das auf dem LIFO-Prinzip basiert. Abgänge aus dem Lager werden mit den neuesten Zugängen im Lager auf der Grundlage des Datums der Lagerbuchung abgeglichen. Bei Verwendung des LIFO-Datums wird der Abgang mit beliebigen Zugängen ausgeglichen, die nach dem Datum des Artikelabgangs liegen, wenn vor dem Abgang kein Zugang zu verzeichnen ist. Mehrere Abgänge am gleichen Datum können in der Reihenfolge "Neuester Abgang, neuester Zugang" ausgeglichen werden. 

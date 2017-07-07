@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
 ms.contentlocale: de-de
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -32,18 +32,19 @@ ms.lasthandoff: 06/21/2017
 
 Microsoft Dynamics 365 for Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement. Darüber hinaus bietet es Personalverwaltungsmitarbeitern einen Rahmen für die Verwaltung der Bereiche, für die sie zuständig sind.
 
-Dynamics 365 for Talent und die Personalverwaltung in Dynamics 365 for Finance and Operations (Enterprise-Edition) sind sich sehr ähnlich. Beide Produkte weisen möglicherweise dieselbe Funktion auf. Daher lautet bei Themen, deren hauptsächlicher Bezug die Personalverwaltung ist, der Produktname Dynamics 365 for Finance and Operations (Enterprise-Edition). Bei Themen, die sich hauptsächlich um Talent drehen, lautet der Produktname Dynamics 365 for Talent. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
-
 Sie können Talent verwenden, um diese Aufgaben zu bearbeiten:
 
-> + Verwalten von organisatorischen Strukturen.
-> + Verwalten von umfassenden Arbeitskraftinformationen, von der Anstellung bis zur Pensionierung.
-> + Definieren und Verwalten von Vergütungsplänen, Registrieren von Arbeitskräften, Zuweisen der Abdeckung von Unterhaltsberechtigten und Festlegen von Begünstigten.
-> + Einrichten von Abwesenheitsrichtlinien und Überwachen derselben.
-> + Implementieren einer profilbasierten Zeitplanung und Nachverfolgen derselben. Generieren von Zahlungsinformationen, um diese in ein Lohnsystem zu exportieren.
-> + Verwalten von Arbeitskraftkompetenzen.
-> + Überprüfen von Leistungen und Implementieren von Zielen der Arbeitskräfte.
-> + Einrichten, Veranstalten und Analysieren von Schulungskursen mit Tagesordnungen, Sitzungen und Protokollen.
++ Verwalten von organisatorischen Strukturen.
++ Verwalten von umfassenden Arbeitskraftinformationen, von der Anstellung bis zur Pensionierung.
++ Definieren und Verwalten von Vergütungsplänen, Registrieren von Arbeitskräften, Zuweisen der Abdeckung von Unterhaltsberechtigten und Festlegen von Begünstigten.
++ Einrichten von Abwesenheitsrichtlinien und Überwachen derselben.
++ Implementieren einer profilbasierten Zeitplanung und Nachverfolgen derselben. Generieren von Zahlungsinformationen, um diese in ein Lohnsystem zu exportieren.
++ Verwalten von Arbeitskraftkompetenzen.
++ Überprüfen von Leistungen und Implementieren von Zielen der Arbeitskräfte.
++ Einrichten, Veranstalten und Analysieren von Schulungskursen mit Tagesordnungen, Sitzungen und Protokollen.
+
+> [!NOTE] 
+> Dynamics 365 for Talent und die Personalverwaltung in Dynamics 365 for Finance and Operations (Enterprise-Edition) sind sich sehr ähnlich. Beide Produkte weisen möglicherweise dieselbe Funktion auf. Daher lautet bei Themen, deren hauptsächlicher Bezug die Personalverwaltung ist, der Produktname Dynamics 365 for Finance and Operations (Enterprise-Edition). Bei Themen, die sich hauptsächlich um Talent drehen, lautet der Produktname Dynamics 365 for Talent. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Entwickeln einer Strategie für die Personalverwaltung
 ---------------------------------------------------------
