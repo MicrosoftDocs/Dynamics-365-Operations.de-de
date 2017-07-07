@@ -80,7 +80,7 @@ Retail ermöglicht Filialleitern, Schichten und Zeitpläne für die Arbeitskräf
 
 Mitarbeiter erhalten Einblick in Schichten und zugewiesene Zeitpläne, einschließlich Anweisungen für die Schichten, und erfahren so auch, welche Mitarbeiter welchen Schichten zugeteilt sind. Sie können hier außerdem Abwesenheitsanträge, Anträge auf Schichttausch mit Kollegen und Anträge auf Schichtangebote stellen.
 
-## <a name="customize-and-administer-retail-environments"></a>Einzelhandelsumgebungen anpassen und verwalten
+## <a name="customize-and-administer-retail-environments"></a>Retail-Umgebungen anpassen und verwalten
 Wenn Sie um die Anpassung Ihrer Umgebung gebeten wurden oder Sie für die Bereitstellung und Verwaltung Ihres Systems verantwortlich sind, finden Sie neben den eher allgemeinen Inhalten weitere, für Retail spezifische Informationen in den Inhalten für Entwickler und Systemadministratoren.
 
 - [Dynamics 365 for Retail für IT-Fachkräfte und Entwickler](dev-itpro/dev-retail-home-page.md)

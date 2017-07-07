@@ -3,7 +3,7 @@ title: "MwSt-Berichterstattung für Europa"
 description: "Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung  des Mehrwertsteuer-Auszugs für einige europäische Länder."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 697af132142fadf907ffcab3fa20a6646d9ae632
+ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
+ms.openlocfilehash: 7dc6a32a9babc95cfa4ad031534404cae6fa37ea
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/09/2017
 
 
 ---
@@ -253,9 +253,9 @@ d<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</s
 
 Sie können Elektronische Berichterstattung (ER) verwenden, um Auszüge und Berichte zu konfigurieren und verschiedene elektronische Datenformate zu exportieren, ohne den X++-Code zu ändern. Zusätzliche Informationen:
 
--   [Überblick über die elektronische Berichterstellung](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
--   [Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Services herunter](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
--   [[Lokalisierungsanforderungen - Erstellen Sie eine GER-Konfiguration](/dynamics365/operations/dev-itpro/analytics/electronic-reporting-configuration)
+-   [Überblick über die elektronische Berichterstellung](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
+-   [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+-   [[Lokalisierungsanforderungen - Erstellen Sie eine GER-Konfiguration](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration)
 
 ## <a name="countryspecific-resources-for-vat-statements"></a>Länderspezifische Ressourcen für Mehrwertsteuer-Auszüge
 Der Mehrwertsteuertyp. im für jedes Land muss den Bedingungen der Gesetzgeber des Lands erfüllen. Es gibt vordefinierten allgemeine Modelle und Formate der MwSt.-Auszügen für die Länder, die in der weiter unten dargestellten Tabelle aufgeführt sind.

@@ -1,15 +1,15 @@
 ---
 title: Mobile Rechnungsgenehmigungen
-description: "Mit mobilen Funktionen in Microsoft Dynamics 365 for Operations können geschäftliche Benutzer mobile Umgebungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieses Thema soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden."
+description: Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien in Dynamics 365 for Finance and Operations bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c412562a5b224e682c4a555a56e713570a1e4ef
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 0ca4ebdca1fce3863a50abf19a071af1f1c425e0
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,19 +30,19 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Mit mobilen Funktionen in Microsoft Dynamics 365 for Operations können geschäftliche Benutzer mobile Umgebungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieses Thema soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden.
+Mit mobilen Funktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, können geschäftliche Benutzer mobile Umgebungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieses Thema soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden.
 
 <a name="prerequisites"></a>Voraussetzungen
 -------------
 
 | Voraussetzung                                                                                            | Beschreibung                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vorbereitung                                                                                |(/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform.md)                                                                                                  |
-| Dynamics 365 for Operations                                                                             | Eine Umgebung, die Microsoft Dynamics 365 for Operations Version 1611 und Microsoft Dynamics for Operations Platform Update 3 (November 2016) nutzen.                   |
+| Vorbereitung                                                                                |[Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform)                                                                                                  |
+| Dynamics 365 for Finance and Operations                                                                             | Eine Umgebung, die Microsoft Dynamics 365 for Operations Version 1611 und Microsoft Dynamics for Operations Platform Update 3 (November 2016) nutzen.                   |
 | Hotfix KB 3204341 installieren.                                                                              | Die Aufgabenaufzeichnung kann fälschlicherweise zwei Scließen-Befehle für Dropdowndialogfelder erfassen, die in Dynamics 365 for Operation Update 3 (November 2016) einbezogen sind. |
 | Hotfix KB 3207800 installieren.                                                                              | Dieser Hotfix ermöglicht das Anzeigen von Anhängen im mobilen Client, der in Dynamics 365 for Operation Update 3 (November 2016) enthalten ist.           |
 | Hotfix KB 3208224 installieren.                                                                              | Anwendungscode für die mobile Kreditorenrechnungs-Genehmigungsanwendung aus Microsoft Dynamics AX 7.0.1 (Mai 2016).                          |
-| Ein Android oder iOS oder Windows-Gerät, das die mobile App für Dynamics 365 for Operations installiert hat | Suchen Sie die App im entsprechenden App-Store.                                                                                                                     |
+| Ein Android- oder iOS- oder Windows-Gerät, das die mobile App für Finance and Operations installiert hat | Suchen Sie die App im entsprechenden App-Store.                                                                                                                     |
 
 ## <a name="introduction"></a>Einführung
 Mobile Genehmigungen für Kreditorenrechnungen erfordern die drei Hotfixes, die im Abschnitt "Vorbereitung" angegeben werden. Diese Hotfixes bieten keinen Arbeitsbereich für die Rechnungsgenehmigungen. Um zu lernen, was ein Arbeitsbereich im Rahmen des mobilen Clients ist, lesen Sie das Handbuch aus dem Abschnitt "Vorbereitung". Der Rechnungsgenehmigungsarbeitsbereich muss konzipiert werden. 
@@ -126,7 +126,7 @@ Allgemeine, wenn mit dem mobilen Designer gearbeitet wird, vergewissern Sie sich
 
 ### <a name="create-the-workspace"></a>Arbeitsbereich erstellen
 
-1.  In einem Browser öffnen Sie Dynamics 365 for Operations und melden sich an.
+1.  Öffnen Sie Finance and Operations in einem Browser, und melden sich an.
 2.  Nachdem Sie angemeldet sind, hängen Sie **&mode=mobile** an die URL wie im folgenden Beispiel an und aktualisieren die Seite: https://&lt;ihreUrl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
 3.  Klicken Sie auf **Einstellungen** (Zahnrad) in der oberen rechten Ecke der Seite und klicken dann auf **Mobile App**. Der Designer für mobile Apps wird wie die Aufgabenaufzeichnung angezeigt.
 4.  Klicken Sie auf **Hinzufügen** um einen neuen Arbeitsbereich zu erstellen Im vorliegenden Beispiel ist Name des Arbeitsbereichs **Meine Genehmigungen**.
@@ -138,9 +138,9 @@ Allgemeine, wenn mit dem mobilen Designer gearbeitet wird, vergewissern Sie sich
 
 ### <a name="vendor-invoices-assigned-to-me"></a>Mir zugewiesene Kreditorenrechnungen
 
-Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Genehmigung zugewiesen werden zeigen. Um diese mobile Seite zu entwerfen verwenden Sie die **VendMobileInvoiceAssignedToMeListPage** Seite in Dynamics 365 for Operations. Bevor Sie dieses Verfahren ausführen, stellen Sie sicher, dass mindestens eine Kreditorenrechnung zur Prüfung Ihnen zugewiesen ist und die Rechnungsposition zwei Verteilungen hat. Diese Einstellung erfüllt die Bedingungen für dieses Szenarios.
+Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Genehmigung zugewiesen werden zeigen. Um diese mobile Seite zu entwerfen verwenden Sie die **VendMobileInvoiceAssignedToMeListPage**-Seite in Finance and Operations. Bevor Sie dieses Verfahren ausführen, stellen Sie sicher, dass mindestens eine Kreditorenrechnung zur Prüfung Ihnen zugewiesen ist und die Rechnungsposition zwei Verteilungen hat. Diese Einstellung erfüllt die Bedingungen für dieses Szenarios.
 
-1.  In der Dynamics 365 for Operations URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceAssignedToMeListPage**, um die mobile Version der Listenseite **Ausstehende Kreditorenrechnungen – mir zugewiesen** im **Kreditor** Modul zu öffnen. Je nach der Anzahl von Rechnungen, die Sie in Ihrem System besitzen, das Ihnen zugeordnet ist, wird auf dieser Seite die Rechnungen angezeigt. Sie können den Filter links verwenden um eine bestimmte Rechnung zu suchen. Allerdings benötigen wir keine bestimmte Rechnung für dieses Beispiel. Es benötigen nur eine Rechnung, die Ihnen zugewiesen ist. Die neuen Seiten, die verfügbar sind, wurden insbesondere zum Entwickeln von mobilen Szenarien für Kreditorenrechnung entworfen. Daher müssen Sie diesen Seiten nutzen. Die URL muss der folgenden URL ähneln. Nachdem Sie sie eingeben haben, muss die Seite, die in der Abbildung dargestellt wird, angezeigt werden: https://&lt;IhreURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Zu meiner Seite zugewiesene ausstehende Kreditorechungen anzeigen](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  In der Finance and Operations-URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceAssignedToMeListPage**, um die mobile Version der Listenseite **Ausstehende Kreditorenrechnungen – mir zugewiesen** im **Kreditor**-Modul zu öffnen. Je nach der Anzahl von Rechnungen, die Sie in Ihrem System besitzen, das Ihnen zugeordnet ist, wird auf dieser Seite die Rechnungen angezeigt. Sie können den Filter links verwenden um eine bestimmte Rechnung zu suchen. Allerdings benötigen wir keine bestimmte Rechnung für dieses Beispiel. Es benötigen nur eine Rechnung, die Ihnen zugewiesen ist. Die neuen Seiten, die verfügbar sind, wurden insbesondere zum Entwickeln von mobilen Szenarien für Kreditorenrechnung entworfen. Daher müssen Sie diesen Seiten nutzen. Die URL muss der folgenden URL ähneln. Nachdem Sie sie eingeben haben, muss die Seite, die in der Abbildung dargestellt wird, angezeigt werden: https://&lt;IhreURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Zu meiner Seite zugewiesene ausstehende Kreditorechungen anzeigen](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
 2.  Klicken Sie auf **Einstellungen** (Zahnrad) in der oberen rechten Ecke der Seite und klicken dann auf **Mobile App**.
 3.  Wählen Sie einen und Arbeitsbereich aus und klicken sie **Bearbeiten**
 4.  Klicken Sie auf **Seite hinzufügen**, um die ersten mobilen Seite zu erstellen.
@@ -148,20 +148,21 @@ Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Geneh
 6.  Klicken Sie auf **Fertig**.
 7.  Im mobilen Designer auf der Registerkarte **Felder** klicken Sie auf **Felder wählen**. Die Spalten auf der Listenseite müssen der folgenden Abbildung ähneln. [![Spalten auf der Seite "Mir zugeweisene ausstehenden Kreditorenrechnungen"](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
 8.  Fügen Sie die erforderlichen Spalten von der Listenseite hinzu, die für Benutzern in der mobilen Seite angezeigt werden. Die Reihenfolge, in der Sie hinzufügen, entspricht der Reihenfolge, in der die Felder an Endbenutzer angezeigt werden. Die einzige Methode, die Reihenfolge der Felder zu ändern ist, indem alle Felder erneut auswählen. Basierend auf den Anforderungen für dieses Szenarios, sind die folgenden acht Felder obligatorisch. Allerdings erachten mehrere Benutzer acht Felder für zu viele Informationen, die auf einem mobilen Gerät zu haben. Daher werden nur die wichtigsten Felder in der mobilen Listenansicht angezeigt. Die übrigen Felder erscheinen in der Detailansicht, die Sie später entwerfen. Jetzt fügen Sie nur die folgenden Felder hinzu. Klicken Sie auf das Pluszeichen (**+**) in den Spalten die Sie zum mobilen Seite hinzuzufügen wollen.
-    1.  Kreditorenname
-    2.  Rechnungssumme
-    3.  Rechnungskonto
-    4.  Rechnungsnummer
-    5.  Rechnungsdatum
+    - Kreditorenname
+    - Rechnungssumme
+    - Rechnungskonto
+    - Rechnungsnummer
+    - Rechnungsdatum
 
-    Nachdem die Felder hinzugefügt sind, muss die mobile Seite der folgenden Abbildung ähneln. [![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    Nachdem die Felder hinzugefügt sind, muss die mobile Seite der folgenden Abbildung ähneln. 
+    [![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 9.  Sie müssen außerdem die folgenden Spalten hinzufügen, sodass wir Workflowaktivitäten später aktivieren können.
-    1.  Abgeschlossene Aufgabe anzeigen
-    2.  Delegataufgabe anzeigen
-    3.  Zurückrufene Aufgabe anzeigen
-    4.  Abgelehnte Aufgabe anzeigen
-    5.  Abschlussanforderung Aufgabe anzeigen
-    6.  Aufgabe erneut übermitteln anzeigen
+    - Abgeschlossene Aufgabe anzeigen
+    - Delegataufgabe anzeigen
+    - Zurückrufene Aufgabe anzeigen
+    - Abgelehnte Aufgabe anzeigen
+    - Abschlussanforderung Aufgabe anzeigen
+    - Aufgabe erneut übermitteln anzeigen
 
 10. Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 11. Klicken Sie auf **Zurück** und **Fertig**, um den Arbeitsbereich zu beenden
@@ -170,42 +171,44 @@ Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Geneh
 
 ### <a name="vendor-invoice-details"></a>Details der Kreditorenrechnung
 
-Um die für Rechnungsdetailseite Datenschutzerklärung zu entwerfen, verwenden Sie die **VendMobileInvoiceHeaderDetails** *Seite in Dynamics 365 for Operations. Beachten Sie diese, abhängig von der Anzahl der Rechnungen, die Sie in Ihrem System gibt, enthält dieser Seite die älteste Rechnung (die Rechnung, die zuerst erstellt wurde). Sie können den Filter links verwenden um eine bestimmte Rechnung zu suchen. Allerdings benötigen wir keine bestimmte Rechnung für dieses Beispiel. Es müssen nur einige Rechnungsinformationen, sodass wir die mobile Seite zu entwerfen. [![Workflowseite](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+Um die Rechnungsdetailseite für die mobile App zu entwerfen, verwenden Sie die **VendMobileInvoiceHeaderDetails**-Seite in Finance and Operations. Beachten Sie diese, abhängig von der Anzahl der Rechnungen, die Sie in Ihrem System gibt, enthält dieser Seite die älteste Rechnung (die Rechnung, die zuerst erstellt wurde). Sie können den Filter links verwenden um eine bestimmte Rechnung zu suchen. Allerdings benötigen wir keine bestimmte Rechnung für dieses Beispiel. Es müssen nur einige Rechnungsinformationen, sodass wir die mobile Seite zu entwerfen. [![Workflowseite](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  In der Dynamics 365 for Operations URL, ersetzen den Namen nach der Menüoption **VendMobileInvoiceHeaderDetails**, um das Formular zu öffnen
+1.  In der Finance and Operations-URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceHeaderDetails**, um das Formular zu öffnen
 2.  Öffnen Sie den Designer von mobilen **Einstellungen** (Zahnrad) Schaltfläche.
 3.  Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten.
 4.  Wählen Sie die **Meine Kreditorenrechnungen** Seite, die Sie eben erstellt haben, und klicken Sie dann **Bearbeiten**.
 5.  Auf der **Felder** Registerkarte klicken Sie auf die Spaltenüberschrift **Raster**
 6.  Auf **Eigenschaften** &gt; **Seite hinzufügen**. **Hinweis:** Wenn Sie auf das **Raster** Überschrift klicken und eine Seite hinzufügen, wird die Beziehung zur Detailseite automatisch bestimmt.
-7.  Geben Sie einen Seitentitel, z.B. **Rechnungsdetails**und einer Beschreibung, wie ein **Ansichtsrechnungskopf und Positionsdetails**.
-8.  Klicken Sie auf **Felder auswählen**. Die Reihenfolge, in der Sie hinzufügen, entspricht der Reihenfolge, in der die Felder an Endbenutzer angezeigt werden. Die einzige Methode, die Reihenfolge der Felder zu ändern ist, indem alle Felder erneut auswählen.
+7.  Geben Sie einen Seitentitel, z.B. **Rechnungsdetails** und einer Beschreibung, wie ein **Ansichtsrechnungskopf und Positionsdetails**.
+8.  Klicken Sie auf **Felder auswählen**. Die Reihenfolge, in der Sie hinzufügen, entspricht der Reihenfolge, in der die Felder an Endbenutzer angezeigt werden. Die einzige Methode, die Reihenfolge der Felder zu ändern ist, indem alle Felder erneut auswählen. 
 9.  Fügen Sie die folgenden Felder aus dem Auftragskopf, basierend auf den Anforderungen für dieses Szenarios hinzu:
-    1.  Kreditorenname
-    2.  Rechnungssumme
-    3.  Rechnungskonto
-    4.  Rechnungsnummer
-    5.  Rechnungsdatum
-    6.  Rechnungsbeschreibung
-    7.  Fälligkeitsdatum
-    8.  Rechnungswährung
+    - Kreditorenname
+    - Rechnungssumme
+    - Rechnungskonto
+    - Rechnungsnummer
+    - Rechnungsdatum
+    - Rechnungsbeschreibung
+    - Fälligkeitsdatum
+    - Rechnungswährung
 
 10. Fügen Sie die folgenden Felder aus Positionsraster auf der Seite hinzu:
-    1.  Beschaffungskategorie
-    2.  Leistung
-    3.  Preis je Einheit
-    4.  Nettobetrag der Position
-    5.  Steuerbetrag (US 1099)
+    - Beschaffungskategorie
+    - Leistung
+    - Preis je Einheit
+    - Nettobetrag der Position
+    - Steuerbetrag (US 1099)
 
-11. Nachdem alle Felder aus den früheren zwei Schritten hinzugefügt wurden, klicken Sie auf **Fertig**. Die müssen der folgenden Abbildung ähneln. [![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+11. Nachdem alle Felder aus den früheren zwei Schritten hinzugefügt wurden, klicken Sie auf **Fertig**. Die müssen der folgenden Abbildung ähneln.
+[![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 12. Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 13. Klicken Sie auf **Zurück** und **Fertig**, um den Arbeitsbereich zu beenden
 14. Klicken Sie auf **Arbeitsbereich veröffentlichen**, um die Arbeit zu speichern.
 
 ### <a name="workflow-actions"></a>Workflowaktivitäten
 
-Um Workflowaktivitäten hinzuzufügen, verwenden Sie die **VendMobileInvoiceHeaderDetails** Seite in Dynamics 365 for Operations. Um diese Seite zu öffnen, ersetzen Sie Name der Menüoption in die URL, wie Sie eben geschehen ist. Öffnen Sie den Designer von mobilen **Einstellungen** (Zahnrad) Schaltfläche. Gehen Sie folgendermaßen vor, um die Detailseite auf Workflowaktivitäten hinzuzufügen.
+Um Workflowaktivitäten hinzuzufügen, verwenden Sie die **VendMobileInvoiceHeaderDetails**-Seite in Finance and Operations. Um diese Seite zu öffnen, ersetzen Sie Name der Menüoption in die URL, wie Sie eben geschehen ist. Öffnen Sie den Designer von mobilen **Einstellungen** (Zahnrad) Schaltfläche. Gehen Sie folgendermaßen vor, um die Detailseite auf Workflowaktivitäten hinzuzufügen. Sie müssen Rechnungen haben, die Ihnen zugewiesen wurden, die sich in einem angemessenen Status befinden, damit Ihnen die Workflowaktivitäten zur Verfügung stehen, für die Sie entwerfen möchten.
 
+#### <a name="record-workflow-actions"></a>Workflowaktivitäten erfassen
 1.  Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten.
 2.  Wählen Sie die **Rechnungsdetails** Seite, die Sie eben erstellt haben, und klicken Sie dann **Bearbeiten**.
 3.  Klicken Sie auf der Registerkarte **Aktionen** auf **Aktion hinzufügen**.
@@ -217,14 +220,40 @@ Um Workflowaktivitäten hinzuzufügen, verwenden Sie die **VendMobileInvoiceHead
 9.  Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 10. Klicken Sie auf **Zurück** und **Fertig**, um den Arbeitsbereich zu beenden
 11. Klicken Sie auf **Arbeitsbereich veröffentlichen**, um die Arbeit zu speichern.
-12. Wiederholen Sie die Schritte 3 bis 11, um alle erforderlichen Workflowaktivitäten zu erfassen. Beachten Sie das, es ist eine Anforderung, die Rechnungen anzuzeigen, die Ihnen zugewiesen sind, die in einen Status besitzen, um der Arbeitsplanaktivitäten des Katalogs für Sie, dass Sie für entwerfen werden.
-13. Öffnen Sie den Editor oder Microsoft Visual Studio, und fügen Sie den folgenden Code ein. Speichern Sie die Datei als .js-Datei. Dieser Code mach zwei Dinge:
-    1.  Er blendet die zusätzlichen workflowbezogenen Spalten aus, die wir früher mobilen auf der Listenseite hinzugefügt. Es werden diesen Spalten hinzufügen, sodass der Zeit-App dass Informationen im Zusammenhang hat und die nächsten Schritt ausführen kann.
-    2.  Anhand des Workflowschritt, die aktiv ist, wendet sie Logik, um nur die Vorgänge anzeigen.
+12. Wiederholen Sie die vorherigen Schritte, um alle erforderlichen Workflowaktivitäten zu erfassen. 
 
-Beachten Sie, das den Namen der Seiten und anderen Steuerelemente im JS-Code müssen identisch dem Arbeitsbereich sein.
+#### <a name="create-a-js-file"></a>Erstellen Sie eine JS-Datei.
+1. Öffnen Sie den Editor oder Microsoft Visual Studio, und fügen Sie den folgenden Code ein. Speichern Sie die Datei als .js-Datei. Diese Code bewirkt Folgendes:
+    - Er blendet die zusätzlichen workflowbezogenen Spalten aus, die wir früher mobilen auf der Listenseite hinzugefügt. Es werden diesen Spalten hinzufügen, sodass der Zeit-App dass Informationen im Zusammenhang hat und die nächsten Schritt ausführen kann.
+    - Anhand des Workflowschritt, die aktiv ist, wendet sie Logik, um nur die Vorgänge anzeigen.
 
-1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Hide controls that need to be present, but not visible                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Show/hide workflow actions based on workflow step                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
+> [!NOTE]
+> Die Namen der Seiten und andere Steuerelemente im Code müssen mit den Namen im Arbeitsbereich identisch sein.
+
+    function main(metadataService, dataService, cacheService, $q) {
+           return {
+               appInit: function (appMetadata) {
+                   // Hide controls that need to be present, but not visible
+                   metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });
+                 metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });
+               metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });
+               },
+               pageInit: function (pageMetadata, params) {
+        if (pageMetadata.Name == 'Invoice-details') {
+                       // Show/hide workflow actions based on workflow step
+                       metadataService.configureAction('Accept', { visible: true });
+                       metadataService.configureAction('Approve', { visible: true });
+                       metadataService.configureAction('Reject', { visible: true });
+                       metadataService.configureAction('Delegate', { visible: true });
+                       metadataService.configureAction('Request-change', { visible: true });
+                       metadataService.configureAction('Recall', { visible: true });
+                       metadataService.configureAction('Complete', { visible: true });
+                       metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -271,19 +300,20 @@ Beachten Sie, das den Namen der Seiten und anderen Steuerelemente im JS-Code mü
 2.  Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten.
 3.  Wählen Sie die **Rechnungsdetails** Seite, die Sie eben erstellt haben, und klicken Sie dann **Bearbeiten**.
 4.  Legen Sie die **Dokumentverwaltung** Option **Ja** wie weiter unten) fest. **Hinweis:** Wenn keine Anforderungen gibt, Zuordnungen im mobilen Gerät angezeigt werden, können Sie diese Option **Nein**, mit der die Standardeinstellung ist.
-5.  [![docmanagement](./media/docmanagement-216x300.png)](./media/docmanagement.png)
+![Dokumentverwaltung](./media/docmanagement-216x300.png)
 6.  Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 7.  Klicken Sie auf **Zurück** und **Fertig**, um den Arbeitsbereich zu beenden
 8.  Klicken Sie auf **Arbeitsbereich veröffentlichen**, um die Arbeit zu speichern.
 
 ### <a name="vendor-invoice-line-distributions"></a>Kreditorrechungspositionsverteilungen
 
-Die Anforderungen für dieses Szenarios bestätigen, dass nur Verteilungen auf Positionsebene sind und dass eine Rechnung immer nur eine Position ist. Da dieses Szenario ist einfach, muss die Benutzerfreundlichkeit auf dem auch einfach mobilen Gerät genug sein, dem der Benutzer nicht mehrere Ebenen muss Detailinformationen anzeigen, damit die Verteilungen anzuzeigen. Kreditorenrechnungen in Dynamics 365 for Operations umfassen die Option des Anzeigens aller Verteilungen aus dem Rechnungskopf. Diese Umgebung ist was wir für das mobile Szenario benötigen. Daher verwenden Sie die **VendMobileInvoiceAllDistributionTree** Seite, um diesen Teil des mobilen Szenarios zu entwerfen. 
+Die Anforderungen für dieses Szenarios bestätigen, dass nur Verteilungen auf Positionsebene sind und dass eine Rechnung immer nur eine Position ist. Da dieses Szenario ist einfach, muss die Benutzerfreundlichkeit auf dem auch einfach mobilen Gerät genug sein, dem der Benutzer nicht mehrere Ebenen muss Detailinformationen anzeigen, damit die Verteilungen anzuzeigen. Kreditorenrechnungen in Finance and Operations enthalten die Option des Anzeigens aller Verteilungen aus dem Rechnungskopf. Diese Umgebung ist was wir für das mobile Szenario benötigen. Daher verwenden Sie die **VendMobileInvoiceAllDistributionTree** Seite, um diesen Teil des mobilen Szenarios zu entwerfen. 
 
 > [!NOTE] 
 > Das Kennen der Anforderungen können uns, entscheiden, die die betreffende genau zu verwenden Seite, und wie die mobile Erfahrung des Benutzers optimiert, wenn Sie das Szenario entwerfen. Im zweiten Szenario können wir eine andere Seite, damit die Verteilungen anzuzeigen, weil die Anforderungen für dieses Szenarios unterscheiden.
 
-1.  In der URL ersetzten Sie den Name der Menüoption. Die Seite, die angezeigt wird, sollte der folgenden Abbildung ähneln. [![Alle Verteilungen-Seite](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+1.  In der URL ersetzten Sie den Name der Menüoption. Die Seite, die angezeigt wird, sollte der folgenden Abbildung ähneln.
+[![Alle Verteilungen-Seite](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 2.  Öffnen Sie den Designer von mobilen **Einstellungen** (Zahnrad) Schaltfläche.
 3.  Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten. **Hinweis:** Sie sehen, dass zwei neue Seiten automatisch erstellt wurden. Das System diese Seiten erstellt, da Sie die Dokumentverwaltung im vorherigen Abschnitt einschalteten. Sie können diese Seiten neuen ignorieren.
 4.  Klicken Sie auf **Seite hinzufügen.**
@@ -294,22 +324,50 @@ Die Anforderungen für dieses Szenarios bestätigen, dass nur Verteilungen auf P
     2.  Währung
     3.  Sachkonto
 
-> [!NOTE] 
-> Es können die **Beschreibung** Spalte im Verteilungsraster aus, weil die Anforderungen für dieses Szenarios bestätigten, dass der erweiterte Preis der einzige Betrag ist, dass für Verteilungen gibt. Daher fordert der Benutzer kein anderes Feld, den Betragstyp festzustellen, ob die Verteilung für ist. Allerdings im folgenden Szenario verwenden, wir **werden** Sie diese Informationen, weil die Anforderungen für dieses Szenarios angeben, dass andere Betragsart Verteilungen haben (z, Mehrwertsteuer).
+    > [!NOTE] 
+    > Es können die **Beschreibung** Spalte im Verteilungsraster aus, weil die Anforderungen für dieses Szenarios bestätigten, dass der erweiterte Preis der einzige Betrag ist, dass für Verteilungen gibt. Daher fordert der Benutzer kein anderes Feld, den Betragstyp festzustellen, ob die Verteilung für ist. Allerdings im folgenden Szenario verwenden, wir **werden** Sie diese Informationen, weil die Anforderungen für dieses Szenarios angeben, dass andere Betragsart Verteilungen haben (z, Mehrwertsteuer).
 8.  Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 9.  Klicken Sie auf **Zurück** und **Fertig**, um den Arbeitsbereich zu beenden
 10. Klicken Sie auf **Arbeitsbereich veröffentlichen**, um die Arbeit zu speichern.
 
-**Hinweis:**Die mobile Seite **Buchhaltung anzeigen** wird der derzeit keinem mobilen Seiten verknüpft, die wir Monatsbeginn entworfen haben. Da der Benutzer in der Lage sein soll, die Seite **Buchhaltung anzeigen** aus der **Rechnungsdetails** Seite im mobilen Gerät zu navigieren, müssen Sie zuvor aus der **Rechnungsdetails** Seite der **Buchhaltung anzeigen** Seite bereitstellen. Wir legen die Navigationsverknüpfung ein, indem wir Zusatzlogik zu JavaScript verwenden.
+> [!NOTE] 
+> Die mobile Seite **Buchhaltung anzeigen** ist derzeit mit keiner mobilen Seiten verknüpft, die wir bisher entworfen haben. Da der Benutzer in der Lage sein soll, die Seite **Buchhaltung anzeigen** aus der **Rechnungsdetails** Seite im mobilen Gerät zu navigieren, müssen Sie zuvor aus der **Rechnungsdetails** Seite der **Buchhaltung anzeigen** Seite bereitstellen. Wir legen die Navigationsverknüpfung ein, indem wir Zusatzlogik zu JavaScript verwenden.
 
 1.  Öffnen Sie die JS-Datei, die Sie eben erstellt haben, und fügen Sie die Positionen hinzu, die im folgenden Code hervorgehoben werden. Dieser Code mach zwei Dinge:
     1.  Er wird sichergestellt, dass Benutzer nicht direkt über der Arbeitsbereich **Buchhaltung anzeigen** Seite Navigation können.
     2.  Er wird ein Navigationssteuerelement der **Rechnungsdetails** Seite der **Buchhaltung anzeigen** Seite ein.
 
 > [!NOTE] 
-> Beachten Sie, das den Namen der Seiten und anderen Steuerelemente im JS-Code müssen identisch dem Arbeitsbereich sein.
+> Die Namen der Seiten und andere Steuerelemente im Code müssen mit den Namen im Arbeitsbereich identisch sein.
 
-1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Hide controls that need to be present, but not visible                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });                // Hide pages not applicable for root navigation                metadataService.hideNavigation('View-accounting');                //Link to view accounting                metadataService.addLink('Invoice-details', 'View-accounting', 'View-accounting-nav-control', 'View accounting', true);            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Show/hide workflow actions based on workflow step                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
+    function main(metadataService, dataService, cacheService, $q) {
+           return {
+               appInit: function (appMetadata) {
+                   // Hide controls that need to be present, but not visible
+                   metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });
+                 metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });
+               metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });
+                   // Hide pages not applicable for root navigation
+                   metadataService.hideNavigation('View-accounting');
+                   //Link to view accounting
+                   metadataService.addLink('Invoice-details', 'View-accounting', 'View-accounting-nav-control', 'View accounting', true);
+               },
+               pageInit: function (pageMetadata, params) {
+        if (pageMetadata.Name == 'Invoice-details') {
+                       // Show/hide workflow actions based on workflow step
+                       metadataService.configureAction('Accept', { visible: true });
+                       metadataService.configureAction('Approve', { visible: true });
+                       metadataService.configureAction('Reject', { visible: true });
+                       metadataService.configureAction('Delegate', { visible: true });
+                       metadataService.configureAction('Request-change', { visible: true });
+                       metadataService.configureAction('Recall', { visible: true });
+                       metadataService.configureAction('Complete', { visible: true });
+                       metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -352,7 +410,7 @@ Die Anforderungen für dieses Szenarios bestätigen, dass nur Verteilungen auf P
 
 ### <a name="validation"></a>Prüfung
 
-In Ihrem mobilen Gerät Öffnen der Zeit-App und Verbinden mit Ihr Dynamics 365 for Operations Instanz angezeigt. Überprüfen Sie, ob Sie in das Unternehmen ein, in dem Kreditorenrechnungen Ihnen zur Prüfung zugewiesen werden. Sie sollten in der Lage sein, die folgenden Aktionen ausführen:
+Öffnen Sie auf Ihrem mobilen Gerät die App, und stellen Sie eine Verbindung mit Ihrer Finance and Operations-Instanz her. Überprüfen Sie, ob Sie in das Unternehmen ein, in dem Kreditorenrechnungen Ihnen zur Prüfung zugewiesen werden. Sie sollten in der Lage sein, die folgenden Aktionen ausführen:
 
 -   Siehe den **Meine Genehmigungen** Arbeitsbereich.
 -   Öffnen Sie den **Meine Genehmigungen** Arbeitsbereich und sehen Sie die **Meine Kreditorenrechnungen** Seite.
@@ -421,9 +479,9 @@ In Ihrem mobilen Gerät Öffnen der Zeit-App und Verbinden mit Ihr Dynamics 365 
 </tbody>
 </table>
 
-### <a name="exercise"></a>Übung
+### <a name="next-steps"></a>Nächste Schritte
 
-Die folgenden Abweichungen für Szenario 1, basierend auf den Anforderungen für Szenario 2. Verwenden Sie diesen Bereich als Übung, die Sie für das Ausgeben zu Berichtszwecken abschließen können.
+Die folgenden Abweichungen für Szenario 1, basierend auf den Anforderungen für Szenario 2. Sie können in diesem Bereich verwenden, um Ihre Erfahrung mit der mobilen App zu verbessern.
 
 1.  Da weitere Rechnungspositionen in Szenario 2 erwartet werden, können folgende Änderungen zum Entwurf, die Benutzererfahrung im mobilen Gerät zu optimieren:
     1.  Anstelle der Betrachtungsrechnungspositionen auf Detailseite der (z.B. in Szenario 1), Benutzer festlegen, dass Positionen einer separaten mobilen Seite anzeigen.
@@ -432,8 +490,6 @@ Die folgenden Abweichungen für Szenario 1, basierend auf den Anforderungen für
 
 2.  Da mehrere ein Betragsart für die Verteilungen in Szenario 2 (Mehrwertsteuer, Belastungen usw.) erwartet wird, ist es hilfreich, die Beschreibung des Betrags Typ anzeigen. (Wir haben diese Informationen in Szenario 1 ausgelassen.)
 
-## <a name="conclusion"></a>Schlussfolgerung
-Die mobile Plattform und die Anwendungsfunktionen lassen Sie entwerfen mobile Szenarien, die für eine Benutzerbasis in einer Organisation optimiert werden. Anhand der Beispiele, die in diesem Thema zur Verfügung stehen, können Sie versuchen verschiedene andere Abweichungen und Erfahrungen erstellen, die eine bestimmte Anforderungen erfüllen.
 
 
 

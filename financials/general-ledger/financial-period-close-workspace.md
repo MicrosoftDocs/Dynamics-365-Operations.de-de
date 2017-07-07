@@ -3,7 +3,7 @@ title: Finanzperiodenabschluss-Arbeitsbereich
 description: "Dieser Artikel enthält eine Übersicht über den Finanzperiodenabschlussarbeitsbereiche und der zugeordneten Konfiguration."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 788b0af30eb750cad8f958ecc4c33cf989b2a417
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -65,7 +65,7 @@ Die Option **Aufgabe abgeschlossen** muss manuell aktiviert werden, nachdem die 
 Sie können alle Aufgaben der laufenden und der vorherigen Periode auf der Seite **Alle Aufgaben der Finanzperiode schließe**, anzeigen. Diese Listenseite eignet zur historischen Analyse Ihres Abschlussprozess, da sie die Informationen zum geplanten Fälligkeitsdatum, dem tatsächlichen Abschlussdatum und die Person beinhaltet, die die Aufgabe abgeschlossen hat. Nun können Sie die Informationen auf dieser Listenseite in Microsoft Excel zum Melden und Überwachen der Zwecke einfacher exportieren.
 
 ## <a name="financial-period-close-configuration-page"></a>Seite der Finanzperiodenabschluss-Konfiguration
-Bevor Sie den Arbeitsbereich **Finanzperiodenabschluss** verwenden können, müssen Sie den Prozess in Microsoft Dynamics 365 for Operations konfigurieren, indem Sie  die Seite **Finanzperiodenkonfiguration abschließen** verwenden. (Klicken Sie auf **Hauptbuch** &gt; **Periode schließen** &gt; **Finanzperiodenkonfiguration abschließe**.)
+Bevor Sie den Arbeitsbereich **Finanzperiodenabschluss** verwenden können, müssen Sie den Prozess in Microsoft Dynamics 365 for Finance and Operations konfigurieren, indem Sie die Seite **Finanzperiodenkonfiguration abschließen** verwenden. (Klicken Sie auf **Hauptbuch** &gt; **Periode schließen** &gt; **Finanzperiodenkonfiguration abschließe**.)
 
 ### <a name="resources"></a>Ressourcen
 
@@ -90,7 +90,7 @@ Sie verwenden Sie eine Vorlage für den Finanzabschluss, um Aufgaben zu definier
 
 Sie können eine Aufgabe in der Vorlage einem oder mehreren Unternehmen, in denen diese Aufgabe gilt. Wenn eine andere Person zugewiesen wird, um diesen Arbeitseinsatz in jedem Unternehmen ausführen, finden Sie es möglicherweise hilfreich, mehrere Aufgaben für den gleichen Arbeitseinsatz zu erstellen. Erstellen Sie eine Aufgabe für jedes Unternehmen. 
 
-Die Menüoptiib **Aufgabenlink** wird dem Aufgabenarbeitseinsatz zugeordnet und kann verwendet werden, um in direktem Bezug zur zugeordneten Seite über den Aufgabenlink im Arbeitsbereich zu wechseln. Beispielsweise kann eine Abschlussaufgabe den Währungsbewertungsprozess für Kreditoren ausführen, der mit der Seite der zugeordneten ** **Neubewertung der Fremdwährung** in Microsoft Dynamics 365 for Operations verknüpft werden kann. Sie können auch eine externe URL verknüpfen. 
+Die Menüoptiib **Aufgabenlink** wird dem Aufgabenarbeitseinsatz zugeordnet und kann verwendet werden, um in direktem Bezug zur zugeordneten Seite über den Aufgabenlink im Arbeitsbereich zu wechseln. Beispielsweise kann eine Abschlussaufgabe den Währungsbewertungsprozess für Kreditoren ausführen, der mit der Seite der zugeordneten **Neubewertung der Fremdwährung** in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition verknüpft werden kann. Sie können auch eine externe URL verknüpfen. 
 
 > [!Tip] Wenn Sie einen bestimmten Management Reporter-Bericht mit einer Finanzperiodenabschlussaufgabe verknüpfen möchten, können Sie die Berichts-URL verwenden. Um auf die Berichts-URL zuzugreifen, öffnen Sie den Bericht im Berichts-Designer, und klicken Sie auf  **Datei** &gt; **Bericht anzeigen** , um den Bericht in einem Webbrowser zu öffnen. Sie können die URL dann in die Adressleiste des Browsers kopieren und in das Feld **Aufgabenlink**-**URL** einfügen. 
 

@@ -3,14 +3,14 @@ title: Rahmenbestellungen
 description: "Dieser Artikel gibt Informationen zu Kaufverträge. Ein Kaufvertrag ist ein Vertrag, der eine Organisation bindet, eine angegebene Menge oder einen Betrag zu kaufen, indem sie mehrere Bestellungen tätigt. Für diese Zusage erhält der Käufer Sonderpreise und Rabatte."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c100bd34725c67710d0f473a001c73705600ba79
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 4266ba2b19c3bd31a10301dd2290cd4b4fa53bdb
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -48,7 +48,7 @@ Jede Position in einem Kaufvertrag drückt eine Zusage für den Kauf eines Artik
 -   **Wertzusage** - Sie kaufen eine einem bestimmten Währungsbetrag entsprechende Menge eines oder mehrerer Produkte in einer Beschaffungskategorie.
 
 ## <a name="pricing-terms-for-purchase-agreements"></a>Preisgestaltungsbedingungen für Kaufverträge
-Die Preisgestaltungsbedingungen können je nach Typ der Zusage variieren. Die Preisgestaltungsbedingungen von Rahmenbestellungen überschreiben alle anderen Preisgestaltungsbedingungen, die für Handelsvereinbarungen festgelegt wurden. In der folgenden Tabelle werden die preisbezogene Felder beschrieben, die von jedem Zusagetyp betroffen sind. Felder, die **Ja**enthalten, können in einer Auftragsposition aktualisiert werden.
+Die Preisgestaltungsbedingungen können je nach Typ der Zusage variieren. Die Preisgestaltungsbedingungen von Rahmenbestellungen überschreiben alle anderen Preisgestaltungsbedingungen, die für Handelsvereinbarungen festgelegt wurden. In der folgenden Tabelle werden die preisbezogene Felder beschrieben, die von jedem Zusagetyp betroffen sind. Felder, die **Ja** enthalten, können in einer Auftragsposition aktualisiert werden.
 
 | Zusagetyp                   | Preis je Einheit | Preiseinheit | Rabatt in Prozent | Skontobetrag |
 |-----------------------------------|------------|------------|------------------|----------------------|
@@ -80,7 +80,7 @@ Wenn Sie einen Kaufvertrag bestätigen, wird die aktuelle Version des Kauftrags 
 Wenn Sie eine Bestellung erstellen, können Sie einen Kaufvertrag für sie übernehmen. Informationen aus den Bedingungen für die Vereinbarung, wie die Zahlungsbedingungen, Lieferbedingungen und Lieferadresse, werden dann in den Kopf der Bestellung kopiert. Wenn die Bestellung eine oder mehrere Auftragspositionen für Produkte und Kategorien enthält, die im Kaufvertrag angegeben sind, werden die Preise und Rabatte aus dem Kaufvertrag für diese Positionen verwendet. Der Betrag oder die Menge in der Auftragsposition trägt zur Erfüllung der Zusage im Kaufvertrag bei. Die gleiche Bestellung kann sowohl Positionen enthalten, die mit keinem Kaufvertrag verknüpft sind, als auch Positionen, für die eine Zusage in einem Kaufvertrag besteht.  
 
 Sie können einen Kaufvertrag auswählen, wenn Sie eine Bestellung erstellen. Sie können einen Kaufvertrag nicht aktivieren, nachdem die Bestellung erstellt wurde.  
-In einigen Fällen, in denen Kaufverträge indirekt erstellt werden, können Sie steuern, ob Microsoft Dynamics 365 for Operations automatisch nach gültigen Kaufverträgen sucht. Dies kann beispielsweise ratsam sein, wenn Sie geplante Einkaufsbestellungen automatisch umwandeln oder Bestellungen erstellen, die auf Aufträgen basieren.
+In einigen Fällen, in denen Kaufverträge indirekt erstellt werden, können Sie steuern, ob Finance and Operations automatisch nach gültigen Kaufverträgen sucht. Dies kann beispielsweise ratsam sein, wenn Sie geplante Einkaufsbestellungen automatisch umwandeln oder Bestellungen erstellen, die auf Aufträgen basieren.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Kaufverträge und Intercompany-Handel
 Intercompany-Handelsbeziehungen können zwischen Kreditorenkonten und Debitorenkonten erstellt werden, die zu verschiedenen juristischen Personen gehören. Wenn ein Auftrag oder eine Bestellung für eine der Parteien erstellt wird, wird eine Intercompany-Auftragskette erstellt. In der Auftragskette werden der Auftrag und die Bestellung in den entsprechenden juristischen Personen erstellt.  

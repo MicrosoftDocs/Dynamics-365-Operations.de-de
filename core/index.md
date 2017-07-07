@@ -114,7 +114,7 @@ Mithilfe dieser Dokumentation kann Dynamics 365 for Finance and Operations in I
 <p><a href="../retail/call-center-functionality">Callcenter</p>
 <p><a href="../retail/define-maintain-retail-channels">Kanaleinrichtung und -verwaltung</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS und Cloud POS</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page">Einzelhandelsentwickler und Verwaltung</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page">Retail-Entwicklung und -Verwaltung</p>
 
 </td>
 </tr>

@@ -3,14 +3,14 @@ title: Bestellungen erstellen
 description: Dieser Artikel beschreibt den Prozess und die Optionen bei der manuellen Erstellung einer Bestellung.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c6c6b40d8934d1059c54678df8d4fc6530db1b24
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: fbf5337ac41ceae6e911c056db5226c8ed1cefb0
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="create-purchase-orders"></a>Bestellungen erstellen
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Dieser Artikel beschreibt den Prozess und die Optionen bei der manuellen Erstellung einer Bestellung.
@@ -70,7 +72,7 @@ Manchmal möchten Sie die bestellte Menge teilen, so dass verschiedene Teile des
 Kosten können automatisch zu PO-Positionen hinzugefügt werden wenn automatische Zuschläge für den Kreditor oder Kreditorenzuschlagsgruppe und für den Artikel oder die Artikelzuschlagsgruppe eingerichtet wurden. Normalerweise werden Zuschläge jedoch manuell zum jeweiligen Auftrag hinzugefügt. Um eine Belastung hinzuzufügen, öffnen die Seite **Belastungen verwalten**, indem Sie die Aktion **Belastungen verwalten** im Menü **Finanzdaten** in der Ansicht **Positionen** nutzen. Der Vorteil beim Hinzufügen von Belastungen auf Bestellebene ist, dass die Belastung als Lagerkosten zugeordnet werden kann. Um Belastungscodes für Produktkosten einzurichten, verwenden Sie die Belastungsoption **Artikel**. Derartige Belastungstypen müssen vor der Genehmigung der Bestellung aus dem Bestellungskopf zugeordnet werden. Sie möchten z. B. Belastungen basierend auf der Menge in jeder Position zuweisen. Die Belastungskategorie wirkt sich auch darauf aus, wie die Belastungen berücksichtigt werden. Feste Belastungen legen beispielsweise einen festen Betrag fest. Prozentuale Belastungen werden als Prozentsatz des Nettobetrags für die Auftragsposition berechnet. POs können einer Auslastung zugewiesen werden. Die Auslastung kann eine Schätzung der erwarteten Ausgaben für die Transportkosten enthalten. Sie können diese Ausgabe von der Auslastung zurück zu den Bestellungspotionen zuweisen.
 
 ## <a name="purchase-order-actions"></a>Bestellungsaktionen
-Nachdem Sie den Kopf und die Positionen zur Bestellung hinzugefügt haben, müssen Sie oft zusätzliche Schritte ausführen, bevor die Bestellung bestätigt werden kann. Da so viele Optionen verfügbar sind, ist es unter Umständen hilfreich, die entsprechende Menüelement über [Aktion suchen](/dynamics365/operations/get-started/action-search) zu suchen.  
+Nachdem Sie den Kopf und die Positionen zur Bestellung hinzugefügt haben, müssen Sie oft zusätzliche Schritte ausführen, bevor die Bestellung bestätigt werden kann. Da so viele Optionen verfügbar sind, ist es unter Umständen hilfreich, die entsprechende Menüelement über [Aktion suchen](/dynamics365/unified-operations/fin-and-ops/get-started/action-search) zu suchen.  
 
 Sie können Produkte in der Bestellung so konfigurieren, dass sie zusätzliche Artikel haben. Zusätzliche Artikel sind Produkte, die zusammen mit anderen Produkten erworben werden müssen oder erworben werden können. Zusätzliche Produkte können kostenlos als zugehörige Produkte hinzufügt werden. Möglicherweise können Sie entscheiden, ob sie dem Auftrag hinzufügen oder nicht hinzugefügt werden. Sie können die zusätzlichen Artikel nach jeder Auftragsposition die hinzugefügt wird überprüfen. Möglicherweise ist es jedoch einfacher, die zusätzlichen Artikel für alle Auftragspositionen über die Seite **Zusätzliche Artikel** zu überprüfen. Diese können sie über den Aktionsbereich öffnen.  
 
@@ -94,7 +96,7 @@ Möglicherweise müssen Sie den Abschluss einer Bestellung verzögern. Beispiels
 
 [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 
-[Überblick der Kreditorenrechnungen](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Überblick über Kreditorenrechnungen](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

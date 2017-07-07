@@ -3,7 +3,7 @@ title: "Kaufverträge"
 description: "Dieser Artikel gibt Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d356017ac0413b92ff9734800231ba1979dac242
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 4eaa4fef65fb310524f25d052aeefb58c5f20fe4
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -102,14 +102,14 @@ Wenn Sie einen Auftrag gegen einen Kaufvertrag erstellt haben (freigegeben), kö
 | Menge                                                          | Wenn die von Ihnen angegebene Menge die Menge überschreitet, die in einer Kaufvertragsposition mit aktiviertem Kontrollkästchen **Maximum wird erzwungen** angegeben ist, wird ein Dialogfeld zum Speichern der geänderten Menge angezeigt: Klicken Sie auf **Ja**, um die Verknüpfung mit der Kaufvertragsposition zu entfernen und den Preis neu zu berechnen. Klicken Sie auf **Nein**, um die Verknüpfung mit der Kaufvertragsposition ohne erneute Berechnung des Preises zu entfernen.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Rückgabe eines Artikels, der aus einem Kaufvertrag bestellt wurde
-Wenn ein Kunde einen Produkt zurückgibt, das durch einen Kaufvertrag bestellt wurde, kann Microsoft Dynamics 365 for Operations die zugehörige Kaufvertragszusage suchen und automatisch aktualisieren, um die Änderung in der Menge oder im Betrag widerzuspiegeln. Wenn Sie eine Rücklieferung basierend auf dem Originalauftrag erstellen, die mit einem Kaufvertrag verknüpft ist, richten Sie eine Beziehung zwischen der Kaufvertragszusage, der Auftragsposition und der Rücklieferungsrechnung ein.  
+Wenn ein Kunde einen Produkt zurückgibt, das durch einen Kaufvertrag bestellt wurde, kann Microsoft Dynamics 365 for Finance and Operations die zugehörige Kaufvertragszusage suchen und automatisch aktualisieren, um die Änderung in der Menge oder im Betrag widerzuspiegeln. Wenn Sie eine Rücklieferung basierend auf dem Originalauftrag erstellen, die mit einem Kaufvertrag verknüpft ist, richten Sie eine Beziehung zwischen der Kaufvertragszusage, der Auftragsposition und der Rücklieferungsrechnung ein.  
 
 Wenn Sie die Menge der zurückgegebenen Artikel nicht aus der Kaufvertragszusage abgezogen werden soll, können Sie das **Verknüpfung entfernen**-Steuerelements auf der Seite **Rücklieferung** verwenden, um die Verknüpfung zwischen der Rücklieferung und dem Kaufvertragszusage zu entfernen. Wenn Sie den Link später neu einrichten müssen, klicken Sie auf **Verknüpfung erstellen**.  
 
 **Hinweis:** Eine Rücklieferung kann mit nur einem Kaufvertrag verknüpft werden. Wenn Ihre Debitoren mehr als ein Produkt retourniert, das von mehr als einem Kaufvertrag bestellt wurde, müssen Sie eine neue Rücklieferung für jedes Produkt erstellen und eine Verbindung zum entsprechenden Rahmenbestellung erstellen.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatische Suche nach Kaufverträgen
-In bestimmten Situationen, in den Aufträge indirekt erstellt werden (beispielsweise, wenn Sie eine Gutschrift oder Intercompany-Aufträge erstellen), können Sie steuern, ob Microsoft Dynamics 365 for Operations automatisch nach gültigen Kaufverträgen sucht.
+In bestimmten Situationen, in den Aufträge indirekt erstellt werden (beispielsweise, wenn Sie eine Gutschrift oder Intercompany-Aufträge erstellen), können Sie steuern, ob Microsoft Dynamics 365 for Finance and Operations automatisch nach gültigen Kaufverträgen sucht.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Finanzdimensionen in Kaufverträgen
 Sie können Finanzdimensionen in Dokumentüberschriften oder einzelne Positionen eines Kaufvertrags kopieren. Sie können die Dimensionen bei einem Vereinbarungskopf oder -Vereinbarungsposition jederzeit ändern. In diesem Fall werden die Dimensionen automatisch auf den Freigabenkopf oder die Freigabenposition von Freigabeaufträgen kopiert.

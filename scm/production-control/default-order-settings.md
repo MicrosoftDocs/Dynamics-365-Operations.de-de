@@ -1,16 +1,16 @@
 ---
 title: "Standardauftragseinstellungen für Dimensionen und Produktvarianten"
-description: "Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode. Standardauftragseinstellungen werden verwendet, wenn Bestellungen, Aufträge, Umlagerungsaufträge, Bestandsjournale erstellt werden, sowie durch den Produktprogrammplan für die Generierung geplanter Aufträge. Standardauftragseinstellungen können artikelspezifisch, standortpsezifsch, produktvariantenspezfisch oder produktdimensionsspezifisch sein."
+description: "Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventItemOrderSetup
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
@@ -19,22 +19,24 @@ ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: db2398e85d5f49cece4f406b2244cf072cce083d
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: b4e8ff363a98f8dfc90af0133807373566531568
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardauftragseinstellungen für Dimensionen und Produktvarianten
+# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
-Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode. Standardauftragseinstellungen werden verwendet, wenn Bestellungen, Aufträge, Umlagerungsaufträge, Bestandsjournale erstellt werden, sowie durch den Produktprogrammplan für die Generierung geplanter Aufträge. Standardauftragseinstellungen können artikelspezifisch, standortpsezifsch, produktvariantenspezfisch oder produktdimensionsspezifisch sein.
 
-Sie können die Standardauftragseinstellungen auf der Seite **Standardauftragseinstellungen** definieren. Um diese Seite zu öffnen, wechseln Sie zu **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte** &gt; wählen Sie ein freigegebenes Produkt aus im Aktionsbereich &gt; **Plan** oder ****Bestand verwalten**** &gt; **Auftragseinstellungen** &gt; S**tandardauftragseinstellungen.**.
+Standardauftragseinstellungen in Microsoft Dynamics 365 for Finance and Operations, Enterpise Edition definieren die Site und den Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode. Standardauftragseinstellungen werden verwendet, wenn Bestellungen, Aufträge, Umlagerungsaufträge, Bestandsjournale erstellt werden, sowie durch den Produktprogrammplan für die Generierung geplanter Aufträge. Standardauftragseinstellungen können artikelspezifisch, standortpsezifsch, produktvariantenspezfisch oder produktdimensionsspezifisch sein.
+
+Sie können die Standardauftragseinstellungen auf der Seite **Standardauftragseinstellungen** definieren. Um diese Seite zu öffnen, wechseln Sie zu **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte** &gt; wählen Sie ein freigegebenes Produkt aus im Aktionsbereich &gt; **Plan** oder ****Bestand verwalten**** &gt; **Auftragseinstellungen** &gt; S **tandardauftragseinstellungen.**.
 
 ## <a name="default-order-settings"></a>Standardauftragseinstellungen
 Es gibt drei Typen von Standardauftragseinstellungen für Einkäufe, Verkäufe und den Bestand. Die Standardauftragseinstellungen für Einkäufe werden verwendet, wenn Folgendes erstellt wird:
@@ -74,7 +76,7 @@ Die Standardlagerauftragseinstellungen gelten auch beim Erstellen von:
 -   Geplante Produktionsaufträge
 
 ## <a name="full-definition-of-a-released-product"></a>Vollständige Definition eines freigegebenen Produkts
-Wenn Sie eine Buchung erstellen, müssen Sie die vollständigen Definition eines gemeinsamen Produkts auf der Position angeben, bevor Dynamics 365 for Operations versucht, die Standardauftragseinstellungen zu identifizieren. Die vollständige Definition des freigegebenen Produkts bedeutet, dass alle aktiven Artikelnummer und Produktdimensionen, beispielsweise Konfiguration, Größe, Farbe, Stil und für die Buchung angegeben werden. Wenn Sie beispielsweise manuell eine Bestellposition für eine freigegebene Produktvariante erstellen, müssen Sie alle erforderlichen Produktdimensionen angeben, bevor der Standort, Lagerort, die Menge sowie die Lieferzeit standardmäßig in der Auftragsposition angezeigt werden. 
+Wenn Sie eine Buchung erstellen, müssen Sie die vollständigen Definition eines gemeinsamen Produkts auf der Position angeben, bevor Finance and Operations versucht, die Standardauftragseinstellungen zu identifizieren. Die vollständige Definition des freigegebenen Produkts bedeutet, dass alle aktiven Artikelnummer und Produktdimensionen, beispielsweise Konfiguration, Größe, Farbe, Stil und für die Buchung angegeben werden. Wenn Sie beispielsweise manuell eine Bestellposition für eine freigegebene Produktvariante erstellen, müssen Sie alle erforderlichen Produktdimensionen angeben, bevor der Standort, Lagerort, die Menge sowie die Lieferzeit standardmäßig in der Auftragsposition angezeigt werden. 
 
 Nicht alle Standardauftrags-Einstellungsparameter werden angewendet, wenn Auftrags- oder Erfassungspositionen erstellt werden. Mengen und Lieferzeiten werden nur standardmäßig angezeigt, sofern zutreffend. Wenn beispielsweise eine Erfassungsposition gezählt wird, werden nur der Standort und der Lagerort standardmäßig angezeigt, wenn die Position erstellt wird. Es wird keine Standardmenge ober Überprüfung auf Mehrfachen und Minimums ausgeführt, wenn die Position erstellt oder die Erfassung gebucht wird. 
 
@@ -91,13 +93,13 @@ Die Standardauftrags-Einstellungsregeln haben Ränge. Je höher der Rang, desto 
 
 ### <a name="default-order-settings-for-released-products"></a>Standardmäßige Auftragseinstellungen für freigegebene Produkte
 
-Für eindeutig identifizierbare, freigegebene Produkte können Sie allgemeine Auftragseinstellungen oder standortspezifische Auftragseinstellungen definieren. Die allgemeinen Auftragseinstellungen haben immer den Rang null. Wenn Sie neue Verkaufs-, Einkaufs- und Lagerauftragseinstellungen zusammen zur gleichen Zeit einrichten, ist es zu empfehlen, dass Sie die **Detailansicht** auf der Seite **Standardauftragseinstellungen**verwenden. Um zur Detailansicht zu wechseln, gehen Sie zum Aktionsbereich **Optionen** &gt; **Seitenoptionen** &gt; **Ansicht wechseln** &gt; **Detailansicht**.
+Für eindeutig identifizierbare, freigegebene Produkte können Sie allgemeine Auftragseinstellungen oder standortspezifische Auftragseinstellungen definieren. Die allgemeinen Auftragseinstellungen haben immer den Rang null. Wenn Sie neue Verkaufs-, Einkaufs- und Lagerauftragseinstellungen zusammen zur gleichen Zeit einrichten, ist es zu empfehlen, dass Sie die **Detailansicht** auf der Seite **Standardauftragseinstellungen** verwenden. Um zur Detailansicht zu wechseln, gehen Sie zum Aktionsbereich **Optionen** &gt; **Seitenoptionen** &gt; **Ansicht wechseln** &gt; **Detailansicht**.
 
 ### <a name="site-specific-order-settings"></a>Standortspezifische Auftragseinstellungen
 
 Um standortspezifische Auftragseinstellungen zu erstellen, klicken Sie auf **Neu**. Füllen Sie in der **Detailansicht** den Standort im Feld **Standort** unter &gt; **Einstellungen gültig für** aus. Füllen Sie in der **Rasteransicht** den Standort in der Spalte **Standort** aus. Die neue Regel ruft automatisch einen neuen Rangwert ab, der über null liegt. Sie so viele standortspezifische Regeln wie erforderlich erstellen und Sie können alle standortspezifischen Regeln demselben Rang zuweisen, um zu modellieren, dass sie gleich wichtig sind. 
 
-Wenn Sie sich in der **Detailansicht** befinden, können Sie die Übersicht der Regeln nicht erhalten, die für den Artikel erstellt wurden. Schalten Sie die Schaltfläche **Liste anzeigen/ausblenden** ein und aus, um Übersichtsinformationen anzuzeigen. Wenn eine Auftragsposition eines beliebigen Typs erstellt wird und für sie kein Standort bereitgestellt ist, sucht Dynamics 365 for Operations nach einer Regel, bei der kein Standort angegeben ist. Dies kann dazu beitragen, einen Standardstandort in der Auftragsposition zu verwenden. Dieser Standort wird dann verwendet, um nach einer standortspezifischen Regel zu suchen, bei der möglicherweise ein Standardlagerort festgelegt wurde. Dieser Lagerort wird auf die Auftragsposition angewendet.
+Wenn Sie sich in der **Detailansicht** befinden, können Sie die Übersicht der Regeln nicht erhalten, die für den Artikel erstellt wurden. Schalten Sie die Schaltfläche **Liste anzeigen/ausblenden** ein und aus, um Übersichtsinformationen anzuzeigen. Wenn eine Auftragsposition eines beliebigen Typs erstellt wird und für sie kein Standort bereitgestellt ist, sucht Finance and Operations nach einer Regel, bei der kein Standort angegeben ist. Dies kann dazu beitragen, einen Standardstandort in der Auftragsposition zu verwenden. Dieser Standort wird dann verwendet, um nach einer standortspezifischen Regel zu suchen, bei der möglicherweise ein Standardlagerort festgelegt wurde. Dieser Lagerort wird auf die Auftragsposition angewendet.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Spezifische Auftragseinstellungen für Produktdimension
 
@@ -134,7 +136,7 @@ Sie können die folgenden standardmäßigen Auftragseinstellungsregeln erstellen
 
 Die zwei Regeln für die Beendigung der alten Überarbeitungen haben dieselbe Bewertung, was bedeutet, dass sie gleich wichtig sind. Alle beide haben einen höheren Rang als die Regel für Konfiguration C1, was bedeutet, dass sie den Vorrang vor der Regel für Konfiguration C1 haben. 
 
-In diesem Beispiel wird die Anforderung für den Rang erklärt. Wenn eine Bestellung für Konfiguration C1 und Überprüfung R2 erstellt wird, wären bei fehlendem Rang die beiden Regeln, die für R2 und C1 definiert werden, mehrdeutig. Um die Mehrdeutigkeit aufzuheben, durchsucht Dynamics 365 for Operations die Regeln in absteigender Rangreihenfolge und wendet die erste anwendbare Regel an. Im aktuellen Beispiel, wenn eine Bestellposition für Konfiguration C1 und Überarbeitung R2 erstellt wird, erhält der Benutzer eine Warnmeldung, dass der Artikel gesperrt ist und dass dies durch den Überarbeitungswert verursacht wird. Wenn die Regel für die Konfiguration größer wäre, als diejenige für die Überarbeitung, dann wäre die Erstellung einer Bestellposition für Konfiguration C1 und Überarbeitung R2 erfolgreich gewesen, und der Benutzer hätte keine Meldung "Artikel gesperrt" erhalten. 
+In diesem Beispiel wird die Anforderung für den Rang erklärt. Wenn eine Bestellung für Konfiguration C1 und Überprüfung R2 erstellt wird, wären bei fehlendem Rang die beiden Regeln, die für R2 und C1 definiert werden, mehrdeutig. Um die Mehrdeutigkeit aufzuheben, durchsucht Finance and Operations die Regeln in absteigender Rangreihenfolge und wendet die erste anwendbare Regel an. Im aktuellen Beispiel, wenn eine Bestellposition für Konfiguration C1 und Überarbeitung R2 erstellt wird, erhält der Benutzer eine Warnmeldung, dass der Artikel gesperrt ist und dass dies durch den Überarbeitungswert verursacht wird. Wenn die Regel für die Konfiguration größer wäre, als diejenige für die Überarbeitung, dann wäre die Erstellung einer Bestellposition für Konfiguration C1 und Überarbeitung R2 erfolgreich gewesen, und der Benutzer hätte keine Meldung "Artikel gesperrt" erhalten. 
 
 Berücksichtigen Sie die folgenden standardmäßigen Auftragseinstellungsregeln.
 
@@ -150,9 +152,9 @@ Als allgemeiner Leitfaden erhalten spezifische Regeln und Regeln für Dimensione
 
 Die Regel mit Rang null dient als Sicherheitsnetz. Wenn keine anderen Regeln betroffen sind, dann werden die Standardauftragseinstellungen von Regel null verwendet. 
 
-Da die Rangnummer so wichtig ist, befinden sich im Aktionsbereich **Standardauftragseinstellungen**Funktionen, um eine Regel nach oben oder unten zu verschieben und um die Regeln neu zu nummerieren, sodass sie immer in Abstufungen von 10 sind. 
+Da die Rangnummer so wichtig ist, befinden sich im Aktionsbereich **Standardauftragseinstellungen** Funktionen, um eine Regel nach oben oder unten zu verschieben und um die Regeln neu zu nummerieren, sodass sie immer in Abstufungen von 10 sind. 
 
-Die Anzahl von Regeln, die für ein freigegebenes Produkt erstellt werden, sind möglicherweise viele. Um einen besseren Eindruck davon zu erhalten, was jede Regel überschreibt und warum es notwendig ist, empfehlen wir Ihnen, die **Rasteransicht** auf der Seite**Standardauftragseinstellungen** zu verwenden. Sie können die Rasteransicht aktivieren, indem Sie zum Aktionsbereich **Optionen** &gt; **Seitenoptionen**&gt; **Ansicht wechseln** &gt; **Rasteransicht** wechseln. Die Anzahl der im Raster angezeigten Spalten könnte ziemlich bedeutsam sein, insbesondere für die Registerkarten "Vertrieb" und "Bestand". Um die Anzahl der im Raster angezeigten Spalten einzuschränken, können Gruppen von Spalten ausgeblendet oder angezeigt werden, indem die Schaltflächen im Menü**Standardauftragseinstellungen** &gt; **Spaltenanzeige** verwendet werden.
+Die Anzahl von Regeln, die für ein freigegebenes Produkt erstellt werden, sind möglicherweise viele. Um einen besseren Eindruck davon zu erhalten, was jede Regel überschreibt und warum es notwendig ist, empfehlen wir Ihnen, die **Rasteransicht** auf der Seite **Standardauftragseinstellungen** zu verwenden. Sie können die Rasteransicht aktivieren, indem Sie zum Aktionsbereich **Optionen** &gt; **Seitenoptionen**&gt; **Ansicht wechseln** &gt; **Rasteransicht** wechseln. Die Anzahl der im Raster angezeigten Spalten könnte ziemlich bedeutsam sein, insbesondere für die Registerkarten "Vertrieb" und "Bestand". Um die Anzahl der im Raster angezeigten Spalten einzuschränken, können Gruppen von Spalten ausgeblendet oder angezeigt werden, indem die Schaltflächen im Menü **Standardauftragseinstellungen** &gt; **Spaltenanzeige** verwendet werden.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Spezifische Auftragseinstellungen für freigegebene Produktvariante
 

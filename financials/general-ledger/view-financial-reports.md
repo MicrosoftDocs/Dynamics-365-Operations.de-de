@@ -1,27 +1,27 @@
 ---
 title: Finanzberichte anzeigen
-description: "Dieser Artikel beschreibt, wie Finanzberichte in Microsoft Dynamics AX angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern."
-author: RobinARH
+description: "In diesem Artikel wird beschrieben, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, untersucht und angezeigt werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern."
+author: kweekley
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
-ms.author: aolson
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b02dbc0181c08611674cdf571075c20d78cebdc
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 102031174417a33b12c32f6b8185556b8c4701e5
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt, wie Finanzberichte in Microsoft Dynamics AX angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
+In diesem Artikel wird beschrieben, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, untersucht und angezeigt werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
 
 <a name="financial-reporting-overview"></a>Überblick über die Finanzberichterstellung
 ----------------------------
@@ -64,7 +64,7 @@ Sie können einen Finanzbericht aktualisieren, sodass die aktuellen Daten für d
 Nachdem Sie einen Finanzbericht aktualisiert haben, können Sie ihn veröffentlichen. Andere Personen in der Organisation können ihn dann anzeigen. Um einen Bericht zu veröffentlichen, klicken Sie im Aktivitätsbereich auf **Veröffentlichen**.
 
 ## <a name="display-a-financial-report-in-a-different-currency"></a>Anzeigen eines Finanzberichts in einer anderen Währung
-Ein Finanzbericht kann jederzeit in jeder Währung angezeigt werden. Um einen Bericht in einer anderen Währung anzuzeigen, klicken Sie im Aktivitätsbereich auf **Währung** und wählen Sie dann eine Währung aus. Der Bericht wird in diese Währung konvertiert, und die Ergebnisse werden angezeigt. Alle Währungscodes oder Symbole, die im Rahmen des Berichtsentwurf enthalten sind, werden aktualisiert, um die neue Währung widerzuspiegeln. Die Währungen, die in der Liste angezeigt werden, sind die in Microsoft Dynamics AX konfigurierten Berichtswährungen.
+Ein Finanzbericht kann jederzeit in jeder Währung angezeigt werden. Um einen Bericht in einer anderen Währung anzuzeigen, klicken Sie im Aktivitätsbereich auf **Währung** und wählen Sie dann eine Währung aus. Der Bericht wird in diese Währung konvertiert, und die Ergebnisse werden angezeigt. Alle Währungscodes oder Symbole, die im Rahmen des Berichtsentwurf enthalten sind, werden aktualisiert, um die neue Währung widerzuspiegeln. Die Währungen, die in der Liste angezeigt werden, sind die in Finance and Operations konfigurierten Berichtswährungen.
 
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Anzeigen einer zusammengefassten Ansicht des Finanzberichts
 Ein Finanzbericht kann Detailpositionen und zusammengefasste Positionen enthalten. Detailpositionen sind Positionen, die Hauptkonten oder Dimensionen enthalten. Zusammengefasste Positionen sind Beschreibungs-, Gesamt- und Berechnungspositionen. Um nur die zusammengefassten Positionen eines Berichts anzuzeigen, klicken Sie auf **Anzeigen** und dann auf **Nur zusammengefasste Positionen**. Der Bericht wird reduziert, und es werden nur die zusammengefassten Positionen angezeigt. Um die Detailpositionen zusammen mit den zusammengefassten Positionen anzuzeigen, klicken Sie auf **Anzeigen** und dann erneut auf **Nur zusammengefasste Positionen**.
@@ -88,7 +88,8 @@ Um einen Finanzbericht zu exportieren, klicken Sie im Aktivitätsbereich auf **E
 <a name="see-also"></a>Siehe auch
 --------
 
-[Finanzberichterstellung in Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+[Finanzberichterstellung in Microsoft Dynamics AX](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro)
+
 
 
 

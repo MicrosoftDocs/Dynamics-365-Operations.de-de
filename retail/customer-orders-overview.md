@@ -3,25 +3,27 @@ title: "Anzeigen der Kundenaufträge"
 description: "Dieses Thema enthält Informationen zu Bestellungen in n Retail Modern POS (MPOS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e96579437ab59e99268263a51fc589eaacb98cc1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 89e79c7227e05eec539d9bb142b8f41de092f01b
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -44,10 +46,10 @@ Einzelhändler können auch Debitorenaufträge verwenden, um verlorenen Verkäuf
 ## <a name="set-up-customer-orders"></a>Debitorenbestellungen einrichten
 Nachfolgend sind einige der Parameter, die auf der Seite e **Einzelhandelsparameter** eingerichtet sind, um zu definiueren, wie Debitorenaufträge erfüllt werden:
 
--   **Standardanzahlung in Prozent** –  Geben Sie den Betrag, den der Debitor bezahlen muss ein als eine Anzahlung, bevor ein Auftrag bestätigt werden kann. Der Standardanzahlungsbetrag wird als Prozentsatz der Summe des Auftragswerts berechnet. Abhängig von Rechten kann ein Shopmitarbeiter den Betrag überschreiben, indem er**Anzahlung überschreiben verwendet**. 
+-   **Standardanzahlung in Prozent** –  Geben Sie den Betrag, den der Debitor bezahlen muss ein als eine Anzahlung, bevor ein Auftrag bestätigt werden kann. Der Standardanzahlungsbetrag wird als Prozentsatz der Summe des Auftragswerts berechnet. Abhängig von Rechten kann ein Shopmitarbeiter den Betrag überschreiben, indem er **Anzahlung überschreiben verwendet**. 
 -   **Annullierungsgebührprozentsatz** – Wenn ein Zuschlag angewendet wird, wenn ein Kundenauftrag zurückgezogen wurde, geben Sie den Betrag dieses Zuschlages an.
--   **Annullierungsgebührcode** – Wenn ein Zuschlag angewendet wird, wenn ein Kundenauftrag zurückgezogen wird, wird diese Belastung auf einen Zuschlagscode im Auftrag von Microsoft Dynamics AX angezeigt. Verwenden Sie diesen Parameter, um den Annullierungsgebührcode zu definieren.
--   **Versandkostencode** ** - Einzelhändler können eine Zuschlagsgebühr für den Versand von Waren an einen Debitor erheben. Der Betrag wird auf Versandkosten dieser unter einem Zuschlagscode im Auftrag von Dynamics AX angezeigt. Verwenden Sie diesen Parameter, um den Versandkostencode den Versandkosten im Kundenauftrag zuzuordnen.
+-   **Annullierungsgebührcode** – Wenn ein Zuschlag angewendet wird, wenn ein Kundenauftrag zurückgezogen wird, wird diese Belastung auf einen Zuschlagscode im Auftrag angezeigt. Verwenden Sie diesen Parameter, um den Annullierungsgebührcode zu definieren.
+-   **Versandkostencode** ** - Einzelhändler können eine Zuschlagsgebühr für den Versand von Waren an einen Debitor erheben. Der Betrag der Versandkosten wird unter einem Zuschlagscode im Auftrag angezeigt. Verwenden Sie diesen Parameter, um den Versandkostencode den Versandkosten im Kundenauftrag zuzuordnen.
 -   **Rückerstattungsversandkosten**  – Gibt an, ob Versandkosten, die einem Kundenauftrag zugeordnet werden, rückvergütbar sind.
 -   **Maximaler Betrag ohne Genehmigung** – wenn Versandkosten rückvergütbar sind, geben den Höchstbetrag der Versandkostenrückerstattungen über Rücklieferungen anzeigen. Wenn dieser Betrag überschritten wird, ist eine Manageraußerkraftsetzung erforderlich, um die Rückerstattung fortzusetzen. Um die folgenden Szenarien zu gewährleisten, kann eine Gebührenerstattung der Versandkosten den Betrag  überschreiten, der ursprünglich geleistet wurde:
     -   Zuschläge werden auf Ebene Auftragsüberschrift angewendet und wenn eine beliebige Menge einer Produktgruppe zurückgegeben wird, kann die Gebührenerstattung für die maximalen Versandkosten, die für die Produkte und die Menge zugelassen ist nicht für alle Einzelhandelskunden gleich angewendet werden.
@@ -65,23 +67,23 @@ Nachfolgend sind einige der Parameter, die auf der Seite e **Einzelhandelsparame
 
 ### <a name="edit-an-existing-customer-order"></a>Bearbeiten eines bestehenden Kundenauftrags.
 
-1.  Auf der Startseite klicken Sie auf**Bestellung suchen**. 
+1.  Auf der Startseite klicken Sie auf **Bestellung suchen**. 
 2.  Suchen und wählen Sie den zu bearbeitenden Auftrag aus. Klicken Sie unten auf der Seite auf **Bearbeiten**.
 
 ### <a name="pick-up-an-order"></a>Einen Auftrag entnehmen
 
-1.  Auf der Startseite klicken Sie auf**Bestellung suchen**. 
+1.  Auf der Startseite klicken Sie auf **Bestellung suchen**. 
 2.  Wählen Sie den Auftrag aus, der gewählt werden soll. Klicken Sie unten auf der Seite auf **Bearbeiten und verpacken**.
 3.  Klicken Sie auf **Abholen**.
 
 ### <a name="cancel-an-order"></a>Stornieren einer Auftragsposition
 
-1.  Auf der Startseite klicken Sie auf**Bestellung suchen**. 
+1.  Auf der Startseite klicken Sie auf **Bestellung suchen**. 
 2.  Wählen Sie den Auftrag aus, der storniert werden soll. Klicken Sie unten auf der Seite auf **Abbrechen**.
 
 #### <a name="create-a-return-order"></a>Erstellen einer Rücklieferung
 
-1.  Auf der Startseite klicken Sie auf**Bestellung suchen**. 
+1.  Auf der Startseite klicken Sie auf **Bestellung suchen**. 
 2.  Wählen Sie den Auftrag aus, zu dem Sie zurückkehren möchten, wählen Sie die Rechnung für den Auftrag aus, und wählen Sie dann die Produktgruppe aus, um zu den Waren zurückzukehren.
 3.  Klicken Sie unten auf der Seite auf **Zur Bestellung zurückkehren**.
 
@@ -90,10 +92,10 @@ Debitorenaufträge können von den Verkaufsstellen (POS)-Kunden entweder im sync
 
 ### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Aktivieren Sie Kundenaufträge, um diese im asynchronen Modus zu erstellen
 
-1.  Klicken Sie in Dynamics AX auf **Einzelhandel und Handel** &gt; **Kanaleinstellung** &gt; **POS-Einstellung** &gt; **POS-Profil** &gt; **Funktionsprofile**.
+1.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profil** &gt; **Funktionsprofile**.
 2.  Wählen Sie im Inforegister **Allgemein** unter **Kundenauftrag in asynchronem Modus erstellen** die Option **Ja** aus.
 
-Wenn die Option **Kundenauftrag in asynchronem Modus** auf **Ja** gesetzt ist, werden Debitorenaufträge immer in asynchronen Modus erstellt, selbst wenn Retail Transaction Service (RTS) verfügbar ist. Wenn Sie diesen Option auf **Nein** setzen, werden Debitorenaufträge immer im Modus synchronen mithilfe von RTS erstellt. Wenn Debitorenaufträge asynchronen erstellt werden, werden sie in Dynamics AX mittels Pulles (P)-Aufträge abgerufen. Die entsprechenden Aufträge werden in Dynamics AX erstellt, wenn **Aufträge synchronisieren** entweder manuell oder mithilfe von Chargenaufträgen ausgeführt wird.
+Wenn die Option **Kundenauftrag in asynchronem Modus** auf **Ja** gesetzt ist, werden Debitorenaufträge immer in asynchronen Modus erstellt, selbst wenn Retail Transaction Service (RTS) verfügbar ist. Wenn Sie diesen Option auf **Nein** setzen, werden Debitorenaufträge immer im Modus synchronen mithilfe von RTS erstellt. Wenn Debitorenaufträge asynchronen erstellt werden, werden sie in Retail mittels Pulles (P)-Aufträgen abgerufen. Die entsprechenden Aufträge werden in Retail erstellt, wenn **Aufträge synchronisieren** entweder manuell oder mithilfe von Chargenaufträgen ausgeführt wird.
 
 <a name="see-also"></a>Siehe auch
 --------

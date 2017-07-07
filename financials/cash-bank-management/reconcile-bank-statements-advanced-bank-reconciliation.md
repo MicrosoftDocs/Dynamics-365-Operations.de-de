@@ -1,15 +1,15 @@
 ---
 title: Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
-description: "Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Operations automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess."
+description: "Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 81368294164ca4ca1915d73f8f5622e61f5d1fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: eb7fd01874b08417933ddf575c7d6ff866b4e6f8
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Operations automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess.  
+Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess.  
 
 <a name="import-an-electronic-bank-statement"></a>Import eines elektronischen Bankauszugs
 -----------------------------------
@@ -44,7 +44,7 @@ Sie können einen Bankauszug hochladen, der Informationen für entweder ein einz
 
 Wenn irgendwelche Auszüge in der elektronischen Datei mithilfe der identifizierenden Felder keinem Bankkonto zugeordnet werden können, werden sie nicht importiert. Allerdings können andere Auszüge in der Datei noch importiert werden. Der Benutzer erhält dann eine Nachricht, die besagt, dass der Import von Bankauszügen für bestimmte Bankkonten nicht erfolgreich war. Beachten Sie, dass der Benutzer, der die Bankauszugsdatei importiert, Zugriff auf eine juristische Person haben muss, um Auszüge für die Bankkonten dieser juristischen Person zu importieren. 
 
-Sie können mit einer ZIP-Datei mehrere Auszugsdateien in Microsoft Dynamics 365 for Operations in einem einzigen Prozess hochladen. Um mehrere Bankauszugsdateien für mehrere Konten zu importieren, fassen Sie alle Bankauszugsdateien in einer Zip-Datei zusammen. Im Dialogfeld **Bankauszüge importieren** legen Sie die Option **Bankauszug für mehrere Bankkonten in allen juristischen Personen importieren** auf **Ja** fest. Klicken Sie auf **Durchsuchen**, um die Zip-Datei mit den zugeordneten Bankauszugdateien auszuwählen. Klicken Sie dann auf **Hochladen**. Beim Importprozess wird die ZIP-Datei erkannt und jeder Auszug hochgeladen, der in ihr enthalten ist, unabhängig von der juristischen Person des Bankkontos. 
+Sie können mit einer ZIP-Datei mehrere Auszugsdateien in Finance and Operations in einem einzigen Prozess hochladen. Um mehrere Bankauszugsdateien für mehrere Konten zu importieren, fassen Sie alle Bankauszugsdateien in einer Zip-Datei zusammen. Im Dialogfeld **Bankauszüge importieren** legen Sie die Option **Bankauszug für mehrere Bankkonten in allen juristischen Personen importieren** auf **Ja** fest. Klicken Sie auf **Durchsuchen**, um die Zip-Datei mit den zugeordneten Bankauszugdateien auszuwählen. Klicken Sie dann auf **Hochladen**. Beim Importprozess wird die ZIP-Datei erkannt und jeder Auszug hochgeladen, der in ihr enthalten ist, unabhängig von der juristischen Person des Bankkontos. 
 
 Es ist eine **Nach Import abstimmen**-Option verfügbar. Wenn Sie diese Option auf **Ja** festlegen, überprüft das System automatisch den Bankauszug, erstellt eine neue Bankabstimmung und ein Arbeitsblatt und führt den standardmäßigen Abgleichsregelsatz beim Upload des Bankauszugs aus. Diese Funktionalität automatisiert den Prozess bis zu manuellen Abstimmung von Buchungen.
 
@@ -76,7 +76,7 @@ Es gibt drei Möglichkeiten zum Abgleich oder zur Abstimmung von Bankauszugsbuch
 
 -   Gleichen Sie die Transaktionen mit Operations-Banktransaktionen ab.
 -   Zuordnen der Transaktionen mit einer Rückbuchungsbankauszugsbuchung.
--   Markieren Sie die Transaktionen als **Neu**, sodass sie später als Bankbuchung in Dynamics 365 for Operations gebucht werden können.
+-   Markieren Sie die Transaktionen als **Neu**, sodass sie später als Bankbuchung in Finance and Operations  gebucht werden können.
 
 Um manuell Transaktionen zuzuordnen, wählen Sie die Transaktionen im Raster **Bankauszugbuchungen** aus, wählen Sie die entsprechenden Buchungen im Raster **Operations-Bankbuchungen** aus, und klicken Sie dann auf **Zuordnen**. Die ausgewählten Buchungen werden von den oberen Rastern für nicht zugeordnete Buchungen in die unteren Raster für zugeordnete Buchungen verschoben. Außerdem werden die Gesamtbeträge für zugeordnete und nicht zugeordnete Buchungen aktualisiert. Sie können Buchungen 1:1, 1:n und n:n zuordnen. Abgleiche müssen den Regeln für zulässigen Datumsabweichungen und Buchungstypen entsprechen. Diese Regeln werden auf der Seite **Bargeld- und Bankverwaltungsparameter** eingerichtet.
 
@@ -86,7 +86,7 @@ Rückbuchungen für Bankauszugsbuchungen werden über das Abstimmungsarbeitsblat
 
 Zurückgebuchte Operations-Bankbuchungen müssen über die Seite **Operations-Bankbuchungen** abgestimmt werden. Sie können zwei Operations-Bankbuchungen gemeinsamen abstimmten, wenn bei den Dokumenten Bankkonto, Dokumenttyp und Zahlungsreferenz übereinstimmen und wenn sich die Beträge miteinander ausgleichen. Sie können auch einen einzelnen stornierten Scheck abstimmen, um die Anzeige dieser Transaktionen auf dem Abstimmungsarbeitsblatt zu verhindern. 
 
-Wenn es neue von der Bank initiierte Transaktionen gibt (z. B. Zinsen, Gebühren und Abgaben), die noch nicht in Dynamics 365 for Operations enthalten sind, können Sie diese in einer Erfassung hinzufügen, die der ausgewählten Bankauszugsabstimmung zugeordnet ist. Wählen Sie eine Bankauszugsbuchung im Raster **Bankauszugsbuchung** für nicht abgeglichene Transaktionen und klicken Sie dann auf **Als neu markieren**. Der Status der Transaktion wird auf **Neu** festgelegt, und die Buchung wird zum Raster **Bankauszugsbuchungen** für zugeordnete Transaktionen verschoben. Als **Neu** markierte Transaktionen buchen Sie später über die Seite **Bankauszug**. 
+Wenn es neue von der Bank initiierte Transaktionen gibt (z. B. Zinsen, Gebühren und Abgaben), die noch nicht in Finance and Operations enthalten sind, können Sie diese in einer Erfassung hinzufügen, die der ausgewählten Bankauszugsabstimmung zugeordnet ist. Wählen Sie eine Bankauszugsbuchung im Raster **Bankauszugsbuchung** für nicht abgeglichene Transaktionen und klicken Sie dann auf **Als neu markieren**. Der Status der Transaktion wird auf **Neu** festgelegt, und die Buchung wird zum Raster **Bankauszugsbuchungen** für zugeordnete Transaktionen verschoben. Als **Neu** markierte Transaktionen buchen Sie später über die Seite **Bankauszug**. 
 
 Sie können den Abgleich bei falsch zugeordneten Transaktionen aufheben. Wählen Sie die zugeordnete Bankauszugsbuchung, und klicken Sie dann auf **Abgleich aufheben**. Alle zugeordneten Transaktionen werden in die oberen Raster für nicht abgeglichene Transaktionen zurück verschoben, und die Gesamtbeträge werden aktualisiert. 
 

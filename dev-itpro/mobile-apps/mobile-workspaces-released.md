@@ -1,67 +1,74 @@
 ---
-title: "Mobile Arbeitsbereiche, die vor kurzem für Dynamics 365 for Operations mobile App freigegeben wurden"
-description: "Dies Themen führt die mobilen Arbeitsbereiche auf, die vor kurzem für Microsoft Dynamics 365 for Operatons mobile App freigegeben wurden."
+title: Vor kurzem freigegebene mobile Arbeitsbereiche
+description: "Dieses Thema führt die mobilen Arbeitsbereiche auf, die vor kurzem freigegeben wurden."
 author: sericks007
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
-ms.custom: 271724
-ms.assetid: 4b639ee1-5ee3-4389-8fbb-3c65150ba8b2
+ms.search.scope: Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: sericks
-ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7d9b5870d8b1c64e3d444900253b06bbb76b6feb
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: e5633d1db9593e2e0cb8bb4703de76766ab706b0
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="mobile-workspaces-recently-released-for-the-dynamics-365-for-operations-mobile-app"></a>Mobile Arbeitsbereiche, die vor kurzem für Dynamics 365 for Operations mobile App freigegeben wurden
+# <a name="mobile-workspaces-recently-released"></a>Vor kurzem freigegebene mobile Arbeitsbereiche
 
 [!include[banner](../includes/banner.md)]
 
 
 
-Dies Themen führt die mobilen Arbeitsbereiche auf, die vor kurzem für Microsoft Dynamics 365 for Operatons mobile App freigegeben wurden.
+Dieses Thema führt die mobilen Arbeitsbereiche auf, die vor kurzem für die mobile App von Dynamics 365 for Unified Operations freigegeben wurden.
 
-<a name="mobile-workspaces-that-were-released-in-april-2017"></a>Mobile Arbeitsbereiche, die freigegeben im April 2017 freigegeben wurden
---------------------------------------------------
+> [!NOTE]
+> Die mobile App wurde zuvor als *Microsoft Dynamics 365 for Finance and Operations* bezeichnet.
+
+
+## <a name="new-mobile-workspaces-released-in-june-2017"></a>Neue mobile Arbeitsbereiche freigegeben im Juni 2017
+
+| Mobiler Arbeitsbereich     | Beschreibung   | Weitere Informationen   |
+|----------------------|---------------|--------------|
+|Unternehmensverzeichnis| Ermöglicht Benutzern das Anzeigen von Kontakten und Mitarbeitern in der Organisation.| [Unternehmensverzeichnis für mobilen Arbeitsbereich](company-directory-mobile-workspace.md)|    
+|Mein Team| Ermöglicht Benutzern, direkte Mitarbeiter und erweitertes Personal anzuzeigen und Lob an Personen innerhalb der Mitarbeitergruppe senden.| [Mobiler Arbeitsbereich für mein Team](manager-self-service-mobile-workspace.md)|     
+|Rechnungsgenehmigungen| Stellt eine Liste von Rechnungen bereit, die Ihnen über den Kreditorenrechnungskopfworkflowprozess zugewiesen wurden.|[Mobiler Arbeitsbereich für Rechnungsgenehmigung](invoice-approval-mobile-workspace.md)    |    
+
+## <a name="new-mobile-workspaces-released-in-april-2017"></a>Neue mobile Arbeitsbereiche freigegeben im Juni 2017
 
 | Mobiler Arbeitsbereich   | Beschreibung                                                                                                                                                                                                      | Weitere Informationen                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Spesenverwaltung | Dieser Arbeitsbereich ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können. Der mobile Arbeitsbereich lässt Benutzer schnell eine Ausgabenposition erstellen, indem er einen einzigen Zugriff verwendet. | [Mobiler Arbeitsbereich für Spesenverwaltung](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace) |
+| Spesenverwaltung | Ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können. Der mobile Arbeitsbereich lässt Benutzer schnell eine Ausgabenposition erstellen, indem er einen einzigen Zugriff verwendet. | [Mobiler Arbeitsbereich für Spesenverwaltung](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace) |
+| Bestellungsgenehmigung | Ermöglicht Benutzern Bestellungen anzuzeigen und mit Aktivitäten wie Genehmigung der Ablehnung auf diese zu reagieren. | [Mobiler Arbeitsbereich für Bestellungsgenehmigung](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace) |
 
-## <a name="mobile-workspaces-that-were-released-in-march-2017"></a>Mobile Arbeitsbereiche, die im März 2017 freigegeben wurden
+## <a name="new-mobile-workspaces-released-in-march-2017"></a>Neue mobile Arbeitsbereiche freigegeben im März 2017
+
 | Mobiler Arbeitsbereich   | Beschreibung                                                                                   | Weitere Informationen                                                                                                                                                                              |
 |--------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Arbeitszeitnachweise für Projekt | Dieser Verknüpfung ermöglicht Benutzern Zeit für ein Projekt einzugeben und zu speichern, indem sie das mobile Gerät verwenden. | [Projektzeiterfassungs, mobiler Arbeitsbereich](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace) |
+| Projektzeiteintrag | Ermöglicht Benutzern Zeiten für ein Projekt einzugeben und zu speichern, indem sie das mobile Gerät verwenden. | [Mobiler Arbeitsbereich für Projektzeiterfassung](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace) |
 
-## <a name="mobile-workspaces-that-were-released-in-january-2017"></a>Mobile Arbeitsbereiche, die im Januar 2017 freigegeben wurden
+## <a name="new-mobile-workspaces-released-in-january-2017"></a>Neue mobile Arbeitsbereiche freigegeben im Januar 2017
+
 | Mobiler Arbeitsbereich     | Beschreibung                                                                                                                                                                         | Weitere Informationen                                                                                                                                                        |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kostensteuerung     | Mit dem mobilen Arbeitsbereich Leistung der Kostensteuerung können Kostenstellenmanager die Kostenstellenleistung jederzeit und überall finden.                                                                                               | [Mobiler Arbeitsbereich für die Kostensteuerung](/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
-| Verfügbarer Lagerbestand    | Erhalten Sie Einblicke in reservierten und verfügbaren Bestand, jederzeit und überall.                                                                                                    | [Mobiler Arbeitsbereich für Lagerbestand](/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace)       |
-| Aufträge         | Sie sind jederzeit auf dem neuesten Stand hinsichtlich Ihrer Aufträge, jederzeit und überall.                                                                                                                          | [Aufträge, mobiler Arbeitsbereich](/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace)                 |
-| Kreditor-Kooperation | Mit dem mobilen Arbeitsbereich für die Kreditor-Kooperation können Ihre Kreditoren hinsichtlich der Bestellungen auf dem Laufenden bleiben, die ihnen zur Genehmigung gesendet wurden und Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen. | [Mobiler Arbeitsbereich für Kreditorenzusammenarbeit](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
+| Kostensteuerung     | Ermöglicht Kostenstellenmanagern, die Kostenstellenleistung jederzeit und überall anzuzeigen.                                                                                               | [Mobiler Arbeitsbereich für die Kostensteuerung](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
+| Verfügbarer Lagerbestand    | Ermöglicht Benutzern Einblicke in reservierten und verfügbaren Bestand, jederzeit und überall.                                                                                                    | [Mobiler Arbeitsbereich für Lagerbestand](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)       |
+| Aufträge         | Ermöglicht Benutzern, jederzeit und überall auf dem neuesten Stand hinsichtlich Ihrer Aufträge zu sein.                                                                                                                          | [Aufträge, mobiler Arbeitsbereich](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)                 |
+| Kreditor-Kooperation | Ermöglicht Ihren Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen. | [Mobiler Arbeitsbereich für Kreditorenzusammenarbeit](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
-## <a name="mobile-workspace-functionality-that-was-released-in-december-2016"></a>Mobile Arbeitsbereichfunktionen, die im Dezember 2016 freigegeben wurden
+## <a name="new-mobile-workspace-functionality-released-in-december-2016"></a>Neue Funktionen des mobilen Arbeitsbereichs, Dezember 2016
+
 | Mobiler Arbeitsbereich        | Beschreibung                                                                    | Weitere Informationen                                                                                                            |
 |-------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Kreditorenrechnungsgenehmigung | Informieren Sie, wie Sie einen mobilen Arbeitsbereich für die Kreditorenrechnungsgenehmigung entwerfen und erstellen. | [Mobile Rechnungsgenehmigungen](/dynamics365/operations/financials/accounts-payable/mobile-invoice-approvals) |
-
-
-
-
-
+| Kreditorenrechnungsgenehmigung | Informieren Sie, wie Sie einen mobilen Arbeitsbereich für die Kreditorenrechnungsgenehmigung entwerfen und erstellen. | [Mobile Rechnungsgenehmigungen](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals) |
 
 

@@ -1,16 +1,16 @@
 ---
 title: "Elektronische Signatur (Überblick)"
-description: "Dieser Artikel enthält einen Überblick über elektronische Signaturen und erläutert ihre Verwendung in Microsoft Dynamics 365 for Operations."
+description: "Dieser Artikel enthält einen Überblick über elektronische Signaturen und erläutert ihre Verwendung in Microsoft Dynamics 365 for Finance and Operations."
 author: maertenm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13611
 ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5adf45769657e4da81af00b2114a2c1a98655207
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 0cebd30a560ff033efab89c2055827b62cf31576
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,15 +31,15 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält einen Überblick über elektronische Signaturen und erläutert ihre Verwendung in Microsoft Dynamics 365 for Operations.
+Dieser Artikel enthält einen Überblick über elektronische Signaturen und erläutert ihre Verwendung in Microsoft Dynamics 365 for Finance and Operations.
 
 <a name="what-is-an-electronic-signature"></a>Was ist eine elektronische Signatur?
 --------------------------------
 
-Eine elektronische Signatur bestätigt die Identität einer Person, die im Begriff ist, einen Datenverarbeitungsprozess zu starten oder zu genehmigen. In einigen Branchen ist eine elektronische Signatur ebenso rechtskräftig wie eine handschriftliche Signatur. Elektronische Signaturen sind eine Konformitätsanforderung für verschiedene behördlich regulierte Branchen. Dazu zählen z. B. die Arzneimittel-, Lebensmittel- und Getränke-, Luftfahrt- und Rüstungsindustrie. Sie sind auch erforderlich, um die Konformität mit den Bestimmungen in 21 CFR Teil 11 der Bundesbehörde zur Überwachung von Nahrungs- und Arzneimitteln in den USA (Food and Drug Administration, FDA) zu gewährleisten. **Hinweis:** Eine elektronische Signatur ist nicht das Gleiche wie eine digitale Signatur. Eine elektronische Signatur ist einfach ein Ersatz für eine handschriftliche Signatur, während eine digitale Signatur zusätzliche Sicherheitsmerkmale bietet. Mithilfe einer digitalen Signatur kann festgestellt werden, ob die Daten durch einen anderen Benutzer oder Prozess manipuliert wurden. Außerdem kann eine digitale Signatur überprüft werden, und diese Überprüfung kann nicht vom Besitzer des Zertifikats angefochten werden, das zum Signieren der Daten verwendet wurde. Wie nachfolgend erläutert, verfügen elektronische Signaturen in Microsoft Dynamics 365 for Operations über die integrierte Funktion für digitale Signaturen.
+Eine elektronische Signatur bestätigt die Identität einer Person, die im Begriff ist, einen Datenverarbeitungsprozess zu starten oder zu genehmigen. In einigen Branchen ist eine elektronische Signatur ebenso rechtskräftig wie eine handschriftliche Signatur. Elektronische Signaturen sind eine Konformitätsanforderung für verschiedene behördlich regulierte Branchen. Dazu zählen z. B. die Arzneimittel-, Lebensmittel- und Getränke-, Luftfahrt- und Rüstungsindustrie. Sie sind auch erforderlich, um die Konformität mit den Bestimmungen in 21 CFR Teil 11 der Bundesbehörde zur Überwachung von Nahrungs- und Arzneimitteln in den USA (Food and Drug Administration, FDA) zu gewährleisten. **Hinweis:** Eine elektronische Signatur ist nicht das Gleiche wie eine digitale Signatur. Eine elektronische Signatur ist einfach ein Ersatz für eine handschriftliche Signatur, während eine digitale Signatur zusätzliche Sicherheitsmerkmale bietet. Mithilfe einer digitalen Signatur kann festgestellt werden, ob die Daten durch einen anderen Benutzer oder Prozess manipuliert wurden. Außerdem kann eine digitale Signatur überprüft werden, und diese Überprüfung kann nicht vom Besitzer des Zertifikats angefochten werden, das zum Signieren der Daten verwendet wurde. Wie nachfolgend erläutert, verfügen elektronische Signaturen in Microsoft Dynamics 365 for Finance and Operations über die integrierte Funktion für digitale Signaturen.
 
-## <a name="electronic-signatures-in-dynamics-365-for-operations"></a>Elektronische Signaturen in Microsoft Dynamics 365 for Operations
-In Microsoft Dynamics 365 for Operations können Sie elektronische Signaturen für wichtige Geschäftsprozesse verwenden. Einige Prozesse verfügen über integrierte Funktionen der elektronischen Signatur. Darüber hinaus können Sie benutzerdefinierte Signaturanforderungen für Datenbanktabellen und -felder erstellen. Elektronische Signaturen verfügen über die integrierte Funktion für digitale Signatur. Jeder Benutzer, der Dokumente signiert, muss über ein gültiges kryptografisches Zertifikat verfügen. Beim Signieren eines Dokuments wird der diesem Zertifikat zugeordnete private Schlüssel geprüft. Dynamics 365 for Operations zeichnet Daten der elektronischen Signatur in einem Protokoll auf, um Informationen für ein Audit-Trail bereitzustellen. Um elektronische Signaturen einzurichten, siehe [Einrichten elektronischer Signaturen (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektronische Signaturen in Microsoft Dynamics 365 for Finance and Operations
+In Finance and Operations können Sie elektronische Signaturen für wichtige Geschäftsprozesse verwenden. Einige Prozesse verfügen über integrierte Funktionen der elektronischen Signatur. Darüber hinaus können Sie benutzerdefinierte Signaturanforderungen für Datenbanktabellen und -felder erstellen. Elektronische Signaturen verfügen über die integrierte Funktion für digitale Signatur. Jeder Benutzer, der Dokumente signiert, muss über ein gültiges kryptografisches Zertifikat verfügen. Beim Signieren eines Dokuments wird der diesem Zertifikat zugeordnete private Schlüssel geprüft. Finance and Operations zeichnet Daten der elektronischen Signatur in einem Protokoll auf, um Informationen für ein Audit-Trail bereitzustellen. Um elektronische Signaturen einzurichten, siehe [Einrichten elektronischer Signaturen (Aufgabenleitfaden)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Benutzer, die Zugriff auf elektronische Signaturen benötigen
 Drei Arten von Benutzern brauchen in der Regel Sicherheitszugriff auf elektronische Signaturen: Administratoren für elektronische Signaturen, Signaturgeber und Wirtschaftsprüfer für elektronische Signaturen.
@@ -62,7 +62,7 @@ Der Wirtschaftsprüfer für elektronische Signatur überprüft das Datenbankprot
 ## <a name="signing-documents-electronically"></a>Elektronisches Signieren von Dokumenten
 ### <a name="get-a-certificate"></a>Erhalten eines Zertifikats
 
-Vor dem elektronischen Signieren von Dokumenten in Dynamics 365 for Operations muss ein Zertifikat angefordert werden. **Hinweis:** Dynamics 365 for Operations verwendet Microsoft SQL Server-Funktionen zum Erstellen von Zertifikaten und Aktivieren elektronischer Signaturen. Es ist keine zusätzliche Infrastruktur für Zertifikate oder öffentliche Schlüssel (PKI) erforderlich. Beim Anfordern eines Zertifikats werden für Sie ein öffentlicher Schlüssel und ein privater Schlüssel in der Dynamics 365 for Operations Datenbank erstellt. Der private Schlüssel wird mit einem nur Ihnen bekannten Kennwort verschlüsselt. Beim elektronischen Signieren eines Dokuments wird Ihre Identität überprüft, wenn Sie das Kennwort eingeben. Um ein Zertifikat anzufordern, klicken Sie **Zertifikat abrufen** auf der Registerkarte **Konten** der Seite **Optionen**. Sie müssen das Kennwort, das Sie für Signaturen verwenden möchten, eingeben und bestätigen. Mithilfe des Kennworts wird Ihr privater Schlüssel geschützt und die Verwendung Ihres Zertifikats autorisiert. Dieses Kennwort wird nicht in der Datenbank gespeichert und ist für keine andere Person verfügbar, auch nicht für den Dynamics 365 for Operations Administrator. Wenn Sie das mit dem Zertifikat verknüpfte Kennwort vergessen haben, muss das Zertifikat zurückgesetzt werden. Wenn Sie das Zertifikat zurücksetzen, wirkt sich dies nicht auf mit dem vorherigen Zertifikat signierte Dokumente aus. Um das Zertifikat zurückzusetzen, klicken Sie **Zertifikat zurücksetzen** auf der Seite **Optionen**.
+Vor dem elektronischen Signieren von Dokumenten in Finance and Operations muss ein Zertifikat angefordert werden. **Hinweis:** Finance and Operations verwendet Microsoft SQL Server-Funktionen zum Erstellen von Zertifikaten und Aktivieren elektronischer Signaturen. Es ist keine zusätzliche Infrastruktur für Zertifikate oder öffentliche Schlüssel (PKI) erforderlich. Beim Anfordern eines Zertifikats werden für Sie ein öffentlicher Schlüssel und ein privater Schlüssel in der Finance and Operations-Datenbank erstellt. Der private Schlüssel wird mit einem nur Ihnen bekannten Kennwort verschlüsselt. Beim elektronischen Signieren eines Dokuments wird Ihre Identität überprüft, wenn Sie das Kennwort eingeben. Um ein Zertifikat anzufordern, klicken Sie **Zertifikat abrufen** auf der Registerkarte **Konten** der Seite **Optionen**. Sie müssen das Kennwort, das Sie für Signaturen verwenden möchten, eingeben und bestätigen. Mithilfe des Kennworts wird Ihr privater Schlüssel geschützt und die Verwendung Ihres Zertifikats autorisiert. Dieses Kennwort wird nicht in der Datenbank gespeichert und ist für keine andere Person verfügbar, auch nicht für den Finance and Operations-Administrator. Wenn Sie das mit dem Zertifikat verknüpfte Kennwort vergessen haben, muss das Zertifikat zurückgesetzt werden. Wenn Sie das Zertifikat zurücksetzen, wirkt sich dies nicht auf mit dem vorherigen Zertifikat signierte Dokumente aus. Um das Zertifikat zurückzusetzen, klicken Sie **Zertifikat zurücksetzen** auf der Seite **Optionen**.
 
 ### <a name="sign-a-document-electronically"></a>Elektronisches Signieren eines Dokuments
 
@@ -77,7 +77,7 @@ Die Seite **Dokument signieren** wird angezeigt, wenn Sie eine Änderung vornehm
 
 ### <a name="sign-for-another-users-changes"></a>Signieren für die Änderungen eines anderen Benutzers
 
-Gelegentlich kann es sinnvoll sein, dass ein Benutzer für die Änderungen eines anderen Benutzers signiert. So kann es beispielsweise vorkommen, dass ein Supervisor Änderungen abzeichnen muss, die ein Mitarbeiter an einer Stückliste (BOM) vornimmt. Mit diesem Verfahren legen Sie einen Dynamics 365 for Operations Benutzer als Signaturgeber für einen anderen Benutzer fest. **Hinweis:** Wenn ein Benutzer die Änderungen eines anderen Benutzers abzeichnet, muss die Signatur auf der Arbeitsstation des Benutzers bereitgestellt werden, der die Änderung vorgenommen hat. Der Benutzer kann die Änderung erst speichern, wenn die Signatur vorliegt. Gehen Sie folgendermaßen vor, um einen Genehmiger festzulegen.
+Gelegentlich kann es sinnvoll sein, dass ein Benutzer für die Änderungen eines anderen Benutzers signiert. So kann es beispielsweise vorkommen, dass ein Supervisor Änderungen abzeichnen muss, die ein Mitarbeiter an einer Stückliste (BOM) vornimmt. Mit diesem Verfahren legen Sie einen Finance and Operations-Benutzer als Signaturgeber für einen anderen Benutzer fest. **Hinweis:** Wenn ein Benutzer die Änderungen eines anderen Benutzers abzeichnet, muss die Signatur auf der Arbeitsstation des Benutzers bereitgestellt werden, der die Änderung vorgenommen hat. Der Benutzer kann die Änderung erst speichern, wenn die Signatur vorliegt. Gehen Sie folgendermaßen vor, um einen Genehmiger festzulegen.
 
 1.  Klicken Sie auf der Seite **Optionen**, auf der Registerkarte **Konten** auf **Genehmigende Person festlegen**.
 2.  Wählen Sie im Feld **Benutzerkennung für genehmigende Person** die Kennung des Benutzers aus, der die Änderungen eines anderen Benutzers abzeichnen muss.

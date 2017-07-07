@@ -3,13 +3,13 @@ title: Retouren
 description: "Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdec28ba1fe3650f59520cb42a71497c54a7d93e
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 
 Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
 
-Debitoren können Rückgabeartikel unterschiedlichen Gründen vornehmen. So kann ein Artikel fehlerhaft sein, oder er entsprach möglicherweise nicht den Erwartungen des Debitors. Die Rücklieferungen starten wenn Debitoren eine Artikelrückgabe anfordern. Nachdem die Anforderung des Debitors erhalten ist, wird eine Rücklieferung im Microsoft Dynamics 365 for Operations erstellt.
+Debitoren können Rückgabeartikel unterschiedlichen Gründen vornehmen. So kann ein Artikel fehlerhaft sein, oder er entsprach möglicherweise nicht den Erwartungen des Debitors. Die Rücklieferungen starten wenn Debitoren eine Artikelrückgabe anfordern. Nachdem die Anforderung des Debitors erhalten ist, wird eine Rücklieferung im Microsoft Dynamics 365 for Finance and Operations erstellt.
 
 ## <a name="return-order-process"></a>Rücklieferungsprozess
 Die folgende Abbildung bietet eine Übersicht über den Rücklieferungprozess.  
@@ -240,7 +240,7 @@ Obwohl die **Rücklieferung** Seite die Informationen und Aktivitäten enthält,
 
 ### <a name="credit-correction"></a>Habenkorrektur
 
-Als Teil des Rechnungsstellungsprozesses überprüften Sie, ob sonstige Zuschläge korrekt sind. Sollen die Sachkontobuchungen zu Korrekturen (Storno) werden, sollten Sie die Option **Kreditkorrektur** auf der Registerkarte **Andere** der Seite **Buchungsrechnung**  verwenden wenn Sie die Rechnung/eine Gutschrift buchen. **Hinweis**: Standardmäßig ist die **Habenkorrektur** Option aktiviert, wenn die **Gutschrift als Korrektur** Option auf der Seite **Debitorenparameter**aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
+Als Teil des Rechnungsstellungsprozesses überprüften Sie, ob sonstige Zuschläge korrekt sind. Sollen die Sachkontobuchungen zu Korrekturen (Storno) werden, sollten Sie die Option **Kreditkorrektur** auf der Registerkarte **Andere** der Seite **Buchungsrechnung**  verwenden wenn Sie die Rechnung/eine Gutschrift buchen. **Hinweis**: Standardmäßig ist die **Habenkorrektur** Option aktiviert, wenn die **Gutschrift als Korrektur** Option auf der Seite **Debitorenparameter** aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
 
 ## <a name="create-intercompany-return-orders"></a>Intercompany-Rücklieferung erstellen
 Rücklieferungen können zwischen zwei Unternehmen innerhalb Ihrer Organisation abgeschlossen werden. Folgende Szenarios werden unterstützt:
@@ -264,7 +264,7 @@ Dieses Szenario umfasst zwei Unternehmen in derselben Organisation, wie in der f
 
 [![Einfach Intercompany-Rücklieferung](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
 
-Die Auftragskette kann eingerichtet werden, wenn ein Kreditorenrücklieferungsauftrag im Käuferunternehmen erstellt wird, oder ein Debitorenrücklieferungsauftrag im verkaufenden Unternehmen erstellt wird. Dynamics 365 for Operations erstellt den entsprechenden Auftrag im anderen Unternehmen und stellt sicher, dass die Kopf- und Positionsinformationen zum Kreditorenrücklieferungsauftrag die Einstellungen für den Debitorenrücklieferungsauftrag widerspiegeln. Der Rückgabeauftrag, der eingerichtet wird, kann die Referenz auf einen bestehende Debitorenrechnung entweder einbeziehen oder ignorieren (**Auftrag suchen**). Die Lieferscheinen und Rechnungen der beiden Aufträge können einzeln verarbeitet werden. Sie müssen beispielsweise einen Lieferschein für den Kreditorenrücklieferungsauftrag nicht generieren, bevor Sie den Lieferschein für den Debitorenrücklieferungsauftrag generieren.
+Die Auftragskette kann eingerichtet werden, wenn ein Kreditorenrücklieferungsauftrag im Käuferunternehmen erstellt wird, oder ein Debitorenrücklieferungsauftrag im verkaufenden Unternehmen erstellt wird. Finance and Operations erstellt den entsprechenden Auftrag im anderen Unternehmen und stellt sicher, dass die Kopf- und Positionsinformationen zum Kreditorenrücklieferungsauftrag die Einstellungen für den Debitorenrücklieferungsauftrag widerspiegeln. Der Rückgabeauftrag, der eingerichtet wird, kann die Referenz auf einen bestehende Debitorenrechnung entweder einbeziehen oder ignorieren (**Auftrag suchen**). Die Lieferscheinen und Rechnungen der beiden Aufträge können einzeln verarbeitet werden. Sie müssen beispielsweise einen Lieferschein für den Kreditorenrücklieferungsauftrag nicht generieren, bevor Sie den Lieferschein für den Debitorenrücklieferungsauftrag generieren.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Direktlieferungslieferungsrücklieferungen unter drei Parteien
 
@@ -302,7 +302,7 @@ Beispiel 2 entspricht Beispiel 1, aber der **Habenkorrektur** Parameter ist akti
 
 [![Habenkorrektur ist für die Rücklieferung ausgewählt](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
 
-**Hinweis:**Die Sachkontobuchungen werden als negative Korrekturen eingegeben.
+**Hinweis:** Die Sachkontobuchungen werden als negative Korrekturen eingegeben.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Beispiel 3: Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird
 

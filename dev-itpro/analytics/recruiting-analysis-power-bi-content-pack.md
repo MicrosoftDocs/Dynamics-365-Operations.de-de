@@ -1,15 +1,15 @@
 ---
 title: Rekrutierungs-Power BI-Inhalt
-description: "In diesem Thema wird der Dynamics 365 for Operations - Recruiting Power BI-Inhalt beschrieben. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen."
-author: twheeloc
+description: "In diesem Thema wird der Inhalt der Power BI-Personalbeschaffung beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 263934
 ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4b12a2c8983cf7bef770417f76df324293f06fb2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 49cfd0f1ed645f1980b21b6d4f453cb7a8957a1a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,58 +29,42 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+In diesem Thema wird der **Personalbeschaffungs**-Inhalt für Microsoft Power BI beschrieben. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
-In diesem Thema wird der Dynamics 365 for Operations - Recruiting Power BI-Inhalt beschrieben. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen.
+## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
+Wenn Sie das Update für Juli 2017 von Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, verwenden, wird der Power BI-Inhalt **Personalbeschaffung** im Arbeitsbereich **Personalbeschaffungsverwaltung** angezeigt. 
 
-<a name="accessing-the-content-pack"></a>Zugreifen auf das Inhaltspaket
---------------------------
+## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Berichte und Grafiken im Arbeitsbereich "Personalbeschaffungsverwaltung"
+Der Arbeitsbereich **Personalbeschaffungsverwaltung** enthält eine Registerkarte **Analyse**. Diese Registerkarte enthält den eingebetteten Power BI Inhalt für die Personalbeschaffung. Der Inhalt besteht aus einer Übersichtsregisterkarte und zusätzlichen Registerkarten mit Details. Die Berichte werden auf jeder Registerkarte näher erläutert.
 
-Sie finden das Recruiting-Inhaltspaket in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Inhalte herunterladen und mit Ihrem Microsoft Dynamics 365 for Operations verbinden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
-
-## <a name="reports-that-are-included-in-the-content-pack"></a>Berichte, die im Paket enthalten sind
-Nachdem Sie das Inhaltspaket mit Ihren Dynamics 365 for Operations Daten verbunden haben, zeigen das Dashboard und die Berichte Ihre Organisationsdaten an. Wenn Sie bisher noch nie Microsoft Power BI verwendet haben, finden Sie weitere Informationen unter [Erste Schritte in Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Die Berichte, die im Paket enthalten sind, haben Diagrammen und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
-
-| Bericht                       | Inhalt                                                                                               |
-|------------------------------|--------------------------------------------------------------------------------------------------------|
-| Bewerber-Analyse           | Bewerber nach Einzelvorgang, Bewerberquellen, Bewerber nach Lagerplatz und Gesamtanzahl Bewerber           |
-| Bewerberstatus             | Bewerber nach Typ und Status und Bewerberstatus                                                    |
-| Bewerber-Demographie       | Bewerber nach Alter und Geschlecht und Bewerber über Bildungsgrad und Status                             |
-| Rekrutierungsanalyse          | Netto-Anstellungs-Verhältnis, durchschnittlichen Tage Projekt einzustellenden, Prozentsatz- ungültige Mieten und Rekrutierungskosten                    |
-| Rekrutierungsprojektanalyse | Personalbeschaffungsprojekte Nummer, durch Öffnungen Personalbeschaffungsprojekt und Bewerber über Personalbeschaffungsprojekt |
-
-Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+| Bericht               | Inhalt |
+|----------------------|----------|
+| Überblick über die Personalbeschaffung | Zusammenfassung der anderen Berichte |
+| Bewerber-Analyse   | Gesamtzahl der Bewerber; Bewerber nach Stelle, Bewerber nach Quelle, weibliche oder männliche Bewerber und Bewerber nach Standort. |
+| Bewerberstatus     | Bewerber nach Typ und Status und Bewerberstatus |
+| Rekrutierungsanalyse  | Nettoanstellungsrate, durchschnittliche Anstellungen pro Tag, Prozentsatz nicht erfolgreiche Rekrutierungen,  Rekrutierungskosten, Anzahl Personalbeschaffungsprojekte, Rekrutierungen angewendet und Bewerber versus offene Stellen nach Personalbeschaffungsprojekt. |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Dynamics 365 for Operations-Daten werden für die Berichte des Recruiting-Inhaltspakets verwendet. Die folgende Tabelle zeigt die Entitäten, auf denen das Paket basiert.
+Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-| Entität                          | Inhalt                                                         | Beziehungen mit anderen Entitäten                                                                                                                                                                                                                 |
-|---------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Recruiting\_Applicant           | Bewerber, eingestellte Bewerber, Netto-Anstellungs-Verhältnis und Kosten          | Recruiting\_ApplicantName Recruiting\_Company Recruiting\_CalendarOffset Recuriting\_Date Recruiting\_GeographicLocation Recruiting\_Demographics Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject                                |
-| Recruiting\_ApplicantName       | Vorname, Nachname, vollständiger Name des Bewerbers                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_CalendarOffset      | Kalendergegenkonten zu den Segmentberichten                                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_Company             | Unternehmen, nach denen Berichte gefiltert werden können                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_Date                | Tage, Wochen, Monate und Jahre                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_Demographics        | Geburtsdatum, Geschlecht, Familienstand und Nationalität         | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_EmployedApplicant   | Bewerber, Leistung, Startdatum und Bewerbertyp           | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_ApplicantName Recruiting\_Employment Recruiting\_Performance Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject          |
-| Recruiting\_Employment          | Startdatum, Enddatum und Umbuchungsdatum                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_GeographicLocation  | Ort, Postleitzahl, Landkreis und Bundesland oder Kanton.                 | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_Job                 | Funktion, Typ und Titel                                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_Media               | Bewerberquelle                                             | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_Performance         | Bewertung, Beschreibung und Bewertungsmodell                            | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_RecruitmentProject  | Projektbeschreibung, Projektstatus und Öffnungen                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
-| Recruiting\_TerminatedApplicant | Gesperrte Bewerber, Grund, Leistung und Kündigungsdatum | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_Performance Recruiting\_Demographics Recruiting\_Employment Recruiting\_Media Recruiting\_RecruitmentProject Recruiting\_ApplicantName |
+Die folgende Tabelle zeigt die Entitäten, auf denen der Power BI Inhalt **Personalbeschaffung** basiert.
 
-Diese Entitäten wurden verwendet, um berechnete Messungen zu erstellen. Diese berechneten Messungen werden verwendet, um die Messdaten (KPIs) und Berichte zu erstellen, die im Inhaltspaket verwendet werden. Wenn Sie zusätzliche Berechnungen in Ihren Berichten und Dashboard einbeziehen möchten, können Sie die Recruiting.pbix Datei von LCS herunterladen und bearbeiten. Diese Datei ist das Standarddatenmodell, das verwendet wurde, um das Inhaltspaket zu erstellen. Nachdem Sie die Änderungen vorgenommen haben, können Sie ein Organisations-Inhaltspaket und ein Dashboard erstellen, die die von Ihnen hinzugefügten Informationen enthalten.
+| Entität               | Inhalt                                                         | Beziehungen mit anderen Entitäten |
+|----------------------|------------------------------------------------------------------|-----------------------------------|
+| Bewerber            | Bewerber, eingestellte Bewerber, Netto-Anstellungs-Verhältnis und Kosten          | Bewerbername, Unternehmen, Kalender-Gegenkonto, Datum, Standort, Demographie, Stelle, Medien, Personalbeschaffungsprojekt |
+| Name des Bewerbers       | Vorname, Nachname, vollständiger Name des Bewerbers                   | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Kalender-Gegenkonto      | Kalendergegenkonten zu den Segmentberichten                                | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Unternehmen              | Unternehmen, nach denen Berichte gefiltert werden können                                   | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Datum                 | Tage, Wochen, Monate und Jahre                                   | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Demografische Daten         | Geburtsdatum, Geschlecht, Familienstand und Nationalität         | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Angestellter Bewerber   | Bewerber, Leistung, Startdatum und Bewerbertyp           | Unternehmen, Kalender-Gegenkonto, Datum, Standort, Bewerbername, Anstellung, Leistung, Stelle, Medien, Personalbeschaffungsprojekt |
+| Anstellung           | Startdatum, Enddatum und Umbuchungsdatum                        | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Geografischer Standort  | Ort, Postleitzahl, Landkreis und Bundesland oder Kanton.                 | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Stelle                  | Funktion, Typ und Titel                                        | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Medien                | Bewerberquelle                                             | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Leistung          | Bewertung, Beschreibung und Bewertungsmodell                            | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Personalbeschaffungsprojekt  | Projektbeschreibung, Projektstatus und Öffnungen                | Bewerber, Bewerber angestellt, Bewerber beendeter |
+| Beendeter Bewerber | Gesperrte Bewerber, Grund, Leistung und Kündigungsdatum | Unternehmen, Kalender-Gegenkonto, Datum, Standort, Leistung, Demografie, Anstellung, Medien, Personalbeschaffungsprojekt, Bewerbername. |
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstellen von Power BI-Inhalten:
-
--   [Datenentitäten](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
-
-
-
-
+Diese Entitäten wurden verwendet, um berechnete Messungen zu erstellen. Diese berechneten Messungen werden verwendet, um die Messdaten (KPIs) und Berichte zu erstellen, die im Inhalt verwendet werden. Wenn Sie zusätzliche Berechnungen in Ihren Berichten und Dashboard einbeziehen möchten, können Sie die Recruiting.pbix Datei von Microsoft Dynamics Lifecycle Services (LCS) herunterladen und bearbeiten. Diese Datei ist das Standarddatenmodell, das verwendet wurde, um den Inhalt zu erstellen. Nachdem Sie die Änderungen vorgenommen haben, können Sie ein Organisations-Inhaltspaket und ein Dashboard erstellen, die die von Ihnen hinzugefügten Informationen enthalten.
 

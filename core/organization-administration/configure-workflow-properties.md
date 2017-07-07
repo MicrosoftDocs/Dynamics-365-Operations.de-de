@@ -3,13 +3,13 @@ title: Konfigurieren der Eigenschaften eines Workflows
 description: "Dieses Thema erläutert, wie Sie die verschiedenen Eigenschaften eines Workflows konfigurieren können."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 263ebaf1cf509589a745f1a9ec3384f97e854519
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 713204bc1e9c757bda48d556ea5b0f66ed79a5c9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -151,10 +151,10 @@ Wenn ein Dokument zur Verarbeitung übermittelt wird, wird eine Workflowinstanz 
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmte Benutzer von Dynamics 365 for Operations</td>
+    <td>Bestimmte Benutzer von Finance and Operations</td>
     <td><ol>
     <li>Klicken Sie auf der Registerkarte <strong>Empfänger</strong> auf <strong>Benutzer</strong>.</li>
-    <li>In der Registerkarte <strong>Benutzer</strong> enthält die Liste <strong>Verfügbare Benutzer</strong> alle Dynamics 365 for Operations-Benutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>In der Registerkarte <strong>Benutzer</strong> enthält die Liste <strong>Verfügbare Benutzer</strong> alle Finance and Operations-Benutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

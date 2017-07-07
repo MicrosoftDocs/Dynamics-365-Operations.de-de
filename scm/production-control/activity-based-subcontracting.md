@@ -3,14 +3,14 @@ title: "Aktivitätsbasierte Fremdarbeit"
 description: "In diesem Thema wird beschrieben wie Fremdarbeitsaktivitäten in einem Produktionsfluss für die Lean Manufacturing verwendet wird."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 267034
 ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4cf93c861345ad11b995ac2fe50c9a94dddcbd56
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 43c95c8ab8599a048b1c8c732d6dcac1c3e8b9e9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 In diesem Thema wird beschrieben wie Fremdarbeitsaktivitäten in einem Produktionsfluss für die Lean Manufacturing verwendet wird.
 
-In Microsoft Dynamics 365 for Operations gibt es zwei Ansätze für Fremdarbeit: Produktionsaufträge und Lean Manufacturing. Im Lean Manufacturing-Ansatz wird die Fremdarbeit als Dienst modelliert, der mit einer Aktivität eines Produktionsflusses verknüpft ist. Ein spezieller Kostengruppentyp mit der Bezeichnung **Direktes Outsourcing** wurde eingeführt und die Fremdarbeitsdienstleistungen sind nicht mehr Teil einer Stückliste (BOM). Die Kostenbuchhaltung der Fremdarbeit wird vollständig in die Kostenlösung für Lean Manufacturing integriert.
+In Microsoft Dynamics 365 for Finance and Operations gibt es zwei Ansätze für Fremdarbeit: Produktionsaufträge und Lean Manufacturing. Im Lean Manufacturing-Ansatz wird die Fremdarbeit als Dienst modelliert, der mit einer Aktivität eines Produktionsflusses verknüpft ist. Ein spezieller Kostengruppentyp mit der Bezeichnung **Direktes Outsourcing** wurde eingeführt und die Fremdarbeitsdienstleistungen sind nicht mehr Teil einer Stückliste (BOM). Die Kostenbuchhaltung der Fremdarbeit wird vollständig in die Kostenlösung für Lean Manufacturing integriert.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Produktionsflüsse, die durch Fremdarbeit ausgeführt werden
 Das Grundprinzip eines Produktionsflusses ändert nicht, wenn Aktivitäten weitergegeben werden. Material fließt noch zwischen Lagerplätzen, Prozeßaktivitäten konvertieren Material in Produkte und verschieben Aktivitäten, Material oder Produkte von einem Lagerplatz zu einem anderen. Sie können Lagerplätze und Fertigungszellen vom Kreditor verwalten lassen, indem Sie das Kreditorenkonto einem Lagerort oder einer Ressource einer Ressourcengruppe zuweisen.  
@@ -75,7 +75,7 @@ Diese Anforderung erzwingt die Nutzung des First in, First out (FIFO)- Lagermode
 
 Um eine Verarbeitungsaktivität als Fremdarbeitsaktivität zu konfigurieren, führen Sie die folgenden Schritte aus.
 
-1.  Konfigurieren einer von weitergegebenen Arbeitsgruppe. Um eine Arbeitsgruppe als Fremdarbeit zu konfigurieren, müssen Sie eine Ressource des **Lieferanten**tpys erstellen und sie der Arbeitsgruppe (Ressourcengruppe) zuweisen. Eine Ablaufkostenkategorie des ****direkten Outsourcing**kostengruppentyps sollt der Arbeitsgruppe zugewiesen werden. Die Kostenkategorien für Einrichtung und Menge sind nicht erforderlich.
+1.  Konfigurieren einer von weitergegebenen Arbeitsgruppe. Um eine Arbeitsgruppe als Fremdarbeit zu konfigurieren, müssen Sie eine Ressource des **Lieferanten** tpys erstellen und sie der Arbeitsgruppe (Ressourcengruppe) zuweisen. Eine Ablaufkostenkategorie des ****direkten Outsourcing** kostengruppentyps sollt der Arbeitsgruppe zugewiesen werden. Die Kostenkategorien für Einrichtung und Menge sind nicht erforderlich.
 2.  Nachdem eine Verarbeitungsaktivität einer von gesetzlichen Bestimmungen unterliegenden Fertigungszelle erstellt und zugeordnet ist, müssen Sie einen Service für die Aktivität konfigurieren, bevor die Produktionsflussversion aktiviert werden kann. Schließen Sie diesen Schritt auf der Seite **Aktivität** **Detail** ab. Bei Aktivitäten, die einer von gesetzlichen Bestimmungen unterliegenden Fertigungszelle zugeordnet sind, wird das **Service-Bedingungen** Inforegister angezeigt. Auf diesem Inforegister können Sie einen Standard-Service hinzufügen, der für alle Ausgabeartikel gültig ist. Wenn besondere  Ausgabeartikel verschiedene Dienstleistungen oder unterschiedliche Service-Berechnungsparameter (beispielsweise Gesamtlayout, ein anderes Service-Verhältnis) erfordern, können Sie andere Dienstleistungen der Aktivität hinzufügen.
 
 ## <a name="subcontracted-transfer-activities"></a>Weitergegebene Umlagerungsaktivitäten
@@ -104,7 +104,7 @@ Menschen betrachten den Transport oft als unproduktive und denken, er habe keine
 
 Mit der aktivitätsbasierten Fremdarbeit im Lean Manufacturing können Sie Spediteure integrieren und Kreditoren bewegen, die Material und Produkte zwischen Lagerplätzen eines Produktionsflusses verschieben. Durch die Modellierung einer Umlagerungsaktivität können Sie einen Spediteur oder Kreditor zuweisen. Die Umlagerungsaktivitäten/der Einzelvorgang basiert auf einem Service und einer Rahmenbereinbarung, und Sie können Bestellungen und Zugangsempfehlungen auf Basis der tatsächlichen Umlagerungseinzelvorgänge erstellen. Diese Funktionen sind identisch wie die Funktionalität für die Weitervergabe von Prozessaktivitäten.  
 
-Daher unterstützt Dynamics 365 for Operations jetzt BOM-Berechnungen, die Transportdienste, die Erstellung von Bestellungen, integrierte Zugangserfassung und die integration von Transportdienstleistungskosten in die Produktionsflussnachkalkulation enthalten.
+Daher unterstützt Finance and Operations jetzt BOM-Berechnungen, die Transportdienste, die Erstellung von Bestellungen, integrierte Zugangserfassung und die Integration von Transportdienstleistungskosten in die Produktionsflussnachkalkulation enthalten.
 
 
 

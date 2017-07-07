@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c040a50d9962d7a900fbef285ea1f1baea124033
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -623,7 +623,7 @@ Detaillierte Informationen zur Richtlinie über Gemeinkostensätze finden Sie in
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Schritt 4: Verarbeiten Sie die Kostenaufteilungsberechnung
 
-Die Zuteilung wird verwendet, um den Saldo eines Kostenträgers zu anderen Kostenträgern zuweisen, indem eine Verrechnungsgrundlage angewendet wird. Microsoft Dynamics 365 for Operations unterstützt die gegenseitige Zuordnungsmethode. In der gegenseitigen Zuordnungsmethode werden die gegenseitigen Dienstleistungen, die Unterkostenobjekte austauschen, vollständig berücksichtigt werden. Das System bestimmt automatisch die korrekte Reihenfolge, in der die Zuordnungen ausgeführt werden. Der Saldo eines Kostenträgers wird durch eine einzelne Verrechnungsgrundlage zugewiesen. Zuweisungen für Kostenträgerdimensionen und ihre jeweiligen Mitglieder werden unterstützt. Der Zuweisungsauftrag wird durch die Kostenkontrollsteuereinheit gesteuert. []![Reziproke Methode](./media/reciprocal-method.png)
+Die Zuteilung wird verwendet, um den Saldo eines Kostenträgers zu anderen Kostenträgern zuweisen, indem eine Verrechnungsgrundlage angewendet wird. Finance and Operations unterstützt die gegenseitige Zuordnungsmethode. In der gegenseitigen Zuordnungsmethode werden die gegenseitigen Dienstleistungen, die Unterkostenobjekte austauschen, vollständig berücksichtigt werden. Das System bestimmt automatisch die korrekte Reihenfolge, in der die Zuordnungen ausgeführt werden. Der Saldo eines Kostenträgers wird durch eine einzelne Verrechnungsgrundlage zugewiesen. Zuweisungen für Kostenträgerdimensionen und ihre jeweiligen Mitglieder werden unterstützt. Der Zuweisungsauftrag wird durch die Kostenkontrollsteuereinheit gesteuert. []![Reziproke Methode](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Kostenzuteilung definieren
 
@@ -724,7 +724,7 @@ Kostenträger CC004 Montage trägt zu mehreren Kostenträgern bei. Ein statistis
 </tbody>
 </table>
 
-**Hinweis:** In Dynamics 365 for Operations können statistische Kennzahlen wie Produktionsstunden, die ein Produkt verbraucht von den Quelldaten berechnet werden. Ausführliche Informationen zur Anzeige statistischer Kennzahlanbieter, finden Sie in der Anbietervorlage statistischen Kennzahl. (Hinweis, dieses Thema ist nicht abgeschlossen, aber bald verfügbar) Die folgende Tabelle zeigt das Ergebnis an, wenn der HR-Service als Verrechnungsgrundlage für Finanzdienstleistungen als Gesamtkosten angewendet würde (Fixkosten und variable Kosten).
+**Hinweis:** In Finance and Operations können statistische Kennzahlen wie Produktionsstunden, die ein Produkt verbraucht, von den Quelldaten abgeleitet werden. Ausführliche Informationen zur Anzeige statistischer Kennzahlanbieter, finden Sie in der Anbietervorlage statistischen Kennzahl. (Hinweis, dieses Thema ist nicht abgeschlossen, aber bald verfügbar) Die folgende Tabelle zeigt das Ergebnis an, wenn der HR-Service als Verrechnungsgrundlage für Finanzdienstleistungen als Gesamtkosten angewendet würde (Fixkosten und variable Kosten).
 
 <table>
 <thead>

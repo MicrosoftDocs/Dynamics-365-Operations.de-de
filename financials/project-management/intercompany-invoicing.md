@@ -1,36 +1,36 @@
 ---
 title: Intercompany-Fakturierung
-description: "Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Operations."
+description: "Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 65c20479af9d2184bd7f3b92f4c0718553425502
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 205903bb68804a46414410c85eacce03c6df6fc7
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="intercompany-invoicing"></a>Intercompany-Fakturierung
+# <a name="intercompany-invoicing"></a>Intercompany-Rechnungsstellung
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Operations.
+Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition.
 
 Ihre Organisation verfügt möglicherweise über mehrere Abteilungen, Tochtergesellschaften und andere juristische Personen, die einander Produkte und Dienstleistungen für Projekte übertragen. Die juristische Person, die Dienstleistungen oder Produkte bereitstellt *ausleihenden juristischen Person*. Die juristische Person, die Dienstleistungen oder Produkten empfängt wird als *ausleihende juristische Person* bezeichnet. 
 
@@ -53,7 +53,7 @@ Das Ziel ist es, die Kostenkontrolle, Umsatzrealisierung, Steuern und Verrechnun
     -   **Deckungsbeitragsverhältnis** – Die Zahl, die Sie in das Feld **Preisgestaltung** eingeben, ist der Deckungsbeitrag ausgedrückt als Prozentsatz des Verkaufspreises.
 
 ## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>Beispiel 1: Parameter für die Intercompany-Fakturierung einrichten
-In diesem Beispiel ist USSI eine ausleihenden juristischen Person. Ihre Ressourcen Berichten die Zeit an die ausleihende juristische Person FRSI, die in einem Vertragsverhältnis mit dem Endkunden steht. Die Stunden und Ausgaben, die von USSI-Mitarbeiter gemeldet werden, können in die von FRSI generierte Projektfakturierung einbezogen werden. Darüber hinaus gibt es eine dritte Buchungsquelle, die von der ausleihenden juristischen Person stammen kann (in diesem Beispiel USSI) wenn diese gemeinsame Dienstleistungen für einen Kreditor für Tochtergesellschaften ((wie FRSI) bereitstellt und dann die Kosten an Projekte in diesen Tochtergesellschaften weitergibt. Alle übereinstimmenden Rechnungsdokumente und Steuerberechnungen werden von Dynamics 365 for Operations abgeschlossen. 
+In diesem Beispiel ist USSI eine ausleihenden juristischen Person. Ihre Ressourcen Berichten die Zeit an die ausleihende juristische Person FRSI, die in einem Vertragsverhältnis mit dem Endkunden steht. Die Stunden und Ausgaben, die von USSI-Mitarbeiter gemeldet werden, können in die von FRSI generierte Projektfakturierung einbezogen werden. Darüber hinaus gibt es eine dritte Buchungsquelle, die von der ausleihenden juristischen Person stammen kann (in diesem Beispiel USSI) wenn diese gemeinsame Dienstleistungen für einen Kreditor für Tochtergesellschaften ((wie FRSI) bereitstellt und dann die Kosten an Projekte in diesen Tochtergesellschaften weitergibt. Alle übereinstimmenden Rechnungsdokumente und Steuerberechnungen werden von Finance and Operations abgeschlossen. 
 
 In diesem Beispiel muss FRSI ein Debitor der juristischen Person USSI sein. USSI muss ein Kreditor in der juristischen Person FRSI sein. Sie können dann die Intercompany-Beziehung zwischen den zwei juristischen Personen einrichten. Das folgende Verfahren veranschaulicht die Einrichtung von Parametern für die Teilnahme beider juristischer Personen an der Intercompany-Fakturierung.
 

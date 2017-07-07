@@ -1,6 +1,6 @@
 ---
 title: Navigationssuche
-description: In diesem Artikel wird beschrieben, wie die die Suchfunktion verwendet wird, um zu den Seiten in Microsoft Dynamics 365 for Operations zu navigieren.
+description: In diesem Artikel wird beschrieben, wie die Suchfunktion verwendet wird, um zu den Seiten in Microsoft Dynamics 365 for Finance and Operations zu navigieren.
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 25991
 ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: df804f79d6639c118e3e0534a21423f207ceb2c7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 431165d541c9a3b63100a93108ee770df8e88aa8
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Artikel wird beschrieben, wie die die Suchfunktion verwendet wird, um zu den Seiten in Microsoft Dynamics 365 for Operations zu navigieren.
+In diesem Artikel wird beschrieben, wie die Suchfunktion verwendet wird, um zu den Seiten in Microsoft Dynamics 365 for Finance and Operations zu navigieren.
 
-Microsoft Dynamics 365 for Operations bietet Funktionen für eine große Auswahl an Branchen und Segmenten. Die Bewerbung beinhaltet mehrere Bereiche und Seiten, um Ihnen dabei zu unterstützten, verschiedene Funktionen auszuführen. Um die Seiten rasch zu finden, die Sie mit Ihren Aufgaben durchführen müssen, verwenden Sie die Navigations-Suchfunktion. 
+Finance and Operations bietet Funktionen für viele Branchen und Segmente. Die Bewerbung beinhaltet mehrere Bereiche und Seiten, um Ihnen dabei zu unterstützten, verschiedene Funktionen auszuführen. Um die Seiten rasch zu finden, die Sie mit Ihren Aufgaben durchführen müssen, verwenden Sie die Navigations-Suchfunktion. 
 
 Zur Verwendung dieser Funktion, klicken Sie auf das Symbol **Suche** um das Feld **Suchen** anzuzeigen. Sie können dann eines oder mehrere Wörter im Feld eingeben. Das Systems durchsucht sofort in der Anwendung nach entsprechenden Seiten, die den Begriffen entsprechen, die Sie eingegeben haben. So können Sie beispielsweise "Kreditorenrechnung" als Eingabe eingeben, und dann zeigt das System Ergebnisse an, die mit diese Eingabe übereinstimmen. 
 
@@ -45,7 +45,7 @@ Die Navigationssuchfunktion dient auch dazu, damit Sie schnell zu einer bestimmt
 
 Die Suchergebnisliste zeigt sowohl den Seitentitel als auch den Navigationspfad an. Dies zeigt die Position der Seite in der Anwendung an. Darüber hinaus hilft es dabei, zwischen zwei oder mehr ähnlichen Seiten in den Ergebnissen zu unterscheiden. 
 
-Wenn Sie nach einer Seite suchen, wird die Eingabe mit dem Seitentitel sowie dem Navigationspfad abgeglichen. Wenn Sie zum Beispiel "Forderung" im **Such**feld eingeben, finden Sie Ergebnisse für die Seiten, die im Debitorenbereich verfügbar sind, obwohl der Seitentitel nicht das Wort "Forderung" enthält. 
+Wenn Sie nach einer Seite suchen, wird die Eingabe mit dem Seitentitel sowie dem Navigationspfad abgeglichen. Wenn Sie zum Beispiel "Forderung" im **Such** feld eingeben, finden Sie Ergebnisse für die Seiten, die im Debitorenbereich verfügbar sind, obwohl der Seitentitel nicht das Wort "Forderung" enthält. 
 
 ## <a name="quickly-navigate-to-a-page-based-on-the-technical-form-name"></a>Navigieren Sie schnell zu einer Seite basierend auf dem technischen Formularnamen
 Die Navigationssuchfunktionen enthalten außerdem eine vielgenutzte Funktion für Poweruser: die Möglichkeit, schnell zu einer Seite basierend auf dem technischen Formularname zu navigieren. Viele Benutzer sind mit dem System so vertraut, dass ihnen die genauen Formularnamen bekannt sind, mit denen sie arbeiten. Wenn Sie einer dieser Benutzer sind, können Sie **Formular:** eingeben, gefolgt vom Namen des Formulars nach dem Sie suchen. Wenn Sie beispielsweise **Formular: vendinvoice** eingeben, enthalten die Suchergebnisse alle Seiten, in denen die Formularnamen mit **vendinvoice** beginnen. 

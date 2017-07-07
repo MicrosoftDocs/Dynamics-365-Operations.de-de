@@ -1,27 +1,28 @@
 ---
 title: "Konfigurieren von Bildschirmlayouts für POS"
-description: "Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Operations - Retail POS- Erfahrungen bereit."
+description: "Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Retail-POS-Erfahrungen."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7dee20166ea89b56523e3ef38e66de53d6e4a621
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 9f7f46c1bae5bac6eefa0b8c70b079cab76aa8b6
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,9 +32,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Operations - Retail POS- Erfahrungen bereit.
+Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Retail-POS-Erfahrungen.
 
-Die Microsoft Dynamics 365 for Operations - Retail POS-Benutzeroberfläche kann mithilfe einer Kombination von visuellen Profilen und von Bildschirmlayouts konfiguriert werden, und zu Shops, Kassen und/oder den Benutzer zugewiesen werden.
+Die Microsoft Dynamics 365 for Retail-POS-Benutzeroberfläche kann mithilfe einer Kombination von visuellen Profilen und Bildschirmlayouts konfiguriert werden und zu Shops, Kassen und/oder den Benutzern zugewiesen werden.
 
 ## <a name="visual-profile"></a>Visuelles Profil
 Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die Sichtelementen anzugeben, die kassenspezifisch sind und gemeinsam genutzt werden. Jeder Benutzer, der sich an der Kasse anmeldet, hat dasselbe Thema, Farben und Bilder. 
@@ -46,7 +47,7 @@ Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die 
 
 **Akzentfarbe** - Die Akzentfarbe wird im POS verwendet, um bestimmte Sichtelemente wie Kacheln, Befehlsschaltflächen oder Links zu unterscheiden oder hervorzuheben. Diese Elemente sind in der Regel aktiv.
 
-**Kopffarbe** - Die Kopffarbe ermöglicht dem Benutzer, die Farbe der Kopfzeile zu konfigurieren, um die Brandingbedürfnisse des Einzelhändlers zu erfüllen. Diese Funktion ist nur in Microsoft Dynamics 365 for Operations Version 1611 verfügbar.
+**Kopffarbe** - Die Kopffarbe ermöglicht dem Benutzer, die Farbe der Kopfzeile zu konfigurieren, um die Brandingbedürfnisse des Einzelhändlers zu erfüllen. Diese Funktion ist nur in Microsoft Dynamics 365 for Retail, Version 1611, verfügbar.
 
 **Anmeldung Hintergründe** - Benutzer können ein Hintergrundbild für die Bildschirm Anmeldung angeben. Die Dateigröße von Hintergrundbildern sollte so gering wie möglich gehalten werden, da das Speichern und Hochladen großer Dateien Auswirkungen auf Das Anwendungsverhalten und -Leistung haben kann.
 
@@ -67,7 +68,7 @@ Bildschirmlayouts können Unternehmen, Kassen oder Benutzern zugeweisen werden. 
 
 ### <a name="layout-sizes"></a>Layoutgrößen
 
-Diese Funktion ist nur in Microsoft Dynamics 365 for Operations Version 1611 verfügbar. Da in vielen Fällen Bildschirmlayouts zu mehreren Bildgrößen und -auflösungen verwendet werden können, können Benutzer das Layout und Inhalt für jedes konfigurieren. Die POS-Anwendung wählt automatisch die nähste Layoutgröße für das Gerät zum Zeitpunkt des Starts aus. Ein Bildschirmlayout kann die Konfigurationen von Komplett- und Kompaktgeräten angeben. Diese Konfiguration ermöglicht ein einzelnes Bildschirmlayout zu einem Benutzer zuzuordnen, der mit verschiedene Größen und Formularfaktoren im Shop arbeitet. 
+Diese Funktion ist nur in Microsoft Dynamics 365 for Retail, Version 1611, verfügbar. Da in vielen Fällen Bildschirmlayouts zu mehreren Bildgrößen und -auflösungen verwendet werden können, können Benutzer das Layout und Inhalt für jedes konfigurieren. Die POS-Anwendung wählt automatisch die nähste Layoutgröße für das Gerät zum Zeitpunkt des Starts aus. Ein Bildschirmlayout kann die Konfigurationen von Komplett- und Kompaktgeräten angeben. Diese Konfiguration ermöglicht ein einzelnes Bildschirmlayout zu einem Benutzer zuzuordnen, der mit verschiedene Größen und Formularfaktoren im Shop arbeitet. 
 
 **Modern POS - Vollständig** - Vollständige Layouts werden verwendet für große PC-Bildschirme oder Tablets. Benutzer können auswählen, welche Benutzeroberflächenelemente einzuschließen sind, deren Größe oder Platzierung bestimmen, und der detaillierten Eigenschaften konfigurieren. Vollständige Layouts unterstützen Hochformat- und Querformatkonfigurationen. 
 
@@ -77,11 +78,11 @@ Diese Funktion ist nur in Microsoft Dynamics 365 for Operations Version 1611 ver
 
 Jede Layoutgröße innerhalb eines Bildschirmlayouts muss mithilfe des Bildschirmlayoutdesigners konfiguriert werden. Mit dem Designer können Benutzern Benutzeroberflächenelementen des Buchungsbildschirms angeben und konfigurieren. Der Bildschirmlayoutdesigner verwendet ClickOnce, um die neueste Version der Anwendung herunterzuladen (bei jedem Start). Stellen Sie sicher, dass die Browseranforderungen für die Verwendung ClickOnce erfüllt sind. Einige Browser, z.B. Chrome, benötigen Erweiterungen. 
 
-**Nummerpad** - Das Nummerpad ist die Hauptbenutzereingabe im POS-Buchungs-Bildschirm. Es kann so konfiguriert werden, dass das gesamte Pad auf dem Bildschirm für Touchscreen sichtbar ist, oder nur das Eingabefeld anzuzeigen, das einer physischen Tastatur verwendet werden kann. Die Nummerpadeinstellungen sind nur im vollständigen Layout verfügbar. In Microsoft Dynamics 365 for Operations Version 1611 können kompakte Layouts immer das vollständige Nummernpad nutzen, das vom Buchungsbildschirm verfügbar ist.
+**Nummerpad** - Das Nummerpad ist die Hauptbenutzereingabe im POS-Buchungs-Bildschirm. Es kann so konfiguriert werden, dass das gesamte Pad auf dem Bildschirm für Touchscreen sichtbar ist, oder nur das Eingabefeld anzuzeigen, das einer physischen Tastatur verwendet werden kann. Die Nummerpadeinstellungen sind nur im vollständigen Layout verfügbar. In Dynamics 365 for Retail, Version 1611, können kompakte Layouts immer das vollständige Nummernpad nutzen, das über den Buchungsbildschirm verfügbar ist.
 
-**Gesamtbereich** - Der Gesamtbereich kann anschließend in eine ein oder zwei Spalten so konfiguriert werden, dass Zeilenzähl-Felder wie Rabattbetrag, Gebühren, Steuern Zwischensumme und anzuzeigen. In Microsoft Dynamics 365 for Operations Version 1611 unterstützen kompakte Layouts nur eine einzelne Gesamtspalte. 
+**Gesamtbereich** - Der Gesamtbereich kann anschließend in eine ein oder zwei Spalten so konfiguriert werden, dass Zeilenzähl-Felder wie Rabattbetrag, Gebühren, Steuern Zwischensumme und anzuzeigen. In Microsoft Dynamics 365 for Retail, Version 1611, unterstützen kompakte Layouts nur eine einzelne Gesamtspalte. 
 
-**Empfang** - Der Empfangsbereich enthält die Verkaufspositionen, die Zahlungspositionen und die Lieferinformationen für die Produkte und Dienste, die am POS verarbeitet werden. Benutzer können Spalten, Breite und Position angeben. In den kompakten Layouts in Dynamics 365 for Operations 1611, können Sie zusätzliche Informationen auch mit dem konfigurieren, die in der Zeile mit der Hauptlinie wird. 
+**Empfang** - Der Empfangsbereich enthält die Verkaufspositionen, die Zahlungspositionen und die Lieferinformationen für die Produkte und Dienste, die am POS verarbeitet werden. Benutzer können Spalten, Breite und Position angeben. In den kompakten Layouts in Dynamics 365 for Retail, Version 1611, können Sie auch zusätzliche Informationen konfigurieren, die in der Zeile unter der Hauptposition angezeigt wird. 
 
 **Kundenkarte** - Die Kundenkarte zeigt Informationen bezüglich des Kunden an, der momentan der Buchung zugeordnet ist. Die Kundenkarte kann so konfiguriert werden, um zusätzliche Informationen anzuzeigen oder auszublenden. 
 
@@ -89,7 +90,7 @@ Jede Layoutgröße innerhalb eines Bildschirmlayouts muss mithilfe des Bildschir
 
 **Bild**- Die Bildsteuerung kann verwendet werden, um das Shoplogo oder anderes Brandingbilder im Buchungsbildschirm anzuzeigen. Das Bildsteuerelement ist für vollständige Layouts nur verfügbar. 
 
-**Empfohlene Produkte** - Sofern für die Umgebung konfiguriert, wird das Produktsteuerelement empfohlene Produktvorschläge auf Grundlage von Machine-Learning-Daten angezeigt. Das empfohlene Produktsteuerelement ist für vollständige Layouts in Dynamics 365 for Operations Version 1611 nur verfügbar. ** Benuterdefiniertes Steuerelement ** - Das benutzerdefinierte Steuerlelement dient als Platzhalter innerhalb des Bildschirmlayouts das die Platzierung von benutzerdefinierten Inhalten zulässt. Das benutzerdefinierte Steuerelement ist für vollständige Layouts nur verfügbar.
+**Empfohlene Produkte** - Sofern für die Umgebung konfiguriert, wird das Produktsteuerelement empfohlene Produktvorschläge auf Grundlage von Machine-Learning-Daten angezeigt. Das empfohlene Produktsteuerelement ist nur für vollständige Layouts in Dynamics 365 for Retail, Version 1611, verfügbar. ** Benuterdefiniertes Steuerelement ** - Das benutzerdefinierte Steuerlelement dient als Platzhalter innerhalb des Bildschirmlayouts das die Platzierung von benutzerdefinierten Inhalten zulässt. Das benutzerdefinierte Steuerelement ist für vollständige Layouts nur verfügbar.
 
 <a name="see-also"></a>Siehe auch
 --------

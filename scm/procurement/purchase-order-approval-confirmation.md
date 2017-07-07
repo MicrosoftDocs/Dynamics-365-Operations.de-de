@@ -3,14 +3,14 @@ title: Genehmigen und Freigeben von Bestellungen
 description: "Dieser Artikel beschreibt die Statuswerte einer Bestellung (PO) nach der Erstellung und den Effekt des Änderungsmanagements für Bestellungen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 346dde3acdaca367c80cc092f0d8faa2dc28c6b6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0ec91bcf0ab334585eefae2fe54750c45419682e
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,6 +30,7 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
 Dieser Artikel beschreibt die Statuswerte einer Bestellung (PO) nach der Erstellung und den Effekt des Änderungsmanagements für Bestellungen.
 
@@ -38,7 +39,7 @@ Nachdem eine Bestellung (PO) erstellt wurde, muss diese möglicherweise einen Ge
 ## <a name="approval-of-purchase-orders"></a>Genehmigung von Bestellungen
 PO ohne Änderungsmanagement haben den Status **Genehmigt** sobald sie erstellt wurden. POs mit Änderungsmanagement haben den Status **Entwurf** wenn sie erstellt werden. Eine Bestellungen, die durch Umwandeln von geplanten Bestellungen aus dem Produktprogrammplan erstellt wurden, haben, unabhängig von den Einstellungen der Änderungsverwaltung, den Status **Genehmigt**. Eine Bestellung erstellt Lagertransaktionen nur bei Erreichen des Status **Genehmigt**. Daher wird der Bestand nicht als verfügbar für Reservierung angezeigt oder markiert, bis die Bestellung akzeptiert wird.  
 
-Sie aktivieren das Änderungsmanagement für POs über die Option **Änderungsmanagement aktivieren** auf der Seite **Beschaffungsparameter**. Wenn das Änderungsmanagement aktiviert ist, müssen POs einen Genehmigungsworkflow durchlaufen, nachdem sie abgeschlossen wurden. Microsoft Dynamics 365 for Operations hat einen Workflow-Prozess-Editor, über den Sie einen Workflow für den Genehmigungsprozess definieren können. Dieser Workflow kann Regeln für automatische die Genehmigung, Regeln für die Zuweisung der Genehmigung von bestimmten POs und Regeln zur Eskalation eines Workflows mit länger ausstehender Genehmigung enthalten. Sie können den Änderungsmanagementprozess für alle Kreditoren oder für bestimmte Kreditoren aktivieren. Sie können den Prozess auch so einrichten, dass er für einzelne POs überschrieben werden kann.  
+Sie aktivieren das Änderungsmanagement für POs über die Option **Änderungsmanagement aktivieren** auf der Seite **Beschaffungsparameter**. Wenn das Änderungsmanagement aktiviert ist, müssen POs einen Genehmigungsworkflow durchlaufen, nachdem sie abgeschlossen wurden. Microsoft Dynamics 365 for Finance and Operations hat einen Workflow-Prozess-Editor, über den Sie einen Workflow für den Genehmigungsprozess definieren können. Dieser Workflow kann Regeln für automatische die Genehmigung, Regeln für die Zuweisung der Genehmigung von bestimmten POs und Regeln zur Eskalation eines Workflows mit länger ausstehender Genehmigung enthalten. Sie können den Änderungsmanagementprozess für alle Kreditoren oder für bestimmte Kreditoren aktivieren. Sie können den Prozess auch so einrichten, dass er für einzelne POs überschrieben werden kann.  
 
 Bei aktiviertem Änderungsmanagement durchlaufen POs sechs Genehmigungsstatuswerte (von **Entwurf** bis **Abgeschlossen**). Nachdem eine Bestellung genehmigt wurde, müssen Benutzer zur Bearbeitung die **Änderung anfordern**-Aktion nutzen.
 
@@ -54,7 +55,7 @@ Bei aktiviertem Änderungsmanagement durchlaufen POs sechs Genehmigungsstatuswer
 ## <a name="confirming-purchase-orders"></a>Bestellungen bestätigen
 POs mit dem Genehmigungsstatus **Genehmigt** können vor der Bestätigung weitere Schritte durchlaufen. Sie können beispielsweise eine Bestellungsanfrage an den Kreditor zu Preisen, Rabatten und Lieferdaten senden. In diesem Fall legen Sie die Bestellung mithilfe der **Einkaufsabfrage**-Aktion auf den Status **In externer Prüfung** fest.  
 
-Kreditoren, die für die Verwendung des Kreditorenportal eingerichtet sind, können Aufträge im Portal überprüfen und genehmigen oder ablehnen. Während dieser Überprüfung hat die Bestellung den Status **In externer Prüfung**. Der Kreditorenportal kann so konfiguriert werden, dass eine Bestätigung vom Kreditor automatisch den Auftrag in Dynamics 365 for Operations bestätigt. Alternativ können Sie eine Bestellung nach Bestätigung des Kreditors manuell bestätigen. Wenn ein Kreditor eine Bestellung ablehnt, wird die Ablehnung zusammen mit dem Grund für die Ablehnung sowie Vorschlägen zu Änderungen empfangen. In diesem Fall bleibt der Status der Bestellung auf **In externer Prüfung**.  
+Kreditoren, die für die Verwendung des Kreditorenportal eingerichtet sind, können Aufträge im Portal überprüfen und genehmigen oder ablehnen. Während dieser Überprüfung hat die Bestellung den Status **In externer Prüfung**. Der Kreditorenportal kann so konfiguriert werden, dass eine Bestätigung vom Kreditor automatisch den Auftrag in Finance and Operations bestätigt. Alternativ können Sie eine Bestellung nach Bestätigung des Kreditors manuell bestätigen. Wenn ein Kreditor eine Bestellung ablehnt, wird die Ablehnung zusammen mit dem Grund für die Ablehnung sowie Vorschlägen zu Änderungen empfangen. In diesem Fall bleibt der Status der Bestellung auf **In externer Prüfung**.  
 
 Es ist auch Option zur Generierung einer Proforma-Bestätigung einer Bestellung vor der eigentlichen Bestätigung verfügbar. Diese Option erstellt einfach einen Bericht, den Sie für den Kreditor freigeben können. Sie erstellt keine Erfassungsinformationen.  
 
@@ -83,7 +84,7 @@ Wenn eine Bestellung bestätigt ist, können Sie diese nicht mehr löschen. Sie 
 
 [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 
-[Überblick der Kreditorenrechnungen](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Überblick über Kreditorenrechnungen](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

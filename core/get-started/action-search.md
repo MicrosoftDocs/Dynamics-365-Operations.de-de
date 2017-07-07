@@ -1,15 +1,16 @@
 ---
 title: "Aktivitätssuche"
-description: "Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 for Operations.. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen."
+description: "Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 Finance and for Operations.. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62303
 ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
 ms.search.region: Global
@@ -17,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef5709889dcabd4c9ed760f57d210956f38c37e9
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,14 +31,14 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 for Operations.. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen.
+Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 Finance and for Operations.. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen.
 
 <a name="introduction"></a>Einführung
 ------------
 
-Seiten in Microsoft Dynamics 365 for Operations enthalten hauptsächlich Befehle auf Aktivitätsbereichen, sowohl auf dem Standardaktivitätsbereich am Anfang einer Seite und auf den Symbolleisten wird, die in verschiedenen Bereichen der Seite angezeigt werden. In den Vorgängerversionen konnte mit einer Tippfunktion schnell auf jede Schaltfläche im Aktivitätsbereich zugegriffen werden, indem Sie die Taste ALT und eine Reihe von Buchstaben drückten. 
+Seiten in Microsoft Dynamics 365 for Finance and Operations enthalten hauptsächlich Befehle zu Aktivitätsbereiche, sowohl dem Standardaktivitätsbereich am Anfang einer Seite als auch den Symbolleisten, die in verschiedenen Bereichen der Seite angezeigt werden. In den Vorgängerversionen konnte mit einer Tippfunktion schnell auf jede Schaltfläche im Aktivitätsbereich zugegriffen werden, indem Sie die Taste ALT und eine Reihe von Buchstaben drückten. 
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) Allerdings sind in der aktuellen Version von Microsoft Dynamics 365 for Operations Tastenkombinationen nicht mehr verfügbar, wurden jedoch durch die Funktion Aktivitätssuche ersetzt. Mit dieser neuen Funktion können Sie schnell nach einer Schaltfläche suchen und sie von jedem sichtbaren Aktivitätsbereich ausführen.
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) Allerdings sind in der aktuellen Version von Finance and Operations Tastenkombinationen nicht mehr verfügbar, wurden jedoch durch die Funktion "Aktivitätssuche" ersetzt. Mit dieser neuen Funktion können Sie schnell nach einer Schaltfläche suchen und sie von jedem sichtbaren Aktivitätsbereich ausführen.
 
 ## <a name="using-action-search"></a>Verwenden der Aktivitätssuche
 Um die Funktion „Aktivitätssuche“ zu verwenden, führen Sie die folgenden Schritte aus:
@@ -53,7 +54,7 @@ Nachdem die Schaltfläche ausgeführt wird, kehrt der Fokus auf Ihre letzte Posi
 Sie können die Aktivitätssuche auch starten, indem Sie Strg+/ oder ALT+Q drücken. Drücken Sie die Tastenkombination erneut, um den Fokus zu Ihrer letzten Position auf der Seite zurückzukehren.
 
 ## <a name="understanding-the-results-list"></a>Verstehen der Ergebnisliste
-In Dynamics 365 for Operations müssen Sie oft die Position und den Kontext einer Schaltfläche kennen, um den Zweck dieser Schaltfläche vollständig zu verstehen. Daher werden zusätzliche Information für jeden Artikel der Ergebnisliste angezeigt, um Sie zu unterstützen, genau zu veranschaulichen, welche Schaltflächen in der Liste angezeigt werden. Insbesondere wird der „Pfad“ der Schaltfläche angezeigt. Dieser Pfad kann möglicherweise die Beschriftungen der folgenden Benutzeroberflächenelemente enthalten, wie relevant:
+In Finance and Operations müssen Sie oft die Position und den Kontext einer Schaltfläche kennen, um den Zweck dieser Schaltfläche vollständig zu verstehen. Daher werden zusätzliche Information für jeden Artikel der Ergebnisliste angezeigt, um Sie zu unterstützen, genau zu veranschaulichen, welche Schaltflächen in der Liste angezeigt werden. Insbesondere wird der „Pfad“ der Schaltfläche angezeigt. Dieser Pfad kann möglicherweise die Beschriftungen der folgenden Benutzeroberflächenelemente enthalten, wie relevant:
 
 -   Registerkarte (Aktivitätsbereich)
 -   Schaltflächengruppe
@@ -70,7 +71,7 @@ Im vorherigen Beispiel ergibt sich die angezeigte Aktivitätssuche vom Standarda
 [![Verfügbarer Lagerbestand](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 ## <a name="action-search-vs-navigation-search"></a>Aktivitätssuche im Vergleich zur Navigationssuche
-Während die Aktivitätssuche vorgesehen ist, um Aktivitäten auf einer Seite zu suchen und auszuführen, gibt es einen separaten Suchenmechanismus für die Suche und zum Navigieren zu Seiten in Dynamics 365 for Operations gibt. Weitere Informationen zu dieser Funktion finden Sie im Artikel [Navigationssuche](navigation-search.md)
+Während die Aktivitätssuche vorgesehen ist, um Aktivitäten auf einer Seite zu suchen und auszuführen, gibt es einen separaten Suchenmechanismus für die Suche und zum Navigieren zu Seiten in Finance and Operations. Weitere Informationen zu dieser Funktion finden Sie im Artikel [Navigationssuche](navigation-search.md)
 
 
 

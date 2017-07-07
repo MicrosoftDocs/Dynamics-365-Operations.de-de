@@ -1,27 +1,28 @@
 ---
 title: Ausgabenverwaltung konfigurieren
-description: "Dieser Artikel beschreibt die Überlegungen und Entscheidungen, die Sie während des Planungsprozesses machen müssen, bevor Sie die Ausgabenverwaltung in Microsoft Dynamics AX konfigurieren. Im Spesenverwaltungsbereich können Sie unter anderem Informationen zu Zahlungsmethoden, Reiseanforderungen, Spesenabrechnungen und Richtlinien speichern."
-author: kfend
+description: "Dieser Artikel beschreibt die Überlegungen und Entscheidungen, die Sie während des Planungsprozesses machen müssen, bevor Sie die Ausgabenverwaltung in Microsoft Dynamics for Finance and Operations, Enterprise-Edition, konfigurieren. Im Spesenverwaltungsbereich können Sie unter anderem Informationen zu Zahlungsmethoden, Reiseanforderungen, Spesenabrechnungen und Richtlinien speichern."
+author: KimANelson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: GlobalCategory, ProjCategory, TrvLocations, TrvParameters, TrvPaymethod, TrvPerDiems
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23001
 ms.assetid: aa3fd14d-7e94-4603-985f-ca26d6f860ea
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 62bef78c143f7ad83e78982dbecb1c9e4542187d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: edd3d8ca760c1453ae7cf8d5ff2fdfdedbb022c4
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt die Überlegungen und Entscheidungen, die Sie während des Planungsprozesses machen müssen, bevor Sie die Ausgabenverwaltung in Microsoft Dynamics AX konfigurieren. Im Spesenverwaltungsbereich können Sie unter anderem Informationen zu Zahlungsmethoden, Reiseanforderungen, Spesenabrechnungen und Richtlinien speichern. 
+Dieser Artikel beschreibt die Überlegungen und Entscheidungen, die Sie während des Planungsprozesses machen müssen, bevor Sie die Ausgabenverwaltung in Microsoft Dynamics for Finance and Operations, Enterprise-Edition, konfigurieren. Im Spesenverwaltungsbereich können Sie unter anderem Informationen zu Zahlungsmethoden, Reiseanforderungen, Spesenabrechnungen und Richtlinien speichern. 
 
 Da viele der Entscheidungen, die Sie treffen, wenn Sie die Konfiguration für Spesenverwaltung planen, auf der Hierarchie und die Finanzstruktur der Organisation basieren, müssen Sie die Planungsdokumente für diese Bereiche mit einbeziehen.
 
