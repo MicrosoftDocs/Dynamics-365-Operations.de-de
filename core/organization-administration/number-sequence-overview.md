@@ -1,15 +1,15 @@
 ---
 title: "Nummernkreise (Überblick)"
-description: "In Microsoft Dynamics 365 for Operations dienen Nummernkreise zum Generieren von lesbaren, eindeutigen Kennungen für Masterdatensätze und Buchungsdatensätze, die Kennungen benötigen. Ein Masterdatensatz oder Buchungsdatensatz, der eine Kennung erfordert, wird als <em>Referenz</em> bezeichnet."
+description: "In Microsoft Dynamics 365 for Finance and Operations dienen Nummernkreise zum Generieren von lesbaren, eindeutigen Kennungen für Masterdatensätze und Buchungsdatensätze, die Kennungen benötigen. Ein Masterdatensatz oder Buchungsdatensatz, der eine Kennung erfordert, wird als <em>Referenz</em> bezeichnet."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15461
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a2dcbbbd0b67c171d5a26bbf2053d159f7367cc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: d260f460bf0da072eb46909d8c28d18041ecaa78
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In Microsoft Dynamics 365 for Operations dienen Nummernkreise zum Generieren von lesbaren, eindeutigen Kennungen für Masterdatensätze und Buchungsdatensätze, die Kennungen benötigen. Ein Masterdatensatz oder Buchungsdatensatz, der eine Kennung erfordert, wird als <em>Referenz</em> bezeichnet.
+In Microsoft Dynamics 365 for Finance and Operations dienen Nummernkreise zum Generieren von lesbaren, eindeutigen Kennungen für Masterdatensätze und Buchungsdatensätze, die Kennungen benötigen. Ein Masterdatensatz oder Buchungsdatensatz, der eine Kennung erfordert, wird als <em>Referenz</em> bezeichnet.
 
-Bevor neue Datensätze für eine Referenz in Microsoft Dynamics 365 for Operations erstellt werden können, muss ein Nummernkreis eingerichtet und der Referenz zugeordnet werden. Es wird empfohlen, die Seiten in **Organisationsverwaltung** zum Einrichten von Nummernkreisen zu verwenden. Wenn modulspezifische Einstellungen erforderlich sind, können Sie die Seite Parameter in einem Modul verwenden, um Nummernkreise für die Referenzen in diesem Modul anzugeben. Sie können beispielsweise in **Debitoren** und **Kreditoren** Nummernkreisgruppen einrichten, um bestimmten Debitoren oder Kreditoren bestimmte Nummernkreise zuzuordnen. Wenn Sie einen Nummernkreis einrichten, müssen Sie einen Bereich angeben, der definiert, welche Organisation den Nummernkreis verwendet. Der Bereich kann **Gemeinsam genutzt**, **Unternehmen**, **Juristische Person** oder **Organisationseinheit** sein. Die Bereiche **Juristische Person** und **Unternehmen** können auch mit **Steuerkalenderperiode** kombiniert werden, um noch spezifischere Nummernkreise zu erstellen. Nummernkreisformate werden aus Segmenten gebildet. Nummernkreise, die einen anderen Bereich als **Gemeinsam genutzt** besitzen, können Segmente enthalten, die dem Bereich entsprechen. Ein Nummernkreis mit dem Bereich **Juristische Person** kann beispielsweise ein Segment für juristische Personen enthalten. Durch Einfügen eines Bereichssegments in das Nummernkreisformat können Sie den Bereich eines bestimmten Datensatzes anhand seiner Nummer feststellen. Neben den Segmenten, die Bereichen entsprechen, können Nummernkreisformate die Segmente **Konstante** und **Alphanumerische Segmente** enthalten. Ein Segment vom Typ **Konstante** enthält eine Gruppe von Buchstaben, Zahlen oder Symbolen, die unverändert bleiben. Ein Segment vom Typ **Alphanumerisch** enthält eine Gruppe von Buchstaben oder Zahlen, die jedes Mal schrittweise erhöht werden, wenn eine Nummer aus dem Nummernkreis verwendet wird. Verwenden Sie ein Nummernzeichen (\#) zur Angabe inkrementeller Nummern und ein kaufmännisches Und-Zeichen zur Angabe inkrementeller Buchstaben. Mit dem Format \#\#\#\#\#\_2017 wird beispielsweise der Nummernkreis 00001\_2017, 00002\_2017 usw. erstellt.
+Bevor neue Datensätze für eine Referenz in Microsoft Dynamics 365 for Finance and Operations erstellt werden können, muss ein Nummernkreis eingerichtet und der Referenz zugeordnet werden. Es wird empfohlen, die Seiten in **Organisationsverwaltung** zum Einrichten von Nummernkreisen zu verwenden. Wenn modulspezifische Einstellungen erforderlich sind, können Sie die Seite Parameter in einem Modul verwenden, um Nummernkreise für die Referenzen in diesem Modul anzugeben. Sie können beispielsweise in **Debitoren** und **Kreditoren** Nummernkreisgruppen einrichten, um bestimmten Debitoren oder Kreditoren bestimmte Nummernkreise zuzuordnen. Wenn Sie einen Nummernkreis einrichten, müssen Sie einen Bereich angeben, der definiert, welche Organisation den Nummernkreis verwendet. Der Bereich kann **Gemeinsam genutzt**, **Unternehmen**, **Juristische Person** oder **Organisationseinheit** sein. Die Bereiche **Juristische Person** und **Unternehmen** können auch mit **Steuerkalenderperiode** kombiniert werden, um noch spezifischere Nummernkreise zu erstellen. Nummernkreisformate werden aus Segmenten gebildet. Nummernkreise, die einen anderen Bereich als **Gemeinsam genutzt** besitzen, können Segmente enthalten, die dem Bereich entsprechen. Ein Nummernkreis mit dem Bereich **Juristische Person** kann beispielsweise ein Segment für juristische Personen enthalten. Durch Einfügen eines Bereichssegments in das Nummernkreisformat können Sie den Bereich eines bestimmten Datensatzes anhand seiner Nummer feststellen. Neben den Segmenten, die Bereichen entsprechen, können Nummernkreisformate die Segmente **Konstante** und **Alphanumerische Segmente** enthalten. Ein Segment vom Typ **Konstante** enthält eine Gruppe von Buchstaben, Zahlen oder Symbolen, die unverändert bleiben. Ein Segment vom Typ **Alphanumerisch** enthält eine Gruppe von Buchstaben oder Zahlen, die jedes Mal schrittweise erhöht werden, wenn eine Nummer aus dem Nummernkreis verwendet wird. Verwenden Sie ein Nummernzeichen (\#) zur Angabe inkrementeller Nummern und ein kaufmännisches Und-Zeichen zur Angabe inkrementeller Buchstaben. Mit dem Format \#\#\#\#\#\_2017 wird beispielsweise der Nummernkreis 00001\_2017, 00002\_2017 usw. erstellt.
 Nummernkreisbeispiele
 ------------------------
 
@@ -50,7 +50,7 @@ Im folgenden Beispiel werden Spesenabrechnungsnummern für die juristische Perso
 
 ### <a name="sales-order-numbers"></a>Auftragsnummern
 
-Im folgenden Beispiel werden Auftragsnummern für die Unternehmenskennung **CEU** eingerichtet. **Bereich:**Vertrieb **Referenz:**Auftrag **Umfang:**Unternehmen **Unternehmen:**CEU
+Im folgenden Beispiel werden Auftragsnummern für die Unternehmenskennung **CEU** eingerichtet. **Bereich:** Vertrieb **Referenz:** Auftrag **Umfang:** Unternehmen **Unternehmen:** CEU
 | Segmente  | Segmenttyp | Wert    |
 |-----------|--------------|----------|
 | Segment 1 | Konstante     | AU-      |
@@ -60,7 +60,7 @@ Im folgenden Beispiel werden Auftragsnummern für die Unternehmenskennung **CEU*
 
 ### <a name="purchase-requisition-numbers"></a>Bestellanforderungsnummern
 
-Im folgenden Beispiel werden Bestellanforderungsnummern organisationsweit verwendet. **Bereich:**Einkauf **Referenz:**Bestellanforderung **Umfang:**Freigegeben
+Im folgenden Beispiel werden Bestellanforderungsnummern organisationsweit verwendet. **Bereich:** Einkauf **Referenz:** Bestellanforderung **Umfang:** Freigegeben
 | Segmente  | Segmenttyp | Wert    |
 |-----------|--------------|----------|
 | Segment 1 | Konstante     | BestAnf      |

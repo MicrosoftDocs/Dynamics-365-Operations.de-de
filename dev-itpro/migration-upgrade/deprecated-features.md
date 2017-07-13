@@ -1,9 +1,9 @@
 ---
 title: Veraltete Funktionen
-description: In diesem Thema wird die Funktion beschrieben, die in Dynamics 365 for Operations entfernt wurden oder entfernt werden sollen. Es sind auch Funktionen, die in der Ausgabe Dynamics AX 7.0 veraltet sind.
+description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 46a6f054f1cc5162e19d962964eb6eeb780087a6
+ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
+ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -29,8 +29,40 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 
-In diesem Thema wird die Funktion beschrieben, die in Dynamics 365 for Operations entfernt wurden oder entfernt werden sollen. Es sind auch Funktionen, die in der Ausgabe Dynamics AX 7.0 veraltet sind.
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funktionen, die in Dynamics 365 for Finance and Operations, Enterprise Edition Juli 2017 Update veraltet wurden
+
+### <a name="warehouse-mobile-devices-portal"></a>Portal für mobile Geräte für das Lager
+
+Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – WMDP) war eine eigenständige Komponente, die für lokale Selbstbereitstellung vorgesehen war. Diese Komponente wird von Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition nicht mehr unterstützt. Eine systemeigener App, die die Benutzererfahrung verbessert, hat die Funktionalität von WMDP ersetzt. 
+
+|                                  |                                                 |
+|----------------------------------|-------------------------------------------------|
+| **Grund für Abschreibung**       | Doppelte Funktionen.                        |
+| **Ersetzt durch eine andere Funktion?** | Ja. Diese Funktion wurde von Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einrichtung und Voraussetzungen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations - Warehousing einrichten und konfigurieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Betroffene Module**             | Lagerortverwaltung und Transportverwaltung |
+
+### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Erweiterte Abgleichsregel für Bankabstimmung für den manuelle Abgleich
+
+Eine Abgleichsregel, die verwendet wurde, um ein Bankdokument beim manuellen Abgleich von Dokumenten der Auszugsposition im Abstimmungsarbeitsblatt auszuwählen und zu markieren
+
+|                                  |                                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------------|
+| **Grund für Abschreibung**       | Begrenzte Verwendung.                                                                         |
+| **Ersetzt durch eine andere Funktion?** | Nr. Funktionen zur Spaltenfilterung sollten verwendet werden, um nach Dokumente für die Abstimmung zu suchen. |
+| **Betroffene Module**             | Bargeld- und Bankverwaltung                                                               |
+
+### <a name="windows-8-tablet-app"></a>Windows 8-Tablet-App
+
+Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und Genehmigung.
+
+|                                  |                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **Grund für Abschreibung**       | Finance and Operations ist mit Tablets kompatibel. Die Tablet-App wird nicht mehr benötigt. |
+| **Ersetzt durch eine andere Funktion?** | Nr.                                                                                      |
+| **Betroffene Module**             | Spesenverwaltung                                                                       |
+
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funktionen, die in Dynamics 365 for Operations 1611 mit Plattformaktualisierung 3 veraltet sind
 ---------------------------------------------------------------------------------------------
@@ -301,7 +333,7 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Leistungsverwaltung wurde in Microsoft Dynamics 365 for Operations vollständig neu gestaltet.                                                                                                                                                                                                                                        |
+| Grund für Abschreibung       | Die Leistungsverwaltung wurde in Microsoft Dynamics 365 for Finance and Operations vollständig neu gestaltet.                                                                                                                                                                                                                                        |
 | Ersetzt durch eine andere Funktion? | Die neu entworfene Leistungsverwaltungsfunktion gibt mehr Kontrolle über den Inhalt der Ziele, die Messungen, die verwendet werden, um den Fortschritt zu verfolgen, und die Zuordnung der Begleitunterlagen. Ziele können als Vorlagen gespeichert werden und anschließend wieder verwendet werden. Diese Funktion kann Ihnen helfen, zusätzliche Ziele für Ihre Mitarbeiter schneller einzurichten. |
 | Betroffene Module             | Human Capital Management                                                                                                                                                                                                                                                                                                               |
 
@@ -484,7 +516,7 @@ In Dynamics AX 2012 R3, konnte sich Retail Modern POS direkt mit dem Kanal DB in
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistung und der Sicherheitserweiterungen, die in Dynamics 365 for Operations aufgetreten sind, führen diese Funktionen nun zu mehr Problemen, als es löst. |
+| Grund für Abschreibung       | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistung und der Sicherheitserweiterungen, die in Finance and Operations aufgetreten sind, führen diese Funktionen nun zu mehr Problemen, als sie lösen. |
 | Ersetzt durch eine andere Funktion? | Nr. Nur Standard Retail Server Kommunikation wird nun unterstützt.    |
 | Betroffene Module             | Kanal DB/Retail Modern POS                                    |
 
@@ -808,9 +840,5 @@ Personalverwaltung-Lohndaten
 | Grund für Abschreibung       | Die Funktion wurde durch eine andere Funktion ersetzt.                                    |
 | Ersetzt durch eine andere Funktion? | Management Reporter (**Finanzberichterstellung** in der aktuellen Version von Dynamics AX) |
 | Betroffene Module             | Hauptbuch                                                                              |
-
-
-
-
 
 

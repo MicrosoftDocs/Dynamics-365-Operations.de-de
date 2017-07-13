@@ -1,9 +1,9 @@
 ---
 title: Budgetplanung
-description: "Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierten Funktionen in Microsoft Dynamics 365 for Operations Budgetplanbereich bereitzustellen. Ziel dieser Übungseinheit ist es, ein schnelles Konfigurationsbeispiel für das Budgetplanungsmodul zu illustrieren und zu zeigen, wie die Budgetplanung mithilfe dieser Konfiguration erstellt werden kann.  Diese Übungseinheit bezieht sich speziell auf die folgenden Geschäftsprozesse oder Aufgaben: - Organisationshierarchie für Budgetplanung erstellen und Benutzersicherheit konfigurieren - Haushaltsplanszenarien, Haushaltsplanspalten, Layouts und Excel-Vorlagen definieren - Budgetplanungsprozess erstellen und aktivieren - Budgetplandokumente mithilfe von aktuellen Daten aus dem Hauptbuch erstellen - mithilfe der Zuweisungen Budgetplandokumentdaten anpassen - Budgetplandokumentdaten in Excel bearbeiten."
+description: "Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierten Funktionen in der Enterprise- Edition des Microsoft Dynamics 365 for Finance and Operations-Budgetplanbereichs bereitzustellen. Ziel dieser Übungseinheit ist es, ein schnelles Konfigurationsbeispiel für das Budgetplanungsmodul zu illustrieren und zu zeigen, wie die Budgetplanung mithilfe dieser Konfiguration erstellt werden kann.  Diese Übungseinheit bezieht sich speziell auf die folgenden Geschäftsprozesse oder Aufgaben: - Organisationshierarchie für Budgetplanung erstellen und Benutzersicherheit konfigurieren - Haushaltsplanszenarien, Haushaltsplanspalten, Layouts und Excel-Vorlagen definieren - Budgetplanungsprozess erstellen und aktivieren - Budgetplandokumente mithilfe von aktuellen Daten aus dem Hauptbuch erstellen - mithilfe der Zuweisungen Budgetplandokumentdaten anpassen - Budgetplandokumentdaten in Excel bearbeiten."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dbe2b386de9e88af354015705e1444987a3f7e82
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierten Funktionen in Microsoft Dynamics 365 for Operations Budgetplanbereich bereitzustellen. Ziel dieser Übungseinheit ist es, ein schnelles Konfigurationsbeispiel für das Budgetplanungsmodul zu illustrieren und zu zeigen, wie die Budgetplanung mithilfe dieser Konfiguration erstellt werden kann.  Diese Übungseinheit bezieht sich speziell auf die folgenden Geschäftsprozesse oder Aufgaben: - Organisationshierarchie für Budgetplanung erstellen und Benutzersicherheit konfigurieren - Haushaltsplanszenarien, Haushaltsplanspalten, Layouts und Excel-Vorlagen definieren - Budgetplanungsprozess erstellen und aktivieren - Budgetplandokumente mithilfe von aktuellen Daten aus dem Hauptbuch erstellen - mithilfe der Zuweisungen Budgetplandokumentdaten anpassen - Budgetplandokumentdaten in Excel bearbeiten. 
+Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierten Funktionen in der Enterprise- Edition des Microsoft Dynamics 365 for Finance and Operations-Budgetplanbereichs bereitzustellen. Ziel dieser Übungseinheit ist es, ein schnelles Konfigurationsbeispiel für das Budgetplanungsmodul zu illustrieren und zu zeigen, wie die Budgetplanung mithilfe dieser Konfiguration erstellt werden kann.  Diese Übungseinheit bezieht sich speziell auf die folgenden Geschäftsprozesse oder Aufgaben: - Organisationshierarchie für Budgetplanung erstellen und Benutzersicherheit konfigurieren - Haushaltsplanszenarien, Haushaltsplanspalten, Layouts und Excel-Vorlagen definieren - Budgetplanungsprozess erstellen und aktivieren - Budgetplandokumente mithilfe von aktuellen Daten aus dem Hauptbuch erstellen - mithilfe der Zuweisungen Budgetplandokumentdaten anpassen - Budgetplandokumentdaten in Excel bearbeiten. 
 
 <a name="prerequisites"></a>Voraussetzungen 
 ------------------
 
-Für dieses Lernprogramm müssen Sie auf die Dynamics 365 for Operations-Umgebung mit Contoso-Demodaten zugreifen und werden als Administrator auf der Instanz bereitgestellt. Verwenden Sie für diese Übungseinheit nicht den privaten Browsermodus - melden Sie sich falls erforderlich von einem anderen Konto ab und mit den Administrator-Anmeldeinformationen wieder bei Dynamics 365 for Opeerations an. Wenn Sie sich bei Microsoft Dynamics 365 for Operations anmelden, **MÜSSEN** Sie das Kontrollkästchen "Angemeldet bleiben" aktivieren. Dadurch wird ein persistentes Cookie erstellt, das die Excel-App derzeit benötigt. Wenn Sie sich bei Dynamics 365 for Operations nicht mithilfe eines IE-Browsers anmelden, werden Sie aufgefordert, sich mit der Excel-App anzumelden. Beim Sie auf "Anmelden" in der Excel-App klicken, wird im IE ein Popup- Fenster geöffnet und Sie **MÜSSEN** das Kontrollkästchen "Angemeldet bleiben" aktivieren. Wenn Sie in der Excel-App auf "Anmelden" klicken, und nichts passiert, leeren Sie den Cookie-Zwischenspeicher des IE.
+Für dieses Lernprogramm müssen Sie auf die Finance and Operations-Umgebung mit Contoso-Demodaten zugreifen und werden als Administrator auf der Instanz bereitgestellt. Verwenden Sie für diese Übungseinheit nicht den privaten Browsermodus - melden Sie sich falls erforderlich von einem anderen Konto ab und mit den Administrator-Anmeldeinformationen wieder bei Finance and Operations an. Wenn Sie sich bei Finance and Operations anmelden, **MÜSSEN** Sie das Kontrollkästchen "Angemeldet bleiben" aktivieren. Dadurch wird ein persistentes Cookie erstellt, das die Excel-App derzeit benötigt. Wenn Sie sich bei Finance and Operations nicht mithilfe eines IE-Browsers anmelden, werden Sie aufgefordert, sich mit der Excel-App anzumelden. Beim Sie auf "Anmelden" in der Excel-App klicken, wird im IE ein Popup- Fenster geöffnet und Sie **MÜSSEN** das Kontrollkästchen "Angemeldet bleiben" aktivieren. Wenn Sie in der Excel-App auf "Anmelden" klicken, und nichts passiert, leeren Sie den Cookie-Zwischenspeicher des IE.
 
 ## <a name="scenario-overview"></a>**Szenarioüberblick**
 Julia arbeitet als Finanzmanager in Contoso Entertainment Systems in Deutschland (DEMF). Mit dem sich nähernden GJ 2016 muss sie an der Einrichtung des Unternehmensbudgets für das kommende jahr arbeiten. Budgetvorbereitung sieht wie folgt aus:
@@ -148,7 +148,7 @@ Budgetplanspalten sind entweder monitär- oder mengenbasierte Spalten, die im Bu
 
 [![Autofill](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Kehren Sie zu Dynamics 365 for Operations zurück und aktualisieren Sie die Seite. Veröffentlichte Werte werden in Dynamics 365 for Operations angezeigt. 
+4.7. Kehren Sie zu Finance and Operations zurück und aktualisieren Sie die Seite. Veröffentlichte Werte werden in Finance and Operations angezeigt. 
 
 [![Aktualisieren](./media/screenshot23.png)](./media/screenshot23.png)
 
@@ -233,7 +233,7 @@ Die tatsächlichen Beträge das vorherige Jahr werden in das Budget des aktuelle
 
 [![Veröffentlichen](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3. Kehren Sie zum Budgetplandokument in Dynamics 365 for Operations zurück. Klicken Sie auf Workflow&gt; übermitteln, um das Dokument automatisch zu genehmigen
+9.3. Kehren Sie zum Budgetplandokument in Finance and Operations zurück. Klicken Sie auf Workflow&gt; übermitteln, um das Dokument automatisch zu genehmigen
 
 [![Automatisch genehmigt](./media/screenshot37.png)](./media/screenshot37.png) 
 

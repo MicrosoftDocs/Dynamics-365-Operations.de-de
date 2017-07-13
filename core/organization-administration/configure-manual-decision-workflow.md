@@ -3,13 +3,13 @@ title: Konfigurieren einer manuellen Entscheidung in einem Workflow
 description: "Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Entscheidung konfigurieren können."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -75,7 +75,7 @@ Sie müssen eine Betreffzeile und Anweisungen für Benutzer eingeben, die der ma
     6.  Klicken Sie auf **Schließen**.
 
 ## <a name="specify-the-possible-outcomes-of-a-decision"></a>Angeben der möglichen Ergebnisse einer Entscheidung
-Wenn ein Dokument einem Entscheidungsträger zugewiesen wird, wird dem Entscheidungsträger in der Regel eine Frage gestellt. Die Antwort auf diese Frage ist normalerweise **Ja**oder **Nein** oder **Wahr** oder **Falsch**. Gehen Sie folgendermaßen vor, um die möglichen Ergebnisse der manuellen Entscheidung anzugeben.
+Wenn ein Dokument einem Entscheidungsträger zugewiesen wird, wird dem Entscheidungsträger in der Regel eine Frage gestellt. Die Antwort auf diese Frage ist normalerweise **Ja** oder **Nein** oder **Wahr** oder **Falsch**. Gehen Sie folgendermaßen vor, um die möglichen Ergebnisse der manuellen Entscheidung anzugeben.
 
 1.  Klicken Sie im linken Bereich auf **Grundeinstellungen**.
 2.  Geben Sie im Feld **Ergebnis 1** auf der Registerkarte **Ergebnisse** den Namen des Ergebnisses oder die Option ein.
@@ -152,10 +152,10 @@ Sie können Benachrichtigungen an Personen senden, wenn eine Entscheidung getrof
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmte Benutzer von Microsoft Dynamics 365 for Operations</td>
+    <td>Bestimmte Benutzer von Microsoft Dynamics 365 Finance and Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste <strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer von Finance and Operations. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -215,10 +215,10 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem eine manuelle Aufgabe zugewiese
     </tr>
     <tr class="even">
     <td>Benutzer</td>
-    <td>Bestimmte Benutzer von Dynamics 365 for Operations</td>
+    <td>Bestimmte Benutzer von Finance and Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, um die Entscheidung zuzuweisen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste <strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer von Finance and Operations. Wählen Sie die Benutzer aus, um die Entscheidung zuzuweisen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -301,10 +301,10 @@ Wenn der Benutzer die Entscheidung nicht innerhalb der vorgesehenen Zeit trifft,
     </tr>
     <tr class="odd">
     <td>Benutzer</td>
-    <td>Bestimmte Benutzer von Dynamics 365 for Operations</td>
+    <td>Bestimmte Benutzer von Finance and Operations</td>
     <td><ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die Liste I<strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer für Dynamics 365 for Operations. Wählen Sie die Benutzer aus, an die die Entscheidung eskaliert werden soll, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste <strong>Verfügbare Benutzer</strong> enthält die Liste aller Benutzer von Finance and Operations. Wählen Sie die Benutzer aus, an die die Entscheidung eskaliert werden soll, und verschieben Sie diese Benutzer in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

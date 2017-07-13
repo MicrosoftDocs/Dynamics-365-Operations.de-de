@@ -3,7 +3,7 @@ title: Registrierungskennungen
 description: Unter den Themen in diesem Abschnitt finden Sie Informationen zum Einrichten und Verwalten von Anmelde-IDs.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 264824
 ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fc4a56eceb75673b7a044bd8392f8d0cc675e869
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -57,10 +57,12 @@ Erfassungskategorie ist die Land/Regionskennung, die für Länder/Regionen für 
 |-----------------------|----------------|
 | Registrierungstyp     | Das Land/Region des Erfassungstyps|
 | Beschränkt auf         | Der Typ der Einschränkung, die auf den Steuererfassungstyp gilt: Keine, Organisation, Person.|
-| Registrierungskategorie | …Die eindeutige Erfassungskennung genehmigt für die Verwendung im Land. Die vollständige Liste der unterstütztem in den Kategorien AX7.1 befindet sich unten. |
+| Registrierungskategorie | …Die eindeutige Erfassungskennung genehmigt für die Verwendung im Land. Die vollständige Liste der unterstützten Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition-Kategorien finden Sie unten. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Geben die Erfassung-ID für globale Adressbuchdatensätze ein
-Das globale Adressbuch (GAB) in Microsoft Dynamics 365 or Operations enthält konsolidierte Adressinformationen für Debitoren, Kreditoren, Kontakte, Geschäftsbeziehungen und juristischen Personen. Weitere Informationen finden Sie unter [Globales Adressbuch](/dynamics365/operations/organization-administration/overview-global-address-book). Die Parteidatensätze, die im globalen Adressbuch gespeichert sind, können einen oder mehrere Adressdatensätze enthalten. Diese Adressen werden für verschiedene Zwecke verwendet, z. B. für Rechnungsstellung oder Lieferung. Sie können Erfassungs-IDs für Adressinformationen für Debitoren, Kreditoren, Arbeitskräfte und juristische Personen einrichten. Suchen Sie den Datensatz für die Partei (juristische Personen, Kreditoren, Debitoren, Arbeitskraft) für die Sie die Registerkennung eingeben möchten, und klicken dann **Erfassungs-IDs** in den Formularen, die mit der Partei, juristischen Personen, Kreditoren, Debitoren, Arbeitskraft verknüpft ist, um die Seite **Adresse verwalten** zu öffnen. Auf der **Steuerregistrierung** Registerkarte klicken Sie **Hinzufüge** und geben folgende Informationen zur Erfassungs-ID ein
+
+Das globale Adressbuch (GAB) in Microsoft Finance and Operations enthält konsolidierte Adressinformationen für Debitoren, Kreditoren, Kontakte, Geschäftsbeziehungen und juristischen Personen. Weitere Informationen finden Sie unter [Globales Adressbuch](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Die Parteidatensätze, die im globalen Adressbuch gespeichert sind, können einen oder mehrere Adressdatensätze enthalten. Diese Adressen werden für verschiedene Zwecke verwendet, z. B. für Rechnungsstellung oder Lieferung. Sie können Erfassungs-IDs für Adressinformationen für Debitoren, Kreditoren, Arbeitskräfte und juristische Personen einrichten. Suchen Sie den Datensatz für die Partei (juristische Personen, Kreditoren, Debitoren, Arbeitskraft) für die Sie die Registerkennung eingeben möchten, und klicken dann **Erfassungs-IDs** in den Formularen, die mit der Partei, juristischen Personen, Kreditoren, Debitoren, Arbeitskraft verknüpft ist, um die Seite **Adresse verwalten** zu öffnen. Auf der **Steuerregistrierung** Registerkarte klicken Sie **Hinzufüge** und geben folgende Informationen zur Erfassungs-ID ein
+
 
 |Feld                |Beschreibung                                                |
 |---------------------|-----------------------------------------------------------|
@@ -77,26 +79,26 @@ Das globale Adressbuch (GAB) in Microsoft Dynamics 365 or Operations enthält ko
 > Die Umsatzsteuernummer der juristischen Person, Kreditor, Debitor kann von der Registrations-IDs ausgewählt werden, die der MwSt.-ID zugeordnet sind und für die Partei eingegeben wurden.
 
 ## <a name="search-for-records-by-registration-id"></a>Suche für Datensätze nach Erfassungskennung
-Suche für Parteidatensätze auf einer Erfassungskennung ist in die Steuerformulare verfügbar, die für die Partei, zur juristischen Person, den Kreditor, z Debitor und der Arbeitskraft zugeordnet werden. Klicken Sie auf **Erfassung ID-Suche**, um die Seite**Erfassung ID-Suchkriterien** zu öffnen. Definieren Sie die Suchkriterien und klicken Sie auf **Suchen**. Im System werden die ausgewählten Datensätze aus dem globalen Adressbuch zugeordnet und die Typen des Parteidatensatzes angezeigt.
+Suche für Parteidatensätze auf einer Erfassungskennung ist in die Steuerformulare verfügbar, die für die Partei, zur juristischen Person, den Kreditor, z Debitor und der Arbeitskraft zugeordnet werden. Klicken Sie auf **Erfassung ID-Suche**, um die Seite **Erfassung ID-Suchkriterien** zu öffnen. Definieren Sie die Suchkriterien und klicken Sie auf **Suchen**. Im System werden die ausgewählten Datensätze aus dem globalen Adressbuch zugeordnet und die Typen des Parteidatensatzes angezeigt.
 
 ## <a name="supported-registration-categories"></a>Unterstützte Registrierungskategorien
-In der folgenden Tabelle werden die unterstützten Erfassungstypen in Dynamics 365 for Operations aufgeführt. Wenn Sie mit den Microsoft Dynamics AX 2012-Feldern für IDs Erfassung vertraut sind, ordnet diese Tabelle auch diese Felder in Dynamics 365 for Operations Registrationskategorien zu.
+In der folgenden Tabelle werden die unterstützten Erfassungstypen in Finance and Operations aufgeführt. Wenn Sie mit den Microsoft Dynamics AX 2012-Feldern für IDs Erfassung vertraut sind, ordnet diese Tabelle auch diese Felder in Finance and Operations Registrationskategorien zu.
 
-| Dynamics 365 für Operations-Erfassungskategorie         |Land/Region  | Dynamics AX 2012 Begriff/Feld|
+| Finance and Operations-Erfassungskategorie         |Land/Region  | Dynamics AX 2012 Begriff/Feld|
 |---------------------------------------------------------------|---------------------|---------------------------------|
-| MwSt.-Kennung                                                        | Alle Länder der Europäischen Union (EU)|  Steuernummer (Gesetzgebungstyp in STEUER-ID AX2012 R3)|
-| Enterprise-ID (COID)                                          | Belgien, Tschechische Republik, Estland, Ungarn, Lettland, Litauen, Polen, Schweiz | Unternehmensnummer (EnterpriseNumber) Registrationsnummer (RegNum\_W) Registrationsnummer (RegNum\_W) Registrationsnummer (RegNum\_W) Registrationsnummer (RegNum\_W) Unternehmenscode (EnterpriseCode) Registrationsnummer (RegNum\_W) UID (Gesetzgebungstyp UID in AX2012 R3) |
+| MwSt.-Kennung                                                        | Alle Länder der Europäischen Union (EU)|  Steuernummer (Gesetzgebungstyp in STEUER-ID AX 2012 R3)|
+| Enterprise-ID (COID)                                          | Belgien, Tschechische Republik, Estland, Ungarn, Lettland, Litauen, Polen, Schweiz | Unternehmensnummer (EnterpriseNumber) Registrationsnummer (RegNum\_W) Registrationsnummer (RegNum\_W) Registrationsnummer (RegNum\_W) Registrationsnummer (RegNum\_W) Unternehmenscode (EnterpriseCode) Registrationsnummer (RegNum\_W) UID (Gesetzgebungstyp UID in AX 2012 R3) |
 | Zweigstellenkennung                                                     | Belgien            | Zweigstellennummer (BranchNumber)|
 | (Spisová-značka Registrierungsnummer, ausgebende Behörde, Abschnitt) | Tschechische Republik     | Einsatznummer (CommercialRegisterInsetNumber). Im Handelsregister CommercialRegister) Abschnitt des Handelsregisters (CommercialRegisterSection )|
 | Zolldebitorkennung                                           | Finnland | Zolldebitorennummer (CustomsCustomerNumber\_FI)|
-| INN                                                           | Russische Föderation| INN (Gesetzgebungstyp in INN AX2012 R3)|
-| RRC                                                           | Russische Föderation| RRC (Gesetzgebungstyp in RRC AX2012 R3)|
-| OKDP                                                          | Russische Föderation| OKDP (Gesetzgebungstyp in OKDP AX2012 R3)|
-| OKPO                                                          | Russische Föderation| OKPO (Gesetzgebungstyp in OKPO AX2012 R3)|
-| RCOAD                                                         | Russische Föderation| RCOAD (Gesetzgebungstyp in RCOAD AX2012 R3)|
-| OGRN                                                          | Russische Föderation| OGRN (Gesetzgebungstyp in OGRN AX2012 R3) |
-| SNILS                                                         | Russische Föderation| SNILS (Gesetzgebungstyp in SNILS AX2012 R3)|
-| CIFTS                                                         | Russische Föderation| CIFTS (Gesetzgebungstyp in CIFTS AX2012 R3)|
+| INN                                                           | Russische Föderation| INN (Gesetzgebungstyp in INN AX 2012 R3)|
+| RRC                                                           | Russische Föderation| RRC (Gesetzgebungstyp in RRC AX 2012 R3)|
+| OKDP                                                          | Russische Föderation| OKDP (Gesetzgebungstyp in OKDP AX 2012 R3)|
+| OKPO                                                          | Russische Föderation| OKPO (Gesetzgebungstyp in OKPO AX 2012 R3)|
+| RCOAD                                                         | Russische Föderation| RCOAD (Gesetzgebungstyp in RCOAD AX 2012 R3)|
+| OGRN                                                          | Russische Föderation| OGRN (Gesetzgebungstyp in OGRN AX 2012 R3) |
+| SNILS                                                         | Russische Föderation| SNILS (Gesetzgebungstyp in SNILS AX 2012 R3)|
+| CIFTS                                                         | Russische Föderation| CIFTS (Gesetzgebungstyp in CIFTS AX 2012 R3)|
 
 Weitere Informationen zum Zuordnen von Erfaassungskennungen einschließlich erforderliche Voraussetzungen, finden Sie in den folgenden Aufgabenaufzeichnungen für Mehrwertsteuer-IDs in den Lebenszyklus-Dienstleistungen (LCS):
 

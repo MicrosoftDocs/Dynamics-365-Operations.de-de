@@ -3,7 +3,7 @@ title: Konfigurieren eines Ausgleichs
 description: "Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieser Artikel beschreibt die Parameter, die für den Ausgleich für Kreditoren und Debitoren verwendet werden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d3015004371aa041a7ee545df9a4c7f0e48ca31
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieser Artikel beschreibt die Parameter, die für den Ausgleich für Kreditoren und Debitoren verwendet werden. 
 
-Die folgenden Parameter haben Auswirkungen darauf, wie Ausgleiche in Microsoft Dynamics 365 for Operations verarbeitet werden. Ausgleich ist der Prozess für das Begleichen einer Rechnung durch eine Zahlung oder eine Gutschrift. Diese Parameter werden befinden sich im **Ausgleich**-Bereich der **Debitorenparameter** **Kreditorenkontenparameter**-Seiten.
+Die folgenden Parameter haben Auswirkungen darauf, wie Ausgleiche in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verarbeitet werden. Ausgleich ist der Prozess für das Begleichen einer Rechnung durch eine Zahlung oder eine Gutschrift. Diese Parameter werden befinden sich im **Ausgleich**-Bereich der **Debitorenparameter** **Kreditorenkontenparameter**-Seiten.
 
 -   **Automatischer Ausgleich** – Legen Sie diese Option auf **Ja** fest, wenn eine Transaktion bei der Buchung automatisch mit anderen offenen Posten ausgeglichen werden soll. Ist die Option auf **Nein** festgelegt, können Benutzer Transaktionen manuell ausgleichen, wenn sie Zahlungen eingeben, oder später, indem die Seite **Buchungen ausgleichen** verwenden.
 -   **Skontoverwaltung** – Geben Sie an wie ein [Skonto ausgeführt wird, wenn für eine Rechnung zu viel bezahlt wird](cash-discount-handling-overpayments.md) Bei einer Überzahlung kann das Skonto verringert werden, sie kann als Differenz behandelt werden oder sie kann beim Kreditoren oder Debitoren bleiben.
@@ -57,7 +57,7 @@ Die folgenden Parameter haben Auswirkungen darauf, wie Ausgleiche in Microsoft D
     -   **Konten in den Rechnungspositionen** – Das Skonto wird auf die Sachkonten auf der ursprünglichen Rechnung gebucht.
 -   **Positionen auf Freitextrechnungen und Zinsrechnungen markieren (nur Debitor)** – Legen Sie diese Option auf **Ja** fest, um die Schaltfläche **Rechnungspositionen markieren** auf den Seiten **Debitorenzahlungen eingeben**, **Zahlungserfassungsbeleg** und **Buchungen ausgleichen** zu aktivieren. Mit dieser Schaltfläche können Benutzer nun einzelne Positionen für den Ausgleich markieren.
 -   **Ausgleich priorisieren (nur Debitor)** – Legen Sie diese Option auf **Ja** fest, um die Schaltfläche **Nach Priorität markieren** auf den Seiten **Debitorenzahlungen eingeben** und **Buchungen ausgleichen** zu aktivieren. Diese Schaltfläche können Benutzer den zuvor festgelegten Ausgleichsauftrag für die Buchungen zuweisen.  Nach Anwendung des Standardausgleichsauftrags auf eine Buchung mithilfe der Schaltfläche können die Auftrags- und Zahlungszuteilung vor der Buchung geändert werden.
--   **Verwendungspriorität für automatische Ausgleiche**– Legen Sie diese Option auf **Ja**, um die festgelegte Prioritätsreihenfolge zu verwenden, wenn Buchungen automatisch ausgeglichen werden. Dieses Feld ist nur verfügbar, wenn Sie den **Ausgleich priorisieren**und **Automatischer Ausgleich** auf **Ja** festlegen.
+-   **Verwendungspriorität für automatische Ausgleiche**– Legen Sie diese Option auf **Ja**, um die festgelegte Prioritätsreihenfolge zu verwenden, wenn Buchungen automatisch ausgeglichen werden. Dieses Feld ist nur verfügbar, wenn Sie den **Ausgleich priorisieren** und **Automatischer Ausgleich** auf **Ja** festlegen.
 
 
 

@@ -3,14 +3,14 @@ title: "Benutzer für Kreditor-Kooperationen verwalten"
 description: "In diesem Thema wird beschrieben, wie Sie die Bereitstellung neuer Kreditorenzusammenarbeitsbenutzer anfordern können und wie neue Kreditorenzusammenarbeitkontakte hinzugefügt werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7e747547ed5cf4654a99382ecc8f9f6103ec5cfa
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ec7ed3a81d296e9bef4d26f1756b73883d560cb5
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 In diesem Thema wird beschrieben, wie Sie die Bereitstellung neuer Kreditorenzusammenarbeitsbenutzer anfordern können und wie neue Kreditorenzusammenarbeitkontakte hinzugefügt werden. 
 
-Die Kreditorenzusammenarbeitschnittstelle in Microsoft Dynamics 365 for Operations zeigt Informationen zu Bestellungen, Rechnungen und Lieferbestand externer Kreditoren an. Sie können neue Kreditorenzusammenarbeitkontakte erstellen und anfordern, dass neuen Benutzer bereitgestellt werden, wenn Sie als externer Kreditor mit der Sicherheitsrolle **Kreditorenadministrator (extern)** oder einer ähnlichen Berechtigung arbeiten. Sie können diese Aufgaben auch ausführen, wenn Sie als Beschaffungsspezialist arbeiten. In diesem Thema bezieht sich diese Rolle auf einen Beschaffungsspezialisten, der im Unternehmen arbeitet, das die Instanz von Microsoft Dynamics 365 for Operations besitzt. Weitere Informationen dazu, wie Kreditorenzusammenarbeit, wenn Sie ein externer Anbieter sind, finden Sie unter [Kreditoren mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Die Benutzeroberfläche für Kreditor-Kooperationen in Microsoft Dynamics 365 for Finance and Operations zeigt Informationen zu Bestellungen, Rechnungen und Lieferbestand externer Kreditoren an. Sie können neue Kreditorenzusammenarbeitkontakte erstellen und anfordern, dass neuen Benutzer bereitgestellt werden, wenn Sie als externer Kreditor mit der Sicherheitsrolle **Kreditorenadministrator (extern)** oder einer ähnlichen Berechtigung arbeiten. Sie können diese Aufgaben auch ausführen, wenn Sie als Beschaffungsspezialist arbeiten. In diesem Thema bezieht sich diese Rolle auf einen Beschaffungsspezialisten, der im Unternehmen arbeitet, das die Instanz von Finance and Operations besitzt. Weitere Informationen dazu, wie Kreditorenzusammenarbeit, wenn Sie ein externer Anbieter sind, finden Sie unter [Kreditoren mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Weitere Informationen dazu, wie Kreditorenzusammenarbeit, wenn Sie ein Beschaffungsprofil sind, finden Sie unter [Kreditorenzusammenarbeit mit für externe Kreditoren](vendor-collaboration-work-external-vendors.md).
 
@@ -62,12 +62,12 @@ Wird eine Anforderung übermittelt, wird sie der **Kreditorenzusammenarbeit-Benu
 Bevor Sie anfordern können, dass ein neuer Benutzer bereitgestellt wird, muss diese Person als Kontakt für einen oder mehrere Kreditoren eingerichtet werden. Um eine Anfrage für einen neuen Kreditorenzusammenarbeitsbenutzer zu erstellen:
 
 1.  Wählen die Seite **Alle Kontakte** und klicken Sie auf **Breitstellung Kreditorenbenutzer**.
-2.  Hier geben Sie die E-Mail-Adresse des Benutzers ein. Diese Adresse wird von dem Benutzer verwendet, um sich auf Dynamics 365 for Operations anzumelden. Wenn die E-Mail-Adresse einer Domäne angehört, die als Mandant mit Microsoft Azure erfasst wurde, muss die E-Mail-Adresse ein vorhandenes Azure Active Directory (ADD) Konto sein, um den Bereitstellungsprozess erfolgreich abzuschließen. Wenn die E-Mail-Adresse keiner Domäne angehört, die mit Microsoft Azure erfasst wird, wird ein ADD-Konto als Teil des Bereitstellungsprozesses erstellt und der neue Benutzer wird eine Einladungsmail erhalten. Verbraucheradressen mit Domänen wie @hotmail.com, @gmail.com oder @comcast.net können nicht dazu verwendet werden, um einen Dynamics 365 for Operations-Benutzer zu erfassen.
+2.  Hier geben Sie die E-Mail-Adresse des Benutzers ein. Diese Adresse wird vom Benutzer verwendet, um sich bei Finance and Operations anzumelden. Wenn die E-Mail-Adresse einer Domäne angehört, die als Mandant mit Microsoft Azure erfasst wurde, muss die E-Mail-Adresse ein vorhandenes Azure Active Directory (ADD) Konto sein, um den Bereitstellungsprozess erfolgreich abzuschließen. Wenn die E-Mail-Adresse keiner Domäne angehört, die mit Microsoft Azure erfasst wird, wird ein ADD-Konto als Teil des Bereitstellungsprozesses erstellt und der neue Benutzer wird eine Einladungsmail erhalten. Verbraucheradressen mit Domänen wie @hotmail.com, @gmail.com oder @comcast.net können nicht dazu verwendet werden, um einen Finance and Operations-Benutzer zu erfassen.
 3.  Setzen Sie die Option **Kreditorenzusammenarbeitzugriff zulässig** auf **Ja** für alle juristischen Personen, auf die der Benutzer zugreifen muss.
 4.  Wählen Sie im Abschnitt **Benutzerrollen zuweisen** das Kontrollkästen **Zuweisen** für die Sicherheitsrollen, die der neue Benutzer besitzen sollte.
 5.  Klicken Sie auf **Absenden**.
 
-Wenn die Kreditorenbenutzeranforderung übermittelt wird, wird das Feld **Kreditorenzusammenarbeit erlaubt** für das ausgewählte Kreditorenkonto auf **Ja** festgelegt und es wird ein Benutzeranforderungsworkflow gestartet. Im Rahmen des Workflows wird ein neuer Benutzer in Dynamics 365 for Operations erstellt und die Sicherheitsrollen zugewiesen. Darüber hinaus ist eine Azures B2B Dienstleistung aktiviert, die die Interaktion mit dem Azure Portal und  ein neues oder vorhandenes AAD-Konto dem Dynamics 365 for Operations Benutzerkonto initiiert.
+Wenn die Kreditorenbenutzeranforderung übermittelt wird, wird das Feld **Kreditorenzusammenarbeit erlaubt** für das ausgewählte Kreditorenkonto auf **Ja** festgelegt und es wird ein Benutzeranforderungsworkflow gestartet. Im Rahmen des Workflows wird ein neuer Benutzer in Finance and Operations erstellt und die Sicherheitsrollen zugewiesen. Darüber hinaus ist eine Azure B2B-Dienstleistung aktiviert, die die Interaktion mit dem Azure Portal initiiert und ein neues oder vorhandenes AAD-Konto dem Finance and Operations-Benutzer zuordnet.
 
 ### <a name="inactivate-a-user"></a>Benutzer deaktivieren
 
@@ -79,7 +79,7 @@ Es gibt zwei Möglichkeiten, den Zugriff auf die Kreditorenzusammenarbeit für e
 Um das Deaktivieren eines Benutzers anzufordern:
 
 1.  Wählen die Seite **Alle Kontakte** und klicken Sie auf **Kreditorenbenutzer** **deaktivieren**.
-2.  Schreiben Sie einen Kommentar im Feld**Geschäftsbegründung**.
+2.  Schreiben Sie einen Kommentar im Feld **Geschäftsbegründung**.
 3.  Klicken Sie auf **Absenden**.
 
 ### <a name="modify-security-roles"></a>Sicherheitsrollen ändern
@@ -89,7 +89,7 @@ Die Seite **Kreditorenbenutzerrollen verwalten** ist dieselbe wie die Seite **Kr
 Um anzufordern, dass die Sicherheitsrollen für einen Benutzer geändert werden:
 
 1.  Wählen Sie die Seite **Alle Kontakte** und klicken Sie auf **Kreditorenbenutzerrollen** **verwalten**.
-2.  Schreiben Sie einen Kommentar im Feld**Geschäftsbegründung**.
+2.  Schreiben Sie einen Kommentar im Feld **Geschäftsbegründung**.
 3.  Wählen Sie im Abschnitt **Verwalten von Benutzerrollen** die Sicherheitsrollen aus, die Sie zuordnen möchten, und deaktivieren Sie jene, die Sie entfernen möchten.
 4.  Klicken Sie auf **Absenden**.
 

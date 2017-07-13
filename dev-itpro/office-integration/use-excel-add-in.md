@@ -1,9 +1,9 @@
 ---
 title: Excel-Add-In verwenden
-description: "In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics Office-Add-in für Excel angezeigt, aktualisiert und bearbeitet werden. Sie können die Entitätsdaten über Excel oder Microsoft Dynamics 365 for Operations öffnen."
+description: "In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics Office-Add-in für Excel angezeigt, aktualisiert und bearbeitet werden."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c391fb70d837db9c0f167b392291fc1c5cc2bb53
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: f55e1e89d0e48819962c169a56f0f27dc0d792b4
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,16 +30,16 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics Office-Add-in für Excel angezeigt, aktualisiert und bearbeitet werden. Sie können die Entitätsdaten über Excel oder Microsoft Dynamics 365 for Operations öffnen.
+In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics Office-Add-in für Excel angezeigt, aktualisiert und bearbeitet werden. Sie können die Entitätsdaten über Excel oder Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, öffnen.
 
 Durch das Öffnen der Entitätsdaten in Microsoft Excel können Sie die Daten mit dem Microsoft Dynamics Office-Add-in für Excel schnell und einfach anzeigen und bearbeiten. Das Add-In erfordert Microsoft Excel 2016. **Hinweis:** Wenn Ihr Microsoft Azure Active Directory (Azure AD)-Mandant für die Verwendung von Active Directory Federation Services (AD FS) konfiguriert ist, müssen Sie sicherstellen, dass das Update von Mai 2016 eingespielt wurde, sodass Sie über das Excel-Add-In korrekt angemeldet werden können.
 
-## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-operations"></a>Öffnen von Entitätsdaten in Excel beim Start von Dynamics 365 for Operations
-1.  Klicken Sie in Microsoft Dynamics 365 for Operations auf einer Seite auf **In Microsoft Office öffnen**. Wenn die Stammdatenquelle (Tabelle) der Seite dieselbe ist wie die Stammdatenquelle für beliebige Entitäten, werden standardmäßige **In Excel öffnen**-Optionen für die Seite generiert. **In Excel öffnen**-Optionen finden Sie auf häufig verwendeten Seiten wie **Alle Kreditoren** und **Alle Debitoren**.
+## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations"></a>Öffnen von Entitätsdaten in Excel beim Start von Dynamics 365 for Finance and Operations
+1.  Klicken Sie in Microsoft Dynamics 365 for Finance and Operations auf einer Seite auf **In Microsoft Office öffnen**. Wenn die Stammdatenquelle (Tabelle) der Seite dieselbe ist wie die Stammdatenquelle für beliebige Entitäten, werden standardmäßige **In Excel öffnen**-Optionen für die Seite generiert. **In Excel öffnen**-Optionen finden Sie auf häufig verwendeten Seiten wie **Alle Kreditoren** und **Alle Debitoren**.
 2.  Klicken Sie auf eine **In Excel öffnen**-Option, um die generierte Arbeitsmappe zu öffnen. Diese Arbeitsmappe besitzt Bindungsinformationen für die Entität, einen Mauszeiger auf Ihre Umgebung und einen Zeiger auf das Excel-Add.
 3.  Klicken Sie in Excel auf die Option zum **Bearbeiten aktiveren**, damit das Excel Add-In ausgeführt werden kann. Das Excel-Add-In wird in einem Bereich auf der rechten Seite des Excel-Fensters ausgeführt.
 4.  Wenn Sie das Excel-Add-In zum ersten Mal ausführen, klicken Sie auf **Diesem Add-In vertrauen**.
-5.  Klicken Sie nach Aufforderung auf **Anmelden**, und melden Sie sich mit den Anmeldeinformationen an, mit denen Sie sich bei Dynamics 365 for Operations angemeldet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldungskontext von Internet Explorer und meldet Sie automatisch an, wenn dies möglich ist. Daher müssen Sie unbedingt den Benutzernamen in der oberen rechten Ecke des Excel-Add-Ins überprüfen.
+5.  Klicken Sie nach Aufforderung auf **Anmelden**, und melden Sie sich mit den Anmeldeinformationen an, mit denen Sie sich bei Dynamics 365 for Finance and Operations angemeldet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldungskontext von Internet Explorer und meldet Sie automatisch an, wenn dies möglich ist. Daher müssen Sie unbedingt den Benutzernamen in der oberen rechten Ecke des Excel-Add-Ins überprüfen.
 
 Das Excel-Add-In liest automatisch die Daten für die Entität, die Sie ausgewählt haben. Beachten Sie, dass keine Daten in der Arbeitsmappe sind, bis sie vom Excel-Add-In eingelesen werden.
 
@@ -48,7 +48,7 @@ Das Excel-Add-In liest automatisch die Daten für die Entität, die Sie ausgewä
 2.  Suchen Sie im Office Store nach dem Schlüsselwort "Dynamics", und klicken Sie auf **Hinzufügen** neben dem **Microsoft Dynamics Office Add-In** (dem Excel-Add-In).
 3.  Wenn Sie das Excel-Add-In zum ersten Mal ausführen, klicken Sie auf **Diesem Add-In vertrauen**, damit das Excel-Add-In ausgeführt werden kann. Das Excel-Add-In wird in einem Bereich auf der rechten Seite des Excel-Fensters ausgeführt.
 4.  Klicken Sie auf **Serverinformationen hinzufügen**, um den Bereich **Optionen** zu öffnen.
-5.  Kopieren Sie die Browser-URL der Dynamics 365 for Operations-Instanz, fügen Sie sie in das Feld **Server-URL** ein, und löschen Sie dann alles nach dem Hostnamen. Die resultierende URL soll derzeit den Hostnamen haben.
+5.  Kopieren Sie die Browser-URL der Dynamics 365 for Finance and Operations-Instanz, fügen Sie sie in das Feld **Server-URL** ein, und löschen Sie dann alles nach dem Hostnamen. Die resultierende URL soll derzeit den Hostnamen haben.
 Zum Beispiel wenn die URL https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage lautet, löschen Sie alles mit Ausnahme von **https://xxx.dynamics.com**.
 6.  Klicken Sie auf **OK** und dann auf **Ja**, um die Änderung zu bestätigen. Das Excel-Add-In wird neu gestartet und lädt die Metadaten. Die Schatfläche für den **Entwurf** ist jetzt verfügbar. Verfügt das Excel-Add-In über eine Schaltfläche **Applets laden**, sind Sie möglicherweise nicht als der korrekte Benutzer angemeldet. Weitere Informationen finden Sie unter "Die 'Applets laden'-Schaltfläche wird angezeigt" im Abschnitt "Problembehandlung".
 7.  Klicken Sie auf die Schaltfläche für **Entwurf**. Das Excel-Add-In ruft die Entitätsmetadaten ab.

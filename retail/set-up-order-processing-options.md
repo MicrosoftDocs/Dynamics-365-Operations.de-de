@@ -1,39 +1,41 @@
 ---
 title: "Einrichten der Optionen für Verarbeitungsoptionen"
-description: "Dieses Thema enthält Informationen dazu, wie Aufträge für Callcenter mithilfe Microsoft Dynamics 365 for Operations - Retail verarbeitet werden."
+description: "Dieses Thema enthält Informationen dazu, wie Aufträge für Callcenter mithilfe Microsoft Dynamics 365 for Retail verarbeitet werden."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 52b56274c8b72c67bc0a50f23114cebc510f1667
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: afdea84b7016fcc3214dc94f2d393a5f3d256370
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Einrichten der Optionen für Verarbeitungsoptionen
+# <a name="set-up-order-processing-options"></a>Auftragsabwicklungsoptionen einrichten
 
 [!include[banner](includes/banner.md)]
 
 
-Dieses Thema enthält Informationen dazu, wie Aufträge für Callcenter mithilfe Microsoft Dynamics 365 for Operations - Retail verarbeitet werden. 
+Dieses Thema enthält Informationen dazu, wie Aufträge für Callcenter mithilfe Microsoft Dynamics 365 for Retail verarbeitet werden. 
 
-Einzelhandel und Handel in Microsoft Dynamics 365 for Operations unterstützt mehrere Einzelhandelskanäle, wie Onlineshops, Callcenter und physische Geschäfte und Callcenter. In Callcentern nehmen Arbeitskräfte Aufträge von Kunden per Telefon entgegen und erstellen Aufträge. In diesem Thema wird beschrieben, wie ein Callcenter erstellt wird und Callcenteroptionen konfiguriert werden. Jedes Callcenter kann eigene Benutzer, Zahlungsmethoden, Preisgruppen, Finanzdimensionen und Lieferarten haben. Sie können diese Optionen konfigurieren, wenn Sie das Callcenter erstellen. **Wichtig:** Bevor die Callcenterworkflows verwendet werden können, wenn der aktuelle Dynamics AX-Benutzer Aufträge erstellt, muss der Benutzer dem Callcenter als Callcenterbenutzer zugewiesen werden. Darüber hinaus können Sie die Seite **Callcenter** verwenden, um Gruppen von Funktionen zu aktivieren oder zu deaktivieren, die für Callcenter eindeutig sind. Die folgenden Gruppen von Funktionen können aktiviert werden:
+Retail unterstützt mehrere Einzelhandelskanäle, wie Onlineshops, Onlinemarktplätze, physische Läden und Callcenter. In Callcentern nehmen Arbeitskräfte Aufträge von Kunden per Telefon entgegen und erstellen Aufträge. In diesem Thema wird beschrieben, wie ein Callcenter erstellt wird und Callcenteroptionen konfiguriert werden. Jedes Callcenter kann eigene Benutzer, Zahlungsmethoden, Preisgruppen, Finanzdimensionen und Lieferarten haben. Sie können diese Optionen konfigurieren, wenn Sie das Callcenter erstellen. **Wichtig:** Bevor die Callcenterworkflows verwendet werden können, wenn der aktuelle Dynamics AX-Benutzer Aufträge erstellt, muss der Benutzer dem Callcenter als Callcenterbenutzer zugewiesen werden. Darüber hinaus können Sie die Seite **Callcenter** verwenden, um Gruppen von Funktionen zu aktivieren oder zu deaktivieren, die für Callcenter eindeutig sind. Die folgenden Gruppen von Funktionen können aktiviert werden:
 
 -   **Auftragsabschluss** – Diese Gruppe umfasst Funktionen, die mit Zahlungen und Auftragsabschluss auf der Seite **Auftrag** verknüpft sind.
 -   **Direktverkauf** – Diese Gruppe umfasst Funktionen, die Quellcodes, Skripts und Kataloganforderungen zugeordnet sind.

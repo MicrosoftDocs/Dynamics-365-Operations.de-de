@@ -1,28 +1,29 @@
 ---
 title: Attribute erstellen und verwalten
-description: "Dieser Artikel beschreibt Attribute in Microsoft Dynamics 365 for Operations. Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten Feldern beschreiben."
+description: "Dieser Artikel beschreibt Attribute in Microsoft Dynamics 365 for Retail. Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten Feldern beschreiben."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: eaee0edb4822a386c8781d9929999cea326f0a40
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 4493c2f9e9e9dfe990f3b1670d3cd35e3bbaa38d
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Dieser Artikel beschreibt Attribute in Microsoft Dynamics 365 for Operations. Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten Feldern beschreiben.
+Dieser Artikel beschreibt Attribute in Microsoft Dynamics 365 for Retail. Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten Feldern beschreiben.
 
 Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten Feldern beschreiben. So können Sie die Speichergröße Produkts sowie die Festplattenkapazität angeben und ob das Produkt "Energy Star"-konform ist. Attribute können unterschiedlichen Einzelhandelsentitäten zugeordnet werden, wie Produktkategorien und Einzelhandelskanäle, und Standardwerte können für sie festgelegt werden. Produkte erben deren Attribute und Standardwerte für diese Attribute, wenn sie Produktkategorien oder Einzelhandelskanälen zugeordnet sind. Die Standardwerte können auf der Einzelproduktebene, Einzelhandelskanalebene oder in einem Einzelhandelskatalog überschrieben werden.
 
@@ -59,7 +60,7 @@ Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten 
 ## <a name="attribute-type"></a>Attributtyp
   [![Anlagenattribute](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
   
-Attribute basieren auf Attributtypen. Attributtypen identifizieren die Art von Daten, die für ein bestimmtes Attribut eingegeben werden können. Derzeit unterstützt Microsoft Dynamics 365 für Operations die folgenden Attributtypen:
+Attribute basieren auf Attributtypen. Attributtypen identifizieren die Art von Daten, die für ein bestimmtes Attribut eingegeben werden können. Derzeit unterstützt Microsoft Dynamics 365 für Retail die folgenden Attributtypen:
 
 -   **Währung** – Dieser Attributtyp unterstützt Währungswerte. Er kann begrenzt (das heißt, kann er einen Wertebereich unterstützen) oder offengelassen werden.
 -   **DateTime** – Dieser Attributtyp unterstützt Datums- und Uhrzeitwerte. Er kann begrenzt (das heißt, kann er einen Wertebereich unterstützen) oder offengelassen werden.

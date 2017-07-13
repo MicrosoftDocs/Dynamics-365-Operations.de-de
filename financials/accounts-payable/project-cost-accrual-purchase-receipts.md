@@ -1,15 +1,15 @@
 ---
 title: Projektkostenabgrenzung beim Empfang von Bestellungen
-description: "In diesem Thema wird beschrieben, wie Projektkosten vom Empfang von Bestellungen in Microsoft Dynamics 365 for Operations abgegrenzt werden können."
+description: "In diesem Thema wird beschrieben, wie Projektkosten vom Empfang von Bestellungen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, abgegrenzt werden können."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acb14deb9d77927ffc95500e4e97763ba3ad7826
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b46929d2991f3ec1b38d54ddc57de632aa9b01b9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Projektkosten vom Empfang von Bestellungen in Microsoft Dynamics 365 for Operations abgegrenzt werden können. 
+In diesem Thema wird beschrieben, wie Projektkosten vom Empfang von Bestellungen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, abgegrenzt werden können. 
 
 Rechnungen für ein Projekt werden häufig später als die Waren und Dienstleistungen geliefert, was erheblichen Auswirkungen auf Projektleistungskennzahlen (KPIs) haben kann. Es wichtig, in der Lage zu sein, diese Buchungen in Projektberichten und Finanzberichten zu verfolgen.
 
@@ -38,7 +38,7 @@ Das folgende Beiespielszenario illustriert dieses.
 
 Contoso Consulting hat ein neues Cloudbereitstellungsprojekt gestartet. Eine Bestellung wird erstellt, um einen Computer für das Projekt zu erwerben. Der Computer kostet 1500 USD und Installationsdienstleistungen kosten 150 USD. Der Kreditor hat den Computer geliefert und installiert, aber die Rechnung noch nicht Contoso Consulting erreicht. Der Projektmanager möchte eine Projektkostenabgrenzung von 1650 USD haben, bevor die Rechnung gesendet wird. Diese Kosten müssen in den Monatsendefinanzaufstellungen des Unternehmens auch angezeigt werden. 
 
-Die antizipierten Kosten müssen auf der Finanzebene und Projektebene und für Berichtszwecke erfasst werden. In Dynamics 365 for Operations kann die wertmäßige Aktualisierung des Produktzugangs für den Artikel und die Beschaffungskategorien nachverfolgt werden. 
+Die antizipierten Kosten müssen auf der Finanzebene und Projektebene und für Berichtszwecke erfasst werden. In Finance and Operations kann die wertmäßige Aktualisierung des Produktzugangs für den Artikel und die Beschaffungskategorien nachverfolgt werden. 
 
 Für Artikel auf der **Kreditorenparameter** Seite wählen Sie die **Produktzugänge im Sachkonto** Option aus.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
@@ -73,7 +73,7 @@ Es ist möglich, Beschaffungskategorien auf die Projektkategorien auf der Seite 
 
 **Schritt 3:** Standardmäßige Entwurfskreditorenrechnung erstellen 
 
-In Dynamics 365 for Operations wirkt sich das Buchen eines Produktzugangs nicht Projektinformationen aus. Als Problemumgehung können Sie ein Entwurfskreditorenrechnungs-Recht erstellen, wenn Sie den Empfang von Bestellungen gebucht wurden. Wechseln Sie zu **Bestellung** Seite &gt; **Rechnungsregisterkarte** &gt; **Generieren** &gt; **Rechnung**. Dies erstellt ein ausstehendes Rechnungsdokument, das Projektinformationen aktualisiert. 
+In Finance and Operations wirkt sich das Buchen eines Produktzugangs nicht auf die Projektinformationen aus. Als Problemumgehung können Sie ein Entwurfskreditorenrechnungs-Recht erstellen, wenn Sie den Empfang von Bestellungen gebucht wurden. Wechseln Sie zu **Bestellung** Seite &gt; **Rechnungsregisterkarte** &gt; **Generieren** &gt; **Rechnung**. Dies erstellt ein ausstehendes Rechnungsdokument, das Projektinformationen aktualisiert. 
 
 Das Erstellen einer Entwurfskreditorenrechnung generiert ausstehende Projektbuchungen. 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 

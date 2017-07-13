@@ -3,7 +3,7 @@ title: "Arbeitsplan und Arbeitsgänge"
 description: "Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge. Ein Arbeitsplan definiert den Prozess für die Produktion eines Produkts oder die Produktvariante. Er beschreibt jeden Schritt (Arbeitsgang) im Produktionsprozess und den Auftrag für den diese Schritte ausgeführt werden müssen. Für jeden Schritt definiert der Arbeitsplan erforderliche betrieblichen Ressourcen, die Zeit der erforderlichen Einstellungen und die Bearbeitungszeit sowie wie die Kosten berechnet werden sollen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3abc4e6f648ecc10105346ce181d8bc752d95f17
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 61548f2e308781e8329ca3cd26c3e6502d2f92c9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -37,7 +37,7 @@ Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge.
 <a name="overview"></a>Überblick
 --------
 
-Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich ist, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Für jeden Arbeitsgang definiert der Arbeitsplan auch die betrieblichen Ressourcen, die erforderlich sind, die Zeit, die benötigt wird, um den Arbeitsgang einrichten und ausführen, und wie Kosten berechnet werden sollen. Sie können dieselben Arbeitsplan verwenden, um mehrere Produkte anzuzeigen, oder Sie können einen eindeutigen Arbeitsplan für jedes Produkt oder Produktvariante definieren. Sie können sogar mehrere Arbeitspläne für das gleiche Produkt haben. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie der Menge, die produziert werden muss ab. Die Definition eines Arbeitsplans in Microsoft Dynamics 365 for Operations besteht aus vier verschiedenen Elemente, die zusammen den Produktionsprozess beischreiben:
+Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich ist, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Für jeden Arbeitsgang definiert der Arbeitsplan auch die betrieblichen Ressourcen, die erforderlich sind, die Zeit, die benötigt wird, um den Arbeitsgang einrichten und ausführen, und wie Kosten berechnet werden sollen. Sie können dieselben Arbeitsplan verwenden, um mehrere Produkte anzuzeigen, oder Sie können einen eindeutigen Arbeitsplan für jedes Produkt oder Produktvariante definieren. Sie können sogar mehrere Arbeitspläne für das gleiche Produkt haben. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie der Menge, die produziert werden muss ab. Die Definition eines Arbeitsplans in Microsoft Dynamics 365 for Finance and Operations besteht aus vier verschiedenen Elemente, die zusammen den Produktionsprozess beischreiben:
 
 -   **Arbeitsplan** – Ein Arbeitsplan definiert die Struktur des Produktionsprozesses. Das bedeutet, er definiert die Reihenfolge der Arbeitsgänge.
 -   **Arbeitsgang** – Ein Arbeitsgang gibt einen Schritt in einem benannten Arbeitsplan an (z. B. **Zusammenbau**). Der gleiche Vorgang kann in mehreren Arbeitsplänen auftreten und unterschiedliche Arbeitsgangnummern haben.
@@ -45,7 +45,7 @@ Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich i
 -   **Arbeitsplanversion** – Eine Arbeitsplanversion definiert den Arbeitsplan, der verwendet wird, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Arbeitsplanversionen ermöglichen das Wiederverwendet von Arbeitsplänen für Produkte oder Änderungen. Sie ermöglichen auch unterschiedliche Arbeitpläne, um die gleichen Produkte zu erzeugen. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie dem Standort oder der Menge, die produziert werden muss ab.
 
 ## <a name="routes"></a>Arbeitspläne
-Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der verwendet wird, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Jeder Arbeitsgang wird eine Arbeitsgangnummer und einen Folgeaktivitätsarbeitsgang zugewiesen. Die Reihenfolge der Arbeitsgangsformularen eines Arbeitsplan-Netzwerks kann als Diagramm dargestellt werden, das ein oder mehrere Startpunkte und einen bestimmten Endpunkt hat. In Dynamics 365 for Operations werden Arbeitspläne basierend auf dem Typ der Struktur unterschieden. Die zwei Typen der Arbeitspläne sind einfache Arbeitspläne und Arbeitsplan-Netzwerke. In den Produktionssteuerungsparametern können Sie angeben, ob nur einfache Arbeitspläne verwendet werden können oder ob die komplexeren Arbeitsplan-Netzwerke verwendet werden können.
+Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der verwendet wird, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Jeder Arbeitsgang wird eine Arbeitsgangnummer und einen Folgeaktivitätsarbeitsgang zugewiesen. Die Reihenfolge der Arbeitsgangsformularen eines Arbeitsplan-Netzwerks kann als Diagramm dargestellt werden, das ein oder mehrere Startpunkte und einen bestimmten Endpunkt hat. In Dynamics 365 for Finance and Operations werden Arbeitspläne basierend auf dem Typ der Struktur unterschieden. Die zwei Typen der Arbeitspläne sind einfache Arbeitspläne und Arbeitsplan-Netzwerke. In den Produktionssteuerungsparametern können Sie angeben, ob nur einfache Arbeitspläne verwendet werden können oder ob die komplexeren Arbeitsplan-Netzwerke verwendet werden können.
 
 ### <a name="simple-routes"></a>Einfache Arbeitspläne
 
@@ -53,7 +53,7 @@ Ein einfacher Arbeitsplan ist fortlaufend, und es ist nur einen Startpunkt für 
 
 [![Einfache Arbeitspläne](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Wenn Sie nur einfache Arbeitspläne in den Produktionssteuerungsparametern aktivieren, generiert Dynamics 365 for Operations automatisch die Arbeitsgangnummern (10, 20, 30 usw.), wenn Sie den Arbeitsplan definieren.
+Wenn Sie nur einfache Arbeitspläne in den Produktionssteuerungsparametern aktivieren, generiert Finance and Operations automatisch die Arbeitsgangnummern (10, 20, 30 usw.), wenn Sie den Arbeitsplan definieren.
 
 ### <a name="route-networks"></a>Arbeitsplan-Netzwerke
 
@@ -85,10 +85,10 @@ Ein Arbeitsplan muss genehmigt werden, bevor er im Produktionsprozess verwendet 
 
 Jeder Arbeitsplan kann separat genehmigt oder widerrufen werden. Beachten Sie, dass, wenn ein Arbeitsplan widerrufen ist, alle zugehörigen Arbeitsplanversionen auch widerrufen sind. In den Produktionssteuerungsparametern können Sie angeben, ob die Arbeitsplangenehmigung widerrufen werden kann und ob genehmigte Arbeitspläne geändert werden können.  
 
-Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer müssen anschließend ihre Identität bestätigen, indem sie [elektronische Signaturen](/dynamics365/operations/organization-administration/electronic-signature-overview) verwenden.
+Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer müssen anschließend ihre Identität bestätigen, indem sie [elektronische Signaturen](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview) verwenden.
 
 ## <a name="operations"></a>Handelsrechtl. Buchung
-Ein Arbeitsgang ist ein Schritt im Produktionsprozess. In Dynamics 365 for Operations, besitzt jeder Arbeitsgang eine Kennung und eine einfache Beschreibung. Die folgenden Tabellen zeigt typische Beispiele für Arbeitsgänge einer Maschinenwerkstatt.
+Ein Arbeitsgang ist ein Schritt im Produktionsprozess. In Dynamics 365 for Finance and Operations besitzt jeder Arbeitsgang eine Kennung und eine einfache Beschreibung. Die folgenden Tabellen zeigt typische Beispiele für Arbeitsgänge einer Maschinenwerkstatt.
 
 | Arbeitsgang  | Beschreibung        |
 |------------|--------------------|
@@ -128,7 +128,7 @@ Arbeitsgangzuordnungen bietet viel Flexibilität, wenn Sie die Arbeitspläne def
 
 ### <a name="modifying-product-specific-routes"></a>Ändern der produktspezifischen Arbeitspläne
 
-Wenn Sie die **Arbeitsplan** Seite über die **Freigegebene Produkte** Seite öffnen, werden die Arbeitsplanversionen angezeigt, die dem ausgewählten freigegebenen Produkt zugeordnet sind. In diesem Zusammenhang zeigt Dynamics 365 for Operations für jeden Arbeitsgang Eigenschaften aus der Arbeitsgangzuordnung die am besten zu der Arbeitsplanversion passen. Beachten Sie, dass die Liste der Arbeitsgänge die **Artikelcode** und **Arbeitsplancode** Eigenschaften aus der Arbeitsgangzuordnung enthält. Daher kann bestimmt werden, welche Arbeitsgangzuordnung angezeigt wird.  
+Wenn Sie die **Arbeitsplan** Seite über die **Freigegebene Produkte** Seite öffnen, werden die Arbeitsplanversionen angezeigt, die dem ausgewählten freigegebenen Produkt zugeordnet sind. In diesem Zusammenhang zeigt Dynamics 365 for Finance and Operations für jeden Arbeitsgang Eigenschaften aus der Arbeitsgangzuordnung die am besten zu der Arbeitsplanversion passen. Beachten Sie, dass die Liste der Arbeitsgänge die **Artikelcode** und **Arbeitsplancode** Eigenschaften aus der Arbeitsgangzuordnung enthält. Daher kann bestimmt werden, welche Arbeitsgangzuordnung angezeigt wird.  
 
 Auf der Seite **Arbeitsplan** können Sie die betrieblichen Eigenschaften des Arbeitsgangs, wie die Bearbeitungszeit oder die Kostenkategorien, ändern. Die Änderungen werden für die Arbeitsgangzuordnung gespeichert, die über den Arbeitsplan und das freigegebene Produkt festgelegt sind, auf die in die aktuelle Arbeitsplanversion verwiesen wird. Wenn die Arbeitsgangzuordnung, die angezeigt wird, nicht für den Arbeitsplan und das freigegebene Produkt festgelegt ist, erstellt das System eine Kopie der Arbeitsgangzuordnung. Die Kopie *ist* für den Arbeitsplan und das freigegebene Produkt spezifisch. Änderungen betreffen daher keine anderen Arbeitspläne oder freigegebene Produkte. Um zu prüfen, welche der Arbeitsgangzuordnung auf der **Arbeitsplan** Seite geändert wird, beachten Sie die **Artikelcode** und **Arbeitsplancode** Felder.  
 
@@ -150,9 +150,9 @@ Wenn Ihr Unternehmen Standardarbeitsgänge verwendet und die Arbeitsgangparamete
 
 ### <a name="applying-operation-relations"></a>Arbeitsgangzuordnungen anwenden
 
-In einigen Fällen muss Dynamics 365 for Operations die betrieblichen Eigenschaften für einen Arbeitsgang finden. Wenn beispielsweise eine Bestellung erstellt wird, müssen die betrieblichen Eigenschaften einzelner Arbeitsgänge von Arbeitsgangzuordnungen dem Produktionsarbeitsplan kopiert werden. In solchen Fällen sucht Dynamics 365 for Operations die relevanten Arbeitsgangzuordnungen von der bestimmtesten Kombination bis zu unbestimmtesten Kombination.  
+In einigen Fällen muss Dynamics 365 for Finance and Operations die betrieblichen Eigenschaften für einen Arbeitsgang finden. Wenn beispielsweise eine Bestellung erstellt wird, müssen die betrieblichen Eigenschaften einzelner Arbeitsgänge von Arbeitsgangzuordnungen dem Produktionsarbeitsplan kopiert werden. In solchen Fällen sucht Finance and Operations die relevanten Arbeitsgangzuordnungen von der bestimmtesten Kombination bis zu unbestimmtesten Kombination.  
 
-Wenn Dynamics 365 for Operations nach der für ein freigegebenes Produkt relevantsten Arbeitsgangzuordnung sucht, wird eine Arbeitsgangzuordnung, die der Artikelkennung des freigegebenen Produkts entspricht gegenüber einer Arbeitsgangzuordnung bevorzugt, die mit der Artikelgruppenkennung übereinstimmt. Eine Arbeitsgangzuordnung, die der Artikelgruppenkennung entspricht, wird gegenüber der Standardarbeitsgangzuordnung bevorzugt. Die Suchreihenfolge wird in der folgenden Tabelle veranschaulicht:
+Wenn Dynamics 365 for Finance and Operations nach der für ein freigegebenes Produkt relevantsten Arbeitsgangzuordnung sucht, wird eine Arbeitsgangzuordnung, die der Artikelkennung des freigegebenen Produkts entspricht gegenüber einer Arbeitsgangzuordnung bevorzugt, die mit der Artikelgruppenkennung übereinstimmt. Eine Arbeitsgangzuordnung, die der Artikelgruppenkennung entspricht, wird gegenüber der Standardarbeitsgangzuordnung bevorzugt. Die Suchreihenfolge wird in der folgenden Tabelle veranschaulicht:
 
 1.  **Artikelcode**=**Tabelle** und **Artikelrelation**=&lt;Artikelkennung&gt;
 2.  **Artikelcode**=**Gruppe** und **Artikelrelation**=&lt;Artikelgruppenkennung&gt;
@@ -188,7 +188,7 @@ Wenn Sie eine Arbeitsplanversion aktivieren, legen Sie diese als die Standardarb
 
 ### <a name="electronic-signatures"></a>Elektronische Signaturen
 
-Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt und aktiviert, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer, die Arbeitsplanversionen genehmigen und aktivieren, müssen dann ihre Identität bestätigen, indem sie eine [elektronische Signatur](/dynamics365/operations/organization-administration/electronic-signature-overview) verwenden.
+Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt und aktiviert, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer, die Arbeitsplanversionen genehmigen und aktivieren, müssen dann ihre Identität bestätigen, indem sie eine [elektronische Signatur](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview) verwenden.
 
 ### <a name="product-change-that-uses-case-management"></a>Produktänderung mit Anfrageverwaltung
 
@@ -199,7 +199,7 @@ Abhängig von Ihren Geschäftsanforderungen könnten Sie den Aufwand reduzieren,
 
 ### <a name="making-routes-independent-of-resources"></a>Arbeitsplan unabhängiger von Ressourcen gestalten
 
-In vielen Systemen müssen die betriebliche Ressource oder Ressourcengruppen, die einen Arbeitsgang ausführen sollen, in einem im Arbeitsplan angegeben werden. In Dynamics 365 for Operations können Sie Bedingungen definieren, die einer betrieblichen Ressource erfüllen muss, um für den Arbeitsgang verwendet werden sollen. Daher muss die betriebliche Ressource oder Ressourcengruppe, die verwendet werden soll, nicht festgelegt werden, bis der Vorgang tatsächlich geplant ist. Diese Funktion ist besonders nützlich, wenn Sie zahlreiche Arbeitskräfte oder Maschinen zu einer Gruppe zusammenfassen, die denselben Arbeitsgang ausführen können.  
+In vielen Systemen müssen die betriebliche Ressource oder Ressourcengruppen, die einen Arbeitsgang ausführen sollen, in einem im Arbeitsplan angegeben werden. In Dynamics 365 for Finance and Operations können Sie Bedingungen definieren, die einer betrieblichen Ressource erfüllen muss, um für den Arbeitsgang verwendet werden sollen. Daher muss die betriebliche Ressource oder Ressourcengruppe, die verwendet werden soll, nicht festgelegt werden, bis der Vorgang tatsächlich geplant ist. Diese Funktion ist besonders nützlich, wenn Sie zahlreiche Arbeitskräfte oder Maschinen zu einer Gruppe zusammenfassen, die denselben Arbeitsgang ausführen können.  
 
 Geben Sie beispielsweise an, dass ein Arbeitsgang eine betriebliche Ressource vom Typ **Maschine** erfordert, die eine **Stanzkraft** von 20 Tonnen hat. Das Planungsmodul löst diese Anforderungen in eine betriebliche Ressource oder Ressourcengruppe auf, wenn der Arbeitsgang geplant wird. Da Sie nur Anforderungen angeben können, anstatt den Vorgang mit einer bestimmten Maschine zu binden, sind Sie hiermit viel mehr Flexibel. Darüber hinaus ist die Verwaltung einfacher, wenn Ressourcen verschoben werden, oder neue Ressourcen hinzugefügt werden.  
 
@@ -240,7 +240,7 @@ Wenn Sie keine betriebliche Ressourcen oder eine Ressourcengruppe als Teil der R
 
 [Ressourcenfähigkeiten](resource-capabilities.md)
 
-[Elektronische Signatur (Überblick)](/dynamics365/operations/organization-administration/electronic-signature-overview)
+[Elektronische Signatur – Überblick](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview)
 
 
 

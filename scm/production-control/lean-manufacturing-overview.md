@@ -1,9 +1,9 @@
 ---
 title: "Lean Manufacturing Übersicht"
-description: "Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics AX bereit."
+description: "Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics 365 for Finance and Operations bereit."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -20,30 +20,30 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dd29e601cb78b6903e09e63182196427183f6dbe
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 376b521a7527b4f60bc01c080f8eabb5cb231b30
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Lean Manufacturing Übersicht
+# <a name="lean-manufacturing-overview"></a>Übersicht über Lean Manufacturing
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics AX bereit.
+Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, bereit.
 
 Lean Manufacturing stellt Tools bereit, die Sie für die Modellierung schlanker Arbeitsgänge verwenden können. Diese Tools unterstützen und fördern die folgenden Konzepte und Geschäftsaktivitäten:
 -   Erstellen einer Grundlage für das Lean Manufacturing, indem Sie Produktions- und Logistikprozesse als Produktionsflüsse modellieren.
 -   Implementieren eines schlankes Pullsystems, indem Sie Kanbans verwenden, um Bedarfsanforderungen zu signalisieren.
 -   Überwachen und Verwalten von Kanban-Einzelvorgängen.
 
-Die Lean Manufacturing-Architektur in Microsoft Dynamics AX 7 besteht aus Produktionsflüssen, Aktivitäten und Kanban-Regeln. Diese Strukturen werden vollständig in Microsoft Dynamics AX 7-Prozessen integriert. Sie können Lean Manufacturing in einer gemischten Produktionsumgebung verwenden, in der verschiedene Lieferanten-, Produktions- und Beschaffungsstrategien kombiniert sind. Diese Strategien enthalten Produktionsaufträge, Chargenaufträge für die verarbeitende Industrie, Bestellungen und Umlagerungsaufträge.
+Die Lean Manufacturing-Architektur in Finance and Operations besteht aus Produktionsflüssen, Aktivitäten und Kanban-Regeln. Diese Strukturen sind vollständig mit Finance and Operations-Prozessen integriert. Sie können Lean Manufacturing in einer gemischten Produktionsumgebung verwenden, in der verschiedene Lieferanten-, Produktions- und Beschaffungsstrategien kombiniert sind. Diese Strategien enthalten Produktionsaufträge, Chargenaufträge für die verarbeitende Industrie, Bestellungen und Umlagerungsaufträge.
 | **Wichtig**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sie können Microsoft Dynamics AX 7 verwenden, um die Implementierung des Produktion mit Kanbans zu unterstützen. Die erfolgreiche Implementierung von schlanken Prinzipien ist jedoch von den internen Geschäftsprozessen abhängig, die Sie verwenden, und von den tatsächlichen Produktionsbedingungen und -umgebungen. |
+| Sie können Finance and Operations verwenden, um die Implementierung von Lean Manufacturing mit Kanbans zu unterstützen. Die erfolgreiche Implementierung von schlanken Prinzipien ist jedoch von den internen Geschäftsprozessen abhängig, die Sie verwenden, und von den tatsächlichen Produktionsbedingungen und -umgebungen. |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a>Modellierung von Fertigungs- und Logistikprozessen als Produktionsflüssen
 Um die Grundlage für das Lean Manufacturing zu erstellen, modellieren Sie die Fertigungs- und Logistikprozesse als Produktionsflüsse. Diese Aktivität besteht aus den folgenden Aufgaben:
@@ -71,8 +71,8 @@ In der folgenden Liste werden die speziellen Kanban-Übersichten beschrieben:
 -   Kanban-Übersicht für Umlagerungseinzelvorgänge – Diese Übersicht stellt einen Überblick über die aktuellen Umlagerungseinzelvorgänge bereit. Sie können Entnahmelisten aktualisieren und erfassen, Umlagerungseinzelvorgänge starten und abschließen und andere Aufgaben ausführen.
 -   Kanban-Übersicht für Bearbeitungs-Einzelvorgänge – Diese Übersicht wurde entworfen, um den normalen Produktionsfluss zu unterstützen und einen Überblick über den aktuellen Status in einer oder mehreren Arbeitsgruppen zu geben. Mit dieser Übersicht können Kanbans priorisiert, entnommen oder produziert werden. Die Übersicht wurde auch entworfen, um Scannen von Strichcodes für die Berichterstellung von Kanbans zu unterstützen.
 
-## <a name="kanban-jobs-and-integration-with-microsoft-dynamics-ax-processes"></a>Kanban-Einzelvorgänge und Integration mit Microsoft Dynamics AX-Prozessen
-Kanban-Einzelvorgänge sind vollständig in aktuelle Prozesse für Lagerbuchungen in Microsoft Dynamics AX integriert.
+## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanban-Einzelvorgänge und Integration in Finance and Operations-Prozesse
+Kanban-Einzelvorgänge sind vollständig in aktuelle Prozesse für Lagerbuchungen in Finance and Operations integriert.
 -   Sie können Kommissionieraktivitäten ausführen, um Material aufzufüllen, das verwendet wird, um die Anforderungen von Kanban-Einzelvorgängen zu erfüllen.
 -   Sie können Kanban-Karten, Kanban-Karten im Umlauf und Entnahmelisten drucken, um die Verwendung von Kanbans zu unterstützen. Diese Dokumente werden verwendet, um Kanban-Einzelvorgänge am Lagerort und in der Produktion darzustellen, zu überwachen und zu erfassen.
 -   Sie können die Entnahme- und die Umlagerungsaktivitäten im Lager mittels Strichcodes erfassen.

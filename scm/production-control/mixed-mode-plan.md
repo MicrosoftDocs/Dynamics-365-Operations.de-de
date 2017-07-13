@@ -1,16 +1,16 @@
 ---
 title: "Mischplanung: Kombinieren Sie eigenständige, Prozess- und Lean-Beschaffung"
-description: "Dieser Artikel enthält Informationen zum gemischten Planungsmodus. In im gemischten Planungsmodus können Sie Ihre Lieferkette basierend auf dem Materialfluss modellieren. Microsoft Dynamics 365 for Operations stellt sicher, dass der Materialfluss Ihren Modellen folgt, unabhängig von der Zubehörrichtlinie, die ausgewählt wird (Kanbans, Produktionsaufträge, Bestellungen, Chargenaufträge oder Umlagerungsaufträge)."
+description: "Dieser Artikel enthält Informationen zum gemischten Planungsmodus. In im gemischten Planungsmodus können Sie Ihre Lieferkette basierend auf dem Materialfluss modellieren. Microsoft Dynamics 365 for Finance and Operations stellt sicher, dass der Materialfluss Ihren Modellen folgt, unabhängig von der Zubehörrichtlinie, die ausgewählt wird (Kanbans, Produktionsaufträge, Bestellungen, Chargenaufträge oder Umlagerungsaufträge)."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 686d61f476fbdf95348cacfd93b1e18d51e79732
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9dbbe540c919d27bafcc10614f308e5b6ba313f1
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält Informationen zum gemischten Planungsmodus. In im gemischten Planungsmodus können Sie Ihre Lieferkette basierend auf dem Materialfluss modellieren. Microsoft Dynamics 365 for Operations stellt sicher, dass der Materialfluss Ihren Modellen folgt, unabhängig von der Zubehörrichtlinie, die ausgewählt wird (Kanbans, Produktionsaufträge, Bestellungen, Chargenaufträge oder Umlagerungsaufträge). 
+Dieser Artikel enthält Informationen zum gemischten Planungsmodus. In im gemischten Planungsmodus können Sie Ihre Lieferkette basierend auf dem Materialfluss modellieren. Microsoft Dynamics 365 for Finance and Operations stellt sicher, dass der Materialfluss Ihren Modellen folgt, unabhängig von der Zubehörrichtlinie, die ausgewählt wird (Kanbans, Produktionsaufträge, Bestellungen, Chargenaufträge oder Umlagerungsaufträge). 
 
 Sie können die allgemeine Strategie für das Beschaffen eines Produkts unabhängig von der Produktstruktur auswählen.  
 
@@ -41,17 +41,17 @@ So können Sie Kanbansteuerelemente in der Assembly haben, in der Materialien f�
 Die Granularität der Lieferrichtlinien die im Produktprogrammplanungslauf verwendet werden, hängt von den Lagerdimensionen ab, die als Deckungsdimensionen aktiviert werden. Um den Produktprogrammplanungslauf zu aktivieren, um die Auffüllung und Bereitstellung von unterschiedlichen Arten der Lagerplätze zu steuern (beispielsweise durch das Trennen der Produktion für verschiedene Produktionseinheiten, oder durch Trennen unterschiedlicher Arten von Material- und Endproduktlagerorten), sollten Sie Standort und Lagerort als Deckungsdimensionen aktivieren. Alternativ kann der Lagerort als Deckungsdimension ausgelassen werden. In diesem Fall, wenn Sie erweiterte Lagerortverwaltung verwenden, werden alle Bewegungen innerhalb eines Lagerorts nach Lagerortarbeit gesteuert, während alle Bewegungen innerhalb von Lagerorten nach Entnahme-Kanbans gesteuert werden können.
 
 ## <a name="supply-policies"></a>Lieferrichtlinien
-Die Microsoft Dynamics 365 for Operations-Mischplanung steuert, wie ein Produkt geliefert wird und, basierend auf der Beschaffung, wie abgeleitete Anforderungen (Verbrauch von Artikeln aus einer \[Stückliste\]) ausgestellt werden. Basierend auf dem Auftragstyp beschafft das System Materialien automatisch nach den Anforderungen.  
+Die Finance and Operations-Mischplanung steuert, wie ein Produkt geliefert wird und, basierend auf der Beschaffung, wie abgeleitete Anforderungen (Verbrauch von Artikeln aus einer \[Stückliste\]) ausgestellt werden. Basierend auf dem Auftragstyp beschafft das System Materialien automatisch nach den Anforderungen.  
 
 Lieferrichtlinien können auf der Produktebene oder einer beliebigen Granularität definiert werden, die Ihre Anforderungen unterstützt. Sie definieren die Granularität von Lieferrichtlinien auf der **Standardauftragseinstellungen**-Seite.  
 
-Lieferrichtlinien können gesteuert werden nach Produkt, Artikeldimensionen (Konfiguration, Farbe und Größe), Standort und Lagerort. Diese Einstellung wird auf der Seite **Artikeldeckung**ausgeführt.  
+Lieferrichtlinien können gesteuert werden nach Produkt, Artikeldimensionen (Konfiguration, Farbe und Größe), Standort und Lagerort. Diese Einstellung wird auf der Seite **Artikeldeckung** ausgeführt.  
 
 Der standardmäßige Auftragstyp steuert das, was der Auftragsproduktprogrammplan generiert.  
 
-Unabhängig davon, wie die Lieferkette modelliert wird, unterstützt Dynamics 365 for Operations Ihre Mischung von Lieferrichtlinien. Sie können Produktionsaufträge haben, die von Kanbans beschafft werden. Alternativ können Sie einen Chargenauftrag haben, der ein Produkt benötigt, das nach Übertragungen oder nach Kanbans beschafft wird.  
+Unabhängig davon, wie die Lieferkette modelliert wird, unterstützt Finance and Operations Ihre Mischung von Lieferrichtlinien. Sie können Produktionsaufträge haben, die von Kanbans beschafft werden. Alternativ können Sie einen Chargenauftrag haben, der ein Produkt benötigt, das nach Übertragungen oder nach Kanbans beschafft wird.  
 
-Mit Dynamics 365 for Operations wird sichergestellt, dass der Materialfluss dem Modell folgt.  
+Mit Finance and Operations wird sichergestellt, dass der Materialfluss dem Modell folgt.  
 
 Der Lagerort für die Entnahme des Materials wird dynamisch zur Laufzeit zugewiesen, nachdem die Lieferrichtlinie definiert wurde.  
 
@@ -64,7 +64,7 @@ Ressourcenverbrauch ist wichtige Funktion. Ressourcenverbrauch ermöglicht, dass
 
 Ressourcenverbrauch erfordert, dass der Lagerort, von dem Material entnommen wird, auf Grundlage der Methode, wie das Produkt beschafft wird, zugewiesen wird. Das bedeutet, zur Laufzeit sucht das System die Ressourcen, die für das Herstellen verwendet werden sollen. Auf Grundlage dieser Ressourcen sucht das System dann den Entnahmelagerort.  
 
-Für Arbeit, die unabhängig von einer Lieferrichtlinie ist, müssen Sie nicht Informationen zur Stückliste ändern, wenn die Lieferung geändert wird. Für Ad-hoc-Änderungen stellt Dynamics 365 for Operations sicher, dass Materialien vom richtigen Lagerort beschafft werden.
+Für Arbeit, die unabhängig von einer Lieferrichtlinie ist, müssen Sie nicht Informationen zur Stückliste ändern, wenn die Lieferung geändert wird. Bei Ad-hoc-Änderungen stellt Finance and Operations sicher, dass Materialien vom richtigen Lagerort beschafft werden.
 
 ## <a name="process-manufacturing--the-production-type"></a>Prozessfertigung – Der Produktionstyp
 Für vollständige Flexibilität im gemischten Modus, empfiehlt es sich, Produktionstyp Stücklisten für alle Produkte verwenden. Sie können Kanbans, Produktionsaufträge, Umlagerungsaufträge oder Bestellungen Anschließend können, ein Produkt zu liefern. Für Fertigungsverarbeitung muss der Produktionstyp **Formel**, **Kuppelprodukt**, **Nebenprodukt** oder **Planungsartikel** verwendet werden. Kanbans und Produktionsaufträge können nicht für diese Produktionstypen verwendet werden.

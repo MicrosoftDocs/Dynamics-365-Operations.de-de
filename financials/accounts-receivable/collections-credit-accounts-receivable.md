@@ -1,9 +1,9 @@
 ---
 title: Haben und Inkassi in Debitoren
-description: "Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht auf der Seite &quot;Inkassi&quot; in Microsoft Dynamics 365 for Operations verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite &quot;Debitoren&quot;."
+description: "Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht auf der Seite \"Inkassi\" in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite \"Debitoren\"."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74f671a35fa1dbeeb120fe968b1bcc09868f57d5
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht auf der Seite "Inkassi" in Microsoft Dynamics 365 for Operations verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite "Debitoren".
+Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht auf der Seite "Inkassi" in Finance and Operations verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite "Debitoren".
 
 Bevor Sie mit dem Einrichten oder Verwenden von Inkassovorgängen beginnen, sollten Sie über Folgendes informiert sein:
 -   Fälligkeitsmomentaufnahmen zu Debitoren enthalten Saldorückblickinformationen zu einem bestimmten Zeitpunkt
@@ -59,9 +59,9 @@ Für jede Zahlungsfrist wird in der Zahlungsfristdefinition ein Fälligkeitsmome
 Debitorenpools sind Abfragen, durch die eine Gruppe von Debitorendatensätzen definiert wird, die für Inkassi oder Fälligkeitsprozesse angezeigt und verwaltet werden können. Verwenden Sie Debitorenpools, um Informationen auf den Listenseiten "Saldenrückblick", "Inkassoaktivitäten" und "Inkassofälle" zu filtern. Sie verwenden Debitorenpools auch zum Filtern der Debitorenkonten, die einbezogen werden, wenn Fälligkeitsmomentaufnahmen erstellt werden.
 
 ## <a name="collections-agents"></a>Inkassobeauftragte
-Standardmäßig können Benutzer von Microsoft Dynamics 365 for Operations alle Debitoreninformationen auf Inkassolistenseiten anzeigen. Sie können Datensätze von Inkassobeauftragten verwenden, um die Debitorenpools zu ermitteln, die zum Filtern von Informationen auf den Inkassolistenseiten und im auf der Seite "Inkassi" verfügbar sind. 
+Standardmäßig können Benutzer von Microsoft Dynamics 365 for Finance and Operations alle Debitoreninformationen auf Inkassolistenseiten anzeigen. Sie können Datensätze von Inkassobeauftragten verwenden, um die Debitorenpools zu ermitteln, die zum Filtern von Informationen auf den Inkassolistenseiten und im auf der Seite "Inkassi" verfügbar sind. 
 
-Ein Inkassobeauftragter ist eine Person, die in Zusammenarbeit mit Debitoren sicherstellt, dass Zahlungen rechtzeitig eingehen. In Microsoft Dynamics 365 for Operations sind Inkassobeauftragte Arbeitskräfte, die Benutzern auf der Seite "Benutzereinstellungen" zugewiesen werden.
+Ein Inkassobeauftragter ist eine Person, die in Zusammenarbeit mit Debitoren sicherstellt, dass Zahlungen rechtzeitig eingehen. In Finance and Operations sind Inkassobeauftragte Arbeitskräfte, die Benutzern auf der Seite "Benutzereinstellungen" zugewiesen werden.
 
 ## <a name="collections-list-pages"></a> Listenseiten "Inkassi" 
 Die folgenden Listenseiten können zum Organisieren von Inkassoinformationen verwendet werden.
@@ -71,7 +71,7 @@ Die folgenden Listenseiten können zum Organisieren von Inkassoinformationen ver
 
 > [!NOTE]
 > Es muss eine Fälligkeitsmomentaufnahme erstellt werden, bevor Sie die Informationen auf diesen Listenseiten anzeigen können. Es werden nur Informationen für Debitoren angezeigt, für die eine Fälligkeitsmomentaufnahme erstellt wurde. Die Datensätze, die auf der Listenseite angezeigt werden, können zusätzlich gefiltert werden, wie folgt:
-<li>Standardmäßig hat ein Benutzer von Microsoft Dynamics 365 for Operations Zugriff auf alle Debitoren, die über eine Fälligkeitsmomentaufnahme verfügen.</li>
+<li>Standardmäßig hat ein Finance and Operations-Benutzer Zugriff auf alle Debitoren, die über eine Fälligkeitsmomentaufnahme verfügen.</li>
 <li>Falls Debitorenpools vorhanden sind, muss ein Benutzer als Inkassobeauftragter eingerichtet werden, um die Pools zum Filtern von Informationen auf den Inkassolistenseiten zu verwenden. Die Informationen sind auf die Debitoren beschränkt, die im ausgewählten Debitorenpool enthalten sind.</li>
 <li>Wenn ein Benutzer als Inkassobeauftragter eingerichtet ist, sind nur die für diesen Inkassobeauftragten ausgewählten Pools auf der Listenseite verfügbar. Wenn die Umschaltfläche "Inkassobeauftragtem das Anzeigen aller Debitorenpools erlauben" auf der Seite "Inkassobeauftragter" für den Inkassobeauftragten ausgewählt ist, sind für den Beauftragten alle Pools verfügbar.</li>
 

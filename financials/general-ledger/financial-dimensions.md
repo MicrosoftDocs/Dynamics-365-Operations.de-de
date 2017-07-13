@@ -1,28 +1,27 @@
 ---
 title: Finanzdimensionen
-description: In diesem Artikel werden die unterschiedlichen Arten von Finanzdimensionen und deren Einrichtung beschrieben.
-author: RobinARH
+description: "In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen beschrieben und wie sie eingerichtet wurden."
+author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ems.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 25871
-ms.assetid: af54621c-c8be-4b72-b6df-dcf886c40ce4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 01f189b8de3f0cc707dcc54f4cde75aed95b8e3f
+ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
+ms.openlocfilehash: e82d53b3f6b4c8d3e2363f26576331e1d03434d9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,53 +30,58 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen erklärt und wie sie eingerichtet wurden.
 
-In diesem Artikel werden die unterschiedlichen Arten von Finanzdimensionen und deren Einrichtung beschrieben.
+Mithilfe der Seite **Finanzdimensionen** können Sie Finanzdimensionen erstellen, die als Kontosegmente für Kontenpläne verwendet werden können. Es gibt zwei Typen von Finanzdimensionen: benutzerdefinierte Dimensionen und entitätsunterstützte Dimensionen. Benutzerdefinierte Dimensionen werden von mehreren juristischen Personen gemeinsam genutzt und die Werte werden von Benutzern eingegeben und verwaltet. Bei entitätsunterstützten Dimensionen sind die Werte an anderen Stelle im System, wie "Debitoren"- oder "Filialen"-Entitäten definiert. Einige entitätsunterstützte Dimensionen werden von mehreren juristischen Personen gemeinsam genutzt, wobei andere entitätsunterstützten Dimensionen unternehmensspezifisch sind. 
 
-Mithilfe der Seite "Finanzdimensionen" können Sie Finanzdimensionen erstellen, die als Kontosegmente für Kontenpläne verwendet werden können. Es gibt zwei Typen von Finanzdimensionen, benutzerdefinierte Dimensionen und entitätsunterstützte Dimensionen. Benutzerdefinierte Dimensionen werden von mehreren juristischen Personen gemeinsam genutzt und die Werte werden vom Benutzer eingegeben und verwaltet. Entitätsunterstützte Dimensionen sind Dimensionen, deren Werte in anderen Teilen des Systems, wie "Debitoren" oder "Filialen" definiert werden. Einige entitätsunterstützte Dimensionen werden von mehreren juristischen Personen gemeinsam genutzt und manche entitätsunterstützte Dimensionen sind unternehmensspezifisch. 
+Nachdem Sie die Finanzdimensionen erstellt haben, weisen Sie jeder Finanzdimension auf der Seite **Finanzdimensionswerte** weitere Eigenschaften zu. 
 
-Nachdem Sie die Finanzdimensionen erstellt haben, weisen Sie jeder Finanzdimension auf der Seite "Finanzdimensionswerte" weitere Eigenschaften zu. 
-
-Obwohl Sie Finanzdimensionen verwenden können, um die juristische Personen darzustellen, ohne die juristischen Personen in Microsoft Dynamics 365 for Operations zu erstellen, sind Finanzdimensionen nicht dafür angelegt, auf die betrieblichen oder geschäftlichen Anforderungen von juristischen Personen einzugehen. Die Interunit-Buchhaltungsfunktionen in Microsoft Dynamics 365 for Operations sind nur für die Buchhaltungseinträge vorgesehen, die durch die einzelnen Buchung erstellt werden. 
+Sie können Finanzdimensionen verwenden, um juristische Personen darzustellen. Sie müssen in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, keine juristischen Personen erstellen. Allerdings wurden Finanzdimensionen nicht für betriebliche oder geschäftliche Anforderungen von juristischen Personen entworfen. Die Interunit-Buchhaltungsfunktionen in Finance and Operations sind nur für die Buchhaltungseinträge vorgesehen, die durch die einzelnen Buchungen erstellt werden. 
 
 Bevor Sie Finanzdimensionen als juristische Personen einrichten, prüfen Sie Ihre Geschäftsprozesse in den folgenden Bereichen, um zu bestimmen, ob diese Einstellung für Ihre Organisation sinnvoll ist:
 
--   Bestand
--   Verkäufe und Einkäufe zwischen Finanzdimensionen und juristischen Personen
--   Mehrwertsteuerberechnung und -erklärung
--   Betriebliche Berichterstellung
+- Lager
+- Verkäufe und Einkäufe zwischen Finanzdimensionen und juristischen Personen
+- Mehrwertsteuerberechnung und -erklärung
+- Betriebliche Berichterstellung
 
-Einige Beispiele für Einschränkungen sind:
+Im Folgenden finden Sie einige der Beschränkungen:
 
--   Sie können die Mehrwertsteuerfunktion nur mit juristischen Personen, nicht mit Finanzdimensionen, verwenden.
--   Einige Berichte enthalten keine Finanzdimensionen, sodass Sie nicht immer nach Finanzdimension berichten können, sofern diese berichte nicht modifiziert werden.
+- Sie können die Mehrwertsteuerfunktion nur mit juristischen Personen, nicht mit Finanzdimensionen, verwenden.
+- Einige Berichte enthalten keine Finanzdimensionen. Daher müssen Sie die Berichte für Meldung nach Finanzdimension ggf. ändern.
 
-**Benutzerdefinierte Dimensionen** 
+## <a name="custom-dimensions"></a>Benutzerdefinierte Dimensionen
 
-Um eine benutzerdefinierte Finanzdimension zu erstellen, wählen Sie im Feld "Werte verwenden" die Option &lt;Benutzerdefinierte Dimension &gt; aus. Sie können auch eine Kontenmaske angeben. Sie beschränkt die Menge und die Art von Informationen, die für Dimensionswerte eingegeben werden können. Sie können Zeichen eingeben, die dieselben bleiben für jeden Dimensionswert, wie Buchstaben oder einen Bindestrich. Sie können auch Nummernzeichen (\#) und kaufmännische Und-Zeichen (&) als Platzhalter für Buchstaben und Zahlen eingeben, die sich jedes Mal ändern werden, wenn ein Dimensionswert erstellt wird. Verwenden Sie ein Nummernzeichen (\#) als Platzhalter für eine Zahl und ein kaufmännisches Und-Zeichen (&) als Platzhalter für einen Buchstaben. 
+Um eine benutzerdefinierte Finanzdimension zu erstellen, wählen Sie im Feld **Werte verwenden** die Option **&lt;Benutzerdefinierte Dimension&gt;** aus. Sie können auch eine Kontenmaske angeben. Sie beschränkt die Menge und die Art von Informationen, die für Dimensionswerte eingegeben werden können. Sie können Zeichen eingeben, die dieselben bleiben für jeden Dimensionswert, wie Buchstaben oder einen Bindestrich (-). Sie können auch Nummernzeichen (\#) und kaufmännische Und-Zeichen (&) als Platzhalter für Buchstaben und Zahlen eingeben, die sich jedes Mal ändern werden, wenn ein Dimensionswert erstellt wird. Verwenden Sie ein Nummernzeichen (\#) als Platzhalter für eine Zahl und ein kaufmännisches Und-Zeichen (&) als Platzhalter für einen Buchstaben. Das Feld für die Formatmaske ist nur verfügbar, wenn Sie **&lt;Benutzerdefinierte Dimension&gt;** im Feld **Verwendungswerte** auswählen.
 
-**Beispiel** 
+**Beispiel**
 
-Um den Dimensionswert auf die Buchstaben CC und drei Zahlen einzuschränken, geben Sie CC-\#\#\# als Formatmaske ein. Dieses Feld ist nur verfügbar, wenn Sie &lt;Benutzerdefinierte Dimension &gt; in den Verwendungswerten im Feld auswählen. 
+Um den Dimensionswert auf die Buchstaben "CC" und drei Zahlen einzuschränken, geben Sie **CC-\#\#\#** als Formatmaske ein.
 
-**Entität unterstützte Dimensionen** 
+## <a name="entity-backed-dimensions"></a>Entitätsunterstützte Dimensionen
 
-Um eine entitätsunterstützte Finanzdimension zu erstellen, wählen Sie im Feld "Werte verwenden" eine vom System definierte Entität aus, auf der die Finanzdimension basieren soll. Basierend auf dieser Auswahl sind Finanzdimensionswerte erstellt. Um beispielsweise Dimensionswerte für Projekte zu erstellen. Für jeden Projektnamen wird ein Dimensionswert erstellt. Die Dimensionswerteseite zeigt die Werte für die Entität an und wenn sie unternehmensspezifisch sind, zeigt sie das Unternehmen für den Wert an. 
+Um eine entitätsunterstützte Finanzdimension zu erstellen, wählen Sie im Feld **Werte verwenden** eine vom System definierte Entität aus, auf der die Finanzdimension basieren soll. Basierend auf dieser Entität werden dann Finanzdimensionswerte erstellt. Um beispielsweise Dimensionswerte für Projekte zu erstellen, wählen Sie **Projekte** aus. Für jeden Projektnamen wird dann ein Dimensionswert erstellt. Die Seite **Finanzdimensionswerte** zeigt die Werte für die Entität. Wenn diese Werte unternehmensspezifisch sind, zeigt die Seite auch das Unternehmen an.
 
-**Dimensionen aktivieren** 
+## <a name="activating-dimensions"></a>Dimensionen aktivieren
 
-"Aktivieren der Finanzdimension" aktualisiert die Tabelle mit dem Finanzdimensionsnamen und entfernt gelöschte Dimensionen. Sie können Dimensionswerte eingegeben, bevor Sie eine Finanzdimension aktivieren, aber eine Finanzdimension kann nirgends verwendet werden, bis sie aktiviert ist. Sie können beispielsweise nicht eine Finanzdimension einer Kontostruktur hinzufügen, bis die Finanzdimension aktiviert wurde. Das Klicken auf "Aktivieren" aktualisiert alle Dimensionen mit Statusänderungen. 
+Wenn Sie eine Finanzdimension aktivieren, wird die Tabelle aktualisiert, sodass sie den Namen der Finanzdimension enthält. Gelöschte Dimensionen werden entfernt. Sie können Dimensionswerte eingeben, bevor Sie eine Finanzdimension aktivieren. Allerdings kann eine Finanzdimension nirgendwo genutzt werden, bis sie aktiviert wurde. Sie können beispielsweise nicht eine Finanzdimension einer Kontostruktur hinzufügen, bis die Finanzdimension aktiviert wurde. Wenn Sie auf **Aktivieren** klicken, werden alle Dimensionen aktualisiert und zeigen Statusänderungen. 
 
-**Übersetzungen** 
+## <a name="translations"></a>Texte
 
-Auf der Seite "Textübersetzung" können Sie Text eingeben, der in verschiedenen Sprachen für die ausgewählte Finanzdimension angezeigt werden soll. Auf der Seite "Hauptkontoübersetzung" können Sie Text eingeben, der für das Hauptkonto in verschiedenen Sprachen angezeigt werden soll. 
+Auf der Seite **Textübersetzung** können Sie den Text für die ausgewählte Finanzdimension in verschiedenen Sprachen eingeben. Auf der Seite **Hauptkontoübersetzung** können Sie den Text für das Hauptkonto in verschiedenen Sprachen eingeben. 
 
-**Juristische Person überschreiben** 
+## <a name="legal-entity-overrides"></a>Juristische Person überschreibt
 
-Nicht alle Dimensionen sind für alle juristischen Personen gültig und manche sind möglicherweise nur für eine bestimmte Zeitperiode relevant. In diesem kann der Abschnitt "Überschreibungen der juristischen Person" dazu verwendet werden, um festzulegen, für welche Unternehmen die Dimension ausgesetzt werden soll, wer der Besitzer ist und die Zeitperiode, während der die Dimension aktiv ist.
+Nicht alle Dimensionen sind für alle juristischen Personen gültig. Darüber hinaus sind möglicherweise mehrere Dimensionen nur während eines bestimmten Zeitraums relevant. In diesen Fällen können Sie den Abschnitt **Überschreibungen der juristischen Person** verwenden, um die Unternehmen, für die die Dimension ausgesetzt werden soll, den Besitzer und den Zeitraum, zu dem die Dimension aktiv ist, anzugeben.
 
+## <a name="deleting-financial-dimensions"></a>Löschen von Finanzdimensionen
 
+Zur Unterstützung bei der Wahrung der referenziellen Integrität der Daten können Finanzdimensionen nur in seltenen Fällen gelöscht werden. Wenn Sie versuchen, eine Finanzdimension zu löschen, werden folgende Kriterien überprüft:
 
+- Wird die Finanzdimension auf gebuchten oder nicht gebuchten Buchungen oder einer Art von Dimensionswertkombination verwendet?
+- Wird die Finanzdimension in einer aktiven Kontostruktur, erweiterten Regelstruktur oder in einem Finanzdimensionssatz verwendet?
+- Wird die Finanzdimensionsteil von einem Standardfinanzdimensions-Integrationsformat verwendet?
+- Wurde die Finanzdimension als Standarddimension eingerichtet?
 
-
+Wenn irgendwelche dieser Kriterien erfüllt sind, kann die Finanzdimension nicht gelöscht erfüllt.
 

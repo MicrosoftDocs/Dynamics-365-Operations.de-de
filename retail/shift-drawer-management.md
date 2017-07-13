@@ -3,25 +3,27 @@ title: Schicht- und Kassenladenverwaltung
 description: "Dieser Artikel erläutert die Einrichtung der zwei verschiedenen Schichttypen für POS: gemeinsam und eigenständig. Gemeinsame Schichten können von mehreren Benutzern an mehreren Orten verwendet werden. Eigenständige Schichten können nur von einer Arbeitskraft gleichzeitig verwendet werden."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e49d7d931b0796e4d62065793e7e79745c816682
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -46,11 +48,11 @@ Eine eigenständige Schicht gilt auf Kassenladenebene. Dieses Verfahren beschrei
 2.  Wählen Sie das Hardwareprofil für die eigenständige Schicht.
 3.  Prüfen Sie auf dem **Kassenlade**-Inforegister, ob die Option **Kassenladen für gemeinsame Schicht** auf **Nein** festgelegt ist.
 4.  Klicken Sie auf **Speichern**.
-5.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**.
+5.  Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**.
 6.  Wählen Sie die Kasse, für die eine eigenständige Schicht erforderlich ist, und klicken Sie dann auf **Bearbeiten**.
 7.  Wählen Sie im Feld **Hardwareprofil** das Hardwareprofil aus, das Sie in Schritt 2 ausgewählt haben.
 8.  Klicken Sie auf **Speichern**.
-9.  Klicken Sie auf **Einzelhandel und Handel** &gt; **IT (Einzelhandel)** &gt; **Vertriebsplan**.
+9.  Klicken Sie auf **Einzelhandel** &gt; **Handel IT** &gt; **Vertriebsplan**.
 10. Wählen Sie den Vertriebsplan **1090**, und klicken Sie dann auf **Jetzt ausführen**, um die Änderungen mit dem POS zu synchronisieren.
 
 ### <a name="use-a-stand-alone-shift"></a>Nutzen einer eigenständigen Schicht
@@ -74,11 +76,11 @@ Eine gemeinsame Schicht wird in einer Umgebung genutzt, in der mehrere Kassierer
 2.  Wählen Sie das Hardwareprofil für die gemeinsame Schicht.
 3.  Legen Sie auf dem **Kassenlade**-Inforegister die Option **Kassenladen für gemeinsame Schicht** auf **Ja** fest.
 4.  Klicken Sie auf **Speichern**.
-5.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**.
+5.  Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**.
 6.  Wählen Sie die Kasse, für die eine gemeinsame Schicht erforderlich ist, und klicken Sie dann auf **Bearbeiten**.
 7.  Wählen Sie im Feld **Hardwareprofil** das Hardwareprofil aus, das Sie in Schritt 2 ausgewählt haben.
 8.  Klicken Sie auf **Speichern**.
-9.  Klicken Sie auf **Einzelhandel und Handel** &gt; **IT (Einzelhandel)** &gt; **Vertriebsplan**.
+9.  Klicken Sie auf **Einzelhandel** &gt; **Handel IT** &gt; **Vertriebsplan**.
 10. Wählen Sie den Vertriebsplan **1090**, und klicken Sie dann auf **Jetzt ausführen**, um die Änderungen mit dem POS zu synchronisieren.
 
 ### <a name="use-a-shared-shift"></a>Verwenden der gemeinsamen Schicht

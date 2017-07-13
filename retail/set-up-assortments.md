@@ -1,37 +1,39 @@
 ---
 title: Einrichten von Sortimenten
-description: In diesem Artikel wird beschrieben, was ein Sortiment ist, und es wird beschrieben, wie Sie Sortimente in Microsoft Dynamics 365 for Operations - Retail eingerichtet.
+description: In diesem Artikel wird beschrieben, was ein Sortiment ist, und es wird beschrieben, wie Sie Sortimente in Microsoft Dynamics 365 for Retail einrichten.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 15811
 ms.assetid: d2580048-e798-4b33-85f9-d1bad7d262fc
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ffa60ad4890a783c05bbde09aa00189fb30bd706
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 3647d88baa544bf0fa8c7f9d752c712dc69a70d7
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-assortments"></a>Einrichten von Sortimenten
+# <a name="set-up-assortments"></a>Sortimente einrichten
 
 [!include[banner](includes/banner.md)]
 
 
-In diesem Artikel wird beschrieben, was ein Sortiment ist, und es wird beschrieben, wie Sie Sortimente in Microsoft Dynamics 365 for Operations - Retail eingerichtet.
+In diesem Artikel wird beschrieben, was ein Sortiment ist, und es wird beschrieben, wie Sie Sortimente in Microsoft Dynamics 365 for Retail einrichten.
 
 Ein Sortiment ist eine Sammlung zugehörige Produkte, die einem Einzelhandelskanal, wie einem physischen Laden oder einem Onlineshop, zugewiesen werden. Sie verwenden Sortimente, um die Produkte zu erkennen, die in jedem Shop verfügbar sind. Ein Sortiment kann Produktgruppen enthalten. Daher werden alle Produkte, die einer bestimmten Kategorie zugeordnet sind, ins Sortiment eingeschlossen. Ein Sortiment kann außerdem bestimmte Produkte und bestimmte Varianten von Produkten enthalten. Wenn Sie ein Sortiment einrichten, können Sie Tausende von Produkten für Ihre Einzelhandelskanälen gleichzeitig zuweisen, in beliebigen Kombinationen, die Ihre Shops erfordern. Sie können so viele Sortimente einrichten, wie Sie benötigen. Jedes Produkt kann einem oder mehreren Sortimenten hinzugefügt werden, und jedes Sortiment kann zu einem oder mehreren Einzelhandelskanälen zugewiesen werden. Sie definieren z. B. ein Sortiment, das einen Basissatz an Produkten enthält. Alle Filialen erhalten dieses Sortiment. Sie können dann ein anderes Sortiment definieren, das nur große Sportausrüstung enthält. Nur die größeren Filialen erhalten dieses Sortiment. Das folgende Diagramm zeigt, wie Produkte Sortimenten zugewiesen werden können und wie diese Sortimente Einzelhandelskanälen zugewiesen werden können. ![Produktsortimentbeziehungen](./media/assortments_relationship.gif)
 
@@ -42,8 +44,8 @@ Bevor Sie ein Sortiment einrichten und dieses einem Einzelhandelskanal zuweisen 
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Einrichten eines Einzelhandelskanals.          | Einzelhandelskanäle stellen einen physischen Laden, einen Onlineshop oder einen Onlinemarktplatz dar. Sie müssen mindestens einen Einzelhandelskanal festlegen und Optionen für die Filiale konfigurieren. Sortimente werden den Filialen zugewiesen, um die Produkte zu erkennen, die eine bestimmte Filiale führt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Dient zum Erstellen einer Organisationshierarchie. | Nachdem Sie die Einzelhandelskanäle für Ihre Organisation eingerichtet haben, müssen Sie eine Einzelhandels-Organisationshierarchie konfigurieren, die die Organisationsstruktur der Einzelhandelskanäle darstellt. Eine Organisationshierarchie kann für Sortimente, Auffüllung und Berichterstellung verwendet werden. Wenn Sie die Einzelhandelskanäle zu einer Organisationshierarchie hinzufügen, können Sie Sortimente den Gruppen von Filialen zuordnen. Anstatt das Sortiment zu jedem Shop einzeln zuzuordnen, weisen Sie das Sortiment dem allgemeinen Organisationsknoten zu. Wenn anschließend ein neuer Einzelhandelskanal dem allgemeinen Organisationsknoten hinzugefügt wird, werden diesem Einzelhandelskanal automatisch alle Sortimente zugewiesen, die dem Organisationsknoten höherer Ebene zugeordnet waren. Sie können Sortimente nur Einzelhandelskanälen zuweisen, die in einer Organisationshierarchie eingeschlossen sind, der der Kostenträger **Einzelhandelssortiment** zugewiesen ist. |
-| Produkte definieren.                  | Bevor Sie Produkte einem Sortiment hinzufügen können, müssen Sie sie in Microsoft Dynamics AX hinzufügen. Sie können auch Produkte manuell hinzufügen oder von einem Lieferanten importieren. Nachdem Sie die Produkte hinzufügen, müssen Sie diese einer juristischen Person freigeben. Nur Produkte, die für eine juristische Person freigegeben wurden, können den Einzelhandelskanälen verfügbar gemacht werden. Produkte, die noch nicht für eine juristische Person freigegeben wurden, können einem Sortiment hinzugefügt werden, und das Sortiment kann genehmigt werden. Bis jedoch die Produkte für eine juristische Person freigegeben wurden, können sie nicht den Einzelhandelskanälen verfügbar gemacht werden.                                                                                                                                                                                                                                                                                     |
-| Einrichten einer Kategoriehierarchie.      | Wenn Sie Ihre Einzelhandelsprodukte erstellen, können Sie diese gruppieren und kategorisieren, indem Sie die Kategoriehierarchiefunktion in Microsoft Microsoft Dynamics 365 for Operations verwenden. Sie können eine Kernhierarchie erstellen, um alle Produkte zu gruppieren und zu kategorisieren, die Sie über die Einzelhandelskanäle vertreiben. Sie können auch einzelnen, zusätzliche Kategoriehierarchien erstellen, um die Produkte zu bestimmten Kostenträgern, wie verkaufsfördernden Maßnahmen oder Sortimente, zu gruppieren oder kategorisieren. Wenn Sie Kategoriehierarchien verwenden, können Sie alle die Produkte in einer bestimmten Kategorie einem Sortiment zuweisen. Alle Produkte, die der Kategorie hinzugefügt werden, die im Sortiment enthalten ist, werden automatisch ins Sortiment einbezogen. Anschließend wird beim nächsten Ausführen des Einzelhandelssortimentplaners diese Produkte für die Einzelhandelskanäle verfügbar gemacht, denen das Sortiment zugeordnet ist.                                            |
+| Produkte definieren.                  | Bevor Sie Produkte einem Sortiment hinzufügen können, müssen Sie sie in Microsoft Dynamics 365 for Retail hinzufügen. Sie können auch Produkte manuell hinzufügen oder von einem Lieferanten importieren. Nachdem Sie die Produkte hinzufügen, müssen Sie diese einer juristischen Person freigeben. Nur Produkte, die für eine juristische Person freigegeben wurden, können den Einzelhandelskanälen verfügbar gemacht werden. Produkte, die noch nicht für eine juristische Person freigegeben wurden, können einem Sortiment hinzugefügt werden, und das Sortiment kann genehmigt werden. Bis jedoch die Produkte für eine juristische Person freigegeben wurden, können sie nicht den Einzelhandelskanälen verfügbar gemacht werden.                                                                                                                                                                                                                                                                                     |
+| Einrichten einer Kategoriehierarchie.      | Wenn Sie Ihre Einzelhandelsprodukte erstellen, können Sie diese gruppieren und kategorisieren, indem Sie das Kategoriehierarchiefeature in verwenden. Sie können eine Kernhierarchie erstellen, um alle Produkte zu gruppieren und zu kategorisieren, die Sie über die Einzelhandelskanäle vertreiben. Sie können auch einzelnen, zusätzliche Kategoriehierarchien erstellen, um die Produkte zu bestimmten Kostenträgern, wie verkaufsfördernden Maßnahmen oder Sortimente, zu gruppieren oder kategorisieren. Wenn Sie Kategoriehierarchien verwenden, können Sie alle die Produkte in einer bestimmten Kategorie einem Sortiment zuweisen. Alle Produkte, die der Kategorie hinzugefügt werden, die im Sortiment enthalten ist, werden automatisch ins Sortiment einbezogen. Anschließend wird beim nächsten Ausführen des Einzelhandelssortimentplaners diese Produkte für die Einzelhandelskanäle verfügbar gemacht, denen das Sortiment zugeordnet ist.                                            |
 
 ## <a name="setting-up-an-assortment"></a>Einrichten eines Sortiments
 Nachdem Sie die Voraussetzungen abgeschlossen haben, können Sie ein Sortiment erstellen und es den Einzelhandelskanälen zuweisen. Zum Einrichten eines Sortiments müssen folgende Aufgaben ausgeführt werden.

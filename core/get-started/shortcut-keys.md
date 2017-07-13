@@ -1,15 +1,15 @@
 ---
 title: Tastenkombinationen
-description: "In Microsoft Dynamics 365 for Operations stehen die folgenden Tastenkombinationen zur Verfügung."
+description: "In Microsoft Dynamics 365 for Finance and Operations stehen die folgenden Tastenkombinationen zur Verfügung."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7d146f3dfe1d71e8d3031a851f47fac35d0f1a58
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In Microsoft Dynamics 365 for Operations stehen die folgenden Tastenkombinationen zur Verfügung. 
+In Microsoft Dynamics 365 for Finance and Operations stehen die folgenden Tastenkombinationen zur Verfügung. 
 
 **Hinweis:** Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
 
@@ -44,7 +44,7 @@ In Microsoft Dynamics 365 for Operations stehen die folgenden Tastenkombinatione
 | Zur nächsten/vorherigen Option in einem Menü wechseln            | NACH-UNTEN-TASTE / NACH-OBEN-TASTE            |
 | Schließen einer Registerkarte im Aktionsbereich oder einem Menü          | ESC                              |
 | Simulieren eines Klicks mit der rechten Maustaste                            | UMSCHALT+F10                        |
-| Öffnen des Dynamics 365 for Operations-Kontextmenüs | STRG+F10                         |
+| Öffnet das Finanz- und Operations-Kontextmenü | STRG+F10                         |
 | Ausführen der Standardschaltfläche auf einem Formular/in einem Dialog       | ALT+EINGABETASTE                        |
 | Auf eine Schaltfläche oder Kachel klicken                            | EINGABETASTE oder LEERTASTE                   |
 | Aktualisierungsinformationen für eine Anzahlkachel anzeigen         | ALT+NACH-OBEN-TASTE                     |

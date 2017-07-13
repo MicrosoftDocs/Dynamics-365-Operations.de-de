@@ -3,14 +3,14 @@ title: Projektressourcen
 description: "Dieser Artikel enthält Informationen zu Projektressourcen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 82022
 ms.assetid: bd2fb375-84c6-428a-8e54-f0f719045898
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5c00c63e3c55e818934c36b818c90025002092d4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 Dieser Artikel enthält Informationen zu Projektressourcen.
 
-Eine Herausforderung für Projektmanager und Ressourcen-Manager während der Projektplanungsphase ist die Ressourcenzuordnung bei der sie die richtige Ressource für die Arbeit an einem Projekt festlegen und reservieren müssen. In Microsoft Dynamics 365 for Operations können Sie mit Ressourcenfunktionalitäten für Projekte Rollen definieren, die als temporäre Ressourcen behandelt werden, die einem bestimmten Arbeitspaket oder Teil des Projekts reservieren werden können. Mit diesem Ressourcentyp können Projektmanager und Ressourcen-Manager die folgenden Aufgaben abschließen:
+Eine Herausforderung für Projektmanager und Ressourcen-Manager während der Projektplanungsphase ist die Ressourcenzuordnung bei der sie die richtige Ressource für die Arbeit an einem Projekt festlegen und reservieren müssen. In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, können Sie mit Ressourcenfunktionalitäten für Projekte Rollen definieren, die als temporäre Ressourcen behandelt werden, die einem bestimmten Arbeitspaket oder Teil des Projekts reservieren werden können. Mit diesem Ressourcentyp können Projektmanager und Ressourcen-Manager die folgenden Aufgaben abschließen:
 
 -   Definieren einer Rolle, die die erforderlichen Kompetenzen hat, um den Ressourcen zu entsprechen.
 -   Verwenden von Rollen, um einen ersten Auftragsplan zu definieren, der auf den reservierten Ressourcen basiert.
@@ -65,10 +65,10 @@ Wenn Sie eine Arbeitskraft als Intercompany-Ressource einrichten, müssen Sie di
 
 **Im Ausleiheunternehmen:**
 
-1.  In Dynamics 365 for Operations überprüfen Sie, dass das Ausleiheunternehmen aktiviert ist, und schließen Sie dann wie vorstehend die Aufgabe "Arbeitkraft als Projektressource einrichten" ab.
+1.  In Finance and Operations überprüfen Sie, dass das Ausleiheunternehmen aktiviert ist, und schließen Sie dann wie vorstehend die Aufgabe "Arbeitkraft als Projektressource einrichten" ab.
 2.  Wechseln ** Hauptbuch **&gt; ** Buchungseinstellungen **&gt; **Intercompany-Verrechnung**. Klicken Sie auf **Neu**.
 3.  Im Feld **Kennung der juristischen Person** wählen Sie das Ausleiheunternehmen aus. Füllen Sie die restlichen Felder entsprechend aus, und klicken Sie dann **Speichern**.
-4.  Wechseln Sie zu **Projektverwaltung und -buchhaltung**&gt; **Setup**&gt; **Preise ** &gt; **Verrechnungspreis**.** **
+4.  Wechseln Sie zu **Projektverwaltung und -buchhaltung**&gt; **Einrichtung ** &gt; **Preise** ** &gt;  **Verrechnungspreis**. **
 5.  Wählen Sie im **Interner Verrechnungspreis** Formular **Neu** aus und klicken Sie erneut im Feld **Ausleihende juristische Person** Feld auf das entsprechende Unternehmen.
 6.  Wenn Sie den borgenden Unternehmen die Ressource nur ausleihen möchten, die Sie am Anfang dieses Abschnitts, im Feld **Ressource** erstellt haben, wählen Sie den Namen der Ressource aus, die Sie erstellt haben. Wenn alle Ressourcen im Unternehmen erstellen möchten, das dem borgenden Unternehmen verfügbar ist, lassen Sie das Feld **Ressource** leer.
 7.  Wechseln Sie zu ** Projektverwaltung und Buchhaltung **&gt; ** Einstellungen **&gt; **Projektverwaltungs- und Buchhaltungsparameter** und auf der **Intercompany** Registerkarte legen Sie **Intercompany-Ressourcenplanung und -Arbeitszeitnachweise** Feld auf **Ja** fest.
@@ -123,7 +123,7 @@ Um Kompetenzen für eine Arbeitskraft einzurichten, können Sie entweder die Lis
 6.  Wählen Sie im Bereich **Verbleibende Projekte** ein Projekt aus, und klicken Sie anschließend auf den Pfeil, um sie dem Bereich **Ausgewählte Projekte** hinzuzufügen.
 7.  Schließen Sie die Seite.
 
-Bei Bedarf können Sie auch Kategorien für eine Ressource zuweisen. Der Kategorietyp ist "Kosten" oder "Umsatzerlös". Dies wird durch Ihre Organisation bestimmt. Wenn keine zugewiesenen Kategorien für die Ressource vorhanden sind, sucht Dynamics 365 for Operations nach den Standardkategorie zu Stundenpreisen für die Kosten und den Umsatzerlös.
+Bei Bedarf können Sie auch Kategorien für eine Ressource zuweisen. Der Kategorietyp ist "Kosten" oder "Umsatzerlös". Dies wird durch Ihre Organisation bestimmt. Wenn keine zugewiesenen Kategorien für die Ressource vorhanden sind, sucht Finance and Operations nach den Standardkategorie zu Stundenpreisen für die Kosten und den Umsatzerlös.
 
 ### <a name="set-up-project-resource-and-role-characteristics"></a>Einrichten von Projektressourcen und Rollenmerkmalen
 
@@ -131,7 +131,7 @@ Ein Projektmanager kann die Projektressourcenfunktionen verwenden, um die Rollen
 
 [![Beispiel einer Rolle](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
 
-**Szenario:**Contoso wurde für ein Aufwandsprojekt gebucht, das eine genehmigte Projektcharter hat. Der Juniorprojektmanager arbeitet noch am Umfang des Projekts. Der Ressourcen-Manager identifiziert derzeit zugewiesene Ressourcen, die reserviert für die Arbeit an dem neuen Projekt zugewiesen werden. Eine der Rollen, die der Projektträger aufgrund der Wichtigkeit des Projekts angefordert hat, ist ein Senior-Projektmanager. Der Ressourcen-Manager muss die neue Ressource abgerufen und beschließt, die Rolle im System zu definieren, falls der Juniorprojektmanager die Ressourceninformationen während der Projektplanung benötigt. 
+**Szenario:** Contoso wurde für ein Aufwandsprojekt gebucht, das eine genehmigte Projektcharter hat. Der Juniorprojektmanager arbeitet noch am Umfang des Projekts. Der Ressourcen-Manager identifiziert derzeit zugewiesene Ressourcen, die reserviert für die Arbeit an dem neuen Projekt zugewiesen werden. Eine der Rollen, die der Projektträger aufgrund der Wichtigkeit des Projekts angefordert hat, ist ein Senior-Projektmanager. Der Ressourcen-Manager muss die neue Ressource abgerufen und beschließt, die Rolle im System zu definieren, falls der Juniorprojektmanager die Ressourceninformationen während der Projektplanung benötigt. 
 
 Die folgenden Schritte zeigen, wie der Ressourcen-Manager den Senior-Projektmanager einrichten und Ressourcenmerkmale zuordnen kann. Später kann die Rolle verwendet werden, um für verfügbare Ressourcen zu finden, die die erforderlichen Ressourcenkompetenzen aufweisen.
 
@@ -190,7 +190,7 @@ Alle Kosten, Verkaufs- und Verrechnungspreise können für Rollen eingerichtet w
 5.  Geben Sie in der Spalte **Preisgestaltung** einen Preis für die ausgewählte Ressourcenrolle ein.
 
 ## <a name="form-a-project-team"></a>Ein Projektteam bilden
-Um die Rollen zu verwenden, muss ein Projektmanager die Rollen dem Projekt zuordnen. Mehrere Rollen können für ein Projekt zugewiesen werden. Dynamics 365 for Operations beschriftet diese Rollen automatisch während der Reservierung, um spätere Unklarheiten zu verhindern. Wenn beispielsweise der Projektmanager drei Softwareingenieure benötigt, werden automatisch drei Softwareingenieur-Rollen mit der Beschriftung "Software Engineer 1", "Software Engineer 2" und "Software Engineer 3" generiert. Wenn zuvor Rollenmerkmal für die Rolle festgelegt wurden, werden sie als Filter für die Suche nach einer Ressource angewendet. Zusätzliche Merkmale können nach Bedarf hinzugefügt werden, um die Suche noch weiter zu verfeinern. 
+Um die Rollen zu verwenden, muss ein Projektmanager die Rollen dem Projekt zuordnen. Mehrere Rollen können für ein Projekt zugewiesen werden und Finance and Operations beschriftet diese Rollen automatisch während der Reservierung, um spätere Unklarheiten zu verhindern. Wenn beispielsweise der Projektmanager drei Softwareingenieure benötigt, werden automatisch drei Softwareingenieur-Rollen mit der Beschriftung "Software Engineer 1", "Software Engineer 2" und "Software Engineer 3" generiert. Wenn zuvor Rollenmerkmal für die Rolle festgelegt wurden, werden sie als Filter für die Suche nach einer Ressource angewendet. Zusätzliche Merkmale können nach Bedarf hinzugefügt werden, um die Suche noch weiter zu verfeinern. 
 
 Die Ansichtseinstellungen können ebenfalls angepasst werden, um eine bessere Ansicht der Ressourcenverfügbarkeit zu ermöglichen. Es gibt Optionen für eine stündliche, tägliche, wöchentliche, monatliche, quartalsweise und jährliche Verfügbarkeit. Es gibt auch eine Option, um verfügbarer und Restkapazitäten für Ressourcen anzuzeigen. Diese Option ist für Zeitverwaltung hilfreich, wenn Sie die verfügbare Zeit für Aktivitäten oder die Ressourcenverfügbarkeit bewerten. 
 
@@ -277,7 +277,7 @@ Es wurden zusätzliche Optionen im PSP zur besseren Verwendung der Ressourcenfun
 </tr>
 <tr class="even">
 <td>Team autom. generieren</td>
-<td>Fügen Sie automatisch geplante Ressourcen hinzu, indem Sie Rollen verwenden, die einer Aufgabe zugeordnet sind. Dynamics 365 for Operations schlägt automatisch geplante Ressourcen vor, indem es Multikriterienentscheidungsanalysen verwendet, die auf Rollen basieren. Nachdem Rollen und Aufwand (Stunden) sind für die Aufgaben eines PSP einrichtet sind, und die Struktur freigegeben wurde, klicken Sie auf <strong>Team autom. generieren</strong>. Die erforderliche Anzahl der geplanten Ressourcen wird dem PSP und zur Registerkarte <strong>Projekt und Teamplanung</strong> hinzugefügt.</td>
+<td>Fügen Sie automatisch geplante Ressourcen hinzu, indem Sie Rollen verwenden, die einer Aufgabe zugeordnet sind. Finance and Operations schlägt automatisch geplante Ressourcen vor, indem es Multikriterienentscheidungsanalysen verwendet, die auf Rollen basieren. Nachdem Rollen und Aufwand (Stunden) sind für die Aufgaben eines PSP einrichtet sind, und die Struktur freigegeben wurde, klicken Sie auf <strong>Team autom. generieren</strong>. Die erforderliche Anzahl der geplanten Ressourcen wird dem PSP und zur Registerkarte <strong>Projekt und Teamplanung</strong> hinzugefügt.</td>
 </tr>
 <tr class="odd">
 <td>Ressource (Dropdownliste)</td>

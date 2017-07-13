@@ -3,7 +3,7 @@ title: "Mehrwertsteuerüberblick"
 description: "Dieser Artikel enthält eine Übersicht über das Mehrwertsteuersystem. Er erklärt die Elemente zur Einrichtung der Mehrwertsteuer und wie sie zusammenarbeiten."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdb3188f533cf0cdb1e70c63891408e45d02418d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,6 +30,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="sales-tax-overview"></a>Mehrwertsteuerüberblick
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Dieser Artikel enthält eine Übersicht über das Mehrwertsteuersystem. Er erklärt die Elemente zur Einrichtung der Mehrwertsteuer und wie sie zusammenarbeiten.
@@ -73,7 +75,7 @@ Für jede Buchung (Auftrag/Einkaufsbelegpositionen, Erfassungen, usw.) müssen S
 Bei jeder Buchung können Sie die berechnete Mehrwertsteuer suchen, indem Sie die Seite **Mehrwertsteuerbuchung** öffnen. Sie können die Mehrwertsteuer für eine Dokumentposition oder für das gesamte Dokument suchen. Für bestimmte Dokumente (z. B. Kreditorenrechnung und allgemeine Erfassungen) können Sie die berechnete Mehrwertsteuer anpassen, wenn im Originaldokument abweichende Beträge angezeigt werden.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Mehrwertsteuerausgleich und -erklärung
-Die Mehrwertsteuer muss in den geregelten Intervallen an die Steuerbehörden gemeldet und abgeführt werden (monatsweise, quartalsweise, usw.). Microsoft Dynamics 365 for Operations verfügt über Funktionen, mit denen Sie Steuerkonten für das Intervall ausgleichen und die Salden in Steuerverrechnungskonto (wie in den Sachkontobuchungsgruppen angegeben) ausgleichen können. Sie können diese Funktion unter **Mehrwertsteuer abrechnen und buchen** Seite zugreifen. Sie müssen den Mehrwertsteuer-Abrechnungszeitraum angegeben, dass Mehrwertsteuer für ausgeglichen werden soll. 
+Die Mehrwertsteuer muss in den geregelten Intervallen an die Steuerbehörden gemeldet und abgeführt werden (monatsweise, quartalsweise, usw.). Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition verfügt über Funktionen, mit denen Sie Steuerkonten für das Intervall ausgleichen und die Salden im Steuerverrechnungskonto (wie in den Sachkontobuchungsgruppen angegeben) ausgleichen können. Sie können diese Funktion unter **Mehrwertsteuer abrechnen und buchen** Seite zugreifen. Sie müssen den Mehrwertsteuer-Abrechnungszeitraum angegeben, dass Mehrwertsteuer für ausgeglichen werden soll. 
 
 Nachdem die Mehrwertsteuer bezahlt wurde, sollte der Saldo im Mehrwertsteuer-Abrechnungskonto gegen das Bankkonto ausgeglichen sein. Wenn die Mehrwertsteuerbehörde, die im Mehrwertsteuer-Abrechnungszeitraum angegeben ist, ist einem Kreditorenkonto zugeordnet. Der Mehrwertsteuersaldo wird als offene Kreditorenrechnung gebucht und kann im regulären Zahlungsvorschlag einbezogen werden.
 

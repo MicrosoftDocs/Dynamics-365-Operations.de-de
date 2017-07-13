@@ -3,7 +3,7 @@ title: Preissimulation
 description: "Dieser Artikel enthält Informationen zu Preissimulation für Angebote. Preissimulation unterstützte Sie dabei, die Auswirkung von Abzügen auf künftigen Verkaufspreisen während dem Angebotsprozess zu evaluieren, bevor Sie einen bestimmten Preis festlegen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 293f09ca8758c0b1a66614eb9c75ca266b044fe7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -54,7 +54,7 @@ Gehen Sie beim Ausführen von Preissimulationen für Angebote mit Rabatten sorgf
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Rabatttypen in Handelsvereinbarungen
 
-Für die Handelsvereinbarungen in Microsoft Dynamics 365 for Operations stehen vier verschiedene Typen von Preisrabatten zur Auswahl. Diese Rabatte können für unterschiedliche Artikel, Debitoren oder Preisgruppen festgelegt sowie mithilfe eines Datums beschränkt werden. Zur Vermeidung von Berechnungsfehlern müssen beim Ausführen von Preissimulationen Handelsvereinbarungen berücksichtigt werden. Folgende vier Arten von Rabatten stehen in Handelsvereinbarungen zur Verfügung:
+Für die Handelsvereinbarungen in Microsoft Dynamics 365 for Finance and Operations stehen vier verschiedene Typen von Preisrabatten zur Auswahl. Diese Rabatte können für unterschiedliche Artikel, Debitoren oder Preisgruppen festgelegt sowie mithilfe eines Datums beschränkt werden. Zur Vermeidung von Berechnungsfehlern müssen beim Ausführen von Preissimulationen Handelsvereinbarungen berücksichtigt werden. Folgende vier Arten von Rabatten stehen in Handelsvereinbarungen zur Verfügung:
 
 -   **Verkaufspreis** – Für Artikel können separate Verkaufspreise angegeben werden. Der korrekte Artikelverkaufspreis wird beim Erstellen der Angebotspositionen vom Programm gesucht und an die Angebotspositionen übertragen. Das bedeutet, dass die Preissimulation durch eine Handelsvereinbarung mit diesem Rabatttyp nicht beeinflusst wird. Der Verkaufspreis, der in der Angebotsposition verwendet wird, spiegelt die Handelsvereinbarung wider.
 -   **Positionsrabatt** – Es wird ein besonderer Artikelrabatt angegeben, der von der bestellten Menge abhängt. Die Positionsbeträge werden üblicherweise um den Positionsrabatt verringert, bevor eine Preissimulation ausgeführt wird. Das bedeutet, dass die Preissimulation durch eine Handelsvereinbarung mit diesem Rabatttyp beeinflusst wird.

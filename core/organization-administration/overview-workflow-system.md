@@ -1,6 +1,6 @@
 ---
 title: "Überblick über das Workflowsystem"
-description: In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Operations beschrieben.
+description: In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations beschrieben.
 author: sericks007
 manager: AnnBe
 ms.date: 04/25/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 142f6f122172f717733db6f39b964c3f6f2e2f77
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1dc7935bf92567d529d393abf3069935a387e388
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Operations beschrieben.
+In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations beschrieben.
 
 <a name="what-is-workflow"></a>Was ist ein Arbeitsplan?
 -----------------
@@ -38,7 +38,7 @@ In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Operations
 Der Begriff *Workflow* kann auf zwei Arten definiert werden: als System und als Geschäftsprozess.
 ### <a name="workflow-is-a-system"></a>Workflow als System
 
-Workflow ist ein System, das mit Microsoft Dynamics 365 for Operations installiert wird und auf dem Anwendungsobjektserver (AOS/Application Object Server) ausgeführt wird. Das Workflowsystem verfügt über Funktionen, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können.
+Workflow ist ein System, das mit Finance and Operations installiert wird und auf dem Anwendungsobjektserver (AOS/Application Object Server) ausgeführt wird. Das Workflowsystem verfügt über Funktionen, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können.
 
 ### <a name="workflow-is-a-business-process"></a>Workflow als Geschäftsprozess
 

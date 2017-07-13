@@ -3,7 +3,7 @@ title: Dokumentation oder Schulungen mithilfe von&quot;Aufgabenaufzeichnungen&qu
 description: "In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b44dc66cdcd1ede59cb9bb4ed05be27dd465599
+ms.sourcegitcommit: ee6d455c44a38d9b3962ca20a5cb28007c19cf1d
+ms.openlocfilehash: e71c2638caccb9a31c5254a3cf68c802808960b9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
@@ -31,19 +31,22 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
+In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden für angepasst Unified-Operatons-Produkte und in die Hilfe aufgenommen werden.
+
+> [!IMPORTANT]
+> Sie können auch keine benutzerdefinierten Aufgabenleitfäden für Dynamics 365 for Talent erstellen. Das Hilfesystem für Talent stellt automatisch eine Verbindung mit den Aufgabenleitfäden für das Produkt bereit. 
 
 <a name="learn-about-task-recorder"></a>Mehr über die "Aufgabenaufzeichnung" erfahren
 -------------------------
 
-Die Aufgabenaufzeichnung ist ein Microsoft Dynamics 365 for Operations-Tool, das Sie verwenden können, um Aktivitäten aufzuzeichnen, die Sie in der Produktbenutzeroberfläche (UI) ausgeführt haben. Wenn Sie die Aufgabenaufzeichnung anwenden, werden alle Ereignisse, die in der Benutzeroberfläche vom Server abgerufen werden - einschließlich dem Hinzufügen von Werten, der Änderung von Einstellungen und dem Entfernen von Daten - aufgezeichnet. Die Schritte, die Sie erfassen, werden zusammenfassend als *Aufgabenaufzeichnung* bezeichnet. Aufgabenaufzeichnungen können auf unterschiedliche Weise verwendet werden:
+Die Aufgabenaufzeichnung ist ein Tool, das Sie verwenden können, um Aktivitäten aufzuzeichnen, die Sie in der Produkt-Benutzeroberfläche (UI) ausgeführt haben. Wenn Sie die Aufgabenaufzeichnung anwenden, werden alle Ereignisse, die in der Benutzeroberfläche vom Server abgerufen werden - einschließlich dem Hinzufügen von Werten, der Änderung von Einstellungen und dem Entfernen von Daten - aufgezeichnet. Die Schritte, die Sie erfassen, werden zusammenfassend als *Aufgabenaufzeichnung* bezeichnet. Aufgabenaufzeichnungen können auf unterschiedliche Weise verwendet werden:
 
--   **Aufgabenaufzeichnungen können als Aufgabenleitfäden wiedergegeben werden.** Aufgabenleitfäden sind ein integrierter Bestandteil der Dynamics 365 for Operations-Hilfe-Erfahrung. Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte eines Geschäftsprozesses führt. Der Benutzer wird aufgefordert, jeden Schritt einer Popupeingabeaufforderung (oder "Blase") abzuschließen, die über die Benutzeroberfläche animiert wird und auf das Benutzeroberflächenelement verweist, mit dem der Benutzer interagieren soll. Die "Blase" enthält auch Informationen zur Interaktion mit Elementen, wie "Hier klicken" oder "Geben Sie in diesem Feld einen Wert ein". Ein Aufgabenleitfaden wird mit dem Datensatz des aktuellen Benutzers ausgeführt, und die Daten, die eingegeben werden, werden in der Anwenderkonfiguration gespeichert.
+-   **Aufgabenaufzeichnungen können als Aufgabenleitfäden wiedergegeben werden.** Aufgabenleitfäden sind ein integrierter Bestandteil der Hilfe-Erfahrung. Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte eines Geschäftsprozesses führt. Der Benutzer wird aufgefordert, jeden Schritt einer Popupeingabeaufforderung (oder "Blase") abzuschließen, die über die Benutzeroberfläche animiert wird und auf das Benutzeroberflächenelement verweist, mit dem der Benutzer interagieren soll. Die "Blase" enthält auch Informationen zur Interaktion mit Elementen, wie "Hier klicken" oder "Geben Sie in diesem Feld einen Wert ein". Ein Aufgabenleitfaden wird mit dem Datensatz des aktuellen Benutzers ausgeführt, und die Daten, die eingegeben werden, werden in der Anwenderkonfiguration gespeichert.
 -   **Aufgabenaufzeichnungen können als Verfahrensschritte im Hilfebereich angezeigt werden.** Sie können den Hilfebereich verwenden, um nach Aufgabenaufzeichnungen zu suchen und sie anzuzeigen. Sie können auf den Hilfebereich zugreifen, indem Sie auf das Symbol **?** in der oberen Navigationsleiste klicken oder die Tastenkombination **STRG+UMSCHALTTASTE+?** verwenden. Im Hilfebereich können Sie die Schritte einer Aufgabenerfassung nachlesen, oder die Aufzeichnung optional als Aufgabenleitfaden wiedergeben, damit sie Sie durch die Benutzeroberfläche führt.
--   **Aufgabenaufzeichnungen können im BPM gespeichert werden.** Sie können Ihre Aufgabenaufzeichnungen in einer Position einer Hierarchie der Bibliothek des Geschäftsprozessmodellierers (BPM) in den Lifecycle Services (LCS) speichern. Aus der Aufzeichnung wird eine Liste von Schritten und ein Geschäftsprozessflussdiagramm generiert. Aufgabenaufzeichnungen, die in einer BPM-Bibliothek gespeichert wurden, können in Dynamics 365 for Operations als Hilfe angezeigt werden.
+-   **Aufgabenaufzeichnungen können im BPM gespeichert werden.** Sie können Ihre Aufgabenaufzeichnungen in einer Position einer Hierarchie der Bibliothek des Geschäftsprozessmodellierers (BPM) in den Lifecycle Services (LCS) speichern. Aus der Aufzeichnung wird eine Liste von Schritten und ein Geschäftsprozessflussdiagramm generiert. Aufgabenaufzeichnungen, die in einer BPM-Bibliothek gespeichert wurden, können als Hilfe angezeigt werden.
 -   **Aufgabenaufzeichnungen können als Word-Dokumente gespeichert werden.** Dadurch wird es Ihnen ermöglicht, druckbare Trainingshandbücher einfach zu erzeugen.
 
-Sie können eigene Aufgabenaufzeichnungen erstellen, Aufgabenaufzeichnungen wiedergeben, die von Microsoft bereitgestellt werden, oder von Microsoft zur Verfügung gestellte Aufgabenaufzeichnungen ändern, um sie Ihrer Konfiguration anzupassen. Weitere Informationen zur Aufgabenaufzeichnung finden Sie unter [Aufgabenaufzeichnung in Dynamics 365 for Operations](task-recorder.md).
+Sie können eigene Aufgabenaufzeichnungen erstellen, Aufgabenaufzeichnungen wiedergeben, die von Microsoft bereitgestellt werden, oder von Microsoft zur Verfügung gestellte Aufgabenaufzeichnungen ändern, um sie Ihrer Konfiguration anzupassen. Weitere Informationen zu der Aufgabenaufzeichnung, finden Sie unter [Aufgabenaufzeichnung](task-recorder.md)
 
 ## <a name="plan-your-task-recording"></a>Ihre Aufgabenaufzeichnung planen
 Ob Sie eine neue Aufgabenaufzeichnung erstellen oder Ihre Aufzeichnung einer Microsoft-Aufgabenaufzeichnung anpassen, berücksichtigen Sie die folgenden Informationen.
@@ -83,7 +86,7 @@ So sieht die Hinweisanmerkung in der "Blase" im Aufgabenleitfaden aus.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Info-Schritt**: Diese Anmerkungen werden erstellt, indem mit der rechten Maustaste auf ein Steuerelement oder Formular geklickt wird &lt; **Aufgabenaufzeichnung** &lt; **Infoschritt hinzufügen. ** Info-Schritte werden als nummerierte Schritte an dem Punkt angezeigt, an dem sie eingefügt werden, auch wenn keine Aktivität in der UI aufgezeichnet wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Infoschritt einem Steuerelement zugeordnet ist, wird die "Blase" des Aufgabenleitfadens auf das Steuerelement zeigen, wenn der Aufgabenleitfaden wiedergegeben wird. Im Hilfebereich wird ein Info-Schritt als nummerierter Schritt mit dem Text angezeigt, den Sie eingegeben haben. Verwenden Sie Infoschritte, um den Benutzer auf die nächsten Schritte vorzubereiten, Schritte zu beschreiben, die außerhalb von Dynamics 365 for Operations abgeschlossen werden müssen, oder um auf andere Aufzeichnungen zu verweisen (jedoch können Sie in den Anmerkungen keine Hyperlinks erstellen).
+-   **Info-Schritt**: Diese Anmerkungen werden erstellt, indem mit der rechten Maustaste auf ein Steuerelement oder Formular geklickt wird &lt; **Aufgabenaufzeichnung** &lt; **Infoschritt hinzufügen. ** Info-Schritte werden als nummerierte Schritte an dem Punkt angezeigt, an dem sie eingefügt werden, auch wenn keine Aktivität in der UI aufgezeichnet wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Infoschritt einem Steuerelement zugeordnet ist, wird die "Blase" des Aufgabenleitfadens auf das Steuerelement zeigen, wenn der Aufgabenleitfaden wiedergegeben wird. Im Hilfebereich wird ein Info-Schritt als nummerierter Schritt mit dem Text angezeigt, den Sie eingegeben haben. Verwenden Sie Infoschritte, um den Benutzer auf die nächsten Schritte vorzubereiten, Schritte zu beschreiben, die außerhalb von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, abgeschlossen werden müssen, oder um auf andere Aufzeichnungen zu verweisen (jedoch können Sie in den Anmerkungen keine Hyperlinks erstellen).
 
 **Die Länge der Aufzeichnung bestimmen**
 
@@ -101,7 +104,7 @@ Eine ausführliche Anleitung erhalten Sie unter [Eine Aufgabenaufzeichnung erste
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopieren und Anpassen von Microsoft Aufgabenaufzeichnungen
 Sie können die Microsoft Aufgabenaufzeichnungen herunterladen und bearbeiten, um sie für eine eigene Hilfedokumentation oder Trainingsmaterialien zu verwenden. Um eine Microsoft Aufgabenaufzeichnung herunterzuladen, führen Sie die folgenden Schritte aus:
 
-1.  Öffnen Sie in Dynamics 365 for Operations die Aufgabenaufzeichnung. Die Aufgabenaufzeichnung finden Sie im Menü **Einstellungen**.
+1.  Aufgabenaufzeichnung öffnen. Die Aufgabenaufzeichnung finden Sie im Menü **Einstellungen**.
 2.  Im klicken Sie Aufgabenaufzeichnungsbereich **Eine Aufzeichnung verwalten.**
 3.  Klicken Sie unter **Wo ist die Aufzeichnung** auf **Befindet sich in einer LCS-Bibliothek**.
 4.  Klicken Sie auf **LCS-Bibliothek auswählen**.
@@ -119,18 +122,13 @@ Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich an
 <a name="see-also"></a>Siehe auch
 --------
 
-[Dynamics 365 for Operations-Hilfe](..\get-started\help-overview.md)
+[Hilfe – Überblick](..\get-started\help-overview.md)
 
-[Hilfe verbinden](..\get-started\help-connect.md)
+[Mit Hilfe verbinden](..\get-started\help-connect.md)
 
-[Aufgabenaufzeichnung in Dynamics 365 for Operations](task-recorder.md)
+[Aufgabenaufzeichnung](task-recorder.md)
 
 [Vor kurzem hinzugefügte Aufgabenaufzeichnungsfunktionen](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Erstellen von neuen Schulungsbibliotheken für Dynamics AX innerhalb der Lifecycle Services mithilfe der Aufgabenaufzeichnung (externer Link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Erstellen von umfangreicher Hilfethemen mit der Aufgabenaufzeichnung (externer Link)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-
 

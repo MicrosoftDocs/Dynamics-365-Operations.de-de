@@ -3,14 +3,14 @@ title: "Budgetplanung (Überblick)"
 description: "Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen die dabei helfen, die Budgetplanung zu konfigurieren und Budgetplanungsprozesse einzurichten."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5212c8401f26f30cf593c52eb88291463b9b8810
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -38,7 +38,7 @@ Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen d
 
 Sie führen Budgetplanung durch, wenn Sie die Budgets vorbereiten, die von einer Organisation implementiert werden. Eine Organisation kann Budgetplanung konfigurieren und anschließend Budgetplanungsprozesse einrichten, um die Richtlinien, die Verfahren und Bedingungen ihrer Organisation für Budgetausarbeitung zu erfüllen. 
 
-Wenn Sie die Konzepte und die Terminologie verstehen, die in Microsoft Dynamics 365 for Operations verwendet werden, erleichtert dies die Budgetplanung in Ihrer Organisation.
+Wenn Sie die Konzepte und die Terminologie verstehen, die in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden, erleichtert dies die Budgetplanung in Ihrer Organisation.
 
 ### <a name="key-terms"></a>Schlüsselbegriffe
 
@@ -59,7 +59,7 @@ Die folgenden Aufgaben können mit Budgetplanung ausgeführt werden:
 -   Leiten Sie die Budgetpläne automatisch zusammen mit Arbeitsblättern, Begründungsdokumenten und weiteren Anlagen zur Prüfung und Genehmigung weiter.
 -   Konsolidieren Sie mehrere Budgetpläne von einer untergeordneten Ebene der Organisation in einen einzigen Haushaltsplan auf einer höheren Ebene der Organisation. Sie können auch einen einzelnen Budgetplan auf einer höheren Ebene der Organisation entwickeln und das Budget den untergeordneten Ebenen der Organisation zuordnen.
 
-Budgetplanung ist in anderen Microsoft Dynamics 365 for Operations-Modulen integriert. Daher können Sie Informationen aus früheren Budgets, tatsächlichen Aufwendungen, Anlagen und der Personalverwaltung einbringen. Da die Budgetplanung ebenfalls in Microsoft Excel und Microsoft Word integriert ist, können Sie diese Programme verwenden, um mit den Budgetplanungsdaten zu arbeiten. So kann ein Budget-Manager Budgetanforderung einer Abteilung aus einem Budgetplanszenario in ein Excel-Arbeitsblatt exportieren. Die Daten können im Arbeitsblatt analysiert, aktualisiert und entworfen werden, und dann wieder in den Budgetplanpositionen veröffentlicht werden.
+Budgetplanung ist in anderen Microsoft Dynamics 365 for Fiance and Operations-Modulen integriert. Daher können Sie Informationen aus früheren Budgets, tatsächlichen Aufwendungen, Anlagen und der Personalverwaltung einbringen. Da die Budgetplanung ebenfalls in Microsoft Excel und Microsoft Word integriert ist, können Sie diese Programme verwenden, um mit den Budgetplanungsdaten zu arbeiten. So kann ein Budget-Manager Budgetanforderung einer Abteilung aus einem Budgetplanszenario in ein Excel-Arbeitsblatt exportieren. Die Daten können im Arbeitsblatt analysiert, aktualisiert und entworfen werden, und dann wieder in den Budgetplanpositionen veröffentlicht werden.
 
 ## <a name="configuring-budget-planning"></a>Budgetplanung konfigurieren
 Die Seite **Budgetplanungskonfiguration** enthält die meisten Einstellungen, die Sie benötigen, um eine Budgetplanung einzurichten. In folgenden Abschnitte beschreiben wesentliche Faktoren, die Sie bei der Konfiguration der Budgetplanung berücksichtigen sollten. Nachdem die Konfiguration abgeschlossen ist, richten Sie Budgetplanungsprozesse ein.
@@ -78,7 +78,7 @@ Im folgenden Beispiel schätzt der Unternehmenshauptsitz die ersten Budgetbasisb
 
 Auf der **Organisationshierarchie**-Seite können Sie für jeden Budgetplanungsprozess eine Organisationshierarchie als Budgetplanungshierarchie auswählen. Die Budgetplanungshierarchie muss mit der Standardorganisationshierarchie nicht übereinstimmen, die für andere Zwecke verwendet wird. Da diese Hierarchie verwendet wird, um Daten zu aggregieren und zu verteilen, sollten sie eine andere Struktur haben. Im Beispielsschema sind befinden sich die Verkaufsabteilungen unter der Ebene der Zentralverwaltung, die Budget- und Finanzabteilungen enthält. Diese Struktur unterscheidet sich wahrscheinlich von der Struktur, die verwendet wird, um Arbeitsgänge für die Verkaufsabteilungen zu verwalten. Nur eine Organisationshierarchie kann einem Budgetplanungsprozess zugewiesen werden. 
 
-Weitere Informationen zu den finden Sie unter [Organisationen und Organisationshierarchien](/dynamics365/operations/organization-administration/organizations-organizational-hierarchies).
+Weitere Informationen zu den finden Sie unter [Organisationen und Organisationshierarchien](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
 
 ### <a name="user-security"></a>Benutzersicherheit
 
@@ -88,13 +88,13 @@ Budgetplanung kann einem von zwei Sicherheitsmodellen folgen, um Benutzerrechte 
 
 Budgetplanungsworkflows werden zusammen mit Budgetierungsworkflows verwendet, um die Erstellung und Entwicklung von Budgetplänen zu verwalten.
 
-Ein Budgetplanungsworkflow besteht aus einer geordneten Menge von Phasen, die ein Budgetplan durchläuft. Jeder Budgetplanungsworkflow wird einem Budgetierungsworkflow zugeordnet. Budgetierungsworkflows sind einer der Workflowtypen, die in Microsoft Dynamics 365 for Operations verwendet werden. Der Budgetierungsworkflow leitet können Sie den Budgetplan, zusammen mit Arbeitsblättern, Begründungen und Anlagen, automatisch durch die Organisation zur Prüfung und Genehmigung weiterleiten. 
+Ein Budgetplanungsworkflow besteht aus einer geordneten Menge von Phasen, die ein Budgetplan durchläuft. Jeder Budgetplanungsworkflow wird einem Budgetierungsworkflow zugeordnet. Budgetierungsworkflows sind einer der Workflowtypen, die in Finance and Operations verwendet werden. Der Budgetierungsworkflow leitet können Sie den Budgetplan, zusammen mit Arbeitsblättern, Begründungen und Anlagen, automatisch durch die Organisation zur Prüfung und Genehmigung weiterleiten. 
 
 Sie erstellen den Budgetplanungsworkflow im Abschnitt **Workflowphasen** auf der Seite **Budgetplanungskonfiguration**. Dort können Sie die Phasen und den Budgetierungsworkflow auswählen, der verwendet wird, und auch zusätzliche Einstellungen konfigurieren. 
 
 Eine bewährte Methode ist das Erstellen eines Budgetplanungsworkflows für jedes Ebene einer Budgetplanungshierarchie. Sie weisen dann einen Budgetierungsworkflow zu, der Elemente enthält, die den Phasen im Budgetplanungsworkflow entsprechen. Im Beispielschema früher im Artikel wird ein Budgetplanungsworkflow für die Verkaufsabteilung erstellt, und ein anderes für den Hauptsitz. Ein Budgetierungsworkflow verschiebt die Budgetpläne durch die Phasen. 
 
-Sie erstellen den Budgetierungsworkflow für die Budgetplanung auf der Seite **Budgetierungsworkflows**. Der Vorgang ähnelt dem Vorgang zum Erstellen anderer Workflows in Microsoft Dynamics 365 for Operations. Die folgende Abbildung zeigt das Beispiel eines Hauptsitzworkflows. 
+Sie erstellen den Budgetierungsworkflow für die Budgetplanung auf der Seite **Budgetierungsworkflows**. Der Vorgang ähnelt dem Vorgang zum Erstellen anderer Workflows in Finance and Operations. Die folgende Abbildung zeigt das Beispiel eines Hauptsitzworkflows. 
 
 [![Budgetierungsworkflow für Budgetplanung](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 

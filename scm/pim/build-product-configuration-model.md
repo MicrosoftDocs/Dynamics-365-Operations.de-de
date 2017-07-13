@@ -3,14 +3,14 @@ title: "Wählen Sie ein Produktkonfigurationsmodell aus."
 description: "Die Notwendigkeit, Produkte zu konfigurieren, um bestimmte Anforderungen zu erfüllen, wird eher die Regel anstatt die Ausnahme, sowohl in B2B- als auch in den B2C-Beziehungen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 901d5dd18f0da6f05c185c24b3f11fe32fdc400b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 5bc19e95266e8f1bec8744da688387dca559373f
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -72,7 +72,7 @@ Tabelleneinschränkungen können als benutzerdefinierte oder als systemdefiniert
 
 Eine benutzerdefinierte Tabelleneinschränkung wird vom Benutzer erstellt. Der Benutzer wählt eine Kombination von Attributtypen aus, um die Spalten der Tabelle darzustellen und gibt dann Werte aus den Domänen der ausgewählten Attributtypen ein, um die Zeilen in der Tabelleneinschränkung zu bilden.  
 
-Eine systemdefinierte Tabelleneinschränkung wird definiert, indem ausgewählt wird, welche Microsoft Dynamics 365 for Operations-Tabelle als Referenz verwendet wird, und dann durch das Festlegen von Feldern aus dieser Tabelle, um die Spalten in der Einschränkung zu bilden. Die Zeilen der Tabelleneinschränkung sind die Zeilen der Dynamics 365 for Operations-Tabelle, die bei der Konfiguration vorhanden sind.  
+Eine systemdefinierte Tabelleneinschränkung wird definiert, indem ausgewählt wird, welche Microsoft Dynamics 365 for Finance and Operations-Tabelle als Referenz verwendet wird, und indem dann Felder aus dieser Tabelle festgelegt werden, um die Spalten in der Einschränkung zu bilden. Die Zeilen der Tabelleneinschränkung sind die Zeilen der Finance and Operations-Tabelle, die bei der Konfiguration vorhanden sind.  
 
 Eine Tabelleneinschränkung wird in einem Produktkonfigurationsmodell einbezogen, indem die Tabelleneinschränkungsdefinition verwiesen und die betreffenden Attribute im Modell zu den Spalten in der Tabelleneinschränkung zuordnet werden.
 

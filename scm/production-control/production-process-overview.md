@@ -3,7 +3,7 @@ title: "Überblick über den Produktionsprozess"
 description: "Dieser Artikel enthält eine Übersicht des Produktionsprozesse. Er beschreibt die verschiedenen Produktionsaufträge, Chargenaufträgen und Kanbans, von der Auftragserstellung bis zum Schließen der Finanzperiode."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 311debe610b58af7cd986bd33ce9473e41cb3d8b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b73ec05442c8b089435d5813ea93b997c473cbb4
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -37,14 +37,14 @@ Dieser Artikel enthält eine Übersicht des Produktionsprozesse. Er beschreibt d
 
 Die Produktion von Produkten, ein Prozess, der auch als Produktionslebenszyklus bezeichnet wird, folgt bestimmten Schritten, die erforderlich sind, um die Herstellung eines Artikels abzuschließen. Der Lebenszyklus beginnt mit der Erstellung des Produktionsauftrags, des Chargenauftrags oder des Kanbans. Dies endet mit dem fertigen, hergestellten Artikel, der entweder für einen Kunden oder eine weitere Produktionsphase bereit ist. Für jeden Schritt des Lebenszyklus sind bestimmte Arten von Informationen erforderlich, damit der entsprechende Vorgang abgeschlossen werden kann. Mit dem Abschluss jedes Schritts wird im Produktionsauftrag, im Chargenauftrag oder Kanban eine Änderung im Produktionsstatus angezeigt. Unterschiedliche Arten von Produkten erfordern verschiedene Fertigungsprozesse.  
 
-Das Modul **Produktionssteuerung** wird mit anderen Modulen, wie **Produktinformationsverwaltung**, **Lagerverwaltung**, **Hauptbuch**, **Lagerortverwaltung**, **Projektverrechnung** und**Organisationsverwaltung** verknüpft. Diese Integration ermöglicht die reibungslose Weiterleitung von Informationen, die zum Fertigstellen der Artikelfertigung erforderlich sind.  
+Das Modul **Produktionssteuerung** wird mit anderen Modulen, wie **Produktinformationsverwaltung**, **Lagerverwaltung**, **Hauptbuch**, **Lagerortverwaltung**, **Projektverrechnung** und **Organisationsverwaltung** verknüpft. Diese Integration ermöglicht die reibungslose Weiterleitung von Informationen, die zum Fertigstellen der Artikelfertigung erforderlich sind.  
 
-Der Produktionsprozess wird in der Regel von den Kostenrechnungs- und Lagerbewertungsmethoden beeinflusst, die für einen bestimmten Produktionsprozess ausgewählt werden. Dynamics 365 for Operations unterstützt sowohl die Methode für tatsächliche Kosten (First in, First out \[FIFO\]; Last in, First out \[LIFO\]; sich verschiebender Durchschnitt; sowie periodisch gewichteter Durchschnitt) als auch die Methode für Standardkosten. Lean Manufacturing wird auf der Grundlage des Prinzips der Nachkalkulation für Produktionskosten implementiert.  
+Der Produktionsprozess wird in der Regel von den Kostenrechnungs- und Lagerbewertungsmethoden beeinflusst, die für einen bestimmten Produktionsprozess ausgewählt werden. Finance and Operations unterstützt sowohl die Methode für tatsächliche Kosten (First in, First out \[FIFO\]; Last in, First out \[LIFO\]; sich verschiebender Durchschnitt; sowie periodisch gewichteter Durchschnitt) als auch die Methode für Standardkosten. Lean Manufacturing wird auf der Grundlage des Prinzips der Nachkalkulation für Produktionskosten implementiert.  
 
 Die Auswahl der Kostenmessungsmethoden definieren auch die Anforderungen für die Berichterstellung zum Material-und Ressourcenverbrauch während des Produktionsprozesses. Normalerweise erfordern Methoden zu tatsächlichen Kosten eine genaue Berichterstellung auf Einzelvorgangsebene. Periodische Nachkalkulationsmethoden lassen hingegen eine weniger präzise Berichterstellung zum Material- und Ressourcenverbrauch zu.
 
 ## <a name="mixed-mode-manufacturing"></a>Fertigung im Mischbetrieb
-Verschiedene Produkte und Produktionstopologien erfordern die Anwendung von unterschiedlichen Auftragstypen. Dynamics 365 for Operations kann die verschiedenen Auftragstypen in einem gemischten Modus übernehmen. In anderen Worten können alle anderen Auftragstypen während des Ende-zu-Ende-Prozesses der Herstellung eines fertigen Produkts auftreten.
+Verschiedene Produkte und Produktionstopologien erfordern die Anwendung von unterschiedlichen Auftragstypen. Finance and Operations kann die verschiedenen Auftragstypen in einem gemischten Modus übernehmen. In anderen Worten können alle anderen Auftragstypen während des Ende-zu-Ende-Prozesses der Herstellung eines fertigen Produkts auftreten.
 
 -   **Produktionsauftrag** – Dies ist der klassische Auftragstyp, um ein bestimmtes Produkt oder Produktvariante in einer bestimmten Menge an einem bestimmten Datum zu produzieren. Produktionsaufträge basieren auf Stücklisten und Arbeitsplänen.
 -   **Chargenauftrag** – Dieser Auftragstyp wird für verarbeitende Industrien und diskrete Prozesse verwendet, bei denen die Herstellungsumwandlung auf einer Formel basiert, oder wobei die Co-Produkte und Nebenprodukte Endprodukte sein können, entweder zusätzlich zum oder statt des Hauptprodukts. Chargenauftrage verwenden Stücklisten und Arbeitspläne vom Typ **Formel**.

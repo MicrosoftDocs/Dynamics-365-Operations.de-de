@@ -3,14 +3,14 @@ title: "Überblick zur SEPA-Kreditübertragung"
 description: "Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen bereit, die SEPA (Single Euro Payments Area) Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen. Eine SEPA-Überweisung ist eine Zahlung (in Euro) von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Der Artikel beschreibt zudem, wie eine SEPA-Überweisung-Zahlungsdatei eingerichtet und übermittelt wird."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8f1a220babc333fe2091e9286afc565ebeecf036
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,15 +53,15 @@ Der EPC besteht aus europäischen Banken und entwickelt das Handels- und das tec
 Eine SEPA-Überweisung ist eine Zahlung von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Zahlungen müssen in Euro durchgeführt werden und sie müssen die internationale Bankkontonummer (IBAN) und Bank Identifier Code (BIC) für beide Parteien enthalten. (Die BIC ist auch als Society for Worldwide Interbank Financial Telecommunication \[SWIFT\] Code bekannt. Darüber hinaus müssen Buchungskosten zwischen beiden Parteien freigegeben werden. Banküberweisungen zwischen Parteien sollten XML-Dateien verwenden, die den ISO 20022-Standards zu Zahlungsverarbeitung entsprechen und das durch das EPC festgelegt XML-Format verwenden.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Wie wird eine Überweisung implementiert?
-Das SEPA-Überweisungsformat wird über die generische elektronische Berichterstellung und die Methoden von Zahlungsfunktionen in Microsoft 365 for Operations implementiert. Einige Banküberweisungsformate, die in anderen Regionen noch verwendet werden, verwenden Sie das vorhandene Zahlungsframework. Unter vielen anderen Formaten gibt es zwölf ISO 20022-Banküberweisungsdateiformate, die verfügbar sind. Diese Exportformate entsprechen dem XML-Standard SEPA ISO 20022. Sie werden verwendet, um Nicht-Euro-Zahlungsüberweisungen für Land/Region zu generieren, in denen sie Eurozahlungen und verwendet werden, z.B. in der Version 8,2 der SEPA-Kredit-Übertragungssystem-Regelung der EPC. Bevor Sie die Überweisungen implementieren können, müssen Sie von Ihrer Bank die Software erhalten, die erforderlich ist, um elektronisch Bankdateien hochzuladen. Sie verwenden diese Software, um XML-Dateien zu übertragen, die Zahlungen an die Bank enthalten.
+Das SEPA-Überweisungsformat wird über die generische elektronische Berichterstellung und die Methoden von Zahlungsfunktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, implementiert. Einige Banküberweisungsformate, die in anderen Regionen noch verwendet werden, verwenden Sie das vorhandene Zahlungsframework. Unter vielen anderen Formaten gibt es zwölf ISO 20022-Banküberweisungsdateiformate, die verfügbar sind. Diese Exportformate entsprechen dem XML-Standard SEPA ISO 20022. Sie werden verwendet, um Nicht-Euro-Zahlungsüberweisungen für Land/Region zu generieren, in denen sie Eurozahlungen und verwendet werden, z.B. in der Version 8,2 der SEPA-Kredit-Übertragungssystem-Regelung der EPC. Bevor Sie die Überweisungen implementieren können, müssen Sie von Ihrer Bank die Software erhalten, die erforderlich ist, um elektronisch Bankdateien hochzuladen. Sie verwenden diese Software, um XML-Dateien zu übertragen, die Zahlungen an die Bank enthalten.
 
-## <a name="what-credit-transfer-formats-are-currently-supported-in-dynamics-365-for-operations"></a>Welche Banküberweisungsformate werden derzeit in Dynamics 365 for Operations unterstützt?
+## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Welche Banküberweisungsformate werden derzeit in Finance and Operations unterstützt?
 Sie sollten für die Bibliothek der freigegebenen Anlage auf Microsoft Dynamics Lifecycle Services (LCS) nutzen und die neuesten Liste der verfügbaren Dateien mit dem Anlagentyp **GER-Konfiguration** sehen. Im nächsten Abschnitt "Was muss ich einrichten?" wird ein Link zum Thema bereitgestellt, der erläutert, wie ein LCS-Repository herstellt, um verfügbare Konfigurationen und Importieren ausgewählter Konfigurationen zu prüfen.
 
 ## <a name="what-do-i-have-to-set-up"></a>Was muss ich einrichten?
--   Bevor Sie Überweisungsdateien erstellen können, muss mindestens eine aktive Banküberweisungskonfiguration in die generischen elektronischen Berichterstellungskonfigurationen importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Bevor Sie Überweisungsdateien erstellen können, muss mindestens eine aktive Banküberweisungskonfiguration in die generischen elektronischen Berichterstellungskonfigurationen importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 -   Wenn Sie Kreditorenkonten-Zahlungsmethoden konfigurieren, wählen Sie die **Elektronische Berichterstellung**-Kontrollkästchen und wählen das passende Banküberweisungsformat (z. B. **ISO 20022 Credit transfer (AT)**)
--   Sie müssen die juristische Person und die Bankkontoinformationen in Microsoft 365 for Operations einrichten.
+-   Sie müssen die juristische Person und die Bankkontoinformationen in Finance and Operations einrichten.
 -   Kontonummern, IBAN und manchmal SWIFT-Codes (BICs) oder andere Nummern werden benötigt, um spezifische Kredittransferzahlungen zu erstellen. Daher müssen diese für das Bankkonto des Kreditors einrichten und das Bankkonto der Organisation, die die Übertragung angefordert werden.
 -   Zusätzliche Informationen kann, beispielsweise die Mehrwertsteuer (VAT)- Nummern für die Parteien erforderlich, die in der Banküberweisungsnachricht gemeldet werden. Diese Anpassung muss für Kreditoren und für die juristische Person eingerichtet werden, wenn sie angefordert hat.
 -   Einige Kreditorzahlungsmethoden (größtenteils ISO 20022 - basierend Zahlungsmethoden), erfordern ggf. zusätzliche Einstellungen für **Zahlungsformat-Codesätze** wie **Dienstleistungstypen** = **SLEV**. Diese Codes verwendet werden,als zusätzliche Markierung für Zahlungsbuchungen während des Zahlungs verarbeitens. Standardwerte aus Zahlungscodes, wie **Kategoriezweck**, **Zuschlagsträger**, **Lokales Instrument** und **Servicelevel** können in zwei Orte festgelegt werden. Der erste Ort ist **Kreditorenzahlungserfassungskopf** und der zweite ist **Kreditorenkontenmethoden für Zahlungen**. Nach Erstellung Zahlungserfassungspositionen, werden die Zahlungscodewerte, die auf Zahlungserfassungskopf festgelegt werden, in eine Erfassungsposition, wenn sie, nicht die Werte von den Zahlungsmethoden festgelegt werden, übertragen werden verwendet.

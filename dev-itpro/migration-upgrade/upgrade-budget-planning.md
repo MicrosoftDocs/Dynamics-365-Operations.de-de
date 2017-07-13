@@ -1,6 +1,6 @@
 ---
 title: Budgetplanung aktualisieren
-description: "Es gibt erhebliche Unterschiede bei der Budgetplanung zwischen Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Operations. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist."
+description: "Es gibt erhebliche Unterschiede bei der Budgetplanung zwischen Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Finance and Operations. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/10/2017
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fafa323c3949c09707c81ec41edae25ad2677eeb
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 83e93df3284760c46cb95b931f32cc9990ef2db1
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Es gibt erhebliche Unterschiede bei der Budgetplanung zwischen Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Operations. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.  
+Es gibt erhebliche Unterschiede bei der Budgetplanung zwischen Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Finance and Operations. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.  
 
-Budgetplanung in Microsoft Dynamics 365 for Operations verfügt über eine Vielzahl von Erweiterungen, die nicht in Microsoft Dynamics AX 2012 verfügbar waren. In diesem Thema werden die Änderungen erklärt, die Kunden bei einer Aktualisierung durchführen müssen. Es unterstreicht auch die neuen Funktionen, die im Aktualisierungsprozess berücksichtigt werden sollen. Aufgrund der umfangreichen Änderungen können keine vorhandenen Budgetpläne geöffnet werden, bis die Änderungen vorgenommen werden, die in diesem Thema aufgeführt sind. Berichte funktionieren weiterhin und erfordern keine zusätzliche Änderungen.
+Budgetplanung in Microsoft Dynamics 365 for Finance and Operations verfügt über eine Vielzahl von Erweiterungen, die nicht in Microsoft Dynamics AX 2012 verfügbar waren. In diesem Thema werden die Änderungen erklärt, die Kunden bei einer Aktualisierung durchführen müssen. Es unterstreicht auch die neuen Funktionen, die im Aktualisierungsprozess berücksichtigt werden sollen. Aufgrund der umfangreichen Änderungen können keine vorhandenen Budgetpläne geöffnet werden, bis die Änderungen vorgenommen werden, die in diesem Thema aufgeführt sind. Berichte funktionieren weiterhin und erfordern keine zusätzliche Änderungen.
 
 ## <a name="overview-of-changes"></a>Überblick über die Änderungen
-Viele signifikante Veränderungen sind bei der Budgetierung für Dynamics 365 for Operations vorgenommen worden. Diese Änderungen sind vorgesehen, um die Budgetplanung zu vereinfachen und zu konfigurieren, um die  jährliche Wartung und der Setup zu reduzieren. Die folgenden Bereiche im AX 2012 sind nicht mehr in Dynamics 365 for Operations enthalten:
+Viele signifikante Veränderungen sind bei der Budgetierung für Finance and Operations vorgenommen worden. Diese Änderungen sind vorgesehen, um die Budgetplanung zu vereinfachen und zu konfigurieren, um die  jährliche Wartung und der Setup zu reduzieren. Die folgenden Bereiche im AX 2012 sind nicht mehr in Finance and Operations enthalten:
 
 -   Budgetplanvorlagen (Budgetplanungskonfiguration)
 -   Budgetplanordner (Budgetplanungskonfiguration)
@@ -53,15 +53,15 @@ Spalten sind ein neues Konzept, das Teile der Excel-Vorlagen und auch Matrixfeld
 
 ### <a name="layouts"></a>Layouts
 
-Layouts sind ein neues Konzept, die Excel-Vorlagen ersetzen. Layouts enthalten die Spalten, die definieren, welche Budget- oder Actual-Daten und Perioden angezeigt werden sollten. Layouts werden auch zwischen Client und dem Excel-Add-In freigegeben. Somit ist die Benutzerfreundlichkeit, wenn Sie Daten eingeben oder anzeigen in Dynamics 365 for Operations Clients besser als die Benutzerfreundlichkeit in AX 2012. Um Daten im Dynamics 365 for Operations Client einzugeben, sind Sie nicht mehr zum Anzeigen und Eingeben eines einzelnen Szenarios in einer Buchungsansicht beschränkt. Stattdessen können Sie in einer Vergleichsansicht Beträge für mehrere Perioden sowie Konten gleichzeitig anzeigen und eingeben. Layouts können auch so definiert werden, dass Sie Währungen, Kommentare sowie andere optionale Daten eingeben und anzeigen können. In Layouts können Sie auch definieren, welche Sachkontodimensionen und Dimensionsbeschreibungen angezeigt werden sollen. Layouts enthalten auch Szenarioeinschränkungen, um festzulegen, welche Spalten in einer Vorlage geändert werden können und welche Spalten in Excel verfügbar sein sollen. Nachdem Sie ein Layout festlegen, wird ein Original für Sie generiert. Diese Vorlage erstellt wiederum die entsprechende Excel-Vorlage. Sie können die Excel-Vorlagee dann bearbeiten, um mehr Formeln und Formatierungen einzubeziehen und laden sie dann erneut nach oben. Layouts werden dann zu jeder Phasenregel auf der Seite **Budgetplanungsprozess** zugewiesen. Daher ersetzen die Layouts Vorlagen, die auf ähnliche Weise zugeordnet und in ähnlicher Weise angewendet wurden.
+Layouts sind ein neues Konzept, die Excel-Vorlagen ersetzen. Layouts enthalten die Spalten, die definieren, welche Budget- oder Actual-Daten und Perioden angezeigt werden sollten. Layouts werden auch zwischen Client und dem Excel-Add-In freigegeben. Somit ist die Benutzerfreundlichkeit, wenn Sie Daten  im Finance and Operations Clients eingeben oder anzeigen besser als die Benutzerfreundlichkeit in AX 2012. Um Daten im Finance and Operations Client einzugeben, sind Sie nicht mehr zum Anzeigen und Eingeben eines einzelnen Szenarios in einer Buchungsansicht beschränkt. Stattdessen können Sie in einer Vergleichsansicht Beträge für mehrere Perioden sowie Konten gleichzeitig anzeigen und eingeben. Layouts können auch so definiert werden, dass Sie Währungen, Kommentare sowie andere optionale Daten eingeben und anzeigen können. In Layouts können Sie auch definieren, welche Sachkontodimensionen und Dimensionsbeschreibungen angezeigt werden sollen. Layouts enthalten auch Szenarioeinschränkungen, um festzulegen, welche Spalten in einer Vorlage geändert werden können und welche Spalten in Excel verfügbar sein sollen. Nachdem Sie ein Layout festlegen, wird ein Original für Sie generiert. Diese Vorlage erstellt wiederum die entsprechende Excel-Vorlage. Sie können die Excel-Vorlagee dann bearbeiten, um mehr Formeln und Formatierungen einzubeziehen und laden sie dann erneut nach oben. Layouts werden dann zu jeder Phasenregel auf der Seite **Budgetplanungsprozess** zugewiesen. Daher ersetzen die Layouts Vorlagen, die auf ähnliche Weise zugeordnet und in ähnlicher Weise angewendet wurden.
 
 ### <a name="budget-planning-processes"></a>Budgetplanungsprozesse
 
-Budgetplanungsprozesse sind meistens gleich wie jene in  AX 2012. Die signifikanteste Änderung ist die Ersetzung der Vorlagen mit Layouts zu. Wurden irgendwelche Prozesse zuvor im AX 2012 abgeschlossen, werden Prozesse auf den Status in Bearbeitung aktualisiert, damit Änderungen vorgenommen werden können. Sie müssen Layouts zuweisen müssen, damit jede Phasenregel bestimmt, welche Szenarien und Zeitperioden angezeigt werden, wenn der Plan im Client geöffnet wird. Die Layouts bestimmen auch, welche Excel-Vorlage außerhalb von Dynamics 365 for Operations geöffnet wird, sodass Sie das Budget anzeigen können. **Standardkontostruktur** ist ein neues angefordertes Feld für den Budgetplanungsprozess. Für jeden Budgetplanungsprozess, weisen Sie die primäre Kontostruktur zu, die für die Budgetierung verwendet werden soll.
+Budgetplanungsprozesse sind meistens gleich wie jene in  AX 2012. Die signifikanteste Änderung ist die Ersetzung der Vorlagen mit Layouts zu. Wurden irgendwelche Prozesse zuvor im AX 2012 abgeschlossen, werden Prozesse auf den Status in Bearbeitung aktualisiert, damit Änderungen vorgenommen werden können. Sie müssen Layouts zuweisen müssen, damit jede Phasenregel bestimmt, welche Szenarien und Zeitperioden angezeigt werden, wenn der Plan im Client geöffnet wird. Die Layouts bestimmen auch, welche Excel-Vorlage außerhalb von Dynamics 365 for Finance and Operations geöffnet wird, sodass Sie das Budget anzeigen können. **Standardkontostruktur** ist ein neues angefordertes Feld für den Budgetplanungsprozess. Für jeden Budgetplanungsprozess, weisen Sie die primäre Kontostruktur zu, die für die Budgetierung verwendet werden soll.
 
 ### <a name="attachments"></a>Anhänge
 
-Im AX 2012 wurden Begründungsdokumente in einem Anhangordner gespeichert. Keine vorherigen Begründungsdokumente werden aktualisiert. Begründungsdokumente werden nun in der Datenbank gespeichert. Wenn diese Informationen in der aktualisierten Version gespeichert werden, können Sie Begründungsdokumente endgültig für jeden Plan als Anhang hochladen, indem Sie die **Begründung** im Aktivitätsbereich verwenden. In AX 2012 wurden Excel-Arbeitsblätter für jeden Budgetplan auf der Vorlage erstellt. In Dynamics 365 for Operations öffnen alle Pläne eine Kopie des Layouts. Allerdings werden keine Änderungen zur Excel-Datei gespeichert. Alle Formeln oder unterstützenden Informationen, die auf einer ProPlan-Grundlage verwendet wurden, müssen über Kommentare, ein Begründungsdokument oder einen anderen Prozess ergänzend hinzugefügt werden.
+Im AX 2012 wurden Begründungsdokumente in einem Anhangordner gespeichert. Keine vorherigen Begründungsdokumente werden aktualisiert. Begründungsdokumente werden nun in der Datenbank gespeichert. Wenn diese Informationen in der aktualisierten Version gespeichert werden, können Sie Begründungsdokumente endgültig für jeden Plan als Anhang hochladen, indem Sie die **Begründung** im Aktivitätsbereich verwenden. In AX 2012 wurden Excel-Arbeitsblätter für jeden Budgetplan auf der Vorlage erstellt. In Finane and Operations öffnen alle Pläne eine Kopie des Layouts. Allerdings werden keine Änderungen zur Excel-Datei gespeichert. Alle Formeln oder unterstützenden Informationen, die auf einer ProPlan-Grundlage verwendet wurden, müssen über Kommentare, ein Begründungsdokument oder einen anderen Prozess ergänzend hinzugefügt werden.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Konfigurieren einer aktualisierten Umgebung von AX 2012
 Um einfach zu bestimmen, wie die Aktualisierung für das System konfiguriert werden soll, nutzen die folgenden Beispiele einen aktualisierten Budgetprozess aus den AX 2012-Demodaten. Standardkonfigurationsdaten für Spalten wurden erstellt, die für gerundete Aktualisierungsprozesse nützen können. Sie können diese Standarddaten aktualisieren oder löschen, wenn sie Ihre Konfigurationsbedingungen nicht erfüllen. **Hinweis:** Es gibt neue Pflichtfelder, die nicht im System eingerichtet werden. Wenn Sie auf einer Seite festsitzen wie der Seite **Budgetplanungskonfiguration** und nicht weiter navigieren können, können Sie Ihren Browser schließen und ihn in einer anderen Seite erneut öffnen, um Details in der richtigen Reihenfolge einzugeben. Es gibt Pflichtfelder, die noch nicht festgelegt werden. Daher können möglicherweise Probleme auftreten, bis alles konfiguriert und alle Pflichtfelder festgelegt wurden. In diesem Thema wird erläutert, wie Sie diese Felder einrichten, sofern erforderlich. Hier sind einige dieser erforderlichen Felder:
@@ -75,7 +75,7 @@ Um einfach zu bestimmen, wie die Aktualisierung für das System konfiguriert wer
     -   Budgetplanszenarien: Wirklichkeiten, Basiszeitraum, Budget-Anforderung, Budget genehmigt
     -   Budgetplanpositionen für alle Szenarien im Jahre 2017 und 2017 und 2016 Actuals
 
-    Die folgenden Spalten sind in Dynamics 365 for Operations erstellt:
+    Die folgenden Spalten sind in Finance and Operations erstellt:
     | Spaltenname    | Budgetplanszenario | Zeitperiode der Spalte | Jahresausgleich |
     |----------------|----------------------|--------------------|-------------|
     | Januar Szenario 1 | Istwerte              | 1                  | 0           |
@@ -128,7 +128,7 @@ Folgende Optionen wurden als regelmäßige Prozesse hinzugefügt. Mit diesen Opt
 
 ### <a name="more-complete-tracking-of-amounts"></a>Weitere vollständige Nachverfolgung von Beträgen
 
-Im AX 2012 weist Budgetplanung einen einzelnen Planbetrag auf, der für jeden Wert gespeichert wurde. In Dynamics 365 for Operations ist das Datenmodell erweitert worden. Es gibt nun Buchungswährung, Buchhaltungswährung und Berichtswährungsbeträge für jeden Wert. Während der Aktualisierung sind diese neue Spalten automatisch für vorhandenen Daten ausgefüllt.
+Im AX 2012 weist Budgetplanung einen einzelnen Planbetrag auf, der für jeden Wert gespeichert wurde. In Finance and Operations ist das Datenmodell erweitert worden. Es gibt nun Buchungswährung, Buchhaltungswährung und Berichtswährungsbeträge für jeden Wert. Während der Aktualisierung sind diese neue Spalten automatisch für vorhandenen Daten ausgefüllt.
 
 ### <a name="do-not-convert-currency-in-aggregation"></a>Währung nicht in Aggregation konvertieren
 

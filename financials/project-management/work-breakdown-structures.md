@@ -1,27 +1,27 @@
 ---
 title: "Projektstrukturpläne"
-description: 
+description: "Ein Projektstrukturplan (PSP) ist eine Beschreibung der Arbeit, die für ein Projekt ausgeführt wird. Sie ist eine Hierarchie von Aufgaben, die das Verständnis des Projektteams zur Zusammenstellung der Arbeit und die Größe, Kosten und Dauer der einzelnen Komponenten oder Aufgaben darstellt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23861
 ms.assetid: 241a0464-0056-4a69-b468-0afbe2d5f3ae
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a700f61bcc6e6d9c699987999be25649862b0d8
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 6d4391f1a6fa517b447387562fd3216201451316
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,10 +30,7 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-
-
-
-Projektstrukturpläne: Ein Projektstrukturplan (PSP) ist eine Beschreibung der Arbeit, die für ein Projekt ausgeführt wird. Sie ist eine Hierarchie von Aufgaben, die das Verständnis des Projektteams zur Zusammenstellung der Arbeit und die Größe, Kosten und Dauer der einzelnen Komponenten oder Aufgaben darstellt. Ein PSP hat drei wichtige Funktionen:
+Ein Projektstrukturplan (PSP) ist eine Beschreibung der Arbeit, die für ein Projekt ausgeführt wird. Sie ist eine Hierarchie von Aufgaben, die das Verständnis des Projektteams zur Zusammenstellung der Arbeit und die Größe, Kosten und Dauer der einzelnen Komponenten oder Aufgaben darstellt. Ein PSP hat drei wichtige Funktionen:
 
 -   Beschreiben der Aufschlüsselung oder die Zusammenstellung der Arbeit in Aufgaben.
 -   Planen der Projektarbeit
@@ -43,7 +40,7 @@ Der erforderliche Genauigkeit in einem PSP hängt vom Ebene der Genauigkeit ab, 
 
 Projekte in Branchen wie Medien und Werbung, Software und IT-Infrastruktur sind recht ähnlich. Die Produktivität hängt von der Erfahrung und der Kompetenz der Person ab, die die Aufgabe ausführen wird. Daher verwenden diese Branchen einen PSP, um eine Näherung der Größe eines Projekts abzurufen statt den Status des Projekts detailliert zu verfolgen. 
 
-Das Einrichten eines PSP ist ein intensiver Prozess, der normalerweise über eine lange Zeitspanne geleistet wird und der die Zusammenarbeit und Informationen einer breiten Palette von Personen erfordert. In diesem Thema wird beschrieben, wie Sie PSP-Erweiterungen in Microsoft Dynamics 365 for Operations verwenden können, um die Bedingungen für die Vorkalkulationen und Nachverfolgung zu erfüllen.
+Das Einrichten eines PSP ist ein intensiver Prozess, der normalerweise über eine lange Zeitspanne geleistet wird und der die Zusammenarbeit und Informationen einer breiten Palette von Personen erfordert. In diesem Thema wird beschrieben, wie Sie PSP-Erweiterungen in Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Bedingungen für die Vorkalkulationen und Nachverfolgung zu erfüllen.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>Voraussetzungen für die Erstellung eines PSP
 Um einen PSP zu erstellen, müssen Sie in der Lage sein, einen Arbeitsplan zu erstellen und die Kosten der Arbeit zu bewerten.
@@ -106,10 +103,10 @@ So können Sie die PSP-Nummerierung zurzeit nicht anpassen.
 
 ### <a name="schedule-estimation"></a>Zeitplankalkulation
 
-Die Zeitplankalkulation ist normalerweise der zweiten Schritt, wenn Sie den PSP erstellen. Als optimale Methode sollten Sie die Zeitplankalkulation abschließen, nachdem Sie die Aufgaben erstellt haben. Die **Projektstrukturplan**-Seite in Microsoft Dynamics 365 for Operation hat zwei Abschnitte. Der obere Bereich ist für die Zeitplankalkulation bewirken und der untere Bereich enthält eine Registerkarte **Vorkalkulierte Kosten und Umsatzerlöse**, die für die Kostenschätzung verwendet wird. 
+Die Zeitplankalkulation ist normalerweise der zweiten Schritt, wenn Sie den PSP erstellen. Als optimale Methode sollten Sie die Zeitplankalkulation abschließen, nachdem Sie die Aufgaben erstellt haben. Die **Projektstrukturplan**-Seite in Finance and Operations verfügt über zwei Abschnitte. Der obere Bereich ist für die Zeitplankalkulation bewirken und der untere Bereich enthält eine Registerkarte **Vorkalkulierte Kosten und Umsatzerlöse**, die für die Kostenschätzung verwendet wird. 
 **Aufgabenabhängigkeiten** In einem PSP können Sie eine Vorgängerbeziehung zwischen Aufgaben erstellen. Wenn Sie Aufgaben eine Vorgängeraufgabe zuweisen, kann sie nur dann starten, wenn alle Vorgängeraufgaben ausgeführt wurden. Das geplante Startdatum der Aufgabe wird automatisch zum spätestmöglichen Datum aller ihrer Vorgänger festgelegt. 
 
-**Aufgabenplanung in Microsoft Dynamics 365 for Operations** Die folgenden Faktoren bestimmen die Planung von Blattknotenaufgaben:
+**Aufgabenplanung in Microsoft Dynamics 365 for Finance and Operations** Die folgenden Faktoren bestimmen die Planung von Blattknotenaufgaben:
 
 -   Vorherige Aktivitäten
 -   Aufwand
@@ -126,7 +123,7 @@ Das Startdatum einer Blattknotenaufgabe ohne Vorgänger wird automatisch auf das
 
 Anzahl der Personen × Dauer × Anzahl der Stunden an einem Standardarbeitstag im Projektkalender. 
 
-In einigen Fällen möchten Sie von diesen Regeln abweichen. Sie können die automatische Planung deaktivieren, um zu verhindern, dass Microsoft Dynamics 365 for Operations automatisch alle Eigenschaften von Blattknotenaufgaben festlegt oder korrigiert. Wenn Sie Informationen für eine Aufgabe eingeben, die eine Verletzung einer Planungsregel darstellen, wird ein Planungsfehlersymbol für die Aufgabe angezeigt. Wenn die Planungsfehler nicht angezeigt werden sollen, klicken Sie auf **Planungsfehlern werden angezeigt**, um die Funktion zu deaktivieren. 
+In einigen Fällen möchten Sie von diesen Regeln abweichen. Sie können die automatische Planung deaktivieren, um zu verhindern, dass Finance and Operations automatisch alle Eigenschaften von Blattknotenaufgaben festlegt oder korrigiert. Wenn Sie Informationen für eine Aufgabe eingeben, die eine Verletzung einer Planungsregel darstellen, wird ein Planungsfehlersymbol für die Aufgabe angezeigt. Wenn die Planungsfehler nicht angezeigt werden sollen, klicken Sie auf **Planungsfehlern werden angezeigt**, um die Funktion zu deaktivieren. 
 
 > [!NOTE] 
 > Die Werte für eine Zusammenfassungs- oder Containeraufgabe werden auch weiterhin aus Summe der Werte der konstituierenden Aufgaben berechnet. Dies geschieht unabhängig davon, ob die automatische Planungshilfe aktiviert ist. 
@@ -135,7 +132,7 @@ In einigen Fällen möchten Sie von diesen Regeln abweichen. Sie können die aut
 
 **Beheben von Planungsfehlern nach Aufgaben** Wenn Sie auf das Zeitplanfehlersymbol für eine bestimmte Aufgabe doppelklicken, wird ein Dialogfeld mit allen Planungsfehlern für diese Aufgabe angezeigt. Sie können entscheiden, welche Fehler Sie korrigieren möchten. 
 
-**Korrigieren aller Planungsfehler** Wenn Sie möchten, dass Microsoft Dynamics 365 for Operations alle Planungsfehler im PSP korrigiert, klicken Sie im Aktivitätsbereich auf **Reparieren von alle Planungsabweichungen**. 
+**Korrigieren aller Planungsfehler** Wenn Sie möchten, dass Finance and Operations alle Planungsfehler im PSP korrigiert, klicken Sie im Aktivitätsbereich auf **Reparieren von alle Planungsabweichungen**. 
 
 > [!NOTE] 
 > Diese Funktion kann zu erheblichen Änderungen am PSP führen. Fehler werden in der folgenden Reihenfolge korrigiert:
@@ -170,7 +167,7 @@ Die Kosten und der Verkaufspreis für Arbeit- oder Ausgabenenvorkalkulationsposi
 ## <a name="tracking-progress-on-the-wbs"></a>Verfolgen des Status im PSP
 In einigen Branchen wird der Fortschritt eines Projekts über ein PSP sehr präzise verfolgt. Andere verfolgen den Status auf einer höheren Ebene des PSP. In diesem Abschnitt wird beschrieben, wie Sie die PSP-Nachverfolgung für Ihre Projektanforderungen verwenden können. 
 
-Microsoft Dynamics 365 for Operations verfügt über drei Ansichten für den PSP eines Projekts: Projektplanungsansich, Aufwandsverfolgungsansicht und Kostenverfolgungsansicht.
+Finance and Operations verfügt über drei Ansichten für den PSP eines Projekts: Projektplanungsansicht, Aufwandsverfolgungsansicht und Kostenverfolgungsansicht.
 
 ### <a name="planning-view"></a>Projektplanungsansicht
 
@@ -246,13 +243,13 @@ Die Zeitphase im Ertragswertdiagramm wird pro Woche oder Monat angezeigt. In die
 
 **Geplanter Wert** Die EVM-Theorie besagt, das der Graph mit dem geplanten Wert den Satz darstellt, mit dem das Team des Projekts für eine Rentabilität geplant hat. 
 
-Microsoft Dynamics 365 for Operations verwendet die 0:100-Einnahmeregel für die Darstellung des geplanten Werts. Bei dieser Regel wird der Wert der Aufgabe am Enddatum für die Aufgabe gebucht. Kein Wert wird gebucht, bis die Aufgabe zu 100 Prozent abgeschlossen ist. 
+Finance and Operations verwendet die 0:100-Einnahmeregel für die Darstellung des geplanten Werts. Bei dieser Regel wird der Wert der Aufgabe am Enddatum für die Aufgabe gebucht. Kein Wert wird gebucht, bis die Aufgabe zu 100 Prozent abgeschlossen ist. 
 
 Im Projektverwaltungs- und Buchhaltungsmodul geben Sie das Enddatum der Endknoten und die geplanten Kosten ein. Wenn das Diagramm für den geplanten Wert nach Woche angezeigt wird, wird der geplanter Wert wochenweise für alle Endknotenaufgaben für die Dauer des Projekts zusammengefasst. 
 
 **Ertragswert** Die EVM-Theorie besagt, das der Graph mit dem Ertragswert den Satz darstellt, mit dem das Team des Projekts rentabel ist. 
 
-Microsoft Dynamics 365 for Operations verwendet die 0:100-Einnahmeregel für die Darstellung des Ertragswerts. Bei dieser Regel wird der Wert der Aufgabe am Enddatum für die Aufgabe gebucht. Kein Wert wird gebucht, bis die Aufgabe zu 100 Prozent abgeschlossen ist. 
+Finance and Operations verwendet die 0:100-Einnahmeregel für die Darstellung des erzielten Werts. Bei dieser Regel wird der Wert der Aufgabe am Enddatum für die Aufgabe gebucht. Kein Wert wird gebucht, bis die Aufgabe zu 100 Prozent abgeschlossen ist. 
 
 Wenn der Ertragswert berechnet wird, wird der Statusprozentsatz jeder Aufgabe berücksichtigt. Bei der 0:100-Regel werden nur Aufgaben, die während einer bestimmten Periode abgeschlossen werden, für die Berechnung des Ertragswerts am Ende der Periode berücksichtigt. Der Ertragswert für das Projekt wird für alle Aufgaben berechnet, die abgeschlossen wurden, wenn das Diagramm erstellt wird. 
 

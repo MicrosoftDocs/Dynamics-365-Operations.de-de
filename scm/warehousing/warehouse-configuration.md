@@ -3,14 +3,14 @@ title: Lagerortkonfiguration
 description: "In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enthält Informationen zum Aktivieren eines Lagerortlayouts und Lagerortverfahren."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11554
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 08c086767303f6f52e085f8f56b5d09f1e46878f
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 17608d373fbedd20efe0b525ec141989a50a40a2
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,10 +33,10 @@ ms.lasthandoff: 05/25/2017
 
 In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enthält Informationen zum Aktivieren eines Lagerortlayouts und Lagerortverfahren.
 
-**Hinweis:** Dieser Artikel gilt für Funktionen im Modul**Lagerortverwaltung** (erweiterte Lagerung). Es gilt nicht für Lagerort-Funktionen im Modul**Bestandsverwaltung**.
+**Hinweis:** Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung** (erweiterte Lagerung). Es gilt nicht für Lagerort-Funktionen im Modul **Bestandsverwaltung**.
 
 ## <a name="warehouse-layout"></a>Lagerortlayout
-Das Lagerortverwaltungssystem in Microsoft Dynamics 365 for Operations ermöglicht flexible Methoden, Ihr Lagerortlayout zu definieren, um notwendige Anpassungen und somit eine optimale Lagerorteffizienz zu ermöglichen.
+Das Lagerortverwaltungssystem in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, ermöglicht flexible Methoden, Ihr Lagerortlayout zu definieren, um notwendige Anpassungen und somit eine optimale Lagerorteffizienz zu ermöglichen.
 
 -   Sie können Lagerbereiche mit hoher und niedriger Priorität für eine optimale Platzierung von Waren einrichten.
 -   Sie können Ihre Lagerorte in die Zonen aufteilen, um verschiedene Lageranforderungen, wie Temperaturanforderungen oder unterschiedliche Umschlagsgeschwindigkeiten, für Artikel zu berücksichtigen.
@@ -44,7 +44,7 @@ Das Lagerortverwaltungssystem in Microsoft Dynamics 365 for Operations ermöglic
 -   Sie können Lagerplätze gruppieren, indem Sie die Einstellungen für physische Kapazitätsengspässe verwenden.
 -   Sie können basierend auf Regeln, die über Abfragen definiert werden, steuern, wie Artikel gelagert und entnommen werden.
 
-Um die Lagerortverwaltung in Microsoft Dynamics 365 for Operations zu verwenden, müssen Sie einen Lagerort erstellen und diesen für die erweiterten oder spezialisierten Lagerortverwaltungsaktivitäten aktivieren. Wählen Sie auf der Seite **Lagerorte** die Option **Lagerortverwaltungsprozesse verwenden**aus.
+Um die Lagerortverwaltung in Finance and Operations zu verwenden, müssen Sie einen Lagerort erstellen und diesen für die erweiterten oder spezialisierten Lagerortverwaltungsaktivitäten aktivieren. Wählen Sie auf der Seite **Lagerorte** die Option **Lagerortverwaltungsprozesse verwenden** aus.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zonengruppen, Zonen, Lagerplatztypen und Lagerplätze
 
@@ -56,7 +56,7 @@ Im Rahmen des Prozesses zur Aktivierung eines Lagerortlayouts, müssen Sie Lager
 -   **Lagerplatztypen** - Eine logische oder physische Gruppierung von Lagerort-Lagerplätzen. So können Sie beispielsweise einen Lagerplatztyp für alle Bereitstellungslagerplätze erstellen. Erforderliche Einstellungen auf der Seite **Lagerverwaltungsparameter** steuern den Prozess des Definierens von Staginglagerplatztypen und endgültigen Einlieferungslagerplätzen.
 -   **Lagerplätze** - Die niedrigste Ebene der Lagerplatzinformationen. Lagerplätze werden verwendet, um zu nachzuverfolgen, wohin der verfügbare Lagerbestand in einem Lagerort gespeichert und entnommen wird.
 
-Die Entitäten, die Sie erstellen, um Ihr Lagerortlayout zu definieren, werden in Abfragen verwendet, die Sie in den Arbeitsvorlagen einrichten, um Arbeitsaufträge am Lagerort zu steuern. Wenn Sie die Zonen, Lagerplatztypen usw. definieren, bedenken Sie, dass verschiedene Bereiche am Lagerort für verschiedene Prozesse verwendet werden. Berücksichtigen Sie ausserdem Faktoren wie physische Merkmale eines bestimmten Bereichs. Beispielsweise könnte es Bereiche geben, in denen Sie nur einen bestimmten Gabelstapler verwenden können. Oder in Ihrem Unternehmen sind Produktion und Fertigerzeugnisse in einer Einrichtung, und Sie möchten in Dynamics 365 for Operations einen einzelnen Lagerort erstellen und dann die beiden Arbeitsgänge trennen, indem Sie zwei Zonengruppen einrichten. Geben Sie den Entitäten beschreibende Namen, damit sie einfach zu identifizieren sind, wenn Sie sie in Vorlagenabfragen verwenden.
+Die Entitäten, die Sie erstellen, um Ihr Lagerortlayout zu definieren, werden in Abfragen verwendet, die Sie in den Arbeitsvorlagen einrichten, um Arbeitsaufträge am Lagerort zu steuern. Wenn Sie die Zonen, Lagerplatztypen usw. definieren, bedenken Sie, dass verschiedene Bereiche am Lagerort für verschiedene Prozesse verwendet werden. Berücksichtigen Sie ausserdem Faktoren wie physische Merkmale eines bestimmten Bereichs. Beispielsweise könnte es Bereiche geben, in denen Sie nur einen bestimmten Gabelstapler verwenden können. Oder in Ihrem Unternehmen sind Produktion und Fertigerzeugnisse in einer Einrichtung, und Sie möchten in Finance and Operations einen einzelnen Lagerort erstellen und dann die beiden Arbeitsgänge trennen, indem Sie zwei Zonengruppen einrichten. Geben Sie den Entitäten beschreibende Namen, damit sie einfach zu identifizieren sind, wenn Sie sie in Vorlagenabfragen verwenden.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Lagerplatzbeschränkungen, Lagerplatzprofile und feste Entnahmeorte
 
@@ -70,7 +70,7 @@ Um optimale ausgehende Prozesse zu erreichen, sollten Sie auswerten, ob feste En
 
 ### <a name="location-setup-wizard"></a>Lagerplatz-Setup-Assistent
 
-Um die Lagerplätze innerhalb eines Lagerorts schnell zu erstellen, können Sie den Assistenten **Lagerplatzeinstellung**verwenden. Im Rahmen dieses Prozesses können Sie das Format der Lagerplatznamen problemlos verwalten.
+Um die Lagerplätze innerhalb eines Lagerorts schnell zu erstellen, können Sie den Assistenten **Lagerplatzeinstellung** verwenden. Im Rahmen dieses Prozesses können Sie das Format der Lagerplatznamen problemlos verwalten.
 
 ## <a name="warehouse-processes"></a>Lagerortprozesse
 Als Teil der Konfiguration des Lagerorts, ist es wichtig, dass Sie Lagerortprozesse gemäß der Geschäftsanforderungen aktivieren. Die wichtigsten Komponenten, die Sie konfigurieren müssen, sind Wellenvorlagen, Arbeitsvorlagen, Arbeitspools und Lagerplatzrichtlinien.

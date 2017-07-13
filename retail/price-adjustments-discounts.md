@@ -1,28 +1,29 @@
 ---
 title: Preisregulierungen und Rabatte
-description: "Dieser Artikel enthält Informationen zu Preisregulierungen und Rabatten für Einzelhandel und Handel in Microsoft Dynamics 365 for Operations."
+description: "Dieser Artikel enthält Informationen zu Preisregulierungen und Rabatten für Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a942f7876ab08598a019892056ce6be152d56985
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: caa701dfcbffe045d701442b1a39b88ea5f43125
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -32,9 +33,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Dieser Artikel enthält Informationen zu Preisregulierungen und Rabatten für Einzelhandel und Handel in Microsoft Dynamics 365 for Operations.
+Dieser Artikel enthält Informationen zu Preisregulierungen und Rabatten für Microsoft Dynamics 365 for Retail.
 
-Im Einzelhandel und im Handel in Microsoft Dynamics 365 for Operations können Sie Preisregulierungen an Produkten vornehmen und Rabatte einrichten, die einem Artikel oder einer Buchung einer Verkaufsstelle (POS), in einem Callcenterauftrag oder in einer Onlinebestellung angewendet werden. Sowohl Preisregulierungen als auch Rabatte können mit Preisgruppen verknüpft werden. Für sowohl Preisregulierungen als auch Rabatte können Sie ein einzelnes Start- und Enddatum bzw. einen Wiederholungszeitraum, einen Rabattcode und einige weitere Attribute angeben. Preisregulierungen und Rabatte können auf Produkte, Varianten oder Kategorien angewendet werden. Entspricht mehr als ein Rabatt einem Produkt, erhält ein Debitor möglicherweise entweder einen der Rabatte oder einen kombinierten Rabatt, abhängig von der Konfiguration des Rabatts. Dynamics 365 for Operations übernimmt automatisch den Rabatt oder die Kombination von Rabatten, die dem Debitor dem besten Preis gibt. Wenn Sie eine Preisregulierung oder einen Rabatt einrichten, sollten Sie sich vergewissern, dass Sie bestätigen, dass Preisgruppen den richtigen Kanälen, Katalogen, Zuordnungen oder Treueprogrammen zugeordnet sind, für die der Rabatt gelten soll. Auch wenn Sie die Rabattkennung automatisch generieren möchten, können Sie Nummernkreise auf der Seite **Einzelhandelsparameter** einrichten, bevor Sie einen neuen Rabatt oder eine Preisregulierung definieren. **Hinweis:** Sie können eine Preisregulierung oder einen Rabatt löschen. Allerdings gehen statistische Daten verloren.
+Im Dynamics 365 for Retail können Sie Preisregulierungen an Produkten vornehmen und Rabatte einrichten, die einem Artikel oder einer Buchung einer Verkaufsstelle (POS), in einem Callcenterauftrag oder in einer Onlinebestellung angewendet werden. Sowohl Preisregulierungen als auch Rabatte können mit Preisgruppen verknüpft werden. Für sowohl Preisregulierungen als auch Rabatte können Sie ein einzelnes Start- und Enddatum bzw. einen Wiederholungszeitraum, einen Rabattcode und einige weitere Attribute angeben. Preisregulierungen und Rabatte können auf Produkte, Varianten oder Kategorien angewendet werden. Entspricht mehr als ein Rabatt einem Produkt, erhält ein Debitor möglicherweise entweder einen der Rabatte oder einen kombinierten Rabatt, abhängig von der Konfiguration des Rabatts. Dynamics 365 for Retail übernimmt automatisch den Rabatt oder die Kombination von Rabatten, die dem Debitor den besten Preis ermöglichen. Wenn Sie eine Preisregulierung oder einen Rabatt einrichten, sollten Sie sich vergewissern, dass Sie bestätigen, dass Preisgruppen den richtigen Kanälen, Katalogen, Zuordnungen oder Treueprogrammen zugeordnet sind, für die der Rabatt gelten soll. Auch wenn Sie die Rabattkennung automatisch generieren möchten, können Sie Nummernkreise auf der Seite **Einzelhandelsparameter** einrichten, bevor Sie einen neuen Rabatt oder eine Preisregulierung definieren. **Hinweis:** Sie können eine Preisregulierung oder einen Rabatt löschen. Allerdings gehen statistische Daten verloren.
 
 ### <a name="types-of-discounts"></a>Rabatttypen
 
