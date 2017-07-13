@@ -3,7 +3,7 @@ title: "Löschungsregeln"
 description: "Dieser Artikel enthält Informationen zu Löschungsregeln und die verschiedenen Optionen für die Berichterstellung zu Löschungen."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ab1d8fb5bfc9413652d222e701c44b3b91a4c842
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 76af350f37109260a757ccc0b93908637d0579dc
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -133,7 +133,7 @@ Ihre juristische Person, juristische Person A, verkauft Produkte an eine andere 
 Alle diese Buchungen erzeugen Intercompany-Buchungen, die auf Konten vom Typ "Fällig bis" und "Fällig von" ausgeführt werden. Darüber hinaus können diese Buchungen Zu- oder Abschläge für den Fall enthalten, dass der Betrag des Intercompany-Verkaufs und die Kosten der verkauften Waren nicht übereinstimmen.
 
 ## <a name="set-up-elimination-rules"></a>Sie können Löschungsregeln einrichten.
-Wenn wir Löschungsregeln in Dynamics 365 for Operations einrichten, empfehlen wir, dass Sie eine Finanzdimension speziell für Löschungszwecke erstellen. Die meisten Debitoren nennen ihn Handelspartner oder ähnlich. Wenn Sie sich entscheiden, die eine Finanzdimension nicht zu verwenden, müssen Sie darauf achten, Hauptkonten anzuzeigen, die nur für Intercompany-Buchungen bestimmt sind. 
+Wenn wir Löschungsregeln in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition einrichten, empfehlen wir, dass Sie eine Finanzdimension speziell für Löschungszwecke erstellen. Die meisten Debitoren nennen ihn Handelspartner oder ähnlich. Wenn Sie sich entscheiden, die eine Finanzdimension nicht zu verwenden, müssen Sie darauf achten, Hauptkonten anzuzeigen, die nur für Intercompany-Buchungen bestimmt sind. 
 
 Die Einstellung für die Löschungen wird im Aufsetzbereich des Konsolidierungsmoduls gefunden. Nachdem Sie eine Beschreibung für die Regel eingeben, müssen Sie das Unternehmen wählen, zu dem die Löschungserfassung gebucht wird. Dies sollte ein Unternehmen sein, das **Für finanziellen Löschungsprozess verwenden** in den Einstellungen für die juristische Person ausgewählt wurde. 
 
@@ -143,7 +143,7 @@ Nachdem Sie die Grundlagen definiert haben, können Sie die tatsächlichen Verar
 
 Wählen Sie Ihr Quellkonto aus. Sie können Platzhalter wie Sternchen wie einen (\*) verwenden. Im Beispiel würde 1\* alle Konten auswählen, die mit 1 als Quelle für die Zuordnung der Daten beginnen. 
 
-Nachdem Sie Ihre Quellkonten ausgewählt haben, bestimmen die **Kontospezifikation** das Konto vom Zielunternehmen, das verwendet wird. Wählen Sie **Quelle** aus, wenn Sie dasselbe Hauptkonto verwendet werden soll, das im Konto **Quelle** definiert ist. Wenn Sie auswählen**Benutzerdefiniert** auswählen, dann müssen Sie ein Zielkonto angeben. 
+Nachdem Sie Ihre Quellkonten ausgewählt haben, bestimmen die **Kontospezifikation** das Konto vom Zielunternehmen, das verwendet wird. Wählen Sie **Quelle** aus, wenn Sie dasselbe Hauptkonto verwendet werden soll, das im Konto **Quelle** definiert ist. Wenn Sie auswählen **Benutzerdefiniert** auswählen, dann müssen Sie ein Zielkonto angeben. 
 
 Die Dimensionsspezifikation funktioniert genau gleich. Wenn Sie **Quelle** auswählen, verwendet er die gleichen Dimensionen im Zielunternehmen wie im Ausgangsunternehmen. Wenn Sie **Benutzerdefiniert** auswählen, müssen Sie die Dimensionen im Zielunternehmen angeben, indem Sie auf die **Zieldimensionen** Menüoption klicken. 
 

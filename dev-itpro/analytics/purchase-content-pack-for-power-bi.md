@@ -1,15 +1,15 @@
 ---
 title: Einkaufausgabenanalyse Power BI-Inhalt
-description: "In diesem Thema wird beschrieben, was im Einkaufausgabenanalyse-Inhaltspaket für Microsoft Power Bl enthalten ist. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen."
-author: YuyuScheller
+description: "In diesem Thema wird beschrieben, was im Einkaufs- und Ausgabenanalyse Power Bl Inhalt enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden."
+author: FrankDahl
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
-audience: Application User
-ms.search.scope: Operations, Core
+audience: Application User, IT Pro
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ad0ee95113d05710cccc1a5e9d215b38244c2047
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: daba17aed7e6cc475a16d6100c5c99ee747ca048
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,23 +29,22 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+In diesem Thema wird beschrieben, was im **Einkaufs- und Ausgabenanalyse** Microsoft Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
-In diesem Thema wird beschrieben, was im Einkaufausgabenanalyse-Inhaltspaket für Microsoft Power Bl enthalten ist. Es wird zudem beschrieben, wie das Dashboard und die Berichte, die im Inhaltspaket enthalten sind, verwendet werden und enthält Informationen zum Datenmodell und den Entitäten, die verwendet werden, um das Inhaltspaket zu erstellen.
+## <a name="overview"></a>Überblick
 
-<a name="overview"></a>Überblick
---------
-
-Das Einkaufausgabenanalyse-Inhaltspaket für Microsoft Power BI wurde für Einkaufsleiter und Manager erstellt, die für Budgets zuständig sind. Es wurde entworfen, um diese zu bei den Einkaufausgaben zu unterstützen. Es verwendet Transaktionsdaten aus von Microsoft Dynamics 365 for Operations und stellt eine Gesamtübesicht zu unternehmensweiten Umsatzahlen und eine Aufschlüsselung des Einkaufsergebnisses für Debitoren und Produkte zur Verfügung. Berichte zeigen Änderungen im Einkauf, der im Zeitverlauf aufwendet. Daher können sie verwendet werden, um Manager über die positive und negative Ausgabentrends für einzelne Kreditoren und Produkten zu warnen. Diagramme anzeigen Einkaufausgabe für unterschiedliche Beschaffungskategorien und Kreditorengruppen. Kategorie- und regional Manager finden es möglicherweise hilfreich, Diagramme zu verwenden, mit deren Hilfe, Änderungen im Ausgabenverhalten zu identifizieren. Der Inhaltspaket ermöglicht Einkaufsleiter und Manager, die für Budgets, analysieren Einkauf zuständig sind wie folgt aufwendend:
+Der **Einkaufs- und Ausgabenanalyse** Power BI Inhalt wurde entworfen, um Einkaufsleiter und Manager zu unterstützen, die für Budgets verantwortlich sind und ein Auge auf die Einkaufausgaben haben. Manager können Einkaufsausgaben wie folgt analysieren:
 
 -   Einkauf des laufenden Jahres (nach Kreditorengruppen- und Personenkreditoren Beschaffungskategorie, und Einzelprodukte und Standort des Kreditors)
 -   Jährliche Einkaufänderung (nach Kreditorengruppe und Beschaffungskategorie)
 
-## <a name="accessing-the-content-pack"></a>Zugreifen auf das Inhaltspaket
-Der Einkaufausgabenanalyse-Inhaltspaket für Power BI wird als Implementierungsressource in Microsoft Dynamics Lifecycle Services (LCS) veröffentlicht und kann von Dynamics 365 for Operations zugegriffen werden. Weitere Informationen dazu, wie Power BI-Bericht erstellt werden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
-Hinweis: KB4011327 ist eine Voraussetzung für diesen Power BI Inhalt Nachdem Sie sich bei Lifecycle Services angemeldet haben, können Sie hier auf KB zugreifen: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+Es verwendet Transaktionsdaten und stellt eine Gesamtübersicht zu unternehmensweiten Umsatzahlen und eine Aufschlüsselung des Einkaufsergebnisses für Debitoren und Produkte zur Verfügung. Berichte zeigen Änderungen im Einkauf, der im Zeitverlauf aufwendet. Daher kann der Bericht dazu verwendet werden, um Manager über die positiven und negativen Ausgabentrends für einzelne Kreditoren und Produkten zu warnen. Diagramme zeigen zusätzlich Einkaufsausgaben für unterschiedliche Beschaffungskategorien und Kreditorengruppen an. Deshalb können Kategorie- und Regional-Manager die Diagramme nutzen, um Änderungen im Ausgabenverhalten zu identifizieren.
 
-## <a name="metrics-that-are-included-in-the-content-pack"></a>Metriken, die im Paket enthalten sind
-Der Einkaufausgabenanalyse-Inhaltspaket enthält einen Bericht, der einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Tabelle enthält eine Übersicht der im Visualisierungen im Inhaltspaket.
+## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
+Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, Juli 2017 nutzen, wir der  **Einkaufausgabenanalyse** Power BI Inhalt auf der Seite **Einkauf und Ausgabenanalyse** **Beschaffung** > **Abfragen und Berichte** > **Einkaufleistungsanalyse** > **Einkauf und Ausgabenanalyse** angezeigt. 
+
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
+Der Power BI Inhalt **Einkaufsausgabenanalyse** enthält einen Bericht, der aus einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Liste bietet eine Übersicht über die Visualisierungen.
 
 <table>
 <colgroup>
@@ -133,14 +132,26 @@ Der Einkaufausgabenanalyse-Inhaltspaket enthält einen Bericht, der einem Satz M
 
 \*Einkauf dieser und letzten Jahr und Wachstum nach Beschaffungskategorie.
 
+## <a name="extending-the-power-bi-content"></a>Erweitern des Power BI-Inhalts
+Wenn Sie die Inhaltspakete verwenden, die in Microsoft Dynamics Lifecycle Services (LCS) verfügbar sind, können Sie großartige Analysen für Person bereitstellen, die sich nicht in Microsoft Dynamics 365 anmelden. Sie können diese Inhaltspakete so ändern, dass sie andere Berichte oder grafische Elemente umfassen, und die Inhaltspakete dann für die Analyse auf Ihrem Power BI.com-Mandanten veröffentlichen. 
+
+Sie finden den **Einkaufs- und Ausgabenanalyse**-Power BI-Inhalt in der freigegebenen Anlagenbibliothek in LCS. Weitere Informationen dazu, wie Sie Power BI-Inhalte herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md). Um eine Vorführung anzusehen, die zeigt, wie der Power BI-Inhalt impementiert wird, zeigen Sie den Office Mix [Power BI-Inhalt von Microsoft und Ihren Partnern in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) an.
+
+Stellen Sie sicher, dass Sie den **Einkaufs- und Ausgabenanalyse**-Inhalt herunterladen, der der von Ihnen verwendeten Dynamics 365-Version entspricht.
+
+> [!NOTE]
+> Wenn Sie Microsoft Dynamics 365 for Operations, Version 1611, verwenden, ist KB 4011327 eine Voraussetzung für diesen Power BI-Inhalt. Nachdem Sie sich bei LCS angemeldet haben, können Sie unter https://fix.lcs.dynamics.com/issue/results/?q=kb4011327 auf KB zugreifen.
+
 ## <a name="data-model-and-entities"></a>Datenmodell und Entitäten
-Dynamics 365 for Operations-Daten werden für den Bericht des Einkaufausgabenanalyse-Inhaltspakets verwendet. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden, der eine Microsoft SQL-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen zum Entitätsspeicher finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Purchase Cube in Microsoft Dynamics AX 2012 und Microsoft Dynamics AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Inhaltspakets verwendet.
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Einkaufs- und Ausgabenanalyse** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
-| Entität        | Zentrale aggregierte Messungen | Datenquelle für Dynamics 365 for Operations | Feld              | Beschreibung                           |
-|---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
-| Rechnungspositionen | Einkauf                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Der Betrag in der Buchhaltungswährung |
+Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Einkaufscube in Microsoft Dynamics AX 2012 und Microsoft Dynamics AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter dem Verfahren für die Bereitstellung aggregierter Messungen im Entitäts-Shop unter  [Power BI Integration mit Entität-Shop](power-bi-integration-entity-store.md). Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Inhaltspakets verwendet.
 
-Die folgende Tabelle zeigt die wichtigen Messungen, das die im Paket aus Rechnungspositionsentitäten berechnet werden.
+| Entität        | Zentrale aggregierte Messungen | Datenquelle                                 | Feld              | Beschreibung                            |
+|---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
+| Rechnungspositionen | Einkauf                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Der Betrag in der Buchhaltungswährung. |
+
+Die folgende Tabelle zeigt die wichtigen Messungen im Inhalt, die aus der Rechnungspositionsentität berechnet werden.
 
 | Kennzahl               | Herstellkostenkalkulation                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
@@ -148,7 +159,7 @@ Die folgende Tabelle zeigt die wichtigen Messungen, das die im Paket aus Rechnun
 | Einkauf letztes Jahr    | Einkauf letztes Jahr = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\])) |
 | YOY-Einkaufzunahme   | YOY-Einkaufzunahme = \[Purchase current year\] – \[Purchase last year\]                            |
 
-Die folgenden wichtigen Dimensionen im Inhaltspaket werden als Filter verwendet, um die aggregierte Messungen zu teilen, um eine größere Granularität zu erreichen und tiefere und analytische Einblicke bereitzustellen.
+Die folgenden wichtigen Dimensionen im Inhaltspaket werden als Filter verwendet, um die aggregierten Messungen zu teilen, um eine größere Granularität zu erreichen und tiefere und analytische Einblicke bereitzustellen.
 
 | Entität                 | Beispiele für Attribute                                |
 |------------------------|-------------------------------------------------------|
@@ -158,17 +169,5 @@ Die folgenden wichtigen Dimensionen im Inhaltspaket werden als Filter verwendet,
 | Juristische Personen         | Name der juristischen Person                                     |
 | Daten                  | Daten, Jahresausgleich                                    |
 
-Standardmäßig zeigt das Inhaltspaket Daten während des laufenden Kalenderjahr an. Allerdings können Sie den im Berichtsfilterabschnitt Datumsfilter ändern. Sie können das den Unternehmensfilter auch ändern.
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstellen von Power BI-Inhalten:
-
--   [Datenentitäten](..\data-entities\data-entities.md)
--   [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](configure-power-bi-integration.md)
-
-
-
-
+Standardmäßig zeigt das Inhaltspaket Daten während des laufenden Kalenderjahrs an. Allerdings können Sie den im Berichtsfilterabschnitt Datumsfilter ändern. Sie können das den Unternehmensfilter auch ändern.
 

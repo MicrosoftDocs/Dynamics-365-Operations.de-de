@@ -3,14 +3,14 @@ title: "Produkteingang für Bestellungen"
 description: "Dieser Artikel beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5d1b063344d4191facf2ddace5f5c9d592fb0942
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a192688315adb2d83f349c525c5d8f70309375db
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="product-receipt-against-purchase-orders"></a>Produkteingang für Bestellungen
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Dieser Artikel beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten.
@@ -54,7 +56,7 @@ Sie können Bestellpositionen erstellen, bei denen die Option die **Neue Anlage*
 
 Sie können mehrere Bestellungen auswählen und den Zugang für alle gemeinsam verarbeiten. Dieser Ansatz wird nicht sehr häufig verwendet. Sie können ihn nutzen, wenn ein Lieferant den Versand in einer einzigen Lieferung zusammengefasst hat. Während des Produktzugangs für den Kauf gibt es eine Funktion für Sammelaktualisierungen. Sammelaktualisierungen ermöglichen die Buchung eines Lieferscheins von einem Lieferanten für mehr als eine Bestellung.  
 
-POs können über einen Auftrag mit der Option **Direktlieferung** erstellt werden. Wenn die Direktlieferung verwendet wird, gehen die Produkte niemals am Lagerort zu. Sie werden vom Lieferanten direkt an den Kunden geliefert. In diesem Fall wird der Zugang normalerweise direkt auf der Bestellung festgehalten. Der Zugang kann automatisch durchgeführt werden (beispielsweise über die EDI-Integration mit dem Lieferanten). Wenn die Bestellung eine Intercompany-Bestellung ist, automatisiert Microsoft Dynamics 365 for Operations den Zugang für den Intercompany-Auftrag bei Lieferung. Bei der Direktlieferung werden Produkte weiterhin als Lagerbestand gebucht – obwohl Sie nicht physisch im Lager eintreffen. Wenn ein Produktzugang für die Bestellung registriert wird, wird der Auftrag daher automatisch mit einem Lieferschein aktualisiert. So liegt die Gesamtänderung für den Lagerbestand bei Null (0). Bei Direktlieferungsszenarien sollten Sie keine Vorregistrierung nutzen. Wenn Sie mit Lagerorten mit Lagerortverwaltung arbeiten, können Sie die Ladungsträgerregistrierung über die Angabe eines virtuelles Lagerortes umgehen. Sie geben diesen Lagerort im Feld **Direktversand-Lagerort** des Produkts ein. 
+POs können über einen Auftrag mit der Option **Direktlieferung** erstellt werden. Wenn die Direktlieferung verwendet wird, gehen die Produkte niemals am Lagerort zu. Sie werden vom Lieferanten direkt an den Kunden geliefert. In diesem Fall wird der Zugang normalerweise direkt auf der Bestellung festgehalten. Der Zugang kann automatisch durchgeführt werden (beispielsweise über die EDI-Integration mit dem Lieferanten). Wenn die Bestellung eine Intercompany-Bestellung ist, automatisiert Microsoft Dynamics 365 for Finance and Operations den Zugang für den Intercompany-Auftrag bei Lieferung. Bei der Direktlieferung werden Produkte weiterhin als Lagerbestand gebucht – obwohl Sie nicht physisch im Lager eintreffen. Wenn ein Produktzugang für die Bestellung registriert wird, wird der Auftrag daher automatisch mit einem Lieferschein aktualisiert. So liegt die Gesamtänderung für den Lagerbestand bei Null (0). Bei Direktlieferungsszenarien sollten Sie keine Vorregistrierung nutzen. Wenn Sie mit Lagerorten mit Lagerortverwaltung arbeiten, können Sie die Ladungsträgerregistrierung über die Angabe eines virtuelles Lagerortes umgehen. Sie geben diesen Lagerort im Feld **Direktversand-Lagerort** des Produkts ein. 
 
 Nachdem der Produktzugang für die Bestellung verarbeitet wurde, wird der Bestellstatus auf **Empfangen** gesetzt. Dies zeigt an, dass die Rechnung für die Bestellung verarbeitet werden kann. Über die Seite **Produktzugangserfassungen** können Sie Informationen zu empfangenden Produkten anzeigen.  
 
@@ -69,7 +71,7 @@ Sie können über die Aktivitätsgruppe **Zugang** auf der Seite **Bestellung** 
 
 [Genehmigen und Bestätigen von Bestellungen](purchase-order-approval-confirmation.md)
 
-[Überblick der Kreditorenrechnungen](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Überblick über Kreditorenrechnungen](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

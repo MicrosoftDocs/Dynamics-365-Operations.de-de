@@ -3,27 +3,26 @@ title: Erstellen eines Callcenterkatalogs
 description: "Dieser Artikel bietet einen Überblick über den Prozess zum Erstellen eines Katalogs für ein Callcenter."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16212
 ms.assetid: c9d1b9df-82e8-4b3a-a13c-166df8b9718e
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef58d4b2028aee5bccd9f060abed8342381888eb
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 28aaa84c11a897b895b2a106ca5f0cd6168997b2
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 06/20/2017
 
 ---
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 Dieser Artikel bietet einen Überblick über den Prozess zum Erstellen eines Katalogs für ein Callcenter. 
 
-In einem Callcenter können Sie Einzelhandelsproduktkataloge verwenden, um die Produkte zu identifizieren, die Sie Kunden anbieten möchten. Callcenter verwenden in der Regel gedruckte Kataloge. Der Entwurf und die Produktion eines gedruckten Katalogs wird außerhalb von Microsoft Dynamics 365 for Operations behandelt. Sie können jedoch ein digitales Formular eines Katalogs im Einzelhandel und Handel in Dynamics 365 for Operations erstellen und speichern, indem Sie die gleichen Formulare verwenden, die Sie verwenden, um Online-Einzelhandelskataloge einzurichten. Bevor Sie einen Katalog erstellen können, müssen Sie Sortimente einrichten und die Sortimente einem Callcenter zuweisen. Anschließend fügen Sie Produkte dem Katalog hinzu, indem Sie Produkte aus diesen Sortiment auswählen. Nachdem Produkte dem Katalog hinzugefügt wurden und der Katalog abgeschlossen ist, müssen Sie den Katalog überprüfen, ob die Daten zu überprüfen. Übermitteln Sie dann den Katalog zur Prüfung und Genehmigung. Nachdem der Katalog genehmigt wurde, kann er veröffentlicht werden. Wenn ein Callcenterkatalog erstellt wird, können Sie eine Momentaufnahme der Katalogdaten zum Zeitpunkt erstellen, an dem der Katalog veröffentlicht wird. Mit dieser Momentaufnahmefunktionen können Sie auf eine bestimmte Version des Katalogs zugreifen, auch wenn der Katalog später geändert und aktualisiert wird. Callcenterkataloge können auch eingerichtet werden, um die folgenden optionalen Funktionen einzubeziehen.
+In einem Callcenter können Sie Einzelhandelsproduktkataloge verwenden, um die Produkte zu identifizieren, die Sie Kunden anbieten möchten. Callcenter verwenden in der Regel gedruckte Kataloge. Der Entwurf und die Produktion eines gedruckten Katalogs wird außerhalb von Microsoft Dynamics 365 for Retail behandelt. Sie können jedoch ein digitales Formular eines Katalogs erstellen und speichern, indem Sie die gleichen Formulare verwenden, die Sie verwenden, um Online-Einzelhandelskataloge einzurichten. Bevor Sie einen Katalog erstellen können, müssen Sie Sortimente einrichten und die Sortimente einem Callcenter zuweisen. Anschließend fügen Sie Produkte dem Katalog hinzu, indem Sie Produkte aus diesen Sortiment auswählen. Nachdem Produkte dem Katalog hinzugefügt wurden und der Katalog abgeschlossen ist, müssen Sie den Katalog überprüfen, ob die Daten zu überprüfen. Übermitteln Sie dann den Katalog zur Prüfung und Genehmigung. Nachdem der Katalog genehmigt wurde, kann er veröffentlicht werden. Wenn ein Callcenterkatalog erstellt wird, können Sie eine Momentaufnahme der Katalogdaten zum Zeitpunkt erstellen, an dem der Katalog veröffentlicht wird. Mit dieser Momentaufnahmefunktionen können Sie auf eine bestimmte Version des Katalogs zugreifen, auch wenn der Katalog später geändert und aktualisiert wird. Callcenterkataloge können auch eingerichtet werden, um die folgenden optionalen Funktionen einzubeziehen.
 
 -   **Quellcodes** – Codes, die verwendet werden, um die Debitorenreaktion auf bestimmte Katalogmailings zu verfolgen.
 -   **Kostenlose Produkte** - Produkte, die in einem Kundenauftrag ohne zusätzliche Gebühr enthalten sind. Diese Produkte werden dem Auftrag automatisch hinzugefügt, wenn der Quellcode für den Katalog in den Auftrag eingegeben wird.

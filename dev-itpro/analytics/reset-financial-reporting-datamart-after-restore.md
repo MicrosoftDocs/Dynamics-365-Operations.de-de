@@ -1,15 +1,15 @@
 ---
 title: "Finanzberichts-Data Mart noch Wiederherstellung der Datenbank Zurücksetzen"
-description: "In diesem Thema wird beschrieben, wie Finanzberichts-Data Mart zurückgesetzt wird, nachdem die Microsoft Dynamics 365 for Operations-Datenbank wiederhergestellt wurde."
+description: "In diesem Thema wird beschrieben, wie Finanzberichts-Data Mart zurückgesetzt wird, nachdem die Microsoft Dynamics 365 for Finance and Operations-Datenbank wiederhergestellt wurde."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d227452e48914170404f0ee5163a05e6b875e69f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Finanzberichts-Data Mart zurückgesetzt wird, nachdem die Microsoft Dynamics 365 for Operations-Datenbank wiederhergestellt wurde. 
+In diesem Thema wird beschrieben, wie Finanzberichts-Data Mart zurückgesetzt wird, nachdem die Microsoft Dynamics 365 for Finance and Operations-Datenbank wiederhergestellt wurde. 
 
-Es gibt mehrere Szenarios, in denen möglicherweise die Dynamics 365 for Operations-Datenbank aus einer Sicherung wiederherstellen oder die Datenbank aus einer anderen Umgebung kopieren müssen. Wenn dies der Fall ist, müssen Sie auch die entsprechenden Aktivitäten ausgeführt werden, um sicherzustellen, dass der Finanzberichts-Data Mart ordnungsgemäß die wiederhergestellte Dynamics 365 for Operations-Datenbank verwendet. Wenn Sie Fragen zum Zurücksetzen des Finanzberichts-Data Mart außerhalb der Wiederherstellung der Dynamics 365 for Operations-Datenbank haben, finden Sie unter [Management Reporter-Data-Mart zurücksetzen](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) weitere Informationen. Beachten Sie, dass die Schritte dieses Prozesses für Dynamics 365 for Operations Mai 2016 (App-Build 7.0.1265.23014 und Financial Reporting Build 7.0.10000.4) und später Versionen unterstützt werden. Wenn Sie einer früheren Version von Microsoft Dynamics 365 for Operations nutzen, wenden Sie sich bitte unserem Support-Team.
+Es gibt mehrere Szenarios, in denen möglicherweise die Dynamics 365 for Finance and Operations-Datenbank aus einer Sicherung wiederherstellen oder die Datenbank aus einer anderen Umgebung kopieren müssen. Wenn dies der Fall ist, müssen Sie auch die entsprechenden Aktivitäten ausgeführt werden, um sicherzustellen, dass der Finanzberichts-Data Mart ordnungsgemäß die wiederhergestellte Dynamics 365 for Finance and Operations-Datenbank verwendet. Wenn Sie Fragen zum Zurücksetzen des Finanzberichts-Data Mart außerhalb der Wiederherstellung der Dynamics 365 for Finance and Operations-Datenbank haben, finden Sie unter [Management Reporter-Data-Mart zurücksetzen](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) weitere Informationen. Beachten Sie, dass die Schritte dieses Prozesses für Dynamics 365 for Operations Mai 2016 (App-Build 7.0.1265.23014 und Financial Reporting Build 7.0.10000.4) und später Versionen unterstützt werden. Wenn Sie einer früheren Version von Finance and Operations nutzen, wenden Sie sich bitte unserem Support-Team.
 
 ## <a name="export-report-definitions"></a>Exportieren von Berichtsdefinitionen
 Zuerst exportieren Sie die Berichtsdesigns im Berichts-Designer, und zwar mithilfe der folgenden Schritte aus:
 
 1.  Wechseln Sie im Berichts-Designer zu **Unternehmen** &gt; **Bausteingruppen**.
-2.  Wählen Sie die Bausteingruppe aus, die exportiert werden soll, und klicken Sie **Export**. **Hinweis:** Für Dynamics 365 for Operations wird nur eine Bausteingruppe, unterstützt (**Standard**).
+2.  Wählen Sie die Bausteingruppe aus, die exportiert werden soll, und klicken Sie **Export**. **Hinweis:** Für Finance and Operations wird nur eine Bausteingruppe, unterstützt (**Standard**).
 3.  Wählen Sie die Berichtsdefinition für den Export aus:
     -   Um alle Ihre Berichtsdefinitionen und die zugeordneten Bausteine zu exportieren, klicken Sie auf **Alles auswählen**.
     -   Um bestimmte Berichte, Zeilen, Spalten, Strukturen oder Dimensionssätze zu exportieren, klicken Sie auf die entsprechende Registerkarte und wählen die Artikel aus, die exportiert werden sollen. Drücken und halten Sie die STRG-Taste gedrückt, um mehrere Elemente in einer Registerkarte auszuwählen. Wenn Sie Berichte zum Exportieren auswählen, werden die zugeordneten Zeilen, Spalten, Baumstrukturen und Dimensionssätze ausgewählt.
@@ -49,7 +49,7 @@ Zuerst exportieren Sie die Berichtsdesigns im Berichts-Designer, und zwar mithil
 
 Die Datei kann an einem sicheren Speicherort kopiert oder hochgeladen werden und in einer anderen Umgebung, in einer anderen der Zeitpunkt importiert werden können. Informationen zur Verwendung eines Microsoft Azure Storage-Kontos können gefunden werden in [Daten mit dem AzCopy-Kommandozeilenutility übertragen](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
 > [!NOTE]
-> Microsoft stellt kein Speicherkonto im Rahmen der Dynamics 365 for Operations Vereinbarung bereit. Sie müssen entweder ein Speicherkonto kaufen oder ein Speicherkonto von einem separaten Azure-Abonnement verwenden. 
+> Microsoft stellt kein Speicherkonto im Rahmen der Finance and Operations Vereinbarung bereit. Sie müssen entweder ein Speicherkonto kaufen oder ein Speicherkonto von einem separaten Azure-Abonnement verwenden. 
 > [!WARNING]
 > Wichtig: Berücksichtigen Sie das Verhalten des D-Laufwerks von Azure Virtual Machines. Speichern Sie nicht die exportierten Bausteingruppen dort dauerhaft. Weitere Informationen zu temporären, finden Sie unter [Informationen zum temporären Laufwerk in Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
@@ -57,19 +57,19 @@ Die Datei kann an einem sicheren Speicherort kopiert oder hochgeladen werden und
 Verwenden den Remotedesktop, um sich mit allen Computern in der Umgebung zu verbinden und die folgenden Windows-Dienste zu beenden, indem Sie services.msc verwenden:
 
 -   Per Internet WWW-Publishing-Dienst (für alle AOS-Computer)
--   Microsoft Dynamics 365 for Operations Batch Management Service (nur nicht-private AOS-Computern)
+-   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (nur nicht-private AOS-Computern)
 -   Management Reporter 2012 Process Service (nur BI-Computer)
 
-Diese Dienste haben offene Verbindungen zur Dynamics 365 for Operations-Datenbank.
+Diese Dienste haben offene Verbindungen zur Finance and Operations-Datenbank.
 
 ## <a name="reset"></a>Zurücksetzen
 #### <a name="locate-the-latest-dataupgradezip-package"></a>Suchen Sie das letzte DataUpgrade.zip-Paket
 
 Suchen Sie das letzte DataUpgrade.zip-Paket mithilfe Anweisungen aus [Skript DataUpgrade.zip herunterladen](..\migration-upgrade\upgrade-data-to-latest-update.md). Die Anweisungen zeigen, wie Sie die korrekte Version des Datenaktualisierungspakets für Ihre Umgebung lokalisieren.
 
-#### <a name="execute-scripts-against-dynamics-365-for-operations-database"></a>Ausführen von Skripts für die Dynamics 365 for Operations-Datenbank
+#### <a name="execute-scripts-against-finance-and-operations-database"></a>Ausführen von Skripts für die Finance and Operations-Datenbank
 
-Führen Sie die folgenden Skripts für die Dynamics 365 for Operations-Datenbank aus (nicht für die Financial-Reporting-Datenbank).
+Führen Sie die folgenden Skripts für die Finance and Operations-Datenbank aus (nicht für die Financial-Reporting-Datenbank).
 
 -   DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
 -   DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
@@ -78,7 +78,7 @@ Diese Skripts sicherstellen, dass die Benutzer, die Rollen und die Änderungsnac
 
 #### <a name="execute-powershell-command-to-reset-database"></a>PowerShell-Befehle zum zurückzusetzen der Datenbank
 
-Führen Sie den folgenden Befehl direkt auf dem AOS-Computer aus, um die Integration zwischen Dynamics 365 for Operations und Financial Reporting zurückzusetzen:
+Führen Sie den folgenden Befehl direkt auf dem AOS-Computer aus, um die Integration zwischen Finance and Operations und Financial Reporting zurückzusetzen:
 
 1.  Windows PowerShell als Administrator öffnen.
 2.  Ausführen: F:
@@ -97,7 +97,7 @@ Erläuterung der Parameter:
 Verwenden Sie services.msc, um die Services neu zu starten, die Sie eben beendeten:
 
 -   Per Internet WWW-Publishing-Dienst (für alle AOS-Computer)
--   Microsoft Dynamics 365 for Operations Batch Management Service (nur nicht-private AOS-Computern)
+-   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (nur nicht-private AOS-Computern)
 -   Management Reporter 2012 Process Service (nur BI-Computer)
 
 ## <a name="import-report-definitions"></a>Imporiteren von Berichtsdefinitionen
@@ -106,7 +106,7 @@ Importieren Sie die Berichtsdesigns im Berichts-Designer, und zwar mithilfe der 
 1.  Wechseln Sie im Berichts-Designer zu **Unternehmen** &gt; **Bausteingruppen**.
 2.  Wählen Sie die Bausteingruppe aus, die exportiert werden soll, und klicken Sie **Export**. 
     > [!NOTE]
-    > Für Dynamics 365 for Operations wird nur eine Bausteingruppe, unterstützt **Standard**.
+    > Für Finance and Operations wird nur eine Bausteingruppe, unterstützt **Standard**.
 3.  Wählen Sie den **Standard**-Baustein und klicken Sie auf **Importieren**.
 4.  Wählen Sie die Datei aus, welche die exportierten Berichtsdefinitionen enthält und klicken Sie auf **Öffnen**.
 5.  Wählen Sie im Dialogfeld Importieren die Berichtsdefinitionen aus, die importiert werden soll:

@@ -1,15 +1,15 @@
 ---
 title: "Einzelner Beleg mit mehreren Debitoren- oder Kreditorendatensätzen"
-description: "Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 for Operations nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung."
+description: "Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b1038ea950141f0e7d4678cac9edd3b0bd5beb6f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 for Operations nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung. 
+Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung. 
 
 Einige allgemeine Beispiele, in denen ein Beleg für mehrere Debitoren oder Kreditoren verwendet wird, sind unter anderem Saldo-Übertragungen zwischen Debitoren und die Ermittlung des Nettowerts von Salden zwischen Debitoren und Kreditoren in derselben Organisation. 
 
@@ -120,7 +120,7 @@ Wenn jetzt INV2 bezahlt ist, wird der folgende Eintrag vorgenommen. Beachten Sie
 | GNJL001     | Lieferant           | 1001        | INV1            |           | 100,00     | Unternehmen           | 606300-001-- |
 | GNJL001     | Lieferant           | 1001        | INV2            |           | 200,00     | Unternehmen           | 606300-002-- |
 
-Im folgenden Beispiel werden mehrere Kreditorenrechnungen im Hauptbuch auf einem einzelnen Beleg auf der Seite **Allgemeine Erfassung**erfasst. Diese Rechnungen werden über mehrere Kontodimensionen verteilt. Nach dem Buchen wird ein Beleg erstellt.
+Im folgenden Beispiel werden mehrere Kreditorenrechnungen im Hauptbuch auf einem einzelnen Beleg auf der Seite **Allgemeine Erfassung** erfasst. Diese Rechnungen werden über mehrere Kontodimensionen verteilt. Nach dem Buchen wird ein Beleg erstellt.
 
 |             |              |                  |                                          |                                         |
 |-------------|--------------|------------------|------------------------------------------|-----------------------------------------|
@@ -162,7 +162,7 @@ Wenn jetzt INV2 bezahlt ist, wird der folgende Eintrag vorgenommen. Beachten Sie
 | 14000056    | 200110-001- | Kreditorensaldo     |                                          | -2,00                                   |
 
 ## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>Ein Beleg für Saldo-Übertragungen und Saldierungsszenarien
-Zwei häufig verwendete Szenarien, die einen Beleg verwenden, der mehrere Debitoren oder Kreditoren enthält, umfassen Saldo-Übertragungen von einem Debitor/Kreditor zu einem anderen Debitor/Kreditor sowie die Saldierung eines Debitors und Kreditors, die dieselbe Organisation sind. In den folgenden beiden Beispielen wird die bevorzugte Methode zum Eingeben dieser Szenarien in Dynamics 365 for Operations als Alternative zum Eingeben in einen Beleg gezeigt. 
+Zwei häufig verwendete Szenarien, die einen Beleg verwenden, der mehrere Debitoren oder Kreditoren enthält, umfassen Saldo-Übertragungen von einem Debitor/Kreditor zu einem anderen Debitor/Kreditor sowie die Saldierung eines Debitors und Kreditors, die dieselbe Organisation sind. In den folgenden beiden Beispielen wird die bevorzugte Methode zum Eingeben dieser Szenarien in Finance and Operations als Alternative zum Eingeben in einen Beleg gezeigt. 
 
 Eine *Saldo-Übertragung* ist ein Beleg mit mehreren Debitoren, die zum Zweck der Übertragung des Saldos von einem Debitor an einen anderen Debitor (Gleiches gilt für Kreditoren) eingegeben werden. Dieses Szenario kann auftreten, wenn die Zuständigkeit für die Zahlung der Rechnung an eine andere Partei übergeht, beispielsweise wenn ein Tochterunternehmen die Zuständigkeit auf das Mutterunternehmen verlagert. 
 
@@ -176,7 +176,7 @@ Zur Veranschaulichung gehen wir davon aus, dass der folgende Verkauf an den Debi
 | 401100-002-023-    | Umsatzerlös          |           | 100        |
 | 130100-002-        | Debitorensaldo | 100       |            |
 
-Als Nächstes überträgt der Benutzer den fälligen Saldo von ACME an das Versicherungsunternehmen in einem Beleg in der Debitoren-Zahlungserfassung. In Dynamics 365 for Operations ist das Versicherungsunternehmen als Debitor eingerichtet.
+Als Nächstes überträgt der Benutzer den fälligen Saldo von ACME an das Versicherungsunternehmen in einem Beleg in der Debitoren-Zahlungserfassung. In Finance and Operations ist das Versicherungsunternehmen als Debitor eingerichtet.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|

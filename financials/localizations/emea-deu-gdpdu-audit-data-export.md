@@ -1,26 +1,26 @@
 ---
 title: Deutsche Protokolldatei (GDPdU/GoBD)
-description: "Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Operations Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden."
+description: "Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59201
 ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6722ed64a0c87b8e37a0858adfc4390c8536808b
+ms.sourcegitcommit: 6cb473962f40ed9ef2f5f807f089098764f47009
+ms.openlocfilehash: b214a6b249b69ebc8f15da0551769ab8f06d1b08
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Operations Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
+Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
 
 Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, Daten für alle Buchungen und Masterdaten aus einem Geschäftsjahr zu exportieren und diese Daten den Wirtschaftsprüfern innerhalb eines angemessenen Zeitraums bereitzustellen. Die Daten müssen in einem bestimmten Dateiformat gesammelt werden, damit sie in die Auditumgebung des Wirtschaftsprüfers importiert werden können. Diese Vorgehensweise wird von den Steuerbehörden gesteuert. Die Daten, die exportiert werden müssen, hängen von den Anforderungen für ein Audit ab. Zum Beispiel umfasst ein typischer Satz an exportierten Daten die folgenden Masterdaten und Buchungstabellen:
 
@@ -47,7 +47,7 @@ Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzl
 -   Anlagenmasterdaten
 -   Anlagenbuchungen
 
-In der aktuellen Version von Microsoft Dynamics 365 for Operations werden Funktionen, die dem Benutzer das Exportieren der erforderlichen Daten ermöglichen, als GDPdU-spezifische elektronische Berichterstellungskonfigurationen implementiert. Aufgabenleitfäden, die zeigen, wie GDPdU-spezifische Konfigurationen importiert werden, eine andere Tabellengruppe für den Export hinzugefügt wird und der Export ausführt wird, sind ebenfalls verfügbar.
+In der aktuellen Version von Finance and Operations werden Funktionen, die dem Benutzer das Exportieren der erforderlichen Daten ermöglichen, als GDPdU-spezifische elektronische Berichterstellungskonfigurationen implementiert. Aufgabenleitfäden, die zeigen, wie GDPdU-spezifische Konfigurationen importiert werden, eine andere Tabellengruppe für den Export hinzugefügt wird und der Export ausführt wird, sind ebenfalls verfügbar.
 
 ## <a name="table-groups-and-table-definitions"></a>Tabellengruppen und Tabellendefinitionen
 In den folgenden Abschnitten werden die Tabellen aufgelistet, die als Beispiele in der elektronischen GDPdU-Datenmodellkonfiguration eingerichtet sind. Sie können diese Tabellen standardmäßig verwenden, um die Daten zu exportieren. Sie können auch vorhandene Tabellengruppen anpassen und die Liste der unterstützten Tabellengruppen in der Konfiguration des elektronischen GDPdU-Berichterstellungsdatenmodells erweitern.
@@ -58,7 +58,7 @@ In den folgenden Tabellen werden die allgemeinen Sachdatenstrukturdefinitionen a
 
 #### <a name="sachkonten"></a>Sachkonten
 
-|     | Feldname                  | Feldtyp | Beschreibung                                      | Tabellen in Dynamics 365 for Operations | Feld oder Methode in Dynamics 365 for Operations |
+|     | Feldname                  | Feldtyp | Beschreibung                                      | Tabelle in Finance and Operations| Feld oder Methode im Finance and Operations|
 |-----|---------------------------|---------|---------------------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | SACHKONTONUMMER           | Zeichen | Nummer des Sachkontos                             | MainAccount                          | MainAccountId                                  |
 | 2   | SACHKONTONAME             | Zeichen | Bezeichnung des Sachkontos                        | MainAccount                          | Name                                           |
@@ -70,7 +70,7 @@ In den folgenden Tabellen werden die allgemeinen Sachdatenstrukturdefinitionen a
 
 #### <a name="sachkontobuchungen"></a>Sachkontobuchungen
 
-|     | Feldname               | Feldtyp   | Beschreibung                                      | Tabellen in Dynamics 365 for Operations | Feld oder Methode in Dynamics 365 for Operations |
+|     | Feldname               | Feldtyp   | Beschreibung                                      | Tabelle in Finance and Operations | Feld oder Methode im Finance and Operations |
 |-----|------------------------|-----------|---------------------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | SACHKONTONUMMER        | Zeichen   | Nummer des Sachkontos                             | DiensionAttributeValueCombination    | DisplayValue                                   |
 | 2   | BUCHUNGSDATUM          | Datum     | Datum der Wertstellung                            | GeneralJournalEntry                  | AccountingDate                                 |
@@ -99,29 +99,29 @@ In den folgenden Tabellen werden die allgemeinen Steuerdatenstrukturdefinitionen
 
 #### <a name="umsatzsteuercodes"></a>Umsatzsteuercodes
 
-|     | Feldname          | Feldtyp   | Beschreibung      | Tabellen in Dynamics 365 for Operations | Feld oder Methode in Dynamics 365 for Operations |
-|-----|-------------------|-----------|-------------------|--------------------------------------|------------------------------------------------|
-| 1   | NAME              | Zeichen   | Name              | TaxTable                             | TaxName                                        |
-| 2   | BUCHUNGSGRUNDLAGE | Zeichen   | Buchungsgrundlage | TaxTable                             | TaxBase                                        |
-| 3   | PROZENTSATZ       | Num(2Dez) | Prozentsatz       | TaxData                              | TaxValue                                       |
-| 4   | GULTIGAB          | Datum     | Gültig ab         | TaxData                              | TaxFromDate                                    |
-| 5   | GULTIGBIS         | Datum     | Gültig bis        | TaxData                              | TaxToDate                                      |
+|     | Feldname          | Feldtyp   | Beschreibung      | Tabelle in Finance and Operations | Feld oder Methode im Finance and Operations|
+|-----|-------------------|-----------|-------------------|--------------------------------------|-------------------------------------|
+| 1   | NAME              | Zeichen   | Name              | TaxTable                             | TaxName                             |
+| 2   | BUCHUNGSGRUNDLAGE | Zeichen   | Buchungsgrundlage | TaxTable                             | TaxBase                             |
+| 3   | PROZENTSATZ       | Num(2Dez) | Prozentsatz       | TaxData                              | TaxValue                           |
+| 4   | GULTIGAB          | Datum     | Gültig ab         | TaxData                              | TaxFromDate                         |
+| 5   | GULTIGBIS         | Datum     | Gültig bis        | TaxData                              | TaxToDate                           |
 
 #### <a name="mehrwertsteuergruppen"></a>MehrwertsteuerGruppen
 
-|     | Feldname                      | Feldtyp | Beschreibung               | Tabellen in Dynamics 365 for Operations | Feld oder Methode in Dynamics 365 for Operations |
-|-----|-------------------------------|---------|----------------------------|--------------------------------------|------------------------------------------------|
-| 1   | MEHRWERTSTEUERGRUPPE          | Zeichen | Mehrwertsteuergruppe       | TaxGroupData                         | TaxGroup                                       |
-| 2   | BESCHREIBUNG                  | Zeichen | Beschreibung               | TaxGroupHeading                      | TaxGroupName                                   |
-| 3   | MWST\_AUF\_SKONTO\_STORNIEREN | Zeichen | MWSt auf Skonto stornieren | TaxGroupHeading                      | TaxReverseOnCashDisc                           |
-| 4   | MEHRWERTSTEUERCODE            | Zeichen | Mehrwertsteuercode         | TaxGroupData                         | TaxCode                                        |
-| 5   | MWST\_CODE\_NAME              | Zeichen | MWSt Code Name             | TaxTable                             | TaxName                                        |
-| 6   | ERWERBSSTEUER                 | Zeichen | Erwerbssteuer              | TaxGroupData                         | UseTax                                         |
+|     | Feldname                      | Feldtyp | Beschreibung               | Tabelle in Finance and Operations | Feld oder Methode im Finance and Operations |
+|-----|-------------------------------|---------|----------------------------|--------------------------------------|-----------------|
+| 1   | MEHRWERTSTEUERGRUPPE          | Zeichen | Mehrwertsteuergruppe       | TaxGroupData                         | TaxGroup       |
+| 2   | BESCHREIBUNG                  | Zeichen | Beschreibung               | TaxGroupHeading                      | TaxGroupName     |
+| 3   | MWST\_AUF\_SKONTO\_STORNIEREN | Zeichen | MWSt auf Skonto stornieren | TaxGroupHeading       | TaxReverseOnCashDisc   |
+| 4   | MEHRWERTSTEUERCODE            | Zeichen | Mehrwertsteuercode         | TaxGroupData                         | TaxCode    |
+| 5   | MWST\_CODE\_NAME              | Zeichen | MWSt Code Name             | TaxTable                             | TaxName  |
+| 6   | ERWERBSSTEUER                 | Zeichen | Erwerbssteuer              | TaxGroupData                         | UseTax       |
 
 #### <a name="umsatzsteuerbuchungen"></a>Umsatzsteuerbuchungen
 
-|     | Feldname               | Feldtyp   | Beschreibung                                | Tabellen in Dynamics 365 for Operations | Feld oder Methode in Dynamics 365 for Operations |
-|-----|------------------------|-----------|---------------------------------------------|--------------------------------------|------------------------------------------------|
+|     | Feldname               | Feldtyp   | Beschreibung                                | Tabelle in Finance and Operations | Feld oder Methode im Finance and Operations |
+|-----|------------------------|-----------|---------------------------------------------|--------------------------------------|-----|
 | 1   | STEUERART              | Zeichen   | Beschreibung der Steuerart                  | TaxTrans                             | TaxName()                                      |
 | 2   | CODE\_ MWST             | Zeichen   | MWST Bezeichung                             | TaxTrans                             | TaxCode                                        |
 | 3   | WERTSTELLUNG           | Datum     | Datum der Wertstellung der Buchung          | TaxTrans                             | TransDate                                      |
@@ -147,7 +147,7 @@ In den folgenden Tabellen werden die allgemeinen Debitorendatenstrukturdefinitio
 
 #### <a name="kunden"></a>Kunden
 
-|     | Feldname             | Feldtyp | Beschreibung                          | Tabellen in Dynamics 365 for Operations | Feld oder Methode in Dynamics 365 for Operations |
+|     | Feldname             | Feldtyp | Beschreibung                          | Tabelle in Finance and Operations | Feld oder Methode im Finance and Operations |
 |-----|----------------------|---------|---------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | KUNDENKONTONUMMER    | Zeichen | Nummer des Kundenkontos               | CustTable                            | AccountNum                                     |
 | 2   | KUNDENNAME           | Zeichen | Name des Kunden                       | DirPartyTable                        | Name                                           |
@@ -165,7 +165,7 @@ In den folgenden Tabellen werden die allgemeinen Debitorendatenstrukturdefinitio
 
 #### <a name="kundenbuchungen"></a>Kundenbuchungen
 
-|     | Feldname                 | Feldtyp   | Beschreibung                          | Tabellen in Dynamics 365 for Operations | Feld oder Methode in Dynamics 365 for Operations |
+|     | Feldname                 | Feldtyp   | Beschreibung                          | Tabelle in Finance and Operations | Feld oder Methode im Finance and Operations |
 |-----|--------------------------|-----------|---------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | KUNDENKONTONUMMER        | Zeichen   | Kontonummer des Kundenkontos          | CustTrans                            | AccountNum                                     |
 | 2   | BUCHUNGSNUMMER           | Zeichen   | Interne Belegnummer der Buchung       | CustTrans                            | Beleg                                        |
@@ -186,7 +186,7 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 
 #### <a name="lieferanten"></a>Lieferanten
 
-|     | Feldname                  | Feldtyp | Beschreibung                             | Tabellen in Dynamics 365 for Operations | Feld oder Methode in Dynamics 365 for Operations |
+|     | Feldname                  | Feldtyp | Beschreibung                             | Tabelle in Finance and Operations | Feld oder Methode im Finance and Operations |
 |-----|---------------------------|---------|------------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | LIEFERANTENKONTONUMMER    | Zeichen | Nummer des Lieferantenkontos             | VendTable                            | AccountNum                                     |
 | 2   | LIEFERANTENNAME           | Zeichen | Name des Lieferanten                     | DirPartyTable                        | Name                                           |
@@ -203,7 +203,7 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 
 #### <a name="lieferantenbuchungen"></a>Lieferantenbuchungen
 
-|     | Feldname                 | Feldtyp   | Beschreibung                          | Tabellen in Dynamics 365 for Operations | Feld oder Methode in Dynamics 365 for Operations |
+|     | Feldname                 | Feldtyp   | Beschreibung                          | Tabelle in Finance and Operations | Feld oder Methode im Finance and Operations |
 |-----|--------------------------|-----------|---------------------------------------|--------------------------------------|------------------------------------------------|
 | 1   | LIEFERANTENKONTONUMMER   | Zeichen   | Nummer des Lieferantenkontos          | VendTrans                            | AccountNum                                     |
 | 2   | BUCHUNGSNUMMER           | Zeichen   | Interne Belegnummer der Buchung       | VendTrans                            | Beleg                                        |
@@ -224,7 +224,7 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 <a name="see-also"></a>Siehe auch
 --------
 
-[Überblick über die elektronische Berichterstellung](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
+[Überblick über die elektronische Berichterstellung](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
 
 
 

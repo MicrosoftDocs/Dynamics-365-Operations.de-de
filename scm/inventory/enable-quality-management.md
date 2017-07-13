@@ -1,16 +1,16 @@
 ---
 title: "Qualitätsmanagement-Übersicht"
-description: "In diesem Artikel wird beschrieben, wie Sie das Qualitätsmanagement in Microsoft Dynamics 365 for Operations verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern."
+description: "In diesem Artikel wird beschrieben, wie Sie das Qualitätsmanagement in Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bb3f36bb425adffa7e055eba4e8732866cb67c49
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,13 +32,13 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Artikel wird beschrieben, wie Sie das Qualitätsmanagement in Microsoft Dynamics 365 for Operations verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
+In diesem Artikel wird beschrieben, wie Sie das Qualitätsmanagement in Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
 
-Das Qualitätsmanagement kann Ihnen dabei helfen, Abfertigungszeiten zu fehlerhaften Produkten zu verwalten (unabhängig vom Ursprung). Da Diagnosetypen mit der Korrekturberichterstellung verknüpft sind, kann Microsoft Dynamics 365 for Operations Aufgaben planen, Probleme korrigieren und das erneute Auftreten verhindern.
+Das Qualitätsmanagement kann Ihnen dabei helfen, Abfertigungszeiten zu fehlerhaften Produkten zu verwalten (unabhängig vom Ursprung). Da Diagnosetypen mit der Korrekturberichterstellung verknüpft sind, kann Microsoft Dynamics 365 for Finance and Operations Aufgaben planen, Probleme korrigieren und das erneute Auftreten verhindern.
 
 Zusätzlich zu den Funktionen für die Verwaltung des Qualitätsmangels, umfasst das Qualitätsmanagement Funktionen für die Nachverfolgung von Problemen nach Problemtyp (auch interne Probleme) und zur Kennzeichnung von Lösungen als kurzzeitig oder langfristig. Die Statistiken zu Key Performance Indicators (KPIs) geben Einblick in den Verlauf von vorherigen Qualitätsmangelprobleme sowie zu Lösungen zu deren Korrektur. Sie können Verlaufsdaten verwenden, um die Effizienz vorheriger Qualitätsmaßnahmen zu prüfen und geeignete Maßnahmen für die Zukunft zu bestimmen.
 
-Wenn Sie eine Qualitätszuordnung festlegen, kann Microsoft Dynamics 365 for Operations Qualitätsprüfungsaufträge für verschiedene Geschäftsprozesse, Ereignisse und Bedingungen generieren. Die Qualitätszuordnung kann einen bestimmten Artikel, eine bestimmte Artikelgruppe oder alle Artikel enthalten.
+Wenn Sie eine Qualitätszuordnung festlegen, kann Finance and Operations Qualitätsprüfungsaufträge für verschiedene Geschäftsprozesse, Ereignisse und Bedingungen generieren. Die Qualitätszuordnung kann einen bestimmten Artikel, eine bestimmte Artikelgruppe oder alle Artikel enthalten.
 
 ## <a name="examples-of-the-use-of-quality-management"></a>Beispiele für die Nutzung des Qualitätsmanagements
 Das Qualitätsmanagement ist flexibel und kann auf unterschiedliche Weise implementiert werden um die Bedingungen bestimmter Lieferkettenarbeitsgangstufen zu erfüllen. Die folgenden Beispiele zeigen die mögliche Verwendung dieser Funktionen:

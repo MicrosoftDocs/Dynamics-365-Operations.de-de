@@ -1,16 +1,16 @@
 ---
 title: Lagerortarbeitsrichtlinien
-description: "Eine neue Lagerort-Arbeitsrichtlinie wird in Microsoft Dynamics AX 7.0.1 eingeführt (Update von Mai 2016). Diese Arbeitsrichtlinie steuert, ob Lagerortarbeit für Lagerortprozesse in der Fertigung erstellt wird."
+description: "Lagerortarbeitsrichtlinien steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSWorkPolicy
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6c9cdf361e4d4543e6aca962e9ec712428bc76e6
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 7612003bc20f91f173629893750478b034cff27b
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,12 +32,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Eine neue Lagerort-Arbeitsrichtlinie wird in Microsoft Dynamics AX 7.0.1 eingeführt (Update von Mai 2016). Diese Arbeitsrichtlinie steuert, ob Lagerortarbeit für Lagerortprozesse in der Fertigung erstellt wird.
+Lagerortarbeitsrichtlinien in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird.
 
 Diese Arbeitsrichtlinie steuert, ob Lagerortarbeit für Lagerortprozesse in der Fertigung erstellt wird. Sie können die Arbeitsrichtlinie einrichten, indem Sie eine Kombination von **Arbeitsauftragstypen**, einen **Bestandslagerbestand** und ein **Produkt** verwenden. Beispielsweise wird Produkt L0101 dem Ausgangslagerplatz 001 als fertig gemeldet. Das Endprodukt wird später in einem anderen Produktionsauftrag an Ausgangslagerplatz 001 verbraucht. In diesem Fall können Sie eine Arbeitsrichtlinie einrichten, um zu verhindern, dass fertige eingelagerte Waren erstellt werden, wenn Sie Produkt L0101 dem Ausgangslagerort 001 als fertig melden. Die Arbeitsrichtlinie ist eine einzelne Entität, die durch die folgenden Informationen beschrieben werden kann:
 
 -   **Arbeitsrichtlinienname**(der eindeutige Bezeichner der Arbeitsrichtlinie)
--   **Arbeitsauftragstypen**und**Arbeitserstellungsmethode**
+-   **Arbeitsauftragstypen** und **Arbeitserstellungsmethode**
 -   **Lagerplätze für Lagerbestand**
 -   **Produkte**
 

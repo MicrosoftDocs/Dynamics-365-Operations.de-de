@@ -3,26 +3,26 @@ title: "Erstellen von Plänen für feste Vergütung"
 description: "Feste Vergütung bezieht sich auf das reguläre Bruttogehalt oder den Lohn eines Mitarbeiters. In diesem Artikel wird beschrieben die Komponenten, die müssen eingerichtet werden, bevor Sie einen festen Vergütungsplan erstellen und Mitarbeiter registrieren können."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e71e22cef2b65c4cf89b8fe0ea55e092e259c6dc
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 92237f2dda486f71cabe414e88e7ee4b69fb4485
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,12 +34,12 @@ ms.lasthandoff: 05/25/2017
 
 Feste Vergütung bezieht sich auf das reguläre Bruttogehalt oder den Lohn eines Mitarbeiters. In diesem Artikel werden die Komponenten beschrieben die eingerichtet werden müssen, bevor Sie einen festen Vergütungsplan erstellen und Mitarbeiter registrieren können.
 
-Für Ihre Mitarbeiter können feste Vergütungsbeträge berechnet werden, die auf Faktoren wie Leistung, Region und Budgeterweiterungen basieren. Microsoft Dynamics 365 for Operations unterstützt die Kompensationsarten "Schritt", "Klasse" und "Bereich".
+Für Ihre Mitarbeiter können feste Vergütungsbeträge berechnet werden, die auf Faktoren wie Leistung, Region und Budgeterweiterungen basieren. Microsoft Talent unterstützt die Kompensationsarten "Schritt", "Klasse" und "Bereich".
 
 ## <a name="fixed-compensation-components"></a>Feste Vergütungskomponenten
 ### <a name="compensation-levels"></a>Vergütungsstufen
 
-Sie können die verwenden **Vergütungsstufen** für bestimmte Stellen festlegen, um sicherzustellen, dass die Mitarbeiter, die für diese Einzelvorgänge vorgesehen, fair bezahlt werden. Auf der Seite **Vergütungsstufen**können Sie die Vergütungsstufen einrichten, die für jeden Schritt, Grad und Gehaltsplan erforderlich sind. Verwenden Sie die Schaltflächen **Nach oben** bzw. **Nach unten**, um die Stufen in der richtigen Reihenfolge nach Typ anzuordnen. Indem Sie Vergütungsstufen für eine Stelle festlegen, können Sie sicherstellen, dass alle Mitarbeiter, die diese Stelle innehaben, auf derselben Vergütungsstufe bezahlt werden.
+Sie können die verwenden **Vergütungsstufen** für bestimmte Stellen festlegen, um sicherzustellen, dass die Mitarbeiter, die für diese Einzelvorgänge vorgesehen, fair bezahlt werden. Auf der Seite **Vergütungsstufen** können Sie die Vergütungsstufen einrichten, die für jeden Schritt, Grad und Gehaltsplan erforderlich sind. Verwenden Sie die Schaltflächen **Nach oben** bzw. **Nach unten**, um die Stufen in der richtigen Reihenfolge nach Typ anzuordnen. Indem Sie Vergütungsstufen für eine Stelle festlegen, können Sie sicherstellen, dass alle Mitarbeiter, die diese Stelle innehaben, auf derselben Vergütungsstufe bezahlt werden.
 
 ### <a name="reference-points"></a>Referenzpunkte
 

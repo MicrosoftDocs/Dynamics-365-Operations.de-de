@@ -3,7 +3,7 @@ title: Intrastat
 description: "Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5dea47c92c3891ce86b470119ea3bad8252c08d1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6d1141d597e95b0d5cabf77c0248697d256b102a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -40,7 +40,7 @@ Die folgenden Abschnitte beschreiben den allgemeinen Informationsfluss, der für
 
 ### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Geben Sie eine Buchung ein, welche die Grenze eines anderen EU-Landes/einer anderen Region überschreitet
 
-Eine Debitorenrechnung, eine Freitextrechnung, eine Einkaufsrechnung, Projektrechnung, ein Debitorenlieferschein, ein Kreditorenproduktzugang oder Umlagerungsauftrag wird in die Intrastat-Erfassung übertragen, wenn die Länder-/Regionsart des Ziels (auf Dispositionen) oder Lieferung (auf Eingängen) ist **EU**. Diese Funktion wurde für Microsoft Dynamics 365 for Operations Version 1611 erweitert und gestattet, Ladungsadressen für eine Intragemeinschaftsbuchung anzugeben. Wenn eine Ladungsadresse sich von einer Kreditoren-Geschäftsadresse unterscheidet (oder Debitoren-Geschäftsadresse für Rücklieferung) funktioniert der Intrastat-Bericht mit diesen Informationen. Wenn Sie einen Auftrag, eine Freitextrechnung, eine Bestellung, eine Kreditorenrechnung, Projektrechnung oder einen Umlagerungsauftrag erstellen, besitzen einige Felder, die für Außenhandel zugeordnet sind, Standardwerte im Dokumentkopf oder in der Position. Der standardmäßige Buchungscode wird aus dem entsprechenden Feld auf der Seite **Außenhandelsparameter** entnommen. Der standardmäßige Warencode, Ursprungsland/-region und Bundesland/Kanton des Ursprungs werden dem Artikel selbst übernommen. Sie können die Standardwerte ändern und können auch andere außenhandelsbezogene Informationen ausfüllen: Statistiken-Verfahren, Transportmethode und Port.
+Eine Debitorenrechnung, eine Freitextrechnung, eine Einkaufsrechnung, Projektrechnung, ein Debitorenlieferschein, ein Kreditorenproduktzugang oder Umlagerungsauftrag wird in die Intrastat-Erfassung übertragen, wenn die Länder-/Regionsart des Ziels (auf Dispositionen) oder Lieferung (auf Eingängen) ist **EU**. Diese Funktion wurde für Microsoft Dynamics 365 for Operations (1611) erweitert und gestattet, Ladungsadressen für eine Intragemeinschaftsbuchung anzugeben. Wenn eine Ladungsadresse sich von einer Kreditoren-Geschäftsadresse unterscheidet (oder Debitoren-Geschäftsadresse für Rücklieferung) funktioniert der Intrastat-Bericht mit diesen Informationen. Wenn Sie einen Auftrag, eine Freitextrechnung, eine Bestellung, eine Kreditorenrechnung, Projektrechnung oder einen Umlagerungsauftrag erstellen, besitzen einige Felder, die für Außenhandel zugeordnet sind, Standardwerte im Dokumentkopf oder in der Position. Der standardmäßige Buchungscode wird aus dem entsprechenden Feld auf der Seite **Außenhandelsparameter** entnommen. Der standardmäßige Warencode, Ursprungsland/-region und Bundesland/Kanton des Ursprungs werden dem Artikel selbst übernommen. Sie können die Standardwerte ändern und können auch andere außenhandelsbezogene Informationen ausfüllen: Statistiken-Verfahren, Transportmethode und Port.
 
 ### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Mithilfe der Intrastat-Erfassung können Sie Informationen zum Handel zwischen EU-Ländern/Regionen generieren und melden
 

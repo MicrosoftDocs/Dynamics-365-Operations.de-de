@@ -3,7 +3,7 @@ title: Spaltendefinitionen in Finanzberichten
 description: "Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Spalte eines Berichts angibt. Wie auch Zeilendefinitionen können grundlegende Spaltendefinitionen in mehreren Berichten verwendet werden."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -154,7 +154,7 @@ Sie können das Dialogfeld **Spaltenüberschrift** verwenden, um Überschriften 
 
 1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
 2.  Wählen Sie eine Zelle in der Kopfzeile aus.
-3.  Klicken Sie im Menü **Bearbeiten** auf **Zeile einfügen**. Die neue Zeile wird über der Zeile eingefügt, die Sie in Schritt 2 ausgewählt haben. **Hinweis:**Wenn Sie mehr als vier Zeilen für Kopfzeilen auf einem Bericht haben, überschneiden sich die Kopfzeilen, wenn der Bericht in ein Excel-Arbeitsblatt exportiert wird. Um alle Überschriften im Bericht anzuzeigen, vergrößern Sie den oberen Rand in der Berichtsdefinition.
+3.  Klicken Sie im Menü **Bearbeiten** auf **Zeile einfügen**. Die neue Zeile wird über der Zeile eingefügt, die Sie in Schritt 2 ausgewählt haben. **Hinweis:** Wenn Sie mehr als vier Zeilen für Kopfzeilen auf einem Bericht haben, überschneiden sich die Kopfzeilen, wenn der Bericht in ein Excel-Arbeitsblatt exportiert wird. Um alle Überschriften im Bericht anzuzeigen, vergrößern Sie den oberen Rand in der Berichtsdefinition.
 
 ### <a name="delete-a-column-header-row"></a>Löschen einer Spaltenüberschriftzeile
 
@@ -164,7 +164,7 @@ Sie können das Dialogfeld **Spaltenüberschrift** verwenden, um Überschriften 
 
 ### <a name="create-an-automatically-generated-header"></a>Erstellen einer automatisch generierten Überschrift
 
-Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. Autotextcodes sind Variablen, die jedes Mal aktualisiert werden, wenn ein Bericht generiert wird. Jeder Spaltenüberschrift kann diese Codes umfassen, um Berichtsinformationen anzugeben, die variieren können, wie Datumswerte oder Periodenzahlen. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da Autotextcodes auf den Kalenderdaten aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für **CALC** und **FD** und **WKS**-Spalten unterstützt. Die Methode, auf die ein Autotextcode in der Spaltenüberschriftzelle angezeigt wird, beeinflusst, wie diese Informationen im Bericht angezeigt werden. Im Dialogfeld **Spaltenüberschrift** werden die Autotextcodes in Groß- und Kleinbuchstaben angezeigt. Daher wird der Text im Bericht in Groß- und Kleinbuchstaben angezeigt. In einem Standardkalenderjahr  löst **@CalMonthLong**Monat **7** zu **Juli** auf. Wenn der Name des Monats groß geschrieben werden soll(beispielsweise **JULI**), geben Sie den Autotextcode im Feld **Spaltenüberschriftentext** ein. Geben Sie beispielsweise **@CALMONTHLONG** ein. Sie können Codes und Text kombinieren. Geben Sie zum Beispiel den folgenden Überschriftstext ein: **Periode@FiscalPeriod-@FiscalYear ab @StartDate bis @EndDate**. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: **Periode 1-02 von 01/01/02 bis 01/31/02**. **Hinweis:** Das Format von Teilen des Texts, wie z. B. ein langes Datum, hängt von den regionalen  Einstellungen des Dynamics 365 for Operations Server ab. Um diese Einstellungen zu ändern, klicken Sie auf die Schaltfläche **Start**, klicken Sie auf **Systemsteuerung**, und klicken Sie anschließend auf **Region und Sprache**. In der folgenden Tabelle werden die verfügbaren Autotext-Optionen für Spaltenüberschriften aufgeführt.
+Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. Autotextcodes sind Variablen, die jedes Mal aktualisiert werden, wenn ein Bericht generiert wird. Jeder Spaltenüberschrift kann diese Codes umfassen, um Berichtsinformationen anzugeben, die variieren können, wie Datumswerte oder Periodenzahlen. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da Autotextcodes auf den Kalenderdaten aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für **CALC** und **FD** und **WKS**-Spalten unterstützt. Die Methode, auf die ein Autotextcode in der Spaltenüberschriftzelle angezeigt wird, beeinflusst, wie diese Informationen im Bericht angezeigt werden. Im Dialogfeld **Spaltenüberschrift** werden die Autotextcodes in Groß- und Kleinbuchstaben angezeigt. Daher wird der Text im Bericht in Groß- und Kleinbuchstaben angezeigt. In einem Standardkalenderjahr  löst **@CalMonthLong** Monat **7** zu **Juli** auf. Wenn der Name des Monats groß geschrieben werden soll(beispielsweise **JULI**), geben Sie den Autotextcode im Feld **Spaltenüberschriftentext** ein. Geben Sie beispielsweise **@CALMONTHLONG** ein. Sie können Codes und Text kombinieren. Geben Sie zum Beispiel den folgenden Überschriftstext ein: **Periode@FiscalPeriod-@FiscalYear ab @StartDate bis @EndDate**. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: **Periode 1-02 von 01/01/02 bis 01/31/02**. **Hinweis:** Das Format einiger Teile des Texts, wie das lange Datum, hängen von Ihren regionalen Einstellungen auf dem Finance and Operations-Server ab. Um diese Einstellungen zu ändern, klicken Sie auf die Schaltfläche **Start**, klicken Sie auf **Systemsteuerung**, und klicken Sie anschließend auf **Region und Sprache**. In der folgenden Tabelle werden die verfügbaren Autotext-Optionen für Spaltenüberschriften aufgeführt.
 
 | Autotext-Option und -Code                | Beschreibung                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -488,7 +488,7 @@ Im folgenden Beispiel wird ein Teil einer Spaltenbeschreibung angezeigt, die ein
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Dimensionsfilter in einer Spaltendefinition
 
-Ein Dimensionsfilter wird verwendet, um die Spalte **FD** auf bestimmte Dimensionswerte einzuschränken. Der Filter kann eine einzelne Dimension, einen Bereich von Dimensionen oder eine Gruppe von Dimensionen enthalten. Der Filter kann auch Dimensionswertsätze enthalten. Da Dimensionswerte variieren können, muss ein dimensionsbasiertes System nicht einer genauen Länge entsprechen. Der Filter wird unabhängig davon angewendet, ob der Bericht die Berichtsbaumstruktur umfasst. Sie können in jeder Position ein Platzhalterzeichen (\*oder?) verwenden. Wenn Sie mehrere Konten angeben, setzen Sie wie im folgenden Beispiel ein Komma zwischen Konten: +Konto= \[1200\], +Konto= [\[1100\]], Abteilung= \[01?\] Um alle Abteilungen für ein bestimmtes Konto zu erhalten, können Sie die Abteilungsdimension aus dem Dimensionsfilter ausschließen. Beispielsweise werden die folgenden Dimensionsfilter auf dieselbe Weise behandelt:
+Ein Dimensionsfilter wird verwendet, um die Spalte **FD** auf bestimmte Dimensionswerte einzuschränken. Der Filter kann eine einzelne Dimension, einen Bereich von Dimensionen oder eine Gruppe von Dimensionen enthalten. Der Filter kann auch Dimensionswertsätze enthalten. Da Dimensionswerte variieren können, muss ein dimensionsbasiertes System nicht einer genauen Länge entsprechen. Der Filter wird unabhängig davon angewendet, ob der Bericht die Berichtsbaumstruktur umfasst. Sie können in jeder Position ein Platzhalterzeichen (\*oder?) verwenden. Wenn Sie mehrere Konten angeben, setzen Sie ein Komma zwischen die Konten. Beispiel: +Konto=\[1200\]+Konto=\[1100\], Abteilung=\[01?\] Um alle Abteilungen für ein bestimmtes Konto zu erhalten, können Sie die Abteilungsdimension aus dem Dimensionsfilter ausschließen. Beispielsweise werden die folgenden Dimensionsfilter auf dieselbe Weise behandelt:
 
 -   +Konto=\[1100\],Abteilung
 -   +Konto=\[1100\]

@@ -3,25 +3,27 @@ title: "Bilder für Retail Modern POS einrichten und verwalten"
 description: "In diesem Artikel wird beschrieben welche Schritte beim Einrichten und Verwalten von Bildern für verschiedene Retail Modern POS erforderlich sind."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 06915686e1421742c2f1dd1ebbb02491f04431fd
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 3985d731709eff4085927b277996528e4e448ba9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -36,19 +38,19 @@ In diesem Artikel wird beschrieben welche Schritte beim Einrichten und Verwalten
 <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Die URL für die Medienbasis festlegen und die Medienvorlagen bestimmen, um das Format für die Bild-URL einrichten.
 -------------------------------------------------------------------------------------------------
 
-Die Bilder, die im Retail Modern POS (MPOS) angezeigt werden, müssen extern, außerhalb von Microsoft Dynamics 365 for Operations - Retail gehostet werden. In der Regel werden sie auf einem Content Management-System, auf einem Content Delivery Network (CDN) oder einem Medienserver gehostet. MPOS ruft dann die Bilder von den entsprechenden Einheiten wie Produkten und Kataloge ab und zeigt sie an, indem es auf die Ziel URL zugreift. Um diese extern gehosteten Bilder abzurufen, braucht MPOS das korrekte URL-Format für die Bilder. Sie können das erforderliche URL-Format für Bilder konfigurieren, indem Sie den Wert für die **medienbasierte URL**im Kanalprofil einrichten und die Funktionen **Medienvorlage definieren**für jede Entität verwenden. Sie können das Format der Standard-URL für eine Teilmenge von Entitäten auch überschreiben, indem Sie dies Funktion **In Excel bearbeiten** verwenden. **Wichtiger Hinweis:** In der aktuellen Version von Dynamics 365 for Operations, können Sie das URL-Format nicht mehr mithilfe des **Bild** Attributs XML für MPOS unter **Standard** Attribut für Gruppenentitäten einrichten. Wenn Sie mit Microsoft Dynamics AX 2012 R3 vertraut sind und nun die aktuelle Version von Dynamics 365 for Operations verwenden, überprüfen Sie, ob Sie immer die neuen Funktionen **Medienvorlage definieren**, um Bilder einzurichten. Verwenden oder ändern Sie auf keinen Fall das Attribut **Bild** in der **Standard**-Attributengruppe für Entitäten, einschließlich Produkte. Änderungen, die Sie direkt in der Attributgruppe **Standard** für Bilder machen, werden nicht abgebildet. Diese Option wird in einer späteren Version deaktiviert. In den folgenden Verfahren werden Bilder für die Katalogentität als Beispiel genannte. Diese Verfahren helfen sicherzustellen, dass der korrekte Bildzielpfad implizit für alle Katalogbilder festgelegt wird, die einen allgemeinen Pfad folgen. Wenn Sie beispielsweise einen Medienserver oder ein CDN extern eingerichtet haben und möchten, dass die Bilder in MPOS für eine angegebenen Filiale angezeigt werden, wird Ihnen die Funktionalität **Medienvorlage definieren** helfen, den Pfad festzulegen, von dem MPOS Bilder suchen und holen kann. **Hinweis:** Für dieses Demodatenbeispiel wird der Medienserver im Retail-Server bereitgestellt. Allerdings können Sie ihn an einer beliebigen Stelle außerhalb von Dynamics 365 for Operations haben.
+Die Bilder, die im Retail Modern POS (MPOS) angezeigt werden, müssen extern, außerhalb von Microsoft Dynamics 365 for Retail gehostet werden. In der Regel werden sie auf einem Content Management-System, auf einem Content Delivery Network (CDN) oder einem Medienserver gehostet. MPOS ruft dann die Bilder von den entsprechenden Einheiten wie Produkten und Kataloge ab und zeigt sie an, indem es auf die Ziel URL zugreift. Um diese extern gehosteten Bilder abzurufen, braucht MPOS das korrekte URL-Format für die Bilder. Sie können das erforderliche URL-Format für Bilder konfigurieren, indem Sie den Wert für die **medienbasierte URL** im Kanalprofil einrichten und die Funktionen **Medienvorlage definieren** für jede Entität verwenden. Sie können das Format der Standard-URL für eine Teilmenge von Entitäten auch überschreiben, indem Sie dies Funktion **In Excel bearbeiten** verwenden. **Wichtiger Hinweis:** In der aktuellen Version von Dynamics 365 for Retail können Sie das URL-Format nicht mehr mithilfe des **Bild** Attributs XML für MPOS unter **Standard** Attribut für Gruppenentitäten einrichten. Wenn Sie mit Microsoft Dynamics AX 2012 R3 vertraut sind und nun die aktuelle Version von Dynamics 365 for Retail verwenden, überprüfen Sie, ob Sie immer die neuen Funktionen **Medienvorlage definieren**, um Bilder einzurichten. Verwenden oder ändern Sie auf keinen Fall das Attribut **Bild** in der **Standard**-Attributengruppe für Entitäten, einschließlich Produkte. Änderungen, die Sie direkt in der Attributgruppe **Standard** für Bilder machen, werden nicht abgebildet. Diese Option wird in einer späteren Version deaktiviert. In den folgenden Verfahren werden Bilder für die Katalogentität als Beispiel genannte. Diese Verfahren helfen sicherzustellen, dass der korrekte Bildzielpfad implizit für alle Katalogbilder festgelegt wird, die einen allgemeinen Pfad folgen. Wenn Sie beispielsweise einen Medienserver oder ein CDN extern eingerichtet haben und möchten, dass die Bilder in MPOS für eine angegebenen Filiale angezeigt werden, wird Ihnen die Funktionalität **Medienvorlage definieren** helfen, den Pfad festzulegen, von dem MPOS Bilder suchen und holen kann. **Hinweis:** Für dieses Demodatenbeispiel wird der Medienserver im Retail-Server bereitgestellt. Allerdings können Sie ihn an einer beliebigen Stelle außerhalb von Dynamics 365 for Retail haben.
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>Die medienbasierte URL für einen Kanal einrichten
 
-1.  Öffnen des Dynamics 365 for Operations-HQ-Portals
-2.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellung** &gt; **Kanalprofile**. [![channel-profile1](./media/channel-profile1.png)](./media/channel-profile1.png)
+1.  Öffnen des Dynamics 365 for Retail-HQ-Portals
+2.  Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellung** &gt; **Kanalprofile**. [![channel-profile1](./media/channel-profile1.png)](./media/channel-profile1.png)
 3.  Im Kanalprofil, das Ihr Shop für MPOS verwendet, aktualisieren Sie das Feld mit der **Medienbasierten URL** mit der Basis-URL von Ihrem Medienserver oder CDN. Die Basis-URL ist der erste Teil der URL, die von allen Bildordner von andere Entitäten freigegeben wird.[![channel-profile2](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>Definieren Sie die Medienvorlage für eine Entität
 
-1.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Katalogverwaltung** &gt; **Katalogbilder**.
+1.  Klicken Sie auf **Einzelhandel** &gt; **Katalogverwaltung** &gt; **Katalogbilder**.
 2.  Klicken Sie auf der Seite **Katalogbilder** den Aktivitätsbereich und klicken Sie **Medienvorlage definieren** an. Im Dialogfeld **Medienvorlage definieren** im Feld **Entität** **Katalog** sollte die Option standardmäßig ausgewählt werden.
-3.  Geben Sie im Inforegister **Medienpfad** den verbleibenden Pfad des Bildlagerplatzes ein. Die Medienpfad unterstützt **LanguageID** als Variable. Sie können beispielswiese für die Demodaten einen Ordner **Kataloge** für alle Katalogbilder unter der medienbasierten URL für Ihren Medienserver erstellen (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Sie können dann einen Ordner für jede Sprache haben, wie en-US oder fr-FR und dann die entsprechenden Bilder in jedem Ordner entsprechend speichern. Wenn Sie keine verschiedenen Bilder für die unterschiedlichen Sprachen haben, können Sie die Variablen **LanguageID** aus Ihrer Ordnerstruktur übergehen und direkt zum Katalogordner gehen, der die Katalogbilder enthält. **Hinweis:** Die aktuelle Version von Dynamics AX unterstützt den Token **{LanguageID}** für Katalog-, Produkt- und Kategorieentitäten. (Der Token **{LanguageID}** wird für Debitoren- und Arbeitskraftentitäten gemäß dem vorhandenen Standard, der seit Microsoft Dynamics AX 6.x. in Kraft war, nicht unterstützt.)
+3.  Geben Sie im Inforegister **Medienpfad** den verbleibenden Pfad des Bildlagerplatzes ein. Die Medienpfad unterstützt **LanguageID** als Variable. Sie können beispielswiese für die Demodaten einen Ordner **Kataloge** für alle Katalogbilder unter der medienbasierten URL für Ihren Medienserver erstellen (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Sie können dann einen Ordner für jede Sprache haben, wie en-US oder fr-FR und dann die entsprechenden Bilder in jedem Ordner entsprechend speichern. Wenn Sie keine verschiedenen Bilder für die unterschiedlichen Sprachen haben, können Sie die Variablen **LanguageID** aus Ihrer Ordnerstruktur übergehen und direkt zum Katalogordner gehen, der die Katalogbilder enthält. **Hinweis:** Die aktuelle Version von Dynamics 365 for Retail unterstützt den Token **{LanguageID}** für Katalog-, Produkt- und Kategorieentitäten. (Der Token **{LanguageID}** wird für Debitoren- und Arbeitskraftentitäten gemäß dem vorhandenen Standard, der seit Microsoft Dynamics AX 6.x. in Kraft war, nicht unterstützt.)
 4.  Für Bilder wird das Dateinamenformat mit dem Katalognamen fest verbunden und kann nicht geändert werden. Daher benennen Sie Ihre Bilder um, sodass sie entsprechende Katalognamen haben und um sicherzustellen, dass MPOS sie ordnungsgemäß verarbeitet.
 5.  Wählen Sie im Feld **Dateierweiterung** die erwartete Dateinamenerweiterung abhängig vom Typ der Bilder, die Sie haben. Für die Demodaten werden die Katalogbilder beispielsweise mit der .jpg- Erweiterung festgelegt. (Die Bilddateien werden auch umbenannt, sodass sie Katalognamen haben).
 6.  Klicken Sie auf **OK**.
@@ -78,10 +80,10 @@ Wie Sie im vorherigen Abschnitt lernten, unterstützt die Medienvorlage für ein
 
 ### <a name="overwrite-by-using-edit-in-excel"></a>Mit in Excel bearbeiten überschreiben
 
-1.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Katalogverwaltung** &gt; **Katalogbilder**.
+1.  Klicken Sie auf **Einzelhandel** &gt; **Katalogverwaltung** &gt; **Katalogbilder**.
 2.  Klicken Sie auf der Seite **Katalogbilder** auf **Medienvorlage definieren**. Im Dialogfeld **Medienvorlage definieren** im Feld **Entität** sollte die Option **Katalog** ausgewählt werden.
 3.  Merken Sie sich im Inforegister **Medienpfad** den Bildlagerplatz.
-4.  Klicken Sie im Inforegister **Bild URLs für Excel erstellen** und klicken auf **erstellen**. **Wichtig:** Sobald die Medienvorlage geändert wird, müssen Sie auf **Erstellen** klicken, bevor Sie die Funktion in Excel bearbeiten verwenden können. [![excel1](./media/excel1.jpg)](./media/excel1.jpg) Sie sehen nun eine Vorschau der Bild URLs, die basierend auf der letzten gespeicherten Medienvorlage erstellt wurden. [![excel2](./media/excel2.png)](./media/excel2.png) **Hinweis:** Die von Excel erstellten URLS verwenden den Pfad und die Konventionen der Medienvorlage, die definiert ist. Diese Konventionen umfassen die Konventionen für Dateinamen. Die Erwartung ist, dass Sie die physischen Bilder außerhalb Dynamics AX eingerichtet haben, und Bilder von den URL abgerufen werden können, die von der Medienvorlage stammen, die Sie ebenfalls bereits definiert haben. Sie können dieses abgeleitete URL überschreiben, indem Sie die Funktion Bearbeiten in Excel verwenden.
+4.  Klicken Sie im Inforegister **Bild URLs für Excel erstellen** und klicken auf **erstellen**. **Wichtig:** Sobald die Medienvorlage geändert wird, müssen Sie auf **Erstellen** klicken, bevor Sie die Funktion in Excel bearbeiten verwenden können. [![excel1](./media/excel1.jpg)](./media/excel1.jpg) Sie sehen nun eine Vorschau der Bild URLs, die basierend auf der letzten gespeicherten Medienvorlage erstellt wurden. [![excel2](./media/excel2.png)](./media/excel2.png) **Hinweis:** Die von Excel erstellten URLS verwenden den Pfad und die Konventionen der Medienvorlage, die definiert ist. Diese Konventionen umfassen die Konventionen für Dateinamen. Die Erwartung ist, dass Sie die physischen Bilder außerhalb Dynamics 365 for Retail eingerichtet haben, und Bilder von den URL abgerufen werden können, die von der Medienvorlage stammen, die Sie ebenfalls bereits definiert haben. Sie können dieses abgeleitete URL überschreiben, indem Sie die Funktion Bearbeiten in Excel verwenden.
 5.  Klicken Sie auf **In Excel bearbeiten**.
 6.  Nachdem das Microsoft Excel-Arbeitsblatt geöffnet ist, klicken Sie auf **Bearbeiten aktivieren**, wenn Sie dazu aufgefordert werden.
 7.  Wenn Sie aufgefordert werden, klicken Sie im rechten Bereich auf **Diesem Add-In vertrauen**, um die Installation abzuschließen. [![Diesem Add-In vertrauen](./media/excel4.jpg)](./media/excel4.jpg)
@@ -119,7 +121,7 @@ Um Bild URLs für Katalogproduktbilder zu überschreiben, müssen Sie die Seite 
 
 1.  Um Produktbilder auf einer Katalogebene zu überschreiben, wählen Sie einen Katalog aus und wählen anschließend das Produkt, für das das Bild überschrieben werden soll.
 2.  Klicken Sie auf **Attribute**.
-3.  Wählen Sie auf der nächsten Seite **Bild**und klicken dann auf **Bearbeiten**. Die Seite **Vorschau**öffnet sich als angleichendes Dialogfeld.
+3.  Wählen Sie auf der nächsten Seite **Bild** und klicken dann auf **Bearbeiten**. Die Seite **Vorschau** öffnet sich als angleichendes Dialogfeld.
 4.  Klicken Sie auf **Hinzufügen** und überschreiben Sie die Bild URL mit einer neuen URL.
 5.  Klicken Sie auf **OK**. Sie sehen nun eine Vorschau des neuen Bilds und können es als Standardbild festlegen.
 
@@ -147,7 +149,7 @@ Die Produktbilder, die im Offlinemodus verwendet werden müssen, können eingeri
 Die Katalog-, Kategorie-, Mitarbeiter sowie die Debitorenbilder, die im Offline-Modus verwendet werden müssen, können aufgesetzt werden, indem der erforderliche Ziellink des Bilds im Katalog hinzugefügt wird und das Bild als Standardbild für die ausgewählte Entität festlegt wird.
 
 1.  Klicken Sie zum Katalog und klicken Sie im Aktivitätsbereich auf **Medien** &gt; **Bilder**.
-2.  Folgen Sie den Schritte im Abschnitt**Vorschauseite auf Entitätsebene überschreiben**, um die externe Bild-URL hinzuzufügen.
+2.  Folgen Sie den Schritte im Abschnitt **Vorschauseite auf Entitätsebene überschreiben**, um die externe Bild-URL hinzuzufügen.
 3.  Aktivieren Sie dieses Bild als standardmäßiges Bild für den Katalog, indem Sie das Kontrollkästchen für das Bild auswählen, das im Raster aufgeführt ist.
 4.  Führen Sie den Katalogvorgang aus. Dieses Bild wird jetzt als Offlinebild für den Katalog in MPOS verwendet.
 5.  Führen Sie einen ähnlichen Prozess für andere Entitäten, wie Kategorie, Mitarbeiter und Debitor durch.

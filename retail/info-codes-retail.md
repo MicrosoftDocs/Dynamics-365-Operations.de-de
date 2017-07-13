@@ -3,26 +3,27 @@ title: Infocodes
 description: "Dieser Artikel enthält einen Überblick über Infocodes, Infocodegruppen und wie sie verwendet werden."
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5790f54a531336b30ee140ebf8b9c782d8b347f7
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b7417a8fece55963dcde53e7016e4d41793a6102
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -41,8 +42,8 @@ Infocodes bieten eine Methode, um Daten an einem Point-of-Sale (POS) Register zu
 -   Ein Produkt als regulärer Verkauf, Verkauf mit Preisnachlass oder kostenloses Produkt verkaufen.
 -   Den Kassierer auffordern, einen Wert einzugeben oder aus einer Liste von Untercodes auszuwählen, wenn er die Registerkassenlade öffnet, ohne einen Verkaufsarbeitsgang auszuführen.
 
-## <a name="info-codes-group-in-retail-and-commerce"></a>Infocodegruppe im Einzelhandel und im Handel
-In Dynamics 365 for Operations - Retail Infocodes können Sie Gruppen erstellen. Infocodegruppen fügen Flexibilität hinzu, indem Sie Ihnen ermöglichen, weniger Infocodes zu definieren und sie dann auf vielseitigere Arten zu verwenden. Infocodes können wie im Folgenden beschrieben verwendet werden:
+## <a name="info-codes-group"></a>Infocodegruppe
+In Dynamics 365 for Retail können Sie Gruppen für Infocodes anlegen. Infocodegruppen fügen Flexibilität hinzu, indem Sie Ihnen ermöglichen, weniger Infocodes zu definieren und sie dann auf vielseitigere Arten zu verwenden. Infocodes können wie im Folgenden beschrieben verwendet werden:
 -   Definieren Sie weniger Infocodes und verwenden Sie diese leicht erneut. Infocodes, die in den Infocodegruppen enthalten sind, besitzen keine vordefinierten Abhängigkeiten von anderen Infocodes. Sie können den gleichen Infocode in mehreren Infocodegruppen einfügen und dann Priorisierung verwenden, um die gleichen Infocodes in der Reihenfolge darzustellen, der in einem bestimmten Fall sinnvoll ist.
 -   Verknüpfen Sie Infocodes so mit anderen Infocodes oder Infocodegruppen, um Informationen über ein Produkt oder eine Transaktion zu sammeln, ohne einen separaten Infocode oder verknüpften Infocode für jedes Szenario zu definieren.
 

@@ -3,7 +3,7 @@ title: Einrichten von Kreditorenkonten
 description: "In diesem Thema werden die Typen von Informationen beschrieben, die Sie angeben müssen, wenn Sie ein neues Kreditorenkonto erstellen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bee95a2f3d9727e9123aa0abcf41325e6cac1efd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -62,13 +62,13 @@ Können Sie Kontakte für einen Kreditoren speichern. Diese Kontakte können dan
 
 Um Kontakte für einen Kreditor hinzuzufügen, klicken Sie auf der Seite **Alle Kreditoren** auf der Registerkarte **Kreditor** in der Gruppe **Einstellungen** auf **Kontakte** &gt; **Kontakte hinzufügen**.  
 
-Sie können Kreditorenkontakte von Grund auf neu erstellen. Alternativ können Sie auch Details einer anderen Person kopieren, die bereits in Microsoft Dynamics 365 for Operations registriert ist und die Informationen nach Bedarf bearbeiten.  
+Sie können Kreditorenkontakte von Grund auf neu erstellen. Alternativ können Sie auch Details einer anderen Person kopieren, die bereits in Microsoft Dynamics 365 for Finance and Operations registriert ist und die Informationen nach Bedarf bearbeiten.  
 
 **Hinweis:** Einen Kontakt für einen Kreditor hinzuzufügen ist nicht das Gleiche, wie das Hinzufügen von Kontaktinformationen für diesen Kreditor . Obwohl Sie allgemeine Kontaktinformationen für einen Kreditor hinzugefügt haben, möchten Sie vielleicht auch bestimmte Personen, die Kontakte dieses Unternehmens sind und die ihre eigenen Kontaktinformationen haben, hinzufügen.  
 
 Sie können keinen Kontaktpersondatensatz löschen, wenn der Kontakt auf ein Dokument verweist. Stattdessen können Sie den Kontakt deaktivieren.  
 
-Sie können Kreditorenkontakte Ihren persönlichen Kontakten in Microsoft Office 365 hinzufügen. Allerdings müssen Sie zuerst die Synchronisierung zwischen Dynamics 365 for Operations und Office 365 sowohl in der Microsoft Exchange Server-Synchronisierung als auch im Microsoft Outlook-Setup-Assistenten einrichten.
+Sie können Kreditorenkontakte Ihren persönlichen Kontakten in Microsoft Office 365 hinzufügen. Allerdings müssen Sie zuerst die Synchronisierung zwischen Finance and Operations und Office 365 sowohl in der Microsoft Exchange Server-Synchronisierung als auch im Microsoft Outlook-Setup-Assistenten einrichten.
 
 ## <a name="vendors-in-different-legal-entities"></a>Kreditoren in verschiedenen juristischen Personen
 Wenn ein Kreditor für eine juristische Person in der Organisation erfasst ist und andere juristische Personen den gleichen Kreditor erfassen müssen, können Sie die Seite **Kreditor zu anderer juristischer Person hinzufügen** verwenden, um den Kreditor zu so konfigurieren, dass er Geschäfte mit einer anderen juristischen Person tätigen kann. Wählen Sie für den Kreditor in der ausgewählten juristischen Person eine Kreditorengruppe, eine Währung und einen Sperrstatus aus.  
@@ -99,7 +99,7 @@ Wenn Sie einen Kreditor sperren, können Sie auch einen Grund und ein Datum ange
 Wenn mehrere Ihrer Kreditoren dieselbe Rechnungsadresse haben, oder wenn Rechnungen an den Kreditor über Dritte abgewickelt werden, können Sie ein Rechnungskonto im Kreditorendatensatz erstellen. Das Rechnungskonto ist das Konto, auf dem der Rechnungsbetrag gutgeschrieben wird, wenn Sie eine Kreditorenrechnung für eine Bestellung erstellen. Wenn Sie kein Rechnungskonto im Kreditorendatensatz angeben, wird das Kreditorenkonto als Rechnungskonto verwendet.
 
 ## <a name="vendor-bank-accounts"></a>Kreditoren-Bankkonten
-Wenn Sie Zahlungen an ein Kreditorenbankkonto veranlassen müssen, können Sie Informationen über die Bank des Kreditors und Bankkonten auf der Seite **Kreditorenbankkonten**eingeben. Sie können auch Informationen zu Prüfungen und Zahlungen für das ausgewählte Bankkonto eingeben. Beispielsweise können Sie Testtransaktionen zu Kreditoren-Bankkonten hinzufügen. Diese Testtransaktionen können verwendet werden, um die Genauigkeit von Kontodaten zu überprüfen, zum Beispiel Bankleitzahlen und Kontonummern. Sie müssen ein Standardkonto für Zahlungen an den Kreditor angeben. Wenn Sie allerdings eine tatsächliche Zahlung leisten, können Sie dieses Konto auf eines der anderen Konten des Kreditors ändern.
+Wenn Sie Zahlungen an ein Kreditorenbankkonto veranlassen müssen, können Sie Informationen über die Bank des Kreditors und Bankkonten auf der Seite **Kreditorenbankkonten** eingeben. Sie können auch Informationen zu Prüfungen und Zahlungen für das ausgewählte Bankkonto eingeben. Beispielsweise können Sie Testtransaktionen zu Kreditoren-Bankkonten hinzufügen. Diese Testtransaktionen können verwendet werden, um die Genauigkeit von Kontodaten zu überprüfen, zum Beispiel Bankleitzahlen und Kontonummern. Sie müssen ein Standardkonto für Zahlungen an den Kreditor angeben. Wenn Sie allerdings eine tatsächliche Zahlung leisten, können Sie dieses Konto auf eines der anderen Konten des Kreditors ändern.
 
 ## <a name="ledger-accounts"></a>Sachkonten
 Sie können Standardkonten angeben, die in Kreditorenrechnungserfassungen automatisch für den angegebenen Kreditor angezeigt werden. Verwenden Sie diese Funktion, wenn Sie normaler Weise im Laufe der Zeit für dieselbe Art von Produkten oder Dienstleistungen derselben Kreditoren bezahlen. Wenn Sie ein Standardkonto angeben, können Sie Erfassungseinträge in der Rechnungserfassung schnell und effizient eingeben. Die in diesem Formular angegebenen Standardkonten werden nicht für Bestellungen oder Kreditorenrechnungen verwendet, die auf der Seite **Kreditorenrechnung** eingegeben wurden.  

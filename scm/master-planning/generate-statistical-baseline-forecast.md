@@ -3,14 +3,14 @@ title: Statistische Grundplanung generieren
 description: "Dieser Artikel enthält Informationen zu den Parametern und Filtern, die in der Berechnung der Bedarfsplanung verwendet werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d5232b0862d02962c6524ddc5ef37a6ad49d4143
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 93646e37ee511d433097bb284fccc73c230aee32
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -49,13 +49,13 @@ Wenn die Planungsstrategie auf **Über historischen Bedarf kopieren** festgelegt
 
 Um Unklarheiten in den Produktionsplänen zu verhindern, können mehrere Planungszeitrahmen eingefroren werden. Diese Zahl wird im Feld **Nichtplanungszeitraum** festgelegt. Auf der Seite **Angepasste Bedarfsplanung** werden die Zellen für die fixierten Zeitrahmen deaktiviert, um optisch anzugeben, dass diese Werte nicht geändert werden sollen. 
 
-Das Startdatum für die Grundbedarfsplanung muss nicht das aktuelle Datum oder ein Datum in der Zukunft sein. Um ein anderes Startdatum festzulegen, verwenden Sie das Feld **Startdatum für statistische Grundplanung - Von Datum**. So können Benutzer im Juni beispielswseise eine Planung für das nächste Jahr generieren. Da die Planungszeitrahmen zwischen dem Ende des historischen Bedarfs und dem Beginn der Grundbedarfs fehlen, sind die Vorhersagen nicht genau. Wenn Sie den Microsoft Dynamics 365 for Operations -Bedarfsplanungsdienst verwenden, gibt es vier Arten, auf die Sie die fehlenden Lücken ausfüllen können. Sie können die Methode auswählen, die Sie wünschen, indem Sie den MISSING\_VALUE\_SUBSTITUTION-Parameter auf der Seite **Bedarfsplanungsparameter** festlegen. 
+Das Startdatum für die Grundbedarfsplanung muss nicht das aktuelle Datum oder ein Datum in der Zukunft sein. Um ein anderes Startdatum festzulegen, verwenden Sie das Feld **Startdatum für statistische Grundplanung - Von Datum**. So können Benutzer im Juni beispielswseise eine Planung für das nächste Jahr generieren. Da die Planungszeitrahmen zwischen dem Ende des historischen Bedarfs und dem Beginn der Grundbedarfs fehlen, sind die Vorhersagen nicht genau. Wenn Sie den Microsoft Dynamics 365 for Finance and Operations -Bedarfsplanungsdienst verwenden, gibt es vier Arten, auf die Sie die fehlenden Lücken ausfüllen können. Sie können die Methode auswählen, die Sie wünschen, indem Sie den MISSING\_VALUE\_SUBSTITUTION-Parameter auf der Seite **Bedarfsplanungsparameter** festlegen. 
 
 Das Feld **Startdatum für statistische Grundplanung** - **Von Datum** muss auf den Beginn eines Planungszeitrahmens festgelegt werden, beispielsweise in den USA ein Sonntag, wenn der Planungszeitrahmen die Woche ist. Das System reguliert automatisch das Feld **Startdatum für statistische Grundplanung** - **Von Datum**, um den Beginn eines Planungszeitrahmens abzugleichen. 
 
 Das Feld **Startdatum für statistische Grundplanung** - **Von Datum** kann auf ein Datum in der Vergangenheit gesetzt werden. Das bedeutet, es ist möglich, eine Bedarfsplanung in der Vergangenheit zu generieren. Dies ist hilfreich, da Benutzer die Planungsdienstparameter ändern können, damit die statistische Planung, die in der Vergangenheit generiert wurde, mit dem tatsächlichen historischen Bedarf übereinstimmt. Benutzer können mithilfe dieser Parametereinstellungen dann fortfahren, um eine statistische Grundplanung für die Zukunft zu erstellen. 
 
-Die manuellen Anpassungen, die in den vorherigen Bedarfsplanungsiterationen vorgenommen wurden, können automatisch in die neue Grundplanung übernommen werden, wenn das Kontrollkästchen **Manuelle Anpassungen auf Bedarfsplanung übertragen** aktiviert ist. Wenn das Kontrollkästchen deaktiviert ist, werden die manuellen Anpassungen nicht zur Grundplanung hinzugefügt, sie werden jedoch nicht gelöscht. Die manuellen Anpassungen, die an einer Planung vorgenommen werden, können nur zum Zeitpunkt des Planungsimports gelöscht werden, indem das Kontrollkästchen **Manuelle Anpassungen der Grundbedarfsplanung speichern** deaktiviert wird. Manuelle Anpassungen werden zum Zeitpunkt der Autorisierung gespeichert. Daher, wenn ein Benutzer manuelle Anpassungen an der Planung vornimmt, aber die Planung nicht in Dynamics 365 for Operations autorisiert, gehen die Änderungen verloren. Weitere Informationen zu manuellen Anpassungen und dazu, wie sie arbeiten, finden Sie unter [Autorisieren der angepassten Planung](authorize-adjusted-forecast.md). 
+Die manuellen Anpassungen, die in den vorherigen Bedarfsplanungsiterationen vorgenommen wurden, können automatisch in die neue Grundplanung übernommen werden, wenn das Kontrollkästchen **Manuelle Anpassungen auf Bedarfsplanung übertragen** aktiviert ist. Wenn das Kontrollkästchen deaktiviert ist, werden die manuellen Anpassungen nicht zur Grundplanung hinzugefügt, sie werden jedoch nicht gelöscht. Die manuellen Anpassungen, die an einer Planung vorgenommen werden, können nur zum Zeitpunkt des Planungsimports gelöscht werden, indem das Kontrollkästchen **Manuelle Anpassungen der Grundbedarfsplanung speichern** deaktiviert wird. Manuelle Anpassungen werden zum Zeitpunkt der Autorisierung gespeichert. Wenn ein Benutzer manuelle Anpassungen an der Planung vornimmt, aber die Planung nicht in Dynamics 365 for Finance and Operations autorisiert, gehen die Änderungen daher verloren. Weitere Informationen zu manuellen Anpassungen und dazu, wie sie arbeiten, finden Sie unter [Autorisieren der angepassten Planung](authorize-adjusted-forecast.md). 
 
 Eine Bedarfsplanungsgenerierung kann einen Namen und Kommentare haben, damit Benutzer die Planung erkennen können, die generiert wurde. Diese Werte werden im Generierungsverlauf der Planung auf der Seite **Generierungsverlauf statistische Grundplanung** angezeigt. 
 

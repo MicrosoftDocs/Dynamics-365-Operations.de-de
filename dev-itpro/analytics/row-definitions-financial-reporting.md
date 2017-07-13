@@ -3,7 +3,7 @@ title: Zeilendefinitionen im Finanzberichtdesigner
 description: "Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Zeile eines Finanzberichts angibt. Zeilendefinitionen können mit Spaltendefinitionen, Berichtsstruktur-Definitionen und Berichtsdefinitionen kombiniert werden, um eine Bausteingruppe zu erstellen, die von mehreren Unternehmen verwendet werden kann."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cf0886725e2d8d4031e19810e75755f4306b7c49
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -49,7 +49,7 @@ Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inha
 Eine Zeilendefinition kann bis zu 20,000 Finanzdimensionszeilen und die folgenden Informationen enthalten:
 
 -   Beschreibender Text, der dem Bericht Bedeutung verleiht, indem Abschnittsüberschriften, Positionen und Leerzeichen hinzugefügt werden, wie z. B. **Bargeld** oder **Gesamtumsatz**
--   Links zu Finanzdaten, die Dimensionswerte im Microsoft Dynamics 365 for Operations umfassen können **Hinweis:** Sie können eine Zeilendefinition so einrichten, um Daten aus dem Finanzdimensionssystem jedes Mal zu übernehmen, an dem die Erklärung generiert wird.
+-   Links zu Finanzdaten, die Dimensionswerte im Microsoft Dynamics 365 for Finance and Operations umfassen können **Hinweis:** Sie können eine Zeilendefinition so einrichten, um Daten aus dem Finanzdimensionssystem jedes Mal zu übernehmen, an dem die Erklärung generiert wird.
 -   Zeilensummen und -formeln, die auf den verknüpften Finanzdaten basieren
 
 Normalerweise enthält jede Zeile in einer Zeilendefinition eine der folgenden Arten von Informationen:
@@ -76,8 +76,8 @@ Um Dimensionen einer Zeilendefinition hinzuzufügen, führen Sie die folgenden S
 
 1.  Klicken Sie im Berichts-Designer auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2.  Klicken Sie im Menü **Bearbeiten** auf **Zeilen aus Dimensionen einfügen**...
-3.  Wählen Sie im Dialogfeld **Zeilen aus Dimensionen einfügen**in der Zeile **Dimensionen** die Zelle aus, damit die Dimension der Zeilendefinition übertragen werden kann, und klicken Sie anschließend auf **Alle &&&**.
-4.  Um die Zeilendefinition auf einen bestimmten Bereich von Dimensionswerten einzuschränken, geben Sie den Dimensionsstartwert in der Zelle **Dimensionsbereichsanfang**ein, und geben Sie dann den Enddimensionswert in der Zelle **Dimensionssbereichsende** ein. Um alle Werte für die ausgewählte Dimension einzuschließen, lassen Sie diese Zellen leer. **Hinweis:** Platzhalterzeichen (\* oder ?) in den Dimensionsbereichen geben eventuell nicht alle gewünschten Ergebnisse zurück, je nachdem, wie die ERP-Datenbank Daten sortiert.
+3.  Wählen Sie im Dialogfeld **Zeilen aus Dimensionen einfügen** in der Zeile **Dimensionen** die Zelle aus, damit die Dimension der Zeilendefinition übertragen werden kann, und klicken Sie anschließend auf **Alle &&&**.
+4.  Um die Zeilendefinition auf einen bestimmten Bereich von Dimensionswerten einzuschränken, geben Sie den Dimensionsstartwert in der Zelle **Dimensionsbereichsanfang** ein, und geben Sie dann den Enddimensionswert in der Zelle **Dimensionssbereichsende** ein. Um alle Werte für die ausgewählte Dimension einzuschließen, lassen Sie diese Zellen leer. **Hinweis:** Platzhalterzeichen (\* oder ?) in den Dimensionsbereichen geben eventuell nicht alle gewünschten Ergebnisse zurück, je nachdem, wie die ERP-Datenbank Daten sortiert.
 5.  Wählen Sie einen Wert im Feld **Anfangszeilencode** aus, um den Zeilencode für den ersten Dimensionswert anzugeben, der der Zeilendefinition hinzugefügt wird.
 6.  Geben Sie im Feld **Jede Zeile inkrementieren um** die Lücke zwischen aufeinanderfolgenden Zeilencodes an. Wenn beispielsweise der erste Zeilencode ist 100, und der Inkrementwert ist 30, die ersten neuen Zeilen weisen die Codes 100,130,160,190 und 220. Verwenden Sie einen Inkrementwert, der genügend Platz enthält, der Anwerbung neuer Format- und Formelzeilen einzufügen.
 7.  Klicken Sie auf **OK**. Für jeden der ausgewählten Dimensionswerte wird der Zeilendefinition eine Position hinzugefügt.
@@ -101,9 +101,9 @@ Um Rundung in einer Bilanz anzupassen, führen Sie die folgenden Schritte aus.
     -   **Summenzeile der Verbindlichkeiten und des Eigenkapitals** - Der Zeilencode für die Zeile in der Bilanz, die die Summe der Verbindlichkeiten und des Eigenkapitals beinhaltet.
     -   **Ausgleichsbetraggrenze** - Eine positive Ganzzahl, die bei automatischen Regulierungen die Grenze angibt. Dieser Betrag wird mit dem absoluten Wert der tatsächlichen Rundungsdifferenz verglichen.
 
-    **Hinweis:**Diese Zeilencodes müssen mit den Finanzdaten verknüpft werden. Das bedeutet, die Zeile muss in seiner Zelle **Mit Finanzdimensionen verknüpfen** über einen Dimensionswert verfügen. Verweisen Sie **keine** Beschreibungs- (**DESC**) , Berechnet- (**CALC**) oder Gesamt- (**KNIRPS**) zeile.
+    **Hinweis:** Diese Zeilencodes müssen mit den Finanzdaten verknüpft werden. Das bedeutet, die Zeile muss in seiner Zelle **Mit Finanzdimensionen verknüpfen** über einen Dimensionswert verfügen. Verweisen Sie **keine** Beschreibungs- (**DESC**) , Berechnet- (**CALC**) oder Gesamt- (**KNIRPS**) zeile.
 
-Die Beträge in der Bilanz werden jetzt gleichmäßig ausgeglichen, wenn Runden aktiviert ist. **Hinweis:**Die Regulierungsgrenze wird anhand der Option **Rundungsgenauigkeit** angewendet, die für die Berichtsdefinition angegeben ist. Wenn Sie beispielsweise Ihren Bericht auf Tausend runden und **2** im Feld **Ausgleichsbetraggrenze** eingeben, wird eine Warnmeldung angezeigt, wenn der Wert im Feld **Rundungsausgleichszeile** um mehr als 2.000 Dollar steigt oder reduziert wird.
+Die Beträge in der Bilanz werden jetzt gleichmäßig ausgeglichen, wenn Runden aktiviert ist. **Hinweis:** Die Regulierungsgrenze wird anhand der Option **Rundungsgenauigkeit** angewendet, die für die Berichtsdefinition angegeben ist. Wenn Sie beispielsweise Ihren Bericht auf Tausend runden und **2** im Feld **Ausgleichsbetraggrenze** eingeben, wird eine Warnmeldung angezeigt, wenn der Wert im Feld **Rundungsausgleichszeile** um mehr als 2.000 Dollar steigt oder reduziert wird.
 
 ## <a name="format-row-and-column-text"></a>Formatieren von Zeilen- und Spaltentext
 Sie können die Darstellung Ihrer Berichte anpassen, indem Sie Schriftarten ändern und Text formatieren. In den folgenden Abschnitten wird erklärt, wie die Darstellung der Zeilen und der Spalten in Berichten formatiert wird.

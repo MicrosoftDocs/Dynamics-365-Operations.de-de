@@ -3,7 +3,7 @@ title: "Produktkonfigurationsmodelle – Überblick"
 description: "Dieser Artikel definiert Begriffe und Konzepte, die zu den Produktkonfigurationsmodellen relevant sind. Produktkonfigurationsmodelle lassen Sie eine generische Produktstruktur erstellen, die verwendet werden kann, wenn viele Produktvarianten für ein bestimmtes Produkt zu konfigurieren."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.dyn365.intro: Feb-16
 ms.dyn365.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 30580b059a4c240ad540a9c347b0551df0ab5c02
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1270c35bc7dbe4c85a1aa991a0387b33e1cb6990
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -121,7 +121,7 @@ Beim Attributtyp <strong>Boolesch</strong>, <strong>Ganzzahl</strong> mit einem 
 </tr>
 </tbody>
 </table>
-Eine systemdefinierte Tabelleneinschränkung stellt eine Verknüpfung zwischen einem Attributtyp und einem Feld in einer Dynamics 365 for Operations-Tabelle dar. Eine systemdefinierte Tabelleneinschränkung verknüpft dynamisch das Attribut Typ mit dem Feld. Die Verknüpfung ermöglicht das Attribut in einem Produktkonfigurationsmodell, um die Daten des Feldes im Dynamics 365 for Operations-Tabelle widerzuspiegeln.</td>
+Eine systemdefinierte Tabelleneinschränkung stellt eine Verknüpfung zwischen einem Attributtyp und einem Feld in einer Microsoft Dynamics for Finance and Operations-Tabelle dar. Eine systemdefinierte Tabelleneinschränkung verknüpft dynamisch das Attribut Typ mit dem Feld. Die Verknüpfung ermöglicht dem Attribut in einem Produktkonfigurationsmodell die Daten des Felds in der Finance and Operations-Tabelle widerzuspiegeln.</td>
 </tr>
 <tr class="odd">
 <td>Berechnungen</td>

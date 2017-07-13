@@ -1,16 +1,16 @@
 ---
 title: Positionsplanung
-description: 
+description: "Ausgaben, die Arbeitskräften zugeordnet sind, machen häufig einem Großteil der Kosten einer Organisation aus. Mit der Positionsplanung können Sie diese Ausgaben planen und in die Planung von Budgets einbeziehen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 03645693c5101c48ef9d35bdbe14debef1e69fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,7 +29,6 @@ ms.lasthandoff: 05/25/2017
 # <a name="position-forecasting"></a>Positionsplanung
 
 [!include[banner](../includes/banner.md)]
-
 
 
 
@@ -97,9 +96,9 @@ Das Einkommenskostenelement, das für die Lohngruppe aktiviert ist, wird verwend
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Erstellen von Planungspositionen für vorhandene Positionen
 
-Für die genauste Budgetplanung können Sie Planungspositionen erstellen, indem Sie Details vorhandener Positionen in Microsoft Dynamics 365 for Operations verwenden, unabhängig davon, ob die Position gerade ausgefüllt ist oder nicht. 
+Für die genauste Budgetplanung können Sie Planungspositionen erstellen, indem Sie Details vorhandener Positionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, verwenden, unabhängig davon, ob die Position gerade ausgefüllt ist oder nicht. 
 
-Die Funktion **Vorhandene Positionen hinzufügen** zeigt alle Positionen für eine Organisation an. Wenn Sie das Datum**Per Datum** festlegen, können Sie die Liste der Positionen ändern, sodass sie die Positionen enthält, die an einem Datum in der Vergangenheit existierten oder in der Zukunft existieren (beispielsweise Start des nächsten Budgetzyklus). Wählen Sie einen Budgetplanungsprozess und ein Budgetplanszenario, wählen Sie Positionen in der Liste und klicken Sie dann auf **OK**, um Planungspositionen für die ausgewählten Positionen zu erstellen. Beachten Sie, dass Sie nur eine geplante Position für jede vorhandene Position in einem Budgetplanungsprozess und -szenario erstellen können. Sie können jedoch weitere Versionen erstellen, indem Sie verschiedene Budgetplanszenarios zuweisen. 
+Die Funktion **Vorhandene Positionen hinzufügen** zeigt alle Positionen für eine Organisation an. Wenn Sie das Datum **Per Datum** festlegen, können Sie die Liste der Positionen ändern, sodass sie die Positionen enthält, die an einem Datum in der Vergangenheit existierten oder in der Zukunft existieren (beispielsweise Start des nächsten Budgetzyklus). Wählen Sie einen Budgetplanungsprozess und ein Budgetplanszenario, wählen Sie Positionen in der Liste und klicken Sie dann auf **OK**, um Planungspositionen für die ausgewählten Positionen zu erstellen. Beachten Sie, dass Sie nur eine geplante Position für jede vorhandene Position in einem Budgetplanungsprozess und -szenario erstellen können. Sie können jedoch weitere Versionen erstellen, indem Sie verschiedene Budgetplanszenarios zuweisen. 
 
 Wenn Budgetkostenelemente der Position in der Personalverwaltung zugewiesen wurden, werden diese Budgetkostenelemente auch der Planungsposition zugewiesen und die standardmäßigen Beträge verwendet. Das Feld **Zugewiesene Arbeitskraft** in der Prognoseposition wird auf den Namen der Arbeitskraft festgelegt, die der Position zugewiesen wird, wenn eine Arbeitskraft zugewiesen ist. Dieses Feld ist ein einfaches Textfeld. Kein direkter Link wird erstellt. 
 
@@ -128,7 +127,7 @@ Sie können auch eine vollständig neue Planungsposition erstellen. Wählen Sie 
 
 Sie können Planungspositionen ändern, um entweder bekannte Änderungen für den Budgetzyklus anzuwenden oder vorgeschlagene Änderungen zu modellieren. Häufig wird eine Basislinie von Planungspositionen erstellt, werden Kopien für diese Planungspositionen erstellt und dann zum Modellieren von verschiedenen Gruppen von Änderungen verwendet. Die Kopien werden einem anderen Budgetplanszenario zugewiesen, sind jedoch mit den Planungspositionen identisch, aus denen sie kopiert wurden, zumindestens bis Änderungen vorgenommen werden. Die Vorlagen und Kopien teilen die gleiche Position in der Personalverwaltung. 
 
-Die Funktion **In Szenario kopieren**stellt diese Funktionalität bereit. Beachten Sie, dass jede Personalverwaltungsposition nur eine Planungsposition in jedem Budgetplanszenario haben kann.
+Die Funktion **In Szenario kopieren** stellt diese Funktionalität bereit. Beachten Sie, dass jede Personalverwaltungsposition nur eine Planungsposition in jedem Budgetplanszenario haben kann.
 
 ### <a name="modifying-forecast-positions"></a>Ändern von Planungspositionen
 

@@ -3,13 +3,13 @@ title: "Budgetplanungs-Begründungsdokumente"
 description: "Begründungsdokumente ermöglichen eine Erläuterung für diese Anfordern eines Budgets, um zu erläutern bereit, warum ein bestimmtes Budget erforderlich ist."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 259594
 ms.assetid: 52576fad-32b9-48f2-8197-c11ec313fc29
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6178addb9226912feb1974793525ab4ba9441193
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d23c0e1725a39d25d2be8971f541b2c31bbe859
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -46,7 +46,7 @@ Eine Budgetplanvorlage wird vom Budget-Manager in Microsoft Word erstellt und zu
 
 1.  Klicken Sie auf **Entwurf** -im Microsoft Dynamics Office Add-In, nachdem Sie sich angemeldet haben.
 2.  Für Kopfdaten verwenden Sie die Schaltfläche **Felder hinzufügen**.
-3.  Wählen Sie die Entitätsdatenquelle von BudgetPlanJustification aus, und klicken Sie auf **Weiter**. **Hinweis:** Diese Entität ist für alle Begründungsdokumente erforderlich. Andere Entitäten können verwendet werden, aber der Upload zurück an Microsoft Dynamics 365 for Operations schlägt fehl, wenn diese Entität nicht einbezogen wird.
+3.  Wählen Sie die Entitätsdatenquelle von BudgetPlanJustification aus, und klicken Sie auf **Weiter**. **Hinweis:** Diese Entität ist für alle Begründungsdokumente erforderlich. Andere Entitäten können verwendet werden, aber der Upload zurück an der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations schlägt fehl, wenn diese Entität nicht einbezogen wird.
 4.  Fügen Sie BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter und DocumentNumber Bezeichnungen und Werte im Word-Dokument hinzu. **Hinweis**: Sie können eigene benutzerdefinierten Beschriftungen verwenden, statt die Standardetiketts, sofern erforderlich.
 5.  Klicken Sie **Fertig**, um den Kopfbereich abzuschließen.
 6.  Für Positionsebenedetail von Budgetplanbeträgen, klicken Sie auf **Tabelle hinzufügen**
@@ -57,7 +57,7 @@ Eine Budgetplanvorlage wird vom Budget-Manager in Microsoft Word erstellt und zu
 
 ##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Richten Sie den Budgetplanungsprozess ein, den Sie mit der Begründungsvorlage verwenden möchten.
 
-1.  In Microsoft Dynamics 365 for Operations gehen Sie zu **Planung** &gt; **Einstellungen**  &gt;  **Budgetplanung** &gt; **Begründungsdokumentvorlagen**.
+1.  In Finance and Operations gehen Sie zu **Planung** &gt; **Einstellungen** &gt; **Budgetplanung** &gt; **Begründungsdokumentvorlagen**.
 2.  Klicken Sie auf **Neu** und durchsuchen Sie Ihre neu erstellten Microsoft Word-Dokumente.
 3.  Vorlagenname und Beschreibung eingeben. Klicken Sie auf **OK**.
 4.  Navigieren Sie zu **Budgetierung** &gt; **Einrichtung** &gt; **Budget** **Planung** &gt; **Butgetplanungsprozess**.
@@ -66,8 +66,8 @@ Eine Budgetplanvorlage wird vom Budget-Manager in Microsoft Word erstellt und zu
 
 ##### <a name="edit-and-save-personalized-justification-documents"></a>Bearbeiten und speichern Sie personalisierte Begründungsdokumente
 
-1.  In Dynamics 365 for Operations erstellen Sie einen neuen Budgetplan oder öffnen Sie einen vorhandenen Budgetplan.
-2.  Im Dropdownmenü **Begründung**wählen Sie **Neue Begründung erstellen**.
+1.  In Finance and Operations erstellen Sie einen neuen Budgetplan oder öffnen Sie einen vorhandenen Budgetplan.
+2.  Im Dropdownmenü **Begründung** wählen Sie **Neue Begründung erstellen**.
 3.  Nachdem Sie die Details ausgefüllt haben, laden Sie das personalisierte Dokument aus dem Dropdownmenü **Begründung** hoch.
 
 

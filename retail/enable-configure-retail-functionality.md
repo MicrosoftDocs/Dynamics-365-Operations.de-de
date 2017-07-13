@@ -1,28 +1,29 @@
 ---
 title: Initialisieren Sie Startwertdaten in einer neuen Kleinumgebung
-description: "In diesem Artikel wird beschrieben die Daten, die im Rahmen des Initialisierungsprozesses für Microsoft Dynamics 365 für Einzelhandel - Arbeitsgänge erstellt wird."
+description: "In diesem Artikel werden die Daten beschrieben , die im Rahmen des Initialisierungsprozesses für Microsoft Dynamics 365 for Retail erstellt werden."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 49621
 ms.assetid: 4dc762eb-190e-4485-8f55-b0cafc81bc37
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 534c9ab0f4d95f42d09f35d3197a2258c8d39526
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 0ee002d733882734c9f5a21e0467cacd1b3ff318
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -32,12 +33,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-In diesem Artikel wird beschrieben die Daten, die im Rahmen des Initialisierungsprozesses für Microsoft Dynamics 365 für Einzelhandel - Arbeitsgänge erstellt wird.
+In diesem Artikel werden die Daten beschrieben , die im Rahmen des Initialisierungsprozesses für Microsoft Dynamics 365 for Retail erstellt werden.
 
 Nachdem die Einzelhandelslösung über Microsoft Dynamics Lifecycle Services (LCS) bereitgestellt wurde, müssen Sie die Einzelhandelskonfiguration initialisieren, um die grundlegenden Konfigurationsdaten zu erstellen. **Wichtig:** Bevor Sie die Einzelhandelskonfiguration initialisieren, überprüfen Sie, ob Sie eine Sprache und eine Postadresse für jede juristische Person angegeben haben, für die Sie Einzelhandelsgeschäfte einrichten werden. Dieser Schritt muss für jede juristische Person abgeschlossen werden, die Sie für Einzelhandel verwenden. Um die Einzelhandelskonfiguration zu initialisieren, führen Sie die folgenden Schritte aus:
 
-1.  Start des Dynamics 365 for Operations Client
-2.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Zentralverwaltungseinrichtun** &gt; **Parameter** &gt; **Einzelhandelsparamete**.
+1.  Start des Dynamics 365 for Retail-Client
+2.  Klicken Sie auf **Einzelhandel** &gt; **Zentralverwaltungseinrichtun** &gt; **Parameter** &gt; **Einzelhandelsparamete**.
 3.  Klicken Sie auf **Initialisieren**.
 
 Durch die Initialisierung werden die folgenden Standardkonfigurationsdaten erstellt:
@@ -54,7 +55,7 @@ Durch die Initialisierung werden die folgenden Standardkonfigurationsdaten erste
 -   Entitätsprüfungsvorlagen
 -   Batchauftrag, um den Commerce Data Exchange-Sitzungsverlauf zu bereinigen
 
-Darüber hinaus ist das Protokollieren in Zusammenhang mit der Zahlungskartenindustrie (PCI) für die Dynamics 365 Operations Datenbank aktiviert. **Hinweis:** Es gibt eine Option, um das Einzelhandel-Steuerprogramm separat zu konfigurieren. Mit dieser Option können Sie die Einzelhandel-Steuerprogramm-Konfiguration auf die Standardeinstellungen zurücksetzen. Nachdem die Initialisierung abgeschlossen wurde, müssen Sie zusätzliche Einzelhandelsdaten konfigurieren. Nachfolgend finden Sie einige Beispiele:
+Darüber hinaus ist das Protokollieren in Zusammenhang mit der Zahlungskartenindustrie (PCI) für die Dynamics 365 Retail- Datenbank aktiviert. **Hinweis:** Es gibt eine Option, um das Einzelhandel-Steuerprogramm separat zu konfigurieren. Mit dieser Option können Sie die Einzelhandel-Steuerprogramm-Konfiguration auf die Standardeinstellungen zurücksetzen. Nachdem die Initialisierung abgeschlossen wurde, müssen Sie zusätzliche Einzelhandelsdaten konfigurieren. Nachfolgend finden Sie einige Beispiele:
 
 -   Einzelhandelsparameter
 -   Einzelhandel-Steuerprogramm-Parameter

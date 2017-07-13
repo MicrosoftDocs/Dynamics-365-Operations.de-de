@@ -3,14 +3,14 @@ title: "Veröffentlicht von Erfassungspositionen und Dokumente aus Excel"
 description: "In diesem Thema wird erläutert, wie Positionen für allgemeine Erfassungen aus Microsoft Excel veröffentlicht. Es umfasst Informationen zu verschiedenen Vorlagen, die Sie verwenden können, abhängig vom Buchungstyp, den Sie eingeben."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62213
 ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a43bf66de7602aa9fb47925996ec5b979e1f8dac
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1fed8d162a37736883365fa765a059e5beff06be
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -48,9 +48,9 @@ Benutzer können Positionen für Finanzerfassungen aus Microsoft Excel eingeben 
 | Debitorzahlungserfassung | Konto: Debitoren-Gegenkonto: Sachkonto, Bank-Intercompany wird unterstützt.                                               | Debitorzahlungserfassung                                                                |
 | Projektausgabenerfassung  | Konto: Projekt, Sachkonto, Debitor, Kreditor, Bank-Gegenkonto: Projekt, Sachkonto, Debitor, Kreditor-Intercompany wird unterstützt. | Ausgaben der allgemeinen Erfassung unter (Projektverwaltung und- verrechnung)                       |
 
-Wenn die Positionen veröffentlicht werden, sie werden geprüft, um sicherzustellen, dass sie mit den Regeln entsprechen, die den in Finanzerfassungen eingerichtet werden. Nachdem die veröffentlicht Positionen sind, können Benutzer die Belege von Microsoft Dynamics 365 for Operations bearbeiten oder buchen. 
+Wenn die Positionen veröffentlicht werden, sie werden geprüft, um sicherzustellen, dass sie mit den Regeln entsprechen, die den in Finanzerfassungen eingerichtet werden. Nachdem die Positionen veröffentlicht sind, können Benutzer die Belege von Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, bearbeiten oder buchen. 
 
-Um Finanzdimensionen einer Vorlage hinzugefügt werden soll, sind zusätzliche Änderungen erforderlich. Weitere Informationen finden Sie unter [Dimensions zur Microsoft Excel-Vorlage hinzufügen](/dynamics365/operations/dev-itpro/financial/add-dimensions-excel-templates). Nachdem sich mit Dimensionen befassen Entität hinzugefügt wurden, werden sie im Excel-Designer verfügbar und können zur Vorlage hinzugefügt werden.
+Um Finanzdimensionen einer Vorlage hinzugefügt werden soll, sind zusätzliche Änderungen erforderlich. Weitere Informationen finden Sie unter [Dimensions zur Microsoft Excel-Vorlage hinzufügen](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates). Nachdem sich mit Dimensionen befassen Entität hinzugefügt wurden, werden sie im Excel-Designer verfügbar und können zur Vorlage hinzugefügt werden.
 
 
 

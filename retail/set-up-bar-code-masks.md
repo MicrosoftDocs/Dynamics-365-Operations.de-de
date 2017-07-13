@@ -3,25 +3,27 @@ title: Einrichten von Strichcodemasken
 description: In diesem Thema wird beschrieben, wie Strichcode-Maskenzeichen Strichcodemasken eingerichtet und wie Strichcodemasken zu Strichcodes zugeordnet werden.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7b71cbe75f2d7e8f20201e8fa50df8ea1021c4de
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 958cac2e85ae7fa514f6f26cbb6178d8fdec9783
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -36,7 +38,7 @@ In diesem Thema wird beschrieben, wie Strichcode-Maskenzeichen Strichcodemasken 
 <a name="set-up-bar-code-mask-characters"></a>Einrichten von Strichcode-Maskenzeichen
 -------------------------------
 
-Strichcodemasken werden verwendet, um Strichcodes erstellen und Strichcodes schnell erkennen, die in die Verkaufsstelle (POS) gescannt werden. Masken bestehen aus Zeichen, die als Platzhalter auftreten, die das Format der Strichcodes angeben, die erstellt werden. Wenn Sie eine Strichcodemaske zu konfigurieren, müssen Ihnen Strichcode-Maskenzeichen einrichten. Navigieren Sie zu **Einzelhandel und Handel** &gt; **Lagerverwaltung** &gt; **Strichcodes und Beschriftungen** &gt; **Strichcodeeinstellung**. Klicken Sie auf **Neu**, um ein neues Strichcode-Maskenzeichen zu erstellen. Maskenzeichen können erstellt werden, um den nächsten Strichcodedaten anzugeben.
+Strichcodemasken werden verwendet, um Strichcodes erstellen und Strichcodes schnell erkennen, die in die Verkaufsstelle (POS) gescannt werden. Masken bestehen aus Zeichen, die als Platzhalter auftreten, die das Format der Strichcodes angeben, die erstellt werden. Wenn Sie eine Strichcodemaske zu konfigurieren, müssen Ihnen Strichcode-Maskenzeichen einrichten. Navigieren Sie zu **Einzelhandel** &gt; **Lagerverwaltung** &gt; **Strichcodes und Beschriftungen** &gt; **Strichcodeeinstellung**. Klicken Sie auf **Neu**, um ein neues Strichcode-Maskenzeichen zu erstellen. Maskenzeichen können erstellt werden, um den nächsten Strichcodedaten anzugeben.
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -53,12 +55,13 @@ Strichcodemasken werden verwendet, um Strichcodes erstellen und Strichcodes schn
 | **Mitarbeiter**         | Gibt Strichcodesegment für die Mitarbeiterkennung an, für die Anmeldung des Strichcodes POS verwendet wird.                                  |
 | **Debitor**         | Gibt das Debitorkennungssegment an.                                                                                  |
 | **Dateneintrag**       | *Nicht implementiert*                                                                                          |
-| **Rabattcode**    | Gibt den Skontocode für einen Strichcode für an, der verwendet wird, um dem Rabatt eine Verkaufsstellenbuchung hinzuzufügen             |
+| **Rabattcode**    | *Abgeschrieben* ab Dynamics 365 for Retail, Frühling 2017. Früher: Gibt den Skontocode für einen Strichcode an, der verwendet wird, um dem Rabatt eine Verkaufsstellenbuchung .hinzuzufügen                                                                   |
+| **Couponcode**      | Legt den Couponcode für einen Strichcode fest, das verwendet wird, um dem Rabatt einen Kleinauftrag hinzuzufügen. Dies hat den Skontocode ersetzt.     |
 | **Geschenkkarte**        | Gibt eine Geschenkkartennummer beim Abgang oder Zahlung per Geschenkkarte an.                                               |
 | **Treuekarte**     | Fügt einen Debitor mit Kundentreue der Buchung hinzu und kann beim Zahlen nach Treue verwendet werden.                             |
 
 ## <a name="define-bar-code-masks"></a>Definieren von Strichcodemasken
-Nachdem Strichcode-Maskenzeichen für die erforderlichen Strichcodemasken angegeben sind, wechseln Sie zu **Einzelhandel und Handel** &gt; **Lagerverwaltung** &gt; **Strichcodes und Beschriftungen** &gt; **Strichcodemaske Einstellungen**. Auf dieser Seite können Strichcodemasken können Sie definieren, durch die zuvor angegebenen Zeichen verwenden. Diese Strichcodemasken werden verwendet, wenn von Strichcodes, generiert und erleichtern außerdem, Strichcodes zu identifizieren, die am Point-of-Sale gescannt werden.
+Nachdem Strichcode-Maskenzeichen für die erforderlichen Strichcodemasken angegeben sind, wechseln Sie zu **Einzelhandel** &gt; **Lagerverwaltung** &gt; **Strichcodes und Beschriftungen** &gt; **Strichcodemaske Einstellungen**. Auf dieser Seite können Strichcodemasken können Sie definieren, durch die zuvor angegebenen Zeichen verwenden. Diese Strichcodemasken werden verwendet, wenn von Strichcodes, generiert und erleichtern außerdem, Strichcodes zu identifizieren, die am Point-of-Sale gescannt werden.
 
 1.  Klicken Sie auf **Neu**, um ein neues Strichcode-Maske zu erstellen.
 2.  Geben Sie Werte in **Maskenkennung** und **Beschreibung** ein, und wählen Sie dann eine Strichcodemaske Verbrauchstyp im **Typ** Feld aus.
@@ -71,7 +74,7 @@ Als Beispiel eine Strichcodemaske mit Maskenkennung "Produkt" zu erstellen, gebe
 2.  Wählen Sie einen Strichcodestandard (z. B. "Code 39")
 3.  Stellen Sie einen Präfix bereit, um den Strichcode zu indenfizieren. Beispiel: "22"
 4.  Hinzufügen eines Maskensegment. Das "Produkt" Maskensegment ist aktiviert.
-5.  Erstellen Sie eine Länge für das Produktsegment, beispielsweise "10". Die Länge soll die Länge einer Produktkennung übereinstimmen, die im Shop bzw. am häufigsten verwendet wird. Mit einer Maske wird als Vorschau im Abschnitt **Allgemein** unter **Maske**angezeigt.
+5.  Erstellen Sie eine Länge für das Produktsegment, beispielsweise "10". Die Länge soll die Länge einer Produktkennung übereinstimmen, die im Shop bzw. am häufigsten verwendet wird. Mit einer Maske wird als Vorschau im Abschnitt **Allgemein** unter **Maske** angezeigt.
 
 ## <a name="assign-bar-code-masks-to-bar-codes"></a>Zuweisen von Strichcodemasken zu Strichcodes
 Strichcodemasken müssen den Strichcodes zugewiesen werden, bevor sie verwendet werden können. Ausgehend vom vorherigen Beispiel, um die Strichcodemaske zu einem Strichcode zuzuweisen, gehen Sie folgendermaßen vor:

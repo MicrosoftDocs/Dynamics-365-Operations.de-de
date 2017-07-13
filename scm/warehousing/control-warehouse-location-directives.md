@@ -3,14 +3,14 @@ title: Steuern von Lagerarbeit, indem Sie Arbeitsvorlagen und Lagerplatzrichtlin
 description: "In diesem Artikel wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen wie und wo Arbeit am Lagerort ausgeführt wird."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72921
 ms.assetid: 377ab8af-5b0c-4b5e-a387-06ac1e1820c0
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9d0ad4f64ee84da4e90dfa1525ebb5ff9fec4063
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: f8bcdcf70089aaed06ba0f88cdbec8dfdf9121d1
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 In diesem Artikel wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen wie und wo Arbeit am Lagerort ausgeführt wird.
 
-Die Anweisungen, die Lagerarbeiter auf einem mobilen Gerät erhalten, werden durch die Arbeitsvorlagen bestimmt, die Sie in Microsoft Dynamics 365 for Operations einrichten, um die verschiedenen Lagerortprozesse und -aufgaben zu definieren. Arbeitsvorlagen bestimmen, wie die Arbeit für jeden Lagerortprozess ausgeführt wird. Wenn Sie eine Lagerplatzrichtlinie mit Arbeitsvorlagen verknüpfen, können Sie sicherstellen, dass Arbeit in bestimmten physischen Bereichen der Lagerorte erfolgt.
+Die Anweisungen, die Lagerarbeiter auf einem mobilen Gerät erhalten, werden durch die Arbeitsvorlagen bestimmt, die Sie in Microsoft Dynamics 365 for Finance and Operations einrichten, um die verschiedenen Lagerortprozesse und -aufgaben zu definieren. Arbeitsvorlagen bestimmen, wie die Arbeit für jeden Lagerortprozess ausgeführt wird. Wenn Sie eine Lagerplatzrichtlinie mit Arbeitsvorlagen verknüpfen, können Sie sicherstellen, dass Arbeit in bestimmten physischen Bereichen der Lagerorte erfolgt.
 
 ## <a name="work-templates"></a>Arbeitsvorlagen
 Auf der Seite **Arbeitsvorlagen** können Sie die Arbeitsvorgänge definieren, die am Lagerort ausgeführt werden müssen. In der Regel bestehen Lagerortarbeitsvorgänge aus folgenden Aktivitäten: Ein Lagerarbeiter entnimmt verfügbaren Lagerbestand an einem Lagerplatz und legt anschließend den entnommenen Bestand an einem anderen Lagerplatz ab. 
@@ -57,7 +57,7 @@ Was Arbeitsvorlagen angeht, können Sie eine Abfrage einrichten, um festzustelle
 
 Die richtungweisenden Positionen des Lagerplatzes setzen zusätzliche Einschränkungen für die Anwendung für die Regel für das Auffinden des Lagerplatzes fest. Sie können eine minimale Menge und eine maximale Menge angeben, für die die Richtlinie gelten soll, und Sie können angeben, dass die Richtlinie für eine bestimmte Lagereinheit sein soll. Wenn beispielsweise die Maßeinheit Paletten ist, können Artikel auf Paletten an einem bestimmten Lagerplatz eingelagert werden. Sie können auch angeben, ob die Menge über mehrere Lagerplätze verteilt werden kann. Wie der richtungweisende Kopf des Lagerplatzes hat jede richtungweisende Position des Lagerplatzes eine laufende Nummer, die die Reihenfolge bestimmt, in der die Positionen bewertet werden. 
 
-Lagerplatzdirektive haben eine zusätzliche Genauigkeitsebene: *Lagerplatzdirektivenaktivitäten*. Sie können Lagerplatzrichtlinien-Aktivitäten für jede Position definieren. Erläuternd, eine laufende Nummer wird verwendet, um die Reihenfolge festzulegen, in der die Aktivitäten anfallen. Auf dieser Ebene können Sie eine Abfrage einrichten, um festzulegen, wo sich der optimale Lagerplatz am Lagerort befindet. Sie können auch vordefinierte **Strategieeinstellungen**verwenden, um einen optimalen Lagerplatz zu finden.
+Lagerplatzdirektive haben eine zusätzliche Genauigkeitsebene: *Lagerplatzdirektivenaktivitäten*. Sie können Lagerplatzrichtlinien-Aktivitäten für jede Position definieren. Erläuternd, eine laufende Nummer wird verwendet, um die Reihenfolge festzulegen, in der die Aktivitäten anfallen. Auf dieser Ebene können Sie eine Abfrage einrichten, um festzulegen, wo sich der optimale Lagerplatz am Lagerort befindet. Sie können auch vordefinierte **Strategieeinstellungen** verwenden, um einen optimalen Lagerplatz zu finden.
 
 ### <a name="example-of-the-use-of-location-directives"></a>Beispiel für die Verwendung von Lagerplatzrichtlinien
 

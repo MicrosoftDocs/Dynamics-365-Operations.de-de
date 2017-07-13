@@ -3,14 +3,14 @@ title: Kostenrechnungsterminologie
 description: "Dieses Thema definiert die Schlüsselbegriffe, die in der Kostenrechnung verwendet werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ce12337c22542aea2002ffc5abd09e4f4d770c1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ Dieses Thema definiert die Schlüsselbegriffe, die in der Kostenrechnung verwend
 
 **Kostenrechnung**
 
-Mit der Kostenrechnung können Sie Daten aus verschiedenen Quellen erfassen, wie beispielsweise das Hauptbuch, untergeordnete Sachkonten, Budgets und statistische Informationen. Sie können anschließend Kostendaten analysieren, zusammenfassen und auswerten, sodass die Verwaltung die bestmöglichen Entscheidungen bei Preisaktualisierungen, Budgets, Kostenkontrolle usw. treffen kann. Die Quelldaten, die für die Kostenanalyse verwendet werden, werden unabhängig in der Kostenrechnung gehandhabt. Daher wirken sich Aktualisierungen in der Kostenrechnung nicht auf die Quelldaten aus. Wenn Sie jedoch Kostendaten aus verschiedenen Quellen erfassen und insbesondere wenn Sie die Hauptkonten vom Hauptbuch in Microsoft Dynamics 365 for Operations als Kostenelemente importieren, gibt es eine Datenredundanz, da dieselben Daten im Hauptbuch und in der Kostenrechnung vorhanden sind. Diese Redundanz ist erforderlich, da Sie Finanzverwaltung für die externe Berichterstellung und Kostenrechnung für die interne Berichterstellung verwenden.
+Mit der Kostenrechnung können Sie Daten aus verschiedenen Quellen erfassen, wie beispielsweise das Hauptbuch, untergeordnete Sachkonten, Budgets und statistische Informationen. Sie können anschließend Kostendaten analysieren, zusammenfassen und auswerten, sodass die Verwaltung die bestmöglichen Entscheidungen bei Preisaktualisierungen, Budgets, Kostenkontrolle usw. treffen kann. Die Quelldaten, die für die Kostenanalyse verwendet werden, werden unabhängig in der Kostenrechnung gehandhabt. Daher wirken sich Aktualisierungen in der Kostenrechnung nicht auf die Quelldaten aus. Wenn Sie jedoch Kostendaten aus verschiedenen Quellen erfassen und insbesondere wenn Sie die Hauptkonten vom Hauptbuch in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, als Kostenelemente importieren, gibt es eine Datenredundanz, da dieselben Daten im Hauptbuch und in der Kostenrechnung vorhanden sind. Diese Redundanz ist erforderlich, da Sie Finanzverwaltung für die externe Berichterstellung und Kostenrechnung für die interne Berichterstellung verwenden.
 
 **Kostenrechnungssachkonto**
 

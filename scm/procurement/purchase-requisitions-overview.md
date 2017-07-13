@@ -3,14 +3,14 @@ title: "Übersicht über Bestellanforderung"
 description: Dieser Artikel beschreibt den Bestellanforderungsworkflow und die verschiedenen Statuswerte, die eine Bestellanforderung haben kann.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 38e7fba3fbd12de3a1cd9ac7b1c627834978ba30
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8c60d870d0ca178af84919e5ebaaa13769b46f8a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -40,7 +40,7 @@ Nachdem eine Bestellanforderung genehmigt wurde, kann auf deren Grundlage eine B
 ## <a name="creating-purchase-requisitions"></a>Erstellen von Bestellanforderungen
 Sie können eine Bestellanforderung auf der Seite **Eigene Bestellanforderungen** erstellen und die Artikel und Dienstleistungen auswählen, die Sie benötigen. Sie können Artikel aus einem Beschaffungskatalog auswählen, den Ihre Organisation erstellt hat, oder Artikel anfordern, die nicht im Katalog enthalten sind, indem Sie eine Beschaffungskategorie auswählen und die Produktdetails eingeben.  
 
-Bevor Sie eine Bestellanforderung zur Prüfung übermitteln können, müssen Workflows im Microsoft Dynamics 365 for Operations konfiguriert werden. Sie verwenden einen Workflow, um eine Bestellanforderung vom Anfangsstatus **Entwurf** bis zum endgültigen Status **Genehmigt** durch den Prüfungsprozess zu leiten.
+Bevor Sie eine Bestellanforderung zur Prüfung übermitteln können, müssen Workflows im Microsoft Dynamics 365 for Finance and Operations konfiguriert werden. Sie verwenden einen Workflow, um eine Bestellanforderung vom Anfangsstatus **Entwurf** bis zum endgültigen Status **Genehmigt** durch den Prüfungsprozess zu leiten.
 
 ### <a name="purchase-requisition-statuses"></a>Bestellanforderungsstatus
 
@@ -143,7 +143,7 @@ In den Beschaffungsrichtlinien können Sie die Anforderungszwecke steuern, die v
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Anforderungen, die Verbrauch als Zweck haben
 
-Eine Anforderung, die Verbrauch als Zweck hat, repräsentiert einen Bedarf für Artikel oder Dienstleistungen, die intern von Ihrer Organisation verwendet werden. Der Bedarf, der durch diese Art der Anforderung entsteht, wird immer durch eine Bestellung erfüllt. Wenn Microsoft Dynamics 365 for Operations eingerichtet ist, um Bestellungen automatisch zu generieren, werden Bestellungen erstellt, nachdem die Bestellanforderung genehmigt wurde.
+Eine Anforderung, die Verbrauch als Zweck hat, repräsentiert einen Bedarf für Artikel oder Dienstleistungen, die intern von Ihrer Organisation verwendet werden. Der Bedarf, der durch diese Art der Anforderung entsteht, wird immer durch eine Bestellung erfüllt. Wenn Microsoft Dynamics 365 for Finance and Operations eingerichtet ist, um Bestellungen automatisch zu generieren, werden Bestellungen erstellt, nachdem die Bestellanforderung genehmigt wurde.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Anforderungen, die Auffüllung als Zweck haben
 

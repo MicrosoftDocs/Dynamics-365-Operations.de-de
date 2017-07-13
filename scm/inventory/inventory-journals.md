@@ -3,14 +3,14 @@ title: Lagererfassungen
 description: "In diesem Artikel wird beschrieben, wie Sie die Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandtransaktionen zu buchen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d947b184fd61af3b997182f0a39a8c13c58d6a5a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fa629b4b8f7fcbd15ee89bc66cbc0bd7ca45215c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,10 +30,12 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
+
 
 In diesem Artikel wird beschrieben, wie Sie die Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandtransaktionen zu buchen. 
 
-Die Bestanderfassungen in Microsoft Dynamics 365 for Operations AX werden verwendet, um physische Lagerbuchungen unterschiedlicher Arten, wie Abgangs-und Zugangsbuchungen Lagerumlagerungen, die Erstellung von Stücklisten (BOMs) zu buchen und zur Abstimmung des physischen Bestands. Alle diese Lagererfassungen werden auf ähnliche Weise verwendet, sie werden jedoch in verschiedene Arten unterteilt.
+Die Bestanderfassungen in Microsoft Dynamics 365 for Finance and Operations werden verwendet, um physische Lagerbuchungen unterschiedlicher Arten, wie Abgangs-und Zugangsbuchungen, Lagerumlagerungen, die Erstellung von Stücklisten (BOMs) zu buchen und zur Abstimmung des physischen Bestands. Alle diese Lagererfassungen werden auf ähnliche Weise verwendet, sie werden jedoch in verschiedene Arten unterteilt.
 
 ## <a name="types-of-inventory-journals"></a>Arten der Lagererfassung
 Die folgenden Lagererfassungstypen stehen zur Verfügung:
@@ -68,7 +70,7 @@ Bei der Fertigmeldung einer Stückliste, können Sie eine Stücklistenerfassung 
 
 ### <a name="item-arrival"></a>Wareneingang
 
-Sie können die Wareneingangserfassung verwenden, um die Erfassung von Artikelzugängen zu registrieren (beispielsweise aus Bestellungen). Eine Wareneingangserfassung kann im Rahmen der Eingangsverwaltung auf der Seite **Wareneingangsübersicht** erstellt werden, oder Sie können manuell einen Erfassungseintrag auf der Seite **Wareneingang**erstellen. Wenn Sie die Wareneingangserfassung aktivieren, um nach Entnahmeorte zu suchen, überprüft Dynamics 365 for Operatons die Lagerplätze für eingegangene Artikel und generiert Lagerplatzziele für die eingehenden Artikel, wenn es Platz findet.
+Sie können die Wareneingangserfassung verwenden, um die Erfassung von Artikelzugängen zu registrieren (beispielsweise aus Bestellungen). Eine Wareneingangserfassung kann im Rahmen der Eingangsverwaltung auf der Seite **Wareneingangsübersicht** erstellt werden, oder Sie können manuell einen Erfassungseintrag auf der Seite **Wareneingang** erstellen. Wenn Sie die Wareneingangserfassung aktivieren, um nach Entnahmeorte zu suchen, überprüft Finance and Operations die Lagerplätze für eingegangene Artikel und generiert Lagerplatzziele für die eingehenden Artikel, wenn es Platz findet.
 
 ### <a name="production-input"></a>Produktions-Wareneingang
 

@@ -1,16 +1,16 @@
 ---
 title: Kreditorenzusammenarbeit mit Debitoren
-description: "In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um in Microsoft Dynamics 365 for Operations mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen."
+description: "In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um in Microsoft Dynamics 365 for Finance and Operations mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1649014855d8d5e0f1225a661c9b6bae6490f597
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um in Microsoft Dynamics 365 for Operations mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen.
+In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um in Microsoft Dynamics 365 for Finance and Operations mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen.
 
-In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft Dynamics 365 for Operations zu arbeiten. Es enthält zudem Informationen darüber, wie Bestellungen überwacht und auf diese reagiert wird und wie Lieferbestand überwacht wird. Es ist auch möglich, die Kreditor-Kooperation für die Arbeit mit Rechnungen zu verwenden. Weitere Informationen finden Sie unter [Arbeitsbereich für Kreditor-Kooperationsrechungen](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft for Finance and Operations zu arbeiten. Es enthält zudem Informationen darüber, wie Bestellungen überwacht und auf diese reagiert wird und wie Lieferbestand überwacht wird. Es ist auch möglich, die Kreditor-Kooperation für die Arbeit mit Rechnungen zu verwenden. Weitere Informationen finden Sie unter [Arbeitsbereich für Kreditor-Kooperationsrechungen](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
 ## <a name="working-with-purchase-orders"></a>Mit Bestellungen arbeiten
-Der Arbeitsbereich**Bestellungsbestätig** ermöglicht Ihnen, auf Bestellungen zu antworten, die zur Prüfung gesendet wurden. Er ermöglicht es Ihnen außerdem, Informationen zu Bestellungen, die eine Aktivität vom Debitor erfordern und Bestellungen, die bestätigt wurden aber noch offen sind, anzuzeigen. Es gibt drei Listen im Arbeitsbereich **Bestellungsbestätigung**:
+Der Arbeitsbereich **Bestellungsbestätig** ermöglicht Ihnen, auf Bestellungen zu antworten, die zur Prüfung gesendet wurden. Er ermöglicht es Ihnen außerdem, Informationen zu Bestellungen, die eine Aktivität vom Debitor erfordern und Bestellungen, die bestätigt wurden aber noch offen sind, anzuzeigen. Es gibt drei Listen im Arbeitsbereich **Bestellungsbestätigung**:
 
 -   **Bestellungen zur Prüfung** – Diese Liste enthält Bestellungen, die Ihnen gesendet wurden und eine Antwort von Ihnen erfordern. Nachdem Sie reagiert haben, wird die Bestellung nicht mehr in der Liste angezeigt. Wenn der Debitor Ihnen eine neue Version der Bestellung sendet, bevor Sie auf die frühere geantwortet haben, wird nur die aktuelle Version angezeigt.
 -   **Debitorenaktivität abwarten** - Diese Liste ermöglicht es Ihnen, Bestellungen anzuzeigen, auf die Sie geantwortet haben, die aber vom Debitor noch nicht bestätigt wurden. Wenn Sie die Bestellung akzeptiert haben, können Sie sie in dieser Liste überwachen, bis der Status auf **bestätigt** ändert. Wenn Sie die Bestellung zurückgewiesen oder sie mit Änderungen akzeptiert haben, können Sie die Bestellung hier überwachen, bis der Debitor eine neue Version übermittelt.

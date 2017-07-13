@@ -3,7 +3,7 @@ title: "Budgetplanungsvorlage für Excel"
 description: "In diesem Thema wird beschrieben, wie Microsoft Excel-Vorlagen erstellt werden, die mit Budgetplänen verwendet werden können."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 93aa0aeffad0411542f36e27745f63198c4438b2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -35,7 +35,7 @@ In diesem Thema wird beschrieben, wie Microsoft Excel-Vorlagen erstellt werden, 
 Dieses Thema zeigt, wie Excel-Vorlagen erstellt werden, die mit Budgetplänen mithilfe des Standarddemodatsatzes und der Benutzer Admin-Anmeldung verwendet werden. Weitere Informationen zu Budgetplanung, finden Sie unter [Budgetplanungsüberblick](budget-planning-overview-configuration.md) Sie können auch auf das Lernprogramm [Budgetplanung 101](budget-plan.md) zugreifen, um die Grundeinstellungsmodulkonfigurations- und -Verwendungsprinzipien zu ermitteln.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Erstellt ein Arbeitsblatt mithilfe der Budgetplandokumentvorlage.
-Budgetplandokumente können mithilfe einer oder mehrerer Layouts angezeigt und bearbeitet werden. Jedes Layout kann eine zugeordnete Budgetplandokumentvorlage haben, um die Budgetplandaten in einer Excel-Kalkulationstabelle anzuzeigen und zu bearbeiten. In diesem Thema wird eine Budgetplandokumentvorlage mit einer vorhandenen Layoutkonfiguration generiert. Öffnen Sie**Budgetplanliste** (**Planung**&gt; **Budgetplan**). Klicken Sie auf **Neu**, um einen neuen Budgetplan zu erstellen. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+Budgetplandokumente können mithilfe einer oder mehrerer Layouts angezeigt und bearbeitet werden. Jedes Layout kann eine zugeordnete Budgetplandokumentvorlage haben, um die Budgetplandaten in einer Excel-Kalkulationstabelle anzuzeigen und zu bearbeiten. In diesem Thema wird eine Budgetplandokumentvorlage mit einer vorhandenen Layoutkonfiguration generiert. Öffnen Sie **Budgetplanliste** (**Planung**&gt; **Budgetplan**). Klicken Sie auf **Neu**, um einen neuen Budgetplan zu erstellen. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Mithilfe der Zeilenoption **Hinzufügen** fügen Sie Zeilen hinzu. **Layouts** klicken, um die Budgetplandokument-Layoutkonfiguration anzuzeigen. 
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
@@ -50,7 +50,7 @@ Die Excel-Vorlage enthält alle Elemente aus dem Budgetplandokumentlayout, in de
 [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> Um mögliche Probleme beim Anzeigen und Bearbeiten von Budgetplandaten mithilfe von Excel zu vermeiden, sollte der Benutzer in Dynamics 365 for Operations und in Microsoft Dynamics Office Add-in Data Connector.angemeldet sein.
+> Um mögliche Probleme beim Anzeigen und Bearbeiten von Budgetplandaten mithilfe von Excel zu vermeiden, sollte der Benutzer in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations und in Microsoft Dynamics Office Add-in Data Connector angemeldet sein.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Der Budgetplandokumentvorlage eine Kopfzeile hinzufügen
 Um weitere Kopfzeilen hinzuzufügen, wählen Sie die oberste Zele in der Excel-Datei und fügen Sie die leere Zeile hinzu. Klicken Sie im **Datenkonnektor** auf **Design**, um Kopfzeilenfelder dem Excel hinzuzufügen.
@@ -79,11 +79,11 @@ Die ausgewählte Feldgruppe zeigt die Spalten an, die in der Vorlage verfügbar 
 [![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Um die Formel zu definieren, erstellen Sie die Formel im Arbeitsblatt und kopieren sie dann in das Fenster**Design**. Eine an Dynamics 365 for Operations gebundene Tabelle ist in der Regel ein "AXTable1". Um beispielsweise die Anforderung Q1 zusammenfassen: Fordern Sie die Spalten Q4 in der Tabelle an, die Formel  = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
+> Um die Formel zu definieren, erstellen Sie die Formel im Arbeitsblatt und kopieren sie dann in das Fenster **Design**. Eine an Finance and Operations gebundene Tabelle ist in der Regel eine "AXTable1". Um beispielsweise die Anforderung Q1 zusammenfassen: Fordern Sie die Spalten Q4 in der Tabelle an, die Formel  = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
-Wiederholen Sie diese Schritte, um die Spalte**Regulierung** hinzuzufügen. Mithilfe der Formel = AxTable1\[Total request\]\*$I$1 für diese Spalte. Dadurch wird der Wert in Zelle I1 multipliziert und die Werte in der Spalte **Anforderung gesamt**, um die Regulierungsbeträge zu berechnen.
+Wiederholen Sie diese Schritte, um die Spalte **Regulierung** hinzuzufügen. Mithilfe der Formel = AxTable1\[Total request\]\*$I$1 für diese Spalte. Dadurch wird der Wert in Zelle I1 multipliziert und die Werte in der Spalte **Anforderung gesamt**, um die Regulierungsbeträge zu berechnen.
 
-Speichern und schließen Sie die Excel-Datei. Kehren Sie zu Dynamics 365 for Operations zurück. Klicken Sie unter **Layouts** auf **Template &gt; hochladen**, um die gespeicherte Excelvorlage für den Budgetplan zu verwenden. 
+Speichern und schließen Sie die Excel-Datei. Kehren Sie zu Finance and Operations zurück. Klicken Sie unter **Layouts** auf **Vorlage &gt; Hochladen**, um die gespeicherte Excel-Vorlage für den Budgetplan zu verwenden. 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 
@@ -94,7 +94,7 @@ Schließen -Sie den **Layouts**-Schieberegler. Im Dokument **Budgetplan** klicke
 ## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Tipps und Tricks für das Erstellen von Budgetplanvorlagen
 ### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Kann ich zusätzliche Datenquellen in eine Budgetplanvorlage hinzufügen und verwendet?
 
-Ja, Sie können das Menü **Design**verwenden, um weitere Entitäten dem gleichen oder anderen Arbeitsblättern der Excel-Tabelle hinzuzufügen. So können Sie die Datenquelle **BudgetPlanProposedProject** hinzufügen, um eine Liste mit vorgeschlagenen Projekten gleichzeitig zu erstellen und zu verwalten, wenn Sie mit Budgetplandaten in Excel arbeiten. Beachten Sie, das große Datenquellenmengen die Leistung der Excel-Arbeitsmappe beeinträchtigen können. 
+Ja, Sie können das Menü **Design** verwenden, um weitere Entitäten dem gleichen oder anderen Arbeitsblättern der Excel-Tabelle hinzuzufügen. So können Sie die Datenquelle **BudgetPlanProposedProject** hinzufügen, um eine Liste mit vorgeschlagenen Projekten gleichzeitig zu erstellen und zu verwalten, wenn Sie mit Budgetplandaten in Excel arbeiten. Beachten Sie, das große Datenquellenmengen die Leistung der Excel-Arbeitsmappe beeinträchtigen können. 
 
 Sie können die Option **Filter** im **Datenkonnektor** hinzufügen, um den Datenquellen die gewünschten Filter hinzuzufügen.
 
@@ -104,7 +104,7 @@ Ja öffnen, die Optionen  **Datenkonnektor**, um die Option **Design** für ande
 
 [![bpt13](./media/bpt13-1024x565.png)](./media/bpt13.png)
 
-Erweitern Sie die **Datenkonnektoroptionen** und deaktivieren das Kontrollkästchen **Design aktivieren**. Dies blendet die Option **Design** vom**Datenkonnektor** aus.
+Erweitern Sie die **Datenkonnektoroptionen** und deaktivieren das Kontrollkästchen **Design aktivieren**. Dies blendet die Option **Design** vom **Datenkonnektor** aus.
 
 [![bpt14](./media/bpt14-1024x592.png)](./media/bpt14.png)
 

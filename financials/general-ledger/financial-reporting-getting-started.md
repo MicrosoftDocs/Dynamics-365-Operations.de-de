@@ -1,16 +1,16 @@
 ---
 title: Finanzberichterstellung
-description: "In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Operations auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen."
+description: "In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 39db754df7edeca414752ce1844d7f9e85df0b36
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fedde78a563939fd7080e748c412c89c71586823
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Operations auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
+In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
 
 <a name="accessing-financial-reporting"></a>Finanzberichterstellung nutzen
 -----------------------------
 
-Sie können das Menü **Finanzberichterstellung** an den folgenden Stellen in Microsoft Dynamics 365 for Operations nutzen:
+Sie können das Menü **Finanzberichterstellung** an den folgenden Stellen in Finance and Operations nutzen:
 
 -   **Hauptbuch** &gt; **Abfragen und Berichte**
 -   **Planung** &gt; **Anfragen und Berichte**  &gt; **Grundlegende Planung**
@@ -83,7 +83,7 @@ Die Finanzberichtsfunktionen stehen Benutzern zur Verfügung, denen die entsprec
 Nachdem Sie ein Benutzer hinzugefügt haben, oder eine Rolle geändert wurde, sollte der Benutzer in der Lage sein, innerhalb weniger Minuten auf die Finanzberichterstellung zuzugreifen. **Hinweis** Die Rolle sysadmin wird allen Rollen in der Finanzberichterstellung hinzugefügt.
 
 ## <a name="default-reports"></a>Standardberichte
-Die Finanzberichterstellung enthält 22 standardmäßige Finanzberichte. Jeder Bericht verwendet die standardmäßigen Hauptkontokategorien in Microsoft Dynamics 365 for Operations. Sie können diese Berichte verwenden oder sie als Ausgangspunkt für Ihre Finanzberichte nutzen. Zusätzlich zu herkömmlichen Finanzaufstellungen (z. B. Einkommensaufstellung und Bilanz) enthalten diese Standardberichte Berichte, die die unterschiedlichen Arten von Finanzberichten aufzeigen, die Sie erstellen können. Jeder Bericht in den folgenden Tabelle ist mit einer Office-Mischungspräsentation über den Bericht verknüpft.
+Die Finanzberichterstellung enthält 22 standardmäßige Finanzberichte. Jeder Bericht verwendet die standardmäßigen Hauptkontokategorien in Finance and Operations. Sie können diese Berichte verwenden oder sie als Ausgangspunkt für Ihre Finanzberichte nutzen. Zusätzlich zu herkömmlichen Finanzaufstellungen (z. B. Einkommensaufstellung und Bilanz) enthalten diese Standardberichte Berichte, die die unterschiedlichen Arten von Finanzberichten aufzeigen, die Sie erstellen können. Jeder Bericht in den folgenden Tabelle ist mit einer Office-Mischungspräsentation über den Bericht verknüpft.
 
 | Standardbericht                                                                                         | Beschreibung                                                                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -114,7 +114,7 @@ Die Finanzberichterstellung enthält 22 standardmäßige Finanzberichte. Jeder B
 Wenn Sie auf das Menü **Finanzberichterstellung** klicken, wird die Liste der standardmäßigen Finanzberichte für das Unternehmen angezeigt. Sie können einen Bericht öffnen oder ändern. Um einen der Standardberichte zu öffnen, wählen Sie den Berichtsname aus. Wenn ein Bericht zum ersten Mal geöffnet wird, wird er automatisch für den vorherigen Monat generiert. Wenn Sie beispielsweise einen Bericht zum ersten Mal im August 2016 öffnen, wird der Bericht zum 31. Juli 2016 generiert. Nach dem Öffnen eines Berichts können Sie ihn durchsuchen, indem Sie Detailinformationen bestimmter Daten anzeigen und Berichtsoptionen ändern.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Finanzberichte erstellen und ändern
-Über die Finanzberichte Liste können Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht ändern. Wenn Sie die erforderlichen Berechtigungen besitzen, können Sie einen neuen Finanzbericht erstellen, indem Sie **Neu** anklicken im Aktivitätsbereich. Ein Berichts-Designer-Programm wird auf Ihr Gerät heruntergeladen. Nachdem der Berichts-Designer startete, können Sie den neuen Bericht erstellen. Nachdem Sie den neuen Bericht gespeichert haben, erscheint er in der Finanzberichtsliste. Die Liste enthält nur Berichte, die für das Unternehmen erstellt wurden, dass Sie in Microsoft 365 for Operations verwenden. Weitere Informationen über den Prozess zum Erstellen und Bearbeiten von Finanzberichten in Dynamics 365 for Operations gehen Sie zu [Blogbeiträge](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) im Blog Dynamics Finanzberichterstellung. **Hinweis:** Der Computer, auf den Sie den Berichts-Designer-Client herunterladen, muss Version 4.6.2 vom Microsoft .NET Frameworks installiert haben. Diese Version von Microsoft .NET Frameworks kann heruntergeladen und eingerichtet werden [von](https://www.microsoft.com/en-us/download/details.aspx?id=53345) Wenn Sie Chrome verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichtsdesigner-Client herunterzuladen. Wenn Sie den privaten Browser verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den privaten Modus aktiviert ist. Sie können auch einen Bericht ändern, der in der Finanzberichtsliste erscheint. Wenn der Bereich um den Berichtsnamen aktiviert ist, klicken Sie im Aktivitätsbereich auf **Bearbeiten**. Das Berichtsdesigner-Programm startet.
+Über die Finanzberichte Liste können Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht ändern. Wenn Sie die erforderlichen Berechtigungen besitzen, können Sie einen neuen Finanzbericht erstellen, indem Sie **Neu** anklicken im Aktivitätsbereich. Ein Berichts-Designer-Programm wird auf Ihr Gerät heruntergeladen. Nachdem der Berichts-Designer startete, können Sie den neuen Bericht erstellen. Nachdem Sie den neuen Bericht gespeichert haben, erscheint er in der Finanzberichtsliste. Die Liste enthält nur Berichte, die für das Unternehmen erstellt wurden, das Sie in Finance and Operations verwenden. Weitere Informationen über den Prozess zum Erstellen und Bearbeiten von Finanzberichten in Finance and Operations finden Sie unter [Blogbeiträge](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) im Blog Dynamics Finanzberichterstellung. **Hinweis:** Der Computer, auf den Sie den Berichts-Designer-Client herunterladen, muss Version 4.6.2 vom Microsoft .NET Frameworks installiert haben. Diese Version von Microsoft .NET Frameworks kann heruntergeladen und eingerichtet werden [von](https://www.microsoft.com/en-us/download/details.aspx?id=53345) Wenn Sie Chrome verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichtsdesigner-Client herunterzuladen. Wenn Sie den privaten Browser verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den privaten Modus aktiviert ist. Sie können auch einen Bericht ändern, der in der Finanzberichtsliste erscheint. Wenn der Bereich um den Berichtsnamen aktiviert ist, klicken Sie im Aktivitätsbereich auf **Bearbeiten**. Das Berichtsdesigner-Programm startet.
 
 <a name="see-also"></a>Siehe auch
 --------

@@ -3,24 +3,24 @@ title: Kostenrechnungsanalyse Power BI Inhalt
 description: "In diesem Thema wird beschrieben, was im Buchhaltungsanalyse Power Bl enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
 ms.search.region: Global
-ms.author: yuyus
+ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ce75a6145bde4a8c33ed785c7d2a60a52416676
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d19276331a4278f44ad14292ed434c49b74d727
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,18 +29,27 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+In diesem Thema wird beschrieben, was im **Buchhaltungsanalyse** Microsoft Power Bl-Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
-In diesem Thema wird beschrieben, was im Buchhaltungsanalyse Power Bl enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+## <a name="overview"></a>Überblick
 
-<a name="overview"></a>Überblick
---------
+Der **Kostenrechnungsanalyse**-Power BI-Inhalt dient den Kostencontrollern oder all jenen, die für die Ausführung der Kostensteuerung in einer Organisation verantwortlich sind. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten. Er verwendet Buchungsdaten aus dem **Kostenrechnungs**-Modul und stellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten nach Kostenträger filtern, um die Kostensteuerung der Organisationseinheiten vorzunehmen, selbst wenn die Organisation mehrere juristische Personen hat. 
 
-Die **Kostenrechnungsanalyse** Microsoft Power BI Inhalt dient für die Kostencontroller oder alle jene, die für die Ausführung der Kostensteuerung für eine Organisation verantwortlich sind. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten. Er verwendet Buchungsdaten aus der Kostenrechnung in Microsoft Dynamics 365 for Operations und erstellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten nach Kostenträger filtern, um die Kostensteuerung der Organisationseinheiten vorzunehmen, selbst wenn die Organisation mehrere juristische Personen hat. Da der **Kostenrechnungsanalyse** Power BI Inhalt Abweichungen zwischen den Istkosten und den budgetierten Kosten hervorhebt, können Manager über die positiven und negativen Trends für ihre Einsatzkräfte informiert werden. Manager können zu den Kostenfaktorhierarchien oder den einzelnen Kostenfaktoren navigieren, sich detaillierte Einblicke verschaffen, wie Kostenabweichungen aufgetreten sind, und dannwirksame Maßnahmen ergreifen. Der **Kostenrechnungsanalyse** Power BI Inhalt ermöglicht es Buchhaltern,  Kosten zu analysieren, um zu sehen, wie Kosten die Kostenträger der gesamten Organisation durchlaufen. Weitere Informationen zur Kostenrechnung finden Sie unter [Startseite Kostenrechnung](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page). Durch das Festlegen der  Zugriffsebenensicherheit in der Kostenrechnung und durch die Kombination mit Zeilenebenensicherheit in Power BI können Sie allen Kostenträgereigentümern Zugriff auf den **Kostenrechnungsanalyse** Power BI Inhalt geben. Alle Daten in den Visualisierungen werden anschließend auf Basis der Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zur Zugriffsebenensicherheit und zur Sicherheit auf Zeilenebene finden Sie unter [Sicherheit für Kostenbuchhaltung für Power BI einrichten](setup-security-cost-accounting-content-pack.md)..
+Da der **Kostenrechnungsanalyse**-Inhalt Abweichungen zwischen den Istkosten und den budgetierten Kosten hervorhebt, können Manager über die positiven und negativen Trends für ihre Einsatzkräfte informiert werden. Manager können zu den Kostenfaktorhierarchien oder den einzelnen Kostenfaktoren Detailinformationen anzeigen. Auf diese Weise können Manager einen detaillierten Einblick erhalten, wie Kostenabweichungen aufgetreten sind, und anschließend wirksame Maßnahmen ausführen. 
+
+Der **Kostenrechnungsanalyse**-Inhalt ermöglicht es Buchhaltern, Kosten zu analysieren, um zu sehen, wie Kosten die Kostenträger der gesamten Organisation durchlaufen. 
+
+Weitere Informationen zur Kostenrechnung finden Sie unter [Startseite Kostenrechnung](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page). 
+
+Durch das Festlegen der  Zugriffsebenensicherheit in der Kostenrechnung und durch die Kombination mit Zeilenebenensicherheit in Power BI können Sie allen Kostenträgereigentümern Zugriff auf den **Kostenrechnungsanalyse** Power BI Inhalt geben. Alle Daten in den Visualisierungen werden anschließend auf Basis der Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zur Zugriffsebenensicherheit und zur Sicherheit auf Zeilenebene finden Sie unter [Sicherheit für Kostenbuchhaltung für Power BI einrichten](setup-security-cost-accounting-content-pack.md)..
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Sie finden die  **Kostenbuchhaltungsanalyse** Power BI Inhalt in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Inhalte herunterladen und mit Ihrem Microsoft Dynamics 365 for Operations verbinden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md). 
+Sie finden die  **Kostenbuchhaltungsanalyse** Power BI Inhalt in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Power BI-Inhalte herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md). Um eine Vorführung anzusehen, die zeigt, wie der Power BI-Inhalt impementiert wird, zeigen Sie den Office Mix [Power BI-Inhalt von Microsoft und Ihren Partnern in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) an.
 
-> HINWEIS **KB4011327** ist eine Voraussetzung für diesen Power BI Inhalt Nachdem Sie sich bei Lifecycle Services angemeldet haben, können Sie hier auf KB zugreifen: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+Stellen Sie sicher, dass Sie den **Kostenrechnungsanalyse**-Inhalt herunterladen, der der von Ihnen verwendeten Microsoft Dynamics 365-Version entspricht.
+
+> [!NOTE]
+> KB 4011327 ist eine Voraussetzung für diesen Power BI-Inhalt Nachdem Sie sich bei LCS angemeldet haben, können Sie unter <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327> auf die KB zugreifen.
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im **Kostenbuchhaltungsanalyse** Power Bl Inhalt.
@@ -64,12 +73,14 @@ Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Me
 |                                  | Istkosten nach Kostenelementhierarchie und Kostenobjektdimensions-Mitgliedsname                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Dynamics 365 for Operations-Daten werden für die Berichte in **Kostenbuchhaltungsanalyse** Power BI Inhalt ergänzt. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden, der eine Microsoft SQL-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md). Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verwendet.
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Kostenrechnungsanalyse** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md). 
 
-| Entität                  | Zentrale aggregierte Messungen | Datenquelle für Dynamics 365 for Operations | Feld     | Beschreibung                                   |
-|-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Kostenrechnungseinträge | SUM (Betrag)               | CAMDATAAggregatedCostEntry                  | Betrag    | Betrag in der Kostenbuchhaltungs-Sachkontowährung |
-| Statistische Einträge     | SUM(Größe)            | CAMDATAAggregatedStatisctialEntry           | Größe |                                               |
+Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verwendet.
+
+| Entität                  | Zentrale aggregierte Messungen | Datenquelle für Dynamics 365      | Feld     | Beschreibung                                        |
+|-------------------------|---------------------------|-----------------------------------|-----------|----------------------------------------------------|
+| Kostenrechnungseinträge | SUM (Betrag)               | CAMDATAAggregatedCostEntry        | Betrag    | Der Betrag in der Kostenbuchhaltungs-Sachkontowährung. |
+| Statistische Einträge     | SUM(Größe)            | CAMDATAAggregatedStatisctialEntry | Größe |                                                    |
 
 Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet werden, um mehrere berechnete Kennzahlen im Dataset des Inhalts zu erstellen.
 
@@ -114,16 +125,4 @@ Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregie
 | Steuerkalender                   | Kalender, Beschreibung des Kalenders                                                                                       |
 | Geschäftsjahr                       | Kalenderjahr                                                                                                        |
 | Finanzzeiträume                     | Kalenderperioden                                                                                                 |
-
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstellen von Power BI-Inhalten:
-
--   [Datenentitäten](..\data-entities\data-entities.md)
--   [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](configure-power-bi-integration.md)
--   [Aufstellungssicherheit für Kostenrechnungsinhalt für Power B]](setup-security-cost-accounting-content-pack.md)
-
-
-
 

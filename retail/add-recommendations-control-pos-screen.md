@@ -1,27 +1,28 @@
 ---
 title: "Hinzufügen eines Empfehlungssteuerelement der Buchungsseite auf einem POS-Gerät"
-description: "In diesem Thema wird beschrieben, wie Sie einem Empfehlungssteuerelement dem Buchungsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 for Operations Arbeitsgänge hinzufügen."
+description: "In diesem Thema wird beschrieben, wie Sie einem Empfehlungssteuerelement dem Buchungsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 for Retail Arbeitsgänge hinzufügen."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: josaw
+ms.search.scope: Retail, Operations, Core, UnifiedOperations
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: db17231a27c85193dd95dfe32575f598e00873b1
+ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
+ms.openlocfilehash: 1cb80decf8ef0f182feec5d4cbe76b37b106dcd2
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,12 +32,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Sie einem Empfehlungssteuerelement dem Buchungsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 for Operations Arbeitsgänge hinzufügen.
+In diesem Thema wird beschrieben, wie Sie einem Empfehlungssteuerelement dem Buchungsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 for Retail Arbeitsgänge hinzufügen.
 
-Sie können Produktempfehlungen zu Ihrem POS-Gerät anzeigen, wenn Sie Microsoft Dynamics 365 for Operations verwenden. *Empfehlungen* sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben. Um Produktempfehlungen anzuzeigen, müssen Sie dem Buchungsbildschirm eine Steuerung mithilfe des Bildschirmlayoutdesigners hinzufügen.
+Sie können Produktempfehlungen zu Ihrem POS-Gerät anzeigen, wenn Sie Microsoft Dynamics 365 for Retail verwenden. *Empfehlungen* sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben. Um Produktempfehlungen anzuzeigen, müssen Sie dem Buchungsbildschirm eine Steuerung mithilfe des Bildschirmlayoutdesigners hinzufügen.
 
 ## <a name="open-layout-designer"></a>Layoutdesigner öffnen
-1.  Wechseln Sie zu **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS** &gt; **Bildschirmlayouts**.
+1.  Wechseln Sie zu **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS** &gt; **Bildschirmlayouts**.
 2.  Suchen Sie mithilfe der Filteroptionen den Bildschirm, dem Sie eine Steuerung hinzufügen möchten. Filtern Sie beispielsweise im Feld **Bildschirmlayout-ID** einen Wert von "F2CP16: 9M".
 3.  Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Wählen Sie beispielsweise "Name: F2CP16: 9M Bildschirmlayout Kennung: F2CP16: 9M".
 4.  Klicken Sie auf **Layout-Designer**
@@ -55,7 +56,7 @@ Es stehen zwei Optionen für die Konfiguration zur Verfügung. Wählen Sie die O
 1.  Reduzieren Sie die Höhe des Buchungspositionsdetailbereichs, so dass er die gleiche Höhe hat wie der Debitorenbereich links.[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 2.  Klicken Sie im Menü auf der linken Seite, und ziehen Sie das Empfehlungssteuerelement zwischen den Buchungspositionsdetailbereich und den Schaltflächenraster im mittleren unteren Transaktlions-Bildschirmrands. Ändern Sie die Steuerung, so dass die Größe in diesen Bereich passt.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 3.  Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.
-4.  In Dynamics 365 for Operations gehen Sie zu **Einzelhandel und Handel** &gt; **Einzelhandel IT** &gt;  **Verteilungszeitpläne** .
+4.  In Dynamics 365 for Retail gehen Sie zu **Einzelhandel** &gt; **Einzelhandel IT** &gt; **Verteilungszeitpläne** .
 5.  Wählen Sie in der **1090 Anmelden**
 6.  Klicken Sie auf **Jetzt ausführen**
 
@@ -70,7 +71,7 @@ Es stehen zwei Optionen für die Konfiguration zur Verfügung. Wählen Sie die O
 7.  Wählen Sie im Feld **Fild** das Bild, das auf der Registerkarte angezeigt werden soll.
 8.  Klicken Sie auf **OK**. Die Registerkarte wird im neuen Schaltflächenraster angezeigt.
 9.  Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.
-10. In Dynamics 365 for Operations gehen Sie zu **Einzelhandel und Handel** &gt; **Einzelhandel IT** &gt;  **Verteilungszeitpläne** .
+10. In Dynamics 365 for Retail gehen Sie zu **Einzelhandel** &gt; **Einzelhandel IT** &gt; **Verteilungszeitpläne** .
 11. Wählen Sie in der **1090 Anmelden**
 12. Klicken Sie auf **Jetzt ausführen**
 

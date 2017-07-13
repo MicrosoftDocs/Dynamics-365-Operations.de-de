@@ -3,13 +3,13 @@ title: "Bewährte Verfahren zum Importieren von Belegen mit der Entität der all
 description: "Dieser Thema enthält Tipps zum Importieren von Daten in die allgemeine Erfassung über die Entität der allgemeinen Erfassung."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94363
 ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a1740f322972b1c37f23a0422fdcb4435253710
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b9a5c03584635908067bb7b623deba76f4ba3e18
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,18 +53,18 @@ In den folgenden Abschnitten beschreiben die Auswirkung dieser Einstellung und a
 -   Die **Auf Sätzen basierende Verarbeitung**-Einstellung für die Einrichtung der Entität der allgemeinen Erfassung beeinflusst die Erstellung von Nummern der Stapelverarbeitungserfassung nicht.
 -   Wenn das Feld **Nummer der Stapelverarbeitungserfassung** auf **Automatisch generiert** festgelegt ist, wird für jede importiert Position eine neue Nummer der Stapelverarbeitungserfassung erstellt. Dies Verhalten wird nicht empfohlen. Die **Automatisch generieren**-Einstellung finden Sie im Importprojekt unter **Zuordnung anzeigen** auf der **Zuordnungsdetails**-Registerkarte.
 -   Wenn das Feld **Nummer der Stapelverarbeitungserfassung** nicht auf **Automatisch generiert** festgelegt ist, wird eine neue Nummer der Stapelverarbeitungserfassung wie folgt erstellt:
-    -   Wenn die Nummer der Stapelverarbeitungserfassung, die in der importierten Datei definiert ist, einer vorhandenen nicht gebuchten Tageserfassung in Microsoft Dynamics 365 for Operations entspricht, werden alle Positionen mit einer Nummer der Stapelverarbeitungserfassung in die vorhandene Erfassung gebucht. Positionen werden nie in eine Nummer der Stapelverarbeitungserfassung importiert. Stattdessen wird eine neue Nummer erstellt.
-    -   Wenn die Nummer der Stapelverarbeitungserfassung, die in der importierten Datei definiert ist, nicht einer vorhandenen nicht gebuchten Tageserfassung in Microsoft Dynamics 365 for Operations entspricht, werden alle Positionen mit der gleichen Nummer der Stapelverarbeitungserfassung in eine neue Erfassung gebucht. Alle Zeilen mit einer Nummer der Stapelverarbeitungserfassung von 1 werden z. B. in eine neue Erfassung importiert. Alle Zeilen mit einer Nummer der Stapelverarbeitungserfassung 2 werden in eine zweite neue Erfassung importiert. Die Nummer der Stapelverarbeitungserfassung wird über den Nummernkreis erstellt, der in den Hauptbuchparametern definiert ist.
+    -   Wenn die Nummer der Stapelverarbeitungserfassung in der importierten Datei einer nicht gebuchten Tageserfassung entspricht, werden alle Positionen mit einer Nummer der Stapelverarbeitungserfassung in die vorhandene Erfassung gebucht. Positionen werden nie in eine Nummer der Stapelverarbeitungserfassung importiert. Stattdessen wird eine neue Nummer erstellt.
+    -   Wenn die Nummer der Stapelverarbeitungserfassung in der importierten Datei nicht einer vorhandenen gebuchten Tageserfassung entspricht, werden alle Positionen mit der gleichen Nummer der Stapelverarbeitungserfassung in eine neue Erfassung gebucht. Alle Zeilen mit einer Nummer der Stapelverarbeitungserfassung von 1 werden z. B. in eine neue Erfassung importiert. Alle Zeilen mit einer Nummer der Stapelverarbeitungserfassung 2 werden in eine zweite neue Erfassung importiert. Die Nummer der Stapelverarbeitungserfassung wird über den Nummernkreis erstellt, der in den Hauptbuchparametern definiert ist.
 
 ### <a name="voucher-number"></a>Belegnummer
 
--   Wenn Sie die Einstellungen **Auf Sätzen basierende Verarbeitung** für die Entität der allgemeinen Erfassung verwenden, muss die Belegnummer in der importierten Datei bereitgestellt werden. Jede Buchung in der allgemeinen Erfassung erhält die Belegnummer, die in der importierten Datei bereitgestellt wird (auch, wenn der Beleg nicht ausgeglichen ist). Wenn Sie die satzbasierte Verarbeitung verwenden möchten, aber auch den Nummernkreis verwenden möchten, der für Belegnummern in Dynamics 365 for Operations definiert ist, steht dafür ab Februar 2016 ein Hotfix bereit. Die Hotfix-Nummer ist 3170316. Er steht über Lifecycle Services (LCS) zum Download bereit. Weitere Informationen finden Sie unter [Downloaden von Hotfixes über LCS](..\migration-upgrade\download-hotfix-lcs.md).
-    -   Um diese Funktionalität zu aktivieren legen Sie **Nummernzuordnung bei der Buchung** im für die Importe in Dynamics 365 for Operations verwendeten Erfassungsnamen auf **Ja** fest.
-    -   Eine Belegnummer muss weiterhin in der importierten Datei definiert werden. Diese Nummer ist jedoch vorübergehend und wird von der Dynamics 365 for Operations-Belegnummer überschrieben, wenn die Erfassung gebucht wird. Sie müssen sicherstellen, dass die Positionen der Erfassung korrekt nach der temporären Belegnummer gruppiert werden. Beispielsweise werden während der Buchung drei Positionen mit einer temporären Belegnummer von 1 gefunden. Die vorübergehende Belegnummer für alle drei Positionen wird durch die nächste Nummer des Nummernkreises überschrieben. Wenn diese drei Zeilen keine ausgeglichenen Posten sind, wird der Beleg nicht gebucht. Wenn Positionen gefunden werden, die eine temporäre Belegnummer 2 haben, wird diese Nummer von der nächsten Belegnummer im Nummernkreis überschrieben, usw.
+-   Wenn Sie die Einstellungen **Auf Sätzen basierende Verarbeitung** für die Entität der allgemeinen Erfassung verwenden, muss die Belegnummer in der importierten Datei bereitgestellt werden. Jede Buchung in der allgemeinen Erfassung erhält die Belegnummer, die in der importierten Datei bereitgestellt wird (auch, wenn der Beleg nicht ausgeglichen ist). Wenn Sie die satzbasierte Verarbeitung verwenden möchten, aber auch den Nummernkreis verwenden möchten, der für Belegnummern definiert ist, steht dafür ab Februar 2016 ein Hotfix bereit. Die Hotfix-Nummer ist 3170316. Er steht über Lifecycle Services (LCS) zum Download bereit. Weitere Informationen finden Sie unter [Downloaden von Hotfixes über LCS](..\migration-upgrade\download-hotfix-lcs.md).
+    -   Um diese Funktionalität zu aktivieren legen Sie **Nummernzuordnung bei der Buchung** im für die Importe verwendeten Erfassungsnamen auf **Ja** fest.
+    -   Eine Belegnummer muss weiterhin in der importierten Datei definiert werden. Diese Nummer ist jedoch vorübergehend und wird bei der Buchung der Erfassung mit einer Belegnummer überschrieben. Sie müssen sicherstellen, dass die Positionen der Erfassung korrekt nach der temporären Belegnummer gruppiert werden. Beispielsweise werden während der Buchung drei Positionen mit einer temporären Belegnummer von 1 gefunden. Die vorübergehende Belegnummer für alle drei Positionen wird durch die nächste Nummer des Nummernkreises überschrieben. Wenn diese drei Zeilen keine ausgeglichenen Posten sind, wird der Beleg nicht gebucht. Wenn Positionen gefunden werden, die eine temporäre Belegnummer 2 haben, wird diese Nummer von der nächsten Belegnummer im Nummernkreis überschrieben, usw.
 
 <!-- -->
 
--   Wenn Sie die Einstellung **Auf Sätzen basierende Verarbeitung** verwenden, müssen Sie keine Belegnummer in der importierten Datei bereitstellen. Die Belegnummern werden während des Imports auf der Basis der Einrichtung des Erfassungsnamens erstellt (**Nur ein Beleg**, **In Verbindung mit dem Saldo**usw.). Wenn beispielsweise der Erfassungsname als **In Verbindung mit Saldo** definiert ist, erhält die erste Position eine neue Standard-Belegnummer. Das System evaluiert dann die Position, um zu bestimmten, ob Soll und Haben übereinstimmen. Existiert ein Gegenkonto für die Position, erhält die nächste importierte Position eine neue Belegnummer. Existiert kein Gegenkonto, evaluiert das System bei jeder neuen importierten Position, ob Soll und Haben ausgeglichen sind.
+-   Wenn Sie die Einstellung **Auf Sätzen basierende Verarbeitung** verwenden, müssen Sie keine Belegnummer in der importierten Datei bereitstellen. Die Belegnummern werden während des Imports auf der Basis der Einrichtung des Erfassungsnamens erstellt (**Nur ein Beleg**, **In Verbindung mit dem Saldo** usw.). Wenn beispielsweise der Erfassungsname als **In Verbindung mit Saldo** definiert ist, erhält die erste Position eine neue Standard-Belegnummer. Das System evaluiert dann die Position, um zu bestimmten, ob Soll und Haben übereinstimmen. Existiert ein Gegenkonto für die Position, erhält die nächste importierte Position eine neue Belegnummer. Existiert kein Gegenkonto, evaluiert das System bei jeder neuen importierten Position, ob Soll und Haben ausgeglichen sind.
 -   Wenn das Feld **Belegnummer** auf **Automatisch generieren** festgelegt ist, schlägt der Import fehl. Die Einstellung **Automatisch generieren** wird für die das Feld **Belegnummer** nicht unterstützt.
 
 Standardmäßig nutzt die Entität der allgemeinen Erfassung die satzbasierte Verarbeitung. Nach dem Auswerten der Geschäftserfordernissen für Ihre Organisation können Sie die **Satzbasierte Verarbeitung**-Einstellung festlegen, indem Sie auf **Datenentitäten** im **Verwaltung**-Arbeitsbereich klicken. Die satzbasierte Verarbeitung wird verwendet, um den Importvorgang zu beschleunigen. Wenn Sie die satzbasierte Verarbeitung nicht verwenden, ist der Import von der Entität der allgemeinen Erfassung langsamer.

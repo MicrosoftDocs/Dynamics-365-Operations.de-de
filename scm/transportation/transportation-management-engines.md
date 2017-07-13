@@ -3,14 +3,14 @@ title: Transportverwaltungsmodule
 description: "Transportverwaltungsmodule definieren die Logik, die verwendet wird, um Transportsätze in der Transportverwaltung zu generieren und zu verarbeiten."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5db69ed204b9503fb710426f449f38e76591641
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: c4aac72d9f7e975d4a270deb340f96ddcc9ca1fb
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -33,15 +33,15 @@ ms.lasthandoff: 05/25/2017
 
 Transportverwaltungsmodule definieren die Logik, die verwendet wird, um Transportsätze in der Transportverwaltung zu generieren und zu verarbeiten. 
 
-Ein Transportverwaltungsmodul berechnet Aufgaben wie z. B. den Transportsatz des Spediteurs. Mit dem Modulsystem können Sie Berechnungsstrategien zur Laufzeit ändern, basierend auf Daten in Microsoft Dynamics 365 for Operations. Ein Transportverwaltungsmodul ähnelt einem Plug-In, das einem bestimmten Spediteursvertrag zugeordnet ist.
+Ein Transportverwaltungsmodul berechnet Aufgaben wie z. B. den Transportsatz des Spediteurs. Mit dem Modulsystem können Sie Berechnungsstrategien zur Laufzeit ändern, basierend auf Daten in Microsoft Dynamics 365 for Finance and Operations. Ein Transportverwaltungsmodul ähnelt einem Plug-In, das einem bestimmten Spediteursvertrag zugeordnet ist.
 
 ## <a name="what-engines-are-available"></a>Welche Module sind verfügbar?
-Die folgende Tabelle zeigt die Transportverwaltungsmodule, die in Microsoft Dynamics 365 for Operations verfügbar sind.
+Die folgende Tabelle zeigt die Transportverwaltungsmodule, die in Microsoft Dynamics 365 for Finance and Operations verfügbar sind.
 
 | Transportverwaltungsmodul | Beschreibung                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Satzmodul**                  | Berechnet Sätze.                                                                                                                                                                                                                                                                                                           |
-| **Allgemeines Modul**               | Einfache Hilfsmodule, die von anderen Modulen verwendet werden, die keine Daten aus Microsoft Dynamics 365 for Operations benötigen, beispielsweise ein Umlagenmodul. Umlagenmodule werden verwendet, um die Endkosten des Transports für bestimmte Aufträge und Positionen zu reduzieren, basierend auf Dimensionen wie Volumen und Gewicht. |
+| **Allgemeines Modul**               | Einfache Hilfsmodule, die von anderen Modulen verwendet werden, die keine Daten aus Microsoft Dynamics 365 for Finance and  Operations benötigen, beispielsweise ein Umlagenmodul. Umlagenmodule werden verwendet, um die Endkosten des Transports für bestimmte Aufträge und Positionen zu reduzieren, basierend auf Dimensionen wie Volumen und Gewicht. |
 | **Kilometerleistungsmodul**               | Berechnet die Transportentfernung.                                                                                                                                                                                                                                                                                     |
 | **Transitzeitmodul**          | Berechnet die Zeit, die erforderlich ist, um vom Start- zum Zielort zu gelangen.                                                                                                                                                                                                                                       |
 | **Zonenmodul**                  | Berechnet die Zone basierend auf der aktuellen Adresse und berechnet die Anzahl der Zonen, die durchquert werden müssen, um von Adresse A nach Adresse B zu gelangen.                                                                                                                                                                    |
@@ -63,23 +63,23 @@ In den meisten Fällen können Sie auf die Schaltfläche **Parameter** in den Ei
 | Parameter             | Beschreibung                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *RateBaseAssigner*    | Der .NET-Typ, der die Satz-Basiszuweisungsdaten für ein bestimmtes Schema interpretiert. Die Syntax des Parameterwerts besteht aus zwei Segmenten, getrennt durch einen senkrechten Strich (|) generiert. Das erste Segment enthält den Assemblynamen, der den Typ „assigner“ definiert. Das zweite Segment definiert den vollqualifizierten Namen des Typs „assigner“. Dazu gehört der Namespace des Typs. |
-| *MileageEngineCode*   | Code des Kilometerleistungsmoduls, der den Datensatz des Kilometerleistungsmoduls in der Microsoft Dynamics 365 for Operations Datenbank kennzeichnet.                                                                                                                                                                                                                                                             |
-| *ApportionmentEngine* | Allgemeiner Modulcode, der das Umlagenmodul in der Microsoft Dynamics 365 for Operations Datenbank kennzeichnet.                                                                                                                                                                                                                                                              |
+| *MileageEngineCode*   | Code des Kilometerleistungsmoduls, der den Datensatz des Kilometerleistungsmoduls in der Microsoft Dynamics 365 for Finance and Operations Datenbank kennzeichnet.                                                                                                                                                                                                                                                             |
+| *ApportionmentEngine* | Allgemeiner Modulcode, der das Umlagenmodul in der Microsoft Dynamics 365 for Finance and Operations Datenbank kennzeichnet.                                                                                                                                                                                                                                                              |
 
  
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Wie werden Metadaten in den Transportverwaltungsmodulen verwendet?
 ----------------------------------------------------------
 
-Transportverwaltungsmodule, die auf Daten beruhen, die in Dynamics 365 for Operations definiert sind, können verschiedene Datenschemas verwenden. Das Transportverwaltungssystem ermöglicht verschiedenen Transportverwaltungsmodulen die Verwendung der gleichen allgemeinen physischen Datenbanktabellen. Um sicherzustellen, dass die Laufzeitinterpretation der Moduldaten korrekt ist, können Sie Metadaten für die Datenbanktabellen definieren. Dies reduziert die Kosten für die Erstellung neuer Transportverwaltungsmodule, da in Operations keine zusätzlichen Tabellen und Formularstrukturen erforderlich sind.
+Transportverwaltungsmodule, die auf Daten beruhen, die in Dynamics 365 for Finance and Operations definiert sind, können verschiedene Datenschemas verwenden. Das Transportverwaltungssystem ermöglicht verschiedenen Transportverwaltungsmodulen die Verwendung der gleichen allgemeinen physischen Datenbanktabellen. Um sicherzustellen, dass die Laufzeitinterpretation der Moduldaten korrekt ist, können Sie Metadaten für die Datenbanktabellen definieren. Dies reduziert die Kosten für die Erstellung neuer Transportverwaltungsmodule, da in Operations keine zusätzlichen Tabellen und Formularstrukturen erforderlich sind.
 
 ## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Welche Daten können als Suchdaten in den Satzberechnungen verwendet werden?
-Die Daten, die Sie verwenden, wenn Sie Sätze in Microsoft Dynamics 365 for Operations berechnen, werden durch die Metadatenkonfiguration gesteuert. Wenn Sie beispielsweise nach Sätzen auf der Basis von Postleitzahlen suchen möchten, müssen Sie Metadaten basierend auf dem Nachschlagetyp einer Postleitzahl einrichten.
+Die Daten, die Sie verwenden, wenn Sie Sätze in Microsoft Dynamics 365 for Finance and Operations berechnen, werden durch die Metadatenkonfiguration gesteuert. Wenn Sie beispielsweise nach Sätzen auf der Basis von Postleitzahlen suchen möchten, müssen Sie Metadaten basierend auf dem Nachschlagetyp einer Postleitzahl einrichten.
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Erfordern alle Modulkonfigurationen Metadaten?
 Nein. Transportverwaltungsmodule, die verwendet werden, um die Daten abzurufen, die für die Satzberechnung aus externen Systemen erforderlich sind, benötigen keine Metadaten. Die Satzdaten für diese Module können aus externen Transportanbietersystemen abgerufen werden, in der Regel über einen Webdienst. So können Sie beispielsweise ein Kilometerleistungsmodul verwenden, das Daten direkt aus Bing Maps abruft, sodass Sie keine Metadaten für dieses Modul benötigen.
 | **Hinweis**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Die Transportverwaltungsmodule, die mit Microsoft Dynamics 365 for Operations bereitgestellt werden, nutzen Daten, die aus der Anwendung abgerufen werden. Module, die mit externen Systemen verbunden sind, sind nicht in Operations enthalten. Mit dem modulbasierten Erweiterungsmodell können Sie jedoch Erweiterungen mithilfe von Microsoft Dynamics 365 for Operations Visual Studio-Tools erstellen. |
+| Die Transportverwaltungsmodule, die mit Finance and Operations bereitgestellt werden, nutzen Daten, die aus der Anwendung abgerufen werden. Module, die mit externen Systemen verbunden sind, sind nicht in Operations enthalten. Mit dem modulbasierten Erweiterungsmodell können Sie jedoch Erweiterungen mithilfe von Microsoft Dynamics 365 for Finance and Operations Visual Studio-Tools erstellen. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Wie konfiguriere ich Metadaten für ein Transportverwaltungsmodul?
 Metadaten für Transportverwaltungsmodule werden für die verschiedenen Arten von Modulen unterschiedlich konfiguriert.

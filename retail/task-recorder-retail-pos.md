@@ -3,25 +3,27 @@ title: "Aufgabenaufzeichnung und Hilfe für POS"
 description: In diesem Thema wird beschrieben, wie Aufgabenaufzeichnung in Retail Modern POS und Cloud POS verwendet werden.
 author: mugunthanm
 manager: AnnBe
-ms.date: 2017-05-15
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+audience: Application User
 ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
 ms.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3ca86a3353d3f613057dd77754266fc69975229f
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 007a7e8a34f3f5a2d0d18eb3955822a8fd8bdd0a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 ---
 
@@ -38,13 +40,13 @@ Aufgabenaufzeichnung in Retail Modern POS oder Cloud POS ist eine neue Lösung, 
 Aufgabenaufzeichnung kann Benutzeraktionen im Client mit exakter Genauigkeit erfassen. Jedes Steuerelement ist so instrumentiert, dass es die Aufgabenaufzeichnung über die Ausführung einer Benutzeraktion benachrichtigt. Das Steuerelement benachrichtigt die Aufgabenaufzeichnung, dass ein Ereignis aufgetreten ist und übermittelt alle relevanten Informationen über die entsprechende Benutzeraktion in Echtzeit. Aus diesen Informationen kann die Aufgabenaufzeichnung den Typ der Benutzeraktion erfassen (wie beispielsweise das Klicken auf eine Schaltfläche, die Werteingabe oder Navigation) und sämtliche Daten, die mit dieser Benutzeraktion zusammenhängen (wie der Wert und Typ der Eingabedaten, der Formularkontext oder der Datensatzkontext). Aufgabenaufzeichnung behält die Informationen mit genügend Details bei, um zu gewährleisten, dass durch eine Wiedergabe der Aufzeichnung die aufgezeichneten Aktionen genauso ausgeführt werden können, wie der Benutzer sie ausführte. (Die Wiedergabefunktion ist bei Retail Modern POS oder Cloud POS noch nicht implementiert worden.)
 
 ## <a name="basic-configuration"></a>Basiskonfiguration
-Um die Aufgabenaufzeichnung bei POS zu aktivieren, folgen Sie diesen Schritten.
+Um die Aufgabenaufzeichnung in POS zu aktivieren, folgen Sie diesen Schritten.
 
-1.  Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**.
+1.  Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**.
 2.  Klicken Sie auf das Register, damit dafür die Aufgabenaufzeichnung aktiviert wird.
 3.  Legen Sie auf der Registerkarte **Erfassen** im Inforegister **Allgemein** die Option **Aufgabenaufzeichnung aktivieren** auf **Ja** fest.
 4.  Klicken Sie auf **Speichern**.
-5.  Wechseln Sie zu **Einzelhandel und Handel** &gt; **IT (Einzelhandel)** &gt; **Vertriebsplan**.
+5.  Klicken Sie auf **Einzelhandel** &gt; **Handel IT** &gt; **Vertriebsplan**.
 6.  Wählen Sie den Einzelvorgang **Register (1090)** aus, und klicken Sie dann auf **Jetzt ausführen**.
 
 ## <a name="create-a-recording"></a>Eine Aufzeichnung erstellen
@@ -54,7 +56,9 @@ Gehen Sie folgendermaßen vor, um eine neue Erfassung mithilfe der Aufgabenaufze
 2.  Auf der Seite **Einstellungen** im Abschnitt **Aufgabenaufzeichnung** klicken Sie auf **Aufgabenaufzeichnung öffnen**. Der Bereich **Aufgabenaufzeichnung** wird angezeigt. Sie können auf die Schaltfläche **Schließen** (**X**) in der oberen rechten Ecke klicken, um den Bereich **Aufgabenaufzeichnung** zu schließen, bevor Sie eine neue Aufzeichnung beginnen. Um den Bereich erneut zu öffnen, wiederholen Sie Schritt 2.
 [![Aufgabenaufzeichnungsbereich](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
-3.  Geben Sie einen Namen und eine Beschreibung für die Aufzeichnung ein, und klicken Sie dann auf **Starten**. Die Aufzeichnungssitzung beginnt, sobald Sie auf **Starten** klicken. **Hinweis:** Wenn Sie auf die Schaltfläche **Schließen** (**X**) in der oberen rechten Ecke klicken, während sich die Aufzeichnung in Bearbeitung befindet, wird der Bereich **Aufgabenaufzeichnung** geschlossen, aber die Aufzeichnungssitzung ist noch nicht beendet. Um den Aufgabenaufzeichnungsbereich erneut zu öffnen, klicken Sie auf die Schaltfläche Hilfe (Fragezeichen) am oberen Rand des Bildschirms. 
+3.  Geben Sie einen Namen und eine Beschreibung für die Aufzeichnung ein, und klicken Sie dann auf **Starten**. Die Aufzeichnungssitzung beginnt, sobald Sie auf **Starten** klicken.
+
+**Hinweis:** Wenn Sie auf die Schaltfläche **Schließen** (**X**) in der oberen rechten Ecke klicken, während sich die Aufzeichnung in Bearbeitung befindet, wird der Bereich **Aufgabenaufzeichnung** geschlossen, aber die Aufzeichnungssitzung ist noch nicht beendet. Um den Aufgabenaufzeichnungsbereich erneut zu öffnen, klicken Sie auf die Schaltfläche **Hilfe** (Fragezeichen) am oberen Rand des Bildschirms. 
 
 [![Fragezeichen](./media/help.jpg)](./media/help.jpg)
 
@@ -95,7 +99,10 @@ Um die Aufzeichnungssitzung fortzusetzen, nachdem Sie sie angehalten hatten, kli
 
 ### <a name="capture-screenshots"></a>Bildschirmabbilder erstellen
 
-Aufgabenaufzeichnung kann Bildschirmabbilder der Benutzeroberfläche von Retail Modern POS erfassen, während Sie einen Geschäftsprozess aufzeichnen. Aufgabenaufzeichnung verwendet die Bildschirmabbilder, wenn Sie die Aufzeichnung als Word-Dokument herunterladen. Um die Erfassungsfunktion für Bildschirmfotos zu aktivieren, legen Sie die Option **Bildschirmabbilder erstellen** auf **Ja** fest. Hinweis: Die Funktionen zur Erfassung von Bildschirmabbildern werden in Cloud POS nicht unterstützt.
+Aufgabenaufzeichnung kann Bildschirmabbilder der Benutzeroberfläche von Retail Modern POS erfassen, während Sie einen Geschäftsprozess aufzeichnen. Aufgabenaufzeichnung verwendet die Bildschirmabbilder, wenn Sie die Aufzeichnung als Word-Dokument herunterladen. Um die Erfassungsfunktion für Bildschirmfotos zu aktivieren, legen Sie die Option **Bildschirmabbilder erstellen** auf **Ja** fest. 
+
+#### <a name="note"></a>Notiz
+> Die Funktionen zur Erfassung von Bildschirmabbildern werden in Cloud POS nicht unterstützt.
 
 ### <a name="start-task-and-end-task"></a>Aufgabe starten und Aufgabe beenden
 
@@ -119,11 +126,13 @@ Text, den Sie in das Feld **Text** eingeben, wird *über* dem Schritttext im Auf
 
 Text, den Sie in das Feld **Hinweise** eingeben, wird *unter* dem Schritttext im Aufgabenleitfaden angezeigt. Um den Hinweistext zu lesen, muss der Benutzer den Schritttext im Popupfenster erweitern. Diese Stelle ist für optionales Lesematerial oder andere Informationen geeignet, die für den Benutzer nützlich sein können, die der Benutzer aber nicht benötigt, um die Aktion abzuschließen.
 
-## <a name="help-at-retail-modern-pos-and-cloud-pos"></a>Hilfe in Retail Modern POS und Cloud POS
-Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich von Retail Modern POS und Cloud POS angezeigt werden, sodass sie als Text angezeigt werden können, müssen Sie die Aufgabenaufzeichnungen in Ihrer eigenen BPM-Bibliothek speichern und Ihre Hilfesystemparameter so aktualisieren, dass sie auf die BPM-Bibliothek verweisen. Weitere Informationen finden Sie unter [Hilfesystem verbinden.](https://ax.help.dynamics.com/en/wiki/working-with-help/#connecting-the-help-system) Retail Modern POS und Cloud POS-Hilfe durchsucht LCS in Echtzeit. Es durchsucht alle BPM-Bibliotheken, die in den Microsoft Dynamics AX-Hilfesystemparametern ausgewählt sind, und zeigt die relevanten Ergebnisse an. Um auf das Menü **Hilfe** zuzugreifen, klicken Sie auf die Schaltfläche **Hilfe** am oberen Rand des Bildschirms, und dann im Suchfeld geben Sie Ihren Prozessname ein und klicken auf die Suchschaltfläche. 
+## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hilfe in Retail Modern POS und Cloud POS
+Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich von Retail Modern POS und Cloud POS angezeigt werden, sodass sie als Text angezeigt werden können, müssen Sie die Aufgabenaufzeichnungen in Ihrer eigenen BPM-Bibliothek speichern und Ihre Hilfesystemparameter so aktualisieren, dass sie auf die BPM-Bibliothek verweisen. Weitere Informationen finden Sie unter [Hilfesystem verbinden.](/dynamics365/unified-operations/dev-itpro/get-started/help-connect). Retail Modern POS und Cloud POS-Hilfe durchsucht LCS in Echtzeit. Es durchsucht alle BPM-Bibliotheken, die in den Microsoft Dynamics 365 for Retail-Hilfesystemparametern ausgewählt sind, und zeigt die relevanten Ergebnisse an. Um auf das Menü **Hilfe** zuzugreifen, klicken Sie auf die Schaltfläche **Hilfe** (Fragezeichen) am oberen Rand des Bildschirms, und dann im Suchfeld geben Sie Ihren Prozessname ein und klicken auf die Suchschaltfläche. 
 
 [![Schaltfläche "Hilfe"](./media/help.jpg)](./media/help.jpg) 
 
-Wenn Sie auf einen Aufgabenleitfaden in den Suchergebnissen klicken, können Sie entweder die Schritte als Hilfethema anzeigen oder die Schritte in ein Word-Dokument exportieren. Hinweis: Das Hilfesystem in Retail Modern POS und Cloud POS bringt nicht automatisch die Aufgabenleitfäden. Basierend auf Ihrem Formular oder Ihren Vorgängen müssen Sie den Prozessnamen in das Suchfeld eingeben und auf die Suchschaltfläche klicken, um die Ergebnisse zu erhalten.
+Wenn Sie auf einen Aufgabenleitfaden in den Suchergebnissen klicken, können Sie entweder die Schritte als Hilfethema anzeigen oder die Schritte in ein Word-Dokument exportieren. 
+#### <a name="note"></a>Notiz
+> Hilfe in modernem Retail Modern POS und Cloud POS zeigt Aufgabenleitfäden nicht entsprechend der Form oder dem Arbeitsgang an, bei dem Sie sich befinden. Sie müssen den Prozeßnamen im Suchfeld eingeben und dann **Suchen** klicken.
 
 

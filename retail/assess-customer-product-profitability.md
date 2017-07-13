@@ -1,27 +1,29 @@
 ---
 title: "Debitoren- und Produktrentabilität bewerten"
-description: "In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblick zur Rentabilität der Debitoren und Produkte basierend auf Ihrer Microsoft Dynamics 365 for Operations -Daten zu erhalten."
+description: "In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblick zur Rentabilität der Debitoren und Produkte basierend auf Ihrer Microsoft Dynamics 365 for Retail-Daten zu erhalten."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d32c1b87417b69e5564c4b0e73e867cff511a8f1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: ea35bdd54c476fc5a3d329f7ca0dcf014c417e7a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -31,9 +33,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblick zur Rentabilität der Debitoren und Produkte basierend auf Ihrer Microsoft Dynamics 365 for Operations -Daten zu erhalten. 
+In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblick zur Rentabilität der Debitoren und Produkte basierend auf Ihrer Microsoft Dynamics 365 for Retail-Daten zu erhalten. 
 
-Im Rahmen von Microsoft Dynamics 365 for Operations  können Benutzer die Rentabilität für die wichtigsten Debitoren (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage eines der folgenden Kriterien überprüfen:
+Im Rahmen von Microsoft Dynamics 365 for Retail können Benutzer die Rentabilität für die wichtigsten Debitoren (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage eines der folgenden Kriterien überprüfen:
 
 -   Verkaufsbetrag
 -   Menge
@@ -42,8 +44,8 @@ Im Rahmen von Microsoft Dynamics 365 for Operations  können Benutzer die Rentab
 
 Für diese Bewertung können Sie den vordefinierten Bericht **Wichtigste Debitoren** verwenden, den Sie an folgenden Stellen öffnen können:
 
--   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Top-Kunden**
--   **Abfragen und Berichte** Abschnitt Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Top-Kunden'**
+-   **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht 'Wichtigste Debitoren'**
+-   **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht 'Wichtigste Debitoren'**
 
 Auf ähnliche weise können Benutzer die Rentabilität für die besten Produkte (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage eines der folgenden Kriterien überprüfen:
 
@@ -54,9 +56,9 @@ Auf ähnliche weise können Benutzer die Rentabilität für die besten Produkte 
 
 Für diese Bewertung können Sie den vordefinierten **Bericht über Top-Produkte** verwenden, den Sie an folgenden Stellen öffnen können:
 
--   **Einzelhandelsshopleitung** Arbeitsbereich von Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Top-Produkte**
--   **Kategorie- und Produktmanagement** Arbeitsbereich Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Produkte und Kategorien** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Top-Produkte**
--   **Abfragen und Berichte** Abschnitt Dynamics 365 for Operations &gt; **Einzelhandel und Handel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Top-Produkte**
+-   **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
+-   **Kategorie- und Produktverwaltung**-Arbeitsbereich &gt; **Einzelhandel und Handel** &gt; **Produkte und Kategorien** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
+-   **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht über Top-Produkte**
 
 
 

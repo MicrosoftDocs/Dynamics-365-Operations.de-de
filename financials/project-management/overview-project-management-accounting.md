@@ -3,24 +3,24 @@ title: Projektverwaltung und -verrechnung
 description: "Die Projektverwaltungs- und Buchhaltungsfunktionen können in mehreren Branchen verwendet werden, um eine Dienstleistung anzubieten, ein Produkt zu erzeugen oder ein Ergebnis zu erreichen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a6235f36af6dfb2f4164405d384f13a7c1cde06
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 12afcde947463b3abf58dea6138653a32dcda6f1
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -37,7 +37,7 @@ Ein Projekt ist eine Gruppe von Aktivitäten, die vorgesehen sind, um einen Serv
 ## <a name="projects-across-industries"></a>Projekte in Branchen
 Die Projektverwaltungs- und Buchhaltungsfunktionen kann in mehreren Branchen, wie in der folgenden Abbildung dargestellt, verwendet werden. [![Projekte in Branchen](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-In einem Callcenter kann ein Ticket verwendet werden, um die Gruppe von Aktivitäten zu beschreiben, die erforderlich sind, um einen Anruf aufzulösen. Beratungsfirmen. z. B. Management oder technische Beratungsunternehmen oder Werbeagenturen, finden ihre Aktivitäten als Projekte anzeigen. Im Marketing stellt eine Kampagne einen Satz Arbeit dar, der geliefert werden muss. In der projektbasierten Fertigung besteht ein Produktionsauftrag aus verschiedene Arbeit zu, die ausgeführt werden muss, um mehrere fertige Artikel zu erzeugen. Welche Bezeichnung auch verwendet wird, die Projekte beinhalten Ressourcen, Zeitpläne und Kosten. Die Projektverwaltungs- und Buchhaltungsfunktionen in Microsoft Dynamics 365 for Operations können bei der Planung, Durchführung und Analyse dieser Projekte helfen.
+In einem Callcenter kann ein Ticket verwendet werden, um die Gruppe von Aktivitäten zu beschreiben, die erforderlich sind, um einen Anruf aufzulösen. Beratungsfirmen. z. B. Management oder technische Beratungsunternehmen oder Werbeagenturen, finden ihre Aktivitäten als Projekte anzeigen. Im Marketing stellt eine Kampagne einen Satz Arbeit dar, der geliefert werden muss. In der projektbasierten Fertigung besteht ein Produktionsauftrag aus verschiedene Arbeit zu, die ausgeführt werden muss, um mehrere fertige Artikel zu erzeugen. Welche Bezeichnung auch verwendet wird, die Projekte beinhalten Ressourcen, Zeitpläne und Kosten. Die Projektverwaltungs- und Buchhaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, können bei der Planung, Durchführung und Analyse dieser Projekte helfen.
 
 ## <a name="project-phases"></a>Projektphasen
 Obwohl das folgenden Ablaufdiagramm für externe Projekte oder Projekte, die für einen oder mehrere Kunden durchgeführt werden gedacht ist, finden die Funktionen auch auf interne kostenbasierte Projekte Anwendung. 
@@ -75,11 +75,11 @@ Weitere Informationen finden Sie unter [Projektstrukturpläne](work-breakdown-st
 
 ### <a name="create-project-forecasts-and-budgets"></a>Projektplanungen und -budgets erstellen
 
-Sie können die Planung verwenden, wenn die Organisation operativ ausgerichtet ist und der Schwerpunkt auf Umsatzerlösen und Kosten liegt, die aus speziellen Buchungen stammen. Wenn sich die Organisation eher auf Finanzbeträge konzentriert, verwenden Sie die Budgetierung. Jede Methode hat ihre Vorteile. Weitere Informationen finden Sie unter [Projektplanungen und Budgets](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+Sie können die Planung verwenden, wenn die Organisation operativ ausgerichtet ist und der Schwerpunkt auf Umsatzerlösen und Kosten liegt, die aus speziellen Buchungen stammen. Wenn sich die Organisation eher auf Finanzbeträge konzentriert, verwenden Sie die Budgetierung. Jede Methode hat ihre Vorteile. Weitere Informationen finden Sie unter [Projektplanungen und Budgets](project-forecasts-budgets.md).
 
 ### <a name="create-projects"></a>Projekte erstellen
 
-Sie können Projekte in sechs Arten Microsoft Dynamics 365 for Operations erstellen. Jeder Typ wird unterschiedlich für Umsatzerkennung Kosten und eingerichtet. Der gewählte Projekttyp hängt vom Zweck des Projekts ab. Die folgende Tabelle beschreibt die typische Verwendung eines Projekttyps.
+Sie können sechs Typen von Projekten in Microsoft Finance and Operations erstellen. Jeder Typ wird unterschiedlich für Umsatzerkennung Kosten und eingerichtet. Der gewählte Projekttyp hängt vom Zweck des Projekts ab. Die folgende Tabelle beschreibt die typische Verwendung eines Projekttyps.
 
                                                                                                                                                                          |
 | Projekttyp      | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -88,7 +88,7 @@ Sie können Projekte in sechs Arten Microsoft Dynamics 365 for Operations erstel
 | Festpreis       | In Festpreisprojekten bestehen Rechnungen aus Akontobuchungen. Ein Festpreisprojekt wird gemäß einem Fakturierungsplan fakturiert, der auf einem Projektvertrag beruht. Der Umsatzerlös für ein Festpreisprojekt kann während des Projekts berechnet und gebucht werden, indem die Methode "Prozentsatz der Fertigstellung" angewendet werden. Alternativ kann der Umsatzerlös berechnet und gebuth werden, wenn das Projekt abgeschlossen ist, indem die Methode "Vollendeter Auftrag" angewendet wird. Bei Unternehmen ist es häufig sinnvoll, den Wert der Ressource in Fertigung (RIF) zu verwenden, um den Grad der Fertigstellung eines Projekts oder einer Gruppe von Projekten zu berechnen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Investition        | Investitionsprojekte sind Projekte, die keine sofortigen Einnahmen erzeugen. Sie werden in der Regel für langfristige interne Projekte verwendet, bei denen die Kosten kapitalisiert werden müssen. Für ein Investitionsprojekt können nur Artikelkosten, Stundenkosten und Ausgaben erfasst werden. Kosten in einem Investitionsprojekt werden durch die Vorkalkulationsfunktion verfolgt und gesteuert. Investitionsprojekte können mit einem optionalen maximalen Kapitalisierungslimit eingerichtet werden. Mit dem Fortschritt des Investitionsprojekts erfassen Sie die Kosten in RIF-Konten, in denen sie bis zum Abschluss des Projekts gehalten werden. Wenn das Projekt gelöscht wird, übertragen Sie den RIF-Wert auf ein Anlagenkonto, ein Sachkonto oder ein neues Projekt. Hinweis: Buchungen für Investitionsprojekte werden nicht auf der Seite **Buchkosten**, **Umsatzerlös antizipieren** oder **Erstellen von Rechnungsvorschlägen** angezeigt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Kostenprojekt      | Ebenso wie Investitionsprojekte dienen Kostenprojekte in der Regel dazu, interne Projekte zu verfolgen, und für Kostenprojekte können nur Stunden, Ausgaben und Artikel erfasst werden. Kostenprojekte haben jedoch in der Regel eine kürzere Dauer als Investitionsprojekte. Des Weiteren können Kostenprojekte im Unterschied zu Investitionsprojekten nicht auf Bilanzkonten aktiviert werden. Stattdessen werden ihre Projektbuchungen nur auf Gewinn- und Verlustkonten gebucht. **HINWEIS** Buchungen für Kostenprojekt werden nicht auf der Seite **Buchkosten**, **Umsatzerlös antizipieren** oder **Erstellen von Rechnungsvorschlägen** angezeigt. Da Kostenprojekte in der Regel verwendet werden, um interne Projekte nachzuverfolgen, müssen sie nicht unbedingt einem Debitorenkonto zugeordnet sein. Wenn die Einstellung jedoch erfordert, dass Artikelbedarf für Bestellungen erstellt werden, müssen Sie das Kostenprojekt einem Debitor zuordnen. Diese Zuordnung ist erforderlich, da der Artikelbedarf als Auftragspositionen verwaltet wird, und das System erfordert, dass ein Debitor angegeben ist. Allerdings ergibt diese Einstellung keinen Artikelbedarf, der automatisch aus einer Bestellung erstellt wird. Für Kostenprojekte wird die  **Artikelbedarf erstellen**-Einstellung ignoriert. Wenn Sie einen Artikelbedarf in einem Kostenprojekt benötigen, können Sie einen manuell erstellen, solange ein Debitor dem Projekt zugeordnet ist. |
-| Intern          | Interne Projekte dienen zur Verfolgung der Kosten eines internen Projekts der Organisation. Dieser Projekttyp kann ein Planungstool zum Verwalten des Ressourcenverbrauchs enthalten. **Hinweis:**Buchungen für interne Projekt werden nicht auf **Umsatzerlös antizipieren** oder **Erstellen von Rechnungsvorschlägen** Seite angezeigt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Intern          | Interne Projekte dienen zur Verfolgung der Kosten eines internen Projekts der Organisation. Dieser Projekttyp kann ein Planungstool zum Verwalten des Ressourcenverbrauchs enthalten. **Hinweis:** Buchungen für interne Projekt werden nicht auf **Umsatzerlös antizipieren** oder **Erstellen von Rechnungsvorschlägen** Seite angezeigt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Uhrzeit              | Zeitprojekte dienen dazu, die Zeit zu erfassen, die mit nicht fakturierbaren und nicht produktiven Aktivitäten verbunden ist. Beispiel hierfür ist ein Projekt zur Erfassung der Krankheitszeiten von Arbeitskräften. Buchungen in Zeitprojekten werden nicht im Sachkonto gebucht. Sie werden vielmehr in Arbeitskraftauslastungsberichte eingegliedert. In Zeitprojekten können nur Stundenbuchungen erfasst werden. Sie verwenden eine Stundenerfassung oder einen Arbeitszeitnachweis, um diese Stunden im Projekt zu erfassen. Nachdem die Stunden erfasst wurden, werden sie als Projektbuchungen angezeigt, jedoch ohne eine entsprechende Belegbuchung. **Hinweis** Buchungen für Zeitprojekt werden nicht auf der Seite **Buchkosten**, **Umsatzerlös antizipieren** oder **Erstellen von Rechnungsvorschlägen** angezeigt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 
@@ -118,7 +118,7 @@ Weitere Informationen finden Sie unter [Projektstrukturpläne](work-breakdown-st
 
 Es gib zwei Möglichkeiten, zum Verwalten und Steuern Ihrer Projekte: Projektplanungen und Projektbudgets. Sie können die Planung verwenden, wenn die Organisation operativ ausgerichtet ist und der Schwerpunkt auf Umsatzerlösen und Kosten liegt, die aus speziellen Buchungen stammen. Wenn sich die Organisation eher auf Finanzbeträge konzentriert, verwenden Sie die Budgetierung.
 
-Weitere Informationen finden Sie unter [Projektplanungen und Budgets](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+Weitere Informationen finden Sie unter [Projektplanungen und Budgets](project-forecasts-budgets.md).
 
 ### <a name="create-production-orders"></a>Produktionsauftrag erstellen
 
@@ -228,7 +228,7 @@ In der folgenden Tabelle werden die Methoden zum Berechnen der Kosten für den A
 <tbody>
 <tr class="odd">
 <td>Gesamtkosten - tatsächliche Kosten</td>
-<td>Vorkalkulierte Kosten müssen manuell eingegeben werden. Nachdem die Spalte <strong>Gesamtkosten</strong> oder <strong>Gesamtmenge</strong> auf der <strong>Vorkalkulation</strong>-Seite ausgefüllt wurde, werden die tatsächlichen Kosten von den vom Benutzer eingegebenen Summen subtrahiert. Das Ergebnis sind die Kosten für den Abschluss des Projekts. Normalerweise wird der Status der Kosten nicht auf Grundlage von Werten wie beispielsweise der Anzahl der Hotelaufenthalte und der Mahlzeiten im jeweiligen Zeitraum erfasst. Stattdessen basiert es normalerweise auf einem Vergleich mit den Gesamtbetrag der vorkalkulierten Stunden. Dieser Ansatz erfordert kein Planzahlenmodell, und die Gesamtkosten oder die Gesamtmenge können manuell bearbeitet werden. Wenn ein Wert in der Spalte <strong>Gesamtkosten</strong> oder <strong>Gesamtmenge</strong> eingegeben wird, vergleicht Microsoft Dynamics 365 for Operations diesen Wert mit den tatsächlichen Buchungen, die in der Periode gebucht werden, und verringert dann den Wert in der Spalte <strong>Abzuschließende Menge</strong> oder <strong>Fertigstellungskosten</strong>.</td>
+<td>Vorkalkulierte Kosten müssen manuell eingegeben werden. Nachdem die Spalte <strong>Gesamtkosten</strong> oder <strong>Gesamtmenge</strong> auf der <strong>Vorkalkulation</strong>-Seite ausgefüllt wurde, werden die tatsächlichen Kosten von den vom Benutzer eingegebenen Summen subtrahiert. Das Ergebnis sind die Kosten für den Abschluss des Projekts. Normalerweise wird der Status der Kosten nicht auf Grundlage von Werten wie beispielsweise der Anzahl der Hotelaufenthalte und der Mahlzeiten im jeweiligen Zeitraum erfasst. Stattdessen basiert es normalerweise auf einem Vergleich mit den Gesamtbetrag der vorkalkulierten Stunden. Dieser Ansatz erfordert kein Planzahlenmodell, und die Gesamtkosten oder die Gesamtmenge können manuell bearbeitet werden. Wenn ein Wert in der Spalte <strong>Gesamtkosten</strong> oder <strong>Gesamtmenge</strong> eingegeben wird, vergleicht Finance and Operations diesen Wert mit den tatsächlichen Buchungen, die in der Periode gebucht werden, und verringert dann den Wert in der Spalte <strong>Abzuschließende Menge</strong> oder <strong>Fertigstellungskosten</strong>.</td>
 </tr>
 <tr class="even">
 <td>Gesamtbudget - tatsächliches Budget</td>
@@ -238,7 +238,7 @@ In der folgenden Tabelle werden die Methoden zum Berechnen der Kosten für den A
 <li>Vergleichen von Planungsbuchungen mit tatsächlichen Buchungen.</li>
 <li>Behalten, verringern oder erhöhen Sie die Vorkalkulationen für die nächste Periode.</li>
 </ol>
-Microsoft Dynamics 365 for Operations verringert nicht automatisch die geplanten Vorkalkulationen. Daher wird empfohlen, dass Sie ein ursprüngliches Planzahlenmodell im Festpreisprojekt aufbewahren, um eine Basislinie einzurichten, mit der das Projekt verglichen wird, wenn es abgeschlossen ist. 
+Finance and Operations verringert nicht automatisch die geplanten Vorkalkulationen. Daher wird empfohlen, dass Sie ein ursprüngliches Planzahlenmodell im Festpreisprojekt aufbewahren, um eine Basislinie einzurichten, mit der das Projekt verglichen wird, wenn es abgeschlossen ist. 
 > [!NOTE] Verwenden Sie mindestens zwei Planzahlenmodelle, wenn Sie diesen Ansatz anwenden. Ein Modell sollte die ursprüngliche Planung enthalten. Für das andere Modell sollten Sie Planungsbuchungen eines anderen Modells kopieren. Diese Methode prüft nur Festpreis- und Investitionsprojekte.</td>
 > </tr>
 <tr class="odd">
@@ -278,7 +278,7 @@ Auf Grundlage der Einstellungen können Sie den Zufluss flüssiger Mittel für e
 -   **Projektdatum:** 5. März 2012.
 -   **Rechnungsdatum:** 31. März 2012. Dieses Datum wird basierend auf der Rechnungshäufigkeit bestimmt. In diesem Beispiel legen die Rechnungshäufigkeit auf den aktuellen Monat fest. Dies bedeutet, dass alle Buchungen, die im März gebucht werden, am letzten Tag des Monats fakturiert werden.
 -   **Fälligkeitsdatum**: Am 14. April 2012. Dieses Datum wird durch die Zahlungsbedingungen bestimmt die Sie für dieses Projekt ausgewählt haben. Sie haben z. B. eine Zahlungsfrist von 14 Tagen ausgewählt. Daher werden 14 Tage zum Rechnungsdatum hinzugefügt, um zu einem Fälligkeitsdatum vom 14. April 2012 zu kommen.
--   **Erwartetes Datum für Verkaufszahlung:**Am 27. April 2012. Dieses Datum wird berechnet, indem die Anzahl der Tage im Feld **Allgemeine Puffertage** auf der Seite **Projektverwaltungs- und Buchhaltungsparameter** zur Anzahl der Tage im **Individuelle Karenztage**-Feld auf der Seite **Projektverträge** und dann die Summe der Anzahl von Tagen im **Fälligkeitsdatum** Feld hinzufügt wird. In vorliegenden Beispiel haben Sie **3** im Feld **Allgemeine Puffertage** und **10** im Feld **Individuelle Karenztage** eingegeben. Daher werden 13 Tage zum Fälligkeitsdatum hinzugefügt, um zu einem erwarteten Datum für die Verkaufszahlung am 27. April 2012 zu kommen.
+-   **Erwartetes Datum für Verkaufszahlung:** Am 27. April 2012. Dieses Datum wird berechnet, indem die Anzahl der Tage im Feld **Allgemeine Puffertage** auf der Seite **Projektverwaltungs- und Buchhaltungsparameter** zur Anzahl der Tage im **Individuelle Karenztage**-Feld auf der Seite **Projektverträge** und dann die Summe der Anzahl von Tagen im **Fälligkeitsdatum** Feld hinzufügt wird. In vorliegenden Beispiel haben Sie **3** im Feld **Allgemeine Puffertage** und **10** im Feld **Individuelle Karenztage** eingegeben. Daher werden 13 Tage zum Fälligkeitsdatum hinzugefügt, um zu einem erwarteten Datum für die Verkaufszahlung am 27. April 2012 zu kommen.
 
 Die allgemeinen Puffertage können entweder die einzelnen Puffertage ersetzen oder zu den einzelnen Puffertagen addiert werden:
 
@@ -293,7 +293,7 @@ Der tatsächliche Zufluss flüssiger Mittel gleicht der Cashflowplanung mit dem 
 
 -   **Rechnungsdatum:** 2. März 2012.
 -   **Fälligkeitsdatum:** Am 16. März 2012. Die Zahlungsbedingungen sind auf 14 Tage festgelegt.
--   **Erwartetes Datum für Verkaufszahlung:**Am 29. März 2012. Dies umfasst drei allgemeine Puffertage und 10 einzelne Puffertage.
+-   **Erwartetes Datum für Verkaufszahlung:** Am 29. März 2012. Dies umfasst drei allgemeine Puffertage und 10 einzelne Puffertage.
 
 #### <a name="cost-forecasting"></a>Kostenplanung
 
@@ -302,7 +302,7 @@ Auf der Grundlage der Tage, die Sie definieren, kann sich das Kostenzahlungsdatu
 Das Projektdatum der Buchung ist z. B. der 5. März 2012, und Sie legen die folgenden Zahlungsbedingungen fest:
 
 -   **Stunden:** Aktueller Monat (**M**)
--   **Ausgaben:**14 Tage (**D14**)
+-   **Ausgaben:** 14 Tage (**D14**)
 -   **Artikel** 30 Tage (**D30**)
 
 Auf Basis dieser Einstellungen ergibt sich für jede Buchungsart folgendes Kostenzahlungsdatum:

@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fb8fa9f5f17b8d658e2d0fea3a9659ab09562611
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -64,11 +64,11 @@ Klicken Sie für Produkte, die aus einem Produktionsfluss nicht angegeben werden
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>Berechnung, die auf dem Produktionsfluss basiert.
 
-Lean Manufacturing für Microsoft Dynamics 365 for Operations ist unabhängig von Arbeitsplänen. Die Kostenkalkulation für Produkte, die aus einem Produktionsfluss erfolgen, kann auf dem Produktionsfluss selber basieren. Bevor die Berechnung ausgeführt werden kann, muss eine Kanban-Regel erstellt werden, die das Produkt aus dem Produktionsfluss bereitstellt. Wenn ein Produkt aus mehreren Produktionsflüssen am gleichen Standort im Berechnungsdatum beschafft werden kann, können Sie den Produktionsfluss für die Herstellkostenkalkulation auswählen. Auf der Seite **Standardproduktionsfluss** können Sie einen Standardproduktionsfluss für jeden Artikel konfigurieren. Wenn mehrere Kanban-Regeln für die gleiche Produktdimensionsgruppe im gleichen Produktionsfluss vorhanden sind, der auf dem Berechnungsdatum aktiv ist, wird die Berechnung die erste Kanban-Regel ausführen, die für die Berechnung aktiviert ist.
+Lean Manufacturing für Microsoft Dynamics 365 for Finance and Operations ist unabhängig von Arbeitsplänen. Die Kostenkalkulation für Produkte, die aus einem Produktionsfluss erfolgen, kann auf dem Produktionsfluss selber basieren. Bevor die Berechnung ausgeführt werden kann, muss eine Kanban-Regel erstellt werden, die das Produkt aus dem Produktionsfluss bereitstellt. Wenn ein Produkt aus mehreren Produktionsflüssen am gleichen Standort im Berechnungsdatum beschafft werden kann, können Sie den Produktionsfluss für die Herstellkostenkalkulation auswählen. Auf der Seite **Standardproduktionsfluss** können Sie einen Standardproduktionsfluss für jeden Artikel konfigurieren. Wenn mehrere Kanban-Regeln für die gleiche Produktdimensionsgruppe im gleichen Produktionsfluss vorhanden sind, der auf dem Berechnungsdatum aktiv ist, wird die Berechnung die erste Kanban-Regel ausführen, die für die Berechnung aktiviert ist.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Berechung, die auf dem Arbeitsplan basiert
 
-Berechnung, die auf einem Arbeitsplan basiert, ist ebenso gültig wie ein wenn sie auf einem Produktionsfluss basiert. Allerdings verwendet die Berechnung auf de Basis eines Arbeitsplans nicht die Nachkalkulation für Lean Manufacturing-Funktionalitäten. Der Arbeitsplan sollte Ressourcenanforderungen für Ressourcengruppen verwenden. Um Systemabweichungen zu vermeiden, sollte er die gleichen Arbeitsgruppen verwenden oder mintestens die gleichen Kostenkategorien. Wieder sollten Sie Kostenkategorien für Einrichtung und Menge vermeiden. Sie unterstützen nicht bei der Berechnung von Kosten in eine genauere Aufschlüsselung als die Nachkalkulation beim Lean Manufacturing. Um zu bestimmen, welche Option (Produktionsfluss oder Arbeitsplan) Sie verwenden sollten, um die Kosten zu berechnen, nehmen Sie die Ergebnisse der Kostenaufschlüsselung. Die Version, die der Realität mehr entspricht und weniger Abweichungen gesamthaft produziert, ist die bessere Option In einer Produktionsumgebung, in der ein Produkt über einen einzelnen Produktionsfluss und eine einzige Kanban-Regel beschafft wird, basiert die Berechnung auf Grundlage des Produktionsflusses und ist wahrscheinlich genauer. Für ein Produkt, das durch Lean Manufacturing und Produktionsaufträge für den gleichen Standort beschafft werden kann oder das mehrere Produktionsflüsse oder mehrere Kanban-Regeln im selben Fluss haben kann, ist eine Berechnung möglicherweise genauer, wenn sie auf einer Arbeitsplanversion basiert, die speziell für die Kostenberechnung erstellt wird und nicht für die Produktion. Die Produktionsflussberechnung muss verwendet werden, um Produkte zu berechnen, die Fremdarbeit umfassen. In Microsoft Dynamics 365 for Operations sind die Kostenmodelle für das Fremdarbeit über  Produktionsaufträge und Fremdarbeit in Lean Manufacturing zwei unterschiedliche Ansätze. Lean Manufacturing führt einen neuen Kostengruppentyp, **Direktes Outsourcing** ein, Fremdarbeits-Services zu berechnen.
+Berechnung, die auf einem Arbeitsplan basiert, ist ebenso gültig wie ein wenn sie auf einem Produktionsfluss basiert. Allerdings verwendet die Berechnung auf de Basis eines Arbeitsplans nicht die Nachkalkulation für Lean Manufacturing-Funktionalitäten. Der Arbeitsplan sollte Ressourcenanforderungen für Ressourcengruppen verwenden. Um Systemabweichungen zu vermeiden, sollte er die gleichen Arbeitsgruppen verwenden oder mintestens die gleichen Kostenkategorien. Wieder sollten Sie Kostenkategorien für Einrichtung und Menge vermeiden. Sie unterstützen nicht bei der Berechnung von Kosten in eine genauere Aufschlüsselung als die Nachkalkulation beim Lean Manufacturing. Um zu bestimmen, welche Option (Produktionsfluss oder Arbeitsplan) Sie verwenden sollten, um die Kosten zu berechnen, nehmen Sie die Ergebnisse der Kostenaufschlüsselung. Die Version, die der Realität mehr entspricht und weniger Abweichungen gesamthaft produziert, ist die bessere Option In einer Produktionsumgebung, in der ein Produkt über einen einzelnen Produktionsfluss und eine einzige Kanban-Regel beschafft wird, basiert die Berechnung auf Grundlage des Produktionsflusses und ist wahrscheinlich genauer. Für ein Produkt, das durch Lean Manufacturing und Produktionsaufträge für den gleichen Standort beschafft werden kann oder das mehrere Produktionsflüsse oder mehrere Kanban-Regeln im selben Fluss haben kann, ist eine Berechnung möglicherweise genauer, wenn sie auf einer Arbeitsplanversion basiert, die speziell für die Kostenberechnung erstellt wird und nicht für die Produktion. Die Produktionsflussberechnung muss verwendet werden, um Produkte zu berechnen, die Fremdarbeit umfassen. In Microsoft Dynamics 365 for Finance and Operations sind die Kostenmodelle für Fremdarbeit über Produktionsaufträge und Fremdarbeit in Lean Manufacturing zwei unterschiedliche Ansätze. Lean Manufacturing führt einen neuen Kostengruppentyp, **Direktes Outsourcing** ein, Fremdarbeits-Services zu berechnen.
 
 ## <a name="material-consumption"></a>Materialverbrauch
 Wenn Material von Bestand in RIF verbraucht wird, werden die Kosten des Materials in RIF den tatsächlichen Standardkosten für eine Kostengruppe hinzugefügt. Dieser Vorgang erfolgt unter den folgenden Bedingungen:
@@ -85,7 +85,7 @@ Produkte werden aus dem Produktionsfluss unter den folgenden Bedingungen erhalte
 Produkte, die vom Produktionsfluss empfangen werden, werden vom RIF zu den Standardkosten abgezogen.
 
 ## <a name="products-in-wip"></a>Produkte in RIF
-Mit dem RIF-Modell von Manufacturing in Microsoft Dynamics 365 for Operations können Sie den Kanbanstatus der Handhabungseinheit verwenden, um das Material, die Halbfertigprodukte und Produkte, die Teil von RIF sind, zu verwalten.
+Mit dem RIF-Modell von Manufacturing in Microsoft Dynamics 365 for Finance and Operations können Sie den Kanbanstatus der Handhabungseinheit verwenden, um das Material, die Halbfertigprodukte und Produkte, die Teil von RIF sind, zu verwalten.
 
 -   **Zugewiesen** - Der Kanban kann Material verbraucht haben, das in RIF berechnet wird.
 -   **Eingegangen** -, Wenn das Kanban sich auf eine letzte Aktivität bezieht, in der **Aktualisierungsbestand bei Empfang** auf **Nein** festgelegt ist, stellt er eine volle Handhabungseinheit eines Produkts oder des Halbfertig-Produdukts dar, das nicht dem Lager erfasst wird.

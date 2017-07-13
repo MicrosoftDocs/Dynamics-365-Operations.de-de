@@ -1,16 +1,16 @@
 ---
 title: Finanzberichte entwerfen und verwalten
-description: "Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Operations erfolgen."
+description: "Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Finance and Operations führen."
 author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1c0787327830d2cdff9e8a48798165dc83493393
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Operations erfolgen. Die Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Dynamics 365 for Operations und einem Berichts-Designer, der Finanzberichte erstellt und Finanzberichte bearbeitet.  
+Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Finance and Operations führen. Die Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Finance and for Operations und einem Berichts-Designer, der Finanzberichte erstellt und bearbeitet.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Übung 1: Generieren und untersuchen Sie einen Standardfinanzbericht
 -----------------------------------------------------------
@@ -59,7 +59,7 @@ In dieser Übung generieren und untersuchen Sie einen vorhandenen Standardberich
 13. Wählen Sie **Berichtsoptionen** aus.
 14. Wählen Sie **Dimensionsfilter hinzufügen** und **Unternehmenseinheit** aus.
 15. Geben Sie "001" in das Feld ein, und wählen Sie **OK** aus. Der Bericht zeigt nun nur die Daten für die 001 Unternehmenseinheit an. Dies ist eine personalisierte Ansicht des Berichts und nicht für Andere verfügbar.
-16. Schließen Sie den gefilterten Bericht. Finanzberichte können in jeder Währung angezeigt werden, die Dynamics 365 for Operations hinzugefügt wurden.
+16. Schließen Sie den gefilterten Bericht. Finanzberichte können in jeder Währung angezeigt werden, die Finance and Operations hinzugefügt wurden.
 17. Wählen Sie **Währung** dann **EUR** aus. Der Berichts wird nun in Euro angezeigt. Alle Währungscodes oder Währungssymbole, die im Berichtsdesign enthalten sind, werden nun in der übernommenen Währung angezeigt. Wenn kein Währungssymbol für eine Währung definiert wird, wird das Währungssymbol nicht angezeigt.
 18. Schließen Sie den Bericht **Hauptbuchdetail**.
 19. Schließen Sie den **Berichts-Designer**.
@@ -70,7 +70,7 @@ In dieser Übung ändern Sie einen vorhandenen Standardbericht. Sie werden Zeile
 1.  Wechseln Sie zu **Finanzberichte** unter "Abfragen und Berichte" im Hauptbuch.
 2.  Wählen Sie die Zeile für den Bericht namens **Zusammenfassende Zwischenbilanz - Standard Spaltentypen** aus.
 3.  Wählen Sie **Bearbeiten** aus. **Zusammenfassende Zwischenbilanz - Standard** wird im Berichts-Designer geöffnet.
-4.  Wählen Sie **Datei** anschließend **Speichern unter** aus, und nennen Sie den Bericht "Ausführliche Zwischenbilanz mit Attributen". Hinweis: Wenn ein neuer Bericht im Berichts-Designer erstellt wird, wird die Finanzberichtsliste in Dynamics 365 for Operations aktualisiert.
+4.  Wählen Sie **Datei** anschließend **Speichern unter** aus, und nennen Sie den Bericht "Ausführliche Zwischenbilanz mit Attributen". Hinweis: Wenn ein neuer Bericht im Berichts-Designer erstellt wird, wird die Finanzberichtsliste in Finance and Operations aktualisiert.
 5.  Wählen Sie aus der Berichtsdefinition heraus das Zeilendefinitionssymbol aus, um zu die **Zwischenbilanz - Standardzeilendefinition** zu öffnen.
 6.  Speichern Sie die Zeilendefinition als **Ausführliche Zwischenbilanz mit Attributen**
 7.  Klicken Sie mit dem Cursor in Zeile 50, wählen Sie **Bearbeiten** anschließend **Zeilen aus Dimensionen einfügen** aus. Mit "Zeilen aus Dimensionen einfügen" können Sie die Dimensionen in Ihrer Zeilendefinition auswählen. In dieser Übung werden wir die Zeilendefinition mithilfe des Hauptkontos aufbauen.
@@ -183,8 +183,8 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 18. **Speichern** Sie Ihre Änderungen und **generieren** Sie. Nachdem der Bericht fertig generiert und geöffnet wurde, können Sie den Bericht untersuchen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-[Finanzberichterstattung](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
-[Finanzbericht anzeigen](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
+[Finanzberichterstattung](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[Finanzbericht anzeigen](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Dynamics Finanzbericht Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

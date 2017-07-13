@@ -1,15 +1,15 @@
 ---
 title: "Übersicht Transportverwaltungsaufgaben"
-description: "Dieses Thema enthält eine Übersicht der Transportverwaltungsfunktionen in Microsoft Dynamics 365 for Operations."
+description: "Dieses Thema enthält eine Übersicht der Transportverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 796bf42f103bd6d14e872138d07e4a911ddcab1a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2fbea4f5e86a6bef98be5df3a2b69aac36e371e5
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieses Thema enthält eine Übersicht der Transportverwaltungsfunktionen in Microsoft Dynamics 365 for Operations.
+Dieses Thema enthält eine Übersicht der Transportverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations.
 
-Mit der Transportverwaltung können Sie den Transport Ihres Unternehmens verwalten und Kreditor- und Routing-Lösungen für ein- und ausgehende Aufträge identifizieren. So können Sie beispielsweise die schnellste Route oder den günstigsten Satz für eine Lieferung identifizieren. In der folgenden Tabelle werden die wichtigsten Szenarien für die Nutzung der Transportverwaltung in Microsoft Dynamics 365 for Operations beschrieben.
+Mit der Transportverwaltung können Sie den Transport Ihres Unternehmens verwalten und Kreditor- und Routing-Lösungen für ein- und ausgehende Aufträge identifizieren. So können Sie beispielsweise die schnellste Route oder den günstigsten Satz für eine Lieferung identifizieren. In der folgenden Tabelle werden die wichtigsten Szenarien für die Nutzung der Transportverwaltung in Microsoft Dynamics 365 for Finance and Operations beschrieben.
 
 <table>
 <colgroup>
@@ -68,23 +68,23 @@ Mit der Transportverwaltung können Sie den Transport Ihres Unternehmens verwalt
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-dynamics-365-for-operations"></a>Transportplanung in Dynamics 365 for Operations
+## <a name="planning-transportation-in-finance-and-operations"></a>Transport in Finance and Operations planen
 In der Transportverwaltung kann die Transportplanung entweder auf Aufträgen oder auf Lieferungen basieren, die auf Basis dieser Aufträge erstellt werden. Die Lieferungen sind immer irgendwann vorhanden. Sie sind jedoch nicht zur Transportplanung erforderlich. Umlagerungsaufträge sind Teil des ausgehenden Szenarios und können zusammen mit Aufträgen geplant werden. 
 
 ![Auslastungabbildung](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Eingehender Transport
-Wenn Sie Artikel von einem Kreditor zur Lieferung an Ihren Lagerort bestellen, möchten Sie den Transport der Artikel möglicherweise selbst organisieren. Sie können Dynamics 365 for Operations nutzen, um den Transport und den Empfang einer eingehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung des Transports einer eingehenen Auslastung. 
+Wenn Sie Artikel von einem Kreditor zur Lieferung an Ihren Lagerort bestellen, möchten Sie den Transport der Artikel möglicherweise selbst organisieren. Sie können Finance and Operations nutzen, um den Transport und den Empfang einer eingehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung des Transports einer eingehenen Auslastung. 
 
 ![Geschäftsprozessfluss für den Transport eingehender Auslastungen](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Ausgehender Transport
-Sie können eine ausgehende Ladung planen und verarbeiten, um bestimmte Artikel aus dem Lagerort eines Unternehmens an einen Debitor zu versenden. Sie können Dynamics 365 for Operations nutzen, um den Transport und den Versand einer ausgehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung und Verarbeitung von ausgehenden Ladungen für den Versand. 
+Sie können eine ausgehende Ladung planen und verarbeiten, um bestimmte Artikel aus dem Lagerort eines Unternehmens an einen Debitor zu versenden. Sie können Finance and Operations nutzen, um den Transport und den Versand einer azusgehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung und Verarbeitung von ausgehenden Ladungen für den Versand. 
 
 ![Planung und Verarbeitung von ausgehenden Ladungen](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Ladungserstellung
-Dynamics 365 for Operations enthält eine Ladungserstellungsstrategie mit dem Namen "Volumenbasierte Ladungserstellungsstrategie". Mit dieser Strategie können Sie die Höchstwerte verwenden, die für Höhe und Gewicht in der Ladungsvorlage angegeben sind, oder die Einstellungen überschreiben, indem sie neuen Werte eingeben. Um diese Strategie zu verwenden, wählen Sie sie im Feld **Ladungserstellungsstrategie** im Inforegister **Einstellungen** auf der Seite **Ladungserstellungsworkbench** aus. Darüber hinaus können Sie eigene Ladungserstellungsstrategien hinzufügen, indem Sie eine neue Klasse in der Entwicklungsumgebung erstellen.
+Finance and Operations enthält eine Ladungserstellungsstrategie mit dem Namen "Volumenbasierte Ladungserstellungsstrategie". Mit dieser Strategie können Sie die Höchstwerte verwenden, die für Höhe und Gewicht in der Ladungsvorlage angegeben sind, oder die Einstellungen überschreiben, indem sie neuen Werte eingeben. Um diese Strategie zu verwenden, wählen Sie sie im Feld **Ladungserstellungsstrategie** im Inforegister **Einstellungen** auf der Seite **Ladungserstellungsworkbench** aus. Darüber hinaus können Sie eigene Ladungserstellungsstrategien hinzufügen, indem Sie eine neue Klasse in der Entwicklungsumgebung erstellen.
 
 
 

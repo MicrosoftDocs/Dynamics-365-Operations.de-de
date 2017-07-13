@@ -1,16 +1,16 @@
 ---
 title: "Zielorte für elektronische Berichterstellung"
-description: "Sie können ein Ziel für jede Formatvariante zur &quot;Elektronischen Berichterstellung&quot; (ER) und die Ausgabenkomponente (einen Ordner oder eine Datei) konfigurieren. Benutzer, die entsprechende Zugriffsrechte haben, können auch Zieleinstellungen zur Laufzeit ändern. Dieser Artikel beschreibt die ER Zielverwaltung, die unterstützten Zieltypen und die Sicherheitsaspekte."
+description: "Sie können ein Ziel für jede Formatvariante zur \"Elektronischen Berichterstellung\" (ER) und die Ausgabenkomponente (einen Ordner oder eine Datei) konfigurieren. Benutzer, die entsprechende Zugriffsrechte haben, können auch Zieleinstellungen zur Laufzeit ändern. Dieser Artikel beschreibt die ER Zielverwaltung, die unterstützten Zieltypen und die Sicherheitsaspekte."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5fb008420f82abd7983ee26854f84330705c0c01
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fb2aeee1f38823e7ea96071f773e8448d65ba8ff
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,9 +36,9 @@ Sie können ein Ziel für jede Formatvariante zur "Elektronischen Berichterstell
 Die Formatkonfiguration für die elektronische Berichterstellung (ER) umfasst in der Regel mindestens eine Ausgabekomponente: eine Datei. Konfigurationen enthalten in der Regel mehrere Ausgabedatei-Komponenten verschiedener Typen (XML, TXT oder XLSX), die entweder in einen einzelnen Ordner oder mehrere Ordner gruppiert sind. Die ER-Zielverwaltung ermöglicht die Vorkonfiguration der Ausführung jeder Komponente. Standardmäßig wird dem Benutzer bei der Ausführung einer Konfiguration ein Dialogfeld angezeigt, das zum Speichern oder Öffnen der Datei verwendet wird. Dasselbe Verhalten wird auch beim Importieren einer ER-Konfiguration ohne spezifischen Ziele für diese verwendet. Nachdem ein Ziel für eine Hauptausgabekomponente erstellt wurde, überschreibt das Ziel das Standardverhalten und der Ordner oder die Datei wird entsprechend dem Ziel gesendet.
 
 ## <a name="availability-and-general-prerequisites"></a>Verfügbarkeit und allgemeine Voraussetzungen
-Die Funktionalität für die ER-Ziele ist nicht in Microsoft Dynamics 365 for Operations 7.0 (Februar 2016) verfügbar. Daher müssen Sie Microsoft Dynamics 365 for Operations (Ausgabe November 2016) einrichten, um alle Funktionen zu verwenden, die in diesem Thema beschrieben sind. Alternativ können Sie eine der folgenden Komponenten installieren. Beachten Sie jedoch, dass diese Alternative eine eher begrenzte ER-Zielerfahrung bietet.
+Die Funktionalität für die ER-Ziele ist nicht in Microsoft Dynamics AX 7.0 (Februar 2016) verfügbar. Daher müssen Sie Microsoft Dynamics 365 for Operations, Version 1511 (November 2016) einrichten, um alle Funktionen zu verwenden, die in diesem Thema beschrieben sind. Alternativ können Sie eine der folgenden Komponenten installieren. Beachten Sie jedoch, dass diese Alternative eine eher begrenzte ER-Zielerfahrung bietet.
 
--   Microsoft Dynamics 365 for Operations Anendungsversion 7.0.1 (Mai 2016)
+-   Microsoft Dynamics AX 7.0.1 (Mai 2016)
 -   [Anwendungs-Hotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213) für die ER Zielverwaltung
 
 Sie können Ziele nur für ER-Konfigurationen einrichten, die importiert wurden und für die Formate auf der Seite **Konfigurationen für die elektronische Berichterstellung** verfügbar sind.
@@ -61,7 +61,7 @@ Es werden verschiedene Zieltypen unterstützt. Sie können alle gleichzeitig akt
 
 ### <a name="email-destination"></a>E-Mail-Ziel
 
-Legen Sie **Aktiviert** auf **Ja** fest, um eine Ausgabedatei per E-Mail zu senden. Wenn diese Option aktiviert ist, können Sie den E-Mail-Betreff bearbeiten und die E-Mail-Empfänger angeben. Sie können für den E-Mail-Betreff konstante Texte und den Text einrichten, oder Sie können ER-Formeln verwenden, um E-Mail-Texte dynamisch zu erstellen. Sie könnne E-Mail-Adressen für ER auf zwei Arten konfigurieren. Die Konfiguration kann gleich abgeschlossen werden wie die Druckverwaltungsfunktion in Dynamics 365 for Operations. Alternativ können Sie eine E-Mail-Adresse auflösen, indem Sie einen direkten Verweis auf die ER-Konfiguration mit einer Formel verwenden.
+Legen Sie **Aktiviert** auf **Ja** fest, um eine Ausgabedatei per E-Mail zu senden. Wenn diese Option aktiviert ist, können Sie den E-Mail-Betreff bearbeiten und die E-Mail-Empfänger angeben. Sie können für den E-Mail-Betreff konstante Texte und den Text einrichten, oder Sie können ER-Formeln verwenden, um E-Mail-Texte dynamisch zu erstellen. Sie könnne E-Mail-Adressen für ER auf zwei Arten konfigurieren. Die Konfiguration kann auf die gleiche Wiese abgeschlossen werden, wie die Druckverwaltungsfunktion in Finance and Operations. Alternativ können Sie eine E-Mail-Adresse auflösen, indem Sie einen direkten Verweis auf die ER-Konfiguration mit einer Formel verwenden.
 
 ### <a name="email-address-types"></a>E-Mail-Adressen-Arten
 
@@ -89,19 +89,19 @@ Verwenden Sie diesen E-Mail-Typ, wenn die Konfiguration, die Sie verwenden, eine
 
 [![E-Mail-Adressen einem E-Mail-Ziel zuweisen](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
 
-**Hinweis:** Ein SMTP-Server (Simple Mail Transfer Protocol) muss konfiguriert und verfügbar sein. Sie können Ihren SMTP-Server in Dynamics 365 for Operations unter **Systemadministration &gt; **Einrichten** &gt; **E-Mail** &gt; **E-Mail Parameter**.**
+**Hinweis:** Ein SMTP-Server (Simple Mail Transfer Protocol) muss konfiguriert und verfügbar sein. Sie können Ihren SMTP-Server in Finance and Operations unter **Systemadministration** &gt; **Einrichten** &gt; **E-Mail** &gt; **E-Mail Parameter** angeben.
 
 ### <a name="archive-destination"></a>Archivziel
 
-Mit dieser Option können Ausgaben als Microsoft SharePoint-Ordner oder Microsoft Azure Storage senden. Legen Sie **Aktiviert** auf **Ja**fest, um die Ausgabe an ein Ziel zu senden, das über den ausgewählten Dokumenttyp definiert ist. Nur Dokumenttypen mit der Gruppe **Datei** stehen zur Auswahl. Sie legen die Dokumenttypen unter **Organisationsadministration** &gt; **Dokumentenmanagement** &gt; **Dokumenttypen** fest. Die Konfiguration für ER-Ziele ist identisch mit der Konfiguration für das Dokumentverwaltungssystem.
+Mit dieser Option können Ausgaben als Microsoft SharePoint-Ordner oder Microsoft Azure Storage senden. Legen Sie **Aktiviert** auf **Ja** fest, um die Ausgabe an ein Ziel zu senden, das über den ausgewählten Dokumenttyp definiert ist. Nur Dokumenttypen mit der Gruppe **Datei** stehen zur Auswahl. Sie legen die Dokumenttypen unter **Organisationsadministration** &gt; **Dokumentenmanagement** &gt; **Dokumenttypen** fest. Die Konfiguration für ER-Ziele ist identisch mit der Konfiguration für das Dokumentverwaltungssystem.
 
 [![Seite „Dokumenttypen”](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 
-Der Speicherort bestimmt, wo die Datei gespeichert wird. Nachdem das Ziel **Archiv** aktiviert ist, können Sie die Ergebnisse der Konfigurationsausführung im Einzelvorgangsarchiv gespeichert werden. Sie können die Ergebnisse **Organisationsverwaltung**&gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstellung archivierte Einzelvorgänge** anzeigen. **Hinweis** Sie können einen Dokumenttyp für das Einzelvorgangsarchiv in Dynamics 365 for **Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstattungsparameter** auswählen.
+Der Speicherort bestimmt, wo die Datei gespeichert wird. Nachdem das Ziel **Archiv** aktiviert ist, können Sie die Ergebnisse der Konfigurationsausführung im Einzelvorgangsarchiv gespeichert werden. Sie können die Ergebnisse **Organisationsverwaltung**&gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstellung archivierte Einzelvorgänge** anzeigen. **Hinweis** Sie können einen Dokumenttyp für das Einzelvorgangsarchiv in Finance and Operations **Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstattungsparameter** auswählen.
 
 #### <a name="sharepoint"></a>SharePoint
 
-Sie können eine Datei in einem bestimmten SharePoint-Ordner speichern. Sie definieren den standardmäßigen SharePoint-Server unter**Organisationsverwaltung** &gt; **> Dokumentenmanagement** &gt; **Dokumentenmanagemenparameter** auf der Registerkarte **SharePoint**. Nach der Konfiguration des SharePoint-Ordners können Sie ihn im Dokumenttyp als Ordner für die Speicherung der ER Ausgabe auswählen. 
+Sie können eine Datei in einem bestimmten SharePoint-Ordner speichern. Sie definieren den standardmäßigen SharePoint-Server unter **Organisationsverwaltung** &gt; **> Dokumentenmanagement** &gt; **Dokumentenmanagemenparameter** auf der Registerkarte **SharePoint**. Nach der Konfiguration des SharePoint-Ordners können Sie ihn im Dokumenttyp als Ordner für die Speicherung der ER Ausgabe auswählen. 
 
 [![Einen SharePoint-Ordner auswählen](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
 
@@ -111,7 +111,7 @@ Wenn der Dokumenttypspeicherort auf **Archivverzeichnis** festgelegt ist, könne
 
 ### <a name="file-destination"></a>Dateizielort
 
-Legen Sie **Aktiviert** auf **Ja**fest, um das Öffnen- oder Speichern-Dialogfeld nach der Ausführung der Konfiguration anzuzeigen.
+Legen Sie **Aktiviert** auf **Ja** fest, um das Öffnen- oder Speichern-Dialogfeld nach der Ausführung der Konfiguration anzuzeigen.
 
 ### <a name="screen-destination"></a>Bildschirmziel
 
@@ -119,7 +119,7 @@ Wenn Sie **Aktiviert** auf **Ja** setzen, wird eine Vorschau der Ausgabe erstell
 
 ### <a name="power-bi-destination"></a>Power BI-Ziel
 
-Setzen Sie **Aktiviert** auf **Ja**, um Ihre ER-Konfiguration zu verwenden, um die Übertragung von Daten aus Ihrer Instanz von Microsoft Dynamics 365 for Operations zu den Microsoft Power BI-Diensten zu veranlassen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurde. Weitere Informationen finden Sie unter [Verwenden Sie eine Konfiguration der "Elektronischen Berichterstellung", um Power BI Daten aus Dynamics 365 for Operations bereitzustellen](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Tipp:** Zum Überschreiben des Standardverhaltens (das Dialogfeld für eine Konfiguration) können Sie einen Zielverweis und ein Dateiziel für die Hauptausgabekomponente erstellen und alle Ziele deaktivieren.
+Setzen Sie **Aktiviert** auf **Ja**, um Ihre ER-Konfiguration zu verwenden, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Microsoft Power BI-Diensten zu veranlassen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurde. Weitere Informationen finden Sie unter [Eine elektronische Berichtskonfiguration verwenden, um Power BI mit Daten aus Finance and Operations bereitzustellen](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Tipp:** Zum Überschreiben des Standardverhaltens (das Dialogfeld für eine Konfiguration) können Sie einen Zielverweis und ein Dateiziel für die Hauptausgabekomponente erstellen und alle Ziele deaktivieren.
 
 ## <a name="security-considerations"></a>Sicherheitsaspekte
 Für ER Ziele werden zwei Arten von Rechte und Pflichten verwendet. Ein Typ steuert die Fähigkeit zur Pflege aller Ziele, die für eine juristische Person konfiguriert sind (steuert den Zugriff auf die **Elektronische Berichterstellung**-Seite). Der andere Typ steuert die Möglichkeit eines Benutzers der Anwendung, zur Laufzeit die Zieleinstellung zu überschreiben, die von einem ER-Entwickler oder vom funktionaler Berater konfiguriert wurden.

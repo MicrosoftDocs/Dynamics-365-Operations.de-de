@@ -1,16 +1,16 @@
 ---
 title: Verwalten Sie Lohnarbeit in der Produktion
-description: "In diesem Thema wird erläutert, wie von Dienstleistungszeiten Arbeitsgänge in Microsoft Dynamics 365 for Operations verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden."
+description: "In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Microsoft Dynamics 365 for Finance and Operations verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 582807f9f416d3e6e73226dfd2e22af2d6331acd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0e1368d3f637143fd47c3772c811257e8472cc74
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird erläutert, wie von Dienstleistungszeiten Arbeitsgänge in Microsoft Dynamics 365 for Operations verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
+In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Microsoft Dynamics 365 for Finance and Operations verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
 
 In [Produktionsprozesse](production-process-overview.md) kann Arbeit nach Ressourcen ausgeführt werden, die von den Kreditoren zugeordnet oder verwaltet werden. Normalerweise werden Kreditorenbetriebsmittel der Ebene der periodischen Übernachfrage verwendet, die die verfügbare Kapazität der eigenen Ressourcen eines Unternehmens hinausreicht. Der Kreditor kann z auch in der Lage, Angaben [Ressourcenfunktionen](resource-capabilities.md) oder Ressourcen mit einem geringeren Preis anzubieten.  
 
@@ -42,7 +42,7 @@ Wenn Sie Arbeitsgänge oder Aktivitäten von unterliegt, sind jedoch betreffen a
 
 Bei internen Ressourcen wird ein Fixkostensatz normalerweise für eine Periode aufgeteilt. Durch Kontrast sind die Kosten der geregelten von Ressourcen auf dem Einkaufspreis des zugehörigen Service. Der als Service wird ein weiteres Produkt definiert und wird verwendet, um die Einkaufprozesse Beschaffungs- und für einen angegebenen Artikel von Arbeitsgang zu treiben.  
 
-So ist hier kein explizites Konzept der Halbzeugen in Microsoft Dynamics 365 for Operations. Für einen Produktionsauftrag, der mehr als einen Arbeitsgang erforderlich, um Rohmaterial in ein Fertigprodukt umzuwandeln, wird das Endprodukt wieder dem Lager nur im letzten Arbeitsgang gebucht. Die, die Halbfertigprodukte das vorherige Arbeitsgangserzeugnis im in Fertigung (WIP) verwendet werden, doch sie werden nicht im Bestand gebucht oder nachverfolgt. Obgleich die Arbeitspläne und die Stücklisten (BOMs) in mehrere kleinere Einheiten, in Erhöhungen dieses Ansatzes Anzahl von Produkten, die in Stücklisten und Arbeitsplänen in aufteilbare, die verwaltet werden müssen.  
+Derzeit gibt es kein explizites Konzept für Halbfertigprodukte in Microsoft Dynamics 365 for Finance and Operations. Für einen Produktionsauftrag, der mehr als einen Arbeitsgang erforderlich, um Rohmaterial in ein Fertigprodukt umzuwandeln, wird das Endprodukt wieder dem Lager nur im letzten Arbeitsgang gebucht. Die, die Halbfertigprodukte das vorherige Arbeitsgangserzeugnis im in Fertigung (WIP) verwendet werden, doch sie werden nicht im Bestand gebucht oder nachverfolgt. Obgleich die Arbeitspläne und die Stücklisten (BOMs) in mehrere kleinere Einheiten, in Erhöhungen dieses Ansatzes Anzahl von Produkten, die in Stücklisten und Arbeitsplänen in aufteilbare, die verwaltet werden müssen.  
 
 Es gibt zwei Methoden der Modellierung von Lohnarbeit für Produktionsarbeitsgänge. Methoden Diese unterscheiden sich auf die Methode, mit der der Fremdarbeitsprozess modelliert werden kann, die Halbfertigprodukte, wie die im Prozess angezeigt werden, und die Art, dass Kostenkontrolle verwaltet wird.
 

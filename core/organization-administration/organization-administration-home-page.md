@@ -1,15 +1,15 @@
 ---
 title: "Startseite für die Organisationsverwaltung"
-description: "Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von Microsoft Dynamics 365 for Operations in Ihrer Organisation unterstützen."
+description: "Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von Microsoft Dynamics 365 Finance and Operations in Ihrer Organisation unterstützen."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20421
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 70fe2361e6c6a2ba07f9be2b30169dd071301300
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,12 +30,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von Microsoft Dynamics 365 for Operations in Ihrer Organisation unterstützen.
+Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von Microsoft Dynamics 365 Finance and Operations in Ihrer Organisation unterstützen.
 
 <a name="number-sequences"></a>Nummernkreise
 ----------------
 
--   [Nummernkreise (Überblick)](number-sequence-overview.md)
+-   [Nummernkreise – Überblick](number-sequence-overview.md)
 -   [Einrichten von Nummernsequenzen mit einem Assistenten](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/)(Aufgabenleitfaden)
 -   [Richten Sie Nummernkreise auf einzelner Basis ein](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/)(Aufgabenleitfaden)
 

@@ -3,14 +3,14 @@ title: Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Service
 description: Dieses Thema zeigt, wie Sie elektronische Berichterstattungskonfiguration (ER) von Microsoft Dynamics Lifecyle Services LCS herunterladen.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1e73cd38c33d88feaba825abb64721bc332a4d6e
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: be77d76194e9d38589548113cc650599d5af4323
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -35,7 +35,7 @@ Dieses Thema zeigt, wie Sie elektronische Berichterstattungskonfiguration (ER) v
 
 Dieses Lernprogramm erläutert das Herunterladen der aktuellen Version der Microsoft Dynamics AX Electronic Reporting (ER) Konfigurationen von Microsoft Dynamics Lifecycle Services (LCS).
 
-1.  Melden Sie sich für Dynamics 365 for Operations an, indem Sie eine der folgenden Rollen verwenden:
+1.  Melden Sie sich für Finance and Operations an, indem Sie eine der folgenden Rollen verwenden:
     -   Entwickler für elektronische Berichterstellung
     -   Funktionaler Berater für elektronische Berichterstellung
     -   Systemadministrator
@@ -55,7 +55,7 @@ Dieses Lernprogramm erläutert das Herunterladen der aktuellen Version der Micro
 6.  Klicken Sie auf **Öffnen**, um die Liste der ER-Konfigurationen für das ausgewählte Repository anzuzeigen. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  Wählen Sie in der Konfigurationsstruktur im linken Bereich die ER-Konfiguration aus, die Sie benötigen.
 8.  Wählen Sie im Inforegister **Versionen** die erforderliche Version der ausgewählten ER-Konfiguration aus.
-9.  Klicken Sie auf **Importieren**, um die ausgewählte Version vom LCS auf die aktuelle Dynamics 365 for Operations Instanz herunterzuladen. **Hinweis:** Die Schaltfläche **Importieren** ist nicht für ER-Konfigurationsversionen verfügbar, die in der aktuellen Dynamics 365 for Operations-Instanz bereits vorhanden sind. [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+9.  Klicken Sie auf **Importieren**, um die ausgewählte Version vom LCS auf die aktuelle Finance and Operations Instanz herunterzuladen. **Hinweis:** Die Schaltfläche **Importieren** ist nicht für ER-Konfigurationsversionen verfügbar, die in der aktuellen Finance and Operations-Instanz bereits vorhanden sind. [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 **Hinweis:** Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden. Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden. Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können. Weitere Informationen finden Sie in der Liste der zugehörigen Artikel.
 

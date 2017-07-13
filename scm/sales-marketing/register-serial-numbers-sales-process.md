@@ -3,15 +3,15 @@ title: Register-Seriennummeren im Verkaufsvorgang
 description: "Dieser Artikel erläutert, wie Sie Seriennummern auf Lieferscheinen oder Rechnungen während des Verkaufsprozesses erfassen können. Diese Funktion ist sinnvoll, wenn ein Unternehmen nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen möchte, aber keine Seriennummern von Zugang bis Abgang im Bestand verwalten muss."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
-ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d984a6af2b48f02120ea61b385522a6400d93d4a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ffb567c0ba9c95d059e64e24cbe0ea53ec9f7bc9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,14 +32,15 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
 Dieser Artikel erläutert, wie Sie Seriennummern auf Lieferscheinen oder Rechnungen während des Verkaufsprozesses erfassen können. Diese Funktion ist sinnvoll, wenn ein Unternehmen nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen möchte, aber keine Seriennummern von Zugang bis Abgang im Bestand verwalten muss.
 
-Viele Unternehmen möchten nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen und müssen keine Seriennummern von Zugang bis Abgang im Bestand verwalten. In diesen Szenarien ermöglicht Microsoft Dynamics 365 for Operations es Ihnen, die Seriennummern auf den Lieferscheinen oder Rechnungen zu erfassen, wenn Produkte verkauft werden. Wenn Produkte später zurückgesendet werden, können Sie jedes Produkt zu einer Rechnung nachverfolgen, um zu bestimmen, ob Sie das Produkt verkauft haben und ob die Service- oder Garantieverpflichtungen gültig sind.
+Viele Unternehmen möchten nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen und müssen keine Seriennummern von Zugang bis Abgang im Bestand verwalten. In diesen Szenarien ermöglicht Microsoft Dynamics 365 for Finance and Operations es Ihnen, die Seriennummern auf den Lieferscheinen oder Rechnungen zu erfassen, wenn Produkte verkauft werden. Wenn Produkte später zurückgesendet werden, können Sie jedes Produkt zu einer Rechnung nachverfolgen, um zu bestimmen, ob Sie das Produkt verkauft haben und ob die Service- oder Garantieverpflichtungen gültig sind.
 Gibt es Vorbedinguungen?
 ----------------------------
 
-Sie müssen Seriennummern für den Verkaufsprozess aktivieren, indem Sie die Option **Aktiv im Verkaufsprozess** auf der Seite **Rückverfolgungsangabengruppen** auswählen. Die folgenden Ereignisse treten dann in Microsoft Dynamics 365 for Operations auf:
+Sie müssen Seriennummern für den Verkaufsprozess aktivieren, indem Sie die Option **Aktiv im Verkaufsprozess** auf der Seite **Rückverfolgungsangabengruppen** auswählen. Die folgenden Ereignisse treten dann in Microsoft Dynamics 365 for Finance and Operations auf:
 -   Wählen Sie im Inforegister **Seriennummern** die Option **Seriennummernkontrolle** aus. Wenn diese Option ausgewählt ist, müssen Sie eine Seriennummer für jeden Artikel auf dem Lieferschein oder der Rechnung erfassen.
 -   Alle Auswahlen auf der Rückverfolgungsangabengruppe für Seriennummern werden deaktiviert, außer der Option **Leerer Abgang zulässig**. Sie können die Option **Leerer Abgang zulässig** auswählen, um die Seriennummernkontrolle zu überschreiben und zuzulasen, dass Produkte ohne Registrierung von Seriennummern verpackt und fakturiert werden.
 
@@ -56,7 +57,7 @@ Die Einstellungen der Rückverfolgungsangabengruppe, die dem Produkt zugewiesen 
 Sie können Teilrechnungen und Lieferscheine für Aufträge erstellen und nur die Seriennummern für Artikel erfassen, die diese Rechnungen und Lieferscheine beinhalten. Wenn Sie eine Teilrechnung erstellen möchten und Sie mehr als einen Lieferschein für den Auftrag haben, können Sie Seriennummern von mehr als einem Lieferschein einschließen. Es kann jedoch nur einen Lieferschein geben, der nicht alle Seriennummern umfasst. Wenn also beispielsweise drei Lieferscheine vorliegen und jeder Lieferschein zwei serialisierte Artikel umfasst, können Sie keine Teilrechnung für einen Artikel von jedem Lieferschein erstellen.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Was tue ich, wenn eine Seriennummer nicht lesbar ist?
-Wenn eine Seriennummer nicht gelesen oder gescannt werden kann, können Sie eine Leerzeile für den Artikel erstellen, indem Sie auf **Nicht lesbar**auf der Seite **Seriennummern**klicken. Wenn die Seriennummer später verfügbar wird, können Sie die Rechnung oder der Lieferschein aktualisieren. Weitere Informationen finden Sie im nächsten Abschnitt, "Kann ich die Seriennummern korrigieren oder ändern, die ich für einen Auftrag erfasst habe?"
+Wenn eine Seriennummer nicht gelesen oder gescannt werden kann, können Sie eine Leerzeile für den Artikel erstellen, indem Sie auf **Nicht lesbar** auf der Seite **Seriennummern** klicken. Wenn die Seriennummer später verfügbar wird, können Sie die Rechnung oder der Lieferschein aktualisieren. Weitere Informationen finden Sie im nächsten Abschnitt, "Kann ich die Seriennummern korrigieren oder ändern, die ich für einen Auftrag erfasst habe?"
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Kann ich die Seriennummern korrigieren oder ändern, die ich für einen Auftrag erfasst habe?
 Ja, Sie können Seriennummern ändern, wenn die folgenden Bedingungen erfüllt sind:

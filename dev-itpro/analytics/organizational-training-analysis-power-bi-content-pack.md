@@ -1,15 +1,15 @@
 ---
 title: Organisatorische Trainings-Power BI-Inhalt
-description: "In diesem Thema wird der Dynamics 365 for Operations - (Organisatorische Trainings-Power BI-Inhalt beschrieben. Es wird erläutert, wie Sie auf das Content-Pack zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+description: "In diesem Thema wird der Power BI-Inhalt Finance and Operations – Organisatorisches Training beschrieben. Es wird erläutert, wie Sie auf das Content-Pack zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 263874
 ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e1bfe405e2e4bf6445567d966ab20bd8645f8dbf
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 26499bf5423bc3711d110bd7e548eda238162b7a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird der Dynamics 365 for Operations - (Organisatorische Trainings-Power BI-Inhalt beschrieben. Es wird erläutert, wie Sie auf das Content-Pack zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird der Power BI-Inhalt Finance and Operations – Organisatorisches Training beschrieben. Es wird erläutert, wie Sie auf das Content-Pack zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
 <a name="accessing-the-content-pack"></a>Zugreifen auf das Inhaltspaket
 --------------------------
 
-Sie finden das Organisatorische Trainings-Content-Pack in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Inhalte herunterladen und mit Ihrem Microsoft Dynamics 365 for Operations verbinden, finden Sie unter [Power Bi Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
+Sie finden das Organisatorische Trainings-Content-Pack in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Inhalte herunterladen und mit Ihrem Microsoft Dynamics 365 for Finance and Operations verbinden, finden Sie unter [Power Bi-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Berichte, die im Paket enthalten sind
-Nachdem Sie das Inhaltspaket mit Ihren Dynamics 365 for Operations Daten verbunden haben, zeigen das Dashboard und die Berichte Ihre Organisationsdaten an. Wenn Sie bisher noch nie Microsoft Power BI verwendet haben, finden Sie weitere Informationen unter [Erste Schritte in Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Die Berichte, die im Paket enthalten sind, haben Diagrammen und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
+Nachdem Sie das Inhaltspaket mit Ihren Finance and Operations-Daten verbunden haben, zeigen die Berichte die Daten Ihrer Organisation an. Wenn Sie bisher noch nie Microsoft Power BI verwendet haben, finden Sie weitere Informationen unter [Erste Schritte in Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Die Berichte, die im Paket enthalten sind, haben Diagrammen und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
 
 | Bericht          | Inhalt                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
@@ -48,7 +48,7 @@ Nachdem Sie das Inhaltspaket mit Ihren Dynamics 365 for Operations Daten verbund
 Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Dynamics 365 for Operations-Daten werden für die Berichte des Organizational Training-Inhaltspakets verwendet. Die folgende Tabelle zeigt die Entitäten, auf denen das Paket basiert.
+Finance and Operations-Daten werden für die Berichte des Inhaltspakets für das organisatorische Training verwendet. Die folgende Tabelle zeigt die Entitäten, auf denen das Paket basiert.
 
 | Entität                    | Inhalt                                                         | Beziehungen mit anderen Entitäten                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
