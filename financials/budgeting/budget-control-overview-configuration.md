@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
 ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
 ms.contentlocale: de-de
 ms.lasthandoff: 06/20/2017
-
 
 ---
 
@@ -128,3 +128,4 @@ Sobald die Budgetsteuerung aktiviert wird, erhalten Benutzer Budgetsteuerungswar
 Von dieser Seite aus können Benutzer auf der Seite **Budgetsteuerungsstatistiken** Budgetverfügbarkeiten nach Perioden anzeigen und Reservierungen für eine ausgewählte Budgetsteuerungsdimensionskombination anzeigen. Benutzer können auf der Seite **Budgetsteuerungsstatistik** auch die Budgetverfügbarkeit für alle Finanzdimensionskombinationen anzeigen, die in der Budgetsteuerung verwendet werden. 
 
 Wenn die Budgetsteuerung für Bestellungen aktiviert ist, kann der Budget-Manager den Arbeitsbereich **Sachkontobudgets und Planungen** verwenden, um die Warteschlange aller nicht bestätigter Bestellungen mit Budgetprüfungswarnungen und -fehlern überprüfen. Wenn der Budget-Manager Berechtigungen für Budgetüberschreitung konfiguriert hat, kann er oder sie die Bestellung direkt im Arbeitsbereich bestätigen.    
+
