@@ -24,9 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-<a id="cost-accounting-home-page" class="xliff"></a>
-
-# Startseite für die Kostenbuchhaltung
+# <a name="cost-accounting-home-page"></a>Startseite für die Kostenbuchhaltung
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,9 +47,7 @@ Das Modul "Kostenbuchhaltung" ermöglicht es Ihnen, die folgenden Aufgaben auszu
 -   Erstellen Sie Auszüge, die im Arbeitsbereich angezeigt werden können.
 -   Erstellen Sie Berichte mit Excel.
 
-<a id="get-started" class="xliff"></a>
-
-## Erste Schritte
+## <a name="get-started"></a>Erste Schritte
 
 > [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
@@ -68,16 +64,12 @@ Zum besseren Verständnis der Verwendungsmöglichkeiten der Kostenbuchhaltung be
 -   [Kostenobjektdimensionen](cost-objects.md)
 -   [Erstellen von Kostenfaktoren](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (Aufgabenleitfaden)
 
-<a id="cost-control-mobile-workspace" class="xliff"></a>
-
-## Mobiler Kostensteuerungs-Arbeitsbereich
+## <a name="cost-control-mobile-workspace"></a>Mobiler Kostensteuerungs-Arbeitsbereich
 Mit dem mobilen Arbeitsbereich Kostensteuerung können Kostenstellenmanager die Kostenstellenleistung jederzeit und überall finden.
 
 -   [Mobiler Kostensteuerungs-Arbeitsbereich](cost-controlling-mobile-workspace.md)
 
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
-
-## Kostenrechnungsanalyse Power BI Inhalt
+## <a name="cost-accounting-analysis-power-bi-content"></a>Kostenrechnungsanalyse Power BI Inhalt
 Die Kostenrechnungsanalyse Microsoft Power BI Inhalt dient für die Kostencontroller oder alle jene, die für die Ausführung der Kostensteuerung für eine Organisation verantwortlich sind. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten. Es verwendet Buchungsdaten aus der Kostenrechnung in Finance and Operations und erstellt eine zusammengeführte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten nach Kostenträger filtern, um die Kostensteuerung der Organisationseinheiten vorzunehmen, selbst wenn die Organisation mehrere juristische Personen hat.
 
 -   [Kostenrechnungsanalyse Power BI Inhalt](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
