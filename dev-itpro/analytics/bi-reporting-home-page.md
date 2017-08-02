@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 745abbfde09bab40f032c13d1b0293e0990a3de3
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 85000ee4507e1d716c6118441d77d94091494f33
 ms.contentlocale: de-de
-ms.lasthandoff: 06/29/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -73,32 +73,32 @@ In diesem Thema werden die BI- und Berichterstellungsressourcen aufgeführt, die
 -   [Zielorte für elektronische Berichterstellung](electronic-reporting-destinations.md)
 -   [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](download-electronic-reporting-configuration-lcs.md)
 -   [Eine elektronische Berichtskonfiguration verwenden, um Power BI mit Daten aus Finance and Operations bereitzustellen](general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [ER – Konfigurationsanbieter erstellen und als aktiv markieren](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (Aufgabenleitfaden)
--   [ER – Spezifisches Datenmodell für Designdomänen](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (Aufgabenleitfaden)
--   [ER – Definieren der Modellzuordnung und Auswählen der Datenquellen](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (Aufgabenleitfaden)
--   [ER – Zuordnen des Datenmodells zu ausgewählten Datenquellen](http://ax.help.dynamics.com/en/wiki/er-map-data-model-to-selected-data-sources/) (Aufgabenleitfaden)
--   [ER – Spezifisches Datenformat für Designdomänen](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-format/) (Aufgabenleitfaden)
--   [ER – Upload einer Konfiguration in Lifecycle Services](http://ax.help.dynamics.com/en/wiki/upload-a-configuration-into-lifecycle-services/) (Aufgabenleitfaden)
--   [ER – Importieren einer Konfiguration aus Lifecycle Services](http://ax.help.dynamics.com/en/wiki/import-a-configuration-from-lifecycle-services/) (Aufgabenleitfaden)
--   [ER – Entwerfen einer Konfiguration zum Erstellen von Berichten im OPENXML-Format](http://ax.help.dynamics.com/en/wiki/design-a-configuration-for-generating-reports-in-openxml-format/) (Aufgabenleitfaden)
--   [ER – Konfigurieren von Zielen](http://ax.help.dynamics.com/en/wiki/configure-destinations/) (Aufgabenleitfaden)
--   [ER – Verwenden von Finanzdimensionen als Datenquelle (Teil 1: Entwerfen des Datenmodells)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-1-design-data-model/) (Aufgabenleitfaden)
--   [ER – Verwenden von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-2-model-mapping/) (Aufgabenleitfaden)
--   [ER – Verwenden von Finanzdimensionen als Datenquelle (Teil 3: Entwerfen des Berichts)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-3-design-the-report/) (Aufgabenleitfaden)
--   [ER – Verwenden von Finanzdimensionen als Datenquelle (Teil 4: Ausführen des Berichts)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-4-run-the-report/) (Aufgabenleitfaden)
--   [ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 1: Erstellen des Formats)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-1-create-format/) (Aufgabenleitfaden)
--   [ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 2: Konfigurieren der Berechnung)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-2-configure-computations/) (Aufgabenleitfaden)
--   [ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 3: Nutzen von Berechnungen für die Ausgabe)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-3-use-computations-to-make-the-output/) (Aufgabenleitfaden)
--   [ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 4: Ausführen der Formatierung)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-4-run-format/) (Aufgabenleitfaden)
--   [ER – Verwenden horizontal erweiterbarer Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten (Teil 1: Entwerfen des Formats)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1-design-format/) (Aufgabenleitfaden)
--   [ER – Verwenden horizontal erweiterbarer Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten (Teil 2: Ausführen der Formatierung)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2-run-format/) (Aufgabenleitfaden)
--   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 1: Vorbereiten des Datenmodells)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-1-prepare-data-model/) (Aufgabenleitfaden)
--   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 2: Erweitern des Datenmodells)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-2-extend-data-model/) (Aufgabenleitfaden)
--   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Erstellen des Formats)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-3-create-format/) (Aufgabenleitfaden)
--   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 4: Ausführen der Formatierung)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-4-run-format/) (Aufgabenleitfaden)
--   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 5: Ändern und Ausführen der Formatierung)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (Aufgabenleitfaden)
--   [ER – Generieren elektronischer Dokumente für Zahlungen mithilfe einer Formatkonfiguration](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (Aufgabenleitfaden)
--   [ER – Aktualisieren des Formats durch Verwendung einer neuen Basisversion dieses Formats](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (Aufgabenleitfaden)
+-   [ER – Konfigurationsanbieter erstellen und als aktiv markieren](/dynamics365/unified-operations/do-not-publish/er-configuration-provider-mark-it-active-2016-02) (Aufgabenleitfaden)
+-   [ER – Spezifisches Datenmodell für Designdomänen](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-data-model-2016-02-05) (Aufgabenleitfaden)
+-   [ER – Definieren der Modellzuordnung und Auswählen der Datenquellen](/dynamics365/unified-operations/do-not-publish/er-define-model-mapping-select-data-sources-2016-02-05) (Aufgabenleitfaden)
+-   [ER – Zuordnen des Datenmodells zu ausgewählten Datenquellen](/dynamics365/unified-operations/do-not-publish/er-map-data-model-selected-data-sources-2016-02-05) (Aufgabenleitfaden)
+-   [ER – Spezifisches Datenformat für Designdomänen](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-format-2016-02-05) (Aufgabenleitfaden)
+-   [ER – Upload einer Konfiguration in Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services) (Aufgabenleitfaden)
+-   [ER – Importieren einer Konfiguration aus Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services) (Aufgabenleitfaden)
+-   [ER – Entwerfen einer Konfiguration zum Erstellen von Berichten im OPENXML-Format](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11) (Aufgabenleitfaden)
+-   [ER – Konfigurieren von Zielen](/dynamics365/unified-operations/do-not-publish/er-destinations-2016-05) (Aufgabenleitfaden)
+-   [ER – Verwenden von Finanzdimensionen als Datenquelle (Teil 1: Entwerfen des Datenmodells)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1) (Aufgabenleitfaden)
+-   [ER – Verwenden von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2) (Aufgabenleitfaden)
+-   [ER – Verwenden von Finanzdimensionen als Datenquelle (Teil 3: Entwerfen des Berichts)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3) (Aufgabenleitfaden)
+-   [ER – Verwenden von Finanzdimensionen als Datenquelle (Teil 4: Ausführen des Berichts)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4) (Aufgabenleitfaden)
+-   [ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 1: Erstellen des Formats)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1) (Aufgabenleitfaden)
+-   [ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 2: Konfigurieren der Berechnung)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2) (Aufgabenleitfaden)
+-   [ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 3: Nutzen von Berechnungen für die Ausgabe)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3) (Aufgabenleitfaden)
+-   [ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 4: Ausführen der Formatierung)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4) (Aufgabenleitfaden)
+-   [ER – Verwenden horizontal erweiterbarer Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten (Teil 1: Entwerfen des Formats)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1) (Aufgabenleitfaden)
+-   [ER – Verwenden horizontal erweiterbarer Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten (Teil 2: Ausführen der Formatierung)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2) (Aufgabenleitfaden)
+-   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 1: Vorbereiten des Datenmodells)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1) (Aufgabenleitfaden)
+-   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 2: Erweitern des Datenmodells)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2) (Aufgabenleitfaden)
+-   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Erstellen des Formats)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3) (Aufgabenleitfaden)
+-   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 4: Ausführen der Formatierung)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4) (Aufgabenleitfaden)
+-   [ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 5: Ändern und Ausführen der Formatierung)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5) (Aufgabenleitfaden)
+-   [ER – Generieren elektronischer Dokumente für Zahlungen mithilfe einer Formatkonfiguration](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments) (Aufgabenleitfaden)
+-   [ER – Aktualisieren des Formats durch Verwendung einer neuen Basisversion dieses Formats](/dynamics365/unified-operations/do-not-publish/er-upgrade-format--2016-05) (Aufgabenleitfaden)
 
 
 
