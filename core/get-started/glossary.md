@@ -1,37 +1,35 @@
 ---
-title: "Dynamics 365 for Operations – Glossar"
-description: "Das Microsoft Dynamics 365 for Operations-Glossar enthält Definitionen zu den wichtigsten Begriffen und Konzepten des Produkts Microsoft Dynamics 365 for Operations."
+title: "Finance and Operations – Glossar"
+description: "Dieses Glossar enthält Definitionen der wichtigsten Begriffe und Konzepte in Bezug auf Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
+ms.translationtype: HT
+ms.sourcegitcommit: 84ee9110fa32a551133a6ab4b7c6feb9ea9c017a
+ms.openlocfilehash: 0b4d5285cc1aa44da566ec5d7fa7ebe568729fdf
 ms.contentlocale: de-de
-ms.lasthandoff: 06/08/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations – Glossar
+# <a name="finance-and-operations-glossary"></a>Finance and Operations – Glossar
 
 [!include[banner](../includes/banner.md)]
 
-
-Das Microsoft Dynamics 365 for Operations-Glossar enthält Definitionen zu den wichtigsten Begriffen und Konzepten des Produkts Microsoft Dynamics 365 for Operations. 
+Dieses Glossar enthält Definitionen der wichtigsten Begriffe und Konzepte in Bezug auf Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
 ### <a name="a"></a>**A**
 
@@ -51,17 +49,9 @@ Ein in den USA verfügbares System für elektronische Überweisungen, dass Über
 
 Die gemessene Menge, die in eine Aktivität einfließt oder durch eine Aktivität hergestellt wird.
 
-###### <a name="address-verification-service"></a>**Dienst für Adressüberprüfung**
+###### <a name="address-verification"></a>**Adressüberprüfung**
 
 Der von einer Kreditkartenverarbeitungsstelle bereitgestellte Dienst, mit dem überprüft wird, ob die von einem Karteninhaber angegebene Adresse mit den Informationen in den Unterlagen der ausstellenden Bank übereinstimmt.
-
-###### <a name="adjusted-unit-price"></a>**Regulierter Preis je Einheit**
-
-Der berechnete Preis je Einheit auf Grundlage der attributbasierten Preisgestaltung und der tatsächlich erhaltenen Stärke.
-
-###### <a name="advanced-pricing"></a>**Erweiterte Preisgestaltung**
-
-Logik zur Berechnung des Einkaufspreises eines Konzentrationsartikels.
 
 ###### <a name="aging"></a>**Fälligkeit**
 
@@ -101,14 +91,13 @@ Der Zeitraum, in dem ein Produkt seine optimale Qualität oder seine spezifische
 
 Ein Quelldokument, das eine unbedingte Zahlungsanweisung eines Dritten dokumentiert, auf Anforderung einen Betrag an eine zweite Partei zu zahlen.
 
-###### <a name="bill-of-materials"></a>**Stückliste**
-
-Eine Liste von Produkten und Mengen, die für die Produktion eines Produkts benötigt werden.
-
 ###### <a name="blocking"></a>**Sperrung**
 
 Die Aktivität zum Sperren eines Dokuments oder Produkts.
 
+###### <a name="bom-bill-of-materials"></a>**Stückliste**
+
+Eine Liste von Produkten und Mengen, die für die Produktion eines Produkts benötigt werden.
 ###### <a name="budget-control"></a>**Budgetsteuerung**
 
 Eine Methode, die dazu dient, Aufwendungen nur dann zu autorisieren, wenn Budgetmittel zur Erfüllung künftiger Zahlungsverpflichtungen reserviert werden können.
@@ -175,14 +164,6 @@ Eine Liste von Hauptkonten.
 
 Eine Buchungskategorie, die verwendet wird, um die finanziellen Auswirkungen der Produktherstellung und der Lagerhaltung zusammenzufassen.
 
-###### <a name="commodity-pricing"></a>**Artikelpreiskalkulation**
-
-Eine Preisgestaltungsstrategie zur Aktualisierung der Preise von Verkaufsartikeln, die aus Rohstoffen hergestellt werden, die häufigen Preisschwankungen unterliegen.
-
-###### <a name="consolidated-order"></a>**Konsolidierter Auftrag**
-
-Ein Quelldokument, das mehrere Referenzaufträge dokumentiert.
-
 ###### <a name="contractor"></a>**Auftragnehmer**
 
 Eine Rolle, die eine Person einnimmt, die an einer Auftragnehmer-Arbeitgeber-Beziehung mit einer juristischen Person beteiligt ist.
@@ -194,10 +175,6 @@ Ein Artikel, der gemeinsam mit einem anderen Artikel hergestellt wird.
 ###### <a name="cost-center"></a>**Kostenstelle**
 
 Eine Organisationseinheit, deren Manager für die budgetierten und tatsächlichen Aufwendungen verantwortlich sind.
-
-###### <a name="cost-of-goods-sold"></a>**Wareneinsatz**
-
-Eine Buchungskategorie, die verwendet wird, um die finanziellen Auswirkungen der Produktherstellung und der Lagerhaltung zusammenzufassen.
 
 ###### <a name="cost-variance"></a>**Kostenabweichung**
 
@@ -223,7 +200,7 @@ Die Zeit, die zum Abschließen einer Aktivität erforderlich ist.
 
 ###### <a name="dashboard"></a>**Dashboard**
 
-Die typische Startseite in Dynamics 365 for Operations. Auf dem Dashboard sehen Benutzer einen Abschnitt für jeden Arbeitsbereich, auf den sie Zugriff haben. Jeder Abschnitt zeigt die Kacheln aus den Zusammenfassungsabschnitten im zugehörigen Arbeitsbereich an. Das Dashboard besteht aus einem Namen und aus Abschnitten mit Kacheln.
+Die typische Startseite in Finance and Operations. Auf dem Dashboard sehen Benutzer einen Abschnitt für jeden Arbeitsbereich, auf den sie Zugriff haben. Jeder Abschnitt zeigt die Kacheln aus den Zusammenfassungsabschnitten im zugehörigen Arbeitsbereich an. Das Dashboard besteht aus einem Namen und aus Abschnitten mit Kacheln.
 
 ###### <a name="data-entity"></a>**Datenentität**
 
@@ -260,10 +237,6 @@ Eine Konfigurationstechnologie, die zum Erstellen von Produktvarianten durch Aus
 ###### <a name="distinct-product"></a>**Eindeutig identifizierbares Produkt**
 
 Ein eindeutig identifizierbares Produkt.
-
-###### <a name="document-blocking"></a>**Dokumentsperrung**
-
-Ein Methode zum Sperren eines Arbeitsgangprozesses, während die bestellten Artikel einem Qualitätssicherungsprozess unterzogen werden.
 
 ###### <a name="document-management-system"></a>**Dokumentverwaltungssystem**
 
@@ -316,10 +289,6 @@ Eine Währung, die einen festen Wechselkurs in Bezug auf eine andere Währung ha
 ###### <a name="fixed-quantity-kanban"></a>**Kanban für feste Menge**
 
 Ein Kanban-Typ, der verwendet wird, wenn einer Kanban-Regel eine konstante Anzahl von Kanbans zugewiesen ist.
-
-###### <a name="flexible-authentication"></a>**Flexible Authentifizierung**
-
-Ein Automatisierungsprozess, bei dem Benutzer mithilfe einer Vielzahl von Identitätsverwaltungssystemen authentifiziert werden können.
 
 ###### <a name="formula"></a>**Formel**
 
@@ -379,10 +348,6 @@ Ein Prozess oder eine Umlagerungsaktivität in einem Produktionsfluss, ausgelös
 
 Die Entnahme von Produktkomponenten aus dem Bestand, um die Kanban-Produktions-Einzelvorgänge abzuschließen.
 
-###### <a name="kanban-product-quantity"></a>**Kanban-Produktmenge**
-
-Der Artikelbedarf, den ein Kanban erfüllt, basierend auf einer Kanban-Regel.
-
 ###### <a name="kanban-rule"></a>**Kanban-Regel**
 
 Eine Regel in einem Lean Manufacturing-System, die Richtlinien für Materialplanung und -wiederbeschaffung umsetzt, indem die Koordination von Verarbeitungs- und Umlagerungsaktivitäten in Produktionsflüssen gesteuert wird.
@@ -410,10 +375,6 @@ Ein alphanumerischer Schlüssel, der einer Partei das Recht einräumt, Software 
 Die Fähigkeit einer Partei, aktuelle Verbindlichkeiten mit aktuellen Aktivposten auszugleichen.
 
 ### <a name="m"></a>**M**
-
-###### <a name="manufacturing-overhead-based-on-material"></a>**Materialbasierte Produktionsgemeinkosten**
-
-Produktionsgemeinkosten werden als Formeln zur Berechnung indirekter Kosten für einen Zuschlagsprozentsatz ausgedrückt. Als Grundlage für eine Berechnungsformel fungiert eine Kostengruppe, die Materialkomponenten zugewiesen wurde. Berechnungsformeln können entweder für einzelne Produkte oder für Produkten zugewiesene Artikelgruppen definiert werden. Dadurch erhöht sich die Flexibilität bei der Berechnung von materialbasierten Produktionsgemeinkosten.
 
 ###### <a name="master-scheduling"></a>**Produktprogrammplanungslauf**
 
@@ -459,10 +420,6 @@ Ein Paket ist eine kompilierbare und zur Bereitstellung geeignete Einheit aus ei
 
 ###### <a name="party"></a>**Partei**
 
-Eine Entität, die eine rechtlich bindende Rolle bei der die Teilnahme an Vertragsverhältnissen spielt.
-
-###### <a name="party"></a>**Partei**
-
 Eine Person oder Organisation, die an wirtschaftlichen Aktivitäten teilnimmt.
 
 ###### <a name="pegging"></a>**Bedarfsverursacher**
@@ -472,10 +429,6 @@ Der Prozess zur Nachverfolgung der Menge eines erforderlichen Artikels bis zu de
 ###### <a name="pegging-event"></a>**Bedarfsverursachendes Ereignis**
 
 Ein Ressourcenflussereignis, das den Bedarf an einem Produkt signalisiert.
-
-###### <a name="phantom-item"></a>**Phantomartikel**
-
-Ein Artikel, der hergestellt, aber nicht gelagert wird.
 
 ###### <a name="planned-intercompany-demand"></a>**Geplanter Intercompany-Bedarf**
 
@@ -489,17 +442,9 @@ Das Erfassen des Geldwerts eines wirtschaftsbezogenen Ereignisses in einem besti
 
 Eine Person, die ein Quelldokument zur Beantragung wirtschaftlicher Ressourcen erstellt.
 
-###### <a name="privilege"></a>**Recht**
-
-Mindestens eine Berechtigung, die ein Benutzer zum Ausführen einer Aufgabe benötigt.
-
 ###### <a name="procurement-catalog"></a>**Beschaffungskatalog**
 
 Eine Auflistung von Produktangeboten, die nach Beschaffungskategorie gruppiert sind. Ein Beschaffungskatalog dient zum Anfordern von Produkten zur internen Verwendung in einer Organisation.
-
-###### <a name="product-component"></a>**Produktkomponente**
-
-Ein Teil eines Produkts.
 
 ###### <a name="product-dimension"></a>**Produktdimension**
 
@@ -507,7 +452,7 @@ Die Produktattribute "Variante", "Größe" und "Farbe", die für eine dimensions
 
 ###### <a name="product-family"></a>**Produktfamilie**
 
-Eine eindeutige Gruppierung von Artikeln, Dienstleistungen oder Rechten, die entweder an denselben Produktions- oder Lieferungsaktivitäten beteiligt sind oder die in denselben Marktsegmenten angeboten werden. In Dynamics 365 for Operations wird die Gruppierung mit einem Planungsverteilungsschlüssel dargestellt.
+Eine eindeutige Gruppierung von Artikeln, Dienstleistungen oder Rechten, die entweder an denselben Produktions- oder Lieferungsaktivitäten beteiligt sind oder die in denselben Marktsegmenten angeboten werden. In Finance and Operations wird die Gruppierung mit einem Planungsverteilungsschlüssel dargestellt.
 
 ###### <a name="product-master"></a>**Produktmaster**
 
@@ -581,10 +526,6 @@ Eine Methode, die verwendet wird, um Plananforderungen in der Produktprogrammpla
 
 Ein Datensatz, der verwendet wird, um die betrieblichen, rechtlichen und finanziellen Auswirkungen von Ressourcenflussereignissen in einem Buchhaltungssystem zu erfassen.
 
-###### <a name="regulated-product"></a>**Reguliertes Produkt**
-
-Ein Produkt, das durch eine Regierungsbehörde reguliert wird und das einer Prüfung auf Einhaltung aller Vorschriften unterzogen wird.
-
 ###### <a name="rfq-request-for-quotation"></a>**Angebotsanforderung**
 
 Ein Quelldokument, das eine Ausschreibung zum Liefern einer Menge eines Produkts zu einem bestimmten Preis und bis zu einem bestimmten Termin dokumentiert.
@@ -593,9 +534,6 @@ Ein Quelldokument, das eine Ausschreibung zum Liefern einer Menge eines Produkts
 
 Die Person, die wirtschaftliche Ressourcen anfordert.
 
-###### <a name="restricted-product"></a>**Eingeschränktes Produkt**
-
-Ein Produkt, dessen Verteilung durch eine Regierungsbehörde eingeschränkt wird.
 
 ### <a name="s"></a>**S**
 
@@ -647,13 +585,6 @@ Die in einer Quelldokumentposition dokumentierte Produktmenge, die einen Bedarf 
 
 Ein Vorkalkulation des zukünftigen Bedarfs, die erstellt wird, indem ein Planungsalgorithmus auf historische Buchungsdaten angewendet wird.
 
-###### <a name="supermarket"></a>**Supermarkt**
-
-Ein Just-in-Time-Lagerplatz für Lagerbestand mit einer begrenzten Kapazität, der dazu dient, Material in der Nähe der Abnahmestelle zu lagern.
-
-###### <a name="system-defined-financial-dimension-type"></a>**Vom System definierter Finanzdimensionstyp**
-
-Eine Finanzdimension, die einer Tabelle oder Sicht in der Datenbank zugeordnet ist und einen Entitätstyp darstellt und deren Werte sich in der Domäne eines der Attribute dieses Entitätstyps befinden.
 
 ### <a name="t"></a>**T**
 
@@ -667,11 +598,11 @@ Eine kontrollierte, geführte Erfahrung durch die Schritte in einer Aufgabenerfa
 
 ###### <a name="task-recorder"></a>**Aufgabenaufzeichnung**
 
-Ein Tool, das in Dynamics 365 for Operations vorinstalliert ist. Beim Erfassen werden alle Ereignisse erfasst, die der Benutzer in die Dynamics 365 for Operations-Benutzeroberfläche eingibt, die in Kommunikation mit dem Server ausgeführt werden – einschließlich hinzugefügter Werte, geänderter Einstellungen, entfernter Daten usw.
+Ein Tool, das in Finance and Operations vorinstalliert ist. Beim Erfassen werden alle Ereignisse erfasst, die der Benutzer in die Finance and Operations-Benutzeroberfläche eingibt, die in Kommunikation mit dem Server ausgeführt werden – einschließlich hinzugefügter Werte, geänderter Einstellungen, entfernter Daten usw.
 
 ###### <a name="task-recording"></a>**Aufgabenaufzeichnung**
 
-Eine Datei, die die Aktivitäten und die Anmerkungen enthält, die aufgezeichnet werden, wenn die Aufgabenaufzeichnung in Microsoft Dynamics 365 for Operations ausgeführt wird.
+Eine Datei, die die Aktivitäten und die Anmerkungen enthält, die aufgezeichnet werden, wenn die Aufgabenaufzeichnung in Finance and Operations ausgeführt wird.
 
 ###### <a name="three-way-matching-policy"></a>**Dreiseitige Abgleichsrichtlinie**
 
@@ -684,12 +615,6 @@ Die Menge mindestens eines Artikels, der übertragen wird oder übertragen werde
 ###### <a name="two-way-matching-policy"></a>**Zweiseitige Abgleichsrichtlinie**
 
 Eine Abgleichsrichtlinie, die den Abgleich der Preisangaben in Kreditorenrechnungen mit den Preisangaben in Bestellungen erfordert.
-
-### <a name="u"></a>**U**
-
-###### <a name="user-defined-financial-dimension-type"></a>**Benutzerdefinierter Finanzdimensionstyp**
-
-Eine Finanzdimension, die einer benutzerdefinierten Liste von Werten zugeordnet ist.
 
 ### <a name="v"></a>**V**
 
@@ -726,7 +651,4 @@ Ein Person, die die Rolle eines Mitarbeiters oder Auftragnehmers einnimmt und ge
 ###### <a name="workspace"></a>**Arbeitsbereich**
 
 Eine Seite, die einen Überblick über eine der Aktivitäten bietet, die der Benutzer ausführt. Die Seite verwendet Kacheln, Listen und Diagramme, um ausstehende Arbeit und zugehörige Daten aus mehreren Quellen anzuzeigen, und die Seite zeigt häufige Aufgaben an, die diesen Daten zugeordnet sind. Im Zusammenfassungsabschnitt des Arbeitsbereichs angezeigte Kacheln werden auch im zugehörigen Abschnitt im Dashboard angezeigt.
-
-
-
 

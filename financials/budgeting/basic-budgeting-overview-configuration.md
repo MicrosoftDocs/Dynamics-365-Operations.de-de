@@ -58,7 +58,7 @@ Definieren Sie ein *Budgetmodell*, das allen oder einigen Budgets entspricht. Si
 > [!NOTE] 
 > Wenn die Budgetsteuerung verwendet wird, können Sie nur ein Budgetmodell einer bestimmten Zeitspanne für den Budgetzyklus zuordnen. 
 
-Erstellen Sie *Budgetcodes *, die den Typ der zu erfassenden Budgettransaktionen und die damit im Zusammenhang stehende Workflows identifizieren. Budgetcodes können die folgende Budgettypen unterstützen:
+Erstellen Sie *Budgetcodes*, die den Typ der zu erfassenden Budgettransaktionen und die damit im Zusammenhang stehende Workflows identifizieren. Budgetcodes können die folgende Budgettypen unterstützen:
 
 -   Ursprüngliches Budget
 -   Umlagerung

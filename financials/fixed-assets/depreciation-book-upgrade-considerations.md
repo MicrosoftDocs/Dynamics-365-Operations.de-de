@@ -64,7 +64,7 @@ Die Parameter befinden sich am Anfang der Klasse  ReleaseUpdateDB70\_FixedAssetJ
 
 *//Geben Sie einen vorzuziehenden der Zuteilung von Belege an*  
 *// true, wenn Sie einen vorhandenen Nummernkreiscode verwenden möchten* 
-* false, wenn Sie den vom System definierten Nummernkreis (Standard) verwende möchten*  const  boolesches NumberSequenceUseExistingCode = false;  
+*false, wenn Sie den vom System definierten Nummernkreis (Standard) verwende möchten*  const  boolesches NumberSequenceUseExistingCode = false;  
 
 *//Wenn der vom System definierte Nummernkreisansatz verwendet wird, geben Sie die Parameter für die Nummersequenz an*
 *//Ein neuer Nummernkreis wird mit mit diesen Parametern erstellt.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
