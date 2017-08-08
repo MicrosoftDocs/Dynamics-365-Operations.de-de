@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: a65de22d01d15510c3f2cb792b86e6a88260bed9
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2044bd5a3c858fb099fa7f612ede9963acc51efb
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,11 +32,12 @@ ms.lasthandoff: 06/20/2017
 
 Diese Seite weist auf Themen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, zu erlernen.
 
-Um auf die neueste Version zu aktualisieren, lesen Sie [Prozess zum Aktualisieren auf das neueste ](../migration-upgrade/upgrade-latest-update.md).
+Um auf die neueste Version zu aktualisieren, lesen Sie [Prozess zum Aktualisieren auf das neueste](../migration-upgrade/upgrade-latest-update.md).
+
+> [!NOTE]
+> Dynamics 365 for Operations (on-premises) wird derzeit umbenannt. In Mitteilungen und Lizenzanleitungen sehen Sie überall Dynamics 365 for Operations (lokal). Der Produktname, den Sie bei der Bereitstellung des Produkts sehen, lautet Dynamics 365 for Finance and Operations, Enterprise-Edition. Beide Namen beziehen sich auf dasselbe Produkt.
 
 ## <a name="application-releases"></a>Anwendungsfreigabe
-
-Weitere Informationen über die mobilen Arbeitsbereiche und Power BI-Inhalt, der kürzlich veröffentlicht wurde, finden Sie unter [Mobile Arbeitsbereiche, die kürzlich für die mobile App von Dynamics 365 for Finance and Operations veröffentlicht wurden](../mobile-apps/mobile-workspaces-released.md) sowie [Power BI-Inhalt, der kürzlich für Dynamics 365 for Finance and Operations veröffentlicht wurde](../analytics/power-bi-home-page.md)
 
 <table>
 <colgroup>
@@ -59,7 +60,7 @@ Weitere Informationen über die mobilen Arbeitsbereiche und Power BI-Inhalt, der
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations (Enterprise-Edition)</td>
 <td>Update im Juli 2017</td>
-<td>X</td>
+<td>7.2.11792.56024</td>
 <td>2017. Juni</td>
 <td><a href="whats-new-application-July-2017-update.md">Neues oder Änderungen in Dynamics 365 for Finance and Operations, Enterprise-Edition, Juli 2017 – Update</a>Neu</td>
 </tr>
@@ -110,7 +111,7 @@ Weitere Informationen über die mobilen Arbeitsbereiche und Power BI-Inhalt, der
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations (Enterprise-Edition)</td>
 <td>Plattform-Update 8</td>
-<td>X</td>
+<td>7.0.4565.16212</td>
 <td>2017. Juni</td>
 <td><a href="whats-new-platform-update-8.md">Neues oder Änderungen in Dynamics 365 for Finance and Operations, Enterprise-Edition, Plattform-Update 8 (Juni 2017)</a></td>
 </tr>

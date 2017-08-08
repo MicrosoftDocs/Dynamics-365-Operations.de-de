@@ -1,5 +1,5 @@
 ---
-title: Dokumentation oder Schulungen mithilfe von&quot;Aufgabenaufzeichnungen&quot; erstellen
+title: Dokumentation oder Schulungen mithilfe von"Aufgabenaufzeichnungen" erstellen
 description: "In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden."
 author: josaw1
 manager: AnnBe
@@ -11,19 +11,18 @@ ms.technology:
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ee6d455c44a38d9b3962ca20a5cb28007c19cf1d
-ms.openlocfilehash: e71c2638caccb9a31c5254a3cf68c802808960b9
+ms.translationtype: HT
+ms.sourcegitcommit: e161e25568506c6e64bc52b2fad404b0706024a1
+ms.openlocfilehash: f29df4a12f5fb0587cf4aeb1b223bda2e3dd4152
 ms.contentlocale: de-de
-ms.lasthandoff: 06/17/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -127,8 +126,6 @@ Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich an
 [Mit Hilfe verbinden](..\get-started\help-connect.md)
 
 [Aufgabenaufzeichnung](task-recorder.md)
-
-[Vor kurzem hinzugefügte Aufgabenaufzeichnungsfunktionen](\core\get-started\recently-added-editing-features-in-task-recorder)
 
 [Erstellen von umfangreicher Hilfethemen mit der Aufgabenaufzeichnung (externer Link)](https://mbspartner.microsoft.com/AX/Videos/970)
 

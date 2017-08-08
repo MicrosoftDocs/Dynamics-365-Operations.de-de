@@ -3,26 +3,26 @@ title: Kreditorenrzahlung unter Verwendung eines Zahlungsvorschlags erstellen
 description: "Dieser Artikel gibt einen Überblick über die Zahlungsvorschlagsoptionen und umfasst einige Beispiele, die zeigen, wie Zahlungsvorschläge funktionieren. Zahlungsvorschläge werden oft verwendet, um Kreditorenzahlungen zu erstellen, da die Abfrage dazu verwendet werden kann, Kreditorenrechnungen für die Zahlung, basierend auf Kriterien wie dem Fälligkeitsdatum und dem Skonto, schnell auszuwählen."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b351ea58a25c763dcf90ff1c61e0e3b3cba6c34a
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: aac70abc25c45ef4479425cdb648f4450d5db2dc
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,11 +39,11 @@ Die Zahlungsvorschlagsabfrage enthält verschiedene Registerkarten. Jede davon h
 
 ## <a name="parameters"></a>Parameter
 -   **Wählen Sie Rechnungen nach**  – Rechnungen innerhalb des Datumsbereichs aus, der nach ** **Von-Datum** angegeben wird und **Bis-Datum** ** Felder definiert wird und nach Fälligkeitsdatum, Skontodatum oder beidem aktiviert werden kann. Wenn Sie das Skontodatum verwenden, sucht das System zuerst nach Rechnungen, die zwischen dem Von-Datum und dem Bis-Datum liegen. Das System bestimmt dann, ob die Rechnung für das Skonto berechtigt ist, indem es Sitzungsdatum verwendet, um zu überprüfen, dass das Skontodatum nicht bereits verstrichen ist.
--   **Von Datum** und**Bis Datum** – Rechnungen, die ein Fälligkeitsdatum oder Skontodatum innerhalb dieses Datumsbereichs haben, werden zur Zahlung ausgewählt.
--   **Zahlungsdatum** – Wenn ein Datum definiert wird, werden alle Zahlungen an diesem Datum erstellt. Das Feld **Mindestzahlungsdatum** wird ignoriert.
+-   **Von Datum** und **Bis Datum** – Rechnungen, die ein Fälligkeitsdatum oder Skontodatum innerhalb dieses Datumsbereichs haben, werden zur Zahlung ausgewählt.
+-   **Zahlungsdatum** – Dieses wird nur verwendet, wenn das Feld **Zeitraum** für die Zahlungsmethode auf **Summe** gesetzt ist. Wenn ein Datum definiert ist, werden alle Zahlungen an diesem Datum erzeugt. Das Feld **Mindestzahlungsdatum** wird ignoriert.
 -   **Mindestzahlungsdatum** – Geben Sie das Mindestzahlungsdatum ein. Beispielsweise zeigen die Felder **Von-Datum** und **Bis Datum** einen Bereich vom 1. September bis zum 10. September anzeigen und das und das Mindestzahlungsdatum ist.am 5. September In diesem Fall haben alle Rechnungen ein Fälligkeitsdatum vom 1. September bis zum 5. September und ein Zahlungsdatum vom 5. September. Allerdings haben alle Rechnungen, die ein Fälligkeitsdatum vom 5. September bis zum 10. September, ein Zahlungsdatum, das dem Fälligkeitsdatum jeder Rechnung entspricht.
 -   **Betragsgrenze** – Geben Sie den maximalen Gesamtbetrag für alle Zahlungen ein.
--   **Erstellen Sie Zahlungen ohne Rechnungsvorschau** – Wenn Sie die Option auf **Ja** festlegen, werden Zahlungen umgehend auf der Seite**Kreditorenzahlungen** erstellt. Die Seite **Zahlungsvorschlag** wird übersprungen. Daher werden Zahlungen schneller erstellt. Zahlungen können von der Seite **Kreditorenzahlungen** aus immer noch geändert werden. Alternativ können Sie zur Seite **Zahlungsvorschlag** zurückkehren, indem Sie die Schaltfläche **Rechnungen für ausgewählte Zahlung bearbeiten** verwenden.
+-   **Erstellen Sie Zahlungen ohne Rechnungsvorschau** – Wenn Sie die Option auf **Ja** festlegen, werden Zahlungen umgehend auf der Seite **Kreditorenzahlungen** erstellt. Die Seite **Zahlungsvorschlag** wird übersprungen. Daher werden Zahlungen schneller erstellt. Zahlungen können von der Seite **Kreditorenzahlungen** aus immer noch geändert werden. Alternativ können Sie zur Seite **Zahlungsvorschlag** zurückkehren, indem Sie die Schaltfläche **Rechnungen für ausgewählte Zahlung bearbeiten** verwenden.
 
 ## <a name="advanced-options"></a>Erweiterte Optionen
 -   **Kreditorensaldo überprüfen** – Wenn diese Option auf **Ja** festgelegt ist, prüft das System, ob der Kreditor kein Sollsaldo hat, bevor irgendeine Rechnung bezahlt wird. Wenn ein Kreditor einen Sollsaldo hat, wird keine Zahlung erstellt. So kann beispielsweise der Kreditor Zahlungen oder Gutschriften haben, die gebucht wurden, jedoch noch nicht ausgeglichen wurden. In diesen Fällen sollte dem Kreditor nicht bezahlt werden. Stattdessen sollten die Gutschriften oder die Zahlungen für die ausstehenden Rechnungen ausgeglichen werden.
@@ -115,11 +115,11 @@ Mit der Dimensionssteuerung können Steuergruppierung von generierten Positionen
 -   Das Feld **Dimensionskontrolle** ist ohne weitere Definition der Dimensionen aktiviert. Der Zahlungsvorschlag wird erstellt, ohne Dimensionen des Artikeleingangs zu berücksichtigen. Die erstellte Buchung übernimmt keine Dimensionen auf dem angewendeten Eintrag.
 -   Das Feld **Dimensionskontrolle** ist und die weiteren Dimensionen sind aktiviert. Jetzt können Sie definieren, wie die Dimensionen in das Journal kopiert werden. Beispiel: • Wählen Sie das **BusinessUnit** Kontrollkästchen, um einen Zahlungsvorschlag pro Unternehmenseinheit für die Zahlungsmethode zu erstellen, • Wählen Sie das **CostCenter**, um für die Zahlungsmethode einen Zahlungsvorschlag pro Kostenstelle zu erstellen
 
-**Hinweis:**Bei Auswahl mehrerer Dimensionen wird eine dritte Option, ein Zahlungsvorschlag für die ausgewählte Kombination aus Dimensionen erstellt.
+**Hinweis:** Bei Auswahl mehrerer Dimensionen wird eine dritte Option, ein Zahlungsvorschlag für die ausgewählte Kombination aus Dimensionen erstellt.
 
 #### <a name="bank-account-selection"></a>Bankkontoauswahl
 
-Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmahethoden** einrichten, indem Sie die Schaltfläche **Bankkonten**verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp**  = **Bank** verfügbar ist.
+Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmahethoden** einrichten, indem Sie die Schaltfläche **Bankkonten** verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp**  = **Bank** verfügbar ist.
 
 
 

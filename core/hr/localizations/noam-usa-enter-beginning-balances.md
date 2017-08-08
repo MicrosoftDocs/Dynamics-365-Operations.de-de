@@ -10,25 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: kherr
-ms.search.validFrom: 2017-07-01
+ms.search.validFrom: 2017-07-01T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 911a51e2498800e7ee7b1562b66c56967eef0505
-ms.openlocfilehash: e6213d2e01445b78c6d8f98fc6a55f7c551231b5
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: d9e3018eb7b6c20cfd5e23a10d15e230009196de
 ms.contentlocale: de-de
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Eingeben von Lohnanfangssalden
 
-[!include[banner](../../includes/banner.md)]]
+[!include[banner](../../includes/banner.md)]
 
 In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, die Daten für eine neue Lohnimplementierung von einem anderen System transferieren. Zur Vorbereitung auf die Eingabe anfänglicher Lohnsalden werden folgende Informationen überprüft:
 
@@ -47,9 +46,6 @@ In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkomm
 Wenn Sie planen, Anfangssalden einzugeben, überlegen Sie, wie genau die Daten sein müssen. Die meisten Unternehmen geben einen einzelnen, konsolidierten Betrag seit Jahresbeginn ein. Wenn detailliertere Informationen erforderlich sein, können Salden in vierteljährliche Stufen eingegeben werden. Die festgelegte benötigte Detailebene gibt vor, wie viele manuelle Zahlungsaufstellungen für jede Arbeitskraft erstellt werden müssen. Für einen einzelnen Betrag seit Jahresbeginn ist nur eine manuelle Aufstellung pro Mitarbeiter erforderlich. Verwenden Sie dazu die Beträge seit Jahresbeginn von der letzten Zahlungsaufstellung aus dem alten System, und geben Sie diesen Betrag in das neue Lohnsystem ein.
 
 Das folgende Beispiel zeigt, wie Sie Lohnanfangssalden von Mitarbeitern einschließlich Einkommenscodes, Vergütungen(Vorteile)/Abzüge und Steuern eingeben. In der Realität hätten Sie eine Position für jeden Einkommenscode, Vergütungsabzug, Vergütungsbeitrag, für die Mitarbeitersteuer und die Arbeitgebersteuer, wobei der eingegebene Betrag der Betrag seit Jahresbeginn wäre. Führen Sie mit dieser Liste von Codes und Beträgen die Schritte zum Erstellen einer manuellen Lohnabrechnung und Zahlungsaufstellung, bei der die Buchhaltung deaktiviert ist, um Anfangssalden für Lohnzwecke zu übertragen, aus.  Sie deaktivieren die Buchhaltung, da Sie diese Zahlungsaufstellung der Anfangssalden nicht im Hauptbuch buchen möchten. Dies wurde im vorherigen System ausgeführt und wird ins neue System übertragen, wenn Sie die Anfangssalden im Hauptbuch einrichten.
-
-> [!NOTE] 
-> Wenn Sie die unten stehenden Schritte wiederholen möchten, verwenden Sie die Demodaten. Die Demodaten können von der PartnerSource heruntergeladen werden.
 
 ### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a>A. Einrichten von Einkommenscodes für Lohnanfangssalden
 Wenn Sie Lohnanfangssalden eingeben, müssen Sie sich vergewissern, dass die Einkommenscodes, die Sie verwenden, bei aktivierter Option „Die Bearbeitung von Lohnabrechnungssätzen zulassen“ konfiguriert werden. Dadurch können Sie den Betrag manuell aus dem vorherigen System erfassen. 
@@ -101,7 +97,7 @@ Position 3: **Lohnabrechnungsposition**-Registerkarte
 | Manuell          | (markiert)   |
 
 > [!NOTE]
-> Das manuelle Markieren der Kontrollkästcheneinstellung auf der Registerkarte **Positionsdetails** für jede einzelne Lohnabrechnungsposition ist wichtig, damit Lohnanfangssalden für jede Arbeitskraft verfügbar sind.
+> Damit die Gehaltsanfangssalden für jeden Mitarbeiter eingegeben werden können, muss für jede Lohnabrechnungsposition der Schieberegler **Manuell** auf der Registerkarte **Positionsdetails** auf **Ja** gestellt werden.
 
 3. Wählen Sie im Bereich **Aktivität** **Lohnabrechnung freigeben** aus USA-FED-ER-FICA.
 
@@ -111,15 +107,15 @@ Position 3: **Lohnabrechnungsposition**-Registerkarte
 |--------------------|-----------|
 | Zahlungsdatum       | 6/30/2017 |
 | Zahlungslauftyp   | Manuell    |
-| Buchhaltung deaktivieren | (markiert)  |
+| Buchhaltung deaktivieren |   Ja     |
 
 > [!NOTE] 
 > Dies ist nur verfügbar, wenn der Zahlungslauftyp manuell ist und wenn der Benutzer die Buchhaltung für die Zahlungsausführung deaktivieren möchte.
 
 Klicken Sie auf **OK**, und schließen Sie **Infolog**.
 
-#### <a name="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements"></a>Warum muss das Kontrollkästchen „Buchhaltung deaktivieren“ aktiviert sein, wenn Zahlungsaufstellungen erstellt werden?
-Dadurch wird verhindert, dass Positionen aus der Zahlungsaufstellung verteilt und im Hauptbuch gebucht werden. Sie möchte diese Zahlungsaufstellung der Anfangssalden nicht buchen, da die Werte bereits durch das alter System im Hauptbuch enthalten sind. Dieses Saldoladen wird nur für die Berichterstattung und begrenzte Zwecke verwendet.
+#### <a name="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements"></a>Warum muss der Schieberegler "Buchhaltung deaktivieren" auf "Ja" gesetzt werden, wenn Zahlungsaufstellungen erstellt werden?
+Wenn der Schieberegler auf **Ja** gesetzt ist, wird verhindert, dass Positionen der Zahlungsaufstellung in das Sachkonto weitergegeben werden. Die Sachkontenbeträge wurden zuvor aktualisiert, als die Kontensalden aus dem alten System eingegeben wurden. Durch die Eingabe von Anfangssalden für die Gehaltsabrechnung können Sie Berichte erstellen, die Informationen aus Vorjahren enthalten, ebenso wie für die Identifizierung von Limits für Zulagen- und Steuerzwecke.   
 
 ### <a name="c-create-pay-statements-for-employees"></a>C. Erstellen von Zahlungsaufstellungen für Mitarbeiter
 Nachdem Sie Zahlungsaufstellungen generiert haben, die Anfangssalden haben, müssen Sie überprüfen, ob die Zahlungsaufstellungen die Lohndaten korrekt widerspiegeln. Sie müssen zudem die Vergütungen und Steuerinformationen manuell aktualisieren, damit sie mit den Werten aus dem alten Lohnsystem übereinstimmen. Wenn Sie sich vergewissert haben, dass die Beträge aus dem vorherigen Lohnsystem mit den Beträgen der aktuellen Zahlungsaufstellungen übereinstimmen, müssen Sie die Zahlungsaufstellungen abschließen.
@@ -137,20 +133,10 @@ Nachdem Sie Zahlungsaufstellungen generiert haben, die Anfangssalden haben, müs
 | Vergütung                         | Abzugsbetrag |
 | 401K | Teilnehmen              | 3000.00          |
 | Zahnbehandlungs-Zusatzversicherung | SubSp                  | 495,00           |
-| Dep. Pflegeausgaben/// | Teilnehmen | 2500.00          |
-| Vision | SupSp                  | 500,00           |
-
-5. Geben Sie auf der Registerkarte **Vergütungsabzüge** Folgendes ein: 
-
-| Feld                           | Wert            |
-|---------------------------------|------------------|
-| Vergütung                         | Abzugsbetrag |
-| 401K | Teilnehmen              | 3000.00          |
-| Zahnbehandlungs-Zusatzversicherung | SubSp                  | 495,00           |
 | Betreuungskosten | Teilnehmen | 2500.00          |
 | Vision | SupSp                  | 500,00           |
 
-6. Geben Sie auf der Registerkarte **Vergütungsbeiträge** Folgendes ein:
+5. Geben Sie auf der Registerkarte **Vergütungsbeiträge** Folgendes ein:
 
 | Feld              | Wert               |
 |--------------------|---------------------|
@@ -159,7 +145,7 @@ Nachdem Sie Zahlungsaufstellungen generiert haben, die Anfangssalden haben, müs
 | Zahnbehandlungs-Zusatzversicherung | SubSp     | 495,00              |
 | Vision | SubSp     | 500,00              |
 
-7. Geben Sie auf der Registerkarte **Steuerabzüge** Folgendes ein:
+6. Geben Sie auf der Registerkarte **Steuerabzüge** Folgendes ein:
 
 | Feld           | Wert            |
 |-----------------|------------------|
@@ -167,9 +153,9 @@ Nachdem Sie Zahlungsaufstellungen generiert haben, die Anfangssalden haben, müs
 | USA-FED-ER-FICA | 1600.00          |
 | USA-FED-ER-MEDI | 825.75           |
 
-8. Geben Sie auf der Registerkarte **Steuerbeiträge** Folgendes ein:
+7. Geben Sie auf der Registerkarte **Steuerbeiträge** Folgendes ein:
 
-9. Klicken Sie auf **Berechnen**.
+8. Klicken Sie auf **Berechnen**.
 > [!IMPORTANT] 
 > Stellen Sie sicher, dass die Summen der Zahlungsaufstellung mit dem Betrag seit Jahresanfang des alten Systems für die Arbeitskraft übereinstimmen. Sie möchten im nächsten Schritt möglicherweise das Abschließen aufschieben, um eine allgemeine Validierung der Zahlungsaufstellungen im Aggregat durchzuführen. Gehen Sie nach der Validierung die einzelnen Zahlungsaufstellungen durch, und schließen Sie sie ab.
 
@@ -182,5 +168,5 @@ Es ist möglich, Buchungen zu stornieren und erneut eingeben. Um die Buchung zu 
 
 2. Klicken Sie auf **Ja**, wenn die Nachricht „Wenn Sie diese Zahlungsaufstellung zurücksetzen, wird eine Rückbuchungszahlungsaufstellung zum Ausgleichen dieser Zahlungsaufstellung erstellt. Keine der Zahlungsaufstellungen kann bearbeitet werden. Möchten Sie diese Zahlungsaufstellung zurücksetzen?“ angezeigt wird. 
 
-Nachdem Sie die Zahlungsaufstellung storniert haben, können Sie eine neue für die Arbeitskraft anhand der Lohnabrechnung erstellen, die Sie zuvor bei der Prozedur „Erstellen von Lohnabrechnungen und Zahlungsaufstellungen, die Anfangssalden haben“ erstellt haben. Stellen Sie sicher, dass alle fehlerhaften Positionen auf der Lohnabrechnung korrigiert wurden, ehe Sie eine neue Zahlungsaufstellung erstellen. Wiederholen Sie dann die Prozedur „Aktualisieren von Zahlungsaufstellungen, die Anfangssalden für Vergütungen und Steuern haben“ in diesem Thema.
+Nachdem Sie die Zahlungsaufstellung rückgängig gemacht haben, können Sie eine neue Zahlungsaufstellung für den Mitarbeiter aus der zuvor erstellten Lohnabrechnung erstellen. Achten Sie darauf, dass alle fehlerhaften Positionen der Zahlungsaufstellung korrigiert werden, bevor Sie die neue Zahlungsaufstellung erzeugen, und erzeugen Sie dann die neuen Zahlungsaufstellungen mit den richtigen Beträgen. 
 

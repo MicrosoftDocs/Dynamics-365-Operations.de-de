@@ -3,26 +3,26 @@ title: Shop-Lagerbestand verwalten
 description: "Dieser Artikel beschreibt die Dokumentarten, die Sie zum Verwalten des Bestands verwenden können."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 21391
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail Version
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 1a5f2cd60e09b67cee4bab211bba4e07e9ef181f
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 42091a5ec94bae3015fd9afca3ddcf1ef24f6eb4
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -45,7 +45,7 @@ Mit einem Umlagerungsauftrag kann angegeben werden, dass ein bestimmter Shop ein
 Bestandsmengen können entweder geplant oder ungeplant sein. Geplante Bestandszählungen werden in der Zentrale veranlasst, die die zu zählenden Artikel vorgibt. Von der Zentrale wird ein Inventurdokument erstellt, das im Shop empfangen werden kann und in dem die tatsächlich verfügbaren Mengen in MPOS oder Cloud POS eingegeben werden. Ungeplante Bestandsmengen werden in einem Shop initiiert, und die Mengen des tatsächlich verfügbaren Lagerbestands werden in MPOS oder Cloud POS aktualisiert. Im Gegensatz zu geplanten Bestandsmengen haben ungeplante Bestandsmengen keine vordefinierte Liste mit Artikeln. Wenn eine Bestandsmenge eines beliebigen Typs abgeschlossen wurde, wird sie kommissioniert und an die Zentrale gesendet. In der Zentrale wird die Bestandsmenge geprüft und gebucht.
 
 ## <a name="inventory-lookup"></a>Bestandsuche
-Die aktuelle Produktmenge für Mehrfachshops und Lagerorte kann auf der Bestandssuchenseite angezeigt werden. Neben der aktuellen verfügbaren Menge können auch künftige Verfügbarkeitszusagen-Mengen (ATP) für jede einzelne Filiale angezeigt werden. Klicken Sie hierfür auf den Shop, für den Sie die VfZ für anzeigen möchten und klicken Sie auf  **Verfügbarkeit in Filiale** anzeigen.
+Die aktuelle Produktmenge für Mehrfachshops und Lagerorte kann auf der Bestandssuchenseite angezeigt werden. Neben der aktuellen verfügbaren Menge können auch künftige Verfügbarkeitszusagen-Mengen (ATP) für jede einzelne Filiale angezeigt werden. Klicken Sie hierfür auf die Filiale, für die Sie die VfZ für anzeigen möchten, und klicken Sie auf **Verfügbarkeit in Filiale anzeigen**.
 
 
 

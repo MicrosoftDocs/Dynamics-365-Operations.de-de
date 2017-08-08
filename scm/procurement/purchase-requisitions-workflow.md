@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d28e92fa853d155bc62932625e0e714cdf4edcc
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 95d1d3a34728aab38f77635ae68bea16b08f6587
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -105,12 +105,12 @@ Sie müssen keine Konfiguration für Aufwendungsprüfer definieren. Stattdessen 
 
 Sie können die Aufwendungsprüfer auf der Seite **Aufwendungsprüfer für Bestellanforderungen** einrichten. Erstellen Sie eine Konfiguration für Aufwendungsprüfer und geben Sie für jede juristische Person in Ihrem Unternehmen Werte ein. Für Bestellungen, die einem Projekt zugeordnet werden, können Sie die Rolle angeben, die für die Prüfung der Anforderungen zuständig ist: Projektmanager-, Projektcontroller oder Projektverkaufsleiter. Aufwendungen werden an den Benutzer weitergeleitet, der angegebenen Rolle zugewiesen ist. Sie können auch die Aufwendungen an den Besitzer der Finanzdimension weiterleiten, indem Sie das Kontrollkästchen der entsprechenden Finanzdimension auf der Registerkarte **Organisationsverteilungen** aktivieren.  
 
-Um einen der Aufwendungsprüfer zu verwenden, den Sie in einem Workflow eingerichtet haben, müssen Sie die Option **Art von Teilnehmer** auf **Aufwendungsbeteiligte** in den Eigenschaften**Zuweisung** für das relevante Workflowelement festlegen.
+Um einen der Aufwendungsprüfer zu verwenden, den Sie in einem Workflow eingerichtet haben, müssen Sie die Option **Art von Teilnehmer** auf **Aufwendungsbeteiligte** in den Eigenschaften **Zuweisung** für das relevante Workflowelement festlegen.
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Erstellen einer Anforderung für Verbrauch (Aufgabenleitfaden)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Erstellen einer Anforderung für Verbrauch (Aufgabenleitfaden)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
 
 [Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 

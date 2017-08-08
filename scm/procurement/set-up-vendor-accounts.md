@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 3c3c215dbc64c3b823ab8537b66f72d7d7fdf5c1
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -94,6 +94,18 @@ Sie können einen Kreditor für verschiedene Buchungsarten sperren. Die folgende
 -   **Nie** – Der Kreditor wird niemals für Inaktivität gesperrt.
 
 Wenn Sie einen Kreditor sperren, können Sie auch einen Grund und ein Datum angeben, wann die Sperrung aufgehoben wird. Wenn Sie kein Enddatum eingeben, bleibt die Sperre des Kreditors auf unbestimmte Zeit bestehen.
+
+Sie können eine Massenaktualisierung des Sperrstatus auf **Alle** für Kreditoren durchführen, basierend auf den ausgewählten Kriterien auf der Seite **Kreditorendeaktivierung**, und einen Grund zuweisen, warum der Kreditor gesperrt ist.
+
+Die folgenden Kriterien werden verwendet, um Kreditoren einzuschließen, die in einer Periode inaktiv gewesen sind, um Kreditoren einzuschließen oder auszuschließen, die Mitarbeiter sind, und um Kreditoren auszuschließen, die sich in einer Karenzzeit bis zur nächsten Sperrung befinden.
+
+- Basierend auf der Zahl der Tage, die Sie im Feld **In Aktivitätsperiode** auf der Seite **Kreditorendeaktivierung** eingeben, berechnet die Anwendung das letzte Datum, an dem der Kreditor eine beliebige Aktivität haben kann, die als inaktiv zu betrachten ist. Das bedeutet das aktuelle Datum minus der Anzahl der Tage, die Sie eingeben. Wenn mindestens eine Rechnung für den Kreditor vorhanden ist, auf der das Datum nach dem errechneten spätesten Datum liegt, wird der Kreditor von der Deaktivierung ausgeschlossen. Dies wird auch überprüft, wenn der Kreditor Zahlungen nach dem Datum, offene Bestellanforderungen, offene Bestellungen, Angebotsanforderungen oder Antworten hat.
+- Die Anzahl von Tagen im Feld **Karenzzeit bis zur nächsten Sperrung** wird verwendet, um das späteste Karenzdatum zu berechnen. Das bedeutet das aktuelle Datum minus der Tage, die Sie eingeben. Dies gilt nur für Kreditoren, die zuvor deaktiviert wurden. Im Falle einer vorherigen Deaktivieren verifiziert die Anwendung die Historie anderer Deaktivierungen für den Kreditor und überprüft, ob die letzte Deaktivierung vor dem jüngsten Karenzdatum erfolgte. Ist dies der Fall, wird der Kreditor in den Deaktivierungsprozess einbezogen.
+- Der Parameter **Mitarbeiter einbeziehen** bezieht sich auf Kreditoren, die mit einem Mitarbeiter verknüpft sind. Sie können festlegen, ob Sie diese Mitarbeiter einbeziehen möchten.
+
+Bei diesem Prozess werden immer Kreditoren ausgeschlossen, bei denen das Feld **Kreditorensperre** den Wert **Nie** hat.
+
+Kreditoren, die die Überprüfungen bestehen, werden gesperrt, wodurch der Feldwert **Kreditorensperre** auf **Alle** festgelegt wird und der **Grund** auf die getroffene Auswahl. Ein Datensatz in der Sperrungshistorie wird für den Kreditor erstellt.
 
 ## <a name="vendor-invoice-account"></a>Kreditorenrechnungskonto
 Wenn mehrere Ihrer Kreditoren dieselbe Rechnungsadresse haben, oder wenn Rechnungen an den Kreditor über Dritte abgewickelt werden, können Sie ein Rechnungskonto im Kreditorendatensatz erstellen. Das Rechnungskonto ist das Konto, auf dem der Rechnungsbetrag gutgeschrieben wird, wenn Sie eine Kreditorenrechnung für eine Bestellung erstellen. Wenn Sie kein Rechnungskonto im Kreditorendatensatz angeben, wird das Kreditorenkonto als Rechnungskonto verwendet.

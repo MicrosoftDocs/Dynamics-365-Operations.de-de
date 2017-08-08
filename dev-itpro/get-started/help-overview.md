@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 91207e03902fa8a45ab44270cc61b58ef9e3c98c
+ms.translationtype: HT
+ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
+ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,33 +31,31 @@ ms.lasthandoff: 06/20/2017
 
 Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems. Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können. 
 
-> [!IMPORTANT] 
-> Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations (Enterprise-Edition), Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu
-
-Finance and Operations umfasst ein vollständig neues Hilfesystem, das auf zwei Hauptkomponenten basiert:
-
--   Eine Dokumentationswebsite
--   Aufgabenleitfäden
-
-Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations (Enterprise-Edition), Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu. 
+> [!NOTE] 
+> Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations (Enterprise-Edition), Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
 Das Hilfesystem wird von allen Unified Operations-Produkten gemeinsam verwendet:
 - Dynamics 365 for Finance and Operations, Enterprise-Edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
+Finance and Operations umfasst ein vollständig neues Hilfesystem, das auf zwei Hauptkomponenten basiert:
+
+-   Eine Dokumentationswebsite
+-   Aufgabenleitfäden
+
 Sie können in jedem verwendeten Produkt auf Hilfethemen und Aufgabenleitfäden im Hilfebereich zugreifen. Der folgende Screenshot zeigt Dynamics 365 für Finance and Operations
 
-![Hilfebereich](./media/help-pane-ops-task-guides-1024x741.png)
+![Hilfebereich](./media/help-pane-ops-task-guides.png)
 
 Dieses Thema beschreibt das Hilfesystem und erläutert, wie Sie debitorenspezifische Dokumentationen und Ressourcen zur Produktschulung für Ihre Organisation erstellen können.
 
 > [!IMPORTANT]
-> Die Registerkarte **Aufgabenleitfäden** ist derzeit nicht in Microsoft Dynamics 365 for Talent und Microsoft Dynamics 365 for Retail verfügbar. Wir arbeiten derzeit daran, diese Funktion in einer künftigen Version zu ermöglichen. Die Aufgabenleitfäden in der "Erste Schritte"-Erfahrung in Talent bleiben verfügbar, um Grundfunktionen abzudecken. Prozedurale Hilfe auf der docs.microsoft.com-Website ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) für Retail und Talent ebenfalls verfügbar.
+> Die Registerkarte **Aufgabenleitfäden** ist derzeit nicht in Microsoft Dynamics 365 for Talent und Microsoft Dynamics 365 for Retail verfügbar. Wir arbeiten derzeit daran, diese Funktion in einer künftigen Version zu ermöglichen. Die Aufgabenleitfäden in der "Erste Schritte"-Erfahrung in Talent bleiben verfügbar, um Grundfunktionen abzudecken. Hilfe zu den Verfahren steht auch auf der Website docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index) sowohl für Retail als auch für Talent zur Verfügung.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hilfe auf docs.microsoft.com
 
-Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) ist die primäre Quelle für Produktdokumentation für Finance and Operations. Die Seite enthält die folgenden Funktionen:
+Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) ist die primäre Quelle für Produktdokumentation für Finance and Operations. Die Seite enthält die folgenden Funktionen:
 
 -   **Zugriff auf aktuellsten Inhalt**- Die Seite ist eine schnellere und flexiblere Methode, Produktdokumentationen zu erstellen, zu liefern und zu aktualisieren. So können wir besser sicherstellen, dass Zugriff auf den neuesten technischen Informationen enthalten.
 -   **Inhalte, die von den Experten geschrieben wurden**- Die Seite bietet eine umfangreichere Zusammenstellung von Produktdokumentationen, die von Community-Mitgliedern, sowohl innerhalb als auch außerhalb von Microsoft, weiterentwickelt werden können.
@@ -68,12 +65,13 @@ Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dyn
 ### <a name="searching-on-docsmicrosoftcom"></a>Suche auf docs.microsoft.com
 Wir erhalten viele Fragen zur Suche nach unserem Inhalt. Wenn Sie auf unserer Website von einer Seite über Finance and Operations beginnen, schränken wir den Umfang Ihrer Suche nur auf den Inhalt für Finance and Operations ein. Sie können die Einschränkung des Umfangs entfernen, indem Sie auf das X neben Operations im Suchfeld klicken. 
 
-![Aufträge durchsuchen](./media/search-scope.png)
+![Aufträge durchsuchen](./media/search-scope-2.png)
 
 Sie können auch unseren Inhalt mit jeder beliebigen Suchmaschine finden. Um die besten Ergebnisse zu erhalten, wird empfohlen, dass Sie eine Websitesuche verwenden, wie beispielsweise Website: docs.microsoft.com dynamics 365 "Suchbegriff"  
-![Websitesuche](./media/site-search.png)
 
-![Ergebnisse der Websitesuche](./media/site-search-results.png)
+![Websitesuche](./media/site-search-1.png)
+
+![Ergebnisse der Websitesuche](./media/site-search-results-2.png)
 
 ### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Das docs.microsoft.com-Inhaltsverzeichnis für Unified Operations
 Alle Produkte nutzen das gleiche Inhaltsverzeichnis in der Dokumenten-Website. Damit können Kunden den Kontext des Themas anzuzeigen, in dem sie sich befinden. So kann das Filtersteuerelement verwendet werden, um nach Themen zu suchen.
@@ -105,7 +103,7 @@ Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, 
 
 Wir bieten unterschiedliche Aufgabenleitfäden für jedes Unified Operations-Produkt. Der Abschnitt "Auf Aufgabenleitfäden zugreifen" im Hilfebereich beschreibt, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden. 
 
-![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops-1024x742.png)
+![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
 
 Um die geführte, interaktive Umgebung zu starten, klicken Sie auf **Aufgabenleitfaden starten** unten im Hilfebereich. Ein schwarzer Mauszeiger öffnet und gibt die Aktivität an, die Sie ausführen müssen. Folgen Sie den Richtungen, die in der Benutzeroberfläche angezeigt werden, und geben Sie Daten ein, wie vorgesehen. 
 ![Schrittanleitung des Aufgabenleitfadens](./media/task-guide-step-1-ops.png)
@@ -129,7 +127,7 @@ Sie können eigene Aufgabenaufzeichnungen erstellen, oder Sie können von Micros
 ## <a name="in-product-help"></a>Produkthilfe
 Um auf Hilfeinhalte innerhalb von Finance and Operations zuzugreifen, klicken Sie entweder auf das **Hilfe** (**?**) Symbol oder drücken Sie Strg+Shift+?. In beiden Fällen wird der Bereich Hilfe geöffnet. Über den Bereich Hilfe können Sie auf Artikel oder Aufgabenleitfäden zugreifen. 
 
-![Hilfebereich](./media/help-pane-wiki-1024x684.png)
+![Hilfebereich](./media/help-pane-wiki.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Auf Hilfethemen über den Hilfebereich zugreifen
 
@@ -162,7 +160,7 @@ Gehen Sie auf der Seite **Systemparameter** folgendermaßen vor:
 
 Nachdem ein Systemadministrator diese Schritte abgeschlossen hat, können Sie den Bereich **Hilfe** öffnen und auf die Registerkarte Aufgabenleitfäden klicken. Sie finden nun die Aufgabenhandbücher, die für die Seite gelten, an denen Sie derzeit in Finance and Operations sind. Wenn keine Aufgabenhandbücher gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Nachdem Sie auf einen Aufgabenleitfaden im Bereich Hilfe geklickt haben, zeigt Ihnen der Bereich Hilfe die schrittweisen Anweisungen, und Sie können den Aufgabenleitfaden wiedergeben. 
 
-![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops-1024x742.png)
+![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Wo sind die übersetzten Aufgabenleitfäden?
 

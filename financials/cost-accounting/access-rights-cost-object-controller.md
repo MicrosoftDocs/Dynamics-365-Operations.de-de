@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 4d26d690e63898bfb463177da6654f1175ff35af
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: c520e14233fb03646aa4a273362e596bd1990a8c
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -99,12 +99,12 @@ Die Einstellungen für die Zugriffslistenhierarchie werden verwendet, um die Dat
     - Data Power BI-Visualisierungen, die im Client der Enterprise-Edition von Microsoft Dynamics 365 für Finance and Operations eingebettet werden
 
 > [!IMPORTANT]
-> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Positionsebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
+> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Positionsebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
 > - In diesem Thema werden die Voraussetzungen behandelt, die erfüllt sein müssen, bevor Sie den Arbeitsbereich **Kostensteuerung** verwenden können.
 
 Siehe auch
 
 - [Kostensteuerungs-Arbeitsbereich](cost-control-workspace.md)
 - [Dimensionshierarchie](dimension-hierarchy.md)
-- [Sicherheit für Kostensteuerungs-Inhaltspack einrichten](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+- [Sicherheit für Kostensteuerungs-Inhaltspack einrichten](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
 

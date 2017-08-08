@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 655a6fd99c0688b13c31c79f3322a287f902e7f1
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2c04bbccf22ab830404206cd54b4cb8e97b6a822
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -196,8 +196,8 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 | SESSIONNOW ()                              | Gibt das aktuelle Dynamics 365 for Finance and Operation-Sitzungsdatum als Zeit- und Datumswert zurück.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATENFORMAT (Datum, Format)                  | Gibt die Zeichenfolgendarstellung des Datums im angegebenen Format zurück.                                                                                                                                                                                                                                                                                                    | **DATENFORMAT (SESSIONTODAY (), "TT-MM-JJJJ")** gibt das aktuelle Dynamics 365 for Finance and Operations-Sitzungsdatum, 12/24/2015 als "**24-12-2015**" entsprechend dem angegebenen benutzerdefinierten Format zurück.                                                                                                                      |
 | DATENFORMAT (Datum, Format, Kultur)         | Konvertieren Sie den angegebenen Datumswert in eine Zeichenfolge im angegebenen Format und der entsprechenden [Kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT "(SESSIONNOW (), "d" de", "")** gibt das aktuelle Finance and Operations-Sitzungsdatum 12/24/2015 als **"24.12.2015"** gemäß der gewählten deutschen Kultur zurück.                                                                                                                       |
-| DAYOFYEAR (Datum)              | Gibt eine ganzzahlige Darstellung der Anzahl von Tagen zwischen dem 1. Januar dem angegebenen Datum zurück.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** gibt **61** zurück.
-**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** gibt **1** zurück.                                                                                                                       |
+| DAYOFYEAR (Datum)              | Gibt eine ganzzahlige Darstellung der Anzahl von Tagen zwischen dem 1. Januar dem angegebenen Datum zurück.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** gibt **61** zurück. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** gibt **1** zurück. 
+                                                                                                                      |
 
 **Datenumwandlungsfunktionen**
 
@@ -236,7 +236,14 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 <li>Chargen als regelmäßige Listen (<strong>Wert</strong>kKomponente)</li>
 <li>Die aktuelle Chargennummer (<strong>Chargennummer</strong>komponente)</li>
 </ul></td>
-<td>Im folgenden Beispiel werden die <strong>Positionen</strong> Datenquellen für eine Rekordliste von drei Datensätzen erstellt, die in Chargen verteilt sind, von denen jede bis zu zwei Datensätze enthält. <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> Dies zeigt das entsprechende Formatlayout, bei dem entsprechend den <strong>Zeilen</strong> Datenquellen erstellt wurden, um die Ausgabe im XML-Format zu generieren, das individuelle Knoten für jede Charge und die Datensätze darin anzeigt. <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> Das Folgende ist das Ergebnis der Ausführung des entworfenen Formats. <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<td>Im folgenden Beispiel werden die <strong>Positionen</strong> Datenquellen für eine Rekordliste von drei Datensätzen erstellt, die in Chargen verteilt sind, von denen jede bis zu zwei Datensätze enthält. 
+<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
+
+Dies zeigt das entsprechende Formatlayout, bei dem entsprechend den <strong>Zeilen </strong> Datenquellen erstellt wurden, um die Ausgabe im XML-Format zu generieren, das individuelle Knoten für jede Charge und die Datensätze darin anzeigt. 
+<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
+
+Das Folgende ist das Ergebnis der Ausführung des entworfenen Formats. 
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
 <td>LISTE (Datensatz 1, Datensatz [2,...])</td>
@@ -300,7 +307,14 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 <li>Angegebene Listendatensätze als regelmäßige Listen (<strong>Wert</strong>komponente)</li>
 <li>Der Index des aktuellen Datensatzes (<strong>Nummer</strong>komponente)</li>
 </ul></td>
-<td>Im folgenden Beispiel wird die Datenquelle<strong>Aufzählung</strong> als Aufzählungsliste von Kreditorendatensätzen von der Datenquelle <strong>Kreditoren</strong> erstellt, die sich auf die Tabelle <strong>VendTable "</strong> bezieht. <a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a>Hier ist das Format, in dem Datenbindungen erstellt werden, um Ausgaben im XML-Format zu generieren, das einzelne Kreditoren als Aufzählungsknoten darstellt. <a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> Das Folgende ist das Ergebnis der Ausführung des entworfenen Formats. <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<td>Im folgenden Beispiel wird die Datenquelle<strong>Aufzählung</strong> als Aufzählungsliste von Kreditorendatensätzen von der Datenquelle <strong>Kreditoren</strong> erstellt, die sich auf die Tabelle <strong>VendTable "</strong> bezieht. 
+<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
+
+Hier ist das Format, in dem Datenbindungen erstellt werden, um Ausgaben im XML-Format zu generieren, das einzelne Kreditoren als Aufzählungsknoten darstellt. 
+<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
+
+Das Folgende ist das Ergebnis der Ausführung des entworfenen Formats. 
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
 <td>ZÄHLEN (Liste)</td>
@@ -322,13 +336,24 @@ Die erstellte Liste besteht aus Datensätzen mit den folgenden Feldern:
 <li>Beschreibung</li>
 </ul>
 Die Beschriftungs- und Beschreibungsfelder geben zur L‎aufzeit festgelegte Werte basierend auf den Spracheinstellungen des Formats zurück.</td>
-<td>Das folgende Beispiel zeigt die Enumeration in einem Datenmodell. <a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>Beispiel:
+<td>Das folgende Beispiel zeigt die Enumeration in einem Datenmodell. 
+<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
+
+Beispiel:
 <ul>
 <li>Modellenumeration eingefügt in einen Bericht als Datenquelle.</li>
 <li>Er-Ausdruck entwickelt, um Modellenumerationen als Parameter für diese Funktion zu verwenden.</li>
 <li>Datenquelle des Beleglistentyps, eingefügt in einen Bericht mit dem erstellten ER-Ausdruck.</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a>Das folgende Beispiel zeigt die ER-Formatelemente an, die an die Datenquelle des Beleglistentyp gebunden sind, der mithilfe der LISTOFFIELDS-Funktion erstellt wurde. <a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>Dies ist das Ergebnis der entworfenen Formatausführung. <a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>Hinweis:</strong> Übersetzter Text für Beschriftungen und Beschreibungen wird in der ER-Formatausgabe entsprechend den Spracheinstellungen eingetragen, die für DATEI- und ORDNER-Formatelemente konfiguriert werden.</td>
+<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
+
+Das folgende Beispiel zeigt die ER-Formatelemente, die mit der Datenquelle des Datensatzlistentyps verbunden sind, der mit der Funktion LISTOFFIELDS erstellt wurde.
+<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
+
+Dies ist das Ergebnis der entworfenen Formatausführung.
+<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
+
+Hinweis:</strong> Übersetzter Text für Beschriftungen und Beschreibungen wird in der ER-Formatausgabe in Übereinstimmung mit den Spracheinstellungen bereitgestellt, die für übergeordnete FILE- und FOLDER-Formatelemente konfiguriert wurden.</td>
 </tr>
 <tr class="odd">
 <td>STRINGJOIN (Liste, Feldname, Trennzeichen)</td>
@@ -338,7 +363,18 @@ Die Beschriftungs- und Beschreibungsfelder geben zur L‎aufzeit festgelegte Wer
 <tr class="even">
 <td>SPLITLISTBYLIMIT (Liste, Grenzwert, Grenzquelle)</td>
 <td>Teilt die gegebene Liste in eine neue Liste von Unterlisten und gibt das Ergebnis im Beleglisteninhalt zurück. Der Limitwertparameter gibt den Wert des Limits ein, um die Ursprungsliste aufzuteilen. Der Limitquellparameter gibt dem Schritt an, mit dem die Gesamtsumme erhöht wird. Das Limit wird auf keinen einzelnen Artikel der angegebenen Liste angewendet, wenn die Limitquelle das definierte Limit überschreitet.</td>
-<td>Das folgende Beispiel zeigt das Beispielformat mithilfe der Datenquellen. <a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>Dies ist die Ergebnisformatausführung, die die flache Liste von Warenartikeln vorlegt.<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>das folgende Beispiel zeigt dasselbe Format an, die angepasst wurde, um die Liste der Warenartikeln in Chargen startet, wenn einer einzelnen Lagercharge Waren mit dem Gesamtgewicht enthalten muss, das das Limit der 9 überschreiten soll.<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>Das, das Ergebnis der angepassten Formatausführung ist. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a><strong>Hinweis:</strong> Das Limit wird nicht auf den letzten Artikel der Ursprungsliste angewendet, da der Wert (11) der Quelle des Limits (Gewicht) die definiere Grenze (9) überschreitet. Verwenden Sie entweder die Funktion <strong>WO</strong> oder den Ausdruck <strong>Aktiviert</strong> des entsprechenden Formatelements, um Unterlisten für die Berichterstellung (nach Bedarf) zu ignorieren (zu überspringen).</td>
+<td>Das folgende Beispiel zeigt das Beispielformat mithilfe der Datenquellen. 
+<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
+
+Dies ist das Ergebnis der Formatausführung, die flache Liste mit Warenpositionen darstellt.
+<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
+
+Das folgende Beispiel zeigt dasselbe Format, das so angepasst wurde, dass es die Liste der Warenpositionen in Gruppen anzeigt, wobei eine Gruppe alle Waren mit einem Gesamtgewicht enthalten muss, das das Limit von 9 nicht überschreiten darf.
+<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
+
+Dies ist das Ergebnis der angepassten Formatausführung. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
+
+<strong>Hinweis:</strong> Das Limit wird nicht auf die letzte Position der ursprünglichen Liste angewendet, weil der Wert (11) der Limitquelle (Gewicht) das definierte Limit (9) überschreitet. Verwenden Sie entweder die Funktion <strong>WO</strong> oder den Ausdruck <strong>Aktiviert</strong> des entsprechenden Formatelements, um Unterlisten für die Berichterstellung (nach Bedarf) zu ignorieren (zu überspringen).</td>
 </tr>
 <tr class="odd">
 <td>FILTER (Liste, Bedingungen)</td>
@@ -355,7 +391,7 @@ Die Beschriftungs- und Beschreibungsfelder geben zur L‎aufzeit festgelegte Wer
 | FALL (Ausdruck, Option 1, Ergebnis 1 \[, Option 2, Ergebnis 2\] ... \[, Standardergebnis\]) | Auswerten des angegebenen Ausdruckswert anhand der angegebenen alternativen Optionen. Gibt das Ergebnis der Option zurück, die gleich dem Wert des Ausdrucks ist. Andernfalls müssen Sie das optional eingegebene Standardergebnis zurücksetzen (der letzte Parameter, der nicht von einer Option vorangestellt wird). | **FALL (DATETIMEFORMAT (NOW (), "MM"), "10 ", "WINTER", "11 ", "WINTER", "12 ", "WINTER", "")** gibt die Zeichenfolge zurück **"WINTER"**, wenn das aktuelle Finance and Operations-Sitzungsdatum zwischen Oktober und Dezember ist. Andernfalls wird eine leere Zeichenfolge zurückgegeben. |
 | WENN (Bedingung, Wert 1, Wert 2)                                                        | Gibt den angegebenen Wert 1 zurück, wenn die bestimmte Bedingung zutrifft. Andernfalls wird Wert 2 zurückgegeben. Wenn Wert 1 und Wert 2 auf Datensätzen oder Datensatzlisten basieren, besitzt das Ergebnis nur die Felder, die in beiden Listen vorhanden sind.                                                                     | **WENN (1=2, "Bedingung erfüllt", "Bedingung erfüllt wird nicht erfüllt)"** gibt die Zeichenfolge **"Bedingung wird nicht erfüllt** zurück.                                                                                                                                                      |
 | NICHT (Bedingung)                                                                         | Geben Sie den umgekehrten logischen Wert der angegebenen Bedingung zurück.                                                                                                                                                                                                                   | **NICHT (WAHR=)** gibt **FALSCH** zurück.                                                                                                                                                                                                                            |
-| UND (Bedingung 1\[, Bedingung 2, ...\])                                                 | Gibt **WAHR** zurück, wenn *alle*  angegebenen Bedingungen erfüllt sind. Andernfalls wird **FALSCH** zurückgegeben.                                                                                                                                                                                            | **UND (1=1, "a " = "a")** gibt **WAHR** zurück. **UND (1=2, "a " = "a")** gibt **FALSCH** zurück.                                                                                                                                                                           |
+| UND (Bedingung 1\[, Bedingung 2, ...\])                                                 | Gibt **WAHR** zurück, wenn *alle* angegebenen Bedingungen erfüllt sind. Andernfalls wird **FALSCH** zurückgegeben.                                                                                                                                                                                            | **UND (1=1, "a " = "a")** gibt **WAHR** zurück. **UND (1=2, "a " = "a")** gibt **FALSCH** zurück.                                                                                                                                                                           |
 | ODER (Bedingung 1\[, Bedingung 2, ...\])                                                  | Gibt **FALSCH** zurück, wenn *alle* angegebenen Bedingungen falsch sind. Gibt **WAHR** zurück, wenn *eine* angegebenen Bedingungen erfüllt ist.                                                                                                                                                                 | **ODER (1=2, "a " = "a")** gibt **WAHR** zurück.                                                                                                                                                                                                                      |
 
 ### <a name="mathematical-functions"></a>Rechenoperationen
@@ -511,7 +547,10 @@ Die Beschriftungs- und Beschreibungsfelder geben zur L‎aufzeit festgelegte Wer
 <tr class="even">
 <td>FORMAT (Zeichenfolge 1, Zeichenfolge 2 [, Zeichenfolge 3,...])</td>
 <td>Geben Sie die angegebene Zeichenfolge zurück, die formatiert wird, indem alle Vorkommnisse von <strong>%N</strong> mit dem <em>n</em>. Argument ersetzt werden. Die Argumente sind Zeichenfolgen. Wenn eine Anfrage nicht für einen Parameter angegeben wird, wird der Parameter als <strong>&quot;%N&quot;</strong> in der Zeichenfolge zurückgegeben. Für Werte für den<strong>tatsächlich</strong> Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</td>
-<td>In diesem Beispiel gibt die <strong>PaymentModel</strong>Datenquelle die Liste von Kundeneinträgen über die <strong>-Kunden</strong>komponente und die Prozessdatenwerte über das Feld <strong>ProcessingDate</strong> ein. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a>Im ER-Format, das entworfen wurde, um eine Datei für ausgewählte Debitoren zu generieren, wird <strong>PaymentModel</strong> als Datenquelle ausgewählt, um den Prozessablauf zu steuern. Eine Ausnahme wird für Endbenutzer ausgelöst, wenn ein ausgewählter Debitoren für das Datum beendet wird, an dem der Bericht verarbeitet wird. Die Formel, die für diese Art von Prozesssteuerung entworfen wurde, kann die folgenden Ressourcen verwenden:
+<td>In diesem Beispiel gibt die <strong>PaymentModel</strong>Datenquelle die Liste von Kundeneinträgen über die <strong>-Kunden</strong>komponente und die Prozessdatenwerte über das Feld <strong>ProcessingDate</strong> ein. 
+<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
+
+Im ER-Format, das entworfen wurde, um eine Datei für ausgewählte Debitoren zu generieren, wird <strong>PaymentModel</strong> als Datenquelle ausgewählt, um den Prozessablauf zu steuern. Eine Ausnahme wird für Endbenutzer ausgelöst, wenn ein ausgewählter Debitoren für das Datum beendet wird, an dem der Bericht verarbeitet wird. Die Formel, die für diese Art von Prozesssteuerung entworfen wurde, kann die folgenden Ressourcen verwenden:
 <ul>
 <li>Finance and Operations-Beschriftung SYS70894, die den folgenden Text hat:
 <ul>
@@ -526,8 +565,8 @@ Die Beschriftungs- und Beschreibungsfelder geben zur L‎aufzeit festgelegte Wer
 </ul>
 Ist hier die Formel, die so konzipiert werden kann: FORMAT (VERKETTEN (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;) model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;D&quot;)) Wenn ein Bericht für den <strong>Einzelhandelskunden Litwares</strong> am 17. Dezember 2015 in der <strong>EN-US</strong>-Kultur und in der <strong>EN-US</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der als Ausnahmebedingungsnachricht für den Endbenutzer produziert werden kann: &quot;Nichts zu drucken. Customer Litware Retail ist zum 17.12.2015 beendet.&quot; Wenn derselbe Bericht für den Einzelhandelskunden<strong> Litwares</strong> am 17. Dezember 2015, in der <strong>DE</strong>-Kultur und in der <strong>DE</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der ein anderes Datumsformat verwendet: &quot;Nichts zu drucken. Schuldner-"Litware Retail" wird für 17.12.2015 gesperrt.&quot; <strong>Hinweis:</strong> Die folgende Syntax wird in ER-Formeln für Beschriftungen übernommen:
 <ul>
-<li><strong>Für Beschriftungen von Finance and Operations-Ressourcen:</strong> <strong>@&quot;X&quot;</strong>, wo die Beschriftungskennung in der Entwicklungsumgebung (AOT) ist</li>
-<li><strong>Für Beschriftungen, die sich in der ER-Konfigurationen befinden:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, wo die Beschriftungskennung in der ER-Konfiguration ist</li>
+<li><strong>Für Beschriftungen aus Finance and Operations-Ressourcen:</strong> <strong>@&quot;X&quot;</strong>, wobei X die Beschriftungs-ID im Application Object Tree (AOT) ist</li>
+<li><strong>Für Beschriftungen, die sich in ER-Konfigurationen befinden:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, wobei X die Beschriftungs-ID in der ER-Konfiguration ist</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -549,7 +588,8 @@ Ist hier die Formel, die so konzipiert werden kann: FORMAT (VERKETTEN (@&quot;SY
 <td>TRIM (Zeichenfolge)</td>
 <td>Gibt den jeweiligen Text zurück, nachdem voran- und nachgestellte Leerstellen gekürzt und mehrere Leerstellen zwischen Wörtern entfernt wurden. </td>
 <td><strong>TRIM ("     Beispielhafter     Text     ")</strong> gibt <strong>"Beispielhafter Text"</strong> zurück.</td>
-=======
+</tr>
+<tr class="odd">
 <td>GETENUMVALUEBYNAME (Enumerationsdatenquellenpfad, Enumerationswertbeschriftungstext)</td>
 <td>Gibt einen Wert einer angegebenen Enumerationsdatenquelle nach angegebenen Text dieser Enumerationsbeschriftung zurück.</td>
 <td>Das folgende Beispiel zeigt die in einem Datenmodell eingeführte Enumeration "ReportDirection". Beachten Sie, dass Beschriftungen für Enumerationswerte definiert werden.

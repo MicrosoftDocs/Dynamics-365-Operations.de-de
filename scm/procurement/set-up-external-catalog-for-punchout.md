@@ -1,7 +1,7 @@
 ---
 title: "Externen Katalog für PunchOut eProcurement einrichten"
 description: "In diesem Thema wird die Verwendung eines externen Katalogs oder des Punchoutkatalogs beschrieben, um Angebotsinformationen von einem Kreditor zu erhalten und einer Bestellanforderung hinzuzufügen."
-author: BibiSp
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 2d853cb963471f81d7a2a09a0f7913722de8a417
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 4c89f6f168825f7767b836be09fa73b8659b00c6
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,17 +32,17 @@ Mithilfe des externen Katalogs können Sie sicherstellen, dass das Produkt und d
 
 Wenn der externe Katalog eingerichtet ist und ein Mitarbeiter eine Anforderung vorbereitet, gibt es eine Option zur Weiterleitung an einen externen Standort, den externen Katalog, und zum Einkaufskorb zurückzukehren, der auf der externen Website erstellt wurde. Die Kommunikation basiert auf dem cXML Protokoll und sie muss zwischen Systemen der kaufenden und verkaufenden Organisation eingerichtet werden.
 
-Um die Kommunikation einzurichten, muss Ihr Kreditor Informationen für Sie zur Verwendung in der Konfiguration des externen Katalogs bereitstellen, wie Kennung, Domäne des Käufers, zum Beispiel  "DUNS" und "Duns-Nummer", Anmeldeinformationen und die URL für den Kreditorenkatalog bereitstellen.
+Um die Kommunikation einzurichten, muss Ihr Kreditor Informationen für Sie zur Verwendung in der Konfiguration des externen Katalogs bereitstellen, wie Kennung, Domäne des Käufers, zum Beispiel "DUNS" und "Duns-Nummer", Anmeldeinformationen und die URL für den Kreditorenkatalog bereitstellen.
 
 ## <a name="setting-up-an-external-catalog"></a>Einrichten eines externen Katalogs
 
-Der externe Katalog sollte einem Mitarbeiter, der eine Bestellanforderung eingibt, ermöglichen, auf einer externen Website die Produkte auszuwählen. Die Produkte, die der Mitarbeiter im externen Katalog auswählen, werden zu Dynamics 365 for Finance and Operations  mit aktuellen Preisangaben zurückgegeben und von hier können sie der Bestellanforderung hinzugefügt werden. Die Absicht ist es, Mitarbeiter nicht dazu zu berechtigen, einen Auftrag auf einer externen Website zu erteilen. Wird der externe Katalog eingerichtet, müssen Sie prüfen, ob der Zweck der Seite, die auf den externen Lieferantenkatalog zugreifen kann, so ist, dass Angebotsinformationen gesammelt werden und kein tatsächlicher Auftrag erteilt wird.
+Der externe Katalog sollte einem Mitarbeiter, der eine Bestellanforderung eingibt, ermöglichen, auf einer externen Website die Produkte auszuwählen. Die Produkte, die der Mitarbeiter im externen Katalog auswählen, werden zu Dynamics 365 for Finance and Operations mit aktuellen Preisangaben zurückgegeben und von hier können sie der Bestellanforderung hinzugefügt werden. Die Absicht ist es, Mitarbeiter nicht dazu zu berechtigen, einen Auftrag auf einer externen Website zu erteilen. Wird der externe Katalog eingerichtet, müssen Sie prüfen, ob der Zweck der Seite, die auf den externen Lieferantenkatalog zugreifen kann, so ist, dass Angebotsinformationen gesammelt werden und kein tatsächlicher Auftrag erteilt wird.
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Führen Sie zum Einrichten eines externen Lieferantenkatalogs die folgenden Aufgaben aus:
 
-1. Richten Sie eine Beschaffungskategoriehierarchie ein. Weitere Informationen finden Sie unter [Einrichten einer Beschaffungskategoriehierarchie](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/).
-2. Registrieren Sie den Kreditor im Bereich Finance and Operations. Bevor Sie Konfigurationen für den Zugriff auf einen externen Lieferantenkatalog einrichten können, müssen Sie zuerst den Kreditor und den Kreditorkontakt in Microsoft Dynamics 365 einrichten. Der externe Lieferantenkatalog muss auch der ausgewählten Beschaffungskategorie zugeordnet werden. Weitere Informationen zum Registrieren von Kreditoren in Microsoft Dynamics 365, finden Sie unter[Verwalten Sie Kreditorenzusammenarbeitbenutzer](/procurement/manage-vendor-collaboration-users.md). Informationen zum Einrichten einer Beschaffungskategoriehierarchie und zum Zuordnen der Warencodes zu einer Beschaffungskategorie finden Sie unter [Lieferanten bestlimmten Beschaffungskategorien zuweisen](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/).
-3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen darüber, wie Sie eine Maßeinheit erstellen, finden Sie unter [Maßeinheit erstellen](/https://ax.help.dynamics.com/en/wiki/manage-unit-of-measure/).
+1. Richten Sie eine Beschaffungskategoriehierarchie ein. Weitere Informationen finden Sie unter [Einrichten einer Beschaffungskategoriehierarchie](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies).
+2. Registrieren Sie den Kreditor im Bereich Finance and Operations. Bevor Sie Konfigurationen für den Zugriff auf einen externen Lieferantenkatalog einrichten können, müssen Sie zuerst den Kreditor und den Kreditorkontakt in Microsoft Dynamics 365 einrichten. Der externe Lieferantenkatalog muss auch der ausgewählten Beschaffungskategorie zugeordnet werden. Weitere Informationen zum Registrieren von Kreditoren in Microsoft Dynamics 365, finden Sie unter [Verwalten Sie Kreditorenzusammenarbeitbenutzer](manage-vendor-collaboration-users.md). Informationen zum Einrichten einer Beschaffungskategoriehierarchie und zum Zuordnen der Warencodes zu einer Beschaffungskategorie finden Sie unter [Lieferanten bestlimmten Beschaffungskategorien zuweisen](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories).
+3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen darüber, wie Sie eine Maßeinheit erstellen, finden Sie unter [Maßeinheit verwalten](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure).
 4. Konfigurieren Sie den externen Lieferantenkatalog anhand der Anforderungen an die externe Katalogwebsite des Kreditors. Weitere Informationen zu Aufgabenleitfäden finden Sie im nächsten Abschnitt.
 5. Testen Sie die Konfigurationen des externen Lieferantenkatalogs. Überprüfen Sie dabei, ob die Einstellungen funktionieren und Sie auf den Katalog zugreifen können. Verwenden Sie die Aktion **Einstellungen überprüfen**, um die angeforderte Nachricht aufzusetzen. Diese Nachricht soll Kreditorendie auf die externe Katalogwebsite leiten, die in einem Browserfenster geöffnet wird. Während der Prüfungs können Sie keine Artikel und Dienstleistungen beim Lieferanten bestellen. Zum Bestellen von Artikeln oder Dienstleistungen müssen Sie auf die Bestellanforderung des Lieferanten zugreifen.
 6. Aktivieren Sie den externen Katalog, indem Sie die Schaltfläche **Katalog aktivieren** auf der Seite **Externe Kataloge** verwenden. Der externe Katalog muss aktiviert werden, bevor ihn Mitarbeiter verwenden können. Sie können jederzeit den externen Katalog deaktivieren.
@@ -62,7 +62,7 @@ Dieser Abschnitt spezifiziert Informationen zur Aufgabe 4 im vorherigen Abschnit
 Beschaffungspolitische Richtlinien werden verwendet, um den Zugriff zu den Kategorien für die kaufende juristische Person oder Empfangsorganisationseinheit zuzulassen oder einzuschränken. Punchout auf einem externen Katalog setzt voraus, dass der Zugriff mit mindestens einer Beschaffungskategorien zulässig ist, die dem Katalog zugeordnet ist.
 7. Richten Sie die cXML Einstellungs-Anforderungsnachricht ein, die an den Kreditor gesendet wird. Das automatisch generierte Nachrichtenformat ist die Mindest-Vorlage, die erforderlich ist, um eine Sitzung zu starten. Geben Sie Werte für die Markierungen aus.
 
-Sie könnne jederzeit die vom System generierte Nachrichtenvorlage erneut laden, indem Sie auf **Nachrichtenformat wiederherstellen** klicken. Beachten Sie, dass, wenn Sie das Nachrichtenformat wiederherstellen, die aktuelle Meldung durch die  automatisch generierte Nachricht ersetzt wird, die leere Markierungen hat.
+Sie könnne jederzeit die vom System generierte Nachrichtenvorlage erneut laden, indem Sie auf **Nachrichtenformat wiederherstellen** klicken. Beachten Sie, dass, wenn Sie das Nachrichtenformat wiederherstellen, die aktuelle Meldung durch die automatisch generierte Nachricht ersetzt wird, die leere Markierungen hat.
 
 ### <a name="cxml-setup-message"></a>cXML Nachricht einrichten
 Unten finden Sie eine Beschreibung der Tags, die in der Vorlage enthalten sind:

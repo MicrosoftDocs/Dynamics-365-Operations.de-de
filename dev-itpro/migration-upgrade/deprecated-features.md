@@ -3,25 +3,25 @@ title: Veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations, Platform, UnifiedOperations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 6
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
-ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 18274d9ca390ee3d6d463b3a6d67ddc3a39294f8
 ms.contentlocale: de-de
-ms.lasthandoff: 06/16/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -29,9 +29,10 @@ ms.lasthandoff: 06/16/2017
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
+Dieses Thema beschreibt Funktionen, die aus Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, entfernt wurden, oder für die vorgesehen ist, sie zu entfernen.
 
-## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funktionen, die in Dynamics 365 for Finance and Operations, Enterprise Edition Juli 2017 Update veraltet wurden
+## <a name="features-that-have-been-deprecated-for-all-deployment-types-of-the-july-2017-update-with-platform-update-8"></a>Funktionen, die für alle Bereitstellungstypen des Updates vom Juli 2017 mit Plattform-Update 8 veraltet sind.
+Diese Liste enthält Funktionen, die für Cloud- und lokale Bereisstellungen veraltet sind.
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portal für mobile Geräte für das Lager
 
@@ -40,7 +41,7 @@ Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – W
 |                                  |                                                 |
 |----------------------------------|-------------------------------------------------|
 | **Grund für Abschreibung**       | Doppelte Funktionen.                        |
-| **Ersetzt durch eine andere Funktion?** | Ja. Diese Funktion wurde von Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einrichtung und Voraussetzungen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations - Warehousing einrichten und konfigurieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Ersetzt durch eine andere Funktion?** | Ja. Diese Funktion wurde von Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einrichtung und Voraussetzungen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations - Warehousing einrichten und konfigurieren](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Betroffene Module**             | Lagerortverwaltung und Transportverwaltung |
 
 ### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Erweiterte Abgleichsregel für Bankabstimmung für den manuelle Abgleich
@@ -62,6 +63,28 @@ Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und G
 | **Grund für Abschreibung**       | Finance and Operations ist mit Tablets kompatibel. Die Tablet-App wird nicht mehr benötigt. |
 | **Ersetzt durch eine andere Funktion?** | Nr.                                                                                      |
 | **Betroffene Module**             | Spesenverwaltung                                                                       |
+
+## <a name="features-that-have-been-deprecated-for-on-premises-deployments-of-the-july-2017-update-with-platform-update-8"></a>Funktionen, die für alle lokale Bereitstellungen des Updates vom Juli 2017 mit Plattform-Update 8 veraltet sind.
+
+### <a name="ssrs-report-viewer-control"></a>SSRS Report Viewer-Steuerelement
+
+Diese Funktion wurde verwendet, um im Finance and Operations-Webclient mit Berichten im HTML-Format zu arbeiten.
+
+|                                  |  |
+|----------------------------------|--|
+| **Grund für Abschreibung**       | SQL Reporting Services (SSRS) unterstützt kein Report Viewer-Steuerelement, das mit dem lokalen Webclient kompatibel ist.      |
+| **Ersetzt durch eine andere Funktion?** | Berichte werde vom lokalen Services als PDF-Dokumente dargestellt. Verwenden Sie Dateinamenerweiterungen, um eingebettete Drillthrough-Links in Applikationsberichten zu aktivieren. |
+| **Betroffene Module**             | Alle    |
+
+### <a name="document-routing-agent"></a>Dokumentweiterleitungsagent
+
+Der Dokumentweiterleitungsagent wird als Service-Gateway verwendet, um von der Cloud aus eine Verbindung zu innerhalb der Domäne authentifizierten Netzwerkdruckern einzurichten.
+
+|                                  |  |
+|----------------------------------|--|
+| **Grund für Abschreibung**       | Lokale Bereitstellungen werden auf für die Domäne authentifizierten Servern gehostet. Damit ist ein sicherer, direkter Zugriff auf Netzwerkdrucker möglich. |
+| **Ersetzt durch eine andere Funktion?** | Diese Komponente ist für lokale Bereitstellungen nicht erforderlich.|
+| **Betroffene Module**             | Keines               |
 
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funktionen, die in Dynamics 365 for Operations 1611 mit Plattformaktualisierung 3 veraltet sind
@@ -488,11 +511,20 @@ Dieses Tool wurde verwendet, um Schlüsseldaten von Microsoft Dynamics CRM mit M
 
 Datenpartitionen enthalten eine logische Trennung von Daten in der Microsoft Dynamics AX-Datenbank.
 
-|                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   |   |
+|---|---|
 | Grund für Abschreibung       | Datenpartitionen wurden in Microsoft Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service(PaaS) Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Egal, ob eine Datenpartitionierung für Tochterunternehmen, mehrere Mandanten oder nur zur Skalierung benötigt wird, glauben wir, dass die Szenarien besser über mehrere Datenbanken oder mehrere Instanzen von Dynamics AX behandelt werden können. |
-| Ersetzt durch eine andere Funktion? | Datenpartitionen werden durch die Unterstützung mehrerer Datenbanken oder Instanzen von Dynamics AX in einer zukünftigen Version ersetzt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Betroffene Module             | Alle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Ersetzt durch eine andere Funktion? | Datenpartitionen werden durch die Unterstützung mehrerer Datenbanken oder Instanzen von Dynamics AX in einer zukünftigen Version ersetzt.    |
+| Betroffene Module             | Alle  |
+
+### <a name="database-and-file-share-storage-for-attachments"></a>Datenbank- und Dateifreigabespeicher für Anhänge
+Microsoft Dynamics AX 2012 ließ die Speicherung von Anhängen in der Datenbank und in Dateifreigaben zu. Beide Optionen werden nicht mehr unterstützt.
+
+|                              |                                        |
+|------------------------------|----------------------------------------|
+| Grund für Abschreibung       | Der Dateifreigabespeicher wird nicht mehr unterstützt, weil in der Cloud gehostete Umgebungen nicht mit lokalen Dateifreigaben kommunizieren können. Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt. Azure Blob-Speicher ist äquivalent zur Speicherung in der Datenbank, weil der Zugriff nur über Client-Formulare von Dynamics 365 for Finance and Operations möglich ist. Auf diese Weise entsteht der zusätzliche Vorteil, dass Speicher bereitgestellt wird, der sich nicht negativ auf die Leistung der Datenbank auswirkt. Blob-Speicher ist der Standardspeichermechanismus für die Dokumentenverwaltung und funktioniert unmittelbar. |
+| Ersetzt durch eine andere Funktion? | Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt.       |
+| Betroffene Module             | Alle                   |
 
 ### <a name="delimitation"></a>Trennung
 
@@ -525,7 +557,7 @@ In Dynamics AX 2012 R3, konnte sich Retail Modern POS direkt mit dem Kanal DB in
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Anstelle der lokalisierten Funktionalität wird nun eine generische Funktion verwendet.                                                                                                                                                                 |
-| Ersetzt durch eine andere Funktion? | Ja, diese Funktion wurde durch erweiterte Bankabstimmungsfunktionen ersetzt. Darüber hinaus ist die Implementierung des Kontoauszugsimportes camt.053 ISO20022 für die allgemeine Erfassung im nächsten Update von Dynamics AX geplant. |
+| Ersetzt durch eine andere Funktion? | Ja, diese Funktion wurde durch erweiterte Bankabstimmungsfunktionen ersetzt. |
 | Betroffene Module             | Alle                                                                                                                                                                                                                                   |
 
 ### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL für Deutschland)
@@ -577,7 +609,7 @@ Testtransaktionsgenerierung kann nicht mithilfe einer Charge verwendet werden. S
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Das Format ist nicht mehr in Deutschland anwendbar, da es durch die SEPA-Funktionen ersetzt wurde.                                                                                                                                                                 |
-| Ersetzt durch eine andere Funktion? | Ja, diese Funktionalität wurde durch SEPA-Zahlungsexport und erweiterte Bankabstimmungsfunktionen zum Importieren von Kontoauszügen ersetzt. Darüber hinaus ist die Implementierung des Kontoauszugsimportes camt.053 ISO20022 für die allgemeine Erfassung im nächsten Update von Dynamics AX geplant. |
+| Ersetzt durch eine andere Funktion? | Ja, diese Funktionalität wurde durch SEPA-Zahlungsexport und erweiterte Bankabstimmungsfunktionen zum Importieren von Kontoauszügen ersetzt. |
 | Betroffene Module             | Alle                                                                                                                                                                                                                                                                                            |
 
 ### <a name="german-dtazv-payment-format"></a>Deutsches DTAZV-Zahlungsformat
@@ -593,7 +625,7 @@ Testtransaktionsgenerierung kann nicht mithilfe einer Charge verwendet werden. S
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Grund für Abschreibung       | Anstelle der lokalisierten Funktionalität wird nun eine generische Funktion verwendet.                                                                                                                                                                 |
-| Ersetzt durch eine andere Funktion? | Ja, diese Funktion wurde durch erweiterte Bankabstimmungsfunktionen ersetzt. Darüber hinaus ist die Implementierung des Kontoauszugsimportes camt.053 ISO20022 für die allgemeine Erfassung im nächsten Update von Dynamics AX geplant. |
+| Ersetzt durch eine andere Funktion? | Ja, diese Funktion wurde durch erweiterte Bankabstimmungsfunktionen ersetzt. |
 | Betroffene Module             | Alle                                                                                                                                                                                                                                   |
 
 ### <a name="german-xml-eu-sales-list"></a>Deutsche XML EU Sales-Liste

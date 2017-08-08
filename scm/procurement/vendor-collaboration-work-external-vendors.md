@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b0aefc62f2d54da963f03dc74d492260722cd451
-ms.openlocfilehash: aabb8277218895566edada3c74d99c02a83dae1e
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
 ms.contentlocale: de-de
-ms.lasthandoff: 06/15/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,7 +36,7 @@ Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine ele
 
 Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace) Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
 
-Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace) 
+Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace) 
 
 Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
 
@@ -75,7 +75,7 @@ Bestellungen werden in Finance and Operations vorbereitet. Wenn die Bestellung d
 
 ### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Bestätigung und Akzeptieren der Bestellung durch den Kreditor
 
-Wenn ein Lieferant eine Bestellung angenommen hat, wird die Bestellung automatisch bestätigt werden, oder sie muss möglicherweise manuell bestätigt werden. Dies ist davon abhängig, ob das Feld **Kreditorenaktivierung** für den Kreditor auf **Aktiv (Bestellung wird automatisch bestätigt)**  oder auf **Aktiv (Bestellung wird nicht automatisch bestätigt)** festgelegt. wird.  
+Wenn ein Lieferant eine Bestellung angenommen hat, wird die Bestellung automatisch bestätigt werden, oder sie muss möglicherweise manuell bestätigt werden. Dies ist davon abhängig, ob das Feld **Kreditorenaktivierung** für den Kreditor auf **Aktiv (Bestellung wird automatisch bestätigt)** oder auf **Aktiv (Bestellung wird nicht automatisch bestätigt)** festgelegt. wird.  
 
 Die folgende Tabelle zeigt den üblichen Nachrichtenaustausch, abhängig davon, wie der Kreditor antwortet, wenn Sie ihm eine Bestellung zur Bestätigung senden.
 
@@ -90,14 +90,14 @@ Die folgende Tabelle zeigt den üblichen Nachrichtenaustausch, abhängig davon, 
 <td><strong>Ergebnis</strong></td>
 </tr>
 <tr class="even">
-<td>Der Kreditor <strong>b</strong>stätigt die Bestellung. Finance and Operations ist konfiguriert, um Bestellungen automatisch zu bestätigen, wenn der Kreditor bestätigt.</td>
+<td>Der Kreditor <strong>bestätigt</strong> die Bestellung. Finance and Operations ist konfiguriert, um Bestellungen automatisch zu bestätigen, wenn der Kreditor bestätigt.</td>
 
 <td>Der Status einer Bestellstatus wird auf <strong>Bestätigt</strong> aktualisiert. Wenn der Auftrag aus einem bestimmten Grund nicht aktualisiert werden kann, wird die Antwort des Kreditors trotzdem als <strong>Bestätigt</strong> erfasst, die Bestellung bleibt aber im Status <strong>Externe Prüfung</strong>. 
 
 Die Bestellung, die an den Kreditor gesendet wurden und der Status **In der externen Prüfung** wird mit bestätigtem Lieferdatum für die Positionen aktualisiert. Die Aktualisierung initiiert eine neue Version, die automatisch auf den Status **Bestätigt** aktualisiert wird. Wenn die Bestellung bestätigt wird, wird sie in der Zusammenarbeitschnittstelle des Kreditors angezeigt.</td>
 </tr>
 <tr class="odd">
-<td>Der Kreditor <strong>b</strong>stätigt die Bestellung. Finance and Operations ist nicht konfiguriert, um Bestellungen automatisch zu bestätigen, wenn der Kreditor bestätigt.</td>
+<td>Der Kreditor <strong>bestätigt</strong> die Bestellung. Finance and Operations ist nicht konfiguriert, um Bestellungen automatisch zu bestätigen, wenn der Kreditor bestätigt.</td>
 <td>Die Antwort des Kreditors wird als <strong>Bestätigt</strong> erfasst, die Bestellung bleibt jedoch im Status <strong>Externe Prüfung</strong>.
 
 Die Bestellung, die an den Kreditor gesendet wurden und der Status **In der externen Prüfung** wird mit bestätigtem Lieferdatum für die Positionen aktualisiert. Die Aktualisierung initiiert eine neue Version, die automatisch auf den Status **In externer Überprüfung** aktualisiert wird. Sie werden dann in der Lage sein, die Bestellung manuell zu bestätigen.</td>
@@ -157,7 +157,7 @@ In den Positionen kann der Kreditor die Menge und das Lieferdatum ändern, Hinwe
 
 Wenn eine Position keine Änderungen hat, erhält sie den Positionsstatus **Angenommen**.
 
-Auf der Antwort können Sie den zuvor genannten Positionsstatus anzeigen, aus denen der Typ der  Änderungen hervorgeht, die der Kreditor gemacht hat. Darüber hinaus werden alle geänderten Felder in Fettschrift angezeigt, damit Sie die Änderungen besser ermitteln können.
+Auf der Antwort können Sie den zuvor genannten Positionsstatus anzeigen, aus denen der Typ der Änderungen hervorgeht, die der Kreditor gemacht hat. Darüber hinaus werden alle geänderten Felder in Fettschrift angezeigt, damit Sie die Änderungen besser ermitteln können.
 
 Sie können eine Bestellung aktualisieren, indem Sie einmal auf **Prozess-Bestellungsaktualisierunga** aktion auf der Antwort auf einer Position klicken. Mithilfe einem Indikator, **Für Bestellaktualisierung verarbeitet?**, auf dem Kopf und der Positionen können Sie erkennen, ob das System den Kopf oder die Positionen verarbeitet hat, um die Bestellung mit allen möglichen Änderungen zu aktualisieren, die aus der Antwort stammen. Sie können den Prozess **Prozess-Bestellungsaktualisierung** jeweils nur einmal pro Kopf oder Position durchführen.
 
@@ -196,19 +196,23 @@ Wenn Sie das Änderungsmanagement für eine Bestellung aktiviert haben, durchlä
 
 Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Version, die eine Bestellung durchlaufen kann, wenn das Änderungsmanagement aktiviert ist: Die Version wird registriert, wenn die Bestellung aktiviert ist, nicht wenn die Bestellung an den Kreditor geschickt oder bestätigt wird.
 
-|                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Vorgang**                                                                                                    | **Status und Version**                                                                                                                                                                                                                                                                                                                                                                      |
-| Die ursprüngliche Version der Bestellung wird in Finance and Operations erstellt.                                      | Der Kopfstatus ist **Entwurf**.                                                                                                                                                                                                                                                                                                                                                                    |
-
-| Die Bestellung wird zum Genehmigungsprozess übermittelt. (Der Genehmigungsprozess ist ein interner Prozess, in den der Kreditor nicht involviert ist). | Der Status wird von **Entwurf** auf **Wird überprüft** zu **Genehmigung** geändert, wenn die Bestellung nicht während des Genehmigungsprozesses abgelehnt wird. Die genehmigte Bestellung wird als eine Version erfasst.                                                                                                                                                                                                                     | Die Bestellung wird an den Kreditor gesendet                                                         | Die neue Version wird in der Kreditorenportalschnittstelle erfasst und der Status wird in **Externe Prüfung** geändert.                                                                                                                                                                                                                                                                       | | Sie nehmen einige Änderungen vor, die der Kreditor verlangt hat, entweder manuell oder mithilfe der Aktivität auf der Antwort, um die Bestellung zu aktualisieren.                                                       | Der Status wird zurückgeändert in **Entwurf**.                                                                                                                                                                                                                                                                                                                                                    | | Die Bestellung wird erneut zum Genehmigungsprozess übermittelt.                                                            | Der Status wird von in **Entwurf** auf **Wird überprüft** und **Genehmigung** geändert, wenn die Bestellung nicht bei der Genehmigungsprozedur abgelehnt wird. Alternativ kann das System so konfiguriert werden, dass bestimmte Feldänderungen keine erneute Genehmigung erfordern. In diesem Fall wird der Status zuerst in **Entwurf** geändert und wird dann automatisch auf **Genehmigt** aktualisiert. Die genehmigte Bestellung wird als eine neue Version erfasst. | | Sie senden die neue Version der Bestellung an den Kreditor.                                                             | Die neue Version wird in der Kreditorenportalschnittstelle erfasst und der Status wird in **Externe Prüfung** geändert.                                                                                                                                                                                                                                                                   | | Der Kreditor genehmigt die neue Version der PO.                                                                | Der Status wird entweder automatisch in **Bestätigt** geändert oder wenn Sie die Antwort vom Kreditor erhalten und die Bestellung dann bestätigen.                                                                                                                                                                                                                                                     |
+|                                                                          |                                                                                                                                                              |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Vorgang**                                                               | **Status und Version**                                                                                                                                       |
+| Die ursprüngliche Version der Bestellung wird in Finance and Operations erstellt.      | Der Kopfstatus ist **Entwurf**.  |
+| Die Bestellung wird zum Genehmigungsprozess übermittelt. (Der Genehmigungsprozess ist ein interner Prozess, an dem der Kreditor nicht beteiligt ist.)                                                           | Der Status wird von in **Entwurf** auf **Wird überprüft** und **Genehmigung** geändert, wenn die Bestellung nicht während dem Genehmigungsprozess abgelehnt wird. Die genehmigte Bestellung wird als eine Version erfasst.           | 
+| Die Bestellung wird an den Kreditor gesendet                                                            | Die Version wird in der Kreditorenportalschnittstelle erfasst und der Status wird in **Externe Prüfung** geändert.      |
+| Sie nehmen einige Änderungen vor, die der Kreditor verlangt hat, entweder manuell oder mithilfe der Aktivität auf der Antwort, um die Bestellung zu aktualisieren.                                                            | Der Status wird zurückgeändert in **Entwurf**.     |
+|Die Bestellung wird erneut zum Genehmigungsprozess übermittelt.                                                |  Der Status wird von in **Entwurf** auf **Wird überprüft** und **Genehmigung** geändert, wenn die Bestellung nicht während dem Genehmigungsprozess abgelehnt wird. Alternativ kann das System so konfiguriert werden, dass bestimmte Feldänderungen keine erneute Genehmigung erfordern. In diesem Fall wird der Status zuerst in **Entwurf** geändert und wird dann automatisch auf **Genehmigt** aktualisiert. Die genehmigte Bestellung wird als eine neue Version erfasst.                                         |
+|Sie senden die neue Version der Bestellung an den Kreditor.                                                |  Die neue Version wird in der Kreditorenportalschnittstelle erfasst und der Status wird in **Externe Prüfung** geändert.                                         |
+|Der Kreditor genehmigt die neue Version der PO.                                                |  Der Status wird entweder automatisch in **Bestätigt** geändert oder wenn Sie die Antwort vom Kreditor erhalten und die Bestellung dann bestätigen. |
 
 ## <a name="share-information-about-consignment-inventory"></a>Informationen zum Lieferbestand teilen
 Wenn Sie Lieferungsbestand verwenden, können Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, um Informationen zu den folgenden Seiten anzeigen:
 
 -   **Bestellungen, die Lieferungsbestand verbrauchen -** Bestellungen für Lieferungsbestand werden erzeugt, wenn das Eigentum vom Bestand vom Lieferant an Ihr Unternehmen übergeht. Eine Produktquittung wird gleichzeitig gebucht. Diese Lieferungsbestellungen werden nur auf der Seite **Bestellungen, die Lieferungsbestands verbrauchen** angezeigt. Sie werden nicht auf der Seite **Alle bestätigen Bestellungen** im Modul **Kreditorenzusammenarbeit** angezeigt.
 -   **Produkte erhalten vom Lieferungsbestand** - Diese Seite enthält alle Buchunge, in denen der Besitz der Prdukte vom Kreditor an das Unternehmen übertragen wurde. Verkäufer können diese Informationen verwenden, für die Rechnungsstellung.
--   **Verfügbarer Lieferungsbestand** - Diese Seite zeigt  den Lieferungsbestand des Lieferanten, der an unserem Lagerort eingetroffen ist.
+-   **Verfügbarer Lieferungsbestand** - Diese Seite zeigt den Lieferungsbestand des Lieferanten, der an unserem Lagerort eingetroffen ist.
 
 
 
