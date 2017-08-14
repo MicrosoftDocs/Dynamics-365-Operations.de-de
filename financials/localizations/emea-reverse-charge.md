@@ -1,5 +1,5 @@
 ---
-title: "Verlängerung der Steuerschuld | Microsoft Doc."
+title: Verlagerung der Steuerschuld
 description: "In diesem Thema wird erläutert, wie die Verlagerung der Steuerschuld für europäische Länder eingerichtet wird."
 author: epodkolz
 manager: AnnBe
@@ -13,13 +13,13 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epodkolz
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6cb473962f40ed9ef2f5f807f089098764f47009
-ms.openlocfilehash: b3c94fa73410d9bdcaaec11dee04a7a239e4d45a
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: dba651b4e6f0e661d6743780495c7ee217eefd9d
 ms.contentlocale: de-de
-ms.lasthandoff: 06/14/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,12 +39,12 @@ Es wird empfohlen, dass Sie separate Mehrwertsteuercodes für Einkaufsarbeitsgä
 <body>
 <tr>
 <td><strong>Mehrwertsteuercode für Umsätze</strong></td>
-<td>Erstellen Sie einen Mehrwertsteuercode für Arbeitsgänge mit Verlagerung der Steuerschuld (<strong>Steuer</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Mehrwertsteuercodes</strong>).
+<td>Erstellen Sie einen Mehrwertsteuercode für Vertriebsoperationen mit Verlagerung der Steuerschuld (<strong>Steuer</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Mehrwertsteuercodes</strong>).
 </td>
 </tr>
 <tr>
 <td><strong>Mehrwertsteuercode für Einkäufe</strong></td>
-<td><p>Erstellen Sie positive und negative Mehrwertsteuercodes für die Verlagerung der Steuerschuld für Einkäufe (<strong>Steuern</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Mehrwertsteuercodes</strong>).</p>
+<td><p>Erstellen Sie positive und negative Mehrwertsteuercodes für Mehrwertsteuer mit Verlagerung der Steuerschuld für Einkäufe (<strong>Steuer</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Mehrwertsteuercodes</strong>).</p>
 <ol>
 <li>Erstellen Sie einen Mehrwertsteuercode mit positivem Wert.</li>
 <li>Erstellen Sie einen Mehrwertsteuercode mit negativem Wert. Legen Sie die <strong>Negativen Mehrwertsteuersatz zulassen</strong>-Option auf <strong>Ja</strong> fest.
@@ -62,15 +62,15 @@ Es wird empfohlen, dass Sie separate Mehrwertsteuergruppen für Einkaufsarbeitsg
 <table>
 <tr>
 <td><strong>Mehrwertsteuergruppen für Verkäufe</strong></td>
-<td>Erstellen Sie eine Mehrwertsteuergruppe für Verkaufsarbeitsgänge mit Verlagerung der Steuerschuld (<strong>Steuer</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Mehrwertsteuergruppen</strong>). Geben Sie auf der Registerkarte <strong>Einstellungen</strong> den Mehrwertsteuercode für die Verlagerung der Steuerschuld in dieser Gruppe an. Aktivieren Sie die Kontrollkästchen <strong>Befreit</strong> und <strong>Verlagerung der Steuerschuld</strong> für den Mehrwertsteuercode.</td>
+<td>Erstellen Sie eine Mehrwertsteuergruppe für Vertriebsoperationen mit Verlagerung der Steuerschuld (<strong>Steuer</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Mehrwertsteuercodes</strong>). Geben Sie auf der Registerkarte <strong>Einstellungen</strong> den Mehrwertsteuercode für die Verlagerung der Steuerschuld in dieser Gruppe an. Aktivieren Sie die Kontrollkästchen <strong>Befreit</strong> und <strong>Verlagerung der Steuerschuld</strong> für den Mehrwertsteuercode.</td>
 </tr>
 <tr>
 <td><strong>Mehrwertsteuergruppen für Einkäufe</strong></td>
-<td>Erstellen Sie eine Mehrwertsteuergruppe für Einkaufsarbeitsgänge mit Verlagerung der Steuerschuld (<strong>Steuer</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Mehrwertsteuergruppen</strong>). Geben Sie auf der Registerkarte <strong>Einstellungen</strong> die positiven und negativen Mehrwertsteuercodes in dieser Gruppe an. Aktivieren Sie das Kontrollkästchen <strong>Verlagerung der Steuerschuld</strong> für den Mehrwertsteuercode mit negativem Wert.</td>
+<td>Erstellen Sie eine Mehrwertsteuergruppe für Einkaufsoperationen mit Verlagerung der Steuerschuld (<strong>Steuer</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Mehrwertsteuergruppen</strong>). Geben Sie auf der Registerkarte <strong>Einstellungen</strong> die positiven und negativen Mehrwertsteuercodes in dieser Gruppe an. Aktivieren Sie das Kontrollkästchen <strong>Verlagerung der Steuerschuld</strong> für den Mehrwertsteuercode mit negativem Wert.</td>
 </tr>
 <tr>
 <td><strong>Artikel-Mehrwertsteuergruppen</strong></td>
-<td>Erstellen oder aktualisieren Sie die Artikel-Mehrwertsteuergruppe mit dem Mehrwertsteuercode mit negativem Wert (<strong>Steuer</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Artikel-Mehrwertsteuergruppen</strong>). Sie müssen den Produkten und Kategorien, für die die Verlagerung der Steuerschuld gilt, die Artikel-Mehrwertsteuergruppe zuweisen.</td>
+<td>Erstellen oder aktualisieren Sie die Artikel-Mehrwertsteuergruppe mit dem Mehrwertsteuercode, der einen negativen Wert hat (<strong>Steuer</strong> > <strong>Indirekte Steuern</strong> > <strong>Mehrwertsteuer</strong> > <strong>Artikel-Mehrwertsteuergruppen</strong>). Sie müssen den Produkten und Kategorien, für die die Verlagerung der Steuerschuld gilt, die Artikel-Mehrwertsteuergruppe zuweisen.</td>
 </tr>
 </table>
 

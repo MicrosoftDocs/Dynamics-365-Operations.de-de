@@ -1,5 +1,5 @@
 ---
-title: Einkaufssteuern | Microsoft Doc.
+title: Einkaufsaufgaben
 description: "Bei der Einkaufssteuer handelt es sich um eine Steuer auf die eingehende Mehrwertsteuer. Sie wird als prozentualer Anteil der gezahlten Mehrwertsteuer berechnet. Dieses Thema bezieht sich auf eine bestimmte Funktionserweiterung, die für juristische Personen in Österreich gilt."
 author: neserovleo
 manager: AnnBe
@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria
 ms.author: v-lenest
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b34789f1ace40498375824e377d53e001cd5fc27
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: b91641ee2382523e9cdf49642ed11fe3a80b1063
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -30,7 +29,7 @@ Bei der Einkaufssteuer handelt es sich um eine Steuer auf die eingehende Mehrwer
 
 Die Berechnung der Einkaufssteuern basiert auf Mehrwertsteuercodes. Um einen Mehrwertsteuercode in die Einkaufssteuerberechnung einzubeziehen, aktivieren Sie das Kontrollkästchen **Einkaufssteuer** auf der Seite **Mehrwertsteuercodes**. 
 
-Sie können Einkaufssteuereinstellungen im Menü **Steuereinstellungen** auf der Seite **Einkaufssteuer** angeben. Sie können den Bezeichner für Berechtigungen (beispielsweise **KU**), Beschreibung, Steuerbehörde und Konten, die für die Buchung verwendet werden, festlegen Das Steuerkonto ist ein Bilanzkonto, in dem die Verbindlichkeiten für die Einkaufssteuer erfasst werden. Das Kostenkonto ist ein GuV-Konto, in dem die Kosten gebucht werden, und ein Bankkonto.
+Sie können Einkaufssteuereinstellungen im Menü **Steuereinstellungen** auf der Seite **Einkaufssteuer** angeben. Sie können den Bezeichner für Berechtigungen (beispielsweise **KU**), Beschreibung, Steuerbehörde und Konten, die für die Buchung verwendet werden, festlegen Das Steuerkonto ist ein Bilanzkonto, in dem die Verbindlichkeiten für die Einkaufssteuer erfasst werden. Das Kostenkonto ist ein Gewinn- und Verlustkonto, auf dem die Kosten gebucht werden, und ein Ausgleichskonto, wo Ausgleichstransaktionen generiert werden.
 
 Um den Wert der Einkaufssteuer anzugeben, klicken Sie auf **Einkaufssteuerwert**, um die Seite **Einkaufssteuerwert** zu öffnen. Sie können den Einkaufssteuersatz in Prozent ( z. B. **0.30**) für den erforderlichen Zeitraum angeben.
 

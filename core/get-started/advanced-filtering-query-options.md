@@ -1,28 +1,28 @@
 ---
 title: Erweiterte Filter- und Abfragesyntax
-description: "In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den &quot;entspricht&quot;-Operator im Dialogfeld &quot;Erweitertes Filtern/Sortieren&quot; verwenden."
+description: "In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den \"entspricht\"-Operator im Dialogfeld \"Erweitertes Filtern/Sortieren\" verwenden."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysQueryForm
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3811
 ms.assetid: b4969b30-2fe1-4a3c-bbea-725dc37c8b60
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 48b2049c3f5025d7e8d3fc7e944aa9360786d18a
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 616366009ce7bf7135704e980becc331617cf5af
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -68,7 +68,7 @@ In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfü
 <td><em>Von-Wert</em>..<em>Bis-Wert</em> (zwei Punkte)</td>
 <td>Zwischen zwei eingegebenen Werten, die von zwei Punkten getrennt werden.</td>
 <td>Geben Sie den "Von-Wert", zwei Punkte und dann den "Bis-Wert" ein.</td>
-<td><strong>1..10</strong> findet alle Werte von 1 bis 10. In einem Zeichenfolgefeld findet <strong>A..C</strong> allerdings alle Werte, die mit &quot;A&quot; bzw. &quot;B&quot; beginnen oder gleich &quot;C&quot; sind (Dieses Beispiel findet die Anfrage &quot;Ca&quot; somit nicht. Wenn Sie alle Werte von &quot;A*&quot; bis &quot;C*&quot;, suchen, geben Sie also <strong>A..D</strong> ein.</td>
+<td><strong>1..10</strong> findet alle Werte von 1 bis 10. In einem Zeichenfolgenfeld findet <strong>A..C</strong> alle Werte, die mit &quot;A&quot; und &quot;B&quot; beginnen, sowie Werte, die genau gleich &quot;C&quot; sind. Diese Abfrage findet beispielsweise nicht &quot;Ca&quot;. Wenn Sie alle Werte von &quot;A*&quot; bis &quot;C*&quot;, suchen, geben Sie also <strong>A..D</strong> ein.</td>
 </tr>
 <tr class="even">
 <td>..<em>Wert</em> (zwei Punkte)</td>
@@ -122,7 +122,7 @@ In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfü
 <td><em>Wert</em>,<em>Wert</em> (Komma)</td>
 <td>Vergleicht die Werte, die durch Kommas getrennt sind.</td>
 <td>Geben Sie alle Kriterien durch Kommas getrennt an.</td>
-<td><strong>A, D, F, G</strong> findet genau &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, und &quot;G&quot;. <strong>10, 20, 30, 100</strong> findet genau &quot;10, 20, 30, 100&quot;.</td>
+<td><strong>A, D, F, G</strong> findet genau &quot;A&quot;, &quot;D&quot;, &quot;F&quot; und &quot;G&quot;. <strong>10, 20, 30, 100</strong> findet genau &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL-Anweisung</span>) (SQL-Anweisung in Klammern)</td>

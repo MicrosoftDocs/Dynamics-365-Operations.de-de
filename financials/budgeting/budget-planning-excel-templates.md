@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,12 +35,18 @@ In diesem Thema wird beschrieben, wie Microsoft Excel-Vorlagen erstellt werden, 
 Dieses Thema zeigt, wie Excel-Vorlagen erstellt werden, die mit Budgetplänen mithilfe des Standarddemodatsatzes und der Benutzer Admin-Anmeldung verwendet werden. Weitere Informationen zu Budgetplanung, finden Sie unter [Budgetplanungsüberblick](budget-planning-overview-configuration.md) Sie können auch auf das Lernprogramm [Budgetplanung 101](budget-plan.md) zugreifen, um die Grundeinstellungsmodulkonfigurations- und -Verwendungsprinzipien zu ermitteln.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Erstellt ein Arbeitsblatt mithilfe der Budgetplandokumentvorlage.
-Budgetplandokumente können mithilfe einer oder mehrerer Layouts angezeigt und bearbeitet werden. Jedes Layout kann eine zugeordnete Budgetplandokumentvorlage haben, um die Budgetplandaten in einer Excel-Kalkulationstabelle anzuzeigen und zu bearbeiten. In diesem Thema wird eine Budgetplandokumentvorlage mit einer vorhandenen Layoutkonfiguration generiert. Öffnen Sie **Budgetplanliste** (**Planung**&gt; **Budgetplan**). Klicken Sie auf **Neu**, um einen neuen Budgetplan zu erstellen. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+Budgetplandokumente können mithilfe einer oder mehrerer Layouts angezeigt und bearbeitet werden. Jedes Layout kann eine zugeordnete Budgetplandokumentvorlage haben, um die Budgetplandaten in einer Excel-Kalkulationstabelle anzuzeigen und zu bearbeiten. In diesem Thema wird eine Budgetplandokumentvorlage mit einer vorhandenen Layoutkonfiguration generiert. 
+
+Öffnen Sie die **Budgetplanliste** (**Budgetierung** &gt; **Budgetpläne**). Klicken Sie auf **Neu**, um einen neuen Budgetplan zu erstellen. 
+
+[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Mithilfe der Zeilenoption **Hinzufügen** fügen Sie Zeilen hinzu. **Layouts** klicken, um die Budgetplandokument-Layoutkonfiguration anzuzeigen. 
+
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Sie können die Layoutkonfiguration anschauen und nach Bedarf anpassen. Wechseln Sie zu **Vorlage** &gt; **Erstellen**, um eine Excel-Datei für dieses Layout zu erstellen. Nachdem die Vorlage generiert wurde, gehen Sie zu **Vorlage** &gt; **Ansicht**, um die Budgetplandokumentvorlage zu öffnen und zu wiederholen. Sie können die Excel-Datei auf Ihrem lokalen Laufwerk speichern. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Sie können die Layoutkonfiguration anschauen und nach Bedarf anpassen. Wechseln Sie zu **Vorlage** &gt; **Erstellen**, um eine Excel-Datei für dieses Layout zu erstellen. Nachdem die Vorlage generiert wurde, gehen Sie zu **Vorlage** &gt; **Ansicht**, um die Budgetplandokumentvorlage zu öffnen und zu wiederholen. Sie können die Excel-Datei auf Ihrem lokalen Laufwerk speichern. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Das Budgetplandokumentlayout kann nicht geändert werden, nachdem ihr eine Excel-Tabelle zugeordnet wurde. Um das Layout zu ändern, löschen Sie die zugeordnete Excel-Vorlagendatei und erstellen Sie diese neu. Dies ist erforderlich, um die Felder im synchronisierten Layout und im Arbeitsblatt zu halten. 

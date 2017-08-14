@@ -11,19 +11,18 @@ ms.technology:
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: cebd1b6f041e18c2e016142aba7447bf813f570b
-ms.openlocfilehash: f6327b339441f2f1f6d4e557e45d085685245a08
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: b9ad00b4157d1f732a8f2400712c94a92a17b273
 ms.contentlocale: de-de
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 06/19/2017
 
 Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es umfasst Informationen über wesentliche Konzepte, vom ER unterstützte Szenarien und eine Liste der Formate, die im Rahmen der Lösung entwickelt und veröffentlicht wurden.
 
-Die Elektronische Berichterstellung (ER/Electronic Reporting) ist ein Tool, mit dem Sie Formate für eingehende und ausgehende elektronische Dokumente gemäß der gesetzlichen Vorschriften verschiedener Länder/Regionen konfigurieren können. ER ermöglicht Ihnen, diese Formate während ihres Lebenszyklus zu verwalten. Sie können z.B. neue gesetzliche Vorgaben übernehmen und Geschäftsdokumente im erforderlichen Format generieren, um Informationen elektronisch mit Regierungsstellen, Banken und anderen Parteien auszutauschen.
+ER ist ein Tool, mit dem Sie Formate für eingehende und ausgehende elektronische Dokumente in Übereinstimmung mit den gesetzlichen Anforderungen verschiedener Länder/Regionen konfigurieren können. ER ermöglicht Ihnen, diese Formate während ihres Lebenszyklus zu verwalten. Sie können z.B. neue gesetzliche Vorgaben übernehmen und Geschäftsdokumente im erforderlichen Format generieren, um Informationen elektronisch mit Regierungsstellen, Banken und anderen Parteien auszutauschen.
 
 Das ER-Modul ist für die Verwendung durch geschäftliche Benutzer anstatt Entwickler bestimmt. Da Sie Formate statt Code konfigurieren, ist der Prozess zum Erstellen und Anpassen von Formaten für elektronische Dokumente schneller und einfacher.
 
@@ -43,8 +42,8 @@ ER unterstützt derzeit nur TEXT, XML, das Microsoft Word-Dokument und die OPENX
 ## <a name="capabilities"></a>Funktionen
 Das ER-Modul hat folgende Funktionen:
 
-- Es stellt ein einzelnes freigegebenes Tool für elektronische Berichterstellung in verschiedenen Domänen dar, das mehr als 20 verschiedene Module, die einige Arten der elektronischen Berichterstellung von Microsoft Dynamics 365 for Operations ausführen, ersetzt.
-- Es erstellt ein Berichtsformat, das von der aktuellen Microsoft Dynamics 365 for Operations-Implementierung isoliert ist. In anderen Worten, das Format gilt für verschiedene Versionen von Microsoft Dynamics 365 for Operations.
+- Es stellt ein einziges, gemeinsam genutztes Tool für die Erstellung elektronischer Berichte in unterschiedlichen Bereichen dar und ersetzt mehr als 20 unterschiedliche Engines, die irgendeine Art elektronischer Berichte für Microsoft Dynamics 365 for Finance and Operations erstellen.
+- Es isoliert das Format eines Berichts von der aktuellen Finance and Operations-Implementierung. Mit anderen Worten, das Format ist für unterschiedliche Versionen von Finance and Operations anwendbar.
 - Es unterstützt die Erstellung eines benutzerdefinierten Formats, das auf einem ursprünglichen Format basiert. Es umfasst zudem Funktionen zum automatischen Aktualisieren von benutzerdefinierten Formaten, wenn am Originalformat Änderungen durch die Einführung von Lokalisierungs-/Anpassungsanforderungen entstehen.
 - Es wird das primäre Standardtool zur Unterstützung von Lokalisierungsanforderungen in der elektronischen Berichterstellung, sowohl für Microsoft als auch für MS-Partner.
 - Es unterstützt die Möglichkeit, Formate an Partner und Kunden über Microsoft Dynamics Lifecycle Services (LCS) zu verteilen.
@@ -59,7 +58,8 @@ ER unterstützt zwei Komponententypen: **Datenmodell** und **Format**.
 Eine Datenmodellkomponente ist eine abstrakte Darstellung der Datenstruktur. Es wird verwendet, um bestimmte Geschäftsdomänenbereiche mit ausreichend Details zu beschreiben, um die Berichtsanforderungen für diese Domäne zu erfüllen. Eine Datenmodellkomponente besteht aus den folgenden Teilen:
 
 - Ein Datenmodell als ein Satz domänenspezifischer Geschäftseinheiten und einer hierarchisch strukturierten Definition von Beziehungen zwischen diesen Einheiten.
-- Eine Modellzuordnung, die ausgewählte Microsoft Dynamics 365 for Operations-Datenquellen mit einzelnen Elementen eines Datenmodells verknüpft, das zur Laufzeit den Datenfluss und die Regeln der Geschäftsdatenauffüllung zu einer Datenmodellkomponente angibt.
+- Eine Modellzuordnung, die ausgewählte Datenquellen von Finance and Operations mit einzelnen Elementen eines Datenmodells verknüpft, das zur Laufzeit den Datenfluss und die Datenpopulation nach den Geschäftsregeln für eine Komponente des Datenmodells spezifiziert.
+
 Eine Geschäftseinheit eines Datenmodells wird als Container (Datensatz) dargestellt. Geschäftseinheitseigenschaften werden als Datenelemente (Felder) dargestellt. Jedes Datenelement hat eine(n) eindeutigen Namen, Beschriftung, Beschreibung und Wert. Der Wert jedes Datenelements kann so konzipiert werden, dass er als Zeichenfolge, Ganzzahl, Gleitkommazahl, Datum, Aufzählung, Boolesch, usw. erkannt wird. Außerdem kann er ein anderer Datensatz oder eine Datensatzliste sein.
 
 Eine einzelne Datenmodellkomponente kann mehrere Hierarchien von domänenspezifischen Geschäftsentitäten enthalten. Sie kann auch Modellzuordnungen enthalten, die einen berichtspezifischen Datenfluss bei Laufzeit unterstützen. Die Hierarchien unterscheiden sich durch einen einzelnen Datensatz, der als Stamm zur Modellzuordnung ausgewählt wurde. Beispielsweise unterstützt das Datenmodell des Zahlungsdomänenbereichs möglicherweise die folgenden Zuordnungen:
@@ -71,17 +71,18 @@ Beachten Sie, dass Geschäftsentitäten (z. B. Unternehmens- und Zahlungstransak
 
 Eine Modellzuordnung, die ausgehende elektronische Dokumente unterstützt, hat die folgenden Fähigkeiten:
 
-- Sie kann verschiedene Datentypen von Dynamics 365 for Operations als Datenquellen für ein Datenmodell verwenden. Beispielsweise kann sie Tabellen, Datenentitäten, Methoden oder Enumerationen verwenden.
+- Sie kann verschiedene Datentypen von Finance and Operations als Datenquellen für ein Datenmodell verwenden. Beispielsweise kann sie Tabellen, Datenentitäten, Methoden oder Enumerationen verwenden.
 - Sie unterstützt Benutzereingabeparameter, die als Datenquellen für ein Datenmodell definiert werden, wenn einige Daten in der Laufzeit angegeben werden müssen.
-- Sie unterstützt die Transformation von Dynamics 365 for Operations-Daten in erforderliche Gruppen. Sie können damit zudem filtern, sortieren und Daten summieren sowie logisch berechnete Felder anhängen, die mit Formeln entworfen werden, die Microsoft Excel-Formeln ähneln, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)).
+- Sie unterstützt die Umwandlung von Daten aus Finance and Operations in die erforderlichen Gruppen. Sie können damit zudem filtern, sortieren und Daten summieren sowie logisch berechnete Felder anhängen, die mit Formeln entworfen werden, die Microsoft Excel-Formeln ähneln, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)).
 
 [![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
 
 Eine Zuordnung, die vorbildliche eingehende elektronische Dokumente unterstützt, umfasst die folgenden Funktionen:
 
-- Sie kann auch unterschiedliche aktualisierbare Dynamics 365 for Operations-Datenelemente als Ziel verwenden. Diese Datenelemente enthalten Tabellen, Datenentitäten und Ansichten. Die Daten kann mithilfe der Daten von eingehenden elektronischen Dokumenten aktualisiert werden. Mehrere Ziele können in einer einzelnen Modellzuordnung verwendet werden.
+- Sie kann unterschiedliche aktualisierbare Datenelemente als Ziele verwenden. Diese Datenelemente enthalten Tabellen, Datenentitäten und Ansichten. Die Daten kann mithilfe der Daten von eingehenden elektronischen Dokumenten aktualisiert werden. Mehrere Ziele können in einer einzelnen Modellzuordnung verwendet werden.
 - Sie unterstützt Benutzereingabeparameter, die als Datenquellen für ein Datenmodell definiert werden, wenn einige Daten in der Laufzeit angegeben werden müssen.
-Eine Datenmodellkomponente wird für jede Geschäftsdomäne konzipiert, die als einheitliche Datenquelle für die Berichtserstellung verwendet werden soll, die Berichtserstellung von der physischen Implementierung von Dynamics 365 for Operations insoliert. Sie stellt domänenspezifische Geschäftskonzepte und Funktionen in einem Formular dar, die den ersten Entwurf und die weitere Verwaltung eines Berichterstellungsformats effizienter macht.
+
+Für jede Geschäftsdomäne wird eine Datenmodellkomponente entworfen, die als vereinheitlichte Datenquelle für die Berichtserstellung verwendet werden soll, und die die Berichtserstellung von der physischen Implementierung von Datenquellen isoliert. Sie stellt domänenspezifische Geschäftskonzepte und Funktionen in einem Formular dar, die den ersten Entwurf und die weitere Verwaltung eines Berichterstellungsformats effizienter macht.
 
 #### <a name="format-components-for-outgoing-electronic-documents"></a>Formatkomponenten für ausgehende elektronische Dokumente
 
@@ -133,32 +134,32 @@ Die Versionsverwaltung wird für ER-Komponenten unterstützt. Der folgende Workf
 
 Versionen in einem **Abgeschlossen** oder **Gemeinsam genutzt**-Status sind für anderen Datenaustausch verfügbar. Die folgenden Aktionen können für eine Komponente mit diesen Status ausgeführt werden:
 
-- Die Komponente kann im XML-Format serialisiert und als Datei im XML-Format in Dynamics 365 for Operations exportiert werden.
-- Die Komponente kann aus einer XML-Datei neu serialisiert und in Dynamics 365 for Operations als neue Version einer ER-Komponente importiert werden.
+- Die Komponente kann im XML-Format serialisiert und als Datei im XML-Format exportiert werden.
+- Die Komponente kann aus einer XML-Datei reserialisiert und als neue Version einer ER-Komponente in Finance and Operations importiert werden.
 
 #### <a name="component-date-effectivity"></a>Teildatumswirksamkeit
 
-ER-Komponentenversionen haben ein Gültigkeitsdatum. Sie können das **Gültig ab**-Datum für eine ER-Komponente definieren, um das Datum anzugeben, ab dem diese Komponente für Berichtsprozesse wirksam wird. Das Microsoft Dynamics 365 for Operations-Sitzungsdatum wird verwendet, um zu definieren, ob eine Komponente für die Ausführung gültig ist. Wenn mehrere Versionen für ein bestimmtes Datum gültig sind, wird die aktuellste Version für die Berichterstattung verwendet.
+ER-Komponentenversionen haben ein Gültigkeitsdatum. Sie können das **Gültig ab**-Datum für eine ER-Komponente definieren, um das Datum anzugeben, ab dem diese Komponente für Berichtsprozesse wirksam wird. Das Sitzungsdatum von Finance and Operations wird verwendet, um zu definieren, ob eine Komponente für die Ausführung gültig ist. Wenn mehrere Versionen für ein bestimmtes Datum gültig sind, wird die aktuellste Version für die Berichterstattung verwendet.
 
 #### <a name="component-access"></a>Teilzugriff
 
-Der Zugriff auf ER-Formatkomponenten hängt von den Einstellungen des ISO-Länder-/Regionscode ab. Wenn diese Einstellung für eine ausgewählte Version einer Format-Konfiguration leer ist, kann ein Zugriff auf eine Format-Komponente von jedem Dynamics 365 for Operations-Unternehmen zur Laufzeit erfolgen. Wenn diese Einstellung ISO-Länder-/Regionscodes enthält, ist eine Formatkomponente nur bei Microsoft Dynamics 365 for Operations-Unternehmen verfügbar, deren primäre Adresse für einen der ISO Länder-/Regionscodes diser Formatkomponente definiert ist.
+Der Zugriff auf ER-Formatkomponenten hängt von den Einstellungen des ISO-Länder-/Regionscode ab. Wenn diese Einstellung für eine ausgewählte Version einer Formatkonfiguration leer ist, kann der Zugriff auf eine Formatkomponente von jedem Unternehmen aus zur Laufzeit erfolgen. Wenn diese Einstellung ISO-Länder-/Regionscodes enthält, steht eine Formatkomponente nur von Unternehmen zur Verfügung, die eine primäre Adresse besitzen, die für einen der ISO-Länder-/Regionscodes einer Formatkomponente definiert ist.
 
 Für unterschiedliche Versionen einer Datenformatkomponente kann es verschiedene Einstellungen von ISO-Länder-/Regionscodes geben.
 
 #### <a name="configuration"></a>Konfiguration
 
-Eine ER-Konfiguration ist der Wrapper einer bestimmten ER-Komponente. Diese Komponente kann entweder eine Datenmodellkomponente oder eine Formatkomponente sein. Eine Konfiguration kann unterschiedliche Versionen einer ER-Komponente beinhalten. Jede Konfiguration wird markiert als im Besitz von einem bestimmten Konfigurationsanbieter. Die **Entwurf**-Version einer Konfigurationskomponente kann bearbeitet werden, wenn der Besitzer einer Konfiguration als aktiver Anbieter in den ER-Einstellungen in Microsoft Dynamics 365 for Operations ausgewählt wurde.
+Eine ER-Konfiguration ist der Wrapper einer bestimmten ER-Komponente. Diese Komponente kann entweder eine Datenmodellkomponente oder eine Formatkomponente sein. Eine Konfiguration kann unterschiedliche Versionen einer ER-Komponente beinhalten. Jede Konfiguration wird markiert als im Besitz von einem bestimmten Konfigurationsanbieter. Die **Entwurfsversion** einer Komponente einer Konfiguration kann bearbeitet werden, wenn der Eigentümer der Konfiguration in den ER-Einstellungen in Finance and Operations als aktiver Anbieter ausgewählt wurde.
 
 Jede Modellkonfiguration enthält eine Datenmodell-Komponente. Eine neue Format-Konfiguration kann von einer bestimmten Datenmodellkonfiguration abgeleitet sein. In der Konfigurationsstruktur wird die erstellte Formatkonfiguration als untergeordnetes Element der ursprünglichen Modellkonfiguration aufgeführt.
 
 Die erstellte Formatkonfiguration enthält eine Format Komponente. Die Datenmodell-Komponente der ursprünglichen Modellkonfiguration wird automatisch in die Format -Komponente der untergeordneten Formatkonfiguration als Standard-Datenquelle eingefügt.
 
-Eine ER-Konfiguration wird für Dynamics 365 for Operations-Unternehmen gemeinsam genutzt.
+Eine ER-Konfiguration wird für Finance and Operations-Unternehmen freigegeben.
 
 #### <a name="provider"></a>Anbieter
 
-Der ER-Anbieter ist der Bezeichner einer Partei, die verwendet wird, um den Autor (Besitzer) jeder einzelnen ER-Konfiguration anzugeben. ER ermöglicht die Verwaltung einer Liste von Konfigurationsanbietern. Die Formatkonfigurationen, die als Teil der Dynamics 365 for Operations-Lösung für elektronische Dokumente freigegeben werden, sind als dem **Microsoft**-Konfigurationsanbieter zugehörig gekennzeichnet.
+Der ER-Anbieter ist der Bezeichner einer Partei, die verwendet wird, um den Autor (Besitzer) jeder einzelnen ER-Konfiguration anzugeben. ER ermöglicht die Verwaltung einer Liste von Konfigurationsanbietern. Formatkonfigurationen, die als Teil der Finance and Operations-Lösung für elektronische Dokumente freigegeben sind, werden als Eigentum des **Microsoft**-Konfigurationsanbieters gekennzeichnet.
 
 Informationen zum Registrieren eines neuen ER-Anbieters enthält der Aufgabenleitfaden **ER – Konfigurationsanbieter erstellen und als aktiv markieren** (Teil des Geschäftsprozesses **7.5.4.3 Erwerben/Entwickeln von IT-Service-/-Lösungskomponenten (10677)**).
 
@@ -166,11 +167,11 @@ Informationen zum Registrieren eines neuen ER-Anbieters enthält der Aufgabenlei
 
 Ein ER-Repository speichert ER-Konfigurationen. Zwei Typen von ER-Repositorys werden derzeit unterstützt: **Operations-Ressourcen** und **LCS-Projekt**.
 
-Ein **Operations-Ressourcen**-Repository bietet Zugriff auf die Konfigurationsliste, die Microsoft, als ein ER-Konfigurationsanbieter, als Teil der Dynamics 365 for Operations-Lösung freigibt werden. Diese Konfigurationen können in die aktuelle Dynamics 365 for Operations-Instanz importiert und für elektronische Berichterstellung verwendet werden. Sie können auch für zusätzliche Lokalisierungen und Anpassungen verwendet werden.
+Ein **Operations-Ressourcen**-Repository bietet Zugriff auf die Liste der Konfigurationen, die Microsoft als ER-Konfigurationsanbieter als Teil der Finance and Operations-Lösung freigibt. Diese Konfigurationen können in die aktuelle Finance and Operations-Instanz importiert und für die elektronische Berichtserstellung verwendet werden. Sie können auch für zusätzliche Lokalisierungen und Anpassungen verwendet werden.
 
-Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das in dem Repository-Registrierungsstadium ausgewählt wurde. ER ermöglicht das Hochladen freigegebener Konfigurationen aus der aktuellen Dynamics 365 for Operations-Instanz zu einem bestimmten **LCS-Projekt**-Repository. Sie können auch Konfigurationen aus einem **LCS-Projekt**-Repository in die aktuelle Dynamics 365 for Operations-Instanz importieren.
+Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das in dem Repository-Registrierungsstadium ausgewählt wurde. ER ermöglicht Ihnen, freigegebene Konfigurationen von der aktuellen Finance and Operations-Instanz in ein spezifisches **LCS-Projekt**-Repository hochzuladen. Sie können auch Konfigurationen aus einem **LCS-Projekt**-Repository in die aktuelle Finance and Operations-Instanz importieren.
 
-Erforderliche **LCS-Projekt**-Repositorys können für jeden Konfigurationsanbieter der aktuellen Dynamics 365 for Operations-Instanz einzeln erfasst werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
+Benötigte **LCS-Projekt**-Repositories können einzeln für jeden Konfigurationsanbieter der aktuellen Finance and Operations-Instanz registriert werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
 
 ## <a name="supported-scenarios"></a>Unterstützte Szenarien
 ### <a name="building-a-data-model"></a>Erstellen eines Datenmodells
@@ -204,7 +205,7 @@ ER stellt einen Modellzuordnungsdesigner bereit, mit dem der Benutzer Datenmodel
 Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Definieren der Modellzuordnung und Auswählen von Datenquellen** und **ER-Datenmodell den ausgewählten Datenquellen zuordnen** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Konfigurieren von Datenmodellzuordnungen für eingehende Dokumente
-ER stellt einen Modellzuordnungsdesigner bereit, mit dem der Benutzer Datenmodelle, die zu bestimmten Ziele erstellt wurden, zuordnen kann. So können z. B. Datenmodelle den aktualisierbaren Datenkomponenten von Dynamics 365 für Operations (Tabellen, Datenentitäten und Sichten). Auf Grundlage der Zuordnung werden die Dynamics 365 for Operations-Daten zur Laufzeit aktualisiert, indem die Daten vom Datenmodell verwendet werden. Als abstrakte Lagerung des ER-Formats, wird das Datenmodell mit Daten aufgefüllt, die aus einem eingehenden elektronischen Dokument importiert werden. Die folgende Abbildung zeigt ein Beispiel für diese Datenmodelltypzuordnung. In diesem Beispiel wird die Modellzuordnung **Importzuordnung für NETS** des Zahlungsdomänendatenmodells verwendet, um den Import von Bankauszügen im NETS-Bankformat für Norwegen zu unterstützen.
+ER stellt einen Modellzuordnungsdesigner bereit, mit dem der Benutzer Datenmodelle, die zu bestimmten Ziele erstellt wurden, zuordnen kann. Beispielsweise können Datenmodelle den aktualisierbaren Datenkomponenten von Finance and Operations (Tabellen, Datenentitäten und Ansichten) zugeordnet werden. Basierend auf der Zuordnung werden die Finance and Operations-Daten zur Laufzeit unter Verwendung der Daten aus dem Datenmodell aktualisiert. Als abstrakte Lagerung des ER-Formats, wird das Datenmodell mit Daten aufgefüllt, die aus einem eingehenden elektronischen Dokument importiert werden. Die folgende Abbildung zeigt ein Beispiel für diese Datenmodelltypzuordnung. In diesem Beispiel wird die Modellzuordnung **Importzuordnung für NETS** des Zahlungsdomänendatenmodells verwendet, um den Import von Bankauszügen im NETS-Bankformat für Norwegen zu unterstützen.
 
 [![Beispiel für die Importzuordnung für das NETS-Datenmodell](./media/ER-overview-08.png)](./media/ER-overview-08.png)
 
@@ -283,7 +284,7 @@ ER ermöglicht das Erstellen (Ableiten) einer neuen Komponente der aktuellen Kom
 
 ### <a name="upgrading-a-format-selecting-a-new-version-of-base-format-rebase"></a>Aktualisieren eines Formats durch Auswählen einer neuen Basisformatversion (Rebasierung)
 
-ER ermöglicht die automatische Übernahme von Änderungen der neuesten Version der Basiskomponente in die aktuelle Entwurfsversion der abgeleiteten Komponente. Dieser Prozess wird als *Rebasierung* bezeichnet. Beispielsweise können neue gesetzliche Änderungen, die in der neuesten Version der von LCS importierten Formatkomponente eingeführt wurden, automatisch in die eigene angepasste Version dieses elektronischen Dokumenteformats übernommen werden. Alle Änderungen, die nicht automatisch zusammengeführt werden können, werden als Konflikte betrachtet. Diese Konflikte werden zur manuellen Lösung im Designer-Tool für die entsprechende Komponente angezeigt. Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Format durch Übernahme einer neuen zugehörigen Basisversion aktualisieren** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
+ER ermöglicht die automatische Übernahme von Änderungen der neuesten Version der Basiskomponente in die aktuelle Entwurfsversion der abgeleiteten Komponente. Dieser Prozess wird als *Rebasierung* bezeichnet. Beispielsweise können neue gesetzliche Änderungen, die in der neuesten Version der von LCS importierten Formatkomponente eingeführt wurden, automatisch in die eigene angepasste Version dieses elektronischen Dokumenteformats übernommen werden. Alle Änderungen, die nicht automatisch zusammengeführt werden können, werden als Konflikte betrachtet. Diese Konflikte werden zur manuellen Lösung im Designer-Tool für die entsprechende Komponente angezeigt. Um sich mit den Details dieses Szenarios vertraut zu machen, sehen Sie sich den Aufgabenleitfaden **ER Format-Upgrade durch Übernahme der neuen Basisversion dieses Formats** an (Teil des Geschäftsprozesses **7.5.5.3 Geänderte IT-Service-/Lösungskomponente erwerben/entwickeln (10683)**).
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a>Eine Liste von ER-Konfigurationen, die in der Finance and Operations-Lösung bereitgestellt werden.
 | Domänenspezifische Datenmodellkonfigurationen: Titel | Domäne                | Datenmodellabhängige Formatkonfigurationen: Titel | Beschreibung                                                        |

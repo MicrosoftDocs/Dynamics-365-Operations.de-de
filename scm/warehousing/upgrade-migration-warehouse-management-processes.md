@@ -15,13 +15,13 @@ ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 5ab19faddedae8cf61222762714609601b0ae96f
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: cacf48bc10be5c06154816c2f9951ab4bbaee1c1
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +35,7 @@ Dieser Artikel gibt eine Übersicht der Produkt- und Lagerortverwaltungsmigratio
 Bei einer Aktualisierung auf Finance and Operations, werden Produkte gesperrt, wenn sie einer Lagerdimensionsgruppe zugeordnet werden, die Einstellungen hat, die nicht mit jenen für Lagerdimensionsgruppeneinstellungen im Bereich Finanzen und Arbeitsgängen übereinstimmen. Nach dem Upgrade können sie die Migrationsoptionen im Prozess **Änderungslagerdimensionsgruppe für Artikel** verwenden, um für Produkte die Sperrung aufzuheben, die bei einer Aktualisierung möglicherweise gesperrt wurden. Sie können dann die Transaktionen für dies Produkten verarbeiten. Einige Artikel sind möglicherweise bereits den Lagerdimensionsgruppen zugeordnet, in denen die Standort-, Lagerort und Lagerplatz-Lagerungsdimensionen aktiv und physisch nachverfolgt werden können. In diesem Fall können Sie den Prozess **Änderungslagerdimensionsgruppe für Artikel** verwenden, um in den Lagerortverwaltungsprozessen verwendete Artikel zu aktivieren. Diese Funktion ist hilfreich, wenn Sie die Lagerortverwaltungsfunktionen für vorhandene Artikel verwenden möchten.
 
 ## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Aktualisierung auf Finance and Operations, wenn AX 2012 R3 WMSII verwendet wird
-Finance and Operations unterstützt nicht mehr bestehende **WMSII**-Modul von Microsoft Dynamics AX 2012. Stattdessen können Sie das neue Modul **Lagerortverwaltung** verwenden. Weitere Informationen finden Sie unter [Startseite Lagerortverwaltung](https://ax.help.dynamics.com/en/wiki/warehouse-management/). In den Vorgängerversionen konnte der Paletten- und Standortkennzeichnungsbestand für den Finanzbestand ausgewählt werden. Aber als Teil des Aktualisierungsverfahrens kann die Palettenkennzeichnungsbestanddimension nicht mehr fpr den wertmäßigen Bestand aktiviert werden. Alle Produkte, die einer Lagerdimensionsgruppe zugeordnet werden, die die Palettennummerlagerungsdimension verwenden, werden gesperrt und nicht verarbeitet.
+Finance and Operations unterstützt nicht mehr bestehende **WMSII**-Modul von Microsoft Dynamics AX 2012. Stattdessen können Sie das neue Modul **Lagerortverwaltung** verwenden. In den Vorgängerversionen konnte der Paletten- und Standortkennzeichnungsbestand für den Finanzbestand ausgewählt werden. Aber als Teil des Aktualisierungsverfahrens kann die Palettenkennzeichnungsbestanddimension nicht mehr fpr den wertmäßigen Bestand aktiviert werden. Alle Produkte, die einer Lagerdimensionsgruppe zugeordnet werden, die die Palettennummerlagerungsdimension verwenden, werden gesperrt und nicht verarbeitet.
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Artikel in Finance and Operations aktivieren
 
@@ -70,7 +70,7 @@ Bevor Sie freigegebene Produkte im Modul **Lagerortverwaltung** verwenden könne
 1.  Erstellen Sie mindestens ein neues Lagerplatzprofil.
 2.  Klicken Sie auf **Lagerortverwaltung** &gt; **Einstellungen** &gt; **Aktivieren Sie Lagerortverwaltungsprozesse** &gt; **Aktivieren Sie Lagerorteinstellungen**.
 3.  Auf der Seite **Aktivieren Sie Lagerorteinstellungen** können Sie die Lagerorte hinzufügen, die aktiviert werden sollen. Sie können dieses Schritts entweder direkt auf der Seite ausführen oder indem Sie die Microsoft Office-Integration verwenden.
-4.  Zuweisen eines Lagerplatzprofil an sämtliche Standorte. Sie können dieses Schritts entweder direkt auf der Seite ausführen oder indem Sie die Microsoft Office-Integration verwenden. Sie können entweder die Daten exportieren und importieren, oder verwenden Sie die Datenentität, die die unter [Datenverwaltung](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/) ausgeführt wird.
+4.  Zuweisen eines Lagerplatzprofil an sämtliche Standorte. Sie können dieses Schritts entweder direkt auf der Seite ausführen oder indem Sie die Microsoft Office-Integration verwenden. Sie können entweder die Daten exportieren und importieren, oder verwenden Sie die Datenentität, die die unter [Datenverwaltung](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities) ausgeführt wird.
 5.  Überprüfen Sie die vorgeschlagenen Änderungen. Als Teil des Validierungsprozesses treten verschiedene Prüfungen der Datenintegrität auf. Als Teil eines längeren Aktualisierungsprozesses können möglicherweise Probleme auftreten, die auf der Quellimplementierung angepasst werden müssen. In diesem Fall ist eine zusätzliche Datenaktualisierung erforderlich.
 6.  Änderung verarbeiten.
 
@@ -81,7 +81,7 @@ Bevor Sie freigegebene Produkte im Modul **Lagerortverwaltung** verwenden könne
 3.  Auf der Seite **Reservierungshierarchie** können Sie eine neue Reservierungshierarchie entsprechend der Rückverfolgungsangabengruppe des Artikels definieren.
 4.  Erstellen Sie eine oder mehrere Einheitsnummernkreisgruppen, die mindestens die gleichen Einheiten enthalten, für die die Lagereinheiten der Artikel verwendet werden.
 5.  Klicken Sie auf **Lagerortverwaltung** &gt; **Einstellungen** &gt; **Aktivieren Sie Lagerortverwaltungsprozesse** &gt; **Ändern Sie Lagerdimensionsgruppe für Artikel**.
-6.  Auf der Seite **Ändern Sie Lagerdimensionsgruppe für Artikel** können Sie die die Artikelnummern, Lagerdimensionsgruppen und die Einheitnummernkreisgruppen hinzufügen. Sie können dieses Schritts direkt auf der Seite ausführen, indem Sie die Microsoft Office-Integration verwenden oder indem Sie in den Datenentitätsprozess  [Datenverwaltung](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/) verwenden.
+6.  Auf der Seite **Ändern Sie Lagerdimensionsgruppe für Artikel** können Sie die die Artikelnummern, Lagerdimensionsgruppen und die Einheitnummernkreisgruppen hinzufügen. Sie können dieses Schritts direkt auf der Seite ausführen, indem Sie die Microsoft Office-Integration verwenden oder indem Sie in den Datenentitätsprozess  [Datenverwaltung](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities) verwenden.
 7.  Überprüfen Sie die vorgeschlagenen Änderungen. Als Teil des Validierungsprozesses treten verschiedene Prüfungen der Datenintegrität auf. Als Teil eines längeren Aktualisierungsprozesses können möglicherweise Probleme auftreten, die auf der Quellimplementierung angepasst werden müssen. In diesem Fall ist eine zusätzliche Datenaktualisierung erforderlich.
 8.  Änderung verarbeiten. Eine Aktualisierung aller Lagerungsdimensionen kann einige Zeit in Anspruch nehmen. Sie können den Fortschritt überwachen, indem Sie die Stapelverarbeitungsauftragaufgaben verwenden.
 

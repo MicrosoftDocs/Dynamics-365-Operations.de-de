@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 84243a91d8b76873cd33651bbdff900b14d9c76e
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,8 +36,8 @@ Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von M
 ----------------
 
 -   [Nummernkreise – Überblick](number-sequence-overview.md)
--   [Einrichten von Nummernsequenzen mit einem Assistenten](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/)(Aufgabenleitfaden)
--   [Richten Sie Nummernkreise auf einzelner Basis ein](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/)(Aufgabenleitfaden)
+-   [Einrichten von Nummernsequenzen mit einem Assistenten](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard)(Aufgabenleitfaden)
+-   [Richten Sie Nummernkreise auf einzelner Basis ein](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis)(Aufgabenleitfaden)
 
 ## <a name="address-books"></a>Adressbücher
 -   [Adressbücher](qa-address-books.md)
@@ -67,17 +67,17 @@ Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von M
 
 ## <a name="electronic-signatures"></a>Elektronische Signaturen
 -   [Elektronische Signatur (Überblick)](electronic-signature-overview.md)
--   [Einrichten von Parametern für elektronische Signaturen](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/)(Aufgabenleitfaden)
+-   [Einrichten von Parametern für elektronische Signaturen](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures)(Aufgabenleitfaden)
 
 ## <a name="organizations"></a>Organisation
 -   [Organisationen und Organisationshierarchien](organizations-organizational-hierarchies.md)
 -   [Planen der Organisationshierarchie](plan-organizational-hierarchy.md)
--   [Erstellen oder Ändern einer Organisationseinheit](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/)(Aufgabenleitfaden)
--   [Erstellen oder Ändern einer Organisationshierarchie](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (Aufgabenleitfaden)
--   [Juristische Person erstellen](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (Aufgabenleitfaden)
+-   [Erstellen oder Ändern einer Organisationseinheit](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit)(Aufgabenleitfaden)
+-   [Erstellen oder Ändern einer Organisationshierarchie](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Aufgabenleitfaden)
+-   [Juristische Person erstellen](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Aufgabenleitfaden)
 
 ## <a name="general-administration"></a>Allgemeine Verwaltung
--   [Ändern Sie das Banner oder das Logo](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (Aufgabenleitfaden)
+-   [Ändern Sie das Banner oder das Logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Aufgabenleitfaden)
 -   [Info über Datums-/Uhrzeitdaten und Zeitzonen](date-time-zones.md)
 -   [Datensatzvorlagen](record-templates.md)
 

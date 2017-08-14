@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
+ms.openlocfilehash: 404803c6317b2aeda78de86d4ba11987b2a8cf65
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 06/13/2017
 
 Dieses Thema enthält das Konzepts der Nachkalkulation für Produktionskosten, die für Lean Manufacturing verwendet werden. 
 
-Die Nachkalkulation für Lean Manufacturing verwendet den Produktionsfluss, um die Kostenkumulierungsmethode zu definieren, die als für Nachkalkulationen für Produktionskosten bezeichnet wird. In der Nachkalkulation für Produktionskosten-Methode werden die direkte Materialien, die verbraucht werden, im Produktionsflusses des Kontos der laufenden Arbeitskosten (VIP) kumuliert. Die Standardkosten-Modellgruppe wird verwendet. Die Produkte, die vom Produktionsfluss empfanen werden, werden vom RIF zu den Standardkosten abgezogen. Der Hauptunterschied zwischen Nachkalkulation für Produktionskosten und Standardkosten ist der, dass bei der Nachkalkulation für Produktionskosten Abweichungen pro Kanban oder abgeschlossenem Produkt nicht berechnet werden. Stattdessen werden Abweichungen pro Produktionsfluss über einen Zeitraum berechnet. Diese Methode bietet ein tatsächlich Lean-Konzept für das Melden der Materialentnahme. Dedizierte werden entnommene Stoffmengen keinem Kanban oder Produktionsauftrag gemeldet. Stattdessen werden vollständige Chargen oder Handhabungseinheiten dem Produktionsfluss bereitgestellt. Nachdem Chargen oder Handhabungseinheiten als leer erfasst werden, werden sie als verbraucht deklariert. Erweiterter Verbrauch wird verwendet, abhängig von der [Konfiguration des Produktionsflusses](http://ax.help.dynamics.com/en/wiki/lean-manufacturing-modeling-the-lean-organization/). Bevor der erweiterte Verbrauch verwendet werden kann, müssen Sie Organisationen es ermöglichen, dass Material im RIF-Konto des Produktionsflusses verschwindet. Die Nachkalkulation für regelmäßige Produktionskosten bestimmt den RIF-Wert am Ende der Periode. Diese Bestimmung basiert auf den Kanbanhandhabungseinheiten und dem Kanban-Einzelvorgangsstatus. Abweichungen zwischen den Ist-Werten und den tatsächlichen RIF-Werten pro Kostengruppe und Artikel werden als Abweichungen berechnet und angezeigt.
+Die Nachkalkulation für Lean Manufacturing verwendet den Produktionsfluss, um die Kostenkumulierungsmethode zu definieren, die als für Nachkalkulationen für Produktionskosten bezeichnet wird. In der Nachkalkulation für Produktionskosten-Methode werden die direkte Materialien, die verbraucht werden, im Produktionsflusses des Kontos der laufenden Arbeitskosten (VIP) kumuliert. Die Standardkosten-Modellgruppe wird verwendet. Die Produkte, die vom Produktionsfluss empfanen werden, werden vom RIF zu den Standardkosten abgezogen. Der Hauptunterschied zwischen Nachkalkulation für Produktionskosten und Standardkosten ist der, dass bei der Nachkalkulation für Produktionskosten Abweichungen pro Kanban oder abgeschlossenem Produkt nicht berechnet werden. Stattdessen werden Abweichungen pro Produktionsfluss über einen Zeitraum berechnet. Diese Methode bietet ein tatsächlich Lean-Konzept für das Melden der Materialentnahme. Dedizierte werden entnommene Stoffmengen keinem Kanban oder Produktionsauftrag gemeldet. Stattdessen werden vollständige Chargen oder Handhabungseinheiten dem Produktionsfluss bereitgestellt. Nachdem Chargen oder Handhabungseinheiten als leer erfasst werden, werden sie als verbraucht deklariert. Erweiterter Verbrauch wird verwendet, abhängig von der [Konfiguration des Produktionsflusses](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization). Bevor der erweiterte Verbrauch verwendet werden kann, müssen Sie Organisationen es ermöglichen, dass Material im RIF-Konto des Produktionsflusses verschwindet. Die Nachkalkulation für regelmäßige Produktionskosten bestimmt den RIF-Wert am Ende der Periode. Diese Bestimmung basiert auf den Kanbanhandhabungseinheiten und dem Kanban-Einzelvorgangsstatus. Abweichungen zwischen den Ist-Werten und den tatsächlichen RIF-Werten pro Kostengruppe und Artikel werden als Abweichungen berechnet und angezeigt.
 
 ## <a name="configuring-backflush-costing"></a>Konfiguration der Nachkalkulation für Produktionskosten
 Um die Nachkalkulation zu ermöglichen, müssen Sie folgende Einstellungen vornehmen:
