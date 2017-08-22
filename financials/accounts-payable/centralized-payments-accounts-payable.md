@@ -1,7 +1,7 @@
 ---
 title: "Zentralisierte Zahlungen für Kreditorenkonten"
 description: "Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher müssen die gleichen Zahlungen nicht in mehrere juristische Personen eingegeben werden. Dieser Artikel enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14341
 ms.assetid: 7bd02e32-2416-4ac6-8a60-85525267fdb7
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 23541bb2d82b552cdc9e0ada4aa4ec473f498d0b
 ms.contentlocale: de-de
 ms.lasthandoff: 05/25/2017
-
 
 ---
 
