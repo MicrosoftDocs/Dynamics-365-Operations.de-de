@@ -1,9 +1,9 @@
 ---
 title: "Budgetplanungsvorlage für Excel"
 description: "In diesem Thema wird beschrieben, wie Microsoft Excel-Vorlagen erstellt werden, die mit Budgetplänen verwendet werden können."
-author: twheeloc
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-ms.author: sigitac
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: ryansand
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: de-de
 ms.lasthandoff: 07/27/2017
 
@@ -38,22 +38,27 @@ Dieses Thema zeigt, wie Excel-Vorlagen erstellt werden, die mit Budgetplänen mi
 
 Budgetplandokumente können mithilfe einer oder mehrerer Layouts angezeigt und bearbeitet werden. Jedes Layout kann eine zugeordnete Budgetplandokumentvorlage haben, um die Budgetplandaten in einer Excel-Kalkulationstabelle anzuzeigen und zu bearbeiten. In diesem Thema wird eine Budgetplandokumentvorlage mit einer vorhandenen Layoutkonfiguration generiert. 
 
-Öffnen Sie die **Budgetplanliste** (**Budgetierung** &gt; **Budgetpläne**). Klicken Sie auf **Neu**, um einen neuen Budgetplan zu erstellen. 
+1. Öffnen Sie die **Budgetplanliste** (**Budgetierung** &gt; **Budgetpläne**). 
+2. Klicken Sie auf **Neu**, um einen neuen Budgetplan zu erstellen. 
 
-[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+  [![Budgetplanliste](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
-Mithilfe der Zeilenoption **Hinzufügen** fügen Sie Zeilen hinzu. **Layouts** klicken, um die Budgetplandokument-Layoutkonfiguration anzuzeigen. 
+3. Mithilfe der Zeilenoption **Hinzufügen** fügen Sie Zeilen hinzu. **Layouts** klicken, um die Budgetplandokument-Layoutkonfiguration anzuzeigen. 
 
-[![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+  [![Budgetpläne hinzufügen](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Sie können die Layoutkonfiguration anschauen und nach Bedarf anpassen. Wechseln Sie zu **Vorlage** &gt; **Erstellen**, um eine Excel-Datei für dieses Layout zu erstellen. Nachdem die Vorlage generiert wurde, gehen Sie zu **Vorlage** &gt; **Ansicht**, um die Budgetplandokumentvorlage zu öffnen und zu wiederholen. Sie können die Excel-Datei auf Ihrem lokalen Laufwerk speichern. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
+Sie können die Layoutkonfiguration anschauen und nach Bedarf anpassen. 
+1. Wechseln Sie zu **Vorlage** &gt; **Erstellen**, um eine Excel-Datei für dieses Layout zu erstellen. 
+2. Nachdem die Vorlage generiert wurde, gehen Sie zu **Vorlage** &gt; **Ansicht**, um die Budgetplandokumentvorlage zu öffnen und zu wiederholen. Sie können die Excel-Datei auf Ihrem lokalen Laufwerk speichern. 
+
+[![Speichern unter](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Das Budgetplandokumentlayout kann nicht geändert werden, nachdem ihr eine Excel-Tabelle zugeordnet wurde. Um das Layout zu ändern, löschen Sie die zugeordnete Excel-Vorlagendatei und erstellen Sie diese neu. Dies ist erforderlich, um die Felder im synchronisierten Layout und im Arbeitsblatt zu halten. 
 
 Die Excel-Vorlage enthält alle Elemente aus dem Budgetplandokumentlayout, in dem die Spalte **Verfügbar im Arbeitsblatt** auf "True" festgelegt ist. Überlappende Elemente sind in der Excel-Tabelle nicht zulässig. Wenn beispielsweise das Layout Spalten der Anforderung Q1, der Anforderung Q2, der Anforderung Q3 und der Anforderung Q4 enthält, und Anforderungsspalte eine gesamte, die eine Summe aller Spalten 4 vierteljährlichen darstellt, die eine Summe aller 4 Quartalsspalten enthält oder wenn die Totalspalte zur Verwendung in der Excel-Vorlage bereit steht. Die Excel-Datei kann keine überlappenden Spalten während der Aktualisierung aktualisieren, da Daten in der Tabelle veraltet und ungenau werden könnte.
 
-[![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
+[![Beispiel](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
 > Um mögliche Probleme beim Anzeigen und Bearbeiten von Budgetplandaten mithilfe von Excel zu vermeiden, sollte der Benutzer in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations und in Microsoft Dynamics Office Add-in Data Connector angemeldet sein.

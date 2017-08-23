@@ -16,12 +16,12 @@ ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
-ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 58d36505461ea89bf466209d3da968d1357e58ae
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -131,11 +131,11 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 ## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Schnelle Eingabe von Spesen unter Verwendung des mobilen Arbeitsbereichs für die Spesenverwaltung
 1. Öffnen Sie auf Ihrem mobilen Gerät den Arbeitsbereich für die **Spesenverwaltung**.
 2. Wählen Sie **Kurzer Speseneintrag** aus.
-3. Wählen Sie die Kategorie für die Ausgabe aus. Sie sehe eine Liste der Ausgabenkategorien, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Falls Ihre Kategorie nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach Spesenkategorie oder nach Spesentyp.
+3. Wählen Sie die Kategorie für die Ausgabe aus. Sie sehe eine Liste der Ausgabenkategorien, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Falls Ihre Kategorie nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach Spesenkategorie oder nach Spesentyp.
 4. Hier können Sie das Buchungsdatum der Ausgabe eingeben.
 5. Optional: Geben Sie den Einzelhändler für die Ausgaben ein.
 6. Geben Sie den Betrag der Ausgabe ein.
-7. Wählen Sie die Währung der Ausgabe aus. Sie sehen eine Liste der Währungscodes, die in Ihrer App zur Offline-Nutzung geladen werden. Standardmäßig sind 400 Währungen geladen, ein Entwickler kann diese Anzahl jedoch ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Falls Ihre Währung nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach Währung oder nach Kategorienamen.
+7. Wählen Sie die Währung der Ausgabe aus. Sie sehen eine Liste der Währungscodes, die in Ihrer App zur Offline-Nutzung geladen werden. Standardmäßig sind 400 Währungen geladen, ein Entwickler kann diese Anzahl jedoch ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Falls Ihre Währung nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach Währung oder nach Kategorienamen.
 8. Wählen Sie **Foto aufnehmen** oder **Bild auswählen**.
 9. Führen Sie einen dieser Schritte aus:
 
@@ -166,11 +166,11 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 7. Wählen Sie in der Liste eine oder mehrere Spesenangaben aus.
 8. Wählen Sie **Fertig**.
 9. Um dem Spesenbericht neue Spesenangaben hinzuzufügen, wählen Sie **Neue Spesenangabe**.
-10. Wählen Sie die Kategorie für die Ausgabe aus. Sie sehe eine Liste der Ausgabenkategorien, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Falls Ihre Kategorie nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach Spesenkategorie oder nach Spesentyp.
+10. Wählen Sie die Kategorie für die Ausgabe aus. Sie sehe eine Liste der Ausgabenkategorien, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Falls Ihre Kategorie nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach Spesenkategorie oder nach Spesentyp.
 11. Optional: Geben Sie den Einzelhändler für die Ausgaben ein.
 12. Hier können Sie das Buchungsdatum der Ausgabe eingeben.
 13. Geben Sie den Betrag der Ausgabe ein.
-14. Wählen Sie die Währung der Ausgabe aus. Sie sehen eine Liste der Währungscodes, die in Ihrer App zur Offline-Nutzung geladen werden. Standardmäßig sind 400 Währungen geladen, ein Entwickler kann diese Anzahl jedoch ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Falls Ihre Währung nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach Währung oder nach Kategorienamen.
+14. Wählen Sie die Währung der Ausgabe aus. Sie sehen eine Liste der Währungscodes, die in Ihrer App zur Offline-Nutzung geladen werden. Standardmäßig sind 400 Währungen geladen, ein Entwickler kann diese Anzahl jedoch ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Falls Ihre Währung nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach Währung oder nach Kategorienamen.
 15. Wählen Sie **Fertig**.
 16. Um weitere Details für die Spesen bereitzustellen, wählen Sie **Weitere Details hinzufügen**. Welche Felder zur Verfügung stehen, ist von der Konfiguration der Spesenverwaltung für Ihr Unternehmen abhängig.
 17. Wenn die Unternehmensrichtlinie einen Beleg für die Spesenangabe verlangt, wählen Sie **Belege** und folgen den hier beschriebenen Schritten:
@@ -216,12 +216,12 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
         - Wenn Sie **Vorherige Gäste** ausgewählt haben, gehen Sie wie folgt vor:
 
-            1. Wählen Sie in der Liste einen oder mehrere vorherige Gäste aus. Sie sehen eine Liste vorheriger Gäste, die Sie vorherigen Spesenberichten hinzugefügt haben, und die zur Offline-Nutzung in Ihre App geladen wurden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Falls Ihr vorheriger Gast nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suchen Sie nach dem Namen, nach der Organisation, nach dem Land oder dem Titel.
+            1. Wählen Sie in der Liste einen oder mehrere vorherige Gäste aus. Sie sehen eine Liste vorheriger Gäste, die Sie vorherigen Spesenberichten hinzugefügt haben, und die zur Offline-Nutzung in Ihre App geladen wurden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Falls Ihr vorheriger Gast nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suchen Sie nach dem Namen, nach der Organisation, nach dem Land oder dem Titel.
             2. Wählen Sie **Fertig**.
 
         - Wenn Sie **Mitarbeiter** ausgewählt haben, gehen Sie wie folgt vor:
 
-            1. Wählen Sie in der Liste einen oder mehrere Mitarbeiter aus. Sie sehen eine Liste der Mitarbeiter, die für die Offline-Nutzung in Ihre App geladen wurden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Falls Ihr Mitarbeiter nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suchen Sie nach dem Namen, nach dem Unternehmen oder dem Titel.
+            1. Wählen Sie in der Liste einen oder mehrere Mitarbeiter aus. Sie sehen eine Liste der Mitarbeiter, die für die Offline-Nutzung in Ihre App geladen wurden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Falls Ihr Mitarbeiter nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suchen Sie nach dem Namen, nach dem Unternehmen oder dem Titel.
             2. Wählen Sie **Fertig**.
 
     3. Klicken Sie auf die Schaltfläche **Zurück**, um zu den Spesendetails zurückzugelangen.
@@ -230,7 +230,7 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 
     1. Wählen Sie das erste Datum für die Einzelnachweise aus.
     2. Wählen Sie **Einzelnachweise hinzufügen**.
-    3. Wählen Sie die Unterkategorie für die Einzelnachweisen der Spesen aus. Sie sehen eine Liste mit Spesenunterkategorien, die für die Offline-Nutzung in Ihre App geladen wurden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Falls Ihre Unterkategorie nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach dem Namen der Spesenunterkategorie.
+    3. Wählen Sie die Unterkategorie für die Einzelnachweisen der Spesen aus. Sie sehen eine Liste mit Spesenunterkategorien, die für die Offline-Nutzung in Ihre App geladen wurden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Entwickler unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Falls Ihre Unterkategorie nicht in der Liste enthalten ist, wählen Sie **Suchen**, um eine Online-Suche auszuführen. Suche nach dem Namen der Spesenunterkategorie.
     4. Geben Sie den Transaktionsbetrag für die Einzelnachweise ein.
     5. Geben Sie gegebenenfalls das Transaktionsdatum ein.
     6. Wählen Sie **Fertig**.

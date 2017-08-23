@@ -15,13 +15,13 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
-ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: 171d006e20834ea4ad6d5651ec27fc305eac4bc6
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -34,7 +34,7 @@ Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dyn
 > [!NOTE] 
 > Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations (Enterprise-Edition), Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
-Das Hilfesystem wird von allen Unified Operations-Produkten gemeinsam verwendet:
+Das Hilfesystem wird von folgenden Produkten gemeinsam verwendet:
 - Dynamics 365 for Finance and Operations, Enterprise-Edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
@@ -73,7 +73,7 @@ Sie können auch unseren Inhalt mit jeder beliebigen Suchmaschine finden. Um die
 
 ![Ergebnisse der Websitesuche](./media/site-search-results-2.png)
 
-### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Das docs.microsoft.com-Inhaltsverzeichnis für Unified Operations
+### <a name="the-docsmicrosoftcom-table-of-contents"></a>Das docs.microsoft.com-Inhaltsverzeichnis
 Alle Produkte nutzen das gleiche Inhaltsverzeichnis in der Dokumenten-Website. Damit können Kunden den Kontext des Themas anzuzeigen, in dem sie sich befinden. So kann das Filtersteuerelement verwendet werden, um nach Themen zu suchen.
 
 ### <a name="how-can-i-contribute"></a>Was für einen Beitrag kann ich leisten? 
@@ -101,7 +101,7 @@ Auf der rechten Seite geben Sie eine E-Mail-Adresse sowie ein neues Kennwort ein
 ## <a name="task-guides"></a>Aufgabenleitfäden
 Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können einen Aufgabenleitfaden aus dem Hilfe-Bereich öffnen (wiedergeben).  Wenn Sie zuerst auf einen Aufgabenleitfaden klicken, werden im Hilfe-Bereich Schritt für Schritt die Anweisungen für die Aufgabe angezeigt. Lokalisierte Aufgabenleitfäden sind jetzt verfügbar. 
 
-Wir bieten unterschiedliche Aufgabenleitfäden für jedes Unified Operations-Produkt. Der Abschnitt "Auf Aufgabenleitfäden zugreifen" im Hilfebereich beschreibt, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden. 
+Wir beauftragen unterschiedliche Aufgabenleitfäden für jedes Produkt wie Dynamics 365 for Retail,  Dynamics 365 for Finance and Operations oder Dynamics 365 for Talent. Der Abschnitt "Auf Aufgabenleitfäden zugreifen" im Hilfebereich beschreibt, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden. 
 
 ![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
 
@@ -169,7 +169,7 @@ Nachdem ein Systemadministrator diese Schritte abgeschlossen hat, können Sie de
 -   Wenn ein Aufgabenleitfaden noch nicht übersetzt wurde, wird beim Öffnen nur ein Teil des Texts (der Text der Steuerelemente) in der ausgewählten Sprache angezeigt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-In der folgenden Tabelle werden Websites aufgeführt, die Unified Operations-Inhalte enthalten. Unsere Content Websites werden organisiert, um den Debitorenlebenszyklus zu unterstützen. Jede Phase wird durch eine andere gruppe von Sites unterstützt. Für Sites, die ein Sternchen (\*) neben dem Namen besitzen,ist es erforderlich, dass Sie sich über ein Konto anmelden, das einem Dienstleistungsplan zugeordnet ist.
+In der folgenden Tabelle werden unsere Websites aufgeführt. Unsere Content Websites werden organisiert, um den Debitorenlebenszyklus zu unterstützen. Jede Phase wird durch eine andere gruppe von Sites unterstützt. Für Sites, die ein Sternchen (\*) neben dem Namen besitzen,ist es erforderlich, dass Sie sich über ein Konto anmelden, das einem Dienstleistungsplan zugeordnet ist.
 
 | Standort                                                                     | Beschreibung                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

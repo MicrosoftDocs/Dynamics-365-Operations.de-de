@@ -1,9 +1,9 @@
 ---
 title: "Debitorenzahlungen für einen Teilbetrag"
 description: "Es kann vorkommen, dass Debitoren eine Zahlung leisten, die geringer als der in der Rechnung gestellte Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,15 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 795d13a07065a125a750970beaff85b59307f623
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: ebfa8aaed6f82e9c3142540d0850c59d49328d59
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -55,11 +54,11 @@ Es kann auch vorkommen, dass Debitoren einige in einer Rechnung enthaltenen Arti
 Es kann beispielsweise sein, dass Sie in den Zahlungsbedingungen einen Rabatt in Höhe von 2 % gewährt haben, wenn die Rechnung innerhalb von 10 Tagen nach der Ausstellung beglichen wird. Eine Rechnung über 100,00 wurde gebucht, und der Debitor hat das Skonto in Anspruch genommen. Wenn der Debitor die Waren zurückgibt und Sie eine Gutschrift ausstellen, können Sie die Gutschrift von -100,00 Euro eingeben. Wenn Sie die Gutschrift auf der Seite **Offene Buchungen ausgleichen** anzeigen, wird im Feld **Auszugleichender Betrag****98,00** angezeigt, und **-2,00** wird im Feld **Skontobetrag** angezeigt. Der Skontobetrag wird auf ein Skontokonto gebucht.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Überzahlungs-/Unterzahlungsbeträge
-Wenn Kunden eine Zahlung leisten, muss möglicherweise ein sehr kleiner Betrag noch ausgeglichen werden. Beispiel: Sie stellen dem Debitor eine Rechnung über 1.000,00 Euro aus, und der Debitor bezahlt davon 999,90 Euro. Falls der verbleibende Betrag niedriger als der Betrag ist, der für Überzahlungen oder Unterzahlungen auf der Seite**Debitorenparameter** angegeben ist, wird die Differenz automatisch zu einem Sachkonto für Über-/Unterzahlungen gebucht.
+Wenn Kunden eine Zahlung leisten, muss möglicherweise ein sehr kleiner Betrag noch ausgeglichen werden. Beispiel: Sie stellen dem Debitor eine Rechnung über 1.000,00 Euro aus, und der Debitor bezahlt davon 999,90 Euro. Falls der verbleibende Betrag niedriger als der Betrag ist, der für Überzahlungen oder Unterzahlungen auf der Seite **Debitorenparameter** angegeben ist, wird die Differenz automatisch zu einem Sachkonto für Über-/Unterzahlungen gebucht.
 
 ## <a name="full-settlement"></a>Vollständiger Ausgleich
-Debitoren machen möglicherweise eine Teilzahlung, in der der verbleibende Betrag nicht bezahlt wird, jedoch größer ist als der Unterzahlungsbetrag, der auf der **Kreditorenparameter**-Seite angegeben wird. Wenn Sie die Rechnung markieren möchten, z. B. vollständig ausgeglichen, können Sie die **Vollständigen Ausgleich**-Option auf der Seite **Bankbuchung** verwenden. (Sie können die vollständigen Ausgleich aktivieren, indem Sie einen Konfigurationsschlüssel verwendet wird). Beispielsweise wird eine Rechnung über 1.000,00 gebucht, und der Debitor leistet eine Zahlung in Höhe von 990,00. Sie sind damit einverstanden, dass der Debitor die verbleibenden 10.00 nicht zahlen muss. Nachdem Sie die Rechnung für den Ausgleich markieren, können Sie auch **Kein vollständiger Ausgleich** markieren **. Die Rechnung dann wird dann als vollständig ausgeglichen angesehen. Die Differenz von 10,00 Euro wird als zusätzlicher Skontobetrag auf ein Skontokonto gebucht.
+Debitoren machen möglicherweise eine Teilzahlung, in der der verbleibende Betrag nicht bezahlt wird, jedoch größer ist als der Unterzahlungsbetrag, der auf der **Kreditorenparameter**-Seite angegeben wird. Wenn Sie die Rechnung markieren möchten, z. B. vollständig ausgeglichen, können Sie die **Vollständigen Ausgleich**-Option auf der Seite **Bankbuchung** verwenden. (Sie können die vollständigen Ausgleich aktivieren, indem Sie einen Konfigurationsschlüssel verwendet wird). Beispielsweise wird eine Rechnung über 1.000,00 gebucht, und der Debitor leistet eine Zahlung in Höhe von 990,00. Sie sind damit einverstanden, dass der Debitor die verbleibenden 10.00 nicht zahlen muss. Nachdem Sie die Rechnung für den Ausgleich markieren, können Sie auch **Kein vollständiger Ausgleich** markieren. Die Rechnung dann wird dann als vollständig ausgeglichen angesehen. Die Differenz von 10,00 Euro wird als zusätzlicher Skontobetrag auf ein Skontokonto gebucht.
 
 
-
+Weitere Informationen finden Sie unter [Überfällige Debitorenzahlungen](tasks/deposit-customer-payments.md).
 

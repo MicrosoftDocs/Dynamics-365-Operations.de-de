@@ -16,10 +16,10 @@ ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
-ms.openlocfilehash: d76b3592ed8274498a7a58c46cc83619f2f668f5
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: fc8b7f6901ffd5c97fb864dbd3f87c5c70a31487
 ms.contentlocale: de-de
 ms.lasthandoff: 07/27/2017
 
@@ -102,10 +102,10 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisier
 <td>Der Kreditorenbenutzer muss Zugriff auf die Weboberfläche für die Kreditor-Kooperation im Webclient haben und muss als Keditor-Kooperations-Benutzer eingerichtet werden.</td><td>Einkäufer und Systemadministrator</td>
 <td>Führen Sie die Schritte, die in den folgenden Themen beschrieben werden, aus, um die Weboberfläche für die Kreditor-Kooperation einzurichten und mit dieser zu arbeiten.
 <ul>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors">Nutzen der Kreditor-Kooperation für die Zusammenarbeit mit externen Kreditoren</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-user">Benutzer für Kreditorenzusammenarbeit verwalten</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration">Kreditorenzusammenarbeit einrichten und verwalten</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations">Verwenden der Kreditor-Kooperation für Kunden in Finance and Operations</a></li>
+<li><a href="vendor-collaboration-work-external-vendors.md">Nutzen der Kreditor-Kooperation für die Zusammenarbeit mit externen Kreditoren</a></li>
+<li><a href="manage-vendor-collaboration-users.md">Benutzer für Kreditor-Kooperationen verwalten</a></li>
+<li><a href="set-up-maintain-vendor-collaboration.md">Kreditorenzusammenarbeit einrichten und verwalten</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Verwenden der Kreditor-Kooperation für Kunden in Finance and Operations</a></li>
 </ul></td>
 </tr>
 </tbody>

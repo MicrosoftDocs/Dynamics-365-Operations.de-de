@@ -3,7 +3,7 @@ title: Allgemeine Erfassungsverarbeitung
 description: "Dieser Artikel beschreibt die Funktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edtion, mit denen die allgemeine Erfassung einfacher wird, und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68da281cb4793ed83f70c68d061d327aa8a8c772
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -82,8 +81,13 @@ Die Hauptkontoeinstellung stellt viele Optionen zum Verarbeiten der allgemeinen 
 
 Buchhaltungsstrukturen und Strukturen für erweiterte Regeln sind sehr wichtig, um sicherzustellen, dass die Daten, die für die Finanzberichterstellung und die Leistungsnachverfolgung erforderlich sind, während der allgemeinen Erfassungsverarbeitung und in allen Dokumentationen erfasst werden. Mit Buchhaltungsstrukturen und Strukturen für erweiterten Regeln können Sie die Dateneingabeerfahrung anpassen. Sie können die Dateneingabe nur für Finanzdimensionen zulassen, die in jeder Situation relevant sind. Sie können auch die Anforderung erzwingen, dass erforderliche und korrekte Daten immer erfasst werden.
 
-Weitere Informationen finden Sie unter: [Planung Kontenplan](plan-chart-of-accounts.md) 
-
+Weitere Informationen finden Sie in folgenden Themen:
+- [Kontenplan planen](plan-chart-of-accounts.md). 
+- [Erweiterte Regeln für Erfassungen erstellen](tasks/create-advanced-rules-journals.md)
+- [Journaleinträge mithilfe einer Vorlage erstellen](tasks/create-journal-entry-template.md)
+- [Erfassungen erstellen und validieren](tasks/create-validate-journals.md)
+- [Periodische Erfassungen veröffentlichen](tasks/post-periodic-journals.md)
+- [Sachkonto-Zuordnungserfassung verarbeiten](tasks/process-ledger-allocation-journal.md)
 
 
 

@@ -15,13 +15,13 @@ ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 0484723217ccff2ebf717d059429d863ececb797
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -37,7 +37,7 @@ Debitoren können Rückgabeartikel unterschiedlichen Gründen vornehmen. So kann
 ## <a name="return-order-process"></a>Rücklieferungsprozess
 Die folgende Abbildung bietet eine Übersicht über den Rücklieferungprozess.  
 
-[![salesreturns01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Rücklieferungsprozess](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Es gibt zwei Typen von Rücklieferungsprozessen: Physische Rückgabe und nur Gutschrift
 
@@ -213,7 +213,7 @@ Es gibt zwei Methoden zum Verwalten von Ersatzprodukten:
 
 Beim Vorabersatz wird der Ersetzungsartikel der an den Debitor geliefert werden, bevor der Artikel zurückgegeben wird. Diese Methode eignet sich, wenn zum Beispiel der Artikel ein Maschinenteil ist, das nicht entfernt werden kann, es sei denn, dass ein Ersatzteil verfügbar ist. Der Vorabersatzauftrag ist ein unabhängiger Auftrag. Die Kopfdaten werden vom Debitor initialisiert, und Positionsinformationen werden aus der Rücklieferung initialisiert. Sie können den Ersetzungsauftrag unabhängig von der Rücklieferung verarbeitet, bearbeiten und löschen. Wenn Sie einen Ersetzungsauftrag löschen, werden Sie darüber benachrichtigt, dass der Auftrag als Ersetzungsauftrag erstellt wurde. Die folgende Abbildung veranschaulicht den Prozess für Vorabersatz.  
 
-[![Vorabersatzprozess](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
+![Vorabersatzprozess](./media/SalesReturn04.png)
 
 Der Rückgabeauftrag umfasst eine Referenz zum Ersetzungsauftrag. Wenn ein Vorabersatzauftrag für eine Rücklieferung erstellt wird, bevor der fehlerhaften Artikel zurückgegeben wird, können Sie keine Dispositionscodes für den Ersatz nach der Rückgabe des fehlerhaften Artikel auswählen.
 
@@ -221,7 +221,7 @@ Der Rückgabeauftrag umfasst eine Referenz zum Ersetzungsauftrag. Wenn ein Vorab
 
 Wenn Sie einen Ersatzartikel an den Debitor versenden, und die **Ersetzen und verschrotten** oder **Ersatz und Entlastung** Dispositionsaktivität für die Rücklieferung nutzen, verwenden Sie den Prozess, der in der folgenden Abbildung dargestellt wird.  
 
-[![Ersetzungsprozess, wenn ein Dispositionscode verwendet wird](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
+![Ersetzungsprozess, wenn ein Dispositionscode verwendet wird](./media/SalesReturn05.png)
 
 Der Ersetzungsartikel wird geliefert, indem ein unabhängiger Auftrag verwendet wird (der Ersetzungsauftrag). Dieser Auftrag wird erstellt, wenn der Lieferschein für die Rücklieferung generiert wird. Der Auftragskopf verwendet Informationen des Debitors, auf den der Rücklieferungskopf verweist. Die Positionsinformationen werden aus den Informationen gesammelt, die auf die Seite **Ersetzungsartikel** eingegeben werden. Die **Ersetzungsartikel** Seite muss für Positionen gefüllt sein, die Dispositionsaktivitäten haben, die mit dem Begriff "Ersetzen" beginnen. Allerdings wird weder die Menge noch die Identität des Wiederbeschaffungsartikel geprüft oder beschränkt. Dieses Verhalten ermöglicht Fälle, in denen der Debitor den gleichen Artikel in einer anderen Konfiguration oder Größe wünscht, und auch Anfragen, in denen Debitoren einen vollständig anderen Artikel wünscht. Standardmäßig wird ein identischer Artikel auf die Seite **Ersetzungsartikel** eingegeben. Sie können jedoch einen anderen Artikel auswählen, vorausgesetzt, dass die Funktion eingerichtet wurde. **Hinweis**: Der Ersetzungsauftrag kann bearbeitet und gelöscht werden, wenn er erstellt wurde.
 
@@ -254,7 +254,7 @@ Rücklieferungen können zwischen zwei Unternehmen innerhalb Ihrer Organisation 
 
 Die folgende Abbildung zeigt die erforderlichen Mindesteinstellungen, die erforderlich ist, sodass zwei Unternehmen in einer Intercompany-Beziehung den Intercompany-Handel nutzen können.  
 
-[![Mindesteinstellungen](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
+![Mindesteinstellungen](./media/SalesReturn06.png)
 
 Im folgenden Szenario ist CompBuy das kaufende Unternehmen, und CompSell das verkaufende Unternehmen. Normalerweise versendet das Verkaufsunternehmen Waren entweder an das Käuferunternehmen oder, in Direktlieferungslieferungsszenarien, direkt an den Endkunden. In CompBuy wird der Kreditor IC\_CompSell als Intercompany-Endpunkt definiert, der dem Unternehmen CompSell zugeordnet ist. Gleichzeitig wird in CompSell der Kreditor IC\_CompBuy als Intercompany-Endpunkt definiert, der dem Unternehmen CompBuy zugeordnet ist. Die passenden Aktionsrichtliniendetails und Wertzuordnungen müsssen in beiden Unternehmen definiert werden. In einem Direktlieferungslieferungsszenario wird eine Intercompany-Rücklieferung, die auch ein Intercompany-Auftrag ist, im verkaufende Unternehmen erstellt. Die Rücksendungsnummer der Intercompany-Rücklieferung kann vom Rücksendungsnummernummernkreis in CompSell entnommen werden, oder sie kann aus der Rücksendungsnummer kopiert werden, die der ursprünglichen Rücklieferung im CompBuy zugewiesen wird. Die Rücksendungsnummereinstellungen der **PurchaseRequisition** Aktivitätsrichtlinie in CompBuy bestimmen diese Aktivitäten. Wenn die Rücksendungsnummer synchronisiert wurde, sollten Sie planen, das Risiko von Nummerkonflikten zu minimieren, wenn die zwei Unternehmen den gleichen Nummernkreis verwenden.
 
@@ -262,7 +262,7 @@ Im folgenden Szenario ist CompBuy das kaufende Unternehmen, und CompSell das ver
 
 Dieses Szenario umfasst zwei Unternehmen in derselben Organisation, wie in der folgenden Abbildung dargestellt.  
 
-[![Einfach Intercompany-Rücklieferung](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
+![Einfache Intercompany-Rücklieferung](./media/SalesReturn07.png)
 
 Die Auftragskette kann eingerichtet werden, wenn ein Kreditorenrücklieferungsauftrag im Käuferunternehmen erstellt wird, oder ein Debitorenrücklieferungsauftrag im verkaufenden Unternehmen erstellt wird. Finance and Operations erstellt den entsprechenden Auftrag im anderen Unternehmen und stellt sicher, dass die Kopf- und Positionsinformationen zum Kreditorenrücklieferungsauftrag die Einstellungen für den Debitorenrücklieferungsauftrag widerspiegeln. Der Rückgabeauftrag, der eingerichtet wird, kann die Referenz auf einen bestehende Debitorenrechnung entweder einbeziehen oder ignorieren (**Auftrag suchen**). Die Lieferscheinen und Rechnungen der beiden Aufträge können einzeln verarbeitet werden. Sie müssen beispielsweise einen Lieferschein für den Kreditorenrücklieferungsauftrag nicht generieren, bevor Sie den Lieferschein für den Debitorenrücklieferungsauftrag generieren.
 
@@ -270,7 +270,7 @@ Die Auftragskette kann eingerichtet werden, wenn ein Kreditorenrücklieferungsau
 
 Dieses Szenario kann genutzt werden, wenn ein vorheriger Verkauf des Typs **Direktlieferung** abgeschlossen wurde und wenn eine Rechnung für den Debitor im Unternehmen vorhanden ist, das mit dem Debitor interagiert. In der folgenden Abbildung hat das Unternehmen CompBuy zuvor Produkte an den Debitor Extern verkauft und fakturiert. Die Produkte wurden direkt vom Unternehmen CompSell an den Debitor über eine Intercompany-Auftragskette versendet.  
 
-[![Direktlieferungslieferungsrücklieferungen unter drei Parteien](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
+![Direktlieferungslieferungsrücklieferungen unter drei Parteien](./media/SalesReturn08.png)
 
 Wenn der Debitor Extern Produkten zurückgeben möchte, wird eine Rücklieferung (RMA02) für den Debitor im Unternehmen CompBuy erstellt. Um die Intercompany-Kette zu bilden, muss der Rücklieferung für Direktlieferung markiert werden. Bei Verwendung **Auftrag suchen**-Funktion um die Debitorenrechnung für die Rückgabe auszuwählen, wird eine Intercompany-Auftragskette erstellt, die sich aus den folgenden Dokumenten besteht:
 
@@ -292,7 +292,7 @@ In dem folgenden Beispielen wird der Rücklieferungseinstandspreis als **Lagerko
 
 Die Rückgabe verweist auf keine Debitorenrechnung. Der zurückgelieferten Artikel wird gutgeschrieben. Der **Kreditkorrektur** Parameter ist nicht ausgewählt wenn die Rücklieferungsrechnung oder Gutschrift generiert wird.  
 
-[![Die Rückgabe verweist auf keine Debitorenrechnung](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
+![Die Rückgabe verweist auf keine Debitorenrechnung](./media/SalesReturn09.png)  
 
 **Hinweis:** Der Artikelmaster-Preis wird als Standardwert für den **Rücklieferungseinstandspreis** Parameter verwendet. Der Standardpreis unterscheidet sich von dem Einstandspreis zum Zeitpunkt des Lagerabgangs. Daher ist die Auswirkungen, dass ein Verlust von 3 verursacht wurde. Darüber hinaus enthält die Rücklieferung nicht den Rabatt, dem Debitor im Auftrag der angegeben wurde. Daher tritt ein übermäßiges Haben auf.
 
@@ -300,7 +300,7 @@ Die Rückgabe verweist auf keine Debitorenrechnung. Der zurückgelieferten Artik
 
 Beispiel 2 entspricht Beispiel 1, aber der **Habenkorrektur** Parameter ist aktiviert, wenn die Rücklieferungsrechnung generiert wird.  
 
-[![Habenkorrektur ist für die Rücklieferung ausgewählt](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
+![Habenkorrektur ist für die Rücklieferung ausgewählt ](./media/SalesReturn10.png)  
 
 **Hinweis:** Die Sachkontobuchungen werden als negative Korrekturen eingegeben.
 
@@ -308,7 +308,7 @@ Beispiel 2 entspricht Beispiel 1, aber der **Habenkorrektur** Parameter ist akti
 
 In diesem Beispiel wird die Rücklieferungsposition erstellt, indem die **Auftrag suchen**-Funktion verwendet wird. Der **Kreditkorrektur** Parameter ist nicht aktiviert, wenn die Rechnung erstellt wird.  
 
-[![Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
+![Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird ](./media/SalesReturn11.png)  
 
 **Hinweis:** **Rabatt** und **Rücklieferungseinstandspreis** werden ordnungsgemäß festgelegt. Aus diesem Grund tritt eine genaue Stornierung der Debitorenrechnung auf.
 

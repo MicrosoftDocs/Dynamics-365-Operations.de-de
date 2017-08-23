@@ -1,9 +1,9 @@
 ---
 title: Erstellen einer Debitorenrechnung
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fd89921a97782c4d09807a730ab077809304159f
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 249b1f331d6889d3b9ed2ace2e5db21d7a5d3e46
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,11 +30,20 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-
-
-Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechnung, die sich auf einen Auftrag bezieht, und die ein Debitor von einer Organisation erhält. Diese Art von Debitorenrechnung wird auf Basis eines Auftrags, der die einzelnen Auftragspositionen und Artikelnummern enthält, erstellt. Die Artikelnummern werden im Sachkonto angegeben und gebucht. Journaleinträge in untergeordnetem Sachkonto sind bei einer Debitorenrechnung für einen Auftrag nicht verfügbar. 
+Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechnung, die sich auf einen Auftrag bezieht, und die ein Debitor von einer Organisation erhält. Diese Art von Debitorenrechnung wird auf Basis eines Auftrags, der die einzelnen Auftragspositionen und Artikelnummern enthält, erstellt. Die Artikelnummern werden im Sachkonto angegeben und gebucht. Journaleinträge in untergeordnetem Sachkonto sind bei einer Debitorenrechnung für einen Auftrag nicht verfügbar. Weitere Informationen finden Sie unter [Auftragserechnung erstellen](tasks/create-sales-order-invoices.md).
 
 **Freitextrechnungen** sind nicht mit einem Auftrag verknüpft. Sie enthalten Auftragspositionen mit Sachkonten, Freitextbeschreibungen und benutzerdefinierten Verkaufsbeträgen. Bei dieser Art von Rechnung kann keine Artikelnummer eingegeben werden. Geben Sie die geeigneten Mehrwertsteuerinformationen ein. Für jede Rechnungsposition wird ein Hauptkonto für den Verkauf angegeben, das auf mehrere Sachkonten verteilt werden kann, indem Sie auf **Beträge verteilen** auf der Seite **Freitextrechnung** klicken. Der Debitorensaldo wird außerdem auf das Summenkonto aus dem Buchungsprofil gebucht, das für die Freitextrechnung verwendet wird.
+
+Weitere Informationen finden Sie unter ''.
+
+[Freitextrechnung erstellen](tasks/create-free-text-invoice.md)
+
+[Erstellt eine Vorlage für Freitextrechnungen.](tasks/create-free-text-invoice-template.md)
+
+[Einem Debitor eine Freitext-Rechnungsvorlage zuweisen](tasks/assign-free-text-invoice-template-customer.md)
+
+[Freitext-Serienrechnungen generieren und buchen](tasks/post-recurring-free-text-invoices.md)
+
 
 Bei einer **Proforma-Rechnung** handelt es sich um eine Rechnung, die vor dem Buchen der Rechnung als Vorkalkulation der tatsächlichen Rechnungsbeträge vorbereitet wird. Proforma-Rechnungen können sowohl für eine Debitorenrechnung für einen Auftrag als auch für Freitextrechnungen gedruckt werden.
 
@@ -59,7 +68,7 @@ Auf der Listenseite **Alle Aufträge** können Sie den Status des Auftrags anzei
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Konsolidieren von Aufträgen oder Lieferscheinen für das Buchen
 Verwenden Sie diesen Prozess, wenn eine oder mehrere Aufträge fakturierungsbereit sind, und Sie möchten sie in einer einzelnen Rechnung konsolidieren. 
 
-Sie können mehrere Rechnungen auf der Listenseite **Auftrag** auswählen und dann **Generieren von Rechnungen** verwenden, um sie zu konsolidieren. Auf der Seite **Rechnung buchen**können Sie die **Einstellungen Sammelaufträge** ändern, um nach Auftragsnummern (wenn es mehrere Lieferscheine für einen einzelnen Auftrag gibt) oder nach Rechnungskonto (wenn es mehrere Aufträge für ein einzelnes Rechnungskonto gibt) zusammenzufassen. Verwenden Sie die Anordnen Schaltfläche, um Aufträge als einzelne Rechnungen, basierend auf den Einstellungen für Sammelaufträge zu konsolidieren. Nutzen Sie die **Ordnet an** Schaltfläche, um Aufträge in einzelne Rechnungen, die auf Grundlage der Einstellungen **Zusammenfassender Auftrag** basieren.
+Sie können mehrere Rechnungen auf der Listenseite **Auftrag** auswählen und dann **Generieren von Rechnungen** verwenden, um sie zu konsolidieren. Auf der Seite **Rechnung buchen** können Sie die **Einstellungen Sammelaufträge** ändern, um nach Auftragsnummern (wenn es mehrere Lieferscheine für einen einzelnen Auftrag gibt) oder nach Rechnungskonto (wenn es mehrere Aufträge für ein einzelnes Rechnungskonto gibt) zusammenzufassen. Verwenden Sie die Anordnen Schaltfläche, um Aufträge als einzelne Rechnungen, basierend auf den Einstellungen für Sammelaufträge zu konsolidieren. Nutzen Sie die **Ordnet an** Schaltfläche, um Aufträge in einzelne Rechnungen, die auf Grundlage der Einstellungen **Zusammenfassender Auftrag** basieren.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Zusätzliche Einstellungen, die das Buchungsverhalten ändern
 Die folgenden Felder ändern das Verhalten des Buchungsprozesses.

@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren von Debitoren und Kredit und Inkasso
 description: Debitoren und Kredit und Inkasso konfigurieren, um Rechnungen und eingehenden Zahlungen von Debitoren nachzuverfolgen.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74556e571c215b0fea8deb061fd968c240b063d4
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 1d37014e8f7b333a15077fc3477808a3ad62b96f
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -66,12 +65,12 @@ In der folgenden Tabelle führt die Seiten für die Konfiguration und Verwaltung
 |                                                      | Währungen                           | Dient zum Erstellen und Anzeigen der Währungen, die in Ihrer Organisation verwendet werden.                                                                                                                                                                                                                       |
 |                                                      | Währungswechselkurse              | Dient zum Erstellen und Verwalten der entsprechenden Wechselkurse zwischen der Buchhaltungswährung und anderen Währungen.                                                                                                                                                                              |
 |                                                      | Verrechnung              | Dient zum Erstellen einer Liste mit Konten, auf die von der aktuellen juristischen Person gebucht werden kann. Soll- und Habenkonten müssen ebenso eingerichtet werden wie die Erfassung, von der die Buchungen der anderen juristischen Person empfangen werden.                                                                             |
-|                                                      | Zahlungsmethoden – Debitor        | Dient zum Erstellen und Verwalten von Informationen zu Zahlungsmethoden für Debitoren.                                                                                                                                                                                                           |
+|                                                      | Zahlungsmethoden – Debitor        | Dient zum Erstellen und Verwalten von Informationen zu Zahlungsmethoden für Debitoren. Weitere Informationen finden Sie unter [Zahlungsmethoden von Kreditoren erstellen](tasks/establish-customer-method-payment.md).                                                                                             |
 |                                                      | Organisationshierarchien             | Dient zum Einrichten einer Organisationshierarchie für zentralisierte Zahlungen.                                                                                                                                                                                                                        |
 |                                                      | Organisationshierarchiezwecke      | Dient zum Angeben eines Zwecks für zentralisierte Zahlungen.                                                                                                                                                                                                                                       |
 |                                                      | Zahlungstage                         | Dient zum Definieren von Zahlungstagen zum Berechnen von Fälligkeitsdaten für Zahlungen, die Sie von Debitoren erhalten oder die an Kreditoren geleistet werden.                                                                                                                                                |
-|                                                      | Zahlungsgebühr                          | Dient zum Erstellen und Verwalten von debitorenbezogenen Zahlungsgebühren (beispielsweise Gebühren für Wechsel).                                                                                                                                                                               |
-|                                                      | Zahlungsgebühreinstellungen                    | Dient zum Einrichten von Zahlungsgebühren für verschiedene Kombinationen von Banken, Zahlungsmethoden, Rimessetypen, Zahlungsspezifikationen, Währungen und Datumsintervalle.                                                                                                                              |
+|                                                      | Zahlungsgebühr                          | Dient zum Erstellen und Verwalten von debitorenbezogenen Zahlungsgebühren (beispielsweise Gebühren für Wechsel).                                                                                                                                                                         |
+|                                                      | Zahlungsgebühreinstellungen                    | Dient zum Einrichten von Zahlungsgebühren für verschiedene Kombinationen von Banken, Zahlungsmethoden, Rimessetypen, Zahlungsspezifikationen, Währungen und Datumsintervalle.  Weitere Informationen finden Sie unter [Zahlungsgebühren von Kreditoren erstellen](tasks/establish-customer-payment-fees.md).                                                                                   |
 |                                                      | Zahlungspläne                    | Dient zum Erstellen von Zahlungsplänen zur Planung von Teilzahlungsraten, die von Debitoren oder an Kreditoren zu leisten sind.                                                                                                                                                                       |
 |                                                      | Zahlungsspezifikation                | Dient zum Erstellen und Anzeigen von Zahlungsspezifikationscodes für die Zahlungsmethode, die auf der Seite Zahlungsmethoden ausgewählt wurde. Zahlungsspezifikationscodes werden in Übereinstimmung mit Vereinbarungen mit der Bank definiert, die für die ausgewählte Zahlungsmethode angegeben ist.                    |
 |                                                      | Buchungstext                     | Dient zum Erstellen von Buchungstext für automatische Buchungen in das Hauptbuch. Buchungstext kann in verschiedenen Sprachen eingerichtet werden.                                                                                                                                                           |
@@ -83,7 +82,7 @@ In der folgenden Tabelle führt die Seiten für die Konfiguration und Verwaltung
 |                                                      | Zahlungsmethoden – Debitor        | Dient zum Erstellen und Verwalten von Informationen zu Zahlungsmethoden für Debitoren.                                                                                                                                                                                                           |
 |                                                      | Unterschrift                            | Dient zum Hinzufügen, Ändern oder Entfernen von Bilddateien für Unterschriften (beispielsweise BMP-, JPG- oder GIF-Dateien). Die Bilddateien für Unterschriften können auf Schecks als offizielle Unterschrift der juristischen Person gedruckt werden.                                                                                                             |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
-| Konfigurieren der Debitorenstatistik           | Zahlungsfristdefinitionen             | Dient zum Einrichten und Verwalten benutzerdefinierter Zahlungsfristdefinitionen, die zum Analysieren der Fälligkeit von Debitoren- und Kreditorenkonten auf Basis eines benutzerdefinierten Datums verwendet werden.                                                                                                         |
+| Konfigurieren der Debitorenstatistik           | Zahlungsfristdefinitionen             | Dient zum Einrichten und Verwalten benutzerdefinierter Zahlungsfristdefinitionen, die zum Analysieren der Fälligkeit von Debitoren- und Kreditorenkonten auf Basis eines benutzerdefinierten Datums verwendet werden. Weitere Informationen finden Sie unter [Einrichten und generieren Sie Debitorfälligkeitsinformationen](tasks/set-up-accounts-receivable-aging-information.md).                                                           |
 |                                                      | Geschäftsstatistik                  | Dient zum Einrichten von Geschäftsstatistikabfragen zum Analysieren der Leistung der Organisation.                                                                                                                                                                              |
 |                                                      | Geschäftsstatistikdaten             | Dient zum Anzeigen von Daten in einem Rasterformat für eine ausgewählte Geschäftsstatistik.                                                                                                                                                                                                                     |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
