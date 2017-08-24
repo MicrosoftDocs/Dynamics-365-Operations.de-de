@@ -14,13 +14,13 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
-ms.openlocfilehash: ead315d2e07818b35dd2806fca7e242f4028be07
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 25cba59dfbab2e1030660840e85d278452e39e52
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 07/27/2017
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Finance and Operations umfasst Funktionen für die im [Produktverfügbarkeitshandbuch](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) angegebenen Länder/Regionen. Diese Funktionalität wird auf Grundlage der primären Adresse der aktiven juristischen Person aktiviert. 
+Microsoft Dynamics 365 for Finance and Operations umfasst Funktionen für die im [Internationales Produktverfügbarkeitshandbuch](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) angegebenen Länder/Regionen. Diese Funktionalität wird auf Grundlage der primären Adresse der aktiven juristischen Person aktiviert. 
 
-Dieses Thema enthält eine Liste mit Ressourcen, durch die Sie mehr über länder-/regionsspezifische Funktionalität erfahren können. 
+Dieses Thema enthält eine Liste mit Ressourcen, durch die Sie mehr über länder-/regionsspezifische Lösungen, Updates, Warnungen und Funktionalität erfahren können. 
 
 ## <a name="developing-localized-solutions"></a>Entwickeln lokalisierter Lösungen
 Die folgenden Ressourcen enthalten Anweisungen und Informationen für Entwickler und ISVs, die länder-/regionsspezifische Anpassungen oder Lösungen für ein Land erstellen, das nicht von Microsoft unterstützt wird.
@@ -96,9 +96,13 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 -   [CODA-Bankauszug](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
 -   [Intervat-Steuererklärung](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [PRODCOM-Berichtseinrichtung](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
+-   [Abstimmungsbericht](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
 
 ### <a name="brazil"></a>Brasilien
 
+-   [CIAP-Anlagen](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
+-   [Konfiguration von Steuerbüchern](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
+-   [Exportieren und Importieren von Buchungen der Hauptbuchkonsolidierung für Brasilien](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
 -   [Steuerbücher](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
 -   [Steuerdokument-Textplatzhalter](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
 -   [Steuerdokumente](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
@@ -108,10 +112,12 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 -   [Erfassungen, die während des elektronischen Zahlungsrückgabeprozesses generiert wurden](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
 -   [NF-e-Prozess](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
 -   [Parameter für juristische Personen](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
+-   [Elektronische Zahlungsrimessen für Brasilien verarbeiten](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
 -   [Ergänzende steuerliche Dokumente für Einkauf](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
 -   [Referenzierte Steuerdokumente](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
 -   [Ergänzende steuerliche Dokumente für Verkauf](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
 -   [Elektronisches Steuerdokument für Dienstleistungen](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
+-   [Einrichten, Importieren und Überprüfen von XML-Dokumenten für NF-e sowie DANFE](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
 -   [Steuerattribute](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
 -   [Steuerzahlungen](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
 -   [Steuern](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
@@ -159,6 +165,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 - [Wechselkursregulierungen](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
 - [Dateiformate für Zahlungsmethoden](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 - [Anlagenveräußerungen für Estland und Litauen](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [ISO20022-Dateien importieren](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
 - [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
 - [Lagererfassungsberichte](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
 - [Rechnungs- und Lieferscheinnummerierung für Lettland und Litauen](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
@@ -174,6 +181,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 - [SEPA-Lastschriftüberblick](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
 - [Einrichten der Debitoren- und Kreditorenvergütung](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
 - [Signaturgeber für Druckformulare einrichten](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Stornobuchung](/dynamics365/unified-operations/financials/localizations/emea-storno)
 - [Steuerrichtlinien](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
 - [Aktualisieren, wie Beträge in Berichten und Dokumenten angezeigt werden](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
 - [MwSt.-Wechselkurse](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
@@ -246,6 +254,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 
 -   [Anlagenreparaturanweisung](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
 -   [Rechnung und Lieferscheinnummerierung](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+-   [Details von MwSt.-Abrechnung](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
 
 ### <a name="mexico"></a>Mexiko
 
@@ -296,6 +305,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 -   [Anlagenneubewertungsgruppen](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
 -   [Innergemeinschaftliche MwSt.](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
 -   [Einmalige Debitoren](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
+-   [Schecks unter Verwendung des spanischen Layouts drucken](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
 -   [Spanische Solawechseloptionen](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Verkaufs- und Kaufzyklen](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Besondere Einträge und Eröffnungsbögen](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
@@ -313,6 +323,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 ### <a name="thailand"></a>Thailand
 
 -   [Bestandskartenberichte](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
+-   [Ersatz-/Regulierungssteuerrechnung für Thailand](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
 -   [Nicht realisierte Vorsteuer](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
 -   [Quellensteuer](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
 
@@ -322,6 +333,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 
 ### <a name="united-states"></a>Vereinigte Staaten
 
+-   [Formular 1099 für den öffentlichen Sektor](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
 -   [Prüfung des I-9-Formulars](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [Steuererklärung (US 1099) zum Jahresende](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Lohn](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)

@@ -13,13 +13,13 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 1b46d24a0f671502c9dc3d46849240342d680468
+ms.sourcegitcommit: 8ae84f23744947cf49365d318a208802c6db95a9
+ms.openlocfilehash: 5c40e4bf1d2defeeb656348e1bc3886d5423ca12
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/27/2017
 
 Microsoft Dynamics 365 for Finance and Operations ist die Geschäftsanwendung von Microsoft für Unternehmen. Damit können schneller die richtigen Entscheidungen getroffen werden, und zwar dank einer intelligenten Benutzeroberfläche, die Zugriff auf Echtzeitinformationen und Daten ermöglicht. Unternehmen können sich so verändern und innovativer werden. Mit einer bewährten Geschäftslogik können sie ihre Geschäftsprozesse schneller neu konzipieren. Unternehmen erhalten die Flexibilität, in ihrem eigenen Tempo zu wachsen und praktisch überall und jederzeit Geschäften nachzugehen. Sie können so ihre Unternehmenstätigkeit global und im Einklang mit ihren Geschäftsanforderungen wahrnehmen. 
 
-Mithilfe dieser Dokumentation kann Dynamics 365 for Finance and Operations in Ihrem Unternehmen gewinnbringend eingesetzt werden. Sie ist verknüpft mit Dokumentation für ähnliche Produkte in der Unified Operations-Suite, in Dynamics 365 for Retail und in Dynamics 365 for Talent. 
+Mithilfe dieser Dokumentation kann Dynamics 365 for Finance and Operations in Ihrem Unternehmen gewinnbringend eingesetzt werden. Sie ist verknüpft mit Dokumentation für ähnliche Produkte: Dynamics 365 for Retail und Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ Mithilfe dieser Dokumentation kann Dynamics 365 for Finance and Operations in I
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Finanzberichterstellung</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Gesetzlich vorgeschriebene Berichterstattung</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobile Plattform</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobile Plattform</a></h3>
 
 <h3>Entwicklerfunktionalität</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Startseite für Entwickler</a></p>
