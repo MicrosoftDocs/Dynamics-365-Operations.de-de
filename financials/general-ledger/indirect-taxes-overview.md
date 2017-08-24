@@ -3,7 +3,7 @@ title: "Mehrwertsteuerüberblick"
 description: "Dieser Artikel enthält eine Übersicht über das Mehrwertsteuersystem. Er erklärt die Elemente zur Einrichtung der Mehrwertsteuer und wie sie zusammenarbeiten."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: f4838dade6b2694a11f4b9775fe53560b1332f18
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,7 +46,7 @@ Das folgende Diagramm zeigt die Entitäten der Steuereinrichtung und wie sie zug
 
 Für jede Mehrwertsteuer, die ein Unternehmen berechnet, muss ein Mehrwertsteuercode definiert werden. Ein Mehrwertsteuercode speichert die Steuersätze und die Berechnungsregeln für die Mehrwertsteuer. 
 
-Jeder Mehrwertsteuercode muss mit einem Mehrwertsteuer-Ausgleichszeitraum verknüpft werden. Mehrwertsteuer-Abrechnungszeiträume definieren die Intervalle, zu denen die Mehrwertsteuer deklariert werden und abgeführt werden muss. Jeder Mehrwertsteuer-Abrechnungszeitraum muss einer Mehrwertsteuerbehörde zugewiesen werden. Eine Mehrwertsteuerbehörde stellt die Entität dar, an die die Mehrwertsteuer deklariert und entrichtet wird. Sie definieren auch das Layout für die Mehrwertsteuererklärung. Mehrwertsteuerbehörden können Kreditorenkonten zugeordnet werden. 
+Jeder Mehrwertsteuercode muss mit einem Mehrwertsteuer-Ausgleichszeitraum verknüpft werden. Mehrwertsteuer-Abrechnungszeiträume definieren die Intervalle, zu denen die Mehrwertsteuer deklariert werden und abgeführt werden muss. Jeder Mehrwertsteuer-Abrechnungszeitraum muss einer Mehrwertsteuerbehörde zugewiesen werden. Eine Mehrwertsteuerbehörde stellt die Entität dar, an die die Mehrwertsteuer deklariert und entrichtet wird. Sie definieren auch das Layout für die Mehrwertsteuererklärung. Mehrwertsteuerbehörden können Kreditorenkonten zugeordnet werden. Weitere Informationen finden Sie unter [Einrichten der Mehrwertsteuerabrechnungsperioden](tasks/set-up-sales-tax-settlement-periods.md)
 
 Jeder Mehrwertsteuercode muss mit einer Sachkontobuchungsgruppe verknüpft werden. Eine Sachkontobuchungsgruppe gibt die Hauptkonten an, für die Beträge für Mehrwertsteuercodes gebucht werden. 
 
@@ -60,13 +59,13 @@ In der folgenden Tabelle beschreibt die Entitäten und die Reihenfolge für die 
 | Einrichtungsaktivität                                                  | Erforderlich/Optional und Beschreibung                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hauptkonten erstellen.                                           | Erforderlich. Vor dem Einrichten der Mehrwertsteuerfunktion müssen Sie die Hauptkonten erstellen, die das Unternehmen zum Bezahlen und Erfassen von Steuern verwendet.                                                                                                                                                                             |
-| Richten Sie Sachkontobuchungsgruppen für Mehrwertsteuer ein.                     | Erforderlich. Sachkontobuchungsgruppen definieren die Hauptkonten für die Erfassung und Zahlung von Mehrwertsteuern.                                                                                                                                                                                                                            |
-| Einrichten von Mehrwertsteuerbehörden.                                   | Erforderlich. Mehrwertsteuerbehörden sind die Entitäten, denen Steuern gemeldet werden und an die abgeführt werden muss.                                                                                                                                                                                                                                   |
+| Richten Sie Sachkontobuchungsgruppen für Mehrwertsteuer ein.                     | Erforderlich. Sachkontobuchungsgruppen definieren die Hauptkonten für die Erfassung und Zahlung von Mehrwertsteuern.   Weitere Informationen finden Sie unter [Einrichten der Sachkontengruppen für Mehrwertsteuer](tasks/set-up-ledger-posting-groups-sales-tax.md)                                                                                 |
+| Einrichten von Mehrwertsteuerbehörden.                                   | Erforderlich. Mehrwertsteuerbehörden sind die Entitäten, denen Steuern gemeldet werden und an die abgeführt werden muss.    Weitere Informationen finden Sie unter [Einrichten der Mehrwertsteuerbehörden](tasks/set-up-sales-tax-authorities.md)                                                                                                                                          |
 | Einrichten von Mehrwertsteuer-Abrechnungszeiträumen.                            | Erforderlich. Mehrwertsteuer-Abrechnungszeiträume enthalten Informationen darüber, wann und wie oft Mehrwertsteuer gemeldet und abgeführt werden muss. Sie werden zu einer Mehrwertsteuerbehörde zugeordnet.                                                                                                                                                       |
-| Einrichten von Mehrwertsteuer-Erklärungscodes.                               | Diese Angabe ist optional. Mehrwertsteuer-Erklärungscodes können zu Mehrwertsteuercodes zugeordnet werden, um Beträge für mehrere Mehrwertsteuercodes unter einem Mehrwertsteuer-Erklärungscode zu melden.                                                                                                                                                                 |
-| Einrichten von Mehrwertsteuercodes.                                         | Erforderlich. Der Mehrwertsteuercode enthält die Steuersätze und die Berechnungsregeln für die Mehrwertsteuer. Mehrwertsteuercodes werden einem Mehrwertsteuer-Abrechnungszeitraum und eine Sachkontobuchungsgruppe zugeordnet.                                                                                                                                        |
+| Einrichten von Mehrwertsteuer-Erklärungscodes.                               | Diese Angabe ist optional. Mehrwertsteuer-Erklärungscodes können zu Mehrwertsteuercodes zugeordnet werden, um Beträge für mehrere Mehrwertsteuercodes unter einem Mehrwertsteuer-Erklärungscode zu melden. Weitere Informationen finden Sie unter [Einrichten der Mehrwertsteuer-Berichterstattungscodes](tasks/set-up-sales-tax-reporting-codes.md)                                         |
+| Einrichten von Mehrwertsteuercodes.                                         | Erforderlich. Der Mehrwertsteuercode enthält die Steuersätze und die Berechnungsregeln für die Mehrwertsteuer. Mehrwertsteuercodes werden einem Mehrwertsteuer-Abrechnungszeitraum und eine Sachkontobuchungsgruppe zugeordnet. Weitere Informationen finden Sie unter [Einrichten der Mehrwertsteuer-Berichterstattungscodes](tasks/set-up-sales-tax-codes.md)                                |
 | Mehrwertsteuergruppen einrichten.                                        | Erforderlich. Mehrwertsteuergruppen enthalten eine Liste der Verkaufscodes, die für die Partei (Debitor oder Kreditor) einer Buchung gelten. Für eine bestimmte Buchung legen die Überschneidung von Mehrwertsteuercodes in der Mehrwertsteuergruppe die Artikel-Mehrwertsteuergruppe für die Buchung fest.                  |
-| Artikel-Mehrwertsteuergruppen einrichten.                                   | Erforderlich. Artikel-Mehrwertsteuergruppen enthalten eine Liste der Verkaufscodes, die für die Ressource (Produkt, Service, usw.) einer Buchung gelten. Für eine bestimmte Buchung legt die Überschneidung von Mehrwertsteuercodes in der Mehrwertsteuergruppe die Artikel-Mehrwertsteuergruppe für die Buchung fest. |
+| Artikel-Mehrwertsteuergruppen einrichten.                                   | Erforderlich. Artikel-Mehrwertsteuergruppen enthalten eine Liste der Verkaufscodes, die für die Ressource (Produkt, Service, usw.) einer Buchung gelten. Für eine bestimmte Buchung legen die Überschneidung von Mehrwertsteuercodes in der Mehrwertsteuergruppe die Artikel-Mehrwertsteuergruppe für die Buchung fest. Weitere Informationen zum Einrichten von Steuergruppen finden Sie unter [Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen einrichten](tasks/set-up-sales-tax-groups-item-sales-tax-groups.md). |
 | Einrichten von Mehrwertsteuerparametern auf den Anwendungsparameterseiten. | Erforderlich. Verschiedene Bereiche, wie Hauptbuch, Debitoren und Kreditoren, müssen Parameter für die Berechnung indirekter Steuern einrichten. Obwohl die meisten dieser Parameter Standardwerte haben, müssen diese geändert werden, um die Anforderungen des Unternehmens zu erfüllen.                                          |
 
 ## <a name="sales-tax-on-transactions"></a>Mehrwertsteuer auf Buchungen
@@ -98,5 +97,5 @@ In der Regel würden Sie 2.500 EUR im Juni an die Steuerbehörde überweisen mü
 Wenn Sie jedoch eine Mehrwertsteuer nach vereinnahmten Geldern anwenden, begleichen Sie die Steuer erst, wenn Sie die Zahlung vom Debitor am 30. Juli erhalten.
 
 
-
+Weitere Informationen finden Sie unter [Einrichten der Quellensteuer](tasks/set-up-withholding-tax.md)
 

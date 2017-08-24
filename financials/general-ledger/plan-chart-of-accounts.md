@@ -1,9 +1,9 @@
 ---
 title: Ihren Kontenplan planen
 description: "Dieser Artikel enthält Informationen, die Ihnen helfen, Kontenpläne für Ihre Organisation zu planen."
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4c57c4fe8cc66228062f7b64c88efe255657d016
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 424ea5ce12d51d384c86878b7d2199bcd52c40f8
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,17 +45,19 @@ Hier einige der Faktoren, die Sie bei der Strukturierung des Kontenplans für Ih
 -   Die Meldeanforderungen für Ihre juristische Person
 -   Der erforderliche Spezifikationsgrad, sowohl für externe Organisationen als auch für Ihre Organisation
 
-Erstellen Sie den Kontenplan auf der Seite **Kontenplan**. Hauptkonten können über die Seite **Kontenplan** oder aus der Seite **Hauptkonten** erstellt werden. Ihre Hauptkonten dürfen keine Sonderzeichen verwenden, die als Trennzeichen für Kontenplan verwendet werden. Wenn Sie ein Sonderzeichen haben, das das gleiche wie das Trennzeichen für Kontenplan ist, könnte Instabilität die Folge sein, oder dass Sie immer nachschlagen oder das Flyout nutzen müssen, wenn Sie Kombinationen aus Konten und Dimensionen eingeben. 
+Erstellen Sie den Kontenplan auf der Seite **Kontenplan**. Hauptkonten können über die Seite **Kontenplan** oder aus der Seite **Hauptkonten** erstellt werden. Ihre Hauptkonten dürfen keine Sonderzeichen verwenden, die als Trennzeichen für Kontenplan verwendet werden. Wenn Sie ein Sonderzeichen haben, das das gleiche wie das Trennzeichen für Kontenplan ist, könnte Instabilität die Folge sein, oder dass Sie immer nachschlagen oder das Flyout nutzen müssen, wenn Sie Kombinationen aus Konten und Dimensionen eingeben. Weitere Informationen finden Sie unter [Erstellen eines Hauptkontos](tasks/create-account-structures.md).
+
 
 Es wird empfohlen, die Hauptkonten mit Hauptkontokategorien verknüpfen, sodass Sie die standardmäßige Finanzberichte nutzen können, ohne Änderungen vornehmen zu müssen. Daher können Sie Berichte schneller und einfacher entwerfen und verwalten. 
 
-Verwenden Sie die Seite **Kontostrukturen konfigurieren**, um Kontostrukturen zu erstellen. Kontostrukturen definieren zulässige Kombinationen. Diese Kombinationen bilden zusammen mit den Hauptkonten einen Kontenplan. 
+Verwenden Sie die Seite **Kontostrukturen konfigurieren**, um Kontostrukturen zu erstellen. Kontostrukturen definieren zulässige Kombinationen. Diese Kombinationen bilden zusammen mit den Hauptkonten einen Kontenplan.  Weitere Informationen zu Kontostrukturen finden Sie unter [Kontostrukturen erstellen](tasks/create-main-account.md).
 
 **Juristische Person überschreibt** 
 
 Nicht alle Hauptkonten sind für alle juristischen Personen gültig und manche sind möglicherweise nur für eine bestimmte Zeitperiode relevant. In diesem kann der Abschnitt "Überschreibungen der juristischen Person" dazu verwendet werden, um festzulegen, für welche Unternehmen das Hauptkonto ausgesetzt werden soll, wer der Besitzer ist und die Zeitperiode, während der die Dimension aktiv ist. Die Überschreibungen auf der freigegebenen Ebene können nicht einschränkender als die Überschreibungen auf der Ebene der juristischen Person sein.
 
-Weitere Informationen finden Sie unter [Finanzdimensionen](financial-dimensions.md).
+Weitere Informationen finden Sie unter folgenden Themen: [Finanzdimensionen](financial-dimensions.md)
+[Erstellen und Zuweisen von erweiterten Regelstrukturen](tasks/create-assign-advanced-rule-structures.md)
 
 
 

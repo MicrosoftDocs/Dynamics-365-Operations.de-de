@@ -1,9 +1,9 @@
 ---
 title: Kredit und Inkasso einrichten
 description: In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4d3682c486e80afd03ec5805575357f4e87781f2
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 76937aacbc1925603766299168ec2d4090bd161b
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden.
 Eine Zahlungsfristdefinition einrichten. Eine Zahlungsfristdefinition legt die in den Listenseiten **Saldenrückblick**, **Inkassoaktivitäten** und **Inkassofälle** angezeigten Spalten fest. Sie definiert auch die Perioden, die auf der Seite **Inkassi** angezeigt werden. Beim Einrichten eines Debitorenpools wird die Zahlungsfristdefinition für den Pool verwendet. Werden keine Pools eingerichtet, wird die standardmäßige Zahlungsfristdefinition verwendet, die auf der Seite **Debitorenparameter** angegeben ist. Ist keine standardmäßige Zahlungsfristdefinition angegeben, wird die erste Zahlungsfristdefinition auf der Seite **Zahlungsfristdefinitionen** verwendet.
 
 ## <a name="create-an-aging-snapshot"></a>Erstellen einer Fälligkeitsmomentaufnahme
-Sie können Datensätze mit einer Fälligkeitsmomentaufnahme für alle Debitoren oder für die Debitoren in einem Debitorenpool erstellen. Informationen zu Fälligkeitsmomentaufnahmen werden auf der Listenseite**Saldenrückblick** und auf der Seite **Inkassi** angezeigt. Sie müssen zuerst eine Fälligkeitsmomentaufnahme erstellen, bevor Sie die Listenseite verwenden können. Auf der Listenseite werden nur Informationen für Debitoren angezeigt, für die eine Fälligkeitsmomentaufnahme erstellt wurde.
+Sie können Datensätze mit einer Fälligkeitsmomentaufnahme für alle Debitoren oder für die Debitoren in einem Debitorenpool erstellen. Informationen zu Fälligkeitsmomentaufnahmen werden auf der Listenseite **Saldenrückblick** und auf der Seite **Inkassi** angezeigt. Sie müssen zuerst eine Fälligkeitsmomentaufnahme erstellen, bevor Sie die Listenseite verwenden können. Auf der Listenseite werden nur Informationen für Debitoren angezeigt, für die eine Fälligkeitsmomentaufnahme erstellt wurde.
 
 ## <a name="optional-set-up-customer-pools"></a>Optional: Einrichten von Debitorenpools
 Sie können Debitorenpools für Gruppen von Debitoren einrichten. Auf den Listenseiten **Inkassi**, auf der Seite **Inkassi** oder beim Erstellen von Fälligkeitsmomentaufnahmen können Debitorenpools als Filter für Debitoreninformationen verwendet werden.
@@ -94,5 +94,12 @@ Richten Sie E-Mail-Adressen für Verkäufer ein, wenn Sie mit der Seite **Inkass
 Ist kein Verkäufer angegeben, wird der primäre Verkäufer für die Organisation des Debitors verwendet. Falls kein primärer Verkäufer angegeben ist, werden E-Mails an den ersten auf der Seite aufgeführten Verkäufer gesendet.
 
 
+Weitere Informationen finden Sie in folgenden Themen:
+
+ - [Mahnschreibensequenzen einrichten](tasks/create-collection-letter-sequence.md)
+ 
+ - [Mahnschreiben verarbeiten](tasks/process-collection-letters.md)
+ 
+ - [Inkassoinformationen überprüfen](tasks/review-collections-information.md)
 
 

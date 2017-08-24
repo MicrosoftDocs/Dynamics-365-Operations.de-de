@@ -15,13 +15,13 @@ ms.custom: 270294
 ms.assetid: 3a7ba8b0-ac57-4159-9cd8-4308f6021f36
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: ea4ee6cfdca6e65f289db32ca41305a39b186033
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 12fd8e11211b701304f9f4a68ff31f3b42e3e8ee
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -45,11 +45,11 @@ Um die Zugriffebenensicherheit für Power BI zu nutzen, muss der Eigentümer der
 3.  Suchen Sie das Dataset für den **Kostenrechnungsanalyse** Power BI-Inhalt
 4.  Öffnet Sie die Sicherheitsseite. 
 
-    [![Öffnet Sie die Sicherheitsseite.](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
+    ![Sicherheitsseite öffnen](./media/CA-picture-1.png)
 
 5.  Die **Kostenträgercontroller** Rolle ist bereits erstellt. Fügen Sie andere Mitglieder hinzufügen, die Teil der Kostenrechnungs-Zugriffebenenorganisationshierarchie sind. 
 
-    [![Mitglieder hinzufügen](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)
+    ![Mitglieder hinzufügen](./media/CA-picture-2.png)
 
 Benutzer, die zur Rolle **Kostenträgercontroller** hinzugefügt werden, finden nur die Daten, um die ihnen zulässig sind, um festzustellen, entsprechend der Definition im Formular Kostenrechnungs-Zugriffebenenorganisationshierarchie. **Hinweis:** Sicherheit auf Positionsebene gilt für Kacheln zu und von Berichten in Microsoft Dynamics 365 for Finance and Operations, die Power BI eingebettet werden.
 

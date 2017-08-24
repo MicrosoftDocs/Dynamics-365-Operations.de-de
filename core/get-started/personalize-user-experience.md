@@ -1,9 +1,9 @@
 ---
-title: Personalisierung der Benutzerumgebung
+title: Die Benutzerumgebung personalisieren
 description: In diesem Artikel wird die Personalisierung von Microsoft Dynamics 365 for Finance and Operations beschrieben.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
+ms.translationtype: HT
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -33,26 +33,26 @@ ms.lasthandoff: 06/13/2017
 
 In diesem Artikel wird die Personalisierung von Microsoft Dynamics 365 for Finance and Operations beschrieben.
 
-Es gibt verschiedene Personalisierungen in Microsoft Dynamics 365 for Finance and Operations. Einige Personalisierungen sind Auswahlen, die Sie in einer Liste an Optionen auf einer Einstellungsseite vornehmen. Einige sind implizit. So verfolgt beispielsweise Finance and Operations die Breite von Rasterspalten, wenn Sie sie anpassen sowie den erweiterten/reduzierten Status von Inforegistern. Andere Personalisierungen sind explizit. Für explizite Personalisierungen treten Sie in einen interaktiven Personalisierungsmodus ein und ändern die Darstellung einer Seite, indem Sie direkt verwalten, wie Elemente auf der Seite angezeigt oder agieren. 
+Es gibt verschiedene Personalisierungen in Microsoft Dynamics 365 for Finance and Operations. Einige Personalisierungen sind Auswahlen, die Sie in einer Liste an Optionen auf einer Einstellungsseite vornehmen. Einige Personalisierungen sind implizit. So verfolgt beispielsweise Finance and Operations die Breite von Rasterspalten, wenn Sie sie anpassen sowie den erweiterten/reduzierten Status von Inforegistern. Andere Personalisierungen sind explizit. Für explizite Personalisierungen treten Sie in einen interaktiven Personalisierungsmodus ein und ändern die Darstellung einer Seite, indem Sie direkt verwalten, wie Elemente auf der Seite angezeigt oder agieren. 
 
 Sämtliche Personalisierungen, die ein Benutzer in Finance and Operations vornimmt, gelten nur für diesen Benutzer, unabhängig von dem Unternehmen, mit dem der Benutzer interagiert. Änderungen, die ein Benutzer an einer Seite vornimmt, haben keine Auswirkungen auf andere Benutzer im System.
 
 ## <a name="systemwide-options-for-the-current-user"></a>Systemweite Optionen für den aktuellen Benutzer
-In der Navigationsleiste sehen Sie ein Zahnrad, das als Menüschaltfläche **Einstellungen** bezeichnet wird. Durch Öffnen des Menüs **Einstellungen** werden einige Optionen angezeigt. Durch Auswählen von **Optionen** wird die Seite **Benutzeroptionen** geöffnet. Dort finden Sie vier Optionsregisterkarten: **Visuell**, **Voreinstellungen**, **Konto** und **Workflow**.
+In der Navigationsleiste sehen Sie ein Zahnrad, das als Menüschaltfläche **Einstellungen** bezeichnet wird. Durch Öffnen des Menüs **Einstellungen** werden einige Optionen angezeigt. Durch Auswählen von **Optionen** wird die Seite **Benutzeroptionen** geöffnet. Dort finden Sie vier Optionsregisterkarten: 
 
--   **Visuell:** Wird verwendet, um ein Farbenthema und die standardmäßige Größe der Elemente auf den Seiten auszuwählen.
--   **Einstellungen:** Hier können Sie Standards definierten, die verwendet werden, wenn Sie Finance and Operations öffnen, einschließlich Unternehmen, ursprüngliche Seite, standardmäßiger Ansichts- und Bearbeitungsmodus (bestimmt, ob eine Seite zur Ansicht gesperrt ist oder für die Bearbeitung geöffnet wird, wenn Sie sie öffnen). Sie finden auch Optionen für Sprache, Zeitzone, Datum, Uhrzeit und Zahlenformat. Schließlich enthält diese Seite mehrere verschiedene Voreinstellungen, die von Freigabe zu Freigabe variieren.
--   **Konto:** Wird verwendet, um Ihre Benutzerkennung und andere kontobezogene Optionen bereitzustellen.
--   **Workflow:** Hier können Sie workflowbezogene Optionen auswählen.
+-   **Visuell:** - Wird verwendet, um ein Farbenthema und die standardmäßige Größe der Elemente auf den Seiten auszuwählen.
+-   **Einstellungen:** - Hier können Sie Standards definierten, die verwendet werden, wenn Sie Finance and Operations öffnen, einschließlich Unternehmen, ursprüngliche Seite, standardmäßiger Ansichts- und Bearbeitungsmodus (bestimmt, ob eine Seite zur Ansicht gesperrt ist oder für die Bearbeitung geöffnet wird, wenn Sie sie öffnen). Sie finden auch Optionen für Sprache, Zeitzone, Datum, Uhrzeit und Zahlenformat. Schließlich enthält diese Seite mehrere verschiedene Voreinstellungen, die von Freigabe zu Freigabe variieren.
+-   **Konto** - Verwenden, um Benutzer-ID und andere Konten bezogene Optionen anzugeben.
+-   **Workflow:** - Hier können Sie workflowbezogene Optionen auswählen.
 
 ## <a name="implicit-personalizations"></a>Implizite Personalisierungen
 Implizite Personalisierungen sind die Personalisierungen, die Sie ausführen, indem Sie einfach mit bestimmten Steuerelementen interagieren, die sich an ihren aktuell sichtbaren Status erinnern. 
 
-**Rasterspalten:** Sie können die Breite einer Spalte in einer Liste anpassen, indem Sie die Größenänderungsleiste links oder rechts des Spaltenkopfs auswählen und sie nach links oder rechts auf die gewünschte Breite schieben. Finance and Operations speichert die gewünschte Breite und zeigt eine Spalte in dieser Breite an, wenn Sie die Seite mit der Liste öffnen. 
+**Rasterspalten:** - Sie können die Breite einer Spalte in einer Liste anpassen, indem Sie die Größenänderungsleiste links oder rechts des Spaltenkopfs auswählen und sie nach links oder rechts auf die gewünschte Breite schieben. Finance and Operations speichert die gewünschte Breite und zeigt eine Spalte in dieser Breite an, wenn Sie die Seite mit der Liste öffnen. 
 
-**Inforegister:** Einige Seiten haben erweiterbare Abschnitte, die als Inforegister bezeichnet werden. Finance and Operations speichert die erweiterten Inforegister und die reduzierten Inforegister. Jedes Mal, wenn Sie zur Seite zurückkehren, werden diese gleichen Inforegister auf Grundlage der letzten Nutzung erweitert oder reduziert. In diesem Artikel erklären wir, wie die Reihenfolge Ihrer Inforegisterabschnitte geändert werden kann. In einigen Fällen verbessert das Reduzieren eines Inforegisters die Leistung, da Finance and Operations diese Informationen für das Inforegister erst abruft, wenn das Inforegister erweitert wird. 
+**Inforegister:** - Einige Seiten  haben erweiterbare  Abschnitte, die als Inforegister bezeichnet werden. Finance and Operations speichert die erweiterten Inforegister und die reduzierten Inforegister. Jedes Mal, wenn Sie zur Seite zurückkehren, werden diese gleichen Inforegister auf Grundlage der letzten Nutzung erweitert oder reduziert. In diesem Artikel erklären wir, wie die Reihenfolge Ihrer Inforegisterabschnitte geändert werden kann. In einigen Fällen verbessert das Reduzieren eines Inforegisters die Leistung, da Finance and Operations diese Informationen für das Inforegister erst abruft, wenn das Inforegister erweitert wird. 
 
-**Infoboxen:** Einige Seiten haben einen Abschnitt, der als Infoboxbereich bezeichnet wird. Dieser Bereich enthält schreibgeschütztes Informationen zum aktuellen Betreff der Seite. Jedem Abschnitt im Infoboxbereich wird als Infobox bezeichnet. Sie können eine Infobox erweitern oder reduzieren und Finance and Operations speichert ihre Einstellungen. In einigen Fällen verbessert das Reduzieren einer Infobox die Leistung, da Finance and Operations diese Informationen für die Infobox erst abruft, wenn die Infobox erweitert wird.
+**Infoboxen:** - Einige Seiten haben einen Abschnitt, der als Infoboxbereich bezeichnet wird. Dieser Bereich enthält schreibgeschütztes Informationen zum aktuellen Betreff der Seite. Jedem Abschnitt im Infoboxbereich wird als Infobox bezeichnet. Sie können eine Infobox erweitern oder reduzieren und Finance and Operations speichert ihre Einstellungen. In einigen Fällen verbessert das Reduzieren einer Infobox die Leistung, da Finance and Operations diese Informationen für die Infobox erst abruft, wenn die Infobox erweitert wird.
 
 ## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Explizite Personalisierungen mithilfe der Personalisierungssymbolleiste
 Jede Person und jedes Unternehmen hat eine unterschiedliche Meinung dazu, welche Daten für sie bzw. es am wichtigsten sind, oder welche Daten nicht für die Art und Weise erforderlich sind, wie sie ihr Geschäft führen. Die Möglichkeit, die Anordnung Ihrer Informationen anzupassen, mit diesen zu interagieren oder diese auszublenden, ist wichtig, damit Finance and Operations eine personalisierte und produktive Erfahrung ermöglicht. 
@@ -107,15 +107,20 @@ Einige Arbeitsbereiche enthalten die Anzahl kacheln (Kacheln mit Zahlen für sie
 Das Dashboard ist oftmals die erste Seite, die beim Öffnen von Finance and Operations angezeigt wird. Sie können das Dashboard personalisieren, um die Arbeitsbereichsnavigationskacheln umzubenennen, um nur nur Kacheln anzuzeigen, die Sie sehen möchten, um die Kacheln umzubenennen oder um die Kacheln in der Reihenfolge anzuordnen, in der Sie sie sehen möchten. Um das Dashboard zu personalisieren, wählen Sie eine beliebige Kachel aus und klicken Sie mit der rechten Maustaste, um ein Kontextmenü zu öffnen. Wählen Sie im Kontextmenü **Anpassen** aus. Wenn die ausgewählte Kachel eine ist, die Sie ausblenden oder umbenennen oder übersprungen möchten, können Sie diese Änderung direkt im anzeigten Eigenschaftenfenster vornehmen. Wenn Sie die Kacheln anordnen möchten, wählen Sie **Dieses Formular personalisieren** im Eigenschaftenfenster aus, um die Personalisierungssymbolleiste zu öffnen. Sie können das Tool „Umlagern“ dann verwenden, um die Kacheln anzuordnen.
 
 ## <a name="administration-of-personalization"></a>Verwalten der Personalisierung
-Nach dem Personalisieren einer Seite können Sie die Personalisierungen mit anderen Benutzern teilen. Exportieren Sie einfach die personalisierte Seite. Sie können dann die anderen Benutzer auffordern, zur personalisierten Seite zu navigieren und die von Ihnen personalisierte Datei zu importieren.
+Nach dem Personalisieren einer Seite können Sie die Personalisierungen mit anderen Benutzern teilen, indem Sie die personalisierte exportieren. Sie können dann die anderen Benutzer auffordern, zur personalisierten Seite zu navigieren und die von Ihnen personalisierte Datei zu importieren.
 
-Benutzer mit Administratorrechten können Personalisierungen auch für andere Benutzer auf der Seite **Personalisierung** verwalten. Diese Seite hat vier Registerkarten: **System**, **Benutzer**, **Importieren** und **Löschen**.
+Benutzer mit Administratorrechten können Personalisierungen auch für andere Benutzer auf der Seite **Personalisierung** verwalten. Diese Seite besitzt vier Registerkarten: 
 
 - **System** – Sie können temporär alle Personalisierungen im System deaktivieren oder abschalten. In diesem Fall werden keine Personalisierungen gelöscht. Sie setzen nur alle Seiten auf den Standardstatus zurück. Wenn Sie die Personalisierungen später wieder reaktivieren, werden diese wieder auf die Seiten der Benutzer angewendet. Sie können auch Personalisierungen für alle Benutzer löschen. Beachten Sie, dass wenn Sie Personalisierungen löschen, keine Möglichkeit besteht, Personalisierungen vom System automatisch zu aktivieren. Deshalb müssen Sie vor diesem Schritt sicherstellen, dass Sie alle Personalisierungen exportiert haben, die Sie später importieren möchten.
 - **Benutzer** – Sie können festlegen, ob die einzelnen Benutzer implizite oder explizite Personalisierungen vornehmen können. Sie können auch festlegen, ob Benutzer auf einer bestimmten Seite implizite oder explizite Personalisierungen vornehmen können. Abschließend können Sie eine Personalisierung für einen Benutzer importieren, exportieren oder löschen.
 - **Importieren** – Sie können eine Personalisierung für einen oder mehrere Benutzer importieren. Sie nutzen diese Registerkarte, nachdem Sie eine Personalisierung auf einer Seite oder einem Arbeitsbereich vorgenommen haben und diese dann als Personalisierungsdatei exportiert haben. Zum Importieren der Personalisierungsdatei und zum Anwenden dieser auf einen oder mehrere Benutzer wählen Sie die Benutzer in der Liste aller Benutzer aus oder Filtern nach einer bestimmten Rolle und wählen die Benutzer in der Rolle aus. Nach Auswahl der Benutzer, die die Personalisierung nutzen, klicken Sie auf **Importieren**, und wählen Ihre personalisierte Datei aus. Die Personalisierung wird geprüft und auf alle ausgewählten Benutzer angewendet, wenn diese die ausgewählte Seite das nächste Mal öffnen.
 - **Löschen** – Sie können eine Seiten- oder Arbeitsbereichspersonalisierung für einen oder mehrere Benutzer löschen. Wählen Sie zunächst die Seite oder den Arbeitsbereich, dessen Personalisierung Sie löschen möchten. Wählen Sie dann die Benutzer in der Liste aller Benutzer aus oder filtern Sie nach einer bestimmten Rolle und wählen Sie dann die Benutzer in der Rolle aus. Klicken Sie auf **Löschen**, nachdem Sie eine Seite oder einen Arbeitsbereich sowie Benutzer ausgewählt haben. Alle Personalisierungen, die die ausgewählten Benutzer auf die ausgewählte Seite oder den ausgewählten Arbeitsbereich angewendet haben, werden gelöscht. Diese Aktion kann nicht rückgängig gemacht werden. Wenn die Seite oder der Arbeitsbereich eine gespeicherte Personalisierung hat, kann diese erneut importiert werden.
 
+## <a name="personalization-of-inventory-dimensions"></a>Personalisierung von Lagerungsdimensionen
 
+Wenn Sie die Einstellungen der Lagerungsdimensionen auf einer Seite personalisieren, beachten Sie die Einstellungen, die erstellt wurden, indem Sie die Option **Anzeigendimension** nutzen. Wenn Sie beispielsweise Personalisierung verwenden, um eine Spalte für die Chargennummerenlagerungsdimension auszublenden und die Spalte erscheint, wenn Sie das nächste welche Bestanddimensionsspalte angezeigt. wird. 
 
+Die Dimensionsanzeigeeinstellungen gelten für alle Seiten und diese Einstellungen setzen alle personalisierten Lagerdimensionsfelder einer individuellen Seite außer Kraft. 
+
+Für das Beispiel mit der Chargennummerenlagerungsdimension, würde diese Dimension als Teil der **Anzeigendimensionen** deaktiviert werden, sodass die Tabelle nicht in dieser Spalte angezeigt wird. Schließlich wird diese Änderung nicht nur auf einer bestimmten Seite jedoch über allen Seiten gelten.
 

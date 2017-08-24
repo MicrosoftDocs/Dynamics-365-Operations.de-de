@@ -15,13 +15,13 @@ ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
+ms.translationtype: HT
+ms.sourcegitcommit: 9953d2f29a67b35f4bb43f577df1c4d910e379a1
+ms.openlocfilehash: 08a420a776f47119a5dc47f9119545aa448ffdbd
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,15 +30,20 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Finanzberichts-Data Mart zurückgesetzt wird, nachdem die Microsoft Dynamics 365 for Finance and Operations-Datenbank wiederhergestellt wurde. 
+In diesem Thema wird beschrieben, wie Finanzberichts-Data Mart zurückgesetzt wird, nachdem die Microsoft Dynamics 365 for Finance and Operations-Datenbank wiederhergestellt wurde.
 
-Es gibt mehrere Szenarios, in denen möglicherweise die Dynamics 365 for Finance and Operations-Datenbank aus einer Sicherung wiederherstellen oder die Datenbank aus einer anderen Umgebung kopieren müssen. Wenn dies der Fall ist, müssen Sie auch die entsprechenden Aktivitäten ausgeführt werden, um sicherzustellen, dass der Finanzberichts-Data Mart ordnungsgemäß die wiederhergestellte Dynamics 365 for Finance and Operations-Datenbank verwendet. Wenn Sie Fragen zum Zurücksetzen des Finanzberichts-Data Mart außerhalb der Wiederherstellung der Dynamics 365 for Finance and Operations-Datenbank haben, finden Sie unter [Management Reporter-Data-Mart zurücksetzen](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) weitere Informationen. Beachten Sie, dass die Schritte dieses Prozesses für Dynamics 365 for Operations Mai 2016 (App-Build 7.0.1265.23014 und Financial Reporting Build 7.0.10000.4) und später Versionen unterstützt werden. Wenn Sie einer früheren Version von Finance and Operations nutzen, wenden Sie sich bitte unserem Support-Team.
+Wenn Sie ggf. die Finanz- und Arbeitsgangsdatenbank aus einer Sicherung wiederherstellen oder die Datenbank aus einer anderen Umgebung kopieren, müssen Sie die Schritte in diesem Thema ausführen, um sicherzustellen, dass der Rechnungslegungs-datamart ordnungsgemäß die zu stornierenden Finanz- und Arbeitsgangsdatenbank verwendet. 
+<!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
+> [!Note] 
+> Beachten Sie, dass die Schritte dieses Prozesses für Dynamics 365 for Operations Mai 2016 (App-Build 7.0.1265.23014 und Financial Reporting Build 7.0.10000.4) und später Versionen unterstützt werden. Wenn Sie eine frühere Version von Finance and Operations nutzen, wenden Sie sich bitte an unser Support-Team.
 
 ## <a name="export-report-definitions"></a>Exportieren von Berichtsdefinitionen
 Zuerst exportieren Sie die Berichtsdesigns im Berichts-Designer, und zwar mithilfe der folgenden Schritte aus:
 
 1.  Wechseln Sie im Berichts-Designer zu **Unternehmen** &gt; **Bausteingruppen**.
-2.  Wählen Sie die Bausteingruppe aus, die exportiert werden soll, und klicken Sie **Export**. **Hinweis:** Für Finance and Operations wird nur eine Bausteingruppe, unterstützt (**Standard**).
+2.  Wählen Sie die Bausteingruppe aus, die exportiert werden soll, und klicken Sie **Export**. 
+    > [!Note] 
+    > Für Finance and Operations wird nur eine Bausteingruppe, unterstützt **Standard**.
 3.  Wählen Sie die Berichtsdefinition für den Export aus:
     -   Um alle Ihre Berichtsdefinitionen und die zugeordneten Bausteine zu exportieren, klicken Sie auf **Alles auswählen**.
     -   Um bestimmte Berichte, Zeilen, Spalten, Strukturen oder Dimensionssätze zu exportieren, klicken Sie auf die entsprechende Registerkarte und wählen die Artikel aus, die exportiert werden sollen. Drücken und halten Sie die STRG-Taste gedrückt, um mehrere Elemente in einer Registerkarte auszuwählen. Wenn Sie Berichte zum Exportieren auswählen, werden die zugeordneten Zeilen, Spalten, Baumstrukturen und Dimensionssätze ausgewählt.
@@ -63,9 +68,9 @@ Verwenden den Remotedesktop, um sich mit allen Computern in der Umgebung zu verb
 Diese Dienste haben offene Verbindungen zur Finance and Operations-Datenbank.
 
 ## <a name="reset"></a>Zurücksetzen
-#### <a name="locate-the-latest-dataupgradezip-package"></a>Suchen Sie das letzte DataUpgrade.zip-Paket
+#### <a name="locate-and-download-the-latest-minorversiondataupgradezip-package"></a>Suchen und laden Sie das letzte MinorVersionDataUpgrade.zip-Paket herunter
 
-Suchen Sie das letzte DataUpgrade.zip-Paket mithilfe Anweisungen aus [Skript DataUpgrade.zip herunterladen](..\migration-upgrade\upgrade-data-to-latest-update.md). Die Anweisungen zeigen, wie Sie die korrekte Version des Datenaktualisierungspakets für Ihre Umgebung lokalisieren.
+Suchen Sie das letzte MinorVersionDataUpgrade.zip-Paket mithilfe der Anweisungen in [Skript DataUpgrade.zip herunterladen](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package) herunter. Die Anweisungen zeigen, wie Sie die korrekte Version des Datenaktualisierungspakets für Ihre Umgebung lokalisieren und herunterladen. Eine Aktualisierung ist nicht erforderlich, um das MinorVersionDataUpgrade.zip-Paket herunterzuladen. Sie müssen nur die Schritte des "Herunterladen zur Bereitstellung geeigneter Paket der letzten Aktualisierung abschließen" Bereich, ohne einen der Schritte im anderen Artikel, um eine Kopie des MinorVersionDataUpgrade.zip-Pakets abzurufen.
 
 #### <a name="execute-scripts-against-finance-and-operations-database"></a>Ausführen von Skripts für die Finance and Operations-Datenbank
 
@@ -105,8 +110,10 @@ Importieren Sie die Berichtsdesigns im Berichts-Designer, und zwar mithilfe der 
 
 1.  Wechseln Sie im Berichts-Designer zu **Unternehmen** &gt; **Bausteingruppen**.
 2.  Wählen Sie die Bausteingruppe aus, die exportiert werden soll, und klicken Sie **Export**. 
+
     > [!NOTE]
     > Für Finance and Operations wird nur eine Bausteingruppe, unterstützt **Standard**.
+    
 3.  Wählen Sie den **Standard**-Baustein und klicken Sie auf **Importieren**.
 4.  Wählen Sie die Datei aus, welche die exportierten Berichtsdefinitionen enthält und klicken Sie auf **Öffnen**.
 5.  Wählen Sie im Dialogfeld Importieren die Berichtsdefinitionen aus, die importiert werden soll:

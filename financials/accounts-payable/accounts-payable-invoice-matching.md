@@ -3,7 +3,7 @@ title: Kreditorenrechnungsabgleich
 description: Beim Kreditorenrechnungsabgleich handelt es sich um den Prozess zum Abgleich der Informationen aus der Kreditorenrechnung, der Bestellung und des Produktzugangs.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6d1348ad43f8170f29bfc2f3df8a2ec60f9f8912
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: aa195f6057ae4ea511d661ffb47b1feeed58d2f9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -134,7 +133,7 @@ Die Bestellung enthält die folgende Position:
 |-------------|----------|------------|------------|
 | USB-Laufwerk   | 1.000    | 10,00      | 10.000,00  |
 
-Drei Rechnungen werden wie in der folgenden Tabelle dargestellt eingegeben. Rechnung 3 stellt eine Abweichung beim Rechnungsabgleich dar, da die Abweichung von 1.800,00 EUR den Toleranzbetrag der Einkaufspreissumme von 500,00 EUR übersteigt. Beim Preissummenabgleich schließt der Rechnungsnettobetrag alle bereits gebuchten Rechnungen zusätzlich zur aktuell bearbeiteten Rechnung ein.
+Drei Rechnungen werden wie in der folgenden Tabelle dargestellt eingegeben. Rechnung 3 stellt eine Abweichung beim Rechnungsabgleich dar, da die Abweichung von 1.880,00 EUR den Toleranzbetrag der Einkaufspreissumme von 500,00 EUR übersteigt. Beim Preissummenabgleich schließt der Rechnungsnettobetrag alle bereits gebuchten Rechnungen zusätzlich zur aktuell bearbeiteten Rechnung ein.
 
 | Artikelnummer          | Menge | Preis je Einheit | Nettobetrag | Preisabgleich | Preissummenabgleich |
 |----------------------|----------|------------|------------|-------------|-------------------|
@@ -192,7 +191,7 @@ Kreditorenrechnungen basieren häufig auf Produktzugängen, die für die tatsäc
 -   Eingeben von Rechnungsbeträgen, die nicht Teil der ursprünglichen Bestellung waren, um die Rechnungsinformationen mit der vom Kreditor erhaltenen Rechnung abzugleichen. Die Zuschläge für Bestellungen können mit den Zuschlägen für Rechnungen verglichen werden. Sie haben auch die Möglichkeit, Rechnungen Zuschläge hinzuzufügen und diese den Rechnungspositionen zuzuweisen.
 -   Anzeigen und Genehmigen von Preisabweichungen zwischen dem Nettostückpreis der Rechnung und dem Nettostückpreis der Bestellung. Sie haben die Möglichkeit zum Einrichten von Preistoleranz-Prozentwerten für juristische Personen, Kreditoren und Artikel. Liegt der Preis in einer Position der Kreditorenrechnung nicht innerhalb der zulässigen Preistoleranz, kann die Rechnung gespeichert werden, bis entweder die Buchung genehmigt wird oder eine Korrektur vom Kreditor eingeht.
 
-Weitere Informationen finden Sie unter [Dreifach abgeglichene Richtlinien](three-way-matching-policies.md)
+Weitere Informationen finden Sie unter [Dreiseitige Abgleichsrichtlinien](three-way-matching-policies.md) und [Einstellungskreditor-Rechnungsabgleichsprüfung](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 

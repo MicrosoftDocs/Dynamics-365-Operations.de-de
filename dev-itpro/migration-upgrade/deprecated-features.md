@@ -15,13 +15,13 @@ ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 18274d9ca390ee3d6d463b3a6d67ddc3a39294f8
+ms.sourcegitcommit: 404a6e767036542b0e6ccd84c2dd841d4a602b87
+ms.openlocfilehash: 671210a8d69282864ca4188abd360eefa819ae72
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 07/27/2017
 
 Dieses Thema beschreibt Funktionen, die aus Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, entfernt wurden, oder für die vorgesehen ist, sie zu entfernen.
 
-## <a name="features-that-have-been-deprecated-for-all-deployment-types-of-the-july-2017-update-with-platform-update-8"></a>Funktionen, die für alle Bereitstellungstypen des Updates vom Juli 2017 mit Plattform-Update 8 veraltet sind.
-Diese Liste enthält Funktionen, die für Cloud- und lokale Bereisstellungen veraltet sind.
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update-with-platform-update-8"></a>Funktionen, die in Dynamics 365 for Finance and Operations, Enterprise Edition Juli 2017 Update mit Plattform Update 8  veraltet wurden
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portal für mobile Geräte für das Lager
 
@@ -64,31 +63,8 @@ Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und G
 | **Ersetzt durch eine andere Funktion?** | Nr.                                                                                      |
 | **Betroffene Module**             | Spesenverwaltung                                                                       |
 
-## <a name="features-that-have-been-deprecated-for-on-premises-deployments-of-the-july-2017-update-with-platform-update-8"></a>Funktionen, die für alle lokale Bereitstellungen des Updates vom Juli 2017 mit Plattform-Update 8 veraltet sind.
 
-### <a name="ssrs-report-viewer-control"></a>SSRS Report Viewer-Steuerelement
-
-Diese Funktion wurde verwendet, um im Finance and Operations-Webclient mit Berichten im HTML-Format zu arbeiten.
-
-|                                  |  |
-|----------------------------------|--|
-| **Grund für Abschreibung**       | SQL Reporting Services (SSRS) unterstützt kein Report Viewer-Steuerelement, das mit dem lokalen Webclient kompatibel ist.      |
-| **Ersetzt durch eine andere Funktion?** | Berichte werde vom lokalen Services als PDF-Dokumente dargestellt. Verwenden Sie Dateinamenerweiterungen, um eingebettete Drillthrough-Links in Applikationsberichten zu aktivieren. |
-| **Betroffene Module**             | Alle    |
-
-### <a name="document-routing-agent"></a>Dokumentweiterleitungsagent
-
-Der Dokumentweiterleitungsagent wird als Service-Gateway verwendet, um von der Cloud aus eine Verbindung zu innerhalb der Domäne authentifizierten Netzwerkdruckern einzurichten.
-
-|                                  |  |
-|----------------------------------|--|
-| **Grund für Abschreibung**       | Lokale Bereitstellungen werden auf für die Domäne authentifizierten Servern gehostet. Damit ist ein sicherer, direkter Zugriff auf Netzwerkdrucker möglich. |
-| **Ersetzt durch eine andere Funktion?** | Diese Komponente ist für lokale Bereitstellungen nicht erforderlich.|
-| **Betroffene Module**             | Keines               |
-
-
-<a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funktionen, die in Dynamics 365 for Operations 1611 mit Plattformaktualisierung 3 veraltet sind
----------------------------------------------------------------------------------------------
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funktionen, die in Dynamics 365 for Operations 1611 mit Plattformaktualisierung 3 veraltet sind
 
 ### <a name="aeb-payment-formats-for-spain"></a>AEB-Zahlungsformate für Spanien
 
@@ -96,9 +72,9 @@ Die überlegenen Bancario Zahlungsformate vom werden verwendet, um Rimessedateie
 
 |                              |                                                                          |
 |------------------------------|--------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                                  |
-| Ersetzt durch eine andere Funktion? | Ja, ISO20022 Banküberweisung und Lastschriftverfahren für Spanien |
-| Betroffene Module             | Kreditorenkonten, Debitoren                                    |
+| **Grund für Abschreibung**       | Die Zahlungsformate werden nicht mehr verwendet.                                  |
+| **Ersetzt durch eine andere Funktion?** | Ja, ISO20022 Banküberweisung und Lastschriftverfahren für Spanien |
+| **Betroffene Module**             | Kreditorenkonten, Debitoren                                    |
 
 ### <a name="bank-payments-transfer-for-lithuania"></a>Zahlung per Banküberweisung für Litauen
 
@@ -106,9 +82,9 @@ Zahlungsüberweisungen werden mithilfe von des Exportformats der Zahlungsüberwe
 
 |                              |                                                            |
 |------------------------------|------------------------------------------------------------|
-| Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                    |
-| Ersetzt durch eine andere Funktion? | Ja, Kredittransferzahlungsformat ISO20022 für Litauen |
-| Betroffene Module             | Kreditorenkonten                                           |
+| **Grund für Abschreibung**       | Die Zahlungsformate werden nicht mehr verwendet.                    |
+| **Ersetzt durch eine andere Funktion?** | Ja, Kredittransferzahlungsformat ISO20022 für Litauen |
+| **Betroffene Module**             | Kreditorenkonten                                           |
 
 ### <a name="bbs-direkte-remittering-payment-formats-for-norway"></a>Zahlungsformate BBS Direkte Remittering für Norwegen
 
@@ -116,9 +92,9 @@ Zahlungsformate BBS Direkte Remittering enthalten Debitorenzahlungsinkassoexport
 
 |                              |                                                                                                                                                                |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                                                                                                                        |
-| Ersetzt durch eine andere Funktion? | Das AvtaleGiro-Debitorenzahlungsformat für Norwegen kann verwendet werden, um Direktbelastungsnachrichten zu generieren. Rückholnachrichtenimport wird in künftigen Versionen implementiert. |
-| Betroffene Module             | Kreditorenkonten, Debitoren                                                                                                                          |
+| **Grund für Abschreibung**       | Die Zahlungsformate werden nicht mehr verwendet.                                                                                                                        |
+| **Ersetzt durch eine andere Funktion?** | Das AvtaleGiro-Debitorenzahlungsformat für Norwegen kann verwendet werden, um Direktbelastungsnachrichten zu generieren. Rückholnachrichtenimport wird in künftigen Versionen implementiert. |
+| **Betroffene Module**             | Kreditorenkonten, Debitoren                                                                                                                          |
 
 ### <a name="chart-of-accounts-tool-for-spain"></a>Kontenplan-Tool für Spanien
 
@@ -126,9 +102,9 @@ Dieses Tool wird verwendet, wenn ein Kontenplan in Spanien größere Änderungen
 
 |                              |                |
 |------------------------------|----------------|
-| Grund für Abschreibung       | Begrenzte Verwendung  |
-| Ersetzt durch eine andere Funktion? | Nr.             |
-| Betroffene Module             | Hauptbuch |
+| **Grund für Abschreibung**       | Begrenzte Verwendung  |
+| **Ersetzt durch eine andere Funktion?** | Nr.             |
+| **Betroffene Module**             | Hauptbuch |
 
 ### <a name="dom80-payment-format-for-belgium"></a>Dom80 Zahlungsformat für Belgien
 
@@ -136,9 +112,9 @@ Dieses Tool wird verwendet, wenn ein Kontenplan in Spanien größere Änderungen
 
 |                              |                                                        |
 |------------------------------|--------------------------------------------------------|
-| Grund für Abschreibung       | Das Zahlungsformat wird nicht mehr verwendet.                  |
-| Ersetzt durch eine andere Funktion? | Ja; ISO 20022, Lastschriftzahlungsformat für Belgien |
-| Betroffene Module             | Debitorenkonten                                    |
+| **Grund für Abschreibung**      | Das Zahlungsformat wird nicht mehr verwendet.                  |
+| **Ersetzt durch eine andere Funktion?** | Ja; ISO 20022, Lastschriftzahlungsformat für Belgien |
+| **Betroffene Module**            | Debitorenkonten                                    |
 
 ### <a name="dtaezag-payment-formats-for-switzerland"></a>DTA/EZAG Zahlungsformate für die Schweiz
 
@@ -146,9 +122,9 @@ DTA-/EZAG-Formate sind im ESR-System integriert, da sie eine Referenznummer füh
 
 |                              |                                                              |
 |------------------------------|--------------------------------------------------------------|
-| Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                      |
-| Ersetzt durch eine andere Funktion? | Ja, ISO20022 Kredittransferzahlungsformat für die Schweiz |
-| Betroffene Module             | Kreditorenkonten                                             |
+| **Grund für Abschreibung**       | Die Zahlungsformate werden nicht mehr verwendet.                      |
+| **Ersetzt durch eine andere Funktion?** | Ja, ISO20022 Kredittransferzahlungsformat für die Schweiz |
+| **Betroffene Module**             | Kreditorenkonten                                             |
 
 ### <a name="edifact-dirdeb-payment-format-for-austria"></a>EDIFACT-DIRDEB Zahlungsformat für Österreich
 
@@ -156,9 +132,9 @@ EDIFACT-DIRDEB Zahlungsformat für Zahlungsinkasso (Direktbelastung).
 
 |                              |                                                        |
 |------------------------------|--------------------------------------------------------|
-| Grund für Abschreibung       | Das Zahlungsformat wird nicht mehr verwendet.                  |
-| Ersetzt durch eine andere Funktion? | Ja; ISO 20022, Lastschriftzahlungsformat für Österreich |
-| Betroffene Module             | Debitorenkonten                                    |
+| **Grund für Abschreibung**       | Das Zahlungsformat wird nicht mehr verwendet.                  |
+| **Ersetzt durch eine andere Funktion?** | Ja; ISO 20022, Lastschriftzahlungsformat für Österreich |
+| **Betroffene Module**             | Debitorenkonten                                    |
 
 ### <a name="edivat-for-belgium"></a>EDIVAT für Belgien
 
@@ -166,9 +142,9 @@ EDIVAT ist ein veralteter belgischer Standard für elektronische Meldungen über
 
 |                              |                                      |
 |------------------------------|--------------------------------------|
-| Grund für Abschreibung       | Die Funktionalität wird nicht mehr verwendet. |
-| Ersetzt durch eine andere Funktion? | Nr.                                   |
-| Betroffene Module             | Hauptbuch                       |
+| **Grund für Abschreibung**       | Die Funktionalität wird nicht mehr verwendet. |
+| **Ersetzt durch eine andere Funktion?** | Nr.                                   |
+| **Betroffene Module**             | Hauptbuch                       |
 
 ### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>eGiro EDIFACT CREMUL Zahlungsimportformat für Norwegen
 
@@ -176,9 +152,9 @@ eGiro basiert auf den internationalen UN EDIFACT CREMUL (Mehrere Gutschriftsanze
 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
-| Ersetzt durch eine andere Funktion? | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
-| Betroffene Module             | Debitorenkonten                                                                       |
+| **Grund für Abschreibung**       | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
+| **Ersetzt durch eine andere Funktion?** | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
+| **Betroffene Module**             | Debitorenkonten                                                                       |
 
 ### <a name="external-inventory-for-poland"></a>Externer Bestand für Polen
 
@@ -186,9 +162,9 @@ Nachweis von Waren, die von einem Kreditor für Verkäufe ohne Einkauf verwendet
 
 |                              |                                                 |
 |------------------------------|-------------------------------------------------|
-| Grund für Abschreibung       | Ersetzt durch eine andere Funktion                     |
-| Ersetzt durch eine andere Funktion? | Ja, die zentrale eingehende Lieferungsfunktionalität |
-| Betroffene Module             | Kreditorenkonto, Bestandverwaltung          |
+| **Grund für Abschreibung**       | Ersetzt durch eine andere Funktion                     |
+| **Ersetzt durch eine andere Funktion?** | Ja, die zentrale eingehende Lieferungsfunktionalität |
+| **Betroffene Module**             | Kreditorenkonto, Bestandverwaltung          |
 
 ### <a name="financial-reports-generator-for-eastern-europe"></a>Finanzberichtsgenerator für Osteuropa
 
@@ -196,9 +172,9 @@ Ein Tool, um die Datenerfassung für die Berechnung und die Steuererklärungen e
 
 |                              |                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Begrenzte Verwendung                                                                            |
-| Ersetzt durch eine andere Funktion? | Nr. Das Tool wird durch die elektronische Berichterstellungskonfigurationen in künftigen Versionen ersetzt. |
-| Betroffene Module             | Hauptbuch                                                                           |
+| **Grund für Abschreibung**       | Begrenzte Verwendung                                                                            |
+| **Ersetzt durch eine andere Funktion?** | Nr. Das Tool wird durch die elektronische Berichterstellungskonfigurationen in künftigen Versionen ersetzt. |
+| **Betroffene Module**             | Hauptbuch                                                                           |
 
 ### <a name="import-of-customer-payment-transactions-for-finland"></a>Import von Buchungen für Debitorenzahlungen für Finnland
 
@@ -206,9 +182,9 @@ Sie können ein Importformat für finnische Zahlungen auswählen, das Debitorenz
 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
-| Ersetzt durch eine andere Funktion? | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
-| Betroffene Module             | Debitorenkonten                                                                       |
+| **Grund für Abschreibung**       | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
+| **Ersetzt durch eine andere Funktion?** | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
+| **Betroffene Module**             | Debitorenkonten                                                                       |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import von Zahlungsbuchungen in eine Hauptbucherfassung für Finnland
 
@@ -216,9 +192,9 @@ Ein Sonderformat für Finnland zum Import von Buchhaltungsbuchungen in das Haupt
 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
-| Ersetzt durch eine andere Funktion? | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
-| Betroffene Module             | Debitorenkonten                                                                       |
+| **Grund für Abschreibung**       | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
+| **Ersetzt durch eine andere Funktion?** | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
+| **Betroffene Module**             | Debitorenkonten                                                                       |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integration mit Isabel synchronisiert (CIS) für Belgien
 
@@ -226,9 +202,9 @@ Isabel ist das Framework für Electronic Banking in Europa und kein tatsächlich
 
 |                              |                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Integration mit Isabel-Kunden ist eingestellt.                                                                |
-| Ersetzt durch eine andere Funktion? | Nr. Die Zahlungsformate, die nicht mehr verwendet werden, werden durch Transferzahlungsformat des Kredits ISO20022 für Belgien ersetzt. |
-| Betroffene Module             | Kreditorenkonten                                                                                                     |
+| **Grund für Abschreibung**       | Integration mit Isabel-Kunden ist eingestellt.                                                                |
+| **Ersetzt durch eine andere Funktion?** | Nr. Die Zahlungsformate, die nicht mehr verwendet werden, werden durch Transferzahlungsformat des Kredits ISO20022 für Belgien ersetzt. |
+| **Betroffene Module**             | Kreditorenkonten                                                                                                     |
 
 ### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Änderungen im Kontenplan und bei den Buchhaltungsvorschriften für Spanien
 
@@ -236,9 +212,9 @@ Diese Funktion wurde für Änderungen im Kontenplan und bei den Buchhaltungsvors
 
 |                              |                |
 |------------------------------|----------------|
-| Grund für Abschreibung       | Begrenzte Verwendung  |
-| Ersetzt durch eine andere Funktion? | Nr.             |
-| Betroffene Module             | Hauptbuch |
+| **Grund für Abschreibung**       | Begrenzte Verwendung  |
+| **Ersetzt durch eine andere Funktion?** | Nr.             |
+| **Betroffene Module**             | Hauptbuch |
 
 ### <a name="pagamento-fornittori-vendor-payment-format"></a>Kreditorenzahlungsformat Pagamento Fornittori
 
@@ -246,9 +222,9 @@ Veraltetes italienisches Zahlungsformat für Kreditübertragungen.
 
 |                              |                                                        |
 |------------------------------|--------------------------------------------------------|
-| Grund für Abschreibung       | Das Zahlungsformat wird nicht mehr verwendet.                  |
-| Ersetzt durch eine andere Funktion? | Ja, ISO20022 Kredittransferzahlungsformat für Italien |
-| Betroffene Module             | Kreditorenkonten                                       |
+| **Grund für Abschreibung**       | Das Zahlungsformat wird nicht mehr verwendet.                  |
+| **Ersetzt durch eine andere Funktion?** | Ja, ISO20022 Kredittransferzahlungsformat für Italien |
+| **Betroffene Module**             | Kreditorenkonten                                       |
 
 ### <a name="payment-export-formats-for-estonia"></a>Zahlungsexportforamte für Estland
 
@@ -256,9 +232,9 @@ Die Formate Telehansa und Teleservide werden für den Bankzahlungsexport verwend
 
 |                              |                                                          |
 |------------------------------|----------------------------------------------------------|
-| Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                  |
-| Ersetzt durch eine andere Funktion? | Ja, ISO20022 Kredittransferzahlungsformat für Estland |
-| Betroffene Module             | Kreditorenkonten                                         |
+| **Grund für Abschreibung**      | Die Zahlungsformate werden nicht mehr verwendet.                  |
+| **Ersetzt durch eine andere Funktion?** | Ja, ISO20022 Kredittransferzahlungsformat für Estland |
+| **Betroffene Module**             | Kreditorenkonten                                         |
 
 ### <a name="payment-file-archive-for-norway"></a>Zahlungsdateiarchiv für Norwegen
 
@@ -266,9 +242,9 @@ Wenn Zahlungsdateien generiert werden archiviert das Dateiarchiv automatisch all
 
 |                              |                                                                    |
 |------------------------------|--------------------------------------------------------------------|
-| Grund für Abschreibung       | Ersetzt durch eine andere Funktion                                        |
-| Ersetzt durch eine andere Funktion? | Ja, archivierte Einzelvorgänge für elektronische Berichterstellung                            |
-| Betroffene Module             | Kreditorenkonten, Debitoren, Organisationsverwaltung |
+| **Grund für Abschreibung**       | Ersetzt durch eine andere Funktion                                        |
+| **Ersetzt durch eine andere Funktion?** | Ja, archivierte Einzelvorgänge für elektronische Berichterstellung                            |
+| **Betroffene Module**             | Kreditorenkonten, Debitoren, Organisationsverwaltung |
 
 ### <a name="payment-import-formats-for-estonia"></a>Zahlungsimportformate für Estland
 
@@ -276,9 +252,9 @@ Die Formate Telehansa und TeleTeenus werden für den Bankzahlungimport verwendet
 
 |                              |                                                                                            |
 |------------------------------|--------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                                                    |
-| Ersetzt durch eine andere Funktion? | Nr. Die Formate werden durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
-| Betroffene Module             | Debitorenkonten                                                                        |
+| **Grund für Abschreibung**       | Die Zahlungsformate werden nicht mehr verwendet.                                                    |
+| **Ersetzt durch eine andere Funktion?** | Nr. Die Formate werden durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
+| **Betroffene Module**             | Debitorenkonten                                                                        |
 
 ### <a name="performance-management-goal-workflow"></a>Leistungsverwaltungsziel-Workflow
 
@@ -286,9 +262,9 @@ Leistungsverwaltung enthält Zielverwaltung und Integration mit Leistungsbeurtei
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Leistungsverwaltung wurde neu gestaltet und die Anzahl von Zielseiten wurde verringert, um den Prozess zu vereinfachen.                 |
-| Ersetzt durch eine andere Funktion? | Nr. Ziele sind für Manager über das Manager-Self-Service-Portal sichtbar und können vom Manager angezeigt und geändert werden. |
-| Betroffene Module             | Human Capital Management                                                                                                 |
+| **Grund für Abschreibung**       | Leistungsverwaltung wurde neu gestaltet und die Anzahl von Zielseiten wurde verringert, um den Prozess zu vereinfachen.                 |
+| **Ersetzt durch eine andere Funktion?** | Nr. Ziele sind für Manager über das Manager-Self-Service-Portal sichtbar und können vom Manager angezeigt und geändert werden. |
+| **Betroffene Module**             | Human Capital Management                                                                                                 |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Zahlungsformate Postgirot und Postgirot Utland für Schweden
 
@@ -296,9 +272,9 @@ Zahlungsformate Postgirot und Postgirot Utland für Schweden.
 
 |                              |                                                         |
 |------------------------------|---------------------------------------------------------|
-| Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                 |
-| Ersetzt durch eine andere Funktion? | Ja, ISO20022 Kredittransferzahlungsformat für Schweden |
-| Betroffene Module             | Kreditorenkonten                                        |
+| **Grund für Abschreibung**       | Die Zahlungsformate werden nicht mehr verwendet.                 |
+| **Ersetzt durch eine andere Funktion?** | Ja, ISO20022 Kredittransferzahlungsformat für Schweden |
+| **Betroffene Module**             | Kreditorenkonten                                        |
 
 ### <a name="radio-frequency-identifier"></a>Kennung für Funkübertragung
 
@@ -306,9 +282,9 @@ RFID (Radiofrequenz-Identifikation) ist eine Technologie zum Sammeln von Daten. 
 
 |                              |                                               |
 |------------------------------|-----------------------------------------------|
-| Grund für Abschreibung       | Geringe Kundennutzung und ein begrenzter Funktionsumfang. |
-| Ersetzt durch eine andere Funktion? | Nr.                                            |
-| Betroffene Module             | Lagerverwaltung                          |
+| **Grund für Abschreibung**       | Geringe Kundennutzung und ein begrenzter Funktionsumfang. |
+| **Ersetzt durch eine andere Funktion?** | Nr.                                            |
+| **Betroffene Module**             | Lagerverwaltung                          |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Bericht zu Bundeslandrechnungsnummerierung für Lettland
 
@@ -316,9 +292,9 @@ Lettische Gesetzgebung schafft bestimmte Regeln dazu, wie Verkaufsrechnungen num
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Bundeslandrechnungsnummerierung muss nicht mehr verwaltet werden. Der Bericht zu verwendeten Rechnungsnummern wird nicht mehr benötigt. |
-| Ersetzt durch eine andere Funktion? | Nr.                                                                                                                       |
-| Betroffene Module             | Debitorenkonten                                                                                                      |
+| **Grund für Abschreibung**       | Die Bundeslandrechnungsnummerierung muss nicht mehr verwaltet werden. Der Bericht zu verwendeten Rechnungsnummern wird nicht mehr benötigt. |
+| **Ersetzt durch eine andere Funktion?** | Nr.                                                                                                                       |
+| **Betroffene Module**             | Debitorenkonten                                                                                                      |
 
 ### <a name="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania"></a>Richten Sie die Namen vom Manager und dem allgemeinen Buchhalter eines Unternehmens für Litauen ein
 
@@ -326,9 +302,9 @@ Die Namen vom Manager und dem allgemeinen Buchhalter eines Unternehmens können 
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
-| Grund für Abschreibung       | Ersetzt durch eine andere Funktion                                     |
-| Ersetzt durch eine andere Funktion? | Ja, das Einrichten von Beamten kann für den selben Zweck verwendet werden.   |
-| Betroffene Module             | Debitorenkonten, Kreditorenkonten, Bargeld- und Bankverwaltung |
+| **Grund für Abschreibung**       | Ersetzt durch eine andere Funktion                                     |
+| **Ersetzt durch eine andere Funktion?** | Ja, das Einrichten von Beamten kann für den selben Zweck verwendet werden.   |
+| **Betroffene Module**             | Debitorenkonten, Kreditorenkonten, Bargeld- und Bankverwaltung |
 
 ### <a name="telepay-payment-formats-for-norway"></a>Telepay-Zahlungsformate für Norwegen
 
@@ -336,9 +312,9 @@ Telepay-Zahlungsformate enthalten Kreditorenzahlungsexport (Banküberweisung) un
 
 |                              |                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                                                        |
-| Ersetzt durch eine andere Funktion? | Ja, ISO20022 Kredittransferzahlungsformat und AvtaleGiro-Debitorenzahlungsformat für Norwegen |
-| Betroffene Module             | Kreditorenkonten, Debitoren                                                          |
+| **Grund für Abschreibung**       | Die Zahlungsformate werden nicht mehr verwendet.                                                        |
+| **Ersetzt durch eine andere Funktion?** | Ja, ISO20022 Kredittransferzahlungsformat und AvtaleGiro-Debitorenzahlungsformat für Norwegen |
+| **Betroffene Module**            | Kreditorenkonten, Debitoren                                                          |
 
 ### <a name="vendor-payment-export-formats-for-finland"></a>Exportformate für Kreditorenzahlungen für Finnland
 
@@ -346,9 +322,9 @@ Zwei Formate für den Export von Zahlungen werden für Finnland verfügbar. LM02
 
 |                              |                                                          |
 |------------------------------|----------------------------------------------------------|
-| Grund für Abschreibung       | Die Zahlungsformate werden nicht mehr verwendet.                  |
-| Ersetzt durch eine andere Funktion? | Ja, ISO20022 Kredittransferzahlungsformat für Finnland |
-| Betroffene Module             | Kreditorenkonten                                         |
+| **Grund für Abschreibung**       | Die Zahlungsformate werden nicht mehr verwendet.                  |
+| **Ersetzt durch eine andere Funktion?** | Ja, ISO20022 Kredittransferzahlungsformat für Finnland |
+| **Betroffene Module**            | Kreditorenkonten                                         |
 
 ### <a name="workflow-for-creating-goals"></a>Workflow zum Erstellen der Zielsetzungen
 
@@ -356,18 +332,19 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Leistungsverwaltung wurde in Microsoft Dynamics 365 for Finance and Operations vollständig neu gestaltet.                                                                                                                                                                                                                                        |
-| Ersetzt durch eine andere Funktion? | Die neu entworfene Leistungsverwaltungsfunktion gibt mehr Kontrolle über den Inhalt der Ziele, die Messungen, die verwendet werden, um den Fortschritt zu verfolgen, und die Zuordnung der Begleitunterlagen. Ziele können als Vorlagen gespeichert werden und anschließend wieder verwendet werden. Diese Funktion kann Ihnen helfen, zusätzliche Ziele für Ihre Mitarbeiter schneller einzurichten. |
-| Betroffene Module             | Human Capital Management                                                                                                                                                                                                                                                                                                               |
+| **Grund für Abschreibung**       | Die Leistungsverwaltung wurde in Microsoft Dynamics 365 for Finance and Operations vollständig neu gestaltet.                                                                                                                                                                                                                                        |
+| **Ersetzt durch eine andere Funktion?** | Die neu entworfene Leistungsverwaltungsfunktion gibt mehr Kontrolle über den Inhalt der Ziele, die Messungen, die verwendet werden, um den Fortschritt zu verfolgen, und die Zuordnung der Begleitunterlagen. Ziele können als Vorlagen gespeichert werden und anschließend wieder verwendet werden. Diese Funktion kann Ihnen helfen, zusätzliche Ziele für Ihre Mitarbeiter schneller einzurichten. |
+| **Betroffene Module**            | Human Capital Management                                                                                                                                                                                                                                                                                                               |
 
-## <a name="features-deprecated-in-dynamics-ax-70-releases"></a>Funktionen, die in der Ausgabe Dynamics AX 7.0 veraltet sind
+## <a name="features-that-have-been-deprecated-in-dynamics-ax-70-releases"></a>Funktionen, die in der Ausgabe Dynamics AX 7.0 veraltet sind
+
 ### <a name="ability-to-cancel-changes-to-a-vendor-invoice"></a>Möglichkeit zum Abbrechen von Änderungen an einer Kreditorenrechnung
 
 |                              |                         |
 |------------------------------|-------------------------|
-| Grund für Abschreibung       | Leistungsverbesserung |
-| Ersetzt durch eine andere Funktion? | Nein                      |
-| Betroffene Module             | Kreditorenkonten        |
+| **Grund für Abschreibung**       | Leistungsverbesserung |
+| **Ersetzt durch eine andere Funktion?** | Nein                      |
+| **Betroffene Module**            | Kreditorenkonten        |
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integration mit AIF, AxD und AxBC
 
@@ -375,9 +352,9 @@ In Application Integration Framework (AIF), können Daten mit externen Systemen 
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Architektur von AIF und AxDs konnte nicht zu einem Clouddienst skaliert werden. Es gab Leistungsprobleme beim Massenimport.                                                                               |
-| Ersetzt durch eine andere Funktion? | In der aktuellen Version von Dynamics AX wird diese Funktion durch das Datenimport-/Exportframework ersetzt, das den wiederholten Massenimport/-export unterstützt. Für AxBC wird empfohlen, dass Sie die tatsächlichen Tabellen verwenden. |
-| Betroffene Module             | AxDs, AxBCs und AIF                                                                                                                                                                                     |
+| **Grund für Abschreibung**       | Die Architektur von AIF und AxDs konnte nicht zu einem Clouddienst skaliert werden. Es gab Leistungsprobleme beim Massenimport.                                                                               |
+| **Ersetzt durch eine andere Funktion?** | In der aktuellen Version von Dynamics AX wird diese Funktion durch das Datenimport-/Exportframework ersetzt, das den wiederholten Massenimport/-export unterstützt. Für AxBC wird empfohlen, dass Sie die tatsächlichen Tabellen verwenden. |
+| **Betroffene Module**             | AxDs, AxBCs und AIF                                                                                                                                                                                     |
 
 ### <a name="boms-without-bom-versions"></a>Stücklisten ohne Stücklistenversionen
 
@@ -385,9 +362,9 @@ Wurde der **Stücklistenversionen**-Konfigurationsschlüssel deaktiviert, so wur
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Verwenden eines Konfigurationsschlüssels, um die Skalierung von Stücklistenversionen in einer Cloudumgebung zu verhindern. |
-| Ersetzt durch eine andere Funktion? | Nein                                                                                      |
-| Betroffene Module             | Produktinformationsverwaltung, Lagerverwaltung                                    |
+| **Grund für Abschreibung**      | Verwenden eines Konfigurationsschlüssels, um die Skalierung von Stücklistenversionen in einer Cloudumgebung zu verhindern. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                                                                      |
+| **Betroffene Module**            | Produktinformationsverwaltung, Lagerverwaltung                                    |
 
 ### <a name="brazilian-bordero"></a>Brasilianer Bordero
 
@@ -395,9 +372,9 @@ Bestimmte Zahlungsmethode für brasilianische Unternehmen
 
 |                              |                                                                                                       |
 |------------------------------|-------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Unterstützung für die brasilianische Bordero-Zahlungsmethode wurde in der brasilianischen Version eingestellt. |
-| Ersetzt durch eine andere Funktion? | Nr.                                                                                                    |
-| Betroffene Module             | Kreditorenkonten                                                                                      |
+| **Grund für Abschreibung**       | Unterstützung für die brasilianische Bordero-Zahlungsmethode wurde in der brasilianischen Version eingestellt. |
+| **Ersetzt durch eine andere Funktion?** | Nr.                                                                                                    |
+| **Betroffene Module**             | Kreditorenkonten                                                                                      |
 
 ### <a name="brazilian-sintegra-statement"></a>Brasilianischer Sintegra-Auszug
 
@@ -405,9 +382,9 @@ Bundessteuerauszug für ICMS-Steuer
 
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Dieser Auszug gilt nicht mehr für einige brasilianische Bundesländer.                                                     |
-| Ersetzt durch eine andere Funktion? | Nr. Benutzer können das generische elektronische Berichtstool verwenden, um sofern erforderlich den Auszug für bestimmten Situationen zu konfigurieren. |
-| Betroffene Module             | Steuerbücher                                                                                                          |
+| **Grund für Abschreibung**       | Dieser Auszug gilt nicht mehr für einige brasilianische Bundesländer.                                                     |
+| **Ersetzt durch eine andere Funktion?** | Nr. Benutzer können das generische elektronische Berichtstool verwenden, um sofern erforderlich den Auszug für bestimmten Situationen zu konfigurieren. |
+| **Betroffene Module**             | Steuerbücher                                                                                                          |
 
 ### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brasilianischer SCAN Notfallmodus für NF-e
 
@@ -415,9 +392,9 @@ Bundessteuerauszug für ICMS-Steuer
 
 |                              |                                                                             |
 |------------------------------|-----------------------------------------------------------------------------|
-| Grund für Abschreibung       | Diese Notfallmethode gilt nicht mehr in allen brasilianischen Bundesländern |
-| Ersetzt durch eine andere Funktion? | Nr.                                                                          |
-| Betroffene Module             | Debitorenkonten                                                         |
+| **Grund für Abschreibung**       | Diese Notfallmethode gilt nicht mehr in allen brasilianischen Bundesländern |
+| **Ersetzt durch eine andere Funktion?** | Nr.                                                                          |
+| **Betroffene Module**             | Debitorenkonten                                                         |
 
 ### <a name="business-analyzer"></a>Business Analyzer
 
@@ -425,9 +402,9 @@ Diese mobile Anwendung ermöglicht dem Benutzer die Prüfung von wichtigen Gesch
 
 |                              |                                                                                                                                                               |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Funktion wurde durch eine andere Funktion ersetzt.                                                                                                      |
-| Ersetzt durch eine andere Funktion? | Das Inhaltspack "Finanzielle Leistung überwachen" für Microsoft Power BI umfasst entscheidende Finanzmetriken, die zuvor im Business Analyzer verfügbar waren. |
-| Betroffene Module             | Hauptbuch                                                                                                                                                |
+| **Grund für Abschreibung**       | Die Funktion wurde durch eine andere Funktion ersetzt.                                                                                                      |
+| **Ersetzt durch eine andere Funktion?** | Das Inhaltspack "Finanzielle Leistung überwachen" für Microsoft Power BI umfasst entscheidende Finanzmetriken, die zuvor im Business Analyzer verfügbar waren. |
+| **Betroffene Module**             | Hauptbuch                                                                                                                                                |
 
 ### <a name="business-statistics"></a>Geschäftsstatistik
 
@@ -435,25 +412,25 @@ Die Einrichtung von Geschäftsstatistikabfragen kann das Analysieren der Leistun
 
 |                              |                                                                                              |
 |------------------------------|----------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Ein veralteter Ansatz für Business Intelligence (BI), geringe Kundennutzung und ein begrenzter Funktionsumfang |
-| Ersetzt durch eine andere Funktion? | Neue BI-Lösung für die aktuelle Version von Dynamics AX                                      |
-| Betroffene Module             | Beschaffung, Kreditorenkonten, Vertrieb und Marketing, Debitorenkonten         |
+| **Grund für Abschreibung**       | Ein veralteter Ansatz für Business Intelligence (BI), geringe Kundennutzung und ein begrenzter Funktionsumfang |
+| **Ersetzt durch eine andere Funktion?** | Neue BI-Lösung für die aktuelle Version von Dynamics AX                                      |
+| **Betroffene Module**             | Beschaffung, Kreditorenkonten, Vertrieb und Marketing, Debitorenkonten         |
 
 ### <a name="change-document-date-function-in-invoice-approval-journal"></a>Funktion zum Ändern des Dokumentdatum in der Rechnungsgenehmigungserfassung
 
 |                              |                                                                         |
 |------------------------------|-------------------------------------------------------------------------|
-| Grund für Abschreibung       | Geringe Verwendung                                                               |
-| Ersetzt durch eine andere Funktion? | Ja. Das Dokumentdatum auf der gebuchten Kreditorenbuchung kann geändert werden. |
-| Betroffene Module             | Kreditorenkonten                                                        |
+| **Grund für Abschreibung**       | Geringe Verwendung                                                               |
+| **Ersetzt durch eine andere Funktion?** | Ja. Das Dokumentdatum auf der gebuchten Kreditorenbuchung kann geändert werden. |
+| **Betroffene Module**             | Kreditorenkonten                                                        |
 
 ### <a name="clieop03-payment-format-for-the-netherlands"></a>ClieOp03-Zahlungsformat für die Niederlande
 
 |                              |                                                                                                            |
 |------------------------------|------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Das Format ist nicht mehr in den Niederlanden anwendbar, da es durch die SEPA-Funktionen ersetzt wurde. |
-| Ersetzt durch eine andere Funktion? | SEPA-Zahlungsexport                                                                                       |
-| Betroffene Module             | Alle                                                                                                        |
+| **Grund für Abschreibung**       | Das Format ist nicht mehr in den Niederlanden anwendbar, da es durch die SEPA-Funktionen ersetzt wurde. |
+| **Ersetzt durch eine andere Funktion?** | SEPA-Zahlungsexport                                                                                       |
+| **Betroffene Module**             | Alle                                                                                                        |
 
 ### <a name="compliance-center"></a>Compliance Center
 
@@ -461,9 +438,9 @@ Das Compliance Center war eine Enterprise Portal-Website für die Verwaltung der
 
 |                              |                                                                                                                        |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Fehlender Einsatz durch die Kunden. Microsoft SharePoint umfasst die gleiche Fähigkeit, die im Compliance Center verfügbar war. |
-| Ersetzt durch eine andere Funktion? | Nein                                                                                                                     |
-| Betroffene Module             | Konformität und interne Kontrollen                                                                                       |
+| **Grund für Abschreibung**       | Fehlender Einsatz durch die Kunden. Microsoft SharePoint umfasst die gleiche Fähigkeit, die im Compliance Center verfügbar war. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                                                                                                     |
+| **Betroffene Module**             | Konformität und interne Kontrollen                                                                                       |
 
 ### <a name="connector-for-microsoft-dynamics"></a>Connector für Microsoft Dynamics
 
@@ -471,41 +448,41 @@ Dieses Tool wurde verwendet, um Schlüsseldaten von Microsoft Dynamics CRM mit M
 
 |                              |                                                          |
 |------------------------------|----------------------------------------------------------|
-| Grund für Abschreibung       | Die Funktion wurde durch eine andere Funktion ersetzt. |
-| Ersetzt durch eine andere Funktion? | Dynamics-Integrator                                      |
-| Betroffene Module             | Connector für Microsoft Dynamics                         |
+| **Grund für Abschreibung**       | Die Funktion wurde durch eine andere Funktion ersetzt. |
+| **Ersetzt durch eine andere Funktion?** | Dynamics-Integrator                                      |
+| **Betroffene Module**             | Connector für Microsoft Dynamics                         |
 
 ### <a name="container-unit-and-multi-dimension-on-hand"></a>Container-Einheit und mehrere Dimensionen am Lager
 
 |                              |                                                                                                                                                                 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Doppelte Funktionen                                                                                                                                         |
-| Ersetzt durch eine andere Funktion? | Ja. Seit AX 2012 ist diese Funktion durch die konsolidierte Chargenauftragsfunktion ersetzt worden. Dieser Funktionsumfang umfasst die konsolidierte verfügbare Ansicht. |
-| Betroffene Module             | Produktinformationsverwaltung, -Produktionssteuerung, Lagerverwaltung, Vertrieb und Marketing                                                                   |
+| **Grund für Abschreibung**       | Doppelte Funktionen                                                                                                                                         |
+| **Ersetzt durch eine andere Funktion?** | Ja. Seit AX 2012 ist diese Funktion durch die konsolidierte Chargenauftragsfunktion ersetzt worden. Dieser Funktionsumfang umfasst die konsolidierte verfügbare Ansicht. |
+| **Betroffene Module**             | Produktinformationsverwaltung, -Produktionssteuerung, Lagerverwaltung, Vertrieb und Marketing                                                                   |
 
 ### <a name="cue-group-metadata"></a>Cue-Group-Metadaten
 
 |                              |                                                                                                                                                                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Cue-Gruppen wurden verwendet, um eine oder mehrere Cues im Infoboxbereich anzuzeigen. Der Nutzen war beschränkt. Es gab außerdem Leistungsbedenken, da eine Datensatzändern in einem übergeordneten Formular eine Abfrage pro Cue aus der Cue-Gruppe verursacht hat. |
-| Ersetzt durch eine andere Funktion? | Nein                                                                                                                                                                                                                            |
-| Betroffene Module             | Alle                                                                                                                                                                                                                           |
+| **Grund für Abschreibung**       | Cue-Gruppen wurden verwendet, um eine oder mehrere Cues im Infoboxbereich anzuzeigen. Der Nutzen war beschränkt. Es gab außerdem Leistungsbedenken, da eine Datensatzändern in einem übergeordneten Formular eine Abfrage pro Cue aus der Cue-Gruppe verursacht hat. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                                                                                                                                                                                                            |
+| **Betroffene Module**             | Alle                                                                                                                                                                                                                           |
 
 ### <a name="cue-metadata"></a>Cue-Metadaten
 
 |                              |                                                                                                                                                                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Cue-Metadaten wurden auf das Zählen oder Summieren von Informationen beschränkt.                                                                                                                                                                                   |
-| Ersetzt durch eine andere Funktion? | Tile-Metadaten wurden für mehr Flexibilität bei der Modellierung eingeführt. So können z. B. aktuelle Nummern, Navigation und Key Performance Indicators (KPIs) modellieren. Count-Tile-Metadaten sind ein direkter Ersatz für Cue-Metadaten. |
-| Betroffene Module             | Alle                                                                                                                                                                                                                                     |
+| **Grund für Abschreibung**       | Cue-Metadaten wurden auf das Zählen oder Summieren von Informationen beschränkt.                                                                                                                                                                                   |
+| **Ersetzt durch eine andere Funktion?** | Tile-Metadaten wurden für mehr Flexibilität bei der Modellierung eingeführt. So können z. B. aktuelle Nummern, Navigation und Key Performance Indicators (KPIs) modellieren. Count-Tile-Metadaten sind ein direkter Ersatz für Cue-Metadaten. |
+| **Betroffene Module**             | Alle                                                                                                                                                                                                                                     |
 
 ### <a name="danish-check-format"></a>Scheckformat Dänemark
 
 |                              |                                                                                                                         |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Unterstützung für das dänische Scheckformatlayout ist eingestellt wurden, und der Bericht ist aus der DK-Lokalisierung entfernt worden. |
-| Ersetzt durch eine andere Funktion? | Nein                                                                                                                      |
-| Betroffene Module             | Alle                                                                                                                     |
+| **Grund für Abschreibung**       | Die Unterstützung für das dänische Scheckformatlayout ist eingestellt wurden, und der Bericht ist aus der DK-Lokalisierung entfernt worden. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                                                                                                      |
+| **Betroffene Module**             | Alle                                                                                                                     |
 
 ### <a name="data-partitions"></a>Datenpartitionen
 
@@ -513,34 +490,34 @@ Datenpartitionen enthalten eine logische Trennung von Daten in der Microsoft Dyn
 
 |   |   |
 |---|---|
-| Grund für Abschreibung       | Datenpartitionen wurden in Microsoft Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service(PaaS) Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Egal, ob eine Datenpartitionierung für Tochterunternehmen, mehrere Mandanten oder nur zur Skalierung benötigt wird, glauben wir, dass die Szenarien besser über mehrere Datenbanken oder mehrere Instanzen von Dynamics AX behandelt werden können. |
-| Ersetzt durch eine andere Funktion? | Datenpartitionen werden durch die Unterstützung mehrerer Datenbanken oder Instanzen von Dynamics AX in einer zukünftigen Version ersetzt.    |
-| Betroffene Module             | Alle  |
+| **Grund für Abschreibung**       | Datenpartitionen wurden in Microsoft Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service(PaaS) Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Egal, ob eine Datenpartitionierung für Tochterunternehmen, mehrere Mandanten oder nur zur Skalierung benötigt wird, glauben wir, dass die Szenarien besser über mehrere Datenbanken oder mehrere Instanzen von Dynamics AX behandelt werden können. |
+| **Ersetzt durch eine andere Funktion?** | Datenpartitionen werden durch die Unterstützung mehrerer Datenbanken oder Instanzen von Dynamics AX in einer zukünftigen Version ersetzt.    |
+| **Betroffene Module**             | Alle  |
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Datenbank- und Dateifreigabespeicher für Anhänge
 Microsoft Dynamics AX 2012 ließ die Speicherung von Anhängen in der Datenbank und in Dateifreigaben zu. Beide Optionen werden nicht mehr unterstützt.
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
-| Grund für Abschreibung       | Der Dateifreigabespeicher wird nicht mehr unterstützt, weil in der Cloud gehostete Umgebungen nicht mit lokalen Dateifreigaben kommunizieren können. Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt. Azure Blob-Speicher ist äquivalent zur Speicherung in der Datenbank, weil der Zugriff nur über Client-Formulare von Dynamics 365 for Finance and Operations möglich ist. Auf diese Weise entsteht der zusätzliche Vorteil, dass Speicher bereitgestellt wird, der sich nicht negativ auf die Leistung der Datenbank auswirkt. Blob-Speicher ist der Standardspeichermechanismus für die Dokumentenverwaltung und funktioniert unmittelbar. |
-| Ersetzt durch eine andere Funktion? | Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt.       |
-| Betroffene Module             | Alle                   |
+| **Grund für Abschreibung**       | Der Dateifreigabespeicher wird nicht mehr unterstützt, weil in der Cloud gehostete Umgebungen nicht mit lokalen Dateifreigaben kommunizieren können. Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt. Azure Blob-Speicher ist äquivalent zur Speicherung in der Datenbank, weil der Zugriff nur über Client-Formulare von Dynamics 365 for Finance and Operations möglich ist. Auf diese Weise entsteht der zusätzliche Vorteil, dass Speicher bereitgestellt wird, der sich nicht negativ auf die Leistung der Datenbank auswirkt. Blob-Speicher ist der Standardspeichermechanismus für die Dokumentenverwaltung und funktioniert unmittelbar. |
+| **Ersetzt durch eine andere Funktion?** | Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt.       |
+| **Betroffene Module**             | Alle                   |
 
 ### <a name="delimitation"></a>Trennung
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
-| Grund für Abschreibung       | Kein Verwendung der Funktionen gefunden. |
-| Ersetzt durch eine andere Funktion? | Nein                                     |
-| Betroffene Module             | Zeit und Anwesenheit                    |
+| **Grund für Abschreibung**       | Kein Verwendung der Funktionen gefunden. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                     |
+| **Betroffene Module**             | Zeit und Anwesenheit                    |
 
 ### <a name="desktop-client"></a>Desktopclient
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Der Dynamics AX-Client wurde neu gestaltet, um die Benutzererfahrung über mehrere Plattformen und Geräten zu verbessern.                      |
-| Ersetzt durch eine andere Funktion? | Der neue Webclient basiert auf den Desktop-Formularmetadaten und -Programmiermodell, die geändert wurden, um eine umfangreiche Internet-Plattform bereitzustellen. |
-| Betroffene Module             | Alle                                                                                                                                    |
+| **Grund für Abschreibung**       | Der Dynamics AX-Client wurde neu gestaltet, um die Benutzererfahrung über mehrere Plattformen und Geräten zu verbessern.                      |
+| **Ersetzt durch eine andere Funktion?** | Der neue Webclient basiert auf den Desktop-Formularmetadaten und -Programmiermodell, die geändert wurden, um eine umfangreiche Internet-Plattform bereitzustellen. |
+| **Betroffene Module**             | Alle                                                                                                                                    |
 
 ### <a name="direct-database-connection"></a>Direkte Datenbankverbindung
 
@@ -548,17 +525,17 @@ In Dynamics AX 2012 R3, konnte sich Retail Modern POS direkt mit dem Kanal DB in
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistung und der Sicherheitserweiterungen, die in Finance and Operations aufgetreten sind, führen diese Funktionen nun zu mehr Problemen, als sie lösen. |
-| Ersetzt durch eine andere Funktion? | Nr. Nur Standard Retail Server Kommunikation wird nun unterstützt.    |
-| Betroffene Module             | Kanal DB/Retail Modern POS                                    |
+| **Grund für Abschreibung**       | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistung und der Sicherheitserweiterungen, die in Finance and Operations aufgetreten sind, führen diese Funktionen nun zu mehr Problemen, als sie lösen. |
+| **Ersetzt durch eine andere Funktion?** | Nr. Nur Standard Retail Server Kommunikation wird nun unterstützt.    |
+| **Betroffene Module**             | Kanal DB/Retail Modern POS                                    |
 
 ### <a name="dutch-swift-mt940"></a>Niederländisches SWIFT MT940
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Anstelle der lokalisierten Funktionalität wird nun eine generische Funktion verwendet.                                                                                                                                                                 |
-| Ersetzt durch eine andere Funktion? | Ja, diese Funktion wurde durch erweiterte Bankabstimmungsfunktionen ersetzt. |
-| Betroffene Module             | Alle                                                                                                                                                                                                                                   |
+| **Grund für Abschreibung**       | Anstelle der lokalisierten Funktionalität wird nun eine generische Funktion verwendet.                                                                                                                                                                 |
+| **Ersetzt durch eine andere Funktion?** | Ja, diese Funktion wurde durch erweiterte Bankabstimmungsfunktionen ersetzt. |
+| **Betroffene Module**             | Alle                                                                                                                                                                                                                                   |
 
 ### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL für Deutschland)
 
@@ -566,33 +543,33 @@ Diese Funktionen stellten die eXtensible Business Reporting Language (XBRL)-Ausg
 
 |                              |                                                                                                                                                                        |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Fehlender Einsatz durch die Kunden.                                                                                                                                                 |
-| Ersetzt durch eine andere Funktion? | Nicht durch eine andere Funktion ersetzt. Es gibt aber mehrere spezielle XBRL-Pakete, die umfangreiche XBRL-Funktionen für den deutschen Markt bereitstellen. |
-| Betroffene Module             | Management Reporter                                                                                                                                                    |
+| **Grund für Abschreibung**       | Fehlender Einsatz durch die Kunden.                                                                                                                                                 |
+| **Ersetzt durch eine andere Funktion?** | Nicht durch eine andere Funktion ersetzt. Es gibt aber mehrere spezielle XBRL-Pakete, die umfangreiche XBRL-Funktionen für den deutschen Markt bereitstellen. |
+| **Betroffene Module**             | Management Reporter                                                                                                                                                    |
 
 ### <a name="enterprise-portal-client"></a>Enterprise Portal-Kunde
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Eine einzelne Clientplattform ist bereitgestellt worden.                                                                                            |
-| Ersetzt durch eine andere Funktion? | Der neue Webclient basiert auf den Desktop-Formularmetadaten und -Programmiermodell, die geändert wurden, um eine umfangreiche Internet-Plattform bereitzustellen. |
-| Betroffene Module             | Alle                                                                                                                                    |
+| **Grund für Abschreibung**       | Eine einzelne Clientplattform ist bereitgestellt worden.                                                                                            |
+| **Ersetzt durch eine andere Funktion?** | Der neue Webclient basiert auf den Desktop-Formularmetadaten und -Programmiermodell, die geändert wurden, um eine umfangreiche Internet-Plattform bereitzustellen. |
+| **Betroffene Module**             | Alle                                                                                                                                    |
 
 ### <a name="environmental-sustainability"></a>Umweltverträglichkeit
 
 |                              |                                                    |
 |------------------------------|----------------------------------------------------|
-| Grund für Abschreibung       | Geringe Kundennutzung und ein begrenzter Funktionsumfang.       |
-| Ersetzt durch eine andere Funktion? | Nein                                                 |
-| Betroffene Module             | Konformität und interne Kontrollen, Kreditorenkonten |
+| **Grund für Abschreibung**       | Geringe Kundennutzung und ein begrenzter Funktionsumfang.       |
+| **Ersetzt durch eine andere Funktion?** | Nein                                                 |
+| **Betroffene Module**             | Konformität und interne Kontrollen, Kreditorenkonten |
 
 ### <a name="form-activex-and-managed-host-controls"></a>ActiveX- und Managed Host-Steuerelemente in Formularen
 
 |                              |                                                                                                                                                                                               |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | ActiveX und die Managed Host-Steuerelemente basieren auf dem veralteten Desktopclient.                                                                                                             |
-| Ersetzt durch eine andere Funktion? | Das Framework für erweiterbare Steuerelemente basiert auf HTML, CSS und JavaScript und dient als Steuerelement in der Microsoft Visual Studio-Umgebung. |
-| Betroffene Module             | Alle                                                                                                                                                                                           |
+| **Grund für Abschreibung**       | ActiveX und die Managed Host-Steuerelemente basieren auf dem veralteten Desktopclient.                                                                                                             |
+| **Ersetzt durch eine andere Funktion?** | Das Framework für erweiterbare Steuerelemente basiert auf HTML, CSS und JavaScript und dient als Steuerelement in der Microsoft Visual Studio-Umgebung. |
+| **Betroffene Module**             | Alle                                                                                                                                                                                           |
 
 ### <a name="generate-prenotes-by-using-a-batch"></a>Generieren von Testtransaktionen als Stapelverarbeitung
 
@@ -600,41 +577,41 @@ Testtransaktionsgenerierung kann nicht mithilfe einer Charge verwendet werden. S
 
 |                              |                                                                                                        |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Es ist kein Formular vorhanden, um die resultierende Testtransaktionsdatei zu verwalten und anzuzeigen, wenn sie mithilfe einer Charge generiert wurde. |
-| Ersetzt durch eine andere Funktion? | Testtransaktionen können weiterhin generiert werden, und der Benutzer hat die Kontrolle über den Speicherort der Datei.   |
-| Betroffene Module             | Debitorenkonten, Kreditorenkonten, Bargeld- und Bankverwaltung                                        |
+| **Grund für Abschreibung**       | Es ist kein Formular vorhanden, um die resultierende Testtransaktionsdatei zu verwalten und anzuzeigen, wenn sie mithilfe einer Charge generiert wurde. |
+| **Ersetzt durch eine andere Funktion?** | Testtransaktionen können weiterhin generiert werden, und der Benutzer hat die Kontrolle über den Speicherort der Datei.   |
+| **Betroffene Module**             | Debitorenkonten, Kreditorenkonten, Bargeld- und Bankverwaltung                                        |
 
 ### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Deutscher DTAUS-Zahlungsexport und Kontoauszugsimport (Summen und Buchungen)
 
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Das Format ist nicht mehr in Deutschland anwendbar, da es durch die SEPA-Funktionen ersetzt wurde.                                                                                                                                                                 |
-| Ersetzt durch eine andere Funktion? | Ja, diese Funktionalität wurde durch SEPA-Zahlungsexport und erweiterte Bankabstimmungsfunktionen zum Importieren von Kontoauszügen ersetzt. |
-| Betroffene Module             | Alle                                                                                                                                                                                                                                                                                            |
+| **Grund für Abschreibung**       | Das Format ist nicht mehr in Deutschland anwendbar, da es durch die SEPA-Funktionen ersetzt wurde.                                                                                                                                                                 |
+| **Ersetzt durch eine andere Funktion?** | Ja, diese Funktionalität wurde durch SEPA-Zahlungsexport und erweiterte Bankabstimmungsfunktionen zum Importieren von Kontoauszügen ersetzt. |
+| **Betroffene Module**             | Alle                                                                                                                                                                                                                                                                                            |
 
 ### <a name="german-dtazv-payment-format"></a>Deutsches DTAZV-Zahlungsformat
 
 |                              |                                                                                                    |
 |------------------------------|----------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Das Format ist nicht mehr in Deutschland anwendbar, da es durch die SEPA-Funktionen ersetzt wurde. |
-| Ersetzt durch eine andere Funktion? | SEPA-Zahlungsexport                                                                               |
-| Betroffene Module             | Alle                                                                                                |
+| **Grund für Abschreibung**       | Das Format ist nicht mehr in Deutschland anwendbar, da es durch die SEPA-Funktionen ersetzt wurde. |
+| **Ersetzt durch eine andere Funktion?** | SEPA-Zahlungsexport                                                                               |
+| **Betroffene Module**             | Alle                                                                                                |
 
 ### <a name="german-mt940-import"></a>MT940 Import, deutsch
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Anstelle der lokalisierten Funktionalität wird nun eine generische Funktion verwendet.                                                                                                                                                                 |
-| Ersetzt durch eine andere Funktion? | Ja, diese Funktion wurde durch erweiterte Bankabstimmungsfunktionen ersetzt. |
-| Betroffene Module             | Alle                                                                                                                                                                                                                                   |
+| **Grund für Abschreibung**       | Anstelle der lokalisierten Funktionalität wird nun eine generische Funktion verwendet.                                                                                                                                                                 |
+| **Ersetzt durch eine andere Funktion?** | Ja, diese Funktion wurde durch erweiterte Bankabstimmungsfunktionen ersetzt. |
+| **Betroffene Module**             | Alle                                                                                                                                                                                                                                   |
 
 ### <a name="german-xml-eu-sales-list"></a>Deutsche XML EU Sales-Liste
 
 |                              |                                                                                                                                                                                    |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Das XML-Format für EU-Umsatzliste für Deutschland wird nicht mehr unterstützt. Nur das Format der Textdatei ELMA5 kann verwendet werden, um den Bericht zur EU-Umsatzliste der deutschen Steuerbehörde zu senden. |
-| Ersetzt durch eine andere Funktion? | Nein                                                                                                                                                                                 |
-| Betroffene Module             | USt.                                                                                                                                                                                |
+| **Grund für Abschreibung**       | Das XML-Format für EU-Umsatzliste für Deutschland wird nicht mehr unterstützt. Nur das Format der Textdatei ELMA5 kann verwendet werden, um den Bericht zur EU-Umsatzliste der deutschen Steuerbehörde zu senden. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                                                                                                                                                                 |
+| **Betroffene Module**             | USt.                                                                                                                                                                                |
 
 ### <a name="gl-ssrs-reports"></a>GL SSRS Berichte
 
@@ -642,17 +619,17 @@ Berichte mit den folgenden Menüoptionen wurden entfernt: **Zusammengefasste Zwi
 
 |                              |                                                                                                                                              |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Microsoft SQL Server Reporting Services (SSRS)-Finanzberichte wurden durch nach Management Reporter-Funktionen und -Standardberichte ersetzt. |
-| Ersetzt durch eine andere Funktion? | Management Reporter (**Finanzberichterstellung** in der aktuellen Version von Dynamics AX)                                                  |
-| Betroffene Module             | Hauptbuch                                                                                                                               |
+| **Grund für Abschreibung**       | Microsoft SQL Server Reporting Services (SSRS)-Finanzberichte wurden durch nach Management Reporter-Funktionen und -Standardberichte ersetzt. |
+| **Ersetzt durch eine andere Funktion?** | Management Reporter (**Finanzberichterstellung** in der aktuellen Version von Dynamics AX)                                                  |
+| **Betroffene Module**            | Hauptbuch                                                                                                                               |
 
 ### <a name="infopart-and-formpart-metadata"></a>InfoPart- und FormPart-Metadaten
 
 |                              |                                                                                                                                                                                                                                |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | InfoPart- und FormPart-Metadaten ermöglichen die Erstellung von Infoboxen für zwei verschiedene Clients.                                                                                                                                    |
-| Ersetzt durch eine andere Funktion? | InfoPart-Metadaten, die einen vereinfachten Formulardefinition darstellen, werden über ein Upgrade zu einem Formular konvertiert. FormPart-Metadaten, die ein Formular referenzieren, wird durch eine direktere Referenz ersetzt, die über ein Upgrade erstellt wird. |
-| Betroffene Module             | Alle                                                                                                                                                                                                                            |
+| **Grund für Abschreibung**       | InfoPart- und FormPart-Metadaten ermöglichen die Erstellung von Infoboxen für zwei verschiedene Clients.                                                                                                                                    |
+| **Ersetzt durch eine andere Funktion?** | InfoPart-Metadaten, die einen vereinfachten Formulardefinition darstellen, werden über ein Upgrade zu einem Formular konvertiert. FormPart-Metadaten, die ein Formular referenzieren, wird durch eine direktere Referenz ersetzt, die über ein Upgrade erstellt wird. |
+| **Betroffene Module**             | Alle                                                                                                                                                                                                                            |
 
 ### <a name="main-account-list-page"></a>Listenseite "Hauptkonten"
 
@@ -660,9 +637,9 @@ Eine Liste der Konten für die juristische Person und die zugeordneten Saldoinfo
 
 |                              |                                                                                                                                                                                    |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Saldoinformationen sind auf der Listenseite **Zwischenbilanz** nach Konto und Dimension verfügbar.                                                                                      |
-| Ersetzt durch eine andere Funktion? | **Hauptkonten** enthält die gleiche Liste aus Konten, die die **Hauptkonto** Listenseite enthielt. Die Rasteransicht in **Hauptkonten** zeigt auch eine kleinere, rasterähnliche Ansicht. |
-| Betroffene Module             | Hauptbuch                                                                                                                                                                     |
+| **Grund für Abschreibung**       | Saldoinformationen sind auf der Listenseite **Zwischenbilanz** nach Konto und Dimension verfügbar.                                                                                      |
+| **Ersetzt durch eine andere Funktion?** | **Hauptkonten** enthält die gleiche Liste aus Konten, die die **Hauptkonto** Listenseite enthielt. Die Rasteransicht in **Hauptkonten** zeigt auch eine kleinere, rasterähnliche Ansicht. |
+| **Betroffene Module**             | Hauptbuch                                                                                                                                                                     |
 
 ### <a name="malaysia-and-singapore-bank-cash-flow-report"></a>Malaysia- und Singapur-Bankcashflowbericht
 
@@ -670,9 +647,9 @@ Drucken eines Cashflowberichts mit Buchungen und Details des Zu- und Abflusses f
 
 |                              |                                                                         |
 |------------------------------|-------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die gleichen Informationen können aus der Anfragenbankbuchung eingeholt werden. |
-| Ersetzt durch eine andere Funktion? | Die Anfragenbanktransaktion.                                            |
-| Betroffene Module             | Bargeld- und Bankverwaltung                                                |
+| **Grund für Abschreibung**       | Die gleichen Informationen können aus der Anfragenbankbuchung eingeholt werden. |
+| **Ersetzt durch eine andere Funktion?** | Die Anfragenbanktransaktion.                                            |
+| **Betroffene Module**             | Bargeld- und Bankverwaltung                                                |
 
 ### <a name="mexican-cfd-electronic-invoice"></a>Mexikanische CFD (elektronische Rechnung).
 
@@ -680,9 +657,9 @@ Diese Funktion aktivierte die Generierung der mexikanischen elektronischen Rechn
 
 |                              |                                                                                                                                                                                                                                                                                                                                                                                                           |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Methode ist nicht mehr verfügbar. Die Generierung elektronischer Rechnungen über die CFD-Methode wurde von den Steuerbehörden als veraltet definiert und durch die Comprobante Fiscal Digital a través de Internet (CFDI)-Methode ersetzt, bei der die Signierung an einen Drittanbieter (PAC) delegiert wird. Der monatliche Bericht ist entfernt wurden. Eine Abfragemöglichkeit ermöglicht Benutzern die Abfrage von historischen Transaktionen. |
-| Ersetzt durch eine andere Funktion? | Nein                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Betroffene Module             | Debitoren, Projekt                                                                                                                                                                                                                                                                                                                                                                              |
+| **Grund für Abschreibung**       | Die Methode ist nicht mehr verfügbar. Die Generierung elektronischer Rechnungen über die CFD-Methode wurde von den Steuerbehörden als veraltet definiert und durch die Comprobante Fiscal Digital a través de Internet (CFDI)-Methode ersetzt, bei der die Signierung an einen Drittanbieter (PAC) delegiert wird. Der monatliche Bericht ist entfernt wurden. Eine Abfragemöglichkeit ermöglicht Benutzern die Abfrage von historischen Transaktionen. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Betroffene Module**             | Debitoren, Projekt                                                                                                                                                                                                                                                                                                                                                                              |
 
 ### <a name="mexico-realized-and-unrealized-vat"></a>Realisierte und nicht realisierter Mehrwertsteuer in Mexiko
 
@@ -690,17 +667,17 @@ Microsoft Dynamics AX 2012 verwaltete die nicht realisierte Mehrwertsteuer (VAT)
 
 |                              |                                                                                                                     |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Doppelte Funktionen                                                                                             |
-| Ersetzt durch eine andere Funktion? | Ja, diese Funktion wurde durch eine Standardmehrwertsteuerfunktion ersetzt, die von Core bereitgestellt wird. |
-| Betroffene Module             | USt.                                                                                                                 |
+| **Grund für Abschreibung**       | Doppelte Funktionen                                                                                             |
+| **Ersetzt durch eine andere Funktion?** | Ja, diese Funktion wurde durch eine Standardmehrwertsteuerfunktion ersetzt, die von Core bereitgestellt wird. |
+| **Betroffene Module**             | USt.                                                                                                                 |
 
 ### <a name="microsoft-outlook-integration"></a>Microsoft Outlook-Integration
 
 |                              |                                                                                |
 |------------------------------|--------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Diese Funktion wurde von der Microsoft Exchange Server-Integration ersetzt. |
-| Ersetzt durch eine andere Funktion? | Ja                                                                            |
-| Betroffene Module             | Vertrieb und Marketing                                                            |
+| **Grund für Abschreibung**       | Diese Funktion wurde von der Microsoft Exchange Server-Integration ersetzt. |
+| **Ersetzt durch eine andere Funktion?** | Ja                                                                            |
+| **Betroffene Module**             | Vertrieb und Marketing                                                            |
 
 ### <a name="payroll-information-in-human-resources"></a>Lohndaten in der Personalverwaltung
 
@@ -708,9 +685,9 @@ Personalverwaltung-Lohndaten
 
 |                              |                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Diese Funktion wurde durch zentrale Lohn- und Personalverwaltungsseiten ersetzt.                                                                                                                                                                                                                                              |
-| Ersetzt durch eine andere Funktion? | **Vergütungen**, **Einnahmen** und zugehörige Seiten, die zuvor in US-Lohn waren, sind umkonfiguriert worden und sind jetzt Teil der zentralen Personalverwaltungskonfiguration, um die externe Lohnverarbeitung besser zu unterstützen.. Diese Funktionen steht über den Konfigurationsschlüssel **Personalverwaltung 1** &gt; **Lohnabrechnung** bereit. |
-| Betroffene Module             | Personalverwaltung, Lohnabrechnung                                                                                                                                                                                                                                                                                                     |
+| **Grund für Abschreibung**       | Diese Funktion wurde durch zentrale Lohn- und Personalverwaltungsseiten ersetzt.                                                                                                                                                                                                                                              |
+| **Ersetzt durch eine andere Funktion?** | **Vergütungen**, **Einnahmen** und zugehörige Seiten, die zuvor in US-Lohn waren, sind umkonfiguriert worden und sind jetzt Teil der zentralen Personalverwaltungskonfiguration, um die externe Lohnverarbeitung besser zu unterstützen.. Diese Funktionen steht über den Konfigurationsschlüssel **Personalverwaltung 1** &gt; **Lohnabrechnung** bereit. |
+| **Betroffene Module**             | Personalverwaltung, Lohnabrechnung                                                                                                                                                                                                                                                                                                     |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Private Sperrung von Lager- und Lagerortverwaltungserfassungen
 
@@ -718,9 +695,9 @@ Die Bestands- und Lagerorterfassungen unterstützen nicht mehr die Möglichkeit,
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
-| Grund für Abschreibung       | Kein Verwendung der Funktionen gefunden. |
-| Ersetzt durch eine andere Funktion? | Nein                                     |
-| Betroffene Module             | Bestandsverwaltung                   |
+| **Grund für Abschreibung**       | Kein Verwendung der Funktionen gefunden. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                     |
+| **Betroffene Module**             | Bestandsverwaltung                   |
 
 ### <a name="product-builder"></a>Produktgenerator
 
@@ -728,9 +705,9 @@ Der Produktgenerator wurde zur dynamischen Konfiguration von Artikel aus einem A
 
 |                              |                                                                                                                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Der Produktgenerator zeigte X++-Code für die Endbenutzern an und wird in der aktuelle Version von Dynamics AX nicht unterstützt. Es ist entfernt wurden, um doppelten Wartungsaufwand durch Überschneidung einer beträchtlichen Codebases zu vermeiden. |
-| Ersetzt durch eine andere Funktion? | Produktkonfiguration                                                                                                                                                                                   |
-| Betroffene Module             | Produktinformationsverwaltung, Vertrieb und Marketing                                                                                                                                                     |
+| **Grund für Abschreibung**       | Der Produktgenerator zeigte X++-Code für die Endbenutzern an und wird in der aktuelle Version von Dynamics AX nicht unterstützt. Es ist entfernt wurden, um doppelten Wartungsaufwand durch Überschneidung einer beträchtlichen Codebases zu vermeiden. |
+| **Ersetzt durch eine andere Funktion?** | Produktkonfiguration                                                                                                                                                                                   |
+| **Betroffene Module**             | Produktinformationsverwaltung, Vertrieb und Marketing                                                                                                                                                     |
 
 ### <a name="rename-product-dimension"></a>Produktdimension umbenennen
 
@@ -738,9 +715,9 @@ Mit dieser Funktion können Sie den Namen einer der drei Standardproduktdimensio
 
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die aktuelle Version von Dynamics AX unterstützt Beschriftungsänderungen zur Laufzeit nicht. |
-| Ersetzt durch eine andere Funktion? | Nr.                                                                            |
-| Betroffene Module             | Produktinformationsverwaltung                                                |
+| **Grund für Abschreibung**       | Die aktuelle Version von Dynamics AX unterstützt Beschriftungsänderungen zur Laufzeit nicht. |
+| **Ersetzt durch eine andere Funktion?** | Nr.                                                                            |
+| **Betroffene Module**             | Produktinformationsverwaltung                                                |
 
 ### <a name="retail-server-connectivity-using-http"></a>Retail Serververbindung mithilfe von HTTP
 
@@ -748,33 +725,33 @@ In Dynamics AX 2012 R3, könnte der Retail Server mithilfe der HTTP-Kommunikatio
 
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Aufgrund der neuen Sicherheitsanforderungen wird nur noch die gesicherte Kommunikation mit TLS 1.2 (oder höher, wenn verfügbar) unterstützt. Der Self-Service-Installer konfiguriert automatisch den Computer für die Kommunikation. |
-| Ersetzt durch eine andere Funktion? | Nr. Nur Standard HTTPS-Kommunikation wird nun unterstützt.                                                                           |
-| Betroffene Module             | Retail Server                                                |
+| **Grund für Abschreibung**       | Aufgrund der neuen Sicherheitsanforderungen wird nur noch die gesicherte Kommunikation mit TLS 1.2 (oder höher, wenn verfügbar) unterstützt. Der Self-Service-Installer konfiguriert automatisch den Computer für die Kommunikation. |
+| **Ersetzt durch eine andere Funktion?** | Nr. Nur Standard HTTPS-Kommunikation wird nun unterstützt.                                                                           |
+| **Betroffene Module**             | Retail Server                                                |
 
 ### <a name="role-center-pages"></a>Rollencenterseiten
 
 |                              |                                                                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Rollencenter-Seiten basierten auf der veralteten Enterprise Portal-Plattform, die durch die neue Webclient-Plattform in der aktuellen Version von Dynamics AX ersetzt wurde. |
-| Ersetzt durch eine andere Funktion? | Das neue Arbeitsbereichs-Formularmuster bietet Benutzer ein prozesszentriertes Design, das den einfachen Zugriff auf häufig verwendete Aufgaben innerhalb dieses Prozesses bietet.                       |
-| Betroffene Module             | Alle                                                                                                                                                                      |
+| **Grund für Abschreibung**       | Die Rollencenter-Seiten basierten auf der veralteten Enterprise Portal-Plattform, die durch die neue Webclient-Plattform in der aktuellen Version von Dynamics AX ersetzt wurde. |
+| **Ersetzt durch eine andere Funktion?** | Das neue Arbeitsbereichs-Formularmuster bietet Benutzer ein prozesszentriertes Design, das den einfachen Zugriff auf häufig verwendete Aufgaben innerhalb dieses Prozesses bietet.                       |
+| **Betroffene Module**             | Alle                                                                                                                                                                      |
 
 ### <a name="sales-tax-jurisdictions"></a>Umsatzsteuerzuständigkeiten
 
 |                              |                                              |
 |------------------------------|----------------------------------------------|
-| Grund für Abschreibung       | Geringe Kundennutzung und ein begrenzter Funktionsumfang. |
-| Ersetzt durch eine andere Funktion? | Nein                                           |
-| Betroffene Module             | US-Mehrwertsteuer                                 |
+| **Grund für Abschreibung**       | Geringe Kundennutzung und ein begrenzter Funktionsumfang. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                           |
+| **Betroffene Module**             | US-Mehrwertsteuer                                 |
 
 ### <a name="shipping-carrier-interface"></a>Versandspediteurschnittstelle
 
 |                              |                                                                                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Doppelte Funktionen                                                                                                                         |
-| Ersetzt durch eine andere Funktion? | Ja, diese Funktion wurde teilweise ersetzt durch die Transportverwaltung, wurde aber noch nicht durch die grundlegende Lagerortverwaltung (WMS I) ersetzt. |
-| Betroffene Module             | Vertrieb und Marketing, Bestandsverwaltung                                                                                                       |
+| **Grund für Abschreibung**       | Doppelte Funktionen                                                                                                                         |
+| **Ersetzt durch eine andere Funktion?** | Ja, diese Funktion wurde teilweise ersetzt durch die Transportverwaltung, wurde aber noch nicht durch die grundlegende Lagerortverwaltung (WMS I) ersetzt. |
+| **Betroffene Module**             | Vertrieb und Marketing, Bestandsverwaltung                                                                                                       |
 
 ### <a name="sites-services"></a>Sites Services
 
@@ -782,33 +759,33 @@ Sites Services lassen Sie Websites erstellen, die Ihre Geschäftsprozesse mit de
 
 |                              |                                                                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Microsoft Azure-Infrastruktur, die durch Dynamics AX verwendet wird, hat neue Funktionen, die stattdessen verwendet werden können (beispielsweise Azure-Sites). |
-| Ersetzt durch eine andere Funktion? | Nein                                                                                                                                       |
-| Betroffene Module             | Personalrekrutierung, Fallverwaltung, Angebotsanforderungen, Kreditorenregistrierung                                                                  |
+| **Grund für Abschreibung**       | Die Microsoft Azure-Infrastruktur, die durch Dynamics AX verwendet wird, hat neue Funktionen, die stattdessen verwendet werden können (beispielsweise Azure-Sites). |
+| **Ersetzt durch eine andere Funktion?** | Nein                                                                                                                                       |
+| **Betroffene Module**             | Personalrekrutierung, Fallverwaltung, Angebotsanforderungen, Kreditorenregistrierung                                                                  |
 
 ### <a name="ssas-demand-forecasting-strategy"></a>SSAS Bedarfsplanungsdienste
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Das Design der Funktion kann nicht von der neuen Cloudarchitektur unterstützt werden. |
-| Ersetzt durch eine andere Funktion? | Azure Machine Learning Bedarfsplanungsstrategie                           |
-| Betroffene Module             | Planung                                                                     |
+| **Grund für Abschreibung**       | Das Design der Funktion kann nicht von der neuen Cloudarchitektur unterstützt werden. |
+| **Ersetzt durch eine andere Funktion?** | Azure Machine Learning Bedarfsplanungsstrategie                           |
+| **Betroffene Module**             | Planung                                                                     |
 
 ### <a name="travel-requisitions"></a>Reiseanforderungen
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
-| Grund für Abschreibung       | Geringe Verwendung und die meisten Funktionen waren im Enterprise Portal vorhanden. |
-| Ersetzt durch eine andere Funktion? | Nein                                                              |
-| Betroffene Module             | Spesenverwaltung                                              |
+| **Grund für Abschreibung**       | Geringe Verwendung und die meisten Funktionen waren im Enterprise Portal vorhanden. |
+| **Ersetzt durch eine andere Funktion?** | Nein                                                              |
+| **Betroffene Module**             | Spesenverwaltung                                              |
 
 ### <a name="vendor-invoice-pool-excluding-posting-details"></a>Kreditorenrechnungspool ohne Buchungsdetails
 
 |                              |                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Geringe Verwendung. Diese Funktion wurde durch die Rechnungserfassung ersetzt, die Workflowfunktionen hat. |
-| Ersetzt durch eine andere Funktion? | Workflowfunktionalitäten der Rechnungserfassung                                                           |
-| Betroffene Module             | Kreditorenkonten                                                                                        |
+| **Grund für Abschreibung**       | Geringe Verwendung. Diese Funktion wurde durch die Rechnungserfassung ersetzt, die Workflowfunktionen hat. |
+| **Ersetzt durch eine andere Funktion?** | Workflowfunktionalitäten der Rechnungserfassung                                                           |
+| **Betroffene Module**             | Kreditorenkonten                                                                                        |
 
 ### <a name="virtual-company-accounts"></a>Virtuelle Unternehmenskonten
 
@@ -821,7 +798,7 @@ Die virtuelle Unternehmensfunktion wird nicht mehr in Dynamics AX unterstützt. 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Grund für Abschreibung</td>
+<td><b>Grund für Abschreibung</b></td>
 <td><ul>
 <li>Virtuelle Unternehmen müssen eingerichtet werden, bevor Daten in Tabellen gespeichert werden. Das nachträgliche Einpassen von virtuellen Unternehmen in eine vorhandene Implementierung ist sehr schwierig.</li>
 <li>Da in der aktuellen Version von Microsoft Dynamics AX eine starke Datennormalisierung vorgenommen wurde, ist es sehr schwierig zu wissen, was zu den Tabellensammlungen hinzugefügt werden muss. Beispielsweise ist es schwierig, zu wissen, welche Tabellen freigegeben werden sollen. Alle Tabellen die auf Tabellen verweisen, die in einem virtuellen Unternehmen sind, müssen ebenfalls hinzugefügt werden. Die Tabellennormalisierung bedeutet, dass auch einfache Masterdaten, die auf eine Vielzahl von Tabellen verteilt sind, Teil des virtuellen Unternehmens sein müssen. Jeder Fehler, der hier auftritt, verursacht funktionale Probleme.</li>
@@ -829,11 +806,11 @@ Die virtuelle Unternehmensfunktion wird nicht mehr in Dynamics AX unterstützt. 
 </ul></td>
 </tr>
 <tr class="even">
-<td>Ersetzt durch eine andere Funktion?</td>
+<td><b>Ersetzt durch eine andere Funktion?</b></td>
 <td>Globale Tabellen können verwendet werden, um Tabellen für alle Unternehmen verfügbar zu machen. Zurzeit besteht kein Ersatz.</td>
 </tr>
 <tr class="odd">
-<td>Betroffene Module</td>
+<td><b>Betroffene Module</b></td>
 <td>Nicht zutreffend</td>
 </tr>
 </tbody>
@@ -843,9 +820,9 @@ Die virtuelle Unternehmensfunktion wird nicht mehr in Dynamics AX unterstützt. 
 
 |                              |                                                                                                                                                                                                                                                                                                             |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Lösung Lagerortverwaltung II (WMS II), die im Modul **Inventurverwaltung** verfügbar war, dupliziert die Funktionalität, die im Modul **Lagerortverwaltung** enthalten ist, die in Microsoft Dynamics AX 2012 R3 enthalten war.                                                                         |
-| Ersetzt durch eine andere Funktion? | Das **Lagerortverwaltungsmodul**, das in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 und Microsoft Dynamics AX 2012 R3 CU9 freigegeben wurde, ersetzt die Funktionen der Lagerortverwaltung II. Das neue Modul hat fortschrittlichere Funktionen sowie flexiblere Lagerortverwaltungsprozesse als jene, die in den Funktionen der Lagerortverwaltung II angeboten werden. |
-| Betroffene Module             | Bestandsverwaltung, Verkauf und Marketing, Beschaffung                                                                                                                                                                                                                                         |
+| **Grund für Abschreibung**       | Die Lösung Lagerortverwaltung II (WMS II), die im Modul **Inventurverwaltung** verfügbar war, dupliziert die Funktionalität, die im Modul **Lagerortverwaltung** enthalten ist, die in Microsoft Dynamics AX 2012 R3 enthalten war.                                                                         |
+| **Ersetzt durch eine andere Funktion?** | Das **Lagerortverwaltungsmodul**, das in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 und Microsoft Dynamics AX 2012 R3 CU9 freigegeben wurde, ersetzt die Funktionen der Lagerortverwaltung II. Das neue Modul hat fortschrittlichere Funktionen sowie flexiblere Lagerortverwaltungsprozesse als jene, die in den Funktionen der Lagerortverwaltung II angeboten werden. |
+| **Betroffene Module**             | Bestandsverwaltung, Verkauf und Marketing, Beschaffung                                                                                                                                                                                                                                         |
 
 ### <a name="worker-reminders-in-human-resources"></a>Erinnerungen für Arbeitskräfte in der Personalverwaltung
 
@@ -853,24 +830,24 @@ Personalverwaltung-Lohndaten
 
 |                              |                 |
 |------------------------------|-----------------|
-| Grund für Abschreibung       | Geringe Verwendung       |
-| Ersetzt durch eine andere Funktion? | Nein              |
-| Betroffene Module             | Personalverwaltung |
+| **Grund für Abschreibung**       | Geringe Verwendung       |
+| **Ersetzt durch eine andere Funktion?** | Nein              |
+| **Betroffene Module**             | Personalverwaltung |
 
 ### <a name="workplanner"></a>Arbeitsplanung
 
 |                              |                                                                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Geringe Verwendung                                                                                                                                                            |
-| Ersetzt durch eine andere Funktion? | Nein, aber die Seite **Profilbeziehung**, die von der Seite **Profilgruppen** geöffnet wird, unterstützt das gleiche Geschäftsszenario wie die veraltete Seite **Arbeitsplanung**. |
-| Betroffene Module             | Zeit und Anwesenheit                                                                                                                                                  |
+| **Grund für Abschreibung**       | Geringe Verwendung                                                                                                                                                            |
+| **Ersetzt durch eine andere Funktion?** | Nein, aber die Seite **Profilbeziehung**, die von der Seite **Profilgruppen** geöffnet wird, unterstützt das gleiche Geschäftsszenario wie die veraltete Seite **Arbeitsplanung**. |
+| **Betroffene Module**             | Zeit und Anwesenheit                                                                                                                                                  |
 
 ### <a name="x-financial-statements"></a>X++ Finanzaufstellungen
 
 |                              |                                                                                             |
 |------------------------------|---------------------------------------------------------------------------------------------|
-| Grund für Abschreibung       | Die Funktion wurde durch eine andere Funktion ersetzt.                                    |
-| Ersetzt durch eine andere Funktion? | Management Reporter (**Finanzberichterstellung** in der aktuellen Version von Dynamics AX) |
-| Betroffene Module             | Hauptbuch                                                                              |
+| **Grund für Abschreibung**       | Die Funktion wurde durch eine andere Funktion ersetzt.                                    |
+| **Ersetzt durch eine andere Funktion?** | Management Reporter (**Finanzberichterstellung** in der aktuellen Version von Dynamics AX) |
+| **Betroffene Module**             | Hauptbuch                                                                              |
 
 

@@ -18,12 +18,11 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: d80dea89db1fbe270b96063f3818ec3ac95239c8
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 83899969255a9b771fc5e62e66e3c5ffdca0296e
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -105,11 +104,11 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 2.  Wählen sie **Zeiterfassung** Die Kalendertagen der aktuellen Woche werden angezeigt.
 3.  Für ein ausgewähltes Datum wählen Sie **Aktivitäten** &gt; **Neuer Eintrag** aus.
 4.  Geben Sie die Anzahl der Stunden ein.
-5.  Wählen Sie das Projekt für die Zeiterfassung aus. Sie sehen eine Liste der Projekte, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Sie unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Wählen Sie das Projekt für die Zeiterfassung aus. Sie sehen eine Liste der Projekte, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Sie unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 6.  Wenn Ihr Projekt nicht in der Liste ist, wählen Sie **Suche** aus. Suchen Sie nach Name oder Wechseln Sie zur Suche nach Projektnamen oder Debitor.
-7.  Wählen Sie eine Kategorie. Sie sehen eine Liste der Kategorien, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Sie unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Wählen Sie eine Kategorie. Sie sehen eine Liste der Kategorien, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Sie unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 8.  Wenn Ihre Kategorie nicht in der Liste ist, wählen Sie **Suche** aus. Suche nach Kategorie oder nach Kategorienamen.
-9.  Wählen Sie eine Aktivität aus. Sie sehen eine Liste der Aktivitäten, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Sie unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Wählen Sie eine Aktivität aus. Sie sehen eine Liste der Aktivitäten, die in der App zur Offline-Nutzung geladen werden. Standardmäßig sind 50 Artikel geladen, aber ein Entwickler kann diese Nummer ändern. Weitere Informationen finden Sie unter [Mobile Plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 10. Wenn Ihre Aktivität nicht in der Liste ist, wählen Sie **Suche** aus. Suche nach Aktivitätennummern oder nach Kostenträger.
 
 11. Positionseigenschaft auswählen.

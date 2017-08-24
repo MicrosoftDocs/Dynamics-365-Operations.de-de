@@ -16,12 +16,12 @@ ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
-ms.search.validFrom: 2017-02-28T00:00:00.000Z
+ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
-ms.openlocfilehash: 8674a237878d4358c7f9ce4d4dfcace302536063
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: 46a77f2757bee9f688d8c0d23f15cd7eb27ebcb3
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -113,11 +113,8 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <tr class="even">
 <td>4</td>
 <td>Entwickler oder unabhängiger Softwarehersteller (ISV)</td>
-<td>Nutzen Sie das mobile Framework, um benutzerdefinierte mobile Arbeitsbereiche zu erstellen.</td>
-<td><ul>
-<li><a href="mobile-platform.md">Mobiles Framework</a></li>
-<li><a href="mobile-workspace-xpp-apis.md">Arbeitsbereich-X++-APIs</a></li>
-</ul></td>
+<td>Nutzen Sie die mobile Plattform, um benutzerdefinierte mobile Arbeitsbereiche zu erstellen.</td>
+<td><a href="platform/mobile-platform-home-page.md">Mobile Plattform</a></td>
 </tr>
 <tr class="odd">
 <td>5</td>
@@ -135,14 +132,14 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <td>7</td>
 <td>Systemadministrator</td>
 <td>Veröffentlichen Sie die benutzerdefinierten mobilen Arbeitsbereiche, die von ISV zur Verfügung gestellt werden.</td>
-<td><a href="publish-mobile-workspace.md">Mobilen Arbeitsbereich veröffentlichen</a></td>
+<td><a href="publish-mobile-workspace.md">Einen mobilen Arbeitsbereich veröffentlichen</a></td>
 </tr>
 <tr class="even">
 <td>8</td>
 <td>Benutzer</td>
 <td>Laden Sie die mobile App herunter, und installieren Sie diese.</td>
 <td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">Für Android-Smartphones</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">Für Androide-Smartphones</a></li>
 <li><a href="https://go.microsoft.com/fwlink/?linkid=850663">Für iPhones</a></li></ul>
 </td>
 </tr>

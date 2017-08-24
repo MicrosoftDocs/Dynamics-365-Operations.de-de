@@ -3,7 +3,7 @@ title: Import von ISO20022-Dateien
 description: Dieses Thema beschreibt den Import von Zahlungsdateien in den Formaten ISO 20022 camt.054 und pain.002 in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition.
 author: neserovleo
 manager: AnnBe
-ms.date: 05/25/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,13 +13,13 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 ms.author: v-lenest
-ms.search.validFrom: 2017-06-01T00:00:00.000Z
+ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 48e280bf0a6c5db237bd389fe448c9d698d3ae12
-ms.openlocfilehash: acf6ed5f503d77f372d802a51a71cec062c2b24b
+ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
+ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
 ms.contentlocale: de-de
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 07/31/2017
 
 ---
 
@@ -105,4 +105,29 @@ Wenn Sie die camt.054-Datei importieren, sollten Sie die folgenden zusätzlichen
 - **Abgleichstransaktionen** – Setzen Sie diese Option auf **Ja**, wenn importierte Zuliefererzahlungen mit Rechnungen im System abgeglichen werden müssen.
 
 Die importierten Informationen können auf der Seite **Zahlungstransfers** angezeigt werden. 
+
+## <a name="additional-details"></a>Zusätzliche Details
+
+Wenn Sie eine Formatkonfiguration in LCS importieren, importieren Sie die gesamte Konfigurationsstruktur, was bedeutet, dass Varianten«» der Modell- und Modellzuordnung enthalten sind. Im Zahlungsmodell ab Version 8 werden die Zuordnungen in separaten ER-Konfigurationen in der Lösungsstruktur (Zahlungsmodellzuordnung 1611, Zahlungsmodell zum Ziel ISO20022, usw.). Es gibt viele verschiedene Zahlungsformate unter einem Modell (Zahlungsmodell) und getrennte  Zuordnungshandhabung ist zentral für eine einfache Lösungsverwaltung. Hierzu nehmen Sie beispielsweise dieses Szenarios: Sie nutzen ISO20022 Zahlungen, um Banküberweisungsdateien zu generieren und dann importieren Sie die Rückgabemeldungen von der Bank. In diesem Szenario sollten Sie die folgenden Einstellungen nutzen:
+
+ - **Zahlungsmodell**
+ - **Zahlungsmodellzuordnung 1611** – Diese Zuordnung wird verwendet, um die Exportdatei zu generieren
+ - **Zahlungsmodellzuordnung an das Ziel ISO20022** – Diese Konfiguration enthält alle Zuordnungen, die verwendet werden, um die Daten ("zum Ziel" Zuordnungsrichtung) zu importieren
+ - **ISO20022 Überweisung** – Diese Konfiguration enthält eine Formatkomponente, die zuständig ist für die Exportdateierstellung (pain.001) basierend auf der Zahlungsmodellzuordnung 1611, sowie als Format um Zuordnungskomponenten zu modellieren, die zusammen mit dem Zahlungsmodell verwendet werden zum Ziel ISO20022, um exportierte Zahlungen im System für Importzwecke zu erfassen (Import in technische Tabelle CustVendProcessedPayments)
+ - **ISO20022 Banküberweisung (CER)**, wenn CER der Landerweiterung entspricht - abgeleitetes Format in ISO20022 Banküberweisung mit derselben Struktur und mit bestimmten landesspezifischen Unterschieden
+ - **Pain.002** – Dieses Format wird zusammen mit dem Zahlungsmodell verwendet, das sich auf das ISO20022 Ziel bezieht, um die Datei pain.002 in Kreditorenzahlungsübergangserfassung zu importieren
+ - **Camo.054** – Dieses Format wird zusammen mit dem Zahlungsmodell verwendet, das sich auf das ISO20022 Ziel bezieht, um die Datei camt.054 in Kreditorenzahlungsübergangserfassung zu importieren Dieselbe Formatkonfiguration wird in den Debitorenzahlungsimportfunktionen verwendet, aber unterschiedliche Zuordnung wird im Zahlungsmodell verwendet, das zur Konfiguration des Ziels ISO20022 bezieht.
+
+Weitere Informationen über die elektronische Berichterstattung finden Sie unter[Elektronischer Berichterstellungsüberblick](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+- [Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
+- [ISO20022-Banküberweisungskonfiguration importieren](./tasks/import-iso20022-credit-transfer-configuration.md)
+- [ISO20022-Direktbelastungskonfiguration importieren](./tasks/import-iso20022-direct-debit-configuration.md)
+- [Unternehmens-Bankkonten für ISO20022-Überweisungen einrichten](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
+- [Unternehmens-Bankkonten für ISO20022-Lastschriften einrichten](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
+- [Debitoren und Debitoren-Bankkonten für ISO20022-Lastschriften einrichten](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
+- [Zahlungsmethode für ISO20022-Kreditübertragung einrichten](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
+- [Zahlungsmethode für ISO20022-Direktbelastung einrichten](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Kreditoren und Kreditorenbankkonten für ISO20022-Überweisungen einrichten](./tasks/set-up-vendor-iso20022-credit-transfers.md)
 

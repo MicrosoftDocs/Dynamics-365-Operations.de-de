@@ -3,7 +3,7 @@ title: Konfigurieren einer manuellen Entscheidung in einem Workflow
 description: "Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Aufgabe konfigurieren können."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -165,6 +165,7 @@ Wenn ein Benutzer die manuelle Aufgabe nicht innerhalb der vorgesehenen Zeit aus
 
 1.  Klicken Sie im linken Bereich auf **Eskalation**.
 2.  Aktivieren Sie das Kontrollkästchen **Eskalationspfad verwenden**, um einen Eskalationspfad zu erstellen. Die Aufgabe wird automatisch den im Eskalationspfad aufgeführten Benutzern zugewiesen. Die folgende Tabelle stellt z. B. einen Eskalationspfad dar.
+
     | Sequenz | Eskalationspfad      |
     |----------|----------------------|
     | 1        | Zuweisen zu: Doris     |
@@ -318,7 +319,9 @@ Sie können Benachrichtigungen an Personen senden, wenn eine manuelle Aufgabe de
 8.  Wiederholen Sie die Schritte 3 bis 7 für jedes in Schritt 2 ausgewählte Ereignis.
 
 ## <a name="set-a-time-limit"></a>Festlegen einer Zeitgrenze
-Gehen Sie folgendermaßen vor, wenn die manuelle Aufgabe in einer bestimmten Zeit abgeschlossen werden muss. **Hinweis:** Die hier ausgewählten Optionen setzen die Optionen außer Kraft, die Sie in den Bereichen **Zuweisung** und **Eskalation** der Seite auswählen.
+Gehen Sie folgendermaßen vor, wenn die manuelle Aufgabe in einer bestimmten Zeit abgeschlossen werden muss. 
+
+**Hinweis:** Die hier ausgewählten Optionen setzen die Optionen außer Kraft, die Sie in den Bereichen **Zuweisung** und **Eskalation** der Seite auswählen.
 
 1.  Klicken Sie im linken Bereich auf **Erweiterte Einstellungen**.
 2.  Aktivieren Sie das Kontrollkästchen **Zeitgrenze für das Workflowelement festlegen**.

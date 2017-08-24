@@ -1,9 +1,9 @@
 ---
 title: Haben und Inkassi in Debitoren
 description: "Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht auf der Seite \"Inkassi\" in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite \"Debitoren\"."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 282084b9d4e63795ec475690e5b22e06c23bb704
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -90,6 +89,8 @@ Sie können ganze Zinsrechnungen oder mit Zinsrechnungen zusammenhängende Gebü
 
 Diese Regulierungen wirken sich nur auf Zinsrechnungen und die darin enthaltenen Zinsen und Gebühren aus. Verwenden Sie die Schritte im Abschnitt "Erstellen Sie Abschreibungsbuchungen in einem Schritt", um alle Gebühren abzuschreiben, die ein Debitor schuldet.
 
+Weitere Informationen finden unter [Erstellen Sie einen Zinscode mit einem Bereich](tasks/create-interest-code-range.md) und [Verarbeiten Sie Zinsen](tasks/process-interest.md). 
+
 ## <a name="create-writeoff-transactions"></a>Abschreibungsbuchungen erstellen
 Sie können uneinbringliche Außenstände abschreiben, indem Sie im Formular "Inkassi" auf "Abschreiben" klicken, sowie auf den Listenseiten "Saldenrückblick" und "Offene Debitorenrechnungen". 
 
@@ -100,7 +101,10 @@ Wenn Sie Buchungen für einen Debitor abschreiben, werden alle Buchungen für de
 -   Der dritte Typ der Erfassungsposition enthält die Abschreibungsinformationen für Mehrwertsteuern für das Sachkonto. Diese Erfassungsposition wird nur erstellt, wenn die Umschalttaste "Separate Mehrwertsteuer" auf der Seite "Debitorenparameter" ausgewählt wird. Wenn die markierten Buchungen mehrere Kombinationen aus Mehrwertsteuerkonto, Dimensionen und Mehrwertsteuercode beinhalten, wird für jede Kombination eine gesonderte Erfassungsposition erstellt.
 
 Die Abschreibungsbuchung wird in der Buchungswährung erstellt.
-Verarbeiten von Zahlungen ohne ausreichende Deckung (NSF)  
+
+Weitere Informationen finden Sie unter [Erstellen Sie eine Tilgungserfassung für einen Debitor](tasks/create-write-off-journal-customer.md).
+
+<a name="process-not-sufficient-funds-nsf-payments"></a>Verarbeiten von Zahlungen ohne ausreichende Deckung (NSF)  
 --------------------------------------------
 
 Sie können NSF-Zahlungen verarbeiten, indem Sie auf der Seite "Inkassi" auf "NSF-Zahlung" klicken. Wenn Sie auf diese Schaltfläche klicken, wird die Zahlung storniert. Falls für den Debitor eine NSF-Gebühr anfällt, wird in der Zahlungserfassung eine Belastungsbuchung erstellt. Der Betrag der Gebühr hängt von den Einstellungen für die automatischen Belastungen ab. Die für NSF-Zahlungen geltenden automatischen Belastungen werden durch die Belastungsgruppe angegeben, die auf der Seite "Bankkonten" für das jeweilige Bankkonto ausgewählt wird.

@@ -1,9 +1,9 @@
 ---
 title: Kreditoren konfigurieren
 description: "In diesem Artikel werden die Seiten beschrieben, die Sie verwenden, um die grundlegenden und optionalen Funktionen für Kreditorenkonten in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations einzurichten. Er beschreibt zudem die Einrichtungsschritte, die Sie durchführen müssen, bevor Sie damit beginnen, die Kreditoren einzurichten."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2a61cb86a4f2cfc6d701445c139e22df0db44f8c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 9b29fec7fadbb1ac699f1144f011df1bfd2f511a
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -47,7 +46,7 @@ Die folgenden Einstellungen müssen abgeschlossen werden, bevor Sie Kreditoren e
 ## <a name="setup-pages-for-accounts-payable"></a>Seiten für Kreditorenkonten einrichten
 
 Verwenden Sie die folgenden Seiten, um die grundlegenden Funktionen von Kreditoren für jede juristische Person einzurichten. Die Seiten sind in der empfohlenen Einrichtungsreihenfolge aufgeführt. Erstellen Sie aus den ersten erstellten Datensätzen Vorlagen, um das Verfahren zu erleichtern. Eine Vorlage umfasst normalerweise Werte in einer Vielzahl von Feldern, die die Funktionen widerspiegeln, die die Organisation für einen bestimmten Kreditorentyp implementieren möchte.
-1.  Legen Sie auf der Seite "Zahlungsbedingungen", die Zahlungsbedingungen fest, die Sie Aufträgen, Bestellungen, Debitoren und Kreditoren zuweisen wollen und die die Fälligkeitsdaten bestimmen.
+1.  Legen Sie auf der Seite "Zahlungsbedingungen", die Zahlungsbedingungen fest, die Sie Aufträgen, Bestellungen, Debitoren und Kreditoren zuweisen wollen und die die Fälligkeitsdaten bestimmen. Weitere Informationen finden Sie unter [Kreditorenzahlungsübersicht definieren](tasks/define-vendor-payment-fees.md).
 2.  Erstellen und pflegen Sie im Formular "Zahlungsmethoden" Informationen zu der Art, wie die Organisation ihre Kreditoren bezahlt.
 3.  Erstellen und pflegen Sie im Formular "Kreditorengruppen", Kreditorengruppen, die wichtige Parameter für Buchung, Zahlung und Ausgleich, die Berichterstellung und Planung gemeinsam haben.
 4.  Definieren Sie auf der Seite "Debitorenbuchungsprofile", wie Kreditorenbuchungen im Hauptbuch gebucht werden.

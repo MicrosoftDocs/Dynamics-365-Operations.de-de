@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 6a535b5f1192b7c27383cb8ece53f76a9c76f047
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -52,7 +51,7 @@ Microsoft Dynamics 365 for Finance and Operations unterstützt den vollständige
 </tr>
 <tr class="even">
 <td>Erfassen und Buchen eines vordatierten Schecks für einen Kreditor</td>
-<td>Erfassung eines vordatierten Schecks, bevor der Scheck an einen Kreditor ausgestellt wird. Wenn die Zahlung gebucht wird, werden die die Verbindlichkeiten dem Kreditor gegenüber erkannt, doch der Betrag wurde dem Bankkonto noch nicht gutgeschrieben. Stattdessen wird ein Verrechnungskonto für diesen Zweck verwendet.</td>
+<td>Erfassung eines vordatierten Schecks, bevor der Scheck an einen Kreditor ausgestellt wird. Wenn die Zahlung gebucht wird, werden die die Verbindlichkeiten dem Kreditor gegenüber erkannt, doch der Betrag wurde dem Bankkonto noch nicht gutgeschrieben. Stattdessen wird ein Verrechnungskonto für diesen Zweck verwendet. </td>
 </tr>
 <tr class="odd">
 <td>Erfassen und Buchen eines vordatierten Schecks von einem Debitor</td>
@@ -87,6 +86,17 @@ Wenn Ihr Originalscheck an einen Händler oder von einem Kunden verloren ging od
 
 
 
+Weitere Informationen finden Sie in folgenden Themen:
+
+[Vordatierte Schecks einrichten](tasks/set-up-postdated-checks.md)
+
+[Einen vordatierten Scheck für einen Debitor erfassen und buchen](tasks/register-post-postdated-check-customer.md)
+
+[Einen vordatierten Scheck von einem Debitor ausgleichen](tasks/settle-postdated-check-customer.md)
+
+[Einen vordatierten Scheck für einen Kreditor erfassen und buchen](tasks/register-post-postdated-check-vendor.md) 
+
+[Einen vordatierten Scheck für einen Kreditor ausgleichen](tasks/settle-postdated-check-vendor.md)
 
 
 

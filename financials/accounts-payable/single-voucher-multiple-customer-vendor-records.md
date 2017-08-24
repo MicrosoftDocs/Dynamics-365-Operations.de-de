@@ -1,9 +1,9 @@
 ---
 title: "Einzelner Beleg mit mehreren Debitoren- oder Kreditorendatensätzen"
 description: "Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, nicht mehr zur Verfügung stehen. Folglich empfehlen wir es nicht, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,8 +14,8 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
-ms.author: abruer
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008

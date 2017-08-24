@@ -15,14 +15,13 @@ ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: ed80e59579c2356cc3c1e0f13b33026284867a2c
 ms.contentlocale: de-de
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -54,12 +53,15 @@ Bei Ihrer Arbeit mit Talent entscheiden Sie über die Strukturierung Ihrer Organ
 -   [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](departments-jobs-positions.md)
 -   [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](set-up-company-specific-hr-parameters.md)
 -   [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md) 
+-   [Personalaktivitäten – FAQ](personnel-actions-faq.md)
+-   [Urlaubs- und Abwesenheitsübersicht](leave-absence-overview.md)
 
 ## <a name="retain-and-motivate-employees"></a>Halten und Motivieren von Mitarbeitern
 
 Sie können Pläne einrichten, um effektiv und ausgewogen Vergütungen sowie Objekte, die Ihre Organisation den Mitarbeitern zur Verfügung stellt (wie z. B. Computer oder Telefone), zu verwalten. Sie können feste und variable Vergütungspläne erstellen, sowie Regeln für den Vergütungsplan mit entsprechenden Kriterien für den Plan definieren.
 
 -   [Vergütungspläne](compensation-plans.md)
+-   [Vergütungsprozess](process-compensation.md)
 -   [Feste Vergütungspläne erstellen](create-fixed-compensation-plans.md)
 -   [Variable Vergütungspläne erstellen](create-variable-compensation-plans.md)
 
