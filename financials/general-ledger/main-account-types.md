@@ -1,7 +1,7 @@
 ---
 title: Hauptkontotypen
 description: Die Hauptkontotypen bestimmen, wie ein Hauptkonto im Kontenplan verwendet wird.
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

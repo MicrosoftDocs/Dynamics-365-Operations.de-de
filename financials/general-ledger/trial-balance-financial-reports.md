@@ -1,7 +1,7 @@
 ---
 title: Zwischenbilanzfinanzberichte
 description: "In diesem Artikel werden die Standardberichte für Zwischenbilanzen beschrieben. Zudem werden die Bausteine beschrieben, die mit diesen Berichten zugeordnet werden und wie Sie Berichte ändern können, um diese an Ihre geschäftlichen Anforderungen anpassen."
-author: twheeloc
+author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,7 +22,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: 86e8e91f2af474999d89bb63ac9e2afad7843c8a
 ms.contentlocale: de-de
 ms.lasthandoff: 06/13/2017
-
 
 ---
 

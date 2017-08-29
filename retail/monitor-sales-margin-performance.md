@@ -1,7 +1,7 @@
 ---
 title: "Überwachen von Verkaufs- und erstellen Sie ein Leistung"
 description: "Sie können den Verkauf und die Gewinnspannen mit Microsoft Dynamics 365 for Retail in Echtzeit überwachen."
-author: josaw1
+author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 6c299a1297e5721119ecfb5208453f8739fb7ad0
 ms.contentlocale: de-de
 ms.lasthandoff: 06/20/2017
-
 
 ---
 

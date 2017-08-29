@@ -1,7 +1,7 @@
 ---
 title: "Neubewertung der Fremdwährung für Kreditoren und Debitoren"
 description: "Schwankungen in den Wechselkursen sorgen langfristig für Veränderungen im theoretischen Wert (Buchwert) offener Buchungen in Fremdwährungen. Dieser Artikel gibt Informationen zum Prozess der Neubewertung der Fremdwährung, der ausgeführt wird, um den Wert offener Buchungen in \"Kreditoren\" und \"Debitoren\" zu aktualisieren."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f09589a6f0a684752c7c9b98528e9546fedf341e
 ms.contentlocale: de-de
 ms.lasthandoff: 05/25/2017
-
 
 ---
 
