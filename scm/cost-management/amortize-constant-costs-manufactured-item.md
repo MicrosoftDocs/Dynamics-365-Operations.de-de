@@ -1,20 +1,24 @@
---- 
-title: "Mitarbeitervergütungsprogramm bereitstellen"
-description: Diese Aufgabe zeigt Ihnen, wie Vorteilselemente erstellt werden, die verwendet werden, wenn ein neuer Vorteile erstellt wird.
-author: kherr75
+---
+title: "Amortisierung konstanter Kosten für einen produzierten Artikel"
+description: "Die konstanten Kosten eines produzierten Artikels beinhalten die Arbeitsgangrüstzeiten sowie die Komponenten mit einer konstanten Menge oder einem konstanten Schrottwert."
+author: YuyuScheller
 manager: AnnBe
-ms.date: 12/01/2015
-ms.topic: business-process
+ms.date: 04/20/2017
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
 audience: Application User
-ms.reviewer: rschloma
-ms.search.scope: Operations
-ms.search.region: Global
-ms.author: kherr
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.custom: 274503
+ms.assetid: 535ab25d-a031-4e8c-84ec-478f2987a1ad
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: yuyus
+ms.dyn365.ops.intro: AX 7.0.0
+ms.search.validFrom: 2016-02-28
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f9c6e9a10befec1775fe031295f0a29d936a8ed8
@@ -22,51 +26,25 @@ ms.contentlocale: de-de
 ms.lasthandoff: 05/25/2017
 
 ---
-# <a name="deliver-an-employee-benefits-program"></a>Mitarbeitervergütungsprogramm bereitstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+# <a name="amortize-constant-costs-for-a-manufactured-item"></a>Amortisierung konstanter Kosten für einen produzierten Artikel
 
-Diese Aufgabe zeigt Ihnen, wie Vorteilselemente erstellt werden, die verwendet werden, wenn ein neuer Vorteile erstellt wird. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für einen "Leiter Vergütungen/Bezüge" vorgesehen.
+[!include[banner](../includes/banner.md)]
 
 
-## <a name="create-benefit-elements"></a>Vorteilselemente erstellen
-1. Diese Aufgabe wird von der Listenseite "Vorteile" aus gestartet. Starten Sie die Aufgabe, indem Sie diese Seite öffnen oder die Listenseite "Vorteile" durchsuchen.
-2. Klicken Sie auf Neu.
-3. Geben Sie im Feld "Typ" den Namen des Vorteilstyps ein, den Sie erstellen.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Wählen Sie im Feld "Gleichzeitige Registrierung" eine Option aus.
-    * Um die Fähigkeit von Mitarbeitern einzuschränken, sich bei mehreren Krankenversicherungsplänen zu registrieren, wählen Sie "Eine Registrierung pro Typ" aus.  
-6. Wählen Sie im Feld "Lohnkategorie" eine Option aus.
-7. Klicken Sie auf die Registerkarte "Pläne".
-8. Klicken Sie auf Neu.
-9. Geben Sie im Feld "Plan" einen Wert ein.
-10. Geben Sie im Feld "Beschreibung" einen Wert ein.
-11. Klicken Sie im Feld "Typ" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-12. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-13. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-14. Wählen Sie im Feld "Lohnauswirkung" eine Option aus.
-15. Klicken Sie auf die Registerkarte "Optionen".
-16. Klicken Sie auf Neu.
-17. Geben Sie im Feld "Option" einen Wert ein.
-18. Geben Sie im Feld "Beschreibung" einen Wert ein.
+Die konstanten Kosten eines produzierten Artikels beinhalten die Arbeitsgangrüstzeiten sowie die Komponenten mit einer konstanten Menge oder einem konstanten Schrottwert. 
 
-## <a name="create-a-benefit"></a>Vorteil erstellen
-1. Schließen Sie die Seite.
-2. Wechseln Sie zu "Personalverwaltung" > "Leistungen" > "Leistungen".
-3. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-4. Klicken Sie im Feld "Plan" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-5. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-6. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-7. Klicken Sie im Feld "Option" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-8. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-9. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-10. Geben Sie im Feld "Gültigkeit" ein Datum und eine Uhrzeit ein.
-11. Klicken Sie auf "Vorteil erstellen".
-12. Schalten Sie die Erweiterung des Abschnitts "Lohndetails" ein/aus.
-13. Klicken Sie im Feld "Häufigkeit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-14. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-15. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-16. Wählen Sie im Feld "Basis" eine Option aus.
-17. Geben Sie im Feld "Betrag oder Satz" eine Zahl ein.
+Das Konzept der Nachkalkulationslosgröße dient zum Amortisieren dieser konstanten Kosten in den berechneten Kosten eines produzierten Artikels. Dieses Konzept besitzt mehrere Synonyme, von denen eines "Abrechnungslosgröße" lautet. Selbiges gilt auch für das Konzept der Amortisierung konstanter Kosten, das beispielsweise auch als proportionale konstante Kosten bezeichnet wird.
+Die Menge einer Nachkalkulationslosgröße für einen produzierten Artikel fließt in die Herstellkostenkalkulation ein. Die Menge ist von der Initiierung und Ausführung der Herstellkostenkalkulation abhängig. Dies wird im Folgenden veranschaulicht:
+-   Standardberechnungsmenge in der Herstellkostenkalkulation eines Artikels − Die Standardauftragsmenge des Artikels (für das Lager) fungiert als Standardwert für dessen Nachkalkulationslosgröße, bei dem Standardwert handelt es sich jedoch möglicherweise um eine größere Menge, die ein Vielfaches der Auftragsmenge für den Artikel darstellt. Die Standard-Auftragsmenge sowie das Vielfache werden in den Standardauftragseinstellungen oder in den standortspezifischen Auftragseinstellungen definiert.
+-   Angegebene Berechnungsmenge in der Herstellkostenkalkulation eines Artikels − Die angegebene Berechnungsmenge fungiert als Nachkalkulationslosgröße für den Artikel. Als Berechnungsmenge wird zunächst die Standardauftragsmenge des Artikels verwendet, doch dieser Standardwert kann manuell außer Kraft gesetzt werden. Die angegebene Berechnungsmenge stellt die Nachkalkulationslosgröße für den angegebenen Artikel und für hergestellte Komponenten mit dem Stücklistenpositionstyp "Produktion" dar. Dies beruht auf der Annahme, dass die Komponente in der exakten Menge produziert wird. Die Nachkalkulationslosgröße für andere produzierte Komponenten mit dem Stücklistenpositionstyp "Artikel" gibt deren jeweilige Standardauftragsmenge wieder.
+-   Angegebene Berechnungsmenge vom Typ "Auf Auftrag fertigen" in der Herstellkostenkalkulation eines Artikels − Die angegebene Berechnungsmenge fungiert als Nachkalkulationslosgröße für den Artikel und dessen produzierte Komponenten, wenn in einer Herstellkostenkalkulation der Stücklistenauflösungsmodus "Auf Auftrag fertigen" verwendet wird. Es wird angenommen, dass die produzierten Komponenten – ebenso wie beim Stücklistenpositionstyp "Produktion" – in der exakten Menge produziert werden.
+-   Angegebene Berechnungsmenge in einer auftragsspezifischen Herstellkostenkalkulation − Eine auftragsspezifische Herstellkostenkalkulation kann für den Positionsartikel eines Auftrags, eines Verkaufsangebots oder eines Serviceauftrags ausgeführt werden. Für die angegebene Berechnungsmenge wird standardmäßig auf die Menge des ursprünglichen Positionsartikels verwendet, diese Standardmenge kann jedoch außer Kraft gesetzt werden. Sie können wählen, ob für die auftragsspezifische Herstellkostenkalkulation der Stücklistenauflösungsmodus "Auf Auftrag fertigen" oder der Stücklistenauflösungsmodus "Mehrere Ebenen" verwendet werden soll.
+
+Der berechnete Betrag der amortisierten konstanten Kosten eines produzierten Artikels wird als Belastungen bezeichnet.
+
+
+
+
 
 
