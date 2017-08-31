@@ -1,7 +1,7 @@
 ---
 title: "Erfassungseinträge und Transaktionen anzeigen"
 description: "Dieser Artikel erklärt die verschiedenen Methoden zum Ansehen von Journal- und Transaktionseinträgen."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: Einrichten eines Kundentreueprogramms
 description: "In diesem Artikel wird beschrieben, wie die Komponenten für ein Treueprogramm eingerichtet werden. Ein Treueprogramm kann dazu beitragen, die Debitorenloyalität durch die Belohnung der Debitoren für das Kaufen von Produkte in den Einzelhandelsgeschäften zu erhöhen. In Microsoft Dynamics 365 for Retail können Sie einfache oder komplexe Treueprogramme einrichten, die für alle juristischen Personen in einem beliebigen Einzelhandelskanal gelten."
-author: josaw1
+author: scott-tucker
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: de-de
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Bericht "Deutsches Journal"
 description: "In diesem Artikel wird beschrieben, für was der deutsche Erfassungslistenbericht verwendet wird, wer ihn in der Regel verwendet und wie er ausgeführt wird."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,7 +22,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f2f5166815fd7c4a92185a5a97749e42c98ea694
 ms.contentlocale: de-de
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

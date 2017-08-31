@@ -1,7 +1,7 @@
 ---
 title: Finanzdimensionen
 description: "In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen beschrieben und wie sie eingerichtet wurden."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

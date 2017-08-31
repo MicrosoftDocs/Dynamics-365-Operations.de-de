@@ -1,7 +1,7 @@
 ---
 title: Einrichten zentralisierter Zahlungen
 description: Mithilfe dieses Verfahrens wird die Verarbeitung von Zahlungen einer juristischen Person vorbereitet, die im Auftrag anderer juristischer Personen innerhalb der Organisation abgewickelt werden.
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article

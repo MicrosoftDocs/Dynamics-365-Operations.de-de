@@ -1,7 +1,7 @@
 ---
 title: "Eine separate Beschriftung für die Gutschriften, die vom Vertrieb stammen, drucken"
 description: In diesem Artikel wird beschrieben, wie die Beschriftung definiert wird, die auf Gutschriften erscheinen, die vom Vertrieb stammen.
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,7 +22,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: fa1b55136865a371f68fc99abfbe5598547c39a3
 ms.contentlocale: de-de
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

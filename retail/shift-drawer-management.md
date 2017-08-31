@@ -1,7 +1,7 @@
 ---
 title: Schicht- und Kassenladenverwaltung
 description: "Dieser Artikel erläutert die Einrichtung der zwei verschiedenen Schichttypen für POS: gemeinsam und eigenständig. Gemeinsame Schichten können von mehreren Benutzern an mehreren Orten verwendet werden. Eigenständige Schichten können nur von einer Arbeitskraft gleichzeitig verwendet werden."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
 ms.contentlocale: de-de
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

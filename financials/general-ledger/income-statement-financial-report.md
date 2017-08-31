@@ -1,7 +1,7 @@
 ---
 title: "Finanzbericht für die Einkommensaufstellung"
 description: "In diesem Artikel werden die Standardberichte für Einkommensaufstellung beschrieben. Er beschreibt zudem die die Bausteine, die diesen Bericht zugeordnet werden."
-author: twheeloc
+author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,7 +22,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: f07aea0b87bc3e09982f9ba248d3c28540fd2dc5
 ms.contentlocale: de-de
 ms.lasthandoff: 06/13/2017
-
 
 ---
 
