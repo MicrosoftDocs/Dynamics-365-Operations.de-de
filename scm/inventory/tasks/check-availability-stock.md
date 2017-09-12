@@ -1,4 +1,4 @@
---- 
+---
 title: "Überprüfung der Bestandsverfügbarkeit"
 description: "Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lagerbestand für eine bestimmte Artikelnummer überprüfen."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lager
 4. Klicken Sie auf "Dimensionen anzeigen".
 5. Klicken Sie auf "OK".
 6. Schließen Sie die Seite.
-
 

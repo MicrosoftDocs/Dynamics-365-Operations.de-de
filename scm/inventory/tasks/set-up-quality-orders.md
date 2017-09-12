@@ -1,4 +1,4 @@
---- 
+---
 title: "Qualitätsprüfungsaufträge einrichten"
 description: "Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wird, in dem eingehender Lagerbestand direkt nach der Eingangsregistrierung geprüft werden muss."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -142,5 +142,4 @@ Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wir
 15. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 16. Klicken Sie auf "Speichern".
 17. Schließen Sie die Seite.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Physischen Bestand im Lagerort übertragen"
 description: "Diese Prozedur führt Sie durch den Prozess der Erstellung und des Buchens einer Umlagerungserfassung, um Artikelbewegungen von einem Lagerplatz eines Lagerorts an einen anderen zu erfassen."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Diese Prozedur führt Sie durch den Prozess der Erstellung und des Buchens einer
 1. Klicken Sie auf Lager.
 2. Klicken Sie auf "Transaktionen".
     * Hier können Sie die Transaktionen anzeigen, die erstellt wurden, als Sie Ihre Erfassung gebucht haben.  
-
 

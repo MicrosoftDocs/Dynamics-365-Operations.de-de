@@ -1,4 +1,4 @@
---- 
+---
 title: "Lagerbestand mithilfe der Kreditorenkooperation überwachen"
 description: Dieses Verfahren zeigt, wie Sie Kreditor-Kooperationen nutzen, um Informationen zum Bestand des Produkts anzuzeigen, den Sie in der Lieferung des Debitors platziert haben.
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -41,5 +41,4 @@ Dieses Verfahren zeigt, wie Sie Kreditor-Kooperationen nutzen, um Informationen 
 ## <a name="view-on-hand-inventory"></a>Verfügbaren Lagerbestand anzeigen
 1. Wechseln Sie zu "Kreditor-Kooperation" > "Lieferbestand" > "Verfügbarer Lagerbestand".
     * Die Seite "Verfügbare Lieferungsbestand" zeigt den Bestand, den Sie am Lagerort des Debitors besitzen. Sie können zusätzliche Dimensionen eingegeben, z. B. der Standort und der Lagerort, indem Sie auf die Registerkarte "Dimensionen anzeigen" klicken.   
-
 

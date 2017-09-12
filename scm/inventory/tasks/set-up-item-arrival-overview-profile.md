@@ -1,7 +1,7 @@
---- 
+---
 title: "Übersichtsprofil zum Wareneingang einrichten"
 description: "Dieser Aufgabe konzentriert sich auf den Einstellungen eines Wareneingangsübersichtprofils."
-author: BibiSp
+author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Dieser Aufgabe konzentriert sich auf den Einstellungen eines Wareneingangsübers
     * Wählen Sie Positionen aus offenen Umlagerungsaufträgen aus.  
 17. Klicken Sie auf "Speichern".
 18. Schließen Sie die Seite.
-
 

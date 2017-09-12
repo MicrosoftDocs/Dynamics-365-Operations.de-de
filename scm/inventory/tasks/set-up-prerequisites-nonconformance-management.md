@@ -1,4 +1,4 @@
---- 
+---
 title: "Voraussetzungen für Verwaltung einrichten"
 description: "Verwenden Sie diese Prozedur, um Qualitätsmangelmanagementprozesse zu aktivieren."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -101,5 +101,4 @@ Verwenden Sie diese Prozedur, um Qualitätsmangelmanagementprozesse zu aktiviere
 3. Geben Sie im Feld "Quarantänezone" einen Wert ein.
 4. Geben Sie im Feld "Beschreibung" einen Wert ein.
 5. Schließen Sie die Seite.
-
 

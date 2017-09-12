@@ -1,4 +1,4 @@
---- 
+---
 title: Sperrung von Lagerbestand erstellen und verwalten
 description: "Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verfügbarer Lagerbestand durch andere ausgehende Quelldokumente mithilfe der Sperrung von Lagerbestand reserviert wird."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -34,7 +34,7 @@ Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verf
 1. Wechseln Sie zu "Lagerverwaltung" > "Periodische Aufgaben" > "Sperrung von Lagerbestand".
 2. Klicken Sie auf "Neu".
 3. Klicken Sie im Feld "Artikelnummer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-4. Wählen Sie in der Liste den Artikel aus. 
+4. Wählen Sie in der Liste den Artikel aus.
     * Wählen Sie eine Artikelnummer mit physischem Lagerbestand aus, die Sie sperren möchten. Wenn Sie USMF verwenden, können Sie Artikel M9201 auswählen.  
 5. Geben Sie im Feld "Menge" eine Zahl ein.
     * Wenn Sie Artikel M9201 verwenden, müssen Sie weniger als 200 auswählen.  
@@ -55,5 +55,4 @@ Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verf
 1. Klicken Sie auf Löschen.
 2. Klicken Sie auf "Ja".
 3. Schließen Sie die Seite.
-
 

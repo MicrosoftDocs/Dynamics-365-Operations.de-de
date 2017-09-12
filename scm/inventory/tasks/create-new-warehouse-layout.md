@@ -1,4 +1,4 @@
---- 
+---
 title: Ein neues Lagerortlayout erstellen
 description: "Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in einem Lagerort eingerichtet werden."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -49,7 +49,7 @@ Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in ein
 7. Schalten Sie die Erweiterung des Abschnitts "Lagerplatznamen" ein/aus.
     * Die Optionen in diesem Abschnitt definieren das Standardformat für Lagerplatznamen. In unserem Beispiel schließen wir die Gangnummer, Regalnummer und Regelbodennummer ein.  
 8. Legen Sie die Option "Gang einschließen" auf "Ja" fest.
-9. Legen Sie die Option "Regal einschließen" auf "Ja" fest. 
+9. Legen Sie die Option "Regal einschließen" auf "Ja" fest.
 10. Geben Sie im Feld "Format" für das Regal einen Wert ein.
     * Beispiel: -##  
 11. Legen Sie die Option "Regalboden einschließen" auf "Ja" fest.
@@ -74,5 +74,4 @@ Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in ein
 14. Klicken Sie auf Fertig stellen.
 15. Schließen Sie die Seite.
 16. Aktualisieren Sie die Seite.
-
 

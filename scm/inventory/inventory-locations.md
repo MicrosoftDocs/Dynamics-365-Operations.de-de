@@ -1,7 +1,7 @@
 ---
 title: "Lagerplätze für Lagerbestand"
 description: "Lagerplätze für Lagerbestand werden mit grundlegendem Warehousing (WMS I) verwendet , um zu bestimmen, wo Artikel in einem WMS I-Lagerort gelagert und entnommen werden."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSLocation
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2134
 ms.assetid: 69bf6922-4151-447f-b678-4ba95637f54c
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -40,7 +40,6 @@ Der Begriff Lagerplatz bezieht sich auf den Ort, an dem Artikel gespeichert und 
 
 Für jeden Lagerplatz kann auch der Ort angegeben werden, an dem der Artikel eingelagert wird. Standardmäßig handelt es sich hierbei um den gleichen Ort. Artikel werden an einem Lagerplatz in der Regel von der gleichen Seite aus eingelagert und entnommen. Es gibt jedoch auch Ausnahmen. So werden beispielsweise Artikel, die in Durchreichregalen gelagert werden, von einem Lagergang aus eingelagert und von einem anderen Gang aus entnommen. Die wichtigste Angabe ist der Lagerplatzname, der üblicherweise anhand der Koordinaten "Lagerort", "Gang", "Regal", "Regalboden" und "Lagerfach" bestimmt wird. Dieser Name bzw. diese Kennung kann manuell eingegeben oder auf der Seite "Lagerplätze für Lagerbestand" auf Basis der Lagerplatzkoordinaten generiert werden. Beispiel: "01-02-03-4" für Gang 1, Regal 2, Regalboden 3, Lagerfach 4.
 Lagerplatzeigenschaften
--------------------
 
 Ein Lagerplatz hat folgende Merkmale:
 -   Größe (Höhe, Breite, Tiefe und damit Volumen)
@@ -54,12 +53,12 @@ Sortiercodes dienen zur Optimierung der Handhabung von Entnahmepositionen. Sie e
 
 ## <a name="blocked-locations"></a>Blockierte Lagerplätze
 Gelegentlich kann es erforderlich sein, einen Lagerplatz für einen gewissen Zeitraum zu blockieren, z. B. für Reparaturarbeiten. Es kann möglicherweise auch ausreichend sein, nur die Eingabe oder nur die Ausgabe zu blockieren.
-Strukturdarstellung
---------------
+
+## <a name="tree-structure"></a>Strukturdarstellung
 
 Auf der Seite "Lagerplätze für Lagerbestand" können Sie das Lagerortlayout in einer Strukturdarstellung auf Basis der Koordinaten der Lagerplätze des Lagerbestands in einem definierten Anzeigeformat anzeigen.
-Verwalten von Lagerplätzen über das Formular "Lagerort"
----------------------------------------------------
+
+## <a name="maintain-inventory-locations-via-the-warehouse-form"></a>Verwalten von Lagerplätzen über das Formular "Lagerort"
 
 Es ist möglich, Lagerplätze von einem Lagerort an einen anderen zu kopieren und Lagerplätze mit einem Assistenten zu erstellen. Bevor Sie den Assistenten ausführen, sollten Sie sicherstellen, dass Sie die Standard-Lagerortnamen auf der Seite "Lagerort" definiert haben.
 
@@ -69,7 +68,4 @@ Es ist möglich, Lagerplätze von einem Lagerort an einen anderen zu kopieren un
 --------
 
 [Ein neues Lagerlayout erstellen (Aufgabenleitfaden)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
-
-
-
 

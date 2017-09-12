@@ -1,7 +1,7 @@
 ---
 title: "Lagerchargen zusammenführen"
 description: "Dieses Thema enthält Informationen, wie zwei oder mehr Lagerchargen in einer zusammengeführte Charge konsolidiert werden."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieses Thema enthält Informationen, wie zwei oder mehr Lagerchargen in einer zusammengeführte Charge konsolidiert werden. 
+Dieses Thema enthält Informationen, wie zwei oder mehr Lagerchargen in einer zusammengeführte Charge konsolidiert werden.
 
 Wenn Sie Chargen zusammenführen, können Berechnungen dabei helfen, die Merkmale und die Chargenattribute der zusammengeführten Charge zu optimieren. Nachdem Sie die Quellchargen ausgewählt haben, können Sie die zusammengeführte Charge prüfen und ändern, bevor Sie sie buchen. Sie können auch die Chargenzusammenführung in eine Lagererfassung zur Genehmigung übertragen. Der Bestand kann direkt aus der Lagererfassung reserviert oder gebucht werden. Wenn Sie eine zusammengeführte Charge buchen, wird der Bestand für die Quellchargen und die zusammengeführte Charge angepasst.
 
@@ -142,7 +142,4 @@ Sie können die Bestandserfassung für die Chargenzusammenführung auf der Liste
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Warum kann ich, nachdem ich einen Artikelgewichtsartikel zusammengeführt habe, die Artikelgewichtsinformationen in der Lagererfassung nicht anzeigen?
 Sie können Chargen von Artikelgewichtsartikeln ebenso wie alle anderen Artikel zusammenführen. Allerdings werden die Artikelgewichtsinformationen nicht in der Lagererfassung angezeigt. Es wird empfohlen, die Artikelgewichtsinformationen zu prüfen, bevor Sie die Chargenzusammenführung in die Bestandserfassung übertragen.
-
-
-
 

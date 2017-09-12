@@ -1,4 +1,4 @@
---- 
+---
 title: "Übereinstimmung erstellen und verarbeiten"
 description: "Verwenden Sie dieses Verfahren, um Qualitätsmangelverwaltung, auf Basis eines vorhandenen Qualitätsprüfungsauftrag auszuführen."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Verwenden Sie dieses Verfahren, um Qualitätsmangelverwaltung, auf Basis eines vorhandenen Qualitätsprüfungsauftrag auszuführen. Sie können diese Buchung im USMF-Vorführungsunternehmen ausführen und können die vorgeschlagenen Werte verwenden. Normalerweise wird diese Prozedur aus einem Qualitätssekretär ausgeführt.  Als erforderliches folgenden Schaltern "überprüfen die Qualität von Waren" Aufgabenerfassen aus. Um die Genehmigung einer Nichtübereinstimmung zu verarbeiten, muss der Benutzer der das Aufgabenerfassen ausführt einen "Name Wert besitzen, der auf der Benutzerseite zugewiesen ist. Um die Hinweisdokumente verwenden zu können, muss der Benutzer Handhabung von Dokumenten verfügen aktiviert in den Benutzeroptionen. 
+Verwenden Sie dieses Verfahren, um Qualitätsmangelverwaltung, auf Basis eines vorhandenen Qualitätsprüfungsauftrag auszuführen. Sie können diese Buchung im USMF-Vorführungsunternehmen ausführen und können die vorgeschlagenen Werte verwenden. Normalerweise wird diese Prozedur aus einem Qualitätssekretär ausgeführt.  Als erforderliches folgenden Schaltern "überprüfen die Qualität von Waren" Aufgabenerfassen aus. Um die Genehmigung einer Nichtübereinstimmung zu verarbeiten, muss der Benutzer der das Aufgabenerfassen ausführt einen "Name Wert besitzen, der auf der Benutzerseite zugewiesen ist. Um die Hinweisdokumente verwenden zu können, muss der Benutzer Handhabung von Dokumenten verfügen aktiviert in den Benutzeroptionen.
 
 
 ## <a name="select-a-quality-order"></a>Wählen Sie einen Qualitätsprüfungsauftrag aus.
@@ -78,5 +78,4 @@ Verwenden Sie dieses Verfahren, um Qualitätsmangelverwaltung, auf Basis eines v
 3. Klicken Sie auf "Ja".
 4. Schließen Sie die Seite.
 5. Schließen Sie die Seite.
-
 

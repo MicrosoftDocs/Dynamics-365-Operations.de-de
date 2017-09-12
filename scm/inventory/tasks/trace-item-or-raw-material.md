@@ -1,4 +1,4 @@
---- 
+---
 title: Artikel oder Rohmaterial nachverfolgen
 description: Dieses Verfahren zeigt, wie die Artikelverfolgung angewendet wird, um zu erkennen, wo Artikel oder Rohmaterial verwendet wurden oder verwendet werden.
 author: pjacobse
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -54,5 +54,4 @@ Dieses Verfahren zeigt, wie die Artikelverfolgung angewendet wird, um zu erkenne
 8. Klicken Sie im Aktivitätsbereich auf "Verfolgung".
 9. Klicken Sie auf "Gelieferte Aufträge".
 10. Schließen Sie die Seite.
-
 

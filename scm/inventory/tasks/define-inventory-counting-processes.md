@@ -1,4 +1,4 @@
---- 
+---
 title: Lagerinventurprozesse definieren
 description: "Diese Prozedur führt Sie Schritt für Schritt durch die Konfiguration von grundlegenden Lagerinventurprozessen, indem eine Inventurgruppe und eine Inventurerfassung erstellt wird."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -84,5 +84,4 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Konfiguration von grund
 7. Wählen Sie in der Liste eine Inventurgruppe aus.
     * Hier können Sie eine bestimmte Inventurgruppe auswählen, die auf den Artikel am bestimmten Lagerort angewendet werden soll, den Sie ausgewählt haben. Wenn eine Inventur in diesem Lagerort ausgeführt wird, überschreibt diese Inventurrichtlinie die allgemeine Inventurrichtlinie für den Artikel.  
 8. Klicken Sie auf "Speichern".
-
 

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/27/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-In diesem Artikel wird beschrieben, wie Sie die Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandtransaktionen zu buchen. 
+In diesem Artikel wird beschrieben, wie Sie die Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandtransaktionen zu buchen.
 
 Die Bestanderfassungen in Microsoft Dynamics 365 for Finance and Operations werden verwendet, um physische Lagerbuchungen unterschiedlicher Arten, wie Abgangs-und Zugangsbuchungen, Lagerumlagerungen, die Erstellung von Stücklisten (BOMs) zu buchen und zur Abstimmung des physischen Bestands. Alle diese Lagererfassungen werden auf ähnliche Weise verwendet, sie werden jedoch in verschiedene Arten unterteilt.
 
@@ -95,7 +95,4 @@ Auf eine Erfassungsposition kann zu einem gegebenen Zeitpunkt jeweils nur ein Be
 
 ## <a name="posting-journal-lines"></a>Buchungserfassungspositionen
 Sie können die Erfassungspositionen, die Sie erstellt haben, jederzeit buchen, bis Sie einen Artikel aus weiteren Buchungen sperren. Daten, die Sie in eine Erfassung eingeben, bleiben selbst dann in der Erfassung, wenn Sie die Erfassung schließen, ohne die Positionen zu buchen.
-
-
-
 

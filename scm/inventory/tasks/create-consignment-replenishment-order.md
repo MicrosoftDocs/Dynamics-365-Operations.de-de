@@ -1,4 +1,4 @@
---- 
+---
 title: Unterlieferungs-Wiederbeschaffungsauftrag erstellen
 description: "Dieses Verfahren zeigt, wie ein Unterlieferungs-Wiederbeschaffungsauftrag erstellt wird, in dem Sie die erwartete Lieferung von einem Kreditor in den Lieferungsbestand verfolgen können."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -60,7 +60,7 @@ Dieses Verfahren zeigt, wie ein Unterlieferungs-Wiederbeschaffungsauftrag erstel
 ## <a name="receive-items"></a>Artikel empfangen
 1. Klicken Sie auf "Produktzugang".
 2. Geben Sie im Feld "Externer Produktzugang" einen Wert ein.
-3. Geben Sie im Feld "Menge" Sie eine Zahl ein, die geringer ist als die Zahl, die dort angezeigt wird. 
+3. Geben Sie im Feld "Menge" Sie eine Zahl ein, die geringer ist als die Zahl, die dort angezeigt wird.
 4. Klicken Sie auf "OK".
 
 ## <a name="check-the-on-hand-inventory"></a>Prüfen des verfügbaren Lagerbestands
@@ -70,5 +70,4 @@ Dieses Verfahren zeigt, wie ein Unterlieferungs-Wiederbeschaffungsauftrag erstel
     * Die Artikel, die als verfügbarer Lieferungsbestand eingegangen sind, der dem Kreditor gehört, sind der verfügbare Bestand. Die Restmenge wird im auf dem Unterlieferungs-Wiederbeschaffungsauftrag wird im Feld "Insgesamt bestellt" angezeigt.  
 4. Schließen Sie die Seite.
 5. Klicken Sie auf "Schließen".
-
 

@@ -1,7 +1,7 @@
 ---
 title: "Qualitätsmanagementprozesse"
 description: "Dieser Artikel enthält Informationen zum Qualitätssicherungsprozess für fehlerhafte Produkte. Es beschreibt, wie Sie Qualitätskontrollfunktionen verwenden können, wie Sie Qualitätsmängel definieren und verwalten und wie Korrekturen behandelt werden."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11574
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -56,7 +56,7 @@ Das Testen von Produkten wird üblicherweise als Qualitätskontrolle bezeichnet 
 -   Sie können die Testergebnisse eines Qualitätsprüfungsauftrags erfassen, die Testergebnisse anhand des akzeptablen Qualitätsniveaus prüfen und eine Analysebescheinigung mit den Testergebnissen drucken.
 
 ## <a name="nonconformance"></a>Nichtübereinstimmung
-Ein Qualitätsmangel beschreibt einen Artikel, der ein Qualitätsproblem hat. Sie können einen Qualitätsmangelprozess erstellen, der für die Menge des Materials mit Qualitätsmängeln eine Beschreibung der Problemursache, die Art des Problems sowie erläuternde Hinweise enthält. Zur Vereinfachung der Analyse von Material mit Qualitätsmängeln besteht die Möglichkeit zum Definieren einer Klassifizierung für Problemtypen. Sie können eine Qualitätsmangelmarkierung und einen Qualitätsmangelbericht auch drucken, um die Disposition des Materials mit Qualitätsmängeln zu verwalten. Beispielsweise können die Markierung und der Bericht eine Bedingung von **Nicht verwendbar** oder **Eingeschränkte Verwendung** anzeigen. 
+Ein Qualitätsmangel beschreibt einen Artikel, der ein Qualitätsproblem hat. Sie können einen Qualitätsmangelprozess erstellen, der für die Menge des Materials mit Qualitätsmängeln eine Beschreibung der Problemursache, die Art des Problems sowie erläuternde Hinweise enthält. Zur Vereinfachung der Analyse von Material mit Qualitätsmängeln besteht die Möglichkeit zum Definieren einer Klassifizierung für Problemtypen. Sie können eine Qualitätsmangelmarkierung und einen Qualitätsmangelbericht auch drucken, um die Disposition des Materials mit Qualitätsmängeln zu verwalten. Beispielsweise können die Markierung und der Bericht eine Bedingung von **Nicht verwendbar** oder **Eingeschränkte Verwendung** anzeigen.
 
 In der folgenden Tabelle werden die sechs Standard Qualitätsmangeltypen angegeben und die Informationen beschrieben, die für jeden Typ erfasst werden müssen.
 
@@ -69,23 +69,23 @@ In der folgenden Tabelle werden die sechs Standard Qualitätsmangeltypen angegeb
 | Intern              | Die Nummer des Qualitätsprüfungsauftrags oder Losnummer einer Buchung für einen Qualitätsprüfungsauftrag. Der Qualitätsmangel könnte sich beispielsweise auf die Tests beziehen, die im Rahmen des Qualitätsprüfungsauftrags ausgeführt wurden, oder auf die Bedenken eines Mitarbeiters hinsichtlich der Produktqualität.     |
 | Kuppelprodukt - Produktion | Ein Co-Produkt-Produktionsauftragsqualitätsmangel, der Chargenproduktionsaufträgen zugeordnet ist.                                                                                                                                                    |
 
-Qualitätsmängel werden mit einem Problemtyp zugeordnet. Problemtypen werden auf der Seite **Problemtypen** definiert, in der Sie angeben, welche Problemtypen mit jedem Nichtübereinstimmungstyp zugeordnet werden können. Zum Beispiel können die Problemtypen für Qualitätsmängel des Typs **Serviceanforderung** eine Klassifizierung von Debitorenbeschwerden darstellen, wohingegen die Problemtypen für einen **internen** Qualitätsmangel eine Klassifizierung von Fehlercodes darstellen können. 
+Qualitätsmängel werden mit einem Problemtyp zugeordnet. Problemtypen werden auf der Seite **Problemtypen** definiert, in der Sie angeben, welche Problemtypen mit jedem Nichtübereinstimmungstyp zugeordnet werden können. Zum Beispiel können die Problemtypen für Qualitätsmängel des Typs **Serviceanforderung** eine Klassifizierung von Debitorenbeschwerden darstellen, wohingegen die Problemtypen für einen **internen** Qualitätsmangel eine Klassifizierung von Fehlercodes darstellen können.
 
-Beim Erstellen eines neuen Qualitätsmangels wählen Sie die Art des Qualitätsmangels und den Problemtyp aus. Der erste Genehmigungsstatus ist **Neu**, der eine Handlungsaufforderung darstellt. Der nächste Schritt darin, den Genehmigungsstatus zu **Genehmigt** oder **Abgelehnt** zu ändern, um anzugeben, dass Sie wegen des Qualitätsmangels (keine) Maßnahmen ergreifen werden. Sie können einen Qualitätsmangel auch schließen (durch Auswahl eines gesonderten Kontrollkästchens), um anzugeben, dass Sie den Mangel fertig bearbeitet haben, oder ihn öffnen, um anzugeben, dass eine weitere Prüfung erforderlich ist. 
+Beim Erstellen eines neuen Qualitätsmangels wählen Sie die Art des Qualitätsmangels und den Problemtyp aus. Der erste Genehmigungsstatus ist **Neu**, der eine Handlungsaufforderung darstellt. Der nächste Schritt darin, den Genehmigungsstatus zu **Genehmigt** oder **Abgelehnt** zu ändern, um anzugeben, dass Sie wegen des Qualitätsmangels (keine) Maßnahmen ergreifen werden. Sie können einen Qualitätsmangel auch schließen (durch Auswahl eines gesonderten Kontrollkästchens), um anzugeben, dass Sie den Mangel fertig bearbeitet haben, oder ihn öffnen, um anzugeben, dass eine weitere Prüfung erforderlich ist.
 
-Sie können Kommentare für einen Qualitätsmangel eingeben, indem Sie ein Dokument zuordnen. Es wird empfohlen, einen eindeutigen Dokumenttyp für Qualitätsmängel zu definieren, indem die Seite **Dokumenttyp** verwendet. Anschließend können Sie auf der Seite **Berichtseinstellungen** definieren, ob Kommentare für diesen Dokumenttyp gedruckt werden sollen bezüglich der Nichtübereinstimmungsbericht- und Qualitätsmangelmarkierung. Der Qualitätsmangelbericht und eine entsprechende Markierung können bei der Disposition von Material helfen. Berichte und Markierungen können auf Basis von Auswahlkriterien generiert werden, die einem Qualitätsmangel zugeordnet sind. Diese Kriterien umfassen die Qualitätsmangelnummer, Artikel-, -Debitor, -Kreditor und Statusangaben. 
+Sie können Kommentare für einen Qualitätsmangel eingeben, indem Sie ein Dokument zuordnen. Es wird empfohlen, einen eindeutigen Dokumenttyp für Qualitätsmängel zu definieren, indem die Seite **Dokumenttyp** verwendet. Anschließend können Sie auf der Seite **Berichtseinstellungen** definieren, ob Kommentare für diesen Dokumenttyp gedruckt werden sollen bezüglich der Nichtübereinstimmungsbericht- und Qualitätsmangelmarkierung. Der Qualitätsmangelbericht und eine entsprechende Markierung können bei der Disposition von Material helfen. Berichte und Markierungen können auf Basis von Auswahlkriterien generiert werden, die einem Qualitätsmangel zugeordnet sind. Diese Kriterien umfassen die Qualitätsmangelnummer, Artikel-, -Debitor, -Kreditor und Statusangaben.
 
 Der Qualitätsmangelbericht enthält die Qualitätsmangelnummer, Artikel- und -Problemtyp. Abhängig von Ihrer Berichtseinstellungsrichtlinie kann der Bericht möglicherweise auch zugehörige Hinweise zum Qualitätsmangel enthalten. Die Qualitätsmangelmarkierung zeigt ähnliche Informationen an und zeigt zudem Quarantänezone und -typ an (zum Beispiel **Eingeschränkt verwendbar** im Vergleich zu **Nicht verwendbar**), die dem Qualitätsmangel zugeordnet wurden, um die Disposition des fehlerhaften Materials zu regeln.
 
 ## <a name="approved-nonconformance"></a>Genehmigter Qualitätsmangel
-Optional lassen sich zugehörige Arbeitsgänge für einen genehmigten Qualitätsmangel definieren. Ein zugehöriger Arbeitsgang beschreibt die Arbeit, die ausgeführt werden soll, und enthält eine Liste der Qualitätsarbeitsgänge, die Sie definiert haben, und beschreibenden Text zur Ursache für die Arbeit. Nach dem Definieren eines Arbeitsgangs können optional die sonstigen Zuschläge, Artikel und die Arbeitszeitnachweise definiert werden, die für die Arbeitsschritte erforderlich sind. Die berechneten Kosten werden für den zugehörigen Arbeitsgang angezeigt, und die gesamten berechneten Kosten werden für den Qualitätsmangel angezeigt. Die berechneten Kosten und die zu Grunde liegenden Details (zu Artikeln, Arbeitsstunden und sonstigen Zuschlägen) stellen Referenzinformationen dar. Sie werden nur in der Qualitätsmanagementfunktion verwendet. 
+Optional lassen sich zugehörige Arbeitsgänge für einen genehmigten Qualitätsmangel definieren. Ein zugehöriger Arbeitsgang beschreibt die Arbeit, die ausgeführt werden soll, und enthält eine Liste der Qualitätsarbeitsgänge, die Sie definiert haben, und beschreibenden Text zur Ursache für die Arbeit. Nach dem Definieren eines Arbeitsgangs können optional die sonstigen Zuschläge, Artikel und die Arbeitszeitnachweise definiert werden, die für die Arbeitsschritte erforderlich sind. Die berechneten Kosten werden für den zugehörigen Arbeitsgang angezeigt, und die gesamten berechneten Kosten werden für den Qualitätsmangel angezeigt. Die berechneten Kosten und die zu Grunde liegenden Details (zu Artikeln, Arbeitsstunden und sonstigen Zuschlägen) stellen Referenzinformationen dar. Sie werden nur in der Qualitätsmanagementfunktion verwendet.
 
-Sie können aufgrund eines Qualitätsmangels optional einen Qualitätsprüfungsauftrag erstellen. Führen Sie dazu zunächst eine Abfrage nach Qualitätsprüfungsaufträgen aus, und erstellen Sie anschließend den neuen Qualitätsprüfungsauftrag. Zum Beispiel kann ein Qualitätsprüfungsauftrag ergeben, dass das fehlerhafte Material getestet bzw. erneut getestet werden muss. Im neu erstellten Qualitätsprüfungsauftrag wird die Verbindung zum ursprünglichen Qualitätsmangel angezeigt. 
+Sie können aufgrund eines Qualitätsmangels optional einen Qualitätsprüfungsauftrag erstellen. Führen Sie dazu zunächst eine Abfrage nach Qualitätsprüfungsaufträgen aus, und erstellen Sie anschließend den neuen Qualitätsprüfungsauftrag. Zum Beispiel kann ein Qualitätsprüfungsauftrag ergeben, dass das fehlerhafte Material getestet bzw. erneut getestet werden muss. Im neu erstellten Qualitätsprüfungsauftrag wird die Verbindung zum ursprünglichen Qualitätsmangel angezeigt.
 
 Optional besteht die Möglichkeit zum Verknüpfen von Qualitätsmängeln sowie zum Erstellen eines Qualitätsmangeleintrags auf Basis eines bereits vorhandenen Qualitätsmangels. So kann es sich bei einer Verknüpfung beispielsweise um die Kopplung von Qualitätsproblemen handeln.
 
 ## <a name="correction-handling"></a>Korrekturbehandlung
-Die Seite **Korrekturen** können Sie eine Liste von Qualitätsmängeln erstellen, die korrigiert werden müssen. Jeder Korrekturartikel wird dem Diagnosetyp zugeordnet, der bewirkte, dass das Problem entdeckt wurde. Die **Korrekturen** Seite enthält außerdem Informationen darüber, wer Korrekturaktivität ausführen muss, wenn und. Sie können die Details der Quelle sowie und Korrektur beschreiben, die erforderlich ist, indem ein Dokument der Korrektur Kunden. Nachdem der Qualitätsmangel adressiert oder korrigiert wurde, "schließen" Sie den Korrekturartikel, indem Sie die Option **Abgeschlossen** auswählen. Sie können auch angeben, dass die Lösung eine kurzfristige Lösung war. 
+Die Seite **Korrekturen** können Sie eine Liste von Qualitätsmängeln erstellen, die korrigiert werden müssen. Jeder Korrekturartikel wird dem Diagnosetyp zugeordnet, der bewirkte, dass das Problem entdeckt wurde. Die **Korrekturen** Seite enthält außerdem Informationen darüber, wer Korrekturaktivität ausführen muss, wenn und. Sie können die Details der Quelle sowie und Korrektur beschreiben, die erforderlich ist, indem ein Dokument der Korrektur Kunden. Nachdem der Qualitätsmangel adressiert oder korrigiert wurde, "schließen" Sie den Korrekturartikel, indem Sie die Option **Abgeschlossen** auswählen. Sie können auch angeben, dass die Lösung eine kurzfristige Lösung war.
 
 Es wird empfohlen, einen eindeutigen Dokumenttyp für Korrekturen zu definieren, indem die Seite **Dokumenttyp** verwendet wird. Anschließend können Sie auf der Seite **Berichtseinstellungen** definieren, ob Kommentare für diesen Dokumenttyp gedruckt werden sollen bezüglich des Korrekturreports. Ein gedruckter Korrekturbericht enthält Informationen zur Nichtübereinstimmung und die zugehörigen Hinweise. Der Bericht umfasst auch Korrekturinformationen, wie der Diagnosetyp und die zugehörigen Korrekturhinweise.
 
@@ -103,7 +103,4 @@ Es wird empfohlen, einen eindeutigen Dokumenttyp für Korrekturen zu definieren,
 [Einrichten von Qualitätsprüfungsaufträgen (Aufgabenleitfaden)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-quality-orders)
 
 [Inspektion der Qualität von Waren (Aufgabenleitfaden)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
-
-
-
 

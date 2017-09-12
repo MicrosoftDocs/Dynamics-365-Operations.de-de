@@ -1,4 +1,4 @@
---- 
+---
 title: "Besitz des Lagerbestands auf Grundlage des Produktionsbedarfs ändern"
 description: "Dieses Verfahren zeigt, wie Sie den Eigentümer des Lieferungsbestandes vom Kreditor auf Ihre juristische Person ändern, wenn ein Bedarf für den Bestand in der Produktion vorhanden ist."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -51,5 +51,4 @@ Dieses Verfahren zeigt, wie Sie den Eigentümer des Lieferungsbestandes vom Kred
     * Wenn die Erfassung gebucht ist, wird der Bestand im Besitz des Kreditors über eine "Besitzänderungs"-Referenz freigegeben. Anschließend wird der Bestand über eine Lagerbuchung als verfügbar empfangen, die mit einem Produktzugang für Bestellung aktualisiert wird. Beachten Sie, dass nur Buchungen, die der gebuchten Erfassung zugeordnet sind, erstellt werden. Es werden keine voraussichtlichen Lagerbuchung erstellt.  
 2. Klicken Sie auf "OK".
 3. Schließen Sie die Seite.
-
 

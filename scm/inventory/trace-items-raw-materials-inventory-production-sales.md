@@ -1,7 +1,7 @@
 ---
 title: Verfolgen von Artikeln und Rohmaterialien im Bestand, in der Produktion und im Verkauf
 description: "In diesem Thema wird beschrieben, wie Sie Artikelverfolgung verwenden können, um erkennen zu können, wo Artikel oder Rohmaterial verwendet wurden, verwendet werden oder zukünftig in der Produktion und in den Verkaufsprozessen verwendet werden."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Sie Artikelverfolgung verwenden können, um erkennen zu können, wo Artikel oder Rohmaterial verwendet wurden, verwendet werden oder zukünftig in der Produktion und in den Verkaufsprozessen verwendet werden. 
+In diesem Thema wird beschrieben, wie Sie Artikelverfolgung verwenden können, um erkennen zu können, wo Artikel oder Rohmaterial verwendet wurden, verwendet werden oder zukünftig in der Produktion und in den Verkaufsprozessen verwendet werden.
 
 Artikelverfolgungsfunktionen sind auf der Seite **Artikelverfolgung** verfügbar. Die folgenden Abschnitte beschreiben, wie Sie die Artikelverfolgung verwenden können und welche Optionen und Einschränkungen es gibt.
 
@@ -142,7 +142,4 @@ Sie können den Bericht **Geliefert an Debitoren** generieren, um die Menge des 
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kann ich Kuppel- und Nebenprodukte verfolgen?
 Sie können Kuppelprodukte aber keine Nebenprodukte nachverfolgen, da Rückverfolgungsangaben in der Regel nicht Nebenprodukten zugewiesen werden. Wenn Sie einen Artikel nachverfolgen, beinhalten die Verfolgungsdetails alle zugehörigen Kuppelprodukte. Ein Knoten, der ein Kuppelprodukt enthält, umfasst das Wort "Kuppelprodukt" in den Details. Sie können Details zu einem Kuppelprodukt auch anzeigen, indem Sie den Knoten in den Verfolgungsdetails auswählen, und dann auf das Inforegister **Produktion** klicken.
-
-
-
 

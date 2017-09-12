@@ -1,4 +1,4 @@
---- 
+---
 title: Bestandswerte im Lagerort anpassen (grundlegendes Warehousing)
 description: "Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Buchens einer Lagerregulierungserfassung, um Bestandswerte von Produkten im Lagerort anzupassen."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Bu
 4. Klicken Sie auf "OK".
 5. Schließt das Formular.
 6. Schließen Sie die Seite.
-
 

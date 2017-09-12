@@ -1,4 +1,4 @@
---- 
+---
 title: Bestandswerte im Lagerort initialisieren
 description: "Dieses Verfahren zeigt Ihnen, wie der verfügbare Lagerbestand manuell mithilfe einer Lagerverlagerungserfassung aktualisiert wird."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Dieses Verfahren zeigt Ihnen, wie der verfügbare Lagerbestand manuell mithilfe 
 24. Klicken Sie auf "OK".
 25. Schließen Sie die Seite.
 26. Schließen Sie die Seite.
-
 

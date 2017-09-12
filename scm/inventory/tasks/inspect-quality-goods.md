@@ -1,4 +1,4 @@
---- 
+---
 title: "Qualität der Waren inspizieren"
 description: "Diese Prozedur zeigt, wie ein Qualitätsprüfungsauftrag bearbeitet wird."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -55,5 +55,4 @@ Diese Prozedur zeigt, wie ein Qualitätsprüfungsauftrag bearbeitet wird. Sie k�
 4. Klicken Sie auf Auswählen.
 5. Klicken Sie auf "OK".
 6. Schließen Sie die Seite.
-
 
