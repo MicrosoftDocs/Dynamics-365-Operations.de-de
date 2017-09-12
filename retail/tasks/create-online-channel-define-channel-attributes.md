@@ -17,47 +17,47 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 60e56e957208100b5eee5dd5a1ce86b0819df768
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 748c536692043a4cfe7d8b087066e12b3e7ddadc
 ms.contentlocale: de-de
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-online-channels-and-define-channel-attributes"></a> Onlinekanäle erstellen und Kanalattribute definieren
+# <a name="create-online-channels-and-define-channel-attributes"></a><span data-ttu-id="9c301-103"> Onlinekanäle erstellen und Kanalattribute definieren</span><span class="sxs-lookup"><span data-stu-id="9c301-103">Create online channels and define channel attributes</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen Online Kanals und dessen Hinzufügen zur Organisationshierarchie. Sie müssen die Organisationshierarchie erstellen, bevor Sie einen neuen Online Kanal erstellen können. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
+<span data-ttu-id="9c301-104">Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen Online Kanals und dessen Hinzufügen zur Organisationshierarchie.</span><span class="sxs-lookup"><span data-stu-id="9c301-104">This procedure walks through creating a new online channel and adding it to the organization hierarchy.</span></span> <span data-ttu-id="9c301-105">Sie müssen die Organisationshierarchie erstellen, bevor Sie einen neuen Online Kanal erstellen können.</span><span class="sxs-lookup"><span data-stu-id="9c301-105">You must create the organization hierarchy before you can create a new online channel.</span></span> <span data-ttu-id="9c301-106">Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="9c301-106">This procedure uses the USRT demo data company.</span></span>
 
 
-## <a name="create-a-new-online-channel"></a>Neuen Onlinechannel erstellen
-1. Navigieren Sie zu Einzelhandel und Handel > Kanäle > Onlineshops.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Name" einen Wert ein.
-4. Geben Sie im Feld 'Lagerort' einen Wert ein, oder wählen Sie einen Wert aus.
-5. Wählen Sie im Feld "Zeitzone des Shops" eine Option aus.
-6. Geben Sie im Feld "Standarddebitor" einen Wert ein oder wählen Sie einen Wert aus.
-7. Geben Sie im Feld "Debitorenadressbuch" einen Wert ein oder wählen Sie einen Wert aus.
-8. Geben Sie im Feld "Zahlungsbedingungen" einen Wert ein, oder wählen Sie einen Wert aus.
-9. Geben Sie im Feld "Zahlungsmethode" einen Wert ein, oder wählen Sie einen Wert aus.
-10. Geben Sie im Feld "E-Mail-Benachrichtigungsprofil" einen Wert ein, oder wählen Sie einen Wert aus.
-11. Erweitern Sie den Finanzdimensionsabschnitt.
-12. Geben Sie im Feld "BusinessUnit" einen Wert ein oder wählen Sie einen Wert aus.
-    * Legen Sie auf ähnliche Weise den Wert für alle anderen Standarddimensionen fest.  
-13. Klicken Sie auf "Speichern".
+## <a name="create-a-new-online-channel"></a><span data-ttu-id="9c301-107">Neuen Onlinechannel erstellen</span><span class="sxs-lookup"><span data-stu-id="9c301-107">Create a new online channel</span></span>
+1. <span data-ttu-id="9c301-108">Navigieren Sie zu Einzelhandel und Handel > Kanäle > Onlineshops.</span><span class="sxs-lookup"><span data-stu-id="9c301-108">Go to Retail and commerce > Channels > Online stores.</span></span>
+2. <span data-ttu-id="9c301-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="9c301-109">Click New.</span></span>
+3. <span data-ttu-id="9c301-110">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="9c301-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="9c301-111">Geben Sie im Feld 'Lagerort' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="9c301-111">In the Warehouse field, enter or select a value.</span></span>
+5. <span data-ttu-id="9c301-112">Wählen Sie im Feld "Zeitzone des Shops" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="9c301-112">In the Store time zone field, select an option.</span></span>
+6. <span data-ttu-id="9c301-113">Geben Sie im Feld "Standarddebitor" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="9c301-113">In the Default customer field, enter or select a value.</span></span>
+7. <span data-ttu-id="9c301-114">Geben Sie im Feld "Debitorenadressbuch" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="9c301-114">In the Customer address book field, enter or select a value.</span></span>
+8. <span data-ttu-id="9c301-115">Geben Sie im Feld "Zahlungsbedingungen" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="9c301-115">In the Terms of payment field, enter or select a value.</span></span>
+9. <span data-ttu-id="9c301-116">Geben Sie im Feld "Zahlungsmethode" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="9c301-116">In the Method of payment field, enter or select a value.</span></span>
+10. <span data-ttu-id="9c301-117">Geben Sie im Feld "E-Mail-Benachrichtigungsprofil" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="9c301-117">In the Email notification profile field, enter or select a value.</span></span>
+11. <span data-ttu-id="9c301-118">Erweitern Sie den Finanzdimensionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="9c301-118">Expand the Financial dimensions section.</span></span>
+12. <span data-ttu-id="9c301-119">Geben Sie im Feld "BusinessUnit" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="9c301-119">In the BusinessUnit field, enter or select a value.</span></span>
+    * <span data-ttu-id="9c301-120">Legen Sie auf ähnliche Weise den Wert für alle anderen Standarddimensionen fest.</span><span class="sxs-lookup"><span data-stu-id="9c301-120">Similarly set the value for all the other default dimensions.</span></span>  
+13. <span data-ttu-id="9c301-121">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="9c301-121">Click Save.</span></span>
 
-## <a name="add-the-online-channel-to-organization-hierarchy"></a>Online Kanal zur Organisationshierarchie hinzufügen
-1. Schließen Sie die Seite.
-2. Wechseln Sie zu "Organisationsverwaltung" > "Organisationen" > "Organisationshierarchien".
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-4. Klicken Sie auf "Ansicht".
-5. Klicken Sie auf "Bearbeiten".
-    * Sie können einen beliebigen Hierarchieknoten auswählen, unter dem Sie den neuen Kanal einfügen möchten.  
-6. Klicken Sie auf Einfügen.
-7. Klicken Sie auf "Einzelhandelskanal".
-8. Klicken Sie auf "OK".
-9. Klicken Sie auf "Veröffentlichen", um das Ablagedialogfeld zu öffnen.
-10. Geben Sie im Feld "Gültigkeitsdatum" ein Datum und eine Uhrzeit ein.
-11. Klicken Sie auf "Veröffentlichen".
+## <a name="add-the-online-channel-to-organization-hierarchy"></a><span data-ttu-id="9c301-122">Online Kanal zur Organisationshierarchie hinzufügen</span><span class="sxs-lookup"><span data-stu-id="9c301-122">Add the online channel to organization hierarchy</span></span>
+1. <span data-ttu-id="9c301-123">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="9c301-123">Close the page.</span></span>
+2. <span data-ttu-id="9c301-124">Wechseln Sie zu "Organisationsverwaltung" > "Organisationen" > "Organisationshierarchien".</span><span class="sxs-lookup"><span data-stu-id="9c301-124">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
+3. <span data-ttu-id="9c301-125">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="9c301-125">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="9c301-126">Klicken Sie auf "Ansicht".</span><span class="sxs-lookup"><span data-stu-id="9c301-126">Click View.</span></span>
+5. <span data-ttu-id="9c301-127">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="9c301-127">Click Edit.</span></span>
+    * <span data-ttu-id="9c301-128">Sie können einen beliebigen Hierarchieknoten auswählen, unter dem Sie den neuen Kanal einfügen möchten.</span><span class="sxs-lookup"><span data-stu-id="9c301-128">You can select any hierarchy node under which you want to insert the new channel.</span></span>  
+6. <span data-ttu-id="9c301-129">Klicken Sie auf Einfügen.</span><span class="sxs-lookup"><span data-stu-id="9c301-129">Click Insert.</span></span>
+7. <span data-ttu-id="9c301-130">Klicken Sie auf "Einzelhandelskanal".</span><span class="sxs-lookup"><span data-stu-id="9c301-130">Click Retail channel.</span></span>
+8. <span data-ttu-id="9c301-131">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="9c301-131">Click OK.</span></span>
+9. <span data-ttu-id="9c301-132">Klicken Sie auf "Veröffentlichen", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="9c301-132">Click Publish to open the drop dialog.</span></span>
+10. <span data-ttu-id="9c301-133">Geben Sie im Feld "Gültigkeitsdatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="9c301-133">In the Effective date field, enter a date and time.</span></span>
+11. <span data-ttu-id="9c301-134">Klicken Sie auf "Veröffentlichen".</span><span class="sxs-lookup"><span data-stu-id="9c301-134">Click Publish.</span></span>
 
 

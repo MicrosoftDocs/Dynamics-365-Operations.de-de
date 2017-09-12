@@ -22,79 +22,79 @@ ms.contentlocale: de-de
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="set-up-sales-commission-rules"></a>Vertriebsprovisionsregeln einrichten
+# <a name="set-up-sales-commission-rules"></a><span data-ttu-id="8656f-103">Vertriebsprovisionsregeln einrichten</span><span class="sxs-lookup"><span data-stu-id="8656f-103">Set up sales commission rules</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dieses Verfahren zeigt Ihnen, wie Vertriebsprovisionsberechnung und die Nachverfolgung aktivieren. Die Prozedur zeig, wie Debitoren- und Artikelprovisionsgruppen erstellt werden und ein ausgewählter Debitor und ein Produkt zu den jeweiligen Gruppen verknüpft werden. Diese Gruppen werden im Formular "Provisionsberechnungseinstellung" verwendet, um einen Debitor, einen Artikel und eine Verkäuferkombination zu erstellen, die mit dem Auftrag übereinstimmen muss, um die Verkäufer für eine Provision zu berechtigen. Debitoren- und Artikelprovisionsgruppen zu erstellen ist optional, da die Berechnung der Provision auch für einen einzelnen Debitor und/oder einen Artikel ausgeführt werden kann. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.
+<span data-ttu-id="8656f-104">Dieses Verfahren zeigt Ihnen, wie Vertriebsprovisionsberechnung und die Nachverfolgung aktivieren.</span><span class="sxs-lookup"><span data-stu-id="8656f-104">This procedure shows you how to set up and enable sales commission calculation and tracking.</span></span> <span data-ttu-id="8656f-105">Die Prozedur zeig, wie Debitoren- und Artikelprovisionsgruppen erstellt werden und ein ausgewählter Debitor und ein Produkt zu den jeweiligen Gruppen verknüpft werden.</span><span class="sxs-lookup"><span data-stu-id="8656f-105">The procedure shows how to create both customer and item commission groups, and then how to link a selected customer and product to the respective groups.</span></span> <span data-ttu-id="8656f-106">Diese Gruppen werden im Formular "Provisionsberechnungseinstellung" verwendet, um einen Debitor, einen Artikel und eine Verkäuferkombination zu erstellen, die mit dem Auftrag übereinstimmen muss, um die Verkäufer für eine Provision zu berechtigen.</span><span class="sxs-lookup"><span data-stu-id="8656f-106">Those groups are then used in the commission calculation setup to create a customer, item, and sales representatives combination that must be matched by the sales order to entitle the sales people to a commission.</span></span> <span data-ttu-id="8656f-107">Debitoren- und Artikelprovisionsgruppen zu erstellen ist optional, da die Berechnung der Provision auch für einen einzelnen Debitor und/oder einen Artikel ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="8656f-107">Creating customer and item commission groups are optional, as the calculation of commission can also be done for an individual customer and/or item.</span></span> <span data-ttu-id="8656f-108">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.</span><span class="sxs-lookup"><span data-stu-id="8656f-108">You can run this procedure in demo data company USMF or on your own data.</span></span>
 
 
-## <a name="set-up-commission-groups-and-commission-rates"></a>Einrichten von Provisionsgruppen und Provisionssätzen
-1. Wechseln Sie zu Vertrieb und Marketing Wechseln Sie zu "Vertrieb und Marketing" > "Provisionen" > "Debitorengruppen für Provision".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Gruppe" einen Wert ein.
-4. Geben Sie im Feld "Name" einen Wert ein.
-5. Klicken Sie auf "Speichern".
-6. Schließen Sie die Seite.
-7. Wechseln Sie zu "Vertrieb und Marketing" > "Provisionen" > "Artikelgruppen".
-8. Klicken Sie auf "Neu".
-9. Geben Sie im Feld "Gruppe" einen Wert ein.
-10. Geben Sie im Feld "Name" einen Wert ein.
-11. Schließen Sie die Seite.
-12. Wechseln Sie zu Vertrieb und Marketing > Provisionen > Vertriebsgruppen.
-    * Eine Provisionsverkaufsgruppe gibt die Mitarbeiter mit den Verkäuferrollen an, die berechtigt sind, eine Provision zu erhalten, wenn ein bestimmte Artikel zugewiesener Verkäufer der relevanten Verkaufsgruppen Artikel kauf.  
-    * Im USMF-Demodatunternehmen gibt eine Verkaufsgruppe mit dem Namen "Vertriebsmitarbeiter US".  
-13. Klicken Sie im Aktivitätsbereich auf "Allgemein".
-14. Klicken Sie auf "Verkäufer".
-    * Der Seite "Vertriebsmitarbeiter" zeigt eine Liste der Vertriebsmitarbeiter des Unternehmens an, die einer bestimmten Provisionsgruppe zugeordnet sind. Sie können mehrere Verkäufer derselben Gruppe zuweisen und den jeweilige Anteil der gesamten Kommissionsgebühr als prozentualen Wert definieren. Die gesamten Provisionsanteile zu allen Mitarbeitern dürfen 100 nicht überschreiten.  
-15. Markieren Sie in der Liste die ausgewählte Zeile.
-16. Klicken Sie auf "Bearbeiten".
-17. Legen Sie "Provisionsanteil" auf "50" fest.
-18. Klicken Sie auf "Neu".
-19. Klicken Sie im Feld "Name" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-20. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise im Feld Name mit einem Wert "Susan Burk".
-21. Klicken Sie auf Auswählen.
-22. Legen Sie "Provisionsanteil" auf "50" fest.
-23. Klicken Sie auf "Speichern".
-24. Wechseln Sie zu Vertrieb und Marketing Wechseln Sie zu "Vertrieb und Marketing" > "Provisionen" > "Provisionsberechnung".
-    * Auf der Provisionsberechnungsseite definieren Sie den Kommissionssatz, den der Mitarbeiter für eine Verkaufsbuchung erhalten soll, wenn diese eine vorab festgelegte Kombination aus Debitor und Produkt enthält. Im Rahmen der Kommissionssatzeinrichtung müssen Sie die Provisionsberechnungsbasis angeben und ob sie Rabatte umfassen oder ausschließen soll. Sie können auch einen Gültigkeitszeitraum für den Kommissionssatz eingeben.  
-25. Klicken Sie auf "Neu".
-26. Wählen Sie im Feld "Artikelcode" die Option "Gruppe" aus.
-27. Klicken Sie im Feld Artikelrelation auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-28. Wählen Sie in der Liste die Gruppe aus, die Sie erstellt haben.
-29. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-30. Wählen Sie im Feld "Debitorcode" "Gruppe" aus.
-31. Klicken Sie im Feld "Debitorenrelation" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-32. Wählen Sie in der Liste die Gruppe aus, die Sie erstellt haben.
-33. Klicken Sie im Feld "Vertriebsmitarbeiter" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-34. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Verwenden Sie die Option "Vor Positionsrabatt".  
-    * Verwenden Sie die Option "Umsatzerlös" als Grundlage für Provisionswertsberechnung.    
-35. Geben Sie im Feld "Provisionsprozentsatz" eine Zahl ein.
-36. Klicken Sie auf "Speichern".
+## <a name="set-up-commission-groups-and-commission-rates"></a><span data-ttu-id="8656f-109">Einrichten von Provisionsgruppen und Provisionssätzen</span><span class="sxs-lookup"><span data-stu-id="8656f-109">Set up commission groups and commission rates</span></span>
+1. <span data-ttu-id="8656f-110">Wechseln Sie zu Vertrieb und Marketing Wechseln Sie zu "Vertrieb und Marketing" > "Provisionen" > "Debitorengruppen für Provision".</span><span class="sxs-lookup"><span data-stu-id="8656f-110">Go to Sales and marketing > Commissions > Customer groups for commission.</span></span>
+2. <span data-ttu-id="8656f-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="8656f-111">Click New.</span></span>
+3. <span data-ttu-id="8656f-112">Geben Sie im Feld "Gruppe" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8656f-112">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="8656f-113">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8656f-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="8656f-114">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="8656f-114">Click Save.</span></span>
+6. <span data-ttu-id="8656f-115">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="8656f-115">Close the page.</span></span>
+7. <span data-ttu-id="8656f-116">Wechseln Sie zu "Vertrieb und Marketing" > "Provisionen" > "Artikelgruppen".</span><span class="sxs-lookup"><span data-stu-id="8656f-116">Go to Sales and marketing > Commissions > Item groups.</span></span>
+8. <span data-ttu-id="8656f-117">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="8656f-117">Click New.</span></span>
+9. <span data-ttu-id="8656f-118">Geben Sie im Feld "Gruppe" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8656f-118">In the Group field, type a value.</span></span>
+10. <span data-ttu-id="8656f-119">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="8656f-119">In the Name field, type a value.</span></span>
+11. <span data-ttu-id="8656f-120">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="8656f-120">Close the page.</span></span>
+12. <span data-ttu-id="8656f-121">Wechseln Sie zu Vertrieb und Marketing > Provisionen > Vertriebsgruppen.</span><span class="sxs-lookup"><span data-stu-id="8656f-121">Go to Sales and marketing > Commissions > Sales groups.</span></span>
+    * <span data-ttu-id="8656f-122">Eine Provisionsverkaufsgruppe gibt die Mitarbeiter mit den Verkäuferrollen an, die berechtigt sind, eine Provision zu erhalten, wenn ein bestimmte Artikel zugewiesener Verkäufer der relevanten Verkaufsgruppen Artikel kauf.</span><span class="sxs-lookup"><span data-stu-id="8656f-122">A Commission sales group specifies the employees in sales representative roles who are eligible to receive a commission when a customer associated with the relevant sales group buys certain items.</span></span>  
+    * <span data-ttu-id="8656f-123">Im USMF-Demodatunternehmen gibt eine Verkaufsgruppe mit dem Namen "Vertriebsmitarbeiter US".</span><span class="sxs-lookup"><span data-stu-id="8656f-123">In the USMF demo data company, there is a sales group called "Sales reps US."</span></span>  
+13. <span data-ttu-id="8656f-124">Klicken Sie im Aktivitätsbereich auf "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="8656f-124">On the Action Pane, click General.</span></span>
+14. <span data-ttu-id="8656f-125">Klicken Sie auf "Verkäufer".</span><span class="sxs-lookup"><span data-stu-id="8656f-125">Click Sales rep..</span></span>
+    * <span data-ttu-id="8656f-126">Der Seite "Vertriebsmitarbeiter"</span><span class="sxs-lookup"><span data-stu-id="8656f-126">The Sales rep.</span></span> <span data-ttu-id="8656f-127">zeigt eine Liste der Vertriebsmitarbeiter des Unternehmens an, die einer bestimmten Provisionsgruppe zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="8656f-127">page displays a list of the company's sales people who are associated with a specific commission group.</span></span> <span data-ttu-id="8656f-128">Sie können mehrere Verkäufer derselben Gruppe zuweisen und den jeweilige Anteil der gesamten Kommissionsgebühr als prozentualen Wert definieren.</span><span class="sxs-lookup"><span data-stu-id="8656f-128">You can assign multiple sales representatives to the same group and define their respective share of the total commission fee as a percentage value.</span></span> <span data-ttu-id="8656f-129">Die gesamten Provisionsanteile zu allen Mitarbeitern dürfen 100 nicht überschreiten.</span><span class="sxs-lookup"><span data-stu-id="8656f-129">The total commission share across all employees must not exceed 100.</span></span>  
+15. <span data-ttu-id="8656f-130">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="8656f-130">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="8656f-131">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="8656f-131">Click Edit.</span></span>
+17. <span data-ttu-id="8656f-132">Legen Sie "Provisionsanteil" auf "50" fest.</span><span class="sxs-lookup"><span data-stu-id="8656f-132">Set Commission share to '50'.</span></span>
+18. <span data-ttu-id="8656f-133">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="8656f-133">Click New.</span></span>
+19. <span data-ttu-id="8656f-134">Klicken Sie im Feld "Name" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8656f-134">In the Name field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="8656f-135">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="8656f-135">Use the Quick Filter to find records.</span></span> <span data-ttu-id="8656f-136">Filtern Sie beispielsweise im Feld Name mit einem Wert "Susan Burk".</span><span class="sxs-lookup"><span data-stu-id="8656f-136">For example, filter on the Name field with a value of 'Susan Burk'.</span></span>
+21. <span data-ttu-id="8656f-137">Klicken Sie auf Auswählen.</span><span class="sxs-lookup"><span data-stu-id="8656f-137">Click Select.</span></span>
+22. <span data-ttu-id="8656f-138">Legen Sie "Provisionsanteil" auf "50" fest.</span><span class="sxs-lookup"><span data-stu-id="8656f-138">Set Commission share to '50'.</span></span>
+23. <span data-ttu-id="8656f-139">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="8656f-139">Click Save.</span></span>
+24. <span data-ttu-id="8656f-140">Wechseln Sie zu Vertrieb und Marketing Wechseln Sie zu "Vertrieb und Marketing" > "Provisionen" > "Provisionsberechnung".</span><span class="sxs-lookup"><span data-stu-id="8656f-140">Go to Sales and marketing > Commissions > Commission calculation.</span></span>
+    * <span data-ttu-id="8656f-141">Auf der Provisionsberechnungsseite definieren Sie den Kommissionssatz, den der Mitarbeiter für eine Verkaufsbuchung erhalten soll, wenn diese eine vorab festgelegte Kombination aus Debitor und Produkt enthält.</span><span class="sxs-lookup"><span data-stu-id="8656f-141">In the Commission calculation page you define the commission rate that the employee is to receive for a sales transaction when it contains the pre-set combination of customer and product.</span></span> <span data-ttu-id="8656f-142">Im Rahmen der Kommissionssatzeinrichtung müssen Sie die Provisionsberechnungsbasis angeben und ob sie Rabatte umfassen oder ausschließen soll.</span><span class="sxs-lookup"><span data-stu-id="8656f-142">As part of the commission rate setup, you must specify the commission calculation basis and whether it should include or exclude discounts.</span></span> <span data-ttu-id="8656f-143">Sie können auch einen Gültigkeitszeitraum für den Kommissionssatz eingeben.</span><span class="sxs-lookup"><span data-stu-id="8656f-143">You can also enter a validity period for when the commission rate is active.</span></span>  
+25. <span data-ttu-id="8656f-144">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="8656f-144">Click New.</span></span>
+26. <span data-ttu-id="8656f-145">Wählen Sie im Feld "Artikelcode" die Option "Gruppe" aus.</span><span class="sxs-lookup"><span data-stu-id="8656f-145">In the Item code field, select 'Group'.</span></span>
+27. <span data-ttu-id="8656f-146">Klicken Sie im Feld Artikelrelation auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8656f-146">In the Item relation field, click the drop-down button to open the lookup.</span></span>
+28. <span data-ttu-id="8656f-147">Wählen Sie in der Liste die Gruppe aus, die Sie erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="8656f-147">In the list, find and select the group that you created earlier.</span></span>
+29. <span data-ttu-id="8656f-148">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="8656f-148">In the list, click the link in the selected row.</span></span>
+30. <span data-ttu-id="8656f-149">Wählen Sie im Feld "Debitorcode" "Gruppe" aus.</span><span class="sxs-lookup"><span data-stu-id="8656f-149">In the Customer code field, select 'Group'.</span></span>
+31. <span data-ttu-id="8656f-150">Klicken Sie im Feld "Debitorenrelation" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8656f-150">In the Customer relation field, click the drop-down button to open the lookup.</span></span>
+32. <span data-ttu-id="8656f-151">Wählen Sie in der Liste die Gruppe aus, die Sie erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="8656f-151">In the list, select the group that you set up earlier.</span></span>
+33. <span data-ttu-id="8656f-152">Klicken Sie im Feld "Vertriebsmitarbeiter"</span><span class="sxs-lookup"><span data-stu-id="8656f-152">In the Sales rep.</span></span> <span data-ttu-id="8656f-153">auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8656f-153">relation field, click the drop-down button to open the lookup.</span></span>
+34. <span data-ttu-id="8656f-154">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="8656f-154">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="8656f-155">Verwenden Sie die Option "Vor Positionsrabatt".</span><span class="sxs-lookup"><span data-stu-id="8656f-155">Keep the "Before line discount" option.</span></span>  
+    * <span data-ttu-id="8656f-156">Verwenden Sie die Option "Umsatzerlös" als Grundlage für Provisionswertsberechnung.</span><span class="sxs-lookup"><span data-stu-id="8656f-156">Keep the "Revenue" option as the basis for commission value calculation.</span></span>    
+35. <span data-ttu-id="8656f-157">Geben Sie im Feld "Provisionsprozentsatz" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="8656f-157">In the Commission percentage field, enter a number.</span></span>
+36. <span data-ttu-id="8656f-158">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="8656f-158">Click Save.</span></span>
 
-## <a name="setting-up-commission-posting"></a>Einrichten der Provisionsbuchung
-1. Wechseln Sie zu "Vertrieb und Marketing" > "Provisionen" > "Provisionsbuchung".
-    * Kommissionsgebühren werden den Mitarbeitern ausgezahlt und müssen daher eingerichtet werden, um richtige wertmäßige Buchung auf die entsprechenden Konten im Hauptbuch sicherzustellen. Dieser wird auf der Provisionsbuchungsseite durchgeführt. Überprüfen Sie die Einrichtung im aktuellen Unternehmen. In der Regel werden Provisionsbeträge in ein dediziertes Ausgabenkonto gebucht über ein dediziertes Kreditorenkonto ausgeglichen. Wenn Sie nicht die Provisionsbuchungsregeleinstellung durchgeführt haben, kann das System Rechnungsstellung eines Auftrags der nicht freigegebene Provisionen hat nicht durchführen.  
-2. Schließen Sie die Seite.
+## <a name="setting-up-commission-posting"></a><span data-ttu-id="8656f-159">Einrichten der Provisionsbuchung</span><span class="sxs-lookup"><span data-stu-id="8656f-159">Setting up commission posting</span></span>
+1. <span data-ttu-id="8656f-160">Wechseln Sie zu "Vertrieb und Marketing" > "Provisionen" > "Provisionsbuchung".</span><span class="sxs-lookup"><span data-stu-id="8656f-160">Go to Sales and marketing > Commissions > Commission posting.</span></span>
+    * <span data-ttu-id="8656f-161">Kommissionsgebühren werden den Mitarbeitern ausgezahlt und müssen daher eingerichtet werden, um richtige wertmäßige Buchung auf die entsprechenden Konten im Hauptbuch sicherzustellen.</span><span class="sxs-lookup"><span data-stu-id="8656f-161">Commission fees are payable to the employees and must therefore be set up to ensure correct financial posting to the appropriate accounts in the General ledger.</span></span> <span data-ttu-id="8656f-162">Dieser wird auf der Provisionsbuchungsseite durchgeführt.</span><span class="sxs-lookup"><span data-stu-id="8656f-162">This is done in the Commission posting page.</span></span> <span data-ttu-id="8656f-163">Überprüfen Sie die Einrichtung im aktuellen Unternehmen.</span><span class="sxs-lookup"><span data-stu-id="8656f-163">Review the setup that is available for the current company.</span></span> <span data-ttu-id="8656f-164">In der Regel werden Provisionsbeträge in ein dediziertes Ausgabenkonto gebucht über ein dediziertes Kreditorenkonto ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="8656f-164">Typically, the commission amounts are posted to a dedicated expense account and are offset to a dedicated payable account.</span></span> <span data-ttu-id="8656f-165">Wenn Sie nicht die Provisionsbuchungsregeleinstellung durchgeführt haben, kann das System Rechnungsstellung eines Auftrags der nicht freigegebene Provisionen hat nicht durchführen.</span><span class="sxs-lookup"><span data-stu-id="8656f-165">If you don't have the commission posting rules set up, the system will fail to complete invoicing of a sales order which has eligible commissions.</span></span>  
+2. <span data-ttu-id="8656f-166">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="8656f-166">Close the page.</span></span>
 
-## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a>Zuweisen einer Provisionsgruppe zu einem Debitor und einem Produkt
-1. Wechseln Sie zu "Vertrieb und Marketing" > "Debitoren" > "Alle Debitoren".
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-4. Klicken Sie auf Bearbeiten.
-5. Erweitern Sie den Auftragsstandardabschnitt.
-6. Klicken Sie im Feld "Provisionsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-7. Wählen Sie in der Liste die Gruppe aus, die Sie erstellt haben.
-8. Klicken Sie im Feld "Verkaufsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-10. Klicken Sie auf "Speichern".
-11. Wechseln Sie zu "Produktinformationsverwaltung" > "Produkte" > "Freigegebene Produkte".
-12. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise im Feld "Artikelnummer" mit dem Wert "T0020".
-13. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-14. Klicken Sie auf Bearbeiten.
-15. Erweitern Sie den Abschnitt 'Verkaufen'.
-16. Klicken Sie im Feld "Provisionsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-17. Wählen Sie in der Liste die Provisionsgruppe aus, die Sie erstellt haben.
+## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a><span data-ttu-id="8656f-167">Zuweisen einer Provisionsgruppe zu einem Debitor und einem Produkt</span><span class="sxs-lookup"><span data-stu-id="8656f-167">Assign a commission group to a customer and a product</span></span>
+1. <span data-ttu-id="8656f-168">Wechseln Sie zu "Vertrieb und Marketing" > "Debitoren" > "Alle Debitoren".</span><span class="sxs-lookup"><span data-stu-id="8656f-168">Go to Sales and marketing > Customers > All customers.</span></span>
+2. <span data-ttu-id="8656f-169">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="8656f-169">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="8656f-170">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="8656f-170">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="8656f-171">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="8656f-171">Click Edit.</span></span>
+5. <span data-ttu-id="8656f-172">Erweitern Sie den Auftragsstandardabschnitt.</span><span class="sxs-lookup"><span data-stu-id="8656f-172">Expand the Sales order defaults section.</span></span>
+6. <span data-ttu-id="8656f-173">Klicken Sie im Feld "Provisionsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8656f-173">In the Commission group field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="8656f-174">Wählen Sie in der Liste die Gruppe aus, die Sie erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="8656f-174">In the list, select the group that you created earlier.</span></span>
+8. <span data-ttu-id="8656f-175">Klicken Sie im Feld "Verkaufsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8656f-175">In the Sales group field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="8656f-176">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="8656f-176">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="8656f-177">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="8656f-177">Click Save.</span></span>
+11. <span data-ttu-id="8656f-178">Wechseln Sie zu "Produktinformationsverwaltung" > "Produkte" > "Freigegebene Produkte".</span><span class="sxs-lookup"><span data-stu-id="8656f-178">Go to Product information management > Products > Released products.</span></span>
+12. <span data-ttu-id="8656f-179">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="8656f-179">Use the Quick Filter to find records.</span></span> <span data-ttu-id="8656f-180">Filtern Sie beispielsweise im Feld "Artikelnummer" mit dem Wert "T0020".</span><span class="sxs-lookup"><span data-stu-id="8656f-180">For example, filter on the Item number field with a value of 'T0020 '.</span></span>
+13. <span data-ttu-id="8656f-181">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="8656f-181">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="8656f-182">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="8656f-182">Click Edit.</span></span>
+15. <span data-ttu-id="8656f-183">Erweitern Sie den Abschnitt 'Verkaufen'.</span><span class="sxs-lookup"><span data-stu-id="8656f-183">Expand the Sell section.</span></span>
+16. <span data-ttu-id="8656f-184">Klicken Sie im Feld "Provisionsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="8656f-184">In the Commission group field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="8656f-185">Wählen Sie in der Liste die Provisionsgruppe aus, die Sie erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="8656f-185">In the list, select the commission group that you created earlier.</span></span>
 
 

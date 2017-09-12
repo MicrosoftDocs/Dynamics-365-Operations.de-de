@@ -16,40 +16,40 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 01fbf4964dfcecab272204db9c3f5068ca1879cb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9b2300a593c9e153ee598fa72e29907c82f2b79e
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Den Warenzugang auf der Bestellung erfassen
+# <a name="record-the-receipt-of-goods-on-the-purchase-order"></a><span data-ttu-id="cbdbf-103">Den Warenzugang auf der Bestellung erfassen</span><span class="sxs-lookup"><span data-stu-id="cbdbf-103">Record the receipt of goods on the purchase order</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt Ihnen an, wie der Zugang von Waren direkt auf einer Bestellung erfasst wird. Es ist auch möglich, den Produktzugang im Lagerort zu erfassen und ihn dann später auf der Bestellung aufzuzeichnen. Diese Aufgabe wird gewöhnlich von einem Einkäufer oder einem Kreditorenkontenkoordinator ausgeführt. Das Beispiel, das in diesem Leitfaden angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden. Das Beispiel umfasst Schritte, um eine einfache Bestellung zu erstellen, damit Sie die Prozedur als Aufgabenleitfaden wiedergeben können. Wenn Sie die Prozedur mit Ihren eigenen Daten verwendeten, würden Sie bei der Unteraufgabe "Warenzugang erfassen" beginnen.
+<span data-ttu-id="cbdbf-104">Diese Prozedur zeigt Ihnen an, wie der Zugang von Waren direkt auf einer Bestellung erfasst wird.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-104">This procedure shows you how to record receipt of goods directly on a purchase order.</span></span> <span data-ttu-id="cbdbf-105">Es ist auch möglich, den Produktzugang im Lagerort zu erfassen und ihn dann später auf der Bestellung aufzuzeichnen.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-105">It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order.</span></span> <span data-ttu-id="cbdbf-106">Diese Aufgabe wird gewöhnlich von einem Einkäufer oder einem Kreditorenkontenkoordinator ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-106">This task is typically done by a purchasing agent or an accounts payable coordinator.</span></span> <span data-ttu-id="cbdbf-107">Das Beispiel, das in diesem Leitfaden angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-107">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="cbdbf-108">Das Beispiel umfasst Schritte, um eine einfache Bestellung zu erstellen, damit Sie die Prozedur als Aufgabenleitfaden wiedergeben können.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-108">The example includes steps to create a simple purchase order so that you can play the procedure as a task guide.</span></span> <span data-ttu-id="cbdbf-109">Wenn Sie die Prozedur mit Ihren eigenen Daten verwendeten, würden Sie bei der Unteraufgabe "Warenzugang erfassen" beginnen.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-109">If you were using the procedure on your own data, you would start at the Record receipt of goods subtask.</span></span>
 
 
-## <a name="prepare-a-new-purchase-order-for-receipt-of-goods"></a>Eine neue Bestellung für den Warenzugang vorbereiten
-1. Wechseln Sie zu "Beschaffung" > "Bestellung" > "Alle Bestellungen".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Kreditorenkonto" den Wert US-101 ein.
-4. Klicken Sie auf "OK".
-5. Geben Sie im Feld "Artikelnummer" den Wert M0001 ein.
-6. Geben Sie im Feld "Menge" den Wert "5" ein.
-7. Klicken Sie im Aktivitätsbereich auf "Einkauf".
-8. Klicken Sie auf "Bestätigen".
+## <a name="prepare-a-new-purchase-order-for-receipt-of-goods"></a><span data-ttu-id="cbdbf-110">Eine neue Bestellung für den Warenzugang vorbereiten</span><span class="sxs-lookup"><span data-stu-id="cbdbf-110">Prepare a new purchase order for receipt of goods</span></span>
+1. <span data-ttu-id="cbdbf-111">Wechseln Sie zu "Beschaffung" > "Bestellung" > "Alle Bestellungen".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-111">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="cbdbf-112">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-112">Click New.</span></span>
+3. <span data-ttu-id="cbdbf-113">Geben Sie im Feld "Kreditorenkonto" den Wert US-101 ein.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-113">In the Vendor account field, enter US-101.</span></span>
+4. <span data-ttu-id="cbdbf-114">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-114">Click OK.</span></span>
+5. <span data-ttu-id="cbdbf-115">Geben Sie im Feld "Artikelnummer" den Wert M0001 ein.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-115">In the Item number field, enter M0001.</span></span>
+6. <span data-ttu-id="cbdbf-116">Geben Sie im Feld "Menge" den Wert "5" ein.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-116">In the Quantity field, enter 5.</span></span>
+7. <span data-ttu-id="cbdbf-117">Klicken Sie im Aktivitätsbereich auf "Einkauf".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-117">On the Action Pane, click Purchase.</span></span>
+8. <span data-ttu-id="cbdbf-118">Klicken Sie auf "Bestätigen".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-118">Click Confirm.</span></span>
 
-## <a name="record-receipt-of-goods"></a>Warenzugang erfassen
-1. Klicken Sie im Aktivitätsbereich auf "Empfangen".
-2. Klicken Sie auf "Produktzugang".
-    * Das Feld "Menge" ermöglicht es Ihnen, verschiedene Optionen für die Menge auszuwählen, die Sie empfangen möchten. Zum Beispiel wenn eine Menge vorher im Lagerort registriert worden ist, können Sie "Erfasste Menge" auswählen.  Für dieses Beispiel verwenden Sie den Wert "Bestellte Menge".   
-3. Geben Sie im Feld "Produktzugang" irgendeinen Wert ein.
-    * Dieses Feld wird benutzt, um einen Verweis einzugeben, der als Beleg für die Produktzugangserfassung verwendet wird.  
-4. Erweitern Sie den Abschnitt "Positionen".
-5. Legen Sie die Menge auf "4" fest.
-    * Hier sind Sie in der Lage, die Menge manuell zu anzugeben, die für jede Position zum Auftrag empfangen wird.  
-6. Reduzieren Sie den Abschnitt "Positionen".
-7. Klicken Sie auf "OK".
-    * Die Waren sind jetzt auf der Bestellung als empfangen erfasst worden und eine Produktzugangserfassung ist als Dokument, um dies widerzuspiegeln, erstellt worden. Sie können die Aktivität "Produktzugang" verwenden, um die Erfassungen zu überprüfen, die mit der Bestellung erstellt wurden und um zu sehen, was wann empfangen wurde.  
+## <a name="record-receipt-of-goods"></a><span data-ttu-id="cbdbf-119">Warenzugang erfassen</span><span class="sxs-lookup"><span data-stu-id="cbdbf-119">Record receipt of goods</span></span>
+1. <span data-ttu-id="cbdbf-120">Klicken Sie im Aktivitätsbereich auf "Empfangen".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-120">On the Action Pane, click Receive.</span></span>
+2. <span data-ttu-id="cbdbf-121">Klicken Sie auf "Produktzugang".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-121">Click Product receipt.</span></span>
+    * <span data-ttu-id="cbdbf-122">Das Feld "Menge" ermöglicht es Ihnen, verschiedene Optionen für die Menge auszuwählen, die Sie empfangen möchten.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-122">The Quantity field allows you to select different options for the quantity that you want to receive.</span></span> <span data-ttu-id="cbdbf-123">Zum Beispiel wenn eine Menge vorher im Lagerort registriert worden ist, können Sie "Erfasste Menge" auswählen.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-123">For example, if a quantity has previously been registered in the warehouse, you can select Registered quantity.</span></span>  <span data-ttu-id="cbdbf-124">Für dieses Beispiel verwenden Sie den Wert "Bestellte Menge".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-124">For this example, use the value Ordered quantity.</span></span>   
+3. <span data-ttu-id="cbdbf-125">Geben Sie im Feld "Produktzugang" irgendeinen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-125">In the Product receipt field, type any value.</span></span>
+    * <span data-ttu-id="cbdbf-126">Dieses Feld wird benutzt, um einen Verweis einzugeben, der als Beleg für die Produktzugangserfassung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-126">This field is used to enter a reference that will be used as voucher for the product receipt journal.</span></span>  
+4. <span data-ttu-id="cbdbf-127">Erweitern Sie den Abschnitt "Positionen".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-127">Expand the Lines section.</span></span>
+5. <span data-ttu-id="cbdbf-128">Legen Sie die Menge auf "4" fest.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-128">Set Quantity to '4'.</span></span>
+    * <span data-ttu-id="cbdbf-129">Hier sind Sie in der Lage, die Menge manuell zu anzugeben, die für jede Position zum Auftrag empfangen wird.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-129">Here you are able to manually specify the quantity that is being received for each line on the order.</span></span>  
+6. <span data-ttu-id="cbdbf-130">Reduzieren Sie den Abschnitt "Positionen".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-130">Collapse the Lines section.</span></span>
+7. <span data-ttu-id="cbdbf-131">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="cbdbf-131">Click OK.</span></span>
+    * <span data-ttu-id="cbdbf-132">Die Waren sind jetzt auf der Bestellung als empfangen erfasst worden und eine Produktzugangserfassung ist als Dokument, um dies widerzuspiegeln, erstellt worden.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-132">The goods have now been recorded as received on the purchase order, and a product receipt journal has been created as document to reflect this.</span></span> <span data-ttu-id="cbdbf-133">Sie können die Aktivität "Produktzugang" verwenden, um die Erfassungen zu überprüfen, die mit der Bestellung erstellt wurden und um zu sehen, was wann empfangen wurde.</span><span class="sxs-lookup"><span data-stu-id="cbdbf-133">You can use the Product receipt action to review the journals created with the purchase order, and see what was received, and when.</span></span>  
 
 

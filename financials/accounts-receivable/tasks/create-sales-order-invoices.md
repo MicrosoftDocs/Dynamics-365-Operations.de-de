@@ -16,62 +16,62 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 50c0ee41220461e282aace85f10a0e734a2ab688
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4b72d5b283f9401d358ee68f4650c486ebb2fd7d
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-sales-order-invoices"></a>Auftragsrechnungen erstellen
+# <a name="create-sales-order-invoices"></a><span data-ttu-id="598f6-103">Auftragsrechnungen erstellen</span><span class="sxs-lookup"><span data-stu-id="598f6-103">Create sales order invoices</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dieses Aufgabenhandbuch beschreibt, wie ein Auftrag fakturiert wird, einschließlich des Zusammenführens von Rechnungen sowie der Stapelverarbeitung. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
+<span data-ttu-id="598f6-104">Dieses Aufgabenhandbuch beschreibt, wie ein Auftrag fakturiert wird, einschließlich des Zusammenführens von Rechnungen sowie der Stapelverarbeitung.</span><span class="sxs-lookup"><span data-stu-id="598f6-104">This task guide describes invoicing a sales order, including merging invoices and batch processing.</span></span> <span data-ttu-id="598f6-105">Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="598f6-105">This procedure uses the USMF demo company.</span></span>
 
 
-## <a name="create-an-invoice-from-a-sales-order"></a>Eine Rechnung von einem Auftrag erstellen
-1. Wechseln Sie zu "Debitoren" > "Aufträge" > "Versendete, jedoch nicht fakturierte Aufträge".
-2. Wählen Sie einen Auftrag in der Liste aus. 
-3. Klicken Sie im Aktivitätsbereich auf "Rechnung".
-4. Klicken Sie auf "Rechnung".
-    * Beachten Sie, dass diesem Auftrag mehrere Lieferscheine zugeordneten sind. Darin wird nur das Wort <multiple> anstelle der Lieferscheinnummer angezeigt.  
-5. Erweitern Sie den Abschnitt "Parameter".
-    * Buchen muss auf "Ja" festgelegt werden, um die Rechnung zu buchen. Sie können auch das Buchen ausschalten und die Rechnung nur drucken. Sie können jedoch das gleiche Ergebnis erreichen, indem Sie eine Proforma-Rechnung anstelle einer Rechnung erstellen.  
-    * Diese Option wird für Stapelverarbeitungsaufträge genutzt. Die Anfrage läuft, wenn der Batchauftrag ausgeführt wrid.    
-6. Wählen Sie im Feld "Drucken" die Option "Nach" aus.
-7. Wählen Sie "Ja" für "Rechnung drucken" aus.
-    * Die Druckverwaltung kann mehrere Kopien der Rechnung drucken und auch die Rechnung per E-Mail als PDF-Datei senden.  
-8. Wählen Sie im Feld "Chargen Drucken" die Option "Zusammenfassen" aus.
-9. Wählen Sie im Feld "Kreditlimit prüfen" die Option "Saldo" aus.
-10. Klicken Sie auf "Abbrechen".
+## <a name="create-an-invoice-from-a-sales-order"></a><span data-ttu-id="598f6-106">Eine Rechnung von einem Auftrag erstellen</span><span class="sxs-lookup"><span data-stu-id="598f6-106">Create an invoice from a sales order</span></span>
+1. <span data-ttu-id="598f6-107">Wechseln Sie zu "Debitoren" > "Aufträge" > "Versendete, jedoch nicht fakturierte Aufträge".</span><span class="sxs-lookup"><span data-stu-id="598f6-107">Go to Accounts receivable > Orders > Shipped but not invoiced sales orders.</span></span>
+2. <span data-ttu-id="598f6-108">Wählen Sie einen Auftrag in der Liste aus.</span><span class="sxs-lookup"><span data-stu-id="598f6-108">Select a sales order in the list.</span></span> 
+3. <span data-ttu-id="598f6-109">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="598f6-109">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="598f6-110">Klicken Sie auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="598f6-110">Click Invoice.</span></span>
+    * <span data-ttu-id="598f6-111">Beachten Sie, dass diesem Auftrag mehrere Lieferscheine zugeordneten sind.</span><span class="sxs-lookup"><span data-stu-id="598f6-111">Note that this sales order has multiple packing slips associated with it.</span></span> <span data-ttu-id="598f6-112">Darin wird nur das Wort <multiple> anstelle der Lieferscheinnummer angezeigt.</span><span class="sxs-lookup"><span data-stu-id="598f6-112">It will only show the word <multiple> instead of the packing slip number.</span></span>  
+5. <span data-ttu-id="598f6-113">Erweitern Sie den Abschnitt "Parameter".</span><span class="sxs-lookup"><span data-stu-id="598f6-113">Expand the Parameters section.</span></span>
+    * <span data-ttu-id="598f6-114">Buchen muss auf "Ja" festgelegt werden, um die Rechnung zu buchen.</span><span class="sxs-lookup"><span data-stu-id="598f6-114">Posting must be set to Yes to post the invoice.</span></span> <span data-ttu-id="598f6-115">Sie können auch das Buchen ausschalten und die Rechnung nur drucken.</span><span class="sxs-lookup"><span data-stu-id="598f6-115">You can also turn off posting and just print the invoice.</span></span> <span data-ttu-id="598f6-116">Sie können jedoch das gleiche Ergebnis erreichen, indem Sie eine Proforma-Rechnung anstelle einer Rechnung erstellen.</span><span class="sxs-lookup"><span data-stu-id="598f6-116">However, you can accomplish the same result by creating a proforma invoice instead of an invoice.</span></span>  
+    * <span data-ttu-id="598f6-117">Diese Option wird für Stapelverarbeitungsaufträge genutzt.</span><span class="sxs-lookup"><span data-stu-id="598f6-117">This option is used for batch jobs.</span></span> <span data-ttu-id="598f6-118">Die Anfrage läuft, wenn der Batchauftrag ausgeführt wrid.</span><span class="sxs-lookup"><span data-stu-id="598f6-118">The query is run when the batch job is run.</span></span>    
+6. <span data-ttu-id="598f6-119">Wählen Sie im Feld "Drucken" die Option "Nach" aus.</span><span class="sxs-lookup"><span data-stu-id="598f6-119">In the Print field, select 'After'.</span></span>
+7. <span data-ttu-id="598f6-120">Wählen Sie "Ja" für "Rechnung drucken" aus.</span><span class="sxs-lookup"><span data-stu-id="598f6-120">Select Yes for Print invoice.</span></span>
+    * <span data-ttu-id="598f6-121">Die Druckverwaltung kann mehrere Kopien der Rechnung drucken und auch die Rechnung per E-Mail als PDF-Datei senden.</span><span class="sxs-lookup"><span data-stu-id="598f6-121">Print management can print  multiple copies of the invoice and also send the invoice via email as a PDF file.</span></span>  
+8. <span data-ttu-id="598f6-122">Wählen Sie im Feld "Chargen Drucken" die Option "Zusammenfassen" aus.</span><span class="sxs-lookup"><span data-stu-id="598f6-122">In the Print charges field, select 'Summarize'.</span></span>
+9. <span data-ttu-id="598f6-123">Wählen Sie im Feld "Kreditlimit prüfen" die Option "Saldo" aus.</span><span class="sxs-lookup"><span data-stu-id="598f6-123">In the Check credit limit field, select 'Balance'.</span></span>
+10. <span data-ttu-id="598f6-124">Klicken Sie auf "Abbrechen".</span><span class="sxs-lookup"><span data-stu-id="598f6-124">Click Cancel.</span></span>
 
-## <a name="combine-orders-into-a-single-invoice"></a>Aufträge in einer einzelnen Rechnung kombinieren
-1. Wechseln Sie zu "Debitoren" > "Aufträge" > "Alle Aufträge".
-2. Suchen Sie einen Debitoren, bei dem mehrere Rechnungen offen sind.
-3. Wählen Sie einen offenen Auftrag aus.
-4. Wählen Sie einen weiteren offenen Auftrag für denselben Debitoren aus.
-5. Klicken Sie im Aktivitätsbereich auf "Rechnung".
-6. Klicken Sie auf "Rechnung".
-7. Erweitern Sie den Abschnitt "Parameter".
-8. Wählen Sie im Feld "Menge" die Option "Alle" aus.
-    * Beachten Sie, dass zwei Rechnungen im Abschnitt "Übersicht" aufgeführt sind. Jetzt führen wir sie in einer einzelnen Rechnung zusammen.  
-9. Wählen Sie im Feld "Sammelaktualisierung für" die Option "Rechnungskonto" aus.
-10. Klicken Sie auf "Anordnen", um die Aufträge in einer einzelnen Rechnung zusammenzuführen.
-    * Die beiden Aufträge werden nun in einer einzelnen Rechnung zusammengeführt.   
-11. Klicken Sie auf "Abbrechen".
-12. Klicken Sie auf "Ja".
+## <a name="combine-orders-into-a-single-invoice"></a><span data-ttu-id="598f6-125">Aufträge in einer einzelnen Rechnung kombinieren</span><span class="sxs-lookup"><span data-stu-id="598f6-125">Combine orders into a single invoice</span></span>
+1. <span data-ttu-id="598f6-126">Wechseln Sie zu "Debitoren" > "Aufträge" > "Alle Aufträge".</span><span class="sxs-lookup"><span data-stu-id="598f6-126">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="598f6-127">Suchen Sie einen Debitoren, bei dem mehrere Rechnungen offen sind.</span><span class="sxs-lookup"><span data-stu-id="598f6-127">Locate a customer that has multiple invoices open.</span></span>
+3. <span data-ttu-id="598f6-128">Wählen Sie einen offenen Auftrag aus.</span><span class="sxs-lookup"><span data-stu-id="598f6-128">Select an open sales order.</span></span>
+4. <span data-ttu-id="598f6-129">Wählen Sie einen weiteren offenen Auftrag für denselben Debitoren aus.</span><span class="sxs-lookup"><span data-stu-id="598f6-129">Select another open sales order for the same customer.</span></span>
+5. <span data-ttu-id="598f6-130">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="598f6-130">On the Action Pane, click Invoice.</span></span>
+6. <span data-ttu-id="598f6-131">Klicken Sie auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="598f6-131">Click Invoice.</span></span>
+7. <span data-ttu-id="598f6-132">Erweitern Sie den Abschnitt "Parameter".</span><span class="sxs-lookup"><span data-stu-id="598f6-132">Expand the Parameters section.</span></span>
+8. <span data-ttu-id="598f6-133">Wählen Sie im Feld "Menge" die Option "Alle" aus.</span><span class="sxs-lookup"><span data-stu-id="598f6-133">In the Quantity field, select 'All'.</span></span>
+    * <span data-ttu-id="598f6-134">Beachten Sie, dass zwei Rechnungen im Abschnitt "Übersicht" aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="598f6-134">Note that there are two invoices listed in the overview section.</span></span> <span data-ttu-id="598f6-135">Jetzt führen wir sie in einer einzelnen Rechnung zusammen.</span><span class="sxs-lookup"><span data-stu-id="598f6-135">Now let's merge them into a single invoice.</span></span>  
+9. <span data-ttu-id="598f6-136">Wählen Sie im Feld "Sammelaktualisierung für" die Option "Rechnungskonto" aus.</span><span class="sxs-lookup"><span data-stu-id="598f6-136">In the Summary update for field, select 'Invoice account'.</span></span>
+10. <span data-ttu-id="598f6-137">Klicken Sie auf "Anordnen", um die Aufträge in einer einzelnen Rechnung zusammenzuführen.</span><span class="sxs-lookup"><span data-stu-id="598f6-137">Click Arrange to merge the sales orders into a single invoice.</span></span>
+    * <span data-ttu-id="598f6-138">Die beiden Aufträge werden nun in einer einzelnen Rechnung zusammengeführt.</span><span class="sxs-lookup"><span data-stu-id="598f6-138">The two sales orders are now merged into a single invoice.</span></span>   
+11. <span data-ttu-id="598f6-139">Klicken Sie auf "Abbrechen".</span><span class="sxs-lookup"><span data-stu-id="598f6-139">Click Cancel.</span></span>
+12. <span data-ttu-id="598f6-140">Klicken Sie auf "Ja".</span><span class="sxs-lookup"><span data-stu-id="598f6-140">Click Yes.</span></span>
 
-## <a name="post-invoices-in-a-batch"></a>Rechnungen in einer Charge buchen
-1. Wechseln Sie zu "Debitoren" > "Rechnungen" > "Chargenrechnungsstellung" > "Rechnung".
-2. Klicken Sie auf Auswählen.
-3. Klicken Sie auf "OK".
-4. Klicken Sie auf "Charge".
-5. Klicken auf "Ja", um die Stapelverarbeitung zu aktivieren.
-6. Klicken Sie auf "Wiederholung".
-7. Tage auswählen
-8. Klicken Sie auf "OK".
-9. Klicken Sie auf "OK".
-10. Klicken Sie auf "Abbrechen".
-11. Klicken Sie auf "Ja".
+## <a name="post-invoices-in-a-batch"></a><span data-ttu-id="598f6-141">Rechnungen in einer Charge buchen</span><span class="sxs-lookup"><span data-stu-id="598f6-141">Post invoices in a batch</span></span>
+1. <span data-ttu-id="598f6-142">Wechseln Sie zu "Debitoren" > "Rechnungen" > "Chargenrechnungsstellung" > "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="598f6-142">Go to Accounts receivable > Invoices > Batch invoicing > Invoice.</span></span>
+2. <span data-ttu-id="598f6-143">Klicken Sie auf Auswählen.</span><span class="sxs-lookup"><span data-stu-id="598f6-143">Click Select.</span></span>
+3. <span data-ttu-id="598f6-144">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="598f6-144">Click OK.</span></span>
+4. <span data-ttu-id="598f6-145">Klicken Sie auf "Charge".</span><span class="sxs-lookup"><span data-stu-id="598f6-145">Click Batch.</span></span>
+5. <span data-ttu-id="598f6-146">Klicken auf "Ja", um die Stapelverarbeitung zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="598f6-146">Click on Yes to turn on batch processing.</span></span>
+6. <span data-ttu-id="598f6-147">Klicken Sie auf "Wiederholung".</span><span class="sxs-lookup"><span data-stu-id="598f6-147">Click Recurrence.</span></span>
+7. <span data-ttu-id="598f6-148">Tage auswählen</span><span class="sxs-lookup"><span data-stu-id="598f6-148">Select Days</span></span>
+8. <span data-ttu-id="598f6-149">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="598f6-149">Click OK.</span></span>
+9. <span data-ttu-id="598f6-150">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="598f6-150">Click OK.</span></span>
+10. <span data-ttu-id="598f6-151">Klicken Sie auf "Abbrechen".</span><span class="sxs-lookup"><span data-stu-id="598f6-151">Click Cancel.</span></span>
+11. <span data-ttu-id="598f6-152">Klicken Sie auf "Ja".</span><span class="sxs-lookup"><span data-stu-id="598f6-152">Click Yes.</span></span>
 
 

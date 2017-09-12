@@ -17,180 +17,180 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 044da854273345877be92c9eab787f4edf0bba5b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1082c86361180db84bb2b5c0b8158816f76a219e
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
+# <a name="configure-locations-in-a-wms-enabled-warehouse"></a><span data-ttu-id="b9363-103">Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren</span><span class="sxs-lookup"><span data-stu-id="b9363-103">Configure locations in a WMS-enabled warehouse</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen WMS-aktivierten Lagerort konfiguriert (ein Lagerort, den Verwendung Lagerortverwaltungsprozesse Erweiterter). Der Prozess wird normalerweise von einer Lagerortverwaltung erfolgt. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Eine Vorbedingung ist, dass Sie mindestens einen Standort konfiguriert.
+<span data-ttu-id="b9363-104">Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen WMS-aktivierten Lagerort konfiguriert (ein Lagerort, den Verwendung Lagerortverwaltungsprozesse Erweiterter).</span><span class="sxs-lookup"><span data-stu-id="b9363-104">This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes).</span></span> <span data-ttu-id="b9363-105">Der Prozess wird normalerweise von einer Lagerortverwaltung erfolgt.</span><span class="sxs-lookup"><span data-stu-id="b9363-105">The process is typically done by a warehouse manager.</span></span> <span data-ttu-id="b9363-106">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.</span><span class="sxs-lookup"><span data-stu-id="b9363-106">You can run this guide in demo data company USMF or on your own data.</span></span> <span data-ttu-id="b9363-107">Eine Vorbedingung ist, dass Sie mindestens einen Standort konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="b9363-107">A precondition is that you have at least one site configured.</span></span>
 
 
-## <a name="create-a-new-warehouse"></a>Erstellt einen neuen Lagerort.
-1. Gehen Sie zu Lagerorte.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Lagerort" einen Wert ein.
-4. Geben Sie im Feld "Name" einen Wert ein.
-5. Geben Sie im Feld "Standort" einen Wert ein.
-6. Erweitern oder reduzieren Sie den Abschnitt Lagerort.
-7. Setzen Sie die Option "Benutzerfehlerprotokoll für Lagerortverwaltungsprozesse verwenden" auf Ja.
-    * Bei dieser Einstellung können Sie, um erweiterte Warehousing-Prozesse mithilfe der Lagerort arbeit und -mobiler Geräte auszuführen.  
-8. Schließen Sie die Seite.
+## <a name="create-a-new-warehouse"></a><span data-ttu-id="b9363-108">Erstellt einen neuen Lagerort.</span><span class="sxs-lookup"><span data-stu-id="b9363-108">Create a new warehouse</span></span>
+1. <span data-ttu-id="b9363-109">Gehen Sie zu Lagerorte.</span><span class="sxs-lookup"><span data-stu-id="b9363-109">Go to Warehouses.</span></span>
+2. <span data-ttu-id="b9363-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-110">Click New.</span></span>
+3. <span data-ttu-id="b9363-111">Geben Sie im Feld "Lagerort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-111">In the Warehouse field, type a value.</span></span>
+4. <span data-ttu-id="b9363-112">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="b9363-113">Geben Sie im Feld "Standort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-113">In the Site field, type a value.</span></span>
+6. <span data-ttu-id="b9363-114">Erweitern oder reduzieren Sie den Abschnitt Lagerort.</span><span class="sxs-lookup"><span data-stu-id="b9363-114">Expand or collapse the Warehouse section.</span></span>
+7. <span data-ttu-id="b9363-115">Setzen Sie die Option "Benutzerfehlerprotokoll für Lagerortverwaltungsprozesse verwenden" auf Ja.</span><span class="sxs-lookup"><span data-stu-id="b9363-115">Set the Use warehouse management processes option to Yes.</span></span>
+    * <span data-ttu-id="b9363-116">Bei dieser Einstellung können Sie, um erweiterte Warehousing-Prozesse mithilfe der Lagerort arbeit und -mobiler Geräte auszuführen.</span><span class="sxs-lookup"><span data-stu-id="b9363-116">This setting allows you to  run advanced warehousing processes using warehouse work and mobile devices.</span></span>  
+8. <span data-ttu-id="b9363-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-117">Close the page.</span></span>
 
-## <a name="define-a-location-format"></a>Lagerplatzformatdetail erstellen
-1. Gehen Sie zu Lagerplatzformate.
-    * Lagerplatzformate sind ein Benennungssystem, das verwendet wird, um die eindeutige und konsistenten Namen für die verschiedenen Lagerplatzlagerfachpositionen zu erstellen, die innerhalb eines Lagerorts verwendet werden. Es kann hilfreich sein, Trennzeichen als Teil des Lagerplatzformats zu verwenden, um es zu vereinfachen, Komponenten des Lagerplatzes wie der Gang in zu identifizieren eingegeben werden. In diesem Beispiel erstellen Sie einen Namen mit vier Komponenten. So können diese Gang, Regal, Regalboden und Lagerfach sein.  
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Format Standort" einen Wert ein.
-4. Geben Sie im Feld "Name" einen Wert ein.
-5. Geben Sie im Feld "Beschreibung Segment" einen Wert ein.
-    * Diese bezeichnet, was die erste Komponente des Lagerplatznamens darstellt. Beispielsweise kann es Gang sein.  
-6. Geben Sie im Feld Länge eine Zahl ein.
-    * Dadurch wird festgelegt, wie viele Zeichen der Teil des Lagerplatznamens besitzen muss. Beachten Sie, dass die Summe aller Komponenten im Auftrag, einschließlich Trennzeichen, 10 Zeichen nicht überschreiten.  
-7. Geben Sie im Feld Trenner einen Wert ein.
-    * Dies bestimmt, welches Zeichen oder Symbol zwischen dem ersten und zweiten Komponente des Namens verwendet wird.  
-8. Klicken Sie auf "Neu".
-9. Geben Sie im Feld "Beschreibung Segment" einen Wert ein.
-10. Geben Sie im Feld Länge eine Zahl ein.
-11. Geben Sie im Feld Trenner einen Wert ein.
-12. Klicken Sie auf Neu.
-13. Geben Sie im Feld "Beschreibung Segment" einen Wert ein.
-14. Geben Sie im Feld Länge eine Zahl ein.
-15. Geben Sie im Feld Trenner einen Wert ein.
-16. Klicken Sie auf Neu.
-17. Geben Sie im Feld "Beschreibung Segment" einen Wert ein.
-18. Geben Sie im Feld Länge eine Zahl ein.
-19. Klicken Sie auf "Speichern".
-20. Schließen Sie die Seite.
+## <a name="define-a-location-format"></a><span data-ttu-id="b9363-118">Lagerplatzformatdetail erstellen</span><span class="sxs-lookup"><span data-stu-id="b9363-118">Define a location format</span></span>
+1. <span data-ttu-id="b9363-119">Gehen Sie zu Lagerplatzformate.</span><span class="sxs-lookup"><span data-stu-id="b9363-119">Go to Location formats.</span></span>
+    * <span data-ttu-id="b9363-120">Lagerplatzformate sind ein Benennungssystem, das verwendet wird, um die eindeutige und konsistenten Namen für die verschiedenen Lagerplatzlagerfachpositionen zu erstellen, die innerhalb eines Lagerorts verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b9363-120">Location formats are a naming-system used to create unique and consistent names for the different location bin positions used within a warehouse.</span></span> <span data-ttu-id="b9363-121">Es kann hilfreich sein, Trennzeichen als Teil des Lagerplatzformats zu verwenden, um es zu vereinfachen, Komponenten des Lagerplatzes wie der Gang in zu identifizieren eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="b9363-121">It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number.</span></span> <span data-ttu-id="b9363-122">In diesem Beispiel erstellen Sie einen Namen mit vier Komponenten.</span><span class="sxs-lookup"><span data-stu-id="b9363-122">In this example, we’ll create a name with four components.</span></span> <span data-ttu-id="b9363-123">So können diese Gang, Regal, Regalboden und Lagerfach sein.</span><span class="sxs-lookup"><span data-stu-id="b9363-123">For example, these could be aisle, rack, shelf, and bin.</span></span>  
+2. <span data-ttu-id="b9363-124">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-124">Click New.</span></span>
+3. <span data-ttu-id="b9363-125">Geben Sie im Feld "Format Standort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-125">In the Location format field, type a value.</span></span>
+4. <span data-ttu-id="b9363-126">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-126">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="b9363-127">Geben Sie im Feld "Beschreibung Segment" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-127">In the Segment description field, type a value.</span></span>
+    * <span data-ttu-id="b9363-128">Diese bezeichnet, was die erste Komponente des Lagerplatznamens darstellt.</span><span class="sxs-lookup"><span data-stu-id="b9363-128">This describes what the first component of the location name represents.</span></span> <span data-ttu-id="b9363-129">Beispielsweise kann es Gang sein.</span><span class="sxs-lookup"><span data-stu-id="b9363-129">For example, it could be Aisle.</span></span>  
+6. <span data-ttu-id="b9363-130">Geben Sie im Feld Länge eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-130">In the Length field, enter a number.</span></span>
+    * <span data-ttu-id="b9363-131">Dadurch wird festgelegt, wie viele Zeichen der Teil des Lagerplatznamens besitzen muss.</span><span class="sxs-lookup"><span data-stu-id="b9363-131">This determines how many characters this part of the location name must have.</span></span> <span data-ttu-id="b9363-132">Beachten Sie, dass die Summe aller Komponenten im Auftrag, einschließlich Trennzeichen, 10 Zeichen nicht überschreiten.</span><span class="sxs-lookup"><span data-stu-id="b9363-132">Note that the total of all components in the name, including the separators, cannot exceed 10 characters.</span></span>  
+7. <span data-ttu-id="b9363-133">Geben Sie im Feld Trenner einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-133">In the Separator field, type a value.</span></span>
+    * <span data-ttu-id="b9363-134">Dies bestimmt, welches Zeichen oder Symbol zwischen dem ersten und zweiten Komponente des Namens verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="b9363-134">This determines which character or symbol is used between the first and second component of the name.</span></span>  
+8. <span data-ttu-id="b9363-135">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-135">Click New.</span></span>
+9. <span data-ttu-id="b9363-136">Geben Sie im Feld "Beschreibung Segment" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-136">In the Segment description field, type a value.</span></span>
+10. <span data-ttu-id="b9363-137">Geben Sie im Feld Länge eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-137">In the Length field, enter a number.</span></span>
+11. <span data-ttu-id="b9363-138">Geben Sie im Feld Trenner einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-138">In the Separator field, type a value.</span></span>
+12. <span data-ttu-id="b9363-139">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="b9363-139">Click New.</span></span>
+13. <span data-ttu-id="b9363-140">Geben Sie im Feld "Beschreibung Segment" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-140">In the Segment description field, type a value.</span></span>
+14. <span data-ttu-id="b9363-141">Geben Sie im Feld Länge eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-141">In the Length field, enter a number.</span></span>
+15. <span data-ttu-id="b9363-142">Geben Sie im Feld Trenner einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-142">In the Separator field, type a value.</span></span>
+16. <span data-ttu-id="b9363-143">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="b9363-143">Click New.</span></span>
+17. <span data-ttu-id="b9363-144">Geben Sie im Feld "Beschreibung Segment" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-144">In the Segment description field, type a value.</span></span>
+18. <span data-ttu-id="b9363-145">Geben Sie im Feld Länge eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-145">In the Length field, enter a number.</span></span>
+19. <span data-ttu-id="b9363-146">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="b9363-146">Click Save.</span></span>
+20. <span data-ttu-id="b9363-147">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-147">Close the page.</span></span>
 
-## <a name="define-location-types"></a>Lagerort-Typen definieren
-1. Gehen Sie zu Lagerplatztypen.
-    * Lagerplatztypen können als Filteroptionen verwendet werden, die verschiedenen Lagerortverwaltungsprozesse zu steuern. Als Minimum müssen Sie Staging und abschließende Versandorttypen erstellen, um den ausgehenden Lagerortverwaltungsprozess zu definieren.  
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Typ Standort" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Schließen Sie die Seite.
+## <a name="define-location-types"></a><span data-ttu-id="b9363-148">Lagerort-Typen definieren</span><span class="sxs-lookup"><span data-stu-id="b9363-148">Define location types</span></span>
+1. <span data-ttu-id="b9363-149">Gehen Sie zu Lagerplatztypen.</span><span class="sxs-lookup"><span data-stu-id="b9363-149">Go to Location types.</span></span>
+    * <span data-ttu-id="b9363-150">Lagerplatztypen können als Filteroptionen verwendet werden, die verschiedenen Lagerortverwaltungsprozesse zu steuern.</span><span class="sxs-lookup"><span data-stu-id="b9363-150">Location types can be used as filtering options to control the different warehouse management processes.</span></span> <span data-ttu-id="b9363-151">Als Minimum müssen Sie Staging und abschließende Versandorttypen erstellen, um den ausgehenden Lagerortverwaltungsprozess zu definieren.</span><span class="sxs-lookup"><span data-stu-id="b9363-151">As a minimum, you need to create staging and final shipping location types in order to define the outbound warehouse management process.</span></span>  
+2. <span data-ttu-id="b9363-152">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-152">Click New.</span></span>
+3. <span data-ttu-id="b9363-153">Geben Sie im Feld "Typ Standort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-153">In the Location type field, type a value.</span></span>
+4. <span data-ttu-id="b9363-154">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-154">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="b9363-155">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-155">Close the page.</span></span>
 
-## <a name="define-location-profile"></a>Lagerortprofile definieren
-1. Lagerplatzprofile anzeigen
-    * Die Definition von Lagerplatzprofilen ist äußerst wichtig. Die gruppierte Lagerplatzkapazität kann hier gesteuert werden sowie die Richtlinien, die zugeordnet werden, bis zu dem Lager untergebracht abruft und wie Zinsen gespeichert wird. Lagerplatzprofile können als Filteroptionen verwendet werden, die verschiedenen Lagerortverwaltungsprozesse zu steuern. Als Minimum müssen Sie ein Benutzerlagerplatzprofil erstellen, um die Lagerortverwaltungsprozesse zu aktivieren.  
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Lagerort-Profil-ID" einen Wert ein.
-4. Geben Sie im Feld "Name" einen Wert ein.
-5. Klicken Sie im Feld "Format Lagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Klicken Sie im Feld Typ Lagerort auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-10. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-11. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen Gemischten Bestandstatus zulassen.
-    * Aktivieren Sie diese Option, wenn Sie Mischbestandsstatuswerte an Lagerplätzen zulässig sein soll, die von dieses Lagerplatzprofil gruppiert werden.  
-12. Aktivieren bzw. deaktivieren Sie das Kontrollkästen Regeln für Chargentage überschreiben.
-    * Aktivieren Sie diese Option, zu überschreiben die Regel für wie viele Tage, die Bestandschargenablaufdaten variieren können, Mixing von Lagerchargen zuzulassen, die diese Schritte Regel nicht, befolgend.  
-13. Aktivieren oder deaktivieren Sie das Kontrollkästchen Zykluszählung zulassen
-    * Aktivieren Sie diese Option, wenn Verarbeitung von Zykluszählung an allen Lagerplätzen zulässig sein soll, die von dieses Lagerplatzprofil gruppiert werden.  
-14. Erweitern oder reduzieren Sie den Abschnitt Dimension.
-    * Die Registerkarte "Dimension" ermöglicht es Ihnen, um Parameter und Methoden zu definieren, um genauere Berechnungen der Tragfähigkeit innerhalb jedes der Lagerplätze zu aktivieren.  
-15. Schließen Sie die Seite.
+## <a name="define-location-profile"></a><span data-ttu-id="b9363-156">Lagerortprofile definieren</span><span class="sxs-lookup"><span data-stu-id="b9363-156">Define location profile</span></span>
+1. <span data-ttu-id="b9363-157">Lagerplatzprofile anzeigen</span><span class="sxs-lookup"><span data-stu-id="b9363-157">Go to Location profiles.</span></span>
+    * <span data-ttu-id="b9363-158">Die Definition von Lagerplatzprofilen ist äußerst wichtig.</span><span class="sxs-lookup"><span data-stu-id="b9363-158">The definition of location profiles is very important.</span></span> <span data-ttu-id="b9363-159">Die gruppierte Lagerplatzkapazität kann hier gesteuert werden sowie die Richtlinien, die zugeordnet werden, bis zu dem Lager untergebracht abruft und wie Zinsen gespeichert wird.</span><span class="sxs-lookup"><span data-stu-id="b9363-159">Grouped locations capacity can be controlled here, as well as the policies related to what inventory gets stored, and how it is stored.</span></span> <span data-ttu-id="b9363-160">Lagerplatzprofile können als Filteroptionen verwendet werden, die verschiedenen Lagerortverwaltungsprozesse zu steuern.</span><span class="sxs-lookup"><span data-stu-id="b9363-160">Location profiles can be used as filtering options to control the different warehouse management processes.</span></span> <span data-ttu-id="b9363-161">Als Minimum müssen Sie ein Benutzerlagerplatzprofil erstellen, um die Lagerortverwaltungsprozesse zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="b9363-161">As a minimum, you must create a user location profile in order to enable the warehouse management processes.</span></span>  
+2. <span data-ttu-id="b9363-162">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-162">Click New.</span></span>
+3. <span data-ttu-id="b9363-163">Geben Sie im Feld "Lagerort-Profil-ID" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-163">In the Location profile ID field, type a value.</span></span>
+4. <span data-ttu-id="b9363-164">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-164">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="b9363-165">Klicken Sie im Feld "Format Lagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-165">In the Location format field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="b9363-166">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b9363-166">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="b9363-167">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-167">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="b9363-168">Klicken Sie im Feld Typ Lagerort auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-168">In the Location type field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="b9363-169">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b9363-169">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="b9363-170">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-170">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="b9363-171">Aktivieren bzw. deaktivieren Sie das Kontrollkästchen Gemischten Bestandstatus zulassen.</span><span class="sxs-lookup"><span data-stu-id="b9363-171">Select or clear the Allow mixed  inventory statuses check box.</span></span>
+    * <span data-ttu-id="b9363-172">Aktivieren Sie diese Option, wenn Sie Mischbestandsstatuswerte an Lagerplätzen zulässig sein soll, die von dieses Lagerplatzprofil gruppiert werden.</span><span class="sxs-lookup"><span data-stu-id="b9363-172">Enable this option if you want to allow mixed inventory status values in the locations that are going to be grouped by this location profile.</span></span>  
+12. <span data-ttu-id="b9363-173">Aktivieren bzw. deaktivieren Sie das Kontrollkästen Regeln für Chargentage überschreiben.</span><span class="sxs-lookup"><span data-stu-id="b9363-173">Select or clear the Override rules for batch days check box.</span></span>
+    * <span data-ttu-id="b9363-174">Aktivieren Sie diese Option, zu überschreiben die Regel für wie viele Tage, die Bestandschargenablaufdaten variieren können, Mixing von Lagerchargen zuzulassen, die diese Schritte Regel nicht, befolgend.</span><span class="sxs-lookup"><span data-stu-id="b9363-174">Enable this option to override the rule for how many days the inventory batch expiration dates can differ, to allow mixing of inventory batches that don’t obeying this rule.</span></span>  
+13. <span data-ttu-id="b9363-175">Aktivieren oder deaktivieren Sie das Kontrollkästchen Zykluszählung zulassen</span><span class="sxs-lookup"><span data-stu-id="b9363-175">Select or clear the Allow cycle counting check box.</span></span>
+    * <span data-ttu-id="b9363-176">Aktivieren Sie diese Option, wenn Verarbeitung von Zykluszählung an allen Lagerplätzen zulässig sein soll, die von dieses Lagerplatzprofil gruppiert werden.</span><span class="sxs-lookup"><span data-stu-id="b9363-176">Enable this option to allow cycle counting processing in all the locations that are going to be grouped by this location profile.</span></span>  
+14. <span data-ttu-id="b9363-177">Erweitern oder reduzieren Sie den Abschnitt Dimension.</span><span class="sxs-lookup"><span data-stu-id="b9363-177">Expand or collapse the Dimensions section.</span></span>
+    * <span data-ttu-id="b9363-178">Die Registerkarte "Dimension" ermöglicht es Ihnen, um Parameter und Methoden zu definieren, um genauere Berechnungen der Tragfähigkeit innerhalb jedes der Lagerplätze zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="b9363-178">The Dimensions tab allows you to define parameters and methods to enable precise calculations of the load capacity within each of the locations.</span></span>  
+15. <span data-ttu-id="b9363-179">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-179">Close the page.</span></span>
 
-## <a name="enable-warehouse-management-parameters"></a>Lagerortverwaltungsparameter importieren ermöglichen
-1. Lagerort-Verwaltungsparameter anzeigen
-    * Damit Lagerortarbeit zu verarbeiten, müssen Parameter für den Benutzer festgelegt werden, Ort den Staginglagerplatztyp das Profil ein, und die endgültige Versandorttyp Sobald die ausgehenden Prozessenden endgültigen am Versandort eingeben dass Sie definieren, die zugehörigen ausgehenden Buchungen wird "entnommen" aktualisiert.  
-2. Erweitern oder reduzieren Sie den Abschnitt Lagerplatzprofile.
-3. Klicken Sie im Feld "Lagerplatz" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-5. Erweitern oder reduzieren Sie den Abschnitt Lagerplatztypen.
-6. Klicken Sie im Feld Typ Lagerort auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Klicken Sie im Feld Typ Endkunden-Zustellung auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-9. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-10. Schließen Sie die Seite.
+## <a name="enable-warehouse-management-parameters"></a><span data-ttu-id="b9363-180">Lagerortverwaltungsparameter importieren ermöglichen</span><span class="sxs-lookup"><span data-stu-id="b9363-180">Enable warehouse management parameters</span></span>
+1. <span data-ttu-id="b9363-181">Lagerort-Verwaltungsparameter anzeigen</span><span class="sxs-lookup"><span data-stu-id="b9363-181">Go to Warehouse management parameters.</span></span>
+    * <span data-ttu-id="b9363-182">Damit Lagerortarbeit zu verarbeiten, müssen Parameter für den Benutzer festgelegt werden, Ort den Staginglagerplatztyp das Profil ein, und die endgültige Versandorttyp Sobald die ausgehenden Prozessenden endgültigen am Versandort eingeben dass Sie definieren, die zugehörigen ausgehenden Buchungen wird "entnommen" aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="b9363-182">To be able to process warehouse work, you need to set parameters for the user location profile the staging location type, and the final shipping location type  As soon as the outbound process ends at the final shipping location type that you define, the related outbound transactions will be updated to ‘Picked’.</span></span>  
+2. <span data-ttu-id="b9363-183">Erweitern oder reduzieren Sie den Abschnitt Lagerplatzprofile.</span><span class="sxs-lookup"><span data-stu-id="b9363-183">Expand or collapse the Location profiles section.</span></span>
+3. <span data-ttu-id="b9363-184">Klicken Sie im Feld "Lagerplatz" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-184">In the User location field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="b9363-185">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-185">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="b9363-186">Erweitern oder reduzieren Sie den Abschnitt Lagerplatztypen.</span><span class="sxs-lookup"><span data-stu-id="b9363-186">Expand or collapse the Location types section.</span></span>
+6. <span data-ttu-id="b9363-187">Klicken Sie im Feld Typ Lagerort auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-187">In the Staging location type field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="b9363-188">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-188">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="b9363-189">Klicken Sie im Feld Typ Endkunden-Zustellung auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-189">In the Final shipping location type field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="b9363-190">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-190">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="b9363-191">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-191">Close the page.</span></span>
 
-## <a name="define-warehouse-zone-groups"></a>Lagerortzonengruppen definieren
-1. Lagerortzonengruppen
-    * Lagerportzonen können als Filter verwendet werden, die verschiedenen Lagerortverwaltungsprozesse zu steuern. Sie müssen eine Zonengruppe erstellen, bevor Sie eine Zone definieren können.  
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Zonen-Gruppe-ID" einen Wert ein.
-4. Geben Sie im Feld "Zonen-Gruppe-ID" einen Wert ein.
-5. Schließen Sie die Seite.
+## <a name="define-warehouse-zone-groups"></a><span data-ttu-id="b9363-192">Lagerortzonengruppen definieren</span><span class="sxs-lookup"><span data-stu-id="b9363-192">Define warehouse zone groups</span></span>
+1. <span data-ttu-id="b9363-193">Lagerortzonengruppen</span><span class="sxs-lookup"><span data-stu-id="b9363-193">Go to Warehouse zone groups.</span></span>
+    * <span data-ttu-id="b9363-194">Lagerportzonen können als Filter verwendet werden, die verschiedenen Lagerortverwaltungsprozesse zu steuern.</span><span class="sxs-lookup"><span data-stu-id="b9363-194">Warehouse zones can be used as filters for options to control the different warehouse management processes.</span></span> <span data-ttu-id="b9363-195">Sie müssen eine Zonengruppe erstellen, bevor Sie eine Zone definieren können.</span><span class="sxs-lookup"><span data-stu-id="b9363-195">You need to create a zone group before you can define a zone.</span></span>  
+2. <span data-ttu-id="b9363-196">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-196">Click New.</span></span>
+3. <span data-ttu-id="b9363-197">Geben Sie im Feld "Zonen-Gruppe-ID" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-197">In the Zone group ID field, type a value.</span></span>
+4. <span data-ttu-id="b9363-198">Geben Sie im Feld "Zonen-Gruppe-ID" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-198">In the Zone group name field, type a value.</span></span>
+5. <span data-ttu-id="b9363-199">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-199">Close the page.</span></span>
 
-## <a name="define-warehouse-zones"></a>Lagerortzonen definieren
-1. Gehe zu Zone
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Zonen-Gruppe-ID" einen Wert ein.
-4. Geben Sie im Feld "Zonen-Gruppe-ID" einen Wert ein.
-5. Klicken Sie im Feld Zonen-Gruppe-ID auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Schließen Sie die Seite.
+## <a name="define-warehouse-zones"></a><span data-ttu-id="b9363-200">Lagerortzonen definieren</span><span class="sxs-lookup"><span data-stu-id="b9363-200">Define Warehouse zones</span></span>
+1. <span data-ttu-id="b9363-201">Gehe zu Zone</span><span class="sxs-lookup"><span data-stu-id="b9363-201">Go to Zones.</span></span>
+2. <span data-ttu-id="b9363-202">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-202">Click New.</span></span>
+3. <span data-ttu-id="b9363-203">Geben Sie im Feld "Zonen-Gruppe-ID" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-203">In the Zone ID field, type a value.</span></span>
+4. <span data-ttu-id="b9363-204">Geben Sie im Feld "Zonen-Gruppe-ID" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-204">In the Zone name field, type a value.</span></span>
+5. <span data-ttu-id="b9363-205">Klicken Sie im Feld Zonen-Gruppe-ID auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-205">In the Zone group ID field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="b9363-206">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b9363-206">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="b9363-207">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-207">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="b9363-208">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-208">Close the page.</span></span>
 
-## <a name="create-locations-using-the-location-setup-wizard"></a>Erstellen von Lagerplätzen mithilfe des Lagerplatz-Setup-Assistenten
-1. Lagerplatz-Setup-Assistent
-2. Klicken Sie im Feld "Lagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-5. Klicken Sie im Feld Zonen-Gruppe-ID auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Klicken Sie im Feld "Profilkennung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-10. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-11. Markieren Sie in der Liste die ausgewählte Zeile.
-12. Geben Sie im Feld "Portnummer" eine Zahl ein.
-    * Von der Anzahl und zu den Nummernfeldern definieren Sie, wieviele Lagerplätze erstellt werden. Beispielsweise beim Festlegen von der Anzahl bis 1 und bis 3 für alle vier Positionen im Lagerplatzformat zu nummerieren, 81 Lagerplätze erstellt werden (3x3x3x3).  
-13. Geben Sie im Feld "Portnummer" eine Zahl ein.
-14. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-15. Geben Sie im Feld "Portnummer" eine Zahl ein.
-16. Geben Sie im Feld "Portnummer" eine Zahl ein.
-17. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-18. Geben Sie im Feld "Portnummer" eine Zahl ein.
-19. Geben Sie im Feld "Portnummer" eine Zahl ein.
-20. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-21. Geben Sie im Feld "Portnummer" eine Zahl ein.
-22. Geben Sie im Feld "Portnummer" eine Zahl ein.
-23. Klicken Sie auf "Erstellen".
+## <a name="create-locations-using-the-location-setup-wizard"></a><span data-ttu-id="b9363-209">Erstellen von Lagerplätzen mithilfe des Lagerplatz-Setup-Assistenten</span><span class="sxs-lookup"><span data-stu-id="b9363-209">Create locations using the Location setup wizard</span></span>
+1. <span data-ttu-id="b9363-210">Lagerplatz-Setup-Assistent</span><span class="sxs-lookup"><span data-stu-id="b9363-210">Go to Location setup wizard.</span></span>
+2. <span data-ttu-id="b9363-211">Klicken Sie im Feld "Lagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-211">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="b9363-212">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b9363-212">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="b9363-213">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-213">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="b9363-214">Klicken Sie im Feld Zonen-Gruppe-ID auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-214">In the Zone ID field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="b9363-215">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b9363-215">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="b9363-216">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-216">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="b9363-217">Klicken Sie im Feld "Profilkennung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-217">In the Location profile ID field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="b9363-218">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b9363-218">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="b9363-219">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-219">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="b9363-220">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-220">In the list, mark the selected row.</span></span>
+12. <span data-ttu-id="b9363-221">Geben Sie im Feld "Portnummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-221">In the From number field, enter a number.</span></span>
+    * <span data-ttu-id="b9363-222">Von der Anzahl und zu den Nummernfeldern definieren Sie, wieviele Lagerplätze erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="b9363-222">The From number and To number fields define how many locations will be created.</span></span> <span data-ttu-id="b9363-223">Beispielsweise beim Festlegen von der Anzahl bis 1 und bis 3 für alle vier Positionen im Lagerplatzformat zu nummerieren, 81 Lagerplätze erstellt werden (3x3x3x3).</span><span class="sxs-lookup"><span data-stu-id="b9363-223">For example, if you set From number to 1 and To number to 3 for all four lines in the location format, 81 locations will be created (3x3x3x3).</span></span>  
+13. <span data-ttu-id="b9363-224">Geben Sie im Feld "Portnummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-224">In the To number field, enter a number.</span></span>
+14. <span data-ttu-id="b9363-225">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b9363-225">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="b9363-226">Geben Sie im Feld "Portnummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-226">In the From number field, enter a number.</span></span>
+16. <span data-ttu-id="b9363-227">Geben Sie im Feld "Portnummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-227">In the To number field, enter a number.</span></span>
+17. <span data-ttu-id="b9363-228">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b9363-228">In the list, find and select the desired record.</span></span>
+18. <span data-ttu-id="b9363-229">Geben Sie im Feld "Portnummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-229">In the From number field, enter a number.</span></span>
+19. <span data-ttu-id="b9363-230">Geben Sie im Feld "Portnummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-230">In the To number field, enter a number.</span></span>
+20. <span data-ttu-id="b9363-231">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b9363-231">In the list, find and select the desired record.</span></span>
+21. <span data-ttu-id="b9363-232">Geben Sie im Feld "Portnummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-232">In the From number field, enter a number.</span></span>
+22. <span data-ttu-id="b9363-233">Geben Sie im Feld "Portnummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-233">In the To number field, enter a number.</span></span>
+23. <span data-ttu-id="b9363-234">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="b9363-234">Click Create.</span></span>
 
-## <a name="create-locations-manually"></a>Lagerort manuell erstellen
-1. Zu Lagerplatz gehen
-    * Manuell kann Erstellung von Lagerplätzen innerhalb eines Lagerorts leicht ausgeführt werden. Der Lagerplatzname und die Lagerplatzprofil Kennung ist erforderliche Werte.  
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Lagerort" einen Wert ein.
-4. Geben Sie im Feld Standort einen Wert ein.
-    * Beachten Sie, dass Sie einen neuen Lagerplatz hier erstellen, müssen Sie einen neuen eindeutigen Namen eingeben, anstatt, ein vorhandenes ausgewählt wird.  
-5. Geben Sie im Feld "Lagerort-Profil-ID" einen Wert ein.
-6. Schließen Sie die Seite.
+## <a name="create-locations-manually"></a><span data-ttu-id="b9363-235">Lagerort manuell erstellen</span><span class="sxs-lookup"><span data-stu-id="b9363-235">Create locations manually</span></span>
+1. <span data-ttu-id="b9363-236">Zu Lagerplatz gehen</span><span class="sxs-lookup"><span data-stu-id="b9363-236">Go to Locations.</span></span>
+    * <span data-ttu-id="b9363-237">Manuell kann Erstellung von Lagerplätzen innerhalb eines Lagerorts leicht ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="b9363-237">Manually creation of locations within a warehouse can easily be done.</span></span> <span data-ttu-id="b9363-238">Der Lagerplatzname und die Lagerplatzprofil Kennung ist erforderliche Werte.</span><span class="sxs-lookup"><span data-stu-id="b9363-238">The location name and the Location profile ID are mandatory values.</span></span>  
+2. <span data-ttu-id="b9363-239">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-239">Click New.</span></span>
+3. <span data-ttu-id="b9363-240">Geben Sie im Feld "Lagerort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-240">In the Warehouse field, type a value.</span></span>
+4. <span data-ttu-id="b9363-241">Geben Sie im Feld Standort einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-241">In the Location field, type a value.</span></span>
+    * <span data-ttu-id="b9363-242">Beachten Sie, dass Sie einen neuen Lagerplatz hier erstellen, müssen Sie einen neuen eindeutigen Namen eingeben, anstatt, ein vorhandenes ausgewählt wird.</span><span class="sxs-lookup"><span data-stu-id="b9363-242">Note that you're creating a new location here, so you need to type a new unique name, rather than selecting an existing one.</span></span>  
+5. <span data-ttu-id="b9363-243">Geben Sie im Feld "Lagerort-Profil-ID" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-243">In the Location profile ID field, type a value.</span></span>
+6. <span data-ttu-id="b9363-244">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-244">Close the page.</span></span>
 
-## <a name="define-pack-size-categories"></a>Verpackungsgrößenkategorien definieren
-1. Verpackungsgrößenkategorien anzeigen
-    * Packmaßkategorien können zu den gesamten verwendet werden, die ähnlichen physischen Komprimierungsgrößen haben. In diesem Beispiel wird die Packmaßkategorie verwendet, um die Kapazität an den Entnahmeorten innerhalb einer bestimmten Zone des Lagerorts zu steuern. Beachten Sie in, dass die Packmaßkategorie Kennung des freigegebenen Produkts zugewiesen werden muss der Entität, um als Teil des Strumpfgrenzenverarbeitens verwendet werden.  
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Verpackungsgrößenkategorie-ID" einen Wert ein.
-4. Geben Sie in Feld "Verpackungs-Namen-Kategorie" einen Wert ein.
-5. Schließen Sie die Seite.
+## <a name="define-pack-size-categories"></a><span data-ttu-id="b9363-245">Verpackungsgrößenkategorien definieren</span><span class="sxs-lookup"><span data-stu-id="b9363-245">Define Pack size categories</span></span>
+1. <span data-ttu-id="b9363-246">Verpackungsgrößenkategorien anzeigen</span><span class="sxs-lookup"><span data-stu-id="b9363-246">Go to Pack size categories.</span></span>
+    * <span data-ttu-id="b9363-247">Packmaßkategorien können zu den gesamten verwendet werden, die ähnlichen physischen Komprimierungsgrößen haben.</span><span class="sxs-lookup"><span data-stu-id="b9363-247">Pack size categories can be used to group items that have similar physical packing sizes.</span></span> <span data-ttu-id="b9363-248">In diesem Beispiel wird die Packmaßkategorie verwendet, um die Kapazität an den Entnahmeorten innerhalb einer bestimmten Zone des Lagerorts zu steuern.</span><span class="sxs-lookup"><span data-stu-id="b9363-248">In this example the pack size category will be used to control the capacity at the picking locations within a specific zone of the warehouse.</span></span> <span data-ttu-id="b9363-249">Beachten Sie in, dass die Packmaßkategorie Kennung des freigegebenen Produkts zugewiesen werden muss der Entität, um als Teil des Strumpfgrenzenverarbeitens verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b9363-249">Please note that the pack size category ID must be assigned to the released product entity in order to be used as part of the stocking limits processing.</span></span>  
+2. <span data-ttu-id="b9363-250">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-250">Click New.</span></span>
+3. <span data-ttu-id="b9363-251">Geben Sie im Feld "Verpackungsgrößenkategorie-ID" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-251">In the Pack size category ID field, type a value.</span></span>
+4. <span data-ttu-id="b9363-252">Geben Sie in Feld "Verpackungs-Namen-Kategorie" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-252">In the Pack size category name field, type a value.</span></span>
+5. <span data-ttu-id="b9363-253">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-253">Close the page.</span></span>
 
-## <a name="define-location-stocking-limits"></a>Lagergrenzen für Lagerplatz festlegen
-1. Lagerplatzbeschränkungen anzeigen
-    * Lagerplatzstrumpfgrenzen unterstützen, zu überprüfen, ob Arbeit nicht erstellt wird, die in einen Lagerplatz angeordnet werden Bestand anzufordern um diesen, der nicht die physische Kapazität hat, Lagerungs- zu übernehmen.  
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Lagerort" einen Wert ein.
-4. Geben Sie im Feld "Lagerort-Profil-ID" einen Wert ein.
-5. Geben Sie im Feld "Verpackungsgrößenkategorie-ID" einen Wert ein.
-6. Geben Sie im Feld "Menge" eine Zahl ein.
-7. Klicken Sie auf "Speichern".
-8. Schließen Sie die Seite.
+## <a name="define-location-stocking-limits"></a><span data-ttu-id="b9363-254">Lagergrenzen für Lagerplatz festlegen</span><span class="sxs-lookup"><span data-stu-id="b9363-254">Define location stocking limits</span></span>
+1. <span data-ttu-id="b9363-255">Lagerplatzbeschränkungen anzeigen</span><span class="sxs-lookup"><span data-stu-id="b9363-255">Go to Location stocking limits.</span></span>
+    * <span data-ttu-id="b9363-256">Lagerplatzstrumpfgrenzen unterstützen, zu überprüfen, ob Arbeit nicht erstellt wird, die in einen Lagerplatz angeordnet werden Bestand anzufordern um diesen, der nicht die physische Kapazität hat, Lagerungs- zu übernehmen.</span><span class="sxs-lookup"><span data-stu-id="b9363-256">Location stocking limits help to make sure that work isn't created to request that inventory to be put in a location that doesn't have the physical capacity to carry the inventory.</span></span>  
+2. <span data-ttu-id="b9363-257">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-257">Click New.</span></span>
+3. <span data-ttu-id="b9363-258">Geben Sie im Feld "Lagerort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-258">In the Warehouse field, type a value.</span></span>
+4. <span data-ttu-id="b9363-259">Geben Sie im Feld "Lagerort-Profil-ID" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-259">In the Location profile ID field, type a value.</span></span>
+5. <span data-ttu-id="b9363-260">Geben Sie im Feld "Verpackungsgrößenkategorie-ID" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-260">In the Pack size category ID field, type a value.</span></span>
+6. <span data-ttu-id="b9363-261">Geben Sie im Feld "Menge" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-261">In the Quantity field, enter a number.</span></span>
+7. <span data-ttu-id="b9363-262">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="b9363-262">Click Save.</span></span>
+8. <span data-ttu-id="b9363-263">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-263">Close the page.</span></span>
 
-## <a name="define-fixed-picking-locations"></a>detaillierten feste Entnahmeorte definieren
-1. Feste Lagerplätze anzeigen
-    * Sie können die pro Produkt oder pro Produktvariante verwendet werden Lagerplätze definieren. Es ist möglich, mehrere korrigierte Lagerplätze für das gleiche Produktdimensionsgruppe innerhalb des gleichen Lagerort zu erstellen.  
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Artikelnummer" einen Wert ein.
-4. Geben Sie im Feld "Lagerort" einen Wert ein.
-5. Klicken Sie im Feld "Lagerplatz" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-6. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-7. Schließen Sie die Seite.
+## <a name="define-fixed-picking-locations"></a><span data-ttu-id="b9363-264">detaillierten feste Entnahmeorte definieren</span><span class="sxs-lookup"><span data-stu-id="b9363-264">Define fixed picking locations</span></span>
+1. <span data-ttu-id="b9363-265">Feste Lagerplätze anzeigen</span><span class="sxs-lookup"><span data-stu-id="b9363-265">Go to Fixed locations.</span></span>
+    * <span data-ttu-id="b9363-266">Sie können die pro Produkt oder pro Produktvariante verwendet werden Lagerplätze definieren.</span><span class="sxs-lookup"><span data-stu-id="b9363-266">You can define the locations to be used per product or per product variant.</span></span> <span data-ttu-id="b9363-267">Es ist möglich, mehrere korrigierte Lagerplätze für das gleiche Produktdimensionsgruppe innerhalb des gleichen Lagerort zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b9363-267">It is possible to create multiple fixed locations for the same product within the same warehouse.</span></span>  
+2. <span data-ttu-id="b9363-268">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b9363-268">Click New.</span></span>
+3. <span data-ttu-id="b9363-269">Geben Sie im Feld "Artikelnummer" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-269">In the Item number field, type a value.</span></span>
+4. <span data-ttu-id="b9363-270">Geben Sie im Feld "Lagerort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b9363-270">In the Warehouse field, type a value.</span></span>
+5. <span data-ttu-id="b9363-271">Klicken Sie im Feld "Lagerplatz" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b9363-271">In the Location field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="b9363-272">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b9363-272">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="b9363-273">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b9363-273">Close the page.</span></span>
 
 

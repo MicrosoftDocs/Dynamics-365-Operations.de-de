@@ -16,53 +16,53 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ad893f81b7de0d9dcd8e9a9de6e58bebf57dac4d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0eb5ec731655e2f023d941724a10d1cf12f8e558
 ms.contentlocale: de-de
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="develop-and-open-a-job-requisition"></a>Stellenanforderung ausarbeiten und freigeben
+# <a name="develop-and-open-a-job-requisition"></a><span data-ttu-id="ce70e-103">Stellenanforderung ausarbeiten und freigeben</span><span class="sxs-lookup"><span data-stu-id="ce70e-103">Develop and open a job requisition</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsprozess verwalten. Für jedes Personalbeschaffungsprojekt können Sie Informationen einrichten wie die Stelle, für die Sie Personal beschaffen möchten, den Namen des Personalbeschaffungsmitarbeiters, den Status des Projekts und die Abteilung, in der sich die Stelle befindet. Nachdem Sie ein Personalbeschaffungsprojekt erstellt haben, können Sie eine Stellenausschreibung für das Projekt schreiben, die Stellenausschreibung auf Employee Self-Service-Seiten veröffentlichen, Bewerbungen für Anstellungen mit dem Projekt verknüpfen und Aktivitäten für das Projekt nachverfolgen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Um das Verfahren zu starten, wechseln Sie zu "Personalverwaltung" > "Personalbeschaffung"  "Personalbeschaffungsprojekte" > "Personalbeschaffungsprojekte"
+<span data-ttu-id="ce70e-104">Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsprozess verwalten.</span><span class="sxs-lookup"><span data-stu-id="ce70e-104">Recruitment projects help manage the recruiting process.</span></span> <span data-ttu-id="ce70e-105">Für jedes Personalbeschaffungsprojekt können Sie Informationen einrichten wie die Stelle, für die Sie Personal beschaffen möchten, den Namen des Personalbeschaffungsmitarbeiters, den Status des Projekts und die Abteilung, in der sich die Stelle befindet.</span><span class="sxs-lookup"><span data-stu-id="ce70e-105">For each recruitment project, you can set up information, such as the job that recruiting is for, the name of the recruiter, the status of the project and the department that the job will be located in.</span></span> <span data-ttu-id="ce70e-106">Nachdem Sie ein Personalbeschaffungsprojekt erstellt haben, können Sie eine Stellenausschreibung für das Projekt schreiben, die Stellenausschreibung auf Employee Self-Service-Seiten veröffentlichen, Bewerbungen für Anstellungen mit dem Projekt verknüpfen und Aktivitäten für das Projekt nachverfolgen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-106">After creating a recruitment project, you can write a job advertisement for the project, publish the ad on Employee self-service pages, associate applications for employment with the project, and track activities for that project.</span></span> <span data-ttu-id="ce70e-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="ce70e-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ce70e-108">Um das Verfahren zu starten, wechseln Sie zu "Personalverwaltung" > "Personalbeschaffung"  "Personalbeschaffungsprojekte" > "Personalbeschaffungsprojekte"</span><span class="sxs-lookup"><span data-stu-id="ce70e-108">To begin the procedure, go to Human resources > Recruitment > Recruitment projects > Recruitment projects</span></span>
 
-1. Klicken Sie auf "Neu".
-2. Geben Sie im Feld "Personalbeschaffungsprojekt" einen Wert ein.
-3. Geben Sie im Feld "Beschreibung" einen Wert ein.
-4. Klicken Sie im Feld "Personalbeschaffungsmitarbeiter" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-5. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-6. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-7. Klicken Sie auf Auswählen.
-8. Klicken Sie im Feld "Abteilung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-9. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-10. Klicken Sie im Feld "Stelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-11. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-12. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-13. Geben Sie im Feld "Anzahl der offenen Stellen" eine Zahl ein.
-14. Klicken Sie im Feld "Zukünftiger Vorgesetzter" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-15. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-16. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-17. Klicken Sie auf Auswählen.
-18. Geben Sie im Feld "Bewerbungsfrist" ein Datum ein.
-19. Klicken Sie auf "Medien".
-    * Personalbeschaffungsprojekte enthalten die Option, Medien anzugeben, die verwendet werden sollen, um offene Stellen anzukündigen.  
-20. Klicken Sie auf "Neu".
-21. Klicken Sie im Feld "Medien" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-22. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-23. Geben Sie im Feld "Startdatum" ein Datum ein.
-24. Geben Sie im Feld "Enddatum" ein Datum ein.
-25. Klicken Sie auf "Speichern".
-26. Schließen Sie die Seite.
-27. Klicken Sie auf "Stellenanzeigen".
-28. Klicken Sie auf "Speichern".
-29. Schließen Sie die Seite.
-30. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen "Auf Employee Self-Service anzeigen".
-    * Aktivieren Sie das Kontrollkästchen "Auf Employee Self-Service anzeigen", um das Personalbeschaffungsprojekt für Mitarbeiter auf ihren Employee Self-Service-Seiten sichtbar zu machen.  
-31. Klicken Sie auf "Status des Personalbeschaffungsprojekts".
-32. Klicken Sie auf "Start".
-    * Der Status "Gestartet" bedeutet, dass das Projekt bereit ist, Bewerbungen zu erhalten.  
-33. Klicken Sie auf "OK".
+1. <span data-ttu-id="ce70e-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ce70e-109">Click New.</span></span>
+2. <span data-ttu-id="ce70e-110">Geben Sie im Feld "Personalbeschaffungsprojekt" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="ce70e-110">In the Recruitment project field, type a value.</span></span>
+3. <span data-ttu-id="ce70e-111">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="ce70e-111">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="ce70e-112">Klicken Sie im Feld "Personalbeschaffungsmitarbeiter" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-112">In the Recruiter field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="ce70e-113">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ce70e-113">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="ce70e-114">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ce70e-114">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="ce70e-115">Klicken Sie auf Auswählen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-115">Click Select.</span></span>
+8. <span data-ttu-id="ce70e-116">Klicken Sie im Feld "Abteilung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-116">In the Department field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="ce70e-117">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ce70e-117">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="ce70e-118">Klicken Sie im Feld "Stelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-118">In the Job field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="ce70e-119">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ce70e-119">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="ce70e-120">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ce70e-120">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="ce70e-121">Geben Sie im Feld "Anzahl der offenen Stellen" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="ce70e-121">In the Number of openings field, enter a number.</span></span>
+14. <span data-ttu-id="ce70e-122">Klicken Sie im Feld "Zukünftiger Vorgesetzter" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-122">In the Hiring manager field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="ce70e-123">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ce70e-123">In the list, find and select the desired record.</span></span>
+16. <span data-ttu-id="ce70e-124">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ce70e-124">In the list, click the link in the selected row.</span></span>
+17. <span data-ttu-id="ce70e-125">Klicken Sie auf Auswählen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-125">Click Select.</span></span>
+18. <span data-ttu-id="ce70e-126">Geben Sie im Feld "Bewerbungsfrist" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="ce70e-126">In the Application deadline field, enter a date.</span></span>
+19. <span data-ttu-id="ce70e-127">Klicken Sie auf "Medien".</span><span class="sxs-lookup"><span data-stu-id="ce70e-127">Click Media.</span></span>
+    * <span data-ttu-id="ce70e-128">Personalbeschaffungsprojekte enthalten die Option, Medien anzugeben, die verwendet werden sollen, um offene Stellen anzukündigen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-128">Recruitment projects include the option to specify media outlets to use to advertise open positions.</span></span>  
+20. <span data-ttu-id="ce70e-129">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ce70e-129">Click New.</span></span>
+21. <span data-ttu-id="ce70e-130">Klicken Sie im Feld "Medien" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-130">In the Media field, click the drop-down button to open the lookup.</span></span>
+22. <span data-ttu-id="ce70e-131">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ce70e-131">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="ce70e-132">Geben Sie im Feld "Startdatum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="ce70e-132">In the Start date field, enter a date.</span></span>
+24. <span data-ttu-id="ce70e-133">Geben Sie im Feld "Enddatum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="ce70e-133">In the End date field, enter a date.</span></span>
+25. <span data-ttu-id="ce70e-134">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ce70e-134">Click Save.</span></span>
+26. <span data-ttu-id="ce70e-135">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ce70e-135">Close the page.</span></span>
+27. <span data-ttu-id="ce70e-136">Klicken Sie auf "Stellenanzeigen".</span><span class="sxs-lookup"><span data-stu-id="ce70e-136">Click Job ads.</span></span>
+28. <span data-ttu-id="ce70e-137">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ce70e-137">Click Save.</span></span>
+29. <span data-ttu-id="ce70e-138">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ce70e-138">Close the page.</span></span>
+30. <span data-ttu-id="ce70e-139">Aktivieren bzw. deaktivieren Sie das Kontrollkästchen "Auf Employee Self-Service anzeigen".</span><span class="sxs-lookup"><span data-stu-id="ce70e-139">Check or uncheck the Display on employee self service checkbox.</span></span>
+    * <span data-ttu-id="ce70e-140">Aktivieren Sie das Kontrollkästchen "Auf Employee Self-Service anzeigen", um das Personalbeschaffungsprojekt für Mitarbeiter auf ihren Employee Self-Service-Seiten sichtbar zu machen.</span><span class="sxs-lookup"><span data-stu-id="ce70e-140">Select the Display on employee self service check box to make the recruitment project visible to employees on their Employee self-service pages.</span></span>  
+31. <span data-ttu-id="ce70e-141">Klicken Sie auf "Status des Personalbeschaffungsprojekts".</span><span class="sxs-lookup"><span data-stu-id="ce70e-141">Click Recruitment project status.</span></span>
+32. <span data-ttu-id="ce70e-142">Klicken Sie auf "Start".</span><span class="sxs-lookup"><span data-stu-id="ce70e-142">Click Start.</span></span>
+    * <span data-ttu-id="ce70e-143">Der Status "Gestartet" bedeutet, dass das Projekt bereit ist, Bewerbungen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="ce70e-143">The Started status means that the project is ready to receive applications.</span></span>  
+33. <span data-ttu-id="ce70e-144">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ce70e-144">Click OK.</span></span>
 
 

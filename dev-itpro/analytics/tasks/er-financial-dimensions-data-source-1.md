@@ -16,94 +16,94 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 35cfeb2220d615e5c9096d524d3deb10a4299f0e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0953ffb3a98d4f2852caecc3a59792698d1c9d9b
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="design-data-model-to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Entwerfen von Datenmodell zum Verwenden von Finanzdimensionen als Datenquelle für elektronische Berichterstellung
+# <a name="design-data-model-to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a><span data-ttu-id="254a3-103">Entwerfen von Datenmodell zum Verwenden von Finanzdimensionen als Datenquelle für elektronische Berichterstellung</span><span class="sxs-lookup"><span data-stu-id="254a3-103">Design data model to use financial dimensions as a data source for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann. Diese Schritte können in jedem Unternehmen ausgeführt werden.
+<span data-ttu-id="254a3-104">In den folgenden Schritten wird erläutert, wie ein Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann.</span><span class="sxs-lookup"><span data-stu-id="254a3-104">The following steps explain how either a system administrator or electronic reporting developer can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports.</span></span> <span data-ttu-id="254a3-105">Diese Schritte können in jedem Unternehmen ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="254a3-105">These steps can be performed in any company.</span></span>
 
-Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen.
+<span data-ttu-id="254a3-106">Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen.</span><span class="sxs-lookup"><span data-stu-id="254a3-106">To complete these steps, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active”.</span></span>
 
 
-## <a name="create-a-new-data-model"></a>Neues Datenmodell erstellen
-1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie, ob "Litware, Inc." Anbieter ist verfügbar und markiert als aktiv.  
-2. Klicken Sie auf "Berichterstellungskonfigurationen".
-3. Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.
-4. Geben Sie im Feld "Name" "Finanzdimensions-Beispielmodell" ein.
-5. Klicken Sie auf Konfiguration erstellen.
-6. Klicken Sie auf Designer.
-7. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-8. Geben Sie im Feld "Name" "Erfassung" ein.
-9. Klicken Sie auf Hinzufügen.
-10. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-11. Geben Sie im Feld Name "Firma" ein.
-12. Klicken Sie auf Hinzufügen.
-    * Wir fügen unserem Modell eine neue Datensatzliste hinzu. Diese Liste enthält die Einstellungen aus ausgewählten Finanzdimensionen (für einen ER-Berichte, die dieses Modell als Datenquelle nutzen). Jede Finanzdimension wird in dieser Liste als Datensatz mit den entsprechenden Feldern dargestellt, welche die Einstellungen der Dimension angezeigen.  
-13. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-14. Geben Sie im Feld "Name" "Dimensionseinstellung" ein.
-15. Wählen Sie im Feld "Artikeltyp" 'Datensatzliste' aus.
-16. Klicken Sie auf Hinzufügen.
-17. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-18. Geben Sie im Feld "Name" "Code" ein.
-19. Wählen Sie im Feld "Artikeltyp" "Zeichenfolge" aus.
-20. Klicken Sie auf Hinzufügen.
-21. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-22. Geben Sie im Feld "Name" "Name" ein.
-23. Klicken Sie auf Hinzufügen.
-24. Wählen Sie in der Struktur 'Erfassung' aus.
-25. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-26. Geben Sie im Feld "Name" "Journal" ein.
-27. Wählen Sie im Feld "Artikeltyp" 'Datensatzliste' aus.
-28. Klicken Sie auf Hinzufügen.
-29. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-30. Geben Sie im Feld "Name" "Charge" ein.
-31. Wählen Sie im Feld "Artikeltyp" "Zeichenfolge" aus.
-32. Klicken Sie auf Hinzufügen.
-33. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-34. Geben Sie im Feld "Name" "Buchung" ein.
-35. Wählen Sie im Feld "Artikeltyp" 'Datensatzliste' aus.
-36. Klicken Sie auf Hinzufügen.
-37. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-38. Geben Sie im Feld "Name" "Datum" ein.
-39. Wählen Sie im Feld "Artikeltyp" 'Datum' aus.
-40. Klicken Sie auf Hinzufügen.
-41. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-42. Geben Sie im Feld "Name" "Soll" ein.
-43. Wählen Sie im Feld "Artikeltyp" "Gleitkommazahl" aus.
-44. Klicken Sie auf Hinzufügen.
-45. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-46. Geben Sie im Feld "Name" "Haben" ein.
-47. Klicken Sie auf Hinzufügen.
-48. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-49. Geben Sie im Feld "Name" 'Währung' ein.
-50. Wählen Sie im Feld "Artikeltyp" "Zeichenfolge" aus.
-51. Klicken Sie auf Hinzufügen.
-52. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-53. Geben Sie im Feld "Name" "Beleg" ein.
-54. Klicken Sie auf Hinzufügen.
-55. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-56. Geben Sie im Feld "Name" "Dimensionsdaten" ein.
-57. Wählen Sie im Feld "Artikeltyp" 'Datensatzliste' aus.
-58. Klicken Sie auf Hinzufügen.
-    * Wir haben unserem Modell einen neue Datensatzliste hinzugefügt. Diese Liste enthält die Werte aus ausgewählten Finanzdimensionen (für einen ER-Berichte, die dieses Modell als Datenquelle nutzen). Jede Finanzdimension wird in dieser Liste als Datensatz mit den entsprechenden Feldern dargestellt, welche die Werte der Dimension angezeigen. Der Dimensionsname wird auch in diesem Datensatz als nutzbares Feld angezeigt (z. B. zur Auswahl).  
-59. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-60. Geben Sie im Feld "Name" "Code" ein.
-61. Wählen Sie im Feld "Artikeltyp" "Zeichenfolge" aus.
-62. Klicken Sie auf Hinzufügen.
-63. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-64. Geben Sie im Feld "Name" "Beschreibung" ein.
-65. Klicken Sie auf Hinzufügen.
-66. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-67. Geben Sie im Feld "Name" "Name" ein.
-68. Klicken Sie auf Hinzufügen.
-69. Klicken Sie auf "Speichern".
-70. Schließen Sie die Seite.
+## <a name="create-a-new-data-model"></a><span data-ttu-id="254a3-107">Neues Datenmodell erstellen</span><span class="sxs-lookup"><span data-stu-id="254a3-107">Create a new data model</span></span>
+1. <span data-ttu-id="254a3-108">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="254a3-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="254a3-109">Überprüfen Sie, ob "Litware, Inc."</span><span class="sxs-lookup"><span data-stu-id="254a3-109">Make sure that the “Litware, Inc.”</span></span> <span data-ttu-id="254a3-110">Anbieter ist verfügbar und markiert als aktiv.</span><span class="sxs-lookup"><span data-stu-id="254a3-110">provider is available and marked as active.</span></span>  
+2. <span data-ttu-id="254a3-111">Klicken Sie auf "Berichterstellungskonfigurationen".</span><span class="sxs-lookup"><span data-stu-id="254a3-111">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="254a3-112">Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="254a3-112">Click Create configuration to open the drop dialog.</span></span>
+4. <span data-ttu-id="254a3-113">Geben Sie im Feld "Name" "Finanzdimensions-Beispielmodell" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-113">In the Name field, type 'Financial dimensions sample model'.</span></span>
+5. <span data-ttu-id="254a3-114">Klicken Sie auf Konfiguration erstellen.</span><span class="sxs-lookup"><span data-stu-id="254a3-114">Click Create configuration.</span></span>
+6. <span data-ttu-id="254a3-115">Klicken Sie auf Designer.</span><span class="sxs-lookup"><span data-stu-id="254a3-115">Click Designer.</span></span>
+7. <span data-ttu-id="254a3-116">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-116">Click New to open the drop dialog.</span></span>
+8. <span data-ttu-id="254a3-117">Geben Sie im Feld "Name" "Erfassung" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-117">In the Name field, type 'Entry'.</span></span>
+9. <span data-ttu-id="254a3-118">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-118">Click Add.</span></span>
+10. <span data-ttu-id="254a3-119">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-119">Click New to open the drop dialog.</span></span>
+11. <span data-ttu-id="254a3-120">Geben Sie im Feld Name "Firma" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-120">In the Name field, type 'Company'.</span></span>
+12. <span data-ttu-id="254a3-121">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-121">Click Add.</span></span>
+    * <span data-ttu-id="254a3-122">Wir fügen unserem Modell eine neue Datensatzliste hinzu.</span><span class="sxs-lookup"><span data-stu-id="254a3-122">We will add to our model a new record list.</span></span> <span data-ttu-id="254a3-123">Diese Liste enthält die Einstellungen aus ausgewählten Finanzdimensionen (für einen ER-Berichte, die dieses Modell als Datenquelle nutzen).</span><span class="sxs-lookup"><span data-stu-id="254a3-123">This list will expose (for any ER reports using this model as data source) the settings of selected financial dimensions.</span></span> <span data-ttu-id="254a3-124">Jede Finanzdimension wird in dieser Liste als Datensatz mit den entsprechenden Feldern dargestellt, welche die Einstellungen der Dimension angezeigen.</span><span class="sxs-lookup"><span data-stu-id="254a3-124">Each financial dimension will be presented in this list as a record with appropriate fields representing dimension’s setting.</span></span>  
+13. <span data-ttu-id="254a3-125">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-125">Click New to open the drop dialog.</span></span>
+14. <span data-ttu-id="254a3-126">Geben Sie im Feld "Name" "Dimensionseinstellung" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-126">In the Name field, type 'Dimensions setting'.</span></span>
+15. <span data-ttu-id="254a3-127">Wählen Sie im Feld "Artikeltyp" 'Datensatzliste' aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-127">In the Item type field, select 'Record list'.</span></span>
+16. <span data-ttu-id="254a3-128">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-128">Click Add.</span></span>
+17. <span data-ttu-id="254a3-129">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-129">Click New to open the drop dialog.</span></span>
+18. <span data-ttu-id="254a3-130">Geben Sie im Feld "Name" "Code" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-130">In the Name field, type 'Code'.</span></span>
+19. <span data-ttu-id="254a3-131">Wählen Sie im Feld "Artikeltyp" "Zeichenfolge" aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-131">In the Item type field, select 'String'.</span></span>
+20. <span data-ttu-id="254a3-132">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-132">Click Add.</span></span>
+21. <span data-ttu-id="254a3-133">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-133">Click New to open the drop dialog.</span></span>
+22. <span data-ttu-id="254a3-134">Geben Sie im Feld "Name" "Name" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-134">In the Name field, type 'Name'.</span></span>
+23. <span data-ttu-id="254a3-135">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-135">Click Add.</span></span>
+24. <span data-ttu-id="254a3-136">Wählen Sie in der Struktur 'Erfassung' aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-136">In the tree, select 'Entry'.</span></span>
+25. <span data-ttu-id="254a3-137">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-137">Click New to open the drop dialog.</span></span>
+26. <span data-ttu-id="254a3-138">Geben Sie im Feld "Name" "Journal" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-138">In the Name field, type 'Journal'.</span></span>
+27. <span data-ttu-id="254a3-139">Wählen Sie im Feld "Artikeltyp" 'Datensatzliste' aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-139">In the Item type field, select 'Record list'.</span></span>
+28. <span data-ttu-id="254a3-140">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-140">Click Add.</span></span>
+29. <span data-ttu-id="254a3-141">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-141">Click New to open the drop dialog.</span></span>
+30. <span data-ttu-id="254a3-142">Geben Sie im Feld "Name" "Charge" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-142">In the Name field, type 'Batch'.</span></span>
+31. <span data-ttu-id="254a3-143">Wählen Sie im Feld "Artikeltyp" "Zeichenfolge" aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-143">In the Item type field, select 'String'.</span></span>
+32. <span data-ttu-id="254a3-144">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-144">Click Add.</span></span>
+33. <span data-ttu-id="254a3-145">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-145">Click New to open the drop dialog.</span></span>
+34. <span data-ttu-id="254a3-146">Geben Sie im Feld "Name" "Buchung" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-146">In the Name field, type 'Transaction'.</span></span>
+35. <span data-ttu-id="254a3-147">Wählen Sie im Feld "Artikeltyp" 'Datensatzliste' aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-147">In the Item type field, select 'Record list'.</span></span>
+36. <span data-ttu-id="254a3-148">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-148">Click Add.</span></span>
+37. <span data-ttu-id="254a3-149">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-149">Click New to open the drop dialog.</span></span>
+38. <span data-ttu-id="254a3-150">Geben Sie im Feld "Name" "Datum" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-150">In the Name field, type 'Date'.</span></span>
+39. <span data-ttu-id="254a3-151">Wählen Sie im Feld "Artikeltyp" 'Datum' aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-151">In the Item type field, select 'Date'.</span></span>
+40. <span data-ttu-id="254a3-152">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-152">Click Add.</span></span>
+41. <span data-ttu-id="254a3-153">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-153">Click New to open the drop dialog.</span></span>
+42. <span data-ttu-id="254a3-154">Geben Sie im Feld "Name" "Soll" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-154">In the Name field, type 'Debit'.</span></span>
+43. <span data-ttu-id="254a3-155">Wählen Sie im Feld "Artikeltyp" "Gleitkommazahl" aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-155">In the Item type field, select 'Real'.</span></span>
+44. <span data-ttu-id="254a3-156">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-156">Click Add.</span></span>
+45. <span data-ttu-id="254a3-157">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-157">Click New to open the drop dialog.</span></span>
+46. <span data-ttu-id="254a3-158">Geben Sie im Feld "Name" "Haben" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-158">In the Name field, type 'Credit'.</span></span>
+47. <span data-ttu-id="254a3-159">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-159">Click Add.</span></span>
+48. <span data-ttu-id="254a3-160">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-160">Click New to open the drop dialog.</span></span>
+49. <span data-ttu-id="254a3-161">Geben Sie im Feld "Name" 'Währung' ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-161">In the Name field, type 'Currency'.</span></span>
+50. <span data-ttu-id="254a3-162">Wählen Sie im Feld "Artikeltyp" "Zeichenfolge" aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-162">In the Item type field, select 'String'.</span></span>
+51. <span data-ttu-id="254a3-163">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-163">Click Add.</span></span>
+52. <span data-ttu-id="254a3-164">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-164">Click New to open the drop dialog.</span></span>
+53. <span data-ttu-id="254a3-165">Geben Sie im Feld "Name" "Beleg" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-165">In the Name field, type 'Voucher'.</span></span>
+54. <span data-ttu-id="254a3-166">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-166">Click Add.</span></span>
+55. <span data-ttu-id="254a3-167">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-167">Click New to open the drop dialog.</span></span>
+56. <span data-ttu-id="254a3-168">Geben Sie im Feld "Name" "Dimensionsdaten" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-168">In the Name field, type 'Dimensions data'.</span></span>
+57. <span data-ttu-id="254a3-169">Wählen Sie im Feld "Artikeltyp" 'Datensatzliste' aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-169">In the Item type field, select 'Record list'.</span></span>
+58. <span data-ttu-id="254a3-170">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-170">Click Add.</span></span>
+    * <span data-ttu-id="254a3-171">Wir haben unserem Modell einen neue Datensatzliste hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="254a3-171">We added to our model a new record list.</span></span> <span data-ttu-id="254a3-172">Diese Liste enthält die Werte aus ausgewählten Finanzdimensionen (für einen ER-Berichte, die dieses Modell als Datenquelle nutzen).</span><span class="sxs-lookup"><span data-stu-id="254a3-172">This list will expose (for any ER reports using this model as data source) the values of selected financial dimensions.</span></span> <span data-ttu-id="254a3-173">Jede Finanzdimension wird in dieser Liste als Datensatz mit den entsprechenden Feldern dargestellt, welche die Werte der Dimension angezeigen.</span><span class="sxs-lookup"><span data-stu-id="254a3-173">Each financial dimension will be presented in this list as a record with appropriate fields representing dimension’s values.</span></span> <span data-ttu-id="254a3-174">Der Dimensionsname wird auch in diesem Datensatz als nutzbares Feld angezeigt (z. B. zur Auswahl).</span><span class="sxs-lookup"><span data-stu-id="254a3-174">Dimension name will be also presented in this record as a field to be used, if needed, for selection purposes.</span></span>  
+59. <span data-ttu-id="254a3-175">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-175">Click New to open the drop dialog.</span></span>
+60. <span data-ttu-id="254a3-176">Geben Sie im Feld "Name" "Code" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-176">In the Name field, type 'Code'.</span></span>
+61. <span data-ttu-id="254a3-177">Wählen Sie im Feld "Artikeltyp" "Zeichenfolge" aus.</span><span class="sxs-lookup"><span data-stu-id="254a3-177">In the Item type field, select 'String'.</span></span>
+62. <span data-ttu-id="254a3-178">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-178">Click Add.</span></span>
+63. <span data-ttu-id="254a3-179">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-179">Click New to open the drop dialog.</span></span>
+64. <span data-ttu-id="254a3-180">Geben Sie im Feld "Name" "Beschreibung" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-180">In the Name field, type 'Description'.</span></span>
+65. <span data-ttu-id="254a3-181">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-181">Click Add.</span></span>
+66. <span data-ttu-id="254a3-182">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="254a3-182">Click New to open the drop dialog.</span></span>
+67. <span data-ttu-id="254a3-183">Geben Sie im Feld "Name" "Name" ein.</span><span class="sxs-lookup"><span data-stu-id="254a3-183">In the Name field, type 'Name'.</span></span>
+68. <span data-ttu-id="254a3-184">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="254a3-184">Click Add.</span></span>
+69. <span data-ttu-id="254a3-185">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="254a3-185">Click Save.</span></span>
+70. <span data-ttu-id="254a3-186">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="254a3-186">Close the page.</span></span>
 
 

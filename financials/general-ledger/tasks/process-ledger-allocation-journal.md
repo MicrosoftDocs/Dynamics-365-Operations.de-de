@@ -16,31 +16,31 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 1189ffeae052c72542b3b403a6b7a6e415b005c4
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7d299657758b1e1322aef07bfe8c71f7bf00b0ca
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="process-ledger-allocation-journal"></a>Sachkonto-Zuordnungserfassung verarbeiten
+# <a name="process-ledger-allocation-journal"></a><span data-ttu-id="cee78-103">Sachkonto-Zuordnungserfassung verarbeiten</span><span class="sxs-lookup"><span data-stu-id="cee78-103">Process ledger allocation journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Mithilfe der Seite "Zuordnungsanforderung verarbeiten" können Sie eine Zuordnungserfassung erstellen, die vor der Buchung im Hauptbuch geprüft und genehmigt oder direkt im Hauptbuch gebucht werden kann. Vor der Erstellung einer Zuordnungserfassung muss mindesten eine Sachkontozuordnungsregel erstellt werden. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
+<span data-ttu-id="cee78-104">Mithilfe der Seite "Zuordnungsanforderung verarbeiten" können Sie eine Zuordnungserfassung erstellen, die vor der Buchung im Hauptbuch geprüft und genehmigt oder direkt im Hauptbuch gebucht werden kann.</span><span class="sxs-lookup"><span data-stu-id="cee78-104">Use the Process allocation request page to create an allocation journal that can be reviewed and approved before posting to General ledger, or posted directly to General ledger.</span></span> <span data-ttu-id="cee78-105">Vor der Erstellung einer Zuordnungserfassung muss mindesten eine Sachkontozuordnungsregel erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="cee78-105">Before you can create an allocations journal, there must be least one active Ledger allocation rule.</span></span> <span data-ttu-id="cee78-106">Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="cee78-106">This task uses the USMF demo company.</span></span>
 
-1. Wechseln Sie zu "Hauptbuch" > "Zuteilungen" > "Zuteilungsanforderung verarbeiten".
-2. Klicken Sie im Feld "Regel" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-5. Geben Sie im Feld "Per Datum" ein Datum ein.
-    * Das Anfangsdatum ist außerordentlich wichtig, wenn das Sachkonto die Datenquelle für die Regel ist. Dieses Datum steuert, welche Sachkonto für die Zuweisung genutzt wird.     Wählen Sie im Feld "Keine Quelle" "Beenden". Dies beendet den Zuordnungsprozess und eine Fehlermeldung mit dem Hinweis wird angezeigt, dass ein Ausgangsbetrag mit dem Wert "Null" ausgewählt ist.  
-6. Wählen Sie im Feld "Vorschlagsoptionen" "nur Vorschlag" aus.
-    * Wählen Sie "Nur Vorschlag" aus, um das Ergebnis in den Zuordnungserfassungen vor dem Buchen der Zuordnung in das Hauptbuch zu prüfen und optional zu genehmigen.  
-7. Geben Sie im Feld "Datum für Sachkontobuchung" ein Datum ein.
-8. Klicken Sie auf "OK".
-9. Wechseln Sie zu "Hauptbuch" > "Zuteilungen" > "Zuteilungserfassungen".
-10. Klicken Sie auf "Positionen".
-11. Klicken Sie auf "Buchen".
-12. Klicken Sie auf "Buchen".
+1. <span data-ttu-id="cee78-107">Wechseln Sie zu "Hauptbuch" > "Zuteilungen" > "Zuteilungsanforderung verarbeiten".</span><span class="sxs-lookup"><span data-stu-id="cee78-107">Go to General ledger > Allocations > Process allocation request.</span></span>
+2. <span data-ttu-id="cee78-108">Klicken Sie im Feld "Regel" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="cee78-108">In the Rule field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="cee78-109">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="cee78-109">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="cee78-110">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="cee78-110">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="cee78-111">Geben Sie im Feld "Per Datum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="cee78-111">In the As of date field, enter a date.</span></span>
+    * <span data-ttu-id="cee78-112">Das Anfangsdatum ist außerordentlich wichtig, wenn das Sachkonto die Datenquelle für die Regel ist.</span><span class="sxs-lookup"><span data-stu-id="cee78-112">The As of Date is very important when the Ledger is the Data source for the rule.</span></span> <span data-ttu-id="cee78-113">Dieses Datum steuert, welche Sachkonto für die Zuweisung genutzt wird.</span><span class="sxs-lookup"><span data-stu-id="cee78-113">This date controls which ledger balances to include for allocation.</span></span>     <span data-ttu-id="cee78-114">Wählen Sie im Feld "Keine Quelle" "Beenden".</span><span class="sxs-lookup"><span data-stu-id="cee78-114">In the Zero source field select Stop.</span></span> <span data-ttu-id="cee78-115">Dies beendet den Zuordnungsprozess und eine Fehlermeldung mit dem Hinweis wird angezeigt, dass ein Ausgangsbetrag mit dem Wert "Null" ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="cee78-115">This will  Stop the allocation process and display a message that states that a zero source amount is selected.</span></span>  
+6. <span data-ttu-id="cee78-116">Wählen Sie im Feld "Vorschlagsoptionen" "nur Vorschlag" aus.</span><span class="sxs-lookup"><span data-stu-id="cee78-116">In the Proposal options field, select 'Proposal only'.</span></span>
+    * <span data-ttu-id="cee78-117">Wählen Sie "Nur Vorschlag" aus, um das Ergebnis in den Zuordnungserfassungen vor dem Buchen der Zuordnung in das Hauptbuch zu prüfen und optional zu genehmigen.</span><span class="sxs-lookup"><span data-stu-id="cee78-117">Select Proposal only to review and optionally approve the result in Allocation journals prior to posting the allocation to General ledger.</span></span>  
+7. <span data-ttu-id="cee78-118">Geben Sie im Feld "Datum für Sachkontobuchung" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="cee78-118">In the GL posting date field, enter a date.</span></span>
+8. <span data-ttu-id="cee78-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="cee78-119">Click OK.</span></span>
+9. <span data-ttu-id="cee78-120">Wechseln Sie zu "Hauptbuch" > "Zuteilungen" > "Zuteilungserfassungen".</span><span class="sxs-lookup"><span data-stu-id="cee78-120">Go to General ledger > Allocations > Allocation journals.</span></span>
+10. <span data-ttu-id="cee78-121">Klicken Sie auf "Positionen".</span><span class="sxs-lookup"><span data-stu-id="cee78-121">Click Lines.</span></span>
+11. <span data-ttu-id="cee78-122">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="cee78-122">Click Post.</span></span>
+12. <span data-ttu-id="cee78-123">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="cee78-123">Click Post.</span></span>
 
 

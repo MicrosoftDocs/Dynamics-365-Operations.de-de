@@ -19,33 +19,33 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b530b5c8b5e252efb253dcf5b4ad080e2f646e5f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6485642d27156dfb37f9e30335369e3287f92148
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Freitextrechnungen
+# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a><span data-ttu-id="99ecd-104">Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Freitextrechnungen</span><span class="sxs-lookup"><span data-stu-id="99ecd-104">Accounting distributions and subledger journal entries for free text invoices</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Mithilfe von Buchhaltungsverteilungen wird definiert, wie ein Betrag kalkuliert wird, beispielsweise wie Umsatzerlöse, Steuern oder Zuschläge auf einer Freitextrechnung kalkuliert werden. Jeder Betrag, der kalkuliert werden muss, wenn die Freitextrechnung journalisiert wird, enthält eine oder mehrere Buchhaltungsverteilungen.
+<span data-ttu-id="99ecd-105">Mithilfe von Buchhaltungsverteilungen wird definiert, wie ein Betrag kalkuliert wird, beispielsweise wie Umsatzerlöse, Steuern oder Zuschläge auf einer Freitextrechnung kalkuliert werden.</span><span class="sxs-lookup"><span data-stu-id="99ecd-105">Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span> <span data-ttu-id="99ecd-106">Jeder Betrag, der kalkuliert werden muss, wenn die Freitextrechnung journalisiert wird, enthält eine oder mehrere Buchhaltungsverteilungen.</span><span class="sxs-lookup"><span data-stu-id="99ecd-106">Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.</span></span>
 
-<a name="accounting-distributions"></a>Buchhaltungsverteilungen
+<a name="accounting-distributions"></a><span data-ttu-id="99ecd-107">Buchhaltungsverteilungen</span><span class="sxs-lookup"><span data-stu-id="99ecd-107">Accounting distributions</span></span>
 ------------------------
 
-Sie können die folgenden Schaltflächen auf der Seite "Freitextrechnung" verwenden, um die Buchhaltungsverteilungen für jeden Betrag auf der Freitextrechnung anzuzeigen und eventuell zu ändern.
+<span data-ttu-id="99ecd-108">Sie können die folgenden Schaltflächen auf der Seite "Freitextrechnung" verwenden, um die Buchhaltungsverteilungen für jeden Betrag auf der Freitextrechnung anzuzeigen und eventuell zu ändern.</span><span class="sxs-lookup"><span data-stu-id="99ecd-108">You can use the following buttons in the Free text invoice page to view, and possibly change, the accounting distributions for each amount on the free text invoice.</span></span>
 
--   **Beträge verteilen**– Dient zum Anzeigen und Ändern der Buchhaltungsverteilungen für eine einzelne Position und alle untergeordneten Positionen wie Steuern oder Belastungen. Sie können auch die Buchhaltungsverteilungen für die untergeordnete Position direkt von der Seite "Mehrwertsteuerbuchungen" oder der Seite "Belastungsbuchungen" aus anzeigen und ändern.
-    -   Ändern Sie Kopfzeilenbeträge von Freitextrechnungen wie Zuschläge oder Währungsrundungsbeträge.
-    -   Ändern von Freitextrechnungpositionsbeträgen.
--   **Verteilungen anzeigen** – Dient zum Anzeigen der Buchhaltungsverteilungen für alle Positionen im Dokument. Sie können die Buchhaltungsverteilungen in dieser Ansicht nicht ändern.
-    -   Zeigen Sie die Kopfzeilen- und Positionsbeträge an.
+-   <span data-ttu-id="99ecd-109">**Beträge verteilen**– Dient zum Anzeigen und Ändern der Buchhaltungsverteilungen für eine einzelne Position und alle untergeordneten Positionen wie Steuern oder Belastungen.</span><span class="sxs-lookup"><span data-stu-id="99ecd-109">**Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges.</span></span> <span data-ttu-id="99ecd-110">Sie können auch die Buchhaltungsverteilungen für die untergeordnete Position direkt von der Seite "Mehrwertsteuerbuchungen" oder der Seite "Belastungsbuchungen" aus anzeigen und ändern.</span><span class="sxs-lookup"><span data-stu-id="99ecd-110">You can also view and change the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.</span></span>
+    -   <span data-ttu-id="99ecd-111">Ändern Sie Kopfzeilenbeträge von Freitextrechnungen wie Zuschläge oder Währungsrundungsbeträge.</span><span class="sxs-lookup"><span data-stu-id="99ecd-111">Change free text invoice header amounts, such as charges or currency rounding amounts.</span></span>
+    -   <span data-ttu-id="99ecd-112">Ändern von Freitextrechnungpositionsbeträgen.</span><span class="sxs-lookup"><span data-stu-id="99ecd-112">Change free text invoice line amounts.</span></span>
+-   <span data-ttu-id="99ecd-113">**Verteilungen anzeigen** – Dient zum Anzeigen der Buchhaltungsverteilungen für alle Positionen im Dokument.</span><span class="sxs-lookup"><span data-stu-id="99ecd-113">**View distributions**—View the accounting distributions for all lines on the document.</span></span> <span data-ttu-id="99ecd-114">Sie können die Buchhaltungsverteilungen in dieser Ansicht nicht ändern.</span><span class="sxs-lookup"><span data-stu-id="99ecd-114">You can't change the accounting distributions from this view.</span></span>
+    -   <span data-ttu-id="99ecd-115">Zeigen Sie die Kopfzeilen- und Positionsbeträge an.</span><span class="sxs-lookup"><span data-stu-id="99ecd-115">View header and line amounts.</span></span>
 
-## <a name="distributing-amounts"></a>Beträge verteilen
-Wenn Sie eine Freitextrechnung eingeben, wird jeder Betrag wie folgt verteilt.
+## <a name="distributing-amounts"></a><span data-ttu-id="99ecd-116">Beträge verteilen</span><span class="sxs-lookup"><span data-stu-id="99ecd-116">Distributing amounts</span></span>
+<span data-ttu-id="99ecd-117">Wenn Sie eine Freitextrechnung eingeben, wird jeder Betrag wie folgt verteilt.</span><span class="sxs-lookup"><span data-stu-id="99ecd-117">When you enter a free text invoice, each amount will be distributed as follows.</span></span>
 
 <table>
 <colgroup>
@@ -55,86 +55,86 @@ Wenn Sie eine Freitextrechnung eingeben, wird jeder Betrag wie folgt verteilt.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Typ des Geldbetrags</th>
-<th>Wo das Hauptkonto angezeigt wird</th>
-<th>Prioritätsreihenfolge, die bestimmt, welche standardmäßige Finanzdimension angezeigt wird</th>
+<th><span data-ttu-id="99ecd-118">Typ des Geldbetrags</span><span class="sxs-lookup"><span data-stu-id="99ecd-118">Type of monetary amount</span></span></th>
+<th><span data-ttu-id="99ecd-119">Wo das Hauptkonto angezeigt wird</span><span class="sxs-lookup"><span data-stu-id="99ecd-119">Where the main account is displayed from</span></span></th>
+<th><span data-ttu-id="99ecd-120">Prioritätsreihenfolge, die bestimmt, welche standardmäßige Finanzdimension angezeigt wird</span><span class="sxs-lookup"><span data-stu-id="99ecd-120">Order of priority that determines which default financial dimension is displayed</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Freitextrechnungsposition</td>
-<td>Das Sachkonto in der Freitextrechnungsposition</td>
+<td><span data-ttu-id="99ecd-121">Freitextrechnungsposition</span><span class="sxs-lookup"><span data-stu-id="99ecd-121">Free text invoice line</span></span></td>
+<td><span data-ttu-id="99ecd-122">Das Sachkonto in der Freitextrechnungsposition</span><span class="sxs-lookup"><span data-stu-id="99ecd-122">The ledger account on the free text invoice line.</span></span></td>
 <td><ol>
-<li>Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</li>
-<li>Wenn das Hauptkonto kein Zuweisungskonto ist, verwenden Sie die Standardvorlage für Finanzdimensionen in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li><span data-ttu-id="99ecd-123">Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-123">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="99ecd-124">Wenn das Hauptkonto kein Zuweisungskonto ist, verwenden Sie die Standardvorlage für Finanzdimensionen in der Freitextrechnungsposition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-124">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="99ecd-125">Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-125">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="99ecd-126">Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</span><span class="sxs-lookup"><span data-stu-id="99ecd-126">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Freitextrechnungsposition für eine Kombination aus Anlagennummer und Wertmodell
+<td><span data-ttu-id="99ecd-127">Freitextrechnungsposition für eine Kombination aus Anlagennummer und Wertmodell</span><span class="sxs-lookup"><span data-stu-id="99ecd-127">Free text invoice line for a fixed asset number and value model combination</span></span>
 <div class="alert">
 <table>
 <thead>
 <tr class="header">
-<th><strong>Hinweis </strong></th>
+<th><span data-ttu-id="99ecd-128"><strong>Hinweis </strong></span><span class="sxs-lookup"><span data-stu-id="99ecd-128"><strong>Note</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Das Hauptkonto in der Freitextrechnungsposition ist das Anlagenveräußerungskonto.</td>
+<td><span data-ttu-id="99ecd-129">Das Hauptkonto in der Freitextrechnungsposition ist das Anlagenveräußerungskonto.</span><span class="sxs-lookup"><span data-stu-id="99ecd-129">The main account on the free text invoice line will be the fixed asset disposal account.</span></span></td>
 </tr>
 </tbody>
 </table>
 </div></td>
-<td>Das Sachkonto in der Freitextrechnungsposition</td>
+<td><span data-ttu-id="99ecd-130">Das Sachkonto in der Freitextrechnungsposition</span><span class="sxs-lookup"><span data-stu-id="99ecd-130">The ledger account on the free text invoice line.</span></span></td>
 <td><ol>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li><span data-ttu-id="99ecd-131">Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-131">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="99ecd-132">Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</span><span class="sxs-lookup"><span data-stu-id="99ecd-132">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Rabattbetrag der Freitextrechnung</td>
-<td>Das Feld "Hauptkonto für Debitorenrabatte" auf der Skonti Seite.</td>
+<td><span data-ttu-id="99ecd-133">Rabattbetrag der Freitextrechnung</span><span class="sxs-lookup"><span data-stu-id="99ecd-133">Free text invoice discount amount</span></span></td>
+<td><span data-ttu-id="99ecd-134">Das Feld "Hauptkonto für Debitorenrabatte" auf der Skonti Seite.</span><span class="sxs-lookup"><span data-stu-id="99ecd-134">The Main account for customer discounts field in the Cash discounts page.</span></span></td>
 <td><ol>
-<li>Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</li>
-<li>Wenn das Hauptkonto kein Zuweisungskonto ist, verwenden Sie die Standardvorlage für Finanzdimensionen in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li><span data-ttu-id="99ecd-135">Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-135">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="99ecd-136">Wenn das Hauptkonto kein Zuweisungskonto ist, verwenden Sie die Standardvorlage für Finanzdimensionen in der Freitextrechnungsposition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-136">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="99ecd-137">Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-137">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="99ecd-138">Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</span><span class="sxs-lookup"><span data-stu-id="99ecd-138">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Mehrwertsteuerbetrag der Freitextrechnung</td>
-<td>Das Feld Mehrwertsteuer in der Sachkontobuchungsgruppenseite.</td>
+<td><span data-ttu-id="99ecd-139">Mehrwertsteuerbetrag der Freitextrechnung</span><span class="sxs-lookup"><span data-stu-id="99ecd-139">Free text invoice sales tax amount</span></span></td>
+<td><span data-ttu-id="99ecd-140">Das Feld Mehrwertsteuer in der Sachkontobuchungsgruppenseite.</span><span class="sxs-lookup"><span data-stu-id="99ecd-140">The Sales tax payable field in the Ledger posting groups page.</span></span></td>
 <td><ol>
-<li>Verwenden Sie die Finanzdimensionen, die im Freitextrechnungspositionsbetrag oder den Verteilungen für den Positionsbetrag der Zuschläge definiert sind.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li><span data-ttu-id="99ecd-141">Verwenden Sie die Finanzdimensionen, die im Freitextrechnungspositionsbetrag oder den Verteilungen für den Positionsbetrag der Zuschläge definiert sind.</span><span class="sxs-lookup"><span data-stu-id="99ecd-141">Use the financial dimensions that are defined on the free text invoice line amount or the distributions for the charge line amount.</span></span></li>
+<li><span data-ttu-id="99ecd-142">Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-142">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="99ecd-143">Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</span><span class="sxs-lookup"><span data-stu-id="99ecd-143">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Positionsbetrag der Zuschläge der Freitextrechnung</td>
-<td>Das Habenkontofeld in der Belastungscodeseite.</td>
+<td><span data-ttu-id="99ecd-144">Positionsbetrag der Zuschläge der Freitextrechnung</span><span class="sxs-lookup"><span data-stu-id="99ecd-144">Free text invoice charge line amount</span></span></td>
+<td><span data-ttu-id="99ecd-145">Das Habenkontofeld in der Belastungscodeseite.</span><span class="sxs-lookup"><span data-stu-id="99ecd-145">The Credit account field in the Charges code page.</span></span></td>
 <td><ol>
-<li>Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</li>
-<li>Wenn das Hauptkonto kein Zuweisungskonto ist, verwenden Sie die Standardvorlage für Finanzdimensionen in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</li>
-<li>Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</li>
+<li><span data-ttu-id="99ecd-146">Wenn das Hauptkonto ein Zuordnungskonto ist, verwenden Sie den Standardwert der Zuweisungskontodefinition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-146">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="99ecd-147">Wenn das Hauptkonto kein Zuweisungskonto ist, verwenden Sie die Standardvorlage für Finanzdimensionen in der Freitextrechnungsposition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-147">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="99ecd-148">Verwenden Sie die standardmäßigen Finanzdimensionswerte in der Freitextrechnungsposition.</span><span class="sxs-lookup"><span data-stu-id="99ecd-148">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="99ecd-149">Verwenden Sie die standardmäßigen Finanzdimensionswerte aus dem Sachkonto auf der Seite "Kontenplan".</span><span class="sxs-lookup"><span data-stu-id="99ecd-149">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="distributing-taxes"></a>Verteilen von Steuern
-Buchhaltungsverteilungen für Steuern können erst erstellt werden, nachdem Steuern berechnet wurden. Zum Berechnen der Mehrwertsteuer müssen Sie auf der Seite "Freitextrechnung" eine der folgenden Aufgaben ausführen:
--   Zeigen Sie den Mehrwertsteuercode an.
--   Zeigen Sie die Rechnungssumme an.
--   Zeigen Sie den Cashflow an.
--   Zeigen Sie die Buchhaltungsverteilungen für die gesamte Freitextrechnung an.
--   Zeigen Sie die Erfassung im untergeordneten Sachkonto an.
+## <a name="distributing-taxes"></a><span data-ttu-id="99ecd-150">Verteilen von Steuern</span><span class="sxs-lookup"><span data-stu-id="99ecd-150">Distributing taxes</span></span>
+<span data-ttu-id="99ecd-151">Buchhaltungsverteilungen für Steuern können erst erstellt werden, nachdem Steuern berechnet wurden.</span><span class="sxs-lookup"><span data-stu-id="99ecd-151">Accounting distributions for taxes cannot be created until taxes are calculated.</span></span> <span data-ttu-id="99ecd-152">Zum Berechnen der Mehrwertsteuer müssen Sie auf der Seite "Freitextrechnung" eine der folgenden Aufgaben ausführen:</span><span class="sxs-lookup"><span data-stu-id="99ecd-152">To calculate sales taxes, you must complete one of the following tasks in the Free text invoice form:</span></span>
+-   <span data-ttu-id="99ecd-153">Zeigen Sie den Mehrwertsteuercode an.</span><span class="sxs-lookup"><span data-stu-id="99ecd-153">View the sales tax.</span></span>
+-   <span data-ttu-id="99ecd-154">Zeigen Sie die Rechnungssumme an.</span><span class="sxs-lookup"><span data-stu-id="99ecd-154">View the invoice total.</span></span>
+-   <span data-ttu-id="99ecd-155">Zeigen Sie den Cashflow an.</span><span class="sxs-lookup"><span data-stu-id="99ecd-155">View the cash flow.</span></span>
+-   <span data-ttu-id="99ecd-156">Zeigen Sie die Buchhaltungsverteilungen für die gesamte Freitextrechnung an.</span><span class="sxs-lookup"><span data-stu-id="99ecd-156">View accounting distributions for the whole free text invoice.</span></span>
+-   <span data-ttu-id="99ecd-157">Zeigen Sie die Erfassung im untergeordneten Sachkonto an.</span><span class="sxs-lookup"><span data-stu-id="99ecd-157">View the subledger journal.</span></span>
 
-## <a name="subledger-journals-for-free-text-invoices"></a>Erfassungen im untergeordneten Sachkonto für Freitextrechnungen
-Bevor Sie eine Freitextrechnung buchen, können Sie den vollständigen Buchhaltungseintrag der Rechnung anzeigen, der Soll- und Habenbeträge enthält, um sicherzustellen, dass die Rechnung auf die richtigen Konten gebucht wird. Diese Ansicht des vollständigen Buchhaltungseintrags wird als Erfassung im untergeordneten Sachkonto bezeichnet. Wenn der Erfassungseintrag im untergeordneten Sachkonto falsch ist, wenn Sie ihn in der Vorschau anzeigen, bevor Sie die Freitextrechnung journalisieren, können Sie den Erfassungseintrag im untergeordneten Sachkonto nicht ändern. Stattdessen müssen Sie die Buchhaltungsverteilungen oder das Buchungsprofil ändern. Die Buchhaltungsverteilungen dienen dazu, eine Seite des Buchhaltungseintrags, der Soll- oder Habenbetrag, zu definieren. Der Ausgleichskontoeintrag in der Erfassung im untergeordneten Sachkonto wird aus den Buchungsprofilen erstellt, beispielsweise aus dem Debitorenkonto oder der Steuer.
+## <a name="subledger-journals-for-free-text-invoices"></a><span data-ttu-id="99ecd-158">Erfassungen im untergeordneten Sachkonto für Freitextrechnungen</span><span class="sxs-lookup"><span data-stu-id="99ecd-158">Subledger journals for free text invoices</span></span>
+<span data-ttu-id="99ecd-159">Bevor Sie eine Freitextrechnung buchen, können Sie den vollständigen Buchhaltungseintrag der Rechnung anzeigen, der Soll- und Habenbeträge enthält, um sicherzustellen, dass die Rechnung auf die richtigen Konten gebucht wird.</span><span class="sxs-lookup"><span data-stu-id="99ecd-159">Before you post a free text invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts.</span></span> <span data-ttu-id="99ecd-160">Diese Ansicht des vollständigen Buchhaltungseintrags wird als Erfassung im untergeordneten Sachkonto bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="99ecd-160">This view of the full accounting entry is called a subledger journal.</span></span> <span data-ttu-id="99ecd-161">Wenn der Erfassungseintrag im untergeordneten Sachkonto falsch ist, wenn Sie ihn in der Vorschau anzeigen, bevor Sie die Freitextrechnung journalisieren, können Sie den Erfassungseintrag im untergeordneten Sachkonto nicht ändern.</span><span class="sxs-lookup"><span data-stu-id="99ecd-161">If the subledger journal entry is incorrect when you preview it before you journalize the free text invoice, you can't change the subledger journal entry.</span></span> <span data-ttu-id="99ecd-162">Stattdessen müssen Sie die Buchhaltungsverteilungen oder das Buchungsprofil ändern.</span><span class="sxs-lookup"><span data-stu-id="99ecd-162">Instead, you must change the accounting distributions or the posting profile.</span></span> <span data-ttu-id="99ecd-163">Die Buchhaltungsverteilungen dienen dazu, eine Seite des Buchhaltungseintrags, der Soll- oder Habenbetrag, zu definieren.</span><span class="sxs-lookup"><span data-stu-id="99ecd-163">The accounting distributions are used to define one side of the accounting entry, the debit or the credit.</span></span> <span data-ttu-id="99ecd-164">Der Ausgleichskontoeintrag in der Erfassung im untergeordneten Sachkonto wird aus den Buchungsprofilen erstellt, beispielsweise aus dem Debitorenkonto oder der Steuer.</span><span class="sxs-lookup"><span data-stu-id="99ecd-164">The offsetting subledger journal account entry is created from the posting profiles, such as from the customer account or the tax.</span></span>
 
 
 

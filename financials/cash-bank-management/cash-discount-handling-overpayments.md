@@ -19,124 +19,124 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5d75794146eada9b9f439d99ad272f5af8db53b
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 5604f806eed81c60dfcae7cb7b1a22bba25aa454
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Skontobehandlung für Überzahlungen
+# <a name="handling-cash-discounts-for-overpayments"></a><span data-ttu-id="79cd0-103">Skontobehandlung für Überzahlungen</span><span class="sxs-lookup"><span data-stu-id="79cd0-103">Handling cash discounts for overpayments</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält Szenarien, die zeigen, wie eine Zahlung behandelt wird, wenn der Debitor ein Skonto abzieht aber auch zu viel bezahlt. 
+<span data-ttu-id="79cd0-104">Dieser Artikel enthält Szenarien, die zeigen, wie eine Zahlung behandelt wird, wenn der Debitor ein Skonto abzieht aber auch zu viel bezahlt.</span><span class="sxs-lookup"><span data-stu-id="79cd0-104">This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.</span></span> 
 
-Eine Rechnung gilt als zu viel bezahlt, wenn der Zahlungsbetrag höher als der Rechnungsbetrag minus des Skontos ist. Um anzugeben, wie eine verfügbare Skontodifferenz behandelt wird, wenn eine Rechnung zu viel bezahlt wird, verwenden Sie die Felder **Skontoverwaltung** und **Maximale Über- bzw. Unterzahlung** auf der **Debitorenparameter** Seite. Im folgenden Beispiel hat der Debitor bei der Rechnung 0,50 zu viel bezahlt.
+<span data-ttu-id="79cd0-105">Eine Rechnung gilt als zu viel bezahlt, wenn der Zahlungsbetrag höher als der Rechnungsbetrag minus des Skontos ist.</span><span class="sxs-lookup"><span data-stu-id="79cd0-105">An invoice is considered overpaid when the payment amount is more than the invoice amount minus the cash discount.</span></span> <span data-ttu-id="79cd0-106">Um anzugeben, wie eine verfügbare Skontodifferenz behandelt wird, wenn eine Rechnung zu viel bezahlt wird, verwenden Sie die Felder **Skontoverwaltung** und **Maximale Über- bzw. Unterzahlung** auf der **Debitorenparameter** Seite.</span><span class="sxs-lookup"><span data-stu-id="79cd0-106">To specify how an obtainable cash discount difference is handled when an invoice is overpaid, use the **Cash discount administration** and **Maximum overpayment or underpayment** fields on the **Accounts receivable parameters** page.</span></span> <span data-ttu-id="79cd0-107">Im folgenden Beispiel hat der Debitor bei der Rechnung 0,50 zu viel bezahlt.</span><span class="sxs-lookup"><span data-stu-id="79cd0-107">In the following example, the customer has overpaid the invoice by 0.50.</span></span>
 
-| Rechnungssumme | Skonto verfügbar | Zu zahlender Betrag, der das Skonto enthält | Betrag, den der Debitor tatsächlich zahlt |
+| <span data-ttu-id="79cd0-108">Rechnungssumme</span><span class="sxs-lookup"><span data-stu-id="79cd0-108">Invoice total</span></span> | <span data-ttu-id="79cd0-109">Skonto verfügbar</span><span class="sxs-lookup"><span data-stu-id="79cd0-109">Cash discount available</span></span> | <span data-ttu-id="79cd0-110">Zu zahlender Betrag, der das Skonto enthält</span><span class="sxs-lookup"><span data-stu-id="79cd0-110">Amount to be paid, which includes the cash discount</span></span> | <span data-ttu-id="79cd0-111">Betrag, den der Debitor tatsächlich zahlt</span><span class="sxs-lookup"><span data-stu-id="79cd0-111">Amount the customer actually pays</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|-----------------------------------|
-| 105,00        | 10,50                   | 94,50                                               | 95,00                             |
+| <span data-ttu-id="79cd0-112">105,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-112">105.00</span></span>        | <span data-ttu-id="79cd0-113">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-113">10.50</span></span>                   | <span data-ttu-id="79cd0-114">94,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-114">94.50</span></span>                                               | <span data-ttu-id="79cd0-115">95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-115">95.00</span></span>                             |
 
-## <a name="cash-discount-administration--specific"></a>Skontoverwaltungsoption = Spezifisch
-Wenn **Spezifisch** im Feld **Skontoverwaltung** der Seite **Konten für automatische Buchungen** ausgewählt ist, wird das vollständige Skonto übernommen. Der Überzahlungsbetrag wird entweder zu einem Sachkonto für den Skontounterschied gebucht oder bleibt als Kontensaldo auf dem Debitorenkonto. Das genaue Verhalten hängt davon ab, ob der Überzahlungsbetrag zwischen 0,00 und dem Betrag liegt, der im Feld**Maximale Über- bzw. Unterzahlung** eingegeben wurde, oder ob der Überzahlungsbetrag größer als der Betrag in **Maximale Über- bzw. Unterzahlung** ist.
+## <a name="cash-discount-administration--specific"></a><span data-ttu-id="79cd0-116">Skontoverwaltungsoption = Spezifisch</span><span class="sxs-lookup"><span data-stu-id="79cd0-116">Cash discount administration = Specific</span></span>
+<span data-ttu-id="79cd0-117">Wenn **Spezifisch** im Feld **Skontoverwaltung** der Seite **Konten für automatische Buchungen** ausgewählt ist, wird das vollständige Skonto übernommen.</span><span class="sxs-lookup"><span data-stu-id="79cd0-117">When **Specific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the full cash discount is taken.</span></span> <span data-ttu-id="79cd0-118">Der Überzahlungsbetrag wird entweder zu einem Sachkonto für den Skontounterschied gebucht oder bleibt als Kontensaldo auf dem Debitorenkonto.</span><span class="sxs-lookup"><span data-stu-id="79cd0-118">The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account.</span></span> <span data-ttu-id="79cd0-119">Das genaue Verhalten hängt davon ab, ob der Überzahlungsbetrag zwischen 0,00 und dem Betrag liegt, der im Feld**Maximale Über- bzw. Unterzahlung** eingegeben wurde, oder ob der Überzahlungsbetrag größer als der Betrag in **Maximale Über- bzw. Unterzahlung** ist.</span><span class="sxs-lookup"><span data-stu-id="79cd0-119">The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.</span></span>
 
-### <a name="scenario-1"></a>Szenario 1
+### <a name="scenario-1"></a><span data-ttu-id="79cd0-120">Szenario 1</span><span class="sxs-lookup"><span data-stu-id="79cd0-120">Scenario 1</span></span>
 
-In diesem Szenario liegt der Überzahlungsbetrag zwischen 0,00 und dem Maximum für die Überzahlung oder Unterzahlung. Es wird eine Rechnung über 105,00 mit einem Skonto erfasst, das verfügbar ist, wenn die Rechnung innerhalb von sieben Tagen beglichen wird.
+<span data-ttu-id="79cd0-121">In diesem Szenario liegt der Überzahlungsbetrag zwischen 0,00 und dem Maximum für die Überzahlung oder Unterzahlung.</span><span class="sxs-lookup"><span data-stu-id="79cd0-121">In this scenario, the overpayment amount is between 0.00 and the maximum overpayment or underpayment.</span></span> <span data-ttu-id="79cd0-122">Es wird eine Rechnung über 105,00 mit einem Skonto erfasst, das verfügbar ist, wenn die Rechnung innerhalb von sieben Tagen beglichen wird.</span><span class="sxs-lookup"><span data-stu-id="79cd0-122">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Rechnungssumme | Skonto verfügbar | Zu zahlender Betrag, der das Skonto enthält |
+| <span data-ttu-id="79cd0-123">Rechnungssumme</span><span class="sxs-lookup"><span data-stu-id="79cd0-123">Invoice total</span></span> | <span data-ttu-id="79cd0-124">Skonto verfügbar</span><span class="sxs-lookup"><span data-stu-id="79cd0-124">Cash discount available</span></span> | <span data-ttu-id="79cd0-125">Zu zahlender Betrag, der das Skonto enthält</span><span class="sxs-lookup"><span data-stu-id="79cd0-125">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="79cd0-126">105,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-126">105.00</span></span>        | <span data-ttu-id="79cd0-127">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-127">10.50</span></span>                   | <span data-ttu-id="79cd0-128">94,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-128">94.50</span></span>                                               |
 
-Der Debitor übermittelt eine Zahlung für 95,00 innerhalb des Skontoabzinsungszeitraums. Die Zahlung wird mit der offenen Rechnung über 105,00 ausgeglichen. Nachdem die Rechnung und die Zahlung ausgeglichen sind, werden für den Debitor die folgenden Transaktionen in Debitor erstellt.
+<span data-ttu-id="79cd0-129">Der Debitor übermittelt eine Zahlung für 95,00 innerhalb des Skontoabzinsungszeitraums.</span><span class="sxs-lookup"><span data-stu-id="79cd0-129">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="79cd0-130">Die Zahlung wird mit der offenen Rechnung über 105,00 ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="79cd0-130">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="79cd0-131">Nachdem die Rechnung und die Zahlung ausgeglichen sind, werden für den Debitor die folgenden Transaktionen in Debitor erstellt.</span><span class="sxs-lookup"><span data-stu-id="79cd0-131">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transaktion   | Betrag | Gesamtbetrag |
+| <span data-ttu-id="79cd0-132">Transaktion</span><span class="sxs-lookup"><span data-stu-id="79cd0-132">Transaction</span></span>   | <span data-ttu-id="79cd0-133">Betrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-133">Amount</span></span> | <span data-ttu-id="79cd0-134">Gesamtbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-134">Balance</span></span> |
 |---------------|--------|---------|
-| Rechnung       | 105,00 | 0,00    |
-| Zahlung       | -95,00 | 0,00    |
-| Skonto | -10,50 | 0,00    |
+| <span data-ttu-id="79cd0-135">Rechnung</span><span class="sxs-lookup"><span data-stu-id="79cd0-135">Invoice</span></span>       | <span data-ttu-id="79cd0-136">105,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-136">105.00</span></span> | <span data-ttu-id="79cd0-137">0,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-137">0.00</span></span>    |
+| <span data-ttu-id="79cd0-138">Zahlung</span><span class="sxs-lookup"><span data-stu-id="79cd0-138">Payment</span></span>       | <span data-ttu-id="79cd0-139">-95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-139">-95.00</span></span> | <span data-ttu-id="79cd0-140">0,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-140">0.00</span></span>    |
+| <span data-ttu-id="79cd0-141">Skonto</span><span class="sxs-lookup"><span data-stu-id="79cd0-141">Cash discount</span></span> | <span data-ttu-id="79cd0-142">-10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-142">-10.50</span></span> | <span data-ttu-id="79cd0-143">0,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-143">0.00</span></span>    |
 
-Die folgenden Buchhaltungseinträge werden zur Zahlung und dem Ausgleich generiert. **Zahlung**
+<span data-ttu-id="79cd0-144">Die folgenden Buchhaltungseinträge werden zur Zahlung und dem Ausgleich generiert.</span><span class="sxs-lookup"><span data-stu-id="79cd0-144">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="79cd0-145">**Zahlung**</span><span class="sxs-lookup"><span data-stu-id="79cd0-145">**Payment**</span></span>
 
-| Konto             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="79cd0-146">Konto</span><span class="sxs-lookup"><span data-stu-id="79cd0-146">Account</span></span>             | <span data-ttu-id="79cd0-147">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-147">Debit amount</span></span> | <span data-ttu-id="79cd0-148">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-148">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Bargeld                | 95,00        |               |
-| Debitoren |              | 95,00         |
+| <span data-ttu-id="79cd0-149">Bargeld</span><span class="sxs-lookup"><span data-stu-id="79cd0-149">Cash</span></span>                | <span data-ttu-id="79cd0-150">95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-150">95.00</span></span>        |               |
+| <span data-ttu-id="79cd0-151">Debitoren</span><span class="sxs-lookup"><span data-stu-id="79cd0-151">Accounts receivable</span></span> |              | <span data-ttu-id="79cd0-152">95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-152">95.00</span></span>         |
 
-**Ausgleich**
+<span data-ttu-id="79cd0-153">**Ausgleich**</span><span class="sxs-lookup"><span data-stu-id="79cd0-153">**Settlement**</span></span>
 
-| Konto                                                                                                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="79cd0-154">Konto</span><span class="sxs-lookup"><span data-stu-id="79cd0-154">Account</span></span>                                                                                                          | <span data-ttu-id="79cd0-155">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-155">Debit amount</span></span> | <span data-ttu-id="79cd0-156">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-156">Credit amount</span></span> |
 |------------------------------------------------------------------------------------------------------------------|--------------|---------------|
-| Skonto (das Feld **Hauptkonto für Debitorenrabatte** auf der **Skonti** Seite)                 | 10,50        |               |
-| Debitoren                                                                                              |              | 10,50         |
-| Debitorenskonto (das Feld **Debitorenskonto** auf der **Konten für automatische Buchungen** Seite) |              | 0,50          |
-| Debitoren                                                                                              | 0,50         |               |
+| <span data-ttu-id="79cd0-157">Skonto (das Feld **Hauptkonto für Debitorenrabatte** auf der **Skonti** Seite)</span><span class="sxs-lookup"><span data-stu-id="79cd0-157">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span>                 | <span data-ttu-id="79cd0-158">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-158">10.50</span></span>        |               |
+| <span data-ttu-id="79cd0-159">Debitoren</span><span class="sxs-lookup"><span data-stu-id="79cd0-159">Accounts receivable</span></span>                                                                                              |              | <span data-ttu-id="79cd0-160">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-160">10.50</span></span>         |
+| <span data-ttu-id="79cd0-161">Debitorenskonto (das Feld **Debitorenskonto** auf der **Konten für automatische Buchungen** Seite)</span><span class="sxs-lookup"><span data-stu-id="79cd0-161">Customer cash discount (the **Customer cash discount** field on the **Account for automatic transactions** page)</span></span> |              | <span data-ttu-id="79cd0-162">0,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-162">0.50</span></span>          |
+| <span data-ttu-id="79cd0-163">Debitoren</span><span class="sxs-lookup"><span data-stu-id="79cd0-163">Accounts receivable</span></span>                                                                                              | <span data-ttu-id="79cd0-164">0,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-164">0.50</span></span>         |               |
 
-### <a name="scenario-2"></a>Szenario 2
+### <a name="scenario-2"></a><span data-ttu-id="79cd0-165">Szenario 2</span><span class="sxs-lookup"><span data-stu-id="79cd0-165">Scenario 2</span></span>
 
-In diesem Szenario übersteigt der Überzahlungsbetrag das Maximum für den Überzahlungs- oder Unterzahlungsbetrag. Es wird eine Rechnung über 105,00 mit einem Skonto erfasst, das verfügbar ist, wenn die Rechnung innerhalb von sieben Tagen beglichen wird.
+<span data-ttu-id="79cd0-166">In diesem Szenario übersteigt der Überzahlungsbetrag das Maximum für den Überzahlungs- oder Unterzahlungsbetrag.</span><span class="sxs-lookup"><span data-stu-id="79cd0-166">In this scenario, the overpayment amount exceeds the maximum overpayment or underpayment amount.</span></span> <span data-ttu-id="79cd0-167">Es wird eine Rechnung über 105,00 mit einem Skonto erfasst, das verfügbar ist, wenn die Rechnung innerhalb von sieben Tagen beglichen wird.</span><span class="sxs-lookup"><span data-stu-id="79cd0-167">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Rechnungssumme | Skonto verfügbar | Zu zahlender Betrag, der das Skonto enthält |
+| <span data-ttu-id="79cd0-168">Rechnungssumme</span><span class="sxs-lookup"><span data-stu-id="79cd0-168">Invoice total</span></span> | <span data-ttu-id="79cd0-169">Skonto verfügbar</span><span class="sxs-lookup"><span data-stu-id="79cd0-169">Cash discount available</span></span> | <span data-ttu-id="79cd0-170">Zu zahlender Betrag, der das Skonto enthält</span><span class="sxs-lookup"><span data-stu-id="79cd0-170">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="79cd0-171">105,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-171">105.00</span></span>        | <span data-ttu-id="79cd0-172">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-172">10.50</span></span>                   | <span data-ttu-id="79cd0-173">94,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-173">94.50</span></span>                                               |
 
-Der Debitor übermittelt eine Zahlung für 95,00 innerhalb des Skontoabzinsungszeitraums. Die Zahlung wird mit der offenen Rechnung über 105,00 ausgeglichen. Nachdem die Rechnung und die Zahlung ausgeglichen sind, werden für den Debitor die folgenden Transaktionen in Debitor erstellt.
+<span data-ttu-id="79cd0-174">Der Debitor übermittelt eine Zahlung für 95,00 innerhalb des Skontoabzinsungszeitraums.</span><span class="sxs-lookup"><span data-stu-id="79cd0-174">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="79cd0-175">Die Zahlung wird mit der offenen Rechnung über 105,00 ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="79cd0-175">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="79cd0-176">Nachdem die Rechnung und die Zahlung ausgeglichen sind, werden für den Debitor die folgenden Transaktionen in Debitor erstellt.</span><span class="sxs-lookup"><span data-stu-id="79cd0-176">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transaktion   | Betrag | Gesamtbetrag |
+| <span data-ttu-id="79cd0-177">Transaktion</span><span class="sxs-lookup"><span data-stu-id="79cd0-177">Transaction</span></span>   | <span data-ttu-id="79cd0-178">Betrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-178">Amount</span></span> | <span data-ttu-id="79cd0-179">Gesamtbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-179">Balance</span></span> |
 |---------------|--------|---------|
-| Rechnung       | 105,00 | 0,00    |
-| Zahlung       | -95,00 | -0,50   |
-| Skonto | -10,50 | 0,00    |
+| <span data-ttu-id="79cd0-180">Rechnung</span><span class="sxs-lookup"><span data-stu-id="79cd0-180">Invoice</span></span>       | <span data-ttu-id="79cd0-181">105,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-181">105.00</span></span> | <span data-ttu-id="79cd0-182">0,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-182">0.00</span></span>    |
+| <span data-ttu-id="79cd0-183">Zahlung</span><span class="sxs-lookup"><span data-stu-id="79cd0-183">Payment</span></span>       | <span data-ttu-id="79cd0-184">-95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-184">-95.00</span></span> | <span data-ttu-id="79cd0-185">-0,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-185">-0.50</span></span>   |
+| <span data-ttu-id="79cd0-186">Skonto</span><span class="sxs-lookup"><span data-stu-id="79cd0-186">Cash discount</span></span> | <span data-ttu-id="79cd0-187">-10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-187">-10.50</span></span> | <span data-ttu-id="79cd0-188">0,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-188">0.00</span></span>    |
 
-Der Überzahlungsbetrag von 0,50 verbleibt als offener Saldo auf der Zahlung und kann mit einer anderen Rechnung ausgeglichen werden. Die folgenden Buchhaltungseinträge werden zur Zahlung und dem Ausgleich generiert. **Zahlung**
+<span data-ttu-id="79cd0-189">Der Überzahlungsbetrag von 0,50 verbleibt als offener Saldo auf der Zahlung und kann mit einer anderen Rechnung ausgeglichen werden.</span><span class="sxs-lookup"><span data-stu-id="79cd0-189">The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice.</span></span> <span data-ttu-id="79cd0-190">Die folgenden Buchhaltungseinträge werden zur Zahlung und dem Ausgleich generiert.</span><span class="sxs-lookup"><span data-stu-id="79cd0-190">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="79cd0-191">**Zahlung**</span><span class="sxs-lookup"><span data-stu-id="79cd0-191">**Payment**</span></span>
 
-| Konto             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="79cd0-192">Konto</span><span class="sxs-lookup"><span data-stu-id="79cd0-192">Account</span></span>             | <span data-ttu-id="79cd0-193">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-193">Debit amount</span></span> | <span data-ttu-id="79cd0-194">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-194">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Bargeld                | 95,00        |               |
-| Debitoren |              | 95,00         |
+| <span data-ttu-id="79cd0-195">Bargeld</span><span class="sxs-lookup"><span data-stu-id="79cd0-195">Cash</span></span>                | <span data-ttu-id="79cd0-196">95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-196">95.00</span></span>        |               |
+| <span data-ttu-id="79cd0-197">Debitoren</span><span class="sxs-lookup"><span data-stu-id="79cd0-197">Accounts receivable</span></span> |              | <span data-ttu-id="79cd0-198">95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-198">95.00</span></span>         |
 
-**Ausgleich**
+<span data-ttu-id="79cd0-199">**Ausgleich**</span><span class="sxs-lookup"><span data-stu-id="79cd0-199">**Settlement**</span></span>
 
-| Konto                                                                                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="79cd0-200">Konto</span><span class="sxs-lookup"><span data-stu-id="79cd0-200">Account</span></span>                                                                                          | <span data-ttu-id="79cd0-201">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-201">Debit amount</span></span> | <span data-ttu-id="79cd0-202">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-202">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Skonto (das Feld **Hauptkonto für Debitorenrabatte** auf der Seite**Skonti**) | 10,50        |               |
-| Debitoren                                                                              |              | 10,50         |
+| <span data-ttu-id="79cd0-203">Skonto (das Feld **Hauptkonto für Debitorenrabatte** auf der Seite**Skonti**)</span><span class="sxs-lookup"><span data-stu-id="79cd0-203">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="79cd0-204">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-204">10.50</span></span>        |               |
+| <span data-ttu-id="79cd0-205">Debitoren</span><span class="sxs-lookup"><span data-stu-id="79cd0-205">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="79cd0-206">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-206">10.50</span></span>         |
 
-## <a name="cash-discount-administration--unspecific"></a>Skontoverwaltungsoption = Unspezifisch
-Wenn **Unspezifisch** im Feld **Skontoverwaltung** der Seite **Konten für automatische Buchungen** ausgewählt ist, wird der Skontobetrag um den zu viel gezahlten Betrag gesenkt. Dieses Verhalten wird immer verwendet, unabhängig davon, ob der Überzahlungsbetrag möglicherweise größer oder kleiner ist als der Betrag, der im Feld **Maximale Über- bzw. Unterzahlung** eingegeben wird.
+## <a name="cash-discount-administration--unspecific"></a><span data-ttu-id="79cd0-207">Skontoverwaltungsoption = Unspezifisch</span><span class="sxs-lookup"><span data-stu-id="79cd0-207">Cash discount administration = Unspecific</span></span>
+<span data-ttu-id="79cd0-208">Wenn **Unspezifisch** im Feld **Skontoverwaltung** der Seite **Konten für automatische Buchungen** ausgewählt ist, wird der Skontobetrag um den zu viel gezahlten Betrag gesenkt.</span><span class="sxs-lookup"><span data-stu-id="79cd0-208">When **Unspecific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount.</span></span> <span data-ttu-id="79cd0-209">Dieses Verhalten wird immer verwendet, unabhängig davon, ob der Überzahlungsbetrag möglicherweise größer oder kleiner ist als der Betrag, der im Feld **Maximale Über- bzw. Unterzahlung** eingegeben wird.</span><span class="sxs-lookup"><span data-stu-id="79cd0-209">This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the **Maximum overpayment or underpayment** field.</span></span>
 
-### <a name="scenario-3"></a>Szenario 3
+### <a name="scenario-3"></a><span data-ttu-id="79cd0-210">Szenario 3</span><span class="sxs-lookup"><span data-stu-id="79cd0-210">Scenario 3</span></span>
 
-In diesem Szenario wird eine Rechnung über 105,00 mit einem Skonto erfasst, das verfügbar ist, wenn die Rechnung innerhalb von sieben Tagen beglichen wird.
+<span data-ttu-id="79cd0-211">In diesem Szenario wird eine Rechnung über 105,00 mit einem Skonto erfasst, das verfügbar ist, wenn die Rechnung innerhalb von sieben Tagen beglichen wird.</span><span class="sxs-lookup"><span data-stu-id="79cd0-211">In this scenario, an invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Rechnungssumme | Skonto verfügbar | Zu zahlender Betrag, der das Skonto enthält |
+| <span data-ttu-id="79cd0-212">Rechnungssumme</span><span class="sxs-lookup"><span data-stu-id="79cd0-212">Invoice total</span></span> | <span data-ttu-id="79cd0-213">Skonto verfügbar</span><span class="sxs-lookup"><span data-stu-id="79cd0-213">Cash discount available</span></span> | <span data-ttu-id="79cd0-214">Zu zahlender Betrag, der das Skonto enthält</span><span class="sxs-lookup"><span data-stu-id="79cd0-214">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="79cd0-215">105,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-215">105.00</span></span>        | <span data-ttu-id="79cd0-216">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-216">10.50</span></span>                   | <span data-ttu-id="79cd0-217">94,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-217">94.50</span></span>                                               |
 
-Der Debitor übermittelt eine Zahlung für 95,00 innerhalb des Skontoabzinsungsdatum. Die Zahlung wird mit der offenen Rechnung über 105,00 ausgeglichen. Nachdem die Rechnung und die Zahlung ausgeglichen sind, werden für den Debitor die folgenden Transaktionen in Debitor erstellt.
+<span data-ttu-id="79cd0-218">Der Debitor übermittelt eine Zahlung für 95,00 innerhalb des Skontoabzinsungsdatum.</span><span class="sxs-lookup"><span data-stu-id="79cd0-218">The customer submits a payment for 95.00 within the cash discount date.</span></span> <span data-ttu-id="79cd0-219">Die Zahlung wird mit der offenen Rechnung über 105,00 ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="79cd0-219">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="79cd0-220">Nachdem die Rechnung und die Zahlung ausgeglichen sind, werden für den Debitor die folgenden Transaktionen in Debitor erstellt.</span><span class="sxs-lookup"><span data-stu-id="79cd0-220">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transaktion   | Betrag | Gesamtbetrag |
+| <span data-ttu-id="79cd0-221">Transaktion</span><span class="sxs-lookup"><span data-stu-id="79cd0-221">Transaction</span></span>   | <span data-ttu-id="79cd0-222">Betrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-222">Amount</span></span> | <span data-ttu-id="79cd0-223">Gesamtbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-223">Balance</span></span> |
 |---------------|--------|---------|
-| Rechnung       | 105,00 | 0,00    |
-| Zahlung       | -95,00 | -0,00   |
-| Skonto | -10,00 | 0,00    |
+| <span data-ttu-id="79cd0-224">Rechnung</span><span class="sxs-lookup"><span data-stu-id="79cd0-224">Invoice</span></span>       | <span data-ttu-id="79cd0-225">105,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-225">105.00</span></span> | <span data-ttu-id="79cd0-226">0,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-226">0.00</span></span>    |
+| <span data-ttu-id="79cd0-227">Zahlung</span><span class="sxs-lookup"><span data-stu-id="79cd0-227">Payment</span></span>       | <span data-ttu-id="79cd0-228">-95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-228">-95.00</span></span> | <span data-ttu-id="79cd0-229">-0,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-229">-0.00</span></span>   |
+| <span data-ttu-id="79cd0-230">Skonto</span><span class="sxs-lookup"><span data-stu-id="79cd0-230">Cash discount</span></span> | <span data-ttu-id="79cd0-231">-10,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-231">-10.00</span></span> | <span data-ttu-id="79cd0-232">0,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-232">0.00</span></span>    |
 
-Der Skontobetrag wird von 10,50 auf 10,00 verringert. Die Zahlung und die Rechnung gelten als ausgeglichen. **Zahlung**
+<span data-ttu-id="79cd0-233">Der Skontobetrag wird von 10,50 auf 10,00 verringert.</span><span class="sxs-lookup"><span data-stu-id="79cd0-233">The cash discount amount is reduced from 10.50 to 10.00.</span></span> <span data-ttu-id="79cd0-234">Die Zahlung und die Rechnung gelten als ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="79cd0-234">The payment and invoice are considered settled.</span></span> <span data-ttu-id="79cd0-235">**Zahlung**</span><span class="sxs-lookup"><span data-stu-id="79cd0-235">**Payment**</span></span>
 
-| Konto             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="79cd0-236">Konto</span><span class="sxs-lookup"><span data-stu-id="79cd0-236">Account</span></span>             | <span data-ttu-id="79cd0-237">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-237">Debit amount</span></span> | <span data-ttu-id="79cd0-238">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-238">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Bargeld                | 95,00        |               |
-| Debitoren |              | 95,00         |
+| <span data-ttu-id="79cd0-239">Bargeld</span><span class="sxs-lookup"><span data-stu-id="79cd0-239">Cash</span></span>                | <span data-ttu-id="79cd0-240">95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-240">95.00</span></span>        |               |
+| <span data-ttu-id="79cd0-241">Debitoren</span><span class="sxs-lookup"><span data-stu-id="79cd0-241">Accounts receivable</span></span> |              | <span data-ttu-id="79cd0-242">95,00</span><span class="sxs-lookup"><span data-stu-id="79cd0-242">95.00</span></span>         |
 
-**Ausgleich**
+<span data-ttu-id="79cd0-243">**Ausgleich**</span><span class="sxs-lookup"><span data-stu-id="79cd0-243">**Settlement**</span></span>
 
-| Konto                                                                                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="79cd0-244">Konto</span><span class="sxs-lookup"><span data-stu-id="79cd0-244">Account</span></span>                                                                                          | <span data-ttu-id="79cd0-245">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-245">Debit amount</span></span> | <span data-ttu-id="79cd0-246">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="79cd0-246">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Skonto (das Feld **Hauptkonto für Debitorenrabatte** auf der **Skonti** Seite) | 10,50        |               |
-| Debitoren                                                                              |              | 10,50         |
+| <span data-ttu-id="79cd0-247">Skonto (das Feld **Hauptkonto für Debitorenrabatte** auf der **Skonti** Seite)</span><span class="sxs-lookup"><span data-stu-id="79cd0-247">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="79cd0-248">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-248">10.50</span></span>        |               |
+| <span data-ttu-id="79cd0-249">Debitoren</span><span class="sxs-lookup"><span data-stu-id="79cd0-249">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="79cd0-250">10,50</span><span class="sxs-lookup"><span data-stu-id="79cd0-250">10.50</span></span>         |
 
 
 

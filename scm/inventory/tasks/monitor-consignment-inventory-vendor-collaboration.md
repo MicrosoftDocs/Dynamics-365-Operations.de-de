@@ -1,4 +1,4 @@
---- 
+---
 title: "Lagerbestand mithilfe der Kreditorenkooperation überwachen"
 description: Dieses Verfahren zeigt, wie Sie Kreditor-Kooperationen nutzen, um Informationen zum Bestand des Produkts anzuzeigen, den Sie in der Lieferung des Debitors platziert haben.
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,29 +17,28 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: ad4868991226aef21a0410860e3f98d11901ffbb
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 567be29bd9989b3471b22d5a970ed0e51e4549ec
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a>Lagerbestand mithilfe der Kreditorenkooperation überwachen
+# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="1cb7f-103">Lagerbestand mithilfe der Kreditorenkooperation überwachen</span><span class="sxs-lookup"><span data-stu-id="1cb7f-103">Monitor consignment inventory using vendor collaboration</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dieses Verfahren zeigt, wie Sie Kreditor-Kooperationen nutzen, um Informationen zum Bestand des Produkts anzuzeigen, den Sie in der Lieferung des Debitors platziert haben. Sie können außerdem den Verbrauch des Bestandes überwachen, wenn der Debitor den Besitz übernimmt. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Diese Prozedur ist für eine Funktion gedacht, die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
+<span data-ttu-id="1cb7f-104">Dieses Verfahren zeigt, wie Sie Kreditor-Kooperationen nutzen, um Informationen zum Bestand des Produkts anzuzeigen, den Sie in der Lieferung des Debitors platziert haben.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-104">This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.</span></span> <span data-ttu-id="1cb7f-105">Sie können außerdem den Verbrauch des Bestandes überwachen, wenn der Debitor den Besitz übernimmt.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-105">You can also monitor the consumption of the stock when the customer takes ownership of the inventory.</span></span> <span data-ttu-id="1cb7f-106">Sie können diese Prozedur im Demodatunternehmen USMF verwenden.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="1cb7f-107">Diese Prozedur ist für eine Funktion gedacht, die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-107">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
 
-## <a name="view-consumed-inventory"></a>Verbrauchten Bestand anzeigen
-1. Wechseln Sie zu "Kreditor-Kooperation" > "Lieferbestand" > "Aus Unterlieferungsbestand erhaltene Produkte".
-    * Die Liste enthält die Produktzugangspositionen, die generiert wurden, als der Besitzer des Lieferungsbestandes vom Kreditor auf den Debitor geändert wurde. Möglicherweise müssen Sie rechts nach unten scrollen, um die Mengen und weitere Informationen anzuzeigen. Sie können die Informationen in dieser Liste verwenden, um Rechnungen für den Debitor zu generieren. Sie können außerdem die Daten nach Microsoft Excel exportieren.   
-2. Klicken Sie auf "Bestellung anzeigen".
-3. Erweitern Sie den Abschnitt "Positionsdetails".
-    * Die Position wird als Lieferung markiert und der Kopfbereich zeigt an, dass die Bestellung den Status "Eingegangen" hat.  
-4. Schließen Sie die Seite.
+## <a name="view-consumed-inventory"></a><span data-ttu-id="1cb7f-108">Verbrauchten Bestand anzeigen</span><span class="sxs-lookup"><span data-stu-id="1cb7f-108">View consumed inventory</span></span>
+1. <span data-ttu-id="1cb7f-109">Wechseln Sie zu "Kreditor-Kooperation" > "Lieferbestand" > "Aus Unterlieferungsbestand erhaltene Produkte".</span><span class="sxs-lookup"><span data-stu-id="1cb7f-109">Go to Vendor collaboration > Consignment inventory > Products received from consignment inventory.</span></span>
+    * <span data-ttu-id="1cb7f-110">Die Liste enthält die Produktzugangspositionen, die generiert wurden, als der Besitzer des Lieferungsbestandes vom Kreditor auf den Debitor geändert wurde.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-110">The list shows the product receipt lines that were generated when ownership of the consignment inventory was changed from the vendor to the customer.</span></span> <span data-ttu-id="1cb7f-111">Möglicherweise müssen Sie rechts nach unten scrollen, um die Mengen und weitere Informationen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-111">You might have to scroll to the right to see quantities and other information.</span></span> <span data-ttu-id="1cb7f-112">Sie können die Informationen in dieser Liste verwenden, um Rechnungen für den Debitor zu generieren.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-112">You can use the information in this list to generate invoices for your customer.</span></span> <span data-ttu-id="1cb7f-113">Sie können außerdem die Daten nach Microsoft Excel exportieren.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-113">You can also export the data to Microsoft Excel.</span></span>   
+2. <span data-ttu-id="1cb7f-114">Klicken Sie auf "Bestellung anzeigen".</span><span class="sxs-lookup"><span data-stu-id="1cb7f-114">Click View purchase order.</span></span>
+3. <span data-ttu-id="1cb7f-115">Erweitern Sie den Abschnitt "Positionsdetails".</span><span class="sxs-lookup"><span data-stu-id="1cb7f-115">Expand the Line details section.</span></span>
+    * <span data-ttu-id="1cb7f-116">Die Position wird als Lieferung markiert und der Kopfbereich zeigt an, dass die Bestellung den Status "Eingegangen" hat.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-116">The line is marked as Consignment, and the header section shows that the purchase order has a status of Received.</span></span>  
+4. <span data-ttu-id="1cb7f-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-117">Close the page.</span></span>
 
-## <a name="view-on-hand-inventory"></a>Verfügbaren Lagerbestand anzeigen
-1. Wechseln Sie zu "Kreditor-Kooperation" > "Lieferbestand" > "Verfügbarer Lagerbestand".
-    * Die Seite "Verfügbare Lieferungsbestand" zeigt den Bestand, den Sie am Lagerort des Debitors besitzen. Sie können zusätzliche Dimensionen eingegeben, z. B. der Standort und der Lagerort, indem Sie auf die Registerkarte "Dimensionen anzeigen" klicken.   
-
+## <a name="view-on-hand-inventory"></a><span data-ttu-id="1cb7f-118">Verfügbaren Lagerbestand anzeigen</span><span class="sxs-lookup"><span data-stu-id="1cb7f-118">View on-hand inventory</span></span>
+1. <span data-ttu-id="1cb7f-119">Wechseln Sie zu "Kreditor-Kooperation" > "Lieferbestand" > "Verfügbarer Lagerbestand".</span><span class="sxs-lookup"><span data-stu-id="1cb7f-119">Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.</span></span>
+    * <span data-ttu-id="1cb7f-120">Die Seite "Verfügbare Lieferungsbestand" zeigt den Bestand, den Sie am Lagerort des Debitors besitzen.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-120">The On-hand consignment inventory page shows the stock that you own at the customer’s warehouse.</span></span> <span data-ttu-id="1cb7f-121">Sie können zusätzliche Dimensionen eingegeben, z. B. der Standort und der Lagerort, indem Sie auf die Registerkarte "Dimensionen anzeigen" klicken.</span><span class="sxs-lookup"><span data-stu-id="1cb7f-121">You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.</span></span>   
 

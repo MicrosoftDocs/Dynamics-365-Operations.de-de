@@ -19,132 +19,132 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
-ms.openlocfilehash: 9b29fec7fadbb1ac699f1144f011df1bfd2f511a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 49e5c81dda8434a6e02106a8d7ee10233e43d172
 ms.contentlocale: de-de
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="configure-accounts-payable"></a>Kreditoren konfigurieren
+# <a name="configure-accounts-payable"></a><span data-ttu-id="8443b-104">Kreditoren konfigurieren</span><span class="sxs-lookup"><span data-stu-id="8443b-104">Configure Accounts payable</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Artikel werden die Seiten beschrieben, die Sie verwenden, um die grundlegenden und optionalen Funktionen für Kreditorenkonten in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations einzurichten. Er beschreibt zudem die Einrichtungsschritte, die Sie durchführen müssen, bevor Sie damit beginnen, die Kreditoren einzurichten.
+<span data-ttu-id="8443b-105">In diesem Artikel werden die Seiten beschrieben, die Sie verwenden, um die grundlegenden und optionalen Funktionen für Kreditorenkonten in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations einzurichten.</span><span class="sxs-lookup"><span data-stu-id="8443b-105">This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="8443b-106">Er beschreibt zudem die Einrichtungsschritte, die Sie durchführen müssen, bevor Sie damit beginnen, die Kreditoren einzurichten.</span><span class="sxs-lookup"><span data-stu-id="8443b-106">It also describes setup steps that you must complete before you start to set up Accounts payable.</span></span>
 
-<a name="prerequisites-for-accounts-payable-setup"></a>Voraussetzungen für die Einstellungen von Kreditoren
+<a name="prerequisites-for-accounts-payable-setup"></a><span data-ttu-id="8443b-107">Voraussetzungen für die Einstellungen von Kreditoren</span><span class="sxs-lookup"><span data-stu-id="8443b-107">Prerequisites for Accounts payable setup</span></span>
 ----------------------------------------
 
-Die folgenden Einstellungen müssen abgeschlossen werden, bevor Sie Kreditoren einrichten können:
+<span data-ttu-id="8443b-108">Die folgenden Einstellungen müssen abgeschlossen werden, bevor Sie Kreditoren einrichten können:</span><span class="sxs-lookup"><span data-stu-id="8443b-108">Before you can set up Accounts payable, you must complete the following setup:</span></span>
 
--   Im Hauptbuch:
-    -   Wenn Sie Zahlungserfassungen verwenden möchten, müssen Sie Zahlungserfassungen einrichten.
-    -   Wenn Sie Wechselkursregulierungen ausführen möchten, müssen Sie die Währungscodes auf der Seite "Fremdwährungen", die Wechselkurstypen auf der Seite "Wechselkurstyp" und die Währungswechselkurse auf der Seite "Währungswechselkurse" einrichten.
--   Richten Sie Bankkonten zur Verwendung mit Zahlungsmethoden unter "Bargeld- und Bankverwaltung" ein.
+-   <span data-ttu-id="8443b-109">Im Hauptbuch:</span><span class="sxs-lookup"><span data-stu-id="8443b-109">In General ledger:</span></span>
+    -   <span data-ttu-id="8443b-110">Wenn Sie Zahlungserfassungen verwenden möchten, müssen Sie Zahlungserfassungen einrichten.</span><span class="sxs-lookup"><span data-stu-id="8443b-110">If you plan to use payment journals, set up payment journals.</span></span>
+    -   <span data-ttu-id="8443b-111">Wenn Sie Wechselkursregulierungen ausführen möchten, müssen Sie die Währungscodes auf der Seite "Fremdwährungen", die Wechselkurstypen auf der Seite "Wechselkurstyp" und die Währungswechselkurse auf der Seite "Währungswechselkurse" einrichten.</span><span class="sxs-lookup"><span data-stu-id="8443b-111">If you plan to run exchange rate adjustments, set up currency codes on the Currencies page, set up exchange rate types on the Exchange rate types page, and set up currency exchange rates on the Currency exchange rates page.</span></span>
+-   <span data-ttu-id="8443b-112">Richten Sie Bankkonten zur Verwendung mit Zahlungsmethoden unter "Bargeld- und Bankverwaltung" ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-112">In Cash and bank management, set up bank accounts to use with methods of payment.</span></span>
 
-## <a name="setup-pages-for-accounts-payable"></a>Seiten für Kreditorenkonten einrichten
+## <a name="setup-pages-for-accounts-payable"></a><span data-ttu-id="8443b-113">Seiten für Kreditorenkonten einrichten</span><span class="sxs-lookup"><span data-stu-id="8443b-113">Setup pages for Accounts payable</span></span>
 
-Verwenden Sie die folgenden Seiten, um die grundlegenden Funktionen von Kreditoren für jede juristische Person einzurichten. Die Seiten sind in der empfohlenen Einrichtungsreihenfolge aufgeführt. Erstellen Sie aus den ersten erstellten Datensätzen Vorlagen, um das Verfahren zu erleichtern. Eine Vorlage umfasst normalerweise Werte in einer Vielzahl von Feldern, die die Funktionen widerspiegeln, die die Organisation für einen bestimmten Kreditorentyp implementieren möchte.
-1.  Legen Sie auf der Seite "Zahlungsbedingungen", die Zahlungsbedingungen fest, die Sie Aufträgen, Bestellungen, Debitoren und Kreditoren zuweisen wollen und die die Fälligkeitsdaten bestimmen. Weitere Informationen finden Sie unter [Kreditorenzahlungsübersicht definieren](tasks/define-vendor-payment-fees.md).
-2.  Erstellen und pflegen Sie im Formular "Zahlungsmethoden" Informationen zu der Art, wie die Organisation ihre Kreditoren bezahlt.
-3.  Erstellen und pflegen Sie im Formular "Kreditorengruppen", Kreditorengruppen, die wichtige Parameter für Buchung, Zahlung und Ausgleich, die Berichterstellung und Planung gemeinsam haben.
-4.  Definieren Sie auf der Seite "Debitorenbuchungsprofile", wie Kreditorenbuchungen im Hauptbuch gebucht werden.
-5.  Richten Sie Standardeinstellungen auf der Seite "Kreditorenkontenparameter"ein, die angewendet werden, wenn keine spezifischere Einstellung angegeben wurde, sowie Parameter für verschiedene Arten von Funktionalität und die verschiedenen Nummernkreise für Kreditoren.
-6.  Legen Sie auf der Seite "Formular" das Format für verschiedene Dokumente fest, die sich auf Händler beziehen und in der Organisation verwendet werden, um Zugänge von Händlern zu verfolgen und Gründe für den Zahlungsfluss an Händler einzugeben.
-7.  Erstellen und pflegen Sie auf der Seite "Händler" die Kreditorenkonten, einschließlich der Steuerbehörden, bei denen Ihre Organisation die Mehrwertsteuer meldet.
+<span data-ttu-id="8443b-114">Verwenden Sie die folgenden Seiten, um die grundlegenden Funktionen von Kreditoren für jede juristische Person einzurichten.</span><span class="sxs-lookup"><span data-stu-id="8443b-114">Use the following pages to set up the basic functionality of Accounts payable for each legal entity.</span></span> <span data-ttu-id="8443b-115">Die Seiten sind in der empfohlenen Einrichtungsreihenfolge aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="8443b-115">The pages are listed in the recommended order of setup.</span></span> <span data-ttu-id="8443b-116">Erstellen Sie aus den ersten erstellten Datensätzen Vorlagen, um das Verfahren zu erleichtern.</span><span class="sxs-lookup"><span data-stu-id="8443b-116">To make the setup process easier, you can create templates from the first records that you create.</span></span> <span data-ttu-id="8443b-117">Eine Vorlage umfasst normalerweise Werte in einer Vielzahl von Feldern, die die Funktionen widerspiegeln, die die Organisation für einen bestimmten Kreditorentyp implementieren möchte.</span><span class="sxs-lookup"><span data-stu-id="8443b-117">In a template, values are typically entered in many fields to reflect the features that the organization wants to implement for a particular type of vendor.</span></span>
+1.  <span data-ttu-id="8443b-118">Legen Sie auf der Seite "Zahlungsbedingungen", die Zahlungsbedingungen fest, die Sie Aufträgen, Bestellungen, Debitoren und Kreditoren zuweisen wollen und die die Fälligkeitsdaten bestimmen.</span><span class="sxs-lookup"><span data-stu-id="8443b-118">On the Terms of payment page, define the terms of payment that you assign to sales orders, purchase orders, customers, and vendors, and that determine invoice due dates.</span></span> <span data-ttu-id="8443b-119">Weitere Informationen finden Sie unter [Kreditorenzahlungsübersicht definieren](tasks/define-vendor-payment-fees.md).</span><span class="sxs-lookup"><span data-stu-id="8443b-119">For more information, see [Define vendor payment fees](tasks/define-vendor-payment-fees.md).</span></span>
+2.  <span data-ttu-id="8443b-120">Erstellen und pflegen Sie im Formular "Zahlungsmethoden" Informationen zu der Art, wie die Organisation ihre Kreditoren bezahlt.</span><span class="sxs-lookup"><span data-stu-id="8443b-120">On the Methods of payment - vendors page, create and maintain information about how the organization pays its vendors.</span></span>
+3.  <span data-ttu-id="8443b-121">Erstellen und pflegen Sie im Formular "Kreditorengruppen", Kreditorengruppen, die wichtige Parameter für Buchung, Zahlung und Ausgleich, die Berichterstellung und Planung gemeinsam haben.</span><span class="sxs-lookup"><span data-stu-id="8443b-121">On the Vendor groups page, create and maintain groups of vendors that share important parameters for posting, settlement and payment, reporting, and forecasting.</span></span>
+4.  <span data-ttu-id="8443b-122">Definieren Sie auf der Seite "Debitorenbuchungsprofile", wie Kreditorenbuchungen im Hauptbuch gebucht werden.</span><span class="sxs-lookup"><span data-stu-id="8443b-122">On the Vendor posting profiles page, define how vendor transactions are posted to the general ledger.</span></span>
+5.  <span data-ttu-id="8443b-123">Richten Sie Standardeinstellungen auf der Seite "Kreditorenkontenparameter"ein, die angewendet werden, wenn keine spezifischere Einstellung angegeben wurde, sowie Parameter für verschiedene Arten von Funktionalität und die verschiedenen Nummernkreise für Kreditoren.</span><span class="sxs-lookup"><span data-stu-id="8443b-123">On the Accounts payable parameters page, set up default settings that are applied if a more specific setting isn't specified, parameters for various kinds of functionality, and the various number sequences for Accounts payable.</span></span>
+6.  <span data-ttu-id="8443b-124">Legen Sie auf der Seite "Formular" das Format für verschiedene Dokumente fest, die sich auf Händler beziehen und in der Organisation verwendet werden, um Zugänge von Händlern zu verfolgen und Gründe für den Zahlungsfluss an Händler einzugeben.</span><span class="sxs-lookup"><span data-stu-id="8443b-124">On the Form setup page, define the format of various documents that are related to vendors, and that the organization uses to keep track of receipts from vendors and enter reasons for the flow of payments to vendors.</span></span>
+7.  <span data-ttu-id="8443b-125">Erstellen und pflegen Sie auf der Seite "Händler" die Kreditorenkonten, einschließlich der Steuerbehörden, bei denen Ihre Organisation die Mehrwertsteuer meldet.</span><span class="sxs-lookup"><span data-stu-id="8443b-125">On the Vendors page, create and maintain vendor accounts, and also the tax authorities that your organization reports sales taxes to.</span></span>
 
-## <a name="optional-setup-pages-for-accounts-payable"></a>Optionale Einrichtungsseiten für Kreditorenkonten
-Neben den grundlegenden Funktionen, können Sie weitere Funktionen für Kreditoren einrichten.
+## <a name="optional-setup-pages-for-accounts-payable"></a><span data-ttu-id="8443b-126">Optionale Einrichtungsseiten für Kreditorenkonten</span><span class="sxs-lookup"><span data-stu-id="8443b-126">Optional setup pages for Accounts payable</span></span>
+<span data-ttu-id="8443b-127">Neben den grundlegenden Funktionen, können Sie weitere Funktionen für Kreditoren einrichten.</span><span class="sxs-lookup"><span data-stu-id="8443b-127">In addition to the basic functionality, Accounts payable has other functionality that you can set up.</span></span>
 
-Die Seiten für zusätzliche Einstellungen sind nach Funktionen geordnet.
+<span data-ttu-id="8443b-128">Die Seiten für zusätzliche Einstellungen sind nach Funktionen geordnet.</span><span class="sxs-lookup"><span data-stu-id="8443b-128">The additional setup pages are organized by functionality.</span></span>
 
-**Richtlinien**
--   Richten Sie auf der Seite "Kreditorenrechnungsrichtlinie" Kreditorenrechnungsrichtlinien ein.
+<span data-ttu-id="8443b-129">**Richtlinien**</span><span class="sxs-lookup"><span data-stu-id="8443b-129">**Policies**</span></span>
+-   <span data-ttu-id="8443b-130">Richten Sie auf der Seite "Kreditorenrechnungsrichtlinie" Kreditorenrechnungsrichtlinien ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-130">On the Vendor invoice policy page, set up vendor invoice policies.</span></span>
 
-**Rechnungsabgleich**
+<span data-ttu-id="8443b-131">**Rechnungsabgleich**</span><span class="sxs-lookup"><span data-stu-id="8443b-131">**Invoice matching**</span></span>
 
--   Richten Sie auf der Seite "Rechnungssummentoleranzen" Toleranzen für Rechnungssummen ein.
--   Richten Sie auf der Seite "Abgleichsrichtlinie" zweiseitige und dreiseitige Abgleichsrichtlinien ein.
--   Richten Sie auf der Seite "Preistoleranz" Toleranzen für Preise je Einheit ein.
--   Richten Sie auf der Seite "Preistoleranzgruppen für Artikel" Toleranzgruppen für Artikelpreise ein.
--   Richten Sie auf der Seite "Preistoleranzgruppen für Kreditoren" Toleranzgruppen für Kreditorenpreise ein.
--   Richten Sie auf der Seite "Toleranzen für Belastungen" Toleranzen für Belastungen ein.
+-   <span data-ttu-id="8443b-132">Richten Sie auf der Seite "Rechnungssummentoleranzen" Toleranzen für Rechnungssummen ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-132">On the Invoice totals tolerances page, set up tolerances for invoice totals.</span></span>
+-   <span data-ttu-id="8443b-133">Richten Sie auf der Seite "Abgleichsrichtlinie" zweiseitige und dreiseitige Abgleichsrichtlinien ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-133">On the Matching policy page, set up two-way and three-way matching policies.</span></span>
+-   <span data-ttu-id="8443b-134">Richten Sie auf der Seite "Preistoleranz" Toleranzen für Preise je Einheit ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-134">On the Price tolerances page, set up tolerances for unit prices.</span></span>
+-   <span data-ttu-id="8443b-135">Richten Sie auf der Seite "Preistoleranzgruppen für Artikel" Toleranzgruppen für Artikelpreise ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-135">On the Item price tolerance groups page, set up tolerance groups for item prices.</span></span>
+-   <span data-ttu-id="8443b-136">Richten Sie auf der Seite "Preistoleranzgruppen für Kreditoren" Toleranzgruppen für Kreditorenpreise ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-136">On the Vendor price tolerance groups page, set up  tolerance groups for vendor prices.</span></span>
+-   <span data-ttu-id="8443b-137">Richten Sie auf der Seite "Toleranzen für Belastungen" Toleranzen für Belastungen ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-137">On the Charges tolerances page, set up tolerances for charges.</span></span>
 
-**Workflow**
+<span data-ttu-id="8443b-138">**Workflow**</span><span class="sxs-lookup"><span data-stu-id="8443b-138">**Workflow**</span></span>
 
--   Richten Sie auf der Seite "Kreditorenkontenworkflows" die Workflowkonfigurationen für Erfassungsgenehmigungen und Bestellanforderung ein
+-   <span data-ttu-id="8443b-139">Richten Sie auf der Seite "Kreditorenkontenworkflows" die Workflowkonfigurationen für Erfassungsgenehmigungen und Bestellanforderung ein</span><span class="sxs-lookup"><span data-stu-id="8443b-139">On the Accounts payable workflows page, set up workflow configurations for journal approvals and purchase requisitions.</span></span>
 
-**Ursachen**
+<span data-ttu-id="8443b-140">**Ursachen**</span><span class="sxs-lookup"><span data-stu-id="8443b-140">**Reasons**</span></span>
 
--   Richten Sie auf der Seite "Ursachen für Kreditorenbuchungen" Ursachencodes ein.
+-   <span data-ttu-id="8443b-141">Richten Sie auf der Seite "Ursachen für Kreditorenbuchungen" Ursachencodes ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-141">On the Vendor reasons page, set up reason codes.</span></span>
 
-**Belastungen**
+<span data-ttu-id="8443b-142">**Belastungen**</span><span class="sxs-lookup"><span data-stu-id="8443b-142">**Charges**</span></span>
 
--   Richten Sie auf der Seite "Belastungscodes" Codes für die Belastungen ein, die in Bestellungen verwendet werden.
--   Auf der Seite "Gruppe für Kreditorenbelastungen" können Sie Belastungsgruppen für Kreditoren erstellen und verwalten.
--   Auf der Seite "Gruppen für Artikelbelastungen" können Sie Belastungsgruppen für Artikel erstellen und verwalten.
--   Definieren Sie auf der Seite "Auto-Belastungen" Belastungen, die Aufträgen automatisch zugeordnet werden.
+-   <span data-ttu-id="8443b-143">Richten Sie auf der Seite "Belastungscodes" Codes für die Belastungen ein, die in Bestellungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="8443b-143">On the Charges code page, set up codes for the charges that are used in purchase orders.</span></span>
+-   <span data-ttu-id="8443b-144">Auf der Seite "Gruppe für Kreditorenbelastungen" können Sie Belastungsgruppen für Kreditoren erstellen und verwalten.</span><span class="sxs-lookup"><span data-stu-id="8443b-144">On the Vendor charges group page, create and maintain charges groups for vendors.</span></span>
+-   <span data-ttu-id="8443b-145">Auf der Seite "Gruppen für Artikelbelastungen" können Sie Belastungsgruppen für Artikel erstellen und verwalten.</span><span class="sxs-lookup"><span data-stu-id="8443b-145">On the Item charge groups page, create and maintain charges groups for items.</span></span>
+-   <span data-ttu-id="8443b-146">Definieren Sie auf der Seite "Auto-Belastungen" Belastungen, die Aufträgen automatisch zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="8443b-146">On the Auto charges page, define the charges that are automatically assigned to orders.</span></span>
 
-**Zusätzliche Artikel**
+<span data-ttu-id="8443b-147">**Zusätzliche Artikel**</span><span class="sxs-lookup"><span data-stu-id="8443b-147">**Supplementary items**</span></span>
 
--   Auf der Seite "Zusätzliche Artikelgruppen - Kreditor", erstellen und verwalten Sie zusätzliche Artikelgruppen für Kreditoren.
--   Auf der Seite "Zusätzliche Artikelgruppen - Bestand", erstellen und verwalten Sie zusätzliche Artikelgruppen für Artikel.
+-   <span data-ttu-id="8443b-148">Auf der Seite "Zusätzliche Artikelgruppen - Kreditor", erstellen und verwalten Sie zusätzliche Artikelgruppen für Kreditoren.</span><span class="sxs-lookup"><span data-stu-id="8443b-148">On the Supplementary item groups - Vendor page, create and maintain supplementary item groups for vendors.</span></span>
+-   <span data-ttu-id="8443b-149">Auf der Seite "Zusätzliche Artikelgruppen - Bestand", erstellen und verwalten Sie zusätzliche Artikelgruppen für Artikel.</span><span class="sxs-lookup"><span data-stu-id="8443b-149">On the Supplementary item groups - Inventory page, create and maintain supplementary item groups for items.</span></span>
 
-**Verteilung**
+<span data-ttu-id="8443b-150">**Verteilung**</span><span class="sxs-lookup"><span data-stu-id="8443b-150">**Distribution**</span></span>
 
--   Auf der Seite "Lieferbedingungen" erstellen und pflegen Sie die Bedingungen für den Transport eines Artikels vom Verkäufer zum Einkäufer.
--   Auf der Seite "Lieferarten" erstellen und pflegen Sie die Transportmethoden, die beim Liefern eines Auftrags vom Verkäufer an den Käufer verwendet werden.
--   Auf der Seite "Bestimmungsortcodes" erstellen und pflegen Sie Kennungungen und Beschreibungen für Lieferziele.
+-   <span data-ttu-id="8443b-151">Auf der Seite "Lieferbedingungen" erstellen und pflegen Sie die Bedingungen für den Transport eines Artikels vom Verkäufer zum Einkäufer.</span><span class="sxs-lookup"><span data-stu-id="8443b-151">On the Terms of delivery page, create and maintain the conditions for an item's transfer from seller to buyer.</span></span>
+-   <span data-ttu-id="8443b-152">Auf der Seite "Lieferarten" erstellen und pflegen Sie die Transportmethoden, die beim Liefern eines Auftrags vom Verkäufer an den Käufer verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="8443b-152">On the Modes of delivery page, create and maintain the methods of transport that are used when an order is delivered from the seller to the buyer.</span></span>
+-   <span data-ttu-id="8443b-153">Auf der Seite "Bestimmungsortcodes" erstellen und pflegen Sie Kennungungen und Beschreibungen für Lieferziele.</span><span class="sxs-lookup"><span data-stu-id="8443b-153">On the Destination codes page, create and maintain identifiers and descriptions for delivery destinations.</span></span>
 
-**Formulare**
+<span data-ttu-id="8443b-154">**Formulare**</span><span class="sxs-lookup"><span data-stu-id="8443b-154">**Forms**</span></span>
 
--   Erstellen Sie auf der Seite "Formularhinweise" den Standardtext, der auf verschiedenen Seiten angezeigt wird.
--   Richten Sie auf der Seite "Sortierparameter für Formulare" die Sortierreihenfolgen für Anforderungen, Eingangslisten, Lieferscheine und Rechnungen ein.
--   Richten Sie auf der Seite "Druckverwaltungseinstellungen" Druckverwaltungsinformationen für Originale und Kopien von Seiten ein.
+-   <span data-ttu-id="8443b-155">Erstellen Sie auf der Seite "Formularhinweise" den Standardtext, der auf verschiedenen Seiten angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="8443b-155">On the Form notes page, create the standard text that appears on various pages.</span></span>
+-   <span data-ttu-id="8443b-156">Richten Sie auf der Seite "Sortierparameter für Formulare" die Sortierreihenfolgen für Anforderungen, Eingangslisten, Lieferscheine und Rechnungen ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-156">On the Form sorting parameters page, set up the sorting order for requisitions, receipt lists, packing slips, and invoices.</span></span>
+-   <span data-ttu-id="8443b-157">Richten Sie auf der Seite "Druckverwaltungseinstellungen" Druckverwaltungsinformationen für Originale und Kopien von Seiten ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-157">On the Print management setup page, set up print management information for originals and copies of pages.</span></span>
 
-**Zahlungen**
+<span data-ttu-id="8443b-158">**Zahlungen**</span><span class="sxs-lookup"><span data-stu-id="8443b-158">**Payments**</span></span>
 
--   Richten Sie auf der Seite "Skonto" die Bedingungen für den Erhalt von Skonti ein, und verwalten Sie diese. Die Skontocodes sind mit Kreditoren verknüpft und werden auf Bestellungen angewendet.
--   Auf der Seite "Zahlungspläne" richten Sie die Zahlungspläne ein, die verwendet werden, um Teilzahlungszahlungen an Kreditoren zu verwalten.
--   Legen Sie auf der Seite "Zahlungstage" die Zahlungstage fest, die zur Berechnung von Fälligkeitsdaten verwendet werden, und geben Sie Zahlungstage für einen bestimmten Wochentag oder bestimmten Tag im Monat an.
--   Erstellen und pflegen Sie auf der Seite "Zahlungsgebühr" Zahlungsgebühren, die den Kreditoren zugeordnet sind.
--   Erstellen und verwalten Sie auf der Seite "Zahlungsanweisungen" Zahlungsanweisungen.
+-   <span data-ttu-id="8443b-159">Richten Sie auf der Seite "Skonto" die Bedingungen für den Erhalt von Skonti ein, und verwalten Sie diese.</span><span class="sxs-lookup"><span data-stu-id="8443b-159">On the Cash discounts page, set up and manage the terms for obtaining cash discounts.</span></span> <span data-ttu-id="8443b-160">Die Skontocodes sind mit Kreditoren verknüpft und werden auf Bestellungen angewendet.</span><span class="sxs-lookup"><span data-stu-id="8443b-160">The cash discount codes are linked to vendors and are applied to purchase orders.</span></span>
+-   <span data-ttu-id="8443b-161">Auf der Seite "Zahlungspläne" richten Sie die Zahlungspläne ein, die verwendet werden, um Teilzahlungszahlungen an Kreditoren zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="8443b-161">On the Payment schedules page, set up the payment schedules that are used to manage installment payments to vendors.</span></span>
+-   <span data-ttu-id="8443b-162">Legen Sie auf der Seite "Zahlungstage" die Zahlungstage fest, die zur Berechnung von Fälligkeitsdaten verwendet werden, und geben Sie Zahlungstage für einen bestimmten Wochentag oder bestimmten Tag im Monat an.</span><span class="sxs-lookup"><span data-stu-id="8443b-162">On the Payment days page, define the payment days that are used to calculate due dates, and specify payment days for a specific day of the week or month.</span></span>
+-   <span data-ttu-id="8443b-163">Erstellen und pflegen Sie auf der Seite "Zahlungsgebühr" Zahlungsgebühren, die den Kreditoren zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="8443b-163">On the Payment fee page, create and maintain the payment fees that are associated with vendors.</span></span>
+-   <span data-ttu-id="8443b-164">Erstellen und verwalten Sie auf der Seite "Zahlungsanweisungen" Zahlungsanweisungen.</span><span class="sxs-lookup"><span data-stu-id="8443b-164">On the Payment instruction page, create and maintain payment instructions.</span></span>
 
-**Statistik**
+<span data-ttu-id="8443b-165">**Statistik**</span><span class="sxs-lookup"><span data-stu-id="8443b-165">**Statistics**</span></span>
 
--   Richten Sie auf der Seite "Zahlungsfristdefinitionen" benutzerdefinierte Intervalle zum Analysieren der Fälligkeitsverteilung von Kreditorenkonten ein.
--   Erstellen Sie auf der Seite "Sparte" die Spartencodes, die den Kreditoren zugewiesen sind.
+-   <span data-ttu-id="8443b-166">Richten Sie auf der Seite "Zahlungsfristdefinitionen" benutzerdefinierte Intervalle zum Analysieren der Fälligkeitsverteilung von Kreditorenkonten ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-166">On the Aging period definitions page, set up user-defined intervals that are used to analyze the maturity distribution of vendor accounts.</span></span>
+-   <span data-ttu-id="8443b-167">Erstellen Sie auf der Seite "Sparte" die Spartencodes, die den Kreditoren zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="8443b-167">On the Line of business page, create the line of business (LOB) codes that are assigned to vendors.</span></span>
 
-**Steuererklärung (US 1099)**
+<span data-ttu-id="8443b-168">**Steuererklärung (US 1099)**</span><span class="sxs-lookup"><span data-stu-id="8443b-168">**Tax 1099**</span></span>
 
--   Überprüfen und aktualisieren Sie auf der Seite **1099 Felder** die Mindestbeträge, die dem Internal Revenue Service (IRS) auf Grundlage der neuesten IRS-Anforderungen gemeldet werden müssen.
+-   <span data-ttu-id="8443b-169">Überprüfen und aktualisieren Sie auf der Seite **1099 Felder** die Mindestbeträge, die dem Internal Revenue Service (IRS) auf Grundlage der neuesten IRS-Anforderungen gemeldet werden müssen.</span><span class="sxs-lookup"><span data-stu-id="8443b-169">On the **1099 fields** page, verify and update the minimum amounts that must be reported to the Internal Revenue Service (IRS), based on the latest IRS requirements.</span></span>
 
-## <a name="optional-setup-for-other-modules"></a>**Optionaler Setup für andere Module**
-**Organisationsverwaltung**
+## <a name="optional-setup-for-other-modules"></a><span data-ttu-id="8443b-170">**Optionaler Setup für andere Module**</span><span class="sxs-lookup"><span data-stu-id="8443b-170">**Optional setup for other modules**</span></span>
+<span data-ttu-id="8443b-171">**Organisationsverwaltung**</span><span class="sxs-lookup"><span data-stu-id="8443b-171">**Organization administration**</span></span>
 
--   Richten Sie auf der Seite "Nummernkreise" die Nummernkreisgruppen für Rechnungsnummern ein.
--   Richten Sie auf den folgenden Seiten Adressdaten ein:
-    -   Adresseinstellungen
-    -   NAF-Codes
-    -   Postleitzahlen importieren
+-   <span data-ttu-id="8443b-172">Richten Sie auf der Seite "Nummernkreise" die Nummernkreisgruppen für Rechnungsnummern ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-172">On the Number sequences page, set up number sequence groups for invoice numbers.</span></span>
+-   <span data-ttu-id="8443b-173">Richten Sie auf den folgenden Seiten Adressdaten ein:</span><span class="sxs-lookup"><span data-stu-id="8443b-173">On the following pages, set up address information:</span></span>
+    -   <span data-ttu-id="8443b-174">Adresseinstellungen</span><span class="sxs-lookup"><span data-stu-id="8443b-174">Address setup</span></span>
+    -   <span data-ttu-id="8443b-175">NAF-Codes</span><span class="sxs-lookup"><span data-stu-id="8443b-175">NAF codes</span></span>
+    -   <span data-ttu-id="8443b-176">Postleitzahlen importieren</span><span class="sxs-lookup"><span data-stu-id="8443b-176">Import ZIP/postal codes</span></span>
 
-**Hauptbuch**
+<span data-ttu-id="8443b-177">**Hauptbuch**</span><span class="sxs-lookup"><span data-stu-id="8443b-177">**General ledger**</span></span>
 
--   Richten Sie auf der Seite "Finanzdimensionen" Finanzdimensionen ein.
--   Richten Sie auf den folgenden Seiten Steuerinformationen ein:
-    -   Mehrwertsteuercodes
-    -   Mehrwertsteuergruppen
-    -   Artikel-Mehrwertsteuergruppen
-    -   Kontengruppe
-    -   Mehrwertsteuer-Befreiungscodes
-    -   Umsatzsteuerzuständigkeiten
-    -   Mehrwertsteuer-Behörden
-    -   Mehrwertsteuer-Abrechnungszeiträume
+-   <span data-ttu-id="8443b-178">Richten Sie auf der Seite "Finanzdimensionen" Finanzdimensionen ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-178">On the Financial dimensions page, set up financial dimensions.</span></span>
+-   <span data-ttu-id="8443b-179">Richten Sie auf den folgenden Seiten Steuerinformationen ein:</span><span class="sxs-lookup"><span data-stu-id="8443b-179">On the following pages, set up tax information:</span></span>
+    -   <span data-ttu-id="8443b-180">Mehrwertsteuercodes</span><span class="sxs-lookup"><span data-stu-id="8443b-180">Sales tax codes</span></span>
+    -   <span data-ttu-id="8443b-181">Mehrwertsteuergruppen</span><span class="sxs-lookup"><span data-stu-id="8443b-181">Sales tax groups</span></span>
+    -   <span data-ttu-id="8443b-182">Artikel-Mehrwertsteuergruppen</span><span class="sxs-lookup"><span data-stu-id="8443b-182">Item sales tax groups</span></span>
+    -   <span data-ttu-id="8443b-183">Kontengruppe</span><span class="sxs-lookup"><span data-stu-id="8443b-183">Account group</span></span>
+    -   <span data-ttu-id="8443b-184">Mehrwertsteuer-Befreiungscodes</span><span class="sxs-lookup"><span data-stu-id="8443b-184">Sales tax exempt codes</span></span>
+    -   <span data-ttu-id="8443b-185">Umsatzsteuerzuständigkeiten</span><span class="sxs-lookup"><span data-stu-id="8443b-185">Sales tax jurisdictions</span></span>
+    -   <span data-ttu-id="8443b-186">Mehrwertsteuer-Behörden</span><span class="sxs-lookup"><span data-stu-id="8443b-186">Sales tax authorities</span></span>
+    -   <span data-ttu-id="8443b-187">Mehrwertsteuer-Abrechnungszeiträume</span><span class="sxs-lookup"><span data-stu-id="8443b-187">Sales tax settlement periods</span></span>
 
-**Bargeld- und Bankverwaltung**
+<span data-ttu-id="8443b-188">**Bargeld- und Bankverwaltung**</span><span class="sxs-lookup"><span data-stu-id="8443b-188">**Cash and bank management**</span></span>
 
--   Richten Sie auf der Seite "Zahlungszweckcodes" den Code für die Zentralbank ein.
+-   <span data-ttu-id="8443b-189">Richten Sie auf der Seite "Zahlungszweckcodes" den Code für die Zentralbank ein.</span><span class="sxs-lookup"><span data-stu-id="8443b-189">On the Payment purpose codes page, set up the Central Bank purpose code.</span></span>
 
 
 

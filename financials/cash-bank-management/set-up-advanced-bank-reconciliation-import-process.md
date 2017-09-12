@@ -18,165 +18,165 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 785da18a851c4d040843f49ca9f1b9ae12d701d3
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Einrichten des erweiterten Bankabstimmungsimportprozesses
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a><span data-ttu-id="7aa13-104">Einrichten des erweiterten Bankabstimmungsimportprozesses</span><span class="sxs-lookup"><span data-stu-id="7aa13-104">Set up the advanced bank reconciliation import process</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen. Dieser Artikel erläutert die Einrichtung der Importfunktion für Ihre Bankauszüge. 
+<span data-ttu-id="7aa13-105">Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen.</span><span class="sxs-lookup"><span data-stu-id="7aa13-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="7aa13-106">Dieser Artikel erläutert die Einrichtung der Importfunktion für Ihre Bankauszüge.</span><span class="sxs-lookup"><span data-stu-id="7aa13-106">This article explains how to set up the import functionality for your bank statements.</span></span> 
 
-Die Einrichtung des Bankabstimmungsimports variiert je nach Format des elektronischen Bankauszugs. Finance and Operations unterstützt standardmäßig drei Bankauszugsformate: ISO20022 MT940 und BAI2.
+<span data-ttu-id="7aa13-107">Die Einrichtung des Bankabstimmungsimports variiert je nach Format des elektronischen Bankauszugs.</span><span class="sxs-lookup"><span data-stu-id="7aa13-107">The setup for bank statement import varies, depending on the format of your electronic bank statement.</span></span> <span data-ttu-id="7aa13-108">Finance and Operations unterstützt standardmäßig drei Bankauszugsformate: ISO20022 MT940 und BAI2.</span><span class="sxs-lookup"><span data-stu-id="7aa13-108">Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.</span></span>
 
-## <a name="sample-files"></a>Beispieldateien
-Für alle drei Formate benötigen Sie Dateien, die den elektronischen Bankauszug aus dem ursprünglichen Format in ein Format übersetzen, das Finance and Operations nutzen kann. Sie finden die erforderlichen Ressourcendateien unter dem Knoten **Ressourcen** im Anwendungs-Explorer-in Microsoft Visual Studio. Kopieren Sie sie an einen einzelnen Speicherort, damit Sie sie während des Installationsvorgangs leichter hochladen können.
+## <a name="sample-files"></a><span data-ttu-id="7aa13-109">Beispieldateien</span><span class="sxs-lookup"><span data-stu-id="7aa13-109">Sample files</span></span>
+<span data-ttu-id="7aa13-110">Für alle drei Formate benötigen Sie Dateien, die den elektronischen Bankauszug aus dem ursprünglichen Format in ein Format übersetzen, das Finance and Operations nutzen kann.</span><span class="sxs-lookup"><span data-stu-id="7aa13-110">For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use.</span></span> <span data-ttu-id="7aa13-111">Sie finden die erforderlichen Ressourcendateien unter dem Knoten **Ressourcen** im Anwendungs-Explorer-in Microsoft Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="7aa13-111">You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio.</span></span> <span data-ttu-id="7aa13-112">Kopieren Sie sie an einen einzelnen Speicherort, damit Sie sie während des Installationsvorgangs leichter hochladen können.</span><span class="sxs-lookup"><span data-stu-id="7aa13-112">After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.</span></span>
 
-| Ressourcenname                                           | Dateiname                            |
+| <span data-ttu-id="7aa13-113">Ressourcenname</span><span class="sxs-lookup"><span data-stu-id="7aa13-113">Resource name</span></span>                                           | <span data-ttu-id="7aa13-114">Dateiname</span><span class="sxs-lookup"><span data-stu-id="7aa13-114">File name</span></span>                            |
 |---------------------------------------------------------|--------------------------------------|
-| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt              | BAI2CSV BAI2XML.xslt              |
-| BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt       | BAI2XML-to-Reconciliation.xslt       |
-| BankStmtImport\_BankReconciliation\_to\_Composite\_xslt | BankReconciliation-to-Composite.xslt |
-| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt   | ISO20022XML-to-Reconciliation.xslt   |
-| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt            | MT940TXT-to-MT940XML.xslt            |
-| BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
-| BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
+| <span data-ttu-id="7aa13-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span></span>              | <span data-ttu-id="7aa13-116">BAI2CSV BAI2XML.xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-116">BAI2CSV-to-BAI2XML.xslt</span></span>              |
+| <span data-ttu-id="7aa13-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span></span>       | <span data-ttu-id="7aa13-118">BAI2XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-118">BAI2XML-to-Reconciliation.xslt</span></span>       |
+| <span data-ttu-id="7aa13-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span></span> | <span data-ttu-id="7aa13-120">BankReconciliation-to-Composite.xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-120">BankReconciliation-to-Composite.xslt</span></span> |
+| <span data-ttu-id="7aa13-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span></span>   | <span data-ttu-id="7aa13-122">ISO20022XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-122">ISO20022XML-to-Reconciliation.xslt</span></span>   |
+| <span data-ttu-id="7aa13-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span></span>            | <span data-ttu-id="7aa13-124">MT940TXT-to-MT940XML.xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-124">MT940TXT-to-MT940XML.xslt</span></span>            |
+| <span data-ttu-id="7aa13-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span></span>      | <span data-ttu-id="7aa13-126">MT940XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="7aa13-126">MT940XML-to-Reconciliation.xslt</span></span>      |
+| <span data-ttu-id="7aa13-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span><span class="sxs-lookup"><span data-stu-id="7aa13-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span></span>          | <span data-ttu-id="7aa13-128">SampleBankCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="7aa13-128">SampleBankCompositeEntity.xml</span></span>        |
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Beispiele für Bankauszugsformate und technische Layouts
-Im Folgenden sind Beispiele der in Layoutdefinitionen der erweiterten Bankabstimmungsimportdatei und drei Bankauszugsbeispielsdateien Spesen: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a><span data-ttu-id="7aa13-129">Beispiele für Bankauszugsformate und technische Layouts</span><span class="sxs-lookup"><span data-stu-id="7aa13-129">Examples of bank statement formats and technical layouts</span></span>
+<span data-ttu-id="7aa13-130">Im Folgenden sind Beispiele der in Layoutdefinitionen der erweiterten Bankabstimmungsimportdatei und drei Bankauszugsbeispielsdateien Spesen: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span><span class="sxs-lookup"><span data-stu-id="7aa13-130">Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span></span>  
 
-| Technische Layoutdefinition                             | Beispieldatei für Bankauszüge          |
+| <span data-ttu-id="7aa13-131">Technische Layoutdefinition</span><span class="sxs-lookup"><span data-stu-id="7aa13-131">Technical layout definition</span></span>                             | <span data-ttu-id="7aa13-132">Beispieldatei für Bankauszüge</span><span class="sxs-lookup"><span data-stu-id="7aa13-132">Bank statement example file</span></span>          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | MT940StatementExample                |
-| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
-| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+| <span data-ttu-id="7aa13-133">DynamicsAXMT940Layout</span><span class="sxs-lookup"><span data-stu-id="7aa13-133">DynamicsAXMT940Layout</span></span>                                   | <span data-ttu-id="7aa13-134">MT940StatementExample</span><span class="sxs-lookup"><span data-stu-id="7aa13-134">MT940StatementExample</span></span>                |
+| <span data-ttu-id="7aa13-135">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="7aa13-135">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="7aa13-136">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="7aa13-136">ISO20022StatementExample</span></span>             |
+| <span data-ttu-id="7aa13-137">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="7aa13-137">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="7aa13-138">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="7aa13-138">BAI2StatementExample</span></span>                 |
 
  
 
-## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Einrichten des Imports von ISO20022-Bankauszügen
-Zuerst definieren Sie die Bankauszugs-Formatverarbeitungsgruppe für ISO20022-Bankauszüge über das Datenentitätsframework.
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a><span data-ttu-id="7aa13-139">Einrichten des Imports von ISO20022-Bankauszügen</span><span class="sxs-lookup"><span data-stu-id="7aa13-139">Set up the import of ISO20022 bank statements</span></span>
+<span data-ttu-id="7aa13-140">Zuerst definieren Sie die Bankauszugs-Formatverarbeitungsgruppe für ISO20022-Bankauszüge über das Datenentitätsframework.</span><span class="sxs-lookup"><span data-stu-id="7aa13-140">First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.</span></span>
 
-1.  Wechseln Sie zu **Arbeitsbereiche** &gt; **Datenverwaltung.**
-2.  Klicken Sie auf **Import**.
-3.  Geben Sie einen Namen ein (z. B. **ISO20022**).
-4.  Legen Sie das Feld **Quelldatenformat** auf **XML-Element** fest.
-5.  Wählen Sie im Feld **Entitätsname** **Bankauszüge** aus.
-6.  Um Importdateien hochzuladen, klicken Sie auf **Hochladen**. Wählen Sie die Datei **SampleBankCompositeEntity.xml** aus den zuvor gespeicherten Dateien aus.
-7.  Nachdem die Bankauszugsentität hochgeladen und die Zuordnung abgeschlossen ist, klicken Sie auf die Aktion **Zuordnung Anzeigen** der Entität.
-8.  Die Bankauszugsentität ist eine zusammengesetzte Entität, die aus vier separaten Entitäten besteht. Wählen Sie in der Liste **BankStatementDocumentEntity** aus, und klicken Sie anschließend auf die Aktivität **Zuordnung anzeigen**.
-9.  Klicken Sie auf der Registerkarte **Umwandlungen** auf **Neu**.
-10. Klicken Sie für Nummernkreis 1 auf **Datei hochladen**, und wählen Sie die Datei **ISO20022XML Reconciliation.xslt** aus den zuvor gespeicherten Dateien. **Hinweis:** Finance and Operations wandelt Dateien um, die für das Standardformat erstellt werden. Da Banken oft von diesem Format abweichen, können Sie die Umwandlungsdatei aktualisieren, um Ihr Bankauszugsformat zuzuordnen. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
-11. Klicken Sie auf **Neu**.
-12. Klicken Sie für Nummernkreis 2 auf **Datei hochladen**, und wählen Sie die Datei **BankReconciliation-to-Composite.xslt** aus den zuvor gespeicherten Dateien.
-13. Klicken Sie auf **Umwandlungen anwenden**.
+1.  <span data-ttu-id="7aa13-141">Wechseln Sie zu **Arbeitsbereiche** &gt; **Datenverwaltung.**</span><span class="sxs-lookup"><span data-stu-id="7aa13-141">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="7aa13-142">Klicken Sie auf **Import**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-142">Click **Import**.</span></span>
+3.  <span data-ttu-id="7aa13-143">Geben Sie einen Namen ein (z. B. **ISO20022**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-143">Enter a name for the format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="7aa13-144">Legen Sie das Feld **Quelldatenformat** auf **XML-Element** fest.</span><span class="sxs-lookup"><span data-stu-id="7aa13-144">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="7aa13-145">Wählen Sie im Feld **Entitätsname** **Bankauszüge** aus.</span><span class="sxs-lookup"><span data-stu-id="7aa13-145">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="7aa13-146">Um Importdateien hochzuladen, klicken Sie auf **Hochladen**. Wählen Sie die Datei **SampleBankCompositeEntity.xml** aus den zuvor gespeicherten Dateien aus.</span><span class="sxs-lookup"><span data-stu-id="7aa13-146">To upload the import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="7aa13-147">Nachdem die Bankauszugsentität hochgeladen und die Zuordnung abgeschlossen ist, klicken Sie auf die Aktion **Zuordnung Anzeigen** der Entität.</span><span class="sxs-lookup"><span data-stu-id="7aa13-147">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="7aa13-148">Die Bankauszugsentität ist eine zusammengesetzte Entität, die aus vier separaten Entitäten besteht.</span><span class="sxs-lookup"><span data-stu-id="7aa13-148">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="7aa13-149">Wählen Sie in der Liste **BankStatementDocumentEntity** aus, und klicken Sie anschließend auf die Aktivität **Zuordnung anzeigen**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-149">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="7aa13-150">Klicken Sie auf der Registerkarte **Umwandlungen** auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-150">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="7aa13-151">Klicken Sie für Nummernkreis 1 auf **Datei hochladen**, und wählen Sie die Datei **ISO20022XML Reconciliation.xslt** aus den zuvor gespeicherten Dateien.</span><span class="sxs-lookup"><span data-stu-id="7aa13-151">For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="7aa13-152">**Hinweis:** Finance and Operations wandelt Dateien um, die für das Standardformat erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="7aa13-152">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="7aa13-153">Da Banken oft von diesem Format abweichen, können Sie die Umwandlungsdatei aktualisieren, um Ihr Bankauszugsformat zuzuordnen.</span><span class="sxs-lookup"><span data-stu-id="7aa13-153">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+11. <span data-ttu-id="7aa13-154">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-154">Click **New**.</span></span>
+12. <span data-ttu-id="7aa13-155">Klicken Sie für Nummernkreis 2 auf **Datei hochladen**, und wählen Sie die Datei **BankReconciliation-to-Composite.xslt** aus den zuvor gespeicherten Dateien.</span><span class="sxs-lookup"><span data-stu-id="7aa13-155">For sequence number 2, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+13. <span data-ttu-id="7aa13-156">Klicken Sie auf **Umwandlungen anwenden**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-156">Click **Apply transforms**.</span></span>
 
-Nach dem Einrichten der Formatverarbeitungsgruppe müssen Sie die Bankauszugsformatregeln für ISO20022 Bankauszüge definieren.
+<span data-ttu-id="7aa13-157">Nach dem Einrichten der Formatverarbeitungsgruppe müssen Sie die Bankauszugsformatregeln für ISO20022 Bankauszüge definieren.</span><span class="sxs-lookup"><span data-stu-id="7aa13-157">After the format processing group is set up, the next step is to define the bank statement format rules for ISO20022 bank statements.</span></span>
 
-1.  Gehen Sie zu **Barmittel und Bankverwaltung** &gt; **Einrichtung** &gt; **Einrichtung der erweiterten Bankabstimmung** &gt; **Bankauszugsformat.**
-2.  Klicken Sie auf **Neu**.
-3.  Geben Sie ein Standardformat an (z. B. **ISO20022**).
-4.  Geben Sie einen Namens für das Format an.
-5.  Legen Sie im Feld **Verarbeitungsgruppe** in der zuvor definierten Gruppe fest (z. B. **ISO20022**).
-6.  Aktivieren Sie das Kontrollkästchen **XML-Datei**.
+1.  <span data-ttu-id="7aa13-158">Gehen Sie zu **Barmittel und Bankverwaltung** &gt; **Einrichtung** &gt; **Einrichtung der erweiterten Bankabstimmung** &gt; **Bankauszugsformat.**</span><span class="sxs-lookup"><span data-stu-id="7aa13-158">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="7aa13-159">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-159">Click **New**.</span></span>
+3.  <span data-ttu-id="7aa13-160">Geben Sie ein Standardformat an (z. B. **ISO20022**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-160">Specify a statement format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="7aa13-161">Geben Sie einen Namens für das Format an.</span><span class="sxs-lookup"><span data-stu-id="7aa13-161">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="7aa13-162">Legen Sie im Feld **Verarbeitungsgruppe** in der zuvor definierten Gruppe fest (z. B. **ISO20022**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-162">Set the **Processing group** field to the group that you defined earlier, such as **ISO20022**.</span></span>
+6.  <span data-ttu-id="7aa13-163">Aktivieren Sie das Kontrollkästchen **XML-Datei**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-163">Select the **XML file** check box.</span></span>
 
-Der letzte Schritt ist Aktivieren der erweiterten Bankabstimmung und das Festlegen des Abstimmungsformates für das Bankkonto.
+<span data-ttu-id="7aa13-164">Der letzte Schritt ist Aktivieren der erweiterten Bankabstimmung und das Festlegen des Abstimmungsformates für das Bankkonto.</span><span class="sxs-lookup"><span data-stu-id="7aa13-164">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Gehen Sie zu "**Bargeld- und Bankverwaltung**" &gt; "**Bankkonten**".
-2.  Wählen Sie das Bankkonto und öffnen Sie es, um die Details anzuzeigen.
-3.  Auf der **Abstimmung**-Registerkarte legen Sie die **Erweiterte Bankabstimmung**-Option auf **Ja** fest.
-4.  Legen Sie im Feld **Auszugsformat** das Format fest, dass Sie zuvor erstellt haben (z. B. **ISO20022**).
+1.  <span data-ttu-id="7aa13-165">Gehen Sie zu "**Bargeld- und Bankverwaltung**" &gt; "**Bankkonten**".</span><span class="sxs-lookup"><span data-stu-id="7aa13-165">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="7aa13-166">Wählen Sie das Bankkonto und öffnen Sie es, um die Details anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7aa13-166">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="7aa13-167">Auf der **Abstimmung**-Registerkarte legen Sie die **Erweiterte Bankabstimmung**-Option auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="7aa13-167">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="7aa13-168">Legen Sie im Feld **Auszugsformat** das Format fest, dass Sie zuvor erstellt haben (z. B. **ISO20022**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-168">Set the **Statement format** field to the format that you created earlier, such as **ISO20022**.</span></span>
 
-## <a name="set-up-the-import-of-mt940-bank-statements"></a>Einrichten des Imports von MT940-Bankauszügen
-Zuerst definieren Sie die Bankauszugs-Formatverarbeitungsgruppe für MT940-Bankauszüge über das Datenentitätsframework.
+## <a name="set-up-the-import-of-mt940-bank-statements"></a><span data-ttu-id="7aa13-169">Einrichten des Imports von MT940-Bankauszügen</span><span class="sxs-lookup"><span data-stu-id="7aa13-169">Set up the import of MT940 bank statements</span></span>
+<span data-ttu-id="7aa13-170">Zuerst definieren Sie die Bankauszugs-Formatverarbeitungsgruppe für MT940-Bankauszüge über das Datenentitätsframework.</span><span class="sxs-lookup"><span data-stu-id="7aa13-170">First, you must define the bank statement format processing group for MT940 bank statements by using the data entity framework.</span></span>
 
-1.  Wechseln Sie zu **Arbeitsbereiche** &gt; **Datenverwaltung.**
-2.  Klicken Sie auf **Import**.
-3.  Geben Sie einen Namen ein (z. B. **MT940**).
-4.  Legen Sie das Feld **Quelldatenformat** auf **XML-Element** fest.
-5.  Wählen Sie im Feld **Entitätsname** **Bankauszüge** aus.
-6.  Um Importdateien hochzuladen, klicken Sie auf **Hochladen**. Wählen Sie die Datei **SampleBankCompositeEntity.xml** aus den zuvor gespeicherten Dateien aus.
-7.  Nachdem die Bankauszugsentität hochgeladen und die Zuordnung abgeschlossen ist, klicken Sie auf die Aktion **Zuordnung Anzeigen** der Entität.
-8.  Die Bankauszugsentität ist eine zusammengesetzte Entität, die aus vier separaten Entitäten besteht. Wählen Sie in der Liste **BankStatementDocumentEntity** aus, und klicken Sie anschließend auf die Aktivität **Zuordnung anzeigen**.
-9.  Klicken Sie auf der Registerkarte **Umwandlungen** auf **Neu**.
-10. Klicken Sie für Nummernkreis 1 auf **Datei hochladen**, und wählen Sie die Datei **MT940TXT-to-MT940XML.xslt** aus den zuvor gespeicherten Dateien.
-11. Klicken Sie auf **Neu**.
-12. Klicken Sie für Nummernkreis 2 auf **Datei hochladen**, und wählen Sie die Datei **MT940XML Reconciliation.xslt** aus den zuvor gespeicherten Dateien. **Hinweis:** Finance and Operations wandelt Dateien um, die für das Standardformat erstellt werden. Da Banken oft von diesem Format abweichen, können Sie die Umwandlungsdatei aktualisieren, um Ihr Bankauszugsformat zuzuordnen. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
-13. Klicken Sie auf **Neu**.
-14. Klicken Sie für Nummernkreis 3 auf **Datei hochladen**, und wählen Sie die Datei **BankReconciliation-to-Composite.xslt** aus den zuvor gespeicherten Dateien.
-15. Klicken Sie auf **Umwandlungen anwenden**.
+1.  <span data-ttu-id="7aa13-171">Wechseln Sie zu **Arbeitsbereiche** &gt; **Datenverwaltung.**</span><span class="sxs-lookup"><span data-stu-id="7aa13-171">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="7aa13-172">Klicken Sie auf **Import**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-172">Click **Import**.</span></span>
+3.  <span data-ttu-id="7aa13-173">Geben Sie einen Namen ein (z. B. **MT940**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-173">Enter a name for the format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="7aa13-174">Legen Sie das Feld **Quelldatenformat** auf **XML-Element** fest.</span><span class="sxs-lookup"><span data-stu-id="7aa13-174">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="7aa13-175">Wählen Sie im Feld **Entitätsname** **Bankauszüge** aus.</span><span class="sxs-lookup"><span data-stu-id="7aa13-175">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="7aa13-176">Um Importdateien hochzuladen, klicken Sie auf **Hochladen**. Wählen Sie die Datei **SampleBankCompositeEntity.xml** aus den zuvor gespeicherten Dateien aus.</span><span class="sxs-lookup"><span data-stu-id="7aa13-176">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="7aa13-177">Nachdem die Bankauszugsentität hochgeladen und die Zuordnung abgeschlossen ist, klicken Sie auf die Aktion **Zuordnung Anzeigen** der Entität.</span><span class="sxs-lookup"><span data-stu-id="7aa13-177">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="7aa13-178">Die Bankauszugsentität ist eine zusammengesetzte Entität, die aus vier separaten Entitäten besteht.</span><span class="sxs-lookup"><span data-stu-id="7aa13-178">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="7aa13-179">Wählen Sie in der Liste **BankStatementDocumentEntity** aus, und klicken Sie anschließend auf die Aktivität **Zuordnung anzeigen**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-179">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="7aa13-180">Klicken Sie auf der Registerkarte **Umwandlungen** auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-180">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="7aa13-181">Klicken Sie für Nummernkreis 1 auf **Datei hochladen**, und wählen Sie die Datei **MT940TXT-to-MT940XML.xslt** aus den zuvor gespeicherten Dateien.</span><span class="sxs-lookup"><span data-stu-id="7aa13-181">For sequence number 1, click **Upload file**, and select the **MT940TXT-to-MT940XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="7aa13-182">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-182">Click **New**.</span></span>
+12. <span data-ttu-id="7aa13-183">Klicken Sie für Nummernkreis 2 auf **Datei hochladen**, und wählen Sie die Datei **MT940XML Reconciliation.xslt** aus den zuvor gespeicherten Dateien.</span><span class="sxs-lookup"><span data-stu-id="7aa13-183">For sequence number 2, click **Upload file**, and select the **MT940XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="7aa13-184">**Hinweis:** Finance and Operations wandelt Dateien um, die für das Standardformat erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="7aa13-184">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="7aa13-185">Da Banken oft von diesem Format abweichen, können Sie die Umwandlungsdatei aktualisieren, um Ihr Bankauszugsformat zuzuordnen.</span><span class="sxs-lookup"><span data-stu-id="7aa13-185">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+13. <span data-ttu-id="7aa13-186">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-186">Click **New**.</span></span>
+14. <span data-ttu-id="7aa13-187">Klicken Sie für Nummernkreis 3 auf **Datei hochladen**, und wählen Sie die Datei **BankReconciliation-to-Composite.xslt** aus den zuvor gespeicherten Dateien.</span><span class="sxs-lookup"><span data-stu-id="7aa13-187">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="7aa13-188">Klicken Sie auf **Umwandlungen anwenden**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-188">Click **Apply transforms**.</span></span>
 
-Nach dem Einrichten der Formatverarbeitungsgruppe müssen Sie die Bankauszugsformatregeln für MT940 Bankauszüge definieren.
+<span data-ttu-id="7aa13-189">Nach dem Einrichten der Formatverarbeitungsgruppe müssen Sie die Bankauszugsformatregeln für MT940 Bankauszüge definieren.</span><span class="sxs-lookup"><span data-stu-id="7aa13-189">After the format processing group is set up, the next step is to define the bank statement format rules for MT940 bank statements.</span></span>
 
-1.  Gehen Sie zu **Barmittel und Bankverwaltung** &gt; **Einrichtung** &gt; **Einrichtung der erweiterten Bankabstimmung** &gt; **Bankauszugsformat.**
-2.  Klicken Sie auf **Neu**.
-3.  Geben Sie ein Standardformat an (z. B. **MT940**).
-4.  Geben Sie einen Namens für das Format an.
-5.  Legen Sie im Feld **Verarbeitungsgruppe** in der zuvor definierten Gruppe fest (z. B. **MT940**).
-6.  Legen Sie das Feld **Dateityp** auf **txt** fest.
+1.  <span data-ttu-id="7aa13-190">Gehen Sie zu **Barmittel und Bankverwaltung** &gt; **Einrichtung** &gt; **Einrichtung der erweiterten Bankabstimmung** &gt; **Bankauszugsformat.**</span><span class="sxs-lookup"><span data-stu-id="7aa13-190">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="7aa13-191">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-191">Click **New**.</span></span>
+3.  <span data-ttu-id="7aa13-192">Geben Sie ein Standardformat an (z. B. **MT940**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-192">Specify a statement format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="7aa13-193">Geben Sie einen Namens für das Format an.</span><span class="sxs-lookup"><span data-stu-id="7aa13-193">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="7aa13-194">Legen Sie im Feld **Verarbeitungsgruppe** in der zuvor definierten Gruppe fest (z. B. **MT940**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-194">Set the **Processing group** field to the group that you defined earlier, such as **MT940**.</span></span>
+6.  <span data-ttu-id="7aa13-195">Legen Sie das Feld **Dateityp** auf **txt** fest.</span><span class="sxs-lookup"><span data-stu-id="7aa13-195">Set the **File type** field to **txt**.</span></span>
 
-Der letzte Schritt ist Aktivieren der erweiterten Bankabstimmung und das Festlegen des Abstimmungsformates für das Bankkonto.
+<span data-ttu-id="7aa13-196">Der letzte Schritt ist Aktivieren der erweiterten Bankabstimmung und das Festlegen des Abstimmungsformates für das Bankkonto.</span><span class="sxs-lookup"><span data-stu-id="7aa13-196">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Gehen Sie zu "**Bargeld- und Bankverwaltung**" &gt; "**Bankkonten**".
-2.  Wählen Sie das Bankkonto und öffnen Sie es, um die Details anzuzeigen.
-3.  Auf der **Abstimmung**-Registerkarte legen Sie die **Erweiterte Bankabstimmung**-Option auf **Ja** fest.
-4.  Wenn Sie aufgefordert werden, bestätigen Sie Ihre Auswahl, und aktivieren Sie die erweiterte Bankabstimmung. Klicken Sie auf **OK**.
-5.  Legen Sie im Feld **Auszugsformat** das Format fest, dass Sie zuvor erstellt haben (z. B. **MT940**).
+1.  <span data-ttu-id="7aa13-197">Gehen Sie zu "**Bargeld- und Bankverwaltung**" &gt; "**Bankkonten**".</span><span class="sxs-lookup"><span data-stu-id="7aa13-197">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="7aa13-198">Wählen Sie das Bankkonto und öffnen Sie es, um die Details anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7aa13-198">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="7aa13-199">Auf der **Abstimmung**-Registerkarte legen Sie die **Erweiterte Bankabstimmung**-Option auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="7aa13-199">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="7aa13-200">Wenn Sie aufgefordert werden, bestätigen Sie Ihre Auswahl, und aktivieren Sie die erweiterte Bankabstimmung. Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-200">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="7aa13-201">Legen Sie im Feld **Auszugsformat** das Format fest, dass Sie zuvor erstellt haben (z. B. **MT940**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-201">Set the **Statement format** field to the format that you created earlier, such as **MT940**.</span></span>
 
-## <a name="set-up-the-import-of-bai2-bank-statements"></a>Einrichten des Imports von BAI2-Bankauszügen
-Zuerst definieren Sie die Bankauszugs-Formatverarbeitungsgruppe für BAI2-Bankauszüge über das Datenentitätsframework.
+## <a name="set-up-the-import-of-bai2-bank-statements"></a><span data-ttu-id="7aa13-202">Einrichten des Imports von BAI2-Bankauszügen</span><span class="sxs-lookup"><span data-stu-id="7aa13-202">Set up the import of BAI2 bank statements</span></span>
+<span data-ttu-id="7aa13-203">Zuerst definieren Sie die Bankauszugs-Formatverarbeitungsgruppe für BAI2-Bankauszüge über das Datenentitätsframework.</span><span class="sxs-lookup"><span data-stu-id="7aa13-203">First, you must define the bank statement format processing group for BAI2 bank statements by using the data entity framework.</span></span>
 
-1.  Wechseln Sie zu **Arbeitsbereiche** &gt; **Datenverwaltung.**
-2.  Klicken Sie auf **Import**.
-3.  Geben Sie einen Namen ein (z. B. **BAI2**).
-4.  Legen Sie das Feld **Quelldatenformat** auf **XML-Element** fest.
-5.  Wählen Sie im Feld **Entitätsname** **Bankauszüge** aus.
-6.  Um Importdateien hochzuladen, klicken Sie auf **Hochladen**. Wählen Sie die Datei **SampleBankCompositeEntity.xml** aus den zuvor gespeicherten Dateien aus.
-7.  Nachdem die Bankauszugsentität hochgeladen und die Zuordnung abgeschlossen ist, klicken Sie auf die Aktion **Zuordnung Anzeigen** der Entität.
-8.  Die Bankauszugsentität ist eine zusammengesetzte Entität, die aus vier separaten Entitäten besteht. Wählen Sie in der Liste **BankStatementDocumentEntity** aus, und klicken Sie anschließend auf die Aktivität **Zuordnung anzeigen**.
-9.  Klicken Sie auf der Registerkarte **Umwandlungen** auf **Neu**.
-10. Klicken Sie für Nummernkreis 1 auf **Datei hochladen**, und wählen Sie die Datei **BAI2CSV-to-BAI2XML.xslt** aus den zuvor gespeicherten Dateien.
-11. Klicken Sie auf **Neu**.
-12. Klicken Sie für Nummernkreis 2 auf **Datei hochladen**, und wählen Sie die Datei **BAI2XML Reconciliation.xslt** aus den zuvor gespeicherten Dateien. **Hinweis:** Finance and Operations wandelt Dateien um, die für das Standardformat erstellt werden. Da Banken oft von diesem Format abweichen, können Sie die Umwandlungsdatei aktualisieren, um Ihr Bankauszugsformat zuzuordnen. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
-13. Klicken Sie auf **Neu**.
-14. Klicken Sie für Nummernkreis 3 auf **Datei hochladen**, und wählen Sie die Datei **BankReconciliation-to-Composite.xslt** aus den zuvor gespeicherten Dateien.
-15. Klicken Sie auf **Umwandlungen anwenden**.
+1.  <span data-ttu-id="7aa13-204">Wechseln Sie zu **Arbeitsbereiche** &gt; **Datenverwaltung.**</span><span class="sxs-lookup"><span data-stu-id="7aa13-204">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="7aa13-205">Klicken Sie auf **Import**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-205">Click **Import**.</span></span>
+3.  <span data-ttu-id="7aa13-206">Geben Sie einen Namen ein (z. B. **BAI2**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-206">Enter a name for the format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="7aa13-207">Legen Sie das Feld **Quelldatenformat** auf **XML-Element** fest.</span><span class="sxs-lookup"><span data-stu-id="7aa13-207">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="7aa13-208">Wählen Sie im Feld **Entitätsname** **Bankauszüge** aus.</span><span class="sxs-lookup"><span data-stu-id="7aa13-208">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="7aa13-209">Um Importdateien hochzuladen, klicken Sie auf **Hochladen**. Wählen Sie die Datei **SampleBankCompositeEntity.xml** aus den zuvor gespeicherten Dateien aus.</span><span class="sxs-lookup"><span data-stu-id="7aa13-209">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="7aa13-210">Nachdem die Bankauszugsentität hochgeladen und die Zuordnung abgeschlossen ist, klicken Sie auf die Aktion **Zuordnung Anzeigen** der Entität.</span><span class="sxs-lookup"><span data-stu-id="7aa13-210">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="7aa13-211">Die Bankauszugsentität ist eine zusammengesetzte Entität, die aus vier separaten Entitäten besteht.</span><span class="sxs-lookup"><span data-stu-id="7aa13-211">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="7aa13-212">Wählen Sie in der Liste **BankStatementDocumentEntity** aus, und klicken Sie anschließend auf die Aktivität **Zuordnung anzeigen**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-212">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="7aa13-213">Klicken Sie auf der Registerkarte **Umwandlungen** auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-213">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="7aa13-214">Klicken Sie für Nummernkreis 1 auf **Datei hochladen**, und wählen Sie die Datei **BAI2CSV-to-BAI2XML.xslt** aus den zuvor gespeicherten Dateien.</span><span class="sxs-lookup"><span data-stu-id="7aa13-214">For sequence number 1, click **Upload file**, and select the **BAI2CSV-to-BAI2XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="7aa13-215">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-215">Click **New**.</span></span>
+12. <span data-ttu-id="7aa13-216">Klicken Sie für Nummernkreis 2 auf **Datei hochladen**, und wählen Sie die Datei **BAI2XML Reconciliation.xslt** aus den zuvor gespeicherten Dateien.</span><span class="sxs-lookup"><span data-stu-id="7aa13-216">For sequence number 2, click **Upload file**, and select the **BAI2XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="7aa13-217">**Hinweis:** Finance and Operations wandelt Dateien um, die für das Standardformat erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="7aa13-217">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="7aa13-218">Da Banken oft von diesem Format abweichen, können Sie die Umwandlungsdatei aktualisieren, um Ihr Bankauszugsformat zuzuordnen.</span><span class="sxs-lookup"><span data-stu-id="7aa13-218">Because banks often diverge from this format, and you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+13. <span data-ttu-id="7aa13-219">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-219">Click **New**.</span></span>
+14. <span data-ttu-id="7aa13-220">Klicken Sie für Nummernkreis 3 auf **Datei hochladen**, und wählen Sie die Datei **BankReconciliation-to-Composite.xslt** aus den zuvor gespeicherten Dateien.</span><span class="sxs-lookup"><span data-stu-id="7aa13-220">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="7aa13-221">Klicken Sie auf **Umwandlungen anwenden**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-221">Click **Apply transforms**.</span></span>
 
-Nach dem Einrichten der Formatverarbeitungsgruppe müssen Sie die Bankauszugsformatregeln für BAI2 Bankauszüge definieren.
+<span data-ttu-id="7aa13-222">Nach dem Einrichten der Formatverarbeitungsgruppe müssen Sie die Bankauszugsformatregeln für BAI2 Bankauszüge definieren.</span><span class="sxs-lookup"><span data-stu-id="7aa13-222">After the format processing group is set up, the next step is to define the bank statement format rules for BAI2 bank statements.</span></span>
 
-1.  Gehen Sie zu **Barmittel und Bankverwaltung** &gt; **Einrichtung** &gt; **Einrichtung der erweiterten Bankabstimmung** &gt; **Bankauszugsformat.**
-2.  Klicken Sie auf **Neu**.
-3.  Geben Sie ein Standardformat an (z. B. **BAI2**).
-4.  Geben Sie einen Namens für das Format an.
-5.  Legen Sie im Feld **Verarbeitungsgruppe** in der zuvor definierten Gruppe fest (z. B. **BAI2**).
-6.  Legen Sie das Feld **Dateityp** auf **txt** fest.
+1.  <span data-ttu-id="7aa13-223">Gehen Sie zu **Barmittel und Bankverwaltung** &gt; **Einrichtung** &gt; **Einrichtung der erweiterten Bankabstimmung** &gt; **Bankauszugsformat.**</span><span class="sxs-lookup"><span data-stu-id="7aa13-223">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="7aa13-224">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-224">Click **New**.</span></span>
+3.  <span data-ttu-id="7aa13-225">Geben Sie ein Standardformat an (z. B. **BAI2**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-225">Specify a statement format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="7aa13-226">Geben Sie einen Namens für das Format an.</span><span class="sxs-lookup"><span data-stu-id="7aa13-226">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="7aa13-227">Legen Sie im Feld **Verarbeitungsgruppe** in der zuvor definierten Gruppe fest (z. B. **BAI2**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-227">Set the **Processing group** field to the group that you defined earlier, such as **BAI2**.</span></span>
+6.  <span data-ttu-id="7aa13-228">Legen Sie das Feld **Dateityp** auf **txt** fest.</span><span class="sxs-lookup"><span data-stu-id="7aa13-228">Set the **File type** field to **txt**.</span></span>
 
-Der letzte Schritt ist Aktivieren der erweiterten Bankabstimmung und das Festlegen des Abstimmungsformates für das Bankkonto.
+<span data-ttu-id="7aa13-229">Der letzte Schritt ist Aktivieren der erweiterten Bankabstimmung und das Festlegen des Abstimmungsformates für das Bankkonto.</span><span class="sxs-lookup"><span data-stu-id="7aa13-229">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Gehen Sie zu "**Bargeld- und Bankverwaltung**" &gt; "**Bankkonten**".
-2.  Wählen Sie das Bankkonto und öffnen Sie es, um die Details anzuzeigen.
-3.  Auf der **Abstimmung**-Registerkarte legen Sie die **Erweiterte Bankabstimmung**-Option auf **Ja** fest.
-4.  Wenn Sie aufgefordert werden, bestätigen Sie Ihre Auswahl, und aktivieren Sie die erweiterte Bankabstimmung. Klicken Sie auf **OK**.
-5.  Legen Sie im Feld **Auszugsformat** das Format fest, dass Sie zuvor erstellt haben (z. B. **BAI2**).
+1.  <span data-ttu-id="7aa13-230">Gehen Sie zu "**Bargeld- und Bankverwaltung**" &gt; "**Bankkonten**".</span><span class="sxs-lookup"><span data-stu-id="7aa13-230">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="7aa13-231">Wählen Sie das Bankkonto und öffnen Sie es, um die Details anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7aa13-231">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="7aa13-232">Auf der **Abstimmung**-Registerkarte legen Sie die **Erweiterte Bankabstimmung**-Option auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="7aa13-232">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="7aa13-233">Wenn Sie aufgefordert werden, bestätigen Sie Ihre Auswahl, und aktivieren Sie die erweiterte Bankabstimmung. Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-233">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="7aa13-234">Legen Sie im Feld **Auszugsformat** das Format fest, dass Sie zuvor erstellt haben (z. B. **BAI2**).</span><span class="sxs-lookup"><span data-stu-id="7aa13-234">Set the **Statement format** field to the format that you created earlier, such as **BAI2**.</span></span>
 
-## <a name="test-the-bank-statement-import"></a>Testen des Bankauszugsimports
-Der letzte Schritt ist das Überprüfen des Imports der Bankauszüge.
+## <a name="test-the-bank-statement-import"></a><span data-ttu-id="7aa13-235">Testen des Bankauszugsimports</span><span class="sxs-lookup"><span data-stu-id="7aa13-235">Test the bank statement import</span></span>
+<span data-ttu-id="7aa13-236">Der letzte Schritt ist das Überprüfen des Imports der Bankauszüge.</span><span class="sxs-lookup"><span data-stu-id="7aa13-236">The final step is to test that you can import your bank statement.</span></span>
 
-1.  Gehen Sie zu "**Bargeld- und Bankverwaltung**" &gt; "**Bankkonten**".
-2.  Wählen Sie das Bankkonto, für das die Funktionalität für die erweiterte Bankabstimmung aktiviert ist.
-3.  Klicken Sie auf der **Abstimmen**-Seite auf **Bankauszüge**.
-4.  Klicken Sie auf der **Bankauszug**-Seite auf **Auszug importieren**.
-5.  Legen Sie das **Bankkonto**-Feld auf das ausgewählte Bankkonto fest. Die **Auszugsformat**-Feld wird automatisch festgelegt (basierend auf der Einstellung für das Bankkonto).
-6.  Klicken Sie auf **Durchsuchen**, und wählen Sie die elektronische Bankauszugsdatei.
-7.  Klicken Sie auf **Hochladen**.
-8.  Klicken Sie auf **OK**.
+1.  <span data-ttu-id="7aa13-237">Gehen Sie zu "**Bargeld- und Bankverwaltung**" &gt; "**Bankkonten**".</span><span class="sxs-lookup"><span data-stu-id="7aa13-237">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="7aa13-238">Wählen Sie das Bankkonto, für das die Funktionalität für die erweiterte Bankabstimmung aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="7aa13-238">Select the bank account that Advanced bank reconciliation functionality is enabled for.</span></span>
+3.  <span data-ttu-id="7aa13-239">Klicken Sie auf der **Abstimmen**-Seite auf **Bankauszüge**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-239">On the **Reconcile** tab, click **Bank statements**.</span></span>
+4.  <span data-ttu-id="7aa13-240">Klicken Sie auf der **Bankauszug**-Seite auf **Auszug importieren**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-240">On the **Bank statement** page, click **Import statement**.</span></span>
+5.  <span data-ttu-id="7aa13-241">Legen Sie das **Bankkonto**-Feld auf das ausgewählte Bankkonto fest.</span><span class="sxs-lookup"><span data-stu-id="7aa13-241">Set the **Bank account** field to the selected bank account.</span></span> <span data-ttu-id="7aa13-242">Die **Auszugsformat**-Feld wird automatisch festgelegt (basierend auf der Einstellung für das Bankkonto).</span><span class="sxs-lookup"><span data-stu-id="7aa13-242">The **Statement format** field will be set automatically, based on the setting on the bank account.</span></span>
+6.  <span data-ttu-id="7aa13-243">Klicken Sie auf **Durchsuchen**, und wählen Sie die elektronische Bankauszugsdatei.</span><span class="sxs-lookup"><span data-stu-id="7aa13-243">Click **Browse**, and select your electronic bank statement file.</span></span>
+7.  <span data-ttu-id="7aa13-244">Klicken Sie auf **Hochladen**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-244">Click **Upload**.</span></span>
+8.  <span data-ttu-id="7aa13-245">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-245">Click **OK**.</span></span>
 
-Wenn der Import erfolgreich ist, erhalten Sie eine Meldung, die besagt, dass das Auszug importiert wurde. Wenn der Import nicht erfolgreich war, finden Sie den Einzelvorgang im **Datenmanagement**-Arbeitsbereich im Abschnitt **Einzelvorgangshistorie**. Klicken Sie auf **Ausführungsdetails** des Einzelvorgangs, um die Seite **Ausführungszusammenfassung** zu öffnen. Klicken Sie auf **Ausführungsprotokoll anzeigen**, um die Importfehler anzuzeigen.
+<span data-ttu-id="7aa13-246">Wenn der Import erfolgreich ist, erhalten Sie eine Meldung, die besagt, dass das Auszug importiert wurde.</span><span class="sxs-lookup"><span data-stu-id="7aa13-246">If the import is successful, you will receive a message that states that your statement was imported.</span></span> <span data-ttu-id="7aa13-247">Wenn der Import nicht erfolgreich war, finden Sie den Einzelvorgang im **Datenmanagement**-Arbeitsbereich im Abschnitt **Einzelvorgangshistorie**.</span><span class="sxs-lookup"><span data-stu-id="7aa13-247">If the import wasn't successful, in the **Data management** workspace, in the **Job history** section, find the job.</span></span> <span data-ttu-id="7aa13-248">Klicken Sie auf **Ausführungsdetails** des Einzelvorgangs, um die Seite **Ausführungszusammenfassung** zu öffnen. Klicken Sie auf **Ausführungsprotokoll anzeigen**, um die Importfehler anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7aa13-248">Click **Execution details** for the job to open the **Execution summary** page, and then click **View execution log** to view the import errors.</span></span>
 
 
 

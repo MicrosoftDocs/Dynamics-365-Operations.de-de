@@ -17,53 +17,53 @@ ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: e948525d4c7873fdc5101136ee37cd117268f4dd
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9ba616550120e273429e348ea9cddf7c9e8baee4
 ms.contentlocale: de-de
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="generate-and-run-out-of-box-reports"></a> Fertigberichte generieren und ausführen
+# <a name="generate-and-run-out-of-box-reports"></a><span data-ttu-id="06aa0-103"> Fertigberichte generieren und ausführen</span><span class="sxs-lookup"><span data-stu-id="06aa0-103">Generate and run out-of-box reports</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Führen Sie mithilfe dieses Aufgabenhandbuchs Fertigberichte in der Zentralverwaltung aus verschiedenen Arbeitsbereichen und Abfrage- und Verkaufsberichte unter Einzelhandel und Handel aus.
+<span data-ttu-id="06aa0-104">Führen Sie mithilfe dieses Aufgabenhandbuchs Fertigberichte in der Zentralverwaltung aus verschiedenen Arbeitsbereichen und Abfrage- und Verkaufsberichte unter Einzelhandel und Handel aus.</span><span class="sxs-lookup"><span data-stu-id="06aa0-104">Use this task guide to run out of box reports in headquarters from different workspaces and Inquiries & Sales reports located under Retail & Commerce.</span></span>
 
 
 
-Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen, ist USRT. Diese Aufzeichnung ist für die Systemadministratorrolle vorgesehen.
+<span data-ttu-id="06aa0-105">Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen, ist USRT.</span><span class="sxs-lookup"><span data-stu-id="06aa0-105">The demo data company used to create this recording is USRT.</span></span> <span data-ttu-id="06aa0-106">Diese Aufzeichnung ist für die Systemadministratorrolle vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="06aa0-106">This recording is intended for the System administrator role.</span></span>
 
 
-## <a name="launch-reports-from-workspaces"></a>Starten von Berichten aus den Arbeitsbereichen
-1. Navigieren Sie zu Einzelhandel und Handel > Produkte und Kategorien > Kategorie- und Produktverwaltung.
-2. Klicken Sie zum Erweitern oder Reduzieren des Abschnitts ''Berichte" auf den Pfeil.
-3. Klicken Sie auf "Bericht über Top-Produkte".
-4. Geben Sie in das Feld "Von Datum" ein Datum ein.
-5. Geben Sie in das Feld "Bis Datum" ein Datum ein.
-6. Klicken Sie im Feld "Kanal" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-7. Wählen Sie in der Struktur "Contoso Retail\Contoso Retail USA\Central\Houston" aus.
-    * Hier wird die standardmäßige Einzelhandelsorganisationshierarchie für Einzelhandelsberichterstellungszwecke angezeigt.   Wechseln Sie zu Organisationsverwaltung   Organisationen > Organisationshierarchiezwecke und wählen Sie "Berichterstellung im Einzelhandel" aus. Aktivieren Sie unter "Zugewiesene Hierarchien" den Hierarchienamen, für den die Standard-Spalte aktiviert ist.      Im Rahmen der Demodaten (für diese Aufgabenerfassung) ist "Einzelhandelsgeschäfte nach Region" die standardmäßige Organisationshierarchie für Einzelhandelsberichterstellungszwecke.     
-8. Klicken Sie auf "OK".
-9. Wählen Sie im Feld "Ansicht" eine Option aus.
-10. Wählen Sie im Feld "Von" eine Option aus.
-11. Klicken Sie auf "OK".
+## <a name="launch-reports-from-workspaces"></a><span data-ttu-id="06aa0-107">Starten von Berichten aus den Arbeitsbereichen</span><span class="sxs-lookup"><span data-stu-id="06aa0-107">Launch reports from workspaces</span></span>
+1. <span data-ttu-id="06aa0-108">Navigieren Sie zu Einzelhandel und Handel > Produkte und Kategorien > Kategorie- und Produktverwaltung.</span><span class="sxs-lookup"><span data-stu-id="06aa0-108">Go to Retail and commerce > Products and categories > Category and product management.</span></span>
+2. <span data-ttu-id="06aa0-109">Klicken Sie zum Erweitern oder Reduzieren des Abschnitts ''Berichte" auf den Pfeil.</span><span class="sxs-lookup"><span data-stu-id="06aa0-109">Click the arrow to expand or collapse the Reports section.</span></span>
+3. <span data-ttu-id="06aa0-110">Klicken Sie auf "Bericht über Top-Produkte".</span><span class="sxs-lookup"><span data-stu-id="06aa0-110">Click Top products report.</span></span>
+4. <span data-ttu-id="06aa0-111">Geben Sie in das Feld "Von Datum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="06aa0-111">In the From date field, enter a date.</span></span>
+5. <span data-ttu-id="06aa0-112">Geben Sie in das Feld "Bis Datum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="06aa0-112">In the To date field, enter a date.</span></span>
+6. <span data-ttu-id="06aa0-113">Klicken Sie im Feld "Kanal" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="06aa0-113">In the Channel field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="06aa0-114">Wählen Sie in der Struktur "Contoso Retail\Contoso Retail USA\Central\Houston" aus.</span><span class="sxs-lookup"><span data-stu-id="06aa0-114">In the tree, select 'Contoso Retail\Contoso Retail USA\Central\Houston'.</span></span>
+    * <span data-ttu-id="06aa0-115">Hier wird die standardmäßige Einzelhandelsorganisationshierarchie für Einzelhandelsberichterstellungszwecke angezeigt.</span><span class="sxs-lookup"><span data-stu-id="06aa0-115">This shows the default retail organization hierarchy for Retail reporting purpose.</span></span>   <span data-ttu-id="06aa0-116">Wechseln Sie zu Organisationsverwaltung   Organisationen > Organisationshierarchiezwecke und wählen Sie "Berichterstellung im Einzelhandel" aus. Aktivieren Sie unter "Zugewiesene Hierarchien" den Hierarchienamen, für den die Standard-Spalte aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="06aa0-116">Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.</span></span>      <span data-ttu-id="06aa0-117">Im Rahmen der Demodaten (für diese Aufgabenerfassung) ist "Einzelhandelsgeschäfte nach Region" die standardmäßige Organisationshierarchie für Einzelhandelsberichterstellungszwecke.</span><span class="sxs-lookup"><span data-stu-id="06aa0-117">As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.</span></span>     
+8. <span data-ttu-id="06aa0-118">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="06aa0-118">Click OK.</span></span>
+9. <span data-ttu-id="06aa0-119">Wählen Sie im Feld "Ansicht" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="06aa0-119">In the View field, select an option.</span></span>
+10. <span data-ttu-id="06aa0-120">Wählen Sie im Feld "Von" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="06aa0-120">In the By field, select an option.</span></span>
+11. <span data-ttu-id="06aa0-121">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="06aa0-121">Click OK.</span></span>
 
-## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a>Starten Sie Berichte von Abfrage- und Verkaufsberichten unter dem App-Link "Einzelhandel und Handel".
-1. Navigieren Sie zu Einzelhandel und Handel > Abfragen und Berichte > Umsatzberichte > Kategorieverkaufsbericht.
-2. Geben Sie in das Feld "Von Datum" ein Datum ein.
-3. Geben Sie in das Feld "Bis Datum" ein Datum ein.
-4. Klicken Sie im Feld "Kanal" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-5. Wählen Sie in der Struktur "Contoso Retail\Contoso Retail USA\West\Seattle" aus.
-    * Hier wird die standardmäßige Einzelhandelsorganisationshierarchie für Einzelhandelsberichterstellungszwecke angezeigt.   Wechseln Sie zu Organisationsverwaltung   Organisationen > Organisationshierarchiezwecke und wählen Sie "Berichterstellung im Einzelhandel" aus. Aktivieren Sie unter "Zugewiesene Hierarchien" den Hierarchienamen, für den die Standard-Spalte aktiviert ist.      Im Rahmen der Demodaten (für diese Aufgabenerfassung) ist "Einzelhandelsgeschäfte nach Region" die standardmäßige Organisationshierarchie für Einzelhandelsberichterstellungszwecke.     
-6. Klicken Sie auf "OK".
-7. Klicken Sie auf "OK".
+## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a><span data-ttu-id="06aa0-122">Starten Sie Berichte von Abfrage- und Verkaufsberichten unter dem App-Link "Einzelhandel und Handel".</span><span class="sxs-lookup"><span data-stu-id="06aa0-122">Launch reports from the inquiries and sales reports located under Retail & Commerce app link.</span></span>
+1. <span data-ttu-id="06aa0-123">Navigieren Sie zu Einzelhandel und Handel > Abfragen und Berichte > Umsatzberichte > Kategorieverkaufsbericht.</span><span class="sxs-lookup"><span data-stu-id="06aa0-123">Go to Retail and commerce > Inquiries and reports > Sales reports > Category sales report.</span></span>
+2. <span data-ttu-id="06aa0-124">Geben Sie in das Feld "Von Datum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="06aa0-124">In the From date field, enter a date.</span></span>
+3. <span data-ttu-id="06aa0-125">Geben Sie in das Feld "Bis Datum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="06aa0-125">In the To date field, enter a date.</span></span>
+4. <span data-ttu-id="06aa0-126">Klicken Sie im Feld "Kanal" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="06aa0-126">In the Channel field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="06aa0-127">Wählen Sie in der Struktur "Contoso Retail\Contoso Retail USA\West\Seattle" aus.</span><span class="sxs-lookup"><span data-stu-id="06aa0-127">In the tree, select 'Contoso Retail\Contoso Retail USA\West\Seattle'.</span></span>
+    * <span data-ttu-id="06aa0-128">Hier wird die standardmäßige Einzelhandelsorganisationshierarchie für Einzelhandelsberichterstellungszwecke angezeigt.</span><span class="sxs-lookup"><span data-stu-id="06aa0-128">This shows the default retail organization hierarchy for Retail reporting purpose.</span></span>   <span data-ttu-id="06aa0-129">Wechseln Sie zu Organisationsverwaltung   Organisationen > Organisationshierarchiezwecke und wählen Sie "Berichterstellung im Einzelhandel" aus. Aktivieren Sie unter "Zugewiesene Hierarchien" den Hierarchienamen, für den die Standard-Spalte aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="06aa0-129">Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.</span></span>      <span data-ttu-id="06aa0-130">Im Rahmen der Demodaten (für diese Aufgabenerfassung) ist "Einzelhandelsgeschäfte nach Region" die standardmäßige Organisationshierarchie für Einzelhandelsberichterstellungszwecke.</span><span class="sxs-lookup"><span data-stu-id="06aa0-130">As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.</span></span>     
+6. <span data-ttu-id="06aa0-131">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="06aa0-131">Click OK.</span></span>
+7. <span data-ttu-id="06aa0-132">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="06aa0-132">Click OK.</span></span>
 
-## <a name="export-an-hq-reports"></a>Exportieren von HQ-Berichten
-1. Navigieren Sie zu Einzelhandel und Handel > Abfragen und Berichte > Umsatzberichte > Bericht 'Organisationsumsatz''.
-2. Geben Sie in das Feld "Von Datum" ein Datum ein.
-3. Geben Sie in das Feld "Bis Datum" ein Datum ein.
-4. Klicken Sie auf "OK".
-5. Klicken Sie auf "Export".
-6. Klicken Sie auf "PDF".
+## <a name="export-an-hq-reports"></a><span data-ttu-id="06aa0-133">Exportieren von HQ-Berichten</span><span class="sxs-lookup"><span data-stu-id="06aa0-133">Export an HQ reports</span></span>
+1. <span data-ttu-id="06aa0-134">Navigieren Sie zu Einzelhandel und Handel > Abfragen und Berichte > Umsatzberichte > Bericht 'Organisationsumsatz''.</span><span class="sxs-lookup"><span data-stu-id="06aa0-134">Go to Retail and commerce > Inquiries and reports > Sales reports > Organization sales report.</span></span>
+2. <span data-ttu-id="06aa0-135">Geben Sie in das Feld "Von Datum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="06aa0-135">In the From date field, enter a date.</span></span>
+3. <span data-ttu-id="06aa0-136">Geben Sie in das Feld "Bis Datum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="06aa0-136">In the To date field, enter a date.</span></span>
+4. <span data-ttu-id="06aa0-137">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="06aa0-137">Click OK.</span></span>
+5. <span data-ttu-id="06aa0-138">Klicken Sie auf "Export".</span><span class="sxs-lookup"><span data-stu-id="06aa0-138">Click Export.</span></span>
+6. <span data-ttu-id="06aa0-139">Klicken Sie auf "PDF".</span><span class="sxs-lookup"><span data-stu-id="06aa0-139">Click PDF.</span></span>
 
 

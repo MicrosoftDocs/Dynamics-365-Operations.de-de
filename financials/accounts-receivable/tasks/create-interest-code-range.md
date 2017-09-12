@@ -16,39 +16,39 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: fef4db5a3e109aa197d28cc4bbc582c03cf26c15
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 05ca41dd5d660e9f0ef72ee5bd49d800645081a5
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-an-interest-code-with-a-range"></a>Einen Zinscode mit einem Bereich erstellen
+# <a name="create-an-interest-code-with-a-range"></a><span data-ttu-id="e71d8-103">Einen Zinscode mit einem Bereich erstellen</span><span class="sxs-lookup"><span data-stu-id="e71d8-103">Create an interest code with a range</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Zinscodes können eingerichtet werden, um verschiedene Zinsbeträge auf Grundlage einen Wertebereich zu berechnen. Dieses Verfahren zeigt Ihnen, wie Sie einen Zinscode Hinzufügen und einen Bereich hinzufügen.
+<span data-ttu-id="e71d8-104">Zinscodes können eingerichtet werden, um verschiedene Zinsbeträge auf Grundlage einen Wertebereich zu berechnen.</span><span class="sxs-lookup"><span data-stu-id="e71d8-104">Interest codes can be set up to calculate different interest amounts based on a range of values.</span></span> <span data-ttu-id="e71d8-105">Dieses Verfahren zeigt Ihnen, wie Sie einen Zinscode Hinzufügen und einen Bereich hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="e71d8-105">This procedure will show you how to add an interest code and add a range to it.</span></span>
 
-1. Wechseln Sie zu "Kredit und Inkasso" > "Zinsen" > "Zinscodes einrichten".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Zinscode" den Namen des Zinscodes ein.
-4. Geben Sie im Feld Beschreibung eine Beschreibung für den Zinscode ein.
-5. Wählen Sie "Monat" aus.
-6. Erweitern Sie den Abschnitt Einnahmen.
-7. Erweitern Sie den Abschnitt "Einnahmen nach Währung".
-8. Geben Sie im Feld "Konto für Sachkontobuchungen" die gewünschten Werte an.
-9. Im Feld "Konto für Sachkontobuchungen" wählen Sie "Monate" aus.
-10. Klicken Sie auf Hinzufügen.
-11. Geben Sie im Feld "Beschreibung" eine Beschreibung für die Währung und den Bereich ein.
-12. Klicken Sie auf "Speichern".
-13. Klicken Sie auf "Bereiche".
-14. Klicken Sie auf "Neu".
-15. Geben Sie den Von-Wert 0 ein und geben Sie dann die Zinsatz in Prozent pro Monat ein, der verwendet wird, um die Zinsen zu berechnen. In unserem Beispiel ist das 1,5.
-16. Klicken Sie auf Neu.
-17. Geben Sie beim nächsten Von-Wert 4 ein. Dies ist der ersten Monat, für den Sie den neuen Zinsbetrag berechnen.
-18. Geben Sie den Zinssatz pro Monat in Prozent ein, der verwendet wird, um die Zinsen zu berechnen, die in Monat 4. starten. In unserem Beispiel ist das 2.0. In unserem Beispiel ist das 2,0.
-19. Klicken Sie auf Neu.
-20. Geben Sie beim nächsten Von-Wert 7 ein. Dies ist der nächste Monat, für den Sie den neuen Zinsbetrag berechnen.
-21. Geben Sie den Zinssatz pro Monat in Prozent ein, der verwendet wird, um die Zinsen im Monat 7 zu berechnen. In unserem Beispiel ist das 2,5.
-22. Klicken Sie auf "Schließen", um die Einrichtung abzuschließen.
+1. <span data-ttu-id="e71d8-106">Wechseln Sie zu "Kredit und Inkasso" > "Zinsen" > "Zinscodes einrichten".</span><span class="sxs-lookup"><span data-stu-id="e71d8-106">Go to Credit and collections > Interest > Set up interest codes.</span></span>
+2. <span data-ttu-id="e71d8-107">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="e71d8-107">Click New.</span></span>
+3. <span data-ttu-id="e71d8-108">Geben Sie im Feld "Zinscode" den Namen des Zinscodes ein.</span><span class="sxs-lookup"><span data-stu-id="e71d8-108">In the Interest code field, enter the name of the interest code.</span></span>
+4. <span data-ttu-id="e71d8-109">Geben Sie im Feld Beschreibung eine Beschreibung für den Zinscode ein.</span><span class="sxs-lookup"><span data-stu-id="e71d8-109">In the Description field, enter a description for the interest code.</span></span>
+5. <span data-ttu-id="e71d8-110">Wählen Sie "Monat" aus.</span><span class="sxs-lookup"><span data-stu-id="e71d8-110">Select Month.</span></span>
+6. <span data-ttu-id="e71d8-111">Erweitern Sie den Abschnitt Einnahmen.</span><span class="sxs-lookup"><span data-stu-id="e71d8-111">Expand the Earnings section.</span></span>
+7. <span data-ttu-id="e71d8-112">Erweitern Sie den Abschnitt "Einnahmen nach Währung".</span><span class="sxs-lookup"><span data-stu-id="e71d8-112">Expand the Earnings by currency section.</span></span>
+8. <span data-ttu-id="e71d8-113">Geben Sie im Feld "Konto für Sachkontobuchungen" die gewünschten Werte an.</span><span class="sxs-lookup"><span data-stu-id="e71d8-113">In the Ledger posting account field, specify the desired values.</span></span>
+9. <span data-ttu-id="e71d8-114">Im Feld "Konto für Sachkontobuchungen" wählen Sie "Monate" aus.</span><span class="sxs-lookup"><span data-stu-id="e71d8-114">In the Interest by range field, select 'Months'.</span></span>
+10. <span data-ttu-id="e71d8-115">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="e71d8-115">Click Add.</span></span>
+11. <span data-ttu-id="e71d8-116">Geben Sie im Feld "Beschreibung" eine Beschreibung für die Währung und den Bereich ein.</span><span class="sxs-lookup"><span data-stu-id="e71d8-116">In the Description field, enter a description for this currency and range.</span></span>
+12. <span data-ttu-id="e71d8-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="e71d8-117">Click Save.</span></span>
+13. <span data-ttu-id="e71d8-118">Klicken Sie auf "Bereiche".</span><span class="sxs-lookup"><span data-stu-id="e71d8-118">Click Ranges.</span></span>
+14. <span data-ttu-id="e71d8-119">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="e71d8-119">Click New.</span></span>
+15. <span data-ttu-id="e71d8-120">Geben Sie den Von-Wert 0 ein und geben Sie dann die Zinsatz in Prozent pro Monat ein, der verwendet wird, um die Zinsen zu berechnen.</span><span class="sxs-lookup"><span data-stu-id="e71d8-120">Enter the From value as 0 and then enter the interest percent per month that will be used to calculate the interest.</span></span> <span data-ttu-id="e71d8-121">In unserem Beispiel ist das 1,5.</span><span class="sxs-lookup"><span data-stu-id="e71d8-121">For our example, it is 1.5.</span></span>
+16. <span data-ttu-id="e71d8-122">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="e71d8-122">Click New.</span></span>
+17. <span data-ttu-id="e71d8-123">Geben Sie beim nächsten Von-Wert 4 ein. Dies ist der ersten Monat, für den Sie den neuen Zinsbetrag berechnen.</span><span class="sxs-lookup"><span data-stu-id="e71d8-123">Enter the next From value as 4, which is the first month that you will be calculating a new interest amount.</span></span>
+18. <span data-ttu-id="e71d8-124">Geben Sie den Zinssatz pro Monat in Prozent ein, der verwendet wird, um die Zinsen zu berechnen, die in Monat 4. starten. In unserem Beispiel ist das 2.0.</span><span class="sxs-lookup"><span data-stu-id="e71d8-124">Enter the interest percent per month that will be used to calculate the interest starting in month 4.</span></span> <span data-ttu-id="e71d8-125">In unserem Beispiel ist das 2,0.</span><span class="sxs-lookup"><span data-stu-id="e71d8-125">For this example, it is 2.0.</span></span>
+19. <span data-ttu-id="e71d8-126">Klicken Sie auf Neu.</span><span class="sxs-lookup"><span data-stu-id="e71d8-126">Click New.</span></span>
+20. <span data-ttu-id="e71d8-127">Geben Sie beim nächsten Von-Wert 7 ein. Dies ist der nächste Monat, für den Sie den neuen Zinsbetrag berechnen.</span><span class="sxs-lookup"><span data-stu-id="e71d8-127">Enter the next From value as 7, which is the next month that you will be calculating a new interest amount.</span></span>
+21. <span data-ttu-id="e71d8-128">Geben Sie den Zinssatz pro Monat in Prozent ein, der verwendet wird, um die Zinsen im Monat 7 zu berechnen.</span><span class="sxs-lookup"><span data-stu-id="e71d8-128">Enter the interest percent per month that will be used to calculate the interest starting in month 7.</span></span> <span data-ttu-id="e71d8-129">In unserem Beispiel ist das 2,5.</span><span class="sxs-lookup"><span data-stu-id="e71d8-129">For this example, it is 2.5.</span></span>
+22. <span data-ttu-id="e71d8-130">Klicken Sie auf "Schließen", um die Einrichtung abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="e71d8-130">Click Close to complete the setup.</span></span>
 
 

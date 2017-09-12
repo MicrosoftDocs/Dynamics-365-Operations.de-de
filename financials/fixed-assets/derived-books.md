@@ -16,37 +16,37 @@ ms.custom: 3401
 ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3cf2f1143837a35a41b12ef566743aefd90fc462
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 5afdabf93128bc52cb223d0c35c6bcdae5f5ca2a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="derived-books"></a>Abgeleitete Bücher
+# <a name="derived-books"></a><span data-ttu-id="72061-103">Abgeleitete Bücher</span><span class="sxs-lookup"><span data-stu-id="72061-103">Derived books</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält eine Übersicht der Funktion für abgeleitete Bücher.
+<span data-ttu-id="72061-104">Dieser Artikel enthält eine Übersicht der Funktion für abgeleitete Bücher.</span><span class="sxs-lookup"><span data-stu-id="72061-104">This article provides an overview of derived book functionality.</span></span>
 
-Abgeleitete Wertmodelle sollen Wertmodellbuchungen für Anlagen vereinfachen, die in regelmäßigen Zeitabständen erfolgen.  Sie wählen ein Buch als primäres Buch aus. Dies ist üblicherweise das Buch für die buchhalterische Abschreibung. Anschließend werden diesem Buch andere Bücher zugeordnet, die für Buchungen in den gleichen Intervallen eingerichtet werden wie das primäre Buch. Bücher für steuerliche Abschreibung werden oft als abgeleitete Bücher eingerichtet. 
+<span data-ttu-id="72061-105">Abgeleitete Wertmodelle sollen Wertmodellbuchungen für Anlagen vereinfachen, die in regelmäßigen Zeitabständen erfolgen.</span><span class="sxs-lookup"><span data-stu-id="72061-105">The purpose of derived books is to simplify the posting of fixed asset book transactions that are planned for regular intervals.</span></span>  <span data-ttu-id="72061-106">Sie wählen ein Buch als primäres Buch aus.</span><span class="sxs-lookup"><span data-stu-id="72061-106">You choose one book as the primary book.</span></span> <span data-ttu-id="72061-107">Dies ist üblicherweise das Buch für die buchhalterische Abschreibung.</span><span class="sxs-lookup"><span data-stu-id="72061-107">This usually is the book that is used for accounting depreciation.</span></span> <span data-ttu-id="72061-108">Anschließend werden diesem Buch andere Bücher zugeordnet, die für Buchungen in den gleichen Intervallen eingerichtet werden wie das primäre Buch.</span><span class="sxs-lookup"><span data-stu-id="72061-108">You then attach to it other books that are set up to post transactions in the same intervals as the primary book.</span></span> <span data-ttu-id="72061-109">Bücher für steuerliche Abschreibung werden oft als abgeleitete Bücher eingerichtet.</span><span class="sxs-lookup"><span data-stu-id="72061-109">Tax depreciation books are often set up as derived books.</span></span> 
 
-Die häufigsten Posten, die zum Buchen in abgeleitete Abschreibungsbücher eingerichtet werden, sind Anschaffungen, Anschaffungsänderungen und Veräußerungen. 
+<span data-ttu-id="72061-110">Die häufigsten Posten, die zum Buchen in abgeleitete Abschreibungsbücher eingerichtet werden, sind Anschaffungen, Anschaffungsänderungen und Veräußerungen.</span><span class="sxs-lookup"><span data-stu-id="72061-110">The most common transactions to set up to post to derived books are acquisitions, acquisition adjustments, and disposals.</span></span> 
 
-## <a name="example"></a>Beispiel
+## <a name="example"></a><span data-ttu-id="72061-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="72061-111">Example</span></span>
 
-Buch B und Buch C werden als abgeleitete Bücher für Buch für A die Buchungsart "Anschaffung" eingerichtet. Im Buch A wird eine Anschaffungsbuchung für die Anlage 123 mit einem Wert von 1.500,00 Einheiten eingegeben. 
+<span data-ttu-id="72061-112">Buch B und Buch C werden als abgeleitete Bücher für Buch für A die Buchungsart "Anschaffung" eingerichtet.</span><span class="sxs-lookup"><span data-stu-id="72061-112">Book B and book C are set up as derived books for book A for the Acquisition transaction type.</span></span> <span data-ttu-id="72061-113">Im Buch A wird eine Anschaffungsbuchung für die Anlage 123 mit einem Wert von 1.500,00 Einheiten eingegeben.</span><span class="sxs-lookup"><span data-stu-id="72061-113">In book A, you enter an acquisition transaction for asset 123 for 1,500.00.</span></span> 
 
-Beim Buchen wird eine Anschaffungsbuchung in der Anlage 123 für das Buch B und in der Anlage 123 für das Buch C mit einem Wert von 1.500,00 Einheiten generiert und gebucht. Wenn Sie die Buchungen des primären Buchs in der Anlagenerfassung zur Ausführung vorbereiten, können Sie auch die Buchungen der abgeleiteten Abschreibungsbücher anzeigen und ändern. Wenn Sie die Buchungen des primären Buchs in einer anderen Erfassung vorbereiten, werden die Buchungen des abgeleiteten Werts nicht angezeigt. Sie werden aber beim Buchen der Posten des primären Buchs auf die entsprechenden Konten und Buchungsebenen gebucht.
+<span data-ttu-id="72061-114">Beim Buchen wird eine Anschaffungsbuchung in der Anlage 123 für das Buch B und in der Anlage 123 für das Buch C mit einem Wert von 1.500,00 Einheiten generiert und gebucht.</span><span class="sxs-lookup"><span data-stu-id="72061-114">When the transaction is posted, an acquisition transaction is generated and posted in asset 123 for book B and in asset 123 for book C for 1,500.00.</span></span> <span data-ttu-id="72061-115">Wenn Sie die Buchungen des primären Buchs in der Anlagenerfassung zur Ausführung vorbereiten, können Sie auch die Buchungen der abgeleiteten Abschreibungsbücher anzeigen und ändern.</span><span class="sxs-lookup"><span data-stu-id="72061-115">When you prepare the transactions of the primary book for posting in the fixed asset journal, you can also view and modify the transactions of the derived books.</span></span> <span data-ttu-id="72061-116">Wenn Sie die Buchungen des primären Buchs in einer anderen Erfassung vorbereiten, werden die Buchungen des abgeleiteten Werts nicht angezeigt.</span><span class="sxs-lookup"><span data-stu-id="72061-116">If you prepare the primary book transactions in another journal, the transactions of the derived value are not displayed.</span></span> <span data-ttu-id="72061-117">Sie werden aber beim Buchen der Posten des primären Buchs auf die entsprechenden Konten und Buchungsebenen gebucht.</span><span class="sxs-lookup"><span data-stu-id="72061-117">However, they are posted to the appropriate accounts and posting layers when you post the primary book transactions.</span></span>
 
 > [!NOTE]                                                                                                                               
-> Bücher, die zum Buchen von Posten in Intervallen eingerichtet werden, bei denen es sich nicht um die Intervalle des primären Buches handelt, müssen der Anlage als separate Bücher (und nicht als abgeleitete Bücher) zugeordnet werden.  
+> <span data-ttu-id="72061-118">Bücher, die zum Buchen von Posten in Intervallen eingerichtet werden, bei denen es sich nicht um die Intervalle des primären Buches handelt, müssen der Anlage als separate Bücher (und nicht als abgeleitete Bücher) zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="72061-118">Books that are set up to post transactions at intervals other than the primary book intervals must be attached to the fixed asset as separate books and not as derived books.</span></span>  
 
-Weitere Informationen finden Sie unter [Buchen mit abgeleiteten Büchern](post-derived-value-models.md).
+<span data-ttu-id="72061-119">Weitere Informationen finden Sie unter [Buchen mit abgeleiteten Büchern](post-derived-value-models.md).</span><span class="sxs-lookup"><span data-stu-id="72061-119">For more information, see [Posting with derived books](post-derived-value-models.md).</span></span>
 
 
 

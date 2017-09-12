@@ -16,32 +16,32 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 6b99e1b5fc86bd1972766c8154141e9dd26bb7b0
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3ff31db3dbb6da9570bb85bbcaa3b444852d91d7
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="map-a-cost-element-dimension"></a>Eine Kostenelementdimension zuordnen
+# <a name="map-a-cost-element-dimension"></a><span data-ttu-id="6df9b-103">Eine Kostenelementdimension zuordnen</span><span class="sxs-lookup"><span data-stu-id="6df9b-103">Map a cost element dimension</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ein Kostencontroller kann diesen Schritt verwenden, um eine Kostenfaktordimension zu einer Kostenfaktordimension der MXMF-juristischen Person zuzuordnen. Für diese Aufzeichnung wird das Demo-Datenunternehmen USP2 verwendet.
+<span data-ttu-id="6df9b-104">Ein Kostencontroller kann diesen Schritt verwenden, um eine Kostenfaktordimension zu einer Kostenfaktordimension der MXMF-juristischen Person zuzuordnen.</span><span class="sxs-lookup"><span data-stu-id="6df9b-104">A cost controller can use this procedure to map a cost element dimension to a cost element dimension in the MXMF legal entity.</span></span> <span data-ttu-id="6df9b-105">Für diese Aufzeichnung wird das Demo-Datenunternehmen USP2 verwendet.</span><span class="sxs-lookup"><span data-stu-id="6df9b-105">This recording uses the USP2 demo data company.</span></span>
 
-1. Wechseln Sie zu den Kostenrechnung > Dimensionen > Kostenelementdimensionen.
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie für dieses Beispiel die Option "Kostenelemente" aus.  
-3. Dimensionszuordnungen anklicken.
-4. Zuordnungen aus dieser Dimension konfigurieren anklicken.
-5. Klicken Sie auf "Neu".
-6. Geben Sie im Feld 'Dimensionsname' einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wählen Sie für dieses Beispiel das MXMF-Kostenelemente aus.  
-7. Klicken Sie auf "Neu".
-8. Markieren Sie in der Liste die ausgewählte Zeile.
-9. Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.
-    * Wählen Sie für dieses Beispiel die Option Dimensionsmitglied 606400 Telefon- Faxausgaben.  
-10. Geben Sie im Feld "Dimensionsmitglied" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wählen Sie für dieses Beispiel die Option Dimensionsmitglied 6001004 Telefono aus.  
-11. Klicken Sie auf "Speichern".
+1. <span data-ttu-id="6df9b-106">Wechseln Sie zu den Kostenrechnung > Dimensionen > Kostenelementdimensionen.</span><span class="sxs-lookup"><span data-stu-id="6df9b-106">Go to Cost accounting > Dimensions > Cost element dimensions.</span></span>
+2. <span data-ttu-id="6df9b-107">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="6df9b-107">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="6df9b-108">Wählen Sie für dieses Beispiel die Option "Kostenelemente" aus.</span><span class="sxs-lookup"><span data-stu-id="6df9b-108">For this example, select Cost elements.</span></span>  
+3. <span data-ttu-id="6df9b-109">Dimensionszuordnungen anklicken.</span><span class="sxs-lookup"><span data-stu-id="6df9b-109">Click Dimension mappings.</span></span>
+4. <span data-ttu-id="6df9b-110">Zuordnungen aus dieser Dimension konfigurieren anklicken.</span><span class="sxs-lookup"><span data-stu-id="6df9b-110">Click Configure mappings from this dimension.</span></span>
+5. <span data-ttu-id="6df9b-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="6df9b-111">Click New.</span></span>
+6. <span data-ttu-id="6df9b-112">Geben Sie im Feld 'Dimensionsname' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6df9b-112">In the To dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="6df9b-113">Wählen Sie für dieses Beispiel das MXMF-Kostenelemente aus.</span><span class="sxs-lookup"><span data-stu-id="6df9b-113">For this example, select MXMF Cost elements.</span></span>  
+7. <span data-ttu-id="6df9b-114">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="6df9b-114">Click New.</span></span>
+8. <span data-ttu-id="6df9b-115">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="6df9b-115">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="6df9b-116">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6df9b-116">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="6df9b-117">Wählen Sie für dieses Beispiel die Option Dimensionsmitglied 606400 Telefon- Faxausgaben.</span><span class="sxs-lookup"><span data-stu-id="6df9b-117">For this example, select dimension member 606400 Telephone & Fax Expense.</span></span>  
+10. <span data-ttu-id="6df9b-118">Geben Sie im Feld "Dimensionsmitglied" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6df9b-118">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="6df9b-119">Wählen Sie für dieses Beispiel die Option Dimensionsmitglied 6001004 Telefono aus.</span><span class="sxs-lookup"><span data-stu-id="6df9b-119">For this example, select dimension member 6001004 Telefono.</span></span>  
+11. <span data-ttu-id="6df9b-120">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="6df9b-120">Click Save.</span></span>
 
 

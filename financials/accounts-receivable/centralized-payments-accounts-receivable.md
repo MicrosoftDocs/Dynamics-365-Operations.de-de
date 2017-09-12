@@ -19,285 +19,285 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c5a09eedd1dd12b7f5343953b16f9f0b210213d7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6327d9cab1651d22cd411f718f6e3a2f8733e13e
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="centralized-payments-for-accounts-receivable"></a>Zentralisierte Zahlungen für Debitorenkonten
+# <a name="centralized-payments-for-accounts-receivable"></a><span data-ttu-id="3bbd1-105">Zentralisierte Zahlungen für Debitorenkonten</span><span class="sxs-lookup"><span data-stu-id="3bbd1-105">Centralized payments for Accounts receivable</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher muss die gleiche Buchung nicht in mehrere juristische Personen eingegeben werden. Dieser Artikel enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird.
+<span data-ttu-id="3bbd1-106">Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-106">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.</span></span> <span data-ttu-id="3bbd1-107">Daher muss die gleiche Buchung nicht in mehrere juristische Personen eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-107">Therefore, the same transaction doesn't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="3bbd1-108">Dieser Artikel enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-108">This article provides examples that show how posting for centralized payments is handled in various scenarios.</span></span>
 
-Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher muss die gleiche Buchung nicht in mehrere juristische Personen eingegeben werden. Darüber hinaus spart die Organisation Zeit, da die Prozesse für Zahlungsvorschläge, Bedarfsdeckung und die offene Bearbeitung und geschlossenen Buchungen für zentralisierte Zahlungen rationalisiert werden. 
+<span data-ttu-id="3bbd1-109">Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-109">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments.</span></span> <span data-ttu-id="3bbd1-110">Daher muss die gleiche Buchung nicht in mehrere juristische Personen eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-110">Therefore, the same transaction doesn't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="3bbd1-111">Darüber hinaus spart die Organisation Zeit, da die Prozesse für Zahlungsvorschläge, Bedarfsdeckung und die offene Bearbeitung und geschlossenen Buchungen für zentralisierte Zahlungen rationalisiert werden.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-111">Additionally, the organization saves time, because the processes for payment proposals, settlements, and editing open and closed transactions for centralized payments are streamlined.</span></span> 
 
-In einer Organisation mit zentralisierten Zahlungen gibt es viele juristische Personen für betriebliche Vorgänge. Dabei werden die Informationen zu ausstehenden Rechnungen von den einzelnen juristischen Personen verwaltet. Die Zahlungen für alle tätigen juristischen Personen werden von einer einzigen juristischen Person (der so genannten juristischen Person für die Zahlung) entgegengenommen. Im Zuge des Ausgleichsprozesses werden die erforderlichen Buchungen vom Typ "Fällig bis" und "Fällig von" generiert. Sie können angeben, welche juristische Person in der Organisation die Buchungen für realisierte Gewinne oder Verluste erhalten soll und wie Skontobuchungen für zentralisierte Zahlungen zu behandeln sind. 
+<span data-ttu-id="3bbd1-112">In einer Organisation mit zentralisierten Zahlungen gibt es viele juristische Personen für betriebliche Vorgänge. Dabei werden die Informationen zu ausstehenden Rechnungen von den einzelnen juristischen Personen verwaltet.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-112">In a centralized payment organization, there are many legal entities for operations, and each operating legal entity manages its own invoices receivable information.</span></span> <span data-ttu-id="3bbd1-113">Die Zahlungen für alle tätigen juristischen Personen werden von einer einzigen juristischen Person (der so genannten juristischen Person für die Zahlung) entgegengenommen.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-113">Payments for all the operating legal entities are received by a single legal entity, which is known as the legal entity of the payment.</span></span> <span data-ttu-id="3bbd1-114">Im Zuge des Ausgleichsprozesses werden die erforderlichen Buchungen vom Typ "Fällig bis" und "Fällig von" generiert.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-114">During the settlement process, the applicable due-to and due-from transactions are generated.</span></span> <span data-ttu-id="3bbd1-115">Sie können angeben, welche juristische Person in der Organisation die Buchungen für realisierte Gewinne oder Verluste erhalten soll und wie Skontobuchungen für zentralisierte Zahlungen zu behandeln sind.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-115">You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a centralized payment are handled.</span></span> 
 
-In den folgenden Beispielen wird die Behandlung von Buchungen in unterschiedlichen Szenarios erläutert. Allen Beispielen liegt die folgende Konfiguration zugrunde:
+<span data-ttu-id="3bbd1-116">In den folgenden Beispielen wird die Behandlung von Buchungen in unterschiedlichen Szenarios erläutert.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-116">The following examples illustrate how posting is handled in various scenarios.</span></span> <span data-ttu-id="3bbd1-117">Allen Beispielen liegt die folgende Konfiguration zugrunde:</span><span class="sxs-lookup"><span data-stu-id="3bbd1-117">The following configuration is assumed for all these examples:</span></span>
 
--   Fabrikam, Fabrikam Ost und Fabrikam West stellen die juristischen Personen dar. Debitorenzahlungen werden in Fabrikam eingegeben.
--   Das **Skonto buchen** Feld auf der **Verrechnung** Seite ist auf **Juristische Person der Rechnung** festgelegt.
--   Das **Gewinn bzw. Verlust bei Währungsumtausch buchen** Feld auf der **Verrechnung** Seite ist auf **Juristische Person der Zahlung** festgelegt.
--   Debitor Northwind Traders ist als Debitor in jeder juristischen Person festgelegt. Die Debitoren aus verschiedenen juristischen Personen werden als derselbe Debitor erfasst, da sie dieselbe Kennung für das globale Adressbuch gemeinsam haben.
+-   <span data-ttu-id="3bbd1-118">Fabrikam, Fabrikam Ost und Fabrikam West stellen die juristischen Personen dar.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-118">The legal entities are Fabrikam, Fabrikam East, and Fabrikam West.</span></span> <span data-ttu-id="3bbd1-119">Debitorenzahlungen werden in Fabrikam eingegeben.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-119">Customer payments are entered into Fabrikam.</span></span>
+-   <span data-ttu-id="3bbd1-120">Das **Skonto buchen** Feld auf der **Verrechnung** Seite ist auf **Juristische Person der Rechnung** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-120">The **Post cash discount** field on the **Intercompany accounting** page is set to **Legal entity of the invoice**.</span></span>
+-   <span data-ttu-id="3bbd1-121">Das **Gewinn bzw. Verlust bei Währungsumtausch buchen** Feld auf der **Verrechnung** Seite ist auf **Juristische Person der Zahlung** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-121">The **Post currency exchange gain or loss** field on the **Intercompany accounting** page is set to **Legal entity of the payment**.</span></span>
+-   <span data-ttu-id="3bbd1-122">Debitor Northwind Traders ist als Debitor in jeder juristischen Person festgelegt.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-122">Customer Northwind Traders is set up as a customer in each legal entity.</span></span> <span data-ttu-id="3bbd1-123">Die Debitoren aus verschiedenen juristischen Personen werden als derselbe Debitor erfasst, da sie dieselbe Kennung für das globale Adressbuch gemeinsam haben.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-123">The customers from the various legal entities are identified as the same customer because they share the same global address book ID.</span></span>
 
-| Adressbuchkennung | Debitorenkonto | Name              | Juristische Person  |
+| <span data-ttu-id="3bbd1-124">Adressbuchkennung</span><span class="sxs-lookup"><span data-stu-id="3bbd1-124">Address book ID</span></span> | <span data-ttu-id="3bbd1-125">Debitorenkonto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-125">Customer account</span></span> | <span data-ttu-id="3bbd1-126">Name</span><span class="sxs-lookup"><span data-stu-id="3bbd1-126">Name</span></span>              | <span data-ttu-id="3bbd1-127">Juristische Person</span><span class="sxs-lookup"><span data-stu-id="3bbd1-127">Legal entity</span></span>  |
 |-----------------|------------------|-------------------|---------------|
-| 4050            | 4000             | Northwind Traders | Fabrikam      |
-| 4050            | 4000             | Northwind Traders | Fabrikam Ost |
-| 4050            | 10.000            | Northwind Traders | Fabrikam West |
+| <span data-ttu-id="3bbd1-128">4050</span><span class="sxs-lookup"><span data-stu-id="3bbd1-128">4050</span></span>            | <span data-ttu-id="3bbd1-129">4000</span><span class="sxs-lookup"><span data-stu-id="3bbd1-129">4000</span></span>             | <span data-ttu-id="3bbd1-130">Northwind Traders</span><span class="sxs-lookup"><span data-stu-id="3bbd1-130">Northwind Traders</span></span> | <span data-ttu-id="3bbd1-131">Fabrikam</span><span class="sxs-lookup"><span data-stu-id="3bbd1-131">Fabrikam</span></span>      |
+| <span data-ttu-id="3bbd1-132">4050</span><span class="sxs-lookup"><span data-stu-id="3bbd1-132">4050</span></span>            | <span data-ttu-id="3bbd1-133">4000</span><span class="sxs-lookup"><span data-stu-id="3bbd1-133">4000</span></span>             | <span data-ttu-id="3bbd1-134">Northwind Traders</span><span class="sxs-lookup"><span data-stu-id="3bbd1-134">Northwind Traders</span></span> | <span data-ttu-id="3bbd1-135">Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="3bbd1-135">Fabrikam East</span></span> |
+| <span data-ttu-id="3bbd1-136">4050</span><span class="sxs-lookup"><span data-stu-id="3bbd1-136">4050</span></span>            | <span data-ttu-id="3bbd1-137">10.000</span><span class="sxs-lookup"><span data-stu-id="3bbd1-137">10000</span></span>            | <span data-ttu-id="3bbd1-138">Northwind Traders</span><span class="sxs-lookup"><span data-stu-id="3bbd1-138">Northwind Traders</span></span> | <span data-ttu-id="3bbd1-139">Fabrikam West</span><span class="sxs-lookup"><span data-stu-id="3bbd1-139">Fabrikam West</span></span> |
 
-## <a name="example-1-customer-payment-of-invoice-from-another-legal-entity"></a>Beispiel 1: Debitorenzahlung der Rechnung einer anderen juristischen Person
-Bei Fabrikam geht eine Zahlung in Höhe von EUR 600,00 für das Fabrikam-Debitorenkonto "4000" (Northwind Traders) ein. Die Zahlung wird mit einer offenen Rechnung für das Debitorenkonto "4000" bei Fabrikam Ost ausgeglichen.
+## <a name="example-1-customer-payment-of-invoice-from-another-legal-entity"></a><span data-ttu-id="3bbd1-140">Beispiel 1: Debitorenzahlung der Rechnung einer anderen juristischen Person</span><span class="sxs-lookup"><span data-stu-id="3bbd1-140">Example 1: Customer payment of invoice from another legal entity</span></span>
+<span data-ttu-id="3bbd1-141">Bei Fabrikam geht eine Zahlung in Höhe von EUR 600,00 für das Fabrikam-Debitorenkonto "4000" (Northwind Traders) ein.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-141">Fabrikam receives a payment of 600.00 for Fabrikam customer account 4000, Northwind Traders.</span></span> <span data-ttu-id="3bbd1-142">Die Zahlung wird mit einer offenen Rechnung für das Debitorenkonto "4000" bei Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-142">The payment is settled with an open invoice for customer account 4000 in Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-customer-4000"></a>Buchung der Rechung in Fabrikam Ost für Debitor "4000"
+### <a name="invoice-is-posted-in-fabrikam-east-for-customer-4000"></a><span data-ttu-id="3bbd1-143">Buchung der Rechung in Fabrikam Ost für Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-143">Invoice is posted in Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-144">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-144">Account</span></span>                             | <span data-ttu-id="3bbd1-145">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-145">Debit amount</span></span> | <span data-ttu-id="3bbd1-146">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-146">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Debitoren (Fabrikam Ost) | 600,00       |               |
-| Verkauf (Fabrikam Ost)               |              | 600,00        |
+| <span data-ttu-id="3bbd1-147">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-147">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="3bbd1-148">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-148">600.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-149">Verkauf (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-149">Sales (Fabrikam East)</span></span>               |              | <span data-ttu-id="3bbd1-150">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-150">600.00</span></span>        |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a>Eingang und Buchung der Zahlung in Fabrikam für Debitor "4000"
+### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a><span data-ttu-id="3bbd1-151">Eingang und Buchung der Zahlung in Fabrikam für Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-151">Payment is received and posted in Fabrikam for customer 4000</span></span>
 
-| Konto                        | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-152">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-152">Account</span></span>                        | <span data-ttu-id="3bbd1-153">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-153">Debit amount</span></span> | <span data-ttu-id="3bbd1-154">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-154">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Bar (Fabrikam)                | 600,00       |               |
-| Debitoren (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="3bbd1-155">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-155">Cash (Fabrikam)</span></span>                | <span data-ttu-id="3bbd1-156">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-156">600.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-157">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-157">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="3bbd1-158">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-158">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="3bbd1-159">Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="3bbd1-159">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="3bbd1-160">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-160">**Fabrikam posting**</span></span>
 
-| Konto                         | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-161">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-161">Account</span></span>                         | <span data-ttu-id="3bbd1-162">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-162">Debit amount</span></span> | <span data-ttu-id="3bbd1-163">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-163">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Debitoren (Fabrikam)  | 600,00       |               |
-| Fällig an Fabrikam Ost (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="3bbd1-164">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-164">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="3bbd1-165">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-165">600.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-166">Fällig an Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-166">Due to Fabrikam East (Fabrikam)</span></span> |              | <span data-ttu-id="3bbd1-167">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-167">600.00</span></span>        |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="3bbd1-168">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-168">**Fabrikam East posting**</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-169">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-169">Account</span></span>                             | <span data-ttu-id="3bbd1-170">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-170">Debit amount</span></span> | <span data-ttu-id="3bbd1-171">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-171">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Fällig von Fabrikam (Fabrikam Ost)   | 600,00       |               |
-| Debitoren (Fabrikam Ost) |              | 600,00        |
+| <span data-ttu-id="3bbd1-172">Fällig von Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-172">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="3bbd1-173">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-173">600.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-174">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-174">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="3bbd1-175">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-175">600.00</span></span>        |
 
-## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Beispiel 2: Debitorenzahlung der Rechnung einer anderen juristischen Person mit Skonto
-Bei Fabrikam geht eine Zahlung in Höhe von EUR 580,00 für den Fabrikam-Debitor "4000" (Northwind Traders) ein. Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "4000" vor. Für die Rechnung wird ein Skonto in Höhe von EUR 20,00 gewährt. Die Zahlung wird mit den offenen Rechnungen für Fabrikam Ost ausgeglichen. Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost) gebucht.
+## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a><span data-ttu-id="3bbd1-176">Beispiel 2: Debitorenzahlung der Rechnung einer anderen juristischen Person mit Skonto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-176">Example 2: Customer payment of invoice from another legal entity with cash discount</span></span>
+<span data-ttu-id="3bbd1-177">Bei Fabrikam geht eine Zahlung in Höhe von EUR 580,00 für den Fabrikam-Debitor "4000" (Northwind Traders) ein.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-177">Fabrikam receives a payment of 580.00 for Fabrikam customer 4000, Northwind Traders.</span></span> <span data-ttu-id="3bbd1-178">Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "4000" vor.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-178">Fabrikam East has an open invoice for customer 4000.</span></span> <span data-ttu-id="3bbd1-179">Für die Rechnung wird ein Skonto in Höhe von EUR 20,00 gewährt.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-179">The invoice has a 20.00 cash discount available.</span></span> <span data-ttu-id="3bbd1-180">Die Zahlung wird mit den offenen Rechnungen für Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-180">The payment is settled with the open Fabrikam East invoices.</span></span> <span data-ttu-id="3bbd1-181">Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost) gebucht.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-181">The cash discount is posted to the legal entity of the invoice, Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Buchung der Rechnung in Fabrikam Ost für Debitor "4000" von Fabrikam Ost
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a><span data-ttu-id="3bbd1-182">Buchung der Rechnung in Fabrikam Ost für Debitor "4000" von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="3bbd1-182">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-183">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-183">Account</span></span>                             | <span data-ttu-id="3bbd1-184">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-184">Debit amount</span></span> | <span data-ttu-id="3bbd1-185">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-185">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Debitoren (Fabrikam Ost) | 600,00       |               |
-| Verkauf (Fabrikam Ost)               |              | 600,00        |
+| <span data-ttu-id="3bbd1-186">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-186">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="3bbd1-187">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-187">600.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-188">Verkauf (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-188">Sales (Fabrikam East)</span></span>               |              | <span data-ttu-id="3bbd1-189">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-189">600.00</span></span>        |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Eingang und Buchung der Zahlung in Fabrikam für Fabrikam-Debitor "4000"
+### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a><span data-ttu-id="3bbd1-190">Eingang und Buchung der Zahlung in Fabrikam für Fabrikam-Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-190">Payment is received and posted in Fabrikam for Fabrikam customer 4000</span></span>
 
-| Konto                        | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-191">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-191">Account</span></span>                        | <span data-ttu-id="3bbd1-192">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-192">Debit amount</span></span> | <span data-ttu-id="3bbd1-193">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-193">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Bar (Fabrikam)                | 600,00       |               |
-| Debitoren (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="3bbd1-194">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-194">Cash (Fabrikam)</span></span>                | <span data-ttu-id="3bbd1-195">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-195">600.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-196">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-196">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="3bbd1-197">600,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-197">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="3bbd1-198">Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="3bbd1-198">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="3bbd1-199">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-199">**Fabrikam posting**</span></span>
 
-| Konto                         | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-200">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-200">Account</span></span>                         | <span data-ttu-id="3bbd1-201">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-201">Debit amount</span></span> | <span data-ttu-id="3bbd1-202">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-202">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Debitoren (Fabrikam)  | 580,00       |               |
-| Fällig an Fabrikam Ost (Fabrikam) |              | 580,00        |
+| <span data-ttu-id="3bbd1-203">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-203">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="3bbd1-204">580,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-204">580.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-205">Fällig an Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-205">Due to Fabrikam East (Fabrikam)</span></span> |              | <span data-ttu-id="3bbd1-206">580,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-206">580.00</span></span>        |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="3bbd1-207">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-207">**Fabrikam East posting**</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-208">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-208">Account</span></span>                             | <span data-ttu-id="3bbd1-209">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-209">Debit amount</span></span> | <span data-ttu-id="3bbd1-210">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-210">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Fällig von Fabrikam (Fabrikam Ost)   | 580,00       |               |
-| Debitoren (Fabrikam Ost) |              | 580,00        |
-| Skonto (Fabrikam Ost)       | 20,00        |               |
-| Debitoren (Fabrikam Ost) |              | 20,00         |
+| <span data-ttu-id="3bbd1-211">Fällig von Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-211">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="3bbd1-212">580,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-212">580.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-213">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-213">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="3bbd1-214">580,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-214">580.00</span></span>        |
+| <span data-ttu-id="3bbd1-215">Skonto (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-215">Cash discount (Fabrikam East)</span></span>       | <span data-ttu-id="3bbd1-216">20,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-216">20.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-217">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-217">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="3bbd1-218">20,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-218">20.00</span></span>         |
 
-## <a name="example-3-customer-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-gain"></a>Beispiel 3: Debitorenzahlung der Rechnung eines anderen Unternehmens mit realisiertem Wechselkursgewinn
-Bei Fabrikam geht eine Zahlung in Höhe von 600,00 Euro für den Fabrikam-Debitor "4000" (Northwind Traders) ein. Die Zahlung wird mit einer offenen Rechnung für den Debitor "4000" bei Fabrikam Ost ausgeglichen. Im Zuge des Ausgleichsprozesses wird eine Wechselkursgewinnbuchung generiert.
+## <a name="example-3-customer-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-gain"></a><span data-ttu-id="3bbd1-219">Beispiel 3: Debitorenzahlung der Rechnung eines anderen Unternehmens mit realisiertem Wechselkursgewinn</span><span class="sxs-lookup"><span data-stu-id="3bbd1-219">Example 3: Customer payment of invoice from another legal entity with realized exchange rate gain</span></span>
+<span data-ttu-id="3bbd1-220">Bei Fabrikam geht eine Zahlung in Höhe von 600,00 Euro für den Fabrikam-Debitor "4000" (Northwind Traders) ein.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-220">Fabrikam receives a payment of 600.00 euros (EUR) for Fabrikam customer 4000, Northwind Traders.</span></span> <span data-ttu-id="3bbd1-221">Die Zahlung wird mit einer offenen Rechnung für den Debitor "4000" bei Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-221">The payment is settled with an open invoice for customer 4000 in Fabrikam East.</span></span> <span data-ttu-id="3bbd1-222">Im Zuge des Ausgleichsprozesses wird eine Wechselkursgewinnbuchung generiert.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-222">A currency exchange gain transaction is generated during the settlement process.</span></span>
 
--   Wechselkurs von EUR in US-Dollar (USD) zum Rechnungsdatum: 1,2062
--   Wechselkurs für EUR in USD zum Zahlungsdatum: 1,2277
+-   <span data-ttu-id="3bbd1-223">Wechselkurs von EUR in US-Dollar (USD) zum Rechnungsdatum: 1,2062</span><span class="sxs-lookup"><span data-stu-id="3bbd1-223">Exchange rate for EUR to U.S. dollars (USD) as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="3bbd1-224">Wechselkurs für EUR in USD zum Zahlungsdatum: 1,2277</span><span class="sxs-lookup"><span data-stu-id="3bbd1-224">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Buchung der Rechung in Fabrikam Ost für Debitor "4000" von Fabrikam Ost
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a><span data-ttu-id="3bbd1-225">Buchung der Rechung in Fabrikam Ost für Debitor "4000" von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="3bbd1-225">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</span></span>
 
-| Konto                             | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="3bbd1-226">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-226">Account</span></span>                             | <span data-ttu-id="3bbd1-227">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-227">Debit amount</span></span>            | <span data-ttu-id="3bbd1-228">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-228">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Debitoren (Fabrikam Ost) | EUR 600,00/USD 723,72 |                         |
-| Verkauf (Fabrikam Ost)               |                         | EUR 600,00/USD 723,72 |
+| <span data-ttu-id="3bbd1-229">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-229">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="3bbd1-230">EUR 600,00/USD 723,72</span><span class="sxs-lookup"><span data-stu-id="3bbd1-230">600.00 EUR / 723.72 USD</span></span> |                         |
+| <span data-ttu-id="3bbd1-231">Verkauf (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-231">Sales (Fabrikam East)</span></span>               |                         | <span data-ttu-id="3bbd1-232">EUR 600,00/USD 723,72</span><span class="sxs-lookup"><span data-stu-id="3bbd1-232">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Eingang und Buchung der Zahlung in Fabrikam für Fabrikam-Debitor "4000"
+### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a><span data-ttu-id="3bbd1-233">Eingang und Buchung der Zahlung in Fabrikam für Fabrikam-Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-233">Payment is received and posted in Fabrikam for Fabrikam customer 4000</span></span>
 
-| Konto                        | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="3bbd1-234">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-234">Account</span></span>                        | <span data-ttu-id="3bbd1-235">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-235">Debit amount</span></span>            | <span data-ttu-id="3bbd1-236">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-236">Credit amount</span></span>           |
 |--------------------------------|-------------------------|-------------------------|
-| Bar (Fabrikam)                | EUR 600,00/USD 736,62 |                         |
-| Debitoren (Fabrikam) |                         | EUR 600,00/USD 736,62 |
+| <span data-ttu-id="3bbd1-237">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-237">Cash (Fabrikam)</span></span>                | <span data-ttu-id="3bbd1-238">EUR 600,00/USD 736,62</span><span class="sxs-lookup"><span data-stu-id="3bbd1-238">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="3bbd1-239">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-239">Accounts receivable (Fabrikam)</span></span> |                         | <span data-ttu-id="3bbd1-240">EUR 600,00/USD 736,62</span><span class="sxs-lookup"><span data-stu-id="3bbd1-240">600.00 EUR / 736.62 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="3bbd1-241">Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="3bbd1-241">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="3bbd1-242">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-242">**Fabrikam posting**</span></span>
 
-| Konto                         | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="3bbd1-243">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-243">Account</span></span>                         | <span data-ttu-id="3bbd1-244">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-244">Debit amount</span></span>            | <span data-ttu-id="3bbd1-245">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-245">Credit amount</span></span>           |
 |---------------------------------|-------------------------|-------------------------|
-| Debitoren (Fabrikam)  | EUR 600,00/USD 736,62 |                         |
-| Fällig an Fabrikam Ost (Fabrikam) |                         | EUR 600,00/USD 736,62 |
-| Fällig an Fabrikam Ost (Fabrikam) | EUR 0,00/USD 12,90    |                         |
-| Realisierter Gewinn (Fabrikam)        |                         | EUR 0,00/USD 12,90    |
+| <span data-ttu-id="3bbd1-246">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-246">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="3bbd1-247">EUR 600,00/USD 736,62</span><span class="sxs-lookup"><span data-stu-id="3bbd1-247">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="3bbd1-248">Fällig an Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-248">Due to Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="3bbd1-249">EUR 600,00/USD 736,62</span><span class="sxs-lookup"><span data-stu-id="3bbd1-249">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="3bbd1-250">Fällig an Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-250">Due to Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="3bbd1-251">EUR 0,00/USD 12,90</span><span class="sxs-lookup"><span data-stu-id="3bbd1-251">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="3bbd1-252">Realisierter Gewinn (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-252">Realized gain (Fabrikam)</span></span>        |                         | <span data-ttu-id="3bbd1-253">EUR 0,00/USD 12,90</span><span class="sxs-lookup"><span data-stu-id="3bbd1-253">0.00 EUR / 12.90 USD</span></span>    |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="3bbd1-254">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-254">**Fabrikam East posting**</span></span>
 
-| Konto                             | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="3bbd1-255">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-255">Account</span></span>                             | <span data-ttu-id="3bbd1-256">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-256">Debit amount</span></span>            | <span data-ttu-id="3bbd1-257">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-257">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Fällig von Fabrikam (Fabrikam Ost)   | EUR 600,00/USD 736,62 |                         |
-| Debitoren (Fabrikam Ost) |                         | EUR 600,00/USD 736,62 |
-| Debitoren (Fabrikam Ost) | EUR 0,00/USD 12,90    |                         |
-| Fällig von Fabrikam (Fabrikam Ost)   |                         | EUR 0,00/USD 12,90    |
+| <span data-ttu-id="3bbd1-258">Fällig von Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-258">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="3bbd1-259">EUR 600,00/USD 736,62</span><span class="sxs-lookup"><span data-stu-id="3bbd1-259">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="3bbd1-260">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-260">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="3bbd1-261">EUR 600,00/USD 736,62</span><span class="sxs-lookup"><span data-stu-id="3bbd1-261">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="3bbd1-262">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-262">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="3bbd1-263">EUR 0,00/USD 12,90</span><span class="sxs-lookup"><span data-stu-id="3bbd1-263">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="3bbd1-264">Fällig von Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-264">Due from Fabrikam (Fabrikam East)</span></span>   |                         | <span data-ttu-id="3bbd1-265">EUR 0,00/USD 12,90</span><span class="sxs-lookup"><span data-stu-id="3bbd1-265">0.00 EUR / 12.90 USD</span></span>    |
 
-## <a name="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain"></a>Beispiel 4: Debitorenzahlung der Rechnung einer anderen juristischen Person mit Skonto und realisiertem Wechselkursverlust
-Von Fabrikam wird eine Zahlung für den Fabrikam-Debitor "4000" (Northwind Traders) für eine offene Rechnung bei Fabrikam Ost gebucht. Auf die Rechnung wird Skonto gewährt, und eine Mehrwertsteuerbuchung wird generiert. Die Zahlung wird mit der offenen Rechnung für Fabrikam Ost ausgeglichen. Im Zuge des Ausgleichsprozesses wird eine Wechselkursgewinnbuchung generiert. Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost), der Wechselkursgewinn auf die juristische Person für die Zahlung (Fabrikam) gebucht.
+## <a name="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain"></a><span data-ttu-id="3bbd1-266">Beispiel 4: Debitorenzahlung der Rechnung einer anderen juristischen Person mit Skonto und realisiertem Wechselkursverlust</span><span class="sxs-lookup"><span data-stu-id="3bbd1-266">Example 4: Customer payment of invoice from another legal entity with cash discount and realized exchange rate gain</span></span>
+<span data-ttu-id="3bbd1-267">Von Fabrikam wird eine Zahlung für den Fabrikam-Debitor "4000" (Northwind Traders) für eine offene Rechnung bei Fabrikam Ost gebucht.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-267">Fabrikam posts a payment for Fabrikam customer 4000, Northwind Traders, for an open invoice in Fabrikam East.</span></span> <span data-ttu-id="3bbd1-268">Auf die Rechnung wird Skonto gewährt, und eine Mehrwertsteuerbuchung wird generiert.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-268">The invoice has a cash discount available, and a sales tax transaction is generated.</span></span> <span data-ttu-id="3bbd1-269">Die Zahlung wird mit der offenen Rechnung für Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-269">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="3bbd1-270">Im Zuge des Ausgleichsprozesses wird eine Wechselkursgewinnbuchung generiert.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-270">A currency exchange gain transaction is generated during the settlement process.</span></span> <span data-ttu-id="3bbd1-271">Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost), der Wechselkursgewinn auf die juristische Person für die Zahlung (Fabrikam) gebucht.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-271">The cash discount is posted to the legal entity of the invoice (Fabrikam East), and the currency exchange gain is posted to the legal entity of the payment (Fabrikam).</span></span>
 
--   Wechselkurs von EUR in USD zum Rechnungsdatum: 1,2062
--   Wechselkurs für EUR in USD zum Zahlungsdatum: 1,2277
+-   <span data-ttu-id="3bbd1-272">Wechselkurs von EUR in USD zum Rechnungsdatum: 1,2062</span><span class="sxs-lookup"><span data-stu-id="3bbd1-272">Exchange rate for EUR to USD as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="3bbd1-273">Wechselkurs für EUR in USD zum Zahlungsdatum: 1,2277</span><span class="sxs-lookup"><span data-stu-id="3bbd1-273">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000"></a>Buchung einer Freitextrechnung und Generierung einer Steuerbuchung in Fabrikam Ost für Debitor "4000"
+### <a name="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000"></a><span data-ttu-id="3bbd1-274">Buchung einer Freitextrechnung und Generierung einer Steuerbuchung in Fabrikam Ost für Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-274">Free text invoice is posted and a tax transaction is generated in Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="3bbd1-275">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-275">Account</span></span>                             | <span data-ttu-id="3bbd1-276">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-276">Debit amount</span></span>            | <span data-ttu-id="3bbd1-277">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-277">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Debitoren (Fabrikam Ost) | EUR 638,22/USD 769,82 |                         |
-| Verkauf (Fabrikam Ost)               |                         | EUR 600,00/USD 723,72 |
-| Mehrwertsteuer (Fabrikam Ost)           |                         | EUR 38,22/USD 46,10   |
+| <span data-ttu-id="3bbd1-278">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-278">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="3bbd1-279">EUR 638,22/USD 769,82</span><span class="sxs-lookup"><span data-stu-id="3bbd1-279">638.22 EUR / 769.82 USD</span></span> |                         |
+| <span data-ttu-id="3bbd1-280">Verkauf (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-280">Sales (Fabrikam East)</span></span>               |                         | <span data-ttu-id="3bbd1-281">EUR 600,00/USD 723,72</span><span class="sxs-lookup"><span data-stu-id="3bbd1-281">600.00 EUR / 723.72 USD</span></span> |
+| <span data-ttu-id="3bbd1-282">Mehrwertsteuer (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-282">Sales tax (Fabrikam East)</span></span>           |                         | <span data-ttu-id="3bbd1-283">EUR 38,22/USD 46,10</span><span class="sxs-lookup"><span data-stu-id="3bbd1-283">38.22 EUR / 46.10 USD</span></span>   |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a>Eingang und Buchung der Zahlung in Fabrikam für Debitor "4000"
+### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a><span data-ttu-id="3bbd1-284">Eingang und Buchung der Zahlung in Fabrikam für Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-284">Payment is received and posted in Fabrikam for customer 4000</span></span>
 
-| Konto                        | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="3bbd1-285">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-285">Account</span></span>                        | <span data-ttu-id="3bbd1-286">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-286">Debit amount</span></span>            | <span data-ttu-id="3bbd1-287">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-287">Credit amount</span></span>           |
 |--------------------------------|-------------------------|-------------------------|
-| Bar (Fabrikam)                | EUR 626,22/USD 768,81 |                         |
-| Debitoren (Fabrikam) |                         | EUR 626,22/USD 768,81 |
+| <span data-ttu-id="3bbd1-288">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-288">Cash (Fabrikam)</span></span>                | <span data-ttu-id="3bbd1-289">EUR 626,22/USD 768,81</span><span class="sxs-lookup"><span data-stu-id="3bbd1-289">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="3bbd1-290">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-290">Accounts receivable (Fabrikam)</span></span> |                         | <span data-ttu-id="3bbd1-291">EUR 626,22/USD 768,81</span><span class="sxs-lookup"><span data-stu-id="3bbd1-291">626.22 EUR / 768.81 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="3bbd1-292">Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="3bbd1-292">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="3bbd1-293">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-293">**Fabrikam posting**</span></span>
 
-| Konto                         | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="3bbd1-294">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-294">Account</span></span>                         | <span data-ttu-id="3bbd1-295">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-295">Debit amount</span></span>            | <span data-ttu-id="3bbd1-296">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-296">Credit amount</span></span>           |
 |---------------------------------|-------------------------|-------------------------|
-| Debitoren (Fabrikam)  | EUR 626,22/USD 768,81 |                         |
-| Fällig an Fabrikam Ost (Fabrikam) |                         | EUR 626,22/USD 768,81 |
-| Fällig an Fabrikam Ost (Fabrikam) | EUR 0,00/USD 13,46    |                         |
-| Realisierter Gewinn (Fabrikam)        |                         | EUR 0,00/USD 13,46    |
+| <span data-ttu-id="3bbd1-297">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-297">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="3bbd1-298">EUR 626,22/USD 768,81</span><span class="sxs-lookup"><span data-stu-id="3bbd1-298">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="3bbd1-299">Fällig an Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-299">Due to Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="3bbd1-300">EUR 626,22/USD 768,81</span><span class="sxs-lookup"><span data-stu-id="3bbd1-300">626.22 EUR / 768.81 USD</span></span> |
+| <span data-ttu-id="3bbd1-301">Fällig an Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-301">Due to Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="3bbd1-302">EUR 0,00/USD 13,46</span><span class="sxs-lookup"><span data-stu-id="3bbd1-302">0.00 EUR / 13.46 USD</span></span>    |                         |
+| <span data-ttu-id="3bbd1-303">Realisierter Gewinn (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-303">Realized gain (Fabrikam)</span></span>        |                         | <span data-ttu-id="3bbd1-304">EUR 0,00/USD 13,46</span><span class="sxs-lookup"><span data-stu-id="3bbd1-304">0.00 EUR / 13.46 USD</span></span>    |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="3bbd1-305">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-305">**Fabrikam East posting**</span></span>
 
-| Konto                             | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="3bbd1-306">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-306">Account</span></span>                             | <span data-ttu-id="3bbd1-307">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-307">Debit amount</span></span>            | <span data-ttu-id="3bbd1-308">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-308">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Fällig von Fabrikam (Fabrikam Ost)   | EUR 626,22/USD 768,81 |                         |
-| Debitoren (Fabrikam Ost) |                         | EUR 626,22/USD 768,81 |
-| Debitoren (Fabrikam Ost)  | EUR 0,00/USD 13,46    |                         |
-| Fällig von Fabrikam (Fabrikam Ost)   |                         | EUR 0,00/USD 13,46    |
-| Skonto (Fabrikam Ost)       | EUR 12,00/USD 14,47   |                         |
-| Debitoren (Fabrikam Ost) |                         | EUR 12,00/USD 14,47   |
+| <span data-ttu-id="3bbd1-309">Fällig von Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-309">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="3bbd1-310">EUR 626,22/USD 768,81</span><span class="sxs-lookup"><span data-stu-id="3bbd1-310">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="3bbd1-311">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-311">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="3bbd1-312">EUR 626,22/USD 768,81</span><span class="sxs-lookup"><span data-stu-id="3bbd1-312">626.22 EUR / 768.81 USD</span></span> |
+| <span data-ttu-id="3bbd1-313">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-313">Accounts receivable (Fabrikam East</span></span>  | <span data-ttu-id="3bbd1-314">EUR 0,00/USD 13,46</span><span class="sxs-lookup"><span data-stu-id="3bbd1-314">0.00 EUR / 13.46 USD</span></span>    |                         |
+| <span data-ttu-id="3bbd1-315">Fällig von Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-315">Due from Fabrikam (Fabrikam East)</span></span>   |                         | <span data-ttu-id="3bbd1-316">EUR 0,00/USD 13,46</span><span class="sxs-lookup"><span data-stu-id="3bbd1-316">0.00 EUR / 13.46 USD</span></span>    |
+| <span data-ttu-id="3bbd1-317">Skonto (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-317">Cash discount (Fabrikam East)</span></span>       | <span data-ttu-id="3bbd1-318">EUR 12,00/USD 14,47</span><span class="sxs-lookup"><span data-stu-id="3bbd1-318">12.00 EUR / 14.47 USD</span></span>   |                         |
+| <span data-ttu-id="3bbd1-319">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-319">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="3bbd1-320">EUR 12,00/USD 14,47</span><span class="sxs-lookup"><span data-stu-id="3bbd1-320">12.00 EUR / 14.47 USD</span></span>   |
 
-## <a name="example-5-customer-credit-note-with-primary-payment"></a>Beispiel 5: Debitorengutschrift mit primärer Zahlung
-Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (Northwind Traders) ein. Die Zahlung wird mit einer offenen Rechnung für den Debitor "10.000" von Fabrikam West und einer offenen Gutschrift für den Debitor "4000" von Fabrikam Ost ausgeglichen. Die Zahlung wird im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** dargestellt.
+## <a name="example-5-customer-credit-note-with-primary-payment"></a><span data-ttu-id="3bbd1-321">Beispiel 5: Debitorengutschrift mit primärer Zahlung</span><span class="sxs-lookup"><span data-stu-id="3bbd1-321">Example 5: Customer credit note with primary payment</span></span>
+<span data-ttu-id="3bbd1-322">Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (Northwind Traders) ein.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-322">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders.</span></span> <span data-ttu-id="3bbd1-323">Die Zahlung wird mit einer offenen Rechnung für den Debitor "10.000" von Fabrikam West und einer offenen Gutschrift für den Debitor "4000" von Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-323">The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000.</span></span> <span data-ttu-id="3bbd1-324">Die Zahlung wird im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** dargestellt.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-324">The payment is selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Buchung der Rechnung in Fabrikam West für Debitor "10.000"
+### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a><span data-ttu-id="3bbd1-325">Buchung der Rechnung in Fabrikam West für Debitor "10.000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-325">Invoice is posted to Fabrikam West for customer 10000</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-326">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-326">Account</span></span>                             | <span data-ttu-id="3bbd1-327">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-327">Debit amount</span></span> | <span data-ttu-id="3bbd1-328">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-328">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Debitoren (Fabrikam West) | 100,00       |               |
-| Verkauf (Fabrikam West)               |              | 100,00        |
+| <span data-ttu-id="3bbd1-329">Debitoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-329">Accounts receivable (Fabrikam West)</span></span> | <span data-ttu-id="3bbd1-330">100,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-330">100.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-331">Verkauf (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-331">Sales (Fabrikam West)</span></span>               |              | <span data-ttu-id="3bbd1-332">100,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-332">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>Buchung der Gutschrift an Fabrikam West für Debitor "4000"
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a><span data-ttu-id="3bbd1-333">Buchung der Gutschrift an Fabrikam West für Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-333">Credit note is posted to Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-334">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-334">Account</span></span>                             | <span data-ttu-id="3bbd1-335">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-335">Debit amount</span></span> | <span data-ttu-id="3bbd1-336">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-336">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Verkaufsrücklieferungen (Fabrikam Ost)       | 25,00        |               |
-| Debitoren (Fabrikam Ost) |              | 25,00         |
+| <span data-ttu-id="3bbd1-337">Verkaufsrücklieferungen (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-337">Sales returns (Fabrikam East)</span></span>       | <span data-ttu-id="3bbd1-338">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-338">25.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-339">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-339">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="3bbd1-340">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-340">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a>Buchung der Zahlung an Fabrikam für Debitor "4000"
+### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a><span data-ttu-id="3bbd1-341">Buchung der Zahlung an Fabrikam für Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-341">Payment is posted to Fabrikam for customer 4000</span></span>
 
-| Konto                        | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-342">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-342">Account</span></span>                        | <span data-ttu-id="3bbd1-343">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-343">Debit amount</span></span> | <span data-ttu-id="3bbd1-344">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-344">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Bar (Fabrikam)                | 75,00        |               |
-| Debitoren (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="3bbd1-345">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-345">Cash (Fabrikam)</span></span>                | <span data-ttu-id="3bbd1-346">75,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-346">75.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-347">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-347">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="3bbd1-348">75,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-348">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="3bbd1-349">Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="3bbd1-349">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="3bbd1-350">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-350">**Fabrikam posting**</span></span>
 
-| Konto                           | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-351">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-351">Account</span></span>                           | <span data-ttu-id="3bbd1-352">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-352">Debit amount</span></span> | <span data-ttu-id="3bbd1-353">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-353">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Fällig von Fabrikam Ost (Fabrikam) | 25,00        |               |
-| Debitoren (Fabrikam)    |              | 25,00         |
-| Debitoren (Fabrikam)    | 100,00       |               |
-| Fällig an Fabrikam West (Fabrikam)   |              | 100,00        |
+| <span data-ttu-id="3bbd1-354">Fällig von Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-354">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="3bbd1-355">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-355">25.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-356">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-356">Accounts receivable (Fabrikam)</span></span>    |              | <span data-ttu-id="3bbd1-357">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-357">25.00</span></span>         |
+| <span data-ttu-id="3bbd1-358">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-358">Accounts receivable (Fabrikam)</span></span>    | <span data-ttu-id="3bbd1-359">100,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-359">100.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-360">Fällig an Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-360">Due to Fabrikam West (Fabrikam)</span></span>   |              | <span data-ttu-id="3bbd1-361">100,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-361">100.00</span></span>        |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="3bbd1-362">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-362">**Fabrikam East posting**</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-363">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-363">Account</span></span>                             | <span data-ttu-id="3bbd1-364">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-364">Debit amount</span></span> | <span data-ttu-id="3bbd1-365">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-365">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Debitoren (Fabrikam Ost) | 25,00        |               |
-| Fällig an Fabrikam (Fabrikam Ost)     |              | 25,00         |
+| <span data-ttu-id="3bbd1-366">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-366">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="3bbd1-367">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-367">25.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-368">Fällig an Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-368">Due to Fabrikam (Fabrikam East)</span></span>     |              | <span data-ttu-id="3bbd1-369">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-369">25.00</span></span>         |
 
-**Buchung für Fabrikam West**
+<span data-ttu-id="3bbd1-370">**Buchung für Fabrikam West**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-370">**Fabrikam West posting**</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-371">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-371">Account</span></span>                             | <span data-ttu-id="3bbd1-372">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-372">Debit amount</span></span> | <span data-ttu-id="3bbd1-373">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-373">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Fällig von Fabrikam (Fabrikam West)   | 100,00       |               |
-| Debitoren (Fabrikam West) |              | 100,00        |
+| <span data-ttu-id="3bbd1-374">Fällig von Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-374">Due from Fabrikam (Fabrikam West)</span></span>   | <span data-ttu-id="3bbd1-375">100,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-375">100.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-376">Debitoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-376">Accounts receivable (Fabrikam West)</span></span> |              | <span data-ttu-id="3bbd1-377">100,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-377">100.00</span></span>        |
 
-## <a name="example-6-customer-credit-note-without-primary-payment"></a>Beispiel 6: Debitorengutschrift ohne primäre Zahlung
-Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (Northwind Traders) ein. Die Zahlung wird mit einer offenen Rechnung für den Debitor "10.000" von Fabrikam West und einer offenen Gutschrift für den Debitor "4000" von Fabrikam Ost ausgeglichen. Die Zahlung ist im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** nicht ausgewählt.
+## <a name="example-6-customer-credit-note-without-primary-payment"></a><span data-ttu-id="3bbd1-378">Beispiel 6: Debitorengutschrift ohne primäre Zahlung</span><span class="sxs-lookup"><span data-stu-id="3bbd1-378">Example 6: Customer credit note without primary payment</span></span>
+<span data-ttu-id="3bbd1-379">Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (Northwind Traders) ein.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-379">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders.</span></span> <span data-ttu-id="3bbd1-380">Die Zahlung wird mit einer offenen Rechnung für den Debitor "10.000" von Fabrikam West und einer offenen Gutschrift für den Debitor "4000" von Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-380">The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000.</span></span> <span data-ttu-id="3bbd1-381">Die Zahlung ist im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** nicht ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="3bbd1-381">The payment isn't selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Buchung der Rechnung in Fabrikam West für Debitor "10.000"
+### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a><span data-ttu-id="3bbd1-382">Buchung der Rechnung in Fabrikam West für Debitor "10.000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-382">Invoice is posted to Fabrikam West for customer 10000</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-383">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-383">Account</span></span>                             | <span data-ttu-id="3bbd1-384">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-384">Debit amount</span></span> | <span data-ttu-id="3bbd1-385">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-385">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Debitoren (Fabrikam West) | 100,00       |               |
-| Verkauf (Fabrikam West)               |              | 100,00        |
+| <span data-ttu-id="3bbd1-386">Debitoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-386">Accounts receivable (Fabrikam West)</span></span> | <span data-ttu-id="3bbd1-387">100,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-387">100.00</span></span>       |               |
+| <span data-ttu-id="3bbd1-388">Verkauf (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-388">Sales (Fabrikam West)</span></span>               |              | <span data-ttu-id="3bbd1-389">100,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-389">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>Buchung der Gutschrift an Fabrikam West für Debitor "4000"
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a><span data-ttu-id="3bbd1-390">Buchung der Gutschrift an Fabrikam West für Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-390">Credit note is posted to Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-391">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-391">Account</span></span>                             | <span data-ttu-id="3bbd1-392">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-392">Debit amount</span></span> | <span data-ttu-id="3bbd1-393">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-393">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Verkaufsrücklieferungen (Fabrikam Ost)       | 25,00        |               |
-| Debitoren (Fabrikam Ost) |              | 25,00         |
+| <span data-ttu-id="3bbd1-394">Verkaufsrücklieferungen (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-394">Sales returns (Fabrikam East)</span></span>       | <span data-ttu-id="3bbd1-395">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-395">25.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-396">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-396">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="3bbd1-397">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-397">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a>Buchung der Zahlung an Fabrikam für Debitor "4000"
+### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a><span data-ttu-id="3bbd1-398">Buchung der Zahlung an Fabrikam für Debitor "4000"</span><span class="sxs-lookup"><span data-stu-id="3bbd1-398">Payment is posted to Fabrikam for customer 4000</span></span>
 
-| Konto                        | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-399">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-399">Account</span></span>                        | <span data-ttu-id="3bbd1-400">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-400">Debit amount</span></span> | <span data-ttu-id="3bbd1-401">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-401">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Bar (Fabrikam)                | 75,00        |               |
-| Debitoren (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="3bbd1-402">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-402">Cash (Fabrikam)</span></span>                | <span data-ttu-id="3bbd1-403">75,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-403">75.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-404">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-404">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="3bbd1-405">75,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-405">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="3bbd1-406">Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="3bbd1-406">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="3bbd1-407">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-407">**Fabrikam posting**</span></span>
 
-| Konto                         | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-408">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-408">Account</span></span>                         | <span data-ttu-id="3bbd1-409">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-409">Debit amount</span></span> | <span data-ttu-id="3bbd1-410">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-410">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Debitoren (Fabrikam)  | 75,00        |               |
-| Fällig an Fabrikam West (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="3bbd1-411">Debitoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-411">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="3bbd1-412">75,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-412">75.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-413">Fällig an Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-413">Due to Fabrikam West (Fabrikam)</span></span> |              | <span data-ttu-id="3bbd1-414">75,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-414">75.00</span></span>         |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="3bbd1-415">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-415">**Fabrikam East posting**</span></span>
 
-| Konto                              | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-416">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-416">Account</span></span>                              | <span data-ttu-id="3bbd1-417">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-417">Debit amount</span></span> | <span data-ttu-id="3bbd1-418">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-418">Credit amount</span></span> |
 |--------------------------------------|--------------|---------------|
-| Debitoren (Fabrikam Ost)  | 25,00        |               |
-| Fällig an Fabrikam West (Fabrikam Ost) |              | 25,00         |
+| <span data-ttu-id="3bbd1-419">Debitoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-419">Accounts receivable (Fabrikam East)</span></span>  | <span data-ttu-id="3bbd1-420">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-420">25.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-421">Fällig an Fabrikam West (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-421">Due to Fabrikam West (Fabrikam East)</span></span> |              | <span data-ttu-id="3bbd1-422">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-422">25.00</span></span>         |
 
-**Buchung für Fabrikam West**
+<span data-ttu-id="3bbd1-423">**Buchung für Fabrikam West**</span><span class="sxs-lookup"><span data-stu-id="3bbd1-423">**Fabrikam West posting**</span></span>
 
-| Konto                                | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="3bbd1-424">Konto</span><span class="sxs-lookup"><span data-stu-id="3bbd1-424">Account</span></span>                                | <span data-ttu-id="3bbd1-425">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-425">Debit amount</span></span> | <span data-ttu-id="3bbd1-426">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="3bbd1-426">Credit amount</span></span> |
 |----------------------------------------|--------------|---------------|
-| Fällig von Fabrikam (Fabrikam West)      | 75,00        |               |
-| Debitoren (Fabrikam West)    |              | 75,00         |
-| Fällig von Fabrikam Ost (Fabrikam West) | 25,00        |               |
-| Debitoren (Fabrikam West)    |              | 25,00         |
+| <span data-ttu-id="3bbd1-427">Fällig von Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-427">Due from Fabrikam (Fabrikam West)</span></span>      | <span data-ttu-id="3bbd1-428">75,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-428">75.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-429">Debitoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-429">Accounts receivable (Fabrikam West)</span></span>    |              | <span data-ttu-id="3bbd1-430">75,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-430">75.00</span></span>         |
+| <span data-ttu-id="3bbd1-431">Fällig von Fabrikam Ost (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-431">Due from Fabrikam East (Fabrikam West)</span></span> | <span data-ttu-id="3bbd1-432">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-432">25.00</span></span>        |               |
+| <span data-ttu-id="3bbd1-433">Debitoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="3bbd1-433">Accounts receivable (Fabrikam West)</span></span>    |              | <span data-ttu-id="3bbd1-434">25,00</span><span class="sxs-lookup"><span data-stu-id="3bbd1-434">25.00</span></span>         |
 
 
 

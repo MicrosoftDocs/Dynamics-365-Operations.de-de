@@ -19,28 +19,28 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0540ba30cb26abe274075deea80ca1e9cfc686f9
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 0129eae177d44100b09c2b7bce553dd5bde5ce0c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="fixed-asset-disposal-posting-accounts"></a>Buchungskonten für die Anlagenveräußerung
+# <a name="fixed-asset-disposal-posting-accounts"></a><span data-ttu-id="21be3-103">Buchungskonten für die Anlagenveräußerung</span><span class="sxs-lookup"><span data-stu-id="21be3-103">Fixed asset disposal posting accounts</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt, wie Buchungskonten im Hauptbuch für den Abgang von Anlagen eingerichtet werden.
+<span data-ttu-id="21be3-104">Dieser Artikel beschreibt, wie Buchungskonten im Hauptbuch für den Abgang von Anlagen eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="21be3-104">This article explains how to set up general ledger posting accounts for disposing of assets.</span></span>
 
-Wählen Sie auf der Seite "Anlagenbuchungsprofile" im Inforegister "Sachkonten" die Optionen "Abgang – Verkauf" und "Abgang – Ausschuss" aus, um Buchungen im Sachkonto einzurichten.
+<span data-ttu-id="21be3-105">Wählen Sie auf der Seite "Anlagenbuchungsprofile" im Inforegister "Sachkonten" die Optionen "Abgang – Verkauf" und "Abgang – Ausschuss" aus, um Buchungen im Sachkonto einzurichten.</span><span class="sxs-lookup"><span data-stu-id="21be3-105">In the Fixed asset posting profiles page, on the Ledger accounts FastTab, select Disposal - sale and Disposal - scrap to set up postings to the ledger.</span></span>
 
-Für beide Buchungsarten wird der Abgangswert der Anlage dem Sachkonto gutgeschrieben. Das Soll wird in einem Gegenkonto gebucht, das beispielsweise ein Bankkonto sein kann. Bei Veräußerung einer Anlage an einen Debitor wird anstelle des Gegenkontos das Debitorenkonto verwendet.
+<span data-ttu-id="21be3-106">Für beide Buchungsarten wird der Abgangswert der Anlage dem Sachkonto gutgeschrieben.</span><span class="sxs-lookup"><span data-stu-id="21be3-106">For both transaction types, the ledger account is credited for the disposal value of the fixed asset.</span></span> <span data-ttu-id="21be3-107">Das Soll wird in einem Gegenkonto gebucht, das beispielsweise ein Bankkonto sein kann.</span><span class="sxs-lookup"><span data-stu-id="21be3-107">The debit is posted to an offset account, which might be, for example, a bank account.</span></span> <span data-ttu-id="21be3-108">Bei Veräußerung einer Anlage an einen Debitor wird anstelle des Gegenkontos das Debitorenkonto verwendet.</span><span class="sxs-lookup"><span data-stu-id="21be3-108">If a fixed asset is sold to a customer, the customer account is used instead of the offset account.</span></span>
 
-Klicken Sie auf "Abgang" und anschließend auf "Verkauf" oder "Ausschuss", und richten Sie dann detaillierte Konten ein, um eine Rückbuchung des Nettobuchwerts der Anlage auszuführen. Sie können auch Informationen in die Felder "Buchungswert" und "Verkaufswert" auf der Seite "Abgangsparameter" eingeben. 
+<span data-ttu-id="21be3-109">Klicken Sie auf "Abgang" und anschließend auf "Verkauf" oder "Ausschuss", und richten Sie dann detaillierte Konten ein, um eine Rückbuchung des Nettobuchwerts der Anlage auszuführen.</span><span class="sxs-lookup"><span data-stu-id="21be3-109">Click Disposal and then click Sale or Scrap, and then set up detailed accounts to reverse the net book value of the fixed asset.</span></span> <span data-ttu-id="21be3-110">Sie können auch Informationen in die Felder "Buchungswert" und "Verkaufswert" auf der Seite "Abgangsparameter" eingeben.</span><span class="sxs-lookup"><span data-stu-id="21be3-110">You can also enter information in the Post value and Sales value type fields in the Disposal parameters page.</span></span> 
 
-Durch die Abgangsbuchung für eine Anlage in einem Low-Value-Pool verringert sich der Nettobuchwert des Low-Value-Pools lediglich um den Abgangsbetrag. Übersteigt allerdings der Verkaufswert einer Anlage den Nettobuchwert des Low-Value-Pools, verringert sich der Nettobuchwert auf Null.
+<span data-ttu-id="21be3-111">Durch die Abgangsbuchung für eine Anlage in einem Low-Value-Pool verringert sich der Nettobuchwert des Low-Value-Pools lediglich um den Abgangsbetrag.</span><span class="sxs-lookup"><span data-stu-id="21be3-111">The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only.</span></span> <span data-ttu-id="21be3-112">Übersteigt allerdings der Verkaufswert einer Anlage den Nettobuchwert des Low-Value-Pools, verringert sich der Nettobuchwert auf Null.</span><span class="sxs-lookup"><span data-stu-id="21be3-112">However, when the sale of an asset is exceeds the net book value of the low-value pool, the net book value is reduced to zero.</span></span>
 
 
 

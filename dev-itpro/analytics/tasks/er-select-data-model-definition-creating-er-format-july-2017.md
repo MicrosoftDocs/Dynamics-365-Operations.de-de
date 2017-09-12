@@ -16,87 +16,87 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9820888a6ab0b3eafcd4d8c95982900b2719b2ec
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 79e5c09484f9d33106194c2a8b2c9971d58d0e75
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a>Auswählen einer Datenmodelldefinition beim Erstellen eines Formats für elektronische Berichterstellung (ER)
+# <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a><span data-ttu-id="ceb11-103">Auswählen einer Datenmodelldefinition beim Erstellen eines Formats für elektronische Berichterstellung (ER)</span><span class="sxs-lookup"><span data-stu-id="ceb11-103">Select data model definition while creating format for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen. 
+<span data-ttu-id="ceb11-104">Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-104">To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active.</span></span> 
 
-Dieses Verfahren zeigt, wie Stammartikel eines Modells als Datenmodelldefinition zum Einfügen einer elektronischen meldenden (ER)- Formatkonfiguration ausgewählt werden kann, die dazu da ist, um elektronische Dokumente zu generieren. In dieser Prozedur fügen Sie eine neue ER-Formatkonfigurartion für das Beispielunternehmen „Litware, Inc.” hinzu. 
+<span data-ttu-id="ceb11-105">Dieses Verfahren zeigt, wie Stammartikel eines Modells als Datenmodelldefinition zum Einfügen einer elektronischen meldenden (ER)- Formatkonfiguration ausgewählt werden kann, die dazu da ist, um elektronische Dokumente zu generieren.</span><span class="sxs-lookup"><span data-stu-id="ceb11-105">This procedure shows how a model’s root item can be selected as a data model definition for inserting an Electronic reporting (ER) format configuration that is designed to generate electronic documents.</span></span> <span data-ttu-id="ceb11-106">In dieser Prozedur fügen Sie eine neue ER-Formatkonfigurartion für das Beispielunternehmen „Litware, Inc.” hinzu.</span><span class="sxs-lookup"><span data-stu-id="ceb11-106">In this procedure, you will add a new ER format configuration for the sample company Litware, Inc.</span></span> 
 
-Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie einen Datensatz verwenden.
+<span data-ttu-id="ceb11-107">Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="ceb11-107">This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them.</span></span> <span data-ttu-id="ceb11-108">Die Schritte können abgeschlossen werden, indem Sie einen Datensatz verwenden.</span><span class="sxs-lookup"><span data-stu-id="ceb11-108">The steps can be completed by using any dataset.</span></span>
 
-1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
-2. Klicken Sie auf "Berichterstellungskonfigurationen".
+1. <span data-ttu-id="ceb11-109">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="ceb11-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="ceb11-110">Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist.</span><span class="sxs-lookup"><span data-stu-id="ceb11-110">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active.</span></span> <span data-ttu-id="ceb11-111">Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen. </span><span class="sxs-lookup"><span data-stu-id="ceb11-111">If you don’t see this configuration provider, complete the steps in the procedure, Create a configuration provider and mark it as active.</span></span>  
+2. <span data-ttu-id="ceb11-112">Klicken Sie auf "Berichterstellungskonfigurationen".</span><span class="sxs-lookup"><span data-stu-id="ceb11-112">Click Reporting configurations.</span></span>
 
-## <a name="add-a-new-er-data-model-configuration"></a>Neue ER-Daten-Modellkonfiguration hinzufügen
-1. Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.
-    * Wir fügen eine neue ER-Modellkonfiguration hinzu, die das Datenmodell enthält, das entwickelt wurde, die als Datenquelle für das Generieren des Intrastat-Berichts verwendet werden.  
-2. Geben Sie im Feld "Name" "Zahlungsmodell (fiktiv) ein.
-    * Zahlungsmodell (fiktiv)  
-3. Klicken Sie auf Konfiguration erstellen.
-4. Klicken Sie auf Designer.
-    * Öffnen Sie den ER-Designer, um die Struktur des Datenmodells dieser Variante angeben.  
-    * Angenommen, dass wir das Datenmodell für Zahlungen entwerfen, um damit die 2-Zahlungsgeschäftsdomänen-Methoden - Kreditübertragungen und Direktbelastungen.  
-5. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-6. Geben Sie im Feld "Name" Typ Zahlung - Kreditübertragung ein.
-    * Zahlungen - Überweisungszahlung  
-7. Klicken Sie auf Hinzufügen.
-8. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-9. Geben Sie im Feld „Neuer Knoten als ein Feld” die Bezeichnung „Modellwurzel” ein.
-10. Geben Sie im Feld "Name" Typ Zahlung - Direktbelastung ein.
-    * Zahlungen - Direkteinzugszahlungen  
-11. Klicken Sie auf Hinzufügen.
-12. Klicken Sie auf "Speichern".
-13. Schließen Sie die Seite.
-14. Klicken Sie auf "Status ändern".
-    * Schließt die Entwurfsversion des Modells ab, um die neuen Zuordnungsmodelle und Formate verfügbar zu machen.  
-15. Klicken Sie auf "Abgeschlossen".
-16. Klicken Sie auf "OK".
+## <a name="add-a-new-er-data-model-configuration"></a><span data-ttu-id="ceb11-113">Neue ER-Daten-Modellkonfiguration hinzufügen</span><span class="sxs-lookup"><span data-stu-id="ceb11-113">Add a new ER data model configuration</span></span>
+1. <span data-ttu-id="ceb11-114">Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-114">Click Create configuration to open the drop dialog.</span></span>
+    * <span data-ttu-id="ceb11-115">Wir fügen eine neue ER-Modellkonfiguration hinzu, die das Datenmodell enthält, das entwickelt wurde, die als Datenquelle für das Generieren des Intrastat-Berichts verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="ceb11-115">We add a new ER model configuration containing a data model that is designed to be used as data source for generation ER reports.</span></span>  
+2. <span data-ttu-id="ceb11-116">Geben Sie im Feld "Name" "Zahlungsmodell (fiktiv) ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-116">In the Name field, type 'Payment model (fictitious)'.</span></span>
+    * <span data-ttu-id="ceb11-117">Zahlungsmodell (fiktiv)</span><span class="sxs-lookup"><span data-stu-id="ceb11-117">Payment model (fictitious)</span></span>  
+3. <span data-ttu-id="ceb11-118">Klicken Sie auf Konfiguration erstellen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-118">Click Create configuration.</span></span>
+4. <span data-ttu-id="ceb11-119">Klicken Sie auf Designer.</span><span class="sxs-lookup"><span data-stu-id="ceb11-119">Click Designer.</span></span>
+    * <span data-ttu-id="ceb11-120">Öffnen Sie den ER-Designer, um die Struktur des Datenmodells dieser Variante angeben.</span><span class="sxs-lookup"><span data-stu-id="ceb11-120">Open the ER designer to specify the structure of data model of this configuration.</span></span>  
+    * <span data-ttu-id="ceb11-121">Angenommen, dass wir das Datenmodell für Zahlungen entwerfen, um damit die 2-Zahlungsgeschäftsdomänen-Methoden - Kreditübertragungen und Direktbelastungen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-121">Assume that we design the data model for payments business domain to support 2 payment methods – credit transfer and direct debit ones.</span></span>  
+5. <span data-ttu-id="ceb11-122">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="ceb11-122">Click New to open the drop dialog.</span></span>
+6. <span data-ttu-id="ceb11-123">Geben Sie im Feld "Name" Typ Zahlung - Kreditübertragung ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-123">In the Name field, type 'Payments – credit transfer'.</span></span>
+    * <span data-ttu-id="ceb11-124">Zahlungen - Überweisungszahlung</span><span class="sxs-lookup"><span data-stu-id="ceb11-124">Payments – credit transfer</span></span>  
+7. <span data-ttu-id="ceb11-125">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-125">Click Add.</span></span>
+8. <span data-ttu-id="ceb11-126">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="ceb11-126">Click New to open the drop dialog.</span></span>
+9. <span data-ttu-id="ceb11-127">Geben Sie im Feld „Neuer Knoten als ein Feld” die Bezeichnung „Modellwurzel” ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-127">In the New node as a field, enter 'Model root'.</span></span>
+10. <span data-ttu-id="ceb11-128">Geben Sie im Feld "Name" Typ Zahlung - Direktbelastung ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-128">In the Name field, type 'Payments – direct debit'.</span></span>
+    * <span data-ttu-id="ceb11-129">Zahlungen - Direkteinzugszahlungen</span><span class="sxs-lookup"><span data-stu-id="ceb11-129">Payments – direct debit</span></span>  
+11. <span data-ttu-id="ceb11-130">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-130">Click Add.</span></span>
+12. <span data-ttu-id="ceb11-131">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ceb11-131">Click Save.</span></span>
+13. <span data-ttu-id="ceb11-132">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ceb11-132">Close the page.</span></span>
+14. <span data-ttu-id="ceb11-133">Klicken Sie auf "Status ändern".</span><span class="sxs-lookup"><span data-stu-id="ceb11-133">Click Change status.</span></span>
+    * <span data-ttu-id="ceb11-134">Schließt die Entwurfsversion des Modells ab, um die neuen Zuordnungsmodelle und Formate verfügbar zu machen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-134">Complete the draft version of the model to make it available in new model mappings and formats.</span></span>  
+15. <span data-ttu-id="ceb11-135">Klicken Sie auf "Abgeschlossen".</span><span class="sxs-lookup"><span data-stu-id="ceb11-135">Click Complete.</span></span>
+16. <span data-ttu-id="ceb11-136">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ceb11-136">Click OK.</span></span>
 
-## <a name="start-to-enter-a-new-er-format-configuration"></a>Start, um eine neue ER-Formatkonfiguration einzugeben
-1. Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.
-2. Geben Sie im Feld "Neu" 'Format basierend auf Modell Zahlungsmodell (fiktiv) ein.
-3. Geben Sie im Feld "Datenmodelldefinition" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Beachten Sie, dass alle Stammartikel des Datenmodells für die ausgewählten Auswahl als Datenmodelldefinition im Zeitpunkt vorhanden sind. Sie können fortfahren, um das Format zu entwerfen, indem Sie eines der erforderlichen Stammartikel des - Datenmodells verwenden. Eine fehlende Modellzuordnung für den ausgewählten Stammartikel hindert Sie nicht am Fortsetzen.  
-4. Schließen Sie die Seite.
+## <a name="start-to-enter-a-new-er-format-configuration"></a><span data-ttu-id="ceb11-137">Start, um eine neue ER-Formatkonfiguration einzugeben</span><span class="sxs-lookup"><span data-stu-id="ceb11-137">Start to enter a new ER format configuration</span></span>
+1. <span data-ttu-id="ceb11-138">Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-138">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="ceb11-139">Geben Sie im Feld "Neu" 'Format basierend auf Modell Zahlungsmodell (fiktiv) ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-139">In the New field, enter 'Format based on data model Payment model (fictitious)'.</span></span>
+3. <span data-ttu-id="ceb11-140">Geben Sie im Feld "Datenmodelldefinition" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ceb11-140">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="ceb11-141">Beachten Sie, dass alle Stammartikel des Datenmodells für die ausgewählten Auswahl als Datenmodelldefinition im Zeitpunkt vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="ceb11-141">Note that all root items of the selected data model are currently available for selection as a data model definition.</span></span> <span data-ttu-id="ceb11-142">Sie können fortfahren, um das Format zu entwerfen, indem Sie eines der erforderlichen Stammartikel des - Datenmodells verwenden.</span><span class="sxs-lookup"><span data-stu-id="ceb11-142">You can continue to design your format by using any of the required root items of the data model.</span></span> <span data-ttu-id="ceb11-143">Eine fehlende Modellzuordnung für den ausgewählten Stammartikel hindert Sie nicht am Fortsetzen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-143">A missing model mapping for the selected root item doesn't prevent you from continuing.</span></span>  
+4. <span data-ttu-id="ceb11-144">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ceb11-144">Close the page.</span></span>
 
-## <a name="add-a-new-er-model-mapping-configuration"></a>Neue ER-Daten-Modellkonfigurationszuordnung hinzufügen
-1. Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.
-2. Geben Sie im Feld "Neu" 'Modellzuordnung basierend auf Datenmodell-Zahlungsmodell (fiktiv) ein.
-3. Geben Sie im Feld "Name" "Zahlungsmodellzuordnung (fiktiv) ein.
-    * Zahlungsmodell-Zuordnungen (fiktiv)  
-4. Geben Sie im Feld "Datenmodelldefinition" einen Wert ein, oder wählen Sie einen Wert aus.
-5. Klicken Sie auf Konfiguration erstellen.
+## <a name="add-a-new-er-model-mapping-configuration"></a><span data-ttu-id="ceb11-145">Neue ER-Daten-Modellkonfigurationszuordnung hinzufügen</span><span class="sxs-lookup"><span data-stu-id="ceb11-145">Add a new ER model mapping configuration</span></span>
+1. <span data-ttu-id="ceb11-146">Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-146">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="ceb11-147">Geben Sie im Feld "Neu" 'Modellzuordnung basierend auf Datenmodell-Zahlungsmodell (fiktiv) ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-147">In the New field, enter 'Model Mapping based on data model Payment model (fictitious)'.</span></span>
+3. <span data-ttu-id="ceb11-148">Geben Sie im Feld "Name" "Zahlungsmodellzuordnung (fiktiv) ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-148">In the Name field, type 'Payment model mappings (fictitious)'.</span></span>
+    * <span data-ttu-id="ceb11-149">Zahlungsmodell-Zuordnungen (fiktiv)</span><span class="sxs-lookup"><span data-stu-id="ceb11-149">Payment model mappings (fictitious)</span></span>  
+4. <span data-ttu-id="ceb11-150">Geben Sie im Feld "Datenmodelldefinition" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ceb11-150">In the Data model definition field, enter or select a value.</span></span>
+5. <span data-ttu-id="ceb11-151">Klicken Sie auf Konfiguration erstellen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-151">Click Create configuration.</span></span>
 
-## <a name="design-er-model-mappings"></a>Modellzuordnungsdesigner
-1. Klicken Sie auf Designer.
-    * Verwenden Sie den ER-Designer, um das Lagermodell der Zuordnungen für die erforderlichen Stammartikel anzugeben.  
-2. Klicken Sie auf Designer.
-    * Einrichtung ausgewälter Modellzuordnungen für den ausgewählten Stammartikel des Modells simulieren.  
-3. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabellendatensätze" aus.
-4. Klicken Sie auf "Stamm hinzufügen".
-5. Geben Sie im Feld Name den Typ Sachkonto ein.
-6. Im Tabellenfeld geben Sie "LedgerJournalTrans" ein.
-    * LedgerJournalTrans  
-7. Klicken Sie auf "OK".
-8. Klicken Sie auf "Speichern".
-9. Schließen Sie die Seite.
-10. Schließen Sie die Seite.
+## <a name="design-er-model-mappings"></a><span data-ttu-id="ceb11-152">Modellzuordnungsdesigner</span><span class="sxs-lookup"><span data-stu-id="ceb11-152">Design ER model mappings</span></span>
+1. <span data-ttu-id="ceb11-153">Klicken Sie auf Designer.</span><span class="sxs-lookup"><span data-stu-id="ceb11-153">Click Designer.</span></span>
+    * <span data-ttu-id="ceb11-154">Verwenden Sie den ER-Designer, um das Lagermodell der Zuordnungen für die erforderlichen Stammartikel anzugeben.</span><span class="sxs-lookup"><span data-stu-id="ceb11-154">Use the ER designer to specify the model mappings for the required root items.</span></span>  
+2. <span data-ttu-id="ceb11-155">Klicken Sie auf Designer.</span><span class="sxs-lookup"><span data-stu-id="ceb11-155">Click Designer.</span></span>
+    * <span data-ttu-id="ceb11-156">Einrichtung ausgewälter Modellzuordnungen für den ausgewählten Stammartikel des Modells simulieren.</span><span class="sxs-lookup"><span data-stu-id="ceb11-156">Simulate setting of selected model mapping for the selected model’s root item.</span></span>  
+3. <span data-ttu-id="ceb11-157">Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabellendatensätze" aus.</span><span class="sxs-lookup"><span data-stu-id="ceb11-157">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
+4. <span data-ttu-id="ceb11-158">Klicken Sie auf "Stamm hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="ceb11-158">Click Add root.</span></span>
+5. <span data-ttu-id="ceb11-159">Geben Sie im Feld Name den Typ Sachkonto ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-159">In the Name field, type 'Ledger'.</span></span>
+6. <span data-ttu-id="ceb11-160">Im Tabellenfeld geben Sie "LedgerJournalTrans" ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-160">In the Table field, type 'LedgerJournalTrans'.</span></span>
+    * <span data-ttu-id="ceb11-161">LedgerJournalTrans</span><span class="sxs-lookup"><span data-stu-id="ceb11-161">LedgerJournalTrans</span></span>  
+7. <span data-ttu-id="ceb11-162">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ceb11-162">Click OK.</span></span>
+8. <span data-ttu-id="ceb11-163">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ceb11-163">Click Save.</span></span>
+9. <span data-ttu-id="ceb11-164">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ceb11-164">Close the page.</span></span>
+10. <span data-ttu-id="ceb11-165">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ceb11-165">Close the page.</span></span>
 
-## <a name="start-to-enter-another-new-er-format-configuration"></a>Start, um eine andere ER-Formatkonfiguration einzugeben
-1. Wählen Sie in der Struktur die Option "Zahlungsmodell" (fiktiv) aus.
-2. Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.
-3. Geben Sie im Feld "Neu" 'Format basierend auf Modell Zahlungsmodell (fiktiv) ein.
-4. Geben Sie im Feld "Datenmodelldefinition" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Beachten Sie, dass ein Stammartikel nun verfügbar ist, um diesen den Bewerbungsdatenquellen zuzuordnen. Wenn mindestens eine vorbildliche Zuordnung eingegeben wird, werden nur die Stammartikel des Modells, die den Bewerbungsdatenquellen zugeordnet werden, als vorbildliche Definition ausgewählt werden können, für die das ER-Format hinzugefügt wird.   
-5. Schließen Sie die Seite.
+## <a name="start-to-enter-another-new-er-format-configuration"></a><span data-ttu-id="ceb11-166">Start, um eine andere ER-Formatkonfiguration einzugeben</span><span class="sxs-lookup"><span data-stu-id="ceb11-166">Start to enter another new ER format configuration</span></span>
+1. <span data-ttu-id="ceb11-167">Wählen Sie in der Struktur die Option "Zahlungsmodell" (fiktiv) aus.</span><span class="sxs-lookup"><span data-stu-id="ceb11-167">In the tree, select 'Payment model (fictitious)'.</span></span>
+2. <span data-ttu-id="ceb11-168">Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-168">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="ceb11-169">Geben Sie im Feld "Neu" 'Format basierend auf Modell Zahlungsmodell (fiktiv) ein.</span><span class="sxs-lookup"><span data-stu-id="ceb11-169">In the New field, enter 'Format based on data model Payment model (fictitious)'.</span></span>
+4. <span data-ttu-id="ceb11-170">Geben Sie im Feld "Datenmodelldefinition" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ceb11-170">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="ceb11-171">Beachten Sie, dass ein Stammartikel nun verfügbar ist, um diesen den Bewerbungsdatenquellen zuzuordnen.</span><span class="sxs-lookup"><span data-stu-id="ceb11-171">Note that now only one root item is available to map to the application data sources.</span></span> <span data-ttu-id="ceb11-172">Wenn mindestens eine vorbildliche Zuordnung eingegeben wird, werden nur die Stammartikel des Modells, die den Bewerbungsdatenquellen zugeordnet werden, als vorbildliche Definition ausgewählt werden können, für die das ER-Format hinzugefügt wird.</span><span class="sxs-lookup"><span data-stu-id="ceb11-172">When at least one model mapping is introduced, only the model’s root items that are mapped to application data sources can be selected as a model definition while the ER format is added.</span></span>   
+5. <span data-ttu-id="ceb11-173">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ceb11-173">Close the page.</span></span>
 
 

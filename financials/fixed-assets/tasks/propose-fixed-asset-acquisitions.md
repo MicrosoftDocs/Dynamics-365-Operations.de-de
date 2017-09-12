@@ -16,34 +16,34 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 6d3f31bcbc2e470d0e17a6ab6b5df879aa4f8c9f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c1c08bb05b7f6b57cfc8c86a1d0c0d1a7cc2ce5a
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="propose-fixed-asset-acquisitions"></a>Anlagenanschaffungen vorschlagen
+# <a name="propose-fixed-asset-acquisitions"></a><span data-ttu-id="14fa3-103">Anlagenanschaffungen vorschlagen</span><span class="sxs-lookup"><span data-stu-id="14fa3-103">Propose fixed asset acquisitions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In diesem Verfahren wird eine Anlage mithilfe des Anschaffungsvorschlags in der Anlagenerfassung abgerufen. Dabei werden die Buchhalterrolle und die Demodaten für die juristische Person USMF verwendet.
+<span data-ttu-id="14fa3-104">In diesem Verfahren wird eine Anlage mithilfe des Anschaffungsvorschlags in der Anlagenerfassung abgerufen.</span><span class="sxs-lookup"><span data-stu-id="14fa3-104">This procedure shows how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal.</span></span> <span data-ttu-id="14fa3-105">Dabei werden die Buchhalterrolle und die Demodaten für die juristische Person USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="14fa3-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 
-1. Wechseln Sie zu "Anlagen" > "Journaleinträge" > "Anlagenerfassung".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.
-4. Klicken Sie auf "Positionen".
-5. Klicken Sie auf "Vorschläge".
-6. Klicken Sie auf "Anschaffungsvorschlag".
-7. Klicken Sie auf "Filter".
-8. Klicken Sie auf "Zurücksetzen, um vorherige Werte zu löschen".
-9. Wählen Sie die Zeile "Anlagenummer" aus.
-10. Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.
-    * Legen Sie die verbleibenden Kriterien für die Anlagen fest, die Sie mit diesem Vorschlag abrufen möchten.  
-11. Klicken Sie auf "OK".
-12. Klicken Sie auf "OK".
-    * Überprüfen Sie die erstellten Transaktionspositionen.  
-    * Nur Anlagen mit dem Anschaffungsdatum und dem Anschaffungspreis, die im Buch festgelegt sind, werden in den Anschaffungsvorschlag einbezogen.  
-13. Klicken Sie auf die Registerkarte 'Bücher'.
-14. Klicken Sie auf "Buchen".
+1. <span data-ttu-id="14fa3-106">Wechseln Sie zu "Anlagen" > "Journaleinträge" > "Anlagenerfassung".</span><span class="sxs-lookup"><span data-stu-id="14fa3-106">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
+2. <span data-ttu-id="14fa3-107">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="14fa3-107">Click New.</span></span>
+3. <span data-ttu-id="14fa3-108">Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="14fa3-108">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="14fa3-109">Klicken Sie auf "Positionen".</span><span class="sxs-lookup"><span data-stu-id="14fa3-109">Click Lines.</span></span>
+5. <span data-ttu-id="14fa3-110">Klicken Sie auf "Vorschläge".</span><span class="sxs-lookup"><span data-stu-id="14fa3-110">Click Proposals.</span></span>
+6. <span data-ttu-id="14fa3-111">Klicken Sie auf "Anschaffungsvorschlag".</span><span class="sxs-lookup"><span data-stu-id="14fa3-111">Click Acquisition proposal.</span></span>
+7. <span data-ttu-id="14fa3-112">Klicken Sie auf "Filter".</span><span class="sxs-lookup"><span data-stu-id="14fa3-112">Click Filter.</span></span>
+8. <span data-ttu-id="14fa3-113">Klicken Sie auf "Zurücksetzen, um vorherige Werte zu löschen".</span><span class="sxs-lookup"><span data-stu-id="14fa3-113">Click Reset to clear out previous values.</span></span>
+9. <span data-ttu-id="14fa3-114">Wählen Sie die Zeile "Anlagenummer" aus.</span><span class="sxs-lookup"><span data-stu-id="14fa3-114">Select the Fixed asset number row.</span></span>
+10. <span data-ttu-id="14fa3-115">Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="14fa3-115">In the Criteria field, enter or select a value.</span></span>
+    * <span data-ttu-id="14fa3-116">Legen Sie die verbleibenden Kriterien für die Anlagen fest, die Sie mit diesem Vorschlag abrufen möchten.</span><span class="sxs-lookup"><span data-stu-id="14fa3-116">Set the remaining criteria for the fixed assets that you want to acquire with this proposal.</span></span>  
+11. <span data-ttu-id="14fa3-117">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="14fa3-117">Click OK.</span></span>
+12. <span data-ttu-id="14fa3-118">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="14fa3-118">Click OK.</span></span>
+    * <span data-ttu-id="14fa3-119">Überprüfen Sie die erstellten Transaktionspositionen.</span><span class="sxs-lookup"><span data-stu-id="14fa3-119">Verify the transaction lines created.</span></span>  
+    * <span data-ttu-id="14fa3-120">Nur Anlagen mit dem Anschaffungsdatum und dem Anschaffungspreis, die im Buch festgelegt sind, werden in den Anschaffungsvorschlag einbezogen.</span><span class="sxs-lookup"><span data-stu-id="14fa3-120">Only fixed assets with the acquisition date and acquisition price set on the book will be included in the acquisition proposal.</span></span>  
+13. <span data-ttu-id="14fa3-121">Klicken Sie auf die Registerkarte 'Bücher'.</span><span class="sxs-lookup"><span data-stu-id="14fa3-121">Click the Books tab.</span></span>
+14. <span data-ttu-id="14fa3-122">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="14fa3-122">Click Post.</span></span>
 
 

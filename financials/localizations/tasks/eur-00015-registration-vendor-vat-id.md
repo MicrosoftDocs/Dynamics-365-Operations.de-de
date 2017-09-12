@@ -16,51 +16,51 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 08a4769026c3a6da4331a375191117c7c001ceb9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a626d7b4ef4187d56b23efe5c28e986b11247562
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="register-a-vendor-vat-id"></a>Kreditor-MwSt.-Kennung registrieren
+# <a name="register-a-vendor-vat-id"></a><span data-ttu-id="39c31-103">Kreditor-MwSt.-Kennung registrieren</span><span class="sxs-lookup"><span data-stu-id="39c31-103">Register a vendor VAT ID</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dieses Verfahren zeigt, wie Sie MwSt. -Erfassungkennungen und einer Steuerbefreiungsnummer zu einem Kreditorenkonto hinzufügen. Dieser Vorgang ist nur für juristische Personen und Debitoren identisch. 
+<span data-ttu-id="39c31-104">Dieses Verfahren zeigt, wie Sie MwSt. -Erfassungkennungen und einer Steuerbefreiungsnummer zu einem Kreditorenkonto hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="39c31-104">This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</span></span> <span data-ttu-id="39c31-105">Dieser Vorgang ist nur für juristische Personen und Debitoren identisch.</span><span class="sxs-lookup"><span data-stu-id="39c31-105">This process is similar for legal entities and customers.</span></span> 
 
-Vor der Ausführung dieses Schritts müssen Sie MwSt.-IDs einrichten. Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Prozedur wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse einer juristischen Person in Deutschland erstellt. Diese Vorgehensweise ist für einen Datenverwaltungsadministrator, Kreditor-Manager oder einen Debitor-Manager vorgesehen. Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+<span data-ttu-id="39c31-106">Vor der Ausführung dieses Schritts müssen Sie MwSt.-IDs einrichten.</span><span class="sxs-lookup"><span data-stu-id="39c31-106">Before you can complete this procedure you must set up VAT IDs.</span></span> <span data-ttu-id="39c31-107">Diese Prozedur gilt für alle europäischen Länder/Regionen.</span><span class="sxs-lookup"><span data-stu-id="39c31-107">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="39c31-108">Diese Prozedur wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse einer juristischen Person in Deutschland erstellt.</span><span class="sxs-lookup"><span data-stu-id="39c31-108">The procedure was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="39c31-109">Diese Vorgehensweise ist für einen Datenverwaltungsadministrator, Kreditor-Manager oder einen Debitor-Manager vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="39c31-109">This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</span></span> <span data-ttu-id="39c31-110">Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="39c31-110">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. Gehen Sie zu "Kreditoren" > "Händler" > "Alle Händler".
-2. Wählen Sie in der Liste den Kreditor US-01001 aus.
-3. Klicken Sie auf Registrierungskennungen
-4. Klicken Sie auf Hinzufügen.
-5. Wählen Sie "MwSt.-ID" aus.
-6. Geben Sie im Feld "Registrierungsnummer" einen Wert ein.
-    * Geben Sie eine Mehrwertsteuernummer in Deutschland für den ausgewählten Kreditor an. Die Kennung muss mit dem angegebenen Format des Erfassungstyps übereinstimmen.  
-7. Klicken Sie auf die Registerkarte "Allgemein".
-8. Geben Sie ein Datum im Feld "Gültig" ein.
-9. Klicken Sie auf "Speichern".
-10. Klicken Sie auf "Neu".
-11. Geben Sie im Feld "Name oder Beschreibung" einen Wert ein.
-    * Geben Sie beispielsweise "ITA" ein.  
-12. Wählen Sie im Feld Name/Region einen Wert aus oder geben Sie ihn ein«».
-    * Wählen Sie z. B. ITA aus.  
-13. Wählen Sie "Ja" im Feld "Primär für Land".
-14. Klicken Sie auf "Speichern".
-15. Klicken Sie auf die Registerkarte "Überblick".
-16. Klicken Sie auf Hinzufügen.
-17. Geben Sie im Feld "Registrierungstyp" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wählen Sie z. B. "MwSt.-ID" aus.  
-18. Geben Sie im Feld "Registrierungsnummer" einen Wert ein.
-    * Geben Sie z. B. eine italienische MwSt. -ID ein.  Die Kennung muss das gleiche Format wie der Erfassungstyp haben.  
-19. Klicken Sie auf "Speichern".
-20. Schließen Sie die Seite.
-21. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie z. B. DE-01001 aus.  
-22. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-23. Erweitern Sie den Rechnungs- und Lieferungsabschnitt.
-24. Klicken Sie auf Bearbeiten.
-25. Geben Sie im Feld "Umsatzsteuernummer" einen Wert ein oder wählen Sie einen Wert aus.
-26. Klicken Sie auf "Speichern".
+1. <span data-ttu-id="39c31-111">Gehen Sie zu "Kreditoren" > "Händler" > "Alle Händler".</span><span class="sxs-lookup"><span data-stu-id="39c31-111">Go to Accounts payable > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="39c31-112">Wählen Sie in der Liste den Kreditor US-01001 aus.</span><span class="sxs-lookup"><span data-stu-id="39c31-112">In the list find and select vendor DE-01001</span></span>
+3. <span data-ttu-id="39c31-113">Klicken Sie auf Registrierungskennungen</span><span class="sxs-lookup"><span data-stu-id="39c31-113">Click Registration IDs.</span></span>
+4. <span data-ttu-id="39c31-114">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="39c31-114">Click Add.</span></span>
+5. <span data-ttu-id="39c31-115">Wählen Sie "MwSt.-ID" aus.</span><span class="sxs-lookup"><span data-stu-id="39c31-115">Select VAT ID.</span></span>
+6. <span data-ttu-id="39c31-116">Geben Sie im Feld "Registrierungsnummer" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="39c31-116">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="39c31-117">Geben Sie eine Mehrwertsteuernummer in Deutschland für den ausgewählten Kreditor an.</span><span class="sxs-lookup"><span data-stu-id="39c31-117">Specify a VAT ID in Germany for the selected vendor.</span></span> <span data-ttu-id="39c31-118">Die Kennung muss mit dem angegebenen Format des Erfassungstyps übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="39c31-118">The ID must match the specified format of the registration type.</span></span>  
+7. <span data-ttu-id="39c31-119">Klicken Sie auf die Registerkarte "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="39c31-119">Click the General tab.</span></span>
+8. <span data-ttu-id="39c31-120">Geben Sie ein Datum im Feld "Gültig" ein.</span><span class="sxs-lookup"><span data-stu-id="39c31-120">In the Effective field, enter a date.</span></span>
+9. <span data-ttu-id="39c31-121">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="39c31-121">Click Save.</span></span>
+10. <span data-ttu-id="39c31-122">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="39c31-122">Click New.</span></span>
+11. <span data-ttu-id="39c31-123">Geben Sie im Feld "Name oder Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="39c31-123">In the Name or description field, type a value.</span></span>
+    * <span data-ttu-id="39c31-124">Geben Sie beispielsweise "ITA" ein.</span><span class="sxs-lookup"><span data-stu-id="39c31-124">For example, enter ITA.</span></span>  
+12. <span data-ttu-id="39c31-125">Wählen Sie im Feld Name/Region einen Wert aus oder geben Sie ihn ein«».</span><span class="sxs-lookup"><span data-stu-id="39c31-125">In the Country/region field, enter or select a value.</span></span>
+    * <span data-ttu-id="39c31-126">Wählen Sie z. B. ITA aus.</span><span class="sxs-lookup"><span data-stu-id="39c31-126">For example, select ITA.</span></span>  
+13. <span data-ttu-id="39c31-127">Wählen Sie "Ja" im Feld "Primär für Land".</span><span class="sxs-lookup"><span data-stu-id="39c31-127">Select Yes in the Primary for country field.</span></span>
+14. <span data-ttu-id="39c31-128">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="39c31-128">Click Save.</span></span>
+15. <span data-ttu-id="39c31-129">Klicken Sie auf die Registerkarte "Überblick".</span><span class="sxs-lookup"><span data-stu-id="39c31-129">Click the Overview tab.</span></span>
+16. <span data-ttu-id="39c31-130">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="39c31-130">Click Add.</span></span>
+17. <span data-ttu-id="39c31-131">Geben Sie im Feld "Registrierungstyp" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="39c31-131">In the Registration type field, enter or select a value.</span></span>
+    * <span data-ttu-id="39c31-132">Wählen Sie z. B. "MwSt.-ID" aus.</span><span class="sxs-lookup"><span data-stu-id="39c31-132">For example, select VAT ID.</span></span>  
+18. <span data-ttu-id="39c31-133">Geben Sie im Feld "Registrierungsnummer" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="39c31-133">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="39c31-134">Geben Sie z. B. eine italienische MwSt. -ID ein.</span><span class="sxs-lookup"><span data-stu-id="39c31-134">For example, specify a VAT ID in Italy.</span></span>  <span data-ttu-id="39c31-135">Die Kennung muss das gleiche Format wie der Erfassungstyp haben.</span><span class="sxs-lookup"><span data-stu-id="39c31-135">The ID must have the same format as the registration type.</span></span>  
+19. <span data-ttu-id="39c31-136">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="39c31-136">Click Save.</span></span>
+20. <span data-ttu-id="39c31-137">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="39c31-137">Close the page.</span></span>
+21. <span data-ttu-id="39c31-138">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="39c31-138">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="39c31-139">Wählen Sie z. B. DE-01001 aus.</span><span class="sxs-lookup"><span data-stu-id="39c31-139">For example, select DE-01001.</span></span>  
+22. <span data-ttu-id="39c31-140">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="39c31-140">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="39c31-141">Erweitern Sie den Rechnungs- und Lieferungsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="39c31-141">Expand the Invoice and delivery section.</span></span>
+24. <span data-ttu-id="39c31-142">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="39c31-142">Click Edit.</span></span>
+25. <span data-ttu-id="39c31-143">Geben Sie im Feld "Umsatzsteuernummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="39c31-143">In the Tax exempt number field, enter or select a value.</span></span>
+26. <span data-ttu-id="39c31-144">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="39c31-144">Click Save.</span></span>
 
 

@@ -16,120 +16,120 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d6f9fc973ae9b36f6d78228d2e8ed4a2684c4875
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 121f00efea6aee8d9df45d67f8f252bbf6b97176
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="use-computations-to-make-the-output-for-counting-and-summing-for-electronic-reporting-er"></a>Verwenden von Berechnungen zum Erstellen der Ausgabe für das Zählen und Summieren für elektronische Berichterstellung (ER)
+# <a name="use-computations-to-make-the-output-for-counting-and-summing-for-electronic-reporting-er"></a><span data-ttu-id="ece3b-103">Verwenden von Berechnungen zum Erstellen der Ausgabe für das Zählen und Summieren für elektronische Berichterstellung (ER)</span><span class="sxs-lookup"><span data-stu-id="ece3b-103">Use computations to make the output for counting and summing for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Inventarisierung und Summierung basierend auf der bereits generierten Textausgabe. Diese Schritte können in jedem Unternehmen ausgeführt werden.
+<span data-ttu-id="ece3b-104">In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Inventarisierung und Summierung basierend auf der bereits generierten Textausgabe.</span><span class="sxs-lookup"><span data-stu-id="ece3b-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</span></span> <span data-ttu-id="ece3b-105">Diese Schritte können in jedem Unternehmen ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="ece3b-105">These steps can be performed in any company.</span></span>
 
-Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden "ER - Konfigurieren des Formats für die Inventarisierung und Zusammenfassung (Teil 2: Berechnungen konfigurieren)" ausführen.
+<span data-ttu-id="ece3b-106">Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden "ER - Konfigurieren des Formats für die Inventarisierung und Zusammenfassung (Teil 2: Berechnungen konfigurieren)" ausführen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-106">To complete these steps, you must first complete the steps in the “ER Configure format to do counting and summing (Part 2: Configure computations)” procedure.</span></span>
 
-Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+<span data-ttu-id="ece3b-107">Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="ece3b-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="configure-this-report-to-use-counting-and-summing-info"></a>Konfigurieren Sie diesen Bericht für Inventarisierungs- und Zusammenfassungsinformationen
-1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-2. Klicken Sie auf "Berichterstellungskonfigurationen".
-3. Erweitern Sie 'Intrastatmodell' in der Struktur.
-4. Erweitern Sie in der Strukturdarstellung "Intrastatmodel\Intrastat (DE)".
-5. Wählen Sie in der Struktur 'Intrastat model\Intrastat (DE)\Intrastat (DE) Bit Berechnung und Summieren.
-6. Klicken Sie auf Designer.
-7. Klicken Sie auf die Registerkarte Zuordnung.
-8. Klicken Sie auf "Stamm hinzufügen", um das Ablagedialogfeld zu öffnen.
-    * Fügen Sie eine neue Datenquelle hinzu, um die Liste der gemerkten Blöcken abzurufen.  
-9. Wählen Sie in der Strukturdarstellung "Funktionen\berechnetes Feld" aus.
-10. Geben Sie im Feld "Name" "$BlocksList" ein.
-    * $BlocksList  
-11. Klicken Sie auf Formel bearbeiten.
-12. Wählen Sie in der Strukturdarstellung 'Data collection functions\COLLECTEDLIST'.
-13. Klicken Sie auf Funktion hinzufügen.
-14. Klicken Sie auf Datenquelle hinzufügen.
-15. Geben Sie im Feld 'Formel' 'COLLECTEDLIST('$BlockName', ' ein.
-    * COLLECTEDLIST('$BlockName',  
-16. Geben Sie im Feld 'Formel' 'COLLECTEDLIST('$BlockName', "*")' ein.
-    * COLLECTEDLIST('$BlockName', "*")  
-17. Klicken Sie auf "Speichern".
-    * Das Muster "*" bedeutet, dass alle Blöcke der Liste für diesen Datensatz enthalten sind.  
-18. Schließen Sie die Seite.
-19. Klicken Sie auf "OK".
-20. Klicken Sie auf die Registerkarte 'Format'.
-21. Wählen Sie in der Struktur "Intrastat\Data" aus.
-22. Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".
-23. Wählen Sie in der Struktur 'Text\Sequence'..
-24. Geben Sie im Feld "Name" die Zeichenfolge "Summen nach Blöcken' ein.
-    * Summen nach Blöcken  
-25. Wählen Sie im Feld "Sonderzeichen" "Neue Zeile - Windows (CR LF)".
-26. Klicken Sie auf "OK".
-27. Wählen Sie in der Struktur 'Intrastat\Data\Totals by blocks'.
-28. Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".
-29. Wählen Sie in der Struktur 'Text\String' aus.
-30. Geben Sie im Feld "Name" "Block code" ein.
-    * Blockcode  
-31. Klicken Sie auf "OK".
-32. Klicken Sie auf "Zeichenfolge hinzufügen".
-33. Geben Sie im Feld "Name" 'Lines counting' ein.
-    * Inventarisierte Positionen  
-34. Klicken Sie auf "OK".
-35. Klicken Sie auf "Zeichenfolge hinzufügen".
-36. Geben Sie im Feld Name "Total amount" ein.
-    * Gesamtstundenzahl  
-37. Klicken Sie auf "OK".
-38. Klicken Sie auf die Registerkarte Zuordnung.
-39. Wählen Sie in der Struktur '$BlocksList' aus.
-40. Klicken Sie auf Binden.
-    * Erstellen Sie eine Zusammenfassungsposition für jeden gemerkten Block.  
-41. Klicken Sie auf die Registerkarte 'Format'.
-42. Wählen Sie in der Struktur 'Intrastat\Data\Totals by blocks\Block code'.
-43. Klicken Sie auf die Registerkarte Zuordnung.
-44. Klicken Sie auf Formel bearbeiten.
-45. Geben Sie im Feld 'Formel' '"Block id: " & ' ein.
-    * "Block id: " &  
-46. Erweitern Sie in der Struktur '$BlocksList'.
-47. Wählen Sie in der Struktur '$BlocksList\Value'.
-48. Klicken Sie auf Datenquelle hinzufügen.
-49. Klicken Sie auf "Speichern".
-50. Schließen Sie die Seite.
-51. Klicken Sie auf die Registerkarte 'Format'.
-52. Wählen Sie in der Struktur 'Intrastat\Data\Totals by blocks\Lines counting'.
-53. Klicken Sie auf die Registerkarte Zuordnung.
-54. Klicken Sie auf Formel bearbeiten.
-    * Erstellen Sie eine Ausgabe für die Anzahl der Positionen für jeden Block in diesen Bericht.  
-55. Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & ' ein.
-    * "Anzahl der Positionen in diesem Block:  " &  
-56. Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & TEXT('.
-    * "Anzahl der Positionen in diesem Block: " & TEXT(  
-57. Wählen Sie in der Strukturdarstellung 'Data collection functions\COUNTIFS'.
-58. Klicken Sie auf Funktion hinzufügen.
-59. Klicken Sie auf Datenquelle hinzufügen.
-60. Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & TEXT(COUNTIFS('$BlockName', '.
-    * "Anzahl der Positionen in diesem Block: " & TEXT(COUNTIFS('$BlockName',  
-61. Erweitern Sie in der Struktur '$BlocksList'.
-62. Wählen Sie in der Struktur '$BlocksList\Value'.
-63. Klicken Sie auf Datenquelle hinzufügen.
-64. Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '.
-    * "Anzahl der Positionen in diesem Block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value,  
-65. Wählen Sie in der Struktur '$RecName' aus.
-66. Klicken Sie auf Datenquelle hinzufügen.
-67. Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.
-    * "Anzahl der Positionen in diesem Block:  " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))  
-68. Klicken Sie auf "Speichern".
-69. Schließen Sie die Seite.
-70. Klicken Sie auf die Registerkarte 'Format'.
-71. Wählen Sie in der Struktur 'Intrastat\Data\Totals by blocks\Total amount'.
-72. Klicken Sie auf die Registerkarte Zuordnung.
-73. Klicken Sie auf Formel bearbeiten.
-    * Erstellen Sie eine Ausgabe mit dem fakturierten Gesamtbetrag für jeden Block im Bericht.  
-74. Geben Sie im Feld Formel '"Summe des berechneten Betrags: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.
-    * "Summe des Rechnungsbetrags: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))  
-75. Klicken Sie auf "Speichern".
-76. Schließen Sie die Seite.
-77. Klicken Sie auf "Speichern".
-78. Schließen Sie die Seite.
+## <a name="configure-this-report-to-use-counting-and-summing-info"></a><span data-ttu-id="ece3b-108">Konfigurieren Sie diesen Bericht für Inventarisierungs- und Zusammenfassungsinformationen</span><span class="sxs-lookup"><span data-stu-id="ece3b-108">Configure this report to use counting and summing info</span></span>
+1. <span data-ttu-id="ece3b-109">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="ece3b-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="ece3b-110">Klicken Sie auf "Berichterstellungskonfigurationen".</span><span class="sxs-lookup"><span data-stu-id="ece3b-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="ece3b-111">Erweitern Sie 'Intrastatmodell' in der Struktur.</span><span class="sxs-lookup"><span data-stu-id="ece3b-111">In the tree, expand 'Intrastat model'.</span></span>
+4. <span data-ttu-id="ece3b-112">Erweitern Sie in der Strukturdarstellung "Intrastatmodel\Intrastat (DE)".</span><span class="sxs-lookup"><span data-stu-id="ece3b-112">In the tree, expand 'Intrastat model\Intrastat (DE)'.</span></span>
+5. <span data-ttu-id="ece3b-113">Wählen Sie in der Struktur 'Intrastat model\Intrastat (DE)\Intrastat (DE) Bit Berechnung und Summieren.</span><span class="sxs-lookup"><span data-stu-id="ece3b-113">In the tree, select 'Intrastat model\Intrastat (DE)\Intrastat (DE) with counting & summing'.</span></span>
+6. <span data-ttu-id="ece3b-114">Klicken Sie auf Designer.</span><span class="sxs-lookup"><span data-stu-id="ece3b-114">Click Designer.</span></span>
+7. <span data-ttu-id="ece3b-115">Klicken Sie auf die Registerkarte Zuordnung.</span><span class="sxs-lookup"><span data-stu-id="ece3b-115">Click the Mapping tab.</span></span>
+8. <span data-ttu-id="ece3b-116">Klicken Sie auf "Stamm hinzufügen", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-116">Click Add root to open the drop dialog.</span></span>
+    * <span data-ttu-id="ece3b-117">Fügen Sie eine neue Datenquelle hinzu, um die Liste der gemerkten Blöcken abzurufen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-117">Add a new data source to get the list of memorized blocks.</span></span>  
+9. <span data-ttu-id="ece3b-118">Wählen Sie in der Strukturdarstellung "Funktionen\berechnetes Feld" aus.</span><span class="sxs-lookup"><span data-stu-id="ece3b-118">In the tree, select 'Functions\Calculated field'.</span></span>
+10. <span data-ttu-id="ece3b-119">Geben Sie im Feld "Name" "$BlocksList" ein.</span><span class="sxs-lookup"><span data-stu-id="ece3b-119">In the Name field, type '$BlocksList'.</span></span>
+    * <span data-ttu-id="ece3b-120">$BlocksList</span><span class="sxs-lookup"><span data-stu-id="ece3b-120">$BlocksList</span></span>  
+11. <span data-ttu-id="ece3b-121">Klicken Sie auf Formel bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="ece3b-121">Click Edit formula.</span></span>
+12. <span data-ttu-id="ece3b-122">Wählen Sie in der Strukturdarstellung 'Data collection functions\COLLECTEDLIST'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-122">In the tree, select 'Data collection functions\COLLECTEDLIST'.</span></span>
+13. <span data-ttu-id="ece3b-123">Klicken Sie auf Funktion hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-123">Click Add function.</span></span>
+14. <span data-ttu-id="ece3b-124">Klicken Sie auf Datenquelle hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-124">Click Add data source.</span></span>
+15. <span data-ttu-id="ece3b-125">Geben Sie im Feld 'Formel' 'COLLECTEDLIST('$BlockName', ' ein.</span><span class="sxs-lookup"><span data-stu-id="ece3b-125">In the Formula field, enter 'COLLECTEDLIST('$BlockName', '.</span></span>
+    * <span data-ttu-id="ece3b-126">COLLECTEDLIST('$BlockName',</span><span class="sxs-lookup"><span data-stu-id="ece3b-126">COLLECTEDLIST('$BlockName',</span></span>  
+16. <span data-ttu-id="ece3b-127">Geben Sie im Feld 'Formel' 'COLLECTEDLIST('$BlockName', "*")' ein.</span><span class="sxs-lookup"><span data-stu-id="ece3b-127">In the Formula field, enter 'COLLECTEDLIST('$BlockName', "*")'.</span></span>
+    * <span data-ttu-id="ece3b-128">COLLECTEDLIST('$BlockName', "*")</span><span class="sxs-lookup"><span data-stu-id="ece3b-128">COLLECTEDLIST('$BlockName', "*")</span></span>  
+17. <span data-ttu-id="ece3b-129">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ece3b-129">Click Save.</span></span>
+    * <span data-ttu-id="ece3b-130">Das Muster "*" bedeutet, dass alle Blöcke der Liste für diesen Datensatz enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="ece3b-130">The pattern “*” means that all blocks will be included to the list for this record.</span></span>  
+18. <span data-ttu-id="ece3b-131">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ece3b-131">Close the page.</span></span>
+19. <span data-ttu-id="ece3b-132">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ece3b-132">Click OK.</span></span>
+20. <span data-ttu-id="ece3b-133">Klicken Sie auf die Registerkarte 'Format'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-133">Click the Format tab.</span></span>
+21. <span data-ttu-id="ece3b-134">Wählen Sie in der Struktur "Intrastat\Data" aus.</span><span class="sxs-lookup"><span data-stu-id="ece3b-134">In the tree, select 'Intrastat\Data'.</span></span>
+22. <span data-ttu-id="ece3b-135">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="ece3b-135">Click Add to open the drop dialog.</span></span>
+23. <span data-ttu-id="ece3b-136">Wählen Sie in der Struktur 'Text\Sequence'..</span><span class="sxs-lookup"><span data-stu-id="ece3b-136">In the tree, select 'Text\Sequence'.</span></span>
+24. <span data-ttu-id="ece3b-137">Geben Sie im Feld "Name" die Zeichenfolge "Summen nach Blöcken' ein.</span><span class="sxs-lookup"><span data-stu-id="ece3b-137">In the Name field, type 'Totals by blocks'.</span></span>
+    * <span data-ttu-id="ece3b-138">Summen nach Blöcken</span><span class="sxs-lookup"><span data-stu-id="ece3b-138">Totals by blocks</span></span>  
+25. <span data-ttu-id="ece3b-139">Wählen Sie im Feld "Sonderzeichen" "Neue Zeile - Windows (CR LF)".</span><span class="sxs-lookup"><span data-stu-id="ece3b-139">In the Special characters field, select 'New line - Windows (CR LF)'.</span></span>
+26. <span data-ttu-id="ece3b-140">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ece3b-140">Click OK.</span></span>
+27. <span data-ttu-id="ece3b-141">Wählen Sie in der Struktur 'Intrastat\Data\Totals by blocks'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-141">In the tree, select 'Intrastat\Data\Totals by blocks'.</span></span>
+28. <span data-ttu-id="ece3b-142">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="ece3b-142">Click Add to open the drop dialog.</span></span>
+29. <span data-ttu-id="ece3b-143">Wählen Sie in der Struktur 'Text\String' aus.</span><span class="sxs-lookup"><span data-stu-id="ece3b-143">In the tree, select 'Text\String'.</span></span>
+30. <span data-ttu-id="ece3b-144">Geben Sie im Feld "Name" "Block code" ein.</span><span class="sxs-lookup"><span data-stu-id="ece3b-144">In the Name field, type 'Block code'.</span></span>
+    * <span data-ttu-id="ece3b-145">Blockcode</span><span class="sxs-lookup"><span data-stu-id="ece3b-145">Block code</span></span>  
+31. <span data-ttu-id="ece3b-146">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ece3b-146">Click OK.</span></span>
+32. <span data-ttu-id="ece3b-147">Klicken Sie auf "Zeichenfolge hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="ece3b-147">Click Add String.</span></span>
+33. <span data-ttu-id="ece3b-148">Geben Sie im Feld "Name" 'Lines counting' ein.</span><span class="sxs-lookup"><span data-stu-id="ece3b-148">In the Name field, type 'Lines counting'.</span></span>
+    * <span data-ttu-id="ece3b-149">Inventarisierte Positionen</span><span class="sxs-lookup"><span data-stu-id="ece3b-149">Lines counting</span></span>  
+34. <span data-ttu-id="ece3b-150">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ece3b-150">Click OK.</span></span>
+35. <span data-ttu-id="ece3b-151">Klicken Sie auf "Zeichenfolge hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="ece3b-151">Click Add String.</span></span>
+36. <span data-ttu-id="ece3b-152">Geben Sie im Feld Name "Total amount" ein.</span><span class="sxs-lookup"><span data-stu-id="ece3b-152">In the Name field, type 'Total amount'.</span></span>
+    * <span data-ttu-id="ece3b-153">Gesamtstundenzahl</span><span class="sxs-lookup"><span data-stu-id="ece3b-153">Total amount</span></span>  
+37. <span data-ttu-id="ece3b-154">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ece3b-154">Click OK.</span></span>
+38. <span data-ttu-id="ece3b-155">Klicken Sie auf die Registerkarte Zuordnung.</span><span class="sxs-lookup"><span data-stu-id="ece3b-155">Click the Mapping tab.</span></span>
+39. <span data-ttu-id="ece3b-156">Wählen Sie in der Struktur '$BlocksList' aus.</span><span class="sxs-lookup"><span data-stu-id="ece3b-156">In the tree, select '$BlocksList'.</span></span>
+40. <span data-ttu-id="ece3b-157">Klicken Sie auf Binden.</span><span class="sxs-lookup"><span data-stu-id="ece3b-157">Click Bind.</span></span>
+    * <span data-ttu-id="ece3b-158">Erstellen Sie eine Zusammenfassungsposition für jeden gemerkten Block.</span><span class="sxs-lookup"><span data-stu-id="ece3b-158">Create a summary line for each memorized block.</span></span>  
+41. <span data-ttu-id="ece3b-159">Klicken Sie auf die Registerkarte 'Format'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-159">Click the Format tab.</span></span>
+42. <span data-ttu-id="ece3b-160">Wählen Sie in der Struktur 'Intrastat\Data\Totals by blocks\Block code'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-160">In the tree, select 'Intrastat\Data\Totals by blocks\Block code'.</span></span>
+43. <span data-ttu-id="ece3b-161">Klicken Sie auf die Registerkarte Zuordnung.</span><span class="sxs-lookup"><span data-stu-id="ece3b-161">Click the Mapping tab.</span></span>
+44. <span data-ttu-id="ece3b-162">Klicken Sie auf Formel bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="ece3b-162">Click Edit formula.</span></span>
+45. <span data-ttu-id="ece3b-163">Geben Sie im Feld 'Formel' '"Block id: " & ' ein.</span><span class="sxs-lookup"><span data-stu-id="ece3b-163">In the Formula field, enter '"Block id: " & '.</span></span>
+    * <span data-ttu-id="ece3b-164">"Block id: " &</span><span class="sxs-lookup"><span data-stu-id="ece3b-164">"Block id: " &</span></span>  
+46. <span data-ttu-id="ece3b-165">Erweitern Sie in der Struktur '$BlocksList'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-165">In the tree, expand '$BlocksList'.</span></span>
+47. <span data-ttu-id="ece3b-166">Wählen Sie in der Struktur '$BlocksList\Value'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-166">In the tree, select '$BlocksList\Value'.</span></span>
+48. <span data-ttu-id="ece3b-167">Klicken Sie auf Datenquelle hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-167">Click Add data source.</span></span>
+49. <span data-ttu-id="ece3b-168">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ece3b-168">Click Save.</span></span>
+50. <span data-ttu-id="ece3b-169">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ece3b-169">Close the page.</span></span>
+51. <span data-ttu-id="ece3b-170">Klicken Sie auf die Registerkarte 'Format'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-170">Click the Format tab.</span></span>
+52. <span data-ttu-id="ece3b-171">Wählen Sie in der Struktur 'Intrastat\Data\Totals by blocks\Lines counting'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-171">In the tree, select 'Intrastat\Data\Totals by blocks\Lines counting'.</span></span>
+53. <span data-ttu-id="ece3b-172">Klicken Sie auf die Registerkarte Zuordnung.</span><span class="sxs-lookup"><span data-stu-id="ece3b-172">Click the Mapping tab.</span></span>
+54. <span data-ttu-id="ece3b-173">Klicken Sie auf Formel bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="ece3b-173">Click Edit formula.</span></span>
+    * <span data-ttu-id="ece3b-174">Erstellen Sie eine Ausgabe für die Anzahl der Positionen für jeden Block in diesen Bericht.</span><span class="sxs-lookup"><span data-stu-id="ece3b-174">Create output for the number of lines for each block presented in this report.</span></span>  
+55. <span data-ttu-id="ece3b-175">Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & ' ein.</span><span class="sxs-lookup"><span data-stu-id="ece3b-175">In the Formula field, enter '"Number of lines in this block: " & '.</span></span>
+    * <span data-ttu-id="ece3b-176">"Anzahl der Positionen in diesem Block:  " &</span><span class="sxs-lookup"><span data-stu-id="ece3b-176">"Number of lines in this block: " &</span></span>  
+56. <span data-ttu-id="ece3b-177">Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & TEXT('.</span><span class="sxs-lookup"><span data-stu-id="ece3b-177">In the Formula field, enter '"Number of lines in this block: " & TEXT('.</span></span>
+    * <span data-ttu-id="ece3b-178">"Anzahl der Positionen in diesem Block: " & TEXT(</span><span class="sxs-lookup"><span data-stu-id="ece3b-178">"Number of lines in this block: " & TEXT(</span></span>  
+57. <span data-ttu-id="ece3b-179">Wählen Sie in der Strukturdarstellung 'Data collection functions\COUNTIFS'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-179">In the tree, select 'Data collection functions\COUNTIFS'.</span></span>
+58. <span data-ttu-id="ece3b-180">Klicken Sie auf Funktion hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-180">Click Add function.</span></span>
+59. <span data-ttu-id="ece3b-181">Klicken Sie auf Datenquelle hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-181">Click Add data source.</span></span>
+60. <span data-ttu-id="ece3b-182">Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & TEXT(COUNTIFS('$BlockName', '.</span><span class="sxs-lookup"><span data-stu-id="ece3b-182">In the Formula field, enter '"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '.</span></span>
+    * <span data-ttu-id="ece3b-183">"Anzahl der Positionen in diesem Block: " & TEXT(COUNTIFS('$BlockName',</span><span class="sxs-lookup"><span data-stu-id="ece3b-183">"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName',</span></span>  
+61. <span data-ttu-id="ece3b-184">Erweitern Sie in der Struktur '$BlocksList'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-184">In the tree, expand '$BlocksList'.</span></span>
+62. <span data-ttu-id="ece3b-185">Wählen Sie in der Struktur '$BlocksList\Value'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-185">In the tree, select '$BlocksList\Value'.</span></span>
+63. <span data-ttu-id="ece3b-186">Klicken Sie auf Datenquelle hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-186">Click Add data source.</span></span>
+64. <span data-ttu-id="ece3b-187">Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '.</span><span class="sxs-lookup"><span data-stu-id="ece3b-187">In the Formula field, enter '"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '.</span></span>
+    * <span data-ttu-id="ece3b-188">"Anzahl der Positionen in diesem Block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value,</span><span class="sxs-lookup"><span data-stu-id="ece3b-188">"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value,</span></span>  
+65. <span data-ttu-id="ece3b-189">Wählen Sie in der Struktur '$RecName' aus.</span><span class="sxs-lookup"><span data-stu-id="ece3b-189">In the tree, select '$RecName'.</span></span>
+66. <span data-ttu-id="ece3b-190">Klicken Sie auf Datenquelle hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="ece3b-190">Click Add data source.</span></span>
+67. <span data-ttu-id="ece3b-191">Geben Sie im Feld Formel '"Anzahl Zeilen in diesem Block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-191">In the Formula field, enter '"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.</span></span>
+    * <span data-ttu-id="ece3b-192">"Anzahl der Positionen in diesem Block:  " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))</span><span class="sxs-lookup"><span data-stu-id="ece3b-192">"Number of lines in this block: " & TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))</span></span>  
+68. <span data-ttu-id="ece3b-193">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ece3b-193">Click Save.</span></span>
+69. <span data-ttu-id="ece3b-194">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ece3b-194">Close the page.</span></span>
+70. <span data-ttu-id="ece3b-195">Klicken Sie auf die Registerkarte 'Format'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-195">Click the Format tab.</span></span>
+71. <span data-ttu-id="ece3b-196">Wählen Sie in der Struktur 'Intrastat\Data\Totals by blocks\Total amount'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-196">In the tree, select 'Intrastat\Data\Totals by blocks\Total amount'.</span></span>
+72. <span data-ttu-id="ece3b-197">Klicken Sie auf die Registerkarte Zuordnung.</span><span class="sxs-lookup"><span data-stu-id="ece3b-197">Click the Mapping tab.</span></span>
+73. <span data-ttu-id="ece3b-198">Klicken Sie auf Formel bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="ece3b-198">Click Edit formula.</span></span>
+    * <span data-ttu-id="ece3b-199">Erstellen Sie eine Ausgabe mit dem fakturierten Gesamtbetrag für jeden Block im Bericht.</span><span class="sxs-lookup"><span data-stu-id="ece3b-199">Create output that will be the total of the invoiced amount for each block presented in this report.</span></span>  
+74. <span data-ttu-id="ece3b-200">Geben Sie im Feld Formel '"Summe des berechneten Betrags: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.</span><span class="sxs-lookup"><span data-stu-id="ece3b-200">In the Formula field, enter '"Sum of invoiced amount: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.</span></span>
+    * <span data-ttu-id="ece3b-201">"Summe des Rechnungsbetrags: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))</span><span class="sxs-lookup"><span data-stu-id="ece3b-201">"Sum of invoiced amount: " & TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))</span></span>  
+75. <span data-ttu-id="ece3b-202">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ece3b-202">Click Save.</span></span>
+76. <span data-ttu-id="ece3b-203">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ece3b-203">Close the page.</span></span>
+77. <span data-ttu-id="ece3b-204">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ece3b-204">Click Save.</span></span>
+78. <span data-ttu-id="ece3b-205">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="ece3b-205">Close the page.</span></span>
 
 

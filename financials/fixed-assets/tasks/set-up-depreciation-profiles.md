@@ -16,28 +16,28 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e6cfaaf715c157b7903860b292d1e70c03df8008
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4cf469ad1ae0db6a8764eedbcc0160afa03c2808
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-and-create-depreciation-profiles"></a>Abschreibungsprofile einrichten und erstellen
+# <a name="set-up-and-create-depreciation-profiles"></a><span data-ttu-id="9e41d-103">Abschreibungsprofile einrichten und erstellen</span><span class="sxs-lookup"><span data-stu-id="9e41d-103">Set up and create depreciation profiles</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Abschreibungsprofile bestimmen den Typ und die Häufigkeit der Abschreibung für eine Anlage.   Bei dieser Aufzeichnung werden das Demo-Unternehmen USMF sowie die Buchhalterrolle verwendet.
+<span data-ttu-id="9e41d-104">Abschreibungsprofile bestimmen den Typ und die Häufigkeit der Abschreibung für eine Anlage.</span><span class="sxs-lookup"><span data-stu-id="9e41d-104">Depreciation profiles determine the type and the frequency of depreciation for an asset.</span></span>   <span data-ttu-id="9e41d-105">Bei dieser Aufzeichnung werden das Demo-Unternehmen USMF sowie die Buchhalterrolle verwendet.</span><span class="sxs-lookup"><span data-stu-id="9e41d-105">This recording uses the USMF demo company and the accountant role.</span></span>
 
 
-## <a name="create-a-depreciation-profile"></a>Erstellen eines Abschreibungsprofils
-1. Wechseln Sie zu Anlagen > Einstellungen > Abschreibungsprofile.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Abschreibungsprofil" einen Wert ein.
-4. Geben Sie im Feld "Name" einen Wert ein.
-5. Wählen Sie im Feld "Methode" eine Option aus.
-    * Wenn Sie "Degressiv" auswählen, müssen Sie einen Prozentsatz in das Feld "Prozentsatz" eingeben.  
-6. Wählen Sie im Feld "Abschreibungsjahr" eine Option aus.
-7. Wählen Sie im Feld "Periodenhäufigkeit" eine Option aus.
-8. Schließt das Formular.
+## <a name="create-a-depreciation-profile"></a><span data-ttu-id="9e41d-106">Erstellen eines Abschreibungsprofils</span><span class="sxs-lookup"><span data-stu-id="9e41d-106">Create a depreciation profile</span></span>
+1. <span data-ttu-id="9e41d-107">Wechseln Sie zu Anlagen > Einstellungen > Abschreibungsprofile.</span><span class="sxs-lookup"><span data-stu-id="9e41d-107">Go to Fixed assets > Setup > Depreciation profiles.</span></span>
+2. <span data-ttu-id="9e41d-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="9e41d-108">Click New.</span></span>
+3. <span data-ttu-id="9e41d-109">Geben Sie im Feld "Abschreibungsprofil" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="9e41d-109">In the Depreciation profile field, type a value.</span></span>
+4. <span data-ttu-id="9e41d-110">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="9e41d-110">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="9e41d-111">Wählen Sie im Feld "Methode" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="9e41d-111">In the Method field, select an option.</span></span>
+    * <span data-ttu-id="9e41d-112">Wenn Sie "Degressiv" auswählen, müssen Sie einen Prozentsatz in das Feld "Prozentsatz" eingeben.</span><span class="sxs-lookup"><span data-stu-id="9e41d-112">If selecting reducing balance, you will need to enter a percentage in the Percentage field.</span></span>  
+6. <span data-ttu-id="9e41d-113">Wählen Sie im Feld "Abschreibungsjahr" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="9e41d-113">In the Depreciation year field, select an option.</span></span>
+7. <span data-ttu-id="9e41d-114">Wählen Sie im Feld "Periodenhäufigkeit" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="9e41d-114">In the Period frequency field, select an option.</span></span>
+8. <span data-ttu-id="9e41d-115">Schließt das Formular.</span><span class="sxs-lookup"><span data-stu-id="9e41d-115">Close the form.</span></span>
 
 

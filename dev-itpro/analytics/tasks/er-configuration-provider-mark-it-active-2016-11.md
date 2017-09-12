@@ -16,33 +16,33 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 17d0653890236ba5517b854088c04ea7db2593d7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: bdb3a3857a7293828a7766b6988c123a43e0673c
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-configuration-providand-mark-it-as-active-for-electronic-reporting-er"></a>Konfigurationsanbieter erstellen und als aktiv für elektronische Berichterstellung markieren
+# <a name="create-a-configuration-providand-mark-it-as-active-for-electronic-reporting-er"></a><span data-ttu-id="1f35d-103">Konfigurationsanbieter erstellen und als aktiv für elektronische Berichterstellung markieren</span><span class="sxs-lookup"><span data-stu-id="1f35d-103">Create a configuration providand mark it as active for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, einen Konfigurationsanbieter für elektronische Berichterstellung (ER) erstellen kann. Jede Konfiguration für elektronische Berichterstellung verweist auf den Anbieter als Autor der Konfiguration. In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen, Litware, Inc. Diese Schritte können in einem beliebigen Unternehmen ausgeführt werden, da ER-Konfigurationsanbieter unter allen Unternehmen geteilt werden.
+<span data-ttu-id="1f35d-104">In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, einen Konfigurationsanbieter für elektronische Berichterstellung (ER) erstellen kann.</span><span class="sxs-lookup"><span data-stu-id="1f35d-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER).</span></span> <span data-ttu-id="1f35d-105">Jede Konfiguration für elektronische Berichterstellung verweist auf den Anbieter als Autor der Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="1f35d-105">Each ER configuration will refer to the provider as the author of the configuration.</span></span> <span data-ttu-id="1f35d-106">In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen, Litware, Inc. Diese Schritte können in einem beliebigen Unternehmen ausgeführt werden, da ER-Konfigurationsanbieter unter allen Unternehmen geteilt werden.</span><span class="sxs-lookup"><span data-stu-id="1f35d-106">In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.</span></span>
 
 
-## <a name="create-a-provider"></a>Anbieter erstellen
-1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-2. Klicken Sie auf "Konfigurationsanbieter".
-3. Klicken Sie auf "Neu".
-    * Ein Anbieterdatensatz ist nach Name und URL eindeutig. Überprüfen Sie den Inhalt dieser Seite und lassen Sie diese Prozedur aus, wenn bereits ein Datensatz für Litware, Inc.(http://www.litware.com) besteht.  
-4. Geben Sie im Feld "Name" "Litware, Inc." ein.
-    * Litware, Inc.  
-5. Geben Sie im Feld "Internetadresse" "http://www.litware.com" ein.
-    * http://www.litware.com  
-6. Klicken Sie auf "Speichern".
-7. Schließen Sie die Seite.
+## <a name="create-a-provider"></a><span data-ttu-id="1f35d-107">Anbieter erstellen</span><span class="sxs-lookup"><span data-stu-id="1f35d-107">Create a provider</span></span>
+1. <span data-ttu-id="1f35d-108">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="1f35d-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="1f35d-109">Klicken Sie auf "Konfigurationsanbieter".</span><span class="sxs-lookup"><span data-stu-id="1f35d-109">Click Configuration providers.</span></span>
+3. <span data-ttu-id="1f35d-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="1f35d-110">Click New.</span></span>
+    * <span data-ttu-id="1f35d-111">Ein Anbieterdatensatz ist nach Name und URL eindeutig.</span><span class="sxs-lookup"><span data-stu-id="1f35d-111">A provider record has a unique name and URL.</span></span> <span data-ttu-id="1f35d-112">Überprüfen Sie den Inhalt dieser Seite und lassen Sie diese Prozedur aus, wenn bereits ein Datensatz für Litware, Inc.(http://www.litware.com) besteht.</span><span class="sxs-lookup"><span data-stu-id="1f35d-112">Review the content of this page and skip this procedure if a record for Litware, Inc. (http://www.litware.com) already exists.</span></span>  
+4. <span data-ttu-id="1f35d-113">Geben Sie im Feld "Name" "Litware, Inc." ein.</span><span class="sxs-lookup"><span data-stu-id="1f35d-113">In the Name field, type 'Litware, Inc.'.</span></span>
+    * <span data-ttu-id="1f35d-114">Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="1f35d-114">Litware, Inc.</span></span>  
+5. <span data-ttu-id="1f35d-115">Geben Sie im Feld "Internetadresse" "http://www.litware.com" ein.</span><span class="sxs-lookup"><span data-stu-id="1f35d-115">In the Internet address field, type 'http://www.litware.com'.</span></span>
+    * <span data-ttu-id="1f35d-116">http://www.litware.com</span><span class="sxs-lookup"><span data-stu-id="1f35d-116">http://www.litware.com</span></span>  
+6. <span data-ttu-id="1f35d-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="1f35d-117">Click Save.</span></span>
+7. <span data-ttu-id="1f35d-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="1f35d-118">Close the page.</span></span>
 
-## <a name="select-as-an-active-provider"></a>Als aktiven Anbieter auswählen
-1. Wählen Sie den "Litware, Inc."- Anbieter.
-2. Klicken Sie auf "Als aktiv festlegen"
+## <a name="select-as-an-active-provider"></a><span data-ttu-id="1f35d-119">Als aktiven Anbieter auswählen</span><span class="sxs-lookup"><span data-stu-id="1f35d-119">Select as an active provider</span></span>
+1. <span data-ttu-id="1f35d-120">Wählen Sie den "Litware, Inc."- Anbieter.</span><span class="sxs-lookup"><span data-stu-id="1f35d-120">Select the Litware, Inc. provider.</span></span>
+2. <span data-ttu-id="1f35d-121">Klicken Sie auf "Als aktiv festlegen"</span><span class="sxs-lookup"><span data-stu-id="1f35d-121">Click Set active.</span></span>
 
 

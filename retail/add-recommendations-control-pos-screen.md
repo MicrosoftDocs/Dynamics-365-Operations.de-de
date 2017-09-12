@@ -19,67 +19,67 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
-ms.openlocfilehash: 1cb80decf8ef0f182feec5d4cbe76b37b106dcd2
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 7f8522110c0d7d5277b0b3f3c7b21d8605d43f2c
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Hinzufügen eines Empfehlungssteuerelement der Buchungsseite auf einem POS-Gerät
+# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a><span data-ttu-id="7d0b7-103">Hinzufügen eines Empfehlungssteuerelement der Buchungsseite auf einem POS-Gerät</span><span class="sxs-lookup"><span data-stu-id="7d0b7-103">Add a recommendations control to the transaction page on a POS device</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, wie Sie einem Empfehlungssteuerelement dem Buchungsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 for Retail Arbeitsgänge hinzufügen.
+<span data-ttu-id="7d0b7-104">In diesem Thema wird beschrieben, wie Sie einem Empfehlungssteuerelement dem Buchungsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 for Retail Arbeitsgänge hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-104">This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.</span></span>
 
-Sie können Produktempfehlungen zu Ihrem POS-Gerät anzeigen, wenn Sie Microsoft Dynamics 365 for Retail verwenden. *Empfehlungen* sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben. Um Produktempfehlungen anzuzeigen, müssen Sie dem Buchungsbildschirm eine Steuerung mithilfe des Bildschirmlayoutdesigners hinzufügen.
+<span data-ttu-id="7d0b7-105">Sie können Produktempfehlungen zu Ihrem POS-Gerät anzeigen, wenn Sie Microsoft Dynamics 365 for Retail verwenden.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-105">You can display product recommendations on your POS device when you use Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="7d0b7-106">*Empfehlungen* sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-106">*Recommendations* are items that your customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores.</span></span> <span data-ttu-id="7d0b7-107">Um Produktempfehlungen anzuzeigen, müssen Sie dem Buchungsbildschirm eine Steuerung mithilfe des Bildschirmlayoutdesigners hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-107">To display product recommendations, you need to add a control to the transaction screen using the screen layout designer.</span></span>
 
-## <a name="open-layout-designer"></a>Layoutdesigner öffnen
-1.  Wechseln Sie zu **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS** &gt; **Bildschirmlayouts**.
-2.  Suchen Sie mithilfe der Filteroptionen den Bildschirm, dem Sie eine Steuerung hinzufügen möchten. Filtern Sie beispielsweise im Feld **Bildschirmlayout-ID** einen Wert von "F2CP16: 9M".
-3.  Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Wählen Sie beispielsweise "Name: F2CP16: 9M Bildschirmlayout Kennung: F2CP16: 9M".
-4.  Klicken Sie auf **Layout-Designer**
-5.  Folgen Sie den Aufforderungen, um den Layout-Designer zu starten. Wenn Sie aufgefordert werden, die Anmeldeinformationen einzugeben, geben Sie die gleichen Anmeldeinformationen ein, die verwendet wurden, als die Seite **Bildschirmlayouts** ausgelöst wurde.
-6.  Wenn Sie sich anmelden, erscheint eine Seite, ähnlich jener unten. Das Layout ist verschieden, abhängig von den Anpassungen, die für Ihre Filiale vorgenommen wurden.
+## <a name="open-layout-designer"></a><span data-ttu-id="7d0b7-108">Layoutdesigner öffnen</span><span class="sxs-lookup"><span data-stu-id="7d0b7-108">Open Layout designer</span></span>
+1.  <span data-ttu-id="7d0b7-109">Wechseln Sie zu **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS** &gt; **Bildschirmlayouts**.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-109">Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.</span></span>
+2.  <span data-ttu-id="7d0b7-110">Suchen Sie mithilfe der Filteroptionen den Bildschirm, dem Sie eine Steuerung hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-110">Use the Quick Filter to find the screen that you want to add the control to.</span></span> <span data-ttu-id="7d0b7-111">Filtern Sie beispielsweise im Feld **Bildschirmlayout-ID** einen Wert von "F2CP16: 9M".</span><span class="sxs-lookup"><span data-stu-id="7d0b7-111">For example, filter on the **Screen layout ID** field using a value of ‘F2CP16:9M’.</span></span>
+3.  <span data-ttu-id="7d0b7-112">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-112">In the list, find and select the desired record.</span></span> <span data-ttu-id="7d0b7-113">Wählen Sie beispielsweise "Name: F2CP16: 9M Bildschirmlayout Kennung: F2CP16: 9M".</span><span class="sxs-lookup"><span data-stu-id="7d0b7-113">For example, select ‘Name: F2CP16:9M Screen Layout ID: F2CP16:9M’.</span></span>
+4.  <span data-ttu-id="7d0b7-114">Klicken Sie auf **Layout-Designer**</span><span class="sxs-lookup"><span data-stu-id="7d0b7-114">Click **Layout designer**.</span></span>
+5.  <span data-ttu-id="7d0b7-115">Folgen Sie den Aufforderungen, um den Layout-Designer zu starten.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-115">Follow the prompts to launch the layout designer.</span></span> <span data-ttu-id="7d0b7-116">Wenn Sie aufgefordert werden, die Anmeldeinformationen einzugeben, geben Sie die gleichen Anmeldeinformationen ein, die verwendet wurden, als die Seite **Bildschirmlayouts** ausgelöst wurde.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-116">When prompted for credentials, enter the same credentials that were in use when the Layout designer was launched from **Screen layouts** page.</span></span>
+6.  <span data-ttu-id="7d0b7-117">Wenn Sie sich anmelden, erscheint eine Seite, ähnlich jener unten.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-117">When you log in, a page similar to the one below appears.</span></span> <span data-ttu-id="7d0b7-118">Das Layout ist verschieden, abhängig von den Anpassungen, die für Ihre Filiale vorgenommen wurden.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-118">The layout will be different depending on the customizations that were made for your store.</span></span>
 
-[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Wählen eine Anzeigeoption aus
+<span data-ttu-id="7d0b7-119">[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Wählen eine Anzeigeoption aus</span><span class="sxs-lookup"><span data-stu-id="7d0b7-119">[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Choose a display option</span></span>
 -----------------------
 
-Es stehen zwei Optionen für die Konfiguration zur Verfügung. Wählen Sie die Option, die am besten für Ihren Shop passt und folgen Sie den Anweisungen, um die Steueurung eizrichten. Es gibt zwei Optionen:
--   Empfehlungen sind immer angezeigt.
--   A Registerkarte **Empfehlungen** wird im Gitter auf der rechten Seite des Bildschirms angezeigt.
+<span data-ttu-id="7d0b7-120">Es stehen zwei Optionen für die Konfiguration zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-120">There are two configurations options available.</span></span> <span data-ttu-id="7d0b7-121">Wählen Sie die Option, die am besten für Ihren Shop passt und folgen Sie den Anweisungen, um die Steueurung eizrichten.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-121">Choose the option that works best for your store, and follow the remaining instructions to finish setting up the control.</span></span> <span data-ttu-id="7d0b7-122">Es gibt zwei Optionen:</span><span class="sxs-lookup"><span data-stu-id="7d0b7-122">The two options are:</span></span>
+-   <span data-ttu-id="7d0b7-123">Empfehlungen sind immer angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-123">Recommendations are always visible.</span></span>
+-   <span data-ttu-id="7d0b7-124">A Registerkarte **Empfehlungen** wird im Gitter auf der rechten Seite des Bildschirms angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-124">A **Recommendations** tab appears in the grid on the right side of the screen.</span></span>
 
-#### <a name="to-make-recommendations-always-visible"></a>Um Empfehlungen immer anzuzeigen
+#### <a name="to-make-recommendations-always-visible"></a><span data-ttu-id="7d0b7-125">Um Empfehlungen immer anzuzeigen</span><span class="sxs-lookup"><span data-stu-id="7d0b7-125">To make recommendations always visible</span></span>
 
-1.  Reduzieren Sie die Höhe des Buchungspositionsdetailbereichs, so dass er die gleiche Höhe hat wie der Debitorenbereich links.[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
-2.  Klicken Sie im Menü auf der linken Seite, und ziehen Sie das Empfehlungssteuerelement zwischen den Buchungspositionsdetailbereich und den Schaltflächenraster im mittleren unteren Transaktlions-Bildschirmrands. Ändern Sie die Steuerung, so dass die Größe in diesen Bereich passt.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
-3.  Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.
-4.  In Dynamics 365 for Retail gehen Sie zu **Einzelhandel** &gt; **Einzelhandel IT** &gt; **Verteilungszeitpläne** .
-5.  Wählen Sie in der **1090 Anmelden**
-6.  Klicken Sie auf **Jetzt ausführen**
+1.  <span data-ttu-id="7d0b7-126">Reduzieren Sie die Höhe des Buchungspositionsdetailbereichs, so dass er die gleiche Höhe hat wie der Debitorenbereich links.[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)</span><span class="sxs-lookup"><span data-stu-id="7d0b7-126">Reduce the height of the transaction lines details area so that it is the same height as the customer panel to its left.[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)</span></span>
+2.  <span data-ttu-id="7d0b7-127">Klicken Sie im Menü auf der linken Seite, und ziehen Sie das Empfehlungssteuerelement zwischen den Buchungspositionsdetailbereich und den Schaltflächenraster im mittleren unteren Transaktlions-Bildschirmrands.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-127">From the menu on the left, drag and drop the recommendations control to between the transaction line details area and the button grid in the center bottom of the transaction screen.</span></span> <span data-ttu-id="7d0b7-128">Ändern Sie die Steuerung, so dass die Größe in diesen Bereich passt.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)</span><span class="sxs-lookup"><span data-stu-id="7d0b7-128">Resize the control so it fits in that space.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)</span></span>
+3.  <span data-ttu-id="7d0b7-129">Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-129">Click the **X** to save and exit Layout designer.</span></span>
+4.  <span data-ttu-id="7d0b7-130">In Dynamics 365 for Retail gehen Sie zu **Einzelhandel** &gt; **Einzelhandel IT** &gt; **Verteilungszeitpläne** .</span><span class="sxs-lookup"><span data-stu-id="7d0b7-130">In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.</span></span>
+5.  <span data-ttu-id="7d0b7-131">Wählen Sie in der **1090 Anmelden**</span><span class="sxs-lookup"><span data-stu-id="7d0b7-131">In the list, select **1090 Registers**.</span></span>
+6.  <span data-ttu-id="7d0b7-132">Klicken Sie auf **Jetzt ausführen**</span><span class="sxs-lookup"><span data-stu-id="7d0b7-132">Click **Run now**.</span></span>
 
-#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Um eine Registerkarte "Empfehlungen" dem Schaltflächengitter auf der rechten Seite des Bildschirms hinzuzufügen
+#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a><span data-ttu-id="7d0b7-133">Um eine Registerkarte "Empfehlungen" dem Schaltflächengitter auf der rechten Seite des Bildschirms hinzuzufügen</span><span class="sxs-lookup"><span data-stu-id="7d0b7-133">To add a Recommendations tab to the button grid on the right side of the screen</span></span>
 
-1.  Machen Sie einen Rechtsklick im Leerraum unter der letzten Registerkarte im Schaltflächenraster auf der rechten Seite.
-2.  Klicken Sie auf **Anpassen**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)
-3.  Klicken Sie auf **Neue Registerkarte**
-4.  Suchen Sie die neue Registerkarte, die Sie hinzugefügt haben. Sie müssen möglicherweise einen Bildlauf nach unten machen.
-5.  Wählen Sie im Dropdown-Menü unter **Inhalte** **Empfohlene Produkte**. [![pic-6](./media/pic-6.png)](./media/pic-6.png)
-6.  Geben Sie im Feld **Beschreibung** einen Namen für die Registerkarte Empfehlungen ein. Beispielsweise die Art "Empfohlene Produkte".
-7.  Wählen Sie im Feld **Fild** das Bild, das auf der Registerkarte angezeigt werden soll.
-8.  Klicken Sie auf **OK**. Die Registerkarte wird im neuen Schaltflächenraster angezeigt.
-9.  Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.
-10. In Dynamics 365 for Retail gehen Sie zu **Einzelhandel** &gt; **Einzelhandel IT** &gt; **Verteilungszeitpläne** .
-11. Wählen Sie in der **1090 Anmelden**
-12. Klicken Sie auf **Jetzt ausführen**
+1.  <span data-ttu-id="7d0b7-134">Machen Sie einen Rechtsklick im Leerraum unter der letzten Registerkarte im Schaltflächenraster auf der rechten Seite.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-134">Right-click in the empty space below the last tab on the button grid located on the right side of the page.</span></span>
+2.  <span data-ttu-id="7d0b7-135">Klicken Sie auf **Anpassen**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)</span><span class="sxs-lookup"><span data-stu-id="7d0b7-135">Click **Customize**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)</span></span>
+3.  <span data-ttu-id="7d0b7-136">Klicken Sie auf **Neue Registerkarte**</span><span class="sxs-lookup"><span data-stu-id="7d0b7-136">Click **New tab**.</span></span>
+4.  <span data-ttu-id="7d0b7-137">Suchen Sie die neue Registerkarte, die Sie hinzugefügt haben.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-137">Find the new tab that you just added.</span></span> <span data-ttu-id="7d0b7-138">Sie müssen möglicherweise einen Bildlauf nach unten machen.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-138">You may need to scroll down.</span></span>
+5.  <span data-ttu-id="7d0b7-139">Wählen Sie im Dropdown-Menü unter **Inhalte** **Empfohlene Produkte**.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-139">In the **Contents** drop-down, select **Recommended products**.</span></span> <span data-ttu-id="7d0b7-140">[![pic-6](./media/pic-6.png)](./media/pic-6.png)</span><span class="sxs-lookup"><span data-stu-id="7d0b7-140">[![pic-6](./media/pic-6.png)](./media/pic-6.png)</span></span>
+6.  <span data-ttu-id="7d0b7-141">Geben Sie im Feld **Beschreibung** einen Namen für die Registerkarte Empfehlungen ein.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-141">In the **Label** field, type a name for the recommendations tab.</span></span> <span data-ttu-id="7d0b7-142">Beispielsweise die Art "Empfohlene Produkte".</span><span class="sxs-lookup"><span data-stu-id="7d0b7-142">For example, type ‘Recommended products’.</span></span>
+7.  <span data-ttu-id="7d0b7-143">Wählen Sie im Feld **Fild** das Bild, das auf der Registerkarte angezeigt werden soll.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-143">In the **Image** field, select the image to appear on the tab.</span></span>
+8.  <span data-ttu-id="7d0b7-144">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-144">Click **OK**.</span></span> <span data-ttu-id="7d0b7-145">Die Registerkarte wird im neuen Schaltflächenraster angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-145">The new tab appears in the button grid.</span></span>
+9.  <span data-ttu-id="7d0b7-146">Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.</span><span class="sxs-lookup"><span data-stu-id="7d0b7-146">Click the **X** to save and exit Layout designer.</span></span>
+10. <span data-ttu-id="7d0b7-147">In Dynamics 365 for Retail gehen Sie zu **Einzelhandel** &gt; **Einzelhandel IT** &gt; **Verteilungszeitpläne** .</span><span class="sxs-lookup"><span data-stu-id="7d0b7-147">In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.</span></span>
+11. <span data-ttu-id="7d0b7-148">Wählen Sie in der **1090 Anmelden**</span><span class="sxs-lookup"><span data-stu-id="7d0b7-148">In the list, select **1090 Registers**.</span></span>
+12. <span data-ttu-id="7d0b7-149">Klicken Sie auf **Jetzt ausführen**</span><span class="sxs-lookup"><span data-stu-id="7d0b7-149">Click **Run now**.</span></span>
 
 
-<a name="see-also"></a>Siehe auch
+<a name="see-also"></a><span data-ttu-id="7d0b7-150">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7d0b7-150">See also</span></span>
 --------
 
-[Personalisierte Produktempfehlungen, Übersicht](personalized-product-recommendations.md)
+[<span data-ttu-id="7d0b7-151">Personalisierte Produktempfehlungen, Übersicht</span><span class="sxs-lookup"><span data-stu-id="7d0b7-151">Personalized product recommendations overview</span></span>](personalized-product-recommendations.md)
 
 
 

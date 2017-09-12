@@ -17,36 +17,36 @@ ms.assetid: 3a7c3d13-8dbc-442d-a281-ac0ebe99ec83
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74ad59504d6bbea0c604e0f0b83e74c915e84019
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7a5340baad38864388abcfab3235cf459887cba9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="update-standard-costs-in-a-manufacturing-environment"></a>Aktualisieren der Standardkosten in einer Produktionsumgebung
+# <a name="update-standard-costs-in-a-manufacturing-environment"></a><span data-ttu-id="c78a2-103">Aktualisieren der Standardkosten in einer Produktionsumgebung</span><span class="sxs-lookup"><span data-stu-id="c78a2-103">Update standard costs in a manufacturing environment</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel bietet eine Anleitung zum Aktualisieren von Standardkosten in einer Umgebung ohne Produktionstätigkeit. 
+<span data-ttu-id="c78a2-104">Dieser Artikel bietet eine Anleitung zum Aktualisieren von Standardkosten in einer Umgebung ohne Produktionstätigkeit.</span><span class="sxs-lookup"><span data-stu-id="c78a2-104">This article provides guidance about how to update standard costs in a manufacturing environment.</span></span> 
 
-Aktualisierungen können neue Artikel, Kostenkategorien oder Berechnungsformeln für indirekte Kosten darstellen. Sie können auch Korrekturen und Kostenänderungen wiedergeben. Der Typ der Aktualisierung beeinflusst die Schritte, die erforderlich sind, um Standardkosten zu aktualisieren, wie in den folgenden Fällen veranschaulicht wird.
+<span data-ttu-id="c78a2-105">Aktualisierungen können neue Artikel, Kostenkategorien oder Berechnungsformeln für indirekte Kosten darstellen.</span><span class="sxs-lookup"><span data-stu-id="c78a2-105">Updates can reflect new items, cost categories, or indirect cost calculation formulas.</span></span> <span data-ttu-id="c78a2-106">Sie können auch Korrekturen und Kostenänderungen wiedergeben.</span><span class="sxs-lookup"><span data-stu-id="c78a2-106">They can also reflect corrections and cost changes.</span></span> <span data-ttu-id="c78a2-107">Der Typ der Aktualisierung beeinflusst die Schritte, die erforderlich sind, um Standardkosten zu aktualisieren, wie in den folgenden Fällen veranschaulicht wird.</span><span class="sxs-lookup"><span data-stu-id="c78a2-107">The type of update affects the steps that you must complete to update standard costs, as illustrated in the following cases:</span></span>
 
--   Geben Sie die erwarteten Standardkostenänderungen für eingekaufte Artikel ein, und ändern Sie anschließend den Status der Artikelkostendatensätze für das entsprechende Datum auf **Aktiv**. Sie führen jedoch keine Neuberechnung der Kosten für produzierte Artikel durch, für die die eingekauften Artikel verwendet werden.
--   Sie geben die Standardkosten für einen neuen eingekauften Artikel ein, führen jedoch keine Neuberechnung der Kosten für produzierte Artikel mit einer Stücklistenversion (BOM) durch, die den neuen eingekauften Artikel als Komponente enthält.
--   Sie korrigieren oder ändern die Kosten eines eingekauften Artikels oder Sie ändern die Kostengruppe, die einem eingekauften Artikel zugewiesen ist und berechnen die Kosten für alle produzierten Artikel mit einer Stücklistenversion, die den eingekauften Artikel als Komponente enthält.
--   Sie ändern die Kosten für eine Kostenkategorie und berechnen die Kosten für alle produzierten Artikel mit einer Arbeitsplanversion, die Arbeitsgänge des Arbeitsplans mit dieser Kostenkategorie enthält.
--   Ändern Sie die Kostenkategorien, die Arbeitsgängen des Arbeitsplans zugewiesen sind, oder die Kostengruppe, die Kostenkategorien zugewiesen ist. Berechnen Sie anschließend die Kosten für alle produzierten Artikel mit einer Arbeitsplanversion, die Arbeitsgänge des Arbeitsplans mit dieser Kostenkategorie enthält.
--   Sie ändern eine Berechnungsformel für indirekte Kosten und berechnen die Kosten für alle produzierten Artikel, auf die sich diese Änderung auswirkt.
--   Sie ändern den Produktionsstandort eines produzierten Artikels oder fügen einen Produktionsstandort hinzu und berechnen die Produktionskosten des Artikels für diesen Standort.
--   Sie führen eine (Neu-)Berechnung der Kosten für einen produzierten Artikel durch und berechnen die Kosten für alle produzierten Artikel mit einer Stücklistenversion neu, die den produzierten Artikel als Komponente enthält.
--   Sie berechnen die Kosten für einen neuen produzierten Artikel auf Basis der Informationen zur definierten, genehmigten und aktiven Stückliste bzw. zum Arbeitsplan.
+-   <span data-ttu-id="c78a2-108">Geben Sie die erwarteten Standardkostenänderungen für eingekaufte Artikel ein, und ändern Sie anschließend den Status der Artikelkostendatensätze für das entsprechende Datum auf **Aktiv**.</span><span class="sxs-lookup"><span data-stu-id="c78a2-108">Enter expected standard cost changes for purchased items, and then change the status of the item cost records to **Active** on the appropriate date.</span></span> <span data-ttu-id="c78a2-109">Sie führen jedoch keine Neuberechnung der Kosten für produzierte Artikel durch, für die die eingekauften Artikel verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="c78a2-109">However, don't recalculate the costs of manufactured items that use the purchased items.</span></span>
+-   <span data-ttu-id="c78a2-110">Sie geben die Standardkosten für einen neuen eingekauften Artikel ein, führen jedoch keine Neuberechnung der Kosten für produzierte Artikel mit einer Stücklistenversion (BOM) durch, die den neuen eingekauften Artikel als Komponente enthält.</span><span class="sxs-lookup"><span data-stu-id="c78a2-110">Enter standard costs for a new purchased item, but don't recalculate the costs of manufactured items that have a bill of materials (BOM) version that contains the new purchased item as a component.</span></span>
+-   <span data-ttu-id="c78a2-111">Sie korrigieren oder ändern die Kosten eines eingekauften Artikels oder Sie ändern die Kostengruppe, die einem eingekauften Artikel zugewiesen ist und berechnen die Kosten für alle produzierten Artikel mit einer Stücklistenversion, die den eingekauften Artikel als Komponente enthält.</span><span class="sxs-lookup"><span data-stu-id="c78a2-111">Correct or change the cost of a purchased item, or change the cost group that is assigned to a purchased item, and calculate the cost for all manufactured items that have a BOM version that contains the purchased item as a component.</span></span>
+-   <span data-ttu-id="c78a2-112">Sie ändern die Kosten für eine Kostenkategorie und berechnen die Kosten für alle produzierten Artikel mit einer Arbeitsplanversion, die Arbeitsgänge des Arbeitsplans mit dieser Kostenkategorie enthält.</span><span class="sxs-lookup"><span data-stu-id="c78a2-112">Change the cost for a cost category, and calculate the cost for all manufactured items that have a route version that contains routing operations that use the cost category.</span></span>
+-   <span data-ttu-id="c78a2-113">Ändern Sie die Kostenkategorien, die Arbeitsgängen des Arbeitsplans zugewiesen sind, oder die Kostengruppe, die Kostenkategorien zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="c78a2-113">Change the cost categories that are assigned to routing operations or the cost group that is assigned to cost categories.</span></span> <span data-ttu-id="c78a2-114">Berechnen Sie anschließend die Kosten für alle produzierten Artikel mit einer Arbeitsplanversion, die Arbeitsgänge des Arbeitsplans mit dieser Kostenkategorie enthält.</span><span class="sxs-lookup"><span data-stu-id="c78a2-114">Then calculate the cost for all manufactured items that have a route version that contains routing operations that use the cost category.</span></span>
+-   <span data-ttu-id="c78a2-115">Sie ändern eine Berechnungsformel für indirekte Kosten und berechnen die Kosten für alle produzierten Artikel, auf die sich diese Änderung auswirkt.</span><span class="sxs-lookup"><span data-stu-id="c78a2-115">Change an indirect cost calculation formula, and calculate the cost for all manufactured items that are affected by the change.</span></span>
+-   <span data-ttu-id="c78a2-116">Sie ändern den Produktionsstandort eines produzierten Artikels oder fügen einen Produktionsstandort hinzu und berechnen die Produktionskosten des Artikels für diesen Standort.</span><span class="sxs-lookup"><span data-stu-id="c78a2-116">Change or add a manufacturing site for a manufactured item, and calculate the item's manufactured cost for the site.</span></span>
+-   <span data-ttu-id="c78a2-117">Sie führen eine (Neu-)Berechnung der Kosten für einen produzierten Artikel durch und berechnen die Kosten für alle produzierten Artikel mit einer Stücklistenversion neu, die den produzierten Artikel als Komponente enthält.</span><span class="sxs-lookup"><span data-stu-id="c78a2-117">Calculate, or recalculate, the cost for a manufactured item, and recalculate the cost for all manufactured items that have a BOM version that contains the manufactured item as a component.</span></span>
+-   <span data-ttu-id="c78a2-118">Sie berechnen die Kosten für einen neuen produzierten Artikel auf Basis der Informationen zur definierten, genehmigten und aktiven Stückliste bzw. zum Arbeitsplan.</span><span class="sxs-lookup"><span data-stu-id="c78a2-118">Calculate costs for a new manufactured item, based on its defined, approved, and active BOM and route information.</span></span>
 
-Überlegen Sie in jedem der aufgeführten Fälle sehr sorgfältig, wie die Standardkosten aktualisiert werden können.
+<span data-ttu-id="c78a2-119">Überlegen Sie in jedem der aufgeführten Fälle sehr sorgfältig, wie die Standardkosten aktualisiert werden können.</span><span class="sxs-lookup"><span data-stu-id="c78a2-119">Each case requires careful consideration about how to update standard costs.</span></span>
 
 
 

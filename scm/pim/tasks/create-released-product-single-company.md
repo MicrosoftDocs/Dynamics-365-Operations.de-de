@@ -16,90 +16,90 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 503e687a6a89d5a41f45de8b647c4fdf57a866bb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 042eafc29e377e0ad6fb8dc1499daf8eb105b7ed
 ms.contentlocale: de-de
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-released-product-for-a-single-company"></a>Ein freigegebenes Produkt für ein einzelnes Unternehmen erstellen
+# <a name="create-a-released-product-for-a-single-company"></a><span data-ttu-id="ec097-103">Ein freigegebenes Produkt für ein einzelnes Unternehmen erstellen</span><span class="sxs-lookup"><span data-stu-id="ec097-103">Create a released product for a single company</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In dieser Prozedur wird erläutert, wie ein einzelnes freigegebenes Produkt im Rahmen einer einzelnen gültigen Einheit erstellt wird. Nachdem das freigegebene Produkt erstellt wurde, ist es sofort in ausschließlich dieser Einheit verfügbar. Sie können diese Prozedur im Demodatenunternehmen USMF ausführen. Diese Aufgabe wird in der Regel von einem Produktdesigner ausgeführt.
+<span data-ttu-id="ec097-104">In dieser Prozedur wird erläutert, wie ein einzelnes freigegebenes Produkt im Rahmen einer einzelnen gültigen Einheit erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="ec097-104">This procedure walks through how to create a single released product in the context of a single legal unit.</span></span> <span data-ttu-id="ec097-105">Nachdem das freigegebene Produkt erstellt wurde, ist es sofort in ausschließlich dieser Einheit verfügbar.</span><span class="sxs-lookup"><span data-stu-id="ec097-105">After the released product is created,  it's immediately available in this unit only.</span></span> <span data-ttu-id="ec097-106">Sie können diese Prozedur im Demodatenunternehmen USMF ausführen.</span><span class="sxs-lookup"><span data-stu-id="ec097-106">You can walk through this procedure in demo data company USMF.</span></span> <span data-ttu-id="ec097-107">Diese Aufgabe wird in der Regel von einem Produktdesigner ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="ec097-107">This task is usually performed by a product designer.</span></span>
 
 
-## <a name="create-a-released-product"></a>Freigegebenes Produkt erstellen
-1. Wechseln Sie zu "Freigegebene Produkte".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Produktnummer" einen Wert ein.
-    * Wenn eine Produktnummer nicht automatisch im Feld "Produktnummer" eingegeben wird, geben Sie eine eindeutige Produktnummer ein. Dieser Schritt ist nur erforderlich, wenn kein Nummernkreis für Produktnummern eingerichtet wurde.  
-4. Geben Sie im Feld "Produktname" einen Wert ein.
-    * Der Produktname wird als Suchbegriff beibehalten. Bei Bedarf können Sie auswählen, den Suchbegriff zu ändern.  
-5. Klicken Sie im Feld "Artikelmodellgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Artikelmodellgruppen enthalten Einstellungen, die bestimmen, wie Artikel beim Artikelzugang und -abgang gesteuert und gehandhabt werden. Die Einstellungen bestimmen auch, wie der Verbrauch von Artikeln berechnet wird.  
-6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Klicken Sie im Feld "Artikelgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Artikelgruppen werden verwendet, um den Bestand zu verwalten, indem Sie Lagerartikel auf der Grundlage von Artikelmerkmalen in Gruppen einteilen. Um z. B. einzustellen, wie Informationen zu den Hauptkonten gebucht werden, können Sie eine Reihe verschiedener Artikelgruppen erstellen, die speziellen Hauptkonten zugeordnet sind. Auf diese Weise können Sie den Bestand von Artikeln in verschiedenen Phasen verfolgen.  
-9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-10. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-11. Klicken Sie im Feld "Lagerdimensionsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Mit Lagerdimensionsgruppen kann gesteuert werden, wie Artikel im Lagerbestand gespeichert und aus dem Lagerbestand entnommen werden. So kann eine Lagerdimension Standort und Lagerort sein.  
-12. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-13. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-14. Klicken Sie im Feld "Rückverfolgungsangaben-Gruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Rückverfolgungsangabengruppe bestimmt, welche Rückverfolgungsangaben Sie einem Produkt hinzufügen können. Die Chargennummer und die Seriennummer können z. B. zum Nachverfolgen von Lagerartikeln verwendet werden.  
-15. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-16. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-17. Klicken Sie im Feld "Lagereinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Lagereinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es im Lagerbestand gespeichert wird.  
-18. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-19. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-20. Klicken Sie im Feld "Bestelleinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Bestelleinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es von einem Kreditor erworben wird.  
-21. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-22. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-23. Klicken Sie im Feld "Verkaufseinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Verkaufseinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es an einen Debitor verkauft wird.  
-24. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-25. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-26. Klicken Sie im Feld "Stücklisteneinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Stücklisteneinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wen es in einer Stückliste (BOM) einbezogen werden soll.  
-27. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-28. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-29. Klicken Sie im Feld "Mehrwertsteuergruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Artikel-Mehrwertsteuergruppe in der Vertriebsbesteuerungsgruppe bestimmt, wie die Mehrwertsteuer für jeden Artikel berechnet wird.  
-30. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-31. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-32. Klicken Sie im Feld "Mehrwertsteuergruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Artikel-Mehrwertsteuergruppe in der Umsatzsteuergruppe bestimmt, wie die Umsatzsteuer für jeden Artikel berechnet wird.  
-33. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-34. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-35. Klicken Sie auf "OK".
+## <a name="create-a-released-product"></a><span data-ttu-id="ec097-108">Freigegebenes Produkt erstellen</span><span class="sxs-lookup"><span data-stu-id="ec097-108">Create a released product</span></span>
+1. <span data-ttu-id="ec097-109">Wechseln Sie zu "Freigegebene Produkte".</span><span class="sxs-lookup"><span data-stu-id="ec097-109">Go to Released products.</span></span>
+2. <span data-ttu-id="ec097-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ec097-110">Click New.</span></span>
+3. <span data-ttu-id="ec097-111">Geben Sie im Feld "Produktnummer" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="ec097-111">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="ec097-112">Wenn eine Produktnummer nicht automatisch im Feld "Produktnummer" eingegeben wird, geben Sie eine eindeutige Produktnummer ein.</span><span class="sxs-lookup"><span data-stu-id="ec097-112">If a product number is not automatically entered in the Product number field, type a unique product number.</span></span> <span data-ttu-id="ec097-113">Dieser Schritt ist nur erforderlich, wenn kein Nummernkreis für Produktnummern eingerichtet wurde.</span><span class="sxs-lookup"><span data-stu-id="ec097-113">This step is only  required if no number sequence has been set up for product numbers.</span></span>  
+4. <span data-ttu-id="ec097-114">Geben Sie im Feld "Produktname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="ec097-114">In the Product name field, type a value.</span></span>
+    * <span data-ttu-id="ec097-115">Der Produktname wird als Suchbegriff beibehalten.</span><span class="sxs-lookup"><span data-stu-id="ec097-115">The Product name is defaulted to the search name.</span></span> <span data-ttu-id="ec097-116">Bei Bedarf können Sie auswählen, den Suchbegriff zu ändern.</span><span class="sxs-lookup"><span data-stu-id="ec097-116">If needed, you can select to change the search name.</span></span>  
+5. <span data-ttu-id="ec097-117">Klicken Sie im Feld "Artikelmodellgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-117">In the Item model group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-118">Die Artikelmodellgruppen enthalten Einstellungen, die bestimmen, wie Artikel beim Artikelzugang und -abgang gesteuert und gehandhabt werden.</span><span class="sxs-lookup"><span data-stu-id="ec097-118">The item model groups contain settings that determine how items are controlled and handled on item receipts and issues.</span></span> <span data-ttu-id="ec097-119">Die Einstellungen bestimmen auch, wie der Verbrauch von Artikeln berechnet wird.</span><span class="sxs-lookup"><span data-stu-id="ec097-119">The settings also determine how the consumption of items are calculated.</span></span>  
+6. <span data-ttu-id="ec097-120">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-120">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="ec097-121">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-121">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="ec097-122">Klicken Sie im Feld "Artikelgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-122">In the Item group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-123">Artikelgruppen werden verwendet, um den Bestand zu verwalten, indem Sie Lagerartikel auf der Grundlage von Artikelmerkmalen in Gruppen einteilen.</span><span class="sxs-lookup"><span data-stu-id="ec097-123">Item groups are used to manage inventory by dividing inventory items into groups based on item characteristics.</span></span> <span data-ttu-id="ec097-124">Um z. B. einzustellen, wie Informationen zu den Hauptkonten gebucht werden, können Sie eine Reihe verschiedener Artikelgruppen erstellen, die speziellen Hauptkonten zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="ec097-124">For example, to manage how information is posted to main accounts, you can create a series of different item groups that are associated with specific main accounts.</span></span> <span data-ttu-id="ec097-125">Auf diese Weise können Sie den Bestand von Artikeln in verschiedenen Phasen verfolgen.</span><span class="sxs-lookup"><span data-stu-id="ec097-125">This lets you track the inventory value of items at different stages.</span></span>  
+9. <span data-ttu-id="ec097-126">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-126">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="ec097-127">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-127">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="ec097-128">Klicken Sie im Feld "Lagerdimensionsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-128">In the Storage dimension group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-129">Mit Lagerdimensionsgruppen kann gesteuert werden, wie Artikel im Lagerbestand gespeichert und aus dem Lagerbestand entnommen werden.</span><span class="sxs-lookup"><span data-stu-id="ec097-129">The storage dimensions help you control how items are stored and taken from inventory.</span></span> <span data-ttu-id="ec097-130">So kann eine Lagerdimension Standort und Lagerort sein.</span><span class="sxs-lookup"><span data-stu-id="ec097-130">For example, a storage dimension can be Site and Warehouse.</span></span>  
+12. <span data-ttu-id="ec097-131">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-131">In the list, find and select the desired record.</span></span>
+13. <span data-ttu-id="ec097-132">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-132">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="ec097-133">Klicken Sie im Feld "Rückverfolgungsangaben-Gruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-133">In the Tracking dimension group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-134">Die Rückverfolgungsangabengruppe bestimmt, welche Rückverfolgungsangaben Sie einem Produkt hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="ec097-134">The tracking dimension group determines which tracking dimensions you can add to a product.</span></span> <span data-ttu-id="ec097-135">Die Chargennummer und die Seriennummer können z. B. zum Nachverfolgen von Lagerartikeln verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="ec097-135">For example, the batch number and serial number are used to track inventory items.</span></span>  
+15. <span data-ttu-id="ec097-136">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-136">In the list, find and select the desired record.</span></span>
+16. <span data-ttu-id="ec097-137">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-137">In the list, click the link in the selected row.</span></span>
+17. <span data-ttu-id="ec097-138">Klicken Sie im Feld "Lagereinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-138">In the Inventory unit field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-139">Die Lagereinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es im Lagerbestand gespeichert wird.</span><span class="sxs-lookup"><span data-stu-id="ec097-139">The inventory unit determines how the product is quantified when it's stored in inventory.</span></span>  
+18. <span data-ttu-id="ec097-140">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-140">In the list, find and select the desired record.</span></span>
+19. <span data-ttu-id="ec097-141">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-141">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="ec097-142">Klicken Sie im Feld "Bestelleinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-142">In the Purchase unit field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-143">Die Bestelleinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es von einem Kreditor erworben wird.</span><span class="sxs-lookup"><span data-stu-id="ec097-143">The purchase unit determines how the product is quantified when it’s purchased from a vendor.</span></span>  
+21. <span data-ttu-id="ec097-144">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-144">In the list, find and select the desired record.</span></span>
+22. <span data-ttu-id="ec097-145">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-145">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="ec097-146">Klicken Sie im Feld "Verkaufseinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-146">In the Sales unit field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-147">Die Verkaufseinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es an einen Debitor verkauft wird.</span><span class="sxs-lookup"><span data-stu-id="ec097-147">The sales unit determines how the product is quantified when it’s sold to a customer.</span></span>  
+24. <span data-ttu-id="ec097-148">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-148">In the list, find and select the desired record.</span></span>
+25. <span data-ttu-id="ec097-149">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-149">In the list, click the link in the selected row.</span></span>
+26. <span data-ttu-id="ec097-150">Klicken Sie im Feld "Stücklisteneinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-150">In the BOM unit field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-151">Die Stücklisteneinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wen es in einer Stückliste (BOM) einbezogen werden soll.</span><span class="sxs-lookup"><span data-stu-id="ec097-151">The BOM unit determines how the product is quantified when including it in a bill of materials (BOM).</span></span>  
+27. <span data-ttu-id="ec097-152">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-152">In the list, find and select the desired record.</span></span>
+28. <span data-ttu-id="ec097-153">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-153">In the list, click the link in the selected row.</span></span>
+29. <span data-ttu-id="ec097-154">Klicken Sie im Feld "Mehrwertsteuergruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-154">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-155">Die Artikel-Mehrwertsteuergruppe in der Vertriebsbesteuerungsgruppe bestimmt, wie die Mehrwertsteuer für jeden Artikel berechnet wird.</span><span class="sxs-lookup"><span data-stu-id="ec097-155">The item sales tax group in the Sales taxation group determines how sales tax is calculated for each item.</span></span>  
+30. <span data-ttu-id="ec097-156">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-156">In the list, find and select the desired record.</span></span>
+31. <span data-ttu-id="ec097-157">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-157">In the list, click the link in the selected row.</span></span>
+32. <span data-ttu-id="ec097-158">Klicken Sie im Feld "Mehrwertsteuergruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-158">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="ec097-159">Die Artikel-Mehrwertsteuergruppe in der Umsatzsteuergruppe bestimmt, wie die Umsatzsteuer für jeden Artikel berechnet wird.</span><span class="sxs-lookup"><span data-stu-id="ec097-159">The item sales tax group in the Purchase taxation group determines how purchase tax is calculated for each item.</span></span>  
+33. <span data-ttu-id="ec097-160">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-160">In the list, find and select the desired record.</span></span>
+34. <span data-ttu-id="ec097-161">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-161">In the list, click the link in the selected row.</span></span>
+35. <span data-ttu-id="ec097-162">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ec097-162">Click OK.</span></span>
 
-## <a name="add-product-characteristics"></a>Physische Produktmerkmale hinzufügen
-1. Erweitern oder reduzieren Sie den Abschnitt Bestand verwalten.
-2. Geben Sie im Feld "Nettogewicht" eine Zahl ein.
-3. Geben Sie im Feld "Verpackungsgewicht" eine Zahl ein.
-4. Geben Sie im Feld "Bruttotiefe" eine Zahl ein.
-5. Geben Sie im Feld "Bruttobreite" eine Zahl ein.
-6. Geben Sie im Feld "Bruttohöhe" eine Zahl ein.
-7. Geben Sie im Feld "Volumen" eine Zahl ein.
+## <a name="add-product-characteristics"></a><span data-ttu-id="ec097-163">Physische Produktmerkmale hinzufügen</span><span class="sxs-lookup"><span data-stu-id="ec097-163">Add product characteristics</span></span>
+1. <span data-ttu-id="ec097-164">Erweitern oder reduzieren Sie den Abschnitt Bestand verwalten.</span><span class="sxs-lookup"><span data-stu-id="ec097-164">Expand or collapse the Manage inventory section.</span></span>
+2. <span data-ttu-id="ec097-165">Geben Sie im Feld "Nettogewicht" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="ec097-165">In the Net weight field, enter a number.</span></span>
+3. <span data-ttu-id="ec097-166">Geben Sie im Feld "Verpackungsgewicht" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="ec097-166">In the Tare weight field, enter a number.</span></span>
+4. <span data-ttu-id="ec097-167">Geben Sie im Feld "Bruttotiefe" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="ec097-167">In the Gross depth field, enter a number.</span></span>
+5. <span data-ttu-id="ec097-168">Geben Sie im Feld "Bruttobreite" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="ec097-168">In the Gross width field, enter a number.</span></span>
+6. <span data-ttu-id="ec097-169">Geben Sie im Feld "Bruttohöhe" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="ec097-169">In the Gross height field, enter a number.</span></span>
+7. <span data-ttu-id="ec097-170">Geben Sie im Feld "Volumen" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="ec097-170">In the Volume field, enter a number.</span></span>
 
-## <a name="add-financial-dimensions"></a>Finanzdimensionen hinzufügen
-1. Erweitern oder Reduzieren Sie den Abschnitt "Finanzdimensionen'.
-2. Klicken Sie im Feld "Unternehmenseinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-5. Klicken Sie im Feld "Kostenstelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Klicken Sie im Feld "Abteilung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-10. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-11. Klicken Sie im Feld "ItemGroup" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-12. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-13. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+## <a name="add-financial-dimensions"></a><span data-ttu-id="ec097-171">Finanzdimensionen hinzufügen</span><span class="sxs-lookup"><span data-stu-id="ec097-171">Add financial dimensions</span></span>
+1. <span data-ttu-id="ec097-172">Erweitern oder Reduzieren Sie den Abschnitt "Finanzdimensionen'.</span><span class="sxs-lookup"><span data-stu-id="ec097-172">Expand or collapse the Financial dimensions section.</span></span>
+2. <span data-ttu-id="ec097-173">Klicken Sie im Feld "Unternehmenseinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-173">In the BusinessUnit field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="ec097-174">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-174">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="ec097-175">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-175">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="ec097-176">Klicken Sie im Feld "Kostenstelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-176">In the CostCenter field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="ec097-177">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-177">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="ec097-178">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-178">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="ec097-179">Klicken Sie im Feld "Abteilung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-179">In the Department field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="ec097-180">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-180">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="ec097-181">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-181">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="ec097-182">Klicken Sie im Feld "ItemGroup" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ec097-182">In the ItemGroup field, click the drop-down button to open the lookup.</span></span>
+12. <span data-ttu-id="ec097-183">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ec097-183">In the list, find and select the desired record.</span></span>
+13. <span data-ttu-id="ec097-184">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ec097-184">In the list, click the link in the selected row.</span></span>
 
 

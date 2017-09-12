@@ -27,242 +27,229 @@ ms.lasthandoff: 05/25/2017
 
 ---
 
-# Entwerfen eines Fragebogens
-<a id="design-a-questionnaire" class="xliff"></a>
+# <a name="design-a-questionnaire"></a><span data-ttu-id="a8c53-105">Entwerfen eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="a8c53-105">Design a questionnaire</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren. 
+<span data-ttu-id="a8c53-106">In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben.</span><span class="sxs-lookup"><span data-stu-id="a8c53-106">This topic describes the process for creating a questionnaire.</span></span> <span data-ttu-id="a8c53-107">Der erste Schritt ist das Entwerfen des Fragebogens.</span><span class="sxs-lookup"><span data-stu-id="a8c53-107">The first step is to design the questionnaire.</span></span> <span data-ttu-id="a8c53-108">Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-108">When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated.</span></span> 
 
-Mit einer sorgfältigen Gestaltung des Fragebogens sorgen Sie für eine bessere Qualität der gesammelten Daten. Durch sorgfältige Planung können Sie besser die geeigneten Optionen für einen Fragebogen zur richtigen Zeit auswählen. Die folgenden Punkte können Ihnen dabei helfen, einen effektiven Fragebogen zu planen:
+<span data-ttu-id="a8c53-109">Mit einer sorgfältigen Gestaltung des Fragebogens sorgen Sie für eine bessere Qualität der gesammelten Daten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-109">A carefully designed questionnaire can help increase the quality of the data that you collect.</span></span> <span data-ttu-id="a8c53-110">Durch sorgfältige Planung können Sie besser die geeigneten Optionen für einen Fragebogen zur richtigen Zeit auswählen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-110">Through careful design, you can better select the appropriate options at the appropriate time for a questionnaire.</span></span> <span data-ttu-id="a8c53-111">Die folgenden Punkte können Ihnen dabei helfen, einen effektiven Fragebogen zu planen:</span><span class="sxs-lookup"><span data-stu-id="a8c53-111">The following points can help you plan an effective questionnaire:</span></span>
 
--   Definieren Sie den Zweck des Fragebogens, um sicherzustellen, dass die Fragen diesen Zweck unterstützen.
--   Legen Sie die individuelle Person oder die Personengruppe fest, die den Fragebogen beantworten soll.
--   Arbeiten Sie Fragen aus, die im Fragebogen angezeigt werden und fügen Sie Antwort-Auswahlen ein, sofern zutreffend.
--   Stellen Sie sicher, dass der Fragebogen logisch verläuft, damit die Befragungsteilnehmer engagiert bleiben.
--   Ordnen Sie Fragen und Antworten in der Reihenfolge an, in der sie den Befragten angezeigt werden sollen.
--   Entscheiden Sie, sich wie die Ergebnisse ausgewertet werden sollen, sofern zutreffend.
--   Entscheiden Sie, ob Sie zusätzliche Features benötigen. Bestimmen Sie beispielsweise, ob und wie Ergebnisse kategorisiert werden sollen, ob ein Zeitlimit notwendig ist, oder ob alle Fragen verpflichtend sind.
+-   <span data-ttu-id="a8c53-112">Definieren Sie den Zweck des Fragebogens, um sicherzustellen, dass die Fragen diesen Zweck unterstützen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-112">Clearly define the purpose of the questionnaire to help guarantee that the questions support the purpose.</span></span>
+-   <span data-ttu-id="a8c53-113">Legen Sie die individuelle Person oder die Personengruppe fest, die den Fragebogen beantworten soll.</span><span class="sxs-lookup"><span data-stu-id="a8c53-113">Determine the individual person or the group of people who should complete the questionnaire.</span></span>
+-   <span data-ttu-id="a8c53-114">Arbeiten Sie Fragen aus, die im Fragebogen angezeigt werden und fügen Sie Antwort-Auswahlen ein, sofern zutreffend.</span><span class="sxs-lookup"><span data-stu-id="a8c53-114">Write questions that will appear on the questionnaire, and include answer choices, if applicable.</span></span>
+-   <span data-ttu-id="a8c53-115">Stellen Sie sicher, dass der Fragebogen logisch verläuft, damit die Befragungsteilnehmer engagiert bleiben.</span><span class="sxs-lookup"><span data-stu-id="a8c53-115">Be sure that the questionnaire flows logically, so that respondents remain engaged.</span></span>
+-   <span data-ttu-id="a8c53-116">Ordnen Sie Fragen und Antworten in der Reihenfolge an, in der sie den Befragten angezeigt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-116">Arrange questions and answers in the order that they should be presented to respondents in.</span></span>
+-   <span data-ttu-id="a8c53-117">Entscheiden Sie, sich wie die Ergebnisse ausgewertet werden sollen, sofern zutreffend.</span><span class="sxs-lookup"><span data-stu-id="a8c53-117">Decide how the results should be evaluated, if applicable.</span></span>
+-   <span data-ttu-id="a8c53-118">Entscheiden Sie, ob Sie zusätzliche Features benötigen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-118">Decide whether you’ll need additional features.</span></span> <span data-ttu-id="a8c53-119">Bestimmen Sie beispielsweise, ob und wie Ergebnisse kategorisiert werden sollen, ob ein Zeitlimit notwendig ist, oder ob alle Fragen verpflichtend sind.</span><span class="sxs-lookup"><span data-stu-id="a8c53-119">For example, determine whether and how results should be categorized, whether a time limit is required, or whether all the questions will be mandatory.</span></span>
 
-Die Designphase umfasst vier Kategorien von Aufgaben, die in dieser Reihenfolge ausgeführt werden müssen:
+<span data-ttu-id="a8c53-120">Die Designphase umfasst vier Kategorien von Aufgaben, die in dieser Reihenfolge ausgeführt werden müssen:</span><span class="sxs-lookup"><span data-stu-id="a8c53-120">The design phase includes four categories of tasks that you must complete in this order:</span></span>
 
-1.  Voraussetzungen nach Bedarf einrichten.
-2.  Antwortgruppen und Antworten einrichten, sofern zutreffend.
-3.  Fragen und deren Zuordnung zu den Antwortgruppen einrichten.
-4.  Den Fragebogen selbst einrichten und Fragen hinzufügen.
+1.  <span data-ttu-id="a8c53-121">Voraussetzungen nach Bedarf einrichten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-121">Set up prerequisites, as required.</span></span>
+2.  <span data-ttu-id="a8c53-122">Antwortgruppen und Antworten einrichten, sofern zutreffend.</span><span class="sxs-lookup"><span data-stu-id="a8c53-122">Set up answer groups and answers, if applicable.</span></span>
+3.  <span data-ttu-id="a8c53-123">Fragen und deren Zuordnung zu den Antwortgruppen einrichten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-123">Set up questions and their association with the answer groups.</span></span>
+4.  <span data-ttu-id="a8c53-124">Den Fragebogen selbst einrichten und Fragen hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-124">Set up the questionnaire itself, and attach questions to it.</span></span>
 
-## Erforderliche Komponenten
-<a id="prerequisites" class="xliff"></a>
-Bevor Sie Fragebögen, Antworten und Fragen einrichten können, müssen Sie einige Voraussetzungen erstellen. Für eine vollständige Funktionalität sind jedoch nicht alle Voraussetzungen notwendig.
+## <a name="prerequisites"></a><span data-ttu-id="a8c53-125">Erforderliche Komponenten</span><span class="sxs-lookup"><span data-stu-id="a8c53-125">Prerequisites</span></span>
+<span data-ttu-id="a8c53-126">Bevor Sie Fragebögen, Antworten und Fragen einrichten können, müssen Sie einige Voraussetzungen erstellen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-126">Some prerequisites must be in place before you can create questionnaires, answers, and questions.</span></span> <span data-ttu-id="a8c53-127">Für eine vollständige Funktionalität sind jedoch nicht alle Voraussetzungen notwendig.</span><span class="sxs-lookup"><span data-stu-id="a8c53-127">However, not all prerequisites are required for full functionality.</span></span>
 
-### Erforderlich
-<a id="required" class="xliff"></a>
+### <a name="required"></a><span data-ttu-id="a8c53-128">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="a8c53-128">Required</span></span>
 
-| Voraussetzung        | Beschreibung                |
+| <span data-ttu-id="a8c53-129">Voraussetzung</span><span class="sxs-lookup"><span data-stu-id="a8c53-129">Prerequisite</span></span>        | <span data-ttu-id="a8c53-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a8c53-130">Description</span></span>                |
 |---------------------|----------------------------|
-| Fragebogentypen | Fragebögen kategorisieren. |
-| Fragetypen      | Fragen kategorisieren.      |
+| <span data-ttu-id="a8c53-131">Fragebogentypen</span><span class="sxs-lookup"><span data-stu-id="a8c53-131">Questionnaire types</span></span> | <span data-ttu-id="a8c53-132">Fragebögen kategorisieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-132">Categorize questionnaires.</span></span> |
+| <span data-ttu-id="a8c53-133">Fragetypen</span><span class="sxs-lookup"><span data-stu-id="a8c53-133">Question types</span></span>      | <span data-ttu-id="a8c53-134">Fragen kategorisieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-134">Categorize questions.</span></span>      |
 
-### Fakultativ
-<a id="optional" class="xliff"></a>
+### <a name="optional"></a><span data-ttu-id="a8c53-135">Fakultativ</span><span class="sxs-lookup"><span data-stu-id="a8c53-135">Optional</span></span>
 
-| Voraussetzung             | Beschreibung                                                    |
+| <span data-ttu-id="a8c53-136">Voraussetzung</span><span class="sxs-lookup"><span data-stu-id="a8c53-136">Prerequisite</span></span>             | <span data-ttu-id="a8c53-137">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a8c53-137">Description</span></span>                                                    |
 |--------------------------|----------------------------------------------------------------|
-| Fragebogenparameter | Passen Sie grundlegende Steuerelemente und Standardeinstellungen für Fragebögen an. |
+| <span data-ttu-id="a8c53-138">Fragebogenparameter</span><span class="sxs-lookup"><span data-stu-id="a8c53-138">Questionnaire parameters</span></span> | <span data-ttu-id="a8c53-139">Passen Sie grundlegende Steuerelemente und Standardeinstellungen für Fragebögen an.</span><span class="sxs-lookup"><span data-stu-id="a8c53-139">Modify basic controls and default settings for questionnaires.</span></span> |
 
-### Fragebogentypen
-<a id="questionnaire-types" class="xliff"></a>
+### <a name="questionnaire-types"></a><span data-ttu-id="a8c53-140">Fragebogentypen</span><span class="sxs-lookup"><span data-stu-id="a8c53-140">Questionnaire types</span></span>
 
-Fragebogentypen sind erforderlich und müssen zugewiesen werden, wenn Sie einen Fragebogen erstellen. Fragebogentypen helfen Ihnen dabei, Fragebögen leichter zu verwalten und zu klassifizieren. Verwenden Sie Fragebogentypen, um Fragebögen zu klassifizieren und voneinander zu unterscheiden. Wenn Sie beispielsweise mehrere Fragebögen zur Auswahl haben, können Sie sie nach Typ filtern, um einen bestimmten Fragebogen leichter finden zu können. Beispiele für Fragebogentypen:
+<span data-ttu-id="a8c53-141">Fragebogentypen sind erforderlich und müssen zugewiesen werden, wenn Sie einen Fragebogen erstellen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-141">Questionnaire types are required and must be assigned when you create a questionnaire.</span></span> <span data-ttu-id="a8c53-142">Fragebogentypen helfen Ihnen dabei, Fragebögen leichter zu verwalten und zu klassifizieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-142">Questionnaire types help you manage and classify questionnaires more easily.</span></span> <span data-ttu-id="a8c53-143">Verwenden Sie Fragebogentypen, um Fragebögen zu klassifizieren und voneinander zu unterscheiden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-143">Use questionnaire types to classify questionnaires and differentiate them from each other.</span></span> <span data-ttu-id="a8c53-144">Wenn Sie beispielsweise mehrere Fragebögen zur Auswahl haben, können Sie sie nach Typ filtern, um einen bestimmten Fragebogen leichter finden zu können.</span><span class="sxs-lookup"><span data-stu-id="a8c53-144">For example, if you have multiple questionnaires to select from, you can filter them by type to help make it easier to find a particular questionnaire.</span></span> <span data-ttu-id="a8c53-145">Beispiele für Fragebogentypen:</span><span class="sxs-lookup"><span data-stu-id="a8c53-145">Here are some examples of questionnaire types:</span></span>
 
--   Personalverwaltung – Entwicklung
--   Kundenumfragen
--   Überprüfungsprozess
+-   <span data-ttu-id="a8c53-146">Personalverwaltung – Entwicklung</span><span class="sxs-lookup"><span data-stu-id="a8c53-146">Human resource development</span></span>
+-   <span data-ttu-id="a8c53-147">Kundenumfragen</span><span class="sxs-lookup"><span data-stu-id="a8c53-147">Customer surveys</span></span>
+-   <span data-ttu-id="a8c53-148">Überprüfungsprozess</span><span class="sxs-lookup"><span data-stu-id="a8c53-148">Review process</span></span>
 
-### Fragetypen
-<a id="question-types" class="xliff"></a>
+### <a name="question-types"></a><span data-ttu-id="a8c53-149">Fragetypen</span><span class="sxs-lookup"><span data-stu-id="a8c53-149">Question types</span></span>
 
-Wenn Sie eine Frage erstellen, sind Fragebogentypen erforderlich und müssen zugewiesen werden. 
+<span data-ttu-id="a8c53-150">Wenn Sie eine Frage erstellen, sind Fragebogentypen erforderlich und müssen zugewiesen werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-150">Question types are required and must be assigned when you create a question.</span></span> 
 
-Verwenden Sie Fragentypen, die Fragen für die Berichterstellung kategorisieren. Fragetypen erleichtern es, nach Fragen zu suchen, da Sie Typen als Filter für die Seite **Fragen** verwenden können. Beispiele für Fragetypen:
+<span data-ttu-id="a8c53-151">Verwenden Sie Fragentypen, die Fragen für die Berichterstellung kategorisieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-151">Use question types to categorize questions for reporting.</span></span> <span data-ttu-id="a8c53-152">Fragetypen erleichtern es, nach Fragen zu suchen, da Sie Typen als Filter für die Seite **Fragen** verwenden können.</span><span class="sxs-lookup"><span data-stu-id="a8c53-152">Question types also make it easier to find questions, because you can use types as filters on the **Questions** page.</span></span> <span data-ttu-id="a8c53-153">Beispiele für Fragetypen:</span><span class="sxs-lookup"><span data-stu-id="a8c53-153">Here are some examples of question types:</span></span>
 
--   Personalverwaltung
--   Geschäftsverwaltung
--   Kursbeurteilung
+-   <span data-ttu-id="a8c53-154">Personalverwaltung</span><span class="sxs-lookup"><span data-stu-id="a8c53-154">Human resource</span></span>
+-   <span data-ttu-id="a8c53-155">Geschäftsverwaltung</span><span class="sxs-lookup"><span data-stu-id="a8c53-155">Managing business</span></span>
+-   <span data-ttu-id="a8c53-156">Kursbeurteilung</span><span class="sxs-lookup"><span data-stu-id="a8c53-156">Course evaluation</span></span>
 
-### Fragebogenparameter
-<a id="questionnaire-parameters" class="xliff"></a>
+### <a name="questionnaire-parameters"></a><span data-ttu-id="a8c53-157">Fragebogenparameter</span><span class="sxs-lookup"><span data-stu-id="a8c53-157">Questionnaire parameters</span></span>
 
-Fragebogenparametern sind optional. Je nach den Anforderungen Ihres Unternehmens kann es sein, dass Sie sie nicht verwenden. 
+<span data-ttu-id="a8c53-158">Fragebogenparametern sind optional.</span><span class="sxs-lookup"><span data-stu-id="a8c53-158">Questionnaire parameters are optional.</span></span> <span data-ttu-id="a8c53-159">Je nach den Anforderungen Ihres Unternehmens kann es sein, dass Sie sie nicht verwenden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-159">You might not use them, depending on your company’s requirements.</span></span> 
 
-Fragebogenparameter definieren die Anonymität, die Nummernkreiscodes und die Referenztypen eines Fragebogens. Wenn eine Organisation einen Fragebogen verteilt, ist die Option, dass Teilnehmer anonym bleiben können, möglicherweise von Relevanz. 
+<span data-ttu-id="a8c53-160">Fragebogenparameter definieren die Anonymität, die Nummernkreiscodes und die Referenztypen eines Fragebogens.</span><span class="sxs-lookup"><span data-stu-id="a8c53-160">Questionnaire parameters define the anonymity, number sequence codes, and reference types of a questionnaire.</span></span> <span data-ttu-id="a8c53-161">Wenn eine Organisation einen Fragebogen verteilt, ist die Option, dass Teilnehmer anonym bleiben können, möglicherweise von Relevanz.</span><span class="sxs-lookup"><span data-stu-id="a8c53-161">When an organization distributes a questionnaire, the option to allow respondents to remain anonymous might be of concern.</span></span> 
 
-Nummernkreiscodes werden verwendet, um Fragen und Antworten zu organisieren. Basierend auf diesen Nummernkreiscodes werden Werte automatisch diesen Elementen in zugewiesen. 
+<span data-ttu-id="a8c53-162">Nummernkreiscodes werden verwendet, um Fragen und Antworten zu organisieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-162">The number sequence codes are used to organize questions and answers.</span></span> <span data-ttu-id="a8c53-163">Basierend auf diesen Nummernkreiscodes werden Werte automatisch diesen Elementen in zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-163">Based on these number sequence codes, values are automatically assigned to items.</span></span> 
 
-Alle Parameter sollten definiert worden sein, bevor Sie mit der Datenerstellung beginnen. Sie können die Fragebogenparametereinstellungen jederzeit ändern.
+<span data-ttu-id="a8c53-164">Alle Parameter sollten definiert worden sein, bevor Sie mit der Datenerstellung beginnen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-164">You should define all parameters before you begin to create your data.</span></span> <span data-ttu-id="a8c53-165">Sie können die Fragebogenparametereinstellungen jederzeit ändern.</span><span class="sxs-lookup"><span data-stu-id="a8c53-165">You can modify the questionnaire parameter settings at any time.</span></span>
 
-## Fragebogen-Komponenten
-<a id="questionnaire-components" class="xliff"></a>
-Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten. Sie können die Fragen für einen Fragebogen unter Ergebnisgruppen optional gruppieren. Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen. 
+## <a name="questionnaire-components"></a><span data-ttu-id="a8c53-166">Fragebogen-Komponenten</span><span class="sxs-lookup"><span data-stu-id="a8c53-166">Questionnaire components</span></span>
+<span data-ttu-id="a8c53-167">Fragebögen enthalten drei wichtigste Elemente: Antwortgruppen, die für die Antworten Auswahlfragen, Fragen und Fragebogen selbst enthalten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-167">Questionnaires comprise three main elements: answer groups that contain the answers for multiple choice questions, questions, and the questionnaire itself.</span></span> <span data-ttu-id="a8c53-168">Sie können die Fragen für einen Fragebogen unter Ergebnisgruppen optional gruppieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-168">You can optionally group the questions on a questionnaire into result groups.</span></span> <span data-ttu-id="a8c53-169">Mithilfe von Ergebnisgruppen können Sie Fragen kategorisieren und für weitere Analysen auf dem Fragebogen bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-169">Result groups let you categorize questions and provide further analysis on the questionnaire.</span></span> 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+<span data-ttu-id="a8c53-170">[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)</span><span class="sxs-lookup"><span data-stu-id="a8c53-170">[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)</span></span>
 
-### Antwortgruppen und Antworten
-<a id="answer-groups-and-answers" class="xliff"></a>
+### <a name="answer-groups-and-answers"></a><span data-ttu-id="a8c53-171">Antwortgruppen und Antworten</span><span class="sxs-lookup"><span data-stu-id="a8c53-171">Answer groups and answers</span></span>
 
-Befragte haben je nach Inhalt der Frage zwei Möglichkeiten, diese zu beantworten:
+<span data-ttu-id="a8c53-172">Befragte haben je nach Inhalt der Frage zwei Möglichkeiten, diese zu beantworten:</span><span class="sxs-lookup"><span data-stu-id="a8c53-172">Respondents can answer a question in two ways, depending on the subject of the question:</span></span>
 
--   Offene Fragen müssen nicht in einem bestimmten Format beantwortet werden. Befragte können in Form eines Texts, einer Zahl, eines Datums oder einer Uhrzeit antworten. Diese Fragen erfordern in der Regel, dass die Teilnehmer subjektive Informationen, wie etwa eine Meinung, eine Bewertung oder eine Schätzung eingeben.
--   Bei Fragen mit vordefinierten Antworten ist es erforderlich, dass der Befragte eine Antwort aus einer Liste möglicher richtiger Antworten auswählt.
+-   <span data-ttu-id="a8c53-173">Offene Fragen müssen nicht in einem bestimmten Format beantwortet werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-173">Open-ended questions don’t require responses in a specific format.</span></span> <span data-ttu-id="a8c53-174">Befragte können in Form eines Texts, einer Zahl, eines Datums oder einer Uhrzeit antworten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-174">Respondents can type a response as text, a number, a date, or a time.</span></span> <span data-ttu-id="a8c53-175">Diese Fragen erfordern in der Regel, dass die Teilnehmer subjektive Informationen, wie etwa eine Meinung, eine Bewertung oder eine Schätzung eingeben.</span><span class="sxs-lookup"><span data-stu-id="a8c53-175">These questions typically require that the respondents provide subjective information in their answers, such as an opinion, description, evaluation, or estimate.</span></span>
+-   <span data-ttu-id="a8c53-176">Bei Fragen mit vordefinierten Antworten ist es erforderlich, dass der Befragte eine Antwort aus einer Liste möglicher richtiger Antworten auswählt.</span><span class="sxs-lookup"><span data-stu-id="a8c53-176">Closed-ended questions require that the respondent select an answer in a list of possible correct answers.</span></span>
 
-Um eine Liste möglicher Antworten für Fragen mit vordefinierten Antworten verfügbar zu machen, können Sie Antworten auf der Seite **Antwortgruppen** erstellen 
+<span data-ttu-id="a8c53-177">Um eine Liste möglicher Antworten für Fragen mit vordefinierten Antworten verfügbar zu machen, können Sie Antworten auf der Seite **Antwortgruppen** erstellen</span><span class="sxs-lookup"><span data-stu-id="a8c53-177">To provide a list of possible answers for closed-ended questions, you can create answers on the **Answer groups** page.</span></span> 
 
-Antwortgruppen und Antworten sind Komponenten der Informationen, aus denen Fragebögen erstellt werden. Nachdem Sie eine Antwortgruppe erstellt haben, können Sie sie im Feld **Antwortgruppe** auf der Seite **Fragen** einer Frage zuordnen. 
+<span data-ttu-id="a8c53-178">Antwortgruppen und Antworten sind Komponenten der Informationen, aus denen Fragebögen erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-178">Answer groups and answers are components that make up the main body of information that questions are created from.</span></span> <span data-ttu-id="a8c53-179">Nachdem Sie eine Antwortgruppe erstellt haben, können Sie sie im Feld **Antwortgruppe** auf der Seite **Fragen** einer Frage zuordnen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-179">After you create an answer group, you can associate the answer group with a question in the **Answer group** field on the **Questions** page.</span></span> 
 
-Eine Antwortgruppe kann für mehrere Fragen im gleichen Fragebogen oder in mehreren Fragebögen verwendet werden. 
+<span data-ttu-id="a8c53-180">Eine Antwortgruppe kann für mehrere Fragen im gleichen Fragebogen oder in mehreren Fragebögen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-180">An answer group can be used for more than one question on the same questionnaire, and can also be used on more than one questionnaire.</span></span> 
 
->**Hinweis:** Wenn Sie Antworttexte in den Antwortgruppen ändern, die bereits in ausgefüllten Fragebögen verwendet wurden, kann es schwierig werden, die Daten zu überprüfen und Fragebogenergebnisse sind möglicherweise nicht mehr gültig. Wenn Sie eine Antwortgruppe ändern müssen, sollten Sie erwägen, eine neue Antwortgruppe zu erstellen, anstatt eine vorhandene zu ändern. Antwortgruppen, die einer Frage oder Antwort zugeordnet sind oder bereits beantwortet wurden, können nicht gelöscht werden.
+><span data-ttu-id="a8c53-181">**Hinweis:** Wenn Sie Antworttexte in den Antwortgruppen ändern, die bereits in ausgefüllten Fragebögen verwendet wurden, kann es schwierig werden, die Daten zu überprüfen und Fragebogenergebnisse sind möglicherweise nicht mehr gültig.</span><span class="sxs-lookup"><span data-stu-id="a8c53-181">**Note** If you modify answer text in answer groups that have already been used on completed questionnaires, data can become difficult to evaluate, and questionnaire results might no longer be valid.</span></span> <span data-ttu-id="a8c53-182">Wenn Sie eine Antwortgruppe ändern müssen, sollten Sie erwägen, eine neue Antwortgruppe zu erstellen, anstatt eine vorhandene zu ändern.</span><span class="sxs-lookup"><span data-stu-id="a8c53-182">If you must change an answer group, consider creating a new answer group instead of changing an existing one.</span></span> <span data-ttu-id="a8c53-183">Antwortgruppen, die einer Frage oder Antwort zugeordnet sind oder bereits beantwortet wurden, können nicht gelöscht werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-183">You can't delete answer groups that are attached to a question or answer, or that have been answered.</span></span>
 
-### Fragen
-<a id="questions" class="xliff"></a>
+### <a name="questions"></a><span data-ttu-id="a8c53-184">Fragen</span><span class="sxs-lookup"><span data-stu-id="a8c53-184">Questions</span></span>
 
-Fragebögen müssen Fragen beinhalten. Für Fragen können entweder offene Antworten oder vordefinierte Antworten zugelassen werden.
+<span data-ttu-id="a8c53-185">Fragebögen müssen Fragen beinhalten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-185">A questionnaire must contain questions.</span></span> <span data-ttu-id="a8c53-186">Für Fragen können entweder offene Antworten oder vordefinierte Antworten zugelassen werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-186">Questions can be either open-ended or closed-ended.</span></span>
 
--   Die Antworten auf offene Fragen werden nicht gesteuert, sodass die Befragungsteilnehmer ihre die Antworten eingeben können.
--   Fragen mit vordefinierten Antworten setzen eine Liste mit vordefinierten Antwortoptionen voraus, und die Antworten können so strukturiert sein, dass die Befragten mehrere Antworten auswählen können. Fragen sollten so konzipiert werden, dass sie dem Befragten spezifische Informationen "entlocken" und müssen mit einer Antwortgruppe verknüpft sind, die die Antwortoptionen für jede Frage mit vordefinierten Antworten bereitstellt. 
-    >**Hinweis** Bevor Sie Fragen mit vordefinierten Antworten einrichten können, müssen Sie Antwortgruppen und Antworten erstellen.
+-   <span data-ttu-id="a8c53-187">Die Antworten auf offene Fragen werden nicht gesteuert, sodass die Befragungsteilnehmer ihre die Antworten eingeben können.</span><span class="sxs-lookup"><span data-stu-id="a8c53-187">The responses to open-ended questions aren't controlled, and respondents can type their answers.</span></span>
+-   <span data-ttu-id="a8c53-188">Fragen mit vordefinierten Antworten setzen eine Liste mit vordefinierten Antwortoptionen voraus, und die Antworten können so strukturiert sein, dass die Befragten mehrere Antworten auswählen können.</span><span class="sxs-lookup"><span data-stu-id="a8c53-188">Closed-ended questions require a list of predefined response options, and the questions can be structured to let a respondent select multiple responses.</span></span> <span data-ttu-id="a8c53-189">Fragen sollten so konzipiert werden, dass sie dem Befragten spezifische Informationen "entlocken" und müssen mit einer Antwortgruppe verknüpft sind, die die Antwortoptionen für jede Frage mit vordefinierten Antworten bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="a8c53-189">Questions should be designed to elicit specific information from a respondent and must be linked to an answer group that provides the response options for each closed-ended question.</span></span> 
+    ><span data-ttu-id="a8c53-190">**Hinweis** Bevor Sie Fragen mit vordefinierten Antworten einrichten können, müssen Sie Antwortgruppen und Antworten erstellen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-190">**Note** Before you can set up closed-ended questions, you must create answer groups and answers.</span></span>
 
-Fragen können in einer Hierarchie aus bedingten Fragen angeordnet werden, sodass sekundäre Fragen von der Antwort abhängen, die von einem Befragungsteilnehmer für die vorherige Frage ausgewählt wurde. Sie können Fragen auch zuerst formulieren und später in einer Hierarchie anordnen.
+<span data-ttu-id="a8c53-191">Fragen können in einer Hierarchie aus bedingten Fragen angeordnet werden, sodass sekundäre Fragen von der Antwort abhängen, die von einem Befragungsteilnehmer für die vorherige Frage ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="a8c53-191">Questions can be arranged in a conditional question hierarchy, so that secondary questions depend on the answer that the respondent selects for the previous question.</span></span> <span data-ttu-id="a8c53-192">Sie können Fragen auch zuerst formulieren und später in einer Hierarchie anordnen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-192">You can write the questions first and then arrange them into a hierarchy later.</span></span>
 
-## Erstellen von Fragebögen
-<a id="setting-up-questionnaires" class="xliff"></a>
->**Hinweis**
->  Bevor Sie einen Fragebogen einrichten können, müssen Sie Fragen, Antworten und Voraussetzungen einrichten. 
+## <a name="setting-up-questionnaires"></a><span data-ttu-id="a8c53-193">Erstellen von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="a8c53-193">Setting up questionnaires</span></span>
+><span data-ttu-id="a8c53-194">**Hinweis**
+>  Bevor Sie einen Fragebogen einrichten können, müssen Sie Fragen, Antworten und Voraussetzungen einrichten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-194">**Note**
+ Before you can set up a questionnaire, you must set up answers, questions, and prerequisites.</span></span> 
 
-Für jeden Fragebogen können folgende Informationen angegeben werden:
+<span data-ttu-id="a8c53-195">Für jeden Fragebogen können folgende Informationen angegeben werden:</span><span class="sxs-lookup"><span data-stu-id="a8c53-195">For each questionnaire, you can specify the following information:</span></span>
 
--   Die Gesamtzeit oder die Zeitgrenze zur Beantwortung obligatorischer Fragen.
--   Die Festlegung, ob alle Fragen obligatorisch sind.
--   Ob Punkte in einem Fragebogen berechnet werden.
--   Wie die Ergebnisse kategorisiert werden.
--   Ob der Fragebogen für eine eingeschränkten Gruppe an Befragten verfügbar ist.
--   Ob eine Formularvorlage als Hintergrund hinter jeder Fragebogenseite angezeigt werden soll.
--   Ob zusätzliche Hinweise benötigt werden, um den Befragten den Zweck des Fragebogens zu erläutern.
--   Ob die Fragen in einer bestimmten Reihenfolge angezeigt oder zufällig aus einem Pool ausgewählt werden sollen.
--   Ob Fragen nur gestellt werden, wenn bestimmte Antworten für vorherige Antworten gegeben wurden.
+-   <span data-ttu-id="a8c53-196">Die Gesamtzeit oder die Zeitgrenze zur Beantwortung obligatorischer Fragen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-196">The total time or time limit to answer mandatory questions.</span></span>
+-   <span data-ttu-id="a8c53-197">Die Festlegung, ob alle Fragen obligatorisch sind.</span><span class="sxs-lookup"><span data-stu-id="a8c53-197">Whether all questions are mandatory.</span></span>
+-   <span data-ttu-id="a8c53-198">Ob Punkte in einem Fragebogen berechnet werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-198">Whether to calculate points on a questionnaire.</span></span>
+-   <span data-ttu-id="a8c53-199">Wie die Ergebnisse kategorisiert werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-199">How to categorize results.</span></span>
+-   <span data-ttu-id="a8c53-200">Ob der Fragebogen für eine eingeschränkten Gruppe an Befragten verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="a8c53-200">Whether the questionnaire will be available to a restricted set of respondents.</span></span>
+-   <span data-ttu-id="a8c53-201">Ob eine Formularvorlage als Hintergrund hinter jeder Fragebogenseite angezeigt werden soll.</span><span class="sxs-lookup"><span data-stu-id="a8c53-201">Whether a form template should be displayed as a background behind each page of the questionnaire.</span></span>
+-   <span data-ttu-id="a8c53-202">Ob zusätzliche Hinweise benötigt werden, um den Befragten den Zweck des Fragebogens zu erläutern.</span><span class="sxs-lookup"><span data-stu-id="a8c53-202">Whether additional notes are required in order to clarify the intent of the questionnaire for the respondents.</span></span>
+-   <span data-ttu-id="a8c53-203">Ob die Fragen in einer bestimmten Reihenfolge angezeigt oder zufällig aus einem Pool ausgewählt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-203">Whether to display questions in a fixed order or randomly select them from a pool.</span></span>
+-   <span data-ttu-id="a8c53-204">Ob Fragen nur gestellt werden, wenn bestimmte Antworten für vorherige Antworten gegeben wurden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-204">Whether questions will be asked only if specific responses are given for previous answers.</span></span>
 
-### Einrichten eines Fragebogens
-<a id="set-up-a-questionnaire" class="xliff"></a>
+### <a name="set-up-a-questionnaire"></a><span data-ttu-id="a8c53-205">Einrichten eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="a8c53-205">Set up a questionnaire</span></span>
 
-Die primäre Seite, die Sie verwenden, um einen Fragebogen einzurichten, ist die Seite **Fragebögen**. Um einen Fragebogen einzurichten, müssen Sie die folgenden Aufgaben der Reihe nach durchführen:
+<span data-ttu-id="a8c53-206">Die primäre Seite, die Sie verwenden, um einen Fragebogen einzurichten, ist die Seite **Fragebögen**.</span><span class="sxs-lookup"><span data-stu-id="a8c53-206">The primary page that you use to set up a questionnaire is the **Questionnaires** page.</span></span> <span data-ttu-id="a8c53-207">Um einen Fragebogen einzurichten, müssen Sie die folgenden Aufgaben der Reihe nach durchführen:</span><span class="sxs-lookup"><span data-stu-id="a8c53-207">To set up a questionnaire, complete the following tasks in order:</span></span>
 
-1.  Erstellen Sie einen Fragebogen.
-2.  Führen Sie einen dieser Schritte aus, um Fragen des Fragebogens anzufügen:
-    -   Sie können Fragen einem Fragebogen zuordnen, indem Sie Ergebnisgruppen verwenden. Erstellen Sie als Erstes die Ergebnisgruppen des Fragebogens und fügen Sie anschließend den Ergebnisgruppen Fragen hinzu.
-    -   Wenn Sie keine Ergebnisgruppen verwenden, können Fragen dem Fragebogen direkt zugeordnet werden.
+1.  <span data-ttu-id="a8c53-208">Erstellen Sie einen Fragebogen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-208">Create a questionnaire.</span></span>
+2.  <span data-ttu-id="a8c53-209">Führen Sie einen dieser Schritte aus, um Fragen des Fragebogens anzufügen:</span><span class="sxs-lookup"><span data-stu-id="a8c53-209">Follow one of these steps to attach questions to the questionnaire:</span></span>
+    -   <span data-ttu-id="a8c53-210">Sie können Fragen einem Fragebogen zuordnen, indem Sie Ergebnisgruppen verwenden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-210">If you're using result groups, you can attach questions to a questionnaire by using result groups.</span></span> <span data-ttu-id="a8c53-211">Erstellen Sie als Erstes die Ergebnisgruppen des Fragebogens und fügen Sie anschließend den Ergebnisgruppen Fragen hinzu.</span><span class="sxs-lookup"><span data-stu-id="a8c53-211">First set up the result groups for the questionnaire, and then add questions to the result groups.</span></span>
+    -   <span data-ttu-id="a8c53-212">Wenn Sie keine Ergebnisgruppen verwenden, können Fragen dem Fragebogen direkt zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-212">If you aren't using result groups, you can attach questions directly to the questionnaire.</span></span>
 
-3.  Richten Sie bei Bedarf eine Hierarchie aus bedingten Fragen ein.
-4.  Testen Sie den Fragebogen.
+3.  <span data-ttu-id="a8c53-213">Richten Sie bei Bedarf eine Hierarchie aus bedingten Fragen ein.</span><span class="sxs-lookup"><span data-stu-id="a8c53-213">Set up a conditional question hierarchy, if it's required.</span></span>
+4.  <span data-ttu-id="a8c53-214">Testen Sie den Fragebogen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-214">Test the questionnaire.</span></span>
 
-Klicken Sie auf der Seite **Fragebögen** auf **Überprüfen**, um festzustellen, dass der Fragebogen korrekt zusammengestellt ist. Es empfiehlt sich jedoch auch, den Fragebogen und den Test selbst durchzuführen, bevor Sie ihn verteilen.
+<span data-ttu-id="a8c53-215">Klicken Sie auf der Seite **Fragebögen** auf **Überprüfen**, um festzustellen, dass der Fragebogen korrekt zusammengestellt ist.</span><span class="sxs-lookup"><span data-stu-id="a8c53-215">On the **Questionnaires** page, click **Validate** to test whether the questionnaire is assembled correctly.</span></span> <span data-ttu-id="a8c53-216">Es empfiehlt sich jedoch auch, den Fragebogen und den Test selbst durchzuführen, bevor Sie ihn verteilen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-216">However, it's also a good idea to complete the questionnaire and test it yourself before you distribute it.</span></span>
 
-### Modifizieren eines Fragebogens
-<a id="modify-a-questionnaire" class="xliff"></a>
+### <a name="modify-a-questionnaire"></a><span data-ttu-id="a8c53-217">Modifizieren eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="a8c53-217">Modify a questionnaire</span></span>
 
-Sie können auf der Seite **Fragebögen** die folgenden Aufgaben ausführen:
+<span data-ttu-id="a8c53-218">Sie können auf der Seite **Fragebögen** die folgenden Aufgaben ausführen:</span><span class="sxs-lookup"><span data-stu-id="a8c53-218">You can complete the following tasks on the **Questionnaires** page:</span></span>
 
--   Modifizieren Sie Informationen im Fragebogen wie Ergebnisgruppen und Fragen.
--   Löschen und Hinzufügen von Fragen.
--   Vornehmen von Änderungen an den Ergebnisgruppen und der laufenden Nummer. 
+-   <span data-ttu-id="a8c53-219">Modifizieren Sie Informationen im Fragebogen wie Ergebnisgruppen und Fragen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-219">Modify information in the questionnaire, such as the result groups and questions.</span></span>
+-   <span data-ttu-id="a8c53-220">Löschen und Hinzufügen von Fragen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-220">Delete and add questions.</span></span>
+-   <span data-ttu-id="a8c53-221">Vornehmen von Änderungen an den Ergebnisgruppen und der laufenden Nummer.</span><span class="sxs-lookup"><span data-stu-id="a8c53-221">Make changes in the result groups and sequence number.</span></span> 
 
->**Achtung:** Seien Sie vorsichtig bei Änderungen an Fragebögen, die bereits beantwortet wurden. Änderungen können die Genauigkeit von Statistiken mindern und so eine unzulängliche Beurteilungsbasis schaffen. Es ist besser, eine neue Frage zu erstellen, als eine bereits beantwortete Frage zu ändern.
+><span data-ttu-id="a8c53-222">**Achtung:** Seien Sie vorsichtig bei Änderungen an Fragebögen, die bereits beantwortet wurden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-222">**Caution** Be careful when you change questionnaires that have already been answered.</span></span> <span data-ttu-id="a8c53-223">Änderungen können die Genauigkeit von Statistiken mindern und so eine unzulängliche Beurteilungsbasis schaffen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-223">Changes can reduce the accuracy of statistics and therefore make them a poor basis for evaluation.</span></span> <span data-ttu-id="a8c53-224">Es ist besser, eine neue Frage zu erstellen, als eine bereits beantwortete Frage zu ändern.</span><span class="sxs-lookup"><span data-stu-id="a8c53-224">Consider creating a new question instead of changing a question that has already been answered.</span></span>
 
-In einem Fragebogen können Sie die folgenden Typen von Fragen nicht löschen:
+<span data-ttu-id="a8c53-225">In einem Fragebogen können Sie die folgenden Typen von Fragen nicht löschen:</span><span class="sxs-lookup"><span data-stu-id="a8c53-225">In a questionnaire, you can't delete the following types of questions:</span></span>
 
--   Fragen, die an einen Fragebogen angehängt sind
--   Fragen, die bereits beantwortet wurden und sich daher im Dialogfeld **Antworten** befinden.
+-   <span data-ttu-id="a8c53-226">Fragen, die an einen Fragebogen angehängt sind</span><span class="sxs-lookup"><span data-stu-id="a8c53-226">Questions that are attached to a questionnaire</span></span>
+-   <span data-ttu-id="a8c53-227">Fragen, die bereits beantwortet wurden und sich daher im Dialogfeld **Antworten** befinden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-227">Questions that have already been answered and therefore appear in the **Answers** dialog box.</span></span>
 
-### Ergebnisgruppen
-<a id="result-groups" class="xliff"></a>
+### <a name="result-groups"></a><span data-ttu-id="a8c53-228">Ergebnisgruppen</span><span class="sxs-lookup"><span data-stu-id="a8c53-228">Result groups</span></span>
 
-Ergebnisgruppen sind optional, wenn Sie Fragen einem Fragebogen zuordnen. 
+<span data-ttu-id="a8c53-229">Ergebnisgruppen sind optional, wenn Sie Fragen einem Fragebogen zuordnen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-229">Result groups are optional when you attach questions to a questionnaire.</span></span> 
 
-Eine Ergebnisgruppe wird verwendet, um Punkte zu berechnen und die Ergebnisse eines Fragebogens zu kategorisieren. Wenn Sie Ergebnisgruppen verwenden, können Sie die folgenden Aufgaben ausführen:
+<span data-ttu-id="a8c53-230">Eine Ergebnisgruppe wird verwendet, um Punkte zu berechnen und die Ergebnisse eines Fragebogens zu kategorisieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-230">A result group is used to calculate points and categorize the results of a questionnaire.</span></span> <span data-ttu-id="a8c53-231">Wenn Sie Ergebnisgruppen verwenden, können Sie die folgenden Aufgaben ausführen:</span><span class="sxs-lookup"><span data-stu-id="a8c53-231">If you use result groups, you can perform the following tasks:</span></span>
 
--   Fragebogenergebnisse auf Basis der Punktstatistiken auswerten.
--   Die Punktzahl eines Befragten für jede eingerichtete Ergebnisgruppe auswerten.
--   Sie können zur Vereinfachung der Analyse von Ergebnissen eine Statistik für die einzelnen Ergebnisgruppen generieren.
--   Einen Bericht drucken, der Ergebnisse für jede Ergebnisgruppe, sowie optionale Punkte/Texte auf der Grundlage der in jeder Ergebnisgruppe erzielten Punkte anzeigt.
+-   <span data-ttu-id="a8c53-232">Fragebogenergebnisse auf Basis der Punktstatistiken auswerten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-232">Evaluate questionnaire results, based on point statistics.</span></span>
+-   <span data-ttu-id="a8c53-233">Die Punktzahl eines Befragten für jede eingerichtete Ergebnisgruppe auswerten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-233">Evaluate a respondent’s score for each result group that you set up.</span></span>
+-   <span data-ttu-id="a8c53-234">Sie können zur Vereinfachung der Analyse von Ergebnissen eine Statistik für die einzelnen Ergebnisgruppen generieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-234">Generate statistics for each result group to help you analyze results.</span></span>
+-   <span data-ttu-id="a8c53-235">Einen Bericht drucken, der Ergebnisse für jede Ergebnisgruppe, sowie optionale Punkte/Texte auf der Grundlage der in jeder Ergebnisgruppe erzielten Punkte anzeigt.</span><span class="sxs-lookup"><span data-stu-id="a8c53-235">Print a report that shows results for each result group, and also optional points/texts that are based on points that are earned in each result group.</span></span>
 
-> **Hinweis**
->   Die folgenden Aufgaben müssen abgeschlossen werden, bevor Sie Ergebnisgruppen einrichten können:
+> <span data-ttu-id="a8c53-236">**Hinweis**
+>   Die folgenden Aufgaben müssen abgeschlossen werden, bevor Sie Ergebnisgruppen einrichten können:</span><span class="sxs-lookup"><span data-stu-id="a8c53-236">**Note**
+  Before you can set up result groups, you must complete the following tasks:</span></span>
 
--   Richten Sie Fragen mit vordefinierten Antworten ein. Für eine Frage mit vordefinierten Antworten muss der Eingabetyp auf der Seite **Fragen** entweder **Kontrollkästchen**, **Alternative Schaltfläche** oder **Eingabe-Listenfeld** sein .
--   Legen Sie Punkte für Antworten in Antwortgruppen fest, die den einzelnen Fragen zugewiesen sind.
--   Richten Sie einen Fragebogen ein.
+-   <span data-ttu-id="a8c53-237">Richten Sie Fragen mit vordefinierten Antworten ein.</span><span class="sxs-lookup"><span data-stu-id="a8c53-237">Set up closed-ended questions.</span></span> <span data-ttu-id="a8c53-238">Für eine Frage mit vordefinierten Antworten muss der Eingabetyp auf der Seite **Fragen** entweder **Kontrollkästchen**, **Alternative Schaltfläche** oder **Eingabe-Listenfeld** sein .</span><span class="sxs-lookup"><span data-stu-id="a8c53-238">For a closed-ended question, the input type on the **Questions** page must be **Check box**, **Alternative button**, or **Combo box**.</span></span>
+-   <span data-ttu-id="a8c53-239">Legen Sie Punkte für Antworten in Antwortgruppen fest, die den einzelnen Fragen zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="a8c53-239">Define points for answers in the answer groups that are assigned to each question.</span></span>
+-   <span data-ttu-id="a8c53-240">Richten Sie einen Fragebogen ein.</span><span class="sxs-lookup"><span data-stu-id="a8c53-240">Set up a questionnaire.</span></span>
 
-Um Fragen zu einem Fragebogen mit Ergebnisgruppen hinzuzufügen, richten Sie zuerst die Ergebnisgruppen für den Fragebogen ein, und fügen Sie den Ergebnisgruppen dann Fragen hinzu. Wenn Sie keine Ergebnisgruppen verwenden, können Fragen dem Fragebogen direkt zugeordnet werden. 
+<span data-ttu-id="a8c53-241">Um Fragen zu einem Fragebogen mit Ergebnisgruppen hinzuzufügen, richten Sie zuerst die Ergebnisgruppen für den Fragebogen ein, und fügen Sie den Ergebnisgruppen dann Fragen hinzu.</span><span class="sxs-lookup"><span data-stu-id="a8c53-241">To attach questions to a questionnaire by using result groups, first set up the result groups for the questionnaire, and then add questions to the result groups.</span></span> <span data-ttu-id="a8c53-242">Wenn Sie keine Ergebnisgruppen verwenden, können Fragen dem Fragebogen direkt zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-242">If you don't use result groups, you can attach questions directly to a questionnaire.</span></span> 
 
-Sie können mehrere Ergebnisgruppen einrichten, um die Punkte zu überprüfen, die ein Teilnehmer in jeder Kategorie erworben hat. Nachdem ein Fragebogen ausgefüllt wurde, können Sie die Punkte anzeigen, die für jede Ergebnisgruppe erreicht wurden. 
+<span data-ttu-id="a8c53-243">Sie können mehrere Ergebnisgruppen einrichten, um die Punkte zu überprüfen, die ein Teilnehmer in jeder Kategorie erworben hat.</span><span class="sxs-lookup"><span data-stu-id="a8c53-243">You can set up multiple result groups to evaluate the points that a respondent earns in each category.</span></span> <span data-ttu-id="a8c53-244">Nachdem ein Fragebogen ausgefüllt wurde, können Sie die Punkte anzeigen, die für jede Ergebnisgruppe erreicht wurden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-244">After a questionnaire is completed, you can view the points that have been achieved for each result group.</span></span> 
 
-> **Tipp:**
->    Um einen Fragebogen mithilfe der Punkte, aber nicht separater Kategorien, zu bewerten, können Sie alle Fragen einer einzelnen Ergebnisgruppe hinzufügen. 
+> <span data-ttu-id="a8c53-245">**Tipp:**
+>    Um einen Fragebogen mithilfe der Punkte, aber nicht separater Kategorien, zu bewerten, können Sie alle Fragen einer einzelnen Ergebnisgruppe hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-245">**Tip**
+   To evaluate a questionnaire by using points but not separate categories, you can add all questions to a single result group.</span></span> 
 
-Für jede Ergebnisgruppe können Sie einen oder mehrere punktbasierte Nachrichten einrichten, die einem Teilnehmer nach Beantwortung des Fragebogens angezeigt werden. Der angezeigte Text kann je nach erreichter Punktzahl des Befragten in einer Ergebnisgruppe unterschiedlich sein. Um punktbasierte Nachrichten zu verwenden, müssen Sie Punktintervalle sowie eine Beschreibung für jedes Intervall definieren. Wenn die Punktzahl eines Befragten in einem bestimmten Intervall liegt, wird der Text für dieses Intervall in den Ergebnisbericht aufgenommen. 
+<span data-ttu-id="a8c53-246">Für jede Ergebnisgruppe können Sie einen oder mehrere punktbasierte Nachrichten einrichten, die einem Teilnehmer nach Beantwortung des Fragebogens angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-246">For each result group, you can also set up one or more point-based messages that respondents receive after they complete a questionnaire.</span></span> <span data-ttu-id="a8c53-247">Der angezeigte Text kann je nach erreichter Punktzahl des Befragten in einer Ergebnisgruppe unterschiedlich sein.</span><span class="sxs-lookup"><span data-stu-id="a8c53-247">The text that is shown can vary, depending on the score that a respondent achieves in a result group.</span></span> <span data-ttu-id="a8c53-248">Um punktbasierte Nachrichten zu verwenden, müssen Sie Punktintervalle sowie eine Beschreibung für jedes Intervall definieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-248">To use point-based messages, you must define point intervals and a description of each interval.</span></span> <span data-ttu-id="a8c53-249">Wenn die Punktzahl eines Befragten in einem bestimmten Intervall liegt, wird der Text für dieses Intervall in den Ergebnisbericht aufgenommen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-249">When a respondent achieves a score in a specific interval, the text for that interval is included on the results report.</span></span> 
 
-Da sich eine Ergebnisgruppe auf Punkte bezieht, die zu einer bestimmten Gruppe von Fragen auf einem Fragebogen gehören, können Sie für einen Fragebogen nur eine spezifische Ergebnisgruppe verwenden.
+<span data-ttu-id="a8c53-250">Da sich eine Ergebnisgruppe auf Punkte bezieht, die zu einer bestimmten Gruppe von Fragen auf einem Fragebogen gehören, können Sie für einen Fragebogen nur eine spezifische Ergebnisgruppe verwenden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-250">Because a result group is related to the points that are associated with specific sets of questions on a questionnaire, you can use only a specific result group for a questionnaire.</span></span>
 
-#### Beispiel: Punkte/Text für die Ergebnisgruppe "3"
-<a id="example-pointstexts-for-result-group-3" class="xliff"></a>
+#### <a name="example-pointstexts-for-result-group-3"></a><span data-ttu-id="a8c53-251">Beispiel: Punkte/Text für die Ergebnisgruppe "3"</span><span class="sxs-lookup"><span data-stu-id="a8c53-251">Example: Points/texts for result group 3</span></span>
 
-Sie verwenden einen Fragebogen für einen Führungstest, der über 15 Fragen in drei Kategorien verfügt. Sie erstellen drei Ergebnisgruppen und fügen fünf Fragen jeder Ergebnisgruppe hinzu. Punkte werden dann in den drei Gruppen summiert. Die drei Ergebnisgruppen sind wie folgt:
+<span data-ttu-id="a8c53-252">Sie verwenden einen Fragebogen für einen Führungstest, der über 15 Fragen in drei Kategorien verfügt.</span><span class="sxs-lookup"><span data-stu-id="a8c53-252">You're using a questionnaire for a leadership test that has 15 questions in three categories.</span></span> <span data-ttu-id="a8c53-253">Sie erstellen drei Ergebnisgruppen und fügen fünf Fragen jeder Ergebnisgruppe hinzu.</span><span class="sxs-lookup"><span data-stu-id="a8c53-253">You create three result groups and add five questions to each result group.</span></span> <span data-ttu-id="a8c53-254">Punkte werden dann in den drei Gruppen summiert.</span><span class="sxs-lookup"><span data-stu-id="a8c53-254">Points are then totaled in the three groups.</span></span> <span data-ttu-id="a8c53-255">Die drei Ergebnisgruppen sind wie folgt:</span><span class="sxs-lookup"><span data-stu-id="a8c53-255">The three result groups are as follows:</span></span>
 
--   Kreative Fähigkeiten
--   Führungsqualitäten
--   Technische Fähigkeiten
+-   <span data-ttu-id="a8c53-256">Kreative Fähigkeiten</span><span class="sxs-lookup"><span data-stu-id="a8c53-256">Creative abilities</span></span>
+-   <span data-ttu-id="a8c53-257">Führungsqualitäten</span><span class="sxs-lookup"><span data-stu-id="a8c53-257">Leadership abilities</span></span>
+-   <span data-ttu-id="a8c53-258">Technische Fähigkeiten</span><span class="sxs-lookup"><span data-stu-id="a8c53-258">Technical abilities</span></span>
 
-Um punktbasierte Nachrichten zu verwenden, können Sie Textintervalle für jede Ergebnisgruppe einrichten. Jeder Frage werden zwei Punkte zugewiesen. Daher ist die maximale Gesamtpunktzahl in einer Ergebnisgruppe 10. 
+<span data-ttu-id="a8c53-259">Um punktbasierte Nachrichten zu verwenden, können Sie Textintervalle für jede Ergebnisgruppe einrichten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-259">To use point-based messages, you set up text intervals for each result group.</span></span> <span data-ttu-id="a8c53-260">Jeder Frage werden zwei Punkte zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-260">Each question is assigned two points.</span></span> <span data-ttu-id="a8c53-261">Daher ist die maximale Gesamtpunktzahl in einer Ergebnisgruppe 10.</span><span class="sxs-lookup"><span data-stu-id="a8c53-261">Therefore, the maximum point total in each result group is 10.</span></span> 
 
-Die folgende Tabelle zeigt die punktbasierten Nachrichten, die Sie für die "Führungsmöglichkeits-Ergebnisgruppe" definieren.
+<span data-ttu-id="a8c53-262">Die folgende Tabelle zeigt die punktbasierten Nachrichten, die Sie für die "Führungsmöglichkeits-Ergebnisgruppe" definieren.</span><span class="sxs-lookup"><span data-stu-id="a8c53-262">The following table shows the point-based messages that you define for the “leadership abilities” result group.</span></span>
 
-| Punktintervall | Text                                       |
+| <span data-ttu-id="a8c53-263">Punktintervall</span><span class="sxs-lookup"><span data-stu-id="a8c53-263">Point interval</span></span> | <span data-ttu-id="a8c53-264">Text</span><span class="sxs-lookup"><span data-stu-id="a8c53-264">Text</span></span>                                       |
 |----------------|--------------------------------------------|
-| 1 bis 3         | Sie haben durchschnittliche Führungsqualitäten.     |
-| 4 bis 7         | Sie haben gute Führungsqualitäten.        |
-| 8 bis 10        | Sie haben hervorragende Führungsqualitäten. |
+| <span data-ttu-id="a8c53-265">1 bis 3</span><span class="sxs-lookup"><span data-stu-id="a8c53-265">1 to 3</span></span>         | <span data-ttu-id="a8c53-266">Sie haben durchschnittliche Führungsqualitäten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-266">You have average leadership abilities.</span></span>     |
+| <span data-ttu-id="a8c53-267">4 bis 7</span><span class="sxs-lookup"><span data-stu-id="a8c53-267">4 to 7</span></span>         | <span data-ttu-id="a8c53-268">Sie haben gute Führungsqualitäten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-268">You have good leadership abilities.</span></span>        |
+| <span data-ttu-id="a8c53-269">8 bis 10</span><span class="sxs-lookup"><span data-stu-id="a8c53-269">8 to 10</span></span>        | <span data-ttu-id="a8c53-270">Sie haben hervorragende Führungsqualitäten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-270">You have outstanding leadership abilities.</span></span> |
 
-Sie können Punktintervalle und Texte für die einzelnen Ergebnisgruppen in einem Fragebogen einrichten. Texte, die der Punktzahl jedes Befragten entsprechen, werden für jede Ergebnisgruppe angezeigt. 
+<span data-ttu-id="a8c53-271">Sie können Punktintervalle und Texte für die einzelnen Ergebnisgruppen in einem Fragebogen einrichten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-271">You can set up point intervals and texts for each result group on a questionnaire.</span></span> <span data-ttu-id="a8c53-272">Texte, die der Punktzahl jedes Befragten entsprechen, werden für jede Ergebnisgruppe angezeigt.</span><span class="sxs-lookup"><span data-stu-id="a8c53-272">Texts that correspond to each respondent’s score are displayed for each result group.</span></span> 
 
-> **Hinweis**
->   Sie können Intervalle und Texte ändern. Wenn ein Fragebogen jedoch abgeschlossen wurde, können Änderungen zu Diskrepanzen zwischen alten und neuen Ergebnisberichten führen.
+> <span data-ttu-id="a8c53-273">**Hinweis**
+>   Sie können Intervalle und Texte ändern.</span><span class="sxs-lookup"><span data-stu-id="a8c53-273">**Note**
+  You can change intervals and texts.</span></span> <span data-ttu-id="a8c53-274">Wenn ein Fragebogen jedoch abgeschlossen wurde, können Änderungen zu Diskrepanzen zwischen alten und neuen Ergebnisberichten führen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-274">However, if a questionnaire has been completed, changes might cause differences between previous and new result reports.</span></span>
 
-### Bedingte Fragenhierarchien
-<a id="conditional-question-hierarchies" class="xliff"></a>
+### <a name="conditional-question-hierarchies"></a><span data-ttu-id="a8c53-275">Bedingte Fragenhierarchien</span><span class="sxs-lookup"><span data-stu-id="a8c53-275">Conditional question hierarchies</span></span>
 
-Bedingte Fragenhierarchien sind optional, wenn Sie einen Fragebogen einrichten. 
+<span data-ttu-id="a8c53-276">Bedingte Fragenhierarchien sind optional, wenn Sie einen Fragebogen einrichten.</span><span class="sxs-lookup"><span data-stu-id="a8c53-276">Conditional question hierarchies are optional when you set up a questionnaire.</span></span> 
 
-> **Hinweis**
->   Bevor Sie eine Hierarchie aus bedingten Fragen einrichten können, müssen dem Fragebogen bereits Fragen zugeordnet sein, mit denen Antwortgruppen verknüpft sind. 
+> <span data-ttu-id="a8c53-277">**Hinweis**
+>   Bevor Sie eine Hierarchie aus bedingten Fragen einrichten können, müssen dem Fragebogen bereits Fragen zugeordnet sein, mit denen Antwortgruppen verknüpft sind.</span><span class="sxs-lookup"><span data-stu-id="a8c53-277">**Note**
+  Before you can set up a conditional question hierarchy, you must attach questions that have assigned answer groups to the questionnaire.</span></span> 
 
-Um mithilfe bedingter Fragen eine Fragenhierarchie in einem Fragebogen zu erstellen, können Sie die Reihenfolge, in der die Fragen präsentiert werden, von den Antworten abhängig machen, die von einem Befragten für die verschiedenen Fragen ausgewählt werden. Somit können Sie den Fragebogen an den Befragten anpassen.
+<span data-ttu-id="a8c53-278">Um mithilfe bedingter Fragen eine Fragenhierarchie in einem Fragebogen zu erstellen, können Sie die Reihenfolge, in der die Fragen präsentiert werden, von den Antworten abhängig machen, die von einem Befragten für die verschiedenen Fragen ausgewählt werden.</span><span class="sxs-lookup"><span data-stu-id="a8c53-278">To use conditional questions to create a question hierarchy in a questionnaire, you can make the sequence that questions are presented in depend on the answer that a respondent selects for each question.</span></span> <span data-ttu-id="a8c53-279">Somit können Sie den Fragebogen an den Befragten anpassen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-279">By basing the question sequence on a respondent’s answer, you can modify the questionnaire as the respondent completes it.</span></span>
 
-#### Beispiele
-<a id="examples" class="xliff"></a>
+#### <a name="examples"></a><span data-ttu-id="a8c53-280">Beispiele</span><span class="sxs-lookup"><span data-stu-id="a8c53-280">Examples</span></span>
 
-Eine juristische Person bietet seinen Kunden sowohl Artikel als auch Dienstleistungen an. Typischer Weise kaufen einige Kunden nur Artikel oder nur Dienstleistungen und manche beides. Wenn die juristische Person eine Umfrage zur Kundenzufriedenheit verteilt, kann mithilfe einer bedingten Struktur des Fragebogens verhindert werden, sodass Kunden, die nur Dienstleistungen kaufen, Fragen zu Artikeln beantworten müssen. 
+<span data-ttu-id="a8c53-281">Eine juristische Person bietet seinen Kunden sowohl Artikel als auch Dienstleistungen an.</span><span class="sxs-lookup"><span data-stu-id="a8c53-281">A legal entity offers both items and services to its customers.</span></span> <span data-ttu-id="a8c53-282">Typischer Weise kaufen einige Kunden nur Artikel oder nur Dienstleistungen und manche beides.</span><span class="sxs-lookup"><span data-stu-id="a8c53-282">As typically occurs in such cases, some customers purchase only items, some purchase only services, and some purchase both items and services.</span></span> <span data-ttu-id="a8c53-283">Wenn die juristische Person eine Umfrage zur Kundenzufriedenheit verteilt, kann mithilfe einer bedingten Struktur des Fragebogens verhindert werden, sodass Kunden, die nur Dienstleistungen kaufen, Fragen zu Artikeln beantworten müssen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-283">Therefore, when the legal entity distributes a customer satisfaction survey, it applies a conditional structure to the questionnaire, so that customers who purchase only services don't have to answer questions about items.</span></span> 
 
-Alternativ können Sie einen Fragebogen z. B. so einrichten, dass Frage 2 die nächste Frage in der Folge ist, wenn ein Befragter die Antwort A für Frage 1 auswählt. Wenn der Befragte Antwort B für Frage 1 auswählt, dann könnte Frage 5 als nächstes folgen.
+<span data-ttu-id="a8c53-284">Alternativ können Sie einen Fragebogen z. B. so einrichten, dass Frage 2 die nächste Frage in der Folge ist, wenn ein Befragter die Antwort A für Frage 1 auswählt.</span><span class="sxs-lookup"><span data-stu-id="a8c53-284">Alternatively, you set up a questionnaire so that if a respondent selects answer A for question 1, question 2 is next in the question sequence.</span></span> <span data-ttu-id="a8c53-285">Wenn der Befragte Antwort B für Frage 1 auswählt, dann könnte Frage 5 als nächstes folgen.</span><span class="sxs-lookup"><span data-stu-id="a8c53-285">However, if the respondent selects answer B for question 1, question 5 is next.</span></span>
 
-Siehe auch
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a><span data-ttu-id="a8c53-286">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a8c53-286">See also</span></span>
 --------
 
-[Verwenden von Fragebögen](questionnaires.md)
+[<span data-ttu-id="a8c53-287">Verwenden von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="a8c53-287">Using questionnaires</span></span>](questionnaires.md)
 
-[Verteilen und Abschließen von Fragebögen](distribute-questionnaires.md)
+[<span data-ttu-id="a8c53-288">Verteilen und Abschließen von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="a8c53-288">Distributing and completing questionnaires</span></span>](distribute-questionnaires.md)
 
-[Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
+[<span data-ttu-id="a8c53-289">Anzeigen und Auswerten der Ergebnisse eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="a8c53-289">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
 
 

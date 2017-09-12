@@ -17,58 +17,58 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ff397d850cb40112bf1c862e230b577e6f8a4a99
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1c5a9bdd0e9eb77308030fb7bea2fa6e438019f1
 ms.contentlocale: de-de
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-channel-attributes"></a> Kanalattribute definieren
+# <a name="define-channel-attributes"></a><span data-ttu-id="2f2df-103"> Kanalattribute definieren</span><span class="sxs-lookup"><span data-stu-id="2f2df-103">Define channel attributes</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen. Sie müssen den Kanal der Organisationsstandardhierarchie hinzufügen, bevor Sie die Attribute definieren können.
+<span data-ttu-id="2f2df-104">Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2f2df-104">Enrich the channel by adding channel and product attributes.</span></span> <span data-ttu-id="2f2df-105">Sie müssen den Kanal der Organisationsstandardhierarchie hinzufügen, bevor Sie die Attribute definieren können.</span><span class="sxs-lookup"><span data-stu-id="2f2df-105">You must add the channel to the organization default hierarchy before you can define the attributes.</span></span>
 
 
-## <a name="define-channel-product-attribute"></a>Definieren Sie die Kanalproduktattribute.
-1. Wählen Sie Einzelhandel und Handel > Kanaleinstellung > Kanalkategorien und Produktattribute.
-2. In der Struktur wählen Sie "Contoso Einzelhandel\Mode\Houston".
-3. Klicken Sie auf "Bearbeiten".
-4. Geben Sie im Feld "Kategoriehierarchie" einen Wert ein oder wählen Sie einen Wert aus.
-    * Die Navigationshierarchie wird für das Navigieren des Produkts in Ihren Kanäle verwendet.  
-5. Erweitern Sie den Abschnitt "Attributgruppe".
-6. Klicken Sie auf Hinzufügen.
-    * Die Attributgruppe wird in den Produktdetails angezeigt und auch unterstützt, wenn der Produktfilter verwendet wird.  
-7. Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.
-8. Klicken Sie "Attribute anzeigen".
-9. Erweitern Sie den Abschnitt "Attribute".
-10. Klicken Sie auf Hinzufügen.
-11. Markieren Sie in der Liste die ausgewählte Zeile.
-12. Klicken Sie auf AddBtn.
-13. Klicken Sie auf "OK".
-14. Klicken Sie auf "Speichern".
-15. Schließen Sie die Seite.
-16. Erweitern Sie den Abschnitt Produkte.
-17. Klicken Sie auf Hinzufügen.
-18. Markieren Sie in der Liste die ausgewählte Zeile.
-19. Klicken Sie auf Hinzufügen.
-    * Ebenso können Sie mehrere Produkte hinzufügen.  
-20. Klicken Sie auf "OK".
-21. Klicken Sie auf "Attribute".
-22. Erweitern Sie den Abschnitt "Kanalmedien".
-23. Klicken Sie auf "Bearbeiten".
-24. Wählen Sie im Feld "Kanal" eine Option aus.
-25. Aktivieren Sie das Kontrollkästchen 'Standard'.
-26. Klicken Sie auf "OK".
-27. Erweitern Sie den Abschnitt "Kanalproduktattribute".
-28. Geben Sie im Feld "Marke" einen Wert ein.
-    * Ebenso können Sie die anderen Attribute festlegen.  
-29. Klicken Sie auf "Speichern".
-30. Schließen Sie die Seite.
-31. Klicken Sie auf "Speichern".
-32. Klicken Sie "Kanalupdates veröffentlichen".
-    * Nachdem Veröffentlichen sind die Daten zur Synchronisierung mit den Kanaltabellen bereit. Wenn Sie nicht veröffentlichen, werden die geänderten Daten nicht mit den Kanaltabellen synchronisiert.  
-33. Klicken Sie auf "OK".
-34. Klicken Sie auf "Speichern".
+## <a name="define-channel-product-attribute"></a><span data-ttu-id="2f2df-106">Definieren Sie die Kanalproduktattribute.</span><span class="sxs-lookup"><span data-stu-id="2f2df-106">Define channel product attribute.</span></span>
+1. <span data-ttu-id="2f2df-107">Wählen Sie Einzelhandel und Handel > Kanaleinstellung > Kanalkategorien und Produktattribute.</span><span class="sxs-lookup"><span data-stu-id="2f2df-107">Go to Retail and commerce > Channel setup > Channel categories and product attributes.</span></span>
+2. <span data-ttu-id="2f2df-108">In der Struktur wählen Sie "Contoso Einzelhandel\Mode\Houston".</span><span class="sxs-lookup"><span data-stu-id="2f2df-108">In the tree, select 'Contoso Retail\Fashion\Houston'.</span></span>
+3. <span data-ttu-id="2f2df-109">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="2f2df-109">Click Edit.</span></span>
+4. <span data-ttu-id="2f2df-110">Geben Sie im Feld "Kategoriehierarchie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="2f2df-110">In the Category hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="2f2df-111">Die Navigationshierarchie wird für das Navigieren des Produkts in Ihren Kanäle verwendet.</span><span class="sxs-lookup"><span data-stu-id="2f2df-111">The navigation hierarchy will be used for navigating the product inside your channels.</span></span>  
+5. <span data-ttu-id="2f2df-112">Erweitern Sie den Abschnitt "Attributgruppe".</span><span class="sxs-lookup"><span data-stu-id="2f2df-112">Expand the Attribute group section.</span></span>
+6. <span data-ttu-id="2f2df-113">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2f2df-113">Click Add.</span></span>
+    * <span data-ttu-id="2f2df-114">Die Attributgruppe wird in den Produktdetails angezeigt und auch unterstützt, wenn der Produktfilter verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="2f2df-114">The attribute group will be shown in the product details and also will help when using the product filter.</span></span>  
+7. <span data-ttu-id="2f2df-115">Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="2f2df-115">In the Name field, enter or select a value.</span></span>
+8. <span data-ttu-id="2f2df-116">Klicken Sie "Attribute anzeigen".</span><span class="sxs-lookup"><span data-stu-id="2f2df-116">Click View attributes.</span></span>
+9. <span data-ttu-id="2f2df-117">Erweitern Sie den Abschnitt "Attribute".</span><span class="sxs-lookup"><span data-stu-id="2f2df-117">Expand the Attributes section.</span></span>
+10. <span data-ttu-id="2f2df-118">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2f2df-118">Click Add.</span></span>
+11. <span data-ttu-id="2f2df-119">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="2f2df-119">In the list, mark the selected row.</span></span>
+12. <span data-ttu-id="2f2df-120">Klicken Sie auf AddBtn.</span><span class="sxs-lookup"><span data-stu-id="2f2df-120">Click AddBtn.</span></span>
+13. <span data-ttu-id="2f2df-121">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="2f2df-121">Click OK.</span></span>
+14. <span data-ttu-id="2f2df-122">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="2f2df-122">Click Save.</span></span>
+15. <span data-ttu-id="2f2df-123">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="2f2df-123">Close the page.</span></span>
+16. <span data-ttu-id="2f2df-124">Erweitern Sie den Abschnitt Produkte.</span><span class="sxs-lookup"><span data-stu-id="2f2df-124">Expand the Products section.</span></span>
+17. <span data-ttu-id="2f2df-125">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2f2df-125">Click Add.</span></span>
+18. <span data-ttu-id="2f2df-126">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="2f2df-126">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="2f2df-127">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2f2df-127">Click Add.</span></span>
+    * <span data-ttu-id="2f2df-128">Ebenso können Sie mehrere Produkte hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2f2df-128">Similarly you can add multiple products.</span></span>  
+20. <span data-ttu-id="2f2df-129">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="2f2df-129">Click OK.</span></span>
+21. <span data-ttu-id="2f2df-130">Klicken Sie auf "Attribute".</span><span class="sxs-lookup"><span data-stu-id="2f2df-130">Click Attributes.</span></span>
+22. <span data-ttu-id="2f2df-131">Erweitern Sie den Abschnitt "Kanalmedien".</span><span class="sxs-lookup"><span data-stu-id="2f2df-131">Expand the Channel media section.</span></span>
+23. <span data-ttu-id="2f2df-132">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="2f2df-132">Click Edit.</span></span>
+24. <span data-ttu-id="2f2df-133">Wählen Sie im Feld "Kanal" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="2f2df-133">In the Channel field, select an option.</span></span>
+25. <span data-ttu-id="2f2df-134">Aktivieren Sie das Kontrollkästchen 'Standard'.</span><span class="sxs-lookup"><span data-stu-id="2f2df-134">Select the Default check box.</span></span>
+26. <span data-ttu-id="2f2df-135">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="2f2df-135">Click OK.</span></span>
+27. <span data-ttu-id="2f2df-136">Erweitern Sie den Abschnitt "Kanalproduktattribute".</span><span class="sxs-lookup"><span data-stu-id="2f2df-136">Expand the Channel product attributes section.</span></span>
+28. <span data-ttu-id="2f2df-137">Geben Sie im Feld "Marke" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="2f2df-137">In the Brand field, type a value.</span></span>
+    * <span data-ttu-id="2f2df-138">Ebenso können Sie die anderen Attribute festlegen.</span><span class="sxs-lookup"><span data-stu-id="2f2df-138">Similarly you can set the other attributes.</span></span>  
+29. <span data-ttu-id="2f2df-139">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="2f2df-139">Click Save.</span></span>
+30. <span data-ttu-id="2f2df-140">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="2f2df-140">Close the page.</span></span>
+31. <span data-ttu-id="2f2df-141">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="2f2df-141">Click Save.</span></span>
+32. <span data-ttu-id="2f2df-142">Klicken Sie "Kanalupdates veröffentlichen".</span><span class="sxs-lookup"><span data-stu-id="2f2df-142">Click Publish channel updates.</span></span>
+    * <span data-ttu-id="2f2df-143">Nachdem Veröffentlichen sind die Daten zur Synchronisierung mit den Kanaltabellen bereit.</span><span class="sxs-lookup"><span data-stu-id="2f2df-143">After publish the data will be ready for sync with the channel tables.</span></span> <span data-ttu-id="2f2df-144">Wenn Sie nicht veröffentlichen, werden die geänderten Daten nicht mit den Kanaltabellen synchronisiert.</span><span class="sxs-lookup"><span data-stu-id="2f2df-144">If you didn't publish the modified data will not be synced with the channel tables.</span></span>  
+33. <span data-ttu-id="2f2df-145">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="2f2df-145">Click OK.</span></span>
+34. <span data-ttu-id="2f2df-146">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="2f2df-146">Click Save.</span></span>
 
 

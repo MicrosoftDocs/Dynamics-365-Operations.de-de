@@ -16,7 +16,7 @@ ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: b2b1b99fd4c7c439ad89440827ad78173d371855
@@ -26,242 +26,242 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Fragebögen verteilen und abschließen
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="966dd-103">Fragebögen verteilen und abschließen</span><span class="sxs-lookup"><span data-stu-id="966dd-103">Distribute and complete a questionnaire</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen. 
+<span data-ttu-id="966dd-104">In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen.</span><span class="sxs-lookup"><span data-stu-id="966dd-104">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-Es gibt mehrere Möglichkeiten, einen Fragebogen zu verteilen:
+<span data-ttu-id="966dd-105">Es gibt mehrere Möglichkeiten, einen Fragebogen zu verteilen:</span><span class="sxs-lookup"><span data-stu-id="966dd-105">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Markieren Sie den Fragebogen als aktiv. Der Fragebogen ist für alle Mitarbeiter verfügbar, sofern keine Fragebogengruppe eingerichtet wird, um den Zugriff auf den Fragebogen zu beschränken.
--   Zuweisen von Rechten zu einer Fragebogengruppe. Der Fragebogen ist dann für alle Mitglieder der ausgewählten Gruppe verfügbar.
--   Erstellen von geplanten Antwortsitzungen. Der Fragebogen steht dann für eine bestimmte Person zur Verfügung.
--   Zeitplan erstellen. Der Fragebogen kann dann für mehrere Personen verfügbar sein.
+-   <span data-ttu-id="966dd-106">Markieren Sie den Fragebogen als aktiv.</span><span class="sxs-lookup"><span data-stu-id="966dd-106">Mark the questionnaire as active.</span></span> <span data-ttu-id="966dd-107">Der Fragebogen ist für alle Mitarbeiter verfügbar, sofern keine Fragebogengruppe eingerichtet wird, um den Zugriff auf den Fragebogen zu beschränken.</span><span class="sxs-lookup"><span data-stu-id="966dd-107">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="966dd-108">Zuweisen von Rechten zu einer Fragebogengruppe.</span><span class="sxs-lookup"><span data-stu-id="966dd-108">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="966dd-109">Der Fragebogen ist dann für alle Mitglieder der ausgewählten Gruppe verfügbar.</span><span class="sxs-lookup"><span data-stu-id="966dd-109">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="966dd-110">Erstellen von geplanten Antwortsitzungen.</span><span class="sxs-lookup"><span data-stu-id="966dd-110">Create planned answer sessions.</span></span> <span data-ttu-id="966dd-111">Der Fragebogen steht dann für eine bestimmte Person zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="966dd-111">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="966dd-112">Zeitplan erstellen.</span><span class="sxs-lookup"><span data-stu-id="966dd-112">Create a schedule.</span></span> <span data-ttu-id="966dd-113">Der Fragebogen kann dann für mehrere Personen verfügbar sein.</span><span class="sxs-lookup"><span data-stu-id="966dd-113">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Markieren eines Fragebogens als aktiv
-Setzen Sie das Feld **Aktiv** auf **Ja** auf der Seite **Fragebögen**. Sie geben den Fragebogen für alle Mitarbeiter zur Beantwortung frei. Die Befragungsteilnehmer können den Fragebogen mehrmals ausfüllen. Diese Funktionalität ist hilfreich, wenn ständige Rückmeldung für das ganze Jahr gesammelt werden sollen. So können Sie beispielsweise einen Fragebogen erstellten, über den die Mitarbeiter ein Feedback zum Mittagessen in der Cafeteria abgeben können.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="966dd-114">Markieren eines Fragebogens als aktiv</span><span class="sxs-lookup"><span data-stu-id="966dd-114">Marking a questionnaire as active</span></span>
+<span data-ttu-id="966dd-115">Setzen Sie das Feld **Aktiv** auf **Ja** auf der Seite **Fragebögen**. Sie geben den Fragebogen für alle Mitarbeiter zur Beantwortung frei.</span><span class="sxs-lookup"><span data-stu-id="966dd-115">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="966dd-116">Die Befragungsteilnehmer können den Fragebogen mehrmals ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="966dd-116">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="966dd-117">Diese Funktionalität ist hilfreich, wenn ständige Rückmeldung für das ganze Jahr gesammelt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="966dd-117">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="966dd-118">So können Sie beispielsweise einen Fragebogen erstellten, über den die Mitarbeiter ein Feedback zum Mittagessen in der Cafeteria abgeben können.</span><span class="sxs-lookup"><span data-stu-id="966dd-118">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Fragebogengruppen
-Sie können Fragebogengruppen einrichten und die Befragten einbeziehen, für die ein Fragebogen verteilt werden soll. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="966dd-119">Fragebogengruppen</span><span class="sxs-lookup"><span data-stu-id="966dd-119">Questionnaire groups</span></span>
+<span data-ttu-id="966dd-120">Sie können Fragebogengruppen einrichten und die Befragten einbeziehen, für die ein Fragebogen verteilt werden soll.</span><span class="sxs-lookup"><span data-stu-id="966dd-120">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-Sie können Fragebogengruppen von den folgenden Seiten erstellen:
+<span data-ttu-id="966dd-121">Sie können Fragebogengruppen von den folgenden Seiten erstellen:</span><span class="sxs-lookup"><span data-stu-id="966dd-121">You can create questionnaire groups from the following pages:</span></span>
 
--   **Fragebogengruppen** – Nur Personen innerhalb einer Fragebogengruppe können einen ausgewählten Fragebogen ausfüllen. Wenn beispielsweise die gewünschte Zielgruppe "Auftragnehmer" ist, können Sie eine Fragebogengruppe erstellen, die für diese Teilnehmer spezifisch ist.
--   **Fragebogengruppenmitglieder** – Mithilfe dieses Formulars können Sie Personen zu Fragebogengruppen hinzufügen.
+-   <span data-ttu-id="966dd-122">**Fragebogengruppen** – Nur Personen innerhalb einer Fragebogengruppe können einen ausgewählten Fragebogen ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="966dd-122">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="966dd-123">Wenn beispielsweise die gewünschte Zielgruppe "Auftragnehmer" ist, können Sie eine Fragebogengruppe erstellen, die für diese Teilnehmer spezifisch ist.</span><span class="sxs-lookup"><span data-stu-id="966dd-123">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="966dd-124">**Fragebogengruppenmitglieder** – Mithilfe dieses Formulars können Sie Personen zu Fragebogengruppen hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="966dd-124">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-Um eine Fragebogengruppe einem Fragebogen zuzuweisen, klicken Sie auf der Seite **Fragebögen** auf **Benutzerrechte**. Nachdem der Fragebogen als aktiv gespeichert ist, können die Mitglieder der Fragebogengruppe den Fragebogen ausfüllen. Diese Funktion ist hilfreich, wenn Sie einen Fragebogen mit einer Auswählensgruppe von Personen testen möchten, bevor Sie diese in einer größeren Gruppe verteilen, oder wenn Sie den Fragebogen einer Zielgruppe zukommen lassen wollen.
+<span data-ttu-id="966dd-125">Um eine Fragebogengruppe einem Fragebogen zuzuweisen, klicken Sie auf der Seite **Fragebögen** auf **Benutzerrechte**.</span><span class="sxs-lookup"><span data-stu-id="966dd-125">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="966dd-126">Nachdem der Fragebogen als aktiv gespeichert ist, können die Mitglieder der Fragebogengruppe den Fragebogen ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="966dd-126">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="966dd-127">Diese Funktion ist hilfreich, wenn Sie einen Fragebogen mit einer Auswählensgruppe von Personen testen möchten, bevor Sie diese in einer größeren Gruppe verteilen, oder wenn Sie den Fragebogen einer Zielgruppe zukommen lassen wollen.</span><span class="sxs-lookup"><span data-stu-id="966dd-127">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Geplante Beantwortungssitzung in einem Fragebogen
-Geplante Antwortsitzungen sind Fragebogen, die Sie entwickelt und für die Sie die Befragten ausgewählt haben. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="966dd-128">Geplante Beantwortungssitzung in einem Fragebogen</span><span class="sxs-lookup"><span data-stu-id="966dd-128">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="966dd-129">Geplante Antwortsitzungen sind Fragebogen, die Sie entwickelt und für die Sie die Befragten ausgewählt haben.</span><span class="sxs-lookup"><span data-stu-id="966dd-129">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-> **Hinweis** Bevor Sie geplante Antwortsitzungen einrichten können, müssen Sie einen Fragebogen entwerfen. 
+> <span data-ttu-id="966dd-130">**Hinweis** Bevor Sie geplante Antwortsitzungen einrichten können, müssen Sie einen Fragebogen entwerfen.</span><span class="sxs-lookup"><span data-stu-id="966dd-130">**Note** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-Auf der Seite **Geplante Antwortsitzung** können Sie eine geplante Antwortsitzung für einen einzelnen Mitarbeiter erstellen. In der Liste auf der Seite werden alle geplanten Fragebögen angezeigt. 
+<span data-ttu-id="966dd-131">Auf der Seite **Geplante Antwortsitzung** können Sie eine geplante Antwortsitzung für einen einzelnen Mitarbeiter erstellen.</span><span class="sxs-lookup"><span data-stu-id="966dd-131">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="966dd-132">In der Liste auf der Seite werden alle geplanten Fragebögen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="966dd-132">The list on the page displays all planned questionnaires.</span></span> 
 
-Geplante Antwortsitzungen werden auch auf der Seite **Zeitpläne für Fragebögen** verwendet, in dem Sie Fragebögen für mehrere Personen planen können:
+<span data-ttu-id="966dd-133">Geplante Antwortsitzungen werden auch auf der Seite **Zeitpläne für Fragebögen** verwendet, in dem Sie Fragebögen für mehrere Personen planen können:</span><span class="sxs-lookup"><span data-stu-id="966dd-133">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Mitarbeiter
--   Kursteilnehmer
--   Organisationseinheiten
+-   <span data-ttu-id="966dd-134">Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="966dd-134">Employees</span></span>
+-   <span data-ttu-id="966dd-135">Kursteilnehmer</span><span class="sxs-lookup"><span data-stu-id="966dd-135">Course participants</span></span>
+-   <span data-ttu-id="966dd-136">Organisationseinheiten</span><span class="sxs-lookup"><span data-stu-id="966dd-136">Organizational units</span></span>
 
-Jede Person kann den Fragebogen nur einmal beantworten.
+<span data-ttu-id="966dd-137">Jede Person kann den Fragebogen nur einmal beantworten.</span><span class="sxs-lookup"><span data-stu-id="966dd-137">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Planung eines Fragebogens
-Sie können einen Fragebogen optional für mehrere Befragungsteilnehmer planen.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="966dd-138">Planung eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="966dd-138">Scheduling a questionnaire</span></span>
+<span data-ttu-id="966dd-139">Sie können einen Fragebogen optional für mehrere Befragungsteilnehmer planen.</span><span class="sxs-lookup"><span data-stu-id="966dd-139">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Planungstypen
+### <a name="planning-types"></a><span data-ttu-id="966dd-140">Planungstypen</span><span class="sxs-lookup"><span data-stu-id="966dd-140">Planning types</span></span>
 
-Planungstypen werden benötigt, wenn Sie geplante Antwortsitzungen für mehrere Befragungsteilnehmer planen möchten. Planungstypen werden verwendet, um Fragebogenzeitpläne zu klassifizieren. Beispielsweise können Sie Fragebögen für folgende Zwecke planen:
+<span data-ttu-id="966dd-141">Planungstypen werden benötigt, wenn Sie geplante Antwortsitzungen für mehrere Befragungsteilnehmer planen möchten.</span><span class="sxs-lookup"><span data-stu-id="966dd-141">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="966dd-142">Planungstypen werden verwendet, um Fragebogenzeitpläne zu klassifizieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-142">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="966dd-143">Beispielsweise können Sie Fragebögen für folgende Zwecke planen:</span><span class="sxs-lookup"><span data-stu-id="966dd-143">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Beurteilung
--   Umfrage
--   Testen
+-   <span data-ttu-id="966dd-144">Beurteilung</span><span class="sxs-lookup"><span data-stu-id="966dd-144">Evaluation</span></span>
+-   <span data-ttu-id="966dd-145">Umfrage</span><span class="sxs-lookup"><span data-stu-id="966dd-145">Survey</span></span>
+-   <span data-ttu-id="966dd-146">Testen</span><span class="sxs-lookup"><span data-stu-id="966dd-146">Testing</span></span>
 
-Sie können Planungstypen für einen Fragebogenzeitplan auf der Seite **Zeitpläne für Fragebögen** angeben.
+<span data-ttu-id="966dd-147">Sie können Planungstypen für einen Fragebogenzeitplan auf der Seite **Zeitpläne für Fragebögen** angeben.</span><span class="sxs-lookup"><span data-stu-id="966dd-147">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Referenztypen für Fragebögen
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="966dd-148">Referenztypen für Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-148">Reference types for questionnaire</span></span>
 
-Sie können Referenztypen verwenden, um Kriterien für die Auswahl von Befragungsteilnehmern einzugeben, wenn Sie einen Fragebogen terminieren. 
+<span data-ttu-id="966dd-149">Sie können Referenztypen verwenden, um Kriterien für die Auswahl von Befragungsteilnehmern einzugeben, wenn Sie einen Fragebogen terminieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-149">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Verwenden Sie die **Referenztypen**-Seite, um Referenztypen für einen Fragebogen einzurichten. Jeder Referenztyp entspricht einer Tabelle in Microsoft Dynamics 365 for Finance and Operations. Wenn Sie Zeitpläne für Fragebögen erstellen, können Sie einzelne Datensätze in der Tabelle oder einen Datensatzbereich angeben, denen bzw. dem der Fragebogen zugeordnet wird. 
+<span data-ttu-id="966dd-150">Verwenden Sie die **Referenztypen**-Seite, um Referenztypen für einen Fragebogen einzurichten.</span><span class="sxs-lookup"><span data-stu-id="966dd-150">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="966dd-151">Jeder Referenztyp entspricht einer Tabelle in Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="966dd-151">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="966dd-152">Wenn Sie Zeitpläne für Fragebögen erstellen, können Sie einzelne Datensätze in der Tabelle oder einen Datensatzbereich angeben, denen bzw. dem der Fragebogen zugeordnet wird.</span><span class="sxs-lookup"><span data-stu-id="966dd-152">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Wenn Sie beispielsweise die Tabelle Kurse auswählen, können Sie entscheiden, für welchen Kurs der Fragebogen verwendet werden soll. Wenn Sie einen Referenztyp für die Kurstabelle einrichten, sind einige Felder und Schaltflächen auf der Seite **Kurse** verfügbar.
+<span data-ttu-id="966dd-153">Wenn Sie beispielsweise die Tabelle Kurse auswählen, können Sie entscheiden, für welchen Kurs der Fragebogen verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="966dd-153">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="966dd-154">Wenn Sie einen Referenztyp für die Kurstabelle einrichten, sind einige Felder und Schaltflächen auf der Seite **Kurse** verfügbar.</span><span class="sxs-lookup"><span data-stu-id="966dd-154">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Zeitpläne für Fragebögen
+### <a name="questionnaire-schedules"></a><span data-ttu-id="966dd-155">Zeitpläne für Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-155">Questionnaire schedules</span></span>
 
-Sie können Fragebogenzeitpläne verwenden, um mehrere geplante Antwortsitzungen für eine Benutzergruppe auf Grundlage eines Referenztyps zu generieren. Dient zum Erstellen eines Zeitplans für die Seite **Fragebogenzeitpläne**. Wählen Sie den Planungstyp aus, um den Zeitplan zu Kategorisieren, und wählen Sie auch den Referenztyp aus, der verwendet werden soll, um das System für bestimmte Benutzer abzufragen. Wenn Sie zum Beispiel den Referenztyp auf die Kursetabelle festlegen, können Sie einen bestimmten Kurs im Feld **Referenz** auswählen. 
+<span data-ttu-id="966dd-156">Sie können Fragebogenzeitpläne verwenden, um mehrere geplante Antwortsitzungen für eine Benutzergruppe auf Grundlage eines Referenztyps zu generieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-156">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="966dd-157">Dient zum Erstellen eines Zeitplans für die Seite **Fragebogenzeitpläne**.</span><span class="sxs-lookup"><span data-stu-id="966dd-157">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="966dd-158">Wählen Sie den Planungstyp aus, um den Zeitplan zu Kategorisieren, und wählen Sie auch den Referenztyp aus, der verwendet werden soll, um das System für bestimmte Benutzer abzufragen.</span><span class="sxs-lookup"><span data-stu-id="966dd-158">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="966dd-159">Wenn Sie zum Beispiel den Referenztyp auf die Kursetabelle festlegen, können Sie einen bestimmten Kurs im Feld **Referenz** auswählen.</span><span class="sxs-lookup"><span data-stu-id="966dd-159">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Klicken Sie auf **Einstellungsdetails**, um den Fragebogen und andere Kriterien auszuwählen. Geben Sie beispielsweise den Namen des Kursleiters als Kriterium an, nachdem der Fragebogen eine Bewertung des Kursleiters ist. Nachdem Sie abgeschlossen und die Einrichtungsdetails eingeben haben, generiert das System geplante Antwortsitzungen für die Benutzer, die in der Abfrage enthalten sind. 
+<span data-ttu-id="966dd-160">Klicken Sie auf **Einstellungsdetails**, um den Fragebogen und andere Kriterien auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="966dd-160">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="966dd-161">Geben Sie beispielsweise den Namen des Kursleiters als Kriterium an, nachdem der Fragebogen eine Bewertung des Kursleiters ist.</span><span class="sxs-lookup"><span data-stu-id="966dd-161">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="966dd-162">Nachdem Sie abgeschlossen und die Einrichtungsdetails eingeben haben, generiert das System geplante Antwortsitzungen für die Benutzer, die in der Abfrage enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="966dd-162">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Klicken Sie auf **Geplante Antwortsitzungen**, um die Antwortsitzungen für den Zeitplan anzuzeigen. Sie können dann manuell zusätzliche geplante Antwortsitzungen erstellen oder geplante Antwortsitzungen die nicht beantwortet wurden löschen. 
+<span data-ttu-id="966dd-163">Klicken Sie auf **Geplante Antwortsitzungen**, um die Antwortsitzungen für den Zeitplan anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="966dd-163">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="966dd-164">Sie können dann manuell zusätzliche geplante Antwortsitzungen erstellen oder geplante Antwortsitzungen die nicht beantwortet wurden löschen.</span><span class="sxs-lookup"><span data-stu-id="966dd-164">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Klicken Sie auf **Funktionen** &gt; **Starten**, um den Fragebogen für die Benutzer in den zugehörigen geplanten Antwortsitzungen verfügbar zu machen. Klicken Sie auf **Antworten**, um die abgeschlossenen Antworten für den Fragebogen anzuzeigen. Sie können die Fragebogenzeitplaneinstellungen, geplante Antwortsitzungen und Antworten in einen neuen Fragebogenzeitplan kopieren.
+<span data-ttu-id="966dd-165">Klicken Sie auf **Funktionen** &gt; **Starten**, um den Fragebogen für die Benutzer in den zugehörigen geplanten Antwortsitzungen verfügbar zu machen.</span><span class="sxs-lookup"><span data-stu-id="966dd-165">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="966dd-166">Klicken Sie auf **Antworten**, um die abgeschlossenen Antworten für den Fragebogen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="966dd-166">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="966dd-167">Sie können die Fragebogenzeitplaneinstellungen, geplante Antwortsitzungen und Antworten in einen neuen Fragebogenzeitplan kopieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-167">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Benachrichtigen von Befragungsteilnehmern zu den verfügbaren Fragebögen
-Wenn Sie einen Fragebogen verteilen, müssen Sie die Teilnehmer informieren, dass Fragebögen verfügbar sind. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="966dd-168">Benachrichtigen von Befragungsteilnehmern zu den verfügbaren Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-168">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="966dd-169">Wenn Sie einen Fragebogen verteilen, müssen Sie die Teilnehmer informieren, dass Fragebögen verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="966dd-169">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Benachrichtigen von Befragungsteilnehmern zu einer geplanten Beantwortungssitzung
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="966dd-170">Benachrichtigen von Befragungsteilnehmern zu einer geplanten Beantwortungssitzung</span><span class="sxs-lookup"><span data-stu-id="966dd-170">Notifying respondents about a planned answer session</span></span>
 
-Wenn Sie eine geplante Antwortsitzung verwenden, müssen Sie die Person z. B. telefonisch oder per E-Mail-Nachricht direkt informieren.
+<span data-ttu-id="966dd-171">Wenn Sie eine geplante Antwortsitzung verwenden, müssen Sie die Person z. B. telefonisch oder per E-Mail-Nachricht direkt informieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-171">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Benachrichtigen von Befragungsteilnehmern zu einer Planung
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="966dd-172">Benachrichtigen von Befragungsteilnehmern zu einer Planung</span><span class="sxs-lookup"><span data-stu-id="966dd-172">Notifying respondents about a scheduling</span></span>
 
-Verwenden Sie die Seite **Zeitpläne für Fragebögen**, um eine E-Mail-Nachricht an alle Teilnehmer, die dem Fragebogen zugeordnet sind, zu erstellen und zu senden. Geben Sie den Text der E-Mail auf der Registerkarte **E-Mail für Mitarbeiter-Self-Service** ein. Nachdem der Plan gestartet wurde, klicken Sie auf **Funktionen** &gt; **E-Mail senden**, um die E-Mail an die Befragungsteilnehmern zu generieren und zu senden. Die Befragungsteilnehmer können sich nun auf der Website anmelden und den Fragebogen ausfüllen. 
+<span data-ttu-id="966dd-173">Verwenden Sie die Seite **Zeitpläne für Fragebögen**, um eine E-Mail-Nachricht an alle Teilnehmer, die dem Fragebogen zugeordnet sind, zu erstellen und zu senden.</span><span class="sxs-lookup"><span data-stu-id="966dd-173">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="966dd-174">Geben Sie den Text der E-Mail auf der Registerkarte **E-Mail für Mitarbeiter-Self-Service** ein.</span><span class="sxs-lookup"><span data-stu-id="966dd-174">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="966dd-175">Nachdem der Plan gestartet wurde, klicken Sie auf **Funktionen** &gt; **E-Mail senden**, um die E-Mail an die Befragungsteilnehmern zu generieren und zu senden.</span><span class="sxs-lookup"><span data-stu-id="966dd-175">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="966dd-176">Die Befragungsteilnehmer können sich nun auf der Website anmelden und den Fragebogen ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="966dd-176">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-> **Hinweis** Bevor Sie die E-Mail-Funktion verwenden können, muss Ihr IT-Administrator auf der Seite **E-Mail-Parameter** die E-Mail-Einstellungen eintragen.
+> <span data-ttu-id="966dd-177">**Hinweis** Bevor Sie die E-Mail-Funktion verwenden können, muss Ihr IT-Administrator auf der Seite **E-Mail-Parameter** die E-Mail-Einstellungen eintragen.</span><span class="sxs-lookup"><span data-stu-id="966dd-177">**Note** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Beenden eines geplanten Fragebogens
-Sie können einen geplanten Fragebogen beenden, nachdem alle Befragungsteilnehmer ihre zugewiesenen Antwortsitzungen abgeschlossen haben. Nachdem ein geplanter Fragebogen beendet ist, können Sie seine Einstellungen nicht in eine neue Planung kopieren. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="966dd-178">Beenden eines geplanten Fragebogens</span><span class="sxs-lookup"><span data-stu-id="966dd-178">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="966dd-179">Sie können einen geplanten Fragebogen beenden, nachdem alle Befragungsteilnehmer ihre zugewiesenen Antwortsitzungen abgeschlossen haben.</span><span class="sxs-lookup"><span data-stu-id="966dd-179">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="966dd-180">Nachdem ein geplanter Fragebogen beendet ist, können Sie seine Einstellungen nicht in eine neue Planung kopieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-180">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-> **Hinweis** Wenn ein oder mehrere Befragungsteilnehmer den Fragebogen nicht ausgefüllt haben, Sie aber die Planung beenden wollen, müssen Sie zuerst diese Befragungsteilnehmer aus der Liste auf der Seite **Geplante Antwortsitzung** löschen. Dann können Sie die Planung beenden.
+> <span data-ttu-id="966dd-181">**Hinweis** Wenn ein oder mehrere Befragungsteilnehmer den Fragebogen nicht ausgefüllt haben, Sie aber die Planung beenden wollen, müssen Sie zuerst diese Befragungsteilnehmer aus der Liste auf der Seite **Geplante Antwortsitzung** löschen.</span><span class="sxs-lookup"><span data-stu-id="966dd-181">**Note** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="966dd-182">Dann können Sie die Planung beenden.</span><span class="sxs-lookup"><span data-stu-id="966dd-182">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Ausfüllen von Fragebögen
-Nachdem Sie einen Fragebogen entworfen und verteilt haben, kann der Fragebogen von ausgewählten Befragten ausgefüllt werden. Die verfügbaren Fragebögen können von zwei Orten aus aufgerufen werden:
+## <a name="completing-questionnaires"></a><span data-ttu-id="966dd-183">Ausfüllen von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-183">Completing questionnaires</span></span>
+<span data-ttu-id="966dd-184">Nachdem Sie einen Fragebogen entworfen und verteilt haben, kann der Fragebogen von ausgewählten Befragten ausgefüllt werden.</span><span class="sxs-lookup"><span data-stu-id="966dd-184">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="966dd-185">Die verfügbaren Fragebögen können von zwei Orten aus aufgerufen werden:</span><span class="sxs-lookup"><span data-stu-id="966dd-185">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   Im Navigationsbereich Klicken Sie auf **Fragebögen** &gt; **Verteilen** &gt; **Fragebogen ausfüllen**.
--   Im "Mitarbeiter-Self-Service" klicken Sie auf **Auszufüllende Fragebögen**.
+-   <span data-ttu-id="966dd-186">Im Navigationsbereich Klicken Sie auf **Fragebögen** &gt; **Verteilen** &gt; **Fragebogen ausfüllen**.</span><span class="sxs-lookup"><span data-stu-id="966dd-186">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="966dd-187">Im "Mitarbeiter-Self-Service" klicken Sie auf **Auszufüllende Fragebögen**.</span><span class="sxs-lookup"><span data-stu-id="966dd-187">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmten Benutzern oder Benutzergruppen zur Verfügung gestellt werden.
+<span data-ttu-id="966dd-188">Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmten Benutzern oder Benutzergruppen zur Verfügung gestellt werden.</span><span class="sxs-lookup"><span data-stu-id="966dd-188">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Siehe auch
+<a name="see-also"></a><span data-ttu-id="966dd-189">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="966dd-189">See also</span></span>
 --------
 
-[Entwurf von Fragebögen](design-questionnaires.md)
+[<span data-ttu-id="966dd-190">Entwurf von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-190">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Verwenden von Fragebögen](questionnaires.md)
+[<span data-ttu-id="966dd-191">Verwenden von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-191">Using questionnaires</span></span>](questionnaires.md)
 
-[Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
+[<span data-ttu-id="966dd-192">Anzeigen und Auswerten der Ergebnisse eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="966dd-192">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
 
 
 <a name=""></a>=======
 ---
-# <a name="required-metadata"></a>erforderliche Metadaten
+# <a name="required-metadata"></a><span data-ttu-id="966dd-193">erforderliche Metadaten</span><span class="sxs-lookup"><span data-stu-id="966dd-193">required metadata</span></span>
 
-Titel: Verteilen und Ausfüllen einer Fragebogenbeschreibung: Dieses Thema erklärt, wie Sie die entworfenen Fragebögen verteilen, sodass sie der Person oder der Personengruppe zur Verfügung stehen, die sie ausfüllt bzw. die sie ausfüllen. author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology: 
+<span data-ttu-id="966dd-194">Titel: Verteilen und Ausfüllen einer Fragebogenbeschreibung: Dieses Thema erklärt, wie Sie die entworfenen Fragebögen verteilen, sodass sie der Person oder der Personengruppe zur Verfügung stehen, die sie ausfüllt bzw. die sie ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="966dd-194">title: Distribute and complete a questionnaire description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> <span data-ttu-id="966dd-195">author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology:</span><span class="sxs-lookup"><span data-stu-id="966dd-195">author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology:</span></span> 
 
-# <a name="optional-metadata"></a>optionale Metadaten
+# <a name="optional-metadata"></a><span data-ttu-id="966dd-196">optionale Metadaten</span><span class="sxs-lookup"><span data-stu-id="966dd-196">optional metadata</span></span>
 
-ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
-# <a name="robots"></a>ROBOTS: 
-audience: Application User
-# <a name="msdevlang"></a>ms.devlang: 
-ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# <a name="mstgtpltfrm"></a>ms.tgt_pltfrm: 
-ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global
-# <a name="mssearchindustry"></a>ms.search.industry: 
-ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+<span data-ttu-id="966dd-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span><span class="sxs-lookup"><span data-stu-id="966dd-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span></span>
+# <a name="robots"></a><span data-ttu-id="966dd-198">ROBOTS:</span><span class="sxs-lookup"><span data-stu-id="966dd-198">ROBOTS:</span></span> 
+<span data-ttu-id="966dd-199">audience: Application User</span><span class="sxs-lookup"><span data-stu-id="966dd-199">audience: Application User</span></span>
+# <a name="msdevlang"></a><span data-ttu-id="966dd-200">ms.devlang:</span><span class="sxs-lookup"><span data-stu-id="966dd-200">ms.devlang:</span></span> 
+<span data-ttu-id="966dd-201">ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations</span><span class="sxs-lookup"><span data-stu-id="966dd-201">ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations</span></span>
+# <a name="mstgtpltfrm"></a><span data-ttu-id="966dd-202">ms.tgt_pltfrm:</span><span class="sxs-lookup"><span data-stu-id="966dd-202">ms.tgt_pltfrm:</span></span> 
+<span data-ttu-id="966dd-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global</span><span class="sxs-lookup"><span data-stu-id="966dd-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global</span></span>
+# <a name="mssearchindustry"></a><span data-ttu-id="966dd-204">ms.search.industry:</span><span class="sxs-lookup"><span data-stu-id="966dd-204">ms.search.industry:</span></span> 
+<span data-ttu-id="966dd-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update</span><span class="sxs-lookup"><span data-stu-id="966dd-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update</span></span>
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Einen Fragebogen verteilen und ausfüllen
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="966dd-206">Einen Fragebogen verteilen und ausfüllen</span><span class="sxs-lookup"><span data-stu-id="966dd-206">Distribute and complete a questionnaire</span></span>
 
-In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen. 
+<span data-ttu-id="966dd-207">In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen.</span><span class="sxs-lookup"><span data-stu-id="966dd-207">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-Es gibt mehrere Möglichkeiten, einen Fragebogen zu verteilen:
+<span data-ttu-id="966dd-208">Es gibt mehrere Möglichkeiten, einen Fragebogen zu verteilen:</span><span class="sxs-lookup"><span data-stu-id="966dd-208">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Markieren Sie den Fragebogen als aktiv. Der Fragebogen ist für alle Mitarbeiter verfügbar, sofern keine Fragebogengruppe eingerichtet wird, um den Zugriff auf den Fragebogen zu beschränken.
--   Zuweisen von Rechten zu einer Fragebogengruppe. Der Fragebogen ist dann für alle Mitglieder der ausgewählten Gruppe verfügbar.
--   Erstellen von geplanten Antwortsitzungen. Der Fragebogen steht dann für eine bestimmte Person zur Verfügung.
--   Zeitplan erstellen. Der Fragebogen kann dann für mehrere Personen verfügbar sein.
+-   <span data-ttu-id="966dd-209">Markieren Sie den Fragebogen als aktiv.</span><span class="sxs-lookup"><span data-stu-id="966dd-209">Mark the questionnaire as active.</span></span> <span data-ttu-id="966dd-210">Der Fragebogen ist für alle Mitarbeiter verfügbar, sofern keine Fragebogengruppe eingerichtet wird, um den Zugriff auf den Fragebogen zu beschränken.</span><span class="sxs-lookup"><span data-stu-id="966dd-210">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="966dd-211">Zuweisen von Rechten zu einer Fragebogengruppe.</span><span class="sxs-lookup"><span data-stu-id="966dd-211">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="966dd-212">Der Fragebogen ist dann für alle Mitglieder der ausgewählten Gruppe verfügbar.</span><span class="sxs-lookup"><span data-stu-id="966dd-212">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="966dd-213">Erstellen von geplanten Antwortsitzungen.</span><span class="sxs-lookup"><span data-stu-id="966dd-213">Create planned answer sessions.</span></span> <span data-ttu-id="966dd-214">Der Fragebogen steht dann für eine bestimmte Person zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="966dd-214">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="966dd-215">Zeitplan erstellen.</span><span class="sxs-lookup"><span data-stu-id="966dd-215">Create a schedule.</span></span> <span data-ttu-id="966dd-216">Der Fragebogen kann dann für mehrere Personen verfügbar sein.</span><span class="sxs-lookup"><span data-stu-id="966dd-216">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Markieren eines Fragebogens als aktiv
-Setzen Sie das Feld **Aktiv** auf **Ja** auf der Seite **Fragebögen**. Sie geben den Fragebogen für alle Mitarbeiter zur Beantwortung frei. Die Befragungsteilnehmer können den Fragebogen mehrmals ausfüllen. Diese Funktionalität ist hilfreich, wenn ständige Rückmeldung für das ganze Jahr gesammelt werden sollen. So können Sie beispielsweise einen Fragebogen erstellten, über den die Mitarbeiter ein Feedback zum Mittagessen in der Cafeteria abgeben können.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="966dd-217">Markieren eines Fragebogens als aktiv</span><span class="sxs-lookup"><span data-stu-id="966dd-217">Marking a questionnaire as active</span></span>
+<span data-ttu-id="966dd-218">Setzen Sie das Feld **Aktiv** auf **Ja** auf der Seite **Fragebögen**. Sie geben den Fragebogen für alle Mitarbeiter zur Beantwortung frei.</span><span class="sxs-lookup"><span data-stu-id="966dd-218">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="966dd-219">Die Befragungsteilnehmer können den Fragebogen mehrmals ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="966dd-219">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="966dd-220">Diese Funktionalität ist hilfreich, wenn ständige Rückmeldung für das ganze Jahr gesammelt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="966dd-220">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="966dd-221">So können Sie beispielsweise einen Fragebogen erstellten, über den die Mitarbeiter ein Feedback zum Mittagessen in der Cafeteria abgeben können.</span><span class="sxs-lookup"><span data-stu-id="966dd-221">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Fragebogengruppen
-Sie können Fragebogengruppen einrichten und die Befragten einbeziehen, für die ein Fragebogen verteilt werden soll. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="966dd-222">Fragebogengruppen</span><span class="sxs-lookup"><span data-stu-id="966dd-222">Questionnaire groups</span></span>
+<span data-ttu-id="966dd-223">Sie können Fragebogengruppen einrichten und die Befragten einbeziehen, für die ein Fragebogen verteilt werden soll.</span><span class="sxs-lookup"><span data-stu-id="966dd-223">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-Sie können Fragebogengruppen von den folgenden Seiten erstellen:
+<span data-ttu-id="966dd-224">Sie können Fragebogengruppen von den folgenden Seiten erstellen:</span><span class="sxs-lookup"><span data-stu-id="966dd-224">You can create questionnaire groups from the following pages:</span></span>
 
--   **Fragebogengruppen** – Nur Personen innerhalb einer Fragebogengruppe können einen ausgewählten Fragebogen ausfüllen. Wenn beispielsweise die gewünschte Zielgruppe "Auftragnehmer" ist, können Sie eine Fragebogengruppe erstellen, die für diese Teilnehmer spezifisch ist.
--   **Fragebogengruppenmitglieder** – Mithilfe dieses Formulars können Sie Personen zu Fragebogengruppen hinzufügen.
+-   <span data-ttu-id="966dd-225">**Fragebogengruppen** – Nur Personen innerhalb einer Fragebogengruppe können einen ausgewählten Fragebogen ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="966dd-225">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="966dd-226">Wenn beispielsweise die gewünschte Zielgruppe "Auftragnehmer" ist, können Sie eine Fragebogengruppe erstellen, die für diese Teilnehmer spezifisch ist.</span><span class="sxs-lookup"><span data-stu-id="966dd-226">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="966dd-227">**Fragebogengruppenmitglieder** – Mithilfe dieses Formulars können Sie Personen zu Fragebogengruppen hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="966dd-227">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-Um eine Fragebogengruppe einem Fragebogen zuzuweisen, klicken Sie auf der Seite **Fragebögen** auf **Benutzerrechte**. Nachdem der Fragebogen als aktiv gespeichert ist, können die Mitglieder der Fragebogengruppe den Fragebogen ausfüllen. Diese Funktion ist hilfreich, wenn Sie einen Fragebogen mit einer Auswählensgruppe von Personen testen möchten, bevor Sie diese in einer größeren Gruppe verteilen, oder wenn Sie den Fragebogen einer Zielgruppe zukommen lassen wollen.
+<span data-ttu-id="966dd-228">Um eine Fragebogengruppe einem Fragebogen zuzuweisen, klicken Sie auf der Seite **Fragebögen** auf **Benutzerrechte**.</span><span class="sxs-lookup"><span data-stu-id="966dd-228">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="966dd-229">Nachdem der Fragebogen als aktiv gespeichert ist, können die Mitglieder der Fragebogengruppe den Fragebogen ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="966dd-229">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="966dd-230">Diese Funktion ist hilfreich, wenn Sie einen Fragebogen mit einer Auswählensgruppe von Personen testen möchten, bevor Sie diese in einer größeren Gruppe verteilen, oder wenn Sie den Fragebogen einer Zielgruppe zukommen lassen wollen.</span><span class="sxs-lookup"><span data-stu-id="966dd-230">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Geplante Beantwortungssitzung in einem Fragebogen
-Geplante Antwortsitzungen sind Fragebogen, die Sie entwickelt und für die Sie die Befragten ausgewählt haben. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="966dd-231">Geplante Beantwortungssitzung in einem Fragebogen</span><span class="sxs-lookup"><span data-stu-id="966dd-231">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="966dd-232">Geplante Antwortsitzungen sind Fragebogen, die Sie entwickelt und für die Sie die Befragten ausgewählt haben.</span><span class="sxs-lookup"><span data-stu-id="966dd-232">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-**Hinweis:** Bevor Sie geplante Antwortsitzungen einrichten können, müssen Sie einen Fragebogen entwerfen. 
+<span data-ttu-id="966dd-233">**Hinweis:** Bevor Sie geplante Antwortsitzungen einrichten können, müssen Sie einen Fragebogen entwerfen.</span><span class="sxs-lookup"><span data-stu-id="966dd-233">**Note:** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-Auf der Seite **Geplante Antwortsitzung** können Sie eine geplante Antwortsitzung für einen einzelnen Mitarbeiter erstellen. In der Liste auf der Seite werden alle geplanten Fragebögen angezeigt. 
+<span data-ttu-id="966dd-234">Auf der Seite **Geplante Antwortsitzung** können Sie eine geplante Antwortsitzung für einen einzelnen Mitarbeiter erstellen.</span><span class="sxs-lookup"><span data-stu-id="966dd-234">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="966dd-235">In der Liste auf der Seite werden alle geplanten Fragebögen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="966dd-235">The list on the page displays all planned questionnaires.</span></span> 
 
-Geplante Antwortsitzungen werden auch auf der Seite **Zeitpläne für Fragebögen** verwendet, in dem Sie Fragebögen für mehrere Personen planen können:
+<span data-ttu-id="966dd-236">Geplante Antwortsitzungen werden auch auf der Seite **Zeitpläne für Fragebögen** verwendet, in dem Sie Fragebögen für mehrere Personen planen können:</span><span class="sxs-lookup"><span data-stu-id="966dd-236">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Mitarbeiter
--   Kursteilnehmer
--   Organisationseinheiten
+-   <span data-ttu-id="966dd-237">Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="966dd-237">Employees</span></span>
+-   <span data-ttu-id="966dd-238">Kursteilnehmer</span><span class="sxs-lookup"><span data-stu-id="966dd-238">Course participants</span></span>
+-   <span data-ttu-id="966dd-239">Organisationseinheiten</span><span class="sxs-lookup"><span data-stu-id="966dd-239">Organizational units</span></span>
 
-Jede Person kann den Fragebogen nur einmal beantworten.
+<span data-ttu-id="966dd-240">Jede Person kann den Fragebogen nur einmal beantworten.</span><span class="sxs-lookup"><span data-stu-id="966dd-240">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Planung eines Fragebogens
-Sie können einen Fragebogen optional für mehrere Befragungsteilnehmer planen.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="966dd-241">Planung eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="966dd-241">Scheduling a questionnaire</span></span>
+<span data-ttu-id="966dd-242">Sie können einen Fragebogen optional für mehrere Befragungsteilnehmer planen.</span><span class="sxs-lookup"><span data-stu-id="966dd-242">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Planungstypen
+### <a name="planning-types"></a><span data-ttu-id="966dd-243">Planungstypen</span><span class="sxs-lookup"><span data-stu-id="966dd-243">Planning types</span></span>
 
-Planungstypen werden benötigt, wenn Sie geplante Antwortsitzungen für mehrere Befragungsteilnehmer planen möchten. Planungstypen werden verwendet, um Fragebogenzeitpläne zu klassifizieren. Beispielsweise können Sie Fragebögen für folgende Zwecke planen:
+<span data-ttu-id="966dd-244">Planungstypen werden benötigt, wenn Sie geplante Antwortsitzungen für mehrere Befragungsteilnehmer planen möchten.</span><span class="sxs-lookup"><span data-stu-id="966dd-244">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="966dd-245">Planungstypen werden verwendet, um Fragebogenzeitpläne zu klassifizieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-245">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="966dd-246">Beispielsweise können Sie Fragebögen für folgende Zwecke planen:</span><span class="sxs-lookup"><span data-stu-id="966dd-246">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Beurteilung
--   Umfrage
--   Testen
+-   <span data-ttu-id="966dd-247">Beurteilung</span><span class="sxs-lookup"><span data-stu-id="966dd-247">Evaluation</span></span>
+-   <span data-ttu-id="966dd-248">Umfrage</span><span class="sxs-lookup"><span data-stu-id="966dd-248">Survey</span></span>
+-   <span data-ttu-id="966dd-249">Testen</span><span class="sxs-lookup"><span data-stu-id="966dd-249">Testing</span></span>
 
-Sie können Planungstypen für einen Fragebogenzeitplan auf der Seite **Zeitpläne für Fragebögen** angeben.
+<span data-ttu-id="966dd-250">Sie können Planungstypen für einen Fragebogenzeitplan auf der Seite **Zeitpläne für Fragebögen** angeben.</span><span class="sxs-lookup"><span data-stu-id="966dd-250">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Referenztypen für Fragebögen
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="966dd-251">Referenztypen für Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-251">Reference types for questionnaire</span></span>
 
-Sie können Referenztypen verwenden, um Kriterien für die Auswahl von Befragungsteilnehmern einzugeben, wenn Sie einen Fragebogen terminieren. 
+<span data-ttu-id="966dd-252">Sie können Referenztypen verwenden, um Kriterien für die Auswahl von Befragungsteilnehmern einzugeben, wenn Sie einen Fragebogen terminieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-252">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Verwenden Sie die **Referenztypen**-Seite, um Referenztypen für einen Fragebogen einzurichten. Jeder Referenztyp entspricht einer Tabelle in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Wenn Sie Zeitpläne für Fragebögen erstellen, können Sie einzelne Datensätze in der Tabelle oder einen Datensatzbereich angeben, denen bzw. dem der Fragebogen zugeordnet wird. 
+<span data-ttu-id="966dd-253">Verwenden Sie die **Referenztypen**-Seite, um Referenztypen für einen Fragebogen einzurichten.</span><span class="sxs-lookup"><span data-stu-id="966dd-253">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="966dd-254">Jeder Referenztyp entspricht einer Tabelle in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="966dd-254">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span></span> <span data-ttu-id="966dd-255">Wenn Sie Zeitpläne für Fragebögen erstellen, können Sie einzelne Datensätze in der Tabelle oder einen Datensatzbereich angeben, denen bzw. dem der Fragebogen zugeordnet wird.</span><span class="sxs-lookup"><span data-stu-id="966dd-255">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Wenn Sie beispielsweise die Tabelle Kurse auswählen, können Sie entscheiden, für welchen Kurs der Fragebogen verwendet werden soll. Wenn Sie einen Referenztyp für die Kurstabelle einrichten, sind einige Felder und Schaltflächen auf der Seite **Kurse** verfügbar.
+<span data-ttu-id="966dd-256">Wenn Sie beispielsweise die Tabelle Kurse auswählen, können Sie entscheiden, für welchen Kurs der Fragebogen verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="966dd-256">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="966dd-257">Wenn Sie einen Referenztyp für die Kurstabelle einrichten, sind einige Felder und Schaltflächen auf der Seite **Kurse** verfügbar.</span><span class="sxs-lookup"><span data-stu-id="966dd-257">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Zeitpläne für Fragebögen
+### <a name="questionnaire-schedules"></a><span data-ttu-id="966dd-258">Zeitpläne für Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-258">Questionnaire schedules</span></span>
 
-Sie können Fragebogenzeitpläne verwenden, um mehrere geplante Antwortsitzungen für eine Benutzergruppe auf Grundlage eines Referenztyps zu generieren. Dient zum Erstellen eines Zeitplans für die Seite **Fragebogenzeitpläne**. Wählen Sie den Planungstyp aus, um den Zeitplan zu Kategorisieren, und wählen Sie auch den Referenztyp aus, der verwendet werden soll, um das System für bestimmte Benutzer abzufragen. Wenn Sie zum Beispiel den Referenztyp auf die Kursetabelle festlegen, können Sie einen bestimmten Kurs im Feld **Referenz** auswählen. 
+<span data-ttu-id="966dd-259">Sie können Fragebogenzeitpläne verwenden, um mehrere geplante Antwortsitzungen für eine Benutzergruppe auf Grundlage eines Referenztyps zu generieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-259">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="966dd-260">Dient zum Erstellen eines Zeitplans für die Seite **Fragebogenzeitpläne**.</span><span class="sxs-lookup"><span data-stu-id="966dd-260">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="966dd-261">Wählen Sie den Planungstyp aus, um den Zeitplan zu Kategorisieren, und wählen Sie auch den Referenztyp aus, der verwendet werden soll, um das System für bestimmte Benutzer abzufragen.</span><span class="sxs-lookup"><span data-stu-id="966dd-261">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="966dd-262">Wenn Sie zum Beispiel den Referenztyp auf die Kursetabelle festlegen, können Sie einen bestimmten Kurs im Feld **Referenz** auswählen.</span><span class="sxs-lookup"><span data-stu-id="966dd-262">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Klicken Sie auf **Einstellungsdetails**, um den Fragebogen und andere Kriterien auszuwählen. Geben Sie beispielsweise den Namen des Kursleiters als Kriterium an, nachdem der Fragebogen eine Bewertung des Kursleiters ist. Nachdem Sie abgeschlossen und die Einrichtungsdetails eingeben haben, generiert das System geplante Antwortsitzungen für die Benutzer, die in der Abfrage enthalten sind. 
+<span data-ttu-id="966dd-263">Klicken Sie auf **Einstellungsdetails**, um den Fragebogen und andere Kriterien auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="966dd-263">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="966dd-264">Geben Sie beispielsweise den Namen des Kursleiters als Kriterium an, nachdem der Fragebogen eine Bewertung des Kursleiters ist.</span><span class="sxs-lookup"><span data-stu-id="966dd-264">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="966dd-265">Nachdem Sie abgeschlossen und die Einrichtungsdetails eingeben haben, generiert das System geplante Antwortsitzungen für die Benutzer, die in der Abfrage enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="966dd-265">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Klicken Sie auf **Geplante Antwortsitzungen**, um die Antwortsitzungen für den Zeitplan anzuzeigen. Sie können dann manuell zusätzliche geplante Antwortsitzungen erstellen oder geplante Antwortsitzungen die nicht beantwortet wurden löschen. 
+<span data-ttu-id="966dd-266">Klicken Sie auf **Geplante Antwortsitzungen**, um die Antwortsitzungen für den Zeitplan anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="966dd-266">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="966dd-267">Sie können dann manuell zusätzliche geplante Antwortsitzungen erstellen oder geplante Antwortsitzungen die nicht beantwortet wurden löschen.</span><span class="sxs-lookup"><span data-stu-id="966dd-267">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Klicken Sie auf **Funktionen** &gt; **Starten**, um den Fragebogen für die Benutzer in den zugehörigen geplanten Antwortsitzungen verfügbar zu machen. Klicken Sie auf **Antworten**, um die abgeschlossenen Antworten für den Fragebogen anzuzeigen. Sie können die Fragebogenzeitplaneinstellungen, geplante Antwortsitzungen und Antworten in einen neuen Fragebogenzeitplan kopieren.
+<span data-ttu-id="966dd-268">Klicken Sie auf **Funktionen** &gt; **Starten**, um den Fragebogen für die Benutzer in den zugehörigen geplanten Antwortsitzungen verfügbar zu machen.</span><span class="sxs-lookup"><span data-stu-id="966dd-268">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="966dd-269">Klicken Sie auf **Antworten**, um die abgeschlossenen Antworten für den Fragebogen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="966dd-269">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="966dd-270">Sie können die Fragebogenzeitplaneinstellungen, geplante Antwortsitzungen und Antworten in einen neuen Fragebogenzeitplan kopieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-270">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Benachrichtigen von Befragungsteilnehmern zu den verfügbaren Fragebögen
-Wenn Sie einen Fragebogen verteilen, müssen Sie die Teilnehmer informieren, dass Fragebögen verfügbar sind. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="966dd-271">Benachrichtigen von Befragungsteilnehmern zu den verfügbaren Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-271">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="966dd-272">Wenn Sie einen Fragebogen verteilen, müssen Sie die Teilnehmer informieren, dass Fragebögen verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="966dd-272">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-**Hinweis:** Die Befragungsteilnehmer müssen Benutzer in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition sein, um einen Fragebogen ausfüllen zu können.
+<span data-ttu-id="966dd-273">**Hinweis:** Die Befragungsteilnehmer müssen Benutzer in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition sein, um einen Fragebogen ausfüllen zu können.</span><span class="sxs-lookup"><span data-stu-id="966dd-273">**Note:** Respondents must be users in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition to complete a questionnaire.</span></span>
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Benachrichtigen von Befragungsteilnehmern zu einer geplanten Beantwortungssitzung
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="966dd-274">Benachrichtigen von Befragungsteilnehmern zu einer geplanten Beantwortungssitzung</span><span class="sxs-lookup"><span data-stu-id="966dd-274">Notifying respondents about a planned answer session</span></span>
 
-Wenn Sie eine geplante Antwortsitzung verwenden, müssen Sie die Person z. B. telefonisch oder per E-Mail-Nachricht direkt informieren.
+<span data-ttu-id="966dd-275">Wenn Sie eine geplante Antwortsitzung verwenden, müssen Sie die Person z. B. telefonisch oder per E-Mail-Nachricht direkt informieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-275">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Benachrichtigen von Befragungsteilnehmern zu einer Planung
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="966dd-276">Benachrichtigen von Befragungsteilnehmern zu einer Planung</span><span class="sxs-lookup"><span data-stu-id="966dd-276">Notifying respondents about a scheduling</span></span>
 
-Verwenden Sie die Seite **Zeitpläne für Fragebögen**, um eine E-Mail-Nachricht an alle Teilnehmer, die dem Fragebogen zugeordnet sind, zu erstellen und zu senden. Geben Sie den Text der E-Mail auf der Registerkarte **E-Mail für Mitarbeiter-Self-Service** ein. Nachdem der Plan gestartet wurde, klicken Sie auf **Funktionen** &gt; **E-Mail senden**, um die E-Mail an die Befragungsteilnehmern zu generieren und zu senden. Die Befragungsteilnehmer können sich nun auf der Website anmelden und den Fragebogen ausfüllen. 
+<span data-ttu-id="966dd-277">Verwenden Sie die Seite **Zeitpläne für Fragebögen**, um eine E-Mail-Nachricht an alle Teilnehmer, die dem Fragebogen zugeordnet sind, zu erstellen und zu senden.</span><span class="sxs-lookup"><span data-stu-id="966dd-277">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="966dd-278">Geben Sie den Text der E-Mail auf der Registerkarte **E-Mail für Mitarbeiter-Self-Service** ein.</span><span class="sxs-lookup"><span data-stu-id="966dd-278">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="966dd-279">Nachdem der Plan gestartet wurde, klicken Sie auf **Funktionen** &gt; **E-Mail senden**, um die E-Mail an die Befragungsteilnehmern zu generieren und zu senden.</span><span class="sxs-lookup"><span data-stu-id="966dd-279">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="966dd-280">Die Befragungsteilnehmer können sich nun auf der Website anmelden und den Fragebogen ausfüllen.</span><span class="sxs-lookup"><span data-stu-id="966dd-280">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-**Hinweis:** Bevor Sie die E-Mail-Funktionalität verwenden können, muss der IT-Administrator die E-Mail-Einstellungen auf der Seite **E-Mail-Parameter** eingeben.
+<span data-ttu-id="966dd-281">**Hinweis:** Bevor Sie die E-Mail-Funktionalität verwenden können, muss der IT-Administrator die E-Mail-Einstellungen auf der Seite **E-Mail-Parameter** eingeben.</span><span class="sxs-lookup"><span data-stu-id="966dd-281">**Note:** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Beenden eines geplanten Fragebogens
-Sie können einen geplanten Fragebogen beenden, nachdem alle Befragungsteilnehmer ihre zugewiesenen Antwortsitzungen abgeschlossen haben. Nachdem ein geplanter Fragebogen beendet ist, können Sie seine Einstellungen nicht in eine neue Planung kopieren. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="966dd-282">Beenden eines geplanten Fragebogens</span><span class="sxs-lookup"><span data-stu-id="966dd-282">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="966dd-283">Sie können einen geplanten Fragebogen beenden, nachdem alle Befragungsteilnehmer ihre zugewiesenen Antwortsitzungen abgeschlossen haben.</span><span class="sxs-lookup"><span data-stu-id="966dd-283">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="966dd-284">Nachdem ein geplanter Fragebogen beendet ist, können Sie seine Einstellungen nicht in eine neue Planung kopieren.</span><span class="sxs-lookup"><span data-stu-id="966dd-284">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-**Hinweis:** Wenn der Fragebogen von einem oder mehreren Befragungsteilnehmern noch nicht ausgefüllt wurde, Sie die Planung aber trotzdem beenden möchten, löschen Sie zuerst die betreffenden Teilnehmer aus der Liste auf der Seite **Geplante Antwortsitzung**. Dann können Sie die Planung beenden.
+<span data-ttu-id="966dd-285">**Hinweis:** Wenn der Fragebogen von einem oder mehreren Befragungsteilnehmern noch nicht ausgefüllt wurde, Sie die Planung aber trotzdem beenden möchten, löschen Sie zuerst die betreffenden Teilnehmer aus der Liste auf der Seite **Geplante Antwortsitzung**.</span><span class="sxs-lookup"><span data-stu-id="966dd-285">**Note:** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="966dd-286">Dann können Sie die Planung beenden.</span><span class="sxs-lookup"><span data-stu-id="966dd-286">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Ausfüllen von Fragebögen
-Nachdem Sie einen Fragebogen entworfen und verteilt haben, kann der Fragebogen von ausgewählten Befragten ausgefüllt werden. Die verfügbaren Fragebögen können von zwei Orten aus aufgerufen werden:
+## <a name="completing-questionnaires"></a><span data-ttu-id="966dd-287">Ausfüllen von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-287">Completing questionnaires</span></span>
+<span data-ttu-id="966dd-288">Nachdem Sie einen Fragebogen entworfen und verteilt haben, kann der Fragebogen von ausgewählten Befragten ausgefüllt werden.</span><span class="sxs-lookup"><span data-stu-id="966dd-288">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="966dd-289">Die verfügbaren Fragebögen können von zwei Orten aus aufgerufen werden:</span><span class="sxs-lookup"><span data-stu-id="966dd-289">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   Im Navigationsbereich Klicken Sie auf **Fragebögen** &gt; **Verteilen** &gt; **Fragebogen ausfüllen**.
--   Im "Mitarbeiter-Self-Service" klicken Sie auf **Auszufüllende Fragebögen**.
+-   <span data-ttu-id="966dd-290">Im Navigationsbereich Klicken Sie auf **Fragebögen** &gt; **Verteilen** &gt; **Fragebogen ausfüllen**.</span><span class="sxs-lookup"><span data-stu-id="966dd-290">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="966dd-291">Im "Mitarbeiter-Self-Service" klicken Sie auf **Auszufüllende Fragebögen**.</span><span class="sxs-lookup"><span data-stu-id="966dd-291">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmten Benutzern oder Benutzergruppen zur Verfügung gestellt werden.
+<span data-ttu-id="966dd-292">Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmten Benutzern oder Benutzergruppen zur Verfügung gestellt werden.</span><span class="sxs-lookup"><span data-stu-id="966dd-292">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Siehe auch
+<a name="see-also"></a><span data-ttu-id="966dd-293">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="966dd-293">See also</span></span>
 --------
 
-[Entwurf von Fragebögen](design-questionnaires.md)
+[<span data-ttu-id="966dd-294">Entwurf von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-294">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Verwenden von Fragebögen](questionnaires.md)
+[<span data-ttu-id="966dd-295">Verwenden von Fragebögen</span><span class="sxs-lookup"><span data-stu-id="966dd-295">Using questionnaires</span></span>](questionnaires.md)
 
-[Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
+[<span data-ttu-id="966dd-296">Anzeigen und Auswerten der Ergebnisse eines Fragebogens</span><span class="sxs-lookup"><span data-stu-id="966dd-296">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
-master
+<span data-ttu-id="966dd-297">master</span><span class="sxs-lookup"><span data-stu-id="966dd-297">master</span></span>
 

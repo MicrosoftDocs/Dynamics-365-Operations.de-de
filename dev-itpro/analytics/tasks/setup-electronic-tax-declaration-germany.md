@@ -22,36 +22,36 @@ ms.contentlocale: de-de
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="set-up-electronic-tax-declaration-germany"></a>Elektronische Steuererklärung einrichten (Deutschland)
+# <a name="set-up-electronic-tax-declaration-germany"></a><span data-ttu-id="49955-103">Elektronische Steuererklärung einrichten (Deutschland)</span><span class="sxs-lookup"><span data-stu-id="49955-103">Set up electronic tax declaration (Germany)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.
+<span data-ttu-id="49955-104">Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.</span><span class="sxs-lookup"><span data-stu-id="49955-104">This procedure walks you through setting electronic tax declaration.</span></span>
 
-Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt. 
+<span data-ttu-id="49955-105">Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.</span><span class="sxs-lookup"><span data-stu-id="49955-105">This procedure was created using the demo data company DEMF.</span></span> 
 
-Diese Funktion ist für juristische Personen verfügbar, deren primäre Adresse sich in Deutschland befindet.
+<span data-ttu-id="49955-106">Diese Funktion ist für juristische Personen verfügbar, deren primäre Adresse sich in Deutschland befindet.</span><span class="sxs-lookup"><span data-stu-id="49955-106">This functionality is available for legal entities whose primary address is in Germany.</span></span>
 
-Sie sollten ein gültiges Zertifikat (wie test-soft-pse.pfx) und eine Steuerbehördenbescheinigung (Coala2019.pem.cer) verwenden bevor Sie dieses Verfahren ausführen können.
+<span data-ttu-id="49955-107">Sie sollten ein gültiges Zertifikat (wie test-soft-pse.pfx) und eine Steuerbehördenbescheinigung (Coala2019.pem.cer) verwenden bevor Sie dieses Verfahren ausführen können.</span><span class="sxs-lookup"><span data-stu-id="49955-107">You should have a valid user certificate (like test-soft-pse.pfx) and a Tax authority certificate (Coala2019.pem.cer) before you can complete this procedure.</span></span>
 
 
 
-1. Wechseln Sie zu "Steuer" > "Einstellungen" > "Mehrwertsteuer" > "Einrichtung der elektronischen Steuererklärung".
-2. Klicken Sie auf "Bearbeiten".
-3. Wählen Sie "Ja" im Feld "Authentifizierung".
-4. Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.
-    * Wie eine Komponente, die Sie von Konfiguration Kreditbriefen Elster (Modell und Stil) für generische elektronische Berichterstellung hochladen sollen.  
-5. Elektronische Steuerzertifikate anklicken
-6. Klicken Sie auf "Neu".
-7. Geben Sie im Feld "Gruppenkennung" einen Wert ein oder wählen Sie einen Wert aus.
-    * Sie sollten Bescheinigungen nach Microsoft Management Console zunächst einrichten und Anzeigenamen zuweisen, die in diesen Schritten verwendet werden.  In MMC für private Bescheinigung "in den Bescheinigungen/zu persönliche /Certificates", fahren rechten Mausklick.  Klicken Sie im Kontextmenü auf "Alle Aufgaben" > "Import...".  Gewähren Sie Leseberechtigungen der Bescheinigung für den Benutzer, der die Übermittlung an.  In MMC klicken Sie auf der Bescheinigung mit der rechten Maustaste, und verwenden Sie alle Aufgaben/Verwalten von private Schlüssel - Wählen Sie den Benutzer aus und fügen Sie Leseberechtigung hinzu.  Für Steuerbehördenbescheinigung MMC-Rechtsklick "vertraute im Stammzertifikats-" Import " Coala2019.pem.cer".  
-8. Geben Sie im Feld Wert einen Referenztyp ein.
-9. Klicken Sie auf "Speichern".
-10. Schließen Sie die Seite.
-11. Klicken Sie auf HTTP-Server.
-    * HTTP-URL-Adressen werden aus der Behörde bereitgestellt und können von der Behörde geändert werden. Microsoft stellt Standardadressen, die vom System zufällig verwendet werden.  
-12. Klicken Sie auf "Speichern".
-13. Schließen Sie die Seite.
-14. Klicken Sie auf "Speichern".
+1. <span data-ttu-id="49955-108">Wechseln Sie zu "Steuer" > "Einstellungen" > "Mehrwertsteuer" > "Einrichtung der elektronischen Steuererklärung".</span><span class="sxs-lookup"><span data-stu-id="49955-108">Go to Tax > Setup > Sales tax > Electronic tax declaration setup.</span></span>
+2. <span data-ttu-id="49955-109">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="49955-109">Click Edit.</span></span>
+3. <span data-ttu-id="49955-110">Wählen Sie "Ja" im Feld "Authentifizierung".</span><span class="sxs-lookup"><span data-stu-id="49955-110">Select Yes in the Authentication field.</span></span>
+4. <span data-ttu-id="49955-111">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="49955-111">In the Format mapping field, enter or select a value.</span></span>
+    * <span data-ttu-id="49955-112">Wie eine Komponente, die Sie von Konfiguration Kreditbriefen Elster (Modell und Stil) für generische elektronische Berichterstellung hochladen sollen.</span><span class="sxs-lookup"><span data-stu-id="49955-112">As a prerequisite you should upload from LCS Elster configuration (model and format) for Generic electronic reporting.</span></span>  
+5. <span data-ttu-id="49955-113">Elektronische Steuerzertifikate anklicken</span><span class="sxs-lookup"><span data-stu-id="49955-113">Click Electronic tax certificates.</span></span>
+6. <span data-ttu-id="49955-114">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="49955-114">Click New.</span></span>
+7. <span data-ttu-id="49955-115">Geben Sie im Feld "Gruppenkennung" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="49955-115">In the User ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="49955-116">Sie sollten Bescheinigungen nach Microsoft Management Console zunächst einrichten und Anzeigenamen zuweisen, die in diesen Schritten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="49955-116">You should first install certificates through Microsoft Management Console and assign friendly names that will be used in these steps.</span></span>  <span data-ttu-id="49955-117">In MMC für private Bescheinigung "in den Bescheinigungen/zu persönliche /Certificates", fahren rechten Mausklick.</span><span class="sxs-lookup"><span data-stu-id="49955-117">In MMC for private certificate go to “Certificates / Personal /Certificates”, right mouse click.</span></span>  <span data-ttu-id="49955-118">Klicken Sie im Kontextmenü auf "Alle Aufgaben" > "Import...".</span><span class="sxs-lookup"><span data-stu-id="49955-118">In the context menu click All Tasks > Import....</span></span>  <span data-ttu-id="49955-119">Gewähren Sie Leseberechtigungen der Bescheinigung für den Benutzer, der die Übermittlung an.</span><span class="sxs-lookup"><span data-stu-id="49955-119">Grant read permissions to the certificate for the user who is doing the submission.</span></span>  <span data-ttu-id="49955-120">In MMC klicken Sie auf der Bescheinigung mit der rechten Maustaste, und verwenden Sie alle Aufgaben/Verwalten von private Schlüssel - Wählen Sie den Benutzer aus und fügen Sie Leseberechtigung hinzu.</span><span class="sxs-lookup"><span data-stu-id="49955-120">In MMC Right click on the certificate and use All Tasks/Manage Private Keys – select the user and add read permission.</span></span>  <span data-ttu-id="49955-121">Für Steuerbehördenbescheinigung MMC-Rechtsklick "vertraute im Stammzertifikats-" Import " Coala2019.pem.cer".</span><span class="sxs-lookup"><span data-stu-id="49955-121">For Tax authority certificate in MMC right-click “Trusted Root Certificate Authorities”  Import "Coala2019.pem.cer".</span></span>  
+8. <span data-ttu-id="49955-122">Geben Sie im Feld Wert einen Referenztyp ein.</span><span class="sxs-lookup"><span data-stu-id="49955-122">In the Certificates reference field, type a value.</span></span>
+9. <span data-ttu-id="49955-123">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="49955-123">Click Save.</span></span>
+10. <span data-ttu-id="49955-124">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="49955-124">Close the page.</span></span>
+11. <span data-ttu-id="49955-125">Klicken Sie auf HTTP-Server.</span><span class="sxs-lookup"><span data-stu-id="49955-125">Click HTTP servers.</span></span>
+    * <span data-ttu-id="49955-126">HTTP-URL-Adressen werden aus der Behörde bereitgestellt und können von der Behörde geändert werden.</span><span class="sxs-lookup"><span data-stu-id="49955-126">HTTP url addresses are provided by the authority and can be changed by the authority.</span></span> <span data-ttu-id="49955-127">Microsoft stellt Standardadressen, die vom System zufällig verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="49955-127">Microsoft provides default addresses that are used by the system randomly.</span></span>  
+12. <span data-ttu-id="49955-128">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="49955-128">Click Save.</span></span>
+13. <span data-ttu-id="49955-129">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="49955-129">Close the page.</span></span>
+14. <span data-ttu-id="49955-130">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="49955-130">Click Save.</span></span>
 
 

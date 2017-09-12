@@ -16,35 +16,35 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: cc30912d15549c9519133c6ea12ee4d8edea7214
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: bed51f8749dfa0264ad39f51f9ceb295ac46fe93
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a>Zahlungsmethode für ISO20022-Kreditübertragung einrichten
+# <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a><span data-ttu-id="9a904-103">Zahlungsmethode für ISO20022-Kreditübertragung einrichten</span><span class="sxs-lookup"><span data-stu-id="9a904-103">Set up method of payment for ISO20022 credit transfer</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dieses Verfahren zeigt, wie ISO20022 für die Kreditorenzahlungsmethode Banküberweisung oder einen anderen Zahlungstyp über eine elektronischen Berichterstellung zur Generierung einer Datei verwendet wird. 
+<span data-ttu-id="9a904-104">Dieses Verfahren zeigt, wie ISO20022 für die Kreditorenzahlungsmethode Banküberweisung oder einen anderen Zahlungstyp über eine elektronischen Berichterstellung zur Generierung einer Datei verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="9a904-104">This procedure shows how to set up the vendor method of payment for ISO20022 credit transfer or any other payment type using electronic reporting to generate a file.</span></span> 
 
-Bevor Sie diese Aufgabe abschließen, müssen Sie Exportformatkonfigurations- und Zahlungskonteneinstellung eingerichtet haben.
+<span data-ttu-id="9a904-105">Bevor Sie diese Aufgabe abschließen, müssen Sie Exportformatkonfigurations- und Zahlungskonteneinstellung eingerichtet haben.</span><span class="sxs-lookup"><span data-stu-id="9a904-105">Before you complete this task, you must export format configurations and set up payment accounts.</span></span>
 
-Diese Aufgabe wurde mit dem Demodatenunternehmen DEMF erstellt.
+<span data-ttu-id="9a904-106">Diese Aufgabe wurde mit dem Demodatenunternehmen DEMF erstellt.</span><span class="sxs-lookup"><span data-stu-id="9a904-106">This task was created using the DEMF demo data company.</span></span>
 
-Dies ist der dritte von fünf Aufgaben, die das Verfahren für Kreditorenzahlung über elektronischen Berichterstellungskonfigurationen zeigen. Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+<span data-ttu-id="9a904-107">Dies ist der dritte von fünf Aufgaben, die das Verfahren für Kreditorenzahlung über elektronischen Berichterstellungskonfigurationen zeigen.</span><span class="sxs-lookup"><span data-stu-id="9a904-107">This is the third procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="9a904-108">Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="9a904-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. Wechseln Sie zu "Kreditoren" > "Zahlungseinstellungen" > "Zahlungsmethoden".
-2. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise im Feld "Zahlungsmethoden" mit dem Wert "SEPA CT".
-3. Klicken Sie auf Bearbeiten.
-4. Wählen Sie im Feld "Zeitraum" die Option "Summe".
-5. Wählen Sie im Feld "Zahlungstyp" "Elektronischer Zahlungsverkehr" aus.
-6. Erweitern Sie den Abschnitt 'Dateiformate'.
-7. Wählen Sie "Ja" im Feld "Generische elektronische Berichterstellung" aus.
-8. Wählen Sie im Feld "Formatkonfiguration exportieren" einen Wert aus oder geben Sie ihn ein.
-    * Wählen Sie in der Liste den Wert ISO20022 Banküberweisung (DE) aus. Wenn die Liste leer ist, bedeutet dies, dass es keine importierte und aktive Kreditorenzahlungs-Exportformatkonfiguration gibt.  
-9. Wählen Sie im Feld "Kontotyp" "Bank" aus.
-10. Geben Sie im Feld "Zahlungskonto" die Werte "DEMF OPER" an.
-11. Klicken Sie auf "Speichern".
+1. <span data-ttu-id="9a904-109">Wechseln Sie zu "Kreditoren" > "Zahlungseinstellungen" > "Zahlungsmethoden".</span><span class="sxs-lookup"><span data-stu-id="9a904-109">Go to Accounts payable > Payment setup > Methods of payment.</span></span>
+2. <span data-ttu-id="9a904-110">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="9a904-110">Use the Quick Filter to find records.</span></span> <span data-ttu-id="9a904-111">Filtern Sie beispielsweise im Feld "Zahlungsmethoden" mit dem Wert "SEPA CT".</span><span class="sxs-lookup"><span data-stu-id="9a904-111">For example, filter on the Method of payment field with a value of 'SEPA CT'.</span></span>
+3. <span data-ttu-id="9a904-112">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="9a904-112">Click Edit.</span></span>
+4. <span data-ttu-id="9a904-113">Wählen Sie im Feld "Zeitraum" die Option "Summe".</span><span class="sxs-lookup"><span data-stu-id="9a904-113">In the Period field, select 'Total'.</span></span>
+5. <span data-ttu-id="9a904-114">Wählen Sie im Feld "Zahlungstyp" "Elektronischer Zahlungsverkehr" aus.</span><span class="sxs-lookup"><span data-stu-id="9a904-114">In the Payment type field, select 'Electronic payment'.</span></span>
+6. <span data-ttu-id="9a904-115">Erweitern Sie den Abschnitt 'Dateiformate'.</span><span class="sxs-lookup"><span data-stu-id="9a904-115">Expand the File formats section.</span></span>
+7. <span data-ttu-id="9a904-116">Wählen Sie "Ja" im Feld "Generische elektronische Berichterstellung" aus.</span><span class="sxs-lookup"><span data-stu-id="9a904-116">Select Yes in the Generic electronic reporting field.</span></span>
+8. <span data-ttu-id="9a904-117">Wählen Sie im Feld "Formatkonfiguration exportieren" einen Wert aus oder geben Sie ihn ein.</span><span class="sxs-lookup"><span data-stu-id="9a904-117">In the Export format configuration field, enter or select a value.</span></span>
+    * <span data-ttu-id="9a904-118">Wählen Sie in der Liste den Wert ISO20022 Banküberweisung (DE) aus.</span><span class="sxs-lookup"><span data-stu-id="9a904-118">In the list, select the value ISO20022 Credit transfer (DE).</span></span> <span data-ttu-id="9a904-119">Wenn die Liste leer ist, bedeutet dies, dass es keine importierte und aktive Kreditorenzahlungs-Exportformatkonfiguration gibt.</span><span class="sxs-lookup"><span data-stu-id="9a904-119">If the list is empty, the vendor payment export format configuration is not imported and active.</span></span>  
+9. <span data-ttu-id="9a904-120">Wählen Sie im Feld "Kontotyp" "Bank" aus.</span><span class="sxs-lookup"><span data-stu-id="9a904-120">In the Account type field, select 'Bank'.</span></span>
+10. <span data-ttu-id="9a904-121">Geben Sie im Feld "Zahlungskonto" die Werte "DEMF OPER" an.</span><span class="sxs-lookup"><span data-stu-id="9a904-121">In the Payment account field, specify the values 'DEMF OPER'.</span></span>
+11. <span data-ttu-id="9a904-122">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="9a904-122">Click Save.</span></span>
 
 

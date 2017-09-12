@@ -1,7 +1,7 @@
 ---
 title: Unterlieferung einrichten
 description: "In diesem Thema wird erläutert, wie eingehende Lieferungsbestandsvorgänge konfiguriert werden."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,49 +10,46 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventJournalOwnershipChange, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220804
 ms.assetid: 88822f78-4de5-462c-a55f-1f766c572719
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b8692a3033cd665402721ea18ba8c28557c049de
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 41c1b8de0aae24efb30a670d3109b6d65e6abd9c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="set-up-consignment"></a>Unterlieferung einrichten
+# <a name="set-up-consignment"></a><span data-ttu-id="c75fa-103">Unterlieferung einrichten</span><span class="sxs-lookup"><span data-stu-id="c75fa-103">Set up consignment</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird erläutert, wie eingehende Lieferungsbestandsvorgänge konfiguriert werden. 
+<span data-ttu-id="c75fa-104">In diesem Thema wird erläutert, wie eingehende Lieferungsbestandsvorgänge konfiguriert werden.</span><span class="sxs-lookup"><span data-stu-id="c75fa-104">This topic explains how to configure inbound consignment inventory operations.</span></span>
 
-Beim Lieferungsbestand handelt es sich um Bestand, der im Besitz eines Kreditors ist, der aber an Ihrem Standort gelagert ist. Wenn Sie bereit sind, den Bestand zu verbrauchen oder verwenden, übernehmen Sie den Besitz des Bestands. In diesem Thema werden die Einstellungen beschrieben, die benötigt werden, um Lieferungsprozesse zu ermöglichen. Weitere Informationen zu Lieferungsprozessen finden Sie unter [Lieferung](consignment.md).
+<span data-ttu-id="c75fa-105">Beim Lieferungsbestand handelt es sich um Bestand, der im Besitz eines Kreditors ist, der aber an Ihrem Standort gelagert ist.</span><span class="sxs-lookup"><span data-stu-id="c75fa-105">Consignment inventory is inventory that’s owned by a vendor, but stored at your site.</span></span> <span data-ttu-id="c75fa-106">Wenn Sie bereit sind, den Bestand zu verbrauchen oder verwenden, übernehmen Sie den Besitz des Bestands.</span><span class="sxs-lookup"><span data-stu-id="c75fa-106">When you’re ready to consume or use the inventory, you take over the ownership of the inventory.</span></span> <span data-ttu-id="c75fa-107">In diesem Thema werden die Einstellungen beschrieben, die benötigt werden, um Lieferungsprozesse zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="c75fa-107">This topic describes the setup needed to enable consignment processes.</span></span> <span data-ttu-id="c75fa-108">Weitere Informationen zu Lieferungsprozessen finden Sie unter [Lieferung](consignment.md).</span><span class="sxs-lookup"><span data-stu-id="c75fa-108">For more information about consignment processes, see [Consignment](consignment.md).</span></span>
 
-## <a name="inventory-owners"></a>Bestandsbesitzer
-Um physischen, eingehenden Lieferungsbestand zu erfassen, müssen Sie einen Kreditoreneigentümer definieren. Dies erfolgt auf der Seite **Bestandseigentümer**. Wenn Sie ein **Kreditorenkonto** auswählen, generiert dies Standardwerte für die Felder **Name** und **Besitzer**. Der Wert im Feld **Besitzer** wird für den Kreditor angezeigt, somit möchten Sie ihn möglicherweise ändern, wenn die Namen Ihres Kreditorenkontos von externen Personen nicht einfach erkannt werden können. Es ist möglich, das Feld **Besitzer** zu bearbeiten. Dies gilt jedoch nur bis zu dem Zeiptunkt, an dem Sie den Datensatz **Bestandsbesitzer** speichern. Das Feld **Name** wird mit dem Namen der Partei aufgefüllt, dem das Kreditorenkonto zugeordnet ist, und dieser kann nicht geändert werden. 
+## <a name="inventory-owners"></a><span data-ttu-id="c75fa-109">Bestandsbesitzer</span><span class="sxs-lookup"><span data-stu-id="c75fa-109">Inventory owners</span></span>
+<span data-ttu-id="c75fa-110">Um physischen, eingehenden Lieferungsbestand zu erfassen, müssen Sie einen Kreditoreneigentümer definieren.</span><span class="sxs-lookup"><span data-stu-id="c75fa-110">In order to record physical inbound consignment inventory, you need to define a vendor owner.</span></span> <span data-ttu-id="c75fa-111">Dies erfolgt auf der Seite **Bestandseigentümer**.</span><span class="sxs-lookup"><span data-stu-id="c75fa-111">This is done on the **Inventory owner** page.</span></span> <span data-ttu-id="c75fa-112">Wenn Sie ein **Kreditorenkonto** auswählen, generiert dies Standardwerte für die Felder **Name** und **Besitzer**.</span><span class="sxs-lookup"><span data-stu-id="c75fa-112">When you select a **Vendor account** this generates default values for the **Name** and **Owner** fields.</span></span> <span data-ttu-id="c75fa-113">Der Wert im Feld **Besitzer** wird für den Kreditor angezeigt, somit möchten Sie ihn möglicherweise ändern, wenn die Namen Ihres Kreditorenkontos von externen Personen nicht einfach erkannt werden können.</span><span class="sxs-lookup"><span data-stu-id="c75fa-113">The value in the **Owner** field will be visible to the vendor, so you might want to change it if your vendor account names aren’t easy for external people to recognize.</span></span> <span data-ttu-id="c75fa-114">Es ist möglich, das Feld **Besitzer** zu bearbeiten. Dies gilt jedoch nur bis zu dem Zeiptunkt, an dem Sie den Datensatz **Bestandsbesitzer** speichern.</span><span class="sxs-lookup"><span data-stu-id="c75fa-114">It’s possible to edit the **Owner** field, but only up to the point when you save the **Inventory owner** record.</span></span> <span data-ttu-id="c75fa-115">Das Feld **Name** wird mit dem Namen der Partei aufgefüllt, dem das Kreditorenkonto zugeordnet ist, und dieser kann nicht geändert werden.</span><span class="sxs-lookup"><span data-stu-id="c75fa-115">The **Name** field is populated with the name of the party that the vendor account is associated with, and this cannot be changed.</span></span>
 
-[![Bestandsbesitzer](./media/inventory-owners.png)](./media/inventory-owners.png)
+<span data-ttu-id="c75fa-116">[![Bestandsbesitzer](./media/inventory-owners.png)](./media/inventory-owners.png)</span><span class="sxs-lookup"><span data-stu-id="c75fa-116">[![inventory-owners](./media/inventory-owners.png)](./media/inventory-owners.png)</span></span>
 
-## <a name="tracking-dimension-group"></a>Rückverfolgungsgruppe
-Artikel, die bei Lieferungsprozessen verwendet werden, müssen einer **Rückverfolgungsangabengruppe** zugeordnet werden, wobei die Dimension **Besitzer** auf **Aktiv** festgelegt ist. Bei der „Besitzerdimension” sind die Optionen **Physischer Bestand** und **Wertmäßiger Bestand** immer aktiviert. Die Option **Disposition nach Dimensionen** ist nie aktiviert. 
+## <a name="tracking-dimension-group"></a><span data-ttu-id="c75fa-117">Rückverfolgungsgruppe</span><span class="sxs-lookup"><span data-stu-id="c75fa-117">Tracking dimension group</span></span>
+<span data-ttu-id="c75fa-118">Artikel, die bei Lieferungsprozessen verwendet werden, müssen einer **Rückverfolgungsangabengruppe** zugeordnet werden, wobei die Dimension **Besitzer** auf **Aktiv** festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="c75fa-118">Items that are going to be used in consignment processes must be associated with a **Tracking dimension group** where the **Owner** dimension is set to **Active**.</span></span> <span data-ttu-id="c75fa-119">Bei der „Besitzerdimension” sind die Optionen **Physischer Bestand** und **Wertmäßiger Bestand** immer aktiviert.</span><span class="sxs-lookup"><span data-stu-id="c75fa-119">The Owner dimension always has the **Physical inventory** and **Financial inventory** options selected.</span></span> <span data-ttu-id="c75fa-120">Die Option **Disposition nach Dimensionen** ist nie aktiviert.</span><span class="sxs-lookup"><span data-stu-id="c75fa-120">The **Coverage plan by dimension** is never selected.</span></span>
 
-[![Rückverfolgungsangabengruppe](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+<span data-ttu-id="c75fa-121">[![Rückverfolgungsangabengruppe](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)</span><span class="sxs-lookup"><span data-stu-id="c75fa-121">[![tracking-dimension-group](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)</span></span>
 
-## <a name="inventory-ownership-change-journal"></a>Erfassung für die Änderung von Bestandseigentümern
-Die Erfassung **Bestandsbesitzänderung**wird verwendet, um die Übertragung des Besitzes des Lieferungsbestands vom Kreditor zur juristischen Person, die ihn verbraucht, aufzuzeichnen. Wie jede Bestandserfassung muss sie mit einem Bestandserfassungsname identifiziert werden. Diese Namen werden auf der Seite **Bestandserfassungsnamen** erstellt, und der **Erfassungstyp** muss auf **Besitzänderung** festgelegt werden. 
+## <a name="inventory-ownership-change-journal"></a><span data-ttu-id="c75fa-122">Erfassung für die Änderung von Bestandseigentümern</span><span class="sxs-lookup"><span data-stu-id="c75fa-122">Inventory ownership change journal</span></span>
+<span data-ttu-id="c75fa-123">Die Erfassung **Bestandsbesitzänderung**wird verwendet, um die Übertragung des Besitzes des Lieferungsbestands vom Kreditor zur juristischen Person, die ihn verbraucht, aufzuzeichnen.</span><span class="sxs-lookup"><span data-stu-id="c75fa-123">The **Inventory ownership change** journal is used to record the transfer of ownership of consignment inventory from the vendor to the legal entity that’s consuming it.</span></span> <span data-ttu-id="c75fa-124">Wie jede Bestandserfassung muss sie mit einem Bestandserfassungsname identifiziert werden.</span><span class="sxs-lookup"><span data-stu-id="c75fa-124">Like any inventory journal, it must be identified with an Inventory journal name.</span></span> <span data-ttu-id="c75fa-125">Diese Namen werden auf der Seite **Bestandserfassungsnamen** erstellt, und der **Erfassungstyp** muss auf **Besitzänderung** festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="c75fa-125">These names are created on the **Inventory journal names** page, and the **Journal type** must be set to **Ownership change**.</span></span>
 
-[![Bestandeigentümer-Änderungserfassung](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+<span data-ttu-id="c75fa-126">[![Bestandeigentümer-Änderungserfassung](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)</span><span class="sxs-lookup"><span data-stu-id="c75fa-126">[![inventory-ownership-change-journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)</span></span>
 
-## <a name="vendor-collaboration-in-consignment-processes"></a>Kreditorenzusammenarbeit in den Lieferungsprozessen
-Wenn Ihre Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, können sie diese verwenden, um den Verbrauch des Bestands an Ihrem Standort zu überwachen. Weitere Informationen zur Einrichtung von Kreditoren zur Verwendung der Kreditorenzusammenarbeit finden Sie unter [Konfiguration der Sicherheit für Kreditoren-Zusammenarbeitsbenutzer](../procurement/configure-security-vendor-portal-users.md)
-
-
-
+## <a name="vendor-collaboration-in-consignment-processes"></a><span data-ttu-id="c75fa-127">Kreditorenzusammenarbeit in den Lieferungsprozessen</span><span class="sxs-lookup"><span data-stu-id="c75fa-127">Vendor collaboration in consignment processes</span></span>
+<span data-ttu-id="c75fa-128">Wenn Ihre Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, können sie diese verwenden, um den Verbrauch des Bestands an Ihrem Standort zu überwachen.</span><span class="sxs-lookup"><span data-stu-id="c75fa-128">If your vendors are using the vendor collaboration interface, they can use this to monitor the consumption of inventory at your site.</span></span> <span data-ttu-id="c75fa-129">Weitere Informationen zur Einrichtung von Kreditoren zur Verwendung der Kreditorenzusammenarbeit finden Sie unter [Konfiguration der Sicherheit für Kreditoren-Zusammenarbeitsbenutzer](../procurement/configure-security-vendor-portal-users.md)</span><span class="sxs-lookup"><span data-stu-id="c75fa-129">For more information about setting up vendors to use vendor collaboration, see [Configuration of security for vendor collaboration users](../procurement/configure-security-vendor-portal-users.md).</span></span>
 

@@ -16,30 +16,30 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 83e2f3f07482b6b32e3bfa33e63165d4160dba9c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 838d1c2d5d1ab2524e9f4be423fbf529b89f5f59
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-an-operating-unit"></a>Organisationseinheit erstellen
+# <a name="create-an-operating-unit"></a><span data-ttu-id="069bb-103">Organisationseinheit erstellen</span><span class="sxs-lookup"><span data-stu-id="069bb-103">Create an operating unit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Eine Organisationseinheit ist eine Organisation, die dazu dient, die Kontrolle über wirtschaftliche Ressourcen und Betriebsprozesse in einem Unternehmen aufzuteilen. Die Personen in einer Organisationseinheit sind verpflichtet, die Nutzung knapper Ressourcen zu maximieren, die Prozesse zu verbessern und Rechenschaft über ihre Leistung abzulegen. Kostenstellen, Unternehmenseinheiten, Wertströme und Abteilungen gehören zu den Organisationseinheiten. So erstellen Sie einen Limittyp: Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+<span data-ttu-id="069bb-104">Eine Organisationseinheit ist eine Organisation, die dazu dient, die Kontrolle über wirtschaftliche Ressourcen und Betriebsprozesse in einem Unternehmen aufzuteilen.</span><span class="sxs-lookup"><span data-stu-id="069bb-104">An operating unit is an organization that is used to divide the control of economic resources and operational processes in a business.</span></span> <span data-ttu-id="069bb-105">Die Personen in einer Organisationseinheit sind verpflichtet, die Nutzung knapper Ressourcen zu maximieren, die Prozesse zu verbessern und Rechenschaft über ihre Leistung abzulegen.</span><span class="sxs-lookup"><span data-stu-id="069bb-105">People in an operating unit have a duty to maximize the use of scarce resources, improve processes, and account for their performance.</span></span> <span data-ttu-id="069bb-106">Kostenstellen, Unternehmenseinheiten, Wertströme und Abteilungen gehören zu den Organisationseinheiten.</span><span class="sxs-lookup"><span data-stu-id="069bb-106">The types of operating units include cost centers, business units, departments, and value streams.</span></span> <span data-ttu-id="069bb-107">So erstellen Sie einen Limittyp:</span><span class="sxs-lookup"><span data-stu-id="069bb-107">Use the following procedure to create an operating unit.</span></span> <span data-ttu-id="069bb-108">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="069bb-108">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Wechseln Sie zu "Organisationsverwaltung" > "Organisationen" > "Organisationseinheiten".
-2. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie den zu erstellenden Bedingungstyp aus:  
-4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-5. Geben Sie im Feld "Name" einen Wert ein.
-    * Erweitern Sie den allgemeinen Abschnitt, gegebenenfalls.  
-    * Geben Sie allgemeine Informationen zur Organisationseinheit ein, beispielsweise eine Kennnummer, DUNS-Nummer und einen Manager.    
-    * Erweitern Sie den allgemeinen Adress-Abschnitt, gegebenenfalls.  
-    * Geben Sie Adressinformationen wie die Straße und Hausnummer, die Postleitzahl und den Ort ein. Klicken Sie auf Neu, um einen neuen Adressdatensatz einzugeben, oder auf Bearbeiten, um einen vorhandenen Adressdatensatz zu ändern.   
-    * Erweitern oder reduzieren Sie den Abschnitt "Kontaktinformationen".  
-    * Geben Sie Informationen zu den Kommunikationsmethoden ein, beispielsweise E-Mail-Adressen, URLs und Telefonnummern. Klicken Sie auf Neu, um einen neuen Kommunikationsdatensatz einzugeben. Klicken Sie auf Weitere Optionen > Erweitert, um einen vorhandenen Kommunikationsdatensatz zu ändern.   
-6. Klicken Sie auf "Speichern".
+1. <span data-ttu-id="069bb-109">Wechseln Sie zu "Organisationsverwaltung" > "Organisationen" > "Organisationseinheiten".</span><span class="sxs-lookup"><span data-stu-id="069bb-109">Go to Organization administration > Organizations > Operating units.</span></span>
+2. <span data-ttu-id="069bb-110">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="069bb-110">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="069bb-111">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="069bb-111">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="069bb-112">Wählen Sie den zu erstellenden Bedingungstyp aus:</span><span class="sxs-lookup"><span data-stu-id="069bb-112">Select the type of operating unit you want to create.</span></span>  
+4. <span data-ttu-id="069bb-113">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="069bb-113">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="069bb-114">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="069bb-114">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="069bb-115">Erweitern Sie den allgemeinen Abschnitt, gegebenenfalls.</span><span class="sxs-lookup"><span data-stu-id="069bb-115">Expand the General section, if necessary.</span></span>  
+    * <span data-ttu-id="069bb-116">Geben Sie allgemeine Informationen zur Organisationseinheit ein, beispielsweise eine Kennnummer, DUNS-Nummer und einen Manager.</span><span class="sxs-lookup"><span data-stu-id="069bb-116">Provide general information about the operating unit, such as an identification number, DUNS number, and manager.</span></span>    
+    * <span data-ttu-id="069bb-117">Erweitern Sie den allgemeinen Adress-Abschnitt, gegebenenfalls.</span><span class="sxs-lookup"><span data-stu-id="069bb-117">Expand the Addresses section, if necessary.</span></span>  
+    * <span data-ttu-id="069bb-118">Geben Sie Adressinformationen wie die Straße und Hausnummer, die Postleitzahl und den Ort ein.</span><span class="sxs-lookup"><span data-stu-id="069bb-118">Enter address information, such as the street name and number, postal code, and city.</span></span> <span data-ttu-id="069bb-119">Klicken Sie auf Neu, um einen neuen Adressdatensatz einzugeben, oder auf Bearbeiten, um einen vorhandenen Adressdatensatz zu ändern.</span><span class="sxs-lookup"><span data-stu-id="069bb-119">Click Add to enter a new address record, or click Edit to modify an existing address record.</span></span>   
+    * <span data-ttu-id="069bb-120">Erweitern oder reduzieren Sie den Abschnitt "Kontaktinformationen".</span><span class="sxs-lookup"><span data-stu-id="069bb-120">Expand the Contact information section, if necessary.</span></span>  
+    * <span data-ttu-id="069bb-121">Geben Sie Informationen zu den Kommunikationsmethoden ein, beispielsweise E-Mail-Adressen, URLs und Telefonnummern.</span><span class="sxs-lookup"><span data-stu-id="069bb-121">Enter information about methods of communication, such as email addresses, URLs, and telephone numbers.</span></span> <span data-ttu-id="069bb-122">Klicken Sie auf Neu, um einen neuen Kommunikationsdatensatz einzugeben.</span><span class="sxs-lookup"><span data-stu-id="069bb-122">To enter a new communication record, click New.</span></span> <span data-ttu-id="069bb-123">Klicken Sie auf Weitere Optionen > Erweitert, um einen vorhandenen Kommunikationsdatensatz zu ändern.</span><span class="sxs-lookup"><span data-stu-id="069bb-123">To modify an existing communication record, click More options > Advanced.</span></span>   
+6. <span data-ttu-id="069bb-124">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="069bb-124">Click Save.</span></span>
 
 

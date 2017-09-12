@@ -16,88 +16,88 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 10e7399b058695fb1c1b0db8c696c926619c995a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1e80df13edea758f4e476a36b40480352a84366d
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="generate-an-eu-sales-list-report"></a>Bericht 'Zusammenfassende Meldung' generieren
+# <a name="generate-an-eu-sales-list-report"></a><span data-ttu-id="18996-103">Bericht 'Zusammenfassende Meldung' generieren</span><span class="sxs-lookup"><span data-stu-id="18996-103">Generate an EU sales list report</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur führt Sie durch das Generieren eines Berichts für zusammenfassende Meldungen. Hierzu zählen das Übertragen von innergemeinschaftlichen Handelsbuchungen zur zusammenfassenden Meldung und das Ausführen des Berichts. Diese Prozedur umfasst auch das Erstellen einer innergemeinschaftlichen Handelsbuchung zu Demonstrationszwecken. Weitere Informationen über zusammenfassende Meldungen, einschließlich erforderliche Voraussetzungen, finden Sie in der Hilfe von Dynamics 365 for Finance and Operations Help.
+<span data-ttu-id="18996-104">Diese Prozedur führt Sie durch das Generieren eines Berichts für zusammenfassende Meldungen.</span><span class="sxs-lookup"><span data-stu-id="18996-104">This procedure walks you through generating the EU sales list report.</span></span> <span data-ttu-id="18996-105">Hierzu zählen das Übertragen von innergemeinschaftlichen Handelsbuchungen zur zusammenfassenden Meldung und das Ausführen des Berichts.</span><span class="sxs-lookup"><span data-stu-id="18996-105">This includes transferring intra-community trade transactions to the EU sales list and running the report.</span></span> <span data-ttu-id="18996-106">Diese Prozedur umfasst auch das Erstellen einer innergemeinschaftlichen Handelsbuchung zu Demonstrationszwecken.</span><span class="sxs-lookup"><span data-stu-id="18996-106">This  procedure also includes creating an intra-community trade transaction for demo purposes.</span></span> <span data-ttu-id="18996-107">Weitere Informationen über zusammenfassende Meldungen, einschließlich erforderliche Voraussetzungen, finden Sie in der Hilfe von Dynamics 365 for Finance and Operations Help.</span><span class="sxs-lookup"><span data-stu-id="18996-107">For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.</span></span>
 
-Diese Prozedur gilt für alle europäischen Länder/Regionen. Die Prozedur wurde mithilfe des Demodatenunternehmens DEMF und somit mit Deutschland als Beispielland erstellt. Die Prozedur verwendet ebenfalls Portugal als Beispielland. Bevor Sie dieses Verfahren ausführen können, müssen Sie zusammenfassende Meldungen konfigurieren.
+<span data-ttu-id="18996-108">Diese Prozedur gilt für alle europäischen Länder/Regionen.</span><span class="sxs-lookup"><span data-stu-id="18996-108">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="18996-109">Die Prozedur wurde mithilfe des Demodatenunternehmens DEMF und somit mit Deutschland als Beispielland erstellt.</span><span class="sxs-lookup"><span data-stu-id="18996-109">The procedure was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region.</span></span> <span data-ttu-id="18996-110">Die Prozedur verwendet ebenfalls Portugal als Beispielland.</span><span class="sxs-lookup"><span data-stu-id="18996-110">The procedure also uses Portugal as an exemplar EU country/region.</span></span> <span data-ttu-id="18996-111">Bevor Sie dieses Verfahren ausführen können, müssen Sie zusammenfassende Meldungen konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="18996-111">Before you can complete this procedure, you must configure EU sales list reporting.</span></span>
 
-Diese Prozedur ist für Buchhalter vorgesehen.
+<span data-ttu-id="18996-112">Diese Prozedur ist für Buchhalter vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="18996-112">This procedure is intended for accountants.</span></span>
 
 
-## <a name="create-an-intra-community-sales-transaction-for-demo-purposes"></a>Erstellen einer innergemeinschaftlichen Verkaufsbuchung für Demonstrationszwecke
-1. Wechseln Sie zu "Debitoren" > "Aufträge" > "Alle Aufträge".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Debitorenkonto" den Wert 'PRT-001' ein.
-4. Klicken Sie auf "OK".
-5. Geben Sie im Feld "Artikelnummer" die Zeichenfolge "D0001" ein.
-6. Erweitern Sie den Abschnitt "Positionsdetails".
-7. Klicken Sie auf die Registerkarte Einstellungen.
-8. Geben Sie im Feld "Artikel-Mehrwertsteuergruppe" einen Wert "Voll" ein.
-9. Klicken Sie auf "Position hinzufügen".
-10. Geben Sie im Feld "Artikelnummer" die Zeichenfolge "D0003" ein.
-11. Geben Sie im Feld "Artikel-Mehrwertsteuergruppe" einen Wert "ROT" ein.
-12. Klicken Sie auf "Speichern".
-13. Klicken Sie im Aktivitätsbereich auf "Rechnung".
-14. Klicken Sie auf "Rechnung".
-15. Erweitern Sie den Abschnitt "Parameter".
-16. Wählen Sie im Feld "Menge" die Option "Alle" aus.
-17. Erweitern Sie den Abschnitt 'Einstellungen'.
-18. Legen Sie im Feld "Rechnungsdatum" das Datum "11.01.2016" fest.
-19. Klicken Sie auf "OK".
-20. Klicken Sie auf "OK".
+## <a name="create-an-intra-community-sales-transaction-for-demo-purposes"></a><span data-ttu-id="18996-113">Erstellen einer innergemeinschaftlichen Verkaufsbuchung für Demonstrationszwecke</span><span class="sxs-lookup"><span data-stu-id="18996-113">Create an intra-community sales transaction for demo purposes</span></span>
+1. <span data-ttu-id="18996-114">Wechseln Sie zu "Debitoren" > "Aufträge" > "Alle Aufträge".</span><span class="sxs-lookup"><span data-stu-id="18996-114">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="18996-115">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="18996-115">Click New.</span></span>
+3. <span data-ttu-id="18996-116">Geben Sie im Feld "Debitorenkonto" den Wert 'PRT-001' ein.</span><span class="sxs-lookup"><span data-stu-id="18996-116">In the Customer account field, type 'PRT-001'.</span></span>
+4. <span data-ttu-id="18996-117">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="18996-117">Click OK.</span></span>
+5. <span data-ttu-id="18996-118">Geben Sie im Feld "Artikelnummer" die Zeichenfolge "D0001" ein.</span><span class="sxs-lookup"><span data-stu-id="18996-118">In the Item number field, type 'D0001'.</span></span>
+6. <span data-ttu-id="18996-119">Erweitern Sie den Abschnitt "Positionsdetails".</span><span class="sxs-lookup"><span data-stu-id="18996-119">Expand the Line details section.</span></span>
+7. <span data-ttu-id="18996-120">Klicken Sie auf die Registerkarte Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="18996-120">Click the Setup tab.</span></span>
+8. <span data-ttu-id="18996-121">Geben Sie im Feld "Artikel-Mehrwertsteuergruppe" einen Wert "Voll" ein.</span><span class="sxs-lookup"><span data-stu-id="18996-121">In the Item sales tax group field, type 'FULL'.</span></span>
+9. <span data-ttu-id="18996-122">Klicken Sie auf "Position hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="18996-122">Click Add line.</span></span>
+10. <span data-ttu-id="18996-123">Geben Sie im Feld "Artikelnummer" die Zeichenfolge "D0003" ein.</span><span class="sxs-lookup"><span data-stu-id="18996-123">In the Item number field, type 'D0003'.</span></span>
+11. <span data-ttu-id="18996-124">Geben Sie im Feld "Artikel-Mehrwertsteuergruppe" einen Wert "ROT" ein.</span><span class="sxs-lookup"><span data-stu-id="18996-124">In the Item sales tax group field, type 'RED'.</span></span>
+12. <span data-ttu-id="18996-125">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="18996-125">Click Save.</span></span>
+13. <span data-ttu-id="18996-126">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="18996-126">On the Action Pane, click Invoice.</span></span>
+14. <span data-ttu-id="18996-127">Klicken Sie auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="18996-127">Click Invoice.</span></span>
+15. <span data-ttu-id="18996-128">Erweitern Sie den Abschnitt "Parameter".</span><span class="sxs-lookup"><span data-stu-id="18996-128">Expand the Parameters section.</span></span>
+16. <span data-ttu-id="18996-129">Wählen Sie im Feld "Menge" die Option "Alle" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-129">In the Quantity field, select 'All'.</span></span>
+17. <span data-ttu-id="18996-130">Erweitern Sie den Abschnitt 'Einstellungen'.</span><span class="sxs-lookup"><span data-stu-id="18996-130">Expand the Setup section.</span></span>
+18. <span data-ttu-id="18996-131">Legen Sie im Feld "Rechnungsdatum" das Datum "11.01.2016" fest.</span><span class="sxs-lookup"><span data-stu-id="18996-131">In the Invoice date field, set the date to '01/11/2016'.</span></span>
+19. <span data-ttu-id="18996-132">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="18996-132">Click OK.</span></span>
+20. <span data-ttu-id="18996-133">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="18996-133">Click OK.</span></span>
 
-## <a name="transfer-intra-community-trade-transactions-to-the-eu-sales-list"></a>Übertragen von innergemeinschaftlichen Verkaufsbuchungen zur zusammenfassenden Meldung
-1. Wechseln Sie zu "Steuer" > "Meldungen" > "Außenhandel" > "Zusammenfassende Meldung".
-2. Klicken Sie auf Übertragen.
-3. Wählen Sie "Ja" im Feld "Artikel", um Artikelbuchungen zu übertragen.
-4. Wählen Sie "Ja" im Feld "Leistung", um Leistungsbuchungen zu übertragen.
-    * Sie können zusätzliche Filter auf zu übertragende innergemeinschaftliche Handelsbuchung anwenden.  
-5. Klicken Sie auf Übertragen.
-    * Überprüfen Sie, ob die innergemeinschaftlichen Handelsbuchung erfolgreich in die zusammenfassende Meldung übertragen wird.  
+## <a name="transfer-intra-community-trade-transactions-to-the-eu-sales-list"></a><span data-ttu-id="18996-134">Übertragen von innergemeinschaftlichen Verkaufsbuchungen zur zusammenfassenden Meldung</span><span class="sxs-lookup"><span data-stu-id="18996-134">Transfer intra-community trade transactions to the EU sales list</span></span>
+1. <span data-ttu-id="18996-135">Wechseln Sie zu "Steuer" > "Meldungen" > "Außenhandel" > "Zusammenfassende Meldung".</span><span class="sxs-lookup"><span data-stu-id="18996-135">Go to Tax > Declarations > Foreign trade > EU sales list.</span></span>
+2. <span data-ttu-id="18996-136">Klicken Sie auf Übertragen.</span><span class="sxs-lookup"><span data-stu-id="18996-136">Click Transfer.</span></span>
+3. <span data-ttu-id="18996-137">Wählen Sie "Ja" im Feld "Artikel", um Artikelbuchungen zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="18996-137">Select Yes in the Item field to transfer item transactions.</span></span>
+4. <span data-ttu-id="18996-138">Wählen Sie "Ja" im Feld "Leistung", um Leistungsbuchungen zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="18996-138">Select Yes in the Service field to transfer service transactions.</span></span>
+    * <span data-ttu-id="18996-139">Sie können zusätzliche Filter auf zu übertragende innergemeinschaftliche Handelsbuchung anwenden.</span><span class="sxs-lookup"><span data-stu-id="18996-139">You can also specify additional filters on intra-community trade transactions to transfer.</span></span>  
+5. <span data-ttu-id="18996-140">Klicken Sie auf Übertragen.</span><span class="sxs-lookup"><span data-stu-id="18996-140">Click Transfer.</span></span>
+    * <span data-ttu-id="18996-141">Überprüfen Sie, ob die innergemeinschaftlichen Handelsbuchung erfolgreich in die zusammenfassende Meldung übertragen wird.</span><span class="sxs-lookup"><span data-stu-id="18996-141">Verify that the intra-community sales transaction is successfully transferred to the EU sales list.</span></span>  
 
-## <a name="generate-the-eu-sales-list-report"></a>Erstellen des Berichts für die zusammenfassende Meldung
-1. Klicken Sie auf "Berichterstellung".
-2. Wählen Sie im Feld "Berichtszeitraum" "Monatlich" aus.
-3. Legen Sie das Von-Datum auf "01.01.2016" fest.
-4. Wählen Sie "Ja" im Feld "Datei generieren" aus.
-5. Wählen Sie "Ja" im Feld "Bericht erzeugen" aus.
-6. Geben Sie im Feld "Dateiname" "EUSalesList" ein.
-7. Geben Sie im Feld "Berichtdatei" "EUSalesList" ein.
-8. Geben Sie im Feld "Registrierungs-ID Zusammenfassende Meldung" "123" ein.
-    * Dieses Feld ist für Deutschland verfügbar.  
-    * Sie können zusätzliche Filter auf die im Bericht angezeigte innergemeinschaftliche Handelsbuchung anwenden.  
-9. Klicken Sie auf "OK".
-    * Überprüfen Sie, ob Popupfenster für das Herunterladen der die Datei und des Kontrollberichts erscheinen.  
+## <a name="generate-the-eu-sales-list-report"></a><span data-ttu-id="18996-142">Erstellen des Berichts für die zusammenfassende Meldung</span><span class="sxs-lookup"><span data-stu-id="18996-142">Generate the EU sales list report</span></span>
+1. <span data-ttu-id="18996-143">Klicken Sie auf "Berichterstellung".</span><span class="sxs-lookup"><span data-stu-id="18996-143">Click Reporting.</span></span>
+2. <span data-ttu-id="18996-144">Wählen Sie im Feld "Berichtszeitraum" "Monatlich" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-144">In the Reporting period field, select 'Monthly'.</span></span>
+3. <span data-ttu-id="18996-145">Legen Sie das Von-Datum auf "01.01.2016" fest.</span><span class="sxs-lookup"><span data-stu-id="18996-145">In the From date field, set the date to '01/01/2016'.</span></span>
+4. <span data-ttu-id="18996-146">Wählen Sie "Ja" im Feld "Datei generieren" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-146">Select Yes in the Generate file field.</span></span>
+5. <span data-ttu-id="18996-147">Wählen Sie "Ja" im Feld "Bericht erzeugen" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-147">Select Yes in the Generate report field.</span></span>
+6. <span data-ttu-id="18996-148">Geben Sie im Feld "Dateiname" "EUSalesList" ein.</span><span class="sxs-lookup"><span data-stu-id="18996-148">In the File name field, type 'EUSalesList'.</span></span>
+7. <span data-ttu-id="18996-149">Geben Sie im Feld "Berichtdatei" "EUSalesList" ein.</span><span class="sxs-lookup"><span data-stu-id="18996-149">In the Report file name field, type 'EUSalesList'.</span></span>
+8. <span data-ttu-id="18996-150">Geben Sie im Feld "Registrierungs-ID Zusammenfassende Meldung" "123" ein.</span><span class="sxs-lookup"><span data-stu-id="18996-150">In the EU Sales List Registration ID field, type '123'.</span></span>
+    * <span data-ttu-id="18996-151">Dieses Feld ist für Deutschland verfügbar.</span><span class="sxs-lookup"><span data-stu-id="18996-151">This field is only available for Germany.</span></span>  
+    * <span data-ttu-id="18996-152">Sie können zusätzliche Filter auf die im Bericht angezeigte innergemeinschaftliche Handelsbuchung anwenden.</span><span class="sxs-lookup"><span data-stu-id="18996-152">You can also specify additional filters on intra-community trade transactions to include in the report.</span></span>  
+9. <span data-ttu-id="18996-153">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="18996-153">Click OK.</span></span>
+    * <span data-ttu-id="18996-154">Überprüfen Sie, ob Popupfenster für das Herunterladen der die Datei und des Kontrollberichts erscheinen.</span><span class="sxs-lookup"><span data-stu-id="18996-154">Verify that pop-up windows appear to confirm that the file and the control report are being downloaded.</span></span>  
 
-## <a name="mark-eu-sales-list-lines-as-reported"></a>Markieren der zusammenfassenden Meldung als "Berichtet"
-1. Klicken Sie auf "Markieren".
-2. Klicken Sie auf "Als berichtet markieren".
-3. In der Liste wählen Sie die Zeile für das Feld "Rechnungsdatum" aus.
-4. Geben Sie im Feld "Kriterien" den Wert "01.01.2016..31.01.2016" ein.
-5. In der Liste wählen Sie die Zeile für das Feld "Berichtsstatus" aus.
-6. Wählen Sie im Feld "Kriterien" den Wert "Enthalten" aus.
-    * Sie können zusätzliche Filter auf die als "Berichtet" angezeigten innergemeinschaftlichen Handelsbuchungen anwenden.  
-7. Klicken Sie auf "OK".
-8. Wählen Sie im Feld "Abschnitt" "Berichtet" aus.
+## <a name="mark-eu-sales-list-lines-as-reported"></a><span data-ttu-id="18996-155">Markieren der zusammenfassenden Meldung als "Berichtet"</span><span class="sxs-lookup"><span data-stu-id="18996-155">Mark EU sales list lines as Reported</span></span>
+1. <span data-ttu-id="18996-156">Klicken Sie auf "Markieren".</span><span class="sxs-lookup"><span data-stu-id="18996-156">Click Mark.</span></span>
+2. <span data-ttu-id="18996-157">Klicken Sie auf "Als berichtet markieren".</span><span class="sxs-lookup"><span data-stu-id="18996-157">Click Mark as reported.</span></span>
+3. <span data-ttu-id="18996-158">In der Liste wählen Sie die Zeile für das Feld "Rechnungsdatum" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-158">In the list, select the row for the Invoice date field.</span></span>
+4. <span data-ttu-id="18996-159">Geben Sie im Feld "Kriterien" den Wert "01.01.2016..31.01.2016" ein.</span><span class="sxs-lookup"><span data-stu-id="18996-159">In the Criteria field, type '01/01/2016..01/31/2016'.</span></span>
+5. <span data-ttu-id="18996-160">In der Liste wählen Sie die Zeile für das Feld "Berichtsstatus" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-160">In the list, select the row for the Reporting status field.</span></span>
+6. <span data-ttu-id="18996-161">Wählen Sie im Feld "Kriterien" den Wert "Enthalten" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-161">In the Criteria field, select 'Included'.</span></span>
+    * <span data-ttu-id="18996-162">Sie können zusätzliche Filter auf die als "Berichtet" angezeigten innergemeinschaftlichen Handelsbuchungen anwenden.</span><span class="sxs-lookup"><span data-stu-id="18996-162">You can also specify additional filters on intra-community trade transactions to mark as Reported.</span></span>  
+7. <span data-ttu-id="18996-163">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="18996-163">Click OK.</span></span>
+8. <span data-ttu-id="18996-164">Wählen Sie im Feld "Abschnitt" "Berichtet" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-164">In the Selection field, select 'Reported'.</span></span>
 
-## <a name="mark-eu-sales-list-lines-as-closed"></a>Markieren der zusammenfassenden Meldung als "Abgeschlossen"
-1. Klicken Sie auf "Markieren".
-2. Klicken Sie auf "Als geschlossen markieren".
-3. In der Liste markieren Sie die Zeile für das Feld "Rechnungsdatum" aus.
-4. Geben Sie im Feld "Kriterien" den Wert "01.01.2016..31.01.2016" ein.
-5. In der Liste markieren Sie die Zeile für das Feld "Berichtstatus" aus.
-6. Wählen Sie im Feld "Kriterien" den Wert "Berichtet" aus.
-    * Sie können zusätzliche Filter auf als "Abgeschlossen" markieren innergemeinschaftlichen Handelsbuchungn anwenden.  
-7. Klicken Sie auf "OK".
-8. Wählen Sie im Feld "Abschnitt" "Abgeschlossen" aus.
+## <a name="mark-eu-sales-list-lines-as-closed"></a><span data-ttu-id="18996-165">Markieren der zusammenfassenden Meldung als "Abgeschlossen"</span><span class="sxs-lookup"><span data-stu-id="18996-165">Mark EU sales list lines as Closed</span></span>
+1. <span data-ttu-id="18996-166">Klicken Sie auf "Markieren".</span><span class="sxs-lookup"><span data-stu-id="18996-166">Click Mark.</span></span>
+2. <span data-ttu-id="18996-167">Klicken Sie auf "Als geschlossen markieren".</span><span class="sxs-lookup"><span data-stu-id="18996-167">Click Mark as closed.</span></span>
+3. <span data-ttu-id="18996-168">In der Liste markieren Sie die Zeile für das Feld "Rechnungsdatum" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-168">In the list, mark the row for the Invoice date field.</span></span>
+4. <span data-ttu-id="18996-169">Geben Sie im Feld "Kriterien" den Wert "01.01.2016..31.01.2016" ein.</span><span class="sxs-lookup"><span data-stu-id="18996-169">In the Criteria field, type '01/01/2016..01/31/2016'.</span></span>
+5. <span data-ttu-id="18996-170">In der Liste markieren Sie die Zeile für das Feld "Berichtstatus" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-170">In the list, mark the row for the Reporting status field.</span></span>
+6. <span data-ttu-id="18996-171">Wählen Sie im Feld "Kriterien" den Wert "Berichtet" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-171">In the Criteria field, select ‘Reported’.</span></span>
+    * <span data-ttu-id="18996-172">Sie können zusätzliche Filter auf als "Abgeschlossen" markieren innergemeinschaftlichen Handelsbuchungn anwenden.</span><span class="sxs-lookup"><span data-stu-id="18996-172">You can also specify additional filters on intra-community trade transactions to mark as Closed.</span></span>  
+7. <span data-ttu-id="18996-173">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="18996-173">Click OK.</span></span>
+8. <span data-ttu-id="18996-174">Wählen Sie im Feld "Abschnitt" "Abgeschlossen" aus.</span><span class="sxs-lookup"><span data-stu-id="18996-174">In the Selection field, select 'Closed'.</span></span>
 
 

@@ -17,60 +17,60 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 865beb1ee8b418d71c46f1842fb96e73090fd511
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 8020a37bf0c725fc260574cfe87861aeb017519e
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a>Kanban-Regel für feste Mengen für die Fertigung erstellen
+# <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a><span data-ttu-id="6a900-103">Kanban-Regel für feste Mengen für die Fertigung erstellen</span><span class="sxs-lookup"><span data-stu-id="6a900-103">Create a fixed quantity kanban rule for manufacturing</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ziel dieser Prozedur ist es, eine notwendige Einstellung für eine feste Fertigungs-Kanban-Regel zum Starten von Umwandlungsaktivitäten in einer Arbeitsgruppe einer kleinen Umgebung zu erstellen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Vorgehensweise ist für den Verfahrenstechniker oder den Wertstrom-Manager vorgesehen, da dieser die Produktion eines neuen oder geänderten Produkts vorbereitet.
+<span data-ttu-id="6a900-104">Ziel dieser Prozedur ist es, eine notwendige Einstellung für eine feste Fertigungs-Kanban-Regel zum Starten von Umwandlungsaktivitäten in einer Arbeitsgruppe einer kleinen Umgebung zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="6a900-104">This procedure focuses on the setup needed to create a fixed manufacturing kanban rule for triggering transforming activities, at a work cell, in a lean environment.</span></span> <span data-ttu-id="6a900-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="6a900-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="6a900-106">Diese Vorgehensweise ist für den Verfahrenstechniker oder den Wertstrom-Manager vorgesehen, da dieser die Produktion eines neuen oder geänderten Produkts vorbereitet.</span><span class="sxs-lookup"><span data-stu-id="6a900-106">This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare production of a new or modified product.</span></span>
 
 
-## <a name="create-new-kanban-rule"></a>Neue Kanban-Regel erstellen
-1. Wechseln Sie zu Kanban-Regeln.
-2. Klicken Sie auf "Neu".
-    * Beachten Sie, dass der Standardtyp "Manufacturing und Auffüllungsstrategie sind festgelegt" ist. Sie müssen diese Parameter nicht ändern.  
-3. Geben Sie im Feld "Erste Planaktivität" einen Wert ein oder wählen Sie einen Wert aus.
-    * Dies ist die Aktivität, die für die Kanbans ausgeführt wird, die auf dieser Kanban-Regel erstellt werden.  Wählen Sie "SpeakerTestAndPackaging" aus.  
-4. Erweitern Sie den Abschnitt "Details".
-5. Geben Sie im Feld "Produkt" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wählen Sie L0050 aus.  
-6. Geben Sie im Feld "Maßeinheit" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wählen Sie Minuten aus.  
-7. Geben Sie im Feld "Lieferzeit" eine Zahl ein.
-    * Geben Sie "5" ein.  
+## <a name="create-new-kanban-rule"></a><span data-ttu-id="6a900-107">Neue Kanban-Regel erstellen</span><span class="sxs-lookup"><span data-stu-id="6a900-107">Create new kanban rule</span></span>
+1. <span data-ttu-id="6a900-108">Wechseln Sie zu Kanban-Regeln.</span><span class="sxs-lookup"><span data-stu-id="6a900-108">Go to Kanban rules.</span></span>
+2. <span data-ttu-id="6a900-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="6a900-109">Click New.</span></span>
+    * <span data-ttu-id="6a900-110">Beachten Sie, dass der Standardtyp "Manufacturing und Auffüllungsstrategie sind festgelegt" ist.</span><span class="sxs-lookup"><span data-stu-id="6a900-110">Notice that the default Type is Manufacturing and Replenishment strategy is Fixed.</span></span> <span data-ttu-id="6a900-111">Sie müssen diese Parameter nicht ändern.</span><span class="sxs-lookup"><span data-stu-id="6a900-111">You do not have to change these parameters.</span></span>  
+3. <span data-ttu-id="6a900-112">Geben Sie im Feld "Erste Planaktivität" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6a900-112">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="6a900-113">Dies ist die Aktivität, die für die Kanbans ausgeführt wird, die auf dieser Kanban-Regel erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="6a900-113">This is the activity that will be performed for kanbans created based on this kanban rule.</span></span>  <span data-ttu-id="6a900-114">Wählen Sie "SpeakerTestAndPackaging" aus.</span><span class="sxs-lookup"><span data-stu-id="6a900-114">Select 'SpeakerTestAndPackaging'.</span></span>  
+4. <span data-ttu-id="6a900-115">Erweitern Sie den Abschnitt "Details".</span><span class="sxs-lookup"><span data-stu-id="6a900-115">Expand the Details section.</span></span>
+5. <span data-ttu-id="6a900-116">Geben Sie im Feld "Produkt" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6a900-116">In the Product field, enter or select a value.</span></span>
+    * <span data-ttu-id="6a900-117">Wählen Sie L0050 aus.</span><span class="sxs-lookup"><span data-stu-id="6a900-117">Select L0050.</span></span>  
+6. <span data-ttu-id="6a900-118">Geben Sie im Feld "Maßeinheit" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6a900-118">In the Unit of measure field, enter or select a value.</span></span>
+    * <span data-ttu-id="6a900-119">Wählen Sie Minuten aus.</span><span class="sxs-lookup"><span data-stu-id="6a900-119">Select minutes.</span></span>  
+7. <span data-ttu-id="6a900-120">Geben Sie im Feld "Lieferzeit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="6a900-120">In the Lead time field, enter a number.</span></span>
+    * <span data-ttu-id="6a900-121">Geben Sie "5" ein.</span><span class="sxs-lookup"><span data-stu-id="6a900-121">Enter 5.</span></span>  
 
-## <a name="set-quantities"></a>Mengen festlegen
-1. Erweitern Sie den Abschnitt "Mengen".
-2. Legen Sie "Standardmenge" auf "10" fest.
-    * Dies ist die Menge, die für jeden Kanban übertragen wird.  
-3. Aktivieren Sie das Kontrollkästchen "Abweichung der Produktmenge".
-    * Hiermit können ausgewählte Kanbans mit einer Abweichung von der Standardmenge abgeschlossen werden.  Um Kanbans einen Abschluss mit einer Menge von 8 bis 12 zu ermöglichen, legen Sie beide Abweichungen auf 2 fest.  
-4. Legen Sie "Abweichung unter" auf '2' fest.
-    * Dies ermöglicht einen Abschluss nach unten bis 10 - 2 = 8  
-5. Legen Sie "Abweichung über" auf '2' fest.
-    * Dies ermöglicht einen Abschluss nach oben bis 10 + 2 = 12  
-6. Geben Sie im Feld "Feste Kanban-Menge" eine Zahl ein.
-    * Dies ist der Betrag von Kanbans, die aktiv sein sollen. In diesem Fall 5 Kanbans, die je 10 verarbeiten.  
-7. Geben Sie im Feld "Min. Warnungsgrenzwert" "2 "ein.
-    * Dies wird verwendet, um die Mindestmenge vollständiger Kanbans zu verfolgen, die am Ziel sein sollen. Beispielsweise wird dieses in der Kanban-Mengenübersicht verwendet.  
-8. Geben Sie im Feld "Max. Warnungsgrenzwert" "4 "ein.
-    * Wird verwendet, um die maximale Menge vollständiger Kanbans zu verfolgen, die am Ziel sein sollen. Beispielsweise wird dieses in der Kanban-Mengenübersicht verwendet.  
-9. Geben Sie im Feld "Automatische Planungsmenge" "1"ein.
-    * Wenn hier bis 1 festgelegt wird, bedeutet es, dass jeder Kanban automatisch geplant wird.   Wenn wir 3 eingegeben haben, werden die Kanbans nicht terminiert, bis 3 leere Kanbans für die Planung bereit sind. Dies ist zum Gruppieren der Arbeit und der Vermeidung zu vieler Einstellungen hilfreich.  
+## <a name="set-quantities"></a><span data-ttu-id="6a900-122">Mengen festlegen</span><span class="sxs-lookup"><span data-stu-id="6a900-122">Set quantities</span></span>
+1. <span data-ttu-id="6a900-123">Erweitern Sie den Abschnitt "Mengen".</span><span class="sxs-lookup"><span data-stu-id="6a900-123">Expand the Quantities section.</span></span>
+2. <span data-ttu-id="6a900-124">Legen Sie "Standardmenge" auf "10" fest.</span><span class="sxs-lookup"><span data-stu-id="6a900-124">Set Default quantity to '10'.</span></span>
+    * <span data-ttu-id="6a900-125">Dies ist die Menge, die für jeden Kanban übertragen wird.</span><span class="sxs-lookup"><span data-stu-id="6a900-125">This is the quantity that will be transferred for each kanban.</span></span>  
+3. <span data-ttu-id="6a900-126">Aktivieren Sie das Kontrollkästchen "Abweichung der Produktmenge".</span><span class="sxs-lookup"><span data-stu-id="6a900-126">Select the Product quantity variance check box.</span></span>
+    * <span data-ttu-id="6a900-127">Hiermit können ausgewählte Kanbans mit einer Abweichung von der Standardmenge abgeschlossen werden.</span><span class="sxs-lookup"><span data-stu-id="6a900-127">With this, selected kanbans can be completed with a variance from the default quantity.</span></span>  <span data-ttu-id="6a900-128">Um Kanbans einen Abschluss mit einer Menge von 8 bis 12 zu ermöglichen, legen Sie beide Abweichungen auf 2 fest.</span><span class="sxs-lookup"><span data-stu-id="6a900-128">To allow kanbans to be completed with a quantity from 8 to 12, set both variances to 2.</span></span>  
+4. <span data-ttu-id="6a900-129">Legen Sie "Abweichung unter" auf '2' fest.</span><span class="sxs-lookup"><span data-stu-id="6a900-129">Set Variance below to '2'.</span></span>
+    * <span data-ttu-id="6a900-130">Dies ermöglicht einen Abschluss nach unten bis 10 - 2 = 8</span><span class="sxs-lookup"><span data-stu-id="6a900-130">This will allow completing down to 10 - 2 = 8</span></span>  
+5. <span data-ttu-id="6a900-131">Legen Sie "Abweichung über" auf '2' fest.</span><span class="sxs-lookup"><span data-stu-id="6a900-131">Set Variance above to '2'.</span></span>
+    * <span data-ttu-id="6a900-132">Dies ermöglicht einen Abschluss nach oben bis 10 + 2 = 12</span><span class="sxs-lookup"><span data-stu-id="6a900-132">This will allow completing up to 10 + 2 = 12</span></span>  
+6. <span data-ttu-id="6a900-133">Geben Sie im Feld "Feste Kanban-Menge" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="6a900-133">In the Fixed kanban quantity field, enter a number.</span></span>
+    * <span data-ttu-id="6a900-134">Dies ist der Betrag von Kanbans, die aktiv sein sollen.</span><span class="sxs-lookup"><span data-stu-id="6a900-134">This is the amount of kanbans that should be active.</span></span> <span data-ttu-id="6a900-135">In diesem Fall 5 Kanbans, die je 10 verarbeiten.</span><span class="sxs-lookup"><span data-stu-id="6a900-135">In this case, 5 kanbans processing 10 each.</span></span>  
+7. <span data-ttu-id="6a900-136">Geben Sie im Feld "Min. Warnungsgrenzwert" "2 "ein.</span><span class="sxs-lookup"><span data-stu-id="6a900-136">In the Alert boundary minimum field, enter '2'.</span></span>
+    * <span data-ttu-id="6a900-137">Dies wird verwendet, um die Mindestmenge vollständiger Kanbans zu verfolgen, die am Ziel sein sollen.</span><span class="sxs-lookup"><span data-stu-id="6a900-137">Used to keep track of the minimum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="6a900-138">Beispielsweise wird dieses in der Kanban-Mengenübersicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="6a900-138">For example, this is used on the kanban quantity overview.</span></span>  
+8. <span data-ttu-id="6a900-139">Geben Sie im Feld "Max. Warnungsgrenzwert" "4 "ein.</span><span class="sxs-lookup"><span data-stu-id="6a900-139">In the Alert boundary maximum field, enter '4'.</span></span>
+    * <span data-ttu-id="6a900-140">Wird verwendet, um die maximale Menge vollständiger Kanbans zu verfolgen, die am Ziel sein sollen.</span><span class="sxs-lookup"><span data-stu-id="6a900-140">Used to keep track of the maximum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="6a900-141">Beispielsweise wird dieses in der Kanban-Mengenübersicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="6a900-141">For example, this is used on the kanban quantity overview.</span></span>  
+9. <span data-ttu-id="6a900-142">Geben Sie im Feld "Automatische Planungsmenge" "1"ein.</span><span class="sxs-lookup"><span data-stu-id="6a900-142">In the Automatic planning quantity field, enter '1'.</span></span>
+    * <span data-ttu-id="6a900-143">Wenn hier bis 1 festgelegt wird, bedeutet es, dass jeder Kanban automatisch geplant wird.</span><span class="sxs-lookup"><span data-stu-id="6a900-143">Setting this to 1 means that every kanban will be automatically planned.</span></span>   <span data-ttu-id="6a900-144">Wenn wir 3 eingegeben haben, werden die Kanbans nicht terminiert, bis 3 leere Kanbans für die Planung bereit sind.</span><span class="sxs-lookup"><span data-stu-id="6a900-144">If we entered 3, the kanbans would not be planned until 3 empty kanbans are ready for planning.</span></span> <span data-ttu-id="6a900-145">Dies ist zum Gruppieren der Arbeit und der Vermeidung zu vieler Einstellungen hilfreich.</span><span class="sxs-lookup"><span data-stu-id="6a900-145">This is useful for grouping work and avoiding too much setup.</span></span>  
 
-## <a name="create-kanbans"></a>Kanbans erstellen
-1. Erweitern Sie den Abschnitt "Kanbans".
-2. Klicken Sie auf "Speichern".
-    * Die Kanban-Regel muss gespeichert werden, bevor Kanbans erstellt werden können.  
-3. Klicken Sie auf Hinzufügen.
-    * Beachten Sie, dass keine aktiven Kanbans vorhanden, deshalb ist die vorgeschlagenen "Anzahl der neuen Kanbans. 5. Dies entspricht der "festen Kanban-Menge".  
-4. Klicken Sie auf "Erstellen".
-    * Dieses erstellt 5 Kanbans.  
-    * Beachten Sie, dass 5 Kanbans mit jeweils 10 für diese Kanban-Produktionsregel erstellt wurden. Dies ist der letzte Schritt in diesem Verfahren.  
+## <a name="create-kanbans"></a><span data-ttu-id="6a900-146">Kanbans erstellen</span><span class="sxs-lookup"><span data-stu-id="6a900-146">Create Kanbans</span></span>
+1. <span data-ttu-id="6a900-147">Erweitern Sie den Abschnitt "Kanbans".</span><span class="sxs-lookup"><span data-stu-id="6a900-147">Expand the Kanbans section.</span></span>
+2. <span data-ttu-id="6a900-148">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="6a900-148">Click Save.</span></span>
+    * <span data-ttu-id="6a900-149">Die Kanban-Regel muss gespeichert werden, bevor Kanbans erstellt werden können.</span><span class="sxs-lookup"><span data-stu-id="6a900-149">The kanban rule needs to be saved before kanbans can be created.</span></span>  
+3. <span data-ttu-id="6a900-150">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="6a900-150">Click Add.</span></span>
+    * <span data-ttu-id="6a900-151">Beachten Sie, dass keine aktiven Kanbans vorhanden, deshalb ist die vorgeschlagenen "Anzahl der neuen Kanbans. 5.</span><span class="sxs-lookup"><span data-stu-id="6a900-151">Note that there are no active kanbans, due to this the suggested 'Number of new kanbans' are 5.</span></span> <span data-ttu-id="6a900-152">Dies entspricht der "festen Kanban-Menge".</span><span class="sxs-lookup"><span data-stu-id="6a900-152">This is equal to the 'Fixed kanban quantity'.</span></span>  
+4. <span data-ttu-id="6a900-153">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="6a900-153">Click Create.</span></span>
+    * <span data-ttu-id="6a900-154">Dieses erstellt 5 Kanbans.</span><span class="sxs-lookup"><span data-stu-id="6a900-154">This will create 5 kanbans.</span></span>  
+    * <span data-ttu-id="6a900-155">Beachten Sie, dass 5 Kanbans mit jeweils 10 für diese Kanban-Produktionsregel erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="6a900-155">Note that 5 kanbans, for 10 each, was created for this manufacturing kanban rule.</span></span> <span data-ttu-id="6a900-156">Dies ist der letzte Schritt in diesem Verfahren.</span><span class="sxs-lookup"><span data-stu-id="6a900-156">This is the last step in this procedure.</span></span>  
 
 

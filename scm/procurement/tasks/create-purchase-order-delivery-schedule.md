@@ -16,63 +16,63 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 93bd832b4bbb91e6bd0288042098383eb5f4488d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1e4a0204d74c8966cd90b52ae13c88e222ebc3ef
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Eine Bestellung mit einem Lieferzeitplan erstellen
+# <a name="create-a-purchase-order-with-a-delivery-schedule"></a><span data-ttu-id="a66b4-103">Eine Bestellung mit einem Lieferzeitplan erstellen</span><span class="sxs-lookup"><span data-stu-id="a66b4-103">Create a purchase order with a delivery schedule</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt, wie ein Lieferzeitplan für eine Bestellung erstellt wird. Ein Lieferzeitplan wird verwendet, wenn eine Menge für einen Auftrag oder eine Erfassung angefordert wird, um in mehreren Lieferungen geliefert zu werden. Das Beispiel, das in diesem Leitfaden angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden. Diese Prozedur würde normalerweise durch einen Einkaufsvertreter erfolgen.
+<span data-ttu-id="a66b4-104">Diese Prozedur zeigt, wie ein Lieferzeitplan für eine Bestellung erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="a66b4-104">This procedure demonstrates how to create a delivery schedule for a purchase order.</span></span> <span data-ttu-id="a66b4-105">Ein Lieferzeitplan wird verwendet, wenn eine Menge für einen Auftrag oder eine Erfassung angefordert wird, um in mehreren Lieferungen geliefert zu werden.</span><span class="sxs-lookup"><span data-stu-id="a66b4-105">A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments.</span></span> <span data-ttu-id="a66b4-106">Das Beispiel, das in diesem Leitfaden angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="a66b4-106">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="a66b4-107">Diese Prozedur würde normalerweise durch einen Einkaufsvertreter erfolgen.</span><span class="sxs-lookup"><span data-stu-id="a66b4-107">This procedure would typically be done by a purchasing agent.</span></span>
 
 
-## <a name="create-a-delivery-schedule"></a>Lieferzeitplan erstellen
-1. Wechseln Sie zu "Beschaffung" > "Bestellung" > "Alle Bestellungen".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Kreditorenkonto" den Wert US-101 ein.
-4. Klicken Sie auf "OK".
-5. Geben Sie im Feld "Artikelnummer" den Wert M0001 ein.
-6. Geben Sie im Feld "Menge" den Wert "10" ein.
-7. Klicken Sie auf die Bestellposition.
-8. Klicken Sie auf "Lieferzeitplan".
-    * Die Seite "Lieferzeitplan" gestattet es Ihnen, die Anzahl von Lieferungen anzugeben, in denen die Gesamtmenge der Auftragsposition vom Kreditor geliefert wird.  
-    * Standardmäßig kopiert das System die Gesamtmenge und andere Lieferdetails der ursprünglichen Bestellposition in die erste Lieferzeitplanposition. In diesem Beispiel erstellen wir einen Zeitplan für zwei Lieferungen, wobei das Datum der zweiten Lieferung um eine Woche nach der ersten Lieferung verschoben ist.  
-9. Ändern Sie im Feld "Menge" die Menge zu "4".
-10. Klicken Sie auf "Neu".
-11. Geben Sie im Feld "Menge" die Zahl "6" als die verbleibende Menge ein.
-    * Im Lieferdatumsfeld wählen Sie ein Datum aus, das eine Woche nach dem Datum auf der ersten Lieferposition liegt.  
-    * Sie können die Gesamtmenge nachverfolgen, die den Lieferzeitplanpositionen zugeordnet ist, indem Sie die Felder "Summe" und "Verbleibend" betrachten. Wenn die Restmenge Null ist, ist die gesamte Menge aus der ursprünglichen Position dem Zeitplan zugewiesen worden.  
-12. Erweitern Sie den Abschnitt "Konvertierung von Belastungen".
-    * Die Optionen hier erlauben es Ihnen zu steuern, wie Sie möchten, dass Belastungen über die Lieferzeitplanpositionen verteilt werden. Wenn Sie "Bruttobeträge kopieren" auswählen, wird der Belastungsbetrag auf der ursprünglichen Auftragsposition zu jeder Lieferposition kopiert. Die Option "Zu Lieferpositionen zuordnen" teilt die ursprüngliche Positionsbelastung gemäß der Menge zu jeder Lieferposition.  
-13. Reduzieren Sie den Abschnitt "Konvertierung von Belastungen".
-14. Klicken Sie auf "OK".
-    * Der Lieferzeitplan ist jetzt auf den Auftrag angewendet worden.  
-    * Die ursprüngliche Auftragsposition, die jetzt als "Geschäftsbezogene Position" bezeichnet wird, ist in eine "Auftragsposition mit mehreren Lieferungen" umgewandelt worden. Sie ist mit einem eindeutig identifizierbarem Symbol markiert und fungiert als Kopfzeile für die Lieferpositionen.  
-15. Wählen Sie die zweite Auftragsposition aus, die die erste der zwei Lieferpositionen ist.
-    * Die beiden neuen Positionen, die als "Lieferpositionen" bezeichnet werden, bilden einen Lieferzeitplan. Der Auftrag wird anhand dieser Positionen und nicht der ursprünglichen Position verarbeitet. Wenn Dokumente wie Bestätigungen, Produktzugangserfassungen oder Rechnungen gedruckt werden, werden nur die Lieferpositionen angezeigt.  
+## <a name="create-a-delivery-schedule"></a><span data-ttu-id="a66b4-108">Lieferzeitplan erstellen</span><span class="sxs-lookup"><span data-stu-id="a66b4-108">Create a delivery schedule</span></span>
+1. <span data-ttu-id="a66b4-109">Wechseln Sie zu "Beschaffung" > "Bestellung" > "Alle Bestellungen".</span><span class="sxs-lookup"><span data-stu-id="a66b4-109">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="a66b4-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="a66b4-110">Click New.</span></span>
+3. <span data-ttu-id="a66b4-111">Geben Sie im Feld "Kreditorenkonto" den Wert US-101 ein.</span><span class="sxs-lookup"><span data-stu-id="a66b4-111">In the Vendor account field, enter US-101.</span></span>
+4. <span data-ttu-id="a66b4-112">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="a66b4-112">Click OK.</span></span>
+5. <span data-ttu-id="a66b4-113">Geben Sie im Feld "Artikelnummer" den Wert M0001 ein.</span><span class="sxs-lookup"><span data-stu-id="a66b4-113">In the Item number field, enter M0001.</span></span>
+6. <span data-ttu-id="a66b4-114">Geben Sie im Feld "Menge" den Wert "10" ein.</span><span class="sxs-lookup"><span data-stu-id="a66b4-114">In the Quantity field, enter 10.</span></span>
+7. <span data-ttu-id="a66b4-115">Klicken Sie auf die Bestellposition.</span><span class="sxs-lookup"><span data-stu-id="a66b4-115">Click Purchase order line.</span></span>
+8. <span data-ttu-id="a66b4-116">Klicken Sie auf "Lieferzeitplan".</span><span class="sxs-lookup"><span data-stu-id="a66b4-116">Click Delivery schedule.</span></span>
+    * <span data-ttu-id="a66b4-117">Die Seite "Lieferzeitplan" gestattet es Ihnen, die Anzahl von Lieferungen anzugeben, in denen die Gesamtmenge der Auftragsposition vom Kreditor geliefert wird.</span><span class="sxs-lookup"><span data-stu-id="a66b4-117">The Delivery schedule page allows you to specify the number of shipments in which the total quantity of the order line will be delivered from the vendor.</span></span>  
+    * <span data-ttu-id="a66b4-118">Standardmäßig kopiert das System die Gesamtmenge und andere Lieferdetails der ursprünglichen Bestellposition in die erste Lieferzeitplanposition.</span><span class="sxs-lookup"><span data-stu-id="a66b4-118">By default, the system copies the total quantity and other delivery details of the original purchase line into the first delivery schedule line.</span></span> <span data-ttu-id="a66b4-119">In diesem Beispiel erstellen wir einen Zeitplan für zwei Lieferungen, wobei das Datum der zweiten Lieferung um eine Woche nach der ersten Lieferung verschoben ist.</span><span class="sxs-lookup"><span data-stu-id="a66b4-119">In this example, we’ll create a schedule for two shipments, with the second shipment’s date offset by a week from the first shipment.</span></span>  
+9. <span data-ttu-id="a66b4-120">Ändern Sie im Feld "Menge" die Menge zu "4".</span><span class="sxs-lookup"><span data-stu-id="a66b4-120">In the Quantity field, change the quantity to 4.</span></span>
+10. <span data-ttu-id="a66b4-121">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="a66b4-121">Click New.</span></span>
+11. <span data-ttu-id="a66b4-122">Geben Sie im Feld "Menge" die Zahl "6" als die verbleibende Menge ein.</span><span class="sxs-lookup"><span data-stu-id="a66b4-122">In the Quantity field, enter 6 as the remaining quantity.</span></span>
+    * <span data-ttu-id="a66b4-123">Im Lieferdatumsfeld wählen Sie ein Datum aus, das eine Woche nach dem Datum auf der ersten Lieferposition liegt.</span><span class="sxs-lookup"><span data-stu-id="a66b4-123">In the delivery date field, select a date that’s one week after the date on the first delivery line.</span></span>  
+    * <span data-ttu-id="a66b4-124">Sie können die Gesamtmenge nachverfolgen, die den Lieferzeitplanpositionen zugeordnet ist, indem Sie die Felder "Summe" und "Verbleibend" betrachten.</span><span class="sxs-lookup"><span data-stu-id="a66b4-124">You can keep track of the total quantity that’s allocated to the delivery schedule lines by looking at the Total and Remaining fields.</span></span> <span data-ttu-id="a66b4-125">Wenn die Restmenge Null ist, ist die gesamte Menge aus der ursprünglichen Position dem Zeitplan zugewiesen worden.</span><span class="sxs-lookup"><span data-stu-id="a66b4-125">When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.</span></span>  
+12. <span data-ttu-id="a66b4-126">Erweitern Sie den Abschnitt "Konvertierung von Belastungen".</span><span class="sxs-lookup"><span data-stu-id="a66b4-126">Expand the Charges conversion section.</span></span>
+    * <span data-ttu-id="a66b4-127">Die Optionen hier erlauben es Ihnen zu steuern, wie Sie möchten, dass Belastungen über die Lieferzeitplanpositionen verteilt werden.</span><span class="sxs-lookup"><span data-stu-id="a66b4-127">The options here allow you to control how you want charges to be distributed across the delivery schedule lines.</span></span> <span data-ttu-id="a66b4-128">Wenn Sie "Bruttobeträge kopieren" auswählen, wird der Belastungsbetrag auf der ursprünglichen Auftragsposition zu jeder Lieferposition kopiert.</span><span class="sxs-lookup"><span data-stu-id="a66b4-128">If you select Copy gross amounts, the charge amount on the original order line is copied to each delivery line.</span></span> <span data-ttu-id="a66b4-129">Die Option "Zu Lieferpositionen zuordnen" teilt die ursprüngliche Positionsbelastung gemäß der Menge zu jeder Lieferposition.</span><span class="sxs-lookup"><span data-stu-id="a66b4-129">The Allocate to delivery lines option divides the original line charge according to the quantity on each delivery line.</span></span>  
+13. <span data-ttu-id="a66b4-130">Reduzieren Sie den Abschnitt "Konvertierung von Belastungen".</span><span class="sxs-lookup"><span data-stu-id="a66b4-130">Collapse the Charges conversion section.</span></span>
+14. <span data-ttu-id="a66b4-131">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="a66b4-131">Click OK.</span></span>
+    * <span data-ttu-id="a66b4-132">Der Lieferzeitplan ist jetzt auf den Auftrag angewendet worden.</span><span class="sxs-lookup"><span data-stu-id="a66b4-132">The delivery schedule has now been applied to the order.</span></span>  
+    * <span data-ttu-id="a66b4-133">Die ursprüngliche Auftragsposition, die jetzt als "Geschäftsbezogene Position" bezeichnet wird, ist in eine "Auftragsposition mit mehreren Lieferungen" umgewandelt worden.</span><span class="sxs-lookup"><span data-stu-id="a66b4-133">The original order line, now referred to as a Commercial line, has been converted to an Order line with multiple deliveries.</span></span> <span data-ttu-id="a66b4-134">Sie ist mit einem eindeutig identifizierbarem Symbol markiert und fungiert als Kopfzeile für die Lieferpositionen.</span><span class="sxs-lookup"><span data-stu-id="a66b4-134">It is marked with a distinct icon and acts as a header for the delivery lines.</span></span>  
+15. <span data-ttu-id="a66b4-135">Wählen Sie die zweite Auftragsposition aus, die die erste der zwei Lieferpositionen ist.</span><span class="sxs-lookup"><span data-stu-id="a66b4-135">Select the second order line, which is the first of the two delivery lines.</span></span>
+    * <span data-ttu-id="a66b4-136">Die beiden neuen Positionen, die als "Lieferpositionen" bezeichnet werden, bilden einen Lieferzeitplan.</span><span class="sxs-lookup"><span data-stu-id="a66b4-136">The two new lines, referred to as Delivery lines, make up one delivery schedule.</span></span> <span data-ttu-id="a66b4-137">Der Auftrag wird anhand dieser Positionen und nicht der ursprünglichen Position verarbeitet.</span><span class="sxs-lookup"><span data-stu-id="a66b4-137">The order will be processed against these lines and not the original line.</span></span> <span data-ttu-id="a66b4-138">Wenn Dokumente wie Bestätigungen, Produktzugangserfassungen oder Rechnungen gedruckt werden, werden nur die Lieferpositionen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="a66b4-138">If documents such as confirmations, product receipt journals, or invoices are printed, only the delivery lines are shown.</span></span>  
 
-## <a name="change-the-delivery-schedule"></a>Den Lieferzeitplan ändern
-    * Sie können die Menge bei Lieferpositionen ändern. Wenn Sie diesen Schritt ausführen, wird die geschäftsbezogene Position automatisch auf die Gesamtmenge in den Lieferpositionen aktualisiert.  
-1. Ändern Sie im Feld "Menge" der ersten Lieferposition die Menge von 4 auf 5.
-2. Wählen Sie die erste Auftragsposition (die geschäftsbezogene Position) aus.
-    * Die Menge in der geschäftsbezogenen Position ist zu "11" geändert worden.  
+## <a name="change-the-delivery-schedule"></a><span data-ttu-id="a66b4-139">Den Lieferzeitplan ändern</span><span class="sxs-lookup"><span data-stu-id="a66b4-139">Change the delivery schedule</span></span>
+    * <span data-ttu-id="a66b4-140">Sie können die Menge bei Lieferpositionen ändern.</span><span class="sxs-lookup"><span data-stu-id="a66b4-140">You can change the quantity on delivery lines.</span></span> <span data-ttu-id="a66b4-141">Wenn Sie diesen Schritt ausführen, wird die geschäftsbezogene Position automatisch auf die Gesamtmenge in den Lieferpositionen aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="a66b4-141">If you do this, the commercial line is automatically updated to the total quantity in the delivery lines.</span></span>  
+1. <span data-ttu-id="a66b4-142">Ändern Sie im Feld "Menge" der ersten Lieferposition die Menge von 4 auf 5.</span><span class="sxs-lookup"><span data-stu-id="a66b4-142">In the Quantity field of the first delivery line, change the quantity from 4 to 5.</span></span>
+2. <span data-ttu-id="a66b4-143">Wählen Sie die erste Auftragsposition (die geschäftsbezogene Position) aus.</span><span class="sxs-lookup"><span data-stu-id="a66b4-143">Select the first order line (the commercial line).</span></span>
+    * <span data-ttu-id="a66b4-144">Die Menge in der geschäftsbezogenen Position ist zu "11" geändert worden.</span><span class="sxs-lookup"><span data-stu-id="a66b4-144">The quantity on the commercial line has been changed to 11.</span></span>  
 
-## <a name="process-product-receipt-using-delivery-schedules"></a>Den Produktempfang unter Verwendung der Lieferzeitpläne verarbeiten
-    * Die Bestellung muss bestätigt werden, bevor der Produktzugang verarbeitet werden kann. In diesem Beispiel wird der Zugang direkt zur Bestellung aufgezeichnet. Der Zugang könnte auch erfasst worden sein, wenn die Waren im Lager ankamen.  
-1. Klicken Sie im Aktivitätsbereich auf "Einkauf".
-2. Klicken Sie auf "Bestätigen".
-3. Klicken Sie im Aktivitätsbereich auf "Empfangen".
-4. Klicken Sie auf "Produktzugang".
-5. Geben Sie im Feld "Produktzugang" irgendeinen Wert ein.
-    * Dieses Feld wird benutzt, um einen Verweis einzugeben, der als Beleg für die Produktzugangserfassung verwendet wird.  
-    * Wählen Sie im Feld "Menge" die Option "Bestellte Menge" aus. Diese Option bedeutet, dass der Zugang für die Menge verarbeitet wird, mit der die Auftragspositionen erstellt wurden.  
-    * Stellen Sie sicher, dass das Feld "Produktzugang drucken" auf "Nein" festgelegt ist. Drucken wird in diesem Beispiel nicht benötigt.  
-6. Erweitern Sie den Abschnitt "Positionen".
-    * Beachten Sie, wie der Produktzugang für die zwei Lieferpositionen und nicht die ursprüngliche Auftragsposition erstellt wird. Wenn der Zugang am Lagerort erfasst worden wäre, wäre er auch auf den Lieferzeitplan-Positionen erfasst worden.  
-7. Reduzieren Sie den Abschnitt "Positionen".
-8. Klicken Sie auf OK, um den Zugang zu buchen.
+## <a name="process-product-receipt-using-delivery-schedules"></a><span data-ttu-id="a66b4-145">Den Produktempfang unter Verwendung der Lieferzeitpläne verarbeiten</span><span class="sxs-lookup"><span data-stu-id="a66b4-145">Process product receipt using delivery schedules</span></span>
+    * <span data-ttu-id="a66b4-146">Die Bestellung muss bestätigt werden, bevor der Produktzugang verarbeitet werden kann.</span><span class="sxs-lookup"><span data-stu-id="a66b4-146">The purchase order must be confirmed before product receipt can be processed.</span></span> <span data-ttu-id="a66b4-147">In diesem Beispiel wird der Zugang direkt zur Bestellung aufgezeichnet.</span><span class="sxs-lookup"><span data-stu-id="a66b4-147">In this example, receipt is recorded directly on the purchase order.</span></span> <span data-ttu-id="a66b4-148">Der Zugang könnte auch erfasst worden sein, wenn die Waren im Lager ankamen.</span><span class="sxs-lookup"><span data-stu-id="a66b4-148">Receipt could also have been recorded when the goods arrived in the warehouse.</span></span>  
+1. <span data-ttu-id="a66b4-149">Klicken Sie im Aktivitätsbereich auf "Einkauf".</span><span class="sxs-lookup"><span data-stu-id="a66b4-149">On the Action Pane, click Purchase.</span></span>
+2. <span data-ttu-id="a66b4-150">Klicken Sie auf "Bestätigen".</span><span class="sxs-lookup"><span data-stu-id="a66b4-150">Click Confirm.</span></span>
+3. <span data-ttu-id="a66b4-151">Klicken Sie im Aktivitätsbereich auf "Empfangen".</span><span class="sxs-lookup"><span data-stu-id="a66b4-151">On the Action Pane, click Receive.</span></span>
+4. <span data-ttu-id="a66b4-152">Klicken Sie auf "Produktzugang".</span><span class="sxs-lookup"><span data-stu-id="a66b4-152">Click Product receipt.</span></span>
+5. <span data-ttu-id="a66b4-153">Geben Sie im Feld "Produktzugang" irgendeinen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="a66b4-153">In the Product receipt field, type any value.</span></span>
+    * <span data-ttu-id="a66b4-154">Dieses Feld wird benutzt, um einen Verweis einzugeben, der als Beleg für die Produktzugangserfassung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="a66b4-154">This field is used to enter a reference that will be used as voucher for the product receipt journal.</span></span>  
+    * <span data-ttu-id="a66b4-155">Wählen Sie im Feld "Menge" die Option "Bestellte Menge" aus.</span><span class="sxs-lookup"><span data-stu-id="a66b4-155">In the Quantity field, select ‘Ordered quantity’.</span></span> <span data-ttu-id="a66b4-156">Diese Option bedeutet, dass der Zugang für die Menge verarbeitet wird, mit der die Auftragspositionen erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="a66b4-156">This option means that receipt will process for the quantity that the order lines were created with.</span></span>  
+    * <span data-ttu-id="a66b4-157">Stellen Sie sicher, dass das Feld "Produktzugang drucken" auf "Nein" festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="a66b4-157">Make sure that the Print product receipt field is set to No.</span></span> <span data-ttu-id="a66b4-158">Drucken wird in diesem Beispiel nicht benötigt.</span><span class="sxs-lookup"><span data-stu-id="a66b4-158">Printing isn’t needed in this example.</span></span>  
+6. <span data-ttu-id="a66b4-159">Erweitern Sie den Abschnitt "Positionen".</span><span class="sxs-lookup"><span data-stu-id="a66b4-159">Expand the Lines section.</span></span>
+    * <span data-ttu-id="a66b4-160">Beachten Sie, wie der Produktzugang für die zwei Lieferpositionen und nicht die ursprüngliche Auftragsposition erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="a66b4-160">Notice how the product receipt is created for the two delivery lines and not the original order line.</span></span> <span data-ttu-id="a66b4-161">Wenn der Zugang am Lagerort erfasst worden wäre, wäre er auch auf den Lieferzeitplan-Positionen erfasst worden.</span><span class="sxs-lookup"><span data-stu-id="a66b4-161">If receipt had been recorded in the warehouse, it would also have been recorded on the delivery schedule lines.</span></span>  
+7. <span data-ttu-id="a66b4-162">Reduzieren Sie den Abschnitt "Positionen".</span><span class="sxs-lookup"><span data-stu-id="a66b4-162">Collapse the Lines section.</span></span>
+8. <span data-ttu-id="a66b4-163">Klicken Sie auf OK, um den Zugang zu buchen.</span><span class="sxs-lookup"><span data-stu-id="a66b4-163">Click OK to post the receipt.</span></span>
 
 

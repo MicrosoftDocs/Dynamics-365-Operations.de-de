@@ -17,27 +17,27 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: b968502de357779b7d26a5780f3febc3076dd9ad
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6fabeb31720a60bf97d08dabf8ed87ac6af7cbf7
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-an-expiry-date-for-a-production-flow-version"></a>Ablaufdatum für eine Produktionsflussversion definieren
+# <a name="define-an-expiry-date-for-a-production-flow-version"></a><span data-ttu-id="fbb23-103">Ablaufdatum für eine Produktionsflussversion definieren</span><span class="sxs-lookup"><span data-stu-id="fbb23-103">Define an expiry date for a production flow version</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Um die Gültigkeitsdauer und die Verarbeitung einer Produktionsflussversion an einem bestimmten Datum zu beenden, oder den Ersatz einer aktiven Version mit einer neuen Version zu planen, müssen Sie ein Ablaufdatum für die Version festgelegt. Es ist nicht erforderlich, die Version zu deaktivieren.
+<span data-ttu-id="fbb23-104">Um die Gültigkeitsdauer und die Verarbeitung einer Produktionsflussversion an einem bestimmten Datum zu beenden, oder den Ersatz einer aktiven Version mit einer neuen Version zu planen, müssen Sie ein Ablaufdatum für die Version festgelegt.</span><span class="sxs-lookup"><span data-stu-id="fbb23-104">To end the validity and the processing of a production flow version on a given date, or to plan replacement of an active version with a new version, you have to set an expiry date on the version.</span></span> <span data-ttu-id="fbb23-105">Es ist nicht erforderlich, die Version zu deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="fbb23-105">It is not necessary to deactivate the version.</span></span>
 
 
-## <a name="set-an-expiration-date-to-end-a-production-flow-version"></a>Wählen Sie ein Ablaufdatum, um eine Produktionsflussversion zu beenden
-1. Wechseln Sie zu "Produktionssteuerung" > "Einrichten" > "Lean-Produktionsfluss" > "Produktionsflüsse".
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen einen Produktionsfluss aus, der eine Version aufweist, die bereits definiert ist.  
-3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-4. Klicken Sie auf "Bearbeiten".
-5. Markieren Sie in der Liste die ausgewählte Zeile.
-6. Geben Sie im Feld "Ablaufdatum" ein Datum und eine Uhrzeit ein.
-    * Zum Ablaufdatum wird keine neue Version gestartet oder aktiviert. Es ist nicht mehr möglich, Einzelvorgänge für den Produktionsfluss zu erstellen oder zu starten. Können Sie gestartete Einzelvorgänge nach Ablaufdatum noch ausführen.  
+## <a name="set-an-expiration-date-to-end-a-production-flow-version"></a><span data-ttu-id="fbb23-106">Wählen Sie ein Ablaufdatum, um eine Produktionsflussversion zu beenden</span><span class="sxs-lookup"><span data-stu-id="fbb23-106">Set an expiration date to end a production flow version</span></span>
+1. <span data-ttu-id="fbb23-107">Wechseln Sie zu "Produktionssteuerung" > "Einrichten" > "Lean-Produktionsfluss" > "Produktionsflüsse".</span><span class="sxs-lookup"><span data-stu-id="fbb23-107">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="fbb23-108">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="fbb23-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="fbb23-109">Wählen einen Produktionsfluss aus, der eine Version aufweist, die bereits definiert ist.</span><span class="sxs-lookup"><span data-stu-id="fbb23-109">Select any production flow that has a version that is already defined.</span></span>  
+3. <span data-ttu-id="fbb23-110">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="fbb23-110">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="fbb23-111">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="fbb23-111">Click Edit.</span></span>
+5. <span data-ttu-id="fbb23-112">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="fbb23-112">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="fbb23-113">Geben Sie im Feld "Ablaufdatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="fbb23-113">In the Expiration date field, enter a date and time.</span></span>
+    * <span data-ttu-id="fbb23-114">Zum Ablaufdatum wird keine neue Version gestartet oder aktiviert.</span><span class="sxs-lookup"><span data-stu-id="fbb23-114">For the expiration date, a new version will not start or become activated.</span></span> <span data-ttu-id="fbb23-115">Es ist nicht mehr möglich, Einzelvorgänge für den Produktionsfluss zu erstellen oder zu starten.</span><span class="sxs-lookup"><span data-stu-id="fbb23-115">It will also no longer be possible to create or start jobs for this production flow.</span></span> <span data-ttu-id="fbb23-116">Können Sie gestartete Einzelvorgänge nach Ablaufdatum noch ausführen.</span><span class="sxs-lookup"><span data-stu-id="fbb23-116">You can still complete started jobs after the expiration date.</span></span>  
 
 

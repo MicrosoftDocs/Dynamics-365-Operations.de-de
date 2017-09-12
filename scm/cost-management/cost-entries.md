@@ -17,60 +17,60 @@ ms.assetid: dd2663d8-bcc0-47b1-b36d-57433143487c
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1045ecbf7080f12bc60336609180173544e4e0eb
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 8df830b54d578ed9be4f34c8f52986aca16dc5dc
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="cost-entries"></a>Kosteneinträge
+# <a name="cost-entries"></a><span data-ttu-id="c12ae-104">Kosteneinträge</span><span class="sxs-lookup"><span data-stu-id="c12ae-104">Cost entries</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält Informationen zu Kosteneinträgen und wenn sie erstellt werden. Ein Kosteneintrag ist ein Datensatz, der die Menge und die Kosten eines gegebenen Ereignisses erfasst.
+<span data-ttu-id="c12ae-105">Dieser Artikel enthält Informationen zu Kosteneinträgen und wenn sie erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="c12ae-105">This article provides information about cost entries and when they are created.</span></span> <span data-ttu-id="c12ae-106">Ein Kosteneintrag ist ein Datensatz, der die Menge und die Kosten eines gegebenen Ereignisses erfasst.</span><span class="sxs-lookup"><span data-stu-id="c12ae-106">A cost entry is a record that registers the quantity and cost of a given event.</span></span>
 
-Kosteneinträge sind Aggregationen von Lagerbuchungen, die zu aktiven Dimensionen des wertmäßigen Bestands erfasst werden.
+<span data-ttu-id="c12ae-107">Kosteneinträge sind Aggregationen von Lagerbuchungen, die zu aktiven Dimensionen des wertmäßigen Bestands erfasst werden.</span><span class="sxs-lookup"><span data-stu-id="c12ae-107">Cost entries are aggregations of inventory transactions that are recorded on active financial inventory dimensions.</span></span>
 
-## <a name="examples"></a>Beispiele
-### <a name="example-1-no-cost-entries-are-created"></a>Beispiel 1: Keine Kosteneinträge werden erstellt
+## <a name="examples"></a><span data-ttu-id="c12ae-108">Beispiele</span><span class="sxs-lookup"><span data-stu-id="c12ae-108">Examples</span></span>
+### <a name="example-1-no-cost-entries-are-created"></a><span data-ttu-id="c12ae-109">Beispiel 1: Keine Kosteneinträge werden erstellt</span><span class="sxs-lookup"><span data-stu-id="c12ae-109">Example 1: No cost entries are created</span></span>
 
-Ein Umlagerungserfassungsereignis wird erfasst. Das Ereignis überträgt ein Stück des Artikels A vom Lagerplatz A zum Lagerplatz B. Die Lagerplatzlagerungsdimension ist nicht Teil des Kostenobjekts. Daher erstellt das Ereignis zwei Lagerbuchungen und keine Kosteneinträge.
+<span data-ttu-id="c12ae-110">Ein Umlagerungserfassungsereignis wird erfasst.</span><span class="sxs-lookup"><span data-stu-id="c12ae-110">A transfer journal event is registered.</span></span> <span data-ttu-id="c12ae-111">Das Ereignis überträgt ein Stück des Artikels A vom Lagerplatz A zum Lagerplatz B. Die Lagerplatzlagerungsdimension ist nicht Teil des Kostenobjekts.</span><span class="sxs-lookup"><span data-stu-id="c12ae-111">The event transfers one piece of item A from location A to location B. The Location inventory dimension isn't considered part of the cost object.</span></span> <span data-ttu-id="c12ae-112">Daher erstellt das Ereignis zwei Lagerbuchungen und keine Kosteneinträge.</span><span class="sxs-lookup"><span data-stu-id="c12ae-112">Therefore, the event creates two inventory transactions and no cost entries.</span></span>
 
-### <a name="example-2-cost-entries-are-created"></a>Beispiel 2: Kosteneinträge werden erstellt
+### <a name="example-2-cost-entries-are-created"></a><span data-ttu-id="c12ae-113">Beispiel 2: Kosteneinträge werden erstellt</span><span class="sxs-lookup"><span data-stu-id="c12ae-113">Example 2: Cost entries are created</span></span>
 
-Ein Umlagerungserfassungsereignis wird erfasst. Das Ereignis überträgt zur Produktion eines Artikels von einem Standort 1 an Standort 2. Die Standortlagerdimension wird als Teil des Kostenträgers betrachtet. Daher erstellt das Ereignis zwei Lagerbuchungen und zwei Kosteneinträge.
+<span data-ttu-id="c12ae-114">Ein Umlagerungserfassungsereignis wird erfasst.</span><span class="sxs-lookup"><span data-stu-id="c12ae-114">A transfer journal event is registered.</span></span> <span data-ttu-id="c12ae-115">Das Ereignis überträgt zur Produktion eines Artikels von einem Standort 1 an Standort 2.</span><span class="sxs-lookup"><span data-stu-id="c12ae-115">The event transfers one piece of item A from site 1 to site 2.</span></span> <span data-ttu-id="c12ae-116">Die Standortlagerdimension wird als Teil des Kostenträgers betrachtet.</span><span class="sxs-lookup"><span data-stu-id="c12ae-116">The Site inventory dimension is considered part of the cost object.</span></span> <span data-ttu-id="c12ae-117">Daher erstellt das Ereignis zwei Lagerbuchungen und zwei Kosteneinträge.</span><span class="sxs-lookup"><span data-stu-id="c12ae-117">Therefore, the event creates two inventory transactions and two cost entries.</span></span>
 
-### <a name="example-3-one-cost-entry-is-created"></a>Beispiel 3: Ein Kosteneintrag wird erstellt
+### <a name="example-3-one-cost-entry-is-created"></a><span data-ttu-id="c12ae-118">Beispiel 3: Ein Kosteneintrag wird erstellt</span><span class="sxs-lookup"><span data-stu-id="c12ae-118">Example 3: One cost entry is created</span></span>
 
-Ein Produktzugangsereignis wird für eine Bestellung erfasst. Das Ereignis erfasst 100 Stück des Artikels A zu Einheitenkosten von 10,00 Euro. Da Artikel A eine Seriennummer verwendet, um den Zweck der Lagerverwaltung zu verfolgen, wird eine eindeutige Seriennummer für jeden Artikel erstellt, der eingegangen ist. Daher erstellt das Ereignis 100 Lagerbuchungen und einen Kosteneintrag.
+<span data-ttu-id="c12ae-119">Ein Produktzugangsereignis wird für eine Bestellung erfasst.</span><span class="sxs-lookup"><span data-stu-id="c12ae-119">A product receipt event is registered for a purchase order.</span></span> <span data-ttu-id="c12ae-120">Das Ereignis erfasst 100 Stück des Artikels A zu Einheitenkosten von 10,00 Euro.</span><span class="sxs-lookup"><span data-stu-id="c12ae-120">The event registers 100 pieces of item A at a unit cost of 10.00 U.S. dollars (USD).</span></span> <span data-ttu-id="c12ae-121">Da Artikel A eine Seriennummer verwendet, um den Zweck der Lagerverwaltung zu verfolgen, wird eine eindeutige Seriennummer für jeden Artikel erstellt, der eingegangen ist.</span><span class="sxs-lookup"><span data-stu-id="c12ae-121">Because item A uses a serial number to track the purpose of inventory management, a unique serial number is created for each item that is received.</span></span> <span data-ttu-id="c12ae-122">Daher erstellt das Ereignis 100 Lagerbuchungen und einen Kosteneintrag.</span><span class="sxs-lookup"><span data-stu-id="c12ae-122">Therefore, the event creates 100 inventory transactions and one cost entry.</span></span>
 
-## <a name="cost-entries-page"></a>Kosteneinträge-Seite
-Die neue **Kosteneinträge**-Seite ermöglicht die Anzeige und Steuerung von Erfassungen für Mengen und Kosten. Diese Seite ergänzt die Seiten **Lagerbuchung** und **Lagerausgleich**. Datensätze werden in chronologischer Reihenfolge für ein Ereignis erfasst. Daher können Sie die kumulierten Kosten eines bestimmten Ereignisses oder aller Ereignisse zu einem Dokument schnell finden und steuern. Hier ist ein Beispiel:
+## <a name="cost-entries-page"></a><span data-ttu-id="c12ae-123">Kosteneinträge-Seite</span><span class="sxs-lookup"><span data-stu-id="c12ae-123">Cost entries page</span></span>
+<span data-ttu-id="c12ae-124">Die neue **Kosteneinträge**-Seite ermöglicht die Anzeige und Steuerung von Erfassungen für Mengen und Kosten.</span><span class="sxs-lookup"><span data-stu-id="c12ae-124">The new **Cost entries** page lets you view and control registrations of quantities and costs.</span></span> <span data-ttu-id="c12ae-125">Diese Seite ergänzt die Seiten **Lagerbuchung** und **Lagerausgleich**.</span><span class="sxs-lookup"><span data-stu-id="c12ae-125">This page complements the **Inventory transaction** and **Inventory settlement** pages.</span></span> <span data-ttu-id="c12ae-126">Datensätze werden in chronologischer Reihenfolge für ein Ereignis erfasst.</span><span class="sxs-lookup"><span data-stu-id="c12ae-126">Records are registered in chronological order for an event.</span></span> <span data-ttu-id="c12ae-127">Daher können Sie die kumulierten Kosten eines bestimmten Ereignisses oder aller Ereignisse zu einem Dokument schnell finden und steuern.</span><span class="sxs-lookup"><span data-stu-id="c12ae-127">Therefore, you can quickly find and control the accumulated costs of a specific event or all events that are related to a document.</span></span> <span data-ttu-id="c12ae-128">Hier ist ein Beispiel:</span><span class="sxs-lookup"><span data-stu-id="c12ae-128">Here is an example:</span></span>
 
--   Ein Produktzugangsereignis wird für Artikel A. erfasst. Es werden hundert Stück zu Einheitenkosten von EUR 10,00 empfangen.
--   Eine paar Tage nach der Erfassung des Rechnungsereignisses steigen die Kosten auf 11,00 EUR. Daher ist der Gesamtbetrag nun 1.100 EUR. Ein zweiter Beleg wird erstellt, um die Differenz von 100 EUR zu buchen.
--   Einige Tage später, wird ein sonstiger Zuschlag von 15,00 EUR zur Abdeckung der Transportkosten auf der Bestellung erfasst.
+-   <span data-ttu-id="c12ae-129">Ein Produktzugangsereignis wird für Artikel A. erfasst. Es werden hundert Stück zu Einheitenkosten von EUR 10,00 empfangen.</span><span class="sxs-lookup"><span data-stu-id="c12ae-129">A product receipt event is registered for item A. One hundred pieces are received at a unit cost of 10.00 USD.</span></span>
+-   <span data-ttu-id="c12ae-130">Eine paar Tage nach der Erfassung des Rechnungsereignisses steigen die Kosten auf 11,00 EUR.</span><span class="sxs-lookup"><span data-stu-id="c12ae-130">A few days after the invoice event is registered, the cost increases to 11.00 USD.</span></span> <span data-ttu-id="c12ae-131">Daher ist der Gesamtbetrag nun 1.100 EUR.</span><span class="sxs-lookup"><span data-stu-id="c12ae-131">Therefore, the total amount is 1,100 USD.</span></span> <span data-ttu-id="c12ae-132">Ein zweiter Beleg wird erstellt, um die Differenz von 100 EUR zu buchen.</span><span class="sxs-lookup"><span data-stu-id="c12ae-132">A second voucher is created to account for the difference of 100 USD.</span></span>
+-   <span data-ttu-id="c12ae-133">Einige Tage später, wird ein sonstiger Zuschlag von 15,00 EUR zur Abdeckung der Transportkosten auf der Bestellung erfasst.</span><span class="sxs-lookup"><span data-stu-id="c12ae-133">A few days later, a miscellaneous charge of 15.00 USD to cover the transportation cost is registered on the purchase order.</span></span>
 
-| Beleg | Datum       | Referenz      | Anzahl | Loskennung  | Leistung | Betrag  |
+| <span data-ttu-id="c12ae-134">Beleg</span><span class="sxs-lookup"><span data-stu-id="c12ae-134">Voucher</span></span> | <span data-ttu-id="c12ae-135">Datum</span><span class="sxs-lookup"><span data-stu-id="c12ae-135">Date</span></span>       | <span data-ttu-id="c12ae-136">Referenz</span><span class="sxs-lookup"><span data-stu-id="c12ae-136">Reference</span></span>      | <span data-ttu-id="c12ae-137">Anzahl</span><span class="sxs-lookup"><span data-stu-id="c12ae-137">Number</span></span> | <span data-ttu-id="c12ae-138">Loskennung</span><span class="sxs-lookup"><span data-stu-id="c12ae-138">Lot ID</span></span>  | <span data-ttu-id="c12ae-139">Leistung</span><span class="sxs-lookup"><span data-stu-id="c12ae-139">Quantity</span></span> | <span data-ttu-id="c12ae-140">Betrag</span><span class="sxs-lookup"><span data-stu-id="c12ae-140">Amount</span></span>  |
 |---------|------------|----------------|--------|---------|---------------|----|
-| 00001   | 01.01.2015 | Bestellung | 100001 | 0000101 | 100,00   | 1000,00 |
-| 00002   | 20.01.2015 | Bestellung | 100001 | 0000101 |          | 100,00  |
-| 00003   | 31.01.2015 | Regulierung     | 100001 | 0000101 |          | 15:00   |
+| <span data-ttu-id="c12ae-141">00001</span><span class="sxs-lookup"><span data-stu-id="c12ae-141">00001</span></span>   | <span data-ttu-id="c12ae-142">01.01.2015</span><span class="sxs-lookup"><span data-stu-id="c12ae-142">01-01-2015</span></span> | <span data-ttu-id="c12ae-143">Bestellung</span><span class="sxs-lookup"><span data-stu-id="c12ae-143">Purchase order</span></span> | <span data-ttu-id="c12ae-144">100001</span><span class="sxs-lookup"><span data-stu-id="c12ae-144">100001</span></span> | <span data-ttu-id="c12ae-145">0000101</span><span class="sxs-lookup"><span data-stu-id="c12ae-145">0000101</span></span> | <span data-ttu-id="c12ae-146">100,00</span><span class="sxs-lookup"><span data-stu-id="c12ae-146">100.00</span></span>   | <span data-ttu-id="c12ae-147">1000,00</span><span class="sxs-lookup"><span data-stu-id="c12ae-147">1000.00</span></span> |
+| <span data-ttu-id="c12ae-148">00002</span><span class="sxs-lookup"><span data-stu-id="c12ae-148">00002</span></span>   | <span data-ttu-id="c12ae-149">20.01.2015</span><span class="sxs-lookup"><span data-stu-id="c12ae-149">20-01-2015</span></span> | <span data-ttu-id="c12ae-150">Bestellung</span><span class="sxs-lookup"><span data-stu-id="c12ae-150">Purchase order</span></span> | <span data-ttu-id="c12ae-151">100001</span><span class="sxs-lookup"><span data-stu-id="c12ae-151">100001</span></span> | <span data-ttu-id="c12ae-152">0000101</span><span class="sxs-lookup"><span data-stu-id="c12ae-152">0000101</span></span> |          | <span data-ttu-id="c12ae-153">100,00</span><span class="sxs-lookup"><span data-stu-id="c12ae-153">100.00</span></span>  |
+| <span data-ttu-id="c12ae-154">00003</span><span class="sxs-lookup"><span data-stu-id="c12ae-154">00003</span></span>   | <span data-ttu-id="c12ae-155">31.01.2015</span><span class="sxs-lookup"><span data-stu-id="c12ae-155">31-01-2015</span></span> | <span data-ttu-id="c12ae-156">Regulierung</span><span class="sxs-lookup"><span data-stu-id="c12ae-156">Adjustment</span></span>     | <span data-ttu-id="c12ae-157">100001</span><span class="sxs-lookup"><span data-stu-id="c12ae-157">100001</span></span> | <span data-ttu-id="c12ae-158">0000101</span><span class="sxs-lookup"><span data-stu-id="c12ae-158">0000101</span></span> |          | <span data-ttu-id="c12ae-159">15:00</span><span class="sxs-lookup"><span data-stu-id="c12ae-159">15.00</span></span>   |
 
-Die **Kosteneinträge**-Seite ermöglicht das Filter nach der Dokumentenkennung und dem Dokumentdatum. 
+<span data-ttu-id="c12ae-160">Die **Kosteneinträge**-Seite ermöglicht das Filter nach der Dokumentenkennung und dem Dokumentdatum.</span><span class="sxs-lookup"><span data-stu-id="c12ae-160">The **Cost entries** page enables filtering by document ID and document date.</span></span> 
 
 > [!NOTE]
-> Kosteneinträge sind nur für [Kostenobjekte ](cost-object.md)oder freigegebene Produkte verfügbar.
+> <span data-ttu-id="c12ae-161">Kosteneinträge sind nur für [Kostenobjekte ](cost-object.md)oder freigegebene Produkte verfügbar.</span><span class="sxs-lookup"><span data-stu-id="c12ae-161">Cost entries are available only for [cost objects](cost-object.md) or released products.</span></span>
 
-<a name="see-also"></a>Siehe auch
+<a name="see-also"></a><span data-ttu-id="c12ae-162">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c12ae-162">See also</span></span>
 --------
 
-[Kostenobjekte](cost-object.md)
+[<span data-ttu-id="c12ae-163">Kostenobjekte</span><span class="sxs-lookup"><span data-stu-id="c12ae-163">Cost objects</span></span>](cost-object.md)
 
 
 

@@ -19,37 +19,37 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a143a373a63ab145ee4c25bb1abfab777cca6619
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a353db68c2223d62cd8e5048f0e953ed134c0803
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="correct-a-free-text-invoice"></a>Berichtigung einer Freitextrechnung
+# <a name="correct-a-free-text-invoice"></a><span data-ttu-id="0f6e3-103">Berichtigung einer Freitextrechnung</span><span class="sxs-lookup"><span data-stu-id="0f6e3-103">Correct a free text invoice</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Artikel wird beschrieben, wie eine Freitextrechnung, die gebucht wurde, korrigiert und als korrekte Rechnung erfasst wird.
+<span data-ttu-id="0f6e3-104">In diesem Artikel wird beschrieben, wie eine Freitextrechnung, die gebucht wurde, korrigiert und als korrekte Rechnung erfasst wird.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-104">This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.</span></span>
 
-Um eine Freitextrechnung zu korrigieren, die bereit gebucht wurde, öffnen Sie die gebuchte Freitextrechnung. Auf der Seite **Rechnung**  wählen Sie **Abbrechen**, und dann **Rechnung korrigieren**. Wählen Sie einen Ursachencode aus, und geben Sie Kommentare ein, und wählen Sie Datum für die korrigierte Rechnung ein. Sie können die berichtigte Rechnung bearbeiten und buchen. 
+<span data-ttu-id="0f6e3-105">Um eine Freitextrechnung zu korrigieren, die bereit gebucht wurde, öffnen Sie die gebuchte Freitextrechnung.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-105">To correct a free text invoice that has already been posted, open the posted free text invoice.</span></span> <span data-ttu-id="0f6e3-106">Auf der Seite **Rechnung**  wählen Sie **Abbrechen**, und dann **Rechnung korrigieren**.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-106">On the **Invoice** page, select **Cancel**, and then select **Correct invoice**.</span></span> <span data-ttu-id="0f6e3-107">Wählen Sie einen Ursachencode aus, und geben Sie Kommentare ein, und wählen Sie Datum für die korrigierte Rechnung ein.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-107">Select a reason code, add comments, and select the date for new corrected invoice.</span></span> <span data-ttu-id="0f6e3-108">Sie können die berichtigte Rechnung bearbeiten und buchen.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-108">You can modify the corrected invoice, and post it.</span></span> 
 
-Wenn Sie die berichtigte Rechnung buchen, wird eine Stornorechnung für einen Habenbetrag erstellt, der mit dem ursprünglichen Rechnungsbetrag übereinstimmt. Dadurch wird der kombinierte Saldo der ursprünglichen Rechnung und der Stornierung auf 0 gesetzt. Die Stornorechnung wird mit der ursprünglichen Rechnung ausgeglichen. 
+<span data-ttu-id="0f6e3-109">Wenn Sie die berichtigte Rechnung buchen, wird eine Stornorechnung für einen Habenbetrag erstellt, der mit dem ursprünglichen Rechnungsbetrag übereinstimmt.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-109">When you post the corrected invoice, a canceling invoice is created for a credit amount that equals the original invoice amount.</span></span> <span data-ttu-id="0f6e3-110">Dadurch wird der kombinierte Saldo der ursprünglichen Rechnung und der Stornierung auf 0 gesetzt.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-110">Therefore, the combined balance of the original invoice and the canceling invoice is 0 (zero).</span></span> <span data-ttu-id="0f6e3-111">Die Stornorechnung wird mit der ursprünglichen Rechnung ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-111">The canceling invoice is settled against the original invoice.</span></span> 
 
-Nachdem Sie die berichtigte Rechnung buchen, haben Sie drei Rechnungen:
+<span data-ttu-id="0f6e3-112">Nachdem Sie die berichtigte Rechnung buchen, haben Sie drei Rechnungen:</span><span class="sxs-lookup"><span data-stu-id="0f6e3-112">After you post the corrected invoice, you will have three invoices:</span></span>
 
--   **Ursprüngliche Rechnung** – Die Rechnung mit den zu korrigierenden Informationen.
--   **Stornorechnung** – Die vom System generierte Ausgleichsrechnung, die zur Stornierung der zuletzt berichtigten Rechnung erstellt wurde.
--   **Korrigierte Rechnung** – Die Rechnung mit den korrigierten Rechnungsinformationen.
+-   <span data-ttu-id="0f6e3-113">**Ursprüngliche Rechnung** – Die Rechnung mit den zu korrigierenden Informationen.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-113">**Original invoice** – The invoice that includes the information that you're correcting.</span></span>
+-   <span data-ttu-id="0f6e3-114">**Stornorechnung** – Die vom System generierte Ausgleichsrechnung, die zur Stornierung der zuletzt berichtigten Rechnung erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-114">**Canceling invoice** – The system-generated credit invoice that was created to cancel the invoice that was most recently corrected.</span></span>
+-   <span data-ttu-id="0f6e3-115">**Korrigierte Rechnung** – Die Rechnung mit den korrigierten Rechnungsinformationen.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-115">**Corrected invoice** – The invoice that contains the corrected invoice information.</span></span>
 
-Sie können Storno- und Korrekturrechnungen auf zwei Arten identifizieren:
+<span data-ttu-id="0f6e3-116">Sie können Storno- und Korrekturrechnungen auf zwei Arten identifizieren:</span><span class="sxs-lookup"><span data-stu-id="0f6e3-116">You can identify canceling and correcting invoices in two ways:</span></span>
 
--   Die **Alle Freitextrechnungen**-Seite umfasst eine **Korrektur**-Spalte, in der Sie sehen können, welche Rechnungen Stornorechnungen und berichtigte Rechnungen sind.
--   Der Kopf der Freitextrechnung zeigt den Status **Rechnung stornieren**\[Rechnungsnummer\]oder**korrekte Rechnungsnummer '\[Rechnungsnummer\]'**.
+-   <span data-ttu-id="0f6e3-117">Die **Alle Freitextrechnungen**-Seite umfasst eine **Korrektur**-Spalte, in der Sie sehen können, welche Rechnungen Stornorechnungen und berichtigte Rechnungen sind.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-117">The **All free text invoices** page includes a **Correction** column, where you can see which invoices are canceling invoices and corrected invoices.</span></span>
+-   <span data-ttu-id="0f6e3-118">Der Kopf der Freitextrechnung zeigt den Status **Rechnung stornieren**\[Rechnungsnummer\]oder**korrekte Rechnungsnummer '\[Rechnungsnummer\]'**.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-118">The header of the free text invoice shows a status of **Cancelling invoice '\[invoice number\]'** or **Corrected invoice '\[invoice number\]'**.</span></span>
 
 > [!NOTE]
-> Diese Funktion ist nur verfügbar, wenn der Konfigurarionsschlüsse **Freitext-Rechnungskorrektur** ausgewählt ist.
+> <span data-ttu-id="0f6e3-119">Diese Funktion ist nur verfügbar, wenn der Konfigurarionsschlüsse **Freitext-Rechnungskorrektur** ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="0f6e3-119">This feature is available only if the **Free text invoice correction** configuration key is selected.</span></span>
 
 
 

@@ -16,73 +16,73 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: df6d8620316cf0dcde457b06235d9e041a51e100
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 331f516f3483acd79be4ef7b95b53adcfbef1ae2
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-request-for-quotation"></a>Eine Angebotsanforderung erstellen
+# <a name="create-a-request-for-quotation"></a><span data-ttu-id="2edbc-103">Eine Angebotsanforderung erstellen</span><span class="sxs-lookup"><span data-stu-id="2edbc-103">Create a request for quotation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt Ihnen, wie Sie eine Angebotsanforderung erstellen. Dies würde normalerweise durch einen Einkaufsvertreter erfolgen. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden. Sie müssen Anfragetypen eingerichtet haben, bevor Sie beginnen. Sobald Sie diese Aufgabe abgeschlossen haben und eine Angebotsanforderung erstellt und gesendet haben, können Sie die Antworten nach Händler eingeben, sie vergleichen und den Vertrag erteilen.
+<span data-ttu-id="2edbc-104">Diese Prozedur zeigt Ihnen, wie Sie eine Angebotsanforderung erstellen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-104">This procedure shows you how to create a request for quotation.</span></span> <span data-ttu-id="2edbc-105">Dies würde normalerweise durch einen Einkaufsvertreter erfolgen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-105">This would typically be done by a purchasing agent.</span></span> <span data-ttu-id="2edbc-106">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="2edbc-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="2edbc-107">Sie müssen Anfragetypen eingerichtet haben, bevor Sie beginnen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-107">You need to have set up solicitation types before you start.</span></span> <span data-ttu-id="2edbc-108">Sobald Sie diese Aufgabe abgeschlossen haben und eine Angebotsanforderung erstellt und gesendet haben, können Sie die Antworten nach Händler eingeben, sie vergleichen und den Vertrag erteilen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-108">Once you’ve completed this task and you’ve created and sent an RFQ you can then enter the replies per vendor, compare them, and award the contract.</span></span>
 
 
-## <a name="prepare-a-new-rfq"></a>Bereiten Sie eine neue Angebotsanforderung vor
-1. Wechseln Sie zu "Beschaffung" > "Angebotsanforderungen" > "Alle Angebotsanforderungen".
-2. Klicken Sie auf "Neu".
-    * Die folgenden Bestelltypen sind verfügbar: Bestellung (dies ist standardmäßig): ein Dokument, das das Angebot bestätigt, Produkte zu kaufe,n oder die Annahme eines Angebots, Produkte gegen Bezahlung zu verkaufen. Bestellanforderung: Dieser Typ wird automatisch ausgewählt, wenn Sie eine Angebotsanforderung direkt auf Grundlage einer Bestellanforderung erstellen. Wenn Sie diese Option manuell auswählen, erhalten Sie einen Fehler. Kaufvertrag: Eine Vereinbarung über den Erwerb von Produkten in einer bestimmten Menge oder mit einem bestimmten Wert über einen gewissen Zeitraum. Wenn Sie diese Option auswählen, muss auch der Datumsbereich für den Kaufvertrag ausgewählt werden.  
-3. Geben Sie im Feld "Dokumenttitel" einen Wert ein.
-4. Geben Sie im Feld "Anfragetyp" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wenn eine Bewertungsmethode dem Anfragetyp zugeordnet wird, wird dies die Standardbewertungsmethode für die Angebotsanforderung sein, die Sie erstellen. Es ist möglich, die Bewertungsmethode später zu ändern.  
-    * Geben Sie im Feld "Lieferdatum" ein Datum ein.  
-    * Wählen Sie das Datum aus, bis zu dem Sie die Artikel erhalten möchten.  
-    * Geben Sie im Feld "Ablaufdatum und -uhrzeit" ein Datum und eine Uhrzeit ein.  
-    * Geben Sie das Datum und die Uhrzeit an, bis zu denen die Händler auf die Angebotsanforderung antworten müssen.  
-5. Geben Sie im Feld 'Lagerort' einen Wert ein, oder wählen Sie einen Wert aus.
-    * Die Lieferadresse wird standardmäßig die Lagerortadresse sein.  
-6. Klicken Sie auf "OK".
+## <a name="prepare-a-new-rfq"></a><span data-ttu-id="2edbc-109">Bereiten Sie eine neue Angebotsanforderung vor</span><span class="sxs-lookup"><span data-stu-id="2edbc-109">Prepare a new RFQ</span></span>
+1. <span data-ttu-id="2edbc-110">Wechseln Sie zu "Beschaffung" > "Angebotsanforderungen" > "Alle Angebotsanforderungen".</span><span class="sxs-lookup"><span data-stu-id="2edbc-110">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
+2. <span data-ttu-id="2edbc-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="2edbc-111">Click New.</span></span>
+    * <span data-ttu-id="2edbc-112">Die folgenden Bestelltypen sind verfügbar: Bestellung (dies ist standardmäßig): ein Dokument, das das Angebot bestätigt, Produkte zu kaufe,n oder die Annahme eines Angebots, Produkte gegen Bezahlung zu verkaufen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-112">The following purchase types are available: Purchase order (this is the default): a document that confirms the offer to buy products, or the acceptance of an offer to sell products in exchange for payment.</span></span> <span data-ttu-id="2edbc-113">Bestellanforderung: Dieser Typ wird automatisch ausgewählt, wenn Sie eine Angebotsanforderung direkt auf Grundlage einer Bestellanforderung erstellen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-113">Purchase requisition: this type is automatically selected if you create an RFQ directly from a purchase requisition.</span></span> <span data-ttu-id="2edbc-114">Wenn Sie diese Option manuell auswählen, erhalten Sie einen Fehler.</span><span class="sxs-lookup"><span data-stu-id="2edbc-114">If you manually select this option, you’ll get an error.</span></span> <span data-ttu-id="2edbc-115">Kaufvertrag: Eine Vereinbarung über den Erwerb von Produkten in einer bestimmten Menge oder mit einem bestimmten Wert über einen gewissen Zeitraum.</span><span class="sxs-lookup"><span data-stu-id="2edbc-115">Purchase agreement: an agreement to purchase a specific quantity or value of product over time.</span></span> <span data-ttu-id="2edbc-116">Wenn Sie diese Option auswählen, muss auch der Datumsbereich für den Kaufvertrag ausgewählt werden.</span><span class="sxs-lookup"><span data-stu-id="2edbc-116">If you select this option, you must select the date range that applies to the purchase agreement.</span></span>  
+3. <span data-ttu-id="2edbc-117">Geben Sie im Feld "Dokumenttitel" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="2edbc-117">In the Document title field, type a value.</span></span>
+4. <span data-ttu-id="2edbc-118">Geben Sie im Feld "Anfragetyp" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="2edbc-118">In the Solicitation type field, enter or select a value.</span></span>
+    * <span data-ttu-id="2edbc-119">Wenn eine Bewertungsmethode dem Anfragetyp zugeordnet wird, wird dies die Standardbewertungsmethode für die Angebotsanforderung sein, die Sie erstellen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-119">If a scoring method is associated with the solicitation type, this will be the default scoring method for the RFQ that you’re creating.</span></span> <span data-ttu-id="2edbc-120">Es ist möglich, die Bewertungsmethode später zu ändern.</span><span class="sxs-lookup"><span data-stu-id="2edbc-120">It is possible to change the scoring method later.</span></span>  
+    * <span data-ttu-id="2edbc-121">Geben Sie im Feld "Lieferdatum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="2edbc-121">In the Delivery date field, enter a date.</span></span>  
+    * <span data-ttu-id="2edbc-122">Wählen Sie das Datum aus, bis zu dem Sie die Artikel erhalten möchten.</span><span class="sxs-lookup"><span data-stu-id="2edbc-122">Select the date by which you want to receive the items.</span></span>  
+    * <span data-ttu-id="2edbc-123">Geben Sie im Feld "Ablaufdatum und -uhrzeit" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="2edbc-123">In the Expiration date and time field, enter a date and time.</span></span>  
+    * <span data-ttu-id="2edbc-124">Geben Sie das Datum und die Uhrzeit an, bis zu denen die Händler auf die Angebotsanforderung antworten müssen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-124">Specify the date and time by which vendors must respond to the RFQ.</span></span>  
+5. <span data-ttu-id="2edbc-125">Geben Sie im Feld 'Lagerort' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="2edbc-125">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="2edbc-126">Die Lieferadresse wird standardmäßig die Lagerortadresse sein.</span><span class="sxs-lookup"><span data-stu-id="2edbc-126">The delivery address will default to the warehouse address.</span></span>  
+6. <span data-ttu-id="2edbc-127">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="2edbc-127">Click OK.</span></span>
 
-## <a name="add-lines"></a>Positionen hinzufügen
-    * Nachdem Sie die grundlegenden Informationen zu Ihrer Angebotsanforderung angegeben haben, geben Sie die Waren oder Dienstleistungen an, für die Kreditoren Angebote abgeben sollen. Der Artikel ist der standardmäßigen Positionstyp.   
-1. Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.
-    * Wenn Sie USMF verwenden, können Sie T0020 auswählen.  
-2. Geben Sie im Feld "Menge" eine Zahl ein.
-3. Klicken Sie auf "Position hinzufügen".
-4. Wählen Sie im Feld "Positionstyp" die Option "Kategorie" aus.
-    * Sie können den Kategoriepositionstyp verwenden, um Angebotsanforderungen für Nicht-Bestandswaren oder -dienstleistungen zu erstellen. Sie müssen anschließend den Typ von Gütern oder Dienstleistungen aus einer Hierarchie der Beschaffungskategorien auswählen.  
-5. Geben Sie im Feld "Beschaffungskategorie" einen Wert ein oder wählen Sie einen Wert aus.
-6. Geben Sie im Feld "Produktname" einen Wert ein.
-7. Geben Sie im Feld "Menge" eine Zahl ein.
-8. Geben Sie im Feld 'Einheit' einen Wert ein, oder wählen Sie einen Wert aus.
+## <a name="add-lines"></a><span data-ttu-id="2edbc-128">Positionen hinzufügen</span><span class="sxs-lookup"><span data-stu-id="2edbc-128">Add lines</span></span>
+    * <span data-ttu-id="2edbc-129">Nachdem Sie die grundlegenden Informationen zu Ihrer Angebotsanforderung angegeben haben, geben Sie die Waren oder Dienstleistungen an, für die Kreditoren Angebote abgeben sollen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-129">After you’ve specified the basic information about your RFQ, you specify the goods or services that you want vendors to bid on.</span></span> <span data-ttu-id="2edbc-130">Der Artikel ist der standardmäßigen Positionstyp.</span><span class="sxs-lookup"><span data-stu-id="2edbc-130">Item is the default line type.</span></span>   
+1. <span data-ttu-id="2edbc-131">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="2edbc-131">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="2edbc-132">Wenn Sie USMF verwenden, können Sie T0020 auswählen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-132">If you're using USMF, you can select T0020.</span></span>  
+2. <span data-ttu-id="2edbc-133">Geben Sie im Feld "Menge" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="2edbc-133">In the Quantity field, enter a number.</span></span>
+3. <span data-ttu-id="2edbc-134">Klicken Sie auf "Position hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="2edbc-134">Click Add line.</span></span>
+4. <span data-ttu-id="2edbc-135">Wählen Sie im Feld "Positionstyp" die Option "Kategorie" aus.</span><span class="sxs-lookup"><span data-stu-id="2edbc-135">In the Line type field, select 'Category'.</span></span>
+    * <span data-ttu-id="2edbc-136">Sie können den Kategoriepositionstyp verwenden, um Angebotsanforderungen für Nicht-Bestandswaren oder -dienstleistungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-136">You can use the Category line type to create RFQs for non-inventory goods or services.</span></span> <span data-ttu-id="2edbc-137">Sie müssen anschließend den Typ von Gütern oder Dienstleistungen aus einer Hierarchie der Beschaffungskategorien auswählen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-137">You then need to select the type of goods or services from a hierarchy of procurement categories.</span></span>  
+5. <span data-ttu-id="2edbc-138">Geben Sie im Feld "Beschaffungskategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="2edbc-138">In the Procurement category field, enter or select a value.</span></span>
+6. <span data-ttu-id="2edbc-139">Geben Sie im Feld "Produktname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="2edbc-139">In the Product name field, type a value.</span></span>
+7. <span data-ttu-id="2edbc-140">Geben Sie im Feld "Menge" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="2edbc-140">In the Quantity field, enter a number.</span></span>
+8. <span data-ttu-id="2edbc-141">Geben Sie im Feld 'Einheit' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="2edbc-141">In the Unit field, enter or select a value.</span></span>
 
-## <a name="add-vendors"></a>Kreditoren hinzufügen
-1. Klicken Sie auf "Kopfzeile", um von der "Positionsansicht" zur "Kopfzeilenansicht" zu wechseln. 
-2. Erweitern Sie den Abschnitt "Händler".
-3. Klicken Sie auf "Händler automatisch hinzufügen".
-    * Sie können der Angebotsanforderung automatisch Händler hinzufügen, basierend auf der Beschaffungskategorie der angeforderten Artikel. Wenn es keine für die Kategorien genehmigte Händler gibt, die in den Positionen enthalten sind, können Sie manuell Händler hinzufügen.  
-4. Klicken Sie auf Hinzufügen.
-5. Geben Sie im Feld "Kreditorenkonto" einen Wert ein, oder wählen Sie einen Wert aus.
-6. Klicken Sie auf Hinzufügen.
-7. Geben Sie im Feld "Kreditorenkonto" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Sobald Sie einen Händler ausgewählt haben, ist der Status "Erstellt". Das bedeutet, dass die Kreditorinformationen in der Angebotsanforderung gespeichert wurden, die Angebotsanforderung jedoch noch nicht an den Kreditor gesendet wurde. Sie können einer Angebotsanforderung einen Kreditor unabhängig vom Kreditorstatus hinzufügen.  
+## <a name="add-vendors"></a><span data-ttu-id="2edbc-142">Kreditoren hinzufügen</span><span class="sxs-lookup"><span data-stu-id="2edbc-142">Add vendors</span></span>
+1. <span data-ttu-id="2edbc-143">Klicken Sie auf "Kopfzeile", um von der "Positionsansicht" zur "Kopfzeilenansicht" zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="2edbc-143">Click Header to change from the Lines view to the Header view.</span></span> 
+2. <span data-ttu-id="2edbc-144">Erweitern Sie den Abschnitt "Händler".</span><span class="sxs-lookup"><span data-stu-id="2edbc-144">Expand the Vendor section.</span></span>
+3. <span data-ttu-id="2edbc-145">Klicken Sie auf "Händler automatisch hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="2edbc-145">Click Auto-add vendors.</span></span>
+    * <span data-ttu-id="2edbc-146">Sie können der Angebotsanforderung automatisch Händler hinzufügen, basierend auf der Beschaffungskategorie der angeforderten Artikel.</span><span class="sxs-lookup"><span data-stu-id="2edbc-146">You can add vendors to the RFQ automatically, based on the procurement category of the items requested.</span></span> <span data-ttu-id="2edbc-147">Wenn es keine für die Kategorien genehmigte Händler gibt, die in den Positionen enthalten sind, können Sie manuell Händler hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-147">If there are no vendors approved for the categories included in the lines you can add vendors manually.</span></span>  
+4. <span data-ttu-id="2edbc-148">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-148">Click Add.</span></span>
+5. <span data-ttu-id="2edbc-149">Geben Sie im Feld "Kreditorenkonto" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="2edbc-149">In the Vendor account field, enter or select a value.</span></span>
+6. <span data-ttu-id="2edbc-150">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-150">Click Add.</span></span>
+7. <span data-ttu-id="2edbc-151">Geben Sie im Feld "Kreditorenkonto" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="2edbc-151">In the Vendor account field, enter or select a value.</span></span>
+    * <span data-ttu-id="2edbc-152">Sobald Sie einen Händler ausgewählt haben, ist der Status "Erstellt".</span><span class="sxs-lookup"><span data-stu-id="2edbc-152">Once you’ve selected a vendor, the status is Created.</span></span> <span data-ttu-id="2edbc-153">Das bedeutet, dass die Kreditorinformationen in der Angebotsanforderung gespeichert wurden, die Angebotsanforderung jedoch noch nicht an den Kreditor gesendet wurde.</span><span class="sxs-lookup"><span data-stu-id="2edbc-153">This means that the vendor information has been saved in the RFQ, but you have not sent the RFQ to the vendor.</span></span> <span data-ttu-id="2edbc-154">Sie können einer Angebotsanforderung einen Kreditor unabhängig vom Kreditorstatus hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2edbc-154">You can add a vendor to an RFQ regardless of the vendor status.</span></span>  
 
-## <a name="send-the-rfq-to-vendors"></a>Die Angebotsanforderung an Kreditoren senden
-1. Klicken Sie auf Senden.
-    * Überprüfen Sie auf der Seite "Angebotsanforderung wird gesendet.", dass es sich bei den in der Liste aufgeführten Händler um die gewünschten Empfänger der Angebotsanforderung handelt.  
-2. Klicken Sie auf Drucken.
-    * Dieses Dialogfeld ermöglicht Ihnen, die Angebotsanforderung zu drucken. Wenn Sie sich dafür entscheiden, ein Antwortblatt zu drucken, wird der Inhalt von diesem in den Beschaffungsparametern definiert. Um auszuwählen, wie Antwortblätter gedruckt werden sollen, sobald Sie den Dialog "Drucken" geöffnet haben, Klicken Sie auf "Erweiterte Druckoptionen". Eine Angebotsanforderung wird für jeden Händler gedruckt. Diese enthält die Positionen, die den Status "Erstellt" oder "Versendet" haben. Stornierte Positionen und Positionen mit erfassten Antworten werden nicht gedruckt.   
-3. Klicken Sie auf "Abbrechen".
-4. Klicken Sie auf "OK".
-5. Schließen Sie die Seite.
-6. Schließen Sie die Seite.
+## <a name="send-the-rfq-to-vendors"></a><span data-ttu-id="2edbc-155">Die Angebotsanforderung an Kreditoren senden</span><span class="sxs-lookup"><span data-stu-id="2edbc-155">Send the RFQ to vendors</span></span>
+1. <span data-ttu-id="2edbc-156">Klicken Sie auf Senden.</span><span class="sxs-lookup"><span data-stu-id="2edbc-156">Click Send.</span></span>
+    * <span data-ttu-id="2edbc-157">Überprüfen Sie auf der Seite "Angebotsanforderung wird gesendet.", dass es sich bei den in der Liste aufgeführten Händler um die gewünschten Empfänger der Angebotsanforderung handelt.</span><span class="sxs-lookup"><span data-stu-id="2edbc-157">In the Sending request for quotation page, check that the vendors in the list are the ones that you want to receive the RFQ.</span></span>  
+2. <span data-ttu-id="2edbc-158">Klicken Sie auf Drucken.</span><span class="sxs-lookup"><span data-stu-id="2edbc-158">Click Print.</span></span>
+    * <span data-ttu-id="2edbc-159">Dieses Dialogfeld ermöglicht Ihnen, die Angebotsanforderung zu drucken.</span><span class="sxs-lookup"><span data-stu-id="2edbc-159">This dialog allows you to print the RFQ.</span></span> <span data-ttu-id="2edbc-160">Wenn Sie sich dafür entscheiden, ein Antwortblatt zu drucken, wird der Inhalt von diesem in den Beschaffungsparametern definiert.</span><span class="sxs-lookup"><span data-stu-id="2edbc-160">If you choose to print a reply sheet, the contents of this are defined in Procurement and Sourcing parameters.</span></span> <span data-ttu-id="2edbc-161">Um auszuwählen, wie Antwortblätter gedruckt werden sollen, sobald Sie den Dialog "Drucken" geöffnet haben, Klicken Sie auf "Erweiterte Druckoptionen".</span><span class="sxs-lookup"><span data-stu-id="2edbc-161">To choose how to print reply sheets, once you’ve opened the Print dialog, click Advanced printing options.</span></span> <span data-ttu-id="2edbc-162">Eine Angebotsanforderung wird für jeden Händler gedruckt. Diese enthält die Positionen, die den Status "Erstellt" oder "Versendet" haben.</span><span class="sxs-lookup"><span data-stu-id="2edbc-162">One RFQ will be printed for each vendor containing the lines that have the status of Created or Sent.</span></span> <span data-ttu-id="2edbc-163">Stornierte Positionen und Positionen mit erfassten Antworten werden nicht gedruckt.</span><span class="sxs-lookup"><span data-stu-id="2edbc-163">Canceled lines and lines with registered replies will not be printed.</span></span>   
+3. <span data-ttu-id="2edbc-164">Klicken Sie auf "Abbrechen".</span><span class="sxs-lookup"><span data-stu-id="2edbc-164">Click Cancel.</span></span>
+4. <span data-ttu-id="2edbc-165">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="2edbc-165">Click OK.</span></span>
+5. <span data-ttu-id="2edbc-166">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="2edbc-166">Close the page.</span></span>
+6. <span data-ttu-id="2edbc-167">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="2edbc-167">Close the page.</span></span>
 
-## <a name="view-the-rfq-journal"></a>Zeigen Sie die Angebotsanforderungserfassung an
-1. Wechseln Sie zu "Beschaffung" > "Angebotsanforderungen" > "Angebotsanforderungsnachverfolgung" .
-2. Klicken Sie auf "Vorschau anzeigen/Drucken".
-3. Klicken Sie auf "Vorschau des Originals".
-4. Schließen Sie die Seite.
-5. Schließen Sie die Seite.
+## <a name="view-the-rfq-journal"></a><span data-ttu-id="2edbc-168">Zeigen Sie die Angebotsanforderungserfassung an</span><span class="sxs-lookup"><span data-stu-id="2edbc-168">View the RFQ journal</span></span>
+1. <span data-ttu-id="2edbc-169">Wechseln Sie zu "Beschaffung" > "Angebotsanforderungen" > "Angebotsanforderungsnachverfolgung" .</span><span class="sxs-lookup"><span data-stu-id="2edbc-169">Go to Procurement and sourcing > Requests for quotations > Request for quotations follow-up > Request for quotation journals.</span></span>
+2. <span data-ttu-id="2edbc-170">Klicken Sie auf "Vorschau anzeigen/Drucken".</span><span class="sxs-lookup"><span data-stu-id="2edbc-170">Click Preview/Print.</span></span>
+3. <span data-ttu-id="2edbc-171">Klicken Sie auf "Vorschau des Originals".</span><span class="sxs-lookup"><span data-stu-id="2edbc-171">Click Original preview.</span></span>
+4. <span data-ttu-id="2edbc-172">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="2edbc-172">Close the page.</span></span>
+5. <span data-ttu-id="2edbc-173">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="2edbc-173">Close the page.</span></span>
 
 

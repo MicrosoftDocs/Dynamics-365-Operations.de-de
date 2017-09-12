@@ -15,217 +15,217 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 172d952c79347e7dd563cfda70729750fa0ddde9
-ms.openlocfilehash: c47ca406e2c8be98f26f1c78d6f5e0a3f66690a5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: cd9be16ee30a62235f20f23f9cd50fb954cfe8a4
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="vendor-invoice-automation"></a>Kreditorenrechnungsautomatisierung
+# <a name="vendor-invoice-automation"></a><span data-ttu-id="1f5a3-103">Kreditorenrechnungsautomatisierung</span><span class="sxs-lookup"><span data-stu-id="1f5a3-103">Vendor invoice automation</span></span>
 
-In diesem Thema werden die Funktionen, die für die weitere Automatisierung von Kreditorenrechnungen verfügbar sind, selbst Rechnungen mit Anlagen, erklärt.
+<span data-ttu-id="1f5a3-104">In diesem Thema werden die Funktionen, die für die weitere Automatisierung von Kreditorenrechnungen verfügbar sind, selbst Rechnungen mit Anlagen, erklärt.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-104">This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.</span></span>
 
-Organisationen, die ihre Kreditorenkontenprozesse (AP) optimieren möchten, identifizieren häufig den Fakturierungsprozess als einen ersten Prozessbereich, der effizienter sein sollte. In vielen Fällen lagern diese Organisationen die Verarbeitung von Papierrechnungen an einem Dienstanbieter  für die optische Zeichenerkennung aus. Sie erhalten maschinenlesbare Rechnungsmetadaten zusammen mit einem Bild jeder gescannten Rechnung. Um bei der Automatisierung zu unterstützen, wird eine Lösung erstellt, um den Verbrauch dieser Artefakte im Fakturierungssystem zu aktivieren. Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, aktiviert nun diesen Automatisierungsstandard, um eine Rechnungsautomatisierungslösung zu erhalten.
+<span data-ttu-id="1f5a3-105">Organisationen, die ihre Kreditorenkontenprozesse (AP) optimieren möchten, identifizieren häufig den Fakturierungsprozess als einen ersten Prozessbereich, der effizienter sein sollte.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-105">Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient.</span></span> <span data-ttu-id="1f5a3-106">In vielen Fällen lagern diese Organisationen die Verarbeitung von Papierrechnungen an einem Dienstanbieter  für die optische Zeichenerkennung aus.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-106">In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider.</span></span> <span data-ttu-id="1f5a3-107">Sie erhalten maschinenlesbare Rechnungsmetadaten zusammen mit einem Bild jeder gescannten Rechnung.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-107">They then receive machine-readable invoice metadata together with a scanned image of each invoice.</span></span> <span data-ttu-id="1f5a3-108">Um bei der Automatisierung zu unterstützen, wird eine Lösung erstellt, um den Verbrauch dieser Artefakte im Fakturierungssystem zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-108">To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system.</span></span> <span data-ttu-id="1f5a3-109">Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, aktiviert nun diesen Automatisierungsstandard, um eine Rechnungsautomatisierungslösung zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-109">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition now enables this “last mile” automation out of the box, through an invoice automation solution.</span></span>
 
-## <a name="solution-context"></a>Lösungskontext
+## <a name="solution-context"></a><span data-ttu-id="1f5a3-110">Lösungskontext</span><span class="sxs-lookup"><span data-stu-id="1f5a3-110">Solution context</span></span>
 
-Die Rechnungsautomatisierungslösung ermöglicht eine Standardschnittstelle, die Rechnungsmetadaten für den Rechnungskopf und Rechnungspositionen akzeptieren kann, und auch Anhänge, die der Rechnung zugeordnet sind. Jedes System, das externe Artefakte generieren kann, die mit dieser Schnittstelle entsprechen, ist, in den Feed Finanzen und an Arbeitsgängen für die automatischen Verarbeitung von Rechnungen sowie Anhängen zu senden.
+<span data-ttu-id="1f5a3-111">Die Rechnungsautomatisierungslösung ermöglicht eine Standardschnittstelle, die Rechnungsmetadaten für den Rechnungskopf und Rechnungspositionen akzeptieren kann, und auch Anhänge, die der Rechnung zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-111">The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice.</span></span> <span data-ttu-id="1f5a3-112">Jedes System, das externe Artefakte generieren kann, die mit dieser Schnittstelle entsprechen, ist, in den Feed Finanzen und an Arbeitsgängen für die automatischen Verarbeitung von Rechnungen sowie Anhängen zu senden.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-112">Any external system that can generate artifacts that comply with this interface will be able to send the feed into Finance and Operations for automatic processing of invoices and attachments.</span></span>
 
-Die folgende Abbildung zeigt ein Beispielintegrationsszenario, wobei Contoso mit einem OCR-Dienstanbieter für die Kreditorenrechnungsverarbeitung zusammengearbeitet hat. Der Contoso-Kreditoren sendet die Rechnung dem Rechnungen Dienstanbieter per E-Mail. Durch verarbeitendes OCR, generiert der Dienstanbieter Rechnungsmetadaten (Kopfdaten und Positionen und/oder) ein gescanntes Bild der Rechnung. Eine Integrationsebene verarbeitet diese Artefakte, sodass Finance and Operations diese weiterverarbeiten kann.
+<span data-ttu-id="1f5a3-113">Die folgende Abbildung zeigt ein Beispielintegrationsszenario, wobei Contoso mit einem OCR-Dienstanbieter für die Kreditorenrechnungsverarbeitung zusammengearbeitet hat.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-113">The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing.</span></span> <span data-ttu-id="1f5a3-114">Der Contoso-Kreditoren sendet die Rechnung dem Rechnungen Dienstanbieter per E-Mail.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-114">Contoso’s vendors send invoices to the service provider by email.</span></span> <span data-ttu-id="1f5a3-115">Durch verarbeitendes OCR, generiert der Dienstanbieter Rechnungsmetadaten (Kopfdaten und Positionen und/oder) ein gescanntes Bild der Rechnung.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-115">Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice.</span></span> <span data-ttu-id="1f5a3-116">Eine Integrationsebene verarbeitet diese Artefakte, sodass Finance and Operations diese weiterverarbeiten kann.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-116">An integration layer then transforms these artifacts so that Finance and Operations can consume them.</span></span>
 
 ![Integrationsbeispielszenarien](media/vendor_invoice_automation_01.png)
 
-Einige Abweichungen des vorhergehenden Szenarios sind möglich, wenn Rechnungsintegration erforderlich ist. Datenmigration ist ein anderer Anwendungsfall, bei dem diese Schnittstelle verwendet werden kann, um Rechnungen und Anhänge in Finance and Operations zu erstellen.
+<span data-ttu-id="1f5a3-118">Einige Abweichungen des vorhergehenden Szenarios sind möglich, wenn Rechnungsintegration erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-118">Several variations of the preceding scenario are possible if invoice integration is required.</span></span> <span data-ttu-id="1f5a3-119">Datenmigration ist ein anderer Anwendungsfall, bei dem diese Schnittstelle verwendet werden kann, um Rechnungen und Anhänge in Finance and Operations zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-119">Data migration is another use case where this interface can be used to create invoices and attachments in Finance and Operations.</span></span>
 
-### <a name="solution-components"></a>Lösungskomponenten
+### <a name="solution-components"></a><span data-ttu-id="1f5a3-120">Lösungskomponenten</span><span class="sxs-lookup"><span data-stu-id="1f5a3-120">Solution components</span></span>
 
-Der Lösungsbedarf besteht aus den folgenden Komponenten:
+<span data-ttu-id="1f5a3-121">Der Lösungsbedarf besteht aus den folgenden Komponenten:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-121">The solution footprint consists of the following components:</span></span>
 
-+ Datenentitäten für den Rechnungskopf, die Rechnungspositionen und die Rechnungsanhänge
-+ Ausnahme, die für Rechnungen verarbeitet wird
-+ Ein Anhangviewer parallel zu den Rechnungen
++ <span data-ttu-id="1f5a3-122">Datenentitäten für den Rechnungskopf, die Rechnungspositionen und die Rechnungsanhänge</span><span class="sxs-lookup"><span data-stu-id="1f5a3-122">Data entities for the invoice header, invoice lines, and invoice attachments</span></span>
++ <span data-ttu-id="1f5a3-123">Ausnahme, die für Rechnungen verarbeitet wird</span><span class="sxs-lookup"><span data-stu-id="1f5a3-123">Exception processing for invoices</span></span>
++ <span data-ttu-id="1f5a3-124">Ein Anhangviewer parallel zu den Rechnungen</span><span class="sxs-lookup"><span data-stu-id="1f5a3-124">A side-by-side attachment viewer in invoices</span></span>
 
-Die im weiteren Verlauf dieses Themas enthaltenen detaillierten Beschreibungen dieser Lösungskomponenten.
+<span data-ttu-id="1f5a3-125">Die im weiteren Verlauf dieses Themas enthaltenen detaillierten Beschreibungen dieser Lösungskomponenten.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-125">The rest of this topic provides detailed descriptions of these solution components.</span></span>
 
-## <a name="data-entities"></a>Datenentitäten
+## <a name="data-entities"></a><span data-ttu-id="1f5a3-126">Datenentitäten</span><span class="sxs-lookup"><span data-stu-id="1f5a3-126">Data entities</span></span>
 
-Ein Datenpaket ist die Arbeitseinheit, die an Finance and Operations gesandt werden muss, damit anschließend Rechnungskopf, Rechnungsanhänge und Rechnungspositionen erstellt werden können. Die folgenden Datenentitäten werden für Artefakte verwendet werden, die sich aus dem Datenpaket zusammensetzen:
+<span data-ttu-id="1f5a3-127">Ein Datenpaket ist die Arbeitseinheit, die an Finance and Operations gesandt werden muss, damit anschließend Rechnungskopf, Rechnungsanhänge und Rechnungspositionen erstellt werden können.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-127">A data package is the unit of work that must be sent to Finance and Operations, so that invoice headers, invoice lines, and invoice attachments can be created.</span></span> <span data-ttu-id="1f5a3-128">Die folgenden Datenentitäten werden für Artefakte verwendet werden, die sich aus dem Datenpaket zusammensetzen:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-128">The following data entities are used for the artifacts that make up the data package:</span></span>
 
-+ Kreditorenrechnungskopf
-+ Kreditorenrechnungsposition
-+ Dokumentanhang von Kreditorenrechnung
++ <span data-ttu-id="1f5a3-129">Kreditorenrechnungskopf</span><span class="sxs-lookup"><span data-stu-id="1f5a3-129">Vendor invoice header</span></span>
++ <span data-ttu-id="1f5a3-130">Kreditorenrechnungsposition</span><span class="sxs-lookup"><span data-stu-id="1f5a3-130">Vendor invoice line</span></span>
++ <span data-ttu-id="1f5a3-131">Dokumentanhang von Kreditorenrechnung</span><span class="sxs-lookup"><span data-stu-id="1f5a3-131">Vendor invoice document attachment</span></span>
 
-Kreditorenrechnungsdokumentanhang ist eine Entität der neuen Daten, die im Rahmen dieser Funktion eingegeben wird. Die Kreditorenrechnungskopfentität wurde geändert, sodass diese Anlagen unterstützt werden. Die Kreditorenrechnungspositionsentität ist für diese Funktion nicht geändert.
+<span data-ttu-id="1f5a3-132">Kreditorenrechnungsdokumentanhang ist eine Entität der neuen Daten, die im Rahmen dieser Funktion eingegeben wird.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-132">Vendor invoice document attachment is a new data entity that is introduced as part of this feature.</span></span> <span data-ttu-id="1f5a3-133">Die Kreditorenrechnungskopfentität wurde geändert, sodass diese Anlagen unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-133">The Vendor invoice header entity has been modified so that it supports attachments.</span></span> <span data-ttu-id="1f5a3-134">Die Kreditorenrechnungspositionsentität ist für diese Funktion nicht geändert.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-134">The Vendor invoice line entity hasn’t been modified for this feature.</span></span>
 
-In diesem Thema sind keine Definitionen der Projektarbeit eines Datenpakets enthalten. Es erklärt auch nicht, wie Datenenpakete erstellt werden. Weitere Informationen finden Sie unter [Datenentitäts- und Paketframework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).
+<span data-ttu-id="1f5a3-135">In diesem Thema sind keine Definitionen der Projektarbeit eines Datenpakets enthalten.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-135">This topic doesn’t give a detailed definition of a data package.</span></span> <span data-ttu-id="1f5a3-136">Es erklärt auch nicht, wie Datenenpakete erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-136">It also doesn’t explain how to create data packages.</span></span> <span data-ttu-id="1f5a3-137">Weitere Informationen finden Sie unter [Datenentitäts- und Paketframework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).</span><span class="sxs-lookup"><span data-stu-id="1f5a3-137">For this information, see [Data entities and packages framework](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).</span></span>
 
-Um schnell Testdaten zu generieren, die Rechnungen und Anhänge enthalten, führen Sie die folgenden Schritte aus.
+<span data-ttu-id="1f5a3-138">Um schnell Testdaten zu generieren, die Rechnungen und Anhänge enthalten, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-138">To quickly generate test data that includes invoices and attachments, follow these steps.</span></span>
 
-1. Bei Finance and Operations-Instanz anmelden.
-1. Wechseln Sie zu **Kreditoren**  > **Rechnungen**  > **Offene Kreditorenrechnungen**.
-1. Erstellen von Rechnungen, die Positionen und Anhänge haben.
+1. <span data-ttu-id="1f5a3-139">Bei Finance and Operations-Instanz anmelden.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-139">Sign in to your Finance and Operations instance.</span></span>
+1. <span data-ttu-id="1f5a3-140">Wechseln Sie zu **Kreditoren**  > **Rechnungen**  > **Offene Kreditorenrechnungen**.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-140">Go to **Accounts payables** > **Invoices** > **Pending vendor invoices**.</span></span>
+1. <span data-ttu-id="1f5a3-141">Erstellen von Rechnungen, die Positionen und Anhänge haben.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-141">Create invoices that have lines and attachments.</span></span>
 
     > [!NOTE]
-    > Die Anlagen müssen Kopfanhänge sein. Momentan unterstützt die Kreditorenrechnungsdokument-Anhangentität nicht die Positionsanhänge.
+    > <span data-ttu-id="1f5a3-142">Die Anlagen müssen Kopfanhänge sein.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-142">The attachments must be header attachments.</span></span> <span data-ttu-id="1f5a3-143">Momentan unterstützt die Kreditorenrechnungsdokument-Anhangentität nicht die Positionsanhänge.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-143">Currently, the Vendor invoice document attachment entity doesn’t support line attachments.</span></span>
 
-1. Öffnen Sie den Arbeitsbereich **Datenverwaltung**.
-1. Erstellen eines Export-Einzelvorgangs, der den Kreditorenrechnungskopf, die Kreditorenrechnung und die Kreditorenrechnungsposition-Dokumentanhang-Entitäten enthält.
-1. Exportieren der Daten.
-1. Laden Sie die exportierten Daten als Paket herunter. Sie können nun das Paket verwenden, um Daten in Zielinstanzen für Testzwecke zu importieren.
+1. <span data-ttu-id="1f5a3-144">Öffnen Sie den Arbeitsbereich **Datenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-144">Open the **Data management** workspace.</span></span>
+1. <span data-ttu-id="1f5a3-145">Erstellen eines Export-Einzelvorgangs, der den Kreditorenrechnungskopf, die Kreditorenrechnung und die Kreditorenrechnungsposition-Dokumentanhang-Entitäten enthält.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-145">Create an export job that includes the Vendor invoice header, Vendor invoice line, and Vendor invoice document attachment entities.</span></span>
+1. <span data-ttu-id="1f5a3-146">Exportieren der Daten.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-146">Export the data.</span></span>
+1. <span data-ttu-id="1f5a3-147">Laden Sie die exportierten Daten als Paket herunter.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-147">Download the exported data as a package.</span></span> <span data-ttu-id="1f5a3-148">Sie können nun das Paket verwenden, um Daten in Zielinstanzen für Testzwecke zu importieren.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-148">You can now use the package to import data into target instances for testing purposes.</span></span>
 
-### <a name="determining-the-legal-entity-for-an-invoice"></a>Bestimmen der juristischen Person für die Rechnung
+### <a name="determining-the-legal-entity-for-an-invoice"></a><span data-ttu-id="1f5a3-149">Bestimmen der juristischen Person für die Rechnung</span><span class="sxs-lookup"><span data-stu-id="1f5a3-149">Determining the legal entity for an invoice</span></span>
 
-Rechnungen, die über Datenenpakete importiert werden, können der juristischen Person zugeordnet werden, so dass sie in zwei Möglichkeiten gehören:
+<span data-ttu-id="1f5a3-150">Rechnungen, die über Datenenpakete importiert werden, können der juristischen Person zugeordnet werden, so dass sie in zwei Möglichkeiten gehören:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-150">Invoices that are imported via data packages can be associated with the legal entity that they belong to in two ways:</span></span>
 
-+ Der Importeinzelvorgang, der die Rechnung, bearbeitet importiert sie in das gleiche Unternehmen, in dem der Einzelvorgang in **Datenverwaltung** geplant wurde. Das bedeutet, dass das Unternehmen des Einzelvorgangs das Unternehmen bestimmt, zu dem die Rechnung gehört.
-+ Wenn das Datenpaket, das Rechnungen enthält, an Finance and Operations gesandt wird, kann der Aufrufende (das heißt, die Integrationsbewerbung, die außerhalb von Finance and Operations ausgeführt wird), die Unternehmenskennung im Formular HTTP-Anforderung explizit erwähnen. In diesem Fall werden der Unternehmenskontext, in dem der verarbeitende Einzelvorgang in Finance and Operations läuft, überschrieben und die Rechnungen werden in die Unternehmen importiert, die über HTTP-Anforderung übergeben wurde.
++ <span data-ttu-id="1f5a3-151">Der Importeinzelvorgang, der die Rechnung, bearbeitet importiert sie in das gleiche Unternehmen, in dem der Einzelvorgang in **Datenverwaltung** geplant wurde.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-151">The import job that processes the invoice imports it into the same company in which the job was scheduled in the **Data management** workspace.</span></span> <span data-ttu-id="1f5a3-152">Das bedeutet, dass das Unternehmen des Einzelvorgangs das Unternehmen bestimmt, zu dem die Rechnung gehört.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-152">In other words, the company of the job determines the company that the invoice belongs to.</span></span>
++ <span data-ttu-id="1f5a3-153">Wenn das Datenpaket, das Rechnungen enthält, an Finance and Operations gesandt wird, kann der Aufrufende (das heißt, die Integrationsbewerbung, die außerhalb von Finance and Operations ausgeführt wird), die Unternehmenskennung im Formular HTTP-Anforderung explizit erwähnen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-153">When the data package that contains invoices is sent to Finance and Operations, the caller (that is, the integration application that runs outside of Finance and Operations) can explicitly mention the company ID in the HTTP request.</span></span> <span data-ttu-id="1f5a3-154">In diesem Fall werden der Unternehmenskontext, in dem der verarbeitende Einzelvorgang in Finance and Operations läuft, überschrieben und die Rechnungen werden in die Unternehmen importiert, die über HTTP-Anforderung übergeben wurde.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-154">In this case, the company context in which the processing job runs in Finance and Operations is overridden, and the invoices are imported into the company that was passed via the HTTP request.</span></span>
 
 > [!NOTE]
-> Dieses Verhalten ist Standarddatenverwaltungsverhalten. Es ist hier beschrieben, im Kontext der Rechnungen, einfach aufgrund der Vollständigkeit.
+> <span data-ttu-id="1f5a3-155">Dieses Verhalten ist Standarddatenverwaltungsverhalten.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-155">This behavior is standard data management behavior.</span></span> <span data-ttu-id="1f5a3-156">Es ist hier beschrieben, im Kontext der Rechnungen, einfach aufgrund der Vollständigkeit.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-156">It’s explained here, in the context of invoices, just for the sake of completeness.</span></span>
 
-## <a name="exception-processing"></a>Ausnahme verarbeiten
+## <a name="exception-processing"></a><span data-ttu-id="1f5a3-157">Ausnahme verarbeiten</span><span class="sxs-lookup"><span data-stu-id="1f5a3-157">Exception processing</span></span>
 
-In Szenarios, in dem Kreditorenrechnungen über Integration in Finance and Operations kommen, muss es einen einfachen Weg für das Kreditorteammitglied geben, Ausnahmen oder fehlgeschlagene Rechnungen zu verarbeiten, und hängige Rechnungen zu verarbeiten und hängige Rechnungen der fehlgeschlagenen Rechnunge zu erstellen. Diese Ausnahme, die für Kreditorenrechnungen verarbeitet wird, ist nun Teil von Finance and Operations.
+<span data-ttu-id="1f5a3-158">In Szenarios, in dem Kreditorenrechnungen über Integration in Finance and Operations kommen, muss es einen einfachen Weg für das Kreditorteammitglied geben, Ausnahmen oder fehlgeschlagene Rechnungen zu verarbeiten, und hängige Rechnungen zu verarbeiten und hängige Rechnungen der fehlgeschlagenen Rechnunge zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-158">In scenarios where vendor invoices come into Finance and Operations via integration, there must be an easy way for an Accounts payable team member to process exceptions or failed invoices, and to create pending invoices out of failed invoices.</span></span> <span data-ttu-id="1f5a3-159">Diese Ausnahme, die für Kreditorenrechnungen verarbeitet wird, ist nun Teil von Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-159">This exception processing for vendor invoices is now part of Finance and Operations.</span></span>
 
-### <a name="exceptions-list-page"></a>Seite Ausnahmeliste
+### <a name="exceptions-list-page"></a><span data-ttu-id="1f5a3-160">Seite Ausnahmeliste</span><span class="sxs-lookup"><span data-stu-id="1f5a3-160">Exceptions list page</span></span>
 
-Die Listenseite für neue Rechnungsausnahmen ist unter **Kreditoren** > **Rechnungen** > **Importfehler** > **Kreditorenrechnungen, die nicht importiert werden können** verfügbar. Diese Seite enthält alle Kreditorenrechnungsheaderdatensätze von der Stagingtabelle der Kreditorenrechnungskopfdatenentität angezeigt. Beachten Sie, dass Sie die gleichen Datensätze vom **Datenverwaltung** Arbeitsbereich angezeigt werden können, in dem Sie die gleichen Aktivitäten auch ausgeführt werden können, die in der Ausnahmebehandlungsfunktion bereitgestellt werden. Allerdings wird die Benutzeroberfläche, die die Ausnahmebehandlungsfunktion bereitstellt, für einen funktionalen Benutzer optimiert.
+<span data-ttu-id="1f5a3-161">Die Listenseite für neue Rechnungsausnahmen ist unter **Kreditoren** > **Rechnungen** > **Importfehler** > **Kreditorenrechnungen, die nicht importiert werden können** verfügbar.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-161">The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**.</span></span> <span data-ttu-id="1f5a3-162">Diese Seite enthält alle Kreditorenrechnungsheaderdatensätze von der Stagingtabelle der Kreditorenrechnungskopfdatenentität angezeigt.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-162">This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity.</span></span> <span data-ttu-id="1f5a3-163">Beachten Sie, dass Sie die gleichen Datensätze vom **Datenverwaltung** Arbeitsbereich angezeigt werden können, in dem Sie die gleichen Aktivitäten auch ausgeführt werden können, die in der Ausnahmebehandlungsfunktion bereitgestellt werden.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-163">Note that you can view the same records from the **Data management** workspace, where you can also perform the same actions that are provided in the exception handling feature.</span></span> <span data-ttu-id="1f5a3-164">Allerdings wird die Benutzeroberfläche, die die Ausnahmebehandlungsfunktion bereitstellt, für einen funktionalen Benutzer optimiert.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-164">However, the UI that the exception handling feature provides is optimized for a functional user.</span></span>
 
 ![Seite Ausnahmeliste](media/vendor_invoice_automation_02.png)
 
-Diese Listenseite enthält die folgenden Felder, die über Feed: eintreffen:
+<span data-ttu-id="1f5a3-166">Diese Listenseite enthält die folgenden Felder, die über Feed: eintreffen:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-166">This list page includes the following fields that come in via the feed:</span></span>
 
-+ **Unternehmen** – Das Unternehmen, von dem die Rechnung generiert wird.
-+ **Fehlermeldung** – Die Fehlermeldung, die das Datenverwaltungsframework ausgibt, um zu erläutern, warum die Rechnung nicht erstellt werden kann
-+ **Nummer** – Die Rechnungsnummer
-+ **Rechnungskonto**
-+ **Name** –Der Name des Kreditors
-+ **Kreditorenkonto**
-+ **Bestellungserfassung** – Die Nummer der Bestellungserfassung für die aktuelle Rechnung
-+ **Buchungsdatum**
-+ **Rechnungsdatum**
-+ **Rechnungsbeschreibung**
-+ **Währung**
-+ **Protokoll**
-+ **Positionsreferenz** – Die Kennung, die vom externen System stammt
++ <span data-ttu-id="1f5a3-167">**Unternehmen** – Das Unternehmen, von dem die Rechnung generiert wird.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-167">**Company** – The company that the invoice belongs to</span></span>
++ <span data-ttu-id="1f5a3-168">**Fehlermeldung** – Die Fehlermeldung, die das Datenverwaltungsframework ausgibt, um zu erläutern, warum die Rechnung nicht erstellt werden kann</span><span class="sxs-lookup"><span data-stu-id="1f5a3-168">**Error message** – The error message that the data management framework issues to explain why the invoice could not be created</span></span>
++ <span data-ttu-id="1f5a3-169">**Nummer** – Die Rechnungsnummer</span><span class="sxs-lookup"><span data-stu-id="1f5a3-169">**Number** – The invoice number</span></span>
++ <span data-ttu-id="1f5a3-170">**Rechnungskonto**</span><span class="sxs-lookup"><span data-stu-id="1f5a3-170">**Invoice account**</span></span>
++ <span data-ttu-id="1f5a3-171">**Name** –Der Name des Kreditors</span><span class="sxs-lookup"><span data-stu-id="1f5a3-171">**Name** – The vendor’s name</span></span>
++ <span data-ttu-id="1f5a3-172">**Kreditorenkonto**</span><span class="sxs-lookup"><span data-stu-id="1f5a3-172">**Vendor account**</span></span>
++ <span data-ttu-id="1f5a3-173">**Bestellungserfassung** – Die Nummer der Bestellungserfassung für die aktuelle Rechnung</span><span class="sxs-lookup"><span data-stu-id="1f5a3-173">**Purchase order** – The purchase order (PO) number for the invoice</span></span>
++ <span data-ttu-id="1f5a3-174">**Buchungsdatum**</span><span class="sxs-lookup"><span data-stu-id="1f5a3-174">**Posting date**</span></span>
++ <span data-ttu-id="1f5a3-175">**Rechnungsdatum**</span><span class="sxs-lookup"><span data-stu-id="1f5a3-175">**Invoice date**</span></span>
++ <span data-ttu-id="1f5a3-176">**Rechnungsbeschreibung**</span><span class="sxs-lookup"><span data-stu-id="1f5a3-176">**Invoice description**</span></span>
++ <span data-ttu-id="1f5a3-177">**Währung**</span><span class="sxs-lookup"><span data-stu-id="1f5a3-177">**Currency**</span></span>
++ <span data-ttu-id="1f5a3-178">**Protokoll**</span><span class="sxs-lookup"><span data-stu-id="1f5a3-178">**Log**</span></span>
++ <span data-ttu-id="1f5a3-179">**Positionsreferenz** – Die Kennung, die vom externen System stammt</span><span class="sxs-lookup"><span data-stu-id="1f5a3-179">**Line reference** – The identifier that comes from the external system</span></span>
 
     > [!NOTE]
-    > Die Positionsreferenz ist nicht Rechnungskennung
+    > <span data-ttu-id="1f5a3-180">Die Positionsreferenz ist nicht Rechnungskennung</span><span class="sxs-lookup"><span data-stu-id="1f5a3-180">The line reference isn’t the invoice ID.</span></span>
 
-Diese Listenseite besitzt ebenfalls ein Vorschaufenster, das Sie wie folgt verwendet werden können:
+<span data-ttu-id="1f5a3-181">Diese Listenseite besitzt ebenfalls ein Vorschaufenster, das Sie wie folgt verwendet werden können:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-181">This list page also has a preview pane that you can used in the following ways:</span></span>
 
-+ Hier werden alle geladenen Fehlermeldung angezeigt, um die Spalte **Fehlermeldung** im Raster nicht erweitern zu müssen.
-+ Hier wird die gesamte Liste der Anlagen für die Rechnung an, sofern vorhanden kamen Anlagen mit der Rechnung.
++ <span data-ttu-id="1f5a3-182">Hier werden alle geladenen Fehlermeldung angezeigt, um die Spalte **Fehlermeldung** im Raster nicht erweitern zu müssen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-182">View the whole error message, so that you don’t have to expand the **Error message** column in the grid.</span></span>
++ <span data-ttu-id="1f5a3-183">Hier wird die gesamte Liste der Anlagen für die Rechnung an, sofern vorhanden kamen Anlagen mit der Rechnung.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-183">View the whole list of attachments for the invoice, if any attachments came with the invoice.</span></span>
 
-Die Listenseite unterstützt die folgenden Aktivitäten:
+<span data-ttu-id="1f5a3-184">Die Listenseite unterstützt die folgenden Aktivitäten:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-184">The list page supports the following actions:</span></span>
 
-+ **Bearbeiten** – Öffnet den Ausnahmedatensatz im Bearbeitungsmodus, damit die Probleme behoben werden können.
-+ **Optionen** – Sie greifen auf die Standardoptionen zu, die auf Listenseiten verfügbar sind. Sie können die Option **Zum Arbeitsbereich hinzufügen** auf die Ausnahmelistenseite in Ihrem Arbeitsbereich als Liste oder Kachel hinzufügen.
++ <span data-ttu-id="1f5a3-185">**Bearbeiten** – Öffnet den Ausnahmedatensatz im Bearbeitungsmodus, damit die Probleme behoben werden können.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-185">**Edit** – Open the exception record in edit mode, so that you can fix the issues.</span></span>
++ <span data-ttu-id="1f5a3-186">**Optionen** – Sie greifen auf die Standardoptionen zu, die auf Listenseiten verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-186">**Options** – Access the standard options that are available on list pages.</span></span> <span data-ttu-id="1f5a3-187">Sie können die Option **Zum Arbeitsbereich hinzufügen** auf die Ausnahmelistenseite in Ihrem Arbeitsbereich als Liste oder Kachel hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-187">You can use the **Add to workspace** option to pin the exceptions list page to your workspace as a list or tile.</span></span>
 
-### <a name="exception-details-page"></a>Ausnahmedetail-Seite
+### <a name="exception-details-page"></a><span data-ttu-id="1f5a3-188">Ausnahmedetail-Seite</span><span class="sxs-lookup"><span data-stu-id="1f5a3-188">Exception details page</span></span>
 
-Wenn Sie den Bearbeitungsmodus starten, wird die Ausnahmedetailseite für die Rechnung mit Problemen angezeigt. Wenn es Anlagen gibt, werden die Rechnung und der Standardanhang nebeneinander in der Rechnung auf der Seite mit den Ausnahmedetails angezeigt
+<span data-ttu-id="1f5a3-189">Wenn Sie den Bearbeitungsmodus starten, wird die Ausnahmedetailseite für die Rechnung mit Problemen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-189">When you start edit mode, the exception details page for the invoice that has issues appears.</span></span> <span data-ttu-id="1f5a3-190">Wenn es Anlagen gibt, werden die Rechnung und der Standardanhang nebeneinander in der Rechnung auf der Seite mit den Ausnahmedetails angezeigt</span><span class="sxs-lookup"><span data-stu-id="1f5a3-190">If there are any attachments, the invoice and the default attachment appear side by side on the exception details page.</span></span>
 
 ![Ausnahmedetail-Seite](media/vendor_invoice_automation_03.png)
 
-In der vorherigen Abbildung hat keine Positionen für den Kreditorenrechnungskopf, der hereinkam. Daher ist dieser Bereich leer.
+<span data-ttu-id="1f5a3-192">In der vorherigen Abbildung hat keine Positionen für den Kreditorenrechnungskopf, der hereinkam.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-192">In the preceding illustration, there weren’t any lines for the vendor invoice header that came in.</span></span> <span data-ttu-id="1f5a3-193">Daher ist dieser Bereich leer.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-193">Therefore, the lines section is empty.</span></span>
 
-Die Ausnahmedetailseite unterstützt den folgenden Arbeitsgang:
+<span data-ttu-id="1f5a3-194">Die Ausnahmedetailseite unterstützt den folgenden Arbeitsgang:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-194">The exception details page supports the following operation:</span></span>
 
-+ **Pendente Rechnung erstellen** – Wenn Sie das Problem auf der Rechnung als Teil der Ausnahme Verarbeitungseinstellungen korrigiert haben, können Sie darauf klicken, um ausstehende Rechnungen zu erstellen. Die Erstellung der ausstehenden Rechnungen erfolgt im Hintergrund (als asynchroner Vorgang).
++ <span data-ttu-id="1f5a3-195">**Pendente Rechnung erstellen** – Wenn Sie das Problem auf der Rechnung als Teil der Ausnahme Verarbeitungseinstellungen korrigiert haben, können Sie darauf klicken, um ausstehende Rechnungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-195">**Create pending invoice** – After you’ve fixed the issues on the invoice as part of exception processing, you can click this button to create the pending invoice.</span></span> <span data-ttu-id="1f5a3-196">Die Erstellung der ausstehenden Rechnungen erfolgt im Hintergrund (als asynchroner Vorgang).</span><span class="sxs-lookup"><span data-stu-id="1f5a3-196">The creation of pending invoices occurs in the background (as an asynchronous operation).</span></span>
 
-### <a name="shared-service-vs-organization-based-exception-processing"></a>Freigegebener Service für das Organisation-basierte Ausnahmeverarbeiten
+### <a name="shared-service-vs-organization-based-exception-processing"></a><span data-ttu-id="1f5a3-197">Freigegebener Service für das Organisation-basierte Ausnahmeverarbeiten</span><span class="sxs-lookup"><span data-stu-id="1f5a3-197">Shared service vs. organization-based exception processing</span></span>
 
-Die Ausnahmelistenseite unterstützt die Standardsicherheitskonstrukte, die der Verknüpfung **Datenverwaltung** die Verarbeitung von Stagingdatensätzen unterstützt. Der Rechnungsimporteinzelvorgang kann auf folgende Weisen geschützt werden:
+<span data-ttu-id="1f5a3-198">Die Ausnahmelistenseite unterstützt die Standardsicherheitskonstrukte, die der Verknüpfung **Datenverwaltung** die Verarbeitung von Stagingdatensätzen unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-198">The exceptions list page supports the standard security constructs that the **Data management** workspace supports for the processing of staging records.</span></span> <span data-ttu-id="1f5a3-199">Der Rechnungsimporteinzelvorgang kann auf folgende Weisen geschützt werden:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-199">The invoice import job can be secured in the following ways:</span></span>
 
-+ Nach Benutzerrolle
-+ Nach Benutzer
-+ Nach juristischer Person
++ <span data-ttu-id="1f5a3-200">Nach Benutzerrolle</span><span class="sxs-lookup"><span data-stu-id="1f5a3-200">By user role</span></span>
++ <span data-ttu-id="1f5a3-201">Nach Benutzer</span><span class="sxs-lookup"><span data-stu-id="1f5a3-201">By user</span></span>
++ <span data-ttu-id="1f5a3-202">Nach juristischer Person</span><span class="sxs-lookup"><span data-stu-id="1f5a3-202">By legal entity</span></span>
 
 ![Importieren Sie den Einzelvorgang, der von der Benutzerrolle und bei der juristischen Person gesichert wird](media/vendor_invoice_automation_04.png)
 
-Wenn die Sicherheit für den Rechnungsimporteinzelvorgang konfiguriert wird, ehrt die Ausnahmelistenseite diese Einstellungen. Benutzer sind, nur die Rechnungsausnahmedatensätze anzuzeigen, die Ihnen diese Einstellung können, um festzustellen.
+<span data-ttu-id="1f5a3-204">Wenn die Sicherheit für den Rechnungsimporteinzelvorgang konfiguriert wird, ehrt die Ausnahmelistenseite diese Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-204">If security is configured for the invoice import job, the exceptions list page honors those settings.</span></span> <span data-ttu-id="1f5a3-205">Benutzer sind, nur die Rechnungsausnahmedatensätze anzuzeigen, die Ihnen diese Einstellung können, um festzustellen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-205">Users will be able to see only the invoice exception records that this setup allows them to see.</span></span>
 
-Zum Beispiel hat Contoso beschlossen, die Rechnungsausnahmen nach juristischer Person zu verarbeiten. Daher wird die Sicherheit auf dem Rechnungsimporteinzelvorgang konfiguriert, dass ein Benutzer in juristischen Person A nur Rechnungsausnahmen in juristischen Person A anzeigen kann, während ein Benutzer in der juristischen Person B nur Rechnungsausnahmen in der juristischen Person B anzeigen kann. Diese Einrichtung ermöglicht Aufgabentrennung für die Verwaltung von Rechnungsausnahmen.
+<span data-ttu-id="1f5a3-206">Zum Beispiel hat Contoso beschlossen, die Rechnungsausnahmen nach juristischer Person zu verarbeiten.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-206">For example, Contoso has decided to process invoice exceptions by legal entity.</span></span> <span data-ttu-id="1f5a3-207">Daher wird die Sicherheit auf dem Rechnungsimporteinzelvorgang konfiguriert, dass ein Benutzer in juristischen Person A nur Rechnungsausnahmen in juristischen Person A anzeigen kann, während ein Benutzer in der juristischen Person B nur Rechnungsausnahmen in der juristischen Person B anzeigen kann. Diese Einrichtung ermöglicht Aufgabentrennung für die Verwaltung von Rechnungsausnahmen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-207">Therefore, security is configured on the invoice import job in such a way that a user in legal entity A can see only invoice exceptions in legal entity A, whereas a user in legal entity B can see only invoice exceptions in legal entity B. This setup enables segregation of duties for the management of invoice exceptions.</span></span>
 
-Contoso kann sich auch entscheiden, keine Sicherheit zu erzwingen, sodass die gleichen Benutzer Rechnungsausnahmen für alle juristischen Personen bearbeiten können. Diese Einrichtung ermöglicht ein freigegebenes Service-Szenario für die Verwaltung von Rechnungsausnahmen.
+<span data-ttu-id="1f5a3-208">Contoso kann sich auch entscheiden, keine Sicherheit zu erzwingen, sodass die gleichen Benutzer Rechnungsausnahmen für alle juristischen Personen bearbeiten können.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-208">Contoso could also decide not to enforce any security, so that the same users can process invoice exceptions for all legal entities.</span></span> <span data-ttu-id="1f5a3-209">Diese Einrichtung ermöglicht ein freigegebenes Service-Szenario für die Verwaltung von Rechnungsausnahmen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-209">This setup enables a shared services scenario for the management of invoice exceptions.</span></span>
 
-## <a name="side-by-side-attachment-viewer"></a>Seite-bei-Seite-Anhangsviewer
+## <a name="side-by-side-attachment-viewer"></a><span data-ttu-id="1f5a3-210">Seite-bei-Seite-Anhangsviewer</span><span class="sxs-lookup"><span data-stu-id="1f5a3-210">Side-by-side attachment viewer</span></span>
 
-Zur einfachen leicht Ermittlung der Zuordnungen und Anzeigen von Kreditorenrechnungen anzeigen, geben die folgenden Seiten eine Überischt über die verwendeten Anhänge.:
+<span data-ttu-id="1f5a3-211">Zur einfachen leicht Ermittlung der Zuordnungen und Anzeigen von Kreditorenrechnungen anzeigen, geben die folgenden Seiten eine Überischt über die verwendeten Anhänge.:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-211">To help you easily view the attachments for vendor invoices, the following pages that are used in the invoicing process now provide an attachment viewer:</span></span>
 
-+ **Ausnahmenbehandlung**
-+ Seite **Ausstehende Kreditorenrechnungen** (ebenfalls verfügbar im Rechnungsprüfungsprozess)
-+ **Rechnungserfassung** (Abfragenseite für gebuchte Rechnungen)
++ <span data-ttu-id="1f5a3-212">**Ausnahmenbehandlung**</span><span class="sxs-lookup"><span data-stu-id="1f5a3-212">**Exception handling**</span></span>
++ <span data-ttu-id="1f5a3-213">Seite **Ausstehende Kreditorenrechnungen** (ebenfalls verfügbar im Rechnungsprüfungsprozess)</span><span class="sxs-lookup"><span data-stu-id="1f5a3-213">**Pending vendor invoices** page (also available in the invoice review process)</span></span>
++ <span data-ttu-id="1f5a3-214">**Rechnungserfassung** (Abfragenseite für gebuchte Rechnungen)</span><span class="sxs-lookup"><span data-stu-id="1f5a3-214">**Invoice journal** inquiry page (for posted invoices)</span></span>
 
-Hierbei gelten die Hauptfunktionen, die der Anhangviewer bereitstellt:
+<span data-ttu-id="1f5a3-215">Hierbei gelten die Hauptfunktionen, die der Anhangviewer bereitstellt:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-215">Here is the main functionality that the attachment viewer provides:</span></span>
 
-+ Hier werden alle Anhangtypen an, die Dokumentverwaltungssupporte (Dateien,Bilder, URLs und Hinweise.)
-+ Hier werden mehrseitige TIFF-Dateien angezeigt.
-+ Mithilfe dieses Formulars können Sie die folgenden Aktionen ausführen:
-  + Bereiche des Bilds markieren.
-  + Bereiche des Bilds sperren.
-  + Fügt Bemerkungen dem Bild hinzu.
-  + Zoomen Sie das Bild.
-  + Schwenken Sie das Bild.
-  + Auschecken von Bausteinen rückgängig machen und Aktivitäten wiederholen.
-  + Passen Sie das Bild für die Größe an.
-
-> [!NOTE]
-> Diese Aktivitäten sind nur für JPEG Bilddateien verfügbar (, TIFF PNG, usw.). Alle Änderungen, die Sie auf einem Bild vornehmen, indem Sie diese Aktivitäten verwenden, werden in der Bilddatei gespeichert. Momentan beinhaltet der Anhangviewer keine Versionen- oder Überwachungsfunktionen.
-
-### <a name="default-attachment"></a>Standardanhang
-
-Wenn eine Kreditorenrechnung mehr als eine Anlage beinhaltet, können Sie eines der Dokumente als der Standardanhang auf der Seite **Anhänge** festlegen. Die Option **Ist Standardanhang** ist eine neue Option, die als Teil dieser Funktion hinzugefügt wurde. Diese Option wird auch in der Kreditorenrechnungsdokument-Anhangdatenentität verfügbar gemacht. Daher kann der Standardanhang nach Integrationen festgelegt werden.
-
-Nur ein Dokument kann als potenzieller Standardanhang festgelegt werden. Nach dem Festlegen eines Dokuments als Standardanhang, wird es automatisch im Anhangviewer angezeigt, wenn die Rechnung geöffnet wird. Nach dem Festlegen eines Dokuments als der Standardanhang, es automatisch im Anhangviewer angezeigt, wenn sich die Rechnung geöffnet wird.
-
-### <a name="showhide-invoice-attachments"></a>Rechnungsanhänge anzeigen/verbergen
-
-Eine neue Schaltfläche, die unter **Ausnahme verarbeiten** **Ausstehende Rechnung** und **Rechnungserfassung** verfügbar ist, mit der Sie den Anhangviewer anzeigen oder ausblenden können.
-
-### <a name="security"></a>Sicherheit
-
-Folgende Aktivitäten im Anhangviewer werden über die rollenbasierte Sicherheit gesteuert:
-
-+ Hervorgehoben
-+ Sperren
-+ Anmerkung
-
-### <a name="pending-vendor-invoices-page"></a>Seite ausstehende Kreditorenrechnungen
-
-Die folgenden Rechte bieten Lese- oder Lese-/Schreibzugriff auf den Anhangviewer für die Aktivität Hervorhebung, Blockierung und Anmerkungen.
-
-+ **Kreditorenrechnungsbild verwalten** – Dies Recht bietet Lese-/und Schreibzugriff.
-+ **Kreditorenrechnungsbild verwalten** – Dieses Recht  bietet nur Leserechte.
-
-Die folgenden Aufgaben schreibgeschützten bieten Zugriff oder und Schreibzugriff auf das Anhangviewer für die Aktivitäten:
-
-+ **Kreditorenrechnungen verwalten** – Das Recht zur Verwaltung von Kreditorenbildrechnungen wird dieser  Aufgabe zugeordnet.
-+ **Kreditorenrechnungen verwalten** – Das Wartungskreditorenrechnungs-Bildrecht wird zu der Aufgabe zugeordnet.
-
-Die folgenden Rollen bieten Lesezugriff oder Lese- und Schreibzugriff auf den Anhangviewer für diese Aktivitäten:
-
-+ **Sachbearbeiter Kreditorenkonten** und **Leiter Kreditorenkonten** – die Wartungskreditorenrechnungsabgabe wird für diese Rollen zugewiesen.
-+ **Sachbearbeiter Kreditorenkonten**, **Leiter Kreditorenkonten**, **Sachbearbeiter für zentralisierte Zahlungen im Modul 'Kreditoren'** und **Sachbearbeiter Kreditorenkontozahlungen** – Die Abfrage für den Kreditorenrechnungsstatus wird diesen Rollen zugewiesen.
-
-### <a name="invoice-exception-details-page"></a>Ausnahmedetail-Seite
-
-Die folgenden Rechte bieten Lese- und oder Lese-/Schreibzugriff auf den Anhangviewer für die Aktivitäten Hervorhebung, Sperrung oder Anmerkungen.
++ <span data-ttu-id="1f5a3-216">Hier werden alle Anhangtypen an, die Dokumentverwaltungssupporte (Dateien,Bilder, URLs und Hinweise.)</span><span class="sxs-lookup"><span data-stu-id="1f5a3-216">View all attachment types that Document management supports (files, images, URLs, and notes).</span></span>
++ <span data-ttu-id="1f5a3-217">Hier werden mehrseitige TIFF-Dateien angezeigt.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-217">View multi-page TIFF files.</span></span>
++ <span data-ttu-id="1f5a3-218">Mithilfe dieses Formulars können Sie die folgenden Aktionen ausführen:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-218">Perform the following actions on image files:</span></span>
+  + <span data-ttu-id="1f5a3-219">Bereiche des Bilds markieren.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-219">Highlight parts of the image.</span></span>
+  + <span data-ttu-id="1f5a3-220">Bereiche des Bilds sperren.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-220">Block parts of the image.</span></span>
+  + <span data-ttu-id="1f5a3-221">Fügt Bemerkungen dem Bild hinzu.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-221">Add annotations to the image.</span></span>
+  + <span data-ttu-id="1f5a3-222">Zoomen Sie das Bild.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-222">Zoom in and out on the image.</span></span>
+  + <span data-ttu-id="1f5a3-223">Schwenken Sie das Bild.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-223">Pan the image.</span></span>
+  + <span data-ttu-id="1f5a3-224">Auschecken von Bausteinen rückgängig machen und Aktivitäten wiederholen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-224">Undo and redo actions.</span></span>
+  + <span data-ttu-id="1f5a3-225">Passen Sie das Bild für die Größe an.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-225">Fit the image to size.</span></span>
 
 > [!NOTE]
-> Die Rollen, die in diesem Abschnitt aufgeführt sind, bilden schreibgeschützten Zugriff auf die Rechnungsbilder im Anhangviewer. Wenn eine Rolle Schreibzugriff auf die Bilder haben muss, können Sie den Schreibzugriff für diese Rolle erteilen, indem Sie die Rechte und Aufgaben, die hier beschrieben werden, verwenden.
+> <span data-ttu-id="1f5a3-226">Diese Aktivitäten sind nur für JPEG Bilddateien verfügbar (, TIFF PNG, usw.).</span><span class="sxs-lookup"><span data-stu-id="1f5a3-226">These actions are available only for image files (JPEG, TIFF, PNG, and so on).</span></span> <span data-ttu-id="1f5a3-227">Alle Änderungen, die Sie auf einem Bild vornehmen, indem Sie diese Aktivitäten verwenden, werden in der Bilddatei gespeichert.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-227">Any changes that you make to an image by using these actions are saved to the image file.</span></span> <span data-ttu-id="1f5a3-228">Momentan beinhaltet der Anhangviewer keine Versionen- oder Überwachungsfunktionen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-228">Currently, the attachment viewer doesn’t include versioning or auditing capabilities.</span></span>
 
-+ **Verwalten von Kreditorenrechnungskopf-Entitätsbildern** – Dieses Recht bietet Lese- und Schreibzugriff auf die Rechnungsbilder im Anhangviewer.
-+ **Kreditorenrechnungskopf-Entitätsbild ansehen** – Dieses Recht bietet nur Lesezugriff auf die Rechnungsbildern im Anhangviewer.
+### <a name="default-attachment"></a><span data-ttu-id="1f5a3-229">Standardanhang</span><span class="sxs-lookup"><span data-stu-id="1f5a3-229">Default attachment</span></span>
 
-Die folgenden schreibgeschützten Aufgaben bieten Zugriff auf den Anhangviewer für die Aktivitäten:
+<span data-ttu-id="1f5a3-230">Wenn eine Kreditorenrechnung mehr als eine Anlage beinhaltet, können Sie eines der Dokumente als der Standardanhang auf der Seite **Anhänge** festlegen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-230">If a vendor invoice has more than one attachment, you can set one of the documents as the default attachment on the **Attachments** page.</span></span> <span data-ttu-id="1f5a3-231">Die Option **Ist Standardanhang** ist eine neue Option, die als Teil dieser Funktion hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-231">The **Is default attachment** option is a new option that was added as part of this feature.</span></span> <span data-ttu-id="1f5a3-232">Diese Option wird auch in der Kreditorenrechnungsdokument-Anhangdatenentität verfügbar gemacht.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-232">This option is also exposed in the Vendor invoice document attachment data entity.</span></span> <span data-ttu-id="1f5a3-233">Daher kann der Standardanhang nach Integrationen festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-233">Therefore, the default attachment can be set through integrations.</span></span>
 
-+ **Kreditorenrechnungen verwalten** – Das Wartungskreditorenrechnungs-Bildrecht wird zu der Aufgabe zugeordnet.
+<span data-ttu-id="1f5a3-234">Nur ein Dokument kann als potenzieller Standardanhang festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-234">Only one document can be set as the default attachment.</span></span> <span data-ttu-id="1f5a3-235">Nach dem Festlegen eines Dokuments als Standardanhang, wird es automatisch im Anhangviewer angezeigt, wenn die Rechnung geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-235">After you set a document as the default attachment, it’s automatically shown in the attachment viewer when the invoice is opened.</span></span> <span data-ttu-id="1f5a3-236">Nach dem Festlegen eines Dokuments als der Standardanhang, es automatisch im Anhangviewer angezeigt, wenn sich die Rechnung geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-236">If you don’t set any document as the default attachment, the viewer doesn’t automatically show any attachment when the invoice is opened.</span></span>
 
-Die folgenden schreibgeschützten Aufgaben bieten Zugriff auf den Anhangviewer für die Aktivitäten:
+### <a name="showhide-invoice-attachments"></a><span data-ttu-id="1f5a3-237">Rechnungsanhänge anzeigen/verbergen</span><span class="sxs-lookup"><span data-stu-id="1f5a3-237">Show/hide invoice attachments</span></span>
 
-+ **Sachbearbeiter Kreditorenkonten** und **Leiter Kreditorenkonten** – die Wartungskreditorenrechnungsabgabe wird für diese Rollen zugewiesen.
+<span data-ttu-id="1f5a3-238">Eine neue Schaltfläche, die unter **Ausnahme verarbeiten** **Ausstehende Rechnung** und **Rechnungserfassung** verfügbar ist, mit der Sie den Anhangviewer anzeigen oder ausblenden können.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-238">A new button that is available on the **Exception processing**, **Pending invoice**, and **Invoice journal** inquiry pages lets you show or hide the attachment viewer.</span></span>
 
-Standardmäßig hat die Benutzerrolle, die Bearbeitungsrechte für eine Seite hat, auch die Bearbeitungsrechte für den Anhangviewer für die Aktivitäten Hervorhebung, Sperrung und Anmerkungen. Wenn Szenarien vorhanden sind, für die eine bestimmte Rolle Bearbeitungsrechte auf der Seite aber nicht im Anhangviewer haben soll, kann das entsprechende Recht aus der obigen Liste verwendet werde, um diesen Fall abzudecken.
+### <a name="security"></a><span data-ttu-id="1f5a3-239">Sicherheit</span><span class="sxs-lookup"><span data-stu-id="1f5a3-239">Security</span></span>
+
+<span data-ttu-id="1f5a3-240">Folgende Aktivitäten im Anhangviewer werden über die rollenbasierte Sicherheit gesteuert:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-240">The following actions in the attachment viewer are controlled via role-based security:</span></span>
+
++ <span data-ttu-id="1f5a3-241">Hervorgehoben</span><span class="sxs-lookup"><span data-stu-id="1f5a3-241">Highlighting</span></span>
++ <span data-ttu-id="1f5a3-242">Sperren</span><span class="sxs-lookup"><span data-stu-id="1f5a3-242">Block</span></span>
++ <span data-ttu-id="1f5a3-243">Anmerkung</span><span class="sxs-lookup"><span data-stu-id="1f5a3-243">Annotation</span></span>
+
+### <a name="pending-vendor-invoices-page"></a><span data-ttu-id="1f5a3-244">Seite ausstehende Kreditorenrechnungen</span><span class="sxs-lookup"><span data-stu-id="1f5a3-244">Pending vendor invoices page</span></span>
+
+<span data-ttu-id="1f5a3-245">Die folgenden Rechte bieten Lese- oder Lese-/Schreibzugriff auf den Anhangviewer für die Aktivität Hervorhebung, Blockierung und Anmerkungen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-245">The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions:</span></span>
+
++ <span data-ttu-id="1f5a3-246">**Kreditorenrechnungsbild verwalten** – Dies Recht bietet Lese-/und Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-246">**Maintain vendor invoice image** – This privilege provides read/write access.</span></span>
++ <span data-ttu-id="1f5a3-247">**Kreditorenrechnungsbild verwalten** – Dieses Recht  bietet nur Leserechte.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-247">**View vendor invoice image** – This privilege provides read-only access.</span></span>
+
+<span data-ttu-id="1f5a3-248">Die folgenden Aufgaben schreibgeschützten bieten Zugriff oder und Schreibzugriff auf das Anhangviewer für die Aktivitäten:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-248">The following duties provide read-only access or read/write access to the attachment viewer for those actions:</span></span>
+
++ <span data-ttu-id="1f5a3-249">**Kreditorenrechnungen verwalten** – Das Recht zur Verwaltung von Kreditorenbildrechnungen wird dieser  Aufgabe zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-249">**Maintain vendor invoices** – The Maintain vendor invoice image privilege is assigned to this duty.</span></span>
++ <span data-ttu-id="1f5a3-250">**Kreditorenrechnungen verwalten** – Das Wartungskreditorenrechnungs-Bildrecht wird zu der Aufgabe zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-250">**Inquire into vendor invoice status** – The View vendor invoice image privilege is assigned to this duty.</span></span>
+
+<span data-ttu-id="1f5a3-251">Die folgenden Rollen bieten Lesezugriff oder Lese- und Schreibzugriff auf den Anhangviewer für diese Aktivitäten:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-251">The following roles provide read-only access or read/write access to the attachment viewer for those actions:</span></span>
+
++ <span data-ttu-id="1f5a3-252">**Sachbearbeiter Kreditorenkonten** und **Leiter Kreditorenkonten** – die Wartungskreditorenrechnungsabgabe wird für diese Rollen zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-252">**Accounts payable clerk** and **Accounts payable manager** – The Maintain vendor invoices duty is assigned to these roles.</span></span>
++ <span data-ttu-id="1f5a3-253">**Sachbearbeiter Kreditorenkonten**, **Leiter Kreditorenkonten**, **Sachbearbeiter für zentralisierte Zahlungen im Modul 'Kreditoren'** und **Sachbearbeiter Kreditorenkontozahlungen** – Die Abfrage für den Kreditorenrechnungsstatus wird diesen Rollen zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-253">**Accounts payable clerk**, **Accounts payable manager**, **Accounts payable centralized payments clerk**, and **Accounts payable payments clerk** – The Inquire into vendor invoice status duty is assigned to these roles.</span></span>
+
+### <a name="invoice-exception-details-page"></a><span data-ttu-id="1f5a3-254">Ausnahmedetail-Seite</span><span class="sxs-lookup"><span data-stu-id="1f5a3-254">Invoice exception details page</span></span>
+
+<span data-ttu-id="1f5a3-255">Die folgenden Rechte bieten Lese- und oder Lese-/Schreibzugriff auf den Anhangviewer für die Aktivitäten Hervorhebung, Sperrung oder Anmerkungen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-255">The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1f5a3-256">Die Rollen, die in diesem Abschnitt aufgeführt sind, bilden schreibgeschützten Zugriff auf die Rechnungsbilder im Anhangviewer.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-256">Out of the box, the roles that are mentioned in this section provide read-only access to the invoice images in the attachment viewer.</span></span> <span data-ttu-id="1f5a3-257">Wenn eine Rolle Schreibzugriff auf die Bilder haben muss, können Sie den Schreibzugriff für diese Rolle erteilen, indem Sie die Rechte und Aufgaben, die hier beschrieben werden, verwenden.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-257">If a role must also have write access to the images, you can grant write access to that role by using the privilege and duty that are described here.</span></span>
+
++ <span data-ttu-id="1f5a3-258">**Verwalten von Kreditorenrechnungskopf-Entitätsbildern** – Dieses Recht bietet Lese- und Schreibzugriff auf die Rechnungsbilder im Anhangviewer.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-258">**Maintain vendor invoice header entity image** – This privilege provides read/write access to the invoice images in the attachment viewer.</span></span>
++ <span data-ttu-id="1f5a3-259">**Kreditorenrechnungskopf-Entitätsbild ansehen** – Dieses Recht bietet nur Lesezugriff auf die Rechnungsbildern im Anhangviewer.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-259">**View vendor invoice header entity image** – This privilege provides read-only view to the invoice image in the attachment viewer.</span></span>
+
+<span data-ttu-id="1f5a3-260">Die folgenden schreibgeschützten Aufgaben bieten Zugriff auf den Anhangviewer für die Aktivitäten:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-260">The following duties provide read-only access to the attachment viewer for those actions:</span></span>
+
++ <span data-ttu-id="1f5a3-261">**Kreditorenrechnungen verwalten** – Das Wartungskreditorenrechnungs-Bildrecht wird zu der Aufgabe zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-261">**Maintain vendor invoices** – The Maintain vendor invoice header entity image privilege is assigned to this duty.</span></span>
+
+<span data-ttu-id="1f5a3-262">Die folgenden schreibgeschützten Aufgaben bieten Zugriff auf den Anhangviewer für die Aktivitäten:</span><span class="sxs-lookup"><span data-stu-id="1f5a3-262">The following roles provide read-only access to the attachment viewer for those actions:</span></span>
+
++ <span data-ttu-id="1f5a3-263">**Sachbearbeiter Kreditorenkonten** und **Leiter Kreditorenkonten** – die Wartungskreditorenrechnungsabgabe wird für diese Rollen zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-263">**Accounts payable clerk** and **Accounts payable manager** – The Maintain vendor invoices duty is assigned to these roles.</span></span>
+
+<span data-ttu-id="1f5a3-264">Standardmäßig hat die Benutzerrolle, die Bearbeitungsrechte für eine Seite hat, auch die Bearbeitungsrechte für den Anhangviewer für die Aktivitäten Hervorhebung, Sperrung und Anmerkungen.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-264">By default, if the user role provides edit rights on any page, the user will also have edit rights on the attachments viewer for the highlighting, block, and annotation actions.</span></span> <span data-ttu-id="1f5a3-265">Wenn Szenarien vorhanden sind, für die eine bestimmte Rolle Bearbeitungsrechte auf der Seite aber nicht im Anhangviewer haben soll, kann das entsprechende Recht aus der obigen Liste verwendet werde, um diesen Fall abzudecken.</span><span class="sxs-lookup"><span data-stu-id="1f5a3-265">However, if there are scenarios where a specific role should have edit rights on the page but not on the attachment viewer, the appropriate privileges from the preceding list can be used to satisfy the use case.</span></span>
 

@@ -15,28 +15,28 @@ ms.custom: 265364
 ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d3c6d817424be79b09ccdd89deb7f31599fe9bf5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 13ad43cc77731727525aae1edc4d405c166acbc1
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="single-voucher-and-currency-revaluation-upgrade"></a>Einzelbeleg- und Währungsaufwertungsaktualisierung
+# <a name="single-voucher-and-currency-revaluation-upgrade"></a><span data-ttu-id="f8886-104">Einzelbeleg- und Währungsaufwertungsaktualisierung</span><span class="sxs-lookup"><span data-stu-id="f8886-104">Single voucher and currency revaluation upgrade</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Einige Organisationen erfassen Journale, die einen einzelnen Beleg enthalten, dem mehr als ein Debitor oder Kreditor zugeordnet ist und führen den Prozess der Neubewertung der Fremdwährung für Kreditoren und Debitoren aus. In diesem Abschnitt werden die Schritte beschrieben, denen diese Organisationen folgen sollten, wenn diese ein Upgrade auf Microsoft Dynamics 365 for Operations Version 1611 durchführen.
+<span data-ttu-id="f8886-105">Einige Organisationen erfassen Journale, die einen einzelnen Beleg enthalten, dem mehr als ein Debitor oder Kreditor zugeordnet ist und führen den Prozess der Neubewertung der Fremdwährung für Kreditoren und Debitoren aus.</span><span class="sxs-lookup"><span data-stu-id="f8886-105">Some organizations enter journals that contain a single voucher that has more than one customer or vendor, and they also run the Accounts receivable or Accounts payable foreign currency revaluation process.</span></span> <span data-ttu-id="f8886-106">In diesem Abschnitt werden die Schritte beschrieben, denen diese Organisationen folgen sollten, wenn diese ein Upgrade auf Microsoft Dynamics 365 for Operations Version 1611 durchführen.</span><span class="sxs-lookup"><span data-stu-id="f8886-106">This topic describes the steps that these organizations should follow when they upgrade to Microsoft Dynamics 365 for Operations version 1611.</span></span>
 
-Gehen Sie folgendermaßen vor, wenn Sie ein Upgrade auf Microsoft Dynamics 365 for Operations Version 1611 durchführen.
+<span data-ttu-id="f8886-107">Gehen Sie folgendermaßen vor, wenn Sie ein Upgrade auf Microsoft Dynamics 365 for Operations Version 1611 durchführen.</span><span class="sxs-lookup"><span data-stu-id="f8886-107">Follow these steps when you upgrade to Microsoft Dynamics 365 for Operations version 1611.</span></span>
 
-1.  Bevor Sie ein Upgrade auf Dynamics 365 for Operations durchführen, müssen Sie die Prozesse der Neubewertung der Fremdwährung für Kreditoren- und Debitorenkonten durchführen. Legen Sie das Feld **Methode** auf das **Rechnungsdatum** fest. Eine Neubewertungsbuchung wird erstellt, die die letzte Neubewertung der Fremdwährung rückgängig macht. Daher werden die offenen Buchungen nach ihrer ursprünglichen Buchhaltungswährung bewertet.
-2.  Führen Sie ein Upgrade auf Dynamics 365 for Operations Version 1611 durch.
-3.  Führen Sie den Prozess der Neubewertung der Fremdwährung für die Debitoren- und Kreditorenkonten erneut durch. Setzen Sie diesmal das Feld **Methode** auf **Standard**. Es wird eine neue Neubewertungsbuchung erstellt, die auf dem aktuellen Wechselkurs basiert. Dies Buchung erfasst die unrealisierten Gewinne/Verluste und das korrekte Zusammenfassungssachkonto.
+1.  <span data-ttu-id="f8886-108">Bevor Sie ein Upgrade auf Dynamics 365 for Operations durchführen, müssen Sie die Prozesse der Neubewertung der Fremdwährung für Kreditoren- und Debitorenkonten durchführen.</span><span class="sxs-lookup"><span data-stu-id="f8886-108">Before you upgrade to Dynamics 365 for Operations, run the foreign currency revaluation processes for Accounts receivable and Accounts payable.</span></span> <span data-ttu-id="f8886-109">Legen Sie das Feld **Methode** auf das **Rechnungsdatum** fest.</span><span class="sxs-lookup"><span data-stu-id="f8886-109">Set the **Method** field to **Invoice date**.</span></span> <span data-ttu-id="f8886-110">Eine Neubewertungsbuchung wird erstellt, die die letzte Neubewertung der Fremdwährung rückgängig macht.</span><span class="sxs-lookup"><span data-stu-id="f8886-110">A revaluation transaction is created that reverses the last foreign currency revaluation.</span></span> <span data-ttu-id="f8886-111">Daher werden die offenen Buchungen nach ihrer ursprünglichen Buchhaltungswährung bewertet.</span><span class="sxs-lookup"><span data-stu-id="f8886-111">Therefore, the open transactions are valued at their original accounting currency.</span></span>
+2.  <span data-ttu-id="f8886-112">Führen Sie ein Upgrade auf Dynamics 365 for Operations Version 1611 durch.</span><span class="sxs-lookup"><span data-stu-id="f8886-112">Upgrade to Dynamics 365 for Operations version 1611.</span></span>
+3.  <span data-ttu-id="f8886-113">Führen Sie den Prozess der Neubewertung der Fremdwährung für die Debitoren- und Kreditorenkonten erneut durch.</span><span class="sxs-lookup"><span data-stu-id="f8886-113">Run the Accounts receivable and Accounts payable foreign currency revaluation processes again.</span></span> <span data-ttu-id="f8886-114">Setzen Sie diesmal das Feld **Methode** auf **Standard**.</span><span class="sxs-lookup"><span data-stu-id="f8886-114">This time, set the **Method** field to **Standard**.</span></span> <span data-ttu-id="f8886-115">Es wird eine neue Neubewertungsbuchung erstellt, die auf dem aktuellen Wechselkurs basiert.</span><span class="sxs-lookup"><span data-stu-id="f8886-115">A new revaluation transaction is created that is based on the current exchange rates.</span></span> <span data-ttu-id="f8886-116">Dies Buchung erfasst die unrealisierten Gewinne/Verluste und das korrekte Zusammenfassungssachkonto.</span><span class="sxs-lookup"><span data-stu-id="f8886-116">This transaction records the unrealized gain/loss and the correct summary ledger account.</span></span>
 
 
 

@@ -15,24 +15,24 @@ ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2fbea4f5e86a6bef98be5df3a2b69aac36e371e5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: ccd167b2c90b2602a79dcb1cc8577020a60327b8
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="transportation-management-overview"></a>Übersicht Transportverwaltungsaufgaben
+# <a name="transportation-management-overview"></a><span data-ttu-id="99a92-103">Übersicht Transportverwaltungsaufgaben</span><span class="sxs-lookup"><span data-stu-id="99a92-103">Transportation management overview</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieses Thema enthält eine Übersicht der Transportverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations.
+<span data-ttu-id="99a92-104">Dieses Thema enthält eine Übersicht der Transportverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="99a92-104">This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
-Mit der Transportverwaltung können Sie den Transport Ihres Unternehmens verwalten und Kreditor- und Routing-Lösungen für ein- und ausgehende Aufträge identifizieren. So können Sie beispielsweise die schnellste Route oder den günstigsten Satz für eine Lieferung identifizieren. In der folgenden Tabelle werden die wichtigsten Szenarien für die Nutzung der Transportverwaltung in Microsoft Dynamics 365 for Finance and Operations beschrieben.
+<span data-ttu-id="99a92-105">Mit der Transportverwaltung können Sie den Transport Ihres Unternehmens verwalten und Kreditor- und Routing-Lösungen für ein- und ausgehende Aufträge identifizieren.</span><span class="sxs-lookup"><span data-stu-id="99a92-105">Transportation management lets you use manage your company’s transportation, and also lets you identify vendor and routing solutions for inbound and outbound orders.</span></span> <span data-ttu-id="99a92-106">So können Sie beispielsweise die schnellste Route oder den günstigsten Satz für eine Lieferung identifizieren.</span><span class="sxs-lookup"><span data-stu-id="99a92-106">For example, you can identify the fastest route or the least expensive rate for a shipment.</span></span> <span data-ttu-id="99a92-107">In der folgenden Tabelle werden die wichtigsten Szenarien für die Nutzung der Transportverwaltung in Microsoft Dynamics 365 for Finance and Operations beschrieben.</span><span class="sxs-lookup"><span data-stu-id="99a92-107">The following table describes the main scenarios for using Transportation management in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
 <table>
 <colgroup>
@@ -41,50 +41,50 @@ Mit der Transportverwaltung können Sie den Transport Ihres Unternehmens verwalt
 </colgroup>
 <thead>
 <tr class="header">
-<th>Szenario</th>
-<th>Nutzen der Transportverwaltung</th>
+<th><span data-ttu-id="99a92-108">Szenario</span><span class="sxs-lookup"><span data-stu-id="99a92-108">Scenario</span></span></th>
+<th><span data-ttu-id="99a92-109">Nutzen der Transportverwaltung</span><span class="sxs-lookup"><span data-stu-id="99a92-109">How Transportation management can help</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Nutzung externer Logistikanbieter für Transportaktivitäten.</td>
-<td>Verwenden Sie die Transportverwaltung für den eingehenden und ausgehenden Transport.</td>
+<td><span data-ttu-id="99a92-110">Nutzung externer Logistikanbieter für Transportaktivitäten.</span><span class="sxs-lookup"><span data-stu-id="99a92-110">Use external logistics providers for transportation activities.</span></span></td>
+<td><span data-ttu-id="99a92-111">Verwenden Sie die Transportverwaltung für den eingehenden und ausgehenden Transport.</span><span class="sxs-lookup"><span data-stu-id="99a92-111">Use Transportation management for inbound and/or outbound transportation.</span></span></td>
 </tr>
 <tr class="even">
-<td>Die eigene Flotte des Unternehmens ist für Lieferung/Abholung verfügbar, und Zustellgebühren werden an an Debitoren weitergegeben.</td>
-<td>Für ausgehende Prozesse können Sie die Transportverwaltung verwenden, um die Transportbelastungen festzulegen und sie an Debitoren weiterzuleiten. Allerdings ist der Spediteursrechnung-Abstimmungsprozess nicht erforderlich.</td>
+<td><span data-ttu-id="99a92-112">Die eigene Flotte des Unternehmens ist für Lieferung/Abholung verfügbar, und Zustellgebühren werden an an Debitoren weitergegeben.</span><span class="sxs-lookup"><span data-stu-id="99a92-112">The company's own fleet is available for delivery/pickup, and delivery charges are passed on to customers.</span></span></td>
+<td><span data-ttu-id="99a92-113">Für ausgehende Prozesse können Sie die Transportverwaltung verwenden, um die Transportbelastungen festzulegen und sie an Debitoren weiterzuleiten.</span><span class="sxs-lookup"><span data-stu-id="99a92-113">For the outbound processes, you can use Transportation management to determine the transportation charges and pass them on to customers.</span></span> <span data-ttu-id="99a92-114">Allerdings ist der Spediteursrechnung-Abstimmungsprozess nicht erforderlich.</span><span class="sxs-lookup"><span data-stu-id="99a92-114">However, the carrier invoice reconciliation process isn't required.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Die eigene Flotte des Unternehmens steht für Lieferung/Abholung zur Verfügung, aber Zustellgebühren werden nicht an Debitoren weitergegeben, da Produktpreise den Transport enthalten.</td>
-<td>Viele Transportverwaltungsfunktionen sind nicht erforderlich. Sie können jedoch die Transportverwaltung verwenden, um die Transportsätze zu bestimmen und den Verkaufspreis entsprechend anzupassen.</td>
+<td><span data-ttu-id="99a92-115">Die eigene Flotte des Unternehmens steht für Lieferung/Abholung zur Verfügung, aber Zustellgebühren werden nicht an Debitoren weitergegeben, da Produktpreise den Transport enthalten.</span><span class="sxs-lookup"><span data-stu-id="99a92-115">The company's own fleet is available for delivery/pickup, but delivery charges aren't passed on to customers, because product prices include transportation.</span></span></td>
+<td><span data-ttu-id="99a92-116">Viele Transportverwaltungsfunktionen sind nicht erforderlich.</span><span class="sxs-lookup"><span data-stu-id="99a92-116">A lot of the Transportation management functionality isn't required.</span></span> <span data-ttu-id="99a92-117">Sie können jedoch die Transportverwaltung verwenden, um die Transportsätze zu bestimmen und den Verkaufspreis entsprechend anzupassen.</span><span class="sxs-lookup"><span data-stu-id="99a92-117">However, you can use Transportation management to determine the transportation rates and adjust the sales price accordingly.</span></span></td>
 </tr>
 <tr class="even">
-<td>Logistikdienste werden von einer anderen juristischen Person im gleichen Unternehmen bereitgestellt.</td>
+<td><span data-ttu-id="99a92-118">Logistikdienste werden von einer anderen juristischen Person im gleichen Unternehmen bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="99a92-118">Logistics service is provided by another legal entity in the same company.</span></span></td>
 <td><ul>
-<li>Sie können die Transportverwaltung nutzen, indem Sie die andere juristische Person wie jeden anderen Spediteur behandeln. Sie können die wirtschaftlichen Buchungen zwischen juristischen Personen nicht automatisieren. Daher müssen Sie diese Buchungen manuell behandeln (beispielsweise mithilfe einer Bestellung).</li>
-<li>In der juristischen Person, die die Logistik zur Verfügung stellt, kann die Transportverwaltung verwendet werden, um zu bestimmen Transportsätze festzulegen.</li>
+<li><span data-ttu-id="99a92-119">Sie können die Transportverwaltung nutzen, indem Sie die andere juristische Person wie jeden anderen Spediteur behandeln.</span><span class="sxs-lookup"><span data-stu-id="99a92-119">You can use Transportation management by treating the other legal entity like any other shipping carrier.</span></span> <span data-ttu-id="99a92-120">Sie können die wirtschaftlichen Buchungen zwischen juristischen Personen nicht automatisieren.</span><span class="sxs-lookup"><span data-stu-id="99a92-120">You can't automate the economic transactions between legal entities.</span></span> <span data-ttu-id="99a92-121">Daher müssen Sie diese Buchungen manuell behandeln (beispielsweise mithilfe einer Bestellung).</span><span class="sxs-lookup"><span data-stu-id="99a92-121">Therefore, you must handle these transactions manually (for example, by creating a purchase order).</span></span></li>
+<li><span data-ttu-id="99a92-122">In der juristischen Person, die die Logistik zur Verfügung stellt, kann die Transportverwaltung verwendet werden, um zu bestimmen Transportsätze festzulegen.</span><span class="sxs-lookup"><span data-stu-id="99a92-122">In the legal entity that provides the logistics services, Transportation management can be used to determine transportation rates.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-finance-and-operations"></a>Transport in Finance and Operations planen
-In der Transportverwaltung kann die Transportplanung entweder auf Aufträgen oder auf Lieferungen basieren, die auf Basis dieser Aufträge erstellt werden. Die Lieferungen sind immer irgendwann vorhanden. Sie sind jedoch nicht zur Transportplanung erforderlich. Umlagerungsaufträge sind Teil des ausgehenden Szenarios und können zusammen mit Aufträgen geplant werden. 
+## <a name="planning-transportation-in-finance-and-operations"></a><span data-ttu-id="99a92-123">Transport in Finance and Operations planen</span><span class="sxs-lookup"><span data-stu-id="99a92-123">Planning transportation in Finance and Operations</span></span>
+<span data-ttu-id="99a92-124">In der Transportverwaltung kann die Transportplanung entweder auf Aufträgen oder auf Lieferungen basieren, die auf Basis dieser Aufträge erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="99a92-124">In Transportation management, transportation planning can be based either on orders or on the shipments that are created based on those orders.</span></span> <span data-ttu-id="99a92-125">Die Lieferungen sind immer irgendwann vorhanden. Sie sind jedoch nicht zur Transportplanung erforderlich.</span><span class="sxs-lookup"><span data-stu-id="99a92-125">The shipments always exist at some point in time but aren't required for transportation planning.</span></span> <span data-ttu-id="99a92-126">Umlagerungsaufträge sind Teil des ausgehenden Szenarios und können zusammen mit Aufträgen geplant werden.</span><span class="sxs-lookup"><span data-stu-id="99a92-126">Transfer orders are part of the outbound scenario and can be planned together with sales orders.</span></span> 
 
 ![Auslastungabbildung](./media/Load-drawing1-1024x477.jpg)
 
-## <a name="inbound-transportation"></a>Eingehender Transport
-Wenn Sie Artikel von einem Kreditor zur Lieferung an Ihren Lagerort bestellen, möchten Sie den Transport der Artikel möglicherweise selbst organisieren. Sie können Finance and Operations nutzen, um den Transport und den Empfang einer eingehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung des Transports einer eingehenen Auslastung. 
+## <a name="inbound-transportation"></a><span data-ttu-id="99a92-128">Eingehender Transport</span><span class="sxs-lookup"><span data-stu-id="99a92-128">Inbound transportation</span></span>
+<span data-ttu-id="99a92-129">Wenn Sie Artikel von einem Kreditor zur Lieferung an Ihren Lagerort bestellen, möchten Sie den Transport der Artikel möglicherweise selbst organisieren.</span><span class="sxs-lookup"><span data-stu-id="99a92-129">When you order items from a vendor, and the items must be delivered to your warehouse, you might want to arrange the transport of the items yourself.</span></span> <span data-ttu-id="99a92-130">Sie können Finance and Operations nutzen, um den Transport und den Empfang einer eingehenden Ladung zu planen.</span><span class="sxs-lookup"><span data-stu-id="99a92-130">You can use Finance and Operations to plan the transportation and receipt of the inbound load.</span></span> <span data-ttu-id="99a92-131">Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung des Transports einer eingehenen Auslastung.</span><span class="sxs-lookup"><span data-stu-id="99a92-131">The following illustration shows the business process flow for planning transportation for an inbound load.</span></span> 
 
 ![Geschäftsprozessfluss für den Transport eingehender Auslastungen](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
-## <a name="outbound-transportation"></a>Ausgehender Transport
-Sie können eine ausgehende Ladung planen und verarbeiten, um bestimmte Artikel aus dem Lagerort eines Unternehmens an einen Debitor zu versenden. Sie können Finance and Operations nutzen, um den Transport und den Versand einer azusgehenden Ladung zu planen. Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung und Verarbeitung von ausgehenden Ladungen für den Versand. 
+## <a name="outbound-transportation"></a><span data-ttu-id="99a92-133">Ausgehender Transport</span><span class="sxs-lookup"><span data-stu-id="99a92-133">Outbound transportation</span></span>
+<span data-ttu-id="99a92-134">Sie können eine ausgehende Ladung planen und verarbeiten, um bestimmte Artikel aus dem Lagerort eines Unternehmens an einen Debitor zu versenden.</span><span class="sxs-lookup"><span data-stu-id="99a92-134">You can plan and process an outbound load to ship specific items from a company’s warehouse to a customer.</span></span> <span data-ttu-id="99a92-135">Sie können Finance and Operations nutzen, um den Transport und den Versand einer azusgehenden Ladung zu planen.</span><span class="sxs-lookup"><span data-stu-id="99a92-135">You can use Finance and Operations to plan the transportation and shipping of an outbound load.</span></span> <span data-ttu-id="99a92-136">Die folgende Abbildung zeigt den Geschäftsprozessablauf für die Planung und Verarbeitung von ausgehenden Ladungen für den Versand.</span><span class="sxs-lookup"><span data-stu-id="99a92-136">The following illustration shows the business process flow for planning and processing outbound loads for shipping.</span></span> 
 
 ![Planung und Verarbeitung von ausgehenden Ladungen](./media/Planningandprocessingoutboundloads.jpg)
 
-## <a name="load-building"></a>Ladungserstellung
-Finance and Operations enthält eine Ladungserstellungsstrategie mit dem Namen "Volumenbasierte Ladungserstellungsstrategie". Mit dieser Strategie können Sie die Höchstwerte verwenden, die für Höhe und Gewicht in der Ladungsvorlage angegeben sind, oder die Einstellungen überschreiben, indem sie neuen Werte eingeben. Um diese Strategie zu verwenden, wählen Sie sie im Feld **Ladungserstellungsstrategie** im Inforegister **Einstellungen** auf der Seite **Ladungserstellungsworkbench** aus. Darüber hinaus können Sie eigene Ladungserstellungsstrategien hinzufügen, indem Sie eine neue Klasse in der Entwicklungsumgebung erstellen.
+## <a name="load-building"></a><span data-ttu-id="99a92-138">Ladungserstellung</span><span class="sxs-lookup"><span data-stu-id="99a92-138">Load building</span></span>
+<span data-ttu-id="99a92-139">Finance and Operations enthält eine Ladungserstellungsstrategie mit dem Namen "Volumenbasierte Ladungserstellungsstrategie".</span><span class="sxs-lookup"><span data-stu-id="99a92-139">Finance and Operations provides a load building strategy that is named the Volume-based load building strategy.</span></span> <span data-ttu-id="99a92-140">Mit dieser Strategie können Sie die Höchstwerte verwenden, die für Höhe und Gewicht in der Ladungsvorlage angegeben sind, oder die Einstellungen überschreiben, indem sie neuen Werte eingeben.</span><span class="sxs-lookup"><span data-stu-id="99a92-140">This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values.</span></span> <span data-ttu-id="99a92-141">Um diese Strategie zu verwenden, wählen Sie sie im Feld **Ladungserstellungsstrategie** im Inforegister **Einstellungen** auf der Seite **Ladungserstellungsworkbench** aus.</span><span class="sxs-lookup"><span data-stu-id="99a92-141">To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page.</span></span> <span data-ttu-id="99a92-142">Darüber hinaus können Sie eigene Ladungserstellungsstrategien hinzufügen, indem Sie eine neue Klasse in der Entwicklungsumgebung erstellen.</span><span class="sxs-lookup"><span data-stu-id="99a92-142">In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).</span></span>
 
 
 

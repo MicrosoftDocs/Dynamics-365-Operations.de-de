@@ -16,104 +16,104 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d7c76eab2cca4e15c13dd9f79432b9c6d81071a2
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5dea9d7bfb1bf7b11f6c49cccaab1b73d4e58d16
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angebotsanforderungsangebote eingeben und vergleichen und Verträge vergeben
+# <a name="enter-and-compare-rfq-bids-and-award-contracts"></a><span data-ttu-id="57fe9-103">Angebotsanforderungsangebote eingeben und vergleichen und Verträge vergeben</span><span class="sxs-lookup"><span data-stu-id="57fe9-103">Enter and compare RFQ bids and award contracts</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt Ihnen an, wie Sie Antworten auf eine Angebotsanforderung eingeben, Angebote bewerten und vergleichen und dann einem der Händler das Angebot erteilen. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Bevor Sie beginnen, müssen Sie eine Angebotsanforderung mit zwei Positionen haben, die mindestens zwei Händlern gesendet wurde. Sie können die Prozedur "Erstellen einer Angebotsanforderung" als Voraussetzung ausführen, um diese zu erstellen. Sie müssen Bewertungskriterien eingerichtet haben, bevor Sie diese Prozedur ausführen können.
+<span data-ttu-id="57fe9-104">Diese Prozedur zeigt Ihnen an, wie Sie Antworten auf eine Angebotsanforderung eingeben, Angebote bewerten und vergleichen und dann einem der Händler das Angebot erteilen.</span><span class="sxs-lookup"><span data-stu-id="57fe9-104">This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors.</span></span> <span data-ttu-id="57fe9-105">Sie können diese Prozedur im Demodatunternehmen USMF verwenden.</span><span class="sxs-lookup"><span data-stu-id="57fe9-105">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="57fe9-106">Bevor Sie beginnen, müssen Sie eine Angebotsanforderung mit zwei Positionen haben, die mindestens zwei Händlern gesendet wurde.</span><span class="sxs-lookup"><span data-stu-id="57fe9-106">Before you start, you must have an RFQ with two lines that has been sent to at least two vendors.</span></span> <span data-ttu-id="57fe9-107">Sie können die Prozedur "Erstellen einer Angebotsanforderung" als Voraussetzung ausführen, um diese zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="57fe9-107">You can run the "Create a request for quotation" procedure as a prerequisite to create this.</span></span> <span data-ttu-id="57fe9-108">Sie müssen Bewertungskriterien eingerichtet haben, bevor Sie diese Prozedur ausführen können.</span><span class="sxs-lookup"><span data-stu-id="57fe9-108">You need to have set up scoring criteria before you can run this procedure.</span></span>
 
 
-## <a name="enter-a-reply-from-a-vendor"></a>Geben Sie eine Antwort von einem Händler ein
-1. Wechseln Sie zu "Beschaffung" > "Angebotsanforderungen" > "Alle Angebotsanforderungen".
-2. Wählen Sie eine Angebotsanforderung aus, die den Status " Versendet" hat und klicken Sie auf den Link auf der "Angebotsanforderungs-Anfragenummer".
-    * Die Angebotsanforderung sollte zu mindestens 2 Händlern gesendet worden sein.  
-3. Klicken Sie auf "Kopfzeile", um zur Liste von Händlern zu wechseln.
-4. Wählen Sie den Händler aus, für den Sie eine Antwort auf die Angebotsanforderung eingeben möchten.
-5. Klicken Sie auf "Antwort eingeben".
-6. Klicken Sie im Aktivitätsbereich auf "Antworten".
-7. Klicken Sie auf "Daten in Antwort kopieren".
-    * Diese Aktivität kopiert ausgewählte Daten beispielsweise die Menge aus der Angebotsanforderungsanfrage in die Antwort auf die Angebotsanforderung. Alternativ können Sie diese Aktivität überspringen und alle Antwortfelder manuell ausfüllen, wenn Sie die Antwort bearbeiten.  
-8. Klicken Sie auf "Bearbeiten".
-9. Geben Sie im Feld "Preis je Einheit" eine Zahl ein.
-10. Wählen Sie die andere Angebotsposition aus.
-11. Geben Sie im Feld "Preis je Einheit" eine Zahl ein.
+## <a name="enter-a-reply-from-a-vendor"></a><span data-ttu-id="57fe9-109">Geben Sie eine Antwort von einem Händler ein</span><span class="sxs-lookup"><span data-stu-id="57fe9-109">Enter a reply from a vendor</span></span>
+1. <span data-ttu-id="57fe9-110">Wechseln Sie zu "Beschaffung" > "Angebotsanforderungen" > "Alle Angebotsanforderungen".</span><span class="sxs-lookup"><span data-stu-id="57fe9-110">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
+2. <span data-ttu-id="57fe9-111">Wählen Sie eine Angebotsanforderung aus, die den Status " Versendet" hat und klicken Sie auf den Link auf der "Angebotsanforderungs-Anfragenummer".</span><span class="sxs-lookup"><span data-stu-id="57fe9-111">Select an RFQ that has a status of Sent and click the link on the Request for quotation case number.</span></span>
+    * <span data-ttu-id="57fe9-112">Die Angebotsanforderung sollte zu mindestens 2 Händlern gesendet worden sein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-112">The RFQ should have been sent to at least 2 vendors.</span></span>  
+3. <span data-ttu-id="57fe9-113">Klicken Sie auf "Kopfzeile", um zur Liste von Händlern zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="57fe9-113">Click Header to go to the list of vendors.</span></span>
+4. <span data-ttu-id="57fe9-114">Wählen Sie den Händler aus, für den Sie eine Antwort auf die Angebotsanforderung eingeben möchten.</span><span class="sxs-lookup"><span data-stu-id="57fe9-114">Select the vendor for whom you want to enter a response on the RFQ.</span></span>
+5. <span data-ttu-id="57fe9-115">Klicken Sie auf "Antwort eingeben".</span><span class="sxs-lookup"><span data-stu-id="57fe9-115">Click Enter reply.</span></span>
+6. <span data-ttu-id="57fe9-116">Klicken Sie im Aktivitätsbereich auf "Antworten".</span><span class="sxs-lookup"><span data-stu-id="57fe9-116">On the Action Pane, click Reply.</span></span>
+7. <span data-ttu-id="57fe9-117">Klicken Sie auf "Daten in Antwort kopieren".</span><span class="sxs-lookup"><span data-stu-id="57fe9-117">Click Copy data to reply.</span></span>
+    * <span data-ttu-id="57fe9-118">Diese Aktivität kopiert ausgewählte Daten beispielsweise die Menge aus der Angebotsanforderungsanfrage in die Antwort auf die Angebotsanforderung.</span><span class="sxs-lookup"><span data-stu-id="57fe9-118">This action will copy selected data, for example, the quantity from the RFQ case to the RFQ reply.</span></span> <span data-ttu-id="57fe9-119">Alternativ können Sie diese Aktivität überspringen und alle Antwortfelder manuell ausfüllen, wenn Sie die Antwort bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="57fe9-119">Alternatively you can skip this action and fill in all the response fields manually when you edit the reply.</span></span>  
+8. <span data-ttu-id="57fe9-120">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="57fe9-120">Click Edit.</span></span>
+9. <span data-ttu-id="57fe9-121">Geben Sie im Feld "Preis je Einheit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-121">In the Unit price field, enter a number.</span></span>
+10. <span data-ttu-id="57fe9-122">Wählen Sie die andere Angebotsposition aus.</span><span class="sxs-lookup"><span data-stu-id="57fe9-122">Choose the other quotation line.</span></span>
+11. <span data-ttu-id="57fe9-123">Geben Sie im Feld "Preis je Einheit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-123">In the Unit price field, enter a number.</span></span>
 
-## <a name="score-the-bid"></a>Bewerten Sie das Angebot
-1. Klicken Sie auf "Kopfzeile", um zur Bewertung des Angebots zu wechseln.
-2. Erweitern Sie den Abschnitt "Angebotsbewertung".
-3. Geben Sie im Feld "Bewertung" eine Zahl für eines der Bewertungskriterien ein.
-    * Wenn Sie auf einen der Bewertungskriterien zeigen, zeigt eine QuickInfo den Bereich an, innerhalb dem Sie bewerten müssen. In dieser Demo können Sie eine Zahl zwischen 1 und 5 jedem beliebigen der Kriterien hinzufügen.  
-4. Wählen Sie ein anderes Bewertungskriterium aus.
-5. Geben Sie im Feld "Bewertung" eine Zahl ein.
-6. Erweitern Sie den Abschnitt "Fragebögen".
-    * Wenn die Angebotsanforderungsanfrage einen Fragebogen hat, der an die Händler gesendet wurde, können Sie deren Antworten im Bereich "Fragebogen" eingeben.  
-7. Schließen Sie die Seite.
+## <a name="score-the-bid"></a><span data-ttu-id="57fe9-124">Bewerten Sie das Angebot</span><span class="sxs-lookup"><span data-stu-id="57fe9-124">Score the bid</span></span>
+1. <span data-ttu-id="57fe9-125">Klicken Sie auf "Kopfzeile", um zur Bewertung des Angebots zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="57fe9-125">Click Header to go to the scoring of the bid.</span></span>
+2. <span data-ttu-id="57fe9-126">Erweitern Sie den Abschnitt "Angebotsbewertung".</span><span class="sxs-lookup"><span data-stu-id="57fe9-126">Expand the Bid scoring section.</span></span>
+3. <span data-ttu-id="57fe9-127">Geben Sie im Feld "Bewertung" eine Zahl für eines der Bewertungskriterien ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-127">In the Score field, enter a number for one of the scoring criteria.</span></span>
+    * <span data-ttu-id="57fe9-128">Wenn Sie auf einen der Bewertungskriterien zeigen, zeigt eine QuickInfo den Bereich an, innerhalb dem Sie bewerten müssen.</span><span class="sxs-lookup"><span data-stu-id="57fe9-128">If you hover over one of the scoring criteria a tooltip shows the range that you have to score within.</span></span> <span data-ttu-id="57fe9-129">In dieser Demo können Sie eine Zahl zwischen 1 und 5 jedem beliebigen der Kriterien hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="57fe9-129">In this demo you can add a number between 1 and 5 to any of the criteria.</span></span>  
+4. <span data-ttu-id="57fe9-130">Wählen Sie ein anderes Bewertungskriterium aus.</span><span class="sxs-lookup"><span data-stu-id="57fe9-130">Select another scoring criterion.</span></span>
+5. <span data-ttu-id="57fe9-131">Geben Sie im Feld "Bewertung" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-131">In the Score field, enter a number.</span></span>
+6. <span data-ttu-id="57fe9-132">Erweitern Sie den Abschnitt "Fragebögen".</span><span class="sxs-lookup"><span data-stu-id="57fe9-132">Expand the Questionnaires section.</span></span>
+    * <span data-ttu-id="57fe9-133">Wenn die Angebotsanforderungsanfrage einen Fragebogen hat, der an die Händler gesendet wurde, können Sie deren Antworten im Bereich "Fragebogen" eingeben.</span><span class="sxs-lookup"><span data-stu-id="57fe9-133">If the RFQ case has a questionnaire that was sent to the vendors, you can enter their responses in the questionnaire section.</span></span>  
+7. <span data-ttu-id="57fe9-134">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="57fe9-134">Close the page.</span></span>
 
-## <a name="enter-a-reply-for-another-vendor"></a>Geben Sie eine Antwort für einen anderen Händler ein
-1. Wählen Sie den nächsten Händler aus, indem Sie den Händler deaktivieren, für den Sie soeben die Antwort eingegeben haben, und wählen Sie dann die Zeile für den nächsten Händler aus.
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Klicken Sie auf "Antwort eingeben".
-4. Klicken Sie auf "Daten in Antwort kopieren".
-5. Klicken Sie auf "Bearbeiten".
-6. Geben Sie im Feld "Preis je Einheit" eine Zahl ein.
-7. Wählen Sie die andere Angebotsposition aus.
-8. Geben Sie im Feld "Preis je Einheit" eine Zahl ein.
+## <a name="enter-a-reply-for-another-vendor"></a><span data-ttu-id="57fe9-135">Geben Sie eine Antwort für einen anderen Händler ein</span><span class="sxs-lookup"><span data-stu-id="57fe9-135">Enter a reply for another vendor</span></span>
+1. <span data-ttu-id="57fe9-136">Wählen Sie den nächsten Händler aus, indem Sie den Händler deaktivieren, für den Sie soeben die Antwort eingegeben haben, und wählen Sie dann die Zeile für den nächsten Händler aus.</span><span class="sxs-lookup"><span data-stu-id="57fe9-136">Select the next vendor by clearing the vendor you have just entered the reply for and then selecting the row for the next vendor.</span></span>
+2. <span data-ttu-id="57fe9-137">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="57fe9-137">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="57fe9-138">Klicken Sie auf "Antwort eingeben".</span><span class="sxs-lookup"><span data-stu-id="57fe9-138">Click Enter reply.</span></span>
+4. <span data-ttu-id="57fe9-139">Klicken Sie auf "Daten in Antwort kopieren".</span><span class="sxs-lookup"><span data-stu-id="57fe9-139">Click Copy data to reply.</span></span>
+5. <span data-ttu-id="57fe9-140">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="57fe9-140">Click Edit.</span></span>
+6. <span data-ttu-id="57fe9-141">Geben Sie im Feld "Preis je Einheit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-141">In the Unit price field, enter a number.</span></span>
+7. <span data-ttu-id="57fe9-142">Wählen Sie die andere Angebotsposition aus.</span><span class="sxs-lookup"><span data-stu-id="57fe9-142">Choose the other quotation line.</span></span>
+8. <span data-ttu-id="57fe9-143">Geben Sie im Feld "Preis je Einheit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-143">In the Unit price field, enter a number.</span></span>
 
-## <a name="score-the-second-bid"></a>Bewerten Sie das zweite Angebot
-1. Klicken Sie auf "Kopfzeile", um zur Bewertung des Angebots zu wechseln.
-2. Geben Sie im Feld "Bewertung" eine Zahl ein.
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-4. Geben Sie im Feld "Bewertung" eine Zahl ein.
+## <a name="score-the-second-bid"></a><span data-ttu-id="57fe9-144">Bewerten Sie das zweite Angebot</span><span class="sxs-lookup"><span data-stu-id="57fe9-144">Score the second bid</span></span>
+1. <span data-ttu-id="57fe9-145">Klicken Sie auf "Kopfzeile", um zur Bewertung des Angebots zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="57fe9-145">Click Header to go to scoring of the bid.</span></span>
+2. <span data-ttu-id="57fe9-146">Geben Sie im Feld "Bewertung" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-146">In the Score field, enter a number.</span></span>
+3. <span data-ttu-id="57fe9-147">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="57fe9-147">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="57fe9-148">Geben Sie im Feld "Bewertung" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-148">In the Score field, enter a number.</span></span>
 
-## <a name="compare-the-replies"></a>Vergleichen Sie die Angebote
-1. Klicken Sie im Aktivitätsbereich auf "Allgemein".
-2. Klicken Sie auf "Antworten vergleichen".
-3. Geben Sie im Feld "Rang" eine Zahl ein.
-    * Auf dieser Seite werden die Angebote mit dem Kopf und den Positionen angezeigt sowie die Gesamtbewertung auf Kopfzeilenebene. Sie können die Positionen vergleichen, indem Sie im Raster sortieren, damit vergleichbare Positionen nebeneinander sind. Die Informationen enthalten außerdem: Menge: Die vom Händler angegebene Menge. Dies muss nicht mit der Menge, die in der Angebotsanforderung angegeben ist, übereinstimmen.   Nettobetrag: Der von einem Händler angegebene Preis für die Artikel in der Position, nach Abzug aller Rabatte.   Abweichung: Die Anzahl der Tage, um die das Lieferdatum im Angebotskopf oder der Angebotsposition vom angeforderten Lieferdatum im Angebotsanforderungskopf oder der Angebotsanforderungsposition abweicht.   Sie können einen Rang für jedes Angebot eingeben.  
-4. Wählen Sie die Kopfzeilenposition für das andere Angebot aus, dem Sie einen Rang zuweisen möchten.
-5. Geben Sie im Feld "Rang" eine Zahl ein.
-6. Klicken Sie auf "Speichern".
+## <a name="compare-the-replies"></a><span data-ttu-id="57fe9-149">Vergleichen Sie die Angebote</span><span class="sxs-lookup"><span data-stu-id="57fe9-149">Compare the replies</span></span>
+1. <span data-ttu-id="57fe9-150">Klicken Sie im Aktivitätsbereich auf "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="57fe9-150">On the Action Pane, click General.</span></span>
+2. <span data-ttu-id="57fe9-151">Klicken Sie auf "Antworten vergleichen".</span><span class="sxs-lookup"><span data-stu-id="57fe9-151">Click Compare replies.</span></span>
+3. <span data-ttu-id="57fe9-152">Geben Sie im Feld "Rang" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-152">In the Rank field, enter a number.</span></span>
+    * <span data-ttu-id="57fe9-153">Auf dieser Seite werden die Angebote mit dem Kopf und den Positionen angezeigt sowie die Gesamtbewertung auf Kopfzeilenebene.</span><span class="sxs-lookup"><span data-stu-id="57fe9-153">This page shows the bids with the header and lines, and the total score on the header level.</span></span> <span data-ttu-id="57fe9-154">Sie können die Positionen vergleichen, indem Sie im Raster sortieren, damit vergleichbare Positionen nebeneinander sind.</span><span class="sxs-lookup"><span data-stu-id="57fe9-154">You can compare the lines by sorting in the grid so that comparable lines are next to each other.</span></span> <span data-ttu-id="57fe9-155">Die Informationen enthalten außerdem: Menge: Die vom Händler angegebene Menge.</span><span class="sxs-lookup"><span data-stu-id="57fe9-155">The information also includes:   Quantity: The quantity quoted by the vendor.</span></span> <span data-ttu-id="57fe9-156">Dies muss nicht mit der Menge, die in der Angebotsanforderung angegeben ist, übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="57fe9-156">This might not equal the quantity specified in the RFQ.</span></span>   <span data-ttu-id="57fe9-157">Nettobetrag: Der von einem Händler angegebene Preis für die Artikel in der Position, nach Abzug aller Rabatte.</span><span class="sxs-lookup"><span data-stu-id="57fe9-157">Net amount: The price quoted by a vendor, after subtracting any discounts, for the items on the line.</span></span>   <span data-ttu-id="57fe9-158">Abweichung: Die Anzahl der Tage, um die das Lieferdatum im Angebotskopf oder der Angebotsposition vom angeforderten Lieferdatum im Angebotsanforderungskopf oder der Angebotsanforderungsposition abweicht.</span><span class="sxs-lookup"><span data-stu-id="57fe9-158">Deviation: The number of days that the delivery date in the bid header or line deviates from the requested delivery date in the RFQ header or RFQ line.</span></span>   <span data-ttu-id="57fe9-159">Sie können einen Rang für jedes Angebot eingeben.</span><span class="sxs-lookup"><span data-stu-id="57fe9-159">You can enter a rank for each bid.</span></span>  
+4. <span data-ttu-id="57fe9-160">Wählen Sie die Kopfzeilenposition für das andere Angebot aus, dem Sie einen Rang zuweisen möchten.</span><span class="sxs-lookup"><span data-stu-id="57fe9-160">Select the header line for the other bid that you want to rank.</span></span>
+5. <span data-ttu-id="57fe9-161">Geben Sie im Feld "Rang" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="57fe9-161">In the Rank field, enter a number.</span></span>
+6. <span data-ttu-id="57fe9-162">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="57fe9-162">Click Save.</span></span>
 
-## <a name="reject-a-bid"></a>Lehnen Sie ein Angebot ab
-1. Wählen Sie die Kopfzeilenposition für das Angebot aus, das Sie ablehnen möchten.
-    * Sie können ein Angebot oder Positionen innerhalb eines Angebots auf einmal annehmen, ablehnen oder zurückgeben.  
-2. Wählen Sie das Kontrollkästchen "Markieren" aus.
-    * Wenn Sie das Kontrollkästchen "Markieren" im Kopf des Angebots aktivieren, dann werden alle Positionen ebenfalls markiert. Sie können auch wählen, eine Untergruppe der Positionen innerhalb des Angebots zu markieren, um diese abzulehnen oder anzunehmen. Es ist möglich, das Angebot eines Händlers für manche Positionen einer Angebotsanforderung anzunehmen und dann andere Angebotsanforderungspositionen einem anderen Händler zu erteilen. Sie müssen dies jedoch in zwei Schritten ausführen, mit einem Schritt auf einmal. Wenn alternative Positionen vorhanden sind, können Sie entweder die Original-Angebotsposition oder deren Alternative, aber nicht beides akzeptieren.  
-3. Klicken Sie auf "Ablehnen".
-4. Klicken Sie zum Öffnen des Dropdown-Dialogfeldformulars auf "Parameter".
-5. Geben Sie im Feld "Ablehnungsgrund" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Der Grund für die Ablehnung wird auf der Antwort gespeichert.  
-6. Klicken Sie auf "OK".
-7. Klicken Sie auf "OK".
-8. Schließen Sie die Seite.
-9. Schließen Sie die Seite.
-10. Aktualisieren Sie die Seite.
+## <a name="reject-a-bid"></a><span data-ttu-id="57fe9-163">Lehnen Sie ein Angebot ab</span><span class="sxs-lookup"><span data-stu-id="57fe9-163">Reject a bid</span></span>
+1. <span data-ttu-id="57fe9-164">Wählen Sie die Kopfzeilenposition für das Angebot aus, das Sie ablehnen möchten.</span><span class="sxs-lookup"><span data-stu-id="57fe9-164">Select the header line for the bid that you want to reject.</span></span>
+    * <span data-ttu-id="57fe9-165">Sie können ein Angebot oder Positionen innerhalb eines Angebots auf einmal annehmen, ablehnen oder zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="57fe9-165">You can only accept, reject, or return one bid or lines within one bid at a time.</span></span>  
+2. <span data-ttu-id="57fe9-166">Wählen Sie das Kontrollkästchen "Markieren" aus.</span><span class="sxs-lookup"><span data-stu-id="57fe9-166">Select the Mark check box.</span></span>
+    * <span data-ttu-id="57fe9-167">Wenn Sie das Kontrollkästchen "Markieren" im Kopf des Angebots aktivieren, dann werden alle Positionen ebenfalls markiert.</span><span class="sxs-lookup"><span data-stu-id="57fe9-167">If you select the Mark check box on the Header of the bid then all the lines will be marked as well.</span></span> <span data-ttu-id="57fe9-168">Sie können auch wählen, eine Untergruppe der Positionen innerhalb des Angebots zu markieren, um diese abzulehnen oder anzunehmen.</span><span class="sxs-lookup"><span data-stu-id="57fe9-168">You could also choose to mark a subset of the lines within the bid to reject or accept those.</span></span> <span data-ttu-id="57fe9-169">Es ist möglich, das Angebot eines Händlers für manche Positionen einer Angebotsanforderung anzunehmen und dann andere Angebotsanforderungspositionen einem anderen Händler zu erteilen. Sie müssen dies jedoch in zwei Schritten ausführen, mit einem Schritt auf einmal.</span><span class="sxs-lookup"><span data-stu-id="57fe9-169">It’s possible to accept one vendor’s bid for some lines of an RFQ, and then award other RFQ lines to a different vendor, however you need to do this in 2 steps, one bid at a time.</span></span> <span data-ttu-id="57fe9-170">Wenn alternative Positionen vorhanden sind, können Sie entweder die Original-Angebotsposition oder deren Alternative, aber nicht beides akzeptieren.</span><span class="sxs-lookup"><span data-stu-id="57fe9-170">If alternate lines are present, you can only accept either the original bid line or its alternate, but not both.</span></span>  
+3. <span data-ttu-id="57fe9-171">Klicken Sie auf "Ablehnen".</span><span class="sxs-lookup"><span data-stu-id="57fe9-171">Click Reject.</span></span>
+4. <span data-ttu-id="57fe9-172">Klicken Sie zum Öffnen des Dropdown-Dialogfeldformulars auf "Parameter".</span><span class="sxs-lookup"><span data-stu-id="57fe9-172">Click Parameters to open the drop dialog.</span></span>
+5. <span data-ttu-id="57fe9-173">Geben Sie im Feld "Ablehnungsgrund" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="57fe9-173">In the Reason reject field, enter or select a value.</span></span>
+    * <span data-ttu-id="57fe9-174">Der Grund für die Ablehnung wird auf der Antwort gespeichert.</span><span class="sxs-lookup"><span data-stu-id="57fe9-174">The reason for rejection will be stored on the reply.</span></span>  
+6. <span data-ttu-id="57fe9-175">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="57fe9-175">Click OK.</span></span>
+7. <span data-ttu-id="57fe9-176">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="57fe9-176">Click OK.</span></span>
+8. <span data-ttu-id="57fe9-177">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="57fe9-177">Close the page.</span></span>
+9. <span data-ttu-id="57fe9-178">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="57fe9-178">Close the page.</span></span>
+10. <span data-ttu-id="57fe9-179">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="57fe9-179">Refresh the page.</span></span>
 
-## <a name="accept-a-bid"></a>Nehmen Sie ein Angebot an
-1. Wählen Sie das Angebot aus, das Sie annehmen möchten aus und klicken Sie dann auf den Link im Feld "Angebotsanforderung".
-2. Klicken Sie im Aktivitätsbereich auf "Antworten".
-3. Klicken Sie auf "Annehmen".
-    * Wenn Sie bestimmte Positionen markiert haben und nicht andere, dann wird die Annahmeaktivität nur die markierten Positionen umfassen. Wenn Sie alle Positionen zum Angebot annehmen möchten, dann müssen Sie die Positionen nicht markieren.  
-4. Klicken Sie zum Öffnen des Dropdown-Dialogfeldformulars auf "Parameter".
-    * Dies ermöglicht es Ihnen, einen Grund für die Annahme des Angebots zu erfassen. Der Grund wird im Angebot gespeichert.  
-5. Geben Sie im Feld "Annahmegrund" einen Wert ein, oder wählen Sie einen Wert aus.
-6. Klicken Sie auf "OK".
-7. Klicken Sie auf "OK".
-    * Wenn Sie auf "OK" klicken, wird dadurch eine Bestellung auf Grundlage der Positionen generiert, die in der Angebotsanforderungsannahme enthalten sind. Wenn es weitere Angebote gibt, die nicht verarbeitet wurden (angenommen, abgelehnt oder zurückgegeben), wird das System Sie dazu auffordern, die verbleibenden Angebote abzulehnen.  
+## <a name="accept-a-bid"></a><span data-ttu-id="57fe9-180">Nehmen Sie ein Angebot an</span><span class="sxs-lookup"><span data-stu-id="57fe9-180">Accept a bid</span></span>
+1. <span data-ttu-id="57fe9-181">Wählen Sie das Angebot aus, das Sie annehmen möchten aus und klicken Sie dann auf den Link im Feld "Angebotsanforderung".</span><span class="sxs-lookup"><span data-stu-id="57fe9-181">Select the bid that you want to accept and then click the link in the Request for quotation field.</span></span>
+2. <span data-ttu-id="57fe9-182">Klicken Sie im Aktivitätsbereich auf "Antworten".</span><span class="sxs-lookup"><span data-stu-id="57fe9-182">On the Action Pane, click Reply.</span></span>
+3. <span data-ttu-id="57fe9-183">Klicken Sie auf "Annehmen".</span><span class="sxs-lookup"><span data-stu-id="57fe9-183">Click Accept.</span></span>
+    * <span data-ttu-id="57fe9-184">Wenn Sie bestimmte Positionen markiert haben und nicht andere, dann wird die Annahmeaktivität nur die markierten Positionen umfassen.</span><span class="sxs-lookup"><span data-stu-id="57fe9-184">If you have marked specific lines and not others then the accept action will only include the marked lines.</span></span> <span data-ttu-id="57fe9-185">Wenn Sie alle Positionen zum Angebot annehmen möchten, dann müssen Sie die Positionen nicht markieren.</span><span class="sxs-lookup"><span data-stu-id="57fe9-185">If you want to accept all lines on the bid then you do not have to mark the lines.</span></span>  
+4. <span data-ttu-id="57fe9-186">Klicken Sie zum Öffnen des Dropdown-Dialogfeldformulars auf "Parameter".</span><span class="sxs-lookup"><span data-stu-id="57fe9-186">Click Parameters to open the drop dialog.</span></span>
+    * <span data-ttu-id="57fe9-187">Dies ermöglicht es Ihnen, einen Grund für die Annahme des Angebots zu erfassen.</span><span class="sxs-lookup"><span data-stu-id="57fe9-187">This allows you to record a reason for accepting the bid.</span></span> <span data-ttu-id="57fe9-188">Der Grund wird im Angebot gespeichert.</span><span class="sxs-lookup"><span data-stu-id="57fe9-188">The reason will be stored on the bid.</span></span>  
+5. <span data-ttu-id="57fe9-189">Geben Sie im Feld "Annahmegrund" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="57fe9-189">In the Reason accept field, enter or select a value.</span></span>
+6. <span data-ttu-id="57fe9-190">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="57fe9-190">Click OK.</span></span>
+7. <span data-ttu-id="57fe9-191">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="57fe9-191">Click OK.</span></span>
+    * <span data-ttu-id="57fe9-192">Wenn Sie auf "OK" klicken, wird dadurch eine Bestellung auf Grundlage der Positionen generiert, die in der Angebotsanforderungsannahme enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="57fe9-192">When you click OK this generates a purchase order based on the lines that are included in the RFQ acceptance.</span></span> <span data-ttu-id="57fe9-193">Wenn es weitere Angebote gibt, die nicht verarbeitet wurden (angenommen, abgelehnt oder zurückgegeben), wird das System Sie dazu auffordern, die verbleibenden Angebote abzulehnen.</span><span class="sxs-lookup"><span data-stu-id="57fe9-193">If there are other bids that have not been processed (accepted, rejected, or returned) then the system will prompt you to reject the remaining bids.</span></span>  
 
-## <a name="view-the-purchase-order-thats-been-generated"></a>Zeigen Sie die Bestellung an, die erstellt wurde
-1. Klicken Sie im Aktivitätsbereich auf "Allgemein".
-2. Klicken Sie auf "Bestellung".
-    * Hier können Sie die Bestellung anzeigen, die generiert wurde, als Sie das Angebot angenommen haben.  
-3. Schließen Sie die Seite.
-4. Schließen Sie die Seite.
-5. Schließen Sie die Seite.
-6. Schließen Sie die Seite.
+## <a name="view-the-purchase-order-thats-been-generated"></a><span data-ttu-id="57fe9-194">Zeigen Sie die Bestellung an, die erstellt wurde</span><span class="sxs-lookup"><span data-stu-id="57fe9-194">View the purchase order that's been generated</span></span>
+1. <span data-ttu-id="57fe9-195">Klicken Sie im Aktivitätsbereich auf "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="57fe9-195">On the Action Pane, click General.</span></span>
+2. <span data-ttu-id="57fe9-196">Klicken Sie auf "Bestellung".</span><span class="sxs-lookup"><span data-stu-id="57fe9-196">Click Purchase order.</span></span>
+    * <span data-ttu-id="57fe9-197">Hier können Sie die Bestellung anzeigen, die generiert wurde, als Sie das Angebot angenommen haben.</span><span class="sxs-lookup"><span data-stu-id="57fe9-197">Here you can see the purchase order that was generated when you accepted the bid.</span></span>  
+3. <span data-ttu-id="57fe9-198">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="57fe9-198">Close the page.</span></span>
+4. <span data-ttu-id="57fe9-199">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="57fe9-199">Close the page.</span></span>
+5. <span data-ttu-id="57fe9-200">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="57fe9-200">Close the page.</span></span>
+6. <span data-ttu-id="57fe9-201">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="57fe9-201">Close the page.</span></span>
 
 

@@ -20,38 +20,38 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 94f6f28ec4b255930f84a27eb5394503ff59e4c0
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3ec45e7426f65827f161245870f9114e52e035ab
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="maintain-planned-orders"></a>Bestellvorschläge verwalten
+# <a name="maintain-planned-orders"></a><span data-ttu-id="a3ede-104">Bestellvorschläge verwalten</span><span class="sxs-lookup"><span data-stu-id="a3ede-104">Maintain planned orders</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel bietet Informationen dazu, wie Bestellvorschläge verwaltet werden. Es wird beschrieben, wie Sie den Status von Bestellvorschlägen aktualisieren, umwandeln und Bestellvorschläge filtern können, die den gleichen Status wie ein ausgewählter Bestellvorschlag haben.
+<span data-ttu-id="a3ede-105">Dieser Artikel bietet Informationen dazu, wie Bestellvorschläge verwaltet werden.</span><span class="sxs-lookup"><span data-stu-id="a3ede-105">This article provides information about how to manage planned orders.</span></span> <span data-ttu-id="a3ede-106">Es wird beschrieben, wie Sie den Status von Bestellvorschlägen aktualisieren, umwandeln und Bestellvorschläge filtern können, die den gleichen Status wie ein ausgewählter Bestellvorschlag haben.</span><span class="sxs-lookup"><span data-stu-id="a3ede-106">It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.</span></span>
 
-Sie können Bestellvorschläge aus dem Arbeitsbereich **Produktprogrammplanung**, aus der Liste **Bestellvorschlag**, oder aus den Listen **Geplante Produktionsaufträge**, **Geplante Einkaufsbestellungen** und **Geplante Umlagerung** verwalten. Sie können das Feld **Status** verwenden, um Ihren Fortschritt zu verfolgen. Folgende Werte werden verwendet:
+<span data-ttu-id="a3ede-107">Sie können Bestellvorschläge aus dem Arbeitsbereich **Produktprogrammplanung**, aus der Liste **Bestellvorschlag**, oder aus den Listen **Geplante Produktionsaufträge**, **Geplante Einkaufsbestellungen** und **Geplante Umlagerung** verwalten.</span><span class="sxs-lookup"><span data-stu-id="a3ede-107">You can manage planned orders from the **Master planning** workspace, the **Planned order** list, or the **Planned production orders**, **Planned purchase orders**, and **Planned transfer** lists.</span></span> <span data-ttu-id="a3ede-108">Sie können das Feld **Status** verwenden, um Ihren Fortschritt zu verfolgen.</span><span class="sxs-lookup"><span data-stu-id="a3ede-108">You can use the **Status** field to help track your progress.</span></span> <span data-ttu-id="a3ede-109">Folgende Werte werden verwendet:</span><span class="sxs-lookup"><span data-stu-id="a3ede-109">The following values are used:</span></span>
 
--   Wenn vom Produktprogrammplanungslauf Bestellvorschläge generiert wurden, weisen die Bestellvorschläge den Status **Offen** auf.
--   Wenn ein Bestellvorschlag nicht umgewandelt werden soll, können Sie ihm den Status **Abgeschlossen** zuweisen.
--   Wenn ein Bestellvorschlag nicht umgewandelt werden soll, können Sie diesem den Status **Genehmigt** zuweisen. Mit diesem Status geben Sie an, dass Sie die Umwandlung des Bestellvorschlags genehmigen, was jedoch nicht bedeutet, dass er bereits umgewandelt ist.
+-   <span data-ttu-id="a3ede-110">Wenn vom Produktprogrammplanungslauf Bestellvorschläge generiert wurden, weisen die Bestellvorschläge den Status **Offen** auf.</span><span class="sxs-lookup"><span data-stu-id="a3ede-110">When master planning generates planned orders, the planned orders have a status of **Unprocessed**.</span></span>
+-   <span data-ttu-id="a3ede-111">Wenn ein Bestellvorschlag nicht umgewandelt werden soll, können Sie ihm den Status **Abgeschlossen** zuweisen.</span><span class="sxs-lookup"><span data-stu-id="a3ede-111">If you decide not to firm a planned order, you can give it a status of **Completed**.</span></span>
+-   <span data-ttu-id="a3ede-112">Wenn ein Bestellvorschlag nicht umgewandelt werden soll, können Sie diesem den Status **Genehmigt** zuweisen.</span><span class="sxs-lookup"><span data-stu-id="a3ede-112">When you decide to firm a planned order, you can give it a status of **Approved**.</span></span> <span data-ttu-id="a3ede-113">Mit diesem Status geben Sie an, dass Sie die Umwandlung des Bestellvorschlags genehmigen, was jedoch nicht bedeutet, dass er bereits umgewandelt ist.</span><span class="sxs-lookup"><span data-stu-id="a3ede-113">This status indicates that you approve firming of the planned order, but it isn't firmed yet.</span></span>
 
-**Hinweis:** Ein genehmigter Bestellvorschlag wird mit dem aktuellen Status in die nächste Produktprogrammplanungs-Berechnung übertragen. Bestellvorschläge können umgewandelt werden, indem Sie auf **Vorschlagsumwandlung** klicken. Die folgenden Bestellvorschläge können umgewandelt werden:
+<span data-ttu-id="a3ede-114">**Hinweis:** Ein genehmigter Bestellvorschlag wird mit dem aktuellen Status in die nächste Produktprogrammplanungs-Berechnung übertragen.</span><span class="sxs-lookup"><span data-stu-id="a3ede-114">**Note:** An approved planned order is transferred, in its current state, to the next master planning calculation.</span></span> <span data-ttu-id="a3ede-115">Bestellvorschläge können umgewandelt werden, indem Sie auf **Vorschlagsumwandlung** klicken.</span><span class="sxs-lookup"><span data-stu-id="a3ede-115">You can firm planned orders by clicking **Firm**.</span></span> <span data-ttu-id="a3ede-116">Die folgenden Bestellvorschläge können umgewandelt werden:</span><span class="sxs-lookup"><span data-stu-id="a3ede-116">You can firm the following planned orders:</span></span>
 
--   Der Bestellvorschlag, der ausgewählt wurde.
--   Mehrere Bestellvorschläge.
--   Bestellvorschläge, die mithilfe einer Stücklistenauflösung auf der Seite **Stücklistenauflösung** generiert wurden. Klicken Sie auf **Bestellvorschläge**, wählen Sie den Bestellvorschlag aus, und klicken Sie dann auf **Vorschlagsumwandlung**.
+-   <span data-ttu-id="a3ede-117">Der Bestellvorschlag, der ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="a3ede-117">The planned order that is selected.</span></span>
+-   <span data-ttu-id="a3ede-118">Mehrere Bestellvorschläge.</span><span class="sxs-lookup"><span data-stu-id="a3ede-118">Multiple planned orders.</span></span>
+-   <span data-ttu-id="a3ede-119">Bestellvorschläge, die mithilfe einer Stücklistenauflösung auf der Seite **Stücklistenauflösung** generiert wurden.</span><span class="sxs-lookup"><span data-stu-id="a3ede-119">Planned orders that are generated by an explosion from the **Explosion** page.</span></span> <span data-ttu-id="a3ede-120">Klicken Sie auf **Bestellvorschläge**, wählen Sie den Bestellvorschlag aus, und klicken Sie dann auf **Vorschlagsumwandlung**.</span><span class="sxs-lookup"><span data-stu-id="a3ede-120">Click **Planned orders**, select the planned order, and then click **Firm**.</span></span>
 
-Nachdem ein Bestellvorschlag umgewandelt wurde, wird er in den Abschnitt "Aufträge" des jeweiligen Moduls verschoben. **Hinweis:** Sie können mit der rechten Maustaste auf einen Bestellvorschlag mit einem bestimmten Status klicken und so andere Bestellvorschläge herausfiltern, die den gleichen Status aufweisen. Diese Funktion ist beispielsweise nützlich zum Filtern nach allen Bestellvorschlägen mit dem Status **Genehmigt**, um sie dann umzuwandeln.
+<span data-ttu-id="a3ede-121">Nachdem ein Bestellvorschlag umgewandelt wurde, wird er in den Abschnitt "Aufträge" des jeweiligen Moduls verschoben.</span><span class="sxs-lookup"><span data-stu-id="a3ede-121">When a planned order is firmed, it's moved to the orders section of the relevant module.</span></span> <span data-ttu-id="a3ede-122">**Hinweis:** Sie können mit der rechten Maustaste auf einen Bestellvorschlag mit einem bestimmten Status klicken und so andere Bestellvorschläge herausfiltern, die den gleichen Status aufweisen.</span><span class="sxs-lookup"><span data-stu-id="a3ede-122">**Note:** You can right-click a planned order that has a particular status and filter for other planned orders that have the same status.</span></span> <span data-ttu-id="a3ede-123">Diese Funktion ist beispielsweise nützlich zum Filtern nach allen Bestellvorschlägen mit dem Status **Genehmigt**, um sie dann umzuwandeln.</span><span class="sxs-lookup"><span data-stu-id="a3ede-123">This functionality is useful if, for example, you want to filter for all planned orders that have a status of **Approved**, so that you can then firm them.</span></span>
 
-<a name="see-also"></a>Siehe auch
+<a name="see-also"></a><span data-ttu-id="a3ede-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a3ede-124">See also</span></span>
 --------
 
-[Produktprogrammpläne](master-plans.md)
+[<span data-ttu-id="a3ede-125">Produktprogrammpläne</span><span class="sxs-lookup"><span data-stu-id="a3ede-125">Master plans</span></span>](master-plans.md)
 
 
 

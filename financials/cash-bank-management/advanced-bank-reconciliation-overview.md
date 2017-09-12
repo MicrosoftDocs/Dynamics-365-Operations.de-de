@@ -19,36 +19,36 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 67cd622d7766e5b177ccc58398431b007e8bda4e
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 33150777222faa97af7488c59ab13cb0fb9e8e2c
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="advanced-bank-reconciliation-overview"></a>Überblick über die erweiterte Bankabstimmung
+# <a name="advanced-bank-reconciliation-overview"></a><span data-ttu-id="a46f8-104">Überblick über die erweiterte Bankabstimmung</span><span class="sxs-lookup"><span data-stu-id="a46f8-104">Advanced bank reconciliation overview</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Artikel wird der Fluss für den erweiterten Bankabstimmungsprozess beschrieben. Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren, die aus Bankbuchungen automatisch abgestimmt werden können.
+<span data-ttu-id="a46f8-105">In diesem Artikel wird der Fluss für den erweiterten Bankabstimmungsprozess beschrieben.</span><span class="sxs-lookup"><span data-stu-id="a46f8-105">This article describes the flow for the advanced bank reconciliation process.</span></span> <span data-ttu-id="a46f8-106">Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren, die aus Bankbuchungen automatisch abgestimmt werden können.</span><span class="sxs-lookup"><span data-stu-id="a46f8-106">The advanced bank reconciliation feature lets you import bank statements that can be automatically reconciled from within bank transactions.</span></span>
 
-Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren. Der importierte Bankauszug kann aus Banktransaktionen heraus automatisch abgestimmt werden. Hierbei gelten die Schritte des erweiterten Bankabstimmungsflusses.
+<span data-ttu-id="a46f8-107">Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren.</span><span class="sxs-lookup"><span data-stu-id="a46f8-107">The advanced bank reconciliation feature lets you import bank statements.</span></span> <span data-ttu-id="a46f8-108">Der importierte Bankauszug kann aus Banktransaktionen heraus automatisch abgestimmt werden.</span><span class="sxs-lookup"><span data-stu-id="a46f8-108">The imported bank statement can then be automatically reconciled from within bank transactions.</span></span> <span data-ttu-id="a46f8-109">Hierbei gelten die Schritte des erweiterten Bankabstimmungsflusses.</span><span class="sxs-lookup"><span data-stu-id="a46f8-109">Here are the steps in the advanced bank reconciliation flow.</span></span>
 
-1.  Richten Sie einen Bankauszugsimport ein.
-    -   Importieren Sie Bankauszüge durch das Datenentitätsframework.
-    -   Drei typische Bankauszugsformate sind integriert: ISO20022, BAI2 und MT940.
-    -   Die Funktionen können in jedes beliebige Format erweitert werden.
+1.  <span data-ttu-id="a46f8-110">Richten Sie einen Bankauszugsimport ein.</span><span class="sxs-lookup"><span data-stu-id="a46f8-110">Set up a bank statement import.</span></span>
+    -   <span data-ttu-id="a46f8-111">Importieren Sie Bankauszüge durch das Datenentitätsframework.</span><span class="sxs-lookup"><span data-stu-id="a46f8-111">Import bank statements through the data entity framework.</span></span>
+    -   <span data-ttu-id="a46f8-112">Drei typische Bankauszugsformate sind integriert: ISO20022, BAI2 und MT940.</span><span class="sxs-lookup"><span data-stu-id="a46f8-112">Three typical bank statement formats are built in: ISO20022, BAI2, and MT940.</span></span>
+    -   <span data-ttu-id="a46f8-113">Die Funktionen können in jedes beliebige Format erweitert werden.</span><span class="sxs-lookup"><span data-stu-id="a46f8-113">The functionality can be extended to any format.</span></span>
 
-2.  Richten Sie einen Nummernkreis ein, der für erweiterte Bankabstimmung verwendet wird, und definieren Sie die Abgleichsregeln für Bankabstimmung.
-    -   Eine Abgleichsregel für Bankabstimmung ist eine Gruppe von Kriterien, die verwendet wird, um Bankauszugspositionen und Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition-Banktransaktionspositionen während des Abstimmungsvorgangs zu filtern. Abhängig von Ihrer Geschäftspraktik können Sie mehrere Übereinstimmungsregel einrichten, die Ihren Abstimmungsprozess automatisieren und optimieren.
+2.  <span data-ttu-id="a46f8-114">Richten Sie einen Nummernkreis ein, der für erweiterte Bankabstimmung verwendet wird, und definieren Sie die Abgleichsregeln für Bankabstimmung.</span><span class="sxs-lookup"><span data-stu-id="a46f8-114">Set up a number sequence to use for advanced bank reconciliation, and define the bank reconciliation matching rules.</span></span>
+    -   <span data-ttu-id="a46f8-115">Eine Abgleichsregel für Bankabstimmung ist eine Gruppe von Kriterien, die verwendet wird, um Bankauszugspositionen und Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition-Banktransaktionspositionen während des Abstimmungsvorgangs zu filtern.</span><span class="sxs-lookup"><span data-stu-id="a46f8-115">A reconciliation matching rule is a set of criteria that are used to filter bank statement lines and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition bank transaction lines during the reconciliation process.</span></span> <span data-ttu-id="a46f8-116">Abhängig von Ihrer Geschäftspraktik können Sie mehrere Übereinstimmungsregel einrichten, die Ihren Abstimmungsprozess automatisieren und optimieren.</span><span class="sxs-lookup"><span data-stu-id="a46f8-116">Depending on your business practice, you can set up more than one matching rule to automate and optimize your reconciliation process.</span></span>
 
-3.  Stimmen Sie Bankauszüge mit Finance and Operations Banktransaktionen ab.
-    -   Führen Sie den automatischen Abgleich und die Erstellung von Abstimmungserfassungen aus.
-    -   Zeigen Sie Bankauszüge und Finance and Operations-Banktransaktionen parallel an.
-    -   Buchen Sie Finance and Operations-Banktransaktionen automatisch, wenn sie auf einem Bankauszug aber nicht in Finance and Operations angezeigt werden.
-    -   Generieren eines Abstimmungsauszugs
+3.  <span data-ttu-id="a46f8-117">Stimmen Sie Bankauszüge mit Finance and Operations Banktransaktionen ab.</span><span class="sxs-lookup"><span data-stu-id="a46f8-117">Reconcile bank statements with Finance and Operations bank transactions.</span></span>
+    -   <span data-ttu-id="a46f8-118">Führen Sie den automatischen Abgleich und die Erstellung von Abstimmungserfassungen aus.</span><span class="sxs-lookup"><span data-stu-id="a46f8-118">Perform automatic matching and creation of reconciliation journals.</span></span>
+    -   <span data-ttu-id="a46f8-119">Zeigen Sie Bankauszüge und Finance and Operations-Banktransaktionen parallel an.</span><span class="sxs-lookup"><span data-stu-id="a46f8-119">View bank statements and Finance and Operations bank transactions side by side.</span></span>
+    -   <span data-ttu-id="a46f8-120">Buchen Sie Finance and Operations-Banktransaktionen automatisch, wenn sie auf einem Bankauszug aber nicht in Finance and Operations angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="a46f8-120">Automatically post Finance and Operations bank transactions if they appear on a bank statement but don't appear in Finance and Operations.</span></span>
+    -   <span data-ttu-id="a46f8-121">Generieren eines Abstimmungsauszugs</span><span class="sxs-lookup"><span data-stu-id="a46f8-121">Generate a reconciliation statement.</span></span>
 
 
 

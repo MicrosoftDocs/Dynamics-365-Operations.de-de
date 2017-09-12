@@ -16,34 +16,34 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 26f667f51efd30bcc86242fce79226d356d99847
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2e269ef7b33b4d7e171d284d68d28c825c2fe86c
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Eine Bedarfsplanung manuell ändern
+# <a name="modify-a-demand-forecast-manually"></a><span data-ttu-id="78925-103">Eine Bedarfsplanung manuell ändern</span><span class="sxs-lookup"><span data-stu-id="78925-103">Modify a demand forecast manually</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel ändern. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Aufzeichnung ist für den Produktionsplaner vorgesehen. 
+<span data-ttu-id="78925-104">Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel ändern.</span><span class="sxs-lookup"><span data-stu-id="78925-104">This procedure shows how to modify the forecast for an item.</span></span> <span data-ttu-id="78925-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="78925-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="78925-106">Diese Aufzeichnung ist für den Produktionsplaner vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="78925-106">This recording is intended for the production planner.</span></span> 
 
 
-## <a name="modify-the-forecast-for-an-item"></a>Ändern der Planung für einen Artikel
-1. Wechseln Sie zu "Produktinformationsverwaltung" > "Produkte" > "Freigegebene Produkte".
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie den Artikel aus, für den Sie die Planung ändern möchten. Sie können beispielsweise Artikel "D0001" auswählen.  
-3. Klicken Sie im Aktivitätsbereich auf "Plan".
-4. Klicken Sie auf "Bedarfsplanung".
-5. Markieren Sie in der Liste die ausgewählte Zeile.
-    * Wenn keine Planungspositionen vorhanden sind, erstellen Sie eine neue Position nach  . Klicken Sie neu auf der App-Leiste.  
-6. Geben Sie im Feld "Verkaufsmenge" eine Zahl ein.
-    * Diese Zahl gibt die prognostizierte Menge des Artikels wieder.  
-7. Klicken Sie auf "Speichern".
+## <a name="modify-the-forecast-for-an-item"></a><span data-ttu-id="78925-107">Ändern der Planung für einen Artikel</span><span class="sxs-lookup"><span data-stu-id="78925-107">Modify the forecast for an item</span></span>
+1. <span data-ttu-id="78925-108">Wechseln Sie zu "Produktinformationsverwaltung" > "Produkte" > "Freigegebene Produkte".</span><span class="sxs-lookup"><span data-stu-id="78925-108">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="78925-109">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="78925-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="78925-110">Wählen Sie den Artikel aus, für den Sie die Planung ändern möchten.</span><span class="sxs-lookup"><span data-stu-id="78925-110">Select the item for which you want to modify the forecast.</span></span> <span data-ttu-id="78925-111">Sie können beispielsweise Artikel "D0001" auswählen.</span><span class="sxs-lookup"><span data-stu-id="78925-111">For example, you can select item D0001.</span></span>  
+3. <span data-ttu-id="78925-112">Klicken Sie im Aktivitätsbereich auf "Plan".</span><span class="sxs-lookup"><span data-stu-id="78925-112">On the Action Pane, click Plan.</span></span>
+4. <span data-ttu-id="78925-113">Klicken Sie auf "Bedarfsplanung".</span><span class="sxs-lookup"><span data-stu-id="78925-113">Click Demand forecast.</span></span>
+5. <span data-ttu-id="78925-114">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="78925-114">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="78925-115">Wenn keine Planungspositionen vorhanden sind, erstellen Sie eine neue Position nach  .</span><span class="sxs-lookup"><span data-stu-id="78925-115">If there are no forecast lines, create a new line by  .</span></span> <span data-ttu-id="78925-116">Klicken Sie neu auf der App-Leiste.</span><span class="sxs-lookup"><span data-stu-id="78925-116">clicking New on the app bar.</span></span>  
+6. <span data-ttu-id="78925-117">Geben Sie im Feld "Verkaufsmenge" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="78925-117">In the Sales quantity field, enter a number.</span></span>
+    * <span data-ttu-id="78925-118">Diese Zahl gibt die prognostizierte Menge des Artikels wieder.</span><span class="sxs-lookup"><span data-stu-id="78925-118">This number represents the forecasted quantity for the item.</span></span>  
+7. <span data-ttu-id="78925-119">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="78925-119">Click Save.</span></span>
 
-## <a name="modify-the-forecast-in-excel"></a>Ändern der Planung in Excel
-1. Klicken Sie auf "In Microsoft Office öffnen".
-2. Klicken Sie auf "Bedarfsplanung in Excel anpassen".
-    * In Excel können Sie Bedarfsplanungspositionen hinzufügen, löschen und bearbeiten. Wenn die Daten in Excel nicht angezeigt werden können, müssen Sie sich mit aktivierter Option "Angemeldet bleiben" in Microsoft Dynamics 365 for Finance and Operations Enterprise Edition anmelden und der Datenverbindungs-App vertrauen.  
+## <a name="modify-the-forecast-in-excel"></a><span data-ttu-id="78925-120">Ändern der Planung in Excel</span><span class="sxs-lookup"><span data-stu-id="78925-120">Modify the forecast in Excel</span></span>
+1. <span data-ttu-id="78925-121">Klicken Sie auf "In Microsoft Office öffnen".</span><span class="sxs-lookup"><span data-stu-id="78925-121">Click Open in Microsoft Office.</span></span>
+2. <span data-ttu-id="78925-122">Klicken Sie auf "Bedarfsplanung in Excel anpassen".</span><span class="sxs-lookup"><span data-stu-id="78925-122">Click Edit Demand forecast in Excel.</span></span>
+    * <span data-ttu-id="78925-123">In Excel können Sie Bedarfsplanungspositionen hinzufügen, löschen und bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="78925-123">In Excel, you can add, delete and edit demand forecast lines.</span></span> <span data-ttu-id="78925-124">Wenn die Daten in Excel nicht angezeigt werden können, müssen Sie sich mit aktivierter Option "Angemeldet bleiben" in Microsoft Dynamics 365 for Finance and Operations Enterprise Edition anmelden und der Datenverbindungs-App vertrauen.</span><span class="sxs-lookup"><span data-stu-id="78925-124">If you are not able to see the data in Excel, you need to sign in to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with the "Keep me signed in" option enabled and you need to trust the data connection app.</span></span>  
 
 

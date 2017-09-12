@@ -16,32 +16,32 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 9096c061f9d7e84aacc2c47a242a89d1c650076c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f9b7a3ea23298e5121e161b93faa8f145fdd1860
 ms.contentlocale: de-de
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enter-worker-information"></a>Arbeitskraftinformationen eingeben
+# <a name="enter-worker-information"></a><span data-ttu-id="b107d-103">Arbeitskraftinformationen eingeben</span><span class="sxs-lookup"><span data-stu-id="b107d-103">Enter worker information</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Nachdem ein Personalbeschaffungsmitarbeiter ein Masseneinstellungsprojekt erstellt und die Positionen generiert hat, besteht der nächste Schritt darin, die Arbeitskraftinformationen für die Personen einzugeben, die eingestellt werden. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Die Demodaten enthalten ein offenes Masseneinstellungsprojekt. Um diese Prozedur zu starten, gehen Sie zu "Personalverwaltung" > "Personalbeschaffung" > "Masseneinstellungsprojekte".
+<span data-ttu-id="b107d-104">Nachdem ein Personalbeschaffungsmitarbeiter ein Masseneinstellungsprojekt erstellt und die Positionen generiert hat, besteht der nächste Schritt darin, die Arbeitskraftinformationen für die Personen einzugeben, die eingestellt werden.</span><span class="sxs-lookup"><span data-stu-id="b107d-104">After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired.</span></span> <span data-ttu-id="b107d-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="b107d-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b107d-106">Die Demodaten enthalten ein offenes Masseneinstellungsprojekt.</span><span class="sxs-lookup"><span data-stu-id="b107d-106">The demo data contains an open mass hire project.</span></span> <span data-ttu-id="b107d-107">Um diese Prozedur zu starten, gehen Sie zu "Personalverwaltung" > "Personalbeschaffung" > "Masseneinstellungsprojekte".</span><span class="sxs-lookup"><span data-stu-id="b107d-107">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span>
 
-1. Markieren Sie in der Liste die ausgewählte Zeile.
-2. Klicken Sie auf "Positionsdetails".
-    * Startdatum für die Arbeitskraft bearbeiten.  
-    * Enddatum für die Arbeitskraft bearbeiten.  
-    * Ändern Sie ggf. den Arbeitskrafttyp für die Arbeitskraft.  
-3. Geben Sie im Feld "Vorname" einen Wert ein.
-4. Geben Sie im Feld "Zweiter Vorname" einen Wert ein.
-5. Geben Sie im Feld "Nachname" einen Wert ein.
-    * Ändern Sie ggf. den Einzelvorgang für die Arbeitskraft.  
-    * Ändern Sie ggf. die Abteilung für die Arbeitskraft.  
-    * Ändern Sie ggf. den Vollzeitstatus für die Arbeitskraft.  
-6. Klicken Sie auf "OK".
-7. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-8. Heben Sie in der Liste die Markierung der ausgewählten Zeile auf.
-    * Wählen Sie die nächste Projektposition aus und setzen Sie die Eingabe der Arbeitskraftinformationen für jede Person fort, die Sie einstellen.  
+1. <span data-ttu-id="b107d-108">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="b107d-108">In the list, mark the selected row.</span></span>
+2. <span data-ttu-id="b107d-109">Klicken Sie auf "Positionsdetails".</span><span class="sxs-lookup"><span data-stu-id="b107d-109">Click Position details.</span></span>
+    * <span data-ttu-id="b107d-110">Startdatum für die Arbeitskraft bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="b107d-110">Edit the start date for the worker.</span></span>  
+    * <span data-ttu-id="b107d-111">Enddatum für die Arbeitskraft bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="b107d-111">Edit the end date for the worker.</span></span>  
+    * <span data-ttu-id="b107d-112">Ändern Sie ggf. den Arbeitskrafttyp für die Arbeitskraft.</span><span class="sxs-lookup"><span data-stu-id="b107d-112">Change the worker type for the worker, if needed.</span></span>  
+3. <span data-ttu-id="b107d-113">Geben Sie im Feld "Vorname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b107d-113">In the First name field, type a value.</span></span>
+4. <span data-ttu-id="b107d-114">Geben Sie im Feld "Zweiter Vorname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b107d-114">In the Middle name field, type a value.</span></span>
+5. <span data-ttu-id="b107d-115">Geben Sie im Feld "Nachname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b107d-115">In the Last name field, type a value.</span></span>
+    * <span data-ttu-id="b107d-116">Ändern Sie ggf. den Einzelvorgang für die Arbeitskraft.</span><span class="sxs-lookup"><span data-stu-id="b107d-116">Change the job for the worker, if needed.</span></span>  
+    * <span data-ttu-id="b107d-117">Ändern Sie ggf. die Abteilung für die Arbeitskraft.</span><span class="sxs-lookup"><span data-stu-id="b107d-117">Change the department for the worker, if needed.</span></span>  
+    * <span data-ttu-id="b107d-118">Ändern Sie ggf. den Vollzeitstatus für die Arbeitskraft.</span><span class="sxs-lookup"><span data-stu-id="b107d-118">Change the full-time equivalent status for the worker, if needed.</span></span>  
+6. <span data-ttu-id="b107d-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b107d-119">Click OK.</span></span>
+7. <span data-ttu-id="b107d-120">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b107d-120">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="b107d-121">Heben Sie in der Liste die Markierung der ausgewählten Zeile auf.</span><span class="sxs-lookup"><span data-stu-id="b107d-121">In the list, unmark the selected row.</span></span>
+    * <span data-ttu-id="b107d-122">Wählen Sie die nächste Projektposition aus und setzen Sie die Eingabe der Arbeitskraftinformationen für jede Person fort, die Sie einstellen.</span><span class="sxs-lookup"><span data-stu-id="b107d-122">Select the next project position and continue entering the worker information for each person that you're hiring.</span></span>  
 
 

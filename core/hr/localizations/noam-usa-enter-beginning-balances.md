@@ -18,155 +18,155 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: d9e3018eb7b6c20cfd5e23a10d15e230009196de
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 736eedf270ac08b0bdf9364821f8a7bae981ade9
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="enter-payroll-beginning-balances"></a>Eingeben von Lohnanfangssalden
+# <a name="enter-payroll-beginning-balances"></a><span data-ttu-id="dd684-104">Eingeben von Lohnanfangssalden</span><span class="sxs-lookup"><span data-stu-id="dd684-104">Enter payroll beginning balances</span></span>
 
 [!include[banner](../../includes/banner.md)]
 
-In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, die Daten für eine neue Lohnimplementierung von einem anderen System transferieren. Zur Vorbereitung auf die Eingabe anfänglicher Lohnsalden werden folgende Informationen überprüft:
+<span data-ttu-id="dd684-105">In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben.</span><span class="sxs-lookup"><span data-stu-id="dd684-105">The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes.</span></span> <span data-ttu-id="dd684-106">Diese Informationen sind für Partner hilfreich, die Daten für eine neue Lohnimplementierung von einem anderen System transferieren.</span><span class="sxs-lookup"><span data-stu-id="dd684-106">This information is valuable for partners who transfer data for a new Payroll implementation from another system.</span></span> <span data-ttu-id="dd684-107">Zur Vorbereitung auf die Eingabe anfänglicher Lohnsalden werden folgende Informationen überprüft:</span><span class="sxs-lookup"><span data-stu-id="dd684-107">To prepare to enter beginning payroll balances, we verify the following information:</span></span>
 
-> * Mitarbeiterdatensätze wurden eingegeben und sind im System verfügbar
-> * Die folgenden Daten wurden eingerichtet und den Mitarbeitern zugewiesen:
+> * <span data-ttu-id="dd684-108">Mitarbeiterdatensätze wurden eingegeben und sind im System verfügbar</span><span class="sxs-lookup"><span data-stu-id="dd684-108">Employee records are entered and available in the system</span></span>
+> * <span data-ttu-id="dd684-109">Die folgenden Daten wurden eingerichtet und den Mitarbeitern zugewiesen:</span><span class="sxs-lookup"><span data-stu-id="dd684-109">The following data is set up and assigned to employees:</span></span>
 
-> > * Lohnzyklen und Lohnperioden
-> > * Einkommenscodes
-> > * Steuern
-> > * Vergütungen und Abzüge
+> > * <span data-ttu-id="dd684-110">Lohnzyklen und Lohnperioden</span><span class="sxs-lookup"><span data-stu-id="dd684-110">Pay cycles and pay periods</span></span>
+> > * <span data-ttu-id="dd684-111">Einkommenscodes</span><span class="sxs-lookup"><span data-stu-id="dd684-111">Earning codes</span></span>
+> > * <span data-ttu-id="dd684-112">Steuern</span><span class="sxs-lookup"><span data-stu-id="dd684-112">Taxes</span></span>
+> > * <span data-ttu-id="dd684-113">Vergütungen und Abzüge</span><span class="sxs-lookup"><span data-stu-id="dd684-113">Benefits and deductions</span></span>
 
-> * Das Unternehmen sollte ein Datum ausgewählt haben, an dem die Anfangssalden für Löhne festgelegt werden.
+> * <span data-ttu-id="dd684-114">Das Unternehmen sollte ein Datum ausgewählt haben, an dem die Anfangssalden für Löhne festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="dd684-114">The company should have chosen a date where payroll beginning balances can be set.</span></span>
 
-> * Informationen wurden zu allen Einnahmen, Vergütungen/Abzüge, Vorteilsbeiträge, Mitarbeitersteuern und Arbeitgebersteuern und deren Beträge seit Jahresbeginn aus dem alten System erfasst.
+> * <span data-ttu-id="dd684-115">Informationen wurden zu allen Einnahmen, Vergütungen/Abzüge, Vorteilsbeiträge, Mitarbeitersteuern und Arbeitgebersteuern und deren Beträge seit Jahresbeginn aus dem alten System erfasst.</span><span class="sxs-lookup"><span data-stu-id="dd684-115">Information were gathered on all earnings, benefits/deductions, benefit contributions, employee taxes, and employer taxes and their YTD amounts from the legacy system.</span></span>
 
-Wenn Sie planen, Anfangssalden einzugeben, überlegen Sie, wie genau die Daten sein müssen. Die meisten Unternehmen geben einen einzelnen, konsolidierten Betrag seit Jahresbeginn ein. Wenn detailliertere Informationen erforderlich sein, können Salden in vierteljährliche Stufen eingegeben werden. Die festgelegte benötigte Detailebene gibt vor, wie viele manuelle Zahlungsaufstellungen für jede Arbeitskraft erstellt werden müssen. Für einen einzelnen Betrag seit Jahresbeginn ist nur eine manuelle Aufstellung pro Mitarbeiter erforderlich. Verwenden Sie dazu die Beträge seit Jahresbeginn von der letzten Zahlungsaufstellung aus dem alten System, und geben Sie diesen Betrag in das neue Lohnsystem ein.
+<span data-ttu-id="dd684-116">Wenn Sie planen, Anfangssalden einzugeben, überlegen Sie, wie genau die Daten sein müssen.</span><span class="sxs-lookup"><span data-stu-id="dd684-116">As you plan to enter beginning balances, consider how detailed the data needs to be.</span></span> <span data-ttu-id="dd684-117">Die meisten Unternehmen geben einen einzelnen, konsolidierten Betrag seit Jahresbeginn ein.</span><span class="sxs-lookup"><span data-stu-id="dd684-117">Most businesses enter a single, consolidated year-to-date amount.</span></span> <span data-ttu-id="dd684-118">Wenn detailliertere Informationen erforderlich sein, können Salden in vierteljährliche Stufen eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="dd684-118">However if more detailed information is needed, balances can be entered in quarterly increments.</span></span> <span data-ttu-id="dd684-119">Die festgelegte benötigte Detailebene gibt vor, wie viele manuelle Zahlungsaufstellungen für jede Arbeitskraft erstellt werden müssen.</span><span class="sxs-lookup"><span data-stu-id="dd684-119">Deciding the level of detail that's needed determines how many manual pay statements must be created for each worker.</span></span> <span data-ttu-id="dd684-120">Für einen einzelnen Betrag seit Jahresbeginn ist nur eine manuelle Aufstellung pro Mitarbeiter erforderlich.</span><span class="sxs-lookup"><span data-stu-id="dd684-120">For a single year-to-date amount, only one manual statement is needed for each employee.</span></span> <span data-ttu-id="dd684-121">Verwenden Sie dazu die Beträge seit Jahresbeginn von der letzten Zahlungsaufstellung aus dem alten System, und geben Sie diesen Betrag in das neue Lohnsystem ein.</span><span class="sxs-lookup"><span data-stu-id="dd684-121">To do this use year-to-date amounts from the final pay statement from the previous system as the amount entered in the new payroll system.</span></span>
 
-Das folgende Beispiel zeigt, wie Sie Lohnanfangssalden von Mitarbeitern einschließlich Einkommenscodes, Vergütungen(Vorteile)/Abzüge und Steuern eingeben. In der Realität hätten Sie eine Position für jeden Einkommenscode, Vergütungsabzug, Vergütungsbeitrag, für die Mitarbeitersteuer und die Arbeitgebersteuer, wobei der eingegebene Betrag der Betrag seit Jahresbeginn wäre. Führen Sie mit dieser Liste von Codes und Beträgen die Schritte zum Erstellen einer manuellen Lohnabrechnung und Zahlungsaufstellung, bei der die Buchhaltung deaktiviert ist, um Anfangssalden für Lohnzwecke zu übertragen, aus.  Sie deaktivieren die Buchhaltung, da Sie diese Zahlungsaufstellung der Anfangssalden nicht im Hauptbuch buchen möchten. Dies wurde im vorherigen System ausgeführt und wird ins neue System übertragen, wenn Sie die Anfangssalden im Hauptbuch einrichten.
+<span data-ttu-id="dd684-122">Das folgende Beispiel zeigt, wie Sie Lohnanfangssalden von Mitarbeitern einschließlich Einkommenscodes, Vergütungen(Vorteile)/Abzüge und Steuern eingeben.</span><span class="sxs-lookup"><span data-stu-id="dd684-122">The following example shows how you can enter employee payroll beginning balances, including earning codes, benefits/deductions, and taxes.</span></span> <span data-ttu-id="dd684-123">In der Realität hätten Sie eine Position für jeden Einkommenscode, Vergütungsabzug, Vergütungsbeitrag, für die Mitarbeitersteuer und die Arbeitgebersteuer, wobei der eingegebene Betrag der Betrag seit Jahresbeginn wäre.</span><span class="sxs-lookup"><span data-stu-id="dd684-123">In a real-world example you would have a line item for each earning code, benefit deduction, benefit contribution, employee tax and employer tax with the amount entered being the year-to-date amount.</span></span> <span data-ttu-id="dd684-124">Führen Sie mit dieser Liste von Codes und Beträgen die Schritte zum Erstellen einer manuellen Lohnabrechnung und Zahlungsaufstellung, bei der die Buchhaltung deaktiviert ist, um Anfangssalden für Lohnzwecke zu übertragen, aus.</span><span class="sxs-lookup"><span data-stu-id="dd684-124">Using that list of codes and amounts, follow the steps for creating a manual earning and pay statement with accounting disabled to bring over beginning balances for payroll purposes.</span></span>  <span data-ttu-id="dd684-125">Sie deaktivieren die Buchhaltung, da Sie diese Zahlungsaufstellung der Anfangssalden nicht im Hauptbuch buchen möchten.</span><span class="sxs-lookup"><span data-stu-id="dd684-125">You disable accounting because you won't want to post this beginning balance pay statement to your general ledger.</span></span> <span data-ttu-id="dd684-126">Dies wurde im vorherigen System ausgeführt und wird ins neue System übertragen, wenn Sie die Anfangssalden im Hauptbuch einrichten.</span><span class="sxs-lookup"><span data-stu-id="dd684-126">That was done in the legacy system and will come over to the new system when you set beginning balances in General ledger.</span></span>
 
-### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a>A. Einrichten von Einkommenscodes für Lohnanfangssalden
-Wenn Sie Lohnanfangssalden eingeben, müssen Sie sich vergewissern, dass die Einkommenscodes, die Sie verwenden, bei aktivierter Option „Die Bearbeitung von Lohnabrechnungssätzen zulassen“ konfiguriert werden. Dadurch können Sie den Betrag manuell aus dem vorherigen System erfassen. 
+### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a><span data-ttu-id="dd684-127">A.</span><span class="sxs-lookup"><span data-stu-id="dd684-127">A.</span></span> <span data-ttu-id="dd684-128">Einrichten von Einkommenscodes für Lohnanfangssalden</span><span class="sxs-lookup"><span data-stu-id="dd684-128">How to set up earnings codes to be used on payroll beginning balances</span></span>
+<span data-ttu-id="dd684-129">Wenn Sie Lohnanfangssalden eingeben, müssen Sie sich vergewissern, dass die Einkommenscodes, die Sie verwenden, bei aktivierter Option „Die Bearbeitung von Lohnabrechnungssätzen zulassen“ konfiguriert werden.</span><span class="sxs-lookup"><span data-stu-id="dd684-129">When you enter payroll beginning balances, be sure the earning codes that you will be using are configured with the "Allow editing of earning statement rates" option enabled.</span></span> <span data-ttu-id="dd684-130">Dadurch können Sie den Betrag manuell aus dem vorherigen System erfassen.</span><span class="sxs-lookup"><span data-stu-id="dd684-130">This will allow you to manually key the amount from the legacy system.</span></span> 
 
-### <a name="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance"></a>B. Erstellen einer Lohnabrechnung für einen Mitarbeiter, damit ein Anfangssaldo vorhanden ist.
-Dieser Schritt erstellt manuell eine Lohnabrechnung für jede einzelne Arbeitskraft für die letzte Lohnperiode des alten System, welches die Lohnabrechnungspositionen im neuen Lohnsystem erstellt. Geben Sie eine Position pro Einkommenscode, den Betrag seit Jahresbeginn und die Stunden ein. Die Beispielschritte sind nachfolgend aufgeführt.
+### <a name="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance"></a><span data-ttu-id="dd684-131">B.</span><span class="sxs-lookup"><span data-stu-id="dd684-131">B.</span></span> <span data-ttu-id="dd684-132">Erstellen einer Lohnabrechnung für einen Mitarbeiter, damit ein Anfangssaldo vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="dd684-132">Create earnings statement for an employee to have a beginning balance</span></span>
+<span data-ttu-id="dd684-133">Dieser Schritt erstellt manuell eine Lohnabrechnung für jede einzelne Arbeitskraft für die letzte Lohnperiode des alten System, welches die Lohnabrechnungspositionen im neuen Lohnsystem erstellt.</span><span class="sxs-lookup"><span data-stu-id="dd684-133">This step manually creates an earnings statement for each worker for the last pay period of the legacy system, which creates the earning statement lines in the new payroll system.</span></span> <span data-ttu-id="dd684-134">Geben Sie eine Position pro Einkommenscode, den Betrag seit Jahresbeginn und die Stunden ein.</span><span class="sxs-lookup"><span data-stu-id="dd684-134">Enter one line per earning code and the YTD amount and hours.</span></span> <span data-ttu-id="dd684-135">Die Beispielschritte sind nachfolgend aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="dd684-135">The sample steps are as follows:</span></span>
 
-1. Öffnen Sie die Seite **Alle Lohnabrechnungen** und klicken Sie **Neu**.  
+1. <span data-ttu-id="dd684-136">Öffnen Sie die Seite **Alle Lohnabrechnungen** und klicken Sie **Neu**.</span><span class="sxs-lookup"><span data-stu-id="dd684-136">Open the **All earnings statements** page and click **New**.</span></span>  
 
-Geben Sie den Folgendes ein: 
+<span data-ttu-id="dd684-137">Geben Sie den Folgendes ein:</span><span class="sxs-lookup"><span data-stu-id="dd684-137">Enter the following:</span></span> 
 
-| Feld      | Wert                 |
+| <span data-ttu-id="dd684-138">Feld</span><span class="sxs-lookup"><span data-stu-id="dd684-138">Field</span></span>      | <span data-ttu-id="dd684-139">Wert</span><span class="sxs-lookup"><span data-stu-id="dd684-139">Value</span></span>                 |
 |------------|-----------------------|
-| Arbeitskraft     | Michael Redmond       |
-| Lohnzyklus  | sm                    |
-| Lohnperiode | 6/16/2017 - 6/30/2017 |
+| <span data-ttu-id="dd684-140">Arbeitskraft</span><span class="sxs-lookup"><span data-stu-id="dd684-140">Worker</span></span>     | <span data-ttu-id="dd684-141">Michael Redmond</span><span class="sxs-lookup"><span data-stu-id="dd684-141">Michael Redmond</span></span>       |
+| <span data-ttu-id="dd684-142">Lohnzyklus</span><span class="sxs-lookup"><span data-stu-id="dd684-142">Pay cycle</span></span>  | <span data-ttu-id="dd684-143">sm</span><span class="sxs-lookup"><span data-stu-id="dd684-143">sm</span></span>                    |
+| <span data-ttu-id="dd684-144">Lohnperiode</span><span class="sxs-lookup"><span data-stu-id="dd684-144">Pay period</span></span> | <span data-ttu-id="dd684-145">6/16/2017 - 6/30/2017</span><span class="sxs-lookup"><span data-stu-id="dd684-145">6/16/2017 - 6/30/2017</span></span> |
 
-2. Geben Sie auf der Registerkarte **Lohnabrechnungsposition** Folgendes ein:
+2. <span data-ttu-id="dd684-146">Geben Sie auf der Registerkarte **Lohnabrechnungsposition** Folgendes ein:</span><span class="sxs-lookup"><span data-stu-id="dd684-146">In the **Earnings statement line** tab, enter the following:</span></span>
 
-Position 1: **Lohnabrechnungsposition**-Registerkarte
+<span data-ttu-id="dd684-147">Position 1: **Lohnabrechnungsposition**-Registerkarte</span><span class="sxs-lookup"><span data-stu-id="dd684-147">Line 1: **Earning statement line** tab</span></span>
 
-| Feld            | Wert       |
+| <span data-ttu-id="dd684-148">Feld</span><span class="sxs-lookup"><span data-stu-id="dd684-148">Field</span></span>            | <span data-ttu-id="dd684-149">Wert</span><span class="sxs-lookup"><span data-stu-id="dd684-149">Value</span></span>       |
 |------------------|-------------|
-| Einkommenscode    | Regulärer Lohn |
-| Leistung         | 1,00        |
-| Satz             | 30.000      |
-| Positionsdetails-Registerkarte |             |
-| Manuell           | (markiert)    |
+| <span data-ttu-id="dd684-150">Einkommenscode</span><span class="sxs-lookup"><span data-stu-id="dd684-150">Earnings code</span></span>    | <span data-ttu-id="dd684-151">Regulärer Lohn</span><span class="sxs-lookup"><span data-stu-id="dd684-151">Regular pay</span></span> |
+| <span data-ttu-id="dd684-152">Leistung</span><span class="sxs-lookup"><span data-stu-id="dd684-152">Quantity</span></span>         | <span data-ttu-id="dd684-153">1,00</span><span class="sxs-lookup"><span data-stu-id="dd684-153">1.00</span></span>        |
+| <span data-ttu-id="dd684-154">Satz</span><span class="sxs-lookup"><span data-stu-id="dd684-154">Rage</span></span>             | <span data-ttu-id="dd684-155">30.000</span><span class="sxs-lookup"><span data-stu-id="dd684-155">30,000</span></span>      |
+| <span data-ttu-id="dd684-156">Positionsdetails-Registerkarte</span><span class="sxs-lookup"><span data-stu-id="dd684-156">Line details tab</span></span> |             |
+| <span data-ttu-id="dd684-157">Manuell</span><span class="sxs-lookup"><span data-stu-id="dd684-157">Manual</span></span>           | <span data-ttu-id="dd684-158">(markiert)</span><span class="sxs-lookup"><span data-stu-id="dd684-158">(marked)</span></span>    |
 
-Position 2: **Lohnabrechnungsposition**-Registerkarte
+<span data-ttu-id="dd684-159">Position 2: **Lohnabrechnungsposition**-Registerkarte</span><span class="sxs-lookup"><span data-stu-id="dd684-159">Line 2: **Earning statement line** tab</span></span>
 
-| Feld            | Wert    |
+| <span data-ttu-id="dd684-160">Feld</span><span class="sxs-lookup"><span data-stu-id="dd684-160">Field</span></span>            | <span data-ttu-id="dd684-161">Wert</span><span class="sxs-lookup"><span data-stu-id="dd684-161">Value</span></span>    |
 |------------------|----------|
-| Einkommenscode    | Bonus    |
-| Leistung         | 1.0000   |
-| Satz             | 4250.00  |
-| Positionsdetails-Registerkarte |          |
-| Manuell           | (markiert) |
+| <span data-ttu-id="dd684-162">Einkommenscode</span><span class="sxs-lookup"><span data-stu-id="dd684-162">Earnings code</span></span>    | <span data-ttu-id="dd684-163">Bonus</span><span class="sxs-lookup"><span data-stu-id="dd684-163">Bonus</span></span>    |
+| <span data-ttu-id="dd684-164">Leistung</span><span class="sxs-lookup"><span data-stu-id="dd684-164">Quantity</span></span>         | <span data-ttu-id="dd684-165">1.0000</span><span class="sxs-lookup"><span data-stu-id="dd684-165">1.0000</span></span>   |
+| <span data-ttu-id="dd684-166">Satz</span><span class="sxs-lookup"><span data-stu-id="dd684-166">Rate</span></span>             | <span data-ttu-id="dd684-167">4250.00</span><span class="sxs-lookup"><span data-stu-id="dd684-167">4250.00</span></span>  |
+| <span data-ttu-id="dd684-168">Positionsdetails-Registerkarte</span><span class="sxs-lookup"><span data-stu-id="dd684-168">Line details tab</span></span> |          |
+| <span data-ttu-id="dd684-169">Manuell</span><span class="sxs-lookup"><span data-stu-id="dd684-169">Manual</span></span>           | <span data-ttu-id="dd684-170">(markiert)</span><span class="sxs-lookup"><span data-stu-id="dd684-170">(marked)</span></span> |
 
-Position 3: **Lohnabrechnungsposition**-Registerkarte
+<span data-ttu-id="dd684-171">Position 3: **Lohnabrechnungsposition**-Registerkarte</span><span class="sxs-lookup"><span data-stu-id="dd684-171">Line 3: **Earning statement line** tab</span></span>
 
-| Feld           | Wert      |
+| <span data-ttu-id="dd684-172">Feld</span><span class="sxs-lookup"><span data-stu-id="dd684-172">Field</span></span>           | <span data-ttu-id="dd684-173">Wert</span><span class="sxs-lookup"><span data-stu-id="dd684-173">Value</span></span>      |
 |-----------------|------------|
-| Einkommenscode   | Provision |
-| Leistung        | 1.0000     |
-| Satz            | !,299,00   |
-| Satz            | 1,299.00   |
-| Positionsdetails-Registerkarte |            |
-| Manuell          | (markiert)   |
+| <span data-ttu-id="dd684-174">Einkommenscode</span><span class="sxs-lookup"><span data-stu-id="dd684-174">Earnings code</span></span>   | <span data-ttu-id="dd684-175">Provision</span><span class="sxs-lookup"><span data-stu-id="dd684-175">Commission</span></span> |
+| <span data-ttu-id="dd684-176">Leistung</span><span class="sxs-lookup"><span data-stu-id="dd684-176">Quantity</span></span>        | <span data-ttu-id="dd684-177">1.0000</span><span class="sxs-lookup"><span data-stu-id="dd684-177">1.0000</span></span>     |
+| <span data-ttu-id="dd684-178">Satz</span><span class="sxs-lookup"><span data-stu-id="dd684-178">Rate</span></span>            | <span data-ttu-id="dd684-179">!,299,00</span><span class="sxs-lookup"><span data-stu-id="dd684-179">!,299.00</span></span>   |
+| <span data-ttu-id="dd684-180">Satz</span><span class="sxs-lookup"><span data-stu-id="dd684-180">Rate</span></span>            | <span data-ttu-id="dd684-181">1,299.00</span><span class="sxs-lookup"><span data-stu-id="dd684-181">1,299.00</span></span>   |
+| <span data-ttu-id="dd684-182">Positionsdetails-Registerkarte</span><span class="sxs-lookup"><span data-stu-id="dd684-182">Line detail tab</span></span> |            |
+| <span data-ttu-id="dd684-183">Manuell</span><span class="sxs-lookup"><span data-stu-id="dd684-183">Manual</span></span>          | <span data-ttu-id="dd684-184">(markiert)</span><span class="sxs-lookup"><span data-stu-id="dd684-184">(Marked)</span></span>   |
 
 > [!NOTE]
-> Damit die Gehaltsanfangssalden für jeden Mitarbeiter eingegeben werden können, muss für jede Lohnabrechnungsposition der Schieberegler **Manuell** auf der Registerkarte **Positionsdetails** auf **Ja** gestellt werden.
+> <span data-ttu-id="dd684-185">Damit die Gehaltsanfangssalden für jeden Mitarbeiter eingegeben werden können, muss für jede Lohnabrechnungsposition der Schieberegler **Manuell** auf der Registerkarte **Positionsdetails** auf **Ja** gestellt werden.</span><span class="sxs-lookup"><span data-stu-id="dd684-185">Setting the **Manual** slider to **Yes** in the **Line Details** tab for each earnings statement line is key to have payroll beginning balances entered for each worker.</span></span>
 
-3. Wählen Sie im Bereich **Aktivität** **Lohnabrechnung freigeben** aus USA-FED-ER-FICA.
+3. <span data-ttu-id="dd684-186">Wählen Sie im Bereich **Aktivität** **Lohnabrechnung freigeben** aus USA-FED-ER-FICA.</span><span class="sxs-lookup"><span data-stu-id="dd684-186">On the **Action** pane, click **Release earnings statement** USA-FED-ER-FICA.</span></span>
 
-4. Klicken Sie im Bereich **Aktivität** auf **Zahlungsaufstellung**, um die Seite **Zahlungsaufstellungen generieren** zu öffnen und Folgendes festzulegen:
+4. <span data-ttu-id="dd684-187">Klicken Sie im Bereich **Aktivität** auf **Zahlungsaufstellung**, um die Seite **Zahlungsaufstellungen generieren** zu öffnen und Folgendes festzulegen:</span><span class="sxs-lookup"><span data-stu-id="dd684-187">On the **Action** pane click **Pay statement** to open the **Generate pay statements** page and set the following:</span></span>
 
-| Feld              | Wert     |
+| <span data-ttu-id="dd684-188">Feld</span><span class="sxs-lookup"><span data-stu-id="dd684-188">Field</span></span>              | <span data-ttu-id="dd684-189">Wert</span><span class="sxs-lookup"><span data-stu-id="dd684-189">Value</span></span>     |
 |--------------------|-----------|
-| Zahlungsdatum       | 6/30/2017 |
-| Zahlungslauftyp   | Manuell    |
-| Buchhaltung deaktivieren |   Ja     |
+| <span data-ttu-id="dd684-190">Zahlungsdatum</span><span class="sxs-lookup"><span data-stu-id="dd684-190">Payment date</span></span>       | <span data-ttu-id="dd684-191">6/30/2017</span><span class="sxs-lookup"><span data-stu-id="dd684-191">6/30/2017</span></span> |
+| <span data-ttu-id="dd684-192">Zahlungslauftyp</span><span class="sxs-lookup"><span data-stu-id="dd684-192">Payment run type</span></span>   | <span data-ttu-id="dd684-193">Manuell</span><span class="sxs-lookup"><span data-stu-id="dd684-193">Manual</span></span>    |
+| <span data-ttu-id="dd684-194">Buchhaltung deaktivieren</span><span class="sxs-lookup"><span data-stu-id="dd684-194">Disable accounting</span></span> |   <span data-ttu-id="dd684-195">Ja</span><span class="sxs-lookup"><span data-stu-id="dd684-195">Yes</span></span>     |
 
 > [!NOTE] 
-> Dies ist nur verfügbar, wenn der Zahlungslauftyp manuell ist und wenn der Benutzer die Buchhaltung für die Zahlungsausführung deaktivieren möchte.
+> <span data-ttu-id="dd684-196">Dies ist nur verfügbar, wenn der Zahlungslauftyp manuell ist und wenn der Benutzer die Buchhaltung für die Zahlungsausführung deaktivieren möchte.</span><span class="sxs-lookup"><span data-stu-id="dd684-196">This is only available when the payment run type is manual and wherein the user want to disable accounting on the pay run.</span></span>
 
-Klicken Sie auf **OK**, und schließen Sie **Infolog**.
+<span data-ttu-id="dd684-197">Klicken Sie auf **OK**, und schließen Sie **Infolog**.</span><span class="sxs-lookup"><span data-stu-id="dd684-197">Click **OK** and close the **Infolog**.</span></span>
 
-#### <a name="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements"></a>Warum muss der Schieberegler "Buchhaltung deaktivieren" auf "Ja" gesetzt werden, wenn Zahlungsaufstellungen erstellt werden?
-Wenn der Schieberegler auf **Ja** gesetzt ist, wird verhindert, dass Positionen der Zahlungsaufstellung in das Sachkonto weitergegeben werden. Die Sachkontenbeträge wurden zuvor aktualisiert, als die Kontensalden aus dem alten System eingegeben wurden. Durch die Eingabe von Anfangssalden für die Gehaltsabrechnung können Sie Berichte erstellen, die Informationen aus Vorjahren enthalten, ebenso wie für die Identifizierung von Limits für Zulagen- und Steuerzwecke.   
+#### <a name="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements"></a><span data-ttu-id="dd684-198">Warum muss der Schieberegler "Buchhaltung deaktivieren" auf "Ja" gesetzt werden, wenn Zahlungsaufstellungen erstellt werden?</span><span class="sxs-lookup"><span data-stu-id="dd684-198">Why the Disable Accounting slider needs to set to Yes when generating pay statements?</span></span>
+<span data-ttu-id="dd684-199">Wenn der Schieberegler auf **Ja** gesetzt ist, wird verhindert, dass Positionen der Zahlungsaufstellung in das Sachkonto weitergegeben werden.</span><span class="sxs-lookup"><span data-stu-id="dd684-199">Setting the slider to **Yes** prevents lines in the pay statement from being districuted to General ledger.</span></span> <span data-ttu-id="dd684-200">Die Sachkontenbeträge wurden zuvor aktualisiert, als die Kontensalden aus dem alten System eingegeben wurden.</span><span class="sxs-lookup"><span data-stu-id="dd684-200">General ledger amounts were updating earlier when account balances from the legacy system were entered.</span></span> <span data-ttu-id="dd684-201">Durch die Eingabe von Anfangssalden für die Gehaltsabrechnung können Sie Berichte erstellen, die Informationen aus Vorjahren enthalten, ebenso wie für die Identifizierung von Limits für Zulagen- und Steuerzwecke.</span><span class="sxs-lookup"><span data-stu-id="dd684-201">Entering beginning balances for Payroll lets you generate reports that include information from prior years, as well as for identifying limits for benefit and tax purposes.</span></span>   
 
-### <a name="c-create-pay-statements-for-employees"></a>C. Erstellen von Zahlungsaufstellungen für Mitarbeiter
-Nachdem Sie Zahlungsaufstellungen generiert haben, die Anfangssalden haben, müssen Sie überprüfen, ob die Zahlungsaufstellungen die Lohndaten korrekt widerspiegeln. Sie müssen zudem die Vergütungen und Steuerinformationen manuell aktualisieren, damit sie mit den Werten aus dem alten Lohnsystem übereinstimmen. Wenn Sie sich vergewissert haben, dass die Beträge aus dem vorherigen Lohnsystem mit den Beträgen der aktuellen Zahlungsaufstellungen übereinstimmen, müssen Sie die Zahlungsaufstellungen abschließen.
+### <a name="c-create-pay-statements-for-employees"></a><span data-ttu-id="dd684-202">C.</span><span class="sxs-lookup"><span data-stu-id="dd684-202">C.</span></span> <span data-ttu-id="dd684-203">Erstellen von Zahlungsaufstellungen für Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="dd684-203">Create pay statements for employees</span></span>
+<span data-ttu-id="dd684-204">Nachdem Sie Zahlungsaufstellungen generiert haben, die Anfangssalden haben, müssen Sie überprüfen, ob die Zahlungsaufstellungen die Lohndaten korrekt widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="dd684-204">After you generate pay statements that have beginning balances, you must verify that the pay statements accurately reflect payroll data.</span></span> <span data-ttu-id="dd684-205">Sie müssen zudem die Vergütungen und Steuerinformationen manuell aktualisieren, damit sie mit den Werten aus dem alten Lohnsystem übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="dd684-205">You must also manually update the benefit and taxes information to match the values in the previous payroll system.</span></span> <span data-ttu-id="dd684-206">Wenn Sie sich vergewissert haben, dass die Beträge aus dem vorherigen Lohnsystem mit den Beträgen der aktuellen Zahlungsaufstellungen übereinstimmen, müssen Sie die Zahlungsaufstellungen abschließen.</span><span class="sxs-lookup"><span data-stu-id="dd684-206">After you verify that the amounts from the previous payroll system match the amounts on the current pay statements, you must finalize the pay statements.</span></span>
 
-1. Öffnen Sie die Seite **Alle Zahlungsaufstellungen**.
+1. <span data-ttu-id="dd684-207">Öffnen Sie die Seite **Alle Zahlungsaufstellungen**.</span><span class="sxs-lookup"><span data-stu-id="dd684-207">Open the **All pay statements** page.</span></span>
 
-2. Markieren der letzten Zahlungsaufstellung für Michael Redmond
+2. <span data-ttu-id="dd684-208">Markieren der letzten Zahlungsaufstellung für Michael Redmond</span><span class="sxs-lookup"><span data-stu-id="dd684-208">Highlight the last generated pay statement for Michael Redmond</span></span>
 
-3. Klicken Sie auf **Bearbeiten**, um die Seite **Zahlungsaufstellung** zu öffnen.
+3. <span data-ttu-id="dd684-209">Klicken Sie auf **Bearbeiten**, um die Seite **Zahlungsaufstellung** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="dd684-209">Click **Edit** to open the **Pay statement** page.</span></span>
 
-4. Öffnen Sie die Registerkarte **Vergütungsabzüge** und geben Sie Folgendes ein:
+4. <span data-ttu-id="dd684-210">Öffnen Sie die Registerkarte **Vergütungsabzüge** und geben Sie Folgendes ein:</span><span class="sxs-lookup"><span data-stu-id="dd684-210">Open the **Benefit deductions** tab and enter the following:</span></span>
 
-| Feld                           | Wert            |
+| <span data-ttu-id="dd684-211">Feld</span><span class="sxs-lookup"><span data-stu-id="dd684-211">Field</span></span>                           | <span data-ttu-id="dd684-212">Wert</span><span class="sxs-lookup"><span data-stu-id="dd684-212">Value</span></span>            |
 |---------------------------------|------------------|
-| Vergütung                         | Abzugsbetrag |
-| 401K | Teilnehmen              | 3000.00          |
-| Zahnbehandlungs-Zusatzversicherung | SubSp                  | 495,00           |
-| Betreuungskosten | Teilnehmen | 2500.00          |
-| Vision | SupSp                  | 500,00           |
+| <span data-ttu-id="dd684-213">Vergütung</span><span class="sxs-lookup"><span data-stu-id="dd684-213">Benefit</span></span>                         | <span data-ttu-id="dd684-214">Abzugsbetrag</span><span class="sxs-lookup"><span data-stu-id="dd684-214">Deduction amount</span></span> |
+| <span data-ttu-id="dd684-215">401K</span><span class="sxs-lookup"><span data-stu-id="dd684-215">401K</span></span> | <span data-ttu-id="dd684-216">Teilnehmen</span><span class="sxs-lookup"><span data-stu-id="dd684-216">Participate</span></span>              | <span data-ttu-id="dd684-217">3000.00</span><span class="sxs-lookup"><span data-stu-id="dd684-217">3000.00</span></span>          |
+| <span data-ttu-id="dd684-218">Zahnbehandlungs-Zusatzversicherung</span><span class="sxs-lookup"><span data-stu-id="dd684-218">Dental</span></span> | <span data-ttu-id="dd684-219">SubSp</span><span class="sxs-lookup"><span data-stu-id="dd684-219">SubSp</span></span>                  | <span data-ttu-id="dd684-220">495,00</span><span class="sxs-lookup"><span data-stu-id="dd684-220">495.00</span></span>           |
+| <span data-ttu-id="dd684-221">Betreuungskosten</span><span class="sxs-lookup"><span data-stu-id="dd684-221">Dep care spending</span></span> | <span data-ttu-id="dd684-222">Teilnehmen</span><span class="sxs-lookup"><span data-stu-id="dd684-222">Participate</span></span> | <span data-ttu-id="dd684-223">2500.00</span><span class="sxs-lookup"><span data-stu-id="dd684-223">2500.00</span></span>          |
+| <span data-ttu-id="dd684-224">Vision</span><span class="sxs-lookup"><span data-stu-id="dd684-224">Vision</span></span> | <span data-ttu-id="dd684-225">SupSp</span><span class="sxs-lookup"><span data-stu-id="dd684-225">SupSp</span></span>                  | <span data-ttu-id="dd684-226">500,00</span><span class="sxs-lookup"><span data-stu-id="dd684-226">500.00</span></span>           |
 
-5. Geben Sie auf der Registerkarte **Vergütungsbeiträge** Folgendes ein:
+5. <span data-ttu-id="dd684-227">Geben Sie auf der Registerkarte **Vergütungsbeiträge** Folgendes ein:</span><span class="sxs-lookup"><span data-stu-id="dd684-227">In the **Benefit contributions** tab and enter the following:</span></span>
 
-| Feld              | Wert               |
+| <span data-ttu-id="dd684-228">Feld</span><span class="sxs-lookup"><span data-stu-id="dd684-228">Field</span></span>              | <span data-ttu-id="dd684-229">Wert</span><span class="sxs-lookup"><span data-stu-id="dd684-229">Value</span></span>               |
 |--------------------|---------------------|
-| Vergütung            | Beitragsbetrag |
-| 401K | Teilnehmen | 3000,00             |
-| Zahnbehandlungs-Zusatzversicherung | SubSp     | 495,00              |
-| Vision | SubSp     | 500,00              |
+| <span data-ttu-id="dd684-230">Vergütung</span><span class="sxs-lookup"><span data-stu-id="dd684-230">Benefit</span></span>            | <span data-ttu-id="dd684-231">Beitragsbetrag</span><span class="sxs-lookup"><span data-stu-id="dd684-231">Contribution amount</span></span> |
+| <span data-ttu-id="dd684-232">401K</span><span class="sxs-lookup"><span data-stu-id="dd684-232">401K</span></span> | <span data-ttu-id="dd684-233">Teilnehmen</span><span class="sxs-lookup"><span data-stu-id="dd684-233">Participate</span></span> | <span data-ttu-id="dd684-234">3000,00</span><span class="sxs-lookup"><span data-stu-id="dd684-234">3000,00</span></span>             |
+| <span data-ttu-id="dd684-235">Zahnbehandlungs-Zusatzversicherung</span><span class="sxs-lookup"><span data-stu-id="dd684-235">Dental</span></span> | <span data-ttu-id="dd684-236">SubSp</span><span class="sxs-lookup"><span data-stu-id="dd684-236">SubSp</span></span>     | <span data-ttu-id="dd684-237">495,00</span><span class="sxs-lookup"><span data-stu-id="dd684-237">495.00</span></span>              |
+| <span data-ttu-id="dd684-238">Vision</span><span class="sxs-lookup"><span data-stu-id="dd684-238">Vision</span></span> | <span data-ttu-id="dd684-239">SubSp</span><span class="sxs-lookup"><span data-stu-id="dd684-239">SubSp</span></span>     | <span data-ttu-id="dd684-240">500,00</span><span class="sxs-lookup"><span data-stu-id="dd684-240">500.00</span></span>              |
 
-6. Geben Sie auf der Registerkarte **Steuerabzüge** Folgendes ein:
+6. <span data-ttu-id="dd684-241">Geben Sie auf der Registerkarte **Steuerabzüge** Folgendes ein:</span><span class="sxs-lookup"><span data-stu-id="dd684-241">In the **Tax deductions** tab, enter the following:</span></span>
 
-| Feld           | Wert            |
+| <span data-ttu-id="dd684-242">Feld</span><span class="sxs-lookup"><span data-stu-id="dd684-242">Field</span></span>           | <span data-ttu-id="dd684-243">Wert</span><span class="sxs-lookup"><span data-stu-id="dd684-243">Value</span></span>            |
 |-----------------|------------------|
-| Steuercode        | Abzugsbetrag |
-| USA-FED-ER-FICA | 1600.00          |
-| USA-FED-ER-MEDI | 825.75           |
+| <span data-ttu-id="dd684-244">Steuercode</span><span class="sxs-lookup"><span data-stu-id="dd684-244">Tax code</span></span>        | <span data-ttu-id="dd684-245">Abzugsbetrag</span><span class="sxs-lookup"><span data-stu-id="dd684-245">Deduction amount</span></span> |
+| <span data-ttu-id="dd684-246">USA-FED-ER-FICA</span><span class="sxs-lookup"><span data-stu-id="dd684-246">USA-FED-ER-FICA</span></span> | <span data-ttu-id="dd684-247">1600.00</span><span class="sxs-lookup"><span data-stu-id="dd684-247">1600.00</span></span>          |
+| <span data-ttu-id="dd684-248">USA-FED-ER-MEDI</span><span class="sxs-lookup"><span data-stu-id="dd684-248">USA-FED-ER-MEDI</span></span> | <span data-ttu-id="dd684-249">825.75</span><span class="sxs-lookup"><span data-stu-id="dd684-249">825.75</span></span>           |
 
-7. Geben Sie auf der Registerkarte **Steuerbeiträge** Folgendes ein:
+7. <span data-ttu-id="dd684-250">Geben Sie auf der Registerkarte **Steuerbeiträge** Folgendes ein:</span><span class="sxs-lookup"><span data-stu-id="dd684-250">In the **Tax contributions** tab enter the following:</span></span>
 
-8. Klicken Sie auf **Berechnen**.
+8. <span data-ttu-id="dd684-251">Klicken Sie auf **Berechnen**.</span><span class="sxs-lookup"><span data-stu-id="dd684-251">Click **Calculate**.</span></span>
 > [!IMPORTANT] 
-> Stellen Sie sicher, dass die Summen der Zahlungsaufstellung mit dem Betrag seit Jahresanfang des alten Systems für die Arbeitskraft übereinstimmen. Sie möchten im nächsten Schritt möglicherweise das Abschließen aufschieben, um eine allgemeine Validierung der Zahlungsaufstellungen im Aggregat durchzuführen. Gehen Sie nach der Validierung die einzelnen Zahlungsaufstellungen durch, und schließen Sie sie ab.
+> <span data-ttu-id="dd684-252">Stellen Sie sicher, dass die Summen der Zahlungsaufstellung mit dem Betrag seit Jahresanfang des alten Systems für die Arbeitskraft übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="dd684-252">Validate the totals of the pay statement that they match the YTD of the legacy system for the worker.</span></span> <span data-ttu-id="dd684-253">Sie möchten im nächsten Schritt möglicherweise das Abschließen aufschieben, um eine allgemeine Validierung der Zahlungsaufstellungen im Aggregat durchzuführen.</span><span class="sxs-lookup"><span data-stu-id="dd684-253">You may want to hold off on finalizing in the next step to do some overall validating of all pay statements in aggregate.</span></span> <span data-ttu-id="dd684-254">Gehen Sie nach der Validierung die einzelnen Zahlungsaufstellungen durch, und schließen Sie sie ab.</span><span class="sxs-lookup"><span data-stu-id="dd684-254">Once validated run through all the pay statements and finalize them.</span></span>
 
-Der gleiche Vorgang kann in den Viertelschritten für alle vorherigen Quartale in den einzelnen Jahren durchgeführt werden. Dies ist nur erforderlich, wenn der Debitor die Daten nach Quartal anzeigen muss, ohne auf das alte System zurückzugreifen.
+<span data-ttu-id="dd684-255">Der gleiche Vorgang kann in den Viertelschritten für alle vorherigen Quartale in den einzelnen Jahren durchgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="dd684-255">The same process can be done in quarter increments if necessary for all prior quarters in each year.</span></span> <span data-ttu-id="dd684-256">Dies ist nur erforderlich, wenn der Debitor die Daten nach Quartal anzeigen muss, ohne auf das alte System zurückzugreifen.</span><span class="sxs-lookup"><span data-stu-id="dd684-256">This is only needed if the customer needs to see the data by quarter without going back to the legacy system.</span></span>
 
-## <a name="if-you-make-a-mistake-entering-beginning-balances-for-an-employee"></a>Fehler bei der Eingabe von Anfangssalden für einen Mitarbeiter
-Es ist möglich, Buchungen zu stornieren und erneut eingeben. Um die Buchung zu stornieren, müssen Sie die folgenden Schritte auf der Seite **Alle Zahlungsaufstellungen** abschließen.
+## <a name="if-you-make-a-mistake-entering-beginning-balances-for-an-employee"></a><span data-ttu-id="dd684-257">Fehler bei der Eingabe von Anfangssalden für einen Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="dd684-257">If you make a mistake Entering Beginning Balances for an Employee</span></span>
+<span data-ttu-id="dd684-258">Es ist möglich, Buchungen zu stornieren und erneut eingeben.</span><span class="sxs-lookup"><span data-stu-id="dd684-258">It is possible to reverse and reenter transactions.</span></span> <span data-ttu-id="dd684-259">Um die Buchung zu stornieren, müssen Sie die folgenden Schritte auf der Seite **Alle Zahlungsaufstellungen** abschließen.</span><span class="sxs-lookup"><span data-stu-id="dd684-259">To reverse the transaction, all you have to do is to complete the follow steps on the **All pay statements** page.</span></span>
 
-1. Klicken Sie auf **Stornieren**.
+1. <span data-ttu-id="dd684-260">Klicken Sie auf **Stornieren**.</span><span class="sxs-lookup"><span data-stu-id="dd684-260">Click **Reverse**.</span></span>
 
-2. Klicken Sie auf **Ja**, wenn die Nachricht „Wenn Sie diese Zahlungsaufstellung zurücksetzen, wird eine Rückbuchungszahlungsaufstellung zum Ausgleichen dieser Zahlungsaufstellung erstellt. Keine der Zahlungsaufstellungen kann bearbeitet werden. Möchten Sie diese Zahlungsaufstellung zurücksetzen?“ angezeigt wird. 
+2. <span data-ttu-id="dd684-261">Klicken Sie auf **Ja**, wenn die Nachricht „Wenn Sie diese Zahlungsaufstellung zurücksetzen, wird eine Rückbuchungszahlungsaufstellung zum Ausgleichen dieser Zahlungsaufstellung erstellt.</span><span class="sxs-lookup"><span data-stu-id="dd684-261">Click **Yes** when the message "When you reverse this pay statement, a reversing pay statement will be created to offset this pay statement.</span></span> <span data-ttu-id="dd684-262">Keine der Zahlungsaufstellungen kann bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="dd684-262">Neither pay statement can be edited.</span></span> <span data-ttu-id="dd684-263">Möchten Sie diese Zahlungsaufstellung zurücksetzen?“</span><span class="sxs-lookup"><span data-stu-id="dd684-263">Do you want to reverse this pay statement?"</span></span> <span data-ttu-id="dd684-264">angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="dd684-264">displays.</span></span> 
 
-Nachdem Sie die Zahlungsaufstellung rückgängig gemacht haben, können Sie eine neue Zahlungsaufstellung für den Mitarbeiter aus der zuvor erstellten Lohnabrechnung erstellen. Achten Sie darauf, dass alle fehlerhaften Positionen der Zahlungsaufstellung korrigiert werden, bevor Sie die neue Zahlungsaufstellung erzeugen, und erzeugen Sie dann die neuen Zahlungsaufstellungen mit den richtigen Beträgen. 
+<span data-ttu-id="dd684-265">Nachdem Sie die Zahlungsaufstellung rückgängig gemacht haben, können Sie eine neue Zahlungsaufstellung für den Mitarbeiter aus der zuvor erstellten Lohnabrechnung erstellen.</span><span class="sxs-lookup"><span data-stu-id="dd684-265">After you reverse the pay statement, you can generate a new pay statement for the worker from the earnings statement that you created previously.</span></span> <span data-ttu-id="dd684-266">Achten Sie darauf, dass alle fehlerhaften Positionen der Zahlungsaufstellung korrigiert werden, bevor Sie die neue Zahlungsaufstellung erzeugen, und erzeugen Sie dann die neuen Zahlungsaufstellungen mit den richtigen Beträgen.</span><span class="sxs-lookup"><span data-stu-id="dd684-266">Be sure to fix any incorrect lines on the earnings statement before you generate the new pay statement, and then generate new pay statements with the correct amounts.</span></span> 
 

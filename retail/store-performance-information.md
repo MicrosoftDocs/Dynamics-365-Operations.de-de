@@ -19,33 +19,33 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 37baac8d3160b95f75dd11197fc60060450c0680
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5cb5881cdb9c769bfc4272da85bc1c886a36705b
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="analyze-store-performance"></a>Analysieren der Leistung des Geschäfts
+# <a name="analyze-store-performance"></a><span data-ttu-id="e1f02-103">Analysieren der Leistung des Geschäfts</span><span class="sxs-lookup"><span data-stu-id="e1f02-103">Analyze store performance</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke zu Speicherleistung basierend auf Ihren Microsoft Dynamics 365 for Retail-Daten zu erhalten. 
+<span data-ttu-id="e1f02-104">In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke zu Speicherleistung basierend auf Ihren Microsoft Dynamics 365 for Retail-Daten zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="e1f02-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Retail data.</span></span> 
 
-In Microsoft Dynamics 365 for Retail können Benutzer die Shopleistung in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für eine ausgewählte Periode überprüfen, indem sie den vordefinierten Bericht **Kanalzusammenfassung** an einer der folgenden Stellen öffnen:
+<span data-ttu-id="e1f02-105">In Microsoft Dynamics 365 for Retail können Benutzer die Shopleistung in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für eine ausgewählte Periode überprüfen, indem sie den vordefinierten Bericht **Kanalzusammenfassung** an einer der folgenden Stellen öffnen:</span><span class="sxs-lookup"><span data-stu-id="e1f02-105">As part of Dynamics 365 for Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
 
--   **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**
--   **Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**
--   **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Kanalzusammenfassung**
+-   <span data-ttu-id="e1f02-106">**Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**</span><span class="sxs-lookup"><span data-stu-id="e1f02-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
+-   <span data-ttu-id="e1f02-107">**Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**</span><span class="sxs-lookup"><span data-stu-id="e1f02-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
+-   <span data-ttu-id="e1f02-108">**Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Kanalzusammenfassung**</span><span class="sxs-lookup"><span data-stu-id="e1f02-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
 
-Der Bericht enthält eine Momentaufnahme der folgenden Zusammenfassungen im Rahmen der Shopleistung:
+<span data-ttu-id="e1f02-109">Der Bericht enthält eine Momentaufnahme der folgenden Zusammenfassungen im Rahmen der Shopleistung:</span><span class="sxs-lookup"><span data-stu-id="e1f02-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
 
--   Übersicht Bruttoverkäufe
--   Übersicht Zahlungsmitteltyp
--   Steuerzusammenfassung
--   Preisüberschreibungsübersicht
--   Rabattübersicht
+-   <span data-ttu-id="e1f02-110">Übersicht Bruttoverkäufe</span><span class="sxs-lookup"><span data-stu-id="e1f02-110">Gross sales summary</span></span>
+-   <span data-ttu-id="e1f02-111">Übersicht Zahlungsmitteltyp</span><span class="sxs-lookup"><span data-stu-id="e1f02-111">Tender type summary</span></span>
+-   <span data-ttu-id="e1f02-112">Steuerzusammenfassung</span><span class="sxs-lookup"><span data-stu-id="e1f02-112">Tax summary</span></span>
+-   <span data-ttu-id="e1f02-113">Preisüberschreibungsübersicht</span><span class="sxs-lookup"><span data-stu-id="e1f02-113">Price overrides summary</span></span>
+-   <span data-ttu-id="e1f02-114">Rabattübersicht</span><span class="sxs-lookup"><span data-stu-id="e1f02-114">Discounts summary</span></span>
 
 
 

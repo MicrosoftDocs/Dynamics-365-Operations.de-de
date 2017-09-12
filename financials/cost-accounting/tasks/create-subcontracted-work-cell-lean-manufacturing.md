@@ -16,59 +16,59 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 41cf47bb0578d9c854bd0dfc078b5b6fb559abca
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fc8dc0bc29c6bdb662c46808491abf5395f0be5d
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Eine Fremdarbeitszelle für Lean Manufacturing erstellen
+# <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a><span data-ttu-id="e6aa6-103">Eine Fremdarbeitszelle für Lean Manufacturing erstellen</span><span class="sxs-lookup"><span data-stu-id="e6aa6-103">Create a subcontracted work cell for lean manufacturing</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Um Arbeit für Lean Manufacturing zu modellieren, müssen Sie eine Fertigungszelle erstellen, die dem Kreditor zugeordnet ist, der die Arbeit bereitstellt. Eine Fertigungszelle wird an den Kreditor über die Zuordnung eine Ressource vom Kreditorentyps verknüpft. Wenn Sie dieser Buchung im USMF-Vorführungsunternehmen wiedergeben, können Sie Kreditorenkontokennung 1002 und 1. Standort auswählen.
+<span data-ttu-id="e6aa6-104">Um Arbeit für Lean Manufacturing zu modellieren, müssen Sie eine Fertigungszelle erstellen, die dem Kreditor zugeordnet ist, der die Arbeit bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-104">To model subcontracted work for lean manufacturing, you must create a work cell that is associated with the vendor that provides the work.</span></span> <span data-ttu-id="e6aa6-105">Eine Fertigungszelle wird an den Kreditor über die Zuordnung eine Ressource vom Kreditorentyps verknüpft.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-105">A subcontracted work cell is linked to the vendor through the association of a resource of the Vendor type.</span></span> <span data-ttu-id="e6aa6-106">Wenn Sie dieser Buchung im USMF-Vorführungsunternehmen wiedergeben, können Sie Kreditorenkontokennung 1002 und 1. Standort auswählen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-106">If you play this recording in the USMF demo company, you can select vendor account ID 1002 and site 1.</span></span>
 
 
-## <a name="create-a-vendor-resource"></a>Erstellen einer Ressourcengruppe
-1. Wechseln Sie zu "Ressourcen".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Ressource" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Wählen Sie im Feld Kreditor den Typ aus.
-6. Klicken Sie im Feld "Händler" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+## <a name="create-a-vendor-resource"></a><span data-ttu-id="e6aa6-107">Erstellen einer Ressourcengruppe</span><span class="sxs-lookup"><span data-stu-id="e6aa6-107">Create a vendor resource</span></span>
+1. <span data-ttu-id="e6aa6-108">Wechseln Sie zu "Ressourcen".</span><span class="sxs-lookup"><span data-stu-id="e6aa6-108">Go to Resources.</span></span>
+2. <span data-ttu-id="e6aa6-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="e6aa6-109">Click New.</span></span>
+3. <span data-ttu-id="e6aa6-110">Geben Sie im Feld "Ressource" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-110">In the Resource field, type a value.</span></span>
+4. <span data-ttu-id="e6aa6-111">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="e6aa6-112">Wählen Sie im Feld Kreditor den Typ aus.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-112">In the Type field, select 'Vendor'.</span></span>
+6. <span data-ttu-id="e6aa6-113">Klicken Sie im Feld "Händler" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-113">In the Vendor field, click the drop-down button to open the lookup.</span></span>
 
-## <a name="create-the-resource-group"></a>Ressourcengruppe erstellen
-1. Wechseln Sie zu "Ressourcengruppen".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Ressourcengruppe" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Klicken Sie im Feld "Standort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Wählen Sie den Standort aus, dem die Fertigungszelle zugeordnet werden soll. In der Theorie kann ein Standort einen einzelnen Standort darstellen, der von einem Kreditor bearbeitet wird. Allerdings werden in den meisten Fällen Ressourcen aktuell dem Standort zugeordnet, der die Aufträge in  Fremdarbeit ausführt. Beachten Sie, dass die von Eingangs- und Ausgangslagerorte geregelten Fertigungszellen demselben Standort entsprechen müssen.  
-6. Geben Sie im Feld "Standort" einen Wert ein.
+## <a name="create-the-resource-group"></a><span data-ttu-id="e6aa6-114">Ressourcengruppe erstellen</span><span class="sxs-lookup"><span data-stu-id="e6aa6-114">Create the resource group</span></span>
+1. <span data-ttu-id="e6aa6-115">Wechseln Sie zu "Ressourcengruppen".</span><span class="sxs-lookup"><span data-stu-id="e6aa6-115">Go to Resource groups.</span></span>
+2. <span data-ttu-id="e6aa6-116">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="e6aa6-116">Click New.</span></span>
+3. <span data-ttu-id="e6aa6-117">Geben Sie im Feld "Ressourcengruppe" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-117">In the Resource group field, type a value.</span></span>
+4. <span data-ttu-id="e6aa6-118">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-118">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="e6aa6-119">Klicken Sie im Feld "Standort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-119">In the Site field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="e6aa6-120">Wählen Sie den Standort aus, dem die Fertigungszelle zugeordnet werden soll.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-120">Select the site that the work cell should be allocated to.</span></span> <span data-ttu-id="e6aa6-121">In der Theorie kann ein Standort einen einzelnen Standort darstellen, der von einem Kreditor bearbeitet wird.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-121">In theory, a site can represent a single site that is operated by a vendor.</span></span> <span data-ttu-id="e6aa6-122">Allerdings werden in den meisten Fällen Ressourcen aktuell dem Standort zugeordnet, der die Aufträge in  Fremdarbeit ausführt.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-122">However, in most cases, subcontracted resources are just allocated to the site that orders the subcontracted work.</span></span> <span data-ttu-id="e6aa6-123">Beachten Sie, dass die von Eingangs- und Ausgangslagerorte geregelten Fertigungszellen demselben Standort entsprechen müssen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-123">Note that the input and output warehouses of subcontracted work cells must be on the same site.</span></span>  
+6. <span data-ttu-id="e6aa6-124">Geben Sie im Feld "Standort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-124">In the Site field, type a value.</span></span>
 7. @SysTaskRecorder:_RequestClose
-8. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen Arbeitsgruppe.
-9. Klicken Sie im Feld "Eingangslagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Wählen Sie den Lagerort und Lagerplatz aus, die das Material für die Kreditor-verwaltete Arbeitsgruppe verwendet werden. In vielen Fällen werden der Lagerort und der Lagerplatz modelliert, indem Sie einen separaten Lagerort pro Lieferant und pro Fertigungszelle für einen Lagerplatz verwenden.  
-10. Klicken Sie im Feld "Lagerplatz für Wareneingang" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-11. Klicken Sie im Feld "Ausgangslagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Definieren Sie den Lagerort und Lagerplatz, an dem das Material gebucht wird, wenn die von gesetzlichen Bestimmungen unterliegenden Aktivitäten der Fertigungszelle gebucht werden. Der Lagerort und der Ort können am Kreditorenstandort sein, wenn der Kreditor an die Kanban-Einzelvorgänge berichtet. Alternativ kann der Lagerort und der Lagerplatz der empfangende Speicherort sein, der mit dem nächsten Schritt des Produktionsflusses verknüpft ist.  
-12. Klicken Sie im Feld "Lagerplatz für Warenausgang" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-13. Erweitern oder reduzieren Sie den Abschnitt "Kalender".
-14. Klicken Sie auf Hinzufügen.
-15. Klicken Sie im Feld "Kalender" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Wählen Sie den Kalender aus, der die Arbeitszeit der angegebenen Arbeitsgruppe darstellt. Für wichtige Ressourcen empfehlen wir jedoch, die bestimmten Kalender zu definieren, die die Ausführung für die  Arbeitszeiten und die zugehörigen Fertigungszelle- oder Kapazitäten des Kreditorenstandorts darstellen.  
-16. Erweitern oder reduzieren Sie den Abschnitt Ressourcen.
-17. Klicken Sie auf Hinzufügen.
-    * Eine Ressourcengruppe muss eine zugehörige Ressource des Kreditorentyps haben, der die Ressourcengruppe auf dem Kreditorenkonto zugeordnet hat.  
-18. Klicken Sie im Feld Ressourcen auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Wählen Sie die Kreditorenressource aus, die Sie in der vorherigen Unteraufgabe erstellt haben.  
-19. Erweitern oder reduzieren Sie den Abschnitt "Arbeisgruppenkapazität".
-20. Klicken Sie auf Hinzufügen.
-    * Eine Fertigungszelle muss eine festgelegte Kapazität verfügen. In diesem Beispiel erstellen wir eine Durchsatzkapazität von 100 Stück pro Standardarbeitstag.  
-21. Klicken Sie im Feld "Produktionsflussmodell" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-22. Wählen Sie im Feld "Kapazitätsperiode" eine Option aus.
-23. Geben Sie im Feld "Durchschnittliche Durchsatzmenge" eine Zahl ein.
-24. Klicken Sie im Feld "Einheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-25. "Auflösen" verändert die Einheit.
+8. <span data-ttu-id="e6aa6-125">Aktivieren bzw. deaktivieren Sie das Kontrollkästchen Arbeitsgruppe.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-125">Select or clear the Work cell check box.</span></span>
+9. <span data-ttu-id="e6aa6-126">Klicken Sie im Feld "Eingangslagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-126">In the Input warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="e6aa6-127">Wählen Sie den Lagerort und Lagerplatz aus, die das Material für die Kreditor-verwaltete Arbeitsgruppe verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-127">Select the warehouse and location that are used to stage the material for the vendor-managed work cell.</span></span> <span data-ttu-id="e6aa6-128">In vielen Fällen werden der Lagerort und der Lagerplatz modelliert, indem Sie einen separaten Lagerort pro Lieferant und pro Fertigungszelle für einen Lagerplatz verwenden.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-128">In many cases, the warehouse and location are modeled by using a separate warehouse per vendor and one location per work cell.</span></span>  
+10. <span data-ttu-id="e6aa6-129">Klicken Sie im Feld "Lagerplatz für Wareneingang" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-129">In the Input location field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="e6aa6-130">Klicken Sie im Feld "Ausgangslagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-130">In the Output warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="e6aa6-131">Definieren Sie den Lagerort und Lagerplatz, an dem das Material gebucht wird, wenn die von gesetzlichen Bestimmungen unterliegenden Aktivitäten der Fertigungszelle gebucht werden.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-131">Define the warehouse and location where the material is posted when the subcontracted activities of the work cell are posted.</span></span> <span data-ttu-id="e6aa6-132">Der Lagerort und der Ort können am Kreditorenstandort sein, wenn der Kreditor an die Kanban-Einzelvorgänge berichtet.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-132">The warehouse and location can be at the vendor site if the vendor reports the kanban jobs.</span></span> <span data-ttu-id="e6aa6-133">Alternativ kann der Lagerort und der Lagerplatz der empfangende Speicherort sein, der mit dem nächsten Schritt des Produktionsflusses verknüpft ist.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-133">Alternatively, the warehouse and location can be the receiving location that is associated with the next step of the production flow.</span></span>  
+12. <span data-ttu-id="e6aa6-134">Klicken Sie im Feld "Lagerplatz für Warenausgang" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-134">In the Output location field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="e6aa6-135">Erweitern oder reduzieren Sie den Abschnitt "Kalender".</span><span class="sxs-lookup"><span data-stu-id="e6aa6-135">Expand or collapse the Calendars section.</span></span>
+14. <span data-ttu-id="e6aa6-136">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-136">Click Add.</span></span>
+15. <span data-ttu-id="e6aa6-137">Klicken Sie im Feld "Kalender" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-137">In the Calendar field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="e6aa6-138">Wählen Sie den Kalender aus, der die Arbeitszeit der angegebenen Arbeitsgruppe darstellt.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-138">Associate the working time calendar of the work cell with the resource group.</span></span> <span data-ttu-id="e6aa6-139">Für wichtige Ressourcen empfehlen wir jedoch, die bestimmten Kalender zu definieren, die die Ausführung für die  Arbeitszeiten und die zugehörigen Fertigungszelle- oder Kapazitäten des Kreditorenstandorts darstellen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-139">For critical resources, we recommend that you define specific calendars that represent the exact working times and related capacities of the work cell or vendor site.</span></span>  
+16. <span data-ttu-id="e6aa6-140">Erweitern oder reduzieren Sie den Abschnitt Ressourcen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-140">Expand or collapse the Resources section.</span></span>
+17. <span data-ttu-id="e6aa6-141">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-141">Click Add.</span></span>
+    * <span data-ttu-id="e6aa6-142">Eine Ressourcengruppe muss eine zugehörige Ressource des Kreditorentyps haben, der die Ressourcengruppe auf dem Kreditorenkonto zugeordnet hat.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-142">A subcontracted resource group must have an associated resource of the Vendor type that links the resource group to the vendor account.</span></span>  
+18. <span data-ttu-id="e6aa6-143">Klicken Sie im Feld Ressourcen auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-143">In the Resource field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="e6aa6-144">Wählen Sie die Kreditorenressource aus, die Sie in der vorherigen Unteraufgabe erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-144">Select or enter the vendor resource that you created in the previous sub-task.</span></span>  
+19. <span data-ttu-id="e6aa6-145">Erweitern oder reduzieren Sie den Abschnitt "Arbeisgruppenkapazität".</span><span class="sxs-lookup"><span data-stu-id="e6aa6-145">Expand or collapse the Work cell capacity section.</span></span>
+20. <span data-ttu-id="e6aa6-146">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-146">Click Add.</span></span>
+    * <span data-ttu-id="e6aa6-147">Eine Fertigungszelle muss eine festgelegte Kapazität verfügen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-147">A work cell must have a defined capacity.</span></span> <span data-ttu-id="e6aa6-148">In diesem Beispiel erstellen wir eine Durchsatzkapazität von 100 Stück pro Standardarbeitstag.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-148">In this example, we create a throughput capacity of 100 pieces per standard workday.</span></span>  
+21. <span data-ttu-id="e6aa6-149">Klicken Sie im Feld "Produktionsflussmodell" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-149">In the Production flow model field, click the drop-down button to open the lookup.</span></span>
+22. <span data-ttu-id="e6aa6-150">Wählen Sie im Feld "Kapazitätsperiode" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-150">In the Capacity period field, select an option.</span></span>
+23. <span data-ttu-id="e6aa6-151">Geben Sie im Feld "Durchschnittliche Durchsatzmenge" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-151">In the Average throughput quantity field, enter a number.</span></span>
+24. <span data-ttu-id="e6aa6-152">Klicken Sie im Feld "Einheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-152">In the Unit field, click the drop-down button to open the lookup.</span></span>
+25. <span data-ttu-id="e6aa6-153">"Auflösen" verändert die Einheit.</span><span class="sxs-lookup"><span data-stu-id="e6aa6-153">ResolveChanges the Unit.</span></span>
 
 

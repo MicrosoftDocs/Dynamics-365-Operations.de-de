@@ -16,42 +16,42 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 8eb19ac9ded4dc2a091ff733f2f43cb6cafa1b43
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1e08d9fd3388561563e6fb982416186a652b4ce2
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="monitor-a-master-planning-run"></a>Einen Produktprogrammplanungslauf überwachen
+# <a name="monitor-a-master-planning-run"></a><span data-ttu-id="f7e39-103">Einen Produktprogrammplanungslauf überwachen</span><span class="sxs-lookup"><span data-stu-id="f7e39-103">Monitor a master planning run</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Der Produktionsplaner möchte sehen, ob ein Produktprogrammplanungslauf in Bearbeitung ist. Verwenden Sie das Demodatenunternehmen USMF, um diese Prozedur abzuschließen.
+<span data-ttu-id="f7e39-104">Der Produktionsplaner möchte sehen, ob ein Produktprogrammplanungslauf in Bearbeitung ist.</span><span class="sxs-lookup"><span data-stu-id="f7e39-104">The production planner wants to see if a master planning run is in progress.</span></span> <span data-ttu-id="f7e39-105">Verwenden Sie das Demodatenunternehmen USMF, um diese Prozedur abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="f7e39-105">Use the demo data company USMF to complete this procedure.</span></span>
 
 
-## <a name="run-master-planning"></a>Produktprogrammplanung ausführen
-1. Klicken Sie auf "Produktprogrammplanung".
-    * Sie finden dies auf dem Standard-Dashboard.  
-2. Geben Sie im Feld "Plan" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Beispiel: StaticPlan  
-3. Klicken Sie auf "Ausführen".
-4. Wählen Sie "Ja" im Feld "Verarbeitungszeit nachverfolgen" aus.
-    * Wenn das Feld bereits ausgewählt ist, überspringen Sie diesen Schritt.  
-5. Geben Sie im Feld "Anzahl von Threads" eine Zahl ein.
-6. Erweitern Sie den Abschnitt "Einzuschließende Datensätze".
-7. Klicken Sie auf "Filter".
-8. Markieren Sie in der Liste die ausgewählte Zeile.
-    * Markieren Sie die Zeile, in der "Feld = Artikelnummer" ist.  
-9. Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.
-    * Beispiel: T0001  
-10. Klicken Sie auf "OK".
-11. Klicken Sie auf "OK".
+## <a name="run-master-planning"></a><span data-ttu-id="f7e39-106">Produktprogrammplanung ausführen</span><span class="sxs-lookup"><span data-stu-id="f7e39-106">Run master planning</span></span>
+1. <span data-ttu-id="f7e39-107">Klicken Sie auf "Produktprogrammplanung".</span><span class="sxs-lookup"><span data-stu-id="f7e39-107">Click Master planning.</span></span>
+    * <span data-ttu-id="f7e39-108">Sie finden dies auf dem Standard-Dashboard.</span><span class="sxs-lookup"><span data-stu-id="f7e39-108">You'll find this on the default dashboard.</span></span>  
+2. <span data-ttu-id="f7e39-109">Geben Sie im Feld "Plan" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="f7e39-109">In the Plan field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7e39-110">Beispiel: StaticPlan</span><span class="sxs-lookup"><span data-stu-id="f7e39-110">Example: StaticPlan</span></span>  
+3. <span data-ttu-id="f7e39-111">Klicken Sie auf "Ausführen".</span><span class="sxs-lookup"><span data-stu-id="f7e39-111">Click Run.</span></span>
+4. <span data-ttu-id="f7e39-112">Wählen Sie "Ja" im Feld "Verarbeitungszeit nachverfolgen" aus.</span><span class="sxs-lookup"><span data-stu-id="f7e39-112">Select Yes in the Track processing time field.</span></span>
+    * <span data-ttu-id="f7e39-113">Wenn das Feld bereits ausgewählt ist, überspringen Sie diesen Schritt.</span><span class="sxs-lookup"><span data-stu-id="f7e39-113">If the field is already selected, skip this step.</span></span>  
+5. <span data-ttu-id="f7e39-114">Geben Sie im Feld "Anzahl von Threads" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="f7e39-114">In the Number of threads field, enter a number.</span></span>
+6. <span data-ttu-id="f7e39-115">Erweitern Sie den Abschnitt "Einzuschließende Datensätze".</span><span class="sxs-lookup"><span data-stu-id="f7e39-115">Expand the Records to include section.</span></span>
+7. <span data-ttu-id="f7e39-116">Klicken Sie auf "Filter".</span><span class="sxs-lookup"><span data-stu-id="f7e39-116">Click Filter.</span></span>
+8. <span data-ttu-id="f7e39-117">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="f7e39-117">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="f7e39-118">Markieren Sie die Zeile, in der "Feld = Artikelnummer" ist.</span><span class="sxs-lookup"><span data-stu-id="f7e39-118">Mark the row where Field = Item number.</span></span>  
+9. <span data-ttu-id="f7e39-119">Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="f7e39-119">In the Criteria field, enter or select a value.</span></span>
+    * <span data-ttu-id="f7e39-120">Beispiel: T0001</span><span class="sxs-lookup"><span data-stu-id="f7e39-120">Example: T0001</span></span>  
+10. <span data-ttu-id="f7e39-121">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="f7e39-121">Click OK.</span></span>
+11. <span data-ttu-id="f7e39-122">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="f7e39-122">Click OK.</span></span>
 
-## <a name="monitor-the-master-planning-run"></a>Überwachen Sie den Produktprogrammplanungslauf
-1. Klicken Sie auf "Historie".
-2. Klicken Sie auf Abfragen.
-3. Klicken Sie auf "Prozessaufgabendauer".
-4. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Für jeden Artikel können Sie einen Überblick darüber erhalten, wie lange es gedauert hat, um jeden Planungsschritt abzuschließen.  
+## <a name="monitor-the-master-planning-run"></a><span data-ttu-id="f7e39-123">Überwachen Sie den Produktprogrammplanungslauf</span><span class="sxs-lookup"><span data-stu-id="f7e39-123">Monitor the master planning run</span></span>
+1. <span data-ttu-id="f7e39-124">Klicken Sie auf "Historie".</span><span class="sxs-lookup"><span data-stu-id="f7e39-124">Click History.</span></span>
+2. <span data-ttu-id="f7e39-125">Klicken Sie auf Abfragen.</span><span class="sxs-lookup"><span data-stu-id="f7e39-125">Click Inquiries.</span></span>
+3. <span data-ttu-id="f7e39-126">Klicken Sie auf "Prozessaufgabendauer".</span><span class="sxs-lookup"><span data-stu-id="f7e39-126">Click Process task duration.</span></span>
+4. <span data-ttu-id="f7e39-127">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="f7e39-127">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="f7e39-128">Für jeden Artikel können Sie einen Überblick darüber erhalten, wie lange es gedauert hat, um jeden Planungsschritt abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="f7e39-128">For each item you can get an overview of how long it took to complete each planning step.</span></span>  
 
 

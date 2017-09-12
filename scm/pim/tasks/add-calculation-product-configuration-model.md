@@ -16,26 +16,26 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 9ac2d9bcc316a57941136c248a0c5ff030a1fe49
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2db8fb922b085a7f118822ef4fd974ac338f4d99
 ms.contentlocale: de-de
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="add-a-calculation-to-a-product-configuration-model"></a>Berechnung zu einem Produktkonfigurationsmodell hinzufügen
+# <a name="add-a-calculation-to-a-product-configuration-model"></a><span data-ttu-id="4775e-103">Berechnung zu einem Produktkonfigurationsmodell hinzufügen</span><span class="sxs-lookup"><span data-stu-id="4775e-103">Add a calculation to a product configuration model</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Im folgenden Verfahren sehen Sie, wie Sie einen neuen Berechnung zu einem Produktkonfigurationsmodell hinzufügen können. Darin wird angezeigt, wie Sie einen logischen Ausdruck unter Verwendung des "If"-Operators erstellen können, um eine Lautsprecherhöhe bis 10 für weiße Lautsprecher und 15 für alle anderen Gehäusefarben festzulegen. Das Verfahren verwendet die Komponente "High end speaker" im Vorführungsunternehmen USMF.
+<span data-ttu-id="4775e-104">Im folgenden Verfahren sehen Sie, wie Sie einen neuen Berechnung zu einem Produktkonfigurationsmodell hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="4775e-104">This procedure shows how to add a new calculation to a product configuration model.</span></span> <span data-ttu-id="4775e-105">Darin wird angezeigt, wie Sie einen logischen Ausdruck unter Verwendung des "If"-Operators erstellen können, um eine Lautsprecherhöhe bis 10 für weiße Lautsprecher und 15 für alle anderen Gehäusefarben festzulegen.</span><span class="sxs-lookup"><span data-stu-id="4775e-105">It shows how you can create a logical expression using the "If" operator to set a speaker height to 10 for white speakers and 15 for all other cabinet finishes.</span></span> <span data-ttu-id="4775e-106">Das Verfahren verwendet die Komponente "High end speaker" im Vorführungsunternehmen USMF.</span><span class="sxs-lookup"><span data-stu-id="4775e-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
 
 
-## <a name="add-a-calculation"></a>Eine Berechnung hinzufügen
+## <a name="add-a-calculation"></a><span data-ttu-id="4775e-107">Eine Berechnung hinzufügen</span><span class="sxs-lookup"><span data-stu-id="4775e-107">Add a calculation</span></span>
 
-## <a name="create-calculation-expression"></a>Berechnungsausdruck erstellen
-1. Klicken Sie auf "Ausdruck bearbeiten".
-2. Geben Sie im Feld "ConstraintBody" "If[CabinetFinish== "White", 10, 15]" ein.
-3. Klicken Sie auf "Überprüfen".
-4. Klicken Sie auf "Schließen".
-5. Klicken Sie auf "OK".
+## <a name="create-calculation-expression"></a><span data-ttu-id="4775e-108">Berechnungsausdruck erstellen</span><span class="sxs-lookup"><span data-stu-id="4775e-108">Create calculation expression</span></span>
+1. <span data-ttu-id="4775e-109">Klicken Sie auf "Ausdruck bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="4775e-109">Click Edit expression.</span></span>
+2. <span data-ttu-id="4775e-110">Geben Sie im Feld "ConstraintBody" "If[CabinetFinish== "White", 10, 15]" ein.</span><span class="sxs-lookup"><span data-stu-id="4775e-110">In the ConstraintBody field, enter 'If[CabinetFinish=="White", 10, 15]'.</span></span>
+3. <span data-ttu-id="4775e-111">Klicken Sie auf "Überprüfen".</span><span class="sxs-lookup"><span data-stu-id="4775e-111">Click Validate.</span></span>
+4. <span data-ttu-id="4775e-112">Klicken Sie auf "Schließen".</span><span class="sxs-lookup"><span data-stu-id="4775e-112">Click Close.</span></span>
+5. <span data-ttu-id="4775e-113">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="4775e-113">Click OK.</span></span>
 
 

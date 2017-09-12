@@ -15,75 +15,75 @@ ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
 ms.author: tjvass
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a3a12080efcb138365c26981abd51222c51663ff
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 5620a91ff9f300bed782170307a295ab79fc5b2e
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="workflow-elements"></a>Workflowelemente
+# <a name="workflow-elements"></a><span data-ttu-id="2bf16-103">Workflowelemente</span><span class="sxs-lookup"><span data-stu-id="2bf16-103">Workflow elements</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt die verschiedenen Elemente, die einen Workflow darstellen.
+<span data-ttu-id="2bf16-104">Dieser Artikel beschreibt die verschiedenen Elemente, die einen Workflow darstellen.</span><span class="sxs-lookup"><span data-stu-id="2bf16-104">This article describes the various elements that make up a workflow.</span></span>
 
-Ein Workflow besteht aus Elementen. In den folgenden Abschnitten wird jeder Elementtyp beschrieben.
+<span data-ttu-id="2bf16-105">Ein Workflow besteht aus Elementen.</span><span class="sxs-lookup"><span data-stu-id="2bf16-105">A workflow consists of elements.</span></span> <span data-ttu-id="2bf16-106">In den folgenden Abschnitten wird jeder Elementtyp beschrieben.</span><span class="sxs-lookup"><span data-stu-id="2bf16-106">The sections that follow describe each type of element.</span></span>
 
-## <a name="tasks"></a>Aufgaben
-Bei einer *Aufgabe* handelt es sich um eine auszuführende Arbeitseinheit. Es können zwei Arten von Aufgaben zu einem Workflow hinzugefügt werden: manuelle Aufgaben und automatisierte Aufgaben.
+## <a name="tasks"></a><span data-ttu-id="2bf16-107">Aufgaben</span><span class="sxs-lookup"><span data-stu-id="2bf16-107">Tasks</span></span>
+<span data-ttu-id="2bf16-108">Bei einer *Aufgabe* handelt es sich um eine auszuführende Arbeitseinheit.</span><span class="sxs-lookup"><span data-stu-id="2bf16-108">A *task* is a unit of work that must be performed.</span></span> <span data-ttu-id="2bf16-109">Es können zwei Arten von Aufgaben zu einem Workflow hinzugefügt werden: manuelle Aufgaben und automatisierte Aufgaben.</span><span class="sxs-lookup"><span data-stu-id="2bf16-109">Two types of tasks can be added to a workflow: manual tasks and automated tasks.</span></span>
 
-### <a name="manual-task"></a>Manuelle Aufgabe
+### <a name="manual-task"></a><span data-ttu-id="2bf16-110">Manuelle Aufgabe</span><span class="sxs-lookup"><span data-stu-id="2bf16-110">Manual task</span></span>
 
-Bei einer *manuellen Aufgabe* handelt es sich um eine Arbeitseinheit, die von einem Benutzer auszuführen ist. Beispielsweise beinhaltet ein Workflow für Spesenabrechnungen manuelle Aufgaben, die von den zugewiesenen Benutzern folgende Aktionen erfordern:
+<span data-ttu-id="2bf16-111">Bei einer *manuellen Aufgabe* handelt es sich um eine Arbeitseinheit, die von einem Benutzer auszuführen ist.</span><span class="sxs-lookup"><span data-stu-id="2bf16-111">A *manual task* is a unit of work that must be performed by a user.</span></span> <span data-ttu-id="2bf16-112">Beispielsweise beinhaltet ein Workflow für Spesenabrechnungen manuelle Aufgaben, die von den zugewiesenen Benutzern folgende Aktionen erfordern:</span><span class="sxs-lookup"><span data-stu-id="2bf16-112">For example, an expense report workflow can have manual tasks that require the assigned users to complete the following actions:</span></span>
 
--   Prüfen der zusammen mit einer Spesenabrechnung eingereichten Belege.
--   Anrufen des Vorgesetzten eines Mitarbeiters.
+-   <span data-ttu-id="2bf16-113">Prüfen der zusammen mit einer Spesenabrechnung eingereichten Belege.</span><span class="sxs-lookup"><span data-stu-id="2bf16-113">Review the receipts that are submitted together with an expense report.</span></span>
+-   <span data-ttu-id="2bf16-114">Anrufen des Vorgesetzten eines Mitarbeiters.</span><span class="sxs-lookup"><span data-stu-id="2bf16-114">Call an employee's manager.</span></span>
 
-### <a name="automated-task"></a>Automatisierte Aufgabe
+### <a name="automated-task"></a><span data-ttu-id="2bf16-115">Automatisierte Aufgabe</span><span class="sxs-lookup"><span data-stu-id="2bf16-115">Automated task</span></span>
 
-Bei einer *automatisierten Aufgabe* handelt es sich um eine Arbeitseinheit, die vom System auszuführen ist. Es sind keine manuellen Benutzeraktivitäten erforderlich. Beispielsweise beinhaltet ein Workflow für Aufträge automatisierte Aufgaben, die vom System folgende Aktionen erfordern:
+<span data-ttu-id="2bf16-116">Bei einer *automatisierten Aufgabe* handelt es sich um eine Arbeitseinheit, die vom System auszuführen ist.</span><span class="sxs-lookup"><span data-stu-id="2bf16-116">An *automated task* is a unit of work that must be performed by the system.</span></span> <span data-ttu-id="2bf16-117">Es sind keine manuellen Benutzeraktivitäten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2bf16-117">No human interaction is required.</span></span> <span data-ttu-id="2bf16-118">Beispielsweise beinhaltet ein Workflow für Aufträge automatisierte Aufgaben, die vom System folgende Aktionen erfordern:</span><span class="sxs-lookup"><span data-stu-id="2bf16-118">For example, a sales order workflow can have automated tasks that require the system to complete the following actions:</span></span>
 
--   Ausführen einer Kreditprüfung.
--   Erstellen eines Debitorendatensatzes für den Debitor, sofern noch nicht vorhanden.
+-   <span data-ttu-id="2bf16-119">Ausführen einer Kreditprüfung.</span><span class="sxs-lookup"><span data-stu-id="2bf16-119">Perform a credit check.</span></span>
+-   <span data-ttu-id="2bf16-120">Erstellen eines Debitorendatensatzes für den Debitor, sofern noch nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="2bf16-120">Create a customer record for the customer, if a record doesn't already exist.</span></span>
 
-## <a name="approval-processes"></a>Genehmigungsprozesse
-Bei einem *Genehmigungsprozess* handelt es sich um einen Prozess, der aus getrennten Schritten besteht. Bei jedem Genehmigungsschritt kann der Benutzer die folgenden Aktivitäten ausführen:
+## <a name="approval-processes"></a><span data-ttu-id="2bf16-121">Genehmigungsprozesse</span><span class="sxs-lookup"><span data-stu-id="2bf16-121">Approval processes</span></span>
+<span data-ttu-id="2bf16-122">Bei einem *Genehmigungsprozess* handelt es sich um einen Prozess, der aus getrennten Schritten besteht.</span><span class="sxs-lookup"><span data-stu-id="2bf16-122">An *approval process* is a process that consists of separate steps.</span></span> <span data-ttu-id="2bf16-123">Bei jedem Genehmigungsschritt kann der Benutzer die folgenden Aktivitäten ausführen:</span><span class="sxs-lookup"><span data-stu-id="2bf16-123">At each approval step, the user can perform the following actions:</span></span>
 
--   Dient zum Genehmigen des Dokuments.
--   Dient zum Ablehnen des Dokuments.
--   eine Änderung am Dokument anzufordern,
--   Dokument einem anderen Benutzer zur Genehmigung zuweisen.
+-   <span data-ttu-id="2bf16-124">Dient zum Genehmigen des Dokuments.</span><span class="sxs-lookup"><span data-stu-id="2bf16-124">Approve the document.</span></span>
+-   <span data-ttu-id="2bf16-125">Dient zum Ablehnen des Dokuments.</span><span class="sxs-lookup"><span data-stu-id="2bf16-125">Reject the document.</span></span>
+-   <span data-ttu-id="2bf16-126">eine Änderung am Dokument anzufordern,</span><span class="sxs-lookup"><span data-stu-id="2bf16-126">Request a change to the document.</span></span>
+-   <span data-ttu-id="2bf16-127">Dokument einem anderen Benutzer zur Genehmigung zuweisen.</span><span class="sxs-lookup"><span data-stu-id="2bf16-127">Assign the document to another user for approval.</span></span>
 
-## <a name="lineitem-workflow-elements"></a>Lineitem-Workflow-Elemente
-Ein Workflow kann zum Verarbeiten von Dokumenten oder der Positionen in einem Dokument erstellt werden. Angenommen, Sie haben einen Genehmigungsworkflow für Arbeitszeitnachweise erstellt. (Wir bezeichnen diesen Workflow als *Dokumentworkflow*.) Sie können ein *Positionsworkflow*-Element zu diesem Dokumentworkflow hinzufügen. Bei der Ausführung des Positionselements wird jede Position im Dokument zur Verarbeitung übermittelt. Dabei können alle Positionen durch denselben Positionsworkflow oder jede Position durch einen anderen Positionsworkflow verarbeitet werden. Angenommen, ein Mitarbeiter hat einen Arbeitszeitnachweis übermittelt, der der folgenden Abbildung ähnelt. ![Workflow mit Positionen](./media/workflow_lineitemworkflow.gif) In diesem Szenario sollten Sie die folgenden Positionsworkflows erstellen:
+## <a name="lineitem-workflow-elements"></a><span data-ttu-id="2bf16-128">Lineitem-Workflow-Elemente</span><span class="sxs-lookup"><span data-stu-id="2bf16-128">Lineitem workflow elements</span></span>
+<span data-ttu-id="2bf16-129">Ein Workflow kann zum Verarbeiten von Dokumenten oder der Positionen in einem Dokument erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="2bf16-129">A workflow can be created to process either documents or the line items on a document.</span></span> <span data-ttu-id="2bf16-130">Angenommen, Sie haben einen Genehmigungsworkflow für Arbeitszeitnachweise erstellt.</span><span class="sxs-lookup"><span data-stu-id="2bf16-130">For example, you've created an approval workflow for timesheets.</span></span> <span data-ttu-id="2bf16-131">(Wir bezeichnen diesen Workflow als *Dokumentworkflow*.) Sie können ein *Positionsworkflow*-Element zu diesem Dokumentworkflow hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="2bf16-131">(We will refer to this workflow as the *document workflow*.) You can add a *line-item workflow* element to that document workflow.</span></span> <span data-ttu-id="2bf16-132">Bei der Ausführung des Positionselements wird jede Position im Dokument zur Verarbeitung übermittelt.</span><span class="sxs-lookup"><span data-stu-id="2bf16-132">When the line-item element is run, each line item on the document is submitted for processing.</span></span> <span data-ttu-id="2bf16-133">Dabei können alle Positionen durch denselben Positionsworkflow oder jede Position durch einen anderen Positionsworkflow verarbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="2bf16-133">You might want all the line items to be processed by the same line-item workflow, or you might want each line item to be processed by a different line-item workflow.</span></span> <span data-ttu-id="2bf16-134">Angenommen, ein Mitarbeiter hat einen Arbeitszeitnachweis übermittelt, der der folgenden Abbildung ähnelt.</span><span class="sxs-lookup"><span data-stu-id="2bf16-134">Imagine that an employee has submitted a timesheet that resembles the following figure.</span></span> <span data-ttu-id="2bf16-135">![Workflow mit Positionen](./media/workflow_lineitemworkflow.gif) In diesem Szenario sollten Sie die folgenden Positionsworkflows erstellen:</span><span class="sxs-lookup"><span data-stu-id="2bf16-135">![Workflow with line items](./media/workflow_lineitemworkflow.gif) In this scenario, you might want to create the following line-item workflows:</span></span>
 
--   **Positionsworkflow 1** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 1111 verwendet.
--   **Positionsworkflow 2** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 2222 verwendet.
--   **Positionsworkflow 3** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 3333 verwendet.
+-   <span data-ttu-id="2bf16-136">**Positionsworkflow 1** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 1111 verwendet.</span><span class="sxs-lookup"><span data-stu-id="2bf16-136">**Line-item workflow 1** – This workflow is used to process line items where the project ID is 1111.</span></span>
+-   <span data-ttu-id="2bf16-137">**Positionsworkflow 2** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 2222 verwendet.</span><span class="sxs-lookup"><span data-stu-id="2bf16-137">**Line-item workflow 2** – This workflow is used to process line items where the project ID is 2222.</span></span>
+-   <span data-ttu-id="2bf16-138">**Positionsworkflow 3** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 3333 verwendet.</span><span class="sxs-lookup"><span data-stu-id="2bf16-138">**Line-item workflow 3** – This workflow is used to process line items where the project ID is 3333.</span></span>
 
-## <a name="flowcontrol-elements"></a>Flowcontrol-Elemente
-Mithilfe der folgenden Elemente können Sie Workflows mit alternativen Verzweigungen oder gleichzeitig ausgeführten Verzweigungen entwerfen.
+## <a name="flowcontrol-elements"></a><span data-ttu-id="2bf16-139">Flowcontrol-Elemente</span><span class="sxs-lookup"><span data-stu-id="2bf16-139">Flowcontrol elements</span></span>
+<span data-ttu-id="2bf16-140">Mithilfe der folgenden Elemente können Sie Workflows mit alternativen Verzweigungen oder gleichzeitig ausgeführten Verzweigungen entwerfen.</span><span class="sxs-lookup"><span data-stu-id="2bf16-140">The following elements let you design workflows that have alternate branches or branches that run at the same time.</span></span>
 
-### <a name="manual-decision"></a>Manuelle Entscheidung
+### <a name="manual-decision"></a><span data-ttu-id="2bf16-141">Manuelle Entscheidung</span><span class="sxs-lookup"><span data-stu-id="2bf16-141">Manual decision</span></span>
 
-Eine *manuelle Entscheidung* ist ein Punkt, an dem sich ein Workflow verzweigt. Ein Benutzer muss eine Entscheidung treffen, und diese Entscheidung bestimmt, welche Verzweigung zum Verarbeiten des übermittelten Dokuments verwendet wird.
+<span data-ttu-id="2bf16-142">Eine *manuelle Entscheidung* ist ein Punkt, an dem sich ein Workflow verzweigt.</span><span class="sxs-lookup"><span data-stu-id="2bf16-142">A *manual decision* is a point where a workflow divides into two branches.</span></span> <span data-ttu-id="2bf16-143">Ein Benutzer muss eine Entscheidung treffen, und diese Entscheidung bestimmt, welche Verzweigung zum Verarbeiten des übermittelten Dokuments verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="2bf16-143">A user must make a decision, and this decision determines which branch is used to process the document that was submitted.</span></span>
 
-### <a name="conditional-decision"></a>Bedingte Entscheidung
+### <a name="conditional-decision"></a><span data-ttu-id="2bf16-144">Bedingte Entscheidung</span><span class="sxs-lookup"><span data-stu-id="2bf16-144">Conditional decision</span></span>
 
-Eine *bedingte Entscheidung* ist ein Punkt, an dem sich ein Workflow verzweigt. Das System entscheidet jedoch, welcher Zweig zum Verarbeiten des übermittelten Dokuments verwendet wird. Um diese Entscheidung zu treffen, wertet das System das Dokument aus, um zu bestimmen, ob es den angegebenen Bedingungen entspricht.
+<span data-ttu-id="2bf16-145">Eine *bedingte Entscheidung* ist ein Punkt, an dem sich ein Workflow verzweigt.</span><span class="sxs-lookup"><span data-stu-id="2bf16-145">A *conditional decision* is also a point where a workflow divides into two branches.</span></span> <span data-ttu-id="2bf16-146">Das System entscheidet jedoch, welcher Zweig zum Verarbeiten des übermittelten Dokuments verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="2bf16-146">However, the system decides which branch is used to process the document that was submitted.</span></span> <span data-ttu-id="2bf16-147">Um diese Entscheidung zu treffen, wertet das System das Dokument aus, um zu bestimmen, ob es den angegebenen Bedingungen entspricht.</span><span class="sxs-lookup"><span data-stu-id="2bf16-147">To make this decision, the system evaluates the document to determine whether it meets specified conditions.</span></span>
 
-### <a name="parallel-activity"></a>Parallele Aktivität
+### <a name="parallel-activity"></a><span data-ttu-id="2bf16-148">Parallele Aktivität</span><span class="sxs-lookup"><span data-stu-id="2bf16-148">Parallel activity</span></span>
 
-Eine *parallele Aktivität* ist ein Workflowelement, das zwei oder mehr Workflowverzweigungen enthält, die gleichzeitig ausgeführt werden.
+<span data-ttu-id="2bf16-149">Eine *parallele Aktivität* ist ein Workflowelement, das zwei oder mehr Workflowverzweigungen enthält, die gleichzeitig ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="2bf16-149">A *parallel activity* is a workflow element that includes two or more workflow branches that run at the same time.</span></span>
 
-### <a name="subworkflow"></a>Untergeordneter Workflow
+### <a name="subworkflow"></a><span data-ttu-id="2bf16-150">Untergeordneter Workflow</span><span class="sxs-lookup"><span data-stu-id="2bf16-150">Subworkflow</span></span>
 
-Ein *untergeordneter Workflow* ist ein Workflow, der im Kontext eines anderen Workflows ausgeführt wird.
+<span data-ttu-id="2bf16-151">Ein *untergeordneter Workflow* ist ein Workflow, der im Kontext eines anderen Workflows ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="2bf16-151">A *subworkflow* is a workflow that runs in the context of another workflow.</span></span>
 
 
 

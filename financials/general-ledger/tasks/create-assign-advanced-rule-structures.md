@@ -16,56 +16,56 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7c38debf005cf14176a5184c489242e914c1ff4c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ebad4ec9ec6242978a26007a64416ae1b2af5c28
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-assign-advanced-rule-structures"></a>Strukturen für erweiterte Regeln erstellen und zuweisen
+# <a name="create-and-assign-advanced-rule-structures"></a><span data-ttu-id="5ead3-103">Strukturen für erweiterte Regeln erstellen und zuweisen</span><span class="sxs-lookup"><span data-stu-id="5ead3-103">Create and assign advanced rule structures</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dieser Aufgabenleitfaden führt Sie durch das Erstellen und Zuweisen einer erweiterten Regelstruktur zu einer Kontostruktur. Dieser Leitfaden verwendet das Demounternehmen USMF.
+<span data-ttu-id="5ead3-104">Dieser Aufgabenleitfaden führt Sie durch das Erstellen und Zuweisen einer erweiterten Regelstruktur zu einer Kontostruktur.</span><span class="sxs-lookup"><span data-stu-id="5ead3-104">This task guide steps through creating and assigning an advanced rule structure to an account structure.</span></span> <span data-ttu-id="5ead3-105">Dieser Leitfaden verwendet das Demounternehmen USMF.</span><span class="sxs-lookup"><span data-stu-id="5ead3-105">This guide uses the USMF demo company.</span></span>
 
 
-## <a name="create-an-advanced-rule-structure"></a>Struktur für erweiterte Regeln erstellen
-1. Wechseln Sie zu "Hauptbuch" > "Kontenplan" > "Strukturen" > "Erweiterte Regelstrukturen".
-2. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-3. Geben Sie im Feld "Erweiterte Regelstruktur" einen Namen für die Regelstruktur ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein, um die Struktur zu beschreiben.
-5. Klicken Sie auf "OK".
-6. Klicken Sie auf "Segment hinzufügen".
-7. Wählen Sie eine Segmentliste eine Finanzdimension aus.
-    * Beispielsweise "Shop".  
-8. Klicken Sie auf "Segment hinzufügen".
-9. Klicken Sie in der Liste auf den Link zur erweiterten Regelstruktur, um sie anzuzeigen.
-10. Klicken Sie auf Aktivieren.
-11. Klicken Sie auf Aktivieren.
+## <a name="create-an-advanced-rule-structure"></a><span data-ttu-id="5ead3-106">Struktur für erweiterte Regeln erstellen</span><span class="sxs-lookup"><span data-stu-id="5ead3-106">Create an advanced rule structure</span></span>
+1. <span data-ttu-id="5ead3-107">Wechseln Sie zu "Hauptbuch" > "Kontenplan" > "Strukturen" > "Erweiterte Regelstrukturen".</span><span class="sxs-lookup"><span data-stu-id="5ead3-107">Go to General ledger > Chart of accounts > Structures > Advanced rule structures.</span></span>
+2. <span data-ttu-id="5ead3-108">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="5ead3-108">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="5ead3-109">Geben Sie im Feld "Erweiterte Regelstruktur" einen Namen für die Regelstruktur ein.</span><span class="sxs-lookup"><span data-stu-id="5ead3-109">In the Advanced rule structure field, type a name to descritbe the rule structure.</span></span>
+4. <span data-ttu-id="5ead3-110">Geben Sie im Feld "Beschreibung" einen Wert ein, um die Struktur zu beschreiben.</span><span class="sxs-lookup"><span data-stu-id="5ead3-110">In the Description field, type a value to describe the structure.</span></span>
+5. <span data-ttu-id="5ead3-111">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5ead3-111">Click OK.</span></span>
+6. <span data-ttu-id="5ead3-112">Klicken Sie auf "Segment hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5ead3-112">Click Add segment.</span></span>
+7. <span data-ttu-id="5ead3-113">Wählen Sie eine Segmentliste eine Finanzdimension aus.</span><span class="sxs-lookup"><span data-stu-id="5ead3-113">In the list of segments, select a financial dimension.</span></span>
+    * <span data-ttu-id="5ead3-114">Beispielsweise "Shop".</span><span class="sxs-lookup"><span data-stu-id="5ead3-114">For example, Store.</span></span>  
+8. <span data-ttu-id="5ead3-115">Klicken Sie auf "Segment hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5ead3-115">Click Add segment.</span></span>
+9. <span data-ttu-id="5ead3-116">Klicken Sie in der Liste auf den Link zur erweiterten Regelstruktur, um sie anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="5ead3-116">In the list, click the link of the advanced rule structure to view it.</span></span>
+10. <span data-ttu-id="5ead3-117">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="5ead3-117">Click Activate.</span></span>
+11. <span data-ttu-id="5ead3-118">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="5ead3-118">Click Activate.</span></span>
 
-## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a>Anwenden einer erweiterten Regelstruktur auf eine Kontostruktur
-1. Schließt das Formular.
-2. Schließen Sie die Seite.
-3. Wechseln Sie zu Hauptbuch > Kontenplan > Strukturen > Kontostrukturen konfigurieren.
-4. Wählen Sie in der Liste die Kontostruktur aus, auf die Sie die erweiterte Regel anwenden möchten.
-5. Klicken Sie auf den Namen der Kontostruktur.
-6. Klicken Sie auf "Bearbeiten".
-    * Sie können auch auf "Erweiterte Regeln" klicken und die Kontostruktur im Entwurfsmodus einfügen.  
-7. Klicken Sie auf "Erweiterte Regeln".
-8. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-9. Geben Sie im Feld "Erweiterte Regeln" einen Wert ein.
-10. Geben Sie im Feld "Name" einen Wert ein.
-11. Klicken Sie auf Erstellen.
-12. Klicken Sie auf "Neue Kriterien hinzufügen".
-13. Wählen Sie im Feld "Wo" "Hauptkonto" oder "Finanzdimension" aus.
-14. Wählen Sie im Feld "Operator" eine Option aus (z. B., "liegt zwischen" und "schließt ein").
-15. Geben Sie im Feld "Wert" einen Wert ein.
-16. Geben Sie im Feld "bis" einen Wert ein.
-17. Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".
-18. Wählen Sie in der Liste die erweiterte Regelstruktur aus, die Sie verwenden möchten, wenn das eingegebene Kriterium erfüllt wird.
-19. Klicken Sie auf Hinzufügen.
-20. Schließen Sie die Seite.
-21. Klicken Sie auf Aktivieren.
-22. Klicken Sie auf Aktivieren.
+## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a><span data-ttu-id="5ead3-119">Anwenden einer erweiterten Regelstruktur auf eine Kontostruktur</span><span class="sxs-lookup"><span data-stu-id="5ead3-119">Apply an advanced rule structure to an account structure</span></span>
+1. <span data-ttu-id="5ead3-120">Schließt das Formular.</span><span class="sxs-lookup"><span data-stu-id="5ead3-120">Close the form.</span></span>
+2. <span data-ttu-id="5ead3-121">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5ead3-121">Close the page.</span></span>
+3. <span data-ttu-id="5ead3-122">Wechseln Sie zu Hauptbuch > Kontenplan > Strukturen > Kontostrukturen konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="5ead3-122">Go to General ledger > Chart of accounts > Structures > Configure account structures.</span></span>
+4. <span data-ttu-id="5ead3-123">Wählen Sie in der Liste die Kontostruktur aus, auf die Sie die erweiterte Regel anwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="5ead3-123">In the list, find and select the account structure you want to apply the advanced rule to.</span></span>
+5. <span data-ttu-id="5ead3-124">Klicken Sie auf den Namen der Kontostruktur.</span><span class="sxs-lookup"><span data-stu-id="5ead3-124">Click the name of the account structure to open it.</span></span>
+6. <span data-ttu-id="5ead3-125">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="5ead3-125">Click Edit.</span></span>
+    * <span data-ttu-id="5ead3-126">Sie können auch auf "Erweiterte Regeln" klicken und die Kontostruktur im Entwurfsmodus einfügen.</span><span class="sxs-lookup"><span data-stu-id="5ead3-126">You can also click Advanced rules and you will be prompted to put the account structure in Draft mode.</span></span>  
+7. <span data-ttu-id="5ead3-127">Klicken Sie auf "Erweiterte Regeln".</span><span class="sxs-lookup"><span data-stu-id="5ead3-127">Click Advanced rules.</span></span>
+8. <span data-ttu-id="5ead3-128">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="5ead3-128">Click New to open the drop dialog.</span></span>
+9. <span data-ttu-id="5ead3-129">Geben Sie im Feld "Erweiterte Regeln" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="5ead3-129">In the Advanced rule field, type a value.</span></span>
+10. <span data-ttu-id="5ead3-130">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="5ead3-130">In the Name field, type a value.</span></span>
+11. <span data-ttu-id="5ead3-131">Klicken Sie auf Erstellen.</span><span class="sxs-lookup"><span data-stu-id="5ead3-131">Click Create.</span></span>
+12. <span data-ttu-id="5ead3-132">Klicken Sie auf "Neue Kriterien hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5ead3-132">Click Add new criteria.</span></span>
+13. <span data-ttu-id="5ead3-133">Wählen Sie im Feld "Wo" "Hauptkonto" oder "Finanzdimension" aus.</span><span class="sxs-lookup"><span data-stu-id="5ead3-133">In the Where field, select main account or a financial dimension.</span></span>
+14. <span data-ttu-id="5ead3-134">Wählen Sie im Feld "Operator" eine Option aus (z. B., "liegt zwischen" und "schließt ein").</span><span class="sxs-lookup"><span data-stu-id="5ead3-134">In the Operator field, select an option, such as is between and includes.</span></span>
+15. <span data-ttu-id="5ead3-135">Geben Sie im Feld "Wert" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="5ead3-135">In the Value field, type a value.</span></span>
+16. <span data-ttu-id="5ead3-136">Geben Sie im Feld "bis" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="5ead3-136">In the through field, type a value.</span></span>
+17. <span data-ttu-id="5ead3-137">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5ead3-137">Click Add to open the drop dialog.</span></span>
+18. <span data-ttu-id="5ead3-138">Wählen Sie in der Liste die erweiterte Regelstruktur aus, die Sie verwenden möchten, wenn das eingegebene Kriterium erfüllt wird.</span><span class="sxs-lookup"><span data-stu-id="5ead3-138">In the list, find the advanced rule structure you want to use when the criteria you entered is met.</span></span>
+19. <span data-ttu-id="5ead3-139">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="5ead3-139">Click Add.</span></span>
+20. <span data-ttu-id="5ead3-140">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5ead3-140">Close the page.</span></span>
+21. <span data-ttu-id="5ead3-141">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="5ead3-141">Click Activate.</span></span>
+22. <span data-ttu-id="5ead3-142">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="5ead3-142">Click Activate.</span></span>
 
 

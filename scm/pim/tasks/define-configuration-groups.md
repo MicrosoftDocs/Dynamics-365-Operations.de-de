@@ -16,27 +16,27 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 7ad6623d401b4c735f394265ae8b969fbaa662ff
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f08d6b2221ee82cbba91923cea1a82821ed58831
 ms.contentlocale: de-de
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-configuration-groups"></a>Variantengruppen definieren
+# <a name="define-configuration-groups"></a><span data-ttu-id="74f5c-103">Variantengruppen definieren</span><span class="sxs-lookup"><span data-stu-id="74f5c-103">Define configuration groups</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Im folgenden Verfahren, wie Produktkonfigurationsgruppen durch Erstellen zweier Gruppen im Demodatunternehmen USMF Company definiert. Dies ist die vierte von acht Prozeduren die beschreibt, wie Kombinationen für eine dimensionsbasierte Konfiguration erstellt werden.
+<span data-ttu-id="74f5c-104">Im folgenden Verfahren, wie Produktkonfigurationsgruppen durch Erstellen zweier Gruppen im Demodatunternehmen USMF Company definiert.</span><span class="sxs-lookup"><span data-stu-id="74f5c-104">This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company.</span></span> <span data-ttu-id="74f5c-105">Dies ist die vierte von acht Prozeduren die beschreibt, wie Kombinationen für eine dimensionsbasierte Konfiguration erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="74f5c-105">This is the fourth procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span>
 
-1. Wechseln Sie zu "Produktinformationsverwaltung" > "Stücklisten und Formeln" > "Gruppen konfigurieren".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Konfigurations-Gruppe" einen Wert ein.
-    * Geben Sie einen Namen für die Variantengruppe ein, die für die Stücklistenpositionen verwendet wird.  
-4. Geben Sie im Feld "Name" einen Wert ein.
-5. Klicken Sie auf "Neu".
-6. Geben Sie im Feld "Konfigurations-Gruppe" einen Wert ein.
-    * Geben Sie einen Namen für die Variantengruppe ein, die für die Stücklistenpositionen verwendet wird.  
-7. Geben Sie im Feld "Name" einen Wert ein.
-8. Schließen Sie die Seite.
+1. <span data-ttu-id="74f5c-106">Wechseln Sie zu "Produktinformationsverwaltung" > "Stücklisten und Formeln" > "Gruppen konfigurieren".</span><span class="sxs-lookup"><span data-stu-id="74f5c-106">Go to Product information management > Setup > Bills of materials and formulas > Configuration groups.</span></span>
+2. <span data-ttu-id="74f5c-107">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="74f5c-107">Click New.</span></span>
+3. <span data-ttu-id="74f5c-108">Geben Sie im Feld "Konfigurations-Gruppe" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="74f5c-108">In the Configuration group field, type a value.</span></span>
+    * <span data-ttu-id="74f5c-109">Geben Sie einen Namen für die Variantengruppe ein, die für die Stücklistenpositionen verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="74f5c-109">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
+4. <span data-ttu-id="74f5c-110">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="74f5c-110">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="74f5c-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="74f5c-111">Click New.</span></span>
+6. <span data-ttu-id="74f5c-112">Geben Sie im Feld "Konfigurations-Gruppe" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="74f5c-112">In the Configuration group field, type a value.</span></span>
+    * <span data-ttu-id="74f5c-113">Geben Sie einen Namen für die Variantengruppe ein, die für die Stücklistenpositionen verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="74f5c-113">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
+7. <span data-ttu-id="74f5c-114">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="74f5c-114">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="74f5c-115">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="74f5c-115">Close the page.</span></span>
 
 

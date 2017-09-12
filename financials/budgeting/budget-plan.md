@@ -15,7 +15,7 @@ ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
@@ -25,240 +25,241 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="budget-planning"></a>Budgetplanung
+# <a name="budget-planning"></a><span data-ttu-id="b7d0f-105">Budgetplanung</span><span class="sxs-lookup"><span data-stu-id="b7d0f-105">Budget planning</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierten Funktionen in der Enterprise- Edition des Microsoft Dynamics 365 for Finance and Operations-Budgetplanbereichs bereitzustellen. Ziel dieser Übungseinheit ist es, ein schnelles Konfigurationsbeispiel für das Budgetplanungsmodul zu illustrieren und zu zeigen, wie die Budgetplanung mithilfe dieser Konfiguration erstellt werden kann.  Diese Übungseinheit bezieht sich speziell auf die folgenden Geschäftsprozesse oder Aufgaben: - Organisationshierarchie für Budgetplanung erstellen und Benutzersicherheit konfigurieren - Haushaltsplanszenarien, Haushaltsplanspalten, Layouts und Excel-Vorlagen definieren - Budgetplanungsprozess erstellen und aktivieren - Budgetplandokumente mithilfe von aktuellen Daten aus dem Hauptbuch erstellen - mithilfe der Zuweisungen Budgetplandokumentdaten anpassen - Budgetplandokumentdaten in Excel bearbeiten. 
+<span data-ttu-id="b7d0f-106">Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierten Funktionen in der Enterprise- Edition des Microsoft Dynamics 365 for Finance and Operations-Budgetplanbereichs bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-106">The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition functionality updates in Budget planning area.</span></span> <span data-ttu-id="b7d0f-107">Ziel dieser Übungseinheit ist es, ein schnelles Konfigurationsbeispiel für das Budgetplanungsmodul zu illustrieren und zu zeigen, wie die Budgetplanung mithilfe dieser Konfiguration erstellt werden kann.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-107">The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</span></span>  <span data-ttu-id="b7d0f-108">Diese Übungseinheit bezieht sich speziell auf die folgenden Geschäftsprozesse oder Aufgaben: - Organisationshierarchie für Budgetplanung erstellen und Benutzersicherheit konfigurieren - Haushaltsplanszenarien, Haushaltsplanspalten, Layouts und Excel-Vorlagen definieren - Budgetplanungsprozess erstellen und aktivieren - Budgetplandokumente mithilfe von aktuellen Daten aus dem Hauptbuch erstellen - mithilfe der Zuweisungen Budgetplandokumentdaten anpassen - Budgetplandokumentdaten in Excel bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-108">This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</span></span> 
 
-<a name="prerequisites"></a>Voraussetzungen 
+<a name="prerequisites"></a><span data-ttu-id="b7d0f-109">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-109">Prerequisites</span></span> 
 ------------------
 
-Für dieses Lernprogramm müssen Sie auf die Finance and Operations-Umgebung mit Contoso-Demodaten zugreifen und werden als Administrator auf der Instanz bereitgestellt. Verwenden Sie für diese Übungseinheit nicht den privaten Browsermodus - melden Sie sich falls erforderlich von einem anderen Konto ab und mit den Administrator-Anmeldeinformationen wieder bei Finance and Operations an. Wenn Sie sich bei Finance and Operations anmelden, **MÜSSEN** Sie das Kontrollkästchen "Angemeldet bleiben" aktivieren. Dadurch wird ein persistentes Cookie erstellt, das die Excel-App derzeit benötigt. Wenn Sie sich bei Finance and Operations nicht mithilfe eines IE-Browsers anmelden, werden Sie aufgefordert, sich mit der Excel-App anzumelden. Beim Sie auf "Anmelden" in der Excel-App klicken, wird im IE ein Popup- Fenster geöffnet und Sie **MÜSSEN** das Kontrollkästchen "Angemeldet bleiben" aktivieren. Wenn Sie in der Excel-App auf "Anmelden" klicken, und nichts passiert, leeren Sie den Cookie-Zwischenspeicher des IE.
+<span data-ttu-id="b7d0f-110">Für dieses Lernprogramm müssen Sie auf die Finance and Operations-Umgebung mit Contoso-Demodaten zugreifen und werden als Administrator auf der Instanz bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-110">For this tutorial, you’ll need to access the Finance and Operations environment with Contoso demo data, and be provisioned as an administrator on the instance.</span></span> <span data-ttu-id="b7d0f-111">Verwenden Sie für diese Übungseinheit nicht den privaten Browsermodus - melden Sie sich falls erforderlich von einem anderen Konto ab und mit den Administrator-Anmeldeinformationen wieder bei Finance and Operations an.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-111">Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Finance and Operations administrator credentials.</span></span> <span data-ttu-id="b7d0f-112">Wenn Sie sich bei Finance and Operations anmelden, **MÜSSEN** Sie das Kontrollkästchen "Angemeldet bleiben" aktivieren.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-112">When signing into Finance and Operations, you **MUST** check the “Keep me signed in” checkbox.</span></span> <span data-ttu-id="b7d0f-113">Dadurch wird ein persistentes Cookie erstellt, das die Excel-App derzeit benötigt.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-113">This creates a persistent cookie that the Excel App currently needs.</span></span> <span data-ttu-id="b7d0f-114">Wenn Sie sich bei Finance and Operations nicht mithilfe eines IE-Browsers anmelden, werden Sie aufgefordert, sich mit der Excel-App anzumelden.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-114">If you sign in to the Finance and Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App.</span></span> <span data-ttu-id="b7d0f-115">Beim Sie auf "Anmelden" in der Excel-App klicken, wird im IE ein Popup- Fenster geöffnet und Sie **MÜSSEN** das Kontrollkästchen "Angemeldet bleiben" aktivieren.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-115">When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” checkbox.</span></span> <span data-ttu-id="b7d0f-116">Wenn Sie in der Excel-App auf "Anmelden" klicken, und nichts passiert, leeren Sie den Cookie-Zwischenspeicher des IE.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-116">If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.</span></span>
 
-## <a name="scenario-overview"></a>**Szenarioüberblick**
-Julia arbeitet als Finanzmanager in Contoso Entertainment Systems in Deutschland (DEMF). Mit dem sich nähernden GJ 2016 muss sie an der Einrichtung des Unternehmensbudgets für das kommende jahr arbeiten. Budgetvorbereitung sieht wie folgt aus:
+## <a name="scenario-overview"></a><span data-ttu-id="b7d0f-117">**Szenarioüberblick**</span><span class="sxs-lookup"><span data-stu-id="b7d0f-117">**Scenario overview**</span></span>
+<span data-ttu-id="b7d0f-118">Julia arbeitet als Finanzmanager in Contoso Entertainment Systems in Deutschland (DEMF).</span><span class="sxs-lookup"><span data-stu-id="b7d0f-118">Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF).</span></span> <span data-ttu-id="b7d0f-119">Mit dem sich nähernden GJ 2016 muss sie an der Einrichtung des Unternehmensbudgets für das kommende jahr arbeiten.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-119">As FY2016 approaches, she needs to work on setting up the company’s budget for the upcoming year.</span></span> <span data-ttu-id="b7d0f-120">Budgetvorbereitung sieht wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="b7d0f-120">Budget preparation looks as follows:</span></span>
 
-1.  Julia verwendet Istwerte des Vorjahres als Ausgangspunkt, um das Budget zu erstellen.
-2.  Auf Grundlage der Istwerte des Vorjahres erstellt sie Vorkalkulationen für 12 Monate im kommenden Jahr
-3.  Julia überprüft das Budget mit dem Leiter der Finanzabteilung. Sobald sie fertig ist, nimmt sie die erforderlichen Regulierungen für den Budgetplan vor und schließt die Budgetausarbeitung ab.
+1.  <span data-ttu-id="b7d0f-121">Julia verwendet Istwerte des Vorjahres als Ausgangspunkt, um das Budget zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-121">Julia uses previous year actuals amounts as a starting point to create the budget.</span></span>
+2.  <span data-ttu-id="b7d0f-122">Auf Grundlage der Istwerte des Vorjahres erstellt sie Vorkalkulationen für 12 Monate im kommenden Jahr</span><span class="sxs-lookup"><span data-stu-id="b7d0f-122">Based on the previous year actuals, she creates estimates for 12 months in the upcoming year</span></span>
+3.  <span data-ttu-id="b7d0f-123">Julia überprüft das Budget mit dem Leiter der Finanzabteilung.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-123">Julia reviews the budget with CFO.</span></span> <span data-ttu-id="b7d0f-124">Sobald sie fertig ist, nimmt sie die erforderlichen Regulierungen für den Budgetplan vor und schließt die Budgetausarbeitung ab.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-124">Once done she makes necessary adjustments for the budget plan and finalizes budget preparation.</span></span>
 
-Das Budgetplanungs-Konfigurationsschema für das Szenario sieht wie folgt aus:
+<span data-ttu-id="b7d0f-125">Das Budgetplanungs-Konfigurationsschema für das Szenario sieht wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="b7d0f-125">Budget planning configuration schema for the scenario looks as follows:</span></span>
 
 ![Budgetplanungskonfigurations-Schema](./media/screenshot1-300x152.png)
 
-Julia wird folgende Excel Tabelle erstellen, um das Budget vorzubereiten:
+<span data-ttu-id="b7d0f-127">Julia wird folgende Excel Tabelle erstellen, um das Budget vorzubereiten:</span><span class="sxs-lookup"><span data-stu-id="b7d0f-127">Julia uses the following Excel template to prepare the budget:</span></span>
 
-[![Excel-Vorlage](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
+<span data-ttu-id="b7d0f-128">[![Excel-Vorlage](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-128">[![Excel template](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span></span>
 
-<a name="exercise-1-configuration"></a>Übung 1: Konfiguration
+<a name="exercise-1-configuration"></a><span data-ttu-id="b7d0f-129">Übung 1: Konfiguration</span><span class="sxs-lookup"><span data-stu-id="b7d0f-129">Exercise 1: Configuration</span></span>
 =========================
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Aufgabe 1: Organisationshierarchie erstellen**
-Da der ganze Budgetierungsprozess in der Finanzabteilung geschieht, muss Julia eine sehr einfache Organisationshierarchie erstellen, die nur aus der Finanzabteilung besteht. 1.1. Navigieren Sie zu den Organisationshierarchien (Organisationsverwaltung &gt;Organisationen &gt;Organisationshierarchien) und klicken Sie auf die Schaltfläche "Neu"
+## <a name="task-1-create-organizational-hierarchy"></a><span data-ttu-id="b7d0f-130">**Aufgabe 1: Organisationshierarchie erstellen**</span><span class="sxs-lookup"><span data-stu-id="b7d0f-130">**Task 1: Create organizational hierarchy**</span></span>
+<span data-ttu-id="b7d0f-131">Da der ganze Budgetierungsprozess in der Finanzabteilung geschieht, muss Julia eine sehr einfache Organisationshierarchie erstellen, die nur aus der Finanzabteilung besteht.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-131">As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only.</span></span> <span data-ttu-id="b7d0f-132">1.1.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-132">1.1.</span></span> <span data-ttu-id="b7d0f-133">Navigieren Sie zu den Organisationshierarchien (Organisationsverwaltung &gt;Organisationen &gt;Organisationshierarchien) und klicken Sie auf die Schaltfläche "Neu"</span><span class="sxs-lookup"><span data-stu-id="b7d0f-133">Navigate to Organization hierarchies (Organization administration &gt; Organizations &gt; Organization hierarchies) and click New button</span></span>
 
 ![Hierarchie](./media/screenshot3.png) 
 
-1.2. Geben Sie den Namen für die Organisationshierarchie ein und klicken Sie auf die Schaltfläche "Zweck zuweisen"
+<span data-ttu-id="b7d0f-135">1.2.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-135">1.2.</span></span> <span data-ttu-id="b7d0f-136">Geben Sie den Namen für die Organisationshierarchie ein und klicken Sie auf die Schaltfläche "Zweck zuweisen"</span><span class="sxs-lookup"><span data-stu-id="b7d0f-136">Type the name for the organizational hierarchy and click button Assign purpose</span></span>
 
-[![Name](./media/screenshot4.png)](./media/screenshot4.png) 
+<span data-ttu-id="b7d0f-137">[![Name](./media/screenshot4.png)](./media/screenshot4.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-137">[![Name](./media/screenshot4.png)](./media/screenshot4.png)</span></span> 
 
-1.3. Wählen Sie den Budgetplanungszweck aus, klicken Sie auf die Schaltfläche "Hinzufügen" und weisen Sie eine neu erstellte Organisationshierarchie zu: 
+<span data-ttu-id="b7d0f-138">1.3.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-138">1.3.</span></span> <span data-ttu-id="b7d0f-139">Wählen Sie den Budgetplanungszweck aus, klicken Sie auf die Schaltfläche "Hinzufügen" und weisen Sie eine neu erstellte Organisationshierarchie zu:</span><span class="sxs-lookup"><span data-stu-id="b7d0f-139">Select Budget planning purpose, click button Add and assign newly created organizational hierarchy:</span></span> 
 
-[![Zweck zuweisen](./media/screenshot5.png)](./media/screenshot5.png)
+<span data-ttu-id="b7d0f-140">[![Zweck zuweisen](./media/screenshot5.png)](./media/screenshot5.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-140">[![Assign purpose](./media/screenshot5.png)](./media/screenshot5.png)</span></span>
 
-1.4. Wiederholen Sie den obigen Schritt für den Zweck der Organisationssicherheit. Schließen Sie das Formular, wenn Sie fertig sind.
+<span data-ttu-id="b7d0f-141">1.4.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-141">1.4.</span></span> <span data-ttu-id="b7d0f-142">Wiederholen Sie den obigen Schritt für den Zweck der Organisationssicherheit.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-142">Repeat the step above for Security organizational purpose.</span></span> <span data-ttu-id="b7d0f-143">Schließen Sie das Formular, wenn Sie fertig sind.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-143">Close the form when done.</span></span>
 
-[![Sicherheitsorganisation](./media/screenshot6.png)](./media/screenshot6.png)
+<span data-ttu-id="b7d0f-144">[![Sicherheitsorganisation](./media/screenshot6.png)](./media/screenshot6.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-144">[![Security org](./media/screenshot6.png)](./media/screenshot6.png)</span></span>
 
-1.5. In der Organisationshierarchieformularklicken-Schaltfläche Ansicht. Klicken Sie im Hierarchie-Designer auf "Bearbeiten", und erstellen Sie eine Hierarchie, indem Sie auf die Schaltfläche "Einfügen" klicken.
+<span data-ttu-id="b7d0f-145">1.5.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-145">1.5.</span></span> <span data-ttu-id="b7d0f-146">In der Organisationshierarchieformularklicken-Schaltfläche Ansicht.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-146">In the Organizational Hierarchies form click button View.</span></span> <span data-ttu-id="b7d0f-147">Klicken Sie im Hierarchie-Designer auf "Bearbeiten", und erstellen Sie eine Hierarchie, indem Sie auf die Schaltfläche "Einfügen" klicken.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-147">Click Edit in the Hierarchy designer and create a hierarchy by clicking button Insert.</span></span>
 
-[![Einfügen](./media/screenshot7.png)](./media/screenshot7.png) 
+<span data-ttu-id="b7d0f-148">[![Einfügen](./media/screenshot7.png)](./media/screenshot7.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-148">[![Insert](./media/screenshot7.png)](./media/screenshot7.png)</span></span> 
 
-1.6. Wählen Sie die Finanzabteilung für die Budgethierarchie aus. 
+<span data-ttu-id="b7d0f-149">1.6.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-149">1.6.</span></span> <span data-ttu-id="b7d0f-150">Wählen Sie die Finanzabteilung für die Budgethierarchie aus.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-150">Select Finance department for the budgeting hierarchy.</span></span> 
 
-[![Finanzen](./media/screenshot8.png)](./media/screenshot8.png)
+<span data-ttu-id="b7d0f-151">[![Finanzen](./media/screenshot8.png)](./media/screenshot8.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-151">[![Finance](./media/screenshot8.png)](./media/screenshot8.png)</span></span>
 
-1.7. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche "Veröffentlichen und schließen". Wählen Sie 1/1/2015 als Gültigkeitsdatum für die Hierarchieveröffentlichung aus.
+<span data-ttu-id="b7d0f-152">1.7.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-152">1.7.</span></span> <span data-ttu-id="b7d0f-153">Wenn Sie fertig sind, klicken Sie auf die Schaltfläche "Veröffentlichen und schließen".</span><span class="sxs-lookup"><span data-stu-id="b7d0f-153">When done, click button Publish and Close.</span></span> <span data-ttu-id="b7d0f-154">Wählen Sie 1/1/2015 als Gültigkeitsdatum für die Hierarchieveröffentlichung aus.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-154">Select 1/1/2015 as effective date for hierarchy publishing.</span></span>
 
-[![Gültigkeitsdatum](./media/screenshot9.png)](./media/screenshot9.png)
+<span data-ttu-id="b7d0f-155">[![Gültigkeitsdatum](./media/screenshot9.png)](./media/screenshot9.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-155">[![Effective date](./media/screenshot9.png)](./media/screenshot9.png)</span></span>
 
-## <a name="task-2-configure-user-security"></a>Aufgabe 2: Benutzersicherheit konfigurieren
-Budgetplanung verwendet spezielle Sicherheitsrichtlinien, um den Zugriff auf die Budgetpläne zu konfigurieren. Julia muss den Zugriff auf die Finanzbudgetpläne selbst erteilen. 
+## <a name="task-2-configure-user-security"></a><span data-ttu-id="b7d0f-156">Aufgabe 2: Benutzersicherheit konfigurieren</span><span class="sxs-lookup"><span data-stu-id="b7d0f-156">Task 2: Configure user security</span></span>
+<span data-ttu-id="b7d0f-157">Budgetplanung verwendet spezielle Sicherheitsrichtlinien, um den Zugriff auf die Budgetpläne zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-157">Budget planning uses special security policies to configure access to budget plans data.</span></span> <span data-ttu-id="b7d0f-158">Julia muss den Zugriff auf die Finanzbudgetpläne selbst erteilen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-158">Julia needs to give access to Finance budget plans for herself.</span></span> 
 
-2.1. Wechsel zum DEMF-Kontext für die juristische Entität. 
+<span data-ttu-id="b7d0f-159">2.1.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-159">2.1.</span></span> <span data-ttu-id="b7d0f-160">Wechsel zum DEMF-Kontext für die juristische Entität.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-160">Switch to DEMF legal entity context.</span></span> 
 
 
-2.2. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration. In der Registerkarte Parameter legen Sie den Sicherheitsmodellwert basierend auf der Sicherheitsorganisationen fest 
+<span data-ttu-id="b7d0f-161">2.2.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-161">2.2.</span></span> <span data-ttu-id="b7d0f-162">Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-162">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="b7d0f-163">In der Registerkarte Parameter legen Sie den Sicherheitsmodellwert basierend auf der Sicherheitsorganisationen fest</span><span class="sxs-lookup"><span data-stu-id="b7d0f-163">In Parameters tab, set the Security model value to Based on security organizations</span></span> 
 
-[![Parameter](./media/screenshot11.png)](./media/screenshot11.png) 
+<span data-ttu-id="b7d0f-164">[![Parameter](./media/screenshot11.png)](./media/screenshot11.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-164">[![Parameters](./media/screenshot11.png)](./media/screenshot11.png)</span></span> 
 
-2.3. Navigieren Sie zu Systemverwaltung &gt; Benutzer &gt; Benutzer. Geben Sie dem Benutzer Admin (Julia Funderburk) die Budget-Manager-Rolle. 
+<span data-ttu-id="b7d0f-165">2.3.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-165">2.3.</span></span> <span data-ttu-id="b7d0f-166">Navigieren Sie zu Systemverwaltung &gt; Benutzer &gt; Benutzer.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-166">Navigate to System administration &gt; Users &gt; Users.</span></span> <span data-ttu-id="b7d0f-167">Geben Sie dem Benutzer Admin (Julia Funderburk) die Budget-Manager-Rolle.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-167">Give user Admin (Julia Funderburk) Budget manager role.</span></span> 
 
-[![Budget-Manager](./media/screenshot12.png)](./media/screenshot12.png) 
+<span data-ttu-id="b7d0f-168">[![Budget-Manager](./media/screenshot12.png)](./media/screenshot12.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-168">[![Budget manager](./media/screenshot12.png)](./media/screenshot12.png)</span></span> 
 
-2.4. Wählen Sie die Benutzerrolle aus und klicken Sie auf Organisation zuweisen 
+<span data-ttu-id="b7d0f-169">2.4.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-169">2.4.</span></span> <span data-ttu-id="b7d0f-170">Wählen Sie die Benutzerrolle aus und klicken Sie auf Organisation zuweisen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-170">Pick user role and click Assign organizations</span></span> 
 
-[![Organisationsstruktur zuweisen](./media/screenshot13.png)](./media/screenshot13.png)
+<span data-ttu-id="b7d0f-171">[![Organisationsstruktur zuweisen](./media/screenshot13.png)](./media/screenshot13.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-171">[![Assign org](./media/screenshot13.png)](./media/screenshot13.png)</span></span>
 
-2.5. Wählen Sie "Zugriff individuell auf spezifische Organisationen erteilen" aus. Wählen Sie die im ersten Schritt erstellte Organisationshierarchie aus. Wählen Sie den Finanzknoten aus, und klicken Sie Erteilen mit untergeordnenten Elementen 
+<span data-ttu-id="b7d0f-172">2.5.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-172">2.5.</span></span> <span data-ttu-id="b7d0f-173">Wählen Sie "Zugriff individuell auf spezifische Organisationen erteilen" aus.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-173">Select “Grant access to specific organizations”.</span></span> <span data-ttu-id="b7d0f-174">Wählen Sie die im ersten Schritt erstellte Organisationshierarchie aus.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-174">Pick Organizational hierarchy created in the first step.</span></span> <span data-ttu-id="b7d0f-175">Wählen Sie den Finanzknoten aus, und klicken Sie Erteilen mit untergeordnenten Elementen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-175">Pick Finance node and click Grant with children button</span></span> 
 
-***Wichtig!*** *Stellen Sie sicher, dass Sie sich im Kontext DEMF Juristische Person befinden, wenn Sie diese Aufgabe ausführen, da die Organisationssicherheit pro juristische Person angewendet wird.* 
+<span data-ttu-id="b7d0f-176">***Wichtig!***</span><span class="sxs-lookup"><span data-stu-id="b7d0f-176">***Important!***</span></span> <span data-ttu-id="b7d0f-177">*Stellen Sie sicher, dass Sie sich im Kontext DEMF Juristische Person befinden, wenn Sie diese Aufgabe ausführen, da die Organisationssicherheit pro juristische Person angewendet wird.*</span><span class="sxs-lookup"><span data-stu-id="b7d0f-177">*Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity*</span></span> 
 
-[![Zugriff gewähren](./media/screenshot14.png)](./media/screenshot14.png)
+<span data-ttu-id="b7d0f-178">[![Zugriff gewähren](./media/screenshot14.png)](./media/screenshot14.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-178">[![Grant access](./media/screenshot14.png)](./media/screenshot14.png)</span></span>
 
-## <a name="task-3-create-scenarios"></a>Abgabe 3: Szenarien erstellen
-3.1. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanung konfigurieren. Beachten Sie auf der Szenarioseite die Szenarien, die wir später in dieser Übungseinheit verwenden werden: Vorjahres-Istwerte und Budgetiert. 
+## <a name="task-3-create-scenarios"></a><span data-ttu-id="b7d0f-179">Abgabe 3: Szenarien erstellen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-179">Task 3: Create scenarios</span></span>
+<span data-ttu-id="b7d0f-180">3.1.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-180">3.1.</span></span> <span data-ttu-id="b7d0f-181">Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanung konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-181">Navigate to Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="b7d0f-182">Beachten Sie auf der Szenarioseite die Szenarien, die wir später in dieser Übungseinheit verwenden werden: Vorjahres-Istwerte und Budgetiert.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-182">In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted.</span></span> 
 
-*Hinweis: Sie können neue Szenarien für diese Übung erstellen, wenn sie wünschen, und stattdessen diese verwenden.* 
+<span data-ttu-id="b7d0f-183">*Hinweis: Sie können neue Szenarien für diese Übung erstellen, wenn sie wünschen, und stattdessen diese verwenden.*</span><span class="sxs-lookup"><span data-stu-id="b7d0f-183">*Note: You can create new scenarios for this exercise if desired and use those instead.*</span></span> 
 
-[![Neu Szenarien](./media/screenshot15.png)](./media/screenshot15.png) 
+<span data-ttu-id="b7d0f-184">[![Neu Szenarien](./media/screenshot15.png)](./media/screenshot15.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-184">[![New scenarios](./media/screenshot15.png)](./media/screenshot15.png)</span></span> 
 
-*Hinweis: Da Julia nicht dem formalen Genehmigungsprozess für die Budgetausarbeitung folgt, überspringen wir Workflows, Phasen und Workflowphaseneinrichtung in dieser Übungseinheit und verwenden die vorhandenen Einstellungen für den Workflow Automatisch genehmigt. Vgl. dazu Anhang zur Konfiguration von diesem Workflow.*
+<span data-ttu-id="b7d0f-185">*Hinweis: Da Julia nicht dem formalen Genehmigungsprozess für die Budgetausarbeitung folgt, überspringen wir Workflows, Phasen und Workflowphaseneinrichtung in dieser Übungseinheit und verwenden die vorhandenen Einstellungen für den Workflow Automatisch genehmigt. Vgl. dazu Anhang zur Konfiguration von diesem Workflow.*</span><span class="sxs-lookup"><span data-stu-id="b7d0f-185">*Note: as Julia is not using formal approval process for budget preparation, we will skip Workflows, Stages and Workflow stages setup in this lab and will use existing setup for Auto – approve workflow. See appendix for this workflow configuration.*</span></span>
 
-## <a name="task-4-create-budget-plan-columns"></a>Abgabe 4: Budgetplanspalten erstellen
-Budgetplanspalten sind entweder monitär- oder mengenbasierte Spalten, die im Budgetplan-Dokumentenlayout verwendet werden können. In unserem Beispiel müssen wir eine Spalte für Vorjahres-Istwerte und 12 Spalten für jeden Monat in einem budgetierten Jahr erstellen. Spalten können entweder erstellt werden, indem Sie einfach auf die Schaltfläche "Hinzufügen" klicken und die Werte eintragen, oder mithilfe der "Datenentität". In dieser Übungseinheit verwenden wir "Datenentität", um die Werte einzutragen. 
+## <a name="task-4-create-budget-plan-columns"></a><span data-ttu-id="b7d0f-186">Abgabe 4: Budgetplanspalten erstellen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-186">Task 4: Create budget plan columns</span></span>
+<span data-ttu-id="b7d0f-187">Budgetplanspalten sind entweder monitär- oder mengenbasierte Spalten, die im Budgetplan-Dokumentenlayout verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-187">Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout.</span></span> <span data-ttu-id="b7d0f-188">In unserem Beispiel müssen wir eine Spalte für Vorjahres-Istwerte und 12 Spalten für jeden Monat in einem budgetierten Jahr erstellen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-188">In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year.</span></span> <span data-ttu-id="b7d0f-189">Spalten können entweder erstellt werden, indem Sie einfach auf die Schaltfläche "Hinzufügen" klicken und die Werte eintragen, oder mithilfe der "Datenentität".</span><span class="sxs-lookup"><span data-stu-id="b7d0f-189">Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity.</span></span> <span data-ttu-id="b7d0f-190">In dieser Übungseinheit verwenden wir "Datenentität", um die Werte einzutragen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-190">In this lab we will use Data entity to fill in the values.</span></span> 
 
-4.1. Öffnen Sie in Budgetplanungskonfiguration die Spaltenseite &gt;Einrichten &gt; Budgetplanung &gt;. Klicken Sie auf die Schaltfläche Office in der rechten oberen Ecke das Formulars, und wählen Sie Spalten (ungefiltert) aus 
+<span data-ttu-id="b7d0f-191">4.1.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-191">4.1.</span></span> <span data-ttu-id="b7d0f-192">Öffnen Sie in Budgetplanungskonfiguration die Spaltenseite &gt;Einrichten &gt; Budgetplanung &gt;.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-192">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Columns page.</span></span> <span data-ttu-id="b7d0f-193">Klicken Sie auf die Schaltfläche Office in der rechten oberen Ecke das Formulars, und wählen Sie Spalten (ungefiltert) aus</span><span class="sxs-lookup"><span data-stu-id="b7d0f-193">Click Office button on the top right corner of the form and pick Columns (unfiltered)</span></span> 
 
-[![Spalten ungefiltert](./media/screenshot16.png)](./media/screenshot16.png) 
+<span data-ttu-id="b7d0f-194">[![Spalten ungefiltert](./media/screenshot16.png)](./media/screenshot16.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-194">[![Columns unfiltered](./media/screenshot16.png)](./media/screenshot16.png)</span></span> 
 
-4.2. Das System öffnet die Excel-Arbeitsmappe, die zum Ausfüllen der Werten verwendet wird. Bei Aufforderung klicken Sie Bearbeitung aktivieren und dieser App vertrauen 
+<span data-ttu-id="b7d0f-195">4.2.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-195">4.2.</span></span> <span data-ttu-id="b7d0f-196">Das System öffnet die Excel-Arbeitsmappe, die zum Ausfüllen der Werten verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-196">System will open Excel workbook to be used for filling in the values.</span></span> <span data-ttu-id="b7d0f-197">Bei Aufforderung klicken Sie Bearbeitung aktivieren und dieser App vertrauen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-197">If prompted, click Enable Editing and Trust this app</span></span> 
 
-[![Bearbeitung aktivieren](./media/screenshot18.png)](./media/screenshot18.png) 
+<span data-ttu-id="b7d0f-198">[![Bearbeitung aktivieren](./media/screenshot18.png)](./media/screenshot18.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-198">[![Enable editing](./media/screenshot18.png)](./media/screenshot18.png)</span></span> 
 
-[![Anwendungskonfigurationstool dieser App](./media/screenshot17.png)](./media/screenshot17.png)
+<span data-ttu-id="b7d0f-199">[![Anwendungskonfigurationstool dieser App](./media/screenshot17.png)](./media/screenshot17.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-199">[![Trust this app](./media/screenshot17.png)](./media/screenshot17.png)</span></span>
 
-4.3. Es müssen mehrere Spalten vorhanden sein, um Werte einzugeben. Klicken Sie auf Entwurf im rechten Bereich, um die Spalten im Raster hinzuzufügen: 
+<span data-ttu-id="b7d0f-200">4.3.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-200">4.3.</span></span> <span data-ttu-id="b7d0f-201">Es müssen mehrere Spalten vorhanden sein, um Werte einzugeben.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-201">We will need more columns to fill the values in.</span></span> <span data-ttu-id="b7d0f-202">Klicken Sie auf Entwurf im rechten Bereich, um die Spalten im Raster hinzuzufügen:</span><span class="sxs-lookup"><span data-stu-id="b7d0f-202">Click Design on the right side pane to add the columns to the grid:</span></span> 
 
-[![Gestaltung](./media/screenshot19.png)](./media/screenshot19.png) 
+<span data-ttu-id="b7d0f-203">[![Gestaltung](./media/screenshot19.png)](./media/screenshot19.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-203">[![Design](./media/screenshot19.png)](./media/screenshot19.png)</span></span> 
 
-4.4. Klicken Sie auf die Schaltfläche mit dem kleinen Bleistift neben PlanColumns, um die verfügbaren Spalten zu anzuzeigen, die dem Raster hinzugefügt werden können 
+<span data-ttu-id="b7d0f-204">4.4.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-204">4.4.</span></span> <span data-ttu-id="b7d0f-205">Klicken Sie auf die Schaltfläche mit dem kleinen Bleistift neben PlanColumns, um die verfügbaren Spalten zu anzuzeigen, die dem Raster hinzugefügt werden können</span><span class="sxs-lookup"><span data-stu-id="b7d0f-205">Click little pencil button next to PlanColumns to see available columns to add to the grid</span></span> 
 
-[![Bearbeiten](./media/screenshot20.png)](./media/screenshot20.png) 
+<span data-ttu-id="b7d0f-206">[![Bearbeiten](./media/screenshot20.png)](./media/screenshot20.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-206">[![Edit](./media/screenshot20.png)](./media/screenshot20.png)</span></span> 
 
-4.5. Doppelklicken Sie auf jedes verfügbaren Feld, um es zu Ausgewählte Felder hinzuzufügen und klicken Sie auf Aktualisieren 
+<span data-ttu-id="b7d0f-207">4.5.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-207">4.5.</span></span> <span data-ttu-id="b7d0f-208">Doppelklicken Sie auf jedes verfügbaren Feld, um es zu Ausgewählte Felder hinzuzufügen und klicken Sie auf Aktualisieren</span><span class="sxs-lookup"><span data-stu-id="b7d0f-208">Double click on each available field to add them to Selected fields and click Update</span></span> 
 
-![Buchen](./media/screenshot21.png)](./media/screenshot21.png) 
+![Buchen](./media/screenshot21.png)<span data-ttu-id="b7d0f-210">](./media/screenshot21.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-210">](./media/screenshot21.png)</span></span> 
 
-4.6. Fügen Sie in der Excel-Tabelle alle Spalten hinzu, die erstellt werden müssen. Verwenden Sie die AutoFill-Funktion in Excel, um die Positionen schnell hinzuzufügen. Stellen Sie sicher, dass die Positionen als Teil der Tabelle hinzugefügt werden (wenn Sie den vertikalen Bildlauf verwenden, sollten Sie die Spaltenüberschriften über dem Raster sehen können) 
+<span data-ttu-id="b7d0f-211">4.6.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-211">4.6.</span></span> <span data-ttu-id="b7d0f-212">Fügen Sie in der Excel-Tabelle alle Spalten hinzu, die erstellt werden müssen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-212">In Excel table add all the columns that need to be created.</span></span> <span data-ttu-id="b7d0f-213">Verwenden Sie die AutoFill-Funktion in Excel, um die Positionen schnell hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-213">Use AutoFill feature in Excel to add the lines quickly.</span></span> <span data-ttu-id="b7d0f-214">Stellen Sie sicher, dass die Positionen als Teil der Tabelle hinzugefügt werden (wenn Sie den vertikalen Bildlauf verwenden, sollten Sie die Spaltenüberschriften über dem Raster sehen können)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-214">Make sure the lines are added as a part of the table (when using vertical scroll, you should be able to see column headers on the top of the grid)</span></span> 
 
-[![Autofill](./media/screenshot22.png)](./media/screenshot22.png) 
+<span data-ttu-id="b7d0f-215">[![Autofill](./media/screenshot22.png)](./media/screenshot22.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-215">[![Autofill](./media/screenshot22.png)](./media/screenshot22.png)</span></span> 
 
-4.7. Kehren Sie zu Finance and Operations zurück und aktualisieren Sie die Seite. Veröffentlichte Werte werden in Finance and Operations angezeigt. 
+<span data-ttu-id="b7d0f-216">4.7.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-216">4.7.</span></span> <span data-ttu-id="b7d0f-217">Kehren Sie zu Finance and Operations zurück und aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-217">Return to Finance and Operations and refresh the page.</span></span> <span data-ttu-id="b7d0f-218">Veröffentlichte Werte werden in Finance and Operations angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-218">Published values will appear in Finance and Operations.</span></span> 
 
-[![Aktualisieren](./media/screenshot23.png)](./media/screenshot23.png)
+<span data-ttu-id="b7d0f-219">[![Aktualisieren](./media/screenshot23.png)](./media/screenshot23.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-219">[![Refresh](./media/screenshot23.png)](./media/screenshot23.png)</span></span>
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Abgabe 5:Budgetplan-Dokumentenlayouts und - vorlagen erstellen
-Layout definiert, wie das Raster der Budgetsplan-Dokumentenpositionen aussieht, wenn ein Benutzer das Budgetplandokument öffnet. Es ist auch möglich, das Layout des Budgetplandokuments zu wechseln, um dieselben Daten aus verschiedenen Winkeln anzuzeigen. Jetzt, da sie die Spalten definiert hat, die in unserem Budgetplandokument verwendet werden, muss Julia ein Budgetsplan-Dokumentenlayout erstellen, das der Excel-Tabelle ähnlich sieht, das sie verwendet, um Budgetdaten zu erstellen (weitere Informationen finden Sie im Abschnitt Szenarioüberblick in dieser Übungseinheit) 
+## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a><span data-ttu-id="b7d0f-220">Abgabe 5:Budgetplan-Dokumentenlayouts und - vorlagen erstellen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-220">Task 5: Create budget plan document layouts and templates</span></span>
+<span data-ttu-id="b7d0f-221">Layout definiert, wie das Raster der Budgetsplan-Dokumentenpositionen aussieht, wenn ein Benutzer das Budgetplandokument öffnet.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-221">Layout defines how budget plan document lines grid is going to look like when user opens budget plan document.</span></span> <span data-ttu-id="b7d0f-222">Es ist auch möglich, das Layout des Budgetplandokuments zu wechseln, um dieselben Daten aus verschiedenen Winkeln anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-222">It is also possible to switch the layout for budget plan document to see the same data in different angles.</span></span> <span data-ttu-id="b7d0f-223">Jetzt, da sie die Spalten definiert hat, die in unserem Budgetplandokument verwendet werden, muss Julia ein Budgetsplan-Dokumentenlayout erstellen, das der Excel-Tabelle ähnlich sieht, das sie verwendet, um Budgetdaten zu erstellen (weitere Informationen finden Sie im Abschnitt Szenarioüberblick in dieser Übungseinheit)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-223">Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab)</span></span> 
 
-5.1. Öffnen Sie in Budgetierung> &gt;Einstellungen&gt;Budgetplanung&gt;Budgetplanungskonfiguration die Seite "Layouts". Erstellen Sie ein neues Layout für den Monatsbudgeteintrag:
+<span data-ttu-id="b7d0f-224">5.1.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-224">5.1.</span></span> <span data-ttu-id="b7d0f-225">Öffnen Sie in Budgetierung> &gt;Einstellungen&gt;Budgetplanung&gt;Budgetplanungskonfiguration die Seite "Layouts".</span><span class="sxs-lookup"><span data-stu-id="b7d0f-225">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Layouts page.</span></span> <span data-ttu-id="b7d0f-226">Erstellen Sie ein neues Layout für den Monatsbudgeteintrag:</span><span class="sxs-lookup"><span data-stu-id="b7d0f-226">Create a new layout for Monthly budget entry:</span></span>
 
--   Wählen Sie den MA+BU-Dimensionssatz, um dem Layout Hauptkonten und Unternehmenseinheiten hinzuzufügen.
--   Führen Sie alle Budgetplanspalten auf, die im vorherigen Schritt im Elementabschnitt erstellt wurden. Machen Sie alle Istwerte aus denen des Vorjahres bearbeitbar.
--   Klicken Sie auf die Schaltfläche "Beschreibungen", um auszuwählen, welche Finanzdimensionen Beschreibungen im Raster anzeigen sollten.
+-   <span data-ttu-id="b7d0f-227">Wählen Sie den MA+BU-Dimensionssatz, um dem Layout Hauptkonten und Unternehmenseinheiten hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-227">Pick MA+BU dimension set to include Main accounts and Business units to the layout.</span></span>
+-   <span data-ttu-id="b7d0f-228">Führen Sie alle Budgetplanspalten auf, die im vorherigen Schritt im Elementabschnitt erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-228">List all budget plan columns created in the previous step in the Elements section.</span></span> <span data-ttu-id="b7d0f-229">Machen Sie alle Istwerte aus denen des Vorjahres bearbeitbar.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-229">Make all but Previous year actuals editable.</span></span>
+-   <span data-ttu-id="b7d0f-230">Klicken Sie auf die Schaltfläche "Beschreibungen", um auszuwählen, welche Finanzdimensionen Beschreibungen im Raster anzeigen sollten.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-230">Click Descriptions button to select which financial dimensions should display Descriptions in the grid.</span></span>
 
-[![Beschreibungen](./media/screenshot24.png)](./media/screenshot24.png) 
+<span data-ttu-id="b7d0f-231">[![Beschreibungen](./media/screenshot24.png)](./media/screenshot24.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-231">[![Descriptions](./media/screenshot24.png)](./media/screenshot24.png)</span></span> 
 
-Auf Grundlage der Budgetplan-Layoutdefinition können wir eine Excel-Vorlage erstellen, die als alternative Methode zur Bearbeitung der Budgetdaten verwendet werden kann. Da die Excel-Vorlage mit der Budgetplan-Layoutdefinition übereinstimmen muss, sind keine Änderungen am Budgetplanlayout mehr möglich, nachdem Sie die Excel-Vorlage generiert haben. Daher sollte diese Aufgabe erfolgen, nachdem alle Layoutkomponenten definiert sind. 
+<span data-ttu-id="b7d0f-232">Auf Grundlage der Budgetplan-Layoutdefinition können wir eine Excel-Vorlage erstellen, die als alternative Methode zur Bearbeitung der Budgetdaten verwendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-232">Based on the budget plan layout definition we can create an Excel template to be used as an alternative way to edit Budget data.</span></span> <span data-ttu-id="b7d0f-233">Da die Excel-Vorlage mit der Budgetplan-Layoutdefinition übereinstimmen muss, sind keine Änderungen am Budgetplanlayout mehr möglich, nachdem Sie die Excel-Vorlage generiert haben. Daher sollte diese Aufgabe erfolgen, nachdem alle Layoutkomponenten definiert sind.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-233">As Excel template has to match budget plan layout definition, you won’t be able to edit budget plan layout after generating Excel template, therefore this task should be done after all layout components are defined.</span></span> 
 
-5.2. Für die Layouts, die unter 5,1 erstellt wurden. Schritt, klicken Sie auf die Schaltfläche Vorlage &gt; generieren. Bestätigen Sie die Warnmeldung. Klicken Sie auf "Vorlage &gt;Ansicht. 
+<span data-ttu-id="b7d0f-234">5.2.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-234">5.2.</span></span> <span data-ttu-id="b7d0f-235">Für die Layouts, die unter 5,1 erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-235">For the layout created in the 5.1.</span></span> <span data-ttu-id="b7d0f-236">Schritt, klicken Sie auf die Schaltfläche Vorlage &gt; generieren.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-236">step, click button Template &gt; Generate.</span></span> <span data-ttu-id="b7d0f-237">Bestätigen Sie die Warnmeldung.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-237">Confirm the warning message.</span></span> <span data-ttu-id="b7d0f-238">Klicken Sie auf "Vorlage &gt;Ansicht.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-238">To view the template, click Template &gt; View.</span></span> 
 
-*Hinweis Stellen Sie sicher, Speichern auszuwählen und den Ort auszuwählen, an dem die Vorlage gespeichert werden soll, um diese zu bearbeiten. Wenn Benutzer Öffnen im Dialogfeld auswählen, ohne Speichern, werden die Änderungen, die in die Datei geleisteten, nicht beibehalten, wenn die Datei geschlossen wird* 
-[![Vorlagenansicht](./media/screenshot25.png)](./media/screenshot25.png) 
+<span data-ttu-id="b7d0f-239">*Hinweis Stellen Sie sicher, Speichern auszuwählen und den Ort auszuwählen, an dem die Vorlage gespeichert werden soll, um diese zu bearbeiten. Wenn Benutzer Öffnen im Dialogfeld auswählen, ohne Speichern, werden die Änderungen, die in die Datei geleisteten, nicht beibehalten, wenn die Datei geschlossen wird* 
+[![Vorlagenansicht](./media/screenshot25.png)](./media/screenshot25.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-239">*Note: Make sure to select “Save as” and select the place where template should be stored in order to edit it. If user selects “Open” in the dialog without saving, the changes done to the file will not be retained when the file is closed.* 
+[![Template view](./media/screenshot25.png)](./media/screenshot25.png)</span></span> 
 
-5.3. &lt;Optionaler Schritt&gt; Ändern Sie die Excel-Vorlage, um sie benutzerfreundlicher zu machen - fügen Sie Addierformeln, Überschriftenfelder, Formatierung usw. hinzu. Speichern Sie die Änderungen, und laden Sie die Datei zum Budgetplanlayout hoch, indem Sie auf Layout&gt; Hochladen[![](./media/screenshot26.png)](./media/screenshot26.png) klicken
+<span data-ttu-id="b7d0f-240">5.3.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-240">5.3.</span></span> <span data-ttu-id="b7d0f-241">&lt;Optionaler Schritt&gt; Ändern Sie die Excel-Vorlage, um sie benutzerfreundlicher zu machen - fügen Sie Addierformeln, Überschriftenfelder, Formatierung usw. hinzu. Speichern Sie die Änderungen, und laden Sie die Datei zum Budgetplanlayout hoch, indem Sie auf Layout&gt; Hochladen[![](./media/screenshot26.png)](./media/screenshot26.png) klicken</span><span class="sxs-lookup"><span data-stu-id="b7d0f-241">&lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload [![Upload](./media/screenshot26.png)](./media/screenshot26.png)</span></span>
 
-## <a name="task-6-create-a-budget-planning-process"></a>Aufgabe 6: Budgetplanungsprozess erstellen
-Julia muss einen neuen Budgetplanungsprozess erstellen und aktivieren, der sämtliche oben genannten Einstellungen kombiniert, um mit der Eingabe von Budgetplänen zu beginnen. Der Budgetplanungsprozess definiert, welche Budgetplanungsorganisationen, Workflows, Layouts und Vorlagen zum Erstellen von Budgetplänen verwendet werden. 
+## <a name="task-6-create-a-budget-planning-process"></a><span data-ttu-id="b7d0f-242">Aufgabe 6: Budgetplanungsprozess erstellen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-242">Task 6: Create a budget planning process</span></span>
+<span data-ttu-id="b7d0f-243">Julia muss einen neuen Budgetplanungsprozess erstellen und aktivieren, der sämtliche oben genannten Einstellungen kombiniert, um mit der Eingabe von Budgetplänen zu beginnen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-243">Julia needs to create and activate a new budget planning process combining all the setup above to start entering budget plans.</span></span> <span data-ttu-id="b7d0f-244">Der Budgetplanungsprozess definiert, welche Budgetplanungsorganisationen, Workflows, Layouts und Vorlagen zum Erstellen von Budgetplänen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-244">Budget planning process defines what budgeting organizations, workflow, layouts and templates will be used for creating budget plans.</span></span> 
 
-6.1. Navigieren Sie zu Budgetierung  &gt;Einstellungen&gt; Budgetplanung &gt; Budgetplanungsprozess, und erstellen Sie einen neuen Datensatz.
+<span data-ttu-id="b7d0f-245">6.1.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-245">6.1.</span></span> <span data-ttu-id="b7d0f-246">Navigieren Sie zu Budgetierung  &gt;Einstellungen&gt; Budgetplanung &gt; Budgetplanungsprozess, und erstellen Sie einen neuen Datensatz.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-246">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning process and create a new record.</span></span>
 
--   Budgetplanungsprozess – DEMF-Budgetierung GJ2016
--   Budgetzyklus – GJ2016
--   Sachkonto – DEMF
--   Standardkontostruktur – Herstellungs-GuV
--   Organisationshierarchie – wählen Sie die Hierarchie, die am Anfang der Übungseinheit erstellt wurde aus
--   Budgetplanungsworkflow – weisen Sie den Workflow für automatische Zuweisung für die Finanzabteilung aus
--   Wählen Sie in den hasenregeln und - vorlagen für die Budgetplanung für jede Workflow-Budgetplanungsphase aus, ob das Hinzufügen und das Ändern von Positionen zulässig ist und welches Layout standardmäßig verwendet werden soll
+-   <span data-ttu-id="b7d0f-247">Budgetplanungsprozess – DEMF-Budgetierung GJ2016</span><span class="sxs-lookup"><span data-stu-id="b7d0f-247">Budget planning process – DEMF budgeting FY2016</span></span>
+-   <span data-ttu-id="b7d0f-248">Budgetzyklus – GJ2016</span><span class="sxs-lookup"><span data-stu-id="b7d0f-248">Budget cycle – FY2016</span></span>
+-   <span data-ttu-id="b7d0f-249">Sachkonto – DEMF</span><span class="sxs-lookup"><span data-stu-id="b7d0f-249">Ledger – DEMF</span></span>
+-   <span data-ttu-id="b7d0f-250">Standardkontostruktur – Herstellungs-GuV</span><span class="sxs-lookup"><span data-stu-id="b7d0f-250">Default account structure – Manufacturing P&L</span></span>
+-   <span data-ttu-id="b7d0f-251">Organisationshierarchie – wählen Sie die Hierarchie, die am Anfang der Übungseinheit erstellt wurde aus</span><span class="sxs-lookup"><span data-stu-id="b7d0f-251">Organization hierarchy – pick the hierarchy created in the beginning of the lab</span></span>
+-   <span data-ttu-id="b7d0f-252">Budgetplanungsworkflow – weisen Sie den Workflow für automatische Zuweisung für die Finanzabteilung aus</span><span class="sxs-lookup"><span data-stu-id="b7d0f-252">Budget planning workflow – assign Auto – Approve workflow for Finance department</span></span>
+-   <span data-ttu-id="b7d0f-253">Wählen Sie in den hasenregeln und - vorlagen für die Budgetplanung für jede Workflow-Budgetplanungsphase aus, ob das Hinzufügen und das Ändern von Positionen zulässig ist und welches Layout standardmäßig verwendet werden soll</span><span class="sxs-lookup"><span data-stu-id="b7d0f-253">In budget planning stage rules and templates, for each workflow Budget planning stage pick if Adding lines and Modifying lines is allowed and what Layout should be used by default</span></span>
 
-*Hinweis: Sie können zusätzliche Dokumentlayouts erstellen, und sie zuzuordnen, damit sie in der Budgetplanungs-Workflowphase zur Verfügung stehen, indem Sie auf die Schaltfläche "Alternative Layouts" klicken.* 
+<span data-ttu-id="b7d0f-254">*Hinweis: Sie können zusätzliche Dokumentlayouts erstellen, und sie zuzuordnen, damit sie in der Budgetplanungs-Workflowphase zur Verfügung stehen, indem Sie auf die Schaltfläche "Alternative Layouts" klicken.*</span><span class="sxs-lookup"><span data-stu-id="b7d0f-254">*Note: You can create additional document layouts and assign them to be available in budget planning workflow stage by clicking Alternate layouts button.*</span></span> 
 
-[![Alternative Layouts](./media/screenshot27.png)](./media/screenshot27.png) 
+<span data-ttu-id="b7d0f-255">[![Alternative Layouts](./media/screenshot27.png)](./media/screenshot27.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-255">[![Alternate layouts](./media/screenshot27.png)](./media/screenshot27.png)</span></span> 
 
-6.2. Wählen Sie Aktionen &gt;Aktivieren aus, um diesen Budgetplanungsworkflow zu aktivieren 
+<span data-ttu-id="b7d0f-256">6.2.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-256">6.2.</span></span> <span data-ttu-id="b7d0f-257">Wählen Sie Aktionen &gt;Aktivieren aus, um diesen Budgetplanungsworkflow zu aktivieren</span><span class="sxs-lookup"><span data-stu-id="b7d0f-257">Select Actions &gt; Activate to activate this budget planning workflow</span></span> 
 
-[![Aktivieren](./media/screenshot28.png)](./media/screenshot28.png)
+<span data-ttu-id="b7d0f-258">[![Aktivieren](./media/screenshot28.png)](./media/screenshot28.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-258">[![Activate](./media/screenshot28.png)](./media/screenshot28.png)</span></span>
 
-<a name="exercise-2-process-simulation"></a>Übung 2: Prozesssimulation
+<a name="exercise-2-process-simulation"></a><span data-ttu-id="b7d0f-259">Übung 2: Prozesssimulation</span><span class="sxs-lookup"><span data-stu-id="b7d0f-259">Exercise 2: Process simulation</span></span>
 ==============================
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Aufgabe 7: Anfängliche Daten für den Budgetplan aus dem Hauptbuch generieren
-7.1. Navigieren Sie zu Budgetierung &gt;Periodisch &gt; Budgetplan aus dem Hauptbuch generieren. Füllen Sie die periodischen Prozessparameter aus, klicken Sie auf die Schaltfläche "Generieren". 
+## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a><span data-ttu-id="b7d0f-260">Aufgabe 7: Anfängliche Daten für den Budgetplan aus dem Hauptbuch generieren</span><span class="sxs-lookup"><span data-stu-id="b7d0f-260">Task 7: Generate initial data for budget plan from General ledger</span></span>
+<span data-ttu-id="b7d0f-261">7.1.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-261">7.1.</span></span> <span data-ttu-id="b7d0f-262">Navigieren Sie zu Budgetierung &gt;Periodisch &gt; Budgetplan aus dem Hauptbuch generieren.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-262">Navigate to Budgeting &gt; Periodic &gt; Generate budget plan from General ledger.</span></span> <span data-ttu-id="b7d0f-263">Füllen Sie die periodischen Prozessparameter aus, klicken Sie auf die Schaltfläche "Generieren".</span><span class="sxs-lookup"><span data-stu-id="b7d0f-263">Fill in the periodic process parameters and click button Generate.</span></span> 
 
-[![Generieren](./media/screenshot29.png)](./media/screenshot29.png) 
+<span data-ttu-id="b7d0f-264">[![Generieren](./media/screenshot29.png)](./media/screenshot29.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-264">[![Generate](./media/screenshot29.png)](./media/screenshot29.png)</span></span> 
 
-7.2. Navigieren Sie zu Budgetierung &gt;Budgetpläne, um einen Budgetplan zu finden, der durch den Generate-Prozess erstellt wurde. 
+<span data-ttu-id="b7d0f-265">7.2.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-265">7.2.</span></span> <span data-ttu-id="b7d0f-266">Navigieren Sie zu Budgetierung &gt;Budgetpläne, um einen Budgetplan zu finden, der durch den Generate-Prozess erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-266">Navigate to Budgeting &gt; Budget plans to find a budget plan created by Generate process.</span></span> 
 
-[![Budgetplan](./media/screenshot30.png)](./media/screenshot30.png) 
+<span data-ttu-id="b7d0f-267">[![Budgetplan](./media/screenshot30.png)](./media/screenshot30.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-267">[![Budget plan](./media/screenshot30.png)](./media/screenshot30.png)</span></span> 
 
-7.3. Öffnen Sie Dokumentdetails, indem Sie den Dokumentnummerhyperlink klicken. Der Budgetplan wird im Layout, das während dieser Übungseinheit erstellt wurde, als definiert angezeigt 
+<span data-ttu-id="b7d0f-268">7.3.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-268">7.3.</span></span> <span data-ttu-id="b7d0f-269">Öffnen Sie Dokumentdetails, indem Sie den Dokumentnummerhyperlink klicken.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-269">Open document details by clicking on Document number hyperlink.</span></span> <span data-ttu-id="b7d0f-270">Der Budgetplan wird im Layout, das während dieser Übungseinheit erstellt wurde, als definiert angezeigt</span><span class="sxs-lookup"><span data-stu-id="b7d0f-270">Budget plan is displayed as defined in the layout created during this lab</span></span> 
 
-[![Budgetplandokumente anzeigen](./media/screenshot31.png)](./media/screenshot31.png)
+<span data-ttu-id="b7d0f-271">[![Budgetplandokumente anzeigen](./media/screenshot31.png)](./media/screenshot31.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-271">[![Budget plan display](./media/screenshot31.png)](./media/screenshot31.png)</span></span>
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Aufgabe 8: Budget des aktuellen Jahres auf Grundlage der Vorjahres-Istwerte erstellen
-Zuordnungsmethoden können im Budegetplan verwendet werden, um Informationen für Budgetpläne einfach von einem Szenario zu einem anderen zu kopieren/sie über Perioden zu verteilen/Dimensionen zuweisen. Wir verwenden Zuweisungen, um das Budget des aktuellen Jahres aus den Vorjahres-Istwerten zu erstellen. 
+## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a><span data-ttu-id="b7d0f-272">Aufgabe 8: Budget des aktuellen Jahres auf Grundlage der Vorjahres-Istwerte erstellen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-272">Task 8: Create current year budget based on previous year actuals</span></span>
+<span data-ttu-id="b7d0f-273">Zuordnungsmethoden können im Budegetplan verwendet werden, um Informationen für Budgetpläne einfach von einem Szenario zu einem anderen zu kopieren/sie über Perioden zu verteilen/Dimensionen zuweisen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-273">Allocation methods can be used in budget plan to easily copy information for budget plans from one scenario to another/ spread them across periods/ allocate to dimensions.</span></span> <span data-ttu-id="b7d0f-274">Wir verwenden Zuweisungen, um das Budget des aktuellen Jahres aus den Vorjahres-Istwerten zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-274">We will use allocations to create current year budget from previous year actuals.</span></span> 
 
-8.1. Wählen Sie alle Positionen im Budgetplan-Dokumentenraster, und klicken Sie auf die Schaltfläche Budget zuteilen 
+<span data-ttu-id="b7d0f-275">8.1.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-275">8.1.</span></span> <span data-ttu-id="b7d0f-276">Wählen Sie alle Positionen im Budgetplan-Dokumentenraster, und klicken Sie auf die Schaltfläche Budget zuteilen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-276">Pick all lines in the budget plan document grid and click button allocate budget</span></span> 
 
-[![Alle Positionen](./media/screenshot32.png)](./media/screenshot32.png) 
+<span data-ttu-id="b7d0f-277">[![Alle Positionen](./media/screenshot32.png)](./media/screenshot32.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-277">[![All lines](./media/screenshot32.png)](./media/screenshot32.png)</span></span> 
 
-8.2. Wählen Sie, Zuordnungsmethode Periodenschlüssel, Quelle und Zielszenarien aus und klicken "Zuweisen" 
+<span data-ttu-id="b7d0f-278">8.2.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-278">8.2.</span></span> <span data-ttu-id="b7d0f-279">Wählen Sie, Zuordnungsmethode Periodenschlüssel, Quelle und Zielszenarien aus und klicken "Zuweisen"</span><span class="sxs-lookup"><span data-stu-id="b7d0f-279">Select allocation method, Period key, Source and destination scenarios and click Allocate</span></span> 
 
-[![Zuordnen](./media/screenshot33.png)](./media/screenshot33.png)
+<span data-ttu-id="b7d0f-280">[![Zuordnen](./media/screenshot33.png)](./media/screenshot33.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-280">[![Allocate](./media/screenshot33.png)](./media/screenshot33.png)</span></span>
 
-Die tatsächlichen Beträge das vorherige Jahr werden in das Budget des aktuellen Jahres sowie diese periodenübergreifend mithilfe von Verkaufskurvenperiodenschlüsseln zugewiesen. 
+<span data-ttu-id="b7d0f-281">Die tatsächlichen Beträge das vorherige Jahr werden in das Budget des aktuellen Jahres sowie diese periodenübergreifend mithilfe von Verkaufskurvenperiodenschlüsseln zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-281">The previous year actual amounts will be copied to current year budget and allocate them across periods using Sales curve period key.</span></span> 
 
-[![Vertriebskurve](./media/screenshot34.png)](./media/screenshot34.png)
+<span data-ttu-id="b7d0f-282">[![Vertriebskurve](./media/screenshot34.png)](./media/screenshot34.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-282">[![Sales curve](./media/screenshot34.png)](./media/screenshot34.png)</span></span>
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Abgabe 9: Das Budgetplandokument mithilfe von Excel anpassen und das Dokument fertig stellen
-9.1. Klicken Sie auf die Schaltflächen "Arbeitsblatt", um Dokumentinhalte in Excel zu öffnen
+## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a><span data-ttu-id="b7d0f-283">Abgabe 9: Das Budgetplandokument mithilfe von Excel anpassen und das Dokument fertig stellen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-283">Task 9: Adjust budget plan document using Excel and finalize the document</span></span>
+<span data-ttu-id="b7d0f-284">9.1.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-284">9.1.</span></span> <span data-ttu-id="b7d0f-285">Klicken Sie auf die Schaltflächen "Arbeitsblatt", um Dokumentinhalte in Excel zu öffnen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-285">Click Button worksheet to open document contents in Excel</span></span>
 
-[![Excel](./media/screenshot35.png)](./media/screenshot35.png)
+<span data-ttu-id="b7d0f-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span></span>
 
-9.2. Wenn die Excel-Arbeitsmappe geöffnet wird, passen Sie die Nummern im Budgetplandokument an, und klicken Sie auf die Schaltfläche "Veröffentlichen".
+<span data-ttu-id="b7d0f-287">9.2.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-287">9.2.</span></span> <span data-ttu-id="b7d0f-288">Wenn die Excel-Arbeitsmappe geöffnet wird, passen Sie die Nummern im Budgetplandokument an, und klicken Sie auf die Schaltfläche "Veröffentlichen".</span><span class="sxs-lookup"><span data-stu-id="b7d0f-288">When Excel workbook opens, adjust the numbers in budget plan document and click button Publish.</span></span>
 
-[![Veröffentlichen](./media/screenshot36.png)](./media/screenshot36.png)
+<span data-ttu-id="b7d0f-289">[![Veröffentlichen](./media/screenshot36.png)](./media/screenshot36.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-289">[![Publish](./media/screenshot36.png)](./media/screenshot36.png)</span></span>
 
-9.3. Kehren Sie zum Budgetplandokument in Finance and Operations zurück. Klicken Sie auf Workflow&gt; übermitteln, um das Dokument automatisch zu genehmigen
+<span data-ttu-id="b7d0f-290">9.3.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-290">9.3.</span></span> <span data-ttu-id="b7d0f-291">Kehren Sie zum Budgetplandokument in Finance and Operations zurück.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-291">Return to budget plan document in Finance and Operations.</span></span> <span data-ttu-id="b7d0f-292">Klicken Sie auf Workflow&gt; übermitteln, um das Dokument automatisch zu genehmigen</span><span class="sxs-lookup"><span data-stu-id="b7d0f-292">Click Workflow &gt; Submit to Auto-approve the document</span></span>
 
-[![Automatisch genehmigt](./media/screenshot37.png)](./media/screenshot37.png) 
+<span data-ttu-id="b7d0f-293">[![Automatisch genehmigt](./media/screenshot37.png)](./media/screenshot37.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-293">[![Auto-approve](./media/screenshot37.png)](./media/screenshot37.png)</span></span> 
 
-Wenn der Workflow abgeschlossen ist, wird die Budgetplandokumentphase als "Genehmigt" angezeigt. [![Genehmigt](./media/screenshot38.png)](./media/screenshot38.png)
+<span data-ttu-id="b7d0f-294">Wenn der Workflow abgeschlossen ist, wird die Budgetplandokumentphase als "Genehmigt" angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-294">Once workflow completes, budget plan document stage changes to Approved.</span></span> <span data-ttu-id="b7d0f-295">[![Genehmigt](./media/screenshot38.png)](./media/screenshot38.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-295">[![Approved](./media/screenshot38.png)](./media/screenshot38.png)</span></span>
 
-<a name="appendix"></a>Anhang
+<a name="appendix"></a><span data-ttu-id="b7d0f-296">Anhang</span><span class="sxs-lookup"><span data-stu-id="b7d0f-296">Appendix</span></span>
 ========
 
-### <a name="auto-approve-workflow-configuration"></a>Workflowkonfiguration für automatische Genehmigung
+### <a name="auto-approve-workflow-configuration"></a><span data-ttu-id="b7d0f-297">Workflowkonfiguration für automatische Genehmigung</span><span class="sxs-lookup"><span data-stu-id="b7d0f-297">Auto-Approve workflow configuration</span></span>
 
-A. Budgetierung &gt; Einrichten &gt; Budgetplan &gt; Budgetworkflow Erstellt einen neuen Workflows mithilfe der Vorlage Budget-Planungsworkflow:
+<span data-ttu-id="b7d0f-298">A.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-298">A.</span></span> <span data-ttu-id="b7d0f-299">Budgetierung &gt; Einrichten &gt; Budgetplan &gt; Budgetworkflow Erstellt einen neuen Workflows mithilfe der Vorlage Budget-Planungsworkflow:</span><span class="sxs-lookup"><span data-stu-id="b7d0f-299">Budgeting &gt; Setup &gt; Budget planning &gt; Budgeting workflows Create a new workflow using template Budget planning workflows:</span></span>
 
-[![Erstellen eines neuen Workflows.](./media/screenshot39.png)](./media/screenshot39.png)
+<span data-ttu-id="b7d0f-300">[![Erstellen eines neuen Workflows.](./media/screenshot39.png)](./media/screenshot39.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-300">[![Create a new workflow](./media/screenshot39.png)](./media/screenshot39.png)</span></span>
 
-Dieser Workflow enthält nur eine Aufgabe – Phasenübergangsbudgetplan 
+<span data-ttu-id="b7d0f-301">Dieser Workflow enthält nur eine Aufgabe – Phasenübergangsbudgetplan</span><span class="sxs-lookup"><span data-stu-id="b7d0f-301">This workflow will contain only one task – Stage transition budget plan</span></span> 
 
-[![Phasenübergang für Budgetplan](./media/screenshot40.png)](./media/screenshot40.png) 
+<span data-ttu-id="b7d0f-302">[![Phasenübergang für Budgetplan](./media/screenshot40.png)](./media/screenshot40.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-302">[![Stage transition budget plan](./media/screenshot40.png)](./media/screenshot40.png)</span></span> 
 
-Speichern und Aktivieren des Workflows. 
+<span data-ttu-id="b7d0f-303">Speichern und Aktivieren des Workflows.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-303">Save and activate the workflow.</span></span> 
 
-B. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration. In der Phasenregisterkarte erstellen Sie 2 Phasen – Ursprünglich und Übermittelt 
+<span data-ttu-id="b7d0f-304">B.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-304">B.</span></span> <span data-ttu-id="b7d0f-305">Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-305">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="b7d0f-306">In der Phasenregisterkarte erstellen Sie 2 Phasen – Ursprünglich und Übermittelt</span><span class="sxs-lookup"><span data-stu-id="b7d0f-306">In Stages tab create 2 stages – Initial and Submitted</span></span> 
 
-[![Erstmalig und gesendet](./media/screenshot41.png)](./media/screenshot41.png)
+<span data-ttu-id="b7d0f-307">[![Erstmalig und gesendet](./media/screenshot41.png)](./media/screenshot41.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-307">[![Initial and submitted](./media/screenshot41.png)](./media/screenshot41.png)</span></span>
 
-C. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration. Ordnen Sie in der Registerkarte "Workflowphasen" den Workflow "Automatisch genehmigen", der in Schritt A erstellt wurde, den Phasen "Ursprünglich" und "Übermittelt" zu 
+<span data-ttu-id="b7d0f-308">C.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-308">C.</span></span> <span data-ttu-id="b7d0f-309">Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="b7d0f-309">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="b7d0f-310">Ordnen Sie in der Registerkarte "Workflowphasen" den Workflow "Automatisch genehmigen", der in Schritt A erstellt wurde, den Phasen "Ursprünglich" und "Übermittelt" zu</span><span class="sxs-lookup"><span data-stu-id="b7d0f-310">In Workflow Stages tab Associate the workflow Auto – approve created in A step with the stages Initial and Submitted</span></span> 
 
-[![Budgetierung und Budgetplanung](./media/screenshot42.png)](./media/screenshot42.png)  
+<span data-ttu-id="b7d0f-311">[![Budgetierung und Budgetplanung](./media/screenshot42.png)](./media/screenshot42.png)</span><span class="sxs-lookup"><span data-stu-id="b7d0f-311">[![Budgeting and budget planning](./media/screenshot42.png)](./media/screenshot42.png)</span></span>  
 
 
 

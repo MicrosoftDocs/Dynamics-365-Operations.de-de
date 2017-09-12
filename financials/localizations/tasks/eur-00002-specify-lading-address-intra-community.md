@@ -16,60 +16,60 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d2225f54af0d9f900cadda6b418221a5592fe2e6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fc54b59f6cf8aec8d489955c57cbcf34c4e6be0a
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="specify-a-lading-address-for-an-intra-community-transaction"></a>Eine Ladungsadresse für eine innergemeinschaftliche Buchung angeben
+# <a name="specify-a-lading-address-for-an-intra-community-transaction"></a><span data-ttu-id="5b2fc-103">Eine Ladungsadresse für eine innergemeinschaftliche Buchung angeben</span><span class="sxs-lookup"><span data-stu-id="5b2fc-103">Specify a lading address for an intra-community transaction</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird. Zum Beispiel ein deutsches Unternehmens bestellt Artikel von einem Kreditor mit einer deutschen Geschäftsadresse. Dieser Kreditor hat einen Lagerort in Italien und liefert die Artikel von dort. Die Lieferung muss in Intrastat gemeldet werden. Dasselbe Verhalten gilt für Debitorenrücklieferungen.
-Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse in Deutschland erstellt. Bevor Sie dieses Verfahren ausführen können, müssen Sie Intrastat-Berichte konfigurieren. Diese Prozedur ist für Buchhalter vorgesehen. Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+<span data-ttu-id="5b2fc-104">Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-104">This procedure shows how to specify a lading address for an intra-community trade transaction.</span></span> <span data-ttu-id="5b2fc-105">Zum Beispiel ein deutsches Unternehmens bestellt Artikel von einem Kreditor mit einer deutschen Geschäftsadresse.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-105">For example, a Germany company orders items from a vendor with a German business address.</span></span> <span data-ttu-id="5b2fc-106">Dieser Kreditor hat einen Lagerort in Italien und liefert die Artikel von dort.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-106">This vendor has a warehouse in Italy and ships the items from there.</span></span> <span data-ttu-id="5b2fc-107">Die Lieferung muss in Intrastat gemeldet werden.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-107">This delivery must be reported in the Intrastat.</span></span> <span data-ttu-id="5b2fc-108">Dasselbe Verhalten gilt für Debitorenrücklieferungen.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-108">The same behavior is valid for customer returns.</span></span>
+<span data-ttu-id="5b2fc-109">Diese Prozedur gilt für alle europäischen Länder/Regionen.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-109">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="5b2fc-110">Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse in Deutschland erstellt.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-110">The task was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="5b2fc-111">Bevor Sie dieses Verfahren ausführen können, müssen Sie Intrastat-Berichte konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-111">Before you can complete this procedure, you must configure Intrastat reporting.</span></span> <span data-ttu-id="5b2fc-112">Diese Prozedur ist für Buchhalter vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-112">This procedure is intended for accountants.</span></span> <span data-ttu-id="5b2fc-113">Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-113">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. Wechseln Sie zu "Kreditoren" > "Bestellungen" > "Alle Bestellungen".
-2. Klicken Sie auf "Neu".
-3. Wert eingeben oder auswählen
-    * Wählen Sie z. B. DE-001 aus. Dieser Kreditor hat eine deutsche Geschäftsadresse.  
-4. Klicken Sie auf "OK".
-5. Markieren Sie in der Liste die ausgewählte Zeile.
-6. Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie den Wert "D0001" aus.
-7. Klicken Sie auf Speichern.
-8. Klicken Sie im Aktivitätsbereich auf "Entgegennehmen".
-9. Klicken Sie auf Transportdetails.
-10. Geben Sie im Feld "Beladungsdatum und -uhrzeit" ein Datum und eine Uhrzeit ein.
-11. Klicken Sie auf "Adresse hinzufügen".
-12. Klicken Sie auf "Neu" und erstellen Sie eine neue Adresse mit dem Zweck "Beladen".
-13. Geben Sie im Feld "Name oder Beschreibung" "Italienisch" ein.
-14. Wählen Sie "Beladung" als Wert aus.
-    * Beachten Sie, das der Adresszweck "Beladen" muss.  
-15. Wählen Sie im Feld Name/Region "ITA" aus oder geben Sie einen Wert ein.
-16. Klicken Sie auf "Speichern".
-17. Schließen Sie die Seite.
-18. Klicken Sie auf "Speichern".
-    * Überprüfen Sie, ob die Beladungsadresse korrekt ist.  
-19. Schließen Sie die Seite.
-20. Klicken Sie im Aktivitätsbereich auf "Einkauf".
-21. Klicken Sie auf "Bestätigen".
-22. Klicken Sie im Aktivitätsbereich auf "Rechnung".
-23. Klicken Sie auf "Rechnung".
-24. Geben Sie im Feld "Zahl" einen Wert ein.
-25. Geben Sie in das Feld "Rechnungsdatum" ein Datum ein.
-26. Klicken Sie auf "Standard von: Menge im Produktzugang", um das Ablagedialogfeld zu öffnen.
-27. Wählen Sie im Feld "Standardmenge für Positionen" "Menge im Produktzugang" aus.
-28. Klicken Sie auf "OK".
-29. Klicken Sie auf Transportdetails.
-    * Überprüfen Sie, dass Waren aus Italien versendet wurden. Bei Bedarf können Sie die Ladungsdetails bearbeiten.  
-30. Schließen Sie die Seite.
-31. Klicken Sie auf "Buchen".
-32. Schließen Sie die Seite.
-33. Wechseln Sie zu "Steuer" > "Meldungen" > "Außenhandel" > "Intrastat".
-34. Klicken Sie auf Übertragen.
-35. Wählen Sie "Ja" im Feld "Kreditorenrechnung" aus.
-36. Klicken Sie auf "OK".
-37. Klicken Sie auf die Registerkarte "Allgemein".
-    * Suchen Sie eine neu erstellte Position und vergewissern Sie sich, dass der Absender die Waren aus Italien liefert.  
+1. <span data-ttu-id="5b2fc-114">Wechseln Sie zu "Kreditoren" > "Bestellungen" > "Alle Bestellungen".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-114">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="5b2fc-115">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-115">Click New.</span></span>
+3. <span data-ttu-id="5b2fc-116">Wert eingeben oder auswählen</span><span class="sxs-lookup"><span data-stu-id="5b2fc-116">Enter or select a value</span></span>
+    * <span data-ttu-id="5b2fc-117">Wählen Sie z. B. DE-001 aus.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-117">For example, select DE-001.</span></span> <span data-ttu-id="5b2fc-118">Dieser Kreditor hat eine deutsche Geschäftsadresse.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-118">This vendor has a German business address.</span></span>  
+4. <span data-ttu-id="5b2fc-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-119">Click OK.</span></span>
+5. <span data-ttu-id="5b2fc-120">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-120">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="5b2fc-121">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie den Wert "D0001" aus.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-121">In the Item number field, enter or select a value D0001.</span></span>
+7. <span data-ttu-id="5b2fc-122">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-122">Click Save.</span></span>
+8. <span data-ttu-id="5b2fc-123">Klicken Sie im Aktivitätsbereich auf "Entgegennehmen".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-123">On the Action Pane, click Receive.</span></span>
+9. <span data-ttu-id="5b2fc-124">Klicken Sie auf Transportdetails.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-124">Click Transportation details.</span></span>
+10. <span data-ttu-id="5b2fc-125">Geben Sie im Feld "Beladungsdatum und -uhrzeit" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-125">In the Loading date and time field, enter a date and time.</span></span>
+11. <span data-ttu-id="5b2fc-126">Klicken Sie auf "Adresse hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-126">Click Add address.</span></span>
+12. <span data-ttu-id="5b2fc-127">Klicken Sie auf "Neu" und erstellen Sie eine neue Adresse mit dem Zweck "Beladen".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-127">Click New and create new address with purpose Lading.</span></span>
+13. <span data-ttu-id="5b2fc-128">Geben Sie im Feld "Name oder Beschreibung" "Italienisch" ein.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-128">In the Name or description field, type 'Italian'.</span></span>
+14. <span data-ttu-id="5b2fc-129">Wählen Sie "Beladung" als Wert aus.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-129">Select Lading as the value.</span></span>
+    * <span data-ttu-id="5b2fc-130">Beachten Sie, das der Adresszweck "Beladen" muss.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-130">Note that that address purpose must be Lading.</span></span>  
+15. <span data-ttu-id="5b2fc-131">Wählen Sie im Feld Name/Region "ITA" aus oder geben Sie einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-131">In the Country/region field, enter or select a value ITA.</span></span>
+16. <span data-ttu-id="5b2fc-132">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-132">Click Save.</span></span>
+17. <span data-ttu-id="5b2fc-133">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-133">Close the page.</span></span>
+18. <span data-ttu-id="5b2fc-134">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-134">Click Save.</span></span>
+    * <span data-ttu-id="5b2fc-135">Überprüfen Sie, ob die Beladungsadresse korrekt ist.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-135">Verify that the lading address is correct.</span></span>  
+19. <span data-ttu-id="5b2fc-136">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-136">Close the page.</span></span>
+20. <span data-ttu-id="5b2fc-137">Klicken Sie im Aktivitätsbereich auf "Einkauf".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-137">On the Action Pane, click Purchase.</span></span>
+21. <span data-ttu-id="5b2fc-138">Klicken Sie auf "Bestätigen".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-138">Click Confirm.</span></span>
+22. <span data-ttu-id="5b2fc-139">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-139">On the Action Pane, click Invoice.</span></span>
+23. <span data-ttu-id="5b2fc-140">Klicken Sie auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-140">Click Invoice.</span></span>
+24. <span data-ttu-id="5b2fc-141">Geben Sie im Feld "Zahl" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-141">In the Number field, type a value.</span></span>
+25. <span data-ttu-id="5b2fc-142">Geben Sie in das Feld "Rechnungsdatum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-142">In the Invoice date field, enter a date.</span></span>
+26. <span data-ttu-id="5b2fc-143">Klicken Sie auf "Standard von: Menge im Produktzugang", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-143">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
+27. <span data-ttu-id="5b2fc-144">Wählen Sie im Feld "Standardmenge für Positionen" "Menge im Produktzugang" aus.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-144">In the Default quantity for lines field, select 'Ordered quantity'.</span></span>
+28. <span data-ttu-id="5b2fc-145">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-145">Click OK.</span></span>
+29. <span data-ttu-id="5b2fc-146">Klicken Sie auf Transportdetails.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-146">Click Transportation details.</span></span>
+    * <span data-ttu-id="5b2fc-147">Überprüfen Sie, dass Waren aus Italien versendet wurden.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-147">Verify that goods were shipped from Italy.</span></span> <span data-ttu-id="5b2fc-148">Bei Bedarf können Sie die Ladungsdetails bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-148">If necessary, you can edit the lading details.</span></span>  
+30. <span data-ttu-id="5b2fc-149">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-149">Close the page.</span></span>
+31. <span data-ttu-id="5b2fc-150">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-150">Click Post.</span></span>
+32. <span data-ttu-id="5b2fc-151">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-151">Close the page.</span></span>
+33. <span data-ttu-id="5b2fc-152">Wechseln Sie zu "Steuer" > "Meldungen" > "Außenhandel" > "Intrastat".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-152">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+34. <span data-ttu-id="5b2fc-153">Klicken Sie auf Übertragen.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-153">Click Transfer.</span></span>
+35. <span data-ttu-id="5b2fc-154">Wählen Sie "Ja" im Feld "Kreditorenrechnung" aus.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-154">Select Yes in the Vendor invoice field.</span></span>
+36. <span data-ttu-id="5b2fc-155">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-155">Click OK.</span></span>
+37. <span data-ttu-id="5b2fc-156">Klicken Sie auf die Registerkarte "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="5b2fc-156">Click the General tab.</span></span>
+    * <span data-ttu-id="5b2fc-157">Suchen Sie eine neu erstellte Position und vergewissern Sie sich, dass der Absender die Waren aus Italien liefert.</span><span class="sxs-lookup"><span data-stu-id="5b2fc-157">Find a newly created line and verify that the sender shipped the goods from Italy.</span></span>  
 
 

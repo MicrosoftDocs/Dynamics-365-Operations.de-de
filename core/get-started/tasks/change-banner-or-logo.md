@@ -16,29 +16,29 @@ ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0f7ea6d92ac198b3d86094f61c4f24f007c2d615
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d2dac4d1799a958b6eff4c7aa134fe0b136089ca
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="change-the-banner-or-logo"></a>Das Banner oder das Logo ändern
+# <a name="change-the-banner-or-logo"></a><span data-ttu-id="079b9-103">Das Banner oder das Logo ändern</span><span class="sxs-lookup"><span data-stu-id="079b9-103">Change the banner or logo</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwenden können, um das Banner- oder Logobild zu aktualisieren, das für eine juristische Person angezeigt wird. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+<span data-ttu-id="079b9-104">Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwenden können, um das Banner- oder Logobild zu aktualisieren, das für eine juristische Person angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="079b9-104">The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity.</span></span> <span data-ttu-id="079b9-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="079b9-105">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Wechseln Sie zu Organisationsverwaltung > Organisationen > Juristische Personen.
-2. Wählen Sie in der Liste auf der linken Seite die juristische Person aus, für die Sie das Banner oder das Logo aktualisieren möchten. Wenn sie es bereits ausgewählt haben, wechseln Sie zum nächsten Schritt.
-3. Erweitern Sie den Abschnitt "Bilder". Wenn Sie ihn bereits erweitert haben, wechseln Sie zum nächsten Schritt.
-4. Klicken Sie auf Bearbeiten.
-5. Wählen Sie im Feld "Dashboard-Unternehmensbildtyp" "Banner"aus.
-6. Klicken Sie auf "Ändern".
-    * Tipp: Die optimalen Auflösung für ein Bannerbild ist 1920 x 281 Pixel. Die optimale Breite für ein Logobild ist 350 Pixel.  
-    * Wenn der Upload abgeschlossen ist, sollten Sie Ihr neues Banner- oder Logobild im Dashboard-Bildausschnitt finden.  
-7. Klicken Sie auf "Speichern".
-8. Wählen Sie Allgemeines > Allgemeines > Standard-Dashboard.
-    * Sie sollten das neue Banner- oder Logobild im Dashboard finden.  
-    * Möglicher Weise müssen Sie Ihr Unternehmen mithilfe der Unternehmens-Auswahl in das Unternehmen ändern, für das Sie das Banner für hochgeladen haben.  
+1. <span data-ttu-id="079b9-106">Wechseln Sie zu Organisationsverwaltung > Organisationen > Juristische Personen.</span><span class="sxs-lookup"><span data-stu-id="079b9-106">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="079b9-107">Wählen Sie in der Liste auf der linken Seite die juristische Person aus, für die Sie das Banner oder das Logo aktualisieren möchten.</span><span class="sxs-lookup"><span data-stu-id="079b9-107">In the list on the left, select the legal entity for which you want to update the banner or logo.</span></span> <span data-ttu-id="079b9-108">Wenn sie es bereits ausgewählt haben, wechseln Sie zum nächsten Schritt.</span><span class="sxs-lookup"><span data-stu-id="079b9-108">If it is already selected, go to the next step.</span></span>
+3. <span data-ttu-id="079b9-109">Erweitern Sie den Abschnitt "Bilder".</span><span class="sxs-lookup"><span data-stu-id="079b9-109">Expand the Images section.</span></span> <span data-ttu-id="079b9-110">Wenn Sie ihn bereits erweitert haben, wechseln Sie zum nächsten Schritt.</span><span class="sxs-lookup"><span data-stu-id="079b9-110">If it is already expanded, go to the next step.</span></span>
+4. <span data-ttu-id="079b9-111">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="079b9-111">Click Edit.</span></span>
+5. <span data-ttu-id="079b9-112">Wählen Sie im Feld "Dashboard-Unternehmensbildtyp" "Banner"aus.</span><span class="sxs-lookup"><span data-stu-id="079b9-112">In the Dashboard company image type field, select 'Banner'.</span></span>
+6. <span data-ttu-id="079b9-113">Klicken Sie auf "Ändern".</span><span class="sxs-lookup"><span data-stu-id="079b9-113">Click Change.</span></span>
+    * <span data-ttu-id="079b9-114">Tipp: Die optimalen Auflösung für ein Bannerbild ist 1920 x 281 Pixel.</span><span class="sxs-lookup"><span data-stu-id="079b9-114">Tip: The ideal resolution for a banner image is 1920 x 281 pixels.</span></span> <span data-ttu-id="079b9-115">Die optimale Breite für ein Logobild ist 350 Pixel.</span><span class="sxs-lookup"><span data-stu-id="079b9-115">The ideal width for a logo image is 350 pixels.</span></span>  
+    * <span data-ttu-id="079b9-116">Wenn der Upload abgeschlossen ist, sollten Sie Ihr neues Banner- oder Logobild im Dashboard-Bildausschnitt finden.</span><span class="sxs-lookup"><span data-stu-id="079b9-116">When the upload is complete, you should see your new banner or logo image in the Dashboard Image section.</span></span>  
+7. <span data-ttu-id="079b9-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="079b9-117">Click Save.</span></span>
+8. <span data-ttu-id="079b9-118">Wählen Sie Allgemeines > Allgemeines > Standard-Dashboard.</span><span class="sxs-lookup"><span data-stu-id="079b9-118">Go to Common > Common > Default dashboard.</span></span>
+    * <span data-ttu-id="079b9-119">Sie sollten das neue Banner- oder Logobild im Dashboard finden.</span><span class="sxs-lookup"><span data-stu-id="079b9-119">You should see the new banner or logo image on the dashboard.</span></span>  
+    * <span data-ttu-id="079b9-120">Möglicher Weise müssen Sie Ihr Unternehmen mithilfe der Unternehmens-Auswahl in das Unternehmen ändern, für das Sie das Banner für hochgeladen haben.</span><span class="sxs-lookup"><span data-stu-id="079b9-120">You may need to change your company, using the company picker, to the one you uploaded the banner for.</span></span>  
 
 

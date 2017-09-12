@@ -19,60 +19,60 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 0b7e5ed451497aea1c2ce798af2b717705538d47
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e29aea4509dd323c295b02f289fbcfa46fab3392
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Einrichten der erweiterten Anmeldungfunktionalität für Cloud POS und MPOS
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a><span data-ttu-id="b94f7-103">Einrichten der erweiterten Anmeldungfunktionalität für Cloud POS und MPOS</span><span class="sxs-lookup"><span data-stu-id="b94f7-103">Set up extended logon functionality for Cloud POS and MPOS</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Dieses Thema behandelt die Optionen für die Einrichtung der erweiterten Anmeldung für Cloud-POS und Retail Modern POS (MPOS).
+<span data-ttu-id="b94f7-104">Dieses Thema behandelt die Optionen für die Einrichtung der erweiterten Anmeldung für Cloud-POS und Retail Modern POS (MPOS).</span><span class="sxs-lookup"><span data-stu-id="b94f7-104">This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).</span></span>
 
-<a name="setting-up-extended-logon"></a>Einrichten der erweiterten Anmeldung
+<a name="setting-up-extended-logon"></a><span data-ttu-id="b94f7-105">Einrichten der erweiterten Anmeldung</span><span class="sxs-lookup"><span data-stu-id="b94f7-105">Setting up extended logon</span></span>
 =========================
 
-Sie können die Einstellungen für Strichcodemasken unter **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Funktionsprofile** finden. Das Inforegister **Funktionen** umfasst folgende Optionen, die der erweiterten Anmeldung zugeordnet sind.
+<span data-ttu-id="b94f7-106">Sie können die Einstellungen für Strichcodemasken unter **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Funktionsprofile** finden.</span><span class="sxs-lookup"><span data-stu-id="b94f7-106">You can find the setup for bar code masks at **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Functionality profiles**.</span></span> <span data-ttu-id="b94f7-107">Das Inforegister **Funktionen** umfasst folgende Optionen, die der erweiterten Anmeldung zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="b94f7-107">The **Functions** FastTab includes the following options that are related to extended logon.</span></span>
 
-### <a name="staff-bar-code-logon"></a>Personal-Strichcodeanmeldung
+### <a name="staff-bar-code-logon"></a><span data-ttu-id="b94f7-108">Personal-Strichcodeanmeldung</span><span class="sxs-lookup"><span data-stu-id="b94f7-108">Staff bar code logon</span></span>
 
-Wenn die Option **Personal-Strichcodeanmeldung** aktiviert ist, können Arbeitskräfte, deren POS-Anmeldeinformationen die erweiterte Anmeldung zugewiesen ist, sich mit einem Strichcode anmelden.
+<span data-ttu-id="b94f7-109">Wenn die Option **Personal-Strichcodeanmeldung** aktiviert ist, können Arbeitskräfte, deren POS-Anmeldeinformationen die erweiterte Anmeldung zugewiesen ist, sich mit einem Strichcode anmelden.</span><span class="sxs-lookup"><span data-stu-id="b94f7-109">When the **Staff bar code logon** option is enabled, workers who have an extended logon assigned to their point of sale (POS) credentials can log on by using a bar code.</span></span>
 
-### <a name="staff-bar-code-logon-requires-password"></a>Personalanmeldung mit Strichcode erfordert Kennwort.
+### <a name="staff-bar-code-logon-requires-password"></a><span data-ttu-id="b94f7-110">Personalanmeldung mit Strichcode erfordert Kennwort.</span><span class="sxs-lookup"><span data-stu-id="b94f7-110">Staff bar code logon requires password</span></span>
 
-Wenn die Option **Personalanmeldung mit Strichcode erfordert Kennwort** aktiviert ist, wird bei der Personalanmeldung mit Strichode nur die Arbeitskraft ausgewählt, die der angegebenen erweiterten Anmeldung zugewiesen ist. Arbeitskräfte müssen noch eigene Kennwörter eingeben, wenn diese Option aktiviert ist.
+<span data-ttu-id="b94f7-111">Wenn die Option **Personalanmeldung mit Strichcode erfordert Kennwort** aktiviert ist, wird bei der Personalanmeldung mit Strichode nur die Arbeitskraft ausgewählt, die der angegebenen erweiterten Anmeldung zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="b94f7-111">When the **Staff bar code logon requires password** option is enabled, the staff bar code logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="b94f7-112">Arbeitskräfte müssen noch eigene Kennwörter eingeben, wenn diese Option aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="b94f7-112">Workers must still enter their password when this option is enabled.</span></span>
 
-### <a name="staff-card-logon"></a>Personalkartenanmeldung
+### <a name="staff-card-logon"></a><span data-ttu-id="b94f7-113">Personalkartenanmeldung</span><span class="sxs-lookup"><span data-stu-id="b94f7-113">Staff card logon</span></span>
 
-Wenn die Option **Personalkartenanmeldung** aktiviert ist, können Arbeitskräfte, deren POS-Anmeldeinformationen die erweiterte Anmeldung zugewiesen ist, sich mit einem Magnetstreifen anmelden.
+<span data-ttu-id="b94f7-114">Wenn die Option **Personalkartenanmeldung** aktiviert ist, können Arbeitskräfte, deren POS-Anmeldeinformationen die erweiterte Anmeldung zugewiesen ist, sich mit einem Magnetstreifen anmelden.</span><span class="sxs-lookup"><span data-stu-id="b94f7-114">When the **Staff card logon** option is enabled, workers who have an extended logon assigned to their POS credentials can log on by using a magnetic stripe.</span></span>
 
-### <a name="staff-card-logon-requires-password"></a>Personalanmeldung mit Karte erfordert Kennwort.
+### <a name="staff-card-logon-requires-password"></a><span data-ttu-id="b94f7-115">Personalanmeldung mit Karte erfordert Kennwort.</span><span class="sxs-lookup"><span data-stu-id="b94f7-115">Staff card logon requires password</span></span>
 
-Wenn die Option **Personalanmeldung mit Karte erfordert Kennwort** aktiviert ist, wird bei der Personalanmeldung mit Karte nur die Arbeitskraft ausgewählt, die der angegebenen erweiterten Anmeldung zugewiesen ist. Arbeitskräfte müssen noch eigene Kennwörter eingeben, wenn diese Option aktiviert ist.
+<span data-ttu-id="b94f7-116">Wenn die Option **Personalanmeldung mit Karte erfordert Kennwort** aktiviert ist, wird bei der Personalanmeldung mit Karte nur die Arbeitskraft ausgewählt, die der angegebenen erweiterten Anmeldung zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="b94f7-116">When the **Staff card logon requires password** option is enabled, the staff card logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="b94f7-117">Arbeitskräfte müssen noch eigene Kennwörter eingeben, wenn diese Option aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="b94f7-117">Workers must still enter their password when this option is enabled.</span></span>
 
-<a name="assigning-an-extended-logon"></a>Zuweisen einer erweiterten Anmeldung
+<a name="assigning-an-extended-logon"></a><span data-ttu-id="b94f7-118">Zuweisen einer erweiterten Anmeldung</span><span class="sxs-lookup"><span data-stu-id="b94f7-118">Assigning an extended logon</span></span>
 ===========================
 
-Standardmäßig können nur Manager die erweiterte Anmeldung den Arbeitskräften zuweisen. Um erweiterte Anmeldung zuzuweisen, fahren Sie mit **Erweiterte Anmeldung** in POS fort. Suchen Sie dann nach einer Arbeitskraft nach Eingabe der Kennung in der Auswahlliste. Wählen Sie die Arbeitskraft aus, und klicken Sie anschließend auf **Zuweisen**. Auf der nächsten Seite ziehen Sie die Karte durch das Lesegerät oder scannen Sie die Karte, um der Arbeitskraft die erweiterte Anmeldung zuzuweisen. Wenn der Vorgang erfolgreich war, wird die Schaltfläche **OK** verfügbar. Klicken Sie auf **OK**, um die erweiterten Anmeldung für diese Arbeitskraft zu speichern.
+<span data-ttu-id="b94f7-119">Standardmäßig können nur Manager die erweiterte Anmeldung den Arbeitskräften zuweisen.</span><span class="sxs-lookup"><span data-stu-id="b94f7-119">By default, only managers can assign extended logon to workers.</span></span> <span data-ttu-id="b94f7-120">Um erweiterte Anmeldung zuzuweisen, fahren Sie mit **Erweiterte Anmeldung** in POS fort.</span><span class="sxs-lookup"><span data-stu-id="b94f7-120">To assign extended logon, go to **Extended log on** in POS.</span></span> <span data-ttu-id="b94f7-121">Suchen Sie dann nach einer Arbeitskraft nach Eingabe der Kennung in der Auswahlliste.</span><span class="sxs-lookup"><span data-stu-id="b94f7-121">Then search for a worker by entering his or her operator ID in the search field.</span></span> <span data-ttu-id="b94f7-122">Wählen Sie die Arbeitskraft aus, und klicken Sie anschließend auf **Zuweisen**.</span><span class="sxs-lookup"><span data-stu-id="b94f7-122">Select the worker, and then click **Assign**.</span></span> <span data-ttu-id="b94f7-123">Auf der nächsten Seite ziehen Sie die Karte durch das Lesegerät oder scannen Sie die Karte, um der Arbeitskraft die erweiterte Anmeldung zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="b94f7-123">On the next page, swipe or scan the extended logon to assign to the worker.</span></span> <span data-ttu-id="b94f7-124">Wenn der Vorgang erfolgreich war, wird die Schaltfläche **OK** verfügbar.</span><span class="sxs-lookup"><span data-stu-id="b94f7-124">If the swipe or scan is successfully read, the **OK** button becomes available.</span></span> <span data-ttu-id="b94f7-125">Klicken Sie auf **OK**, um die erweiterten Anmeldung für diese Arbeitskraft zu speichern.</span><span class="sxs-lookup"><span data-stu-id="b94f7-125">Click **OK** to save the extended logon for that worker.</span></span>
 
-<a name="deleting-an-extended-logon"></a>Löschen einer erweiterten Anmeldung
+<a name="deleting-an-extended-logon"></a><span data-ttu-id="b94f7-126">Löschen einer erweiterten Anmeldung</span><span class="sxs-lookup"><span data-stu-id="b94f7-126">Deleting an extended logon</span></span>
 ==========================
 
-Um die erweiterte Anmeldung zu löschen, die einer Arbeitskraft zugewiesen wurde, suchen Sie die Arbeitskraft, indem Sie den Vorgang **Erweiterte Anmeldung** verwenden. Wählen Sie die Arbeitskraft aus, und klicken Sie anschließend auf **Zuweisung aufheben**. Alle erweiterten Anmeldeinformationen, die dieser Arbeitskraft zugeordnet sind, werden entfernt.
+<span data-ttu-id="b94f7-127">Um die erweiterte Anmeldung zu löschen, die einer Arbeitskraft zugewiesen wurde, suchen Sie die Arbeitskraft, indem Sie den Vorgang **Erweiterte Anmeldung** verwenden.</span><span class="sxs-lookup"><span data-stu-id="b94f7-127">To delete the extended logon that is assigned to a worker, search for the worker by using the **Extended log on** operation.</span></span> <span data-ttu-id="b94f7-128">Wählen Sie die Arbeitskraft aus, und klicken Sie anschließend auf **Zuweisung aufheben**.</span><span class="sxs-lookup"><span data-stu-id="b94f7-128">Select the worker, and then click **Unassign**.</span></span> <span data-ttu-id="b94f7-129">Alle erweiterten Anmeldeinformationen, die dieser Arbeitskraft zugeordnet sind, werden entfernt.</span><span class="sxs-lookup"><span data-stu-id="b94f7-129">All extended logon credentials that are associated with that worker are removed.</span></span>
 
-<a name="extending-extended-logon"></a>Erweitern der erweiterten Anmeldung
+<a name="extending-extended-logon"></a><span data-ttu-id="b94f7-130">Erweitern der erweiterten Anmeldung</span><span class="sxs-lookup"><span data-stu-id="b94f7-130">Extending extended logon</span></span>
 ========================
 
-Der Anmeldedienst kann erweitert werden, um zusätzliche Geräte für die erweiterte Anmeldung zu unterstützen, z.B. Handflächenscanner. Weitere Informationen finden Sie in der Dokumentation zur Erweiterbarkeit des POS.
+<span data-ttu-id="b94f7-131">Der Anmeldedienst kann erweitert werden, um zusätzliche Geräte für die erweiterte Anmeldung zu unterstützen, z.B. Handflächenscanner.</span><span class="sxs-lookup"><span data-stu-id="b94f7-131">The logon service can be extended to support additional extended logon devices, such as palm scanners.</span></span> <span data-ttu-id="b94f7-132">Weitere Informationen finden Sie in der Dokumentation zur Erweiterbarkeit des POS.</span><span class="sxs-lookup"><span data-stu-id="b94f7-132">For more information, see the POS extensibility documentation.</span></span>
 
-<a name="using-extended-logon"></a>Verwenden der erweiterten Anmeldung
+<a name="using-extended-logon"></a><span data-ttu-id="b94f7-133">Verwenden der erweiterten Anmeldung</span><span class="sxs-lookup"><span data-stu-id="b94f7-133">Using extended logon</span></span>
 ====================
 
-Wenn die erweiterte Anmeldung konfiguriert ist und einer Arbeitskraft ein Strichcode oder ein Magnetstreifen zugewiesen wurde, muss die Arbeitskraft seine Karte nur Karte durch ein Lesegerät ziehen, wenn die POS-Anmeldeseite angezeigt wird. Wenn auch ein Kennwort erforderlich ist, damit die Anmeldung durchgeführt werden kann, wird die Arbeitskraft aufgefordert, das Kennwort einzugeben.
+<span data-ttu-id="b94f7-134">Wenn die erweiterte Anmeldung konfiguriert ist und einer Arbeitskraft ein Strichcode oder ein Magnetstreifen zugewiesen wurde, muss die Arbeitskraft seine Karte nur Karte durch ein Lesegerät ziehen, wenn die POS-Anmeldeseite angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="b94f7-134">When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed.</span></span> <span data-ttu-id="b94f7-135">Wenn auch ein Kennwort erforderlich ist, damit die Anmeldung durchgeführt werden kann, wird die Arbeitskraft aufgefordert, das Kennwort einzugeben.</span><span class="sxs-lookup"><span data-stu-id="b94f7-135">If a password is also required before logon can proceed, the worker is prompted to enter his or her password.</span></span>
 
 
 

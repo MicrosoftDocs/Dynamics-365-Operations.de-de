@@ -19,285 +19,285 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 23541bb2d82b552cdc9e0ada4aa4ec473f498d0b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 49d5242168cd43e78dd4b0c63da363f91f680904
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="centralized-payments-for-accounts-payable"></a>Zentralisierte Zahlungen für Kreditorenkonten
+# <a name="centralized-payments-for-accounts-payable"></a><span data-ttu-id="e5f49-105">Zentralisierte Zahlungen für Kreditorenkonten</span><span class="sxs-lookup"><span data-stu-id="e5f49-105">Centralized payments for Accounts payable</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher müssen die gleichen Zahlungen nicht in mehrere juristische Personen eingegeben werden. Dieser Artikel enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird.
+<span data-ttu-id="e5f49-106">Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt.</span><span class="sxs-lookup"><span data-stu-id="e5f49-106">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.</span></span> <span data-ttu-id="e5f49-107">Daher müssen die gleichen Zahlungen nicht in mehrere juristische Personen eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="e5f49-107">Therefore, the same payments don't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="e5f49-108">Dieser Artikel enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird.</span><span class="sxs-lookup"><span data-stu-id="e5f49-108">This article provides examples that show how posting for centralized payments is handled in various scenarios.</span></span>
 
-Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher müssen die gleichen Zahlungen nicht in mehrere juristische Personen eingegeben werden. Darüber hinaus spart die Organisation Zeit, da der Zahlungsvorgang rationalisiert wird.
+<span data-ttu-id="e5f49-109">Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt.</span><span class="sxs-lookup"><span data-stu-id="e5f49-109">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments.</span></span> <span data-ttu-id="e5f49-110">Daher müssen die gleichen Zahlungen nicht in mehrere juristische Personen eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="e5f49-110">Therefore, the same payments don't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="e5f49-111">Darüber hinaus spart die Organisation Zeit, da der Zahlungsvorgang rationalisiert wird.</span><span class="sxs-lookup"><span data-stu-id="e5f49-111">Additionally, the organization saves time, because the payment process is streamlined.</span></span>
 
-In einer Organisation mit zentralisierten Zahlungen gibt es viele juristische Personen für betriebliche Vorgänge. Dabei werden die Informationen zu Kreditorenrechnungen von den einzelnen juristischen Personen verwaltet. Die Zahlungen für alle tätigen juristischen Personen werden von einer einzigen juristischen Person (der so genannten juristischen Person für die Zahlung) generiert. Im Zuge des Ausgleichsprozesses werden die erforderlichen Buchungen vom Typ "Fällig bis" und "Fällig von" generiert. Sie können angeben, welche juristische Person in der Organisation die Buchungen für realisierte Gewinne oder Verluste erhält und wie Skontobuchungen für unternehmensübergreifende Zahlungen zu behandeln sind. 
+<span data-ttu-id="e5f49-112">In einer Organisation mit zentralisierten Zahlungen gibt es viele juristische Personen für betriebliche Vorgänge. Dabei werden die Informationen zu Kreditorenrechnungen von den einzelnen juristischen Personen verwaltet.</span><span class="sxs-lookup"><span data-stu-id="e5f49-112">In a centralized payments organization, there are many legal entities for operations, and each operating legal entity manages its own vendor invoices.</span></span> <span data-ttu-id="e5f49-113">Die Zahlungen für alle tätigen juristischen Personen werden von einer einzigen juristischen Person (der so genannten juristischen Person für die Zahlung) generiert.</span><span class="sxs-lookup"><span data-stu-id="e5f49-113">Payments for all the operating legal entities are generated from a single legal entity, which is known as the legal entity of the payment.</span></span> <span data-ttu-id="e5f49-114">Im Zuge des Ausgleichsprozesses werden die erforderlichen Buchungen vom Typ "Fällig bis" und "Fällig von" generiert.</span><span class="sxs-lookup"><span data-stu-id="e5f49-114">During the settlement process, the applicable due-to and due-from transactions are generated.</span></span> <span data-ttu-id="e5f49-115">Sie können angeben, welche juristische Person in der Organisation die Buchungen für realisierte Gewinne oder Verluste erhält und wie Skontobuchungen für unternehmensübergreifende Zahlungen zu behandeln sind.</span><span class="sxs-lookup"><span data-stu-id="e5f49-115">You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a cross-company payment are handled.</span></span> 
 
-In den folgenden Beispielen wird die Behandlung von Buchungen in unterschiedlichen Szenarios erläutert. Allen Beispielen liegt die folgende Konfiguration zugrunde:
+<span data-ttu-id="e5f49-116">In den folgenden Beispielen wird die Behandlung von Buchungen in unterschiedlichen Szenarios erläutert.</span><span class="sxs-lookup"><span data-stu-id="e5f49-116">The following examples illustrate how posting is handled in various scenarios.</span></span> <span data-ttu-id="e5f49-117">Allen Beispielen liegt die folgende Konfiguration zugrunde:</span><span class="sxs-lookup"><span data-stu-id="e5f49-117">The following configuration is assumed for all these examples:</span></span>
 
--   Fabrikam, Fabrikam Ost und Fabrikam West stellen die juristischen Personen dar. Zahlungen werden von Fabrikam geleistet.
--   Das **Skonto buchen** Feld auf der **Verrechnung** Seite ist auf **Juristische Person der Rechnung** festgelegt.
--   Das **Gewinn bzw. Verlust bei Währungsumtausch buchen** Feld auf der **Verrechnung** Seite ist auf **Juristische Person der Zahlung** festgelegt.
--   Der Kreditor Fourth Coffee ist als Kreditor in jeder juristischen Person festgelegt. Die Kreditoren aus verschiedenen juristischen Personen werden als derselbe Kreditor erfasst, da sie dieselbe Kennung für das globale Adressbuch gemeinsam haben.
+-   <span data-ttu-id="e5f49-118">Fabrikam, Fabrikam Ost und Fabrikam West stellen die juristischen Personen dar.</span><span class="sxs-lookup"><span data-stu-id="e5f49-118">The legal entities are Fabrikam, Fabrikam East, and Fabrikam West.</span></span> <span data-ttu-id="e5f49-119">Zahlungen werden von Fabrikam geleistet.</span><span class="sxs-lookup"><span data-stu-id="e5f49-119">Payments are made from Fabrikam.</span></span>
+-   <span data-ttu-id="e5f49-120">Das **Skonto buchen** Feld auf der **Verrechnung** Seite ist auf **Juristische Person der Rechnung** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="e5f49-120">The **Post cash discount** field on the **Intercompany accounting** page is set to **Legal entity of the invoice**.</span></span>
+-   <span data-ttu-id="e5f49-121">Das **Gewinn bzw. Verlust bei Währungsumtausch buchen** Feld auf der **Verrechnung** Seite ist auf **Juristische Person der Zahlung** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="e5f49-121">The **Post currency exchange gain or loss** field on the **Intercompany accounting** page is set to **Legal entity of the payment**.</span></span>
+-   <span data-ttu-id="e5f49-122">Der Kreditor Fourth Coffee ist als Kreditor in jeder juristischen Person festgelegt.</span><span class="sxs-lookup"><span data-stu-id="e5f49-122">The vendor Fourth Coffee is set up as a vendor in each legal entity.</span></span> <span data-ttu-id="e5f49-123">Die Kreditoren aus verschiedenen juristischen Personen werden als derselbe Kreditor erfasst, da sie dieselbe Kennung für das globale Adressbuch gemeinsam haben.</span><span class="sxs-lookup"><span data-stu-id="e5f49-123">The vendors from the various legal entities are identified as the same vendor because they share the same global address book ID.</span></span>
 
-| Verzeichniskennung | Kreditorenkonto | Name          | Juristische Person  |
+| <span data-ttu-id="e5f49-124">Verzeichniskennung</span><span class="sxs-lookup"><span data-stu-id="e5f49-124">Directory ID</span></span> | <span data-ttu-id="e5f49-125">Kreditorenkonto</span><span class="sxs-lookup"><span data-stu-id="e5f49-125">Vendor account</span></span> | <span data-ttu-id="e5f49-126">Name</span><span class="sxs-lookup"><span data-stu-id="e5f49-126">Name</span></span>          | <span data-ttu-id="e5f49-127">Juristische Person</span><span class="sxs-lookup"><span data-stu-id="e5f49-127">Legal entity</span></span>  |
 |--------------|----------------|---------------|---------------|
-| 1050         | 3004           | Fourth Coffee | Fabrikam      |
-| 1050         | 100            | Fourth Coffee | Fabrikam Ost |
-| 1050         | 3004           | Fourth Coffee | Fabrikam West |
+| <span data-ttu-id="e5f49-128">1050</span><span class="sxs-lookup"><span data-stu-id="e5f49-128">1050</span></span>         | <span data-ttu-id="e5f49-129">3004</span><span class="sxs-lookup"><span data-stu-id="e5f49-129">3004</span></span>           | <span data-ttu-id="e5f49-130">Fourth Coffee</span><span class="sxs-lookup"><span data-stu-id="e5f49-130">Fourth Coffee</span></span> | <span data-ttu-id="e5f49-131">Fabrikam</span><span class="sxs-lookup"><span data-stu-id="e5f49-131">Fabrikam</span></span>      |
+| <span data-ttu-id="e5f49-132">1050</span><span class="sxs-lookup"><span data-stu-id="e5f49-132">1050</span></span>         | <span data-ttu-id="e5f49-133">100</span><span class="sxs-lookup"><span data-stu-id="e5f49-133">100</span></span>            | <span data-ttu-id="e5f49-134">Fourth Coffee</span><span class="sxs-lookup"><span data-stu-id="e5f49-134">Fourth Coffee</span></span> | <span data-ttu-id="e5f49-135">Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="e5f49-135">Fabrikam East</span></span> |
+| <span data-ttu-id="e5f49-136">1050</span><span class="sxs-lookup"><span data-stu-id="e5f49-136">1050</span></span>         | <span data-ttu-id="e5f49-137">3004</span><span class="sxs-lookup"><span data-stu-id="e5f49-137">3004</span></span>           | <span data-ttu-id="e5f49-138">Fourth Coffee</span><span class="sxs-lookup"><span data-stu-id="e5f49-138">Fourth Coffee</span></span> | <span data-ttu-id="e5f49-139">Fabrikam West</span><span class="sxs-lookup"><span data-stu-id="e5f49-139">Fabrikam West</span></span> |
 
-## <a name="example-1-vendor-payment-of-invoice-from-another-legal-entity"></a>Beispiel 1: Kreditorenzahlung der Rechnung einer anderen juristischen Person
-Für Fabrikam Ost liegt eine offene Rechnung für das Kreditorenkonto "100" (Fourth Coffee) vor. Bei Fabrikam wird eine Zahlung an das Fabrikam-Kreditorenkonto "3004" (Fourth Coffee) eingegeben und gebucht. Die Zahlung wird mit der offenen Rechnung ausgeglichen.
+## <a name="example-1-vendor-payment-of-invoice-from-another-legal-entity"></a><span data-ttu-id="e5f49-140">Beispiel 1: Kreditorenzahlung der Rechnung einer anderen juristischen Person</span><span class="sxs-lookup"><span data-stu-id="e5f49-140">Example 1: Vendor payment of invoice from another legal entity</span></span>
+<span data-ttu-id="e5f49-141">Für Fabrikam Ost liegt eine offene Rechnung für das Kreditorenkonto "100" (Fourth Coffee) vor.</span><span class="sxs-lookup"><span data-stu-id="e5f49-141">Fabrikam East has an open invoice for vendor account 100, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-142">Bei Fabrikam wird eine Zahlung an das Fabrikam-Kreditorenkonto "3004" (Fourth Coffee) eingegeben und gebucht.</span><span class="sxs-lookup"><span data-stu-id="e5f49-142">Fabrikam enters and posts a payment to Fabrikam vendor account 3004, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-143">Die Zahlung wird mit der offenen Rechnung ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="e5f49-143">The payment is settled with the open invoice.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-vendor-100"></a>Buchung der Rechung in Fabrikam Ost für Kreditor "100"
+### <a name="invoice-is-posted-in-fabrikam-east-for-vendor-100"></a><span data-ttu-id="e5f49-144">Buchung der Rechung in Fabrikam Ost für Kreditor "100"</span><span class="sxs-lookup"><span data-stu-id="e5f49-144">Invoice is posted in Fabrikam East for vendor 100</span></span>
 
-| Konto                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-145">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-145">Account</span></span>                          | <span data-ttu-id="e5f49-146">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-146">Debit amount</span></span> | <span data-ttu-id="e5f49-147">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-147">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Ausgabe (Fabrikam Ost)          | 600,00       |               |
-| Kreditoren (Fabrikam Ost) |              | 600,00        |
+| <span data-ttu-id="e5f49-148">Ausgabe (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-148">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="e5f49-149">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-149">600.00</span></span>       |               |
+| <span data-ttu-id="e5f49-150">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-150">Accounts payable (Fabrikam East)</span></span> |              | <span data-ttu-id="e5f49-151">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-151">600.00</span></span>        |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a>Generierung und Buchung der Zahlung in Fabrikam für Kreditor "3004"
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a><span data-ttu-id="e5f49-152">Generierung und Buchung der Zahlung in Fabrikam für Kreditor "3004"</span><span class="sxs-lookup"><span data-stu-id="e5f49-152">Payment is generated and posted in Fabrikam for vendor 3004</span></span>
 
-| Konto                     | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-153">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-153">Account</span></span>                     | <span data-ttu-id="e5f49-154">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-154">Debit amount</span></span> | <span data-ttu-id="e5f49-155">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-155">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kreditoren (Fabrikam) | 600,00       |               |
-| Bar (Fabrikam)             |              | 600,00        |
+| <span data-ttu-id="e5f49-156">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-156">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="e5f49-157">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-157">600.00</span></span>       |               |
+| <span data-ttu-id="e5f49-158">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-158">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="e5f49-159">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-159">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="e5f49-160">Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="e5f49-160">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="e5f49-161">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="e5f49-161">**Fabrikam posting**</span></span>
 
-| Konto                           | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-162">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-162">Account</span></span>                           | <span data-ttu-id="e5f49-163">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-163">Debit amount</span></span> | <span data-ttu-id="e5f49-164">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-164">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Fällig von Fabrikam Ost (Fabrikam) | 600,00       |               |
-| Kreditoren (Fabrikam)       |              | 600,00        |
+| <span data-ttu-id="e5f49-165">Fällig von Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-165">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="e5f49-166">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-166">600.00</span></span>       |               |
+| <span data-ttu-id="e5f49-167">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-167">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="e5f49-168">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-168">600.00</span></span>        |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="e5f49-169">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="e5f49-169">**Fabrikam East posting**</span></span>
 
-| Konto                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-170">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-170">Account</span></span>                          | <span data-ttu-id="e5f49-171">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-171">Debit amount</span></span> | <span data-ttu-id="e5f49-172">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-172">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditoren (Fabrikam Ost) | 600,00       |               |
-| Fällig an Fabrikam (Fabrikam Ost)  |              | 600,00        |
+| <span data-ttu-id="e5f49-173">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-173">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-174">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-174">600.00</span></span>       |               |
+| <span data-ttu-id="e5f49-175">Fällig an Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-175">Due to Fabrikam (Fabrikam East)</span></span>  |              | <span data-ttu-id="e5f49-176">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-176">600.00</span></span>        |
 
-## <a name="example-2-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Beispiel 2: Kreditorenzahlung der Rechnung einer anderen juristischen Person mit Skonto
-Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Coffee) vor. Für die Rechnung wird ein Skonto in Höhe von EUR 20,00 gewährt. Bei Fabrikam wird eine Zahlung in Höhe von EUR 580,00 für den Fabrikam-Kreditor "3004" (Fourth Coffee) eingegeben und gebucht. Die Zahlung wird mit den offenen Rechnungen für Fabrikam Ost ausgeglichen. Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost) gebucht.
+## <a name="example-2-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a><span data-ttu-id="e5f49-177">Beispiel 2: Kreditorenzahlung der Rechnung einer anderen juristischen Person mit Skonto</span><span class="sxs-lookup"><span data-stu-id="e5f49-177">Example 2: Vendor payment of invoice from another legal entity with cash discount</span></span>
+<span data-ttu-id="e5f49-178">Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Coffee) vor.</span><span class="sxs-lookup"><span data-stu-id="e5f49-178">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-179">Für die Rechnung wird ein Skonto in Höhe von EUR 20,00 gewährt.</span><span class="sxs-lookup"><span data-stu-id="e5f49-179">The invoice has a 20.00 cash discount available.</span></span> <span data-ttu-id="e5f49-180">Bei Fabrikam wird eine Zahlung in Höhe von EUR 580,00 für den Fabrikam-Kreditor "3004" (Fourth Coffee) eingegeben und gebucht.</span><span class="sxs-lookup"><span data-stu-id="e5f49-180">Fabrikam enters and posts a payment of 580.00 for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-181">Die Zahlung wird mit den offenen Rechnungen für Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="e5f49-181">The payment is settled with the open Fabrikam East invoices.</span></span> <span data-ttu-id="e5f49-182">Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost) gebucht.</span><span class="sxs-lookup"><span data-stu-id="e5f49-182">The cash discount is posted to the legal entity of the invoice, Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a>Buchung der Rechnung in Fabrikam Ost für Kreditor "100" von Fabrikam Ost
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a><span data-ttu-id="e5f49-183">Buchung der Rechnung in Fabrikam Ost für Kreditor "100" von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="e5f49-183">Invoice is posted in Fabrikam East for Fabrikam East vendor 100</span></span>
 
-| Konto                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-184">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-184">Account</span></span>                          | <span data-ttu-id="e5f49-185">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-185">Debit amount</span></span> | <span data-ttu-id="e5f49-186">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-186">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Ausgabe (Fabrikam Ost)          | 600,00       |               |
-| Kreditoren (Fabrikam Ost) |              | 600,00        |
+| <span data-ttu-id="e5f49-187">Ausgabe (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-187">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="e5f49-188">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-188">600.00</span></span>       |               |
+| <span data-ttu-id="e5f49-189">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-189">Accounts payable (Fabrikam East)</span></span> |              | <span data-ttu-id="e5f49-190">600,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-190">600.00</span></span>        |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a>Generierung und Buchung der Zahlung in Fabrikam für Fabrikam-Kreditor "3004"
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a><span data-ttu-id="e5f49-191">Generierung und Buchung der Zahlung in Fabrikam für Fabrikam-Kreditor "3004"</span><span class="sxs-lookup"><span data-stu-id="e5f49-191">Payment is generated and posted in Fabrikam for Fabrikam vendor 3004</span></span>
 
-| Konto                     | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-192">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-192">Account</span></span>                     | <span data-ttu-id="e5f49-193">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-193">Debit amount</span></span> | <span data-ttu-id="e5f49-194">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-194">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kreditoren (Fabrikam) | 580,00       |               |
-| Bar (Fabrikam)             |              | 580,00        |
+| <span data-ttu-id="e5f49-195">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-195">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="e5f49-196">580,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-196">580.00</span></span>       |               |
+| <span data-ttu-id="e5f49-197">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-197">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="e5f49-198">580,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-198">580.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="e5f49-199">Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="e5f49-199">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="e5f49-200">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="e5f49-200">**Fabrikam posting**</span></span>
 
-| Konto                           | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-201">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-201">Account</span></span>                           | <span data-ttu-id="e5f49-202">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-202">Debit amount</span></span> | <span data-ttu-id="e5f49-203">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-203">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Fällig von Fabrikam Ost (Fabrikam) | 580,00       |               |
-| Kreditoren (Fabrikam)       |              | 580,00        |
+| <span data-ttu-id="e5f49-204">Fällig von Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-204">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="e5f49-205">580,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-205">580.00</span></span>       |               |
+| <span data-ttu-id="e5f49-206">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-206">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="e5f49-207">580,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-207">580.00</span></span>        |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="e5f49-208">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="e5f49-208">**Fabrikam East posting**</span></span>
 
-| Konto                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-209">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-209">Account</span></span>                          | <span data-ttu-id="e5f49-210">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-210">Debit amount</span></span> | <span data-ttu-id="e5f49-211">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-211">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditoren (Fabrikam Ost) | 580,00       |               |
-| Fällig an Fabrikam (Fabrikam Ost)  |              | 580,00        |
-| Kreditoren (Fabrikam Ost) | 20,00        |               |
-| Skonto (Fabrikam Ost)    |              | 20,00         |
+| <span data-ttu-id="e5f49-212">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-212">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-213">580,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-213">580.00</span></span>       |               |
+| <span data-ttu-id="e5f49-214">Fällig an Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-214">Due to Fabrikam (Fabrikam East)</span></span>  |              | <span data-ttu-id="e5f49-215">580,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-215">580.00</span></span>        |
+| <span data-ttu-id="e5f49-216">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-216">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-217">20,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-217">20.00</span></span>        |               |
+| <span data-ttu-id="e5f49-218">Skonto (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-218">Cash discount (Fabrikam East)</span></span>    |              | <span data-ttu-id="e5f49-219">20,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-219">20.00</span></span>         |
 
-## <a name="example-3-vendor-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-loss"></a>Beispiel 3: Kreditorenzahlung der Rechnung einer anderen juristischen Person mit realisiertem Wechselkursverlust
-Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Coffee) vor. Bei Fabrikam wird eine Zahlung für den Fabrikam-Kreditor "3004" (Fourth Coffee) eingegeben und gebucht. Die Zahlung wird mit der offenen Rechnung für Fabrikam Ost ausgeglichen. Im Zuge des Ausgleichsprozesses wird eine Wechselkursverlustbuchung generiert.
+## <a name="example-3-vendor-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-loss"></a><span data-ttu-id="e5f49-220">Beispiel 3: Kreditorenzahlung der Rechnung einer anderen juristischen Person mit realisiertem Wechselkursverlust</span><span class="sxs-lookup"><span data-stu-id="e5f49-220">Example 3: Vendor payment of invoice from another legal entity with realized exchange rate loss</span></span>
+<span data-ttu-id="e5f49-221">Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Coffee) vor.</span><span class="sxs-lookup"><span data-stu-id="e5f49-221">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-222">Bei Fabrikam wird eine Zahlung für den Fabrikam-Kreditor "3004" (Fourth Coffee) eingegeben und gebucht.</span><span class="sxs-lookup"><span data-stu-id="e5f49-222">Fabrikam enters and posts a payment for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-223">Die Zahlung wird mit der offenen Rechnung für Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="e5f49-223">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="e5f49-224">Im Zuge des Ausgleichsprozesses wird eine Wechselkursverlustbuchung generiert.</span><span class="sxs-lookup"><span data-stu-id="e5f49-224">A currency exchange loss transaction is generated during the settlement process.</span></span>
 
--   Wechselkurs von Euro (EUR) in US-Dollar (USD) zum Rechnungsdatum: 1,2062
--   Wechselkurs für EUR in USD zum Zahlungsdatum: 1,2277
+-   <span data-ttu-id="e5f49-225">Wechselkurs von Euro (EUR) in US-Dollar (USD) zum Rechnungsdatum: 1,2062</span><span class="sxs-lookup"><span data-stu-id="e5f49-225">Exchange rate for euros (EUR) to U.S. dollars (USD) as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="e5f49-226">Wechselkurs für EUR in USD zum Zahlungsdatum: 1,2277</span><span class="sxs-lookup"><span data-stu-id="e5f49-226">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a>Buchung der Rechung in Fabrikam Ost für Kreditor "100" von Fabrikam Ost
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a><span data-ttu-id="e5f49-227">Buchung der Rechung in Fabrikam Ost für Kreditor "100" von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="e5f49-227">Invoice is posted in Fabrikam East for Fabrikam East vendor 100</span></span>
 
-| Konto                          | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="e5f49-228">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-228">Account</span></span>                          | <span data-ttu-id="e5f49-229">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-229">Debit amount</span></span>            | <span data-ttu-id="e5f49-230">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-230">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Ausgabe (Fabrikam Ost)          | 600,00 EUR/723,72 USD |                         |
-| Kreditoren (Fabrikam Ost) |                         | 600,00 EUR/723,72 USD |
+| <span data-ttu-id="e5f49-231">Ausgabe (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-231">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="e5f49-232">600,00 EUR/723,72 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-232">600.00 EUR / 723.72 USD</span></span> |                         |
+| <span data-ttu-id="e5f49-233">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-233">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="e5f49-234">600,00 EUR/723,72 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-234">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a>Generierung und Buchung der Zahlung in Fabrikam für Fabrikam-Kreditor "3004"
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a><span data-ttu-id="e5f49-235">Generierung und Buchung der Zahlung in Fabrikam für Fabrikam-Kreditor "3004"</span><span class="sxs-lookup"><span data-stu-id="e5f49-235">Payment is generated and posted in Fabrikam for Fabrikam vendor 3004</span></span>
 
-| Konto                     | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="e5f49-236">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-236">Account</span></span>                     | <span data-ttu-id="e5f49-237">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-237">Debit amount</span></span>            | <span data-ttu-id="e5f49-238">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-238">Credit amount</span></span>           |
 |-----------------------------|-------------------------|-------------------------|
-| Kreditoren (Fabrikam) | 600,00 EUR/736,62 USD |                         |
-| Bar (Fabrikam)             |                         | 600,00 EUR/736,62 USD |
+| <span data-ttu-id="e5f49-239">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-239">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="e5f49-240">600,00 EUR/736,62 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-240">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="e5f49-241">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-241">Cash (Fabrikam)</span></span>             |                         | <span data-ttu-id="e5f49-242">600,00 EUR/736,62 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-242">600.00 EUR / 736.62 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="e5f49-243">Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="e5f49-243">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="e5f49-244">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="e5f49-244">**Fabrikam posting**</span></span>
 
-| Konto                           | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="e5f49-245">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-245">Account</span></span>                           | <span data-ttu-id="e5f49-246">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-246">Debit amount</span></span>            | <span data-ttu-id="e5f49-247">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-247">Credit amount</span></span>           |
 |-----------------------------------|-------------------------|-------------------------|
-| Fällig von Fabrikam Ost (Fabrikam) | 600,00 EUR/736,62 USD |                         |
-| Kreditoren (Fabrikam)       |                         | 600,00 EUR/736,62 USD |
-| Realisierter Verlust (Fabrikam)          | 0,00 EUR/12,90 USD    |                         |
-| Fällig von Fabrikam Ost (Fabrikam) |                         | 0,00 EUR/12,90 USD    |
+| <span data-ttu-id="e5f49-248">Fällig von Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-248">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="e5f49-249">600,00 EUR/736,62 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-249">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="e5f49-250">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-250">Accounts payable (Fabrikam)</span></span>       |                         | <span data-ttu-id="e5f49-251">600,00 EUR/736,62 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-251">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="e5f49-252">Realisierter Verlust (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-252">Realized loss (Fabrikam)</span></span>          | <span data-ttu-id="e5f49-253">0,00 EUR/12,90 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-253">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="e5f49-254">Fällig von Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-254">Due from Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="e5f49-255">0,00 EUR/12,90 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-255">0.00 EUR / 12.90 USD</span></span>    |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="e5f49-256">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="e5f49-256">**Fabrikam East posting**</span></span>
 
-| Konto                          | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="e5f49-257">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-257">Account</span></span>                          | <span data-ttu-id="e5f49-258">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-258">Debit amount</span></span>            | <span data-ttu-id="e5f49-259">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-259">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Kreditoren (Fabrikam Ost) | 600,00 EUR/736,62 USD |                         |
-| Fällig an Fabrikam (Fabrikam Ost)  |                         | 600,00 EUR/736,62 USD |
-| Fällig an Fabrikam (Fabrikam Ost)  | 0,00 EUR/12,90 USD    |                         |
-| Kreditoren (Fabrikam Ost) |                         | EUR 0,00/USD 12,90    |
+| <span data-ttu-id="e5f49-260">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-260">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-261">600,00 EUR/736,62 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-261">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="e5f49-262">Fällig an Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-262">Due to Fabrikam (Fabrikam East)</span></span>  |                         | <span data-ttu-id="e5f49-263">600,00 EUR/736,62 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-263">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="e5f49-264">Fällig an Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-264">Due to Fabrikam (Fabrikam East)</span></span>  | <span data-ttu-id="e5f49-265">0,00 EUR/12,90 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-265">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="e5f49-266">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-266">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="e5f49-267">EUR 0,00/USD 12,90</span><span class="sxs-lookup"><span data-stu-id="e5f49-267">0.00 EUR / 12.90 USD</span></span>    |
 
-## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a>Beispiel 4: Kreditorenzahlung der Rechnung einer anderen juristischen Person mit Skonto und realisiertem Wechselkursverlust
-Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Coffee) vor. Auf die Rechnung wird Skonto gewährt, und eine Mehrwertsteuerbuchung wird generiert. Bei Fabrikam wird eine Zahlung für den Fabrikam-Kreditor "3004" (Fourth Coffee) gebucht. Die Zahlung wird mit der offenen Rechnung für Fabrikam Ost ausgeglichen. Im Zuge des Ausgleichsprozesses wird eine Wechselkursverlustbuchung generiert. Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost), der Wechselkursverlust auf die juristische Person für die Zahlung (Fabrikam) gebucht.
+## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a><span data-ttu-id="e5f49-268">Beispiel 4: Kreditorenzahlung der Rechnung einer anderen juristischen Person mit Skonto und realisiertem Wechselkursverlust</span><span class="sxs-lookup"><span data-stu-id="e5f49-268">Example 4: Vendor payment of invoice from another legal entity with cash discount and realized exchange rate loss</span></span>
+<span data-ttu-id="e5f49-269">Für Fabrikam Ost liegt eine offene Rechnung für den Kreditor "100" (Fourth Coffee) vor.</span><span class="sxs-lookup"><span data-stu-id="e5f49-269">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-270">Auf die Rechnung wird Skonto gewährt, und eine Mehrwertsteuerbuchung wird generiert.</span><span class="sxs-lookup"><span data-stu-id="e5f49-270">The invoice has a cash discount available, and a sales tax transaction is generated.</span></span> <span data-ttu-id="e5f49-271">Bei Fabrikam wird eine Zahlung für den Fabrikam-Kreditor "3004" (Fourth Coffee) gebucht.</span><span class="sxs-lookup"><span data-stu-id="e5f49-271">Fabrikam posts a payment for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-272">Die Zahlung wird mit der offenen Rechnung für Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="e5f49-272">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="e5f49-273">Im Zuge des Ausgleichsprozesses wird eine Wechselkursverlustbuchung generiert.</span><span class="sxs-lookup"><span data-stu-id="e5f49-273">A currency exchange loss transaction is generated during the settlement process.</span></span> <span data-ttu-id="e5f49-274">Der Skonto wird auf die juristische Person für die Rechnung (Fabrikam Ost), der Wechselkursverlust auf die juristische Person für die Zahlung (Fabrikam) gebucht.</span><span class="sxs-lookup"><span data-stu-id="e5f49-274">The cash discount is posted to the legal entity of the invoice (Fabrikam East), and the currency exchange loss is posted to the legal entity of the payment (Fabrikam).</span></span>
 
--   Wechselkurs von EUR in USD zum Rechnungsdatum: 1,2062
--   Wechselkurs für EUR in USD zum Zahlungsdatum: 1,2277
+-   <span data-ttu-id="e5f49-275">Wechselkurs von EUR in USD zum Rechnungsdatum: 1,2062</span><span class="sxs-lookup"><span data-stu-id="e5f49-275">Exchange rate for EUR to USD as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="e5f49-276">Wechselkurs für EUR in USD zum Zahlungsdatum: 1,2277</span><span class="sxs-lookup"><span data-stu-id="e5f49-276">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-vendor-100"></a>Buchung der Rechnung und Generierung einer Steuerbuchung in Fabrikam Ost für Kreditor "100"
+### <a name="invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-vendor-100"></a><span data-ttu-id="e5f49-277">Buchung der Rechnung und Generierung einer Steuerbuchung in Fabrikam Ost für Kreditor "100"</span><span class="sxs-lookup"><span data-stu-id="e5f49-277">Invoice is posted and a tax transaction is generated in Fabrikam East for vendor 100</span></span>
 
-| Konto                          | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="e5f49-278">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-278">Account</span></span>                          | <span data-ttu-id="e5f49-279">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-279">Debit amount</span></span>            | <span data-ttu-id="e5f49-280">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-280">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Ausgabe (Fabrikam Ost)          | 564,07 EUR/680,38 USD |                         |
-| Mehrwertsteuer (Fabrikam Ost)        | 35,93 EUR/43,34 USD   |                         |
-| Kreditoren (Fabrikam Ost) |                         | 600,00 EUR/723,72 USD |
+| <span data-ttu-id="e5f49-281">Ausgabe (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-281">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="e5f49-282">564,07 EUR/680,38 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-282">564.07 EUR / 680.38 USD</span></span> |                         |
+| <span data-ttu-id="e5f49-283">Mehrwertsteuer (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-283">Sales tax (Fabrikam East)</span></span>        | <span data-ttu-id="e5f49-284">35,93 EUR/43,34 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-284">35.93 EUR / 43.34 USD</span></span>   |                         |
+| <span data-ttu-id="e5f49-285">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-285">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="e5f49-286">600,00 EUR/723,72 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-286">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a>Generierung und Buchung der Zahlung in Fabrikam für Kreditor "3004"
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a><span data-ttu-id="e5f49-287">Generierung und Buchung der Zahlung in Fabrikam für Kreditor "3004"</span><span class="sxs-lookup"><span data-stu-id="e5f49-287">Payment is generated and posted in Fabrikam for vendor 3004</span></span>
 
-| Konto                     | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="e5f49-288">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-288">Account</span></span>                     | <span data-ttu-id="e5f49-289">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-289">Debit amount</span></span>            | <span data-ttu-id="e5f49-290">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-290">Credit amount</span></span>           |
 |-----------------------------|-------------------------|-------------------------|
-| Kreditoren (Fabrikam) | 588,72 EUR/722,77 USD |                         |
-| Bar (Fabrikam Ost)        |                         | 588,72 EUR/722,77 USD |
+| <span data-ttu-id="e5f49-291">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-291">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="e5f49-292">588,72 EUR/722,77 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-292">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="e5f49-293">Bar (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-293">Cash (Fabrikam East)</span></span>        |                         | <span data-ttu-id="e5f49-294">588,72 EUR/722,77 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-294">588.72 EUR / 722.77 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="e5f49-295">Ausgleich der Fabrikam-Zahlung mit der Rechnung von Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="e5f49-295">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="e5f49-296">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="e5f49-296">**Fabrikam posting**</span></span>
 
-| Konto                           | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="e5f49-297">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-297">Account</span></span>                           | <span data-ttu-id="e5f49-298">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-298">Debit amount</span></span>            | <span data-ttu-id="e5f49-299">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-299">Credit amount</span></span>           |
 |-----------------------------------|-------------------------|-------------------------|
-| Fällig von Fabrikam Ost (Fabrikam) | 588,72 EUR/722,77 USD |                         |
-| Kreditoren (Fabrikam)       |                         | 588,72 EUR/722,77 USD |
-| Realisierter Verlust (Fabrikam)          | 0,00 EUR/12,66 USD    |                         |
-| Fällig von Fabrikam Ost (Fabrikam) |                         | 0,00 EUR/12,66 USD    |
+| <span data-ttu-id="e5f49-300">Fällig von Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-300">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="e5f49-301">588,72 EUR/722,77 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-301">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="e5f49-302">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-302">Accounts payable (Fabrikam)</span></span>       |                         | <span data-ttu-id="e5f49-303">588,72 EUR/722,77 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-303">588.72 EUR / 722.77 USD</span></span> |
+| <span data-ttu-id="e5f49-304">Realisierter Verlust (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-304">Realized loss (Fabrikam)</span></span>          | <span data-ttu-id="e5f49-305">0,00 EUR/12,66 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-305">0.00 EUR / 12.66 USD</span></span>    |                         |
+| <span data-ttu-id="e5f49-306">Fällig von Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-306">Due from Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="e5f49-307">0,00 EUR/12,66 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-307">0.00 EUR / 12.66 USD</span></span>    |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="e5f49-308">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="e5f49-308">**Fabrikam East posting**</span></span>
 
-| Konto                          | Sollbetrag            | Habenbetrag           |
+| <span data-ttu-id="e5f49-309">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-309">Account</span></span>                          | <span data-ttu-id="e5f49-310">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-310">Debit amount</span></span>            | <span data-ttu-id="e5f49-311">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-311">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Kreditoren (Fabrikam Ost) | 588,72 EUR/722,77 USD |                         |
-| Fällig an Fabrikam (Fabrikam Ost)  |                         | 588,72 EUR/722,77 USD |
-| Fällig an Fabrikam (Fabrikam Ost)   | 0,00 EUR/12,66 USD    |                         |
-| Kreditoren (Fabrikam Ost) |                         | 0,00 EUR/12,66 USD    |
-| Kreditoren (Fabrikam Ost) | 11,28 EUR/13,61 USD   |                         |
-| Skonto (Fabrikam Ost)    |                         | 11,28 EUR/13,61 USD   |
+| <span data-ttu-id="e5f49-312">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-312">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-313">588,72 EUR/722,77 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-313">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="e5f49-314">Fällig an Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-314">Due to Fabrikam (Fabrikam East)</span></span>  |                         | <span data-ttu-id="e5f49-315">588,72 EUR/722,77 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-315">588.72 EUR / 722.77 USD</span></span> |
+| <span data-ttu-id="e5f49-316">Fällig an Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-316">Due to Fabrikam (Fabrikam East</span></span>   | <span data-ttu-id="e5f49-317">0,00 EUR/12,66 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-317">0.00 EUR / 12.66 USD</span></span>    |                         |
+| <span data-ttu-id="e5f49-318">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-318">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="e5f49-319">0,00 EUR/12,66 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-319">0.00 EUR / 12.66 USD</span></span>    |
+| <span data-ttu-id="e5f49-320">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-320">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-321">11,28 EUR/13,61 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-321">11.28 EUR / 13.61 USD</span></span>   |                         |
+| <span data-ttu-id="e5f49-322">Skonto (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-322">Cash discount (Fabrikam East)</span></span>    |                         | <span data-ttu-id="e5f49-323">11,28 EUR/13,61 USD</span><span class="sxs-lookup"><span data-stu-id="e5f49-323">11.28 EUR / 13.61 USD</span></span>   |
 
-## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Beispiel 5: Kreditorengutschrift mit primärer Zahlung
-Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Fourth Coffee) generiert. Die Zahlung wird mit einer offenen Rechnung für den Kreditor "3004" von Fabrikam West und einer offenen Gutschrift für den Kreditor "100" von Fabrikam Ost ausgeglichen. Die Zahlung wird im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** dargestellt.
+## <a name="example-5-vendor-credit-note-with-primary-payment"></a><span data-ttu-id="e5f49-324">Beispiel 5: Kreditorengutschrift mit primärer Zahlung</span><span class="sxs-lookup"><span data-stu-id="e5f49-324">Example 5: Vendor credit note with primary payment</span></span>
+<span data-ttu-id="e5f49-325">Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Fourth Coffee) generiert.</span><span class="sxs-lookup"><span data-stu-id="e5f49-325">Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-326">Die Zahlung wird mit einer offenen Rechnung für den Kreditor "3004" von Fabrikam West und einer offenen Gutschrift für den Kreditor "100" von Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="e5f49-326">The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100.</span></span> <span data-ttu-id="e5f49-327">Die Zahlung wird im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** dargestellt.</span><span class="sxs-lookup"><span data-stu-id="e5f49-327">The payment is selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Buchung der Rechnung an Fabrikam West für Kreditor "3004"
+### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a><span data-ttu-id="e5f49-328">Buchung der Rechnung an Fabrikam West für Kreditor "3004"</span><span class="sxs-lookup"><span data-stu-id="e5f49-328">Invoice is posted to Fabrikam West for vendor 3004</span></span>
 
-| Konto                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-329">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-329">Account</span></span>                          | <span data-ttu-id="e5f49-330">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-330">Debit amount</span></span> | <span data-ttu-id="e5f49-331">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-331">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Ausgabe (Fabrikam West)          | 100,00       |               |
-| Kreditoren (Fabrikam West) |              | 100,00        |
+| <span data-ttu-id="e5f49-332">Ausgabe (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-332">Expense (Fabrikam West)</span></span>          | <span data-ttu-id="e5f49-333">100,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-333">100.00</span></span>       |               |
+| <span data-ttu-id="e5f49-334">Kreditoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-334">Accounts payable (Fabrikam West)</span></span> |              | <span data-ttu-id="e5f49-335">100,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-335">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>Buchung der Gutschrift an Fabrikam West für Kreditor "100"
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a><span data-ttu-id="e5f49-336">Buchung der Gutschrift an Fabrikam West für Kreditor "100"</span><span class="sxs-lookup"><span data-stu-id="e5f49-336">Credit note is posted to Fabrikam East for vendor 100</span></span>
 
-| Konto                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-337">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-337">Account</span></span>                          | <span data-ttu-id="e5f49-338">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-338">Debit amount</span></span> | <span data-ttu-id="e5f49-339">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-339">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditoren (Fabrikam Ost) | 25,00        |               |
-| Bestellretouren (Fabrikam Ost) |              | 25,00         |
+| <span data-ttu-id="e5f49-340">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-340">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-341">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-341">25.00</span></span>        |               |
+| <span data-ttu-id="e5f49-342">Bestellretouren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-342">Purchase returns (Fabrikam East)</span></span> |              | <span data-ttu-id="e5f49-343">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-343">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a>Buchung der Zahlung an Fabrikam für Kreditor "3004"
+### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a><span data-ttu-id="e5f49-344">Buchung der Zahlung an Fabrikam für Kreditor "3004"</span><span class="sxs-lookup"><span data-stu-id="e5f49-344">Payment is posted to Fabrikam for vendor 3004</span></span>
 
-| Konto                     | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-345">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-345">Account</span></span>                     | <span data-ttu-id="e5f49-346">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-346">Debit amount</span></span> | <span data-ttu-id="e5f49-347">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-347">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kreditoren (Fabrikam) | 75,00        |               |
-| Bar (Fabrikam)             |              | 75,00         |
+| <span data-ttu-id="e5f49-348">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-348">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="e5f49-349">75,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-349">75.00</span></span>        |               |
+| <span data-ttu-id="e5f49-350">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-350">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="e5f49-351">75,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-351">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="e5f49-352">Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="e5f49-352">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="e5f49-353">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="e5f49-353">**Fabrikam posting**</span></span>
 
-| Konto                           | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-354">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-354">Account</span></span>                           | <span data-ttu-id="e5f49-355">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-355">Debit amount</span></span> | <span data-ttu-id="e5f49-356">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-356">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Kreditoren (Fabrikam)       | 25,00        |               |
-| Fällig an Fabrikam Ost (Fabrikam)   |              | 25,00         |
-| Fällig von Fabrikam West (Fabrikam) | 100,00       |               |
-| Kreditoren (Fabrikam)       |              | 100,00        |
+| <span data-ttu-id="e5f49-357">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-357">Accounts payable (Fabrikam)</span></span>       | <span data-ttu-id="e5f49-358">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-358">25.00</span></span>        |               |
+| <span data-ttu-id="e5f49-359">Fällig an Fabrikam Ost (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-359">Due to Fabrikam East (Fabrikam)</span></span>   |              | <span data-ttu-id="e5f49-360">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-360">25.00</span></span>         |
+| <span data-ttu-id="e5f49-361">Fällig von Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-361">Due from Fabrikam West (Fabrikam)</span></span> | <span data-ttu-id="e5f49-362">100,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-362">100.00</span></span>       |               |
+| <span data-ttu-id="e5f49-363">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-363">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="e5f49-364">100,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-364">100.00</span></span>        |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="e5f49-365">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="e5f49-365">**Fabrikam East posting**</span></span>
 
-| Konto                           | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-366">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-366">Account</span></span>                           | <span data-ttu-id="e5f49-367">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-367">Debit amount</span></span> | <span data-ttu-id="e5f49-368">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-368">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Fällig von Fabrikam (Fabrikam Ost) | 25,00        |               |
-| Kreditoren (Fabrikam Ost)  |              | 25,00         |
+| <span data-ttu-id="e5f49-369">Fällig von Fabrikam (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-369">Due from Fabrikam (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-370">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-370">25.00</span></span>        |               |
+| <span data-ttu-id="e5f49-371">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-371">Accounts payable (Fabrikam East)</span></span>  |              | <span data-ttu-id="e5f49-372">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-372">25.00</span></span>         |
 
-**Buchung für Fabrikam West**
+<span data-ttu-id="e5f49-373">**Buchung für Fabrikam West**</span><span class="sxs-lookup"><span data-stu-id="e5f49-373">**Fabrikam West posting**</span></span>
 
-| Konto                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-374">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-374">Account</span></span>                          | <span data-ttu-id="e5f49-375">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-375">Debit amount</span></span> | <span data-ttu-id="e5f49-376">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-376">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditoren (Fabrikam West) | 100,00       |               |
-| Fällig an Fabrikam (Fabrikam West)  |              | 100,00        |
+| <span data-ttu-id="e5f49-377">Kreditoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-377">Accounts payable (Fabrikam West)</span></span> | <span data-ttu-id="e5f49-378">100,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-378">100.00</span></span>       |               |
+| <span data-ttu-id="e5f49-379">Fällig an Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-379">Due to Fabrikam (Fabrikam West)</span></span>  |              | <span data-ttu-id="e5f49-380">100,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-380">100.00</span></span>        |
 
-## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Beispiel 6: Kreditorengutschrift ohne primäre Zahlung
-Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Fourth Coffee) generiert. Die Zahlung wird mit einer offenen Rechnung für den Kreditor "3004" von Fabrikam West und einer offenen Gutschrift für den Kreditor "100" von Fabrikam Ost ausgeglichen. Die Zahlung ist im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** nicht ausgewählt.
+## <a name="example-6-vendor-credit-note-without-primary-payment"></a><span data-ttu-id="e5f49-381">Beispiel 6: Kreditorengutschrift ohne primäre Zahlung</span><span class="sxs-lookup"><span data-stu-id="e5f49-381">Example 6: Vendor credit note without primary payment</span></span>
+<span data-ttu-id="e5f49-382">Bei Fabrikam wird eine Zahlung in Höhe von 75,00 für den Kreditor "3004" (Fourth Coffee) generiert.</span><span class="sxs-lookup"><span data-stu-id="e5f49-382">Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="e5f49-383">Die Zahlung wird mit einer offenen Rechnung für den Kreditor "3004" von Fabrikam West und einer offenen Gutschrift für den Kreditor "100" von Fabrikam Ost ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="e5f49-383">The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100.</span></span> <span data-ttu-id="e5f49-384">Die Zahlung ist im Formular zum Bearbeiten offener Posten als Seite **Transaktion begleich** nicht ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="e5f49-384">The payment isn't selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Buchung der Rechnung an Fabrikam West für Kreditor "3004"
+### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a><span data-ttu-id="e5f49-385">Buchung der Rechnung an Fabrikam West für Kreditor "3004"</span><span class="sxs-lookup"><span data-stu-id="e5f49-385">Invoice is posted to Fabrikam West for vendor 3004</span></span>
 
-| Konto                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-386">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-386">Account</span></span>                          | <span data-ttu-id="e5f49-387">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-387">Debit amount</span></span> | <span data-ttu-id="e5f49-388">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-388">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Ausgabe (Fabrikam West)          | 100,00       |               |
-| Kreditoren (Fabrikam West) |              | 100,00        |
+| <span data-ttu-id="e5f49-389">Ausgabe (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-389">Expense (Fabrikam West)</span></span>          | <span data-ttu-id="e5f49-390">100,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-390">100.00</span></span>       |               |
+| <span data-ttu-id="e5f49-391">Kreditoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-391">Accounts payable (Fabrikam West)</span></span> |              | <span data-ttu-id="e5f49-392">100,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-392">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>Buchung der Gutschrift an Fabrikam West für Kreditor "100"
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a><span data-ttu-id="e5f49-393">Buchung der Gutschrift an Fabrikam West für Kreditor "100"</span><span class="sxs-lookup"><span data-stu-id="e5f49-393">Credit note is posted to Fabrikam East for vendor 100</span></span>
 
-| Konto                          | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-394">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-394">Account</span></span>                          | <span data-ttu-id="e5f49-395">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-395">Debit amount</span></span> | <span data-ttu-id="e5f49-396">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-396">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditoren (Fabrikam Ost) | 25,00        |               |
-| Bestellretouren (Fabrikam Ost) |              | 25,00         |
+| <span data-ttu-id="e5f49-397">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-397">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-398">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-398">25.00</span></span>        |               |
+| <span data-ttu-id="e5f49-399">Bestellretouren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-399">Purchase returns (Fabrikam East)</span></span> |              | <span data-ttu-id="e5f49-400">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-400">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a>Buchung der Zahlung an Fabrikam für Kreditor "3004"
+### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a><span data-ttu-id="e5f49-401">Buchung der Zahlung an Fabrikam für Kreditor "3004"</span><span class="sxs-lookup"><span data-stu-id="e5f49-401">Payment is posted to Fabrikam for vendor 3004</span></span>
 
-| Konto                     | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-402">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-402">Account</span></span>                     | <span data-ttu-id="e5f49-403">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-403">Debit amount</span></span> | <span data-ttu-id="e5f49-404">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-404">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kreditoren (Fabrikam) | 75,00        |               |
-| Bar (Fabrikam)             |              | 75,00         |
+| <span data-ttu-id="e5f49-405">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-405">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="e5f49-406">75,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-406">75.00</span></span>        |               |
+| <span data-ttu-id="e5f49-407">Bar (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-407">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="e5f49-408">75,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-408">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="e5f49-409">Ausgleich der Fabrikam-Zahlung mit Rechnung für Fabrikam West und Gutschrift für Fabrikam Ost</span><span class="sxs-lookup"><span data-stu-id="e5f49-409">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Buchung für Fabrikam**
+<span data-ttu-id="e5f49-410">**Buchung für Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="e5f49-410">**Fabrikam posting**</span></span>
 
-| Konto                           | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-411">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-411">Account</span></span>                           | <span data-ttu-id="e5f49-412">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-412">Debit amount</span></span> | <span data-ttu-id="e5f49-413">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-413">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Fällig von Fabrikam West (Fabrikam) | 75,00        |               |
-| Kreditoren (Fabrikam)       |              | 75,00         |
+| <span data-ttu-id="e5f49-414">Fällig von Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-414">Due from Fabrikam West (Fabrikam)</span></span> | <span data-ttu-id="e5f49-415">75,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-415">75.00</span></span>        |               |
+| <span data-ttu-id="e5f49-416">Kreditoren (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="e5f49-416">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="e5f49-417">75,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-417">75.00</span></span>         |
 
-**Buchung für Fabrikam Ost**
+<span data-ttu-id="e5f49-418">**Buchung für Fabrikam Ost**</span><span class="sxs-lookup"><span data-stu-id="e5f49-418">**Fabrikam East posting**</span></span>
 
-| Konto                                | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-419">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-419">Account</span></span>                                | <span data-ttu-id="e5f49-420">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-420">Debit amount</span></span> | <span data-ttu-id="e5f49-421">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-421">Credit amount</span></span> |
 |----------------------------------------|--------------|---------------|
-| Fällig von Fabrikam West (Fabrikam Ost) | 25,00        |               |
-| Kreditoren (Fabrikam Ost)       |              | 25,00         |
+| <span data-ttu-id="e5f49-422">Fällig von Fabrikam West (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-422">Due from Fabrikam West (Fabrikam East)</span></span> | <span data-ttu-id="e5f49-423">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-423">25.00</span></span>        |               |
+| <span data-ttu-id="e5f49-424">Kreditoren (Fabrikam Ost)</span><span class="sxs-lookup"><span data-stu-id="e5f49-424">Accounts payable (Fabrikam East)</span></span>       |              | <span data-ttu-id="e5f49-425">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-425">25.00</span></span>         |
 
-**Buchung für Fabrikam West**
+<span data-ttu-id="e5f49-426">**Buchung für Fabrikam West**</span><span class="sxs-lookup"><span data-stu-id="e5f49-426">**Fabrikam West posting**</span></span>
 
-| Konto                              | Sollbetrag | Habenbetrag |
+| <span data-ttu-id="e5f49-427">Konto</span><span class="sxs-lookup"><span data-stu-id="e5f49-427">Account</span></span>                              | <span data-ttu-id="e5f49-428">Sollbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-428">Debit amount</span></span> | <span data-ttu-id="e5f49-429">Habenbetrag</span><span class="sxs-lookup"><span data-stu-id="e5f49-429">Credit amount</span></span> |
 |--------------------------------------|--------------|---------------|
-| Kreditoren (Fabrikam West)     | 75,00        |               |
-| Fällig an Fabrikam (Fabrikam West)      |              | 75,00         |
-| Kreditoren (Fabrikam West)     | 25,00        |               |
-| Fällig an Fabrikam Ost (Fabrikam West) |              | 25,00         |
+| <span data-ttu-id="e5f49-430">Kreditoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-430">Accounts payable (Fabrikam West)</span></span>     | <span data-ttu-id="e5f49-431">75,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-431">75.00</span></span>        |               |
+| <span data-ttu-id="e5f49-432">Fällig an Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-432">Due to Fabrikam (Fabrikam West)</span></span>      |              | <span data-ttu-id="e5f49-433">75,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-433">75.00</span></span>         |
+| <span data-ttu-id="e5f49-434">Kreditoren (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-434">Accounts payable (Fabrikam West)</span></span>     | <span data-ttu-id="e5f49-435">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-435">25.00</span></span>        |               |
+| <span data-ttu-id="e5f49-436">Fällig an Fabrikam Ost (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="e5f49-436">Due to Fabrikam East (Fabrikam West)</span></span> |              | <span data-ttu-id="e5f49-437">25,00</span><span class="sxs-lookup"><span data-stu-id="e5f49-437">25.00</span></span>         |
 
 
 

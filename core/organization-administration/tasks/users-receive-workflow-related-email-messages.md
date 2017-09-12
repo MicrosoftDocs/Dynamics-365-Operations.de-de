@@ -16,27 +16,27 @@ ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 76ae3b1f479733f7e3a738fd43e52134bda7069a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1ff7de584631563939104c87b00fdc26bdb1a3cb
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enable-users-to-receive-workflow-related-email-messages"></a>Ermöglichen Sie es Benutzern, workflowbezogene E-Mail-Nachrichten zu erhalten.
+# <a name="enable-users-to-receive-workflow-related-email-messages"></a><span data-ttu-id="d0ad3-103">Ermöglichen Sie es Benutzern, workflowbezogene E-Mail-Nachrichten zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-103">Enable users to receive workflow-related email messages</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Sie können das System konfigurieren, um E-Mail-Nachrichten an Benutzer zu senden, wenn workflowbezogene Ereignisse auftreten. So können E-Mail-Nachrichten an Benutzer gesendet werden, wenn ihnen Dokumente zur Genehmigung zugewiesen sind. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+<span data-ttu-id="d0ad3-104">Sie können das System konfigurieren, um E-Mail-Nachrichten an Benutzer zu senden, wenn workflowbezogene Ereignisse auftreten.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-104">You can configure the system to send email messages to users when workflow-related events occur.</span></span> <span data-ttu-id="d0ad3-105">So können E-Mail-Nachrichten an Benutzer gesendet werden, wenn ihnen Dokumente zur Genehmigung zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-105">For example, email messages can be sent to users when documents are assigned to them for approval.</span></span> <span data-ttu-id="d0ad3-106">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Wechseln Sie zu "Systemverwaltung" > "Benutzer" > "Benutzer".
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Klicken Sie auf "Benutzeroptionen".
-4. Klicken Sie auf die Registerkarte „Workflow”.
-    * Überprüfen Sie, ob der Bereich „Benachrichtigungen” erweitert ist.     Im Abschnitt „Benachrichtigungen” geben Sie an, wie der Benutzer über workflowbezogene Ereignisse informiert werden soll.  
-5. Wählen Sie im Feld Positionsartikelworkflow-Benachrichtigungstyp eine Option aus.
-    * Gruppiert – Benachrichtigungen für Positionsartikel werden in eine einzige E-Mail-Nachricht gruppiert.    Einzeln - eine E-Mail wird für jeden Positionsartikel übermittelt.  
-    * Wenn der Benutzer Benachrichtigungen im Microsoft -Client erhalten soll, aktivieren Sie das Kontrollkästchen „Benachrichtigungen per E-Mail senden”.  
-6. Klicken Sie auf "Speichern".
-7. Schließen Sie die Seite.
+1. <span data-ttu-id="d0ad3-107">Wechseln Sie zu "Systemverwaltung" > "Benutzer" > "Benutzer".</span><span class="sxs-lookup"><span data-stu-id="d0ad3-107">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="d0ad3-108">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="d0ad3-109">Klicken Sie auf "Benutzeroptionen".</span><span class="sxs-lookup"><span data-stu-id="d0ad3-109">Click User options.</span></span>
+4. <span data-ttu-id="d0ad3-110">Klicken Sie auf die Registerkarte „Workflow”.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-110">Click the Workflow tab.</span></span>
+    * <span data-ttu-id="d0ad3-111">Überprüfen Sie, ob der Bereich „Benachrichtigungen” erweitert ist.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-111">Make sure that the Notifications section is expanded.</span></span>     <span data-ttu-id="d0ad3-112">Im Abschnitt „Benachrichtigungen” geben Sie an, wie der Benutzer über workflowbezogene Ereignisse informiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-112">In the Notifications section, you can specify how you want the user to be notified about workflow-related events.</span></span>  
+5. <span data-ttu-id="d0ad3-113">Wählen Sie im Feld Positionsartikelworkflow-Benachrichtigungstyp eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-113">In the Line-item workflow notification type field, select an option.</span></span>
+    * <span data-ttu-id="d0ad3-114">Gruppiert – Benachrichtigungen für Positionsartikel werden in eine einzige E-Mail-Nachricht gruppiert.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-114">Grouped – Notifications for line items are grouped into a single email message.</span></span>    <span data-ttu-id="d0ad3-115">Einzeln - eine E-Mail wird für jeden Positionsartikel übermittelt.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-115">Individual – An email message is sent for each line item.</span></span>  
+    * <span data-ttu-id="d0ad3-116">Wenn der Benutzer Benachrichtigungen im Microsoft -Client erhalten soll, aktivieren Sie das Kontrollkästchen „Benachrichtigungen per E-Mail senden”.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-116">If you want the user to receive notifications in the client, select the Send notifications in email check box.</span></span>  
+6. <span data-ttu-id="d0ad3-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="d0ad3-117">Click Save.</span></span>
+7. <span data-ttu-id="d0ad3-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d0ad3-118">Close the page.</span></span>
 
 

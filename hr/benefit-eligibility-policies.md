@@ -19,42 +19,42 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8c158ac5badd22054db86d269b58d223274176d2
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: d0f599964833162dd4bf4b490019cbed692428eb
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="benefit-eligibility-policies"></a>Vorteilsberechtigungsrichtlinien
+# <a name="benefit-eligibility-policies"></a><span data-ttu-id="bd214-103">Vorteilsberechtigungsrichtlinien</span><span class="sxs-lookup"><span data-stu-id="bd214-103">Benefit eligibility policies</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Dieses Themal enthält Informationen zu Vorteilseberechtigungspolicen, die Sie dabei unterstützen festzulegen, wer für bestimmte Vorteile berechtigt ist.
+<span data-ttu-id="bd214-104">Dieses Themal enthält Informationen zu Vorteilseberechtigungspolicen, die Sie dabei unterstützen festzulegen, wer für bestimmte Vorteile berechtigt ist.</span><span class="sxs-lookup"><span data-stu-id="bd214-104">This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.</span></span>
 
-Wenn Sie Vorteile erstellen, müssen Sie entscheiden, welche Vorteile für welche Mitarbeiter zur Verfügung stehen. Die folgende Tabelle zeigt Beispiele für Vorteile, die Sie vielleicht bestimmten Mitarbeitern zugänglich machen möchten.
+<span data-ttu-id="bd214-105">Wenn Sie Vorteile erstellen, müssen Sie entscheiden, welche Vorteile für welche Mitarbeiter zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="bd214-105">When you create benefits, you decide which benefits will be available to which employees.</span></span> <span data-ttu-id="bd214-106">Die folgende Tabelle zeigt Beispiele für Vorteile, die Sie vielleicht bestimmten Mitarbeitern zugänglich machen möchten.</span><span class="sxs-lookup"><span data-stu-id="bd214-106">The following table shows examples of benefits that you might make available to specific employees.</span></span>
 
-| Vorteil          | Vorteil ist verfügbar für |
+| <span data-ttu-id="bd214-107">Vorteil</span><span class="sxs-lookup"><span data-stu-id="bd214-107">Benefit</span></span>          | <span data-ttu-id="bd214-108">Vorteil ist verfügbar für</span><span class="sxs-lookup"><span data-stu-id="bd214-108">Who the benefit is available to</span></span> |
 |------------------|---------------------------------|
-| Krankenversicherung | Alle Mitarbeiter                   |
-| Mobiltelefon     | Verkaufspersonal, Führungskräfte         |
-| Parkausweise   | Führungskräfte                      |
+| <span data-ttu-id="bd214-109">Krankenversicherung</span><span class="sxs-lookup"><span data-stu-id="bd214-109">Health insurance</span></span> | <span data-ttu-id="bd214-110">Alle Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="bd214-110">All employees</span></span>                   |
+| <span data-ttu-id="bd214-111">Mobiltelefon</span><span class="sxs-lookup"><span data-stu-id="bd214-111">Mobile phone</span></span>     | <span data-ttu-id="bd214-112">Verkaufspersonal, Führungskräfte</span><span class="sxs-lookup"><span data-stu-id="bd214-112">Sales staff, executives</span></span>         |
+| <span data-ttu-id="bd214-113">Parkausweise</span><span class="sxs-lookup"><span data-stu-id="bd214-113">Parking passes</span></span>   | <span data-ttu-id="bd214-114">Führungskräfte</span><span class="sxs-lookup"><span data-stu-id="bd214-114">Executives</span></span>                      |
 
-Die folgenden Komponenten werden verwendet, um Berechtigungsrichtlinien zu erstellen:
+<span data-ttu-id="bd214-115">Die folgenden Komponenten werden verwendet, um Berechtigungsrichtlinien zu erstellen:</span><span class="sxs-lookup"><span data-stu-id="bd214-115">The following components in are used to create eligibility policies:</span></span>
 
--   Richtlinienregeltypen
--   Vorteilsberechtigungsrichtlinien
+-   <span data-ttu-id="bd214-116">Richtlinienregeltypen</span><span class="sxs-lookup"><span data-stu-id="bd214-116">Policy rule types</span></span>
+-   <span data-ttu-id="bd214-117">Vorteilsberechtigungsrichtlinien</span><span class="sxs-lookup"><span data-stu-id="bd214-117">Benefit eligibility policies</span></span>
 
-Durch Richtlinienregeltypen werden die Abfrageparameter definiert, die beim Entwickeln bestimmter Richtlinienregeln verwendet werden. Wenn Sie Richtlinienregeltypen erstellt haben, können Sie Berechtigungsrichtlinien für Vorteile erstellen. Über die Richtlinien können Sie eine Regelsammlung erstellen, die für eine oder mehrere juristische Personen gilt. Innerhalb jeder Richtlinie können Sie jeden der eben erstellten Richtlinienregeltypen für die Vorteilsberechtigung anzeigen. 
+<span data-ttu-id="bd214-118">Durch Richtlinienregeltypen werden die Abfrageparameter definiert, die beim Entwickeln bestimmter Richtlinienregeln verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="bd214-118">Policy rule types define the query parameters that are used when you develop specific policy rules.</span></span> <span data-ttu-id="bd214-119">Wenn Sie Richtlinienregeltypen erstellt haben, können Sie Berechtigungsrichtlinien für Vorteile erstellen.</span><span class="sxs-lookup"><span data-stu-id="bd214-119">After you create policy rule types, you can create benefit eligibility policies.</span></span> <span data-ttu-id="bd214-120">Über die Richtlinien können Sie eine Regelsammlung erstellen, die für eine oder mehrere juristische Personen gilt.</span><span class="sxs-lookup"><span data-stu-id="bd214-120">The policies let you create a collection of rules that apply to one or more legal entities.</span></span> <span data-ttu-id="bd214-121">Innerhalb jeder Richtlinie können Sie jeden der eben erstellten Richtlinienregeltypen für die Vorteilsberechtigung anzeigen.</span><span class="sxs-lookup"><span data-stu-id="bd214-121">Within each policy, you can view any of the benefit eligibility policy rule types that you created earlier.</span></span> 
 
-Sie definieren den Umfang der Regel innerhalb der Richtlinie. Wenn Sie beispielsweise einen Richtlinienregeltyp für die Vorteilsberechtigung mit der Bezeichnung **Führungskraft** erstellen, können Sie die Regel innerhalb dieser Richtlinie definieren. Hier kann die Regel zum Beispiel angeben, dass jede Position, die das Wort "Führungskraft" enthält, in diese Regel einbezogen werden soll. Nachdem Sie die Parameter der in der Richtlinie enthaltenen Regel(n) definiert haben, können Sie dem Vorteil eine bestimmte Regel zuweisen.
+<span data-ttu-id="bd214-122">Sie definieren den Umfang der Regel innerhalb der Richtlinie.</span><span class="sxs-lookup"><span data-stu-id="bd214-122">You define the scope of the rule within the policy.</span></span> <span data-ttu-id="bd214-123">Wenn Sie beispielsweise einen Richtlinienregeltyp für die Vorteilsberechtigung mit der Bezeichnung **Führungskraft** erstellen, können Sie die Regel innerhalb dieser Richtlinie definieren.</span><span class="sxs-lookup"><span data-stu-id="bd214-123">For example, if you create a benefit eligibility policy rule type that is named **Executive**, you can specify what the rule is within that policy.</span></span> <span data-ttu-id="bd214-124">Hier kann die Regel zum Beispiel angeben, dass jede Position, die das Wort "Führungskraft" enthält, in diese Regel einbezogen werden soll.</span><span class="sxs-lookup"><span data-stu-id="bd214-124">In this example, the rule might state that any job title that contains the word “executive” should be included in the rule.</span></span> <span data-ttu-id="bd214-125">Nachdem Sie die Parameter der in der Richtlinie enthaltenen Regel(n) definiert haben, können Sie dem Vorteil eine bestimmte Regel zuweisen.</span><span class="sxs-lookup"><span data-stu-id="bd214-125">After you've defined the parameters of the rule or rules that are included in the policy, you can assign a specific rule to the benefit.</span></span>
 
-<a name="see-also"></a>Siehe auch
+<a name="see-also"></a><span data-ttu-id="bd214-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="bd214-126">See also</span></span>
 --------
 
-[Definieren und verwalten eines Vorteilprogramms](manage-benefit-program.md)
+[<span data-ttu-id="bd214-127">Definieren und verwalten eines Vorteilprogramms</span><span class="sxs-lookup"><span data-stu-id="bd214-127">Defining and managing a benefit program</span></span>](manage-benefit-program.md)
 
 
 

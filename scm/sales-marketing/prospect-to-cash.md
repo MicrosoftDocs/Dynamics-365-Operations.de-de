@@ -27,17 +27,17 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="prospect-to-cash"></a>Interessent zu Bargeld  
+# <a name="prospect-to-cash"></a><span data-ttu-id="8f436-103">Interessent zu Bargeld</span><span class="sxs-lookup"><span data-stu-id="8f436-103">Prospect to cash</span></span>  
 
 [!include[banner](../includes/banner.md)]
 
-Die Lösung „Interessent zu Bargeld” verwendet [Datenintegrator](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration), um Daten über Instanzen von Dynamics 365 Finance and Operations oder Dynamics 365 for Sales hinweg mit dem Common Data Service zu synchronisieren. Die „Interessent zu Bargeld”-Vorlagen, die mit dem Datenintegrator verfügbar sind, ermöglichen den Fluss von Produkt-, Konten-, Kontakt- und Verkaufsangebotsdaten zwischen Dynamics 365 for Finance and Operations und Dynamics 365 for Sales. Während die Daten zwischen Finance and Operations und Dynamics 365 for Sales fließen, können Sie Vertriebs- und Marketingaktivitäten in Dynamics 365 for Sales ausführen und die Auftagserfüllung mit Bestandsverwaltung in Finance and Operations handhaben. 
+<span data-ttu-id="8f436-104">Die Lösung „Interessent zu Bargeld” verwendet [Datenintegrator](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration), um Daten über Instanzen von Dynamics 365 Finance and Operations oder Dynamics 365 for Sales hinweg mit dem Common Data Service zu synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="8f436-104">The Prospect to cash solution uses [Data Integrator](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) to synchronize data across Dynamics 365 Finance and Operations or Dynamics 365 for Sales instances via the Common Data Service.</span></span> <span data-ttu-id="8f436-105">Die „Interessent zu Bargeld”-Vorlagen, die mit dem Datenintegrator verfügbar sind, ermöglichen den Fluss von Produkt-, Konten-, Kontakt- und Verkaufsangebotsdaten zwischen Dynamics 365 for Finance and Operations und Dynamics 365 for Sales.</span><span class="sxs-lookup"><span data-stu-id="8f436-105">The Prospect to cash templates available with the Data Integrator enable the flow of product, account, contact, and sales quote data between Dynamics 365 for Finance and Operations and Dynamics 365 for Sales.</span></span> <span data-ttu-id="8f436-106">Während die Daten zwischen Finance and Operations und Dynamics 365 for Sales fließen, können Sie Vertriebs- und Marketingaktivitäten in Dynamics 365 for Sales ausführen und die Auftagserfüllung mit Bestandsverwaltung in Finance and Operations handhaben.</span><span class="sxs-lookup"><span data-stu-id="8f436-106">While the data is flowing between Finance and Operations and Dynamics 365 for Sales, you can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations.</span></span> 
 
-Diese Lösung bietet Integration in den folgenden Bereichen: 
+<span data-ttu-id="8f436-107">Diese Lösung bietet Integration in den folgenden Bereichen:</span><span class="sxs-lookup"><span data-stu-id="8f436-107">This solution provides integration in the following areas:</span></span> 
 
--   Konten in Dynamics 365 for Sales verwalten und sie mit Finance and Operations synchronisieren.
--   Kontakte in Dynamics 365 for Sales verwalten und sie mit Finance and Operations synchronisieren.
--   Verkaufsangebote in Dynamics 365 for Sales erstellen und sie mit Finance and Operations synchronisieren.
--   Produkte in Finance and Operations verwalten und sie mit Dynamics 365 for Sales synchronisieren.
+-   <span data-ttu-id="8f436-108">Konten in Dynamics 365 for Sales verwalten und sie mit Finance and Operations synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="8f436-108">Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations.</span></span>
+-   <span data-ttu-id="8f436-109">Kontakte in Dynamics 365 for Sales verwalten und sie mit Finance and Operations synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="8f436-109">Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.</span></span>
+-   <span data-ttu-id="8f436-110">Verkaufsangebote in Dynamics 365 for Sales erstellen und sie mit Finance and Operations synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="8f436-110">Create sales quotes in Dynamics 365 for Sales and sync them to Finance and Operations.</span></span>
+-   <span data-ttu-id="8f436-111">Produkte in Finance and Operations verwalten und sie mit Dynamics 365 for Sales synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="8f436-111">Maintain products in Finance and Operations and sync them to Dynamics 365 for Sales.</span></span>
 
 
