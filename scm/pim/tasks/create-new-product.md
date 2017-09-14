@@ -1,7 +1,7 @@
 --- 
 title: Neues Produkt erstellen
 description: Diese Aufgabe zeigt, wie ein neues freigegebenes Produkt erstellt wird.
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 06/08/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis

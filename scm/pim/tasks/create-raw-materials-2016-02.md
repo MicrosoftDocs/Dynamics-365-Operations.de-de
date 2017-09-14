@@ -1,7 +1,7 @@
 --- 
 title: "Rohmaterialien erstellen (nur Februar 2016)"
 description: Diese Aufgabe konzentriert sich auf das Erstellen der Komponenten fertiger und halbfertiger Produkte.
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
