@@ -3,9 +3,9 @@
     "content": [
       {
         "files": [
+
           "**/*.md",
           "**/**.yml"
-
         ],
         "exclude": [
           "**/obj/**",
@@ -16,7 +16,6 @@
           "ThirdPartyNotices",
           "**/_themes/**", 
           "**/_themes.pdf/**"
-
         ]
       }
     ],
@@ -29,7 +28,6 @@
           "**/**.jpeg",
           "**/**.gif",
           "**/**.svg"
-
         ],
         "exclude": [
           "**/obj/**",
@@ -39,7 +37,6 @@
     ],
     "overwrite": [],
     "externalReference": [],
-
     "globalMetadata": {
       "contributors_to_exclude": ["OpenLocalizationService"], 
       "layout": "Conceptual",
