@@ -1,8 +1,11 @@
 # [Willkommen bei Dynamics 365 for Retail](index.md)
 
+# Erste Schritte
+## [Neuheiten und Änderungen](get-started/whats-new.md)
+
 # Zahlungen
-## [Zahlungsmethoden](payment-methods.md)
-## [Einstellungen, Autorisierung und Erfassung von Kreditkarten](../financials/accounts-receivable/credit-card-authorizations.md)
+## [Zahlungsweisen](payment-methods.md)
+## [Einrichtung, Autorisierung und Erfassung von Kreditkarten](../financials/accounts-receivable/credit-card-authorizations.md)
 ## [Konfigurieren von Zahlungsmethoden für POS](cash-denominations.md)
 ## [Zahlungen – FAQ](dev-itpro/payments-retail.md)
 
@@ -174,7 +177,8 @@
 #### [Einzelhandelskonten und Geräte von Hauptsitzen aus verwalten](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS-Geräteaktivierung](dev-itpro/retail-device-activation.md)
 #### [Sichere Retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
-### [Retail Hardware station – Konfiguration und Installation](retail-hardware-station-configuration-installation.md).
+### [Retail Hardware Station – Konfiguration und Installation](retail-hardware-station-configuration-installation.md).
+### [Massenbereitstellung der Self-Service-Komponenten von Retail](dev-itpro/retail-mass-deployment.md)
 ### [Retail-Komponentenereignisse für Diagnose und Problembehandlung](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Ein bereitstellbares Paket übernehmen](../dev-itpro/deployment/apply-deployable-package-system.md)
 
