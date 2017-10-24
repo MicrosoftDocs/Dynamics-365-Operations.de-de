@@ -16,13 +16,13 @@ ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fb5c39a65ea59acda05b0828f84bfaea4ad75062
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -52,7 +52,7 @@ Der  **Kostenmanagement** Microsoft Power BI Inhalt dient für Bestandsbuchhalte
 Die primäre Datenquelle für CostAggregatedCostStatementEntryEntity ist die CostStatementCache-Tabelle. Diese Tabelle wird durch das Datensatzcacheframework verwaltet. Standardmäßig wird die Tabelle alle Stunden 24 aktualisiert, wobei Sie manuelle Aktualisierungen in der Datencachekonfiguration aktivieren können. Sie können eine manuelle Aktualisierung in **Kostenmanagement** oder **Kostenanalyse** - Arbeitsbereich vornehmen. Nach Abschluss der Aktualisierung von CostStatementCache, müssen Sie die OData-Verbindung auf Power  Bl.com aktualisieren, um die aktualisierte Daten auf der Katalogwebsite anzuzeigen. Die Kennzahl der Abweichung (Einkauf, Produktion) in diesem Power Bi Inhalt enthält nur die nur die Elemente, die von der Standardkostenbestandsmethode valuiert werden. Die Produktionsabweichung wird als Differenz zwischen aktiven Kosten und realisierten Kosten berechnet. Die Produktionsabweichung wird berechnet, wenn der Produktionsauftrag den Status aufweist **beendet** aufweist. Weitere Informationen zu jedem Produktionsabweichungstyp und wie jeder Typ berechnet wird, finden Sie unter [Analysieren von Abweichungen für eine abgeschlossenen Produktionsauftrag](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-**Kostenmanagement** Power BI-Inhalt ist von PowerBI.com verfügbar. Weitere Informationen dazu, wie Sie sich mit Ihren Microsoft Dynamics 365 for Finance and Operations verbinden und Daten auslasten, finden Sie unter [Zugriff auf Power BI Inhalt von PowerBI.com](power-bi-home-page.md).
+Der Power BI Inhalt **Kostenmanagement** ist von PowerBI.com verfügbar. Weitere Informationen dazu, wie Microsoft Dynamics 365 for Finance and Operations Daten verbunden und geladen werden, finden Sie unter [Zugriff auf Power BI Inhalt von PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im **Kostenmanagement** Power Bl Inhalt.

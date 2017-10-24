@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 67cd622d7766e5b177ccc58398431b007e8bda4e
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 33150777222faa97af7488c59ab13cb0fb9e8e2c
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +41,7 @@ Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren
     -   Die Funktionen können in jedes beliebige Format erweitert werden.
 
 2.  Richten Sie einen Nummernkreis ein, der für erweiterte Bankabstimmung verwendet wird, und definieren Sie die Abgleichsregeln für Bankabstimmung.
-    -   Eine Abgleichsregel für Bankabstimmung ist eine Gruppe von Kriterien, die verwendet wird, um Bankauszugspositionen und Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition-Banktransaktionspositionen während des Abstimmungsvorgangs zu filtern. Abhängig von Ihrer Geschäftspraktik können Sie mehrere Übereinstimmungsregel einrichten, die Ihren Abstimmungsprozess automatisieren und optimieren.
+    -   Eine Abgleichsregel für Bankabstimmung ist eine Gruppe von Kriterien, die verwendet wird, um Bankauszugspositionen und Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-Banktransaktionspositionen während des Abstimmungsvorgangs zu filtern. Abhängig von Ihrer Geschäftspraktik können Sie mehrere Übereinstimmungsregel einrichten, die Ihren Abstimmungsprozess automatisieren und optimieren.
 
 3.  Stimmen Sie Bankauszüge mit Finance and Operations Banktransaktionen ab.
     -   Führen Sie den automatischen Abgleich und die Erstellung von Abstimmungserfassungen aus.

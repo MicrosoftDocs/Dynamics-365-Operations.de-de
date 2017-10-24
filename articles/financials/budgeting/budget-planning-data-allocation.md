@@ -1,6 +1,6 @@
 ---
 title: "Datenzuteilung für die Budgetplanung"
-description: "Dieser Artikel beschreibt die verschiedenen Zuordnungsmethoden, die in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verfügbar sind, und wie sie verwendet werden können."
+description: "Dieser Artikel beschreibt die verschiedenen Zuordnungsmethoden, die in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verfügbar sind, und wie sie verwendet werden können."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: fc85775a27a160e951593bb9d40a6294af3ca329
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fd7ec30c8253f343b3d41d54c78696cd512b2ef7
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -32,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt die verschiedenen Zuordnungsmethoden, die in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verfügbar sind, und wie sie verwendet werden können.  
+Dieser Artikel beschreibt die verschiedenen Zuordnungsmethoden, die in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verfügbar sind, und wie sie verwendet werden können.  
 
 Sie können die Daten in einem Budgetplan auf vielfältige Weise verteilen, um die geplanten Beträge genau zu darzustellen.
 

@@ -1,6 +1,6 @@
 ---
-title: Die Suche nach Produkten und Produktvarianten bei der Auftragserfassung
-description: "Verwenden Sie das Feld <strong>Artikelnummer </strong>, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen.  Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht."
+title: Nach Produkten und Produktvarianten bei der Auftragserfassung suchen
+description: "Verwenden Sie das Feld <strong>Artikelnummer</strong>, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen.  Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht."
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3960cc3eb9b8d488973d258db45aa0ab9f1dd988
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: dd1b1229385b3c900d1b111ec6d0225cd5286542
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,7 +47,7 @@ Wenn Sie nach Produkten oder Produktvarianten suchen, ist es wichtig zu verstehe
 
 ### <a name="examples"></a>Beispiele
 
-In den folgenden Beispielen werden Produkte und Produktvarianten verwendet, um zu zeigen, wie die Suche in unterschiedlichen Szenarien gehandhabt wird. **Voraussetzung:** Unter **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter** &gt; **Suchtyp ** wählen Sie die Option **Vollständige Übereinstimmung** aus.
+In den folgenden Beispielen werden Produkte und Produktvarianten verwendet, um zu zeigen, wie die Suche in unterschiedlichen Szenarien gehandhabt wird. **Voraussetzung:** Unter **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter** &gt; **Suchtyp** wählen Sie die Option **Vollständige Übereinstimmung** aus.
 
 | Produkttyp     | Produktname    | Produktnummer anzeigen | Artikelnummer | Variante |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -61,10 +61,10 @@ Wenn Sie "05 "eingeben, erhalten Sie nur die zweite Produktvariante als Ergebnis
 
 Wenn Sie "sprech 05" eingeben, erhalten Sie keine Ergebnisse. Das liegt daran, weil die Suche nach dem vollständigen Text sucht, der eingegeben wird. Die Suche versucht nicht, "sprech" zu finden und dann die Ergebnisse auf diejenigen einzuengen, die "05" enthalten.  
 
-Sie können die Anzahl von Suchergebnissen eingrenzen, indem Sie das Feld **Anzahl von Ergebnissen** auf der Seite **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparamter** verwenden. Wenn Sie dieses Feld auf 0 festlegen, werden alle Suchergebnisse zurückgegeben. Wenn Sie es beispielsweise auf 10 festlegen, wird es maximal 10 Suchergebnisse zurückgeben.
+Sie können die Anzahl von Suchergebnissen eingrenzen, indem Sie das Feld **Anzahl von Ergebnissen** auf der Seite **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparamter** verwenden. Wenn Sie dieses Feld auf 0 festlegen, werden alle Suchergebnisse zurückgegeben. Wenn Sie es beispielsweise auf 10 festlegen, wird es maximal 10 Suchergebnisse zurückgeben.
 
 ## <a name="configure-the-product-search"></a>Die Produktsuche konfigurieren
-Bevor Sie die Produkt- und Produktvarianten-Suchfunktion verwenden können, folgen Sie diesen Schritten, um die Produktsuche zu konfigurieren. [![3 Schritte, um die Produktsuche \_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png) zu konfigurieren
+Bevor Sie die Produkt- und Produktvarianten-Suchfunktion verwenden können, folgen Sie diesen Schritten, um die Produktsuche zu konfigurieren. [![3 Schritte, um die Produktsuche\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png) zu konfigurieren
 
 ### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Schritt 1: Schließen Sie alle relevanten Produkt- und Produktvariantenbezeichner und -dimensionen in die Suchkriterien ein
 

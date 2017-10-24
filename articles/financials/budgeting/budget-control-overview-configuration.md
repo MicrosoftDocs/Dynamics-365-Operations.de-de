@@ -1,6 +1,6 @@
 ---
 title: "Überblick zur Budgetsteuerung"
-description: "Dieser Artikel stellt Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, damit Sie Finanzquellen verwalten können."
+description: "Dieser Artikel stellt Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, damit Sie Finanzquellen verwalten können."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -15,13 +15,13 @@ ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: d8565ec692036d7a9411cb8663d7293d3ab91a44
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 06/20/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel stellt Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, damit Sie Finanzquellen verwalten können.
+Dieser Artikel stellt Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, damit Sie Finanzquellen verwalten können.
 
 <a name="overview"></a>Überblick
 --------
@@ -104,7 +104,7 @@ Auf der Registerkarte **Budgetsteuerungsregeln definieren** müssen Sie spezifis
 
 ### <a name="select-main-accounts"></a>Hauptkonten auswählen
 
-Wenn das **Hauptkonto** nicht als Budgetsteuerungsdimension auf der Seite markiert **Parameter definieren** ausgewählt ist, aber bestimmten Ausgaben verwaltet werden, können Sie diese Aufwendungen auf der Registerkarte **Hauptkonten auswählen** auswählen. Wenn das **Hauptkonto** als Budgetsteuerungsdimension ausgewählt wurde, sind keine Einträge erforderlich.  
+Wenn das **Hauptkonto** nicht als Budgetsteuerungsdimension auf der Seite markiert **Parameter definieren** ausgewählt ist, aber bestimmten Ausgaben verwaltet werden, können Sie diese Aufwendungen auf der Registerkarte **Hauptkonten** auswählen auswählen. Wenn **Hauptkonto** als Budgetsteuerungsdimension ausgewählt ist, sind keine Einträge erforderlich.  
 
 ### <a name="define-budget-groups"></a>Budgetgruppen definieren
 
@@ -116,7 +116,7 @@ Wenn Warnmeldungen zur Budgetsteuerung für alle Benutzergruppen unterdrückt we
 
 ### <a name="activate-budget-control"></a>Budgetsteuerung aktivieren
 
-Nachdem die Budgetsteuerung konfiguriert wurde, können Sie diese Nutzung auf der Registerkarte **Budgetsteuerung aktivieren** aktivieren. Die Entwurfsversion wird dann wirksam.
+Nachdem die Budgetsteuerung konfiguriert wurde, können Sie diese Nutzung auf der Registerkarte **Budgetsteuerung aktivieren** aktivieren. Die Entwurfversion wird dann aktiv.
 > [!Important]
 > Wenn die Budgetsteuerung aktiviert wird und Transaktionen gebucht werden, sollte sie während des Jahres nicht abgeschaltet werden. Wenn die Budgetsteuerung deaktiviert ist, werden Budgettransaktionen nicht in der Budgetquellennachverfolgung erfasst, und es werden keine Budgetprüfungen mehr ausgeführt. Daher beinhalteten möglicherweise Dokumente, die bereits gebucht wurden, ordnungsgemäß keine Entlastungsbeträge oder Salden in Abfragen und Berichten, die zur Budgetsteuerung zugeordnet sind. Dazu zählen die Budgetsteuerungsstatistiken für alle Downstream-Aktivitäten oder das Anpassen von Dokumenten und Erfassungen. 
 

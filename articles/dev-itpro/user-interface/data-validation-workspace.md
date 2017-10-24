@@ -14,11 +14,11 @@ ms.search.scope:
 ms.assetid: 
 ms.search.region: Global
 ms.author: bking
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: e105c4b171979a03c20718c1fa9d558c921cd704
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 447fd87cb2f71147d7a9f6476f4ed9e12d75640a
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Sie müssen ein Datenprüfungsprojekt am oberen Rand des Arbeitsbereichs auswäh
 
 ### <a name="summary-tiles"></a>Zusammenfassungskacheln
 
-Die Kacheln **Zusammenfassung** bieten eine Übersicht über den Prozess, und Indikatoren helfen Ihnen, den Datenprüfungsprozess im Soll zu halten. Sie können alle verbleibenden Aufgaben, abgeschlossenen Aufgaben, aktuellen Aufgaben und nicht gestarteten Aufgaben für den Prozess finden. Diese Informationen sind für alle Unternehmen, die im ausgewählten Datenprüfungsprojekt enthalten sind.
+Die **Zusammenfassung** Kacheln enthalten eine Übersicht über den Prozess, und helfen, den Datenüberprüfungsprozess zu überwachen. Sie können alle verbleibenden Aufgaben, abgeschlossene Aufgaben, aktuelle Aufgaben und nicht gestartete Aufgaben für den Prozess sehen. Diese Informationen sind für alle Unternehmen, die im ausgewählten Datenprüfungsprojekt enthalten sind.
 
 ### <a name="tasks-and-status-section"></a>Aufgaben- und Statusbereich
 

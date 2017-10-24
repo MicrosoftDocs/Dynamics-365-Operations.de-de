@@ -1,6 +1,6 @@
 ---
 title: Sachkontoerfassungstypen
-description: "In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Erfassungsnamenseite, um Erfassungen einzurichten, die Sie für Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, verwenden können."
+description: "In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Erfassungsnamenseite, um Erfassungen einzurichten, die Sie für Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, verwenden können."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 624f38a7348ede3cc9e6fb7ce0b78a61b1452b61
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 6f665f34055e36775c8bb41be4aae9c4577639d7
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -31,7 +30,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Erfassungsnamenseite, um Erfassungen einzurichten, die Sie für Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, verwenden können.
+In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Erfassungsnamenseite, um Erfassungen einzurichten, die Sie für Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, verwenden können.
 
 | Journaltyp                      | Kostenträger                                                                                                                                                                                                                                                                                                                                                     | Transaktionen auf dieser Seite eingeben                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -59,7 +58,7 @@ In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerf
 | Kreditoren-Bankrimesse            | Erstellen einer Solawechsel-Rimessedatei, die an die Bank Ihrer Organisation gesendet werden kann.                                                                                                                                                                                                                                                                      | Rimesseerfassung                                             |
 | Kreditorenzahlung               | Erstellen von Buchungen für Kreditorenzahlungen.                                                                                                                                                                                                                                                                                                                    | Zahlungserfassung                                                |
 | Kreditor zieht Solawechsel       | Ziehen der Kreditorensolawechsel als Zahlungsmethode. Um diesen Erfassungstyp zu verwenden, deaktivieren Sie die **Wechselziehungserfassung bei der Buchung von Rechnungen automatisch erstellen und buchen**-Option auf der **Zahlungsmethoden – Kreditoren**-Seite.                                                                                                                                          | Erfassung zum Ziehen von Solawechseln                                   |
-| Kreditorenrechnungspoolauschluss buchen | Erstellen der Kreditorenrechnungsbuchungen, die noch nicht auf ein temporäres Eingangskonto gebucht wurden.                                                                                                                                                                                                                                                             | Kreditorenrechnungspool ohne Buchungsdetails                  |
+| Kreditorenrechnungspool ohne Buchung | Erstellen der Kreditorenrechnungsbuchungen, die noch nicht auf ein temporäres Eingangskonto gebucht wurden.                                                                                                                                                                                                                                                             | Kreditorenrechnungspool ohne Buchungsdetails                  |
 | Kreditorenrechnungspool               | Erstellen von Buchungen für den Kreditorenrechnungspool.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Buchung der Kreditorenrechnung          | Buchen von Kreditorenrechnungen, die in einer Erfassung sind.                                                                                                                                                                                                                                                                                                                 | Rechnungserfassung                                                |
 | Kreditor zieht erneut Solawechsel     | Erneutes Ziehen eines Solawechsels, der zuvor von der Bank der Organisation eingelöst wurde.                                                                                                                                                                                                                                                                      | Erfassung zum erneuten Ziehen von Solawechseln                                 |

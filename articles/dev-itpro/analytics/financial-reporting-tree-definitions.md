@@ -16,13 +16,13 @@ ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 331f3480b8454dac7da12be169ba017f36cefa06
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4708ff4427fe507fee7e1ce1ca226289ddf648cc
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,13 +33,13 @@ ms.lasthandoff: 05/25/2017
 
 Dieser Artikel enthält Informationen zu Berichtsstruktur-Definitionen. Eine Berichtsstruktur-Definition ist eine Berichtkomponente oder ein Baustein, die/der Sie dabei unterstützt, die Struktur und die Hierarchie Ihrer Organisation zu definieren.
 
-Finanzberichte unterstützen die flexible Berichterstellung, damit Änderungen einfach vorgenommen werden können, wenn sich die Geschäftsstruktur ändert. Berichte basieren auf verschiedenen Komponenten oder Bausteinen. Einer dieser Bausteine ist eine Berichtsstruktur-Definition. Die Berichtsstruktur-Definition hilft, die Struktur und die Hierarchie Ihrer Organisation zu definieren. Es ist eine dimensionsübergreifende hierarchische Struktur, die auf den dimensionalen Beziehungen in den Finanzdaten basieren. Sie stellt Informationen für alle Einheiten in der Struktur auf der Berichtseinheitenebene und auf einer Zusammenfassungsebene bereit. Berichtsstruktur-Definitionen können mit Spaltendefinitionen und Berichtsdefinitionen kombiniert werden, um eine Bausteingruppe zu erstellen, die von mehreren Unternehmen verwendet werden kann. Eine Berichtseinheit wird für jedes Feld in einem Organigramm verwendet. Eine Berichtseinheit kann eine einzelne Abteilung aus den Finanzdaten sein, oder es kann eine allgemeine Zusammenfassungseinheit sein, die Informationen aus anderen Berichtseinheiten kombiniert. Für eine Berichtsdefinition, die eine Berichtsbaumstruktur umfasst, wird ein Bericht für jede Berichtseinheit und für die zusammenfassende Ebene generiert. Alle diese Berichte verwenden die Zeilen- und Spaltendefinitionen, die in der Berichtsdefinition angegeben werden, es sei denn, die Berichtsdefinition gibt an, die Berichtstruktur der Zeilendefinition zu verwenden. Zeilen- und Spaltendefinitionen sind wichtige Komponenten im Entwurf und in der Funktion von Finanzberichten. Berichtsbaumstrukturen erhöhen die Leistung der Komponenten und unterstützen flexible Berichterstellung, wenn sich die Geschäftsstruktur ändert. Finanzberichte, die nicht auf einer Berichtstruktur basieren, verwenden nur einige der Funktionen des Finanzberichterstellung. Sie können mehrere Berichtstruktur-Definitionen mit der gleichen Zeilen- und Spaltendefinitionen verwenden, um die Daten Ihrer Organisation auf verschiedene Arten anzuzeigen.
+Finanzberichte unterstützen die flexible Berichterstellung, damit Änderungen einfach vorgenommen werden können, wenn sich die Geschäftsstruktur ändert. Berichte basieren auf verschiedenen Komponenten oder Bausteinen. Einer dieser Bausteine ist eine Berichtsstruktur-Definition. Die Berichtsstruktur-Definition hilft, die Struktur und die Hierarchie Ihrer Organisation zu definieren. Es ist eine dimensionsübergreifende hierarchische Struktur, die auf den dimensionalen Beziehungen in den Finanzdaten basieren. Sie stellt Informationen für alle Einheiten in der Struktur auf der Berichtseinheitenebene und auf einer Zusammenfassungsebene bereit. Berichtsstruktur-Definitionen können mit Spaltendefinitionen und Berichtsdefinitionen kombiniert werden, um eine Bausteingruppe zu erstellen, die von mehreren Unternehmen verwendet werden kann. Eine Berichtseinheit wird für jedes Feld in einem Organigramm verwendet. Eine Berichtseinheit kann eine einzelne Abteilung in den Finanzdaten sein oder eine Zusammenfassungseinheit einer höherer Ebene, die Informationen aus anderen Berichtseinheiten zusammenführt. Für eine Berichtsdefinition, die eine Berichtsbaumstruktur umfasst, wird ein Bericht für jede Berichtseinheit und für die zusammenfassende Ebene generiert. Alle diese Berichte verwenden die Zeilen- und Spaltendefinitionen, die in der Berichtsdefinition angegeben werden, es sei denn, die Berichtsdefinition gibt an, die Berichtstruktur der Zeilendefinition zu verwenden. Zeilen- und Spaltendefinitionen sind wichtige Komponenten im Entwurf und in der Funktion von Finanzberichten. Berichtsbaumstrukturen erhöhen die Leistung der Komponenten und unterstützen flexible Berichterstellung, wenn sich die Geschäftsstruktur ändert. Finanzberichte, die nicht auf einer Berichtstruktur basieren, verwenden nur einige der Funktionen des Finanzberichterstellung. Sie können mehrere Berichtstruktur-Definitionen mit der gleichen Zeilen- und Spaltendefinitionen verwenden, um die Daten Ihrer Organisation auf verschiedene Arten anzuzeigen.
 
 ## <a name="reporting-tree-best-practices"></a>Bewährte Methoden bei Berichtsbaumstrukturen
 Bevor Sie eine Berichtstruktur erstellen, ziehen die folgenden bewährten Methoden in Betracht:
 
 -   Bestimmen Sie zunächst, welche Berichterstellungsdimensionen die juristische Person oder das Unternehmen benötigt.
--   Berücksichtigen Sie, wie Sie Ihre Struktur eingerichtet haben, und erstellen Sie anschließend ein Organigramm Ihres Unternehmens. Das Organigramm hilft Ihnen, zu visualisieren, wie Sie die Berichtseinheiten in eine oder mehrere Berichtsbaumstrukturen gruppieren.
+-   Berücksichtigen Sie, wie Sie Ihre Struktur eingerichtet haben, und erstellen Sie anschließend ein Organigramm Ihres Unternehmens. Mit dem Organigramm können Sie sich eine bessere Vorstellung davon machen, wie die Berichtseinheiten in einer oder mehreren Berichtsbaumstrukturen gruppiert werden müssen.
 -   Erste Schritte mit der niedrigsten verfügbaren Detailebene, wie der Abteilungen und den Projekten, die in den Finanzdaten definiert werden. Fügen Sie der Detailstufe so viele Felder hinzu, wie nötig, um übergeordnete Abteilungen oder Regionen anzuzeigen. Jedes Feld stellt eine mögliche Berichtseinheit in einer beliebigen Berichtsbaumstruktur dar,die Sie selbst erstellt haben.
 -   Sie müssen sich auch für die beste Methode entscheiden, in der Sie Ihre Strukturen erstellen. Sie können einen automatischen Erstellungsprozess generieren, um eine Berichtstruktur zu erstellen, oder Sie können diese manuell erstellen. Es ist wichtig, dass Sie beide Methoden verstehen, bevor Sie Ihre Strukturen entwerfen.
 -   Sie können die Berichtseinheiten verwenden, die in Ihrem Finanzdatensystem definiert werden, um der Berichtsbaumstruktur-Definition Berichtseinheiten hinzuzufügen.
@@ -52,13 +52,13 @@ Die Berichtstruktur-Definition enthält die Spalten, die in der folgenden Tabell
 
 | Berichtsbaumstrukturspalte | Beschreibung|
 |---|---|
-| Unternehmen               | Der Name des Unternehmens für die Berichtserstellungseinheit. Der **@ANY**, der normalerweise nur der zusammengefassten Ebene zugeordnete ist, ermöglicht es allen Unternehmen, die Berichtsbaumstruktur zu verwenden. Allen untergeordneten Verzweigungen wurde ein Unternehmen zugeordnet.|
+| Unternehmen               | Der Name des Unternehmens für die Berichtserstellungseinheit. Der **@ANY**, der normalerweise nur der zusammengefassten Ebene zugeordnete ist, ermöglicht es allen Unternehmen, die Berichtsbaumstruktur zu verwenden. Allen untergeordneten Verzweigungen ist ein Unternehmen zugewiesen.|
 | Einheitenname             | Der Code, der diese Berichtserstellungseinheit in der grafischen Berichtsbaumstruktur identifiziert. Stellen Sie sicher, dass ein konsistentes und eindeutiges Kodierungssystem festgelegt ist, das für den Benutzer leicht verständlich ist. |
 | Einheitenbeschreibung      | Der Berichtseinheitentitel wird in der Kopf- oder Fußzeile des Berichts angezeigt, wenn Sie **UnitDesc** als Code auf der Registerkarte **Kopf- und Fußzeilen** eingeben. Der Titel wird in der Berichtszeilenbeschreibung angezeigt, wenn Sie **UnitDesc** in der Zelle **Beschreibung** der Zeilendefinition eingeben.|
 | Dimensionen            | Eine Berichtserstellungseinheit, die Informationen direkt aus den Finanzdaten bezieht. Sie definiert den logische Standort und die Längen für das Konto und die zugehörigen Segmente. Jede Berichtseinheitszeile muss eine Dimension in dieser Spalte enthalten. Sie können eine Dimension auch in einer zusammengefassten Einheitszeile festlegen (z. B. für die Ausgaben, die dieser Einheit direkt zugeordnet sind). Wenn Sie eine Dimension in einer zusammengefassten Einheitszeile eingeben, sollten Konten, die in den untergeordneten Einheiten verwendet werden nicht in den untergeordneten Einheiten verwendet werden. Andernfalls könnten Beträge dupliziert werden.|
-| Zeilendefinitionen       | Der Name der Zeilendefinition für die Berichtserstellungseinheit. Die gleiche Zeilendefinition wird für jede Einheit der Berichtsbaumstruktur verwendet. Wenn Sie einen Bericht generieren, wird diese Zeilendefinition für jede Berichtseinheit verwendet. Die Zeilendefinition kann mehrere Finanzdimensionsverknüpfung enthalten. Wenn eine Zeilendefinition in der Berichtstruktur angegeben ist, aktivieren Sie das Kontrollkästchen **Zeilendefinition aus Berichtstruktur verwenden** auf der Registerkarte **Bericht** der Berichtsdefinition.|
-| Zeilenverknüpfung              | Der Zeilenverknüpfung, der für die Berichtseinheit verwendet wird. Zeilenlinks werden für die Zeilendefinition definiert, um die Finanzdimensionen zu identifizieren, zu denen verknüpft werden soll.|
-| Externer Link         | Der Zeilenverknüpfung, der für diese Berichtseinheit verwendet wird. Zeilenlinks werden für die Zeilendefinition definiert, um den Bericht zu identifizieren, mit dem die Verknüpfung erstellt werden soll.|
+| Zeilendefinitionen       | Der Name der Zeilendefinition für die Berichtserstellungseinheit. Dieselbe Zeilendefinition wird für jede Einheit der Berichtsbaumstruktur verwendet. Wenn Sie einen Bericht generieren, wird diese Zeilendefinition für jede Berichtseinheit verwendet. Die Zeilendefinition kann mehrere Finanzdimensionsverknüpfung enthalten. Wenn eine Zeilendefinition in der Berichtstruktur angegeben ist, aktivieren Sie das Kontrollkästchen **Zeilendefinition aus Berichtstruktur verwenden** auf der Registerkarte **Bericht** der Berichtsdefinition.|
+| Zeilenlink              | Der Zeilenlink für die Berichtseinheit. Zeilenlinks sind für die Zeilendefinition definiert, um die Finanzdimensionen zu kennzeichnen, zu denen eine Verknüpfung hergestellt wird.|
+| Externer Link         | Der Zeilenlink für diese Berichtseinheit. Zeilenlinks werden für die Zeilendefinition definiert, um den Bericht zu identifizieren, mit dem die Verknüpfung erstellt werden soll.|
 | Externe Datei         | Der Dateipfad des Finanzbericht-Arbeitsblatts, aus dem Daten gezogen werden sollen.|
 | Seitenoptionen          | Diese Spalte steuert, ob die Details der Berichterstattungseinheit unterdrückt werden, wenn der Bericht angezeigt oder gedruckt wird.|
 | Rollup %              | Der Prozentsatz der Berichtserstellungseinheit, der der übergeordneten Einheit zugewiesen werden soll. Der Prozentsatz, den Sie in diese Spalte eingeben, gilt für jede Zeile der Zeilendefinition, bevor der Wert in der Zeile dem übergeordneten Bericht hinzugefügt wird. Wenn beispielsweise eine untergeordnete Einheit gleichmäßig zwischen zwei Abteilungen aufgeteilt werden muss, werden die Beträge in jeder Zeile mit 50 Prozent multipliziert, bevor der Wert dem Abteilungsbericht hinzugefügt werden. Eine Berichtseinheit kann keine zwei übergeordnete Einheiten haben. Um die Beträge aus einer Berichtseinheit zwei übergeordneten Einheiten zuzuweisen, erstellen Sie eine weitere Berichtseinheit mit derselben Dimension für einen Rollup der zusätzlichen 50 Prozent. Geben Sie gesamte Prozentsätze ohne Dezimalstellen ein. Beispielsweise stellt **25** eine 25 Prozent-Zuteilung zum übergeordneten Objekt dar. Wenn Sie eine Nachkommastelle angeben (**0,25**), werden dem übergeordneten Objekt 0,25 Prozent zugeordnet. Zum Verwenden eines Prozentsatzes, der unter einem Prozent liegt, können Sie die Option **Rollup zulassen&lt;1 %** in der Berichtsdefinition verwenden. Diese Option befindet sich auf der Registerkarte **Weitere Optionen** im Dialogfeld **Berichtseinstellungen**. Rufen Sie dieses Dialogfeld über die Schaltfläche **Sonstiges** auf der Registerkarte **Einstellungen** der Berichtsdefinition auf. |
@@ -119,7 +119,7 @@ Eine übergeordnete Berichtseinheit ist eine zusammengefasste Einheit, die zusam
 
 ### <a name="organize-reporting-units"></a> Organisieren von Berichtseinheiten
 
-Sie können die Organisationsstruktur einer Berichtsbaumstruktur-Definition neu anordnen, indem Sie Berichtseinheiten in der grafischer Ansicht verschieben. Sie können Berichtseinheiten auch auf einer höheren Ebene in der Berichtstruktur einstufen oder sie zu einer niedrigeren Ebene herunterstufen.
+Sie können die Organisationsstruktur einer Berichtsbaumstruktur-Definition anpassen, indem Sie in der grafischen Ansicht die Berichtseinheiten verschieben. Sie können Berichtseinheiten auch auf einer höheren Ebene in der Berichtstruktur einstufen oder sie zu einer niedrigeren Ebene herunterstufen.
 
 1.  Öffnen Sie die zu ändernde Berichtsbaumstruktur-Definition im Berichts-Designer.
 2.  Wählen Sie in der grafischen Ansicht der Berichtsbaumstruktur-Definition eine Berichtseinheit aus.
@@ -138,8 +138,8 @@ Eine Zusatztexteingabe ist eine statische Textzeichenfolge von bis zu 255 Zeiche
 
 ### <a name="remove-additional-text-from-a-reporting-unit"></a>Entfernen von zusätzlichem Text aus einer Berichtseinheit
 
-1.  Öffnen Sie die zu ändernde Berichtsbaumstruktur-Definition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle **Zusätzlicher Text** der Berichtseinheitszeile.
+1.  Öffnen Sie zur Bearbeitung die Berichtsbaumstrukturdefinition im Berichts-Designer.
+2.  Doppelklicken Sie auf die Zelle **Zusätzlicher Text** der Zeile der Berichtseinheit.
 3.  Wählen Sie im Dialogfeld **Zusätzlicher Text** den zu entfernenden Eintrag aus, und klicken Sie anschließend auf **Löschen**. Alternativ klicken Sie mit der rechten Maustaste auf den Eintrag und wählen **Ausschneiden** aus.
 4.  Klicken Sie auf **OK**.
 
@@ -148,7 +148,7 @@ Eine Zusatztexteingabe ist eine statische Textzeichenfolge von bis zu 255 Zeiche
 Sie können den Zugriff bestimmter Benutzer und Gruppen auf einer Berichtseinheit verhindern. Sie können auch Beschränkung definieren, die auf untergeordnete Einheiten der Berichtseinheit angewendet werden.
 
 1.  Öffnen Sie die zu ändernde Berichtsbaumstruktur-Definition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle **Einheitssicherheit** für die Berichtseinheitenzeile, um den Zugriff einzuschränken.
+2.  Doppelklicken Sie für die Zeile der Berichtseinheit, für die der Zugriff eingeschränkt werden soll, auf die Zelle **Einheitssicherheit** .
 3.  Klicken Sie im Dialogfeld **Einheitssicherheit** auf **Benutzer und Gruppen**.
 4.  Wählen Sie die Benutzer oder die Gruppen aus, die Zugriff auf die Berichtseinheit haben sollen, und klicken Sie anschließend auf **OK**.
 5.  Um den Zugriff auf die untergeordneten Berichtseinheiten zu beschränken, aktivieren Sie das Kontrollkästchen **Sicherheit zu untergeordneten Berichtserstellungseinheiten hinzufügen**.

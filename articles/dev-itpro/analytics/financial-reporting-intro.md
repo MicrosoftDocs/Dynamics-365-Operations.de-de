@@ -15,13 +15,13 @@ ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 4e0c984b95cd395e7ab23394b886782e55fac90f
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: de8167eeea1f4a4db764a7f6398533ec3b9f4306
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -57,12 +57,12 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 <ul>
 <li>Speichern Sie Dimensionskombinationen, und verwenden Sie die Dimensionen für weitere Berichte erneut.</li>
 <li>Steuern Sie, wie Dimensionsbeschreibungen formatiert und angezeigt werden.</li>
-<li>Geben Sie Konten oder Dimensionen an, die bei den Berichtsbausteinen ausgelassen wurden.</li>
-<li>Formatieren Sie Überschriften für rollende Planungen.</li>
+<li>Erkennen Sie Konten oder Dimensionen, die in den Berichtsbausteinen ausgelassen wurden.</li>
+<li>Überschriften für rollende Prognosen formatieren.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Finanzberichtszusammenarbeit</td>
+<td>Zusammenarbeit an Finanzberichten</td>
 <td>Die folgenden Funktionen helfen Ihnen, die Generierung und Verteilung von Berichten zu vereinfachen:
 <ul>
 <li>Planen Sie Berichte, sodass sie täglich, wöchentlich, monatlich oder jährlich automatisch generiert werden.</li>

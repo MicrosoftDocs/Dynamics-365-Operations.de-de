@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 0bbf8f979aeb8b861164e345f9e46bb396f370ce
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +41,7 @@ Sie müssen einen Abschlusszeitplan am oberen Rand des Arbeitsbereichs auswähle
 
 ### <a name="summary-tiles"></a>Zusammenfassungskacheln
 
-Die Kacheln **Zusammenfassung** geben eine Übersicht über den Prozess und Anzeigen helfen Ihnen, den Abschlussvorgang im Soll zu halten. Sie können Aufgaben sehen, die überfällig sind, die für heute verbleibend, Aufgaben die heute fällig sind, aber gesperrt sind, weil Abhängigkeiten bestehen sowie alle verbleibenden Aufgaben für den Prozess. Diese Informationen sind für alle Unternehmen, die im ausgewählten Abschlusszeitplan enthalten sind.
+Die **Zusammenfassung** Kacheln geben eine Übersicht über den Prozess und der Indikator hilft, dass Sie den Schließvorgang verfolgen können. Sie können die Aufgaben sehen, die überfällig sind, die  für verbleibenden und finden die Aufgaben, die am heutigen Tag fällig sind, jedoch aufgrund der Abhängigkeiten gesperrt wurden und alle verbleibenden Aufgaben für den Prozess. Diese Informationen sind für alle Unternehmen, die im ausgewählten Abschlusszeitplan enthalten sind.
 
 ### <a name="tasks-and-status-section"></a>Aufgaben- und Statusbereich
 
@@ -82,7 +81,7 @@ Sie verwenden Aufgabenbereiche, um die Abschlussaufgaben in logische Bereiche de
 
 ### <a name="calendars"></a>Kalender
 
-Erstellen und bearbeiten Sie Finanzabschlusskalender mithilfe der Kalenderregisterkarte.  Hier definieren Sie die Arbeitstage vor den Abschlussprozesse und diese werden verwendet, um die Abschlussaufgaben zu planen.  Hier können Sie einen neuen Kalender erstellen und die Arbeitstage angeben, die für die Aufgabenplanung verwendet werden.  Es empfiehlt sich, ein Kalender für eine lange Zeitspanne wie ein Jahr oder mehrere Jahre zu erstellen, da sie nach der Erstellung bearbeitet werden können.  Nachdem Sie die Kalender erstellt haben, klicken Sie auf die Schaltfläche "Bearbeiten", um den Kalender für bestimmte Tage, wie etwa Feiertage, zu aktualisieren.  Schließen von Aufgaben werden an den Tagen geplant, wenn der Steuerwert auf "Offen" festgelegt ist.  Wenn Abschlussaufgaben nicht an einem bestimmten Tag geplant werden sollen, sollte der Tage den Kontrollwert "Gesperrt" aufweisen.
+Sie erstellen und bearbeiten Abschlusskalender mithilfe der Registerkarte Kalender. Auf dieser Registerkarte definieren Sie die Arbeitstage für Abschlussprozesse und Sie können außerdem die Abschlussaufgaben planen.  Hier können Sie einen neuen Kalender erstellen und die Arbeitstage angeben, die für die Aufgabenplanung verwendet werden.  Es empfiehlt sich, ein Kalender für eine lange Zeitspanne wie ein Jahr oder mehrere Jahre zu erstellen, da sie nach der Erstellung bearbeitet werden können.  Nachdem Sie die Kalender erstellt haben, klicken Sie auf die Schaltfläche "Bearbeiten", um den Kalender für bestimmte Tage, wie etwa Feiertage, zu aktualisieren.  Schließen von Aufgaben werden an den Tagen geplant, wenn der Steuerwert auf "Offen" festgelegt ist.  Wenn Abschlussaufgaben nicht an einem bestimmten Tag geplant werden sollen, sollte der Tage den Kontrollwert "Gesperrt" aufweisen.
 
 ### <a name="templates"></a>Vorlagen
 

@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Zeile eines Finanzberichts angibt. Zeilendefinitionen können mit Spaltendefinitionen, Berichtsstruktur-Definitionen und Berichtsdefinitionen kombiniert werden, um eine Bausteingruppe zu erstellen, die von mehreren Unternehmen verwendet werden kann.
 
-<a name="create-a-row-definition"></a>Erstellen Sie eine Zeilendefinition.
+<a name="create-a-row-definition"></a>Erstellen einer Zeilendefinition
 -----------------------
 
 1.  Klicken Sie im Berichts-Designer im Navigationsbereich auf **Zeilendefinitionen** .
@@ -68,8 +68,8 @@ Eine Dimension stellt eine Schnittstelle von Daten und Werten dar. Sie können D
 | Mit der folgenden Option...                | Beschreibung                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dimensionen             | Das Muster, das die Dimension identifiziert, die der Zeilendefinition hinzugefügt wird. Dieses Muster enthält ein kaufmännisches Und-Zeichen (\#) oder Nummernzeichen (#) für jede Position in den Dimensionen. Verwenden Sie im Allgemeinen immer kaufmännische Und-Zeichen für die Kontodimension und immer Nummernzeichen für andere Dimensionen. |
-| Dimensionsbereichsanfang | Der erste Wert, der der Zeilendefinition von der Dimension hinzugefügt wird.                                                                                                                                                                                                                 |
-| Dimensionsbereichsende   | Der letzte Wert, der von dieser Dimension der Zeilendefinition hinzugefügt wird.                                                                                                                                                                                                                  |
+| Anfang des Dimensionsbereichs | Der erste Wert für diese Dimension, der der Zeilendefinition hinzugefügt werden soll.                                                                                                                                                                                                                 |
+| Ende des Dimensionsbereichs   | Der letzte Wert, der von dieser Dimension der Zeilendefinition hinzugefügt wird.                                                                                                                                                                                                                  |
 
 Um Dimensionen einer Zeilendefinition hinzuzufügen, führen Sie die folgenden Schritte aus.
 
@@ -93,7 +93,7 @@ Wenn Sie eine Bilanz haben, in der die Beträge gerundet werden, sind die Summen
 Um Rundung in einer Bilanz anzupassen, führen Sie die folgenden Schritte aus.
 
 1.  Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
-2.  Klicken Sie im Menü **Bearbeiten** auf **Rundungsregulierungen**.
+2.  Klicken Sie im Menü **Bearbeiten** auf **Rundungsausgleich**.
 3.  Im Dialogfeld **Rundungsregulierungen** können Sie die folgenden Werte eingeben:
     -   **Rundungsausgleichszeile** - Der Zeilencode für die Zeile, die angepasst werden soll, um die Bilanz auszugleichen.
     -   **Anlagensummenzeile** - Der Zeilencode für die Zeile in der Bilanz, die die Anlagesummen beinhaltet.
@@ -121,23 +121,23 @@ Sie können Schriftarten für Ihren Bericht erstellen und ändern. Sie können d
 <td>Erstellen eines Schriftschnitts</td>
 <td><ol>
 <li>Im Berichts-Designer im Menü <strong>Format</strong> klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
-<li>Klicken Sie im Dialogfeld <strong>Formate und Formatierung</strong> auf <strong>Neu</strong>, und geben Sie dann einen eindeutigen Namen für das neue Format ein.</li>
-<li>Treffen Sie Ihre Schriftschnittauswahl, und klicken Sie dann auf <strong>OK</strong>.</li>
+<li>Klicken Sie im Dialogfeld <strong>Formatvorlagen und Formatierung</strong> auf <strong>Neu</strong>, und geben Sie einen eindeutigen Namen für den neuen Stil ein.</li>
+<li>Wählen Sie die gewünschten Schriftoptionen aus, und klicken Sie dann auf <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Ändern eines Schriftschnitts</td>
 <td><ol>
 <li>Im Berichts-Designer im Menü <strong>Format</strong> klicken Sie auf <strong>Formate und Formatierung</strong>.</li>
-<li>Wählen Sie ein zu änderndes Format im Dialogfeld <strong>Formate und Formatierung</strong>, und klicken Sie anschließend auf <strong>Ändern</strong>.</li>
-<li>Treffen Sie Ihre Schriftschnittauswahl, und klicken Sie dann auf <strong>OK</strong>.</li>
+<li>Wählen Sie im Dialogfeld <strong>Formatvorlagen und Formatierung</strong> eine zu ändernde Formatvorlage aus, und klicken Sie dann auf <strong>Ändern</strong>.</li>
+<li>Wählen Sie die gewünschten Schriftoptionen aus, und klicken Sie dann auf <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Anwenden eines Schriftschnitts</td>
 <td><ol>
 <li>Wählen Sie im Berichts-Designer eine oder mehrere Zellen in einer Definition, einer Spaltendefinition oder in den Kopf- und Fußzeilen aus.</li>
-<li>Wählen Sie auf der Liste <strong>Stil</strong> in der Symbolleiste "Schriftschnitt" aus.</li>
+<li>Wählen Sie auf der Symbolleiste in der Liste <strong>Formatvorlage</strong> einen Schriftschnitt aus.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -149,7 +149,7 @@ Die Formatierung, die in der Zeilendefinition angegeben wird, überschreibt jede
 
 1.  Im Berichts-Designer öffnen Sie die zu ändernde Zeilendefinition.
 2.  Wählen Sie die Zellen aus, die formatiert werden sollen. Um mehrere Zellen auszuwählen, halten Sie die STRG-Taste gedrückt, während Sie die Zelle auswählen.
-3.  Klicken Sie auf die Symbolleistenschaltfläche des Formats, um es anzuwenden. Um beispielsweise eine Zeile einzurücken, wählen Sie die Zeile aus, und klicken Sie anschließend auf **Einrückung erhöhen** ![Einrückung erhöhen](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Einrückung erhöhen") in der Symbolleiste.
+3.  Klicken Sie auf die Symbolleistenschaltfläche des Formats, das übernommen werden soll. Um beispielsweise eine Zeile einzurücken, wählen Sie die Zeile aus, und klicken Sie anschließend auf **Einrückung erhöhen** ![Einrückung erhöhen](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Einrückung erhöhen") in der Symbolleiste.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Anpassen der Spalten, während des Berichtentwurfs
 
@@ -164,7 +164,7 @@ Um die Ansicht der Spalten, an denen Sie in der Zeilendefinition arbeiten, zu ve
 ### <a name="hide-columns-in-the-view-pane"></a>Ausblenden von Spalten im Ansichtsbereich
 
 1.  Im Berichts-Designer öffnen Sie die zu ändernde Zeilendefinition.
-2.  Wählen Sie die Spalte oder die Spalten aus, die minimiert werden sollen.
+2.  Wählen Sie die Spalte oder Spalten aus, die Sie minimieren möchten.
 3.  Klicken Sie mit der rechten Maustaste, und klicken Sie dann auf **Ausblenden**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Anzeigen aller ausgeblendeten Spalten im Ansichtsbereich

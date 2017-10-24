@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: de-de
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -63,7 +63,7 @@ Explizite Personalisierungen stehen die Personalisierungen, denen Sie explizit m
 
 So personalisieren Sie ein Element auf Ihrer Seite, wenn Sie nur die Bezeichnung des Elements ändern möchten, das Element ausblenden möchten, damit es nicht auf der Seite angezeigt wird (dies ändert keine Daten, es werden lediglich Ihre Informationen nicht angezeigt), die Informationen in die Zusammenfassung des Inforegisters aufnehmen möchten (wenn das Element in einem Inforegister enthalten ist), das Feld mit der Tabulatortaste überspringen möchten oder es als „Nicht bearbeiten“ markieren, damit Daten nicht geändert werden können. 
 
-Wenn Sie Elemente verschieben oder ausblenden oder mehrere Änderungen vornehmen möchten, können Sie die Personalisierungssymbolleiste verwenden, die im Eigenschaftenfenster der Elemente verfügbar ist, indem Sie **Dieses Formular personalisieren** auswählen. Die Personalisierungssymbolleiste ist auch im Aktivitätsbereich des Formulars verfügbar, unter der Personalisierungsgruppe der Registerkarte **Optionen**. Wählen Sie **Dieses Formular personalisieren**,und die Personalisierungssymbolleiste wird angezeigt. 
+Wenn Sie Elemente verschieben oder ausblenden oder mehrere Änderungen vornehmen möchten, können Sie die Personalisierungssymbolleiste verwenden, die im Eigenschaftenfenster der Elemente verfügbar ist, indem Sie **Dieses Formular personalisieren** auswählen. Die Personalisierungssymbolleiste ist auch im Aktivitätsbereich des Formulars verfügbar, unter der Registerkarte Gruppe personalisieren unter **Optionen** **Dieses Formular personalisieren** finden Sie die Personalisierungssymbolleiste. 
 
 [![Personalisierungssymbolleiste](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
@@ -90,7 +90,7 @@ Wählen Sie die Schaltfläche **Schließen**, um die Symbolleiste zu schließen 
 Bei der Personalisierungssymbolleiste ist das Speichern implizit. Ihre Personalisierungen sind sofort wirksam, wenn sie vornehmen, und es ist nicht erforderlich, auf die Schaltfläche **Speichern** zu klicken. Manchmal finden Sie ein Vorhängeschlosssymbol neben einem Element ein Tool, wenn Sie auswählen. Das bedeutet das, damit die Seite, funktioniert einwandfrei, wie Sie die Eigenschaften nicht ändern können, die dem ausgewählten zugeordnet Tool werden. Wenn die Personalisierungssymbolleiste geöffnet wird, wird die Seite nicht interaktiv. Sie können keine Daten eingeben oder Abschnitte erweitern oder reduzieren.
 
 ## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Explizite Personalisierung: Hinzufügen einer Kachel oder Liste zu einem Arbeitsbereich
-Einige Seiten mit Listen haben eine zusätzliche Personalisierungsfunktion innerhalb des Aktivitätsbereichs, unter der Personalisierensgruppe der Registerkarte „Optionen“. Wählen Sie **Zum Arbeitsbereich hinzufügen** aus, um die Dropdownliste zu öffnen, die Ihnen die Möglichkeit gibt, die Informationen in der aktuellen Liste (gefiltert und sortiert oder Standard) in einen Arbeitsbereich als Liste oder Zusammenfassungskachel anzuzeigen (diese kann verwendet werden, um die Anzahl der Artikel in der Liste anzuzeigen). 
+Einige Seiten mit Listen haben eine zusätzliche Personalisierungsfunktion, die innerhalb des Aktivitätsbereichs verfügbar ist, unter der Registerkarte "Personalisieren" unter Optionen wählen Sie aus **Zum Bereich hinzufügen**, um die Dropdownliste zu öffnen, die Ihnen die Möglichkeit gibt, die Informationen in der aktuellen (Liste gefiltert und sortiert oder Standard) in einen Arbeitsbereich als Liste oder Kachel (die verwendet werden kann, um die Anzahl der Elemente in der Liste anzeigen) anzuzeigen. 
 
 [![Zum Arbeitsbereich hinzufügen](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
 

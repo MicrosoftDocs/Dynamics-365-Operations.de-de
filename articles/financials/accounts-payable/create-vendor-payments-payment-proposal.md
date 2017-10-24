@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: aac70abc25c45ef4479425cdb648f4450d5db2dc
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e8afadb83ac60f51ba7a9bcdd0fd184058ba1ef9
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -38,7 +38,7 @@ Organisationen verwenden oft Zahlungsvorschläge, um Kreditorenzahlungen zu erst
 Die Zahlungsvorschlagsabfrage enthält verschiedene Registerkarten. Jede davon hat unterschiedliche Optionen für das Auswählen von Rechnungen, die zu zahlen sind. Die Registerkarte **Parameter** enthält Optionen, die die Mehrheit der Organisationen am häufigsten verwenden. Im Inforegister **Datensätze einbeziehen** können Sie angeben, welche Rechnungen oder Kreditoren für Zahlungen einzubeziehen sind, indem Bereiche für verschiedene Merkmale definiert werden. Wenn Sie beispielsweise nur einen bestimmten Bereich von Kreditoren zahlen möchten, können Sie einen Filter für den Kreditorenbereich definieren. Diese Funktion wird häufig verwendet, um Rechnungen für eine bestimmte Zahlungsmethode auszuwählen. Wenn Sie beispielsweise einen Filter unter **Zahlungsmethode** = **Scheck** definieren, werden nur Rechnungen ausgewählt, die dieser Zahlungsmethode entsprechen, vorausgesetzt, dass diese auch anderen Kriterien entsprechen, die in der Abfrage angegebenen sind. Die Registerkarte **Erweiterte Parameter** enthält zusätzliche Optionen, von denen einige möglicherweise für Ihre Organisation nicht relevant sind. So enthält diese Registerkarte beispielsweise die Optionen für die Bezahlung von Rechnungen für zentralisierte Zahlungen.
 
 ## <a name="parameters"></a>Parameter
--   **Wählen Sie Rechnungen nach**  – Rechnungen innerhalb des Datumsbereichs aus, der nach ** **Von-Datum** angegeben wird und **Bis-Datum** ** Felder definiert wird und nach Fälligkeitsdatum, Skontodatum oder beidem aktiviert werden kann. Wenn Sie das Skontodatum verwenden, sucht das System zuerst nach Rechnungen, die zwischen dem Von-Datum und dem Bis-Datum liegen. Das System bestimmt dann, ob die Rechnung für das Skonto berechtigt ist, indem es Sitzungsdatum verwendet, um zu überprüfen, dass das Skontodatum nicht bereits verstrichen ist.
+-   **Wählen Sie Rechnungen nach** – Rechnungen innerhalb des Datumsbereichs aus, der nach **Von-Datum** angegeben wird und **Bis-Datum** Felder definiert wird und nach Fälligkeitsdatum, Skontodatum oder beidem aktiviert werden kann. Wenn Sie das Skontodatum verwenden, sucht das System zuerst nach Rechnungen, die zwischen dem Von-Datum und dem Bis-Datum liegen. Das System bestimmt dann, ob die Rechnung für das Skonto berechtigt ist, indem es Sitzungsdatum verwendet, um zu überprüfen, dass das Skontodatum nicht bereits verstrichen ist.
 -   **Von Datum** und **Bis Datum** – Rechnungen, die ein Fälligkeitsdatum oder Skontodatum innerhalb dieses Datumsbereichs haben, werden zur Zahlung ausgewählt.
 -   **Zahlungsdatum** – Dieses wird nur verwendet, wenn das Feld **Zeitraum** für die Zahlungsmethode auf **Summe** gesetzt ist. Wenn ein Datum definiert ist, werden alle Zahlungen an diesem Datum erzeugt. Das Feld **Mindestzahlungsdatum** wird ignoriert.
 -   **Mindestzahlungsdatum** – Geben Sie das Mindestzahlungsdatum ein. Beispielsweise zeigen die Felder **Von-Datum** und **Bis Datum** einen Bereich vom 1. September bis zum 10. September anzeigen und das und das Mindestzahlungsdatum ist.am 5. September In diesem Fall haben alle Rechnungen ein Fälligkeitsdatum vom 1. September bis zum 5. September und ein Zahlungsdatum vom 5. September. Allerdings haben alle Rechnungen, die ein Fälligkeitsdatum vom 5. September bis zum 10. September, ein Zahlungsdatum, das dem Fälligkeitsdatum jeder Rechnung entspricht.

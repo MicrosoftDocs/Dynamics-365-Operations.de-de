@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
+ms.sourcegitcommit: 9036b7f9863871915f9ad39d76bf027ae4c2f4bf
+ms.openlocfilehash: aee8db8ddaeac135ed1f9d8b1b8a621609c6d358
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 10/05/2017
 
 ---
 
@@ -34,9 +34,9 @@ In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal n
 
 Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 for Finance and Operations haben. Es ermöglicht Kreditoren die Arbeit mit Bestellung, Rechnung und Lieferungsbestandsinformationen. In diesem Thema wird beschrieben, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitschnittstelle verwenden, um mit PO und Lieferungsbestand zu arbeiten. Außerdem wird beschrieben, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten. Weitere Informationen dazu, was externe Kreditoren in der Kreditorenzusammenarbeitschnittstelle tun können, finden Sie unter [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)  
 
-Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace) Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
+Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md) Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
 
-Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace) 
+Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md) 
 
 Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
 
@@ -131,7 +131,7 @@ Wenn Sie eine Bestellung ändern müssen, die bereits bestätigt wurde, können 
 
 ### <a name="cancelling-a-po"></a>Abbrechen einer Bestellung
 
-Wenn Sie eine Bestellung stornieren, wird der Status wieder zu **Genehmigt** geändert. Sie müssen sie über das Kreditorportal zurück an den Kreditor senden, sodass der Kreditor die Stornierung bestätigen oder ablehnen kann. Nachdem die Stornierung bestätigt wurde, wird die Bestellung in der Liste bestätigter Bestellungen des Kreditors als **Storniert** angezeigt.
+Wenn Sie eine Bestellung stornieren, wird der Status wieder zu **Genehmigt** geändert. Sie müssen die Bestellung zurück an den Kreditor senden, sodass der Kreditor die Stornierung bestätigen oder ablehnen kann. Nachdem die Stornierung bestätigt wurde, wird die Bestellung in der Liste bestätigter Bestellungen des Kreditors als **Storniert** angezeigt.
 
 ### <a name="adding-attachments-to-a-po"></a>Hinzufügen von Anhängen in eine Bestellung
 

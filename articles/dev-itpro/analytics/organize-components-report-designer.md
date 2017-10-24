@@ -16,13 +16,13 @@ ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a8739f426c401aacbab56179bad429a231060f57
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fade9e2acdb94daa6a908d949c578fd7ed439882
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -53,7 +53,7 @@ Sie können Berichtsdefinitionen gruppieren, um mehrere Berichte gleichzeitig zu
 
 1.  Klicken Sie im Navigationsbereich des Berichts-Designers auf **Berichtsgruppen**.
 2.  Klicken Sie im Menü **Datei** auf **Neu** &gt; **Berichtsgruppe**, um eine neue Berichtsgruppe im Viewer-Fenster öffnen. Klicken Sie alternativ auf die **Berichtsgruppe** -Schaltfläche ![Berichtsgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Berichtsgruppe") auf der Symbolleiste.
-3.  Klicken Sie auf die Registerkarte **Berichtsgruppe**. Um die Informationen zu den einzelnen Berichtsdefinitionen für die Generierung dieses Berichts zu überschreiben, aktivieren Sie das Kontrollkästchen **Überschreiben von Unternehmen, Details und Datumseinstellungen von einzelnen Berichtsdefinitionen**. Die Felder Unternehmensname, Detailebene, vorläufige Einstellungen und Datumsinformationen werden automatisch ausgefüllt, aber Sie können Aktualisierungen vornehmen.
+3.  Klicken Sie auf die Registerkarte **Gruppen-Bericht**. Um die Informationen zu den einzelnen Berichtsdefinitionen für die Generierung dieses Berichts zu überschreiben, aktivieren Sie das Kontrollkästchen **Überschreiben von Unternehmen**, Details und Datumseinstellungen von einzelnen Berichtsdefinitionen. Die Felder Unternehmensname, Detailebene, vorläufige Einstellungen und Datumsinformationen werden automatisch ausgefüllt, aber Sie können Aktualisierungen vornehmen.
 4.  Um mehrere Berichte zu generieren, die die Berichtswährung anzeigen, aktivieren Sie das Kontrollkästchen **Alle Berichtswährungen einschließen**. Es sind mehrere Ansichten verfügbar, wenn Sie den Bericht anzeigen und auf die Schaltfläche **Währung** im Web-Viewer klicken.
 5.  Klicken Sie im Feld **Berichte in Gruppe** auf **Hinzufügen**, um die Berichte zu wählen, die in die Berichtsgruppe einbezogen werden sollen. Um mehrere Berichte im Dialogfeld **Hinzufügen** auszuwählen, halten Sie STRG-Taste gedrückt, während Sie Berichte auswählen. Wenn Sie die Berichtsauswahl abgeschlossen haben, klicken Sie auf **OK**.
 6.  Klicken Sie auf **Datei** &gt; **Speichern**, um die neue Berichtsgruppe zu speichern.
@@ -106,7 +106,7 @@ In der folgenden Tabelle werden die Steuerelemente der Registerkarte **Berichtsg
 <td>Detailebene</td>
 <td>Spezifizieren Sie die für den Bericht gewünschte Detailstufe.
 <ul>
-<li><strong>Finanzen</strong>− Eine Zusammenfassung auf hoher Ebene. Sie können keine Detailinformationen zu Konten und Dimensionen durchführen, ausgenommen derer, die Sie über die Berichtstruktur hinzugefügt haben.</li>
+<li><strong>Financial</strong>− Ein übergeordneter Zusammenfassungsbericht. Sie können keine Detailinformationen zu Konten und Dimensionen durchführen, ausgenommen derer, die Sie über die Berichtstruktur hinzugefügt haben.</li>
 <li><strong>Finanzen &amp; Konto</strong>− Ein Bericht, der eine übergeordnete Zusammenfassung und Kontodetails enthält.</li>
 <li><strong>Finanzen, Konto &amp; Buchung</strong> − Ein Bericht, der eine übergeordnete Zusammenfassung und Buchungsdetails enthält.</li>
 </ul></td>
@@ -115,14 +115,14 @@ In der folgenden Tabelle werden die Steuerelemente der Registerkarte **Berichtsg
 <td>Vorläufig</td>
 <td>Spezifizieren Sie die für den Bericht gewünschten Aktivitätstypen.
 <ul>
-<li><strong>Nur gebuchte Aktivität</strong> − Umfasst nur die Buchungen und Salden, die in den Finanzdaten gebucht wurden.</li>
-<li><strong>Gebuchte und nicht gebuchte Aktivität</strong> − Umfasst alle Buchungen und Salden, die in den Finanzdaten eingegeben und gebucht wurden.</li>
-<li><strong>Nur nicht gebuchte Aktivität</strong> − Umfasst nur die Buchungen, die in den Finanzdaten eingegeben aber noch nicht gebucht wurden.</li>
+<li><strong>Nur gebuchte Aktivität</strong>− Enthält nur die Buchungen und Salden, die in den Finanzdaten gebucht wurden.</li>
+<li><strong>Gebuchte und nicht gebuchte Aktivität</strong>− Enthält alle Buchungen und Salden, die in den Finanzdaten eingegeben und gebucht wurden.</li>
+<li><strong>Nur nicht gebuchte Aktivität</strong>− Enthält nur Buchungen, die in die Finanzdaten eingegeben, aber noch nicht gebucht wurden.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Alle Berichtswährungen einschließen</td>
-<td>Alle zusätzlichen Berichtswährungen, die in Ihrem Microsoft Dynamics ERP-System konfiguriert sind, werden hier aufgeführt. Wählen Sie dieses Kontrollkästchen aus, um zusätzliche Berichte in den angegebenen Währungen zu generieren. Um diese Berichte im Web-Viewer anzuzeigen, klicken Sie auf die Schaltfläche <strong>Währung</strong> und wählen dann eine Währung aus.</td>
+<td>Alle zusätzlichen Berichtswährungen, die in Ihrem Microsoft Dynamics ERP-System konfiguriert sind, werden hier aufgeführt. Wählen Sie dieses Kontrollkästchen aus, um zusätzliche Berichte in den angegebenen Währungen zu generieren. Sie können dann im Web-Viewer angezeigt werden, indem Sie auf die Schaltfläche <strong>Währung</strong> klicken und eine Währung auswählen.</td>
 </tr>
 <tr class="even">
 <td>Nicht mit Berichtsdefinition gespeicherte Datumsinformationen</td>
@@ -144,8 +144,8 @@ Nur Einstellungen zum Standardbasiszeitraum werden mit der Berichtsdefinition ge
 <td>Berichte in Gruppe</td>
 <td>Fügen Sie Berichte in der Berichtsgruppe hinzu, entfernen Sie sie aus dieser oder sortieren Sie sie neu.
 <ul>
-<li>Um Berichtsdefinitionen zur Berichtsgruppe hinzuzufügen, doppelklicken Sie auf die Berichtsgruppe, um sie zu öffnen, und klicken dann auf <strong>Hinzufügen</strong>. Wählen Sie die in die Berichtsgruppe einzuschließenden Berichte, und klicken Sie auf <strong>OK</strong>.</li>
-<li>Zum Entfernen eines Berichts aus der Berichtsgruppe wählen Sie diesen aus und klicken dann auf <strong>Entfernen</strong>.</li>
+<li>Doppelklicken Sie zum Hinzufügen von Berichtsdefinitionen zur Berichtsgruppe auf die Berichtsgruppe, um sie zu öffnen, und klicken Sie dann auf <strong>Hinzufügen</strong>. Wählen Sie die Berichte aus, die in die Berichtsgruppe eingefügt werden sollen, und klicken Sie dann auf <strong>OK</strong>.</li>
+<li>Wählen Sie zum Entfernen eines Berichts aus der Berichtsgruppe den Bericht aus, und klicken Sie dann auf <strong>Entfernen</strong>.</li>
 <li>Um die Reihenfolge zu ändern, in der die Berichte generiert werden, wählen Sie einen Bericht in der Liste aus, und klicken anschließend auf <strong>Nach oben verschieben</strong> oder <strong>Nach unten verschieben</strong>.</li>
 </ul></td>
 </tr>

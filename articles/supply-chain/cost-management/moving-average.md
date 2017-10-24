@@ -1,7 +1,7 @@
 ---
 title: Flexibler Durchschnitt
 description: 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0018f5df3d0d2882c300b6458bfb8adfba84e2ad
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/25/2017
 Die folgenden Voraussetzungen gelten, wenn Sie flexible Durchschnittskosten als Nachkalkulationsmethode verwenden.
 1.  Richten Sie auf der Seite **Artikelmodellgruppen** eine Artikelmodellgruppe ein, bei der im Feld **Lagermodell** die Option "Gleitender Durchschnitt" ausgewählt ist. **Hinweis:** Standardmäßig, wenn "Gleitender Durchschnitt" ausgewählt ist, sind die Felder **Physischen Bestand buchen** und **Wertmäßigen Bestand buchen** ebenfalls ausgewählt. 
 
-2.  Weisen Sie auf der Seite **Buchung** Konten zu den Konten **Preisdifferenz für gleitenden Durchschnitt** sowie **Kostenneubewertung für gleitenden Durchschnitt** auf der Registerkarte **Bestand** aus. Sie verwenden das Konto **Preisdifferenz für gleitenden Durchschnitt**, wenn Kosten proportional gebucht werden müssen. Dies geschieht aufgrund eines Kostenunterschieds zwischen einem Einkaufsdokument und der Einkaufsrechnung und aufgrund eines Unterschieds zwischen der ursprünglichen Lagermenge und der aktuell verfügbaren Menge. Verwenden Sie das Konto **Kostenneubewertung für gleitenden Durchschnitt**, wenn Sie die gleitenden Durchschnittskosten für ein Produkt auf einen neuen Preis je Einheit anpassen möchten.
+2.  Auf der Seite **Buchung** weisen Sie die Konten **Preisdifferenz für flexiblen Durchschnitt** und **Neubewertung der Kosten für flexiblen Durchschnitt** Konten auf der Registerkarte **Lager** zu. Sie verwenden das Konto **Preisdifferenz für flexiblen Durchschnitt**, wenn die Kosten proportional verteilt werden müssen. Dies geschieht aufgrund eines Kostenunterschieds zwischen einem Einkaufsdokument und der Einkaufsrechnung und aufgrund eines Unterschieds zwischen der ursprünglichen Lagermenge und der aktuell verfügbaren Menge. Verwenden Sie das Konto **Kostenneubewertung für gleitenden Durchschnitt**, wenn Sie die gleitenden Durchschnittskosten für ein Produkt auf einen neuen Preis je Einheit anpassen möchten.
 3.  Weisen Sie auf der Seite **Freigegebene Produkte** die gleitende Durchschnitts-Artikelmodellgruppe dem Produkt zu. **Hinweis** Der Lagerabschlussprozess enthält nur die Buchungsperiode. Er hat keinerlei Auswirkungen auf Produkte, denen der flexible Durchschnitt als Artikelmodellgruppe zugeordnet ist.
 
 ## <a name="convert-to-the-moving-average-costing-method"></a>Umrechnen zur Nachkalkulationsmethode des gleitenden Durchschnitts

@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d3669de6314e65c78ce5d401dae2e7481ec38b68
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 03af609a9d21fc11247f247aad1ca26e3719755e
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,18 +35,18 @@ Dieser Artikel enthält eine Übersicht der Funktionen, die im Beschaffungsmodul
 Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung für Produkte und Dienste bis zur Beschaffung des Produkts, des Eingangs, der Fakturierung und der Verarbeitung der Zahlung mit Kreditoren. Beschaffungsprozesse können für bestimmte Geschäftsanforderungen konfiguriert werden, indem Einkaufsrichtlinien und Workflows definiert werden.
 
 ## <a name="identifying-a-need-for-product-and-services"></a>Identifizieren einer Anforderung für Produkte und Dienste
-Der Bedarf für Produkte oder Dienste entsteht möglicherweise aus *Anforderungen*, beispielsweise wenn ein Mitarbeiter ein Produkt benötigt. *Produktkataloge *können so eingerichtet werden, dass die Auswahl der verfügbaren Produkte, aus denen Sie auswählen, geführt wird, oder dass Produkte angefodert werden können, die noch nicht in einem Katalog bereitgestellt werden, wodurch die Einkaufsabteilung entscheiden kann, wie das Produkt beschafft werden kann.  
+Der Bedarf für Produkte oder Dienste entsteht möglicherweise aus *Anforderungen*, beispielsweise wenn ein Mitarbeiter ein Produkt benötigt. *Produktkataloge* können so eingerichtet werden, dass die Auswahl der verfügbaren Produkte, aus denen Sie auswählen, geführt wird, oder dass Produkte angefodert werden können, die noch nicht in einem Katalog bereitgestellt werden, wodurch die Einkaufsabteilung entscheiden kann, wie das Produkt beschafft werden kann.  
 
-*Ausgabenlimits *können verwendet werden, um die Ausgaben für Materialanforderungen einzuschränken, und der *Einkaufsworkflow *fügt die Option des Benötigens einer Genehmigung hinzu, bevor Sie bestellen. Es ist auch möglich, Budgetmittelzuteilung anzugeben, falls erforderlich.  
+*Ausgabenlimits* können verwendet werden, um die Ausgaben für Materialanforderungen einzuschränken, und der *Einkaufsworkflow* fügt die Option des Benötigens einer Genehmigung hinzu, bevor Sie bestellen. Es ist auch möglich, Budgetmittelzuteilung anzugeben, falls erforderlich.  
   
-Die Beschaffungsabteilung identifiziert Lieferanten für erforderliche Produkte und Dienste, und dies kann bedeuten, dass eine *Angebotsanforderung *an mehrere mögliche Lieferanten gesendet wird. Es ist möglich, die Angaben des Produkts, das angefordert wird, freizugeben, und potenzieller Kreditoren können diese Angaben sehen, um festzustellen, ob sie ein Produkt liefern können, das ihnen entspricht. Kreditoren machen dann Angebote, die durch die Beschaffungsabteilung geprüft werden, bevor der Lieferant ausgewählt wird, von dem sie beschaffen möchten.  
+Die Beschaffungsabteilung identifiziert Lieferanten für erforderliche Produkte und Dienste, und dies kann bedeuten, dass eine *Angebotsanforderung* an mehrere mögliche Lieferanten gesendet wird. Es ist möglich, die Angaben des Produkts, das angefordert wird, freizugeben, und potenzieller Kreditoren können diese Angaben sehen, um festzustellen, ob sie ein Produkt liefern können, das ihnen entspricht. Kreditoren machen dann Angebote, die durch die Beschaffungsabteilung geprüft werden, bevor der Lieferant ausgewählt wird, von dem sie beschaffen möchten.  
 
-Bestellungen beinhalten eine Option zum Senden einer *Einkaufsabfrage *an den Kreditor als Alternative zu einem umfassenderen Angebotsanforderungsprozess. Die Einkaufabfrage kann verwendet werden, um Bedingungen, wie Preise, Rabatte und Lieferdatum, für den Auftrag einzurichten. Wenn Kreditoren so eingerichtet werden, dass sie das Portal **Kreditor** verwenden können, ist die Funktion Einkaufsabfrage deaktiviert. Stattdessen wird der Auftrag im Portal**Kreditor** freigegeben, und wenn eine *Bestätigungsanforderung* gesendet wird, kann der Kreditor den Auftrag direkt bestätigen.  
+Bestellungen beinhalten eine Option zum Senden einer *Einkaufsabfrage* an den Kreditor als Alternative zu einem umfassenderen Angebotsanforderungsprozess. Die Einkaufabfrage kann verwendet werden, um Bedingungen, wie Preise, Rabatte und Lieferdatum, für den Auftrag einzurichten. Wenn Kreditoren so eingerichtet werden, dass sie das Portal **Kreditor** verwenden können, ist die Funktion Einkaufsabfrage deaktiviert. Stattdessen wird der Auftrag im Portal**Kreditor** freigegeben, und wenn eine *Bestätigungsanforderung* gesendet wird, kann der Kreditor den Auftrag direkt bestätigen.  
 
-*Lieferantenkataloge *können verwendet werden, um Informationen zum Produktsortiment zu sammeln, das Kreditoren bereitstellen können. Kreditoren können eigene Katalog veröffentlichen, sodass es einfacher ist, den Katalog aktuell zu halten. Es ist möglich, einem Produkt eine *Liste genehmigter Kreditoren* hinzuzufügen. Dies kann bei der Kreditorenauswahl helfen, wenn neue Bestellungen geöffnet werden, und verhindern, dass nicht erwünschte Kreditoren verwendet werden.
+*Lieferantenkataloge* können verwendet werden, um Informationen zum Produktsortiment zu sammeln, das Kreditoren bereitstellen können. Kreditoren können eigene Katalog veröffentlichen, sodass es einfacher ist, den Katalog aktuell zu halten. Es ist möglich, einem Produkt eine *Liste genehmigter Kreditoren* hinzuzufügen. Dies kann bei der Kreditorenauswahl helfen, wenn neue Bestellungen geöffnet werden, und verhindern, dass nicht erwünschte Kreditoren verwendet werden.
 
 ## <a name="procurement"></a>Beschaffung
-*Bestellungen *können auf mehrere unterschiedliche Arten erstellt werden, einschließlich:
+*Bestellungen* können auf mehrere unterschiedliche Arten erstellt werden, einschließlich:
 
 -   Als Ergebnis der Produktprogrammplanung, die einen Bedarf identifiziert ist, der einen Einkauf erforderlich. Bei diesem Prozess werden Artikelbuchungen generiert geplante Einkaufsbestellungen und wenn diese freigegeben werden, werden Bestellungen erzeugt.
 -   Durch das Verarbeiten von Bestellanforderungen, die in Beschaffung resultieren.
@@ -61,11 +61,11 @@ Wenn Sie eine Bestellung erstellen, werden viele der Felder mit Werten vorausgef
 
 ### <a name="prices-and-discounts"></a>Preise und Rabatte
 
-Preise und Rabatte umfassen Informationen zu Preisen, Rabatten und Rückvergütungsbedingungen, die sie anbieten. Preise und Rabatte können als *Handels**vereinbarungen* dargestellt werden. Handelsvereinbarungen stellen Kreditorenpreislisten mit Preisen oder Rabatte dar und haben einen bestimmten Satz an Daten, für die Vereinbarung gilt. Preise und Rabatte können durch *Kaufverträge *verhandelt und repräsentiert werden, mit Bedingungen, wie Zusagen, bestimmte Volumen zu kaufen, oder Geldbeträge als Vorbedingung für die vereinbarten Bedingungen. *Rückvergütungsvereinbarungen *können mit Kreditoren erstellt werden, wenn die Beschaffung von bestimmten Produkten oder Gruppen einen Rabatt vom Kreditor auslösen können, je nach Einkaufsbetrag oder Volumen.
+Preise und Rabatte umfassen Informationen zu Preisen, Rabatten und Rückvergütungsbedingungen, die sie anbieten. Preise und Rabatte können als *Handels**vereinbarungen* dargestellt werden. Handelsvereinbarungen stellen Kreditorenpreislisten mit Preisen oder Rabatte dar und haben einen bestimmten Satz an Daten, für die Vereinbarung gilt. Preise und Rabatte können durch *Kaufverträge* verhandelt und repräsentiert werden, mit Bedingungen, wie Zusagen, bestimmte Volumen zu kaufen, oder Geldbeträge als Vorbedingung für die vereinbarten Bedingungen. *Rückvergütungsvereinbarungen* können mit Kreditoren erstellt werden, wenn die Beschaffung von bestimmten Produkten oder Gruppen einen Rabatt vom Kreditor auslösen können, je nach Einkaufsbetrag oder Volumen.
 
 ### <a name="delivery-options"></a>Lieferoptionen
 
-Es gibt verschiedene Optionen für den Versandprozess, der einer Bestellung zugeordnet ist. Bestellte Produkte können in *Lieferzeitpläne* aufgeteilt werden, wobei Teile der bestellten Menge für die Lieferung an unterschiedliche Daten geplant werden können. Die Lieferung kann auch eine *Direktlieferung* enthalten, die aus einem Auftrag initiiert wird, wodurch die Generierung des Lieferscheins auf dem Auftrag zur gleichen Zeit automatisiert wird, wie der Produktzugang auf der Bestellung erfasst wird. Bestellungen können Teil einer *Intercompany-Auftragskette *sein, die auch als Intercompany-Bestellungen bezeichnet werden, in denen Produkte aus einem passenden Intercompany-Auftrag bestellt werden. In diesem Fall sind einige Schritte zwischen zwei verwandten Intercompany-Aufträgen automatisiert.
+Es gibt verschiedene Optionen für den Versandprozess, der einer Bestellung zugeordnet ist. Bestellte Produkte können in *Lieferzeitpläne* aufgeteilt werden, wobei Teile der bestellten Menge für die Lieferung an unterschiedliche Daten geplant werden können. Die Lieferung kann auch eine *Direktlieferung* enthalten, die aus einem Auftrag initiiert wird, wodurch die Generierung des Lieferscheins auf dem Auftrag zur gleichen Zeit automatisiert wird, wie der Produktzugang auf der Bestellung erfasst wird. Bestellungen können Teil einer *Intercompany-Auftragskette* sein, die auch als Intercompany-Bestellungen bezeichnet werden, in denen Produkte aus einem passenden Intercompany-Auftrag bestellt werden. In diesem Fall sind einige Schritte zwischen zwei verwandten Intercompany-Aufträgen automatisiert.
 
 ### <a name="supplementary-items"></a>Zusätzliche Artikel
 
@@ -76,17 +76,17 @@ Produkte können so eingerichtet werden, dass *zusätzliche Artikel* enthalten s
 Belastungen können einer Bestellung zugeordnet werden. Dies kann durch die Einrichtung automatischer Belastungen automatisch geschehen oder indem Sie die Belastungen manuell hinzufügen. Belastungen können dem Auftrag auf Kopfzeilenebene oder auf Auftragspositionsebene zugeordnet werden. Die Belastungsaufstellung kann auf unterschiedliche Arten eingerichtet werden. Sie können beispielsweise eine Belastung einrichten, die als Produktkosten verbucht wird. Wenn Sie dies tun, müssen die Belastungen auf Auftragspositionsebene zugeordnet werden, bevor der Auftrag bestätigt werden kann. Es gibt eine Option, die helfen kann, Belastungen aus der Auftragskopfzeile zu den Positionen zuzuweisen.
 
 ## <a name="product-receipt-and-invoicing"></a>Produktzugang und Rechnungsstellung
-Für Bestellungen, die physische Produkte enthalten, muss in der Regel eine *Eingangsregistrierung* innerhalb eines Lagerorts vorgenommen werden. Anschließend wird ein *Produktzugang *für den Auftrag erfasst. Bestellungen mit Produkten, die den Anforderungen entsprechen, werden möglicherweise so konfiguriert, dass der Mitarbeiter, der die Produkte angefordert hat, auch eine *Empfangsbestätigung* vorlegen muss.  
+Für Bestellungen, die physische Produkte enthalten, muss in der Regel eine *Eingangsregistrierung* innerhalb eines Lagerorts vorgenommen werden. Anschließend wird ein *Produktzugang* für den Auftrag erfasst. Bestellungen mit Produkten, die den Anforderungen entsprechen, werden möglicherweise so konfiguriert, dass der Mitarbeiter, der die Produkte angefordert hat, auch eine *Empfangsbestätigung* vorlegen muss.  
 
-Einige Bestellungen enthalten Produkte, die Dienste oder andere nichtphysische Produkte sind, für die keine Bestätigung im Lagerort benötigt wird. Produkte können als Dienste oder *Beschaffungskategorien *direkt auf der Bestellung für solche Aufträge verwendet werden. Bei diesen Bestellungen wird die Buchung des Produktzugangs manchmal übersprungen und die Bestellung wird direkt fakturiert, oder alternativ erfolgt die Produktzugangsregistrierung auf der Bestellung ohne eine vorherige Eingangsregistrierung.  
+Einige Bestellungen enthalten Produkte, die Dienste oder andere nichtphysische Produkte sind, für die keine Bestätigung im Lagerort benötigt wird. Produkte können als Dienste oder *Beschaffungskategorien* direkt auf der Bestellung für solche Aufträge verwendet werden. Bei diesen Bestellungen wird die Buchung des Produktzugangs manchmal übersprungen und die Bestellung wird direkt fakturiert, oder alternativ erfolgt die Produktzugangsregistrierung auf der Bestellung ohne eine vorherige Eingangsregistrierung.  
 
 Der Produktempfang kann in der Soll=Istrückmeldung für einen bestimmten Zweck resultieren. Hierzu zählen der implizite Verbrauch mit Direktlieferung, der Verbrauch in Richtung eines Projekts oder die Berechnung des Produkts als Anlage.  
 
-Wenn * Kreditorenrechnungen* vom Kreditor eingegangen sind, werden sie zuerst im *Rechnungsbuch *unabhängig von der Bestellung erfasst und später als Datensatz für die Bestellung genehmigt. Das Erfassen der Kreditorenrechnung mit der Bestellung umfasst den Abgleich des Produktzugangs mit der Rechnung.  
+Wenn *Kreditorenrechnungen* vom Kreditor eingegangen sind, werden sie zuerst im *Rechnungsbuch* unabhängig von der Bestellung erfasst und später als Datensatz für die Bestellung genehmigt. Das Erfassen der Kreditorenrechnung mit der Bestellung umfasst den Abgleich des Produktzugangs mit der Rechnung.  
 
 *Buchhaltungsverteilungen* können auf der Bestellung angegeben werden, um zu beschreiben, wie die Berechnung innerhalb des Sachkontos erfolgen soll, und können auch festlegen, wie die Budgetmittelzuteilung erfolgt, sofern diese in Ihrer Konfiguration enthalten ist.  
 
-Fakturierte Bestellungen erfassen die Verbindlichkeiten im Kreditorenkonto innerhalb der Kreditoren, von wo aus die *K*reditoren*zahlung *verarbeitet werden kann.
+Fakturierte Bestellungen erfassen die Verbindlichkeiten im Kreditorenkonto innerhalb der Kreditoren, von wo aus die *K*reditoren*zahlung* verarbeitet werden kann.
 
 ## <a name="vendor-performance"></a>Kreditorleistung
 Leistung und Prüfung des Einkaufs wird unterstützt durch *Beschaffungs- und Kreditorenberichte,* die eine Ausgabenanalyse und Kreditorenleistungsanalyse enthalten.
