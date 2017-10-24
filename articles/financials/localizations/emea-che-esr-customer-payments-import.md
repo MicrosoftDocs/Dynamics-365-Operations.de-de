@@ -17,12 +17,11 @@ ms.search.region: Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: ef6fcc07f645c4ff8c3a049120915ff411cb221a
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 03a58ff77bb2999e450468039b7d24e9d1c0165e
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -39,7 +38,7 @@ ESR ist ein elektronischer Schuldner-Service, der Zahlungsbelege verwendet, um G
 Zahlungsreferenzen sollten auf den Zahlungsbeleg gedruckt werden, nachdem sie gebucht wurden. Sie können auch die Zahlungsreferenzen auf der Seite **Rechnungserfassung** für den ausgewählten Auftrag überprüfen. Um Zahlungsreferenzen zu generieren, müssen die folgenden Einstellungen festgelegt werden.
 
 1.  Legen Sie die Bankkontoeinstellungen auf **ESR**, **BESR-ID** und **Bankleitzahl** fest.
-2.  Legt das **Nummer Zeichen für Postgirokonto** Feld auf der **Debitorenparameter** Seite der **Sachkonto und Mehrwertsteuer** Registerkarte fest. Dies definiert, wie viele Symbole vom Debitorenkonto in der Zahlungsreferenz einbezogen werden sollen.
+2.  Legt das Feld **Anzahl von Zeichen für Girokonto** auf der Seite **Debitorenparameter** auf der Registerkarte **Sachkonto und Mehrwertsteuer** fest. Dies definiert, wie viele Symbole vom Debitorenkonto in der Zahlungsreferenz einbezogen werden sollen.
 3.  Der Verkaufsrechnungsnummernkreis soll im richtigen Format (es sollte Symbole nicht anders als Ziffern haben und dieses sollen keine führende Null aufweisen) sein.
 4.  Das Format **Orange** muss für das Debitorenkonto im Feld **Auf einer Debitorenrechnung** auf der **Rechnung und Lieferung** Registerkarte angegeben werden.
 

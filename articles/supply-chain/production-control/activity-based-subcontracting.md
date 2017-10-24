@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 43c95c8ab8599a048b1c8c732d6dcac1c3e8b9e9
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 000bfcf5c3daea75fc257374dd471c62e94fbc16
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -75,7 +75,7 @@ Diese Anforderung erzwingt die Nutzung des First in, First out (FIFO)- Lagermode
 
 Um eine Verarbeitungsaktivität als Fremdarbeitsaktivität zu konfigurieren, führen Sie die folgenden Schritte aus.
 
-1.  Konfigurieren einer von weitergegebenen Arbeitsgruppe. Um eine Arbeitsgruppe als Fremdarbeit zu konfigurieren, müssen Sie eine Ressource des **Lieferanten** tpys erstellen und sie der Arbeitsgruppe (Ressourcengruppe) zuweisen. Eine Ablaufkostenkategorie des ****direkten Outsourcing** kostengruppentyps sollt der Arbeitsgruppe zugewiesen werden. Die Kostenkategorien für Einrichtung und Menge sind nicht erforderlich.
+1.  Konfigurieren einer von weitergegebenen Arbeitsgruppe. Um eine Arbeitsgruppe als Fremdarbeit zu konfigurieren, müssen Sie eine Ressource des **Lieferanten** tpys erstellen und sie der Arbeitsgruppe (Ressourcengruppe) zuweisen. Eine Ablaufkostenkategorie des **direkten Outsourcing** kostengruppentyps sollt der Arbeitsgruppe zugewiesen werden. Die Kostenkategorien für Einrichtung und Menge sind nicht erforderlich.
 2.  Nachdem eine Verarbeitungsaktivität einer von gesetzlichen Bestimmungen unterliegenden Fertigungszelle erstellt und zugeordnet ist, müssen Sie einen Service für die Aktivität konfigurieren, bevor die Produktionsflussversion aktiviert werden kann. Schließen Sie diesen Schritt auf der Seite **Aktivität** **Detail** ab. Bei Aktivitäten, die einer von gesetzlichen Bestimmungen unterliegenden Fertigungszelle zugeordnet sind, wird das **Service-Bedingungen** Inforegister angezeigt. Auf diesem Inforegister können Sie einen Standard-Service hinzufügen, der für alle Ausgabeartikel gültig ist. Wenn besondere  Ausgabeartikel verschiedene Dienstleistungen oder unterschiedliche Service-Berechnungsparameter (beispielsweise Gesamtlayout, ein anderes Service-Verhältnis) erfordern, können Sie andere Dienstleistungen der Aktivität hinzufügen.
 
 ## <a name="subcontracted-transfer-activities"></a>Weitergegebene Umlagerungsaktivitäten
@@ -91,7 +91,7 @@ Wie für Prozessaktivitäten müssen Sie einen Standard-Service für weiterverge
 Der ganze Einkaufsprozess basiert auf einer Artikelreferenz für einen Service. Diese Artikelreferenz wird in eine Maßeinheit eines Dienstes gemessen. Services werden üblicherweise entweder in Anzahl Dienstleistungen (Einheiten) oder in Zeit gemessen. Um die Service-Menge, basierend auf den erfassten Abschluss von Kanban-Einzelvorgängen zu berechnen, können die folgenden Methoden zur Verfügung gestellt werden:
 
 -   **Berechnung, die auf der Anzahl von Einzelvorgängen basiert** – Ein Kanban-Einzelvorgang entspricht *n* Service-Einheiten, unabhängig von der beschafften Produktmenge. Im Lean Manufacturing, ein Einzelvorgang entspricht einer Handhabungseinheit. Diese Berechnungsmethode betrifft alle Services, die einen Festpreis pro Handhabungseinheit haben. Daher gilt diese Methode normalerweise für Umlagerungsaktivitäten. Allerdings kann dies auch für Prozessaktivitäten gelten, die gesamte Handhabungseinheiten verarbeiten.
--   **Berechnung, die auf Grundlage der Produktmenge basiert** ** – Die Service-Menge ist relativ zu der Produktmenge, die geplant/beschafft wird. Wenn die beschaffte Produktmenge berechnet wird, können Ausschussmengen entweder einbezogen oder nicht berücksichtigt werden. Diese Berechnungsmethode gilt für alle Anfragen, in denen der Service-Preis pro Einheit des verarbeiteten Produkts ausgeglichen wird.
+-   **Berechnung, die auf Grundlage der Produktmenge basiert** – Die Service-Menge ist relativ zu der Produktmenge, die geplant/beschafft wird. Wenn die beschaffte Produktmenge berechnet wird, können Ausschussmengen entweder einbezogen oder nicht berücksichtigt werden. Diese Berechnungsmethode gilt für alle Anfragen, in denen der Service-Preis pro Einheit des verarbeiteten Produkts ausgeglichen wird.
 -   **Berechnung, die auf der Aktivitätszeit basiert** – Die theoretischen Aktivitätszeiten werden, basierend auf der Laufzeit der Aktivität, der verarbeiteten Summe der Menge und des Durchsatz-Verhältnisses des verarbeiteten Produkts berechnet. Diese Berechnungsmethode gilt für Dienste, die stundenweise bezahlt werden und Abweichungen in Zeit pro verarbeitetes Produkt aufweisen.
 
 ## <a name="cost-accounting-of-subcontracted-services"></a>Kostenbuchhaltung von Fremdarbeitservices

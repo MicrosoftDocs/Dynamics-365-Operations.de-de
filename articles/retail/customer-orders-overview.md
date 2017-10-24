@@ -18,13 +18,11 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 89e79c7227e05eec539d9bb142b8f41de092f01b
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: f68f9dce544256a2b1a9927f019a676a6845f46d
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -49,7 +47,7 @@ Nachfolgend sind einige der Parameter, die auf der Seite e **Einzelhandelsparame
 -   **Standardanzahlung in Prozent** –  Geben Sie den Betrag, den der Debitor bezahlen muss ein als eine Anzahlung, bevor ein Auftrag bestätigt werden kann. Der Standardanzahlungsbetrag wird als Prozentsatz der Summe des Auftragswerts berechnet. Abhängig von Rechten kann ein Shopmitarbeiter den Betrag überschreiben, indem er **Anzahlung überschreiben verwendet**. 
 -   **Annullierungsgebührprozentsatz** – Wenn ein Zuschlag angewendet wird, wenn ein Kundenauftrag zurückgezogen wurde, geben Sie den Betrag dieses Zuschlages an.
 -   **Annullierungsgebührcode** – Wenn ein Zuschlag angewendet wird, wenn ein Kundenauftrag zurückgezogen wird, wird diese Belastung auf einen Zuschlagscode im Auftrag angezeigt. Verwenden Sie diesen Parameter, um den Annullierungsgebührcode zu definieren.
--   **Versandkostencode** ** - Einzelhändler können eine Zuschlagsgebühr für den Versand von Waren an einen Debitor erheben. Der Betrag der Versandkosten wird unter einem Zuschlagscode im Auftrag angezeigt. Verwenden Sie diesen Parameter, um den Versandkostencode den Versandkosten im Kundenauftrag zuzuordnen.
+-   **Versandkostencode** - Einzelhändler können eine Zuschlagsgebühr für den Versand von Waren an einen Debitor erheben. Der Betrag der Versandkosten wird unter einem Zuschlagscode im Auftrag angezeigt. Verwenden Sie diesen Parameter, um den Versandkostencode den Versandkosten im Kundenauftrag zuzuordnen.
 -   **Rückerstattungsversandkosten**  – Gibt an, ob Versandkosten, die einem Kundenauftrag zugeordnet werden, rückvergütbar sind.
 -   **Maximaler Betrag ohne Genehmigung** – wenn Versandkosten rückvergütbar sind, geben den Höchstbetrag der Versandkostenrückerstattungen über Rücklieferungen anzeigen. Wenn dieser Betrag überschritten wird, ist eine Manageraußerkraftsetzung erforderlich, um die Rückerstattung fortzusetzen. Um die folgenden Szenarien zu gewährleisten, kann eine Gebührenerstattung der Versandkosten den Betrag  überschreiten, der ursprünglich geleistet wurde:
     -   Zuschläge werden auf Ebene Auftragsüberschrift angewendet und wenn eine beliebige Menge einer Produktgruppe zurückgegeben wird, kann die Gebührenerstattung für die maximalen Versandkosten, die für die Produkte und die Menge zugelassen ist nicht für alle Einzelhandelskunden gleich angewendet werden.

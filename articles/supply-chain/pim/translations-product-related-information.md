@@ -19,11 +19,11 @@ ms.search.industry: Product information
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d232473a1df0b821c6f39553ad826c61ff9ecff8
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: b2976d4fc62a71039da0bc8be5b50be92a95959c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -64,7 +64,7 @@ Gehen Sie folgendermaßen vor, um Übersetzungen für Produktattribute zu erstel
 Gehen Sie folgendermaßen vor, um Übersetzungen für Produktdimensionswerte zu erstellen:
 1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Allgemein** &gt; **Freigegebene Produkte**.
 2.  Wählen Sie eine Produkt und klicken dann auf **Produktdimension**.
-3.  Wählen Sie einen der Links für die Produktdimensionen aus: **Konfigurationen****Größen**, **Farben** oder **Stil**.
+3.  Wählen Sie einen der Links für die Produktdimensionen aus: **Konfigurationen**, **Größen**, **Farben** oder **Stil**.
 4.  Wählen Sie einen Dimensionswert aus, und klicken Sie anschließend auf **Übersetzen**.
 5.  Wählen Sie auf der Seite **Textübersetzung** im Feld **Sprache** die Sprache aus. Um weitere Sprachen hinzuzufügen, erweitern Sie das Feld **Sprache** und klicken anschließend auf **OK**.
 6.  Geben Sie in der Gruppe **Übersetzter Text** in den Feldern **Name** und **Beschreibung** die Übersetzung ein.
@@ -96,7 +96,7 @@ Ein Debitor möchte mehrere kleinere, rote T-Shirts kaufen und der Name des T-Sh
 <tr class="odd">
 <td>Um die bevorzugte Sprache eines Debitors festzulegen, führen Sie folgende Schritte aus:
 <ol>  
-<li>Klicken Sie auf <strong>Verkauf und Marketing</strong> &gt; <strong>Allgemein</strong> &gt; <strong>Kunden</strong> &gt; <strong>Alle</strong> <strong>Kunden</strong>.</li>
+<li>Klicken Sie auf <strong>Vertrieb und Marketing</strong> &gt; <strong>Allgemein</strong> &gt; <strong>Debitoren</strong> &gt; <strong>Alle</strong> <strong>Debitoren</strong>.</li>
 <li>Doppelklicken Sie auf ein Debitorenkonto, um die Seite <strong>Debitor</strong> zu öffnen. Wählen Sie auf der Registerkarte <strong>Allgemeines</strong> im Feld <strong>Sprache</strong> die gewünschte <strong>Sprache</strong> aus.</li>
 </ol></td>
 </tr>

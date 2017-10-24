@@ -1,7 +1,7 @@
 ---
 title: "Stücklistenkalkulationsgruppen"
 description: "Dieser Artikel enthält Informationen zu Herstellungskostenkalkulationsgruppen und wie man sie einrichtet. Um eine Herstellkostenkalkulation auszuführen, müssen Sie entweder Berechnungsgruppen einrichten und sie einzelnen Artikeln zuweisen oder eine Standardberechnungsgruppe festlegen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen dann auf der Seite \"Herstellkostenkalkulation\" als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3372c22d6ed90e7669f1335fdd3366b8e167ad27
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c91f7ac3ded942afd5e359b59cee2ff58256622f
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -72,13 +72,21 @@ Das Kontrollkästchen **Stücklistenauflösung beenden** wird verwendet, um anzu
 
 ### <a name="warnings"></a>Warnungen
 
-Auf dem Inforegister **Warnungen** wählen Sie die Optionen für alle Warnhinweise, die Benutzer erhalten sollen, wenn sie Herstellkostenkalkulationen verwenden. Angenommen, Sie aktivieren das Kontrollkästchen **Keine Stückliste**, erhält der Benutzer eine Warnung, wenn keine aktive Stücklistenversion für die Komponenten oder das übergeordnete Element, für das die Herstellkostenkalkulation ausgeführt wird, gefunden wird. Wenn Sie das Kontrollkästchen **Kein Arbeitsplan** aktivieren, erhalten Benutzer eine Warnung, falls keine aktive Arbeitsplanversion gefunden wird. Wenn Sie Ressourcen in Ihren Arbeitsplänen und Vorgängen verwenden, können Sie das System anweisen, diese Ressourcen zu überprüfen. Wenn dann eine Ressource nicht in jeder Zeile der aktiven Arbeitsplanversion gefunden wird, erhält der Benutzer eine Warnung. Sie können auch Verbrauch prüfen und bestätigen. Der Verbrauch ist die Menge in einem bestimmten Arbeitsplan. Normalerweise ist es die Zeit, die für einen bestimmten Vorgang in einem Produktionsprozess erforderlich ist. Sie können überprüfen, ob ein Element keinen Einstandspreis hat. Wenn kein aktiver Einstandspreis für einen Artikel vorhanden ist, werden der Herstellkostenkalkulation keine Kosten hinzugefügt. Sie können auch das Alter des Einstandspreises prüfen und bestätigen. Geben Sie beispielsweise **60** an, um festzulegen, dass der Einstandspreis pro Einheit nach 60 Tagen neu bewertet werden muss. Wenn diese Grenze erreicht ist, generiert das System eine Warnung. Beispielsweise wurde im Januar dieses Jahres ein Einstandspreis für einen Artikel eingegeben. Wenn es jetzt August ist, mehr als 60 Tage nachdem der Einstandspreis eingegeben wurde, erhält der Benutzer eine Warnung beim Ausführen der Herstellkostenkalkulation. Sei können im Feld **Minimal zulässiger Gewinnspannenbeitrag in Prozent** einen Prozentsatz eingeben. Dieser Wert gibt den Punkt an, ab dem der minimale Deckungsbeitrag nicht erfüllt ist. Wird der Deckungsbeitrag für eine bestimmte Komponente nicht erfüllt, erhält der Benutzer eine Warnung. Daher stellt dieses Feld sicher, dass die Kosten und zusätzlichen Lagerkosten,die möglicherweise für Ihre Artikel notwendig sind, nicht unterschritten werden.
-Standardeinstellungen in den Parametern für Lager- und Lagerortverwaltung.
---------------------------------------------------------------
+Auf dem Inforegister **Warnungen** wählen Sie die Optionen für alle Warnhinweise, die Benutzer erhalten sollen, wenn sie Herstellkostenkalkulationen verwenden. 
 
-Da Berechnungsgruppen erforderlich sind, um Berechnungen durchzuführen, müssen Sie in den Lagerverwaltungsparametern eine Standardberechnungsgruppe einrichten. Diese Einstellung ermöglicht Unternehmen über eine Standardkostengruppe und Gewinnvorgaben für alle Artikel zu verfügen. Werden dann für einen bestimmten Artikel spezielle Berechnungsanforderungen benötigt, kann der Benutzer diesem Artikel eine andere Berechnungsgruppe zuweisen. Normalerweise können Sie keine Berechnungsgruppen für Stücklisten-Komponentenartikel statt für Stücklistenartikel festlegen. Sollten Warnmeldungen angezeigt werden, können Berechnungsgruppen angewendet werden. Eine Berechnungsgruppe, die einem Artikel zugewiesen ist, überschreibt den Standardwert, der in den Lagerverwaltungsparametern eingerichtet ist. Der Standardparameter kann unter **Kostenmanagement** &gt; **Einrichtung der Bestandsbuchhaltungsrichtlinien** &gt; **Parameter** &gt; **Bestandsbuchhaltung**  &gt; **Berechnungsgruppe** eingerichtet werden. Wenn Sie eine Standardkonfigurationsgruppe einrichten, können Sie auch Warnbedingungen konfigurieren, die Benutzer während des Vorgangs der Stücklistenberechnung bestätigen müssen, sollte die ausgewählte Komponente Berechnungsfehler verursachen.
-Anzeigen von Warnmeldungen auf der Seite "Abschließen"
-------------------------------------------
+Angenommen, Sie aktivieren das Kontrollkästchen **Keine Stückliste**, erhält der Benutzer eine Warnung, wenn keine aktive Stücklistenversion für die Komponenten oder das übergeordnete Element, für das die Herstellkostenkalkulation ausgeführt wird, gefunden wird. Wenn Sie das Kontrollkästchen **Kein Arbeitsplan** aktivieren, erhalten Benutzer eine Warnung, falls keine aktive Arbeitsplanversion gefunden wird. Wenn Sie Ressourcen in Ihren Arbeitsplänen und Vorgängen verwenden, können Sie das System anweisen, diese Ressourcen zu überprüfen. Wenn dann eine Ressource nicht in jeder Zeile der aktiven Arbeitsplanversion gefunden wird, erhält der Benutzer eine Warnung. 
+
+Sie können auch Verbrauch prüfen und bestätigen. Der Verbrauch ist die Menge in einem bestimmten Arbeitsplan. Normalerweise ist es die Zeit, die für einen bestimmten Vorgang in einem Produktionsprozess erforderlich ist. Sie können überprüfen, ob ein Element keinen Einstandspreis hat. Wenn kein aktiver Einstandspreis für einen Artikel vorhanden ist, werden der Herstellkostenkalkulation keine Kosten hinzugefügt. 
+
+Sie können auch das Alter des Einstandspreises prüfen und bestätigen. Geben Sie beispielsweise **60** an, um festzulegen, dass der Einstandspreis pro Einheit nach 60 Tagen neu bewertet werden muss. Wenn diese Grenze erreicht ist, generiert das System eine Warnung. Beispielsweise wurde im Januar dieses Jahres ein Einstandspreis für einen Artikel eingegeben. Wenn es jetzt August ist, mehr als 60 Tage nachdem der Einstandspreis eingegeben wurde, erhält der Benutzer eine Warnung beim Ausführen der Herstellkostenkalkulation. Sei können im Feld **Minimal zulässiger Gewinnspannenbeitrag in Prozent** einen Prozentsatz eingeben. Dieser Wert gibt den Punkt an, ab dem der minimale Deckungsbeitrag nicht erfüllt ist. Wird der Deckungsbeitrag für eine bestimmte Komponente nicht erfüllt, erhält der Benutzer eine Warnung. Daher stellt dieses Feld sicher, dass die Kosten und zusätzlichen Lagerkosten,die möglicherweise für Ihre Artikel notwendig sind, nicht unterschritten werden.
+
+### <a name="default-setup-in-inventory-and-warehouse-management-parameters"></a>Standardeinstellungen in den Parametern für Lager- und Lagerortverwaltung.
+
+Da Berechnungsgruppen erforderlich sind, um Berechnungen durchzuführen, müssen Sie in den Lagerverwaltungsparametern eine Standardberechnungsgruppe einrichten. Diese Einstellung ermöglicht Unternehmen über eine Standardkostengruppe und Gewinnvorgaben für alle Artikel zu verfügen. Werden dann für einen bestimmten Artikel spezielle Berechnungsanforderungen benötigt, kann der Benutzer diesem Artikel eine andere Berechnungsgruppe zuweisen. Normalerweise können Sie keine Berechnungsgruppen für Stücklisten-Komponentenartikel statt für Stücklistenartikel festlegen. Sollten Warnmeldungen angezeigt werden, können Berechnungsgruppen angewendet werden. Eine Berechnungsgruppe, die einem Artikel zugewiesen ist, überschreibt den Standardwert, der in den Lagerverwaltungsparametern eingerichtet ist. 
+
+Der Standardparameter kann unter **Kostenmanagement** &gt; **Einrichtung der Bestandsbuchhaltungsrichtlinien** &gt; **Parameter** &gt; **Bestandsbuchhaltung**  &gt; **Berechnungsgruppe** eingerichtet werden. Wenn Sie eine Standardkonfigurationsgruppe einrichten, können Sie auch Warnbedingungen konfigurieren, die Benutzer während des Vorgangs der Stücklistenberechnung bestätigen müssen, sollte die ausgewählte Komponente Berechnungsfehler verursachen.
+
+### <a name="view-warning-messages-on-the-complete-page"></a>Anzeigen von Warnmeldungen auf der Seite "Abschließen"
 
 Eine Herstellkostenkalkulation generiert Warnmeldungen. Sie können Warnungen zum ausgewählten Artikel anzeigen. Beispielsweise erstellen Sie in Vertrieb und Marketing einen neuen Auftrag für Artikel D0001. Klicken Sie dann in der Auftragsposition im Menü **Position aktualisieren** auf **Auf Basis von Stückliste/Formel berechnen**, um Berechnungsdetails und Warnungen anzeigen. Sie können die Ergebnisse der Herstellkostenkalkulation auf der Seite **Abschliessen** anzeigen. Nur zwei der Warnbedingungen beziehen sich auf produzierte Artikel, vier der Warnbedingungen beziehen sich auf beliebige Artikel:
 -   Kennzeichnung, wenn ein produzierter Artikel über keine aktive Stückliste verfügt.

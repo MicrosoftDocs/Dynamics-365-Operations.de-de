@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
-ms.openlocfilehash: c5bb642df692451e975be74bd8aa7d856b964a68
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e5f96b3eb0df3e35486a08e55439fb59e3479fac
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -41,7 +41,7 @@ In den Produktionsszenarien, die auf Produktionsaufträgen basieren, wird Materi
 
 Um Lieferzeiten und überschüssigen Bestand zwischen den Ressourcen zu reduzieren, die von der Chargenproduktion verursacht werden, führt Lean Manufacturing Kanbanauffüllung und Supermärkte in der Fertigung und Lagerort-Wiederbeschaffung ein. Diese Funktionen unterbrechen normalerweise die Produktion von teilweise unabhängigec Kanbanzyklen. Die Auffüllung eines Kanbans für ein Halbfertigprodukt wird nicht mehr durch einen Auftrag für ein Fertigprodukt ausgelöst. 
 
-Um einen Produktions- und Kostenkontext für die verschiedenen Kanbanszenarien neu einzurichten, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, vorgeschlagen werden, wurden die aktivitätsbasierten Produktionsflüsse als Grundlage des Lean Manufacturing eingeführt. Alle Kanban-Regeln beziehen sich auf diese vordefinierte Struktur. Das aktivitätsbasierte Modell unterstützt die Einrichtung eines breiteren Bereichs von Szenarien, als frühere Versionen von Lean Manufacturing für Dynamics AX unterstützten. Jedoch fügt dieses Modell keine Komplexität für die Fertigungsbereichsarbeitskräfte hinzu, da alle Szenarien die gleiche aktivitätsbasierte Benutzeroberfläche verwenden.
+Um einen Produktions- und Kostenkontext für die verschiedenen Kanbanszenarien neu einzurichten, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, vorgeschlagen werden, wurden die aktivitätsbasierten Produktionsflüsse als Grundlage des Lean Manufacturing eingeführt. Alle Kanban-Regeln beziehen sich auf diese vordefinierte Struktur. Das aktivitätsbasierte Modell unterstützt die Einrichtung eines breiteren Bereichs von Szenarien, als frühere Versionen von Lean Manufacturing für Dynamics AX unterstützten. Jedoch fügt dieses Modell keine Komplexität für die Fertigungsbereichsarbeitskräfte hinzu, da alle Szenarien die gleiche aktivitätsbasierte Benutzeroberfläche verwenden.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halbfertigprodukte (Nicht-Stücklisten-Ebenen)
 Lean Manufacturing für Microsoft Dynamics AX integriert die Kanbans für inventarisierte Produkte und Halbfertigprodukte in einem einzigen Framework und bietet eine einheitliche Benutzerfreundlichkeit für alle Anfragen. Aufgrund dieser Architektur, müssen zusätzliche Stücklistenebenen nicht mehr erfasst werden, um die für Halbfertigprodukte zu verwendende Kanbans zu aktivieren. Diese Architektur hilft zudem dabei, Lagerbuchungen auf ein Minimum zu beschränken.

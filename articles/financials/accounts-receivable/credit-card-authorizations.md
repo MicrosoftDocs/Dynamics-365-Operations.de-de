@@ -1,6 +1,6 @@
 ---
 title: Einstellungen, Autorisierung und Erfassung von Kreditkarten
-description: "Dieser Artikel stellt eine Übersicht der Kreditkarten-Autorisierung in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, bereit. Er umfasst Informationen darüber, wie ein Zahlungsdienst eingerichtet, eine Kreditkarte einem Auftrag hinzugefügt und eine Autorisierung storniert wird."
+description: "Dieser Artikel stellt eine Übersicht der Kreditkarten-Autorisierung in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, bereit. Er umfasst Informationen darüber, wie ein Zahlungsdienst eingerichtet, eine Kreditkarte einem Auftrag hinzugefügt und eine Autorisierung storniert wird."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a5b3dc7710ebbce50366ca9299bfb30dffc03187
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: dad3964003d0be0c22b0346aba2b3319278ffaa9
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-Dieser Artikel stellt eine Übersicht der Kreditkarten-Autorisierung in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, bereit. Er umfasst Informationen darüber, wie ein Zahlungsdienst eingerichtet, eine Kreditkarte einem Auftrag hinzugefügt und eine Autorisierung storniert wird.
+Dieser Artikel stellt eine Übersicht der Kreditkarten-Autorisierung in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, bereit. Er umfasst Informationen darüber, wie ein Zahlungsdienst eingerichtet, eine Kreditkarte einem Auftrag hinzugefügt und eine Autorisierung storniert wird.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Einrichten des Kreditkartenzahlungsdienstes
 ------------------------------------------

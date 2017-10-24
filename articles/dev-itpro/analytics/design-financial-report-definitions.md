@@ -16,13 +16,13 @@ ms.custom: 59131
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 86b527b72ef0c9af71e70fe280bcdfe3992a36b1
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 96090a3ae15294d98d6207c8eb4a1e58429ca9eb
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,20 +33,20 @@ ms.lasthandoff: 05/25/2017
 
 Dieser Artikel enthält Informationen zu Berichtsdefinitionen. Eine Berichtsdefinition ist eine Berichtskomponente (oder Baustein), die eine Zeilendefinition, eine Spaltendefinition und eine optionale Berichtstruktur-Definition verwendet, um den Bericht zu erstellen. Eine Berichtsdefinition enthält auch Optionen und Einstellungen zum Anpassen eines Berichts. 
 
-Eine Berichtsdefinition ist eine Berichtskomponente (oder Baustein), die eine Zeilendefinition, eine Spaltendefinition und eine optionale Berichtstruktur-Definition verwendet, um den Bericht zu erstellen. Eine Berichtsdefinition bietet auch zusätzliche Optionen und Einstellungen, die Sie verwenden können, um einen Bericht anzupassen. Nachdem Sie Zeilendefinitionen und Spaltendefinitionen definieren, müssen Sie sie in einer Berichtsdefinition kombinieren. An diesem Punkt definieren Sie auch andere Aspekte der Definitionen wie die Detailebene und das Berichtsdatum. Sie können einen Bericht dann speichern und generieren. Die Finanzberichterstellung bietet die folgenden Detailebenen an:
+Eine Berichtsdefinition ist eine Berichtskomponente (oder Baustein), die eine Zeilendefinition, eine Spaltendefinition und eine optionale Berichtstruktur-Definition verwendet, um den Bericht zu erstellen. Zusätzlich bietet die Berichtsdefinition Optionen und Einstellungen zum Anpassen von Berichten. Nachdem Sie Zeilen- und Spaltendefinitionen festgelegt haben, müssen Sie diese zu einer Berichtsdefinition kombinieren. An diesem Punkt definieren Sie auch andere Aspekte der Definitionen wie die Detailebene und das Berichtsdatum. Sie können einen Bericht dann speichern und generieren. Die Finanzberichterstellung bietet die folgenden Detailebenen an:
 
 -   Wertmäßig
 -   Finanzen und Konto
 -   Finanzen, Konto und Transaktion
 
-Je nachdem jedoch, wie Daten im Microsoft Dynamics ERP-System gespeichert werden, können Buchungsdetails in den Berichten nicht verfügbar sein.
+Abhängig von den im Microsoft Dynamics ERP-System gespeicherten Daten sind in Berichten ggf. keine Buchungsdetails verfügbar.
 
 ## <a name="create-a-report-definition"></a>Erstellen einer Berichtsdefinition
 1.  Wählen Sie im Berichts-Designer im Menü **Datei** **Neu** und dann **Berichtsdefinition**.
 2.  Geben Sie die entsprechenden Informationen auf den Registerkarten **Bericht**, **Ausgabe und Verteilung**, **Kopf- und Fußzeilen** und **Einstellungen** an.
 
 ## <a name="contents-of-a-report-definition"></a>Inhalt einer Berichtsdefinition
-In der folgenden Tabelle werden die Registerkarten in einer Berichtsdefinition und die Art, wie die Informationen verwendet werden, beschrieben.
+In der folgenden Tabelle werden die Registerkarten in einer Berichtsdefinition und die Verwendung der Informationen beschrieben.
 
 <table>
 <colgroup>
@@ -62,23 +62,23 @@ In der folgenden Tabelle werden die Registerkarten in einer Berichtsdefinition u
 <tbody>
 <tr class="odd">
 <td>Bericht</td>
-<td>Erstellen eines Berichts, Konfigurieren eines Berichts oder Ändern eines vorhandenen Bericht.</td>
+<td>Hier können Sie einen Bericht erstellen, einen neuen Bericht konfigurieren oder einen vorhandenen Bericht ändern.</td>
 </tr>
 <tr class="even">
-<td>Ausgabe- und Verteilung</td>
-<td>Ändern Sie den Ausgabetyp und das Ziel des Berichts.</td>
+<td>Ausgabe und Verteilung</td>
+<td>Auf dieser Registerkarte können Berichtsausgabetyp und Berichtsausgabeziel geändert werden.</td>
 </tr>
 <tr class="odd">
 <td>Kopf- und Fußzeilen</td>
-<td>Definieren und formatieren Sie die Überschriften und die Fußzeilen für den Bericht. So können Sie Text oder Bilder zur Kopf- oder der Fußzeile hinzufügen. Die Finanzberichterstellung unterstützt BMP-, JPG- und .png-Dateien für Bilder. Sie können auch Autotext-Codes hinzufügen, um weitere Informationen wie einen Unternehmensnamen, Berichtsnamen oder eine Seitenzahl einzufügen.</td>
+<td>Auf dieser Registerkarte können die Kopf- und Fußzeilen des Berichts definiert und formatiert werden. So können Sie Text oder Bilder zur Kopf- oder der Fußzeile hinzufügen. Die Finanzberichterstellung unterstützt BMP-, JPG- und .png-Dateien für Bilder. Sie können auch Autotext-Codes hinzufügen, um weitere Informationen wie einen Unternehmensnamen, Berichtsnamen oder eine Seitenzahl einzufügen.</td>
 </tr>
 <tr class="even">
 <td>Einstellungen</td>
-<td>Geben Sie Berichtsdefinitionseinstellungen wie die folgenden Einstellungen an:
+<td>Geben Sie Berichtsdefinitionseinstellungen, wie die folgenden Einstellungen, an:
 <ul>
-<li>Formatierung und Rundungsbeträge</li>
-<li>Formatdetailberichte</li>
-<li>Berichtsbaumstrukturen formatieren</li>
+<li>Formatieren und Runden von Beträgen</li>
+<li>Formatieren von Detailberichten</li>
+<li>Formatieren von Berichtsbaumstrukturen</li>
 <li>Generieren eines Ausnahmeberichts</li>
 <li>Angabe zur Währungsumrechnung</li>
 <li>Details zu Zwischensummen und Filterung von Konten</li>

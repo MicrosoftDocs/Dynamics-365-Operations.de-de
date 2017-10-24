@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 12afcde947463b3abf58dea6138653a32dcda6f1
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: cd30c9278c58f8e0ca9b50f67a999708bd64c0a2
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Ein Projekt ist eine Gruppe von Aktivitäten, die vorgesehen sind, um einen Serv
 ## <a name="projects-across-industries"></a>Projekte in Branchen
 Die Projektverwaltungs- und Buchhaltungsfunktionen kann in mehreren Branchen, wie in der folgenden Abbildung dargestellt, verwendet werden. [![Projekte in Branchen](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-In einem Callcenter kann ein Ticket verwendet werden, um die Gruppe von Aktivitäten zu beschreiben, die erforderlich sind, um einen Anruf aufzulösen. Beratungsfirmen. z. B. Management oder technische Beratungsunternehmen oder Werbeagenturen, finden ihre Aktivitäten als Projekte anzeigen. Im Marketing stellt eine Kampagne einen Satz Arbeit dar, der geliefert werden muss. In der projektbasierten Fertigung besteht ein Produktionsauftrag aus verschiedene Arbeit zu, die ausgeführt werden muss, um mehrere fertige Artikel zu erzeugen. Welche Bezeichnung auch verwendet wird, die Projekte beinhalten Ressourcen, Zeitpläne und Kosten. Die Projektverwaltungs- und Buchhaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, können bei der Planung, Durchführung und Analyse dieser Projekte helfen.
+In einem Callcenter kann ein Ticket verwendet werden, um die Gruppe von Aktivitäten zu beschreiben, die erforderlich sind, um einen Anruf aufzulösen. Beratungsfirmen. z. B. Management oder technische Beratungsunternehmen oder Werbeagenturen, finden ihre Aktivitäten als Projekte anzeigen. Im Marketing stellt eine Kampagne einen Satz Arbeit dar, der geliefert werden muss. In der projektbasierten Fertigung besteht ein Produktionsauftrag aus verschiedene Arbeit zu, die ausgeführt werden muss, um mehrere fertige Artikel zu erzeugen. Welche Bezeichnung auch verwendet wird, die Projekte beinhalten Ressourcen, Zeitpläne und Kosten. Die Projektverwaltungs- und Buchhaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, können bei der Planung, Durchführung und Analyse dieser Projekte helfen.
 
 ## <a name="project-phases"></a>Projektphasen
 Obwohl das folgenden Ablaufdiagramm für externe Projekte oder Projekte, die für einen oder mehrere Kunden durchgeführt werden gedacht ist, finden die Funktionen auch auf interne kostenbasierte Projekte Anwendung. 

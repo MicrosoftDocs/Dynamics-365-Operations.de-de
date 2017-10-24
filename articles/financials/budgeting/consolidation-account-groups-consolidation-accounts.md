@@ -1,6 +1,6 @@
 ---
 title: "Erstellen von Konsolidierungskontengruppen und zusätzlicher Konsolidierungskonten"
-description: "Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskonten und erläutert, wie sie in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden."
+description: "Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskonten und erläutert, wie sie in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden."
 author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
-ms.openlocfilehash: 3c08e48b22f964c3f643c5ddc4ecd687502d7fda
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: eb69b8def1d0a4fc296ccf44490af6c70591cb7b
 ms.contentlocale: de-de
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/01/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskonten und erläutert, wie sie in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden.
+Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskonten und erläutert, wie sie in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden.
 
 <a name="consolidation-account-groups"></a>Konsolidierungskontengruppen
 ----------------------------

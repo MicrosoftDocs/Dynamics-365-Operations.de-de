@@ -18,11 +18,11 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4ab38cd1865a9329d785ed406f24e113c1a0e495
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c616637922e617661482875d78531ea79fda4407
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,10 +42,10 @@ Einige Einzelvorgangsdetails, wie die Position, Typ und Funktion, sind Datum-eff
 ## <a name="job-titles"></a>Stellenbezeichnungen
 Vor der Erstellung von Stellen sind zugehörige Stellenbezeichnungen einzurichten. Positionen erben die Stellenbezeichnungen von den Stellen, denen die Positionen zugeordnet sind. 
 
-Verwalten Sie Positionen mithilfe der **Titel**-Seite, die Sie öffnen können, indem Sie die Suchfunktion verwenden. Auf der Titel **- Seite geben Sie die Positionen ein, die Sie einplanen und für die Einzelvorgänge verwenden möchten.
+Verwalten Sie Positionen mithilfe der **Titel**-Seite, die Sie öffnen können, indem Sie die Suchfunktion verwenden. Auf der **Titel** Seite geben Sie die Positionen ein, die Sie einplanen und für die Einzelvorgänge verwenden möchten.
 
 ## <a name="job-types"></a>Stellentypen
-Verwenden Sie Stellentypen als Gruppe, um ähnliche Stellen in Kategorien zu klassifizieren. Stellentypen sind nicht erforderlich. Planen Sie jedoch, Stellentypen zur Einrichtung von Berechtigungsregeln für die Vergütungsverwaltung zu verwenden, richten Sie vor der Einrichtung von Stellen zunächst Stellentypen ein. Beispiele für Stellentypen sind Voll- und Teilzeit oder festes Salär und Stundenlohn. Verwalten Sie Stellentypen mithilfe der Seite **Stellenarten**. Geben Sie auf der Seite **Stellenarten** einen Namen und eine kurze Beschreibung des Positionstyps ein. Wählen Sie im Feld **Status befreit****eine der folgenden Optionen aus, um den Ausnahmezustand des Fair Labor Standards Act (FLSA) für Stellen anzugeben, die zu folgenden Stellenarten gehören:
+Verwenden Sie Stellentypen als Gruppe, um ähnliche Stellen in Kategorien zu klassifizieren. Stellentypen sind nicht erforderlich. Planen Sie jedoch, Stellentypen zur Einrichtung von Berechtigungsregeln für die Vergütungsverwaltung zu verwenden, richten Sie vor der Einrichtung von Stellen zunächst Stellentypen ein. Beispiele für Stellentypen sind Voll- und Teilzeit oder festes Salär und Stundenlohn. Verwalten Sie Stellentypen mithilfe der Seite **Stellenarten**. Geben Sie auf der Seite **Stellenarten** einen Namen und eine kurze Beschreibung des Positionstyps ein. Wählen Sie im Feld **Status befreit** eine der folgenden Optionen aus, um den Ausnahmezustand des Fair Labor Standards Act (FLSA) für Stellen anzugeben, die zu folgenden Stellenarten gehören:
 
 -   **Befreit** – – Stellen sind gemäß dem FLSA-Gesetz von Überstunden befreit.
 -   **Nicht Befreit** – – Stellen sind gemäß dem FLSA-Gesetz nicht von Überstunden befreit.

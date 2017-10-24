@@ -16,13 +16,13 @@ ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 5c09b1fc061f95cd78e9f18c2bdf846fdbfc7cf1
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -40,7 +40,7 @@ Die Designphilosophie hinter dem Finanzberichtdesigner ist, Informationen in kle
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Zeilendefinition            | Eine Zeilendefinition definiert die beschreibenden Positionen (z. B. Löhne oder Verkäufe), in einem Bericht. Sie listet auch Segmentwerte oder Dimensionen auf, die die Werte für jeden Positionsartikel enthalten und schließt Zeilenformatierung und Berechnungen ein.                                                    | [Zeilendefinitionen](row-definitions-financial-reporting.md)                       |
 | Spaltendefinition         | Eine Spaltendefinition definiert die Periode, die verwendet werden soll, wenn Daten aus den Finanzdimensionen extrahiert werden. Sie umfasst auch Spaltenformatierung und Berechnungen.                                                                                                                                 | [Spaltendefinitionen](column-definitions-financial-reports.md)         |
-| Berichtsbaumstruktur-Definition | Eine Berichtsbaumstruktur-Definition ähnelt einem Organigramm. Sie enthält einzelne Berichtseinheiten, die jedes Feld im Diagramm darstellen. Die Einheiten können entweder einzelne Abteilungen aus den Finanzdaten oder Einheiten auf einer höheren Ebene sein, die Daten aus anderen Berichtseinheiten zusammenfassen. | [Berichtsbaumstruktur-Definitionen](financial-reporting-tree-definitions.md) |
+| Berichtsbaumstruktur-Definition | Eine Berichtsbaumstruktur-Definition ähnelt einem Organigramm. Sie enthält einzelne Berichtseinheiten, die jedes Feld im Diagramm darstellen. Die Einheiten können entweder einzelne Abteilungen aus den Finanzdaten oder ranghöhere Einheiten sein, die Daten aus anderen Berichtseinheiten zusammenfassen. | [Berichtsbaumstruktur-Definitionen](financial-reporting-tree-definitions.md) |
 | Berichtsdefinition         | Eine Berichtsdefinition verwendet eine Zeilendefinition, eine Spaltendefinition und eine optionale Berichtsbaumstruktur-Definition, um den Bericht zu erstellen. Sie bietet auch zusätzliche Optionen und Einstellungen, die Sie verwenden können, um einen Bericht anzupassen.                                                                    | [Berichtsdefinition](design-financial-report-definitions.md)                  |
 
 Wenn das Entwerfen von Berichten neu für Sie ist, ist es hilfreich, den Berichts-Assistenten zu verwenden, um schnell eine Berichtsdefinition zu erstellen, die Sie später anpassen können. Wenn Sie Erfahrung im Entwerfen von Berichten haben und mehr Flexibilität in der Berichtserstellung möchten, können Sie neue oder vorhandene Bausteine kombinieren, um eine neue Berichtsdefinition zu erstellen. Sie müssen nicht alle verfügbaren Berichtsdefinitionsoptionen vollständig verstehen, um Qualitätsberichte zu erzeugen. Während Sie mit dem Entwerfen von Berichten vertraut sind, können Sie Ihre Berichtsdefinitionen erweitern, um weitere erweiterte Funktionalität nutzen zu können. Nachdem Sie einen einfachen Bericht erstellt haben, können Sie die Berichtsdefinition und alle der Bausteine in der Berichtsdefinition anpassen.
@@ -79,7 +79,7 @@ Bausteine sind die Zeilendefinitionen, Spaltendefinitionen, Berichtsbaumstruktur
 
 Nachdem Sie ein Bausteingruppe erstellt haben, muss sie mindestens einem Unternehmen zugewiesen werden. Sie können nun Berichts-, Zeilen-, Spalten- und Berichtsstruktur-Definitionen erstellen und in der Bausteingruppe speichern. Sie müssen alle Bausteine schließen, bevor Sie das folgende Verfahren beginnen.
 1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Unternehmen**.
-2.  Wählen Sie im Dialogfeld **Unternehmen** das Unternehmen aus, dem Sie eine Bausteingruppe zuweisen.
+2.  Wählen Sie im Dialogfeld **Unternehmen** das Unternehmen aus, dem Sie eine Bausteingruppe zuweisen möchten.
 3.  Klicken Sie auf **Ändern**.
 4.  Wählen Sie im Dialogfeld **Unternehmen ändern** im Feld **Bausteingruppe** die Bausteingruppe aus, die dem Unternehmen zugewiesen wird, oder klicken Sie auf **Neu**, um eine Bausteingruppe zu erstellen.
 5.  Klicken Sie auf **OK**, um die neue Bausteingruppe zuzuweisen.
@@ -106,10 +106,10 @@ Sie können eine vorhandene Bausteingruppe unter einen neuen Namen speichern. An
 
 Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren. Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Bausteingruppen oder Finance and Operations-Installationen kopieren. Der Berichtsdesigner umfasst die referenzierten Schriftschnitte und Dimensionssätze mit der Bausteingruppe.
 1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Bausteingruppen**.
-2.  Wählen Sie im Dialogfeld **Baustein-Gruppen** die Bausteingruppe aus, die exportiert werden soll, und klicken Sie auf **Exportieren**.
+2.  Wählen Sie im Dialogfeld **Bausteingruppen** die Bausteingruppe aus, die exportiert werden soll, und klicken Sie dann auf **Exportieren**.
 3.  Wählen Sie im Dialogfeld **Exportieren** die Berichtsdefinitionen aus, die exportiert werden soll:
     -   Um alle Ihre Berichtsdefinitionen und die zugeordneten Bausteine zu exportieren, klicken Sie auf **Alles auswählen**.
-    -   Um bestimmte Berichte, Zeilen, Spalten, Strukturen oder Dimensionssätze zu exportieren, klicken Sie auf die entsprechende Registerkarte und wählen die Artikel aus, die exportiert werden sollen. Halten Sie die STRG-Taste gedrückt, um mehrere Artikel in einer Registerkarte auszuwählen. **Hinweis**: Wenn Sie Berichte zum Exportieren auswählen, werden die zugeordneten Zeilen, Spalten, Strukturen und Dimensionssätze ausgewählt.
+    -   Um bestimmte Berichte, Zeilen, Spalten, Strukturen oder Dimensionssätze zu exportieren, klicken Sie auf die entsprechende Registerkarte und wählen die Artikel aus, die exportiert werden sollen. Drücken und halten Sie die STRG-Taste gedrückt, um mehrere Elemente auf einer Registerkarte auszuwählen. **Hinweis:**Wenn Sie Berichte für den Export auswählen, werden die zugeordneten Zeilen, Spalten, Strukturen und Dimensionssätze ausgewählt.
 
 4.  Wenn Sie die Artikel ausgewählt haben, die Sie exportieren möchten, klicken Sie auf **Exportieren**.
 5.  Wählen Sie im Dialogfeld **Speichern unter** einen Speicherort aus, an den die Bausteingruppe exportiert wird.
@@ -120,8 +120,8 @@ Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer
 
 Sie können eine Bausteingruppe in eine bereits bestehende Bausteingruppe importieren oder eine neue Bausteingruppe für die Daten erstellen. Alle importierten Bausteingruppen behalten ihre ursprünglichen Schriftarten und Unternehmensreferenzen bei und enthalten die entsprechenden Dimensionssätze.
 1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Bausteingruppen**.
-2.  Wählen Sie im Dialogfeld **Baustein-Gruppen** die Bausteingruppe aus, in die eine Bausteingruppe importiert werden soll, und klicken Sie auf **Importieren**.
-3.  Wählen Sie im Dialogfeld **Öffnen** die Bausteingruppe aus, die importiert werden soll, und klicken Sie auf **Öffnen**.
+2.  Wählen Sie im Dialogfeld **Bausteingruppen** den Baustein aus, in den Sie eine Bausteingruppe importieren möchten, und klicken Sie dann auf **Importieren**.
+3.  Wählen Sie im Dialogfeld **Öffnen** die zu importierende Bausteingruppe aus, und klicken Sie dann auf **Öffnen**.
 4.  Wählen Sie im Dialogfeld **Importieren** die Berichtsdefinitionen aus, die importiert werden soll:
     -   Um alle Berichtsdefinitionen und die unterstützenden Bausteine zu importieren, klicken Sie auf **Alles auswählen**.
     -   Um bestimmte Berichte, Zeilen, Spalten, Baumstrukturen oder Dimensionssätze zu importieren, wählen Sie die Berichte, Zeilen, Spalten, Baumstrukturen oder Dimensionssätze aus, die importiert werden sollen.
@@ -130,9 +130,9 @@ Sie können eine Bausteingruppe in eine bereits bestehende Bausteingruppe import
 
 ### <a name="undo-a-checkout-of-a-building-block"></a>Das Auschecken eines Bausteins rückgängig machen
 
-Wenn Sie einen Baustein öffnen, können andere Benutzer auf diesen Baustein nur im schreibgeschützten Modus zugreifen. Manchmal vergisst ein Benutzer, einen Baustein zu schließen oder schaltet das System ab, ohne den Baustein zu schließen. Dadurch bleibt der Baustein ausgecheckt und kein anderer Benutzer kann ihn öffnen. In diesen Fällen kann ein Finanzbericht-Administrator das Dialogfeld **Ausgecheckte Elemente** verwenden, um Bausteine einzuchecken, die ein Benutzer in einem ausgecheckten Zustand zurückgelassen hat. **Hinweis**: Sie müssen die Administrator-Rolle haben, um Bausteine vom Dialogfeld **Ausgecheckte Elemente** einzuchecken.
+Wenn Sie einen Baustein öffnen, können andere Benutzer auf diesen Baustein nur im schreibgeschützten Modus zugreifen. Manchmal vergisst ein Benutzer, einen Baustein zu schließen oder schaltet das System ab, ohne den Baustein zu schließen. Dadurch bleibt der Baustein ausgecheckt und kein anderer Benutzer kann ihn öffnen. In solchen Fällen kann ein Rechnungslegungsadministrator das **Ausgecheckte Elemente** verwenden, um Bausteine einzuchecken, die Benutzer links augescheckt haben. **Hinweis:** Sie müssen die Rolle eines Administrators innehaben, um Bausteine einzuchecken, indem Sie das Dialogfeld **Ausgecheckte Elemente** verwenden.
 1.  Klicken Sie im Berichts-Designer im Menü **Extras** auf **Ausgecheckte Elemente**.
-2.  Wählen Sie im Dialogfeld **Ausgecheckte Elemente** die Option **Elemente aller Benutzer anzeigen** aus. Die Liste wird aktualisiert, um alle Bausteine anzuzeigen, die ausgecheckt sind, sowie die Benutzer, die sie ausgecheckt haben.
+2.  Aktivieren Sie im Dialogfeld **Ausgecheckte Elemente** das Kontrollkästchen **Elemente aller Benutzer anzeigen**. Die Liste wird aktualisiert und zeigt alle ausgecheckten Bausteine sowie die Benutzer an, die sie ausgecheckt haben.
 3.  Wählen Sie einen Baustein aus, und klicken Sie anschließend **Auschecken rückgängig machen**.
 4.  Klicken auf **Ja**, um den Bausteins einzuchecken.
 

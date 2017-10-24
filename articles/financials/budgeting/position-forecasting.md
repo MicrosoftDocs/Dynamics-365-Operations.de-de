@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9c0ae4ed27578301573bead17ff2175bb9042036
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -131,7 +130,7 @@ Die Funktion **In Szenario kopieren** stellt diese Funktionalität bereit. Beach
 
 ### <a name="modifying-forecast-positions"></a>Ändern von Planungspositionen
 
-Änderungen, die an Planungspositionen vorgenommen werden, sind auf diese Planungspositionen beschränkt. Die Änderungen wirken sich nicht auf die Positionsdatensätze in der Personalverwaltung aus. Die meisten Änderungen werden auf die Planungsposition beschränkt, die bearbeitet wird. Das bedeutet, die Änderungen sind spezifisch für den Budgetplanungsprozess und das Budgetplanszenario, die zugewiesen werden. Ausnahmen sind Änderungen an den Feldern, die für die Position für Prozesse und Szenarien freigegeben werden. Diese Felder enthalten die Felder auf der Registerkarte **Allgemein** und der Registerkarte  **Finanzdimensionen**. Wenn diese Felder geändert werden, gelten die neuen Werte für die Position in allen Budgetplanungsszenarien. Daher können Sie mit diesen Feldern schnell alle Versionen aktualisieren.
+Änderungen, die an Planungspositionen vorgenommen werden, sind auf diese Planungspositionen beschränkt. Die Änderungen wirken sich nicht auf die Positionsdatensätze in der Personalverwaltung aus. Die meisten Änderungen werden auf die Planungsposition beschränkt, die bearbeitet wird. Das bedeutet, die Änderungen sind spezifisch für den Budgetplanungsprozess und das Budgetplanszenario, die zugewiesen werden. Ausnahmen sind Änderungen an den Feldern, die für die Position für Prozesse und Szenarien freigegeben werden. Diese Felder enthalten die Felder auf der Registerkarte **Allgemeines** und der Registerkarte **Finanzdimensionen** . Wenn diese Felder geändert werden, gelten die neuen Werte für die Position in allen Budgetplanungsszenarien. Daher können Sie mit diesen Feldern schnell alle Versionen aktualisieren.
 
 #### <a name="budget-cost-elements"></a>Budgetkostenelemente
 

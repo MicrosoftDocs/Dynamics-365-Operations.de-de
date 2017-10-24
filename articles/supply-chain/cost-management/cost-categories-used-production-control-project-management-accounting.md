@@ -1,7 +1,7 @@
 ---
 title: Kostenkategorien, die in der Produktionssteuerung und in der Projektverwaltungsbuchhaltung verwendet werden
 description: "Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. Dieser Artikel bietet Informationen zu den Kostenkategorien, die Sie für diese Arten von Produktionsarbeiten für Produktion und Projektzwecke definieren müssen."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: cfdd58a0-8afa-4a6f-a208-a76e2c162429
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 712406f1a47d3b0b6b8302cd7337a594a3818f95
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 1fcc7914f2bb283a746b5e10993f91f949818473
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -34,7 +34,9 @@ ms.lasthandoff: 05/25/2017
 
 Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. Dieser Artikel bietet Informationen zu den Kostenkategorien, die Sie für diese Arten von Produktionsarbeiten für Produktion und Projektzwecke definieren müssen.
 
-Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. In diesem Fall ist eine Kostenkategorie für die Produktion und die Projektzwecke erforderlich. Wenn eine Kostenkategorie in der Produktion und in Projekten verwendet werdeb, müssen zusätzliche, projektbezogene Informationen definiert werden. So können sich beispielsweise die Stundenkosten, die Projekten zugeordnet sind, von den Stundenkosten für die Produktion unterscheiden. Verwenden Sie die Seite **Kostenkategorien**, um eine Kostenkategorie zu definieren, die in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung verwendet wird. **Hinweis:** Die Kostenrechnung enthält zwar die Seite **Projektkategorien**, diese steht jedoch in keinerlei Zusammenhang mit den in diesem Thema beschriebenen Funktionen. Wenn Sie eine Kostenkategorie in Projekten verwenden, hat die Seite **Kostenkategorien** zusätzliche Registerkarten, die zusätzliche projektbezogene Informationen anzeigen. Zu diesen Informationen gehören die Kategoriegruppe, ein Abrechnungscode und Sachkonten, die der Kostenkategorie zugewiesen werden.
+Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. In diesem Fall ist eine Kostenkategorie für die Produktion und die Projektzwecke erforderlich. Wenn eine Kostenkategorie in der Produktion und in Projekten verwendet werdeb, müssen zusätzliche, projektbezogene Informationen definiert werden. So können sich beispielsweise die Stundenkosten, die Projekten zugeordnet sind, von den Stundenkosten für die Produktion unterscheiden. Verwenden Sie die Seite **Kostenkategorien**, um eine Kostenkategorie zu definieren, die in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung verwendet wird. 
+
+**Hinweis:** Die Kostenrechnung enthält zwar die Seite **Projektkategorien**, diese steht jedoch in keinerlei Zusammenhang mit den in diesem Thema beschriebenen Funktionen. Wenn Sie eine Kostenkategorie in Projekten verwenden, hat die Seite **Kostenkategorien** zusätzliche Registerkarten, die zusätzliche projektbezogene Informationen anzeigen. Zu diesen Informationen gehören die Kategoriegruppe, ein Abrechnungscode und Sachkonten, die der Kostenkategorie zugewiesen werden.
 
 -   Die Kostenkategorie muss einer Kategoriegruppe zugewiesen werden, in der der Buchungstyp **Stunden** unterstützt wird.
 -   Die Abrechnungscodes geben Standardinformationen an, auf welche Weise gemeldete Zeiten für ein Projekt in Rechnung gestellt werden.

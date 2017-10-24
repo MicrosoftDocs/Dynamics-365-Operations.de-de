@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 721c5851cd399398a8dcec5ae110b97a4f17ae0a
+ms.sourcegitcommit: 25a6f326c57e84d6a7c356ac5407be7ed3095f83
+ms.openlocfilehash: 5edc6f0b2240e9dd2d3b72a13f35e96f016aa013
 ms.contentlocale: de-de
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/04/2017
 
 ---
 
@@ -87,7 +87,7 @@ Die tatsächlichen Hardware-Anforderungen sind unterschiedlich, basierend auf de
 - Die Anzahl der gleichzeitigen Benutzer.
 
 ## <a name="minimum-infrastructure-requirements"></a>Minimale Infrastrukturanforderungen
-Finance and Operations (lokal) verwendet Service Fabric, um den AOS, die Charge, die Datenverwaltung, den Management Reporter und die Umgebungsorchestratordienste zu hosten. Microsoft SQL Server Reporting Services (SSRS) werden nicht im Service Fabric-Cluster gehostet.
+Finance and Operations (lokal) verwendet Service Fabric, um den AOS, die Charge, die Datenverwaltung, den Management Reporter und die Umgebungsorchestratordienste zu hosten. 
 
 SQL Server muss in einem HADRON-Setup mit hoher Verfügbarkeit eingerichtet sein, das über mindestens zwei Knoten für die Produktionsverwendung verfügt.
 
@@ -130,9 +130,9 @@ Die folgende Tabelle führt die Anzahl der Prozessoren und den Umfang des Arbeit
 
 \* Die Nummern in dieser Tabelle werden von unseren Vorschaukunden geprüft und möglicherweise auf Basis der Feedbacks jener Debitoren angepasst werden.
 
-\*\*Orchestrator wird als Primärknotentyp festgelegt und wird auch verwendet, um die Service Fabric-Dienste auszuführen.
+\*\* Orchestrator wird als Primärknotentyp festgelegt und wird auch verwendet, um die Service Fabric-Dienste auszuführen.
 
-**Anfangsschätzungen für den Backend-SQL-Servver und  AD DS**
+**Anfangsschätzungen für den Backend-SQL-Servver und AD DS**
 
 <table>
 <thead>
@@ -181,7 +181,7 @@ Die folgende Tabelle führt die Anzahl der Prozessoren und den Umfang des Arbeit
 </tbody>
 </table>
 
-\*SQL Server-Größen sind stark von Arbeitsauslastungen abhängig. Weitere Informationen finden Sie im Abschnitt [Hardwaregrößenanpassung für lokale-Umgebungen](hardware-sizing-on-premises-environments.md).
+\* SQL Server-Größen sind stark von Arbeitsauslastungen abhängig. Weitere Informationen finden Sie im Abschnitt [Hardwaregrößenanpassung für lokale-Umgebungen](hardware-sizing-on-premises-environments.md).
 
 ## <a name="storage"></a>Lager
 
@@ -225,6 +225,12 @@ In der folgenden Tabelle werden die SQL Server-Versionen aufgeführt, die für d
 |------------------------------------------------------------------|-------|
 | Microsoft SQL Server 2016 Standard Edition oder Enterprise Edition | Informationen zu den Hardwareanforderungen für SQL Server 2016 finden Sie unter [Hardware- und Softwareanforderungen zum Einrichten von SQL Server 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
 
+## <a name="software-requirements-for-application-object-server-aos"></a>Softwareanforderungen für Application Object Server (AOS) 
+- SQL Server Integration Services (SSIS)
+
+## <a name="software-requirements-for-reporting-server-bi"></a>Softwareanforderungen für Berichtsserver (BI)
+- SQL Server Reporting Services (SSRS)
+
 ## <a name="software-requirements-for-client-computers"></a>Softwareanforderungen für Clientcomputer
 Die Finance and Operations-Webanwendung kann auf jedem beliebigen Gerät mit einem HTML 5.0-kompatiblen Webbrowser ausgeführt werden. Spezifische Gerät-/Browserkombinationen, die Microsoft bestätigt hat, umfassen:
 
@@ -244,7 +250,7 @@ Der Domänencontroller muss Microsoft Windows Server 2012 R2 oder höher sein, m
 ## <a name="supported-microsoft-office-applications"></a>Unterstützte Microsoft Office-Anwendungen
 Die folgenden Microsoft Office-Anwendungen werden in der Cloud und in On-Premises-Bereitstellungen von Finance and Operations unterstützt.
 
--   Zum Ausführen von Microsoft Excel- und Microsoft Word-Add-Ins muss Microsoft Office 2016 für Windows oder Mac installiert sein. Genauere Informationen zu Versionsanforderungen erhalten Sie unter [Office-Integration – Problembehebung](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Zum Ausführen von Microsoft Excel- und Microsoft Word-Add-Ins muss Microsoft Office 2016 für Windows oder Mac installiert sein. Genauere Informationen zu Versionsanforderungen erhalten Sie unter [Office-Integration – Problembehebung](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Um Dokumente anzuzeigen, die über die Funktionen für einen Export nach Excel oder einen Export nach Word erzeugt wurden, muss Microsoft Office 2007 oder höher installiert sein.
  
 ## <a name="hardware-and-software-requirements-for-retail-components"></a>Hardware- und Softwareanforderungen für Retail Komponenten

@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: ade348540a6d3e9210321d3661e97ac716efaf58
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieser Artikel beschreibt die Parameter, die für den Ausgleich für Kreditoren und Debitoren verwendet werden. 
 
-Die folgenden Parameter haben Auswirkungen darauf, wie Ausgleiche in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verarbeitet werden. Ausgleich ist der Prozess für das Begleichen einer Rechnung durch eine Zahlung oder eine Gutschrift. Diese Parameter werden befinden sich im **Ausgleich**-Bereich der **Debitorenparameter** **Kreditorenkontenparameter**-Seiten.
+Die folgenden Parameter haben Auswirkungen darauf, wie Ausgleiche in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verarbeitet werden. Ausgleich ist der Prozess für das Begleichen einer Rechnung durch eine Zahlung oder eine Gutschrift. Diese Parameter werden befinden sich im **Ausgleich**-Bereich der **Debitorenparameter** **Kreditorenkontenparameter**-Seiten.
 
 -   **Automatischer Ausgleich** – Legen Sie diese Option auf **Ja** fest, wenn eine Transaktion bei der Buchung automatisch mit anderen offenen Posten ausgeglichen werden soll. Ist die Option auf **Nein** festgelegt, können Benutzer Transaktionen manuell ausgleichen, wenn sie Zahlungen eingeben, oder später, indem die Seite **Buchungen ausgleichen** verwenden.
 -   **Skontoverwaltung** – Geben Sie an wie ein [Skonto ausgeführt wird, wenn für eine Rechnung zu viel bezahlt wird](cash-discount-handling-overpayments.md) Bei einer Überzahlung kann das Skonto verringert werden, sie kann als Differenz behandelt werden oder sie kann beim Kreditoren oder Debitoren bleiben.
