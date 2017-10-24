@@ -17,44 +17,44 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: c2423fe91d1531a326080e3a584195ea864f2e3e
 ms.contentlocale: de-de
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="define-discrete-manufacturing-resource-group"></a><span data-ttu-id="a70c2-103">Ressourcengruppe für einzelne Fertigung definieren</span><span class="sxs-lookup"><span data-stu-id="a70c2-103">Define discrete manufacturing resource group</span></span>
+# <a name="define-discrete-manufacturing-resource-group"></a><span data-ttu-id="b0aea-103">Ressourcengruppe für einzelne Fertigung definieren</span><span class="sxs-lookup"><span data-stu-id="b0aea-103">Define discrete manufacturing resource group</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a70c2-104">Eine Ressourcengruppe ist ein Satz betriebliche Ressourcen, die üblicherweise der physischen Organisation von Arbeitsgruppen entsprechen, definiert durch gelbe Positionen im Fertigungsbereich.</span><span class="sxs-lookup"><span data-stu-id="a70c2-104">A resource group is a set of operations resources that typically correspond to the physical organization of work cells, defined by yellow lines on the production shop floor.</span></span> <span data-ttu-id="a70c2-105">Diese Prozedur zeigt Ihnen, wie eine Ressourcengruppe für die Verwendung in der einzelnen Produktion definiert wird.</span><span class="sxs-lookup"><span data-stu-id="a70c2-105">This procedure shows you how to define a ressource group for use in discrete production.</span></span> <span data-ttu-id="a70c2-106">Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="a70c2-106">You can walk through this procedure in demo data company USMF, or use your own data.</span></span>
+<span data-ttu-id="b0aea-104">Eine Ressourcengruppe ist ein Satz betriebliche Ressourcen, die üblicherweise der physischen Organisation von Arbeitsgruppen entsprechen, definiert durch gelbe Positionen im Fertigungsbereich.</span><span class="sxs-lookup"><span data-stu-id="b0aea-104">A resource group is a set of operations resources that typically correspond to the physical organization of work cells, defined by yellow lines on the production shop floor.</span></span> <span data-ttu-id="b0aea-105">Diese Prozedur zeigt Ihnen, wie eine Ressourcengruppe für die Verwendung in der einzelnen Produktion definiert wird.</span><span class="sxs-lookup"><span data-stu-id="b0aea-105">This procedure shows you how to define a ressource group for use in discrete production.</span></span> <span data-ttu-id="b0aea-106">Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="b0aea-106">You can walk through this procedure in demo data company USMF, or use your own data.</span></span>
 
-1. <span data-ttu-id="a70c2-107">Wechseln Sie zu "Ressourcengruppen".</span><span class="sxs-lookup"><span data-stu-id="a70c2-107">Go to Resource groups.</span></span>
-2. <span data-ttu-id="a70c2-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="a70c2-108">Click New.</span></span>
-3. <span data-ttu-id="a70c2-109">Geben Sie im Feld "Ressourcengruppe" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="a70c2-109">In the Resource group field, type a value.</span></span>
-4. <span data-ttu-id="a70c2-110">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="a70c2-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="a70c2-111">Geben Sie im Feld "Standort" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a70c2-111">In the Site field, enter or select a value.</span></span>
-6. <span data-ttu-id="a70c2-112">Geben Sie im Feld "Produktionseinheit" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a70c2-112">In the Production unit field, enter or select a value.</span></span>
+1. <span data-ttu-id="b0aea-107">Wechseln Sie zu "Ressourcengruppen".</span><span class="sxs-lookup"><span data-stu-id="b0aea-107">Go to Resource groups.</span></span>
+2. <span data-ttu-id="b0aea-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b0aea-108">Click New.</span></span>
+3. <span data-ttu-id="b0aea-109">Geben Sie im Feld "Ressourcengruppe" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b0aea-109">In the Resource group field, type a value.</span></span>
+4. <span data-ttu-id="b0aea-110">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b0aea-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="b0aea-111">Geben Sie im Feld "Standort" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b0aea-111">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="b0aea-112">Geben Sie im Feld "Produktionseinheit" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b0aea-112">In the Production unit field, enter or select a value.</span></span>
 
-## <a name="define-default-operational-parameters"></a><span data-ttu-id="a70c2-113">Definieren von standardmäßigen betriebliche Parametern</span><span class="sxs-lookup"><span data-stu-id="a70c2-113">Define default operational parameters</span></span>
-1. <span data-ttu-id="a70c2-114">Erweitern Sie den Abschnitt "Arbeitstang".</span><span class="sxs-lookup"><span data-stu-id="a70c2-114">Expand the Operation section.</span></span>
-2. <span data-ttu-id="a70c2-115">Geben Sie im Feld "Ausschuss" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="a70c2-115">In the Scrap percentage field, enter a number.</span></span>
-3. <span data-ttu-id="a70c2-116">Geben Sie im Feld "Rüstkostenkategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a70c2-116">In the Setup category field, enter or select a value.</span></span>
-4. <span data-ttu-id="a70c2-117">Geben Sie im Feld "Ausführungszeitkategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a70c2-117">In the Run time category field, enter or select a value.</span></span>
-5. <span data-ttu-id="a70c2-118">Geben Sie im Feld "Grobterminierungsprozentsatz" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="a70c2-118">In the Operations scheduling percentage field, enter a number.</span></span>
+## <a name="define-default-operational-parameters"></a><span data-ttu-id="b0aea-113">Definieren von standardmäßigen betriebliche Parametern</span><span class="sxs-lookup"><span data-stu-id="b0aea-113">Define default operational parameters</span></span>
+1. <span data-ttu-id="b0aea-114">Erweitern Sie den Abschnitt "Arbeitstang".</span><span class="sxs-lookup"><span data-stu-id="b0aea-114">Expand the Operation section.</span></span>
+2. <span data-ttu-id="b0aea-115">Geben Sie im Feld "Ausschuss" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b0aea-115">In the Scrap percentage field, enter a number.</span></span>
+3. <span data-ttu-id="b0aea-116">Geben Sie im Feld "Rüstkostenkategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b0aea-116">In the Setup category field, enter or select a value.</span></span>
+4. <span data-ttu-id="b0aea-117">Geben Sie im Feld "Ausführungszeitkategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b0aea-117">In the Run time category field, enter or select a value.</span></span>
+5. <span data-ttu-id="b0aea-118">Geben Sie im Feld "Grobterminierungsprozentsatz" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b0aea-118">In the Operations scheduling percentage field, enter a number.</span></span>
 
-## <a name="define-operating-hours"></a><span data-ttu-id="a70c2-119">Definieren von Betriebszeiten</span><span class="sxs-lookup"><span data-stu-id="a70c2-119">Define operating hours</span></span>
-1. <span data-ttu-id="a70c2-120">Erweitern Sie den Abschnitt "Kalender".</span><span class="sxs-lookup"><span data-stu-id="a70c2-120">Expand the Calendars section.</span></span>
-2. <span data-ttu-id="a70c2-121">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="a70c2-121">Click Add.</span></span>
-3. <span data-ttu-id="a70c2-122">Geben Sie im Feld "Kalender" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a70c2-122">In the Calendar field, enter or select a value.</span></span>
+## <a name="define-operating-hours"></a><span data-ttu-id="b0aea-119">Definieren von Betriebszeiten</span><span class="sxs-lookup"><span data-stu-id="b0aea-119">Define operating hours</span></span>
+1. <span data-ttu-id="b0aea-120">Erweitern Sie den Abschnitt "Kalender".</span><span class="sxs-lookup"><span data-stu-id="b0aea-120">Expand the Calendars section.</span></span>
+2. <span data-ttu-id="b0aea-121">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b0aea-121">Click Add.</span></span>
+3. <span data-ttu-id="b0aea-122">Geben Sie im Feld "Kalender" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b0aea-122">In the Calendar field, enter or select a value.</span></span>
 
-## <a name="add-operations-resources"></a><span data-ttu-id="a70c2-123">Betriebliche Ressourcen hinzufügen</span><span class="sxs-lookup"><span data-stu-id="a70c2-123">Add operations resources</span></span>
-1. <span data-ttu-id="a70c2-124">Erweitern Sie den Abschnitt "Ressourcen".</span><span class="sxs-lookup"><span data-stu-id="a70c2-124">Expand the Resources section.</span></span>
-2. <span data-ttu-id="a70c2-125">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="a70c2-125">Click Add.</span></span>
-3. <span data-ttu-id="a70c2-126">Geben Sie im Feld "Ressource" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a70c2-126">In the Resource field, enter or select a value.</span></span>
-4. <span data-ttu-id="a70c2-127">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="a70c2-127">Click Add.</span></span>
-5. <span data-ttu-id="a70c2-128">Geben Sie im Feld "Ressource" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a70c2-128">In the Resource field, enter or select a value.</span></span>
-6. <span data-ttu-id="a70c2-129">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="a70c2-129">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="a70c2-130">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="a70c2-130">In the list, click the link in the selected row.</span></span>
+## <a name="add-operations-resources"></a><span data-ttu-id="b0aea-123">Betriebliche Ressourcen hinzufügen</span><span class="sxs-lookup"><span data-stu-id="b0aea-123">Add operations resources</span></span>
+1. <span data-ttu-id="b0aea-124">Erweitern Sie den Abschnitt "Ressourcen".</span><span class="sxs-lookup"><span data-stu-id="b0aea-124">Expand the Resources section.</span></span>
+2. <span data-ttu-id="b0aea-125">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b0aea-125">Click Add.</span></span>
+3. <span data-ttu-id="b0aea-126">Geben Sie im Feld "Ressource" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b0aea-126">In the Resource field, enter or select a value.</span></span>
+4. <span data-ttu-id="b0aea-127">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b0aea-127">Click Add.</span></span>
+5. <span data-ttu-id="b0aea-128">Geben Sie im Feld "Ressource" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b0aea-128">In the Resource field, enter or select a value.</span></span>
+6. <span data-ttu-id="b0aea-129">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b0aea-129">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="b0aea-130">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b0aea-130">In the list, click the link in the selected row.</span></span>
 
 

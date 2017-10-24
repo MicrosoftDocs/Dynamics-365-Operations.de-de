@@ -17,35 +17,35 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 59fa33dbbf2b5e0d5fd2f7975c1ace71cdd383bd
 ms.contentlocale: de-de
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-a-value-stream"></a><span data-ttu-id="67d5b-103">Einen Wertstrom erstellen</span><span class="sxs-lookup"><span data-stu-id="67d5b-103">Create a value stream</span></span>
+# <a name="create-a-value-stream"></a><span data-ttu-id="4418e-103">Einen Wertstrom erstellen</span><span class="sxs-lookup"><span data-stu-id="4418e-103">Create a value stream</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="67d5b-104">Wertströme sind Organisationseinheiten, die einen oder mehrere Produktionsflüsse gruppieren.</span><span class="sxs-lookup"><span data-stu-id="67d5b-104">Value streams are operating units, that group one or multiple production flows.</span></span> <span data-ttu-id="67d5b-105">Um einen Produktionsfluss zu definieren, müssen Sie zuerst einen Wertstrom definieren.</span><span class="sxs-lookup"><span data-stu-id="67d5b-105">To define a production flow, you first must define a value stream.</span></span>
+<span data-ttu-id="4418e-104">Wertströme sind Organisationseinheiten, die einen oder mehrere Produktionsflüsse gruppieren.</span><span class="sxs-lookup"><span data-stu-id="4418e-104">Value streams are operating units, that group one or multiple production flows.</span></span> <span data-ttu-id="4418e-105">Um einen Produktionsfluss zu definieren, müssen Sie zuerst einen Wertstrom definieren.</span><span class="sxs-lookup"><span data-stu-id="4418e-105">To define a production flow, you first must define a value stream.</span></span>
 
 
-## <a name="open-the-form"></a><span data-ttu-id="67d5b-106">Öffnen des Formulars</span><span class="sxs-lookup"><span data-stu-id="67d5b-106">Open the form</span></span>
-1. <span data-ttu-id="67d5b-107">Wechseln Sie zu "Produktionssteuerung" > "Einrichten" > "Lean-Produktionsfluss" > "Wertströme".</span><span class="sxs-lookup"><span data-stu-id="67d5b-107">Go to Production control > Setup > Lean production flow > Value streams.</span></span>
+## <a name="open-the-form"></a><span data-ttu-id="4418e-106">Öffnen des Formulars</span><span class="sxs-lookup"><span data-stu-id="4418e-106">Open the form</span></span>
+1. <span data-ttu-id="4418e-107">Wechseln Sie zu "Produktionssteuerung" > "Einrichten" > "Lean-Produktionsfluss" > "Wertströme".</span><span class="sxs-lookup"><span data-stu-id="4418e-107">Go to Production control > Setup > Lean production flow > Value streams.</span></span>
 
-## <a name="create-a-new-value-stream"></a><span data-ttu-id="67d5b-108">Neuen Wertstrom erstellen</span><span class="sxs-lookup"><span data-stu-id="67d5b-108">Create a new value stream</span></span>
-1. <span data-ttu-id="67d5b-109">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="67d5b-109">Click New to open the drop dialog.</span></span>
-2. <span data-ttu-id="67d5b-110">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="67d5b-110">In the Name field, type a value.</span></span>
+## <a name="create-a-new-value-stream"></a><span data-ttu-id="4418e-108">Neuen Wertstrom erstellen</span><span class="sxs-lookup"><span data-stu-id="4418e-108">Create a new value stream</span></span>
+1. <span data-ttu-id="4418e-109">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="4418e-109">Click New to open the drop dialog.</span></span>
+2. <span data-ttu-id="4418e-110">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="4418e-110">In the Name field, type a value.</span></span>
 
-## <a name="select-a-value-stream-manager"></a><span data-ttu-id="67d5b-111">Wertstrommanager auswählen</span><span class="sxs-lookup"><span data-stu-id="67d5b-111">Select a value stream manager</span></span>
-1. <span data-ttu-id="67d5b-112">Klicken Sie im Feld "Vorgesetzer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="67d5b-112">In the Manager field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="67d5b-113">Der Wertstrommanager wird definiert, um die Organisation dokumentieren.</span><span class="sxs-lookup"><span data-stu-id="67d5b-113">The value stream manager is defined to document the organization.</span></span>  
-2. <span data-ttu-id="67d5b-114">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="67d5b-114">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="67d5b-115">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="67d5b-115">In the list, click the link in the selected row.</span></span>
+## <a name="select-a-value-stream-manager"></a><span data-ttu-id="4418e-111">Wertstrommanager auswählen</span><span class="sxs-lookup"><span data-stu-id="4418e-111">Select a value stream manager</span></span>
+1. <span data-ttu-id="4418e-112">Klicken Sie im Feld "Vorgesetzer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="4418e-112">In the Manager field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="4418e-113">Der Wertstrommanager wird definiert, um die Organisation dokumentieren.</span><span class="sxs-lookup"><span data-stu-id="4418e-113">The value stream manager is defined to document the organization.</span></span>  
+2. <span data-ttu-id="4418e-114">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="4418e-114">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="4418e-115">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="4418e-115">In the list, click the link in the selected row.</span></span>
 
-## <a name="save-and-close"></a><span data-ttu-id="67d5b-116">Speichern und schließen</span><span class="sxs-lookup"><span data-stu-id="67d5b-116">Save and close</span></span>
-1. <span data-ttu-id="67d5b-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="67d5b-117">Click Save.</span></span>
-2. <span data-ttu-id="67d5b-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="67d5b-118">Close the page.</span></span>
-3. <span data-ttu-id="67d5b-119">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="67d5b-119">Refresh the page.</span></span>
+## <a name="save-and-close"></a><span data-ttu-id="4418e-116">Speichern und schließen</span><span class="sxs-lookup"><span data-stu-id="4418e-116">Save and close</span></span>
+1. <span data-ttu-id="4418e-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="4418e-117">Click Save.</span></span>
+2. <span data-ttu-id="4418e-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="4418e-118">Close the page.</span></span>
+3. <span data-ttu-id="4418e-119">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="4418e-119">Refresh the page.</span></span>
 
 

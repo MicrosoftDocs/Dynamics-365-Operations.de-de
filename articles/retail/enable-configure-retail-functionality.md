@@ -18,48 +18,48 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: ac4f651cd7e5df912ea2535eafd5e54c11377253
 ms.contentlocale: de-de
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="initialize-seed-data-in-a-new-retail-environment"></a><span data-ttu-id="82527-103">Initialisieren Sie Startwertdaten in einer neuen Kleinumgebung</span><span class="sxs-lookup"><span data-stu-id="82527-103">Initialize seed data in a new Retail environment</span></span>
+# <a name="initialize-seed-data-in-a-new-retail-environment"></a><span data-ttu-id="4f8f2-103">Initialisieren Sie Startwertdaten in einer neuen Kleinumgebung</span><span class="sxs-lookup"><span data-stu-id="4f8f2-103">Initialize seed data in a new Retail environment</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-<span data-ttu-id="82527-104">In diesem Artikel werden die Daten beschrieben , die im Rahmen des Initialisierungsprozesses für Microsoft Dynamics 365 for Retail erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="82527-104">This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Retail.</span></span>
+<span data-ttu-id="4f8f2-104">In diesem Artikel werden die Daten beschrieben , die im Rahmen des Initialisierungsprozesses für Microsoft Dynamics 365 for Retail erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-104">This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Retail.</span></span>
 
-<span data-ttu-id="82527-105">Nachdem die Einzelhandelslösung über Microsoft Dynamics Lifecycle Services (LCS) bereitgestellt wurde, müssen Sie die Einzelhandelskonfiguration initialisieren, um die grundlegenden Konfigurationsdaten zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="82527-105">After the Retail solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the retail configuration to create the basic configuration data.</span></span> <span data-ttu-id="82527-106">**Wichtig:** Bevor Sie die Einzelhandelskonfiguration initialisieren, überprüfen Sie, ob Sie eine Sprache und eine Postadresse für jede juristische Person angegeben haben, für die Sie Einzelhandelsgeschäfte einrichten werden.</span><span class="sxs-lookup"><span data-stu-id="82527-106">**Important:** Before you initialize the retail configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up retail stores.</span></span> <span data-ttu-id="82527-107">Dieser Schritt muss für jede juristische Person abgeschlossen werden, die Sie für Einzelhandel verwenden.</span><span class="sxs-lookup"><span data-stu-id="82527-107">This step must be completed for each legal entity that you use for retail.</span></span> <span data-ttu-id="82527-108">Um die Einzelhandelskonfiguration zu initialisieren, führen Sie die folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="82527-108">To initialize the retail configuration, follow these steps.</span></span>
+<span data-ttu-id="4f8f2-105">Nachdem die Einzelhandelslösung über Microsoft Dynamics Lifecycle Services (LCS) bereitgestellt wurde, müssen Sie die Einzelhandelskonfiguration initialisieren, um die grundlegenden Konfigurationsdaten zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-105">After the Retail solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the retail configuration to create the basic configuration data.</span></span> <span data-ttu-id="4f8f2-106">**Wichtig:** Bevor Sie die Einzelhandelskonfiguration initialisieren, überprüfen Sie, ob Sie eine Sprache und eine Postadresse für jede juristische Person angegeben haben, für die Sie Einzelhandelsgeschäfte einrichten werden.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-106">**Important:** Before you initialize the retail configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up retail stores.</span></span> <span data-ttu-id="4f8f2-107">Dieser Schritt muss für jede juristische Person abgeschlossen werden, die Sie für Einzelhandel verwenden.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-107">This step must be completed for each legal entity that you use for retail.</span></span> <span data-ttu-id="4f8f2-108">Um die Einzelhandelskonfiguration zu initialisieren, führen Sie die folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="4f8f2-108">To initialize the retail configuration, follow these steps.</span></span>
 
-1.  <span data-ttu-id="82527-109">Start des Dynamics 365 for Retail-Client</span><span class="sxs-lookup"><span data-stu-id="82527-109">Start the Dynamics 365 for Retail client.</span></span>
-2.  <span data-ttu-id="82527-110">Klicken Sie auf **Einzelhandel** &gt; **Zentralverwaltungseinrichtun** &gt; **Parameter** &gt; **Einzelhandelsparamete**.</span><span class="sxs-lookup"><span data-stu-id="82527-110">Click **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.</span></span>
-3.  <span data-ttu-id="82527-111">Klicken Sie auf **Initialisieren**.</span><span class="sxs-lookup"><span data-stu-id="82527-111">Click **Initialize**.</span></span>
+1.  <span data-ttu-id="4f8f2-109">Start des Dynamics 365 for Retail-Client</span><span class="sxs-lookup"><span data-stu-id="4f8f2-109">Start the Dynamics 365 for Retail client.</span></span>
+2.  <span data-ttu-id="4f8f2-110">Klicken Sie auf **Einzelhandel** &gt; **Zentralverwaltungseinrichtun** &gt; **Parameter** &gt; **Einzelhandelsparamete**.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-110">Click **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.</span></span>
+3.  <span data-ttu-id="4f8f2-111">Klicken Sie auf **Initialisieren**.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-111">Click **Initialize**.</span></span>
 
-<span data-ttu-id="82527-112">Durch die Initialisierung werden die folgenden Standardkonfigurationsdaten erstellt:</span><span class="sxs-lookup"><span data-stu-id="82527-112">Initialization creates the following default configuration data:</span></span>
+<span data-ttu-id="4f8f2-112">Durch die Initialisierung werden die folgenden Standardkonfigurationsdaten erstellt:</span><span class="sxs-lookup"><span data-stu-id="4f8f2-112">Initialization creates the following default configuration data:</span></span>
 
--   <span data-ttu-id="82527-113">Einzelhandel-Steuerprogramm-Aufträge und -Unteraufträge</span><span class="sxs-lookup"><span data-stu-id="82527-113">Retail scheduler jobs and subjobs</span></span>
--   <span data-ttu-id="82527-114">Retail Channel-Schema</span><span class="sxs-lookup"><span data-stu-id="82527-114">Retail channel schema</span></span>
--   <span data-ttu-id="82527-115">Einzelhandel-Vertriebszeitpläne</span><span class="sxs-lookup"><span data-stu-id="82527-115">Retail distribution schedules</span></span>
--   <span data-ttu-id="82527-116">Standard-Bildschirmlayouts mit Schaltflächenrastern, Bildern und Themen</span><span class="sxs-lookup"><span data-stu-id="82527-116">Default screen layouts, which include button grids, images, and themes</span></span>
--   <span data-ttu-id="82527-117">Zeitzoneninformation</span><span class="sxs-lookup"><span data-stu-id="82527-117">Time zone information</span></span>
--   <span data-ttu-id="82527-118">Verkaufsstellen(POS)-Vorgänge</span><span class="sxs-lookup"><span data-stu-id="82527-118">Point-of-sale (POS) operations</span></span>
--   <span data-ttu-id="82527-119">POS-Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="82527-119">POS permissions</span></span>
--   <span data-ttu-id="82527-120">Kanalberichte</span><span class="sxs-lookup"><span data-stu-id="82527-120">Channel reports</span></span>
--   <span data-ttu-id="82527-121">Attributmetadaten</span><span class="sxs-lookup"><span data-stu-id="82527-121">Attribute metadata</span></span>
--   <span data-ttu-id="82527-122">Entitätsprüfungsvorlagen</span><span class="sxs-lookup"><span data-stu-id="82527-122">Entity validation templates</span></span>
--   <span data-ttu-id="82527-123">Batchauftrag, um den Commerce Data Exchange-Sitzungsverlauf zu bereinigen</span><span class="sxs-lookup"><span data-stu-id="82527-123">Batch job to purge Commerce Data Exchange session history</span></span>
+-   <span data-ttu-id="4f8f2-113">Einzelhandel-Steuerprogramm-Aufträge und -Unteraufträge</span><span class="sxs-lookup"><span data-stu-id="4f8f2-113">Retail scheduler jobs and subjobs</span></span>
+-   <span data-ttu-id="4f8f2-114">Retail Channel-Schema</span><span class="sxs-lookup"><span data-stu-id="4f8f2-114">Retail channel schema</span></span>
+-   <span data-ttu-id="4f8f2-115">Einzelhandel-Vertriebszeitpläne</span><span class="sxs-lookup"><span data-stu-id="4f8f2-115">Retail distribution schedules</span></span>
+-   <span data-ttu-id="4f8f2-116">Standard-Bildschirmlayouts mit Schaltflächenrastern, Bildern und Themen</span><span class="sxs-lookup"><span data-stu-id="4f8f2-116">Default screen layouts, which include button grids, images, and themes</span></span>
+-   <span data-ttu-id="4f8f2-117">Zeitzoneninformation</span><span class="sxs-lookup"><span data-stu-id="4f8f2-117">Time zone information</span></span>
+-   <span data-ttu-id="4f8f2-118">Verkaufsstellen(POS)-Vorgänge</span><span class="sxs-lookup"><span data-stu-id="4f8f2-118">Point-of-sale (POS) operations</span></span>
+-   <span data-ttu-id="4f8f2-119">POS-Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="4f8f2-119">POS permissions</span></span>
+-   <span data-ttu-id="4f8f2-120">Kanalberichte</span><span class="sxs-lookup"><span data-stu-id="4f8f2-120">Channel reports</span></span>
+-   <span data-ttu-id="4f8f2-121">Attributmetadaten</span><span class="sxs-lookup"><span data-stu-id="4f8f2-121">Attribute metadata</span></span>
+-   <span data-ttu-id="4f8f2-122">Entitätsprüfungsvorlagen</span><span class="sxs-lookup"><span data-stu-id="4f8f2-122">Entity validation templates</span></span>
+-   <span data-ttu-id="4f8f2-123">Batchauftrag, um den Commerce Data Exchange-Sitzungsverlauf zu bereinigen</span><span class="sxs-lookup"><span data-stu-id="4f8f2-123">Batch job to purge Commerce Data Exchange session history</span></span>
 
-<span data-ttu-id="82527-124">Darüber hinaus ist das Protokollieren in Zusammenhang mit der Zahlungskartenindustrie (PCI) für die Dynamics 365 Retail- Datenbank aktiviert.</span><span class="sxs-lookup"><span data-stu-id="82527-124">Additionally, logging that is related to the payment card industry (PCI) is enabled for the Dynamics 365 for Retail database.</span></span> <span data-ttu-id="82527-125">**Hinweis:** Es gibt eine Option, um das Einzelhandel-Steuerprogramm separat zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="82527-125">**Note:** There is an option to separately configure the Retail scheduler.</span></span> <span data-ttu-id="82527-126">Mit dieser Option können Sie die Einzelhandel-Steuerprogramm-Konfiguration auf die Standardeinstellungen zurücksetzen.</span><span class="sxs-lookup"><span data-stu-id="82527-126">This option lets you reset the Retail scheduler configuration to its default settings.</span></span> <span data-ttu-id="82527-127">Nachdem die Initialisierung abgeschlossen wurde, müssen Sie zusätzliche Einzelhandelsdaten konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="82527-127">After initialization is completed, you must configure additional retail data.</span></span> <span data-ttu-id="82527-128">Nachfolgend finden Sie einige Beispiele:</span><span class="sxs-lookup"><span data-stu-id="82527-128">Here are some examples:</span></span>
+<span data-ttu-id="4f8f2-124">Darüber hinaus ist das Protokollieren in Zusammenhang mit der Zahlungskartenindustrie (PCI) für die Dynamics 365 Retail- Datenbank aktiviert.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-124">Additionally, logging that is related to the payment card industry (PCI) is enabled for the Dynamics 365 for Retail database.</span></span> <span data-ttu-id="4f8f2-125">**Hinweis:** Es gibt eine Option, um das Einzelhandel-Steuerprogramm separat zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-125">**Note:** There is an option to separately configure the Retail scheduler.</span></span> <span data-ttu-id="4f8f2-126">Mit dieser Option können Sie die Einzelhandel-Steuerprogramm-Konfiguration auf die Standardeinstellungen zurücksetzen.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-126">This option lets you reset the Retail scheduler configuration to its default settings.</span></span> <span data-ttu-id="4f8f2-127">Nachdem die Initialisierung abgeschlossen wurde, müssen Sie zusätzliche Einzelhandelsdaten konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="4f8f2-127">After initialization is completed, you must configure additional retail data.</span></span> <span data-ttu-id="4f8f2-128">Nachfolgend finden Sie einige Beispiele:</span><span class="sxs-lookup"><span data-stu-id="4f8f2-128">Here are some examples:</span></span>
 
--   <span data-ttu-id="82527-129">Einzelhandelsparameter</span><span class="sxs-lookup"><span data-stu-id="82527-129">Retail parameters</span></span>
--   <span data-ttu-id="82527-130">Einzelhandel-Steuerprogramm-Parameter</span><span class="sxs-lookup"><span data-stu-id="82527-130">Retail scheduler parameters</span></span>
--   <span data-ttu-id="82527-131">Retail Channels</span><span class="sxs-lookup"><span data-stu-id="82527-131">Retail channels</span></span>
--   <span data-ttu-id="82527-132">Register und Geräte</span><span class="sxs-lookup"><span data-stu-id="82527-132">Registers and devices</span></span>
--   <span data-ttu-id="82527-133">Sortimente</span><span class="sxs-lookup"><span data-stu-id="82527-133">Assortments</span></span>
+-   <span data-ttu-id="4f8f2-129">Einzelhandelsparameter</span><span class="sxs-lookup"><span data-stu-id="4f8f2-129">Retail parameters</span></span>
+-   <span data-ttu-id="4f8f2-130">Einzelhandel-Steuerprogramm-Parameter</span><span class="sxs-lookup"><span data-stu-id="4f8f2-130">Retail scheduler parameters</span></span>
+-   <span data-ttu-id="4f8f2-131">Retail Channels</span><span class="sxs-lookup"><span data-stu-id="4f8f2-131">Retail channels</span></span>
+-   <span data-ttu-id="4f8f2-132">Register und Geräte</span><span class="sxs-lookup"><span data-stu-id="4f8f2-132">Registers and devices</span></span>
+-   <span data-ttu-id="4f8f2-133">Sortimente</span><span class="sxs-lookup"><span data-stu-id="4f8f2-133">Assortments</span></span>
 
 
 

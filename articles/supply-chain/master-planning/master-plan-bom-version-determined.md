@@ -19,28 +19,28 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: ceeb82130a3ab214ef3e9eda09294c9bcc0c7cc0
 ms.contentlocale: de-de
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="determine-the-bom-version"></a><span data-ttu-id="811fb-103">Stücklistenversion ermitteln</span><span class="sxs-lookup"><span data-stu-id="811fb-103">Determine the BOM version</span></span>
+# <a name="determine-the-bom-version"></a><span data-ttu-id="65a17-103">Stücklistenversion ermitteln</span><span class="sxs-lookup"><span data-stu-id="65a17-103">Determine the BOM version</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="811fb-104">Wenn während der Bedarfsauflösung für einen Artikel ein Standard-Bestellvorschlagtyp zur Produktion festgelegt ist, sucht das Planungsmodul eine gültige Stücklistenversion auf Grundlage des Standorts.</span><span class="sxs-lookup"><span data-stu-id="811fb-104">During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site.</span></span> 
+<span data-ttu-id="65a17-104">Wenn während der Bedarfsauflösung für einen Artikel ein Standard-Bestellvorschlagtyp zur Produktion festgelegt ist, sucht das Planungsmodul eine gültige Stücklistenversion auf Grundlage des Standorts.</span><span class="sxs-lookup"><span data-stu-id="65a17-104">During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site.</span></span> 
 
-<span data-ttu-id="811fb-105">Der Standortgröße ist immer bekannt und in der Bedarfsbuchung angegeben.</span><span class="sxs-lookup"><span data-stu-id="811fb-105">The site dimension is always known and is stated on the demand transaction.</span></span> <span data-ttu-id="811fb-106">Der folgende Prozess wird verwendet, um die zu verwendende Stücklistenversion zu bestimmen:</span><span class="sxs-lookup"><span data-stu-id="811fb-106">The following process is used to determine the BOM version to use:</span></span>
+<span data-ttu-id="65a17-105">Der Standortgröße ist immer bekannt und in der Bedarfsbuchung angegeben.</span><span class="sxs-lookup"><span data-stu-id="65a17-105">The site dimension is always known and is stated on the demand transaction.</span></span> <span data-ttu-id="65a17-106">Der folgende Prozess wird verwendet, um die zu verwendende Stücklistenversion zu bestimmen:</span><span class="sxs-lookup"><span data-stu-id="65a17-106">The following process is used to determine the BOM version to use:</span></span>
 
--   <span data-ttu-id="811fb-107">Wenn eine Stücklistenversion für den Artikel am Bedarfsstandort festgelegt ist, wird die standortspezifische Stückliste verwendet.</span><span class="sxs-lookup"><span data-stu-id="811fb-107">If there is a BOM version defined for the item at the demand site, the site-specific BOM is used.</span></span>
--   <span data-ttu-id="811fb-108">Falls für einen Artikel am Bedarfsstandort keine standortspezifische Stücklistenversion festgelegt ist, wird eine allgemeine Stückliste verwendet.</span><span class="sxs-lookup"><span data-stu-id="811fb-108">If there is no site-specific BOM version defined for an item at the demand site, a general BOM is used.</span></span> <span data-ttu-id="811fb-109">Eine allgemeine Stückliste gibt keinen Standort an und gilt für mehrere Standorte.</span><span class="sxs-lookup"><span data-stu-id="811fb-109">A general BOM does not state a site, and it is valid for multiple sites.</span></span> <span data-ttu-id="811fb-110">Wenn eine allgemeine Stückliste vorhanden ist, wird sie verwendet.</span><span class="sxs-lookup"><span data-stu-id="811fb-110">If there is a general BOM, it is used.</span></span>
--   <span data-ttu-id="811fb-111">Falls es keine zu verwendende allgemeine Stücklistenversion gibt, wird die Bedarfsauflösung an diesem Punkt gestoppt.</span><span class="sxs-lookup"><span data-stu-id="811fb-111">If there is no general BOM version to use, the demand explosion stops at this point.</span></span>
+-   <span data-ttu-id="65a17-107">Wenn eine Stücklistenversion für den Artikel am Bedarfsstandort festgelegt ist, wird die standortspezifische Stückliste verwendet.</span><span class="sxs-lookup"><span data-stu-id="65a17-107">If there is a BOM version defined for the item at the demand site, the site-specific BOM is used.</span></span>
+-   <span data-ttu-id="65a17-108">Falls für einen Artikel am Bedarfsstandort keine standortspezifische Stücklistenversion festgelegt ist, wird eine allgemeine Stückliste verwendet.</span><span class="sxs-lookup"><span data-stu-id="65a17-108">If there is no site-specific BOM version defined for an item at the demand site, a general BOM is used.</span></span> <span data-ttu-id="65a17-109">Eine allgemeine Stückliste gibt keinen Standort an und gilt für mehrere Standorte.</span><span class="sxs-lookup"><span data-stu-id="65a17-109">A general BOM does not state a site, and it is valid for multiple sites.</span></span> <span data-ttu-id="65a17-110">Wenn eine allgemeine Stückliste vorhanden ist, wird sie verwendet.</span><span class="sxs-lookup"><span data-stu-id="65a17-110">If there is a general BOM, it is used.</span></span>
+-   <span data-ttu-id="65a17-111">Falls es keine zu verwendende allgemeine Stücklistenversion gibt, wird die Bedarfsauflösung an diesem Punkt gestoppt.</span><span class="sxs-lookup"><span data-stu-id="65a17-111">If there is no general BOM version to use, the demand explosion stops at this point.</span></span>
 
-<span data-ttu-id="811fb-112">Eine gültige Stücklistenversion, egal ob standortspezifisch oder allgemein, muss die erforderlichen Kriterien für Datum und Menge erfüllen.</span><span class="sxs-lookup"><span data-stu-id="811fb-112">A valid BOM version, whether site-specific or general, must meet the required criteria for date and quantity.</span></span>
+<span data-ttu-id="65a17-112">Eine gültige Stücklistenversion, egal ob standortspezifisch oder allgemein, muss die erforderlichen Kriterien für Datum und Menge erfüllen.</span><span class="sxs-lookup"><span data-stu-id="65a17-112">A valid BOM version, whether site-specific or general, must meet the required criteria for date and quantity.</span></span>
 
 
 

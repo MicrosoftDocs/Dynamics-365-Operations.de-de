@@ -1,7 +1,7 @@
 ---
 title: Bestandsobjektwerte
 description: "Dieser Artikel erläutert, wie die Werte eines Bestandsobjekts berechnet werden."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -19,35 +19,35 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 4aec6e70325c7e4d00e6070293a1ab0c719e420b
+ms.translationtype: HT
+ms.sourcegitcommit: a61761a5c9d98befd67682e1790af5377b7a55e1
+ms.openlocfilehash: 2cdd1377d3c7c922a3e4cba7f44eef24b0c6824c
 ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 10/13/2017
 
 ---
 
-# <a name="inventory-object-values"></a><span data-ttu-id="d98ad-103">Bestandsobjektwerte</span><span class="sxs-lookup"><span data-stu-id="d98ad-103">Inventory object values</span></span>
+# <a name="inventory-object-values"></a><span data-ttu-id="7beba-103">Bestandsobjektwerte</span><span class="sxs-lookup"><span data-stu-id="7beba-103">Inventory object values</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="d98ad-104">Dieser Artikel erläutert, wie die Werte eines Bestandsobjekts berechnet werden.</span><span class="sxs-lookup"><span data-stu-id="d98ad-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
+<span data-ttu-id="7beba-104">Dieser Artikel erläutert, wie die Werte eines Bestandsobjekts berechnet werden.</span><span class="sxs-lookup"><span data-stu-id="7beba-104">This article provides information about how the values of an inventory object are calculated.</span></span> 
 
-<span data-ttu-id="d98ad-105">Eine Neuen Funktionen mit der Bezeichnung, **physische Menge** zeigt die Werte eines bestimmten Bestandsobjekts an.</span><span class="sxs-lookup"><span data-stu-id="d98ad-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
+<span data-ttu-id="7beba-105">Eine Neuen Funktionen mit der Bezeichnung, **physische Menge** zeigt die Werte eines bestimmten Bestandsobjekts an.</span><span class="sxs-lookup"><span data-stu-id="7beba-105">A new functionality that is named **physical quantity** lets you see the values of a specific inventory object.</span></span> 
 
-<span data-ttu-id="d98ad-106">Ein Kostenobjekt stellt die Entitätsebene dar, in der Bestandsbuchhaltung ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="d98ad-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="d98ad-107">Weitere Informationen zu den Kostenobjekten finden Sie unter [Kostenobjekte](cost-object.md).</span><span class="sxs-lookup"><span data-stu-id="d98ad-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
+<span data-ttu-id="7beba-106">Ein Kostenobjekt stellt die Entitätsebene dar, in der Bestandsbuchhaltung ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="7beba-106">A cost object represents the entity level where inventory accounting is performed.</span></span> <span data-ttu-id="7beba-107">Weitere Informationen zu den Kostenobjekten finden Sie unter [Kostenobjekte](cost-object.md).</span><span class="sxs-lookup"><span data-stu-id="7beba-107">For more information about cost objects, see [Cost objects](cost-object.md).</span></span> 
 
-<span data-ttu-id="d98ad-108">Damit die Werte eines bestimmten Bestandsobjekts anzuzeigen, klicken Sie **Physische Menge** auf der Seite **Kostenträger**.</span><span class="sxs-lookup"><span data-stu-id="d98ad-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="d98ad-109">Hier wird dargestellt, wie der Wert eines Bestandsobjekts berechnet wird:</span><span class="sxs-lookup"><span data-stu-id="d98ad-109">Here is how the value of an inventory object is calculated:</span></span> 
+<span data-ttu-id="7beba-108">Damit die Werte eines bestimmten Bestandsobjekts anzuzeigen, klicken Sie **Physische Menge** auf der Seite **Kostenträger**.</span><span class="sxs-lookup"><span data-stu-id="7beba-108">To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page.</span></span> <span data-ttu-id="7beba-109">Hier wird dargestellt, wie der Wert eines Bestandsobjekts berechnet wird:</span><span class="sxs-lookup"><span data-stu-id="7beba-109">Here is how the value of an inventory object is calculated:</span></span> 
 
-<span data-ttu-id="d98ad-110">Bestandsobjekt. Wert = Kostenträger. Durchschnittliche Einheitenkosten × Bestandsobjekt. Menge</span><span class="sxs-lookup"><span data-stu-id="d98ad-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
+<span data-ttu-id="7beba-110">Bestandsobjekt. Wert = Kostenträger. Durchschnittliche Einheitenkosten × Bestandsobjekt. Menge</span><span class="sxs-lookup"><span data-stu-id="7beba-110">Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity</span></span> 
 
-<span data-ttu-id="d98ad-111">Die folgenden Beispiele zeigen, wie die Werte eines Bestandsobjekts und des Kostenträgers berechnet werden.</span><span class="sxs-lookup"><span data-stu-id="d98ad-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="d98ad-112">Zwei Produktzugangsereignisse werden auf Artikel A erfasst:</span><span class="sxs-lookup"><span data-stu-id="d98ad-112">Two product receipt events are registered on item A:</span></span>
+<span data-ttu-id="7beba-111">Die folgenden Beispiele zeigen, wie die Werte eines Bestandsobjekts und des Kostenträgers berechnet werden.</span><span class="sxs-lookup"><span data-stu-id="7beba-111">The following example shows how the values of an inventory object and a cost object are calculated.</span></span> <span data-ttu-id="7beba-112">Zwei Produktzugangsereignisse werden auf Artikel A erfasst:</span><span class="sxs-lookup"><span data-stu-id="7beba-112">Two product receipt events are registered on item A:</span></span>
 
--   <span data-ttu-id="d98ad-113">Produktzugang 1: Menge = 100 PCs, Betrag = 1.000,00 €, Standort = 1, Lagerort =11, Chargennummer</span><span class="sxs-lookup"><span data-stu-id="d98ad-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="d98ad-114">= B1</span><span class="sxs-lookup"><span data-stu-id="d98ad-114">= B1</span></span>
--   <span data-ttu-id="d98ad-115">Produktzugang 2: Menge = 50 PCs, Betrag = 800,00 €, Standort = 1, Lagerort =11, Chargennummer</span><span class="sxs-lookup"><span data-stu-id="d98ad-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="d98ad-116">= B2</span><span class="sxs-lookup"><span data-stu-id="d98ad-116">= B2</span></span>
+-   <span data-ttu-id="7beba-113">Produktzugang 1: Menge = 100 PCs, Betrag = 1.000,00 €, Standort = 1, Lagerort =11, Chargennummer</span><span class="sxs-lookup"><span data-stu-id="7beba-113">Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="7beba-114">= B1</span><span class="sxs-lookup"><span data-stu-id="7beba-114">= B1</span></span>
+-   <span data-ttu-id="7beba-115">Produktzugang 2: Menge = 50 PCs, Betrag = 800,00 €, Standort = 1, Lagerort =11, Chargennummer</span><span class="sxs-lookup"><span data-stu-id="7beba-115">Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No.</span></span> <span data-ttu-id="7beba-116">= B2</span><span class="sxs-lookup"><span data-stu-id="7beba-116">= B2</span></span>
 
-<span data-ttu-id="d98ad-117">In der folgenden Tabelle wird das Berechnungsergebnis für einen Kostenträger angezeigt.</span><span class="sxs-lookup"><span data-stu-id="d98ad-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="d98ad-118">Das Ergebnis sehen Sie auf der Seite **Kostenobjekt**.</span><span class="sxs-lookup"><span data-stu-id="d98ad-118">You can view the result on the **Cost object** page.</span></span>
+<span data-ttu-id="7beba-117">In der folgenden Tabelle wird das Berechnungsergebnis für einen Kostenträger angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7beba-117">The following table shows the calculation result for a cost object.</span></span> <span data-ttu-id="7beba-118">Das Ergebnis sehen Sie auf der Seite **Kostenobjekt**.</span><span class="sxs-lookup"><span data-stu-id="7beba-118">You can view the result on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -61,29 +61,29 @@ ms.lasthandoff: 07/18/2017
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="d98ad-119">Objekttyp</span><span class="sxs-lookup"><span data-stu-id="d98ad-119">Object type</span></span></th>
-<th><span data-ttu-id="d98ad-120">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="d98ad-120">Item number</span></span></th>
-<th><span data-ttu-id="d98ad-121">Standort</span><span class="sxs-lookup"><span data-stu-id="d98ad-121">Site</span></span></th>
-<th><span data-ttu-id="d98ad-122">Menge</span><span class="sxs-lookup"><span data-stu-id="d98ad-122">Quantity</span></span></th>
-<th><span data-ttu-id="d98ad-123">Lagereinheit</span><span class="sxs-lookup"><span data-stu-id="d98ad-123">Inventory unit</span></span></th>
-<th><span data-ttu-id="d98ad-124">Wert</span><span class="sxs-lookup"><span data-stu-id="d98ad-124">Value</span></span></th>
-<th><span data-ttu-id="d98ad-125">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="d98ad-125">Average unit cost</span></span></th>
+<th><span data-ttu-id="7beba-119">Objekttyp</span><span class="sxs-lookup"><span data-stu-id="7beba-119">Object type</span></span></th>
+<th><span data-ttu-id="7beba-120">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="7beba-120">Item number</span></span></th>
+<th><span data-ttu-id="7beba-121">Standort</span><span class="sxs-lookup"><span data-stu-id="7beba-121">Site</span></span></th>
+<th><span data-ttu-id="7beba-122">Menge</span><span class="sxs-lookup"><span data-stu-id="7beba-122">Quantity</span></span></th>
+<th><span data-ttu-id="7beba-123">Lagereinheit</span><span class="sxs-lookup"><span data-stu-id="7beba-123">Inventory unit</span></span></th>
+<th><span data-ttu-id="7beba-124">Wert</span><span class="sxs-lookup"><span data-stu-id="7beba-124">Value</span></span></th>
+<th><span data-ttu-id="7beba-125">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="7beba-125">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="d98ad-126">Kostenobjekt</span><span class="sxs-lookup"><span data-stu-id="d98ad-126">Cost object</span></span></td>
-<td><span data-ttu-id="d98ad-127">A:</span><span class="sxs-lookup"><span data-stu-id="d98ad-127">A</span></span></td>
-<td><span data-ttu-id="d98ad-128">1</span><span class="sxs-lookup"><span data-stu-id="d98ad-128">1</span></span></td>
-<td><span data-ttu-id="d98ad-129">150</span><span class="sxs-lookup"><span data-stu-id="d98ad-129">150</span></span></td>
-<td><span data-ttu-id="d98ad-130">Stck.</span><span class="sxs-lookup"><span data-stu-id="d98ad-130">Pcs.</span></span></td>
-<td><p><span data-ttu-id="d98ad-131">1800,00 €</span><span class="sxs-lookup"><span data-stu-id="d98ad-131">$1800.00</span></span></p></td>
-<td><p><span data-ttu-id="d98ad-132">12,00 €</span><span class="sxs-lookup"><span data-stu-id="d98ad-132">$12.00</span></span></p></td>
+<td><span data-ttu-id="7beba-126">Kostenobjekt</span><span class="sxs-lookup"><span data-stu-id="7beba-126">Cost object</span></span></td>
+<td><span data-ttu-id="7beba-127">A:</span><span class="sxs-lookup"><span data-stu-id="7beba-127">A</span></span></td>
+<td><span data-ttu-id="7beba-128">1</span><span class="sxs-lookup"><span data-stu-id="7beba-128">1</span></span></td>
+<td><span data-ttu-id="7beba-129">150</span><span class="sxs-lookup"><span data-stu-id="7beba-129">150</span></span></td>
+<td><span data-ttu-id="7beba-130">Stck.</span><span class="sxs-lookup"><span data-stu-id="7beba-130">Pcs.</span></span></td>
+<td><p><span data-ttu-id="7beba-131">1800,00 €</span><span class="sxs-lookup"><span data-stu-id="7beba-131">$1800.00</span></span></p></td>
+<td><p><span data-ttu-id="7beba-132">12,00 €</span><span class="sxs-lookup"><span data-stu-id="7beba-132">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="d98ad-133">In der folgenden Tabelle wird das Berechnungsergebnis für ein Bestandsobjekt angezeigt.</span><span class="sxs-lookup"><span data-stu-id="d98ad-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="d98ad-134">Das Ergebnis sehen Sie, wenn Sie auf der Seite **Physische Menge** auf der Seite **Kostenobjekt** klicken.</span><span class="sxs-lookup"><span data-stu-id="d98ad-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
+<span data-ttu-id="7beba-133">In der folgenden Tabelle wird das Berechnungsergebnis für ein Bestandsobjekt angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7beba-133">The following table shows the calculation result for an inventory object.</span></span> <span data-ttu-id="7beba-134">Das Ergebnis sehen Sie, wenn Sie auf der Seite **Physische Menge** auf der Seite **Kostenobjekt** klicken.</span><span class="sxs-lookup"><span data-stu-id="7beba-134">You can view the result by clicking **Physical quantity** on the **Cost object** page.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -99,53 +99,53 @@ ms.lasthandoff: 07/18/2017
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="d98ad-135">Objekttyp</span><span class="sxs-lookup"><span data-stu-id="d98ad-135">Object type</span></span></th>
-<th><span data-ttu-id="d98ad-136">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="d98ad-136">Item number</span></span></th>
-<th><span data-ttu-id="d98ad-137">Standort</span><span class="sxs-lookup"><span data-stu-id="d98ad-137">Site</span></span></th>
-<th><span data-ttu-id="d98ad-138">Lagerort</span><span class="sxs-lookup"><span data-stu-id="d98ad-138">Warehouse</span></span></th>
-<th><span data-ttu-id="d98ad-139">Chargennummer</span><span class="sxs-lookup"><span data-stu-id="d98ad-139">Batch No.</span></span></th>
-<th><span data-ttu-id="d98ad-140">Menge</span><span class="sxs-lookup"><span data-stu-id="d98ad-140">Quantity</span></span></th>
-<th><span data-ttu-id="d98ad-141">Lagereinheit</span><span class="sxs-lookup"><span data-stu-id="d98ad-141">Inventory unit</span></span></th>
-<th><span data-ttu-id="d98ad-142">Wert</span><span class="sxs-lookup"><span data-stu-id="d98ad-142">Value</span></span></th>
-<th><span data-ttu-id="d98ad-143">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="d98ad-143">Average unit cost</span></span></th>
+<th><span data-ttu-id="7beba-135">Objekttyp</span><span class="sxs-lookup"><span data-stu-id="7beba-135">Object type</span></span></th>
+<th><span data-ttu-id="7beba-136">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="7beba-136">Item number</span></span></th>
+<th><span data-ttu-id="7beba-137">Standort</span><span class="sxs-lookup"><span data-stu-id="7beba-137">Site</span></span></th>
+<th><span data-ttu-id="7beba-138">Lagerort</span><span class="sxs-lookup"><span data-stu-id="7beba-138">Warehouse</span></span></th>
+<th><span data-ttu-id="7beba-139">Chargennummer</span><span class="sxs-lookup"><span data-stu-id="7beba-139">Batch No.</span></span></th>
+<th><span data-ttu-id="7beba-140">Menge</span><span class="sxs-lookup"><span data-stu-id="7beba-140">Quantity</span></span></th>
+<th><span data-ttu-id="7beba-141">Lagereinheit</span><span class="sxs-lookup"><span data-stu-id="7beba-141">Inventory unit</span></span></th>
+<th><span data-ttu-id="7beba-142">Wert</span><span class="sxs-lookup"><span data-stu-id="7beba-142">Value</span></span></th>
+<th><span data-ttu-id="7beba-143">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="7beba-143">Average unit cost</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="d98ad-144">Bestandsobjekt</span><span class="sxs-lookup"><span data-stu-id="d98ad-144">Inventory object</span></span></td>
-<td><span data-ttu-id="d98ad-145">A:</span><span class="sxs-lookup"><span data-stu-id="d98ad-145">A</span></span></td>
-<td><span data-ttu-id="d98ad-146">1</span><span class="sxs-lookup"><span data-stu-id="d98ad-146">1</span></span></td>
-<td><span data-ttu-id="d98ad-147">11</span><span class="sxs-lookup"><span data-stu-id="d98ad-147">11</span></span></td>
-<td><span data-ttu-id="d98ad-148">B1</span><span class="sxs-lookup"><span data-stu-id="d98ad-148">B1</span></span></td>
-<td><span data-ttu-id="d98ad-149">100</span><span class="sxs-lookup"><span data-stu-id="d98ad-149">100</span></span></td>
-<td><span data-ttu-id="d98ad-150">Stck.</span><span class="sxs-lookup"><span data-stu-id="d98ad-150">Pcs.</span></span></td>
-<td><p><span data-ttu-id="d98ad-151">1200,00 €</span><span class="sxs-lookup"><span data-stu-id="d98ad-151">$1200.00</span></span></p></td>
-<td><p><span data-ttu-id="d98ad-152">12,00 €</span><span class="sxs-lookup"><span data-stu-id="d98ad-152">$12.00</span></span></p></td>
+<td><span data-ttu-id="7beba-144">Bestandsobjekt</span><span class="sxs-lookup"><span data-stu-id="7beba-144">Inventory object</span></span></td>
+<td><span data-ttu-id="7beba-145">A:</span><span class="sxs-lookup"><span data-stu-id="7beba-145">A</span></span></td>
+<td><span data-ttu-id="7beba-146">1</span><span class="sxs-lookup"><span data-stu-id="7beba-146">1</span></span></td>
+<td><span data-ttu-id="7beba-147">11</span><span class="sxs-lookup"><span data-stu-id="7beba-147">11</span></span></td>
+<td><span data-ttu-id="7beba-148">B1</span><span class="sxs-lookup"><span data-stu-id="7beba-148">B1</span></span></td>
+<td><span data-ttu-id="7beba-149">100</span><span class="sxs-lookup"><span data-stu-id="7beba-149">100</span></span></td>
+<td><span data-ttu-id="7beba-150">Stck.</span><span class="sxs-lookup"><span data-stu-id="7beba-150">Pcs.</span></span></td>
+<td><p><span data-ttu-id="7beba-151">1200,00 €</span><span class="sxs-lookup"><span data-stu-id="7beba-151">$1200.00</span></span></p></td>
+<td><p><span data-ttu-id="7beba-152">12,00 €</span><span class="sxs-lookup"><span data-stu-id="7beba-152">$12.00</span></span></p></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="d98ad-153">Bestandsobjekt</span><span class="sxs-lookup"><span data-stu-id="d98ad-153">Inventory object</span></span></td>
-<td><span data-ttu-id="d98ad-154">A:</span><span class="sxs-lookup"><span data-stu-id="d98ad-154">A</span></span></td>
-<td><span data-ttu-id="d98ad-155">1</span><span class="sxs-lookup"><span data-stu-id="d98ad-155">1</span></span></td>
-<td><span data-ttu-id="d98ad-156">11</span><span class="sxs-lookup"><span data-stu-id="d98ad-156">11</span></span></td>
-<td><span data-ttu-id="d98ad-157">B2</span><span class="sxs-lookup"><span data-stu-id="d98ad-157">B2</span></span></td>
-<td><span data-ttu-id="d98ad-158">50</span><span class="sxs-lookup"><span data-stu-id="d98ad-158">50</span></span></td>
-<td><span data-ttu-id="d98ad-159">Stck.</span><span class="sxs-lookup"><span data-stu-id="d98ad-159">Pcs.</span></span></td>
-<td><p><span data-ttu-id="d98ad-160">600,00 €</span><span class="sxs-lookup"><span data-stu-id="d98ad-160">$600.00</span></span></p></td>
-<td><p><span data-ttu-id="d98ad-161">12,00 €</span><span class="sxs-lookup"><span data-stu-id="d98ad-161">$12.00</span></span></p></td>
+<td><span data-ttu-id="7beba-153">Bestandsobjekt</span><span class="sxs-lookup"><span data-stu-id="7beba-153">Inventory object</span></span></td>
+<td><span data-ttu-id="7beba-154">A:</span><span class="sxs-lookup"><span data-stu-id="7beba-154">A</span></span></td>
+<td><span data-ttu-id="7beba-155">1</span><span class="sxs-lookup"><span data-stu-id="7beba-155">1</span></span></td>
+<td><span data-ttu-id="7beba-156">11</span><span class="sxs-lookup"><span data-stu-id="7beba-156">11</span></span></td>
+<td><span data-ttu-id="7beba-157">B2</span><span class="sxs-lookup"><span data-stu-id="7beba-157">B2</span></span></td>
+<td><span data-ttu-id="7beba-158">50</span><span class="sxs-lookup"><span data-stu-id="7beba-158">50</span></span></td>
+<td><span data-ttu-id="7beba-159">Stck.</span><span class="sxs-lookup"><span data-stu-id="7beba-159">Pcs.</span></span></td>
+<td><p><span data-ttu-id="7beba-160">600,00 €</span><span class="sxs-lookup"><span data-stu-id="7beba-160">$600.00</span></span></p></td>
+<td><p><span data-ttu-id="7beba-161">12,00 €</span><span class="sxs-lookup"><span data-stu-id="7beba-161">$12.00</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
 
-<a name="see-also"></a><span data-ttu-id="d98ad-162">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d98ad-162">See also</span></span>
+<a name="see-also"></a><span data-ttu-id="7beba-162">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7beba-162">See also</span></span>
 --------
 
-[<span data-ttu-id="d98ad-163">Kostenobjekte</span><span class="sxs-lookup"><span data-stu-id="d98ad-163">Cost objects</span></span>](cost-object.md)
+[<span data-ttu-id="7beba-163">Kostenobjekte</span><span class="sxs-lookup"><span data-stu-id="7beba-163">Cost objects</span></span>](cost-object.md)
 
-[<span data-ttu-id="d98ad-164">Kosteneinträge</span><span class="sxs-lookup"><span data-stu-id="d98ad-164">Cost entries</span></span>](cost-entries.md)
+[<span data-ttu-id="7beba-164">Kosteneinträge</span><span class="sxs-lookup"><span data-stu-id="7beba-164">Cost entries</span></span>](cost-entries.md)
 
-[<span data-ttu-id="d98ad-165">Neuheiten und Änderungen</span><span class="sxs-lookup"><span data-stu-id="d98ad-165">What's new and changed</span></span>](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed)
+[<span data-ttu-id="7beba-165">Neuheiten und Änderungen</span><span class="sxs-lookup"><span data-stu-id="7beba-165">What's new and changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
 
 
 

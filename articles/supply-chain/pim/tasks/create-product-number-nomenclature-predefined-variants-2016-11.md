@@ -16,45 +16,45 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 6294e4608b31c37aa713e3a7a2028b409b5a8366
 ms.contentlocale: de-de
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-a-product-number-for-predefined-product-variants"></a><span data-ttu-id="03a64-103">Produktnummer für vordefinierte Produktvarianten erstellen</span><span class="sxs-lookup"><span data-stu-id="03a64-103">Create a product number for predefined product variants</span></span>
+# <a name="create-a-product-number-for-predefined-product-variants"></a><span data-ttu-id="353ed-103">Produktnummer für vordefinierte Produktvarianten erstellen</span><span class="sxs-lookup"><span data-stu-id="353ed-103">Create a product number for predefined product variants</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="03a64-104">Diese Verfahren zeigt, wie eine Produktnummerenbezeichnung für vordefinierte Produktvarianten eingerichtet wird und sie der passenden Produktdimensionsgruppe zugeordnet werden kann.</span><span class="sxs-lookup"><span data-stu-id="03a64-104">This guide shows you how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group.</span></span> <span data-ttu-id="03a64-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="03a64-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="03a64-106">Die neue Produktnummernnomenklatur wird der Produktdimensionsgruppe Farbe und Größe zuweisen.</span><span class="sxs-lookup"><span data-stu-id="03a64-106">The new product number nomenclature is assigned to the Color and Size product dimension group.</span></span> <span data-ttu-id="03a64-107">Diese Aufgabe erfolgt in der Regel durch einen Produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="03a64-107">This task would typically be done by a product designer.</span></span>
+<span data-ttu-id="353ed-104">Diese Verfahren zeigt, wie eine Produktnummerenbezeichnung für vordefinierte Produktvarianten eingerichtet wird und sie der passenden Produktdimensionsgruppe zugeordnet werden kann.</span><span class="sxs-lookup"><span data-stu-id="353ed-104">This guide shows you how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group.</span></span> <span data-ttu-id="353ed-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="353ed-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="353ed-106">Die neue Produktnummernnomenklatur wird der Produktdimensionsgruppe Farbe und Größe zuweisen.</span><span class="sxs-lookup"><span data-stu-id="353ed-106">The new product number nomenclature is assigned to the Color and Size product dimension group.</span></span> <span data-ttu-id="353ed-107">Diese Aufgabe erfolgt in der Regel durch einen Produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="353ed-107">This task would typically be done by a product designer.</span></span>
 
 
-## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="03a64-108">Erstellen eine Produktnummerbezeichnung</span><span class="sxs-lookup"><span data-stu-id="03a64-108">Create a product number nomenclature</span></span>
-1. <span data-ttu-id="03a64-109">Klicken Sie auf "Produktvariantenmodell-Definition".</span><span class="sxs-lookup"><span data-stu-id="03a64-109">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="03a64-110">Klicken Sie auf "Produktbezeichnung".</span><span class="sxs-lookup"><span data-stu-id="03a64-110">Click Product nomenclature.</span></span>
-3. <span data-ttu-id="03a64-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="03a64-111">Click New.</span></span>
-4. <span data-ttu-id="03a64-112">Geben Sie im Feld Name einen Nomenklaturnamen ein, der die Zielproduktdimensionsgruppe identifiziert (beispielsweise ColorSize).</span><span class="sxs-lookup"><span data-stu-id="03a64-112">In the Name field, enter a nomenclature name that helps to identify the target product dimension group, for example, ColorSize..</span></span>
-5. <span data-ttu-id="03a64-113">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="03a64-113">In the Description field, type a value.</span></span>
-6. <span data-ttu-id="03a64-114">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="03a64-114">Click Add.</span></span>
-7. <span data-ttu-id="03a64-115">Klicken Sie auf "Produktmasternummer".</span><span class="sxs-lookup"><span data-stu-id="03a64-115">Click Product master number.</span></span>
-8. <span data-ttu-id="03a64-116">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="03a64-116">Click Add.</span></span>
-9. <span data-ttu-id="03a64-117">Klicken Sie auf Textkonstante.</span><span class="sxs-lookup"><span data-stu-id="03a64-117">Click Text constant.</span></span>
-10. <span data-ttu-id="03a64-118">Geben Sie im Feld "Text" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="03a64-118">In the Text field, type a value.</span></span>
-11. <span data-ttu-id="03a64-119">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="03a64-119">Click Add.</span></span>
-12. <span data-ttu-id="03a64-120">Klicken Sie auf "Farbe".</span><span class="sxs-lookup"><span data-stu-id="03a64-120">Click Color.</span></span>
-13. <span data-ttu-id="03a64-121">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="03a64-121">Click Add.</span></span>
-14. <span data-ttu-id="03a64-122">Klicken Sie auf Textkonstante.</span><span class="sxs-lookup"><span data-stu-id="03a64-122">Click Text constant.</span></span>
-15. <span data-ttu-id="03a64-123">Geben Sie im Feld "Text" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="03a64-123">In the Text field, type a value.</span></span>
-16. <span data-ttu-id="03a64-124">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="03a64-124">Click Add.</span></span>
-17. <span data-ttu-id="03a64-125">Klicken Sie auf Größe.</span><span class="sxs-lookup"><span data-stu-id="03a64-125">Click Size.</span></span>
-18. <span data-ttu-id="03a64-126">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="03a64-126">Close the page.</span></span>
+## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="353ed-108">Erstellen eine Produktnummerbezeichnung</span><span class="sxs-lookup"><span data-stu-id="353ed-108">Create a product number nomenclature</span></span>
+1. <span data-ttu-id="353ed-109">Klicken Sie auf "Produktvariantenmodell-Definition".</span><span class="sxs-lookup"><span data-stu-id="353ed-109">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="353ed-110">Klicken Sie auf "Produktbezeichnung".</span><span class="sxs-lookup"><span data-stu-id="353ed-110">Click Product nomenclature.</span></span>
+3. <span data-ttu-id="353ed-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="353ed-111">Click New.</span></span>
+4. <span data-ttu-id="353ed-112">Geben Sie im Feld Name einen Nomenklaturnamen ein, der die Zielproduktdimensionsgruppe identifiziert (beispielsweise ColorSize).</span><span class="sxs-lookup"><span data-stu-id="353ed-112">In the Name field, enter a nomenclature name that helps to identify the target product dimension group, for example, ColorSize..</span></span>
+5. <span data-ttu-id="353ed-113">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="353ed-113">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="353ed-114">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="353ed-114">Click Add.</span></span>
+7. <span data-ttu-id="353ed-115">Klicken Sie auf "Produktmasternummer".</span><span class="sxs-lookup"><span data-stu-id="353ed-115">Click Product master number.</span></span>
+8. <span data-ttu-id="353ed-116">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="353ed-116">Click Add.</span></span>
+9. <span data-ttu-id="353ed-117">Klicken Sie auf Textkonstante.</span><span class="sxs-lookup"><span data-stu-id="353ed-117">Click Text constant.</span></span>
+10. <span data-ttu-id="353ed-118">Geben Sie im Feld "Text" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="353ed-118">In the Text field, type a value.</span></span>
+11. <span data-ttu-id="353ed-119">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="353ed-119">Click Add.</span></span>
+12. <span data-ttu-id="353ed-120">Klicken Sie auf "Farbe".</span><span class="sxs-lookup"><span data-stu-id="353ed-120">Click Color.</span></span>
+13. <span data-ttu-id="353ed-121">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="353ed-121">Click Add.</span></span>
+14. <span data-ttu-id="353ed-122">Klicken Sie auf Textkonstante.</span><span class="sxs-lookup"><span data-stu-id="353ed-122">Click Text constant.</span></span>
+15. <span data-ttu-id="353ed-123">Geben Sie im Feld "Text" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="353ed-123">In the Text field, type a value.</span></span>
+16. <span data-ttu-id="353ed-124">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="353ed-124">Click Add.</span></span>
+17. <span data-ttu-id="353ed-125">Klicken Sie auf Größe.</span><span class="sxs-lookup"><span data-stu-id="353ed-125">Click Size.</span></span>
+18. <span data-ttu-id="353ed-126">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="353ed-126">Close the page.</span></span>
 
-## <a name="assign-the-nomenclature-to-a-product-master"></a><span data-ttu-id="03a64-127">Zuweisen der Nomenklatur zu einem Produktmaster</span><span class="sxs-lookup"><span data-stu-id="03a64-127">Assign the nomenclature to a product master</span></span>
-1. <span data-ttu-id="03a64-128">Klicken Sie auf "Produktdimensionsgruppen".</span><span class="sxs-lookup"><span data-stu-id="03a64-128">Click Product dimension groups.</span></span>
-2. <span data-ttu-id="03a64-129">Wählen Sie die Dimensionsgruppe "SizeCol".</span><span class="sxs-lookup"><span data-stu-id="03a64-129">Select the SizeCol product dimension group.</span></span>
-3. <span data-ttu-id="03a64-130">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="03a64-130">Click Edit.</span></span>
-4. <span data-ttu-id="03a64-131">Wählen Sie "Ja" im Feld "Bezeichnungen verwenden".</span><span class="sxs-lookup"><span data-stu-id="03a64-131">Select Yes in the Use nomenclature field.</span></span>
-5. <span data-ttu-id="03a64-132">Geben Sie im Feld "Produktvariantennummerbezeichnung" eine Bezeichnung ein oder wählen Sie eine aus.</span><span class="sxs-lookup"><span data-stu-id="03a64-132">In the Product variant number nomenclature field, enter or select a value.</span></span>
-6. <span data-ttu-id="03a64-133">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="03a64-133">Close the page.</span></span>
+## <a name="assign-the-nomenclature-to-a-product-master"></a><span data-ttu-id="353ed-127">Zuweisen der Nomenklatur zu einem Produktmaster</span><span class="sxs-lookup"><span data-stu-id="353ed-127">Assign the nomenclature to a product master</span></span>
+1. <span data-ttu-id="353ed-128">Klicken Sie auf "Produktdimensionsgruppen".</span><span class="sxs-lookup"><span data-stu-id="353ed-128">Click Product dimension groups.</span></span>
+2. <span data-ttu-id="353ed-129">Wählen Sie die Dimensionsgruppe "SizeCol".</span><span class="sxs-lookup"><span data-stu-id="353ed-129">Select the SizeCol product dimension group.</span></span>
+3. <span data-ttu-id="353ed-130">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="353ed-130">Click Edit.</span></span>
+4. <span data-ttu-id="353ed-131">Wählen Sie "Ja" im Feld "Bezeichnungen verwenden".</span><span class="sxs-lookup"><span data-stu-id="353ed-131">Select Yes in the Use nomenclature field.</span></span>
+5. <span data-ttu-id="353ed-132">Geben Sie im Feld "Produktvariantennummerbezeichnung" eine Bezeichnung ein oder wählen Sie eine aus.</span><span class="sxs-lookup"><span data-stu-id="353ed-132">In the Product variant number nomenclature field, enter or select a value.</span></span>
+6. <span data-ttu-id="353ed-133">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="353ed-133">Close the page.</span></span>
 
 

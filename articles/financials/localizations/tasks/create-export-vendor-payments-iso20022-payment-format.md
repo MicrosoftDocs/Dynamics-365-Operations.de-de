@@ -16,40 +16,40 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 7cc90bc86cd489b124a806c480632dd53ba47f3f
 ms.contentlocale: de-de
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a><span data-ttu-id="b25fd-103">Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren</span><span class="sxs-lookup"><span data-stu-id="b25fd-103">Create and export vendor payments using ISO20022 payment format</span></span>
+# <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a><span data-ttu-id="cc4fe-103">Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren</span><span class="sxs-lookup"><span data-stu-id="cc4fe-103">Create and export vendor payments using ISO20022 payment format</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b25fd-104">Diese Prozedur zeigt, wie Sie Zahlungspositionen in der Kreditorzahlungserfassung erstellen und eine Kreditorenzahlungsdatei über die ISO2022 Kreditübertragung erstellen.</span><span class="sxs-lookup"><span data-stu-id="b25fd-104">This procedure shows how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.</span></span> 
+<span data-ttu-id="cc4fe-104">Diese Prozedur zeigt, wie Sie Zahlungspositionen in der Kreditorzahlungserfassung erstellen und eine Kreditorenzahlungsdatei über die ISO2022 Kreditübertragung erstellen.</span><span class="sxs-lookup"><span data-stu-id="cc4fe-104">This procedure shows how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.</span></span> 
 
-<span data-ttu-id="b25fd-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF.</span><span class="sxs-lookup"><span data-stu-id="b25fd-105">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="cc4fe-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF.</span><span class="sxs-lookup"><span data-stu-id="cc4fe-105">The demo data company used to create this procedure is DEMF.</span></span>
 
-<span data-ttu-id="b25fd-106">Dies ist der fünfte von fünf Aufgaben, die das Verfahren für Kreditorenzahlung über elektronischen Berichterstellungskonfigurationen zeigen.</span><span class="sxs-lookup"><span data-stu-id="b25fd-106">This is the fifth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="b25fd-107">Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="b25fd-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="cc4fe-106">Dies ist der fünfte von fünf Aufgaben, die das Verfahren für Kreditorenzahlung über elektronischen Berichterstellungskonfigurationen zeigen.</span><span class="sxs-lookup"><span data-stu-id="cc4fe-106">This is the fifth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="cc4fe-107">Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="cc4fe-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-payment-lines"></a><span data-ttu-id="b25fd-108">Zahlungspositionen erstellen</span><span class="sxs-lookup"><span data-stu-id="b25fd-108">Create payment lines</span></span>
-1. <span data-ttu-id="b25fd-109">Wechseln Sie zu "Kreditoren" > "Zahlungen" > "Zahlungserfassung".</span><span class="sxs-lookup"><span data-stu-id="b25fd-109">Go to Accounts payable > Payments > Payment journal.</span></span>
-2. <span data-ttu-id="b25fd-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b25fd-110">Click New.</span></span>
-3. <span data-ttu-id="b25fd-111">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="b25fd-111">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="b25fd-112">Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b25fd-112">In the Name field, enter or select a value.</span></span>
-5. <span data-ttu-id="b25fd-113">Klicken Sie auf "Positionen".</span><span class="sxs-lookup"><span data-stu-id="b25fd-113">Click Lines.</span></span>
-6. <span data-ttu-id="b25fd-114">Klicken Sie auf "Zahlungsvorschlag".</span><span class="sxs-lookup"><span data-stu-id="b25fd-114">Click Payment proposal.</span></span>
-7. <span data-ttu-id="b25fd-115">Klicken Sie auf "Zahlungsvorschlag erstellen".</span><span class="sxs-lookup"><span data-stu-id="b25fd-115">Click Create payment proposal.</span></span>
-8. <span data-ttu-id="b25fd-116">Erweitern Sie den Abschnitt "Einzuschließende Datensätze".</span><span class="sxs-lookup"><span data-stu-id="b25fd-116">Expand the Records to include section.</span></span>
-9. <span data-ttu-id="b25fd-117">Klicken Sie auf "Filter".</span><span class="sxs-lookup"><span data-stu-id="b25fd-117">Click Filter.</span></span>
-10. <span data-ttu-id="b25fd-118">In der Liste wählen Sie die Zeile für Tabelle und das Feld "Kreditorenkonto" aus.</span><span class="sxs-lookup"><span data-stu-id="b25fd-118">In the list, select the row for Vendors table and Vendor account field.</span></span>
-11. <span data-ttu-id="b25fd-119">Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b25fd-119">In the Criteria field, enter or select a value.</span></span>
-    * <span data-ttu-id="b25fd-120">Sie können alle beliebigen Kriterien für die Auswahl von Kreditorenbuchungen anwenden. In diesem Beispiel verwenden Sie DE-001 als Kreditorenkonto.</span><span class="sxs-lookup"><span data-stu-id="b25fd-120">You can apply any criteria for selecting vendor transactions to pay, for this example use DE-001 as a vendor account.</span></span>  
-12. <span data-ttu-id="b25fd-121">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b25fd-121">Click OK.</span></span>
-13. <span data-ttu-id="b25fd-122">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b25fd-122">Click OK.</span></span>
-14. <span data-ttu-id="b25fd-123">Klicken Sie auf "Zahlungen erstellen".</span><span class="sxs-lookup"><span data-stu-id="b25fd-123">Click Create payments.</span></span>
+## <a name="create-payment-lines"></a><span data-ttu-id="cc4fe-108">Zahlungspositionen erstellen</span><span class="sxs-lookup"><span data-stu-id="cc4fe-108">Create payment lines</span></span>
+1. <span data-ttu-id="cc4fe-109">Wechseln Sie zu "Kreditoren" > "Zahlungen" > "Zahlungserfassung".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-109">Go to Accounts payable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="cc4fe-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-110">Click New.</span></span>
+3. <span data-ttu-id="cc4fe-111">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="cc4fe-111">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="cc4fe-112">Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="cc4fe-112">In the Name field, enter or select a value.</span></span>
+5. <span data-ttu-id="cc4fe-113">Klicken Sie auf "Positionen".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-113">Click Lines.</span></span>
+6. <span data-ttu-id="cc4fe-114">Klicken Sie auf "Zahlungsvorschlag".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-114">Click Payment proposal.</span></span>
+7. <span data-ttu-id="cc4fe-115">Klicken Sie auf "Zahlungsvorschlag erstellen".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-115">Click Create payment proposal.</span></span>
+8. <span data-ttu-id="cc4fe-116">Erweitern Sie den Abschnitt "Einzuschließende Datensätze".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-116">Expand the Records to include section.</span></span>
+9. <span data-ttu-id="cc4fe-117">Klicken Sie auf "Filter".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-117">Click Filter.</span></span>
+10. <span data-ttu-id="cc4fe-118">In der Liste wählen Sie die Zeile für Tabelle und das Feld "Kreditorenkonto" aus.</span><span class="sxs-lookup"><span data-stu-id="cc4fe-118">In the list, select the row for Vendors table and Vendor account field.</span></span>
+11. <span data-ttu-id="cc4fe-119">Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="cc4fe-119">In the Criteria field, enter or select a value.</span></span>
+    * <span data-ttu-id="cc4fe-120">Sie können alle beliebigen Kriterien für die Auswahl von Kreditorenbuchungen anwenden. In diesem Beispiel verwenden Sie DE-001 als Kreditorenkonto.</span><span class="sxs-lookup"><span data-stu-id="cc4fe-120">You can apply any criteria for selecting vendor transactions to pay, for this example use DE-001 as a vendor account.</span></span>  
+12. <span data-ttu-id="cc4fe-121">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-121">Click OK.</span></span>
+13. <span data-ttu-id="cc4fe-122">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-122">Click OK.</span></span>
+14. <span data-ttu-id="cc4fe-123">Klicken Sie auf "Zahlungen erstellen".</span><span class="sxs-lookup"><span data-stu-id="cc4fe-123">Click Create payments.</span></span>
 
-## <a name="generate-an-iso20022-payment-file"></a><span data-ttu-id="b25fd-124">ISO20022-Zahlungsdatei generieren</span><span class="sxs-lookup"><span data-stu-id="b25fd-124">Generate an ISO20022 payment file</span></span>
+## <a name="generate-an-iso20022-payment-file"></a><span data-ttu-id="cc4fe-124">ISO20022-Zahlungsdatei generieren</span><span class="sxs-lookup"><span data-stu-id="cc4fe-124">Generate an ISO20022 payment file</span></span>
 
 
