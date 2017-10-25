@@ -1,7 +1,7 @@
 --- 
 title: Produktmaster erstellen
 description: "Erstellen eines Produktmasters für vordefinierte Varianten."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e8d438da1524850c115f5c38865fac2f19f3ff5
+ms.sourcegitcommit: f944258e7efdd5c9eba7daf9a80c67058a6cc055
+ms.openlocfilehash: 6e5cf92f7736523faf25ac97278a8a273e14ff88
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/25/2017
 
 ---
 # <a name="create-a-product-master"></a><span data-ttu-id="0e009-103">Produktmaster erstellen</span><span class="sxs-lookup"><span data-stu-id="0e009-103">Create a product master</span></span>
