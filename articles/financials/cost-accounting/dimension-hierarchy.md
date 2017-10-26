@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: YuyuScheller
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: dcbab70d2057a2eb252538a51343fa8bae16873d
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: cef54fa8109ebce0f8a6ca67c93afc30ec8a6781
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -329,9 +329,9 @@ Die Einstellungen für die Zugriffslistenhierarchie werden verwendet, um die Dat
 - Power BI:
 
     - Daten, die in den BI-Visualisierungen angezeigt werden
-    - Data Power BI-Visualisierungen, die im Client der Enterprise-Edition von Microsoft Dynamics 365 für Finance and Operations eingebettet werden
+    - Data Power BI-Visualisierungen, die im Client der Enterprise edition von Microsoft Dynamics 365 für Finance and Operations eingebettet werden
 
 > [!NOTE] 
-> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Positionsebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
+> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Positionsebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Die Zugriffslistenhierarchie hilft nicht bei der Sicherheit des Exports der Daten in Excel. Daher sollte dieses Berichtstool nur von Kostenbuchhaltern und Managern verwendet werden, die vollen Zugriff zum Anzeigen der Daten haben.
 

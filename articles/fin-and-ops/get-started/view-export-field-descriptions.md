@@ -16,13 +16,13 @@ ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
+ms.translationtype: HT
+ms.sourcegitcommit: 908f854e5ca50f4298110c08c87fefd9427b5cc9
+ms.openlocfilehash: 841c18630a59c3f5a7b51cd005962fa8a7f7163f
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Microsoft Dynamics 365 for Finance and Operations stellt Beschreibungen für ein
 
 Nicht alle Seiten haben Feldbeschreibungen. Wir möchten Beschreibungen nur für die komplexeren Felder bereitstellen, und nicht für Felder, bei denen die Verwendung offensichtlich ist. Daher verfügen einige Seiten über keine Feldbeschreibungen, andere über ein paar und komplexeren Seiten, wie ein Großteil der Parameter-Seiten, verfügen über viele Beschreibungen. 
 
-Wenn Sie Zugriff auf die Entwicklungsumgebung von Finance and Operations haben, können Sie neue Feldbeschreibungen hinzufügen. Beispielsweise können Sie einer Feldbeschreibung unternehmensspezifische Informationen hinzufügen. Weitere Informationen finden Sie unter [Feldhilfe anpassen](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
+Wenn Sie Zugriff auf die Entwicklungsumgebung von Finance and Operations haben, können Sie neue Feldbeschreibungen hinzufügen. Beispielsweise können Sie einer Feldbeschreibung unternehmensspezifische Informationen hinzufügen. Weitere Informationen finden Sie unter [Feldhilfe anpassen](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Siehe hierzu auch die Feldbeschreibungen auf der Benutzeroberfläche.
 Sie können Felder anzeigen, indem Sie über ein Feld fahren. Ist keine Beschreibung verfügbar, sehen Sie den Feldnamen beim Bewegen über das Feld. (Hinweis: In Dynamics AX, Version 7.0 (Februar 2016) können Feldbeschreibungen nur auf der Seite **Feldbeschreibungen** angezeigt werden). Die folgende Abbildung zeigt die Feldbeschreibung, die angezeigt wird, wenn Sie mit dem Mauszeiger über das Feld **Artikel während der Inventur sperren** fahren. 
@@ -101,7 +101,7 @@ Informationen über die verschiedenen Methoden zum Suchen von Seiten finden Sie 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Feldhilfe anpassen](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
+[Feldhilfe anpassen](../../dev-itpro/user-interface/customize-field-help.md)
 
 
 

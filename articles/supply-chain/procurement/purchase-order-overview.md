@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
-ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: c36795a071cc72721558bfa8984ecf1f47501c91
 ms.contentlocale: de-de
-ms.lasthandoff: 06/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -48,7 +48,7 @@ Der folgenden Artikel bieten einen Überblick über die verschiedenen Phasen, di
 -   [Bestellungserstellung](purchase-order-creation.md)
 -   [Genehmigen und Bestätigen von Bestellungen](purchase-order-approval-confirmation.md)
 -   [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
--   [Überblick über Kreditorenrechnungen](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
+-   [Überblick über Kreditorenrechnungen](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Typ der Bestellungen
 Es gibt drei Typen von Bestellungen: Wenn Sie eine Bestellung erstellen, muss der Typ für angegeben. Sie können auf der **Beschaffungsparameter**-Seite einen Standardauftragstyp für neue Aufträge einrichten.
@@ -92,7 +92,7 @@ Das **Genehmigungsstatus**-Feld wird verwendet, wenn eine Bestellung einen Über
 
 [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 
-[Überblick über Kreditorenrechnungen](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
+[Überblick über Kreditorenrechnungen](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 
 

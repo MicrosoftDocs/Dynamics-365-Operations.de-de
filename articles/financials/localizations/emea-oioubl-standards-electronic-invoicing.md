@@ -1,6 +1,6 @@
 ---
 title: "Unterstützte Standards für die elektronische Rechnungsstellung in Europa"
-description: "Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, in der europäischen Region."
+description: "Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, in der europäischen Region."
 author: mrolecki
 manager: AnnBe
 ms.date: 07/11/2017
@@ -15,13 +15,13 @@ ms.custom: 10274
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
 ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: c944fd20273623ce3f7d03a24546addbe987084e
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: d41f4d454bc3a763ca6658babde6c3a6a44be73d
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -45,7 +45,7 @@ Die folgenden länderspezifischen Formate elektronischer Rechnungen stehen zur V
 -   FacturaE v.3.2.1 für Spanien
 -   FatturaPA v.1.2 für Italien
 
-Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting). Es gibt ein **Kundenrechnungsmodell**-Datenmodell sowie mehrere länderspezifische elektronische Berichtsformatkonfigurationen für Österreich (AT), Dänemark (DK), Italien (IT), Norwegen (NO), Spanien (ES), Frankreich (FR), Belgien (BE) und die Niederlande (NL).
+Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung](../../dev-itpro/analytics/general-electronic-reporting.md). Es gibt ein **Kundenrechnungsmodell**-Datenmodell sowie mehrere länderspezifische elektronische Berichtsformatkonfigurationen für Österreich (AT), Dänemark (DK), Italien (IT), Norwegen (NO), Spanien (ES), Frankreich (FR), Belgien (BE) und die Niederlande (NL).
 
 -   OIOUBL Vertriebsrechnung – für AT, DK und NO
 -   OIOUBL Vertriebsgutschrift – für AT, DK und NO
@@ -71,7 +71,7 @@ Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserst
 Die von Ihnen erstellten elektronischen Rechnungen und Gutschriften enthalten die erforderlichen Informationen, wie beispielsweise die EAN-Nummer (European Article Numbering), den Ansprechpartner, die Kontonummer sowie Adressinformationen für den Kunden. Bei der Erstellung von Rechnungen werden Auswertungsregeln angewendet, Sie können also überprüfen, ob die richtigen Informationen eingetragen wurden. Welche Informationen gefordert werden, unterscheidet sich für die einzelnen Länder. Die Anforderungen und die unterstützten Länder und Formate verändern sich in unregelmäßigen Abständen, Sie sollten also immer die Shared Asset Library der Microsoft Dynamics Lifecycle-Services (LCS) besuchen und die aktuellste Liste der verfügbaren Dateien mit dem Anlagentyp der **GER-Konfiguration** abfragen.
 
 ## <a name="additional-information"></a>Weitere Informationen
-Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie in den folgenden [Aufgabenleitfäden](/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides) im Feld Hilfe:
+Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie in den folgenden [Aufgabenleitfäden](../../fin-and-ops/get-started/help-overview.md#task-guides) im Feld Hilfe:
 
  - Einrichten der elektronischen OIOUBL-Rechnungsstellung
  - Konfigurationen der elektronischen Fakturierung des Imports OIOUBL

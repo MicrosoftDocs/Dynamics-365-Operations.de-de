@@ -17,10 +17,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
-ms.openlocfilehash: fa587b04b2c614411270a13b32075809c2f71bf5
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: f840d37cd24636be67e3e9c9790d7cf6ed978319
 ms.contentlocale: de-de
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -222,7 +222,7 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Überblick über die elektronische Berichterstellung](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
+- [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Protokolldateikonfiguration importieren](./tasks/import-german-audit-file-configuration.md)
 - [Protokolldateikonfiguration anpassen](./tasks/customize-german-audit-file-configuration.md)
 - [Protokolldatei generieren](./tasks/german-audit-file.md)

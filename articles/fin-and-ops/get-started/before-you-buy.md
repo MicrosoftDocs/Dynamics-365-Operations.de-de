@@ -1,6 +1,6 @@
 ---
 title: Vor dem Kauf
-description: "Schrittweise Anleitung, die Sie anwenden, wenn Sie überlegen, Dynamics 365 for Finance and Operations, Enterprise-Edition, zu kaufen."
+description: "Schrittweise Anleitung, die Sie anwenden, wenn Sie überlegen, Dynamics 365 for Finance and Operations, Enterprise edition, zu kaufen."
 author: margoc
 manager: AnnBe
 ms.date: 07/10/2017
@@ -14,13 +14,13 @@ ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 21761
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 831550256176df6fa8542b9985eba1b9b1282fcb
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 75e2a31f1c0e82c6f0dcf92309d7673243e1bdc9
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -28,14 +28,14 @@ ms.lasthandoff: 07/27/2017
 
 [!include[banner](../includes/banner.md)]
 
-Sie kennen Dynamics 365 for Finance and Operations, Enterprise-Edition, noch nicht? Wir haben eine Schritt-für-Schritt-Anleitung zusammengestellt, egal, ob Sie Finance and Operations noch auswerten oder einen Kauf tätigen wollen.
+Sie kennen Dynamics 365 for Finance and Operations, Enterprise edition, noch nicht? Wir haben eine Schritt-für-Schritt-Anleitung zusammengestellt, egal, ob Sie Finance and Operations noch auswerten oder einen Kauf tätigen wollen.
 
 ## <a name="step-one--try-out-finance-and-operations-free-for-30-days"></a>Schritt 1: Probieren Sie Finance and Operations 30 Tage lang kostenlos aus
 Sie können sich einfach per E-Mail für einen 30-tägigen kostenlosen Test von Dynamics 365 for Finance and Operations anmelden. Die Testversion von Finance and Operations umfasst Aufgabenleitfäden für die ersten Schritte mit schrittweisen Anweisungen, die Ihnen spezifische Szenarien in der Praxis zeigen. Das Produkt steht zur Verfügung, um Szenarien zu beobachten und auszuprobieren, kann jedoch nicht personalisiert werden. Es stehen Demodaten bereit, um die Verwendung des Produkts zu vereinfachen, sodass Sie sich eine bessere Vorstellung machen können. 3 Tage vor Ablauf des Testzeitraums erhalten Sie eine E-Mail zur Erinnerung. Weitere Informationen finden Sie unter [www.microsoft.com/en-us/dynamics365/operations](https://www.microsoft.com/en-us/dynamics365/operations).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Schritt 2: Auswahl einer Bereitstellungsoption
-Jetzt können Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, in der Cloud oder lokal bereitstellen. Cloud-Bereitstellungen bieten einen vollständig von Microsoft verwalteten ERP-Service, während lokale Bereitstellungen lokal im Rechenzentrum des Kunden bereitgestellt werden.
-Weitere Informationen finden Sie unter [Bereitstellungsoptionen](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type) 
+Jetzt können Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, in der Cloud oder lokal bereitstellen. Cloud-Bereitstellungen bieten einen vollständig von Microsoft verwalteten ERP-Service, während lokale Bereitstellungen lokal im Rechenzentrum des Kunden bereitgestellt werden.
+Weitere Informationen finden Sie unter [Bereitstellungsoptionen](../../dev-itpro/deployment/choose-deployment-type.md) 
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Schritt 3: Erwerben und Verwalten eines Abonnements
 Weitere Informationen über die Abonnementoptionen finden Sie auf der Preisseite zu [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing). Diese Seite enthält unterschiedliche Pläne, um den Anforderungen Ihres Unternehmens zu entsprechen.
@@ -60,7 +60,7 @@ Bei der Volumenlizenzierung steht Finance and Operations zur Verfügung über:
 Ein Anbieter von Microsoft Cloud-Lösungen kann eng mit Ihnen zusammenarbeiten, um sich mit den Anforderungen Ihres Unternehmens oder Organisation vertraut zu machen. [Verwenden Sie das Microsoft Partner Center-Portal, um einen für Sie geeigneten Anbieter zu finden](https://partnercenter.microsoft.com/en-us/partner/home). 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Erwerb über einen Dynamics-Partner (lokal)
-Sie müssen mit einem Partner zusammenarbeiten, um Finance and Operations für den lokalen Betrieb zu erwerben. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, erwerben (lokal).](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises)
+Sie müssen mit einem Partner zusammenarbeiten, um Finance and Operations für den lokalen Betrieb zu erwerben. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, erwerben (lokal).](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Wählen Sie Ihre Supportoption
 Microsoft stellt flexiblen, branchenführenden Support, Dienstleistungen und Ressourcen bereit, die es Benutzern ermöglichen, technische Probleme schnell zu lösen und Ihre Dynamics 365-Investition zu amortisieren. Wählen Sie den Plan aus, der am besten Ihren geschäftlichen Anforderungen entspricht. 

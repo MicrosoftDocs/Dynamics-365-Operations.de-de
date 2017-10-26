@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebcae0e323203a98a9b8ed1113db945fceaaa4af
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,7 +68,7 @@ Wenn diese Konfiguration verwendet wird, wird einer Bestellung für das zugehör
 Ein Produktionsauftrag kann zahlreiche Arbeitsgänge haben, und jeder Arbeitsgang kann zu einem anderen Lieferanten zugewiesen werden. Daher kann ausgelöst hat ein aufeinander folgender Produktionsauftrag mehrere Bestellungen.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Zulieferung der Produktionsflussaktivitäten
-Die [Lean Manufacturing](lean-manufacturing-overview.md)-Lösungsmodelle wird die Fremdarbeit als Dienst modelliert, der mit einer Aktivität eines [Produktionsflusses](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) (Aufgabeleitfaden) verknüpft ist. Daher wird dieser Typ Zulieferung der auch als [aktivitätsbasierte Fremdarbeit](activity-based-subcontracting.md). Ein spezieller Kostengruppentyp mit der Bezeichnung **Direktes Outsourcing** wurde eingeführt und die Fremdarbeitsdienstleistungen sind nicht mehr Teil einer Stückliste (BOM). Wenn Sie Produktion verwenden, werden alle nach Kanbans Aktivitäten definiert, die in einem oder mehreren zu Produktionsflussaktivitäten zugeordnet werden können. Bis hierher klingt diese Erklärung wie die zu Produktionsaufträgen. Allerdings für Produktionsaufträge mit einem Produkt, müssen immer beenden können Sie Kanbans erstellen, um ein Halbfertigprodukt zu liefern. Sie müssen ein neues Produkt und einer Stücklistenebene nicht vorstellen.  
+Die [Lean Manufacturing](lean-manufacturing-overview.md)-Lösungsmodelle wird die Fremdarbeit als Dienst modelliert, der mit einer Aktivität eines [Produktionsflusses](tasks/create-production-flow-version.md) (Aufgabeleitfaden) verknüpft ist. Daher wird dieser Typ Zulieferung der auch als [aktivitätsbasierte Fremdarbeit](activity-based-subcontracting.md). Ein spezieller Kostengruppentyp mit der Bezeichnung **Direktes Outsourcing** wurde eingeführt und die Fremdarbeitsdienstleistungen sind nicht mehr Teil einer Stückliste (BOM). Wenn Sie Produktion verwenden, werden alle nach Kanbans Aktivitäten definiert, die in einem oder mehreren zu Produktionsflussaktivitäten zugeordnet werden können. Bis hierher klingt diese Erklärung wie die zu Produktionsaufträgen. Allerdings für Produktionsaufträge mit einem Produkt, müssen immer beenden können Sie Kanbans erstellen, um ein Halbfertigprodukt zu liefern. Sie müssen ein neues Produkt und einer Stücklistenebene nicht vorstellen.  
 
 Da Kanban-Regeln sehr dynamisch werden können, können diesem verschiedene Varianten der Lieferung für dasselbe Produkt in einem Produktionsfluss modellieren. Wenn Sie schlanke Zulieferung verwenden, werden der Materialfluss und der Finanzstrom ausschließlich getrennt. Der gesamte Materialfluss wird durch Kanbanaktivitäten dargestellt. Die Bestellungen für die Service-Produkte und Zugangsbuchung für diese Leistungen können, auf dem Status von Kanban-Einzelvorgängen im Produktionsfluss automatisiert werden. Kanban-Einzelvorgänge können gestartet und abgeschlossen werden, auch vor die Bestellungen erstellt werden. Die Fremdarbeitsdokumente (Bestellung und Empfang von Bestellungen des Service) können von der Periode und des Diensts zusammengefasst werden. Daher kann die Anzahl von Einkaufsbelegen und Positionen, die auch in ausdrücklich wiederholenden Arbeitsgängen klein aufbewahrt werden, in denen Kreditoren von Dienstleistungszeiten Dienstleistungen in einem Einzelstückfluss erbringen.
 

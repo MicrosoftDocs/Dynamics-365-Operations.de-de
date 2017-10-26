@@ -16,13 +16,13 @@ ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 49dfae79fe3914bcac9447d4fe3959128ff434ec
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen b
 
 ## <a name="what-is-a-credit-transfer-message"></a>Was ist eine SEPA-Mitteilung?
 Die Banküberweisungsnachricht ist eine Anforderung, die eine initiierende Partei (Ihr Unternehmen) zum Verschieben von einem separaten Konto zu einem Kreditgeber sendet. Es gibt viele länder-/regionsspezifische und bankspezifisch Implementierungen von Banküberweisungsnachrichten. Viele hiervon werden innerhalb eines Landes/Regionen verwendet, und werden Standards. Ein Standard ist globaler ISO 20022 und seine Startnachrichten, z.B. Banküberweisung. Die folgende Abbildung zeigt die Beziehungen und Disposition für die ausgewählte Banküberweisungsnachrichten angezeigt. 
-![Credit tansfer](./media/credit-transfer.jpg) Kreditübertragungsnachricht\[/Überschrift\] 
+![Credit tansfer](./media/credit-transfer.jpg) Kreditübertragungsnachrichten 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Was sind ISO 20022 SEPA-Zahlungen?
 Single Euro Payments Area (SEPA) wurde von der Europäischen Kommission eingerichtet und schreibt vor, dass alle elektronischen Zahlungen als Inlandszahlungen gelten, unabhängig vom Land/von der Region in der sich die Person, das Unternehmen oder die Organisation und die Bank befindet. Es gibt keine Differenz zwischen nationalen und grenzüberschreitenden Zahlungen. Zu SEPA zählen die 28 Mitgliedsstaaten der Europäischen Union (EU) sowie Island, Liechtenstein, Norwegen, die Schweiz, Monaco und San Marino. SEPA hilft dabei, einen gemeinsamen Markt für Zahlungsbuchungen innerhalb des europäischen Wirtschaftsraums (EEA) zu bilden. Letztlich wird von SEPA erwartet, die Anzahl von Zahlungsformaten zu reduzieren, mit denen Banken, Unternehmen und Personen arbeiten müssen. Die Europäische Kommission hat die Rechtsgrundlage für SEPA-Zahlungen über die Payment Services-Direktive (PSD) definiert. Der European Payments Council (EPC) unterstützt SEPA durch die folgenden Aktivitäten:
@@ -59,7 +59,7 @@ Das SEPA-Überweisungsformat wird über die generische elektronische Berichterst
 Sie sollten für die Bibliothek der freigegebenen Anlage auf Microsoft Dynamics Lifecycle Services (LCS) nutzen und die neuesten Liste der verfügbaren Dateien mit dem Anlagentyp **GER-Konfiguration** sehen. Im nächsten Abschnitt "Was muss ich einrichten?" wird ein Link zum Thema bereitgestellt, der erläutert, wie ein LCS-Repository herstellt, um verfügbare Konfigurationen und Importieren ausgewählter Konfigurationen zu prüfen.
 
 ## <a name="what-do-i-have-to-set-up"></a>Was muss ich einrichten?
--   Bevor Sie Überweisungsdateien erstellen können, muss mindestens eine aktive Banküberweisungskonfiguration in die generischen elektronischen Berichterstellungskonfigurationen importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Bevor Sie Überweisungsdateien erstellen können, muss mindestens eine aktive Banküberweisungskonfiguration in die generischen elektronischen Berichterstellungskonfigurationen importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Wenn Sie Kreditorenkonten-Zahlungsmethoden konfigurieren, wählen Sie die **Elektronische Berichterstellung**-Kontrollkästchen und wählen das passende Banküberweisungsformat (z. B. **ISO 20022 Credit transfer (AT)**)
 -   Sie müssen die juristische Person und die Bankkontoinformationen in Finance and Operations einrichten.
 -   Kontonummern, IBAN und manchmal SWIFT-Codes (BICs) oder andere Nummern werden benötigt, um spezifische Kredittransferzahlungen zu erstellen. Daher müssen diese für das Bankkonto des Kreditors einrichten und das Bankkonto der Organisation, die die Übertragung angefordert werden.
@@ -93,7 +93,7 @@ Die Liste bestimmter Parameter hängt vom Banküberweisungsformat ab. In der fol
 <td>Format</td>
 <td>Wählen Sie das Format für Rimesseinformationen entsprechend der Anforderungen Ihres Land/Region oder Bank aus:
 <ul>
-<li><strong>Strt</strong> - Wählen Sie diese Option, um das strukturierte Format zu verwendet, wenn eine Zahlungsposition eine Rechnung ausgleicht. Diese Option ist nicht für die länder-/regionsspezifischen Exportformate für Frankreich, Deutschland oder die Niederlande verfügbar.</li>
+<li><strong>Strt</strong> – Wählen Sie diese Option, um das strukturierte Format zu verwendet, wenn eine Zahlungsposition eine Rechnung ausgleicht. Diese Option ist nicht für die länder-/regionsspezifischen Exportformate für Frankreich, Deutschland oder die Niederlande verfügbar.</li>
 <li><strong>Ustrt</strong> - Wählen Sie diese Option, um das unstrukturierte Format zu verwendet, wenn die Zahlung mehrere Rechnungen ausgleicht. Die Rechnungsnummern für die ausgeglichenen Rechnungen werden als die Rimesseinformationen verkettet und verwendet. Gemäß ISO 20022-Richtlinien dürfen unstrukturierte Rimesseinformationen maximal 140 Zeichen umfassen.</li>
 </ul></td>
 </tr>

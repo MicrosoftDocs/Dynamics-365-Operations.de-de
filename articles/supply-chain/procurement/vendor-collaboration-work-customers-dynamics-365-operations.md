@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 6119f1c85b68e6ed5dce01a266c4e681dfc4cd30
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um in Microsoft Dynamics 365 for Finance and Operations mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen.
 
-In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft for Finance and Operations zu arbeiten. Es enthält zudem Informationen darüber, wie Bestellungen überwacht und auf diese reagiert wird und wie Lieferbestand überwacht wird. Es ist auch möglich, die Kreditor-Kooperation für die Arbeit mit Rechnungen zu verwenden. Weitere Informationen finden Sie unter [Arbeitsbereich für Kreditor-Kooperationsrechungen](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft for Finance and Operations zu arbeiten. Es enthält zudem Informationen darüber, wie Bestellungen überwacht und auf diese reagiert wird und wie Lieferbestand überwacht wird. Es ist auch möglich, die Kreditor-Kooperation für die Arbeit mit Rechnungen zu verwenden. Weitere Informationen finden Sie unter [Arbeitsbereich für Kreditor-Kooperationsrechungen](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 ## <a name="working-with-purchase-orders"></a>Mit Bestellungen arbeiten
 Der Arbeitsbereich **Bestellungsbestätig** ermöglicht Ihnen, auf Bestellungen zu antworten, die zur Prüfung gesendet wurden. Er ermöglicht es Ihnen außerdem, Informationen zu Bestellungen, die eine Aktivität vom Debitor erfordern und Bestellungen, die bestätigt wurden aber noch offen sind, anzuzeigen. Es gibt drei Listen im Arbeitsbereich **Bestellungsbestätigung**:
