@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
-ms.openlocfilehash: d5e4857081134808b194d3248dd8739f83b57d6e
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
 ms.contentlocale: de-de
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,14 +116,14 @@ Sie können die Microsoft Aufgabenaufzeichnungen herunterladen und bearbeiten, u
 11. Wählen Sie aus, wie Sie die Aufgabenaufzeichnung speichern wollen.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Ihre Aufgabenaufzeichnungen in den Hilfebereich einbeziehen
-Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich angezeigt werden, sodass sie als Aufgabenleitfaden wiedergegeben oder als Text angezeigt werden können, müssen Sie die Aufgabenaufzeichnungen in Ihrer eigenen BPM-Bibliothek speichern und Ihre Hilfesystemparameter so aktualisieren, dass sie auf die BPM-Bibliothek verweisen. Weitere Informationen finden Sie unter [Verbinden des Hilfesystems](../get-started/help-connect.md)
+Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich angezeigt werden, sodass sie als Aufgabenleitfaden wiedergegeben oder als Text angezeigt werden können, müssen Sie die Aufgabenaufzeichnungen in Ihrer eigenen BPM-Bibliothek speichern und Ihre Hilfesystemparameter so aktualisieren, dass sie auf die BPM-Bibliothek verweisen. Weitere Informationen finden Sie unter [Verbinden des Hilfesystems](../../fin-and-ops/get-started/help-connect.md)
 
 <a name="see-also"></a>Siehe auch
 --------
 
-[Hilfe – Überblick](..\get-started\help-overview.md)
+[Hilfe – Überblick](../../fin-and-ops/get-started/help-overview.md)
 
-[Mit Hilfe verbinden](..\get-started\help-connect.md)
+[Mit Hilfe verbinden](../../fin-and-ops/get-started/help-connect.md)
 
 [Aufgabenaufzeichnung](task-recorder.md)
 

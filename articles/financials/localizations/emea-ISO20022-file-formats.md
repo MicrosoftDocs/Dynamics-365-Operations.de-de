@@ -1,6 +1,6 @@
 ---
 title: Import von ISO20022-Dateien
-description: Dieses Thema beschreibt den Import von Zahlungsdateien in den Formaten ISO 20022 camt.054 und pain.002 in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition.
+description: Dieses Thema beschreibt den Import von Zahlungsdateien in den Formaten ISO 20022 camt.054 und pain.002 in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: neserovleo
 manager: AnnBe
 ms.date: 07/27/2017
@@ -16,10 +16,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
-ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: fcab30f03aebf7dbe76d5b3b64260f726f291fb8
 ms.contentlocale: de-de
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -118,7 +118,7 @@ Wenn Sie eine Formatkonfiguration in LCS importieren, importieren Sie die gesamt
  - **Pain.002** – Dieses Format wird zusammen mit dem Zahlungsmodell verwendet, das sich auf das ISO20022 Ziel bezieht, um die Datei pain.002 in Kreditorenzahlungsübergangserfassung zu importieren
  - **Camo.054** – Dieses Format wird zusammen mit dem Zahlungsmodell verwendet, das sich auf das ISO20022 Ziel bezieht, um die Datei camt.054 in Kreditorenzahlungsübergangserfassung zu importieren Dieselbe Formatkonfiguration wird in den Debitorenzahlungsimportfunktionen verwendet, aber unterschiedliche Zuordnung wird im Zahlungsmodell verwendet, das zur Konfiguration des Ziels ISO20022 bezieht.
 
-Weitere Informationen über die elektronische Berichterstattung finden Sie unter[Elektronischer Berichterstellungsüberblick](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Weitere Informationen über die elektronische Berichterstattung finden Sie unter[Elektronischer Berichterstellungsüberblick](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

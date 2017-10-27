@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 64d915a5e039ba242f6d5ae5f43c8e09d6ca282e
 ms.contentlocale: de-de
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -38,7 +37,7 @@ Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen d
 
 Sie führen Budgetplanung durch, wenn Sie die Budgets vorbereiten, die von einer Organisation implementiert werden. Eine Organisation kann Budgetplanung konfigurieren und anschließend Budgetplanungsprozesse einrichten, um die Richtlinien, die Verfahren und Bedingungen ihrer Organisation für Budgetausarbeitung zu erfüllen. 
 
-Wenn Sie die Konzepte und die Terminologie verstehen, die in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden, erleichtert dies die Budgetplanung in Ihrer Organisation.
+Wenn Sie die Konzepte und die Terminologie verstehen, die in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden, erleichtert dies die Budgetplanung in Ihrer Organisation.
 
 ### <a name="key-terms"></a>Schlüsselbegriffe
 
@@ -78,7 +77,7 @@ Im folgenden Beispiel schätzt der Unternehmenshauptsitz die ersten Budgetbasisb
 
 Auf der **Organisationshierarchie**-Seite können Sie für jeden Budgetplanungsprozess eine Organisationshierarchie als Budgetplanungshierarchie auswählen. Die Budgetplanungshierarchie muss mit der Standardorganisationshierarchie nicht übereinstimmen, die für andere Zwecke verwendet wird. Da diese Hierarchie verwendet wird, um Daten zu aggregieren und zu verteilen, sollten sie eine andere Struktur haben. Im Beispielsschema sind befinden sich die Verkaufsabteilungen unter der Ebene der Zentralverwaltung, die Budget- und Finanzabteilungen enthält. Diese Struktur unterscheidet sich wahrscheinlich von der Struktur, die verwendet wird, um Arbeitsgänge für die Verkaufsabteilungen zu verwalten. Nur eine Organisationshierarchie kann einem Budgetplanungsprozess zugewiesen werden. 
 
-Weitere Informationen zu den finden Sie unter [Organisationen und Organisationshierarchien](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
+Weitere Informationen zu den finden Sie unter [Organisationen und Organisationshierarchien](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Benutzersicherheit
 

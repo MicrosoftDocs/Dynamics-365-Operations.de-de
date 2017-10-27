@@ -15,18 +15,18 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 ms.author: chwolf
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 4a1cab8c126ad063a52827421d2ea1104d0c7287
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 5be9b195754d6c8315342c83451128092f64a241
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Hardwarekalkulation für lokale Umgebungen
-Bevor Sie mit der Hardware- und Infrastrukturkalkulation für eine lokale Umgebung beginnen, machen Sie sich mit den [Systemanforderungen](../get-started/system-requirements.md) und den [Anweisungen für die Einrichtung und Bereitstellung](../deployment/setup-deploy-on-premises-environments.md) vertraut, um die zugrundeliegende Infrastruktur wirklich zu verstehen. 
+Bevor Sie mit der Hardware- und Infrastrukturkalkulation für eine lokale Umgebung beginnen, machen Sie sich mit den [Systemanforderungen](system-requirements.md) und den [Anweisungen für die Einrichtung und Bereitstellung](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) vertraut, um die zugrundeliegende Infrastruktur wirklich zu verstehen. 
 
   **Hinweis:** Achten Sie auf die optimalen Leistungsverfahren für die Systemeinrichtung. 
 
@@ -89,7 +89,7 @@ Um die Größenanforderungen zu verstehen, müssen Sie das Spitzenvolumen der Tr
 Wir empfehlen, SQL Server immer in einer Cluster- oder Mirroring-Einrichtung zu verwenden. Der zweite SQL-Knoten sollte dieselbe Anzahl an Kernen haben wie der primäre Knoten. 
 
 ### <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
-Weitere Informationen zur Größenauslegung von AD FS finden Sie in der [Dokumentation für die AD FS Server-Kapazität](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
+Weitere Informationen zur Größenauslegung von AD FS finden Sie in der [Dokumentation für die AD FS Server-Kapazität](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
 
 Für die Planung der Instanzenanzahl in Ihrer Bereitstellung steht ein [Tabellenkalkulationsblatt](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) für die Größenauslegung zur Verfügung.
 

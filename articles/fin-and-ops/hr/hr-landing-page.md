@@ -17,10 +17,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
-ms.openlocfilehash: 49f7a8f69729002812e78de757ae889266327ff4
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
 ms.contentlocale: de-de
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,38 +47,38 @@ Sie können „Personalverwaltung” verwenden, um diese Aufgaben abzuschließen
 
 Bei Ihrer Arbeit in der Personalverwaltung entscheiden Sie über die Strukturierung Ihrer Organisation mithilfe von Elementen wie Abteilungen, Stellen und Positionen. Diese gehören zu den grundlegenden Elementen, die Sie in der Personalverwaltung konfigurieren. Einzelne Mitarbeiter werden Positionen zugewiesen, die Stellen zugeordnet sind.
 
--   [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](/dynamics365/unified-operations/talent/departments-jobs-positions)
--   [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters)
--   [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities) 
+-   [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](../../talent/departments-jobs-positions.md)
+-   [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](../../talent/set-up-company-specific-hr-parameters.md)
+-   [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](../../talent/set-up-hr-parameters-across-legal-entities.md) 
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Beschaffen, Einstellen und Motivieren von Mitarbeitern
 
 Personalbeschaffungsprojekte verwalten den Inhalt, der in Anzeigen für offene Stellen verwendet wird und helfen Ihnen, Bewerbungen auf Stellenangebote zu verwalten. Sie können sie verwenden, um Antworten auf Stellenausschreibungen für ein bestimmtes Personalbeschaffungsprojekt oder bestimmte Bewerber nachzuverfolgen und aktualisieren den Status offener Stellen. Sie können auch einzelne Bewerber einstellen oder „Masseneinstellungsprojekte” verwalten, die das Einstellen mehrerer Arbeitskräfte erleichtern, z. B. bei saisonalem Bedarf.
 
--   [Einen Personalbeschaffungsprozess verwalten](/dynamics365/unified-operations/talent/manage-recruiting-process)
--   [Masseneinstellungsprojekte](/dynamics365/unified-operations/talent/mass-hire-projects) 
+-   [Einen Personalbeschaffungsprozess verwalten](manage-recruiting-process.md)
+-   [Masseneinstellungsprojekte](mass-hire-projects.md) 
 
 Nachdem Sie Mitarbeiter eingestellt haben, können Sie Pläne einrichten, um effektiv und ausgewogen Vergütungen zu verwalten sowie Objekte, die Ihre Organisation den Mitarbeitern zur Verfügung stellt, wie z. B. Computer oder Telefone. Sie können feste und variable Vergütungspläne erstellen, sowie Regeln für den Vergütungsplan mit entsprechenden Kriterien für den Plan definieren.
 
--   [Vergütungspläne](/dynamics365/unified-operations/talent/compensation-plans)
--   [Feste Vergütungspläne erstellen](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
--   [Variable Vergütungspläne erstellen](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+-   [Vergütungspläne](../../talent/compensation-plans.md)
+-   [Feste Vergütungspläne erstellen](../../talent/create-fixed-compensation-plans.md)
+-   [Variable Vergütungspläne erstellen](../../talent/create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Mitarbeiter fördern und schulen
 
 Um Ihre Mitarbeiter bei Ihren Karrierezielen zu unterstützen und dabei gleichzeitig wesentlichen Geschäftsbedürfnissen zu entsprechen, können Sie Ziele einrichten, Leistungsüberprüfungen erstellen und Feedback protokollieren. Um Mitarbeiter dabei zu unterstützen, notwendige Fertigkeiten zu erwerben, können Sie auch Kursleiter, Kurstypen, Kurse, Kursbeschreibungen, Tagesordnungen, Protokolle und Sitzungen einrichten, bevor Sie einem Kurs einen Kursleiter zuweisen oder jemanden für einen Kurs anmelden. Kursleiter müssen bereits als Arbeitskräfte, Bewerber oder Kontakte vorhanden sein.
 
--   [Leistungsverwaltung](/dynamics365/unified-operations/talent/performance-management-overview)
--   [Belegschaftsqualifikationen auf den Geschäftsbedarf ausrichten](/dynamics365/unified-operations/talent/skills)
--   [Verwalten von Schulung durch Kurse](/dynamics365/unified-operations/talent/courses)
+-   [Leistungsverwaltung](../../talent/performance-management-overview.md)
+-   [Belegschaftsqualifikationen auf den Geschäftsbedarf ausrichten](../../talent/skills.md)
+-   [Verwalten von Schulung durch Kurse](../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Vergütungen erstellen und verwalten
 
 Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, können Sie Vergütungsprogramme, wie Krankenversicherung und Pensionspläne entwickeln. Sie können Vergütungen (z. B. Verleihprogramme) verwalten, in denen Ihr Unternehmen seinen Mitarbeitern Artikel (z. B. Computer oder Telefone) ausleiht.
 
--   [Ein Vergütungsprogramm verwalten](/dynamics365/unified-operations/talent/manage-benefit-program)
--   [Vergütungsberechtigungsrichtlinien](/dynamics365/unified-operations/talent/benefit-eligibility-policies)
--   [Verwalten von Artikeln, die an Arbeitskräfte ausgeliehen werden](/dynamics365/unified-operations/talent/loan-items)
+-   [Ein Vergütungsprogramm verwalten](../../talent/manage-benefit-program.md)
+-   [Vergütungsberechtigungsrichtlinien](../../talent/benefit-eligibility-policies.md)
+-   [Verwalten von Artikeln, die an Arbeitskräfte ausgeliehen werden](../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Verwalten von Arbeitsplatzsicherheit und Konformität
 
@@ -92,10 +92,10 @@ Microsoft Dynamics AX hilft Ihnen dabei, eine sichere Arbeitsumgebung zu verwalt
 
 Sie können Fragebögen entwerfen und verwalten, um Informationen für die verschiedensten Zwecke zu sammeln. Die Fragebogenfunktion ermöglicht das Entwerfen und Erstellen von Fragebögen. Wenn ein Fragebogen fertig ist, lassen Sie ihn allgemein oder innerhalb einer bestimmten Gruppe von Befragten ausfüllen. Nachdem die Teilnehmer ihre Antworten angegeben haben, überprüfen und analysieren Sie die Ergebnisse.
 
--   [Fragebögen](/dynamics365/unified-operations/talent/questionnaires)
--   [Entwerfen eines Fragebogens](/dynamics365/unified-operations/talent/design-questionnaires)
--   [Einen Fragebogen verteilen und ausfüllen](/dynamics365/unified-operations/talent/distribute-questionnaires)
--   [Die Ergebnisse eines Fragebogens anzeigen und auswerten](/dynamics365/unified-operations/talent/evaluate-questionnaire-results)
+-   [Fragebögen](../../talent/questionnaires.md)
+-   [Entwerfen eines Fragebogens](../../talent/design-questionnaires.md)
+-   [Einen Fragebogen verteilen und ausfüllen](../../talent/distribute-questionnaires.md)
+-   [Die Ergebnisse eines Fragebogens anzeigen und auswerten](../../talent/evaluate-questionnaire-results.md)
 
 
 

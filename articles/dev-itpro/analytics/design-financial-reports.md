@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: d1fbcefd80f1c48fafbbcb6315406856eaae68a0
 ms.contentlocale: de-de
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +49,7 @@ In dieser Übung generieren und untersuchen Sie einen vorhandenen Standardberich
 4.  Wechseln Sie zu **Finanzberichte** unter **Abfragen und Berichte** im Hauptbuch.
 5.  Wählen Sie die Zeile für den Bericht namens **Hauptbuchdetail - Standard** aus.
 6.  Wählen Sie **Bearbeiten** aus. Hinweis: Sie werden aufgefordert, den Ein-Klick-Berichts-Designer herunterzuladen und sich anzumelden. Verwenden Sie die Anmeldeinformationen, um sich anzumelden. Melden Sie sich mit Ihren Anmeldeinformationen an.
-7.  Ändern Sie das Basisjahr auf 2012, und wählen Sie **Generieren** aus. Wenn ein Bericht vom Berichts-Designer generiert wird, wird er in einer neuen Browserregisterkarte geöffnet. Sie können den Bericht entweder in der neuen Browserregisterkarte untersuchen, oder zu Ihrer ursprünglichen Browserregisterkarte wechseln und den Bericht dort öffnen, indem Sie ihn aus der Liste **Finanzberichte** auswählen.
+7.  Ändern Sie das Basisjahr auf 2012, und wählen Sie **Generieren** aus. Wenn ein Bericht im Berichts-Designer generiert wird, wird er in einer neuen Browserregisterkarte geöffnet. Sie können den Bericht in der neuen Browserregisterkarte oder in Ihrer ursprünglichen Browserregisterkarte anzeigen und den Bericht dort öffnen, indem Sie ihn aus der Liste  **Finanzberichte** auswählen.
 8.  Wählen Sie im geöffneten Bericht einen der Beträge zur Anzeige der Kontodetails für den Bericht aus.
 9.  Sobald die Kontodetails angezeigt werden, wählen Sie ein Konto mit Daten aus und rufen Sie die **Berichtbuchungs-Drillstufe** auf. Auf der Berichtsbuchungsstufe können Sie die Eigenschaften (Attribute) anzeigen, die im Entwurf dieses Berichts enthalten sind. Je nach Transaktion und Konto werden möglicherweise einige oder alle Attribute angezeigt.
 10. Schließen Sie die Berichtbuchungsstufe.
@@ -183,8 +182,8 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 18. **Speichern** Sie Ihre Änderungen und **generieren** Sie. Nachdem der Bericht fertig generiert und geöffnet wurde, können Sie den Bericht untersuchen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-[Finanzberichterstattung](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
-[Finanzbericht anzeigen](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[Finanzberichterstattung](../../financials/general-ledger/financial-reporting-getting-started.md) 
+[Finanzbericht anzeigen](../../financials/general-ledger/view-financial-reports.md) 
 [Dynamics Finanzbericht Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

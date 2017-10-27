@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d549f38b9278eed222a1318c51962b248149c569
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 6dfb82acb5dafd365d878949b35d4fe6ff58793d
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -78,7 +78,7 @@ Produktions-Wareneingangserfassungen arbeiten wie Wareneingangserfassungen, werd
 
 ### <a name="counting"></a>Inventur
 
-Mit Inventurerfassungen können Sie den aktuell verfügbaren Lagerbestand korrigieren, der für Artikel oder Gruppen Artikel erfasst wird, und dann die tatsächliche physische Zählung buchen, um die Korrekturen vorzunehmen, die erforderlich sind, um die Abweichungen abzustimmen. Sie können Inventurrichtlinien Inventurgruppen zuordnen, um die Gruppierung von Artikeln zu unterstützen, die verschiedene Merkmale haben, sodass diese Artikel in eine Inventurerfassung einbezogen werden können. So können Sie beispielsweise Inventurgruppen einrichten, um Artikel zu zählen, die eine bestimmte Häufigkeit haben, oder um Artikel zu zählen, wenn Bestand unter eine bestimmte Menge sinkt. Informationen darüber, wie Sie Inventurgruppen definieren, finden Sie unter [Lagerinventurprozesse definieren (Aufgabenleitfaden)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes) definieren.
+Mit Inventurerfassungen können Sie den aktuell verfügbaren Lagerbestand korrigieren, der für Artikel oder Gruppen Artikel erfasst wird, und dann die tatsächliche physische Zählung buchen, um die Korrekturen vorzunehmen, die erforderlich sind, um die Abweichungen abzustimmen. Sie können Inventurrichtlinien Inventurgruppen zuordnen, um die Gruppierung von Artikeln zu unterstützen, die verschiedene Merkmale haben, sodass diese Artikel in eine Inventurerfassung einbezogen werden können. So können Sie beispielsweise Inventurgruppen einrichten, um Artikel zu zählen, die eine bestimmte Häufigkeit haben, oder um Artikel zu zählen, wenn Bestand unter eine bestimmte Menge sinkt. Informationen darüber, wie Sie Inventurgruppen definieren, finden Sie unter [Lagerinventurprozesse definieren (Aufgabenleitfaden)](tasks/define-inventory-counting-processes.md) definieren.
 
 ### <a name="tag-counting"></a>Markierungen zählen
 
