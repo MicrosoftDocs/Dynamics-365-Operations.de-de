@@ -3,7 +3,7 @@ title: "Erstellen von Format zur Zählung und Summierung für elektronische Beri
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Inventarisierung und Summierung basierend auf der bereits generierten Textausgabe."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: efdb64fa157af0d96c2ff0e5de3db5a98190bc68
+ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
+ms.openlocfilehash: 3c4ae958a03d4681a85f5b83d81fe64b9ac99cf5
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
-# <a name="create-formate-for-counting-and-summing-for-electronic-reporting-er"></a>Erstellen von Format zur Zählung und Summierung für elektronische Berichterstellung
+# <a name="create-format-for-counting-and-summing-for-electronic-reporting-er"></a>Erstellen von Format zur Zählung und Summierung für elektronische Berichterstellung
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

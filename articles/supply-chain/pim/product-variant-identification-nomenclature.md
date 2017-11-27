@@ -1,9 +1,9 @@
 ---
 title: Bezeichnung der Produktvariantennummern und Namen
-description: "In diesem Thema wird beschrieben, wie Sie eine Produktnummernbezeichnung einrichten können, um das feste Format [Produktmasternummer – Konfiguration – Größe – Farbe – Stil] zu ersetzen. Die neue Bezeichnung hat ein gezieltes Format, das die Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen Ihrer Wahl umfasst. Darüber hinaus können Sie auch eine Bezeichnung für Produktnamen erstellen. Sie können schließlich auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten."
+description: "In diesem Thema wird beschrieben, wie Sie eine Produktnummernbezeichnung einrichten können, um das feste Format [Produktmasternummer – Konfiguration – Größe – Farbe – Stil] zu ersetzen."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 4ebebc1d287908dbe8ac7557c34fc6693c88bfae
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 067e14d8a0ab9cb5b703c1d2596dab3e20487336
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -68,7 +68,7 @@ Ein T-Shirt (TS1234) wird in drei Größen (S, M, L), in vier Farben (rot, grün
 
 In diesem Fall ist die Produktvariantennummer für ein rotes kleines Polo-T-Shirt TS1234-rot-klein-Polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Einschränkungsbasierte Konfigurationen-Bezeichnung
+## <a name="nomenclature-of-constraint-based-configurations"></a>Einschränkungsbasierte Konfigurationen-Bezeichnung
 Für einschränkungsbasierte Konfigurationen können Sie eine dedizierte Bezeichnung für die Konfigurationsproduktdimension erstellen. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen:
 
 -   Nummernkreiswert
@@ -92,7 +92,7 @@ Sie erstellen eine Konfigurationsbezeichnung, die die folgenden Segmente hat:
 
 In diesem Fall ist die Konfigurationskennung für Holzmaterial mit einer Länge von 78 WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Dimensionsbasierte Konfigurationsbezeichnung
+## <a name="nomenclature-of-dimension-based-configurations"></a>Dimensionsbasierte Konfigurationsbezeichnung
 Für dimensionsbasierte Konfigurationen können Sie eine dedizierte Bezeichnung für die Konfigurationsproduktdimension erstellen. Sie können folgende Segmente auf der Seite **Produktbezeichnungen** auswählen:
 
 -   Nummernkreiswert

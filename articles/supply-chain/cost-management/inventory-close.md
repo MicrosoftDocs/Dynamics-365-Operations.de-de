@@ -3,7 +3,7 @@ title: Lagerabschluss
 description: "Im Rahmen des Prozesses, um Abgangstransaktionen mit Zugangstransaktionen auszugleichen, können Sie wählen, dass das Hauptbuch ausgeglichen wird, um die Regulierungen widerzuspiegeln, die vorgenommen wurden."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: dc192b332bd736fd2ba1aac16e9e4614f3afc1dd
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: dfb6b9c2f4bad95c165a8d8a1e888e7a67e66c69
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -53,7 +53,7 @@ Wenn Sie eine Bestellung aus einem Auftrag erstellen, werden die für den urspr�
 
 Nach Abschluss der Aktualisierung kann der erstellte Sachkontobeleg überprüft werden, der aufgrund einer dieser Aufgaben gebucht wurde.
 
-1.  Wählen Sie auf der Seite **Abschluss und Regulierung** die Registerkarte **Überblick**  und die Aktualisierung aus, die überprüft werden soll.
+1.  Wählen Sie auf der Seite **Abschluss und Regulierung** der Registerkarte **Überblick** die Aktualisierung aus, die überprüft werden soll.
 2.  Klicken Sie auf **Details**und wählen Sie dann **Beleg**aus.
 
 ## <a name="effects-of-the-inventory-close-process-on-the-general-ledger"></a>Auswirkungen des Lagerabschlusses auf das Hauptbuch

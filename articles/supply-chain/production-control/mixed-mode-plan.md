@@ -1,9 +1,9 @@
 ---
 title: "Mischplanung: Kombinieren Sie eigenständige, Prozess- und Lean-Beschaffung"
-description: "Dieser Artikel enthält Informationen zum gemischten Planungsmodus. In im gemischten Planungsmodus können Sie Ihre Lieferkette basierend auf dem Materialfluss modellieren. Microsoft Dynamics 365 for Finance and Operations stellt sicher, dass der Materialfluss Ihren Modellen folgt, unabhängig von der Zubehörrichtlinie, die ausgewählt wird (Kanbans, Produktionsaufträge, Bestellungen, Chargenaufträge oder Umlagerungsaufträge)."
+description: "Dieses Thema enthält Informationen zum gemischten Planungsmodus."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 09ced68ffe8ff300a04beb65fdf8527e63456f04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält Informationen zum gemischten Planungsmodus. In im gemischten Planungsmodus können Sie Ihre Lieferkette basierend auf dem Materialfluss modellieren. Microsoft Dynamics 365 for Finance and Operations stellt sicher, dass der Materialfluss Ihren Modellen folgt, unabhängig von der Zubehörrichtlinie, die ausgewählt wird (Kanbans, Produktionsaufträge, Bestellungen, Chargenaufträge oder Umlagerungsaufträge). 
+Dieses Thema enthält Informationen zum gemischten Planungsmodus. In im gemischten Planungsmodus können Sie Ihre Lieferkette basierend auf dem Materialfluss modellieren. Microsoft Dynamics 365 for Finance and Operations stellt sicher, dass der Materialfluss Ihren Modellen folgt, unabhängig von der Zubehörrichtlinie, die ausgewählt wird (Kanbans, Produktionsaufträge, Bestellungen, Chargenaufträge oder Umlagerungsaufträge). 
 
 Sie können die allgemeine Strategie für das Beschaffen eines Produkts unabhängig von der Produktstruktur auswählen.  
 
@@ -59,7 +59,7 @@ In der Regel werden Kanbans nicht für zukünftige Zeiträume erstellt, da ein K
 
 Die gleiche Logik ist daher für alle anderen Lieferrichtlinientypen vorhanden. Daher basiert die langfristige Materialplanung auf der gleichen Logik, von der Sie erwarten, dass sie mit dem tatsächlichen Aufträgen ausgeführt werden, nachdem die Produktion und Lieferung genehmigt wird.
 
-## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Lieferübergreifende Materialzuteilungsrichtlinie – Ressourcenverbrauch von Stücklisten
+## <a name="materials-allocation-cross-supply-policy--resource-consumption-on-boms"></a>Lieferübergreifende Materialzuteilungsrichtlinie – Ressourcenverbrauch von Stücklisten
 Ressourcenverbrauch ist wichtige Funktion. Ressourcenverbrauch ermöglicht, dass ein Lagerort für die Entnahme von Materialien dynamisch ausgewählt werden kann, basierend auf der Lieferrichtlinie (Auftragstyp), und erleichtert auch die Verwaltung von den Stammdaten.  
 
 Ressourcenverbrauch erfordert, dass der Lagerort, von dem Material entnommen wird, auf Grundlage der Methode, wie das Produkt beschafft wird, zugewiesen wird. Das bedeutet, zur Laufzeit sucht das System die Ressourcen, die für das Herstellen verwendet werden sollen. Auf Grundlage dieser Ressourcen sucht das System dann den Entnahmelagerort.  

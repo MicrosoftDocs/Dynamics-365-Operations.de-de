@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 0cd1de95630d0f7c40c3b9948015892623a93686
+ms.sourcegitcommit: 1ccf3b2d81066fce80fe14428fab24020ab85496
+ms.openlocfilehash: b921b5ff51f951112031fe8b1bc2faa90cf29a28
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Entwerfen eines Formats zum Verwenden horizontal erweiterbarer Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten für elektronische Berichterstellung
@@ -36,7 +36,8 @@ Um diese Schritte ausgeführt, auszuführen, müssen Sie diese zuerst in diesen 
 
 "ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)"
 
-Sie müssen eine lokale Kopie der Vorlage mit einem Beispielbericht herunterladen und speichern, die hier gefunden wird: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx
+Sie müssen eine lokale Kopie der Vorlage mit einen Beispielbericht auch herunterladen und speichern, die hier [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266) gefunden wird. 
+
 
 Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
 

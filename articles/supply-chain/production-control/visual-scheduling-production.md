@@ -3,7 +3,7 @@ title: "Verwenden eines Gantt-Diagramms für die Feinterminierung"
 description: "Produktionsplaner können Produktionspläne steuern und optimieren, indem Gantt-Diagramme verwendet werden."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cc7543305ac634dfed3779bb83806ee4fd97d7fa
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 5a4b0450cc76c8d9307b9b21b78a170afcc298e4
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ Ein Gantt-Diagramm ist eine visuelle Darstellung von geplanten Aktivitäten inne
 -   Umwandeln von geplanten Produktionsaufträgen.
 -   Einzelvorgang geplanter Projektvorgänge vom Typ Stundenplanungen.
 
-Das Gantt-Diagramm kann in zwei unterschiedlichen Ansichten geöffnet werden, **Auftragsansicht** und **Ressourcenansicht**[.](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true)in **Auftragsansicht**, Aktivitäten werden unter Produktionsaufträgen gruppiert. Dies kann hilfreich sein (z.B um eine Übersicht über alle Einzelvorgänge zu erhalten, die verwaltet werden sollen, die dem gleichen Aufträge gehören. In **Ressourcenansicht** werden alle Einzelvorgänge unter einzelnen Ressourcen gruppiert. Diese Ansicht ist hilfreich, wenn Sie den Plan in einem Ressourcenniveau, beispielsweise einer Maschine oder einer Gruppe von Computern optimieren. Die angezeigten Gantt-Diagramme in der Abbildung zeigen **Auftragsansicht** und **Ressourcenansicht** mit diesen zentralen Elementen:
+Das Gantt-Diagramm kann in zwei unterschiedlichen Ansichten geöffnet werden, **Auftragsansicht** und **Ressourcenansicht**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). In **Auftragsansicht** werden unter Produktionsaufträgen Aktivitäten gruppiert. Dies kann hilfreich sein (z.B um eine Übersicht über alle Einzelvorgänge zu erhalten, die verwaltet werden sollen, die dem gleichen Aufträge gehören. In **Ressourcenansicht** werden alle Einzelvorgänge unter einzelnen Ressourcen gruppiert. Diese Ansicht ist hilfreich, wenn Sie den Plan in einem Ressourcenniveau, beispielsweise einer Maschine oder einer Gruppe von Computern optimieren. Die angezeigten Gantt-Diagramme in der Abbildung zeigen **Auftragsansicht** und **Ressourcenansicht** mit diesen zentralen Elementen:
 
 1.  Gantt-Diagramm-Aktivität
 2.  Materialmangel-Symbol
@@ -156,5 +156,7 @@ Die Gantt-Diagramm können auf den folgenden Seiten geöffnet werden.
 | **Freigeben von Produktionsaufträgen** (aus dem Arbeitsbereich **Produktionsbodenverwaltung** ) | Freigeben von Produktionsaufträgen im Arbeitsbereich **Produktionsverwaltung**. Diese Seite enthält geplante Produktions- und Chargenaufträge der hängigen Freigabe. Auf dieser Seite können Sie für das ausgewählte Gantt-Diagramm Produktionsaufträge öffnen.                                                                                                                                                                                                                                                        |
 ## <a name="see-also"></a>Siehe auch  
 [Visuelle Zeitplanung mit Gantt-Diagramm für Produktions- und Chargenaufträge (Video)](https://youtu.be/BtbuShkGj4I)
+
+[Sichtplanung für Produktion (Vorführungsskript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
 

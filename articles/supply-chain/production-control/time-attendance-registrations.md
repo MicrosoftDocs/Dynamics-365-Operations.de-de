@@ -1,9 +1,9 @@
 ---
 title: Zeit- und Anwesenheitserfassung
-description: "Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. In diesem Artikel beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen."
+description: "Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. Dieses Thema beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 53351
 ms.assetid: 885b0cdf-53d7-4cb4-92fe-da1b9e32b39f
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 83603b1f8d20c18b7f10cd7224d491b558ee1b8b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. In diesem Artikel beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen. 
+Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. Dieses Thema beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen. 
 
 <a name="registrations"></a>Registrierungen
 -------------
@@ -66,7 +66,7 @@ Nach der Einrichtung können die Arbeitskräfte unterschiedliche Arten von Erfas
 -   Indirekte Aktivitäten, die unproduktive Aktivitäten einer Arbeitskraft während eines Arbeitstags sind. Beispiele dieser Aktivitäten sind Besprechungen oder das Säubern des Arbeitsbereichs.
 -   Überstunden, die als zusätzlich geleistete Stunden entweder als Zusatzstunden, Gleitzeit oder Überstunden erfasst werden können.
 
-## <a name="adding-clockout-registrations"></a>Hinzufügen von Ausstempelerfassungen
+## <a name="adding-clock-out-registrations"></a>Hinzufügen von Ausstempelerfassungen
 Wenn Arbeitskräfte vergessen, am Ende des Arbeitstags auszustempeln, können Sie die fehlende Erfassungen für diese erstellen, indem Sie einen Batchauftrag ausführen. Das System vergleicht die Einstempeluhrzeit und die Ausstempeluhrzeit gemäß dem zugeordneten Profil der Arbeitskraft und fügt automatisch die fehlenden Ausstempelerfassung ein, um die Endzeit des Profils abzugleichen. Die Ein- und Ausstempelerfassungen sind für die folgende Berechnung und die Genehmigung von Zeiterfassungen vor der Übertragung an Lohnabrechnung enorm wichtig.
 
 ## <a name="calculating-registrations"></a>Berechnen von Erfassungen

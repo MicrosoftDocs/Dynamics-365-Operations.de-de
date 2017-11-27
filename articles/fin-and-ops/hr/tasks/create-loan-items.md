@@ -3,7 +3,7 @@ title: Ausleihartikel einrichten
 description: "Ausleihartikel sind Datensätze, die Ihnen helfen, physische Artikel, wie Telefone oder Computer, zu verfolgen, die Ihr Unternehmen an Arbeitskräfte ausleiht."
 author: kherr75
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/01/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cef1f9b2e3d202d7eea3a967fa8a6c371c6ac3a5
+ms.sourcegitcommit: 950237499441e7f1d5b9e3355c4bd9513ad3783e
+ms.openlocfilehash: aa5824a7a56136b6d09860f2ff493359dbeab9f9
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/01/2017
 
 ---
 # <a name="create-loan-items"></a>Ausleihartikel einrichten
@@ -54,7 +54,7 @@ Ausleihartikel sind Datensätze, die Ihnen helfen, physische Artikel, wie Telefo
 11. Geben Sie eine Zahl in das Feld "Anfangswert" ein.
 12. Geben Sie im Feld "Intervall" eine Zahl ein.
 13. Geben Sie im Feld "Format" einen Wert ein.
-    * Wenn die Startnummer für einen Ausleihartikel beispielsweise 10 ist, geben Sie im Feld "Format" zwei Nummernzeichen ein.  
+    * Wenn die Startnummer für einen Ausleihartikel beispielsweise 10 ist, geben Sie im Feld "Format" zwei Zahlzeichen ein.  
 14. Klicken Sie auf "OK".
 15. Aktualisieren Sie die Seite.
 

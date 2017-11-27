@@ -3,7 +3,7 @@ title: Projektverwaltung und -verrechnung
 description: "Die Projektverwaltungs- und Buchhaltungsfunktionen können in mehreren Branchen verwendet werden, um eine Dienstleistung anzubieten, ein Produkt zu erzeugen oder ein Ergebnis zu erreichen."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cd30c9278c58f8e0ca9b50f67a999708bd64c0a2
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -228,7 +228,7 @@ In der folgenden Tabelle werden die Methoden zum Berechnen der Kosten für den A
 <tbody>
 <tr class="odd">
 <td>Gesamtkosten - tatsächliche Kosten</td>
-<td>Vorkalkulierte Kosten müssen manuell eingegeben werden. Nachdem die Spalte <strong>Gesamtkosten</strong> oder <strong>Gesamtmenge</strong> auf der <strong>Vorkalkulation</strong>-Seite ausgefüllt wurde, werden die tatsächlichen Kosten von den vom Benutzer eingegebenen Summen subtrahiert. Das Ergebnis sind die Kosten für den Abschluss des Projekts. Normalerweise wird der Status der Kosten nicht auf Grundlage von Werten wie beispielsweise der Anzahl der Hotelaufenthalte und der Mahlzeiten im jeweiligen Zeitraum erfasst. Stattdessen basiert es normalerweise auf einem Vergleich mit den Gesamtbetrag der vorkalkulierten Stunden. Dieser Ansatz erfordert kein Planzahlenmodell, und die Gesamtkosten oder die Gesamtmenge können manuell bearbeitet werden. Wenn ein Wert in der Spalte <strong>Gesamtkosten</strong> oder <strong>Gesamtmenge</strong> eingegeben wird, vergleicht Finance and Operations diesen Wert mit den tatsächlichen Buchungen, die in der Periode gebucht werden, und verringert dann den Wert in der Spalte <strong>Abzuschließende Menge</strong> oder <strong>Fertigstellungskosten</strong>.</td>
+<td>Vorkalkulierte Kosten müssen manuell eingegeben werden. Nachdem die Spalte <strong>Gesamtkosten</strong> oder <strong>Gesamtmenge</strong> auf der <strong>Vorkalkulation</strong>-Seite ausgefüllt wurde, werden die tatsächlichen Kosten von den vom Benutzer eingegebenen Summen subtrahiert. Das Ergebnis sind die Kosten, um das Projekt abzuschließen. In der Regel basiert die Verfolgung des Status von Kosten beispielsweise nicht darauf, wie viele Hotelaufenthalte und Mahlzeiten in jedem Zeitraum erfasst werden. Stattdessen basiert es normalerweise auf einem Vergleich mit den Gesamtbetrag der vorkalkulierten Stunden. Dieser Ansatz erfordert kein Planzahlenmodell, und die Gesamtkosten oder die Gesamtmenge können manuell bearbeitet werden. Wenn ein Wert in der Spalte <strong>Gesamtkosten</strong> oder <strong>Gesamtmenge</strong> eingegeben wird, vergleicht Finance and Operations diesen Wert mit den tatsächlichen Buchungen, die in der Periode gebucht werden, und verringert dann den Wert in der Spalte <strong>Abzuschließende Menge</strong> oder <strong>Fertigstellungskosten</strong>.</td>
 </tr>
 <tr class="even">
 <td>Gesamtbudget - tatsächliches Budget</td>
@@ -243,11 +243,11 @@ Finance and Operations verringert nicht automatisch die geplanten Vorkalkulation
 > </tr>
 <tr class="odd">
 <td>Restbudget</td>
-<td>Die Methode verwendet ein Restbudgetmodell, um zu den Kosten für den Abschluss des Projekts zu berechnen. Wenn Sie diese Methode verwenden, werden die tatsächlichen Kosten und die geplanten Beträge im Restbudgetmodell zusammen hinzugefügt. Dies ergibt die Gesamtkosten. Bevor Sie diese Methode verwenden, muss ein Restbudgetmodell eingerichtet werden, um Buchungen auf der Grundlage der tatsächlichen Buchungen abzuziehen, die im System erfasst sind. Prüfen Sie auf der <strong>Planzahlenmodelle</strong>-Seite, ob die Felder in der Gruppe <strong>Automatische Planungsverringerung</strong> markiert sind. Normalerweise wird ein Restbudget aus einem ursprünglichen Budget kopiert. Während Buchungen eingegeben werden, werden die Buchungen für das Restbudget verringert. Wenn Sie beim Fortschritt des Projekts feststellen, dass das Restbudget angepasst werden muss, können Sie das Restbudget mit Planungsbuchungen belasten. <strong>Hinweis:</strong> Die Methode kann nur angewendet werden, wenn der Vorkalkulation ein Planzahlenmodell zugeordnet ist.</td>
+<td>Die Methode verwendet ein Restbudgetmodell, um zu den Kosten für den Abschluss des Projekts zu berechnen. Wenn Sie diese Methode verwenden, werden die tatsächlichen Kosten und die geplanten Beträge im Restbudgetmodell zusammen hinzugefügt. Das Ergebnis sind Gesamtkosten. Bevor Sie diese Methode verwenden, muss ein Restbudgetmodell eingerichtet werden, um Buchungen auf der Grundlage der tatsächlichen Buchungen abzuziehen, die im System erfasst sind. Prüfen Sie auf der <strong>Planzahlenmodelle</strong>-Seite, ob die Felder in der Gruppe <strong>Automatische Planungsverringerung</strong> markiert sind. Normalerweise wird ein Restbudget aus einem ursprünglichen Budget kopiert. Während Buchungen eingegeben werden, werden die Buchungen für das Restbudget verringert. Wenn Sie beim Fortschritt des Projekts feststellen, dass das Restbudget angepasst werden muss, können Sie das Restbudget mit Planungsbuchungen belasten. <strong>Hinweis:</strong> Die Methode kann nur angewendet werden, wenn der Vorkalkulation ein Planzahlenmodell zugeordnet ist.</td>
 </tr>
 <tr class="even">
 <td>Wie vorhergehende Vorkalkulation</td>
-<td>Die gleiche Vorkalkulationsmethode, die in der vorherigen Periode verwendet wurde, wird angewendet. Diese Methode erfordert ein Planzahlenmodell, wenn die vorherige Periode ein Planzahlenmodell erforderte.</td>
+<td>Die gleiche Schätzungsmethode, die in der vorherigen Periode verwendet wurde, wird verwendet. Diese Methode erfordert ein Planzahlenmodell, wenn für die vorherige Periode ein Planzahlenmodell erforderlich war.</td>
 </tr>
 <tr class="odd">
 <td>Fertigstellungskosten auf Null festlegen</td>

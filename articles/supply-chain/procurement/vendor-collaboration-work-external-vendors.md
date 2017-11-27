@@ -3,14 +3,14 @@ title: Kreditorenzusammenarbeit mit externen Kreditoren
 description: "In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um Informationen über die Bestellungen und den Lieferbestand auszutauschen."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 9036b7f9863871915f9ad39d76bf027ae4c2f4bf
-ms.openlocfilehash: aee8db8ddaeac135ed1f9d8b1b8a621609c6d358
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: abff906bcdf31c91ce696afbcd651a1d7a87ea8a
 ms.contentlocale: de-de
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,6 +33,8 @@ ms.lasthandoff: 10/05/2017
 In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um Informationen über die Bestellungen und den Lieferbestand auszutauschen.
 
 Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 for Finance and Operations haben. Es ermöglicht Kreditoren die Arbeit mit Bestellung, Rechnung und Lieferungsbestandsinformationen. In diesem Thema wird beschrieben, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitschnittstelle verwenden, um mit PO und Lieferungsbestand zu arbeiten. Außerdem wird beschrieben, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten. Weitere Informationen dazu, was externe Kreditoren in der Kreditorenzusammenarbeitschnittstelle tun können, finden Sie unter [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)  
+
+Die Informationen in diesem Thema zur Kreditorenzusammenarbeit gelten nur für die aktuelle Version von Dynamics 365 for Finance and Operations Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals (nur Februar 2016- und Mai 2016-Versionen von Microsoft Dynamics AX) Informationen zum Kreditorenportalmodul finden Sie unter [Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals](collaborate-vendors-vendor-portal.md).
 
 Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md) Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
 

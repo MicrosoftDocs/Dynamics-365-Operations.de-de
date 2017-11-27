@@ -1,9 +1,9 @@
 ---
 title: Flexibler Durchschnitt
-description: 
+description: "Der flexible Durchschnitt ist eine kontinuierliche Nachkalkulationsmethode, basierend auf dem Durchschnittsprinzip, in dem die Kosten in Lagerabgängen sich nicht ändern, wenn der Kaufpreis sich ändert. Der Unterschied ist aktiviert und basiert auf eine proportionale Berechnung. Der verbleibende Betrag wird in Aufwand gebucht."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
+Der flexible Durchschnitt ist eine kontinuierliche Nachkalkulationsmethode, basierend auf dem Durchschnittsprinzip, in dem die Kosten in Lagerabgängen sich nicht ändern, wenn der Kaufpreis sich ändert. Der Unterschied ist aktiviert und basiert auf eine proportionale Berechnung. Der verbleibende Betrag wird in Aufwand gebucht. 
+
+Wenn Sie den flexiblen Durchschnitt verwenden, werden Lagerausgleiche und Lagermarkierung nicht unterstützt. Der Lagerabschluss wirkt sich nicht auf Produkte aus, die flexiblen Durchschnitt als Lagersteuerungsgruppe haben, und er generiert keine Ausgleiche zwischen den Buchungen.
 
 Die folgenden Voraussetzungen gelten, wenn Sie flexible Durchschnittskosten als Nachkalkulationsmethode verwenden.
+
 1.  Richten Sie auf der Seite **Artikelmodellgruppen** eine Artikelmodellgruppe ein, bei der im Feld **Lagermodell** die Option "Gleitender Durchschnitt" ausgewählt ist. **Hinweis:** Standardmäßig, wenn "Gleitender Durchschnitt" ausgewählt ist, sind die Felder **Physischen Bestand buchen** und **Wertmäßigen Bestand buchen** ebenfalls ausgewählt. 
 
 2.  Auf der Seite **Buchung** weisen Sie die Konten **Preisdifferenz für flexiblen Durchschnitt** und **Neubewertung der Kosten für flexiblen Durchschnitt** Konten auf der Registerkarte **Lager** zu. Sie verwenden das Konto **Preisdifferenz für flexiblen Durchschnitt**, wenn die Kosten proportional verteilt werden müssen. Dies geschieht aufgrund eines Kostenunterschieds zwischen einem Einkaufsdokument und der Einkaufsrechnung und aufgrund eines Unterschieds zwischen der ursprünglichen Lagermenge und der aktuell verfügbaren Menge. Verwenden Sie das Konto **Kostenneubewertung für gleitenden Durchschnitt**, wenn Sie die gleitenden Durchschnittskosten für ein Produkt auf einen neuen Preis je Einheit anpassen möchten.

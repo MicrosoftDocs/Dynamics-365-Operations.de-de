@@ -3,7 +3,7 @@ title: Operations-Ressourcen
 description: "Betriebliche Ressourcen führen die Aktivitäten eines Projekts oder eines Produktionsprozesses aus. Sie können unterschiedlicher Art sein und verschiedene Funktionen haben."
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a333c4d9c0e614c513bf3e1a02b943b186fb1e5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Betriebliche Ressourcen werden den Aktivitäten zugeordnet, wenn ein Projekt ode
 
 -   **Kapazität** - Geben Sie die Kapazität der betrieblichen Ressource pro Stunde in Bezug auf die Kapazitätsmaßeinheit an.
 -   **Stapelverarbeitungskapazität** – Geben Sie die maximale Stückzahl an, die von der betrieblichen Ressource pro Ausführung bearbeitet werden kann.
--   **Effizienzgrad** – Geben Sie die Effizienz an, die Sie von der betrieblichen Ressource erwarten. Mit dem Effizienzgrad wird der Durchsatz einer betrieblichen Ressource angepasst und er wirkt sich somit auch auf die für die Ressource reservierte Zeit aus. Die Lieferzeiten für die Arbeitsgänge, die die betriebliche Ressource verwenden, werden ebenfalls entsprechend angepasst. Ist hier die Formel, die für die Berechnung verwendet wird: Terminierungszeit = Zeit × 100 ÷ Effizienzgrad. In dieser Formel umfasst *Zeit* sowohl die Fertigungszeit als auch die Rüstzeit.
+-   **Effizienzgrad** – Geben Sie die Effizienz an, die Sie von der betrieblichen Ressource erwarten. Mit dem Effizienzgrad wird der Durchsatz einer betrieblichen Ressource angepasst und er wirkt sich somit auch auf die für die Ressource reservierte Zeit aus. Die Lieferzeiten für die Arbeitsgänge, die die betriebliche Ressource verwenden, werden ebenfalls entsprechend angepasst. Dies ist die Formel, die für die Berechnung verwendet wird: Planungszeit = Zeit × 100 ÷ Effizienzgrad. *Zeit* beinhaltet sowohl die Ausführungszeit als auch die Rüstzeit.
 -   **Grobterminierungsprozentsatz** – Geben Sie den maximalen Prozentsatz der Kapazität der betrieblichen Ressource an, die sie für die Grobterminierung verwenden möchten. Damit die Kapazität in der Feinterminierung flexibel geplant werden kann, sollte dieser Wert weniger als 100 Prozent betragen.
 -   **Begrenzte Kapazität** – Legen Sie diese Option auf **Ja** fest, wenn die betriebliche Ressource auf Basis der tatsächlich verfügbaren Kapazität geplant und wenn vorhandene Kapazitätsreservierungen berücksichtigt werden sollen. Wenn die Option auf **Nein** festgelegt ist, wird angenommen, dass die betriebliche Ressource unbegrenzte Kapazität hat, und die Ressource kann möglicherweise überbucht werden.
 -   **Begrenzte Eigenschaft** - Legen Sie diese Option auf Kapazität **Ja** fest, wenn die betriebliche Ressource basierend auf der aktuellen Kapazität geplant werden soll, die in Bezug auf die erforderlichen Arbeitszeitplanungseigenschaften verfügbar ist.

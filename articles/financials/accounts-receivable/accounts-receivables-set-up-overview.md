@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbe32e248727912073631f1dfb8ee0a49cbf0a5e
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -36,11 +36,10 @@ Debitoren und Kredit und Inkasso konfigurieren, um Rechnungen und eingehenden Za
 Sie haben die Möglichkeit zum Einrichten der folgenden Elemente: Debitorengruppen, Debitoren, Buchungsprofile, verschiedene Zahlungsoptionen, Zinsrechnungen, Mahnschreiben, Provisionen, Parameter für Debitoren, Gebühren, Lieferungen und Zielorte, Wechsel sowie andere Arten von Debitoren- und Kredit- und Inkassoinformationen.
 In der folgenden Tabelle führt die Seiten für die Konfiguration und Verwaltung von Debitoren und Kredit und Inkasso unterstützen. Die Tabelleneinträge sind nach Aufgabe und dann alphabetisch nach Seitenname sortiert.
 
-| ![Hinweis](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Hinweis")**Hinweis**          |
-|--------------------------------------------------------------------------------------------------|
-| Für die Navigation zu einigen der in der folgenden Tabelle enthaltenen Seiten müssen Informationen oder Parameter festgelegt werden. |
+> [!NOTE]
+> Sie können nicht zu einigen Seiten in der folgenden Tabelle navigieren, es sei denn, dass Daten oder Parametereinstellungen auf andere Seiten eingegeben wurden.
 
-| Aufgabe                                                 | Seitenname                            | Nutzung                                                                                                                                                                                                                                                                             |
+| Aufgabe                                                 | Seitenname                            | Verwendung                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurieren von erforderlichen Debitoreninformationen | Debitorenparameter       | Dient zum Einrichten von Parametern für das Modul "Debitoren".                                                                                                                                                                                                                             |
 |                                                      | Debitorenworkflows        | Dient zum Erstellen eines Workflows oder zum Ändern eines vorhandenen Workflows.                                                                                                                                                                                                                                      |

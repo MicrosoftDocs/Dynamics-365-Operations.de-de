@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c222f0d17be6eea0f776f5460c793b82d8b3e0ab
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 6b896c28f475a8f827a1db1b6dd684b6ec64e872
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -138,7 +138,7 @@ Sie können auf der Registerkarte <strong>Allgemein</strong> der Seite <strong>D
 </tr>
 <tr class="odd">
 <td>Benutzeranforderungen</td>
-<td>Benutzeranforderungen stellen eine Abstraktion zwischen Benutzeranforderungen und bestimmten Komponenten und Attributen dar. Sie können eine Benutzeranforderung nicht einem Artikel zuordnen. Beispielsweise kauft ein Debitor für ein Heimkinosystem. Der Verkäufer fragt nach der Größe des Raums, in dem der Debitor das System installieren möchte, um festzustellen, wie viel Watt erforderlich sind. In diesem Beispiel kann die Raumgröße eine Benutzeranforderung sein, mit den entsprechenden Attributwert für eine bestimmte Komponente bestimmen. Sie können Benutzeranforderungen ausblenden, sodass sie nicht dem Benutzer während einer Konfigurationssitzung angezeigt werden. Attribute, Unterkomponenten und Benutzeranforderungen, die der Benutzeranforderung zugeordnet sind, werden ebenfalls ausgeblendet. Sie können eine Bedingung schreiben, um zu steuern, ob eine Benutzeranforderung ausgeblendet werden kann. Sie müssen zum Schreiben dieser Bedingung die Optimization Modeling Language (OML)-Syntax verwenden.</td>
+<td>Benutzeranforderungen stellen eine Abstraktion zwischen Benutzeranforderungen und bestimmten Komponenten und Attributen dar. Sie können eine Benutzeranforderung nicht einem Artikel zuordnen. Beispielsweise kauft ein Debitor für ein Heimkinosystem. Der Verkäufer fragt nach der Größe des Raums, in dem der Debitor das System installieren möchte, um festzustellen, wie viel Watt erforderlich sind. In diesem Beispiel kann die Raumgröße eine Benutzeranforderung sein, mit deren Hilfe der entsprechende Attributwert für eine bestimmte Komponente bestimmt werden kann. Sie können Benutzeranforderungen ausblenden, sodass dem Benutzer während einer Konfigurationssitzung nicht angezeigt werden. Attribute, Unterkomponenten und Benutzeranforderungen, die der Benutzeranforderung zugeordnet sind, werden ebenfalls ausgeblendet. Sie können eine Bedingung schreiben, um zu steuern, ob eine Benutzeranforderung ausgeblendet werden kann. Sie müssen zum Schreiben dieser Bedingung die Optimization Modeling Language (OML)-Syntax verwenden.</td>
 </tr>
 <tr class="even">
 <td>Stücklistenpositionen</td>

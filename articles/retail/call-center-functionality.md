@@ -3,7 +3,7 @@ title: Callcenterfunktionen
 description: "Dieser Artikel gibt eine Übersicht über die Call Center Verkaufsfunktionalität in Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 00d24e9933d087f150ec5270da94ad911423824d
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -40,7 +40,7 @@ Dynamics 365 for Retail unterstützt außerdem Callcenter als einen Einzelhandel
 
 Wenn Sie diese Funktionen in den Callcentereinstellungen aktiviert haben, sind sie auf der Seite **Auftrag** für Benutzer verfügbar, die dem Callcenter zugeordnet sind. Die meisten dieser Funktionen erfordern zusätzliche Einstellungen, bevor sie verwendet werden können. Bevor Benutzer Callcenteraufträge erstellen können, müssen Sie diese Benutzer dem Callcenter als Callcenterbenutzer hinzufügen. Dieser Schritt ermöglicht callcenterkanalspezifische Konfigurationen und Funktionen. Nachfolgend finden Sie einige Beispiele der Funktionen, die zur Verfügung stehen:
 
--   Geführte Verkäufe stellen Konfigurationsoptionen für Telesales-Skripts und Produktbilder bereit, um Verkaufssachbearbeitern zu helfen und zu führen, während diese Aufträge entgegennehmen.
+-   Geführte Verkäufe stellen Konfigurationsoptionen für Telesales-Skripts und Produktbilder bereit, um Verkaufssachbearbeitern zu helfen und zu führen, während diese Aufträge entgegennehmen.
 -   Aufträge können erst abgeschlossen werden, wenn Verkaufssachbearbeiter mindestens eine Zahlungsmethode aufgezeichnet haben.
 -   Regeln für weiteren Verkauf/ergänzenden Verkauf können konfiguriert werden, um Verkaufssachbearbeiter aufzufordern, bestimmte Produkte für Kunden zu bewerben.
 -   Verkaufssachbearbeiter können den Quellcode für den Katalog aufzeichnen, von dem ein Debitor bestellt.

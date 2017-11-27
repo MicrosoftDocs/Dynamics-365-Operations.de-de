@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d602e07548d22bcdee3f375c3c327c0e8963c3b4
+ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
+ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Entwerfen einer Konfiguration zum Generieren von Berichten im Microsoft Word-Format für elektronische Berichterstellung (ER)
@@ -30,9 +30,9 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rol
 
 Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen” abschließen. Im Voraus müssen Sie auch die folgenden Vorlagen für den Beispielbericht herunterladen und lokal speichern:
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
+[Vorlage des Zahlungsberichts](https://go.microsoft.com/fwlink/?linkid=862266)
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
+[Begrenzte Vorlage eines Zahlungsberichtes](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Diese Prozedur ist eine Funktion, die in Microsoft Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
 
@@ -49,7 +49,7 @@ Diese Prozedur ist eine Funktion, die in Microsoft Dynamics 365 for Operations, 
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Ersetzen der Excel-Vorlage durch eine Word-Vorlage
     * Aktuell wird das Excel-Dokument als Vorlage verwendet, um die Ausgabe im OPENXML-Format zu generieren. Wir importieren die Vorlage des Berichts im Word-Format.  
 1. Klicken Sie auf Anhänge.
-    * Ersetzen Sie die vorhandene Excel-Vorlage durch die Word-Vorlage, die Sie zuvor heruntergeladen haben, SampleVendPaymDocReport.docx. Hinweis, diese Vorlage beinhaltet nur das Layout des Dokuments, das wir als ER-Ausgabe generieren möchten.  
+    * Ersetzen Sie die vorhandene Excel-Vorlage durch die Word-Vorlage, die Sie zuvor heruntergeladen haben, Vorlage eines Zahlungsberichts. Hinweis, diese Vorlage beinhaltet nur das Layout des Dokuments, das wir als ER-Ausgabe generieren möchten.  
 2. Klicken Sie auf Löschen.
 3. Klicken Sie auf "Ja".
 4. Klicken Sie auf "Neu".

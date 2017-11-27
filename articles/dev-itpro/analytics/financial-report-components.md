@@ -1,17 +1,17 @@
 ---
 title: Finanzberichtkomponenten
 description: "Dieser Artikel beschreibt die Verwendung der Komponenten, der Bausteine oder Berichtsdefinitionen in der Finanzberichterstellung. Diese Bausteine beinhalten Zeilendefinitionen, Spaltendefinitionen und Berichtstruktur-Definitionen. Dieser Artikel erläutert, wie Bausteine organisiert und gesperrt werden, und wie Sie mit Bausteingruppen arbeiten."
-author: ShylaThompson
+author: aolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7b283b8550bd7e5eff969d45c761d0a54d93a33e
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt die Verwendung der Komponenten, der Bausteine oder Berichtsdefinitionen in der Finanzberichterstellung. Diese Bausteine beinhalten Zeilendefinitionen, Spaltendefinitionen und Berichtstruktur-Definitionen. Dieser Artikel erläutert, wie Bausteine organisiert und gesperrt werden, und wie Sie mit Bausteingruppen arbeiten. 
+Dieser Artikel beschreibt die Verwendung der Komponenten, der Bausteine oder Berichtsdefinitionen in der Finanzberichterstellung. Diese Bausteine beinhalten Zeilendefinitionen, Spaltendefinitionen und Berichtstruktur-Definitionen. Der Artikel beschreibt, wie Sie Bausteine organisieren und sperren. 
 
-Die Designphilosophie hinter dem Finanzberichtdesigner ist, Informationen in kleinste Komponenten oder Grundbausteine zu zerteilen, sie zu mischen und nach Bedarf zusammenzufügen. Daher ist die Berichtsformatierung von Ihren finanziellen Daten geetrennt, und Sie können das Design eines Berichts ändern, ohne die Finanzdaten in Ihrem Microsoft Dynamics ERP-System zu ändern. Mithilfe dieses Bausteinansatzes können Sie Text, Beträge und Berechnungen kombinieren, um die Berichte zu erstellen, die Sie benötigen. Zudem fördert diese Flexibilität die Kreativität, indem es das Anzeigen Ihrer Arbeitsgänge auf unterschiedliche Arten erleichtert. Die einzelnen Bausteine einer Berichtsdefinition sind einem dreidimensionalen Arbeitsblatt ähnlich, sie bieten jedoch mehr Leistung. Eine Berichtsdefinition gibt die Zeilendefinition, die Spaltendefinition und die optionale Berichtstruktur-Definition an, die für den Bericht verwendet werden sollte. Sie umfasst auch Informationen zum Speicherort des generierten Berichts und wie er formatiert wird. Zur besseren Wiederverwendung und Freigabe können Sie eine Baustein-Gruppe erstellen, die eine Sammlung vorhandener Berichtsdefinitionen, Zeilendefinitionen, Spaltendefinitionen, Berichtstruktur-Definitionen und Dimensionssätze ist, die einem Unternehmen zugeordnet sind.
+Die Designphilosophie hinter dem Finanzberichtdesigner ist, Informationen in kleinste Komponenten oder Grundbausteine zu zerteilen, sie zu mischen und nach Bedarf zusammenzufügen. Daher ist die Berichtsformatierung von Ihren finanziellen Daten geetrennt, und Sie können das Design eines Berichts ändern, ohne die Finanzdaten in Ihrem Microsoft Dynamics ERP-System zu ändern. Mithilfe dieses Bausteinansatzes können Sie Text, Beträge und Berechnungen kombinieren, um die Berichte zu erstellen, die Sie benötigen. Zudem fördert diese Flexibilität die Kreativität, indem es das Anzeigen Ihrer Arbeitsgänge auf unterschiedliche Arten erleichtert. Die einzelnen Bausteine einer Berichtsdefinition sind einem dreidimensionalen Arbeitsblatt ähnlich, sie bieten jedoch mehr Leistung. Eine Berichtsdefinition gibt die Zeilendefinition, die Spaltendefinition und die optionale Berichtstruktur-Definition an, die für den Bericht verwendet werden sollte. Sie umfasst auch Informationen zum Speicherort des generierten Berichts und wie er formatiert wird. 
 
-## <a name="building-blocks-of-a-report"></a> Bausteine eines Berichts
-| Baustein            | Beschreibung                                                                                                                                                                                                                                                                              | Weitere Informationen                                                                                                 |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+## <a name="building-blocks-of-a-report"></a>Bausteine eines Berichts
+| Baustein            | Beschreibung                     | Weitere Informationen                                    |
+|---------------------------|---------------------------------|---------------------------------------------------------|
 | Zeilendefinition            | Eine Zeilendefinition definiert die beschreibenden Positionen (z. B. Löhne oder Verkäufe), in einem Bericht. Sie listet auch Segmentwerte oder Dimensionen auf, die die Werte für jeden Positionsartikel enthalten und schließt Zeilenformatierung und Berechnungen ein.                                                    | [Zeilendefinitionen](row-definitions-financial-reporting.md)                       |
 | Spaltendefinition         | Eine Spaltendefinition definiert die Periode, die verwendet werden soll, wenn Daten aus den Finanzdimensionen extrahiert werden. Sie umfasst auch Spaltenformatierung und Berechnungen.                                                                                                                                 | [Spaltendefinitionen](column-definitions-financial-reports.md)         |
 | Berichtsbaumstruktur-Definition | Eine Berichtsbaumstruktur-Definition ähnelt einem Organigramm. Sie enthält einzelne Berichtseinheiten, die jedes Feld im Diagramm darstellen. Die Einheiten können entweder einzelne Abteilungen aus den Finanzdaten oder ranghöhere Einheiten sein, die Daten aus anderen Berichtseinheiten zusammenfassen. | [Berichtsbaumstruktur-Definitionen](financial-reporting-tree-definitions.md) |
@@ -67,44 +67,20 @@ Um einen gesperrten Baustein zu entsperren, öffnen Sie den Baustein, und klicke
 
 ## <a name="building-block-groups"></a>Baustein-Gruppen
 
-Bausteine sind die Zeilendefinitionen, Spaltendefinitionen, Berichtsbaumstruktur-Definitionen und Berichtsdefinitionen, die Sie für einen Bericht erstellen. Bausteingruppen sind Sammlungen der Definitionen und Dimensionssätze, die einem Unternehmen zugeordnet sind. Bausteingruppen können unternehmensspezifisch sein, oder mehrere Unternehmen können die gleiche Gruppe von Bausteinen teilen. Wenn einige Ihrer Unternehmen unterschiedliche Kontenpläne haben, möchten Sie möglicherweise für jedes Unternehmen eine andere Bausteingruppe verwenden. Alternativ können Sie alle Ihre einzelnen Bausteine benennen, um anzugeben, mit welchem Unternehmen sie kompatibel sind.
-### <a name="create-a-building-block-group"></a>Eine Baustein-Gruppe erstellen
+Bausteine sind die Zeilendefinitionen, Spaltendefinitionen, Berichtsbaumstruktur-Definitionen und Berichtsdefinitionen, die Sie für einen Bericht erstellen. Bausteingruppen sind Sammlungen der Definitionen und Dimensionssätze. 
 
-1.  Im Berichts-Designer klicken Sie im Menü **Unternehmen** auf **Bausteingruppen**.
-2.  Klicken Sie im Dialogfeld **Bausteingruppen** auf **Neu**.
-3.  Geben Sie einen eindeutigen Namen und eine Beschreibung für die Bausteingruppe ein. Jedes Feld kann maximal 256 Zeichen enthalten. (Diese Nummer enthält Leerzeichen.)
-4.  Klicken Sie auf **OK**, um die neue Bausteingruppe zu erstellen.
 
-### <a name="assign-a-building-block-group"></a>Eine Baustein-Gruppe zuweisen
+### <a name="view-a-building-block-group"></a>Anzeigen einer Bausteingruppe
 
-Nachdem Sie ein Bausteingruppe erstellt haben, muss sie mindestens einem Unternehmen zugewiesen werden. Sie können nun Berichts-, Zeilen-, Spalten- und Berichtsstruktur-Definitionen erstellen und in der Bausteingruppe speichern. Sie müssen alle Bausteine schließen, bevor Sie das folgende Verfahren beginnen.
-1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Unternehmen**.
-2.  Wählen Sie im Dialogfeld **Unternehmen** das Unternehmen aus, dem Sie eine Bausteingruppe zuweisen möchten.
-3.  Klicken Sie auf **Ändern**.
-4.  Wählen Sie im Dialogfeld **Unternehmen ändern** im Feld **Bausteingruppe** die Bausteingruppe aus, die dem Unternehmen zugewiesen wird, oder klicken Sie auf **Neu**, um eine Bausteingruppe zu erstellen.
-5.  Klicken Sie auf **OK**, um die neue Bausteingruppe zuzuweisen.
-6.  Klicken Sie auf **Schließen**, um das Dialogfeld **Unternehmen** zu schließen. Die Bausteingruppe, die Sie ausgewählt haben, wird nun dem Unternehmen zugewiesen. Jetzt sind alle neu erstellten Zeilendefinitionen, Spaltendefinitionen, usw., Teil der Bausteingruppe, die diesem Unternehmen zugewiesen wurde. Sie können auch eine .tdbx-Datei oder einen Bericht von einem anderen System importieren.
-
-### <a name="view-a-building-block-group"></a> Eine Baustein-Gruppe anzeigen
-
-Nachdem eine Baustein-Gruppe erstellt wurde und verwendet wird, können Sie die Bausteine sehen, die ihm zugewiesen sind. Sie können auch Bausteingruppen exportieren oder importieren und zusätzlich verwalten.
+Sie können alle Bausteine anzeigen, die einer Bausteingruppe zugewiesen sind. Sie können auch eine Bausteingruppe exportieren oder importieren.
 1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Bausteingruppen**.
 2.  Wählen Sie im Dialogfeld **Baustein-Gruppen** den Baustein aus, der angezeigt werden soll.
 3.  Klicken Sie auf **Anzeigen**, um das Dialogfeld **Bausteingruppe anzeigen** zu öffnen und den Inhalt der Bausteingruppe anzuzeigen.
 4.  Klicken Sie auf **Schließen**, um die Dialogfelder zu schließen.
 
-### <a name="save-a-building-block-group-under-a-new-name"></a>Eine Bausteingruppe unter neuem Namen speichern
+### <a name="export-a-building-block-group"></a>Exportieren einer Bausteingruppe
 
-Sie können eine vorhandene Bausteingruppe unter einen neuen Namen speichern. Anschließend können Sie die neue Bausteingruppe ändern, ohne die ursprüngliche Bausteingruppe zu ändern.
-1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Bausteingruppen**.
-2.  Wählen Sie im Dialogfeld **Bausteingruppen** die Bausteingruppe aus, die unter einem neuen Namens gespeichert werden soll.
-3.  Klicken Sie auf **Speichern unter**.
-4.  Geben Sie einen neuen Namen und eine Beschreibung für die Bausteingruppe ein.
-5.  Klicken Sie auf **OK**. Die neue Bausteingruppe erscheint im Dialogfeld **Baustein-Gruppen**.
-
-### <a name="export-a-building-block-group"></a> Eine Baustein-Gruppe exportieren
-
-Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren. Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Bausteingruppen oder Finance and Operations-Installationen kopieren. Der Berichtsdesigner umfasst die referenzierten Schriftschnitte und Dimensionssätze mit der Bausteingruppe.
+Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren. Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Finance and Operations-Installationen kopieren. Der Berichtsdesigner umfasst die referenzierten Schriftschnitte und Dimensionssätze mit der Bausteingruppe.
 1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Bausteingruppen**.
 2.  Wählen Sie im Dialogfeld **Bausteingruppen** die Bausteingruppe aus, die exportiert werden soll, und klicken Sie dann auf **Exportieren**.
 3.  Wählen Sie im Dialogfeld **Exportieren** die Berichtsdefinitionen aus, die exportiert werden soll:
@@ -118,7 +94,7 @@ Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer
 
 ### <a name="import-a-building-block-group"></a> Eine Baustein-Gruppe importieren
 
-Sie können eine Bausteingruppe in eine bereits bestehende Bausteingruppe importieren oder eine neue Bausteingruppe für die Daten erstellen. Alle importierten Bausteingruppen behalten ihre ursprünglichen Schriftarten und Unternehmensreferenzen bei und enthalten die entsprechenden Dimensionssätze.
+Sie können eine Bausteingruppe in eine vorhandene Bausteingruppe importieren. Alle importierten Bausteingruppen behalten ihre ursprünglichen Schriftarten und Unternehmensreferenzen bei und enthalten die entsprechenden Dimensionssätze.
 1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Bausteingruppen**.
 2.  Wählen Sie im Dialogfeld **Bausteingruppen** den Baustein aus, in den Sie eine Bausteingruppe importieren möchten, und klicken Sie dann auf **Importieren**.
 3.  Wählen Sie im Dialogfeld **Öffnen** die zu importierende Bausteingruppe aus, und klicken Sie dann auf **Öffnen**.

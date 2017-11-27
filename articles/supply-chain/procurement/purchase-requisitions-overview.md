@@ -1,9 +1,9 @@
 ---
 title: "Übersicht über Bestellanforderung"
-description: Dieser Artikel beschreibt den Bestellanforderungsworkflow und die verschiedenen Statuswerte, die eine Bestellanforderung haben kann.
+description: Dieses Thema beschreibt den Bestellanforderungsworkflow und die verschiedenen Statuswerte, die eine Bestellanforderung haben kann.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 6fb8bbc7340650341618f3a9613f4234ef1e9c04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b96a89bcabdaa3e3a3be3786dda15f9725f5a50d
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt den Bestellanforderungsworkflow und die verschiedenen Statuswerte, die eine Bestellanforderung haben kann.
+Dieses Thema beschreibt den Bestellanforderungsworkflow und die verschiedenen Statuswerte, die eine Bestellanforderung haben kann.
 
 Je nach Einstellungen Ihrer Organisation können Sie unter Umständen Bestellanforderungen für von der Organisation verwendete Produkte erstellen. Bei einer Bestellanforderung handelt es sich um ein internes Dokument, durch das die Einkaufsabteilung zum Einkauf von Artikeln oder Dienstleistungen autorisiert wird.  
 
@@ -70,7 +70,7 @@ Der Gesamtstatus einer Bestellanforderung wird durch den Status der Bestellanfor
 <tr class="odd">
 <td>Überblick</td>
 <td>Überblick</td>
-<td>Die Bestellanforderung und die Bestellanforderungsposition wurden zwar erstellt, aber noch nicht zur Prüfung übermittelt. Bestellanforderungen und Bestellanforderungspositionen, die den Status <strong>Entwurf</strong> aufweisen, können geändert werden. Eine Bestellanforderung oder Bestellanforderungsposition besitzt ebenfalls den Status <strong>Entwurf</strong>, wenn sie erneut aufgerufen, aber nicht erneut zur Prüfung übermittelt wurde.<strong>Hinweis:</strong> Sie können eine Bestellanforderung auf Dokumentebene übermitteln oder erneut aufrufen. Sie können jedoch eine einzelne Bestellanforderungsposition nicht übermitteln oder erneut aufrufen.</td>
+<td>Die Bestellanforderung und die Bestellanforderungsposition wurden zwar erstellt, aber noch nicht zur Prüfung übermittelt. Bestellanforderungen und Bestellanforderungspositionen können geändert werden, wenn sie den Status <strong>Entwurf</strong> aufweisen. Eine Bestellanforderung oder Bestellanforderungsposition kann auch den Status <strong>Entwurf</strong> besitzen, wenn sie erneut aufgerufen, aber nicht erneut zur Prüfung übermittelt wurde. <strong>Hinweis:</strong> Nur Bestellanforderungen auf Dokumentebene können übermittelt oder erneut aufgerufen werden. Sie können jedoch eine einzelne Bestellanforderungsposition nicht übermitteln oder erneut aufrufen.</td>
 </tr>
 <tr class="even">
 <td>Wird überprüft</td>
@@ -111,7 +111,7 @@ Wenn Sie eine Bestellanforderungsposition, die abgelehnt wurde, erneut übermitt
 <tr class="odd">
 <td>Abgebrochen</td>
 <td>Abgebrochen</td>
-<td>Die Bestellanforderung und alle Bestellanforderungspositionen wurden storniert.<strong>Hinweis:</strong> Wenn Sie einen Artikel nicht mehr benötigen, der sich in einer Bestellanforderungsposition befindet, müssen Sie die Bestellanforderungsposition stornieren, wenn sie bereits genehmigt wurde. Nur genehmigte Bestellanforderungspositionen können storniert werden. Wenn derzeit Bestellanforderungspositionen geprüft werden, besitzt die Bestellanforderung den Status <strong>Wird überprüft</strong>. In diesem Fall können Sie die Bestellanforderung erneut aufrufen und die entsprechende Bestellanforderungsposition löschen.</td>
+<td>Die ausgewählte Bestellanforderung und alle Bestellanforderungspositionen wurden abgebrochen. <strong>Hinweis:</strong> Wenn Sie einen Artikel, der sich in einer Bestellanforderungsposition befindet, nicht mehr benötigen, muss diese Bestellanforderungsposition storniert werden, falls sie bereits genehmigt wurde. Nur genehmigte Bestellanforderungspositionen können storniert werden. Wenn derzeit Bestellanforderungspositionen geprüft werden, besitzt die Bestellanforderung den Status <strong>Wird überprüft</strong>. In diesem Fall können Sie die Bestellanforderung erneut aufrufen und die entsprechende Bestellanforderungsposition löschen.</td>
 </tr>
 <tr class="even">
 <td>Geschlossen</td>

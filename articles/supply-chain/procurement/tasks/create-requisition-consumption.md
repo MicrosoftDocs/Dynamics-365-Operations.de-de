@@ -16,17 +16,17 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 07fe007005fcbbac1beecadb14dbd752376a0bd4
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 55ef4b1757a6f3c28c8575412d66488fda8608a5
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="create-a-requisition-for-consumption"></a>Anforderung für Verbrauch erstellen
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt Ihnen, wie Sie einen Kreditbrief importieren. Sie zeigen die unterschiedliche Arten, um nach Produkte im Beschaffungskatalog zu suchen und zu erfahren, öie ein Produkt hinzufügt, das nicht im Katalog ist. Überprüfen Sie zunächst, müssen Sie eine Einkaufsrichtlinieneinstellung mit der Verbrauch mit der Standardtyp der Anforderung offen. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Die Prozedur kann in einem Benutzerprofil nur ausgeführt werden, das als Arbeitskraft eingerichtet ist.  Diese Aufgaben werden normalerweise von einem Lagerortmitarbeiter ausgeführt. Der Mitarbeiter setzen Sicherheitsrolle ermöglicht Ihnen, die Aufgaben besitzen ein, oder, wenn Sie USMF verwenden, können Sie als Alicia anmelden.
+Diese Prozedur zeigt Ihnen, wie Sie einen Kreditbrief importieren. Sie erfahren Ihnen unterschiedliche Arten an, für Produkte im Beschaffungskatalog zu suchen und wie ein Produkt hinzufügt, das nicht im Katalog ist. Überprüfen Sie zunächst, müssen Sie eine Einkaufsrichtlinieneinstellung mit der Verbrauch mit der Standardtyp der Anforderung offen. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Die Prozedur kann in einem Benutzerprofil nur ausgeführt werden, das als Arbeitskraft eingerichtet ist.  Diese Aufgaben werden normalerweise von einem Lagerortmitarbeiter ausgeführt. Der Mitarbeiter setzen Sicherheitsrolle ermöglicht Ihnen, die Aufgaben besitzen ein, oder, wenn Sie USMF verwenden, können Sie als Alicia anmelden.
 
 
 ## <a name="create-a-new-requisition"></a>Neue Reiseanforderung erstellen
@@ -46,7 +46,7 @@ Diese Prozedur zeigt Ihnen, wie Sie einen Kreditbrief importieren. Sie zeigen di
 
 ## <a name="add-a-line-to-the-requisition"></a>Fügt dem Arbeitszeitnachweis eine neue Zeile hinzu.
 1. Klicken Sie auf "Position hinzufügen".
-    * Es gibt zwei Möglichkeiten zum Hinzufügen von Positionen der Bestellanforderung. Wenn Sie die Produktnummer bereits kennen oder Sie wissen, dass Sie ein Produkt anfordern, das nicht im Produktkatalog ist, können Sie die Position direkt mit "Position hinzufügen" hinzufügen. Die andere Methode ist zu verwenden "Produkte hinzufügen" wo das Suchen und Filtern verwenden können, um Artikel im Produktkatalog zu suchen.    
+    * Es gibt zwei Möglichkeiten zum Hinzufügen von Positionen der Bestellanforderung. Wenn Sie bereits wissen, dass die Produktnummer oder Sie bereits wissen, dass Sie ein Produkt anfordern, die nicht im Produktkatalog ist, können Sie die Position direkt mit hinzufügen "Position" hinzufügen. Die andere Methode ist zu verwenden "Produkte hinzufügen" wo das Suchen und Filtern verwenden können, um Artikel im Produktkatalog zu suchen.    
 2. Klicken Sie auf der Zeile, die Sie soeben erstellt haben.
     * Die anfordernde Person ist die Arbeitskraft, die die Anforderung angefordert hat.   
     * Standardmäßig ist die Person, die die Anforderung vorbereitet, die Arbeitskraft, die sie angefordert hat. Sie müssen die Erlaubnis werden, eine Bestellanforderungsposition im Auftrag einer anderen Arbeitskraft vorbereitet. Wenn Sie solche Berechtigungen dann haben, zeigen andere Arbeitskräfte in dieser Suche.  

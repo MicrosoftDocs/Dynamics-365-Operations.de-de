@@ -3,7 +3,7 @@ title: "Berechnungen für Produktkonfigurationsmodelle, FAQ"
 description: "In diesem Thema werden die Berechnungen für Produktkonfigurationsmodelle beschrieben und erklärt, wie Berechnungen zusammen mit Einschränkungen verwendet werden."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fea4e139d32c780769bafe08d603b828d366550c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 0763e5a02e7a14b6ef369103aa25e435559abe19
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -75,7 +75,7 @@ Berechnungen treten auf, wenn ein Wert für alle Eingabeattribute bereitgestellt
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Kann ich den Wert überschreiben, der für das Zielattribut berechnet wird?
 Sie können den Wert überschreiben, der für das Zielattribut berechnet wird, es sei denn, das Zielattribut ist als ausgeblendet oder schreibgeschützt festgelegt.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Wie lege ich ein Zielattribut als ausgeblendet oder schreibgeschützt fest?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Wie lege ich ein Zielattribut als ausgeblendet oder schreibgeschützt fest?
 Um ein Attribut als ausgeblendet oder schreibgeschützt festzulegen, führen Sie folgende Schritte aus.
 
 1.  Klicken Sie auf **Produktinformationsverwaltung** &gt; **Gemeinsam** &gt; **Produktkonfigurationsmodelle**.

@@ -3,7 +3,7 @@ title: "Externen Katalog für PunchOut eProcurement einrichten"
 description: "In diesem Thema wird die Verwendung eines externen Katalogs oder des Punchoutkatalogs beschrieben, um Angebotsinformationen von einem Kreditor zu erhalten und einer Bestellanforderung hinzuzufügen."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 4c89f6f168825f7767b836be09fa73b8659b00c6
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a20bb97e451ac59ba23c7f767b5feb336278dcd1
 ms.contentlocale: de-de
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -40,15 +40,15 @@ Der externe Katalog sollte einem Mitarbeiter, der eine Bestellanforderung eingib
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Führen Sie zum Einrichten eines externen Lieferantenkatalogs die folgenden Aufgaben aus:
 
-1. Richten Sie eine Beschaffungskategoriehierarchie ein. Weitere Informationen finden Sie unter [Einrichten einer Beschaffungskategoriehierarchie](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies).
-2. Registrieren Sie den Kreditor im Bereich Finance and Operations. Bevor Sie Konfigurationen für den Zugriff auf einen externen Lieferantenkatalog einrichten können, müssen Sie zuerst den Kreditor und den Kreditorkontakt in Microsoft Dynamics 365 einrichten. Der externe Lieferantenkatalog muss auch der ausgewählten Beschaffungskategorie zugeordnet werden. Weitere Informationen zum Registrieren von Kreditoren in Microsoft Dynamics 365, finden Sie unter [Verwalten Sie Kreditorenzusammenarbeitbenutzer](manage-vendor-collaboration-users.md). Informationen zum Einrichten einer Beschaffungskategoriehierarchie und zum Zuordnen der Warencodes zu einer Beschaffungskategorie finden Sie unter [Lieferanten bestlimmten Beschaffungskategorien zuweisen](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories).
-3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen darüber, wie Sie eine Maßeinheit erstellen, finden Sie unter [Maßeinheit verwalten](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure).
-4. Konfigurieren Sie den externen Lieferantenkatalog anhand der Anforderungen an die externe Katalogwebsite des Kreditors. Weitere Informationen zu Aufgabenleitfäden finden Sie im nächsten Abschnitt.
+1. Richten Sie eine Beschaffungskategoriehierarchie ein. Weitere Informationen finden Sie unter [Einrichten einer Beschaffungskategoriehierarchie](tasks/set-up-policies-procurement-category-hierarchies.md).
+2. Registrieren Sie den Kreditor im Bereich Finance and Operations. Bevor Sie Konfigurationen für den Zugriff auf einen externen Lieferantenkatalog einrichten können, müssen Sie zuerst den Kreditor und den Kreditorkontakt in Microsoft Dynamics 365 einrichten. Der externe Lieferantenkatalog muss auch der ausgewählten Beschaffungskategorie zugeordnet werden. Weitere Informationen zum Registrieren von Kreditoren in Microsoft Dynamics 365, finden Sie unter [Verwalten Sie Kreditorenzusammenarbeitbenutzer](manage-vendor-collaboration-users.md). Informationen zum Einrichten einer Beschaffungskategoriehierarchie und zum Zuordnen der Warencodes zu einer Beschaffungskategorie finden Sie unter [Lieferanten bestimmten Beschaffungskategorien zuweisen](tasks/approve-vendors-specific-procurement-categories.md).
+3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen darüber, wie Sie eine Maßeinheit erstellen, finden Sie unter [Maßeinheit verwalten](../pim/tasks/manage-unit-measure.md).
+4. Konfigurieren Sie den externen Lieferantenkatalog anhand der Anforderungen an die externe Katalogwebsite des Kreditors. Genauere Informationen zu dieser Aufgabe finden Sie unter [Konfigurieren des externen Lieferantenkataloge](#configure-the-external-vendor-catalog).
 5. Testen Sie die Konfigurationen des externen Lieferantenkatalogs. Überprüfen Sie dabei, ob die Einstellungen funktionieren und Sie auf den Katalog zugreifen können. Verwenden Sie die Aktion **Einstellungen überprüfen**, um die angeforderte Nachricht aufzusetzen. Diese Nachricht soll Kreditorendie auf die externe Katalogwebsite leiten, die in einem Browserfenster geöffnet wird. Während der Prüfungs können Sie keine Artikel und Dienstleistungen beim Lieferanten bestellen. Zum Bestellen von Artikeln oder Dienstleistungen müssen Sie auf die Bestellanforderung des Lieferanten zugreifen.
 6. Aktivieren Sie den externen Katalog, indem Sie die Schaltfläche **Katalog aktivieren** auf der Seite **Externe Kataloge** verwenden. Der externe Katalog muss aktiviert werden, bevor ihn Mitarbeiter verwenden können. Sie können jederzeit den externen Katalog deaktivieren.
 
 
-## <a name="4-configure-the-external-vendor-catalog"></a>(4) Konfigurieren Sie den externen Lieferantenkatalog
+## <a name="configure-the-external-vendor-catalog"></a>Konfigurieren Sie den externen Lieferantenkatalog
 
 Dieser Abschnitt spezifiziert Informationen zur Aufgabe 4 im vorherigen Abschnitt.
 
@@ -81,7 +81,7 @@ Unten finden Sie eine Beschreibung der Tags, die in der Vorlage enthalten sind:
 
 ### <a name="extrinsic-elements"></a>Äußere Elemente
 
-Ein äußeres Element bedeutet zusätzliche Informationen, wie beispielsweise ein Benutzername, der auf einem Benutzer für das Punchout basiert. Das äußere Element wird festgelegt, wenn der Punchout auftritt und in der Anforderungsnachricht übermittelt werden kann.
+Ein systeminternes Element sind zusätzliche Informationen, wie beispielsweise Benutzername, die auf dem Benutzer basieren, der ein PunchOut durchführt. Das systeminterne Element wird festgelegt, wenn der PunchOut erfolgt, und es kann in der Anforderungseinstellungsnachricht gesendet werden.
 Ihr Kreditor kann eine Anforderung für den Erhalt eines äußeren Elements in der Einstellungsanforderung haben. In diesem Fall sollten Sie das äußeren Elementen der Liste der äußeren Elemente im Abschnitt **Nachrichtenformat** der Seite **Externer Katalog** hinzufügen. Geben Sie einen Namen für das äußere Element an, das der Lieferant erkennen und einem Wert zuordnen kann. Die Optionen für Werte: Benutzernamen-, Benutzer--E-Mail oder Zufallswert.
 Weitere Informationen zum cXML Protokoll, finden Sie hier: http://cxml.org/
 

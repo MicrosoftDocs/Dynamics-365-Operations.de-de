@@ -3,7 +3,7 @@ title: "Status auf einem mobilen Einzelvorgangsgerät melden"
 description: "Dieses Verfahren zeigt Ihnen an, wie Sie den Fortschritt zu einem Produktions-Einzelvorgang im Formular Einzelvorgangsgerätregistrierung\" starten und anzeigen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: acbedc6d27624d9a8d1e6fb9bb0d9abed1b4377f
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 8a0432b5ff01bf88b9c18de0cac0661618c654ba
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>Status auf einem mobilen Einzelvorgangsgerät melden
@@ -31,7 +31,7 @@ Dieses Verfahren zeigt Ihnen an, wie Sie den Fortschritt zu einem Produktions-Ei
 
 
 
-Damit Sie dieses Verfahren ausführen können, muss die Rolle Systemadministator oder Maschinist zugeordnet sein.
+Damit Sie dieses Verfahren ausführen können, muss die Rolle Systemadministrator oder Maschinist zugeordnet sein.
 
 1. Wechseln Sie zu Produktionssteuerung > Fertigungssteuerung > Einzelvorgangslistengerät.
 2. Wählen Sie im Feld "WorkerTextField" die Kennkarte einer Arbeitskraft aus. Im USMF-Demodattyp ist dies "123" für Christina Portra.

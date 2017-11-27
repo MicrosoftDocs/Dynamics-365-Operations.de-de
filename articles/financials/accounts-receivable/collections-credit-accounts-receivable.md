@@ -3,7 +3,7 @@ title: Haben und Inkassi in Debitoren
 description: "Informationen zu Debitorenmahnungen werden in einer zentralen Ansicht auf der Seite \"Inkassi\" in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite \"Debitoren\"."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 62f659d6e4529adce10e6eb2699dfc84a7329143
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a071d3151fbcc9e29bd138b096b34b88bc405a4f
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -69,7 +69,7 @@ Die folgenden Listenseiten können zum Organisieren von Inkassoinformationen ver
 -   Inkassofälle – In den Spalten auf der Listenseite werden Informationen für Anfragen angezeigt, die über eine Anfragenkategorie mit dem Anfragentyp "Inkassi" verfügen.
 
 > [!NOTE]
-> Es muss eine Fälligkeitsmomentaufnahme erstellt werden, bevor Sie die Informationen auf diesen Listenseiten anzeigen können. Es werden nur Informationen für Debitoren angezeigt, für die eine Fälligkeitsmomentaufnahme erstellt wurde. Die Datensätze, die auf der Listenseite angezeigt werden, können zusätzlich gefiltert werden, wie folgt:
+> Es muss eine Fälligkeitsmomentaufnahme erstellt werden, bevor Sie die Informationen auf diesen Listenseiten anzeigen können. Es werden nur Informationen für Debitoren angezeigt, für die eine Fälligkeitsmomentaufnahme erstellt wurde. Die auf der Listenseite angezeigten Datensätze können zusätzlich wie folgt gefiltert werden:
 <li>Standardmäßig hat ein Finance and Operations-Benutzer Zugriff auf alle Debitoren, die über eine Fälligkeitsmomentaufnahme verfügen.</li>
 <li>Falls Debitorenpools vorhanden sind, muss ein Benutzer als Inkassobeauftragter eingerichtet werden, um die Pools zum Filtern von Informationen auf den Inkassolistenseiten zu verwenden. Die Informationen sind auf die Debitoren beschränkt, die im ausgewählten Debitorenpool enthalten sind.</li>
 <li>Wenn ein Benutzer als Inkassobeauftragter eingerichtet ist, sind nur die für diesen Inkassobeauftragten ausgewählten Pools auf der Listenseite verfügbar. Wenn die Umschaltfläche "Inkassobeauftragtem das Anzeigen aller Debitorenpools erlauben" auf der Seite "Inkassobeauftragter" für den Inkassobeauftragten ausgewählt ist, sind für den Beauftragten alle Pools verfügbar.</li>

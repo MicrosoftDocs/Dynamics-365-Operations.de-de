@@ -3,7 +3,7 @@ title: "Erfassen und Buchen eines vordatierten Schecks für einen Kreditor"
 description: "Mithilfe eines Erfassungsbelegs können Sie die Details eines vordatierten Schecks erfassen, bevor der Scheck an einen Kreditor ausgestellt wird."
 author: kweekley
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 10/31/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: dd1c9d29d34e51a479d4df4086e97269f71f7448
+ms.sourcegitcommit: 632b04848cdb6d71e7e7dbd6c6bc710d0577950a
+ms.openlocfilehash: 776121532c42fde8b1c3e29b4af0bf833952c0cd
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/01/2017
 
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Erfassen und Buchen eines vordatierten Schecks für einen Kreditor
@@ -34,7 +34,7 @@ Einrichten von vordatierten Schecks in bar und in der Bankverwaltungsseite.
 
 Die Rolle dieses Aufgabenleitfadens ist "Finanzverwalter". Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 
-1. Wechseln Sie zu Kreditoren > Zahlungen > Zahlungserfassung
+1. Wechseln Sie zu "Kreditoren" > "Zahlungen" > "Zahlungserfassung".
 2. Klicken Sie auf "Neu".
 3. Geben Sie im Namensfeld "VendPay" ein.
 4. Klicken Sie auf "Positionen".

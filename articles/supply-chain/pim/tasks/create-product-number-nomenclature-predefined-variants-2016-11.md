@@ -3,7 +3,7 @@ title: "Produktnummer für vordefinierte Produktvarianten erstellen"
 description: "Diese Verfahren zeigt, wie eine Produktnummerenbezeichnung für vordefinierte Produktvarianten eingerichtet wird und sie der passenden Produktdimensionsgruppe zugeordnet werden kann."
 author: BibiSp
 manager: AnnBe
-ms.date: 09/26/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6294e4608b31c37aa713e3a7a2028b409b5a8366
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: c423aab341ddad9383c4c95b9dbb63c9875c99ef
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="create-a-product-number-for-predefined-product-variants"></a>Produktnummer für vordefinierte Produktvarianten erstellen
@@ -33,7 +33,7 @@ Diese Verfahren zeigt, wie eine Produktnummerenbezeichnung für vordefinierte Pr
 1. Klicken Sie auf "Produktvariantenmodell-Definition".
 2. Klicken Sie auf "Produktbezeichnung".
 3. Klicken Sie auf "Neu".
-4. Geben Sie im Feld Name einen Nomenklaturnamen ein, der die Zielproduktdimensionsgruppe identifiziert (beispielsweise ColorSize).
+4. Geben Sie im Feld "Name" einen Bezeichnungsnamen ein, der die Zielproduktdimensionsgruppe identifiziert, beispielsweise ColorSize.
 5. Geben Sie im Feld "Beschreibung" einen Wert ein.
 6. Klicken Sie auf Hinzufügen.
 7. Klicken Sie auf "Produktmasternummer".

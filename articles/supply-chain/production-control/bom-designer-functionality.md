@@ -1,9 +1,9 @@
 ---
-title: "Funktionen des Stücklisten-Designers"
-description: "In diesem Artikel wird beschrieben, wie Sie die Stücklisten-Designer-Seite verwenden können, um Strukturdarstellungen für Stücklisten (BOMs) zu entwerfen und anzuwenden. Sie können verschiedene Konfigurationen auswählen und festlegen, welche Informationen in den Positionen der Struktur enthalten sein sollen."
+title: "Funktionen des Stücklistendesigners"
+description: "In diesem Artikel wird beschrieben, wie Sie die Stücklisten-Designer-Seite verwenden können, um Strukturdarstellungen für Stücklisten (BOMs) zu entwerfen und anzuwenden."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMDesigner
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
 ms.search.region: Global
@@ -20,14 +20,14 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 011e8220e155a5202b7b0a18bbfa9581826645d0
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 41f629401731920a9cb6443ada8b1a34a70e8da9
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="bom-designer-functionality"></a>Funktionen des Stücklisten-Designers
+# <a name="bom-designer-functionality"></a>Funktionen des Stücklistendesigners
 
 [!include[banner](../includes/banner.md)]
 
@@ -66,7 +66,7 @@ Der Filter, der für die Stückliste und Arbeitsplan angewendet wird, wird im Ko
 <tbody>
 <tr class="odd">
 <td>Produktdimensionen</td>
-<td>Wenn das ausgewählte Produkt ein Produktmaster ist, können Sie die aktiven Produktdimensionen für die Hauptauswahl definieren.<strong>Hinweis:</strong> Wenn Sie den Stücklisten-Designer für ein Produkt öffnen, das kein Produktmaster ist, können keine Produktdimensionen im Dialogfeld <strong>Filtern</strong> ausgewählt werden.</td>
+<td>Wenn das ausgewählte Fertigprodukt ein Produktmaster ist, können Sie die aktiven Produktdimensionen für die Hauptauswahl definieren. <strong>Hinweis:</strong> Wenn Sie den Stücklisten-Designer für ein Produkt öffnen, das kein Produktmaster ist, kann im Dialogfeld <strong>Filtern</strong> keine Produktdimensionen ausgewählt werden.</td>
 </tr>
 <tr class="even">
 <td>Standort</td>

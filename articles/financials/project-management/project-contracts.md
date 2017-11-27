@@ -1,9 +1,9 @@
 ---
 title: "Projektverträge"
-description: "Dieses Thema beschreibt Beispiele für Projektverträge, die Sie für Projekte und Finanzierungsquellen erstellen können, und zeigt, wie Sie in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, Verträge verwalten und Rechnungen für Projektdebitoren erstellen können."
+description: "Dieses Thema beschreibt Beispiele für Projektverträge, die Sie für Projekte und Finanzierungsquellen erstellen können, und zeigt, wie Sie in Microsoft Dynamics 365 for Finance und Operations Enterprise Edition Verträge verwalten und Rechnungen für Projektdebitoren erstellen können."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0d7d3b64b0d6a662246074b12e3a3fe105dfae47
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: c8328bd2d93bbe763e629248edc1b7b4576005ae
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieses Thema beschreibt Beispiele für Projektverträge, die Sie für Projekte und Finanzierungsquellen erstellen können, und zeigt, wie Sie in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, Verträge verwalten und Rechnungen für Projektdebitoren erstellen können.
+Dieses Thema beschreibt Beispiele für Projektverträge, die Sie für Projekte und Finanzierungsquellen erstellen können, und zeigt, wie Sie in Microsoft Dynamics 365 for Finance und Operations Enterprise Edition Verträge verwalten und Rechnungen für Projektdebitoren erstellen können.
 
 Der für einen Projektvertrag erstellte Projekttyp definiert die Methode, nach der das Projekt den Debitoren in Rechnung gestellt wird. Ein Projektvertrag und das zugehörige Projekt können geändert werden, der Projekttyp jedoch nicht. 
 
@@ -224,7 +224,7 @@ In der folgenden Tabelle wird dieses Szenario detaillierter überprüft.
 </tr>
 <tr class="odd">
 <td>Buchung 2</td>
-<td><strong>Buchungsbetrag:</strong> 5.000,00<strong>Finanzierung:</strong> Die Zahlung der Buchung gemäß allen drei <strong>Regeln</strong>
+<td><strong>Buchungsbetrag:</strong> 5.000,00<strong>Finanzierung:</strong> Die Zahlung der Buchung gemäß allen drei Regeln. <strong>Regel 1</strong>
 <ul>
 <li>Finanzierungsquelle 2: 450,00</li>
 <li>Finanzierungsquelle 3: 450,00</li>
