@@ -2,6 +2,11 @@
 
 # Erste Schritte
 ## [Neuheiten und Änderungen](get-started/whats-new.md)
+## [Vor dem Kauf von Dynamics 365 for Retail](get-started/before-you-buy.md)
+## [Anmelden für ein Vorschauabonnement](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
+## [Eine Demo-Umgebung bereitstellen](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Bereitstellungsoptionen](dev-itpro/choose-deployment.md)
+
 
 # Zahlungen
 ## [Zahlungsweisen](payment-methods.md)
@@ -39,6 +44,8 @@
 ## [Einzelhandelszeit und Anwesenheit](retail-time-attendance.md)
 
 # Moderne Verkaufsstellen (Modern Point of Sale, MPOS) und Cloud POS
+## [POS-Vorgänge](POS-operations.md)
+## [Demodaten-Bildschirmlayouts in MPOS/CPOS](demo-data.md)
 ## Hardwareperipheriegeräte
 ### [Einzelhandelsperipheriegeräte – Überblick](retail-peripherals-overview.md)
 ### [Von Microsoft getestete POS-Hardwareperipheriegeräte](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,10 +67,11 @@
 ### [Hybriddebitorenaufträge](hybrid-customer-orders.md)
 ## Vertriebsmitarbeiter
 ### [Provisionen in POS mithilfe von Verkaufsgruppen nachverfolgen](pos-sales-groups-track-commissions.md)
+## [Auftrag aus einem anderen Shop versenden](charge-send.md)
 ## Geräteaktivierung
 ### [MPOS konfigurieren und installieren](retail-modern-pos-device-activation.md)
 ### [Erweiterte Anmeldung für Cloud POS und MPOS einrichten](extended-logon.md)
-### [Einzelhandelskonten und Geräte von Hauptsitzen](set-up-activation-accounts-validate-devices-hq.md)
+### [Retail-Konten und Geräte von Hauptsitzen aus verwalten](set-up-activation-accounts-validate-devices-hq.md)
 ## Zugänge
 ### [Lieferungsvorlagen einrichten](receipt-templates-printing.md) 
 ### [E-Mail-Zugänge von MPOS senden](email-receipts.md)
@@ -171,10 +179,10 @@
 ### [Retail Channel Performance-Inhalt für Power BI](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Bereitstellung und Hotfixes
-### [Retail Store-Skalierungseinheit – Konfiguration und Installation](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [Retail-Shopsystem, Vorbereitungsmaßnahmen](dev-itpro/retail-store-system-begin.md)
+### [Retail Store Scale Unit-Übersicht](dev-itpro/retail-store-system-begin.md)
+#### [Retail Store-Skalierungseinheit – Konfiguration und Installation](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Retail Modern POS – Konfiguration und Installation](retail-modern-pos-device-activation.md)
-#### [Einzelhandelskonten und Geräte von Hauptsitzen aus verwalten](set-up-activation-accounts-validate-devices-hq.md)
+#### [Retail-Konten und Geräte von Hauptsitzen aus verwalten](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS-Geräteaktivierung](dev-itpro/retail-device-activation.md)
 #### [Sichere Retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Station – Konfiguration und Installation](retail-hardware-station-configuration-installation.md).
@@ -187,6 +195,7 @@
 ### [N-1-Komponenten installieren](dev-itpro/n-1-installation-configuration.md)
 
 ## Umgebungskonfiguration
+### [Links zu den rechtlichen Bedingungen und Datenschutzbestimmungen Ihrer Organisation hinzufügen](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Bing Maps verwalten](dev-itpro/manage-bing-maps.md)
 
 ## Erweiterbarkeit
@@ -197,6 +206,7 @@
 #### [Auslösererweiterbarkeit für MPOS und Cloud POS](dev-itpro/modern-pos-trigger-extensibility.md)
 #### [Einer POS-Ansicht ein benutzerdefiniertes Steuerelement hinzufügen](dev-itpro/pos-custom-control.md)
 #### [POS-Zahlungserweiterung](dev-itpro/pos-payment-extension.md)
+#### [Externer Geschenkkartensupport](dev-itpro/gift-card.md)
 ### [Eine Einkaufserlebnis-App erstellen](dev-itpro/create-retail-experience-app.md)
 ### [Hardwarestation – Überblick und Erweiterbarkeit](dev-itpro/hardware-station-extensibility.md)
 
@@ -230,10 +240,16 @@
 ### [Retail SDK-Erweiterbarkeitsbeispiele](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Kassen für Schweden](localizations/emea-swe-cash-registers.md)
 ### [Beispiel zur Retail POS-Integration mit Kontrolleinheiten für Schweden](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+### [Kassen für Norwegen](localizations/emea-nor-cash-registers.md)
+### [Bereitstellungsrichtlinien für Kassen in Norwegen](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK-Paket](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK-Beispiele ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Kanaldatenbank-(DB)-Erweiterungen](dev-itpro/channel-db-extensions.md)
 ### [CDX-Erweiterbarkeit](dev-itpro/cdx-extensibility.md)
+### [Auftragsattribute](dev-itpro/order-attributes.md)
+### [Debitorattribute](dev-itpro/customer-attributes.md)
+### [Retail-Typenskript und C#-Proxy](dev-itpro/typescript-proxy-retail-pos.md)
+
 
 ## Commerce-Laufzeit
 ### [Treueerweiterung](dev-itpro/retail-sdk/loyalty-extension-sample.md)
