@@ -1,6 +1,6 @@
 ---
 title: "Startseite für die Finanzverwaltung"
-description: "Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Finanzverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations (Enterprise-Edition)."
+description: "Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Finanzverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations (Enterprise Edition)."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -25,22 +25,22 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="financial-management-home-page"></a>Startseite für die Finanzverwaltung
+# <a name="financial-management-home-page"></a><span data-ttu-id="9020b-103">Startseite für die Finanzverwaltung</span><span class="sxs-lookup"><span data-stu-id="9020b-103">Financial management home page</span></span>
 
 [!include[banner](includes/banner.md)]
 
-Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Finanzverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations (Enterprise-Edition). 
+<span data-ttu-id="9020b-104">Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Finanzverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations (Enterprise Edition).</span><span class="sxs-lookup"><span data-stu-id="9020b-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> 
 
-Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.
-- [Kreditorenkonten](accounts-payable\accounts-payable.md) 
-- [Debitoren](accounts-receivable\accounts-receivable.md) 
-- [Bargeld- und Bankverwaltung](cash-bank-management\cash-bank-management.md)
-- [Kostenrechnung](cost-accounting\cost-accounting-home-page.md)
-- [Anlagen](fixed-assets\fixed-assets.md)
-- [Hauptbuch](general-ledger\general-ledger.md) 
-- [Projektverwaltung](project-management\overview-project-management-accounting.md)
-- [Öffentlicher Sektor](public-sector\public-sector-functionality.md) 
-- [Budgetierung](budgeting\budgeting-overview.md) 
+<span data-ttu-id="9020b-105">Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="9020b-105">Select a feature area to learn more about it.</span></span>
+- [<span data-ttu-id="9020b-106">Kreditorenkonten</span><span class="sxs-lookup"><span data-stu-id="9020b-106">Accounts payable</span></span>](accounts-payable\accounts-payable.md) 
+- [<span data-ttu-id="9020b-107">Debitoren</span><span class="sxs-lookup"><span data-stu-id="9020b-107">Accounts receivable</span></span>](accounts-receivable\accounts-receivable.md) 
+- [<span data-ttu-id="9020b-108">Bargeld- und Bankverwaltung</span><span class="sxs-lookup"><span data-stu-id="9020b-108">Cash and bank management</span></span>](cash-bank-management\cash-bank-management.md)
+- [<span data-ttu-id="9020b-109">Kostenrechnung</span><span class="sxs-lookup"><span data-stu-id="9020b-109">Cost accounting</span></span>](cost-accounting\cost-accounting-home-page.md)
+- [<span data-ttu-id="9020b-110">Anlagen</span><span class="sxs-lookup"><span data-stu-id="9020b-110">Fixed assets</span></span>](fixed-assets\fixed-assets.md)
+- [<span data-ttu-id="9020b-111">Hauptbuch</span><span class="sxs-lookup"><span data-stu-id="9020b-111">General ledger</span></span>](general-ledger\general-ledger.md) 
+- [<span data-ttu-id="9020b-112">Projektverwaltung</span><span class="sxs-lookup"><span data-stu-id="9020b-112">Project management</span></span>](project-management\overview-project-management-accounting.md)
+- [<span data-ttu-id="9020b-113">Öffentlicher Sektor</span><span class="sxs-lookup"><span data-stu-id="9020b-113">Public sector</span></span>](public-sector\public-sector-functionality.md) 
+- [<span data-ttu-id="9020b-114">Budgetierung</span><span class="sxs-lookup"><span data-stu-id="9020b-114">Budgeting</span></span>](budgeting\budgeting-overview.md) 
 
 
 

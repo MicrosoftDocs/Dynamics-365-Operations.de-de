@@ -1,10 +1,9 @@
 # [Willkommen bei Dynamics 365 for Talent](index.md)
 
-# Erste Schritte
+# [Erste Schritte](talent-get-started.md)
 ## [Systemanforderungen und Updaterichtlinie](talent-versions-update-policy.md)
 
-# Eine Personalverwaltungsstrategie entwickeln
-## [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](departments-jobs-positions.md)
+# [Eine Personalverwaltungsstrategie entwickeln](departments-jobs-positions.md)
 ## [Stellenkomponenten einrichten](create-job.md)
 ## [Eine Abteilung erstellen und der Abteilungshierarchie zuordnen](create-department-add-department-hierarchy.md)
 ## [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md)
@@ -28,13 +27,11 @@
 ## [Mitarbeiterqualifikationen auf die Geschäftsanforderungen ausrichten](skills.md)
 ## [Schulungskurse einrichten](courses.md)
 
-# Vergütungen erstellen und verwalten
-## [Ein Vergütungsprogramm verwalten](manage-benefit-program.md)
-## [Vergütungsberechtigungsrichtlinien](benefit-eligibility-policies.md)
-## [Verwalten von Artikeln, die an Arbeitskräfte ausgeliehen werden](loan-items.md)
+# [Vergütungen erstellen und verwalten](manage-benefit-program.md)
+# [Vergütungsberechtigungsrichtlinien](benefit-eligibility-policies.md)
+## [Objekte verwalten, die an Arbeitskräfte ausgeliehen werden](loan-items.md)
 
-# Informationen anhand von Fragebögen sammeln
-## [Fragebögen](questionnaires.md)
+# [Informationen anhand von Fragebögen sammeln](questionnaires.md)
 ## [Entwerfen eines Fragebogens](design-questionnaires.md)
 ## [Einen Fragebogen verteilen und ausfüllen](distribute-questionnaires.md)
 ## [Die Ergebnisse eines Fragebogens auswerten](evaluate-questionnaire-results.md)
