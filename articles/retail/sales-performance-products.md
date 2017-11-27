@@ -26,25 +26,25 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="assess-sales-performance-by-product"></a><span data-ttu-id="39380-103">Verkaufsleistung nach Produkt</span><span class="sxs-lookup"><span data-stu-id="39380-103">Assess sales performance by product</span></span>
+# <a name="assess-sales-performance-by-product"></a><span data-ttu-id="529ec-103">Verkaufsleistung nach Produkt</span><span class="sxs-lookup"><span data-stu-id="529ec-103">Assess sales performance by product</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-<span data-ttu-id="39380-104">Sie können die Rentabilität für die 10 wichtigsten Produkte mithilfe von Microsoft Dynamics 365 for Retail prüfen.</span><span class="sxs-lookup"><span data-stu-id="39380-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span> 
+<span data-ttu-id="529ec-104">Sie können die Rentabilität für die 10 wichtigsten Produkte mithilfe von Microsoft Dynamics 365 for Retail prüfen.</span><span class="sxs-lookup"><span data-stu-id="529ec-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span> 
 
-<span data-ttu-id="39380-105">Im Rahmen von Microsoft Dynamics 365 for Retail können Benutzer die Rentabilität für die wichtigsten Produkte (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage eines der folgenden Kriterien überprüfen:</span><span class="sxs-lookup"><span data-stu-id="39380-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
+<span data-ttu-id="529ec-105">Im Rahmen von Microsoft Dynamics 365 for Retail können Benutzer die Rentabilität für die wichtigsten Produkte (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage eines der folgenden Kriterien überprüfen:</span><span class="sxs-lookup"><span data-stu-id="529ec-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
 
--   <span data-ttu-id="39380-106">Verkaufsbetrag</span><span class="sxs-lookup"><span data-stu-id="39380-106">Sales amount</span></span>
--   <span data-ttu-id="39380-107">Menge</span><span class="sxs-lookup"><span data-stu-id="39380-107">Quantity</span></span>
--   <span data-ttu-id="39380-108">Bruttogewinnspanne</span><span class="sxs-lookup"><span data-stu-id="39380-108">Gross profit margin</span></span>
--   <span data-ttu-id="39380-109">Gewinnspanne (Prozent)</span><span class="sxs-lookup"><span data-stu-id="39380-109">Margin percentage</span></span>
+-   <span data-ttu-id="529ec-106">Verkaufsbetrag</span><span class="sxs-lookup"><span data-stu-id="529ec-106">Sales amount</span></span>
+-   <span data-ttu-id="529ec-107">Menge</span><span class="sxs-lookup"><span data-stu-id="529ec-107">Quantity</span></span>
+-   <span data-ttu-id="529ec-108">Bruttogewinnspanne</span><span class="sxs-lookup"><span data-stu-id="529ec-108">Gross profit margin</span></span>
+-   <span data-ttu-id="529ec-109">Gewinnspanne (Prozent)</span><span class="sxs-lookup"><span data-stu-id="529ec-109">Margin percentage</span></span>
 
-<span data-ttu-id="39380-110">Für diese Bewertung können Sie den vordefinierten **Bericht über Top-Produkte** verwenden, den Sie an folgenden Stellen öffnen können:</span><span class="sxs-lookup"><span data-stu-id="39380-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
+<span data-ttu-id="529ec-110">Für diese Bewertung können Sie den vordefinierten **Bericht über Top-Produkte** verwenden, den Sie an folgenden Stellen öffnen können:</span><span class="sxs-lookup"><span data-stu-id="529ec-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
 
--   <span data-ttu-id="39380-111">**Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**</span><span class="sxs-lookup"><span data-stu-id="39380-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
--   <span data-ttu-id="39380-112">**Kategorie- und Produktverwaltungs**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopverwaltung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**</span><span class="sxs-lookup"><span data-stu-id="39380-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
--   <span data-ttu-id="39380-113">**Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht über Top-Produkte**</span><span class="sxs-lookup"><span data-stu-id="39380-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="529ec-111">**Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**</span><span class="sxs-lookup"><span data-stu-id="529ec-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="529ec-112">**Kategorie- und Produktverwaltungs**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopverwaltung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**</span><span class="sxs-lookup"><span data-stu-id="529ec-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="529ec-113">**Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht über Top-Produkte**</span><span class="sxs-lookup"><span data-stu-id="529ec-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
 
 
 
