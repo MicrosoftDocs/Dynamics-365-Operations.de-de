@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: 358f5bf6194f5dd3f1639425e6633aa1a855bdc1
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 449643cc34e67388210e0b4e9d04d615d2420610
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement. Darüber hinaus bietet es Personalverwaltungsmitarbeitern einen Rahmen für die Verwaltung der Bereiche, für die sie zuständig sind.
+Microsoft Dynamics 365 for Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement. Darüber hinaus bietet es Personalverwaltungsmitarbeitern einen Rahmen für die Verwaltung der Bereiche, für die sie zuständig sind.
 
 Sie können Talent verwenden, um diese Aufgaben zu bearbeiten:
 
@@ -43,7 +43,7 @@ Sie können Talent verwenden, um diese Aufgaben zu bearbeiten:
 + Einrichten, Veranstalten und Analysieren von Schulungskursen mit Tagesordnungen, Sitzungen und Protokollen.
 
 > [!NOTE] 
-> Dynamics 365 for Talent und die Personalverwaltung in Dynamics 365 for Finance and Operations (Enterprise-Edition) sind sich sehr ähnlich. Beide Produkte weisen möglicherweise dieselbe Funktion auf. Daher lautet bei Themen, deren hauptsächlicher Bezug die Personalverwaltung ist, der Produktname Dynamics 365 for Finance and Operations (Enterprise-Edition). Bei Themen, die sich hauptsächlich um Talent drehen, lautet der Produktname Dynamics 365 for Talent. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
+> Dynamics 365 for Talent und die Personalverwaltung in Dynamics 365 for Finance and Operations, Enterprise Edition sind sich sehr ähnlich. Beide Produkte weisen möglicherweise dieselbe Funktion auf. Daher lautet bei Themen, deren hauptsächlicher Bezug die Personalverwaltung ist, der Produktname Dynamics 365 for Finance and Operations, Enterprise Edition. Bei Themen, die sich hauptsächlich um Talent drehen, lautet der Produktname Dynamics 365 for Talent. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Entwickeln einer Strategie für die Personalverwaltung
 ---------------------------------------------------------
@@ -86,7 +86,7 @@ Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, kö
 
 -   [Ein Vergütungsprogramm verwalten](manage-benefit-program.md)
 -   [Vergütungsberechtigungsrichtlinien](benefit-eligibility-policies.md)
--   [Verwalten von Objekten, die an Arbeitskräfte ausgeliehen werden](loan-items.md)
+-   [Objekte verwalten, die an Arbeitskräfte ausgeliehen werden](loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Verwalten von Arbeitsplatzsicherheit und Konformität
 
