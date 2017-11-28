@@ -3,14 +3,14 @@ title: Budgetplanungsintegration in andere Module
 description: "Budgetpläne können aus mehreren unterschiedlichen Ressourcen generiert werden. Die grundlegenden Elemente für den periodischen Prozess sind die gleichen für alle Ressourcen."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 311a5cbd3768d8ecc7e7430717369193e60c3e57
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -59,7 +59,7 @@ Für jeden Generierungsprozess sind drei Aktionen verfügbar:
 
 Bei allen Prozessen können die Registerkarte **Quelle** Daten filtern, indem die **Filter**-Schaltfläche verwendet wird. Standardmäßig werden bestimmte Felder dem Filter für jeden Prozess hinzugefügt. Beispielsweise sind für den Prozess **Budgetplan aus dem Hauptbuch generieren** die Kategorien **Sachkonto** und **Hauptkonto** verfügbar und erscheinen auf der Generierungsseite. Alle Felder, die Sie dem Filter hinzufügen, werden auch zur Seite hinzugefügt, zusammen mit beliebigen Kriterien, die Sie hinzufügen.
 
-### <a name="target"></a>Ziel
+### <a name="target"></a>Vorgabe
 
 Über die Option **Historisch** auf der Registerkarte **Vorgabe** können Sie die Daten aus den Quelldaten als Gültigkeitsdatum im Budgetplan verwenden. In der Regel muss das Gültigkeitsdatum innerhalb des Budgetzyklus des Plans liegen. Wenn Sie die Option **Historisch** auf **Ja** festlegen, wird das Datum (auch das Jahr) der Quelle verwendet, damit Sie ältere Daten als Grundlage für den Vergleich verwenden können. Sie können historische Daten im Budgetplan nicht ändern, und der Plan wird auf einen genehmigten Workflowstatus festgelegt. Allerdings können Sie den Status zurücksetzen, wenn andere Szenarien im Plan Änderungen erfordern.
 

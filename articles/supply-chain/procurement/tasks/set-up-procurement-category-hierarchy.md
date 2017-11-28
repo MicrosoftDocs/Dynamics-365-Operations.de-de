@@ -3,7 +3,7 @@ title: Einrichten einer Beschaffungskategoriehierarchie
 description: Dieses Verfahren zeigt Ihnen an, wie neue Knoten in einer Beschaffungskategorie-Hierarchie erstellt und das Einrichten einer in konfiguriert einem Beschaffungsprozess zu verwendende Beschaffungskategorie.
 author: mkirknel
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/06/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9897b1184e8159b20a45d4cedbba56baef31a3c
+ms.sourcegitcommit: 6ad5c8552a6989e9093d0b1325754bc0f6d19372
+ms.openlocfilehash: 4541d029c9c3be3ee42332e5d8ff183dd503f13e
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Einrichten einer Beschaffungskategoriehierarchie
@@ -30,7 +30,7 @@ Dieses Verfahren zeigt Ihnen an, wie neue Knoten in einer Beschaffungskategorie-
 
 
 ## <a name="add-a-new-procurement-category"></a>Neue Beschaffungskategorie hinzufügen
-1. Gehen Sie zu Beschaffung > .. > Beschaffungskategorien.
+1. Wechseln Sie zu "Beschaffung" > "Beschaffungskategorien".
 2. Klicken Sie auf Kategoriehierarchietypen bearbeiten.
     * Die aktuelle Beschaffungskategorie-Hierarchie wird in der linken Seite der Seite angezeigt. Sie sind dabei, die Hierarchie zu ändern.  
 3. Klicken Sie auf Neuer Kategorieknoten.
@@ -42,7 +42,7 @@ Dieses Verfahren zeigt Ihnen an, wie neue Knoten in einer Beschaffungskategorie-
 7. Klicken Sie auf "Speichern".
 
 ## <a name="add-products-to-your-new-procurement-category"></a>Hinzufügen von Produkten zu Ihrer neuen Beschaffungskategorie
-1. Gehen Sie zu Beschaffung > .. > Beschaffungskategorien.
+1. Wechseln Sie zu "Beschaffung" > "Beschaffungskategorien".
     * Wählen Sie den Knoten aus, den Sie soeben gelegt haben. Wenn Sie die Prozedur wie ein Aufgabenhandbuch ausführen, müssen Sie möglicherweise auf die Schaltfläche "Entsperren" klicken, bevor Sie den Knoten auswählen können.  
 2. Schalten Sie die Erweiterung des Produkt-Abschnitts ein/aus.
 3. Klicken Sie auf Mitarbeiterprodukten mit der Beschaffungskategorie hinzufügen.

@@ -3,7 +3,7 @@ title: "Einzelhandelskanäle definieren und verwalten"
 description: "Dieser Artikel gibt einen Überblick über den Prozess für das Einrichten von physischen Shops, die in Microsoft Dynamics 365 for Retail als Einzelhandelsshops bezeichnet werden. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten."
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 700b8868a68be7f0172202d737b4f1ae9813ecf3
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: b6dd6d929d771e0b1fc2604b90a2a1522447e168
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -66,7 +66,7 @@ Nach Abschluss der erforderlichen Aufgaben, führen Sie diese Aufgaben aus, um d
 2.  Eine Mehrwertsteuergruppe dem Shop zuweisen.
 3.  Die angenommenen Zahlungsmethoden dem Shop zuweisen.
 4.  Fügen Sie Details zu den Produktbeschreibungen für Produkte hinzu, die Sie in den Einzelhandelsgeschäften anbieten. Sie können beispielsweise Rich-Text und Bilder hinzufügen. Diese Produktdetails werden in verschiedenen Kontexten, wie auf der POS-Kasse oder auf gedruckten Beschriftungen angezeigt.
-5.  Fügen Sie den Shop zu einer Organisationshierarchie hinzu, die für ein **Einzelhandelssortiment**, eine **Einzelhandelsauffüllung** oder die **Berichterstellung im Einzelhandel** zugewiesen ist.
+5.  Fügen Sie den Shop zu einer Organisationshierarchie hinzu, die für ein **Sales-Sortiment**, eine **Sales-Auffüllung** oder die **Berichterstellung in Sales** zugewiesen ist.
 
 ### <a name="after-you-set-up-a-retail-store"></a>Nachdem Sie einen Einzelhandelsshop einrichten
 

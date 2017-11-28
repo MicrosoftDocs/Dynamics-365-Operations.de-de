@@ -3,7 +3,7 @@ title: Installieren und Konfigurieren von Microsoft Dynamics 365 for Finance and
 description: In diesem Thema wird beschrieben, wie Microsoft Dynamics 365 for Finance and Operations - Lagerung eingerichtet und konfiguriert wird.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
 ms.reviewer: bis
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 31e77b27d4bf95c997817b3a053b33119562adf8
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 4b3d068ddbf6f0b28c97618f5fa10fa486f3af51
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -43,7 +43,7 @@ Die App ist auf Android und Windows-Betriebssystemen verfügbar. Um diese App zu
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (alle Vesionen)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations Version 1611 <br>– oder – <br>Microsoft Dynamics Dynamics AX Version 7.0/7.0.1 und Microsoft Dynamics AX-Plattform Update 2 mit Hotfix KB 3210014 |
+| Finance and Operations | Microsoft Finance and Operations Version 1611 <br>– oder – <br>Microsoft Dynamics AX Version 7.0/7.0.1 und Microsoft Dynamics AX-Plattform Update 2 mit Hotfix KB 3210014 |
 
 ## <a name="get-the-app"></a>Abrufen der App
 -   Windows (UWP): [Finance and Operations - Lagerung im Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
@@ -52,7 +52,7 @@ Die App ist auf Android und Windows-Betriebssystemen verfügbar. Um diese App zu
     - [Finance and Operations - Lagerung in der Zebra AppGallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
 ## <a name="create-a-web-service-application-in-active-directory"></a>Erstellen einer Webdienstanwendung in Active Directory
-Um der App die Möglichkeit mit bestimmten Finance and Operations-Server zu interagieren zu ermöglichen, müssen Sie eine Webdienstanwendung in Azure Active Directory für den Finance and Operations-Mandanten erfassen. Aus Sicherheitsgründen wird empfohlen, dass Sie eine Webdienstanwendung für jedes Gerät erstellt werden, das Sie verwenden. Um eine Webdienstanwendung in Azure Active Directory (Azure AD) zu erstellen, führen Sie die folgenden Schritte aus:
+Um der App die Möglichkeit mit bestimmten Finance and Operations-Server zu interagieren zu ermöglichen, müssen Sie eine Webdienstanwendung in einem Azure Active Directory für den Finance and Operations-Mandanten erfassen. Aus Sicherheitsgründen wird empfohlen, dass Sie eine Webdienstanwendung für jedes Gerät erstellt werden, das Sie verwenden. Um eine Webdienstanwendung in Azure Active Directory (Azure AD) zu erstellen, führen Sie die folgenden Schritte aus:
 
 1.  In einem Webbrowser wechseln Sie zu <https://manage.windowsazure.com>.
 2.  Geben Sie den Namen und das Kennwort des Benutzers ein, der Zugriff auf Azure Abonnement hat.

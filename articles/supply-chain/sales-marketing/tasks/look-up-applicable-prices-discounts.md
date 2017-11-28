@@ -16,10 +16,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f372db3d2e358cde6a5e65b01f4dc499c69fe022
+ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
+ms.openlocfilehash: 7ef63151f352b3664bccd7a59e7417dfddc7470b
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Anwendbare Preise und Rabatte nachschlagen
@@ -42,7 +42,7 @@ Im folgenden Verfahren, wie Preis und/oder den Rabatt für ein Produkt sucht, da
     * Wenn die Option "Ähnliche Produktvarianten anzeigen" aktiviert ist, bedeutet dies, dass es zusätzliche Handelsvereinbarungen für die Varianten des Produkts gibt.  
 7. Klicken Sie auf das Kontrollkästchen "Ähnliche Produktvarianten anzeigen".
     * Eine Liste der Produktvarianten wird, mit Informationen zu ihrem Dimensionen angezeigt.  
-8. Wählen Sie in der Liste die Position, die die Farbe Weiß darstellt.
+8. Wählen Sie in der Liste markieren Sie die Position, die Farbe Weiß darstellt.
     * Hinweis, der Produktpreis ist jetzt zu dem unterscheiden, der zuvor angezeigt wird, als diese nicht pro Dimension angegeben wurde.  
 9. Klicken Sie auf Verkaufspreise anzeigen.
     * Auf der Preis (Verkauf) aller Handelsvereinbarungen anwendbar dem Produkt, einschließlich der Varianten.  

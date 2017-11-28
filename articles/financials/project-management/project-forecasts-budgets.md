@@ -1,9 +1,9 @@
 ---
 title: Projektplanungen und -budgets
-description: 
+description: "Microsoft Dynamics 365 for Finance and Operations enthält zwei Möglichkeiten Projektplanungen und Projektbudgets zum Verwalten und Steuern Ihrer Projekte."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 23501
 ms.assetid: 4e6d1384-19a2-4232-b3f3-d2590c218bd7
 ms.search.region: Global
@@ -19,18 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 32dd89d92a496d6601d1983dbc3c8e7e579ee0b3
+ms.sourcegitcommit: 31abc719a8df7507e74b3bf6823306ba52261bc3
+ms.openlocfilehash: ebb3574b3f5c40b5512c0352c83520558f63879a
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 
 # <a name="project-forecasts-and-budgets"></a>Projektplanungen und -budgets
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, enthält zwei Möglichkeiten, zum Verwalten und Steuern Ihrer Projekte: Projektplanungen und Projektbudgets. 
@@ -41,16 +39,16 @@ Sowohl für Projektplanungen als auch für Projektbudgets werden Planzahlenmodel
 
 Jede Methode hat ihre Vorteile. Bevor Sie sich für eine Methode entscheiden, sollten Sie die folgenden Aspekte berücksichtigen.
 
-|                           |                                                                                                                                                                                                                                                         |                                                                                                                                                                         |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                           | **Projektplanung**                                                                                                                                                                                                                                 | **Projektbudgetierung**                                                                                                                                                   |
+|                           |                                          |                                                    |
+|---------------------------|------------------------------------------|----------------------------------------------------|
+|                           | **Projektplanung**                  | **Projektbudgetierung**                              |
 | **Zeitraumzuteilung**     | Sie können nicht explizit Transaktion über einen Finanzzeitraum zuweisen. Stattdessen basieren die Planung und Planungssteuerung auf der Lebensdauer des Projekts. Da Planungen auf einem bestimmten Datum basieren, müssen Sie die Periode vom Datum ableiten. | Sie können Buchungen über das gesamte Projekt oder einen Finanzzeitraum verteilen. Beim Verteilen von Planzahlen über einen Zeitraum, können nicht verbrauchte Beträge auf das nächste Geschäftsjahr vorgetragen werden. |
 | **Anzeigen von Buchungen**  | In den Planungsformularen können Transaktionen angezeigt werden, in denen die Planungen des gesamten Unternehmens und für alle Projekte unabhängig von der Hierarchie dargestellt werden. Zum Anzeigen eines bestimmten Projekts müssen die Daten gefiltert werden.                                       | Sie können Budgetbuchungen für eine einzelne Projekthierarchie anzeigen. Sie sehen somit die Buchungsdetails für ein übergeordnetes Projekt oder dessen untergeordnete Projekte.                 |
-| **Buchungsvariablen** | Planungsbuchungen können unter Verwendung aller Attribute eingegeben werden, die für eine tatsächliche Buchung vorhanden sind. Planungen können dadurch mehr Details enthalten. So können z. B. Details für Mengen, Arbeitskräfte, Artikel oder Positionseigenschaften eingegeben werden.         | Budgetdetails können nur mit Beträgen, Kategorien und Aktivitäten eingegeben werden.                                                                                    |
-| **Sicherheit**              | Die Planung basiert auf der Eingabe von Buchungen in Planungsformulare und umfasst keine prozessgesteuerten Mechanismen. Jede Arbeitskraft mit Berechtigungen für ein Planungsformular kann ohne Genehmigung Informationen überarbeiten.                                        | Für die Budgetierung wird ein Workflowsystem verwendet, das die Änderungsverwaltung und das Aufzeichnen einer Überarbeitungshistorie ermöglicht.                                                       |
-| **Eintragstypen**           | Die Einträge von Planungsbuchungen basieren auf der Anzahl von Einheiten, dem Einstandspreis und dem Preis pro Verkaufseinheit.                                                                                                                                                       | Budgetdetails basieren auf Beträgen, die zwischen Kosten und Umsatzerlösen aufgeteilt werden.                                                                                        |
-| **Planzahlenmodelle**       | Da jede Planung einem Modell zugeordnet werden muss, können mehrere Planzahlenmodelle erstellt und auch Teilmodelle eingerichtet werden.                                                                                                                               | Bei der Projektbudgetierung sind die Planzahlenmodelle begrenzt, die für die Budgetierung verwendet werden. Weniger Planzahlenmodelle können zu einheitlicheren Prognosen beitragen.                           |
-| **Kostenüberschreitungen**         | Die Eingabe von Buchungen, die eine Kostenüberschreitung verursachen würden, kann lediglich zugelassen oder nicht zugelassen werden.                                                                                                                                                                | Die Projektbudgetierung bietet den Benutzern zusätzliche Steueroptionen. Warnungen und Überschreitungen können zugelassen werden.                                                                   |
+| **Buchungsvariablen** | Planungsbuchungen können unter Verwendung aller Attribute eingegeben werden, die für eine tatsächliche Buchung vorhanden sind. Planungen können dadurch mehr Details enthalten. So können z. B. Details für Mengen, Arbeitskräfte, Artikel oder Positionseigenschaften eingegeben werden.         | Budgetdetails können nur mit Beträgen, Kategorien und Aktivitäten eingegeben werden.                    |
+| **Sicherheit**              | Die Planung basiert auf der Eingabe von Buchungen in Planungsformulare und umfasst keine prozessgesteuerten Mechanismen. Jede Arbeitskraft mit Berechtigungen für ein Planungsformular kann ohne Genehmigung Informationen überarbeiten.                                        | Für die Budgetierung wird ein Workflowsystem verwendet, das die Änderungsverwaltung und das Aufzeichnen einer Überarbeitungshistorie ermöglicht.         |
+| **Eintragstypen**           | Die Einträge von Planungsbuchungen basieren auf der Anzahl von Einheiten, dem Einstandspreis und dem Preis pro Verkaufseinheit.  | Budgetdetails basieren auf Beträgen, die zwischen Kosten und Umsatzerlösen aufgeteilt werden.                                          |
+| **Planzahlenmodelle**       | Da jede Planung einem Modell zugeordnet werden muss, können mehrere Planzahlenmodelle erstellt und auch Teilmodelle eingerichtet werden.           | Bei der Projektbudgetierung sind die Planzahlenmodelle begrenzt, die für die Budgetierung verwendet werden. Weniger Planzahlenmodelle können zu einheitlicheren Prognosen beitragen.                           |
+| **Kostenüberschreitungen**         | Die Eingabe von Buchungen, die eine Kostenüberschreitung verursachen würden, kann lediglich zugelassen oder nicht zugelassen werden.   | Die Projektbudgetierung bietet den Benutzern zusätzliche Steueroptionen. Warnungen und Überschreitungen können zugelassen werden.                    |
 | **Steuerung**               | Die Steuerung der Planung erfolgt mithilfe der Planungsverringerung. Tatsächliche Beträge werden ohne Audit-Trail von den Planungsbuchungssalden abgezogen. Dadurch kann schwer nachverfolgt werden, wo die tatsächlichen Buchungen stattgefunden haben.                   | Bei der Projektbudgetsteuerung werden die tatsächlichen Beträge von den Beträgen im Restbudget abgezogen. Das ermöglicht einen übersichtlicheren Audit-Trail.                                   |
 
 ## <a name="project-forecasts"></a>Projektplanungen
@@ -66,7 +64,7 @@ In Planzahlenmodellen kann eine Planungsverringerung als Kontrollmechanismus fü
 
 Sie können Projektplanungen überarbeiten, kopieren, löschen oder in ein Hauptbuchbudget übertragen. Jedoch gibt es keine Prozesssteuerung. Jede Arbeitskraft mit der Berechtigung für ein Planungsformular kann ohne Überprüfung Bearbeitungen vornehmen.
 
--   **Überarbeiten**  – Sie können Planungsbuchungen in denselben Formularen überarbeiten, in denen die ursprünglichen Buchungen vorgenommen wurden.
+-   **Überarbeiten** – Sie können Planungsbuchungen in denselben Formularen überarbeiten, in denen die ursprünglichen Buchungen vorgenommen wurden.
 -   **Kopieren oder löschen** – Beim Kopieren von Planungsbuchungen werden die Buchungspositionen eines Planzahlenmodells in ein anderes Planzahlenmodell kopiert. Beim Löschen einer Planung werden die Planungsbuchungen aus einem Planzahlenmodell gelöscht. Wählen Sie bestimmte Buchungsarten und Datumsangaben aus, um die zu kopierenden oder zu löschenden Planungsbuchungen einzuschränken. Auf diese Weise können Sie nur bestimmte Teile einer Planung kopieren oder löschen.
 -   **Übertragen** – Beim Übertragen einer Projektplanung in ein Hauptbuchbudget werden die Planungsbuchungen eines Planzahlenmodells in ein Hauptbuchbudget übertragen. Sie können jede zuvor übertragene Buchungen in dem Hauptbuchbudget überschreiben, in das Sie die Projektplanung übertragen haben.
 

@@ -1,7 +1,7 @@
 ---
 title: BOM-Berechnungen
 description: "Die Berechnungen für die Kostenzusammenfassung sowie zur Ermittlung des Stücklistenpreises werden als Herstellkostenkalkulation bezeichnet, da sie vom Formular aus gestartet werden. Dieses Thema enthält Informationen zur Stücklistenberechnung"
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b1bcf11a8f6fc4921e8659fe1d00c093e3ad5b74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -87,7 +87,7 @@ Beim Kosten-plus-Aufschlag-Prinzip werden für den berechneten Verkaufspreis des
 -   **Herstellkostenkalkulation für einen Artikel sowie für eine angegeben Nachkalkulationsversion** – Durch die Herstellkostenkalkulation wird innerhalb der Nachkalkulationsversion ein vorläufiger Verkaufspreisdatensatz generiert. Dieser Verkaufspreisdatensatz bildet die Grundlage für die Anzeige der Berechnungsdetails (beispielsweise auf der Seite **Berechnung Artikelosten**. Der Verkaufspreisdatensatz fungiert in erster Linie als Referenzinformation und wird nicht als Basis für den Verkaufspreis einer Verkaufsrechnung herangezogen.
 -   **Auftragsspezifische Herstellkostenkalkulation** − Bei Positionsartikeln in Aufträgen, Verkaufsangeboten oder Serviceaufträgen wird eine Abwandlung des Formulars für die Seite **Herstellkostenkalkulation** verwendet. Durch eine auftragsspezifische Herstellkostenkalkulation wird kein Kostendatensatz in einer Nachkalkulationsversion generiert. Stattdessen erstellt sie einen Berechnungsdatensatz, der auf der Seite **Stücklistenberechnungsdetails** angezeigt wird. Dieser Verkaufspreisdatensatz bildet die Grundlage für die Anzeige der Berechnungsdetails (beispielsweise auf der Seite **Berechnung Artikelkosten**. Hiermit können Informationen zum ausgewählten Kalkulationsdatensatz an den ursprünglichen Positionsartikel übertragen werden. Beispielsweise kann der berechnete Verkaufspreis auf einen Positionsartikel übertragen werden.
 
-## <a name="orderspecific-bom-calculations"></a>Informationen zu auftragsspezifischen Herstellkostenkalkulationen
+## <a name="order-specific-bom-calculations"></a>Auftragsspezifische Herstellkostenkalkulationen
 Eine auftragsspezifische Herstellkostenkalkulation stellt eine Form der Herstellkostenkalkulation für einen produzierten Artikel dar. Eine auftragsspezifische Herstellkostenkalkulation wird für einen Positionsartikel in einem Auftrag, Verkaufsangebot oder Serviceauftrag ausgeführt. Eine auftragsspezifische Herstellkostenkalkulation erstellt einen Berechnungsdatensatz, der auf der Seite **Ergebnisse der Herstellkostenkalkulation** angezeigt wird. Der Berechnungsdatensatz enthält ein berechnetes Gewicht, einen berechneten Einstandspreis, der auf aktiven Kostendatensätzen basiert, und einen berechneten Verkaufspreis. Bei jeder auftragsspezifischen Formelberechnung wird im Formular **Formelberechnungsergebnisse** ein Berechnungsdatensatz mit eindeutigem Bezug zu einer Berechnungsnummer generiert. Die Ergebnisse eines Kalkulationsdatensatzes können optional an den ursprünglichen Positionsartikel übertragen werden. Eine auftragsspezifische Herstellkostenkalkulation unterscheidet sich von einer Herstellkostenkalkulation für einen produzierten Artikel auf zwei Arten:
 
 -   Eine auftragsspezifische Stücklistenkalkulation erzeugt einen Artikelkostendatensatz innerhalb einer Nachkalkulationsversion. Das bedeutet, dass die Richtlinien für die Herstellkostenkalkulation nicht für die Erstellung eines Artikelkostendatensatzes oder für die Überschreibung eines Kostendatensatzes gelten.

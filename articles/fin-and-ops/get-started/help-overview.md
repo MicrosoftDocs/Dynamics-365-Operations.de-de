@@ -3,14 +3,14 @@ title: "Hilfe – Überblick"
 description: "Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems. Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können."
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
@@ -18,14 +18,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
-ms.openlocfilehash: 2df27a23d31ecde99bb31b4f8a19295c331cae09
+ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
+ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/11/2017
 
 ---
 
-# <a name="help-overview"></a>Hilfe – Überblick
+# <a name="help-system-overview"></a>Hilfesytem – Überblick
 
 [!include[banner](../includes/banner.md)]
 
@@ -69,16 +69,17 @@ Wir erhalten viele Fragen zur Suche nach unserem Inhalt. Wenn Sie auf unserer We
 
 Sie können auch unseren Inhalt mit jeder beliebigen Suchmaschine finden. Um die besten Ergebnisse zu erhalten, wird empfohlen, dass Sie eine Websitesuche verwenden, wie beispielsweise Website: docs.microsoft.com dynamics 365 "Suchbegriff"  
 
-![Websitesuche](./media/site-search-1.png)
-
-![Ergebnisse der Websitesuche](./media/site-search-results-2.png)
-
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>Das docs.microsoft.com-Inhaltsverzeichnis
-Alle Produkte nutzen das gleiche Inhaltsverzeichnis in der Dokumenten-Website. Damit können Kunden den Kontext des Themas anzuzeigen, in dem sie sich befinden. So kann das Filtersteuerelement verwendet werden, um nach Themen zu suchen.
+Finance and Operations, Retail, und Talent nutzen alle das gleiche Inhaltsverzeichnis in der Dokumenten-Website. Damit können Kunden den Kontext des Themas anzuzeigen, in dem sie sich befinden. So kann das Filtersteuerelement über der Inhaltstabelle verwendet werden, um nach Themen zu suchen.
 
-### <a name="how-can-i-contribute"></a>Was für einen Beitrag kann ich leisten? 
+### <a name="follow-a-topic"></a>Einem Thema folgen
+Um einem Thema zu folgen, klicken Sie auf die +Follow-Schaltfläche im Kommentarfeld. Sie müssen sich anmelden, um dem Thema zu folgen. Siehe [Geben Sie uns einen Kommentar](#leave-us-a-comment) für Details.  
 
-Geben Sie uns einen Kommentar! 
+### <a name="give-feedback"></a>Rückmeldung geben 
+Wir freuen uns über Kundenfeedback. Sie können kommentieren oder Änderungen an unserem Inhalt über GitHub vorschlagen.
+
+##### <a name="leave-us-a-comment"></a>Geben Sie uns einen Kommentar 
+Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdessen einen Kommentar am unteren Seitenrand.  
 
 1 Klicken Sie auf **Kommentare**, um zu den Kommentaren unten auf der Seite zu gelangen.
 
@@ -96,6 +97,19 @@ Oder
 Auf der rechten Seite geben Sie eine E-Mail-Adresse sowie ein neues Kennwort ein, um ein neues Konto für die Website zu erstellen. 
 
 ![Anmeldeoptionen](./media/signin-options.png)
+
+
+##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Schlagen Sie eine Änderung vor oder tragen Sie Inhalte bei über GitHub
+Um eine Änderung vorzuschlagen, müssen Sie ein GitHub-Konto haben und unterzeichnen eine Lizenzvereinbarung der beteiligten Person.  Nachdem Sie eine Pullanforderung senden, wiederholen Sie die vorgeschlagenen Änderungen. Gegebenenfalls besprechen wir sie intern und wenden uns wieder an Sie.  
+
+Um anzufangen, klicken Sie auf die Schaltfläche **Bearbeiten** (Stift) auf ein Thema, oder wechseln Sie zu unserem Repository unter https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+
+Weitere Informationen hierzu finden Sie im Handbuch unserer Beiträger: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+
+
+> [!NOTE]
+> Es werden derzeit nur Beiträge zu unseren englischen Repositorys akzeptiert.  
+> Wir akzeptieren keine Probleme enthalten, die durch GitHub gemeldet werden - Achten Sie darauf, eine Pullanforderung für Inhaltsvorschläge zu verwenden. Produkt- und Funktionsrückmeldung wird am besten durch das Dynamics 365 Ideas Portal: https://ideas.dynamics.com/ideas/ 
 
 
 ## <a name="task-guides"></a>Aufgabenleitfäden
@@ -196,9 +210,4 @@ In der folgenden Tabelle werden unsere Websites aufgeführt. Unsere Content Webs
 [Neue oder aktualisierte Aufgabenleitfäden (August 2016)](new-updated-task-guides-available-august-2016.md)
 [Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)
 [Neue oder aktualisierte Aufgabenleitfäden (Februar 2016)](new-task-guides-available-february-2016.md)
-
-
-
-
-
 

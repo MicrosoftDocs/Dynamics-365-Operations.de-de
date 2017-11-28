@@ -3,7 +3,7 @@ title: Rechnungsabgleich und Intercompany-Bestellungen
 description: "Die einkaufende juristische Person, die in eine Buchung des Intercompany-Handels einbezogen ist, kann auch so eingerichtet werden, dass der Kreditorenrechnungsabgleich verwendet wird. In diesem Fall müssen sowohl die Buchungsanforderungen für den Intercompany-Handel und der Kreditorenrechnungsabgleich erfüllt sein, bevor Intercompany-Kreditorenrechnungen gebucht werden können."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: affdffd5e73958788ed2a5a4959eea71024140ab
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -52,7 +52,7 @@ Die Nettobeträge für die Intercompany-Kreditorenrechnung und die Intercompany-
 2.  Registrieren Sie in Fabrikam Sales, dass die Artikel eingegangen sind, und buchen Sie einen Lieferschein. Der Status von "ICAU888" wechselt zu "Geliefert". Der Status von "ICBE222" wechselt zu "Eingegangen".
 3.  In Fabrikam Sales nehmen Sie eine Rechnungsaktualisierung für ICSO888 vor. Der Einheitenpreis beträgt "0,45", und 100 Artikel werden aktualisiert.
 4.  Sie erstellen in Fabrikam Purchase eine Rechnung für ICPO222. Der Nettopreis wird versehentlich von "45,00" zu "54,00" geändert. Ein Symbol zeigt an, dass der Preis über der zulässigen Preistoleranz von 2 Prozent liegt.
-5.  Wählen Sie auf der Seite Rechnungsabgleichsdetails wählen Sie die Option aus, Buchung mit Abweichungen zu genehmigen. Klicken Sie auf der Seite Kreditorenrechnung auf OK. Wenn die Kreditorenrechnung keine Intercompany-Kreditorenrechnung war, würde die Buchung erfolgreich sein. Da Sie jedoch mit einer Intercompany-Kreditorenrechnung arbeiten, muss die Buchung fehlgeschlagen. Für den Intercompany-Handel müssen die Rechnungssummen im Intercompany-Auftrag den Rechnungssummen auf der entsprechenden Intercompany-Bestellung entsprechen. Um dieses Problem zu beheben, müssen Sie den Nettopreis auf der Rechnung korrigieren, indem Sie den Nettopreis wieder zum Standardbetrag 45,00 ändern.
+5.  Wählen Sie auf der Seite Rechnungsabgleichsdetails wählen Sie die Option aus, Buchung mit Abweichungen zu genehmigen. Klicken Sie auf OK, um die Kreditorenrechnung zu buchen. Wenn die Kreditorenrechnung keine Intercompany-Kreditorenrechnung war, würde die Buchung erfolgreich sein. Da Sie jedoch mit einer Intercompany-Kreditorenrechnung arbeiten, muss die Buchung fehlgeschlagen. Für den Intercompany-Handel müssen die Rechnungssummen im Intercompany-Auftrag den Rechnungssummen auf der entsprechenden Intercompany-Bestellung entsprechen. Um dieses Problem zu beheben, müssen Sie den Nettopreis auf der Rechnung korrigieren, indem Sie den Nettopreis wieder zum Standardbetrag 45,00 ändern.
 
 ## <a name="example-quantity-matching-with-intercompany-trade"></a>Beispiel: Mengenabgleich mit Intercompany-Handel
 Die Mengen auf der Intercompany-Bestellung und auf dem Intercompany-Auftrag müssen übereinstimmen. Durch diese Anforderung werden alle anderen Rechnungsabgleichsgenehmigungen außer Kraft gesetzt. In diesem Beispiel werden für den Intercompany-Handel die folgenden zusätzlichen Einstellungen eingerichtet:

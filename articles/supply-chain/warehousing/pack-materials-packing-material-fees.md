@@ -3,7 +3,7 @@ title: "Verpackungsmaterial und Gebühren"
 description: "Verpackungsmaterialgebühren werden in bestimmten Zeitabständen an ein Recyclingunternehmen entrichtet. Für jedes Material, aus dem eine Verpackung besteht, muss ein bestimmter Betrag pro Gewichtseinheit bezahlt werden. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d7cd7b3d60e9c265a766695b53d8d27ee2a8d0a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,7 +56,7 @@ Wenn Sie eine Auftragsposition erstellen, wird geprüft, ob für den Artikel Ver
 ## <a name="packing-units-on-purchase-order-lines"></a>Verpackungseinheiten in Bestellpositionen
 Verpackungsmaterialbuchungen für eine Bestellposition werden nicht vom System erstellt. Sie erstellen Buchungen für fakturierte Bestellpositionen manuell auf der Seite **Verpackungsmaterialbuchungen**.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Einrichten von Lizenznummern für Verpackungsmaterialgebühren bei Debitoren
+## <a name="set-up-customer-packaging-material-fee-license-numbers"></a>Einrichten von Lizenznummern für Verpackungsmaterialgebühren bei Debitoren
 Geben Sie im Formular **Debitoren** die Lizenznummer des Debitors für die Verpackungsmaterialgebühren an, wenn die Verpackungsmaterialgebühren durch den Debitor bezahlt werden. Wurde einem Debitor eine Lizenznummer zugeordnet, werden die Verpackungsmaterialgebühren automatisch beim Fakturieren von Aufträgen ermittelt. Nach der Fakturierung wird im Formular **Verpackungsmaterialbuchungen** das Kontrollkästchen **Gebühr berechnen** deaktiviert, da kein Bericht berechnet und gedruckt werden muss. Sie können das Gewicht des Verpackungsmaterials auf der Rechnung angeben und den Debitor darüber informieren, dass die Gebühren zu seinen Lasten gehen. 
 
 Wenn die Verpackungsmaterialgebühren von Ihrem Unternehmen getragen werden, geben Sie keine Lizenznummern des Debitors an. Nach der Fakturierung wird das **Gebühr berechnen**-Kontrollkästchen auf der Seite **Verpackungsmaterialbuchungen** ausgewählt. Dadurch wird angegeben, dass die Gebühren beim Erstellen eines Berichts berechnet werden. Sie können das Gewicht auf der Rechnung angeben und darauf hinweisen, dass die Gebühren von Ihrem Unternehmen getragen werden.

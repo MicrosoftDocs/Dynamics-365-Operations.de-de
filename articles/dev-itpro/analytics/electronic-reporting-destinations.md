@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: dedabf13044be30a67a945ff4ca2ecfb1eea8150
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 211442c7bd0d3079a5eb4f6d01944c0eddf533af
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -36,7 +36,7 @@ Sie können ein Ziel für jede Formatvariante zur "Elektronischen Berichterstell
 Die Formatkonfiguration für die elektronische Berichterstellung (ER) umfasst in der Regel mindestens eine Ausgabekomponente: eine Datei. Konfigurationen enthalten in der Regel mehrere Ausgabedatei-Komponenten verschiedener Typen (XML, TXT oder XLSX), die entweder in einen einzelnen Ordner oder mehrere Ordner gruppiert sind. Die ER-Zielverwaltung ermöglicht die Vorkonfiguration der Ausführung jeder Komponente. Standardmäßig wird dem Benutzer bei der Ausführung einer Konfiguration ein Dialogfeld angezeigt, das zum Speichern oder Öffnen der Datei verwendet wird. Dasselbe Verhalten wird auch beim Importieren einer ER-Konfiguration ohne spezifischen Ziele für diese verwendet. Nachdem ein Ziel für eine Hauptausgabekomponente erstellt wurde, überschreibt das Ziel das Standardverhalten und der Ordner oder die Datei wird entsprechend dem Ziel gesendet.
 
 ## <a name="availability-and-general-prerequisites"></a>Verfügbarkeit und allgemeine Voraussetzungen
-Die Funktionalität für die ER-Ziele ist nicht in Microsoft Dynamics AX 7.0 (Februar 2016) verfügbar. Daher müssen Sie Microsoft Dynamics 365 for Operations, Version 1511 (November 2016) einrichten, um alle Funktionen zu verwenden, die in diesem Thema beschrieben sind. Alternativ können Sie eine der folgenden Komponenten installieren. Beachten Sie jedoch, dass diese Alternative eine eher begrenzte ER-Zielerfahrung bietet.
+Die Funktionalität für die ER-Ziele ist nicht in Microsoft Dynamics AX 7.0 (Februar 2016) verfügbar. Daher müssen Sie Microsoft Dynamics 365 for Operations, Version 1611 (November 2016) einrichten, um alle Funktionen zu verwenden, die in diesem Thema beschrieben sind. Alternativ können Sie eine der folgenden Komponenten installieren. Beachten Sie jedoch, dass diese Alternative eine eher begrenzte ER-Zielerfahrung bietet.
 
 -   Microsoft Dynamics AX 7.0.1 (Mai 2016)
 -   [Anwendungs-Hotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213) für die ER Zielverwaltung

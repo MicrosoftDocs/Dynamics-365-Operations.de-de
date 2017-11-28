@@ -3,7 +3,7 @@ title: Verpacken in Container einrichten
 description: In dieser Prozedur wird beschrieben, wie Containerisierung von Ladungen in der "Lagerortverwaltung" automatisiert wird.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: aeb7d956560c513c08d5e20dcf20989b49137a52
+ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
+ms.openlocfilehash: c5faf926071dec5d2ddc1c9e921a98ecd0754917
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="set-up-containerization"></a>Verpacken in Container einrichten
@@ -83,7 +83,7 @@ In dieser Prozedur wird beschrieben, wie Containerisierung von Ladungen in der "
 ## <a name="set-up-a-container-group"></a>Eine Containergruppe einrichten
 1. Wechseln Sie zu "Lagerortverwaltung" > "Einstellungen" > "Container" > "Containergruppen".
 2. Klicken Sie auf "Neu".
-    * Sie können logische Gruppen von Containertypen einrichten. Für jede Gruppe können Sie die Reihenfolge festlegen, in der die Container beladen werden und den Prozentsatz, bis zu dem die Container befüllt werden. Die Größendimensionen des Artikels wird verwendet, um zu bestimmen, ob er in einen Container passt. Der Container, der den Größendimensionen des Artikels am nächsten liegt, wird verwendet. Wenn Sie mehrere Container in einer Gruppe haben, empfiehlt es sich, die Reihenfolge nach Größe anzuordnen, sodass der größte Container der erste ist, Nummer 1 in der Reihenfolge, und der kleinste Container der letzte ist.    
+    * Sie können logische Gruppen von Containertypen einrichten. Für jede Gruppe können Sie die Reihenfolge angaben, in der die Container verpackt werden, und den Prozentsatz der zu füllenden Container. Die Größendimensionen des Artikels wird verwendet, um zu bestimmen, ob er in einen Container passt. Der Container, der den Größendimensionen des Artikels am nächsten liegt, wird verwendet. Wenn Sie mehrere Container in einer Gruppe haben, empfiehlt es sich, die Reihenfolge nach Größe anzuordnen, sodass der größte Container der erste ist, Nummer 1 in der Reihenfolge, und der kleinste Container der letzte ist.    
 3. Geben Sie im Feld "Containergruppenkennung" einen Wert ein.
 4. Geben Sie im Feld "Beschreibung" einen Wert ein.
 5. Klicken Sie auf Neu.

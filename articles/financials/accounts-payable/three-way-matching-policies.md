@@ -3,7 +3,7 @@ title: Dreiseitige Abgleichsrichtlinien
 description: "Dieser Artikel enthält Beispiele für den dreiseitigen Abgleich."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: bc53df6b994c0d2e490e8823a53478f2ad04e163
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: da3099a07e3084bf49d03e0f4d421aebe9b39940
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -65,7 +65,7 @@ Die Rechnungsabgleichsrichtlinien in diesem Beispiel unterstützen Mitarbeiter m
 1.  Thomas, eine Arbeitskraft in der Empfangsabteilung bei Fabrikam, nimmt die Gesamtmenge der Maschinen in Empfang, die von Contoso geliefert werden. Er gibt auf einem Produktzugang die Menge 5 ein. Da die Bestellung vollständig eingegangen ist, ändert sich der Status der Bestellung in "Eingegangen".
 2.  April, die Kreditorenkoordinatorin bei Fabrikam, gibt die von Contoso übermittelte Rechnung ein und überprüft sie. Sie prüft die folgenden Informationen:
     -   Bei Artikeln, für die ein dreiseitiger Abgleich erforderlich ist, muss die in der Rechnungsposition angegebene Menge der eingegangenen Menge entsprechen. Die eingegangene Menge wird auf dem Produktzugang angegeben, der mit der Rechnung abgeglichen wird.
-    -   Für Artikel, für die ein zweiseitiger oder dreiseitiger Abgleich erforderlich ist, liegen die Preise auf der Rechnungsposition innerhalb der Toleranzen, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition definiert sind. Dies umfasst die folgenden Typen des Preisabgleichs:
+    -   Bei Artikeln, für die ein zweiseitiger oder dreiseitiger Abgleich erforderlich ist, müssen die Preise auf der Rechnungsposition innerhalb der Toleranzen liegen, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition definiert sind. Dazu zählen die folgenden Preisabgleichsarten:
         -   Nettostückpreis-Abgleich – Der Nettostückpreis der Rechnungsposition entspricht im Rahmen des Toleranzprozentsatzes dem Nettostückpreis der Bestellposition. In diesem Beispiel beträgt die Nettostückpreistoleranz +8 %.
         -   Preissummenabgleich – Der Nettobetrag der Rechnungsposition entspricht dem Nettobetrag den Bestellposition und liegt innerhalb des Toleranzprozentsatzes und/oder des Toleranzbetrags. In diesem Beispiel beträgt die Toleranz für den Preissummenabgleich +15 %.
 

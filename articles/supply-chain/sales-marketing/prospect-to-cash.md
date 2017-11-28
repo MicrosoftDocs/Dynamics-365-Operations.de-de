@@ -3,7 +3,7 @@ title: Interessent zu Bargeld
 description: "Das Thema bietet eine Übersicht der Lösung „Interessent zu Bargeld” zwischen Dynamics 365 for Finance and Operations, Enterprise Edition, und Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 47e70cb1291e390b42b7feff844b2aca141f09b7
-ms.openlocfilehash: a5f1ecd5f8b46287839439a963e571531ae161a7
+ms.sourcegitcommit: 674d2e1f2c5cdbccf43618a9083ca01abed0735a
+ms.openlocfilehash: 2accf77c5241adff7ad1648737dde451153fde46
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -42,25 +42,39 @@ Diese Lösung bietet Integration in den folgenden Bereichen:
 -   [Verkaufsaufträge in Finance and Operations erstellen und mit Sales synchronisieren](sales-order-template-mapping.md)
 -   [Verkaufsrechnungen in Finance and Operations erstellen und mit Sales synchronisieren](sales-invoice-template-mapping.md)
 
+Diese Lösung bietet direkte Synchronisation in den folgenden Bereichen:
+
+-   [Konten in Sales verwalten und direkt cvon Sales zu Finance and Operations synchronisieren](accounts-template-mapping-direct.md)
+-   [Produkte in Finance and Operations verwalten und direkt mit Sales synchronisieren](products-template-mapping-direct.md)
+-   [Kontakte in Sales verwalten und direkt mit Kontakten oder Debitoren in Finance and Operations synchronisieren](contacts-template-mapping-direct.md)
+-   [Angebotskopfzeilen und -positionen direkt von Sales zu Finance and Operations synchronisieren](sales-quotation-template-mapping-sales-fin.md)
+-   [Verkaufsaufträge in Finance and Operations erstellen und direkt mit Sales synchronisieren](sales-order-template-mapping-direct.md)
+-  [Auftragskopfzeilen und -positionen direkt zwischen Sales und Finance and Operations synchronisieren](sales-order-template-mapping-between-sales-fin.md)
+-   [Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
+-   [Verkaufsrechnungen in Finance and Operations erstellen und direkt mit Sales synchronisieren](sales-invoice-template-mapping-direct.md)
+
+
 ## <a name="system-requirements-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Systemanforderungen für Dynamics 365 for Finance and Operations, Enterprise Edition
 
 Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installieren:
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017) mit Plattform-Update 8 (App 7.2.11792.56024 w/ Plattform 7.0.4565.16212)
 
-- Zwei Hotfixes für Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017).
+- Hotfixes für Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017).
+        
+    -  [KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160) - Dieser aktiviert Hotfix Unterstützung für Auftragssynchronisierung mit der Daten-Integrationsfunktion von Sales zu Finance and Operations, zusammen mit verschiedenen anderen Erweiterungen.
 
     -  [KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) – Dieser Hotfix aktiviert die Auftragspositionssynchronisierung mit der Datenintegrationsfunktion zwischen Finance and Operations und Sales.
         
     -  [KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) – Dieser Hotfix aktiviert die Auftragspositionssynchronisierung mit der Datenintegrationsfunktion zwischen Finance and Operations und Sales.
-    
-**Hinweis**: Sie müssen nur KB4036524 installieren, da diese Installation Änderungen aus KB4036461 enthält.
+
+**Hinweis**: Sie müssen nur KB4045570 installieren, da diese Installation Änderungen aus den anderen KB's enthält.
  
 ## <a name="system-requirements-for-dynamics-365-for-sales"></a>Systemanforderungen für Dynamics 365 for Sales
 
 Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installieren:
 
-- Dynamics 365 for Sales, Version 1612 (8.2.1.207) (DB 8.2.1.207) online oder höher.
+- Dynamics 365 for Sales, Version 1612 (8.2.1.207) (DB 8.2.1.207) online.
 - Interessent zu Bargeld-Lösung für Dynamics 365 for Sales, Version 1.14.0.0 (v14) oder höher.
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Installieren der Interessent zu Bargeld-Lösung für Sales

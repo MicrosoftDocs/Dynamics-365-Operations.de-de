@@ -3,7 +3,7 @@ title: "Lagerplatzdirektive für Bestellungseinlagerung einrichten"
 description: Dieses Verfahren zeigt Ihnen an, wie ein Satzmaster eingerichtet wird.
 author: BibiSp
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
+ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
+ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Lagerplatzdirektive für Bestellungseinlagerung einrichten
@@ -61,7 +61,7 @@ Dieses Verfahren zeigt Ihnen an, wie ein Satzmaster eingerichtet wird. Das Beisp
 4. Geben Sie im Feld "Einheiten" einen Wert ein.
     * Die Einheit, die von der Menge sowie der Menge ist, wird die Quellensteuer ausgedrückt. Wenn Sie dieses Feld leer lassen, wird die Lagereinheit des Artikels verwendet.  
 5. Wählen Sie im Feld Menge suchen eine Option aus.
-    * Kein oder Lizenz-Kennzeichen-Menge: Die erfasste Menge auf jeder jeder Lizenzmenge. Unitized Menge: Die gesamte Menge, die erfasst wird. Die noch zu empfangende Menge, die in der Bestellposition angegeben ist. Die Gesamtmenge, die in der Bestellposition angegeben ist.  
+    * Kein oder Kfz-Kennzeichen-Menge: Die Menge erfasste jedem Nachverfolgen. Unitized Menge: Die gesamte Menge, die erfasst wird. Die noch zu empfangende Menge, die in der Bestellposition angegeben ist. Die Gesamtmenge, die in der Bestellposition angegeben ist.  
 6. Aktivieren oder deaktivieren Sie das Kontrollkästchen "Menge initialisieren".
     * Wenn Sie diese Option auswählen und die Einheit im Eingeschränkte nach Einheitsseite angeben, nur Artikel mit dieser Maßeinheit in den Lagerplatz eingelagert werden können. Wenn beispielsweise die Maßeinheit Paletten ist, können Artikel auf Paletten an einem bestimmten Lagerplatz eingelagert werden.  
 7. Aktivieren oder deaktivieren Sie das Kontrollkästchen ''.

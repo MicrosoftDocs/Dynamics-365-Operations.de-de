@@ -3,7 +3,7 @@ title: "Importieren von Konfigurationen zum Generieren von Dokumenten mit Anwend
 description: "Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter \"Konfigurationsanbieter erstellen und als aktiv markieren\" abschließen."
 author: NickSelin
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
-ms.openlocfilehash: 7f2fe7228856ff6377be7d527b32d3ddee252981
+ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
+ms.openlocfilehash: 6a945eb6c733d760cc723bfa7135d73bdf502724
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="import-configurations-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Importieren von Konfigurationen zum Generieren von Dokumenten mit Anwendungsdatenupdate für elektronische Berichterstellung
@@ -32,7 +32,7 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
-    * Die Schritte in diesem Verfahren zeigen, wie ER-Funktionen verwendet werden, um eine Bewerbungsdatenenaktualisierung abzuschließen und wie ein Intrastat-Bericht generiert wird. Die Details des Generieren eines Berichts werden in den Bewerbungstabellen archiviert. Wenn zurzeit der Intrastat-Berichts-Prozess im Intrastat-Formular aktiviert ist, wird das Archivieren auf Grundlage der Logik ausgeführt, die im vorhandenen Quellcode programmiert wird. In diesem Verfahren konfigurieren Sie eine ähnliche jedoch vereinfachte Logik von Anwendungsdaten nur mithilfe des ER-Frameworks. Es werden keine Änderungen am Quellcode vorgenommen.   
+    * Die Schritte in diesem Verfahren zeigen, wie ER-Funktionen verwendet werden, um Anwendungsdaten zu vervollständigen und wie ein Intrastat-Bericht zu erstellt wird. Die Details des Generieren eines Berichts werden in den Bewerbungstabellen archiviert. Wenn zurzeit der Intrastat-Berichts-Prozess im Intrastat-Formular aktiviert ist, wird das Archivieren auf Grundlage der Logik ausgeführt, die im vorhandenen Quellcode programmiert wird. In diesem Verfahren konfigurieren Sie eine ähnliche jedoch vereinfachte Logik von Anwendungsdaten nur mithilfe des ER-Frameworks. Es werden keine Änderungen am Quellcode vorgenommen.   
 
 ## <a name="import-er-configurations"></a>ER Konfigurationen importieren
 1. Klicken Sie auf "Berichterstellungskonfigurationen".

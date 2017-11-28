@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 01bb8999e5d9c0e16f133a621ebfe1d102565f2f
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -34,9 +34,9 @@ ms.lasthandoff: 09/29/2017
 Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten. 
 
 Um einen Bericht zu generieren, öffnen Sie die Berichtsdefinition und klicken anschließend auf die Schaltfläche Generieren in der Symbolleiste. Das Fenster Berichtswarteschlangenstatus wird geöffnet und gibt den Ort des Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
-| ![Hinweis](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Hinweis")**Hinweis**        |
-|------------------------------------------------------------------------------------------------|
-| Sie können Berichte nur für Ordner und Orte generieren, auf die Sie zugreifen dürfen. |
+
+> [!NOTE]
+> Sie können Berichte nur für Ordner und Orte generieren, auf die Sie zugreifen dürfen.
 
 In der folgenden Tabelle werden die Optionen beschrieben, die für das Generieren von Berichten zulässig sind.
 
@@ -51,9 +51,10 @@ Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf de
 Viele Unternehmen haben einen Satz an Berichten, die im Einklang mit den Geschäftsprozessen in geplanten Intervallen ausgeführt werden. Sie können festlegen, dass ein Bericht regelmäßig generiert wird, beispielsweise täglich, wöchentlich, monatlich oder jährlich. Sie können einen einzelnen Bericht oder eine Gruppe von Berichten, die mehrere Unternehmen umfasst, planen. Für jedes der Unternehmen, die z. B. in einer Berichtsbaumstruktur-Definition angegeben sind, müssen Anmeldeinformationen eingegeben werden. Wenn die Anmeldeinformationen nicht gültig sind, zeigt der Bericht nur die Informationen, für die Sie eine Zugriffsberechtigung haben, beispielsweise für das Unternehmen, bei dem Sie zu dem Zeitpunkt angemeldet sind. Die Ausgabeinformationen werden zuerst von der Berichtsgruppe und anschließend von den einzelnen Berichten gelesen.
 
 Während Berichtszeitpläne erstellt und gespeichert werden, werden diese im Navigationsbereich unter Report Schedules angezeigt. Sie können Ordner zum Organisieren der Berichte erstellen. Wird ein einzelner Bericht in einem Berichtszeitplan nicht ausgeführt, hat dies keinen Einfluss auf die Ausführung aller anderen Berichte.
-| ![Wichtig](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Wichtig")**Wichtig**                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Zum Erstellen, Ändern und Löschen von Berichtszeitplänen benötigen Sie die Rolle „Designer“ oder „Administrator“. Wenn ein Bericht ausgeführt wird, werden die Anmeldeinformationen des Benutzers, der den Zeitplan erstellt hat, verwendet, um den Bericht zu generieren. |
+
+> [!IMPORTANT]
+> Zum Erstellen, Ändern und Löschen von Berichtszeitplänen benötigen Sie die Rolle „Designer“ oder „Administrator“. Wenn ein Bericht ausgeführt wird, werden die Anmeldeinformationen des Benutzers, der den Zeitplan erstellt hat, verwendet, um den Bericht zu generieren.
+
 
 ### <a name="create-a-report-schedule"></a>Erstellen eines Berichtzeitplans
 
@@ -100,14 +101,15 @@ Klicken Sie zum Fortfahren auf Berechtigungen im Dialogfeld Berichtzeitplanung, 
 Sie können nach Finanzkonten und Dimensionen suchen, die möglicherweise in allen Zeilendefinitionen, Berichtsbaumstruktur-Definitionen und Berichtsdefinitionen in einer Bausteingruppe fehlen. Dies ist hilfreich, wenn Sie mehrere Konten oder Bausteine während eines kurzen Zeitraum erstellen oder aktualisieren und Sie sicherstellen möchten, dass alle neuen Informationen in den Berichten enthalten sind.
 
 Fehlende Konten werden anhand der höchsten und niedrigsten Werte einer Zeilendefinition oder der Berichtstruktur-Definition bestimmt. Es wird dann eine Liste von Konten angezeigt, die sich nicht in der Zeilendefinition oder in der Berichtstruktur-Definition befinden, aber Teil der Finanzdaten sind. Wenn ein fehlendes Konto größer oder kleiner ist als die Werte in der Zeilendefinition, wird das Konto nicht in die Liste fehlender Konten aufgenommen.
-| ![Tipp](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Tipp")**Tipp**                                             |
-|----------------------------------------------------------------------------------------------------------------------------------|
-| Zu Überprüfungszwecken sollte dieser Vorgang vor dem Generieren monatlicher Berichte und beim Erstellen neuer Bausteine durchgeführt werden. |
+
+> [!TIP]
+> Zu Überprüfungszwecken sollte dieser Vorgang vor dem Generieren monatlicher Berichte und beim Erstellen neuer Bausteine durchgeführt werden.
 
 Bei Berichten mit Wertebereichen ist es weniger wahrscheinlich, dass Konten fehlen. Sofern möglich, verwenden Sie Bereiche im Baustein, um neue Konten nach dem Erstellen mit einzuschließen. Wird eine Berichtsdefinition für @ANY Unternehmen festgelegt, können Sie sich bei einem bestimmten Unternehmen anmelden und eine Analyse fehlender Konten für dieses Unternehmen ausführen.
-| ![Hinweis](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Hinweis")**Hinweis**                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wurde ein neues Unternehmen hinzugefügt, müssen Sie das neue Unternehmen den Berichtstrukturen in allen vorhandenen Berichten hinzufügen, sonst wird das Unternehmen nicht in die Analyse fehlender Konten einbezogen. |
+
+> [!NOTE]
+> Wurde ein neues Unternehmen hinzugefügt, müssen Sie das neue Unternehmen den Berichtstrukturen in allen vorhandenen Berichten hinzufügen, sonst wird das Unternehmen nicht in die Analyse fehlender Konten einbezogen.
+
 
 ### <a name="run-missing-account-analysis"></a>Analyse für fehlende Konten ausführen
 
@@ -117,11 +119,11 @@ Bei Berichten mit Wertebereichen ist es weniger wahrscheinlich, dass Konten fehl
 4.  Wählen Sie im Feld Gruppieren nach eine Option für die Sortierung der Ergebnisse aus. Sie können die Ergebnisse nach dem betroffenen Baustein oder nach Dimensions- und Wertsätzen sortieren.
 5.  Überprüfen Sie die angezeigten Ergebnisse. Wenn Sie im oberen Bereich ein Element auswählen, werden im unteren Bereich zusätzliche Informationen zu der Ausnahme angezeigt. Dies umfasst zugehörige Dimensionen, Werte und Berichte.
 6.  Um den betreffenden Artikel zu öffnen, klicken Sie auf das zugeordnete Symbol im Listenbereich, oder klicken mit der rechten Maustaste auf den Artikel und wählen Öffnen. Um mehrere Artikel auszuwählen, halten Sie während des Auswählens im unteren Bereich die STRG-Taste gedrückt.
-7.  Werden Werte, Bausteine oder Berichte zurückgegeben, die nicht in die Analyse einbezogen werden sollen, klicken Sie mit der rechten Maustaste auf den Artikel und wählen Ausschließen, oder Sie aktivieren das Kontrollkästchen Ausschließen neben dem Artikel, um den Artikel aus der Liste zu entfernen. Ausgeschlossene Artikel sind nicht enthalten, wenn die Liste aktualisiert wird. Um mehrere Artikel auszuwählen, halten Sie beim Auswählen im unteren Bereich die STRG-Taste gedrückt. Zum Anzeigen aller Artikel einschließlich der Ergebnisse, die Sie zuvor aus der Analyse ausgeschlossen haben, aktivieren Sie das Kontrollkästchen Ausgeschlossene Bausteine und Werte anzeigen und klicken dann auf Aktualisieren.
-8.  Klicken Sie auf Aktualisieren, um bearbeitete Ausnahmen zu aktualisieren. Klicken Sie auf Ja, um alle Ergebnisse zu aktualisieren, oder klicken Sie auf Nein für eine teilweise Aktualisierung der betroffenen Artikel.
-    | ![Hinweis](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Hinweis")**Hinweis**                    |
-    |------------------------------------------------------------------------------------------------------------|
-    | Das Formular wird beim Öffnen automatisch aktualisiert, es sei denn, es wurde in den letzten 15 Minuten bereits geöffnet. |
+7.  Werden Werte, Bausteine oder Berichte zurückgegeben, die nicht in die Analyse einbezogen werden sollen, klicken Sie mit der rechten Maustaste auf den Artikel und wählen Ausschließen, oder Sie aktivieren das Kontrollkästchen Ausschließen neben dem Artikel, um den Artikel aus der Liste zu entfernen. Ausgeschlossene Artikel sind nicht enthalten, wenn die Liste aktualisiert wird. Halten Sie zum Auswählen mehrerer Elemente die STRG-Taste gedrückt, und wählen Sie die Elemente im unteren Bereich aus. Wenn Sie alle Elemente inklusive aller Ergebnisse, die Sie zuvor aus der Analyse ausgeschlossen haben, anzeigen möchten, aktivieren Sie das Kontrollkästchen Ausgeschlossene Bausteine und Werte anzeigen, und klicken Sie dann auf Aktualisieren.
+8.  Klicken Sie auf Aktualisieren, um bearbeitete Ausnahmen zu aktualisieren. Klicken Sie auf Ja, um eine vollständige Aktualisierung aller Ergebnisse durchzuführen, oder auf Nein, um eine teilweise Aktualisierung der bearbeiteten Elemente durchzuführen.
+
+    > [!NOTE]
+    > Das Formular wird beim Öffnen automatisch aktualisiert, es sei denn, es wurde in den letzten 15 Minuten bereits geöffnet.
 
 9.  Klicken Sie nach der Problembehebung auf OK, um das Dialogfeld zu schließen.
 

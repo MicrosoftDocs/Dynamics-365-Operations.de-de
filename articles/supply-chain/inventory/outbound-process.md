@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9c09a7bd314bb9005eb0b6c69d7cccad1c30cfdb
-ms.openlocfilehash: 7b395cab2184f8f9f3f50a7a595c6ed782645323
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1b8b17b719713097d77a117cca53eff6886ff1c7
 ms.contentlocale: de-de
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Gehen Sie zu **Lagerverwaltung** \> **Einstellungen** \> **Parameter für Lager-
 
 [![Lagerabgangsauftragsoption beenden](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-Manchmal können einige Artikel im Lager nicht als Bestandteil des Kommissionierlistenprozesses entnommen werden. Beispielsweise kann möglicherweise diese Situation auftretenb, wenn ein Lagerarbeiter die Mengen auf Entnahmepositionen verringert und die Kommissionierliste verarbeitet. Wenn die Option **Lagerabgangsauftrag beenden** auf **Ja** festgelegt wird, werden nicht abgeholte, verbleibende Mengen auf der Auftragsebene gemeldet. Ist die Option auf **Nein** festgelegt, werden die verbleibenden, nicht abgeholten Mengen als offene Abgangsauftragsmenge betrachtet. In diesem Fall sind die Mengen am Lagerort freigegeben und müssen einer neuen Kommissionierliste als Teil der Funktionen **Abgangsaufträge erstellen** hinzugefügt werden.
+Wenn der Lagerarbeiter die Kommissionierlistenmengen verringert, werden die entsprechenden Lagerauftragsmengen aus der Lieferung entfernt. Wenn die Kommissionierliste zu einem bestimmten Zeitpunkt aktualisiert wird, werden die verbleibenden Mengen wieder an den Auftrag gemeldet, wenn die Option **Lagerabgangsauftrag beenden** auf **Ja** festgelegt ist. Wenn die Option **Lagerabgangsauftrag beenden** auf **Nein** festgelegt ist, werden die verbleibenden Mengen als offene Abgangsauftragsmenge betrachtet und müssen einer neuen Kommissionierliste als Teil der Funktion **Offene Abgangsaufträge** hinzugefügt werden. 
 
 [![Öffnen Sie Abgangsauftragsbefehl im Feld Funktionsmenü](./media/open-output-order.png)](./media/open-output-order.png)
 

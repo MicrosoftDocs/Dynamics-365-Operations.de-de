@@ -3,7 +3,7 @@ title: Zahlungsmethoden in einem Callcenter
 description: "Dieses Thema behandelt verschiedene Zahlungsmethoden, die in einem Callcenter in Dynamics 365 for Retail verwendet werden können."
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 93cff4454139524911a98fc28bccd6aeb5b49d4a
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 321d03d154c224b55ffedbe55a2d5952c2b29d9a
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -37,7 +37,7 @@ Die Zahlungsmethoden, die in anderen Kanälen in verwendet werden, wie Bargeld, 
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Attribut**             | Geben Sie im Feld **Tilgungsrate** den Wert der erwarteten Tilgungsquote für den Coupon in Prozent ein, und wählen Sie dann aus, ob der Coupon ein Coupon zur einmaligen Verwendung ist, automatisch neu oder speziell für einen Debitor ausgestellt wird.                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Attribut**             | Geben Sie im Feld **Tilgungsrate** den Wert der erwarteten Tilgungsquote für den Coupon in Prozent ein, und wählen Sie dann aus, ob der Coupon zur einmaligen Verwendung ist, automatisch neu oder speziell für einen Debitor ausgestellt wird.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Gültig**                 | Geben Sie in den Feldern **Startdatum** und **Enddatum** das Datum der ersten und letzten Tage ein, an denen der Coupon gültig ist.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Einbeziehungs-/Ausschlussregeln** | Wählen Sie in den Feldern **Kataloge** und **Artikel** aus, ob Kataloge oder Artikel im Coupon enthalten oder ausgeschlossen sind. Wenn Sie **Einschließen** oder **Ausschließen** wählen, klicken Sie auf **Einrichten**,wählen **Kataloge einbeziehen/ausschließen** oder **Produkte einbeziehen/ausschließen** und geben Informationen über den Katalog oder Artikel ein. Wenn Sie **Keine** in diesen Feldern auswählen, werden alle Kataloge oder Artikel in den Coupon einbezogen.                                                                                                                                                                                                                          |
 | **Sonstiges**         | Wenn dieser Gutschein nicht zusammen mit anderen Rabatten verwendet werden kann, wählen Sie das Kontrollkästchen **Exklusiv**. Wählen Sie anschließend im Feld **Ursprung** aus, wo der Gutschein verwendet werden kann. Aktivieren Sie das Kontrollkästchen **Herstellercoupon**, wenn es sich um den Coupon eines Herstellers handelt.                                                                                                                                                                                                                                                                                                                                                                |

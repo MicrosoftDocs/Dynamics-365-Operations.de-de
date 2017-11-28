@@ -1,27 +1,27 @@
 ---
 title: Workflowelemente
-description: Dieser Artikel beschreibt die verschiedenen Elemente, die einen Workflow darstellen.
+description: Dieses Thema beschreibt die verschiedenen Elemente, die einen Workflow darstellen.
 author: sericks007
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
-ms.author: tjvass
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 255777651a45b899850fc870c9da288f65df702c
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 15cac09a97305c1b467cbb97da2d4b8a864ccbc7
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt die verschiedenen Elemente, die einen Workflow darstellen.
+Dieses Thema beschreibt die verschiedenen Elemente, die einen Workflow darstellen.
 
 Ein Workflow besteht aus Elementen. In den folgenden Abschnitten wird jeder Elementtyp beschrieben.
 
@@ -59,7 +59,7 @@ Bei einem *Genehmigungsprozess* handelt es sich um einen Prozess, der aus getren
 -   eine Änderung am Dokument anzufordern,
 -   Dokument einem anderen Benutzer zur Genehmigung zuweisen.
 
-## <a name="lineitem-workflow-elements"></a>Lineitem-Workflow-Elemente
+## <a name="line-item-workflow-elements"></a>Elemente von Positionsworkflows
 Ein Workflow kann zum Verarbeiten von Dokumenten oder der Positionen in einem Dokument erstellt werden. Angenommen, Sie haben einen Genehmigungsworkflow für Arbeitszeitnachweise erstellt. (Wir bezeichnen diesen Workflow als *Dokumentworkflow*.) Sie können ein *Positionsworkflow*-Element zu diesem Dokumentworkflow hinzufügen. Bei der Ausführung des Positionselements wird jede Position im Dokument zur Verarbeitung übermittelt. Dabei können alle Positionen durch denselben Positionsworkflow oder jede Position durch einen anderen Positionsworkflow verarbeitet werden. Angenommen, ein Mitarbeiter hat einen Arbeitszeitnachweis übermittelt, der der folgenden Abbildung ähnelt.
 
 ![Workflow mit Positionen](./media/workflow_lineitemworkflow.gif) 
@@ -70,7 +70,7 @@ In diesem Szenario möchten Sie vielleicht die folgenden Positionsworkflows erst
 -   **Positionsworkflow 2** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 2222 verwendet.
 -   **Positionsworkflow 3** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 3333 verwendet.
 
-## <a name="flowcontrol-elements"></a>Flowcontrol-Elemente
+## <a name="flow-control-elements"></a>Flusssteuerelemente
 Mithilfe der folgenden Elemente können Sie Workflows mit alternativen Verzweigungen oder gleichzeitig ausgeführten Verzweigungen entwerfen.
 
 ### <a name="manual-decision"></a>Manuelle Entscheidung
