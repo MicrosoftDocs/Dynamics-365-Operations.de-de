@@ -124,6 +124,7 @@
 #### [Eine Unterklasse für Fabrikmethoden erfassen](extensibility/register-subclass-factory-methods.md)
 #### [Mit EventHandlerResult antworten](extensibility/respond-event-handler-result.md)
 #### [Die RunBase-Klasse erweitern](extensibility/extend-runbase-class.md)
+#### [Stellvertretungen zum Anpassen des Anwendungsstarts verwenden](extensibility/startup-customizations.md)
 #### [Ein vorhandenes Feld in einer Tabelle ändern](extensibility/modify-existing-field.md)
 #### [Ein neues Feld einer vorhandenen Tabelle hinzufügen](extensibility/add-field-extension.md)
 #### [Einen Index einer vorhandenen Tabelle hinzufügen](extensibility/add-index.md)
@@ -505,10 +506,12 @@
 ### [Lokale Umgebungen einrichten und bereitstellen](deployment/setup-deploy-on-premises-environments.md)
 ### [Angepasste Modelle für lokale Umgebungen entwickeln und bereitstellen](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Updates auf eine lokale Bereitstellung anwenden](deployment/apply-updates-on-premises.md)
+### [Lokale Bereitstellung erneut bereitstellen](deployment/redeploy-on-prem.md)
+### [Probleme bei Dynamics 365 for Finance and Operations, Enterprise-Edition (lokal), behandeln](deployment/troubleshoot-on-prem.md)
 
 ## Benutzerdefinierten Code erstellen
 ### [Ein bereitstellbares Paket erstellen](deployment/create-apply-deployable-package.md)
-### [Ein bereitstellbares Paket übernehmen](deployment/apply-deployable-package-system.md)
+### [Updates auf eine Cloudumgebung anwenden](deployment/apply-deployable-package-system.md)
 ### [Ein bereitstellbares Paket installieren](deployment/install-deployable-package.md)
 ### [Behandeln von Problemen mit der Paketanwendung](deployment/deployable-package-troubleshooting.md)
 
@@ -544,11 +547,13 @@
 ## Auf ein aktuelles Update aktualisieren
 ### [Prozess zum Verschieben auf das neueste Update](migration-upgrade/upgrade-latest-update.md)
 ### [Lifecycle-Richtlinie](migration-upgrade/versions-update-policy.md)
-### [Aktualisierung auf das aktuellste Plattform-Update](migration-upgrade/upgrade-latest-platform-update.md)
+### [Das aktuellste Plattformupdate auf Ihre Umgebung anwenden](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Die Dynamics-Plattform auf die Freigabe von August 2016 aktualisieren](migration-upgrade/update-platform-each-release.md)
 ### [Eine Sandkastenumgebung aktualisieren](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Daten in Entwicklungs- oder Demoumgebungen aktualisieren](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Entwicklungstools aktualisieren](dev-tools/update-development-tools.md)
+### [Updates auf eine lokale Bereitstellung anwenden](deployment/apply-updates-on-premises.md)
+### [Lokale Bereitstellung erneut bereitstellen](deployment/redeploy-on-prem.md)
 
 ## Hotfixes und Wartung
 ### [Hotfixes von Lifecycle Services herunterladen](migration-upgrade/download-hotfix-lcs.md)
@@ -566,6 +571,7 @@
 ## [Unternehmensübergreifende Datenfreigabe](sysadmin/cross-company-data-sharing.md)
 ## [Wartungsmodus](sysadmin/maintenance-mode.md)
 ## [Vorkonfigurierte Systemkonten](sysadmin/pre-configured-system-accounts.md)
+## [B2B-Benutzer nach Azure AD exportieren](sysadmin/implement-b2b.md)
 ## [Rollenbasierte Sicherheit](sysadmin/role-based-security.md)
 ### [Sicherheitsarchitektur](sysadmin/security-architecture.md)
 ### [Sicherheitsberichte](sysadmin/security-reports.md)
@@ -605,7 +611,7 @@
 ## [Benutzeranmeldungen verfolgen](lifecycle-services/user-logins.md)
 ## [Objektbibliothek](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 – Überblick über den Übersetzungsdienst](lifecycle-services/translation-service-overview.md)
-### [Microsoft Dynamics 365 – Benutzerleitfaden zum Übersetzungsdienst](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 – Benutzerleitfaden zum Übersetzungsdienst  ](lifecycle-services/use-translation-service.md)
 
 ## Dynamics AX 2012 Lifecycle Services-Funktionen
 ### Bereitstellung

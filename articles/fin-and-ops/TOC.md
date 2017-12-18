@@ -10,6 +10,7 @@
 ##### [Systemanforderungen für Cloudbereitstellungen](get-started/system-requirements.md)
 ##### [Lokale Bereitstellung](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
 ##### [Systemanforderungen für lokale Bereitstellungen](get-started/system-requirements-on-prem.md)
+##### [Lagerung für lokale Bereitstellungen](../dev-itpro/deployment/warehousing-for-on-premise-deployments.md)
 
 #### Finance and Operations kaufen
 ##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
@@ -20,6 +21,7 @@
 #### [Features von AX 2012, die verschoben wurden](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funktionen, die in lokalen Bereitstellungen nicht implementiert sind](get-started/features-not-implemented-on-prem.md)
 #### [Lifecycle-Richtlinie](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Plattformupdate 12 (November 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform Update 11 (Oktober 2017)](get-started/whats-new-platform-update-11.md)
 #### [Platform Update 10 (August 2017)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise Edition (Juli 2017)](get-started/whats-new-application-July-2017-update.md)
@@ -42,6 +44,7 @@
 ##### [Aufgabenleitfäden – Februar 2016](get-started/new-task-guides-available-february-2016.md)
 
 ### Die Benutzeroberfläche erkunden
+#### [Eingabehilfefunktionen](get-started/accessibility-features.md)
 #### [FAQ zur Client-Benutzeroberfläche](get-started/client-faq.md)
 #### [Aktivitätssuche](get-started/action-search.md)
 #### [Erweiterter Filter- und Abfragesyntax](get-started/advanced-filtering-query-options.md)
@@ -56,7 +59,7 @@
 #### [Die bevorzugte Zeitzone eines Benutzers festlegen](organization-administration/tasks/set-users-preferred-time-zone.md)
 #### [Lifecycle Services verstehen](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
-### Hilfe und Support erhalten
+### Dokumentation lesen und ausführen
 #### [Hilfe – Überblick](get-started/help-overview.md)
 #### [Mit Hilfe verbinden](get-started/help-connect.md)
 #### [Feldbeschreibungen anzeigen und exportieren](get-started/view-export-field-descriptions.md)
@@ -152,17 +155,21 @@
 
 #### [Datenintegration mithilfe des Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Ein Szenario zum Konvertieren eines Interessenten in Bargeld konfigurieren](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Produkte von Finance and Operations mit Produkten in Sales synchronisieren](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Konten von Sales mit Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Kontakte von Sales mit Kontakten oder Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Verkaufsangebotskopfzeilen und -positionen von Sales mit Finance and Operations synchronisieren](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Auftragskopfzeilen und -positionen von Finance and Operations mit Sales synchronisieren](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Verkaufsrechnungszeilen und -positionen von Finance and Operations mit Sales synchronisieren](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [Konten von Sales direkt mit Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Produkte direkt von Finance and Operations mit Produkten in Sales synchronisieren](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Kontakte direkt von Sales mit Kontakten oder Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Auftragskopfzeilen und -positionen direkt von Finance and Operations mit Sales synchronisieren](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Verkaufsrechnungskopfzeilen und -positionen direkt von Finance and Operations mit Sales synchronisieren](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Konten in Sales verwalten und direkt von Sales zu Finance and Operations synchronisieren](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Produkte in Finance and Operations verwalten und direkt mit Sales synchronisieren](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Kontakte in Sales verwalten und direkt mit Kontakten oder Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Synchronisieren von Verkaufsangeboten direkt von Sales mit Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Synchronisieren von Verkaufsaufträgen direkt von Finance and Operations mit Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Synchronisieren von Verkaufsrechnungen direkt von Finance and Operations mit Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Konten in Sales verwalten und mit Finance and Operations synchronisieren](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Kontakte in Sales verwalten und mit Finance and Operations synchronisieren](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Produkte in Finance and Operations verwalten und mit Sales synchronisieren](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Verkaufsangebote in Sales erstellen und mit Finance and Operations synchronisieren](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Verkaufsaufträge in Finance and Operations erstellen und mit Sales synchronisieren](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Verkaufsrechnungen in Finance and Operations erstellen und mit Sales synchronisieren](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+
+
 
 #### [Externe Webdienste nutzen](../dev-itpro/data-entities/consume-external-web-service.md)
 
@@ -894,6 +901,7 @@
 ##### [Bericht mit der schwarzen Liste](../financials/localizations/emea-ita-black-list-report.md)
 ##### [Fälligkeitsdatum](../financials/localizations/emea-ita-competence-date.md)
 ##### [Anlagenabschreibung](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Lieferschein-Datumsprüfung auf Rechnungen](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 ##### [Mehrwertsteuerbücher](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Geteilte Zahlung für Rechnungen, die der öffentlichen Verwaltung ausgestellt wurden](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
@@ -1219,7 +1227,7 @@
 #### [Anwendungssuiteberichte mithilfe von Erweiterungen anpassen](../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md)
 #### [Anwendungssuite-Berichtsdatasets erweitern](../dev-itpro/analytics/expand-app-suite-report-data-sets.md)
 #### [Berichtsmenüoptionen erweitern](../dev-itpro/analytics/extend-report-menu-items.md)
-#### [Geschäftsdokumente mit benutzerdefiniertem Design ](../dev-itpro/analytics/custom-designs-business-docs.md)
+#### [Geschäftsdokumente mit benutzerdefiniertem Design](../dev-itpro/analytics/custom-designs-business-docs.md)
 
 
 ### [Elektronische Berichterstellung](../dev-itpro/analytics/general-electronic-reporting.md)
@@ -1347,7 +1355,29 @@
 ### [Nachverfolgen der laufenden Durchschnittskosten pro Lagerungsdimension](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 
-## Produktprogrammplanung
+## [Produktprogrammplanung](../supply-chain/master-planning/master-planning-home-page.md)
+### [Produktprogrammplan](../supply-chain/master-planning/master-plans.md)
+#### [Deckungseinstellungen](../supply-chain/master-planning/coverage-settings.md)
+#### [Deckungsregeln für Artikel definieren (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
+#### [Plan mit Einschränkungen erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/constrained-plan.md)
+#### [Materialplan für Co-Produkte erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
+#### [Geplante Aufträge verwalten](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Verzögerungen handhaben](../supply-chain/master-planning/delays.md)
+#### [Eine Auflösung verfolgen](../supply-chain/master-planning/trace-explosion.md)
+#### [Aktivitätsmeldungen](../supply-chain/master-planning/action-messages.md)
+#### [Überwachung eines Produktprogramm-Planungslaufs (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+#### [Einen Zeitplan für einen Standort erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/create-schedule-site.md)
+#### [Einen Plan für einen Standort erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/create-plan-site.md)
+#### [Produktprogrammpläne und Funktion für mehrere Standorte](../supply-chain/master-planning/master-plan-multisite-functionality.md)
+##### [Plan für Disposition an Standort, obligatorischer Lagerort](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
+##### [Plan für Disposition an Standort, Lagerort nicht obligatorisch](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
+##### [Plan für Disposition an Standort und Lagerort, Lagerort obligatorisch](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+##### [Plan für Disposition an Standort und Lagerort, Lagerort nicht obligatorisch](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+##### [Die Stücklistenversion bestimmen](../supply-chain/master-planning/master-plan-bom-version-determined.md)
+##### [Auflösung einer Stücklistenversion](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
+#### [Intercompany-Plan erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
+#### [Ausgehenden geplanten Intercompany-Bedarf anzeigen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
+#### [Mit Debitoren der internen Lieferkette zusammenarbeiten (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 ### [Bedarfsplanung](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [Einrichten einer Bedarfsplanung](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [Historische Daten für Bedarfsplanungen importieren](../supply-chain/master-planning/import-historical-data.md)
@@ -1359,29 +1389,6 @@
 #### [Planzahlenverrechnungsschlüssel](../supply-chain/master-planning/reduction-keys.md)
 #### [Statistische Grundplanung erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/create-baseline-forecast.md)
 #### [Eine Bedarfsplanung manuell ändern (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
-
-### [Produktprogrammplan](../supply-chain/master-planning/master-plans.md)
-#### [Deckungseinstellungen](../supply-chain/master-planning/coverage-settings.md)
-#### [Geplante Aufträge verwalten](../supply-chain/master-planning/maintain-planned-orders.md)
-#### [Verzögerungen](../supply-chain/master-planning/delays.md)
-#### [Aktivitätsmeldungen](../supply-chain/master-planning/action-messages.md)
-#### [Eine Auflösung verfolgen](../supply-chain/master-planning/trace-explosion.md)
-#### [Produktprogrammpläne und Funktion für mehrere Standorte](../supply-chain/master-planning/master-plan-multisite-functionality.md)
-##### [Plan für Disposition an Standort, obligatorischer Lagerort](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-##### [Plan für Disposition an Standort, Lagerort nicht obligatorisch](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-##### [Plan für Disposition an Standort und Lagerort, Lagerort obligatorisch](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-##### [Plan für Disposition an Standort und Lagerort, Lagerort nicht obligatorisch](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-##### [Die Stücklistenversion bestimmen](../supply-chain/master-planning/master-plan-bom-version-determined.md)
-##### [Auflösung einer Stücklistenversion](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-#### [Überwachung eines Produktprogramm-Planungslaufs (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
-#### [Deckungsregeln für Artikel definieren (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
-#### [Einen Plan für einen Standort erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/create-plan-site.md)
-#### [Einen Zeitplan für einen Standort erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/create-schedule-site.md)
-#### [Plan mit Einschränkungen erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/constrained-plan.md)
-#### [Intercompany-Plan erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
-#### [Materialplan für Co-Produkte erstellen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
-#### [Ausgehenden geplanten Intercompany-Bedarf anzeigen (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
-#### [Mit Debitoren der internen Lieferkette zusammenarbeiten (Aufgabenleitfaden)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 
 
 ## [Mobile App](../dev-itpro/mobile-apps/Mobile-app-home-page.md)
@@ -1853,7 +1860,7 @@
 #### [Arbeitsvorlage für Bestellungen einrichten](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
 #### [Auslastungen und Lieferungen mithilfe der Ladungsplanungsworkbench planen](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
-# [Entwicklung und Verwaltung](../dev-itpro/toc.md)
+# [Entwicklung und Administration für Finance and Operations](../dev-itpro/toc.md)
 
 # [Dynamics 365 for Retail](../retail/toc.md)
 
