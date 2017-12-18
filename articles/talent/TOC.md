@@ -2,6 +2,8 @@
 
 # [Erste Schritte](talent-get-started.md)
 ## [Systemanforderungen und Updaterichtlinie](talent-versions-update-policy.md)
+## [Microsoft Dynamics 365 for Talent bereitstellen](provisioning-talent.md)
+## [Talentfunktionalität erweitern](extend-talent-functionality.md)
 
 # [Eine Personalverwaltungsstrategie entwickeln](departments-jobs-positions.md)
 ## [Stellenkomponenten einrichten](create-job.md)
