@@ -3,7 +3,7 @@ title: "Mobiler Arbeitsbereich für Spesenverwaltung"
 description: "Dieses Thema enthält Informationen über den mobilen Arbeitsbereich für die Spesenverwaltung. Dieser Arbeitsbereich ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können. Benutzer können auch schnell eine Spesenposition erstellen, indem sie einen beigefügten Beleg verwenden und ihre Spesenberichte erstellen und verwalten."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4880c74047f53704f5f4d8efb19b6f8c6b04d479
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: bbbe37330e16a079b817dfe04f4a47f046263e88
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -46,7 +46,7 @@ Insbesondere ermöglicht der mobile Arbeitsbereich für die **Spesenverwaltung**
 - Laden Sie eine Datei als erfassten Beleg hoch. Sie können diese Datei später einem Spesenbericht hinzufügen.
 - Erstellen Sie neue Ausgabenposition, indem Sie einen einzigen Zugang verwenden. Sie können diese Position später einem Spesenbericht hinzufügen und diesen zur Genehmigung und Erstattung vorlegen.
 
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Juli 2017) verwenden, können Sie auch die folgenden Funktionen verwenden:
+Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition verwenden, können Sie auch die folgenden Funktionen verwenden:
 
 - Erstellen eines neuen Spesenberichts.
 - Fügen Sie einem Spesenbericht Kreditkartentransaktionen sowie andere bereits erzeugte Spesen hinzu.
@@ -60,8 +60,8 @@ Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (
 ## <a name="prerequisites"></a>Voraussetzungen
 Die Voraussetzungen variieren abhängig von der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Juli 2017) verwenden 
-Wenn Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Juli 2017) für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Spesenverwaltung** aktivieren. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition verwenden 
+Wenn Microsoft Dynamics 365 for Finance and Operations, Enterprise edition für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Spesenverwaltung** aktivieren. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder später verwenden.
 Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder später für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 

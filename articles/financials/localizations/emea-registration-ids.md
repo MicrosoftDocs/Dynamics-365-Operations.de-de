@@ -3,7 +3,7 @@ title: Registrierungskennungen
 description: Unter den Themen in diesem Abschnitt finden Sie Informationen zum Einrichten und Verwalten von Anmelde-IDs.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e85e1ef9bb27e3644264c898feb3a484c5b3ec3f
+ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
+ms.openlocfilehash: e908d4ec41263ed4230ea5e70fa08db793abedc6
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/28/2017
 
 ---
 
@@ -98,6 +98,12 @@ In der folgenden Tabelle werden die unterstützten Erfassungstypen in Finance an
 | OGRN                                                          | Russische Föderation| OGRN (Gesetzgebungstyp in OGRN AX 2012 R3) |
 | SNILS                                                         | Russische Föderation| SNILS (Gesetzgebungstyp in SNILS AX 2012 R3)|
 | CIFTS                                                         | Russische Föderation| CIFTS (Gesetzgebungstyp in CIFTS AX 2012 R3)|
+| Ausweis                                                      | Spanien             | Ausweis|
+| Offizielles Ausweisdokument                              | Spanien             | Offizielles Ausweisdokument|
+| Wohnsitzbescheinigung                                         | Spanien             | Wohnsitzbescheinigung|
+| Anderes Ausweisdokument                                 | Spanien             | Anderes Ausweisdokument|
+| Nicht gezählt                                                  | Spanien             | Nicht in AX 2012 R3 verfügbar|
+
 
 Weitere Informationen zum Zuordnen von Erfaassungskennungen einschließlich erforderliche Voraussetzungen, finden Sie in den folgenden Aufgabenaufzeichnungen für Mehrwertsteuer-IDs in den Lebenszyklus-Dienstleistungen (LCS):
 

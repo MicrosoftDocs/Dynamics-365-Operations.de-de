@@ -3,7 +3,7 @@ title: Finanzperiodenabschluss-Arbeitsbereich
 description: "Dieser Artikel enthält eine Übersicht über den Finanzperiodenabschlussarbeitsbereiche und der zugeordneten Konfiguration."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5dbefc953c0f1608b6f5b5676850a0e9aba36cc
+ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
+ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/29/2017
 
 ---
 
@@ -91,7 +91,8 @@ Sie können eine Aufgabe in der Vorlage einem oder mehreren Unternehmen, in dene
 
 Die Menüoptiib **Aufgabenlink** wird dem Aufgabenarbeitseinsatz zugeordnet und kann verwendet werden, um in direktem Bezug zur zugeordneten Seite über den Aufgabenlink im Arbeitsbereich zu wechseln. Beispielsweise kann eine Abschlussaufgabe den Währungsbewertungsprozess für Kreditoren ausführen, der mit der Seite der zugeordneten **Neubewertung der Fremdwährung** in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition verknüpft werden kann. Sie können auch eine externe URL verknüpfen. 
 
-> [!Tip] Wenn Sie einen bestimmten Management Reporter-Bericht mit einer Finanzperiodenabschlussaufgabe verknüpfen möchten, können Sie die Berichts-URL verwenden. Um auf die Berichts-URL zuzugreifen, öffnen Sie den Bericht im Berichts-Designer, und klicken Sie auf  **Datei** &gt; **Bericht anzeigen** , um den Bericht in einem Webbrowser zu öffnen. Sie können die URL dann in die Adressleiste des Browsers kopieren und in das Feld **Aufgabenlink**-**URL** einfügen. 
+> [!TIP]
+> Wenn Sie einen bestimmten Management Reporter-Bericht mit einer Finanzperiodenabschlussaufgabe verknüpfen möchten, können Sie die Berichts-URL verwenden. Um auf die Berichts-URL zuzugreifen, öffnen Sie den Bericht im Berichts-Designer, und klicken Sie auf  **Datei** &gt; **Bericht anzeigen** , um den Bericht in einem Webbrowser zu öffnen. Sie können die URL dann in die Adressleiste des Browsers kopieren und in das Feld **Aufgabenlink**-**URL** einfügen. 
 
 Sie können Aufgabenabhängigkeiten in der Vorlage definieren. Wenn festgelegt wurde, dass eine Aufgabe von einem oder mehreren Aufgaben abhängig ist, kann diese Aufgabe nicht als abgeschlossen markiert werden, bis alle Abhängigkeiten abgeschlossen wurden. 
 

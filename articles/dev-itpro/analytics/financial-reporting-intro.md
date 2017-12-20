@@ -1,15 +1,15 @@
 ---
 title: "Finanzberichterstellung für Finance and Operations"
 description: "Die Finanzberichterstellung für Finance and Operations ermöglicht Finanz- und Geschäftsexperten Finanzaufstellungen zu erstellen, zu verwalten, bereitzustellen und anzuzeigen. Es bewegt sich über die traditionellen Berichtseinschränkungen hinaus, um effizient verschiedene Arten von Berichten zu entwerfen."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Operations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d1e1ec9fff9f1a41fd8a219c9fbbf8a26ad3d7b6
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: b23883c1f66cda8a719db64a2f50e00605f6bfe9
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -33,6 +33,17 @@ ms.lasthandoff: 11/03/2017
 Die Finanzberichterstellung für Finance and Operations ermöglicht Finanz- und Geschäftsexperten Finanzaufstellungen zu erstellen, zu verwalten, bereitzustellen und anzuzeigen. Es bewegt sich über die traditionellen Berichtseinschränkungen hinaus, um effizient verschiedene Arten von Berichten zu entwerfen.
 
 Die Finanzberichterstellung umfasst Dimensionsunterstützung. Daher sind Kontosegmente oder Dimensionen sofort verfügbar. Es sind keine zusätzlichen Tools oder Konfigurationsschritte erforderlich.
+
+## <a name="financial-reporting-setup"></a>Finanzberichterstellungseinrichtung
+Die Seite **Rechnungslegungseinstellung** enthält eine Liste aller Finanzdimensionen im System. **Hauptbuch** > **Sachkontoeinstellung** > **Rechnungslegungseinstellung**. 
+
+Die Seite **Rechnungslegungseinstellung** enthält zwei Abschnitte, die die Daten bestimmen, die Sie in der Finanzberichterstellung melden:
+
+•   **Dimensionsregisterkarte** - Weil verschiedene Unternehmen verschiedene Dimensionen und Kontostrukturen verwenden, besteht keine Möglichkeit, den Auftrag zu bestimmen, in dem Benutzer alle enthaltenen Finanzdimensionen auf Berichten angezeigt werden sollen. Mit dieser Seite können Sie den Auftrag festlegen, in dem Sie Finanzdimensionen anzeigen möchten,  wenn Sie einen Bericht in der Finanzberichterstellung erstellen und anzeigen.
+
+•   **Attributregisterkarte**, in dem Sie auswählen können, ob die Fähigkeit wünschen, **Kreditoren** und **Debitoren** als Attribut für das Filtern und Erstellen von Berichten zu verwenden. Das Erstellen einer Fertigmeldung in "Kreditoren" und in " Debitoren ist nur wertvoll, wenn Sie nicht mehrere Kreditoren oder Debitoren in einem einzelnen Dokument eingeben, wenn Sie Posten buchen. Kreditor und/oder Debitors werden zusätzliche Zeit der Integration hinzufügen.
+
+
 
 ## <a name="financial-reporting-components"></a>Finanzberichterstellungskomponenten
 Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen, Anzeigen und Planen von Berichten.

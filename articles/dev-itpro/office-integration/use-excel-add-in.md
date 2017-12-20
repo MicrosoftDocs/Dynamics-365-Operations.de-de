@@ -3,7 +3,7 @@ title: Excel-Add-In verwenden
 description: "In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics Office-Add-in für Excel angezeigt, aktualisiert und bearbeitet werden."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/06/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b1f25f3630ad5126edd20c5508b83a9811a65f8
-ms.openlocfilehash: dd986d8f82c42c4e229e6e60bdfe8d15a273e149
+ms.sourcegitcommit: bf2607596993d01abaf5e8a66f14f8c091791d4a
+ms.openlocfilehash: b4151ca929d0dbe073c1a8444cf63a90ac74e20c
 ms.contentlocale: de-de
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -104,17 +104,6 @@ Sie können den Designer verwenden, um die Spalten anzupassen, die automatisch z
 
 4. Klicken Sie auf **Aktualisieren**, um die Änderungen der Datenquelle zu übernehmen. Klicken Sie anschließend auf **Fertig**, um den Designer zu beenden.
 5. Wenn Sie ein Feld (Spalte) hinzugefügt haben, klicken Sie auf **Aktualisieren**, um aktualisierte Datensätze zu laden.
-
-## <a name="copy-environment-data"></a>Umgebungsdaten kopieren
-Die Daten, die in die Arbeitsmappe in einer Umgebung eingelesen werden, können in eine andere Umgebung kopiert werden. Sie können jedoch die Verbindungs-URL derzeit nicht ändern, da der Datencache in der Arbeitsmappe weiterhin die Daten als vorhandene Daten behandelt. Stattdessen müssen Sie die Copy Environment Data-Funktionen verwenden, um die Daten in einer neuen Umgebung als neue Daten zu veröffentlichen.
-
-1. Wählen Sie die **Optionen**-Schaltfläche (Gangsymbol), und klicken Sie dann auf den FastTab **Datenkonnektor**, wählen Sie **Umgebungsdaten kopieren**.
-2. Geben Sie die Server-URL für die neue Umgebung an.
-3. Klicken Sie auf **OK** und dann auf **Ja**, um die Aktion zu bestätigen. Das Excel-Add-In wird neu gestartet und verbindet sich mit der neuen Umgebung. Alle vorhandenen Daten in der Arbeitsmappe werden als neue Daten behandelt.
-
-    Nachdem das Excel-Add-In neugestartet wurde, zeigt ein Meldungsfeld an, dass die Arbeitsmappe im Umgebungskopiemodus ist.
-
-4. Um die Daten in die neue Umgebung als neue Daten zu kopieren, wählen Sie **Veröffentlichen** aus. Um den Umgebungskopiervorgang abzubrechen und die vorhandenen Daten in der neuen Umgebung zu prüfen, wählen Sie **Aktualisieren**.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 Es gibt mehrere Probleme, die ganz einfach behoben werden können.

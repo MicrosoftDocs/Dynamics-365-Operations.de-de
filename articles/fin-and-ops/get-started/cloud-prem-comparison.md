@@ -3,7 +3,7 @@ title: Vergleich von Cloudfunktionen und lokalen Funktionen
 description: "Das Thema zeigt Funktionen, die in Cloud und lokal unterstützt werden."
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: efe06929db414475f6457dfe49ff1791a3d609d5
+ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
+ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
 ms.contentlocale: de-de
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -59,6 +59,9 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | | Integration mit PowerBI.com| Ja | Nr. |
 | | Analytische Arbeitsbereiche | Ja | Nr. |
 | | Intelligente Geschäftsprozesse: Empfehlungen| Ja | Nr. |
+| | Power BI-Berichte mit OData mithilfe des Power PI-Desktops oder des Excel PowerQuery-Tools genehmigen | Ja | Nr. |
+| | SQL Server Reporting Services unterstützt die Skalierung nach Außen  | Ja | Nr. |
+| | Telemetrie wird in die Cloud übertragen | Ja | Nr. |
 | Lagerverwaltung| | Ja | Ja |
 | Lifecycle Services| | Ja | Ja |
 | | Konfigurierbare Geschäftsprozesse | Ja | Nr. |
@@ -86,7 +89,7 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | Transportverwaltung| | Ja | Ja |
 | Kreditor-Kooperation| | Ja | Ja|
 | Lagerortverwaltung| | Ja | Ja |
-| | Mobile App am Lagerort| Ja | Nr. |
+| | Mobile App am Lagerort| Ja | Ja |
 | | Power BI-Berichte am Lagerort| Ja | Nr. |
 | Webclient | | Ja | Ja |
 | | Aufgabenaufzeichnung - Aufgabenaufzeichnung aus der BPM-Bibliothek speichern oder laden| Ja | Nr. |
@@ -103,6 +106,7 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | Plattformkompatibilität  || Ja | Ja |
 | Wartung | | Ja | Ja |
 | | Wartungsumgebungen | Ja | Nr. |
+| Trace Parser und PerfTimer | | Ja | Nr. |
 | Upgrade durchführen | | Ja | Ja |
 | | Upgrade durchführen | Ja | Nr. |
 | | Aktualisierung und Support für frühere Versionen | Ja | Nr. |
@@ -121,6 +125,8 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 |---|---|---|---|
 | Alle Talent-Bereiche | Alle Talentfunktionen | Ja | Nr. |
 
+## <a name="see-also"></a>Siehe auch
 
+- [Funktionen, die in lokalen Bereitstellungen nicht implementiert sind](features-not-implemented-on-prem.md)
 
 

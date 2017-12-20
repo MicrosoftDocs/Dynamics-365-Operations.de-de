@@ -3,7 +3,7 @@ title: "Mobiler Arbeitsbereich für mein Team"
 description: "Dieses Thema enthält Informationen zum Mein Team-Arbeitsbereich, mit dem Manager ihre eigenen Mitarbeiter und erweitertes Personal anzeigen können. Benutzer können auch Lob an Personen in der Mitarbeitergruppe senden."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a49e7ba9c1cbc525f388b345b7c6b2102bc81f54
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 30a5b88b5f4a0b107b39742770587eeb4bcb87cf
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -53,7 +53,7 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 <tbody>
 <tr class="odd">
 <td>Eines der folgenden Produkte muss in der Organisation bereitgestellt werden:
-<ul><li>Microsoft Dynamics 365 for Finance and Operations Enterprise edition (Juli 2017)</li>
+<ul><li>Microsoft Dynamics 365 for Finance and Operations (Enterprise-Edition)</li>
 <li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>

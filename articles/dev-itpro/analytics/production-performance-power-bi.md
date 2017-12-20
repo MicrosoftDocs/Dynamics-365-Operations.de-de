@@ -3,7 +3,7 @@ title: "Power BI-Inhalt – Produktionsleistung"
 description: "In diesem Thema wird beschrieben, was im Warehouse Performance Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: baa0343713e8f75e1c9637a903b9008db0968fd4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Mit diesem Power BI Inhalt können Sie Produktionsabweichungen analysieren. Die 
 Der **Produktionsfluss** Power BI Inhalt umfasst Daten, die aus Produktionsaufträgen und Chargenaufträgen stammen. Die Berichte enthalten keine Daten, die den Kanbanproduktionen zugeordnet sind.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017), verwenden, wird der Power BI-Inhalt **Produktionsleistung** auf der Seite **Produktionsleistung** (**Produktionsverwaltung** > **Abfragen und Berichte** > **Produktionsleistungsanalyse** > **Produktionsleistung**) angezeigt. 
+Diw **Produktionsleistung** Power BI-Inhalt wird auf der **Produktionsleistung** angezeigt (**Produktionssteuerung** > **Abfragen und Berichte** > **Produktionsleistungsanalyse** > **Produktionsfluss**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 

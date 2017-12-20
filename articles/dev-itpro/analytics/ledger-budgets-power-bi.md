@@ -3,7 +3,7 @@ title: Ist-Wert im Vergleich mit Budget-Power BI-Inhalt
 description: "In diesem Thema wird der Ist-Wert im Vergleich mit Budget-Power BI-Inhalt beschrieben. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden."
 author: ryansandness
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f09af96fb1c76d8737d2c535f1a46565a18deca0
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 2a0ad5af4e4d7da09690331dc9d1a51d2e97a664
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -35,7 +35,7 @@ In diesem Thema wird der **Istwert verglichen mit Budget**-Inhalt von Microsoft 
 Der **Istwert verglichen mit Budget**-Inhalt von Power BI wurde für Personen erstellt, die für die Überwachung der tatsächlichen Leistung im Vergleich zur Budgetleistung in ihrer Organisation verantwortlich sind. Der **Ist-Wert im Vergleich mit Budget**-Inhalt für Power BI bietet Einblicke in Budgetabweichungen. Sie können Budgets für das aktuelle Jahr nach Firmenkategorie, Budgetcode, Hauptkonto, Hauptkontobeschreibungen oder Finanzzeitraum analysieren, um ein besseres Verständnis für die Ursache von Abweichungen zu bekommen. 
 
 # <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Juli 2017) verwenden, werden Berichte vom **Ist-Wert im Vergleich mit Budget**-Inhalt von Power BI in den Arbeitsbereichen **Sachkontobudget und Planungen** und **Finanzabteilungsleiter** angezeigt.
+Berichte vom **Istwert verglichen mit Budget** Power BI-Inhalt werden in **Sachkontobudget und Planungen** in **CFO** angezeigt.
 
 # <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
 Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im **Ist-Wert im Vergleich mit Budget**-Power BI-Inhalt befindet.
