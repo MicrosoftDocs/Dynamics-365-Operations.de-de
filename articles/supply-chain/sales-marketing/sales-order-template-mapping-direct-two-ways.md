@@ -1,6 +1,6 @@
 ---
 title: "Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations"
-description: "Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um bidirektionale Synchronisierung von Auftragskopfzeilen und -positionen direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition zu synchronisieren."
+description: "Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Auftragskopfzeilen und -positionen direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations, Enterprise edition zu synchronisieren."
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/31/2017
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 568c33a63efdc58a179dadcb617634dcf533fd4b
-ms.openlocfilehash: c31d65328250539fbe172f220272eec9d8b59bbf
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
 ms.contentlocale: de-de
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 11/13/2017
 
 [!include[banner](../includes/banner.md)]
 
-Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um bidirektionale Synchronisierung von Auftragskopfzeilen und -positionen direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition zu synchronisieren.
+Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Auftragskopfzeilen und -positionen direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations, Enterprise edition zu synchronisieren.
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 
 Um auf die verfügbaren Vorlagen zuzugreifen, öffnen Sie [PowerApps-Administrator-Center](https://preview.admin.powerapps.com/dataintegration). Wählen Sie **Projekte**, und dann auf, in der oberen rechten Ecke, wählen Sie **Neues Projekt**, um öffentliche Vorlagen auszuwählen.
 
-Die folgenden Vorlagen und zugrunde liegenden Aufgaben werden verwendet, um bidirektionale Synchronisierung von Auftragskopfzeilen und -positionen direkt zwischen Finance and Operations und Sales zu synchronisieren:
+Die folgenden Vorlagen und zugrunde liegenden Aufgaben werden verwendet, um Auftragskopfzeilen und -positionen direkt zwischen Finance and Operations und Sales zu synchronisieren:
 
 - **Name der Vorlagen in der Datenintegration:** 
 

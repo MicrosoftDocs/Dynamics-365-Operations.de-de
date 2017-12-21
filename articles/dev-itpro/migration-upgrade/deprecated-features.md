@@ -3,7 +3,7 @@ title: Veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee051bbf50a6124fe1700a244b36b5f9c599e714
+ms.sourcegitcommit: 408854737847590841814ed74209618bbf22ec23
+ms.openlocfilehash: b0eb041ee1a4309b010e510e1f7428d6c930e4a0
 ms.contentlocale: de-de
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -490,8 +490,8 @@ Datenpartitionen enthalten eine logische Trennung von Daten in der Microsoft Dyn
 
 |   |   |
 |---|---|
-| **Grund für Abschreibung**       | Datenpartitionen wurden in Microsoft Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service(PaaS) Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Egal, ob eine Datenpartitionierung für Tochterunternehmen, mehrere Mandanten oder nur zur Skalierung benötigt wird, glauben wir, dass die Szenarien besser über mehrere Datenbanken oder mehrere Instanzen von Dynamics AX behandelt werden können. |
-| **Ersetzt durch eine andere Funktion?** | Datenpartitionen werden durch die Unterstützung mehrerer Datenbanken oder Instanzen von Dynamics AX in einer zukünftigen Version ersetzt.    |
+| **Grund für Abschreibung**       | Datenpartitionen wurden in Microsoft Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service(PaaS) Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Egal, ob eine Datenpartitionierung für Tochterunternehmen, mehrere Mandanten oder nur zur Skalierung benötigt wird, glauben wir, dass die Szenarien besser über mehrere Datenbanken oder mehrere Instanzen von Finance and Operations behandelt werden können. |
+| **Ersetzt durch eine andere Funktion?** | Debitoren, die Datenpartitionen verwenden, müssen mehrere Instanzen von Finance and Operations verwenden, wenn die Datenbankebenentrennung ein kritisches Problem ist.    |
 | **Betroffene Module**             | Alle  |
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Datenbank- und Dateifreigabespeicher für Anhänge

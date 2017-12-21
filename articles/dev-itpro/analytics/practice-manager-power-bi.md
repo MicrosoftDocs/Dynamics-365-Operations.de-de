@@ -3,7 +3,7 @@ title: Power BI-Inhalt des Practice Manager
 description: "In diesem Thema wird beschrieben, was im Power Bl-Inhalt des Practice Manager enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3462ef1bbde9a98ac6a7bc9a5c54e58ff98559c8
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 836997f9f5b146ff48252c3f06153791ec1aabed
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -39,7 +39,7 @@ Der Power BI-Inhalt des **Practice Manager** umfasst fünf Berichtsseiten: eine 
 Alle Beträge im Inhalt werden in der Systemwährung angezeigt. Sie können die Systemwährung auf der Seite **Systemparameter** festlegen.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017), verwenden, wird der Power BI-Inhalt **Practice Manager** im Arbeitsbereich **Projektverwaltung** angezeigt.
+Der **Methodenmanager** Power BI-Inhalt wird im **Projektmanagement**Arbeitsbereich angezeigt.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
 

@@ -1,16 +1,16 @@
 ---
 title: Finanzbericht generieren
 description: "Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
 ms.contentlocale: de-de
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -40,15 +40,31 @@ Um einen Bericht zu generieren, öffnen Sie die Berichtsdefinition und klicken a
 
 In der folgenden Tabelle werden die Optionen beschrieben, die für das Generieren von Berichten zulässig sind.
 
-| Mit der folgenden Option...                                                                                | Weitere Informationen |
-|---------------------------------------------------------------------------------------|----------------------|
-| Einrichten eines Zeitplans, um einen Bericht oder eine Gruppe von Berichten automatisch zu generieren              |                      |
-| Prüfen auf fehlende Konten oder Daten in einem Bericht und Validieren der Richtigkeit eines Berichts |                      |
+| Option                                                                                | 
+|---------------------------------------------------------------------------------------|
+| Einrichten eines Zeitplans, um einen Bericht oder eine Gruppe von Berichten automatisch zu generieren              |   
+| Prüfen auf fehlende Konten oder Daten in einem Bericht und Validieren der Richtigkeit eines Berichts |   
 
 Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf den Registerkarten Berichtsdefinition angegeben haben. Über die Registerkarte Ausgabe- und Verteilung können Sie eine Berichtsbibliothek angeben, um den Bericht einfach freizugeben.
 
-## <a name="schedule-report-generation"></a> Berichterstellung planen
-Viele Unternehmen haben einen Satz an Berichten, die im Einklang mit den Geschäftsprozessen in geplanten Intervallen ausgeführt werden. Sie können festlegen, dass ein Bericht regelmäßig generiert wird, beispielsweise täglich, wöchentlich, monatlich oder jährlich. Sie können einen einzelnen Bericht oder eine Gruppe von Berichten, die mehrere Unternehmen umfasst, planen. Für jedes der Unternehmen, die z. B. in einer Berichtsbaumstruktur-Definition angegeben sind, müssen Anmeldeinformationen eingegeben werden. Wenn die Anmeldeinformationen nicht gültig sind, zeigt der Bericht nur die Informationen, für die Sie eine Zugriffsberechtigung haben, beispielsweise für das Unternehmen, bei dem Sie zu dem Zeitpunkt angemeldet sind. Die Ausgabeinformationen werden zuerst von der Berichtsgruppe und anschließend von den einzelnen Berichten gelesen.
+## <a name="generate-a-financial-report"></a>Finanzbericht generieren
+
+Um einen Finanzbericht mit Microsoft Dynamics 365 for Finance and Operations zu erstellen, gehen sie zu **Hauptbuch** > **Abfragen und Berichte** > **Finanzberichte**. 
+ - Wählen Sie einen Bericht, um den Bericht zu erstellen und klicken Sie auf **Erstellen**. 
+ - Fügen Sie das Feld**Daten berichten**und klicken sie auf **OK**.
+ 
+ Nachdem der Bericht generiert wurde, ist der Bericht verfügbar zum Anzeigen im Abschnitt **Berichte** anzuzeigen.
+ Sie können den Bericht**anzeigen** oder **löschen**.
+ 
+ 
+Um einen Bericht zu generieren, öffnen Sie **Berichtsdesigner**, und klicken Sie anschließend auf die Schaltfläche Generieren in der Symbolleiste. Das Fenster Berichtswarteschlangenstatus wird geöffnet und gibt den Ort des Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
+
+> [!NOTE]
+> Sie können Berichte nur für Ordner und Orte generieren, auf die Sie zugreifen dürfen.
+
+
+## <a name="schedule-report-generation"></a>Planen der Berichtsgenerierung
+Viele Unternehmen verwenden einen Kernsatz von Berichten, die in Einklang mit ihren Geschäftsprozessen in geplanten Intervallen ausgeführt werden. Sie können festlegen, dass ein Bericht regelmäßig generiert wird, beispielsweise täglich, wöchentlich, monatlich oder jährlich. Sie können einen einzelnen Bericht oder eine Gruppe von Berichten, die mehrere Unternehmen umfasst, planen. Für jedes der Unternehmen, die z. B. in einer Berichtsbaumstruktur-Definition angegeben sind, müssen Anmeldeinformationen eingegeben werden. Wenn die Anmeldeinformationen nicht gültig sind, zeigt der Bericht nur die Informationen, für die Sie eine Zugriffsberechtigung haben, beispielsweise für das Unternehmen, bei dem Sie zu dem Zeitpunkt angemeldet sind. Die Ausgabeinformationen werden zuerst von der Berichtsgruppe und anschließend von den einzelnen Berichten gelesen.
 
 Während Berichtszeitpläne erstellt und gespeichert werden, werden diese im Navigationsbereich unter Report Schedules angezeigt. Sie können Ordner zum Organisieren der Berichte erstellen. Wird ein einzelner Bericht in einem Berichtszeitplan nicht ausgeführt, hat dies keinen Einfluss auf die Ausführung aller anderen Berichte.
 

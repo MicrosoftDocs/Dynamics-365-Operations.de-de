@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ef58898a6822224e44873afdd7c55800215c37a0
+ms.sourcegitcommit: ff0d19a2d712ccb17762803e2fe4ab2ed5aa024e
+ms.openlocfilehash: bd5f055ef816f050ed99390c455a613d46dd6323
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/06/2017
 
 ---
 
@@ -74,7 +74,7 @@ In der **Crossdockingrichtlinie** definieren Sie, welche Dokumenttypen für das 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Crossdocking-Richtlinienname: Umlagerungsauftrag
 
 -   Laufende Nummer: 10
--   Arbeitsauftragstyp: Übergangsabgang
+ -   Arbeitsauftragstyp: Übergangsabgang
 -   Crossdockingbedarf erfordert Lagerplatz: Falsch
 -   Crossdockingstrategie: Datum und Uhrzeit
 
@@ -102,10 +102,9 @@ Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es z
 6.  Erstellen Sie einen Umlagerungsauftrag. Erstellen Sie den Umlagerungsauftrag für Artikelnummer L0101. Menge = 20.
 7.  Geben Sie den Umlagerungsauftrag aus der Ladungsplanungsworkbench frei. Auf der Registerkarte **Versenden** wählen Sie die Menüoption für die Ladungsplanungsworkbench und im Menü **Freigabe** der Ladungsposition wählen Sie **Für Lagerort freigeben** aus. Eine offene Serienposition des Typs **Umlagerungsabgang** ist jetzt für den Umlagerungsauftrag vorhanden.
 8.  Erstellen Sie einen Produktionsauftrag. Wechseln Sie zur Listenseite **Produktionsauftrag** und erstellen Sie einen Produktionsauftrag für Produkt L0101. Menge = 20. Schätzen und starten Sie den Produktionsauftrag. Beachten Sie, dass das Felde **Kommissionierliste jetzt buchen** auf **Nein** festgelegt bleibt.
-9.  Vom mobilen Gerät als beendet melden. Wechseln Sie zum Portal für das mobile Gerät wählen Sie die Menüoption **Fertig melden und einlagern** aus. Melden Sie L0101 jetzt vom Handgerät als fertig. Beachten Sie, dass der Einlieferungslagerplatz **BAYDOOR** ist. Dieser Lagerplatz stammt aus der Lagerplatzdirektive **Umlagerungsabgang** für den Arbeitsauftragstyp **Einlagern**. Beachten Sie auch, dass Arbeit des Typs **Übergangsabgang** erstellt und ausgeführt wurde. Wechseln Sie zu den Arbeitsdetails des Umlagerungsauftrags, um die Arbeit zu überprüfen.
-10. Versuchen Sie nun, weitere, 20 Stück zu für den Produktionsauftrag zu beginnen und dann 20 St. als fertig zu melden, indem Sie das tragbare Gerät verwenden. Diesmal wird Lagerplatz **LP-001** als Einlieferungslagerplatz vorgeschlagen. Dieser Lagerplatz stammt aus der Lagerplatzdirektive für **Einlagerung von Fertigerzeugnissen**. Diese Lagerplatzdirektive wird verwendet, da keine Möglichkeit für Crossdocking vorhanden ist. Der Umlagerungsauftrag für LP-001 wurde vollständig von der ersten Crossdockingaktivität erfüllt.
-
-Arbeit vom Typ **Einlagerung von Fertigerzeugnissen** wurde erstellt verarbeitet.
+9.  Vom mobilen Gerät als beendet melden. Wechseln Sie zum Portal für das mobile Gerät wählen Sie die Menüoption **Fertig melden und einlagern** aus. Melden Sie L0101 jetzt vom Handgerät als fertig. Menge = 10. Beachten Sie, dass der Einlieferungslagerplatz **BAYDOOR** ist. Dieser Lagerplatz stammt aus der Lagerplatzdirektive **Umlagerungsabgang** für den Arbeitsauftragstyp **Einlagern**. Beachten Sie auch, dass Arbeit des Typs **Übergangsabgang** erstellt und ausgeführt wurde. Wechseln Sie zu den Arbeitsdetails des Umlagerungsauftrags, um die Arbeit zu überprüfen.
+10. Jetzt über weitere 10 Artikel aus mobilen Geräten berichten. Beachten Sie, dass der Einlieferungslagerplatz wieder **BAYDOOR** ist. Beachten Sie auch, dass ein neuer Arbeitstyps **Übergangsabgang** für 10 Stück erstellt wurde.
+11. Versuchen Sie nun, weitere, 20 Stück zu für den Produktionsauftrag zu beginnen und dann 20 St. als fertig zu melden, indem Sie das tragbare Gerät verwenden. Diesmal wird Lagerplatz **LP-001** als Einlieferungslagerplatz vorgeschlagen. Dieser Lagerplatz stammt aus der Lagerplatzdirektive für **Einlagerung von Fertigerzeugnissen**. Diese Lagerplatzdirektive wird verwendet, da keine Möglichkeit für Crossdocking vorhanden ist. Der Umlagerungsauftrag für LP-001 wurde vollständig von den zwei Crossdockingaktivitäten in Schritt 9 und 10 erfüllt. Beachten Sie, dass Arbeit vom Typ **Einlagerung von Fertigerzeugnissen** erstellt und verarbeitet wurde.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Szenario 2 - Crossdocking aus der Produktion zu Umlagerungsaufträgen mit einer Terminplanung
 
@@ -123,7 +122,7 @@ Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es a
 
 ### <a name="additional-information"></a>Weitere Informationen
 
--   Das Crossdockingszenario wird für Chargen- und seriengesteuerte Artikel unterstützt. Die Chargen- und Seriennummerdimensionen über und unter dem Lagerplatz in der Reservierungshierarchie sind definiert.
+-   Das Crossdockingszenario wird für Chargen- und seriengesteuerte Artikel unterstützt. Die Chargen- und Seriennummerdimensionen über und unter dem Lagerplatz in der Reservierungshierarchie sind definiert. 
 
 
 

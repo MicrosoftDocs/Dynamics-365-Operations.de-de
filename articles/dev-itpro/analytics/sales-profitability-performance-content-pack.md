@@ -3,7 +3,7 @@ title: "Vertriebs-und Rentabilitätsleistungsinhalt für Power BI"
 description: "In diesem Thema wird beschrieben, was im Umsatz- und Rentabilitätsleistung Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3692b9be0fb93e0e2de743775a54bb9c9dbf5809
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: c065eb2f19bbbd553e070f06c29f73114e3efad5
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ Rentabilität kann auf folgende Arten analysiert werden:
 -   Debitorenrentabilität (nach Umsatz gegen Bruttogewinn)
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017) verwenden, wird der Power BI Inhalt **Vertrieb und Rentabilitätsleistung** auf der Seite **Vertrieb und Rentabilitätsleistung** (**Vertrieb und Marketing** > **Abfragen und Berichte** > **Vertriebsleistungsanalyse** > **Vertrieb und Rentabilitätsleistung**) angezeigt. 
+Der **Vertrieb und Rentabilitätsleistung** Power BI-Inhalt wird auf der **Vertrieb und Rentabilitätsleistung** angezeigt (**Vertrieb und Marketing** > **Abfragen und Berichte** > **Vertriebsleistungsanalyse** > **Vertrieb und Rentabilitätsleistung**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 Der Power BI Inhalt **Umsatz- und Rentabilitätsleistung** enthält einen Bericht, der aus einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspaket.

@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 61395e0e57eb02aaa1c95a7dbd9c15082b822701
-ms.openlocfilehash: 15992b1666caea21cdcf440fefcf65ff18111801
+ms.sourcegitcommit: 855967a9aacd4881315c5d5fefa06b909cd4cb59
+ms.openlocfilehash: 69151ed1c0a0a06e72bbdc8b33eb2fc68e9cc8eb
 ms.contentlocale: de-de
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/28/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Landing Page für die lokale Bereitstellung
@@ -30,14 +30,13 @@ ms.lasthandoff: 10/05/2017
 
 Sie können Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, bereitstellen (lokal). Wenn Sie eine lokale Bereitstellungsform auswählen, unterscheiden sich die Systemanforderungen, die Hardwareauslegung und die Funktionalität von einer Cloud-Bereitstellung. Dieses Thema bietet Links zu Inhalten mit Informationen speziell zu lokalen Bereitstellungen.
 
-**Hinweis:** Dynamics 365 for Operations (lokal) wird derzeit umbenannt. In Mitteilungen und Lizenzanleitungen sehen Sie überall Dynamics 365 for Operations (lokal). Der Produktname, den Sie bei der Bereitstellung des Produkts sehen, lautet Dynamics 365 for Finance and Operations, Enterprise edition. Beide Namen beziehen sich auf dasselbe Produkt.
-
 ## <a name="get-started"></a>Erste Schritte
-- [Dynamics 365 for Finance and Operations, Enterprise edition (lokal) – Überblick](on-premises-overview.md)
+- [Dynamics 365 for Finance and Operations, Enterprise-Edition (lokal) – Überblick](on-premises-overview.md)
 - [Systemanforderungen für On-Premises-Bereitstellungen](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Hardwarekalkulation für lokale Umgebungen](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Lifecycle-Richtlinien für Onlinedienst und lokale Software](../migration-upgrade/versions-update-policy.md)
-- [Dynamics 365 for Finance and Operations, Enterprise edition (lokal) kaufen](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Dynamics 365 for Finance and Operations, Enterprise-Edition (lokal) kaufen](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Vergleich von Cloudfunktionen und lokalen Funktionen](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
 - [Lokales Projekt in Lifecycle Services erstellen](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
@@ -51,9 +50,12 @@ Sie können Microsoft Dynamics 365 for Finance and Operations, Enterprise editio
 - [Funktionalitäten zum Generieren, Veröffentlichen und Drucken von Dokumenten in lokalen Bereitstellungen](../analytics/printing-capabilities-on-premises.md)
 - [Technischen Support einrichten](../lifecycle-services/support-experience.md)
 - [Fehlersuche für die Internetverbindung von Clients](../user-interface/client-disconnected.md)
+- [Updates auf eine lokale Bereitstellung anwenden](apply-updates-on-premises.md)
+- [Lokale Bereitstellung erneut bereitstellen](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>Weitere Ressourcen
 - [Funktionen, die in lokalen Bereitstellungen nicht implementiert sind](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Veraltete Funktionen](../migration-upgrade/deprecated-features.md)
+- [Software-Lebenszyklusrichtlinie und Liste der Versionen](../migration-upgrade/versions-update-policy.md)
  
 

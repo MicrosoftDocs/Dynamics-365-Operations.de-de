@@ -3,7 +3,7 @@ title: Einkaufausgabenanalyse Power BI-Inhalt
 description: "In diesem Thema wird beschrieben, was im Einkaufs- und Ausgabenanalyse Power Bl Inhalt enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6485f36802fc4e327e223f47d65c4bdca11c1609
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f38f82b4275599a6b958c495f32b72778b400024
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ Der **Einkaufs- und Ausgabenanalyse** Power BI Inhalt wurde entworfen, um Einkau
 Es verwendet Transaktionsdaten und stellt eine Gesamtübersicht zu unternehmensweiten Umsatzahlen und eine Aufschlüsselung des Einkaufsergebnisses für Debitoren und Produkte zur Verfügung. Berichte zeigen Änderungen im Einkauf, der im Zeitverlauf aufwendet. Daher kann der Bericht dazu verwendet werden, um Manager über die positiven und negativen Ausgabentrends für einzelne Kreditoren und Produkten zu warnen. Diagramme zeigen zusätzlich Einkaufsausgaben für unterschiedliche Beschaffungskategorien und Kreditorengruppen an. Deshalb können Kategorie- und Regional-Manager die Diagramme nutzen, um Änderungen im Ausgabenverhalten zu identifizieren.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017), nutzen, wird der Power BI-Inhalt **Einkaufs- und Ausgabenanalyse** auf der Seite für **Einkaufs- und Ausgabenanalyse** (**Beschaffung** > **Abfragen und Berichte** > **Einkaufleistungsanalyse** > **Einkaufs- und Ausgabenanalyse**) angezeigt. 
+Der **Einkaufausgabenanalyse** Poper BI-Inhalt wird auf der **Einkauf und Ausgabenanalyse** angezeigt (**Beschaffung** > **Abfragen und Berichte** > **Einkaufleistungsanalyse** > **Einkauf und Ausgabenanalyse**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 Der Power BI Inhalt **Einkaufsausgabenanalyse** enthält einen Bericht, der aus einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Liste bietet eine Übersicht über die Visualisierungen.

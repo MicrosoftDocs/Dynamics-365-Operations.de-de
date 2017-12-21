@@ -3,7 +3,7 @@ title: "Power BI-Inhalt – Mitarbeiterentwicklung"
 description: "In diesem Thema wird der Microsoft Power BI-Inhalt Mitarbeiterentwicklung beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c6a1125d56239f4370d6219a93988d50d402045e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Thema wird der Microsoft Power BI-Inhalt **Mitarbeiterentwicklung** be
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
 
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Juli 2017) verwenden, können Sie das **Mitarbeiterentwicklung**-Inhaltspaket in der freigegebenen Anlagenbibliothek in Microsoft Dynamics Lifecycle Services (LCS) suchen. Weitere Informationen dazu, wie das Inhaltspaket herunterladen und mit Ihren Daten verbinden, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
+Sie finden das **Mitarbeiter-Bereitstellungs**inhaltspaket in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie das Inhaltspaket herunterladen und mit Ihren Daten verbinden, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
 Die Berichte, die im Power BI-Inhalt **Mitarbeiterentwicklung** enthalten sind, enthalten Diagramme und Tabellen, die zusätzliche Informationen. Die Berichte werden in der folgenden Tabelle näher erläutert.

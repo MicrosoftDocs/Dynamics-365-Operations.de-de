@@ -3,7 +3,7 @@ title: Warehouse Performance Power BI Inhalt
 description: "In diesem Thema wird beschrieben, was im Warehouse Performance Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: Mirzaab
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30a14e78e35c94b9f8945d2fcc973f921698953
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Lagerortverwaltung kann den Power PI Inhalt **Lagerortleistung** verwenden, um d
 -   **Lagerplatzbestandsrichtigkeit** – Bestandsrichtigkeit ist eine wichtige interne Lagerort-Business Intelligence (BI). Es ist außerordentlich wichtig, dass Sie bestimmen, wie genau Sie im Allgemeinen zählen. Es ist allerdings auch wichtig, dass Sie bestimmen, wie genau Sie Artikel an den richtigen Lagerplätzen speichern und dass Sie Abweichungsdaten markieren, damit Sie eine Position für Artikel oder eine eingeleitete gesamte Inventur für bestimmte Artikel suchen können. (Aktuell wird die neue elementbasierte Inventurfunktion als Hotfix geliefert.) Wenn Sie diesen Power BI Inhalt verwenden, um die Korrektheit der verfügbaren Lagerbestanddaten pro Standort zu bestimmen, können Sie auch Diebstähle in Ihren Geschäften identifizieren. Sie können außerdem bestimmen, ob Lagerplätze verfügbare Mengen haben, die von den Enterprise Ressourcenplanungsdaten (ERP) abweichen. Diese Lagerplätze sind möglicherweise zu groß, oder sie können möglicherweise nicht gezählt werden. Alternativ könnten einige physische Positionen ungültig sein, damit ist es schwierig, einen einzelnen Artikeltyp in Einklang mit verfügbaren Daten zu halten.
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Zugreifen auf Power BI Inhaltspaket
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017), verwenden, wird der Power BI-Inhalt **Lagerortleistung** auf der Seite **Lagerortleistung** (**Lagerortverwaltung** > **Abfragen und Berichte** > **Lagerortleistungsanalyse** > **Lagerortleistung**) angezeigt. 
+Die **Lagerhausleistung** Power BI-Inhalt wird in der **Lagerhausleistung** angezeigt (**Lagerhausverwaltung** > **Abfragen und Berichte** > **Produktionsleistungsanalyse** > **Lagerhausfluss**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 Die **Lagerortleistung** Power BI Inhalt enthält einen Bericht. Dieser Bericht enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im **Lagerortleistung** Power Bl Inhalt.

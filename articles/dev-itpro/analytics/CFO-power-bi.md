@@ -3,7 +3,7 @@ title: "Power BI-Inhalt – Überblick (Leiter der Finanzabteilung)"
 description: "In diesem Thema wird der Inhalt des Microsoft Power BI-Überblick (Leiters der Finanzabteilung) beschrieben."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e08277850d36804e3d4508b87547d2c819e2faf3
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ In diesem Thema wird der Inhalt des Microsoft Power BI-**Überblick (Leiters der
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
 
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Juli 2017) verwenden, wird der Power BI-Inhalt **Überblick (Leiter der Finanzabteilung)** im Arbeitsbereich **Überblick (Leiter der Finanzabteilung)** angezeigt.
+Berichte im **CFO-Überblick** im Power BI-Inhalt werden im **CFO-Überblick** angezeigt.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
 Der **Überblick (Leiter der Finanzabteilung)** Power BI-Inhalt ist eine Kombination von Berichten aus unterschiedlichem Power BI-Inhalten und einigen tatsächlichen und Budget-Salten aus dem Hauptbuch. Daher bietet dieser Power BI dem Leiter der Finanzabteilung (CFO) einen Überblick über die Organisation.

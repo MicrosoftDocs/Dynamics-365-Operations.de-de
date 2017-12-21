@@ -3,7 +3,7 @@ title: "Anforderung für Verbrauch erstellen"
 description: Diese Prozedur zeigt Ihnen, wie Sie einen Kreditbrief importieren.
 author: mkirknel
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 55ef4b1757a6f3c28c8575412d66488fda8608a5
+ms.sourcegitcommit: 7d8ca4e7eedea140f32e264c205b243027a06d03
+ms.openlocfilehash: d1ea95d0bc283297fcedaee730e1829850f07998
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 # <a name="create-a-requisition-for-consumption"></a>Anforderung für Verbrauch erstellen
@@ -89,7 +89,7 @@ Diese Prozedur zeigt Ihnen, wie Sie einen Kreditbrief importieren. Sie erfahren 
 3. Klicken Sie zum Erstellen einer neuen Verteilungsposition auf Teilen.
 4. Wählen Sie im Feld Sachkonto wählen Sie die erste Kostenstelle, die von den Kosten teilnehmen soll.
 5. Löschen Sie die ausgewählte Verteilungsposition.
-6. Geben Sie im Feld "Konto für Sachkontobuchungen" die andere Kostenstelle an.
+6. Geben Sie im Feld "Konto für Sachkontobuchungen" die gewünschten Werte an.
 7. Gleichmäßig verteilen
 8. Schließen Sie die Seite.
 

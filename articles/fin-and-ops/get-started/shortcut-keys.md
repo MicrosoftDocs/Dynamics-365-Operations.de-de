@@ -3,7 +3,7 @@ title: Tastenkombinationen
 description: "In Dynamics 365 for Finance and Operations, Enterprise Edition, stehen überall die folgenden Tastenkombinationen zur Verfügung."
 author: jasongre
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 39ffbe81c0cc9ecb3f91f791442bfd27231a0516
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -34,10 +34,14 @@ In Dynamics 365 for Finance and Operations, Enterprise Edition, stehen überall 
 
 **Hinweis:** Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
 
+## <a name="finding-a-shorcut"></a>Eine Tastenkombination suchen
+Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombinationen direkt über die Benutzeroberfläche ermitteln. Klicken Sie einfach auf einem Steuerelement mit der rechten Maustaste und wählen Sie **Tastenkombinationen anzeigen** aus. Daraufhin wird ein Dialogfeld geöffnet, welches die Tastenkombinationen anzeigt, die Sie verwenden können, basierend darauf, wo Sie auf der Seite sind. 
+
+
 ## <a name="action-shortcuts"></a>Aktivitätskürzel
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
-| **Ergebnis**                                    | **Taste(n)**                        |
+| **Aktion**                                    | **Taste(n)**                        |
 | Aktivitätssuche öffnen                                | STRG+’ oder ALT+Q                  |
 | Zum Standardaktivitätsbereich wechseln                  | ALT+M,A oder STRG+F6               |
 | Öffnen einer Registerkarte im Aktivitätsbereich oder einem Menü           | Eingabe oder Leertaste oder ALT+NACH-UNTEN-TASTE |
@@ -48,13 +52,14 @@ In Dynamics 365 for Finance and Operations, Enterprise Edition, stehen überall 
 | Ausführen der Standardschaltfläche in einem Formular/in einem Dialogfeld   | ALT+EINGABETASTE                        |
 | Auf eine Schaltfläche oder Kachel klicken                            | EINGABETASTE oder LEERTASTE                   |
 | Aktualisierungsinformationen für eine Anzahlkachel anzeigen         | ALT+NACH-OBEN-TASTE                     |
+| Zurzeit verfügbare Tastenkombinationen anzeigen                | ALT+UMSCHALT+ K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Datumsauswahlverknüpfungen
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Aktion**                        | **Taste(n)**                                 |
 | Die Datumsauswahl öffnen                  | ALT+NACH-UNTEN-TASTE                            |
-| Zwischen Daten in der Datumsauswahl wechseln | STRG+Pfeiltasten                               |
+| Zwischen Daten in der Datumsauswahl wechseln | STRG+Pfeiltasten                           |
 | Zum nächsten/vorherigen Monat wechseln       | BILD-AB / BILD-AUF                       |
 | Zum nächsten/vorherigen Jahr wechseln        | STRG+UMSCHALT+BILD-AB / STRG+UMSCHALT+BILD-AUF |
 | Nach heute wechseln                         | STRG+POS1                                 |
@@ -65,6 +70,7 @@ In Dynamics 365 for Finance and Operations, Enterprise Edition, stehen überall 
 ## <a name="factbox-shortcuts"></a>Infoboxverknüpfungen
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
+| **Aktion**                                                                  | **Taste(n)**                                 |
 | Öffnen des Infoboxbereichs (oder Verschieben des Fokus zum Infoboxbereich, wenn bereits offen ist) | ALT+M,B oder STRG+F2                        |
 | Schließen des Infoboxbereichs (mit Fokus im Infoboxbereich)                         | ESC                                       |
 | Zur nächsten/vorherigen Infobox (mit Fokus im Infoboxbereich) wechseln              | ALT+UMSCHALT+NACH-UNTEN-TASTE / ALT+UMSCHALT+NACH-OBEN-TASTE |
