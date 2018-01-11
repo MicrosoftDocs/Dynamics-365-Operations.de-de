@@ -3,7 +3,7 @@ title: "Arbeitsbereich für die Bankverwaltung"
 description: "Dieses Thema enthält Informationen zum Bankwesen-Arbeitsbereich. Der Arbeitsbereich zeigt Informationen hinsichtlich der Bankkonten des Unternehmens und enthält eine Zusammenfassungsansicht und eine Analyseseite. Die Zusammenfassungsansicht zeigt Übersichtskacheln, Bankkontoinformationen, ein Saldodiagramm und zugehörige Informationen an. Die Analyseseite verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Bankkontosalden anzuzeigen."
 author: saraschi2
 manager: AnnBe
-ms.date: 05/25/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
