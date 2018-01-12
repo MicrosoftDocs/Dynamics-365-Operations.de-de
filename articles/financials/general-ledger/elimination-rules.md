@@ -3,14 +3,14 @@ title: "Löschungsregeln"
 description: "Dieser Artikel enthält Informationen zu Löschungsregeln und die verschiedenen Optionen für die Berichterstellung zu Löschungen."
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerEliminationRule
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 818572a8d1f790aaa7c6e4befc1d2222a1c35c50
+ms.sourcegitcommit: 47336a19899b1fad0e63265173fd7fd02fc74ec3
+ms.openlocfilehash: 2a0897bd80a508474be384e8086ca47dd9de7efb
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/12/2018
 
 ---
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="55acd-182">Nachdem Sie die Grundlagen definiert haben, können Sie die tatsächlichen Verarbeitungsregeln definieren, indem Sie **Positionen** anklicken.</span><span class="sxs-lookup"><span data-stu-id="55acd-182">After you have defined the basics, you can define the actual processing rules by clicking **Lines**.</span></span> <span data-ttu-id="55acd-183">Es gibt zwei Optionen für Löschungen, nämlich den Nettoveränderungsbetrag eliminieren oder einen festen Betrag definieren.</span><span class="sxs-lookup"><span data-stu-id="55acd-183">There are two options for eliminations, eliminating the net change amount or defining a fixed amount.</span></span> 
 
-<span data-ttu-id="55acd-184">Wählen Sie Ihr Quellkonto aus.</span><span class="sxs-lookup"><span data-stu-id="55acd-184">Select your source account.</span></span> <span data-ttu-id="55acd-185">Sie können Platzhalter wie Sternchen wie einen (\*) verwenden.</span><span class="sxs-lookup"><span data-stu-id="55acd-185">You can use an asterisk (\*) as a wild card.</span></span> <span data-ttu-id="55acd-186">Im Beispiel würde 1\* alle Konten auswählen, die mit 1 als Quelle für die Zuordnung der Daten beginnen.</span><span class="sxs-lookup"><span data-stu-id="55acd-186">For example, 1\* would select all accounts that start with a 1 as a source of data for the allocation.</span></span> 
+<span data-ttu-id="55acd-184">Wählen Sie Ihr Quellkonto aus.</span><span class="sxs-lookup"><span data-stu-id="55acd-184">Select your source account.</span></span> <span data-ttu-id="55acd-185">Sie können Platzhalter wie Sternchen wie einen (\\*) verwenden.</span><span class="sxs-lookup"><span data-stu-id="55acd-185">You can use an asterisk (\\*) as a wild card.</span></span> <span data-ttu-id="55acd-186">Im Beispiel würde 1\\* alle Konten auswählen, die mit 1 als Quelle für die Zuordnung der Daten beginnen.</span><span class="sxs-lookup"><span data-stu-id="55acd-186">For example, 1\\* would select all accounts that start with a 1 as a source of data for the allocation.</span></span> 
 
 <span data-ttu-id="55acd-187">Nachdem Sie Ihre Quellkonten ausgewählt haben, bestimmen die **Kontospezifikation** das Konto vom Zielunternehmen, das verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="55acd-187">After you have selected your source accounts, the **Account specification** determines the account from the destination company that is used.</span></span> <span data-ttu-id="55acd-188">Wählen Sie **Quelle** aus, wenn Sie dasselbe Hauptkonto verwendet werden soll, das im Konto **Quelle** definiert ist.</span><span class="sxs-lookup"><span data-stu-id="55acd-188">Select **Source** if you want to use the same main account defined in the **Source** account.</span></span> <span data-ttu-id="55acd-189">Wenn Sie auswählen **Benutzerdefiniert** auswählen, dann müssen Sie ein Zielkonto angeben.</span><span class="sxs-lookup"><span data-stu-id="55acd-189">If you select **User defined**, then you must specify a destination account.</span></span> 
 
