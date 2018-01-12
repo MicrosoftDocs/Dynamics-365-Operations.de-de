@@ -3,13 +3,13 @@ title: Finanzberichte anzeigen
 description: "In diesem Artikel wird beschrieben, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, untersucht und angezeigt werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern."
 author: kweekley
 manager: AnnBe
-ms.date: 06/08/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
