@@ -3,7 +3,7 @@ title: Akkreditive
 description: "Kreditbriefe sind Bankdokumente, die häufig für den Einkauf und Verkauf im internationalen Warenverkehr verwendet werden."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

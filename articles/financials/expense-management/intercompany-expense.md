@@ -3,7 +3,7 @@ title: Intercompany-Ausgaben
 description: "Eine Arbeitskraft, die von einer juristischen Personen in einer Organisation beschäftigt wird, kann möglicherweise Arbeit für eine andere juristische Person in derselben Organisation ausführen. In diesem Fall können Sie die Intercompany-Ausgabenfunktion verwenden, um die Ausgaben der Arbeitskraft der juristischen Person zuzuweisen, für die die Arbeit ausgeführt wurde."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Spesenverwaltungsparameter
 description: Die folgenden Parameter steuern das Verhalten in der Spesenverwaltung.
 author: KimANelson
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Einrichten von Wechseln
 description: In diesem Thema werden die Schritte zum Einrichten von Wechseln.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
