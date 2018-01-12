@@ -3,7 +3,7 @@ title: "Standardgegenkonten für Kreditorenrechnungserfassungen und Rechnungsgen
 description: "Dieses Thema hilft Ihnen, zu entscheiden, wohin Standardkonten für Rechnungserfassungen zugewiesen werden sollten."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
