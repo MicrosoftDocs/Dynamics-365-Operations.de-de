@@ -44,6 +44,7 @@
 ## [Einzelhandelszeit und Anwesenheit](retail-time-attendance.md)
 
 # Moderne Verkaufsstellen (Modern Point of Sale, MPOS) und Cloud POS
+## [Zwischen modernem POS und Cloud POS wählen](MPOS-or-CPOS.md)
 ## [POS-Vorgänge](POS-operations.md)
 ## [Demodaten-Bildschirmlayouts in MPOS/CPOS](demo-data.md)
 ## Hardwareperipheriegeräte
@@ -76,6 +77,11 @@
 ### [Lieferungsvorlagen einrichten](receipt-templates-printing.md) 
 ### [E-Mail-Zugänge von MPOS senden](email-receipts.md)
 ## [Aufgabenaufzeichnung und Hilfe für POS](task-recorder-retail-pos.md)
+
+# Auftragserfüllung
+## [Überblick über Shopauftragerfüllung](Order-fulfillment-overview.md)
+## [Erfüllung im Shop einrichten](Order-fulfillment-POS-setup.md)
+## [Benachrichtigungen in der Verkaufsstelle aktivieren](Notifications-POS.md)
 
 # Überwachung und Analyse
 ## [Verkaufs- und Margenleistung überwachen](monitor-sales-margin-performance.md)
@@ -258,8 +264,10 @@
 ### [Benutzerdefinierte Steuerelemente zu Retail Modern POS-Transaktionsseiten hinzufügen](dev-itpro/pos-custom-transaction.md)
 ### [Hinzufügen von benutzerdefinierten Spalten zu einem POS-Transaktionsraster](dev-itpro/pos-custom-transaction-column.md)
 ### [POS-API oder -Vorgang von POS-Erweiterung aus aufrufen](dev-itpro/pos-api-extension.md)
-### [Vorhandene POS-Ansichten erweitern, um benutzerdefinierte Spalten und App-Leistenschaltflächen hinzuzufügen](dev-itpro/pos-view-extension.md)
 ### [Auslöser und Drucken in Retail Modern POS](dev-itpro/pos-trigger-printing.md)
+### [Einer bildschirmlosen designerbasierten Retail Modern POS-Ansicht ein benutzerdefiniertes Steuerelement hinzufügen](dev-itpro/pos-control-non-screen.md)
+### [Einzelhandelsproxy für POS und E-Commerce generieren](dev-itpro/pos-generate-retail-proxy.md)
+### [Konfigurationsschritte für Einzelhandelsentwickler, die mit in der Cloud gehosteten Entwicklungsfeldern arbeiten](dev-itpro/cloud-dev-box.md)
 
 ## Commerce-Laufzeit
 ### [Treueerweiterung](dev-itpro/retail-sdk/loyalty-extension-sample.md)

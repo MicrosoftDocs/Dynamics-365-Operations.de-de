@@ -2,6 +2,7 @@
 # [Systemanforderungen für Cloudbereitstellungen](../fin-and-ops/get-started/system-requirements.md)
 # [Systemanforderungen für lokale Bereitstellungen](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [Demodaten](../fin-and-ops/get-started/demo-data.md)
+## [Demodaten mit Paketen generieren](data-entities/generate-demo-data-packages.md)
 
 
 # [Entwickeln und Anpassen mit Visual Studio](dev-tools/developer-home-page.md)
@@ -362,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [Benutzerdefinierte Dienste](data-entities/custom-services.md)
 ### [Wiederkehrende Integrationen](data-entities/recurring-integrations.md)
+### [Hilfsprogramme für Dienstleistungstests von Drittanbietern mit Diensten verwenden](data-entities/third-party-service-test.md)
 
 ## Entwicklung für die Integration
 ### [Datenintegration mithilfe von Datenentitäten](data-entities/data-management-integration-data-entity.md)
@@ -396,6 +398,7 @@
 ### [Konfigurationsdatenpakete](data-entities/configuration-data-packages.md)
 ### [Konfigurationsdaten zwischen Unternehmen kopieren](data-entities/copy-configuration.md)
 ### [Konfigurationsdatenvorlagen](data-entities/configuration-data-templates.md)
+### [Datenvorlagen mit mehreren Arbeitsblättern](data-entities/excel-template-multiple.md)
 ### [Änderungen bei einer Entität nachverfolgen](data-entities/entity-change-track.md)
 
 ## Standarddatenentitäten
@@ -499,15 +502,18 @@
 ### [Azure Ressourcen-Manager – Onboarding](deployment/arm-onboarding.md)
 ### [Azure ExpressRoute und Dynamics 365 for Finance and Operations, Enterprise Edition](deployment/expressroute.md)
 
-## [Lokale Bereitstellung](deployment/on-premises-deployment-landing-page.md)
-### [Lokal – Überblick](deployment/on-premises-overview.md)
+## [On-premises-Bereitstellung](deployment/on-premises-deployment-landing-page.md)
+### [On-premises – Überblick](deployment/on-premises-overview.md)
+### [Planung Ihrer On-premises-Bereitstellung](deployment/plan-onprem-deployment.md)
 ### [Hardwaregrößenanpassung](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Ein lokales Projekt erstellen](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Lokale Umgebungen einrichten und bereitstellen](deployment/setup-deploy-on-premises-environments.md)
 ### [Angepasste Modelle für lokale Umgebungen entwickeln und bereitstellen](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Updates auf eine lokale Bereitstellung anwenden](deployment/apply-updates-on-premises.md)
 ### [Lokale Bereitstellung erneut bereitstellen](deployment/redeploy-on-prem.md)
-### [Probleme bei Dynamics 365 for Finance and Operations, Enterprise-Edition (lokal), behandeln](deployment/troubleshoot-on-prem.md)
+### [Den lokalen Agenten aktualisieren](lifecycle-services/update-local-agent.md)
+### [Ihre Umgebung neu konfigurieren](lifecycle-services/reconfigure-environment.md)
+### [Probleme bei Dynamics 365 for Finance and Operations, Enterprise Edition (on-premises), behandeln](deployment/troubleshoot-on-prem.md)
 
 ## Benutzerdefinierten Code erstellen
 ### [Ein bereitstellbares Paket erstellen](deployment/create-apply-deployable-package.md)
