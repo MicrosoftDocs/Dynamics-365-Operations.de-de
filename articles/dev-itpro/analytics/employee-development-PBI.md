@@ -1,9 +1,9 @@
 ---
 title: "Power BI-Inhalt – Mitarbeiterentwicklung"
-description: "In diesem Thema wird der Microsoft Power BI-Inhalt Mitarbeiterentwicklung beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+description: In diesem Thema wird der Microsoft Power BI-Inhalt Mitarbeiterentwicklung beschrieben.
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 99ae772f3a7fe9ad274a46398a577ad96f18e251
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -27,11 +27,7 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema wird der Microsoft Power BI-Inhalt **Mitarbeiterentwicklung** beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
-
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-
-Sie finden das **Mitarbeiter-Bereitstellungs**inhaltspaket in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie das Inhaltspaket herunterladen und mit Ihren Daten verbinden, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md).
+In diesem Thema wird der Microsoft Power BI-Inhalt **Mitarbeiterentwicklung** beschrieben.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
 Die Berichte, die im Power BI-Inhalt **Mitarbeiterentwicklung** enthalten sind, enthalten Diagramme und Tabellen, die zusätzliche Informationen. Die Berichte werden in der folgenden Tabelle näher erläutert.
@@ -74,5 +70,4 @@ Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und a
 | Leistung              | Bewertung, Beschreibung und Bewertungsmodell                                                                      | Aktueller Mitarbeiter, aktuelle Position, Mitarbeitertrend, bevorzugte Stellenfähigkeiten, vergangene Positionszuweisung, Positionstrend, ausgeschiedener Mitarbeiter |
 |  Qualifikation                   | Qualifikation, Fähigkeitstyp und Bewertung                                                                              | Mitarbeiterfähigkeitsanalyse, bevorzugte Stellenfähigkeit |                                                                                                                        
 
-Diese Entitäten wurden verwendet, um berechnete Messungen im Datenmodell zu erstellen. Diese berechneten Messungen werden dann verwendet, um die Messdaten (KPIs) und Berichte zu erstellen, die im Power BI-Inhalt verwendet werden. Wenn Sie zusätzliche Berechnungen in Ihren Berichten und Dashboard einbeziehen möchten, können Sie die PBIX-Datei von LCS herunterladen und bearbeiten. Diese Datei ist das Standarddatenmodell, das verwendet wurde, um den Power BI-Inhalt zu erstellen. Nachdem Sie die Änderungen vorgenommen haben, können Sie ein Organisations-Inhaltspaket und ein Dashboard erstellen, die die von Ihnen hinzugefügten Informationen enthalten.
 
