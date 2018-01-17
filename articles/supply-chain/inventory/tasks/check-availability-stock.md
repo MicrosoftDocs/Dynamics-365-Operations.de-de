@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: de-de
 ms.lasthandoff: 09/29/2017
 
 ---
-# Überprüfung der Bestandsverfügbarkeit
+# <a name="check-the-availability-of-stock"></a>Überprüfung der Bestandsverfügbarkeit
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lagerbestand für eine bestimmte Artikelnummer überprüfen. Darüber hinaus zeigt sie Ihnen, wie Sie Lieferinformationen zu einem Artikel abrufen. Physischer, verfügbare Lagerbestand ist der verfügbare Lagerbestand, der verfügbar ist – d. h. er ist gekauft, empfangen und erfasst worden. Der verfügbare Lagerbestand umfasst den verfügbaren Lagerbestand, aber auch den Lagerbestand, der bestellt wurde und erwartet wird, der aber noch nicht empfangen oder erfasst wurde. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie USMF verwenden, können Sie die Beispielswerte verwenden, die angezeigt werden. Diese Aufgaben werden normalerweise von einer Lagerarbeitskraft ausgeführt.
 
 
-## Verfügbaren Lagerbestand für einen Artikel überprüfen
+## <a name="check-on-hand-inventory-for-an-item"></a>Verfügbaren Lagerbestand für einen Artikel überprüfen
 1. Wechseln Sie zu "Lagerverwaltung" > "Abfragen und Berichte" > "Verfügbarer Lagerbestand".
 2. Wählen Sie die "Artikelnummerzeile" aus.
     * Um den verfügbaren Lagerbestand nach Artikelnummer abzufragen, wählen Sie die Zeile aus, in der die "Tabelle" auf "Verfügbarer Lagerbestand" und "Feld" auf "Artikelnummer" festgelegt ist.  
@@ -49,7 +49,7 @@ Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lager
 11. Schließen Sie die Seite.
 12. Schließen Sie die Seite.
 
-## Physischen Lagerbestand überprüfen
+## <a name="check-physical-on-hand-inventory"></a>Physischen Lagerbestand überprüfen
 1. Wechseln Sie zu "Lagerortverwaltung" > "Abfragen und Berichte" > "Physischer Lagerbestand".
 2. Geben Sie im Feld "Artikelnummer" einen Wert ein.
     * Sie können die Felder "Standort" und "Lagerort" verwenden, um die Liste der Artikel zu filtern.  
@@ -59,7 +59,7 @@ Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lager
 5. Klicken Sie auf "OK".
 6. Schließen Sie die Seite.
 
-## Verfügbaren Lagerbestand nach Lagerplatz überprüfen
+## <a name="check-on-hand-inventory-by-location"></a>Verfügbaren Lagerbestand nach Lagerplatz überprüfen
 1. Wechseln Sie zu "Lagerortverwaltung" > "Abfragen und Berichte" > "Verfügbar nach Lagerplatz".
 2. Geben Sie im Feld "Lagerort" einen Wert ein.
     * Wenn Sie das USMF-Demodatunternehmen verwenden, können Sie "51 " verwenden.  

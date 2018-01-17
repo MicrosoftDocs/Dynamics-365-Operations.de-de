@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: de-de
 ms.lasthandoff: 09/29/2017
 
 ---
-# Bestandswerte im Lagerort anpassen (grundlegendes Warehousing)
+# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Bestandswerte im Lagerort anpassen (grundlegendes Warehousing)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Buchens einer Lagerregulierungserfassung, um Bestandswerte von Produkten im Lagerort anzupassen. Sie müssen einen Lagererfassungnamen für die Bestandsregulierungen haben, bevor Sie diese starten. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Diese Aufgaben werden normalerweise von einem Lagerortmitarbeiter ausgeführt.
 
 
-## Lagerregulierungserfassung erstellen
+## <a name="create-an-inventory-adjustment-journal"></a>Lagerregulierungserfassung erstellen
 1. Wechseln Sie zu Lagerverwaltung > Journaleinträge > Artikel > Lagerregulierung.
 2. Klicken Sie auf "Neu".
 3. Klicken Sie im Feld "Name" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
@@ -38,7 +38,7 @@ Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Bu
     * Einige andere Felder werden basierend auf den Einstellungen der Lagerregulierungserfassung ausgefüllt, die Sie auswählen.  
 5. Klicken Sie auf "OK".
 
-## Erfassungspositionen erstellen
+## <a name="create-journal-lines"></a>Erfassungspositionen erstellen
 1. Klicken Sie auf "Neu".
 2. Markieren Sie das Feld "Artikelnummer" in der Liste.
 3. Wählen Sie im Feld "Artikelnummer" einen Artikel aus. Wenn Sie das Demodatunternehmen USMF verwenden, geben Sie " D0001" ein.
@@ -50,7 +50,7 @@ Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Bu
 8. Geben Sie im Feld "Menge" eine Zahl ein.
     * Der Einstandspreis legt die Kosten pro Einheit für Lagerzugänge fest. Wenn keine Kosten für die Artikelnummer angegeben sind oder diese manuell geändert werden sollen, geben Sie sie hier ein.  
 
-## Lagerregulierungserfassung prüfen und buchen
+## <a name="validate-and-post-the-inventory-adjustment-journal"></a>Lagerregulierungserfassung prüfen und buchen
 1. Klicken Sie auf "Überprüfen".
 2. Klicken Sie auf "OK".
 3. Klicken Sie auf "Buchen".
