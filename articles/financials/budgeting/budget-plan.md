@@ -3,11 +3,12 @@ title: Budgetplanung
 description: "Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierten Funktionen in der Enterprise- Edition des Microsoft Dynamics 365 for Finance and Operations-Budgetplanbereichs bereitzustellen. Ziel dieser Übungseinheit ist es, ein schnelles Konfigurationsbeispiel für das Budgetplanungsmodul zu illustrieren und zu zeigen, wie die Budgetplanung mithilfe dieser Konfiguration erstellt werden kann.  Diese Übungseinheit bezieht sich speziell auf die folgenden Geschäftsprozesse oder Aufgaben: - Organisationshierarchie für Budgetplanung erstellen und Benutzersicherheit konfigurieren - Haushaltsplanszenarien, Haushaltsplanspalten, Layouts und Excel-Vorlagen definieren - Budgetplanungsprozess erstellen und aktivieren - Budgetplandokumente mithilfe von aktuellen Daten aus dem Hauptbuch erstellen - mithilfe der Zuweisungen Budgetplandokumentdaten anpassen - Budgetplandokumentdaten in Excel bearbeiten."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

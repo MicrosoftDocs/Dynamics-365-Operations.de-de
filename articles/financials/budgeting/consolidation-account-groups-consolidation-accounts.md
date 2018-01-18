@@ -3,11 +3,12 @@ title: "Erstellen von Konsolidierungskontengruppen und zusätzlicher Konsolidier
 description: "Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskonten und erläutert, wie sie in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerConsolidateAccountGroup
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

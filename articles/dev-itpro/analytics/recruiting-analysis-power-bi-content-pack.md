@@ -3,11 +3,12 @@ title: Rekrutierungs-Power BI-Inhalt
 description: "In diesem Thema wird der Inhalt der Power BI-Personalbeschaffung beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 22138ab34243aa5f8c74f785ce3aaf68b27b9622
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 0d6bc8584d202810ed14367d36d113d9b109ea7a
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -66,5 +67,5 @@ Die folgende Tabelle zeigt die Entitäten, auf denen der Power BI Inhalt **Perso
 | Personalbeschaffungsprojekt  | Projektbeschreibung, Projektstatus und Öffnungen                | Bewerber, Bewerber angestellt, Bewerber beendeter |
 | Beendeter Bewerber | Gesperrte Bewerber, Grund, Leistung und Kündigungsdatum | Unternehmen, Kalender-Gegenkonto, Datum, Standort, Leistung, Demografie, Anstellung, Medien, Personalbeschaffungsprojekt, Bewerbername. |
 
-Diese Entitäten wurden verwendet, um berechnete Messungen zu erstellen. Diese berechneten Messungen werden verwendet, um die Messdaten (KPIs) und Berichte zu erstellen, die im Inhalt verwendet werden. Wenn Sie zusätzliche Berechnungen in Ihren Berichten und Dashboard einbeziehen möchten, können Sie die Recruiting.pbix Datei von Microsoft Dynamics Lifecycle Services (LCS) herunterladen und bearbeiten. Diese Datei ist das Standarddatenmodell, das verwendet wurde, um den Inhalt zu erstellen. Nachdem Sie die Änderungen vorgenommen haben, können Sie ein Organisations-Inhaltspaket und ein Dashboard erstellen, die die von Ihnen hinzugefügten Informationen enthalten.
+
 

@@ -3,23 +3,24 @@ title: "Power BI-Inhalt – Bargeldüberblick"
 description: "In diesem Thema wird der Inhalt des Power BI-Bargeldüberblicks beschrieben. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden."
 author: saraschi2
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 8a3d12b3b0f71ea8b84b1618d9bb6bbc416e3b1d
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 5d02a009ca988f91a212e467d4f9784248bbae76
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -53,10 +54,6 @@ Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtssei
 | Währungsplanung                     | <ul><li>Prognostizierte Währungssalden</li><li>Tägliche Währungsüberblick</li><li>Planungsdetails</li></ul> |
 | Banksalden                         | <ul><li>Gesamter Banksaldo in der Systemwährung</li><li>Saldo nach juristischer Person</li><li>Vergleich des heutigen Ist-Saldos gegenüber des geplanten Saldos in Bankkontowährung</li><li>Saldo nach Bankkonto</li><li>Saldo in Währung</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Erweitern des Power BI-Inhalts
-Sie können Personen, die sich nicht bei Dynamics 365 anmelden, großartige Analysen bereitstellen, indem Sie die Inhaltspakete verwenden, die in den Lifecycle Services (LCS) verfügbar sind. Diese Inhaltspakete können angepasst werden, damit Sie weitere Berichte oder grafische Elemente umfassen, und dann zur Analyse auf Ihrem Power BI.com-Mandanten veröffentlicht werden. 
-
-Sie können die **Bargeldüberblick**-Power BI-Inhalt in der freigebenen Anlagenbibliothek in LCS finden. Weitere Informationen dazu, wie Sie Power BI-Inhalte herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](../../dev-itpro/analytics/power-bi-content-microsoft-partners.md). Um eine Vorführung anzusehen, die zeigt, wie der Power BI-Inhalt impementiert wird, zeigen Sie den Office Mix [Power BI-Inhalt von Microsoft und Ihren Partnern in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) an.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
@@ -72,6 +69,5 @@ Die folgende Tabelle zeigt die Entitäten, auf denen das der **Bargeldüberblick
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Zusammengefasste Bargeldzu- und -abflüsse und -saldo mithilfe der Systemwährung für alle Unternehmen |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Zusammengefasster und Nettobuchungsbetrag und -saldo von Währungen anhand der Buchungswährung |
 
-Diese Entitäten wurden verwendet, um berechnete Messungen im Datenmodell zu erstellen. Diese berechneten Messungen werden verwendet, um die Diagramme und Berichte zu erstellen, die im **Bargeldüberblick**-Inhalt verwendet werden. Um zusätzliche Berechnungen in Ihren Berichten und Dashboard einzubeziehen, können Sie die Power BI-Datei von LCS herunterladen und bearbeiten. Diese Datei ist das Standarddatenmodell, das verwendet wurde, um den Inhalt zu erstellen. Nachdem Sie die Änderungen vorgenommen haben, können Sie Organisations-Inhalte und Dashboards erstellen, die die von Ihnen hinzugefügten Informationen enthalten.
 
 

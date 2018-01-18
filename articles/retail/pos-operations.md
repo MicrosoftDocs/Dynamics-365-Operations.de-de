@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02d777da3b97706f9e63478a1978ac9b230a591e
+ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
+ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -104,6 +104,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 521 | Treuekarten-Punktestand | Anzeigen des Saldos von Punkten für die angegebene Treuekarte. | Ja | Ja | Nr. | Nr. | Nr. |
 | 914 | POS-Fenster minimieren | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nr. |
 | 1.000 | Kassenlade öffnen | Führen Sie einen Arbeitsgangs "Verkauf" aus, und öffnen Sie die derzeit ausgewählte Geldlade. | Ja | Ja | Ja | Ja | Nr. |
+| 928 | Auftragserfüllung | Dieser Arbeitsgang ermöglicht es Benutzern, Aufträge für die Filialabholung zu entnehmen, zu verpacken, zu versenden oder zurückzurufen. | Ja | Ja | Ja | Nr. | Nr. |
 | 129 | Steuer für Positionsprodukt überschreiben | Überschreibt die Steuer für den ausgewählten Positionsartikel mit einer anderen angegebenen Steuer. | Ja | Ja | Nr. | Ja | Nr. |
 | 130 | Steuer für Positionsprodukt aus Liste überschreiben | Überschreibt die Steuer für den ausgewählten Positionsartikel mit einer Steuer, die der Benutzer in einer Liste auswählt. | Ja | Ja | Nr. | Ja | Nr. |
 | 127 | Transaktionssteuer überschreiben | Dient zum Überschreiben der Steuer für die Buchung, um eine andere angegebene Steuer zu verwenden. | Ja | Ja | Nr. | Ja | Nr. |

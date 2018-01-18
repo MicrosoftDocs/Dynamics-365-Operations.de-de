@@ -3,7 +3,7 @@ title: "Finanzberichterstellungs-Data Mart zurücksetzen"
 description: "In diesem Thema wird beschrieben, wie der Rechnungslegungs-Damart zurückgesetzt wird."
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: aloson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0786d3377b914791106ef30455d676e5ab2ae03d
-ms.openlocfilehash: c708fa18b8676d8ff57c26b3176a36d86df29387
+ms.sourcegitcommit: 5b956dcc5a4a93033396ae0ffcf8b7aeba2cf3f2
+ms.openlocfilehash: a07e8b5bae2c4f71e9212cd2f8080d2481769818
 ms.contentlocale: de-de
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ In diesem Thema wird erläutert, wie der Rechnungslegungs-Datamart für die folg
 - Microsoft Dynamics 365 for Finance and Operations Financial Reporting Release 7.0.10000.4 und später
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition (lokal)
 
-Um Finance and Operations Finanzberichterstellung Release 7.2.6.0 abzurufen, können Sie KB 4052514 von <https://support.microsoft.com/en-us/help/4052514> herunterladen.
+Um Finance and Operations Finanzberichterstellung Version 7.2.6.0 abzurufen, können Sie KB 4052514 von <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514> herunterladen.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-7260-and-later"></a>Setzt den Rechnungslegungs-Datamart für Finance and Operations Rechnungslegungsfreigabe 7.2.6.0 und später zurück
 
@@ -55,7 +55,7 @@ Die Data Mart-Rücksetzung sollte nur für Zeiten ausgeführt werden, wenn der B
 
 Um den Data Mart im Berichts-Designer im Menü **Extras** zurückzusetzen, wählen Sie **Data Mart zurücksetzen** aus. Das Dialogfeld, das angezeigt wird, verfügt über zwei Abschnitte: **Statistik** und **Zurücksetzen**.
 
-[![Dialogfeld Data Mart zurücksetzen](./media/Statistics.png)](./media/Statistics.png)
+[![Dialogfeld Data Mart zurücksetzen](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>Integrationsversuche
 
@@ -77,14 +77,16 @@ Um den Data Mart im Bereich Finance and Operations Financial Reporting, Release 
 
 ### <a name="reset-the-data-mart-and-select-a-reason-in-microsoft-dynamics-365-for-finance-and-operations-financial-reporting-release-730"></a>Data Mart zurücksetzen und wählen Sie einen Grund in Microsoft Dynamics 365 for Finance and Operations Financial Reporting Release 7.3.0 aus.
 
-Stellt sich heraus, dass eine Data  Mart-Rücksetzung erforderlich ist, aktivieren Sie das Kontrollkästchen **Setzen Sie Data Mart zurück**, und wählen Sie dann einen Grund im Feld **Grund** aus. Die folgenden Optionen sind verfügbar:
+Stellt sich heraus, dass eine Data Mart-Rücksetzung erforderlich ist, aktivieren Sie das Kontrollkästchen **Setzen Sie Data Mart zurück**, und wählen Sie dann einen Grund im Feld **Grund** aus. Die folgenden Optionen sind verfügbar:
 
 - **Fehlende oder falsche Daten** – Basierend auf Statistiken haben Sie festgestellt, dass Daten möglicherweise fehlen. Bevor Sie fortfahren, wird empfohlen, dass Sie mit Support arbeiten, um festzustellen, was den Fehler verursacht.
 - **Datenbank wiederherstellen** - Die Finance und Operations Datenbank wurde wiederhergestellt, aber die Data Mart-Datenbank wurde nicht wiederhergestellt.
 - **Sonstiges** – Setzen Sie den Data Mart für einen anderen Grund zurück. Wenn Sie göaibem. dass ein Problem besteht, kontaktieren Sie den Support, um das Problem zu identifizieren.
 
+[![Data Mart zurücksetzen](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Stellen Sie sicher, dass alle vorhandenen Aufgaben die Integrierung beendet haben, bevor Sie die Schritte ausführen. Sie können den Status der Integration anuzeigen unter **Extras** &gt;**Integrationsstatus** auswählen.
+> Überprüfen Sie, ob durch alle Data Mart-Zurücksetzungsaufgaben ein erstmaliges Laden abgeschlossen wurde, bevor Sie mit dem Zurücksetzen beginnen. Sie können dies bestätigen, indem Sie nach einem Wert in der Spalte „Letzte Laufzeit” suchen, indem Sie **Extras** &gt; **Integrationsstatus** auswählen.
 
 #### <a name="clear-users-and-companies"></a>Benutzer und Unternehmen löschen
 
@@ -94,7 +96,10 @@ Wenn Sie bereit sind, den Rücksetzungsprozess zu verwenden, aktivieren Sie **OK
 
 Wenn Sie den Status bei der Integration erneut ausführen, wählen Sie **Extras** &gt; **Integrationsstatus**, um das letzte Mal zu sehen, als die Integration ausgeführt wurde und den Status.
 
-[![Zeigt den Status der Integration](./media/Integration.png)](./media/Integration.png)
+[![Zeigt den Status der Integration](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> Die Zurücksetzung ist abgeschlossen, wenn alle Zuordnungen den Status „RanToCompletion” anzeigen und das Fenster „Integrationsstatus” die Meldung „Integration abgeschlossen” in der Ecke unten links wiedergibt.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-70100004-and-later"></a>Setzt den Rechnungslegungs-Datamart für Finance and Operations Rechnungslegungsfreigabe 7.0.10000.4 und später zurück
 
@@ -142,7 +147,9 @@ Die olgenden Microsoft Windows Dienste haben offene Verbindungen zur Finance and
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>Suchen und laden Sie das letzte MinorVersionDataUpgrade.zip-Paket herunter
 
-Suchen und laden Sie das letzte MinorVersionDataUpgrade.zip-Paket herunter. Anweisungen dazu, wie Sie die korrekte Version des Datenaktualisierungspakets suchen, finden Sie unter und[Das letzte Datenaktualisierungbereitstellungspaket herunterladen](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). Eine Aktualisierung ist nicht erforderlich, um das MinorVersionDataUpgrade.zip-Paket herunterzuladen. Deshalb müssen Sie derzeit die Schritte ausführen unter "Herunterladen zur Bereitstellung geeigneter Paket der Datenaktualisierung". Sie können alle anderen Schritte im Thema überspringen.
+Suchen und laden Sie das letzte MinorVersionDataUpgrade.zip-Paket herunter. Anweisungen dazu, wie Sie die korrekte Version des Datenaktualisierungspakets suchen, finden Sie unter und[Das letzte Datenaktualisierungbereitstellungspaket herunterladen](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). 
+
+Eine Aktualisierung ist nicht erforderlich, um das MinorVersionDataUpgrade.zip-Paket herunterzuladen. Deshalb müssen Sie derzeit die Schritte ausführen unter "Herunterladen zur Bereitstellung geeigneter Paket der Datenaktualisierung". Sie können alle anderen Schritte im Thema überspringen.
 
 #### <a name="run-scripts-against-the-finance-and-operations-database"></a>Ausführen von Skripts für die Finance and Operations-Datenbank
 
@@ -164,7 +171,7 @@ Import-Module .\Server\MRDeploy\MRDeploy.psd1
 Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>"
 ```
 
-Ist eine kurze Erläuterung der im Parameter im Befehl**Zurückgesetzt-DatamartIntegration**:
+Ist eine kurze Erläuterung der im Parameter im Befehl **Zurückgesetzt-DatamartIntegration**:
 
 - Die gültigen Werte für **Reason** sind **SERVICING**, **BADDATA**, und **OTHER**.
 - Der **ReasonDetail**-Parameter ist Freitext.

@@ -3,11 +3,12 @@ title: Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
 description: "Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

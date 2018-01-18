@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b744a895bbd494212c4c388362dd7290207af938
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
 
 > [!IMPORTANT]
-> Sie können auch keine benutzerdefinierten Aufgabenleitfäden für Dynamics 365 for Talent erstellen. Das Hilfesystem für Talent stellt automatisch eine Verbindung mit den Aufgabenleitfäden für das Produkt bereit. 
+> Sie können Ihre eigenen Aufgabenleitfäden für Dynamics 365 for Talent erfassen, jedoch sind Sie noch nicht in der Lage, sie in einer Geschäftsprozessmodellierer-(BPM)-Bibliothek zu speichern oder sie vom Hilfebereich zu öffnen. Sie können sie lokal oder an einem Netzwerkspeicherort speichern und sie dann mithilfe der Aufgabenaufzeichnung öffnen und erneut wiedergeben. 
 
 <a name="learn-about-task-recorder"></a>Mehr über die "Aufgabenaufzeichnung" erfahren
 -------------------------
@@ -42,7 +42,7 @@ Die Aufgabenaufzeichnung ist ein Tool, das Sie verwenden können, um Aktivitäte
 
 -   **Aufgabenaufzeichnungen können als Aufgabenleitfäden wiedergegeben werden.** Aufgabenleitfäden sind ein integrierter Bestandteil der Hilfe-Erfahrung. Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte eines Geschäftsprozesses führt. Der Benutzer wird aufgefordert, jeden Schritt einer Popupeingabeaufforderung (oder "Blase") abzuschließen, die über die Benutzeroberfläche animiert wird und auf das Benutzeroberflächenelement verweist, mit dem der Benutzer interagieren soll. Die "Blase" enthält auch Informationen zur Interaktion mit Elementen, wie "Hier klicken" oder "Geben Sie in diesem Feld einen Wert ein". Ein Aufgabenleitfaden wird mit dem Datensatz des aktuellen Benutzers ausgeführt, und die Daten, die eingegeben werden, werden in der Anwenderkonfiguration gespeichert.
 -   **Aufgabenaufzeichnungen können als Verfahrensschritte im Hilfebereich angezeigt werden.** Sie können den Hilfebereich verwenden, um nach Aufgabenaufzeichnungen zu suchen und sie anzuzeigen. Sie können auf den Hilfebereich zugreifen, indem Sie auf das Symbol **?** in der oberen Navigationsleiste klicken oder die Tastenkombination **STRG+UMSCHALTTASTE+?** verwenden. Im Hilfebereich können Sie die Schritte einer Aufgabenerfassung nachlesen, oder die Aufzeichnung optional als Aufgabenleitfaden wiedergeben, damit sie Sie durch die Benutzeroberfläche führt.
--   **Aufgabenaufzeichnungen können im BPM gespeichert werden.** Sie können Ihre Aufgabenaufzeichnungen in einer Position einer Hierarchie der Bibliothek des Geschäftsprozessmodellierers (BPM) in den Lifecycle Services (LCS) speichern. Aus der Aufzeichnung wird eine Liste von Schritten und ein Geschäftsprozessflussdiagramm generiert. Aufgabenaufzeichnungen, die in einer BPM-Bibliothek gespeichert wurden, können als Hilfe angezeigt werden.
+-   **Aufgabenaufzeichnungen können im BPM gespeichert werden.** Sie können Ihre Aufgabenaufzeichnung in einer Position einer Hierarchie der Bibliothek des Geschäftsprozessmodellierers (BPM) in Lebenszyklusdienste (LCS) speichern. Aus der Aufzeichnung wird eine Liste von Schritten und ein Geschäftsprozessflussdiagramm generiert. Aufgabenaufzeichnungen, die in einer BPM-Bibliothek gespeichert wurden, können als Hilfe angezeigt werden.
 -   **Aufgabenaufzeichnungen können als Word-Dokumente gespeichert werden.** Dadurch wird es Ihnen ermöglicht, druckbare Trainingshandbücher einfach zu erzeugen.
 
 Sie können eigene Aufgabenaufzeichnungen erstellen, Aufgabenaufzeichnungen wiedergeben, die von Microsoft bereitgestellt werden, oder von Microsoft zur Verfügung gestellte Aufgabenaufzeichnungen ändern, um sie Ihrer Konfiguration anzupassen. Weitere Informationen zu der Aufgabenaufzeichnung, finden Sie unter [Aufgabenaufzeichnung](task-recorder.md)

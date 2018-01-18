@@ -3,11 +3,12 @@ title: Warehouse Performance Power BI Inhalt
 description: "In diesem Thema wird beschrieben, was im Warehouse Performance Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: Mirzaab
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,13 +16,13 @@ ms.custom: 272953
 ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 ms.search.region: Global
 ms.author: mirzaab
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: e5a900000286b5f076c377f7b1a9a260cc40621a
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -76,15 +77,6 @@ Die **Lagerortleistung** Power BI Inhalt enthält einen Bericht. Dieser Bericht 
 | Versandleistung        | Versand nach Produkt                       | Der Prozentsatz, der frühzeitig rechtzeitig oder zu spät versandt wurde, nach Artikel oder Artikelgrupp,                                                                                                                                                                                                                                                                                                                                   |
 | Versandleistung        | Geliefert an Debitoren                      | Der Prozentsatz, der frühzeitig rechtzeitig oder zu spät versandt wurde, nach Artikel oder Artikelgrupp,                                                                                                                                                                                                                                                                                                                           |
 | Versandleistung        | Nach Standort/Lagerort Versendet              | Der Prozentsatz, der frühzeitig rechtzeitig oder zu spät versandt wurde, nach Artikel oder Artikelgrupp,                                                                                                                                                                                                                                                                                                                                    |
-## <a name="extending-the-power-bi-content"></a>Erweitern des Power BI-Inhalts
-Wenn Sie die Inhaltspakete verwenden, die in Microsoft Dynamics Lifecycle Services (LCS) verfügbar sind, können Sie großartige Analysen für Person bereitstellen, die sich nicht in Microsoft Dynamics 365 anmelden. Sie können diese Inhaltspakete so ändern, dass sie andere Berichte oder grafische Elemente umfassen, und die Inhaltspakete dann für die Analyse auf Ihrem Power BI.com-Mandanten veröffentlichen. 
-
-Sie finden den **Lagerortleistung**-Power BI-Inhalt in der freigegebenen Anlagenbibliothek in LCS. Weitere Informationen dazu, wie Sie Power BI-Inhalte herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md). Um eine Vorführung anzusehen, die zeigt, wie der Power BI-Inhalt impementiert wird, zeigen Sie den Office Mix [Power BI-Inhalt von Microsoft und Ihren Partnern in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) an.
-
-Stellen Sie sicher, dass Sie den **Lagerortleistung**-Inhalt herunterladen, der der von Ihnen verwendeten Dynamics 365-Version entspricht.
-
-> [!NOTE]
-> Wenn Sie Microsoft Dynamics 365 for Operations, Version 1611, verwenden, ist KB 4011327 eine Voraussetzung für diesen Power BI-Inhalt. Nachdem Sie sich bei LCS angemeldet haben, können Sie unter https://fix.lcs.dynamics.com/issue/results/?q=kb4011327 auf KB zugreifen.
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Das Datenmodells und Berechnungen verstehen
 Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Lagerortleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md). 

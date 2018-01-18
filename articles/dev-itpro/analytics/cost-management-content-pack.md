@@ -1,9 +1,9 @@
 ---
 title: "Kostenverwaltung für Power BI Inhalt"
-description: "In diesem Thema wird beschrieben, was im Kostenmanagement Power Bl enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+description: In diesem Thema wird beschrieben, was im Kostenmanagement Power Bl enthalten ist.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f509852f15b9518d0a01be1f89d4f07c76caf341
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird beschrieben, was im Kostenmanagement Power Bl enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im Kostenmanagement Power Bl enthalten ist. 
 
 # <a name="overview"></a>Überblick
 
@@ -51,8 +51,6 @@ Der  **Kostenmanagement** Microsoft Power BI Inhalt dient für Bestandsbuchhalte
 
 Die primäre Datenquelle für CostAggregatedCostStatementEntryEntity ist die CostStatementCache-Tabelle. Diese Tabelle wird durch das Datensatzcacheframework verwaltet. Standardmäßig wird die Tabelle alle Stunden 24 aktualisiert, wobei Sie manuelle Aktualisierungen in der Datencachekonfiguration aktivieren können. Sie können eine manuelle Aktualisierung in **Kostenmanagement** oder **Kostenanalyse** - Arbeitsbereich vornehmen. Nach Abschluss der Aktualisierung von CostStatementCache, müssen Sie die OData-Verbindung auf Power  Bl.com aktualisieren, um die aktualisierte Daten auf der Katalogwebsite anzuzeigen. Die Kennzahl der Abweichung (Einkauf, Produktion) in diesem Power Bi Inhalt enthält nur die nur die Elemente, die von der Standardkostenbestandsmethode valuiert werden. Die Produktionsabweichung wird als Differenz zwischen aktiven Kosten und realisierten Kosten berechnet. Die Produktionsabweichung wird berechnet, wenn der Produktionsauftrag den Status aufweist **beendet** aufweist. Weitere Informationen zu jedem Produktionsabweichungstyp und wie jeder Typ berechnet wird, finden Sie unter [Analysieren von Abweichungen für eine abgeschlossenen Produktionsauftrag](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Der Power BI Inhalt **Kostenmanagement** ist von PowerBI.com verfügbar. Weitere Informationen dazu, wie Microsoft Dynamics 365 for Finance and Operations Daten verbunden und geladen werden, finden Sie unter [Zugriff auf Power BI Inhalt von PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im **Kostenmanagement** Power Bl Inhalt.
@@ -88,7 +86,7 @@ Finance and Operations-Daten werden für die Berichte im **Kostenverwaltung**-Po
 
 | Entität            | Zentrale aggregierte Messungen | Datenquelle für Finance and Operations | Feld             | Beschreibung                       |
 |-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
-| Berichtseinträge | Nettoveränderung                | CostAggregatedCostStatementEntryEntity      | Summe (Betrag \[\])   | Betrag in Buchhaltungswährung |
+| Berichtseinträge | Nettoveränderung                | CostAggregatedCostStatementEntryEntity      | Summe (\[Betrag\])   | Betrag in Buchhaltungswährung |
 | Berichtseinträge | Änderung der Nettomenge       | CostAggregatedCostStatementEntryEntity      | Sum(\[Menge\]) |                                   |
 
 Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet werden, um mehrere berechnete Kennzahlen im Dataset des Inhalts zu erstellen.
@@ -136,13 +134,6 @@ Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregie
 | Sachkonten          | Währung, Name, Beschreibung                  |
 | Standorte            | Kennung, Name, Land, Ort                      |
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstellen von Power BI-Inhalten:
-
--   [Datenentitäten](..\data-entities\data-entities.md)
--   [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](configure-power-bi-integration.md)
 
 
 

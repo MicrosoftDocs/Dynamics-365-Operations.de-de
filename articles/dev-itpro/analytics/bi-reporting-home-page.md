@@ -3,7 +3,7 @@ title: Intelligence
 description: "In diesem Thema erhalten Sie Hinweise zu Ressourcen. Diese bieten Ihnen weitere Informationen über die Tools zu Business Intelligence und zur Berichterstellung, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, verfügbar sind."
 author: sericks007
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 12/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 335d38e0fb5e47136b87bac5bfa9d2fd2923def6
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -48,7 +48,6 @@ Benutzer können mit Daten interagieren, indem Sie auf visuelle Elemente auf der
  - [Eingebettete Power BI in Arbeitsbereichen](embed-power-bi-workspaces.md)
  - [Integration von Power BI Embedded](power-bi-embedded-integration.md)
  - [Über Power BI Embedded Analysen zu Arbeitsbereichen hinzufügen](add-analytics-tab-workspaces.md)
- - [Veröffentlichen analytischer Anwendungen in Power BI](publish-apps-powerbi.md)
  - [Über Power BI Embedded Analyse-Arbeitsbereiche und Berichte absichern](secure-analytical-workspaces.md)
  - [Power BI-Inhalt für Finance and Operations](power-bi-home-page.md)
 
@@ -88,10 +87,7 @@ Weitere Informationen finden Sie in folgenden Themen:
 ## <a name="technical-reference-reports"></a>Technische Referenzberichte
 Die folgenden Berichte enthalten Referenzinformationen zu den Objekten in Finance and Operations:
 
-- [Datenentitätsbericht aggregieren](aggregate-data-entities-report.md)
-- [Messungsbericht aggregieren](aggregate-measurements-report.md)
 - [Bericht zu Datenentitäten](../data-entities/data-entities-report.md)
-- [Bericht der Leistungskennzahlen (Key Performance Indicators, KPIs)](key-performance-indicators-report.md)
 - [Bericht zu Lizenzcodes und Konfigurationsschlüsseln](../sysadmin/license-codes-configuration-keys-report.md)
 - [Bericht zu SQL Server Reporting Services-Berichten](SSRS-report.md)
 - [Bericht zu Workflowtypen](../../fin-and-ops/organization-administration/workflow-types-report.md)

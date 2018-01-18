@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3bf244786e308ebcaee27a16fae378f41086f963
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ce9bc42751cf0f537a0ddb5069aca7c9779a6bb1
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -38,16 +38,17 @@ Ein Workflow stellt einen Geschäftsprozess dar. Ein Workflow definiert, wie ein
 -   **Prozesssichtbarkeit** – Sie können den Status, die Historie und die Leistungskennzahlen einer bestimmten Workflowinstanz nachverfolgen. So können Sie besser feststellen, ob zur Effizienzsteigerung Änderungen am Workflow vorgenommen werden sollten.
 -   **Zentralisierte Arbeitsliste**- Benutzer können eine zentralisierte Arbeitsliste öffnen, um die Workflowaufgaben und ‑genehmigungen anzuzeigen, die ihnen zu allen Workflows zugewiesen werden, an denen sie teilnehmen. Dies ist in der Arbeitsaufgabenseite verfügbar.
 
-## <a name="the-types-of-workflows-that-you-can-create"></a> Erstellbare Workflowtypen
+## <a name="the-types-of-workflows-that-you-can-create"></a>Erstellbare Workflowtypen
 Die folgenden Workflowtypen stehen für die Beschaffung zur Verfügung.
 
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
 | **Typ**                         | **Mit diesem Typ können Sie folgende Aufgaben ausführen:**                                          |
-| Prüfung der Bestellanforderungen      | Erstellen Sie Prüfungsworkflows für Bestellanforderungen.            |
-| Prüfung der Bestellanforderungsposition | Erstellen Sie Prüfungsworkflows für Bestellanforderungspositionen.       |
+| Prüfung der Bestellanforderungen      | Erstellen Sie Prüfungs- und Genehmigungsworkflows für Bestellanforderungen.            |
+| Prüfung der Bestellanforderungsposition | Erstellen Sie Prüfungs- und Genehmigungsworkflows für Bestellanforderungspositionen.       |
 | Bestellworkflow          | Erstellen Sie Prüfungs- und Genehmigungsworkflows für Bestellungen.     |
 | Bestellpositionsworkflow     | Erstellen Sie Prüfungs- und Genehmigungsworkflows für Bestellpositionen. |
+| Workflow für Antrag zum Hinzufügen eines Kreditors  | Erstellen Sie Prüfungs- und Genehmigungsworkflows zum Hinzufügen neuer Kreditoren über Kreditorenanforderungen. |
 
 ## <a name="creating-a-workflow"></a>Erstellen eines Workflows
 Um einen Workflow zu erstellen, wechseln Sie zu Beschaffung &gt; Einrichtung &gt; Beschaffungsworkflows und erstellen Sie einen neuen Workflow, indem sie den Workflowtyp auswählen, den Sie erstellen möchten.  
@@ -75,6 +76,6 @@ Sie können folgenden Teilnehmergruppen einen Genehmigungsschritt zuweisen.
 
 [Bestellanforderungsworkflow](purchase-requisitions-workflow.md)
 
-
+[Onboarding von Kreditoren](vendor-onboarding.md)
 
 

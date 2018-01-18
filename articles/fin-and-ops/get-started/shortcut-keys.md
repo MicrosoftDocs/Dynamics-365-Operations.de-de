@@ -3,7 +3,7 @@ title: Tastenkombinationen
 description: "In Dynamics 365 for Finance and Operations, Enterprise Edition, stehen überall die folgenden Tastenkombinationen zur Verfügung."
 author: jasongre
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
 ms.contentlocale: de-de
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ In Dynamics 365 for Finance and Operations, Enterprise Edition, stehen überall 
 
 **Hinweis:** Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
 
-## <a name="finding-a-shorcut"></a>Eine Tastenkombination suchen
+## <a name="finding-a-shortcut"></a>Eine Tastenkombination suchen
 Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombinationen direkt über die Benutzeroberfläche ermitteln. Klicken Sie einfach auf einem Steuerelement mit der rechten Maustaste und wählen Sie **Tastenkombinationen anzeigen** aus. Daraufhin wird ein Dialogfeld geöffnet, welches die Tastenkombinationen anzeigt, die Sie verwenden können, basierend darauf, wo Sie auf der Seite sind. 
 
 
@@ -143,6 +143,9 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Zum ersten Datensatz wechseln                                                                                               | STRG+POS1                       |
 | Zum letzten Datensatz wechseln                                                                                                | STRG+ENDE                        |
 | Die Standardaktivität in einem Raster ausführen<br><br>**Hinweis:** Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben                 | EINGABETASTE                           |
+| Fokus zwischen ausgewählter Zeile und Kopfzeile umschalten                                                               | ALT+UMSCHALT+H                     |
+| Die aktuelle Spalte vergrößern/verkleinern (mit Fokus in der Kopfzeile)                                                  | NACH-RECHTS-TASTE / NACH-LINKS-TASTE        |
+| Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | EINGABETASTE                           |
 
 ## <a name="input-control-shortcuts"></a>Eingabesteuerungsverknüpfungen
 |                                                                              |                               |

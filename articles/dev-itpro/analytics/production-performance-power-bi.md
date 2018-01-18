@@ -3,7 +3,7 @@ title: "Power BI-Inhalt – Produktionsleistung"
 description: "In diesem Thema wird beschrieben, was im Warehouse Performance Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -59,15 +59,6 @@ Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspak
 | Defekter Trend nach Ressource                  | Defekter Satz (PPM) nach produzierter Menge | |
 | Produktionsabweichungen für eine Auftragskalkulation | <ul><li>Produktionsabweichung von Datums- und Kostengruppentyp</li><li>Produktionsabweichung nach Standort und Kostengruppentyp</li><li>Top 10 Produkte mit ungünstiger Produktionsabweichung</li><li>Top 10 Produkte mit ungünstiger Produktionsabweichung nach Ressource</li></ul> | <ul><li>Realisierte Kosten</li><li>Produktionsabweichung</li><li>Produktionsabweichung in %</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Erweitern des Power BI-Inhalts
-Wenn Sie die Inhaltspakete verwenden, die in Microsoft Dynamics Lifecycle Services (LCS) verfügbar sind, können Sie großartige Analysen für Person bereitstellen, die sich nicht in Microsoft Dynamics 365 anmelden. Sie können diese Inhaltspakete so ändern, dass sie andere Berichte oder grafische Elemente umfassen, und die Inhaltspakete dann für die Analyse auf Ihrem Power BI.com-Mandanten veröffentlichen.
-
-Sie finden die **Produktionsleistung**-Power BI Inhalt in der freigegebenen Anlagenbibliothek in LCS. Weitere Informationen dazu, wie Sie Power BI-Inhalte herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md). Um eine Vorführung anzusehen, die zeigt, wie der Power BI-Inhalt impementiert wird, zeigen Sie den Office Mix [Power BI-Inhalt von Microsoft und Ihren Partnern in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) an.
-
-Stellen Sie sicher, dass Sie den **Produktionstleistungs**-Inhalt herunterladen, der der von Ihnen verwendeten Dynamics 365-Version entspricht.
-
-> [!NOTE]
-> Wenn Sie Microsoft Dynamics 365 for Operations, Version 1611, verwenden, ist KB 4011327 eine Voraussetzung für diesen Power BI-Inhalt. Nachdem Sie sich bei LCS angemeldet haben, können Sie unter https://fix.lcs.dynamics.com/issue/results/?q=kb4011327 auf KB zugreifen.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
@@ -139,12 +130,5 @@ Die folgenden wichtigen Dimensionen im Verkaufscube werden als Filter verwendet,
 | Ressourcen                 | Ressourcen-ID, Ressourcenname, Ressourcentyp und Ressourcengruppe |
 | Produkte                  | Produktnummer, Produktname, Artikelgruppenname und Artikel-ID         |
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-Nachfolgend finden Sie einige hilfreiche Links zum Thema Entitäten und Erstellen von Power BI-Inhalten:
-
-- [Datenentitäten](../data-entities/data-entities.md)
-- [Erstellen von Organisations-Inhaltspaketen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Datenmodellierung mithilfe von Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Hinzufügen von Power BI-Kacheln zu Arbeitsbereichen](configure-power-bi-integration.md)
 

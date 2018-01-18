@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -19,10 +20,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a527136f77b65ef5a43576291e38cb168dbbd322
+ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
+ms.openlocfilehash: 43360ea18ccc0fc4622f6da70ff10f2aca8b56c8
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -98,10 +99,10 @@ Um die Aufzeichnungssitzung fortzusetzen, nachdem Sie sie angehalten hatten, kli
 
 ### <a name="capture-screenshots"></a>Bildschirmabbilder erstellen
 
-Aufgabenaufzeichnung kann Bildschirmabbilder der Benutzeroberfläche von Retail Modern POS erfassen, während Sie einen Geschäftsprozess aufzeichnen. Aufgabenaufzeichnung verwendet die Bildschirmabbilder, wenn Sie die Aufzeichnung als Word-Dokument herunterladen. Um die Erfassungsfunktion für Bildschirmfotos zu aktivieren, legen Sie die Option **Bildschirmabbilder erstellen** auf **Ja** fest. 
+Aufgabenaufzeichnung kann Bildschirmabbilder der Benutzeroberfläche von Retail Modern POS erfassen, während Sie einen Geschäftsprozess aufzeichnen. Um die Erfassungsfunktion für Bildschirmfotos zu aktivieren, legen Sie die Option **Bildschirmfotos erstellen** auf **Ja** fest, und nehmen Sie dann die Erfassung vor. Sobald die Erfassung abgeschlossen wurde, klicken Sie auf **Beenden** und laden Sie das Word-Dokument herunter. Das Dokument enthält die Schritte mit den relevanten Bildschirmfotos.
 
 #### <a name="note"></a>Notiz
-> Die Funktionen zur Erfassung von Bildschirmabbildern werden in Cloud POS nicht unterstützt.
+> Die Funktionen zur Erfassung von Bildschirmfotos wird in Modern POS nicht unterstützt.
 
 ### <a name="start-task-and-end-task"></a>Aufgabe starten und Aufgabe beenden
 

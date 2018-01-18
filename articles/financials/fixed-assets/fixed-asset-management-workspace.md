@@ -3,11 +3,12 @@ title: Arbeitsbereich "Anlageverwaltung"
 description: "Dieses Thema enthält Informationen zum Arbeitsbereich \"Anlageverwaltung\". Der Arbeitsbereich zeigt Informationen, die sich auf Anlagen beziehen, die im System eingegeben werden. Er enthält eine Überblicksansicht und eine Analyseansicht."
 author: saraschi
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

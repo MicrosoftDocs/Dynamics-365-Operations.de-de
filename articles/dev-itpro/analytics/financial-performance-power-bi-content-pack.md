@@ -1,9 +1,9 @@
 ---
 title: Financial Performance Power BI Inhalt
-description: "In diesem Thema wird der Microsoft Power BI-Inhalt Finanzleistung beschrieben. Es werden das Dashboard und die Berichte beschrieben, die enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden."
+description: In diesem Thema wird der Microsoft Power BI-Inhalt Finanzleistung beschrieben.
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,21 +30,6 @@ ms.lasthandoff: 12/01/2017
 [!include[banner](../includes/banner.md)]
 
 In diesem Thema wird der Microsoft Power BI-Inhalt **Finanzleistung** beschrieben. Es werden das Dashboard und die Berichte beschrieben, die enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
-
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-
-Sie können auf das **Finanzleistung** Power BI von Microsoft Dynamics Lifecycle Services (LCS) und von PowerBI.com aus zugreifen.
-
-### <a name="available-from-lcs"></a>Verfügbar von LCS
-Der Power BI-Inhalt **Finanzleistung**, der von LCS verfügbar ist, unterstützt die folgenden Versionen:
-
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition Versionen
-- Microsoft Dynamics 365 for Operations, Version 1611 
-
-Sie können den Power BI-Inhalt in der freigegebenen Anlagenbibliothek in LCS finden. Weitere Informationen dazu, wie Sie das Inhaltspaket herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md). Um eine Vorführung anzusehen, die zeigt, wie der Power BI-Inhalt impementiert wird, zeigen Sie den Office Mix [Power BI-Inhalt von Microsoft und Ihren Partnern in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) an.
-
-### <a name="available-from-powerbicom"></a>Verfügbar von PowerBI.com
-Der Power BI-Inhalt **Finanzleistung**, der von PowerBI.com verfügbar ist, unterstützt Microsoft Dynamics AX Version 7.0 und Version 7.0.1. Weitere Informationen dazu, wie Sie Dynamics 365 AX-Daten verbinden und laden finden Sie unter [Zugriff auf Power Bi Inhalt von PowerBI.com](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Hauptkonto einrichten
 Da Organisationen möchten, dass Verbindlichkeiten und Umsatzerlöse als positive Beträge auf Berichten angezeigt werden, sind die Einstellungen der Hauptkonten wichtig. Damit diese Hauptkonten als positive Beträge angezeigt werden, muss das Hauptkonto den Typ auf **Verbindlichkeiten** **Umsatzerlös** festlegen. Wenn diese Kontenarten verwendet werden, wird die Berichterstattung über Power BI die Vorzeichen umkehren und die Werte als "positiv" anzeigen.
@@ -101,5 +86,5 @@ Die folgenden Entitäten wurden als Grundlage des Power BI-Inhaltspakets **Finan
 - Sachkonten
 - ChartofAccounts
 
-Diese Entitäten wurden verwendet, um berechnete Messungen im Datenmodell zu erstellen. Diese berechneten Messungen werden verwendet, um die Messdaten (KPIs) und Berichte zu erstellen, die im Inhalt verwendet werden. Standardmäßig enthält der Inhalt Daten für die letzten drei Jahre und ein zukünftiges Jahr. Um zusätzliche Berechnungen in Ihre Berichten und Dashboards einzubeziehen, können Sie das [Microsoft Excel Arbeitsbuch](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) ändern. Diese Arbeitsmappe ist das Standarddatenmodell, das verwendet wurde, um den Inhalt zu erstellen. Nachdem Sie die Änderungen vorgenommen haben, können Sie ein Organisations-Inhaltspaket und ein Dashboard erstellen, die die von Ihnen hinzugefügten Informationen enthalten.
+Diese Entitäten wurden verwendet, um berechnete Messungen im Datenmodell zu erstellen. Diese berechneten Messungen werden verwendet, um die Messdaten (KPIs) und Berichte zu erstellen, die im Inhalt verwendet werden. Standardmäßig enthält der Inhalt Daten für die letzten drei Jahre und ein zukünftiges Jahr. Um zusätzliche Berechnungen in Ihre Berichten und Dashboards einzubeziehen, können Sie das [Microsoft Excel Arbeitsbuch](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) ändern. Diese Arbeitsmappe ist das Standarddatenmodell, das verwendet wurde, um den Inhalt zu erstellen. 
 

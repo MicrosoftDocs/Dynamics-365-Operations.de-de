@@ -3,7 +3,7 @@ title: "Power BI-Inhalt – Überblick (Leiter der Finanzabteilung)"
 description: "In diesem Thema wird der Inhalt des Microsoft Power BI-Überblick (Leiters der Finanzabteilung) beschrieben."
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: fd3696321598267a2acd3ad61f533641c2cc2e77
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -47,8 +47,5 @@ Die folgende Tabelle enthält den Power-BI-Inhalt, von denen die Berichte kopier
 | [Kredit- und Inkassoverwaltung](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Überfälliger Kunde</li><li>Debitoren über Kreditlimit</li><li>Saldenrückblick</li></ul> |
 | [Einkaufs- und Ausgabenanalyse](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Einkäufe nach Monat/Tag</li><li>Die 10 wichtigsten Kreditoren nach Einkäufen</li><li>Die 10 wichtigste Produkte nach Einkäufen</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Erweitern des Power BI-Inhalts
-Wenn Sie die Inhaltspakete verwenden, die in Microsoft Dynamics Lifecycle Services (LCS) verfügbar sind, können Sie großartige Analysen für Person bereitstellen, die sich nicht in Microsoft Dynamics 365 anmelden. Sie können diese Inhaltspakete so ändern, dass sie andere Berichte oder grafische Elemente umfassen, und die Inhaltspakete dann für die Analyse auf Ihrem Power BI.com-Mandanten veröffentlichen.
 
-Sie können die **Überblick (Leiter der Finanzabteilung)**-Power BI-Inhalt in der freigebenen Anlagenbibliothek in LCS finden. Weitere Informationen dazu, wie Sie Power BI-Inhalte herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](power-bi-content-microsoft-partners.md). Um eine Vorführung anzusehen, die zeigt, wie der Power BI-Inhalt impementiert wird, zeigen Sie den Office Mix [Power BI-Inhalt von Microsoft und Ihren Partnern in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) an.
 

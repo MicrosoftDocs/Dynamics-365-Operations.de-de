@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
@@ -17,10 +17,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9eb962e903ac9ee359134cae35ebd399e23cc4e1
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 83c2ce79f5bef058f55af0ecf498b207efc0507a
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -41,4 +41,5 @@ Basierend auf den Einstellungen in „Retail Zentralverwaltung” können Produk
     
 - **Seriennummern sind nicht erforderlich, um Debitorenaufträge erteilen zu können** – Debitorenaufträge können in einem Shop erteilt werden und in einem anderen ausgeführt werden. Ein Kassierer, der einen Kundenauftrag erteilt, muss nicht die Seriennummer angeben. Die Seriennummer wird während der Entnahme oder des Entnahmeschritts angegeben. Eine Seriennummer muss jedoch für alle Positionsartikel angegeben werden, für die der Liefertyp **Zum Mitnehmen** ausgewählt ist. Andernfalls kann die Transaktion nicht abgeschlossen werden.    
 - **Serialisierte Produkte werden nicht in der Buchungsansicht aggregiert** – Die Einstellung **Produkte aggregieren** in der Feldgruppe **Terminal** auf der Seite **Funktionsprofil** ermöglicht es ihnen, dieselben nicht serialisierten Produkte in der Buchungsansicht zu aggregieren. Wenn dieselben Produkte aggregiert werden, können sie leichter im Transaktionsraster angezeigt werden. Da jedoch Seriennummern im Allgemeinen eindeutig sind und Vertriebsmitarbeiter keine Seriennummern bis zum Auschecken eingeben müssen, gilt die Einstellung **Produkte aggregieren** nicht für serialisierte Produkte. Daher werden serialisierte Produkte nicht in der Transaktionsansicht aggregiert, wenn die Einstellung **Produkte aggregieren** aktiviert ist.
+- **Möglichkeit, die Erfassungen nach Seriennummer zu durchsuchen** – Die Erfassungen können jetzt zusätzlich über Seriennummern durchsucht werden. Öffnen Sie hierfür den Arbeitsgang „Erfassungen”, und klicken Sie auf die Schaltfläche „Erweiterte Suche” in der App-Leiste. Mithilfe der Schaltfläche „Filter hinzufügen” kann ein Filter angewendet werden, um auch nach den Seriennummern zu suchen.
 
