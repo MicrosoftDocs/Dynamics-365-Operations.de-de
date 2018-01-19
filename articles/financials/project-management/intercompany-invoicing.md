@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -59,9 +60,9 @@ In diesem Beispiel muss FRSI ein Debitor der juristischen Person USSI sein. USSI
 
 1.  Richten Sie FRSI als Debitor in der juristischen Person USSI und USSI als Kreditor in der juristische Person FRSI ein. Es gibt drei Einstiegspunkte für die für diese Aufgabe erforderlichen Schritte.
     | Schritt | Einstiegspunkt                                                                       | Beschreibung   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A:    | Klicken Sie in USSI auf **Debitoren** &gt; **Debitoren** &gt; **Alle Debitoren.** | Erstellen Sie einen neuen Debitorendatensatze für FRSI, und wählen Sie die Debitorengruppe aus.                                                                                                                                                                                                                           |
-    | Mrd    | Klicken Sie in FRSI auf **Kreditoren** &gt; **Kreditoren** &gt; **Alle Kreditoren.**        | Erstellen Sie einen neuen Kreditorendatensatz für USSI, und wählen Sie die Kreditorengruppe aus.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A:    | Klicken Sie in USSI auf **Debitoren** &gt; **Debitoren** &gt; **Alle Debitoren.** | Erstellen Sie einen neuen Debitorendatensatze für FRSI, und wählen Sie die Debitorengruppe aus.                                                                                  |
+    | Mrd    | Klicken Sie in FRSI auf **Kreditoren** &gt; **Kreditoren** &gt; **Alle Kreditoren.**        | Erstellen Sie einen neuen Kreditorendatensatz für USSI, und wählen Sie die Kreditorengruppe aus.                                                                                    |
     | C:    | Öffnen Sie in FRSI den Kreditorendatensatz, den Sie gerade erstellt haben.                            | Klicken Sie im Aktivitätsbereich auf der Registerkarte **Allgemein** und in der Gruppe **Einrichtung** auf **Intercompany**. Auf der Seite **Intercompany** legen Sie auf der Registerkarte **Handelsbeziehung** den **Aktiv**-Schieberegler auf **Ja** fest. Wählen Sie im Feld **Debitorenunternehmen** den Kundendatensatz, den Sie in Schritt A erstellt haben. |
 
 2.  Klicken Sie **Projektverwaltung und -verrechnung** &gt; **Einstellungen** &gt; **Projektverwaltungsbetriebskontoparameter**, und klicken Sie dann auf die Registerkarte **Intercompany** . Die Methode, mit der Sie die Parameter einrichten, hängt davon ab, ob Sie die ausleihende juristische Person oder die Ausleihejuristische Person sind.
