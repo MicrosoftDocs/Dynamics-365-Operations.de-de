@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: a351418583ee29ad57bd2586121bb92d24635fb8
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 13f7cfa8776436ed2c73fc588948ce88fee93326
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,14 +31,14 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="06f66-105">In diesem Thema wird der **Istwert verglichen mit Budget**-Inhalt von Microsoft Power BI beschrieben.</span><span class="sxs-lookup"><span data-stu-id="06f66-105">This topic describes the **Actual vs budget** Microsoft Power BI content.</span></span> <span data-ttu-id="06f66-106">Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="06f66-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span> 
 
-# <a name="overview"></a><span data-ttu-id="06f66-107">Überblick</span><span class="sxs-lookup"><span data-stu-id="06f66-107">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="06f66-107">Überblick</span><span class="sxs-lookup"><span data-stu-id="06f66-107">Overview</span></span>
 
 <span data-ttu-id="06f66-108">Der **Istwert verglichen mit Budget**-Inhalt von Power BI wurde für Personen erstellt, die für die Überwachung der tatsächlichen Leistung im Vergleich zur Budgetleistung in ihrer Organisation verantwortlich sind.</span><span class="sxs-lookup"><span data-stu-id="06f66-108">The **Actual vs budget** Power BI content was created for individuals who are responsible for monitoring actual versus budget performance in their organization.</span></span> <span data-ttu-id="06f66-109">Der **Ist-Wert im Vergleich mit Budget**-Inhalt für Power BI bietet Einblicke in Budgetabweichungen.</span><span class="sxs-lookup"><span data-stu-id="06f66-109">The **Actual vs budget** Power BI content provides visibility into your budget variances.</span></span> <span data-ttu-id="06f66-110">Sie können Budgets für das aktuelle Jahr nach Firmenkategorie, Budgetcode, Hauptkonto, Hauptkontobeschreibungen oder Finanzzeitraum analysieren, um ein besseres Verständnis für die Ursache von Abweichungen zu bekommen.</span><span class="sxs-lookup"><span data-stu-id="06f66-110">You can analyze budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.</span></span> 
 
-# <a name="accessing-the-power-bi-content"></a><span data-ttu-id="06f66-111">Zugreifen au Power BI Inhalt</span><span class="sxs-lookup"><span data-stu-id="06f66-111">Accessing the Power BI content</span></span>
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="06f66-111">Zugreifen au Power BI Inhalt</span><span class="sxs-lookup"><span data-stu-id="06f66-111">Accessing the Power BI content</span></span>
 <span data-ttu-id="06f66-112">Berichte vom **Istwert verglichen mit Budget** Power BI-Inhalt werden in **Sachkontobudget und Planungen** in **CFO** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="06f66-112">Reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.</span></span>
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="06f66-113">Berichte, die im Power BI Inhalt enthalten sind</span><span class="sxs-lookup"><span data-stu-id="06f66-113">Reports that are included in the Power BI content</span></span>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="06f66-113">Berichte, die im Power BI Inhalt enthalten sind</span><span class="sxs-lookup"><span data-stu-id="06f66-113">Reports that are included in the Power BI content</span></span>
 <span data-ttu-id="06f66-114">Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im **Ist-Wert im Vergleich mit Budget**-Power BI-Inhalt befindet.</span><span class="sxs-lookup"><span data-stu-id="06f66-114">The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.</span></span>
 
 | <span data-ttu-id="06f66-115">Bericht</span><span class="sxs-lookup"><span data-stu-id="06f66-115">Report</span></span>                      | <span data-ttu-id="06f66-116">Metriken</span><span class="sxs-lookup"><span data-stu-id="06f66-116">Metrics</span></span> |
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="06f66-129">Nettoeinkommen</span><span class="sxs-lookup"><span data-stu-id="06f66-129">Net income</span></span>                  | <ul><li><span data-ttu-id="06f66-130">Diesjähriges Nettoeinkommen</span><span class="sxs-lookup"><span data-stu-id="06f66-130">Net income this year</span></span></li><li><span data-ttu-id="06f66-131">Ziel des Nettoeinkommens basierend auf Budget</span><span class="sxs-lookup"><span data-stu-id="06f66-131">Goal for net income based on budget</span></span> </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="06f66-132">Das Datenmodells und die Entitäten verstehen</span><span class="sxs-lookup"><span data-stu-id="06f66-132">Understanding the data model and entities</span></span>
+## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="06f66-132">Das Datenmodells und die Entitäten verstehen</span><span class="sxs-lookup"><span data-stu-id="06f66-132">Understanding the data model and entities</span></span>
 
 | <span data-ttu-id="06f66-133">Entität</span><span class="sxs-lookup"><span data-stu-id="06f66-133">Entity</span></span>                    | <span data-ttu-id="06f66-134">Inhalt</span><span class="sxs-lookup"><span data-stu-id="06f66-134">Contents</span></span> |
 |---------------------------|----------|

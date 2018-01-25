@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 7a3ff5a00af72dd7810337d1390b39d4f849dada
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 9447b0d9eedbdd56f1e221a48f687a94a19d31c4
 ms.contentlocale: de-de
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -30,14 +30,14 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > <span data-ttu-id="b3e1e-104">Diese Funktion wird in Dynamics 365 for Finance and Operations (Version 7.2 und höher) unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-104">This feature is supported in Dynamics 365 for Finance and Operations (version 7.2 and later).</span></span>
 
-# <a name="introduction"></a><span data-ttu-id="b3e1e-105">Einführung</span><span class="sxs-lookup"><span data-stu-id="b3e1e-105">Introduction</span></span>
+## <a name="introduction"></a><span data-ttu-id="b3e1e-105">Einführung</span><span class="sxs-lookup"><span data-stu-id="b3e1e-105">Introduction</span></span>
 <span data-ttu-id="b3e1e-106">Dieses Thema zeigt, wie Sie der Registerkarte **Analysen** eines Arbeitsbereichs einen Microsoft Power BI-Bericht hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-106">This topic shows how to embed a Microsoft Power BI report on the **Analytics** tab of a workspace.</span></span> <span data-ttu-id="b3e1e-107">Für das hier gezeigte Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** in der Anwendung Flottenmanagement, um der Registerkarte **Analysen** einen analytischen Arbeitsbereich hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-107">For the example that is given here, we will extend the **Reservation management** workspace in the Fleet Management application to embed an analytical workspace on an **Analytics** tab.</span></span>
 
-# <a name="prerequisites"></a><span data-ttu-id="b3e1e-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="b3e1e-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b3e1e-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="b3e1e-108">Prerequisites</span></span>
 + <span data-ttu-id="b3e1e-109">Zugriff auf eine Entwicklerumgebung mit Plattform-Update 8 oder höher.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-109">Access to a developer environment that runs Platform update 8 or later.</span></span>
 + <span data-ttu-id="b3e1e-110">Einen Analysebericht (.pbix-Datei), der mit Microsoft Power BI Desktop erstellt wurde, und der ein Datenmodell verwendet, das von der Entitätsspeicher-Datenbank gespeist wird.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-110">An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Entity store database.</span></span>
 
-# <a name="overview"></a><span data-ttu-id="b3e1e-111">Überblick</span><span class="sxs-lookup"><span data-stu-id="b3e1e-111">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="b3e1e-111">Überblick</span><span class="sxs-lookup"><span data-stu-id="b3e1e-111">Overview</span></span>
 <span data-ttu-id="b3e1e-112">Egal, ob Sie einen vorhandenen Anwendungsarbeitsbereich erweitern oder einen eigenen neuen Arbeitsbereich anlegen, können Sie eingebettete analytische Ansichten nutzen, um informative und interaktive Ansichten Ihrer Geschäftsdaten bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-112">Whether you extend an existing application workspace or introduce a new workspace of your own, you can use embedded analytical views to deliver insightful and interactive views of your business data.</span></span> <span data-ttu-id="b3e1e-113">Der Prozess für das Hinzufügen einer Registerkarte mit analytischem Arbeitsbereich umfasst 4 Schritte.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-113">The process for adding an analytical workspace tab has four steps.</span></span>
 
 1. <span data-ttu-id="b3e1e-114">Eine .pbix-Datei als Dynamics 365-Ressource hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-114">Add a .pbix file as a Dynamics 365 resource.</span></span>
@@ -48,7 +48,7 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > <span data-ttu-id="b3e1e-118">Weitere Informationen zum Erstellen von analytischen Berichten finden Sie unter [Erste Schritte mit Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).</span><span class="sxs-lookup"><span data-stu-id="b3e1e-118">For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).</span></span> <span data-ttu-id="b3e1e-119">Diese Seite enthält wichtige Informationen, die Ihnen helfen, attraktive Lösungen für analytische Berichte zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-119">This page is a great source for insights that can help you create compelling analytical reporting solutions.</span></span>
 
-# <a name="add-a-pbix-file-as-a-resource"></a><span data-ttu-id="b3e1e-120">Eine .pbix-Datei als Ressource hinzufügen</span><span class="sxs-lookup"><span data-stu-id="b3e1e-120">Add a .pbix file as a resource</span></span>
+## <a name="add-a-pbix-file-as-a-resource"></a><span data-ttu-id="b3e1e-120">Eine .pbix-Datei als Ressource hinzufügen</span><span class="sxs-lookup"><span data-stu-id="b3e1e-120">Add a .pbix file as a resource</span></span>
 <span data-ttu-id="b3e1e-121">Bevor Sie anfangen, müssen Sie den Power BI-Bericht erstellen oder erhalten, den Sie in den Arbeitsbereich einbetten wollen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-121">Before you begin, you must create or obtain the Power BI report that you will embed in the workspace.</span></span> <span data-ttu-id="b3e1e-122">Weitere Informationen zum Erstellen von analytischen Berichten finden Sie unter [Erste Schritte mit Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).</span><span class="sxs-lookup"><span data-stu-id="b3e1e-122">For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).</span></span>
  
 <span data-ttu-id="b3e1e-123">Gehen Sie wie folgt vor, um eine .pbix-Datei als Visual Studio-Projektartefakt einzufügen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-123">Follow these steps to add a .pbix file as a Visual Studio project artifact.</span></span>
@@ -66,7 +66,7 @@ ms.lasthandoff: 01/19/2018
   
 <span data-ttu-id="b3e1e-131">Nachdem Sie die .pbix-Datei als Dynamics 365-Ressource hinzugefügt haben, können Sie die Berichte in Arbeitsbereiche einbetten und unter Verwendung von Menüeinträgen direkte Links hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-131">Now that you've added the .pbix file as a Dynamics 365 resource, you can embed the reports in workspaces and add direct links by using menu items.</span></span>
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a><span data-ttu-id="b3e1e-132">Hinzufügen eines Registerkarten-Steuerelements zu einem Anwendungsarbeitsbereich</span><span class="sxs-lookup"><span data-stu-id="b3e1e-132">Add a tab control to an application workspace</span></span>
+## <a name="add-a-tab-control-to-an-application-workspace"></a><span data-ttu-id="b3e1e-132">Hinzufügen eines Registerkarten-Steuerelements zu einem Anwendungsarbeitsbereich</span><span class="sxs-lookup"><span data-stu-id="b3e1e-132">Add a tab control to an application workspace</span></span>
 <span data-ttu-id="b3e1e-133">In diesem Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** im Flottenmanagement-Modell, indem wir der Definition des Formulars **FMClerkWorkspace** die Registerkarte **Analysen** hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-133">In this example, we will extend the **Reservation management** workspace in the Fleet Management model by adding the **Analytics** tab to the definition of the **FMClerkWorkspace** form.</span></span>
  
 <span data-ttu-id="b3e1e-134">Die folgende Abbildung zeigt, wie das Formular **FMClerkWorkspace** im Designer in Microsoft Visual Studio aussieht.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-134">The following illustration shows what the **FMClerkWorkspace** form looks like in the designer in Microsoft Visual Studio.</span></span>
@@ -105,7 +105,7 @@ ms.lasthandoff: 01/19/2018
  
 <span data-ttu-id="b3e1e-161">Damit haben Sie die Aufgabe fertiggestellt, die Definition des Anwendungsformulars zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-161">You've now completed the task of extending the application form definition.</span></span> <span data-ttu-id="b3e1e-162">Weitere Informationen zur Verwendung von Erweiterungen für Anpassungen finden Sie in [Anpassung: Überlagerungen und Erweiterungen](../extensibility/customization-overlayering-extensions.md).</span><span class="sxs-lookup"><span data-stu-id="b3e1e-162">For more information about how to use extensions to do customizations, see  [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).</span></span>
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a><span data-ttu-id="b3e1e-163">Hinzufügen einer X++-Geschäftslogik, um ein Viewer-Steuerelement einzubetten</span><span class="sxs-lookup"><span data-stu-id="b3e1e-163">Add X++ business logic to embed a viewer control</span></span>
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a><span data-ttu-id="b3e1e-163">Hinzufügen einer X++-Geschäftslogik, um ein Viewer-Steuerelement einzubetten</span><span class="sxs-lookup"><span data-stu-id="b3e1e-163">Add X++ business logic to embed a viewer control</span></span>
 <span data-ttu-id="b3e1e-164">Gehen Sie wie folgt vor, um eine Geschäftslogik hinzuzufügen, die das Steuerelement für den Bericht-Viewer initialisiert, das in den Arbeitsbereich **Reservierungsverwaltung** eingebettet ist.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-164">Follow these steps to add business logic that initializes the report viewer control that is embedded in the **Reservation management** workspace.</span></span>
 
 1. <span data-ttu-id="b3e1e-165">Öffnen Sie den Formulardesigner **FMClerkWorkspace**, um die Designdefinition zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-165">Open the **FMClerkWorkspace** form designer to extend the design definition.</span></span>
@@ -151,12 +151,12 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > <span data-ttu-id="b3e1e-172">Über die Registerkarten des Arbeitsbereichs unterhalb der Seitenüberschrift können Sie auf die vorhandene sofort ausgeführte Ansicht zugreifen.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-172">You can access the existing operational view by using the workspace tabs below the page title.</span></span>
 
-# <a name="reference"></a><span data-ttu-id="b3e1e-173">Referenz</span><span class="sxs-lookup"><span data-stu-id="b3e1e-173">Reference</span></span>
+## <a name="reference"></a><span data-ttu-id="b3e1e-173">Referenz</span><span class="sxs-lookup"><span data-stu-id="b3e1e-173">Reference</span></span>
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a><span data-ttu-id="b3e1e-174">Die Methode PBIReportHelper.initializeReportControl</span><span class="sxs-lookup"><span data-stu-id="b3e1e-174">PBIReportHelper.initializeReportControl method</span></span>
+### <a name="pbireporthelperinitializereportcontrol-method"></a><span data-ttu-id="b3e1e-174">Die Methode PBIReportHelper.initializeReportControl</span><span class="sxs-lookup"><span data-stu-id="b3e1e-174">PBIReportHelper.initializeReportControl method</span></span>
 <span data-ttu-id="b3e1e-175">Dieser Abschnitt enthält Informationen über die Helferklasse, mit der ein Power BI-Bericht (.pbix-Ressource) in ein Formular-Gruppensteuerelement eingebettet wird.</span><span class="sxs-lookup"><span data-stu-id="b3e1e-175">This section provides information about the helper class that is used to embed a Power BI report (.pbix resource) in a form group control.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="b3e1e-176">Syntax</span><span class="sxs-lookup"><span data-stu-id="b3e1e-176">Syntax</span></span>
+#### <a name="syntax"></a><span data-ttu-id="b3e1e-176">Syntax</span><span class="sxs-lookup"><span data-stu-id="b3e1e-176">Syntax</span></span>
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a><span data-ttu-id="b3e1e-177">Parameter</span><span class="sxs-lookup"><span data-stu-id="b3e1e-177">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="b3e1e-177">Parameter</span><span class="sxs-lookup"><span data-stu-id="b3e1e-177">Parameters</span></span>
 
 | <span data-ttu-id="b3e1e-178">Name</span><span class="sxs-lookup"><span data-stu-id="b3e1e-178">Name</span></span> | <span data-ttu-id="b3e1e-179">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b3e1e-179">Description</span></span> |
 |---|---|
