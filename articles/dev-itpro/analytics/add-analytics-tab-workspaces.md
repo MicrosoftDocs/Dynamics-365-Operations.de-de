@@ -30,14 +30,14 @@ ms.lasthandoff: 11/06/2017
 > [!NOTE]
 > Diese Funktion wird in Dynamics 365 for Finance and Operations (Version 7.2 und höher) unterstützt.
 
-# <a name="introduction"></a>Einführung
+## <a name="introduction"></a>Einführung
 Dieses Thema zeigt, wie Sie der Registerkarte **Analysen** eines Arbeitsbereichs einen Microsoft Power BI-Bericht hinzufügen. Für das hier gezeigte Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** in der Anwendung Flottenmanagement, um der Registerkarte **Analysen** einen analytischen Arbeitsbereich hinzuzufügen.
 
-# <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 + Zugriff auf eine Entwicklerumgebung mit Plattform-Update 8 oder höher.
 + Einen Analysebericht (.pbix-Datei), der mit Microsoft Power BI Desktop erstellt wurde, und der ein Datenmodell verwendet, das von der Entitätsspeicher-Datenbank gespeist wird.
 
-# <a name="overview"></a>Überblick
+## <a name="overview"></a>Überblick
 Egal, ob Sie einen vorhandenen Anwendungsarbeitsbereich erweitern oder einen eigenen neuen Arbeitsbereich anlegen, können Sie eingebettete analytische Ansichten nutzen, um informative und interaktive Ansichten Ihrer Geschäftsdaten bereitzustellen. Der Prozess für das Hinzufügen einer Registerkarte mit analytischem Arbeitsbereich umfasst 4 Schritte.
 
 1. Eine .pbix-Datei als Dynamics 365-Ressource hinzufügen.
@@ -48,7 +48,7 @@ Egal, ob Sie einen vorhandenen Anwendungsarbeitsbereich erweitern oder einen eig
 > [!NOTE]
 > Weitere Informationen zum Erstellen von analytischen Berichten finden Sie unter [Erste Schritte mit Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Diese Seite enthält wichtige Informationen, die Ihnen helfen, attraktive Lösungen für analytische Berichte zu erstellen.
 
-# <a name="add-a-pbix-file-as-a-resource"></a>Eine .pbix-Datei als Ressource hinzufügen
+## <a name="add-a-pbix-file-as-a-resource"></a>Eine .pbix-Datei als Ressource hinzufügen
 Bevor Sie anfangen, müssen Sie den Power BI-Bericht erstellen oder erhalten, den Sie in den Arbeitsbereich einbetten wollen. Weitere Informationen zum Erstellen von analytischen Berichten finden Sie unter [Erste Schritte mit Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Gehen Sie wie folgt vor, um eine .pbix-Datei als Visual Studio-Projektartefakt einzufügen.
@@ -66,7 +66,7 @@ Gehen Sie wie folgt vor, um eine .pbix-Datei als Visual Studio-Projektartefakt e
   
 Nachdem Sie die .pbix-Datei als Dynamics 365-Ressource hinzugefügt haben, können Sie die Berichte in Arbeitsbereiche einbetten und unter Verwendung von Menüeinträgen direkte Links hinzufügen.
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a>Hinzufügen eines Registerkarten-Steuerelements zu einem Anwendungsarbeitsbereich
+## <a name="add-a-tab-control-to-an-application-workspace"></a>Hinzufügen eines Registerkarten-Steuerelements zu einem Anwendungsarbeitsbereich
 In diesem Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** im Flottenmanagement-Modell, indem wir der Definition des Formulars **FMClerkWorkspace** die Registerkarte **Analysen** hinzufügen.
  
 Die folgende Abbildung zeigt, wie das Formular **FMClerkWorkspace** im Designer in Microsoft Visual Studio aussieht.
@@ -105,7 +105,7 @@ Nachdem Sie die Steuerelemente für das Formular hinzugefügt haben, die für di
  
 Damit haben Sie die Aufgabe fertiggestellt, die Definition des Anwendungsformulars zu erweitern. Weitere Informationen zur Verwendung von Erweiterungen für Anpassungen finden Sie in [Anpassung: Überlagerungen und Erweiterungen](../extensibility/customization-overlayering-extensions.md).
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Hinzufügen einer X++-Geschäftslogik, um ein Viewer-Steuerelement einzubetten
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Hinzufügen einer X++-Geschäftslogik, um ein Viewer-Steuerelement einzubetten
 Gehen Sie wie folgt vor, um eine Geschäftslogik hinzuzufügen, die das Steuerelement für den Bericht-Viewer initialisiert, das in den Arbeitsbereich **Reservierungsverwaltung** eingebettet ist.
 
 1. Öffnen Sie den Formulardesigner **FMClerkWorkspace**, um die Designdefinition zu erweitern.
@@ -151,12 +151,12 @@ Damit haben Sie die Aufgabe abgeschlossen, die Geschäftslogik hinzuzufügen, mi
 > [!NOTE]
 > Über die Registerkarten des Arbeitsbereichs unterhalb der Seitenüberschrift können Sie auf die vorhandene sofort ausgeführte Ansicht zugreifen.
 
-# <a name="reference"></a>Referenz
+## <a name="reference"></a>Referenz
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a>Die Methode PBIReportHelper.initializeReportControl
+### <a name="pbireporthelperinitializereportcontrol-method"></a>Die Methode PBIReportHelper.initializeReportControl
 Dieser Abschnitt enthält Informationen über die Helferklasse, mit der ein Power BI-Bericht (.pbix-Ressource) in ein Formular-Gruppensteuerelement eingebettet wird.
 
-### <a name="syntax"></a>Syntax
+#### <a name="syntax"></a>Syntax
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a>Parameter
+#### <a name="parameters"></a>Parameter
 
 | Name | Beschreibung |
 |---|---|

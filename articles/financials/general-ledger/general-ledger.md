@@ -43,7 +43,7 @@ Sie können Geldbeträge auf Grundlage von Zuordnungsregeln einem oder mehreren 
 
 [![Geschäftsprozess](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# <a name="sales-tax"></a>Mehrwertsteuer
+## <a name="sales-tax"></a>Mehrwertsteuer
 Jedes Unternehmen erfasst und zahlt Steuern an verschiedene Steuerbehörden. Die Regeln und Sätze unterscheiden sich je nach Land/Region, Bundesland, Landkreis und Ort.
 Zudem müssen sie in regelmäßigen Abständen aktualisiert werden, wenn Steuerbehörden die Anforderungen ändern. Mehrwertsteuercodes enthalten die grundlegenden Informationen zum abzuführenden Steuerbetrag. Beim Einrichten von Mehrwertsteuercodes definieren Sie die zu erfassenden Beträge oder Prozentsätze. Sie legen außerdem die unterschiedlichen Methoden zur Anwendung der Beträge oder Prozentsätze auf Buchungsbeträge fest. Die Themen dieses Abschnitts enthalten Informationen zum Einrichten von Mehrwertsteuercodes für die von den Steuerbehörden geforderten Methoden und Sätze.
 
@@ -52,13 +52,13 @@ Zudem müssen sie in regelmäßigen Abständen aktualisiert werden, wenn Steuerb
  - [Mehrwertsteuerzahlungen und Rundungsregeln](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-#### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
+### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 
 Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden. 
 
-#### <a name="blogs"></a>Blogs
+### <a name="blogs"></a>Blogs
 
 Meinungen, Neuigkeiten und weitere Informationen zu Kreditorenkonten und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
@@ -66,10 +66,10 @@ Im [Microsoft Dynamics AX-Produktteamblog](https://blogs.msdn.microsoft.com/dax/
 
 Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 
-#### <a name="task-guides"></a>Aufgabenleitfäden
+### <a name="task-guides"></a>Aufgabenleitfäden
 Weitere Hilfe finden Sie als Aufgabenleitfäden innerhalb von Finance and Operations. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche „Hilfe”.
 
-#### <a name="videos"></a>Videos
+### <a name="videos"></a>Videos
 
 Sehen Sie in den Videos zu Hilfe + Anleitungen nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
 

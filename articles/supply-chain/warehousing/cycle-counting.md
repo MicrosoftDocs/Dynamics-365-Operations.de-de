@@ -137,7 +137,7 @@ Eine Zykluszählungsdifferenz tritt in den folgenden Szenarien auf, wenn die Opt
 
 Sie können Abweichungen in den gezählten Werten anpassen und dann den gezählten Wert auf der Seite **Ausstehende Prüfung der Zykluszählung** akzeptieren. Sie können die geänderte Anzahl der Artikelmenge auf der Seite **Verfügbarer Lagerbestand nach Lagerplatz** überprüfen. Der gezählte Wert wird abgelehnt, wenn die Differenz nicht genehmigt werden kann.
 
-# <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 [Konfigurieren von mobile Geräten für Lagerortarbeit](configure-mobile-devices-warehouse.md)
 
 

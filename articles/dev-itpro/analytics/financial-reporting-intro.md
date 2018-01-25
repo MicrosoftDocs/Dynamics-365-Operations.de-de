@@ -98,7 +98,7 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 </tbody>
 </table>
 
-#<a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 [Finanzbericht generieren](generate-financial-report.md)
 
 

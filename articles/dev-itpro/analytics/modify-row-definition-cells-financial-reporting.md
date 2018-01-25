@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Dieser Artikel beschreibt die Informationen, die für jede Zelle in einer Zeilendefinition eines Finanzberichts benötigt werden und erläutert, wie diese Informationen eingegeben werden. 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a>Angeben eines Zeilencodes in einer Zeilendefinition
+## <a name="specify-a-row-code-in-a-row-definition"></a>Angeben eines Zeilencodes in einer Zeilendefinition
 
 In den Zeilendefinitionen bestimmen die Zahlen bzw. Beschriftungen in der Zelle **Zeilencode** jede Position in der Zeilendefinition. Sie können den Zeilencode angeben, um auf Daten in Berechnungen und Summen zu verweisen.
 
@@ -506,8 +506,7 @@ Ein Dimensionswertsatz ist eine benannte Gruppe von Dimensionswerten. Ein Dimens
 4.  Wählen Sie die den löschenden Satz aus, und klicken Sie auf **Löschen**. Klicken Sie auf **Ja**, um den Dimensionswertsatz dauerhaft zu löschen.
 
 
-<a name="see-also"></a>Siehe auch
---------
+## <a name="see-also"></a>Siehe auch
 
 [Finanzberichterstellung](financial-reporting-intro.md)
 

@@ -112,7 +112,7 @@ Wenn Sie einen Baustein öffnen, können andere Benutzer auf diesen Baustein nur
 3.  Wählen Sie einen Baustein aus, und klicken Sie anschließend **Auschecken rückgängig machen**.
 4.  Klicken auf **Ja**, um den Bausteins einzuchecken.
 
-# <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 
 [Finanzberichterstellung](financial-reporting-intro.md)
 
