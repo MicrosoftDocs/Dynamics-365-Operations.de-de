@@ -1,4 +1,4 @@
---- 
+---
 title: Einen Produktionsauftrag als abgeschlossen melden
 description: Diese Prozedur zeigt an, wie ein Produktionsauftrag als abgeschlossen gemeldet wird.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -17,10 +17,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 17b2285e4669f1ad8fa6cea1250693a2a70c7dfa
+ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
+ms.openlocfilehash: e6f5e7316f89ba7c2b7091eb9df02aa07ea44dbd
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 # <a name="report-a-production-order-as-finished"></a><span data-ttu-id="1a1b6-103">Einen Produktionsauftrag als abgeschlossen melden</span><span class="sxs-lookup"><span data-stu-id="1a1b6-103">Report a production order as finished</span></span>
@@ -50,5 +50,4 @@ ms.lasthandoff: 09/29/2017
 3. <span data-ttu-id="1a1b6-123">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="1a1b6-123">In the list, mark the selected row.</span></span>
 4. <span data-ttu-id="1a1b6-124">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="1a1b6-124">In the list, click the link in the selected row.</span></span>
     * <span data-ttu-id="1a1b6-125">Die Erfassung "Fertigmeldung" wurde gebucht.</span><span class="sxs-lookup"><span data-stu-id="1a1b6-125">The Report as finished journal is posted.</span></span> <span data-ttu-id="1a1b6-126">Wenn Sie Regulierungen in der Erfassung vornehmen möchten, können Sie manuell eine neue Erfassung erstellen, in der Sie Änderungen vornehmen können.</span><span class="sxs-lookup"><span data-stu-id="1a1b6-126">If you want to make adjustments to the journal, you can manually create  a new journal where you can make changes.</span></span>  
-
 
