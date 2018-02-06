@@ -1,4 +1,4 @@
---- 
+---
 title: Produktionsauftrag erstellen
 description: Diese Prozedur zeigt, wie ein Produktionsauftrag erstellt wird.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -69,5 +69,4 @@ Diese Prozedur zeigt, wie ein Produktionsauftrag erstellt wird. Das Demodatenunt
     * Das Ändern der Bearbeitungszeit wirkt sich auf die geschätzte Arbeitsplanrückmeldung und die Kosten des Produktionsauftrags aus.  
 6. Klicken Sie auf "Speichern".
 7. Schließen Sie die Seite.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: Einen Produktionsauftrag planen
 description: Diese Prozedur zeigt, wie ein Produktionsauftrag geplant wird.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -53,5 +53,4 @@ Diese Prozedur zeigt, wie ein Produktionsauftrag geplant wird. Das Demodatenunte
     * Die Kapazitätsauslastungsseite stellt die Kapazitäten dar, die für die Feinterminierung reserviert sind, die Gesamtanzahl von Stunden, die zur Zeit für die Ressource reserviert werden und die Anzahl der Stunden ,die für die Feinterminierung der Ressource verfügbar sind.  
 6. Schließen Sie die Seite.
 7. Schließen Sie die Seite.
-
 

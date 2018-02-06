@@ -1,4 +1,4 @@
---- 
+---
 title: Produktionsauftrag vorkalkulieren
 description: "Sie können dieses Verfahren ausführen, indem Sie das USMF-Demodatunternehmen oder Ihren eigenen Datensatz verwenden."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -42,5 +42,4 @@ Sie können dieses Verfahren ausführen, indem Sie das USMF-Demodatunternehmen o
 1. Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".
 2. Klicken Sie auf Berechnungsdetails anzeigen
     * Auf dieser Seite wird die Kostenaufschlüsselung angezeigt. So können Sie beispielsweise den gesamten Einstandspreis pro Einheit für das Fertigprodukt in der ersten Zeile anzeigen. Die folgenden Zeilen enthalten Kosten gemäß der Stückliste, den Produktionsarbeitsplan und die indirekten Kosten.  
-
 
