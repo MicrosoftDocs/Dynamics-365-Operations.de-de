@@ -1,7 +1,7 @@
 ---
 title: Finanzberichtkomponenten
 description: "Dieser Artikel beschreibt die Verwendung der Komponenten, der Bausteine oder Berichtsdefinitionen in der Finanzberichterstellung. Diese Bausteine beinhalten Zeilendefinitionen, Spaltendefinitionen und Berichtstruktur-Definitionen. Dieser Artikel erläutert, wie Bausteine organisiert und gesperrt werden, und wie Sie mit Bausteingruppen arbeiten."
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article

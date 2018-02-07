@@ -1,7 +1,7 @@
 ---
 title: "Personalaktivitäten [FAQ]"
 description: "Dieses Thema enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Ihre Organisation Mitarbeiteraktivitäten verwendet. Mitarbeiteraktivitäten sind zusätzliche Schritte, die Sie ausführen müssen, wenn Sie bestimmte mitarbeiterbezogene Aufgaben ausführen."
-author: shielas
+author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
