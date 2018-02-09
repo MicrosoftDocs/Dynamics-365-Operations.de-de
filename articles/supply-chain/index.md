@@ -3,7 +3,7 @@ title: "Startseite für Lieferkettenverwaltung"
 description: "Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Lieferkettenverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 98008b494f675209949afd961e3cd06dfdc9ec9a
-ms.openlocfilehash: 81a5d21233f12e7c26f0cce6a6c05fefde2ca7dd
+ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
+ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/22/2018
 
 ---
 
@@ -52,9 +52,12 @@ Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erh
 
 ## <a name="videos"></a>Videos
 
-### <a name="get-started"></a>Erste Schritte  
+Diese kurzen Videos bieten Ihnen Informationen zu den neuen Funktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (Dezember 2017).
 
-Diese kurzen Videos bieten Ihnen einen Einstieg in die neuen Funktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017).
+-  [Ausblick auf die Bargeldintegration](https://youtu.be/AVV9x5x-XCg) 
+-  [Optimierungsratgeber](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+
+Diese kurzen Videos bieten Ihnen Informationen zu den neuen Funktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017).
 
 -  [Erste Schritte mit Kostenrechnung](https://youtu.be/1pUDtJQZ8FU)
 -  [Mobiler Arbeitsbereich für die Kostensteuerung](https://youtu.be/imsuTg8rUVk)
@@ -62,8 +65,7 @@ Diese kurzen Videos bieten Ihnen einen Einstieg in die neuen Funktionen in Micro
 -  [Bestätigung von Bestellungen auf einem mobilen Gerät](https://youtu.be/gZ-gOlJe7H8)
 -  [Visuelle Zeitplanung mit Gantt-Diagramm für Produktions- und Chargenaufträge](https://youtu.be/BtbuShkGj4I)
 
-### <a name="tech-conference-recordings"></a>Technologiekonferenzaufzeichnungen
-Die meisten dieser Aufzeichnungen beschreiben die Produktfunktionalität für die ältere Version von Finance and Operations, aber die gleichen Konzepte gelten noch, und die Prozeduren sind in der aktuellen Version vergleichbar. 
+Diese technische Konferenz beschreibt die Produktfunktionalität für die ältere Version von Finance and Operations, aber die gleichen Konzepte gelten noch, und die Prozeduren sind in der aktuellen Version vergleichbar. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigurator in Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Produktprogrammplanung – Hinweise und Tricks zur Problembehebung im Bereich der Leistung</a>

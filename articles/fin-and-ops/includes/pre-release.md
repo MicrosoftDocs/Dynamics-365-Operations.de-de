@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Diese Funktion ist Teil einer gezielten Version und ist nur für Benutzer verfügbar, die sich für das Vorteilsprogramm für fortlaufenden der automatische Aktualisierung (CAAP) entschieden haben. Diese Funktion wird in einer anderen bevorstehenden allgemeinen Verfügbarkeitsversion einbezogen. Weitere Informationen zu Standardversionen und plattformspezifischen Versionen finden Sie unter [Standardversionen und plattformspezifische Versionen](../get-started/public-preview-releases.md).
