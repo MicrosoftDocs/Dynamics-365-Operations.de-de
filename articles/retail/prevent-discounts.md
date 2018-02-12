@@ -1,7 +1,7 @@
 ---
 title: "Sperren Sie Rabatte für Einzelhandelsprodukte"
 description: "Es gibt verschiedene Ursachen, warum Einzelhändler mehrere Produkte nicht als ermäßigt anzeigen wollen, entweder während einer Aktion oder während des Verkaufs am Point-of-Sale."
-author: jeffbl
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

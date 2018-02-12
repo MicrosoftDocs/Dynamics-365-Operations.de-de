@@ -34,8 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Dieses Thema behandelt die Optionen für die Einrichtung der erweiterten Anmeldung für Cloud-POS und Retail Modern POS (MPOS).
 
-<a name="setting-up-extended-logon"></a>Einrichten der erweiterten Anmeldung
-=========================
+## <a name="setting-up-extended-logon"></a>Einrichten der erweiterten Anmeldung
 
 Sie können die Einstellungen für Strichcodemasken unter **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Funktionsprofile** finden. Das Inforegister **Funktionen** umfasst folgende Optionen, die der erweiterten Anmeldung zugeordnet sind.
 
@@ -55,23 +54,19 @@ Wenn die Option **Personalkartenanmeldung** aktiviert ist, können Arbeitskräft
 
 Wenn die Option **Personalanmeldung mit Karte erfordert Kennwort** aktiviert ist, wird bei der Personalanmeldung mit Karte nur die Arbeitskraft ausgewählt, die der angegebenen erweiterten Anmeldung zugewiesen ist. Arbeitskräfte müssen noch eigene Kennwörter eingeben, wenn diese Option aktiviert ist.
 
-<a name="assigning-an-extended-logon"></a>Zuweisen einer erweiterten Anmeldung
-===========================
+## <a name="assigning-an-extended-logon"></a>Zuweisen einer erweiterten Anmeldung
 
 Standardmäßig können nur Manager die erweiterte Anmeldung den Arbeitskräften zuweisen. Um erweiterte Anmeldung zuzuweisen, fahren Sie mit **Erweiterte Anmeldung** in POS fort. Suchen Sie dann nach einer Arbeitskraft nach Eingabe der Kennung in der Auswahlliste. Wählen Sie die Arbeitskraft aus, und klicken Sie anschließend auf **Zuweisen**. Auf der nächsten Seite ziehen Sie die Karte durch das Lesegerät oder scannen Sie die Karte, um der Arbeitskraft die erweiterte Anmeldung zuzuweisen. Wenn der Vorgang erfolgreich war, wird die Schaltfläche **OK** verfügbar. Klicken Sie auf **OK**, um die erweiterten Anmeldung für diese Arbeitskraft zu speichern.
 
-<a name="deleting-an-extended-logon"></a>Löschen einer erweiterten Anmeldung
-==========================
+## <a name="deleting-an-extended-logon"></a>Löschen einer erweiterten Anmeldung
 
 Um die erweiterte Anmeldung zu löschen, die einer Arbeitskraft zugewiesen wurde, suchen Sie die Arbeitskraft, indem Sie den Vorgang **Erweiterte Anmeldung** verwenden. Wählen Sie die Arbeitskraft aus, und klicken Sie anschließend auf **Zuweisung aufheben**. Alle erweiterten Anmeldeinformationen, die dieser Arbeitskraft zugeordnet sind, werden entfernt.
 
-<a name="extending-extended-logon"></a>Erweitern der erweiterten Anmeldung
-========================
+## <a name="extending-extended-logon"></a>Erweitern der erweiterten Anmeldung
 
 Der Anmeldedienst kann erweitert werden, um zusätzliche Geräte für die erweiterte Anmeldung zu unterstützen, z.B. Handflächenscanner. Weitere Informationen finden Sie in der Dokumentation zur Erweiterbarkeit des POS.
 
-<a name="using-extended-logon"></a>Verwenden der erweiterten Anmeldung
-====================
+## <a name="using-extended-logon"></a>Verwenden der erweiterten Anmeldung
 
 Wenn die erweiterte Anmeldung konfiguriert ist und einer Arbeitskraft ein Strichcode oder ein Magnetstreifen zugewiesen wurde, muss die Arbeitskraft seine Karte nur Karte durch ein Lesegerät ziehen, wenn die POS-Anmeldeseite angezeigt wird. Wenn auch ein Kennwort erforderlich ist, damit die Anmeldung durchgeführt werden kann, wird die Arbeitskraft aufgefordert, das Kennwort einzugeben.
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Lohnprozess für Zeit und Anwesenheit aktivieren"
 description: "Diese Prozedur zeigt, wie der Lohnprozess für Zeit und Anwesenheit aktiviert wird."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -68,5 +68,4 @@ Diese Prozedur zeigt, wie der Lohnprozess für Zeit und Anwesenheit aktiviert wi
 6. Erweitern Sie den Abschnitt "Zeiterfassung".
 7. Klicken Sie auf "Bearbeiten".
 8. Geben Sie im Feld "Lohnvereinbarung" einen Wert ein, oder wählen Sie einen Wert aus.
-
 

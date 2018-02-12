@@ -1,4 +1,4 @@
---- 
+---
 title: Einen Produktionsauftrag als abgeschlossen melden
 description: Diese Prozedur zeigt an, wie ein Produktionsauftrag als abgeschlossen gemeldet wird.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,5 +50,4 @@ Diese Prozedur zeigt an, wie ein Produktionsauftrag als abgeschlossen gemeldet w
 3. Markieren Sie in der Liste die ausgewählte Zeile.
 4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
     * Die Erfassung "Fertigmeldung" wurde gebucht. Wenn Sie Regulierungen in der Erfassung vornehmen möchten, können Sie manuell eine neue Erfassung erstellen, in der Sie Änderungen vornehmen können.  
-
 

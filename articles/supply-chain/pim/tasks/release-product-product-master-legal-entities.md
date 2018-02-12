@@ -1,7 +1,7 @@
 --- 
 title: "Ein Produkt bzw. einen Produktmaster für juristische Personen freigeben"
 description: "Diese Prozedur führt Sie Schritt für Schritt durch die Freigabe eines Produkts oder Produktmasters in einer oder mehreren juristischen Personen."
-author: josaw1
+author: BibiSp
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process

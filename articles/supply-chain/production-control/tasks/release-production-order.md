@@ -1,4 +1,4 @@
---- 
+---
 title: Produktionsauftrag freigeben
 description: Diese Prozedur zeigt an, wie ein Produktionsauftrag freigegeben wird.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: johanho
@@ -39,5 +39,4 @@ Diese Prozedur zeigt an, wie ein Produktionsauftrag freigegeben wird. Das Demoda
 5. Klicken Sie auf das Kontrollkästchen "Arbeitsplanliste drucken".
 6. Klicken Sie auf "OK".
 7. Schließen Sie die Seite.
-
 

@@ -114,6 +114,7 @@
 #### [Anpassen: Überlagerung und Erweiterungen](extensibility/customization-overlayering-extensions.md)
 ### Neuigkeiten
 #### [Erweiterbarkeitsänderungen im Juli 2017](extensibility/changes-july-2017.md)
+#### [Erweiterungsänderungen in Dynamics 365 for Finance and Operations, Enterprise Edition 7.3](extensibility/extensibility-changes-73.md)
 ### Grundlagen
 #### [Intrusive Anpassungen](extensibility/intrusive-customizations.md)
 #### [Klassenerweiterungen](extensibility/class-extensions.md)
@@ -138,14 +139,19 @@
 #### [Formularsteuerelementeigenschaften ändern](extensibility/modify-control-properties.md)
 #### [Ein Etikett ändern](extensibility/change-label.md)
 #### [Den Nummernkreisbereich erweitern](extensibility/extend-number-sequence-scope.md)
+#### [Eine neue Lagerungsdimension hinzufügen](extensibility/inventory-dimensions.md)
+#### [Änderungen der Preis- und Rabatterweiterbarkeit](extensibility/pricing-app73.md)
+#### [Tabellenzuordnungserweiterung](extensibility/map-extensions.md)
+#### [Tabellenzuordnungen als Schnittstellen erweitern](extensibility/maps-as-interfaces.md)
+#### [Tabellenzuordnungen für Versionserstellung erweitern](extensibility/maps-with-versioning.md)
 
 
 
 
 ## Leistung
-### [Einen Ablauf mithilfe des Ablaufverfolgungsparsers verfolgen](perf-test/trace-trace-tutorial.md)
+### [Einen Ablauf mithilfe des Trace Parser verfolgen](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK und Mehrbenutzertest mit Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
-### [Mithilfe des Ablaufverfolgungsparsers Probleme diagnostizieren und Leistungsprobleme analysieren](perf-test/trace-parser.md)
+### [Mithilfe des Trace Parser Probleme diagnostizieren und Leistungsprobleme analysieren](perf-test/trace-parser.md)
 ### [Leistungszeitgeber](perf-test/performance-timer.md)
 ## Unterstützung in Visual Studio testen
 ### [Tests und Überprüfungen](perf-test/testing-validation.md)
@@ -523,16 +529,16 @@
 
 # [Aktualisierung und Migration](migration-upgrade/upgrade-home-page.md)
 ## [Upgrade von AX 2012 zu Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
-### [Analysieren – Das Upgrade-Analysetool verwenden, um ein Upgrade zu planen](migration-upgrade/upgrade-analyzer-tool.md)
-### [Analysieren – Den Code-Aktualisierungsdienst verwenden, um den Aufwand der Aktualisierung von Code vorzukalkulieren](migration-upgrade/analyze-code-upgrade.md)
-### [Analysieren - Eine Sandkastenumgebung bereitstellen](migration-upgrade/analysis-sandbox.md)
-### [Aktualisierung – Datenaktualisierung in einer Entwicklungsumgebung](migration-upgrade/data-upgrade-2012.md)
-### [Aktualisierung – AX 2012-Datenaktualisierungsaufgaben](migration-upgrade/prepare-data-upgrade.md)
-### [Aktualisierung – Datenaktualisierung in einer Sandkastenumgebung](migration-upgrade/upgrade-data-sandbox.md)
-### [Überprüfen – Übernahmetest](migration-upgrade/upgrade-cutover-testing.md)
-### [Überprüfen – Aufgaben, die nach Aktualisierung auszuführen sind](migration-upgrade/app-validation-process.md)
-### [Überprüfen – Funktionstest](migration-upgrade/upgrade-functional-validation.md)
-### [Überprüfen – auf Live-Schaltung vorbereiten](migration-upgrade/upgrade-go-live-prep.md)
+### [AX 2012 Upgrade – Das Upgrade-Analysetool zum Planen verwenden](migration-upgrade/upgrade-analyzer-tool.md)
+### [AX 2012 Ugrade – Den Code-Aktualisierungsdienst verwenden, um den Aufwand der Aktualisierung von Code vorzukalkulieren](migration-upgrade/analyze-code-upgrade.md)
+### [AX 2012 Upgrade - Eine Sandkastenumgebung bereitstellen](migration-upgrade/analysis-sandbox.md)
+### [AX 2012 Upgrade – Datenaktualisierung in einer Entwicklungsumgebung](migration-upgrade/data-upgrade-2012.md)
+### [AX 2012 Upgrade – AX 2012-Datenaktualisierungsaufgaben](migration-upgrade/prepare-data-upgrade.md)
+### [AX 2012 Upgrade – Datenaktualisierung in einer Sandkastenumgebung](migration-upgrade/upgrade-data-sandbox.md)
+### [AX 2012 Upgrade – Cut-Over-Tests](migration-upgrade/upgrade-cutover-testing.md)
+### [AX 2012 Upgrade – Aufgaben, die nach Aktualisierung abgeschlossen werden müssen](migration-upgrade/app-validation-process.md)
+### [AX 2012 Upgrade – Funktionsprüfung erfolgreich](migration-upgrade/upgrade-functional-validation.md)
+### [AX 2012 Upgrade – Vorbereitung für Go Live](migration-upgrade/upgrade-go-live-prep.md)
 
 
 ### Änderungen, die sich auf Upgrade von AX 2012 auswirken
@@ -553,7 +559,7 @@
 ## Auf ein aktuelles Update aktualisieren
 ### [Prozess zum Verschieben auf das neueste Update](migration-upgrade/upgrade-latest-update.md)
 ### [Lifecycle-Richtlinie](migration-upgrade/versions-update-policy.md)
-### [Das aktuellste Plattformupdate auf Ihre Umgebung anwenden](migration-upgrade/upgrade-latest-platform-update.md)
+### [Das aktuellste Platform Update auf Ihre Umgebung anwenden](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Die Dynamics-Plattform auf die Freigabe von August 2016 aktualisieren](migration-upgrade/update-platform-each-release.md)
 ### [Eine Sandkastenumgebung aktualisieren](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Daten in Entwicklungs- oder Demoumgebungen aktualisieren](migration-upgrade/upgrade-data-to-latest-update.md)
@@ -589,7 +595,9 @@
 
 ## [Stapelverarbeitung](sysadmin/batch-processing-overview.md)
 ### [Stapelverarbeitungsserver – Überblick](sysadmin/batch-server-overview.md)
-### [Chargenauftrag erstellen](sysadmin/tasks/create-batch-job.md)
+### [Stapelverarbeitungsauftrag erstellen](sysadmin/tasks/create-batch-job.md)
+
+## [Regeln für Optimierungsratgeber erstellen](sysadmin/optimization-advisor.md)
 
 # Lifecycle Services
 ## [Überblick über Lifecycle Services](lifecycle-services/lcs.md)

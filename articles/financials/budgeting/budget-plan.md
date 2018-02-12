@@ -53,10 +53,9 @@ Julia wird folgende Excel Tabelle erstellen, um das Budget vorzubereiten:
 
 [![Excel-Vorlage](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>Übung 1: Konfiguration
-=========================
+## <a name="exercise-1-configuration"></a>Übung 1: Konfiguration
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Aufgabe 1: Organisationshierarchie erstellen**
+### <a name="task-1-create-organizational-hierarchy"></a>**Aufgabe 1: Organisationshierarchie erstellen**
 Da der ganze Budgetierungsprozess in der Finanzabteilung geschieht, muss Julia eine sehr einfache Organisationshierarchie erstellen, die nur aus der Finanzabteilung besteht. 1.1. Navigieren Sie zu den Organisationshierarchien (Organisationsverwaltung &gt;Organisationen &gt;Organisationshierarchien) und klicken Sie auf die Schaltfläche "Neu"
 
 ![Hierarchie](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ Da der ganze Budgetierungsprozess in der Finanzabteilung geschieht, muss Julia e
 
 [![Gültigkeitsdatum](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>Aufgabe 2: Benutzersicherheit konfigurieren
+### <a name="task-2-configure-user-security"></a>Aufgabe 2: Benutzersicherheit konfigurieren
 Budgetplanung verwendet spezielle Sicherheitsrichtlinien, um den Zugriff auf die Budgetpläne zu konfigurieren. Julia muss den Zugriff auf die Finanzbudgetpläne selbst erteilen. 
 
 2.1. Wechsel zum DEMF-Kontext für die juristische Entität. 
@@ -109,7 +108,7 @@ Budgetplanung verwendet spezielle Sicherheitsrichtlinien, um den Zugriff auf die
 
 [![Zugriff gewähren](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>Abgabe 3: Szenarien erstellen
+### <a name="task-3-create-scenarios"></a>Abgabe 3: Szenarien erstellen
 3.1. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanung konfigurieren. Beachten Sie auf der Szenarioseite die Szenarien, die wir später in dieser Übungseinheit verwenden werden: Vorjahres-Istwerte und Budgetiert. 
 
 *Hinweis: Sie können neue Szenarien für diese Übung erstellen, wenn sie wünschen, und stattdessen diese verwenden.* 
@@ -118,7 +117,7 @@ Budgetplanung verwendet spezielle Sicherheitsrichtlinien, um den Zugriff auf die
 
 *Hinweis: Da Julia nicht dem formalen Genehmigungsprozess für die Budgetausarbeitung folgt, überspringen wir Workflows, Phasen und Workflowphaseneinrichtung in dieser Übungseinheit und verwenden die vorhandenen Einstellungen für den Workflow Automatisch genehmigt. Vgl. dazu Anhang zur Konfiguration von diesem Workflow.*
 
-## <a name="task-4-create-budget-plan-columns"></a>Abgabe 4: Budgetplanspalten erstellen
+### <a name="task-4-create-budget-plan-columns"></a>Abgabe 4: Budgetplanspalten erstellen
 Budgetplanspalten sind entweder monitär- oder mengenbasierte Spalten, die im Budgetplan-Dokumentenlayout verwendet werden können. In unserem Beispiel müssen wir eine Spalte für Vorjahres-Istwerte und 12 Spalten für jeden Monat in einem budgetierten Jahr erstellen. Spalten können entweder erstellt werden, indem Sie einfach auf die Schaltfläche "Hinzufügen" klicken und die Werte eintragen, oder mithilfe der "Datenentität". In dieser Übungseinheit verwenden wir "Datenentität", um die Werte einzutragen. 
 
 4.1. Öffnen Sie in Budgetplanungskonfiguration die Spaltenseite &gt;Einrichten &gt; Budgetplanung &gt;. Klicken Sie auf die Schaltfläche Office in der rechten oberen Ecke das Formulars, und wählen Sie Spalten (ungefiltert) aus 
@@ -151,7 +150,7 @@ Budgetplanspalten sind entweder monitär- oder mengenbasierte Spalten, die im Bu
 
 [![Aktualisieren](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Abgabe 5:Budgetplan-Dokumentenlayouts und - vorlagen erstellen
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Abgabe 5:Budgetplan-Dokumentenlayouts und - vorlagen erstellen
 Layout definiert, wie das Raster der Budgetsplan-Dokumentenpositionen aussieht, wenn ein Benutzer das Budgetplandokument öffnet. Es ist auch möglich, das Layout des Budgetplandokuments zu wechseln, um dieselben Daten aus verschiedenen Winkeln anzuzeigen. Jetzt, da sie die Spalten definiert hat, die in unserem Budgetplandokument verwendet werden, muss Julia ein Budgetsplan-Dokumentenlayout erstellen, das der Excel-Tabelle ähnlich sieht, das sie verwendet, um Budgetdaten zu erstellen (weitere Informationen finden Sie im Abschnitt Szenarioüberblick in dieser Übungseinheit) 
 
 5.1. Öffnen Sie in Budgetierung> &gt;Einstellungen&gt;Budgetplanung&gt;Budgetplanungskonfiguration die Seite "Layouts". Erstellen Sie ein neues Layout für den Monatsbudgeteintrag:
@@ -171,7 +170,7 @@ Auf Grundlage der Budgetplan-Layoutdefinition können wir eine Excel-Vorlage ers
 
 5.3. &lt;Optionaler Schritt&gt; Ändern Sie die Excel-Vorlage, um sie benutzerfreundlicher zu machen - fügen Sie Addierformeln, Überschriftenfelder, Formatierung usw. hinzu. Speichern Sie die Änderungen, und laden Sie die Datei zum Budgetplanlayout hoch, indem Sie auf Layout&gt; Hochladen[![](./media/screenshot26.png)](./media/screenshot26.png) klicken
 
-## <a name="task-6-create-a-budget-planning-process"></a>Aufgabe 6: Budgetplanungsprozess erstellen
+### <a name="task-6-create-a-budget-planning-process"></a>Aufgabe 6: Budgetplanungsprozess erstellen
 Julia muss einen neuen Budgetplanungsprozess erstellen und aktivieren, der sämtliche oben genannten Einstellungen kombiniert, um mit der Eingabe von Budgetplänen zu beginnen. Der Budgetplanungsprozess definiert, welche Budgetplanungsorganisationen, Workflows, Layouts und Vorlagen zum Erstellen von Budgetplänen verwendet werden. 
 
 6.1. Navigieren Sie zu Budgetierung  &gt;Einstellungen&gt; Budgetplanung &gt; Budgetplanungsprozess, und erstellen Sie einen neuen Datensatz.
@@ -192,10 +191,9 @@ Julia muss einen neuen Budgetplanungsprozess erstellen und aktivieren, der sämt
 
 [![Aktivieren](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>Übung 2: Prozesssimulation
-==============================
+## <a name="exercise-2-process-simulation"></a>Übung 2: Prozesssimulation
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Aufgabe 7: Anfängliche Daten für den Budgetplan aus dem Hauptbuch generieren
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Aufgabe 7: Anfängliche Daten für den Budgetplan aus dem Hauptbuch generieren
 7.1. Navigieren Sie zu Budgetierung &gt;Periodisch &gt; Budgetplan aus dem Hauptbuch generieren. Füllen Sie die periodischen Prozessparameter aus, klicken Sie auf die Schaltfläche "Generieren". 
 
 [![Generieren](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -208,7 +206,7 @@ Julia muss einen neuen Budgetplanungsprozess erstellen und aktivieren, der sämt
 
 [![Budgetplandokumente anzeigen](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Aufgabe 8: Budget des aktuellen Jahres auf Grundlage der Vorjahres-Istwerte erstellen
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Aufgabe 8: Budget des aktuellen Jahres auf Grundlage der Vorjahres-Istwerte erstellen
 Zuordnungsmethoden können im Budegetplan verwendet werden, um Informationen für Budgetpläne einfach von einem Szenario zu einem anderen zu kopieren/sie über Perioden zu verteilen/Dimensionen zuweisen. Wir verwenden Zuweisungen, um das Budget des aktuellen Jahres aus den Vorjahres-Istwerten zu erstellen. 
 
 8.1. Wählen Sie alle Positionen im Budgetplan-Dokumentenraster, und klicken Sie auf die Schaltfläche Budget zuteilen 
@@ -223,7 +221,7 @@ Die tatsächlichen Beträge das vorherige Jahr werden in das Budget des aktuelle
 
 [![Vertriebskurve](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Abgabe 9: Das Budgetplandokument mithilfe von Excel anpassen und das Dokument fertig stellen
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Abgabe 9: Das Budgetplandokument mithilfe von Excel anpassen und das Dokument fertig stellen
 9.1. Klicken Sie auf die Schaltflächen "Arbeitsblatt", um Dokumentinhalte in Excel zu öffnen
 
 [![Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -238,8 +236,7 @@ Die tatsächlichen Beträge das vorherige Jahr werden in das Budget des aktuelle
 
 Wenn der Workflow abgeschlossen ist, wird die Budgetplandokumentphase als "Genehmigt" angezeigt. [![Genehmigt](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>Anhang
-========
+## <a name="appendix"></a>Anhang
 
 ### <a name="auto-approve-workflow-configuration"></a>Workflowkonfiguration für automatische Genehmigung
 

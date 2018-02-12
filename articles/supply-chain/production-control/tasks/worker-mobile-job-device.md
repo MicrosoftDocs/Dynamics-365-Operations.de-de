@@ -69,4 +69,3 @@ Dieses Verfahren zeigt Ihnen an, wie Sie richtigen Rollen zu einem Benutzerkonto
 6. Im Feld "Produktionseinheits" können Sie den standardmäßigen Filter für die Arbeitskraft festlegen. Dadurch wird sichergestellt, dass nur Produktions-Einzelvorgänge für die ausgewählte Produktionseinheit angezeigt werden, wenn die Arbeitskraft sich beim Gerät anmeldet.
 7. Schließen Sie die Seite.
 
-

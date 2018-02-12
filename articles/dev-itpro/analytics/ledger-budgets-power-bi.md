@@ -31,14 +31,14 @@ ms.lasthandoff: 12/18/2017
 
 In diesem Thema wird der **Istwert verglichen mit Budget**-Inhalt von Microsoft Power BI beschrieben. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen. 
 
-# <a name="overview"></a>Überblick
+## <a name="overview"></a>Überblick
 
 Der **Istwert verglichen mit Budget**-Inhalt von Power BI wurde für Personen erstellt, die für die Überwachung der tatsächlichen Leistung im Vergleich zur Budgetleistung in ihrer Organisation verantwortlich sind. Der **Ist-Wert im Vergleich mit Budget**-Inhalt für Power BI bietet Einblicke in Budgetabweichungen. Sie können Budgets für das aktuelle Jahr nach Firmenkategorie, Budgetcode, Hauptkonto, Hauptkontobeschreibungen oder Finanzzeitraum analysieren, um ein besseres Verständnis für die Ursache von Abweichungen zu bekommen. 
 
-# <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
+## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
 Berichte vom **Istwert verglichen mit Budget** Power BI-Inhalt werden in **Sachkontobudget und Planungen** in **CFO** angezeigt.
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
 Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im **Ist-Wert im Vergleich mit Budget**-Power BI-Inhalt befindet.
 
 | Bericht                      | Metriken |
@@ -50,7 +50,7 @@ Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtssei
 | Nettoeinkommen                  | <ul><li>Diesjähriges Nettoeinkommen</li><li>Ziel des Nettoeinkommens basierend auf Budget </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
+## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
 | Entität                    | Inhalt |
 |---------------------------|----------|

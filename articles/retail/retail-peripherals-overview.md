@@ -1,6 +1,7 @@
 ---
 title: "Einzelhandelsperipheriegeräte – Überblick"
 description: "In diesem Thema werden einige Konzepte in Verbindung mit Einzelhandelsperipheriegeräten beschrieben."
+author: rubencdelgado
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
