@@ -6,19 +6,22 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: bb4d8fae432eca7fe9163dcb0763fff5c8d465f0
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 2fa843aee8927a1cb4f642c31d6f5683098d3c74
 ms.contentlocale: de-de
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -49,9 +52,9 @@ Auf Filialebene ist eine Konfigurationseinstellung verfügbar, um zu bestimmen, 
 
 Standardmäßig werden Auftragspositionen, die einer Filiale zugewiesen sind, als **Angenommen** markiert. Das bedeutet, es wird angenommen, dass diese von der zugewiesenen Filiale aus erfüllt werden und nicht einer weiteren Zuweisung unterliegen werden. In bestimmten Fällen möchten Einzelhändler möglicherweise Aufträge manuell annehmen, bevor sie erfüllt werden können. Wenn beispielsweise eine Filiale unterbesetzt ist und keine Aufträge erfüllen kann, nimmt ein Filialleiter nur so viele Aufträge zur Abwicklung an, wie seiner Einschätzung nach am betreffenden Tag angemessen abgewickelt werden können. Bis ein Auftrag angenommen ist, wird er möglicherweise vom Backoffice einer anderen Filiale neu zugewiesen. Auf diese Weise bietet die Auftragsannahme auch eine Möglichkeit anzugeben, dass ein Auftrag von einer Filiale bestätigt wurde und erfüllt wird. 
 
-Auftragspositionen für die Filialabholung werden wie immer als **Ausstehend** markiert und unterliegen nicht der Annahme.
+Auftragspositionen für die Filialabholung werden als **Ausstehend** markiert und unterliegen nicht der Annahme.
 
-Um manuelle Annahme oder Auftragspositionen zu aktivieren, navigieren Sie zu **Einzelhandel** > **Kanäle** > **Einzelhandelsfilialen** > **Alle Einzelhandelsfilialen**. Wählen Sie die Filiale aus, und klicken Sie auf die Filialkennung, um die Details der Filiale anzuzeigen. Klicken Sie auf **Bearbeiten**. Suchen Sie im Inforegister **Allgemein** die Unterüberschrift **Auftragserfüllung**, und ändern Sie **Manuelles Annehmen** von **Nein** auf **Ja**. 
+Um manuelle Annahme für Auftragspositionen zu aktivieren, navigieren Sie zu **Einzelhandel** > **Kanäle** > **Einzelhandelsfilialen** > **Alle Einzelhandelsfilialen**. Wählen Sie die Filiale aus, und klicken Sie auf die Filialkennung, um die Details der Filiale anzuzeigen. Klicken Sie auf **Bearbeiten**. Suchen Sie im Inforegister **Allgemein** die Unterüberschrift **Auftragserfüllung**, und ändern Sie **Manuelles Annehmen** von **Nein** auf **Ja**. 
 
 ### <a name="enable-reject-order-line-capability"></a>Auftragsablehnungsfunktion aktivieren
 
@@ -114,7 +117,7 @@ Standardmäßig haben Aufträge den Status **Angenommen**. Der Auftragsstatus ka
 
 **Verpacken** – Die Packoption unterstützt zwei Aktivitäten: Durch **Lieferschein drucken** wird ein Lieferschein für die ausgewählten Positionen gedruckt, und durch **Als gepackt markieren** werden die Positionen als gepackt markiert und die Positionen als geliefert im Backoffice markiert. Nur Auftragspositionen die zum selben Auftrag gehören und mit derselben Lieferart können gleichzeitig verpackt werden. Lieferscheinformate werden als Teil der Bonformate gesteuert. Weitere Informationen zum Einrichten von Bonformaten finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-–**Versenden** – Durch die Aktivität „Versenden” werden ausgewählte Positionen als **Geliefert** im Backoffice markiert. Nachdem eine Position vollständig versendet wurde, wird sie nicht mehr in der Filialerfüllungsansicht angezeigt.
+–**Versenden** – Durch die Aktivität „Versenden” werden ausgewählte Positionen als **Geliefert** im Backoffice markiert. Nachdem eine Position vollständig versendet wurde, wird sie nicht mehr in der Auftragserfüllungsansicht angezeigt.
 
 **Abholen** – Durch die Abholungsaktivität werden die Positionen der Buchungsansicht für die Abholung hinzugefügt. Wenn es andere Positionen im Auftrag gibt, die aktuell nicht abgeholt werden, werden sie der Buchungsansicht mit der Menge null hinzugefügt. Nachdem eine Position vollständig abgeholt wurde, wird sie nicht mehr in der Auftragserfüllungsansicht angezeigt. 
 

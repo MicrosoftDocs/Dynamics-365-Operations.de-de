@@ -1,9 +1,9 @@
 --- 
-title: "Erstellen von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern für elektronische Berichterstellung (Teil 1) "
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer, der Systemadministratorrolle oder der Rolle \"Entwickler für elektronische Berichterstellung\" angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält."
+title: "Entwerfen von Konfigurationen zum Generieren von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern für elektronische Berichterstellung (EB) (Teil 1)"
+description: "Die Schritte in diesem Thema enthalten Informationen darüber, wie die elektronischen Berichterstattungskonfigurationen (EB) entworfen werden, die elektronische Dokumente in Microsoft Office-Formaten (Excel und Word) generieren, die eingebettete Bilder enthalten."
 author: NickSelin
 manager: AnnBe
-ms.date: 06/13/2017
+ms.date: 01/23/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,108 +16,79 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: f610fe4b7f265c4fc38db89938d5c208b4f7661a
+ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
+ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
 ms.contentlocale: de-de
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/23/2018
 
 ---
-# <a name="make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er--part-1"></a>Erstellen von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern für elektronische Berichterstellung (Teil 1)  
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>Entwerfen von Konfigurationen zum Generieren von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern für elektronische Berichterstellung (EB) (Teil 1) 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer, der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält.
+Um dies Schritte in dieser Prozedur auszuführen, müssen Sie zuerst die Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen. Mit dieser Prozedur wird erklärt, wie die elektronischen Berichterstellungskonfigurationen (EB) entworfen werden, um ein Microsoft Excel- oder Word-Dokument zu generieren, das eingebettete Bilder enthält. In dieser Prozedur erstellen Sie die erforderlichen EB-Konfigurationen für das Beispielunternehmen Litware, Inc.. Diese Schritte können mithilfe des USMF-Datasets abgeschlossen werden. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Bevor Sie beginnen, laden Sie die Dateien, die im Hilfethema [Bilder und Formen in Geschäftsdokumente einbetten, die mit dem elektronischen Berichterstellungstool generiert sind](../electronic-reporting-embed-images-shapes.md) aufgelistet sind herunter und speichern Sie diese. Die Dateien sind: Modell für Schecks.xml, Druckformat für Schecks.xml, Unternehmenslogo.png, Signaturbild.png, Signaturbild 2.png und Scheckvorlage Word.docx.
 
-In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispielunternehmen Litware, Inc.  Um diese Schritte auszuführen, müssen Sie die Schritte zuerst im"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 2: Konfiguration überprüfen)" Aufgabenleitfaden erstellen. Diese Schritte können im USMF-Unternehmen ausgeführt werden.
+## <a name="verify-prerequisites"></a>Überprüfung der erforderlichen Software  
+ 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.  
+ 2. Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
+ 3. Klicken Sie auf "Berichterstellungskonfigurationen".  
+ 
+## <a name="add-a-new-er-model-configuration"></a>Neue ER-Modellkonfiguration hinzufügen  
+ 1. Anstatt ein neues Modell zu erstellen, können Sie die EB-Modellkonfigurationsdatei laden (Modelle für Schecks.xml), die Sie vorher gespeichert hatten. Diese Datei enthält das Beispieldatenmodell für Zahlungsschecks und die Zuordnung des Datenmodells zu den Datenkomponenten der Dynamics 365 for Operations-Anwendung.   
+ 2. Klicken Sie im Versionen-Inforegister auf „Austauschen”.   
+ 3. Klicken Sie auf „Aus XML-Datei laden”.  
+ 4. Klicken Sie auf „Durchsuchen”, und wählen Sie dann „Modell” für „Schecks.xml” aus.   
+ 5. Klicken Sie auf "OK".  
+ 6. Das geladene Modell wird als Datenquelle von Informationen verwendet, um Dokumente zu generieren, die Bilder in Excel und in Word enthalten.  
 
+## <a name="add-a-new-er-format-configuration"></a>Neues ER-Modellformat hinzufügen  
+ 1. Anstatt ein neues Format zu erstellen, können Sie die EB-Formatkonfigurationsdatei laden (Scheckdruckformat.xml), die Sie vorher gespeichert hatten. Diese Datei enthält das Beispiellayout des Formats, um Schecks mithilfe des vorgedruckten Formulars zu drucken und der Zuordnung dieses Formats zum Datenmodell „Modell für Schecks”.   
+ 2. Klicken Sie auf „Austauschen”.  
+ 3. Klicken Sie auf „Aus XML-Datei laden”.  
+ 4. Klicken Sie auf „Durchsuchen”, und wählen Sie die Datei „Scheckdruckformat.xml” aus.   
+ 5. Klicken Sie auf "OK".  
+ 6. Wählen Sie in der Struktur erweitern 'Modell für Cheques.  
+ 7. Wählen Sie in der Strukturdarstellung "Modell für Cheques\Cheques-Druckformat.  
+ 8. Das geladene Format wird verwendet, um Dokumente zu generieren, die Bilder in Excel und in Word enthalten.   
 
-## <a name="run-format-with-initial-model-mapping"></a>Führen Sie das Format mit Initialenmodellzuordnung aus
-1. Gehen Sie zu "Bargeld- und Bankverwaltung" > Bankkonten > Bankkonten.
-2. Verwenden Sie den Schnellfilter, um im Feld "Bankkonto" nach dem Wert "USMF OPER" zu filtern.
-3. Klicken Sie im Aktivitätsbereich auf "Einrichten".
-4. Klicken Sie auf "Prüfen".
-5. Drucktest anklicken.
-    * Führen Sie das Format für Testzwecke aus.  
-6. Wählen Sie die Option Ja im Feld Verhandelbares Scheckformatgebiet aus.
-7. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass das Firmenlogo im Bericht sowie die autorisierten Unterschrift der Person angezeigt wird. Das Unterzeichnungsbild wird im Feld "Container" des Datentyps des Schecklayoutdatensatzes übernommen, der dem ausgewählten Bankkonto zugeordnet ist.  
-8. Erweitern Sie den Abschnitt Kopien.
-9. Klicken Sie auf "Bearbeiten".
-10. Im Wasserzeichengebiet geben Sie "Wasserzeichen als Nichtig drucken".
-    * Ändern Sie die Wasserzeichenlayouteinstellung, um den Wasserzeichentext anzuzeigen, wenn Sie in einem Dokument Excel-Formelement generieren.  
-11. Drucktest anklicken.
-12. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass das Wasserzeichen im erstellten Bericht in der Übereinstimmung der Auswahloption angezeigt wird.  
-13. Schließen Sie die Seite.
-14. Klicken Sie im Aktivitätsbereich auf Zahlungen verwalten.
-15. Klicken Sie auf Schecks.
-16. Klicken Sie auf "Filter anzeigen".
-17. Wenden Sie die nachfolgenden Filter an: Geben Sie einen Filterwert von 381, 385, 389 im Checkfeld mithilfe des Filterzeichens ein.
-18. Schalten Sie in der Liste 'Alle Zeilen markieren' ein/aus.
-19. Scheckkopie drucken anklicken.
-    * Führen Sie das Format aus, um die ausgewählten Schecks erneut zu drucken.  
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass die ausgewählten Schecks erneut gedruckt wurden. Das Firmenlogo und die Bezeichnungen werden nicht ausgedruckt, wie sie auf dem Vordruck dargestellt werden.  
+## <a name="configure-er-user-parameters"></a>Benutzerparameter der elektronischen Berichterstellung konfigurieren  
+ 1. Klicken Sie im Aktivitätsbereich auf Konfigurationen.  
+ 2. Klicken Sie auf Benutzerparameter.  
+ 3. Wählen Sie "Ja" im Feld "Testlaufeinstellungen".  
+  Aktivieren Sie die Markierung „Entwurf ausführen”, um die Entwurfsversion des ausgewählten Formats zu starten, anstelle der abgeschlossenen Version.  
+ 4. Klicken Sie auf "OK".  
 
-## <a name="modify-the-mapping-of-the-imported-data-model"></a>Überprüfe Sie die Struktur des importierten Datenmodells.
-1. Schließen Sie die Seite.
-2. Schließen Sie die Seite.
-3. Wechseln Sie zu Organisationsverwaltung > Elektronische Berichterstellung > Konfigurationen.
-4. Wählen Sie in der Struktur 'Modell für Schecks'.
-5. Klicken Sie auf Designer.
-6. Klicken Sie auf "Modell der Datenquelle zuordnen".
-7. Klicken Sie auf Designer.
-    * Wir ändern die Bindung des Unterzeichnungsartikels des Datenmodells, um das Unterzeichnungsbild der Datei zu erhalten, die auf den Schecklayoutdatensatz zugeordnet wurde, der dem ausgewählten Bankkonto zugeordnet ist.  
-8. Anzeigedetails aktivieren.
-9. Erweitern Sie in der Struktur Layout.
-10. Erweitern oder reduzieren Sie Layout\Unterschrift.
-11. Wählen Sie in der Strukturdarstellung Layout\Unterschrift\Bild= chequesaccount<Beziehungen. BankChequeLayout.Signature1Bmp.
-12. Erweitern oder reduzieren Sie chequesaccount.
-13. In der Struktur erweitern chequesaccount\<Beziehungen.
-14. Erweitern Sie in der Struktur chequesaccount\<Beziehungen\BankChequeLayout.
-15. Erweitern Sie in der Struktur chequesaccount\<BeziehungenBankChequeLayout\<Relations.
-16. Erweitern Sie in der Struktur 'chequesaccount\<BeziehungBankChequeLayout\<Beziehung\<Dokumente'.
-17. Wählen Sie in der Strukturdarstellung 'chequesaccount\<BeziehungBankChequeLayout\<Beziehung\<DokumentegetFileContentAsContainer()'.
-18. Klicken Sie auf Binden.
-19. Klicken Sie auf "Speichern".
-20. Schließen Sie die Seite.
-21. Schließen Sie die Seite.
-22. Schließen Sie die Seite.
-23. Schließen Sie die Seite.
-
-## <a name="run-format-using-the-adjusted-model-mapping"></a>Die Formatzuordnung zum Datenmodell ausführen
-1. Gehen Sie zu "Bargeld- und Bankverwaltung" > Bankkonten > Bankkonten.
-2. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise im Feld "Bankkontofeld" mit dem Wert "USMF OPER".
-3. Klicken Sie im Aktivitätsbereich auf "Einrichten".
-4. Klicken Sie auf "Prüfen".
-5. Drucktest anklicken.
-6. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, ob das Bild aus dem Dokumentverwaltungsanhang als Unterschrifte eine autorisierte Person darstellt.  
-
-## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Verwenden Sie das MS Word-Dokument als Vorlage im importierten Format
-1. Schließen Sie die Seite.
-2. Schließen Sie die Seite.
-3. Wechseln Sie zu Organisationsverwaltung > Elektronische Berichterstellung > Konfigurationen.
-4. Wählen Sie in der Struktur erweitern 'Modell für Cheques.
-5. Wählen Sie in der Strukturdarstellung "Modell für Cheques\Cheques-Druckformat.
-6. Klicken Sie auf Designer.
-7. Klicken Sie auf Anhänge.
-8. Klicken Sie auf Löschen.
-9. Klicken Sie auf "Ja".
-10. Klicken Sie auf "Neu".
-11. Klicken Sie auf "Datei".
-    * Navigieren und wählen Sie die heruntergeladene Datei "Scheck-Vorlage Word.docx" aus.  
-12. Schließen Sie die Seite.
-13. Geben Sie im Feld "Vorlage" einen Wert ein, oder wählen Sie einen Wert aus.
-14. Klicken Sie auf "Speichern".
-15. Schließen Sie die Seite.
-16. Klicken Sie auf "Bearbeiten".
-17. Wählen Sie "Ja" im Feld "Testentwurf".
-18. Schließen Sie die Seite.
-19. Gehen Sie zu "Bargeld- und Bankverwaltung" > Bankkonten > Bankkonten.
-20. Verwenden Sie den Schnellfilter, um im Feld "Bankkonto" nach dem Wert "USMF OPER" zu filtern.
-21. Klicken Sie auf "Prüfen".
-22. Drucktest anklicken.
-23. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass die MS Word-Dokument Ausgabe mit den eingebetteten Zeichen generiert wurde, die das Firmenlogo, die Unterschrift einer autorisierten Person und den markierten Text des Wasserzeichens darstellt.  
-
+## <a name="configure-cash--bank-management-parameters"></a>Bargeld- und Bankverwaltungsparameter konfigurieren  
+ 1. Gehen Sie zu "Bargeld- und Bankverwaltung" > Bankkonten > Bankkonten.  
+ 2. Verwenden Sie den Schnellfilter, um im Feld "Bankkonto" nach dem Wert "USMF OPER" zu filtern.  
+ 3. Klicken Sie im Aktivitätsbereich auf "Einrichten".  
+ 4. Klicken Sie auf "Prüfen".  
+ 5. Erweitern Sie den Abschnitt 'Einstellungen'.  
+ 6. Klicken Sie auf "Bearbeiten".  
+ 7. Wählen Sie „Ja” im Feld „Unternehmenslogo” aus.  
+ 8. Klicken Sie auf „Unternehmenslogo”.  
+ 9. Klicken Sie auf "Ändern".  
+ 10. Klicken Sie auf „Durchsuchen”, und wählen die Datei aus, die Sie vorher heruntergeladen haben, nämlich „Unternehmenslogo.png”.   
+ 11. Klicken Sie auf "Speichern".  
+ 12. Schließen Sie die Seite.  
+ 13. Erweitern Sie den Abschnitt "Unterschrift".  
+ 14. Wählen Sie „Ja” im Feld „Erste Unterschrift drucken” aus.  
+ 15. Klicken Sie auf "Ändern".  
+ 16. Klicken Sie auf „Durchsuchen”, und wählen die Datei aus, die Sie vorher heruntergeladen haben, nämlich „Unterschriftsbild.png”.   
+ 17. Erweitern Sie den Abschnitt Kopien.  
+ 18. Wählen Sie im Feld „Wasserzeichen” eine Option aus.  
+ 19. Wählen Sie „Ja” im Feld „Generisches elektronisches Exportformat” aus.  
+ 20. Wählen Sie die Konfiguration „Scheckausdruckformular” aus.  
+ 21. Nun wird das ausgewählte EB-Format für das Drucken von Schecks verwendet.  
+ 22. Klicken Sie auf Anhänge.  
+ 23. Klicken Sie auf "Neu".  
+ 24. Klicken Sie auf "Datei".  
+ 25. Klicken Sie auf „Durchsuchen”, und wählen die Datei aus, die Sie vorher heruntergeladen haben, nämlich „Unterschriftsbild 2.png”.   
+ 26. Schließen Sie die Seite.  
+ 27. Schließen Sie die Seite.  
+ 28. Schließen Sie die Seite.  
+ 29. Wechseln Sie zu "Kasse und Bankverwaltung > Einstellungen > Parameter für Kasse- und Bankverwaltung.  
+ 30. Wählen Sie „Ja” im Feld „Erstellung von Testtransaktionen für inaktive Bankkonten zulassen:” aus.  
+ 31. Klicken Sie auf "Speichern".  
+ 32. Schließen Sie die Seite.  
 

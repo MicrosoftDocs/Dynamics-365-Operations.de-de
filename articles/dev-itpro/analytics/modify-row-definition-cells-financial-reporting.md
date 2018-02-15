@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9c0372f3bc4e1fb4394d69f6e3dbf6c0f844b991
+ms.sourcegitcommit: dd34fb71f7a5d31a075c6475c2fe6627193d891f
+ms.openlocfilehash: 6bb405937288b46f49420a1735c32b5b7c16248e
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/02/2018
 
 ---
 
@@ -42,8 +42,10 @@ In den Zeilendefinitionen bestimmen die Zahlen bzw. Beschriftungen in der Zelle 
 Ein Zeilencode ist für alle Zeilen erforderlich. Sie können numerische, alphanumerische und nicht festgelegte (leere) Zeilencodes in einer Zeilendefinition Eingabe kombinieren. Der Zeilencode kann eine beliebige positive ganze Zahl (unter 100.000.000) oder eine beschreibende Bezeichnung der Zeile sein. Eine beschreibende Bezeichnung muss diesen Regeln folgen:
 
 -   Die Beschriftung muss mit einem Buchstaben beginnen (a bis z oder A bis Z) und kann eine beliebige Kombination aus Nummern und Buchstaben von bis zu 16 Zeichen sein. 
-    > [!NOTE]
-    > Eine Beschriftung kann einen Unterstrich (\_) enthalten, aber keine anderen Sonderzeichen.
+
+> [!Note] 
+> Eine Beschriftung kann einen Unterstrich (\_) enthalten, aber keine anderen Sonderzeichen.
+
 -   Die Beschriftung kann die folgenden reservierten Wörter nicht verwenden: UND, ODER, WENN, DANN SONST, PERIODEN, ZU, BASEROW, EINHEIT, NULL, CPO oder RPO.
 
 Die folgenden Beispiele sind gültige Zeilencodes:
@@ -62,12 +64,14 @@ Die folgenden Beispiele sind gültige Zeilencodes:
 1.  Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
 2.  Klicken Sie im Menü **Bearbeiten** auf **Zeilen neu nummerieren**.
 3.  Geben Sie im Dialogfeld **Zeilen neu nummerieren** neue Werte für den Anfangszeilencode und das Zeilencodeinkrement an. Sie können die numerische Zeilencodes auf die äquidistante Werte zurücksetzen. Der Berichtsdesigner nummeriert jedoch nur Zeilencodes neu, die mit Zahlen beginnen (beispielsweise 130 oder 246). Es nummeriert keine Zeilencodes neu, die mit Buchstaben beginnen (beispielsweise INCOME\_93 oder TP0693). 
-> [!NOTE]
+
+> [!Note] 
 > Wenn Sie Zeilencodes neu nummerieren, aktualisiert der Berichtsdesigner **TOT** und **CAL**-Referenzen automatisch. Wenn sich beispielsweise eine **TOT**-Zeile auf einen Bereich bezieht, der mit Zeilencode 100 beginnt, und Sie Zeilen beginnend mit 90 neu nummerieren, verweist der Anfangs-**TOT** Änderungen von 100 bis 90.
 
 ## <a name="add-a-description"></a>Eine Beschreibung hinzufügen
 Die Beschreibungszelle enthält die Beschreibung der Finanzdaten in der Zeile des Berichts, wie etwa "Umsatz" oder "Nettogewinn". Der Text in der Zelle **Beschreibung** wird im Bericht genau, wie in der Zeilendefinition eingeben angezeigt. 
-> [!NOTE]
+
+> [!Note] 
 > Die Breite der Spalte Beschreibung im Bericht wird in der Spaltendefinition festgelegt. Wenn der Text in der Spalte **Beschreibung** in der Zeilendefinition lang ist, überprüfen Sie die Breite der **DESC**-Spalte. Wenn Sie das Dialogfeld **Zeilen einfügen aus** verwenden, sind die Werte in der Spalte **Beschreibung** die Segmentwerte oder die Dimensionswerte aus den Finanzdaten. Sie können Zeilen einfügen, um beschreibenden Text wie etwa eine Abschnittsüberschrift oder eine Abschnittssumme und Formatierungen wie etwa eine Linie vor einer Summenzeile hinzuzufügen. Wenn der Bericht die Berichtsbaumstruktur umfasst, können Sie den zusätzlichen Text einbeziehen, der für die Berichtseinheiten in der Berichtsbaumstruktur definiert ist. Sie können den zusätzlichen Text auch auf eine bestimmte Berichtseinheit beschränken.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Hinzufügen der Beschreibung für eine Zeile in einem Bericht
@@ -91,7 +95,7 @@ Die Beschreibungszelle enthält die Beschreibung der Finanzdaten in der Zeile de
 
 ## <a name="add-a-format-code"></a>Hinzufügen eines Formatcodes
 Die Zelle **Formatcode** bietet eine Auswahl von vorformatierten Auswahlmöglichkeiten für den Inhalt dieser Zeile an. Wenn die **Formatcode**-Zelle leer ist, wird die Zeile als Finanzdatendetailzeile interpretiert. 
-> [!NOTE]
+> [!Note] 
 > Wenn ein Bericht Formatierungszeilen enthält, die keine Betragszeilen sind aber Betragszeilen zugeordnet sind, die, (beispielsweise aufgrund der Nullsalden) unterdrückt wurden, können Sie die Spalte **Verwandte Formeln/Zeilen/Einheiten** verwenden, um zu verhindern, dass Titel- und Formatzeilen gedruckt werden.
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Hinzufügen eines Formatcodes zu einer Berichtszeile
@@ -99,26 +103,27 @@ Die Zelle **Formatcode** bietet eine Auswahl von vorformatierten Auswahlmöglich
 1.  Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und wählen dann eine Zeilendefinition, um sie zu ändern.
 2.  Doppelklicken Sie auf die Zelle **Formatcode**.
 3.  Wählen Sie in der Liste einen Formatcode aus. In der folgenden Tabelle finden Sie die Formatcodes und ihre Aktionen.
-    | Formatcode                   | Interpretation des Formatcodes | Aktion|
-    |---|---|---|
-    | (Keine)                        |                                    | Löscht die **Formatcode**-Zelle.                                                                                                                                                                               |
-    | TOT                           | Summe                              | Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Summen enthalten einfache Operatoren, wie **+** oder **-**.                                                      |
-    | CAL                           | Herstellkostenkalkulation                        | Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Berechnungen enthalten komplexe Operatoren, wie  **+**, **-**, **\***, **/** und **IF/THEN/ELSE** Anweisungen. |
-    | DES                           | Beschreibung                        | Kennzeichnet eine Überschriftposition oder eine leere Position in einem Bericht.                                                                                                                                                        |
-    | LKS RCHTS ZEN                   | Links Rechts Zentriert                  | Richtet den Zeilenbeschreibungstext auf der Berichtsseite aus, unabhängig von seiner Position in der Spaltendefinition.                                                                                               |
-    | ÄBZ                           | Änderungsbasiszeile                    | Gibt eine Zeile an, die die Basiszeile für Spaltenberechnungen festlegt.                                                                                                                                               |
-    | SPALTE                        | Spaltenumbruch                       | Hiermit wird eine neue Spalte im Bericht gestartet.                                                                                                                                                                             |
-    | SEITE                          | Seitenumbruch                         | Hiermit wird eine neue Seite im Bericht gestartet.                                                                                                                                                                               |
-    | ---                           | Einzelner Unterstrich                   | Setzt eine einzelne Linie unter alle Betragsspalten in den Bericht.                                                                                                                                                     |
-    | ===                           | Doppelter Unterstrich                   | Setzt eine doppelte Linie unter alle Betragsspalten in den Bericht.                                                                                                                                                     |
-    | ZEILE1                         | Dünne Linie                          | Zeichnet eine einzelne dünne Linie über die gesamte Seite.                                                                                                                                                                      |
-    | ZEILE2                         | Dicke Linie                         | Zeichnet eine einzelne dicke Linie über die gesamte Seite.                                                                                                                                                                     |
-    | ZEILE3                         | Gepunktete Linie                        | Zeichnet eine einzelne gepunktete Linie über die gesamte Seite.                                                                                                                                                                    |
-    | ZEILE4                         | Dicke Linie und dünne Linie           | Zeichnet eine Doppellinie über die gesamte Seite. Die obere Linie ist dick, die untere Linie ist dünn.                                                                                                                       |
-    | ZEILE5                         | Dünne Linie und dicke Linie           | Zeichnet eine Doppellinie über die gesamte Seite. Die obere Linie ist dünn, die untere Linie ist dick.                                                                                                                       |
-    | BXB BXC                       | Umrahmte Zeile                          | Zieht einen Kasten um die Berichtszeilen, die mit der **BXB**-Zeile beginnen und mit der **BXC**-Zeile beenden.                                                                                                               |
-    | ANM                           | Anmerkung                             | Gibt eine Zeile an, bei der es sich um eine Kommentarzeile handelt, die nicht im Bericht gedruckt werden soll. Beispielsweise könnten Sie in einer Anmerkungszeile die verwendeten Formatierungstechniken erläutern.                                                            |
-    | SORT ASORT SORTDESC ASORTDESC | Sortieren                               | Sortiert Ausgaben oder Einnahmen, sortiert einen Istwert- oder Budgetvarianzbericht nach der größten Abweichung oder sortiert Zeilenbeschreibungen alphabetisch.                                                                   |
+
+| **Formatcode**               | **Interpretation des Formatcodes** | **Aktion**                                                                                                                                                                                                     |
+|-------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (Keine)                        |                                       | Löscht die **Formatcode**-Zelle.                                                                                                                                                                               |
+| TOT                           | Summe                                 |  Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Summen enthalten einfache Operatoren, wie **+** oder **-**.                                                     |
+| CAL                           | Herstellkostenkalkulation                           | Kennzeichnet eine Zeile, die mathematische Operatoren in der Spalte **Verwandte Formeln/Zeilen/Einheiten** verwendet. Berechnungen enthalten komplexe Operatoren, wie  **+**, **-**, **\***, **/** und **IF/THEN/ELSE** Anweisungen. |
+| DES                           | Beschreibung                           | Kennzeichnet eine Überschriftposition oder eine leere Position in einem Bericht.                                                                                                                                                        |
+| LKS RCHTS ZEN                   | Links Rechts Zentriert                     |  Richtet den Zeilenbeschreibungstext auf der Berichtsseite aus, unabhängig von seiner Position in der Spaltendefinition.                                                                                              |
+| ÄBZ                           | Änderungsbasiszeile                       | Gibt eine Zeile an, die die Basiszeile für Spaltenberechnungen festlegt.                                                                                                                                               |
+| SPALTE                        | Spaltenumbruch                          | Hiermit wird eine neue Spalte im Bericht gestartet.                                                                                                                                                                             |
+| SEITE                          | Seitenumbruch                            | Hiermit wird eine neue Seite im Bericht gestartet.                                                                                                                                                                               |
+| \---                          | Einzelner Unterstrich                      | Setzt eine einzelne Linie unter alle Betragsspalten in den Bericht.                                                                                                                                                     |
+|  ===                          | Doppelter Unterstrich                      | Setzt eine doppelte Linie unter alle Betragsspalten in den Bericht.                                                                                                                                                     |
+| ZEILE1                         | Dünne Linie                             | Zeichnet eine einzelne dünne Linie über die gesamte Seite.                                                                                                                                                                      |
+| ZEILE2                         | Dicke Linie                            | Zeichnet eine einzelne dicke Linie über die gesamte Seite.                                                                                                                                                                     |
+| ZEILE3                         | Gepunktete Linie                           | Zeichnet eine einzelne gepunktete Linie über die gesamte Seite.                                                                                                                                                                    |
+| ZEILE4                         | Dicke Linie und dünne Linie              | Zeichnet eine Doppellinie über die gesamte Seite. Die obere Linie ist dick, die untere Linie ist dünn.                                                                                                                       |
+| ZEILE5                         | Dünne Linie und dicke Linie              | Zeichnet eine Doppellinie über die gesamte Seite. Die obere Linie ist dünn, die untere Linie ist dick.                                                                                                                       |
+| BXB BXC                       | Umrahmte Zeile                             | Zieht einen Kasten um die Berichtszeilen, die mit der **BXB**-Zeile beginnen und mit der **BXC**-Zeile beenden.                                                                                                               |
+| ANM                           | Anmerkung                                | Gibt eine Zeile an, bei der es sich um eine Kommentarzeile handelt, die nicht im Bericht gedruckt werden soll. Beispielsweise könnten Sie in einer Anmerkungszeile die verwendeten Formatierungstechniken erläutern.                                                            |
+| SORT ASORT SORTDESC ASORTDESC | Sortieren                                  | Sortiert Ausgaben oder Einnahmen, sortiert einen Istwert- oder Budgetvarianzbericht nach der größten Abweichung oder sortiert Zeilenbeschreibungen alphabetisch.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Verwandte Formeln/Zeilen/Einheiten angeben
 Die Zelle **Verwandte Formeln/Zeilen/Einheiten** hat mehrere Zwecke. Je nach Art der Zeile, kann eine **Verwandte Formeln/Zeilen/Einheiten**-Zelle eine der folgenden Aufgaben ausführen:
@@ -152,8 +157,8 @@ Beim Erstellen einer Zeilengesamtergebnis-Formel müssen Sie Zeilencodes verwend
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Verbinden einer Formatzeile mit einer Betragszeile
 
 In der Spalte **Formatcode** in einer Zeilendefinition wird Formatierung mit den Formatcodes **DES**, **LFT**, **RGT**, **CEN** **---** und **===** auf Zeile, die keine Beträge enthalten, angewendet. Damit diese Formatierung nicht gedruckt wird, wenn die zugehörigen Betragszeilen unterdrückt werden (beispielsweise, da die Betragszeilen Nullwerte oder keine Periodenaktivität enthalten), müssen Sie die Formatzeilen den entsprechenden Betragszeilen zuordnen. Diese Funktion ist hilfreich, wenn Sie verhindern möchten, dass Überschriften oder Formatierung von Zwischensummen gedruckt werden, wenn es keine auszudruckenden Details während der Periode gibt. 
-    > [!NOTE]
-    >  You can also prevent the detailed amount rows from being printed by clearing the option to display rows without amounts. This option is located on the **Settings** tab of the report definition. By default, transaction detail accounts that have a zero balance or no period activity are suppressed in reports. To show these transaction detail accounts, select the **Display rows without an amounts** check box on the **Settings** tab of the report definition.
+> [!Note] 
+> Sie können das Drucken von detaillierten Betragszeilen auch verhindern, indem Sie die Option zum Anzeigen von Zeilen ohne Beträge deaktivieren. Diese Option befindet sich auf der Registerkarte **Einstellungen** der Berichtsdefinition. Standardmäßig werden Buchungsdetailkonten mit einem Nullsaldo oder ohne Zeitraumaktivität in Berichten unterdrückt. Um diese Transaktionsdetailkonten anzuzeigen, aktivieren Sie das Kontrollkästchen **Zeilen ohne Beträge anzeigen** auf der Registerkarte **Einstellungen** der Berichtsdefinition.
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Zuordnen einer Formatzeile zu einer Betragszeile
 
@@ -210,8 +215,8 @@ Mit Sortiercodes werden Konten oder Werte sortiert, ein Istwert- oder Budgetvari
 2.  Doppelklicken Sie auf die Zelle **Formatcode**, und wählen Sie dann einen Sortiercode aus.
 3.  Geben Sie in der Zelle **Verwandte Formeln/Zeilen/Einheiten** den Bereich der Zeilencodes an, die sortiert werden sollen. Geben Sie zur Angabe eines Bereichs den ersten Zeilencode, einen Doppelpunkt (:), und dann den letzten Zeilencode ein. Geben Sie z. B. **160:490** ein, um anzugeben, dass der Bereich von Zeile 160 bis Zeile 490 reicht.
 4.  Geben Sie in der Zelle **Spalteneinschränkung** den Buchstaben der Berichtsspalte ein, der zum Sortieren verwendet werden soll. 
-    > [!NOTE]
-    > Es werden nur Betragszeilen in einer Sortierungsberechnung eingeschlossen.
+> [!Note] 
+> Es werden nur Betragszeilen in einer Sortierungsberechnung eingeschlossen.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Beispiele für absteigende und absteigende Spaltenwerte
 
@@ -228,30 +233,11 @@ Im folgenden Beispiel werden die Werte in Spalte "D" des Berichts in aufsteigend
 | 520      |                                                     | BESCHR         |                             |                |                    |                              |
 | 550      | Sortiert nach der absoluten Abweichung für Jahr bis dato in absteigender Reihenfolge | BESCHR         |                             |                |                    |                              |
 | 580      |                                                     | AABSTSORT   | 610:940                     |                | G                  |                              |
-| 610      | Verkauf                                               |             |                             | C              |                    | 4100                         |
+| 610      | Vertrieb                                               |             |                             | k              |                    | 4100                         |
 | 640      | Retouren                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Zinsertrag                                     |             |                             | C              |                    | 7000                         |
+| 940      | Zinsertrag                                     |             |                             | k              |                    | 7000                         |
 
-Nachfolgend ein Beispiel des Berichts, der erzeugt wird.
-
-|||||||||
-|---|---|---|---|---|---|---|
-|**Abweichungsanalyse (Sortiert nach Abweichung)**|||||||
-
-|**Beijing und Atlanta-Regionen**|||||||
-
-|**Für die sieben Monate, die zum 31. Juli 2013 enden**|||||||
-
-||**Juli**|**YTD**|||||
-
-||**Tatsächlich**|**Budget**|**Abweichung**|**Tatsächlich**|**Budget**|**Abweichung**|
-
-|**Sortiert nach Monatsabweichung in aufsteigender Reihenfolge**|||||||
-
-|COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
-
-|Gehälter und Löhne|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |Rabatte|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Rücksendungen|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Mietausgaben|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Büroausgaben|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Reiseausgaben|7,656|7,641|(15)|51,062|51,469|407| |Verkäufe|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| |**Sortiert nach YTD Absolute Abweichung in absteigender Reihenfolge**||||||| |Verkäufe|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| |Reiseausgaben|7,656|7,641|(15)|51,062|51,469|407| |Büroausgaben|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Rückgaben|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Mietausgaben|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Rabatte|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Gehälter und Löhne|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
 
 ## <a name="specify-a-format-override-cell"></a>Angeben einer Formataußerkraftsetzungszelle an
 Die Zelle **Formataußerkraftsetzung** gibt die Formatierung an, die für die Zeile verwendet wird, wenn der Bericht gedruckt wird. Diese Formatierung setzt die Formatierung außer Kraft, die in der Spaltendefinition und in der Berichtsdefinition angegeben ist. Standardmäßig handelt es sich bei der in diesen Definitionen angegebenen Formatierung um die Währung. Wird in dem Bericht die Anzahl der Anlagen (z. B. der Gebäude) in einer Zeile und deren Geldwert in einer anderen Zeile aufgelistet, können Sie die Währungsformatierung außer Kraft setzen und für die Zeile, in der die Anzahl der Gebäude angegeben wird, eine numerische Formatierung eingeben. Sie geben diese Informationen im Dialogfeld **Formataußerkraftsetzung** an. Die verfügbaren Optionen sind von der ausgewählten Formatkategorie abhängig. Der **Beispiel**-Bereich des Dialogfelds zeigt Beispielsformate an. Die verfügbaren Formatkategorien lauten wie folgt:
@@ -276,8 +262,8 @@ Währungsformatierung bezieht sich auf einen steuerlichen Betrag und schließt d
 -   **Negativen Zahlen** - Negativen Zahlen können ein Minuszeichen aufweisen (-), sie können in Klammern angezeigt werden, oder sie können ein Dreieck (∆) aufweisen.
 -   **Dezimalstellen** - Die Anzahl der angezeigten Stellen nach der Dezimalstelle.
 -   **Text für Außerkraftsetzung des Nullwerts** - Der in den Bericht einzuschließende Text, wenn der Betrag 0 (null) ist. Dieser Text wird als letzte Zeile im **Beispiel**-Bereich angezeigt. 
-    > [!NOTE]
-    >  Wenn das Drucken für Nullwerte oder keine Periodenaktivität unterdrückt wird, wird der Text unterdrückt.
+> [!Note] 
+> Wenn das Drucken für Nullwerte oder keine Periodenaktivität unterdrückt wird, wird der Text unterdrückt.
 
 ### <a name="numeric-formatting"></a>Numerische Formatierung
 
@@ -286,8 +272,8 @@ Die numerische Formatierung gilt für jeden Betrag und umfasst kein Währungssym
 -   **Negativen Zahlen** - Negativen Zahlen können ein Minuszeichen aufweisen (-), sie können in Klammern angezeigt werden, oder sie können ein Dreieck (∆) aufweisen.
 -   **Dezimalstellen** - Die Anzahl der angezeigten Stellen nach der Dezimalstelle.
 -   **Text für Außerkraftsetzung des Nullwerts** - Der in den Bericht einzuschließende Text, wenn der Betrag 0 (null) ist. Dieser Text wird als letzte Zeile im **Beispiel**-Bereich angezeigt. 
-    > [!NOTE]
-    >  Wenn das Drucken für Nullwerte oder keine Periodenaktivität unterdrückt wird, wird der Text unterdrückt.
+> [!Note] 
+> Wenn das Drucken für Nullwerte oder keine Periodenaktivität unterdrückt wird, wird der Text unterdrückt.
 
 ### <a name="percentage-formatting"></a>Prozentsatzformatierung
 
@@ -296,8 +282,8 @@ Die Prozentsatzformatierung umfasst das Prozentzeichen (%). Die folgenden Option
 -   **Negativen Zahlen** - Negativen Zahlen können ein Minuszeichen aufweisen (-), sie können in Klammern angezeigt werden, oder sie können ein Dreieck (∆) aufweisen.
 -   **Dezimalstellen** - Die Anzahl der anzuzeigenden Stellen nach der Dezimalstelle.
 -   **Text für Außerkraftsetzung des Nullwerts** - Der in den Bericht einzuschließende Text, wenn der Betrag 0 (null) ist. Dieser Text wird als letzte Zeile im **Beispiel**-Bereich angezeigt. 
-    > [!NOTE]
-    >  Wenn das Drucken für Nullwerte oder keine Periodenaktivität unterdrückt wird, wird der Text unterdrückt.
+> [!Note] 
+> Wenn das Drucken für Nullwerte oder keine Periodenaktivität unterdrückt wird, wird der Text unterdrückt.
 
 ### <a name="custom-formatting"></a>Benutzerdefinierte Formatierung
 
@@ -305,8 +291,8 @@ Verwenden Sie die benutzerdefinierte Formatierungskategorie, um eine benutzerdef
 
 -   **Typ** – Das benutzerdefinierte Format.
 -   **Text für Außerkraftsetzung des Nullwerts** - Der in den Bericht einzuschließende Text, wenn der Betrag 0 (null) ist. Dieser Text wird als letzte Zeile im **Beispiel**-Bereich angezeigt. 
-    > [!NOTE]
-    >  Wenn das Drucken für Nullwerte oder keine Periodenaktivität unterdrückt wird, wird der Text unterdrückt.
+> [!Note] 
+> Wenn das Drucken für Nullwerte oder keine Periodenaktivität unterdrückt wird, wird der Text unterdrückt.
 
 Der Typ sollte den positiven und den negativen Wert darstellen. Gewöhnlich wird ein ähnliches Format für die Unterscheidung zwischen positiven und negativen Werten eingegeben. Um beispielsweise anzugeben, dass positive und negative Werte zwei Dezimalstellen enthalten, aber negative Werte in Klammern angezeigt werden, geben Sie **0,00; (0,00)** ein. In der folgenden Tabelle sind benutzerdefinierte Formate dargestellt, mit denen das Format der Werte gesteuert werden kann. Alle Beispiele beginnen beim Wert 1234.56.
 
@@ -372,7 +358,7 @@ Einige Kontoführungssysteme unterstützen Konto- und Buchungsattribute in den F
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Zelle „Verknüpfung mit Finanzdimensionen“ angeben
 Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den Finanzdaten, die in jeder Zeile eines Berichts einbezogen werden sollen. Diese Zelle enthält Dimensionswerte, Sie können aber anstelle von oder zusätzlich zu Segment- oder Dimensionswerten auch Zellen in einem Microsoft Excel-Arbeitsblatt angeben. Um das Dialogfeld **Dimensionen** zu öffnen, doppelklicken Sie auf die Zelle **Mit Finanzdimensionen verknüpfen**. 
 > [!NOTE]
-> Berichts-Designer kann Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: & \*,\[,\], {, oder } Um Informationen für eine Zeile anzugeben, die bereits in der Zeilendefinition ist, fügen Sie die Informationen in der Zelle **Mit Finanzdimensionen verknüpfen** hinzu. Um neue Zeilen hinzuzufügen, die mit Finanzdaten verknüpfen, verwenden Sie das Dialogfeld **Zeilen einfügen aus**, um neue Zeilen in der Berichtsdefinition zu erstellen. Die Spaltenüberschrift ändert sich, je nachdem, wie die Spalte konfiguriert wird (siehe folgende Tabelle).
+> Berichts-Designer kann Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder } Um Informationen für eine Zeile anzugeben, die bereits in der Zeilendefinition ist, fügen Sie die Informationen in der Zelle **Mit Finanzdimensionen verknüpfen** hinzu. Um neue Zeilen hinzuzufügen, die mit Finanzdaten verknüpfen, verwenden Sie das Dialogfeld **Zeilen einfügen aus**, um neue Zeilen in der Berichtsdefinition zu erstellen. Die Spaltenüberschrift ändert sich, je nachdem, wie die Spalte konfiguriert wird (siehe folgende Tabelle).
 
 | Ausgewählter Linktyp       | Beschreibung in der Linkspalte |
 |----------------------------------|----------------------------------------------------|
@@ -402,20 +388,20 @@ Standardmäßig druckt der Berichtsdesigner keine Zeile aus, die nicht ein entsp
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Platzhalterzeichen und Bereiche in einer Zeilendefinition verwenden
 Wenn Sie einen natürlichen Segmentwert im Dialogfeld **Dimensionen** eingeben, können Sie an jeder Position eines Segments ein Platzhalterzeichen (? oder \*) in jeder Position eines Segments einsetzen. Report Designer extrahiert alle Werte für die definierten Positionen, ohne die Platzhalterzeichen zu berücksichtigen. Zum Beispiel beinhaltet die Zeilendefinition nur natürliche Segmentwerte, und natürliche Segmente haben vier Zeichen. Durch Eingabe von **6???** in einer Zeilendefinition weisen des Berichts-Designers angezeigt, alle Konten einzuschließen, die einen natürlichen Segmentwert haben, die mit 6 beginnt. Wenn Sie **6\*** eingeben, sind die gleichen Ergebnisse zurückgegeben, doch die Ergebnisse auch Variable-Breitenwerte enthalten, z.B. **60** und **600000**. Der Berichtsdesigner ersetzt jedes Platzhalterzeichen (?) durch den kompletten Bereich möglicher Werte, die Buchstaben und Sonderzeichen enthalten. Zum Beispiel im Bereich von **12? 0** bis **12? 4** wird das Platzhalterzeichen **12? 0** durch den niedrigsten Wert im Zeichensatz ersetzt, und das Platzhalterzeichen in **12? 4** wird durch den höchsten Wert für im Zeichensatz ersetzt. 
-> [!NOTE]
+> [!Note] 
 > Sie sollten Platzhalterzeichen für die Start- und Endkonten von Bereichen vermeiden. Wenn Sie im Start- oder Endkonto Platzhalterzeichen verwenden, werden möglicherweise unerwartete Ergebnisse zurückgegeben.
 
 ### <a name="single-segment-or-single-dimension-ranges"></a>Bereiche mit einem einzelnen Segment oder einer einzelnen Dimension
 
 Sie können einen Bereich von Segment- oder Dimensionswerten angeben. Der Vorteil bei der Angabe eines Bereichs ist, dass Sie die Zeilendefinition nicht jedes Mal aktualisieren müssen, wenn ein neuer Segmentwert oder ein Dimensionswert den Finanzdaten hinzugefügt wird. Beispielsweise holt der Bereich **+Account=\[6100:6900\]** die Werte aus den Konten 6100 bis 6900 in den Zeilenbetrag. Wenn ein Bereich ein Platzhalterzeichen (?) umfasst, wertet der Berichtsdesigner den Bereich nicht auf einer Zeichen-pro-Zeichenbasis aus. Stattdessen werden die unteren und oberen Grenzen des Bereichs bestimmt, und dann werden die Endwerte und alle Werte dazwischen eingeschlossen. 
-> [!NOTE]
-> Berichts-Designer kann Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: & \*,\[,\], {, oder } Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
+> [!Note] 
+> Berichts-Designer kann Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder } Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Bereiche mit mehreren Segmenten oder Dimensionen
 
 Wenn Sie einen Bereich eingeben, indem Sie Kombinationen mehrerer Dimensionswerte verwenden, wird der Bereichsvergleich ..\financial-dimensions\dimension-by-dimension durchgeführt. Der Bereichsvergleich kann weder auf Basis von Zeichen-nach-Zeichen noch auf Teilesegmentbasis ausgeführt werden. Beispielsweise umfasst der Bereich **+Konto=\[5000:6000\], Abteilung=\[1000:2000\], Kostenstelle=\[00\]** nur die Konten, die mit jedem Segment übereinstimmen. In diesem Szenario müssen sich die erste Dimension im Bereich von 5000 bis 6000 befinden, muss die andere Dimension im Bereich von 1000 bis 2000 befinden, und die letzte Dimension muss 00 sein. Beispielsweise **+Konto=\[5100\], Abteilung=\[1100\], Kostencenter=\[01\]** ist nicht im Bericht enthalten, da das letzte Segment außerhalb des angegebenen Bereich befindet. Wenn ein Segmentwert Leerzeichen umfasst, schließen Sie diesen Wert in eckige Klammern ein (\[ \]). Folgende Werte sind für ein vier Zeichen langes Segment gültig: **\[ 234\], \[123 \], \[1 34\]**. Dimensionswerte sollen in eckige Klammern eingeschlossen werden (\[ \]), und der Berichtsdesigner fügt diese Klammern für Sie hinzu. Wann enthält ein Bereich mit mehreren Segmenten oder Dimensionen Platzhalterzeichen (? oder \*). Stattdessen werden die unteren und oberen Grenzen des Bereichs bestimmt, und dann werden die Endwerte und alle Werte dazwischen eingeschlossen. Bei einem großen Bereich, wie dem Gesamtbereich der Konten von 40000 bis 99999, sollten Sie ein gültiges Startkonto und Endkonto angeben, wann immer möglich. 
-> [!NOTE]
-> Berichts-Designer kann Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: & \*,\[,\], {, oder } Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
+> [!Note] 
+> Berichts-Designer kann Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder } Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Addieren oder Subtrahieren von anderen Konten in einer Zeilendefinition
 Um die Geldbeträge in einem Konto zu den Geldbeträgen in einem anderen Konto zu addieren oder davon zu subtrahieren, können Sie das Pluszeichen (+) und das Minuszeichen (-) in der Zelle **Mit Finanzdimensionen verknüpfen** verwenden. Die folgende Tabelle zeigt die zulässigen Formate für Additions- und Subtraktionslinks zu Finanzdaten.
@@ -436,7 +422,7 @@ Um die Geldbeträge in einem Konto zu den Geldbeträgen in einem anderen Konto z
 | Subtrahieren Sie einen Bereich von Segmentwerten, die Platzhalterzeichen enthalten.                    | -Konto=\[120?:130?\]                                                                                       |
 
 Zwar können Sie die Konten direkt ändern, Sie können aber auch das Dialogfeld **Dimensionen** verwenden, um die korrekte Formatierung auf Ihre Finanzdatenverknüpfungen anzuwenden. Jeder der Werte kann ein Platzhalterzeichen einschließen (? oder \*). Allerdings kann der Berichts-Designer Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. 
-> [!NOTE]
+> [!Note] 
 > Um Werte zu subtrahieren, müssen diese Werte in Klammern stehen. Wenn Sie beispielsweise **450? - (4509)** eingeben, wird dies als **+Konto=\[4509\]-Konto=\[450?\]** angezeigt, und Sie weisen den Berichtsdesigner an, den Betrag für das Kontosegment 4509 vom Betrag für jedes Kontosegment zu subtrahieren, das mit 450 beginnt.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Addieren oder subtrahieren von Konten aus anderen Konten
@@ -451,7 +437,7 @@ Zwar können Sie die Konten direkt ändern, Sie können aber auch das Dialogfeld
 
 4.  Wiederholen Sie die Schritte 2 bis 3, um weitere Vorgänge hinzuzufügen.
 
-> [!NOTE]
+> [!Note] 
 > Der Operator gilt für alle Dimensionen in der Zeile.
 
 ## <a name="description-of-the-dimensions-dialog-box"></a>Beschreibung des Dialogfelds "Dimensionen".
@@ -485,8 +471,8 @@ Ein Dimensionswertsatz ist eine benannte Gruppe von Dimensionswerten. Ein Dimens
 3.  Wählen Sie im Dialogfeld **Dimensionswertsätze verwalten** im Feld **Dimension** den Dimensionstyp aus.
 4.  Wählen Sie in der Liste den Dimensionswertsatz aus, der aktualisiert werden soll, und klicken Sie anschließend auf **Ändern**.
 5.  Ändern Sie im Dialogfeld **Ändern** die Formelwerte, die im Satz enthalten sein sollen. 
-    > [!NOTE]
-    >  Wenn Sie neue Konten oder Dimensionen hinzufügen, stellen Sie sicher, dass Sie die vorhandenen Dimensionswertsätze ändern, damit die Änderungen berücksichtigt werden.
+> [!Note] 
+> Wenn Sie neue Konten oder Dimensionen hinzufügen, stellen Sie sicher, dass Sie die vorhandenen Dimensionswertsätze ändern, damit die Änderungen berücksichtigt werden.
 6.  Doppelklicken Sie auf die Zelle, und wählen Sie den entsprechenden Operator, das **Von**-Konto und das **Bis**-Konto aus.
 7.  Klicken Sie auf **OK**, um das Dialogfeld **Ändern** zu schließen und die Änderungen zu speichern.
 
