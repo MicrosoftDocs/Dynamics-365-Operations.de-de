@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6ffb97b53f522cfe8ccd8e89df854cbc557e4f1f
-ms.openlocfilehash: fadc373b2c1c06987f22d4d9c20a9ab07b0c85d5
+ms.sourcegitcommit: a53c1997f74ebe572b17cc3090d2e236b6fe78f6
+ms.openlocfilehash: 8a84cfe9b73f0c72f3cb0c3843749754c6b3d538
 ms.contentlocale: de-de
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent bereitstellen
@@ -38,7 +38,7 @@ Um Kreditbriefen für die Talent Umgebung zu verwalten, müssen Sie ein LCS-Proj
 4. Wählen Sie die Methode **Dynamics 365 for Talent** aus.
 5. Wählen Sie **Erstellen** aus.
 
-Informationen darüber, wie Sie mit Talent beginnen, finden Sie unter der**Talent**-Methodik, die Sie im neuen Projekt erstellt haben. Nachdem Sie abschließend das Projekt erstellen, ergänzen Sie die folgende Bestimmungen für Ihre  Talent Umgebung.
+Informationen darüber, wie Sie mit Talent beginnen, finden Sie unter der **Talent**-Methodik, die Sie im neuen Projekt erstellt haben. Nachdem Sie abschließend das Projekt erstellen, ergänzen Sie die folgende Bestimmungen für Ihre Talent Umgebung.
 
 ## <a name="provision-a-talent-project"></a>Ein Talent Projekt bestimmen
 Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung bereitstellen.
@@ -49,10 +49,10 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung
     > [!NOTE]
     > Um die vorhandene Umgebung anzeigen oder eine neue Umgebung zu erstellen, muss der Mandantenadministrator der Talent bereitstellt der Lizenz PowerApps P2 zugewiesen werden. Wenn Ihre Organisation keine PowerApps Lizenz P2 hat, können Sie dies aus Ihrem CSP oder über abrufen [PowerApps-Preiskalkulationsseite](https://powerapps.microsoft.com/en-us/pricing/).
 
-3. Wählen Sie **Hinzufügen** aus und aktivieren dann die Umgebung, in der Talent erscheinen soll. 
+3. Wählen Sie **Hinzufügen** aus und aktivieren dann die Umgebung, in der Talent erscheinen soll.
 4. Wählen Sie **Ja**, um den Bedingungen zuzustimmen und Bereitstellung zu starten.
 
-    Die neuen Umgebung wird in der Liste der Umgebung im Navigationsbereich auf der linken Seite dargestellt. Sie können jedoch nicht beginnen, die Umgebung zu verwenden, wenn der Bereitstellungsstatus auf  **Bereitgestellt** aktualisiert ist. Dieser Vorgang dauert in der Regel nur einige Minuten. Wenn die Bereitstellung fehlschlägt, müssen Sie Support kontaktieren.
+    Die neuen Umgebung wird in der Liste der Umgebung im Navigationsbereich auf der linken Seite dargestellt. Sie können jedoch nicht beginnen, die Umgebung zu verwenden, wenn der Bereitstellungsstatus auf **Bereitgestellt** aktualisiert ist. Dieser Vorgang dauert in der Regel nur einige Minuten. Wenn die Bereitstellung fehlschlägt, müssen Sie Support kontaktieren.
 
 6. Wählen Sie **Anmeldung bei Talent**, um die neuen Umgebung zu verwenden.
 
@@ -60,8 +60,11 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung
 > Sollten Sie sich von den definitiven Anforderungen noch nicht abgemeldet haben, können Sie eine Testinstanz von Talent im Projekt bereitstellen. Sie können diese Instanz dann verwenden, um Ihre Lösung zu testen, bevor Sie sie freigeben. Wenn Sie die neuen Umgebung für Testzwecke verwenden, müssen Sie diese Schrittfolge wiederholen, um eine Produktionsumgebung zu erstellen.
 
 ## <a name="create-a-new-powerapps-environment-if-required"></a>Erstellen Sie eine neue PowerApps-Umgebung (nach Bedarf)
+
+Die Vision, die der Integration von Talent mit PowerApps-Umgebungen zugrunde liegt, ist die Ermöglichung von Datenintegration und Erweiterungsflüssen durch die Verwendung von PowerApps-Tools zusätzlich zu den Talent-Daten. Folglich ist es wichtig, den Zweck von PowerApps-Umgebungen zu verstehen, wenn Sie die Umgebung wählen, die für Talent verwendet werden soll. Weitere Informationen zu PowerApps-Umgebungen, einschließlich Umgebungsumfang, Umgebungszugriff und das Erstellen und Wählen einer Umgebung finden Sie unter [PowerApps-Umgebungen ankündigen](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/).  Während jeder Mandant automatisch in einer standardmäßigen PowerApps-Umgebung bereitgestellt wird, ist es möglicherweise nicht die beste Umgebung, um für Ihre Talent-Bereitstellung verwendet zu werden. Datenenintegrations- und Testsstrategien sollten während dieses Schritts erwogen werden. Deshalb wird empfohlen, dass Sie die verschiedenen Auswirkungen Ihrer Bereitstellung bedenken, da spätere Änderungen nicht einfach sind.
+
 1. Wählen Sie **Verwalten Sie Umgebung** in Kreditbriefen aus. Sie werden zum [PowerApps-Administrator-Center](https://preview.admin.powerapps.com/environments) geführt, wo Sie die vorhandene Umgebung anzeigen und eine neue Umgebung erstellen können.
-2. Aktivieren Sie die Schaltfläche (**+**)**Neue Umgebung**.
+2. Aktivieren Sie die Schaltfläche (**+**) **Neue Umgebung**.
 3. Geben Sie einen eindeutigen Namen für die Umgebung ein, und wählen Sie den Ort aus, der für ein Audit-Trail bereitzustellen ist.
 
     > [!NOTE]
@@ -74,9 +77,20 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung
     > [!IMPORTANT]
     > Wenn Sie zuvor eine CD-Datenbank erstellten und einen der produktiven Ihrer Daten des Unternehmens in sie eingegeben haben, sollten Sie daran denken, dass diese Schritte **alle** die Daten in der ausgewählten Datenbank entfernen, die auch die Produktionsdaten des Unternehmens.
 
-    1. Melden Sie sich bei [PowerApps](https://preview.web.powerapps.com/home) an und wechseln zur Umgebung, die Sie in Schritt 2 erstellt haben.
-    2. **Entitäten** auswählen Auf der rechten Seite der Seite klicken Sie auf die Schaltfläche Ellipse**...** und wählen Sie dann **Löschen Sie alle Daten** aus.
-    3. Klicken Sie auf **Daten löschen**, um die Daten zu entfernen. Diese Aktivität entfernt das Kontrollkästchen Demodaten, das in CDS standardmäßig enthalten ist. Sie enthalten auch ggf. weitere Daten, die in der ausgewählten Datenbank eingegeben wurde.
-
+    1. Melden Sie sich bei [PowerApps](https://preview.web.powerapps.com/home) an, und wählen Sie die Umgebung, die Sie in Schritt 2 erstellt haben, aus dem Dropdownmenü auf der rechten Seite der Seite.
+    2. Erweitern Sie **Common Data Service** im linken Navigationsbereich und wählen Sie **Entitäten** aus.
+    3. Auf der rechten Seite der Seite klicken Sie auf die Schaltfläche Ellipse (**...**) und wählen Sie dann **Löschen Sie alle Daten** aus.
+    4. Klicken Sie auf **Daten löschen**, um die Daten zu entfernen. Diese Aktivität entfernt das Kontrollkästchen Demodaten, das in CDS standardmäßig enthalten ist. Sie enthalten auch ggf. weitere Daten, die in der ausgewählten Datenbank eingegeben wurde.
+    
 Sie können die neuen Umgebung nun verwenden.
+
+## <a name="granting-access-to-the-environment"></a>Zugriff auf die Umgebung gewähren
+Der globale Administrator, der die Umwelt erstellt hat, hat standardmäßig Zugriff, aber weiteren Anwendungsbenutzern muss Zugriff explizit gewährt werden. Dies kann erfolgen durch das [Hinzufügen von Benutzern](../dev-itpro/sysadmin/tasks/create-new-users.md) und [ihrer Zuweisung zu den entsprechenden Rollen](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) innerhalb der Kernpersonalverwaltungsumgebung. Darüber hinaus ist es auch notwendig, diese Benutzer der PowerApps-Umgebung hinzuzufügen, damit sie auf die Anwendungen Attract und Onboard Zugriff haben.  Der Blogbeitrag [Einführung des PowerApps Admin Center](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) unterstützt Sie möglicherweise dabei, diese Schritte abzuschließen, die hier umrissen sind.
+
+> 1.    Der globale Administrator, der die Talent-Umgebung bereitstellte, soll zum [PowerApps Admin Center](https://preview.admin.powerapps.com/environments) navigieren.   
+> 2.    Wählen Sie die betreffende(n) Umgebung(en) aus.
+> 3.    Fügen Sie unter der Registerkarte „Sicherheit” die notwendigen Benutzer zur Rolle „Umgebungsersteller” hinzu.
+
+Beachten Sie, dass dieser letzte Schritt des Hinzufügens von Benutzern zur PowerApps-Umgebung temporär ist. Letztendlich werden Funktionen hinzugefügt werden, damit dies automatisch aktiviert wird, wenn der Benutzer innerhalb der Kernpersonalverwaltung hinzugefügt wird.
+
 

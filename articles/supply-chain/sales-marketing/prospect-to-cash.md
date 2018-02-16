@@ -3,12 +3,12 @@ title: Interessent zu Bargeld
 description: "Das Thema bietet eine Übersicht der Lösung „Interessent zu Bargeld” zwischen Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, und Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -17,13 +17,13 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: f169b0ee20a7ca0c8d05c8bdcf2c04d411722f01
-ms.openlocfilehash: ff166f89d13acbc3aefcbdb39f485881c81cb42c
+ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
+ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
 ms.contentlocale: de-de
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,16 +31,20 @@ ms.lasthandoff: 12/21/2017
 
 [!include[banner](../includes/banner.md)]
 
-Die „Interessent zu Bargeld”-Lösung bietet direkte Synchronisation zwischen Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, und Microsoft Dynamics 365 for Sales. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Während die Daten zwischen Finance and Operations und Sales fließen, können Sie Vertriebs- und Marketingaktivitäten zwischen Finance and Operations und Sales ausführen und die Auftagserfüllung mit Bestandsverwaltung in Finance and Operations handhaben.
+Die „Interessent zu Bargeld”-Lösung bietet direkte Synchronisation zwischen Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, und Microsoft Dynamics 365 for Sales. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Während die Daten zwischen Finance and Operations und Sales fließen, können Sie Vertriebs- und Marketingaktivitäten zwischen Finance and Operations und Sales ausführen und die Auftagserfüllung mit Bestandsverwaltung in Finance and Operations handhaben. 
+
+Für weitere Informationen über die Integration von „Interessent zu Bargeld” sehen Sie sich den kurzen YouTube-Video an:
+
+> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
 
 In der aktuellen Version enthält die Interessent in Bargeldlösung die folgenden Typen der direkten Synchronisierung:
 
 - [Konten in Sales verwalten und direkt cvon Sales zu Finance and Operations synchronisieren](accounts-template-mapping-direct.md)
 - [Produkte in Finance and Operations verwalten und direkt mit Sales synchronisieren](products-template-mapping-direct.md)
 - [Kontakte in Sales verwalten und direkt mit Kontakten oder Debitoren in Finance and Operations synchronisieren](contacts-template-mapping-direct.md)
-- [Synchronisieren von Verkaufsangeboten direkt von Sales mit Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Verkaufsangebot direkt von Sales mit Finance and Operations synchronisieren](sales-quotation-template-mapping-sales-fin.md)
 - [Synchronisieren von Verkaufsaufträgen direkt von Finance and Operations mit Sales](sales-order-template-mapping-direct.md)
-- [Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
+- [Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations (Vorlage, deren Veröffentlichung aussteht)](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronisieren von Verkaufsrechnungen direkt von Finance and Operations mit Sales](sales-invoice-template-mapping-direct.md)
 
 In der früheren Version enthält die Interessent in Bargeldlösung die folgenden Typen der nicht-direkten Synchronisierung:
@@ -54,11 +58,15 @@ In der früheren Version enthält die Interessent in Bargeldlösung die folgende
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemanforderungen für Finance and Operations
 
-Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installieren:
+„Interessent zu Bargeld”-Integration wird in den folgenden Versionen unterstützt:
+
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (Dezember 2017)
+
+- Dynamics 365 for Finance and Operations, Enterprise Edition (Dezember 2017) – Anwendungsbuild 7.3.11971.56116 mit Plattformupdate 12 (7.0.4709.41129)
 
 ### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017) mit Plattform-Update 8 (Anwendungsbuild 7.2.11792.56024 mit Plattformbuild 7.0.4565.16212)
+- Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017) – mit Plattformupdate 8 (Anwendungsbuild 7.2.11792.56024 mit Plattformbuild 7.0.4565.16212).
 - Die folgenden Hotfixes sind erforderlich:
 
     - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** Dieser Hotfix aktiviert die Auftragspositionssynchronisierung von Sales zu Finance and Operations über die Datenintegrationsfunktion. Er enthält auch einige anderen Erweiterungen.
@@ -68,7 +76,7 @@ Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installie
     > [!NOTE]
     > Sie müssen nur KB4045570 installieren, da diese Installation die Änderungen aus anderen Hotfixes enthält. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations Version 1611 (November 2016) 
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations Version 1611 (November 2016)
 
 - Dynamics 365 for Finance and Operations, Version 1611 (November 2016) mit Plattform-Update 8 oder höher
 
@@ -106,4 +114,6 @@ Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installie
     2. Wählen Sie die Option zum **Anzeigen von Erweiterungen** aus.
     3. Wählen Sie für eine schnelle Installation die Region aus. Wenn Sie **Ich weiß nicht** auswählen, sucht das System nach allen Regionen und die Installation dauert länger.
     4. Geben Sie Benutzername und Kennwort für einen Administratorbenutzer ein, der über Benutzerrechte zum Installieren verfügt.
+
+
 

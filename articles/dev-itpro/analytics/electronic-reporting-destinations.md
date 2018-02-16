@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 211442c7bd0d3079a5eb4f6d01944c0eddf533af
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -52,7 +52,7 @@ Nachdem Sie einen Verweis erstellt haben, können Sie ein Ziel für jeden Ordner
 
 [![Erstellen Sie die Zieldatei.](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-**Hinweis:** Sie können ein Dateiziel für jede Ausgabekomponente des gleichen Formats im Feld **Dateiname** erstellen (z. B. einen Ordner oder eine Datei). Sie können die Ziele für die Dateiziele im **Zieleinstellungen**-Dialogfeld separat aktivieren und deaktivieren. Die **Einstellungen**-Schaltfläche wird verwendet, um alle Ziele für eine ausgewählte Dateiziel steuern. Im **Zieleinstellungen**-Dialogfeld Sie können jedes Ziel separat steuern, indem Sie die **Aktiviert**-Option nutzen.
+> ![HINWEIS] Sie können ein Dateiziel für jede Ausgabekomponente des gleichen Formats im Feld **Dateiname** erstellen (z. B. einen Ordner oder eine Datei). Sie können die Ziele für die Dateiziele im **Zieleinstellungen**-Dialogfeld separat aktivieren und deaktivieren. Die **Einstellungen**-Schaltfläche wird verwendet, um alle Ziele für eine ausgewählte Dateiziel steuern. Im **Zieleinstellungen**-Dialogfeld Sie können jedes Ziel separat steuern, indem Sie die **Aktiviert**-Option nutzen.
 
 [![Dialogfeld Zieleinstellungen](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -71,7 +71,7 @@ Wenn Sie für das Feld **Zu** oder **CC** auf **Bearbeiten** klicken, erscheint 
 
 #### <a name="print-management"></a>Druckverwaltung
 
-Wenn Sie den Typ **Management E-Mail drucken** auswählen, können Sie die feste E-Mail-Adressen im Feld **An** eingeben. Um keine festen E-Mail-Adressen zu verwenden, müssen Sie die E-Mail-Herkunftsart für ein Ziel auswählen. Folgende Werte werden unterstützt:**Kunde**, **Lieferant**, **Interessent**, **Kontakt**, **Konkurrent**, **Arbeitskraft**, **Bewerber**, **Künftiger Kreditor** und **Unzulässiger Lieferant**. Nachdem Sie einen E-Mail-Quelltyp ausgewählt haben, verwenden Sie die Schaltfläche neben dem Feld **E-Mail-Quellkonto**, um das ** Formeldesigner ** zu öffnen. Sie können dieses Formular verwenden, um eine Formel zuzuordnen, die das ausgewählte Parteienkonto mit dem E-Mail-Ziel darstellt.
+Wenn Sie den Typ **Management E-Mail drucken** auswählen, können Sie die feste E-Mail-Adressen im Feld **An** eingeben. Um keine festen E-Mail-Adressen zu verwenden, müssen Sie die E-Mail-Herkunftsart für ein Ziel auswählen. Folgende Werte werden unterstützt: **Kunde**, **Lieferant**, **Interessent**, **Kontakt**, **Konkurrent**, **Arbeitskraft**, **Bewerber**, **Künftiger Kreditor** und **Unzulässiger Lieferant**. Nachdem Sie einen E-Mail-Quelltyp ausgewählt haben, verwenden Sie die Schaltfläche neben dem Feld **E-Mail-Quellkonto**, um das **Formeldesigner** zu öffnen. Sie können dieses Formular verwenden, um eine Formel zuzuordnen, die das ausgewählte Parteienkonto mit dem E-Mail-Ziel darstellt.
 
 [![Durckverwaltungs-E-Mail-Typ konfigurieren](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
 
@@ -97,11 +97,11 @@ Mit dieser Option können Ausgaben als Microsoft SharePoint-Ordner oder Microsof
 
 [![Seite „Dokumenttypen”](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 
-Der Speicherort bestimmt, wo die Datei gespeichert wird. Nachdem das Ziel **Archiv** aktiviert ist, können Sie die Ergebnisse der Konfigurationsausführung im Einzelvorgangsarchiv gespeichert werden. Sie können die Ergebnisse **Organisationsverwaltung**&gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstellung archivierte Einzelvorgänge** anzeigen. **Hinweis** Sie können einen Dokumenttyp für das Einzelvorgangsarchiv in Finance and Operations **Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstattungsparameter** auswählen.
+Der Speicherort bestimmt, wo die Datei gespeichert wird. Nachdem das Ziel **Archiv** aktiviert ist, können Sie die Ergebnisse der Konfigurationsausführung im Einzelvorgangsarchiv gespeichert werden. Sie können die Ergebnisse **Organisationsverwaltung** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstellung archivierte Einzelvorgänge** anzeigen. **Hinweis** Sie können einen Dokumenttyp für das Einzelvorgangsarchiv in Finance and Operations **Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstattungsparameter** auswählen.
 
 #### <a name="sharepoint"></a>SharePoint
 
-Sie können eine Datei in einem bestimmten SharePoint-Ordner speichern. Sie definieren den Standardwert SharePoint-Server unter:**Organisationsverwaltung** &gt; **Dokumentverwaltung** &gt; **Parameter der Dokumentverwaltung** auf der Registerkarte **SharePoint** . Nachdem der SharePoint-Ordner konfiguriert ist, können Sie diesen als den Ordner auswählen, in dem die ER-Ausgabe für den Dokumenttyp gespeichert wird. 
+Sie können eine Datei in einem bestimmten SharePoint-Ordner speichern. Sie definieren den Standardwert SharePoint-Server unter: **Organisationsverwaltung** &gt; **Dokumentverwaltung** &gt; **Parameter der Dokumentverwaltung** auf der Registerkarte **SharePoint** . Nachdem der SharePoint-Ordner konfiguriert ist, können Sie diesen als den Ordner auswählen, in dem die ER-Ausgabe für den Dokumenttyp gespeichert wird. 
 
 [![Einen SharePoint-Ordner auswählen](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
 
@@ -131,7 +131,7 @@ Für ER Ziele werden zwei Arten von Rechte und Pflichten verwendet. Ein Typ steu
 | PaymAccountsPayablePaymentsClerk    | Sachbearbeiter Kreditorenkontozahlungen            | ERFormatDestinationRuntimeConfigure | Zielort für elektronisches Berichtsformat zur Laufzeit konfigurieren |
 | PaymAccountsReceivablePaymentsClerk | Sachbearbeiter Debitorenkontenzahlungen         | ERFormatDestinationRuntimeConfigure | Zielort für elektronisches Berichtsformat zur Laufzeit konfigurieren |
 
-**Hinweis:** In der vorherigen Aufgaben werden zwei Rechte verwendet. Diese Berechtigungen haben dieselben Namen wie die entsprechenden Aufgaben: **ERFormatDestinationConfigure** und **ERFormatDestinationRuntimeConfigure**.
+> ![HINWEIS] In der vorherigen Aufgaben werden zwei Rechte verwendet. Diese Berechtigungen haben dieselben Namen wie die entsprechenden Aufgaben: **ERFormatDestinationConfigure** und **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Ich habe elektronische Konfigurationen importiert und sehe sie auf der Seite "Elektronische Berichterstellung". Aber warum sehe ich sie nicht auf der Seite "Ziele für die elektronische Berichterstellung"?
@@ -154,7 +154,7 @@ Die Formel ist für die ER-Konfiguration spezifisch. Wenn Sie beispielsweise die
 
 Die Voraussetzung ist, dass das Format in ER-Konfigurationen verfügbar sein muss. Öffnen Sie das Format haben, öffnen Sie die Seite **Ziel für elektronische Berichterstellung**, und erstellen Sie eine neue Referenz zu dieser Konfiguration. Sie müssen dann über vier Dateiziele verfügen – eine für jede Komponente. Erstellen Sie das erste Ziel, geben sie ihm einen Namen (z. B. **Ordner**), und wählen Sie einen Dateinamen, die einen Ordner in Ihrer Konfiguration darstellt. Klicken Sie dann auf **Einstellungen**, und stellen Sie sicher, dass alle Ziele deaktiviert sind. Für dieses Dateiziel wird kein Ordner erstellt. Aufgrund der hierarchischen Abhängigkeiten zwischen Dateien und übergeordneten Ordner verhalten sich die Dateien genauso. Sie werden also auch nicht gesendet. Um dieses Standardverhalten zu überschreiben, müssen Sie drei weitere Datei Ziele für jede Datei erstellen. In jeder Zieleinstellungen müssen Sie das Ziel aktivieren, an das die Datei gesendet werden soll.
 
-# <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
 

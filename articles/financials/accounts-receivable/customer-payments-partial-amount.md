@@ -3,11 +3,12 @@ title: "Debitorenzahlungen für einen Teilbetrag"
 description: "Es kann vorkommen, dass Debitoren eine Zahlung leisten, die geringer als der in der Rechnung gestellte Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c2ba17b97bf7a00ff111e72314e98f5af7aaed80
+ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
+ms.openlocfilehash: 6b7494a05392cbee70e6d5883bae0295e8b55ac9
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -41,7 +42,7 @@ Debitoren könnten eine Teilzahlung leisten, da sie derzeit nicht genügend Barg
 Sie können Debitoren ein Skonto für die Zahlung einer Rechnung vor dem Fälligkeitsdatum anbieten. Beispielsweise geben Sie eine Rechnung für 100,00 ein, die einen Skonto in Höhe von 2 % angibt, wenn die Rechnung innerhalb von 10 Tagen bezahlt wird. Die Fälligkeitsdatumsbedingungen sind 30 Tage. Wenn Sie eine Zahlung von 98,00 innerhalb von 10 Tagen empfangen, geben Sie die Zahlung für 98,00 ein. Wird die Rechnung für den Ausgleich markiert wurde, wird das Skonto automatisch übernommen.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Teilzahlungen mit Skonti
-Wenn Debitoren eine Teilzahlung leisten, planen sie möglicherweise, eine weitere Teilzahlung zu leisten, um die Rechnung vollständig zu begleichen. Um ein Skonto für eine Teilzahlung in Anspruch zu nehmen, müssen Sie die Option **Skonti für Teilzahlungen berechnen** auf **Ja** auf der Seite **Debitorenparameter** festlegen. 
+Wenn Debitoren eine Teilzahlung leisten, planen sie möglicherweise, eine weitere Teilzahlung zu leisten, um die Rechnung vollständig zu begleichen. Um ein Skonto für eine Teilzahlung in Anspruch zu nehmen, müssen Sie die Option **Skonti für Teilzahlungen berechnen** auf **Ja** auf der Seite **Debitorenparameter** festlegen. 
 
 Es kann beispielsweise sein, dass Sie ein Skonto in Höhe von 2 % gewährt wird, wenn die Rechnung innerhalb von 10 Tagen nach ihrer Ausstellung bezahlt wird. Es wird eine Rechnung über 100,00 Euro gebucht. Wenn Sie innerhalb von 10 Tagen eine Zahlung in Höhe von 49,00 Euro empfangen, geben Sie in die Zahlungserfassung einen Habenbetrag von 49,00 Euro ein. Wenn Sie die Teilzahlung auf der Seite **Bankbuchungen** ausgleichen, wird im Feld **Zu verwendender Skontobetrag** der Betrag **1,00** angezeigt. Der Skontobetrag wird auf ein Skontokonto gebucht. 
 
@@ -51,7 +52,7 @@ Es kann beispielsweise sein, dass Sie ein Skonto in Höhe von 2 % gewährt wird,
 ## <a name="credit-notes-with-discounts"></a>Gutschriften mit Rabatten
 Es kann auch vorkommen, dass Debitoren einige in einer Rechnung enthaltenen Artikel zurückgeben und dafür eine Gutschrift erhalten. Wenn ein Skonto in der ursprünglichen Rechnung stammt, sollte die Gutschrift für den Debitor ein Teil des Skontos sein, das vom Debitor in Anspruch genommen wurde. Wenn die Option **Skonti für Gutschriften berechnen** auf **Ja** auf der Seite **Debitorenkontenparameter** festgelegt ist, wird der Rabatt für die Gutschrift automatisch berechnet. 
 
-Es kann beispielsweise sein, dass Sie in den Zahlungsbedingungen einen Rabatt in Höhe von 2 % gewährt haben, wenn die Rechnung innerhalb von 10 Tagen nach der Ausstellung beglichen wird. Eine Rechnung über 100,00 wurde gebucht, und der Debitor hat das Skonto in Anspruch genommen. Wenn der Debitor die Waren zurückgibt und Sie eine Gutschrift ausstellen, können Sie die Gutschrift von -100,00 Euro eingeben. Wenn Sie die Gutschrift auf der Seite **Offene Buchungen ausgleichen** anzeigen, wird im Feld **Auszugleichender Betrag****98,00** angezeigt, und **-2,00** wird im Feld **Skontobetrag** angezeigt. Der Skontobetrag wird auf ein Skontokonto gebucht.
+Es kann beispielsweise sein, dass Sie in den Zahlungsbedingungen einen Rabatt in Höhe von 2 % gewährt haben, wenn die Rechnung innerhalb von 10 Tagen nach der Ausstellung beglichen wird. Eine Rechnung über 100,00 wurde gebucht, und der Debitor hat das Skonto in Anspruch genommen. Wenn der Debitor die Waren zurückgibt und Sie eine Gutschrift ausstellen, können Sie die Gutschrift von -100,00 Euro eingeben. Wenn Sie die Gutschrift auf der Seite **Offene Buchungen ausgleichen** anzeigen, wird im Feld **Auszugleichender Betrag** **98,00** angezeigt, und **-2,00** wird im Feld **Skontobetrag** angezeigt. Der Skontobetrag wird auf ein Skontokonto gebucht.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Überzahlungs-/Unterzahlungsbeträge
 Wenn Kunden eine Zahlung leisten, muss möglicherweise ein sehr kleiner Betrag noch ausgeglichen werden. Beispiel: Sie stellen dem Debitor eine Rechnung über 1.000,00 Euro aus, und der Debitor bezahlt davon 999,90 Euro. Falls der verbleibende Betrag niedriger als der Betrag ist, der für Überzahlungen oder Unterzahlungen auf der Seite **Debitorenparameter** angegeben ist, wird die Differenz automatisch zu einem Sachkonto für Über-/Unterzahlungen gebucht.

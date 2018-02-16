@@ -1,7 +1,7 @@
 ---
 title: Vor dem Kauf
 description: "Schrittweise Anleitung, die Sie anwenden, wenn Sie überlegen, Dynamics 365 for Finance and Operations, Enterprise edition, zu kaufen."
-author: margoc
+author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
@@ -13,14 +13,14 @@ ms.reviewer: margoc
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: margoc
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4bd67b15e893613bed14d2bdc1d9a07da81dc26
+ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
+ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 
@@ -35,7 +35,17 @@ Sie können sich einfach per E-Mail für einen 30-tägigen kostenlosen Test von 
 
 ## <a name="step-two-choose-a-deployment-option"></a>Schritt 2: Auswahl einer Bereitstellungsoption
 Jetzt können Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, in der Cloud oder lokal bereitstellen. Cloud-Bereitstellungen bieten einen vollständig von Microsoft verwalteten ERP-Service, während lokale Bereitstellungen lokal im Rechenzentrum des Kunden bereitgestellt werden.
-Weitere Informationen finden Sie unter [Bereitstellungsoptionen](../../dev-itpro/deployment/choose-deployment-type.md) 
+
+Folgende Überlegungen müssen vorgenommen werden, wenn Sie lokal als Bereitstellungsoption auswählen:
+- Gesetzliche Anforderungen und Konformitätsanforderungen, die in den [Cloudzertifizierungen](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities) nicht verfügbar sind
+- Nicht verbundener Geschäftsprozess mit erforderlicher zweitweiliger Internetkonnektivität, um auf Microsoft Dynamics Lifecycle Services (LCS) für die Anwendungslebenszyklus-Verwaltung zuzugreifen
+- [Funktionen, die in lokalen Bereitstellungen aktuell nicht implementiert sind](features-not-implemented-on-prem.md)
+- [Minimale Infrastrukturanforderungen](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+
+> [!IMPORTANT]
+> Lokale Bereitstellungen von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, werden in keiner Public Cloud-Infrastruktur unterstützt, einschließlich Azure. 
+
+Weitere Informationen finden Sie unter [Bereitstellungsoptionen](../../dev-itpro/deployment/choose-deployment-type.md).
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Schritt 3: Erwerben und Verwalten eines Abonnements
 Weitere Informationen über die Abonnementoptionen finden Sie auf der Preisseite zu [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing). Diese Seite enthält unterschiedliche Pläne, um den Anforderungen Ihres Unternehmens zu entsprechen.
