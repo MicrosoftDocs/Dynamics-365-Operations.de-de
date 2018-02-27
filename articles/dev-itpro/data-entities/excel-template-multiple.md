@@ -18,14 +18,16 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 84b9e9128d7ea6cdf9949549f4ab7a1c6c01691b
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: b314a649829dd14a525923802e19b847dc5a115e
 ms.contentlocale: de-de
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/27/2018
 
 ---
 
 # <a name="excel-templates-with-multiple-worksheets"></a><span data-ttu-id="4feba-103">Excel-Vorlagen mit mehreren Arbeitsblättern</span><span class="sxs-lookup"><span data-stu-id="4feba-103">Excel templates with multiple worksheets</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="4feba-104">Datenverwaltung in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, unterstützt auf Microsoft Excel basierte Vorlagen für Datenentitäten.</span><span class="sxs-lookup"><span data-stu-id="4feba-104">Data management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports Microsoft Excel-based templates for data entities.</span></span> <span data-ttu-id="4feba-105">Diese Vorlagen können eines oder mehrere Arbeitsblätter enthalten.</span><span class="sxs-lookup"><span data-stu-id="4feba-105">These templates can contain one or more worksheets.</span></span> <span data-ttu-id="4feba-106">Vorlagen mit mehreren Arbeitsblättern werden häufig verwendet, wenn es von Vorteil ist, Daten in einer einzigen Datei zu verwalten und diese in mehrere Datenentitäten zu importieren.</span><span class="sxs-lookup"><span data-stu-id="4feba-106">Templates with multiple worksheets are often used when it is convenient to manage data in a single file and import it to multiple data entities.</span></span> <span data-ttu-id="4feba-107">Ein Beispiel wären Standorte und Lagerorte.</span><span class="sxs-lookup"><span data-stu-id="4feba-107">An example would be sites and warehouses.</span></span>
 
