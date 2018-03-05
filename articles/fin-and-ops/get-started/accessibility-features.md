@@ -25,6 +25,8 @@ ms.lasthandoff: 01/23/2018
 
 # <a name="accessibility-features"></a>Eingabehilfefunktionen
 
+[!include[banner](../includes/banner.md)]
+
 In diesem Thema werden die Funktionen beschrieben, die Benutzer mit mehreren verschiedenen Behinderungen dabei unterstützen sollen, Dynamics 365 for Finance and Operations, Enterprise Edition, Dynamics 365 for Retail sowie Dynamics 365 for Talent zu verwenden. Beispielsweise gibt es Funktionen nach Personen, die sehunterstützende Technologien wie Microsoft Windows-Sprachausgabe verwenden.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows-Sprachausgabe und nur Tastatur-Zugriff

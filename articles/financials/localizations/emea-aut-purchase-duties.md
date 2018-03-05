@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-duties-for-austria"></a>Einkaufssteuern für Österreich
 
+[!include[banner](../includes/banner.md)]
+
 Bei der Einkaufssteuer handelt es sich um eine Steuer auf die eingehende Mehrwertsteuer. Sie wird als prozentualer Anteil der gezahlten Mehrwertsteuer berechnet. Dieses Thema umfasst Informationen zu Einkaufssteuern für juristische Personen mit primärer Adresse in Österreich. Weitere Informationen über die globale Mehrwertsteuerfunktionen finden Sie im [Mehrwertsteuerüberblick](../general-ledger/indirect-taxes-overview.md).
 
 Die Berechnung der Einkaufssteuern basiert auf Mehrwertsteuercodes. Um einen Mehrwertsteuercode in die Einkaufssteuerberechnung einzubeziehen, aktivieren Sie das Kontrollkästchen **Einkaufssteuer** auf der Seite **Mehrwertsteuercodes**. 

@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Hardwarekalkulation für lokale Umgebungen
+
+[!include[banner](../includes/banner.md)]
+
 Bevor Sie mit der Hardware- und Infrastrukturkalkulation für eine lokale Umgebung beginnen, machen Sie sich mit den [Systemanforderungen](system-requirements.md) und den [Anweisungen für die Einrichtung und Bereitstellung](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) vertraut, um die zugrundeliegende Infrastruktur wirklich zu verstehen. 
 
   **Hinweis:** Achten Sie auf die optimalen Leistungsverfahren für die Systemeinrichtung. 

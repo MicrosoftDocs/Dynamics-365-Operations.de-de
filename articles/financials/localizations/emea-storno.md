@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="storno-accounting"></a>Stornobuchung
 
+[!include[banner](../includes/banner.md)]
+
 Stornobuchung ist die Verwendung negativer Zahlen, um Originaleinträge im Journalkonto rückgängig zu machen.
 
 *Stornobuchung* ist die Verwendung negativer Lastschrift- oder Gutschriftbeträge, um Originaleinträge im Journalkonto rückgängig zu machen. Buchhalter schreiben Stornoeinträge üblicherweise in roter Farbe, deshalb wird diese Buchungsform auch als *Rotes Storno* bezeichnet. Mit einer Stornobuchung können Sie ein Dokument mit fehlerhaften Beträgen stornieren, Sie sollten nach der Stornierung jedoch immer den richtigen Dokumentenbetrag eingeben.
