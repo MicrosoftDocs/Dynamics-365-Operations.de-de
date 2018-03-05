@@ -17,14 +17,16 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: b8dd339194461b3d09470057b0d2463dc422fd6e
+ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
+ms.openlocfilehash: 9c1d54606618cee47d0ecab0c86c569e16687be4
 ms.contentlocale: de-de
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/05/2018
 
 ---
 
 # <a name="purchase-duties-for-austria"></a><span data-ttu-id="d0eb7-104">Einkaufssteuern für Österreich</span><span class="sxs-lookup"><span data-stu-id="d0eb7-104">Purchase duties for Austria</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="d0eb7-105">Bei der Einkaufssteuer handelt es sich um eine Steuer auf die eingehende Mehrwertsteuer. Sie wird als prozentualer Anteil der gezahlten Mehrwertsteuer berechnet.</span><span class="sxs-lookup"><span data-stu-id="d0eb7-105">A purchase duty is a tax on incoming sales tax and is calculated as a percentage of the paid sales tax.</span></span> <span data-ttu-id="d0eb7-106">Dieses Thema umfasst Informationen zu Einkaufssteuern für juristische Personen mit primärer Adresse in Österreich.</span><span class="sxs-lookup"><span data-stu-id="d0eb7-106">This topic includes information about purchase duties for legal entities that have their primary address in Austria.</span></span> <span data-ttu-id="d0eb7-107">Weitere Informationen über die globale Mehrwertsteuerfunktionen finden Sie im [Mehrwertsteuerüberblick](../general-ledger/indirect-taxes-overview.md).</span><span class="sxs-lookup"><span data-stu-id="d0eb7-107">For more information about the global sales tax functionality, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).</span></span>
 
