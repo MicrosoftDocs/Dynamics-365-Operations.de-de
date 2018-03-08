@@ -19,14 +19,17 @@ ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 418ee6136a5a02d343828d8eb33b1e37325e2918
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 82b3076eba0d374c80e37572233cf7ba440cc65a
 ms.contentlocale: de-de
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="sell-and-return-products-outside-of-an-assortment"></a><span data-ttu-id="f790f-103">Produkte außerhalb eines Sortiments verkaufen und zurückgeben</span><span class="sxs-lookup"><span data-stu-id="f790f-103">Sell and return products outside of an assortment</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="f790f-104">Ein allgemeines Szenario für einen beliebigen Einzelhändler ist es, Produkte an seine Kunden zu verkaufen oder Rücklieferungen von den Debitoren zu akzeptieren, wenn sie keine spezifische Produkte in ihrer Filiale führen (das heißt, die Produkte werden nicht nach Shop sortiert).</span><span class="sxs-lookup"><span data-stu-id="f790f-104">A common scenario for any retailer is to sell products to their customers or accept returns from their customers even if they don’t carry the specific products in their store (in other words, the products are not assorted to the store).</span></span>
 <span data-ttu-id="f790f-105">Nachfolgend sind einige typische Szenarios:</span><span class="sxs-lookup"><span data-stu-id="f790f-105">Here are some typical scenarios:</span></span>
 

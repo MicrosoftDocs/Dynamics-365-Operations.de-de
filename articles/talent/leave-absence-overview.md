@@ -19,13 +19,15 @@ ms.author: ryansand
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: dcaf0e58afe01a530ef567bfdb3b8e2506da9742
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: e59ccde58adb7fae2504d37f8a0bc76110a3348b
 ms.contentlocale: de-de
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 # <a name="leave-and-absence-management-overview"></a><span data-ttu-id="375cf-103">Urlaubs- und Abwesenheitsübersicht verwalten</span><span class="sxs-lookup"><span data-stu-id="375cf-103">Leave and absence management overview</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="375cf-104">Das Modul **Urlaubs- und Absenzverwaltung** bietet ein flexibles Framework für das Definieren des Abwesenheitsverwaltungsprozesses.</span><span class="sxs-lookup"><span data-stu-id="375cf-104">The **Leave and absence management** module offers a flexible framework for defining the absence management process.</span></span> <span data-ttu-id="375cf-105">Urlaubs- und Abwesenheitspläne können erstellt werden, um festzustellen, wie Mitarbeiter anfallen oder Ihnen Freizeit gewährt wird.</span><span class="sxs-lookup"><span data-stu-id="375cf-105">Leave and absence plans can be created to determine how employees accrue or are granted time off.</span></span> <span data-ttu-id="375cf-106">Nachdem Mitarbeiter in einem Plan registriert sind, können sie Freizeitersuchen zur Genehmigung durch  Vorgesetzte senden.</span><span class="sxs-lookup"><span data-stu-id="375cf-106">After employees are enrolled in a plan, they can submit time-off requests for approval by managers.</span></span> <span data-ttu-id="375cf-107">In Urlaubnachverfolgung können Manager der obersten Ebene und Personalverwaltung (HR)- Manager anzeigen, wer freimacht und wie viel Freizeit jeder Mitarbeiter noch hat.</span><span class="sxs-lookup"><span data-stu-id="375cf-107">Leave tracking lets both first-level managers and Human Resources (HR) managers see who is taking time off and how much time off each employee still has.</span></span>  
 
