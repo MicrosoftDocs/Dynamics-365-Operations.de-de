@@ -28,6 +28,8 @@ ms.lasthandoff: 10/10/2017
 
 # <a name="ship-an-order-from-a-different-store"></a>Auftrag aus einem anderen Shop versenden
 
+[!include[banner](includes/banner.md)]
+
 Bei der Belastung übermitteln Funktion in Dynamics 365 for Retail, können Debitorenaufträge in einen Shops platziert und aus einem anderen Shop versendet werden. Debitorenaufträge im Verkaufsstellen (POS)-Client unterstützen mehrere Erfüllungsoptionen. Einige Beispiele von Erfüllungsoptionen enthalten:
 -   Entnahme vom gleichen Shop an einem anderen Datum.
 -   Entnahme von einem anderen Shop an demselben oder an einem anderen Datum.

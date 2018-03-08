@@ -54,10 +54,6 @@ Hier können Sie die Sachkonten angeben, die bei Buchungen mit dem ausgewählten
 Wenn alle Debitorenbuchungen das gleiche Buchungsprofil besitzen sollen, richten Sie nur ein Buchungsprofil mit der Angabe "Alle" im Feld "Kontocode" ein. Geben Sie die folgenden Werte an, um das Buchungsprofil einzurichten:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Feld</th>

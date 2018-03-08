@@ -30,6 +30,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel
 
+[!include[banner](../includes/banner.md)]
+
 In diesem Thema werden die Schritte zur Vorbereitung der Kostenverwaltung für produzierte Artikel beschrieben. Die Schritte für produzierte Artikel unterscheiden sich etwas von den Schritten für eingekaufte Artikel.
 
 Richtlinien, die produzierten Artikeln zugewiesen sind, können sich auf die Kostenberechnungen für die übergeordneten produzierten Artikel auswirken. Gehen Sie zur Vorbereitung der Kostenverwaltung für produzierte Artikel folgendermaßen vor.

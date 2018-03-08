@@ -27,6 +27,8 @@ ms.lasthandoff: 12/20/2017
 
 # <a name="display-notifications-in-point-of-sale"></a>Benachrichtigungen in der Verkaufsstelle anzeigen
 
+[!include[banner](includes/banner.md)]
+
 In der heutigen, modernen Einzelhandelsumgebung werden Filialmitarbeitern verschiedene Aufgaben zugewiesen, wie Kunden zu helfen, Transaktionen einzugeben, Lagerbestände zu zählen und Aufträge in der Filiale entgegenzunehmen. Der Verkaufsstellen-(POS)-Client ermöglicht es den Mitarbeitern, diese Aufgaben und noch viel mehr auszuführen, alles in eine einzigen Anwendung. Bei den verschiedenen Aufgaben, die im Lauf des Tages auszuführen sind, müssen Mitarbeiter möglicherweise darüber benachrichtigt werden, wenn etwas Ihre Aufmerksamkeit erfordert. Das Benachrichtigungsframework in der POS löst dieses Problem, indem es Einzelhändlern ermöglicht, rollenbasierte Benachrichtigungen zu konfigurieren. Mit Dynamics 365 for Retail mit Anwendung Update 5 können diese Benachrichtigungen nur für POS-Arbeitsgänge konfiguriert werden.
 
 Aktuell bietet das System die Fähigkeit, Benachrichtigungen für Auftragserfüllungsarbeitsgänge anzuzeigen. Das Framework ist jedoch so konzipiert, dass es erweiterbar ist. In Zukunft können somit Entwickler einen Benachrichtigungshandler für jeden beliebigen Vorgang schreiben und die Benachrichtigungen in der POS anzeigen.  

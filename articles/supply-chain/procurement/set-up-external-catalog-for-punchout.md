@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Externen Katalog für PunchOut eProcurement einrichten
 
+[!include[banner](../includes/banner.md)]
+
 Mithilfe des externen Katalogs können Sie sicherstellen, dass das Produkt und die Preisangaben, die Sie dann in Dynamics 365 for Finance and Operations, Enterprise Edition, Juli 2017 verarbeiten, auf dem aktuellen Stand sind. Die Anforderung kann anschließend genehmigt und in eine Bestellung konvertiert und ein Auftrag kann an den Kreditor erteilt werden.
 
 Wenn der externe Katalog eingerichtet ist und ein Mitarbeiter eine Anforderung vorbereitet, gibt es eine Option zur Weiterleitung an einen externen Standort, den externen Katalog, und zum Einkaufskorb zurückzukehren, der auf der externen Website erstellt wurde. Die Kommunikation basiert auf dem cXML Protokoll und sie muss zwischen Systemen der kaufenden und verkaufenden Organisation eingerichtet werden.

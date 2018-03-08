@@ -27,6 +27,8 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="excel-templates-with-multiple-worksheets"></a>Excel-Vorlagen mit mehreren Arbeitsblättern
 
+[!include[banner](../includes/banner.md)]
+
 Datenverwaltung in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, unterstützt auf Microsoft Excel basierte Vorlagen für Datenentitäten. Diese Vorlagen können eines oder mehrere Arbeitsblätter enthalten. Vorlagen mit mehreren Arbeitsblättern werden häufig verwendet, wenn es von Vorteil ist, Daten in einer einzigen Datei zu verwalten und diese in mehrere Datenentitäten zu importieren. Ein Beispiel wären Standorte und Lagerorte.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Einmaliges Hochladen einer Datei und deren Zuweisung zu allen Entitäten

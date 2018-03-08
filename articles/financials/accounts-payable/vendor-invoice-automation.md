@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="vendor-invoice-automation"></a>Kreditorenrechnungsautomatisierung
 
+[!include[banner](../includes/banner.md)]
+
 In diesem Thema werden die Funktionen, die für die weitere Automatisierung von Kreditorenrechnungen verfügbar sind, selbst Rechnungen mit Anlagen, erklärt.
 
 Organisationen, die ihre Kreditorenkontenprozesse (AP) optimieren möchten, identifizieren häufig den Fakturierungsprozess als einen ersten Prozessbereich, der effizienter sein sollte. In vielen Fällen lagern diese Organisationen die Verarbeitung von Papierrechnungen an einem Dienstanbieter  für die optische Zeichenerkennung aus. Sie erhalten maschinenlesbare Rechnungsmetadaten zusammen mit einem Bild jeder gescannten Rechnung. Um bei der Automatisierung zu unterstützen, wird eine Lösung erstellt, um den Verbrauch dieser Artefakte im Fakturierungssystem zu aktivieren. Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, aktiviert nun diesen Automatisierungsstandard, um eine Rechnungsautomatisierungslösung zu erhalten.

@@ -24,6 +24,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="reverse-charge-vat"></a>Verlagerung der Steuerschuld
+
+[!include[banner](../includes/banner.md)]
+
 In diesem Thema wird ein allgemeiner Ansatz zum Einrichten der Verlagerung der Steuerschuld für europäischer Länder beschrieben.
 
 Die Verlagerung der Steuerschuld ist ein Steuerschema, das die Zuständigkeit für die Buchhaltung und das Melden der Mehrwertsteuer vom Verkäufer auf den Einkäufer von Waren und/oder Dienstleistungen verschiebt. Daher melden Empfänger von Waren und/oder Dienstleistungen die Ausgangssteuer (in der Rolle eines Verkäufers) sowie die Vorsteuer (in der Rolle des Einkäufers) in ihrer MwSt.-Abrechnung.

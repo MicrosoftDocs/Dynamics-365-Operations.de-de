@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="questionnaires"></a>Fragebögen
 
+[!include[banner](includes/banner.md)]
+
 Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu detaillierteren Informationen. Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden. Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren. 
 
 Sie können einen Fragebogen den spezifischen Anforderungen anpassen, indem Sie eine Kombination der verschiedenen Funktionen verwenden, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, verfügbar sind. Nachfolgend finden Sie einige Beispiele dazu, wie Sie Fragebögen verwenden können:

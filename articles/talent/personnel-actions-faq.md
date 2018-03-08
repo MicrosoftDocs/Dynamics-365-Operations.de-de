@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="personnel-actions-faq"></a>Personalaktivitäten [FAQ]
+
+[!include[banner](includes/banner.md)]
+
 Dieses Thema enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Ihre Organisation Mitarbeiteraktivitäten verwendet. Mitarbeiteraktivitäten sind zusätzliche Schritte, die Sie ausführen müssen, wenn Sie bestimmte mitarbeiterbezogene Aufgaben ausführen. Beispiele für Aufgaben, die möglicherweise Mitarbeiteraktivitäten erforderten, sind, wenn Sie neue Positionen erstellen, vorhandene Positionswerte ändern, neue Arbeitskräfte einstellen, Arbeitskräfte übertragen, Arbeitskraftvergütung ändern, Positionszuordnungen ändern oder Arbeitskräfte beenden.
 
 **Hinweis**Personalaktivitäten sind nur aktiviert, wenn **Arbeitskraftaktionen aktivieren** und **Positionsaktionen aktivieren** auf **Ja** gesetzt sind in der Registerkarte **Personalaktivitäten** auf der Seite **Freigegebene Parameter für Personalverwaltung**. 

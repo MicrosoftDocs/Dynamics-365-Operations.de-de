@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="corrective-invoicing"></a>Rechnungskorrektur
 
+[!include[banner](../includes/banner.md)]
+
 Eine Gutschrift oder ein Gutschriftvermerk (Memo) ist ein Dokument, das den Betrag, den ein Käufer zahlen muss, reduziert oder wegfallen lässt.
 
 Eine Gutschrift listet die Produkte, Mengen und vereinbarten Preise für Produkte oder Services auf, die der Verkäufer dem Käufer bereitgestellt hat, die der Käufer aber zurückgegeben oder nicht erhalten hat. Sie kann im Falle von beschädigten Waren, Fehlern oder Nachlässen ausgestellt werden.

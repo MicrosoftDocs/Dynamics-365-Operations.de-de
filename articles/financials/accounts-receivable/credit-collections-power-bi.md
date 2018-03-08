@@ -26,6 +26,8 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-Inhalt – Kredit- und Inkassoverwaltung
 
+[!include[banner](../includes/banner.md)]
+
 In diesem Thema wird beschrieben, was im Microsoft Power Bl-Inhalt **Kredit und Inkassoverwaltung** enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
 ## <a name="overview"></a>Überblick

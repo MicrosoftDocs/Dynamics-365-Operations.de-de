@@ -27,6 +27,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="websearchax-retired"></a>WebSearchAX zurückgezogen
 
+[!include[banner](../includes/banner.md)]
+
 Wir mussten die WebSearchAX-Seite zurückziehen. Es wird empfohlen, stattdessen die Websitesuche Ihrer bevorzugten Suchmaschine zu verwenden.  Beispiel: 
 
 site:technet.microsoft.com dynamics ax 2012 "Suchbegriff"

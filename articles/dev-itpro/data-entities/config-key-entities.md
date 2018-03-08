@@ -26,6 +26,9 @@ ms.lasthandoff: 01/19/2018
 ---
 
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsschlüssel und Datenentitäten
+
+[!include[banner](../includes/banner.md)]
+
 Bevor Sie Datenentitäten verwenden, um Daten zu importieren oder zu exportieren, wird empfohlen, dass sie zuerst die Auswirkung von Konfigurationsschlüsseln auf die Datenentitäten bestimmen, die Sie verwenden möchten. 
 
 Weitere Informationen über Konfigurationsschlüssel in Finance and Operations finden Sie unter [Lizenzcodes und Konfigurationsschlüsselbericht](../sysadmin/license-codes-configuration-keys-report.md) Sie unter.

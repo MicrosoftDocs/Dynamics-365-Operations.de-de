@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="design-a-questionnaire"></a>Entwerfen eines Fragebogens
 
+[!include[banner](includes/banner.md)]
+
 In diesem Artikel wird der Prozess zum Erstellen eines Fragebogens beschrieben. Der erste Schritt ist das Entwerfen des Fragebogens. Wenn Sie einen Fragebogen entwerfen, schreiben Sie nicht nur Fragen und Antworten, Sie erstellen auch die Struktur, die es ermöglicht, Antworten zu erfassen und zu tabellieren. 
 
 Mit einer sorgfältigen Gestaltung des Fragebogens sorgen Sie für eine bessere Qualität der gesammelten Daten. Durch sorgfältige Planung können Sie besser die geeigneten Optionen für einen Fragebogen zur richtigen Zeit auswählen. Die folgenden Punkte können Ihnen dabei helfen, einen effektiven Fragebogen zu planen:

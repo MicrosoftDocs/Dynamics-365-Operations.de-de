@@ -25,6 +25,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="expense-management-parameters"></a>Spesenverwaltungsparameter
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 Die Parameter steuern das allgemeine Verhalten in der Spesenverwaltung.

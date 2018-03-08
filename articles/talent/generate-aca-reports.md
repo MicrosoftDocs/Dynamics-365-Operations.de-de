@@ -25,6 +25,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="generate-affordable-care-act-reports"></a>Affordable Care Act-Berichte erstellen
+
+[!include[banner](includes/banner.md)]
+
 Funktion ist verfügbar, um Arbeitgeber zu unterstützten, die Informationen erfassen müssen, die auf den Formularen 1095-B und 1095-C aufgrund des Abschnitts **Employer Mandate** im Affordable Care Act gemeldet wurden. Hinweis: Diese Funktionalität ist nur für juristische Personen in den USA aktiviert.
 
 ## <a name="getting-started"></a>Erste Schritte

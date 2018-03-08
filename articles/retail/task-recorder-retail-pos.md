@@ -29,6 +29,8 @@ ms.lasthandoff: 02/01/2018
 
 # <a name="task-recorder-and-help-for-pos"></a>Aufgabenaufzeichnung und Hilfe für POS
 
+[!include[banner](includes/banner.md)]
+
 In diesem Thema wird beschrieben, wie Aufgabenaufzeichnung in Retail Modern POS und Cloud POS verwendet werden.
 
 <a name="overview"></a>Überblick
