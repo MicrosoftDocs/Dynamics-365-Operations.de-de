@@ -27,6 +27,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="sell-and-return-products-outside-of-an-assortment"></a>Produkte außerhalb eines Sortiments verkaufen und zurückgeben
+
+[!include[banner](includes/banner.md)]
+
 Ein allgemeines Szenario für einen beliebigen Einzelhändler ist es, Produkte an seine Kunden zu verkaufen oder Rücklieferungen von den Debitoren zu akzeptieren, wenn sie keine spezifische Produkte in ihrer Filiale führen (das heißt, die Produkte werden nicht nach Shop sortiert).
 Nachfolgend sind einige typische Szenarios:
 

@@ -28,6 +28,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Überblick über Produkt- und Debitorensuche in der Verkaufsstelle
 
+[!include[banner](includes/banner.md)]
+
 Moderne Verkaufsstellen (MPOS) und Cloud-Verkaufsstellen (CPOS) bieten eine benutzerfreundliche Suchfunktion, mit der Shopmitarbeitern Produkte und Debitoren schnell finden können. Die Suchleiste wird immer oben auf den MPOS und CPOS angezeigt, sodass Mitarbeiter Produkte und Debitoren schnell finden können.
 
 Mitarbeiter können nach Produkten in Sortimenten und Katalogen suchen, die mit dem aktuellen Shop verknüpft sind und in den Sortimenten und Katalogen, die mit anderen Shops im Unternehmen verknüpft sind. Daher können Kassierer Produkte außerhalb des Filialsortiments verkaufen und zurückgeben. Entsprechend können Mitarbeiter nach Debitoren suchen, die mit dem aktuellen Shop oder einem anderen Shop im Unternehmen verknüpft sind. Außerdem können Mitarbeiter nach Debitoren suchen, die mit einem anderen Unternehmen in der übergeordneten Organisation verknüpft sind.

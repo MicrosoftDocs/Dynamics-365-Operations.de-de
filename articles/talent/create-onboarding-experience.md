@@ -26,6 +26,8 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="create-an-engaging-onboarding-experience"></a>Erstellen Sie eine interagierende Onboarding-Erfahrung
 
+[!include[banner](includes/banner.md)]
+
 Wenn sie effektiv ausgeführt werden, hilft das Onboarding neuen Mitarbeitern, effektiv zu arbeiten, während sie ein Zugehörigkeitsgefühl in der neuen Rolle erhalten. Onboarding kann neue Mitarbeiter unterstützen, die neue Rolle schneller und genau zu veranschaulichen, und sie erhalten einen Vorsprung für das Einrichten von Beziehungen, die ihnen zu mehr Erfolg verhelfen. Alternativ kann möglicherweise eine nicht erfolgreiche Onboarding-Erfahrung bei den Mitarbeitern Zweifel auslösen und dazu führen, dass sie sich die Frage stellen, wieso sie zur Organisation gestossen sind. Eine Studien, die von Gartner im Jahre 2014 durchgeführt wurde, hat festgestellt, dass beinahe ein Drittel der 1.005 Befragten, die eine Stelle innerhalb der ersten sechs Monate wieder aufgaben, dies taten, weil die Richtlinien, die sie von ihren Vorgesetzten erhielten, nicht klar waren, ihre Schulung nicht effektiv war und weil sie keine Beziehungen in ihrer neuen Umgebung aufbauten.
 
 ## <a name="have-an-onboarding-program-in-place"></a>Haben ein Onboarding-Programm zur Verfügung
