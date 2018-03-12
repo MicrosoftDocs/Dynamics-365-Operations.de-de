@@ -1,7 +1,7 @@
 ---
 title: "Arbeitsplan und Arbeitsgänge"
 description: "Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge."
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
