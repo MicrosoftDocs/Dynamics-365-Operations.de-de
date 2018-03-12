@@ -9,7 +9,7 @@
 ## [Anwendungsstapel und Serverarchitektur](dev-tools/application-stack-server-architecture.md)
 ## [Eine Evaluierungsversion abrufen](dev-tools/get-evaluation-copy.md)
 ## [Anmelden für ein Abonnement](dev-tools/sign-up-preview-subscription.md)
-## [Auf Instanzen zugreifen](dev-tools/access-instances.md)
+## [Eine Entwicklungsumgebung in Azure bereitstellen und darauf zugreifen](dev-tools/access-instances.md)
 ## [Entwicklungssystemanforderungen](dev-tools/development-system-requirements.md)
 ## Beispielanwendung für die Flottenverwaltung
 ### [Beispielanwendung für die Flottenverwaltung](dev-tools/fleet-management-sample.md)
@@ -360,7 +360,7 @@
 #### [ValueMetadata-Typ](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
 # Datenintegration
-## [Integrationsmuster](data-entities/integration-overview.md)
+## [Eine Datenintegrationsstrategie (Import/Export) auswählen](data-entities/integration-overview.md)
 
 ## Datenintegrations-APIs
 ### [Datenverwaltungspaket-API](data-entities/data-management-api.md)
@@ -381,12 +381,12 @@
 
 ### [Datenintegration mithilfe des Common Data Service](data-entities/data-integration-cds.md) 
 #### [Ein Szenario zum Konvertieren eines Interessenten in Bargeld konfigurieren](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Produkte von Finance and Operations mit Produkten in Sales synchronisieren](../supply-chain/sales-marketing/products-template-mapping.md)
-##### [Konten von Sales mit Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/accounts-template-mapping.md)
-##### [Kontakte von Sales mit Kontakten oder Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/contacts-template-mapping.md)
-##### [Verkaufsangebotskopfzeilen und -positionen von Sales mit Finance and Operations synchronisieren](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-##### [Auftragskopfzeilen und -positionen von Finance and Operations mit Sales synchronisieren](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-##### [Verkaufsrechnungszeilen und -positionen von Finance and Operations mit Sales synchronisieren](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Produkte von Finance and Operations mit Produkten in Sales synchronisieren](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Konten von Sales mit Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Kontakte von Sales mit Kontakten oder Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Verkaufsangebotskopfzeilen und -positionen von Sales mit Finance and Operations synchronisieren](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Auftragskopfzeilen und -positionen von Finance and Operations mit Sales synchronisieren](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Verkaufsrechnungszeilen und -positionen von Finance and Operations mit Sales synchronisieren](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Konten von Sales direkt mit Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Produkte direkt von Finance and Operations mit Produkten in Sales synchronisieren](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Kontakte direkt von Sales mit Kontakten oder Debitoren in Finance and Operations synchronisieren](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
@@ -452,6 +452,8 @@
 
 ## [Eigene Datenbanken nutzen](analytics/export-entities-to-your-own-database.md)
 
+## [Ressourcen für die Reaktion auf eine DSGVO-Datenanforderung](gdpr/gdpr-home-page.md)
+
 # [Continuous Delivery (Startseite)](dev-tools/continuous-delivery-home-page.md)
 ## [Entwicklung und Continuous Delivery – FAQ](dev-tools/continuous-delivery-faq.md)
 ## [Testpakete aus Build-Ausgabe ausschließen](dev-tools/exclude-test-packages.md)
@@ -515,6 +517,7 @@
 ### [Ein lokales Projekt erstellen](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Lokale Umgebungen einrichten und bereitstellen](deployment/setup-deploy-on-premises-environments.md)
 ### [Angepasste Modelle für lokale Umgebungen entwickeln und bereitstellen](deployment/develop-deploy-custom-models-on-premises.md)
+### [Einen Reverseproxy für Ihre lokale Umgebung konfigurieren](deployment/onprem-reverseproxy.md)
 ### [Updates auf eine lokale Bereitstellung anwenden](deployment/apply-updates-on-premises.md)
 ### [Lokale Bereitstellung erneut bereitstellen](deployment/redeploy-on-prem.md)
 ### [Den lokalen Agenten aktualisieren](lifecycle-services/update-local-agent.md)
@@ -527,7 +530,7 @@
 ### [Ein bereitstellbares Paket installieren](deployment/install-deployable-package.md)
 ### [Behandeln von Problemen mit der Paketanwendung](deployment/deployable-package-troubleshooting.md)
 
-# [Aktualisierung und Migration](migration-upgrade/upgrade-home-page.md)
+# [Upgrades, Updates und Hotfixes](migration-upgrade/upgrade-home-page.md)
 ## [Upgrade von AX 2012 zu Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
 ### [AX 2012 Upgrade – Das Upgrade-Analysetool zum Planen verwenden](migration-upgrade/upgrade-analyzer-tool.md)
 ### [AX 2012 Ugrade – Den Code-Aktualisierungsdienst verwenden, um den Aufwand der Aktualisierung von Code vorzukalkulieren](migration-upgrade/analyze-code-upgrade.md)
@@ -555,8 +558,7 @@
 ### [Geteilte Modelle](dev-tools/model-split.md)
 ### [Stellvertreter zum Lösen von Modellabhängigkeiten verwenden](migration-upgrade/delegates-migration.md)
 
-
-## Auf ein aktuelles Update aktualisieren
+## Auf ein aktuelles Update aktualisieren (Cloud)
 ### [Prozess zum Verschieben auf das neueste Update](migration-upgrade/upgrade-latest-update.md)
 ### [Lifecycle-Richtlinie](migration-upgrade/versions-update-policy.md)
 ### [Das aktuellste Platform Update auf Ihre Umgebung anwenden](migration-upgrade/upgrade-latest-platform-update.md)
@@ -564,13 +566,17 @@
 ### [Eine Sandkastenumgebung aktualisieren](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Daten in Entwicklungs- oder Demoumgebungen aktualisieren](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Entwicklungstools aktualisieren](dev-tools/update-development-tools.md)
+
+## Auf ein aktuelles Update aktualisieren (lokal)
 ### [Updates auf eine lokale Bereitstellung anwenden](deployment/apply-updates-on-premises.md)
 ### [Lokale Bereitstellung erneut bereitstellen](deployment/redeploy-on-prem.md)
 
-## Hotfixes und Wartung
+## Hotfixes
 ### [Hotfixes von Lifecycle Services herunterladen](migration-upgrade/download-hotfix-lcs.md)
+### [Updates auf eine Cloudumgebung anwenden](deployment/apply-deployable-package-system.md)
 ### [Metadatenhotfix installieren](migration-upgrade/install-metadata-hotfix-package.md)
 ### [Patch-Berichterstellungsdienste in einer Umgebung mit einem Feld](migration-upgrade/patch-reporting-service-environment.md)
+### [Visual Studio-Entwicklungstools aktualisieren](dev-tools/update-development-tools.md)
 
 ## Veraltete Objekte
 ### [Veraltete APIs](migration-upgrade/deprecated-apis.md)

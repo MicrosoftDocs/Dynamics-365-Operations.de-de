@@ -3,7 +3,7 @@ title: "Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition �
 description: "Dokumentation für Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 03/02/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
-ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
+ms.sourcegitcommit: 7142c6bcb6e98929afdb8bb982a17efc7223ab12
+ms.openlocfilehash: 0d12082a2b10ae8e83217c5451627239e6ec640b
 ms.contentlocale: de-de
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -43,12 +43,16 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 <h3><a href="get-started/before-you-buy.md">Vor dem Einkauf</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Anmelden für ein Vorschauabonnement</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Eine Bereitstellungsoption wählen</a></p>
-  <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
-  <p><a href="get-started/purchase-on-premises.md">Finance and Operations (lokal) kaufen</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Finance and Operations (lokal) kaufen</a></p>
 
+<h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementierungslebenszyklus</a></h3>
+<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="imp-lifecycle/onboard.md">Onboarding eines Projekts</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Vorbereiten des Go-Live</a></p>
+  
 <h3><a href="../financials/index.md">Finanzverwaltung</a></h3>
-<p><a href="../financials/accounts-payable/accounts-payable.md">Kreditoren</a></p>
-<p><a href="../financials/accounts-receivable/accounts-receivable.md">Debitoren</a></p>
+<p><a href="../financials/accounts-payable/accounts-payable.md">Kreditorenkonten</a></p>
+<p><a href="../financials/accounts-receivable/accounts-receivable.md">Debitorenkonten</a></p>
 <p><a href="../financials/budgeting/budgeting-overview.md">Budgetierung</a></p>
 <p><a href="../financials/cash-bank-management/cash-bank-management.md">Bargeld- und Bankverwaltung</a></p>
 <p><a href="../financials/general-ledger/audit-policy-rules.md">Konformität</a></p>
@@ -99,7 +103,8 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 <p><a href="get-started/demo-data.md">Demodaten</a></p>
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Verwaltung</h3>
-<p><a href="../dev-itpro/deployment/choose-deployment-type.md">Bereitstellung</a></p>
+<p><a href="../dev-itpro/deployment/cloud-deployment-overview.md">Cloudbereitstellung</a></p>
+<p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Lokale Bereitstellung</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Aktualisieren</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Wartung</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Datenverwaltungs-Framework</a></p>
