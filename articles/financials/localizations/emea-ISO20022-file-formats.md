@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,16 +17,17 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 599440449f1e8c8dcc3762ce9f6da7a37beb358f
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: 1492e4d8220a3d515145d97ef8dad048727d97c8
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/14/2018
 
 ---
 
 # <a name="import-iso20022-files"></a>ISO20022-Dateien importieren
 
-## <a name="overview"></a>Überblick
+[!include[banner](../includes/banner.md)]
+
 Sie können Zahlungsdateien in den folgenden Formaten importieren:
 
  - **ISO20022 camt.054 Gutschriftanzeige** – Import eingehender Zahlungen aus einer Datei in diesem Format in das Kundenzahlungsjournal.
@@ -40,7 +42,7 @@ Sie müssen die folgenden Voraussetzungen erfüllen, um Bankbenachrichtigungsmel
 4. Richten Sie auf der Seite **Bankkonto** Bankkonten für die juristische Entität ein, indem Sie die folgenden Informationen eingeben: IBAN oder Bankkontonummer und SWIFT-Code oder Bankleitzahl, Währung und Adresse.
 
     > [!NOTE]
-    > Wenn Sie vorhaben, eine erweiterte Bankabstimmung auf dem FastTab **Abstimmung** zu verwenden, setzen Sie die Option **Erweiterte Bankabstimmung** auf **Ja**. Wenn Sie vorhaben, nicht gebuchte importierte Zahlungen abzugleichen, setzen Sie die Option **Bankauszüge als Bestätigung elektronischer Zahlungen verwenden** auf **Ja**.
+        > Wenn Sie vorhaben, eine erweiterte Bankabstimmung auf dem FastTab **Abstimmung** zu verwenden, setzen Sie die Option **Erweiterte Bankabstimmung** auf **Ja**. Wenn Sie vorhaben, nicht gebuchte importierte Zahlungen abzugleichen, setzen Sie die Option **Bankauszüge als Bestätigung elektronischer Zahlungen verwenden** auf **Ja**.
 
 5. Optional: Richten Sie auf der Seite **Transaktionscodezuordnung** die Zuordnung zwischen Banktransaktionscodes in der Datei und Banktransaktionstypen ein.
 6. Wenn die Datei Transaktionsgebühren enthält, die Sie zusammen mit der Eingangszahlung buchen wollen, erstellen Sie eine Zahlungsgebühr auf der Seite **Kundenzahlungsgebühr**. Anschließend ordnen Sie die Zahlungsgebühr auf der Seite **Zahlungsmethoden** dem Bankkonto zu, das in den Einstellungen für die Zahlungsgebühr angegeben ist.
@@ -53,9 +55,7 @@ Sie müssen die folgenden Voraussetzungen erfüllen, um Bankbenachrichtigungsmel
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Importieren der camt.054-Gutschriftanzeigedatei in das Kundenzahlungsjournal.
 1. Klicken Sie auf der Seite **Kundenzahlungserfassungspositionen** auf **Funktionen** > **Zahlungen importieren**.
 2. Wählen Sie die Zahlungsmethode aus, die die erforderlichen Einstellungen für das ISO20022 camt.054-Format besitzt.
-3. Geben Sie die erforderlichen Parameter und den Dateipfad an und klicken Sie anschließend auf **OK**.
-
-Die Datei wird importiert.
+3. Geben Sie die erforderlichen Parameter und den Dateipfad an und klicken Sie anschließend auf **OK**. Die Datei wird importiert.
 
 ## <a name="prerequisites-for-importing-files-in-the-pain002-status-return-and-camt054-debit-advice-formats-into-the-ap-payment-transfer-journal"></a>Voraussetzungen für das Importieren von Dateien in pain.002 Statusrückgabe- und camt.054 Lastschriftanzeigeformaten in das AP-Zahlungstransferjournal
 Sie müssen die folgenden Voraussetzungen erfüllen, um Bankbenachrichtigungsmeldungen in den folgenden ISO20022-Formaten auf die Seite **Zuliefererzahlungstransfer** zu importieren: pain.002.001.003-Statusrückgabenachrichten und camt.054.001.002-Lastschriftanzeige.

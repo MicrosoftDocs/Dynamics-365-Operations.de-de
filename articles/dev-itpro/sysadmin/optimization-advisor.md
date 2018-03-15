@@ -3,7 +3,7 @@ title: "Erstellen von Regeln für Optimierungsratgeber"
 description: "In diesem Thema wird erläutert, wie dem Optimierungsratgeber neue Regeln hinzufügt werden."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 88739298405343a36ae5bc11f51c666c414e7157
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: e64d4fc1a7425d38d728b11e503d3e7289312495
 ms.contentlocale: de-de
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -170,6 +170,9 @@ Abhängig von den Angaben der Regel kann es nicht möglich, von einer automatisc
 
 **securityMenuItem** gibt den Namen einer Aktivitätsmenüoption zurück, sodass die Regel nur für Benutzer sichtbar ist, die auf die Aktivitätsmenüoption zugreifen können. Die Sicherheit kann es unter Umständen erfordern, dass auf bestimmte Regeln und Verkaufschancen nur durch autorisierte Benutzer zugegriffen werden kann. Im Beispiel können nur Benutzer mit Zugriff auf **PurchRFQCaseTitleAction** die Verkaufschance anzeigen. Beachten Sie, dass diese Aktivitätsmenüoption für dieses Beispiel erstellt wurde und als Einstiegspunkt für das Sicherheitsrecht **PurchRFQCaseTableMaintain** hinzugefügt wurde. 
 
+> [!NOTE]
+> Die Menüoption muss eine Aktivitätsmenüoption sein, damit die Sicherheit ordnungsgemäß funktioniert. Andere Menüoptionstypen, wie **Anzeigemenüartikel** funktionieren nicht korrekt.
+
 ```
 public MenuName securityMenuItem() 
 { 
@@ -192,6 +195,65 @@ class ScanNewRulesJob
 ```
 
 Die Regel wird im Formular **Diagnoseüberprüfungsregel** angezeigt, das von **Systemverwaltung** > **Periodische Aufgaben** > **Diagnoseüberprüfungsregel verwalten** verfügbar ist. Damit sie bewertet wird, wechseln Sie zu **Systemverwaltung** > **Periodische Aufgaben** > **Diagnoseüberprüfungsregel planen**, wählen Sie die Häufigkeit der Regel aus, wie beispielsweise **Täglich**. Klicken Sie auf **OK**. Wechseln Sie zu **Systemverwaltung** > **Optimierungsratgeber**, um die neue Verkaufschance anzuzeigen. 
+
+Das folgende Beispiel ist ein Codeausschnitt mit dem Skelett einer Regel einschließlich aller erforderlichen Attribute und Methoden. Es ermöglicht, mit dem schreiben neuer Regeln zu beginnen. Die Beschriftungen und die Aktivitätsmenüoptionen, die im Beispiel verwendet werden, gelten nur zu Vorführungszwecken.
+
+```
+[DiagnosticsRuleAttribute]
+public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
+{
+    [DiagnosticsRuleSubscription(DiagnosticsArea::SCM,
+                                 "@SkeletonRuleLabels:SkeletonRuleTitle", // Label with the title of the rule
+                                 DiagnosticsRunFrequency::Monthly,
+                                 "@SkeletonRuleLabels:SkeletonRuleDescription")] // Label with a description of the rule
+    public str opportunityTitle()
+    {
+        // Return a label with the title of the opportunity
+        return "@SkeletonRuleLabels:SkeletonOpportunityTitle";
+    }
+
+    public str opportunityDetails(SelfHealingOpportunity _opportunity)
+    {
+        str details = "";
+
+        // Use _opportunity.data to provide details on the opportunity
+
+        return details;
+    }
+
+    protected List evaluate()
+    {
+        List results = new List(Types::Record);
+
+        // Write here the core logic of the rule
+
+        // When creating an opportunity, use:
+        //     * this.getOpportunityForCompany() for company specific opportunities
+        //     * this.getOpportunityAcrossCompanies() for cross-company opportunities
+
+        return results;
+    }
+
+    public boolean providesHealingAction()
+    {
+        return true;
+    }
+
+    protected void performAction(SelfHealingOpportunity _opportunity)
+    {
+        // Place here the code that performs the healing action
+
+        // To open a form, use the following:
+        // new MenuFunction(menuItemDisplayStr(SkeletonRuleDisplayMenuItem), MenuItemType::Display).run();
+    }
+
+    public MenuName securityMenuItem()
+    {
+        return menuItemActionStr(SkeletonRuleActionMenuItem);
+    }
+
+}
+```
 
 Weitere Informationen erhalten Sie in einem kurzen YouTube-Video:
 

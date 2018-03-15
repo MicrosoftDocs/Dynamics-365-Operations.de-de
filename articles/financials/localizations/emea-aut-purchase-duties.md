@@ -17,10 +17,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f2a3944f6d89543d55530e3fc745bb020d814a36
+ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
+ms.openlocfilehash: 9c1d54606618cee47d0ecab0c86c569e16687be4
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 

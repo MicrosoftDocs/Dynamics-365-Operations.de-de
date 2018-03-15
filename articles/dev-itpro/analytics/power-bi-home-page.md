@@ -3,7 +3,7 @@ title: Power BI-Inhalt
 description: "Dieses Thema informiert über den Power BI-Inhalt, der verfügbar ist, und weist auf Ressourcen hin, die weitere Informationen enthalten."
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b0a7adb684850a0f0b914ea89ce3af1636b3084c
-ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
 ms.contentlocale: de-de
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -42,6 +42,7 @@ Wenn Sie Microsoft Dynamics 365 for Finance and Operations Enterprise edition ve
 - [Power BI-Inhalt der Kostenrechnungsanalyse](cost-accounting-analysis-content-pack.md) 
 - [Power BI-Inhalt – Kredit- und Inkassoverwaltung](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Power BI-Inhalt – Mitarbeiterentwicklung](employee-development-PBI.md) 
+- [Financial Insights Power BI Inhalt](financial-insights.md)
 - [Financial Performance Power BI Inhalt](financial-performance-power-bi-content-pack.md)
 - [Power BI-Inhalt – Anlagenverwaltung](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [Power BI-Inhalt – Weiterbildung](learning-power-bi.md)
@@ -73,6 +74,9 @@ Wenn Microsoft Dynamics 365 for Operations, Version 1611, verwenden, sind folgen
 
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Power BI-Inhalt für Microsoft Dynamics AX
 Wenn Sie Microsoft Dynamics AX 7.0 oder Microsoft Dynamics AX 7.0.1 verwenden, sind folgende Power BI-Inhalte verfügbar:
+
+> [!Note]
+> Dieses Inhaltspaket ist veraltet, wie dokumentiert in [Power BI-Inhalt, der in PowerBI.com veröffentlicht ist](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 - [Kostenverwaltung für Power BI Inhalt](cost-management-content-pack.md)    
 - [Financial Performance Power BI Inhalt](financial-performance-power-bi-content-pack.md)

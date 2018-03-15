@@ -18,14 +18,16 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 6aec3532a36a2c1e67ee0c189e45a352ad7670f6
+ms.sourcegitcommit: a1e539c283800035327196520f6438904c94126d
+ms.openlocfilehash: 0affc07293c886c4c65f99259eb19f1998f277f6
 ms.contentlocale: de-de
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/04/2018
 
 ---
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Stücklisten- und Formelpositionen für den Lagerort freigeben
+
+[!include[banner](../includes/banner.md)]
 
 In diesem Thema wird der Prozess für die Freigabe von Rohmaterial für Stücklisten-(BOM)-Positionen und Formelpositionen zum Lagerort beschrieben. Wenn Sie eine Stücklisten- oder eine Formelposition dem Lagerort freigeben, bestimmt das System zuerst, ob das Material am Produktionseingangslagerplatz im Fertigungsbereich bereits vorhanden ist, wo das Material für den Produktionsprozess verbraucht wird.
 
@@ -40,6 +42,9 @@ Die Methode, die verwendet wird, um Stücklisten- und Formelpositionen freizugeb
 
 - **Freigeben von Stücklisten- und Formelpositionen als Teil der Produktions- oder Chargenauftragsfreigabe** – Bei dieser Methode werden Stücklisten- und Formelpostionen für einen Produktions- oder einen Chargenauftrag als Teil des Prozesses der Freigabe des Auftrags freigegeben. Normalerweise werden während der Freigabe eines Produktions- oder Chargenauftrags Produktionseinzelvorgänge für die Fertigungsbereichsmitarbeiter freigegeben, und die Produktionspapiere werden gedruckt. Bei diesem Prozess wird auch der Status des Auftrags zu **Freigegeben** geändert.
 - **Freigeben von Stücklisten- und Formelpositionen über einen Batchauftrag oder eine manuelle Interaktion** – In dieser Methode können Stücklisten- und Formelpositionen nur durch den Batchauftrag **Automatische Freigabe von Stücklisten- und Formelpositionen** freigegeben werden oder als manuelle Interaktion. Um Stücklisten- und Formelpositionen manuell freizugeben, wählen Sie auf der Produktionsauftrags-Listenseite oder der Produktionsauftrags-Detailseite im Aktivitätsbereich die Option **Für Lagerort freigeben** aus.
+
+Für eine rasche Vorführung zur Freigabe von Stücklisten und Formelzeilen für die Produktion mithilfe eines Stapelverarbeitungsauftrag schauen Sie dieses YouTube-Video an.
+[!Video https://www.youtube.com/embed/8urAJn50dQ8]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Freigabe der Stücklisten- und Formelpositionen mithilfe eines Bachauftrags
 
@@ -79,6 +84,9 @@ Um die Arbeitsgänge zu steuern, zu denen Material freigegeben werden soll, verw
 Die folgende Abbildung zeigt einen Produktionsauftrag, der zwei Arbeitsgänge hat, 10 und 20. Wenn Sie in diesem Beispiel die Freigabe auf Arbeitsgang 10 einschränken, wird nur Material M9203 freigegeben.
 
 ![Beispiel der Freigabe von Material pro Arbeitsgangnummer](media/two-operations.PNG)
+
+Für eine rasche Präsentation zur Freigabe von Material in Relation zum Betrag von Endartikeln schauen Sie dieses kurze YouTube-Video an:
+[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Freigeben von Material im Verhältnis zur Menge der Fertigartikel
 

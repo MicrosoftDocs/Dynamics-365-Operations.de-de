@@ -3,7 +3,7 @@ title: Veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: addd8c62ba034b47d8abbec29fa8682deb9698b1
+ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
+ms.openlocfilehash: 03b79816ffea649cf226408ed4660c3419103a7a
 ms.contentlocale: de-de
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -40,6 +40,17 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 > Ab der Version von Juli 2017 von Dynamics 365 for Finance and Operations, Enterprise Edition mit Plattformupdate 8, wird der Typ der Bereitstellungen bei jeder entfernten oder veralteten Funktion angegeben. Alle vorherigen Versionen, die in diesem Thema erwähnt wurden, haben nur Cloudbereitstellungen unterstützt.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 mit Plattformupdate 12
+
+### <a name="personalized-product-recommendations"></a>Personalisierte Produktempfehlungen 
+Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktempfehlungen in einem Verkaufsstelle (POS)- Gerät anzeigen. Weitere Informationen finden Sie unter [Personalisierte Produktempfehlungen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen.  |
+| **Ersetzt durch eine andere Funktion?**   | Nr. Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
+| **Betroffene Produktbereiche**         | Personalisierte Produktempfehlungen in POS.                                                    |
+| **Bereitstellungsoption**              | Alle                                                                                      |
+| **Status**                         |Entfernt ab 15. Februar 2018. Dies hat einen Einfluss auf Kunden, die Dynamics 365 for Operations 1611 und höher ausführen.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Erweiterung der Liste der elektronischen Berichterstellungsfunktionen (ER)
 Die Möglichkeit, benutzerdefinierte Funktionen zur Verwendung im ER-Ausdrucks-Generator zu verwenden (weitere Informationen finden Sie unter [Erweiterung der Liste elektronischer Berichterstellungsfunktionen](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) wird nicht mehr unterstützt. Aufgrund von Änderungen der ER-APIs, wurde die API zum Aufruf integrierter Funktionen vom ER-Ausrucks-Generator intern und kann nicht mehr erweitert werden.
@@ -132,6 +143,19 @@ Benutzer können dies vom Behördenportal herunterladen.
 | **Bereitstellungsoption**                       | Alle Module                                                                    |
 | **Status**                                  | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.  |    
 
+
+## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
+
+### <a name="personalized-product-recommendations"></a>Personalisierte Produktempfehlungen 
+Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktempfehlungen in einem Verkaufsstelle (POS)- Gerät anzeigen. Weitere Informationen finden Sie unter [Personalisierte Produktempfehlungen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen.  |
+| **Ersetzt durch eine andere Funktion?**   | Nr. Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
+| **Betroffene Produktbereiche**         | Personalisierte Produktempfehlungen in POS.                                                    |
+| **Bereitstellungsoption**              | Alle                                                                                      |
+| **Status**                         |Entfernt ab 15. Februar 2018. Dies hat einen Einfluss auf Kunden, die Dynamics 365 for Retail 7.2 und höher ausführen. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition, Juli 2017, mit Plattformupdate 8

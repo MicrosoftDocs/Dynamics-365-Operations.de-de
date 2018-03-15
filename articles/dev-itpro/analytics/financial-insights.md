@@ -3,7 +3,7 @@ title: Finanzinformationen
 description: "„Finanzinformationen” verwendet Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen."
 author: kweekley
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 3da5344ec6edec0af28aa21d45af962307231e67
+ms.sourcegitcommit: d527df21e791978b41527c01c2e6b68b393861ac
+ms.openlocfilehash: 90dc6214f1eb31440a3ec78a58c6a07394245cd2
 ms.contentlocale: de-de
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -102,10 +102,15 @@ Aktuell können die Daten in eingebetteten Power BI-Berichten nicht auf juristis
 | Finanzeinblicke unternehmensübergreifend anzeigen   | •   In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 sind diese Berechtigungen keiner Rolle zugewiesen. • In der nächsten Version werden diese Berechtigungen der Rolle „Leiter Finanzabteilung” zugewiesen werden. | •    Diese Berechtigungen bieten Zugriff auf das Menüelement für den Arbeitsbereich CFO-Überblick. •    Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat.             |
 
 
-## <a name="how-financial-statements-work"></a>Funktionsweise von Finanzaufstellungen
-Obwohl **Finanzinformationen** Finanzaufstellungen enthält, ist es kein Ersatz für die Finanzberichterstattung in Finance and Operations. Die Standardfinanzaufstellungen in **Finanzinformationen** sind im Umfang begrenzt und umfassen nicht alle Typen von Finanzaufstellungen. Finanzberichterstattung ist immer noch das primäre Tool zum Entwerfen, Erstellen und Generieren von gesetzlich vorgeschriebenen Finanzaufstellungen.
+## <a name="financial-reporting-vs-finanical-insights"></a>Financial reporting vs. Finanical insights
+Obwohl **Financial insights** Finanzaufstellungen enthält, ist es kein Ersatz für die Finanzberichterstattung in Finance and Operations. Die Standardfinanzaufstellungen in **Financial insights** sind im Umfang begrenzt und umfassen nicht alle Typen von Finanzaufstellungen. Finanzberichterstattung ist immer noch das primäre Tool zum Entwerfen, Erstellen und Generieren von gesetzlich vorgeschriebenen Finanzaufstellungen.
 
-Neben den visuellen Elementen aus dem ursprünglichen Arbeitsbereich **CFO-Überblick** sind jetzt neue KPIs, Diagramme und Finanzaufstellungen verfügbar. Folgende Finanzaufstellungen sind verfügbar:
+Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
+
+_=_                                         _=_ **Financial Reporting**                            | **Financial Insights**             _=_ _=_-----------------------------------------_=_----------------------------------------------------_=_---------- -------------------------_=_ _=_ **Bearbeiten Standardberichte**                _=_ Ja                                                _=_ Nein                                 _=_ _=_ **Erstellen Sie neue Berichte**                  _=_ Ja                                                _=_ Nein                                 _=_ _=_ **Berichte drucken**                       _=_ Ja                                                _=_ Nein                                 _=_ _=_ **Nach Excel exportieren**                     _=_ Ja          _=_ " Begrenzte Exportrohdaten in Excel, kein formatierter Bericht       _=_ _=_ **Sichern Sie die Hierarchie/Organisationshierarchie**   _=_ Ja                               _=_ Nein                                 _=_ _=_ **Melden Sie über Daten für untergeordnete Sachkonten**       _=_ Yes Limited um nur Kreditor, Debitor    _=_ Ja-Kreditor, -Debitor, -Kreditor/-Debitorengruppen, Kreditor/Debitoradressen, usw. _=_ _=_ **Berichtswährung**      _=_ Ja-Buchhaltungswährung übersetzen und der Berichtswährung       _=_ Nur nicht Buchhaltungswährung      _=_ _=_ **Sicherheit**                _=_ Ja befolgt Finanzen und Arbeitsgänge und Berichtsbaumstruktursicherheit _=_ " Begrenzte Anzeigen von Berichten für alle Unternehmen (unabhängig von Finanz- und Arbeitsgangssicherheit) oder nur aktiv Unternehmen _=_ _=_ **Stützverschiedener Kontenplan und Geschäftsjahren** _=_ Ja                   _=_ Nein                   _=_ _=_ **Bericht zur externen Daten**                              _=_ Nein                   _=_ Nein                                   _=_ _=_ **Stützkonsolidierungen**                               _=_ Ja                          _=_ Begrenzt kann zu mehreren Unternehmen wird jedoch nur Buchhaltungswährung verwendet wird                                     _=_
+
+
+Zudem sind zur Benutzerschnittstelle der ursprüngliche Arbeitsbereich **CFO-Überblick**, neue KPIs, Tabellen und Finanzaufstellungen verfügbar. Folgende Finanzaufstellungen sind verfügbar:
 
 •   Zwischenbilanz
 
@@ -113,7 +118,7 @@ Neben den visuellen Elementen aus dem ursprünglichen Arbeitsbereich **CFO-Über
 
 •   Gewinn- und Verlustrechnung nach Region
 
-•   Gewinn- und Verlustrechnung – Istwert gegen Budget
+•   Gewinn- und Verlustrechnung Istwert vs. Budget
 
 •   Gewinn- und Verlustrechnung mit Abweichungen
 

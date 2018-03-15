@@ -18,10 +18,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7bcc8464d34c35423e86c963c6b493fc09db4472
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: fc0e71e2ffc2adbaed598f788141b651fbcc616a
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -48,7 +48,7 @@ Um die neueste Version für jeden Webbrowser zu suchen, wechseln Sie zur Website
 > * Der Workflow-Editor wird als ClickOnce-Anwendung gestartet. Nur Microsoft Edge and Internet Explorer (auf einer unterstützten Microsoft Windows-Version) unterstützen ClickOnce-Anwendungen. Die Workflow-Editor-ClickOnce-Anwendung erfordert ein kompatibles 64-Bit-Betriebssystem.
 > * Um PDF-Dateien in der Vorschau anzeigen, sollten Sie moderne Browser wie Microsoft Edge verwenden (aktuellste verfügbare Version) unter Windows 10 oder Google Chrome (aktuellste verfügbare Version) unter Windows 10, 8,1, Windows 8, Windows 7 oder Google Nexus-10 Tablet.
 Netzwerkanforderungen
-> * Dynamics 365 for Talent wurde für Netzwerke mit eine Latenzzeit von 250-300 Millisekunden (ms) oder weniger entwickelt. Dies ist die Latenzzeit von einem Browser-Client zum Microsoft Azure-Rechenzentrum, das Dynamics 365 for Talent hostet. Es wird empfohlen, dass Sie Netzwerkwartezeit unter [www.azurespeed.com ] (http://www.azurespeed.com "Azure Wartezeit-Test") testen.
+> * Dynamics 365 for Talent wurde für Netzwerke mit eine Latenzzeit von 250-300 Millisekunden (ms) oder weniger entwickelt. Dies ist die Latenzzeit von einem Browser-Client zum Microsoft Azure-Rechenzentrum, das Dynamics 365 for Talent hostet. Es wird empfohlen, dass Sie die Netzwerkwartezeit unter [www.azurespeed.com] (http://www.azurespeed.com "Azure Latency Test") testen.
 > * Bandbreitenanforderungen für Dynamics 365 for Talent sind vom Szenario abhängig. In den meisten Fällen wird eine Bandbreite von mehr als 50 Kilobytes pro Sekunde (kbps) benötigt.
 
 > [!WARNING]
@@ -56,12 +56,12 @@ Netzwerkanforderungen
 
 ## <a name="supported-microsoft-office-applications"></a>Unterstützte Microsoft Office-Anwendungen
 
-*   Zum Ausführen von Microsoft Excel- und Word-Add-Ins muss Microsoft Office 2016 für Windows oder Mac installiert sein. Genauere Informationen zu Versionsanforderungen finden Sie unter [Problembehandlung bei der Office-Integration] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Office integration troubleshooting").
+*   Zum Ausführen von Microsoft Excel- und Word-Add-Ins muss Microsoft Office 2016 für Windows oder Mac installiert sein. Genauere Informationen zu Versionsanforderungen erhalten Sie unter [Office integration troubleshooting] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Office integration troubleshooting").
 *   Um Dokumente anzuzeigen, die über die Funktionen für einen Export nach Excel oder einen Export nach Word erzeugt wurden, muss Microsoft Office 2007 oder höher installiert sein.
 
 ## <a name="update-policy"></a>Updaterichtlinie
 
 Microsoft Dynamics 365 for Talent wird als Cloud-Angebot gewartet. Aktualisierungen von Dynamics 365 for Talent sind fortlaufend und werden automatisch von Microsoft angewendet.
 
-Aktualisierungen werden auf einen normalen Rhythmus freigegeben, Aktualisierungen erfolgen in allen Umgebungen.  Dynamics 365 for Talent wird entsprechend dem [Microsoft Support Lifecycle Richtlinie] (https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle") unterstützt, die einen konsistenten und voraussehbaren Leitfaden für die Produktverfügbarkeit bieten.
+Aktualisierungen werden auf einen normalen Rhythmus freigegeben, Aktualisierungen erfolgen in allen Umgebungen.  Dynamics 365 for Talent wird entsprechend dem [Microsoft Support Lifecycle Richtlinie] (https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecyle") unterstützt, die einen konsistenten und voraussehbaren Leitfaden für die Produktverfügbarkeit bieten.
 

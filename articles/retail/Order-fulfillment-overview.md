@@ -18,14 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ec6cb212766dd90fa9db7719a2119419ecb935c7
-ms.openlocfilehash: e0aa0e576f88fd497472aa4141704a66d51605c3
+ms.sourcegitcommit: 997b6843fb729ed204e4e8ec5369c5a380efc25e
+ms.openlocfilehash: fb36f6ce81c5e781e3c98132f18ecbd84d0d4089
 ms.contentlocale: de-de
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/12/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a>Filialauftragserfüllung
+
+[!include[banner](includes/banner.md)]
 
 Viele Einzelhändler möchten die Auftragserfüllung optimieren, indem Sie es Filialen ermöglichen, Aufträge zu erfüllen. Durch Auftragserfüllung auf Filialebene können zu große Lagerbestände für eine bestimmte Filiale vermieden werden. Sie kann auch aus logistischer Sicht in bestimmten Fällen erforderlich sein, wenn eine Filiale zusätzliche Kapazitäten besitzt oder sich in einer geringeren Versandentfernung zum Debitoren befindet. Um dieser Anforderung zu entsprechen, ist ein vereinheitlichter Auftragserfüllungsarbeitsgang in der Verkaufsstelle verfügbar.
 
@@ -56,7 +58,7 @@ Positionen können mithilfe der Funktion **Auswählen** im Aktivitätsbereich au
 
 ## <a name="line-details"></a>Positionsdetails
 
-Positionsdetails können mittels des Positionsdetail-Flyoutmenüs angezeigt werden. Wenn dieses Menü verwendet wird, werden zwei Registerkarten bereitgestellt, um zusätzliche Informationen für die ausgewählte Position anzuzeigen. Die erste Registerkarte **Positionsdetails** zeigt Details für die Position selbst an, wie bestellte und verbleibende Menge. Zusätzliche Details werden bereitgestellt, einschließlich entnommene, verpackete und fakturierte Menge sowie Lieferart und die Lieferadresse. Die Registerkarte **Auftragsdetails** enthält Angaben im Auftragskopf, einschließlich Debitor, Debitorkennung, Auftragsnummer, Auftragsgesamtsumme und Saldo.
+Positionsdetails können mittels des Positionsdetail-Flyoutmenüs angezeigt werden. Wenn dieses Menü verwendet wird, werden drei Registerkarten bereitgestellt, um zusätzliche Informationen für die ausgewählte Position anzuzeigen. Die erste Registerkarte **Positionsdetails** zeigt Details für die Position selbst an, wie bestellte und verbleibende Menge. Zusätzliche Details werden bereitgestellt, einschließlich entnommene, verpackete und fakturierte Menge sowie Lieferart und die Lieferadresse. Die Registerkarte **Auftragsdetails** enthält Angaben im Auftragskopf, einschließlich Debitor, Debitorkennung, Auftragsnummer, Auftragsgesamtsumme und Saldo. Die Registerkarte **Lager** enthält Informationen für die ausgewählte Position hinsichtlich physischen Lagerbestand, reservierten Lagerbestand und bestellte Lagerbestand angezeigt.
 
 Wenn mehrere Positionen ausgewählt sind, wird vom Auftragspositionsdetail-Flyoutmenü nur angegeben, dass mehrere Positionen ausgewählt sind. Um Details für eine einzelne Position anzuzeigen, deaktivieren Sie die Positionen, bis nur eine Position verbleibt. 
 

@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.sourcegitcommit: a05fec7b79003d5b98470d85644d70bd1dbac285
+ms.openlocfilehash: 9e0c61505a8af864d7ff38655e7e896c4f6ccb65
 ms.contentlocale: de-de
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 
@@ -93,6 +93,11 @@ Sie können eine ZIP-Datei für das Datenpaket herunterladen. Diese Datei beinha
 5. **Import** auswählen In der Ansicht **Erweitert** können Sie die Option **Filter** verwenden, um schnell eine Übersicht über Probleme abzurufen, die möglicherweise beim Import auftreten.
 
 Das Protokoll **Ansichtsausführung** enthält detaillierte Informationen zu jeder Datenentität, die importiert wird. Sie können die Stagingdatenansicht verwenden, um schnell zu den Zieldaten zu gelangen. Auf diese Weise können Sie sehen, wie die importierten Daten auf den zugeordneten Seiten in der Anwendung aussehen. Wenn Sie die Standarddatenvorlagen verwenden, funktioniert die Importsequenz für jede Datenentität in der vordefinierten Weise, um sicherzustellen, dass alle abhängigen Daten zuerst importiert werden. Wenn benutzerdefinierte Datenentitäten Teil des Projekts sind, müssen Sie sicherstellen, dass die korrekte Reihenfolge definiert wird. Weitere Informationen finden Sie unter [Konfigurieren von Datenvorlagen](../../dev-itpro/data-entities/configuration-data-templates.md).
+
+Weitere Informationen zum Ändern der Lagerortvorlage, um die Konfiguration eines Lagerorts aus einem Unternehmen in ein neues Unternehmen in der gleichen Instanz zu kopieren, sehen Sie sich dieses 3-minütige YouTube Video an.
+
+> [!Video https://www.youtube.com/embed/K2WIfFlqJYs]
+
 
 ## <a name="related-topic"></a>Verwandtes Thema
 
