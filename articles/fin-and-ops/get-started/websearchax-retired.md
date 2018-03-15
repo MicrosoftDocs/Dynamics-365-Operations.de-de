@@ -25,16 +25,16 @@ ms.lasthandoff: 03/05/2018
 
 ---
 
-# <a name="websearchax-retired"></a><span data-ttu-id="f25cd-104">WebSearchAX zurückgezogen</span><span class="sxs-lookup"><span data-stu-id="f25cd-104">WebSearchAX retired</span></span>
+# <a name="websearchax-retired"></a><span data-ttu-id="46d2a-104">WebSearchAX zurückgezogen</span><span class="sxs-lookup"><span data-stu-id="46d2a-104">WebSearchAX retired</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="f25cd-105">Wir mussten die WebSearchAX-Seite zurückziehen.</span><span class="sxs-lookup"><span data-stu-id="f25cd-105">We’ve had to retire the WebSearchAX page.</span></span> <span data-ttu-id="f25cd-106">Es wird empfohlen, stattdessen die Websitesuche Ihrer bevorzugten Suchmaschine zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="f25cd-106">We recommend that you use site search from your favorite search engine to replace it.</span></span>  <span data-ttu-id="f25cd-107">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="f25cd-107">For example:</span></span> 
+<span data-ttu-id="46d2a-105">Wir mussten die WebSearchAX-Seite zurückziehen.</span><span class="sxs-lookup"><span data-stu-id="46d2a-105">We’ve had to retire the WebSearchAX page.</span></span> <span data-ttu-id="46d2a-106">Es wird empfohlen, stattdessen die Websitesuche Ihrer bevorzugten Suchmaschine zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="46d2a-106">We recommend that you use site search from your favorite search engine to replace it.</span></span>  <span data-ttu-id="46d2a-107">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="46d2a-107">For example:</span></span> 
 
-<span data-ttu-id="f25cd-108">site:technet.microsoft.com dynamics ax 2012 "Suchbegriff"</span><span class="sxs-lookup"><span data-stu-id="f25cd-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
+<span data-ttu-id="46d2a-108">site:technet.microsoft.com dynamics ax 2012 "Suchbegriff"</span><span class="sxs-lookup"><span data-stu-id="46d2a-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
 
-<span data-ttu-id="f25cd-109">– oder –</span><span class="sxs-lookup"><span data-stu-id="f25cd-109">-or-</span></span>
+<span data-ttu-id="46d2a-109">– oder –</span><span class="sxs-lookup"><span data-stu-id="46d2a-109">-or-</span></span>
 
-<span data-ttu-id="f25cd-110">site:msdn.microsoft.com dynamics ax 2012 “Suchbegriff”</span><span class="sxs-lookup"><span data-stu-id="f25cd-110">site:msdn.microsoft.com dynamics ax 2012 “search term”</span></span>
+<span data-ttu-id="46d2a-110">site:msdn.microsoft.com dynamics ax 2012 “Suchbegriff”</span><span class="sxs-lookup"><span data-stu-id="46d2a-110">site:msdn.microsoft.com dynamics ax 2012 “search term”</span></span>
 
 
