@@ -20,10 +20,10 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: 33130a4061f22335aeeffa69c478b693604393a9
-ms.openlocfilehash: a57f306ba02c5758c39c4bd29d9a4fa0d7efbcd3
+ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
+ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
 ms.contentlocale: de-de
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -109,10 +109,10 @@ Verwenden Sie die folgenden Kriterien, um die freigegebenen Produkte und Produkt
 
 ## <a name="related-topics"></a>Verwandte Themen
 
--  Erstellen eines neuen Produktlebenszyklusstatus
--  Erstellen eines standardmäßigen neuen Produktlebenszyklusstatus
--  Ein Produktlebensyklusstatus einem freigegebenen Produktmaster zuweisen
--  Ein Produktlebensyklusstatus einem freigegebenen Produkt zuweisen
--  Veraltete Produktvarianten finden und ein Produktlebenszyklusstatus zuweisen
--  Ein Produktlebenszyklusstatus erstellen, um Produkte vom Produktprogrammplan auszuschließen
+-  [Einen neuen Lebenszyklusstatus erstellen (Aufgabenleitfaden)](tasks/new-product-lifecycle-state.md)
+-  [Einen Standardlebenszyklusstatus erstellen (Aufgabenleitfaden)](tasks/default-product-lifecycle-state.md)
+-  [Einem veröffentlichten Produktmaster einen Produktlebenszyklusstatus zuweisen (Aufgabenleitfaden)](tasks/product-lifecycle-state-released-product-master.md)
+-  [Einem veröffentlichten Produkt einen Produktlebenszyklusstatus zuweisen (Aufgabenleitfaden)](tasks/product-lifecycle-state-released-product.md)
+-  [Veraltete Produktvarianten finden und einen Produktlebenszyklus-Status (Aufgabenleitfaden) zuweisen](tasks/obsolete-product-variants.md)
+-  [Ein Produktlebenszyklusstatus erstellen, um Produkte vom Produktprogrammplan (Aufgabenleitfaden) auszuschließen](tasks/exclude-products-master-planning.md)
 

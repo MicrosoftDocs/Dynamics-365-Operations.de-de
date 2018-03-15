@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
-ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
 ms.contentlocale: de-de
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -46,15 +46,6 @@ In der aktuellen Version enthält die Interessent in Bargeldlösung die folgende
 - [Synchronisieren von Verkaufsaufträgen direkt von Finance and Operations mit Sales](sales-order-template-mapping-direct.md)
 - [Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations (Vorlage, deren Veröffentlichung aussteht)](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronisieren von Verkaufsrechnungen direkt von Finance and Operations mit Sales](sales-invoice-template-mapping-direct.md)
-
-In der früheren Version enthält die Interessent in Bargeldlösung die folgenden Typen der nicht-direkten Synchronisierung:
-
-- [Konten in Sales verwalten und mit Finance and Operations synchronisieren](accounts-template-mapping.md)
-- [Kontakte in Sales verwalten und mit Finance and Operations synchronisieren](contacts-template-mapping.md)
-- [Produkte in Finance and Operations verwalten und mit Sales synchronisieren](products-template-mapping.md)
-- [Verkaufsangebote in Sales erstellen und mit Finance and Operations synchronisieren](sales-quotation-template-mapping.md)
-- [Verkaufsaufträge in Finance and Operations erstellen und mit Sales synchronisieren](sales-order-template-mapping.md)
-- [Verkaufsrechnungen in Finance and Operations erstellen und mit Sales synchronisieren](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemanforderungen für Finance and Operations
 
@@ -87,7 +78,7 @@ In der früheren Version enthält die Interessent in Bargeldlösung die folgende
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** – Unterstützung für die Integration von „Interessent zu Bargeld” durch Datenentitäten ist erforderlich.
     
     > [!NOTE]
-    > Nachdem Sie die Hotfixes installiert haben, müssen Sie die folgende Stapelverarbeitung vom Formular **SalesPopulateProspectToCash** auslösen. Dieses Formular wird ausgeblendet, da Sie es nur einmal benötigen. Um auf das Formular zuzugreifen, melden Sie sich in der Umgebung an und fügen Sie Folgendes zur URL in Ihrer Browseradresse hinzu: „&mi=action:SalesPopulateProspectToCash”, beispielsweise, „https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash”. Wenn das Formular geöffnet wird, klicken Sie auf OK. Dadurch wird ein neues Feld **LineCreationSequnceNumber** in den Tabellen **SalesLine**, **SalesQuotationLine** und **CustInvoiceTrans** mit eindeutigen Werte ergänzt, und die Produktliste wird aktualisiert. Dies ist erforderlich, damit die „Interessent zu Bargeld”-Integration funktioniert.
+    > Nachdem Sie die Hotfixes installiert haben, müssen Sie die folgende Stapelverarbeitung vom Formular **SalesPopulateProspectToCash** auslösen. Dieses Formular wird ausgeblendet, da Sie es nur einmal benötigen. Um auf das Formular zuzugreifen, fügen Sie Folgendes der Browseradresse hinzu, wenn Sie sich bei der Umgebung angemeldet haben: &mi=action: SalesPopulateProspectToCash, beispielsweise `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Wenn das Formular geöffnet wird, klicken Sie auf OK. Dadurch wird ein neues Feld **LineCreationSequnceNumber** in den Tabellen **SalesLine**, **SalesQuotationLine** und **CustInvoiceTrans** mit eindeutigen Werte ergänzt, und die Produktliste wird aktualisiert. Dies ist erforderlich, damit die „Interessent zu Bargeld”-Integration funktioniert.
 
 
 ## <a name="system-requirements-for-sales"></a>Systemanforderungen für Sales
@@ -96,12 +87,6 @@ Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installie
 
 - Dynamics 365 for Sales, Version 1612 (8.2.1.207) (DB 8.2.1.207) online
 - „Interessent zu Bargeld”-Lösung für Dynamics 365 for Sales, Version 1.15.0.0 (v15) 
-
-   > [!NOTE]
-   >
-   > Vorlagen mit Version 1.0.0.0 und 1.0.0.1 werden in der „Interessent zu Bargeld”-Lösung für Dynamics 365 for Sales, Version 1.14.1.0, unterstützt
-   >
-   > Vorlagen mit Version 2.0.0.0 und 2.1.0.0 werden in der „Interessent zu Bargeld”-Lösung für Dynamics 365 for Sales, Version 1.15.0.0, unterstützt
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Installieren der Interessent zu Bargeld-Lösung für Sales
 

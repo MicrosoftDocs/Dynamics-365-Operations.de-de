@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
-ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
 ms.contentlocale: de-de
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 02/27/2018
 
 ---
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 01/15/2018
 
 
 > [!NOTE]
-> In diesem Thema wird beschrieben, wie Lagerhaltung für Cloudbereitstellungen konfiguriert wird. Wenn Sie erfahren möchten, wie die Lagerhaltung für lokale Bereitstellungen konfiguriert wird, finden Sie Informationen unter [Lagerhaltung für lokale Bereitstellungen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
+
+> In diesem Thema wird beschrieben, wie Lagerhaltung für Cloudbereitstellungen konfiguriert wird. Wenn Sie erfahren möchten, wie die Lagerhaltung für lokale Bereitstellungen konfiguriert wird, finden Sie Informationen unter [Lagerhaltung für lokale Bereitstellungen](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
 
 In diesem Thema wird beschrieben, wie Microsoft Dynamics 365 for Finance and Operations - Lagerung eingerichtet und konfiguriert wird.
 
@@ -44,7 +46,7 @@ Die App ist auf Android und Windows-Betriebssystemen verfügbar. Um diese App zu
 
 | Plattform                    | Version                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
+| Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (alle Vesionen)                                                                                                                                                   |
 | Finance and Operations | Microsoft Dynamics 365 for Operations, Version 1611 <br>– oder – <br>Microsoft Dynamics AX Version 7.0/7.0.1 und Microsoft Dynamics AX-Plattform Update 2 mit Hotfix KB 3210014 |
 
@@ -58,7 +60,7 @@ Die App ist auf Android und Windows-Betriebssystemen verfügbar. Um diese App zu
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a>Erstellen einer Webdienstanwendung in Azure Active Directory
 Um der App die Möglichkeit mit bestimmten Finance and Operations-Server zu interagieren zu ermöglichen, müssen Sie eine Webdienstanwendung in einem Azure Active Directory für den Finance and Operations-Mandanten erfassen. Aus Sicherheitsgründen wird empfohlen, dass Sie eine Webdienstanwendung für jedes Gerät erstellt werden, das Sie verwenden. Um eine Webdienstanwendung in Azure Active Directory (Azure AD) zu erstellen, führen Sie die folgenden Schritte aus:
 
-1.  In einem Webbrowser wechseln Sie zu <https://portal.azure.com>.
+1.  In einem Webbrowser gehen Sie zu <https://portal.azure.com>.
 2.  Geben Sie den Namen und das Kennwort des Benutzers ein, der Zugriff auf Azure Abonnement hat.
 3.  Im Azure Portal im linken Navigationsbereich, klicken Sie auf **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
 4.  Stellen Sie sicher, dass die Active Directory-Instanz diejenige ist, die von Finance and Operations verwendet wird.
@@ -93,7 +95,7 @@ Sie müssen die App auf dem Gerät konfigurieren, um mit dem Finance and Operati
     + **Azure Active Directory-Client-IDs** – Die Client-ID können Sie über Schritt 9 „Erstellen einer Webdienstbewerbung in Active Directory " erhalten. 
     + **Azure Active Directory-Client-Schlüssel** – Den Clientschlüssel erhalten Sie in Schritt 11 „Erstellen einer Webdienstbewerbung in Active Directory“. 
     + **Azure Active Directory-Ressource** – Die Azure AD-Ressource bildet die Finance and Operations-Stamm-URL ab. **Hinweis**: Beenden Sie dieses Feld nicht mit einem Schrägstrichzeichen (/). 
-    + **Azure Active Directory-Mandant** – Der Azure Active Directory-Mandant, der mit dem Finance and Operations-Server: https://login.windows.net/your-AD-tenant-ID verwendet wird. Beispiel: https://login.windows.net/contosooperations.onmicrosoft.com.
+    + **Azure Active Directory-Mandant** – Der Azure Active Directory-Mandant, der mit dem Finance and Operations-Server verwendet wird:`https://login.windows.net/your-AD-tenant-ID`. Beispiel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Hinweis**: Beenden Sie dieses Feld nicht mit einem Schrägstrichzeichen (/). 
     + **Unternehmen** – Geben Sie die juristische Person in Finance and Operations ein, mit der Sie die Anwendung verbinden möchten. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Wählen Sie die **Zurück** Schaltfläche in der linken oberen Ecke der Anwendung aus. Die Anwendung stellt jetzt eine Verbindung mit Ihrem Finance and Operations-Server her, und der Anmeldebildschirm für die Lagerortarbeitskraft wird angezeigt. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
@@ -103,7 +105,7 @@ Im Fall von verlorenen oder beeinträchtigten Geräten müssen Sie den Zugriff d
 
 1.  In Finance and Operations wechseln sie zu **Systemverwaltung** &gt; **Einstellungen** &gt; **Azure Active Directory-Anwendung**.
 2.  Löscht die Position, die dem Gerät entspricht, dem Sie Zugriff entfernen möchten. Merken Sie sich die **Client-ID**, die für das entfernte Gerät verwendet wird, Sie werden sie später benötigen.
-3.  Melden Sie sich beim Azure Portal unter <https://portal.azure.com> an.
+3.  Melden Sie sich beim Azure-Portal an unter <https://portal.azure.com>.
 4.  Klicken Sie auf das Symbol **Active Directory** im linken Menü, und stellen Sie sicher, dass Sie im richtigen Verzeichnis sind.
 5.  Klicken Sie in der Liste auf **App-Registrierungen** und anschließend auf die Anwendung, die Sie konfigurieren möchten. Die Seite **Einstellungen** wird mit Konfigurationsinformationen angezeigt.
 6.  Stellen Sie sicher, dass die **Client-ID** der Anwendung dieselbe wie in Schritt 2 in diesem Abschnitt ist.

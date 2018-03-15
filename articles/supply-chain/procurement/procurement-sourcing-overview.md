@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0692518afc5c8b385773dad3c44dc4e3c978362b
+ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
+ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -62,7 +62,7 @@ Wenn Sie eine Bestellung erstellen, werden viele der Felder mit Werten vorausgef
 
 ### <a name="prices-and-discounts"></a>Preise und Rabatte
 
-Preise und Rabatte umfassen Informationen zu Preisen, Rabatten und Rückvergütungsbedingungen, die sie anbieten. Preise und Rabatte können als *Handels**vereinbarungen* dargestellt werden. Handelsvereinbarungen stellen Kreditorenpreislisten mit Preisen oder Rabatte dar und haben einen bestimmten Satz an Daten, für die Vereinbarung gilt. Preise und Rabatte können durch *Kaufverträge* verhandelt und repräsentiert werden, mit Bedingungen, wie Zusagen, bestimmte Volumen zu kaufen, oder Geldbeträge als Vorbedingung für die vereinbarten Bedingungen. *Rückvergütungsvereinbarungen* können mit Kreditoren erstellt werden, wenn die Beschaffung von bestimmten Produkten oder Gruppen einen Rabatt vom Kreditor auslösen können, je nach Einkaufsbetrag oder Volumen.
+Preise und Rabatte umfassen Informationen zu Preisen, Rabatten und Rückvergütungsbedingungen, die sie anbieten. Preise und Rabatte können als *Handels* *vereinbarungen* dargestellt werden. Handelsvereinbarungen stellen Kreditorenpreislisten mit Preisen oder Rabatte dar und haben einen bestimmten Satz an Daten, für die Vereinbarung gilt. Preise und Rabatte können durch *Kaufverträge* verhandelt und repräsentiert werden, mit Bedingungen, wie Zusagen, bestimmte Volumen zu kaufen, oder Geldbeträge als Vorbedingung für die vereinbarten Bedingungen. *Rückvergütungsvereinbarungen* können mit Kreditoren erstellt werden, wenn die Beschaffung von bestimmten Produkten oder Gruppen einen Rabatt vom Kreditor auslösen können, je nach Einkaufsbetrag oder Volumen.
 
 ### <a name="delivery-options"></a>Lieferoptionen
 

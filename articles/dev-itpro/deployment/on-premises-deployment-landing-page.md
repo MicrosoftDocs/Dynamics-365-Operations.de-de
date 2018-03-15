@@ -3,14 +3,14 @@ title: Lokale Bereitstellung
 description: "Dieses Thema liefert Informationen und Links zu Inhalten über lokale Bereitstellungen."
 author: kfend
 manager: AnnBe
-ms.date: 12/11/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core
+ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: 697f5a43124aace645e0cc8c6df98a4f986ab852
+ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
+ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
 ms.contentlocale: de-de
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Landing Page für die lokale Bereitstellung
@@ -31,6 +31,7 @@ ms.lasthandoff: 12/20/2017
 Sie können Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, bereitstellen (lokal). Wenn Sie eine lokale Bereitstellungsform auswählen, unterscheiden sich die Systemanforderungen, die Hardwareauslegung und die Funktionalität von einer Cloud-Bereitstellung. Dieses Thema bietet Links zu Inhalten mit Informationen speziell zu lokalen Bereitstellungen.
 
 ## <a name="get-started"></a>Erste Schritte
+- [Neuheiten oder Änderungen in den lokalen Bereitstellungen von Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.2 mit Plattformaktualisierung 12 (März 2018)](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
 - [Dynamics 365 for Finance and Operations, Enterprise-Edition (lokal) – Überblick](on-premises-overview.md)
 - [Planung für Ihre lokale Bereitstellung](plan-onprem-deployment.md)
 - [Systemanforderungen für lokale Bereitstellungen](../../fin-and-ops/get-started/system-requirements-on-prem.md)
@@ -50,6 +51,7 @@ Sie können Microsoft Dynamics 365 for Finance and Operations, Enterprise editio
 - [Dokumentverwaltung konfigurieren](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [Elektronische Berichtskonfigurationen importieren](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Funktionalitäten zum Generieren, Veröffentlichen und Drucken von Dokumenten in lokalen Bereitstellungen](../analytics/printing-capabilities-on-premises.md)
+- [Einen Reverseproxy für Ihre lokale Umgebung konfigurieren](onprem-reverseproxy.md)
 - [Technischen Support einrichten](../lifecycle-services/support-experience.md)
 - [Fehlersuche für die Internetverbindung von Clients](../user-interface/client-disconnected.md)
 - [Updates auf eine lokale Bereitstellung anwenden](apply-updates-on-premises.md)

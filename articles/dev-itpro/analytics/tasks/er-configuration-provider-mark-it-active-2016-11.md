@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 2dfa04f280249884af2a237807fb283059444a6c
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 018aee917c13f576759ebd812d31cbc9d83e2d1a
 ms.contentlocale: de-de
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 # <a name="create-a-configuration-provider-and-mark-it-as-active-for-electronic-reporting-er"></a>Konfigurationsanbieter erstellen und als aktiv für elektronische Berichterstellung (ER) markieren
@@ -33,11 +33,10 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
 2. Klicken Sie auf "Konfigurationsanbieter".
 3. Klicken Sie auf "Neu".
-    * Ein Anbieterdatensatz ist nach Name und URL eindeutig. Überprüfen Sie den Inhalt dieser Seite und lassen Sie diese Prozedur aus, wenn bereits ein Datensatz für Litware, Inc.(http://www.litware.com) besteht.  
+    * Ein Anbieterdatensatz ist nach Name und URL eindeutig. Überprüfen Sie den Inhalt dieser Seite und lassen Sie diese Prozedur aus, wenn bereits ein `http://www.litware.com` für Litware, Inc. besteht.  
 4. Geben Sie im Feld "Name" "Litware, Inc." ein.
     * Litware, Inc.  
-5. Geben Sie im Feld "Internetadresse" "http://www.litware.com" ein.
-    * http://www.litware.com  
+5. Geben Sie im Feld "Internetadresse" `http://www.litware.com` ein.
 6. Klicken Sie auf "Speichern".
 7. Schließen Sie die Seite.
 
