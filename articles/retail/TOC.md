@@ -37,8 +37,9 @@
 ## [Zahlungsoptionen](work-with-payments.md)
 
 # Kanaleinrichtung und Verwaltung
-## [Startwertdaten in einer Einzelhandelsumgebung initialisieren](enable-configure-retail-functionality.md)
-## [Retail Channels definieren](define-maintain-retail-channels.md)
+## [Startwertdaten in einer Retail-Umgebung initialisieren](enable-configure-retail-functionality.md)
+## [Einzelhandelskanäle definieren](define-maintain-retail-channels.md)
+## [Sortimentsverwaltung](assortments.md)
 ## [Onlineshop – Überblick](online-stores.md)
 ## [Eine Retail Hardware station konfigurieren und installieren](retail-hardware-station-configuration-installation.md)
 ## [Einzelhandelszeit und Anwesenheit](retail-time-attendance.md)
@@ -54,7 +55,8 @@
 ### [Definieren und Verwalten von Kanal-Clients, Kassen und Hardwarestationen](define-maintain-channel-clients-registers-hw-stations.md)
 ## Bildschirmlayout
 ### [Konfigurieren von Bildschirmlayouts für POS](pos-screen-layouts.md)
-### [Den Retail POS-Layoutdesigner installieren](install-pos-layout-designer.md)
+### [Den Retail POS-Layout-Designer installieren](install-pos-layout-designer.md)
+### [Benachrichtigungseinstellungen wählen](Notifications-POS.md)
 ### [POS-Anwendung und Benutzerspracheinstellungen](pos-application-user-language-settings.md)
 ### [Bilder für MPOS einrichten](set-up-manage-images-retail-mpos.md)
 ## [Infocodes – Überblick](info-codes-retail.md) 
@@ -100,6 +102,7 @@
 # Produkte und Verkaufsförderung
 ## [Produktinformationsübersicht](../supply-chain/pim/product-information.md)
 ## [Einzelhandelshierarchien](retail-hierarchies.md)
+## [Attribute und Attributsgruppenübersicht](attribute-attributegroups-lifecycle.md)
 ## [Attribute erstellen und verwalten](create-manage-attributes.md)
 ## [Einzelhandelsprodukte einrichten](set-up-retail-products.md)
 ## [Produktdimensionen](../supply-chain/pim/product-dimensions.md)
@@ -129,7 +132,17 @@
 
 # Personalverwaltung
 ## [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](../talent/departments-jobs-positions.md)
-## [Komponenten eines Einzelvorgangs einrichten](../talent/create-job.md)
+## [Komponenten einer Stelle einrichten](../talent/create-job.md)
+
+# Lokalisierung und rechtliche Funktionen
+## Indien
+### [GST-Integration für Kassen für Indien](localizations/apac-ind-cash-registers.md)
+### [Bereitstellungsrichtlinien für Kassen für Indien](localizations/apac-ind-loc-deployment-guidelines.md)
+## Norwegen
+### [Kassen für Norwegen](localizations/emea-nor-cash-registers.md)
+### [Bereitstellungsrichtlinien für Kassen für Norwegen](localizations/emea-nor-loc-deployment-guidelines.md)
+## Schweden
+### [Kassen für Schweden](localizations/emea-swe-cash-registers.md)
 
 # Retail-Aufgaben
 ## [Ein Produkt erstellen](../supply-chain/pim/tasks/create-product.md)
@@ -249,10 +262,6 @@
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Retail SDK in das kontinuierliche Buildsystem integrieren](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK-Erweiterbarkeitsbeispiele](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Kassen für Schweden](localizations/emea-swe-cash-registers.md)
-### [Beispiel zur Retail POS-Integration mit Kontrolleinheiten für Schweden](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Kassen für Norwegen](localizations/emea-nor-cash-registers.md)
-### [Bereitstellungsrichtlinien für Kassen in Norwegen](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK-Paket](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK-Beispiele ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Kanaldatenbank-(DB)-Erweiterungen](dev-itpro/channel-db-extensions.md)
