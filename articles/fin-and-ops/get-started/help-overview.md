@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 221ce80cb7520f372f38859aa392b1d559448c81
+ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
+ms.openlocfilehash: 9c68cd0e1c214e22b8831e4f4a0c5d545387f982
 ms.contentlocale: de-de
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/09/2018
 
 ---
 
@@ -52,7 +52,7 @@ Sie können in jedem verwendeten Produkt auf Hilfethemen und Aufgabenleitfäden 
 Dieses Thema beschreibt das Hilfesystem und erläutert, wie Sie debitorenspezifische Dokumentationen und Ressourcen zur Produktschulung für Ihre Organisation erstellen können.
 
 > [!IMPORTANT]
-> Die Registerkarte **Aufgabenleitfäden** ist derzeit nicht in Microsoft Dynamics 365 for Talent und Microsoft Dynamics 365 for Retail verfügbar. Wir arbeiten derzeit daran, diese Funktion in einer künftigen Version zu ermöglichen. Die Aufgabenleitfäden in der "Erste Schritte"-Erfahrung in Talent bleiben verfügbar, um Grundfunktionen abzudecken. Prozedurale Hilfe finden Sie auch auf der docs.microsoft.com-Website ([docs.microsoft.com/dynamics365/unified-operations](../../index.md) für Retail und Talent.
+> Die Registerkarte **Aufgabenleitfäden** ist derzeit nicht in Microsoft Dynamics 365 for Talent und Microsoft Dynamics 365 for Retail verfügbar. Wir arbeiten derzeit daran, diese Funktion in einer künftigen Version zu ermöglichen. Die Aufgabenleitfäden in der "Erste Schritte"-Erfahrung in Talent bleiben verfügbar, um Grundfunktionen abzudecken. Prozedurale Hilfe finden Sie auch auf der docs.microsoft.com-Website ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) für Retail und Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hilfe auf docs.microsoft.com
 
@@ -115,7 +115,7 @@ Weitere Informationen hierzu finden Sie im Handbuch unserer Beiträger: https://
 
 > [!NOTE]
 > Es werden derzeit nur Beiträge zu unseren englischen Repositorys akzeptiert.  
-> Wir akzeptieren keine Probleme enthalten, die durch GitHub gemeldet werden - Achten Sie darauf, eine Pullanforderung für Inhaltsvorschläge zu verwenden. Produkt- und Funktionsrückmeldung wird am besten durch das Dynamics 365 Ideas Portal: https://ideas.dynamics.com/ideas/ 
+> Wir akzeptieren keine Probleme enthalten, die durch GitHub gemeldet werden - Achten Sie darauf, eine Pullanforderung für Inhaltsvorschläge zu verwenden. Produkt- und Funktionsrückmeldung wird am besten durch das Dynamics 365 Ideas Portal: https://experience.dynamics.com/ideas/ verarbeitet. 
 
 
 ## <a name="task-guides"></a>Aufgabenleitfäden

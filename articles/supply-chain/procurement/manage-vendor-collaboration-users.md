@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6e83f46df30d13a8bffa5c2b0bd05f456b67e6ec
+ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
+ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -62,12 +62,12 @@ Wird eine Anforderung übermittelt, wird sie der **Kreditorenzusammenarbeit-Benu
 Bevor Sie anfordern können, dass ein neuer Benutzer bereitgestellt wird, muss diese Person als Kontakt für einen oder mehrere Kreditoren eingerichtet werden. Um eine Anfrage für einen neuen Kreditorenzusammenarbeitsbenutzer zu erstellen:
 
 1.  Wählen die Seite **Alle Kontakte** und klicken Sie auf **Breitstellung Kreditorenbenutzer**.
-2.  Hier geben Sie die E-Mail-Adresse des Benutzers ein. Diese Adresse wird vom Benutzer verwendet, um sich bei Finance and Operations anzumelden. Wenn die E-Mail-Adresse einer Domäne angehört, die als Mandant mit Microsoft Azure erfasst wurde, muss die E-Mail-Adresse ein vorhandenes Azure Active Directory (ADD) Konto sein, um den Bereitstellungsprozess erfolgreich abzuschließen. Wenn die E-Mail-Adresse keiner Domäne angehört, die mit Microsoft Azure erfasst wird, wird ein ADD-Konto als Teil des Bereitstellungsprozesses erstellt und der neue Benutzer wird eine Einladungsmail erhalten. Verbraucheradressen mit Domänen wie @hotmail.com, @gmail.com oder @comcast.net können nicht dazu verwendet werden, um einen Finance and Operations-Benutzer zu erfassen.
+2.  Hier geben Sie die E-Mail-Adresse des Benutzers ein. Diese Adresse wird vom Benutzer verwendet, um sich bei Finance and Operations anzumelden. Wenn die E-Mail-Adresse einer Domäne angehört, die als Mandant mit Microsoft Azure erfasst wurde, muss die E-Mail-Adresse ein vorhandenes Azure Active Directory (AAD) Konto sein, um den Bereitstellungsprozess erfolgreich abzuschließen. Wenn die E-Mail-Adresse keiner Domäne angehört, die mit Microsoft Azure erfasst wird, wird ein ADD-Konto als Teil des Bereitstellungsprozesses erstellt und der neue Benutzer wird eine Einladungsmail erhalten. Verbraucheradressen mit Domänen wie @hotmail.com, @gmail.com oder @comcast.net können nicht dazu verwendet werden, um einen Finance and Operations-Benutzer zu erfassen.
 3.  Setzen Sie die Option **Kreditorenzusammenarbeitzugriff zulässig** auf **Ja** für alle juristischen Personen, auf die der Benutzer zugreifen muss.
 4.  Wählen Sie im Abschnitt **Benutzerrollen zuweisen** das Kontrollkästen **Zuweisen** für die Sicherheitsrollen, die der neue Benutzer besitzen sollte.
 5.  Klicken Sie auf **Absenden**.
 
-Wenn die Kreditorenbenutzeranforderung übermittelt wird, wird das Feld **Kreditorenzusammenarbeit erlaubt** für das ausgewählte Kreditorenkonto auf **Ja** festgelegt und es wird ein Benutzeranforderungsworkflow gestartet. Im Rahmen des Workflows wird ein neuer Benutzer in Finance and Operations erstellt und die Sicherheitsrollen zugewiesen. Darüber hinaus ist eine Azure B2B-Dienstleistung aktiviert, die die Interaktion mit dem Azure Portal initiiert und ein neues oder vorhandenes AAD-Konto dem Finance and Operations-Benutzer zuordnet.
+Wenn die Kreditorenbenutzeranforderung übermittelt wird, wird das Feld **Kreditorenzusammenarbeit erlaubt** für das ausgewählte Kreditorenkonto auf **Ja** festgelegt und es wird ein Benutzeranforderungsworkflow gestartet. Im Rahmen des Workflows wird ein neuer Benutzer in Finance and Operations erstellt und die Sicherheitsrollen zugewiesen. Darüber hinaus ist eine Azure B2B-Dienstleistung aktiviert, die die Interaktion mit dem Azure Portal initiiert und ein neues oder vorhandenes AAD-Konto dem Finance and Operations-Benutzer zuordnet. Weitere Informationen finden Sie unter[Was ist Azure AD-B2B-Zusammenarbeit?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Benutzer deaktivieren
 

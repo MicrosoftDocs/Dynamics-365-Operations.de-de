@@ -18,14 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ffbd853c15e479fc4350a19121f2aebcedda9854
-ms.openlocfilehash: 31b9d421f3fd5378f26faeee3a83b66861ef5008
+ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
+ms.openlocfilehash: f7fe3ab07578b09822fbfeaa4b07331b79f13610
 ms.contentlocale: de-de
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 
 ---
 
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Scannen Sie Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations – Warehousing
+
+[!include[banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie Dynamics 365 for Finance and Operations – Warehousing einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen. 
 
@@ -47,8 +49,8 @@ Die Kameraseite wird auf jeder Seite verwendet, die im Eingabefeld einen bevorzu
 - Klicken Sie auf die Kamera der Aufgabe und auf die Detailseite, um zur Kameraseite zu wechseln. 
 
 | Aufgabe und Detailseite | Kameraseite | 
-| --------------------- | -------------------- |
-| ![Kamera-Scannen-Beispiel-Aufgabe-Detail-Seite](media/camera-scanning-example-task-detail-page.png)          | ![Kamera-Scannen-Beispiel-Kamera-Seite](media/camera-scanning-example-camera-page.png)          |
+| :---------------------: | :--------------------: |
+| ![Kamera-Scannen-Beispiel-Aufgabe-Detail-Seite](./media/camera-scanning-example-task-detail-page50.png)          | ![Kamera-Scannen-Beispiel-Kamera-Seite-kleiner](./media/camera-scanning-example-camera-page50.png)          |
 
 Auf der Kameraseite, wenn Sie auf die Kameraschaltfläche klicken, wird sie abgeblendet angezeigt, wenn Sie versuchen, einen Strichcode zu identifizieren. Wenn ein Strichcode nicht innerhalb von 5 Sekunden gekennzeichnet wird, wird der Prozess unterbrochen und die Kameraschaltfläche wird wieder verfügbar. Sie können dann versuchen, den Strichcode erneut zu scannen.
 

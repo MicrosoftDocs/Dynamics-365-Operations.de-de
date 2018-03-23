@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
+ms.sourcegitcommit: e342c67f53828c77f77d99a2c3f909a23ced8989
+ms.openlocfilehash: 5d9bc41c92258f9856088b04ec5af123c8e915e5
 ms.contentlocale: de-de
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -42,9 +42,8 @@ In der aktuellen Version enthält die Interessent in Bargeldlösung die folgende
 - [Konten in Sales verwalten und direkt cvon Sales zu Finance and Operations synchronisieren](accounts-template-mapping-direct.md)
 - [Produkte in Finance and Operations verwalten und direkt mit Sales synchronisieren](products-template-mapping-direct.md)
 - [Kontakte in Sales verwalten und direkt mit Kontakten oder Debitoren in Finance and Operations synchronisieren](contacts-template-mapping-direct.md)
-- [Verkaufsangebot direkt von Sales mit Finance and Operations synchronisieren](sales-quotation-template-mapping-sales-fin.md)
-- [Synchronisieren von Verkaufsaufträgen direkt von Finance and Operations mit Sales](sales-order-template-mapping-direct.md)
-- [Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations (Vorlage, deren Veröffentlichung aussteht)](sales-order-template-mapping-direct-two-ways.md)
+- [Synchronisieren von Verkaufsangeboten direkt von Sales mit Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronisieren von Verkaufsrechnungen direkt von Finance and Operations mit Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemanforderungen für Finance and Operations
@@ -85,7 +84,7 @@ In der aktuellen Version enthält die Interessent in Bargeldlösung die folgende
 
 Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installieren:
 
-- Dynamics 365 for Sales, Version 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Dynamics 365 for Sales, Version 1612 (8.2.1.207) (DB 8.2.1.207) online oder höher.
 - „Interessent zu Bargeld”-Lösung für Dynamics 365 for Sales, Version 1.15.0.0 (v15) 
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Installieren der Interessent zu Bargeld-Lösung für Sales

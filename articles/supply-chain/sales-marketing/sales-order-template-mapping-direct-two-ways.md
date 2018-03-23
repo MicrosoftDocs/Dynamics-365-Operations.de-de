@@ -3,7 +3,7 @@ title: "Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Ope
 description: "Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Auftragskopfzeilen und -positionen direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations, Enterprise edition zu synchronisieren."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
+ms.sourcegitcommit: 0928f9c0af52c2e19f0669841e433423ae9db467
+ms.openlocfilehash: 09c5cd14c5948818878d3f830639abc166d7072e
 ms.contentlocale: de-de
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -132,6 +132,7 @@ Vor dem Synchronisieren von Aufträgen müssen die Systeme mit den folgenden Ein
 
     Wählen Sie unter **Einstellungen** &gt; **Sicherheit** &gt; **Teams** das relevante Team aus, klicken Sie auf die Option für **Rollen verwalten**, und wählen Sie eine Rolle mit den benötigten Berechtigungen aus, beispielsweise **Systemadministrator**.
 
+- Um die korrekte Berechnung von Rabatten in Sales and Finance und Operations sicherzustellen, muss  **Rabattberechnungsmethode** auf **Positionsartikel** festgelegt werden.
 - Gehen Sie zu &gt; Sie **Einstellungen** **Verwaltung** &gt; **Systemeinstellungen** &gt; **Sales** zu öffnen, und überprüfen Sie, ob die folgenden Einstellungen verwendet werden:
 
     - Die Option **Systempreisberechnungssystem verwenden** wird auf **Ja** festgelegt.

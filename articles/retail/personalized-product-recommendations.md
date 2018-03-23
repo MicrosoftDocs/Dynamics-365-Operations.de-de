@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
-ms.openlocfilehash: ce91f675082a34bd5a1e88be7a7af6884dc47add
+ms.sourcegitcommit: c5b9ee57b0b855766628caca239059205c103b86
+ms.openlocfilehash: 4a0586324dddc10d64ad6760222f2540f31d6bce
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/07/2018
 
 
 > [!NOTE]
-> Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen. Weitere Informationen finden Sie unter [Entfernte oder veraltete Funktionen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features) 
+> Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen. Weitere Informationen finden Sie unter [Entfernte oder veraltete Funktionen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features) Navigieren Sie zum unteren Bereich der Seite, wenn Sie die vorhandenen Probleme mit bereit aktivierten Produktempfehlungen für Ihre Umgebung gegenüberstellen. 
 
 In Dynamics 365 for Retail können Produktempfehlungen auf dem POS-Gerät angezeigt werden. Empfehlungen sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben. Für Einzelhändler mit großen Katalogen, helfen Empfehlungen den Kunden bei der Produkterfassung. Indem Produkte zur Schau gestellt werden, die sich an den Interessen und Kaufgewohnheiten eines Kunden orientieren, erhalten Einzelhändler Upsell-Möglichkeiten und die Kundenbindung wird gestärkt. In Dynamics 365 for Retail werden Produktempfehlungen von kognitiven Diensten und Microsoft Azure Machine Learning unterstützt.
 
@@ -84,6 +84,12 @@ Wenn Sie **Empfehlungen aktivieren** aktivieren und die Konfigurationseinzelvorg
 
 -   Anmeldeinformationen und ID für das Modell werden der API entnommen und in der operationalen Datenbank von Dynamics 365 for Retail, in der web.config für AOS und auch auf dem Retail-Server gespeichert.
 -   Model-Anmeldeinformationen und - kennung werden für CRT bereitgestellt, so dass Anforderungen für Produktempfehlungen aus Cloud POS und MPOS im onlinemodus durchgeführt werden können.
+
+> ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Beheben Sie Probleme, wo Sie Produktempfehlungen bereits aktiviert haben 
+>- Navigieren Sie zu **Einzelhandelsparameter** > **Lernfähigkeit einer Maschine** > **Produktempfehlungen sperren** und führen Sie **Globaler Konfigurationsjob aus**. Wenn Sie nicht in der Lage sind, die Registerkarte **Lernfähigkeit einer Maschine** zu suchen, wenden Sie sich bitte an den Dynamics Support. 
+
+>- Wenn Sie die**Empfehlungssteuerung** Ihrem Buchungsbildschirm mithilfe von **Designer für Bildschirmlayout** hinzugefügt haben, entfernen Sie diese auch. 
+
 
 
 <a name="see-also"></a>Siehe auch
