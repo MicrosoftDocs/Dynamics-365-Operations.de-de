@@ -1,9 +1,9 @@
 ---
-title: Auftragsbenachrichtigungen in der Verkaufsstelle anzeigen
-description: "In diesem Thema wird beschrieben, wie Auftragsbenachrichtigungen in der Verkaufsstelle und im Benachrichtigungsframework aktiviert werden, die für andere Arbeitsgänge erweitert werden können."
+title: Benachrichtigungen in der Verkaufsstelle anzeigen
+description: "In diesem Thema wird beschrieben, wie Auftragsbenachrichtigungen in der Verkaufsstelle und im Benachrichtigungsframework aktiviert werden, die für andere Arbeitsgänge erweitert werden können. Schließlich können Entwickler diese Benachrichtigungen auf Arbeitsgänge mit Ausnahme von Auftragserfüllungsarbeitsgängen erweitern."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,49 +18,58 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: a1206aea3f78246951581c1dc6338e39a0942ea2
+ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
+ms.openlocfilehash: a55af4c26d74cc392d3c53aacb66e0a8bc97abf2
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
-# <a name="display-notifications-in-point-of-sale"></a>Benachrichtigungen in der Verkaufsstelle anzeigen
+# <a name="show-order-notifications-in-the-point-of-sale"></a>Benachrichtigungen in der Verkaufsstelle anzeigen
 
 [!include[banner](includes/banner.md)]
 
-In der heutigen, modernen Einzelhandelsumgebung werden Filialmitarbeitern verschiedene Aufgaben zugewiesen, wie Kunden zu helfen, Transaktionen einzugeben, Lagerbestände zu zählen und Aufträge in der Filiale entgegenzunehmen. Der Verkaufsstellen-(POS)-Client ermöglicht es den Mitarbeitern, diese Aufgaben und noch viel mehr auszuführen, alles in eine einzigen Anwendung. Bei den verschiedenen Aufgaben, die im Lauf des Tages auszuführen sind, müssen Mitarbeiter möglicherweise darüber benachrichtigt werden, wenn etwas Ihre Aufmerksamkeit erfordert. Das Benachrichtigungsframework in der POS löst dieses Problem, indem es Einzelhändlern ermöglicht, rollenbasierte Benachrichtigungen zu konfigurieren. Mit Dynamics 365 for Retail mit Anwendung Update 5 können diese Benachrichtigungen nur für POS-Arbeitsgänge konfiguriert werden.
+In der heutigen, modernen Retailumgebung werden Filialmitarbeitern verschiedene Aufgaben zugewiesen, wie Kunden zu helfen, Transaktionen einzugeben, Lagerbestände zu zählen und Aufträge in der Filiale entgegenzunehmen. Der Verkaufsstellen-(POS)-Client ermöglicht es den Mitarbeitern, diese Aufgaben und noch viel mehr auszuführen, alles in eine einzigen Anwendung. Bei den verschiedenen Aufgaben, die im Lauf des Tages auszuführen sind, müssen Mitarbeiter möglicherweise darüber benachrichtigt werden, wenn etwas Ihre Aufmerksamkeit erfordert. Das Benachrichtigungsframework in der POS löst dieses Problem, indem es Einzelhändlern ermöglicht, rollenbasierte Benachrichtigungen zu konfigurieren. Mit Microsoft Dynamics 365 for Retail mit Anwendung Update 5 können diese Benachrichtigungen nur für POS-Arbeitsgänge konfiguriert werden.
 
-Aktuell bietet das System die Fähigkeit, Benachrichtigungen für Auftragserfüllungsarbeitsgänge anzuzeigen. Das Framework ist jedoch so konzipiert, dass es erweiterbar ist. In Zukunft können somit Entwickler einen Benachrichtigungshandler für jeden beliebigen Vorgang schreiben und die Benachrichtigungen in der POS anzeigen.  
+So kann das System Auftragserfüllungsarbeitsgänge nur für Benachrichtigungen anzeigen. Da jedoch das Framework entwickelt wurde, um erweiterbar werden, sind alle Entwickler in der Lage, einen Benachrichtigungshandler für einen Arbeitsgang zu verfassen und die Benachrichtigungen für diesen Arbeitsgang im POS angezeigt.
 
 ## <a name="enable-notifications-for-order-fulfillment-operations"></a>Aktivieren von Benachrichtigungen für Auftragserfüllungsarbeitsgänge
 
 Um Benachrichtigungen für die Auftragserfüllungsarbeitsgänge zu aktivieren, beachten Sie die folgenden Schritte:
 
- - Wechseln Sie zur Seite **Arbeitsgänge** (**Einzelhandel** > **Kanaleinstellung** > **POS-Einstellung** > **Verkaufsstelle** > **Arbeitsgänge**).
- - Suchen Sie nach dem Auftragserfüllungsarbeitsgang und aktivieren Sie das Kontrollkästchen **Benachrichtigungen aktivieren** für diesen Arbeitsgang. Dadurch wird dem Benachrichtigungsframework angezeigt, auf den Handler für den Auftragserfüllungsarbeitsgang zu warten. Wenn der Handler implementiert ist, dann werden die Benachrichtigungen in der POS angezeigt, andernfalls werden die Benachrichtigung nicht für diesen Arbeitsgang angezeigt.
-- Wechseln Sie zu den POS-Berechtigungen, die den Arbeitskräften und unter dem Inforegister **Benachrichtigungen** zugeordnet sind, fügen Sie den Auftragserfüllungsarbeitsgang mit der „Anzeigereihenfolge” als 1 hinzu. Wenn mehr als eine Benachrichtigung konfiguriert ist, wird die Anzeigereihenfolge verwendet, um die Benachrichtigung von oben nach unten anzuordnen, wobei 1 ganz oben ist. Nur solche Arbeitsgänge können hinzugefügt werden, für die das Kontrollkästchen **Benachrichtigungen aktivieren** aktiviert wurde. Die Benachrichtigungen werden auch nur für die Arbeitsgänge angezeigt, die hier hinzugefügt wurden und nur an solche Arbeitskräfte, für die die Arbeitsgänge zu den entsprechenden POS-Berechtigungen hinzugefügt wurden. 
+1. Wechseln Sie zu **Retail** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS** &gt; **Betrieb**.
+2. Suchen Sie nach dem Arbeitsgang **Auftragserfüllung** und aktivieren Sie das Kontrollkästchen **Aktivieren Sie Benachrichtigungen**sodass das Benachrichtigungsframework aud den Handler für diesen Arbeitsgang hört. Wenn der Handler implementiert wird, werden Benachrichtigungen für diesen Arbeitsgang dann am Point-of-Sale angezeigt.
+3. Gehen Sie zu **Retail** &gt; **Mitarbeiter** &gt; **Arbeitskräfte** &gt;, unter Registerkarte Retail, öffnen Sie POS-Berechtigungen, die der Arbeitskraft zugeordnet werden. Erweitern Sie das Inforegister **Benachrichtigungen**, fügen Sie den **Auftragserfüllung** Arbeitsgang hinzu, und legen Sie das Feld **Anzeigereihenfolge** auf **1** fest. Wenn mehrere Benachrichtigung konfiguriert sind, wird es dazu verwendet, die Benachrichtigungen anzuordnen. Benachrichtigungen, die geringer sind als der Wert **Anzeigereihenfolge** erscheinen über Benachrichtigungen, die einen höheren Wert haben. Benachrichtigungen, die einen Wert **Anzeigereihenfolge** **1** besitzen, werden oben angezeigt.
+
+    Benachrichtigungen werden nur für Arbeitsgänge angezeigt, die auf dem Inforegister **Benachrichtigungen** hinzugefügt werden, und Sie können Arbeitsgänge dort hinzufügen, wenn das Kontrollkästchen **Aktivieren Sie Benachrichtigungen** für diese Einzelvorgänge auf der Seite **POS-Vorgängen** aktiviert wurde. Darüber hinaus werden Benachrichtigungen für einen Arbeitsgang angezeigt, wenn der Arbeitsgang zu den POS-Berechtigungen für diese Arbeitskräfte hinzugefügt wird.
+
+    > [!NOTE]
+    > Benachrichtigungen können in der Benutzerebene überschrieben werden. Öffnen Sie den Datensatz der Arbeitskraft, wählen Sie **POS-Berechtigungen** aus und bearbeiten Sie dann die Benachrichtigungsdauerauftrag des Benutzers.
+
+4. Klicken Sie auf **Retail und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profil** &gt; **Funktionsprofile**. Wählen Sie im Feld **Benachrichtigungsintervall**, wieoft Benachrichtigungen abgerufen werden sollen. Für mehrere Benachrichtigungen muss der POS Echtzeitanrufe der Backofficebewerbung vornehmen. Diese Anrufe verbrauchen die Berechnungskapazität der Backofficebewerbung. Wenn das Benachrichtigungsintervall festlegen, sollten Sie Ihre geschäftlichen Anforderungen und die Auswirkung von Echtzeitanrufen der Backofficebewerbung berücksichtigen. Ein Wert **0** (Null) stellt Benachrichtigungen ab.
+5. Klicken Sie auf **Einzelhandel** &gt; **Handel IT** &gt; **Vertriebsplan**. Wählen Sie den Zeitplan **1060** (**Mitarbeiter**) aus, um die Benachrichtungsabonnementeinstellungen zu synchronisieren, und klicken Sie dann auf **Jetzt ausführen**. Synchronisieren Sie danach das Berechtigungsintervall, indem Sie die **1070** (**(Kanalkonfiguration** auswählen, und klicken Sie dann auf **Jetzt ausführen**.
+
+## <a name="view-notifications-in-the-pos"></a>Benachrichtigungen in POS anzeigen
+
+Nachdem Sie die obigen Schritte ausgeführt haben, sind die Arbeitskräfte in der Lage, die Benachrichtigungen im POS anzuzeigen. Um die Benachrichtigungen anzuzeigen, klicken Sie auf das Benachrichtigungssymbol in der rechten oberen Ecke des POS. Dadurch wird das Benachrichtigungscenter mit den Benachrichtigungen für den Auftragserfüllungsarbeitsgang angezeigt. Das Benachrichtigungscenter sollte die folgenden Gruppen innerhalb des Auftragserfüllungsarbeitsgangs anzeigen:
+
+- **Filialabholung** – In dieser Gruppe wird die Anzahl von Aufträgen angezeigt, die den Liefermodus **Abholung** haben, und ihre Abholung ist von der aktuellen Filiale geplant. Sie können die Nummer auf der Gruppen drücken, um die Seite **Bestellungs-Erfüllung** zu öffnen. In diesem Fall wird die Seite gefiltert, sodass diese nur die aktiven Aufträge anzeigt, die für "Keine Abholung" vom aktuellen Shop eingerichtet werden.
+- **Von Filiale versenden** – In dieser Gruppe wird die Anzahl von Aufträgen angezeigt, die den Liefermodus **Versand** haben, und der Versand ist von der aktuellen Filiale geplant. Sie können die Nummer auf der Gruppen drücken, um die Seite **Bestellungs-Erfüllung** zu öffnen. In diesem Fall wird die Seite gefiltert, sodass diese nur die aktiven Aufträge anzeigt, die für "Keine Lieferung" vom aktuellen Shop eingerichtet werden.
+
+Wenn neue Aufträge der Filiale zur Erfüllung zugewiesen werden, ändert sich das Benachrichtigungssymbol, um die neuen Benachrichtigungen anzuzeigen, und die Anzahl der entsprechenden Gruppen wird aktualisiert. Obwohl die Gruppen in regelmäßigen Zeitabständen aktualisiert werden, können POS-Benutzer die Gruppen jederzeit manuell aktualisieren, indem Sie die Schaltfläche **Aktualisieren** neben der Gruppe auswählen. Wenn eine Gruppe einen neuen Artikel hat, den die aktuelle Arbeitskraft nicht angezeigt hat, zeigt die Gruppe ein Burstsymbol an, um neuen Inhalt anzuzeigen.
+
+## <a name="enable-live-content-on-pos-buttons"></a>Aktivieren Sie Liveinhalt auf POS-Schaltflächen
+
+POS-Schaltflächen können jetzt eine Anzahl anzeigen, damit Arbeitskräfte einfach bestimmen können welche Aufgaben ihre umgehende Aufmerksamkeit erfordern. Um diese Nummer in einer POS-Schaltfläche anzuzeigen, müssen Sie die Einstellungen Benachrichtigung abschließen,  die weiter oben in diesem Thema beschrieben werden (das heißt, Sie müssen Benachrichtigungen für einen Arbeitsgang aktivieren und richten ein Benachrichtigungsintervall und die POS-Berechtigungsgruppe für die Arbeitskraft ein.) Darüber hinaus müssen Sie das Schaltflächenrasterdesigner öffnen, die Eigenschaften der Schaltfläche anzeigen und **Aktivieren Sie Liveinhalt** aktivieren. Im Feld **Inhalts-Ausrichtung** können Sie auswählen, ob die Anzahl in der oberen rechten Ecke der Schaltfläche (**Oben rechts**) oder im Verteilzentrum (**Mitte**) angezeigt wird.
 
 > [!NOTE]
-> Benachrichtigungen können auf der Benutzerebene überschrieben werden, indem Sie zum Datensatz der Arbeitskraft navigieren und **POS-Berechtigungen** auswählen und dann das Benachrichtigungsabonnement des Benutzers bearbeiten.
+> Der Liveinhalt kann für Arbeitsgänge aktiviert werden, wenn das Feld **Aktivieren Sie Benachrichtigungen** auf der Seite **POS-Vorgängen** aktiviert wurde, wie weiter oben in diesem Thema beschrieben wurde.
 
- - Wechseln Sie zur Seite **Funktionsprofil** (**Einzelhandel** > **Kanaleinstellung** > **POS-Einstellung** > **POS-Profile** > **Funktionsprofile**). Aktualisieren Sie die Eigenschaft **Benachrichtigungsintervall**, um das Intervall in Minuten festzulegen, zu denen die Benachrichtigungen abgerufen werden sollen. Es wird empfohlen, diesen Wert auf 10 Minuten festzulegen, um unnötige Kommunikation mit der Unternehmenszentrale zu vermeiden. Durch das Festlegen des Benachrichtigungsintervalls auf „0” werden die Benachrichtungen ausgeschaltet.  
+Die folgende Abbildung zeigt die Inhaltseinstellungen, die im Schaltflächenrasterdesigner angezeigt werden.
 
- - Wechseln Sie zu **Einzelhandel** > **Einzelhandels-IT** > **Verteilungszeitplan**. Wählen Sie den Zeitplan „1060-Mitarbeiter” aus, um die Benachrichtungsabonnementeinstellungen zu synchronisieren, und klicken Sie dann auf **Jetzt ausführen**. Synchronisieren Sie danach das Berechtigungsintervall, indem Sie die „1070-Kanalkonfiguration” auswählen, und klicken Sie dann auf **Jetzt ausführen**. 
+![Live-Inhaltseinstellungen im Schaltflächenrasterdesigner](./media/ButtonGridDesigner.png "Live-Inhaltseinstellungen im Schaltflächenrasterdesigner")
 
-## <a name="view-notifications-in-pos"></a>Benachrichtigungen in POS anzeigen
+Die folgende Abbildung zeigt die Auswirkungen der Auswahl **Oben rechts** versus **Mitte** im Feld **Inhalts-Ausrichtung** für Schaltflächen für verschiedene Mengen an.
 
-Nachdem die oben genannten Schritte abgeschlossen sind, können die Arbeitskräfte, für die die Benachrichtigungen eingerichtet wurden, die Benachrichtigungen in POS anzeigen. Um die Benachrichtigungen anzuzeigen, klicken Sie auf das Benachrichtigungssymbol in der Titelleiste der POS. Dadurch wird das Benachrichtigungscenter mit den Benachrichtigungen für den Auftragserfüllungsarbeitsgang angezeigt. Das Benachrichtigungscenter sollte die folgenden Gruppen innerhalb des Auftragserfüllungsarbeitsgangs anzeigen: 
-
-- **Ausstehende Aufträge** – In dieser Gruppe wird die Anzahl der Aufträge angezeigt, die sich im ausstehenden Status befinden, wie beispielsweise Aufträge, die von einer POS-Arbeitskraft akzeptiert werden müssen, die die erforderlichen Berechtigungen für die Filialerfüllung besitzt. Durch Klicken auf die Nummer in der Gruppe wird die Seite **Auftragserfüllung** geöffnet. Sie ist gefiltert, sodass nur die ausstehenden Aufträge angezeigt werden, die der Filiale zur Erfüllung zugewiesen sind. Wenn die Aufträge automatisch für die Filiale akzeptiert werden, wird die Anzahl für diese Gruppe null sein.
-
-- **Filialabholung** – In dieser Gruppe wird die Anzahl von Aufträgen angezeigt, die den Liefermodus **Abholung** haben, und ihre Abholung ist von der aktuellen Filiale geplant. Durch Klicken auf die Nummer in der Gruppe wird die Seite **Auftragserfüllung** geöffnet. Sie ist gefiltert, sodass die aktiven Aufträge angezeigt werden, die so eingerichtet sind, dass sie von der aktuellen Filiale abgeholt werden.
-
-- **Von Filiale versenden** – In dieser Gruppe wird die Anzahl von Aufträgen angezeigt, die den Liefermodus **Versand** haben, und der Versand ist von der aktuellen Filiale geplant. Durch Klicken auf die Nummer in der Gruppe wird die Seite **Auftragserfüllung** geöffnet. Sie ist gefiltert, sodass die aktiven Aufträge angezeigt werden, die so eingerichtet sind, dass sie von der aktuellen Filiale versendet werden.
-
-Wenn neue Aufträge der Filiale zur Erfüllung zugewiesen werden, ändert sich das Benachrichtigungssymbol, um die neuen Benachrichtigungen anzuzeigen, und die Anzahl der entsprechenden Gruppen wird aktualisiert. Der Benutzer kann auch auf das Aktualisierungssymbol neben dem Arbeitsgangnamen klicken, um die Anzahl der Gruppen sofort zu aktualisieren. Die Anzahl wird auch in dem vordefinierten Intervall aktualisiert. Von jeder Gruppe, die einen neuen Artikel hat, der nicht von der aktuellen Arbeitskraft gesehen wird, wird ein Blitzsymbol angezeigt, das anzeigt, dass diese Gruppe einen neuen Artikel hat. Durch Klicken auf die Kacheln innerhalb der Benachrichtigungen wird der spezifische Arbeitsgang geöffnet, für den diese Benachrichtigung konfiguriert ist. In den vorstehenden Szenarien wird durch das Anklicken der Benachrichtigungen die Seite **Auftragserfüllung** geöffnet, und die entsprechenden Parameter werden übergeben: ausstehende Aufträge, Filialabholung und Versand ab Filiale. 
-
-> [!NOTE]
-> Ausstehende Auftragsbenachrichtigungen werden bei einem bevorstehenden Update von Dynamics 365 for Retail ermöglicht. 
-
+![Live Inalt auf POS-Schaltfläche](./media/ButtonsWithLiveContent.png "Live Inalt auf POS-Schaltfläche")
 
