@@ -1,6 +1,6 @@
 ---
 title: Intelligence
-description: "In diesem Thema erhalten Sie Hinweise zu Ressourcen. Diese bieten Ihnen weitere Informationen über die Tools zu Business Intelligence und zur Berichterstellung, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, verfügbar sind."
+description: "In diesem Thema erhalten Sie Hinweise zu Ressourcen. Diese bieten Ihnen weitere Informationen über die Tools zu Business Intelligence und zur Berichterstellung, die in Microsoft Dynamics 365 for Finance and Operations verfügbar sind."
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
 ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/18/2017
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema erhalten Sie Hinweise zu Ressourcen. Diese bieten Ihnen weitere Informationen über die Tools zu Business Intelligence (BI) und zur Berichterstellung, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, verfügbar sind.
+In diesem Thema erhalten Sie Hinweise zu Ressourcen. Diese bieten Ihnen weitere Informationen über die Tools zu Business Intelligence (BI) und zur Berichterstellung, die in Microsoft Dynamics 365 for Finance and Operations verfügbar sind.
 
 ## <a name="get-started"></a>Erste Schritte
 - [Informationszugriff und Berichterstellung](information-access-reporting.md)

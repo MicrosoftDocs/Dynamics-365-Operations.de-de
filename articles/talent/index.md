@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 199a8961f782816c71e47f9e76e097c069fbf686
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
 ms.contentlocale: de-de
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -43,7 +43,7 @@ Sie können Talent verwenden, um diese Aufgaben zu bearbeiten:
 + Einrichten, Veranstalten und Analysieren von Schulungskursen mit Tagesordnungen, Sitzungen und Protokollen.
 
 > [!NOTE] 
-> Dynamics 365 for Talent und die Personalverwaltung in Dynamics 365 for Finance and Operations, Enterprise Edition sind sich sehr ähnlich. Beide Produkte weisen möglicherweise dieselbe Funktion auf. Daher lautet bei Themen, deren hauptsächlicher Bezug die Personalverwaltung ist, der Produktname Dynamics 365 for Finance and Operations, Enterprise Edition. Bei Themen, die sich hauptsächlich um Talent drehen, lautet der Produktname Dynamics 365 for Talent. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
+> Dynamics 365 for Talent und die Personalverwaltung in Dynamics 365 for Finance and Operations sind sich sehr ähnlich. Beide Produkte weisen möglicherweise dieselbe Funktion auf. Daher lautet bei Themen, deren hauptsächlicher Bezug die Personalverwaltung ist, der Produktname Dynamics 365 for Finance and Operations. Bei Themen, die sich hauptsächlich um Talent drehen, lautet der Produktname Dynamics 365 for Talent. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Entwickeln einer Strategie für die Personalverwaltung
 ---------------------------------------------------------

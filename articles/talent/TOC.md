@@ -3,6 +3,8 @@
 # [Erste Schritte](talent-get-started.md)
 ## [Systemanforderungen und Updaterichtlinie](talent-versions-update-policy.md)
 ## [Microsoft Dynamics 365 for Talent bereitstellen](provisioning-talent.md)
+## [Talent-Umgebung entfernen](remove-test-environment.md)
+## [Bereitstellen von Microsoft Dynamics 365 for Talent – Modulare Apps](modular-app-tech-faq.md)
 ## [Talentfunktionalität erweitern](extend-talent-functionality.md)
 
 # [Eine Personalverwaltungsstrategie entwickeln](departments-jobs-positions.md)
@@ -39,5 +41,5 @@
 ## [Die Ergebnisse eines Fragebogens auswerten](evaluate-questionnaire-results.md)
 
 # Arbeitsplatzsicherheit und Konformität (Vereinigte Staaten von Amerika)
-## [Formular I-9 – Beschäftigungsüberprüfung](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
-## [Einhalten des ADA (Americans with Disabilities Act)](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
+## [Formular I-9 – Beschäftigungsüberprüfung](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
+## [Einhalten des ADA (Americans with Disabilities Act)](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)
