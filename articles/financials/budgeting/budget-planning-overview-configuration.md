@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d904a2fe9411da1fd1a4e5810f7dcea782f1c2f7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen d
 
 Sie führen Budgetplanung durch, wenn Sie die Budgets vorbereiten, die von einer Organisation implementiert werden. Eine Organisation kann Budgetplanung konfigurieren und anschließend Budgetplanungsprozesse einrichten, um die Richtlinien, die Verfahren und Bedingungen ihrer Organisation für Budgetausarbeitung zu erfüllen. 
 
-Wenn Sie die Konzepte und die Terminologie verstehen, die in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden, erleichtert dies die Budgetplanung in Ihrer Organisation.
+Wenn Sie die Konzepte und die Terminologie verstehen, die in Microsoft Dynamics 365 for Finance and Operations verwendet werden, erleichtert dies die Budgetplanung in Ihrer Organisation.
 
 ### <a name="key-terms"></a>Schlüsselbegriffe
 

@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: a72963f755f8eddb19b8526d2938eff039ab7df2
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/17/2018
 Die Planung und Verwaltung eines Projektzeitplans kann komplex sein. Deshalb müssen Projektmanager Tools verwenden, mit denen sie diese Aufgabe bewältigen können. Die Integration mit Microsoft Project Client bietet Unterstützung, um einen Projektstrukturplan zu öffnen und zu verwalten. Der Projektmanager kann beliebige Änderungen zurück zum Finance and Operations-Projektstrukturplan veröffentlichen.
 
 > [!NOTE]
-> Wenn Sie das Update vom Juli für Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, verwenden, müssen Sie auch KB 4054797 und 4055884 installieren.
+> Wenn Sie das Update vom Juli für Microsoft Dynamics 365 for Finance and Operations, verwenden, müssen Sie auch KB 4054797 und 4055884 installieren.
 
 ## <a name="configure-the-microsoft-project-client-add-in"></a>Konfigurieren des Microsoft Project Client-Add-Ins
 Um die Integration mit Microsoft Project Client zu ermöglichen, muss ein Microsoft Dynamics 365-Add-In der Microsoft Project-Anwendung des Clients des Benutzers installiert werden. Dies erfolgt, indem der **Projektverwaltungsarbeitsbereich** geöffnet wird.

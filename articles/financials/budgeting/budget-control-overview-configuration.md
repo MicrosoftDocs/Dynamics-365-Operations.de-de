@@ -1,6 +1,6 @@
 ---
 title: "Überblick zur Budgetsteuerung"
-description: "Dieser Artikel stellt Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, damit Sie Finanzquellen verwalten können."
+description: "Dieser Artikel stellt die Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, dass Sie finanzielle Ressourcen verwalten können."
 author: twheeloc
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 98b5620b343a87426aab13997d1f2e5f7dc30d50
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e77760d6729b8faf3099590c60ea7673cfcb18ec
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel stellt Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, damit Sie Finanzquellen verwalten können.
+Dieser Artikel stellt die Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, dass Sie finanzielle Ressourcen verwalten können.
 
 <a name="overview"></a>Überblick
 --------
@@ -67,7 +67,7 @@ Die nächsten Schritte in der Konfiguration werden auf den verschiedenen Registe
 
 Auf Grundlage der Finanzdimensionen, die für das Budget aktiviert sind, können Sie alle oder eine Teilmenge der Finanzdimensionen für die Budgetsteuerung verwenden. 
 
-Darüber hinaus können Sie das standardmäßige Zeitintervall angeben (beispielsweise **Geschäftsjahr****Geschäftsjahr bis heute****Finanzzeitraum** oder **Quartalsweise**), die für diese Budgetsteuerung für in die zugehörige Zeitspanne für den Budgetzyklus ausgeführt wird. Sie können auch einen standardmäßigen Budget-Manager und den Schwellenwert angeben, der verwendet wird, um Benutzer zu informiern, wenn der Schwellenwert erreicht wurde. Die Werte in diesen Feldern werden als Standardwerte in jeder neuen Budgetsteuerungsregel oder Budgetgruppe verwendet, die erstellt wird. Allerdings können die Standardwerte für einzelne Gruppen oder Regeln geändert werden. 
+Darüber hinaus können Sie das standardmäßige Zeitintervall angeben (beispielsweise **Geschäftsjahr** **Geschäftsjahr bis heute** **Finanzzeitraum** oder **Quartalsweise**), die für diese Budgetsteuerung für in die zugehörige Zeitspanne für den Budgetzyklus ausgeführt wird. Sie können auch einen standardmäßigen Budget-Manager und den Schwellenwert angeben, der verwendet wird, um Benutzer zu informiern, wenn der Schwellenwert erreicht wurde. Die Werte in diesen Feldern werden als Standardwerte in jeder neuen Budgetsteuerungsregel oder Budgetgruppe verwendet, die erstellt wird. Allerdings können die Standardwerte für einzelne Gruppen oder Regeln geändert werden. 
 
 Die Art und Weise, auf die die Budgets im Budgetregister erstellt und erfasst werden, spielt eine Rolle bei der Bestimmung der auszuwählenden Zeitspanne, wenn verfügbare Budgetmittel ausgewertet werden. Wenn ein auf das Jahr bezogener Betrag für eine Dimensionswertkombination entwickelt und verwendet wird, ist möglicherweise ein Geschäftsjahres- oder Geschäftsjahr seit Jahresbeginn-Ansatz sinnvoll. Wenn eine Organisation aber ein Budget nach Finanzzeitraum erstellt oder den Steuerperioden zuordnet und ausführlichere Kontrolle wünscht, sollten Sie Zeitspannen wie Geschäftsjahr seit Jahresbeginn oder vierteljährlich in Betracht ziehen. 
 

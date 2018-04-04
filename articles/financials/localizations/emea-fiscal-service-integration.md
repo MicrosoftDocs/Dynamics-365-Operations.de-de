@@ -17,10 +17,10 @@ ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: a170b39ce5512ca69b1e6b49bce0c3200ca5a239
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 0fb9d48ef6f2fd06223516c0e8af235b354f2a5a
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/17/2018
 
 In Österreich sollten alle Barzahlungen durch ein externes Gerät oder einen externen Dienst signiert werden, und sie sollten sicher gespeichert werden. In der Tschechischen Republik sollten alle Barzahlungen an das Behördenportal für eine steuerliche Signatur übermittelt werden. In beiden Ländern sollte ein Barbeleg ausgestellt werden, auf dem die Signatur, bzw. Unterschrift gedruckt wird.
 
-Um diese landesspezifischen Anforderungen zu unterstützen, ermöglicht Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, es ihnen, eine Integration mit dem steuerlichen Dienst eines Drittanbieters herzustellen, der bestimmte Anforderungen für die Barzahlungskontrolle in verschiedenen Ländern oder Regionen erfüllt.
+Um diese landesspezifischen Anforderungen zu unterstützen, ermöglicht Microsoft Dynamics 365 for Finance and Operations es Ihnen, eine Integration mit dem steuerlichen Dienst eines Drittanbieters herzustellen, der bestimmte Anforderungen für die Barzahlungskontrolle in verschiedenen Ländern oder Regionen erfüllt.
 
 > [!NOTE]
 > Es wird vorausgesetzt, dass der steuerliche Dienst des Drittanbieters alle anderen landesspezifischen gesetzlichen Anforderungen bezüglich registrierter Transaktionen erfüllt. Sie sind für die ordnungsgemäße Einrichtung und Verwaltung des steuerlichen Diensts verantwortlich.

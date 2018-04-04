@@ -1,6 +1,6 @@
 ---
 title: Einrichtung des erweiterten Bankabstimmungsprozesses
-description: "Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen.  Dieser Artikel erläutert die Einrichtung von Prozesse für die Abstimmung."
+description: "Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen.  Dieser Artikel erläutert die Einrichtung von Prozesse für die Abstimmung."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: aec219f545e880407b9a7d62b2dda4a607ac6bdd
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f77a9c927232c95558ba78037f6a6e9f77e202c2
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen.  Dieser Artikel erläutert die Einrichtung von Prozesse für die Abstimmung.  
+Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen.  Dieser Artikel erläutert die Einrichtung von Prozesse für die Abstimmung.  
 
 Es gibt mehrere Stück, die vor der Verwendung der erweiterten Bankabstimmungsfunktion eingerichtet werden müssen. Weitere Informationen zur Einrichtung von Bankauszugsimport finden Sie unter [Einrichten von Bankauszugimportprozess](set-up-advanced-bank-reconciliation-import-process.md).  Anforderungen für Einrichtung des Abstimmungsvorgangs sind nachfolgend genauer dargelegt.
 

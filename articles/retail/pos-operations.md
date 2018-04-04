@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82c2fab72923cfec135e207dfe194fda7d16e8e9
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
 ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -41,6 +41,8 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 - **Schaltflächenraster** – Der Arbeitsgang kann zu den Schaltflächen in POS-Schaltflächenrastern zugewiesen werden, die Teil eines POS-Bildschirmlayouts sind.
 - **Buchungsbildschirm** – Der Arbeitsgang kann aus POS-Schaltflächenrastern aufgerufen werden, die im Feld POS-Buchungs-Bildschirm konfiguriert werden.
 - **Willkommen-Bildschirm** – Der Arbeitsgang kann aus POS-Schaltflächenrastern aufgerufen werden, die im Feld POS-Buchungs-Bildschirm konfiguriert werden.
+
+Hinweis: Die Arbeitsgänge unten gelten für die neueste Version von Microsoft Dynamics 365 for Retail. Einige Vorgänge haben sich möglicherweise geändert oder sind möglicherweise in früheren Versionen nicht verfügbar.
 
 | ID | Arbeitsgang | Beschreibung | Schaltflächenraster | Transaktionsbildschirm | Willkommensbildschirm | Verfügbar offline | Gebietsschemaspezifisch |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -105,6 +107,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 703 | Register sperren | Sperren Sie das aktuelle Register, damit es nicht verwendet werden kann, aber melden Sie nicht den aktuellen Benutzer ab. | Nr. | Nr. | Nr. | Ja | Nr. |
 | 701 | Abmelden | Melden Sie den aktuellen Benutzer aus dem Register ab. | Ja | Ja | Ja | Ja | Nr. |
 | 521 | Treuekarten-Punktestand | Anzeigen des Saldos von Punkten für die angegebene Treuekarte. | Ja | Ja | Nr. | Nr. | Nr. |
+| 918 | Schichten verwalten | Zeigen Sie eine Liste aktiver, unterbrochener und blinder, geschlossener Schichten an. | Ja | Ja | Ja | Nr. | Nr. |
 | 914 | POS-Fenster minimieren | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nr. |
 | 1.000 | Kassenlade öffnen | Führen Sie einen Arbeitsgangs "Verkauf" aus, und öffnen Sie die derzeit ausgewählte Geldlade. | Ja | Ja | Ja | Ja | Nr. |
 | 928 | Auftragserfüllung | Dieser Arbeitsgang ermöglicht es Benutzern, Aufträge für die Filialabholung zu entnehmen, zu verpacken, zu versenden oder zurückzurufen. | Ja | Ja | Ja | Nr. | Nr. |
@@ -162,7 +165,6 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 638 | Verkäufer für Position festlegen | Dieser Arbeitsgang ermöglicht dem Benutzer, eine der freigegebenen Provisionsverkaufsgruppen (Verkaufsrepräsentanten) als für die aktuell ausgewählte Position auszuwählen. | Ja | Ja | Nr. | Ja | Nr. |
 | 630 | Alle Produkte versenden | Legen Sie den Erfüllungsmodus auf **Versand** für alle Positionsartikel fest. | Ja | Ja | Nr. | Ja\* | Nr. |
 | 629 | Ausgewählte Produkte versenden | Legen Sie den Erfüllungsmodus für die ausgewählten Positionen auf **Versenden** fest. | Ja | Ja | Nr. | Ja\* | Nr. |
-| 918 | Blind geschlossene Schichten anzeigen | Hier wird eine Liste von Schichten angezeigt, die blind geschlossen wurden. | Ja | Ja | Ja | Nr. | Nr. |
 | 115 | Erfassung anzeigen | Anzeigen der Erfassung der Filiale. Sie können Buchungen, Neuauflagenzugänge und Geschenkzugänge anzeigen und Rückruf für Rücklieferung. | Ja | Ja | Ja | Ja\*\* | Nr. |
 | 802 | Bestandsmenge | Dieser Arbeitsgang erlaubt Benutzer, Inventurerfassungen vordefinierten physischen Bestand oder Gangzählungen zu erstellen oder zu ändern. | Ja | Ja | Ja | Nr. | Nr. |
 | 401 | Untermenü | Dieser Arbeitsgang leitet den Benutzer zu einem anderen verknüpften Schaltflächenraster. | Ja | Ja | Ja | Ja | Nr. |

@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 946584d8afa8937afc7a26835e05b0eecebaad35
-ms.openlocfilehash: 67558889dea03738a665d8f1e2f30833b96c4656
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
 ms.contentlocale: de-de
-ms.lasthandoff: 12/23/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronische
 
 EB unterstützt den Formeldesigner. Daher können Sie zum Zeitpunkt des Entwurfs Ausdrücke konfigurieren, die für folgende Aufgaben zur Laufzeit verwendet werden können:
 
-- Transformieren Sie Daten, die aus einer Datenbank von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, empfangen wurden, und in ein EB-Datenmodell eingegeben werden sollen, das als Datenquelle für EB-Formate entworfen wurde. (Diese Transformationen können beispielsweise Filterung, Gruppierung und Datentypkonvertierung umfassen.)
+- Transformieren Sie Daten, die aus einer Datenbank von Microsoft Dynamics 365 for Finance and Operations empfangen wurden, und in ein EB-Datenmodell eingegeben werden sollen, das als Datenquelle für EB-Formate entworfen wurde. (Diese Transformationen können beispielsweise Filterung, Gruppierung und Datentypkonvertierung umfassen.)
 - Formatieren Sie Daten, die an ein generierendes elektronisches Dokument in Übereinstimmung mit dem Layout und den Bedingungen eines spezifischen EB-Formats übermittelt werden müssen. (Die Formatierung kann beispielsweise in Übereinstimmung mit der angeforderten Sprache oder Kultur oder der Codierung erfolgen).
 - Steuern Sie den Prozess der Erstellung elektronischer Dokumente. (Die Ausdrücke können beispielsweise die Ausgabe bestimmter Elemente des Formats aktivieren oder deaktivieren, abhängig von der Verarbeitung von Daten. Sie können auch den Dokumenterstellungsprozess unterbrechen oder Nachrichten an Benutzer auslösen.)
 
@@ -540,7 +540,7 @@ Der Ausdruck <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> gibt auch <s
 </tr>
 <tr class="even">
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
-<td>Gibt die angegebene Zeichenfolge zurück, nachdem sie formatiert wurde, indem alle Vorkommnisse von <strong>%N</strong> mit dem <em>n</em>. Argument ersetzt werden. Die Argumente sind Zeichenfolgen. Wenn eine Anfrage nicht für einen Parameter angegeben wird, wird der Parameter als <strong>&quot;%N&quot;</strong> in der Zeichenfolge zurückgegeben. Für Werte für den <strong>tatsächlich</strong> Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</td>
+<td>Geben Sie die angegebene Zeichenfolge zurück, nachdem sie formatiert wurde, indem sämtliche Vorkommnisse von <strong>%N</strong> durch das <em>n</em>. Argument ersetzt werden. Die Argumente sind Zeichenfolgen. Wenn eine Anfrage nicht für einen Parameter angegeben wird, wird der Parameter als <strong>&quot;%N&quot;</strong> in der Zeichenfolge zurückgegeben. Für Werte für den <strong>tatsächlich</strong> Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</td>
 <td>In der folgenden Abbildung gibt die Datenquelle <strong>PaymentModel</strong> die Liste von Kundendatensätzen über die Komponente <strong>-Kunde</strong> und den Verarbeitungsdatumswert über das Feld <strong>ProcessingDate</strong> zurück.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>Im ER-Format, das entworfen wurde, um eine Datei für ausgewählte Debitoren zu generieren, wird <strong>PaymentModel</strong> als Datenquelle ausgewählt, um den Prozessablauf zu steuern. Eine Ausnahme wird ausgelöst, um den Benutzer zu informieren, wann ein Kunde für das Datum angehalten wird, an dem der Bericht verarbeitet wird. Die Formel, die für diese Art von Prozesssteuerung entworfen wurde, kann die folgenden Ressourcen verwenden:</p>

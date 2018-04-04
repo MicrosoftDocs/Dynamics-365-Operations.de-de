@@ -1,6 +1,6 @@
 --- 
 title: Eine Konfiguration zum Import von Daten aus einer externen Datei im CSV-Format erstellen (ER)
-description: Nutzen Sie diese Prozedur, um elektronischen Berichterstellungskonfigurationen (EB) zu entworfen, um Daten in die Anwendung von Dynamics 365 for Finane and Operations, Enterprise Edition, aus einer externen Datei im CSV-Format zu importieren.
+description: Nutzen Sie diese Prozedur, um elektronische Berichterstellungskonfigurationen (EB) zu entwerfen, um Daten in die Dynamics 365 for Finance and Operations-Anwendung aus einer externen Datei im CSV-Format zu importieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -16,24 +16,24 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 5c1766992531ee272ea156bc33c4c0ea8dfac27a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Eine Konfiguration zum Import von Daten aus einer externen Datei im CSV-Format erstellen (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Nutzen Sie diese Prozedur, um elektronischen Berichterstellungskonfigurationen (EB) zu entworfen, um Daten in die Anwendung von Dynamics 365 for Finane and Operations, Enterprise Edition, aus einer externen Datei im CSV-Format zu importieren. In diesem Verfahren erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc. Um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Verfahren erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren. 
+Nutzen Sie diese Prozedur, um elektronische Berichterstellungskonfigurationen (EB) zu entwerfen, um Daten in die Dynamics 365 for Finance and Operations-Anwendung aus einer externen Datei im CSV-Format zu importieren. In diesem Verfahren erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc. Um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Verfahren erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren. 
 
 Diese Prozedur wird für Benutzer erstellt, die die Rolle des Systemadministrators oder des Entwicklers für elektronische Berichterstellung haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden. 
 
-Sie müssen die folgenden Dateien auch herunterladen und lokal speichern (https://go.microsoft.com/fwlink/?linkid=862266) ": 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
+Sie müssen auch die folgenden Dateien herunterladen und lokal speichern: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Sie können einen Prozesse konfigurieren, um externe Dateien im XML-, TXT- oder CSV-Format in Tabellen in der Anwendung von Dynamics 365 for Finance and Operations, Enterprise Edition, zu importieren. Zunächst müssen Sie ein abstraktes Datenmodell erstellen, um die importierten Daten darzustellen, von einem Geschäftsstandpunkt aus wird dafür eine Datenmodellkonfiguration für die elektronische Berichterstellung erstellt. Als nächstes definieren Sie eine Struktur der importierten Datei, die dem entworfenen Datenmodell zugeordnet ist, als Methode, um Daten aus der Datei in das abstrakte Datenmodell zu übertragen – dazu wird eine Formatkonfiguration für die elektronische Berichterstellung erstellt. Anschließend muss die Datenmodellkonfiguration für die elektronische Berichterstellung mit einer neuen Modellzuordnung erweitert werden, die beschreibt, wie die Daten aus der importierten Datei und die persistierten Daten aus dem abstrakten Datenmodell verwendet werden, um die Anwendungstabellen oder Datenentitäten zu aktualisieren.  
+    * Sie können einen Prozesse konfigurieren, um externe Dateien im XML-, TXT- oder CSV-Format in Tabellen in der Dynamics 365 for Finance and Operations-Anwendung zu importieren. Zunächst müssen Sie ein abstraktes Datenmodell erstellen, um die importierten Daten darzustellen, von einem Geschäftsstandpunkt aus wird dafür eine Datenmodellkonfiguration für die elektronische Berichterstellung erstellt. Als nächstes definieren Sie eine Struktur der importierten Datei, die dem entworfenen Datenmodell zugeordnet ist, als Methode, um Daten aus der Datei in das abstrakte Datenmodell zu übertragen – dazu wird eine Formatkonfiguration für die elektronische Berichterstellung erstellt. Anschließend muss die Datenmodellkonfiguration für die elektronische Berichterstellung mit einer neuen Modellzuordnung erweitert werden, die beschreibt, wie die Daten aus der importierten Datei und die persistierten Daten aus dem abstrakten Datenmodell verwendet werden, um die Anwendungstabellen oder Datenentitäten zu aktualisieren.  
     * Die nachfolgenden Schritte veranschaulichen, wie extern nachverfolgte Kreditorentransaktionen aus der externen CSV-Datei importiert werden, um später im Ausgleich des Kreditors für 1099-Formulare (für Steuererklärung US 1099) verwendet zu werden.   
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  
 2. Klicken Sie auf "Berichterstellungskonfigurationen".

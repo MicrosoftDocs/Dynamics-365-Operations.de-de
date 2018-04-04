@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
 ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/07/2018
 
 [!include[banner](../includes/banner.md)]
 
-Mithilfe des externen Katalogs können Sie sicherstellen, dass das Produkt und die Preisangaben, die Sie dann in Dynamics 365 for Finance and Operations, Enterprise Edition, Juli 2017 verarbeiten, auf dem aktuellen Stand sind. Die Anforderung kann anschließend genehmigt und in eine Bestellung konvertiert und ein Auftrag kann an den Kreditor erteilt werden.
+Mithilfe des externen Katalogs können Sie sicherstellen, dass das Produkt und die Preisangaben, die Sie dann in Dynamics 365 for Finance and Operations, Juli 2017 verarbeiten, auf dem aktuellen Stand sind. Die Anforderung kann anschließend genehmigt und in eine Bestellung konvertiert und ein Auftrag kann an den Kreditor erteilt werden.
 
 Wenn der externe Katalog eingerichtet ist und ein Mitarbeiter eine Anforderung vorbereitet, gibt es eine Option zur Weiterleitung an einen externen Standort, den externen Katalog, und zum Einkaufskorb zurückzukehren, der auf der externen Website erstellt wurde. Die Kommunikation basiert auf dem cXML Protokoll und sie muss zwischen Systemen der kaufenden und verkaufenden Organisation eingerichtet werden.
 
@@ -85,7 +85,7 @@ Unten finden Sie eine Beschreibung der Tags, die in der Vorlage enthalten sind:
 
 Ein systeminternes Element sind zusätzliche Informationen, wie beispielsweise Benutzername, die auf dem Benutzer basieren, der ein PunchOut durchführt. Das systeminterne Element wird festgelegt, wenn der PunchOut erfolgt, und es kann in der Anforderungseinstellungsnachricht gesendet werden.
 Ihr Kreditor kann eine Anforderung für den Erhalt eines äußeren Elements in der Einstellungsanforderung haben. In diesem Fall sollten Sie das äußeren Elementen der Liste der äußeren Elemente im Abschnitt **Nachrichtenformat** der Seite **Externer Katalog** hinzufügen. Geben Sie einen Namen für das äußere Element an, das der Lieferant erkennen und einem Wert zuordnen kann. Die Optionen für Werte: Benutzernamen-, Benutzer--E-Mail oder Zufallswert.
-Weitere Informationen zum cXML Protokoll, finden Sie hier: http://cxml.org/
+Weitere Informationen zu den CXML-Protokollen finden Sie unter http://cxml.org/.
 
 ## <a name="post-back-message"></a>Nachricht zurückbuchen
 Die zurückgebuchte Nachricht ist die Meldung, die der Kreditor erhält, wenn der Benutzer sich von der externen Website abmeldet und zu Finance and Operations zurückkehrt. Rückmeldungsnachrichten können nicht konfiguriert werden. Die Meldungen basieren auf den cXML Protokolldefinition. Hierbei gelten die Informationen, die Teil der Rückmeldungsnachricht werden können, die auf einer Bestellanforderungsposition basieren:

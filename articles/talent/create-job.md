@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 962b3084c5340813d1697cab680621350510d4b9
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -91,6 +91,6 @@ Verwalten Sie Stellenaufgaben mithilfe der Seite **Stellenaufgaben**. Geben Sie 
 ## <a name="areas-of-responsibility"></a>Zuständigkeitsbereiche
 Verwenden Sie Zuständigkeitsbereiche, um die Arbeitsrollen, Prozesse und Produkte anzugeben, für die eine Arbeitskraft in einer Position für diesen Einzelvorgang zuständig sein würde. Ein Beispiel für einen Zuständigkeitsbereich für eine Stelle mit dem Titel "Buchhalter" könnte "Finanzberichterstellung für Produkt A" sein. Sie verwalten Zuständigkeitsbereiche mithilfe der Seite **Bereiche der Zuständigkeit**, die Sie mithilfe der Suchfunktion finden. Geben Sie auf der Seite **Zuständigkeitsbereiche** einen Namen und eine kurze Beschreibung der Zuständigkeit ein. Im Feld **Hinweise** können Sie optional zusätzliche Informationen eingeben. Die Hinweise können für einen bestimmten Einzelvorgang aktualisiert werden, ohne die zu Hinweise ändern, die Sie hier eingegeben haben.
 
-
-
+## <a name="steps-for-creating-a-job"></a>Schritte zum Erstellen einer Stelle
+Im Thema [Definieren neuer Stellen](../fin-and-ops/hr/tasks/define-new-jobs.md) finden Sie die detaillierte Prozedur zum Erstellen einer neuen Stelle. 
 

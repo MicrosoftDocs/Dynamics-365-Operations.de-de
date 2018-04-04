@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa11f1775017dd9bada61340b4bed70ea66a4137
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -96,7 +96,7 @@ Das Einkommenskostenelement, das für die Lohngruppe aktiviert ist, wird verwend
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Erstellen von Planungspositionen für vorhandene Positionen
 
-Für die genauste Budgetplanung können Sie Planungspositionen erstellen, indem Sie Details vorhandener Positionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition, verwenden, unabhängig davon, ob die Position gerade ausgefüllt ist oder nicht. 
+Für die genauste Budgetplanung können Sie Planungspositionen erstellen, indem Sie Details vorhandener Positionen in Microsoft Dynamics 365 for Finance and Operations verwenden, unabhängig davon, ob die Position gerade ausgefüllt ist oder nicht. 
 
 Die Funktion **Vorhandene Positionen hinzufügen** zeigt alle Positionen für eine Organisation an. Wenn Sie das Datum **Per Datum** festlegen, können Sie die Liste der Positionen ändern, sodass sie die Positionen enthält, die an einem Datum in der Vergangenheit existierten oder in der Zukunft existieren (beispielsweise Start des nächsten Budgetzyklus). Wählen Sie einen Budgetplanungsprozess und ein Budgetplanszenario, wählen Sie Positionen in der Liste und klicken Sie dann auf **OK**, um Planungspositionen für die ausgewählten Positionen zu erstellen. Beachten Sie, dass Sie nur eine geplante Position für jede vorhandene Position in einem Budgetplanungsprozess und -szenario erstellen können. Sie können jedoch weitere Versionen erstellen, indem Sie verschiedene Budgetplanszenarios zuweisen. 
 

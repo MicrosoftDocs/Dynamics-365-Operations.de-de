@@ -1,6 +1,6 @@
 ---
 title: "Erhalten Sie Support für Finance and Operations und Dynamics Lifecycle Services"
-description: In diesem Artikel wird beschrieben, wie Sie Hilfe mit Microsoft Dynamics 365 for Finance and Operations, Enterprise edition oder Microsoft Dynamics Lifecycle Services (LCS) zugewiesen wird.
+description: "In diesem Artikel wird erklärt, wie Sie Hilfe bei Microsoft Dynamics 365 for Finance and Operations oder Microsoft Dynamics Lifecycle Services (LCS) erhalten."
 author: kfend
 manager: AnnBe
 ms.date: 06/23/2017
@@ -18,14 +18,14 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d5593c54cf139e38da51a0932382a4baecb83898
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a078631d1661d7d61156b9d85c18172abd79827d
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-and-dynamics-lifecycle-services"></a>Erhalten Sie Support für Microsoft Dynamics 365 for Finance and Operations, Enterprise edition und Dynamics Lifecycle Services
+# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-and-dynamics-lifecycle-services"></a>Erhalten Sie Support für Microsoft Dynamics 365 for Finance and Operations und Dynamics Lifecycle Services
 
 [!include[banner](../includes/banner.md)]
 

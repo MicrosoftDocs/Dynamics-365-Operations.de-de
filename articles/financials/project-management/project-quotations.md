@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1212a46cc937b9ccc6ebfa9cc4b89b931f144130
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c7de1d7e57a2a32c339bc576f929958b9de91fcc
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Dieser Artikel stellt das Konzept der Projektangebote vor, die Sie verwenden können, um einem Kunden im ersten Schritt der Projektphase ein attraktives Angebot zu unterbreiten. Ein Projektangebot kann eine Vielzahl von Elementen und Dienstleistungen enthalten, die angeboten werden, beispielsweise grundlegende Kontaktinformationen, spezielle Handelsvereinbarungen und Rabatte sowie eventuelle Steuern und Zuschläge. 
 
-Ein wichtiger Bestandteil der Projektverwaltung ist die Möglichkeit, die Pipeline der Projektangebote und Aufträge zu überwachen, zu prüfen und zu steuern. Verschiedene Tools in Microsoft Dynamics 365 for Fina,nce and Operations, Enterprise Edition, können Sie bei diesen Aufgaben unterstützen. Tools wie etwa korrekte Referenzdatendefinitionen (Angebotstypen, Angebotsgrundlage, Prognose und Wahrscheinlichkeit) helfen Ihnen beim Analysieren der Pipeline. Mit diesen Tools lassen sich die Gründe für den Erfolg bzw. Misserfolg eines Projektangebots kategorisieren und die potenzielle Werten von Angeboten ermitteln. 
+Ein wichtiger Bestandteil der Projektverwaltung ist die Möglichkeit, die Pipeline der Projektangebote und Aufträge zu überwachen, zu prüfen und zu steuern. Verschiedene Tools in Microsoft Dynamics 365 for Fina,nce and Operations können Sie bei diesen Aufgaben unterstützen. Tools wie etwa korrekte Referenzdatendefinitionen (Angebotstypen, Angebotsgrundlage, Prognose und Wahrscheinlichkeit) helfen Ihnen beim Analysieren der Pipeline. Mit diesen Tools lassen sich die Gründe für den Erfolg bzw. Misserfolg eines Projektangebots kategorisieren und die potenzielle Werten von Angeboten ermitteln. 
 
 In einem Projektangebot werden für das Projekt kalkulierte Dienstleistungen, grundlegende Kontaktinformationen, spezielle Handelsvereinbarungen und Rabatte sowie mögliche Steuern und Zuschläge angegeben. Sie können außerdem die Aktivitäten oder Aufgaben für ein Projekt auswählen und eine Hierarchie von Aufgaben und untergeordneten Aufgaben erstellen. Sie können für die einzelnen Aktivitäten Details zu Zeitpunkt und Dauer der Aktivität sowie zu Qualifikationen und Erfahrung der Arbeitskräfte eingeben, die die Aktivität ausführen. 
 

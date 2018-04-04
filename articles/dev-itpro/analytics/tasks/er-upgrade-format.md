@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: db9e66a67f20ca24de3a020c1871cdda0cf2f9be
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cfc68c1d0810cbc296b35c09176dde2c948a50d0
 ms.contentlocale: de-de
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Aktualisieren des Formats durch Verwendung einer neuen Basisversion dieses Formats für elektronische Berichterstellung
@@ -107,7 +107,7 @@ Proseware, Incerhielt Version 1.1 der Konfiguration BACS (Großbritannien, fikti
     * Beachten Sie, dass die erstellte Konfiguration als abgeschlossene Version 1.1.1 gespeichert wird. Das bedeutet, es ist Version 1 des benutzerdefinierten BACS-Formats (Großbritannien, fiktiv benutzerdefiniert), das auf Version 1 des BACS-Formats (Großbritannien, benutzerdefiniert) basiert, das auf Version 1 des Datenmodells "Zahlungen" (vereinfachtes Modell) beruht.  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Testen Sie das benutzerdefinierte Format, um Zahlungsdateien zu generieren
-Schließen Sie die Schritte in der Prozedur „Erstelltes Format zum Generieren von elektronischen Dokumenten für Zahlungen verwenden” in einer parallelen Dynamics 365 for Finance and Operations, Enterprise Edition-Sitzung ab. Wählen Sie das Format BACS (Großbritannien, fiktiv benutzerdefiniert) in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt.  
+Schließen Sie die Schritte in der Prozedur „Erstelltes Format zum Generieren von elektronischen Dokumenten für Zahlungen verwenden” in einer parallelen Dynamics 365 for Finance and Operations ab. Wählen Sie das Format BACS (Großbritannien, fiktiv benutzerdefiniert) in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Aktualisieren Sie die vorhandene landesspezifische Konfiguration
 Litware, Inc muss die Konfiguration "BACS (Großbritannien, fiktiv)" aktualisieren und neue Länderanforderungen für die Verwaltung des Formats des elektronischen Dokuments verwenden. Später wird dies in einer neuen Version dieser Konfiguration eingeschlossen sein, die Dienstleistungsabonnenten angeboten wird, einschließlich Proseware, Inc..  
@@ -203,6 +203,6 @@ Proseware, Inc. ist darüber informiert, dass eine neue Version 1.2 der Konfigur
     * Beachten Sie, dass die erstellte Konfiguration als abgeschlossene Version 1.2.2 gespeichert wird: Version 2 des Basisformats "BACS (Großbritannien, fiktiv benutzerdefiniert)", das auf Version 2 des Basisformats "BACS (Großbritannien, fiktiv)" beruht, das auf Version 1 des Datenmodells "Zahlungen" (vereinfachtes Modell) beruht.  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testen Sie das benutzerdefinierte Format zum Generieren von Zahlungsdateien
-Schließen Sie die Schritte in der Prozedur „Erstelltes Format zum Generieren von elektronischen Dokumenten für Zahlungen verwenden” in einer parallelen Dynamics 365 for Finance and Operations, Enterprise Edition-Sitzung ab. Wählen Sie das erstellte Format "BACS (Großbritannien, fiktiv benutzerdefiniert)" in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem von Proseware, Inc.eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt. Die Datei sollte auch den vor kurzem von LItware, Inc. eingegeben XML Knoten enthalten, der in SWIFT-Bankleitzahl die Übereinstimmung der Landanforderungen darstellt.  
+Schließen Sie die Schritte in der Prozedur „Erstelltes Format zum Generieren von elektronischen Dokumenten für Zahlungen verwenden” in einer parallelen Dynamics 365 for Finance and Operations Sitzung ab. Wählen Sie das erstellte Format "BACS (Großbritannien, fiktiv benutzerdefiniert)" in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem von Proseware, Inc.eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt. Die Datei sollte auch den vor kurzem von LItware, Inc. eingegeben XML Knoten enthalten, der in SWIFT-Bankleitzahl die Übereinstimmung der Landanforderungen darstellt.  
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Startseite für die Organisationsverwaltung"
-description: "Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in Ihrer Organisation unterstützen."
+description: "Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von Microsoft Dynamics 365 Finance and Operations in Ihrer Organisation unterstützen."
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f1cff2388b02ff6dfd52a39b7f3ea90f10807096
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von Microsoft Dynamics for 365 Finance and Operations, Enterprise edition in Ihrer Organisation unterstützen. Dieser Inhalt hilft, das System so zu konfigurieren, dass es für Ihre Organisation und die Geschäfte effektiv läuft.
+In diesem Thema wird auf Inhalt verwiesen, mit dessen Hilfe Poweruser und Administratoren Microsoft Dynamics 365 for Finance and Operations konfigurieren können. Dieser Inhalt hilft, das System so zu konfigurieren, dass es für Ihre Organisation und die Geschäfte effektiv läuft.
 
 Ein Großteil des Inhalts, der hier aufgeführt wird, gilt für die Funktionen im Modul **Verwaltung ud**. Jedoch gibt es einige Aufgaben wie die Erstellung und Verwendung einer Datensatzvorlage, die in einem beliebigen Modul ausgeführt werden, um Ihre Organisation zu unterstützen, problemlos zu laufen. 
 

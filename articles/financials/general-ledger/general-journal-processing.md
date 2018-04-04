@@ -1,6 +1,6 @@
 ---
 title: Allgemeine Erfassungsverarbeitung
-description: "Dieser Artikel beschreibt die Funktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edtion, mit denen die allgemeine Erfassung einfacher wird, und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden."
+description: "Dieser Artikel beschreibt Fähigkeiten in Microsoft Dynamics 365 for Finance and Operations, mit denen die allgemeine Erfassungsverarbeitung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die interne Steuerung nicht beeinträchtigt werden."
 author: twheeloc
 manager: AnnBe
 ms.date: 08/01/2017
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 76386f7ab8033075f9db4cadc697f3a2a997163e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: eb46613f805999753c2ab73ffb91a6fdae04c68e
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel beschreibt die Funktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edtion, mit denen die allgemeine Erfassung einfacher wird, und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden.  
+Dieser Artikel beschreibt Fähigkeiten in Microsoft Dynamics 365 for Finance and Operations, mit denen die allgemeine Erfassungsverarbeitung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die interne Steuerung nicht beeinträchtigt werden.  
 
 Journale
 

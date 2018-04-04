@@ -1,6 +1,6 @@
 ---
 title: Spesenverwaltungsworkflow
-description: "In diesem Thema wird erläutert, wie das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, verwenden können, um eines Prüfvorgangs für Spesenabrechnungen in der Spesenverwaltung zu verarbeiten."
+description: "In diesem Thema wird erläutert, wie Sie das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations verwenden können, um einen Prüfvorgang für Spesenabrechnungen in der Spesenverwaltung einzurichten."
 author: saraschi2
 manager: AnnBe
 ms.date: 09/13/2017
@@ -19,10 +19,10 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d60d2f462a1fd27d4655e68aab7f96fb28a34b77
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6ee607f723659a5b6ecd655ba4fdfca35a4c582d
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, verwenden kann, um einen Prüfvorgang für Spesenabrechnungen in der Spesenverwaltung zu verarbeiten. Sie können einen Workflow einrichten, um zu bestimmen, wer Spesenabrechnungen unter den folgenden Kriterien genehmigt werden:
+Sie können das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations verwenden, um einen Überprüfungsprozess für Spesenabrechnungen in der Spesenverwaltung einzurichten. Sie können einen Workflow einrichten, um zu bestimmen, wer Spesenabrechnungen unter den folgenden Kriterien genehmigt werden:
 
 - Die Mitarbeiterunterstellungshierarchie und die vordefinierten Genehmigungslimits
 - Genehmigung in mehreren Ebenen, die Zwischengenehmiger und einen letzten Genehmiger unterstützt

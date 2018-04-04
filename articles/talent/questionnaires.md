@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
 ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/07/2018
 
 Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu detaillierteren Informationen. Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden. Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren. 
 
-Sie können einen Fragebogen den spezifischen Anforderungen anpassen, indem Sie eine Kombination der verschiedenen Funktionen verwenden, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, verfügbar sind. Nachfolgend finden Sie einige Beispiele dazu, wie Sie Fragebögen verwenden können:
+Sie können einen Fragebogen den spezifischen Anforderungen anpassen, indem Sie eine Kombination der verschiedenen Funktionen verwenden, die in Microsoft Dynamics 365 for Finance and Operations verfügbar sind. Nachfolgend finden Sie einige Beispiele dazu, wie Sie Fragebögen verwenden können:
 
 -   Testen der beruflichen Fähigkeiten von Mitarbeitern und Bewerbern.
 -   Auswerten, ob Kursteilnehmer das Kursmaterial erlernt haben.

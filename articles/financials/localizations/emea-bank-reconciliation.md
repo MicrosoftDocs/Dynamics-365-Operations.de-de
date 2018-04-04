@@ -18,10 +18,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: db48eec38185692f5d3f67503feba64bcdd71035
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3dc0b968fdf217554b350a152195a4b3d235fdf0
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 Dieses Thema bietet einen Überblick der Funktionen, die Sie verwenden können, um Zahlungsinformationen von den Banken in Formate abzustimmen, die von den europäischer Länder verwendet werden.
 
-In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition können Sie Transaktionen von Banken importieren und diese Buchungen mit bestehenden Buchungen ausgleichen. In Europa können Sie dies für die folgenden Szenarien tun:
+In Microsoft Dynamics 365 for Finance and Operations können Sie Transaktionen von Banken importieren und diese Buchungen mit bestehenden Buchungen ausgleichen. In Europa können Sie dies für die folgenden Szenarien tun:
 
 -   Importieren von Bankauszügen
 -   Importieren von Zahlungen

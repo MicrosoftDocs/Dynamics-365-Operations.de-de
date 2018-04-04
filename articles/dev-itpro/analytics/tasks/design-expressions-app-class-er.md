@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: b0a1dba5afbd7beba45149340f637223f6ecedcf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Designausdrücke, um die Anwendungsklassenmethoden (ER) aufzurufen
@@ -34,7 +34,7 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte in der Prozed
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
-    * Nehmen wir an, Sie entwerfen einen Prozess für die Analyse eingehender Bankauszüge für eine Anwendungsdatenaktualisierung. Sie erhalten die eingehenden Bankauszüge als TXT-Dateien, die IBAN-Codes enthalten. Als Teil des Bankauszugs-Importprozesses müssen Sie die Korrektheit dieser IBAN-Codes mithilfe der Logik überprüfen, die bereits in Dynamics 365 for Finance and Operations, Enterprise Edition, verfügbar ist.   
+    * Nehmen wir an, Sie entwerfen einen Prozess für die Analyse eingehender Bankauszüge für eine Anwendungsdatenaktualisierung. Sie erhalten die eingehenden Bankauszüge als TXT-Dateien, die IBAN-Codes enthalten. Als Teil des Bankauszugs-Importprozesses müssen Sie die Korrektheit dieser IBAN-Codes mithilfe der Logik überprüfen, die bereits in Dynamics 365 for Finance and Operations verfügbar ist.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Neue EB-Modellkonfiguration importieren
 1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.

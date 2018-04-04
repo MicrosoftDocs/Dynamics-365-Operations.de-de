@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2c0a00b6a1956f1f22a50951308c434c3f0eefc4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: baefad4efd51661c236459493b7f02747593bbab
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -73,7 +73,7 @@ Nachfolgend sind einige Beispiele von typischen statistischen Dimensionsmitglied
 
 ## <a name="statistical-measure-provider-template"></a>Anbietervorlagen für statistische Maßnahmen
 
-Statistische Kennzahlen können aus mehreren Quellen stammen. Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition ist eine hervorragende Quelle, um  statistischen Kennzahlen zu extrahieren. Sie können eine Anbietervorlage verwenden, statistische Kennzahl der statistischen Kennzahlen leicht zu konfigurieren, die zum Extrahieren möchten.
+Statistische Kennzahlen können aus mehreren Quellen stammen. Microsoft Dynamics 365 for Finance and Operations ist eine hervorragende Quelle, um statistische Kennzahlen zu extrahieren. Sie können eine Anbietervorlage verwenden, statistische Kennzahl der statistischen Kennzahlen leicht zu konfigurieren, die zum Extrahieren möchten.
 
 Die Definition einer statistischen Anbietervorlage ist generisch und kann in verschiedenen statistischen Dimensionsmitgliedern wiederverwendet werden.
 
@@ -132,13 +132,13 @@ Bevor Sie statistische Kennzahlen in der Kostenrechnung verwenden können, müss
 > [!NOTE]
 > In diesem Beispiel wird eine Beziehung nur für die **Tatsächliche Version** erstellt.
 
-Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verwalten** \> **Statistische Kennzahlen**, um die Beziehung einzurichten. Für dieses Szenario wählen Sie **Dynamics 365 für Finanzen und Arbeitsgänge, Enterprise Edition – Kennzahlen statistischen** aus Datenkonnektor, da diese Daten aus der erhaltenen Finanzierung und Arbeitsgängen extrahiert werden sollen.
+Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verwalten** \> **Statistische Kennzahlen**, um die Beziehung einzurichten. Für dieses Szenario wählen Sie **Dynamics 365 for Finance and Operations – statistische Kennzahlen** aus Datenkonnektor, da diese Daten aus Finance and Operations extrahiert werden sollen.
 
 **Datenquelle**
 
 | Name        | Datenkonnektor                                                                     | Statistisches Dimensionselement |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| FTEs D365FO | Auf Dynamics 365 for Finance and Operations, Enterprise-Editionsinstanzen zugreifen | FTEs                         |
+| FTEs D365FO | Dynamics 365 for Finance and Operations – Statistische Massnahmen | FTEs                         |
 
 **Daten-Konfigurationsanbieter**
 
@@ -220,13 +220,13 @@ Bevor Sie statistische Kennzahlen in der Kostenrechnung verwenden können, müss
 > [!NOTE]
 > In diesem Beispiel wird eine Beziehung nur für die **Tatsächliche Version** erstellt.
 
-Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verwalten** \> **Statistische Kennzahlen**, um die Beziehung einzurichten. Für dieses Szenario wählen Sie **Dynamics 365 für Finanzen und Arbeitsgänge, Enterprise Edition – Kennzahlen statistischen** aus Datenkonnektor, da diese Daten aus der erhaltenen Finanzierung und Arbeitsgängen extrahiert werden sollen.
+Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verwalten** \> **Statistische Kennzahlen**, um die Beziehung einzurichten. Für dieses Szenario wählen Sie **Dynamics 365 for Finance and Operations – statistische Kennzahlen** aus Datenkonnektor, da diese Daten aus Finance and Operations extrahiert werden sollen.
 
 **Datenquelle**
 
 | Name           | Datenkonnektor                                                                     | Statistisches Dimensionselement |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Pack CC D365FO | Auf Dynamics 365 for Finance and Operations, Enterprise-Editionsinstanzen zugreifen | CC Pack                      |
+| Pack CC D365FO | Dynamics 365 for Finance and Operations – Statistische Massnahmen | CC Pack                      |
 
 Das System erkennt, dass ProdRouteTrans eine Tabelle ist, bei der jeder Datensatz zu einer juristischen Person einem separaten Datensatz gehört. Aus diesem Grund werden Sie gefragt, die juristische Person auszuwählen, für die die Buchungen importiert werden soll.
 

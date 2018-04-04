@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: 9a36b3e7a8e496632ca7041018abe8176a2e4f25
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
 ms.contentlocale: de-de
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ In diesem Artikel wird beschrieben, wie positiven Lohndateien eingerichtet und p
 Sie können positiven Lohn verwenden, um eine elektronische Liste mit Schecks zu generieren, die für die Bank bereitgestellt wird. Wenn der Scheck der Bank präsentiert wird, vergleicht die Bank den Scheck mit der Liste der Schecks. Wenn der Originalscheck mit einem Scheck in der Liste übereinstimmt, löscht die Bank den Scheck. Wenn der Scheck mit keinem Scheck iin der Liste übereinstimmt, hält die Bank den Scheck zur Prüfung zurück.
 
 ## <a name="security-for-positive-pay-files"></a>Sicherheit für Dateien für positive Zahlungen
-Positive Lohndateien können vertrauliche Informationen zu Zahlungsempfänger und Scheckbeträgen enthalten. Daher stellen Sie sicher, dass Sie entsprechende Sicherheitspraktiken ab dem Zeitpunkt verwenden, an dem die Dateien generiert werden, bis sie von der Bank empfangen werden. Positive Lohndateien werden an den Speicherort heruntergeladen, der von Ihrem Webbrowser angegeben wurde. Da positive Lohndateien vertrauliche Informationen enthalten können, ist es wichtig, dass nur autorisierte Benutzer diese Informationen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, generieren und anzeigen können. Nutzen Sie die folgende Tabelle, um die Rechte zu bestimmen, die erforderlich sind.
+Positive Lohndateien können vertrauliche Informationen zu Zahlungsempfänger und Scheckbeträgen enthalten. Daher stellen Sie sicher, dass Sie entsprechende Sicherheitspraktiken ab dem Zeitpunkt verwenden, an dem die Dateien generiert werden, bis sie von der Bank empfangen werden. Positive Lohndateien werden an den Speicherort heruntergeladen, der von Ihrem Webbrowser angegeben wurde. Da positive Lohndateien vertrauliche Informationen enthalten können, ist es wichtig, dass nur autorisierte Benutzer diese Informationen in Microsoft Dynamics 365 for Finance and Operations generieren und anzeigen können. Nutzen Sie die folgende Tabelle, um die Rechte zu bestimmen, die erforderlich sind.
 
 <table>
 <colgroup>

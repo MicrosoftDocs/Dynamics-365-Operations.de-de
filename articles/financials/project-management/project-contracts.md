@@ -1,6 +1,6 @@
 ---
 title: "Projektverträge"
-description: "Dieses Thema beschreibt Beispiele für Projektverträge, die Sie für Projekte und Finanzierungsquellen erstellen können, und zeigt, wie Sie in Microsoft Dynamics 365 for Finance und Operations Enterprise Edition Verträge verwalten und Rechnungen für Projektdebitoren erstellen können."
+description: "Dieses Thema bietet Beispiele für Projektverträge, die Sie für verschiedene Arten von Projekten und Finanzierungsquellen erstellen können, und wie Sie in Microsoft Dynamics 365 for Finance and Operations Verträge verwalten und Rechnungen für Projektdebitoren erstellen können."
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: c8328bd2d93bbe763e629248edc1b7b4576005ae
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieses Thema beschreibt Beispiele für Projektverträge, die Sie für Projekte und Finanzierungsquellen erstellen können, und zeigt, wie Sie in Microsoft Dynamics 365 for Finance und Operations Enterprise Edition Verträge verwalten und Rechnungen für Projektdebitoren erstellen können.
+Dieser Artikel bietet Beispiele für Projektverträge, die Sie für verschieden Arten von Projekten und Finanzierungsquellen erstellen können, und zeigt, wie Sie in Microsoft Dynamics 365 for Finance and Operations Verträge verwalten und Rechnungen für Projektdebitoren erstellen können.
 
 Der für einen Projektvertrag erstellte Projekttyp definiert die Methode, nach der das Projekt den Debitoren in Rechnung gestellt wird. Ein Projektvertrag und das zugehörige Projekt können geändert werden, der Projekttyp jedoch nicht. 
 

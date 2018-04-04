@@ -20,10 +20,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d933910faa726ea279a3371f6c8a3eca9bc9dfee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -56,7 +56,7 @@ Bedarfswiederbeschaffung wird für Aufträge, Umlagerungsaufträge, Produktionsa
 ## <a name="minmax-replenishment"></a>Min./Max.-Auffüllung
 In der Min./Max.-Auffüllung wird der Bestand so aufgefüllt, dass er zwischen den minimalen und maximalen Grenzen liegt, die eingerichtet wurden. In der Regel erfolgt dieser Vorgang einmal täglich, um sicherzustellen, dass alle Entnahmeorte maximal gefüllt sind, ehe die Entnahme beginnt. 
 
-Die Mindest- und Höchstbeträge sind in einer Wiederbeschaffungsvorlage festgelegt. Viele andere Einstellungen in der Vorlage ähneln den Einstellungen in Vorlagen, die in der Wellenbedarfsbeschaffung verwendeten werden. Die Vorlage sollte eine Position für jeden Artikel und Lagerplatz enthalten. Wenn Sie die Wiederbeschaffung über einen Stapelverarbeitungsauftrag ausführen, bewertet Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, ob die Wiederbeschaffung in der Reihenfolge erforderlich ist, in der die Positionen zusammengefasst sind. 
+Die Mindest- und Höchstbeträge sind in einer Wiederbeschaffungsvorlage festgelegt. Viele andere Einstellungen in der Vorlage ähneln den Einstellungen in Vorlagen, die in der Wellenbedarfsbeschaffung verwendeten werden. Die Vorlage sollte eine Position für jeden Artikel und Lagerplatz enthalten. Wenn Sie die Wiederbeschaffung über einen Batchauftrag ausführen, bewertet Microsoft Dynamics 365 for Finance and Operations, ob die Wiederbeschaffung erforderlich ist, indem die Reihenfolge verwendet wird, in der die Positionen angeordnet sind. 
 
 Beachten Sie, dass die Min./Max.-Auffüllungsstrategie keine leere Stelle auffüllen kann, bis der Lagerplatz als fester Lagerort für den Artikel festgelegt ist. Wenn der Lagerplatz, der aufgefüllt werden muss, kein fester Lagerort ist, kann das System nicht ermitteln, welcher Artikel aufgefüllt werden soll. Daher wird zumindest ein gewisser Lagerbestand benötigt, bevor die Wiederbeschaffung stattfinden kann.
 

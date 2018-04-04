@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 274a5e696bfde4f5e27bc186fadbab69f5fc655d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3e9f00fdc32feda0a62f71a92e503a677dce35cc
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -35,7 +35,7 @@ Mithilfe der Seite **Finanzdimensionen** können Sie Finanzdimensionen erstellen
 
 Nachdem Sie die Finanzdimensionen erstellt haben, weisen Sie jeder Finanzdimension auf der Seite **Finanzdimensionswerte** weitere Eigenschaften zu. 
 
-Sie können Finanzdimensionen verwenden, um juristische Personen darzustellen. Sie müssen in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, keine juristischen Personen erstellen. Allerdings wurden Finanzdimensionen nicht für betriebliche oder geschäftliche Anforderungen von juristischen Personen entworfen. Die Interunit-Buchhaltungsfunktionen in Finance and Operations sind nur für die Buchhaltungseinträge vorgesehen, die durch die einzelnen Buchungen erstellt werden. 
+Sie können Finanzdimensionen verwenden, um juristische Personen darzustellen. Sie müssen in Microsoft Dynamics 365 for Finance and Operations keine juristischen Personen erstellen. Allerdings wurden Finanzdimensionen nicht für betriebliche oder geschäftliche Anforderungen von juristischen Personen entworfen. Die Interunit-Buchhaltungsfunktionen in Finance and Operations sind nur für die Buchhaltungseinträge vorgesehen, die durch die einzelnen Buchungen erstellt werden. 
 
 Bevor Sie Finanzdimensionen als juristische Personen einrichten, prüfen Sie Ihre Geschäftsprozesse in den folgenden Bereichen, um zu bestimmen, ob diese Einstellung für Ihre Organisation sinnvoll ist:
 

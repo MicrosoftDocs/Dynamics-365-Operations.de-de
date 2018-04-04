@@ -19,10 +19,10 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 93438840123f02dd36927e044ff5ddbe60a76176
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b48accdc7aaaa65b4c620777546b20056038905b
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Dieser Artikel erklärt, wie Sie Abstimmungsregeln und Abstimmungsregelsätze für den Bankabstimmungsprozess einrichten. Abstimmungsübereinstimmungsregeln sind eine Gruppe von Kriterien, die verwendet werden, um Bankauszugspositionen und Bankdokumentpositionen während des Abstimmungsvorgangs zu filtern.
 
-Sie können Abgleichsregeln für die Abstimmung und Abgleichsregelsatz für Bankabstimmung einrichten, um den Bankabstimmungsprozess zu unterstützen. Eine Abgleichsregel für Bankabstimmung ist eine Gruppe von Kriterien, die verwendet wird, um Bankauszugspositionen und Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition-Banktransaktionspositionen während des Abstimmungsvorgangs zu filtern. Verwenden Sie die Seite **Abgleichsregeln für die Abstimmung**, um die Abgleichsregeln für die Abstimmung einzurichten. Sie können mehrere Abgleichsregeln einrichten und dann auf der Seite **Abgleichsregelsätze für die Abstimmung** eine Abgleichsregelsatz für Bankabstimmung erstellen. 
+Sie können Abgleichsregeln für die Abstimmung und Abgleichsregelsatz für Bankabstimmung einrichten, um den Bankabstimmungsprozess zu unterstützen. Eine Abstimmmungsregel ist eine Gruppe von Kriterien, die verwendet werden, um Bankauszugspositionen und Microsoft Dynamics 365 for Finance and Operations  Banktransaktionspositionen während des Abstimmungsvorgangs zu filtern. Verwenden Sie die Seite **Abgleichsregeln für die Abstimmung**, um die Abgleichsregeln für die Abstimmung einzurichten. Sie können mehrere Abgleichsregeln einrichten und dann auf der Seite **Abgleichsregelsätze für die Abstimmung** eine Abgleichsregelsatz für Bankabstimmung erstellen. 
 
 > [!NOTE] 
 > Abgleichsregeln für Bankabstimmung werden verwendet, wenn Sie einen elektronischen Bankauszug mithilfe der Vorbankabstimmung abstimmen. 

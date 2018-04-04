@@ -17,10 +17,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 008f1acec62c1fc6d423dd7629d3f92f758be5e8
+ms.sourcegitcommit: 9c974041c614c67335bb40f4f461bc1999bf3eb0
+ms.openlocfilehash: 476ae035674c0b9c3af18db28668442247b5e310
 ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -30,10 +30,14 @@ ms.lasthandoff: 03/07/2018
 
 Diese Seite weist auf Ressourcen hin, die Ihnen dabei helfen, alles über die neuen Funktionen und Änderungen in den aktuellsten Versionen von Microsoft Dynamics 365 for Retail zu erlernen.
 
+[!include[release notes](../includes/release-notes.md)]
+ 
+
 ## <a name="releases-of-dynamics-365-for-retail"></a>Versionen von Dynamics 365 for Retail
 
 |Freigabe | Erstellungsnummer | Verfügbarkeit | Weitere Informationen |
 |--------|--------------|--------------|------------|
+|Dynamics 365 for Retail 7.3.2 | 7.3.21971.64040 | 2018. März | 1. Wechseln Sie zu [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Klicken Sie auf die Registerkarte **Neuheiten**.<br><br>3. Klicken Sie auf das Kontrollkästchen **Dynamics 365 for Retail**.<br><br>4. Suchen Sie Funktionen für **Freigegeben mit Dynamics 365 for Retail 7.3.2**. |
 |Dynamics 365 for Retail 7.3.1 | 7.3.21971.64032 | 2018. März | 1. Wechseln Sie zu [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Klicken Sie auf die Registerkarte **Neuheiten**.<br><br>3. Klicken Sie auf das Kontrollkästchen **Dynamics 365 for Retail**.<br><br>4. Suchen Sie Funktionen für **Freigegeben mit Dynamics 365 for Retail 7.3.1**. |
 |Dynamics 365 for Retail 7.3 | 7.3.21971.64028 | 2018. Februar | 1. Wechseln Sie zu [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Klicken Sie auf die Registerkarte **Neuheiten**.<br><br>3. Klicken Sie auf das Kontrollkästchen **Dynamics 365 for Retail**.<br><br>4. Suchen Sie Funktionen für **Freigegeben mit Dynamics 365 for Retail 7.3**. |
 |Anwendungsupdate 5 | 7.2.21792.64093 | 2018. Februar | 1. Wechseln Sie zu [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Klicken Sie auf die Registerkarte **Neuheiten**.<br><br>3. Klicken Sie auf das Kontrollkästchen **Dynamics 365 for Retail**.<br><br>4. Suchen Sie nach Funktionen, **Veröffentlicht mit Anwendungsupdate 5**. |

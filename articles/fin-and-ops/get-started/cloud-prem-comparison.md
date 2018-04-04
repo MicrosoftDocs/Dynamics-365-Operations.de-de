@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
-ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cd267f6e5623bd83bfbd21a49a72dd216259167a
 ms.contentlocale: de-de
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 03/05/2018
 
 In diesem Thema wird erkennbar, ob jede Funktion in diesen Produkten verfügbar ist:
 
-+ Dynamics 365 for Finance and Operations, Enterprise editions (cloud)
-+ Dynamics 365 for Finance and Operations, Enterprise edition (lokal)
++ Dynamics 365 for Finance and Operations (Cloud)
++ Probleme bei Dynamics 365 for Finance and Operations (lokal) behandeln
 
 Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support wird für die Funktion als Ganzes aufgeführt. Wo bestimmte Funktionen im Bereich gesamthaft unterschieden werden, werden die Funktionen in einer separaten Position in der Funktionsspalte aufgeführt.
 

@@ -1,6 +1,6 @@
 ---
 title: Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
-description: "Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess."
+description: "Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess."
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b6c1b89256ab4b258f2901e47009a0eed573bd53
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in der Enterprise-Edition von Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess.  
+Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess.  
 
 <a name="import-an-electronic-bank-statement"></a>Import eines elektronischen Bankauszugs
 -----------------------------------
