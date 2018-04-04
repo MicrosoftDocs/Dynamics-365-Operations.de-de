@@ -1,2 +1,2 @@
 > [!NOTE]
-> Dieses Thema gilt für Dynamics 365 for Finance and Operations (Enterprise-Edition) und Dynamics 365 for Retail. 
+> Dieses Thema gilt sowohl für Dynamics 365 for Finance and Operations als auch für Dynamics 365 for Retail. 
