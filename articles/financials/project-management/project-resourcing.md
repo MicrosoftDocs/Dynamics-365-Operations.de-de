@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4dbcfd31030db8e40f89f86a76cdc666ac433749
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 Dieser Artikel enthält Informationen zu Projektressourcen.
 
-Eine Herausforderung für Projektmanager und Ressourcen-Manager während der Projektplanungsphase ist die Ressourcenzuordnung bei der sie die richtige Ressource für die Arbeit an einem Projekt festlegen und reservieren müssen. In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, können Sie mit Ressourcenfunktionalitäten für Projekte Rollen definieren, die als temporäre Ressourcen behandelt werden, die für einen bestimmten Auftrag oder Auftragsteils reserviert werden können. Mit diesem Ressourcentyp können Projektmanager und Ressourcen-Manager die folgenden Aufgaben abschließen:
+Eine Herausforderung für Projektmanager und Ressourcen-Manager während der Projektplanungsphase ist die Ressourcenzuordnung bei der sie die richtige Ressource für die Arbeit an einem Projekt festlegen und reservieren müssen. In Microsoft Dynamics 365 for Finance and Operations können Sie mit Ressourcenfunktionalitäten für Projekte Rollen definieren, die als temporäre Ressourcen behandelt werden, die für ein bestimmtes Arbeitspaket oder Teil des Projekts reserviert werden können. Mit diesem Ressourcentyp können Projektmanager und Ressourcen-Manager die folgenden Aufgaben abschließen:
 
 - Definieren einer Rolle, die die erforderlichen Kompetenzen hat, um den Ressourcen zu entsprechen.
 - Verwenden von Rollen, um einen ersten Auftragsplan zu definieren, der auf den reservierten Ressourcen basiert.
@@ -196,7 +196,7 @@ Der Projektmanager kann eine Rolle auf der Seite auswählen. Wenn es eine verfü
 
 [![Projektteamliste mit Rollen und aktuellen Ressourcen](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
 
-Der Projektmanager hat verschiedene Optionen für die Buchung einer Ressource für ein Projekt wie **Restkapazität****Restkapazität** **Volle Kapazität** und **spezifische Stunden**. Diese Buchungsoptionen können jederzeit storniert werden, wenn sich Ressourcenzuweisung ändern. Es werden gibt zwei Typen von Buchungen unterstützt:
+Der Projektmanager hat verschiedene Optionen für die Buchung einer Ressource für ein Projekt wie **Restkapazität** **Restkapazität** **Volle Kapazität** und **spezifische Stunden**. Diese Buchungsoptionen können jederzeit storniert werden, wenn sich Ressourcenzuweisung ändern. Es werden gibt zwei Typen von Buchungen unterstützt:
 
 - **Verbindlich buchen** - Die Ressourcenreservierung wurde genehmigt und bestätigt, um an dem Auftrag in dem festgelegten Zeitraum zu arbeiten.
 - **Nicht verbindlich buchen** - Die Ressourcenreservierung wurde eingeplant, um an dem Auftrag in dem festgelegten Zeitraum zu arbeiten.

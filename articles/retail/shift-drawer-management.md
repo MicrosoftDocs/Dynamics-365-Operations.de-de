@@ -3,7 +3,7 @@ title: Schicht- und Kassenladenverwaltung
 description: "Dieser Artikel erläutert die Einrichtung der zwei verschiedenen Schichttypen für POS: gemeinsam und eigenständig. Gemeinsame Schichten können von mehreren Benutzern an mehreren Orten verwendet werden. Eigenständige Schichten können nur von einer Arbeitskraft gleichzeitig verwendet werden."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b8e12f3f4c2f8f5a596c8994f2a4571d8a907062
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: c1483d3240d266845cea7789b70c038cb98fdfcc
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -99,7 +99,60 @@ Eine gemeinsame Schicht wird in einer Umgebung genutzt, in der mehrere Kassierer
 9.  Verwenden den Vorgang **Kassensturz**, um den Gesamtbetrag aus allen Kassenladen der gemeinsamen Schicht anzugeben.
 10. Verwenden den Vorgang **Schicht schließen**, um die gemeinsame Schicht zu schließen.
 
+## <a name="shift-operations"></a>Schichtvorgänge
+Verschiedene Aktivitäten können ausgeführt werden, um den Status einer Schicht zu ändern oder um den Geldbetrag in der Schublade zu erhöhen oder zu verringern. Im Abschnitt unten werden dieses Schichtvorgänge für Dynamics 365 for Retail Modern POS und Cloud POS beschrieben.
 
+**Offene Schichten**
 
+POS erfordert, dass ein Benutzer keine aktive, offene Schicht hat, um alle möglichen Vorgänge auszuführen, die zu wertmäßiger Buchung wie Verkauf, Rücklieferung oder Kundenauftrag führen würde.  
 
+Beim Anmelden bei POS prüft das System zuerst, um zu sehen, ob beim Benutzer eine aktive Schicht in der aktuellen Erfassung vefügbar ist. Falls nicht, kann der Benutzer dann wählen, um eine neue Schicht zu öffnen, setzt eine vorhandene oder Nachtschicht fort oder meldet sich beim "Nicht-Konfromen" Modus an, abhängig von der Systemkonfiguration und ihren Berechtigungen.
+
+**Ausgangsbetrag deklarieren**
+
+Dieser Vorgang ist häufig die erste Aktivität, die bei einer neu geöffneten Schicht vorgenommen wird. Benutzer geben den Anfangsbarbetrag in der Schublade für die Schicht an. Dies ist wichtig, da die Über-/Fehlberechnung, die beim Abschluss einer Schicht erfolgt, diesen Betrag berücksichtigt.
+
+**Mittelzugang**
+
+Angebotsentfernungen sind Nichtverkaufstransaktionen, die in einer aktiven Schicht ausgeführt werden, um die Menge des Bargelds in der Schublade zu reduzieren. Ein allgemeines Beispiel für einen Float-Eintrag wäre es, zusätzliche Änderung dem Wechselaussteller hinzufügen, wenn die Ausführung gering ist.
+
+**Zahlungsmittel entfernen**
+
+Angebotsentfernungen sind Nichtverkaufstransaktionen, die in einer aktiven Schicht ausgeführt werden, um die Menge des Bargelds in der Schublade zu reduzieren. Dies wird am häufigsten in Verbindung mit einem Mittelzugang bei einer anderen Schicht verwendet. Beispielsweise wird Register 1 gering auf Änderung ausgeführt, so führt der Benutzer 2 im Register ein sanftes Entfernen aus, um den Betrag zu reduzieren. Der Benutzer in der Erfassung 1 würde dann einen Mittelzugang ausführen, um den Betrag zu erhöhen.
+
+**Schicht aussetzen**
+
+Benutzer können ihre aktive Schicht unterbrechen, um die aktuelle Erfassung für einen anderen Benutzer freizugeben oder um ihre Schicht in eine andere Erfassung zu verschieben (dies wird oft als „gleitende Kassenlade” bezeichnet). 
+
+Das Unterbrechen der Schicht verhindert, dass irgendwelche neuen Transaktionen oder Änderungen an der Schicht vorgenommen werden, bis sie wieder fortgesetzt wird.
+
+**Schicht fortsetzen**
+
+Dieser Vorgang ermöglicht es einem Benutzer, eine zuvor unterbrochene Schicht in einer Erfassung wieder aufzunehmen, die noch keine aktive Schicht hat.
+
+**Kassensturz**
+
+Der Kassensturz ist die Aktivität, die der Benutzer vornimmt, um den Betrag des gesamten Geldes anzugeben, das sich aktuell in der Schublade befindet, meistens vor Abschluss der Schicht. Dies ist der Wert, der gegenüber der erwarteten Schicht verglichen wird, um den Über-/Fehlbetrag zu berechnen.
+
+**Ablage in Tresor**
+
+Ablagen im Tresor können jederzeit in einer aktiven Schicht ausgeführt werden. Durch diesen Vorgang wird Geld aus der Schublade entfernt, sodass es an einen sichereren Ort übertragen werden kann, wie beispielsweise einen Tresor im Hinterzimmer. Der Gesamtbetrag, der für Ablagen im Tresor erfasst ist, ist immer noch in den Schichtsummen enthalten. Er muss jedoch nicht als Teil des Kassensturzes gezählt werden.
+
+**Bankeinzahlung**
+
+Wie Ablagen in Tresor, werden auch Bankeinzahlungen auf aktiven Schichten ausgeführt. Durch diesen Vorgang wird Geld aus der Schicht entfernt, um es für die Bankeinzahlung vorzubereiten.
+
+**Schicht blind schließen**
+
+Eine blinde geschlossene Schicht ist eine Schicht, die nicht mehr aktiv ist, jedoch noch nicht vollständig geschlossen wurde. Geschlossene Schichten können nicht als eine Schicht unterbrochen werden, aber Verfahren wie Anfangsbeträge und Angebote können zu einem späteren Zeitpunkt oder von einem anderen Register erfasst werden.
+
+Geschlossene Schichten werden häufig verwendet, um ein Register für einen neuen Benutzer oder eine Schicht freizugeben, ohne diese Schicht zu zählen, abzustimmen und vollständig beenden zu müssen. 
+
+**Schicht schließen**
+
+Dieser Vorgang berechnet Schichtsummen, Über-/Fehlbeträge und schließt dann eine aktive oder blinde geschlossene Schicht ab. Abgeschlossene Schichten können nicht fortgesetzt oder geändert werden.  
+
+**Schichten verwalten**
+
+Dieser Vorgang ermöglicht es Benutzern, alle aktiven, unterbrochenen und blinden geschlossenen Schichten für die Filiale anzuzeigen. Abhängig von den Berechtigungen können Benutzern die endgültig Abschlussprozedur wie Deklaration und Schichten beenden selber vornehmen. Dieser Arbeitsgang ermöglicht es auch Benutzern, ungültige Schichten anzuzeigen und zu löschen, und zwar im seltenen Fall, in dem eine Schicht in einem schlechten Zustand zurückbleibt, nachdem zwischen Offline- und Onlinemodi umgeschaltet wurde. Diese ungültigen Schichten enthalten keine finanziellen Informationen oder Buchungsdaten, die für die Abstimmung erforderlich sind. 
 

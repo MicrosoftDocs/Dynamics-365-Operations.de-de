@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 96df6bbfe5c9e158b616230c2b061762a5edda08
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 156688b705337331e083ebc19fded57b028acb67
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -62,7 +62,7 @@ Die Excel-Vorlage enthält alle Elemente aus dem Budgetplandokumentlayout, in de
 [![Beispiel](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> Um mögliche Probleme beim Anzeigen und Bearbeiten von Budgetplandaten mithilfe von Excel zu vermeiden, sollte der Benutzer in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations und in Microsoft Dynamics Office Add-in Data Connector angemeldet sein.
+> Um mögliche Probleme beim Anzeigen und Bearbeiten von Budgetplandaten mithilfe von Excel zu vermeiden, sollte derselbe Benutzer sowohl in Microsoft Dynamics 365 for Finance and Operations als auch im Datenkonnektor des Microsoft Dynamics Office-Add-In angemeldet sein.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Der Budgetplandokumentvorlage eine Kopfzeile hinzufügen
 Um weitere Kopfzeilen hinzuzufügen, wählen Sie die oberste Zele in der Excel-Datei und fügen Sie die leere Zeile hinzu. Klicken Sie im **Datenkonnektor** auf **Design**, um Kopfzeilenfelder dem Excel hinzuzufügen.

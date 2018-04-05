@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 957acdbbc6bba83b8b2e2b83fdf266524385141d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -40,7 +40,7 @@ Die Zuteilungsbasis wird verwendet, um Aktivitäten zu berechnen und zu quantifi
 
 **Kostenrechnung**
 
-Mit der Kostenrechnung können Sie Daten aus verschiedenen Quellen erfassen, wie beispielsweise das Hauptbuch, untergeordnete Sachkonten, Budgets und statistische Informationen. Sie können anschließend Kostendaten analysieren, zusammenfassen und auswerten, sodass die Verwaltung die bestmöglichen Entscheidungen bei Preisaktualisierungen, Budgets, Kostenkontrolle usw. treffen kann. Die Quelldaten, die für die Kostenanalyse verwendet werden, werden unabhängig in der Kostenrechnung gehandhabt. Daher wirken sich Aktualisierungen in der Kostenrechnung nicht auf die Quelldaten aus. Wenn Sie jedoch Kostendaten aus verschiedenen Quellen erfassen und insbesondere wenn Sie die Hauptkonten vom Hauptbuch in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, als Kostenelemente importieren, gibt es eine Datenredundanz, da dieselben Daten im Hauptbuch und in der Kostenrechnung vorhanden sind. Diese Redundanz ist erforderlich, da Sie Finanzverwaltung für die externe Berichterstellung und Kostenrechnung für die interne Berichterstellung verwenden.
+Mit der Kostenrechnung können Sie Daten aus verschiedenen Quellen erfassen, wie beispielsweise das Hauptbuch, untergeordnete Sachkonten, Budgets und statistische Informationen. Sie können anschließend Kostendaten analysieren, zusammenfassen und auswerten, sodass die Verwaltung die bestmöglichen Entscheidungen bei Preisaktualisierungen, Budgets, Kostenkontrolle usw. treffen kann. Die Quelldaten, die für die Kostenanalyse verwendet werden, werden unabhängig in der Kostenrechnung gehandhabt. Daher wirken sich Aktualisierungen in der Kostenrechnung nicht auf die Quelldaten aus. Wenn Sie jedoch Kostendaten aus verschiedenen Quellen erfassen und insbesondere wenn Sie die Hauptkonten vom Hauptbuch in Microsoft Dynamics 365 for Finance and Operations als Kostenelemente importieren, gibt es eine Datenredundanz, da dieselben Daten im Hauptbuch und in der Kostenrechnung vorhanden sind. Diese Redundanz ist erforderlich, da Sie Finanzverwaltung für die externe Berichterstellung und Kostenrechnung für die interne Berichterstellung verwenden.
 
 **Kostenrechnungssachkonto**
 
@@ -120,7 +120,7 @@ Es gibt zwei Dimensionshierarchien: Kategorisierungshierarchie und Klassifizieru
 Kostenrechnung unterstützt die Integration von Daten aus Quellsystemen über einen Satz von Datenkonnektoren. Die folgenden Datenkonnektoren sind verfügbar:
 
 -  Importierte Transaktionen (vorkonfiguriert)
--  Dynamics 365 for Finance and Operations, Enterprise Edition (vorkonfiguriert)
+-  Dynamics 365 for Finance and Operations (vorkonfiguriert)
 -  Dynamics AX (Konfiguration erforderlich)
 
 **Hinweis:** Der Datenkonnektor „Importierte Transaktionen” basiert auf Datenentitäten.

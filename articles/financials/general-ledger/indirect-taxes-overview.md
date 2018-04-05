@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -74,7 +74,7 @@ Für jede Buchung (Auftrag/Einkaufsbelegpositionen, Erfassungen, usw.) müssen S
 Bei jeder Buchung können Sie die berechnete Mehrwertsteuer suchen, indem Sie die Seite **Mehrwertsteuerbuchung** öffnen. Sie können die Mehrwertsteuer für eine Dokumentposition oder für das gesamte Dokument suchen. Für bestimmte Dokumente (z. B. Kreditorenrechnung und allgemeine Erfassungen) können Sie die berechnete Mehrwertsteuer anpassen, wenn im Originaldokument abweichende Beträge angezeigt werden.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Mehrwertsteuerausgleich und -erklärung
-Die Mehrwertsteuer muss in den geregelten Intervallen an die Steuerbehörden gemeldet und abgeführt werden (monatsweise, quartalsweise, usw.). Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition verfügt über Funktionen, mit denen Sie Steuerkonten für das Intervall ausgleichen und die Salden im Steuerverrechnungskonto (wie in den Sachkontobuchungsgruppen angegeben) ausgleichen können. Sie können diese Funktion unter **Mehrwertsteuer abrechnen und buchen** Seite zugreifen. Sie müssen den Mehrwertsteuer-Abrechnungszeitraum angegeben, dass Mehrwertsteuer für ausgeglichen werden soll. 
+Die Mehrwertsteuer muss in den geregelten Intervallen an die Steuerbehörden gemeldet und abgeführt werden (monatsweise, quartalsweise, usw.). Microsoft Dynamics 365 for Finance and Operations verfügt über Funktionen, mit denen Sie Steuerkonten für das Intervall ausgleichen und die Salden in Steuerverrechnungskonto (wie in den Sachkontobuchungsgruppen angegeben) ausgleichen können. Sie können diese Funktion unter **Mehrwertsteuer abrechnen und buchen** Seite zugreifen. Sie müssen den Mehrwertsteuer-Abrechnungszeitraum angegeben, dass Mehrwertsteuer für ausgeglichen werden soll. 
 
 Nachdem die Mehrwertsteuer bezahlt wurde, sollte der Saldo im Mehrwertsteuer-Abrechnungskonto gegen das Bankkonto ausgeglichen sein. Wenn die Mehrwertsteuerbehörde, die im Mehrwertsteuer-Abrechnungszeitraum angegeben ist, ist einem Kreditorenkonto zugeordnet. Der Mehrwertsteuersaldo wird als offene Kreditorenrechnung gebucht und kann im regulären Zahlungsvorschlag einbezogen werden.
 

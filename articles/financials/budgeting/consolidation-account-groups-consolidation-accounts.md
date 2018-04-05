@@ -1,6 +1,6 @@
 ---
 title: "Erstellen von Konsolidierungskontengruppen und zusätzlicher Konsolidierungskonten"
-description: "Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskonten und erläutert, wie sie in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden."
+description: "Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzlichen Konsolidierungskonten und erläutert, wie sie in Microsoft Dynamics 365 for Finance and Operations verwendet werden."
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4fcdaa26eb2f15bbf6f7d80bd59a54899f637a2c
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 60486002b520fdf347ed2537cefa0a45e06d6271
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,9 +31,9 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskonten und erläutert, wie sie in der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations verwendet werden.
+Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzlichen Konsolidierungskonten und erläutert, wie sie in Microsoft Dynamics 365 for Finance and Operations verwendet werden.
 
-<a name="consolidation-account-groups"></a>Konsolidierungskontengruppen
+<a name="consolidation-account-groups"></a>Konsolidierungskontogruppen
 ----------------------------
 
 Mit Konsolidierungskontogruppen können Sie Gruppen von Konten erstellen, die Sie verwenden möchten, um Daten konsolidieren zu können. Meistens stellt eine Konsolidierungskontogruppe einen von Behörden vorgegebenen Kontenplan dar oder führt Konten in einer Gruppe zusammen, die vom Hauptsitz des Unternehmens definiert wird. Sie finden die Konsolidierungskontogruppen im Bereich **Einstellungen** im Modul **Konsolidierungen**. Wenn Sie eine neue Gruppe hinzufügen, geben Sie eine eindeutige Kennung für die Kontengruppe und einen Namen ein.

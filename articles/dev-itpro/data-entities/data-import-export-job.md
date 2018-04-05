@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
-ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
 ms.contentlocale: de-de
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-Um Datenimport- und Datenexportaufträge in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, zu erstellen und zu verwalten verwenden Sie den Arbeitsbereich**Datenverwaltung**. Standardmäßig der Datenimport und der Exportvorgang eine für jede Stagingtabelle Entität in der Zieldatenbank erstellt. Mit Stagingtabellen können Sie Daten prüfen, bereinigen oder konvertieren, bevor Sie diese verschieben.
+Um Datenimport- und Datenexporteinzelvorgänge in Microsoft Dynamics 365 for Finance and Operations zu erstellen und zu verwalten, verwenden Sie den Arbeitsbereich **Datenverwaltung**. Standardmäßig der Datenimport und der Exportvorgang eine für jede Stagingtabelle Entität in der Zieldatenbank erstellt. Mit Stagingtabellen können Sie Daten prüfen, bereinigen oder konvertieren, bevor Sie diese verschieben.
 
 > [!NOTE]
 > Für dieses Thema wird vorausgesetzt, dass Sie sich mit dem Thema [Datenentitäten](data-entities.md) vertraut gemacht haben.
@@ -66,7 +66,7 @@ Sie können bestimmte Entitäten einem Import- oder Exportvorgang hinzufügen od
 ### <a name="set-the-data-format-for-the-job"></a>Legen Sie das Datenformat für den Stapelverarbeitungsauftrag fest.
 Wenn Sie eine Einheit auswählen, müssen Sie die Verpackungseinheiten das Format der Daten auswählen, die exportiert oder importiert werden. Sie legen Formate fest, indem Sie die Kachel **Datenquelleneinstellung** verwenden. Viele Organisationen beginnen  mit den Formaten, die standardmäßig im Demodatsatz enthalten sind. Das hier eine Liste mit einigen dieser Formate:
 
-- AX (für Daten, die im gleichen Format importiert oder exportiert werden müssen, die für Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition) verwendet werden.
+- AX (für Daten, die im gleichen Format importiert oder exportiert werden müssen, die für Microsoft Dynamics 365 for Finance and Operations) verwendet werden.
 - ColonSeparated
 - CSV
 - Excel

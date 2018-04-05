@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: 9c68cd0e1c214e22b8831e4f4a0c5d545387f982
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
 ms.contentlocale: de-de
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 03/09/2018
 Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems. Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können. 
 
 > [!NOTE] 
-> Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations (Enterprise edition), Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
+> Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
 Das Hilfesystem wird von folgenden Produkten gemeinsam verwendet:
-- Dynamics 365 for Finance and Operations, Enterprise edition
+- Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -108,14 +108,14 @@ Auf der rechten Seite geben Sie eine E-Mail-Adresse sowie ein neues Kennwort ein
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Schlagen Sie eine Änderung vor oder tragen Sie Inhalte bei über GitHub
 Um eine Änderung vorzuschlagen, müssen Sie ein GitHub-Konto haben und unterzeichnen eine Lizenzvereinbarung der beteiligten Person.  Nachdem Sie eine Pullanforderung senden, wiederholen Sie die vorgeschlagenen Änderungen. Gegebenenfalls besprechen wir sie intern und wenden uns wieder an Sie.  
 
-Um anzufangen, klicken Sie auf die Schaltfläche **Bearbeiten** (Stift) auf ein Thema, oder wechseln Sie zu unserem Repository unter https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+Um anzufangen, klicken Sie auf die Schaltfläche **Bearbeiten** (Stift) in einem Thema, oder wechseln Sie zu unserem Repo unter https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
 
-Weitere Informationen hierzu finden Sie im Handbuch unserer Beiträger: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+Weitere Informationen hierzu finden Sie im Installationshandbuch: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
 
 
 > [!NOTE]
 > Es werden derzeit nur Beiträge zu unseren englischen Repositorys akzeptiert.  
-> Wir akzeptieren keine Probleme enthalten, die durch GitHub gemeldet werden - Achten Sie darauf, eine Pullanforderung für Inhaltsvorschläge zu verwenden. Produkt- und Funktionsrückmeldung wird am besten durch das Dynamics 365 Ideas Portal: https://experience.dynamics.com/ideas/ verarbeitet. 
+> Wir akzeptieren keine Probleme enthalten, die durch GitHub gemeldet werden - Achten Sie darauf, eine Pullanforderung für Inhaltsvorschläge zu verwenden. Produkt- und Funktionsrückmeldung wird am besten durch das Dynamics 365 Ideas Portal https://experience.dynamics.com/ideas/ bearbeitet. 
 
 
 ## <a name="task-guides"></a>Aufgabenleitfäden

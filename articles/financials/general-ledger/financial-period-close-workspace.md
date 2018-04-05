@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
-ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
 ms.contentlocale: de-de
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -89,7 +89,7 @@ Sie verwenden Sie eine Vorlage für den Finanzabschluss, um Aufgaben zu definier
 
 Sie können eine Aufgabe in der Vorlage einem oder mehreren Unternehmen, in denen diese Aufgabe gilt. Wenn eine andere Person zugewiesen wird, um diesen Arbeitseinsatz in jedem Unternehmen ausführen, finden Sie es möglicherweise hilfreich, mehrere Aufgaben für den gleichen Arbeitseinsatz zu erstellen. Erstellen Sie eine Aufgabe für jedes Unternehmen. 
 
-Die Menüoptiib **Aufgabenlink** wird dem Aufgabenarbeitseinsatz zugeordnet und kann verwendet werden, um in direktem Bezug zur zugeordneten Seite über den Aufgabenlink im Arbeitsbereich zu wechseln. Beispielsweise kann eine Abschlussaufgabe den Währungsbewertungsprozess für Kreditoren ausführen, der mit der Seite der zugeordneten **Neubewertung der Fremdwährung** in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition verknüpft werden kann. Sie können auch eine externe URL verknüpfen. 
+Die Menüoptiib **Aufgabenlink** wird dem Aufgabenarbeitseinsatz zugeordnet und kann verwendet werden, um in direktem Bezug zur zugeordneten Seite über den Aufgabenlink im Arbeitsbereich zu wechseln. Beispielsweise kann eine Abschlussaufgabe den Währungsbewertungsprozess für Kreditoren ausführen, der mit der Seite der zugeordneten **Neubewertung der Fremdwährung** in Microsoft Dynamics 365 for Finance and Operations verknüpft werden kann. Sie können auch eine externe URL verknüpfen. 
 
 > [!TIP]
 > Wenn Sie einen bestimmten Management Reporter-Bericht mit einer Finanzperiodenabschlussaufgabe verknüpfen möchten, können Sie die Berichts-URL verwenden. Um auf die Berichts-URL zuzugreifen, öffnen Sie den Bericht im Berichts-Designer, und klicken Sie auf  **Datei** &gt; **Bericht anzeigen** , um den Bericht in einem Webbrowser zu öffnen. Sie können die URL dann in die Adressleiste des Browsers kopieren und in das Feld **Aufgabenlink**-**URL** einfügen. 

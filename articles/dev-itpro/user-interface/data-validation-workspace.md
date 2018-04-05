@@ -16,10 +16,10 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: daded9d8ef48456cbd3f97a7bae5fa75885ce9d1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ Im Abschnitt **Aufgaben und Status** wird der Status des Gesamtdatenprüfungspro
 Die letzten Registerkarte ist für die detaillierte Aufgabenliste. Diese Liste zeigt die vollständige Aufgabenliste an.
 Sie können die Aufgabenliste auf verschiedene Weise filtern. Klicken Sie auf **Bearbeiten einer Aufgabe**, um den Status einer Aufgabe zu ändern oder eine Aufgabe zuweisen. Klicken Sie auf **Anhänge**, um die Anhänge für eine Aufgabe anzuzeigen.
 
-Der Aufgabenname ist ein Link zur Seite Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition oder einer anderen Webseite, auf der ein Benutzer die Arbeit abschließen muss. Sie können diesen Hyperlink festlegen, indem Sie das Feld **Menüelementname** verwenden, wenn Sie im Formular **Datenüberprüfungsprojekt konfigurieren** eine Aufgabe bearbeiten oder erstellen.
+Der Aufgabenname ist ein Link zur Seite „Microsoft Dynamics 365 for Finance and Operations” auf der der Benutzer die Arbeit abschließen muss. Sie können diesen Hyperlink festlegen, indem Sie das Feld **Menüelementname** verwenden, wenn Sie im Formular **Datenüberprüfungsprojekt konfigurieren** eine Aufgabe bearbeiten oder erstellen.
 
 Sie können Dateien, Hinweise, Bilder und URLs zu einer Aufgabe zuordnen, indem Sie die Aktivität **Zuordnungen** verwenden. Sie können beispielsweise eine Berichtdatei anhängen, die für eine Aufgabe gedruckt wurde. Ein Symbol wird in der Spalte **Anlag** für die Aufgabe angezeigt, wenn eine Anlage vorhanden ist.
 

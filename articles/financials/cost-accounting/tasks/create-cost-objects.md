@@ -1,6 +1,6 @@
 --- 
 title: Kostenobjekte erstellen
-description: "Dieses Verfahren zeigt, wie Kostenobjekte erstellt werden, indem die  Dynamics 365 for Finance and Operations Enterprise Edition Kostenstellenfinanzdimension in die Kostenrechnung über einen Datenkonnektor importieren."
+description: "Diese Prozedur zeigt an, wie Kostenobjekte erstellt werden, indem die Kostenstellen-Finanzdimension von Dynamics 365 for Finance and Operations nach Kostenrechnung über einen Datenkonnektor importiert wird."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 10/25/2016
@@ -16,17 +16,17 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d43274aed2edbb91fd4e399cb8d45e91646b055
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 21fa90557b665e0777935cc6bae8cd9f1c29cb60
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="create-cost-objects"></a>Kostenobjekte erstellen 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Dieses Verfahren zeigt, wie Kostenobjekte erstellt werden, indem die  Dynamics 365 for Finance and Operations Enterprise Edition Kostenstellenfinanzdimension in die Kostenrechnung über einen Datenkonnektor importieren. Das USMF-Demodatenunternehmen wurde verwendet, um diese Prozedur zu erstellen. Diese Prozedur ist für eine Kostenbuchhaltungs-Funktion, die in Microsoft Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+Diese Prozedur zeigt an, wie Kostenobjekte erstellt werden, indem die Kostenstellen-Finanzdimension von Dynamics 365 for Finance and Operations nach Kostenrechnung über einen Datenkonnektor importiert wird. Das USMF-Demodatenunternehmen wurde verwendet, um diese Prozedur zu erstellen. Diese Prozedur ist für eine Kostenbuchhaltungs-Funktion, die in Microsoft Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
 
 
 ## <a name="create-new-cost-objects"></a>Neue Kostenobjekte erstellen

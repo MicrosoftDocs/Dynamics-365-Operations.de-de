@@ -1,6 +1,6 @@
 --- 
 title: "Zuordnen eines Datenmodells zu ausgewählten Datenquellen für elektronische Berichterstellung (ER)"
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle \"Entwickler für elektronische Berichterstellung\" zugewiesen ist, ein Modell der elektronischen Berichterstellung (ER) ausgewählten Dynamics 365 for Finance and Operations, Enterprise edition zuordnen kann."
+description: "In den folgenden Schritten wird erläutert, wie ein Benutzer, dem die Systemadministratorrolle oder die Rolle „Entwickler für elektronische Berichterstellung” zugewiesen ist, ein Datenmodell der elektronischen Berichterstellung (EB) ausgewählten Datenquellen von Dynamics 365 for Finance and Operations, Enterprise Edition (November 2016), zuordnen kann."
 author: NickSelin
 manager: AnnBe
 ms.date: 01/16/2017
@@ -16,17 +16,17 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96974d7c1597db4ac31168be40cecbc7e12d6edd
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 13b7fe7f7bfe24bd275428e931993aa46ecb9945
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="map-a-data-model-to-selected-data-sources-for-electronic-reporting-er"></a>Zuordnen eines Datenmodells zu ausgewählten Datenquellen für elektronische Berichterstellung (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, ein Modell der elektronischen Berichterstellung (ER) ausgewählten Dynamics 365 for Finance and Operations, Enterprise edition zuordnen kann. Diese vorbildliche Zuordnung wird später als Datenquelle in einer Formatkonfiguration verwendet, die verwendet wird, um Dokumente für den elektronischen Zahlungsverkehr zu verwalten. In diesem Beispiel verknüpfen Sie ein Datenmodell für das Beispielunternehmen, Litware, Inc. mit Datenquellen. Um diese Schritte abzuschließen, die folgenden Schritte in der "Datenquellen für Modell-Zuordnung" im Verfahren zuerst abschließen.
+In den folgenden Schritten wird erläutert, wie ein Benutzer, dem die Systemadministratorrolle oder die Rolle „Entwickler für elektronische Berichterstellung” zugewiesen ist, ein Datenmodell der elektronischen Berichterstellung (EB) ausgewählten Dynamics 365 for Finance and Operations-Datenquellen zuordnen kann. Diese vorbildliche Zuordnung wird später als Datenquelle in einer Formatkonfiguration verwendet, die verwendet wird, um Dokumente für den elektronischen Zahlungsverkehr zu verwalten. In diesem Beispiel verknüpfen Sie ein Datenmodell für das Beispielunternehmen, Litware, Inc. mit Datenquellen. Um diese Schritte abzuschließen, die folgenden Schritte in der "Datenquellen für Modell-Zuordnung" im Verfahren zuerst abschließen.
 
 
 ## <a name="open-er-configurations-tree"></a>Öffnen Sie ER-Konfigurationsstruktur

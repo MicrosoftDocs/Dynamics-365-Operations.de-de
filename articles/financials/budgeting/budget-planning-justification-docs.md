@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b033f6197e61a6030e12081a9e4f1d820bac458f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ Eine Budgetplanvorlage wird vom Budget-Manager in Microsoft Word erstellt und zu
 
 1.  Klicken Sie auf **Entwurf** -im Microsoft Dynamics Office Add-In, nachdem Sie sich angemeldet haben.
 2.  Für Kopfdaten verwenden Sie die Schaltfläche **Felder hinzufügen**.
-3.  Wählen Sie die Entitätsdatenquelle von BudgetPlanJustification aus, und klicken Sie auf **Weiter**. **Hinweis:** Diese Entität ist für alle Begründungsdokumente erforderlich. Andere Entitäten können verwendet werden, aber der Upload zurück an der Enterprise edition von Microsoft Dynamics 365 for Finance and Operations schlägt fehl, wenn diese Entität nicht einbezogen wird.
+3.  Wählen Sie die Entitätsdatenquelle von BudgetPlanJustification aus, und klicken Sie auf **Weiter**. **Hinweis:** Diese Entität ist für alle Begründungsdokumente erforderlich. Andere Entitäten können verwendet werden, aber der Upload zurück zu Microsoft Dynamics 365 for Finance and Operations schlägt fehl, wenn diese Entität nicht einbezogen wird.
 4.  Fügen Sie BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter und DocumentNumber Bezeichnungen und Werte im Word-Dokument hinzu. **Hinweis**: Sie können eigene benutzerdefinierten Beschriftungen verwenden, statt die Standardetiketts, sofern erforderlich.
 5.  Klicken Sie **Fertig**, um den Kopfbereich abzuschließen.
 6.  Für Positionsebenedetail von Budgetplanbeträgen, klicken Sie auf **Tabelle hinzufügen**

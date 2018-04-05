@@ -1,6 +1,6 @@
 ---
 title: Vordatierte Schecks
-description: "Dieser Artikel enthält Informationen zur Unterstützung vordatierter Schecks in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden."
+description: "Dieser Artikel bietet Informationen zur Unterstützung für vordatierte Schecks in Microsoft Dynamics 365 for Finance and Operations. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden."
 author: twheeloc
 manager: AnnBe
 ms.date: 01/12/2018
@@ -19,10 +19,10 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: afa181830fb822c85dedbc8009fec903d1b98479
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 8fd721dc3166dcd981b749c673d3c625b4e5ae36
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält Informationen zur Unterstützung vordatierter Schecks in Microsoft Dynamics 365 for Finance and Operations, Enterprise-Edition. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden.
+Dieser Artikel bietet Informationen zur Unterstützung für vordatierte Schecks in Microsoft Dynamics 365 for Finance and Operations. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden.
 
 Microsoft Dynamics 365 for Finance and Operations unterstützt den vollständigen Verwaltungszyklus für vordatierte Schecks in Debitoren und Kreditoren wie in der folgenden Tabelle dargestellt.
 <table>

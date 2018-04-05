@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9550faec1bbbdc233631e149c09b8e4faf25f5ff
 ms.contentlocale: de-de
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -85,7 +85,7 @@ So sieht die Hinweisanmerkung in der "Blase" im Aufgabenleitfaden aus.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Info-Schritt**: Diese Anmerkungen werden erstellt, indem mit der rechten Maustaste auf ein Steuerelement oder Formular geklickt wird &lt; **Aufgabenaufzeichnung** &lt; **Infoschritt hinzufügen. **Info-Schritte werden als nummerierte Schritte an dem Punkt angezeigt, an dem sie eingefügt werden, auch wenn keine Aktivität in der UI aufgezeichnet wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Infoschritt einem Steuerelement zugeordnet ist, wird die "Blase" des Aufgabenleitfadens auf das Steuerelement zeigen, wenn der Aufgabenleitfaden wiedergegeben wird. Im Hilfebereich wird ein Info-Schritt als nummerierter Schritt mit dem Text angezeigt, den Sie eingegeben haben. Verwenden Sie Infoschritte, um den Benutzer auf die nächsten Schritte vorzubereiten, Schritte zu beschreiben, die außerhalb von Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, abgeschlossen werden müssen, oder um auf andere Aufzeichnungen zu verweisen (jedoch können Sie in den Anmerkungen keine Hyperlinks erstellen).
+-   **Info-Schritt**: Diese Anmerkungen werden erstellt, indem mit der rechten Maustaste auf ein Steuerelement oder Formular geklickt wird &lt; **Aufgabenaufzeichnung** &lt; **Infoschritt hinzufügen. **Info-Schritte werden als nummerierte Schritte an dem Punkt angezeigt, an dem sie eingefügt werden, auch wenn keine Aktivität in der UI aufgezeichnet wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Infoschritt einem Steuerelement zugeordnet ist, wird die "Blase" des Aufgabenleitfadens auf das Steuerelement zeigen, wenn der Aufgabenleitfaden wiedergegeben wird. Im Hilfebereich wird ein Info-Schritt als nummerierter Schritt mit dem Text angezeigt, den Sie eingegeben haben. Verwenden Sie Infoschritte, um den Benutzer auf die nächsten Schritte vorzubereiten, um Schritte zu beschreiben, die außerhalb von Microsoft Dynamics 365 for Finance and Operations abgeschlossen werden müssen, oder um auf andere Aufzeichnungen zu verweisen (jedoch können Sie in den Anmerkungen keine Hyperlinks erstellen).
 
 **Die Länge der Aufzeichnung bestimmen**
 

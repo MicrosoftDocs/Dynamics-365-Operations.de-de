@@ -1,6 +1,6 @@
 ---
 title: Tastenkombinationen
-description: "In Dynamics 365 for Finance and Operations, Enterprise Edition, stehen überall die folgenden Tastenkombinationen zur Verfügung."
+description: "In Dynamics 365 for Finance and Operations stehen die folgenden Tastenkombinationen zur Verfügung."
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
 ms.contentlocale: de-de
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 [!include[banner](../includes/banner.md)]
 
 
-In Dynamics 365 for Finance and Operations, Enterprise Edition, stehen überall die folgenden Tastenkombinationen zur Verfügung. 
+In Dynamics 365 for Finance and Operations stehen die folgenden Tastenkombinationen zur Verfügung. 
 
 **Hinweis:** Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
 
@@ -74,7 +74,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Öffnen des Infoboxbereichs (oder Verschieben des Fokus zum Infoboxbereich, wenn bereits offen ist) | ALT+M,B oder STRG+F2                        |
 | Schließen des Infoboxbereichs (mit Fokus im Infoboxbereich)                         | ESC                                       |
 | Zur nächsten/vorherigen Infobox (mit Fokus im Infoboxbereich) wechseln              | ALT+UMSCHALT+NACH-UNTEN-TASTE / ALT+UMSCHALT+NACH-OBEN-TASTE |
-| Zur &lt;n&gt;. Infobox (mit Fokus im Infoboxbereich) wechseln                | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Zur &lt;n&gt;nten Infobox (mit Fokus im Infoboxbereich) wechseln                | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Erweitern einer Infobox (mit Fokus auf dem Infoboxkopf)                             | LEERTASTE oder EINGABETASTE                            |
 | Die aktuelle Infobox reduzieren                                                    | ALT+0                                     |
 
@@ -115,11 +115,11 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | **Aktion**                                      | **Taste(n)**                                    |
 | Zum nächsten/vorherigen Feld wechseln                     | Registerkarte / UMSCHALT+TAB                              |
 | Zur nächsten/vorherigen Registerkarte wechseln                       | ALT+UMSCHALT+NACH-RECHTS-TASTE / ALT+UMSCHALT+NACH-LINKS-TASTE |
-| Zur &lt;n&gt;. Registerkarte wechseln                         | ALT+UMSCHALT+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Zur &lt;n&gt;nten Registerkarte wechseln                         | ALT+UMSCHALT+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Zum nächsten/vorherigen Inforegister wechseln                   | ALT+UMSCHALT+NACH-UNTEN-TASTE / ALT+UMSCHALT+NACH-OBEN-TASTE    |
-| Zum &lt;n&gt;. Inforegister wechseln                     | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Zum &lt;n&gt;nten Inforegister wechseln                     | ALT+&lt;n&gt; (&lt;n&gt; = 1-9)              |
 | Zum nächsten/vorherigen Blatt wechseln (vertikale Registerkarte)      | ALT+UMSCHALT+NACH-RECHTS-TASTE / ALT+UMSCHALT+NACH-LINKS-TASTE |
-| Zum &lt;n&gt;ten Blatt wechseln (vertikale Registerkarte)        | ALT+UMSCHALT+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Zum Blatt &lt;n&gt;wechseln (vertikale Registerkarte)        | ALT+UMSCHALT+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Erweitern eines Inforegisters (mit Fokus auf dem Inforegisterkopf) | LEERTASTE oder EINGABETASTE                               |
 | Das aktuelle Inforegister reduzieren                        | ALT+0                                        |
 | Zur Rasteransicht wechseln                                 | STRG+UMSCHALT+G                                 |

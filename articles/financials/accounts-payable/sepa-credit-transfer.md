@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1335d95c8bf02d5c571d37d78eca0ee7eae32bad
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3b6ded5e5accbbdba708c8b31119429e72bd58f5
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -53,7 +53,7 @@ Der EPC besteht aus europäischen Banken und entwickelt das Handels- und das tec
 Eine SEPA-Überweisung ist eine Zahlung von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Zahlungen müssen in Euro durchgeführt werden und sie müssen die internationale Bankkontonummer (IBAN) und Bank Identifier Code (BIC) für beide Parteien enthalten. (Die BIC ist auch als Society for Worldwide Interbank Financial Telecommunication \[SWIFT\] Code bekannt. Darüber hinaus müssen Buchungskosten zwischen beiden Parteien freigegeben werden. Banküberweisungen zwischen Parteien sollten XML-Dateien verwenden, die den ISO 20022-Standards zu Zahlungsverarbeitung entsprechen und das durch das EPC festgelegt XML-Format verwenden.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Wie wird eine Überweisung implementiert?
-Das SEPA-Überweisungsformat wird über die generische elektronische Berichterstellung und die Methoden von Zahlungsfunktionen in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, implementiert. Einige Banküberweisungsformate, die in anderen Regionen noch verwendet werden, verwenden Sie das vorhandene Zahlungsframework. Unter vielen anderen Formaten gibt es zwölf ISO 20022-Banküberweisungsdateiformate, die verfügbar sind. Diese Exportformate entsprechen dem XML-Standard SEPA ISO 20022. Sie werden verwendet, um Nicht-Euro-Zahlungsüberweisungen für Land/Region zu generieren, in denen sie Eurozahlungen und verwendet werden, z.B. in der Version 8,2 der SEPA-Kredit-Übertragungssystem-Regelung der EPC. Bevor Sie die Überweisungen implementieren können, müssen Sie von Ihrer Bank die Software erhalten, die erforderlich ist, um elektronisch Bankdateien hochzuladen. Sie verwenden diese Software, um XML-Dateien zu übertragen, die Zahlungen an die Bank enthalten.
+Das SEPA-Kreditübertragungs-Zahlungsformat für europäische Länder wird implementiert, indem die elektronische Berichterstellung (EB) und Methoden der Zahlungsfunktionalität in Microsoft Dynamics 365 for Finance and Operations verwendet werden. Einige Banküberweisungsformate, die in anderen Regionen noch verwendet werden, verwenden Sie das vorhandene Zahlungsframework. Unter vielen anderen Formaten gibt es zwölf ISO 20022-Banküberweisungsdateiformate, die verfügbar sind. Diese Exportformate entsprechen dem XML-Standard SEPA ISO 20022. Sie werden verwendet, um Nicht-Euro-Zahlungsüberweisungen für Land/Region zu generieren, in denen sie Eurozahlungen und verwendet werden, z.B. in der Version 8,2 der SEPA-Kredit-Übertragungssystem-Regelung der EPC. Bevor Sie die Überweisungen implementieren können, müssen Sie von Ihrer Bank die Software erhalten, die erforderlich ist, um elektronisch Bankdateien hochzuladen. Sie verwenden diese Software, um XML-Dateien zu übertragen, die Zahlungen an die Bank enthalten.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Welche Banküberweisungsformate werden derzeit in Finance and Operations unterstützt?
 Sie sollten für die Bibliothek der freigegebenen Anlage auf Microsoft Dynamics Lifecycle Services (LCS) nutzen und die neuesten Liste der verfügbaren Dateien mit dem Anlagentyp **GER-Konfiguration** sehen. Im nächsten Abschnitt "Was muss ich einrichten?" wird ein Link zum Thema bereitgestellt, der erläutert, wie ein LCS-Repository herstellt, um verfügbare Konfigurationen und Importieren ausgewählter Konfigurationen zu prüfen.

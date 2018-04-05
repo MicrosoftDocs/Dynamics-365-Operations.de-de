@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7de5fbcaa9f287752e3ae4834eb48d622d263579
-ms.openlocfilehash: 890f035a291dbec936594ceeabc5de284d160ad4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a1ccd440353e986d296de370506fb1951331e2cf
 ms.contentlocale: de-de
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>Definieren der Abhängigkeit von Konfigurationen aus anderen Komponenten für elektronische Berichterstellung (ER)
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/25/2017
 
 Um diese Schritte auszuführen, müssen Sie die Schritte im Aufgabenleitfaden zuerst ausführen, ER Verwaltungsmodellzuordnungskonfiguraion und Sie müssen Zugriff auf Microsoft Dynamics Lifecycle Services (LCS) haben.
 
-Dieses Verfahren zeigt, wie eine elektronische Berichtserstattungs-Konfiguration (ER) entworfen wird und definiert die Abhängigkeit von anderen Softwarekomponenten, damit Sie unterstützen können, um sicherzustellen, dass die Konfiguration ordnungsgemäß für eine bestimmten Version von Microsoft Dynamics 365 for Finance and Operations Enterprise Edition heruntergeladen wurde. In diesem Beispiel erstellen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. 
+Diese Prozedur zeigt, wie eine elektronische Berichtserstattungs-Konfiguration (EB) entworfen wird und definiert ihre Abhängigkeit von anderen Softwarekomponenten, damit Sie besser sicherzustellen können, dass die Konfiguration ordnungsgemäß für eine bestimmten Version von Microsoft Dynamics 365 for Finance and Operations heruntergeladen wird. In diesem Beispiel erstellen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. 
 
 Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Diese Schritte können an einem beliebigen Unternehmen ausgeführt werden, da die ER-Konfiguration von allen Unternehmen genutzt werden. 
 

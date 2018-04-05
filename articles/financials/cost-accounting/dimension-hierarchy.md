@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d183654ada9cdca23cf906f250988a967ffcf1f6
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 40a4a1d7549876b72186f30a9c0089f0d27cf3b6
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -76,7 +76,7 @@ Der Typ **Dimensionsklassifizierungshierarchie** wird zur Regeldefinition und zu
 
 Eine Dimensionshierarchie wird als Baumstruktur mit Knoten- und Blattknotenbeziehungen erstellt.
 
--  Ein Knoten kann 1:_n_ untergeordneten Knoten besitzen.
+-  Ein Knoten kann 1: __ Subknoten haben.
 -  Einem Knoten kann nicht gleichzeitig untergeordnete Knoten und Blattnoten zugewiesen werden.
 -  Ein Blattknoten kann nur der niedrigsten Ebene in der Hierarchie zugewiesen werden.
 
@@ -156,7 +156,7 @@ Die Dimensionshierarchie für die Richtlinie kann beispielsweise eingerichtet hi
 |&nbsp;&nbsp;Variable Kosten | 40001                     | 40010                   |
 
 > [!NOTE]
-> Unter **Dimensionsmitgliedsbereiche** kann ein Knoten 1: _n_-Dimensionsmitgliedsbereich enthalten. Sie können Dimensionsmitgliedskennungen einfügen, die noch nicht als Dimensionsmitglieder vorhanden sind. Durch diesen Ansatz wird die Hierarchie zukunftssicher.  
+> Unter **Dimensionsmitgliedsbereiche** kann ein Knoten 1:_n_ -Dimensionsmitgliedsbereiche enthalten. Sie können Dimensionsmitgliedskennungen einfügen, die noch nicht als Dimensionsmitglieder vorhanden sind. Durch diesen Ansatz wird die Hierarchie zukunftssicher.  
 
 ### <a name="copy-a-hierarchy"></a>Eine Hierarchie kopieren
 
@@ -329,7 +329,7 @@ Die Einstellungen für die Zugriffslistenhierarchie werden verwendet, um die Dat
 - Power BI:
 
     - Daten, die in den BI-Visualisierungen angezeigt werden
-    - Data Power BI-Visualisierungen, die im Client der Enterprise edition von Microsoft Dynamics 365 für Finance and Operations eingebettet werden
+    - Data Power BI Visualisierungen, die im Microsoft Dynamics 365 for Finance and Operations Client eingebettet werden
 
 > [!NOTE] 
 > - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Positionsebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).

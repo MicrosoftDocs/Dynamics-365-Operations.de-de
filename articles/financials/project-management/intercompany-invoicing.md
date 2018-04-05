@@ -1,6 +1,6 @@
 ---
 title: Intercompany-Fakturierung
-description: "Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Finance and Operations."
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad14e2d145c6f6620bf8a31738fafa50d033d246
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Finance and Operations.
 
 Ihre Organisation verfügt möglicherweise über mehrere Abteilungen, Tochtergesellschaften und andere juristische Personen, die einander Produkte und Dienstleistungen für Projekte übertragen. Die juristische Person, die Dienstleistungen oder Produkte bereitstellt *ausleihenden juristischen Person*. Die juristische Person, die Dienstleistungen oder Produkten empfängt wird als *ausleihende juristische Person* bezeichnet. 
 
@@ -54,7 +54,7 @@ Das Ziel ist es, die Kostenkontrolle, Umsatzrealisierung, Steuern und Verrechnun
     -   **Deckungsbeitragsverhältnis** – Die Zahl, die Sie in das Feld **Preisgestaltung** eingeben, ist der Deckungsbeitrag ausgedrückt als Prozentsatz des Verkaufspreises.
 
 ## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>Beispiel 1: Parameter für die Intercompany-Fakturierung einrichten
-In diesem Beispiel ist USSI eine ausleihenden juristischen Person. Ihre Ressourcen Berichten die Zeit an die ausleihende juristische Person FRSI, die in einem Vertragsverhältnis mit dem Endkunden steht. Die Stunden und Ausgaben, die von USSI-Mitarbeiter gemeldet werden, können in die von FRSI generierte Projektfakturierung einbezogen werden. Darüber hinaus gibt es eine dritte Buchungsquelle, die von der ausleihenden juristischen Person stammen kann (in diesem Beispiel USSI) wenn diese gemeinsame Dienstleistungen für einen Kreditor für Tochtergesellschaften ((wie FRSI) bereitstellt und dann die Kosten an Projekte in diesen Tochtergesellschaften weitergibt. Alle übereinstimmenden Rechnungsdokumente und Steuerberechnungen werden von Finance and Operations abgeschlossen. 
+In diesem Beispiel ist USSI eine ausleihenden juristischen Person. Ihre Ressourcen Berichten die Zeit an die ausleihende juristische Person FRSI, die in einem Vertragsverhältnis mit dem Endkunden steht. Die Stunden und Ausgaben, die von USSI-Mitarbeiter gemeldet werden, können in die von FRSI generierte Projektfakturierung einbezogen werden. Darüber hinaus gibt es eine dritte Buchungsquelle, die von der ausleihenden juristischen Person stammen kann (in diesem Beispiel USSI) wenn diese gemeinsame Dienstleistungen für einen Kreditor für Tochtergesellschaften (wie FRSI) bereitstellt und dann die Kosten an Projekte in diesen Tochtergesellschaften weitergibt. Alle übereinstimmenden Rechnungsdokumente und Steuerberechnungen werden von Finance and Operations abgeschlossen. 
 
 In diesem Beispiel muss FRSI ein Debitor der juristischen Person USSI sein. USSI muss ein Kreditor in der juristischen Person FRSI sein. Sie können dann die Intercompany-Beziehung zwischen den zwei juristischen Personen einrichten. Das folgende Verfahren veranschaulicht die Einrichtung von Parametern für die Teilnahme beider juristischer Personen an der Intercompany-Fakturierung.
 
@@ -78,7 +78,7 @@ USSI, die verleihende juristische Person, muss die Arbeitszeitnachweise für ein
 
 | Schritt | Einstiegspunkt                                                                       | Beschreibung                                                                                                                                                                                       |
 |------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A:    | **Projektmanagement und Buchhaltung** &gt; **Arbeitszeitnachweise** &gt; **Alle Arbeitszeitnachweise** | Neuen Arbeitszeitnachweis erstellen. Wählen Sie in der Arbeitszeitnachweisposition im Feld **Juristische Person****FRSI** aus. Wählen Sie im Feld **Projektkennung** das Projekt in FRSI aus. Geben Sie die für jeden Wochentag die Stunden ein. |
+| A:    | **Projektmanagement und Buchhaltung** &gt; **Arbeitszeitnachweise** &gt; **Alle Arbeitszeitnachweise** | Neuen Arbeitszeitnachweis erstellen. Wählen Sie in der Arbeitszeitnachweisposition im Feld **Juristische Person** **FRSI** aus. Wählen Sie im Feld **Projektkennung** das Projekt in FRSI aus. Geben Sie die für jeden Wochentag die Stunden ein. |
 | Mrd    | **Arbeitszeitnachweise**-Seite                                                                | Wenn der Workflows ausgeführt wird, buchen Sie den Arbeitszeitnachweis und notieren Sie die Belegnummer.                                                                                                               |
 
 ## <a name="example-3-create-and-post-an-intercompany-vendor-invoice"></a>Beispiel 3: Erstellen und Buchen von Intercompany-Kreditorenrechnungen

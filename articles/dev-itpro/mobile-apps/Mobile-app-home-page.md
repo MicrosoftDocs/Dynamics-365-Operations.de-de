@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 233d91138b11905d971be90154da54e61bbe2919
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b84778bd67e8c5bad6e8858d2af71f46e0dfe145
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -39,7 +39,7 @@ In diesem Thema wird die mobile Microsoft Dynamics 365 for Unified Operations-Ap
 
 Die mobile App ermöglicht es Ihrer Organisation, Geschäftsprozesse auf mobilen Geräten bereitzustellen. Nachdem Ihr IT-Administrator den mobilen Arbeitsbereich für Ihre Organisation bereitgestellt hat, können sich Benutzer bei der App anmelden und sofort damit beginnen, Geschäftsprozesse über ihre mobilen Geräte auszuführen. Die mobile App umfasst folgende Funktionen, die helfen, die Produktivität zu steigern:
 
-- Benutzer können Geschäftsdaten anzeigen, bearbeiten und ausführen, selbst wenn die Netzwerkverbindung unterbrochen ist oder ihre mobilen Geräte vollständig offline sind. Wenn ein Gerät eine Netzwerkverbindung erneut einrichtet, werden Offline-Datenoperationen automatisch mit Dynamics 365 for Finance and Operations, Enterprise edition oder Microsoft Dynamics 365 for Finance and Operations synchronisiert.
+- Benutzer können Geschäftsdaten anzeigen, bearbeiten und ausführen, selbst wenn die Netzwerkverbindung unterbrochen ist oder ihre mobilen Geräte vollständig offline sind. Wenn ein Gerät eine Netzwerkverbindung erneut einrichtet, werden die Offlinedatenvorgänge automatisch mit Dynamics 365 for Finance and Operations synchronisiert.
 - IT-Administratoren oder Entwickler können mobile Arbeitsbereiche erstellen und veröffentlichen, die auf die Organisation zugeschnitten wurden. Die App verwendet die vorhandenen Codeanlagen. Daher müssen Sie den Validierungsprozess, Geschäftslogik oder Sicherheitskonfiguration nicht erneut implementieren.
 - IT-Administratoren oder -Entwickler können ganz einfach mobile Arbeitsbereiche entwerfen, indem sie den Arbeitsbereichdesigner zum Anzeigen und Klicken verwenden, der im Webclient enthalten ist.
 - IT-Administratoren oder Entwickler können die Offline-Funktionalität von Arbeitsbereichen optional optimieren, indem das Geschäftslogikerweiterbarkeitsframework verwendet wird. Da Daten weiter verarbeitet werden, wenn ein Gerät offline ist, bleiben die mobilen Szenarien erhalten. auch wenn die Geräte keine permanente Netzwerkkonnektivität haben.
@@ -90,7 +90,7 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <tr class="even">
 <td>2</td>
 <td>Systemadministrator</td>
-<td><strong>Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Version 1611, verwenden:</strong> Laden und installieren Sie KBs, die die von Microsoft bereitgestellten mobilen Arbeitsbereiche aktivieren.</td>
+<td><strong>Wenn Sie Microsoft Dynamics 365 for Operations, Version 1611, verwenden:</strong> Laden und installieren Sie KBs, die die von Microsoft bereitgestellten mobilen Arbeitsbereiche aktivieren.</td>
 <td>Weitere Informationen finden Sie in folgenden Themen:
 <ul>
 

@@ -17,17 +17,17 @@ ms.author: bis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 43167cc36398d3f7f8d639187f67fad1bae8082f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
 ms.contentlocale: de-de
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="warehouse-management"></a>Lagerortverwaltung
 
 [!include[banner](../includes/banner.md)]
 
-Das Lagerortverwaltungsmodul für Dynamics 365 for Finance and Operations, Enterprise Edition, ermöglicht es Ihnen, Lagerortprozesse in der Fertigung, der Verteilung und in Einzelhandelsunternehmen zu verwalten. Dieses Modul verfügt über eine breite Palette von Funktionen, um die Räumlichkeiten des Lagerorts in optimaler Weise und jederzeit zu unterstützen. Lagerortverwaltung ist vollständig mit anderen Geschäftsprozessen in Finance and Operations integriert, wie beispielsweise Transport, Herstellung, Qualitätskontrolle, Einkauf, Übertragung, Vertrieb und Retouren.
+Das Lagerortverwaltungsmodul für Dynamics 365 for Finance and Operations ermöglicht es Ihnen, Lagerortprozesse in der Fertigung, der Verteilung und in Einzelhandelsunternehmen zu verwalten. Dieses Modul verfügt über eine breite Palette von Funktionen, um die Räumlichkeiten des Lagerorts in optimaler Weise und jederzeit zu unterstützen. Lagerortverwaltung ist vollständig mit anderen Geschäftsprozessen in Finance and Operations integriert, wie beispielsweise Transport, Herstellung, Qualitätskontrolle, Einkauf, Übertragung, Vertrieb und Retouren.
 
 ## <a name="get-started"></a>Erste Schritte
 Um das Arbeiten mit der Lagerortverwaltung zu beginnen, müssen Sie die Einrichtung der allgemeinen Lagerortparameter abschließen, um die Geschäftsprozesse Ihres Unternehmens zu unterstützen.

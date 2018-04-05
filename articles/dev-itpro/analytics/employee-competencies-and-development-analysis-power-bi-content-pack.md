@@ -1,6 +1,6 @@
 ---
 title: Power BI Inhalt Mitarbeiterkompetenzen und -entwicklung
-description: In diesem Thema wird der Finance and Operations - Power BI-Inhalt "Mitarbeiterkompetenz und Entwicklung" beschrieben.
+description: "In diesem Thema wird der Power BI-Inhalt „Finance and Operations – Mitarbeiterkompetenz und Entwicklung” beschrieben."
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 99fa6e396989e6e204d84cc776f627c7c4baf1d1
+ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
+ms.openlocfilehash: 0769596c5ebaed1f5698d596d66d6f0334d5fcc2
 ms.contentlocale: de-de
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/19/2017
 [!include[banner](../includes/banner.md)]
 
 
-In diesem Thema wird der Finance and Operations - Power BI-Inhalt "Mitarbeiterkompetenz und Entwicklung" beschrieben. 
+In diesem Thema wird der Power BI-Inhalt „Finance and Operations – Mitarbeiterkompetenz und Entwicklung” beschrieben. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Berichte, die im Paket enthalten sind
 Nachdem Sie das Inhaltspaket mit Ihren Finance and Operations-Daten verbunden haben, zeigen die Berichte die Daten Ihrer Organisation an. Wenn Sie bisher noch nie Microsoft Power BI verwendet haben, finden Sie weitere Informationen unter [Erste Schritte in Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Die Berichte, die im Paket enthalten sind, haben Diagrammen und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.

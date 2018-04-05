@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad76f286d16b149affa110aef75874a52b66798f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 34dac634e09a8daa8a22b9f1efbc18ca44444e21
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -54,7 +54,7 @@ Verwenden Sie die Seite **Berechnung für Fälligkeitsdatum der Rechnungsausstel
 Sie können auch Datumskontrollenparameter einrichten, um sicherzustellen, dass Debitorenrechnungen und Gutschriften für Debitorentransaktionen innerhalb des angegebenen Zeitraums generiert werden, nachdem die Lieferung erfolgt ist. Sie finden diese Parameter im Bereich **Rechnungsdatenkontrolle** auf der Seite **Debitorenkontenparameter**.
 
 ## <a name="example"></a>Beispiel
-Um bei Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition einzurichten, dass Fälligkeitsdaten für die Ausstellung von Rechnungen für Lieferungen innerhalb der EU am 15. Tag des Folgemonats, nachdem die Lieferung zugestellt wurde, berechnet werden, erstellen Sie einen Datumsintervallcode und eine Berechnungsregel, die die folgenden Einstellungen besitzen:
+Um Microsoft Dynamics 365 for Finance and Operations einzurichten, um die Fälligkeitsdaten für die Ausstellung von Rechnungen für Lieferungen innerhalb der EU am 15. Tag des Folgemonats, nachdem die Lieferung zugestellt wurde, zu berechnen, erstellen Sie einen Datumsintervallcode und eine Berechnungsregel, die die folgenden Einstellungen besitzen:
 
 ### <a name="date-interval-code"></a>Datumsintervallcode
 
@@ -79,7 +79,7 @@ Um bei Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition ein
 Nachdem Sie die Parameter eingerichtet haben, die zur Berechnung von Fälligkeitsdaten für die Ausstellung von Rechnungen verwendet werden, können Sie die folgenden Transaktionen erstellen und buchen, um die Fälligkeitsdaten für die Ausstellung von Rechnungen automatisch zu berechnen und zu aktualisieren:
 
 -   **Aufträge** – Wenn Sie einen Auftrag erstellen und einen Lieferschein buchen, wird das Fälligkeitsdatum für die Ausstellung der Rechnung berechnet und auf dem Lieferschein aktualisiert. Das Fälligkeitsdatum wird anhand des Datumsintervalls berechnet, das dem Land/der Region zugewiesen ist, das in der Lieferadresse des Auftrags angegeben ist. Nachdem Sie den Lieferschein gebucht haben, können Sie das Fälligkeitsdatum der Rechnungsausstellung im Feld **Fälligkeitsdatum für Rechnungserstellung** auf der Seite **Lieferscheinerfassung** überprüfen. (Klicken Sie auf **Vertrieb und Marketing** &gt; **Auftrag** &gt; **Auftragsversand** &gt; **Lieferschein**.) Sie können alle Lieferscheine, die nicht fakturiert werden, und das Rechnungsausgabefälligkeitsdatum auf der Seite **Lieferscheine nicht fakturiert** anzeigen. (Klicken Sie auf **Vertrieb und Marketing** &gt; **Auftrag** &gt; **Versandgebühr** &gt; **Nicht in Rechnung gestellte Lieferscheine**.)
--   **Bestellungen** – Wenn Sie eine Bestellung erstellen und einen Produktzugang buchen, wird das Fälligkeitsdatum für die Ausstellung der Rechnung berechnet und auf dem Produktzugang aktualisiert. Das Fälligkeitsdatum wird anhand des Datumsintervalls berechnet, das dem Land bzw. der Region zugewiesen ist, das bzw. die in der primären Adresse des Kreditors angegeben ist. Nachdem Sie den Produktzugang gebucht haben, können Sie das Fälligkeitsdatum der Rechnungsausstellung im Feld **Fälligkeitsdatum für Rechnungserstellung** auf der Seite **Produktzugangserfassung** überprüfen. (Klicken Sie auf **Beschaffung** &gt; **Bestellungen** &gt; **Produkte Empfangen** &gt;  **Produktzugang**.) Sie können alle Produktzugänge, die nicht fakturiert werden, und ihr Rechnungsausgabefälligkeitsdatum, auf der Seite **Produktzugänge nicht fakturiert** anzeigen. (Klicken Sie auf ** Beschaffung**&gt; **Bestellungen** &gt; **Empfangene Produkte** &gt; **Nicht fakturierte Produktzugänge**.)
+-   **Bestellungen** – Wenn Sie eine Bestellung erstellen und einen Produktzugang buchen, wird das Fälligkeitsdatum für die Ausstellung der Rechnung berechnet und auf dem Produktzugang aktualisiert. Das Fälligkeitsdatum wird anhand des Datumsintervalls berechnet, das dem Land bzw. der Region zugewiesen ist, das bzw. die in der primären Adresse des Kreditors angegeben ist. Nachdem Sie den Produktzugang gebucht haben, können Sie das Fälligkeitsdatum der Rechnungsausstellung im Feld **Fälligkeitsdatum für Rechnungserstellung** auf der Seite **Produktzugangserfassung** überprüfen. (Klicken Sie auf **Beschaffung** &gt; **Bestellungen** &gt; **Produkte Empfangen** &gt;  **Produktzugang**.) Sie können alle Produktzugänge, die nicht fakturiert werden, und ihr Rechnungsausgabefälligkeitsdatum, auf der Seite **Produktzugänge nicht fakturiert** anzeigen. (Klicken Sie auf **Beschaffung** &gt; **Bestellungen** &gt; **Empfangene Produkte** &gt; **Nicht fakturierte Produktzugänge**.)
 
 ## <a name="technical-information-for-system-administrators"></a>Technische Informationen für Systemadministratoren
 Wenn Sie keinen Zugriff auf die Seiten für die Durchführung der in diesem Artikel beschriebenen Aufgaben haben, wenden Sie sich mit den Informationen aus der folgenden Tabelle an Ihren Systemadministrator.
