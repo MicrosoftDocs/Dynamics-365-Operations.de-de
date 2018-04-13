@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-linked-products"></a>Verknüpfte Produkte konfigurieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Konfigurieren von verknüpften Produkten. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet und es wird vorausgesetzt, dass beide Produkte bereits erstellt und freigegeben wurden.
 

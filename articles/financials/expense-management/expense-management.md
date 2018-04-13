@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="expense-management"></a>Spesenverwaltung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Die Spesenverwaltung ermöglicht das Erstellen eines integrierten Workflows zum Speichern von Informationen zu Zahlungsmethoden, zum Importieren von Kreditkartenbuchungen sowie zum Überwachen der monetären Ausgaben, die von den Mitarbeitern dem Unternehmen gegenüber als Spesen geltend gemacht werden. Sie haben auch die Möglichkeit zum Erstellen von Ausgabenrichtlinien sowie zum Automatisieren der Reisekostenerstattung. 
 

@@ -23,7 +23,7 @@ ms.lasthandoff: 03/12/2018
 ---
 
 # <a name="assortment-management"></a>Sortimentsverwaltung
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Überblick
 Microsoft Dynamics 365 for Retail stellt *Sortimente* bereit, mit denen Sie die Produktverfügbarkeitskanälen verwalten können. Sortimente bestimmen, welche Produkte für bestimmte Shops und für einen bestimmten Zeitraum verfügbar sind.

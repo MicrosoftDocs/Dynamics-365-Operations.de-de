@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Zeit- und Anwesenheitserfassung
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen. Dieses Thema beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen. 
 
@@ -95,7 +94,7 @@ Sie können einen Workflowgenehmigungsprozess einrichten, mit dem Erfassungen, d
 | Zeit und Anwesenheitstage gesamt            | Der Workflow prüft Erfassungen z. B. gegen die erwarteten Anzahl von Arbeitsstunden für den Tag. |                                                                                                                                                                                                                                                       |
 | Zeit und Anwesenheit-Journalerfassung. | Im Workflow wird jeder Erfassungstyp mit dem Datum der Erfassung abgeglichen.                           | Zeit und Anwesenheit • Einstempeln • Ausstempeln • Abwesenheit • Pause • Wechselcode • Projekt • Projektaktivität • Produktionseinzelvorgänge der indirekten Aktivität • Warten davor • Einstellungen • Prozess • Überlappen • Transport • Warten danach • Assistenten starten • Assistenten stoppen |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a>Genehmigte Erfassungen übertragen
 Nach dem Genehmigen der Erfassungen können Sie sie an einen periodischen Lohneinzelvorgang übertragen. Eine übertragene Erfassung wird für die Aktivität oder den Einzelvorgang gebucht, auf die sie sich bezieht, z. B. einen Produktionsauftrag oder ein Projekt. Es werden anhand der Erfassungen Lohnabrechnungsbuchungen für jede Arbeitskraft generiert.  

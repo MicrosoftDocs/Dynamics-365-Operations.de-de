@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Einzelner Beleg mit mehreren Debitoren- oder Kreditorendatensätzen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen. Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 for Finance and Operations nicht mehr zur Verfügung stehen. Folglich wird nicht empfohlen, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung. 
 
@@ -251,7 +250,7 @@ Um unerwünschte Probleme bei zukünftigen Ausgleichen für diese Buchung zu ver
 | 001         | Kunde         | US-008      |                 |           |  75,00     | Unternehmen          | 999999---          |
 | 002         | Lieferant           | 1001        |                 |  75,00    |            | Unternehmen          | 999999---          |
 
- 
+
 
 
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0.1 (Mai 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel werden die Funktionen beschrieben, die in Microsoft Dynamics AX 7.0.1 entweder neu oder geändert sind. Diese Version wurde im Mai 2016 veröffentlicht und hat die Build-Nummer 7.0.1265.23014.
 
@@ -44,12 +43,14 @@ In diesem Artikel werden die Funktionen beschrieben, die in Microsoft Dynamics A
 | Konfigurieren von ER-Zielen für die Umleitung des Ausgabeergebnisses eines Formats an ein bestimmtes Ziel: Datei, E-Mail und Archivierung (Microsoft SharePoint-Ordner oder Microsoft Azure Storage). | Zuvor wurde bei der Ausführung einer ER-Konfiguration ein Meldungsfeld angezeigt, bei dem eine Benutzeraktion zum Speichern oder Öffnen einer Datei erforderlich war. Sie können nun ein separates Ziel für jede Formatkonfiguration und für jede Ausgabenkomponente (einen Ordner oder eine Datei) vorkonfigurieren. Benutzer, die entsprechende Zugriffsrechte haben, können auch Zieleinstellungen zur Laufzeit ändern. |
 
 ## <a name="pos--microsoft-dynamics-ax-retail"></a>POS – Microsoft Dynamics AX Retail
+
 |                                |                                                                                                                                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Wie können Sie vorgehen?**           | **Warum ist dieses wichtig?**                                                                                                                                                              |
 | Verwenden des Google Chrome-Browsers. | Einzelhändler können nun Cloud POS über den Chrome-Browser nutzen und alle Funktionen verwenden, die in der Microsoft Edge und Internet Explorer über Cloud POS verfügbar sind. |
 
 ## <a name="financial-reporting"></a>Finanzberichterstellung
+
 |                                                                     |                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Wie können Sie vorgehen?**                                                | **Warum ist dieses wichtig?**                                                                                                                                                                                                                                                                                         |
@@ -57,12 +58,14 @@ In diesem Artikel werden die Funktionen beschrieben, die in Microsoft Dynamics A
 | Sie können nicht mehr ungültige Designer Berichtsoptionen auswählen. | Mehrere Designer-Optionen, die in den veröffentlichten Versionen von Management Reporter verwendeten wurden, gelten nicht für diese Version von Dynamics AX. Diese Optionen betrafen das Finanzberichtsdesign, die Ausgabe und das Verknüpfen. Diese Optionen wurden aus dem Finanzberichtsdesigner entfernt, um Benutzerfehler zu verhindern. |
 
 ## <a name="financial-management"></a>Finanzverwaltung
+
 |                                                            |                                                                  |
 |------------------------------------------------------------|------------------------------------------------------------------|
 | **Wie können Sie vorgehen?**                                       | **Warum ist dieses wichtig?**                                       |
 | Generieren positiver Lohndateien für Kreditorenkontozahlungen. | Um Scheckbetrug zu verhindern können positive Lohndateien generiert werden. |
 
 ## <a name="warehouse-and-production"></a>Lagerort und Produktion
+
 |                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Wie können Sie vorgehen?**                                                                                                                                                                                                                                                                                                                                                                    | **Warum ist dieses wichtig?**                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -72,7 +75,7 @@ In diesem Artikel werden die Funktionen beschrieben, die in Microsoft Dynamics A
 | Fertigungsaufträge mit Zirkularitätsstrukturen auf der ersten Ebene ihrer Stücklisten sind von der Kalkulation der Materialressourcenplanung auf Stücklistenebene ausgeschlossen.                                                                                                                                                                                                                                     | Es ist nicht möglich, korrekte Stücklistenebenen zu Produktvarianten für Fertigungsaufträge zuzuweisen die einen in der Stücklistenhierarchie einen Verweis auf sich selbst darstellen.                                                                                                                                                                                                                                                                                                  |
 | Berechnen Sie separate Stücklistenebenen für die Materialressourcenplanung und Kostenkalkulation: Für die Materialressourcenplanung werden Stücklistenebenen in der neuen Tabelle **ReqItemLevel** kalkuliert. Beendete Fertigungsaufträge werden bei der Berechnung ignoriert. • Für die Berechnung der Produktionskosten werden Stücklistenebenen in der Tabelle **InventTable** berechnet. Beendete Fertigungsaufträge werden bei der Berechnung einbezogen. | • Bei der Ausführung der Materialressourcenplanung (beispielsweise die Produktprogrammplanplanung und -auflösung) müssen nur Stücklistenebenen neu berechnet werden, die zur Materialressourcenplanung genutzt werden. Es ist also nicht erforderlich die zur Produktionskostenberechnung verwendeten Stücklistenebenen neu zu berechnen. • Bei der Ausführung von Nachkalkulationsvorgängen (beispielsweise der Lagerabschluss) müssen nur zur Produktionskostenkalkulation verwendete Stücklistenebenen neu berechnet werden. |
 
- 
+
 
 <a name="see-also"></a>Siehe auch
 --------

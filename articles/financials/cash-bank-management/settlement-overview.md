@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview"></a>Ausgleichsüberblick
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält allgemeine Informationen zum Ausgleichsprozess. Er beschreibt die Buchungstypen, die ausgeglichen werden können, wann und wie Buchungen ausgeglichen werden und die Ergebnisse des Ausgleichsprozesses.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>Gehalts-/Vergütungsstruktur und -pläne entwickeln
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Aufgabe führt Schritt für Schritt durch den Prozess der Erstellung eines "Festen Vergütungsplans" und ermöglicht es Mitarbeitern, in dem Plan durch Berechtigungsregeln registriert zu werden. Das Demodatunternehmen, das verwendet wird, um diese Aufgabe erstellen, ist USMF, und die Aufgabe ist für "Leiter Vergütungen/Bezüge" bestimmt.
 

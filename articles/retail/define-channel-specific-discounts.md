@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-channel-specific-discounts"></a>Kanalspezifische Rabatte definieren
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Einzelhändler legen häufig verschiedene Rabatte in verschiedenen Kanälen fest. Dieses Thema prüft die Konzepte, die Sie kennen müssen, um einen Rabatt für einen bestimmten Kanal zu erstellen. 
 
@@ -61,7 +60,7 @@ Das folgende Beispiel veranschaulicht die Aufgaben zur Einrichtung von Kanalraba
 4.  Nachdem Sie den neuen Rabatt **Zurück zur Schule** erstellt haben, müssen Sie auf **Preisgruppen** oben auf der Seite **Rabatt** klicken. Die **Rabattpreisgruppen**-Seite wird geöffnet. Danach klicken Sie auf **Neu** und wählen die Preisgruppe **Houston-PG** aus.
 5.  Jetzt können Sie den Rabatt aktivieren und für den Kanal umsetzen.
 
- 
+
 
 <a name="see-also"></a>Siehe auch
 --------

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="expense-reports-and-multiple-approvers"></a>Spesenabrechnungen und mehrere Genehmiger
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Je nach den Ausgabengenehmigungsrichtlinien der Organisation müssen u. U. mehrere Personen eine Spesenabrechnung genehmigen, die von einem Mitarbeiter eingereicht wird. Wenn Sie den Workflowprozess für die Genehmigung von Spesenabrechnungen einrichten, können Sie Workflowelemente hinzufügen, die Aufgaben oder Schritte für eine oder mehrere für Spesenabrechnungen zuständige genehmigende Personen enthalten. Sie können beispielsweise anfordern, dass alle Spesenabrechnungen zunächst vom Vorgesetzten des Mitarbeiters genehmigt werden, der die Abrechnung eingereicht hat, und dann vom Kreditorenkoordinator.
 

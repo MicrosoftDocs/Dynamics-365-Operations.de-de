@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-repeat-purchase-order"></a>Eine wiederholte Bestellung erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie man eine Wiederholungsbestellung (PO) erstellt, indem Positionen von früheren Bestelldokumenten zu einer neuen Bestellung oder einer vorhandenen Bestellung kopiert werden. Es gibt zwei Methoden für die Erstellung von Wiederholungsaufträgen. Sie können die Aktivitäten verwenden, die auf dem Dokumentenniveau vom Aktionsbereich verfügbar sind, oder Sie können die Positionsdetailaktivitäten verwenden. Die Aktivitäten auf Dokumentebene sind hauptsächlich dazu bestimmt, eine neue Bestellung zu erstellen, indem Positionen und Kopfzeileninformationen aus einem anderen Auftrag hinzugefügt werden, während die Positionsdetailaktivität hauptsächlich dazu dient, Positionen aus einem vorhandenen Auftrag hinzuzufügen. Das Beispiel, das in diesem Leitfaden angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden. Normalerweise wird diese Aufgabe von einem Einkaufsvertreter ausgeführt.
 

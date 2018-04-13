@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit"></a>Akkreditive
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kreditbriefe sind Bankdokumente, die häufig für den Einkauf und Verkauf im internationalen Warenverkehr verwendet werden. 
 

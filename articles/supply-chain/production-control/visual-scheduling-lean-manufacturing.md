@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuelle Zeitplanung für Lean Manufacturing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht, die der Produktionsplaner verwenden kann, um den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren.
 

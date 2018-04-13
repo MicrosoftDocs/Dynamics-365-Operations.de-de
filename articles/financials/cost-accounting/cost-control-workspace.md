@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-control-overview"></a>Überblick der Kostensteuerung 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Der Arbeitsbereich **Kostensteuerung** ist ein zentraler Punkt, in dem Manager, die zum Steuern des Kostenträgers des Satzes oder Kostenträger in eine Dimension oder zu Dimensionen (zum Beispiel Kostenstellen und Produktgruppen) zuständig sind, Berichte zugreifen können. Die Berichte im Arbeitsbereich werden vollständig von den Kostenbuchhaltern verwaltet, damit das Layout und die Daten, die für die Berichtserstattung verwendet werden, in der gesamten Organisation konsistent sein können.
 

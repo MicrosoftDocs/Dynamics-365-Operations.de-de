@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order"></a>Eine Bestellung erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie Sie eine Bestellung manuell erstellen. Es ist typischer, dass Bestellungen automatisch als Ergebnis des Produktprogrammplans, der Direktlieferung und anderer Prozesse erstellt werden. Bestellungen werden normalerweise von einem Einkaufsvertreter erstellt. Das Beispiel, das hier angezeigt wird, kann im USMF-Demodatunternehmen verwendet werden. Dabei können die Werte verwendet werden, die in den Hinweisen für verschiedene Schritte vorgeschlagen werden.
 

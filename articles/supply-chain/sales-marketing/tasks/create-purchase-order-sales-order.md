@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Erstellen einer Bestellung auf Grundlage eines Auftrags
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie Sie eine Bestellung erstellen, die auf einem Auftrag basiert. Die Mengen des Produkts in der Bestellung werden dann entsprechend festgelegt, um den Bedarf des ursprünglichen Auftrags zu erfüllen. Zufriedenstellende Verkäufe verlangen, dass diese Methode eine Alternative für eine umfassendere und optimierte Methode der Vertriebsbedarfsplanung ist. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.
 

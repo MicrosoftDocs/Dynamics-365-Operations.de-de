@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Produktbezogene Übersetzungen – FAQ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Übersetzungen für Produkte, Produktdimensionswerte und Produktattribute verwaltet werden. 
 
@@ -95,8 +94,7 @@ Ein Debitor möchte mehrere kleinere, rote T-Shirts kaufen und der Name des T-Sh
 <tbody>
 <tr class="odd">
 <td>Um die bevorzugte Sprache eines Debitors festzulegen, führen Sie folgende Schritte aus:
-<ol>  
-<li>Klicken Sie auf <strong>Vertrieb und Marketing</strong> &gt; <strong>Allgemein</strong> &gt; <strong>Debitoren</strong> &gt; <strong>Alle</strong> <strong>Debitoren</strong>.</li>
+<ol><br/><li>Klicken Sie auf <strong>Vertrieb und Marketing</strong> &gt; <strong>Allgemein</strong> &gt; <strong>Debitoren</strong> &gt; <strong>Alle</strong> <strong>Debitoren</strong>.</li>
 <li>Doppelklicken Sie auf ein Debitorenkonto, um die Seite <strong>Debitor</strong> zu öffnen. Wählen Sie auf der Registerkarte <strong>Allgemeines</strong> im Feld <strong>Sprache</strong> die gewünschte <strong>Sprache</strong> aus.</li>
 </ol></td>
 </tr>

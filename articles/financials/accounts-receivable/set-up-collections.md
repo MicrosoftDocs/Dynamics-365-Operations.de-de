@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>Kredit und Inkasso einrichten
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden.
 
@@ -97,9 +96,9 @@ Ist kein Verkäufer angegeben, wird der primäre Verkäufer für die Organisatio
 Weitere Informationen finden Sie in folgenden Themen:
 
  - [Mahnschreibensequenzen einrichten](tasks/create-collection-letter-sequence.md)
- 
+
  - [Mahnschreiben verarbeiten](tasks/process-collection-letters.md)
- 
+
  - [Inkassoinformationen überprüfen](tasks/review-collections-information.md)
 
 

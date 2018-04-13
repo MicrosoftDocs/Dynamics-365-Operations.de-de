@@ -25,7 +25,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="tax-directives-for-europe"></a>Steuerrichtlinien für Europa
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Die EU-Direktive bietet Bestimmungen, die von allen Mitgliedsstaaten befolgt werden müssen, in Bezug auf Rechnungsregeln und Informationen, die bei der Rechnungserstellung beachtet werden müssen. Die EU-Direktive führt Informationen auf, die von Lieferanten für seine Kunden in der EU erforderlich sind. Beispielsweise könnte eine Rechnung eine Referenz enthalten, die den rechtlichen Gründe für eine Nullbewertung der Mehrwertsteuer oder eine Ausnahme beschreibt. Wenn mit einer Rechnung eine zuvor ausgestellte Rechnung angepasst wird, beispielsweise eine Gutschrift, muss eine eindeutige Referenz zur ursprünglichen Rechnung vorgenommen werden.
 

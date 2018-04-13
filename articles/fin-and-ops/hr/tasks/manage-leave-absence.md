@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-leave-of-absence"></a>Beurlaubung verwalten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung von Sonderurlaubs-Datensätzen für Mitarbeiter. Sie können Abwesenheitszeit nach Ursachen nachverfolgen. Dazu gehören medizinischen, pädagogischen oder elterliche Aktivitäten. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

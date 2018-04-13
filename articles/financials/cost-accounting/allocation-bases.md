@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Zuteilungsbasen 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Eine Zuteilungsbasis ist die Basis, auf der die Kostenrechnung Gemeinkosten zuteilt. Eine Zuteilungsbasis kann eine Menge, wie Maschinenstunden, die verwendet werden, Kilowattstunden (kWh), die verbraucht werden, oder Grundfläche sein, die beansprucht wird. Zuteilungsbasen werden meistens verwendet, um Gemeinkosten dem Bestand zuzuweisen, der erstellt wird. Beispielsweise weist eine IT-Abteilung die Ausgaben gemäß der Anzahl von Computern zu, die jede Abteilung verwendet.
 
@@ -424,9 +424,11 @@ Hier wird die Formel für CC003 (IT) genauer betrachtet:
 
 Dies ist das Beispiel einer Kostenaufteilungsregel, wenn die vordefinierte Fomelzuordnungsbasis für "Strom fix" als die darin verwendete Zuordnungsbasis zugewiesen wird.
 
-| Kostenobjekt |  Beschreibung  | Größe | Zuweisungsfaktor                |
-|-------------|----|-----------|----------------------------------|
-| CC001       | Personalverwaltung | 1,837.50  | (1.837,50 ÷ 18.162,50) × Betrag  |
-| CC002       | FI | 3,075.00  | (3.075,00 ÷ 18.162,50) × Betrag  |
-| CC003       | LU | 13,250.00 | (13.250,00 ÷ 18.162,50) × Betrag |
+
+| Kostenobjekt | Beschreibung | Größe |        Zuweisungsfaktor         |
+|-------------|-------------|-----------|----------------------------------|
+|    CC001    |     Personalverwaltung      | 1,837.50  | (1.837,50 ÷ 18.162,50) × Betrag  |
+|    CC002    |     FI      | 3,075.00  | (3.075,00 ÷ 18.162,50) × Betrag  |
+|    CC003    |     LU      | 13,250.00 | (13.250,00 ÷ 18.162,50) × Betrag |
+
 

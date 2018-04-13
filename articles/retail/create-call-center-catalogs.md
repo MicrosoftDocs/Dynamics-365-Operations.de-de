@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-call-center-catalog"></a>Erstellen eines Callcenterkatalogs
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dieser Artikel bietet einen Überblick über den Prozess zum Erstellen eines Katalogs für ein Callcenter. 
 

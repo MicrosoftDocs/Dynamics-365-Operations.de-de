@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Attribute, Attributgruppen und ihre Zuordnungen mit unterschiedlichen Retail-Entitäten in Finance and Operations.
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 *Attribute* enthalten eine weitere Möglichkeit, ein Produkt und dessen Eigenschaften nach benutzerdefinierte Felder (wie **Speichergröße**, **Festplattenkapazität**, **Ist der kompatible Energiestern**, usw.) zu beschreiben. In Microsoft Dynamics 365 for Finance and Operations können Attributte unterschiedlichen Retailentitäten zugeordnet werden, wie Produktkategorien und Retailkanäle und Standardwerte können für sie festgelegt werden. Produkte erben deren Attribute und Standardwerte für diese Attribute, wenn sie Produktkategorien oder Retailkanälen zugeordnet sind. Die Standardwerte können auf der Einzelproduktebene, Retailkanalebene oder in einem Retailkatalog überschrieben werden.
  
@@ -227,13 +227,13 @@ Eine oder mehrere Attributgruppen kann zu einem oder mehreren Retailgeschäften 
 5. Auf dem Inforegister **Produkte** aktivieren Sie das erforderliche Produkt aus, und wählen Sie anschließend **Attribute** über dem Produktraster aus.
 6. Auf den folgenden Inforegistern aktualisieren Sie die Werte die erforderlichen Attribute:
 
-    - Gemeinsam genutzte Produktmedien
-    - Gemeinsam genutzte Produktattribute
-    - Kanalmedien
-    - Kanalspezifische Produktattribute
+   - Gemeinsam genutzte Produktmedien
+   - Gemeinsam genutzte Produktattribute
+   - Kanalmedien
+   - Kanalspezifische Produktattribute
 
-    > [!NOTE]
-    > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
+     > [!NOTE]
+     > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
 
 ![Katalog-Produktattributwertgruppen](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ Eine oder mehrere Attributgruppen kann zu einem oder mehreren Retailgeschäften 
 
 5. Auf den folgenden Inforegistern aktualisieren Sie die Werte die erforderlichen Attribute:
 
-    - Gemeinsam genutzte Produktmedien
-    - Gemeinsam genutzte Produktattribute
-    - Kanalmedien
-    - Kanalspezifische Produktattribute
+   - Gemeinsam genutzte Produktmedien
+   - Gemeinsam genutzte Produktattribute
+   - Kanalmedien
+   - Kanalspezifische Produktattribute
 
-    > [!NOTE]
-    > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
+     > [!NOTE]
+     > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
 

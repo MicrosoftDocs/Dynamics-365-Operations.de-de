@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Die Kanban-Umlagerungsübersicht unterstützt die Scanner-Eingabe von einem Widgetstrichcodescanner bei der Auswahl, dem Starten, dem Abschluss und dem Leeren eines Kanban-Einzelvorgangs.
 
@@ -38,6 +37,7 @@ Die Kanban-Umlagerungsübersicht unterstützt die Scanner-Eingabe von einem Widg
 ------------------
 
 Auf dem Inforegister **Scanner-Erfassung** können Sie den Registrierungsmodus auswählen, der die Aktivität steuert, wenn Sie eine Kanban-Kartennummer scannen oder manuell im Nummernfeld eingeben.
+
 | Erfassungsmodus festlegen | Beschreibung                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | Start                 | Registriert einen Kanban-Umlagerungseinzelvorgang als 'In Bearbeitung'.                                                 |

@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-new-product-lifecycle-state"></a>Erstellen eines neuen Produktlebenszyklus-Status
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie ein neuer Produktlebenszyklus-Status erstellt wird. Ein Produktlebenszyklusstatus dokumentiert den Lebenszyklusstatus eines freigegebenen Produkts oder Produktvariante. Produktlebenszyklusstatus werden vom Benutzer, in der Regel ein Produktmanager oder ein Produktmasterdatenmanager, definiert. Bestimmte Geschäftsprozesse, wie beispielsweise Produktprogrammplan, können von einem bestimmten Lebenszyklusstatus betroffen sein.
 

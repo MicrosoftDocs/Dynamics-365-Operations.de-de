@@ -26,7 +26,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="welcome-to-human-resources"></a>Willkommen in der Personalverwaltung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Personalverwaltungen rationalisieren viele routinemäßige Protokollierungsaufgaben und automatisieren zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Darüber hinaus bieten sie einen Rahmen für Personalverwaltungsmitarbeiter, um die Bereiche, für die sie zuständig sind, zu verwalten. Diese Bereiche umfassen das Beschaffen und Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement.
 

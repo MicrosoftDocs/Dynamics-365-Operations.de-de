@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Aufträge direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>RFM-Alyse einrichten
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie ein Recency-, Häufigkeits- und monetäre (RFM) Analyse Ihrer Debitoren eingerichtet wird.
 
@@ -60,25 +59,25 @@ Wenn Ihre Organisation für die Bewertung eine Aggregatzahl verwendet, werden di
     - Wenn jeder Abschnitt der RFM-Punktzahl eine gleiche Anzahl von Debitoren enthalten muss, aktivieren Sie das Kontrollkästchen **Gleiche Verteilung**. 
     - Aktivieren Sie das Kontrollkästchen **Bewertungen hinzufügen**, um die drei Bewertungen zusammenzuzählen. Dies würde beispielsweise einem Debitor eine RFM-Punktzahl von 13 statt 535 geben. 
     - Aktivieren Sie das Kontrollkästchen **Historie speichern**, um festzulegen, dass das System die statistischen Daten für Debitoren speichert, sodass die Daten verwendet werden können, um die RFM-Punktzahl zu berechnen.
-  
+
 5.  Führen Sie auf dem Inforegister **Recency** die folgenden Schritte aus: 
     - Geben Sie im Feld **Divisionen** die Anzahl der Divisionen oder Gruppen ein, die verwendet werden, um die Recency-Punktzahl für Debitoren zu berechnen. Wenn Sie beispielsweise 100 Debitoren haben, bedeutet eine Division 5, dass es 20 Debitoren für jede Bewertung gibt. Die 20 Debitoren, die zuletzt Einkäufe tätigten, haben eine Recency-Punktzahl von 5. Die nächsten 20 Debitoren haben eine Recency-Punktzahl von 4, usw. Wenn Sie 50 Debitoren haben, haben 10 Debitoren eine Recency-Punktzahl 5, 10 haben eine Recency-Punktzahl 4, usw. 
     - Wählen Sie im Feld **Priorität** aus, wie viel Gewicht der Recency-Parameter im Verhältnis zu den anderen Parametern haben soll, wenn die RFM-Punktzahl für einen Debitor berechnet wird. Beispielsweise können Sie mehr Gewicht auf die Recency-Punktzahl als die monetäre Punktzahl legen. 
     - Geben Sie im Feld **Multiplizierer** den Wert ein, mit dem die Recency-Punktzahl multipliziert werden soll. Wenn Sie keinen Wert eingeben, wird die Punktzahl nicht multipliziert. 
     - Wählen Sie im Feld **Periode** die Zeitperiode aus, bis zu der die Recency-Punktzahl berechnet wird. Beispielsweise nach Wochen oder nach Monaten.
-   
+
 6.  Führen Sie auf dem Inforegister **Häufigkeit** die folgenden Schritte aus: 
     - Geben Sie im Feld **Divisionen** die Anzahl der Divisionen oder Gruppen ein, die verwendet werden, um die Häufigkeitspunktzahl für Debitoren zu berechnen. 
     - Wählen Sie im Feld **Priorität** aus, wie viel Gewicht der Häufigkeitsparameter im Verhältnis zu den anderen haben soll, wenn die RFM-Punktzahl für einen Debitor berechnet wird. 
     - Geben Sie im Feld **Multiplizierer** den Wert ein, mit dem die Häufigkeitspunktzahl multipliziert werden soll. Wenn Sie keinen Wert eingeben, wird die Punktzahl nicht multipliziert.
-   
+
 7.  Führen Sie auf dem Inforegister **Geldbetrag** die folgenden Schritte aus: 
     - Geben Sie im Feld **Divisionen** die Anzahl der Divisionen oder Gruppen ein, die verwendet werden, um die Geldbetragspunktzahl für Debitoren zu berechnen. 
     - Wählen Sie im Feld **Priorität** aus, wie viel Gewicht der Geldbetragsparameter im Verhältnis zu den anderen haben soll, wenn die RFM-Punktzahl für einen Debitor berechnet wird. 
     - Geben Sie im Feld **Multiplizierer** den Wert ein, mit dem die Geldbetragspunktzahl multipliziert werden soll. Wenn Sie keinen Wert eingeben, wird die Punktzahl nicht multipliziert. 
     - Wählen Sie Feld **Brutto/netto** aus, ob die Geldbetragspunktzahl des Debitors nach dem Brutto- oder Nettobetrag der Rechnung berechnet werden soll. 
     - Wenn die Retourenbeträge eines Debitors von der gesamten Rechnungsberechnung des Debitors subtrahiert werden sollen, aktivieren Sie das Kontrollkästchen **Retouren subtrahieren**. 
- 
+
 ## <a name="view-a-customers-rfm-score"></a>RFM-Punktzahl eines Debitoren anzeigen
 Verwenden Sie diese Prozedur, um die RFM-Punktzahl eines Debitors anzuzeigen. 
 

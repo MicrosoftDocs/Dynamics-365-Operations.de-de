@@ -28,9 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="position-forecasting"></a>Positionsplanung
 
-[!include[banner](../includes/banner.md)]
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ausgaben, die Arbeitskräften zugeordnet sind, machen häufig einem Großteil der Kosten einer Organisation aus. Mit der Positionsplanung können Sie diese Ausgaben planen und in die Planung von Budgets einbeziehen.
 

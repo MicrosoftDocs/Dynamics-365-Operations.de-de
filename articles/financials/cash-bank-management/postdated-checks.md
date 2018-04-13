@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Vordatierte Schecks
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel bietet Informationen zur Unterstützung für vordatierte Schecks in Microsoft Dynamics 365 for Finance and Operations. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden.
 
@@ -76,14 +75,14 @@ Wenn Ihr Originalscheck an einen Händler oder von einem Kunden verloren ging od
 <td>Sie können einen vordatierten Scheck in diesen Fällen stornieren: - Die Bank verweigert die Annahme des Schecks.
 - Der Scheck wurde auf eine falsche Rechnung angewendet.
 - Für den Betrag des Schecks wird eine Barzahlung geleistet.
-</td>
-</tr>
-<tr class="even">
-<td>Beenden der Zahlung eines vordatierten Schecks.</td>
-<td>Sie können die Zahlung für einen vordatierten Scheck stoppen, der für einen Kreditor ausgestellt wurde. Gründe dafür können eine mangelnde Deckung, eine Änderung der vertraglichen Vereinbarungen mit dem Kreditor, die Lieferung fehlerhafter Waren durch den Kreditor oder die Rückgabe von Waren an den Kreditor sein. Sie können Zahlungen nur für Schecks stoppen, die noch nicht verrechnet wurden.</td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td>Beenden der Zahlung eines vordatierten Schecks.</td>
+  <td>Sie können die Zahlung für einen vordatierten Scheck stoppen, der für einen Kreditor ausgestellt wurde. Gründe dafür können eine mangelnde Deckung, eine Änderung der vertraglichen Vereinbarungen mit dem Kreditor, die Lieferung fehlerhafter Waren durch den Kreditor oder die Rückgabe von Waren an den Kreditor sein. Sie können Zahlungen nur für Schecks stoppen, die noch nicht verrechnet wurden.</td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

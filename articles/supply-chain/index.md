@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="supply-chain-management-home-page"></a>Startseite für Lieferkettenverwaltung
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Lieferkettenverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations. 
 

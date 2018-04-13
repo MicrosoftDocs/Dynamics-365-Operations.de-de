@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Einen Genehmigungsschritt in einem Workflow genehmigen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.
 
@@ -145,9 +144,9 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem der Genehmigungsschritt zugewie
     Wenn der Benutzer das Dokument nicht innerhalb der vorgesehenen Zeit bearbeitet, ist das Dokument überfällig. Ein überfälliges Dokument wird basierend auf den ausgewählten Optionen im Bereich **Eskalation** der Seite eskaliert.
 4.  Wenn Sie den Genehmigungsschritt mehreren Benutzern oder einer Gruppe von Benutzern zugewiesen haben, klicken Sie auf die Registerkarte **Vollendungsrichtlinie**, und wählen Sie eine der folgenden Optionen aus:
     -   **Einzelne genehmigende Person** – Die Aktivität für das Dokument wird von der ersten antwortenden Person bestimmt. Nehmen wir an, Steffen hat eine Spesenabrechnung in Höhe von 15.000 Euro eingereicht. Die Spesenabrechnung ist derzeit Saskia, Jens und Bastian zugewiesen. Falls Saskia die erste Person ist, die das Dokument beantwortet, wird ihre Aktivität für das Dokument übernommen. Falls Saskia das Dokument ablehnt, wird es abgelehnt und an Steffen zurückgesendet. Wenn Saskia das Dokument genehmigt, wird es zur Genehmigung an Anne gesendet. 
-    
+
     ![Workflow mit Genehmigungsprozesses](./media/workflow_multipleusersinstep.gif)
-    
+
     -   **Mehrheit der genehmigenden Personen** – Die Aktivität für das Dokument wird bei Antwort der Mehrheit der genehmigenden Personen bestimmt. Nehmen wir an, Steffen hat eine Spesenabrechnung in Höhe von 15.000 Euro eingereicht. Die Spesenabrechnung ist derzeit Saskia, Jens und Bastian zugewiesen. Falls Saskia und Jens die ersten beiden genehmigenden Personen sind, die antworten, wird ihre Aktivität für das Dokument übernommen.
         -   Wird das Dokument von Saskia genehmigt, von Jens jedoch abgelehnt, wird es abgelehnt und an Steffen zurückgesendet.
         -   Wird das Dokument sowohl von Saskia als auch von Jens genehmigt, wird es zur Genehmigung an Anne gesendet.

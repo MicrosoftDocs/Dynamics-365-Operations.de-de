@@ -26,8 +26,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="actual-vs-budget-power-bi-content"></a>Ist-Wert im Vergleich mit Budget-Power BI-Inhalt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird der **Istwert verglichen mit Budget**-Inhalt von Microsoft Power BI beschrieben. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen. 
 
@@ -41,24 +40,25 @@ Berichte vom **Istwert verglichen mit Budget** Power BI-Inhalt werden in **Sachk
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
 Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im **Ist-Wert im Vergleich mit Budget**-Power BI-Inhalt befindet.
 
-| Bericht                      | Metriken |
-|-----------------------------|---------|
-| Ausgaben – Istwert verglichen mit Budget | <ul><li>Diesjährige Gesamtausgaben</li><li>Diesjährige Budgetgesamtausgaben</li></ul> |
-| Umsatzerlös – Istwert im Vergleich zu Budget  | <ul><li>Diesjähriger Gesamtumsatz</li><li>Diesjähriger Budgetgesamtumsatz</li><ul> |
-| Spesen                     | <ul><li>Diesjährige Gesamtausgaben</li><li>Ziel der Ausgaben basierend auf Budget </li><ul> |
-| Umsatzerlös                     | <ul><li>Diesjähriger Gesamtumsatz</li><li>Ziel der Umsatzerlöse basierend auf Budget </li><ul> |
-| Nettoeinkommen                  | <ul><li>Diesjähriges Nettoeinkommen</li><li>Ziel des Nettoeinkommens basierend auf Budget </li><ul> |
 
+|           Bericht            |                                       Metriken                                        |
+|-----------------------------|--------------------------------------------------------------------------------------|
+| Ausgaben – Istwert verglichen mit Budget |  <ul><li>Diesjährige Gesamtausgaben</li><li>Diesjährige Budgetgesamtausgaben</li></ul>  |
+| Umsatzerlös – Istwert im Vergleich zu Budget  |   <ul><li>Diesjähriger Gesamtumsatz</li><li>Diesjähriger Budgetgesamtumsatz</li><ul>    |
+|           Spesen           | <ul><li>Diesjährige Gesamtausgaben</li><li>Ziel der Ausgaben basierend auf Budget </li><ul> |
+|           Umsatzerlös           |  <ul><li>Diesjähriger Gesamtumsatz</li><li>Ziel der Umsatzerlöse basierend auf Budget </li><ul>  |
+|         Nettoeinkommen          |  <ul><li>Diesjähriges Nettoeinkommen</li><li>Ziel des Nettoeinkommens basierend auf Budget </li><ul>  |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
-| Entität                    | Inhalt |
-|---------------------------|----------|
-| Hauptbuchaktivitäten | Buchungsbeträge für das Hauptbuch |
-| Budgetaktivitäten         | Buchungsbeträge für das Budgetregister |
-| Hauptkonten             | Hauptkonten, nach denen Berichte gefiltert werden können |
-| Steuerkalender          | Steuerkalender, nach denen Berichte gefiltert werden können |
-| Sachkonten                   | Sachkonten, die verwendet werden können, um den Bericht nach dem aktuellen Sachkonto zu filtern |
-| Budgetcodes              | Budgetcodes, nach denen Berichte gefiltert werden können |
-| Juristische Personen            | Juristische Personen, die verwendet werden können, um nach der aktuellen juristischen Person zu filtern. |
+|          Entität           |                                     Inhalt                                     |
+|---------------------------|----------------------------------------------------------------------------------|
+| Hauptbuchaktivitäten |                    Buchungsbeträge für das Hauptbuch                    |
+|     Budgetaktivitäten     |                   Buchungsbeträge für das Budgetregister                    |
+|       Hauptkonten       |                        Hauptkonten, nach denen Berichte gefiltert werden können                        |
+|     Steuerkalender      |                      Steuerkalender, nach denen Berichte gefiltert werden können                       |
+|          Sachkonten          |       Sachkonten, die verwendet werden können, um den Bericht nach dem aktuellen Sachkonto zu filtern        |
+|       Budgetcodes        |                        Budgetcodes, nach denen Berichte gefiltert werden können                         |
+|      Juristische Personen       | Juristische Personen, die verwendet werden können, um nach der aktuellen juristischen Person zu filtern. |
+
 

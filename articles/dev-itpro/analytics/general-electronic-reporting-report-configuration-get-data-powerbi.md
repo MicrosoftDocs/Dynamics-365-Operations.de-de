@@ -27,8 +27,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurieren elektronischer Berichterstattung, um Daten in Power BI einzubeziehen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung verwenden können, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Power BI-Diensten zu veranlassen. Als Beispiel verwendet dieses Thema Intrastat-Buchungen als Geschäftsdaten, die übertragen werden müssen. Die Power BI-Zuordnungsvisualisierung verwendet diese Intrastat-Buchungsdaten, um eine Ansicht zur Analyse von Import-/Exportaktivitäten von Unternehmen im Power BI-Bericht darzustellen.
 
@@ -118,9 +117,9 @@ Klicken Sie auf die Schaltfläche **Einstellungen** für den neuen Zieldatensatz
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Einen Power BI-Bericht mithilfe des neuen Dataset erstellen
 1. Zum Erstellen eines neuen Power BI-Berichts klicken Sie auf das Power BI-Dataset **Details importieren und exportieren**, das Sie erstellt haben. 
 2. Konfigurieren Sie dann die Visualisierung. Wählen Sie beispielsweise die Visualisierung **Ausgefüllte Zuordnung** aus, und konfigurieren Sie sie wie folgt:
- -   Weisen Sie das Datasetfeld **CountryOrigin** dem Feld **Lagerplatz** in der Zuordnungsvisualisierung zu.
- -   Weisen Sie das Datasetfeld **Betrag** dem Feld **Farbsättigung** der Zuordnungsvisualisierung zu.
- -   Fügen Sie die Datasetfelder **Aktivität** und **Jahr** der Feldersammlung **Filter** der Zuordnungsvisualisierung hinzu.
+   -   Weisen Sie das Datasetfeld **CountryOrigin** dem Feld **Lagerplatz** in der Zuordnungsvisualisierung zu.
+   -   Weisen Sie das Datasetfeld **Betrag** dem Feld **Farbsättigung** der Zuordnungsvisualisierung zu.
+   -   Fügen Sie die Datasetfelder **Aktivität** und **Jahr** der Feldersammlung **Filter** der Zuordnungsvisualisierung hinzu.
 
 3. Speichern Sie den Power BI-Bericht als **Detailbericht importieren und exportieren** [![Import und Export von Detailbericht](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Beachten Sie, dass die Zuordnung das Land/die Region anzeigt, die in der Excel-Datei erwähnt werden (Österreich und die Schweiz in diesem Beispiel). Diese Länder/Regionen werden gefärbt, um den Anteil der fakturierten Beträge für jede(s) von ihnen anzuzeigen. 
 4. Aktualisieren Sie die Liste der Intrastat-Buchungen. Die Exportbuchung, die ihren Ursprung in Italien hat, wurde hinzugefügt. [![Intrastat-Buchungsliste](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 

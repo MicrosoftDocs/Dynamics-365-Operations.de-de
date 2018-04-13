@@ -23,21 +23,21 @@ ms.contentlocale: de-de
 ms.lasthandoff: 09/29/2017
 
 ---
-# Sicherheitsbestandserfassung verwenden, um die Mindestdeckung zu aktualisieren
+# <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Sicherheitsbestandserfassung verwenden, um die Mindestdeckung zu aktualisieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie man die Vorschläge zur Mindestdeckung berechnet, basierend auf früheren Transaktionen, und dann die Artikeldeckung mit dem Vorschlag aktualisiert. Dieses wird unter Verwendung der Sicherheitsbestandserfassung getan. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für den Produktionsplaner bestimmt, um mithilfe davon die Mindestdeckung beizubehalten.
 
 
-## Einen neuen Sicherheitsbestands-Erfassungsname erstellen
+## <a name="create-a-new-safety-stock-journal-name"></a>Einen neuen Sicherheitsbestands-Erfassungsname erstellen
 1. Wechseln Sie zu Sicherheitsbestands-Erfassungsnamen.
 2. Klicken Sie auf "Neu".
 3. Geben Sie im Feld "Name" die Bezeichnung "Material" ein.
 4. Geben Sie im Feld "Beschreibung" die Bezeichnung "Material" ein.
 5. Schließen Sie die Seite.
 
-## Eine Sicherheitsbestandserfassung erstellen
+## <a name="create-a-safety-stock-journal"></a>Eine Sicherheitsbestandserfassung erstellen
 1. Wechseln Sie zu Sicherheitsbestandsberechnung.
 2. Klicken Sie auf "Neu".
 3. Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.
@@ -50,7 +50,7 @@ Diese Prozedur zeigt, wie man die Vorschläge zur Mindestdeckung berechnet, basi
 7. Klicken Sie auf "OK".
     * Dadurch werden Positionen für Dimensionen erstellt, die Bestandstransaktionen haben.  
 
-## Vorschlag ermitteln
+## <a name="calculate-proposal"></a>Vorschlag ermitteln
 1. Klicken Sie auf "Vorschlag berechnen".
 2. Wählen Sie die Option "Durchschnittliche Abgänge während Lieferzeit verwenden".
 3. Legen Sie den Multiplikationsfaktor auf "10" fest.
@@ -58,7 +58,7 @@ Diese Prozedur zeigt, wie man die Vorschläge zur Mindestdeckung berechnet, basi
 4. Klicken Sie auf "OK".
     * Führen Sie einen Bildlauf nach unten durch, um M0002 und M0003 zu suchen. Zeigen Sie die Spalte "Berechnete Mindestmenge" an.   
 
-## Mindestmenge aktualisieren
+## <a name="update-minimum-quantity"></a>Mindestmenge aktualisieren
 1. Geben Sie im Feld "Neue Mindestmenge" eine Zahl ein.
     * Aktualisieren Sie die "Neue Mindestmenge", damit sie dem Wert in der "Berechneten Mindestmenge" entspricht. Wenn das "Berechnete Minimum" null ist, können Sie den gewünschten zukünftigen Wert eingeben. Zum Beispiel können Sie die "Berechnete Mindestmenge" in diesem Feld für M0002 eingeben, die den Lagerort 12 hat.  
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
@@ -66,7 +66,7 @@ Diese Prozedur zeigt, wie man die Vorschläge zur Mindestdeckung berechnet, basi
 3. Geben Sie im Feld "Neue Mindestmenge" eine Zahl ein.
     * Aktualisieren Sie die "Neue Mindestmenge", damit sie dem Wert in der "Berechneten Mindestmenge" entspricht. Wenn das "Berechnete Minimum" null ist, können Sie den gewünschten zukünftigen Wert eingeben.  
 
-## Buchen Sie die neue Mindestmenge und überprüfen Sie das Ergebnis
+## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a>Buchen Sie die neue Mindestmenge und überprüfen Sie das Ergebnis
 1. Klicken Sie auf "Buchen".
 2. Klicken Sie auf "OK".
 3. Klicken Sie, um dem Link im Feld "Artikelnummer" zu folgen.

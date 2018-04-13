@@ -28,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 # <a name="copy-service-templates-lines"></a>Kopieren von Servicevorlagenpositionen 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Vorlageninformationen können entweder in eine Servicevereinbarung oder in einen Serviceauftrag kopiert werden.
 

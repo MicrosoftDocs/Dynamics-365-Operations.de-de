@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-a-users-preferred-time-zone"></a>Festlegen der bevorzugten Zeitzone eines Benutzers
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Die folgende Prozedur erklärt, wie ein Benutzer in der Rolle „Systemadministrator” die Zeitzone für einen Benutzer festlegen kann.
 

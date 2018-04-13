@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-bar-code-support"></a>Strichcodeunterstützung für Mobilgeräte
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Da Android ein Open Source-Projekt ist, kann jeder für Hersteller von Hardware für Lager-Strichcode-Scanner ein Gerät erstellen, um das Android-Betriebssystem auszuführen. Ein Gerät ist nur Android-kompatibel, wenn es Apps ausführen kann, die für die Android-Ausführungsumgebung geschrieben wurden.
 Allerdings kann ein Hardwareanbieter Overlays für die Android-Version ändern und erstellen, die auf die Hardware ausgeführt wird. Microsoft kann keine Verantwortung übernehmen, um sicherzustellen, dass eine mobile Strichcodescan-App für Android mit der Strichcode-Scan-Hardware des Herstellers und der Android-Version kompatibel ist, die auf dieser ausgeführt wird. 

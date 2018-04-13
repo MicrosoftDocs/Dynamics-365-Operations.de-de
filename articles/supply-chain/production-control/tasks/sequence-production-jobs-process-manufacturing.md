@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="sequence-production-jobs-for-process-manufacturing"></a>Reihenfolge der Produktions-Einzelvorgänge für Prozessfertigung
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Bei dieser Prozedur werden Farbenprodukte als Beispiel verwendet, um anzuzeigen, wie Bestellvorschläge gemäß der Priorität von Farbe und Verpackungsgröße nacheinander geordnet werden. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USPI. Diese Prozedur ist für den Produktionsplaner vorgesehen.
 

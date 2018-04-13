@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Berichtsbeziehungen für eine Position ändern
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie Berichtsbeziehungen für einen Mitarbeiter geändert werden. Die Berichtbeziehungen können für das Weiterleiten von Dokumenten durch Workflow verwendet werden. Die Prozedur zeigt auch, wie Sie den Mitarbeiter weiteren Hierarchien zuweisen. Beispielsweise kann ein Mitarbeiter Teil eines Projektteams mit informellen Berichtsbeziehungen zu einem Projekt-Supervisor sein. Zusätzliche Berichtsbeziehungen können für die Position definiert werden, um verschiedene Projekt- oder Matrixszenarien zu berücksichtigen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-benefit-expiration-dates"></a>Leistungsablaufdaten verwalten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren wird dargestellt, wie Sie einen Vorteil ablaufen lassen oder verlängern können und wie Sie die Registrierungsdaten der Arbeitskräfte verwalten, die im Vorteil registriert sind. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

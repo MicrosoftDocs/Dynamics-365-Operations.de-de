@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ziel dieser Aufgabe ist es, ein Menüelement für ein mobiles Gerät einzustellen. Diese Menüoption wird für die Erfassung des Artikelzugangs verwendet, der über Bestellungen bestellt wurde. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="pos-operations-online-and-offline"></a>POS-Vorgänge, online oder offline
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Die meisten Aktivitäten, die Benutzer in Verkaufsstelle (POS) vornehmen, gelten als Arbeitsgänge. Arbeitsgänge werden in Microsoft Dynamics 365 for Retail Backoffice konfiguriert und verwaltet. Viele Arbeitsgänge können den Schaltflächen im POS-Schaltflächenraster hinzugefügt werden. Benutzer können die Schaltflächen dann auswählen, um Vorgänge aufzurufen und die Funktion auszuführen. Andere Arbeitsgänge sind Teil der Haupt-POS-Anwendung und Schaltflächen werden entweder von Bildschirm-Schaltflächen oder als Bestandteil anderer Workflows oder Prozessen aufgerufen.
 

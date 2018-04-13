@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-an-eu-entry-certificate"></a>EU-Gelangensbestätigung erhalten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur läuft Sie durch das Erfassen einer EU-Eintragsbescheinigung durch, die von einem Fremdhersteller ausgestellt und von Ihrem Debitor empfangen wurde.
 

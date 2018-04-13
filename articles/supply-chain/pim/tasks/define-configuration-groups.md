@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-groups"></a>Variantengruppen definieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren, wie Produktkonfigurationsgruppen durch Erstellen zweier Gruppen im Demodatunternehmen USMF Company definiert. Dies ist die vierte von acht Prozeduren die beschreibt, wie Kombinationen für eine dimensionsbasierte Konfiguration erstellt werden.
 

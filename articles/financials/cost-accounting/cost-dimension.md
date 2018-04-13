@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-dimensions-and-import-dimension-members"></a>Dimensionen erstellen und Dimensionsmitglieder importieren
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Die Kostenrechnung ist ein unabhängiges Modul, das Masterdaten aus anderen Modulen erfordert. Diese Daten werden in wie folgt kategorisiert:
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-process-overview"></a>Produktionsprozessübersicht
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält eine Übersicht des Produktionsprozesse. Er beschreibt die verschiedenen Produktionsaufträge, Chargenaufträgen und Kanbans, von der Auftragserstellung bis zum Schließen der Finanzperiode. 
 

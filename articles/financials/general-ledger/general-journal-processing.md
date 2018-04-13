@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="general-journal-processing"></a>Allgemeine Erfassungsverarbeitung
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt Fähigkeiten in Microsoft Dynamics 365 for Finance and Operations, mit denen die allgemeine Erfassungsverarbeitung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die interne Steuerung nicht beeinträchtigt werden.  
 

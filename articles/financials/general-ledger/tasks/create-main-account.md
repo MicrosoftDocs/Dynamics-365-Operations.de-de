@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-main-account"></a>Erstellen eines Hauptkontos
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Aufgabenleitfaden führt Sie durch das Hinzufügen eines Hauptkontos zu einem vorhandenen Kontenplan. Für diese Erfassung wird das Demo-Unternehmen USMF verwendet.  
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-subscriptions"></a>Daueraufträge
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Daueraufträge basieren auf einem Aufwandsprojekt. Sie können Daueraufträge auf Basis eines Projekts, über das Formular **Serviceabonnement** oder mithilfe einer Service-Dauerauftragsgruppe erstellen.
 

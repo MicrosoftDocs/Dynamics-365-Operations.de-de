@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-a-formula"></a>Eine Formel kopieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur fokussiert sich auf das Erstellen einer Formel, die die gleichen Substanzen wie eine vorhandene Formel umfasst, jedoch mit kleinen Unterschieden. Um die Formelpositionen zu erstellen, können Sie die Kopierfunktion verwenden, um eine vorhandene Formel zu kopieren, die die meisten Substanzen hat, die Sie benötigen. Sie können die erforderlichen Änderungen an den einzelnen Positionen in der neuen Version nach Bedarf ändern. Wenn Sie die Kopierfunktion verwenden, müssen Sie nicht mehrere nahezu identische Formeln erstellen. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USP2.
 

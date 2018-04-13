@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-working-time-scheduling-properties"></a>Arbeitszeit-Planungseigenschaften erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Arbeitszeitplanungseigenschaften werden verwendet, um Arbeitszeitintervalle zu kategorisieren und die Einstellungen zu definieren, die Bediener berücksichtigen müssen. Diese Prozedur zeigt, wie eine Arbeitszeitplanungseigenschaft und zugeordnete Eigenschaftswerte definiert werden. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.
 

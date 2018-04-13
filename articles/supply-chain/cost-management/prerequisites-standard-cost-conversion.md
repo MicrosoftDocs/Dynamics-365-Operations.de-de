@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Voraussetzungen für eine Standardkostenumrechnung
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema werden die Aufgaben erörtert, die vor einer Standardkostenumrechnungen ausgeführt werden müssen. 
 

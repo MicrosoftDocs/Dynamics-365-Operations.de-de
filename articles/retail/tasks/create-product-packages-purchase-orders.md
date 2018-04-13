@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Produktpakete für Bestellungen erstellen
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines Produktpakets und seine Verwendung in einer Bestellung. Die Bestellung wird verwendet, um einen Auftrag für einen vordefinierten Satz Produkte zu erstellen. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 

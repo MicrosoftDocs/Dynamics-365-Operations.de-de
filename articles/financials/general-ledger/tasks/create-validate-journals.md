@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-validate-journals"></a>Erfassungen erstellen und validieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieser Aufgabenleitfaden erstellt und prüft Erfassungen und Erfassungspositionen. Für diese Aufgaben wird das Demo-Unternehmen USMF verwendet.  
 

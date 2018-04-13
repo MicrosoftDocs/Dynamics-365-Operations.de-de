@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreement-groups"></a>Servicevertragsgruppen 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Servicevereinbarungsgruppen sind hilfreich beim Sortieren und Filtern von Servicevereinbarungen. Mithilfe von Servicevereinbarungsgruppen lassen sich Servicevereinbarungen beispielsweise nach Unternehmensgröße, nach geografischem Standort oder nach Art der Branche gruppieren. Alternativ können Vereinbarungsgruppen zum Gruppieren von Servicevereinbarungen nach angebotener Leistungsebene verwendet werden.
 

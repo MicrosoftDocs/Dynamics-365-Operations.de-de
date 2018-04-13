@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-limits-for-customers"></a>Kreditlimits für Debitoren
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Beim Festlegen eines Kreditlimits können Sie den Höchstbetrag des Kredits angeben, der den Debitoren gewährt wird. Wenn ein Kreditlimit angegeben wurde, wird es automatisch geprüft, wenn ein Benutzer versucht, ein Dokument zu aktualisieren. Wenn das Kreditlimit überschritten wird, wird eine Meldung für den Benutzer angezeigt. Dieses Thema bietet einen Überblick darüber, wie Kreditlimits in  funktionieren und beantwortet die folgenden Fragen:
 

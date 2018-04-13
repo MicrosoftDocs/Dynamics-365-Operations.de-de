@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduction-keys"></a>Planzahlenverrechnungsschlüssel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
 
@@ -39,17 +38,19 @@ Dieser Artikel enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnu
 
 Dieses Beispiel verdeutlicht, wie ein Planzahlenverrechnungsschlüssel den Bedarf der Bedarfsplanung verringert, und zwar gemäß den vom Planzahlenverrechnungsschlüssel definierten Prozentsätzen und Perioden.
 
-1.  Wählen Sie auf der Seite **Planzahlenverrechnungsschlüssel** die folgenden Positionen.
-    | Rückgeld | Einheit  | Prozentsatz |
-    |--------|-------|---------|
-    | 1      | Monat | 100     |
-    | 2      | Monat | 75      |
-    | 3      | Monat | 50      |
-    | 4      | Monat | 25      |
+1. Wählen Sie auf der Seite **Planzahlenverrechnungsschlüssel** die folgenden Positionen.
 
-2.  Verknüpfen Sie den Planzahlenverrechnungsschlüssel mit der Deckungsgruppe des Artikels.
-3.  Auf der **Produktprogrammpläne**-Seite im Feld **Reduktionsprinzip** wählen Sie **Prozent - Planzahlenverrechnungsschlüssel** aus.
-4.  Erstellen Sie eine Bedarfsplanung von 1000 Stück pro Monat.
+   | Rückgeld | Einheit  | Prozentsatz |
+   |--------|-------|---------|
+   |   1    | Monat |   100   |
+   |   2    | Monat |   75    |
+   |   3    | Monat |   50    |
+   |   4    | Monat |   25    |
+
+
+2. Verknüpfen Sie den Planzahlenverrechnungsschlüssel mit der Deckungsgruppe des Artikels.
+3. Auf der **Produktprogrammpläne**-Seite im Feld **Reduktionsprinzip** wählen Sie **Prozent - Planzahlenverrechnungsschlüssel** aus.
+4. Erstellen Sie eine Bedarfsplanung von 1000 Stück pro Monat.
 
 Wird der Umsatzplanungslauf am 1. Januar ausgeführt, wird der Bedarf der Bedarfsplanung entsprechend den Prozentwerten verbraucht, die Sie auf der Seite **Planzahlenverrechnungsschlüssel** angegeben haben. Die folgenden Bedarfsmengen werden in den Produktprogrammplan übertragen.
 
@@ -88,20 +89,21 @@ Unter Verwendung derselben Bedarfsplanung von 1000 Stück pro Monat werden die f
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Beispiel 3: Buchungen - dynamische Periode Planungsverringerungsprinzip
 In den meisten Fällen werden Systeme so eingerichtet, das Buchungen Bedarfsplanung innerhalb bestimmter Prognoseperioden reduzieren (Wochen, Monate usw.). Die Perioden werden im Planzahlenverrechnungsschlüssel definiert. Jedoch können die Zeit zwischen zwei Bedarfsplanungspositionen auch eine Periode *implizieren*.
 
-1.  Erstellen Sie eine Bedarfsplanung für die folgenden Datumsangaben und Mengen.
-    | Datum       | Bedarfsplanung |
-    |------------|-----------------|
-    | 1. Januar  | 1.000           |
-    | 5. Januar  | 500             |
-    | 12. Januar | 1.000           |
+1. Erstellen Sie eine Bedarfsplanung für die folgenden Datumsangaben und Mengen.
 
-    In dieser Planung gibt es keinen klaren Zeitraum zwischen den Planungsdaten. Zwischen der ersten und zweiten Datumsangabe besteht eine viertägige Spanne und zwischen der zweiten und dritten Datumsangabe besteht eine siebentägige Spanne. Diese verschiedenen Spannen sind die dynamischen Perioden.
-2.  Erstellen Sie Auftragspositionen wie folgt:
-    | Datum                             | Auftragsmenge |
-    |----------------------------------|----------------------|
-    | 15. Dezember Im Jahr zuvor | 500                  |
-    | 3. Januar                        | 100                  |
-    | 10. Januar                       | 200                  |
+   | Datum       | Bedarfsplanung |
+   |------------|-----------------|
+   | 1. Januar  | 1.000           |
+   | 5. Januar  | 500             |
+   | 12. Januar | 1.000           |
+
+   In dieser Planung gibt es keinen klaren Zeitraum zwischen den Planungsdaten. Zwischen der ersten und zweiten Datumsangabe besteht eine viertägige Spanne und zwischen der zweiten und dritten Datumsangabe besteht eine siebentägige Spanne. Diese verschiedenen Spannen sind die dynamischen Perioden.
+2. Erstellen Sie Auftragspositionen wie folgt:
+   | Datum                             | Auftragsmenge |
+   |----------------------------------|----------------------|
+   | 15. Dezember Im Jahr zuvor | 500                  |
+   | 3. Januar                        | 100                  |
+   | 10. Januar                       | 200                  |
 
 Die Planung wird wie folgt reduziert:
 

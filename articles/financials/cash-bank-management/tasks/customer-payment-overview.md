@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="customer-payment-overview"></a>Übersicht Debitorenzahlung
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieser Aufgabenleitfaden führt durch verschiedene Methoden zum Eingeben von Debitorenzahlungen. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 

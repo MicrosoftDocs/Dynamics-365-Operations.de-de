@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="organization-administration-home-page"></a>Startseite für die Organisationsverwaltung
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird auf Inhalt verwiesen, mit dessen Hilfe Poweruser und Administratoren Microsoft Dynamics 365 for Finance and Operations konfigurieren können. Dieser Inhalt hilft, das System so zu konfigurieren, dass es für Ihre Organisation und die Geschäfte effektiv läuft.
 

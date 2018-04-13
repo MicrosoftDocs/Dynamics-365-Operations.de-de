@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-items-lent-to-workers"></a>Verwalten von Artikeln, die an Arbeitskräfte ausgeliehen werden
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ausleihartikel sind Datensätze, die Managern helfen, die physischen Artikel zu verfolgen, die Ihr Unternehmen an Arbeitskräfte ausleiht. 
 
@@ -51,7 +50,7 @@ Manager können ausgeliehene Artikel für ihre direkten Berichte anzeigen. Sie k
 
 Wenn ein Artikel beschädigt oder verlegt wurde, geben Sie einen fiktive Rückgabedatensatz ein. Anschließend können Sie den Artikel entweder löschen oder im Überblick behalten und die Beschreibung ändern, um anzugeben, dass der Artikel nicht verfügbar ist.
 
- 
+
 <a name="see-also"></a>Siehe auch
 --------
 

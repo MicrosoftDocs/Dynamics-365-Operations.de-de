@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="registration-for-manufacturing-execution"></a>Registrierung für Fertigungssteuerung
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben Konzepte und Begriffe erläutert, die für müssen, um Fertigungssteuerungsfunktionen zu konfigurieren und zu verwenden. 
 

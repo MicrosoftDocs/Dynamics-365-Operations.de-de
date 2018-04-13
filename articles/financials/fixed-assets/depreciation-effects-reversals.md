@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Abschreibungseffekte bei Rückbuchungen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel behandelt mögliche Auswirkung beim Stornieren einer Anlagentransaktion. 
 

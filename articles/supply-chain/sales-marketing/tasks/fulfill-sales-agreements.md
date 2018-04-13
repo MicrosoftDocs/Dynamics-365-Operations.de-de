@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="fulfill-sales-agreements"></a>Kaufverträge erfüllen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt Ihnen, wie einen Kaufvertrag über die Zuordnung von Aufträgen erfüllt wird. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Bevor Sie mit diesem Leitfaden starten, vergewissern Sie sich, einen gültigen Kaufvertrag vom Typ "Produktwertszusage " vorhanden ist. Alternativ können Sie den Leitfaden "Kaufvertrag erstellen" ausführen.  
 

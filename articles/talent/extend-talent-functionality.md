@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>Erweitern Sie die Funktionalität von Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Wenn Sie Microsoft PowerApps erstellt haben, können Sie diese Anwendungen von Links innerhalb von Microsoft Dynamics 365 for Talent starten. Um Zugriff auf Ihre Bewerbungen einzurichten, müssen Sie einige Informationen im Talent auf einer Konfigurationsseite eirichten die Sie aus dem Arbeitsbereich **Systemverwaltung** öffnen können.
 
@@ -38,10 +38,10 @@ Die folgenden Informationen werden auf dieser Seite eingegeben oder festgelegt:
 > - Ein beschreibender Name oder eine Kennung für die PowerApps-Bewerbung.
 > - Eine eindeutige Kennung (GUID) für jede Anwendung, die Sie einer Talent Seite hinzufügen. Anwendungs-ID ist im Feld PowerApps-Standort, [powerapps.com](http://powerapps.com/) verfügbar. 
 > - Die Seite, von der Benutzer eine Anwendung oder öffnen kann Nicht alle Talent Seiten unterstützen eingebettete PowerApps und Power BI-Berichte. 
-
- > [!NOTE]
- >  Geben Sie hier den internen Namen der Seite ein, anstatt den Anzeigenamen, der am oberen Seitenrand erscheint. Um den internen Namen zu suchen, öffnen Sie die Seite für den internen Namen und klicken Sie irgendwo auf der Seite mit der rechten Maustaste. Wenn das Menü sich öffnet, zeigen Sie im **Formularinformationen** auf Artikel. Der interne Formularname wird neben dem Menü **Formularinformationen** angezeigt.
- 
+> 
+> [!NOTE]
+>  Geben Sie hier den internen Namen der Seite ein, anstatt den Anzeigenamen, der am oberen Seitenrand erscheint. Um den internen Namen zu suchen, öffnen Sie die Seite für den internen Namen und klicken Sie irgendwo auf der Seite mit der rechten Maustaste. Wenn das Menü sich öffnet, zeigen Sie im **Formularinformationen** auf Artikel. Der interne Formularname wird neben dem Menü **Formularinformationen** angezeigt.
+> 
 > - Definieren Sie das Formularsteuerelement, aus dem die Bewerbung Kontextdaten erwerben kann. So kann beispielsweise eine Anwendung Daten zu einer Arbeitskraft nutzen. Wenn Sie die Seite **Arbeitskraft** im Feld **Kontext** eingeben, wird die Seite **Arbeitskraft** geöffnet, wenn Sie die Bewerbung starten. Ein Eintrag ist im **Kontextfeld** optional. 
 > - Legen Sie die Größe des Dialogfelds fest, an dem die PowerApps-Bewerbung ausgeführt wird. Die Dialogfelder werden als "klein"oder "groß" festgelegt, um die Benutzeroberfläche zu optimieren, wenn Sie Ihre Bewerbung auf einem Telefon oder einem größeren Gerät laufen lassen. 
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="backflush-costing"></a>Nachkalkulation für Produktionskosten
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält das Konzepts der Nachkalkulation für Produktionskosten, die für Lean Manufacturing verwendet werden. 
 

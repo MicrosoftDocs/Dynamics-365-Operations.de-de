@@ -28,8 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Beschaffungsübersicht
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält eine Übersicht der Funktionen, die im Beschaffungsmodul verfügbar sind.
 
@@ -39,7 +38,7 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 Der Bedarf für Produkte oder Dienste entsteht möglicherweise aus *Anforderungen*, beispielsweise wenn ein Mitarbeiter ein Produkt benötigt. *Produktkataloge* können so eingerichtet werden, dass die Auswahl der verfügbaren Produkte, aus denen Sie auswählen, geführt wird, oder dass Produkte angefodert werden können, die noch nicht in einem Katalog bereitgestellt werden, wodurch die Einkaufsabteilung entscheiden kann, wie das Produkt beschafft werden kann.  
 
 *Ausgabenlimits* können verwendet werden, um die Ausgaben für Materialanforderungen einzuschränken, und der *Einkaufsworkflow* fügt die Option des Benötigens einer Genehmigung hinzu, bevor Sie bestellen. Es ist auch möglich, Budgetmittelzuteilung anzugeben, falls erforderlich.  
-  
+
 Die Beschaffungsabteilung identifiziert Lieferanten für erforderliche Produkte und Dienste, und dies kann bedeuten, dass eine *Angebotsanforderung* an mehrere mögliche Lieferanten gesendet wird. Es ist möglich, die Angaben des Produkts, das angefordert wird, freizugeben, und potenzieller Kreditoren können diese Angaben sehen, um festzustellen, ob sie ein Produkt liefern können, das ihnen entspricht. Kreditoren machen dann Angebote, die durch die Beschaffungsabteilung geprüft werden, bevor der Lieferant ausgewählt wird, von dem sie beschaffen möchten.  
 
 Bestellungen beinhalten eine Option zum Senden einer *Einkaufsabfrage* an den Kreditor als Alternative zu einem umfassenderen Angebotsanforderungsprozess. Die Einkaufabfrage kann verwendet werden, um Bedingungen, wie Preise, Rabatte und Lieferdatum, für den Auftrag einzurichten. Wenn Kreditoren so eingerichtet werden, dass sie das Portal **Kreditor** verwenden können, ist die Funktion Einkaufsabfrage deaktiviert. Stattdessen wird der Auftrag im Portal**Kreditor** freigegeben, und wenn eine *Bestätigungsanforderung* gesendet wird, kann der Kreditor den Auftrag direkt bestätigen.  

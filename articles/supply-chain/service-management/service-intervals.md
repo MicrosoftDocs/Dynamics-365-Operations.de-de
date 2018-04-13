@@ -28,8 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="service-intervals"></a>Serviceintervalle
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Durch das Servicevereinbarungsintervall wird die Häufigkeit angegeben, mit der bei der automatischen Erstellung von Serviceaufträgen Serviceauftragspositionen für Servicevereinbarungspositionen erstellt werden.
 

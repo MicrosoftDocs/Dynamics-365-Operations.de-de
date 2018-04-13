@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cost-control-units"></a>Kostenkontrolleinheiten definieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie Kostenkontrollesteuereinheiten im Kostenrechnungssachkonto definiert werden. Wählen Sie die Kostenobjektdimension für die Elemente aus, bei denen Sie eine Kostensteuerung durchführen möchten. Die Kostenträgerdimensionsmitglieder werden im Kostenträger der Kostenkontrollesteuereinheiten umgewandelt. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USP2.
 

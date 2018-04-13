@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="vendor-payment-overview"></a>Übersicht Kreditorenzahlung
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Aufgabenhandbuch läuft Sie nach den verschiedenen Methoden durch, die verwendet werden, um die Kreditorenzahlungen, umfasst, wie ein Zahlungsvorschlag oder manuell erfolgt eine einmalige Zahlung zu erstellen verwendet. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a>Zugriffsrechte für einen Kostenobjekt-Controller konfigurieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Verwenden Sie diese Prozedur, um Zugriffsberechtigungen für einen Kostenträgercontroller zu konfigurieren. Für diese Aufzeichnung wird das Demo-Datenunternehmen USP2 verwendet.
 

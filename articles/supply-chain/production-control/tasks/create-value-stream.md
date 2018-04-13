@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-value-stream"></a>Einen Wertstrom erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Wertströme sind Organisationseinheiten, die einen oder mehrere Produktionsflüsse gruppieren. Um einen Produktionsfluss zu definieren, müssen Sie zuerst einen Wertstrom definieren.
 

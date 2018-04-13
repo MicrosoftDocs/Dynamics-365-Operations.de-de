@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Unterstützte Standards für die elektronische Rechnungsstellung in Europa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung für Europa. 
 

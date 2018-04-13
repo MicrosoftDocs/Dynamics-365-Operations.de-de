@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Eine teilweise Kreditorenzahlung, bei der Rechnungsrabatte auf Kreditorengutschriften vorhanden sind, ausgleichen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel führt Sie durch ein Szenario, in dem eine Gutschrift mit einer Rechnung ausgeglichen wird.
 

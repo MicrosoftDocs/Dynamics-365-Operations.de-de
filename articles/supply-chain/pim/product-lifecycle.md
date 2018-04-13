@@ -29,15 +29,14 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Produktlebenszyklus-Status 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ein Produktlebenszyklusstatus dokumentiert den Lebenszyklusstatus eines freigegebenen Produkts oder Produktvariante. Produktlebenszyklusstatus werden vom Benutzer, in der Regel ein Produktmanager oder ein Produktmasterdatenmanager, definiert. Bestimmte Geschäftsprozesse, wie Produktprogrammplan, können von einem bestimmten Lebenszyklusstatus betroffen sein.   
- 
+
 Ein freigegebenes Produkt oder Produktvariante können einem Produktlebenszyklusstatus zugeordnet werden, der dokumentiert, in welchem Lebenszyklusstatus sich ein bestimmtes Produkt oder eine bestimmte Variante gerade befindet. Sie können eine beliebige Anzahl von Produktlebenszyklusstatus definieren, indem Sie einen Statusname und eine Beschreibung zuweisen. Sie können einen Lebenszyklusstatus als Standardstatus für neu freigegebene Produkte auswählen. Freigegebene Produktvarianten erben ihren Produktlebenszyklusstatus von ihrem freigegebenen Produktmaster bei der Erstellung. Wenn Sie den Lebenszyklusstatus bei einem freigegebenen Produktmaster ändern, können Sie wählen, dass alle vorhandenen Varianten aktualisiert werden, die denselben ursprünglichen Status haben.  
 
 ## <a name="create-a-new-product-lifecycle-state"></a>Erstellen eines neuen Produktlebenszyklusstatus 
- 
+
 - Um einen neuen Produktlebenszyklusstatus zu erstellen, geben Sie den Aufgabenleitfaden wieder oder lesen Sie ihn: **Einen neuen Produktlebenszyklusstatus erstellen**. 
 
 -  Um einen standardmäßigen Produktlebenszyklusstatus zu erstellen, geben Sie den Aufgabenleitfaden wieder oder lesen Sie ihn: **Einen neuen standardmäßigen Produktlebenszyklusstatus erstellen**.   
@@ -73,7 +72,7 @@ Um ausführliche Informationen dazu zu erhalten, wie mithilfe eines Produktleben
 
 > [!NOTE]
 > Aus Leistungsgründen wird dringend empfohlen, alle veralteten freigegebenen Produkte oder Produktvarianten zuzuordnen, insbesondere wenn Sie mit nicht wiederverwendbaren Produktkonfigurationsvarianten arbeiten, mit einem Produktlebensyklusstatus, der für den Produktprogrammplan deaktiviert ist.  
- 
+
 ## <a name="default-migration-import-and-export"></a>Standardmäßige Migration, Import und Export 
 
 Die Produktlebenszyklusstatus werden durch Datenentitäten nicht unterstützt, und der Lebenszyklusstatus kann nicht auf einen variables Status durch die freigegebenen Produktdatenentitäten festgelegt werden.
@@ -81,18 +80,18 @@ Die Produktlebenszyklusstatus werden durch Datenentitäten nicht unterstützt, u
 -  Nach der Migration von vorherigen Versionen, ist der Lebenszyklusstatus aller Produkte und Produktvarianten leer.  
 -  Wenn die freigegebenen Produkte durch eine Datenentität importiert werden, wird bei der Erstellung der Standardlebenszyklusstatus angewendet.  
 -  Wenn Sie freigegebene Produktvarianten durch eine Datenentität importieren, wird der Produktlebenszyklusstatus des freigegebenen Produktmasters importiert.   
- 
+
 ## <a name="find-obsolete-products-and-products-variants"></a>Veraltete Produkte und Produktvarianten suchen 
- 
+
 Sie können eine Simulationsanalyse ausführen, um veraltete freigegebene Produkte oder Produktvarianten zu finden, und dann ihren Produktlebenszyklusstatus aktualisieren. Um veraltete Produkte zu finden, geben Sie den Aufgabenleitfaden **Veraltete Produktvarianten suchen und einen Produktlebenszyklusstatus zuweisen** wieder und lesen Sie ihn. Dieser Aufgabenleitfaden zeigt, wie Sie veraltete freigegebene Produkte oder Produktvarianten finden und wie Sie den veralteten Produkten einen Produktlebenszyklusstatus zuordnen. Er zeigt auch, wie Simulationsergebnisse angezeigt werden und wie beurteilt wird, wie viele Produkte und Produktvarianten einem neuen Produktlebenszyklusstatus zugeordnet werden, wenn das Update ohne Simulation ausgeführt wird.  
- 
+
 Indem Sie die Analyse in einem Simulationsmodus ausführen, werden die Produkte und Produktvarianten, die als veraltet identifiziert werden, in einem spezifischen Formular angezeigt, in dem sie einfach überprüft werden können. Durch die Analyse wird nach Transaktionen und spezifischen Masterdaten gesucht, um Produkte zu identifizieren, für die es keinen Bedarf innerhalb einer variablen Periode gibt und keine Masterdaten, die in einem Bedarf resultieren können. Neue freigegebene Produkte innerhalb einer variablen Periode können aus der Analyse ausgeschlossen werden. Wenn die Analysesimulation das erwartete Ergebnis zurückgibt, kann der Benutzer die Analyse ausführen und einen neuen Produktlebenszyklusstatus für alle Produkte festlegen, die durch die Analyse als veraltet identifiziert wurden.  
- 
+
 > [!NOTE]
 > Beachten Sie, dass sämtliche Analysen und Updates innerhalb derselben juristischen Person erfolgen müssen.  
- 
+
 ## <a name="criteria-to-select-and-update-released-products-or-product-variants"></a>Kriterien zum Auswählen und Aktualisieren freigegebener Produkte oder Produktvarianten 
- 
+
 Verwenden Sie die folgenden Kriterien, um die freigegebenen Produkte und Produktvarianten auszuwählen und zu aktualisieren: 
 
 -    Der Produktlebenszyklusstatus des Produkts oder der Produktvariante muss sich vom neuen erwünschten Status unterscheiden. 

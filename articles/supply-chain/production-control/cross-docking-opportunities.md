@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie den Prozess des Crossdockings von Materials verwalten, das als fertig gestellt gemeldet wurde, spricht von eine Produktionsauftragsposition an einen ausgehenden Transportdock beendet.
 
@@ -76,10 +76,10 @@ In der **Crossdockingrichtlinie** definieren Sie, welche Dokumenttypen für das 
 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Crossdocking-Richtlinienname: Umlagerungsauftrag
 
--   Laufende Nummer: 10
- -   Arbeitsauftragstyp: Übergangsabgang
--   Crossdockingbedarf erfordert Lagerplatz: Falsch
--   Crossdockingstrategie: Datum und Uhrzeit
+- Laufende Nummer: 10
+  -   Arbeitsauftragstyp: Übergangsabgang
+- Crossdockingbedarf erfordert Lagerplatz: Falsch
+- Crossdockingstrategie: Datum und Uhrzeit
 
 ### <a name="sequence-number"></a>Laufende Nummer
 

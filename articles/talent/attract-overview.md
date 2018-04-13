@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="attract-overview"></a>Überblick von Attract
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Attract stellt Funktionen bereit, um den Prozess für die Einstellung neuer Talente zu verwalten. Kandidaten können zu den offenen Stellen hinzugefügt werden und von Phase zu Phase verschoben werden, bis eine Bewerbung abgeschlossen oder abgelehnt wurde. In jeder Phase durchlaufen Kandidaten Aktivitäten wie Anrufe, Bewertungen oder Interviews. Nachdem sich die Kandidaten beworben haben, erhalten Sie eine E-Mail mit der Bitte, sich bei Attract anzumelden, wo Sie den Status der Stelle, ihrer Bewerbung und die Antworten auf Aufgaben, die ihnen zugewiesen wurde, nachverfolgen können.
 

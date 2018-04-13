@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-new-jobs"></a>Neue Einzelvorgänge definieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Aufgabe konzentriert sich auf die Erstellung einer neuen Stelle. Sie wird anhand manueller Eingabe und der Kopie von Vorlagenfunktionen abgeschlossen. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für den Personalverwaltungsspezialisten vorgesehen.
 

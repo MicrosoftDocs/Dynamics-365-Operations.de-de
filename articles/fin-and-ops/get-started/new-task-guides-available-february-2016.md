@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="new-task-guides-february-2016"></a>Neuer Aufgabenleitfaden verfügbar (Februar 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Diese Themen führen die Aufgabenleitfäden auf, die auf den Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden.  Die Bibliotheken, die veröffentlicht wurden, enthalten (Februar 2016) die APQC Unified-Bibliothek für Microsoft Dynamics AX und (Februar 2016) Erste Schritte.
 
@@ -50,8 +49,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Einrichten der Kreditorenkonten-Rechnungsabgleichprüfung       | Global             |
 | Kreditorenrechnungsrichtlinien einrichten                            | Global             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a>Debitoren
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Prüfen von Inkassoinformationen                              | Global             |
 | Debitoren-Fälligkeitsinformationen einrichten und generieren   | Global             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a>Bargeld- und Bankverwaltung
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Ausgleichen eines vordatierten Schecks von einem Debitor                             | Global             |
 | Gebühren für Kreditorenzahlung anzeigen                                              | Global             |
 
- 
 
+ 
 ### <a name="compliance"></a>Konformität
 
 |                                            |                    |
@@ -108,8 +107,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | **BPM-Position**                               | **Land/Region** |
 | Definieren Sie Überwachungsrichtlinien für Quelldokumente | Global             |
 
- 
 
+ 
 ### <a name="cost-management"></a>Kostenverwaltung
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Aktueller Status des Produktionsauftrags.                       | Global             |
 | Hier werden Bestandsauszug und KPIs nach Kostenträger an                     | Global             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a>Land/Region-Funktionalität
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | GB-00009 Eine Gutschrift zu dem Ausgleichsrabatt erstellen                                               | Vereinigtes Königreich                  |
 | GB-00009 Parameter für Gutschrift zu Skonto einrichten                                   | Vereinigtes Königreich                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a>Vision und Strategie entwickeln
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Stellen Sie eine Frage, die von der Antwort auf die vorherige Frage abhängt (Bedingte Fragen) | Global             |
 | Zählen Sie einen Fragebogen auf Grundlage Prozent                                                   | Global             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a>Elektronische Berichterstellung
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Er-Datenmodell zu den ausgewählten Datenquellen zuordnen      | Global             |
 | ER Dienstanbieter auswählen                      | Global             |
 
- 
 
+ 
 ### <a name="expense-management"></a>Ausgabenverwaltung
 
 |                              |                    |
@@ -298,8 +297,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | **BPM-Position**                 | **Land/Region** |
 | Ausgabenverwaltung konfigurieren | Global             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a>Anlagen
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Eine Anlage aufteilen                                       | Global             |
 | Eine Anlage übertragen                                    | Global             |
 
- 
 
+ 
 ### <a name="general-ledger"></a>Hauptbuch
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Erfassungseinträge oder Transaktionen anzeigen                              | Global             |
 | Ansichtsverwandter Intergesellschaftsbeleg aus der Erfassung                    | Global             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a>Human Capital Management
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Einrichten von Vergütungsberechtigungsrichtlinien                             | Global             |
 | I-9-Dokumenttypen einrichten                                     | Global             |
 
- 
 
+ 
 ### <a name="inventory-management"></a>Bestandsverwaltung
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Verfolgung eines Artikels oder Rohmaterials                                                     | Global             |
 | Übergangsphysischer bestand im Lagerort                                  | Global             |
 
- 
 
+ 
 ### <a name="manufacturing"></a>Fertigung
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Übergangsmaterial mit Kanban-Einzelvorgängen                            | Global             |
 | Produktionsflussversionen überprüfen                          | Global             |
 
- 
 
+ 
 ### <a name="master-planning"></a>Produktprogrammplanung
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Kritische Material- und Lieferantenkapazitäten identifizieren | Global             |
 | Ändern Sie eine Bedarfsplanung manuell                 | Global             |
 
- 
 
+ 
 ### <a name="organization-administration"></a>Organisationsverwaltung
 
 |                                           |                    |
@@ -501,8 +500,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Einrichten elektronischer Signaturen              | Global             |
 | Einrichten von Nummernsequenzen mit einem Assistenten | Global             |
 
- 
 
+ 
 ### <a name="planning"></a>Planung
 
 |                        |                    |
@@ -510,8 +509,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | **BPM-Position**           | **Land/Region** |
 | Verfügbarkeit ermitteln | Global             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a>Beschaffung
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Nach Kreditor suchen                                               | Global             |
 | Einrichten einer Beschaffungskategoriehierarchie                          | Global             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a>Produktinformation und -konfiguration
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Freigeben eines ..\financial-dimensions\dimension-based Produktmasters              | Global             |
 | Daten für Produktmodelle                      | Global             |
 
- 
 
+ 
 ### <a name="public-sector"></a>Öffentlicher Sektor
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Erstellen Sie einen Zahlungsmittelcode für öffentlichen Sektor                                                         | Global             |
 | Rahmenbestellungsklassifizierungen einrichten                             | Global             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a>Einzelhandel und Handel
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Einzelhandelspreisregulierungen verwalten                                                                  | Global             |
 | Shopkonfigurationen für Einzelhandelsauszüge                                                | Global             |
 
- 
 
+ 
 ### <a name="sales"></a>Vertrieb
 
 |                                            |                    |
@@ -642,8 +641,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Versenden von Aufträgen als Direktlieferungen           | Global             |
 | Liefern von Aufträgen ohne Lagerort      | Global             |
 
- 
 
+ 
 ### <a name="sales-tax"></a>Mehrwertsteuer
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Quellensteuer einrichten                             | Global             |
 | Vorgenommene Mehrwertsteuerbuchungen anzeigen                 | Global             |
 
- 
 
+ 
 ### <a name="security"></a>Sicherheit
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Identifizieren und beheben Sie Konflikte bei der Aufgabentrennung | Global             |
 | Regeln für Aufgabentrennung einrichten                            | Global             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a>Lagerort- und Transport
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | Einrichten von Spediteuren                                                          | Global             |
 | Verwenden Sie den Auslastungs-Planungs-Werktisch, um in und Lieferungen planen                       | Global             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Aufgabenleitfäden in der Getting Started-Bibliothek (Februar 2016)
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-Position**                                       | **Land/Region** |

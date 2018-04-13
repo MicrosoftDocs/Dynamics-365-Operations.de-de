@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Lean Manufacturing-Arbeitsgruppe definieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Eine Arbeitsgruppe ist ein Form einer Ressourcengruppen, die in den Lean Manufacturing-Verarbeitungsaktivitäten verwendet werden kann. Arbeitsgruppen haben Eingangs- und Ausgangslagerplätze und eine Kapazitätsdefinition auf Basis eines Produktionsflussmodells. Weitere Informationen zu den grundlegende Konzepten von Lean-Manufacturing-Arbeitsgruppen und Kapazitätsberechnungen finden Sie in den Whitepapers zum Lean-Manufacturing. Das Demodatenunternehmen in dieser Prozedur ist USMF.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quality-management-processes"></a>Qualitätsmanagementprozesse
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zum Qualitätssicherungsprozess für fehlerhafte Produkte. Es beschreibt, wie Sie Qualitätskontrollfunktionen verwenden können, wie Sie Qualitätsmängel definieren und verwalten und wie Korrekturen behandelt werden.
 

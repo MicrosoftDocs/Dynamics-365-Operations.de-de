@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>Planen Ihrer Organisationshierarchie
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Bevor Sie Organisationen und Organisationshierarchien in Microsoft Dynamics 365 for Finance and Operations einrichten, sollten Sie sicherstellen, dass Sie planen, wie das Unternehmen modelliert wird. Das Organisationsmodell hat bedeutende Auswirkungen auf die Implementierung von Finance and Operations sowie auf Unternehmensprozesse. 
 
@@ -158,7 +157,7 @@ Wenn Gesetze und Buchführungsmethoden sich zwischen den Ländern/Regionen unter
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Wenn die Organisation als Organisationseinheit modelliert wird 
 Wenn Gesetze und Buchführungsmethoden sich zwischen den Ländern/Regionen unterscheiden, in denen sich Ihre Organisationen befinden, können Sie einen einheitlichen Satz von Jahresabschlussverfahren verwenden. Das bedeutet, dass Sie die Organisationen als Organisationseinheiten modellieren können. Alle Organisationseinheiten müssen dasselbe Jahresabschlussverfahren verwenden. 
-   
+
 ### <a name="number-sequences"></a>Nummernkreise
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Wenn die Organisation als juristische Person modelliert wird
 Nummernkreise für einige Referenzen können pro juristische Person eingerichtet wurden. Einige Nummernkreise können gemeinsam sein. 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Startseite für die Kostenrechnung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Lernkarte 
 
@@ -37,6 +37,7 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 [![Lernkarte für die Kostenrechnung](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Direktlinks
+
 |      |   |
 |------|---|
 |  [Konfigurieren Sie Basisentitäten (eLearning)](https://mbspartner.microsoft.com/Home) (CustomerSource-Konto erforderlich)  |[Dimensionen erstellen](cost-elements.md)  |

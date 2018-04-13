@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="moving-average"></a>Flexibler Durchschnitt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Der flexible Durchschnitt ist eine kontinuierliche Nachkalkulationsmethode, basierend auf dem Durchschnittsprinzip, in dem die Kosten in Lagerabgängen sich nicht ändern, wenn der Kaufpreis sich ändert. Der Unterschied ist aktiviert und basiert auf eine proportionale Berechnung. Der verbleibende Betrag wird in Aufwand gebucht. 
 

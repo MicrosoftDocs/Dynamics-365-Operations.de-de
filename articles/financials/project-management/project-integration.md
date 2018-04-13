@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="microsoft-project-client-integration"></a>Microsoft Project Client-Integration
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Die Planung und Verwaltung eines Projektzeitplans kann komplex sein. Deshalb müssen Projektmanager Tools verwenden, mit denen sie diese Aufgabe bewältigen können. Die Integration mit Microsoft Project Client bietet Unterstützung, um einen Projektstrukturplan zu öffnen und zu verwalten. Der Projektmanager kann beliebige Änderungen zurück zum Finance and Operations-Projektstrukturplan veröffentlichen.
 

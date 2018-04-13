@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="outbound-process"></a>Ausgangsprozess
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält einen Überblick über den ausgehenden Prozess in der Lagerverwaltung.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="compensation-and-benefits-power-bi-content"></a>Power BI Inhalte Vergütung und Benefits
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird der Finance and Operations-Power BI-Inhalt "Vergütung und Vorteile" beschrieben. 
 

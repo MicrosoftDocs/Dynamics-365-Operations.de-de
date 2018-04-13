@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-and-manage-attributes"></a>Attribute erstellen und verwalten
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dieser Artikel beschreibt Attribute in Microsoft Dynamics 365 for Retail. Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten Feldern beschreiben.
 
@@ -58,7 +57,7 @@ Mit Attributen können Sie ein Produkt und die Merkmale mit benutzerdefinierten 
 
 ## <a name="attribute-type"></a>Attributtyp
   [![Anlagenattribute](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
-  
+
 Attribute basieren auf Attributtypen. Attributtypen identifizieren die Art von Daten, die für ein bestimmtes Attribut eingegeben werden können. Derzeit unterstützt Microsoft Dynamics 365 für Retail die folgenden Attributtypen:
 
 -   **Währung** – Dieser Attributtyp unterstützt Währungswerte. Er kann begrenzt (das heißt, kann er einen Wertebereich unterstützen) oder offengelassen werden.

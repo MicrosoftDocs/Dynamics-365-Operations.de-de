@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-resources"></a>Operations-Ressourcen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Betriebliche Ressourcen führen die Aktivitäten eines Projekts oder eines Produktionsprozesses aus. Sie können unterschiedlicher Art sein und verschiedene Funktionen haben. 
 

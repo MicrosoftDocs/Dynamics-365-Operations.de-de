@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Produktbestätigung für Clusterentnahme
 Mit Clusterentnahme können Sie Artikel für mehrere Aufträge gleichzeitig entnehmen. Wann die Clusterentnahme angewendet wird, ist die Artikelbestätigung wichtig, um die Artikel zu prüfen, die den Clustern hinzugefügt werden. Sie können Artikel in der Clusterentnahme während des Clusterentnahmevorgangs überprüfen.
@@ -37,7 +37,8 @@ Artikelprüfung für die Clusterentnahme funktioniert auf die gleiche Weise, wie
 1.  Öffnen Sie über ein Menüelement des mobilen Geräts das Einstellungsformular für Arbeitsbestätigung: **Lagerortverwaltung** > **Lagerortverwaltung** > **Einstellungen** > **Mobiles Gerät** > **Menüelemente** des mobilen Geräts.
 2.  Öffnen Sie über das Menüelement des mobilen Geräts die Option **Einrichtung Arbeitsbestätigung**.
 
-| Mit der folgenden Option...        | Beschreibung   | 
-| ------------- | ------------- |
-|Produktbestätigung | Ermöglicht Ihnen, beim Scannen jeden Inventurartikel über das mobile Gerät zu bestätigen.|
+|        Mit der folgenden Option...        |                                    Beschreibung                                    |
+|----------------------|-----------------------------------------------------------------------------------|
+| Produktbestätigung | Ermöglicht Ihnen, beim Scannen jeden Inventurartikel über das mobile Gerät zu bestätigen. |
+
 

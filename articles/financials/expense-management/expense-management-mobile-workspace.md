@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-management-mobile-workspace"></a>Mobiler Arbeitsbereich für Spesenverwaltung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen über den mobilen Arbeitsbereich für die **Spesenverwaltung**. Dieser Arbeitsbereich ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können. Benutzer können auch schnell eine Spesenposition erstellen, indem sie einen beigefügten Beleg verwenden und ihre Spesenberichte erstellen und verwalten. Darüber hinaus können die Genehmiger den mobilen Arbeitsbereich für die **Spesenverwaltung** verwenden, um Spesenberichte zu überprüfen, die ihnen zugewiesen sind, und diese Spesenberichte entweder genehmigen oder ablehnen.
 

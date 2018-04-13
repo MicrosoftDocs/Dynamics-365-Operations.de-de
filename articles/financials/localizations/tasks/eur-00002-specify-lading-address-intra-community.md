@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="specify-a-lading-address-for-an-intra-community-transaction"></a>Eine Ladungsadresse für eine innergemeinschaftliche Buchung angeben
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird. Zum Beispiel ein deutsches Unternehmens bestellt Artikel von einem Kreditor mit einer deutschen Geschäftsadresse. Dieser Kreditor hat einen Lagerort in Italien und liefert die Artikel von dort. Die Lieferung muss in Intrastat gemeldet werden. Dasselbe Verhalten gilt für Debitorenrücklieferungen.
 Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse in Deutschland erstellt. Bevor Sie dieses Verfahren ausführen können, müssen Sie Intrastat-Berichte konfigurieren. Diese Prozedur ist für Buchhalter vorgesehen. Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.

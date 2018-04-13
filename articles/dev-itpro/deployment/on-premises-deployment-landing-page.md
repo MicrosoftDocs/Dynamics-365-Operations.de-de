@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="on-premises-deployment-home-page"></a>Startseite für die lokale Bereitstellung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sie können Microsoft Dynamics 365 for Finance and Operations (On-Premises) bereitstellen. Wenn Sie eine lokale Bereitstellungsform auswählen, unterscheiden sich die Systemanforderungen, die Hardwareauslegung und die Funktionalität von einer Cloud-Bereitstellung. Dieses Thema bietet Links zu Inhalten mit Informationen speziell zu lokalen Bereitstellungen.
 

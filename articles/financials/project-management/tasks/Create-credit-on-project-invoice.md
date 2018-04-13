@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a>Erstellen einer Gutschrift auf Projektrechnungen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 1. Wechseln Sie zu "Projektverwaltung und -verrechnung" > "Projekte" > "Alle Projekte". 
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. 

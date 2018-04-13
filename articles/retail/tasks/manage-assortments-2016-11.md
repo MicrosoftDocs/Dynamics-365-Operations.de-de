@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="manage-assortments"></a> Sortimente verwalten  
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie man ein neues Produktsortiment erstellt und veröffentlicht und nutzt das Demodatenunternehmen USRT. Dieses Verfahren erfordert Dynamics AX 7.0.1 oder höher und die Dynamics AX-Plattform 7.1.  
 

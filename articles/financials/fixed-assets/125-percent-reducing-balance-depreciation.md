@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 125 Prozent
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel gibt eine Übersicht die 125 Prozent Reduktionssaldomethode der Abschreibung.
 
@@ -68,6 +67,7 @@ Wenn als Abschreibungsjahr **Steuerlich** ausgewählt wird, stehen im Feld **Per
 -   **Finanzzeitraum** bucht den Gesamtbetrag der Abschreibung, die für das Geschäftsjahr berechnet wird. Dieser Betrag wird auf Steuerperioden aufgeteilt, die auf der Seite **Steuerkalender** definiert werden.
 
 ## <a name="example-of-125-reducing-balance-depreciation"></a>Beispiel für die Abschreibungsmethode "125 % degressiv"
+
 |                                |        |
 |--------------------------------|--------|
 | Anschaffungskosten               | 11.000 |

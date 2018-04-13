@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="depreciation-methods-and-conventions"></a>Abschreibungsmethoden und -konventionen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel gibt einen Überblick über die Abschreibungskonventionen und Abschreibungsmethoden, die von Microsoft Dynamics 365 for Finance and Operations unterstützt werden.
 
@@ -62,7 +61,7 @@ Die folgenden Abschreibungsmethoden stehen zur Auswahl.
 -   150% degressiv
 -   125% degressiv
 
- 
+
 
 
 

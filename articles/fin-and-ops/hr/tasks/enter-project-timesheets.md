@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="enter-project-timesheets"></a>Arbeitsnachweise des Projekts eingeben
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 In dieser Prozedur erstellen Sie einen Arbeitszeitnachweis, indem Sie ein leeres Arbeitszeitnachweisformular verwenden. Der neue Arbeitszeitnachweis kann auf Informationen aus einem vorherigen Arbeitszeitnachweis auf aus Projekt- und Aktivitätszuweisungen auf der Seite "Eigene Favoriten" basieren. Standardmäßig werden auf der Listenseite "Alle Arbeitszeitnachweise" alle Arbeitszeitnachweise für die aktuelle Periode angezeigt. Sie können über die Dropdownliste für das Feld "Anzeigen" auf der Seite "Eigene Arbeitszeitnachweise" die Arbeitszeitnachweise nach Zeitraum oder Projekt filtern oder Arbeitszeitnachweise anzeigen, die im Auftrag anderer Arbeitskräfte erstellt wurden. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USSI. Um diese Prozedur zu starten, wechseln Sie zu "Projektverwaltung und Buchhaltung" > "Arbeitszeitnachweis" > "Eigene Arbeitszeitnachweise".
 

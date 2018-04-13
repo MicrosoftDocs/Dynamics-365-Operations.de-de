@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="dimension-hierarchy"></a>Dimensionshierarchie
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema bietet Informationen über Dimensionshierarchien. Sie verwenden eine Dimensionshierarchie, um die Berichtsstruktur, Kostenrichtlinien sowie die Sicherheitseinstellungen zu in der Kostenrechnung zu definieren.  
 

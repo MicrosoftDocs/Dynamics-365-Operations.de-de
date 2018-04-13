@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions"></a>Finanzdimensionen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen erklärt und wie sie eingerichtet wurden.
 

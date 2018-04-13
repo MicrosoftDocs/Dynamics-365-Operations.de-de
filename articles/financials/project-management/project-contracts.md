@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-contracts"></a>Projektverträge
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel bietet Beispiele für Projektverträge, die Sie für verschieden Arten von Projekten und Finanzierungsquellen erstellen können, und zeigt, wie Sie in Microsoft Dynamics 365 for Finance and Operations Verträge verwalten und Rechnungen für Projektdebitoren erstellen können.
 

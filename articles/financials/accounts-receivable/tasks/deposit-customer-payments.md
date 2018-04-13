@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="deposit-customer-payments"></a>Debitorenzahlungen empfangen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Zahlen Sie Debitorenzahlungen ein. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 

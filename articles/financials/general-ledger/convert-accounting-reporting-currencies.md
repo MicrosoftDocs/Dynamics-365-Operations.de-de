@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Konvertieren von Buchhaltungs- oder Berichtswährungen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ein Unternehmen, das die Buchhaltungswährung oder Berichtswährung ändern muss, verfügt über zwei Optionen. Die erste Option ist, ein neues Unternehmen zu erstellen und neu zu beginnen. Die zweite Option ist, den Buchhaltungs- und den Berichtswährungsumwandlungsprozess auszuführen. Dies ist ein Prozess mit sehr langer Laufzeit, der jede Buchung im System ändert. Bevor Sie den Prozess ausführen können, sind zusätzliche Einstellungen erforderlich.
 

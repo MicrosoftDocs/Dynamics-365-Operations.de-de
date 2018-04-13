@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Eingeben von Konto- und Dimensionskombinationen (segmentierte Eintragssteuerung)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Konto- und Dimensions-Kombinationen oder Sachkonten eingegeben werden. Die Eintragserfahrung wird häufig als segmentiertes Eintragssteuerelement bezeichnet.
 
@@ -112,7 +111,7 @@ In der folgenden Tabelle werden die Tastenkombinationen beschrieben, die verwend
 </tbody>
 </table>
 
- 
+
 
 
 

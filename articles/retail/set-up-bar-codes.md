@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-codes"></a>Strichcodes einrichten
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Strichcodes in Microsoft Dynamics 365 for Retail verwendet werden.
 

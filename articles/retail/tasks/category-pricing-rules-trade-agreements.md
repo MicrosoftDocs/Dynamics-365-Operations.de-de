@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategoriepreiskalkulationsregeln, um Handelsvereinbarungen zu erstellen
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur veranschaulicht, wie Handelsvereinbarungen zu Verkaufspreisen mithilfe der Kategoriepreiskalkulationsregel erstellt werden. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USRT. Diese Aufgabe ist für die Rolle "Manager Verkaufsförderung (Einzelhandel)" vorgesehen.
 

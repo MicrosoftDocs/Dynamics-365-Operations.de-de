@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Kostenrechnungsanalyse Power BI Inhalt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, was im **Buchhaltungsanalyse** Microsoft Power Bl-Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
@@ -111,18 +111,20 @@ Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet w
 
 Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregierte Messungen zu teilen, um eine größere Granularität zu erreichen und tiefere und analytische Einblicke bereitzustellen.
 
-| Entität                             | Beispiele für Attribute                                                                                               |
+
+|               Entität               |                                                Beispiele für Attribute                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Kostenrechnungssachkonten            | Kostenrechnungssachkonto                                                                                               |
-| Kostensteuerungseinheiten                 | Name der Kostensteuerungseinheit                                                                                               |
-| Kostenelementdimensionen            | Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung          |
-| Kostenobjektdimensionen             | Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung              |
-| Statistische Dimensionen             | Statistischer Dimensionsname, Statistischer Dimensionsmitgliedsname, Statistischer Dimensionsmitgliedsbeschfreibung              |
-| Kostenobjekt-Dimensionshierarchie  | Kostenträgerdimensionshierarchiename, Kostenträgerdimensionshierarchieebene, Kostenträgerdimensionshierarchiestruktur    |
+|      Kostenrechnungssachkonten       |                                                Kostenrechnungssachkonto                                                |
+|         Kostensteuerungseinheiten         |                                                Name der Kostensteuerungseinheit                                                |
+|      Kostenelementdimensionen       |     Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung      |
+|       Kostenobjektdimensionen       |       Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung        |
+|       Statistische Dimensionen       |       Statistischer Dimensionsname, Statistischer Dimensionsmitgliedsname, Statistischer Dimensionsmitgliedsbeschfreibung        |
+| Kostenobjekt-Dimensionshierarchie  |  Kostenträgerdimensionshierarchiename, Kostenträgerdimensionshierarchieebene, Kostenträgerdimensionshierarchiestruktur   |
 | Kostenelement-Dimensionshierarchie | Kostenelementdimensionshierarchiename, Kostenelementdimensionshierarchieebene, Kostenelementdimensionshierarchiestruktur |
-| Statistische Dimensionshierarchie  | Statistische Dimensionshierarchiename, Statistischer Dimenstionhierarchieebene, statistische Kostenträgerdimensionshierarchiestruktur    |
-| Transaktionsversionen               | Versionsname                                                                                                         |
-| Steuerkalender                   | Kalender, Beschreibung des Kalenders                                                                                       |
-| Geschäftsjahr                       | Kalenderjahr                                                                                                        |
-| Finanzzeiträume                     | Kalenderperioden                                                                                                 |
+| Statistische Dimensionshierarchie  |  Statistische Dimensionshierarchiename, Statistischer Dimenstionhierarchieebene, statistische Kostenträgerdimensionshierarchiestruktur   |
+|        Transaktionsversionen        |                                                     Versionsname                                                     |
+|          Steuerkalender          |                                            Kalender, Beschreibung des Kalenders                                            |
+|            Geschäftsjahr            |                                                    Kalenderjahr                                                     |
+|           Finanzzeiträume           |                                                 Kalenderperioden                                                 |
+
 

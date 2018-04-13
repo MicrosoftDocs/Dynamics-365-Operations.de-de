@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="optimization-advisor-overview"></a>Optimierungsratgeber – Überblick
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Optimierungsratgeber verwenden können, um eine optimale Konfiguration von Microsoft Dynamics 365 Finance and Operations zu gewährleisten.
 

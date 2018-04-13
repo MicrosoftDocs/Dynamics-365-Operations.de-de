@@ -27,8 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="organizational-training-power-bi-content"></a>Power BI Inhalt Organisatorische Schulungen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird der Power BI-Inhalt „Finance and Operations – Organisatorisches Training” beschrieben. 
 

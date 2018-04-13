@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-goal"></a>Ein Ziel erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen und die Ziele mit einer Überprüfung verknüpfen. Diese Prozedur wurde mit dem Demodatenunternehmen USMF erstellt. Diese Prozedur ist für eine Funktion gedacht, die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 

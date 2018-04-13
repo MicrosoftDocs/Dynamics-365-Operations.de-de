@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Richtlinien für Beschaffungskategoriehierarchien einrichten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Verwenden Sie dieses Verfahren, um Regeln zum Bestellen von Produkten in einer Kategorie einzurichten. Die Regeln werden für eine bestimmte Einkaufsrichtlinie definiert. Die Kategoriezugriffsregel steuert, auf welche Beschaffungskategorien Mitarbeiter Zugriff haben, wenn sie eine Anforderung erstellen. Wenn eine Anforderung erstellt wird, werden die Einkaufsrichtlinie und Kategoriezugriffsregel, die angewendet werden sollten, durch die juristische Person und die Organisationseinheit bestimmt, der der Mitarbeiter angehört. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. In der Regel wird diese Aufgabe von einem Einkaufsleiter ausgeführt.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Produkt mithilfe der Kategoriehierarchien klassifizieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Nutzen Sie Kategoriehierarchien, um Produkte für den Export, die Beschaffung, den Verkauf oder andere Zwecke zu klassifizieren. Diese Aufgabe wird in der Regel von einem Produktmanager ausgeführt. Das Beispiel verwendet die Produktnummer M0009 im Demodatenunternehmen USMF.
 

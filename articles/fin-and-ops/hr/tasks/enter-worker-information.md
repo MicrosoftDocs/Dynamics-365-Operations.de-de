@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-worker-information"></a>Arbeitskraftinformationen eingeben
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Nachdem ein Personalbeschaffungsmitarbeiter ein Masseneinstellungsprojekt erstellt und die Positionen generiert hat, besteht der nächste Schritt darin, die Arbeitskraftinformationen für die Personen einzugeben, die eingestellt werden. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Die Demodaten enthalten ein offenes Masseneinstellungsprojekt. Um diese Prozedur zu starten, gehen Sie zu "Personalverwaltung" > "Personalbeschaffung" > "Masseneinstellungsprojekte".
 

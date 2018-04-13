@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-dimension-based-configurations"></a>Dimensionsbasierte Konfigurationen erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 In der folgenden Prozedur wird gezeigt, wie eine Konfiguration für ein dimensionsbasiertes Produkt definiert wird. Dies ist die letzte Prozedur in der Reihe, die beschreibt, wie Kombinationen für eine dimensionsbasierte Konfiguration erstellt werden. Die Ausführung dieser Prozedur hängt von den Daten ab, die in den vorherigen sieben Aufzeichnungen erstellt wurden. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

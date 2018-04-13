@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="deliver-an-employee-benefits-program"></a>Mitarbeitervergütungsprogramm bereitstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Aufgabe zeigt Ihnen, wie Vorteilselemente erstellt werden, die verwendet werden, wenn ein neuer Vorteile erstellt wird. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für einen "Leiter Vergütungen/Bezüge" vorgesehen.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Brennstoffindex einem Spediteur als Zusatzgebühr zuordnen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Handbuch, zeigt wie Sie eine Zusatzleistungszuweisung, Spediteurzusatzgebühr sowie einen Zusatzleistungsmaster für Benzinzuschlag erstellen und einen Spediteurskraftstoffindex einem Spediteur zuordnen. Sie müssen einen Spediteurskraftstoffindex eingerichtet haben, bevor Sie dieses Handbuch ausführen. Sie können das Handbuch "Einrichten eines Spedituerkraftstoffindex" für diese Aufgaben verwenden. Diese Einrichtungsaufgaben werden normalerweise von einem Logistikmanager durchgeführt. Die Demodaten, die verwendet werden, um diese Prozedur zu erstellen, sind USMF.
 

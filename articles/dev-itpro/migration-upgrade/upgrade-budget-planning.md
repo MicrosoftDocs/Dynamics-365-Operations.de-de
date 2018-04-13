@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Budgetplanung aktualisieren
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Es gibt erhebliche Unterschiede bei der Budgetplanung zwischen Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Finance and Operations. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.  
 
@@ -70,26 +69,27 @@ Um einfach zu bestimmen, wie die Aktualisierung für das System konfiguriert wer
 
 ### <a name="define-columns-and-layouts"></a>Spalten und Layouts definieren
 
-1.  Klicken Sie auf der Seite **Budgetplanungskonfiguration** auf die Registerkarte **Spalten**. Als Teil der Aktualisierung werden neue Spalten automatisch basierend auf Ihren Bugetplanpositionen erstellt. Spalten verwenden nun dynamische Daten, in denen der Zeitpunkt vom Geschäftsjahr gebucht wird, das im Budgetplanungsprozess definiert wird. **Hinweis:** Aus Leistungsgründe während der Aktualisierung wird angenommen, dass alle Budgetzyklen Kalenderjahre darstellen und nicht Geschäftsjahre. Wenn Sie Geschäftsjahre verwenden, müssen Sie die Bearbeitung korrekt vornehmen, um die Spalten gemäß dem Geschäftsjahr korrekt zuzuordnen. Beispielsweise waren die folgenden Elemente in AX 2012 vorhanden:
-    -   Budgetplanszenarien: Wirklichkeiten, Basiszeitraum, Budget-Anforderung, Budget genehmigt
-    -   Budgetplanpositionen für alle Szenarien im Jahre 2017 und 2017 und 2016 Actuals
+1. Klicken Sie auf der Seite **Budgetplanungskonfiguration** auf die Registerkarte **Spalten**. Als Teil der Aktualisierung werden neue Spalten automatisch basierend auf Ihren Bugetplanpositionen erstellt. Spalten verwenden nun dynamische Daten, in denen der Zeitpunkt vom Geschäftsjahr gebucht wird, das im Budgetplanungsprozess definiert wird. **Hinweis:** Aus Leistungsgründe während der Aktualisierung wird angenommen, dass alle Budgetzyklen Kalenderjahre darstellen und nicht Geschäftsjahre. Wenn Sie Geschäftsjahre verwenden, müssen Sie die Bearbeitung korrekt vornehmen, um die Spalten gemäß dem Geschäftsjahr korrekt zuzuordnen. Beispielsweise waren die folgenden Elemente in AX 2012 vorhanden:
+   -   Budgetplanszenarien: Wirklichkeiten, Basiszeitraum, Budget-Anforderung, Budget genehmigt
+   -   Budgetplanpositionen für alle Szenarien im Jahre 2017 und 2017 und 2016 Actuals
 
-    Die folgenden Spalten sind in Finance and Operations erstellt:
-    | Spaltenname    | Budgetplanszenario | Zeitperiode der Spalte | Jahresausgleich |
-    |----------------|----------------------|--------------------|-------------|
-    | Januar Szenario 1 | Istwerte              | 1                  | 0           |
-    | Januar Szenario 2 | Basislinie             | 1                  | 0           |
-    | Januar Szenario 3 | Budgetanforderung       | 1                  | 0           |
-    | Januar Szenario 4 | Genehmigtes Budget      | 1                  | 0           |
-    | Januar Szenario 5 | Istwerte              | 1                  | -1          |
-    | Februar Szenario 1 | Istwerte              | 1                  | 0           |
-    | ...            | ...                  | ...                | ...         |
+   Die folgenden Spalten sind in Finance and Operations erstellt:
 
-    In diesem Beispiel wird eine Spalte mit der Bezeichnung, **Januar Szenario 1** für die neuesten Budgetplanbuchungsdaten erstellt, die gefunden werden, wenn Buchungen im Januar vorhanden sind. Eine ähnliche Spalte wird für jedes Szenario erstellt, das Daten enthält. Nachdem Spalten für alle Perioden in diesem Jahr vorhanden sind, werden für Spalten die vorherigen Jahre erstellt.
-2.  Ändern Sie die Registerkarte und Beschreibungen und alle sonstigen Details, entweder manuell im Client oder indem Sie Massenaktualisierungen durch das Excel-Add-In ausführen, das zu den Budgetplanspalten der Datenentität weist. Alle Filter, die zuvor für Matrixfelder festgelegt wurden, werden jetzt in der Spalten festgelegt.
-3.  Neues Budgetplanlayout erstellen. Ein Layout weist zu mehreren Spalten, um die Ansicht zu definieren, die in Excel und dem Client angezeigt wird. Das Layout erfordert, dass Sie zuerst einer Sachkontodimension angeben, die festgelegt wird, um zu bestimmen, welche Finanzdimensionen eingegeben werden können. Nachdem Sie den Dimensionssatz angeben, klicken Sie auf **Beschreibungen**, um weitere Dimensionsbeschreibungen auszuwählen, die im Layout berücksichtigt werden sollen.
-4.  Wählen Sie im Inforegister **Layoutelemente**, **Hinzufügen**, um Metadaten für jede Zeile hinzuzufügen, wie eine Währung, eine Budgetklasse oder einen Kommentar oder eine Budgetklasse, die die Einnahmenzeilen gegen die Ausgabenzeilen darstellt. Wählen Sie dann Spalten für die Zeitperiode hinzufügen und die Szenarien, die für diesen Budgetzyklus und Phase gelten. Sie können dieser Änderungen im Client oder durch Excel-Add-In manuell vornehmen, das auf die Budgetplanlayoutelemente der Datenentität hinweist.
-5.  Für jedes Layoutelement wählen Sie aus, ob die Spalte bearbeitbar sein soll und ob die Spalte in der Excel-Arbeitsmappe für dieses Layout auch erscheinen soll. **Hinweis:** Für unsere historischen Pläne sollten Sie ein Layout berücksichtigen, das 12 Monatsspalten für alle Budgetplanszenarien für diesen Prozess anzeigt.
+   | Spaltenname    | Budgetplanszenario | Zeitperiode der Spalte | Jahresausgleich |
+   |----------------|----------------------|--------------------|-------------|
+   | Januar Szenario 1 | Istwerte              | 1                  | 0           |
+   | Januar Szenario 2 | Basislinie             | 1                  | 0           |
+   | Januar Szenario 3 | Budgetanforderung       | 1                  | 0           |
+   | Januar Szenario 4 | Genehmigtes Budget      | 1                  | 0           |
+   | Januar Szenario 5 | Istwerte              | 1                  | -1          |
+   | Februar Szenario 1 | Istwerte              | 1                  | 0           |
+   | ...            | ...                  | ...                | ...         |
+
+   In diesem Beispiel wird eine Spalte mit der Bezeichnung, **Januar Szenario 1** für die neuesten Budgetplanbuchungsdaten erstellt, die gefunden werden, wenn Buchungen im Januar vorhanden sind. Eine ähnliche Spalte wird für jedes Szenario erstellt, das Daten enthält. Nachdem Spalten für alle Perioden in diesem Jahr vorhanden sind, werden für Spalten die vorherigen Jahre erstellt.
+2. Ändern Sie die Registerkarte und Beschreibungen und alle sonstigen Details, entweder manuell im Client oder indem Sie Massenaktualisierungen durch das Excel-Add-In ausführen, das zu den Budgetplanspalten der Datenentität weist. Alle Filter, die zuvor für Matrixfelder festgelegt wurden, werden jetzt in der Spalten festgelegt.
+3. Neues Budgetplanlayout erstellen. Ein Layout weist zu mehreren Spalten, um die Ansicht zu definieren, die in Excel und dem Client angezeigt wird. Das Layout erfordert, dass Sie zuerst einer Sachkontodimension angeben, die festgelegt wird, um zu bestimmen, welche Finanzdimensionen eingegeben werden können. Nachdem Sie den Dimensionssatz angeben, klicken Sie auf **Beschreibungen**, um weitere Dimensionsbeschreibungen auszuwählen, die im Layout berücksichtigt werden sollen.
+4. Wählen Sie im Inforegister **Layoutelemente**, **Hinzufügen**, um Metadaten für jede Zeile hinzuzufügen, wie eine Währung, eine Budgetklasse oder einen Kommentar oder eine Budgetklasse, die die Einnahmenzeilen gegen die Ausgabenzeilen darstellt. Wählen Sie dann Spalten für die Zeitperiode hinzufügen und die Szenarien, die für diesen Budgetzyklus und Phase gelten. Sie können dieser Änderungen im Client oder durch Excel-Add-In manuell vornehmen, das auf die Budgetplanlayoutelemente der Datenentität hinweist.
+5. Für jedes Layoutelement wählen Sie aus, ob die Spalte bearbeitbar sein soll und ob die Spalte in der Excel-Arbeitsmappe für dieses Layout auch erscheinen soll. **Hinweis:** Für unsere historischen Pläne sollten Sie ein Layout berücksichtigen, das 12 Monatsspalten für alle Budgetplanszenarien für diesen Prozess anzeigt.
 
 ### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Aktualisieren Sie den Budgetplanungsprozesse, um das gewünschte Layout für jede Budgetphase zu verwenden
 

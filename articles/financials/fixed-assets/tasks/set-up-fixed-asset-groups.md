@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-fixed-asset-groups"></a>Anlagengruppen einrichten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie eine neue Anlagengruppe erstellt wird. Dabei werden die "Buchhalterrolle" und die Demodaten für die juristische Person USMF verwendet.
 

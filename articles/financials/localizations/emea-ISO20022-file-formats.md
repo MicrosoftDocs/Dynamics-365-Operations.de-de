@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-iso20022-files"></a>ISO20022-Dateien importieren
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sie können Zahlungsdateien in den folgenden Formaten importieren:
 
@@ -41,8 +41,8 @@ Sie müssen die folgenden Voraussetzungen erfüllen, um Bankbenachrichtigungsmel
 3. Richten Sie auf der Seite **Kundenbankkonto** einen Kundenbankkontendatensatz ein, indem Sie die folgenden Informationen eingeben: IBAN oder Bankkontonummer und SWIFT-Code oder Bankleitzahl.
 4. Richten Sie auf der Seite **Bankkonto** Bankkonten für die juristische Entität ein, indem Sie die folgenden Informationen eingeben: IBAN oder Bankkontonummer und SWIFT-Code oder Bankleitzahl, Währung und Adresse.
 
-    > [!NOTE]
-        > Wenn Sie vorhaben, eine erweiterte Bankabstimmung auf dem FastTab **Abstimmung** zu verwenden, setzen Sie die Option **Erweiterte Bankabstimmung** auf **Ja**. Wenn Sie vorhaben, nicht gebuchte importierte Zahlungen abzugleichen, setzen Sie die Option **Bankauszüge als Bestätigung elektronischer Zahlungen verwenden** auf **Ja**.
+   > [!NOTE]
+   > Wenn Sie vorhaben, eine erweiterte Bankabstimmung auf dem FastTab **Abstimmung** zu verwenden, setzen Sie die Option **Erweiterte Bankabstimmung** auf **Ja**. Wenn Sie vorhaben, nicht gebuchte importierte Zahlungen abzugleichen, setzen Sie die Option **Bankauszüge als Bestätigung elektronischer Zahlungen verwenden** auf **Ja**.
 
 5. Optional: Richten Sie auf der Seite **Transaktionscodezuordnung** die Zuordnung zwischen Banktransaktionscodes in der Datei und Banktransaktionstypen ein.
 6. Wenn die Datei Transaktionsgebühren enthält, die Sie zusammen mit der Eingangszahlung buchen wollen, erstellen Sie eine Zahlungsgebühr auf der Seite **Kundenzahlungsgebühr**. Anschließend ordnen Sie die Zahlungsgebühr auf der Seite **Zahlungsmethoden** dem Bankkonto zu, das in den Einstellungen für die Zahlungsgebühr angegeben ist.

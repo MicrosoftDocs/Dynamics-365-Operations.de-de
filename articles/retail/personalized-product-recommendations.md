@@ -29,8 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personalized-product-recommendations-overview"></a>Personalisierte Produktempfehlungsübersicht
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen. Weitere Informationen finden Sie unter [Entfernte oder veraltete Funktionen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features) Navigieren Sie zum unteren Bereich der Seite, wenn Sie die vorhandenen Probleme mit bereit aktivierten Produktempfehlungen für Ihre Umgebung gegenüberstellen. 
@@ -86,9 +85,9 @@ Wenn Sie **Empfehlungen aktivieren** aktivieren und die Konfigurationseinzelvorg
 -   Model-Anmeldeinformationen und - kennung werden für CRT bereitgestellt, so dass Anforderungen für Produktempfehlungen aus Cloud POS und MPOS im onlinemodus durchgeführt werden können.
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Beheben Sie Probleme, wo Sie Produktempfehlungen bereits aktiviert haben 
->- Navigieren Sie zu **Einzelhandelsparameter** > **Lernfähigkeit einer Maschine** > **Produktempfehlungen sperren** und führen Sie **Globaler Konfigurationsjob aus**. Wenn Sie nicht in der Lage sind, die Registerkarte **Lernfähigkeit einer Maschine** zu suchen, wenden Sie sich bitte an den Dynamics Support. 
-
->- Wenn Sie die**Empfehlungssteuerung** Ihrem Buchungsbildschirm mithilfe von **Designer für Bildschirmlayout** hinzugefügt haben, entfernen Sie diese auch. 
+> - Navigieren Sie zu **Einzelhandelsparameter** > **Lernfähigkeit einer Maschine** > **Produktempfehlungen sperren** und führen Sie **Globaler Konfigurationsjob aus**. Wenn Sie nicht in der Lage sind, die Registerkarte **Lernfähigkeit einer Maschine** zu suchen, wenden Sie sich bitte an den Dynamics Support. 
+> 
+> - Wenn Sie die**Empfehlungssteuerung** Ihrem Buchungsbildschirm mithilfe von **Designer für Bildschirmlayout** hinzugefügt haben, entfernen Sie diese auch. 
 
 
 

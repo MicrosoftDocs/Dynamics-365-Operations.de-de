@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-new-departments"></a>Neue Abteilungen definieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Abteilungen sind Organisationseinheiten, die einen Funktionsbereich eines Unternehmens, beispielsweise Vertrieb oder Buchhaltung darstellen. Viele Unternehmen besitzen Organisationshierarchien, die verschiedene Abteilungen innerhalb eines Unternehmens anzeigen. Diese Prozedur führt Sie Schritt für Schritt durch den Prozess der Erstellung von Abteilungen sowie das Hinzufügen dieser Abteilungen zu einer Organisationsabteilungshierarchie. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

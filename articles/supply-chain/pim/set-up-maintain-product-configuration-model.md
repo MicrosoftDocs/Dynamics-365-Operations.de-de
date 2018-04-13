@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="set-up-a-product-configuration-model"></a>Einrichten eines Produktkonfigurationsmodells
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die Schritte zum Einrichten und Erstellen eines Produktkonfigurationsmodells.
 

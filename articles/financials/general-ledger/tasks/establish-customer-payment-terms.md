@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-payment-terms"></a>Debitorenzahlungsbedingungen einrichten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur definiert eine Skonto- und Fälligkeitsdatumseinstellung. Für diese Aufgabenanleitung wird das Demo-Unternehmen USMF verwendet.
 
