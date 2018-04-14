@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 4cb9d1389dc2b1d71b9b18f755bbddc8e799f7ef
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 27097eccd3d3c2db03b62b27d793c3410afe276b
 ms.contentlocale: de-de
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formulas-and-formula-versions"></a><span data-ttu-id="77848-105">Formeln und Formelversionen</span><span class="sxs-lookup"><span data-stu-id="77848-105">Formulas and formula versions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="77848-106">Eine Formel definiert die Materialien, die Substanz und die Ergebnisse eines bestimmten Prozesses in einem der Fertigungsverarbeitung.</span><span class="sxs-lookup"><span data-stu-id="77848-106">A formula defines the materials, ingredients, and outcomes of a specific process in process manufacturing.</span></span> <span data-ttu-id="77848-107">Zusammen mit dem entsprechenden Arbeitsplan definiert die Formel in der Fertigungsverarbeitung den Gesamtprozess.</span><span class="sxs-lookup"><span data-stu-id="77848-107">Together with the corresponding route, the formula defines the whole process in process manufacturing.</span></span> <span data-ttu-id="77848-108">Formeln werden verwendet, um in der Fertigungsverarbeitung Produkte zu planen und zu erzeugen.</span><span class="sxs-lookup"><span data-stu-id="77848-108">Formulas are used to plan and produce products in process manufacturing.</span></span>
 

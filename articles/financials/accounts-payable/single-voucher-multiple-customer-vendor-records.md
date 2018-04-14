@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4c499e31fb42a69dff6ac41faac0c78f7f4d1876
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7348706006dd5baec207ed8ef1d208b032a8e16a
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a><span data-ttu-id="d8995-104">Einzelner Beleg mit mehreren Debitoren- oder Kreditorendatensätzen</span><span class="sxs-lookup"><span data-stu-id="d8995-104">Single voucher with multiple customer or vendor records</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d8995-105">Dieses Thema bietet einen Überblick darüber, was geschieht, wenn Sie einen einzelnen Beleg mit mehreren Debitoren- und Kreditorendatensätzen buchen.</span><span class="sxs-lookup"><span data-stu-id="d8995-105">This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records.</span></span> <span data-ttu-id="d8995-106">Diese Funktionalität wird in künftigen Versionen von Microsoft Dynamics 365 for Finance and Operations nicht mehr zur Verfügung stehen. Folglich wird nicht empfohlen, diese Buchungsmethode zu verwenden, wegen der Buchhaltungsauswirkungen auf die Ausgleichsverarbeitung.</span><span class="sxs-lookup"><span data-stu-id="d8995-106">This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Finance and Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing.</span></span> 
 
@@ -251,7 +250,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="d8995-616">001</span><span class="sxs-lookup"><span data-stu-id="d8995-616">001</span></span>         | <span data-ttu-id="d8995-617">Kunde</span><span class="sxs-lookup"><span data-stu-id="d8995-617">Customer</span></span>         | <span data-ttu-id="d8995-618">US-008</span><span class="sxs-lookup"><span data-stu-id="d8995-618">US-008</span></span>      |                 |           |  <span data-ttu-id="d8995-619">75,00</span><span class="sxs-lookup"><span data-stu-id="d8995-619">75.00</span></span>     | <span data-ttu-id="d8995-620">Unternehmen</span><span class="sxs-lookup"><span data-stu-id="d8995-620">Ledger</span></span>          | <span data-ttu-id="d8995-621">999999---</span><span class="sxs-lookup"><span data-stu-id="d8995-621">999999---</span></span>          |
 | <span data-ttu-id="d8995-622">002</span><span class="sxs-lookup"><span data-stu-id="d8995-622">002</span></span>         | <span data-ttu-id="d8995-623">Lieferant</span><span class="sxs-lookup"><span data-stu-id="d8995-623">Vendor</span></span>           | <span data-ttu-id="d8995-624">1001</span><span class="sxs-lookup"><span data-stu-id="d8995-624">1001</span></span>        |                 |  <span data-ttu-id="d8995-625">75,00</span><span class="sxs-lookup"><span data-stu-id="d8995-625">75.00</span></span>    |            | <span data-ttu-id="d8995-626">Unternehmen</span><span class="sxs-lookup"><span data-stu-id="d8995-626">Ledger</span></span>          | <span data-ttu-id="d8995-627">999999---</span><span class="sxs-lookup"><span data-stu-id="d8995-627">999999---</span></span>          |
 
- 
+
 
 
 

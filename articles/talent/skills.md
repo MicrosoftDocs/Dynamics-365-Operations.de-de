@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: edcb01c177a3e43cea7f0b7936a4129d27314016
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3a5b9f98b371dbad9b6b0538e0d9975dc5ed701c
 ms.contentlocale: de-de
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a><span data-ttu-id="4c88e-104">Angleichen der Belegschaftsqualifikationen mit der Geschäftstätigkeit</span><span class="sxs-lookup"><span data-stu-id="4c88e-104">Align workforce skills with business needs</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="4c88e-105">Sie können auch die Qualifikationen nachverfolgen, die Arbeitskräfte, Bewerber oder Kontaktpersonen haben oder haben sollen um ihre Rollen effektiv auszuführen.</span><span class="sxs-lookup"><span data-stu-id="4c88e-105">You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively.</span></span> <span data-ttu-id="4c88e-106">Sie können auch die Qualifikationen angeben, die für eine bestimmte Stelle erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="4c88e-106">You can also specify the skills that are required for a specific job.</span></span>
 
@@ -55,8 +54,8 @@ ms.lasthandoff: 01/31/2018
 
 <span data-ttu-id="4c88e-133">Mit Qualifikationszuordnungsprofilen finden Sie Mitarbeiter oder Kandidaten mit Fähigkeiten, die den Unternehmensanforderungen entsprechen.</span><span class="sxs-lookup"><span data-stu-id="4c88e-133">Skill-mapping profiles allow you to find current employees or candidates with qualifications that directly correspond to business needs.</span></span>  <span data-ttu-id="4c88e-134">So können Sie beispielsweise ein Qualifikationszuordnungsprofil für eine offene Position in Ihrer Organisation erstellen.</span><span class="sxs-lookup"><span data-stu-id="4c88e-134">For example, you could create a skill-mapping profile for an open position in your organization.</span></span> <span data-ttu-id="4c88e-135">Wenn Sie ein Profil für einen bestimmten Stelle erstellen und Qualifikationen, Bescheinigungen und Ausbildung aus diesem Einzelvorgang auf das Profil kopieren, können Sie Arbeitskräfte, Bewerber und Kontaktpersonen suchen, die mit einer oder mehreren der Kriterien übereinstimmen, die für das Profil eingegeben sind. Sie können eine Liste der Kandidaten anzeigen, deren Qualifikationen am besten mit den Qualifikationen übereinstimmen, die für die Stelle erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="4c88e-135">By creating a profile for a particular job and copying the skills, education and certificates from that job to the profile, you can quickly search workers, applicants and contact persons who match one or more of the criteria entered on the profile and view a list of the candidates whose skills most closely match the skills required for the job.</span></span>
 
-><span data-ttu-id="4c88e-136">**Hinweis** Nur Arbeitskräfte, Bewerber und Kontaktpersonen, die ausgewählt werden, um in die Qualifikationszuordnungssuchen einbezogen zu werden, können in einer Qualifikationszuordnungsergebnisliste angezeigt werden oder in einem Qualifikationsprofil einbezogen werden.</span><span class="sxs-lookup"><span data-stu-id="4c88e-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="4c88e-137">Wenn Sie eine Arbeitskraft, einen Bewerber oder eine Kontaktperson in Qualifikationszuordnungssuchen, wählen Sie auf den folgenden Seiten in **Qualifikationszuordnung einschließen** "Ja" aus:</span><span class="sxs-lookup"><span data-stu-id="4c88e-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
-
+> <span data-ttu-id="4c88e-136">**Hinweis** Nur Arbeitskräfte, Bewerber und Kontaktpersonen, die ausgewählt werden, um in die Qualifikationszuordnungssuchen einbezogen zu werden, können in einer Qualifikationszuordnungsergebnisliste angezeigt werden oder in einem Qualifikationsprofil einbezogen werden.</span><span class="sxs-lookup"><span data-stu-id="4c88e-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="4c88e-137">Wenn Sie eine Arbeitskraft, einen Bewerber oder eine Kontaktperson in Qualifikationszuordnungssuchen, wählen Sie auf den folgenden Seiten in **Qualifikationszuordnung einschließen** "Ja" aus:</span><span class="sxs-lookup"><span data-stu-id="4c88e-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
+> 
 > + <span data-ttu-id="4c88e-138">Arbeitskraft</span><span class="sxs-lookup"><span data-stu-id="4c88e-138">Worker</span></span>
 > + <span data-ttu-id="4c88e-139">Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="4c88e-139">Employee</span></span>
 > + <span data-ttu-id="4c88e-140">Bewerber</span><span class="sxs-lookup"><span data-stu-id="4c88e-140">Applicant</span></span>

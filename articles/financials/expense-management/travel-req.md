@@ -17,16 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 135d787d03fe6d3ec3ca8d2324ac3055b72f2962
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 258727db58c32373a3ce3496cf4d2a9faf064425
 ms.contentlocale: de-de
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="travel-requisitions"></a><span data-ttu-id="bdd07-104">Reiseanforderungen</span><span class="sxs-lookup"><span data-stu-id="bdd07-104">Travel requisitions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="bdd07-105">Eine *Reiseanforderung* ist ein Quelldokument, das Ausgaben dokumentiert, die für eine Reise anfallen.</span><span class="sxs-lookup"><span data-stu-id="bdd07-105">A *travel requisition* is a source document that lists the expenses that will be incurred for the purpose of travel.</span></span> <span data-ttu-id="bdd07-106">Eine Reiseanforderung wird zur Prüfung gesendet und kann danach zur Autorisierung von Ausgaben verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="bdd07-106">A travel requisition is submitted for review and can then be used to authorize expenses.</span></span>
 

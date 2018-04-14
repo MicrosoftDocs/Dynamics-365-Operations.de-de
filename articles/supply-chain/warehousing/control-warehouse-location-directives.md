@@ -19,17 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 269631124e9cab89a85bf4ff6936f3cd5d1dab2a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f4345bcaa4820aa037a405decaa5ee8f56ad49f0
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a><span data-ttu-id="c2008-103">Steuern von Lagerarbeit, indem Sie Arbeitsvorlagen und Lagerplatzrichtlinien verwenden</span><span class="sxs-lookup"><span data-stu-id="c2008-103">Control warehouse work by using work templates and location directives</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c2008-104">In diesem Artikel wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen wie und wo Arbeit am Lagerort ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="c2008-104">This article describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.</span></span>
 

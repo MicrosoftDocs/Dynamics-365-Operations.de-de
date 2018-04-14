@@ -16,15 +16,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6a947d4a5302c6ed1848396d50cfbfcb78aabf97
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 134fbbb2cde4c611798ec010ee7a128c06a80392
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a><span data-ttu-id="19c93-103">Kanban-Mengen-Berechnungsrichtlinie zu einer Kanban-Regel hinzufügen</span><span class="sxs-lookup"><span data-stu-id="19c93-103">Add a kanban quantity calculation policy to a kanban rule</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="19c93-104">Der Schwerpunkt dieser Prozedur liegt auf dem Erstellen einer Richtlinie zur Kanban-Mengenberechnung und dem Hinzufügen dieser zu einer Kanban-Regel, mit der die Kanban-Größe und -menge optimiert wird.</span><span class="sxs-lookup"><span data-stu-id="19c93-104">This procedure focuses on creating a kanban quantity calculation policy and adding it to a kanban rule to optimize the kanban size and quantities.</span></span> <span data-ttu-id="19c93-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="19c93-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="19c93-106">Diese Vorgehensweise ist für den Wertstrommanager vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="19c93-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="19c93-107">Dieses Verfahren wird für die Erstellung des Verfahrens "Kanban-Mengenvorschläge berechnen" vorausgesetzt.</span><span class="sxs-lookup"><span data-stu-id="19c93-107">This procedure is a prerequisite for creating the procedure Calculate kanban quantity suggestions.</span></span> 
 

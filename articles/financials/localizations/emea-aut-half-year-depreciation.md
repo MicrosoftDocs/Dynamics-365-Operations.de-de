@@ -18,17 +18,16 @@ ms.author: sndray
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 554c564e2dafdc025c7c1d3b2c02c07f8bdf8791
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f18ffed622ea37b801a088d02d20ad9ee79c82d8
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="half-year-depreciation-on-additional-acquisitions-for-austria"></a><span data-ttu-id="69c20-103">Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich</span><span class="sxs-lookup"><span data-stu-id="69c20-103">Half-year depreciation on additional acquisitions for Austria</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="69c20-104">Dieses Thema enthält Informationen für Benutzer von juristischen Personen in Österreich zu der Abschreibung von zusätzlichen Anschaffungen, wenn die Abschreibungskonvention für das Halbjahr für die Anlagenabschreibung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="69c20-104">This topic provides information for users in legal entities in Austria about the depreciation of additional acquisitions when the Half year convention is used for fixed asset depreciation.</span></span>
 
@@ -38,6 +37,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="69c20-107">Betrag zusätzlicher Anschaffungen, die im Jahr nach dem ersten Jahr der Anschaffung gebucht werden, wird gemäß Konventionsregel vom Halbjahr beginnend am 1. Januar oder am 1. Juli des Jahres abgeschrieben, in dem die zusätzlichen Anschaffungen gebucht werden.</span><span class="sxs-lookup"><span data-stu-id="69c20-107">Amount of additional acquisitions posted in the year later than year of initial acquisition is depreciated according to half year convention rule starting from the January 1st or the July 1st of the year where the additional acquisitions is posted.</span></span>
 
 ## <a name="prerequisites"></a><span data-ttu-id="69c20-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="69c20-108">Prerequisites</span></span>
+
 |                                       |                                                                                                                                                                                                                                                                                                                                                               |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="69c20-109">**Voraussetzung**</span><span class="sxs-lookup"><span data-stu-id="69c20-109">**Prerequisite**</span></span>                      | <span data-ttu-id="69c20-110">**Informationen**</span><span class="sxs-lookup"><span data-stu-id="69c20-110">**Information**</span></span>                                                                                                                                                                                                                                                                                                                                              |

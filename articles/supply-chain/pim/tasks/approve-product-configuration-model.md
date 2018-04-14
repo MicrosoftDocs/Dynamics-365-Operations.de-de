@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fa4548d3017246cbe49e2613f8990df6ea1c368b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d19c904ca7d974a8f80eebe7d237bede080c8f6
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="approve-a-product-configuration-model"></a><span data-ttu-id="a582c-103">Ein Produktkonfigurationsmodell genehmigen</span><span class="sxs-lookup"><span data-stu-id="a582c-103">Approve a product configuration model</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a582c-104">Die Ausführung dieser Prozedur erfordert mindestens ein vorhandenes Produktkonfigurationsmodell.</span><span class="sxs-lookup"><span data-stu-id="a582c-104">Running this procedure requires that at least one product configuration model is available.</span></span> <span data-ttu-id="a582c-105">Diese Prozedur verwendet das Spitzenlautsprechermodell im Vorführungsunternehmen USMF.</span><span class="sxs-lookup"><span data-stu-id="a582c-105">This procedure uses the High end speaker model in the demo data company USMF.</span></span> <span data-ttu-id="a582c-106">Beachten Sie, dass dieses Modell bereits genehmigt wurde. Das Verfahren führt Sie jedoch durch den gesamten Prozess.</span><span class="sxs-lookup"><span data-stu-id="a582c-106">Note that this model has already been approved, but the procedure walks you through the entire process.</span></span>
 

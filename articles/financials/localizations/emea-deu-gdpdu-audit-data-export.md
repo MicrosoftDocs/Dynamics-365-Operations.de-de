@@ -18,17 +18,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ef6b2daed0ede6ab51909ca5542434f8fac7426
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 31acc1066641bf589a902128473d779e7057eda6
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="german-audit-file-gdpdugobd"></a><span data-ttu-id="da4a4-105">Deutsche Protokolldatei (GDPdU/GoBD)</span><span class="sxs-lookup"><span data-stu-id="da4a4-105">German audit file (GDPdU/GoBD)</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="da4a4-106">Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="da4a4-106">Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form.</span></span> <span data-ttu-id="da4a4-107">In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations die Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt.</span><span class="sxs-lookup"><span data-stu-id="da4a4-107">This article describes how the current version of Microsoft Dynamics 365 for Finance and Operations supports the GDPdU/GoBD audit file requirements.</span></span> <span data-ttu-id="da4a4-108">Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.</span><span class="sxs-lookup"><span data-stu-id="da4a4-108">It also shows the tables that are set up as examples in the electronic reporting configurations.</span></span>
 

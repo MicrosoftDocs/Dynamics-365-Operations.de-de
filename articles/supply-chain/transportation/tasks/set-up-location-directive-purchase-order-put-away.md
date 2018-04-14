@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
-ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 115dfc163dce580244c2b2b6975e49ea3b69f1ef
 ms.contentlocale: de-de
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="fca72-103">Lagerplatzdirektive für Bestellungseinlagerung einrichten</span><span class="sxs-lookup"><span data-stu-id="fca72-103">Set up a location directive for purchase order put-away</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="fca72-104">Dieses Verfahren zeigt Ihnen an, wie ein Satzmaster eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="fca72-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="fca72-105">Das Beispiel, das angezeigt wird, erstellt, um zu bestimmen, wo sich verwendet werden Lagerplatzdirektive, Artikel führt, die für eine Bestellung eingegangen sind.</span><span class="sxs-lookup"><span data-stu-id="fca72-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="fca72-106">Sie können diese Prozedur mit dem Daten des Demodatenunternehmen USMF oder mit eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="fca72-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="fca72-107">Vorbedingungen: Sie müssen einen Dispositionscode erstellen.</span><span class="sxs-lookup"><span data-stu-id="fca72-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="fca72-108">In diesem Schritt verwenden Sie einen aufgerufenen Dispositionscode neu bezeichnen.</span><span class="sxs-lookup"><span data-stu-id="fca72-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="fca72-109">Wenn Sie Lagerplatzdirektive in eigene Daten erstellen, müssen Sie einrichten erweiterte Lagerortverwaltung für den aktuellen Lagerort und Artikel verwenden.</span><span class="sxs-lookup"><span data-stu-id="fca72-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="fca72-110">Diese Prozedur ist für die Lagerverwaltung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="fca72-110">This procedure is intended for the warehouse manager.</span></span>
 

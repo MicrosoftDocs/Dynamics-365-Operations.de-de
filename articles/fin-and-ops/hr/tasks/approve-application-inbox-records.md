@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1f614b507d28429922902d6c3676483b689ac3d2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3a9719082749f48c04c6c86394b8131a10ae6138
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="approve-application-inbox-records"></a><span data-ttu-id="f2483-103">Bewerbungseingangs-Datensätze genehmigen</span><span class="sxs-lookup"><span data-stu-id="f2483-103">Approve application inbox records</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f2483-104">Im folgenden Verfahren wird gezeigt, wie Sie Bewerbungen prüfen, die über die Seite "Mitarbeiter-Self-Service" eingehen.</span><span class="sxs-lookup"><span data-stu-id="f2483-104">This procedure shows how to review applications received through the Employee self-service pages.</span></span> <span data-ttu-id="f2483-105">Neben der Prüfung der Bewerbungen, können Sie die Bewerbung in den Felddatensätzen genehmigen, die Sie auswählen.</span><span class="sxs-lookup"><span data-stu-id="f2483-105">In addition to reviewing the applications, you can approve the application in box records that you select.</span></span> <span data-ttu-id="f2483-106">Bei Bewerbungseingangsdatensätzen handelt es sich um Stellenbewerbungen, die beim Unternehmen eingegangen sind.</span><span class="sxs-lookup"><span data-stu-id="f2483-106">Application inbox records represent employment applications that were submitted to the company for consideration.</span></span> <span data-ttu-id="f2483-107">Nach dem Genehmigen eines Datensatzes wird für die Person, die die Bewerbung übermittelt hat, ein Bewerberdatensatz erstellt.</span><span class="sxs-lookup"><span data-stu-id="f2483-107">After approving a record, an applicant record will be created for the person who submitted the application.</span></span> <span data-ttu-id="f2483-108">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="f2483-108">The demo data company used to create this procedure is USMF.</span></span>
 

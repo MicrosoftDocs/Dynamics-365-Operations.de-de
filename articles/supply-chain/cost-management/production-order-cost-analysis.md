@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 703070ae85f504cf204244b2197732dc6849abd6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1bbdd7c47013735aa384d2d64c347d08d52c0df2
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-order-cost-analysis"></a><span data-ttu-id="007af-105">Kostenanalyse für Produktionsauftrag</span><span class="sxs-lookup"><span data-stu-id="007af-105">Production order cost analysis</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="007af-106">Dieser Artikel bietet Informationen zur Kostenanalyse, die Sie für abgeschlossene und aktuelle Produktionsaufträge ausführen können.</span><span class="sxs-lookup"><span data-stu-id="007af-106">This article provides information about the cost analysis that you can do for completed and current production orders.</span></span> <span data-ttu-id="007af-107">Sie können die vorkalkulierten Kosten und tatsächlichen Kosten analysieren, indem Sie die Seite "Preiskalkulation" oder den Bericht "Vor- und Nachkalkulation" verwenden.</span><span class="sxs-lookup"><span data-stu-id="007af-107">You can analyze the estimated costs and actual costs by using the Price calculation page or the Cost estimates and costings report.</span></span> <span data-ttu-id="007af-108">Sie können für jeden Komponentenartikel, jeden Arbeitsplan-Arbeitsgang sowie für alle indirekten Kosten Informationen zu den vorkalkulierten Kosten sowie zu den Istkosten (und zur entsprechenden Menge) anzeigen.</span><span class="sxs-lookup"><span data-stu-id="007af-108">You can view information about the estimated and actual costs (and quantity) for each component item, the routing operation, and the indirect cost.</span></span>
 

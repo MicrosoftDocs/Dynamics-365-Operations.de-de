@@ -20,17 +20,16 @@ ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 9c96ac705d03cbeb495e4859b3b132a1d1c571ed
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c094bfa07275c14ba63cae5404156ce72c52d0b5
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a><span data-ttu-id="bc948-104">Ermittelt die optimale Kombination von überlappenden Rabatten</span><span class="sxs-lookup"><span data-stu-id="bc948-104">Determine the optimal combination of overlapping discounts</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="bc948-105">Wenn Rabatte überlappen, müssen Sie die Kombination von Rabatten überlappenden bestimmen, die Buchungssumme niedrigsten oder höchsten den Rechnungsrabatt erzeugen.</span><span class="sxs-lookup"><span data-stu-id="bc948-105">When discounts overlap, you must determine the combination of overlapping discounts that will produce the lowest transaction total or the highest total discount.</span></span> <span data-ttu-id="bc948-106">Wenn der Rabattbetrag gemäß dem Preis der Produkte schwankt, die, wie in der allgemeine "kaufen 1 erworben werden, erhalten Sie 1 x-Prozent Rundung" (BOGO) aus Kleinrabatt, wird dieser Prozess ein Abgang der kombinatorischen Optimierung ab.</span><span class="sxs-lookup"><span data-stu-id="bc948-106">When the discount amount varies according to the price of the products that are purchased, such as in the common “Buy 1, get 1 X percent off” (BOGO) retail discount, this process becomes an issue of combinatorial optimization.</span></span>
 

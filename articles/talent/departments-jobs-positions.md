@@ -19,19 +19,18 @@ ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 5799db0354e0e2bb766284ef2d87e8da9a956958
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6a2730fc8436d40db511216a3f4aa6e1a9317945
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="organize-your-workforce-using-departments-jobs-and-positions"></a><span data-ttu-id="188ef-104">Organisieren der Belegschaft mithilfe der Abteilungen, Stellen und Positionen</span><span class="sxs-lookup"><span data-stu-id="188ef-104">Organize your workforce using departments, jobs, and positions</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
-[!include[retail name](includes/retail-name.md)]
-
+[!INCLUDE [retail name](includes/retail-name.md)]
 
 <span data-ttu-id="188ef-105">Abteilungen, Stellen und Positionen sind Organisationselemente, die innerhalb der Personalverwaltung verwaltet werden.</span><span class="sxs-lookup"><span data-stu-id="188ef-105">Departments, jobs, and positions are organizational elements that are maintained within Human resources.</span></span> <span data-ttu-id="188ef-106">Dieses Thema behandelt die grundlegenden Informationen zu diesen Elementen.</span><span class="sxs-lookup"><span data-stu-id="188ef-106">This topic describes conceptual information about these elements.</span></span> 
 
@@ -48,7 +47,7 @@ ms.lasthandoff: 02/07/2018
 |<span data-ttu-id="188ef-129">**Personalverwaltung**</span><span class="sxs-lookup"><span data-stu-id="188ef-129">**Human resources**</span></span>|<span data-ttu-id="188ef-130">Leiter der Personalabteilung (Westen)</span><span class="sxs-lookup"><span data-stu-id="188ef-130">HR manager (West)</span></span>|<span data-ttu-id="188ef-131">Leiter der Personalabteilung</span><span class="sxs-lookup"><span data-stu-id="188ef-131">HR manager</span></span>|
 |<span data-ttu-id="188ef-132">**Personalverwaltung**</span><span class="sxs-lookup"><span data-stu-id="188ef-132">**Human resources**</span></span>|<span data-ttu-id="188ef-133">Leiter der Personalabteilung (zentral)</span><span class="sxs-lookup"><span data-stu-id="188ef-133">HR manager (Central)</span></span>|<span data-ttu-id="188ef-134">Leiter der Personalabteilung</span><span class="sxs-lookup"><span data-stu-id="188ef-134">HR manager</span></span>|
 
- 
+
  <a name="departments"></a><span data-ttu-id="188ef-135">Abteilungen</span><span class="sxs-lookup"><span data-stu-id="188ef-135">Departments</span></span>
 ------------
 

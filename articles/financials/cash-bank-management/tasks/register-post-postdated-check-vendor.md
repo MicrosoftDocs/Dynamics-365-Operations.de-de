@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 632b04848cdb6d71e7e7dbd6c6bc710d0577950a
-ms.openlocfilehash: 776121532c42fde8b1c3e29b4af0bf833952c0cd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cd00227ed6d288a4b2041630bc7a604ac94d3c70
 ms.contentlocale: de-de
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a><span data-ttu-id="14499-103">Erfassen und Buchen eines vordatierten Schecks für einen Kreditor</span><span class="sxs-lookup"><span data-stu-id="14499-103">Register and post a postdated check for a vendor</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="14499-104">Mithilfe eines Erfassungsbelegs können Sie die Details eines vordatierten Schecks erfassen, bevor der Scheck an einen Kreditor ausgestellt wird.</span><span class="sxs-lookup"><span data-stu-id="14499-104">You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher.</span></span> <span data-ttu-id="14499-105">Sie können den vordatierten Scheck buchen und Finanzbuchungen erstellen.</span><span class="sxs-lookup"><span data-stu-id="14499-105">You can also post the postdated check and generate financial transactions.</span></span> <span data-ttu-id="14499-106">Führen Sie die folgenden Schritte aus, bevor Sie einen vordatierten Scheck registrieren und buchen, den Sie von einem Debitor erhalten haben:</span><span class="sxs-lookup"><span data-stu-id="14499-106">Before you register and post a postdated check from a vendor, complete the following task:</span></span> 
 

@@ -16,16 +16,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 3831a6b5ec458495134b4b490d33a9acd76b6d2e
-ms.openlocfilehash: 5984bc59d67a164a979e663b1f670b8a7df765dc
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2af533bce4b0cd2b4a9a4086a73d7607349319e9
 ms.contentlocale: de-de
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="austria"></a><span data-ttu-id="45748-103">Österreich</span><span class="sxs-lookup"><span data-stu-id="45748-103">Austria</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="45748-104">Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren Hilfe Sie Dynamics 365 for Finance and Operations für juristische Personen mit einer primären Adresse in Österreich einrichten können.</span><span class="sxs-lookup"><span data-stu-id="45748-104">This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in Austria.</span></span>
 

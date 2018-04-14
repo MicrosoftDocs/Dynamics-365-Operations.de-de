@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf3523b2768b197b3c75b9a8490f621eced91a7a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8e35b99a07d4c5eee9fae882b9d7f47ff6d63040
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a><span data-ttu-id="9337b-103">Einen Genehmigungsschritt in einem Workflow genehmigen</span><span class="sxs-lookup"><span data-stu-id="9337b-103">Configure an approval process in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9337b-104">Verwenden Sie das folgende Verfahren, um die Eigenschaften des Genehmigungsprozesses zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="9337b-104">Use the following procedure to configure the properties of the approval process.</span></span>
 
@@ -136,6 +135,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="set-a-time-limit"></a><span data-ttu-id="9337b-179">Festlegen einer Zeitgrenze</span><span class="sxs-lookup"><span data-stu-id="9337b-179">Set a time limit</span></span>
 <span data-ttu-id="9337b-180">Gehen Sie folgendermaßen vor, wenn der Genehmigungsprozess in einer bestimmten Zeit abgeschlossen werden muss.</span><span class="sxs-lookup"><span data-stu-id="9337b-180">Follow these steps if the approval process must be completed in a specific time.</span></span>
+
 | <span data-ttu-id="9337b-181">**Hinweis**</span><span class="sxs-lookup"><span data-stu-id="9337b-181">**Note**</span></span>                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="9337b-182">Die in diesen Schritten ausgewählten Optionen setzen die Optionen außer Kraft, die Sie in den Bereichen **Zuweisung** und **Eskalation** jedes Genehmigungsschritts ausgewählt haben.</span><span class="sxs-lookup"><span data-stu-id="9337b-182">The options that you select in these steps override the options that you selected in the **Assignment** and **Escalation** areas of each approval step.</span></span> |

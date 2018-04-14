@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fa2d85bbb9c8b2fda36883b71a3f540eabc4c1d7
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a><span data-ttu-id="298fe-103">Designausdrücke, um die Anwendungsklassenmethoden (ER) aufzurufen</span><span class="sxs-lookup"><span data-stu-id="298fe-103">Design expressions to call application class methods (ER)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="298fe-104">Dieser Leitfaden enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="298fe-104">This guide provides information about how to reuse the existing application logic in Electronic reporting (ER) configurations by calling required methods of application classes in ER expressions.</span></span> <span data-ttu-id="298fe-105">Werte von Argumenten zum Aufrufen von Klassen können dynamisch zur Laufzeit definiert werden: beispielsweise basierend auf Informationen im Analysedokument, um dessen Richtigkeit sicherzustellen.</span><span class="sxs-lookup"><span data-stu-id="298fe-105">Values of arguments for calling classes can be defined dynamically at run-time: for example, based on information in the parsing document to ensure its correctness.</span></span> <span data-ttu-id="298fe-106">In diesem Handbuch erstellen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen, Litware, Inc. Dieses Verfahren wird für Benutzer mit der zugewiesenen Rolle des Systemadministrators oder elektronischer Berichterstellungsentwicklers erstellt.</span><span class="sxs-lookup"><span data-stu-id="298fe-106">In this guide, you will create the required ER configurations for the sample company, Litware, Inc. This procedure is created for users with the assigned role of System administrator or Electronic reporting developer.</span></span> 
 

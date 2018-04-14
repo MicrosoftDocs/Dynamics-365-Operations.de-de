@@ -19,19 +19,16 @@ ms.author: hminzner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 06490f14ed01c3061b20a0e6977746e9fd2a6ffa
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2330939ddd7ccf4555cf1eff1e264c51f779c4eb
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a><span data-ttu-id="9a2a1-103">Neubewertung der Währung in einem Konsolidierungsunternehmen</span><span class="sxs-lookup"><span data-stu-id="9a2a1-103">Currency revaluation in a consolidation company</span></span>
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9a2a1-104">Wenn Sie Daten aus einer Buchhaltungswährung zu anderen konsolidieren, müssen Sie die Neubewertung der Währung noch durchführen, wenn es eine Änderung in den Wechselkursen gibt, damit die Kontosalden ordnungsgemäß neu bewertet werden.</span><span class="sxs-lookup"><span data-stu-id="9a2a1-104">When you consolidate data from one accounting currency to another, you must still run currency revaluation if there is a change in exchange rates, so that your account balances  are correctly revalued.</span></span> <span data-ttu-id="9a2a1-105">Wenn Sie ursprünglich die Daten konsolidieren, verwenden Sie die **Währungsumrechnung**-Registerkarte, um die ursprünglichen Wechselkurse für die Übersetzung während des Konsolidierungsprozesses auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="9a2a1-105">When you originally consolidate the data, use the **Currency translation** tab to select the initial exchange rates to for translation during the consolidation process.</span></span> <span data-ttu-id="9a2a1-106">Nachdem ein neuer Wechselkurs eingegeben wurde (beispielsweise im nächsten Monat), müssen die Kontosalden neu bewertet werden.</span><span class="sxs-lookup"><span data-stu-id="9a2a1-106">After a new exchange rate is entered (for example, in the next month), you must revalue the account balances.</span></span> <span data-ttu-id="9a2a1-107">Die unrealisierten Gewinne oder Verluste werden dann entsprechend aktualisiert, basierend auf dem neuen Wechselkurs und -datum .</span><span class="sxs-lookup"><span data-stu-id="9a2a1-107">The unrealized gains or losses are then updated accordingly, based on the new exchange rate and date.</span></span> <span data-ttu-id="9a2a1-108">Das folgende Beispiel veranschaulicht die Buchhaltungseinträge, die beim Ausführen des Prozesses erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="9a2a1-108">The following example illustrates the accounting entries that are created during the process.</span></span>
 
@@ -52,6 +49,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="9a2a1-126">11.10.2015</span><span class="sxs-lookup"><span data-stu-id="9a2a1-126">10/11/2015</span></span> | <span data-ttu-id="9a2a1-127">130100 – Debitoren</span><span class="sxs-lookup"><span data-stu-id="9a2a1-127">130100 – Accounts Receivable</span></span> | <span data-ttu-id="9a2a1-128">USD</span><span class="sxs-lookup"><span data-stu-id="9a2a1-128">USD</span></span>      | <span data-ttu-id="9a2a1-129">‑500</span><span class="sxs-lookup"><span data-stu-id="9a2a1-129">-500</span></span>   |
 
 ## <a name="exchange-rates"></a><span data-ttu-id="9a2a1-130">Wechselkurse</span><span class="sxs-lookup"><span data-stu-id="9a2a1-130">Exchange rates</span></span>
+
 | <span data-ttu-id="9a2a1-131">Ausgangswährung</span><span class="sxs-lookup"><span data-stu-id="9a2a1-131">From currency</span></span> | <span data-ttu-id="9a2a1-132">Zielwährung</span><span class="sxs-lookup"><span data-stu-id="9a2a1-132">To currency</span></span> | <span data-ttu-id="9a2a1-133">Startdatum</span><span class="sxs-lookup"><span data-stu-id="9a2a1-133">Start date</span></span> | <span data-ttu-id="9a2a1-134">Kurs</span><span class="sxs-lookup"><span data-stu-id="9a2a1-134">Exchange rate</span></span> |
 |---------------|-------------|------------|---------------|
 | <span data-ttu-id="9a2a1-135">EUR</span><span class="sxs-lookup"><span data-stu-id="9a2a1-135">EUR</span></span>           | <span data-ttu-id="9a2a1-136">USD</span><span class="sxs-lookup"><span data-stu-id="9a2a1-136">USD</span></span>         | <span data-ttu-id="9a2a1-137">01.10.2015</span><span class="sxs-lookup"><span data-stu-id="9a2a1-137">10/1/2015</span></span>  | <span data-ttu-id="9a2a1-138">200</span><span class="sxs-lookup"><span data-stu-id="9a2a1-138">200</span></span>           |

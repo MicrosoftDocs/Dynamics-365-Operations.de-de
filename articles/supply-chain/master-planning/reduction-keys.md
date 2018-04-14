@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 506ca3aac7ad271ca7472f3b74627e94d97a74ee
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6ca65d3c12abd64bef23954b45f73af1bf62f9f3
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reduction-keys"></a><span data-ttu-id="9ecde-105">Planzahlenverrechnungsschlüssel</span><span class="sxs-lookup"><span data-stu-id="9ecde-105">Reduction keys</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9ecde-106">Dieser Artikel enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten.</span><span class="sxs-lookup"><span data-stu-id="9ecde-106">This articles provides examples that show how to set up a reduction key.</span></span> <span data-ttu-id="9ecde-107">Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen.</span><span class="sxs-lookup"><span data-stu-id="9ecde-107">It includes information about the various reduction key settings and the results of each.</span></span> <span data-ttu-id="9ecde-108">Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.</span><span class="sxs-lookup"><span data-stu-id="9ecde-108">You can use a reduction key to define how to reduce forecast requirements.</span></span>
 
@@ -39,17 +38,19 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="9ecde-110">Dieses Beispiel verdeutlicht, wie ein Planzahlenverrechnungsschlüssel den Bedarf der Bedarfsplanung verringert, und zwar gemäß den vom Planzahlenverrechnungsschlüssel definierten Prozentsätzen und Perioden.</span><span class="sxs-lookup"><span data-stu-id="9ecde-110">This example shows how a reduction key reduces demand forecast requirements according to the percentages and periods that are defined by the reduction key.</span></span>
 
-1.  <span data-ttu-id="9ecde-111">Wählen Sie auf der Seite **Planzahlenverrechnungsschlüssel** die folgenden Positionen.</span><span class="sxs-lookup"><span data-stu-id="9ecde-111">On the **Reduction keys** page, set up the following lines.</span></span>
-    | <span data-ttu-id="9ecde-112">Rückgeld</span><span class="sxs-lookup"><span data-stu-id="9ecde-112">Change</span></span> | <span data-ttu-id="9ecde-113">Einheit</span><span class="sxs-lookup"><span data-stu-id="9ecde-113">Unit</span></span>  | <span data-ttu-id="9ecde-114">Prozentsatz</span><span class="sxs-lookup"><span data-stu-id="9ecde-114">Percent</span></span> |
-    |--------|-------|---------|
-    | <span data-ttu-id="9ecde-115">1</span><span class="sxs-lookup"><span data-stu-id="9ecde-115">1</span></span>      | <span data-ttu-id="9ecde-116">Monat</span><span class="sxs-lookup"><span data-stu-id="9ecde-116">Month</span></span> | <span data-ttu-id="9ecde-117">100</span><span class="sxs-lookup"><span data-stu-id="9ecde-117">100</span></span>     |
-    | <span data-ttu-id="9ecde-118">2</span><span class="sxs-lookup"><span data-stu-id="9ecde-118">2</span></span>      | <span data-ttu-id="9ecde-119">Monat</span><span class="sxs-lookup"><span data-stu-id="9ecde-119">Month</span></span> | <span data-ttu-id="9ecde-120">75</span><span class="sxs-lookup"><span data-stu-id="9ecde-120">75</span></span>      |
-    | <span data-ttu-id="9ecde-121">3</span><span class="sxs-lookup"><span data-stu-id="9ecde-121">3</span></span>      | <span data-ttu-id="9ecde-122">Monat</span><span class="sxs-lookup"><span data-stu-id="9ecde-122">Month</span></span> | <span data-ttu-id="9ecde-123">50</span><span class="sxs-lookup"><span data-stu-id="9ecde-123">50</span></span>      |
-    | <span data-ttu-id="9ecde-124">4</span><span class="sxs-lookup"><span data-stu-id="9ecde-124">4</span></span>      | <span data-ttu-id="9ecde-125">Monat</span><span class="sxs-lookup"><span data-stu-id="9ecde-125">Month</span></span> | <span data-ttu-id="9ecde-126">25</span><span class="sxs-lookup"><span data-stu-id="9ecde-126">25</span></span>      |
+1. <span data-ttu-id="9ecde-111">Wählen Sie auf der Seite **Planzahlenverrechnungsschlüssel** die folgenden Positionen.</span><span class="sxs-lookup"><span data-stu-id="9ecde-111">On the **Reduction keys** page, set up the following lines.</span></span>
 
-2.  <span data-ttu-id="9ecde-127">Verknüpfen Sie den Planzahlenverrechnungsschlüssel mit der Deckungsgruppe des Artikels.</span><span class="sxs-lookup"><span data-stu-id="9ecde-127">Link the reduction key to the item's coverage group.</span></span>
-3.  <span data-ttu-id="9ecde-128">Auf der **Produktprogrammpläne**-Seite im Feld **Reduktionsprinzip** wählen Sie **Prozent - Planzahlenverrechnungsschlüssel** aus.</span><span class="sxs-lookup"><span data-stu-id="9ecde-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
-4.  <span data-ttu-id="9ecde-129">Erstellen Sie eine Bedarfsplanung von 1000 Stück pro Monat.</span><span class="sxs-lookup"><span data-stu-id="9ecde-129">Create a demand forecast of 1,000 pieces per month.</span></span>
+   | <span data-ttu-id="9ecde-112">Rückgeld</span><span class="sxs-lookup"><span data-stu-id="9ecde-112">Change</span></span> | <span data-ttu-id="9ecde-113">Einheit</span><span class="sxs-lookup"><span data-stu-id="9ecde-113">Unit</span></span>  | <span data-ttu-id="9ecde-114">Prozentsatz</span><span class="sxs-lookup"><span data-stu-id="9ecde-114">Percent</span></span> |
+   |--------|-------|---------|
+   |   <span data-ttu-id="9ecde-115">1</span><span class="sxs-lookup"><span data-stu-id="9ecde-115">1</span></span>    | <span data-ttu-id="9ecde-116">Monat</span><span class="sxs-lookup"><span data-stu-id="9ecde-116">Month</span></span> |   <span data-ttu-id="9ecde-117">100</span><span class="sxs-lookup"><span data-stu-id="9ecde-117">100</span></span>   |
+   |   <span data-ttu-id="9ecde-118">2</span><span class="sxs-lookup"><span data-stu-id="9ecde-118">2</span></span>    | <span data-ttu-id="9ecde-119">Monat</span><span class="sxs-lookup"><span data-stu-id="9ecde-119">Month</span></span> |   <span data-ttu-id="9ecde-120">75</span><span class="sxs-lookup"><span data-stu-id="9ecde-120">75</span></span>    |
+   |   <span data-ttu-id="9ecde-121">3</span><span class="sxs-lookup"><span data-stu-id="9ecde-121">3</span></span>    | <span data-ttu-id="9ecde-122">Monat</span><span class="sxs-lookup"><span data-stu-id="9ecde-122">Month</span></span> |   <span data-ttu-id="9ecde-123">50</span><span class="sxs-lookup"><span data-stu-id="9ecde-123">50</span></span>    |
+   |   <span data-ttu-id="9ecde-124">4</span><span class="sxs-lookup"><span data-stu-id="9ecde-124">4</span></span>    | <span data-ttu-id="9ecde-125">Monat</span><span class="sxs-lookup"><span data-stu-id="9ecde-125">Month</span></span> |   <span data-ttu-id="9ecde-126">25</span><span class="sxs-lookup"><span data-stu-id="9ecde-126">25</span></span>    |
+
+
+2. <span data-ttu-id="9ecde-127">Verknüpfen Sie den Planzahlenverrechnungsschlüssel mit der Deckungsgruppe des Artikels.</span><span class="sxs-lookup"><span data-stu-id="9ecde-127">Link the reduction key to the item's coverage group.</span></span>
+3. <span data-ttu-id="9ecde-128">Auf der **Produktprogrammpläne**-Seite im Feld **Reduktionsprinzip** wählen Sie **Prozent - Planzahlenverrechnungsschlüssel** aus.</span><span class="sxs-lookup"><span data-stu-id="9ecde-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
+4. <span data-ttu-id="9ecde-129">Erstellen Sie eine Bedarfsplanung von 1000 Stück pro Monat.</span><span class="sxs-lookup"><span data-stu-id="9ecde-129">Create a demand forecast of 1,000 pieces per month.</span></span>
 
 <span data-ttu-id="9ecde-130">Wird der Umsatzplanungslauf am 1. Januar ausgeführt, wird der Bedarf der Bedarfsplanung entsprechend den Prozentwerten verbraucht, die Sie auf der Seite **Planzahlenverrechnungsschlüssel** angegeben haben.</span><span class="sxs-lookup"><span data-stu-id="9ecde-130">If you run forecast scheduling on January 1, the demand forecast requirements are consumed according to the percentages that you set up on the **Reduction keys** page.</span></span> <span data-ttu-id="9ecde-131">Die folgenden Bedarfsmengen werden in den Produktprogrammplan übertragen.</span><span class="sxs-lookup"><span data-stu-id="9ecde-131">The following requirement quantities are transferred to the master plan.</span></span>
 
@@ -88,20 +89,21 @@ ms.lasthandoff: 11/03/2017
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a><span data-ttu-id="9ecde-171">Beispiel 3: Buchungen - dynamische Periode Planungsverringerungsprinzip</span><span class="sxs-lookup"><span data-stu-id="9ecde-171">Example 3: Transactions  dynamic period forecast reduction principle</span></span>
 <span data-ttu-id="9ecde-172">In den meisten Fällen werden Systeme so eingerichtet, das Buchungen Bedarfsplanung innerhalb bestimmter Prognoseperioden reduzieren (Wochen, Monate usw.).</span><span class="sxs-lookup"><span data-stu-id="9ecde-172">In most cases, systems are set up so that transactions reduce demand forecast within specific forecast periods: weeks, months, and so on.</span></span> <span data-ttu-id="9ecde-173">Die Perioden werden im Planzahlenverrechnungsschlüssel definiert.</span><span class="sxs-lookup"><span data-stu-id="9ecde-173">These periods are defined in the reduction key.</span></span> <span data-ttu-id="9ecde-174">Jedoch können die Zeit zwischen zwei Bedarfsplanungspositionen auch eine Periode *implizieren*.</span><span class="sxs-lookup"><span data-stu-id="9ecde-174">However, the time between two demand forecast lines can also *imply* a period.</span></span>
 
-1.  <span data-ttu-id="9ecde-175">Erstellen Sie eine Bedarfsplanung für die folgenden Datumsangaben und Mengen.</span><span class="sxs-lookup"><span data-stu-id="9ecde-175">Create a demand forecast for the following dates and quantities.</span></span>
-    | <span data-ttu-id="9ecde-176">Datum</span><span class="sxs-lookup"><span data-stu-id="9ecde-176">Date</span></span>       | <span data-ttu-id="9ecde-177">Bedarfsplanung</span><span class="sxs-lookup"><span data-stu-id="9ecde-177">Demand forecast</span></span> |
-    |------------|-----------------|
-    | <span data-ttu-id="9ecde-178">1. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-178">January 1</span></span>  | <span data-ttu-id="9ecde-179">1.000</span><span class="sxs-lookup"><span data-stu-id="9ecde-179">1,000</span></span>           |
-    | <span data-ttu-id="9ecde-180">5. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-180">January 5</span></span>  | <span data-ttu-id="9ecde-181">500</span><span class="sxs-lookup"><span data-stu-id="9ecde-181">500</span></span>             |
-    | <span data-ttu-id="9ecde-182">12. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-182">January 12</span></span> | <span data-ttu-id="9ecde-183">1.000</span><span class="sxs-lookup"><span data-stu-id="9ecde-183">1,000</span></span>           |
+1. <span data-ttu-id="9ecde-175">Erstellen Sie eine Bedarfsplanung für die folgenden Datumsangaben und Mengen.</span><span class="sxs-lookup"><span data-stu-id="9ecde-175">Create a demand forecast for the following dates and quantities.</span></span>
 
-    <span data-ttu-id="9ecde-184">In dieser Planung gibt es keinen klaren Zeitraum zwischen den Planungsdaten. Zwischen der ersten und zweiten Datumsangabe besteht eine viertägige Spanne und zwischen der zweiten und dritten Datumsangabe besteht eine siebentägige Spanne.</span><span class="sxs-lookup"><span data-stu-id="9ecde-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="9ecde-185">Diese verschiedenen Spannen sind die dynamischen Perioden.</span><span class="sxs-lookup"><span data-stu-id="9ecde-185">These various spans are the dynamic periods.</span></span>
-2.  <span data-ttu-id="9ecde-186">Erstellen Sie Auftragspositionen wie folgt:</span><span class="sxs-lookup"><span data-stu-id="9ecde-186">Create sales order lines as follows.</span></span>
-    | <span data-ttu-id="9ecde-187">Datum</span><span class="sxs-lookup"><span data-stu-id="9ecde-187">Date</span></span>                             | <span data-ttu-id="9ecde-188">Auftragsmenge</span><span class="sxs-lookup"><span data-stu-id="9ecde-188">Sales order quantity</span></span> |
-    |----------------------------------|----------------------|
-    | <span data-ttu-id="9ecde-189">15. Dezember Im Jahr zuvor</span><span class="sxs-lookup"><span data-stu-id="9ecde-189">December 15 in the previous year</span></span> | <span data-ttu-id="9ecde-190">500</span><span class="sxs-lookup"><span data-stu-id="9ecde-190">500</span></span>                  |
-    | <span data-ttu-id="9ecde-191">3. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-191">January 3</span></span>                        | <span data-ttu-id="9ecde-192">100</span><span class="sxs-lookup"><span data-stu-id="9ecde-192">100</span></span>                  |
-    | <span data-ttu-id="9ecde-193">10. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-193">January 10</span></span>                       | <span data-ttu-id="9ecde-194">200</span><span class="sxs-lookup"><span data-stu-id="9ecde-194">200</span></span>                  |
+   | <span data-ttu-id="9ecde-176">Datum</span><span class="sxs-lookup"><span data-stu-id="9ecde-176">Date</span></span>       | <span data-ttu-id="9ecde-177">Bedarfsplanung</span><span class="sxs-lookup"><span data-stu-id="9ecde-177">Demand forecast</span></span> |
+   |------------|-----------------|
+   | <span data-ttu-id="9ecde-178">1. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-178">January 1</span></span>  | <span data-ttu-id="9ecde-179">1.000</span><span class="sxs-lookup"><span data-stu-id="9ecde-179">1,000</span></span>           |
+   | <span data-ttu-id="9ecde-180">5. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-180">January 5</span></span>  | <span data-ttu-id="9ecde-181">500</span><span class="sxs-lookup"><span data-stu-id="9ecde-181">500</span></span>             |
+   | <span data-ttu-id="9ecde-182">12. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-182">January 12</span></span> | <span data-ttu-id="9ecde-183">1.000</span><span class="sxs-lookup"><span data-stu-id="9ecde-183">1,000</span></span>           |
+
+   <span data-ttu-id="9ecde-184">In dieser Planung gibt es keinen klaren Zeitraum zwischen den Planungsdaten. Zwischen der ersten und zweiten Datumsangabe besteht eine viertägige Spanne und zwischen der zweiten und dritten Datumsangabe besteht eine siebentägige Spanne.</span><span class="sxs-lookup"><span data-stu-id="9ecde-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="9ecde-185">Diese verschiedenen Spannen sind die dynamischen Perioden.</span><span class="sxs-lookup"><span data-stu-id="9ecde-185">These various spans are the dynamic periods.</span></span>
+2. <span data-ttu-id="9ecde-186">Erstellen Sie Auftragspositionen wie folgt:</span><span class="sxs-lookup"><span data-stu-id="9ecde-186">Create sales order lines as follows.</span></span>
+   | <span data-ttu-id="9ecde-187">Datum</span><span class="sxs-lookup"><span data-stu-id="9ecde-187">Date</span></span>                             | <span data-ttu-id="9ecde-188">Auftragsmenge</span><span class="sxs-lookup"><span data-stu-id="9ecde-188">Sales order quantity</span></span> |
+   |----------------------------------|----------------------|
+   | <span data-ttu-id="9ecde-189">15. Dezember Im Jahr zuvor</span><span class="sxs-lookup"><span data-stu-id="9ecde-189">December 15 in the previous year</span></span> | <span data-ttu-id="9ecde-190">500</span><span class="sxs-lookup"><span data-stu-id="9ecde-190">500</span></span>                  |
+   | <span data-ttu-id="9ecde-191">3. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-191">January 3</span></span>                        | <span data-ttu-id="9ecde-192">100</span><span class="sxs-lookup"><span data-stu-id="9ecde-192">100</span></span>                  |
+   | <span data-ttu-id="9ecde-193">10. Januar</span><span class="sxs-lookup"><span data-stu-id="9ecde-193">January 10</span></span>                       | <span data-ttu-id="9ecde-194">200</span><span class="sxs-lookup"><span data-stu-id="9ecde-194">200</span></span>                  |
 
 <span data-ttu-id="9ecde-195">Die Planung wird wie folgt reduziert:</span><span class="sxs-lookup"><span data-stu-id="9ecde-195">The forecast will be reduced as follows:</span></span>
 

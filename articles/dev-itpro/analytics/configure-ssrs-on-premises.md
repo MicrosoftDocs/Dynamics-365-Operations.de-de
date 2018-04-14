@@ -18,15 +18,15 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2ecfb759a59292ddbce484b3ae20368c486fedd9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bea198488da52de21aba0c33b4004b6ad7518fd3
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a><span data-ttu-id="e9926-103">SQL Server Reporting Services für eine lokale Bereitstellung konfigurieren</span><span class="sxs-lookup"><span data-stu-id="e9926-103">Configure SQL Server Reporting Services for an on-premises deployment</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e9926-104">Gehen Sie nach den Schritten in diesem Thema vor, um SQL Server Reporting Services (SSRS) für ihre Bereitstellung von Microsoft Dynamics 365 for Finance and Operations (On-Premises) zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="e9926-104">Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 for Finance and Operations (on-premises) deployment.</span></span>
 
@@ -52,13 +52,13 @@ ms.lasthandoff: 03/26/2018
 
     <span data-ttu-id="e9926-119">[![Registerkarte Webportal-URL](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-119">[![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span></span>
     
-  <span data-ttu-id="e9926-120">Nachdem das Portal konfiguriert ist, sieht die Registerkarte **Webportal-URL** aus, wie in der folgenden Graphik gezeigt.</span><span class="sxs-lookup"><span data-stu-id="e9926-120">After the Portal is configured, the **Web Portal** tab will match the following graphic.</span></span>
+   <span data-ttu-id="e9926-120">Nachdem das Portal konfiguriert ist, sieht die Registerkarte **Webportal-URL** aus, wie in der folgenden Graphik gezeigt.</span><span class="sxs-lookup"><span data-stu-id="e9926-120">After the Portal is configured, the **Web Portal** tab will match the following graphic.</span></span>
     <span data-ttu-id="e9926-121">[![Registerkarte Webportal](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-121">[![web portal tab](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span></span>
     
 8. <span data-ttu-id="e9926-122">Klicken Sie auf die Berichts-URL, um das SQL Server Reporting Services-Webportal anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="e9926-122">Click the reports URL to view the SQL Server Reporting Services web portal.</span></span> 
-9.  <span data-ttu-id="e9926-123">Im Portal erstellen Sie den neuen Ordner **Dynamics**.</span><span class="sxs-lookup"><span data-stu-id="e9926-123">When you are in the portal, create a new folder named **Dynamics**.</span></span>
+9. <span data-ttu-id="e9926-123">Im Portal erstellen Sie den neuen Ordner **Dynamics**.</span><span class="sxs-lookup"><span data-stu-id="e9926-123">When you are in the portal, create a new folder named **Dynamics**.</span></span>
 
-    <span data-ttu-id="e9926-124">[![Ordner Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-124">[![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span></span>
+   <span data-ttu-id="e9926-124">[![Ordner Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-124">[![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span></span>
     
 10. <span data-ttu-id="e9926-125">Klicken Sie auf die Registerkarte **Reporting Services-Konfigurations-Manager**, klicken Sie auf die Registerkarte **E-Mail-Einstellungen** und stellen Sie sicher, dass die Einstellungen mit der folgenden Graphik übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="e9926-125">In the **Reporting Services Configuration Manager**, click the **E-mail Settings** tab and verify that the settings match the following graphic.</span></span>
 
@@ -68,15 +68,15 @@ ms.lasthandoff: 03/26/2018
 
     <span data-ttu-id="e9926-128">[![Registerkarte Ausführungskonto](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-128">[![execution account tab](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span></span>
     
-  <span data-ttu-id="e9926-129">Ändern Sie die Standardeinstellungen auf der Registerkarte **Verschlüsselungs-Schlüssel** nicht. [![Registerkarte Verschlüsselungs-Schlüssel](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-129">Don’t change the default settings on the **Encryption Keys** tab. [![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span></span>
+    <span data-ttu-id="e9926-129">Ändern Sie die Standardeinstellungen auf der Registerkarte **Verschlüsselungs-Schlüssel** nicht. [![Registerkarte Verschlüsselungs-Schlüssel](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-129">Don’t change the default settings on the **Encryption Keys** tab. [![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span></span>
     
 12. <span data-ttu-id="e9926-130">Klicken Sie auf die Registerkarte **Abonnementeinstellungen** und stellen Sie sicher, dass die Einstellungen mit der folgenden Graphik übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="e9926-130">Click the **Subscription Settings** tab, and verify that the settings match the following graphic.</span></span>
 
     <span data-ttu-id="e9926-131">[![Registerkarte Abonnementeinstellungen](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-131">[![subscription settings tab](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span></span>
     
-  <span data-ttu-id="e9926-132">Ändern Sie die Standardeinstellungen auf der Registerkarte **Bereitstellung für horizontales Skalieren** nicht. [![Registerkarte Bereitstellung für horizontales Skalieren](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-132">Don’t change the default settings on the **Scale-out Deployment** tab. [![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span></span>
+    <span data-ttu-id="e9926-132">Ändern Sie die Standardeinstellungen auf der Registerkarte **Bereitstellung für horizontales Skalieren** nicht. [![Registerkarte Bereitstellung für horizontales Skalieren](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-132">Don’t change the default settings on the **Scale-out Deployment** tab. [![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span></span>
     
-  <span data-ttu-id="e9926-133">Ändern Sie die Standardeinstellungen auf der Registerkarte **Power BI-Integration** nicht. [![Registerkarte Power BI Integration](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-133">Don’t change the default settings on the **Power BI Integration** tab. [![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span></span> 
+    <span data-ttu-id="e9926-133">Ändern Sie die Standardeinstellungen auf der Registerkarte **Power BI-Integration** nicht. [![Registerkarte Power BI Integration](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span><span class="sxs-lookup"><span data-stu-id="e9926-133">Don’t change the default settings on the **Power BI Integration** tab. [![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span></span> 
     
 13. <span data-ttu-id="e9926-134">Klicken Sie auf **Beenden**, um den **Reporting Services-Konfigurations-Manager** zu schließen.</span><span class="sxs-lookup"><span data-stu-id="e9926-134">Click **Exit** to close the **Reporting Services Configuration Manager**.</span></span>
 

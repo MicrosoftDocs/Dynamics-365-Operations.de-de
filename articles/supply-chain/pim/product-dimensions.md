@@ -20,19 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9cb4bded4b8d841c6d164e6b8ded2cb3fb4d0978
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ba0c5d44d58faac47b6a44265431a48c49874df
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-dimensions"></a><span data-ttu-id="ac057-105">Produktdimensionen</span><span class="sxs-lookup"><span data-stu-id="ac057-105">Product dimensions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="ac057-106">Es gibt vier Produktdimensionen: Farbe, Konfiguration, Größe und Farbe.</span><span class="sxs-lookup"><span data-stu-id="ac057-106">There are four product dimensions -  Color, Configuration, Size and Style.</span></span> <span data-ttu-id="ac057-107">Sie kombinieren Produktdimensionen in den Dimensionsgruppen und weisen diesen Dimensionsgruppen Produktmaster zu.</span><span class="sxs-lookup"><span data-stu-id="ac057-107">You combine product dimensions in dimension groups and assign dimension groups to product masters.</span></span> <span data-ttu-id="ac057-108">Diese Kombinationen der Produktdimensionen bestimmen, wie Produktvarianten definiert sind.</span><span class="sxs-lookup"><span data-stu-id="ac057-108">The combinations of product dimensions determine how product variants are defined.</span></span>
 
@@ -51,6 +50,7 @@ ms.lasthandoff: 02/07/2018
 -   <span data-ttu-id="ac057-129">Klicken Sie auf **Produktinformationsverwaltung** &gt; **Freigegebene Produkte.**</span><span class="sxs-lookup"><span data-stu-id="ac057-129">Click **Product information management** &gt; **Released products**.</span></span> <span data-ttu-id="ac057-130">Wählen Sie einen Produktmaster aus.</span><span class="sxs-lookup"><span data-stu-id="ac057-130">Select a product master.</span></span> <span data-ttu-id="ac057-131">Klicken Sie im **Aktivitätsbereich** auf **Produkt**.</span><span class="sxs-lookup"><span data-stu-id="ac057-131">On the **Action Pane**, click **Product**.</span></span> <span data-ttu-id="ac057-132">Klicken Sie in der Gruppe **Produktmaster** auf **Produktdimensionen**.</span><span class="sxs-lookup"><span data-stu-id="ac057-132">In the **Product master** group, click **Product dimensions**.</span></span>
 
 <span data-ttu-id="ac057-133">Die Anzahl von Varianten, die Sie für einen Artikel erstellen können, hängt von der Anzahl der möglichen Produktdimensionskombinationen ab.</span><span class="sxs-lookup"><span data-stu-id="ac057-133">The number of variants that you can create for an item is limited by the number of possible product dimension combinations.</span></span>
+
 | <span data-ttu-id="ac057-134">**Tipp**</span><span class="sxs-lookup"><span data-stu-id="ac057-134">**Tip**</span></span>                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="ac057-135">Wenn Sie ein Produkt beispielsweise auf einer Auftragsposition verwenden, wählen Sie die Produktdimensionen aus, um die Produktvariante zu ermitteln, mit der Sie arbeiten möchten.</span><span class="sxs-lookup"><span data-stu-id="ac057-135">When you use a product on, for example, an order line, you select the product dimensions to identify the product variant that you want to work with.</span></span> |

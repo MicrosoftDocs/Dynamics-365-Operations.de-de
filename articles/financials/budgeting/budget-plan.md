@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c8af5d3343bf8376dfec5a41cd03e1325b10b978
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning"></a><span data-ttu-id="acca2-105">Budgetplanung</span><span class="sxs-lookup"><span data-stu-id="acca2-105">Budget planning</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="acca2-106">Das Ziel dieser Übungseinheit ist es, eine Übersicht über aktualisierten Funktionen im Budgetplanbereich in Microsoft Dynamics 365 for Finance and Operations bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="acca2-106">The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area.</span></span> <span data-ttu-id="acca2-107">Ziel dieser Übungseinheit ist es, ein schnelles Konfigurationsbeispiel für das Budgetplanungsmodul zu illustrieren und zu zeigen, wie die Budgetplanung mithilfe dieser Konfiguration erstellt werden kann.</span><span class="sxs-lookup"><span data-stu-id="acca2-107">The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</span></span>  <span data-ttu-id="acca2-108">Diese Übungseinheit bezieht sich speziell auf die folgenden Geschäftsprozesse oder Aufgaben: - Organisationshierarchie für Budgetplanung erstellen und Benutzersicherheit konfigurieren - Haushaltsplanszenarien, Haushaltsplanspalten, Layouts und Excel-Vorlagen definieren - Budgetplanungsprozess erstellen und aktivieren - Budgetplandokumente mithilfe von aktuellen Daten aus dem Hauptbuch erstellen - mithilfe der Zuweisungen Budgetplandokumentdaten anpassen - Budgetplandokumentdaten in Excel bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="acca2-108">This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</span></span> 
 

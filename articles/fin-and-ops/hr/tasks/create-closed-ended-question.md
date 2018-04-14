@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: a3a043fd8c8b312ccfa2a87c2fdfb96ae05e9609
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fdfac92b80774adb8376d5c2e945d063173188c8
 ms.contentlocale: de-de
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-closed-ended-question"></a><span data-ttu-id="fc457-103">Eine Frage mit vordefinierten Antworten erstellen</span><span class="sxs-lookup"><span data-stu-id="fc457-103">Create a closed ended question</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="fc457-104">Fragen mit vordefinierten Antworten ermöglichen die Angabe von Optionen, aus denen der Befragte auswählen kann.</span><span class="sxs-lookup"><span data-stu-id="fc457-104">Closed-ended questions allow you to provide options for the respondent to choose from.</span></span> <span data-ttu-id="fc457-105">Zunächst müssen Sie die Antwortgruppe mit den Antworten erstellen, dann erstellen Sie die Frage, die die Antwortgruppe verwendet.</span><span class="sxs-lookup"><span data-stu-id="fc457-105">First, you need to create the Answer group with the answers, then create the question that will use the answer group.</span></span> <span data-ttu-id="fc457-106">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="fc457-106">The demo data company used to create this procedure is USMF.</span></span>
 

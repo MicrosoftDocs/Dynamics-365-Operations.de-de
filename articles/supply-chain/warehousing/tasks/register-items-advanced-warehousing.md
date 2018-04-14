@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 050d1fcbc59d9bb3253bfed2433987285423b334
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 04be3c8b07afc3ad3341600aef1f9e93b6b24dde
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a><span data-ttu-id="7142f-103">Artikel für einen für erweitertes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren</span><span class="sxs-lookup"><span data-stu-id="7142f-103">Register items for an advanced warehousing enabled item using an item arrival journal</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7142f-104">Dieses Verfahren zeigt Ihnen an, wie Artikel mithilfe der Wareneingangserfassung erfasst werden, wenn Sie die erweiterten Lagerungsvorgänge verwenden.</span><span class="sxs-lookup"><span data-stu-id="7142f-104">This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes.</span></span> <span data-ttu-id="7142f-105">Dies wird in der Regel von einem Sachbearbeiter für Zugänge ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="7142f-105">This would usually be done by a receiving clerk.</span></span> 
 

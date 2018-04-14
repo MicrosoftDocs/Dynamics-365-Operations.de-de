@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: f5fc4db479852ffac5f2b3401a0c1bd92c35a7cb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 818d7d21605ada63a29a41d3bf20ed9cbf21a178
 ms.contentlocale: de-de
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a><span data-ttu-id="32aba-103">Rohmaterialverbrauch über Stücklisten-Bezugsprinzip steuern</span><span class="sxs-lookup"><span data-stu-id="32aba-103">Controlling raw material consumption by using flushing principles</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="32aba-104">Die Bezugsprinzipien reflektieren verschiedene Verbrauchsstrategien für Rohmaterialen, die in Produktionsprozessen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="32aba-104">The flushing principles reflect different consumption strategies for raw materials that are used in production processes.</span></span> <span data-ttu-id="32aba-105">Verbrauch ist der Prozess, bei dem Material aus dem Bestand vor Ort abgezogen wird und der Wert der verbrauchten Materialien für Produktionsaufträge und Chargenaufträge auf **Ressource in Fertigung** (RIF) gesetzt wird.</span><span class="sxs-lookup"><span data-stu-id="32aba-105">Consumption is the process that deducts material from the on-hand inventory and sets the value of the consumed materials to **Work in progress** (WIP) for production orders and batch orders.</span></span> <span data-ttu-id="32aba-106">Rohmaterialien werden normalerweise von einem Standort aus verbraucht, der für den Prozess konfiguriert ist, der das Material verbraucht.</span><span class="sxs-lookup"><span data-stu-id="32aba-106">Raw materials are usually consumed from a location that is configured for the process that consumes the material.</span></span> <span data-ttu-id="32aba-107">Dieser Standort wird als Produktionseingangsstandort bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="32aba-107">This location is known as the production input location.</span></span>
 

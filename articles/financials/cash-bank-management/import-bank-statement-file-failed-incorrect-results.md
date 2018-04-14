@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c408f30c783d58766ab93b13c589079c3ef375de
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a5f53a76ebd0bd428f791ce8493e9f388eb8e2fa
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="bank-statement-file-import-troubleshooting"></a><span data-ttu-id="ead97-107">Bankauszugsdatei-Importproblembehandlung</span><span class="sxs-lookup"><span data-stu-id="ead97-107">Bank statement file import troubleshooting</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ead97-108">Es ist wichtig, dass die Bankauszugdatei der Bank dem Layout entspricht, das von Microsoft Dynamics 365 for Finance and Operations unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="ead97-108">It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations supports.</span></span> <span data-ttu-id="ead97-109">Aufgrund der strengen Standards für Bankauszüge, funktionieren die meisten Integrationen korrekt.</span><span class="sxs-lookup"><span data-stu-id="ead97-109">Because of strict standards for bank statements, most integrations will work correctly.</span></span> <span data-ttu-id="ead97-110">Allerdings kann manchmal die Auszugsdatei nicht importiert werden oder enthält falsche Ergebnisse.</span><span class="sxs-lookup"><span data-stu-id="ead97-110">However, sometimes the statement file can't be imported or has incorrect results.</span></span> <span data-ttu-id="ead97-111">In der Regel werden diese Probleme durch geringfügige Unterschiede in der Bankauszugdatei verursacht.</span><span class="sxs-lookup"><span data-stu-id="ead97-111">Typically, these issues are caused by small differences in the bank statement file.</span></span> <span data-ttu-id="ead97-112">In diesem Artikel wird beschrieben, wie Sie diese Unterschiede korrigieren und Probleme lösen können.</span><span class="sxs-lookup"><span data-stu-id="ead97-112">This article explains how to fix these differences and resolve the issues.</span></span>
 

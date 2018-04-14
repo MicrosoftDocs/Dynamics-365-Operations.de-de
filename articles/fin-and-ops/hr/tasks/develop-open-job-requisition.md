@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0eb5ec731655e2f023d941724a10d1cf12f8e558
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 403e1d3d4c599050f118ab019288784d7782ac2b
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="develop-and-open-a-job-requisition"></a><span data-ttu-id="e50d5-103">Stellenanforderung ausarbeiten und freigeben</span><span class="sxs-lookup"><span data-stu-id="e50d5-103">Develop and open a job requisition</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e50d5-104">Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsprozess verwalten.</span><span class="sxs-lookup"><span data-stu-id="e50d5-104">Recruitment projects help manage the recruiting process.</span></span> <span data-ttu-id="e50d5-105">Für jedes Personalbeschaffungsprojekt können Sie Informationen einrichten wie die Stelle, für die Sie Personal beschaffen möchten, den Namen des Personalbeschaffungsmitarbeiters, den Status des Projekts und die Abteilung, in der sich die Stelle befindet.</span><span class="sxs-lookup"><span data-stu-id="e50d5-105">For each recruitment project, you can set up information, such as the job that recruiting is for, the name of the recruiter, the status of the project and the department that the job will be located in.</span></span> <span data-ttu-id="e50d5-106">Nachdem Sie ein Personalbeschaffungsprojekt erstellt haben, können Sie eine Stellenausschreibung für das Projekt schreiben, die Stellenausschreibung auf Employee Self-Service-Seiten veröffentlichen, Bewerbungen für Anstellungen mit dem Projekt verknüpfen und Aktivitäten für das Projekt nachverfolgen.</span><span class="sxs-lookup"><span data-stu-id="e50d5-106">After creating a recruitment project, you can write a job advertisement for the project, publish the ad on Employee self-service pages, associate applications for employment with the project, and track activities for that project.</span></span> <span data-ttu-id="e50d5-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="e50d5-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="e50d5-108">Um das Verfahren zu starten, wechseln Sie zu "Personalverwaltung" > "Personalbeschaffung"  "Personalbeschaffungsprojekte" > "Personalbeschaffungsprojekte"</span><span class="sxs-lookup"><span data-stu-id="e50d5-108">To begin the procedure, go to Human resources > Recruitment > Recruitment projects > Recruitment projects</span></span>
 

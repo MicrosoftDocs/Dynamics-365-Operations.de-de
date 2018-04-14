@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 47336a19899b1fad0e63265173fd7fd02fc74ec3
-ms.openlocfilehash: 6b4870e753b8ee5ee36d662bac87398e017650b8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5c7f25fcf3f6b87515d3a10acf17c011a249940b
 ms.contentlocale: de-de
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="consolidation-and-elimination-overview"></a><span data-ttu-id="c65f1-104">Konsolidierungs- und Löschungsüberblick</span><span class="sxs-lookup"><span data-stu-id="c65f1-104">Consolidation and elimination overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c65f1-105">Dieser Artikel enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess.</span><span class="sxs-lookup"><span data-stu-id="c65f1-105">This article provides general information about the consolidation and elimination process.</span></span> <span data-ttu-id="c65f1-106">Er enthält Antworten auf mehrere häufig gestellten Fragen.</span><span class="sxs-lookup"><span data-stu-id="c65f1-106">It includes answers to some frequently asked questions.</span></span>
 

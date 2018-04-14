@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9b2300a593c9e153ee598fa72e29907c82f2b79e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8a47dac61705831b330f7b4939a18c865a8ace7
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a><span data-ttu-id="1ca28-103">Den Warenzugang auf der Bestellung erfassen</span><span class="sxs-lookup"><span data-stu-id="1ca28-103">Record the receipt of goods on the purchase order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1ca28-104">Diese Prozedur zeigt Ihnen an, wie der Zugang von Waren direkt auf einer Bestellung erfasst wird.</span><span class="sxs-lookup"><span data-stu-id="1ca28-104">This procedure shows you how to record receipt of goods directly on a purchase order.</span></span> <span data-ttu-id="1ca28-105">Es ist auch möglich, den Produktzugang im Lagerort zu erfassen und ihn dann später auf der Bestellung aufzuzeichnen.</span><span class="sxs-lookup"><span data-stu-id="1ca28-105">It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order.</span></span> <span data-ttu-id="1ca28-106">Diese Aufgabe wird gewöhnlich von einem Einkäufer oder einem Kreditorenkontenkoordinator ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="1ca28-106">This task is typically done by a purchasing agent or an accounts payable coordinator.</span></span> <span data-ttu-id="1ca28-107">Das Beispiel, das in diesem Leitfaden angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="1ca28-107">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="1ca28-108">Das Beispiel umfasst Schritte, um eine einfache Bestellung zu erstellen, damit Sie die Prozedur als Aufgabenleitfaden wiedergeben können.</span><span class="sxs-lookup"><span data-stu-id="1ca28-108">The example includes steps to create a simple purchase order so that you can play the procedure as a task guide.</span></span> <span data-ttu-id="1ca28-109">Wenn Sie die Prozedur mit Ihren eigenen Daten verwendeten, würden Sie bei der Unteraufgabe "Warenzugang erfassen" beginnen.</span><span class="sxs-lookup"><span data-stu-id="1ca28-109">If you were using the procedure on your own data, you would start at the Record receipt of goods subtask.</span></span>
 

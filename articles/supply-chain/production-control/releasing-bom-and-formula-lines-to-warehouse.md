@@ -18,16 +18,16 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 162b6d660fb5ec8df79dc44b89dea87d877c6470
 ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a><span data-ttu-id="a5a5a-103">Stücklisten- und Formelpositionen für den Lagerort freigeben</span><span class="sxs-lookup"><span data-stu-id="a5a5a-103">Release BOM and formula lines to the warehouse</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a5a5a-104">In diesem Thema wird der Prozess für die Freigabe von Rohmaterial für Stücklisten-(BOM)-Positionen und Formelpositionen zum Lagerort beschrieben.</span><span class="sxs-lookup"><span data-stu-id="a5a5a-104">This topic describes the process for releasing raw material for bill of materials (BOM) lines and formula lines to the warehouse.</span></span> <span data-ttu-id="a5a5a-105">Wenn Sie eine Stücklisten- oder eine Formelposition dem Lagerort freigeben, bestimmt das System zuerst, ob das Material am Produktionseingangslagerplatz im Fertigungsbereich bereits vorhanden ist, wo das Material für den Produktionsprozess verbraucht wird.</span><span class="sxs-lookup"><span data-stu-id="a5a5a-105">When you release a BOM or formula line to the warehouse, the system first determines whether material is already available at the production input location on the shop floor where the material will be consumed for the production process.</span></span>
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 03/07/2018
 - <span data-ttu-id="a5a5a-119">**Freigeben von Stücklisten- und Formelpositionen über einen Batchauftrag oder eine manuelle Interaktion** – In dieser Methode können Stücklisten- und Formelpositionen nur durch den Batchauftrag **Automatische Freigabe von Stücklisten- und Formelpositionen** freigegeben werden oder als manuelle Interaktion.</span><span class="sxs-lookup"><span data-stu-id="a5a5a-119">**Release BOM and formula lines via a batch job or as a manual interaction** – In this method, BOM and formula lines can be released only through the **Automatic release of BOM and formula lines** batch job or as a manual interaction.</span></span> <span data-ttu-id="a5a5a-120">Um Stücklisten- und Formelpositionen manuell freizugeben, wählen Sie auf der Produktionsauftrags-Listenseite oder der Produktionsauftrags-Detailseite im Aktivitätsbereich die Option **Für Lagerort freigeben** aus.</span><span class="sxs-lookup"><span data-stu-id="a5a5a-120">To manually release BOM and formula lines, on the production order list page or the production order details page, on the Action Pane, select **Release to warehouse**.</span></span>
 
 <span data-ttu-id="a5a5a-121">Für eine rasche Vorführung zur Freigabe von Stücklisten und Formelzeilen für die Produktion mithilfe eines Stapelverarbeitungsauftrag schauen Sie dieses YouTube-Video an.</span><span class="sxs-lookup"><span data-stu-id="a5a5a-121">For a quick demonstration of how to release BOM and formula lines to production by using a batch job, watch this short YouTube video:</span></span>
-[!Video https://www.youtube.com/embed/8urAJn50dQ8]
+[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a><span data-ttu-id="a5a5a-122">Freigabe der Stücklisten- und Formelpositionen mithilfe eines Bachauftrags</span><span class="sxs-lookup"><span data-stu-id="a5a5a-122">Releasing the BOM and formula lines by using a batch job</span></span>
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 03/07/2018
 ![Beispiel der Freigabe von Material pro Arbeitsgangnummer](media/two-operations.PNG)
 
 <span data-ttu-id="a5a5a-177">Für eine rasche Präsentation zur Freigabe von Material in Relation zum Betrag von Endartikeln schauen Sie dieses kurze YouTube-Video an:</span><span class="sxs-lookup"><span data-stu-id="a5a5a-177">For a quick demonstration of how to release material in proportion to the amount of finished goods, watch this short YouTube video:</span></span>
-[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
+[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a><span data-ttu-id="a5a5a-178">Freigeben von Material im Verhältnis zur Menge der Fertigartikel</span><span class="sxs-lookup"><span data-stu-id="a5a5a-178">Release material in proportion to the amount of finished goods</span></span>
 

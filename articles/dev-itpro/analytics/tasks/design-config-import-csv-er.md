@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0859eb7bf461f61396c34f4bcd89537260a536a0
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a><span data-ttu-id="d229d-103">Eine Konfiguration zum Import von Daten aus einer externen Datei im CSV-Format erstellen (ER)</span><span class="sxs-lookup"><span data-stu-id="d229d-103">Design a configuration to import data from an external file in CSV format (ER)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d229d-104">Nutzen Sie diese Prozedur, um elektronische Berichterstellungskonfigurationen (EB) zu entwerfen, um Daten in die Dynamics 365 for Finance and Operations-Anwendung aus einer externen Datei im CSV-Format zu importieren.</span><span class="sxs-lookup"><span data-stu-id="d229d-104">Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations application from an external file in CSV format.</span></span> <span data-ttu-id="d229d-105">In diesem Verfahren erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc. Um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Verfahren erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren.</span><span class="sxs-lookup"><span data-stu-id="d229d-105">In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the procedure, “ER Create a configuration provider and mark it as active.”</span></span> 
 

@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 55d359232da5f3087b1e6baed182a20da09aeff7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2bcc83c0a422ed1480f2ed41460fd710bc51ff3d
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="revert-kanban-job-status"></a><span data-ttu-id="ee627-103">Kanban-Einzelvorgangsstatus zurücksetzen</span><span class="sxs-lookup"><span data-stu-id="ee627-103">Revert kanban job status</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ee627-104">Ziel dieser Prozedur ist das Zurücksetzen eines falschen Kanban-Einzelvorgangsstatus.</span><span class="sxs-lookup"><span data-stu-id="ee627-104">This procedure focuses on reverting an incorrect kanban job status.</span></span> <span data-ttu-id="ee627-105">Dies ist hilfreich, falls der Maschinenbediener den falschen Einzelvorgang aktualisiert, oder versehentlich den falschen Status festgelegt hat.</span><span class="sxs-lookup"><span data-stu-id="ee627-105">This is useful in case the machine operator updates the wrong job, or sets the wrong status by mistake.</span></span> <span data-ttu-id="ee627-106">In diesem Verfahren wird ein Kanban-Einzelvorgang versehentlich als vorbereitet erfasst und der Status wird zurückgesetzt.</span><span class="sxs-lookup"><span data-stu-id="ee627-106">In this procedure, a kanban job is registered as prepared by mistake, and the status is reverted.</span></span> <span data-ttu-id="ee627-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="ee627-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ee627-108">Diese Prozedur ist für Filialleiter oder Maschinenbediener vorgesehen, die in einem Lean Manufacturing-Unternehmen arbeiten.</span><span class="sxs-lookup"><span data-stu-id="ee627-108">This procedure is intended for the shop supervisor or machine operator working in a lean manufacturing company.</span></span>
 

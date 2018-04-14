@@ -19,16 +19,16 @@ ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: ad5485ec4d8c5f32712e14f7545525ba27b13288
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 65501866f0c465f40de842c5f612aae9349db7be
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="import-and-maintain-credit-card-transactions"></a><span data-ttu-id="f8004-104">Kreditkartenbuchungen importieren und verwalten</span><span class="sxs-lookup"><span data-stu-id="f8004-104">Import and maintain credit card transactions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f8004-105">Ausgabenbezogenen Kreditkartenbuchungen können eingerichtet werden, damit sie automatisch auf wiederkehrender Basis die Daten importieren.</span><span class="sxs-lookup"><span data-stu-id="f8004-105">Expense-related credit card transactions can be set up so that they are automatically imported on a recurring schedule.</span></span> <span data-ttu-id="f8004-106">Alternativ können die Buchungen manuell importiert werden, wenn diese benötigt werden.</span><span class="sxs-lookup"><span data-stu-id="f8004-106">Alternatively, the transactions can be manually imported as they are required.</span></span> <span data-ttu-id="f8004-107">Die Kreditkartentransaktionen werden über Kreditkartenbuchungs-Entität importiert.</span><span class="sxs-lookup"><span data-stu-id="f8004-107">The credit card transactions are imported through the Credit card transactions data entity.</span></span>
 

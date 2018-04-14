@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d2fc157b54401463bbabf1e3f6d5dddc6bda9631
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c142534e9e5b5f154f478889d13540dc3d47ad18
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-an-approval-step-in-a-workflow"></a><span data-ttu-id="e907d-103">Einen Genehmigungsschritt in einem Workflow genehmigen</span><span class="sxs-lookup"><span data-stu-id="e907d-103">Configure an approval step in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e907d-104">Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.</span><span class="sxs-lookup"><span data-stu-id="e907d-104">This topic explains how to configure the properties of an approval step.</span></span>
 
@@ -145,9 +144,9 @@ ms.lasthandoff: 11/03/2017
     <span data-ttu-id="e907d-192">Wenn der Benutzer das Dokument nicht innerhalb der vorgesehenen Zeit bearbeitet, ist das Dokument überfällig.</span><span class="sxs-lookup"><span data-stu-id="e907d-192">If the user doesn't take action on the document in the allotted time, the document is overdue.</span></span> <span data-ttu-id="e907d-193">Ein überfälliges Dokument wird basierend auf den ausgewählten Optionen im Bereich **Eskalation** der Seite eskaliert.</span><span class="sxs-lookup"><span data-stu-id="e907d-193">A document that is overdue is escalated, based on the options that you select in the **Escalation** area of the page.</span></span>
 4.  <span data-ttu-id="e907d-194">Wenn Sie den Genehmigungsschritt mehreren Benutzern oder einer Gruppe von Benutzern zugewiesen haben, klicken Sie auf die Registerkarte **Vollendungsrichtlinie**, und wählen Sie eine der folgenden Optionen aus:</span><span class="sxs-lookup"><span data-stu-id="e907d-194">If you assigned the approval step to multiple users or a group of users, on the **Completion policy** tab, select one of the following options:</span></span>
     -   <span data-ttu-id="e907d-195">**Einzelne genehmigende Person** – Die Aktivität für das Dokument wird von der ersten antwortenden Person bestimmt.</span><span class="sxs-lookup"><span data-stu-id="e907d-195">**Single approver** – The action that is applied to the document is determined by the first person who responds.</span></span> <span data-ttu-id="e907d-196">Nehmen wir an, Steffen hat eine Spesenabrechnung in Höhe von 15.000 Euro eingereicht.</span><span class="sxs-lookup"><span data-stu-id="e907d-196">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="e907d-197">Die Spesenabrechnung ist derzeit Saskia, Jens und Bastian zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="e907d-197">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="e907d-198">Falls Saskia die erste Person ist, die das Dokument beantwortet, wird ihre Aktivität für das Dokument übernommen.</span><span class="sxs-lookup"><span data-stu-id="e907d-198">If Sue is the first person who responds to the document, the action that she takes is applied to the document.</span></span> <span data-ttu-id="e907d-199">Falls Saskia das Dokument ablehnt, wird es abgelehnt und an Steffen zurückgesendet.</span><span class="sxs-lookup"><span data-stu-id="e907d-199">If Sue rejects the document, it's rejected and sent back to Sam.</span></span> <span data-ttu-id="e907d-200">Wenn Saskia das Dokument genehmigt, wird es zur Genehmigung an Anne gesendet.</span><span class="sxs-lookup"><span data-stu-id="e907d-200">If Sue approves the document, it's sent to Ann for approval.</span></span> 
-    
+
     ![Workflow mit Genehmigungsprozesses](./media/workflow_multipleusersinstep.gif)
-    
+
     -   <span data-ttu-id="e907d-202">**Mehrheit der genehmigenden Personen** – Die Aktivität für das Dokument wird bei Antwort der Mehrheit der genehmigenden Personen bestimmt.</span><span class="sxs-lookup"><span data-stu-id="e907d-202">**Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond.</span></span> <span data-ttu-id="e907d-203">Nehmen wir an, Steffen hat eine Spesenabrechnung in Höhe von 15.000 Euro eingereicht.</span><span class="sxs-lookup"><span data-stu-id="e907d-203">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="e907d-204">Die Spesenabrechnung ist derzeit Saskia, Jens und Bastian zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="e907d-204">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="e907d-205">Falls Saskia und Jens die ersten beiden genehmigenden Personen sind, die antworten, wird ihre Aktivität für das Dokument übernommen.</span><span class="sxs-lookup"><span data-stu-id="e907d-205">If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.</span></span>
         -   <span data-ttu-id="e907d-206">Wird das Dokument von Saskia genehmigt, von Jens jedoch abgelehnt, wird es abgelehnt und an Steffen zurückgesendet.</span><span class="sxs-lookup"><span data-stu-id="e907d-206">If Sue approves the document, but Jo rejects it, the document is rejected and sent back to Sam.</span></span>
         -   <span data-ttu-id="e907d-207">Wird das Dokument sowohl von Saskia als auch von Jens genehmigt, wird es zur Genehmigung an Anne gesendet.</span><span class="sxs-lookup"><span data-stu-id="e907d-207">If both Sue and Jo approve the document, it's sent to Ann for approval.</span></span>

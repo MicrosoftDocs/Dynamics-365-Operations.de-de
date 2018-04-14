@@ -18,17 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0959d2c19c7135bc20b2f9604016cb6770e2fac7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b7dff62e7a97b4bd4b0c59ad899e018d925e3d28
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="german-journal-list-report"></a><span data-ttu-id="9a1eb-103">Bericht "Deutsches Journal"</span><span class="sxs-lookup"><span data-stu-id="9a1eb-103">German journal list report</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9a1eb-104">In diesem Artikel wird beschrieben, für was der deutsche Erfassungslistenbericht verwendet wird, wer ihn in der Regel verwendet und wie er ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="9a1eb-104">This article explains what the German journal list report is used for, who typically uses it, and how to run it.</span></span>
 

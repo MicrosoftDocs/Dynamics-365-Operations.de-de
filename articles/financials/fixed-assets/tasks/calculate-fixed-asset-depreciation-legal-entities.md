@@ -16,15 +16,15 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d804480167414cd038f8229db312dc9c52d131f8
-ms.openlocfilehash: 4c45da124136b7fecb916d2ff9098c8ffeff6cb1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 662554b1b6bed63e5017aad3a292dad7a2f0bcea
 ms.contentlocale: de-de
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a><span data-ttu-id="2d528-103">Anlagenabschreibung über juristische Personen hinweg berechnen</span><span class="sxs-lookup"><span data-stu-id="2d528-103">Calculate fixed asset depreciation across legal entities</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2d528-104">Anlagenabschreibung kann über juristische Personen hinweg in einem Einzelschritt ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="2d528-104">Fixed asset depreciation can be run across legal entities in a single step.</span></span> <span data-ttu-id="2d528-105">Dieses Verfahren beschreibt, wie Sie den Prozess für mehrere juristische Personen einrichten und ausführen können.</span><span class="sxs-lookup"><span data-stu-id="2d528-105">This procedure shows you to how set up and run the process for multiple legal entities.</span></span> <span data-ttu-id="2d528-106">Es verwendet die Buchhalterrolle.</span><span class="sxs-lookup"><span data-stu-id="2d528-106">It uses the accountant role.</span></span>  
 

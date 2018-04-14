@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3988bd478cfad791b5d4c73d28a86c9cfb68288f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6ddba210ced7c7ed5fad818945765528e5b1c1d1
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="costing-sheets"></a><span data-ttu-id="736be-108">Nachkalkulationsbögen</span><span class="sxs-lookup"><span data-stu-id="736be-108">Costing sheets</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="736be-109">Durch die Einrichtung des Nachkalkulationsbogens werden zwei Ziele verfolgt:</span><span class="sxs-lookup"><span data-stu-id="736be-109">Setting up the costing sheet involves two objectives.</span></span> <span data-ttu-id="736be-110">Zum einen wird das Format definiert, das zum Anzeigen von Wareneinsatzinformationen für einen produzierten Artikel oder einen Produktionsauftrag verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="736be-110">As the first objective, you define the format for displaying cost of goods sold information about a manufactured item or production order.</span></span> <span data-ttu-id="736be-111">Die formatierte Anzeige wird als Nachkalkulationsbogen bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="736be-111">The formatted display is termed a costing sheet.</span></span> <span data-ttu-id="736be-112">Zum anderen wird die Grundlage für die Berechnung indirekter Kosten definiert.</span><span class="sxs-lookup"><span data-stu-id="736be-112">As the second objective, you define the basis for calculating indirect costs.</span></span> <span data-ttu-id="736be-113">Die Einstellungen des Nachkalkulationsbogens basieren auf der Kostengruppenfunktion für die Informationsanzeige sowie für die Berechungsformeln für indirekte Kosten.</span><span class="sxs-lookup"><span data-stu-id="736be-113">The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas.</span></span> <span data-ttu-id="736be-114">In diesem Artikel werden die beiden Ziele des Nachkalkulationsbogens beschrieben:</span><span class="sxs-lookup"><span data-stu-id="736be-114">The two objectives of costing sheet setup are described in this article.</span></span> 
 

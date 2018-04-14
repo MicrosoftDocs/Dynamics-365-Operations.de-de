@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8e7d2198b4976a6f60f05690d7b6f11f3da55e28
-ms.openlocfilehash: a98e58b26432ee01e62d60f81a768f14568e34e4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0ad0869907b23ce5e0b44e3e9ecee3f2cd34ede
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="ship-sales-orders-without-warehousing"></a><span data-ttu-id="af001-103">Aufträge ohne Lagerort liefern</span><span class="sxs-lookup"><span data-stu-id="af001-103">Ship sales orders without warehousing</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="af001-104">Dieser Leitfaden veranschaulicht, wie ein Auftrag aktualisiert wird, wenn Produkte an den Debitor versendet werden.</span><span class="sxs-lookup"><span data-stu-id="af001-104">This guide demonstrates how to update a sales order when products are shipped to the customer.</span></span> <span data-ttu-id="af001-105">Der Leitfaden betrifft den Erfüllungsfluss, der nicht für die Lagerortverwaltung eingerichtet ist (weder grundlegende oder erweiterte Lagerung) und daher keine Produktentnahme vor Lieferung erfassen muss.</span><span class="sxs-lookup"><span data-stu-id="af001-105">The guide is applicable to the fulfillment flow that is not set up for warehouse management (neither basic or advanced warehousing), and therefore does not require product picking to be registered before shipment.</span></span> <span data-ttu-id="af001-106">Sie können diese Prozedur in Ihrem eigenen Demodatenunternehmen oder in USMF ausführen.</span><span class="sxs-lookup"><span data-stu-id="af001-106">You can run this procedure on your own data or in demo data company USMF.</span></span> <span data-ttu-id="af001-107">In beiden Fällen erstellen Sie einen Auftrag für ein inventarisiertes Produkt mit einer Menge größer als 1, bevor Sie mit der Aufgabe beginnen.</span><span class="sxs-lookup"><span data-stu-id="af001-107">In both cases, before you start this task, create a sales order for an inventoried product with a quantity of greater than 1.</span></span> <span data-ttu-id="af001-108">Um ein Buchungsfehler zu vermeiden, müssen Sie überprüfen ob die verfügbare Menge des Produkts im Standort und Lagerort, den Sie im Auftrag ausgewählt haben, in der Auftragsmenge enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="af001-108">To avoid a posting error, you need to check that the product's on-hand quantity in the site and warehouse that you’ve selected on the order covers the order quantity.</span></span>
 

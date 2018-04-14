@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a83a3325c80eb6fc1a19371a6115413ca9b82185
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="time-and-attendance-registration"></a><span data-ttu-id="22298-104">Zeit- und Anwesenheitserfassung</span><span class="sxs-lookup"><span data-stu-id="22298-104">Time and attendance registration</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="22298-105">Arbeitskräfte mit Zeiterfassung können verschiedene Arten von Zeiterfassungen eingeben. Sie können sich z. B. ein- und ausstempeln sowie indirekte Aktivitäten und Abwesenheiten erfassen.</span><span class="sxs-lookup"><span data-stu-id="22298-105">Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration.</span></span> <span data-ttu-id="22298-106">Dieses Thema beschreibt Erfassungen, ihre Berechnung, Genehmigung, und die Verwendung von Workflows sowie das Hinzufügen von Struktur und die automatisierte Genehmigung für Arbeitszeitnachweisen.</span><span class="sxs-lookup"><span data-stu-id="22298-106">This topic describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets.</span></span> 
 
@@ -95,7 +94,7 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="22298-168">Zeit und Anwesenheitstage gesamt</span><span class="sxs-lookup"><span data-stu-id="22298-168">Time and attendance days total</span></span>            | <span data-ttu-id="22298-169">Der Workflow prüft Erfassungen z. B. gegen die erwarteten Anzahl von Arbeitsstunden für den Tag.</span><span class="sxs-lookup"><span data-stu-id="22298-169">The workflow validates registrations against, for example, the expected number of work hours for the day.</span></span> |                                                                                                                                                                                                                                                       |
 | <span data-ttu-id="22298-170">Zeit und Anwesenheit-Journalerfassung.</span><span class="sxs-lookup"><span data-stu-id="22298-170">Time and attendance journal registration.</span></span> | <span data-ttu-id="22298-171">Im Workflow wird jeder Erfassungstyp mit dem Datum der Erfassung abgeglichen.</span><span class="sxs-lookup"><span data-stu-id="22298-171">The workflow validates each registration type for the date of the registration.</span></span>                           | <span data-ttu-id="22298-172">Zeit und Anwesenheit • Einstempeln • Ausstempeln • Abwesenheit • Pause • Wechselcode • Projekt • Projektaktivität • Produktionseinzelvorgänge der indirekten Aktivität • Warten davor • Einstellungen • Prozess • Überlappen • Transport • Warten danach • Assistenten starten • Assistenten stoppen</span><span class="sxs-lookup"><span data-stu-id="22298-172">Time and attendance • Clock-in • Clock-out • Absence • Break • Switch code • Project • Project activity • Indirect activity Production jobs • Queue before • Setup • Process • Overlap • Transport • Queue after • Start assistance • Stop assistance</span></span> |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a><span data-ttu-id="22298-173">Genehmigte Erfassungen übertragen</span><span class="sxs-lookup"><span data-stu-id="22298-173">Transferring approved registrations</span></span>
 <span data-ttu-id="22298-174">Nach dem Genehmigen der Erfassungen können Sie sie an einen periodischen Lohneinzelvorgang übertragen.</span><span class="sxs-lookup"><span data-stu-id="22298-174">After approval of the registrations you can transfer them to a periodic payroll job.</span></span> <span data-ttu-id="22298-175">Eine übertragene Erfassung wird für die Aktivität oder den Einzelvorgang gebucht, auf die sie sich bezieht, z. B. einen Produktionsauftrag oder ein Projekt.</span><span class="sxs-lookup"><span data-stu-id="22298-175">A transferred registration is posted to an activity or job that it relates to, for example, a production order or a project.</span></span> <span data-ttu-id="22298-176">Es werden anhand der Erfassungen Lohnabrechnungsbuchungen für jede Arbeitskraft generiert.</span><span class="sxs-lookup"><span data-stu-id="22298-176">Payroll transactions are generated for each worker based on the registrations.</span></span>  

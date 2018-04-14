@@ -18,17 +18,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 34dac634e09a8daa8a22b9f1efbc18ca44444e21
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6e43be6171b50252000a892172fb8d2a1813ecd7
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="invoice-issue-deadline"></a><span data-ttu-id="8b580-103">Rechnungsabgangsfrist</span><span class="sxs-lookup"><span data-stu-id="8b580-103">Invoice issue deadline</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8b580-104">In diesem Artikel wird erläutert, wie Parameter eingerichtet werden, um die Fälligkeitsdaten für die Erstellung von Debitorenrechnungen und Kreditorenrechnungen in der Europäischen Union zu berechnen.</span><span class="sxs-lookup"><span data-stu-id="8b580-104">This article explains how to set up parameters to calculate the due dates for issuing customer invoices and vendor invoices in the European Union (EU).</span></span>
 

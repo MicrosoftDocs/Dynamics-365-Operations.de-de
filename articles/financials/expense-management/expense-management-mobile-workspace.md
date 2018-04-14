@@ -18,16 +18,16 @@ ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93e45257dec65dee0d20f4a6b14a7cc682fa0ab5
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expense-management-mobile-workspace"></a><span data-ttu-id="2b5bd-105">Mobiler Arbeitsbereich für Spesenverwaltung</span><span class="sxs-lookup"><span data-stu-id="2b5bd-105">Expense management mobile workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2b5bd-106">Dieses Thema enthält Informationen über den mobilen Arbeitsbereich für die **Spesenverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="2b5bd-106">This topic provides information about the **Expense management** mobile workspace.</span></span> <span data-ttu-id="2b5bd-107">Dieser Arbeitsbereich ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können.</span><span class="sxs-lookup"><span data-stu-id="2b5bd-107">This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later.</span></span> <span data-ttu-id="2b5bd-108">Benutzer können auch schnell eine Spesenposition erstellen, indem sie einen beigefügten Beleg verwenden und ihre Spesenberichte erstellen und verwalten.</span><span class="sxs-lookup"><span data-stu-id="2b5bd-108">Users can also quickly create an expense line by using an attached receipt, and create and manage their expense reports.</span></span> <span data-ttu-id="2b5bd-109">Darüber hinaus können die Genehmiger den mobilen Arbeitsbereich für die **Spesenverwaltung** verwenden, um Spesenberichte zu überprüfen, die ihnen zugewiesen sind, und diese Spesenberichte entweder genehmigen oder ablehnen.</span><span class="sxs-lookup"><span data-stu-id="2b5bd-109">Additionally, approvers can use the **Expense management** mobile workspace to view expense reports that are assigned to them, and either approve or reject those expense reports.</span></span>
 

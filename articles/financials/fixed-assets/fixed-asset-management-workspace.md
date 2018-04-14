@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8425387d4004e02e9b8adf9ba3b31a0b4e02b6e9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2b07f9d971dc152e9168b9867e70c59481325284
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-asset-management-workspace"></a><span data-ttu-id="396f4-105">Arbeitsbereich "Anlageverwaltung"</span><span class="sxs-lookup"><span data-stu-id="396f4-105">Fixed asset management workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="396f4-106">Der Arbeitsbereich **Anlagenverwaltung** zeigt Informationen, die sich auf Anlagen beziehen, die im System eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="396f4-106">The **Fixed asset management** workspace shows information that is related to fixed assets that are entered in the system.</span></span> <span data-ttu-id="396f4-107">Der Arbeitsbereich umfasst eine Überblicksansicht und eine Analyseansicht.</span><span class="sxs-lookup"><span data-stu-id="396f4-107">This workspace includes a summary view and an analytics view.</span></span> <span data-ttu-id="396f4-108">Die Registerkarte **Meine Arbeit** zeigt Überblickskacheln, Anlagendetails und zugehörige Informationen zu Anlagen im aktuellen Unternehmen.</span><span class="sxs-lookup"><span data-stu-id="396f4-108">The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company.</span></span> <span data-ttu-id="396f4-109">Sie können dem Power BI-Analyseabschnitt direkt im Arbeitsbereich Analysemöglichkeiten hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="396f4-109">You can also add analytics to the Power BI analytics section directly in the workspace.</span></span> <span data-ttu-id="396f4-110">Die Registerkarte **Analyse – alle Unternehmen** verwendet die Möglichkeiten von Microsoft Power BI, um grafische Elemente anzuzeigen, die sich auf Anlagen in allen Unternehmen beziehen.</span><span class="sxs-lookup"><span data-stu-id="396f4-110">The **Analytics – all companies** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.</span></span>
 

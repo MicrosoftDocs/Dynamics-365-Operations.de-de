@@ -17,15 +17,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 154c60b766aa034bb986e2d35bc92e6e9e0cf0d9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e7ed3636962e4056c1151c18456e0bcb002717c0
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a><span data-ttu-id="f24f2-103">Projektbudgetüberarbeitungen übermitteln und genehmigen</span><span class="sxs-lookup"><span data-stu-id="f24f2-103">Submit and approve project budget revisions</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f24f2-104">Diese Prozedur stellt Informationen über die Überarbeitung eines Projektbudgets bereit.</span><span class="sxs-lookup"><span data-stu-id="f24f2-104">This procedure provides information about revising a project budget.</span></span> <span data-ttu-id="f24f2-105">Sie können ein Projektbudget so oft wie nötig überarbeiten. Sie können jedoch nicht den Betrag einer einzelnen Überarbeitung sehen, wenn das Budget mehr als einmal überarbeitet wurde.</span><span class="sxs-lookup"><span data-stu-id="f24f2-105">You can revise a project budget as many times as necessary, however you can't see the amount of an individual revision if the budget has been revised more than one time.</span></span> 
 

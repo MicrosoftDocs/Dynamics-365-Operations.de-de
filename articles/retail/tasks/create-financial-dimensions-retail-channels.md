@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 5ab4df61ab1e1346eaaf5c586f54a06b7b7432e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0ee9e2edcda436d3dec6f9002a2d3d30de85503
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a><span data-ttu-id="16569-103"> Finanzdimensionen für Einzelhandelskanäle erstellen und Dimensionswerte in Geschäften konfigurieren</span><span class="sxs-lookup"><span data-stu-id="16569-103">Create financial dimensions for Retail channels and configure dimension values on stores</span></span>
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="16569-104">Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen einer Einzelhandelskanalfinanzdimension mit Dimensionswerten und Schritten zum Konfigurieren von Finanzdimensionswerten für Einzelhandelsgeschäfte.</span><span class="sxs-lookup"><span data-stu-id="16569-104">This procedure walks through creating a retail channel financial dimension with dimension values and steps to configure financial dimension values on retail stores.</span></span> <span data-ttu-id="16569-105">Das Thema umfasst keine anderen zugehörigen Schritte, wie Erstellen von Dimensionssätzen und Kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="16569-105">The topic does not include other related steps, such as creating dimension sets and account structures.</span></span> <span data-ttu-id="16569-106">Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="16569-106">This procedure uses the USRT company in demo data.</span></span>
 

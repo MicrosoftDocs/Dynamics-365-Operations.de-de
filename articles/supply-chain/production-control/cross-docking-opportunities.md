@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 62194012cfbe101d19e9de3254afb004da79a562
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 06416e3cec2915071f13acf485d21482da2eef21
 ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a><span data-ttu-id="421c8-103">Crossdocking von Produktionsaufträgen zu Ausgangsrampen</span><span class="sxs-lookup"><span data-stu-id="421c8-103">Cross-docking from production orders to outbound docks</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="421c8-104">In diesem Thema wird beschrieben, wie Sie den Prozess des Crossdockings von Materials verwalten, das als fertig gestellt gemeldet wurde, spricht von eine Produktionsauftragsposition an einen ausgehenden Transportdock beendet.</span><span class="sxs-lookup"><span data-stu-id="421c8-104">This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.</span></span>
 
@@ -76,10 +76,10 @@ ms.lasthandoff: 03/07/2018
 
 ### <a name="cross-docking-policy-name-transfer-order"></a><span data-ttu-id="421c8-135">Crossdocking-Richtlinienname: Umlagerungsauftrag</span><span class="sxs-lookup"><span data-stu-id="421c8-135">Cross-docking policy name: Transfer order</span></span>
 
--   <span data-ttu-id="421c8-136">Laufende Nummer: 10</span><span class="sxs-lookup"><span data-stu-id="421c8-136">Sequence number: 10</span></span>
- -   <span data-ttu-id="421c8-137">Arbeitsauftragstyp: Übergangsabgang</span><span class="sxs-lookup"><span data-stu-id="421c8-137">Work order type: Transfer issue</span></span>
--   <span data-ttu-id="421c8-138">Crossdockingbedarf erfordert Lagerplatz: Falsch</span><span class="sxs-lookup"><span data-stu-id="421c8-138">Cross docking demand requires location: False</span></span>
--   <span data-ttu-id="421c8-139">Crossdockingstrategie: Datum und Uhrzeit</span><span class="sxs-lookup"><span data-stu-id="421c8-139">Cross docking strategy: Date and time</span></span>
+- <span data-ttu-id="421c8-136">Laufende Nummer: 10</span><span class="sxs-lookup"><span data-stu-id="421c8-136">Sequence number: 10</span></span>
+  -   <span data-ttu-id="421c8-137">Arbeitsauftragstyp: Übergangsabgang</span><span class="sxs-lookup"><span data-stu-id="421c8-137">Work order type: Transfer issue</span></span>
+- <span data-ttu-id="421c8-138">Crossdockingbedarf erfordert Lagerplatz: Falsch</span><span class="sxs-lookup"><span data-stu-id="421c8-138">Cross docking demand requires location: False</span></span>
+- <span data-ttu-id="421c8-139">Crossdockingstrategie: Datum und Uhrzeit</span><span class="sxs-lookup"><span data-stu-id="421c8-139">Cross docking strategy: Date and time</span></span>
 
 ### <a name="sequence-number"></a><span data-ttu-id="421c8-140">Laufende Nummer</span><span class="sxs-lookup"><span data-stu-id="421c8-140">Sequence number</span></span>
 

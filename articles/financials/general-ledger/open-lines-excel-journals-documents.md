@@ -19,21 +19,21 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2da864254efda2621e1b157413a16d251020786
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 034e25eea8a4db3126f7f33ae0712b6f30606651
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="publish-journal-lines-and-documents-from-excel"></a><span data-ttu-id="cce11-104">Veröffentlicht von Erfassungspositionen und Dokumente aus Excel</span><span class="sxs-lookup"><span data-stu-id="cce11-104">Publish journal lines and documents from Excel</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="cce11-105">In diesem Thema wird erläutert, wie Positionen für allgemeine Erfassungen aus Microsoft Excel veröffentlicht.</span><span class="sxs-lookup"><span data-stu-id="cce11-105">This topic explains how to enter and publish lines for general journals from Microsoft Excel.</span></span> <span data-ttu-id="cce11-106">Es umfasst Informationen zu verschiedenen Vorlagen, die Sie verwenden können, abhängig vom Buchungstyp, den Sie eingeben.</span><span class="sxs-lookup"><span data-stu-id="cce11-106">It includes information about the various templates that you can use, depending on the type of transactions that you're entering.</span></span>
 
 <span data-ttu-id="cce11-107">Benutzer können Positionen für Finanzerfassungen aus Microsoft Excel eingeben und veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="cce11-107">Users can enter and publish lines for financial journals from Microsoft Excel.</span></span> <span data-ttu-id="cce11-108">Nachdem ein Benutzer eine Erfassung erstellt, die zeigt **Positionen in Excel öffnen**-Schaltfläche die Vorlagen an, die zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="cce11-108">After a user creates a journal, the **Open lines in Excel** button displays the templates that are available.</span></span> <span data-ttu-id="cce11-109">Vorlagen sind so entworfen, dass bestimmte Szenarien zu unterstützen, jedoch nicht alle der Kontenart in Kombination die Erfassung unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="cce11-109">Templates are designed to support specific scenarios, however not every combination of account type is supported in the journal.</span></span> <span data-ttu-id="cce11-110">In der folgenden Tabelle werden die Vorlagen, die verfügbar sind und die Kontenart an, die sie unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="cce11-110">The following table shows the templates that are available and the account types which they support.</span></span>
+
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | <span data-ttu-id="cce11-111">**Vorlage**</span><span class="sxs-lookup"><span data-stu-id="cce11-111">**Template**</span></span>             | <span data-ttu-id="cce11-112">**Unterstützte Kontenarten**</span><span class="sxs-lookup"><span data-stu-id="cce11-112">**Supported account types**</span></span>                                                                                             | <span data-ttu-id="cce11-113">**Informationen zum Zugreifen auf die Vorlage**</span><span class="sxs-lookup"><span data-stu-id="cce11-113">**How to access the template**</span></span>                                                          |

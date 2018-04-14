@@ -18,17 +18,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 445c639dc56a5d240f4e35353276ef893f2137da
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="keyboard-shortcuts"></a><span data-ttu-id="6001a-103">Tastenkombinationen</span><span class="sxs-lookup"><span data-stu-id="6001a-103">Keyboard shortcuts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6001a-104">In Dynamics 365 for Finance and Operations stehen die folgenden Tastenkombinationen zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="6001a-104">The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations.</span></span> 
 
@@ -39,6 +38,7 @@ ms.lasthandoff: 03/26/2018
 
 
 ## <a name="action-shortcuts"></a><span data-ttu-id="6001a-111">Aktivitätskürzel</span><span class="sxs-lookup"><span data-stu-id="6001a-111">Action shortcuts</span></span>
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | <span data-ttu-id="6001a-112">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-112">**To do this**</span></span>                                    | <span data-ttu-id="6001a-113">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-113">**Press**</span></span>                        |
@@ -55,6 +55,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-134">Zurzeit verfügbare Tastenkombinationen anzeigen</span><span class="sxs-lookup"><span data-stu-id="6001a-134">View currently available shortcuts</span></span>                | <span data-ttu-id="6001a-135">ALT+UMSCHALT+ K</span><span class="sxs-lookup"><span data-stu-id="6001a-135">Alt+Shift+K</span></span>                      |                              
 
 ## <a name="date-picker-shortcuts"></a><span data-ttu-id="6001a-136">Datumsauswahlverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-136">Date picker shortcuts</span></span>
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | <span data-ttu-id="6001a-137">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-137">**To do this**</span></span>                        | <span data-ttu-id="6001a-138">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-138">**Press**</span></span>                                 |
@@ -68,6 +69,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-153">„Nie” auswählen (oder das maximale Datum)</span><span class="sxs-lookup"><span data-stu-id="6001a-153">Pick Never (or the max date)</span></span>          | <span data-ttu-id="6001a-154">N</span><span class="sxs-lookup"><span data-stu-id="6001a-154">N</span></span>                                         |
 
 ## <a name="factbox-shortcuts"></a><span data-ttu-id="6001a-155">Infoboxverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-155">FactBox shortcuts</span></span>
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | <span data-ttu-id="6001a-156">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-156">**To do this**</span></span>                                                                  | <span data-ttu-id="6001a-157">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-157">**Press**</span></span>                                 |
@@ -79,6 +81,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-168">Die aktuelle Infobox reduzieren</span><span class="sxs-lookup"><span data-stu-id="6001a-168">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="6001a-169">ALT+0</span><span class="sxs-lookup"><span data-stu-id="6001a-169">Alt+0</span></span>                                     |
 
 ## <a name="filtering-shortcuts"></a><span data-ttu-id="6001a-170">Verknüpfungen filtern</span><span class="sxs-lookup"><span data-stu-id="6001a-170">Filtering shortcuts</span></span>
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | <span data-ttu-id="6001a-171">**Ergebnis**</span><span class="sxs-lookup"><span data-stu-id="6001a-171">**To do this**</span></span>                     | <span data-ttu-id="6001a-172">**Drücken**</span><span class="sxs-lookup"><span data-stu-id="6001a-172">**Press**</span></span>                |
@@ -89,6 +92,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-181">Erweiterte Filterung/Sortierung öffnen</span><span class="sxs-lookup"><span data-stu-id="6001a-181">Open advanced filtering/sort</span></span>                                      | <span data-ttu-id="6001a-182">STRG+UMSCHALT+F3</span><span class="sxs-lookup"><span data-stu-id="6001a-182">Ctrl+Shift+F3</span></span>            | 
 
 ## <a name="form-shortcuts"></a><span data-ttu-id="6001a-183">Formularverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-183">Form shortcuts</span></span>
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | <span data-ttu-id="6001a-184">**Ergebnis**</span><span class="sxs-lookup"><span data-stu-id="6001a-184">**To do this**</span></span>                                      | <span data-ttu-id="6001a-185">**Drücken**</span><span class="sxs-lookup"><span data-stu-id="6001a-185">**Press**</span></span>         |
@@ -110,6 +114,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-216">Das Formular schließen und dabei alle nicht gespeicherten Änderungen verwerfen</span><span class="sxs-lookup"><span data-stu-id="6001a-216">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="6001a-217">ALT+UMSCHALT+Q</span><span class="sxs-lookup"><span data-stu-id="6001a-217">Alt+Shift+Q</span></span>       |
 
 ## <a name="form-navigation-shortcuts"></a><span data-ttu-id="6001a-218">Formularnavigationsverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-218">Form navigation shortcuts</span></span>
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | <span data-ttu-id="6001a-219">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-219">**To do this**</span></span>                                      | <span data-ttu-id="6001a-220">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-220">**Press**</span></span>                                    |
@@ -128,6 +133,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-245">Zur Zeilenansicht wechseln</span><span class="sxs-lookup"><span data-stu-id="6001a-245">Switch to lines view</span></span>                                | <span data-ttu-id="6001a-246">STRG+UMSCHALT+L</span><span class="sxs-lookup"><span data-stu-id="6001a-246">Ctrl+Shift+L</span></span>                                 |
 
 ## <a name="grid-shortcuts"></a><span data-ttu-id="6001a-247">Rasterverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-247">Grid shortcuts</span></span>
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | <span data-ttu-id="6001a-248">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-248">**To do this**</span></span>                                                                                                         | <span data-ttu-id="6001a-249">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-249">**Press**</span></span>                       |
@@ -148,6 +154,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-283">Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)</span><span class="sxs-lookup"><span data-stu-id="6001a-283">Open grid filtering for the current column (with focus in the header row)</span></span>                                              | <span data-ttu-id="6001a-284">EINGABETASTE</span><span class="sxs-lookup"><span data-stu-id="6001a-284">Enter</span></span>                           |
 
 ## <a name="input-control-shortcuts"></a><span data-ttu-id="6001a-285">Eingabesteuerungsverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-285">Input control shortcuts</span></span>
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | <span data-ttu-id="6001a-286">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-286">**To do this**</span></span>                                                               | <span data-ttu-id="6001a-287">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-287">**Press**</span></span>                     |
@@ -163,6 +170,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-306">Fokus zwischen dem Textbereich und der Symbolleiste in einem HTML-Editorsteuerelement wechseln</span><span class="sxs-lookup"><span data-stu-id="6001a-306">Switch focus between the text area and the toolbar in an HTML editor control</span></span> | <span data-ttu-id="6001a-307">F6</span><span class="sxs-lookup"><span data-stu-id="6001a-307">F6</span></span>                            |
 
 ## <a name="messaging-shortcuts"></a><span data-ttu-id="6001a-308">Nachrichtenverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-308">Messaging shortcuts</span></span>
+
 |                          |               |
 |--------------------------|---------------|
 | <span data-ttu-id="6001a-309">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-309">**To do this**</span></span>           | <span data-ttu-id="6001a-310">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-310">**Press**</span></span>     |
@@ -170,6 +178,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-313">Zur Meldungsleiste wechseln</span><span class="sxs-lookup"><span data-stu-id="6001a-313">Go to the Message Bar</span></span>    | <span data-ttu-id="6001a-314">STRG+F7</span><span class="sxs-lookup"><span data-stu-id="6001a-314">Ctrl+F7</span></span>       |
 
 ## <a name="navigation-shortcuts"></a><span data-ttu-id="6001a-315">Navigationsverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-315">Navigation shortcuts</span></span>
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | <span data-ttu-id="6001a-316">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-316">**To do this**</span></span>                                                                | <span data-ttu-id="6001a-317">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-317">**Press**</span></span>                  |
@@ -191,6 +200,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-348">Zum Bereich „Infobox” wechseln (was möglicherweise einschließt, ihn zu öffnen)</span><span class="sxs-lookup"><span data-stu-id="6001a-348">Move to the FactBox pane (which may include opening it)</span></span>                       | <span data-ttu-id="6001a-349">ALT+M,B oder STRG+F2</span><span class="sxs-lookup"><span data-stu-id="6001a-349">Alt+M,B or Ctrl+F2</span></span>         |
 
 ## <a name="personalization-shortcuts"></a><span data-ttu-id="6001a-350">Personalisierungsverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-350">Personalization shortcuts</span></span>
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | <span data-ttu-id="6001a-351">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-351">**To do this**</span></span>                                                                                                         | <span data-ttu-id="6001a-352">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-352">**Press**</span></span>                           |
@@ -219,6 +229,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6001a-397">Personalisierungsmodus beenden (wenn im Personalisierungsmodus)</span><span class="sxs-lookup"><span data-stu-id="6001a-397">Exit personalization mode (when in personalization mode)</span></span>                                                               | <span data-ttu-id="6001a-398">ESC</span><span class="sxs-lookup"><span data-stu-id="6001a-398">Esc</span></span>                                 |
 
 ## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="6001a-399">Segmentierte Eintragsverknüpfungen</span><span class="sxs-lookup"><span data-stu-id="6001a-399">Segmented entry shortcuts</span></span>
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | <span data-ttu-id="6001a-400">**Aktion**</span><span class="sxs-lookup"><span data-stu-id="6001a-400">**To do this**</span></span>                                                                                                          | <span data-ttu-id="6001a-401">**Taste(n)**</span><span class="sxs-lookup"><span data-stu-id="6001a-401">**Press**</span></span>                        |

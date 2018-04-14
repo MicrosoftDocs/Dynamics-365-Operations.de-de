@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5ce38e94ae4c7b28b4e182018add7c046f685e46
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: df1abf5029917c40392922f0d018d13bb54045ac
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="authorize-an-adjusted-forecast"></a><span data-ttu-id="867e7-105">Eine angepasste Planung autorisieren</span><span class="sxs-lookup"><span data-stu-id="867e7-105">Authorize an adjusted forecast</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="867e7-106">Nicht alle Planungsdaten müssen sofort autorisiert werden.</span><span class="sxs-lookup"><span data-stu-id="867e7-106">Not all forecast data must be authorized immediately.</span></span> <span data-ttu-id="867e7-107">In diesem Artikel wird beschrieben, wie Sie die Periode angeben können, für die eine Planung autorisiert ist.</span><span class="sxs-lookup"><span data-stu-id="867e7-107">This article explains how you can specify the period that a forecast is authorized for.</span></span> <span data-ttu-id="867e7-108">Er erläutert auch, wie Sie die Planung für bestimmte Unternehmen und Planzahlenmodelle autorisieren können.</span><span class="sxs-lookup"><span data-stu-id="867e7-108">It also explains how you can authorize the forecast for specific companies and forecast models.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b1868851d22f41d3278cd9574a48bdf062185012
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5109bc180cedfb21dfb8b2920d71d54812e7e6cf
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="piece-picking-confirmation"></a><span data-ttu-id="028de-103">Stückentnahmebestätigung</span><span class="sxs-lookup"><span data-stu-id="028de-103">Piece picking confirmation</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="028de-104">Die Stückentnahme ermöglicht Ihnen, jedes Teil des Bestands zu bestätigen über Entnahme- oder Inventurarbeit auf einem mobilen Gerät.</span><span class="sxs-lookup"><span data-stu-id="028de-104">Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.</span></span> <span data-ttu-id="028de-105">Bei der Entnahme können Sie die Menge der zu verarbeitenden Arbeit bis zu der Menge bestätigen, die für die zu entnehmende Arbeit angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="028de-105">For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked.</span></span> <span data-ttu-id="028de-106">Bei Inventurarbeit können Sie den Bestand scannen, den Sie zählen und die Gesamtsumme nachverfolgen.</span><span class="sxs-lookup"><span data-stu-id="028de-106">For counting work, you can scan the inventory that you are counting and track the total amount.</span></span>
 
@@ -46,8 +46,10 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="028de-122">Die folgenden Optionen sind zur Auswahl verfügbar, wenn der Arbeitstyp Entnahme oder Inventur ist.</span><span class="sxs-lookup"><span data-stu-id="028de-122">The following options become available for selection when the work type is pick or counting.</span></span>
 
-| <span data-ttu-id="028de-123">Mit der folgenden Option...</span><span class="sxs-lookup"><span data-stu-id="028de-123">Option</span></span>        | <span data-ttu-id="028de-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="028de-124">Description</span></span>   | 
-| ------------- | ------------- |
-| <span data-ttu-id="028de-125">Stückentnahmebestätigung</span><span class="sxs-lookup"><span data-stu-id="028de-125">Piece picking confirmation</span></span>   | <span data-ttu-id="028de-126">Verfügbar für Entnahme- und Inventurarbeitstypen.</span><span class="sxs-lookup"><span data-stu-id="028de-126">Available for pick and counting work types.</span></span> <span data-ttu-id="028de-127">Produktbestätigung wird automatisch ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="028de-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="028de-128">Ermöglicht Ihnen, jeden Inventurartikel über das mobile Gerät zu bestätigen.</span><span class="sxs-lookup"><span data-stu-id="028de-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> | 
-| <span data-ttu-id="028de-129">Maximale Anzahl von Stücken</span><span class="sxs-lookup"><span data-stu-id="028de-129">Maximum number of pieces</span></span>     | <span data-ttu-id="028de-130">Verfügbar für Entnahmearbeit, wenn Stückentnahmebestätigung aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="028de-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="028de-131">Beschränkt die Anzahl der Teile, die Sie bestätigen müssen.</span><span class="sxs-lookup"><span data-stu-id="028de-131">Sets a limit to the number of pieces that you must confirm.</span></span> |  
+
+|           <span data-ttu-id="028de-123">Mit der folgenden Option...</span><span class="sxs-lookup"><span data-stu-id="028de-123">Option</span></span>           |                                                                            <span data-ttu-id="028de-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="028de-124">Description</span></span>                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="028de-125">Stückentnahmebestätigung</span><span class="sxs-lookup"><span data-stu-id="028de-125">Piece picking confirmation</span></span> | <span data-ttu-id="028de-126">Verfügbar für Entnahme- und Inventurarbeitstypen.</span><span class="sxs-lookup"><span data-stu-id="028de-126">Available for pick and counting work types.</span></span> <span data-ttu-id="028de-127">Produktbestätigung wird automatisch ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="028de-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="028de-128">Ermöglicht Ihnen, jeden Inventurartikel über das mobile Gerät zu bestätigen.</span><span class="sxs-lookup"><span data-stu-id="028de-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> |
+|  <span data-ttu-id="028de-129">Maximale Anzahl von Stücken</span><span class="sxs-lookup"><span data-stu-id="028de-129">Maximum number of pieces</span></span>  |                   <span data-ttu-id="028de-130">Verfügbar für Entnahmearbeit, wenn Stückentnahmebestätigung aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="028de-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="028de-131">Beschränkt die Anzahl der Teile, die Sie bestätigen müssen.</span><span class="sxs-lookup"><span data-stu-id="028de-131">Sets a limit to the number of pieces that you must confirm.</span></span>                   |
+
 

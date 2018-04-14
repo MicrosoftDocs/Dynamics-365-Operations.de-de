@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d8eb8a8c4e98dde0b1e8583a8b7f6f603bc736c7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4a10007be4b9277defe9f170b24e68d3fba30ed7
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="master-plans"></a><span data-ttu-id="3bc98-103">Produktprogrammpläne</span><span class="sxs-lookup"><span data-stu-id="3bc98-103">Master plans</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="3bc98-104">Zur Unterstützung der täglichen Arbeitsabläufe Ihres Unternehmens, zum Simulieren unterschiedlicher Planungsstrategien, die überwacht werden sollen, und zum Implementieren einer Unternehmensrichtlinie, z. B. eine Richtlinie für die interne Leistung oder die Kundenzufriedenheit, können Sie verschiedene Produktprogrammpläne einrichten und verwenden.</span><span class="sxs-lookup"><span data-stu-id="3bc98-104">Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction.</span></span> 
 

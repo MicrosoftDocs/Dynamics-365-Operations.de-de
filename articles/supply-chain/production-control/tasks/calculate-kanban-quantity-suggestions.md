@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a817dbc02890d863f68c5bf2a6cc11b9a5328060
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ba09bfba52cd576782e61802e44fa4b80f4711f
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a><span data-ttu-id="68b60-103">Kanban-Mengenvorschläge berechnen</span><span class="sxs-lookup"><span data-stu-id="68b60-103">Calculate kanban quantity suggestions</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="68b60-104">Der Schwerpunkt dieser Prozedur liegt auf dem Optimieren der Kanban-Größe und -Menge für eine bestimmte Kanban-Regel mit der Kanban-Mengenberechnung.</span><span class="sxs-lookup"><span data-stu-id="68b60-104">This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation.</span></span> <span data-ttu-id="68b60-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="68b60-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="68b60-106">Diese Vorgehensweise ist für den Wertstrommanager vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="68b60-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="68b60-107">Für dieses Verfahren wird vorausgesetzt, dass Sie die Prozedur "Kanban-Berechnungsrichtlinie zur Kanban-Regel hinzufügen" abgeschlossen haben.</span><span class="sxs-lookup"><span data-stu-id="68b60-107">It is a prerequisite that you have completed the procedure Add a new kanban quantity calculation policy to a kanban rule.</span></span>
 

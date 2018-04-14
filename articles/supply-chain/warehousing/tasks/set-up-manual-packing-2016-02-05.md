@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7f992a6a1655cd868d79228c490d59b46bfae715
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 31b689b6c31563f24892525eed5911af3a35bd51
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-manual-packing-february--may-2016-only"></a><span data-ttu-id="d8a1c-103">Manuelle Verpackung einrichten (nur Februar und Mai 2016)</span><span class="sxs-lookup"><span data-stu-id="d8a1c-103">Set up manual packing (February & May 2016 only)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d8a1c-104">Der Verpackungsprozess ermöglicht es Ihnen, Produkte zu überprüfen und in Container zu verpacken.</span><span class="sxs-lookup"><span data-stu-id="d8a1c-104">The packing process allows you to validate and pack products into containers.</span></span> <span data-ttu-id="d8a1c-105">In diesem Prozess entnehmen Lagerarbeiter Produkte aus den Speicherorten und verschieben diese zu einer Verpackungsanlage, in der sie die Artikelmengen und Typen überprüfen, und weisen diese den entsprechenden Containern zu.</span><span class="sxs-lookup"><span data-stu-id="d8a1c-105">In this process, warehouse workers pick products from the storage locations and move them to a packing station where they check the item quantities and types, and assign them to appropriate containers.</span></span> <span data-ttu-id="d8a1c-106">Wenn ein Container vollständig gepackt ist, können sie ihn schließen und zu den Ausgangsrampen verschieben, und die Produkte sind bereit zum liefern.</span><span class="sxs-lookup"><span data-stu-id="d8a1c-106">When a container is fully packed, they can close it and move it to the outbound docks, and the products are ready to ship.</span></span> <span data-ttu-id="d8a1c-107">Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="d8a1c-107">This procedure uses the USMF demo company.</span></span>
 

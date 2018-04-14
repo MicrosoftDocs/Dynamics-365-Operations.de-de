@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7cab69222c5004e6a62c632a9e85085403434ffd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b60dbe15eca10511f4aaaf472b512eb003fbf6bc
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="confirm-sales-orders"></a><span data-ttu-id="2e39a-103">Aufträge bestätigen</span><span class="sxs-lookup"><span data-stu-id="2e39a-103">Confirm sales orders</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2e39a-104">Diese Verfahren zeigt, wie Aufträge bestätigt werden.</span><span class="sxs-lookup"><span data-stu-id="2e39a-104">This procedure demonstrates how to confirm sales orders.</span></span> <span data-ttu-id="2e39a-105">Sie werden angezeigt, wie einen einzelnen Auftrag bestätigt und wie man bestätigt mehrerer Aufträge gleichzeitig.</span><span class="sxs-lookup"><span data-stu-id="2e39a-105">You’ll be shown how to confirm a single order, and how to confirm multiple orders at once.</span></span> <span data-ttu-id="2e39a-106">Diese Aufgaben werden normalerweise von einem Auftragsbearbeiter ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="2e39a-106">These tasks would typically be carried out by a sales order processor.</span></span> <span data-ttu-id="2e39a-107">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="2e39a-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="2e39a-108">Bevor Sie beginnen, stellen Sie sicher, dass es mehrere offene Aufträge für denselben Debitor vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="2e39a-108">Before you start, make sure there are several open sales orders for the same customer.</span></span> <span data-ttu-id="2e39a-109">Wenn Sie USMF verwenden, können Sie Debitor US-027 verwenden.</span><span class="sxs-lookup"><span data-stu-id="2e39a-109">If you’re using USMF, you can use customer US-027.</span></span>
 

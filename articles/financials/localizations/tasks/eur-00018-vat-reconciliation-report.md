@@ -16,15 +16,15 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d5ffeb4594adfbbd86b06382d70c74a37223b08d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 131635d8b4d1fed9c57d8d6bc06f3b4802ccc0ac
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="vat-reconciliation-report"></a><span data-ttu-id="20290-103">MwSt.-Abstimmungsbericht</span><span class="sxs-lookup"><span data-stu-id="20290-103">VAT reconciliation report</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="20290-104">Dieses Verfahren zeigt, wie Sie den Steuerabstimmungsbericht generiert, der für die norwegische und isländische juristische Personen verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="20290-104">This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.</span></span> <span data-ttu-id="20290-105">Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit Land/Region Norwegen in der primären Adresse einer juristischen Person.</span><span class="sxs-lookup"><span data-stu-id="20290-105">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</span></span>
 

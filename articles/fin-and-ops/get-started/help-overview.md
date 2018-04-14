@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e4d4efd45c722996ef3054094580dff7b4bc8d92
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="help-system-overview"></a><span data-ttu-id="1afb1-104">Hilfesytem – Überblick</span><span class="sxs-lookup"><span data-stu-id="1afb1-104">Help system overview</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1afb1-105">Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems.</span><span class="sxs-lookup"><span data-stu-id="1afb1-105">This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system.</span></span> <span data-ttu-id="1afb1-106">Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können.</span><span class="sxs-lookup"><span data-stu-id="1afb1-106">It also explains how you can provide custom documentation and training to your organization.</span></span> 
 

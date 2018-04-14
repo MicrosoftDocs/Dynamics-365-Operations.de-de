@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f53de983389dd8cbfb2c29af84539f1a73dc0a85
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6a55e25205bc7e996b6ab8c6915e2e86b758ee7a
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-bar-code-for-a-product"></a><span data-ttu-id="e6924-103">Strichcode für ein Produkt erstellen</span><span class="sxs-lookup"><span data-stu-id="e6924-103">Create a bar code for a product</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e6924-104">Dieses Verfahren zeigt, wie Sie manuell einen Strichcode mithilfe der Artikelnummer M0001 als Beispiel erstellen.</span><span class="sxs-lookup"><span data-stu-id="e6924-104">This procedure shows how to manually create a bar code using the item number M0001 as an example.</span></span> <span data-ttu-id="e6924-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="e6924-105">The demo data company used to create this procedure is USMF.</span></span>
 

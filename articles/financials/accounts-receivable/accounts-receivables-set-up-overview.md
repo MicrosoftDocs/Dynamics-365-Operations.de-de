@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 43c8d0db28fb0a845c4520b279f16d7c20c6da88
 ms.contentlocale: de-de
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a><span data-ttu-id="318ca-103">Konfigurieren von Debitoren und Kredit und Inkasso</span><span class="sxs-lookup"><span data-stu-id="318ca-103">Configure Accounts receivables and Credit and collections</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="318ca-104">Debitoren und Kredit und Inkasso konfigurieren, um Rechnungen und eingehenden Zahlungen von Debitoren nachzuverfolgen.</span><span class="sxs-lookup"><span data-stu-id="318ca-104">Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.</span></span>
 
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/14/2017
 |                                                      | <span data-ttu-id="318ca-251">KD-Informationen.</span><span class="sxs-lookup"><span data-stu-id="318ca-251">NSF information.</span></span>                     | <span data-ttu-id="318ca-252">Richten Sie KD-Informationen für das Bankkonto ein, das verwendet wird, wenn eine Zahlung als KD-Buchung auf der Inkassoseite markiert ist.</span><span class="sxs-lookup"><span data-stu-id="318ca-252">Set up NSF information on the bank account that will be used when a payment is marked as an NSF transaction on the Collections page.</span></span>                                                                                                                                              |
 |                                                      | <span data-ttu-id="318ca-253">Verkäuferinformationen</span><span class="sxs-lookup"><span data-stu-id="318ca-253">Salesperson information</span></span>              | <span data-ttu-id="318ca-254">Richten Sie die E-Mail-Adresse für Verkäufer ein.</span><span class="sxs-lookup"><span data-stu-id="318ca-254">Set up the email address for salespersons.</span></span> <span data-ttu-id="318ca-255">Diese Adressen werden in den Inkassi-Seite angezeigt. Sie können zum Senden einer E-Mail an einen Verkäufer über diese Seite verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="318ca-255">These addresses will appear on the Collections page and you can use them to send email to a salesperson from that page.</span></span>                                                                                                                |
 
- 
+
 <span data-ttu-id="318ca-256">Weitere Informationen finden Sie unter [Kreditl und Inkassi in Debitorenparametern](collections-credit-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="318ca-256">For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).</span></span>
 
 
