@@ -33,7 +33,7 @@ In Microsoft Dynamics 365 for Talent ist es einfach, die Benutzeroberflächen- u
 > [!NOTE] 
 > Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
-### <a name="personalizing-talent"></a>Personalisieren von Talent 
+## <a name="personalizing-talent"></a>Personalisieren von Talent 
 Die folgenden Themen enthalten Informationen dazu, wie viele Funktionen in Dynamics 365 Talent eingerichtet werden, die es erleichtern, Ihre Arbeit zeitnah auszuführen. 
 
 -   [Personalisieren Sie die Benutzerfreundlichkeit](../fin-and-ops/get-started/personalize-user-experience.md) - In diesem Thema werden die verschiedenen Arten, in denen Sie Talent personalisieren und Bereiche der Produkts Suite genauer anpassen können.
@@ -44,7 +44,7 @@ Die folgenden Themen enthalten Informationen dazu, wie viele Funktionen in Dynam
 
 -   [Tastenkombinationen](../fin-and-ops/get-started/shortcut-keys.md) - Dieses Thema listet Tastenkombinationen für die US-Tastatur auf. 
 
-### <a name="accessing-information"></a>Zugriff auf Informationen
+## <a name="accessing-information"></a>Zugriff auf Informationen
 Die folgenden Themen erläutern, wie Suchen verwendet werden, und die Such- und Filterfunktionen, um Informationen schnell zu finden. 
 
 -   [Informationen per Suche finden](../fin-and-ops/get-started/use-lookups-to-find-information.md) - In diesem Thema wird gezeigt, wie Suchen Ihnen helfen, schnell den richtigen oder den gewünschten Wert zu finden. Im Thema wird beschrieben, wie Suchen arbeiten und es beinhaltet Tipps, um Sie dabei zu unterstützten, Ihre Nutzung zu optimieren.
