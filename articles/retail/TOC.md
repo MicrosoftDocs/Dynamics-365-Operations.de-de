@@ -31,7 +31,7 @@
 ## [Callcenterkataloge](call-center-catalogs.md)
 ## [Einen Callcenterkatalog erstellen](create-call-center-catalogs.md)
 ## [Betrugswarnungen einrichten](set-up-fraud-alerts.md)
-## [Auftragsabwicklungsoptionen einrichten](set-up-order-processing-options.md)
+## [Einrichten eines Callcenters](set-up-order-processing-options.md)
 ## [Einrichten eines Anschlussprogramms für einen Callcenter](set-up-continuity-program.md)
 ## [Auftragssperren](work-with-order-holds.md)
 ## [Zahlungsoptionen](work-with-payments.md)
@@ -49,6 +49,7 @@
 ## [POS-Vorgänge, online und offline](pos-operations.md)
 ## [Demodaten-Bildschirmlayouts in MPOS/CPOS](demo-data.md)
 ## [Überblick über Produkt- und Debitorensuche in der Verkaufsstelle](POS-search-improvements.md)
+## [Lagersuche in der Verkaufsstelle](product-variants-POS.md)
 ## Hardwareperipheriegeräte
 ### [Einzelhandelsperipheriegeräte – Überblick](retail-peripherals-overview.md)
 ### [Von Microsoft getestete POS-Hardwareperipheriegeräte](microsoft-tested-pos-hardware-peripherals.md)
@@ -96,6 +97,7 @@
 ## [Analyse nach Aktualität, Häufigkeit und finanziellen Gesichtspunkten (RFM) einrichten](set-up-rfm-analysis.md)
 
 # Rabatte und Preisregulierungen
+## [Verwaltung der Einzelhandelsverkaufspreise](price-management.md)
 ## [Preisregulierungen und Rabatte](price-adjustments-discounts.md)
 ## [Die optimale Kombination sich überschneidender Rabatte bestimmen](optimal-combination-overlapping-discounts.md)
 ## [Kanalspezifische Rabatte definieren](define-channel-specific-discounts.md)
@@ -136,17 +138,21 @@
 
 # Personalverwaltung
 ## [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](../talent/departments-jobs-positions.md)
-## [Komponenten einer Stelle einrichten](../talent/create-job.md)
+## [Komponenten eines Einzelvorgangs einrichten](../talent/create-job.md)
 
 # Lokalisierung und rechtliche Funktionen
+## Frankreich
+### [Kassen für Frankreich](localizations/emea-fra-cash-registers.md)
+### [Bereitstellungsrichtlinien für Kassen für Frankreich](localizations/emea-fra-deployment.md)
 ## Indien
-### [GST-Integration für Kassen für Indien](localizations/apac-ind-cash-registers.md)
-### [Bereitstellungsrichtlinien für Kassen für Indien](localizations/apac-ind-loc-deployment-guidelines.md)
+### [GST-Integration für Kassen](localizations/apac-ind-cash-registers.md)
+### [Bereitstellungsrichtlinien für Kassen in Indien](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norwegen
 ### [Kassen für Norwegen](localizations/emea-nor-cash-registers.md)
-### [Bereitstellungsrichtlinien für Kassen für Norwegen](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Bereitstellungsrichtlinien für Kassen in Norwegen](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Schweden
 ### [Kassen für Schweden](localizations/emea-swe-cash-registers.md)
+### [Beispiel zur Retail POS-Integration mit Kontrolleinheiten](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
 # Retail-Aufgaben
 ## [Ein Produkt erstellen](../supply-chain/pim/tasks/create-product.md)
@@ -260,6 +266,7 @@
 ### [E-Commerce-Plattform-SDK](dev-itpro/ecommerce-platform-sdk.md)
 
 ## Zahlungskonnektorerweiterbarkeit
+### [Zahlungsintegration mit einem Zahlungsterminal](dev-itpro/end-to-end-payment-extension.md)
 ### [Zahlungskonnektor und Zahlungsgerät implementieren (Whitepaper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [Zahlungskonnektor bereitstellen](dev-itpro/deploy-payment-connector.md)
 ### [Windows-Installationsprogramm für einen Zahlungskonnektor erstellen](dev-itpro/create-windows-installer-payment-connector.md)
@@ -269,6 +276,7 @@
 ### [Retail SDK-Erweiterbarkeitsbeispiele](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Retail SDK-Paket](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK-Beispiele ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [Erweiterungspunkte für Lieferscheine](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [Kanaldatenbank-(DB)-Erweiterungen](dev-itpro/channel-db-extensions.md)
 ### [CDX-Erweiterbarkeit](dev-itpro/cdx-extensibility.md)
 ### [Auftragsattribute](dev-itpro/order-attributes.md)
