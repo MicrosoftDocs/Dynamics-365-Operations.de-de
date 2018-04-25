@@ -3,7 +3,7 @@ title: Lokalisierung und rechtliche Funktionen
 description: "Dieses Thema enthält eine Liste mit Ressourcen, durch die Sie mehr über länder-/regionsspezifische Funktionalität erfahren können."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 04/12/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
-ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
 ms.contentlocale: de-de
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokalisierung und rechtliche Funktionen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations umfasst Funktionen für die im [Internationales Produktverfügbarkeitshandbuch](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) angegebenen Länder/Regionen. Diese Funktionalität wird auf Grundlage der primären Adresse der aktiven juristischen Person aktiviert. 
 
@@ -53,11 +52,11 @@ Die folgenden Ressourcen enthalten Informationen zu geplanten und neuen Lokalisi
 -   [Rechtliche Überwachung und rechtliche Updatekommunikation](regulatory-watch-communication.md)
 -   [Microsoft zu Landes-/Regionsbestimmungswarnungen informieren und den Status von rechtlichen Funktionen nachverfolgen](submit-localization-alerts.md)
 
-### <a name="dynamics-365-roadmap"></a>Produktplan für Dynamics 365
-Im [Produktplan für Dynamics 365](https://roadmap.dynamics.com/) finden Sie eine Übersicht über unsere aktuellen Fortschritte. Verwenden Sie diesen Produktplan, um zu erfahren, welche Funktionen zur allgemeinen Verfügung stehen und welche sich in der Entwicklung befinden. Alle Daten und Funktionen, die sich in der Entwicklung befinden, sind vorläufig, basieren auf aktuellen Erwartungen und können ohne vorherige Ankündigung geändert werden.
+### <a name="dynamics-365-release-notes"></a>Dynamics 365-Versionshinweise
+Die [Dynamics 365-Versionshinweise (PDF-Download)](https://aka.ms/businessappsreleasenotes) enthalten Beschreibungen der neuen und erweiterten Funktionen in Dynamics 365-Geschäftsanwendungen und -Anwendungsplattformen. 
 
 ## <a name="electronic-reporting"></a>Elektronische Berichterstellung
-Das Tool für die „Elektronische Berichterstellung” (ER) ermöglicht es Ihnen, Formate für elektronische Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen zu konfigurieren. ER ermöglicht Ihnen, diese Formate während ihres Lebenszyklus zu verwalten. Weitere Informationen finden Sie unter einem der folgenden Themen:
+Das Tool für die „Elektronische Berichterstellung“ (ER) ermöglicht es Ihnen, Formate für elektronische Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen zu konfigurieren. ER ermöglicht Ihnen, diese Formate während ihres Lebenszyklus zu verwalten. Weitere Informationen finden Sie unter einem der folgenden Themen:
 -   [Überblick über die elektronische Berichterstellung](../analytics/general-electronic-reporting.md)
 -   [Den Lebenszyklus der elektronischen Berichterstellungskonfiguration verwalten](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
 -   [Eine Elektronische Berichterstellungskonfiguration erstellen](../analytics/electronic-reporting-configuration.md)
@@ -77,27 +76,11 @@ Weitere Informationen finden Sie unter [Aufgabenleitfäden](../../fin-and-ops/ge
 
 
 ## <a name="countryregion-specific-help-topics"></a>Landes-/regionsspezifische Hilfethemen
-Die folgenden Abschnittslistenressourcen nach Land/Region.
+Die folgenden Abschnitts enthalten Ressourcen nach Land/Region.
 
-### <a name="australia"></a>Australien
-
--   [Bankdateiformate](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
--   [Australischer Geschäftsvorgangsbericht (Business Activity Statement) ](../../financials/localizations/apac-aus-business-activity-statement.md)
--   [Low-Value-Poolabschreibung (AU)](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-
-### <a name="austria"></a>Österreich
-
-- [Halbjahresabschreibung](../../financials/localizations/emea-aut-half-year-depreciation.md)
-- [Verpackungsmaterialgebühren](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-- [Einkaufsaufgaben](../../financials/localizations/emea-aut-purchase-duties.md)
-- [MwSt.-Abrechnung](../../financials/localizations/emea-aut-vat-statement-details.md)
-
-### <a name="belgium"></a>Belgien
-
--   [CODA-Bankauszug](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
--   [Intervat-Steuererklärung](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
--   [PRODCOM-Berichtseinrichtung](../../financials/localizations/emea-bel-prodcom-report.md)
--   [Abstimmungsbericht](../../financials/localizations/emea-bel-reconciliation-reports.md)
+### <a name="australiafinancialslocalizationsaustraliamd"></a>[Australien](../../financials/localizations/australia.md)
+### <a name="austriafinancialslocalizationsaustriamd"></a>[Österreich](../../financials/localizations/austria.md)
+### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[Belgien](../../financials/localizations/belgium.md)
 
 ### <a name="brazil"></a>Brasilien
 
@@ -134,22 +117,9 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 -   [Bestandshauptkonten nach Standort buchen](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
 -   [Soll- und Habenbeträge für Sachkonten anzeigen](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
-### <a name="the-czech-republic"></a>Die Tschechische Republik
-
--   [Skonto für Gutschrift](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
--   [Abschreibungsrundung](../../financials/localizations/emea-cze-depreciation-rounding.md)
--   [Halbjährliche Abschreibung auf Anlageveräußerungen für die Tschechische Republik](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
--   [Abschreibungsunterbrechung (holidays.md)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
--   [Anlagenabschreibungsmethoden für die Tschechische Republik](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
--   [Den vor der Anschaffung bestehenden Wert einer Anlage buchen](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
--   [MwSt.-Abrechnung für die Tschechische Republik](../../financials/localizations/emea-cze-vat-statement-details.md)
--   [Mehrwertsteuererklärung ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
--   [Perioden in periodischen Erfassungen teilen](../../financials/localizations/emea-create-post-periodic-journals.md)
--   [Signaturgeber für Druckformulare einrichten](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
--   [Aktualisieren, wie Beträge in Berichten und Dokumenten angezeigt werden](../../financials/localizations/emea-amount-printing-forms.md)
+### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Die Tschechische Republik](../../financials/localizations/czech-republic.md)
 
 ### <a name="estonia"></a>Estland
-
 -   [MwSt.-Abrechnung für Estland](../../financials/localizations/emea-est-vat-statement-details.md)
 -   [Anlagenveräußerung](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
@@ -280,7 +250,7 @@ Die folgenden Abschnittslistenressourcen nach Land/Region.
 -   [Inflationsanpassungs-Erklärungsbericht](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 -   [ISR-Erklärungsbericht](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
 -   [Elektronische Rechnungen (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-   
+
 ### <a name="malaysia"></a>Malaysia
 
 -   [Steuern auf Waren und Dienstleistungen (GST)](../../financials/localizations/apac-mys-gst.md)

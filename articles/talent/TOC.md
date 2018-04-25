@@ -3,7 +3,7 @@
 # [Erste Schritte](talent-get-started.md)
 ## [Systemanforderungen und Updaterichtlinie](talent-versions-update-policy.md)
 ## [Microsoft Dynamics 365 for Talent bereitstellen](provisioning-talent.md)
-## [Talent-Umgebung entfernen](remove-test-environment.md)
+## [Talent-Umgebung entfernen](remove-talent-environment.md)
 ## [Bereitstellen von Microsoft Dynamics 365 for Talent – Modulare Apps](modular-app-tech-faq.md)
 ## [Talentfunktionalität erweitern](extend-talent-functionality.md)
 
@@ -13,6 +13,7 @@
 ## [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md)
 ## [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](set-up-company-specific-hr-parameters.md)
 ## [Personalaktivitäten – FAQ](personnel-actions-faq.md)
+## [Geschäftsprozesse formalisieren](formalize-business-processes.md)
 ## [Workflow zum Verwalten von Mitarbeiterinformationen verwenden](workflow-manage-employee-information.md)
 ## [Urlaubs- und Abwesenheitsübersicht](leave-absence-overview.md)
 
