@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 57fc1c21394d91f6a8bd4726c9d948c8ae2cf4d0
+ms.sourcegitcommit: 8af424d1a1ce41316008649472c2b8748806c6d6
+ms.openlocfilehash: 0a76417e01b67b493b320973c14e059850ab772e
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/25/2018
 
 ---
 
@@ -52,16 +52,12 @@ ms.lasthandoff: 04/13/2018
 
 <span data-ttu-id="21ffb-116">Im Abschnitt **Tabellarische Listen** wird der Status der Rechnungsstellung auf ähnliche Weise aufgeteilt, wie die Zusammenfassung der Kacheln: Entwurfs- und übermittelte nicht genehmigte Listen.</span><span class="sxs-lookup"><span data-stu-id="21ffb-116">In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists.</span></span> <span data-ttu-id="21ffb-117">Im Entwurfstatus kann eine Rechnung an einen Workflow gesendet oder gelöscht werden.</span><span class="sxs-lookup"><span data-stu-id="21ffb-117">While in the Draft state, an invoice can be submitted to workflow or deleted.</span></span> <span data-ttu-id="21ffb-118">Die letzte tabellarische Liste ist eine Möglichkeit, Rechnungen zu suchen.</span><span class="sxs-lookup"><span data-stu-id="21ffb-118">The last tabular list is an option to find invoices.</span></span> <span data-ttu-id="21ffb-119">Sie können Ihre Suche filtern, um schnellere Suchen zuzulassen.</span><span class="sxs-lookup"><span data-stu-id="21ffb-119">You can filter as you search, to allow for faster searches.</span></span>
 
-<a name="all-vendor-invoices-list-page"></a><span data-ttu-id="21ffb-120">Listenseite "Alle Kreditorenrechnungen"</span><span class="sxs-lookup"><span data-stu-id="21ffb-120">All vendor invoices list page</span></span>
------------------------------
+### <a name="all-vendor-invoices-list-page"></a><span data-ttu-id="21ffb-120">Listenseite "Alle Kreditorenrechnungen"</span><span class="sxs-lookup"><span data-stu-id="21ffb-120">All vendor invoices list page</span></span>
 
 <span data-ttu-id="21ffb-121">Sie können alle gebuchten und nicht gebuchten Kreditorenrechnungen auf der Listenseite **Kreditor-Kooperationsrechnungen** anzeigen.</span><span class="sxs-lookup"><span data-stu-id="21ffb-121">You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page.</span></span> <span data-ttu-id="21ffb-122">Sie können mit dieser Listenseite den Zahlungsstatus der Rechnungen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="21ffb-122">You can use this list page to view the payment status of the invoices.</span></span> <span data-ttu-id="21ffb-123">Der Zahlungsstatus enthält " Nicht gebuicht, unbezahlt, teilweise bezahlt und vollständig bezahlt.</span><span class="sxs-lookup"><span data-stu-id="21ffb-123">The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.</span></span>
 <span data-ttu-id="21ffb-124">Eine neue Rechnung aus einer Bestellung erstellen</span><span class="sxs-lookup"><span data-stu-id="21ffb-124">Creating a new invoice from a purchase order</span></span>
---------------------------------------------
 
 <span data-ttu-id="21ffb-125">Sie können eine neue Kreditorenrechnung erstellen, indem Sie die Aktivität **Neu** für den Arbeitsbereich **Kreditorenzusammenarbeitrechnungsstellung** auswählen.</span><span class="sxs-lookup"><span data-stu-id="21ffb-125">You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace.</span></span> <span data-ttu-id="21ffb-126">Die Bestellnummer und die Rechnungsnummer müssen vom Kreditor angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="21ffb-126">The purchase order number and invoice number must be provided by the vendor.</span></span> <span data-ttu-id="21ffb-127">Standardmäßig werden alle Positionen aus der Bestellung des neuen Kreditors auf der Rechnung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="21ffb-127">By default, all of the lines from the vendor's purchase order will appear on the new invoice.</span></span> <span data-ttu-id="21ffb-128">Die Menge und die Kostendaten können vor dem Versenden der Kreditorenrechnung an den Workflow verarbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="21ffb-128">The quantity and cost information can be edited prior to submitting the vendor invoice to workflow.</span></span> <span data-ttu-id="21ffb-129">Sie können Dateien, Hinweise, Bilder und URLs einer Rechnung zuordnen, bevor Sie diese senden.</span><span class="sxs-lookup"><span data-stu-id="21ffb-129">You can attach files, notes, images, and URLs to an invoice before submitting it.</span></span>
-
-
 
 <span data-ttu-id="21ffb-130">Weitere Informationen finden Sie unter [Lieferantenzusammenarbeiten mit externen Kreditoren](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)</span><span class="sxs-lookup"><span data-stu-id="21ffb-130">For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)</span></span>
 
