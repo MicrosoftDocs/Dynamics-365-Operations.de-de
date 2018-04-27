@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="practice-manager-power-bi-content"></a>Power BI-Inhalt des Practice Manager
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, was im Microsoft Power Bl-Inhalt des **Practice Manager** enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
@@ -118,7 +118,9 @@ In den folgenden Abschnitten werden die aggregierten Messungen, die in jeder Ent
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Entität: ProjectAccountingCube\_TotalEstimatedCosts 
 **Datenquelle:** ProjTable
 
-| Zentrale aggregierte Messungen       | Feld               | Beschreibung |
-|---------------------------------|---------------------|-------------|
+
+|    Zentrale aggregierte Messungen    |        Feld        |                                          Beschreibung                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | Geplante Kosten für abgeschlossene Aktivität | Sum(TotalCostPrice) | Der Gesamteinstandspreis in Vorkalkulationen für alle Projektbuchungsarten mit abgeschlossenen Aufgaben. |
+
 

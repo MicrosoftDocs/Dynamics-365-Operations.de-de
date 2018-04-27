@@ -26,9 +26,9 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="custom-fields"></a>Benutzerdefinierte Felder
 
-[!include[banner](../includes/banner.md)] 
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 Während Microsoft Dynamics 365 for Finance and Operations einen umfangreichen Satz von vorkonfigurierten Feldern bietet, um eine große Bandbreite von Geschäftsprozessen zu verwalten, besteht manchmal für ein Unternehmen der Bedarf, zusätzliche Informationen im System nachzuverfolgen. Um diese Anforderung zu erfüllen, ermöglicht es Finance and Operations Ihnen, benutzerdefinierte Felder zu erstellen, um die Anwendung so anzupassen, dass sie zu Ihrem Unternehmen passt, vorausgesetzt Sie haben Berechtigungen für die Funktion. 
 

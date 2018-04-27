@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
-ms.openlocfilehash: b23883c1f66cda8a719db64a2f50e00605f6bfe9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f4b70f1aee6b0b55a41dbfd33fcd1216579bb78c
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-reporting-for-finance-and-operations"></a>Finanzberichterstellung für Finance and Operations
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Die Finanzberichterstellung für Finance and Operations ermöglicht Finanz- und Geschäftsexperten Finanzaufstellungen zu erstellen, zu verwalten, bereitzustellen und anzuzeigen. Es bewegt sich über die traditionellen Berichtseinschränkungen hinaus, um effizient verschiedene Arten von Berichten zu entwerfen.
 
@@ -40,7 +39,7 @@ Die Seite **Rechnungslegungseinstellung** enthält eine Liste aller Finanzdimens
 
 Die Seite **Rechnungslegungseinstellung** enthält zwei Abschnitte, die die Daten bestimmen, die Sie in der Finanzberichterstellung melden:
 
-•   **Dimensionsregisterkarte** - Weil verschiedene Unternehmen verschiedene Dimensionen und Kontostrukturen verwenden, besteht keine Möglichkeit, den Auftrag zu bestimmen, in dem Benutzer alle enthaltenen Finanzdimensionen auf Berichten angezeigt werden sollen. Mit dieser Seite können Sie den Auftrag festlegen, in dem Sie Finanzdimensionen anzeigen möchten,  wenn Sie einen Bericht in der Finanzberichterstellung erstellen und anzeigen.
+•   **Dimensionsregisterkarte** - Weil verschiedene Unternehmen verschiedene Dimensionen und Kontostrukturen verwenden, besteht keine Möglichkeit, den Auftrag zu bestimmen, in dem Benutzer alle enthaltenen Finanzdimensionen auf Berichten angezeigt werden sollen. Mit dieser Seite können Sie den Auftrag festlegen, in dem Sie Finanzdimensionen anzeigen möchten, wenn Sie einen Bericht in der Finanzberichterstellung erstellen und anzeigen.
 
 •   **Attributregisterkarte**, in dem Sie auswählen können, ob die Fähigkeit wünschen, **Kreditoren** und **Debitoren** als Attribut für das Filtern und Erstellen von Berichten zu verwenden. Das Erstellen einer Fertigmeldung in "Kreditoren" und in " Debitoren ist nur wertvoll, wenn Sie nicht mehrere Kreditoren oder Debitoren in einem einzelnen Dokument eingeben, wenn Sie Posten buchen. Kreditor und/oder Debitors werden zusätzliche Zeit der Integration hinzufügen.
 
@@ -87,8 +86,8 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 <td>Interaktive Berichtsanzeige</td>
 <td>Mit interaktiven Funktionen können Sie die folgenden Aufgaben ausführen:
 <ul>
-<li>Ändern Sie das Berichtsdatum des Berichts, den Sie anzeigen möchten.</li>
-<li>Ändern Sie die Währung des Berichts, den Sie anzeigen möchten.</li>
+<li>Ändern Sie das Berichtsdatum des Berichts, den Sie anzeigen.</li>
+<li>Ändern Sie die Währung des Berichts, den Sie anzeigen.</li>
 <li>Zeigen Sie den Berichts in einer Übersichts- oder detaillierten Ansicht an.</li>
 <li>Fügen Sie Dimensionsfilter hinzu, um Berichtsinhalte auf eine bestimmte Dimension oder eine Kombination aus Dimensionen zu begrenzen.</li>
 <li>Fügen Sie Attributfilter hinzu, um Berichtsinhalte auf ein bestimmtes Attribut oder eine Kombination aus Attributen zu begrenzen.</li>

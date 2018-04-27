@@ -19,16 +19,18 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Budgetplanungsintegration in andere Module
 
-[!include[banner](../includes/banner.md)] Budgetpläne können aus mehreren unterschiedlichen Ressourcen generiert werden. Die grundlegenden Elemente für den periodischen Prozess sind die gleichen für alle Ressourcen. 
+[!INCLUDE [banner](../includes/banner.md)]
+
+Budgetpläne können aus mehreren unterschiedlichen Ressourcen generiert werden. Die grundlegenden Elemente für den periodischen Prozess sind die gleichen für alle Ressourcen. 
 
 
 
@@ -66,7 +68,7 @@ Bei allen Prozessen können die Registerkarte **Quelle** Daten filtern, indem di
 
 Das Feld **Gesamtsumme nach** oben auf der Seite bestimmt auch das Datum, das verwendet wird. In diesem Feld werden die Summen zusammengezählt, und optional wird das Gültigkeitsdatum auf den ersten Tag des Geschäftsjahrs oder des Finanzzeitraums festgelegt. 
 
-Viele der Felder der Registerkarte **Vorgabe** werden bearbeitbar oder schreibgeschützt, abhängig von der Aktivität, die Sie auswählen. Wenn Sie vom Erstellen eines neuen Budgetplans zum Aktualisieren eines vorhandenen Plans wechseln, ist das Feld **Budgetplanname** nicht verfügbar und die Felder, die dem Auswählen eines vorhandenen Plans zugeordnet sind, sind verfügbar. Auf den Registerkarten **Vorgabe** und **Quelle** ist das Feld **Sachkonto** nie verfügbar, da der Wert vom ausgewählten Budgetplanungsprozess bestimmt wird. 
+Viele der Felder der Registerkarte <strong>Vorgabe</strong> werden bearbeitbar oder schreibgeschützt, abhängig von der Aktivität, die Sie auswählen. Wenn Sie vom Erstellen eines neuen Budgetplans zum Aktualisieren eines vorhandenen Plans wechseln, ist das Feld <strong>Budgetplanname</strong> nicht verfügbar und die Felder, die dem Auswählen eines vorhandenen Plans zugeordnet sind, sind verfügbar. Auf den Registerkarten <strong>Ziel</strong> und <strong>Quelle **ist das Feld **Sachkonto</strong> nie verfügbar, da der Wert vom ausgewählten Budgetplanungsprozess bestimmt wird. 
 
 Im Feld **Budgetklasse** können Sie die Haushaltsplanpositionen entweder als Ausgabenbuchungen oder Umsatzerlösbuchungen festlegen. Normalerweise sind Umsatzerlösbuchungen Habenbeträge auf einem Sachkonto und werden daher als negative Beträge gespeichert. In der Regel werden diese Buchungen auch als negative Beträge im Budgetplan angezeigt. Indem Sie die Budgetklasse jedoch als Feld im Planlayout hinzufügen, können Sie festlegen, dass der Umsatzerlös als positive Beträge angezeigt wird.
 
@@ -111,7 +113,7 @@ Es gibt kein Feld **Budgetklasse**, da die Budgetklasse (**Ausgaben** oder **Ums
 
 Sie können Projektbudgets als Quelle nutzen, indem Sie das Planzahlenmodell auswählen, das die Projektbudgetbeträge enthält. Bedenken Sie, dass Projektbudgets Projektplanungseinträge erstellen, während diese genehmigt werden.
 
-Um nur Kosten oder Umsatzerlöse für Budgetplanpositionen auszuwählen, verwenden Sie den Filter, um **Budgetaktualisierungen: Betragsart = Kosten** auszuwählen. Um nur einen Typ der Planung auszuwählen, verwenden Sie den Filter, um **Budgetaktualisierungen: Buchungsart = *xxx*** auszuwählen. 
+Um nur Kosten oder Umsatzerlöse für Budgetplanpositionen auszuwählen, verwenden Sie den Filter, um <strong>Budgetaktualisierungen: Betragsart = Kosten</strong> auszuwählen. Um nur einen Typ der Planung auszuwählen, verwenden Sie den Filter, um <strong>Budgetaktualisierungen: Buchungsart = *xxx</strong>* auszuwählen. 
 
 Es kann nur ein Planzahlenmodell verwendet werden, um ein Budgetplanszenario zu generieren. Wenn Sie den Prozess für ein Planzahlenmodell ausführen und dann eine Aktualisierung ausführen und versuchen, ein anderes Modell anzugeben, wird das erste Modell überschrieben, wenn das gleiche Projekt und die gleichen Sachkonten gelten. Wenn Sie ein Budgetplanszenario aus mehr als einem Planzahlenmodell generieren möchten, generieren Sie in verschiedene Budgetplanszenarien, und verwenden Sie Zuteilungsoptionen, um sie in einem anderen Szenario zu addieren. 
 

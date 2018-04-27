@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Einen zugehörigen Intercompany-Beleg aus einer Erfassung anzeigen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Im dazugehörige Belegfenster wird der Beleg aus dem Unternehmenskonto angezeigt, wenn eine Intercompany Buchung aus der allgemeinen Erfassung gebucht wird.
 

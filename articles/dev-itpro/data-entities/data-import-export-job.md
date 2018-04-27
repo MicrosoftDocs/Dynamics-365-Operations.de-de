@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a>Einzelvorgänge für Datenimport und -export
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Um Datenimport- und Datenexporteinzelvorgänge in Microsoft Dynamics 365 for Finance and Operations zu erstellen und zu verwalten, verwenden Sie den Arbeitsbereich **Datenverwaltung**. Standardmäßig der Datenimport und der Exportvorgang eine für jede Stagingtabelle Entität in der Zieldatenbank erstellt. Mit Stagingtabellen können Sie Daten prüfen, bereinigen oder konvertieren, bevor Sie diese verschieben.
 
@@ -55,7 +55,7 @@ Die verbleibenden Themen enthalten zusätzliche Details für jeden Schritt des P
 > Um das Exportformular Datenimport/export zu aktualisieren um den aktuellen Status anzuzeigen, verwenden Sie das Formularaktualisierungssymbol. Die Aktualisierung des Browsers wird nicht empfohlen, da alle Import-/Exporteinzelvorgänge unterbrochen werden, die nicht in Stapelverarbeitung ausgeführt werden.
 
 ## <a name="create-an-import-or-export-job"></a>Erstellen eines Import- oder Exportvorgangs
-Ein  Datenimport- oder Exportvorgang kann einmal oder mehrmals ausgeführt werden.
+Ein Datenimport- oder Exportvorgang kann einmal oder mehrmals ausgeführt werden.
 
 ### <a name="define-the-project-category"></a>Projektkategorie definieren
 Es wird empfohlen, Zeit zu nehmen, um eine entsprechende Projektkategorie für den Import- oder Exportvorgang zu wählen. Projektkategorien können helfen, zugehörige Einzelvorgänge zu verwalten.
@@ -64,13 +64,15 @@ Es wird empfohlen, Zeit zu nehmen, um eine entsprechende Projektkategorie für d
 Sie können bestimmte Entitäten einem Import- oder Exportvorgang hinzufügen oder eine Vorlage auswählen, die übernommen werden soll. Vorlagen füllen einen Einzelvorgang mit einer Liste von Entitäten aus. Die Option **Vorlage anwenden** ist verfügbar, wenn Sie dem Einzelvorgang einen Namen geben und den Einzelvorgang speichern.
 
 ### <a name="set-the-data-format-for-the-job"></a>Legen Sie das Datenformat für den Stapelverarbeitungsauftrag fest.
-Wenn Sie eine Einheit auswählen, müssen Sie die Verpackungseinheiten das Format der Daten auswählen, die exportiert oder importiert werden. Sie legen Formate fest, indem Sie die Kachel **Datenquelleneinstellung** verwenden. Viele Organisationen beginnen  mit den Formaten, die standardmäßig im Demodatsatz enthalten sind. Das hier eine Liste mit einigen dieser Formate:
+Wenn Sie eine Einheit auswählen, müssen Sie die Verpackungseinheiten das Format der Daten auswählen, die exportiert oder importiert werden. Sie legen Formate fest, indem Sie die Kachel **Datenquelleneinstellung** verwenden. Ein Quelldatenformat ist eine Kombination aus **Typ**, **Dateiformat**, **Zeilentrennzeichen** und **Spaltentrennzeichen**. Es gibt auch andere Attribute, aber diese sind die Wesentlichen, die man verstehen sollte. In der folgenden Tabelle werden die gültigen Kombinationen aufgeführt.
 
-- AX (für Daten, die im gleichen Format importiert oder exportiert werden müssen, die für Microsoft Dynamics 365 for Finance and Operations) verwendet werden.
-- ColonSeparated
-- CSV
-- Excel
-- Paket
+| **Dateiformat**        | **Zeilen-/Spaltentrennzeichen**                   | **XML-Stil**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-k. A.-                     |
+| XML                    | \-k. A.-                                      | XML-Element XML-Attribut |
+| Mit Trennzeichen, fest mit | Komma, Semikolon, Registerkarte, senkrechter Strich, Doppelpunkt | \-k. A.-                     |
+
+
 
 ### <a name="sequence-the-entities"></a>Sequenz der Entitäten
 Entitäten können in einer Datenvorlage in den Serverkonfigurationsdateien oder im Import- und Exporteinzelvorgang sequenziert werden. Wenn Sie einen Einzelvorgang ausführen, der mehr als eine Datenentität enthält, müssen Sie prüfen, ob die Datenentitäten ordnungsgemäß geordnet werden. Sie ordnen die Entitäten hauptsächlich so, dass Sie beliebige funktionalen Abhängigkeiten unter den Entitäten adressieren können. Wenn Entitäten keine funktionalen Abhängigkeiten haben, können Sie diese für Parallelimport oder Export planen.
@@ -83,7 +85,7 @@ Die Ausführungseinheit, die Ebene in der Ausführungseinheit und die Sequenz de
 - Auf ejder Stufe werden Entitäten entsprechend der Sequenznummer in dieser Ebene verarbeitet.
 - Nachdem eine Ebene verarbeitet wurde, wird die nächste Ebene verarbeitet.
 
-#### <a name="resequencing"></a>Neue Reihenfolge 
+#### <a name="resequencing"></a>Neue Reihenfolge
 Möglicherweise empfiehlt es sich, die Entitäten in den folgenden Situationen neu zu ordnen:
 
 - Wenn nur ein Datenenvorgang für alle Änderungen verwendet wird, können Sie die Optionen neu verwenden, um die Ausführungszeit des vollständigen Einzelvorgang zu optimieren. In diesen Fällen kann die Ausführungseinheit verwendet werden, um das Modul darzustellen, die Schichten im Funktionsbereich im Modul anzugeben und den Nummernkreis der zu zeigen. Wenn Sie diesen Ansatz verwenden, können Sie in allen Modulen parallel arbeiten, aber trotzdem in der Sequenz in einem Modul arbeiten. Zur Sicherstellung einer korrekten Erfassung , dass parallele Arbeitsgänge erfolgreich sind, müssen Sie alle Abhängigkeiten berücksichtigt.

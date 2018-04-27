@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-production-flow-version"></a>Eine Produktionsflussversion erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ziel dieser Prozedur ist es, eine neue Produktionsflussversion zu erstellen. Für diese Prozedur müssen die Produktionsparameter für Lean Manufacturing und die Messungseinheiten der Klasse "Zeit" definiert werden. Sie müssen auch einen Wertstrom und eine Produktionsgruppe definieren. Weitere Informationen zu Produktionsflüssen und Aktivitäten im Lean Manufacturing, finden Sie im Whitepaper Lean Manufactoring für Microsoft Dynamics AX. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

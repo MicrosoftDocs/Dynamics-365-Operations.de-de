@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mass-hire-projects"></a>Masseneinstellungsprojekte
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Masseneinstellungsprojekte ermöglichen dem Personalverwaltungsspezialisten mehrere Positionen zu erstellen und effektiv mehrere Arbeitskräfte für diese Positionen einzustellen.
 
@@ -94,7 +93,7 @@ Klicken Sie auf der Seite **Masseneinstellungsprojekt** auf **Projekt öffnen** 
 </tbody>
 </table>
 
- 
+
 
 
 

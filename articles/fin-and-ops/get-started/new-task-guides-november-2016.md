@@ -18,21 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7c3ecbfaa4e45401b8c4fffe7e7639da9e0474e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3db07708df55c24108c66797885318486b2b1003
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-november-2016"></a>Neue oder aktualisierte Aufgabenleitfäden (November 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (November 2016 -- alle Sprachen) für Microsoft Dynamicx 365 for Operations auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht.
 
-Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitfäden zur Unterstützung mit Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations Platform Update 3, Microsoft Dynamics AX Platform Update 2, Dynamics AX May 2016 Update und Microsoft Dynamics AX February 2016 Release. Weitere Informationen zu diesen Versionen, finden Sie unter [Was ist neu oder geändert](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md). **Hinweis:** Das Sternchen (**\***) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass die Aufgabe für diesen Geschäftsprozess für Dynamics 365 for Operations November 2016 erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
+Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitfäden zur Unterstützung mit Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations Platform Update 3, Microsoft Dynamics AX Platform Update 2, Dynamics AX May 2016 Update und Microsoft Dynamics AX February 2016 Release. Weitere Informationen zu diesen Versionen, finden Sie unter [Was ist neu oder geändert](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md). <strong>Hinweis:</strong> Das Sternchen (<strong>\</strong>*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass der Aufgabenleitfaden für diesen Geschäftsprozess für Dynamics 365 for Operations, Update von November 2016, erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
 
 ### <a name="accounts-payable"></a>Kreditorenkonten
 
@@ -139,192 +138,192 @@ Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitf
 
 ### <a name="countryregion-functionality"></a>Land/Region-Funktion
 
-| BPM-Zeile                                                                                                                             | Land/Region                    |
-|--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Fügen Sie BAS-Berichtsfelder hinzu und Generieren des Australien-Geschäftsvorgangsberichts (Business Activity Statement) BAS                                                    | Australien und Neuseeland         |
-| Ursachencodes für eine Streitigkeit einrichten                                                                                                | Australien und Neuseeland         |
-| **\***Anschlussprüfung für chinesische Belege                                                                                               | China                             |
-| **\***CN-00010 China Hierarchie des Kontenplans                                                                                  | China                             |
-| **\***CN-00016 Teilnehmerbetriebsprotokoll nach Arbeitsregel Chinas                                                                              | China                             |
-| **\***Golden-Tax-Integrationsexporteinrichtung                                                                                            | China                             |
-| **\***Buchen von Belegen aus anderen Modulen wie z. B. Verkaufsrechnungen                                                                          | China                             |
-| **\***Buchen von Belegen über die allgemeinen Erfassung                                                                                         | China                             |
-| **\***Einrichten von grundlegenden Steuerintegrationsprofilen für China                                                                                 | China                             |
-| **\***Einrichten von chinesischen Belegen                                                                                                        | China                             |
-| Erstellen und Buchen einer Debitorenrechnung für einen Debitor des öffentlichen Sektors                                                                      | Dänemark                           |
-| Erstellen und Buchen einer Freitextrechnung für einen Debitor des öffentlichen Sektors                                                                     | Dänemark                           |
-| Erstellen und Buchen einer Projektrechnung für einen Debitor des öffentlichen Sektors                                                                       | Dänemark                           |
-| DK-00007 FIK 752 Giro-Überweisungsbeleg/Buchen einer Freitextrechnung mit einem Zahlungsbeleg                                               | Dänemark                           |
-| DK-00007 FIK 752 Giro-Überweisungsbeleg/Buchen einer Projektrechnung mit einem Zahlungsbeleg                                                 | Dänemark                           |
-| Konfigurationen der elektronischen Fakturierung des Imports OIOUBL                                                                                    | Dänemark                           |
-| Einrichten von Debitorenkonten für die elektronische Fakturierung per OIOXML                                                                             | Dänemark                           |
-| Einrichten der elektronischen OIOUBL-Rechnungsstellung                                                                                                   | Dänemark                           |
-| Richten Sie ein Exportformat für Zahlungen ein.                                                                                                           | Dänemark                           |
-| **\***EEU-00047 Vorauszahlung an Mitarbeiter                                                                                          | Osteuropa                    |
-| Erstellen und Exportieren von Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats                                                                      | Europa                            |
-| Erstellen von Zahlungen für Debitoren, die Direktbelastungseinzugsermächtigungen haben                                                                          | Europa                            |
-| **\***EE-00015 Zahlungsreferenzgenerierungstool                                                                                     | Europa                            |
-| EUR-00002 Generieren Sie eine EU-Intrastat-Meldung                                                                                       | Europa                            |
-| **\***EUR-00002 - Angeben einer Ladungsadresse für eine Innergemeinschaftliche Buchung                                                          | Europa                            |
-| EUR-00002 Übertragen Sie Transaktionen an den Intrastat                                                                                     | Europa                            |
-| EUR-00011 Bericht 'Zusammenfassende Meldung' generieren                                                                                          | Europa                            |
-| EUR-00011 Zusammenfassende Meldung einrichten                                                                                             | Europa                            |
-| EUR-00012 Ausstellen einer EU-Gelangensbestätigung                                                                                              | Europa                            |
-| EUR-00012 Erhalt einer EU-Gelangensbestätigung                                                                                            | Europa                            |
-| **\***EUR-00015 Suche nach Partei per MwSt.-Kennung                                                                                            | Europa                            |
-| **\***EUR-00015 Registrierung der Kreditor-MwSt.-Kennung                                                                                        | Europa                            |
-| **\***EUR-00015 Einrichtung der MwSt Kennung                                                                                                        | Europa                            |
-| **\***HU-00001 Wechselkursberechnung                                                                                             | Europa                            |
-| Banküberweisungskonfiguration des Imports ISO20022                                                                                        | Europa                            |
-| ISO20022-Direktbelastungskonfiguration importieren                                                                                           | Europa                            |
-| **\***LT-00003 Umlagerungsdokument für Warenbewegung innerhalb des Unternehmens bzw. wird ein Umlagerungsdokument für eine interne Umlagerung   | Europa                            |
-| **\***LT-00003 Umlagerungsdokument für Warenbewegung innerhalb des Unternehmens bzw. die Einstellungen für Warenbewegung Umlagerungsdokumente innerhalb eines Unternehmens | Europa                            |
-| **\***NO-00002 Debitorenzahlung auf Grundlage Zahlungskennung                                                                                  | Europa                            |
-| Einrichten von Unternehmens-Bankkonten für ISO20022-Überweisungen                                                                           | Europa                            |
-| Einrichten von Unternehmens-Bankkonten für ISO20022-Lastschriften                                                                              | Europa                            |
-| Einrichten von Kunden und Kunden-Bankkonten für ISO20022-Lastschriften                                                               | Europa                            |
-| Einrichten einer Zahlungsmethode für ISO20022-Kreditübertragung                                                                                | Europa                            |
-| Einrichten einer Zahlungsmethode für ISO20022-Direktbelastung                                                                                   | Europa                            |
-| Einrichten von Kreditoren und Kreditorenbankkonten für ISO20022-Überweisungen.                                                                | Europa                            |
-| Zahlungsmethoden des Debitors einrichten                                                                                                | Frankreich                            |
-| FR-00002 Debitoren- und Kreditorenkonto                                                                                                 | Frankreich                            |
-| FR-00003 NAF-Codes und Siret-Nummern.                                                                                                 | Frankreich                            |
-| FR-00004 Erfassung für 'Debitor zieht Wechsel' genehmigen und buchen                                                                                      | Frankreich                            |
-| FR-00004 Französische Wechsel und Solawechsel                                                                               | Frankreich                            |
-| FR-00004 Erfassung zum Protestieren von Wechseln buchen                                                                                  | Frankreich                            |
-| FR-00004 Wechselneuziehungserfassung buchen                                                                                       | Frankreich                            |
-| FR-00004 Zahlungsmethode einrichten                                                                                                     | Frankreich                            |
-| FR-00004 Aktualisieren Sie die Zahlungsmethode für Debitoren                                                                                        | Frankreich                            |
-| FR-00018 Tageszinsberechnung für verspätete Zahlung und Pauschalbetrag in der Rechnung und im Mahnschreiben                               | Frankreich                            |
-| Anpassen der deutschen Protokolldateikonfiguration                                                                                            | Deutschland                           |
-| DE-00002 Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr                                                     | Deutschland                           |
-| DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)                                                                         | Deutschland                           |
-| ER Konfigurieren Sie Ziele                                                                                                            | Deutschland                           |
-| ER Konfigurieren des Formats für Inventuren und Summierungen (Teil 1: Format erstellen)                                                               | Deutschland                           |
-| ER Konfigurieren des Formats für Inventuren und Summierungen (Teil 2: Konfigurieren von Berechnungen)                                                      | Deutschland                           |
-| ER Konfigurieren des Formats für Inventuren und Summierungen (Teil 3: Nutzen von Berechnungen für die Ausgabe)                                         | Deutschland                           |
-| ER Konfigurieren des Formats für Inventuren und Summierungen (Teil 4: Format ausführen)                                                                  | Deutschland                           |
-| ER Konfigurationsanbieter erstellen und als aktiv markieren                                                                             | Deutschland                           |
-| ER Entwerfen einer Konfiguration für das Erstellen von Berichten im Microsoft WORD-Format (November 2016)                                            | Deutschland                           |
-| ER Domänenspezifisches Datenmodell entwerfen (November 2016)                                                                                 | Deutschland                           |
-| ER Import einer Konfiguration von Lifecycle Services                                                                                    | Deutschland                           |
-| ER Upload einer Konfiguration nach Lifecycle Services                                                                                    | Deutschland                           |
-| ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 1:Datenmodell vorbereiten)                                                      | Deutschland                           |
-| ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 2: Datenmodell erweitern)                                                       | Deutschland                           |
-| ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)                                                           | Deutschland                           |
-| ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 4: Format ausführen)                                                              | Deutschland                           |
-| ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 5: Format verändern und ausführen)                                                   | Deutschland                           |
-| ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 1: Designdatenmodell)                                                             | Deutschland                           |
-| ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)                                                                 | Deutschland                           |
-| ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 3: Berichtsentwurf)                                                             | Deutschland                           |
-| ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 4: Berichtsausführung)                                                                | Deutschland                           |
-| ER Horizontal erweiterbare Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten nutzen (Teil 1: Designformat)                            | Deutschland                           |
-| ER Horizontal erweiterbare Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten nutzen (Teil 2: Format ausführen)                               | Deutschland                           |
-| Generieren Sie deutsche Protokolldatei                                                                                                           | Deutschland                           |
-| Deutsche Protokolldateikonfiguration importieren                                                                                               | Deutschland                           |
-| **\***EUR-00018 Mehrwertsteuerabstimmungsbericht                                                                                            | Island                           |
-| IS-00006 Meldung der Kreditorenrechnung/Erstellen eines Kreditorenkontos und Anfügen der Rechnungserklärung verwalten                                       | Island                           |
-| IS-00006 Meldung der Kreditorenrechnung/Einstellungen einer Rechnungserklärung für Kreditoren                                                        | Island                           |
-| IS-00006 Meldung der Kreditorenrechnung/Aktualisierungskreditorenrechnungsmeldungen und Generieren des Berichts                                       | Island                           |
-| Verwalten von Kontenplan/erforderliche Zahlungsreferenzen verwalten                                                                       | Island                           |
-| Erhalten einer Anlage mit Anlagenruhestandsverpflichtungen                                                                              | Japan                             |
-| Eine Anlage beschaffen und dafür den staatlichen Zuschuss beantragen                                                                                 | Japan                             |
-| Regulierung der Anlagenruhestands-Verpflichtungsvorkalkulation                                                                               | Japan                             |
-| Zuweisen Bilanzwert freigegebene Anlage und Goodwill für Bargeld generierende Einheiten                                                   | Japan                             |
-| Abschreibungsmethode ändern während der Nutzungsdauer für eine Anlage                                                                   | Japan                             |
-| Abschreibungsmethode ändern während der Nutzungsdauer für ein Buch                                                                        | Japan                             |
-| Konfigurieren von Sonderabschreibungsparametern und Buchungsprofilen                                                                   | Japan                             |
-| CN-00004 Anlagenabschreibungszuteilung (JP-)                                                                                   | Japan                             |
-| Konfigurieren Sie Abschreibungsprofil und Buchungsprofil für Sonderabschreibung                                                   | Japan                             |
-| Konfigurieren Sie Abschreibungsprofil und Buchungsprofil für Sonderabschreibung                                                      | Japan                             |
-| Konfigurieren Sie Parameter und Einstellungen der konsolidierten Rechnung für Kreditoren                                                             | Japan                             |
-| Konfigurieren Sie Hauptkonten für Anlagenruhestands-Verpflichtungsbuchung und Marktrabattsätze                                            | Japan                             |
-| Erstellen Sie eine Anlage mit Sonderabschreibung                                                                                    | Japan                             |
-| Anlage mit Sonderabschreibungsprofil erstellen                                                                               | Japan                             |
-| Erstellen eines beschleunigten Abschreibungsprofils und Zuweisen zu einem Buch                                                                        | Japan                             |
-| Erstellen Sie ein Sonderabschreibungsdokument und geben Sie Nutzungsdaten ein                                                                     | Japan                             |
-| Dient zum Erstellen und Zuweisen einer Arbeitsgerätegruppe                                                                                                 | Japan                             |
-| Erstellen und Zuweisen eines Reduzierungseintragsdokument                                                                                           | Japan                             |
-| Erstellen und bestätigen Sie eine konsolidierte Kreditorenrechnung                                                                                     | Japan                             |
-| Erstellen und bestätigen Sie einen Anerkennungstest                                                                                                  | Japan                             |
-| Erstellen Sie CGU-Gruppen und Bargeld generierende Einheiten                                                                                          | Japan                             |
-| Erstellen Sie Pauschalsummenabschreibungsanlagen mithilfe der gleichmäßig festgelegten Methode                                                                     | Japan                             |
-| Definieren der Leerlaufperiode der Anlage und überprüfen des Abschreibungsprozesses                                                                           | Japan                             |
-| Anlagen abschreiben und Antizipieren von der Zinsaufwendungen für Anlagenruhestandsverpflichtungen an                                                          | Japan                             |
-| Abschreibung von Anlagen mit dem Reduzierungseintrag gebucht                                                                             | Japan                             |
-| Entsorgen eine Anlage mit Reduzierungseintrag                                                                                        | Japan                             |
-| JBA-Zahlungsdateiformat aktivieren                                                                                                       | Japan                             |
-| Geben Sie Abschreibungsratezeitplan ein und ordnen Sie zum Abschreibungsprofil zu                                                               | Japan                             |
-| Generieren und buchen Sie Zahlungsgebühr                                                                                                        | Japan                             |
-| Generieren Sie eine EFT-Zahlungsdatei im JBA-Format                                                                                     | Japan                             |
-| Generieren Sie Japan-Verbrauchssteuerbericht                                                                                                | Japan                             |
-| Eine Debitorenzahlung mit einem JBA-Dateiformat importieren                                                                                     | Japan                             |
-| Abfragen der Zahlungsgebühr auf Erfassung                                                                                                  | Japan                             |
-| Abfragen der Anlagenruhestands-Verpflichtungszugehörigen buchungen                                                                    | Japan                             |
-| Abfrage auf abzugsfähigen Ausgaben                                                                                                       | Japan                             |
-| JP-00005 Eingabeerfassung in der T-Kontenform (Japan)                                                                                     | Japan                             |
-| JP-00011 Konsolidierte Rechnung - Debitor - Erstellen und Bestätigen Sie eine Debitorenkonsolidierte "Rechnung buchen"                                              | Japan                             |
-| JP-00027 Formular 26 für abschreibungsfähige Steuererklärung                                                                                     | Japan                             |
-| Verwalten von Anlagevermögenmasterdatendateien für abzugsfähige Ausgaben                                                                       | Japan                             |
-| Verwalten von Beeinträchtigungsindikatoren für einzelne Anlagen                                                                                  | Japan                             |
-| Zahlen einer Lieferantenbuchung, indem Sie einen Wechsel des Debitors unterzeichnen                                                                    | Japan                             |
-| Periodisch Ausgleich von Über- und unter Abschreibung                                                                                   | Japan                             |
-| Sonderabschreibung                                                                                                      | Japan                             |
-| Wenden Sie sich vor und buchen Sie Sonderabschreibung                                                                                        | Japan                             |
-| Wenden Sie sich vor und Buchen des Beeinträchtigungsbetrag nach Charge                                                                                      | Japan                             |
-| Wenden Sie sich vor und Buchen des Beeinträchtigungsbetrag, indem Sie Anlagenerfassung verwenden                                                                  | Japan                             |
-| Wenden Sie sich vor und Buchen des Beeinträchtigungsbetrag auf einem Bargeld, das Einheit generiert                                                                     | Japan                             |
-| Sonderabschreibungsprofil                                                                                                         | Japan                             |
-| Erstellen und bestätigen Sie eine konsolidierte Debitorenrechnung                                                                                      | Japan                             |
-| Erstellen und bestätigen Sie eine konsolidierte Debitorenrechnung                                                                                        | Japan                             |
-| Stornieren eines unterzeichneten Wechsel um                                                                                                 | Japan                             |
-| Legt den Anerkennungstest und berechnen Sie den Beeinträchtigungsbetrag für einzelne Anlagen                                                    | Japan                             |
-| Stornieren eines unterzeichneten Wechsel um                                                                                                  | Japan                             |
-| Ausgleichen von Debitorenkonsolidierte rechnungen, indem Sie eine Zahlungserfassung verwenden                                                                     | Japan                             |
-| Ausgleichen von Debitorenkonsolidierte rechnungen, indem Sie eine Zahlungserfassung verwenden                                                                       | Japan                             |
-| Ausgleichen von Debitorenkonsolidierte rechnungen, indem Sie eine Zahlungserfassung verwenden                                                                     | Japan                             |
-| Ausgleichen von Debitorenkonsolidierte rechnungen, indem Sie eine Zahlungserfassung verwenden                                                                     | Japan                             |
-| Richten Sie einen Debitor und einen Auftrag, Ziel der konsolidierter Rechnung werden sollen                                                               | Japan                             |
-| Richten Sie Anlagenruhestands-Verpflichtungsdokumente und geben Sie ARO-Betrag auf einer Anlage ein                                                   | Japan                             |
-| Einrichten von Debitorenrechnungen                                                                                                         | Japan                             |
-| Berechnende häufig verwendete Parameter und Buchungsprofil der Kasseneinstellungsgruppen beeinträchtigung                                                                    | Japan                             |
-| Richten Sie Japan-Zahlung, indem Sie einen Wechsel des Debitors unterzeichnen                                                                         | Japan                             |
-| Einrichten von Masterdaten für das Einbeziehen von abzugsfähigen Ausgaben für mehrere Buchungsebenen                                                  | Japan                             |
-| Generieren Sie Japan-Verbrauchssteuerbericht                                                                                                   | Japan                             |
-| Formular "Einstellungen für Kreditorenzahlungsgebühren" für Japan                                                                                                          | Japan                             |
-| Einrichten von Hauptkreditor und Bestellung, Ziel der konsolidierter Rechnung werden sollen                                                          | Japan                             |
-| Liste mit Anlagenbuchungen generieren                                                                                                   | Japan                             |
-| Verwendung disassembliert Liste für Anlagen                                                                                                | Japan                             |
-| MX-00006 Einrichten eines Mehrwertsteuercodes                                                                                                       | Mexiko-Stadt                            |
-| MX-00007 Debitoren-Registrierungskennungen und andere Informationen                                                                             | Mexiko-Stadt                            |
-| MX-00008: Kreditorenregistrierungs-IDs                                                                                                    | Mexiko-Stadt                            |
-| MX-00010 Elektronische Rechnung stornieren                                                                                                | Mexiko-Stadt                            |
-| MX-00010 E-Rechnungsstellung CFDI                                                                                                            | Mexiko-Stadt                            |
-| MX-00010 Eingeben von Steuerregistrierungskennungen für mexikanische juristische Personen                                                                       | Mexiko-Stadt                            |
-| MX-00010 Abfragen und Drucken einer elektronischen Rechnung                                                                                     | Mexiko-Stadt                            |
-| MX-00010 Freitextrechnung buchen                                                                                                    | Mexiko-Stadt                            |
-| MX-00010 Festlegen von Parametern für eine elektronische Rechnung                                                                                    | Mexiko                            |
-| MX-00020: Mexikanischen elektronischen Sachkontobericht Version 1.1 erzeugen                                                            | Mexiko-Stadt                            |
-| MX-00020 Kontenplan für eine juristische Person in Mexiko einrichten                                                                   | Mexiko                            |
-| MX-00020 – Angeben der RFC-Registrierungs-ID für mexikanische Bankkonten                                                                 | Mexiko                            |
-| Integration von NL-00003 Semansys XBRL                                                                                                   | Niederlande                       |
-| NL-00010 Elektronische Steuererklärung (EVAT)                                                                                          | Niederlande                       |
-| MY-00003 Debitorenlastschrift und ‑gutschrift für GST verwalten                                                                          | Singapur, Malaysia und Thailand |
-| MY-00004 Kreditorenlastschrift und ‑gutschrift für GST verwalten                                                                            | Singapur, Malaysia und Thailand |
-| MY-00005 GST-Steuerrechnungen drucken                                                                                                      | Singapur, Malaysia und Thailand |
-| MY-00006 01 GST-Entlastungsklauseln einrichten                                                                                                | Singapur, Malaysia und Thailand |
-| MY-00006 02 GST-Debitorenrechnungen mit einer Entlastungsklausel drucken                                                                         | Singapur, Malaysia und Thailand |
-| MY-00007 Selbst-berechnete Rechnungen                                                                                                        | Singapur, Malaysia und Thailand |
-| MY-00010 GST - Generieren von GAF-Dateien im benötigten Format                                                                             | Singapur, Malaysia und Thailand |
-| MY-00011 02 Generieren von Debitoren-Lastschrift für Projektumsatz                                                                           | Singapur, Malaysia und Thailand |
-| MY-00011 03 Generieren von Debitoren-Gutschrift für Projektumsatz                                                                          | Singapur, Malaysia und Thailand |
-|  Erstellen einer Bestellung, die Artikel beinhaltet, für die die Mehrwertsteuer für Verlagerung der Steuerschuld gilt                                                            | Vereinigtes Königreich                    |
-|  Erstellen eines Auftrags mit Artikeln, für die Mehrwertsteuer für Verlagerung der Steuerschuld gilt                                                               | Vereinigtes Königreich                    |
-| GB-00002 Einrichten von Artikelgruppen, Regeln und Parametern mit Verlagerung der Steuerschuld                                                                | Vereinigtes Königreich                    |
-| GB-00009 Eine Gutschrift zu dem Ausgleichsrabatt erstellen                                                                             | Vereinigtes Königreich                    |
-| GB-00009 Parameter für Gutschrift zu Skonto einrichten                                                                 | Vereinigtes Königreich                    |
-|  Einrichten von Produkt-Mehrwertsteuergruppen für die Steuerschuldumkehr                                                                                  | Vereinigtes Königreich                    |
-|  Einrichten von Mehrwertsteuergruppen für die Steuerschuldumkehr                                                                                       | Vereinigtes Königreich                    |
+|                                                                     BPM-Zeile                                                                      |          Land/Region           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|                                 Fügen Sie BAS-Berichtsfelder hinzu und Generieren des Australien-Geschäftsvorgangsberichts (Business Activity Statement) BAS                                 |     Australien und Neuseeland     |
+|                                                       Ursachencodes für Geschäftsvorgangsbericht für Australien einrichten                                                       |     Australien und Neuseeland     |
+|                                                <strong>\</strong>*Chinesische Belegkontinuitätsprüfung                                                |               China               |
+|                                         <strong>\</strong>*CN-00010 China Hierarchie des Kontenplans                                          |               China               |
+|                                       <strong>\</strong>*CN-00016 Teilnehmerbetriebsprotokoll nach Arbeitsregel Chinas                                        |               China               |
+|                                              <strong>\</strong>*Chinesische Golden-Tax-Integrationsexporteinrichtung                                               |               China               |
+|                                     <strong>\</strong>*Buchen von Belegen aus anderen Modulen wie z. B. Verkaufsrechnungen                                      |               China               |
+|                                             <strong>\</strong>*Belege aus der allgemeinen Erfassung buchen                                             |               China               |
+|                                         <strong>\</strong>*Grundlegendes Steuerintegrationsprofil für China einrichten                                         |               China               |
+|                                                    <strong>\</strong>*Chinesische Belege einrichten                                                     |               China               |
+|                                          Eine Debitorenrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen                                          |              Dänemark              |
+|                                         Erstellen und Buchen einer Freitextrechnung für einen Debitor des öffentlichen Sektors                                          |              Dänemark              |
+|                                          Erstellen und Buchen einer Projektrechnung für einen Debitor des öffentlichen Sektors                                           |              Dänemark              |
+|                              DK-00007 FIK 752 Giro-Überweisungsbeleg/Buchen einer Freitextrechnung mit einem Zahlungsbeleg                               |              Dänemark              |
+|                               DK-00007 FIK 752 Giro-Überweisungsbeleg/Buchen einer Projektrechnung mit einem Zahlungsbeleg                                |              Dänemark              |
+|                                                 Konfigurationen der elektronischen Fakturierung des Imports OIOUBL                                                 |              Dänemark              |
+|                                             Einrichten von Debitorenkonten für die elektronische Fakturierung per OIOXML                                              |              Dänemark              |
+|                                                        Elektronische OIOUBL-Rechnungsstellung einrichten                                                         |              Dänemark              |
+|                                                            Exportformat für Zahlungen einrichten                                                             |              Dänemark              |
+|                                             <strong>\</strong>*EEU-00047 Vorauszahlung an Mitarbeiter                                              |          Osteuropa           |
+|                                          Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren                                          |              Europa               |
+|                                            Erstellen von Zahlungen für Debitoren, die Direktbelastungseinzugsermächtigungen haben                                            |              Europa               |
+|                                           <strong>\</strong>*EE-00015 Zahlungsreferenzgenerierungstool                                           |              Europa               |
+|                                                  EUR-00002 Generieren Sie eine EU-Intrastat-Meldung                                                   |              Europa               |
+|                             <strong>\</strong>*EUR-00002 Eine Ladungsadresse für eine innergemeinschaftliche Buchung angeben                              |              Europa               |
+|                                                 EUR-00002 Übertragen Sie Transaktionen an den Intrastat                                                  |              Europa               |
+|                                                    EUR-00011 Bericht 'Zusammenfassende Meldung' generieren                                                    |              Europa               |
+|                                                     EUR-00011 Zusammenfassende Meldung einrichten                                                      |              Europa               |
+|                                                      EUR-00012 Ausstellen einer EU-Gelangensbestätigung                                                      |              Europa               |
+|                                                     EUR-00012 Erhalt einer EU-Gelangensbestätigung                                                     |              Europa               |
+|                                              <strong>\</strong>*EUR-00015 Suche nach Partei per MwSt.-Kennung                                               |              Europa               |
+|                                            <strong>\</strong>*EUR-00015 Registrierung der Kreditor-MwSt.-Kennung                                             |              Europa               |
+|                                                    <strong>\</strong>*EUR-00015 Einrichtung der MwSt Kennung                                                     |              Europa               |
+|                                               <strong>\</strong>*HU-00001 Wechselkursberechnung                                               |              Europa               |
+|                                                   ISO20022-Banküberweisungskonfiguration importieren                                                   |              Europa               |
+|                                                    ISO20022-Direktbelastungskonfiguration importieren                                                     |              Europa               |
+|  <strong>\</strong>*LT-00003 Umlagerungsdokument für Warenbewegung innerhalb des Unternehmens/Generieren eines Umlagerungsdokuments für eine interne Bestandsumlagerung  |              Europa               |
+| <strong>\</strong>*LT-00003 Umlagerungsdokument für Warenbewegung innerhalb des Unternehmens/Einrichtung der Umlagerungsdokumente für Warenbewegung innerhalb eines Unternehmens |              Europa               |
+|                                         <strong>\</strong>*NO-00002 Debitorenzahlung auf Grundlage von Zahlungskennung                                          |              Europa               |
+|                                            Unternehmens-Bankkonten für ISO20022-Überweisungen einrichten                                             |              Europa               |
+|                                              Einrichten von Unternehmens-Bankkonten für ISO20022-Lastschriften                                              |              Europa               |
+|                                      Einrichten von Kunden und Kunden-Bankkonten für ISO20022-Lastschriften                                       |              Europa               |
+|                                               Einrichten einer Zahlungsmethode für ISO20022-Kreditübertragung                                               |              Europa               |
+|                                                Einrichten einer Zahlungsmethode für ISO20022-Direktbelastung                                                 |              Europa               |
+|                                       Einrichten von Kreditoren und Kreditorenbankkonten für ISO20022-Überweisungen.                                       |              Europa               |
+|                                                       Zahlungsmethoden des Debitors einrichten                                                       |              Frankreich               |
+|                                                       FR-00002 Debitoren- und Kreditorenkonto                                                        |              Frankreich               |
+|                                                       FR-00003 NAF-Codes und Siret-Nummern.                                                        |              Frankreich               |
+|                                                  FR-00004 Erfassung für 'Debitor zieht Wechsel' genehmigen und buchen                                                  |              Frankreich               |
+|                                              FR-00004 Französische Wechsel und Solawechsel                                               |              Frankreich               |
+|                                                FR-00004 Erfassung zum Protestieren von Wechseln buchen                                                |              Frankreich               |
+|                                                  FR-00004 Wechselneuziehungserfassung buchen                                                   |              Frankreich               |
+|                                                         FR-00004 Zahlungsmethode einrichten                                                          |              Frankreich               |
+|                                                   FR-00004 Aktualisieren Sie die Zahlungsmethode für Debitoren                                                   |              Frankreich               |
+|                      FR-00018 Tageszinsberechnung für verspätete Zahlung und Pauschalbetrag in der Rechnung und im Mahnschreiben                       |              Frankreich               |
+|                                                     Anpassen der deutschen Protokolldateikonfiguration                                                     |              Deutschland              |
+|                                 DE-00002 Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr                                  |              Deutschland              |
+|                                           DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)                                            |              Deutschland              |
+|                                                             ER Konfigurieren Sie Ziele                                                             |              Deutschland              |
+|                                      ER Konfigurieren des Formats für Inventuren und Summierungen (Teil 1: Format erstellen)                                       |              Deutschland              |
+|                                  ER Konfigurieren des Formats für Inventuren und Summierungen (Teil 2: Konfigurieren von Berechnungen)                                  |              Deutschland              |
+|                           ER Konfigurieren des Formats für Inventuren und Summierungen (Teil 3: Nutzen von Berechnungen für die Ausgabe)                            |              Deutschland              |
+|                                        ER Konfigurieren des Formats für Inventuren und Summierungen (Teil 4: Format ausführen)                                        |              Deutschland              |
+|                                             ER Konfigurationsanbieter erstellen und als aktiv markieren                                              |              Deutschland              |
+|                             ER Entwerfen einer Konfiguration für das Erstellen von Berichten im Microsoft WORD-Format (November 2016)                             |              Deutschland              |
+|                                               ER Domänenspezifisches Datenmodell entwerfen (November 2016)                                                |              Deutschland              |
+|                                                 ER Import einer Konfiguration von Lifecycle Services                                                 |              Deutschland              |
+|                                                 ER Upload einer Konfiguration nach Lifecycle Services                                                 |              Deutschland              |
+|                                  ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 1:Datenmodell vorbereiten)                                  |              Deutschland              |
+|                                  ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 2: Datenmodell erweitern)                                   |              Deutschland              |
+|                                    ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)                                     |              Deutschland              |
+|                                      ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 4: Format ausführen)                                      |              Deutschland              |
+|                                ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 5: Format verändern und ausführen)                                 |              Deutschland              |
+|                                     ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 1: Designdatenmodell)                                      |              Deutschland              |
+|                                       ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)                                        |              Deutschland              |
+|                                     ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 3: Berichtsentwurf)                                      |              Deutschland              |
+|                                       ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 4: Berichtsausführung)                                       |              Deutschland              |
+|                     ER Horizontal erweiterbare Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten nutzen (Teil 1: Designformat)                     |              Deutschland              |
+|                      ER Horizontal erweiterbare Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten nutzen (Teil 2: Format ausführen)                       |              Deutschland              |
+|                                                            Generieren Sie deutsche Protokolldatei                                                             |              Deutschland              |
+|                                                      Deutsche Protokolldateikonfiguration importieren                                                       |              Deutschland              |
+|                                              <strong>\</strong>*EUR-00018 Mehrwertsteuer-Abstimmungsbericht                                               |              Island              |
+|                          IS-00006 Meldung der Kreditorenrechnung/Erstellen eines Kreditorenkontos und Anfügen der Rechnungserklärung verwalten                           |              Island              |
+|                                   IS-00006 Meldung der Kreditorenrechnung/Einstellungen einer Rechnungserklärung für Kreditoren                                   |              Island              |
+|                          IS-00006 Meldung der Kreditorenrechnung/Aktualisierungskreditorenrechnungsmeldungen und Generieren des Berichts                           |              Island              |
+|                                          Verwalten von Kontenplan/erforderliche Zahlungsreferenzen verwalten                                           |              Island              |
+|                                              Erhalten einer Anlage mit Anlagenruhestandsverpflichtungen                                              |               Japan               |
+|                                               Eine Anlage beschaffen und dafür den staatlichen Zuschuss beantragen                                                |               Japan               |
+|                                              Regulierung der Anlagenruhestands-Verpflichtungsvorkalkulation                                               |               Japan               |
+|                                Zuweisen Bilanzwert freigegebene Anlage und Goodwill für Bargeld generierende Einheiten                                 |               Japan               |
+|                                        Abschreibungsmethode ändern während der Nutzungsdauer für eine Anlage                                         |               Japan               |
+|                                           Abschreibungsmethode ändern während der Nutzungsdauer für ein Buch                                           |               Japan               |
+|                                        Konfigurieren von Sonderabschreibungsparametern und Buchungsprofilen                                         |               Japan               |
+|                                                CN-00004 Anlagenabschreibungszuteilung (JP-)                                                 |               Japan               |
+|                                Konfigurieren Sie Abschreibungsprofil und Buchungsprofil für Sonderabschreibung                                 |               Japan               |
+|                                  Konfigurieren Sie Abschreibungsprofil und Buchungsprofil für Sonderabschreibung                                  |               Japan               |
+|                                     Konfigurieren Sie Parameter und Einstellungen der konsolidierten Rechnung für Kreditoren                                      |               Japan               |
+|                             Konfigurieren Sie Hauptkonten für Anlagenruhestands-Verpflichtungsbuchung und Marktrabattsätze                             |               Japan               |
+|                                                 Erstellen Sie eine Anlage mit Sonderabschreibung                                                 |               Japan               |
+|                                              Anlage mit Sonderabschreibungsprofil erstellen                                               |               Japan               |
+|                                           Erstellen eines beschleunigten Abschreibungsprofils und Zuweisen zu einem Buch                                           |               Japan               |
+|                                         Erstellen Sie ein Sonderabschreibungsdokument und geben Sie Nutzungsdaten ein                                          |               Japan               |
+|                                                       Dient zum Erstellen und Zuweisen einer Arbeitsgerätegruppe                                                        |               Japan               |
+|                                                    Erstellen und Zuweisen eines Reduzierungseintragsdokument                                                     |               Japan               |
+|                                                 Erstellen und bestätigen Sie eine konsolidierte Kreditorenrechnung                                                  |               Japan               |
+|                                                        Erstellen und bestätigen Sie einen Anerkennungstest                                                        |               Japan               |
+|                                                    Erstellen Sie CGU-Gruppen und Bargeld generierende Einheiten                                                    |               Japan               |
+|                                         Erstellen Sie Pauschalsummenabschreibungsanlagen mithilfe der gleichmäßig festgelegten Methode                                          |               Japan               |
+|                                            Definieren der Leerlaufperiode der Anlage und überprüfen des Abschreibungsprozesses                                             |               Japan               |
+|                                    Anlagen abschreiben und Antizipieren von der Zinsaufwendungen für Anlagenruhestandsverpflichtungen an                                    |               Japan               |
+|                                             Abschreibung von Anlagen mit dem Reduzierungseintrag gebucht                                              |               Japan               |
+|                                                   Entsorgen eine Anlage mit Reduzierungseintrag                                                   |               Japan               |
+|                                                          JBA-Zahlungsdateiformat aktivieren                                                           |               Japan               |
+|                                      Geben Sie Abschreibungsratezeitplan ein und ordnen Sie zum Abschreibungsprofil zu                                       |               Japan               |
+|                                                           Generieren und buchen Sie Zahlungsgebühr                                                           |               Japan               |
+|                                                 Generieren Sie eine EFT-Zahlungsdatei im JBA-Format                                                  |               Japan               |
+|                                                       Generieren Sie Japan-Verbrauchssteuerbericht                                                       |               Japan               |
+|                                                 Eine Debitorenzahlung mit einem JBA-Dateiformat importieren                                                  |               Japan               |
+|                                                        Abfragen der Zahlungsgebühr auf Erfassung                                                        |               Japan               |
+|                                         Abfragen der Anlagenruhestands-Verpflichtungszugehörigen buchungen                                         |               Japan               |
+|                                                          Abfrage auf abzugsfähigen Ausgaben                                                           |               Japan               |
+|                                                 JP-00005 Eingabeerfassung in der T-Kontenform (Japan)                                                  |               Japan               |
+|                              JP-00011 Konsolidierte Rechnung - Debitor - Erstellen und Bestätigen Sie eine Debitorenkonsolidierte "Rechnung buchen"                              |               Japan               |
+|                                                 JP-00027 Formular 26 für abschreibungsfähige Steuererklärung                                                  |               Japan               |
+|                                          Verwalten von Anlagevermögenmasterdatendateien für abzugsfähige Ausgaben                                           |               Japan               |
+|                                                Verwalten von Beeinträchtigungsindikatoren für einzelne Anlagen                                                |               Japan               |
+|                                         Zahlen einer Lieferantenbuchung, indem Sie einen Wechsel des Debitors unterzeichnen                                         |               Japan               |
+|                                                Periodisch Ausgleich von Über- und unter Abschreibung                                                 |               Japan               |
+|                                                          Sonderabschreibung                                                          |               Japan               |
+|                                                   Wenden Sie sich vor und buchen Sie Sonderabschreibung                                                   |               Japan               |
+|                                                  Wenden Sie sich vor und Buchen des Beeinträchtigungsbetrag nach Charge                                                  |               Japan               |
+|                                        Wenden Sie sich vor und Buchen des Beeinträchtigungsbetrag, indem Sie Anlagenerfassung verwenden                                        |               Japan               |
+|                                         Wenden Sie sich vor und Buchen des Beeinträchtigungsbetrag auf einem Bargeld, das Einheit generiert                                          |               Japan               |
+|                                                           Sonderabschreibungsprofil                                                            |               Japan               |
+|                                                  Erstellen und bestätigen Sie eine konsolidierte Debitorenrechnung                                                  |               Japan               |
+|                                                   Erstellen und bestätigen Sie eine konsolidierte Debitorenrechnung                                                   |               Japan               |
+|                                                       Stornieren eines unterzeichneten Wechsel um                                                        |               Japan               |
+|                                 Legt den Anerkennungstest und berechnen Sie den Beeinträchtigungsbetrag für einzelne Anlagen                                 |               Japan               |
+|                                                        Stornieren eines unterzeichneten Wechsel um                                                        |               Japan               |
+|                                         Ausgleichen von Debitorenkonsolidierte rechnungen, indem Sie eine Zahlungserfassung verwenden                                          |               Japan               |
+|                                          Ausgleichen von Debitorenkonsolidierte rechnungen, indem Sie eine Zahlungserfassung verwenden                                           |               Japan               |
+|                                         Ausgleichen von Debitorenkonsolidierte rechnungen, indem Sie eine Zahlungserfassung verwenden                                          |               Japan               |
+|                                         Ausgleichen von Debitorenkonsolidierte rechnungen, indem Sie eine Zahlungserfassung verwenden                                          |               Japan               |
+|                                      Richten Sie einen Debitor und einen Auftrag, Ziel der konsolidierter Rechnung werden sollen                                       |               Japan               |
+|                                Richten Sie Anlagenruhestands-Verpflichtungsdokumente und geben Sie ARO-Betrag auf einer Anlage ein                                 |               Japan               |
+|                                                           Einrichten von Debitorenrechnungen                                                            |               Japan               |
+|                                         Berechnende häufig verwendete Parameter und Buchungsprofil der Kasseneinstellungsgruppen beeinträchtigung                                         |               Japan               |
+|                                           Richten Sie Japan-Zahlung, indem Sie einen Wechsel des Debitors unterzeichnen                                            |               Japan               |
+|                                Einrichten von Masterdaten für das Einbeziehen von abzugsfähigen Ausgaben für mehrere Buchungsebenen                                |               Japan               |
+|                                                        Generieren Sie Japan-Verbrauchssteuerbericht                                                         |               Japan               |
+|                                                            Formular "Einstellungen für Kreditorenzahlungsgebühren" für Japan                                                            |               Japan               |
+|                                    Einrichten von Hauptkreditor und Bestellung, Ziel der konsolidierter Rechnung werden sollen                                    |               Japan               |
+|                                                        Liste mit Anlagenbuchungen generieren                                                         |               Japan               |
+|                                                       Verwendung disassembliert Liste für Anlagen                                                       |               Japan               |
+|                                                          MX-00006 Einrichten eines Mehrwertsteuercodes                                                           |              Mexiko-Stadt               |
+|                                             MX-00007 Debitoren-Registrierungskennungen und andere Informationen                                              |              Mexiko-Stadt               |
+|                                                         MX-00008: Kreditorenregistrierungs-IDs                                                         |              Mexiko-Stadt               |
+|                                                       MX-00010 Elektronische Rechnung stornieren                                                       |              Mexiko-Stadt               |
+|                                                             MX-00010 E-Rechnungsstellung CFDI                                                             |              Mexiko-Stadt               |
+|                                          MX-00010 Eingeben von Steuerregistrierungskennungen für mexikanische juristische Personen                                           |              Mexiko-Stadt               |
+|                                                 MX-00010 Abfragen und Drucken einer elektronischen Rechnung                                                  |              Mexiko-Stadt               |
+|                                                         MX-00010 Freitextrechnung buchen                                                         |              Mexiko-Stadt               |
+|                                                 MX-00010 Festlegen von Parametern für eine elektronische Rechnung                                                 |              Mexiko               |
+|                                     MX-00020: Mexikanischen elektronischen Sachkontobericht Version 1.1 erzeugen                                     |              Mexiko-Stadt               |
+|                                        MX-00020 Kontenplan für eine juristische Person in Mexiko einrichten                                         |              Mexiko               |
+|                                       MX-00020 – Angeben der RFC-Registrierungs-ID für mexikanische Bankkonten                                        |              Mexiko               |
+|                                                        Integration von NL-00003 Semansys XBRL                                                         |            Niederlande            |
+|                                                    NL-00010 Elektronische Steuererklärung (EVAT)                                                    |            Niederlande            |
+|                                            MY-00003 Debitorenlastschrift und ‑gutschrift für GST verwalten                                            | Singapur, Malaysia und Thailand |
+|                                             MY-00004 Kreditorenlastschrift und ‑gutschrift für GST verwalten                                             | Singapur, Malaysia und Thailand |
+|                                                          MY-00005 GST-Steuerrechnungen drucken                                                          | Singapur, Malaysia und Thailand |
+|                                                       MY-00006 01 GST-Entlastungsklauseln einrichten                                                       | Singapur, Malaysia und Thailand |
+|                                           MY-00006 02 GST-Debitorenrechnungen mit einer Entlastungsklausel drucken                                            | Singapur, Malaysia und Thailand |
+|                                                           MY-00007 Selbst-berechnete Rechnungen                                                           | Singapur, Malaysia und Thailand |
+|                                             MY-00010 GST - Generieren von GAF-Dateien im benötigten Format                                              | Singapur, Malaysia und Thailand |
+|                                            MY-00011 02 Generieren von Debitoren-Lastschrift für Projektumsatz                                             | Singapur, Malaysia und Thailand |
+|                                            MY-00011 03 Generieren von Debitoren-Gutschrift für Projektumsatz                                            | Singapur, Malaysia und Thailand |
+|                                     Erstellen einer Bestellung, die Artikel beinhaltet, für die die Mehrwertsteuer für Verlagerung der Steuerschuld gilt                                     |          Vereinigtes Königreich           |
+|                                      Erstellen eines Auftrags mit Artikeln, für die Mehrwertsteuer für Verlagerung der Steuerschuld gilt                                       |          Vereinigtes Königreich           |
+|                                       GB-00002 Einrichten von Artikelgruppen, Regeln und Parametern mit Verlagerung der Steuerschuld                                       |          Vereinigtes Königreich           |
+|                                             GB-00009 Eine Gutschrift zu dem Ausgleichsrabatt erstellen                                              |          Vereinigtes Königreich           |
+|                                       GB-00009 Parameter für Gutschrift zu Skonto einrichten                                        |          Vereinigtes Königreich           |
+|                                                Einrichten von Produkt-Mehrwertsteuergruppen für die Steuerschuldumkehr                                                |          Vereinigtes Königreich           |
+|                                                  Einrichten von Mehrwertsteuergruppen für die Steuerschuldumkehr                                                   |          Vereinigtes Königreich           |
 
 ### 
 
@@ -389,11 +388,11 @@ Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitf
 
 ### <a name="inbound-consignment"></a>Eingehende Lieferung
 
-| BPM-Zeile                                                                       | Land/Region |
-|--------------------------------------------------------------------------------|----------------|
-| **\***Ändern des Besitzes des Lieferungsbestandes auf Grundlage des Produktionsbedarfs | Global         |
-| **\***Neuen Unterlieferungs-Wiederbeschaffungsauftrag erstellen                                 | Global         |
-| **\***Überwachen des Lieferbestands mithilfe der Kreditor-Kooperation                 | Global         |
+|                                          BPM-Zeile                                           | Land/Region |
+|---------------------------------------------------------------------------------------------|----------------|
+| <strong>\</strong>*Besitz des Lieferungslagerbestands auf Grundlage des Produktionsbedarfs ändern |     Global     |
+|                 <strong>\</strong>*Einen Lieferungs-Wiederbeschaffungsauftrag erstellen                 |     Global     |
+|         <strong>\</strong>*Lieferungslagerbestand mithilfe der Kreditorenkooperation überwachen         |     Global     |
 
 ### 
 
@@ -418,11 +417,11 @@ Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitf
 
 ### <a name="performance-management"></a>Leistungsverwaltung
 
-| BPM-Zeile                                                         | Land/Region |
-|------------------------------------------------------------------|----------------|
-| **\***Hinzufügen einer Leistungserfassung und senden von Lob an eine Person | Global         |
-| **\***Ein Ziel erstellen                                              | Global         |
-| **\***Eine Leistungsbeurteilung erstellen                                | Global         |
+|                                   BPM-Zeile                                    | Land/Region |
+|-------------------------------------------------------------------------------|----------------|
+| <strong>\</strong>*Ihre Leistungserfassung hinzufügen und Lob an eine Person senden |     Global     |
+|                       <strong>\</strong>*Erstellen eines Ziels                        |     Global     |
+|                <strong>\</strong>*Eine Leistungsbeurteilung erstellen                 |     Global     |
 
 ### 
 
@@ -448,7 +447,7 @@ Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitf
 | Erstellen eines Strichcodes für Produkte                                         | Global         |
 | \* Erstellen einer Produktnummerenbezeichnung für vordefinierte Produktvarianten | Global         |
 | \* Erstellen einer Produktnummerenbezeichnung für konfigurierte Produktvarianten | Global         |
-| \*Definieren von Standardauftragseinstellungen für einen Artikel                            | Global         |
+| \* Definieren von Standardauftragseinstellungen für einen Artikel                            | Global         |
 | Erstellen eines Auftrags für ein konfigurierbares Produkt                         | Global         |
 | Verkaufspreisauswahlkriterien erstellen                                   | Global         |
 | GTIN-code für ein Produkt eingeben                                       | Global         |
@@ -494,25 +493,25 @@ Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitf
 
 ### <a name="retail-and-commerce"></a>Einzelhandel und Handel
 
-| BPM-Zeile                                                         | Land/Region |
-|------------------------------------------------------------------|----------------|
-| Konfigurieren einer Arbeitskraft                                               | Global         |
-| **\***Konfigurieren von Machine-Learning-unterstützten Produktempfehlungen | Global         |
-| Konfigurieren des Funktionsprofils für einen Verkäufer   | Global         |
-| **\***Erstellen eines visuellen POS-Profils (November 2016)                | Global         |
-| Erstellen und verknüpfen Sie Register                                   | Global         |
-| Callcenteraufträge erstellen                                        | Global         |
-| Erstellen von Handelsvereinbarungen mit Kategoriepreiskalkulationsregeln            | Global         |
-| Erstellen, Berechnen und Buchen eines Auszugs für eine Filiale              | Global         |
-| Definieren einer Zugehörigkeit und Zuweisen eines Rabatts                      | Global         |
-| Definieren und Verwalten von POS-Berechtigungsgruppen                          | Global         |
-| Anschlusszeitpläne definieren                                       | Global         |
-| **\***Definieren Sie Kanalverbindungen (CDX)                 | Global         |
-| Treuebelohnungsanpassungen                                      | Global         |
-| Sortimente verwalten                                               | Global         |
-| Mehrwertsteuer-Zuweisung und -Außerkraftsetzung                                | Global         |
-| Einrichtung von Auffüllungsregeln für Crossdocking und Käuferübertragung   | Global         |
-| Anschlussprogramme nutzen                                         | Global         |
+|                                   BPM-Zeile                                    | Land/Region |
+|-------------------------------------------------------------------------------|----------------|
+|                              Eine Arbeitskraft konfigurieren                               |     Global     |
+| <strong>\</strong>*Machine Learning-unterstützte Produktempfehlungen konfigurieren |     Global     |
+|        Funktionsprofil für einen Verkäufer konfigurieren         |     Global     |
+|        <strong>\</strong>*Erstellen eines visuellen POS-Profils (November 2016)         |     Global     |
+|                        Register erstellen und zuordnen                         |     Global     |
+|                           Callcenteraufträge erstellen                           |     Global     |
+|             Erstellen von Handelsvereinbarungen mit Kategoriepreiskalkulationsregeln             |     Global     |
+|              Erstellen, Berechnen und Buchen eines Auszugs für eine Filiale              |     Global     |
+|                  Definieren einer Zugehörigkeit und Zuweisen eines Rabatts                  |     Global     |
+|                    Definieren und Verwalten von POS-Berechtigungsgruppen                    |     Global     |
+|                          Anschlusszeitpläne definieren                           |     Global     |
+|         <strong>\</strong>*Definieren von Retail Channel-Kommunikationen (CDX)         |     Global     |
+|                          Treuebelohnungsanpassungen                          |     Global     |
+|                              Sortimente verwalten                               |     Global     |
+|                       Mehrwertsteuer-Zuweisung und -Außerkraftsetzung                       |     Global     |
+|        Einrichtung von Auffüllungsregeln für Crossdocking und Käuferübertragung         |     Global     |
+|                           Anschlussprogramme nutzen                            |     Global     |
 
 ### 
 
@@ -576,19 +575,17 @@ Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitf
 
 ### <a name="warehouse-and-transportation"></a>Lagerort- und Transport
 
-| BPM-Zeile                                                                    | Land/Region |
-|-----------------------------------------------------------------------------|----------------|
-| Erstellen eines Lagerplatzprofils                                                   | Global         |
-| **\***Erstellen einer Menüoption des mobilen Geräts für die Ladungsträger-Konsolidierung      | Global         |
-| Frachtbrief manuell abstimmen                                                  | Global         |
-| Erfassen des Ein- und Auscheckens des Fahrers für einen Termin                   | Global         |
-| Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung | Global         |
-| Einrichten eines Termins für eine Auslastung                                            | Global         |
-| Eine Transportausschreibung erstellen                                              | Global         |
-| Automatische Frachtabstimmung einrichten                                     | Global         |
-| **\***Einrichtung der Artikelneuzuordnung für Entnahme mit unzureichender Menge                                | Global         |
-
-
+|                                      BPM-Zeile                                       | Land/Region |
+|-------------------------------------------------------------------------------------|----------------|
+|                              Lagerplatzprofil erstellen                              |     Global     |
+| <strong>\</strong>*Menüoption für ein mobiles Gerät für die Kennzeichenkonsolidierung erstellen |     Global     |
+|                             Frachtbrief manuell abstimmen                              |     Global     |
+|              Erfassen des Ein- und Auscheckens des Fahrers für einen Termin              |     Global     |
+|     Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung     |     Global     |
+|                          Einrichten eines Termins für eine Auslastung                           |     Global     |
+|                           Transportausschreibung einrichten                            |     Global     |
+|                       Automatische Frachtabstimmung einrichten                       |     Global     |
+|              <strong>\</strong>*Artikelneuzuordnung für Entnahme mit unzureichender Menge einrichten              |     Global     |
 
 <a name="see-also"></a>Siehe auch
 --------

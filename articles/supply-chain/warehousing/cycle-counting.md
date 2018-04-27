@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cycle-counting"></a>Permanente Inventur
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Sie Zykluszählungen mit der Warehousing-Lösung verwenden können, die in der Warehouse-Verwaltung verfügbar ist. Dieser Artikel gilt nicht für die Warehousing-Lösung, die in der Lagerverwaltung verfügbar ist.
 

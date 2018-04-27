@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-prerequisites-for-management"></a>Voraussetzungen für Verwaltung einrichten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Verwenden Sie diese Prozedur, um Qualitätsmangelmanagementprozesse zu aktivieren. Ein Qualitätsmangel steht für eine Prozedur oder einen Artikel, bei dem ein Qualitätsproblem vorliegt; die beschreibenden Informationen enthalten die Quelle sowie die Art des Problems. Für diese Prozedur wird das Demo-Datenunternehmen USMF verwendet. Normalerweise wird diese Prozedur von einem Qualitätsmanager ausgeführt.
 

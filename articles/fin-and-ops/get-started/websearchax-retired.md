@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="websearchax-retired"></a>WebSearchAX zurückgezogen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Wir mussten die WebSearchAX-Seite zurückziehen. Es wird empfohlen, stattdessen die Websitesuche Ihrer bevorzugten Suchmaschine zu verwenden.  Beispiel: 
 

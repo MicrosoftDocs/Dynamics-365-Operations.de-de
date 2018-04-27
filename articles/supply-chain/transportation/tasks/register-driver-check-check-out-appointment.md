@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Ein- und Auschecken des Fahrers für einen Termin erfassen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie das Ein- und Ausschecken eines Fahrers erfasst wird. Dies wird normalerweise von einem Transportkoordinator vorgenommen. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Bevor Sie beginnen, muss eine Termineinstellung für eine Auslastung vorhanden sein. Um einen Termin zu erstellen, können Sie das Verfahren "Termin für eine Auslastung einrichten" ausführen.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-design-financial-reports"></a>Finanzberichte entwerfen und verwalten
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Finance and Operations führen. Die Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Finance and for Operations und einem Berichts-Designer, der Finanzberichte erstellt und bearbeitet.  
 

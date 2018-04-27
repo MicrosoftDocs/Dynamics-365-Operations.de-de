@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-electronic-tax-declaration-germany"></a>Elektronische Steuererklärung einrichten (Deutschland)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.
 

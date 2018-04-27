@@ -18,16 +18,16 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b84778bd67e8c5bad6e8858d2af71f46e0dfe145
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f4736a7041c746350fa073bd58929c840f7689bf
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mobile-app-home-page"></a>Mobile App-Startseite
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird die mobile Microsoft Dynamics 365 for Unified Operations-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
 
@@ -85,12 +85,12 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <td>1</td>
 <td>Systemadministrator</td>
 <td>Finance and Operations in Ihrer Organisation implementieren.</td>
-<td><ul><li>Wenn Sie noch keine Version von Microsoft Dynamics 365 bereitgestellt haben, siehe <a href="../deployment/deploy-demo-environment.md">Erstellen einer Demoumgebung</a>.</li><li>Um eine Liste mobiler Arbeitsbereiche anzuzeigen, die verwendet werden können, siehe <a href="mobile-workspaces-released.md">Vor Kurzem freigegebene mobile Arbeitsbereiche</a>.</li></ul></td>
+<td><ul><li>Wenn Sie noch keine Version von Microsoft Dynamics 365 bereitgestellt haben, siehe <a href="../deployment/deploy-demo-environment.md">Bereitstellen einer Demoumgebung</a>.</li><li>Um eine Liste mobiler Arbeitsbereiche anzuzeigen, die verwendet werden können, siehe <a href="mobile-workspaces-released.md">Vor Kurzem freigegebene mobile Arbeitsbereiche</a>.</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Systemadministrator</td>
-<td><strong>Wenn Sie Microsoft Dynamics 365 for Operations, Version 1611, verwenden:</strong> Laden und installieren Sie KBs, die die von Microsoft bereitgestellten mobilen Arbeitsbereiche aktivieren.</td>
+<td><strong>Wenn Sie Microsoft Dynamics 365 for Operations, Version 1611, verwenden:</strong> Laden Sie KBs herunter und installieren diese, die die von Microsoft bereitgestellten mobilen Arbeitsbereiche aktivieren.</td>
 <td>Weitere Informationen finden Sie in folgenden Themen:
 <ul>
 

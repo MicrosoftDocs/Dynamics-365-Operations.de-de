@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-location-profile"></a>Lagerplatzprofil erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Jeder Standort in den Lagerortanforderungen musst ein Lagerplatzprofil zugeordnet haben, das die Eigenschaften des Lagerplatzes beschreibt, beispielsweise ob der Lagerplatz Mischartikel zulässt. In diesem Verfahren erstellen wir ein Profil für einen Lagerplatz, der nicht über Ladungsträger gesteuert wird. Wir aktivieren Mischartikel und Mischbestandsstatus und ermöglichen die permanente Inventur. Sie können diese Prozedur im Demodatunternehmen USMF verwenden.
 

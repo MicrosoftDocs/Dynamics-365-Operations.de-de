@@ -3,12 +3,12 @@ title: "Startseite für die Kostenrechnung"
 description: "Mit Kostenmanagement können Sie die Bewertung und die Buchhaltung von Rohmaterialien, Halb fertigwaren, Endartikeln und von Umlaufbestand behandeln."
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/14/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Startseite für die Kostenrechnung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mit [Kostenmanagement (Video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) können Sie die Bewertung und die Buchhaltung von Rohmaterialien, Halbfertigwaren, Endartikeln und von Umlaufbestand behandeln. Dabei handelt es sich um den Prozess des Definieren, der Verwaltung und des Erstellen von [Bestandbuchhaltung](cost-object.md) und [Fertigungskostenrechnung](bom-calculations.md).
 

@@ -19,17 +19,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e05361bf865e44ba6073198fba94d7102b1ed19
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-coupons-for-retail-sales"></a>Coupons für Einzelhandelsverkäufe erstellen
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview-of-coupons"></a>Überblick über Coupons
 
@@ -46,9 +45,12 @@ Um einen Coupon zu erstellen, stellen Sie den Rabatt und den Coupon getrennt her
 
 ### <a name="limited-use-coupons"></a>Begrenzte Nutzung der Coupons
 
-Coupons können als Coupons mit begrenzter Nutzung konfiguriert werden. Das Verwendungslimit kann pro Debitor oder Kanal oder als globale Limite definiert werden. Diese Limite wird erzwungen, wenn der Code oder der Strichcode in POS oder für den Auftrag eingegeben oder gescannt wird. Ein Coupon wird als gebucht bezeichnet, wenn der Auftrag abgeschlossen wird, der die Coupons hat, die zugeordnet wurden.
+Coupons können als Coupons mit begrenzter Nutzung konfiguriert werden. Das Verwendungslimit kann pro Debitor oder Kanal oder als globale Limite definiert werden. Diese Limite wird erzwungen, wenn der Code oder der Strichcode in POS oder für den Auftrag eingegeben oder gescannt wird.
 
 Die Grenze wird pro Couponcode auf einem Coupon erzwungen. So kann ein Einwegcoupon, der zwei Couponcodes hat, zweimal verwendet werden: einmal für jeden Couponcode. Jeder Code auf einem Coupon kann unabhängig auf Aktiv festgelegt werden.
+
+> [!NOTE]
+> Wenn ein Couponcode die Nutzungsgrenze erreicht hat, führt das System *nicht* automatisch den Status des Couponcodes auf "verwendet" aus. Das System erlaubt aber keine weitere Verwendung eines Couponcodes, der seine Nutzungsgrenze erreicht hat. Wenn der Status eines Couponcodes manuell auf einen Status anders als "Aktiv" festgelegt wird, dann  kann dieser Couponcode nicht in einem beliebigen Kanal verwendet werden.
 
 ## <a name="managing-coupons"></a>Verwalten von Coupons
 
@@ -69,7 +71,7 @@ Bevor Sie einen Coupon einrichten können, müssen Sie den Couponstrichcode und 
     > Für beide Nummernkreise müssen Sie das Feld **Bereich** auf **Unternehmen** festlegen. In den meisten Fällen sollten Sie beide laufenden Nummern automatisch generieren.
 
 5.  Auf der Seite **Freigegebene Einzelhandelsparameter** auf der Registerkarte **Strichcodes**, wählen Sie den Strichcode aus, den Sie eben erstellt haben.
-6.  Auf der Seite **Einzelhandelsparameter** auf der Registerkarte **Nummernkreise** wählen Sie die Nummernkreise aus, die Sie für die Couponnummer und Couponcode Kennung erstellten.
+6.  Auf der Seite **Retailparameter** auf der Registerkarte **Nummernkreise** wählen Sie die Nummernkreise aus, die Sie für die Couponnummer und Couponcode Kennung erstellten.
 7.  Sie können die Seite **Coupons** öffnen und jetzt neue Coupons erstellen.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Die Auswirkungen von Teilausführungsaktualisierungen auf Coupons

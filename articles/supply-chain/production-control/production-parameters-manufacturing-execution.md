@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 468227e40165fa37e9ce80d5f52ded8e9094e5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparameter für Fertigungssteuerung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zur Einrichtung der Produktionsparameter.
 
@@ -49,7 +49,7 @@ Wählen Sie auf der Registerkarte **Arbeitsgänge** die Arten von Produktionsein
 Üblicherweise findet eine Erfassung durch die Arbeitskräfte bei Einrichtungs- und Verarbeitungs-Einzelvorgängen statt. Wenn jedoch die Feinterminierung angewendet wird, können Sie andere Einzelvorgangstypen auswählen, z. B. Transport-Einzelvorgänge, bei denen Arbeitskräfte ebenfalls Erfassungen dazu vornehmen müssen, wann ein Produktionsauftrag verarbeitet wird. Beispielsweise können Sie die Erfassungen für Transportjobs benötigen.
 
 > [!IMPORTANT]
-> Vergewissern Sie sich, dass alle relevanten Einzelvorgangstypen ausgewählt sind. Andernfalls sind ggf. Einzelvorgänge nicht für die Erfassung auf der Seite **Einzelvorgangserfassung** verfügbar. Die Auswahl muss mit der Auswahl in der Spalte **Einzelvorgangsverwaltung** auf der Registerkarte **Einstellungen** der Seite **Arbeitsplangruppen****Produktionssteuerung** **Einstellungen** &gt; ( **Arbeitspläne** &gt; ) **Arbeitsplangruppen** &gt; übereinstimmen.
+> Vergewissern Sie sich, dass alle relevanten Einzelvorgangstypen ausgewählt sind. Andernfalls sind ggf. Einzelvorgänge nicht für die Erfassung auf der Seite **Einzelvorgangserfassung** verfügbar. Die Auswahl muss mit der Auswahl in der Spalte **Einzelvorgangsverwaltung** auf der Registerkarte **Einstellungen** der Seite **Arbeitsplangruppen** **Produktionssteuerung** **Einstellungen** &gt; ( **Arbeitspläne** &gt; ) **Arbeitsplangruppen** &gt; übereinstimmen.
 
 Wenn **Einzelvorgangsverwaltung** für einen bestimmten Einzelvorgangstyp der Arbeitsplangruppe ausgewählt istt, wird dieser Einzelvorgangstyp für den Produktionsauftrag als fertig gemeldet, wenn für den Einzelvorgang im Modul "Zeiterfassung/BDE" eine Fertigmeldung erstellt wird. Wenn alle Einzelvorgangstypen, für die **Einzelvorgangsverwaltung** ausgewählt ist, bei einem Arbeitsgang als fertig gemeldet wurden, meldet die "Fertigungssteuerung" den Arbeitsgang ebenfalls als fertig.
 
@@ -69,17 +69,17 @@ Für jede Phase können Sie im Feld **Automatischer BOM-Verbrauch** eine von dre
 
 - **Stücklisten-Bezugsprinzip** – Diese Option wird in Kombination mit einer Option verwendet, die in der Stückliste im **Produktionsmodul** definiert wird. Klicken auf **Produktionssteuerung** &gt; **Gemeinsam** &gt; **Produktionsauftrag** &gt; **Alle Produktionsaufträge**. Wählen Sie auf der Seite **Alle Produktionsaufträge** einen Produktionsauftrag aus der Liste aus  und klicken Sie auf **BOM**. Auf der Seite **Stückliste** auf der Registerkarte **Einstellungen**, im Feld **Prinzip für automatischen Artikelverbrauch**, wählen Sie eine der folgenden Optionen aus:
 
-    - **Starten**
-    - **Fertig stellen**
-    - **Manuell**
-    - Leer (keine Option ist aktiviert.)
-    - **Am Lagerplatz verfügbar**
+  - **Starten**
+  - **Fertig stellen**
+  - **Manuell**
+  - Leer (keine Option ist aktiviert.)
+  - **Am Lagerplatz verfügbar**
 
     In der Fertigungssteuerung wenn **Prinzip für automatischen Artikelverbrauch** im Feld **Soll=Istrückmeldung Material** auf der Registerkarte **Starten** ausgewählt wird, werden alle Materialien, die in der Stückliste auf **Starten** festgelegt werden, vom Bestand abgezogen, wenn der Arbeitsgang gestartet wird. Die Option **Verfügbar am Lagerplatz** wird für Produkte verwendet, die für erweiterte Lagerortprozesse aktiviert werden. Wenn Sie dieses Prinzip für automatischen Artikelverbrauch aktivieren, wird Material geleert, wenn Lagerortarbeit für Rohmaterialentnahme abgeschlossen wird. Material wird auch geleert, wenn eine Stücklistenposition, die dieses Leerungsprinzip nutzt, für automatischen Artikelverbrauch für den Lagerort freigeben wurde und das Material am Produktionseingangslagerplatz verfügbar ist.
-    
+
     > [!NOTE]
     > Wenn das Feld **Prinzip für automatischen Artikelverbrauch** auf der Registerkarte **Starten** in der Fertigungssteuerung festgelegt ist, müssen Sie dasselbe Prinzip entweder auf der Registerkarte **Arbeitsgänge** oder der Registerkarte **Fertigmeldung** auswählen. Durch diese Anforderung wird sichergestellt, dass Materialien aus dem Lagerbestand für die Stücklisten abgezogen werden, die **Fertig stellen** als Prinzip für automatischen Artikelverbrauch für den Produktionsauftrag verwenden. Wenn das gleiche Prinzip für automatischen Artikelverbrauch weder auf der Registerkarte **Arbeitsgänge** noch auf der Registerkarte **Fertigmeldung** aktiviert ist, werden Materialien doppelt aus dem Lagerbestand abgezogen werden.
- 
+
 - **Immer** – Wenn Sie in einer Phase diese Option auswählen, werden Materialien für diese Phase immer aus dem Lagerbestand abgezogen. Materialien für die Produktion werden beispielsweise abgezogen, wenn der Produktionsauftrag gestartet wird. Für diese Einstellung muss **Nie** auf den Registerkarten **Arbeitsgänge** und **Fertigmeldung** aktiviert sein. Diese Anforderung verhindert, dass Artikel doppelt aus dem Lagerbestand abgezogen werden.
 - **Nie** – Wenn Sie diese Option für eine Phase auswählen, erfolgt kein Stücklistenverbrauch in dieser Phase. Wenn für alle drei Registerkarten beispielsweise **Nie** ausgewählt wurde **Start**, **Betrieb** und **Bericht**, müssen Materialien manuell aus dem Lagerbestand abgezogen werden.
 
@@ -146,11 +146,13 @@ Basierend auf den weiter oben in diesem Abschnitt beschriebenen Auswahlen werden
 
 Die folgenden Einstellungen können verwendet werden, wenn Materialien immer manuell aus dem Lagerbestand abgezogen werden sollen. In diesem Fall werden Kommissionierlistenerfassungen nicht gebucht.
 
-| Registerkarte                | Feld                          | Einstellung    |
-|--------------------|--------------------------------|------------|
-| Starten              | Start online aktualisieren           | **Status** |
-| Starten              | Soll=Istrückmeldung Material      | **Nie**  |
-| Operations         | Soll=Istrückmeldung Material      | **Nie**  |
-| Fertigmeldung | Soll=Istrückmeldung Material      | **Nie**  |
-| Fertigmeldung | Fertigmeldungsbericht online aktualisieren | **Status** |
+
+|        Registerkarte         |             Feld              |         Einstellung         |
+|--------------------|--------------------------------|-------------------------|
+|       Starten        |      Start online aktualisieren      | <strong>Status</strong> |
+|       Starten        |   Soll=Istrückmeldung Material    | <strong>Nie</strong>  |
+|     Operations     |   Soll=Istrückmeldung Material    | <strong>Nie</strong>  |
+| Fertigmeldung |   Soll=Istrückmeldung Material    | <strong>Nie</strong>  |
+| Fertigmeldung | Fertigmeldungsbericht online aktualisieren | <strong>Status</strong> |
+
 

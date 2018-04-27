@@ -27,10 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-accounts-receivable"></a>Debitoren abschließen
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In der folgenden Tabelle werden die Seiten aufgeführt, in denen die Geschäftsprozesskomponente für den Debitorenabschluss unterstützt wird.
 

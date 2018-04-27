@@ -29,10 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Produktdimensionen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Es gibt vier Produktdimensionen: Farbe, Konfiguration, Größe und Farbe. Sie kombinieren Produktdimensionen in den Dimensionsgruppen und weisen diesen Dimensionsgruppen Produktmaster zu. Diese Kombinationen der Produktdimensionen bestimmen, wie Produktvarianten definiert sind.
 
@@ -51,6 +50,7 @@ Produktdimensionswerte wie Größe, Farbe und Stil können auf den Seiten **Gr
 -   Klicken Sie auf **Produktinformationsverwaltung** &gt; **Freigegebene Produkte.** Wählen Sie einen Produktmaster aus. Klicken Sie im **Aktivitätsbereich** auf **Produkt**. Klicken Sie in der Gruppe **Produktmaster** auf **Produktdimensionen**.
 
 Die Anzahl von Varianten, die Sie für einen Artikel erstellen können, hängt von der Anzahl der möglichen Produktdimensionskombinationen ab.
+
 | **Tipp**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wenn Sie ein Produkt beispielsweise auf einer Auftragsposition verwenden, wählen Sie die Produktdimensionen aus, um die Produktvariante zu ermitteln, mit der Sie arbeiten möchten. |

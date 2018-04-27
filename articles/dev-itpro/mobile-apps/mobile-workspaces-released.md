@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-workspaces"></a>Mobile Arbeitsbereiche
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema führt die mobilen Arbeitsbereiche auf, die vor kurzem für die mobile App von Dynamics 365 for Unified Operations freigegeben wurden.
 

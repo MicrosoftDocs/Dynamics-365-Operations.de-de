@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Abschreibungsmethode "Lineare Nutzungsdauer"
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel gibt eine Übersicht über die Abschreibungsmethode "Lineare verbleibende Nutzungsdauer".
 

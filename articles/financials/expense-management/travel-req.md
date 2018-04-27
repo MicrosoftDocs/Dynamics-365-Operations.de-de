@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="travel-requisitions"></a>Reiseanforderungen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Eine *Reiseanforderung* ist ein Quelldokument, das Ausgaben dokumentiert, die für eine Reise anfallen. Eine Reiseanforderung wird zur Prüfung gesendet und kann danach zur Autorisierung von Ausgaben verwendet werden.
 

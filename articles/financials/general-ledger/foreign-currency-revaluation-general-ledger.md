@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Neubewertung der Fremdwährung für das Sachkonto
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält einen Überblick der folgenden Hauptbuchneubewertung für den Prozess der Neubewertung der Fremdwährungen im Hauptbuch bereit: Einrichten, Vorgang ausführen, Berechnung für den Prozess und sofern erforderlich Stornierung der Neubewertungsbuchungen. 
 

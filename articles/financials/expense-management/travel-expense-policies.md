@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Ausgabenrichtlinien
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sie können Richtlinien definieren, an die sich die Mitarbeiter beim Eingeben und Übermitteln von Spesenabrechnungen und Reiseanforderungen zu halten haben.         
 Die Implementierung von Ausgabenrichtlinien trägt zu einer Optimierung der Ausgabenverwaltung bei.         
@@ -39,14 +39,14 @@ Richtlinienregeln festlegen.
 Sie können drei Arten von Richtlinien definieren:         
         
 - Warnung - Ermöglicht der Arbeitskraft, eine Spesenabrechnung oder eine Reiseanforderung zu übermitteln, die Ausgaben werden jedoch markiert für alle genehmigenden Personen        
-und für die spätere Berichterstellung.        
+  und für die spätere Berichterstellung.        
 
 - Fehler – Verlangt, dass die Arbeitskraft vor dem Übermitteln der Spesenabrechnung oder der Reiseanforderung die Ausgaben überarbeiten, um die Einhaltung der Richtlinie zu garantieren.       
  
- - Begründung – Erfordert, dass die Arbeitskraft oder ein Manager vor dem Übermitteln der Spesenabrechnung oder der Reiseanforderung eine Begründung für eine Überschreitung des Richtlinienbetrags eingibt.        
+  - Begründung – Erfordert, dass die Arbeitskraft oder ein Manager vor dem Übermitteln der Spesenabrechnung oder der Reiseanforderung eine Begründung für eine Überschreitung des Richtlinienbetrags eingibt.        
  
- Sie können auch einen Datumsbereich einrichten, für den Ausgabenrichtlinien wirksam sind. Beispielsweise Flugtickets zwischen Dänemark      
- und New York City können während der Hauptreisezeit besonders teuer sein. Sie können eine Flugkostenregel definieren, die die      
- Flugkosten nach New York City auf einen Betrag von DKK 5000 festlegt und Sie können angeben, das diese Regeln zwischen 15. März und      
- 15. September gilt.
+  Sie können auch einen Datumsbereich einrichten, für den Ausgabenrichtlinien wirksam sind. Beispielsweise Flugtickets zwischen Dänemark      
+  und New York City können während der Hauptreisezeit besonders teuer sein. Sie können eine Flugkostenregel definieren, die die      
+  Flugkosten nach New York City auf einen Betrag von DKK 5000 festlegt und Sie können angeben, das diese Regeln zwischen 15. März und      
+  15. September gilt.
 

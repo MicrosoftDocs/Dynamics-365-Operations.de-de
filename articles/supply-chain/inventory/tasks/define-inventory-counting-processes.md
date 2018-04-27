@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-inventory-counting-processes"></a>Lagerinventurprozesse definieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch die Konfiguration von grundlegenden Lagerinventurprozessen, indem eine Inventurgruppe und eine Inventurerfassung erstellt wird. Sie zeigt Ihnen auch, wie Inventurrichtlinien auf Lagerort- und Artikelebene aktiviert werden. Diese Aufgaben werden normalerweise von einem Vorgesetzten am Lagerort ausgeführt. Es ist eine Voraussetzung, einige vorhandene freigegebene Produkte und Lagerorte zu haben. Wenn Sie ein Demodatunternehmen verwenden, können Sie diese Prozedur im USMF-Unternehmen mit jedem gelagerten Artikel ausführen.
 

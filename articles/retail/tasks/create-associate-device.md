@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-device"></a> Ein Gerät erstellen und verknüpfen
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen Geräts und dessen Zuordnung zu einem Register. Es wird angenommen, dass das Register bereits erstellt wurde.  Für diese Aufgabe wird das Demo-Datenunternehmen USRT verwendet. Diese Aufgabe ist für Administratoren, IT-Experten oder Einzelhandel IT und die Shopleiterrollen vorgesehen.
 

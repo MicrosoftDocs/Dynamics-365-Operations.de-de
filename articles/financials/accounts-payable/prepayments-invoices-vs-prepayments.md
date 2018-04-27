@@ -28,14 +28,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel erläutert und vergleicht die beiden Methoden, die Organisationen für Vorauszahlungen verwenden können. In einer Methode können Sie eine Vorauszahlungsrechnung erstellen, die einer Bestellung zugeordnet ist. In der anderen Methode erstellen Sie Erfassungsbelege für Vorauszahlungen, indem Sie Journaleinträge erstellen und diese dann als Erfassungsbelege für Vorauszahlungen markieren.
 
 Organisationen können für Waren oder Dienstleistungen Vorauszahlungen an Kreditoren leisten, bevor die Waren geliefert oder Dienstleistungen erbracht wurden. Zwei Methoden können verwendet werden, um Vorauszahlungen an Kreditoren auszugeben. Vorauszahlungen können zur Minimierung des Risikos nachverfolgt und auf einer Bestellung definiert werden. Für diese Methode müssen Sie eine Vorauszahlungsrechnung erstellen, die einer Bestellung zugeordnet ist. Diese Methode wird als Vorauszahlungsrechnungsstellung bezeichnet. Organisationen, die nicht Vorauszahlungen als Lagerabschluss verfolgen möchten oder keine Vorauszahlungsrechnung von dem Kreditor erhalten, können Erfassungsbelege für Vorauszahlungen anstelle der Vorauszahlungsrechnungsstellungsmethode verwenden. Sie können zum Erstellen von Erfassungsbelegen für Vorauszahlungen Journaleinträge erstellen und diese dann als Erfassungsbelege für Vorauszahlungen markieren. Für diese Methode können Sie jedoch nicht nachverfolgen, welche Zahlungen an einen Kreditor für welche Bestellungen erfolgen. Allerdings können Sie eine gebuchte Vorauszahlung für den Ausgleich mit einer Bestellung markieren.
 
 ## <a name="when-to-use-prepayment-invoicing-vs-prepayments"></a>Wann Vorauszahlungsrechnungsstellung oder Vorauszahlungen verwenden
+
 | Vorauszahlungsrechnungsstellung                                                                | Vorauszahlungen                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Vorauszahlungswerte können für eine Bestellung definiert werden,                                    | Kein Vorauszahlungswert ist für die Bestellung definiert.                    |

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Bankfazilitätsvereinbarungen für den Garantiebrief erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Aufgabe erstellt eine Bankfazilitätsvereinbarung, einen Garantiebrief zu verarbeiten. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet. 
 

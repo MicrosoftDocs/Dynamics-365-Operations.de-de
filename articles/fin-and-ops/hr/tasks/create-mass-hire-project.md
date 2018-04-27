@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-mass-hire-project"></a>Erstellen eines Masseneinstellungsprojekts
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie durch den Prozess der Einrichtung eines Masseneinstellungsprojekts. Ein Personalbeschaffungsmitarbeiter kann Masseneinstellungsprojekte verwenden, um auf einfache Weise mehrere Positionen zu erstellen und mehrere Arbeitskräfte in diesen Positionen einzustellen. Um diese Prozedur zu starten, gehen Sie zu "Personalverwaltung" > "Personalbeschaffung" > "Masseneinstellungsprojekte". Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

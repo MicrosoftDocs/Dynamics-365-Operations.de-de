@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3d4354316d0c37c6556c0ec3d27a3c62c5afb7b0
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intercompany-invoicing"></a>Intercompany-Rechnungsstellung
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Finance and Operations.
 
@@ -58,20 +57,22 @@ In diesem Beispiel ist USSI eine ausleihenden juristischen Person. Ihre Ressourc
 
 In diesem Beispiel muss FRSI ein Debitor der juristischen Person USSI sein. USSI muss ein Kreditor in der juristischen Person FRSI sein. Sie können dann die Intercompany-Beziehung zwischen den zwei juristischen Personen einrichten. Das folgende Verfahren veranschaulicht die Einrichtung von Parametern für die Teilnahme beider juristischer Personen an der Intercompany-Fakturierung.
 
-1.  Richten Sie FRSI als Debitor in der juristischen Person USSI und USSI als Kreditor in der juristische Person FRSI ein. Es gibt drei Einstiegspunkte für die für diese Aufgabe erforderlichen Schritte.
-    | Schritt | Einstiegspunkt                                                                       | Beschreibung   |
-    |------|-----------------------------------------------------------------------------------|------------------|
-    | A:    | Klicken Sie in USSI auf **Debitoren** &gt; **Debitoren** &gt; **Alle Debitoren.** | Erstellen Sie einen neuen Debitorendatensatze für FRSI, und wählen Sie die Debitorengruppe aus.                                                                                  |
-    | Mrd    | Klicken Sie in FRSI auf **Kreditoren** &gt; **Kreditoren** &gt; **Alle Kreditoren.**        | Erstellen Sie einen neuen Kreditorendatensatz für USSI, und wählen Sie die Kreditorengruppe aus.                                                                                    |
-    | C:    | Öffnen Sie in FRSI den Kreditorendatensatz, den Sie gerade erstellt haben.                            | Klicken Sie im Aktivitätsbereich auf der Registerkarte **Allgemein** und in der Gruppe **Einrichtung** auf **Intercompany**. Auf der Seite **Intercompany** legen Sie auf der Registerkarte **Handelsbeziehung** den **Aktiv**-Schieberegler auf **Ja** fest. Wählen Sie im Feld **Debitorenunternehmen** den Kundendatensatz, den Sie in Schritt A erstellt haben. |
+1. Richten Sie FRSI als Debitor in der juristischen Person USSI und USSI als Kreditor in der juristische Person FRSI ein. Es gibt drei Einstiegspunkte für die für diese Aufgabe erforderlichen Schritte.
 
-2.  Klicken Sie **Projektverwaltung und -verrechnung** &gt; **Einstellungen** &gt; **Projektverwaltungsbetriebskontoparameter**, und klicken Sie dann auf die Registerkarte **Intercompany** . Die Methode, mit der Sie die Parameter einrichten, hängt davon ab, ob Sie die ausleihende juristische Person oder die Ausleihejuristische Person sind.
-    -   Wenn Sie die ausleihende juristische Person sind, wählen Sie die Beschaffungskategorie, die verwendet werden, um die automatisch generierten Vendorenrechnungen zuzuordnen.
-    -   Wenn Sie die verleihende juristische Person sind, wählen Sie für jede ausleihende Person eine standardmäßige Projektkategorie für jede Buchungsart. Projektkategorien dienen der Steuerkonfiguration wenn die fakturierte Kategorie in Intercompany-Buchungen nur in der ausleihenden juristische Person vorhanden ist. Sie können die Umsatzerlöse für Intercompany-Buchungen antizipieren. Die Antizipierung wird durchgeführt wenn die Buchungen durchgeführt wird. Sie wird storniert wenn die Intercompany-Rechnung gebucht wird.
+   | Schritt |                                                       Einstiegspunkt                                                        |                                                                                                                                                                                               Beschreibung                                                                                                                                                                                               |
+   |------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |  A:   | Klicken Sie in USSI auf <strong>Debitoren</strong> &gt; <strong>Debitoren</strong> &gt; <strong>Alle Debitoren.</strong> |                                                                                                                                                                  Erstellen Sie einen neuen Debitorendatensatze für FRSI, und wählen Sie die Debitorengruppe aus.                                                                                                                                                                  |
+   |  Mrd   |    Klicken Sie in FRSI auf <strong>Kreditoren</strong> &gt; <strong>Kreditoren</strong> &gt; <strong>Alle Kreditoren.</strong>     |                                                                                                                                                                    Erstellen Sie einen neuen Kreditorendatensatz für USSI, und wählen Sie die Kreditorengruppe aus.                                                                                                                                                                    |
+   |  C:   |                                  Öffnen Sie in FRSI den Kreditorendatensatz, den Sie gerade erstellt haben.                                  | Klicken Sie im Aktivitätsbereich auf der Registerkarte <strong>Allgemein</strong> und in der Gruppe <strong>Einrichtung</strong> auf <strong>Intercompany</strong>. Auf der Seite <strong>Intercompany</strong> legen Sie auf der Registerkarte <strong>Handelsbeziehung</strong> den <strong>Aktiv</strong>-Schieberegler auf <strong>Ja</strong> fest. Wählen Sie im Feld <strong>Debitorenunternehmen</strong> den Kundendatensatz, den Sie in Schritt A erstellt haben. |
 
-3.  Klicken Sie auf **Projektverwaltung und -buchhaltung** &gt; **Einrichten** &gt; **Preise** &gt; **Interner Verrechnungspreis.**
-4.  Wählen Sie eine Währung, eine Buchungsart und ein Internes Verrechnungspreismodell aus. Die für die Rechnung verwendete Währung ist die Währung, die im Kundendatensatz der ausleihenden juristische Person für die verleihende juristische Person konfiguriert ist. Die Währung wird zur Zuordnung von Einträgen in der Tabelle für den internen Verrechnungspreis genutzt.
-5.  Klicken Sie auf **Hauptbuch** &gt; **Buchungseinrichtung** &gt; **Verrechnung**, und richten Sie eine Beziehung für USSI und FRSI ein.
+
+2. Klicken Sie **Projektverwaltung und -verrechnung** &gt; **Einstellungen** &gt; **Projektverwaltungsbetriebskontoparameter**, und klicken Sie dann auf die Registerkarte **Intercompany** . Die Methode, mit der Sie die Parameter einrichten, hängt davon ab, ob Sie die ausleihende juristische Person oder die Ausleihejuristische Person sind.
+   -   Wenn Sie die ausleihende juristische Person sind, wählen Sie die Beschaffungskategorie, die verwendet werden, um die automatisch generierten Vendorenrechnungen zuzuordnen.
+   -   Wenn Sie die verleihende juristische Person sind, wählen Sie für jede ausleihende Person eine standardmäßige Projektkategorie für jede Buchungsart. Projektkategorien dienen der Steuerkonfiguration wenn die fakturierte Kategorie in Intercompany-Buchungen nur in der ausleihenden juristische Person vorhanden ist. Sie können die Umsatzerlöse für Intercompany-Buchungen antizipieren. Die Antizipierung wird durchgeführt wenn die Buchungen durchgeführt wird. Sie wird storniert wenn die Intercompany-Rechnung gebucht wird.
+
+3. Klicken Sie auf **Projektverwaltung und -buchhaltung** &gt; **Einrichten** &gt; **Preise** &gt; **Interner Verrechnungspreis.**
+4. Wählen Sie eine Währung, eine Buchungsart und ein Internes Verrechnungspreismodell aus. Die für die Rechnung verwendete Währung ist die Währung, die im Kundendatensatz der ausleihenden juristische Person für die verleihende juristische Person konfiguriert ist. Die Währung wird zur Zuordnung von Einträgen in der Tabelle für den internen Verrechnungspreis genutzt.
+5. Klicken Sie auf **Hauptbuch** &gt; **Buchungseinrichtung** &gt; **Verrechnung**, und richten Sie eine Beziehung für USSI und FRSI ein.
 
 ## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Beispiel 2: Erstellen und Buchen von Intercompany-Arbeitszeitnachweisen
 USSI, die verleihende juristische Person, muss die Arbeitszeitnachweise für ein Projekt von FRSI, der ausleihenden juristischen Person, erstellen und buchen. Es gibt zwei Einstiegspunkte für die für diese Aufgabe erforderlichen Schritte.

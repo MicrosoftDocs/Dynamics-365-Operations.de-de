@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Übersicht über Lean Manufacturing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics 365 for Finance and Operations bereit.
 
@@ -40,6 +39,7 @@ Lean Manufacturing stellt Tools bereit, die Sie für die Modellierung schlanker 
 -   Überwachen und Verwalten von Kanban-Einzelvorgängen.
 
 Die Lean Manufacturing-Architektur in Finance and Operations besteht aus Produktionsflüssen, Aktivitäten und Kanban-Regeln. Diese Strukturen sind vollständig mit Finance and Operations-Prozessen integriert. Sie können Lean Manufacturing in einer gemischten Produktionsumgebung verwenden, in der verschiedene Lieferanten-, Produktions- und Beschaffungsstrategien kombiniert sind. Diese Strategien enthalten Produktionsaufträge, Chargenaufträge für die verarbeitende Industrie, Bestellungen und Umlagerungsaufträge.
+
 | **Wichtig**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Sie können Finance and Operations verwenden, um die Implementierung von Lean Manufacturing mit Kanbans zu unterstützen. Die erfolgreiche Implementierung von schlanken Prinzipien ist jedoch von den internen Geschäftsprozessen abhängig, die Sie verwenden, und von den tatsächlichen Produktionsbedingungen und -umgebungen. |

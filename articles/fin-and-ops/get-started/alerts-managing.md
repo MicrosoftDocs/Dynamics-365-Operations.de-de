@@ -24,9 +24,9 @@ ms.lasthandoff: 03/23/2018
 ---
 
 # <a name="batch-processing-for-alerts"></a>Stapelverarbeitung für Warnungen
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 Warnungen werden mit der Stapelverarbeitungsfunktion Microsoft Dynamics 365 for Finance and Operations verarbeitet. Sie müssen die Stapelverarbeitung einrichten, bevor Warnungen übermittelt werden können.
 

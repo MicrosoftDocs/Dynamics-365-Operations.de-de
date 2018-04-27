@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="income-statement-financial-report"></a>Finanzbericht für die Einkommensaufstellung
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel werden die Standardberichte für Einkommensaufstellung beschrieben. Er beschreibt zudem die die Bausteine, die diesen Bericht zugeordnet werden. 
 
@@ -60,7 +59,7 @@ Die Spaltendefinitionen enthalten verschieden Spaltentypen, um verschiedene Stuf
     -   **FD** - Finanzdaten für die aktuelle Periode
     -   **FD** - Finanzdaten seit Jahresbeginn
 
- 
+
 
 <a name="see-also"></a>Siehe auch
 --------

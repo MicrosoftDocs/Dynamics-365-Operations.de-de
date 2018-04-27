@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-workflow"></a>Spesenverwaltungsworkflow
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sie können das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations verwenden, um einen Überprüfungsprozess für Spesenabrechnungen in der Spesenverwaltung einzurichten. Sie können einen Workflow einrichten, um zu bestimmen, wer Spesenabrechnungen unter den folgenden Kriterien genehmigt werden:
 

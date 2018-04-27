@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-journal-entries-and-transactions"></a>Erfassungseinträge und Transaktionen anzeigen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel erklärt die verschiedenen Methoden zum Ansehen von Journal- und Transaktionseinträgen. 
 
@@ -55,7 +54,7 @@ Neben den Finanzberichten können Sie die folgenden Sachkontoberichte verwenden,
 -   **Buchungsgrundlage** – Dieser Transaktionsbericht zeigt das Konto nach Efassuung und nach Transaktions-, Buchhaltungs- und Berichtswährung an. Es wird auch jede Position der Erfassung angezeigt, die als Ausgleich verwendet wurde.
 
 
-##<a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 - [Kontosalden für das Hauptbuch](general-ledger-account-balances.md) 
 - [Buchhaltungsquellen-Explorer](..\accounts-payable\accounting-source-explorer.md)
 - [Finanzberichterstellung](financial-reporting-getting-started.md)

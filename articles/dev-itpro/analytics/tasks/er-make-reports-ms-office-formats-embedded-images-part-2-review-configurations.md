@@ -1,5 +1,5 @@
 --- 
-title: "Überprüfen von Konfigurationen zum Erstellen von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern für elektronische Berichterstellung (ER)"
+title: "Überprüfen von Konfigurationen zum Erstellen von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern"
 description: "Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im\"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: - Einstellungsparameter)\" Aufgabenleitfaden erstellen."
 author: NickSelin
 manager: AnnBe
@@ -16,19 +16,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: dcc162a4c0ba81079eefb7564ab037c1287acd92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fe58809c60fa27a605d84a61893ff569ded058ef
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er"></a>Überprüfen von Konfigurationen zum Erstellen von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern für elektronische Berichterstellung (ER)
+# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Überprüfen von Konfigurationen zum Erstellen von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: Einstellungsparameter)" Aufgabenleitfaden erstellen.
 
-Dieses Verfahren zeigt, wie die elektronische Berichterstattungskonfiguration (ER) entworfen wird, um  elektronische Dokumente zu generieren, die eingebettete Bilder in Microsoft Excel und in Microsoft Word enthalten. In diesem Beispiel überprüfen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. 
+Dieses Verfahren zeigt, wie die elektronische Berichterstattungskonfiguration (ER) entworfen wird, um elektronische Dokumente zu generieren, die eingebettete Bilder in Microsoft Excel und in Microsoft Word enthalten. In diesem Beispiel überprüfen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. 
 
 Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden.
 
@@ -63,7 +63,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 24. Erweitern Sie in der Struktur Layout.
 25. Wählen Sie in der Struktur 'layout\company logo'.
 26. Erweitern oder reduzieren Sie Layout\Unterschrift.
-27. Erweitern Sie in  'layout\watermark'.
+27. Erweitern Sie in 'layout\watermark'.
 28. Schalten Sie „Details anzeigen” ein.
     * Beachten Sie, dass das Scheckdatenmodellelement mit der TmpChequePrintout-Tabelle gebunden ist, das zur Laufzeit Datensätze für Schecks enthält, die der Benutzer für den Druck ausgewählt hat.   
 29. Schließen Sie die Seite.
@@ -86,7 +86,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
     * Beachten Sie, dass Zellenelemente des Formats "CompLogo" den Excel-Artikel darstellen, der verwendet wird, um das Firmenlogobild im Bericht Daten zu ergänzen. Dieses Formatelement wird an das Bilddatenmodellelement gebunden, das zur Laufzeit ein Firmenlogobild im Binärformat enthält.   
 11. Klicken Sie auf die Registerkarte Zuordnung.
 12. Auf Bearbeitung aktiviert klicken.
-    * Beachten Sie, dass Sie Zellen das Element des Formats CompLogo deaktivieren können, so dass es nicht mehr aktiviert ist. In diesem Fall wird das zugeordnete Excel-Bildelement ein Firmenlogo im generierten Bericht verbergen. Wenn der Ausdruck TRUE zurückgibt und die definierte Bindung kein Bild hervorbringt,  wird das zugeordnete Excel-Bildelement ein Bild anzeigen, das in der Tabelle wurde gespeichert.   
+    * Beachten Sie, dass Sie Zellen das Element des Formats CompLogo deaktivieren können, so dass es nicht mehr aktiviert ist. In diesem Fall wird das zugeordnete Excel-Bildelement ein Firmenlogo im generierten Bericht verbergen. Wenn der Ausdruck TRUE zurückgibt und die definierte Bindung kein Bild hervorbringt, wird das zugeordnete Excel-Bildelement ein Bild anzeigen, das in der Tabelle wurde gespeichert.   
 13. Schließen Sie die Seite.
 14. In der Struktur Label Container erweitern.
     * Einige Beschriftungen, die auf dem vorgedruckten Scheckformular produziert werden, werden in den Bericht einbezogen, falls sie für Testzwecke erstellt wurden. Allerdings werden die nicht während des tatsächlichen Drucks gedruckt, da das vorgedruckte Formular diese ie bereits beinhaltet.  

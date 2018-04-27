@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="esr-customer-payments-import"></a>ESR-Debitorenzahlungen für Importe
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Unter dem folgenden Thema finden Sie Informationen zum Importieren von Debitorenzahlungen in das ESR-Forrmat.
 
@@ -45,12 +44,12 @@ Zahlungsreferenzen sollten auf den Zahlungsbeleg gedruckt werden, nachdem sie ge
 Weitere Informationen finden Sie unter [Zahlungsbericht (Giro)](emea-eur-payment-slip-report-giro.md).
 
 ## <a name="import-a-payment-file"></a>Zahlungsdatei importieren
-1.  Gehen Sie zur Seite **Zahlungsjournal**
-2.  Klicken Sie auf **Positionen**.
-3.  Klicken Sie auf **Funktionen** &gt; **Zahlungen importieren**.
-4.  Wählen Sie im Dialogfeld die Zahlungsmethode, und suchen Sie dann den Speicherort der Datei, die importiert werden soll. 
-  > [!NOTE]
-  >  Bevor Sie diesen Schritt ausführen können, müssen Sie die **ESR (CH)** Konfigurationen aus dem Lifecycle Services (LCS) bereits importiert haben und die ESR-Zahlungsmethode einrichten. Weitere Informationen finden Sie unter [Dateiformate für Zahlungen](emea-select-file-formats-for-the-method-of-payments.md).
+1. Gehen Sie zur Seite **Zahlungsjournal**
+2. Klicken Sie auf **Positionen**.
+3. Klicken Sie auf **Funktionen** &gt; **Zahlungen importieren**.
+4. Wählen Sie im Dialogfeld die Zahlungsmethode, und suchen Sie dann den Speicherort der Datei, die importiert werden soll. 
+   > [!NOTE]
+   >  Bevor Sie diesen Schritt ausführen können, müssen Sie die **ESR (CH)** Konfigurationen aus dem Lifecycle Services (LCS) bereits importiert haben und die ESR-Zahlungsmethode einrichten. Weitere Informationen finden Sie unter [Dateiformate für Zahlungen](emea-select-file-formats-for-the-method-of-payments.md).
 
 Nachdem Sie die Zahlungsdatei importieren haben, werden die Zahlungserfassungspositionen für den Ausgleich mit Debitorenrechnungen anhand der Zahlungsreferenz erstellt und markiert. Wenn es Gebühren gibt, die für das Bankkonto angegeben werden, die in der Datei angezeigt werden, wie Buchungen zwischen dem Hauptkonto und dem Gebührenkonto, sind diese Gebühren der Erfassung hinzuzufügen.
 

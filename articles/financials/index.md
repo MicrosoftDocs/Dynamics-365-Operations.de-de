@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-management-home-page"></a>Startseite für die Finanzverwaltung
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Finanzverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/08/2018
 ---
 
 # <a name="vendor-request-configurations"></a>Konfigurationen für Kreditorenanforderungen
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Um eine Kreditorenanforderung abzuschließen, muss eine Kontaktperson des Kreditors den Registrierungs-Assistenten des künftigen Kreditors abschließen.
 
@@ -39,12 +39,12 @@ Standardmäßig ist eine Kreditorenkonfiguration im Kreditorenanforderungskonfig
 
 Es ist nicht möglich, Länder/Regionen für die Standardkonfiguration auszuwählen, somit kann der Abschnitt **Länder/Regionen** nicht geändert werden.
 
-1.  Klicken Sie auf **Beschaffung** > **Einstellungen** > **Kreditoren**, und klicken Sie dann auf **Kreditorenanforderungskonfiguration**.
-2.  Klicken Sie auf die Registerkarte **Felder**, um den Status der aufgeführten Felder festzulegen.
--   Ausgeblendet (Nicht sichtbar)
--   Angezeigt (Sichtbar, aber nicht obligatorisch)
--   Erorderlich (Sichbar und obligatorisch)
-3.  Klicken Sie auf die Registerkarte **Inhalt**, um anzugeben, ob Text im Assistenten angezeigt wird und ob es eine Bestätigung geben soll, dass der künftige Kreditorenbenutzer diesen bestätigen muss, bevor er zum nächsten Schritt im Assistenten wechselt. Die Bestätigung wird für alle Bedingungen angefordert, die der Benutzer akzeptieren muss, um den Vorgang fortzusetzen.
+1. Klicken Sie auf **Beschaffung** > **Einstellungen** > **Kreditoren**, und klicken Sie dann auf **Kreditorenanforderungskonfiguration**.
+2. Klicken Sie auf die Registerkarte **Felder**, um den Status der aufgeführten Felder festzulegen.
+3. Ausgeblendet (Nicht sichtbar)
+4. Angezeigt (Sichtbar, aber nicht obligatorisch)
+5. Erorderlich (Sichbar und obligatorisch)
+6. Klicken Sie auf die Registerkarte **Inhalt**, um anzugeben, ob Text im Assistenten angezeigt wird und ob es eine Bestätigung geben soll, dass der künftige Kreditorenbenutzer diesen bestätigen muss, bevor er zum nächsten Schritt im Assistenten wechselt. Die Bestätigung wird für alle Bedingungen angefordert, die der Benutzer akzeptieren muss, um den Vorgang fortzusetzen.
 
 Sie können auch eine Bestätigungsmeldung eingeben, die angezeigt wird, wenn der Assistent abgeschlossen ist, und Sie können einen oder mehrere Fragebögen hinzufügen.
 

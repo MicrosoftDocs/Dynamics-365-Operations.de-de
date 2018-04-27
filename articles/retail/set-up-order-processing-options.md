@@ -1,9 +1,9 @@
 ---
-title: "Einrichten der Optionen für Verarbeitungsoptionen"
+title: Einrichten eines Callcenterkanals
 description: "Dieses Thema enthält Informationen dazu, wie Aufträge für Callcenter mithilfe Microsoft Dynamics 365 for Retail verarbeitet werden."
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,33 +20,64 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 144bee2102b8d1901d1b4964f6c92501c1cd573d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0d64a27aa8aed10c210ca3c2956dce67f8d634b8
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Auftragsabwicklungsoptionen einrichten
+# <a name="set-up-a-call-center-channel"></a>Einrichten eines Callcenterkanals
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
+Ein Unternehmen kann Telekonferenzcenterkanäle in Microsoft Dynamics 365 for Retail definieren. Callcenterkanäle werden bei **Einzelhandel** \> **Messagingkanäle** \> **Callcenter** \> **Alle Callcenter** konfiguriert und sie sind für eine juristische Person bestimmt.
 
-Dieses Thema enthält Informationen dazu, wie Aufträge für Callcenter mithilfe Microsoft Dynamics 365 for Retail verarbeitet werden. 
+Wenn ein neuer Callcenterkanal erstellt wird, wird er systematisch einer Organisationseinheitsnummer zugewiesen. Da Callcenter als Organisationseinheiten erstellt werden, können Benutzer den Callcenterkanal zu verschiedenen Kleinfunktionen, z. B. Sortimente, Katalogen und bestimmte Lieferarten verknüpfen.
 
-Retail unterstützt mehrere Einzelhandelskanäle, wie Onlineshops, Onlinemarktplätze, physische Läden und Callcenter. In Callcentern nehmen Arbeitskräfte Aufträge von Kunden per Telefon entgegen und erstellen Aufträge. In diesem Thema wird beschrieben, wie ein Callcenter erstellt wird und Callcenteroptionen konfiguriert werden. Jedes Callcenter kann eigene Benutzer, Zahlungsmethoden, Preisgruppen, Finanzdimensionen und Lieferarten haben. Sie können diese Optionen konfigurieren, wenn Sie das Callcenter erstellen. **Wichtig:** Bevor die Callcenterworkflows verwendet werden können, wenn der aktuelle Dynamics AX-Benutzer Aufträge erstellt, muss der Benutzer dem Callcenter als Callcenterbenutzer zugewiesen werden. Darüber hinaus können Sie die Seite **Callcenter** verwenden, um Gruppen von Funktionen zu aktivieren oder zu deaktivieren, die für Callcenter eindeutig sind. Die folgenden Gruppen von Funktionen können aktiviert werden:
+Ein Standardlagerort kann im Feld Callcenterkanal konfiguriert werden. Wenn Aufträge in diesem Kanal erstellt werden, wird der Standardlagerort automatisch im Auftragskopf eingegeben, es sei denn, dass ein anderer Lagerort für den Debitor definiert wurde, der für den Auftrag ausgewählt wird. In diesem Fall wird standardmäßig der Lagerort des Debitors eingegeben.
 
--   **Auftragsabschluss** – Diese Gruppe umfasst Funktionen, die mit Zahlungen und Auftragsabschluss auf der Seite **Auftrag** verknüpft sind.
--   **Direktverkauf** – Diese Gruppe umfasst Funktionen, die Quellcodes, Skripts und Kataloganforderungen zugeordnet sind.
+Benutzer müssen mit einem Callcenterkanal verknüpft werden, um die Funktionen des Callcenters zu verwenden. Jeder Auftrag, den ein Benutzer im Einzelhandel erstellt, wird automatisch in Callcenterkanal dieses Benutzers verknüpft. So wird ein einzelner Benutzer möglicherweise nicht mit mehreren Callcenterkanlälen gleichzeitig verknüpft.
 
-Wenn Sie diese Funktionen in den Callcentereinstellungen aktivieren, sind sie auf der Seite **Auftrag** für Benutzer verfügbar, die dem Callcenter zugeordnet sind. Die meisten dieser Funktionen erfordern zusätzliche Einstellungen, bevor sie verwendet werden können. Bilder und Skripts werden als Teil der Direktverkaufeinstellung für das betreffende Callcenter aktiviert. Wenn dieses Funktion aktiviert ist, werden die Skripts und die Produktbilder im Infoboxbereich der Seite **Auftrag** angezeigt. Das standardmäßige Bild, das für ein Produkt festgelegt ist, wird angezeigt. Skripts können für einen Artikel, einen Katalog, einen Debitor oder einen Artikel im Kontext eines Katalogs konfiguriert werden. Callcenteraufträge haben die Möglichkeit zum Anzeigen zusätzlicher Details, um aufzuzeigen, wie der Preis für eine bestimmte Auftragsposition berechnet wurde. Beispielsweise zeigt der Auftrag, welche Rabatte angewendet wurden. Sie aktivieren diese Funktionen unter **Debitoren** &gt; **Einstellung** &gt; **Debitorenparameter** &gt; **Preis** &gt; **Preisdetails**. Sie können über die Auswahlliste **Auftragszeile** auf der Seite **Preisdetails** darauf zugreifen. Sie können Auftragsereignisüberwachung für Prüfungszwecke verwenden, um die Aktivitäten zu überprüfen, die für einen Auftrag während des Lebenszyklus des Auftrags durchgeführt werden oder die Aktivitäten eines bestimmten Benutzers zu verfolgen. So können Sie beispielsweise die Aktivität jedes Mal erfassen, wenn ein Benutzer einen Auftrag erstellt, eine Sperre für einen Auftrag erteilt, eine Belastung überschreibt oder eine Auftragsposition aktualisiert. Sie können Auftragsereignisse einrichten, um Aktivitäten für bestimmte Benutzer, Benutzergruppen oder alle Benutzer für einen bestimmten Zeitraum zu verfolgen. Sie können die Aktivitäten anzeigen, die in einem Dokument ausgeführt wurden, indem das Formular **Aufträge** über den Aktivitätsbereich im Formular des jeweiligen Dokuments geöffnet wird. Sie können Auftragsereignisse unter **Vertrieb und Marketing** &gt; **Einstellungen** &gt; **Ereignisse** &gt; **Auftragsereignisse konfigurieren.** Wenn ein Auftrag eines Debitors nicht rechtzeitig versendet werden kann, kann ein Unternehmen automatisch Benachrichtigungs-E-Mails an den Debitor senden, um den Auftragsstatus darzulegen und dem Debitor die Gelegenheit zu bieten, den Auftrag zu stornieren. Wenn die Verzögerung sich über einen angegebenen Schwellenwert hinaus ausdehnt, kann der Auftrag automatisch storniert werden. Bis zu drei E-Mail-Nachrichten können in angegebenen Zeitintervallen gesendet werden:
+Ein E-Mail-Benachrichtigungsprofil kann im Callcenterkanal auch so konfiguriert werden. Das Profil definiert den Satz von E-Mail-Vorlagen, der verwendet wird, wenn eine E-Mail an den Debitor gesendet wird, die Aufträge nach den Callcenterkanal aufgeben. Die E-Mail-Trigger können anhand von Systemereignissen, wie Auftragsunterordnung oder Auftragslieferung konfiguriert werden.
 
-1.  **Erste Stornierungsbenachrichtigung** – Der Debitor kann den Auftrag stornieren.
-2.  **Zweite Stornierungsbenachrichtigung** – Der Debitor kann den Auftrag stornieren.
-3.  **Endgültige Stornierungsbenachrichtigung** – Das System storniert den Auftrag, und der Debitor wird über die Stornierung informiert.
+Bevor Vertrieb korrekt durch einen Callcenterkanal verarbeitet werden kann, müssen korrekte [Zahlungsmethoden](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments) und Lieferarten für den Kanal definiert werden.
 
-Sie können einzelne Debitoren und Produkte von dem automatischen Benachrichtigungs- und Stornierungsprozess befreien. Eine Gewinnspannenwarnung wird ausgelöst, wenn Sie einem Auftrag einen Artikel hinzufügen. Die Warnung enthält wichtige Informationen zum Artikel, einschließlich der Preisspanne und der Artikelrentabilität. Sie können diese Informationen verwenden, um zu entscheiden, ob eine Preisüberschreibung angemessen ist, wenn Sie dem Auftrag einen Artikel hinzufügen. Beispielsweise können Sie Schwellenwerte für Gewinnspannen einrichten, um anzugeben, dass ein Schwellenwert von 40 Prozent oder mehr über den Kosten für einen Artikel akzeptabel aber ein Schwellenwert von 20 bis 39 Prozent über den Kosten fragwürdig ist. In diesem Fall löst jeder Artikel, der einen Schwellenwert zwischen 20 und 39 Prozent hat, eine Warnung aus. Artikel, die einen Schwellenwert unter 20 Prozent über Kosten aufweisen, können nicht verkauft und der Artikelpreis nicht geändert werden. Sie können Gewinnspannenwarnungen unter **Debitoren** &gt; **Einstellungen** &gt; **Debitorenparameter** &gt; **Gewinnspannenwarnungen konfigurieren**. Wenn Sie die Mehrwertsteuerzuweisung basierend auf den Standardregeln einrichten, können Sie eine entsprechende Priorität für Adressenelemente bestimmen. Beispielsweise können Sie angeben, dass die Zuordnung einer Mehrwertsteuergruppe nach Postleitzahl eine höhere Priorität hat als die Zuordnung einer Mehrwertsteuergruppe nach Status. Wenn Sie neue Debitorenadressedatensätze eingeben, wird die Mehrwertsteuergruppe automatisch zugeordnet, basierend auf Adressenentsprechungen des Debitors mit den standardmäßigen Regeln und der Prioritätszuordnung, die Sie definiert haben. Sie können diese Funktionen auf der Seite **Hauptbuchparameter** konfigurieren.
+Auf der Ebene des Callcenterkanals, können andere Standardwerte definiert werden, die  Finanzdimensionen zugeordnet werden, die mit Aufträgen verknüpft werden, die in diesem Kanal erstellt werden.
 
+## <a name="options-for-order-processing-behavior"></a>Optionen für Auftragsverarbeitungsverhalten
 
+Drei Einstellungen in der Konfiguration eines Callcenters haben einen Haupteffekt auf die Funktionen, die für Aufträge verfügbar sind, die anhand dieser Callcenter erstellt werden: **Aktivieren Sie Auftragsabschluss**, **Aktivieren des Direktverkauf** und **Aktivieren Sie Auftrags-Preiskontrolle**.
 
+### <a name="enable-order-completion"></a>Auftragsabschluss aktivieren
+
+Die Einstellung im Feld **Aktivieren Sie Auftragsabschluss** im Callcenterkanal hat einen Haupteffekt auf den Auftrag, der den Flow von Aufträgen verarbeitet, die für diesen Kanal eingegeben werden. Wenn diese Einstellung aktiviert ist, müssen alle Aufträge eine Reihe von Validierungsregeln durchlaufen, bevor diese bestätigt werden können. Sie führen diese Regeln aus, indem Sie die Schaltfläche **Vollständig** auswählen, die im Aktivitätsbereich der Seite "Aufträge" hinzugefügt wird. Alle Aufträge, die erstellt werden, wenn die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, müssen den Auftragsabschlussprozess durchlaufen. Dieses Verfahren setzt das Aufzeichnen der Zahlungs- und Zahlungsprüfungslogik durch. Zusätzlich zur Zahlungsdurchführung kann der Auftragsunterordnungsprozess starten, der [Betrugsschecks](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts) auslösen kann, die im System konfiguriert sind. Aufträge, die Zahlungs- oder Betrugsprüfungen nicht erfolgreich durchlaufen, werden gesperrt und können nicht freigegeben werden zur späteren Bearbeitung (wie Entnahme oder Versand) bis das Problem, das die Sperre auslöste, behoben ist.
+
+Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** für den Callcenterkanal aktiviert ist, wenn Positionen in einen Auftrag eingegeben werden und der Kanalbenutzer versucht, das Auftragsformular zu schließen oder vom Auftragsformular wegzunavigieren, ohne zuerst **Vollständig** zu wählen, setzt das System den Auftragsabschlussprozess fest, indem die Auftragsrekapitulationsseite geöffnet wird und verlangt, dass der Benutzer den Auftrag korrekt versendet. Wenn der Auftrag nicht zusammen mit der Zahlung korrekt übermittelt werden kann, kann er die Funktionen [Auftragssperre](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) verwenden, um die Reihenfolge zu sperren. Wenn der Benutzer versucht, die Reihenfolge zu deaktivieren, muss er ihn richtig stornieren, indem entweder die Abbrechen-Funktion oder die Löschfunktion abhängig von der Funktion verwendet wird, die die Sicherheit des Benutzers zulässt.
+
+Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** für den Callcenterkanal aktiviert ist, wird der **Zahlungsstatus** für den Auftrag nachverfolgt. Das System berechnet **Zahlungsstatus** wenn der Auftrag übermittelt wird. Nur Aufträge, die einen genehmigten Zahlungsstatus haben, werden für die Verschiebung vom System für weiteren Auftrag zugelassen, wie Entnahme und Versand. Wenn Zahlungen abgelehnt werden, ist die Markierung **nicht verarbeiten** in dem detaillierten Auftragsstatus aktiviert. Dies sperrt den Auftrag, bis der Zahlungsabgang behoben ist.
+
+Wenn darüber hinaus die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, wenn Benutzer Aufträge erstellen und im Eintragsmodus sind, ist das Feld **Quelle** verfügbar im Hauptauftragskopf. Das Feld **Quelle** wird verwendet, um einen [Katalogquellcode](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs) in einer Direktvertriebsbranche aufzuzeichnen, die Szenario verkauft. Dieser Code kann dann Sonderpreise und Aktionen treiben.
+
+Auch wenn die Einstellung **Aktivieren Sie Auftragsabschluss** deaktiviert ist, können Benutzer einen Quellcode noch in einen Auftrag übernehmen. Allerdings müssen sie zuerst Auftragskopfdetails öffnen, um auf das Feld **Quelle** zuzugreifen. Das bedeutet, es sind einige zusätzliche Klicks notwendig. Dasselbe Verhalten bezieht sich auf Funktionen wie vollständige und beschleunigte Aufträge von Versand. Diese Funktionalität ist für alle Aufträge verfügbar, die in dem Callcenter erstellt werden. Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, können Benutzer die Konfiguration dieser Funktionen im Auftragskopf finden, die im Formular Positionseintragsansicht sind. Sie müssen nicht in die Auftragskopfdetails gehen, um die erforderlichen Einstellungen und Felder zu suchen.
+
+### <a name="enable-direct-selling"></a>Direktverkauf aktivieren
+
+Wenn die Einstellung **Aktivieren des Direktverkauf** für den Callcenterkanal aktiviert ist, können Benutzer die Upsell- und Cross-Sell-Funktionen von Retail nutzen. In diesem Fall erscheint ein Popupfenster bei der Auftragserfassung und schlägt andere Produkte vor, die der Callcenterbenutzer dem Debitor anbieten kann. Die Produkte, die vorgeschlagen werden, basieren auf dem Produkt, das derzeit für die Auftragsposition bestellt wurde. Derzeit sind die Upsell und die Cross-Sell-Vorschläge auf Artikelebene auf Produkte oder Kataloge  konfiguriert. Wenn die Einstellung **Aktivieren des Direktverkauf** für den Callcenterkanal deaktiviert ist, werden Popupfenster nicht in der Verkaufserfassung angezeigt, selbst wenn ein gültiger Upsell oder Cross-Sell für einen Artikel definiert wurden, der bestellt ist.
+
+Wenn die Einstellung **Aktivieren des Direktverkauf** aktiviert ist, werden die Skript- und Bildfunktionen der Auftragseintragsseite auch aktiviert. In diesem Fall ist eine Informationsleiste rechts der Seite bei der Auftragserfassung verfügbar. Dieser Bereich kann die Skripts anzeigen, die mit dem generischen Auftragserfassungsprozess verknüpft sind, den Katalogquellcode, der angewendet wurde, oder die Skripts, die den Artikeln zugeordnet werden, die bestellt wurden. Darüber hinaus kann der Bildbereich ein Produktbild für die Artikel anzeigen, die bestellt wurden, wenn ein Bild für den Artikel in der Produkteinstellung definiert wurde.
+
+### <a name="enable-order-price-control"></a>Auftragspreissteuerung aktivieren
+
+Wenn die Einstellung **Aktivieren Sie Auftrags-Preiskontrolle** gedreht wird, können nur berechtigte Benutzer den Verkaufspreis eines Artikel während der Verkaufserfassung ändern. Die Änderungen müssen innerhalb der angegebenen Toleranzen liegen. Benutzer, die nicht die korrekte Autorisierung haben, müssen stattdessen eine Anforderung für eine Preisänderung übermitteln. Die Anforderung wird dann durch den Systemworkflow zur Prüfung und Genehmigung verarbeitet.
+
+## <a name="channel-users"></a>Kanalbenutzer
+
+Wenn Sie das Callcenterkanal definieren, müssen Sie Kanalbenutzer mit dem Callcenter verknüpfen. Andernfalls kann das Callcenter nicht im System verwendet werden. Wenn Benutzer in Retail unterschreiben und Rücklieferungen und Aufträge auf einer Seite eingeben, die der Verkaufserfassung zugeordnet sind, wird die Benutzerkennung für die Konfiguration des Callcenterkanals geprüft. Wenn ein Benutzer mit einem bestimmten Callcenterkanal verknüpft wird, erben Aufträge, die der Benutzer erstellt hat, die Eigenschaften und Standardwerte des Kanals.
+
+Standardmäßig wird die Markierung **Retailverkauf** im Auftragskopf für alle Aufträge aktiviert, die Callcenterbenutzer erstellen. Hierbei können Aufträge vom Preis des Systems und Funktionen der verkaufsfördernden Maßnahmen profitieren.
+
+Benutzer, die nicht mit einem Callcenterkanal verknüpft sind, nutzen die  Standardauftragserfassungsfunktionen von Microsoft Dynamics 365 for Finance and Operations. Aufträge, die diese Benutzer durch das Auftragseingabeformular eingeben, werden nicht als Retailaufträge systematisch identifiziert. Darüber hinaus sind diese Aufträge, die von diesen Benutzern eingegeben werden, nicht Auftragsabschlussregeln, Einzelhandelspreislogik oder anderen Auftragsprüfungen unterworfen, die in der Callcenterkanalkonfiguration oder im Systemparameter des Callcenters definiert werden können.
+
+Nachdem Sie die Konfiguration des Callcenters abgeschlossen und Kanalbenutzer definiert haben, um das gewünschte Systemverhalten sicherzustellen, überprüfen Sie, ob alle erforderlichen Callcenterparameter bei **Retail** \> **Kanaleinstellung** \> **Callcenter-Einstellung** \> **Callcenter-Parameter** definiert sind. Überprüfen Sie, ob auch zugehörige Nummernkreise definiert sind.
 

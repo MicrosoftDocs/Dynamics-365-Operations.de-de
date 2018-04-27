@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kaban-Einzelvorgang für Lean-Manufacturing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zum Sichtsteuerelement zur Kanban-Einzelvorgangs-Planung und zu unterschiedlichen Methoden, um Kanban-Einzelvorgänge zu planen.  
 

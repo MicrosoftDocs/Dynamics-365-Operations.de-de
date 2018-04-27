@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-centralized-payments"></a>Einrichten zentralisierter Zahlungen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mithilfe dieses Verfahrens wird die Verarbeitung von Zahlungen einer juristischen Person vorbereitet, die im Auftrag anderer juristischer Personen innerhalb der Organisation abgewickelt werden. Zunächst müssen jedoch die folgenden Einrichtungsverfahren ausgeführt werden:
 

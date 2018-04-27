@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="175-percent-reducing-balance-depreciation"></a>Degressive Abschreibung (175 Prozent)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel gibt eine Übersicht der 175 prozentigen Reduktionssaldomethode der Abschreibung.
 
@@ -68,6 +67,7 @@ Wenn als Abschreibungsjahr **Steuerlich** ausgewählt wird, stehen im Feld **Per
 -   **Finanzzeitraum** berechnet den Gesamtbetrag der Abschreibung für das Geschäftsjahr. Dieser Betrag wird auf Steuerperioden aufgeteilt, die auf der Seite **Steuerkalender** definiert werden.
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Beispiel für die Abschreibungsmethode "175 % degressiv"
+
 |                                |        |
 |--------------------------------|--------|
 | Anschaffungskosten               | 11.000 |

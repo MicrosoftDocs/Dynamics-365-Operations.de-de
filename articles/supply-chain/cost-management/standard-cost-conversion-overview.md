@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="standard-cost-conversion-overview"></a>Standardkostenumrechnung (Überblick)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Eintrag stellt eine Prozessübersicht bereit, die Sie beim Einrichten und Ausführen einer Standardkostenumrechnung unterstützt. Die aufgeführten Schritte werden ausgeführt, nachdem Sie die Voraussetzungen für eine Standardkostenumrechnung abgeschlossen haben. 
 

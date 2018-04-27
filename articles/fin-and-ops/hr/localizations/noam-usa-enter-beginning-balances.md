@@ -18,29 +18,29 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 27c03f7bd61ee7d4cb1d01f04af2f1821e9988e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
 ms.contentlocale: de-de
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Eingeben von Lohnanfangssalden
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, die Daten für eine neue Lohnimplementierung von einem anderen System transferieren. Zur Vorbereitung auf die Eingabe anfänglicher Lohnsalden werden folgende Informationen überprüft:
 
 > * Mitarbeiterdatensätze wurden eingegeben und sind im System verfügbar
 > * Die folgenden Daten wurden eingerichtet und den Mitarbeitern zugewiesen:
-
+> 
 > > * Lohnzyklen und Lohnperioden
 > > * Einkommenscodes
 > > * Steuern
 > > * Vergütungen und Abzüge
-
+> 
 > * Das Unternehmen sollte ein Datum ausgewählt haben, an dem die Anfangssalden für Löhne festgelegt werden.
-
+> 
 > * Informationen wurden zu allen Einnahmen, Vergütungen/Abzüge, Vorteilsbeiträge, Mitarbeitersteuern und Arbeitgebersteuern und deren Beträge seit Jahresbeginn aus dem alten System erfasst.
 
 Wenn Sie planen, Anfangssalden einzugeben, überlegen Sie, wie genau die Daten sein müssen. Die meisten Unternehmen geben einen einzelnen, konsolidierten Betrag seit Jahresbeginn ein. Wenn detailliertere Informationen erforderlich sein, können Salden in vierteljährliche Stufen eingegeben werden. Die festgelegte benötigte Detailebene gibt vor, wie viele manuelle Zahlungsaufstellungen für jede Arbeitskraft erstellt werden müssen. Für einen einzelnen Betrag seit Jahresbeginn ist nur eine manuelle Aufstellung pro Mitarbeiter erforderlich. Verwenden Sie dazu die Beträge seit Jahresbeginn von der letzten Zahlungsaufstellung aus dem alten System, und geben Sie diesen Betrag in das neue Lohnsystem ein.
@@ -128,22 +128,22 @@ Nachdem Sie Zahlungsaufstellungen generiert haben, die Anfangssalden haben, müs
 
 4. Öffnen Sie die Registerkarte **Vergütungsabzüge** und geben Sie Folgendes ein:
 
-| Feld                           | Wert            |
-|---------------------------------|------------------|
-| Vergütung                         | Abzugsbetrag |
-| 401K | Teilnehmen              | 3000.00          |
-| Zahnbehandlungs-Zusatzversicherung | SubSp                  | 495,00           |
-| Betreuungskosten | Teilnehmen | 2500.00          |
-| Vision | SupSp                  | 500,00           |
+|       Feld       |      Wert       |
+|-------------------|------------------|
+|      Vergütung      | Abzugsbetrag |
+|       401K        |   Teilnehmen    |
+|      Zahnbehandlungs-Zusatzversicherung       |      SubSp       |
+| Dep. Pflegeausgaben/// |   Teilnehmen    |
+|      Vision       |      SupSp       |
 
 5. Geben Sie auf der Registerkarte **Vergütungsbeiträge** Folgendes ein:
 
-| Feld              | Wert               |
-|--------------------|---------------------|
-| Vergütung            | Beitragsbetrag |
-| 401K | Teilnehmen | 3000,00             |
-| Zahnbehandlungs-Zusatzversicherung | SubSp     | 495,00              |
-| Vision | SubSp     | 500,00              |
+|  Feld  |        Wert        |
+|---------|---------------------|
+| Vergütung | Beitragsbetrag |
+|  401K   |     Teilnehmen     |
+| Zahnbehandlungs-Zusatzversicherung  |        SubSp        |
+| Vision  |        SubSp        |
 
 6. Geben Sie auf der Registerkarte **Steuerabzüge** Folgendes ein:
 
@@ -156,8 +156,8 @@ Nachdem Sie Zahlungsaufstellungen generiert haben, die Anfangssalden haben, müs
 7. Geben Sie auf der Registerkarte **Steuerbeiträge** Folgendes ein:
 
 8. Klicken Sie auf **Berechnen**.
-> [!IMPORTANT] 
-> Stellen Sie sicher, dass die Summen der Zahlungsaufstellung mit dem Betrag seit Jahresanfang des alten Systems für die Arbeitskraft übereinstimmen. Sie möchten im nächsten Schritt möglicherweise das Abschließen aufschieben, um eine allgemeine Validierung der Zahlungsaufstellungen im Aggregat durchzuführen. Gehen Sie nach der Validierung die einzelnen Zahlungsaufstellungen durch, und schließen Sie sie ab.
+   > [!IMPORTANT] 
+   > Stellen Sie sicher, dass die Summen der Zahlungsaufstellung mit dem Betrag seit Jahresanfang des alten Systems für die Arbeitskraft übereinstimmen. Sie möchten im nächsten Schritt möglicherweise das Abschließen aufschieben, um eine allgemeine Validierung der Zahlungsaufstellungen im Aggregat durchzuführen. Gehen Sie nach der Validierung die einzelnen Zahlungsaufstellungen durch, und schließen Sie sie ab.
 
 Der gleiche Vorgang kann in den Viertelschritten für alle vorherigen Quartale in den einzelnen Jahren durchgeführt werden. Dies ist nur erforderlich, wenn der Debitor die Daten nach Quartal anzeigen muss, ohne auf das alte System zurückzugreifen.
 

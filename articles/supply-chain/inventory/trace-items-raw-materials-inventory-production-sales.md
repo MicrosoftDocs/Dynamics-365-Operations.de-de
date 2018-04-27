@@ -19,17 +19,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 98f5696cd6a279bdf0f8d9026a74e5a9bccd2f13
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
 ms.contentlocale: de-de
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Verfolgen von Artikeln und Rohmaterialien im Bestand, in der Produktion und im Verkauf
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Artikelverfolgung verwenden können, um erkennen zu können, wo Artikel oder Rohmaterial verwendet wurden, verwendet werden oder zukünftig in der Produktion und in den Verkaufsprozessen verwendet werden.
 
@@ -129,7 +128,7 @@ Nachdem Sie die Verfolgung ausgeführt haben, können Sie die folgenden Optionen
 Wenn Sie die Option **Neu rückwärts** oder **Neu vorwärts** anwenden möchten, müssen Sie die Funktion **In einem neuen Fenster öffnen** verwenden, um eine neue Verfolgung in einem neuen Fenster anzeigen zu können.
 
 ## <a name="can-i-save-the-trace-details"></a>Kann ich die Verfolgungsdetails speichern?
-Sie können die Informationen auf der Registerkarte **Details**als XML-Datei speichern, indem Sie auf **Exportieren** unterhalb der Aktion ****Verfolgung**** im Aktivitätsbereich klicken. Neben den Verfolgungsdetails beinhaltet die XML-Datei auch die Verfolgungskriterien, übergeordnete Knoten und die verfügbare Menge. Die Möglichkeit, eine Verfolgung zu speichern ist zweckmäßig, wenn Sie die Informationen beispielsweise einem Qualitätsprüfungsauftrag oder einer anderen Kompatibilitätsdokumentation hinzufügen möchten. Sie können angeben, wo die Datei gespeichert wird. Aktivieren Sie zum sofortigen Anzeigen der Datei das Kontrollkästchen **Dokument anzeigen**. **Hinweis:** Die Datei wird immer gespeichert, auch wenn Sie sie nur anzeigen möchten. Die XML-Datei wird standardmäßig in einem Browserfenster geöffnet. Sie können jedoch auch mit der rechten Maustaste auf die Datei klicken, **Öffnen mit** auswählen, und dann das Programm auswählen, mit dem Sie die Inhalte anzeigen möchten.
+Sie können die Informationen auf der Registerkarte <strong>Details</strong> als XML-Datei speichern, indem Sie auf <strong>Exportieren</strong> unterhalb der Aktion *<strong><em>Verfolgung</em></strong> *im Aktivitätsbereich klicken. Neben den Verfolgungsdetails beinhaltet die XML-Datei auch die Verfolgungskriterien, übergeordnete Knoten und die verfügbare Menge. Die Möglichkeit, eine Verfolgung zu speichern ist zweckmäßig, wenn Sie die Informationen beispielsweise einem Qualitätsprüfungsauftrag oder einer anderen Kompatibilitätsdokumentation hinzufügen möchten. Sie können angeben, wo die Datei gespeichert wird. Aktivieren Sie zum sofortigen Anzeigen der Datei das Kontrollkästchen <strong>Dokument anzeigen</strong>. <strong>Hinweis:</strong> Die Datei wird immer gespeichert, auch wenn Sie sie nur anzeigen möchten. Die XML-Datei wird standardmäßig in einem Browserfenster geöffnet. Sie können jedoch auch mit der rechten Maustaste auf die Datei klicken, <strong>Öffnen mit</strong> auswählen, und dann das Programm auswählen, mit dem Sie die Inhalte anzeigen möchten.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Kann ich einen Saldo für einen bestimmten Artikel oder eine Substanz berechnen?
 Sie können die Informationen aus den zusammengefassten Seiten in Microsoft Excel exportieren. Öffnen Sie die entsprechende Seite, klicken Sie auf das Symbol **In Microsoft Office öffnen** , und wählen Sie dann **Nach Microsoft Excel exportieren** aus. Diese Funktion ist insbesonders dann hilfreich, wenn Sie einen Massensaldo für einen Artikel oder eine einzelne Substanz von der Seite **Buchungszusammenfassung** berechnen möchten. Auf der Seite **Buchungszusammenfassung** können Sie nach Artikel oder Substanz und wahlweise nach Charge filtern und dann die Informationen in Excel exportieren. In Excel können Sie beispielsweise die verfügbare Menge, die Menge, die verkauft wurde, und den Betrag, der in der Produktion verwendet wurde, isolieren.

@@ -19,17 +19,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 4016fa4dccd7c58834d56f7af86e05fc0e7f3439
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f118ef38e88171ad1eac463078acf37ba4390e57
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="merge-inventory-batches"></a>Lagerchargen zusammenführen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen, wie zwei oder mehr Lagerchargen in einer zusammengeführte Charge konsolidiert werden.
 
@@ -52,7 +51,7 @@ Ja, gibt es mehrere Dinge, die Sie einrichten müssen, bevor Sie die Zusammenfü
 <tbody>
 <tr class="odd">
 <td>Journale, Lager</td>
-<td>Sie müssen einen Journalname des Tpys Stücklisten erstellen, das standardmäßig verwendet wird, wenn Sie Chargenzusammenführungen in Bestandserfassungen buchen. Optional aber empfohlen: Sie können angeben, dass Reservierungen automatisch vorgenommen werden, wenn die Chargenzusammenführung in die Bestandserfassung übertragen wird. Andernfalls besteht ein Risiko, dass der verfügbare Bestand nach der Einrichtung und Buchung der Chargenzusammenführungsdetails geändert wird. Um automatische Reservierungen für die Erfassung zu aktivieren, wählen Sie im Feld <strong><strong>Reservierung</strong> </strong>den Wert <strong>Automatisch</strong> aus.</td>
+<td>Sie müssen einen Journalname des Tpys Stücklisten erstellen, das standardmäßig verwendet wird, wenn Sie Chargenzusammenführungen in Bestandserfassungen buchen. Optional aber empfohlen: Sie können angeben, dass Reservierungen automatisch vorgenommen werden, wenn die Chargenzusammenführung in die Bestandserfassung übertragen wird. Andernfalls besteht ein Risiko, dass der verfügbare Bestand nach der Einrichtung und Buchung der Chargenzusammenführungsdetails geändert wird. Um automatische Reservierungen für die Erfassung zu aktivieren, wählen Sie im Feld <strong><strong>Reservierung</strong></strong> den Wert <strong>Automatisch</strong> aus.</td>
 </tr>
 <tr class="even">
 <td>Parameter für Lager- und Lagerortverwaltung</td>

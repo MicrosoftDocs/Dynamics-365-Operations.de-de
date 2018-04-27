@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="total-cost-allocation-method"></a>Gesamtkostenzuteilungsmethode
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel zeigt die Richtlinien für die Verwendung der Gesamtkostenzuteilung auf. Gesamtkostenzuteilung ist eine Methode zur Berechnung der Kosten zwischen dem Hauptformelartikel für einen Chargenauftrag und den Kuppelprodukten, die für die Formel definiert werden.
 

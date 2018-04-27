@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanungsvorlage für Excel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Microsoft Excel-Vorlagen erstellt werden, die mit Budgetplänen verwendet werden können.
 
@@ -42,11 +41,11 @@ Budgetplandokumente können mithilfe einer oder mehrerer Layouts angezeigt und b
 1. Öffnen Sie die **Budgetplanliste** (**Budgetierung** &gt; **Budgetpläne**). 
 2. Klicken Sie auf **Neu**, um einen neuen Budgetplan zu erstellen. 
 
-  [![Budgetplanliste](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Budgetplanliste](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Mithilfe der Zeilenoption **Hinzufügen** fügen Sie Zeilen hinzu. **Layouts** klicken, um die Budgetplandokument-Layoutkonfiguration anzuzeigen. 
 
-  [![Budgetpläne hinzufügen](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Budgetpläne hinzufügen](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Sie können die Layoutkonfiguration anschauen und nach Bedarf anpassen. 
 1. Wechseln Sie zu **Vorlage** &gt; **Erstellen**, um eine Excel-Datei für dieses Layout zu erstellen. 

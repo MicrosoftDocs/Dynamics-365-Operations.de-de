@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="create-service-agreement-groups"></a>Erstellen von Servicevereinbarungsgruppen 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Servicevereinbarungsgruppen sind hilfreich beim Sortieren und Filtern von Servicevereinbarungen.
 

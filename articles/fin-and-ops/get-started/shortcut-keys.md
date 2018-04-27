@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Dynamics 365 for Finance and Operations stehen die folgenden Tastenkombinationen zur Verfügung. 
 
@@ -39,6 +38,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 
 ## <a name="action-shortcuts"></a>Aktivitätskürzel
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Aktion**                                    | **Taste(n)**                        |
@@ -55,6 +55,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Zurzeit verfügbare Tastenkombinationen anzeigen                | ALT+UMSCHALT+ K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Datumsauswahlverknüpfungen
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Aktion**                        | **Taste(n)**                                 |
@@ -68,6 +69,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | „Nie” auswählen (oder das maximale Datum)          | N                                         |
 
 ## <a name="factbox-shortcuts"></a>Infoboxverknüpfungen
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | **Aktion**                                                                  | **Taste(n)**                                 |
@@ -79,6 +81,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Die aktuelle Infobox reduzieren                                                    | ALT+0                                     |
 
 ## <a name="filtering-shortcuts"></a>Verknüpfungen filtern
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | **Ergebnis**                     | **Drücken**                |
@@ -89,6 +92,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Erweiterte Filterung/Sortierung öffnen                                      | STRG+UMSCHALT+F3            | 
 
 ## <a name="form-shortcuts"></a>Formularverknüpfungen
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | **Ergebnis**                                      | **Drücken**         |
@@ -110,6 +114,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Das Formular schließen und dabei alle nicht gespeicherten Änderungen verwerfen       | ALT+UMSCHALT+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Formularnavigationsverknüpfungen
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Aktion**                                      | **Taste(n)**                                    |
@@ -128,6 +133,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Zur Zeilenansicht wechseln                                | STRG+UMSCHALT+L                                 |
 
 ## <a name="grid-shortcuts"></a>Rasterverknüpfungen
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Aktion**                                                                                                         | **Taste(n)**                       |
@@ -148,6 +154,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | EINGABETASTE                           |
 
 ## <a name="input-control-shortcuts"></a>Eingabesteuerungsverknüpfungen
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | **Aktion**                                                               | **Taste(n)**                     |
@@ -163,6 +170,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Fokus zwischen dem Textbereich und der Symbolleiste in einem HTML-Editorsteuerelement wechseln | F6                            |
 
 ## <a name="messaging-shortcuts"></a>Nachrichtenverknüpfungen
+
 |                          |               |
 |--------------------------|---------------|
 | **Aktion**           | **Taste(n)**     |
@@ -170,6 +178,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Zur Meldungsleiste wechseln    | STRG+F7       |
 
 ## <a name="navigation-shortcuts"></a>Navigationsverknüpfungen
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | **Aktion**                                                                | **Taste(n)**                  |
@@ -191,6 +200,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Zum Bereich „Infobox” wechseln (was möglicherweise einschließt, ihn zu öffnen)                       | ALT+M,B oder STRG+F2         |
 
 ## <a name="personalization-shortcuts"></a>Personalisierungsverknüpfungen
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Aktion**                                                                                                         | **Taste(n)**                           |
@@ -219,6 +229,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Personalisierungsmodus beenden (wenn im Personalisierungsmodus)                                                               | ESC                                 |
 
 ## <a name="segmented-entry-shortcuts"></a>Segmentierte Eintragsverknüpfungen
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Aktion**                                                                                                          | **Taste(n)**                        |

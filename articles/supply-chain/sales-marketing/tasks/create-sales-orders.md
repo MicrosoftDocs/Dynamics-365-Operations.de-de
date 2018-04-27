@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-orders"></a>Aufträge erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie ein Auftrag erstellt wird. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Aufträge werden normalerweise von einem Auftragsprozessor erstellt. 
 

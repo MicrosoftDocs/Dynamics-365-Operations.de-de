@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d575e2b0215b0e8c4b6cb1b17c0f1d908b862e9d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 850a40cc29f51521636c01f6ac1cfa54d3bd7798
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="organize-report-components-in-report-designer"></a>Organisieren von Berichtskomponenten im Berichtsdesigner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Nachdem Sie Bausteine und generierte Berichte entworfen haben, ist es hilfreich, diese Objekte zu organisieren, sodass sie vom Benutzer leichter gefunden werden können. Dieser Artikel erläutert, wie vorhandene Berichte, Bausteine und Objekte im Berichts-Designer organisiert werden.
 
@@ -106,8 +105,8 @@ In der folgenden Tabelle werden die Steuerelemente der Registerkarte **Berichtsg
 <td>Detailebene</td>
 <td>Spezifizieren Sie die für den Bericht gewünschte Detailstufe.
 <ul>
-<li><strong>Financial</strong>− Ein übergeordneter Zusammenfassungsbericht. Sie können keine Detailinformationen zu Konten und Dimensionen durchführen, ausgenommen derer, die Sie über die Berichtstruktur hinzugefügt haben.</li>
-<li><strong>Finanzen &amp; Konto</strong>− Ein Bericht, der eine übergeordnete Zusammenfassung und Kontodetails enthält.</li>
+<li><strong>Financial</strong> − Ein übergeordneter Zusammenfassungsbericht. Sie können keine Detailinformationen zu Konten und Dimensionen anzeigen, ausgenommen derer, die über die Berichtsstruktur hinzugefügt wurden.</li>
+<li><strong>Finanzen &amp; Konto</strong> − Ein Bericht, der eine übergeordnete Zusammenfassung und Kontodetails enthält.</li>
 <li><strong>Finanzen, Konto &amp; Buchung</strong> − Ein Bericht, der eine übergeordnete Zusammenfassung und Buchungsdetails enthält.</li>
 </ul></td>
 </tr>
@@ -115,9 +114,9 @@ In der folgenden Tabelle werden die Steuerelemente der Registerkarte **Berichtsg
 <td>Vorläufig</td>
 <td>Spezifizieren Sie die für den Bericht gewünschten Aktivitätstypen.
 <ul>
-<li><strong>Nur gebuchte Aktivität</strong>− Enthält nur die Buchungen und Salden, die in den Finanzdaten gebucht wurden.</li>
-<li><strong>Gebuchte und nicht gebuchte Aktivität</strong>− Enthält alle Buchungen und Salden, die in den Finanzdaten eingegeben und gebucht wurden.</li>
-<li><strong>Nur nicht gebuchte Aktivität</strong>− Enthält nur Buchungen, die in die Finanzdaten eingegeben, aber noch nicht gebucht wurden.</li>
+<li><strong>Nur gebuchte Aktivität</strong> − Enthält nur die Buchungen und Salden, die in den Finanzdaten gebucht wurden.</li>
+<li><strong>Gebuchte und nicht gebuchte Aktivität</strong> − Enthält alle Buchungen und Salden, die in den Finanzdaten eingegeben und gebucht wurden.</li>
+<li><strong>Nur nicht gebuchte Aktivität</strong> − Enthält nur Buchungen, die in die Finanzdaten eingegeben, aber noch nicht gebucht wurden.</li>
 </ul></td>
 </tr>
 <tr class="odd">

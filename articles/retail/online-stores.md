@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="online-store-overview"></a>Onlineshop – Überblick
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Onlineshops und wie man sie in Microsoft Dynamics 365 for Retail einrichtet.
 

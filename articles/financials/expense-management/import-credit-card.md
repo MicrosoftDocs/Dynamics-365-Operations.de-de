@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-and-maintain-credit-card-transactions"></a>Kreditkartenbuchungen importieren und verwalten
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ausgabenbezogenen Kreditkartenbuchungen können eingerichtet werden, damit sie automatisch auf wiederkehrender Basis die Daten importieren. Alternativ können die Buchungen manuell importiert werden, wenn diese benötigt werden. Die Kreditkartentransaktionen werden über Kreditkartenbuchungs-Entität importiert.
 

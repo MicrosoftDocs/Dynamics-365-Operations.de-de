@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Erstellen von Konsolidierungskontengruppen und zusätzlicher Konsolidierungskonten
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzlichen Konsolidierungskonten und erläutert, wie sie in Microsoft Dynamics 365 for Finance and Operations verwendet werden.
 

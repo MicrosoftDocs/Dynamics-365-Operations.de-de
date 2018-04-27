@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="personnel-actions-faq"></a>Personalaktivitäten [FAQ]
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dieses Thema enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Ihre Organisation Mitarbeiteraktivitäten verwendet. Mitarbeiteraktivitäten sind zusätzliche Schritte, die Sie ausführen müssen, wenn Sie bestimmte mitarbeiterbezogene Aufgaben ausführen. Beispiele für Aufgaben, die möglicherweise Mitarbeiteraktivitäten erforderten, sind, wenn Sie neue Positionen erstellen, vorhandene Positionswerte ändern, neue Arbeitskräfte einstellen, Arbeitskräfte übertragen, Arbeitskraftvergütung ändern, Positionszuordnungen ändern oder Arbeitskräfte beenden.
 
@@ -64,9 +64,9 @@ Ja, Sie können Personalaktivitäten löschen, die folgende Staus haben: **Entwu
 Wenn eine Mitarbeiteraktionsaufforderung fehlschlägt, führen Sie die folgenden Schritte aus, um den Fehler zu beheben und die Anforderung erneut zu übermitteln:
 
 > 1. Klicken Sie im **Aktivitätsbereich** auf **Fehlertext**, um den Meldungstext anzeigen, der das Problem beschreibt.
-
+> 
 > 2. Klicken Sie im **Aktivitätsbereich** auf **Reaktivieren**, um die aktuellsten Informationen zu laden und den Status der Personalaktivität auf **Entwurf** zurückzusetzen.
-
+> 
 > 3. Beheben Sie den Fehler, und klicken Sie dann auf **Abgeschlossen** oder **Übermitteln**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Was passiert mit einer Mitarbeiteraktivität, die Workflows verwendet, wenn die die endgültige Genehmigung abgeschlossen ist?

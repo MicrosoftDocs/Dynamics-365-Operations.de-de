@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 41f629401731920a9cb6443ada8b1a34a70e8da9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b7d4530ecccf18d9370d84ff2b61be1514b80192
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="bom-designer-functionality"></a>Funktionen des Stücklistendesigners
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Sie die Stücklisten-Designer-Seite verwenden können, um Strukturdarstellungen für Stücklisten (BOMs) zu entwerfen und anzuwenden. Sie können verschiedene Konfigurationen auswählen und festlegen, welche Informationen in den Positionen der Struktur enthalten sein sollen.
 
@@ -66,7 +65,7 @@ Der Filter, der für die Stückliste und Arbeitsplan angewendet wird, wird im Ko
 <tbody>
 <tr class="odd">
 <td>Produktdimensionen</td>
-<td>Wenn das ausgewählte Fertigprodukt ein Produktmaster ist, können Sie die aktiven Produktdimensionen für die Hauptauswahl definieren. <strong>Hinweis:</strong> Wenn Sie den Stücklisten-Designer für ein Produkt öffnen, das kein Produktmaster ist, kann im Dialogfeld <strong>Filtern</strong> keine Produktdimensionen ausgewählt werden.</td>
+<td>Wenn das ausgewählte Fertigprodukt ein Produktmaster ist, können Sie die aktiven Produktdimensionen für die Hauptauswahl definieren. <strong>Hinweis:</strong> Wenn Sie den Stücklisten-Designer für ein Produkt öffnen, das kein Produktmaster ist, können im Dialogfeld <strong>Filtern</strong> keine Produktdimensionen ausgewählt werden.</td>
 </tr>
 <tr class="even">
 <td>Standort</td>
@@ -77,7 +76,7 @@ Der Filter, der für die Stückliste und Arbeitsplan angewendet wird, wird im Ko
 <td>Wählen Sie das Prinzip für die Versionsanzeige aus, das für die aktuelle Stückliste sowie für den aktuellen Arbeitsplan gilt:
 <ul>
 <li>Wird das Prinzip auf <strong>Aktiv oder Ausgewählt/Aktiv</strong> festgelegt, wird die gültige Stückliste bzw. die Arbeitsplanversion für das entsprechende Datum gefunden.</li>
-<li>Wird das Prinzip auf <strong>Ausgewählt/Aktiv oder Ausgewählt </strong>festgelegt ist, können Sie eine Stücklistenversion oder eine Arbeitsplanversion auswählen, indem Sie auf <strong>Stückliste </strong> &gt; <strong>Stücklistenversionen</strong> oder <strong>Arbeitsplan</strong> &gt;  <strong>Arbeitsplanversionen </strong>klicken.</li>
+<li>Wird das Prinzip auf <strong>Ausgewählt/Aktiv oder Ausgewählt</strong> festgelegt ist, können Sie eine Stücklistenversion oder eine Arbeitsplanversion auswählen, indem Sie auf <strong>Stückliste</strong> &gt; <strong>Stücklistenversionen</strong> oder <strong>Arbeitsplan</strong> &gt; <strong>Arbeitsplanversionen</strong> klicken.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -95,20 +94,20 @@ Der Filter, der für die Stückliste und Arbeitsplan angewendet wird, wird im Ko
 </tbody>
 </table>
 
-Wenn Sie den Stücklisten-Designer verwenden, um Stücklisten zu prüfen oder zu bearbeiten, die aus einer oder mehreren Ebenen von Phantomen bestehen, umfasst der Arbeitsplan, der dem obersten Artikel zugeordnet ist, in der Regel die vollständige Stücklistenhierarchie. Um die Übersicht zu vereinfachen, können Sie den Arbeitsplan der obersten Ebene sperren. Klicken Sie dazu auf **Anzeige**&gt; **Arbeitsplan sperren**. Wenn Sie den Arbeitsplan entsperren möchten, klicken Sie auf **Ansicht** &gt; **Arbeitsplan entsperren**.
+Wenn Sie den Stücklisten-Designer verwenden, um Stücklisten zu prüfen oder zu bearbeiten, die aus einer oder mehreren Ebenen von Phantomen bestehen, umfasst der Arbeitsplan, der dem obersten Artikel zugeordnet ist, in der Regel die vollständige Stücklistenhierarchie. Um die Übersicht zu vereinfachen, können Sie den Arbeitsplan der obersten Ebene sperren. Klicken Sie dazu auf **Anzeige** &gt; **Arbeitsplan sperren**. Wenn Sie den Arbeitsplan entsperren möchten, klicken Sie auf **Ansicht** &gt; **Arbeitsplan entsperren**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Stücklisten und Stücklistenpositionen hinzufügen und bearbeiten
-Verwenden Sie die Funktionen **Stücklistenpositionen**oder **Stückliste**, um Stücklistenpositionen oder die Stückliste zu ändern. Wenn Sie einen Knoten in der Struktur auswählen, bestimmt der Typ des Knotens die Funktionen, die zur Verfügung stehen.
+Verwenden Sie die Funktionen **Stücklistenpositionen** oder **Stückliste**, um Stücklistenpositionen oder die Stückliste zu ändern. Wenn Sie einen Knoten in der Struktur auswählen, bestimmt der Typ des Knotens die Funktionen, die zur Verfügung stehen.
 
 | Funktion                            | Beschreibung                                                                                               | Knotentyp und Bedingungen                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Stücklistenpositionen &gt; Bearbeiten                 | Öffnet ein Dialogfeld, in dem Sie die Stücklistenpositionsattribute bearbeiten können.                                             | Diese Funktion ist verfügbar, wenn ein Stücklistenpositionsknoten aktiviert ist.                                                                                                                                                                                                                                   |
 | Stücklistenpositionen &gt; Löschen               | Eine Stücklistenposition aus der ausgewählten Stückliste löschen.                                                                  | Diese Funktion ist nur verfügbar, wenn ein Stücklistenpositionsknoten ausgewählt wurde und die Stückliste nicht für die Bearbeitung gesperrt ist.                                                                                                                                                                                             |
 | Stücklistenpositionen &gt; Vor Position hinzufügen      | Öffnet ein Dialogfeld, in dem Sie eine Produktvariante auswählen können, die vor der ausgewählten Stücklistenposition eingefügt werden soll.         | Diese Funktion ist verfügbar, wenn ein Stücklistenpositionsknoten aktiviert ist.                                                                                                                                                                                                                                   |
-| Stücklistenpositionen &gt; Zur Komponenten-Stückliste hinzufügen | Öffnet ein Dialogfeld, in dem Sie eine Produktvariante auswählen können, die am Ende der ausgewählten Stückliste eingefügt werden soll.       | Diese Funktion ist verfügbar, wenn der ausgewählte Knoten eine ausgewählte Stückliste hat. Wenn diese Funktion nicht verfügbar ist, fehlt möglicherweise eine Stücklistenversion für die ausgewählte Artikelvariante. In diesem Fall können Sie auf **Stückliste**&gt; **Version erstellen** klicken, um die fehlende Version für den ausgewählten Knoten zu erstellen. |
+| Stücklistenpositionen &gt; Zur Komponenten-Stückliste hinzufügen | Öffnet ein Dialogfeld, in dem Sie eine Produktvariante auswählen können, die am Ende der ausgewählten Stückliste eingefügt werden soll.       | Diese Funktion ist verfügbar, wenn der ausgewählte Knoten eine ausgewählte Stückliste hat. Wenn diese Funktion nicht verfügbar ist, fehlt möglicherweise eine Stücklistenversion für die ausgewählte Artikelvariante. In diesem Fall können Sie auf **Stückliste** &gt; **Version erstellen** klicken, um die fehlende Version für den ausgewählten Knoten zu erstellen. |
 | Stücklistenpositionen &gt; Nach Position hinzufügen       | Öffnet ein Dialogfeld, in dem Sie eine Produktvariante auswählen können, die nach der ausgewählten Stücklistenposition eingefügt werden soll.          | Diese Funktion ist verfügbar, wenn ein Stücklistenpositionsknoten aktiviert ist.                                                                                                                                                                                                                                   |
 | Stückliste &gt; Version erstellen             | Erstellen einer neuen Stücklistenversion oder einer Stückliste für die Produktvariante des ausgewählten Knotens.                             | Diese Funktion ist nur verfügbar, wenn der Stücklistenpositionsknoten, der ausgewählt ist, in einen Artikel verknüpft ist, dessen Produktionstyp **Stückliste** oder **Formel** ist.                                                                                                                                                  |
-| Stücklisten &gt;Kalkulation                | Öffnet ein Dialogfeld, in dem Sie die Kosten- oder Verkaufspreisberechnung für die ausgewählte Produktvariante ausführen können. | Diese Funktion ist verfügbar, wenn der ausgewählte Knoten sich auf eine Stücklistenversion bezieht.                                                                                                                                                                                                         |
+| Stücklisten &gt; Kalkulation                | Öffnet ein Dialogfeld, in dem Sie die Kosten- oder Verkaufspreisberechnung für die ausgewählte Produktvariante ausführen können. | Diese Funktion ist verfügbar, wenn der ausgewählte Knoten sich auf eine Stücklistenversion bezieht.                                                                                                                                                                                                         |
 | Stücklisten &gt; Prüfen                      | Validieren und überprüfen Sie die ausgewählte Stückliste.                                                                      | Diese Funktion ist verfügbar, wenn der ausgewählte Knoten sich auf eine Stücklistenversion bezieht.                                                                                                                                                                                                         |
 
 ## <a name="configuring-the-tree-view"></a>Konfigurieren der Strukturansicht

@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="warehouse-work-policies"></a>Lagerortarbeitsrichtlinien
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Lagerortarbeitsrichtlinien in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage von Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird.
 
@@ -68,14 +67,15 @@ Wenn Sie planen, eine Lagerort-Arbeitsrichtlinie dieses Szenarios zu konfigurier
 
 Hier ist ein Beispiel der Arbeitsrichtlinie, die Sie einrichten können, basierend auf diesen Überlegungen.
 
-|                                         |                                                       |
-|-----------------------------------------|-------------------------------------------------------|
-|**Name für Arbeitsrichtlinien**<br>                 |**Arbeitsauftragstypen**<br>                               |
-| Kein Einlagern von 01     `                    |- Einlagerung von Fertigerzeugnissen<br>                           |
-|                                         |**Lagerplätze**<br>                                      |
-|                                         |- O1   |                                               |
-|                                         |**Produkte** <br>                                      |
-|                                         |- SC1                                                  |
+
+|                                       |                                       |
+|---------------------------------------|---------------------------------------|
+| <strong>Name für Arbeitsrichtlinien</strong><br> | <strong>Arbeitsauftragstypen</strong><br> |
+|         Kein Einlagern von 01     `          |     - Einlagerung von Fertigerzeugnissen<br>      |
+|                                       |    <strong>Lagerplätze</strong><br>     |
+|                                       |                 - O1                  |
+|                                       |    <strong>Produkte</strong> <br>     |
+|                                       |                 - SC1                 |
 
 Die folgenden Prozeduren bieten Schritt-für-Schritt-Anweisungen zum Einrichten der Lagerort-Arbeitsrichtlinie für dieses Szenario. Ein Beispielsetup, das zeigt, wie ein Produktionsauftrag an einen Lagerplatz als fertig gestellt gemeldet wird, der nicht kennzeichengesteuert ist, wird ebenfalls beschrieben.
 
@@ -131,7 +131,7 @@ SCHRITTE (25)
 <tr>
 <td></td>
 <td>3.</td>
-<td>Klicken Sie auf Bearbeiten.</td>
+<td>Klicken Sie auf "Bearbeiten".</td>
 </tr>
 <tr>
 <td></td>
@@ -174,7 +174,7 @@ SCHRITTE (25)
 <tr>
 <td></td>
 <td>5.</td>
-<td>Klicken Sie auf Erstellen.</td>
+<td>Klicken Sie auf "Erstellen".</td>
 </tr>
 <tr>
 <td></td>
@@ -199,7 +199,7 @@ SCHRITTE (25)
 <tr>
 <td></td>
 <td>10.</td>
-<td>Klicken Sie auf die Registerkarte Allgemeines.</td>
+<td>Klicken Sie auf die Registerkarte "Allgemein".</td>
 </tr>
 <tr>
 <td></td>
@@ -214,12 +214,12 @@ SCHRITTE (25)
 <tr>
 <td></td>
 <td>13.</td>
-<td>Klicken Sie auf Fertigmeldung.</td>
+<td>Klicken Sie auf "Fertigmeldung".</td>
 </tr>
 <tr>
 <td></td>
 <td>14.</td>
-<td>Klicken Sie auf die Registerkarte Allgemeines.</td>
+<td>Klicken Sie auf die Registerkarte "Allgemein".</td>
 </tr>
 <tr>
 <td></td>

@@ -1,6 +1,6 @@
 ---
 title: Produktkategorieverwaltung
-description: "In diesem Thema wird beschrieben, wie Verkaufmanager Produktkategorien (Einzelhandel) verwenden können, um Beziehungen zwischen Produkthierarchie (Einzelhandel) und freigegebenen Produktdetails zu verwalten."
+description: "In diesem Thema wird beschrieben, wie Verkaufmanager Produktkategorien (Retail) verwenden können, um Beziehungen zwischen der Produkthierarchie (Retail) und freigegebenen Produktdetails zu verwalten."
 author: ashishmsft
 manager: AnnBe
 ms.date: 10/23/2017
@@ -20,44 +20,43 @@ ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 4b7ef962b777a31e1da238a8ec1be9a42ec5bb5f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2246024d7d70947690173f3d0768292abe43efd7
 ms.contentlocale: de-de
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
+# <a name="manage-retail-product-categories-and-products"></a>Verwalten von Produktkategorien (Retail) und Produkten
 
-# <a name="enhanced-product-and-category-management"></a>Verbesserte Kategorie- und Produktverwaltung
+[!INCLUDE [banner](./includes/banner.md)]
 
-[!include[banner](./includes/banner.md)]
+Dieses Thema beschreibt eine erweiterte Art, Produktkategorien (Retail) und Produkte in Microsoft Dynamics 365 for Retail zu verwalten. Mit diesen Erweiterungen können Verkaufsmanager eine Struktur von Produkteigenschaften anzeigen, die von der Produkthierarchie (Retail) und freigegebenen Produktdetails geteilt werden.
 
-Dieses Thema beschreibt eine erweiterte Art, Produktkategorien (Einzelhandel) und Produkte in Dynamics 365 for Retail zu verwalten. Mit diesen Erweiterungen können Verkaufmanager eine Wechselbeziehung zwischen Produkthierarchie (Einzelhandel) und freigegebenen Produktdetails haben.
+Um mehr darüber zu erfahren, wie Produktkategorien (Retail) im Arbeitsbereich **Kategorie und Produktverwaltung** verwaltet werden, wählen Sie die Kachel **Produkthierarchie (Retail)** aus.
 
-Um mehr über das Verwalten von Produktkategorien (Retail) zu ermitteln, gehen sie zu**Produkthierarchie (Retail)** im Arbeitsbereich **Kategorie und Produktverwaltung** und beachten die erweiterte Struktur der Seite **Produktkategorie (Retail)**.
+Beachten Sie die erweiterte Struktur auf der Seite **Produkthierarchie (Retail)**, die angezeigt wird. In älteren Versionen von Retail wurden Produkteigenschaften in *Produktgrundeigenschaften* und *Produkteigenschaften (Retail)*, basierend auf dem Umfang ihrer Anwendbarkeit aufgeteilt. Produkteigenschaften (Retail) sind *global* in ihrem Umfang der Anwendbarkeit. Das bedeutet, dass für eine gegebene Produkteigenschaft (Retail) derselbe Wert für alle juristischen Personen verwendet wird. Produktgrundeigenschaften sind jedoch jeweils *für juristische Personen spezifisch*. Das bedeutet, dass für eine gegebene Produktgrundeigenschaft der Wert je nach juristischer Person verschieden sein kann, basierend auf den einzelne geschäftlichen Anforderungen jeder juristischen Person.
 
-![Kategorie- und Produktverwaltungs-Areitsbereich](media/LaunchRetailProductHierarchy.png)
+In der erweiterten Produktkategoriestruktur (Retail) werden Produkteigenschaften logisch getrennt, basierend auf ihrer Anwendbarkeit in einer Gruppe, um die Struktur der Formularstruktur für freigegebene Produktdetails widerzuspiegeln.
 
-In älteren Versionen wurden Produktattribute in **Grundeigenschaften** und P**roduktattribute Einzelhandel**, basierend auf dem Bereich der Anwendbarkeit aufgeteilt. **Einzelhandelsprodukteigenschaften** sind nach Bereich *global* der Anwendbarkeit, was bedeutet, dass für eine gegebene **Produkteigenschaft Einzelhandel** der gleiche Wert für alle juristischen Personen verwendet wird. **Grundprodukteigenschaften** sind *juristische Personen spezifisch*. Das bedeutet, dass eine gegebene **Grund-Produkteigenschaft** in den juristischen Personen verschieden sein kann, basierend auf den einzelne geschäftlichen Anforderungen.
+![Felder, die auf Grundlage des Umfangs der Anwendbarkeit der Eigenschaften gruppiert sind](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
-Mithilfe dieser Erweiterungen für Produktattribute in der Produktkategorie Einzelhandel trennen wir weiterhin die Felder, die auf der Grundlage ihrer Anwendbarkeit innerhalb einer Gruppe basieren, um die Details für freigegebene Produkte der Formularstruktur widerzuspiegeln.
+Sie können zwischen dem Verwalten von Eigenschaften, die für juristische Personen spezifisch sind, über alle juristischen Personen hinweg und dem Verwalten davon für eine bestimmte juristische Person wechseln.
 
-![Gruppierung der Felder auf der Grundlage ihres jeweiligen Bereich der Anwendbarkeit](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+Um Eigenschaften für alle juristischen Personen zu verwaltet, wählen Sie **Ansicht für alle juristischen Personen** (oder **Bearbeiten für alle juristischen Personen**) aus.
 
-Sie können zwischen dem Verwalten bestimmter Eigenschaften der Entität für alle juristischen Personen und dem Verwalten für eine bestimmte juristische Person wechseln. Wählen Sie einfach **Für alle juristischen Personen anzeigen/bearbeiten** oder **Für eine bestimmte juristische Person anzeigen/bearbeiten** aus.
+![Anzeigen/Bearbeiten für alle juristische Personen](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
-![Toggle-Ansicht zwischen einer Person und allen juristischen Personen](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+Um Eigenschaften für eine bestimmte juristische Person zu verwalten, wählen Sie **Ansicht für eine bestimmte juristische Person** (oder **Bearbeiten für eine bestimmte juristische Person**) aus.
 
-![Toggle-Ansicht zwischen einer Person und allen juristischen Personen](media/ToggleToEditForAllLegalEntities.PNG)  
+![Anzeigen/Bearbeiten für eine bestimmte juristische Person](media/ToggleToEditForAllLegalEntities.PNG)
 
-Verglichen zu älteren Versionen können in der neuen Produktkategorie-Struktur ein Verkaufsmanager Standardwerte für einen zusätzlichen Satz Produktattribute für eine einzelne Kategorien auch definieren. Zum Zeitpunkt der Produkterstellung werden diese Standardprodukteigenschaftswerte durch ein Produkt, basierend auf deren Zuordnung zu einer bestimmten Kategorie in der Produkthierarchie (Einzelhandel) übernommen. Verkaufmanager können diese übernommenen Produktattribute für die einzelnen Produkte ändern, um einzelnen geschäftlichen Bedarf abzudecken.
+In der erweiterten Produktkategoriestruktur kann darüber hinaus ein Verkaufsmanager jetzt Standardwerte für einen zusätzlichen Satz Produktattribute auf der Ebene einer einzelnen Kategorie definieren. Wenn dann die Produkt erstellt werden, erben sie die Standardwerte für ihre Produkteigenschaften basierend auf der Zuordnung dieser Eigenschaften mit einer einzelnen Kategorie in der Produkthierarchie (Retail). Diese geerbten Produkteigenschaften können auch für jedes Produkt geändert werden, um einzelnen geschäftlichen Bedarf abzudecken.
 
-## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Wählen Eigenschaften aus, um Produkte im Formular Produktkategorie (Einzelhandel) zu aktualisieren 
- 
-Sie können diese neue erweiterte Struktur für Produktattribute verwenden, um auszuwählen, welche aktualisierten Produktattribute für die zugehörigen Produkte aktualisiert werden müssen. 
+## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Auswählen von Eigenschaften zum Aktualisieren von Produkten auf der Seite „Produkthierarchie (Retail)”.
 
-![Neue erweiterte Ansicht von Aktualisierungsprodukten](media/NewUpdateProductsEnhancedView.PNG) 
+Sie können die neue erweiterte Struktur für Produkteigenschaften verwenden, um aktualisierte Produkteigenschaften auszuwählen, die an die zugeordneten Produkte mit Push übertragen werden müssen. Wählen Sie auf der Seite **Produkthierarchie (Retail)** im Aktivitätsbereich die Option **Kategorie** aus, und wählen Sie dann **Produkte aktualisieren**, um das Dialogfeld **Produkte aktualisieren** zu öffnen.
 
-Verkaufmanager können diese übernommenen Produktattribute für die einzelnen Produkte ändern, um einzelnen geschäftlichen Bedarf abzudecken.
+![Das Produktedialogfeld aktualisieren](media/NewUpdateProductsEnhancedView.PNG)
 
 

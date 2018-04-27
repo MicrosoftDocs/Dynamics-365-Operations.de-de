@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-terms"></a>Kreditorenzahlungsbedingungen definieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Zahlungsbedingungen für Kreditorenrechnungen einrichten Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 

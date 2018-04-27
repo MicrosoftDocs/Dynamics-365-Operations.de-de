@@ -26,7 +26,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="storno-accounting"></a>Stornobuchung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Stornobuchung ist die Verwendung negativer Zahlen, um Originaleinträge im Journalkonto rückgängig zu machen.
 

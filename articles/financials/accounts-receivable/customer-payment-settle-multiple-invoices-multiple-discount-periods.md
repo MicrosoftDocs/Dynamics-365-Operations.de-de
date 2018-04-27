@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattzeiträume enthalten
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel zeigt, wie mehrere Rechnungen bezahlt werden, wenn jede einzelne Rechnung zum Abzug eines Skontos berechtigt ist. Die Szenarien in diesem Artikel zeigen auf, wie Skonti je nach Zeitpunkt der Zahlung variieren.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-a-product-configuration-model"></a>Ein Produktkonfigurationsmodell genehmigen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Die Ausführung dieser Prozedur erfordert mindestens ein vorhandenes Produktkonfigurationsmodell. Diese Prozedur verwendet das Spitzenlautsprechermodell im Vorführungsunternehmen USMF. Beachten Sie, dass dieses Modell bereits genehmigt wurde. Das Verfahren führt Sie jedoch durch den gesamten Prozess.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Kursschulungen einrichten
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Personalverwaltungsadministratoren und ein Manager können die Kursfunktionen verwenden, um Informationen zur Schulung zu verwalten, welche für Arbeitskräfte angeboten wird.
 
@@ -81,15 +80,15 @@ In der folgenden Tabelle werden die drei Einstellungstypen für Kurse aufgeführ
 
 ## <a name="course-tasks"></a>Kursaufgaben
 Für jeden Kurs können die folgenden Aufgaben ausgeführt werden.
--   Registrieren von Teilnehmern
--   Angeben einer Registrierungsfrist
--   Festlegen der minimalen und maximalen Teilnehmerzahl.
--   Zuweisen eines Kursorts und Kursraums
--   Empfehlen von Hotels für Kursteilnehmer
--   Erstellen einer Kursbeschreibung, mit der Sie im Mitarbeiter-Self-Service-Portal werben können.
+- Registrieren von Teilnehmern
+- Angeben einer Registrierungsfrist
+- Festlegen der minimalen und maximalen Teilnehmerzahl.
+- Zuweisen eines Kursorts und Kursraums
+- Empfehlen von Hotels für Kursteilnehmer
+- Erstellen einer Kursbeschreibung, mit der Sie im Mitarbeiter-Self-Service-Portal werben können.
 
   >**Hinweis** Sie können einen Kurs nur löschen, wenn niemand für ihn registriert ist. 
-    
+
 ## <a name="course-statuses"></a>Kursstatus
 In der folgenden Tabelle werden die möglichen Kursstatus und Aktivitäten aufgelistet, die ausgeführt werden können, wenn der Kurs einen bestimmten Status hat.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-simulation"></a>Preissimulation
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Preissimulation für Angebote. Preissimulation unterstützte Sie dabei, die Auswirkung von Abzügen auf künftigen Verkaufspreisen während dem Angebotsprozess zu evaluieren, bevor Sie einen bestimmten Preis festlegen.
 

@@ -17,16 +17,16 @@ ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 0fb9d48ef6f2fd06223516c0e8af235b354f2a5a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 122f8375c50fa62c4831acc0d059e37a7c1c45f5
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fiscal-service-esr-integration"></a>Integration von steuerlichem Dienst (ESR)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Österreich sollten alle Barzahlungen durch ein externes Gerät oder einen externen Dienst signiert werden, und sie sollten sicher gespeichert werden. In der Tschechischen Republik sollten alle Barzahlungen an das Behördenportal für eine steuerliche Signatur übermittelt werden. In beiden Ländern sollte ein Barbeleg ausgestellt werden, auf dem die Signatur, bzw. Unterschrift gedruckt wird.
 
@@ -90,7 +90,7 @@ Wenn Sie kein Format in der Liste finden, können Sie aktuelle elektronische For
 <td>Aktivieren Sie die Verwendung selbstsignierter Zertifikate.</td>
 <td>
 <ul>
-<li><strong>Verwenden eines selbstsignierten Zertifikats</strong> – Legen Sie diese Option auf <strong>Ja</strong> fest, wenn Sie ein selbst generiertes, selbst signiertes Zertifikat verwenden, das sie nicht der Liste vertrauenswürdiger Zertifikate hinzufügen können.</li>
+<li><strong>Selbstsigniertes Zertifikat verwenden</strong> – Legen Sie diese Option auf <strong>Ja</strong> fest, wenn Sie ein selbst generiertes, selbst signiertes Zertifikat verwenden, das sie nicht der Liste vertrauenswürdiger Zertifikate hinzufügen können.</li>
 <li><strong>Kassenzertifikats-Fingerabdruck</strong> – Geben Sie den Fingerabdruck des selbst signierten Zertifikats ein, das in einem steuerlichen Dienst gespeichert ist und das verwendet wird, um das Zertifikat des steuerlichen Diensts zu überprüfen.</li>
 </ul>
 </td>

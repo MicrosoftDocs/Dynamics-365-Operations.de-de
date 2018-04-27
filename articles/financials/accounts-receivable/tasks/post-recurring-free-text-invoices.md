@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Freitext-Serienrechnungen generieren und buchen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Mit Serienrechnungen wird Debitoren regelmäßig ein stets identischer Betrag in Rechnung gestellt. Für diese Erfassung wird das Demo-Unternehmen USMF verwendet. Die Erfassung ist für die Person bestimmt, die für die Verwaltung und für die Verarbeitung von Debitorenrechnungen zuständig ist.
 

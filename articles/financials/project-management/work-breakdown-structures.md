@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc2fa16a44b6421d56e9cb662cfaa26da5b1c5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="work-breakdown-structures"></a>Projektstrukturpläne
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ein Projektstrukturplan (PSP) ist eine Beschreibung der Arbeit, die für ein Projekt ausgeführt wird. Sie ist eine Hierarchie von Aufgaben, die das Verständnis des Projektteams zur Zusammenstellung der Arbeit und die Größe, Kosten und Dauer der einzelnen Komponenten oder Aufgaben darstellt. Ein PSP hat drei wichtige Funktionen:
 
@@ -115,7 +115,7 @@ Die Zeitplankalkulation ist normalerweise der zweiten Schritt, wenn Sie den PSP 
 
 Das Startdatum einer Blattknotenaufgabe ohne Vorgänger wird automatisch auf das Planungsstartdatum des Projekts festgelegt. Die Dauer einer Blattknotenaufgabe wird immer als die Anzahl von Arbeitstagen zwischen den Start- und Enddatum berechnet. 
 
-****Planungsregeln**** Wenn die automatische Planungshilfe aktiviert ist, gelten folgende Regeln für die Aufgabenplanung für Blattknotenaufgaben:
+*<strong><em>Planungsregeln</em></strong>* Wenn die automatische Planungshilfe aktiviert ist, gelten folgende Regeln für die Aufgabenplanung für Blattknotenaufgaben:
 
 -   Die Start- und Enddatumsangaben einer Aufgabe müssen Arbeitstage gemäß dem Planungskalender des Projekts sein.
 -   Das Startdatum einer Aufgabe mit Vorgänger wird automatisch zum spätestmöglichen Datum aller ihrer Vorgänger festgelegt.

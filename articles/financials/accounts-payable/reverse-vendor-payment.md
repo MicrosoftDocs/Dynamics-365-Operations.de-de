@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-a-vendor-payment"></a>Kreditorenzahlung stornieren
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel beschriebt die Unterschiede zwischen dem Rückbuchen, Löschen, Stornieren und Ablehnen einer Zahlung. Desweiteren werden die zwei Methoden zur Rückbuchung eines Kreditorenschecks erläutert. 
 

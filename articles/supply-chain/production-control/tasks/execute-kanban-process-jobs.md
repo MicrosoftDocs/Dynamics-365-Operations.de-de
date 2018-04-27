@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="execute-kanban-process-jobs"></a>Kanban-Bearbeitungseinzelvorgänge durchführen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur konzentriert sich auf das Ausführen von Kanban-Bearbeitungs-Einzelvorgängen. Der erste Einzelvorgang wird mit der erwarteten Menge abgeschlossen und enthält keine Fehler. Der zweite Einzelvorgang wird mit Fehlern abgeschlossen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist für den Maschinenbediener vorgesehen.
 

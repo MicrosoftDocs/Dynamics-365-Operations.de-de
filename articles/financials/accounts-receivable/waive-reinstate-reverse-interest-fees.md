@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Aufheben, Wiedererheben oder Stornieren von Zinsgebühren
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Belastungen für Zinsen und Gebühren erlassen, erfasst und umgekehrt werden.
 

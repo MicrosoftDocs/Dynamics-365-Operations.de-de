@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="estimate-a-production-order"></a>Produktionsauftrag vorkalkulieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Sie können dieses Verfahren ausführen, indem Sie das USMF-Demodatunternehmen oder Ihren eigenen Datensatz verwenden. In beiden Fällen müssen Sie einen offenen Produktionsauftrag haben, der den Status "Erstellt" aufweist. Dies ist die zweite Prozedur von sieben, die den Produktionsauftrags-Lebenszyklus erklärt.
 

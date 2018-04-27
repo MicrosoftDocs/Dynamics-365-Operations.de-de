@@ -1,5 +1,5 @@
 --- 
-title: "Definieren der Abhängigkeit von Konfigurationen aus anderen Komponenten für elektronische Berichterstellung (ER)"
+title: "Definieren Sie die Abhängigkeit der Konfigurationen von anderen Komponenten"
 description: "Um diese Schritte auszuführen, müssen Sie die Schritte im Aufgabenleitfaden zuerst ausführen, ER Verwaltungsmodellzuordnungskonfiguraion und Sie müssen Zugriff auf Microsoft Dynamics Lifecycle Services (LCS) haben."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a1ccd440353e986d296de370506fb1951331e2cf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cbd65f0734f54ed497758faffb452e4f61ab2089
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>Definieren der Abhängigkeit von Konfigurationen aus anderen Komponenten für elektronische Berichterstellung (ER)
+# <a name="define-the-dependency-of-configurations-from-other-components"></a>Definieren Sie die Abhängigkeit der Konfigurationen von anderen Komponenten 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Um diese Schritte auszuführen, müssen Sie die Schritte im Aufgabenleitfaden zuerst ausführen, ER Verwaltungsmodellzuordnungskonfiguraion und Sie müssen Zugriff auf Microsoft Dynamics Lifecycle Services (LCS) haben.
 
@@ -49,7 +49,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 7. Wählen Sie Microsoft Dynamics 365 for Operations, (1611)
 8. Geben Sie im Feld Version Typ '(7.1.1541.3036,8)' ein.
     * (7.1.1541.3036,8)  
-    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus dem ER-Repository Variantenversion heruntergeladen, wenn Version 1 " der Beispieldatmodell" Konfiguration entweder bereits an der richtigen Stelle ist oder heruntergeladen im Voraus. Wenn sie im Voraus heruntergeladen wird, muss sie im Bereich Finance und Operations die Version 7.1.1541.3036 oder höher aufweisen, darf aber die  Hauptversion. 8 nicht überschreiten.   
+    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus dem ER-Repository Variantenversion heruntergeladen, wenn Version 1 " der Beispieldatmodell" Konfiguration entweder bereits an der richtigen Stelle ist oder heruntergeladen im Voraus. Wenn sie im Voraus heruntergeladen wird, muss sie im Bereich Finance und Operations die Version 7.1.1541.3036 oder höher aufweisen, darf aber die Hauptversion. 8 nicht überschreiten.   
 9. Klicken Sie auf "Speichern".
 10. Schließen Sie die Seite.
 11. Klicken Sie auf "Status ändern".
@@ -62,7 +62,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 18. Microsoft Dynamics AX 7.0 RTW auswählen.
 19. Geben Sie im Feld Version Typ '(7.0.1265.3015,7.1)' ein.
     * (7.0.1265.3015,7.1)  
-    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus dem ER-Repository Variantenversion heruntergeladen, wenn Version 1 " der Beispieldatmodell" Konfiguration entweder bereits an der richtigen Stelle ist oder heruntergeladen im Voraus. Wenn sie im Voraus heruntergeladen wird, muss sie im Bereich Microsoft Dynamics 365 for Finance und Operations die Version 7.0.1265.3015 oder höher aufweisen, darf aber die  Hauptversion. 8 nicht überschreiten.   
+    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus dem ER-Repository Variantenversion heruntergeladen, wenn Version 1 " der Beispieldatmodell" Konfiguration entweder bereits an der richtigen Stelle ist oder heruntergeladen im Voraus. Wenn sie im Voraus heruntergeladen wird, muss sie im Bereich Microsoft Dynamics 365 for Finance und Operations die Version 7.0.1265.3015 oder höher aufweisen, darf aber die Hauptversion. 8 nicht überschreiten.   
 20. Klicken Sie auf "Speichern".
 21. Schließen Sie die Seite.
 22. Klicken Sie auf "Status ändern".

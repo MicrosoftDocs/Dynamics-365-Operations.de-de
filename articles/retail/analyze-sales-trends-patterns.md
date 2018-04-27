@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="analyze-sales-trends-and-patterns"></a>Verkaufstrends und -muster analysieren
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Sie können die Verkaufstrends und -muster mit Microsoft Dynamics 365 for Retail in Echtzeit überwachen.
 

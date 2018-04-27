@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurieren eines Parallelzweigs in einem Workflow
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Führen Sie im Workflow-Editor die folgenden Schritte aus, um einen Parallelzweig zu konfigurieren.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Konsolidierungsgruppen und zusätzliche Konsolidierungskonten erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 In diesem Verfahren sehen Sie, wie eine Konsolidierungskontengruppe erstellt und dann Konten zur Gruppe hinzugefügt werden. Für diese Prozedur wird das Demo-Datenunternehmen USMF verwendet.
 

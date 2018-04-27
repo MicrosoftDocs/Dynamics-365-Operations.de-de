@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-a-service-template-group"></a>Erstellen von Servicevorlagengruppen  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Servicevorlagengruppen dienen zum Sortieren und Filtern von Servicevorlagen.
 

@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 98e32298d1c8285437adf3df9820a71e7a0d7f6c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobile Rechnungsgenehmigungen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mit mobilen Funktionen in Microsoft Dynamics 365 for Finance and Operations können geschäftliche Benutzer mobile Umgebungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieses Thema soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden.
 
@@ -127,7 +126,7 @@ Allgemeine, wenn mit dem mobilen Designer gearbeitet wird, vergewissern Sie sich
 ### <a name="create-the-workspace"></a>Arbeitsbereich erstellen
 
 1.  Öffnen Sie Finance and Operations in einem Browser, und melden sich an.
-2.  Nachdem Sie angemeldet sind, hängen Sie **&mode=mobile** an die URL wie im folgenden Beispiel an und aktualisieren die Seite: https://&lt;ihreUrl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
+2.  Nachdem Sie angemeldet sind, hängen Sie **&mode=mobile** an die URL wie im folgenden Beispiel an und aktualisieren die Seite: https://&lt;ihreUrl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  Klicken Sie auf **Einstellungen** (Zahnrad) in der oberen rechten Ecke der Seite und klicken dann auf **Mobile App**. Der Designer für mobile Apps wird wie die Aufgabenaufzeichnung angezeigt.
 4.  Klicken Sie auf **Hinzufügen** um einen neuen Arbeitsbereich zu erstellen Im vorliegenden Beispiel ist Name des Arbeitsbereichs **Meine Genehmigungen**.
 5.  Geben Sie eine Beschreibung ein.
@@ -173,23 +172,23 @@ Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Geneh
 
 Um die Rechnungsdetailseite für die mobile App zu entwerfen, verwenden Sie die **VendMobileInvoiceHeaderDetails**-Seite in Finance and Operations. Beachten Sie diese, abhängig von der Anzahl der Rechnungen, die Sie in Ihrem System gibt, enthält dieser Seite die älteste Rechnung (die Rechnung, die zuerst erstellt wurde). Sie können den Filter links verwenden um eine bestimmte Rechnung zu suchen. Allerdings benötigen wir keine bestimmte Rechnung für dieses Beispiel. Es müssen nur einige Rechnungsinformationen, sodass wir die mobile Seite zu entwerfen. [![Workflowseite](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  In der Finance and Operations-URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceHeaderDetails**, um das Formular zu öffnen
-2.  Öffnen Sie den Designer von mobilen **Einstellungen** (Zahnrad) Schaltfläche.
-3.  Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten.
-4.  Wählen Sie die **Meine Kreditorenrechnungen** Seite, die Sie eben erstellt haben, und klicken Sie dann **Bearbeiten**.
-5.  Auf der **Felder** Registerkarte klicken Sie auf die Spaltenüberschrift **Raster**
-6.  Auf **Eigenschaften** &gt; **Seite hinzufügen**. **Hinweis:** Wenn Sie auf das **Raster** Überschrift klicken und eine Seite hinzufügen, wird die Beziehung zur Detailseite automatisch bestimmt.
-7.  Geben Sie einen Seitentitel, z.B. **Rechnungsdetails** und einer Beschreibung, wie ein **Ansichtsrechnungskopf und Positionsdetails**.
-8.  Klicken Sie auf **Felder auswählen**. Die Reihenfolge, in der Sie hinzufügen, entspricht der Reihenfolge, in der die Felder an Endbenutzer angezeigt werden. Die einzige Methode, die Reihenfolge der Felder zu ändern ist, indem alle Felder erneut auswählen. 
-9.  Fügen Sie die folgenden Felder aus dem Auftragskopf, basierend auf den Anforderungen für dieses Szenarios hinzu:
-    - Kreditorenname
-    - Rechnungssumme
-    - Rechnungskonto
-    - Rechnungsnummer
-    - Rechnungsdatum
-    - Rechnungsbeschreibung
-    - Fälligkeitsdatum
-    - Rechnungswährung
+1. In der Finance and Operations-URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceHeaderDetails**, um das Formular zu öffnen
+2. Öffnen Sie den Designer von mobilen **Einstellungen** (Zahnrad) Schaltfläche.
+3. Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten.
+4. Wählen Sie die Seite <strong>Meine Kreditorenrechnungen **aus, die Sie zuvor erstellt haben, und klicken Sie dann auf **Bearbeiten</strong>.
+5. Auf der **Felder** Registerkarte klicken Sie auf die Spaltenüberschrift **Raster**
+6. Auf **Eigenschaften** &gt; **Seite hinzufügen**. **Hinweis:** Wenn Sie auf das **Raster** Überschrift klicken und eine Seite hinzufügen, wird die Beziehung zur Detailseite automatisch bestimmt.
+7. Geben Sie einen Seitentitel, z.B. **Rechnungsdetails** und einer Beschreibung, wie ein **Ansichtsrechnungskopf und Positionsdetails**.
+8. Klicken Sie auf **Felder auswählen**. Die Reihenfolge, in der Sie hinzufügen, entspricht der Reihenfolge, in der die Felder an Endbenutzer angezeigt werden. Die einzige Methode, die Reihenfolge der Felder zu ändern ist, indem alle Felder erneut auswählen. 
+9. Fügen Sie die folgenden Felder aus dem Auftragskopf, basierend auf den Anforderungen für dieses Szenarios hinzu:
+   - Kreditorenname
+   - Rechnungssumme
+   - Rechnungskonto
+   - Rechnungsnummer
+   - Rechnungsdatum
+   - Rechnungsbeschreibung
+   - Fälligkeitsdatum
+   - Rechnungswährung
 
 10. Fügen Sie die folgenden Felder aus Positionsraster auf der Seite hinzu:
     - Beschaffungskategorie
@@ -199,7 +198,7 @@ Um die Rechnungsdetailseite für die mobile App zu entwerfen, verwenden Sie die 
     - Steuerbetrag (US 1099)
 
 11. Nachdem alle Felder aus den früheren zwei Schritten hinzugefügt wurden, klicken Sie auf **Fertig**. Die müssen der folgenden Abbildung ähneln.
-[![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 12. Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 13. Klicken Sie auf **Zurück** und **Fertig**, um den Arbeitsbereich zu beenden
 14. Klicken Sie auf **Arbeitsbereich veröffentlichen**, um die Arbeit zu speichern.
@@ -296,14 +295,14 @@ Um Workflowaktivitäten hinzuzufügen, verwenden Sie die **VendMobileInvoiceHead
 
 ### <a name="vendor-invoice-attachments"></a>Kreditorenrechungsanhänge
 
-1.  Klicken Sie auf **Einstellungen** (Zahnrad) in der oberen rechten Ecke der Seite und klicken dann auf **Mobile App**.
-2.  Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten.
-3.  Wählen Sie die **Rechnungsdetails** Seite, die Sie eben erstellt haben, und klicken Sie dann **Bearbeiten**.
-4.  Legen Sie die **Dokumentverwaltung** Option **Ja** wie weiter unten) fest. **Hinweis:** Wenn keine Anforderungen gibt, Zuordnungen im mobilen Gerät angezeigt werden, können Sie diese Option **Nein**, mit der die Standardeinstellung ist.
-![Dokumentverwaltung](./media/docmanagement-216x300.png)
-6.  Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
-7.  Klicken Sie auf **Zurück** und **Fertig**, um den Arbeitsbereich zu beenden
-8.  Klicken Sie auf **Arbeitsbereich veröffentlichen**, um die Arbeit zu speichern.
+1. Klicken Sie auf **Einstellungen** (Zahnrad) in der oberen rechten Ecke der Seite und klicken dann auf **Mobile App**.
+2. Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten.
+3. Wählen Sie die Seite <strong>Rechnungsdetails ** aus, die Sie zuvor erstellt haben, und klicken Sie dann auf **Bearbeiten</strong>.
+4. Legen Sie die **Dokumentverwaltung** Option **Ja** wie weiter unten) fest. **Hinweis:** Wenn keine Anforderungen gibt, Zuordnungen im mobilen Gerät angezeigt werden, können Sie diese Option **Nein**, mit der die Standardeinstellung ist.
+   ![Dokumentverwaltung](./media/docmanagement-216x300.png)
+5. Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
+6. Klicken Sie auf **Zurück** und **Fertig**, um den Arbeitsbereich zu beenden
+7. Klicken Sie auf **Arbeitsbereich veröffentlichen**, um die Arbeit zu speichern.
 
 ### <a name="vendor-invoice-line-distributions"></a>Kreditorrechungspositionsverteilungen
 

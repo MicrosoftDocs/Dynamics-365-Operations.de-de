@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Frachtverkehrsrouten mit mehreren Zwischenstopps planen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die verschiedenen Elemente zur Planung von Transportrouten in Microsoft Dynamics 365 for Finance and Operations.
 

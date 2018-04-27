@@ -18,17 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09addfd9e4a5c601970b5c8c24a3d39b041e07e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Neuheiten und Änderungen in Dynamics 365 for Operations Version 1611 (November 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Operations Version 1611 entweder neu oder geändert sind.
 
@@ -113,6 +112,7 @@ In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Opera
 </table>
 
 ## <a name="expense-management"></a>Spesenverwaltung
+
 | Wie Sie vorgehen können                                                            | Warum dies wichtig ist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kreditkartenbuchungen des ausgeschiedenen Mitarbeiters neu zuweisen.                     | Wenn ein Mitarbeiter gekündigt wird, kann es vorkommen, dass dessen Konto der Active Directory-Domänendienste (AD DS) deaktiviert wird, wenn aktive Kreditkartenbuchungen importiert werden, die als Aufwand gebucht werden müssen. Bisher konnten Sie keinen Stellvertreter für Speseneinträge zuweisen oder die Kreditkartenbuchungen zu Spesenabrechnung zuordnen. Sie können nun die Seite **Kreditkartenbuchungen** verwenden, um den Mitarbeiter für eine Kreditkartenbuchung neu zuzuweisen, wo der zugeordnete Mitarbeiter ausgeschieden ist. Nachdem die Kreditkartenbuchung neu zugewiesen wurde, kann die Buchung für eine Spesenabrechnung ausgewählt werden und über den regulären Prozess für Spesenabrechnungsrückerstattung bezahlt werden. |
@@ -225,6 +225,7 @@ In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Opera
 </table>
 
 ## <a name="human-capital-management"></a>Human Capital Management
+
 | Wie Sie vorgehen können                                                                                | Warum dies wichtig ist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Leistungserfassung erstellen.                                                                  | Vor dem Abschluss einer Prüfung sammeln Sie häufig Informationen zu Aktivitäten oder Ereignissen, die Ihnen während der Überprüfungsperiode bei Ihrer Arbeit geholfen haben. Sie können einen Eintrag zur Leistungserfassung hinzufügen, um diese Aktivitäten und Ereignisse zu dokumentieren. Sie können die Aktivitäten und Ereignisse mit einem Ziel oder einer Leistungsbeurteilung verbinden, um weitere Informationen für den Prüfer bereitzustellen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -579,6 +580,7 @@ Die folgenden Länder benötigen auch Lokalisierung. Die Lokalisierung für dies
 </table>
 
 ## <a name="planning-and-scheduling"></a>Zeitplanung
+
 | Wie Sie vorgehen können                                                                                                                                                                                                      | Warum dies wichtig ist                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Legen Sie Standardauftragseinstellungen für Verkäufe und Käufe basierend auf beliebigen aktiven Produktdimensionen im Produktmaster fest. Sie können deshalb Standardauftragseinstellungen für die Lagermengeneinheit (SKU) oder eine teilweise SKU definieren. | Sie können Standard-Auftragseinstellungsregeln für eine Produktdimension oder eine Kombination aus Produktdimensionen definieren. **Beispiel** Sie verkaufen ein Produkt namens "Polo-Shirt". Das Produkt ist in zwei Farben verfügbar: "Grün" und "Blau". Es ist auch in zwei Größen verfügbar: "Small" und "Medium". Farbe und Größe sind aktive Produktdimensionen für "Polo-T-Shirt". Sie können Einkäufe aller grünen Polo-T-Shirts unabhängig von deren Größe blockieren. |
@@ -624,6 +626,7 @@ Die folgenden Länder benötigen auch Lokalisierung. Die Lokalisierung für dies
 </table>
 
 ## <a name="project-management-and-accounting"></a>Projektverwaltung und -verrechnung
+
 | Wie Sie vorgehen können                                                                                                           | Warum dies wichtig ist                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Verwenden Sie späte Auswahl, wenn Sie Rechnungsvorschläge in einem Stapel buchen.                                                            | Projektbuchhalter können einen Stapelverarbeitungsauftrag einrichten, um Rechnungsvorschläge für die Buchung automatisch aufzuheben, wenn die Vorschläge Kriterien entsprechen, die im Stapelverarbeitungsauftrag angegeben werden. Diese Funktion verbessert die Automatisierung der Rechnungsbuchung, da der Stapelverarbeitungsauftrag fortlaufend ausgeführt werden kann und automatisch Vorschläge für die Buchung aufnimmt. |

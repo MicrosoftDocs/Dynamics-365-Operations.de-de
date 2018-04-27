@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-time-windows"></a>Erstellen von Zeitfenstern   
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sie können Zeitfenster verwenden, um die Planung von Serviceauftragspositionen zu optimieren.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-quality-orders"></a>Qualitätsprüfungsaufträge einrichten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wird, in dem eingehender Lagerbestand direkt nach der Eingangsregistrierung geprüft werden muss. Die Prozedur wird normalerweise von einem Qualitätsmanager ausgeführt. Der Prozess umfasst die Erstellung einer Qualitätsgruppe, um die Artikel zu definieren, bei denen Stichproben durchgeführt werden, und eine Testgruppe, um die Tests zu gruppieren, die an Artikeln in der Qualitätsgruppe ausgeführt werden sollen. Sie können diesen Leitfaden im Demodatunternehmen USMF ausführen.
 

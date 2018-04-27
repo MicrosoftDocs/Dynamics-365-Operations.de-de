@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>SQL Server Reporting Services für eine lokale Bereitstellung konfigurieren
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Gehen Sie nach den Schritten in diesem Thema vor, um SQL Server Reporting Services (SSRS) für ihre Bereitstellung von Microsoft Dynamics 365 for Finance and Operations (On-Premises) zu konfigurieren.
 
@@ -52,13 +52,13 @@ Gehen Sie nach den Schritten in diesem Thema vor, um SQL Server Reporting Servic
 
     [![Registerkarte Webportal-URL](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
-  Nachdem das Portal konfiguriert ist, sieht die Registerkarte **Webportal-URL** aus, wie in der folgenden Graphik gezeigt.
+   Nachdem das Portal konfiguriert ist, sieht die Registerkarte **Webportal-URL** aus, wie in der folgenden Graphik gezeigt.
     [![Registerkarte Webportal](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
     
 8. Klicken Sie auf die Berichts-URL, um das SQL Server Reporting Services-Webportal anzuzeigen. 
-9.  Im Portal erstellen Sie den neuen Ordner **Dynamics**.
+9. Im Portal erstellen Sie den neuen Ordner **Dynamics**.
 
-    [![Ordner Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+   [![Ordner Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
     
 10. Klicken Sie auf die Registerkarte **Reporting Services-Konfigurations-Manager**, klicken Sie auf die Registerkarte **E-Mail-Einstellungen** und stellen Sie sicher, dass die Einstellungen mit der folgenden Graphik übereinstimmen.
 
@@ -68,15 +68,15 @@ Gehen Sie nach den Schritten in diesem Thema vor, um SQL Server Reporting Servic
 
     [![Registerkarte Ausführungskonto](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
     
-  Ändern Sie die Standardeinstellungen auf der Registerkarte **Verschlüsselungs-Schlüssel** nicht. [![Registerkarte Verschlüsselungs-Schlüssel](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+    Ändern Sie die Standardeinstellungen auf der Registerkarte **Verschlüsselungs-Schlüssel** nicht. [![Registerkarte Verschlüsselungs-Schlüssel](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
     
 12. Klicken Sie auf die Registerkarte **Abonnementeinstellungen** und stellen Sie sicher, dass die Einstellungen mit der folgenden Graphik übereinstimmen.
 
     [![Registerkarte Abonnementeinstellungen](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
     
-  Ändern Sie die Standardeinstellungen auf der Registerkarte **Bereitstellung für horizontales Skalieren** nicht. [![Registerkarte Bereitstellung für horizontales Skalieren](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+    Ändern Sie die Standardeinstellungen auf der Registerkarte **Bereitstellung für horizontales Skalieren** nicht. [![Registerkarte Bereitstellung für horizontales Skalieren](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
     
-  Ändern Sie die Standardeinstellungen auf der Registerkarte **Power BI-Integration** nicht. [![Registerkarte Power BI Integration](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
+    Ändern Sie die Standardeinstellungen auf der Registerkarte **Power BI-Integration** nicht. [![Registerkarte Power BI Integration](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
     
 13. Klicken Sie auf **Beenden**, um den **Reporting Services-Konfigurations-Manager** zu schließen.
 

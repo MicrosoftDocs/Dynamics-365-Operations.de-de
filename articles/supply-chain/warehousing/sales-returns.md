@@ -19,17 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa56911c19e9b6514829084221ba03c7cd421c92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e2125b3616310196b2c5ede0ddcaab24856ddc34
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-returns"></a>Retouren
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
 
@@ -134,7 +133,7 @@ Zusätzlich zum bestimmten der Disposition der zurückgegebenen Güter können D
 <ul>
 <li>Es gibt genügend Vertrauen unter den Parteien.</li>
 <li>Die Kosten für die Rücksendung des fehlerhaften Artikels sind zu kostspielig.</li>
-<li>Die Artikel können nicht direkt wieder dem Lager angenommen werden. Aufgrund anderen Bedingungen ist eine physische Rücklieferung nicht erforderlich.</li>
+<li>Die Artikel können nicht zurück in das Lager genommen werden. Aufgrund anderen Bedingungen ist eine physische Rücklieferung nicht erforderlich.</li>
 </ul></td>
 </tr>
 <tr class="even">

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="post-periodic-journals"></a>Periodische Erfassungen veröffentlichen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Periodische Erfassungen werden mitunter als wiederkehrende Erfassungen bezeichnet, da der Betrag, der Text und andere Informationen jedes Mal wiederholt werden, wenn die periodische Erfassung abgerufen wird. Wenn Sie die periodische Erfassung erstellen, geben Sie das Periodenintervall für die Wiederholung an, wie Tage oder Monate. Dieses Aufgabenhandbuch erstellt eine periodische Erfassung mit einer monatlichen Wiederholung.
 

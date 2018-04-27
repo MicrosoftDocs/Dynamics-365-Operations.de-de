@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balance-sheet-financial-reports"></a>Bilanzfinanzberichte
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel werden die Standardberichte für Bilanzen beschrieben. Er beschreibt zudem die die Bausteine, die diesen Berichten zugeordnet werden. 
 
@@ -71,7 +70,7 @@ Die Spaltendefinitionen enthalten verschieden Spaltentypen, um verschiedene Stuf
     -   **DESC** - Die Beschreibung der Zeilendefinition
     -   **FD** - Die Finanzdaten seit Jahresbeginn für das aktuelle Jahr
 
- 
+
 
 <a name="see-also"></a>Siehe auch
 --------

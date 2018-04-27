@@ -25,7 +25,7 @@ ms.lasthandoff: 03/20/2018
 
 # <a name="austria"></a>Österreich
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren Hilfe Sie Dynamics 365 for Finance and Operations für juristische Personen mit einer primären Adresse in Österreich einrichten können.
 

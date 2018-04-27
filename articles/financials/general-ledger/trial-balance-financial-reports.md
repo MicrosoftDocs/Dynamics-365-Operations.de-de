@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="trial-balance-financial-reports"></a>Zwischenbilanzfinanzberichte
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel werden die Standardberichte für Zwischenbilanzen beschrieben. Zudem werden die Bausteine beschrieben, die mit diesen Berichten zugeordnet werden und wie Sie Berichte ändern können, um diese an Ihre geschäftlichen Anforderungen anpassen. 
 
@@ -99,7 +98,7 @@ Jeder Zwischenbilanzbericht verwendet eine andere Spaltendefinition. Diese Spalt
     -   **FD** - Finanzdaten, die nur Soll für das letzte Jahr enthahlten
     -   **FD** - Finanzdaten, die nur Haben für das letzte Jahr enthalten
 
- 
+
 
 <a name="see-also"></a>Siehe auch
 --------

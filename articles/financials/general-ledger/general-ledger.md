@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="general-ledger"></a>Hauptbuch 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Verwenden Sie das Hauptbuch zum Verwalten der Finanzdatensätze der juristischen Person. Das Hauptbuch ist ein Register von Soll- und Habenbuchungen. Diese Einträge werden anhand der in einem Kontenplan aufgeführten Konten klassifiziert. 
 

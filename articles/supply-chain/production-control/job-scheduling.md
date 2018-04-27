@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="job-scheduling"></a>Feinterminierung
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zur Einzelvorgangsterminierung, die ein ausführlicheres Formular der Planung der Grobterminierung ist. Sie können die Feinterminierung verwenden, um Einzelvorgänge oder Bestellungen zu planen und die Fertigungsumgebung zu steuern.
 

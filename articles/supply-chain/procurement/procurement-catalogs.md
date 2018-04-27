@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-catalogs"></a>Beschaffungskataloge
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel wird zusammenfassend beschrieben, wie Einkäufer Beschaffungskataloge einrichten und verwalten können. Beschaffungskataloge definieren Artikel und Dienstleisungen, die Unternehmensmitarbeiter für den internen Gebrauch bestellen können.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="depreciation-adjustments-for-additional-acquisitions-in-the-second-year-germany"></a>Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr (Deutschland)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Handbuch veranschaulicht, wie die Berechnung der Abschreibung für zusätzliche Anschaffungen eingerichtet. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF.
 

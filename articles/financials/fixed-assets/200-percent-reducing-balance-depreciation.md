@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 200 Prozent
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel gibt eine Übersicht die 200 Prozent Reduktionssaldomethode der Abschreibung.
 
@@ -70,6 +69,7 @@ Wenn **Steuerlich** als Abschreibungsjahr ausgewählt wird, stehen im Feld **Per
 -   **Finanzzeitraum** bucht den Gesamtbetrag der Abschreibung, die für das Geschäftsjahr berechnet wird. Dieser Betrag wird auf Steuerperioden aufgeteilt, die auf der Seite **Steuerkalender** definiert werden.
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Beispiel für die Abschreibungsmethode "200 % degressiv"
+
 |                                |        |
 |--------------------------------|--------|
 | Anschaffungskosten               | 11.000 |

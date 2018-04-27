@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f711ef739e8b885f2f09586f34775e826b619c82
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurieren von mobile Geräten für Lagerortarbeit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 
@@ -39,7 +38,7 @@ In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arb
 -   Erstellen Sie Arbeit, die durch einen anderen Prozess ausgeführt wird. Beispielsweise kann das Empfangen eines Artikels für eine Bestellung Einlagerungsarbeit für einen anderen Arbeiter erzeugen.
 -   Führen Sie Arbeit aus, die von einem anderen Prozess (vorhandene Arbeit) erstellt wurde, beispielsweise Einlagerungsarbeit für einen Artikel, der für eine Bestellung eingegangen ist.
 
-Um eine Menüoption für eine Aktivität oder eine Abfrage zu erstellen, legen Sie das **Modus** Feld auf  **Indirekt** fest. Eine Liste von **Aktivitätscode** Optionen wird dann verfügbar, damit Sie den Typ der Abfrage oder die Aktivität auswählen können, dass die Menüoption dafür ist. Um eine Menüoption zu erstellen um Lagerortarbeit zu generieren, legen Sie das Feld **Modus** auf **Arbeit** fest. Eine Liste von **Arbeitserstellungsprozessen** wird dann verfügbar. Um eine Menüoption zur Verarbeitung vorhandener Lagerortarbeit zu erstellen , legen Sie das Feld **Modus** auf **Work** fest, und legen Sie dann die Option **Vorhandene Arbeit verwenden** auf **Ja** fest. **Hinweis** Abhängig vom Modus, den Sie für die Menüoption auswählen, und ob das Menüelement verwendet wird, um vorhandene Arbeit auszuführen, sind zusätzliche Felder für die Menüoption verfügbar. Informationen zu den zusätzlichen Feldauswahlen finden Sie im Abschnitt „Zusätzliche Menüelementoptionen“ in diesem Thema weiter unten.
+Um eine Menüoption für eine Aktivität oder eine Abfrage zu erstellen, legen Sie das **Modus** Feld auf **Indirekt** fest. Eine Liste von **Aktivitätscode** Optionen wird dann verfügbar, damit Sie den Typ der Abfrage oder die Aktivität auswählen können, dass die Menüoption dafür ist. Um eine Menüoption zu erstellen um Lagerortarbeit zu generieren, legen Sie das Feld **Modus** auf **Arbeit** fest. Eine Liste von **Arbeitserstellungsprozessen** wird dann verfügbar. Um eine Menüoption zur Verarbeitung vorhandener Lagerortarbeit zu erstellen , legen Sie das Feld **Modus** auf **Work** fest, und legen Sie dann die Option **Vorhandene Arbeit verwenden** auf **Ja** fest. **Hinweis** Abhängig vom Modus, den Sie für die Menüoption auswählen, und ob das Menüelement verwendet wird, um vorhandene Arbeit auszuführen, sind zusätzliche Felder für die Menüoption verfügbar. Informationen zu den zusätzlichen Feldauswahlen finden Sie im Abschnitt „Zusätzliche Menüelementoptionen“ in diesem Thema weiter unten.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurieren von Menüelementen für Aktivitäten und Abfragen
 Wenn das Feld **Modus** für eine Menüoption auf **Indirekt** festgelegt ist, können Sie eine Menüoption erstellen, um eine allgemeine Aktivität oder eine Abfrage auszuführen, die keine Arbeit erstellt. Die Beispiele umfassen Aktivitäten, wie das erneute Drucken von Ladungsträgerbeschriftungen, und eine Abfrage zu den Artikel in einem Lagerplatz. In der folgenden Tabelle sind die Optionen aufgelistet, die zur Verfügung stehen.
@@ -203,13 +202,13 @@ Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Si
 
 <thead>
 <tr class="header">
-<th>Mit der folgenden Option...</th>
+<th>Option</th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Keine</td>
+<td>None</td>
 <td>Dieser Standardwert verarbeitet keine Arbeit.</td>
 </tr>
 <tr class="even">
@@ -279,7 +278,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Anker von</td>
-<td>Wenn Sie Verankern verwenden, müssen Sie angeben, ob Sie nach Lieferdatum oder nach Ladung verankern möchten.</td>
+<td>Wenn Sie Verankern verwenden, müssen Sie angeben, ob Sie nach Lieferung oder nach Ladung verankern möchten.</td>
 </tr>
 <tr class="even">
 <td>Überwachungsvorlagenkennung</td>
@@ -303,11 +302,11 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Schwellenwerte für permanente Inventur deaktivieren</td>
-<td>Aktivieren Sie diese Option, um die Inventurschwellenwerte zu ignorieren. Wenn Sie diese Option aktivieren, wird Inventurarbeit nicht erstellt, wenn Schwellenwerte überschritten werden.</td>
+<td>Aktivieren Sie diese Option, um die Inventurschwellenwerte zu ignorieren. Wenn Sie diese Option aktivieren, wird Zykluszählungsarbeit nicht erstellt, wenn Schwellenwerte überschritten werden.</td>
 </tr>
 <tr class="even">
 <td>Den Chargendispositionscode anzeigen</td>
-<td>Aktivieren Sie dieses Kontrollkästchen, um Chargendispositionscodes anzuzeigen. Sie können beispielsweise Chargendispositionscodes anzeigen, wenn Sie eine zurückgegebene Charge empfangen. Arbeitskräfte können dann den Status oder die Qualität einer Charge überprüfen und den entsprechenden Code auswählen. Die Regeln im Chargendispositionscode bestimmen, ob die Charge für andere Lagerortprozesse verfügbar ist. Wenn Sie diese Option nicht auswählen, wird eine der folgenden Chargendispositionscodes verwendet:
+<td>Aktivieren Sie dieses Kontrollkästchen, um Chargendispositionscodes anzuzeigen. Sie können beispielsweise Chargendispositionscodes anzeigen, wenn Sie eine zurückgegebene Charge empfangen. Arbeitskräfte können dann den Status oder die Qualität einer Charge überprüfen und den entsprechenden Code auswählen. Die Regeln im Chargendispositionscode bestimmen, ob die Charge für andere Lagerortprozesse verfügbar ist. Wenn Sie diese Option nicht auswählen, wird eine der folgenden Chargendispositionscodes verwendet:
 <ul>
 <li>Wenn Sie eine neue Chargennummer empfangen, wird der standardmäßige Chargendispositionscode verwendet, der auf der Artikelmodellgruppe angegeben ist.</li>
 <li>Der Chargendispositionscode, der bereits der Charge zugeordnet ist, wird verwendet.</li>
@@ -384,7 +383,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Arbeitsvorlagencode</td>
-<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie zum Beispiel einen Artikel für eine Bestellung erhalten, wird die Entnahmearbeit auf Grundlage der Arbeitsvorlage generiert. Wenn Sie keine Arbeitsvorlage auswählen, weist Microsoft Dynamics 365 for Finance and Operations eine Vorlage, basierend auf den Abfragekriterien zu. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
+<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie zum Beispiel einen Artikel für eine Bestellung erhalten, wird die Entnahmearbeit auf Grundlage der Arbeitsvorlage generiert. Wenn Sie keine Arbeitsvorlage auswählen, weist Microsoft Dynamics 365 for Finance and Operations eine Vorlage basierend auf den Abfragekriterien zu. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -413,7 +412,7 @@ In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei 
 
 [Anzeigeeinstellungen für das mobile Gerät für das Lager](change-warehouse-mobile-device-displays.md)
 
-[Einrichtung eines Menüeintrags für mobile Geräte, um Bestellungen bearbeiten zu können (Aufgabenleitfaden) ](tasks/set-up-mobile-device-menu.md)
+[Einrichtung eines Menüeintrags für mobile Geräte, um Bestellungen bearbeiten zu können (Aufgabenleitfaden)](tasks/set-up-mobile-device-menu.md)
 
 [Einrichtung eines Menüeintrags für mobile Geräte, um eingegangene Waren zu registrieren (Aufgabenleitfaden)](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 [Vorteile bei der Verwendung von Bestandsstatus](../inventory/inventory-statuses.md)

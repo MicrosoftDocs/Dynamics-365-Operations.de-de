@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angebotsanforderungsangebote eingeben und vergleichen und Verträge vergeben
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen an, wie Sie Antworten auf eine Angebotsanforderung eingeben, Angebote bewerten und vergleichen und dann einem der Händler das Angebot erteilen. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Bevor Sie beginnen, müssen Sie eine Angebotsanforderung mit zwei Positionen haben, die mindestens zwei Händlern gesendet wurde. Sie können die Prozedur "Erstellen einer Angebotsanforderung" als Voraussetzung ausführen, um diese zu erstellen. Sie müssen Bewertungskriterien eingerichtet haben, bevor Sie diese Prozedur ausführen können.
 

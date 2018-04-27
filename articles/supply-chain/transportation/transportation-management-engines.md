@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5472d69f6d0bb7a60fb417a0d1bdc3fbc6a5e18
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-engines"></a>Transportverwaltungsmodule
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Transportverwaltungsmodule definieren die Logik, die verwendet wird, um Transportsätze in der Transportverwaltung zu generieren und zu verarbeiten. 
 
@@ -47,7 +46,7 @@ Die folgende Tabelle zeigt die Transportverwaltungsmodule, die in Microsoft Dyna
 | **Zonenmodul**                  | Berechnet die Zone basierend auf der aktuellen Adresse und berechnet die Anzahl der Zonen, die durchquert werden müssen, um von Adresse A nach Adresse B zu gelangen.                                                                                                                                                                    |
 | **Frachtbrieftyp**            | Standardisiert die Frachtrechnungs- und Frachtbriefpositionen und wird für den automatischen Frachtbriefabgleich verwendet.                                                                                                                                                                                                                |
 
- 
+
 <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Welche Module müssen konfiguriert werden, um eine Lieferung zu bewerten?
 ---------------------------------------------------
 
@@ -60,13 +59,13 @@ Ein Transportverwaltungsmodul erfordert, dass Sie Initialisierungsdaten einricht
 -   Einfache Konfigurationsdaten.
 
 In den meisten Fällen können Sie auf die Schaltfläche **Parameter** in den Einrichtungsformularen des Transportverwaltungsmoduls klicken, um die Initialisierungsdaten zu konfigurieren. **Beispiel für die Konfiguration eines Tarifmoduls, das auf ein Kilometerleistungsmodul verweist** Im folgenden Beispiel werden die Einstellungen gezeigt, die für ein Tarifmodul erforderlich sind, das auf dem .NET-Modultyp Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine basiert und auf ein Kilometerleistungsmodul verweist.
-| Parameter             | Beschreibung                                                                                                                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | Der .NET-Typ, der die Satz-Basiszuweisungsdaten für ein bestimmtes Schema interpretiert. Die Syntax des Parameterwerts besteht aus zwei Segmenten, getrennt durch einen senkrechten Strich (|) generiert. Das erste Segment enthält den Assemblynamen, der den Typ „assigner“ definiert. Das zweite Segment definiert den vollqualifizierten Namen des Typs „assigner“. Dazu gehört der Namespace des Typs. |
-| *MileageEngineCode*   | Code des Kilometerleistungsmoduls, der den Datensatz des Kilometerleistungsmoduls in der Microsoft Dynamics 365 for Finance and Operations Datenbank kennzeichnet.                                                                                                                                                                                                                                                             |
-| *ApportionmentEngine* | Allgemeiner Modulcode, der das Umlagenmodul in der Microsoft Dynamics 365 for Finance and Operations Datenbank kennzeichnet.                                                                                                                                                                                                                                                              |
 
- 
+|          Parameter           |                                                                                  Beschreibung                                                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <em>RateBaseAssigner</em>   | Der .NET-Typ, der die Satz-Basiszuweisungsdaten für ein bestimmtes Schema interpretiert. Die Syntax des Parameterwerts besteht aus zwei Segmenten, getrennt durch einen senkrechten Strich ( |
+|  <em>MileageEngineCode</em>  |                       Code des Kilometerleistungsmoduls, der den Datensatz des Kilometerleistungsmoduls in der Microsoft Dynamics 365 for Finance and Operations Datenbank kennzeichnet.                        |
+| <em>ApportionmentEngine</em> |                        Allgemeiner Modulcode, der das Umlagenmodul in der Microsoft Dynamics 365 for Finance and Operations Datenbank kennzeichnet.                        |
+
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Wie werden Metadaten in den Transportverwaltungsmodulen verwendet?
 ----------------------------------------------------------
 
@@ -77,6 +76,7 @@ Die Daten, die Sie verwenden, wenn Sie Sätze in Microsoft Dynamics 365 for Fina
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Erfordern alle Modulkonfigurationen Metadaten?
 Nein. Transportverwaltungsmodule, die verwendet werden, um die Daten abzurufen, die für die Satzberechnung aus externen Systemen erforderlich sind, benötigen keine Metadaten. Die Satzdaten für diese Module können aus externen Transportanbietersystemen abgerufen werden, in der Regel über einen Webdienst. So können Sie beispielsweise ein Kilometerleistungsmodul verwenden, das Daten direkt aus Bing Maps abruft, sodass Sie keine Metadaten für dieses Modul benötigen.
+
 | **Hinweis**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Die Transportverwaltungsmodule, die mit Finance and Operations bereitgestellt werden, nutzen Daten, die aus der Anwendung abgerufen werden. Module, die mit externen Systemen verbunden sind, sind nicht in Operations enthalten. Mit dem modulbasierten Erweiterungsmodell können Sie jedoch Erweiterungen mithilfe von Microsoft Dynamics 365 for Finance and Operations Visual Studio-Tools erstellen. |

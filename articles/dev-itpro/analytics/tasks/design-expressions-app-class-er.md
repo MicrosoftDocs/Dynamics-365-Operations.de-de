@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Designausdrücke, um die Anwendungsklassenmethoden (ER) aufzurufen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieser Leitfaden enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden. Werte von Argumenten zum Aufrufen von Klassen können dynamisch zur Laufzeit definiert werden: beispielsweise basierend auf Informationen im Analysedokument, um dessen Richtigkeit sicherzustellen. In diesem Handbuch erstellen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen, Litware, Inc. Dieses Verfahren wird für Benutzer mit der zugewiesenen Rolle des Systemadministrators oder elektronischer Berichterstellungsentwicklers erstellt. 
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="packing-materials-and-fees"></a>Verpackungsmaterial und Gebühren
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Verpackungsmaterialgebühren werden in bestimmten Zeitabständen an ein Recyclingunternehmen entrichtet. Für jedes Material, aus dem eine Verpackung besteht, muss ein bestimmter Betrag pro Gewichtseinheit bezahlt werden. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind.
 
@@ -63,7 +62,7 @@ Wenn die Verpackungsmaterialgebühren von Ihrem Unternehmen getragen werden, geb
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Angeben des Verpackungsmaterialgewichts auf Rechnungen
 Sie können das Gewicht des Verpackungsmaterials auf der Rechnung ausweisen und angeben, wer für die aufgeführten Gebühren aufkommt. Das Gewicht wird nach Verpackungscode zusammengefasst.
- 
+
 
 
 

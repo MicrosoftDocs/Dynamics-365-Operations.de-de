@@ -28,14 +28,14 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="financial-report-components"></a>Finanzberichtkomponenten
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die Verwendung der Komponenten, der Bausteine oder Berichtsdefinitionen in der Finanzberichterstellung. Diese Bausteine beinhalten Zeilendefinitionen, Spaltendefinitionen und Berichtstruktur-Definitionen. Der Artikel beschreibt, wie Sie Bausteine organisieren und sperren. 
 
 Die Designphilosophie hinter dem Finanzberichtdesigner ist, Informationen in kleinste Komponenten oder Grundbausteine zu zerteilen, sie zu mischen und nach Bedarf zusammenzufügen. Daher ist die Berichtsformatierung von Ihren finanziellen Daten geetrennt, und Sie können das Design eines Berichts ändern, ohne die Finanzdaten in Ihrem Microsoft Dynamics ERP-System zu ändern. Mithilfe dieses Bausteinansatzes können Sie Text, Beträge und Berechnungen kombinieren, um die Berichte zu erstellen, die Sie benötigen. Zudem fördert diese Flexibilität die Kreativität, indem es das Anzeigen Ihrer Arbeitsgänge auf unterschiedliche Arten erleichtert. Die einzelnen Bausteine einer Berichtsdefinition sind einem dreidimensionalen Arbeitsblatt ähnlich, sie bieten jedoch mehr Leistung. Eine Berichtsdefinition gibt die Zeilendefinition, die Spaltendefinition und die optionale Berichtstruktur-Definition an, die für den Bericht verwendet werden sollte. Sie umfasst auch Informationen zum Speicherort des generierten Berichts und wie er formatiert wird. 
 
 ## <a name="building-blocks-of-a-report"></a>Bausteine eines Berichts
+
 | Baustein            | Beschreibung                     | Weitere Informationen                                    |
 |---------------------------|---------------------------------|---------------------------------------------------------|
 | Zeilendefinition            | Eine Zeilendefinition definiert die beschreibenden Positionen (z. B. Löhne oder Verkäufe), in einem Bericht. Sie listet auch Segmentwerte oder Dimensionen auf, die die Werte für jeden Positionsartikel enthalten und schließt Zeilenformatierung und Berechnungen ein.                                                    | [Zeilendefinitionen](row-definitions-financial-reporting.md)                       |

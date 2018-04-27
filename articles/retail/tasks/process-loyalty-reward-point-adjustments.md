@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a> Loyalitätsbelohnungs-Punktregulierungen verarbeiten
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie Sie Treuekarteinformationen einsehen und die Treuebelohnungspunkte anpassen. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USRT. Diese Aufgabe ist für die Bereichsleiter Einzelhandel Rolle oder die Rolle für Kundendienstleiter vorgesehen.
 

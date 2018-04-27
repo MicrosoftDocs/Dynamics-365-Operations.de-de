@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-an-operations-resource"></a>Erstellen einer betrieblichen Ressource
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Eine betriebliche Ressource führt die Aktivitäten eines Projekts oder eines Produktionsprozesses aus. Diese Prozedur zeigt Ihnen an, wie eine betriebliche Ressource definiert wird. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.
 

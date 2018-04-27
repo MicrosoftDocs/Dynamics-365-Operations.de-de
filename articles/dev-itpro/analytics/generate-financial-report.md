@@ -28,8 +28,7 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="generate-a-financial-report"></a>Finanzbericht generieren
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten. 
 
@@ -50,13 +49,13 @@ Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf de
 ## <a name="generate-a-financial-report"></a>Finanzbericht generieren
 
 Um einen Finanzbericht mit Microsoft Dynamics 365 for Finance and Operations zu erstellen, gehen sie zu **Hauptbuch** > **Abfragen und Berichte** > **Finanzberichte**. 
- - Wählen Sie einen Bericht, um den Bericht zu erstellen und klicken Sie auf **Erstellen**. 
- - Fügen Sie das Feld**Daten berichten**und klicken sie auf **OK**.
- 
- Nachdem der Bericht generiert wurde, ist der Bericht verfügbar zum Anzeigen im Abschnitt **Berichte** anzuzeigen.
- Sie können den Bericht**anzeigen** oder **löschen**.
- 
- 
+- Wählen Sie einen Bericht, um den Bericht zu erstellen und klicken Sie auf **Erstellen**. 
+- Fügen Sie das Feld**Daten berichten**und klicken sie auf **OK**.
+
+  Nachdem der Bericht generiert wurde, ist der Bericht verfügbar zum Anzeigen im Abschnitt **Berichte** anzuzeigen.
+  Sie können den Bericht**anzeigen** oder **löschen**.
+
+
 Um einen Bericht zu generieren, öffnen Sie **Berichtsdesigner**, und klicken Sie anschließend auf die Schaltfläche Generieren in der Symbolleiste. Das Fenster Berichtswarteschlangenstatus wird geöffnet und gibt den Ort des Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
 
 > [!NOTE]
@@ -159,7 +158,7 @@ Wenn Sie eine Analyse für fehlende Konten ausführen, sind die folgenden Tasten
 | Ausgewählte Berichtsdefinition öffnen  | STRG+R                     |
 | Ausgewählte Zeilendefinition öffnen     | STRG+O                     |
 
- 
+
 <a name="see-also"></a>Siehe auch
 --------
 

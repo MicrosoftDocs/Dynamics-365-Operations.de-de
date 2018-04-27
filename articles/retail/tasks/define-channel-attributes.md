@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-channel-attributes"></a> Kanalattribute definieren
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen. Sie müssen den Kanal der Organisationsstandardhierarchie hinzufügen, bevor Sie die Attribute definieren können.
 

@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d9b61e545067db592545d5fbce7b4315c51a8bf8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer"></a>Formeldesigner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie der Formel-Designer verwendet wird, um Formeln in einer Strukturansicht zu analysieren und zu verwalten.
 
@@ -68,7 +68,7 @@ Der Filter, der für die Formel und den Arbeitsplan angewendet wird, wird im Kop
 <tbody>
 <tr class="odd">
 <td>Produktdimensionen</td>
-<td>Wenn das ausgewählte Fertigprodukt ein Produktmaster ist, können Sie die aktiven Produktdimensionen für die Hauptauswahl definieren. Beachten Sie, dass beim Öffnen des Formel-Designers für ein Produkt, das kein Produktmaster ist, im Dialogfeld ausgewählt <strong>Filtern</strong> keine Produktdimensionen werden können.</p></td>
+<td>Wenn das ausgewählte Fertigprodukt ein Produktmaster ist, können Sie die aktiven Produktdimensionen für die Hauptauswahl definieren. Beachten Sie, dass beim Öffnen des Formel-Designers für ein Produkt, das kein Produktmaster ist, im Dialogfeld <strong>Filter</strong> keine Produktdimensionen ausgewählt werden können.</p></td>
 </tr>
 <tr class="even">
 <td>Standort</td>
@@ -88,7 +88,7 @@ Der Filter, der für die Formel und den Arbeitsplan angewendet wird, wird im Kop
 </tr>
 <tr class="odd">
 <td>Von Menge</td>
-<td>Filtert die Versionen, indem Sie einen bestimmten Eintrag "von" der Menge auswählen. Wenn Sie einen Wert festlegen, könnten andere Formel- und Arbeitsplanversionen ausgewählt werden.</td>
+<td>Filtert die Versionen, indem Sie eine bestimmte &quot;von&quot;-Menge auswählen. Wenn Sie einen Wert festlegen, könnten andere Formel- und Arbeitsplanversionen ausgewählt werden.</td>
 </tr>
 <tr class="even">
 <td>Nur Gültige anzeigen</td>
@@ -97,7 +97,7 @@ Der Filter, der für die Formel und den Arbeitsplan angewendet wird, wird im Kop
 </tbody>
 </table>
 
-Wenn Sie den Formel-Designer verwenden, um Formeln zu prüfen oder zu bearbeiten, die aus einer oder mehreren Ebenen von Phantomen bestehen, umfasst der Arbeitsplan, der dem obersten Artikel zugeordnet ist, in der Regel die vollständige Formelhierarchie. Um die Übersicht zu vereinfachen, können Sie den Arbeitsplan der obersten Ebene sperren. Klicken Sie dazu auf **Anzeige**&gt; **Arbeitsplan sperren**. Wenn Sie den Arbeitsplan entsperren möchten, klicken Sie auf **Ansicht** &gt; **Arbeitsplan entsperren**.
+Wenn Sie den Formel-Designer verwenden, um Formeln zu prüfen oder zu bearbeiten, die aus einer oder mehreren Ebenen von Phantomen bestehen, umfasst der Arbeitsplan, der dem obersten Artikel zugeordnet ist, in der Regel die vollständige Formelhierarchie. Um die Übersicht zu vereinfachen, können Sie den Arbeitsplan der obersten Ebene sperren. Klicken Sie dazu auf **Anzeige** &gt; **Arbeitsplan sperren**. Wenn Sie den Arbeitsplan entsperren möchten, klicken Sie auf **Ansicht** &gt; **Arbeitsplan entsperren**.
 
 ## <a name="add-and-edit-formulas-and-formula-lines"></a>Hinzufügen und Bearbeiten von Formeln und Formelpositionen
 Verwenden Sie die Funktionen **Formelpositionen** oder **Formel**, um Formelpositionen oder die Stückliste zu ändern. Wenn Sie einen Knoten in der Struktur auswählen, bestimmt der Typ des Knotens die Funktionen, die zur Verfügung stehen.
@@ -107,7 +107,7 @@ Verwenden Sie die Funktionen **Formelpositionen** oder **Formel**, um Formelposi
 | Stücklistenpositionen &gt; Bearbeiten                 | Öffnet ein Dialogfeld, in dem Sie die Formelpositionsattribute bearbeiten können.                                         | Diese Funktion ist verfügbar, wenn ein Formelpositionsknoten aktiviert ist. |
 | Stücklistenpositionen &gt; Löschen               | Löschen Sie eine Formelposition aus der ausgewählten Formel.                                                          | Diese Funktion ist nur verfügbar, wenn ein Formelpositionsknoten ausgewählt wurde und die Formel nicht für die Bearbeitung gesperrt ist. |
 | Stücklistenpositionen &gt; Vor Position hinzufügen      | Öffnet ein Dialogfeld, in dem Sie eine Produktvariante auswählen können, die vor der ausgewählten Formelposition eingefügt werden soll.     | Diese Funktion ist verfügbar, wenn ein Formelpositionsknoten aktiviert ist. |
-| Stücklistenpositionen &gt; Zur Komponenten-Stückliste hinzufügen | Öffnet ein Dialogfeld, in dem Sie eine Produktvariante auswählen können, die am Ende der ausgewählten Formel eingefügt werden soll.   | Diese Funktion ist verfügbar, wenn der ausgewählte Knoten eine ausgewählte Formel hat. Wenn diese Funktion nicht verfügbar ist, fehlt möglicherweise eine Formelversion für die ausgewählte Artikelvariante. In diesem Fall können Sie auf **Formel**&gt; **Version erstellen** klicken, um die fehlende Version für den ausgewählten Knoten zu erstellen. |
+| Stücklistenpositionen &gt; Zur Komponenten-Stückliste hinzufügen | Öffnet ein Dialogfeld, in dem Sie eine Produktvariante auswählen können, die am Ende der ausgewählten Formel eingefügt werden soll.   | Diese Funktion ist verfügbar, wenn der ausgewählte Knoten eine ausgewählte Formel hat. Wenn diese Funktion nicht verfügbar ist, fehlt möglicherweise eine Formelversion für die ausgewählte Artikelvariante. In diesem Fall können Sie auf **Formel** &gt; **Version erstellen** klicken, um die fehlende Version für den ausgewählten Knoten zu erstellen. |
 | Stücklistenpositionen &gt; Nach Position hinzufügen       | Öffnet ein Dialogfeld, in dem Sie eine Produktvariante auswählen können, die nach der ausgewählten Formelposition eingefügt werden soll.      | Diese Funktion ist verfügbar, wenn ein Formelpositionsknoten aktiviert ist. |
 | Formel &gt; Version erstellen         | Erstellen einer neuen Formelversion oder einer Formel für die Produktvariante des ausgewählten Knotens.                     | Diese Funktion ist nur verfügbar, wenn der Formelpositionsknoten, der ausgewählt ist, in einen Artikel verknüpft ist, dessen Produktionstyp **Stückliste** oder **Formel** ist. |
 | Formel &gt; Berechnung            | Öffnet ein Dialogfeld, in dem Sie die Kosten- oder Verkaufspreisberechnung für die ausgewählte Produktvariante ausführen können. | Diese Funktion ist verfügbar, wenn der ausgewählte Knoten sich auf eine Formelversion bezieht. |
@@ -116,8 +116,10 @@ Verwenden Sie die Funktionen **Formelpositionen** oder **Formel**, um Formelposi
 ## <a name="configuring-the-tree-view"></a>Konfigurieren der Strukturansicht
 Klicken Sie auf **Einstellungen**, um die Informationen anzupassen, die in der Formelansicht des Stücklisten-Designers angezeigt werden.
 
-| Feldgruppe | Beschreibung |
-|-------------|-------------|
-| Stückliste         | Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die in der Strukturansicht angezeigt werden sollen. Im Formeldesigner werden die ausgewählten Kriterien am unteren Rand der beiden Registerkarten angezeigt. |
-| Arbeitsplan       | Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die für die Arbeitspläne angezeigt werden sollen. |
+
+| Feldgruppe |                                                                          Beschreibung                                                                          |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Stückliste     | Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die in der Strukturansicht angezeigt werden sollen. Im Formeldesigner werden die ausgewählten Kriterien am unteren Rand der beiden Registerkarten angezeigt. |
+|    Arbeitsplan    |                                           Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die für die Arbeitspläne angezeigt werden sollen.                                           |
+
 

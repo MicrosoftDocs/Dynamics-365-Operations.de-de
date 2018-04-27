@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Reservieren von Lagermengen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema werden die verschiedenen Optionen beschrieben, die für die Reservierung von Bestand verfügbar sind.
 
@@ -50,6 +49,7 @@ Bestandreservierungsrichtlinien werden auf den Seiten **Lagersteuerungsgruppen**
 ### <a name="policies-on-the-item-model-groups-page"></a>Richtlinien auf der Artikelmodellgruppenseite
 
 Der Abschnitt **Bestandrichtlinie** enthält die folgenden Reservierungsrichtlinien.
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reservierungsrichtlinie**  | **Beschreibung**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -63,6 +63,7 @@ Der Abschnitt **Bestandrichtlinie** enthält die folgenden Reservierungsrichtlin
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a>Beispiel für "FIFO-Datumsgesteuert" und "Rückwärts ab Versanddatum"
 
 In diesem Beispiel besteht der verfügbare Lagerbestand für Artikelnummer A für drei verschiedene Chargennummern.
+
 | Artikelnummer | Chargennummer | Leistung | Datum             |
 |-------------|--------------|----------|------------------|
 | A:           | 1.000         | 5        | 2. Februar 2016 |

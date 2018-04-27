@@ -19,19 +19,20 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 84e00ef62a995d37878de6b2786dbc2ee2277070
-ms.openlocfilehash: 8a1ec5a3b19d1022232527f4960617bd985bc2b3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
 ms.contentlocale: de-de
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="batch-balancing"></a>Chargenausgleich
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+In diesem Thema wird der Chargenausgleichprozess unterstützt. 
 
-In diesem Thema wird der Chargenausgleichprozess unterstützt.
+Sehen Sie ein [Video über den Chargenausgleich in Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be) an
 
 Im Chargenausgleichprozess wird der Betrag der Substanz zur Verwendung innerhalb einer Produktionscharge von der aus Wirksubstanzen in ausgewählten Produktchargen berechnet.
 
@@ -101,7 +102,7 @@ Wenn Sie den Chargenausgleichprozess anwenden, wenn der Inhaltsstofftyp ist **Ke
 
 **Beispiel**
 
-Substanz A ist einer Substanz im Typ**Keine** zugewiesen und hinzugefügt einer Formel für ein Produkt. Die Formel erfordert 10 Liter Inhaltsstoff von A für alle 100 Liter des Produkts. Erfordert ein Chargenauftrag 200 Liter, werden die vorkalkulierte Menge und die ausgeglichene Menge als 20 Liter berechnet.
+Substanz A ist einer Substanz im Typ **Keine** zugewiesen und hinzugefügt einer Formel für ein Produkt. Die Formel erfordert 10 Liter Inhaltsstoff von A für alle 100 Liter des Produkts. Erfordert ein Chargenauftrag 200 Liter, werden die vorkalkulierte Menge und die ausgeglichene Menge als 20 Liter berechnet.
 
 ### <a name="compensating"></a>Kompensation
 
@@ -147,7 +148,7 @@ Da 1.10 ein positiver kompensierender Faktor ist, hat dieses kompensierende Prin
 
 **Beispiel**
 
-Sie haben ein Produkt formuliert, die Zutaten A, B, C und D für eine Formelgröße von 100 Litern enthält. Sie besitzen die ausgeglichene Menge aller Substanztypen außer der **Füller**substanztyp, der in einer Position verwendet wird.
+Sie haben ein Produkt formuliert, die Zutaten A, B, C und D für eine Formelgröße von 100 Litern enthält. Sie besitzen die ausgeglichene Menge aller Substanztypen außer der **Füller**-Substanztyp, der in einer Position verwendet wird.
 Ausgeglichene Menge der Füllsubstanz wird als Unterschied zwischen der Chargengröße von 100 Litern und der Summe der Inhaltsstoffe A, B und C berechnet:
 
 100 – (20 + 25.71 + 14.72) = 39.57
@@ -179,7 +180,7 @@ Nachdem die Inhaltsstoffmengen berechnet wurden, können Sie die Formel bestäti
 
 -   Wenn ein Produkt für die Lagerortverwaltungsprozesse aktiviert ist, wird die Formelposition der Lagerorte anhand der Prinzipien für die Lagerortverwaltungsprozesse freigegeben. Die Formelposition wird anhand der produzierten Produktmengen freigegeben, die den ausgeglichenen Mengen entsprechen und für die Primärressource sowie für bestimmte Chargen freigegeben wird, die für die Wirksubstanzen ausgewählt werden.
 
->   [!NOTE]
+> [!NOTE]
 >   Formelpositionen können zum Lagerort nur als Teil des Chargenausgleichprozesses freigegeben werden. Obwohl es andere Optionen bei der gemeinsamen Nutzung von Material für Produktion in Lagerort gibt, können diese Optionen nicht für Formelpositionen verwendet werden.
 
 -   Wenn das Produkt nicht für die Lagerortverwaltungsprozesse aktiviert ist, wird eine Produktionskommissionierliste für das Produkt erstellt, wenn Sie bestätigen und die Formel freigeben.

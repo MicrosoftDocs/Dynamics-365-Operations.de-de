@@ -27,8 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="employee-competencies-and-development-power-bi-content"></a>Power BI Inhalt Mitarbeiterkompetenzen und -entwicklung
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird der Power BI-Inhalt „Finance and Operations – Mitarbeiterkompetenz und Entwicklung” beschrieben. 
 

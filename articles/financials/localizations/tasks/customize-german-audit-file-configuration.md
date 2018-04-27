@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="customize-audit-file-configuration-germany"></a>Protokolldateikonfiguration anpassen (Deutschland)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren sehen Sie, wie Sie die deutsche Protokolldateikonfiguration durch Hinzufügen einer neuen Tabellengruppe und Auswählen einer Tabelle mit Feldern für die Datenexportdefinition anpassen. 
 

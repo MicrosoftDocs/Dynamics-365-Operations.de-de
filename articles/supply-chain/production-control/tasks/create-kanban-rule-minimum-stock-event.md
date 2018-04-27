@@ -23,14 +23,14 @@ ms.contentlocale: de-de
 ms.lasthandoff: 09/29/2017
 
 ---
-# Eine Kanban-Regel mithilfe eines Mindestbestandsereignisses erstellen
+# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Eine Kanban-Regel mithilfe eines Mindestbestandsereignisses erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur konzentriert sich auf die Einstellungen, die benötigt werden, um eine Kanban-Regel unter Verwendung eines Mindestbestandsereignisses zu erstellen, um zu garantieren, dass ein spezifisches Produkt immer an einem spezifischen Lagerplatz verfügbar ist. Eine Kanban-Regel wird erstellt, um Material zum Lagerplatz zu übertragen, wenn das Bestandsniveau unterhalb von 200 Stücke fällt. Durch das Ausführen der Verarbeitung des bedarfsverursachenden Ereignisses werden die erforderlichen Kanbans erstellt. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für den Fertigungsplaner oder den Wertstrom-Manager vorgesehen, da diese die Produktion eines neuen oder geänderten Produkts in einer schlanken Umgebung vorbereiten.
 
 
-## Neue Kanban-Regel erstellen
+## <a name="create-a-new-kanban-rule"></a>Neue Kanban-Regel erstellen
 1. Wechseln Sie zu "Produktinformationsverwaltung" > "Lean Manufacturing" > "Kanban-Regeln".
 2. Klicken Sie auf "Neu".
 3. Wählen Sie im Feld "Typ" die Option "Entnahme" aus.
@@ -46,7 +46,7 @@ Diese Prozedur konzentriert sich auf die Einstellungen, die benötigt werden, um
 9. Wählen Sie im Feld "Bestandswiederbeschaffungsereignis" die Option "Charge" aus.
     * Dies erstellt Kanbans, um Materialbedarf am verknüpften Lagerplatz während der "Verarbeitung von bedarfsverursachenden Ereignissen" zu erfüllen.  
 
-## Die Mindestmenge für den Artikel festlegen
+## <a name="set-the-minimum-quantity-for-the-item"></a>Die Mindestmenge für den Artikel festlegen
 1. Klicken Sie, um dem Link im Feld "Produkt" zu folgen.
 2. Klicken Sie, um dem Link im Feld "Artikelnummer" zu folgen.
 3. Erweitern Sie die Infobox "Produktbild".
@@ -58,7 +58,7 @@ Diese Prozedur konzentriert sich auf die Einstellungen, die benötigt werden, um
     * Legen Sie den "Lagerort" auf 12 fest.  
 9. Legen Sie das Minimum auf "200" fest.
 
-## Stapelereignis-Erstellungseinzelvorgang ausführen
+## <a name="run-the-batch-event-creation-job"></a>Stapelereignis-Erstellungseinzelvorgang ausführen
 1. Wechseln Sie zu "Produktionssteuerung" > "Periodisches Aufgaben" > "Kanban-Einzelvorgangs-Stapelverarbeitung" > "Verarbeitung des bedarfsverursachenden Ereignisses".
 2. Klicken Sie auf "OK".
 3. Wechseln Sie zu "Produktinformationsverwaltung" > "Lean Manufacturing" > "Kanban-Regeln".

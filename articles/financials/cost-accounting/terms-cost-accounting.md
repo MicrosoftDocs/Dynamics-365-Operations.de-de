@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Kostenrechnungsterminologie
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema definiert die Schlüsselbegriffe, die in der Kostenrechnung verwendet werden.
 
@@ -150,14 +149,14 @@ Mit Formelzuordnungsbasen können Sie erweiterte Formeln definieren, um die korr
 |  + |  Hinzufügung |
 |  – |  Subtrahieren |
 | *  | Multiplikation  |
-    
+
 Traditionelle IF-Anweisungen werden nicht unterstützt. Allerdings können Sie Anweisungen erstellen und überprüfen, ob sie erfüllt sind.
 
 |  **Anweisungsüberprüfung** | **Ergebnis**  |
 |---|---|
 |  a > b| True  |
 |  a > b |  False |
-    
+
 **Gemeinkosten**
 
 Gemeinkosten beziehen sich auf die laufenden Kosten für das Betreiben eines Unternehmens. Es sind die Kosten, die nicht unmittelbar mit bestimmten Geschäftsaktivitäten verknüpft werden können. Hier sind einige Beispiele für Gemeinkosten:

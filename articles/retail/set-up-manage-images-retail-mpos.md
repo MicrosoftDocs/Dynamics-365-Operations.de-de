@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Bilder für Retail Modern POS einrichten und verwalten
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 In diesem Artikel wird beschrieben welche Schritte beim Einrichten und Verwalten von Bildern für verschiedene Retail Modern POS erforderlich sind.
 
@@ -141,7 +140,7 @@ Die Produktbilder, die im Offlinemodus verwendet werden müssen, können eingeri
 6.  Während sich MPOS im Offlinemodus befindet., führen Sie den Katalogeinzelvorgang in HQ aus, um sicherzustellen, dass die Daten mindestens einmal an die Offline-Datenbank gesendet werden.
 7.  Setzen Sie MPOS in in Offline-Betrieb. Sie sollten das Bild sehen, das Sie für das bestimmte Produkt in HQ hochgeladen haben. [![offline1](./media/offline1.png)](./media/offline1.png)
 
- 
+
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Katalog, Kategorie, Mitarbeiter und Debitorenbilder einrichten, damit sie im Offline-Modus für MPOS angezeigt werden
 

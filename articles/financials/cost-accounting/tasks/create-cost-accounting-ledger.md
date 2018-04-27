@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Ein Sachkonto der Kostenrechnung erstellen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ein Kostenrechnungssachkonto stellt die Gesamtberichtseinheit dar. Es wird durch eine Kostenfaktordimension, statistische Dimension, Steuerkalenders und Währung definiert. Es ist agnostisch zum Konzept der juristischen Personen. Eine juristische Person und die Daten können vielen Kostenrechnungssachkonten zugeordnet werden. Für diese Aufzeichnung wird das Demo-Datenunternehmen USP2 verwendet.
 

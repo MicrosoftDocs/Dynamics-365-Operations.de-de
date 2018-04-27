@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="unit-of-measure-and-stocking-policies"></a>Maßeinheit und Lagerrichtlinien
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt, wie Standardmaßeinheiten, Einheitssequenzen und Einheitenumrechnungen in den Lagerortprozessen verwendet werden.
 

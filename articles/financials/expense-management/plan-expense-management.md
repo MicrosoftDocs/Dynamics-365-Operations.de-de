@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-expense-management"></a>Ausgabenverwaltung konfigurieren
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema beschreibt die Überlegungen und Entscheidungen, die Sie während des Planungsprozesses machen müssen, bevor Sie die Ausgabenverwaltung in Microsoft Dynamics 365 for Finance and Operations konfigurieren. Im Spesenverwaltungsbereich können Sie unter anderem Informationen zu Zahlungsmethoden, Reiseanforderungen, Spesenabrechnungen und Richtlinien speichern.
 

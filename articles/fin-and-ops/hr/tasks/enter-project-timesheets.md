@@ -17,15 +17,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 17195b28ebe828423b4e5bb862f5c2e9884471ce
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fdc9567040a2ea4e50325c98a2da19da039586bb
 ms.contentlocale: de-de
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-project-timesheets"></a>Arbeitsnachweise des Projekts eingeben
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 In dieser Prozedur erstellen Sie einen Arbeitszeitnachweis, indem Sie ein leeres Arbeitszeitnachweisformular verwenden. Der neue Arbeitszeitnachweis kann auf Informationen aus einem vorherigen Arbeitszeitnachweis auf aus Projekt- und Aktivitätszuweisungen auf der Seite "Eigene Favoriten" basieren. Standardmäßig werden auf der Listenseite "Alle Arbeitszeitnachweise" alle Arbeitszeitnachweise für die aktuelle Periode angezeigt. Sie können über die Dropdownliste für das Feld "Anzeigen" auf der Seite "Eigene Arbeitszeitnachweise" die Arbeitszeitnachweise nach Zeitraum oder Projekt filtern oder Arbeitszeitnachweise anzeigen, die im Auftrag anderer Arbeitskräfte erstellt wurden. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USSI. Um diese Prozedur zu starten, wechseln Sie zu "Projektverwaltung und Buchhaltung" > "Arbeitszeitnachweis" > "Eigene Arbeitszeitnachweise".
 

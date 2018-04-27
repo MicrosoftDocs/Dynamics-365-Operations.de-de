@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="install-the-retail-pos-layout-designer"></a>Einrichten von Retail POS-Layoutdesigner
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Sie können den One-Click-Designer verwenden, um unterschiedliche Retail Modern POS (MPOS) und Cloud POS Layouts entweder im Querformat oder im Hochformat, für Shops, Kassen, Kassierer und Vorgesetzte zu entwerfen.
 

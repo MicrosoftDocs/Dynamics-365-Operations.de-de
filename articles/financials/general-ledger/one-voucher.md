@@ -3,7 +3,7 @@ title: Ein Beleg
 description: "Ein Beleg für Finanzerfassungen (allgemeine Erfassung, Anlagenerfassung, Kreditorenzahlungserfassung usw.) ermöglicht es Ihnen, mehrere untergeordnete Sachkontotransaktionen im Kontext eines einzelnen Belegs einzugeben."
 author: kweekley
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 3831a6b5ec458495134b4b490d33a9acd76b6d2e
-ms.openlocfilehash: 76ea8470786bd50896400a65564d698d96119d6f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9f996131830f9bd4efd534143b3fb761c5ccc756
 ms.contentlocale: de-de
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="one-voucher"></a>Ein Beleg
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Diese Funktionalität wird in Dynamics 365 for Finance and Operations Version 8.0 verfügbar sein, welche in der Version von Frühjahr 18 verfügbar sein wird.   
@@ -38,9 +38,12 @@ ms.lasthandoff: 03/20/2018
 
 Die vorhandene Funktion für Finanzerfassungen (allgemeine Erfassung, Anlagenerfassung, Kreditorenzahlungserfassung usw.) ermöglicht es Ihnen, mehrere untergeordnete Sachkontotransaktionen im Kontext eines einzelnen Belegs einzugeben. Diese Funktionalität wird als „Ein Beleg” bezeichnet. Sie können „Ein Beleg” erstellen, indem Sie eine der folgenden Methoden verwenden:
 
--   Richten Sie den Erfassungsnamen (**Hauptbuch** \> **Erfassungseinstellungen** \>**Erfassungsnamen**) ein, damit das Feld **Neuer Beleg** auf **Nur eine Belegnummer** festgelegt ist. Jede Position, die Sie der Erfassung hinzufügen, ist nun im selben Beleg einbezogen. Da jede Position demselben Beleg hinzugefügt wird, kann der Beleg als Beleg, Sammelrabatt als Konto/Gegenkonto der gleichen Position oder einer Kombination eingegeben werden.
+-   Richten Sie den Erfassungsnamen (**Hauptbuch** \> **Erfassungseinstellungen** \>**Erfassungsnamen**) ein, damit das Feld **Neuer Beleg** auf **Nur eine Belegnummer** festgelegt ist. * Jede Position, die Sie der Erfassung hinzufügen, ist nun im selben Beleg einbezogen. Da jede Position demselben Beleg hinzugefügt wird, kann der Beleg als Beleg, Sammelrabatt als Konto/Gegenkonto der gleichen Position oder einer Kombination eingegeben werden.
 
 [![Einzelposition](./media/same-line.png)](./media/same-line.png)
+ 
+> [!IMPORTANT] 
+> *  Beachten Sie, dass die Definition von „Ein Beleg” NICHT Erfassungsnamen umfasst, die nur als **„Ein Beleg”-Nummer** eingerichtet sind, und der Benutzer gibt dann einen Beleg ein, der nur Sachkontotypen umfasst.  In diesem Dokument bedeutet „Ein Beleg”, dass es einen Beleg gibt, der mehr als einen Kreditor, Debitor, Bank, Anlage oder Projekt enthält. 
 
 -   Geben Sie einen mehrzeiligen Beleg ein, wo es kein Gegenkonto gibt.
 
@@ -53,7 +56,7 @@ Die vorhandene Funktion für Finanzerfassungen (allgemeine Erfassung, Anlagenerf
 <a name="issues-with-one-voucher"></a>Abgänge mit einem Beleg
 =======================
 
-Die Funktion „Ein Beleg” verursacht Probleme bei Ausgleich, Steuerberechnung, Abstimmung eines untergeordneten Sachkontos mit dem Hauptbuch, der Finanzberichterstellung usw. (Für weitere Informationen zu Problemen, die während des Ausgleichs auftreten können, finden Sie unter[Einzelne Belege mit mehreren Debitoren oder Kreditoren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) Um ordnungsgemäß zu funktionieren und zu berichten, erfordern diese Verfahren und Berichte Buchungsdetails. Obwohl mehrere Szenarios unter Umständen weiterhin korrekt sind, basierend auf den Einstellungen Ihrer Organisation, gibt es oftmals Abgänge, wenn mehrere Buchungen in einen Beleg eingegeben werden.
+Die Funktion „Ein Beleg” verursacht Probleme bei Ausgleich, Steuerberechnung, Abstimmung eines untergeordneten Sachkontos mit dem Hauptbuch, der Finanzberichterstellung usw. (Für weitere Informationen zu Problemen, die während des Ausgleichs auftreten können, finden Sie unter [Einzelne Belege mit mehreren Debitoren oder Kreditoren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) Um ordnungsgemäß zu funktionieren und zu berichten, erfordern diese Verfahren und Berichte Buchungsdetails. Obwohl mehrere Szenarios unter Umständen weiterhin korrekt sind, basierend auf den Einstellungen Ihrer Organisation, gibt es oftmals Abgänge, wenn mehrere Buchungen in einen Beleg eingegeben werden.
 
 Angenommen, Sie haben die folgenden mehrzeiligen Beleginformationen.
 
@@ -68,13 +71,16 @@ Dann generieren Sie den Bericht **Ausgaben nach Kreditor** im Arbeitsbereich **F
 
 Aufgrund der Abgänge, die früher angegeben wurden, werden die Belegfunktionen als veraltet vorgenommen. Da jedoch funktionale Lücken vorhanden sind, die von diesen Funktionen abhängen, werden die Funktionen nicht auf einmal verworfen. Stattdessen können Sie den folgenden Zeitplan nutzen: 
 
--   **Version Frühlinges 2018** – Die Funktionen werden standardmäßig durch einen Hauptbuchparameter deaktiviert. Allerdings kann diese Funktion aktiviert werden, wenn in Ihrer Organisation ein Szenario besteht, das in die Geschäftsszenariolücken sinkt, die weiter unten in diesem Thema aufgeführt sind.
+- **Version Frühlinges 2018** – Die Funktionen werden standardmäßig durch einen Hauptbuchparameter deaktiviert. Allerdings kann diese Funktion aktiviert werden, wenn in Ihrer Organisation ein Szenario besteht, das in die Geschäftsszenariolücken sinkt, die weiter unten in diesem Thema aufgeführt sind.
 
-    -   Wenn ein Debitor ein Geschäftsszenario hat, das keinen Beleg erfordert, wechseln Sie nicht die Funktionen. Es werden keine „Fehler” in den Bereichen behoben, die später in diesem Thema identifiziert wurden, wenn diese Funktion verwendet wird, obwohl eine andere Lösung vorhanden ist.
+  -   Wenn ein Debitor ein Geschäftsszenario hat, das keinen Beleg erfordert, wechseln Sie nicht die Funktionen. Es werden keine „Fehler” in den Bereichen behoben, die später in diesem Thema identifiziert wurden, wenn diese Funktion verwendet wird, obwohl eine andere Lösung vorhanden ist.
 
-    -   Beenden Sie die Verwendung von „Ein Beleg” für Integrationen in Microsoft Dynamics 365 Finance and Operations, sofern die Funktionalität nicht für eine der Funktionslücken erforderlich ist.
+  -   Beenden Sie die Verwendung von „Ein Beleg” für Integrationen in Microsoft Dynamics 365 Finance and Operations, sofern die Funktionalität nicht für eine der Funktionslücken erforderlich ist.
 
--   **Herbst 2018 und später Versionen** – Die funktionalen Lücken werden ausgefüllt. Nachdem die funktionalen Lücken ausgefüllt sind, wird die Belegfunktionen dauerhaft deaktiviert.
+- **Herbst 2018 und später Versionen** – Die funktionalen Lücken werden ausgefüllt. Nachdem die funktionalen Lücken ausgefüllt sind, wird die Belegfunktionen dauerhaft deaktiviert.
+
+- > [!IMPORTANT]
+  > Beachten Sie, dass die Option **Nur „Ein Beleg”-Nummer** NICHT aus dem Erfassungsnamensetup entfernt wurde.  Diese Option wird immer noch unterstützt, wenn der Beleg nur Sachkontotypen enthält.  Debitoren müssen vorsichtig sein, wenn sie diese Einstellung verwenden, da der Beleg nicht buchen wird, wenn Sie **Nur „Ein Beleg”-Nummer** verwenden, aber dann mehrere Debitoren, Banken, Anlagen oder Projekte eingeben.  Außerdem können Debitoren immer noch eine Mischung aus untergeordneten Sachkontotypen eingeben, wie beispielsweise Zahlung innerhalb eines einzelnen Belegs, der Kontotypen „Kreditor/Bank” enthält.  
 
 <a name="why-use-one-voucher"></a>Warum „Ein Beleg” verwenden?
 ====================
@@ -102,13 +108,13 @@ Die folgenden Szenarien können nur mithilfe der Funktionalität „Ein Beleg”
 
 >   Wenn eine Organisation der Buchhaltungseinträge eines Geschäftsereignisses zusammen anzeigt, muss diese einen Beleg verwenden. 
 
--   **Landesspezifische Funktionen**
+- **Landesspezifische Funktionen**
 
- -   Bei der Funktion „Einheitspapier der Versandanmeldung” (SAD) für Polen ist es derzeit erforderlich, dass ein einziger Beleg verwendet wird. Bis eine Gruppierungsoption für diese Funktion verfügbar ist, müssen Sie weiterhin die Funktionalität „Ein Beleg” verwenden. Es gibt möglicherweise zusätzliche länderspezifische Funktionen, die die „Ein Beleg”-Funktionalität benötigen.
+  -   Bei der Funktion „Einheitspapier der Versandanmeldung” (SAD) für Polen ist es derzeit erforderlich, dass ein einziger Beleg verwendet wird. Bis eine Gruppierungsoption für diese Funktion verfügbar ist, müssen Sie weiterhin die Funktionalität „Ein Beleg” verwenden. Es gibt möglicherweise zusätzliche länderspezifische Funktionen, die die „Ein Beleg”-Funktionalität benötigen.
 
--   **Debitorenvorauszahlungszahlungserfassung, die Steuern auf mehreren " Positionen" anzeigen**
+- **Debitorenvorauszahlungszahlungserfassung, die Steuern auf mehreren " Positionen" anzeigen**
 
- -   Ein Debitor erstellt eine Vorauszahlung für einen Auftrag, und die Positionen des Auftrags sind verschiedene Steuern, die für die Vorauszahlung erfasst werden müssen. Die Vorauszahlungsdebitorenzahlung ist eine Buchung, bei der die Positionen des Auftrags simuliert werden, sodass die entsprechende Steuer für den Beitrag auf jeder Position erfasst werden kann.
+  -   Ein Debitor erstellt eine Vorauszahlung für einen Auftrag, und die Positionen des Auftrags sind verschiedene Steuern, die für die Vorauszahlung erfasst werden müssen. Die Vorauszahlungsdebitorenzahlung ist eine Buchung, bei der die Positionen des Auftrags simuliert werden, sodass die entsprechende Steuer für den Beitrag auf jeder Position erfasst werden kann.
 
 In diesem Szenario sind die Debitoren im einzelnen Voucher derselbe Debitor, da die Buchung die Positionen eines Debitorenauftrags simuliert. Die Vorauszahlung muss in einem einzelnes Beleg eingegeben werden, da die Steuerberechnung für die „Positionen” der Einzelzahlung vorgenommen werden muss, die der Debitor leistete.
 

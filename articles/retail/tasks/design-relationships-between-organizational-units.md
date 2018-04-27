@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-the-relationships-between-organizational-units"></a>Beziehungen zwischen Organisationseinheiten entwickeln
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Mit dieser Prozedur können Sie Schritt für Schritt dabei vorgehen, wie Sie die Beziehung zwischen Organisationseinheiten entwerfen. Sie müssen einen neuen Organisationszweck erstellen, bevor Sie die Beziehung definieren, oder Sie können den vorhandenen Organisationszweck verwenden. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur abzuschließen, ist USRT. Diese Aufgabe ist für die Administratorrolle vorgesehen.
 

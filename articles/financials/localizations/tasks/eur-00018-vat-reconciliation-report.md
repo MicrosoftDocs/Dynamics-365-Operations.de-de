@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="vat-reconciliation-report"></a>MwSt.-Abstimmungsbericht
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie Sie den Steuerabstimmungsbericht generiert, der für die norwegische und isländische juristische Personen verfügbar ist. Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit Land/Region Norwegen in der primären Adresse einer juristischen Person.
 

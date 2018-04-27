@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 08715b4c31c42dfa23d72b1035a1e7cc737c13a2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Die Suche nach Produkten und Produktvarianten bei der Auftragserfassung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Verwenden Sie das Feld <strong>Artikelnummer </strong>, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen.  Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht.
 
@@ -72,7 +72,7 @@ Beispiele für Produkt- und Produktvariantenbezeichner und -dimensionen, anhand 
 
 Wechseln Sie zur Seite **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchkriterien**. Auf der Seite **Suchkriterien** können Sie Kriterien für Kunden, Interessenten und die Produktsuche definieren. Stellen Sie sicher, dass Sie die Seite mithilfe von Produktsuchkriterien filtern. Dies können Sie, indem Sie auf **Produkt** im Menü der Seite wechseln.  
 
-Um der Anzeigenproduktnummer die Suchkriterien hinzufügen möchten, klicken Sie **Neu** im Menü der Seite. Hierdurch wird einem neuen Datensatzes im **Suchkriterien** Raster hinzu. Öffnen Sie die Spalten-Auswahlliste **Feldname** und wählen Sie **DisplayProductNumber** aus. Um die Konfiguration des Produkts den Suchkriterien hinzuzufügen, erstellen Sie einen neuen Datensatz im Raster **Suchkriterien** und wählen Sie **configId** in der Spalte **Feldname** aus. Auf die gleiche Weise erstellen Sie einen Datensatz mit **Feldname** **InventColorId** für die Farbdimension, **InventSizeId** für die Größendimension und **InventStyleId** für die Stildimension.
+Um der Anzeigenproduktnummer die Suchkriterien hinzufügen möchten, klicken Sie <strong>Neu</strong> im Menü der Seite. Hierdurch wird einem neuen Datensatzes im <strong>Suchkriterien</strong> Raster hinzu. Öffnen Sie die Spalten-Auswahlliste <strong>Feldname</strong> und wählen Sie <strong>DisplayProductNumber</strong> aus. Um die Konfiguration des Produkts den Suchkriterien hinzuzufügen, erstellen Sie einen neuen Datensatz im Raster <strong>Suchkriterien</strong> und wählen Sie **configId** in der Spalte <strong>Feldname</strong> aus. Auf die gleiche Weise erstellen Sie einen Datensatz mit <strong>Feldname</strong> <strong>InventColorId</strong> für die Farbdimension, <strong>InventSizeId</strong> für die Größendimension und <strong>InventStyleId</strong> für die Stildimension.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Schritt 2: Füllen Sie die Datenbanktabelle auf, die für die Produktsuche verwendet wird
 

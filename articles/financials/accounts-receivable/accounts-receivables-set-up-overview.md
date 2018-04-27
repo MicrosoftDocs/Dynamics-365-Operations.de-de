@@ -28,8 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurieren von Debitoren und Kredit und Inkasso
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Debitoren und Kredit und Inkasso konfigurieren, um Rechnungen und eingehenden Zahlungen von Debitoren nachzuverfolgen.
 
@@ -107,7 +106,7 @@ In der folgenden Tabelle führt die Seiten für die Konfiguration und Verwaltung
 |                                                      | KD-Informationen.                     | Richten Sie KD-Informationen für das Bankkonto ein, das verwendet wird, wenn eine Zahlung als KD-Buchung auf der Inkassoseite markiert ist.                                                                                                                                              |
 |                                                      | Verkäuferinformationen              | Richten Sie die E-Mail-Adresse für Verkäufer ein. Diese Adressen werden in den Inkassi-Seite angezeigt. Sie können zum Senden einer E-Mail an einen Verkäufer über diese Seite verwendet werden.                                                                                                                |
 
- 
+
 Weitere Informationen finden Sie unter [Kreditl und Inkassi in Debitorenparametern](collections-credit-accounts-receivable.md).
 
 

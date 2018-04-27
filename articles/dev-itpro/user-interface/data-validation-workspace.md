@@ -25,8 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="data-validation-workspace"></a>Datenüberprüfungsarbeitsbereich
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält eine Übersicht über den **Arbeitsbereich für die Prüfliste für Datenprüfung** und der zugeordneten Konfiguration.
 
