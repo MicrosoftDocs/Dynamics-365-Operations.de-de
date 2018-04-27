@@ -19,17 +19,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 6772c1d7906db27333206ea2ecd5a0585c3eb939
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0ddc9d43f62df937a6fb18e15c718c37442bb9b4
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-configuration-models-overview"></a>Produktkonfigurationsmodelle – Überblick
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel definiert Begriffe und Konzepte, die zu den Produktkonfigurationsmodellen relevant sind. Produktkonfigurationsmodelle lassen Sie eine generische Produktstruktur erstellen, die verwendet werden kann, wenn viele Produktvarianten für ein bestimmtes Produkt zu konfigurieren.
 
@@ -58,7 +57,7 @@ Produktkonfigurationsmodelle werden erstellt, um eine allgemeine Produktstruktur
 <td>Attribute beschreiben alle Funktionen des Produktkonfigurationsmodells. Sie können Attribute verwenden, um die Funktion anzugeben, die ausgewählt werden können, wenn ein eindeutig identifizierbares Produkt konfiguriert wird. Attribute werden in Einschränkungen und Bedingungen verwendet. Wenn Attribute zu einem Produktkonfigurationsmodell erstellt und hinzugefügt werden, wird auf die zugehörigen Attributtypen verwiesen. Ein Standardwert kann für ein Attribut festgelegt werden. Der Standardwert wird in der Konfigurationsbenutzeroberfläche (UI) verwendet, wenn das Produktkonfigurationsmodell konfiguriert wird. Sie können angeben, dass ein Attribut erforderlich, schreibgeschützt oder ausgeblendet ist.
 <ul>
 <li><strong>Erforderlich</strong> – Ein Wert muss für das Attribut festgelegt werden, wenn das Produkt konfiguriert wird.</li>
-<li><strong>Schreibgeschützt</strong> – Der Attributwert wird während einer Konfigurationssitzung angezeigt, er kann jedoch nicht geändert werden.</li>
+<li><strong>Schreibgeschützt</strong> – Der Attributwert wird während einer Konfigurationssitzung angezeigt, er kann aber nicht geändert werden.</li>
 <li><strong>Ausgeblendet</strong> – Der Attributwert ist in den Einschränkungen und Bedingungen enthalten, er wird jedoch noch nicht während einer Konfigurationssitzung angezeigt.</li>
 </ul>
 Sie können auch eine Bedingung für Attribute angeben. Wenn die Bedingung erfüllt ist, muss ein Wert für das erforderliche Attribut eingegeben werden. Bedingungen sind Ausdrucke, die erfüllt sein müssen, damit Attribute, Stücklistenpositionen und Arbeitsplan-Arbeitsgänge in ein Produktkonfigurationsmodell einbezogen werden können. Alle in einer Bedingung referenzierten Attribute werden obligatorisch. Es wird empfohlen, Attribute auf der Registerkarte <strong>Attribute</strong> als erforderlich auszuwählen. Dadurch werden erforderliche Attribute besser erkannt. Attributwerte sind ein wichtiger Bestandteil der Wiederverwendung von Konfigurationen. Das System verwendet Attributwerte, um zu bestimmen, ob eine Konfiguration vorhanden ist, die den Auswahlen entspricht, die ein Benutzer während einer Konfigurationssitzung vorgenommen hat.</td>

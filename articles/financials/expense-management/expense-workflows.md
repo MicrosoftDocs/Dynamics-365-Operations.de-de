@@ -19,16 +19,18 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 19d725f15f00afce1a2ae4b336226f1dafa94b41
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cf35406b43c1ec40a7c248b970559b65fcd8a6c6
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-workflows-for-expense"></a>Workflows für Ausgaben einrichten
 
-[!include[banner](../includes/banner.md)] Sie können einen Workflowprozess zum Prüfen und Genehmigen von Reisekosten- und Ausgabendokumenten einrichten. Zu den Dokumenten, für die Workflows definiert werden können, gehören Spesenabrechnungen, Reiseanforderungen, Kreditkartenstreitigkeiten und Barvorschussanforderungen.
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Sie können einen Workflowprozess zum Prüfen und Genehmigen von Reisekosten- und Ausgabendokumenten einrichten. Zu den Dokumenten, für die Workflows definiert werden können, gehören Spesenabrechnungen, Reiseanforderungen, Kreditkartenstreitigkeiten und Barvorschussanforderungen.
 
 Ein Workflow stellt einen Geschäftsprozess dar. Ein Workflow definiert, wie ein Dokument das System durchläuft und zeigt an, wer eine Aufgabe abschließen oder ein Dokument genehmigen muss. Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vorteile:
 
@@ -42,13 +44,15 @@ Ein Workflow stellt einen Geschäftsprozess dar. Ein Workflow definiert, wie ein
 
 In der folgenden Tabelle sind die Workflowtypen aufgeführt, die unter **Ausgaben** erstellt werden können.
 
-| **Typ**                           | **Mit diesem Typ können Sie folgende Aufgaben ausführen:**                                                 |     
-|------------------------------------|----------------------------------------------------------------------|
-| **Spesenabrechnung**                 | Erstellen von Genehmigungsworkflows für Spesenabrechnungen                       |      
-| **Automatische Buchung von Spesenabrechnung**    | Erstellen automatischer Buchungsworkflows für Spesenabrechnungen              |     
-| **Ausgabenposition**              | Erstellen von Genehmigungsworkflows für Positionsartikel in Spesenabrechnungen         |     
-| **Automatische Buchung von Ausgabenpositionen** | Erstellen von Workflows zum automatischen Buchen von Positionsartikeln in Spesenabrechnungen|
-| **Reiseanforderung**             | Erstellen von Workflows für die Genehmigung von Reiseanforderungen                   |    
-| **Barvorschussanforderung**           | Erstellen von Genehmigungsworkflows für Barvorschussanforderungen                 |     
-| **USt.-Beitreibung**               | Erstellen von Genehmigungsworkflows für die Beitreibung der Mehrwertsteuer (MwSt.) |       
+
+|              <strong>Typ</strong>              |                   <strong>Mit diesem Typ können Sie folgende Aufgaben ausführen:</strong>                   |
+|-------------------------------------------------|-----------------------------------------------------------------------|
+|         <strong>Spesenabrechnung</strong>         |            Erstellen von Genehmigungsworkflows für Spesenabrechnungen             |
+|  <strong>Automatische Buchung von Spesenabrechnung</strong>   |        Erstellen automatischer Buchungsworkflows für Spesenabrechnungen        |
+|       <strong>Ausgabenposition</strong>        |     Erstellen von Genehmigungsworkflows für Positionsartikel in Spesenabrechnungen      |
+| <strong>Automatische Buchung von Ausgabenpositionen</strong> | Erstellen von Workflows zum automatischen Buchen von Positionsartikeln in Spesenabrechnungen |
+|       <strong>Reiseanforderung</strong>       |          Erstellen von Workflows für die Genehmigung von Reiseanforderungen           |
+|      <strong>Barvorschussanforderung</strong>      |         Erstellen von Genehmigungsworkflows für Barvorschussanforderungen          |
+|        <strong>USt.-Beitreibung</strong>        | Erstellen von Genehmigungsworkflows für die Beitreibung der Mehrwertsteuer (MwSt.)  |
+
 

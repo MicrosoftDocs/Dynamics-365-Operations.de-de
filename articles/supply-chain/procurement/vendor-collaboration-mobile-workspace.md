@@ -18,16 +18,16 @@ ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bfbc0fdfcff809a7d22362961b9778355ed7317b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 83fcf1d0432d5afa71d6f9d7d22cea5a583777bf
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zur **Lieferantenzusammenarbeit** im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
 
@@ -76,9 +76,9 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisier
 </thead>
 <tbody>
 <tr class="odd">
-<td>3216943 KB muss implementiert werden, wenn Sie Plattformaktualisierung 3. verwenden.</td>
+<td>3216943 KB muss implementiert werden, wenn Sie Plattformaktualisierung 3 verwenden.</td>
 <td>Systemadministrator</td>
-<td>3216943 KB ist eine binäre Aktualisierung, die erforderlich ist, wenn Sie Plattformaktualisierung 3. verwenden. Um diesen KB zu implementieren, muss Ihr Systemadministrator folgende Schritte ausführen.
+<td>3216943 KB ist eine binäre Aktualisierung, die erforderlich ist, wenn Sie Plattformaktualisierung 3 verwenden. Um diesen KB zu implementieren, muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
 <li>Herunterladen von KB 3216943 von Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li>Binäre Aktualisierung instalieren, die zur Bereitstellung als geeignetes Paket geliefert wird. Informationen dazu, wie ein bereitgestelltes Paket übernommen wird, finden Sie unter <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Ein bereitgestelltes Paket anwenden</a>.</li>

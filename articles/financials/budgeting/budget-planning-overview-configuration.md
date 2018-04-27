@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-overview"></a>Budgetplanung (Überblick)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen die dabei helfen, die Budgetplanung zu konfigurieren und Budgetplanungsprozesse einzurichten.
 
@@ -116,18 +115,18 @@ In der Budgetplanung können Sie die Beträge zuweisen oder Mengen auf den Budge
 
 Zuteilungszeitpläne weisen Budgetplanpositionen während der Workflowverarbeitung automatisch zu. Sie können Zuteilungen ausführen, indem Sie eine folgenden Methoden in der Liste **Zuordnungsmethode** werden:
 
--   **Auf Perioden verteilen** - Sie verwenden den Planzahlenverteilungsschlüssel, um Budgetplanpositionen von den Quellbudgetplanszenarioperioden im Zielszenario zuzuteilen. **Hinweis:** Bevor Sie auf Perioden verteilen können, müssen Sie Planzahlenverteilungsschlüssel auf der Seite ****Planzahlenverteilungskategorien**** einrichten.
--   **Zu Dimensionen zuordnen** - Die Budgetplanpositionen werden vom Quellbudgetplanszenario in den Finanzdimensionen im Zielszenario zugewiesen. **Hinweis:** Bevor Sie auf die Dimensionen zuteilen können, müssen Sie Budgetzuweisungsbedingungen auf der Seite ****Budgetzuweisungsbedingungen**** einrichten.
--   **Zusammenführen** - Die Budgetplanpositionen werden aus dem Quellbudgetplanszenario in zugeordneten Budgetplänen auf das Zielszenario in den übergeordneten Budgetplan verteilt.
--   **Verteilen** - Die Budgetplanpositionen werden aus dem Quellbudgetplanszenario im übergeordneten Budgetplan auf das Zielszenario in den zugehörigen Budgetplänen verteilt.
--   **Sachkonto-Zuordnungsregeln verwenden** - Die Budgetplanpositionen werden vom Quellbudgetplanszenario auf Grundlage der ausgewählten Sachkonto-Zuordnungsregel auf das Zielbudgetplanszenario verteilt.
--   **Aus Budgetplan kopieren** - Sie können einen anderen Budgetplan auswählen, den Sie als Quelle der Zuordnung verwenden.
+- <strong>Auf Perioden verteilen</strong> - Sie verwenden den Planzahlenverteilungsschlüssel, um Budgetplanpositionen von den Quellbudgetplanszenarioperioden im Zielszenario zuzuteilen. <strong>Hinweis:</strong> Bevor Sie auf Perioden verteilen können, müssen Sie Planzahlenverteilungsschlüssel auf der Seite *<strong><em>Planzahlenverteilungskategorien</em></strong>* einrichten.
+- <strong>Zu Dimensionen zuordnen</strong> - Die Budgetplanpositionen werden vom Quellbudgetplanszenario in den Finanzdimensionen im Zielszenario zugewiesen. <strong>Hinweis:</strong> Bevor Sie auf die Dimensionen zuteilen können, müssen Sie Bedingungen für Budgetzuteilung auf der Seite *<strong><em>Bedingungen für Budgetzuteilung</em></strong>* einrichten.
+- **Zusammenführen** - Die Budgetplanpositionen werden aus dem Quellbudgetplanszenario in zugeordneten Budgetplänen auf das Zielszenario in den übergeordneten Budgetplan verteilt.
+- **Verteilen** - Die Budgetplanpositionen werden aus dem Quellbudgetplanszenario im übergeordneten Budgetplan auf das Zielszenario in den zugehörigen Budgetplänen verteilt.
+- **Sachkonto-Zuordnungsregeln verwenden** - Die Budgetplanpositionen werden vom Quellbudgetplanszenario auf Grundlage der ausgewählten Sachkonto-Zuordnungsregel auf das Zielbudgetplanszenario verteilt.
+- **Aus Budgetplan kopieren** - Sie können einen anderen Budgetplan auswählen, den Sie als Quelle der Zuordnung verwenden.
 
 ### <a name="stage-allocations"></a>Phasenzuteilungen
 
 Phasenzuteilungen werden verwendet, um Budgetplanpositionen während des Workflowverarbeitens zuzuordnen. Wenn Phasenzuteilungen verwendet werden, können Budgetplanpositionen im Zielszenario ohne Eingreifen des Budgetplanantragstellers oder -Überprüfers erstellt und geändert werden, um die Positionen zu erstellen.
 
-Wenn Sie eine Phasenzuteilung einrichten, ordnen Sie den Budgetplanungsworkflow zu und stellen ihn mit dem Zuteilungszeitplan bereit. Der Budgetplanungsworkflow muss einem Budgetierungsworkflow zugeordnet sein, der die automatisierte Workflowaufgabe ****Zuteilung für Budgetplanungsphase**** verwendet. Wenn der Workflow die angegebene Phase erreicht, tritt die Zuweisung automatisch auf. Diese automatisierte Aufgabe kann verwendet werden, um Budgetplanpositionen in einem neuen Szenario zu erstellen. 
+Wenn Sie eine Phasenzuteilung einrichten, ordnen Sie den Budgetplanungsworkflow zu und stellen ihn mit dem Zuteilungszeitplan bereit. Der Budgetplanungsworkflow muss einem Budgetierungsworkflow zugeordnet sein, der die automatisierte Workflowaufgabe *<strong><em>Zuteilung für Budgetplanungsphase</em></strong>* verwendet. Wenn der Workflow die angegebene Phase erreicht, tritt die Zuweisung automatisch auf. Diese automatisierte Aufgabe kann verwendet werden, um Budgetplanpositionen in einem neuen Szenario zu erstellen. 
 
 Im Beispielsschema früher im Artikel, wird eine Zuordnung ausgeführt, um Beträgen von einem Budgetplan und von Szenarien in der Basislinienphase der Zentralverwaltung zu einem anderen Budgetplan und Szenarien in der Vorkalkulationsphase der Verkaufsabteilung zu übertragen. Die folgende Abbildung zeigt den relevanten Abschnitt des Beispielsschemas.
 

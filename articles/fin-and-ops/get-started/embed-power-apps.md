@@ -3,7 +3,7 @@ title: PowerApps einbetten
 description: "In diesem Thema wird beschrieben, wie PowerApps in den Finance and Operations-Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen."
 author: jasongre
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,20 +16,24 @@ ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 0fd0b1e5f94e39455b3c0799c89eea5a59444ad7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 07224faabcf2b183d4c8da0ba4588c33ec140d03
 ms.contentlocale: de-de
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="embed-powerapps"></a>PowerApps einbetten
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
-In der Plattformaktualisierung 14 in Microsoft Dynamics 365 for Finance and Operations unterstützt die Integration mit Microsoft PowerApps, einen Dienst, sodass die Entwickler und die nicht technischen Benutzer für benutzerdefinierte Geschäfts-Apps für mobile Geräte, Tablets und das Internet ohne Codes zu schreiben. PowerApps von Ihnen, Ihrer Organisation oder dem breiteren Ökosystem entwickelt, kann im Finance and Operations Client die Produktfunktionalität erweitern. Beispielsweise bedingt dies eventuell, dass Sie ein PowerApps installieren, um Finance and Operations mit den Informationen zu ergänzen, die aus einem anderen System abgerufen werden.  
+In der Plattformaktualisierung 14 in Microsoft Dynamics 365 for Finance and Operations unterstützt die Integration mit Microsoft PowerApps, einen Dienst, sodass die Entwickler und die nicht technischen Benutzer für benutzerdefinierte Geschäfts-Apps für mobile Geräte, Tablets und das Internet ohne Codes zu schreiben. PowerApps von Ihnen, Ihrer Organisation oder dem breiteren Ökosystem entwickelt, kann im Finance and Operations Client die Produktfunktionalität erweitern. Beispielsweise bedingt dies eventuell, dass Sie ein PowerApps installieren, um Finance and Operations mit den Informationen zu ergänzen, die aus einem anderen System abgerufen werden. 
+
+Um weitere Informationen zur Einbettung von PowerApps zu erhalten, sehen Sie sich den kurzen Video [Vorgehensweise beim Einbetten von PowerApps in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY) an.
+
+> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
 
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>Hinzufügen eines eingebetteten PowerApps zu einer Seite
 ### <a name="overview"></a>Überblick
@@ -66,7 +70,7 @@ Unter [Personalisieren der Benutzeroberfläche](personalize-user-experience.md) 
 ## <a name="building-a-powerapp-that-leverages-data-sent-from-finance-and-operations"></a>Das Erstellen einer PowerApps, die Daten von Finance and Operations nutzt.
 Ein wichtiger Bestandteil für die Erstellung einer PowerApps, die in Finance and Operations eingebettet ist, verwendet die Eingabedaten von Finance and Operations. Innerhalb des PowerApps können auf diese Eingabedaten mithilfe der Variablen des Parameters ("EntityId" ) zugegriffen werden.  
 
-In der OnStart-Funktion des PowerApps, können Sie die Eingabedaten von Finance and Operations  auf eine Variable so festlegen:
+In der OnStart-Funktion des PowerApps, können Sie die Eingabedaten von Finance and Operations auf eine Variable so festlegen:
 
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, "")); 
 
@@ -95,7 +99,7 @@ Standardmäßig können Benutzer PowerApps auf einer beliebigen Seite, entweder 
 
 - **isPowerAppsPersonalizationEnabled** -, Wenn diese Methode für eine bestimmten Seite False zurückgibt, dann wird die PowerApps-Menüschaltfläche nicht angezeigt, und Benutzer können dann PowerApps nirgends auf dieser Seite einbetten, auch nicht als Registerkarte. 
 
-- **isPowerAppsTabPersonalizationEnabled** - Wenn diese Methode nicht erfüllt für eine bestimmten Seite zurückgibt, ist der Benutzer  nicht in der Lage, PowerApps direkt auf der Seite als Registerkarte, Panoramaabschnitt oder Inforegister einzubetten. Benutzer können trotzdem noch PowerApps über die PowerApps-Menüschaltfläche einbetten, wenn das Einbetten auf der Seite zulässig ist.  
+- **isPowerAppsTabPersonalizationEnabled** - Wenn diese Methode nicht erfüllt für eine bestimmten Seite zurückgibt, ist der Benutzer nicht in der Lage, PowerApps direkt auf der Seite als Registerkarte, Panoramaabschnitt oder Inforegister einzubetten. Benutzer können trotzdem noch PowerApps über die PowerApps-Menüschaltfläche einbetten, wenn das Einbetten auf der Seite zulässig ist.  
 
 Das folgende Beispiel zeigt eine neue Klasse mit den beiden Methoden an, die erforderlich sind, um zu konfigurieren, wo PowerApps eingebettet werden kann.  
 

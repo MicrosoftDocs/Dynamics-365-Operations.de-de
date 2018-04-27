@@ -20,18 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Gewichteter Durchschnitt mit physischem Wert und Markierung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Beim gewichteten Durchschnitt handelt es sich um ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Für dieses Modell werden Abgänge aus dem Bestand mit dem Durchschnittswert der Artikel, die im Rahmen der Lagerabschlussperiode in den Bestand eingehen, sowie des gesamten verfügbaren Bestands der vorangegangenen Periode bewertet.
 
@@ -74,16 +74,16 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 ![WeightedAverage – Direkter Ausgleich ohne Einbeziehung des physischen Werts](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
--   Lagerbuchungen sind durch vertikale Pfeile dargestellt.
--   Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
--   Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
--   Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
--   Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
--   Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
--   Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
--   Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
--   Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
--   Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
+- Lagerbuchungen sind durch vertikale Pfeile dargestellt.
+- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
+- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
+- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
+- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
+- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
 
 ## <a name="weighted-average-summarized-settlement-without-the-include-physical-value-option"></a>Zusammengefasster Ausgleich mit gewichtetem Durchschnitt ohne die Option "Physischen Wert einbeziehen"
 Beim gewichteten Durchschnitt wird ein Ausgleichsprinzip verwendet, bei dem alle Zugänge innerhalb einer Abschlussperiode in einer neuen Buchung mit der Bezeichnung Lagerabschluss mit gewichtetem Durchschnitt zusammengefasst werden. Alle Zugänge der Periode werden mit dem Abgang der neu erstellten Umlagerungsbuchung ausgeglichen. Alle Abgänge der Periode werden mit dem Zugang der neu erstellten Umlagerungsbuchung ausgeglichen. Ist der verfügbare Bestand nach dem Lagerabschluss positiv, werden der verfügbare Bestand sowie der Wert des Lagers in der neuen Umlagerungsbuchung (Zugang) zusammengefasst. Ist der verfügbare Bestand nach dem Lagerabschluss negativ, handelt es sich bei dem verfügbaren Bestand und dem Wert des Lagers um die Summe der einzelnen Abgänge, die noch nicht vollständig ausgeglichen wurden. Im folgenden Szenario wurden mehrere wertmäßig aktualisierte Zugänge sowie ein Abgang gebucht: 
@@ -108,18 +108,18 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 ![Gewichteter Durchschnitt – Zusammengefasster Ausgleich ohne Einbeziehung des physischen Werts](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
--   Lagerbuchungen sind durch vertikale Pfeile dargestellt.
--   Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
--   Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
--   Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
--   Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
--   Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
--   Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
--   Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
--   Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
--   Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
--   Rote Pfeile stehen für die Zugangsbuchungen, die mit der vom System erstellten Abgangsbuchung ausgeglichen werden.
--   Der grüne Pfeil steht für die vom System generierte Zugangsgegenbuchung, mit der die ursprünglich gebuchte Abgangsbuchung ausgeglichen wird.
+- Lagerbuchungen sind durch vertikale Pfeile dargestellt.
+- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
+- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
+- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
+- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
+- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
+- Rote Pfeile stehen für die Zugangsbuchungen, die mit der vom System erstellten Abgangsbuchung ausgeglichen werden.
+- Der grüne Pfeil steht für die vom System generierte Zugangsgegenbuchung, mit der die ursprünglich gebuchte Abgangsbuchung ausgeglichen wird.
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Direkter Ausgleich mit gewichtetem Durchschnitt und der Option "Physischen Wert einbeziehen"
 Die Verwendung des Parameters "Physischen Wert einbeziehen" für den gewichteten Durchschnitt unterscheidet sich von der Funktionsweise in früheren Versionen. Wählen Sie das Feld "Physischen Wert einbeziehen" für einen Artikel im Formular "Lagersteuerungsgruppe" aus. Vom System werden zur Berechnung des vorkalkulierten Einstandspreises (oder des laufenden Durchschnitts) physisch aktualisierte Zugänge verwendet. Die Buchung der Abgänge während der Periode erfolgt auf Basis dieses vorkalkulierten Einstandspreises. Beim Lagerabschluss werden wertmäßig aktualisierte Zugänge ausschließlich in der Berechnung des gewichteten Durchschnitts berücksichtigt. Wenn Sie den gewichteten Durchschnitt verwenden, empfiehlt es sich, einen monatlichen Lagerabschluss durchzuführen. In diesem Beispiel für einen direkten Ausgleich mit gewichtetem Durchschnitt ist die Artikelmodellgruppe so konfiguriert, dass der physische Wert einbezogen wird. 
@@ -137,16 +137,16 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 ![Gewichteter Durchschnitt – Direkter Ausgleich mit Einbeziehung des physischen Werts](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
--   Lagerbuchungen sind durch vertikale Pfeile dargestellt.
--   Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
--   Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
--   Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
--   Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
--   Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
--   Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
--   Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
--   Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
--   Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
+- Lagerbuchungen sind durch vertikale Pfeile dargestellt.
+- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
+- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
+- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
+- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
+- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Zusammengefasster Ausgleich mit gewichtetem Durchschnitt und der Option "Physischen Wert einbeziehen"
 Die Verwendung des Parameters "Physischen Wert einbeziehen" für den gewichteten Durchschnitt unterscheidet sich von der Funktionsweise in früheren Versionen. Wählen Sie das Feld "Physischen Wert einbeziehen" für einen Artikel auf der Seite "Lagersteuerungsgruppe" aus. Vom System werden zur Berechnung des vorkalkulierten Einstandspreises (oder des laufenden Durchschnitts) physisch aktualisierte Zugänge verwendet. Die Buchung der Abgänge während der Periode erfolgt auf Basis dieses vorkalkulierten Einstandspreises. Beim Lagerabschluss werden wertmäßig aktualisierte Zugänge ausschließlich in der Berechnung des gewichteten Durchschnitts berücksichtigt. Wenn Sie den gewichteten Durchschnitt verwenden, empfiehlt es sich, einen monatlichen Lagerabschluss durchzuführen. In diesem Beispiel für einen zusammengefassten Ausgleich mit gewichtetem Durchschnitt ist die Lagersteuerungsgruppe so konfiguriert, dass der physische Wert einbezogen wird. 
@@ -170,18 +170,18 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 ![WeightedAverage – Zusammengefasster Ausgleich mit Einbeziehung des physischen Werts](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
--   Lagerbuchungen sind durch vertikale Pfeile dargestellt.
--   Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
--   Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
--   Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
--   Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
--   Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
--   Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
--   Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise 1a) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
--   Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
--   Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
--   Rote Pfeile stehen für die Zugangsbuchungen, die mit der vom System erstellten Abgangsbuchung ausgeglichen werden.
--   Der grüne Pfeil steht für die vom System generierte Zugangsgegenbuchung, mit der die ursprünglich gebuchte Abgangsbuchung ausgeglichen wird.
+- Lagerbuchungen sind durch vertikale Pfeile dargestellt.
+- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
+- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
+- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
+- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise 1a) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
+- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
+- Rote Pfeile stehen für die Zugangsbuchungen, die mit der vom System erstellten Abgangsbuchung ausgeglichen werden.
+- Der grüne Pfeil steht für die vom System generierte Zugangsgegenbuchung, mit der die ursprünglich gebuchte Abgangsbuchung ausgeglichen wird.
 
 ## <a name="weighted-average-with-marking"></a>Gewichteter Durchschnitt mit Markierung
 Der Begriff "Markierung" bezeichnet ein Verfahren zum Verknüpfen (oder Markieren) einer Abgangsbuchung mit einer Zugangsbuchung. Eine Markierung kann entweder vor oder nach Ausführung der Buchung erfolgen. Durch die Verwendung einer Markierung lassen sich bei der Ausführung der Buchung oder des Lagerabschlusses die exakten Kosten des Lagers ermitteln. 
@@ -218,16 +218,16 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 ![Gewichteter Durchschnitt mit Markierung](./media/weightedaveragewithmarking.gif) 
 
 **Diagrammschlüssel**
--   Lagerbuchungen sind durch vertikale Pfeile dargestellt.
--   Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
--   Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
--   Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
--   Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
--   Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
--   Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
--   Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
--   Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
--   Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
+- Lagerbuchungen sind durch vertikale Pfeile dargestellt.
+- Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
+- Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
+- Über oder unter den einzelnen vertikalen Pfeilen ist im Format Menge@"Unitprice" der Wert der Lagerbuchung angegeben.
+- Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
+- Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
+- Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
+- Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
+- Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
+- Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
 
 
 

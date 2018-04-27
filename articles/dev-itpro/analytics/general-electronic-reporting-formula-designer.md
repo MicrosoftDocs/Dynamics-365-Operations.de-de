@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner in der elektronischen Berichterstellung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronischen Berichterstattung (ER) verwendet wird. Wenn Sie ein Format für ein bestimmtes elektronisches Dokument in EB entwerfen, können Sie Formeln zum Transformieren von Daten verwenden, sodass sie den Anforderungen für die Dokumenterfüllung und Formatierung zu entsprechen. Diese Formeln ähneln Formeln in Microsoft Excel. Unterschiedliche Arten von Funktionen werden in den Formeln unterstützt: Text, Datum und Uhrzeit, Mathematisches, Logisches, Informationen, Datentypumrechnung und andere (domänenspezifische Funktionen des Unternehmens).
 
@@ -313,12 +313,12 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 <tr class="odd">
 <td>ORDERBY (Liste [, Ausdruck 1, Ausdruck 2,...])</td>
 <td>Geben Sie die angegebenen Liste zurück, nachdem sie gemäß der angegebenen Argumente sortiert wurde. Diese Argumente können als Ausdrücke definiert werden.</td>
-<td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>ORDERBY (Vendors, Vendors.'name()')</strong> eine Liste von Lieferanten zurück, die nach Name in aufsteigender Reihenfolge sortiert ist.</td>
+<td>Wenn <strong>Kreditor</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> eine Liste von Lieferanten zurück, die nach Name in aufsteigender Reihenfolge sortiert ist.</td>
 </tr>
 <tr class="even">
 <td>UMKEHREN (Liste)</td>
 <td>Gibt die angegebene Liste in umgekehrter Sortierreihenfolge zurück.</td>
-<td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> eine Liste von Kreditoren zurück, die nach Namen in absteigender Reihenfolge sortiert ist.</td>
+<td>Wenn <strong>Kreditor</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> eine Liste von Kreditoren zurück, die nach Namen in absteigender Reihenfolge sortiert ist.</td>
 </tr>
 <tr class="odd">
 <td>WO (Liste, Bedingung)</td>
@@ -341,7 +341,7 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 </tr>
 <tr class="odd">
 <td>ZÄHLEN (Liste)</td>
-<td>Gibt die erste Zahl des Datensatzes der angegebenen Liste zurück, wenn dieser Datensatz nicht leer ist. Andernfalls wird <strong>0</strong> (Null) zurückgegeben.</td>
+<td>Gibt die erste Zahl des Datensatzes in der angegebenen Liste zurück, wenn die Liste nicht leer ist. Andernfalls wird <strong>0</strong> (Null) zurückgegeben.</td>
 <td><strong>ANZAHL (TEILEN (&quot;abcd&quot;, 3))</strong> gibt <strong>2</strong> zurück, da die Funktion <strong>TEILEN</strong> eine Liste erstellt, die aus zwei Datensätzen besteht.</td>
 </tr>
 <tr class="even">
@@ -395,7 +395,9 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 <tr class="even">
 <td>STRINGJOIN (Liste, Feldname, Trennzeichen)</td>
 <td>Gibt eine Zeichenfolge zurück, die aus verketteten Werten des angegebenen Felds aus der angegebenen Liste besteht. Die Werte sind durch das angegebene Trennzeichen getrennt.</td>
-<td>Wenn Sie <strong>SPLIT(&quot;abc&quot; , 1)</strong> als Datenquelle eingeben, gibt der Ausdruck <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> den Wert <strong>&quot;a:b:c&quot;</strong> zurück.</td>
+
+<td>Wenn Sie <strong>SPLIT(&quot;abc&quot; , 1)</strong> als Datenquelle eingeben, gibt der Ausdruck <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> den Wert <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong> zurück.</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (Liste, Grenzwert, Grenzquelle)</td>
@@ -416,7 +418,7 @@ Die Begrenzung wird nicht auf den letzten Artikel der ursprünglichen Liste ange
 <tr class="even">
 <td>FILTER (Liste, Bedingungen)</td>
 <td>Gibt die angegebene Liste zurück, nachdem die Abfrage geändert wurde, um nach der angegebenen Bedingung zu filtern. Diese Funktion unterscheidet sich von der Funktion <strong>WO</strong>, da die angegebene Bedingung auf jede beliebige EB-Datenquelle des Typs <strong>Tabellendatensätze</strong> auf Datenbankebene angewendet wird. Die Liste und die Bedingung können definiert werden, indem Tabellen und Relationen verwendet werden.</td>
-  <td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören. Wenn <strong>Lieferant</strong> als eine EB-Datenquelle konfiguriert ist, die sich auf die Tabelle <strong>VendTable</strong> bezieht und die <strong>parmVendorBankGroup</strong>, die als EB-Datenquelle konfiguriert ist, den Wert im Zeichenfolgendatentyp zurückgibt, gibt <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> eine Liste von ausschließlich den Lieferantenkonten zurück, die zu einer bestimmten Bankgruppe gehören.</td>
+  <td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören. Wenn <strong>Kreditor</strong> als eine EB-Datenquelle konfiguriert ist, die sich auf die Tabelle <strong>VendTable</strong> bezieht und die <strong>parmVendorBankGroup</strong>, die als EB-Datenquelle konfiguriert ist, den Wert im Zeichenfolgendatentyp zurückgibt, gibt <strong>FILTER (Vendor.&#39;&lt;Relations&#39;.VendBankAccount, Vendor.&#39;&lt;Relations&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> eine Liste von ausschließlich den Kreditorenkonten zurück, die zu einer bestimmten Bankgruppe gehören.</td>
 </tr>
 </tbody>
 </table>
@@ -553,7 +555,7 @@ Der Ausdruck <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> gibt auch <s
 <li>Finance and Operations-Beschriftung SYS18389, die den folgenden Text hat:
 <ul>
 <li><strong>Für die EN-US-Sprache:</strong> &quot;Debitor %1 wird beendet für %2.&quot;</li>
-<li><strong>Für deutsche Sprache:</strong> &quot;Debitor "%1 "wird für %2 gesperrt.&quot;</li>
+<li><strong>Für deutsche Sprache:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Hier die Formel, die gestaltet werden kann:</p>
@@ -561,7 +563,7 @@ Der Ausdruck <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> gibt auch <s
 <p>Wenn ein Bericht für den Kunden <strong>Litware Retail</strong> am 17. Dezember 2015 in der <strong>EN-US</strong>-Kultur und in der <strong>EN-US</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der als Ausnahmenachricht für den Benutzer präsentiert werden kann:</p>
 <p>&quot;Nichts zu drucken. Debitor Litware Retail wird auf 12/17/2015&quot; beendet.</p>
 <p>Wenn derselbe Bericht für den Kunden <strong>Litware Retail</strong> am 17. Dezember 2015 in der <strong>DE</strong>-Kultur und in der <strong>DE</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der ein anderes Datumsformat verwendet:</p>
-<p>&quot;Nichts-zu drucken. Schuldner-"Litware Einzelhandel" wird für 17.12.2015 gesperrt.&quot;</p>
+<p>&quot;Nichts-zu drucken. Debitor &#39;Litware Retail&#39; wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE]<br>
 Die folgende Syntax wird in EB-Formeln für Beschriftungen angewendet:
 <ul>

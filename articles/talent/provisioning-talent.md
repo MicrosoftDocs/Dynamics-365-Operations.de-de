@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
-ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
 ms.contentlocale: de-de
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent bereitstellen
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 for Talent. Für dieses Thema wird vorausgesetzt, dass Sie Talent durch einen Cloud-Lösungs-Anbieter (CSP) oder Unternehmensarchitektur (EA)- Vereinbarung besitzen. Wenn Sie eine vorhandene Microsoft Dynamics 365 Lizenz haben, die den Talent-Service-Plan bereits beinhaltet, und Sie die Schritte in diesem Thema nicht ausführen können, kontaktieren Sie den Support.
 
@@ -79,12 +79,12 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche PowerApps-Um
  
     **CDS 2.0 Umgebung** CDS 2.0 ist am 21. März 2018 verfügbar, aber Talent unterstützt CDS 2.0 nicht. Obwohl Sie CDS 2.0-Datenbanken im PowerApps Admin Center anzeigen und erstellen können, sind diese in Talent nicht verwendbar. Die Option, CDS 2.0-Umgebungen in Talent-Bereitstellungen zu verwenden, wird zu einem späteren Zeitpunkt verfügbar sein.
    
- > [!Note]
- > Um zwischen CDS 1.0- und CDS 2.0-Umgebungen im Verwaltungsportal zu unterscheiden, wählen Sie eine Umgebung aus, und schauen Sie sich die **Details** an. 2,0 CDS Umgebung, die alle der Tatsache "verweisen, dem Sie diese Einstellungen in dem Verwaltungscenter Dynamics 365 verwalten können," Anzeigen der auf einer Instanzversion und haben keine Datenbankregisterkarte. 
+   > [!Note]
+   > Um zwischen CDS 1.0- und CDS 2.0-Umgebungen im Verwaltungsportal zu unterscheiden, wählen Sie eine Umgebung aus, und schauen Sie sich die **Details** an. 2,0 CDS Umgebung, die alle der Tatsache "verweisen, dem Sie diese Einstellungen in dem Verwaltungscenter Dynamics 365 verwalten können," Anzeigen der auf einer Instanzversion und haben keine Datenbankregisterkarte. 
  
    **Standard-Power-App-Umgebung**, Obwohl jeder Mandant automatisch mit einer Standard-PowerApps-Umgebung ausgestattet ist, empfehlen wir, dass Sie ihn nicht mit Talent verwenden, da alle Mandantenbenutzer Zugriff auf die PowerApps-Umgebung haben und unbeabsichtigt produktive Daten beim Testen und Untersuchen von PowerApps oder Flow Integration beeinträchtigen können.
    
-   **Testumgebung** Umgebungen mit einem Namen wie 'TestDrive – alias@domain' werden mit einer 60 tägigen Ablaufperiode erstellt und sind nach dieser Frist abgelaufen und Ihre Umgebung wird automatisch entfernt.
+   <strong>Testumgebung</strong> Umgebungen mit einem Namen wie 'TestDrive – alias@domain' werden mit einer 60 tägigen Ablaufperiode erstellt und sind nach dieser Frist abgelaufen und Ihre Umgebung wird automatisch entfernt.
    
    **Nicht unterstützte Regionen** Talent wird derzeitnur in folgenden Regionen unterstützt: Europa Australien und USA.
   
@@ -115,7 +115,7 @@ Führen Sie die folgenden Anweisungen aus, um das Skript auszufüllen:
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
-   **EnvironmentName** sollte durch den Umgebungsnamen ersetzt werden. Dieser Name wird in LCS angezeigt, und er wird sichtbar sein, wenn Benutzer auswählen, welche Talent-Umgebung verwendet werden soll. 
+   **MyNewEnvironment** sollte durch den Umgebungsnamen ersetzt werden. Dieser Name wird in LCS angezeigt, und er wird sichtbar sein, wenn Benutzer auswählen, welche Talent-Umgebung verwendet werden soll. 
 
    **YourLocation** sollte durch eine der unterstützten Regionen für Talent ersetzt werden: Europa, -USA, Australien. 
 

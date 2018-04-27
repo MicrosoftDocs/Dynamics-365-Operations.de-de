@@ -3,11 +3,12 @@ title: "Kostenverwaltung für Power BI Inhalt"
 description: In diesem Thema wird beschrieben, was im Kostenmanagement Power Bl enthalten ist.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -19,124 +20,195 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
-ms.openlocfilehash: 6739d769c3f7876f67d80554743458b0abd5aae5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4eacafdf9b9e0eabe7fe599e679fca18c749733
 ms.contentlocale: de-de
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-management-power-bi-content"></a>Kostenverwaltung für Power BI Inhalt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
+## <a name="overview"></a>Überblick
+
+Der Microsoft Power BI-Inhalt **Kostenmanagement** ist für Lagerbuchhalter oder Einzelpersonen in der Organisation bestimmt, die für den Status „Bestand” oder „Ressource in Bearbeitung (RIF)” zuständig oder daran interessiert sind oder die für die Analyse von standardmäßigen Kostenabweichungen zuständig oder daran interessiert sind.
 
 > [!Note]
-> Dieses Inhaltspaket ist veraltet, wie dokumentiert in [Power BI-Inhalt, der in PowerBI.com veröffentlicht ist](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> Der Power BI-Inhalt **Kostenmanagement**, der in diesem Thema beschrieben wird, gilt für Dynamics 365 for Finance and Operations 8.0.
+> 
+> Das Power BI-Inhaltspaket **Kostenmanagement**, das auf der Website PowerBI.com veröffentlicht ist, wurde veraltet. Weitere Informationen zu dieser Veraltung finden Sie unter [Power BI-Inhaltspakete, die unter PowerBI.com veröffentlich sind](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
 
 
-In diesem Thema wird beschrieben, was im Kostenmanagement Power Bl enthalten ist. 
+Dieser Power BI-Inhalt bietet ein kategorisiertes Format, mit dessen Hilfe Sie die Leistung von Beständen überwachen können und visuell darstellen können, wie Kosten durch sie fließen. Sie können Verwaltungseinblicke erhalten, wie das Umsatzverhältnis, die Anzahl von Tagen, während der der Bestand verfügbar ist, die Genauigkeit sowie die „ABC-Klassifizierung” auf Ihrer bevorzugten aggregierten Ebene (Untenehmen, Artikel, Artikelgruppe oder Standort). Die verfügbar gemachten Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
 
-Der **Kostenmanagement** Microsoft Power BI Inhalt dient für Bestandsbuchhalter oder Einzelpersonen in der Organisation, die für den Bestand zuständig sind. Der **Kostenmanagement** Power BI Inhalt bietet Einblicke in Bestand und Arbeitsfortschritte (WIP)Bestand und wie die Kosten nach Kategorie im Laufe der Zeit hindurch fließen. Die Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
+Der Power BI-Inhalt wird auf Grundlage der aggregierten Messung **CostObjectStatementCacheMonthly** erstellt, wobei die Tabelle **CostObjectStatementCache** die primäre Datenquelle ist. Diese Tabelle wird durch das Datensatzcacheframework verwaltet. Standardmäßig wird die Tabelle alle Stunden 24 aktualisiert, aber Sie können die Aktualisierungshäufigkeit ändern oder manuelle Aktualisierungen in der Konfiguration des Datensatzcaches aktivieren. Manuelle Aktualisierungen können entweder im Arbeitsbereich **Kostenverwaltung** oder im Arbeitsbereich **Kostenanalyse** ausgeführt werden.
 
-## <a name="key-measures"></a>Zentrale Maßnahmen
+Nach jeder Aktualisierung der Tabelle **CostObjectStatementCache** muss die aggregierte Messung **CostObjectStatementCacheMonthly** aktualisiert werden, bevor Daten in den Power BI-Visualisierungen aktualisiert werden.
 
-+ Anfangssaldo
-+ Endsaldo
-+ Nettoveränderung
-+ Nettoveränderung in %
-+ Fälligkeit
+## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
 
-## <a name="key-performance-indicators"></a>Leistungskennzahlen (KPI)
-+ Lagerumschlag
-+ Lagergenauigkeit
+Der Power BI-Inhalt **Kostenmanagement** wird in den Arbeitsbereichen **Kostenverwaltung** und **Kostenanalyse** angezeigt.
 
-Die primäre Datenquelle für CostAggregatedCostStatementEntryEntity ist die CostStatementCache-Tabelle. Diese Tabelle wird durch das Datensatzcacheframework verwaltet. Standardmäßig wird die Tabelle alle Stunden 24 aktualisiert, wobei Sie manuelle Aktualisierungen in der Datencachekonfiguration aktivieren können. Sie können eine manuelle Aktualisierung in **Kostenmanagement** oder **Kostenanalyse** - Arbeitsbereich vornehmen. Nach Abschluss der Aktualisierung von CostStatementCache, müssen Sie die OData-Verbindung auf Power Bl.com aktualisieren, um die aktualisierte Daten auf der Katalogwebsite anzuzeigen. Die Kennzahl der Abweichung (Einkauf, Produktion) in diesem Power Bi Inhalt enthält nur die nur die Elemente, die von der Standardkostenbestandsmethode valuiert werden. Die Produktionsabweichung wird als Differenz zwischen aktiven Kosten und realisierten Kosten berechnet. Die Produktionsabweichung wird berechnet, wenn der Produktionsauftrag den Status aufweist **beendet** aufweist. Weitere Informationen zu jedem Produktionsabweichungstyp und wie jeder Typ berechnet wird, finden Sie unter [Analysieren von Abweichungen für eine abgeschlossenen Produktionsauftrag](https://technet.microsoft.com/en-us/library/gg242850.aspx).
+Der Arbeitsbereich **Kostenverwaltung** enthält die folgenden Registerkarten:
+
+- **Übersicht** – Auf dieser Registerkarte werden Anwendungsdaten angezeigt.
+- **Lagerbuchhaltungsstatus** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+- **Fertigungsbuchhaltungsstatus** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+
+Der Arbeitsbereich **Kostenanalyse** enthält die folgenden Registerkarten:
+
+- **Übersicht** – Auf dieser Registerkarte werden Anwendungsdaten angezeigt.
+- **Lagerbuchhaltungsanalyse** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+- **Fertigungsbuchhaltungsanalyse** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+- **Analyse standardmäßiger Kostenabweichung** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+
+## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Berichtsseiten, die im Power BI-Inhalt enthalten sind
+
+Der Power BI-Inhalt **Kostenmanagement** enthält eine Reihe von Berichtsseiten, die aus einem Satz von Metriken bestehen. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. 
+
+Die folgende Tabelle bietet eine Übersicht der Visualisierungen im Power Bl-Inhalt **Kostenmanagement**.
+
+### <a name="inventory-accounting-status"></a>Bestandsbuchhaltung – Status
+
+| Berichtsseiten                               | Darstellung                                   |
+|-------------------------------------------|-------------------------------------------------|
+| Lager (Überblick)                        | Anfangssaldo                               |
+|                                           | Nettoveränderung                                      |
+|                                           | Nettoveränderung in %                                    |
+|                                           | Endsaldo                                  |
+|                                           | Lagergenauigkeit                              |
+|                                           | Verhältniszahl für Lagerumschlag                        |
+|                                           | Lagerbestandsverfügbarkeit in Tagen                          |
+|                                           | Aktives Produkt in Periode                        |
+|                                           | Aktive Kostenträger in Periode                   |
+|                                           | Saldo nach Artikelgruppe                           |
+|                                           | Saldo nach Standort                                 |
+|                                           | Aufstellung nach Kategorie                           |
+|                                           | Nettoveränderung nach Quartal                           |
+| Bestandsübersicht nach Standort und Artikelgruppe | Lagerbestandsgenauigkeit nach Standort                      |
+|                                           | Lagerumschlagverhältnis nach Standort                |
+|                                           | Lagerbestandsendsaldo nach Standort                |
+|                                           | Lagerbestandsgenauigkeit nach Artikelgruppe                |
+|                                           | Lagerumschlagverhältnis nach Artikelgruppe          |
+|                                           | Lagerbestandsendsaldo nach Standort und Artikelgruppe |
+| Lageraufstellung                       | Lageraufstellung                             |
+| Lagerbestandsaufstellung nach Standort               | Lagerbestandsaufstellung nach Standort                     |
+| Lagerbestandsaufstellung nach Produkthierarchie  | Lageraufstellung                             |
+| Lagerbestandsaufstellung nach Produkthierarchie  | Lagerbestandsaufstellung nach Standort                     |
+
+### <a name="manufacturing-accounting-status"></a>Fertigungsbuchhaltung – Status
+
+| Berichtsseiten                | Darstellung                       |
+|----------------------------|-------------------------------------|
+| RIF-Übersicht ab Jahresbeginn           | Anfangssaldo                   |
+|                            | Nettoveränderung                          |
+|                            | Nettoveränderung in %                        |
+|                            | Endsaldo                      |
+|                            | RIF-Umsatzverhältnis                  |
+|                            | Tage RIF verfügbar                    |
+|                            | Aktiver Kostenträger in Periode        |
+|                            | Nettoveränderung nach Ressourcengruppe        |
+|                            | Saldo nach Standort                     |
+|                            | Aufstellung nach Kategorie               |
+|                            | Nettoveränderung nach Quartal               |
+| RIF-Aufstellung              | Anfangssaldo                   |
+|                            | Endsaldo                      |
+|                            | RIF-Aufstellung nach Kategorie           |
+| RIF-Aufstellung nach Standort      | Anfangssaldo                   |
+|                            | Endsaldo                      |
+|                            | RIF-Aufstellung nach Kategorie und Standort  |
+| RIF-Aufstellung nach Hierarchie | Anfangssaldo                   |
+|                            | Endsaldo                      |
+|                            | RIF-Aufstellung nach Kategoriehierarchie |
+
+### <a name="inventory-accounting-analysis"></a>Bestandsbuchhaltung – Analyse
+
+| Berichtsseiten        | Darstellung                                                                |
+|--------------------|------------------------------------------------------------------------------|
+| Bestandsdetails  | Top 10 Ressourcen nach Endsaldo                                           |
+|                    | Top 10 Ressourcen nach Nettoerhöhung                                      |
+|                    | Top 10 Ressourcen nach Nettoverringerung                                      |
+|                    | Top 10 Ressourcen nach Bestandsumsatzverhältnis                                 |
+|                    | Ressourcen nach Umsatzverhältnis bei niedrigem Lagerbestand und Endsaldo oberhalb des Schwellenwerts |
+|                    | Top 10 Ressourcen nach niedriger Genauigkeit                                             |
+| ABC-Klassifizierung | Bestand Endbetrag                                                     |
+|                    | Verbrauchtes Material                                                            |
+|                    | Verkauft (COGS)                                                                  |
+| Bestandstrends   | Bestand Endbetrag                                                     |
+|                    | Bestand Nettoänderung                                                         |
+|                    | Verhältniszahl für Lagerumschlag                                                     |
+|                    | Lagergenauigkeit                                                           |
+
+### <a name="manufacturing-accounting-analysis"></a>Fertigungsbuchhaltung – Analyse
+
+| Berichtsseiten | Darstellung      |
+|-------------|--------------------|
+| RIF-Trends  | RIF-Endsaldo |
+|             | RIF-Nettoveränderung     |
+|             | RIF-Umsatzverhältnis |
+
+### <a name="std-cost-variance-analysis"></a>Standardkostenabweichungsanalyse
+
+| Berichtsseiten                             | Darstellung                                        |
+|-----------------------------------------|------------------------------------------------------|
+| Einkaufspreisabweichung (Standardkosten) ab Jahresbeginn | Beschaffter Saldo                                     |
+|                                         | Einkaufspreisabweichung                              |
+|                                         | Einkaufspreis-Abweichungsverhältnis                        |
+|                                         | Abweichung nach Artikelgruppe                               |
+|                                         | Abweichung nach Standort                                     |
+|                                         | Einkaufspreis nach Quartal                            |
+|                                         | Einkaufspreis nach Quartal und Artikelgruppe             |
+|                                         | Top 10 Ressourcen nach ungünstigem Einkaufspreisverhältnis |
+|                                         | Top 10 Ressourcen nach günstigem Einkaufspreisverhältnis   |
+| Produktionsabweichung (Standardkosten) ab Jahresbeginn     | Fertigungskosten                                    |
+|                                         | Produktionsabweichung                                  |
+|                                         | Produktionsabweichungsverhältnis                            |
+|                                         | Abweichung nach Artikelgruppe                               |
+|                                         | Abweichung nach Standort                                     |
+|                                         | Produktionsabweichung nach Quartal                       |
+|                                         | Produktionsabweichung nach Quartal und Abweichungstyp     |
+|                                         | Top 10 Ressourcen nach ungünstiger Produktionsabweichung  |
+|                                         | Top 10 Ressourcen nach günstiger Produktionsabweichung    |
+
+### <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
+
+Daten aus Microsoft Dynamics 365 for Finance and Operations werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Kostenmanagement** zu füllen. Diese Daten werden als zusammengeführte Messungen dargestellt, die im Entitätsspeicher bereitgestellt werden, der eine Microsoft SQL Server-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie unter [Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
+
+Die wesentlichen aggregierten Messungen der folgenden Objekte werden als Grundlage des Power BI Inhalts verwendet.
+
+| Objekt                          | Zentrale aggregierte Messungen | Datenquelle für Finance and Operations | Feld               |
+|---------------------------------|----------------------------|----------------------------------------|---------------------|
+| CostObjectStatementCacheMonthly | Dauer                     | CostObjectStatementCache               | Dauer              |
+| CostObjectStatementCacheMonthly | Leistung                   | CostObjectStatementCache               | Menge                 |
+| CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
+| CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |
+
+Die folgende Tabelle zeigt die wesentlichen berechneten Messungen im Power BI-Inhalt an.
+
+| Kennzahl                            | Herstellkostenkalkulation |
+|------------------------------------|-------------|
+| Anfangssaldo                  | Anfangssaldo = [Endsaldo]-[Nettoveränderung] |
+| Anfangssaldomenge             | Anfangssaldomenge = [Endsaldomenge]-[Nettoveränderungsmenge] |
+| Endsaldo                     | Endsaldo = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
+| Endsaldomenge                | Endsaldomenge = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
+| Nettoveränderung                         | Nettoänderung = SUM([AMOUNT]) |
+| Nettoveränderungsmenge                    | Nettoveränderungsmenge = SUM([QTY]) |
+| Lagerumschlagverhältnis nach Betrag | Lagerumschlagverhältnis nach Betrag = if(OR([Durchschnittlicher Bestandssaldo] \<= 0, [Verkaufter oder verbrauchter Bestand] \>= 0), 0, ABS([Verkaufter oder verbrauchter Bestand])/[Durchschnittlicher Bestandssaldo]) |
+| Durchschnittlicher Lagerbestandsaldo          | Duchschnittlicher Bestandssaldo = (([Endsaldo] + [Anfangssaldo]) / 2) |
+| Lagerbestandsverfügbarkeit in Tagen             | Lagerbestandsverfügbarkeit in Tagen = 365 / CostObjectStatementEntries[Lagerumschlagsverhältnis nach Betrag] |
+| Lagergenauigkeit                 | Lagerbestandsgenauigkeit nach Betrag = IF([Endsaldo] \<= 0, IF(OR([Gezählter Bestandsbetrag] \<\> 0, [Endsaldo] \< 0), 0, 1), MAX(0, ([Endsaldo] - ABS([Gezählter Bestandsbetrag]))/[Endsaldo])) |
+
+Die folgenden wesentlichen Dimensionen werden als Filter verwendet, um die aggregierten Messungen zu segmentieren, damit Sie eine stärkere Granularität sowie tiefere analytische Einblicke erlangen.
 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
-Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im **Kostenmanagement** Power Bl Inhalt.
-
-| Berichtsseiten | Diagramme | Titel |
-|---|---|---|
-|Gesamtes Lager (Standard nach aktueller Periode) |Genauigkeit |Bestandskennzahlen:<br>Bestand Endbetrag<br>Bestand Nettoänderung<br>Bestand Nettoänderung in %<br>|
-| |Lagerumschlag | |
-| |Endsaldo von Ressourcengruppe | |
-| |Bestandsnettoveränderung nach Kategoriename Ebene 1 und Kategoriename Ebene 2| |
-| |Kaufen Sie Abweichungen nach Ressourcengruppen und Kategoriename Ebene 3 | |
-|Bestand nach Lager (Standard nach aktueller Periode) |Endsaldo Bestand nach Standortname und Ressourcengruppe | |
-| |Bestandumschlag nach Sndortname und Ressourcengruppe | |
-| |Endsaldo Bestand nach Stadt und Ressourcengruppe | |
-|Bestand nach Ressourcengruppe (Standard nach aktueller Periode) |Bestandsmassnahmen | |
-| |Bestandsrichtigkeit nach Betrag nach Ressourcengruppe | |
-| |Bestandsrichtigkeit nach Betrag nach Ressourcengruppe | |
-|Bestand COY (Standard aktuelles Jahr vs. vorheriges Jahr) |Bestandsmassnahmen | |
-| |Bestands-KPIs:<br>Lagerumschlag<br>Lagergenauigkeit | |
-| |Endsaldo Bestand nach Jahr und Ressourcengruppe | |
-| |Kaufen Sie Abweichungen nach Jahr und Kategoriename Ebene 3 | |
-|Bestandsfälligkeit (Standard nach aktuellem Jahr) |Bestandsfälligkeit nach Quartal und Ressourcengruppe | |
-| |Bestandsfälligkeit nach Quartal und Standortname | |
-|RIF gesamt (Standard nach aktueller Periode) |RIF Nettänderung nach Kategoriename Ebene 1 und Kategoriename Ebene 2 |In Bearbeitung befindliche RIF-Vorgänge:<br>RIF-Endsaldo<br>RIF-Nettoveränderung<br>RIF-Nettoveränderung in %<br> |
-| |Produktionsabweichungen nach Ressourcengruppen und Kategoriename Ebene 3 | |
-| |RIF-Nettoveränderung von Ressourcengruppe | |
-|RIF nach Standort (Standard nach aktueller Periode) |In Bearbeitung befindliche RIF-Maßnahmen | |
-| |RIF Nettänderung nach Standortname und Kategoriename Ebene 2 | |
-| |Produktionsabweichungen nach Standortname und Kategoriename Ebene 3 | |
-
-## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Finance and Operations-Daten werden für die Berichte im **Kostenverwaltung**-Power BI-Inhalt ergänzt. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden, der eine Microsoft SQL-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md). Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verwendet.
-
-| Entität            | Zentrale aggregierte Messungen | Datenquelle für Finance and Operations | Feld             | Beschreibung                       |
-|-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
-| Berichtseinträge | Nettoveränderung                | CostAggregatedCostStatementEntryEntity      | Summe (\[Betrag\])   | Betrag in Buchhaltungswährung |
-| Berichtseinträge | Änderung der Nettomenge       | CostAggregatedCostStatementEntryEntity      | Sum(\[Menge\]) |                                   |
-
-Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet werden, um mehrere berechnete Kennzahlen im Dataset des Inhalts zu erstellen.
-
-| Kennzahl                                 | Wie die festgelegte Kennzahl berechnet wird                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Anfangssaldo                       | \[Endsaldo\]-\[Nettoveränderung\]                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Anfangssaldo Menge              | \[Endsaldo Menge\]-\[Nettoveränderung Menge\]                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Endsaldo                          | BERECHNEN SIE(SUM(\[Amount\]), FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]), 'Fiscal calendars'\[Date\] &lt;= MAX('Fiscal calendars'\[Date\])))                                                                                                                                                                                           |
-| Endsaldo, Menge                 | BERECHNEN SIE(SUM(\[Menge\]), FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]), 'Fiscal calendars'\[Date\] &lt;= MAX('Fiscal calendars'\[Date\])))                                                                                                                                                                                         |
-| Anfangssaldo Bestand             | BERECHNEN Sie (\[Anfangssaldo\], 'Auszugseingabe'\[Berichtstyp\] = "Bestand")n                                                                                                                                                                                                                                                                                                                                                                                      |
-| Bestand Endbetrag                | BERECHNEN Sie (\[Endsaldo\], 'Auszugseingabe'\[Berichtstyp\] = "Bestand")n                                                                                                                                                                                                                                                                                                                                                                                         |
-| Bestand Nettoänderung                    | BERECHNEN Sie (\[Nettoänderung\], 'Auszugseingabe'\[Berichtstyp\] = "Bestand")n                                                                                                                                                                                                                                                                                                                                                                                             |
-| Bestand Nettoänderungmenge           | BERECHNEN Sie (\[Nettoänderungsmenge\], 'Auszugseingabe'\[Berichtstyp\] = "Bestand")n                                                                                                                                                                                                                                                                                                                                                                                    |
-| Bestand Nettoänderung in %                  | WENN(\[Bestand-Endsaldo\] = 0, 0, \[Bestand-Nettoveränderung\] / \[Bestand-Endsaldo\])                                                                                                                                                                                                                                                                                                                                                                           |
-| Bestandumschlag nach Betrag                | wenn (oder(\[durchschnittlicher Bestand\] &lt;= 0, \[verkaufter Bestand oder konsumierte Artikel\] &gt;= 0), 0, ABS(\[verkaufter Bestand oder konsumierte Artikel\])/\[durchschnittlicher Bestandsaldo\])                                                                                                                                                                                                                                                                                                  |
-| Durchschnittlicher Lagerbestandsaldo               | (\[Bestandendsaldo\] + \[Bestandanfangssaldo\]) / 2                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Verkaufter Bestand oder verbrauchte Artikel       | \[Bestand verkauft\] + \[Bestand verbrauchte Materialkosten\]                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Bestand verbrauchte Materialkosten        | BERECHNEN SIE(\[Bestand Nettoveränderung\], Berichtseinträge'\[Kategoriename - Ebene 2\_\] = "ConsumedMaterialsCost")                                                                                                                                                                                                                                                                                                                                                            |
-| Bestand verkauft                          | BERECHNEN SIE(\[Bestand Nettoveränderung\], Berichtseinträge'\[Kategoriename - Ebene 2\_\] = "verkauft")                                                                                                                                                                                                                                                                                                                                                                             |
-| Bestandgenauigkeit nach Betrag            | WENN(\[Bestandendsaldo\] &lt;= 0, WENN(ODER(\[Bestandbetrag\] &lt;&gt; 0, \[Bestandendsaldo\] &lt; 0), 0, 1), MAX(0, (\[Bestandendsaldo\] - ABS(\[Bestand gezählter Betrag\]))/\[Bestand Endsaldo\]))                                                                                                                                                                                                                              |
-| Bestand gezählter Betrag                | BERECHNEN SIE(\[Bestand Nettoveränderung\], Berichtseinträge'\[Kategoriename - Ebene 3\_\] = "Zählung")                                                                                                                                                                                                                                                                                                                                                                         |
-| Bestandsfälligkeit                         | wenn(ISBLANK(max('Steuerkalender'\[Datum\])), blank(), MAX(0, MIN(\[Bestand Empfangsmenge\], \[Bestand Endsaldomenge\] - \[Bestand Empfangsmenge in der Zukunft\]))) \* \[Bestand durchschnittliche Einheitskosten\]                                                                                                                                                                                                                                |
-| Bestandsfälligkeits-Zugangsmenge       | WENN(\[minDate\] = \[minDateAllSelected\], BERECHNEN(\[Bestand Nettoänderungsmenge\], 'Beitragseinträge'\[Menge\] &gt; 0, FILTER(ALLEXCEPT('Steuerkalender', 'Steuerjahr'\[LedgerRecId\], 'Entitäten'\[ID\], 'Entitäten'\[Name\], 'Ledgers'\[Währung\], 'Hauptbuch'\[Beschreibung\], 'Hauptbuch'\[Name\]), 'Steuerkalender'\[Datum\] &lt;= MAX('Steuerkalender'\[Datum\]))), BERECHNEN(\[Bestand Nettoveränderungsmenge\], 'Berichtseinträge'\[Menge\] &gt; 0)) |
-| Bestandsfälligkeits-Endsaldomenge | \[Bestandendsummenmenge\] + CALCULATE(\[Bestandnettoveränderung\], FILTER(ALLEXCEPT('Steuerjahr', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]), 'Fiscal calendars'\[Date\] &gt; max('Fiscal calendars'\[Date\]) ))                                                                                                                                 |
-| Bestandsfälligkeitszugänge zukünftig  | CALCULATE(\[Bestandnettoveränderung\], 'Berichtseingaben'\[Betrag\] &gt; 0, FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]), 'Fiscal calendars'\[Date\] &gt; MAX('Fiscal calendars'\[Date\])))                                                                                                                                             |
-| Durchschnittliche Bestand-Einheitenkoste                 | CALCULATE(\[Bestandenbilanz\] / \[Bestandendbilanzmenge\],ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'Entitäten'\[ID\], 'Entitäten'\[Name\], 'Sachkonto'\[Währung\], 'Sachkonto'\[Beschreibung\], 'Sachkonto'\[Name\]))                                                                                                                                                                                                                 |
-| Einkaufspreisabweichung                      | CALCULATE(SUM(\[Betrag\]), Berichtseingabe'\[Kategoriename - Ebene 2\_\] = "Erfasst", 'Berichtseingaben'\[Berichtstyp\] = "Abweichung")                                                                                                                                                                                                                                                                                                                              |
-| RIF-Anfangssaldo                   | CALCULATE(\[Anfangssaldo\], 'Berichtseingaben'\[Berichtstyp\] = "RIF")                                                                                                                                                                                                                                                                                                                                                                                            |
-| RIF-Endsaldo                      | CALCULATE(\[Endsaldo\], 'Berichtseingaben'\[Berichtstyp\] = "RIF")                                                                                                                                                                                                                                                                                                                                                                                               |
-| RIF-Nettoveränderung                          | BERECHNE(\[Nettoänderung\], 'Berichtseingaben'\[Berichtstiyp\] = "RIF")                                                                                                                                                                                                                                                                                                                                                                                                   |
-| RIF-Nettoveränderung in %                        | IF(\[RIF Endsaldo\] = 0, 0, \[RIF Nettoveränderung\] / \[RIF Endsaldo\])                                                                                                                                                                                                                                                                                                                                                                                             |
-| Produktionsabweichung                    | BERECHNE(SUM(\[Betrag\]), Berichtseingabe'\[Kategoriename - Ebene 2\_\] = "ManufacturedCost", 'Berichtseingaben'\[Berichtstyp\] = "Abweichung")                                                                                                                                                                                                                                                                                                                      |
-| Kategoriename - Ebene 1                 | Wechselt Kategoriename (\[- Ebene 1 kein\_\]" ", "kein", "NetSourcing", "Nettobevorratung"," NetUsage "," Netzwerkgebrauch "," NetConversionCost "," Nettoverarbeitungskosten ", " "," NetCostOfGoodsManufactured Stunden-Einstandspreis von Waren Produktion ", "BeginningBalance"," Anfangssaldo ")                                                                                                                                                                                                         |
-| Kategoriename - Ebene 2                 | switch(\[Kategoriename - Ebene 2\_\], "Keine", "Keine", "Procured", "Procured", "Disposed", "Disposed", "Transferred", "Transferred", "Sold", "Sold", "ConsumedMaterialsCost", "Consumed material cost", "ConsumedManufacturingCost", "Consumed manufacturing cost", "ConsumedOutsourcingCost", "Consumed outsourcing cost", "ConsumedIndirectCost", "Consumed indirect cost", "ManufacturedCost", "Manufactured cost", "Variances", "Variances")                            |
-| Kategoriename - Ebene 3                 | switch(\[Kategoriename - Ebene 3\_\], "None", "None", "Counting", "None", "ProductionPriceVariance", "Production price", "QuantityVariance", "Quantity", "SubstitutionVariance", "Substitution", "ScrapVariance", "Scrap", "LotSizeVariance", "Lot size", "RevaluationVariance", "Revaluation", "PurchasePriceVariance", "Purchase price", "CostChangeVariance", "Cost change", "RoundingVariance", "Rounding variance")                                                   |
-
-Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregierte Messungen zu teilen, um eine größere Granularität zu erreichen und tiefere und analytische Einblicke bereitzustellen.
-
-| Entität           | Beispiele für Attribute                       |
-|------------------|----------------------------------------------|
-| Entitäten         | Kennung, Name                                     |
-| Steuerkalender | Kalender, Monat, Periode, Quartal Jahr       |
-| KPI-Ziele        | Bestandsrichtigkeitsziel, Bestandsdrehungsziel |
-| Sachkonten          | Währung, Name, Beschreibung                  |
-| Standorte            | Kennung, Name, Land, Ort                      |
-
-
-
-
+|                         Entität                          |             Beispiele für Attribute              |
+|---------------------------------------------------------|-------------------------------------------------|
+|                        Produkte                         | Produktnummer, Produktname, Einheit, Artikelgruppen |
+| Kategoriehierarchien (Zugewiesen zur Rolle „Kostenmanagement”) |       Kategoriehierarchie, Kategorie-Ebene        |
+|                     Juristische Personen                      |               Name der juristischen Person                |
+|                    Steuerkalender                     |  Steuerkalender, Jahr, Quartal, Periode, Monat  |
+|                          Standort                           |        ID, Name, Adresse, Bundesland, Land        |
 
 

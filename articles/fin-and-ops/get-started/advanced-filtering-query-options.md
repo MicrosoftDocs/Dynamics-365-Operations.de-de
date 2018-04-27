@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1fe940d2d282a5b4468b3ba572626b5c87839e6d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a>Erweiterte Filter- und Abfragesyntax
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den "entspricht"-Operator im Dialogfeld "Erweitertes Filtern/Sortieren" verwenden.
 
@@ -56,7 +55,7 @@ In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfü
 <td><em>Wert</em></td>
 <td>Gleich dem eingegebenen Wert.</td>
 <td>Geben Sie den zu suchenden Wert ein.</td>
-<td>Mit der Zeichenfolge <strong>Schnepf </strong>wird der Begriff &quot;Schnepf&quot; gefunden.</td>
+<td>Mit der Zeichenfolge <strong>Schnepf</strong> wird der Begriff &quot;Schnepf&quot; gefunden.</td>
 </tr>
 <tr class="even">
 <td>!<em>Wert</em> (Ausrufezeichen)</td>
@@ -68,7 +67,7 @@ In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfü
 <td><em>Von-Wert</em>..<em>Bis-Wert</em> (zwei Punkte)</td>
 <td>Zwischen zwei eingegebenen Werten, die von zwei Punkten getrennt werden.</td>
 <td>Geben Sie den "Von-Wert", zwei Punkte und dann den "Bis-Wert" ein.</td>
-<td><strong>1..10</strong> findet alle Werte von 1 bis 10. In einem Zeichenfolgenfeld findet <strong>A..C</strong> alle Werte, die mit &quot;A&quot; und &quot;B&quot; beginnen, sowie Werte, die genau gleich &quot;C&quot; sind. Diese Abfrage findet beispielsweise nicht &quot;Ca&quot;. Wenn Sie alle Werte von &quot;A*&quot; bis &quot;C*&quot;, suchen, geben Sie also <strong>A..D</strong> ein.</td>
+<td><strong>1..10</strong> findet alle Werte von 1 bis 10. In einem Zeichenfolgenfeld findet <strong>A..C</strong> alle Werte, die mit &quot;A&quot; und &quot;B&quot; beginnen, sowie Werte, die genau gleich &quot;C&quot; sind. Diese Abfrage findet beispielsweise nicht &quot;Ca&quot;. Wenn Sie alle Werte von &quot;A<em>&quot; bis &quot;C</em>&quot;, suchen, geben Sie also <strong>A..D</strong> ein.</td>
 </tr>
 <tr class="even">
 <td>..<em>Wert</em> (zwei Punkte)</td>
@@ -83,34 +82,34 @@ In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfü
 <td><strong>1000</strong> sucht alle Zahlen, die größer oder gleich 1000 sind, z. B. &quot;1,000&quot;, &quot;1,000.01&quot;, und &quot;1,000,000&quot;.</td>
 </tr>
 <tr class="even">
-<td>&gt;<em>Wert</em> ((Zeichen "größer als")</td>
+<td>&gt;<em>Wert</em> (Zeichen "größer als")</td>
 <td>Größer als der eingegebene Wert.</td>
-<td>Geben Sie das Zeichen "größer als (<strong>&gt;</strong>)  und dann den Wert ein.</td>
-<td><strong>&gt;1000</strong>sucht alle Zahlen, die größer als 1000 sind, wie &quot;1000.01&quot;, &quot;20,000&quot;, und &quot;1,000,000&quot;.</td>
+<td>Geben Sie das Zeichen "größer als (<strong>&gt;</strong>) und dann den Wert ein.</td>
+<td><strong>&gt;1000</strong> sucht alle Zahlen, die größer als 1000 sind, wie &quot;1000.01&quot;, &quot;20,000&quot;, und &quot;1,000,000&quot;.</td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>Wert</em>  (Zeichen "kleiner als")</td>
+<td>&lt;<em>Wert</em> (Zeichen "kleiner als")</td>
 <td>Kleiner als der eingegebene Wert.</td>
 <td>Geben Sie das Zeichen "kleiner als (<strong>&lt;</strong>) und dann den Wert ein.</td>
-<td><strong>&lt;1000</strong> sucht alle Zahlen, die kleiner als 1000 sind, wie z&quot;999.99&quot;, &quot;1&quot;, und &quot;-200&quot;.</td>
+<td><strong>&lt;1000</strong> sucht alle Zahlen, die kleiner als 1000 sind, wie z. B. &quot;999.99&quot;, &quot;1&quot;, und &quot;-200&quot;.</td>
 </tr>
 <tr class="even">
 <td><em>Wert</em>* (Stern)</td>
 <td>Beginnend ab dem eingegebenen Wert.</td>
-<td>Geben Sie einen Anfangswert und dann einen Stern (<strong>*</strong>) ein.</td>
-<td><strong>S*</strong> findet alle Zeichenfolgen, die mit &quot;S&quot; beginnen, wie &quot;Stockholm&quot;, &quot;Sydney&quot;, und &quot;San Francisco&quot;.</td>
+<td>Geben Sie einen Anfangswert und dann einen Stern (<strong><em></strong>) ein.</td>
+<td>Mit <strong>S</em></strong> werden alle Zeichenfolgen gefunden, die mit &quot;S&quot; beginnen, wie &quot;Stockholm&quot;, &quot;Sydney&quot; und &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>Wert</em>* (Stern)</td>
+<td><em><em>Wert</em> (Stern)</td>
 <td>Endet mit dem eingegebenen Wert.</td>
 <td>Geben Sie einen Stern und dann den Endwert ein.</td>
-<td><strong>*Osten</strong> findet alle Zeichenfolgen, die auf  &quot;Ostent&quot; enden, wie  &quot;Nordosten&quot; und &quot;Südosten&quot;.</td>
+<td><strong></em>osten</strong> findet alle Zeichenfolgen, die auf &quot;osten&quot; enden, wie &quot;Nordosten&quot; und &quot;Südosten&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>Wert</em>* (Stern)</td>
+<td><em><em>Wert</em></em> (Stern)</td>
 <td>Enthält den eingegebenen Wert.</td>
 <td>Geben Sie einen Stern, den Wert und dann einen weiteren Stern ein.</td>
-<td><strong>*st*</strong>  findet alle Zeichenfolgen, die &quot;st&quot; enthalten, wie &quot;Nordosten&quot; und &quot;Südosten&quot;.</td>
+<td><strong><em>st</em></strong> findet alle Zeichenfolgen, die &quot;st&quot; enthalten, wie &quot;Nordosten&quot; und &quot;Südosten&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (Fragezeichen)</td>
@@ -131,10 +130,10 @@ In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfü
 <td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
-<td>Di</td>
+<td>t</td>
 <td>Datum von heute</td>
 <td>Geben Sie <strong>T</strong> ein.</td>
-<td><strong>T</strong> gleicht heutiges Datum ab.</td>
+<td><strong>T</strong> stimmt mit heutigem Datum überein.</td>
 </tr>
 <tr class="odd">
 <td>(methodName (Parameter)) (<strong>SysQueryRangeUtil</strong>-Methode in Klammern)</td>

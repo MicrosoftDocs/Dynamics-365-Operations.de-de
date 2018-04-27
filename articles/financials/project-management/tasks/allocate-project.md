@@ -17,15 +17,17 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 3d486e5b7a7ef8f711b8f44af81292a7a8f0bcd4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a253a37bc83482c5bc971cad585e18ccb230b16f
 ms.contentlocale: de-de
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Zuweisen eines Projektbudgets oder einer Budgetüberarbeitung zu Perioden
 
-[!include[task guide banner](../../includes/task-guide-banner.md)] Nachdem Sie ein Projektbudget oder eine Überarbeitung eine Projektbudgets eingegeben haben, und bevor Sie sie zur Genehmigung übermitteln, können Sie die Beträge zu Perioden zuordnen. Wenn das Budget oder die Budgetüberarbeitung abgelehnt wird, können Sie die Beträge auch zuweisen, bevor Sie sie erneut übermitteln. 
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+
+ Nachdem Sie ein Projektbudget oder eine Überarbeitung eine Projektbudgets eingegeben haben, und bevor Sie sie zur Genehmigung übermitteln, können Sie die Beträge zu Perioden zuordnen. Wenn das Budget oder die Budgetüberarbeitung abgelehnt wird, können Sie die Beträge auch zuweisen, bevor Sie sie erneut übermitteln. 
 
 Nachdem ein Budget oder eine Budgetüberarbeitung zugewiesen wurde, können Sie die Zuteilungsbeträge und Regulierungen prüfen und ändern, bevor Sie das Budget oder die Budgetüberarbeitung dem Genehmigungsworkflow übermitteln. 
 
@@ -34,7 +36,7 @@ Nachdem ein Budget oder eine Budgetüberarbeitung zugewiesen wurde, können Sie 
 3. Klicken Sie im Aktivitätsbereich auf der Registerkarte Plan in der Gruppe Budgetgruppe auf Projektbudget. 
 4. Klicken Sie im Formular Budgetgruppe auf der Registerkarte Aktion in der Gruppe Budgetgruppe auf Budget zuweisen. 
 5. Geben Sie im Formular Budget zuweisen in den Feldern Zuweisen ab und Zuweisen bis das erste und letzte Datum ein, das Sie in die Budgetverteilung einbeziehen möchten. Dies sind entweder die ersten und letzten Daten des gesamtes Projekts oder die ersten und letzten Daten des aktuellen Jahres.  
-> [HINWEIS!] Nachdem eine Buchungsart zugewiesen wurde und die Beträge genehmigt wurden, kann der Zuteilungszeitraum nicht in künftigen Budgetüberarbeitungen geändert werden. 
+   > [HINWEIS!] Nachdem eine Buchungsart zugewiesen wurde und die Beträge genehmigt wurden, kann der Zuteilungszeitraum nicht in künftigen Budgetüberarbeitungen geändert werden. 
 6. Wählen Sie im Feld Nach Zeitperiode aus, ob Sie das Projektbudget nach Jahr, Quartal oder Unternehmensfinanzzeiträumen innerhalb des Jahres zuweisen möchten.
 7. Wählen Sie die Buchungsarten aus, die zuzuweisen sind, und klicken Sie anschließend auf Zuweisen. 
 8. Im Projektbudgetzuteilungsformular oder im Projektbudgetszuweisungsformular prüfen oder aktualisieren Sie die Beträge, die zugewiesen werden. 

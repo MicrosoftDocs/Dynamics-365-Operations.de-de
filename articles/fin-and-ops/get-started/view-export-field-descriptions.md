@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Feldbeschreibungen anzeigen und exportieren
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel erläutert, wie eine Feldbeschreibung angezeigt und die Seite "Feldbeschreibungen" verwendet wird, um eine Beschreibung zu exportieren.
 
@@ -77,7 +76,7 @@ Es gibt mehrere Möglichkeiten, im Feld **Eine Seite auswählen** eine Seite zu 
     -   Wenn mehr als eine exakte Übereinstimmung vorliegt, werden keine Beschreibungen angezeigt. Öffnen Sie die Dropdownliste, und wählen Sie die gewünschte Seite.
     -   Wenn der Name, den Sie eingeben, Teil des Namens einer anderen Seite ist, werden die Beschreibung für Ihre Seite angezeigt. Wenn Sie aber die Liste öffnen, sehen Sie zusätzliche Seiten, die diesen Namen beinhalten.
 
-Es werden beispielsweise keine Beschreibungen angezeigt, wenn Sie im Feld ****Eine Seite auswählen**** **Inventur** eingeben. Wenn Sie die Dropdownliste öffnen, sehen Sie, dass es zwei Seiten mit der Bezeichnung **Inventur** gibt, sowie mehrere Seiten, die das Wort "Inventur" im Namen enthalten. Wenn Sie die Seite auswählen, die den AOT-Namen **InventJournalCount** hat, werden die Feldbeschreibungen für diese Seite angezeigt. Wenn Sie jedoch die Dropdownliste erneut öffnen, werden Sie sehen, dass die Liste jetzt alle Seiten enthält, die "InventJournalCount" als Teil ihres AOT-Seitennamens haben.
+Es werden beispielsweise keine Beschreibungen angezeigt, wenn Sie im Feld <strong><em>Eine Seite auswählen</em></strong> <strong>*Inventur*</strong> eingeben. Wenn Sie die Dropdownliste öffnen, sehen Sie, dass es zwei Seiten mit der Bezeichnung <strong>Inventur</strong> gibt, sowie mehrere Seiten, die das Wort "Inventur" im Namen enthalten. Wenn Sie die Seite auswählen, die den AOT-Namen <strong>InventJournalCount</strong> hat, werden die Feldbeschreibungen für diese Seite angezeigt. Wenn Sie jedoch die Dropdownliste erneut öffnen, werden Sie sehen, dass die Liste jetzt alle Seiten enthält, die "InventJournalCount" als Teil ihres AOT-Seitennamens haben.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 In den folgenden Abschnitten finden Sie Informationen, zur Behebung von Problem, die auftreten können, wenn Sie Feldbeschreibungen verwenden.

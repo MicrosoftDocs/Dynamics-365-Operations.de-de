@@ -3,7 +3,7 @@ title: Veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 0618d71fdb4b29bfdacd6b9e1a8ed47e03abe00d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="removed-or-deprecated-features"></a>Entfernte oder veraltete Funktionen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema beschreibt Funktionen, die bei Dynamics 365 for Finance and Operations entfernt wurden oder dafür veraltet sind.
 
@@ -38,6 +38,9 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!Note]
 > Ab der Version von Juli 2017 von Dynamics 365 for Finance and Operations, Enterprise Edition mit Plattformupdate 8, wird der Typ der Bereitstellungen bei jeder entfernten oder veralteten Funktion angegeben. Alle vorherigen Versionen, die in diesem Thema erwähnt wurden, haben nur Cloudbereitstellungen unterstützt.
+
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 mit Plattformupdate 15
+Keine Funktionen sind in dieser Version entfernt oder veraltet worden. Plattformupdate 15 ist kumulativ und enthält neue oder geänderte Funktionen aus Plattformupdate 13, Plattformupdate 14 und Plattformupdate 15.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 mit Plattformupdate 12
 
@@ -1033,10 +1036,11 @@ Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und G
 
 ### <a name="x-financial-statements"></a>X++ Finanzaufstellungen
 
-|   |  |
-|------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Funktion wurde durch eine andere Funktion ersetzt.                                    |
-| **Ersetzt durch eine andere Funktion?**   | Management Reporter (**Finanzberichterstellung** in der aktuellen Version von Dynamics AX) |
-| **Betroffene Produktbereiche**         | Hauptbuch                                                                              |
-| **Status**                         | Entfernt ab Dynamics AX 2012                                                              |
+|                                                 |                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <strong>Grund für veralteten Zustand/Entfernung</strong> |                         Die Funktion wurde durch eine andere Funktion ersetzt.                         |
+|  <strong>Ersetzt durch eine andere Funktion?</strong>  | Management Reporter (<strong>Finanzberichterstellung</strong> in der aktuellen Version von Dynamics AX) |
+|     <strong>Betroffene Produktbereiche</strong>     |                                              Hauptbuch                                              |
+|             <strong>Status</strong>             |                                      Entfernt ab Dynamics AX 2012                                      |
+
 

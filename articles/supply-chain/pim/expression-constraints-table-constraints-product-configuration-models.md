@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3206e53c4f2659c6d9b9be64b01ac28cdd17bc88
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Ausdruckseinschränkungen und Tabelleneinschränkungen in Produktkonfigurationsmodellen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird die Verwendung von Ausdruckseinschränkungen und Tabelleneinschränkungen beschrieben. Einschränkungen steuern die Attributwerte, die Sie auswählen können, wenn Sie Produkte für einen Auftrag, ein Verkaufsangebot, eine Bestellung oder einen Produktionsauftrag konfigurieren. Sie können Ausdruckseinschränkungen oder Tabelleneinschränkungen verwenden, je nachdem, wie Sie die Einschränkungen erstellen möchten. 
 
@@ -64,7 +63,7 @@ In der folgenden Tabelle werden die Kombinationen angezeigt, die von der Tabelle
 
 Sie können die systemdefinierte und benutzerdefinierte Tabelleneinschränkungen erstellen. Weitere Informationen finden Sie unter [Systemdefinierte und benutzerdefinierte Tabelleneinschränkungen](system-defined-user-defined-table-constraints.md).
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Welche Syntax soll verwendet werden, um Einschränkungen in  aufzuheben?
+## <a name="what-syntax-should-be-used-to-write-constraints"></a>Welche Syntax soll verwendet werden, um Einschränkungen in aufzuheben?
 Sie müssen Optimization Modeling Language (OML)-Syntax verwenden, wenn Sie die Einschränkungen schreiben. Das System verwendet Microsoft Solver Foundation-Einschränkungswandler, um die Einschränkungen zu beheben.
 
 ## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Soll ich Tabelleneinschränkungen oder Ausdruckseinschränkungen verwenden?
@@ -171,7 +170,7 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 </tr>
 <tr class="even">
 <td>Antriebskraft</td>
-<td>Dies nimmt einen exponentiellen Wert. Dies wendet die Exponenten von rechts nach links an. (Das bedeutet, dass dies rechtsverknüpfend ist.) Deshalb P<strong>Power[a, b, c]</strong> ist gleich <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> kann nur mit einer positiven Konstante als Exponent verwendet werden.</td>
+<td>Dies nimmt einen exponentiellen Wert. Dies wendet die Exponenten von rechts nach links an. (Das bedeutet, dass dies rechtsverknüpfend ist.) Deshalb ist <strong>Power[a, b, c]</strong> gleich <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> kann nur mit einer positiven Konstante als Exponent verwendet werden.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
@@ -204,23 +203,24 @@ In den folgenden Tabellen werden die Operatoren und Infixschreibweise aufgeliste
 
 Die Beispiele in der nächsten Tabellen zeigen, wie eine Infixnotation geschrieben wird.
 
-| Infixschreibweise    | Beschreibung                                                                                   |
+
+|  Infixschreibweise   |                                          Beschreibung                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Hinzufügung                                                                                      |
-| x \* y \* z       | Multiplikation                                                                                |
-| x - y             | Die binäre Subtraktion wird auf die gleiche Weise wie die binäre Addition bei einer negierten Sekunde übersetzt. |
-| x ^ y ^ z         | Exponenten mit Rechtsverknüpfung                                                   |
-| !x                | Boolesches not                                                                                   |
-| x -: y            | Boolesche Auswirkung                                                                           |
-|  - | y | z         | Boolesches or                                                                                    |
-| x & y & z         | Boolesches and                                                                                   |
-| x == y == z       | Gleichheit                                                                                      |
-| x != y != z       | Getrennt                                                                                      |
-| x &lt; y &lt; z   | Kleiner als                                                                                     |
-| x &gt; y &gt; z   | Größer als                                                                                  |
-| x &lt;= y &lt;= z | Kleiner oder gleich                                                                         |
-| x &gt;= y &gt;= z | Größer oder gleich                                                                      |
-| (x)               | Klammern setzten die standardmäßige Rangfolge außer Kraft.                                                      |
+|     x + y + z     |                                           Hinzufügung                                            |
+|    x \* y \* z    |                                        Multiplikation                                         |
+|       x - y       | Die binäre Subtraktion wird auf die gleiche Weise wie die binäre Addition bei einer negierten Sekunde übersetzt. |
+|     x ^ y ^ z     |                          Exponenten mit Rechtsverknüpfung                          |
+|        !x         |                                          Boolesches not                                          |
+|      x -: y       |                                      Boolesche Auswirkung                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          Boolesches and                                          |
+|    x == y == z    |                                           Gleichheit                                            |
+|    x != y != z    |                                           Getrennt                                            |
+|  x &lt; y &lt; z  |                                           Kleiner als                                           |
+|  x &gt; y &gt; z  |                                         Größer als                                          |
+| x &lt;= y &lt;= z |                                     Kleiner oder gleich                                     |
+| x &gt;= y &gt;= z |                                   Größer oder gleich                                    |
+|        (x)        |                           Klammern setzten die standardmäßige Rangfolge außer Kraft.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Warum werden meine Ausdruckseinschränkungen nicht ordnungsgemäß validiert?
 Sie können reservierte Schlüsselwörter nicht als Wandlernamen für Attribute, Komponenten oder Unterkomponenten in einem Produktkonfigurationsmodell verwenden. Die folgende Tabelle enthält eine Liste der reservierten Schlüsselwörter, die Sie nicht verwenden dürfen.

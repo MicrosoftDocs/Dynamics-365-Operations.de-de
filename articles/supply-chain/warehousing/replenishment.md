@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="replenishment"></a>Wiederbeschaffung
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die Wiederbeschaffungsstrategien, die für Lagerorte, die die Funktionen der Lagerortverwaltung verwenden, verfügbar sind. Die Informationen in diesem Artikel gelten nicht für die Lagerort-Lösung, die in der Lagerverwaltung verfügbar ist.
 
@@ -67,13 +67,15 @@ Ladungsbedarfs-Wiederbeschaffung summiert den Bedarf für verschiedene Ladungen 
 Anstatt den Bedarf am Ende eines Zuteilungsprozesses zu bestimmen und die Wiederbeschaffung auf Basis der summierten Menge durchzuführen, können Sie Strategie der sofortigen Wiederbeschaffung verwenden. Mit dieser Strategie können Sie den Bestand sofort wiederbeschaffen, wenn eine Richtlinienposition fehlschlägt. Deshalb können Sie die Wiederbeschaffung so einrichten, dass sie auf bestimmte Einheiten beschränkt ist, und so, dass dabei Mengen verwendet werden, die für bestimmte Lagerplätze festgelegt wurden.
 
 ## <a name="replenishment-prerequisites"></a>Wiederbeschaffungsvoraussetzungen
-| Voraussetzung            | Beschreibung |
-|-------------------------|-------------|
-| Artikel                    | Der Artikel muss für Lagerortverwaltungsprozesse aktiviert werden. |
-| Lagerort               | Der Lagerort muss für Lagerortverwaltungsprozesse aktiviert werden. Um einen Lagerort für Lagerortverwaltungsprozesse auf der Seite **Lagerorte** zu aktivieren, wählen Sie den Lagerort und dann die Option **Lagerortverwaltungsprozesse verwenden** aus. |
-| Wiederbeschaffungsvorlagen | Mindestens eine Wiederbeschaffungsvorlage muss für Min./Max.-Auffüllung, Wellenbedarfsbeschaffung oder Ladungsbedarfs-Wiederbeschaffung eingerichtet werden. |
-| Lagerplätze               | Lagerplätze müssen erstellt und mit einem Lagerplatzprofil verknüpft werden. |
-| Lagerplatzprofile       | Lagerplatzprofile sind erforderlich, um Lagerplätze zu erstellen. |
-| Lagerplatzrichtlinien     | Lagerplatzrichtlinien sind erforderlich, um die Arbeit zu den Lagerplätzen zu leiten, an denen eine Wiederbeschaffung benötigt wird und zu Lagerplätzen, aus denen der Bestand stammt. |
-| Arbeitsvorlagen          | Arbeitsvorlagen des Typs **Wiederbeschaffung** sind erforderlich, um Wiederbeschaffungsarbeit zu erstellen, damit der Bestand an die gewünschten Lagerplätze verschoben werden kann. |
+
+|      Voraussetzung       |                                                                                                                                Beschreibung                                                                                                                                 |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Artikel           |                                                                                                        Der Artikel muss für Lagerortverwaltungsprozesse aktiviert werden.                                                                                                        |
+|        Lagerort        | Der Lagerort muss für Lagerortverwaltungsprozesse aktiviert werden. Um einen Lagerort für Lagerortverwaltungsprozesse auf der Seite <strong>Lagerorte</strong> zu aktivieren, wählen Sie den Lagerort und dann die Option <strong>Lagerortverwaltungsprozesse verwenden</strong> aus. |
+| Wiederbeschaffungsvorlagen |                                                                   Mindestens eine Wiederbeschaffungsvorlage muss für Min./Max.-Auffüllung, Wellenbedarfsbeschaffung oder Ladungsbedarfs-Wiederbeschaffung eingerichtet werden.                                                                   |
+|        Lagerplätze        |                                                                                                       Lagerplätze müssen erstellt und mit einem Lagerplatzprofil verknüpft werden.                                                                                                       |
+|    Lagerplatzprofile    |                                                                                                        Lagerplatzprofile sind erforderlich, um Lagerplätze zu erstellen.                                                                                                        |
+|   Lagerplatzrichtlinien   |                                                       Lagerplatzrichtlinien sind erforderlich, um die Arbeit zu den Lagerplätzen zu leiten, an denen eine Wiederbeschaffung benötigt wird und zu Lagerplätzen, aus denen der Bestand stammt.                                                        |
+|     Arbeitsvorlagen      |                                                   Arbeitsvorlagen des Typs <strong>Wiederbeschaffung</strong> sind erforderlich, um Wiederbeschaffungsarbeit zu erstellen, damit der Bestand an die gewünschten Lagerplätze verschoben werden kann.                                                    |
+
 

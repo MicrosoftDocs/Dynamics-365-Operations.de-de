@@ -18,21 +18,20 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7b5af6f4203f8141ee2cccaa18b58bfdec3d9351
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aeb91f402eb4ab983e4ccbcaf87a24a817065485
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="packing-material-fee-calculation-for-austria"></a>Bericht "Berechnung der Verpackungsmaterialgebühren" für Österreich
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zu Verpackungsmaterialsätze und Gebühren in Österreich.
 
-In Europa gibt es Verpackungsmüll-Bestimmungen. Diese Bestimmungen arbeiten mit dem Prinzip "Kollektiherstellerzuständigkeit. " Das bedeutet, sie erzwingen die Anforderung, für die der Verkäufer oder Hersteller von Verpackungen für die  Umwelteinwirkung dieser Zuständigkeit für die Verpackung Verantwortung übernehmen. Entsprechend den Bestimmungen sind Hersteller dazu verpflichtet, einen Teil der Kosten und des Wiederverwendens der Beitreibung der Verpackung zu bezahlen. Diese Zahlung ist als Verpackungsmaterialgebühr bekannt*,* und wird periodisch dem Recyclingunternehmen bezahlt. Ein Unternehmen muss das Gewicht jeder Typ Verpackungsmaterial Papier (, Plastik, Metall, usw.) berechnen das während eines Verkaufs oder eines Einkaufs verwendet wurde, und das Gewicht nach dem Satz des Pakets multiplizieren. Die Regierungsbehörde stellt den Verpackungsmaterialsatz für jeden Paketmaterialtyp bereit. In Österreich wird eine komplexere Formel für Verpackungsmaterialgebühren verwendet. Verpackungsmaterialien werden in verschiedene Kategorien gruppieren (beispielsweise, Haushalt und Werbung" dividiert, und stellt für die Behörde von Verpackungsmaterialien in den einzelnen Kategorien verfügbar. Die Kategorie, in die das Verpackungsmaterial gehört, hängt von der Größe und den Produkten ab, die für die Verpackung verwendet wurde. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind.
+In Europa gibt es Verpackungsmüll-Bestimmungen. Diese Bestimmungen arbeiten mit dem Prinzip "Kollektiherstellerzuständigkeit. " Das bedeutet, sie erzwingen die Anforderung, für die der Verkäufer oder Hersteller von Verpackungen für die  Umwelteinwirkung dieser Zuständigkeit für die Verpackung Verantwortung übernehmen. Entsprechend den Bestimmungen sind Hersteller dazu verpflichtet, einen Teil der Kosten und des Wiederverwendens der Beitreibung der Verpackung zu bezahlen. Diese Zahlung ist als Verpackungsmaterialgebühr bekannt<em>,</em> und wird periodisch dem Recyclingunternehmen bezahlt. Ein Unternehmen muss das Gewicht jeder Typ Verpackungsmaterial Papier (, Plastik, Metall, usw.) berechnen das während eines Verkaufs oder eines Einkaufs verwendet wurde, und das Gewicht nach dem Satz des Pakets multiplizieren. Die Regierungsbehörde stellt den Verpackungsmaterialsatz für jeden Paketmaterialtyp bereit. In Österreich wird eine komplexere Formel für Verpackungsmaterialgebühren verwendet. Verpackungsmaterialien werden in verschiedene Kategorien gruppieren (beispielsweise, Haushalt und Werbung" dividiert, und stellt für die Behörde von Verpackungsmaterialien in den einzelnen Kategorien verfügbar. Die Kategorie, in die das Verpackungsmaterial gehört, hängt von der Größe und den Produkten ab, die für die Verpackung verwendet wurde. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 <table>

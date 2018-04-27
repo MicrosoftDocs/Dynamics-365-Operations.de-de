@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 405a298ab26e343f50cb8dd80622a414695950a7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 86070204769b866b947405436437eb0eb746de11
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="compensation-plans"></a>Vergütungspläne
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Manager Vergütungen und Leistungen können die Vergütungsverwaltung verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation verwalten und verarbeiten.
 
@@ -57,7 +56,7 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 <td>Aktivitäten bezüglich fester Vergütung werden aus zwei Gründen eingerichtet:
 <ul>
 <li>Aktivitäten können die Art der Informationen angeben, die erfasst werden muss, wenn sich die Vergütung eines Mitarbeiters ändert. So können z. B. festlegen, dass der Grund eine Änderung (z. B. eine Beförderung oder Zurückstufung) erfasst wird.</li>
-<li>Die Aktivitäten werden auf einen Ereignisprozesses angewendet, wenn feste Vergütungspläne berechnet werden.  Aktivitäten können sicherstellen, dass eine Berechnung angewendet wird, wenn feste Vergütungspläne verarbeitet werden. Aktivitäten vom Typ Vergleich vergleichen beispielsweise die Bezahlung eines Mitarbeiters mit dem Mindestreferenzpunkt für die Stufe des Mitarbeiters und stellen sicher, dass dem Mitarbeiter mindestens das Minimum gezahlt wird.</li>
+<li>Die Aktivitäten werden auf einen Ereignisprozesses angewendet, wenn feste Vergütungspläne berechnet werden.  Beispielsweise bei Aktivitäten vom Typ „Fairness” wird der Lohn/Gehalt der Mitarbeiter mit dem Mindestreferenzpunkt für die Ebene des Mitarbeiters verglichen und sichergestellt, dass der Mitarbeiter mindestens den Mindestbetrag erhält.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -86,7 +85,7 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 </tr>
 <tr class="even">
 <td>Lohnzahlungshäufigkeit</td>
-<td>Lohnzahlungshäufigkeiten werden verwendet, um den Zeitraum zu definieren, für die der Vergütungseinstellungen angegeben wird.  Beispielsweise hilft Ihnen die Lohnzahlungshäufigkeit zu verstehen, ob der Kompensationsbetrag als jährliches Gehalt oder als Stundenlohn  angegeben ist. Zahlungshäufigkeiten werden auch verwendet, um Umrechnungsfaktoren einzurichten, um Vergütung von monatlich, wöchentlich, zweiwöchentlich und stundenbasiert in eine jährliche Lohnzahlungshäufigkeit umzuwandeln.</td>
+<td>Lohnzahlungshäufigkeiten werden verwendet, um den Zeitraum zu definieren, für die der Vergütungseinstellungen angegeben wird.  Beispielsweise hilft Ihnen die Lohnzahlungshäufigkeit zu verstehen, ob der Kompensationsbetrag als jährliches Gehalt oder als Stundenlohn angegeben ist. Zahlungshäufigkeiten werden auch verwendet, um Umrechnungsfaktoren einzurichten, um Vergütung von monatlich, wöchentlich, zweiwöchentlich und stundenbasiert in eine jährliche Lohnzahlungshäufigkeit umzuwandeln.</td>
 </tr>
 <tr class="odd">
 <td>Ausgleichsregionen</td>

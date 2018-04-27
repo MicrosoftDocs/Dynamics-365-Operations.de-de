@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6cd1e3a1f6b5c979a4f60d97cc2203cdcd32bbbe
-ms.openlocfilehash: 6de88b82c9a663bfe6d2756fde6f1a7412a44b1e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
 ms.contentlocale: de-de
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pay-based-on-registrations"></a>Lohn auf Basis von Erfassungen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird im Detail erläutert, wie Lohn auf der Grundlage der Erfassungen von Arbeitskräften berechnet wird. Zudem enthält es Beispiele, die zeigen, wie die verschiedenen Kombinationen von Einrichtungsoptionen angezeigt werden, die für die Berechnung des Ergebnisses verfügbar sind. Nachfolgend sind einige der Bereiche, die erfasst sind:
 
@@ -85,7 +85,7 @@ Entsprechend dem Gleitzeitprofil ist die Zeitspanne zwischen 06:00 bis 07:00 ein
 
 #### <a name="calculation-of-flex-"></a>Flex - berechnen
 
-Entsprechend dem Gleitzeitprofil beginnt die Flexperiode um 02:30 Uhr und um.03:30 Uhr. Wenn daher die Arbeitskraft um 14:45 Uhr ausstempelt, werden die 45 Minuten (0,75 Stunden), die in der „Gleitzeit-”-Periode liegen als Lohnzeit erfasst, und dieselbe Zeitmenge wird vom Gleitzeitkonto der Arbeitskraft abgezogen. Die 45 Minuten sind in der entlohnten Zeit enthalten, da der Arbeitskraft Lohn für die restlichen 45 Minuten in der „Gleitzeit-”-Periode gewährt wird. Wenn die Arbeitskraft  während der Flexperiode abwesend ist, werden die 45 Minuten aus dem Gleitzeitkonto abgezogen werden.
+Entsprechend dem Gleitzeitprofil beginnt die Flexperiode um 02:30 Uhr und um.03:30 Uhr. Wenn daher die Arbeitskraft um 14:45 Uhr ausstempelt, werden die 45 Minuten (0,75 Stunden), die in der „Gleitzeit-”-Periode liegen als Lohnzeit erfasst, und dieselbe Zeitmenge wird vom Gleitzeitkonto der Arbeitskraft abgezogen. Die 45 Minuten sind in der entlohnten Zeit enthalten, da der Arbeitskraft Lohn für die restlichen 45 Minuten in der „Gleitzeit-”-Periode gewährt wird. Wenn die Arbeitskraft während der Flexperiode abwesend ist, werden die 45 Minuten aus dem Gleitzeitkonto abgezogen werden.
 
 #### <a name="calculation-of-time"></a>Berechnung der Zeit
 
@@ -124,7 +124,7 @@ Entsprechend dem Gleitzeitprofil ist die Zeitspanne zwischen 06:00 bis 07:00 ein
 
 #### <a name="calculation-of-flex-"></a>Flex - berechnen
 
-Weil die Arbeitskraft während der Flexperiode arbeitet, wird die Flexperioade nicht berechnet. "Gleitzeit-" wird nur berechnet, wenn die Arbeitskraft während der Flexperiode abwesend ist. Klicken Sie in einer Zahlungsperspektive, wenn die Arbeitskraft während der Flexperiode arbeitet, wird ihr der Lohnsatz gewährt, der für Standardzeit definiert wird. Wenn die Arbeitskraft  während der Flexperiode abwesend ist, werdebn die 45 Minuten aus dem Gleitzeitkonto abgezogen werden.
+Weil die Arbeitskraft während der Flexperiode arbeitet, wird die Flexperioade nicht berechnet. "Gleitzeit-" wird nur berechnet, wenn die Arbeitskraft während der Flexperiode abwesend ist. Klicken Sie in einer Zahlungsperspektive, wenn die Arbeitskraft während der Flexperiode arbeitet, wird ihr der Lohnsatz gewährt, der für Standardzeit definiert wird. Wenn die Arbeitskraft während der Flexperiode abwesend ist, werdebn die 45 Minuten aus dem Gleitzeitkonto abgezogen werden.
 
 #### <a name="calculation-of-time"></a>Berechnung der Zeit
 
@@ -182,7 +182,7 @@ Nachdem Sie die Berechnungsparameter anpassen, werden folgende Lohnelement gener
 | Gehaltstyp     | Lohnart | Lohneinheiten | Satz  | Gesamtkosten |
 |---------------|----------|-----------|-------|------------|
 | Standardzeit | 1201     | 8.50      | 10    | 85.0       |
-| Überstunden      | 1301     | 1.50      | September    | 22.50      |
+| Überstunden      | 1301     | 1.50      | 15    | 22.50      |
 |               |          |           | Summe | 107.50     |
 
 > [!NOTE]
@@ -227,7 +227,7 @@ Die folgenden Lohnelemente werden nach der Übertragung generiert.
 | Gehaltstyp     | Lohnart | Lohneinheiten | Satz  | Gesamtkosten |
 |---------------|----------|-----------|-------|------------|
 | Standardzeit | 1201     | 8.50      | 10    | 85.0       |
-| Überstunden      | 1305     | 1.50      | September    | 22.50      |
+| Überstunden      | 1305     | 1.50      | 15    | 22.50      |
 |               |          |           | Summe | 107.50     |
 
 Auf der Seite **Genehmigen** können Sie die Übertragung rückgängig machen und dann **Wechselcode** verwenden, um den **OTBCI** Wechselcode zu übernehmen. Wenn Sie die Erfassungen ein zweites Mal übertragen, werden die folgenden Lohnelemente generiert.
@@ -235,7 +235,7 @@ Auf der Seite **Genehmigen** können Sie die Übertragung rückgängig machen un
 | Gehaltstyp     | Lohnart | Lohneinheiten | Satz  | Gesamtkosten |
 |---------------|----------|-----------|-------|------------|
 | Standardzeit | 1201     | 8.50      | 10    | 80.0       |
-| Überstunden      | 1305     | 2.00      | September    | 30.0       |
+| Überstunden      | 1305     | 2.00      | 15    | 30.0       |
 |               |          |           | Summe | 107.50     |
 
 > [!NOTE]
@@ -446,7 +446,7 @@ Sie können geplante Abwesenheit für Arbeitskräfte auf der Seite **Geplante Ab
 Der Einzelvorgang basiert auf einer Abfrage. Daher können Sie eine geplante Abwesenheit für mehrere Arbeitskräfte erstellen, wie beispielsweise Arbeitskräfte, die zur selben Berechnungsgruppe gehören. Wenn die geplante Abwesenheit für einzelne Arbeitskräfte ist, kann die Erfassung von der Seite **Anwesenheit** oder auf der Seite **Zeiterfassung für Arbeitskräfte** eingegeben werden.
 
 - Um eine Abwesenheitserfassung von der Seite **Anwesenheit** einzugeben, wählen Sie **Zeit und Anwesenheit** &gt; **Abfragen und Berichte** &gt; **Anwesenheit** &gt; **Anwesenheit** aus, und wählen Sie dann **Abwesenheitserfassung** aus.
-- Um eine Abwesenheitserfassung von der Seite ****Zeiterfassung für Arbeitskräfte**** einzugeben, wählen Sie **Zeit und Anwesenheit** &gt; **Einstellungen** &gt; **Zeiterfassung für Arbeitskräfte** aus, und wählen Sie dann auf der Registerkarte **Zeit** unter **Zeitzuweisung** die Option **Abwesenheitserfassungen** aus.
+- Um eine Abwesenheitserfassung von der Seite *<strong><em>Zeiterfassung für Arbeitskräfte</em></strong>* einzugeben, wählen Sie <strong>Zeit und Anwesenheit</strong> &gt; <strong>Setup</strong> &gt; <strong>Zeiterfassung für Arbeitskräfte</strong> aus, und wählen Sie dann auf der Registerkarte <strong>Zeit</strong> unter <strong>Zeitzuweisung</strong> die Option <strong>Abwesenheitserfassungen</strong> aus.
 
 Sie können den Bericht **Geplante Abwesenheitszeiten** verwenden, um eine Übersicht über geplante Abwesenheiten für Arbeitskräfte anzuzeigen. Um diesen Bericht zu öffnen, wählen Sie **Zeit und Anwesenheit** &gt; **Abfragen und Berichte** &gt; **Abwesenheitsberichte** &gt; **Geplante Abwesenheitszeiten** aus.
 
@@ -474,7 +474,7 @@ Die Arbeitskraft stempelt um 08:30 Uhr ein. Da die geplante Einstempelzeit 07:00
 
 Im Zeitprofil können Sie den Anmeldetyp **Einstempeln** konfigurieren, damit eine Toleranz vorhanden ist, wenn Arbeitskräfte zu spät zur Arbeit sind. Wenn Sie eine Toleranz von 5 einrichten, erhält die Arbeitskraft für einen Abwesenheitscode, wenn er später als 07:05 einstempelt.
 
-Da die Arbeitskraft in diesem Fall keinen triftigen Grund für das Zuspätkommen zur Arbeit hat, wählt er  einen Abwesenheitscode aus, der für unzulässige Abwesenheit definiert wird. Ein Abwesenheitscode wird für ungültige Abwesenheit anwendbar, wenn die Einstellung für Überstundenabzug für die Abwesenheitsgruppe aktiviert ist, zum der Abwesenheitscode gehört. Um die Einstellung festzulegen, wählen Sie **Zeit und Anwesenheit** &gt; **Einstellungen** &gt; **Gruppen** &gt; **Abwesenheitsgruppen** aus, und aktivieren Sie dann das Kontrollkästchen **Überstunden abziehen**.
+Da die Arbeitskraft in diesem Fall keinen triftigen Grund für das Zuspätkommen zur Arbeit hat, wählt er einen Abwesenheitscode aus, der für unzulässige Abwesenheit definiert wird. Ein Abwesenheitscode wird für ungültige Abwesenheit anwendbar, wenn die Einstellung für Überstundenabzug für die Abwesenheitsgruppe aktiviert ist, zum der Abwesenheitscode gehört. Um die Einstellung festzulegen, wählen Sie **Zeit und Anwesenheit** &gt; **Einstellungen** &gt; **Gruppen** &gt; **Abwesenheitsgruppen** aus, und aktivieren Sie dann das Kontrollkästchen **Überstunden abziehen**.
 
 So werden Erfassungen der Arbeitskraft für den Tag auf der Seite **Genehmigen** bei Berechnung angezeigt werden.
 
@@ -548,7 +548,7 @@ Wenn das Kontrollkästchen **Überstundenzeit abziehen** für den ausgewählten 
 | Gehaltstyp     | Lohnart | Lohneinheiten | Satz |
 |---------------|----------|-----------|------|
 | Standardzeit | 1201     | 9:00      | 10   |
-| Überstunden      | 1301     | 0.5       | September   |
+| Überstunden      | 1301     | 0.5       | 15   |
 
 Hier ziehen die 1,5 Stunden der unzulässigen Abwesenheit von 07:00 bis 09:30 bis die 2 Überstunden von 03:30 Uhr bis 05:30 Uhr ab. Das Ergebnis der Erfassung beträgt 1,5 Stunden Standardzeit und 0,5 Stunden Überstunden.
 
@@ -557,7 +557,7 @@ Durch Kontrast, wenn das Kontrollkästchen **Überstundenzeit abziehen** für de
 | Gehaltstyp     | Lohnart | Lohneinheiten | Satz |
 |---------------|----------|-----------|------|
 | Standardzeit | 1201     | 7.50      | 10   |
-| Überstunden      | 1301     | 2.0       | September   |
+| Überstunden      | 1301     | 2.0       | 15   |
 
 ### <a name="scenario-5-the-worker-clocks-out-before-the-planned-clock-out-time-and-can-convert-the-absence-period-to-a-flex--period"></a>Szenario 5: Die Arbeitskraft stempelt vor der geplanten Ausstempeluhrzeit aus und kann die Abwesenheitsperiode in eine „Gleitzeit-”-Periode konvertieren
 
@@ -575,7 +575,7 @@ So werden Erfassungen der Arbeitskraft für den Tag auf der Seite **Genehmigen**
 | Produktionseinzelvorgang            | 07:00 (vormittags) | 13:00 (nachmittags) | 6.0  |
 | Ausstempeln                 | 13:00 (nachmittags) | 13:00 (nachmittags) |      |
 
-Wenn die Arbeitskraft einen Abwesenheitscode für unzulässige Abwesenheit auswählt, sehen Sie hier,  wie die sich ergebende Lohnelemente sich um die Erfassung kümmern.
+Wenn die Arbeitskraft einen Abwesenheitscode für unzulässige Abwesenheit auswählt, sehen Sie hier, wie die sich ergebende Lohnelemente sich um die Erfassung kümmern.
 
 | Gehaltstyp     | Lohnart | Lohneinheiten | Satz |
 |---------------|----------|-----------|------|

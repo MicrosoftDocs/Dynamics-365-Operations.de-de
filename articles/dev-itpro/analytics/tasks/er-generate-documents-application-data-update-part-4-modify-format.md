@@ -1,6 +1,6 @@
 --- 
-title: "Ändern von Format zum Generieren von Dokumenten mit Anwendungsdatenupdate für elektronische Berichterstellung"
-description: "Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, \"ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 3 -  Ändern von Modell und Zuordnung)\"."
+title: "Format zum Generieren von Dokumenten mit Anwendungsdaten verändern"
+description: "Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, \"ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 3 - Ändern von Modell und Zuordnung)\"."
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 47a1fe9cbfc80adbd5d375221912a2fa9787af19
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6c7455e4293993f297aeede4d9d6a50f25ca6c07
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="modify-format-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Ändern von Format zum Generieren von Dokumenten mit Anwendungsdatenupdate für elektronische Berichterstellung
+# <a name="modify-format-to-generate-documents-with-application-data"></a>Format zum Generieren von Dokumenten mit Anwendungsdaten verändern
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, "ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 3: Ändern von Modell und Zuordnung)".
 
@@ -90,7 +90,7 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 47. Erweitern Sie in der -Struktur den Knoten 'Modell'.
 48. Erweitern Sie in der Struktur 'Modell\Transaktionen.
 49. Wählen Sie in der Strukturdarstellung Daten\Erklärung\Daten\Element = \ModelltransaktionenCommodity rec id.
-50. Wählen Sie in der Strukturdarstellung  Modell\Transaktionen\Commodity rec id.
+50. Wählen Sie in der Strukturdarstellung Modell\Transaktionen\Commodity rec id.
 51. Klicken Sie auf Binden.
 52. Klicken Sie auf "Speichern".
 

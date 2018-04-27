@@ -18,21 +18,20 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e8267debaf246ce852b223a4b7ecc217810c8472
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5a7560d9eefd830fc23b6c817397e8ed9f98d73e
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vat-statement-details-for-austria"></a>MwSt-Berichtdetails für Österreich
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird.
 
-Dieses Thema enthält länder-/regionsspezifische Informationen zu den Einstellungen des Auszugs Mehrwertsteuer (MwSt)- für juristische Personen nur in Österreich. Weitere Informationen zu den Einstellungen des MwSt. -Auszugs findne Sie unter [MwSt Bericht](emea-vat-reporting.md). Der Rest dieses Themas zeigt, wie Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes für die  österreichischen Mehrwertsteuererklärung eingerichtet wird, sodass MwSt. -Auszüge generiert werden können.
+Dieses Thema enthält länder-/regionsspezifische Informationen zu den Einstellungen des Auszugs Mehrwertsteuer (MwSt)- für juristische Personen nur in Österreich. Weitere Informationen zu den Einstellungen des MwSt. -Auszugs findne Sie unter [MwSt Bericht](emea-vat-reporting.md). Der Rest dieses Themas zeigt, wie Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes für die österreichischen Mehrwertsteuererklärung eingerichtet wird, sodass MwSt. -Auszüge generiert werden können.
 
 ## <a name="set-up-sales-tax-authorities"></a>Einrichten von Mehrwertsteuerbehörden
 Um eine Umsatzsteuervoranmeldung im richtigen Format der entsprechenden Steuerbehörde zu generieren, müssen das Berichtslayout für die Mehrwertsteuerbehörden eingerichtet werden. Sie müssen auch das Feld **Berichtslayout** im Bereich **Allgemein** auf der Seite **Mehrwertsteuer-Behörden** auswählen. Wählen Sie dieselbe Mehrwertsteuerbehörde für den Mehrwertsteuer-Abrechnungszeitraum aus, in der der Mehrwertsteuercodes verwendet wird.
@@ -74,7 +73,7 @@ Hier ist ein Beispiel von Mehrwertsteuer-Erklärungscodes.
 | 1132                     | Steuerverbindlichkeiten gemäß dem §19 1d Verbindlichkeiten                                      | 032                                  |
 | 1189                     | Steuerverbindlichkeiten gemäß §19 1d Verbindlichkeiten                                   | 089                                  |
 
-Wenn Sie eine Zuweisung von Mehrwertsteuer-Erklärungscodes zu Mehrwertsteuercodes einrichten, wechseln Sie zu **Mehrwertsteuercodes** &gt; ****Berichtseinstellung****. Hier ein Beispiel einer Zuweisung von Mehrwertsteuer-Erklärungscodes zu Mehrwertsteuercodes.
+Wenn Sie eine Zuweisung von Mehrwertsteuer-Erklärungscodes zu Mehrwertsteuercodes einrichten, wechseln Sie zu <strong>Mehrwertsteuercodes</strong> &gt; *<strong><em>Berichtseinstellung</em></strong>*. Hier ein Beispiel einer Zuweisung von Mehrwertsteuer-Erklärungscodes zu Mehrwertsteuercodes.
 
 | Mehrwertsteuercode | Steuerpflichtiger Umsatz | Mehrwertsteuer | Steuerpflichtige Einkäufe | Vorsteuer | Steuerpflichtiger Import | Erwerbsteuer (USA) | Ausgleich Erwerbsteuer (USA) |
 |----------------|---------------|-------------------|-------------------|----------------------|----------------|---------|----------------|
@@ -91,17 +90,19 @@ Wenn Sie eine Zuweisung von Mehrwertsteuer-Erklärungscodes zu Mehrwertsteuercod
 **Note:** Die vorhergehende Konfiguration ist ein Beispiel und hängt von der Struktur der Mehrwertsteuercodes ab, die verwendet werden und vom Benutzer festgelegt werden. Damit Werte für die Erklärung berechnet und übertragen werde, müssen Sie für jeden Steuercode, der im Mehrwertsteuerzahlungsprozess verwendet wird, einen entsprechenden Mehrwertsteuer-Erklärungscode in einem oder mehrere Felder der Registerkarte **Berichteinstellung** festlegen.
 
 ## <a name="configure-the-electronic-reporting-model-and-format-for-the-report"></a>Konfiguriert das elektronische Berichterstellungsmodell und das Format für den Bericht.
-Um die MwSt. -Auszugskonfiguration für juristische Personen in Österreich zu überprüfen, gehen Sie auf die Seitee **Berichtskonfiguration** und wählen **MwsT Deklarationsmodell** in der Liste der Modelle. Dieses Modell wird für Österreich, Tschechische Republik, Estland, Finnland, Lettland und Litauen und für die gesamte Steuerdaten verwendet, die für die Mehrwertsteuererklärung erforderlich sind. Klicken Sie im Aktivitätsbereich auf  **Designer**, um das Modell zu prüfen oder zu ändern. Um die MwSt. -Auszugskonfiguration für juristische Personen in Österreich zu überprüfen, gehen Sie auf die Seite  **Berichtskonfiguration** und wählen **MwSt Deklarationsmodell** in der Liste der Modelle und wählen dann **U30** unten**MwSt Deklarationsmodell**. Klicken Sie im Aktivitätsbereich auf  **Designer**, um das Modell zu prüfen oder das Format zu ändern.
+Um die MwSt. -Auszugskonfiguration für juristische Personen in Österreich zu überprüfen, gehen Sie auf die Seitee **Berichtskonfiguration** und wählen **MwsT Deklarationsmodell** in der Liste der Modelle. Dieses Modell wird für Österreich, Tschechische Republik, Estland, Finnland, Lettland und Litauen und für die gesamte Steuerdaten verwendet, die für die Mehrwertsteuererklärung erforderlich sind. Klicken Sie im Aktivitätsbereich auf **Designer**, um das Modell zu prüfen oder zu ändern. Um die MwSt. -Auszugskonfiguration für juristische Personen in Österreich zu überprüfen, gehen Sie auf die Seite **Berichtskonfiguration** und wählen **MwSt Deklarationsmodell** in der Liste der Modelle und wählen dann **U30** unten **MwSt Deklarationsmodell**. Klicken Sie im Aktivitätsbereich auf **Designer**, um das Modell zu prüfen oder das Format zu ändern.
 
 ## <a name="generate-a-vat-statement"></a>MwST-Aufstellung generieren
 Am Ende der MwSt Berichtsperiode führen Sie **Mehrwertsteuer** **begleichen und buchen** aus, um die Berichtszeilenbeträge für die Definition der Steuerberichtscodes, die Sie erstellt haben, zu berechnen. In der folgenden Tabelle werden die Felder beschrieben, die zur Verfügung stehen.
 
-|Feld|Beschreibung|
-|-----|-----------|
-|Ausgleichsperiode|Wählen Sie den gewünschten Berichtszeitraum aus.|
-|Von Datum|Geben Sie den ersten Tag des zu berechnenden Mehrwertsteuer-Abrechnungszeitraums an, um die Mehrwertsteuer zu berechnen. Dieser Wert entspricht dem Datum im Feld auf der Mehrwertsteuer-Abrechnungszeitraum-Seite.|
-|Buchungsdatum|Geben Sie das Datum an, für das die Mehrwertsteuererklärung berechnet wird. Der aktuelle Wert ist das aktuelle Datum. Das Enddatum des Abrechnungszeitraums, der im Feld angezeigt wird, entspricht dem Feld auf der Mehrwertsteuer-Abrechnungszeitraum-Seite. Die Mehrwertsteuerzahlung wird für alle Buchungen berechnet, die im Abrechnungszeitraum gebucht wurden.|
-|Mehrwertsteuer, Zahlungsversion|Wählen Sie die Buchungsarten aus, die in die Berechnung der Mehrwertsteuerzahlung einbezogen werden sollen: 
+
+|           Feld           |                                                                                                                                                                    Beschreibung                                                                                                                                                                     |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Ausgleichsperiode     |                                                                                                                                                      Wählen Sie den gewünschten Berichtszeitraum aus.                                                                                                                                                       |
+|         Von Datum         |                                                                                 Geben Sie den ersten Tag des zu berechnenden Mehrwertsteuer-Abrechnungszeitraums an, um die Mehrwertsteuer zu berechnen. Dieser Wert entspricht dem Datum im Feld auf der Mehrwertsteuer-Abrechnungszeitraum-Seite.                                                                                  |
+|     Buchungsdatum      | Geben Sie das Datum an, für das die Mehrwertsteuererklärung berechnet wird. Der aktuelle Wert ist das aktuelle Datum. Das Enddatum des Abrechnungszeitraums, der im Feld angezeigt wird, entspricht dem Feld auf der Mehrwertsteuer-Abrechnungszeitraum-Seite. Die Mehrwertsteuerzahlung wird für alle Buchungen berechnet, die im Abrechnungszeitraum gebucht wurden. |
+| Mehrwertsteuer, Zahlungsversion |                                                                                                                                  Wählen Sie die Buchungsarten aus, die in die Berechnung der Mehrwertsteuerzahlung einbezogen werden sollen:                                                                                                                                  |
+
 **Original** – Mehrwertsteuerbuchungen für die erste gebuchte Ausgleichsberechnung für das Periodenintervall.
 **Letzte Korrekturen** – enthalten Mehrwertsteuerbuchungen, die in der letzten Ausgleichsberechnung für den Zeitraum enthalten sin.| |Format mapping|Specify U30.|d
 

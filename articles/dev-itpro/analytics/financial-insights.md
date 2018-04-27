@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 33a8bc78006ae9e7d5ca905a98886fd7af706604
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-insights"></a>Finanzinformationen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Finanzinformationen** verwendet Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen. Power BI ist in Microsoft Dynamics 365 for Finance and Operations eingebettet.
 Der Fokus von **Finanzinformationen** liegt auf der analytischen Berichterstellung. Personen in einer gesamten Organisation können anzeigen, erforschen, verstehen und handeln. 
@@ -107,8 +107,20 @@ Obwohl **Financial insights** Finanzaufstellungen enthält, ist es kein Ersatz f
 
 Das folgende Vergleichsdiagramm hilft, die zwei Optionen zu unterscheiden:
 
-_=_                                         _=_ **Financial Reporting**                            | **Financial Insights**             _=_ _=_-----------------------------------------_=_----------------------------------------------------_=_---------- -------------------------_=_ _=_ **Bearbeiten Standardberichte**                _=_ Ja                                                _=_ Nein                                 _=_ _=_ **Erstellen Sie neue Berichte**                  _=_ Ja                                                _=_ Nein                                 _=_ _=_ **Berichte drucken**                       _=_ Ja                                                _=_ Nein                                 _=_ _=_ **Nach Excel exportieren**                     _=_ Ja          _=_ " Begrenzte Exportrohdaten in Excel, kein formatierter Bericht       _=_ _=_ **Sichern Sie die Hierarchie/Organisationshierarchie**   _=_ Ja                               _=_ Nein                                 _=_ _=_ **Melden Sie über Daten für untergeordnete Sachkonten**       _=_ Yes Limited um nur Kreditor, Debitor    _=_ Ja-Kreditor, -Debitor, -Kreditor/-Debitorengruppen, Kreditor/Debitoradressen, usw. _=_ _=_ **Berichtswährung**      _=_ Ja-Buchhaltungswährung übersetzen und der Berichtswährung       _=_ Nur nicht Buchhaltungswährung      _=_ _=_ **Sicherheit**                _=_ Ja befolgt Finanzen und Arbeitsgänge und Berichtsbaumstruktursicherheit _=_ " Begrenzte Anzeigen von Berichten für alle Unternehmen (unabhängig von Finanz- und Arbeitsgangssicherheit) oder nur aktiv Unternehmen _=_ _=_ **Stützverschiedener Kontenplan und Geschäftsjahren** _=_ Ja                   _=_ Nein                   _=_ _=_ **Bericht zur externen Daten**                              _=_ Nein                   _=_ Nein                                   _=_ _=_ **Stützkonsolidierungen**                               _=_ Ja                          _=_ Begrenzt kann zu mehreren Unternehmen wird jedoch nur Buchhaltungswährung verwendet wird                                     _=_
 
+|                                                                       |               <strong>Finanzberichterstellung</strong>                |                                      <strong>Finanzinformationen</strong>                                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|                 <strong>Standardberichte bearbeiten</strong>                 |                                Ja                                |                                                      Nr.                                                       |
+|                  <strong>Neue Berichte erstellen</strong>                  |                                Ja                                |                                                      Nr.                                                       |
+|                    <strong>Berichte drucken</strong>                     |                                Ja                                |                                                      Nr.                                                       |
+|                   <strong>Nach Excel exportieren</strong>                    |                                Ja                                |                           Begrenzte Exportrohdaten in Excel, kein formatierter Bericht                           |
+|  <strong>Berichterstellungshierarchie unterstützen/Organisationshierarchie</strong>  |                                Ja                                |                                                      Nr.                                                       |
+|               <strong>Bericht zu Daten von untergeordneten Sachkonten</strong>               |               Ja, beschränkt auf nur einen Kreditor, Debitor                |                 Ja, Kreditor, Debitor, Kreditoren-/Debitorengruppen, Kreditoren-/Debitorenadressen, usw.                 |
+|                  <strong>Berichtswährung</strong>                  |    Ja, Buchhaltungswährung und in Berichtswährung übersetzen    |                                          Nein, nur Buchhaltungswährung                                          |
+|                       <strong>Sicherheit</strong>                       | Ja, erfüllt Finance and Operations- und Berichterstellungsstruktur-Sicherheit | „Begrenzte Anzeige”-Berichte für alle Unternehmen (ungeachtet der Finance and Operations-Sicherheit) oder nur aktives Unternehmen |
+| <strong>Unterschiedlichen Kontenplan und Geschäftsjahre unterstützen</strong> |                                Ja                                |                                                      Nr.                                                       |
+|               <strong>Bericht zu externen Daten</strong>                |                                Nr.                                 |                                                      Nr.                                                       |
+|                <strong>Konsolidierungen unterstützen</strong>                |                                Ja                                |                   Begrenzter Möglichkeitenbericht zu mehreren Unternehmen, aber nur Verwendung der Buchhaltungswährung                   |
 
 Zudem sind zur Benutzerschnittstelle der ursprüngliche Arbeitsbereich **CFO-Überblick**, neue KPIs, Tabellen und Finanzaufstellungen verfügbar. Folgende Finanzaufstellungen sind verfügbar:
 

@@ -18,17 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7c713f3a1cb5aa4758a72a7cc42c73c57b602219
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intrastat"></a>Intrastat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen.
 
@@ -228,7 +227,7 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 </tr>
 <tr class="even">
 <td>Kontaktinformationen des Beauftragten</td>
-<td>Geben Sie Name, Adresse, die Umsatzsteuernummer, Telefonnummer und die Faxnummer des Agenten an.</td>
+<td>Geben Sie Name, Adresse, die Umsatzsteuernummer, Telefonnummer und die Faxnummer des Agenten an.</td>
 </tr>
 <tr class="odd">
 <td>Länder-/Regionseigenschaften</td>
@@ -241,7 +240,7 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 </tbody>
 </table>
 
- 
+
 
 
 

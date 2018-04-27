@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7ae0bfdc157a7e2e5b9f871dae487a6f85e889b9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Einrichten von Zinssätzen für einen Zinscode
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zinscodes enthalten Einstellungen, die festlegen, wann Zinsen erhoben werden und wie Zinsen für fällige Rechnungen berechnet werden.
 
@@ -47,17 +46,17 @@ Bei der Berechnung der Zinsen mit einem Zinscode, wird für jeden Zinssatz, der 
 ## <a name="interest-rates-based-on-a-percentage"></a>Zinssätzen auf der Basis von Prozentsätzen
 Sie können Zinssätze einrichten, die einen angegebenen Prozentsatz berechnen.
 
--   Der Zinsbetrag gilt für alle Währungen.
--   Es können optional Zinsbetraggrenzen eingegeben werden.
--   Der **Prozentsatz** wird im Feld **Grundlage für Zinsberechnung** auf der Seite **Einrichten von Zinscodes** ausgewählt.
+- Der Zinsbetrag gilt für alle Währungen.
+- Es können optional Zinsbetraggrenzen eingegeben werden.
+- Der <strong>Prozentsatz</strong> wird <strong>im Feld **Grundlage für Zinsberechnung</strong> auf der Seite <strong>Einrichten von Zinscodes</strong> ausgewählt**.
 
 Um beispielsweise einen Zinscode einzurichten, der Zinsen in Höhe von 5 Prozent für alle 2 Monate festlegt die die Rechnungszahlung das Fälligkeitsdatum überschreitet, geben Sie 2 im Feld **Zinsen berechnen alle** ein wählen Sie **Monat** aus.
 
 ## <a name="interest-rates-based-on-amounts"></a>Zinssätzen auf der Basis von Beträgen
 Sie können Zinssätze einrichten, die einen angegebenen Betrag pro Währung berechnen.
--   Für jede Währung wird im Zinscode ein Zinsbetrag angegeben.
--   Es können optional Zinsbetraggrenzen eingegeben werden.
--   Der **Betrag** wird im Feld **Grundlage für Zinsberechnung** auf der Seite **Einrichten von Zinscodes** ausgewählt.
+- Für jede Währung wird im Zinscode ein Zinsbetrag angegeben.
+- Es können optional Zinsbetraggrenzen eingegeben werden.
+- Der <strong>Betrag **wird im Feld</strong> Grundlage für **Zinsberechnung auf der Seite<strong>Einrichten von Zinscodes</strong> ausgewählt.
 
 Um beispielsweise einen Zinscode einzurichten, der Zinsen in Höhe von 25,00 für alle 20 Tage festlegt die die Rechnungszahlung das Fälligkeitsdatum überschreitet, geben Sie 20 im Feld **Zinsen berechnen alle** ein wählen Sie **Tag** aus.
 
@@ -84,7 +83,7 @@ Sie richten die Bereichsinformationen wie folgt ein.
 | 1,001          | 2                  |
 | 5,001          | 3                  |
 
- 
+
 ## <a name="example-2-interest-by-range--days"></a>Beispiel 2: Zinsen nach Bereich = Tage
 --------------------------------------------------
 
@@ -105,7 +104,7 @@ Sie richten die Bereichsinformationen wie folgt ein.
 | 61             | 15                 |
 | 91             | 20                 |
 
- 
+
 ## <a name="example-3-interest-by-range--months"></a>Beispiel 3: Zinsen nach Bereich = Monate
 ----------------------------------------------------
 

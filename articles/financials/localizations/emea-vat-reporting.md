@@ -1,6 +1,6 @@
 ---
 title: "MwSt-Berichterstattung für Europa"
-description: "Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung  des Mehrwertsteuer-Auszugs für einige europäische Länder."
+description: "Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung des Mehrwertsteuer-Auszugs für einige europäische Länder."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,19 +18,18 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7ce3c0397986ba2281aae7b71d579f3fe5f488ae
-ms.openlocfilehash: 415e23190c6d7d12e824a42dec3916a4c3f5bc92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: afcc2ea8c0ca3a5877b44fd758aec9d2caf92d92
 ms.contentlocale: de-de
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vat-reporting-for-europe"></a>MwSt-Berichterstattung für Europa
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-
-Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung  des Mehrwertsteuer-Auszugs für einige europäische Länder.
+Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung des Mehrwertsteuer-Auszugs für einige europäische Länder.
 
 Dieses Thema bietet einen allgemeinen Ansatz zum Einrichten und zum Generieren der Mehrwertsteuererklärung. Dieser Ansatz ist für Benutzer in juristischen Personen in den folgenden Ländern/Regionen üblich:
 
@@ -46,7 +45,7 @@ Dieses Thema bietet einen allgemeinen Ansatz zum Einrichten und zum Generieren d
 -   Schweden
 
 ## <a name="vat-statement-overview"></a>MwSt.-Auszugs, Überblick
-Der MwSt-Auszug basiert auf dem Steuerbuchungsbeträgen. Die Generierung eines MwSt. -Auszugs ist Teil des Mehrwertsteuerzahlungsprozesses, der durch die Bank- und Beitragsmehrwertsteuerfunktion implementiert ist. Mithilfe dieses Funkltion können Sie die für eine Periode fällige Mehrwertsteuer berechnen. Die Ausgleichsberechnung enthält die gebuchte Mehrwertsteuer für den ausgewählten Abrechnungszeitraum für die Steuerbuchungen im Formular . Der Prozess zum Berechnen von Daten für einen MwSt.-Auszug basiert auf der Beziehung zwischen  Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes, in denen Mehrwertsteuer-Erklärungscodes mit den MwSt.-Auszugsfelder übereinstimmen (oder die Markierungen in XML). Für jeden Mehrwertsteuercode sollen Mehrwertsteuer-Erklärungscodes für jede Buchungsart, zum Beispiel steuerpflichtige Verkäufe, steuerpflichtige Einkäufe, steuerpflichtiger Import eingerichtet werden. Hiermit werden Buchungsarten im Feld Mehrwertsteuercodes für Mehrwertsteuer-Berichte im Abschnitt weiter unten in diesem Thema.
+Der MwSt-Auszug basiert auf dem Steuerbuchungsbeträgen. Die Generierung eines MwSt. -Auszugs ist Teil des Mehrwertsteuerzahlungsprozesses, der durch die Bank- und Beitragsmehrwertsteuerfunktion implementiert ist. Mithilfe dieses Funkltion können Sie die für eine Periode fällige Mehrwertsteuer berechnen. Die Ausgleichsberechnung enthält die gebuchte Mehrwertsteuer für den ausgewählten Abrechnungszeitraum für die Steuerbuchungen im Formular . Der Prozess zum Berechnen von Daten für einen MwSt.-Auszug basiert auf der Beziehung zwischen Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes, in denen Mehrwertsteuer-Erklärungscodes mit den MwSt.-Auszugsfelder übereinstimmen (oder die Markierungen in XML). Für jeden Mehrwertsteuercode sollen Mehrwertsteuer-Erklärungscodes für jede Buchungsart, zum Beispiel steuerpflichtige Verkäufe, steuerpflichtige Einkäufe, steuerpflichtiger Import eingerichtet werden. Hiermit werden Buchungsarten im Feld Mehrwertsteuercodes für Mehrwertsteuer-Berichte im Abschnitt weiter unten in diesem Thema.
 
 Für jeden Mehrwertsteuer-Erklärungscode soll ein bestimmtes Berichtslayout bestimmt werden. Gleichzeitig werden Mehrwertsteuercodes auf eine bestimmte Mehrwertsteuerbehörde von Mehrwertsteuer-Ausgleichsperioden verknüpft. Für jede Mehrwertsteuer-Behörde sollte ein bestimmtes Berichtslayout bestimmt werden. Auf diese Weise können nur mit Mehrwertsteuer-Erklärungscodes demselben Berichtslayout, das für die Mehrwertsteuerbehörde in Mehrwertsteuer-Abrechnungszeiträume für den Mehrwertsteuercode errichtet wird, in der Berichtseinstellung des Mehrwertsteuercodes ausgewählt werden. Eine Mehrwertsteuerbuchung, die nach dem Buchen eines Auftrags oder eine Erfassung erstellt wurde, enthält einen Mehrwertsteuercode, eine Mehrwertsteuerquelle, Mehrwertsteuerart und Buchungsbeträge (Steuergrundbetrag und Steuerbetrag in der Buchhaltungswährung, in der Mehrwertsteuerwährung und in der Buchungswährung). Durch die Kombination aus Steuerbuchungsattributen, verfassen Buchungsbeträge Gesamtbeträge für die Mehrwertsteuer-Erklärungscodes, die für Mehrwertsteuercodes angegeben werden. Die folgende Abbildung zeigt diese Datenbeziehung.
 
@@ -67,7 +66,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 
 ### <a name="sales-tax-codes-for-vat-reporting"></a>Mehrwertsteuercodes für MwSt-Berichterstattung
 
-<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).--> Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes). You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the **Sales tax codes** page. The following table describes the transaction types in the report setup for sales tax codes. The calculation includes transactions for all types of sources except sales tax.
+<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).--> Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes). You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the <strong>Mehrwertsteuercodes</strong>-Seite. Die folgende Tabelle beschreibt die Buchungsarten im Bericht, der für Mehrwertsteuercodes eingerichtet ist. Die Berechnung umfasst Buchungen für alle Quellenarten außer Mehrwertsteuer.
 
 <table>
 <colgroup>
@@ -84,7 +83,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode/</li>
-<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>)..</li>
+<li>Der Verkauf erfolgt inländisch (<strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
@@ -93,7 +92,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Verkauf erfolgt im Ausland <strong>Steuerart</strong> ist <strong>steuerfreier Umsatz</strong>)..</li>
+<li>Der Verkauf erfolgt im Ausland (<strong>Steuerart</strong> ist <strong>steuerfreier Umsatz</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
@@ -102,7 +101,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>)..</li>
+<li>Der Verkauf erfolgt inländisch (<strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
@@ -111,7 +110,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>)..</li>
+<li>Der Verkauf erfolgt inländisch (<strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
@@ -120,7 +119,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Verkauf erfolgt im Ausland <strong>Steuerart</strong> ist <strong>steuerfreier Umsatz</strong>)..</li>
+<li>Der Verkauf erfolgt im Ausland (<strong>Steuerart</strong> ist <strong>steuerfreier Umsatz</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
@@ -129,7 +128,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>)..</li>
+<li>Der Verkauf erfolgt inländisch (<strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
@@ -138,7 +137,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
+<li>Der Verkauf erfolgt inländisch (<strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
@@ -147,7 +146,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Kauf erfolgt im Ausland <strong>Steuerart</strong> ist <strong>steuerfreier Einkauf</strong>)..</li>
+<li>Der Kauf erfolgt im Ausland (<strong>Steuerart</strong> ist <strong>steuerfreier Einkauf</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
@@ -156,7 +155,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
+<li>Der Verkauf erfolgt inländisch (<strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &gt; 0.</li>
 </ul></td>
 </tr>
@@ -165,7 +164,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
+<li>Der Verkauf erfolgt inländisch (<strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
@@ -174,7 +173,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuergrundlagebeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Kauf erfolgt im Ausland <strong>Steuerart</strong> ist <strong>steuerfreier Einkauf</strong>)..</li>
+<li>Der Kauf erfolgt im Ausland (<strong>Steuerart</strong> ist <strong>steuerfreier Einkauf</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
@@ -183,7 +182,7 @@ Mehrwertsteuer-Erklärungscodes werden im Feldcodes MwSt. oder markierter Namen 
 <td>Summe der <strong>Steuerbeträge</strong> der Steuerbuchungen, die die folgenden Anforderungen erfüllen:
 <ul>
 <li>Das Fälligkeitsdatum für die ausgewählte Periode.</li>
-<li>Der Verkauf erfolgt inländisch <strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
+<li>Der Verkauf erfolgt inländisch (<strong>Steuerart</strong> ist <strong>zahlbare Umsatzsteuer</strong>).</li>
 <li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</strong> &lt; 0.</li>
 </ul></td>
 </tr>
@@ -247,7 +246,7 @@ d<li>Die Buchung <strong>Steuergrundbetrag</strong> oder <strong>Steuerbetrag</s
 > [!NOTE]
 > Für die Tabelle oben wird angenommen, dass die folgenden Kriterien erfüllt sein: 
 > -   Der Steuergrundbetrag ist ein Transaktionsbetrag aus dem Feld **Ursprung in der Buchungswährung**.
-> -   Der Steuerbetrag ist ein Transaktionsbetrag aus dem Feld **Aktueller Mehrwertsteuerbetrag in der  Buchungswährung**.
+> -   Der Steuerbetrag ist ein Transaktionsbetrag aus dem Feld **Aktueller Mehrwertsteuerbetrag in der Buchungswährung**.
 
 ### <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurieren Sie das ER-Modell und -Format für den Bericht
 

@@ -16,16 +16,16 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee95c3d79f7f401c767b9bc8415b21369c14478b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
 ms.contentlocale: de-de
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Über Power BI Embedded Analysen zu Arbeitsbereichen hinzufügen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Diese Funktion wird in Dynamics 365 for Finance and Operations (Version 7.2 und höher) unterstützt.
@@ -50,7 +50,7 @@ Egal, ob Sie einen vorhandenen Anwendungsarbeitsbereich erweitern oder einen eig
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Eine .pbix-Datei als Ressource hinzufügen
 Bevor Sie anfangen, müssen Sie den Power BI-Bericht erstellen oder erhalten, den Sie in den Arbeitsbereich einbetten wollen. Weitere Informationen zum Erstellen von analytischen Berichten finden Sie unter [Erste Schritte mit Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
- 
+
 Gehen Sie wie folgt vor, um eine .pbix-Datei als Visual Studio-Projektartefakt einzufügen.
 
 1. Erstellen Sie ein neues Projekt im entsprechenden Modell.
@@ -63,12 +63,12 @@ Gehen Sie wie folgt vor, um eine .pbix-Datei als Visual Studio-Projektartefakt e
 5. Suchen Sie die .pbix-Datei, die die Definition des analytischen Berichts enthält, und klicken Sie dann auf **Öffnen**.
 
     ![Dialogfeld Auswählen einer Ressourcendatei](media/analytical-workspace-select-resource.png)
-  
+
 Nachdem Sie die .pbix-Datei als Dynamics 365-Ressource hinzugefügt haben, können Sie die Berichte in Arbeitsbereiche einbetten und unter Verwendung von Menüeinträgen direkte Links hinzufügen.
 
 ## <a name="add-a-tab-control-to-an-application-workspace"></a>Hinzufügen eines Registerkarten-Steuerelements zu einem Anwendungsarbeitsbereich
 In diesem Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** im Flottenmanagement-Modell, indem wir der Definition des Formulars **FMClerkWorkspace** die Registerkarte **Analysen** hinzufügen.
- 
+
 Die folgende Abbildung zeigt, wie das Formular **FMClerkWorkspace** im Designer in Microsoft Visual Studio aussieht.
 
 ![Formular FMClerkWorkspace vor den Änderungen](media/analytical-workspace-definition-before.png)
@@ -93,16 +93,16 @@ Gehen Sie wie folgt vor, um die Formulardefinition für den Arbeitsbereich **Res
 16. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Muster entfernen**.
 17. Klicken Sie erneut mit der rechten Maustaste und wählen Sie dann **Muster hinzufügen** > **Arbeitsbereich mit Registerkarten**.
 18. Führen Sie einen Build aus, um Ihre Änderungen zu überprüfen.
- 
+
 Die folgende Abbildung zeigt, wie das Design nach Anwendung dieser Änderungen aussieht.
 
 ![FMClerkWorkspace nach den Änderungen](media/analytical-workspace-definition-after.png)
 
 Nachdem Sie die Steuerelemente für das Formular hinzugefügt haben, die für die Einbettung des Arbeitsbereichberichts verwendet werden, müssen Sie die Größe des übergeordneten Steuerelements definieren, sodass es zum Layout passt. Standardmäßig werden die Seite **Filter** und die Seite **Registerkarte** auf dem Bericht angezeigt. Sie können die Sichtbarkeit dieser Steuerelemente jedoch abhängig vom Zielpublikum des Berichts abändern.
- 
+
 > [!NOTE]
 > Für eingebettete Arbeitsbereiche empfehlen wir, der Konsistenz halber Erweiterungen zu verwenden, um die Seiten **Filter** und **Registerkarte** auszublenden.
- 
+
 Damit haben Sie die Aufgabe fertiggestellt, die Definition des Anwendungsformulars zu erweitern. Weitere Informationen zur Verwendung von Erweiterungen für Anpassungen finden Sie in [Anpassung: Überlagerungen und Erweiterungen](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Hinzufügen einer X++-Geschäftslogik, um ein Viewer-Steuerelement einzubetten
@@ -169,12 +169,13 @@ public static void initializeReportControl(
 
 #### <a name="parameters"></a>Parameter
 
-| Name | Beschreibung |
-|---|---|
-| resourceName | Der Name der .pbix-Ressource. |
-| formGroupControl | Das Formular-Gruppensteuerelement, auf das das Power BI-Berichtssteuerelement angewendet wird. |
-| defaultPageName | Der Standardseitenname. |
-| showFilterPane | Ein boolescher Wert, der angibt, ob der Filterbereich angezeigt (**true**) oder ausgeblendet (**false**) werden soll. |
-| showNavPane | Ein boolescher Wert, der angibt, ob der Navigationsbereich angezeigt (**true**) oder ausgeblendet (**false**) werden soll. |
-| defaultFilters | Die Standardfilter für den Power BI-Bericht. |
+|       Name       |                                                              Beschreibung                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|   resourceName   |                                                    Der Name der .pbix-Ressource.                                                     |
+| formGroupControl |                                    Das Formular-Gruppensteuerelement, auf das das Power BI-Berichtssteuerelement angewendet wird.                                     |
+| defaultPageName  |                                                         Der Standardseitenname.                                                         |
+|  showFilterPane  |   Ein boolescher Wert, der angibt, ob der Filterbereich angezeigt (<strong>true</strong>) oder ausgeblendet (<strong>false</strong>) werden soll.   |
+|   showNavPane    | Ein boolescher Wert, der angibt, ob der Navigationsbereich angezeigt (<strong>true</strong>) oder ausgeblendet (<strong>false</strong>) werden soll. |
+|  defaultFilters  |                                              Die Standardfilter für den Power BI-Bericht.                                              |
+
 

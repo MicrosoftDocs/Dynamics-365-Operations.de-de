@@ -1,9 +1,9 @@
 ---
 title: Lagererfassungen
-description: "In diesem Artikel wird beschrieben, wie Sie die Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandtransaktionen zu buchen."
-author: MarkusFogelberg
+description: "In diesem Thema wird beschrieben, wie Sie Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandstransaktionen zu buchen."
+author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,21 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 968bf9a243d0c0cc9f0dfec474cb207ca32f9eeb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-journals"></a>Lagererfassungen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
-
-In diesem Artikel wird beschrieben, wie Sie die Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandtransaktionen zu buchen.
+In diesem Thema wird beschrieben, wie Sie Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandstransaktionen zu buchen.
 
 Die Bestanderfassungen in Microsoft Dynamics 365 for Finance and Operations werden verwendet, um physische Lagerbuchungen unterschiedlicher Arten, wie Abgangs-und Zugangsbuchungen, Lagerumlagerungen, die Erstellung von Stücklisten (BOMs) zu buchen und zur Abstimmung des physischen Bestands. Alle diese Lagererfassungen werden auf ähnliche Weise verwendet, sie werden jedoch in verschiedene Arten unterteilt.
 
@@ -51,7 +50,7 @@ Die folgenden Lagererfassungstypen stehen zur Verfügung:
 
 ### <a name="movement"></a>Bewegung
 
-Wenn Sie eine Lagerumlagerungserfassung verwenden, können Sie einem Artikel Kosten hinzufügen, wenn Sie einen Bestand hinzufügen. Sie müssen jedoch die zusätzlichen Kosten manuell einem bestimmten Hauptbuchkonto zuweisen, indem Sie ein Hauptbuchgegenkonto angeben, wenn Sie die Erfassung erstellen. Dieser Lagererfassungstyp ist hilfreich, wenn die Ausgaben für einen Artikel für eine andere Abteilung sein sollen oder wenn Sie Artikel aus dem Bestand für Spesenzwecke entfernen möchten.
+Wenn Sie eine Lagerumlagerungserfassung verwenden, können Sie einem Artikel Kosten hinzufügen, wenn Sie einen Bestand hinzufügen. Sie müssen jedoch die zusätzlichen Kosten manuell einem bestimmten Hauptbuchkonto zuweisen, indem Sie ein Hauptbuchgegenkonto angeben, wenn Sie die Erfassung erstellen. Dieser Lagererfassungstyp ist hilfreich, wenn Sie die Standardbuchungskonten überschreiben möchten.
 
 ### <a name="inventory-adjustment"></a>Lagerregulierung
 
@@ -61,8 +60,8 @@ Wenn Sie eine Lagerregulierungserfassung verwenden, können Sie einem Artikel Ko
 
 Sie können Umlagerungserfassungen verwenden, um Artikel zwischen Lagerplätzen, Chargen oder Produktvarianten ohne Kostenauswirkungen zu übertragen. So können Sie beispielsweise Artikel aus einem Lagerort an einen anderen Lagerort innerhalb des gleichen Unternehmens übertragen. Wenn Sie eine Umlagerungserfassung verwenden, müssen Sie sowohl die "von" als auch die "nach" Lagerungsdimensionen angeben (beispielsweise für Standort und Lagerort). Der verfügbare Lagerbestand für die definierten Lagerungsdimensionen ändert sich entsprechend. Bestandumlagerungen beziehen sich auf die direkte Bewegung des Materials. Transportierter Lagerbestand wird nicht nachverfolgt. Wenn der transportierte Lagerbestand nachverfolgt werden muss, sollten Sie stattdessen einen Umlagerungsauftrag verwenden. Beim Buchen einer Umlagerungserfassung werden für jede Erfassungsposition jeweils zwei Lagerbuchungen erstellt:
 
--   Ein Lagerabgang am "Von" Lagerplatz
--   Ein Lagerzugang am "nach" Lagerplatz
+-   Ein Lagerabgang am Lagerplatz „Von”.
+-   Ein Lagerzugang am Lagerplatz „Nach”.
 
 ### <a name="bom"></a>Stückliste
 
@@ -78,7 +77,7 @@ Produktions-Wareneingangserfassungen arbeiten wie Wareneingangserfassungen, werd
 
 ### <a name="counting"></a>Inventur
 
-Mit Inventurerfassungen können Sie den aktuell verfügbaren Lagerbestand korrigieren, der für Artikel oder Gruppen Artikel erfasst wird, und dann die tatsächliche physische Zählung buchen, um die Korrekturen vorzunehmen, die erforderlich sind, um die Abweichungen abzustimmen. Sie können Inventurrichtlinien Inventurgruppen zuordnen, um die Gruppierung von Artikeln zu unterstützen, die verschiedene Merkmale haben, sodass diese Artikel in eine Inventurerfassung einbezogen werden können. So können Sie beispielsweise Inventurgruppen einrichten, um Artikel zu zählen, die eine bestimmte Häufigkeit haben, oder um Artikel zu zählen, wenn Bestand unter eine bestimmte Menge sinkt. Informationen darüber, wie Sie Inventurgruppen definieren, finden Sie unter [Lagerinventurprozesse definieren (Aufgabenleitfaden)](tasks/define-inventory-counting-processes.md) definieren.
+Mit Inventurerfassungen können Sie den aktuell verfügbaren Lagerbestand korrigieren, der für Artikel oder Gruppen von Artikel erfasst wird, und dann können Sie die tatsächliche physische Zählung buchen, um die Regulierungen vorzunehmen, die zur Abstimmung der Abweichungen erforderlich sind. Sie können Inventurrichtlinien Inventurgruppen zuordnen, um die Gruppierung von Artikeln zu unterstützen, die verschiedene Merkmale haben, sodass diese Artikel in eine Inventurerfassung einbezogen werden können. So können Sie beispielsweise Inventurgruppen einrichten, um Artikel zu zählen, die eine bestimmte Häufigkeit haben, oder um Artikel zu zählen, wenn Bestand unter eine bestimmte Menge sinkt. Informationen darüber, wie Sie Inventurgruppen definieren, finden Sie unter [Lagerinventurprozesse definieren (Aufgabenleitfaden)](tasks/define-inventory-counting-processes.md) definieren.
 
 ### <a name="tag-counting"></a>Markierungen zählen
 
@@ -95,4 +94,30 @@ Auf eine Erfassungsposition kann zu einem gegebenen Zeitpunkt jeweils nur ein Be
 
 ## <a name="posting-journal-lines"></a>Buchungserfassungspositionen
 Sie können die Erfassungspositionen, die Sie erstellt haben, jederzeit buchen, bis Sie einen Artikel aus weiteren Buchungen sperren. Daten, die Sie in eine Erfassung eingeben, bleiben selbst dann in der Erfassung, wenn Sie die Erfassung schließen, ohne die Positionen zu buchen.
+
+## <a name="data-entity-support-for-inventory-journals"></a>Datenentitätsunterstützung für Lagererfassungen
+
+Datenentitäten unterstützen die folgenden Arten von Integrationsszenarien:
+-    Synchroner Dienst (OData)
+-  Asynchrone Integration
+
+Weitere Informationen finden Sie unter [Datenentitäten](../../dev-itpro/data-entities/data-entities.md).
+
+> [!NOTE]
+> Nicht bei allen Lagererfassungen ist OData aktiviert. Deshalb können Sie nicht den Excel-Datenkonnektor verwenden, damit Daten veröffentlicht, aktualisiert und zurück nach Dynamics 365 for Finance and Operations importiert werden. 
+
+Ein weiterer Unterschied zwischen den Erfassungsdatenentitäten ist die Fähigkeit, zusammengesetzte Entitäten zu verwenden, die sowohl die Kopfzeilen- als auch Positionsdaten enthalten. Aktuell können Sie die zusammengesetzten Entitäten verwenden für:
+-   Lagerregulierungserfassung
+-   Lagerbestands-Umlagerungserfassung
+
+Diese beiden Lagererfassungen unterstützen nur das Szenario *Bestand initialisieren* als Teil eines Datenverwaltungs-Importprojekts:
+-  Wenn keine Erfassungskopfzeilennummer angegeben ist, aber ein Nummernkreis für den Erfassungstyp angegeben ist, erstellt der Importeinzelvorgang automatisch Erfassungskopfzeilen pro 1000 Positionen. Beispielsweise führt das Importieren von 2020 Positionen zu den folgenden drei Erfassungskopfzeilen:
+    -  Kopfzeile 1: enthält 1000 Positionen
+    -  Kopfzeile 2: enthält 1000 Positionen
+    -  Kopfzeile 3: enthält 20 Positionen
+-  Es wird angenommen, dass eindeutige Positionsinformationen pro Bestandsdimension vorhanden sind, was ein Produkt, ein Speicher und Rückverfolgungsangaben sein können. Deshalb ist es nicht möglich, Erfassungspositionen zu importieren, in denen sich nur das Datumsfeld auf den Positionen innerhalb des gleichen Importprojekts unterscheidet.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Datenentitäten](../../dev-itpro/data-entities/data-entities.md)
 

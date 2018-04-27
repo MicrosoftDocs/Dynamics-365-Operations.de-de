@@ -1,5 +1,5 @@
 --- 
-title: "Importieren von Konfigurationen zum Generieren von Dokumenten mit Anwendungsdatenupdate für elektronische Berichterstellung"
+title: Konfigurationen zum Generieren von Dokumenten mit Anwendungsdaten importieren
 description: "Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter \"Konfigurationsanbieter erstellen und als aktiv markieren\" abschließen."
 author: NickSelin
 manager: AnnBe
@@ -16,22 +16,22 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
-ms.openlocfilehash: 6a945eb6c733d760cc723bfa7135d73bdf502724
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 87352293a78d6a356db49deffb930016a1bf836c
 ms.contentlocale: de-de
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="import-configurations-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Importieren von Konfigurationen zum Generieren von Dokumenten mit Anwendungsdatenupdate für elektronische Berichterstellung
+# <a name="import-configurations-to-generate-documents-with-application-data"></a>Konfigurationen zum Generieren von Dokumenten mit Anwendungsdaten importieren
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen.
 
 Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurationen (ER) erstellt werden, um elektronische Dokumente zu generieren. In diesem Verfahren importieren Sie eine geänderte Excel-Vorlage in eine ER-Formatkonfigurationen, die für das Beispielunternehmen, Litware, Inc. erstellt wurde, und erstellen dann die elektronischen Dokumente. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den DEMF-Datensatz verwenden. Bevor Sie beginnen, laden Sie die Dateien herunter und speichern Sie jene, die im Hilfethema "Generieren Sie elektronische Dokumente und Aktualisierungsbewerbungsdaten mit ER-Tool" (generate-electronic-documents-update-application-data/) aufgeführt sind. Die Dateien sind Intrastat (model).xml, Intrastat (mapping).xml, und Intrastat (format).xml.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
+    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  
     * Die Schritte in diesem Verfahren zeigen, wie ER-Funktionen verwendet werden, um Anwendungsdaten zu vervollständigen und wie ein Intrastat-Bericht zu erstellt wird. Die Details des Generieren eines Berichts werden in den Bewerbungstabellen archiviert. Wenn zurzeit der Intrastat-Berichts-Prozess im Intrastat-Formular aktiviert ist, wird das Archivieren auf Grundlage der Logik ausgeführt, die im vorhandenen Quellcode programmiert wird. In diesem Verfahren konfigurieren Sie eine ähnliche jedoch vereinfachte Logik von Anwendungsdaten nur mithilfe des ER-Frameworks. Es werden keine Änderungen am Quellcode vorgenommen.   
 
 ## <a name="import-er-configurations"></a>ER Konfigurationen importieren

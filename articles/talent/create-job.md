@@ -19,19 +19,18 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
-ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 88e8c1ae98ad5618feff3d2bb88d8f8cfe2ff9ba
 ms.contentlocale: de-de
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="setting-up-the-components-of-a-job"></a>Komponenten eines Einzelvorgangs einrichten
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
-[!include[retail name](includes/retail-name.md)]
-
+[!INCLUDE [retail name](includes/retail-name.md)]
 
 In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können. 
 
@@ -52,7 +51,7 @@ Verwenden Sie Stellentypen als Gruppe, um ähnliche Stellen in Kategorien zu kla
 -   **Nicht anwendbar** – Eine Abdeckung durch das FLSA-Gesetzt trifft nicht zu.
 
 ## <a name="job-functions"></a>Stellenfunktionen
-Stellenfunktionen beschreiben funktionale übergeordnete Kategorien und ordnen übergeordnete Aufgaben zu. Stellenfunktionen sind nicht erforderlich. Sie können Stellenfunktionen zusammen mit Stellentypen verwenden, um Vergütungspläne nach bestimmten Stellen zu filtern. Sie ordnen Stellenfunktionen und Stellentypen Vergütungsplänen zu, indem Sie im Formular auf der Seite**Berechtigungsregeln** Berechtigungsregeln einrichten. Sie können mit dem Vergütungsplan auch mehrere Ebenen verknüpfen, die für eine bestimmte, über eine Berechtigungsregel definierte Stellenfunktion/Stellentyp-Kombination gelten. (Diese Funktion gilt für feste Vergütungspläne und variable Vergütungspläne) Planen Sie jedoch, Stellenfunktionen zur Einrichtung von Berechtigungsregeln für die Vergütungsverwaltung zu verwenden, richten Sie vor der Einrichtung von Stellen zunächst Stellenfunktionen ein. Beispiele für Stellenfunktionen finden Sie in der folgenden Tabelle.
+Stellenfunktionen beschreiben funktionale übergeordnete Kategorien und ordnen übergeordnete Aufgaben zu. Stellenfunktionen sind nicht erforderlich. Sie können Stellenfunktionen zusammen mit Stellentypen verwenden, um Vergütungspläne nach bestimmten Stellen zu filtern. Sie ordnen Stellenfunktionen und Stellentypen Vergütungsplänen zu, indem Sie im Formular auf der Seite **Berechtigungsregeln** Berechtigungsregeln einrichten. Sie können mit dem Vergütungsplan auch mehrere Ebenen verknüpfen, die für eine bestimmte, über eine Berechtigungsregel definierte Stellenfunktion/Stellentyp-Kombination gelten. (Diese Funktion gilt für feste Vergütungspläne und variable Vergütungspläne) Planen Sie jedoch, Stellenfunktionen zur Einrichtung von Berechtigungsregeln für die Vergütungsverwaltung zu verwenden, richten Sie vor der Einrichtung von Stellen zunächst Stellenfunktionen ein. Beispiele für Stellenfunktionen finden Sie in der folgenden Tabelle.
 
 | Stelle           | Stellenfunktion         |
 |---------------|----------------------|
@@ -76,7 +75,7 @@ Sie können Arbeitsaufgaben erstellen, die die grundlegenden Aufgaben beschreibe
 <td>Verkaufsleiter</td>
 <td><ul>
 <li><strong>Leistungsbeurteilung</strong> – Überprüfung der Arbeitsleistung jedes Verkäufers.</li>
-<li><strong>ABS-Überprüfung</strong> – Genehmigen oder Ablehnen der Abwesenheitsanforderungen oder -erfassungen jedes Verkäufers.</li>
+<li><strong>Abwesenheitsüberprüfung</strong> – Genehmigen oder Ablehnen der Abwesenheitsanforderungen oder -erfassungen jedes Verkäufers.</li>
 </ul></td>
 </tr>
 <tr class="even">

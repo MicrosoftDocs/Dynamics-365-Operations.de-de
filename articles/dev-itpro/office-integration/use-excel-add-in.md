@@ -3,7 +3,7 @@ title: Excel-Add-In verwenden
 description: "In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics Office-Add-in für Excel angezeigt, aktualisiert und bearbeitet werden."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f3ed06dbbce21ac093107953d3a72d8ab086af2a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0e3e86820e0857b320d832c3bf3c94757667919
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="use-the-excel-add-in"></a>Excel-Add-In verwenden
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics Office-Add-in für Excel angezeigt, aktualisiert und bearbeitet werden. Sie können die Entitätsdaten über Excel oder Microsoft Dynamics 365 for Finance and Operations öffnen.
 
@@ -35,6 +35,11 @@ Durch das Öffnen der Entitätsdaten in Excel können Sie die Daten mit dem Add-
 
 > [!NOTE]
 > Hinweis: Wenn Ihr Microsoft Azure Active Directory (Azure AD)-Mandant für die Verwendung von Active Directory Federation Services (AD FS) konfiguriert ist, müssen Sie sicherstellen, dass das Update von Mai 2016 für Office eingespielt wurde, sodass Sie über das Excel-Add-In korrekt angemeldet werden können.
+
+Weitere Informationen zur Verwendung des Excel-Add-Ins finden Sie unter [Erstellen Sie Vorlage für Kopf- und Positionsmuster in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) Video.
+
+> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
+
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Öffnen von Entitätsdaten in Excel beim Start von Finance and Operations
 1. Klicken Sie in Finance and Operations auf einer Seite auf **In Microsoft Office öffnen**.
