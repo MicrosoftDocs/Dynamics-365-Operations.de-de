@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-agreement"></a>Kaufvertrag erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie durch die Erstellung eines Kaufvertrags. Dadurch wird normalerweise von einem Einkaufsleiter bearbeitet. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden. Sie müssen Einstellungen Kaufvertragsklassifizierungen haben, bevor Sie beginnen. Sobald Sie eine Vereinbarung erstellt haben, können Sie diese verwenden, wenn Sie eine Bestellung erstellen, und dieses kopiert die Kaufvertragszustände in den Kopf und alle möglichen Positionen in der Reihenfolge angezeigt, die in der Vereinbarung betroffen sind.
 

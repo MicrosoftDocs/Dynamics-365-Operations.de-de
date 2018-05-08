@@ -29,7 +29,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="shift-and-cash-drawer-management"></a>Schicht- und Kassenladenverwaltung
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dieser Artikel erläutert die Einrichtung der zwei verschiedenen Schichttypen für POS: gemeinsam und eigenständig. Gemeinsame Schichten können von mehreren Benutzern an mehreren Orten verwendet werden. Eigenständige Schichten können nur von einer Arbeitskraft gleichzeitig verwendet werden.
 

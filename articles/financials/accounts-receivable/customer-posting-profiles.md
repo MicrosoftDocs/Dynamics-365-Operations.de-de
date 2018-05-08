@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="customer-posting-profiles"></a>Debitoren-Buchungsprofile
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kundenbuchungsprofile steuern die Buchungen von Kundentransaktionen im Hauptbuch.
 

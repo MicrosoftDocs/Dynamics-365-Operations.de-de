@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fixed-asset"></a>Erstellen eines Anlagegegenstands
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Für diese Aufgabenanleitung wird das Demo-Unternehmen USMF verwendet.  Damit wird eine neue Anlage mithilfe der Listen Seite "Anlage" erstellt.
 

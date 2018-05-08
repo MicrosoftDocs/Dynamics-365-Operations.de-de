@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Anwendbare Preise und Rabatte nachschlagen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren, wie Preis und/oder den Rabatt für ein Produkt sucht, das für einen bestimmten Debitor derzeit gültig ist, ohne einen Auftrag zu erstellen. Die Prozedurgänge durch ein besonderes Beispiel und Sie müssen im Beispiel für die Verwendung des USMF-Vorführungsunternehmens folgt, um die erforderlichen Werte auszuwählen.
 

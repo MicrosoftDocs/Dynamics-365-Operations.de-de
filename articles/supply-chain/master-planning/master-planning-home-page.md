@@ -29,7 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Startseite für die Produktprogrammplanung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Produktprogrammplanung ermöglicht es Unternehmen, die zukünftigen Anforderung für Rohmaterialen und Kapazität zu bestimmen und abzustimmen, um die Unternehmensziele zu erfüllen. Produktprogrammplanung setzt Folgendes fest: 
 

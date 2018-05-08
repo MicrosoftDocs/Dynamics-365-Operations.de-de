@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Wählen Sie zwischen modernem POS und Cloud POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dieses Thema gibt Implementierer zusätzlichen Hintergrund, Tips und Orientierungshilfe für Faktoren, die sie berücksichtigen sollen, wenn sie Microsoft Dynamics 365 for Retail bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können  Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
 

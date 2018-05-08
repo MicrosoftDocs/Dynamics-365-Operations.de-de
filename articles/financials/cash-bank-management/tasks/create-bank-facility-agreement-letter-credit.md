@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Eine Bankfazilitätsvereinbarung für einen Kreditbrief erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In dieser Aufgabe gehen Sie Schritt für Schritt durch das Erstellen einer Bankfazilitätsvereinbarung, um einen Kreditbrief zu bearbeiten. Vor dieser Aufgabe möchten Sie Bankfazilitäten und Buchungsprofile einrichten.  Für diese Aufgabe wird das Demo-Unternehmen "USMF" verwendet.  
 

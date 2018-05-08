@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Startseite für die Kostenrechnung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mit [Kostenmanagement (Video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) können Sie die Bewertung und die Buchhaltung von Rohmaterialien, Halbfertigwaren, Endartikeln und von Umlaufbestand behandeln. Dabei handelt es sich um den Prozess des Definieren, der Verwaltung und des Erstellen von [Bestandbuchhaltung](cost-object.md) und [Fertigungskostenrechnung](bom-calculations.md).
 

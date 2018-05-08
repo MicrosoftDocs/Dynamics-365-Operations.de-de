@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="mobile-app-home-page"></a>Mobile App-Startseite
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird die mobile Microsoft Dynamics 365 for Unified Operations-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
 

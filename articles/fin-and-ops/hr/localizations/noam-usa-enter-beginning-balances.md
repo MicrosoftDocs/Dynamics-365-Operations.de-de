@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="enter-payroll-beginning-balances"></a>Eingeben von Lohnanfangssalden
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, die Daten für eine neue Lohnimplementierung von einem anderen System transferieren. Zur Vorbereitung auf die Eingabe anfänglicher Lohnsalden werden folgende Informationen überprüft:
 

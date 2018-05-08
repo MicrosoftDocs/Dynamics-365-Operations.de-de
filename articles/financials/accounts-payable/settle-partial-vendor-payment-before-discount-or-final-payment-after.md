@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Eine teilweise Kreditorenzahlung vor dem Skontodatum mit einer vollständigen Zahlung nach dem Skontodatum abgleichen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel führt Sie durch ein Szenario, in dem mehrere Teilzahlungen erfolgen, einige innerhalb des Skontoperiode und andere außerhalb der Skontoperiode.
 

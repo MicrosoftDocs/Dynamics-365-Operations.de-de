@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-new-product"></a>Neues Produkt erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Aufgabe zeigt, wie ein neues freigegebenes Produkt erstellt wird. Es wird in der Regel von einem Produktdesigner ausgeführt. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF.
 

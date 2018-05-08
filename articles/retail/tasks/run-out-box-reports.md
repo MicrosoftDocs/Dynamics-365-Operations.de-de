@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="generate-and-run-out-of-box-reports"></a> Fertigberichte generieren und ausführen
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Führen Sie mithilfe dieses Aufgabenhandbuchs Fertigberichte in der Zentralverwaltung aus verschiedenen Arbeitsbereichen und Abfrage- und Verkaufsberichte unter Einzelhandel und Handel aus.
 

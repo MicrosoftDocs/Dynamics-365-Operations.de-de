@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="ledger-allocation-rules"></a>Sachkonto-Zuordnungsregeln
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Sachkonto-Zuordnungsregeln. Er beschreibt die verschiedenen Komponenten dieser Zuordnungsregeln und der Zuordnungsmethoden, die für sie verwendet werden können.
 

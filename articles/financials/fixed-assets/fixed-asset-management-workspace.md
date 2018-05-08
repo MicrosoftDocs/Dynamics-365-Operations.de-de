@@ -27,7 +27,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-asset-management-workspace"></a>Arbeitsbereich "Anlageverwaltung"
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Der Arbeitsbereich **Anlagenverwaltung** zeigt Informationen, die sich auf Anlagen beziehen, die im System eingegeben werden. Der Arbeitsbereich umfasst eine Überblicksansicht und eine Analyseansicht. Die Registerkarte **Meine Arbeit** zeigt Überblickskacheln, Anlagendetails und zugehörige Informationen zu Anlagen im aktuellen Unternehmen. Sie können dem Power BI-Analyseabschnitt direkt im Arbeitsbereich Analysemöglichkeiten hinzufügen. Die Registerkarte **Analyse – alle Unternehmen** verwendet die Möglichkeiten von Microsoft Power BI, um grafische Elemente anzuzeigen, die sich auf Anlagen in allen Unternehmen beziehen.
 

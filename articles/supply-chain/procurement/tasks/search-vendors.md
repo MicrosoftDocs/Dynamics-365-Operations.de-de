@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="search-for-vendors"></a>Nach Kreditoren suchen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Informieren Sie, wie nach Kreditoren anhand bestimmter Kriterien sucht. In diesem Beispiel wird Ihnen angegeben, wie nach Kreditoren findet, die für eine bestimmte Beschaffungskategorie genehmigt werden und deren primäre Adresse sich in einem bestimmten Land hat. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Diese Aufgabe ist in der Regel von einem Beschaffungsspezialisten ausgeführt.
 

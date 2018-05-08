@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-withholding-tax"></a>Quellensteuer einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Die Quellensteuer ist eine Steuer für Kreditoren, bei der keine Mehrwertsteuerbuchungen entstehen. Die Quellensteuer, die für Kreditorenzahlungen berechnet wird, ist eine Verbindlichkeit. Daher sind nur Bilanz- oder Verbindlichkeitskonten gültige Kontenarten für das Buchen der Quellensteuer. Diese Aufgabenanleitung veranschaulicht, wie die Quellensteuer eingerichtet wird.
 

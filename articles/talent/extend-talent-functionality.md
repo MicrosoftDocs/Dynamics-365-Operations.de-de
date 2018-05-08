@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>Erweitern Sie die Funktionalität von Microsoft Dynamics 365 for Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Wenn Sie Microsoft PowerApps erstellt haben, können Sie diese Anwendungen von Links innerhalb von Microsoft Dynamics 365 for Talent starten. Um Zugriff auf Ihre Bewerbungen einzurichten, müssen Sie einige Informationen im Talent auf einer Konfigurationsseite eirichten die Sie aus dem Arbeitsbereich **Systemverwaltung** öffnen können.
 

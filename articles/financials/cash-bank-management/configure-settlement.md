@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="configure-settlement"></a>Konfigurieren eines Ausgleichs
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieser Artikel beschreibt die Parameter, die für den Ausgleich für Kreditoren und Debitoren verwendet werden. 
 

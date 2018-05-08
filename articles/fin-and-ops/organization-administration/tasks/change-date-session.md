@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-date-for-the-session"></a>Das Datum für die Sitzung ändern
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Standardmäßig wird das aktuelle Datum verwendet, wenn Journaleinträge oder Quelldokumente eingegeben und gebucht werden. Es besteht jedoch die Möglichkeit, das Datum zu ändern, das für die aktuelle verwenet wird. Verwenden Sie diese Funktion bei Bedarf für das Rückdatieren von Journaleinträgen oder Quelldokumenten.
 

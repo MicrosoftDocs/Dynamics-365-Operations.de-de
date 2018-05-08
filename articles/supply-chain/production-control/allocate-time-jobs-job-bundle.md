@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Sie können Einzelvorgänge in der Fertigungssteuerung bündeln. Sie können mehrere Einzelvorgänge auf der Seite "Einzelvorgangsliste" gleichzeitig starten.
 

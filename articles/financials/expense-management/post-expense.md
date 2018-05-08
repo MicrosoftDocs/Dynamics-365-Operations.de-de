@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="post-an-expense-report"></a>Buchen einer Spesenabrechnung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Sobald eine Spesenabrechnung genehmigt und in die allgemeine Erfassung übertragen wurde, kann sie im Hauptbuch gebucht werden. Wenn Sie eine Spesenabrechnung buchen, werden alle Ausgaben, die für Mehrwertsteuerbeitreibung maßgeblich sind, gekennzeichnet. Die Überprüfung und Beitreibung von Mehrwertsteuerzahlungen ist Aufgabe des Mitarbeiters, der für die Überprüfung der Spesenabrechnung zuständig ist.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-process-recurring-invoices"></a>Einrichten und Verarbeiten von Serienrechnungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Serienrechnungen eingerichtet und verarbeitet werden. Sie können Serienrechnungen verwenden, wenn Sie Debitoren regelmäßig für den gleichen Betrag eine Rechnung stellen müssen.
 

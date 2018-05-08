@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="start-a-production-order"></a>Einen Produktionsauftrag starten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt an, wie Sie Produktionsaufträge für die Produktion starten. Zeit und Materialverbrauch werden in diesem Prozess gemeldet. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Dies ist die fünfte Prozedur von sieben, die den Produktionsauftrags-Lebenszyklus erklärt.
 

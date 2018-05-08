@@ -29,7 +29,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Produktlebenszyklus-Status 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ein Produktlebenszyklusstatus dokumentiert den Lebenszyklusstatus eines freigegebenen Produkts oder Produktvariante. Produktlebenszyklusstatus werden vom Benutzer, in der Regel ein Produktmanager oder ein Produktmasterdatenmanager, definiert. Bestimmte Geschäftsprozesse, wie Produktprogrammplan, können von einem bestimmten Lebenszyklusstatus betroffen sein.   
 

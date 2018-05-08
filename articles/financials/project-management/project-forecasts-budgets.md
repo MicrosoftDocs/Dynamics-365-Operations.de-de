@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-forecasts-and-budgets"></a>Projektplanungen und -budgets
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations enthält zwei Möglichkeiten, um Projektplanungen und Projektbudgets Ihrer Projekte zu verwalten und zu steuern. 
 

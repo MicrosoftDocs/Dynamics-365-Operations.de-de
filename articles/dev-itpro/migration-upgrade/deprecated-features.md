@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="removed-or-deprecated-features"></a>Entfernte oder veraltete Funktionen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema beschreibt Funktionen, die bei Dynamics 365 for Finance and Operations entfernt wurden oder dafür veraltet sind.
 

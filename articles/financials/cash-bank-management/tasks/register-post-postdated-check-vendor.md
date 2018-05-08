@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Erfassen und Buchen eines vordatierten Schecks für einen Kreditor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Mithilfe eines Erfassungsbelegs können Sie die Details eines vordatierten Schecks erfassen, bevor der Scheck an einen Kreditor ausgestellt wird. Sie können den vordatierten Scheck buchen und Finanzbuchungen erstellen. Führen Sie die folgenden Schritte aus, bevor Sie einen vordatierten Scheck registrieren und buchen, den Sie von einem Debitor erhalten haben: 
 

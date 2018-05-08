@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="formulas-and-formula-versions"></a>Formeln und Formelversionen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Eine Formel definiert die Materialien, die Substanz und die Ergebnisse eines bestimmten Prozesses in einem der Fertigungsverarbeitung. Zusammen mit dem entsprechenden Arbeitsplan definiert die Formel in der Fertigungsverarbeitung den Gesamtprozess. Formeln werden verwendet, um in der Fertigungsverarbeitung Produkte zu planen und zu erzeugen.
 

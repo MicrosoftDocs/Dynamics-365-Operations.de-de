@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-audit-file-configuration-germany"></a>Protokolldateikonfiguration importieren (Deutschland)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren zeigt, wie das Berichterstellungsdatenmodell "Deutsche Protokolldatei" und Formatkonfigurationen importiert werden. Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit "Deutschland" als Land/Region für die primäre Adresse für die juristischen Person.
 

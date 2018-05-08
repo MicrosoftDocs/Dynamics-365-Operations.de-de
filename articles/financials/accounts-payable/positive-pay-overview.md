@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="positive-pay-overview"></a>Überblick über die positive Zahlung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel finden Sie Informationen über positive Zahlungen, die zur Generierung einer elektronischen Liste mit Schecks verwendet werden, die für die Bank bereitgestellt wird. 
 

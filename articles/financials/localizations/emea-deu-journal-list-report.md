@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="german-journal-list-report"></a>Bericht "Deutsches Journal"
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, für was der deutsche Erfassungslistenbericht verwendet wird, wer ihn in der Regel verwendet und wie er ausgeführt wird.
 

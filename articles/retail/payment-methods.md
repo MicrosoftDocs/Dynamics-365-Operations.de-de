@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="payment-methods"></a>Zahlungsmethoden
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Jeder Zahlungstyp, der von einem Einzelhändler akzeptiert wird, muss beim Einrichten des Systems konfiguriert werden. In diesem Artikel wird beschrieben, wie Sie die Zahlungstypen einrichten können und beschreibt den Prozess, um sie einzurichten.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Einrichten einer Beschaffungskategoriehierarchie
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt Ihnen an, wie neue Knoten in einer Beschaffungskategorie-Hierarchie erstellt und das Einrichten einer in konfiguriert einem Beschaffungsprozess zu verwendende Beschaffungskategorie. Diese Aufgaben werden normalerweise von einem Einkaufsleiter ausgeführt. Überprüfen Sie zunächst können, muss es eine Kategoriehierarchie vom Typ Beschaffung geben. Wenn Sie ein Demodatunternehmen verwenden, können Sie diese Prozedur im USMF-Unternehmen ausführen.
 

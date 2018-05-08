@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="mass-create-sales-quotations"></a>Massenerstellung von Verkaufsangeboten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Verfahren zeigt, wie Sie Angebote, die eine Gruppe von Produkte oder Dienstleistungen enthalten und an mehrere Debitoren gesendet werden sollen, effizient erstellen. Diese Massenangebotserstellung basiert auf Angebotsvorlagen. Sie können diese Prozedur in Ihrem eigenen Demodatenunternehmen oder in USMF ausführen.
 

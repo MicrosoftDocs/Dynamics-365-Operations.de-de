@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-insights"></a>Finanzinformationen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Finanzinformationen** verwendet Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen. Power BI ist in Microsoft Dynamics 365 for Finance and Operations eingebettet.
 Der Fokus von **Finanzinformationen** liegt auf der analytischen Berichterstellung. Personen in einer gesamten Organisation können anzeigen, erforschen, verstehen und handeln. 

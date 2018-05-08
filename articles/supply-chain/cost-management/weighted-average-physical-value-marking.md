@@ -29,9 +29,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Gewichteter Durchschnitt mit physischem Wert und Markierung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Beim gewichteten Durchschnitt handelt es sich um ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Für dieses Modell werden Abgänge aus dem Bestand mit dem Durchschnittswert der Artikel, die im Rahmen der Lagerabschlussperiode in den Bestand eingehen, sowie des gesamten verfügbaren Bestands der vorangegangenen Periode bewertet.
 

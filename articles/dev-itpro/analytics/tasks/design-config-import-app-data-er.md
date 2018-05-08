@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Designkonfigurationen, um die eingehenden Dokumenten für Bewerbungsdatenenaktualisierungen (ER) zu analysieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie elektronische Berichterstellungskonfigurationen (EB) entworfen werden, um ein eingehendes elektronisches Dokument für die Anwendungsdatenaktualisierung zu analysieren. In diesem Verfahren importieren Sie eine geänderte Excel-Vorlage in eine ER-Formatkonfigurationen, die für das Beispielunternehmen, Litware, Inc. erstellt wurde, und erstellen dann die elektronischen Dokumente. Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen.
 

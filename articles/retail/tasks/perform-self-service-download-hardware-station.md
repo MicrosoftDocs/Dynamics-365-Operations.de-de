@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a> Hardwarestation herunterladen mit Self-Service
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Herunterladen einer vordefinierten Hardwarestation. Das Demodatenunternehmen, das für diese Prozedur verwendet wird, ist USRT. Sie müssen ein neues Hardwarestationsprofil und eine Hardwarestation erstellt haben, damit mit dieser Aufgabe begonnen werden kann.
 

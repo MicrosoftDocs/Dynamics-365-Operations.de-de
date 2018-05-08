@@ -26,7 +26,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="production-performance-power-bi-content"></a>Power BI-Inhalt – Produktionsleistung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, was im **Produktionsleistung** Microsoft Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 

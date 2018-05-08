@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Strichcode für ein Produkt erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie Sie manuell einen Strichcode mithilfe der Artikelnummer M0001 als Beispiel erstellen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="retail-statements"></a>Auszugsbuchungen (Einzelhandel)
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In Microsoft Dynamics 365 for Retail wird der Auszugsbuchungsprozess verwendet, um die Buchungen zu berücksichtigen, die in Cloud Point of Sale (POS) oder Modern POS (MPOS) erfolgen. Der Auszugsbuchungsprozess verwendet den Verteilungszeitplan, um einen Satz POS-Buchungen in den Headquarters (HQ)-Client einzubeziehen. Die Parameter, die auf den Seiten **Einzelhandelsparameter** und **Filialen** definiert werden, werden verwendet, um die Buchungen auszuwählen, die in einzelne Auszüge einbezogen werden.  
 

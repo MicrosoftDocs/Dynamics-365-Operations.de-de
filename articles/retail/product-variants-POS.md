@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a>Lagersuche in der Verkaufsstelle 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Mithilfe der Lagersuche in der Verkaufsstelle (POS) können Einzelhändler erstklassige Betriebsprozesse in Echtzeit erreichen und Einblicke erlangen, indem sie Filialen, die POS und das Backoffice verbinden. Diese Funktionalität bieten eine genaue Echtzeitansicht des Produktbestands über Filialen und Verteilungszentren hinweg. Einzelhändler werden zudem darin unterstützt, zusätzliche Effektivität und Kosteneinsparungen zu erreichen, indem sie die Bestandsplanung in Echtzeit verbessern.
 

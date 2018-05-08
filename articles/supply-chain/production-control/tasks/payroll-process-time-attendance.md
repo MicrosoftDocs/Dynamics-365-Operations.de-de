@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>Lohnprozess für Zeit und Anwesenheit aktivieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie der Lohnprozess für Zeit und Anwesenheit aktiviert wird. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

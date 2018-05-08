@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Übersicht über Lean Manufacturing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics 365 for Finance and Operations bereit.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-positions"></a>Positionen einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Positionen ist ein wichtiges Element der untergeordneten Ebene einer Organisationshierarchie. Eine Position ist eine einzelne Instanz eines Einzelvorgangs. Beispielsweise ist die Position, "Verkaufsleiter (Ost) derzeit eine der Positionen, die der Stelle "Verkaufsleiter zugeordnet wird. Eine Position besteht in einer Abteilung und hat nur eine Arbeitskraft, die ihr zugeordnet ist. In dieser Aufgabe durchlaufen wir die Schritte, die zum Erstellen einer Position erforderlich sind. Diese Prozedur ist für Personalverwaltungsspezialisten vorgesehen.
 

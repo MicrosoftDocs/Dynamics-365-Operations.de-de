@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Intercompany-Ausgleich für zentralisierte Zahlungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Dadurch wird vermieden, dass die gleiche Buchung für mehrere juristische Personen eingegeben werden muss. Dies hat eine Zeitersparnis zur Folge, da so der Zahlungsvorschlagsprozess, der Ausgleichsprozess, die Bearbeitung offener Posten sowie die Bearbeitung abgeschlossener Buchungen bei zentralisierten Zahlungen optimiert werden. 
 

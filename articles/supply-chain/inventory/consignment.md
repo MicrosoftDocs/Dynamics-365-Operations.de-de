@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-consignment"></a>Sendung einrichten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie eingehende Lieferungsbestandsprozesse verwendet werden.
 

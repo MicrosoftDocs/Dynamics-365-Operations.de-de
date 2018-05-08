@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="chart-of-accounts-delimiter-must-be-unique"></a>Kontenplan-Trennzeichen muss eindeutig sein
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Microsoft Dynamics AX 2012 können Sie die gleichen Trennzeichen für den Kontenplan und Dimensionswerte verwenden. In Dynamics 365 for Finance and Operations können Sie nicht dasselbe Trennzeichen für den Kontenplan und die Dimensionswerte haben. Wenn ein Trennzeichen doppelt vorkommt, können Sie es nach dem Upgrade ändern. 
 

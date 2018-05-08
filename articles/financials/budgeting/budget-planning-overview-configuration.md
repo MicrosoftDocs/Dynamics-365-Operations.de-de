@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="budget-planning-overview"></a>Budgetplanung (Überblick)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen die dabei helfen, die Budgetplanung zu konfigurieren und Budgetplanungsprozesse einzurichten.
 

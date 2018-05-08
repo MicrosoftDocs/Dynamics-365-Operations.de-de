@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>BOM-Berechnungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Die Berechnungen für die Kostenzusammenfassung sowie zur Ermittlung des Stücklistenpreises werden als Herstellkostenkalkulation bezeichnet, da sie vom Formular aus gestartet werden. Dieses Thema enthält Informationen zur Stücklistenberechnung
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="data-import-and-export-jobs"></a>Einzelvorgänge für Datenimport und -export
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Um Datenimport- und Datenexporteinzelvorgänge in Microsoft Dynamics 365 for Finance and Operations zu erstellen und zu verwalten, verwenden Sie den Arbeitsbereich **Datenverwaltung**. Standardmäßig der Datenimport und der Exportvorgang eine für jede Stagingtabelle Entität in der Zieldatenbank erstellt. Mit Stagingtabellen können Sie Daten prüfen, bereinigen oder konvertieren, bevor Sie diese verschieben.
 

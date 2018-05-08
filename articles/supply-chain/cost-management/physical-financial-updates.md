@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="physical-and-financial-updates"></a>Physische und wertmäßige Aktualisierungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema bietet einen Überblick darüber, welche Buchungsarten eine Erhöhung oder eine Verringerung der Lagermenge zur Folge haben. 
 

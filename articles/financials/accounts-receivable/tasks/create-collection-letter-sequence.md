@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-collection-letter-sequence"></a>Mahnschreibensequenzen einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Erstellen Sie mithilfe dieser Aufgabenanleitung eine Mahnschreibensequenz. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 

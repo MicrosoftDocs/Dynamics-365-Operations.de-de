@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Mitarbeiterverletzungs- und Krankheitsinformationen verwalten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Es wird empfohlen, das "Einstellungsverletzungs- und -krankheits" Aufgabenhandbuch zuerst abzuschließen, da einige der Einrichtungsinformationen hier verwendet werden. 
 

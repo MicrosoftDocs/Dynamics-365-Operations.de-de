@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="count-inventory-in-a-warehouse"></a>Bestand an einem Lagerort zählen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Buchens einer Lagerinventurerfassung, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen. Die Prozedur ist auf die Funktion "Grundlegendes Warehousing", die sich im Inventurverwaltungsmodul befindet, anwendbar. Jedoch nicht auf die Warehousing-Funktion, die im Lagerortverwaltungsmodul verfügbar ist. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie eigene Daten verwenden, sollten Sie sicherstellen, dass Sie Produkte und Lagerplatzeinstellung eingerichtet haben und dass Sie eine Lagererfassung für Inventurerfassungen erstellt haben. Die Lagerinventur wird in der Regel von einem Lagerortmitarbeiter ausgeführt.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsschlüssel und Datenentitäten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bevor Sie Datenentitäten verwenden, um Daten zu importieren oder zu exportieren, wird empfohlen, dass sie zuerst die Auswirkung von Konfigurationsschlüsseln auf die Datenentitäten bestimmen, die Sie verwenden möchten. 
 

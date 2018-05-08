@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-control-overview"></a>Budgetsteuerungsüberblick 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel stellt die Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, dass Sie finanzielle Ressourcen verwalten können.
 

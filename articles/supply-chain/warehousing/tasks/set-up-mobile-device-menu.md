@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>Eine Menüoption des mobilen Geräts für das Abschließen der Arbeit in einer Bestellung einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt an, wie ein Menüelement "Mobiles Gerät" eingerichtet wird. In diesem Beispiel wird das Menüelement für die Ausführung der Arbeit von Typ "Bestellung" verwendet. Die Arbeitsklasse, die dem Menüelement zugeordnet wird, bestimmt, welche Arbeit gültig ist. Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Normalerweise wird diese Prozedur von einem Lagerortleiter ausgeführt.
 

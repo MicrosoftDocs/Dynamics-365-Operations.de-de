@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="dimension-based-product-configuration"></a>Dimensionsbasierte Produktkonfiguration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Die dimensionenbasierte Produktkonfiguration stellt eine einfache Lösung für das Erstellen vieler Produktvarianten aus einem einzigen Produktmaster und seiner Stückliste dar.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-data-for-product-models"></a>Daten für Produktmodelle übertragen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Der Export von Daten für ein Produktkonfigurationsmodell setzt voraus, dass Sie mindestens ein verfügbares Produktmodell haben. Bei diesem Verfahren wird das Spitzenlautsprechermodell im Vorführungsunternehmen USMF verwendet, um zu zeigen, wie Daten für dieses Modell exportiert werden.
 

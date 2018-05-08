@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Arbeitsvorlage für Bestellungen einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ziel dieser Prozedur ist es, eine einfache Arbeitsvorlage einzurichten, die verwendet wird, wenn empfangene Artikel eingelagert werden sollen. Arbeitsvorlagen bestimmen die Sammlung von Anweisungen, die dem Lagerarbeiter auf einem mobilen Gerät dargestellt wird, wenn Artikel aus dem Wareneingangsbereich umgelagert werden. Sie können diese Prozedur mit dem Daten des Demodatenunternehmen USMF oder mit eigenen Daten verwenden. Bevor Sie dieses Handbuch starten, erstellen Sie eine Arbeitspool-ID. In diesem Beispiel wird eine Arbeitspool-ID mit der Bezeichnung "Eingehend" verwendet. Diese Prozedur ist für die Lagerverwaltung vorgesehen.
 

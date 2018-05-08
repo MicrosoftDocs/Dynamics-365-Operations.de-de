@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definieren und Verwalten von Kanal-Clients, Kassen und Hardwarestationen
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden.
 

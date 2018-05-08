@@ -28,9 +28,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="setting-up-the-components-of-a-job"></a>Komponenten eines Einzelvorgangs einrichten
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!INCLUDE [retail name](includes/retail-name.md)]
+[!include [retail name](includes/retail-name.md)]
 
 In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können. 
 

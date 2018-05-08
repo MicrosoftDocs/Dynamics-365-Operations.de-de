@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="learning-power-bi-content"></a>Power BI-Weiterbildung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird der **Weiterbildungs**-Inhalt für Microsoft Power BI beschrieben.
 

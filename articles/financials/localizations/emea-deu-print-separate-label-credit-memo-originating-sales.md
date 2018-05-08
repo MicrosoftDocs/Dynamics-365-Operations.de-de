@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="print-a-separate-label-for-credit-memos-that-originate-from-sales"></a>Eine separate Beschriftung für die Gutschriften, die vom Vertrieb stammen, drucken
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie die Beschriftung definiert wird, die auf Gutschriften erscheinen, die vom Vertrieb stammen.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Überwachungsrichtlinien für Quelldokumente definieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie und Überwachungsrichtlinienregeln eingerichtet und ausgeführt werden. Das Beispiel verwendet Spesenabrechnungen mit dem Hotelausgabentyp. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet. Die Wirtschaftsprüferrolle umfasst die richtigen Berechtigungen, um diese Aufgaben auszuführen.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a> Produkte vom Verteilzentrum zu Shops mithilfe von Käuferübertragung übertragen
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung und Verarbeitung einer Käuferübertragung zum Vertreiben von Produkten von einem Lagerplatz an einen oder viele Shops. Der Benutzer kann mehrere Varianten definieren und das System vorschlagen lassen, wie die Produkte vertrieben werden sollen, oder manuell eingeben, wo die Produkte vertrieben werden und wie viel an jeden Shop vertrieben wird. Das Verfahren umfasst nicht die Einrichtung von Daten, die in der Käuferübertragung verwendet werden können, wie Auffüllungsregeln, Organisationshierarchien und Shopgewichte. Für diese Prozedur wird das Demo-Unternehmen USRT verwendet.
 

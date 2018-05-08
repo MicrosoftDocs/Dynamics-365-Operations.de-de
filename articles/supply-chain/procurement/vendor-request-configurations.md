@@ -25,7 +25,7 @@ ms.lasthandoff: 02/08/2018
 ---
 
 # <a name="vendor-request-configurations"></a>Konfigurationen für Kreditorenanforderungen
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Um eine Kreditorenanforderung abzuschließen, muss eine Kontaktperson des Kreditors den Registrierungs-Assistenten des künftigen Kreditors abschließen.
 

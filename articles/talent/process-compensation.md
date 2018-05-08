@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="process-compensation"></a>Vergütung verarbeiten
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Die Vergütungsverarbeitung ermöglicht Ihnen die Berechnung neuer Grundvergütungsbeträge für Mitarbeiter basierend auf Eigenkapitalanpassungen, Verdiensterhöhungsziele und Leistungsfähigkeit. Dieses Thema beschreibt den grundlegenden Ablauf der Vergütungsverarbeitung für feste Vergütungspläne, ohne die Leistung eines Mitarbeiters zu faktorieren.
 

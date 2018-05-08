@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-performance-power-bi-content"></a>Financial Performance Power BI Inhalt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!Note]
 > Dieses Inhaltspaket ist veraltet, wie dokumentiert in [Power BI-Inhalt, der in PowerBI.com veröffentlicht ist](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).

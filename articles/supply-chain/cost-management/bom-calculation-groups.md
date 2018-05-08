@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations-groups"></a>Stücklistenkalkulationsgruppen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Herstellungskostenkalkulationsgruppen und wie man sie einrichtet. Um eine Herstellkostenkalkulation auszuführen, müssen Sie entweder Berechnungsgruppen einrichten und sie einzelnen Artikeln zuweisen oder eine Standardberechnungsgruppe festlegen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen dann auf der Seite "Herstellkostenkalkulation" als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation. 
 

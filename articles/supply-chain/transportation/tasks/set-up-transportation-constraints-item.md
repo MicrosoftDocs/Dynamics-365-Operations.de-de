@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Transporteinschränkungen für einen Artikel einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Bei dieser Prozedur wird eine Transporteinschränkung eingerichtet, um zu verhindern, dass ein ausgewählter Artikel über einen ausgewählten Hub transportiert wird. Diese Aufgabe wird normalerweise von einem Transportkoordinator ausgeführt. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel erklärt, wie die Auswirkungen von Kostenänderungen auf die berechneten Kosten eines produzierten Artikels mithilfe einer separaten Nachkalkulationsversion für geplante Kosten simuliert werden können.
 

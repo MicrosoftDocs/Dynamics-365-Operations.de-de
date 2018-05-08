@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product"></a>Ein Produkt erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen Produkts in der Produkthierarchie (Einzelhandel). Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe erstellen, ist USRT, und die Aufgabe ist für den "Manager Verkaufsförderung" und "Produkt-Designer" bestimmt.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-a-recruiting-process"></a>Einen Personalbeschaffungsprozess verwalten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird ein Konzept beschrieben, das Personalbeschaffungssachbearbeiter verwenden können, um die Schritte in einem Personalbeschaffungsprozess nachzuverfolgen. Dazu gehören Bemühungen, offene Positionen zu annoncieren und Bewerber anzuwerben, die Informationen zu Bewerber und Bewerbung nachzuverfolgen, Gespräche mit Bewerbern zu führen und einen oder mehrere Kandidaten auszuwählen, um offene Positionen in Ihrer Organisation zu besetzen.
 

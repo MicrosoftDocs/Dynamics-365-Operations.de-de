@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-overview"></a>Budgetierungsüberblick 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Fast jedes Unternehmen, das Financials-Funktionalität in Microsoft Dynamics 365 for Finance and Operations verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Dynamics 365 for Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
 

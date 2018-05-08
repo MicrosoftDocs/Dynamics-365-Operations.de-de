@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vat-statement-details-for-austria"></a>MwSt-Berichtdetails für Österreich
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird.
 

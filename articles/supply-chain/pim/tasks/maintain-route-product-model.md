@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-a-route-for-a-product-model"></a>Arbeitsplan für ein Produktmodell verwalten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Die Ausführung dieser Prozedur erfordert ein vorhandenes Produktkonfigurationsmodell. Bei diesem Verfahren wird das Spitzenlautsprechermodell im Vorführungsunternehmen USMF verwendet.
 

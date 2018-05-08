@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-and-bank-management-home-page"></a>Startseite für Bargeld- und Bankverwaltung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Sie können die Bargeld- und Bankverwaltung verwenden, um die Bankkonten der juristischen Person und die Finanzinstrumente zu verwalten, die diesen Bankkonten zugeordnet sind. 
 

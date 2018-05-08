@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-cost-entries-for-a-cost-object"></a>Kosteneinträge für ein Kostenobjekt anzeigen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren sehen Sie, wie Sie Kosteneinträge für einen Kostenträger anzeigen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist für den Kostencontroller vorgesehen.
 

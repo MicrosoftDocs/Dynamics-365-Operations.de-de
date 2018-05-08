@@ -28,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 # <a name="service-templates"></a>Servicevorlagen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Sie können eine Servicevereinbarung als Vorlage definieren und später die Positionen dieser Vorlage in eine andere Servicevorlage oder in einen Serviceauftrag kopieren.
 

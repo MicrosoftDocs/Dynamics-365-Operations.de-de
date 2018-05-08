@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="reason-codes-for-inventory-counting"></a>Ursachencodes für Bestandszählungen anzeigen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ursachencodes lassen Sie die Ergebnisse einer Inventur und sämtliche Abweichungen analysieren, die während dieses Vorgangs auftreten. Sie können den Grund für das Treffen der Anzahl, wie eine angebrochenes Palette oder einen vordefinierten Regulierung angeben, die auf Grundlage der Bestandsbeispiele liegt.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Vertriebs-und Rentabilitätsleistungsinhalt für Power BI
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, was im **Umsatz- und Rentabilitätsleistung** Microsoft Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 

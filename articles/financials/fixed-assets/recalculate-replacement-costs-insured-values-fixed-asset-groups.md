@@ -27,7 +27,7 @@ ms.lasthandoff: 01/12/2018
 
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Neuberechnung von Wiederbeschaffungskosten und versicherten Werten für Anlagengruppen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt den Prozess der Aktualisierung von Wiederbeschaffungskosten und versicherten Werten für Anlagen.
 

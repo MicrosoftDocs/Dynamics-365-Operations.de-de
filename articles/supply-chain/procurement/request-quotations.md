@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Angebotsanforderungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern. Mit einer Angebotsanforderung werden Kreditoren gebeten, Preise und Lieferzeiten für die angegebenen Produktmengen bereitzustellen.
 Sie können Kreditoren auch bitten, anzugeben, ob zusätzliche Gebühren, etwa Lieferkosten, anfallen, oder ob der Kreditor Rabatte für große Bestellungen oder bei frühzeitiger Bezahlung der Rechnung anbietet.

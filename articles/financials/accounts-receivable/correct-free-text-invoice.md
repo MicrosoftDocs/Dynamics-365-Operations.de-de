@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="correct-a-free-text-invoice"></a>Berichtigung einer Freitextrechnung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie eine Freitextrechnung, die gebucht wurde, korrigiert und als korrekte Rechnung erfasst wird.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enable-license-plate-label-printing"></a>Kennzeichenbeschriftungs-Druck aktivieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Durch diese Prozedur wird das automatische Drucken einer Beschriftung mit der Nummer der Versandeinheit (NVE) aktiviert, nachdem der letzte Artikel aus dem Bestand im Verkaufskommissionierungs-Arbeitsprozess entnommen wurde. Sie können diese Prozedur im Demodatunternehmen USMF ausführen. Wenn Sie diese mithilfe Ihrer eigenen Daten ausgeführt haben, müssen Sie einen Nummernkreis für Kennzeichen eingerichtet haben. Sie müssen einen Etikettendrucker einrichten, bevor Sie mit dieser Aufgabe beginnen. Wechseln Sie zu "Organisationsverwaltung" > "Einrichtung" > "Netzwerkdrucker". Klicken Sie im Aktivitätsbereich auf "Optionen" und klicken Sie dann auf die Routing-Agent-Installationsprogrammschaltfläche "Dokument herunterladen". Führen Sie das Installationsprogramm aus und überprüfen Sie, ob Sie einen funktionierenden Netzwerkdrucker haben, der auf "Aktiv" festgelegt ist, bevor Sie mit der Prozedur fortfahren.
 

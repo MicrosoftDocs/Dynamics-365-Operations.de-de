@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="map-a-data-model-to-selected-data-sources-for-electronic-reporting-er"></a>Zuordnen eines Datenmodells zu ausgewählten Datenquellen für elektronische Berichterstellung (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer, dem die Systemadministratorrolle oder die Rolle „Entwickler für elektronische Berichterstellung” zugewiesen ist, ein Datenmodell der elektronischen Berichterstellung (EB) ausgewählten Dynamics 365 for Finance and Operations-Datenquellen zuordnen kann. Diese vorbildliche Zuordnung wird später als Datenquelle in einer Formatkonfiguration verwendet, die verwendet wird, um Dokumente für den elektronischen Zahlungsverkehr zu verwalten. In diesem Beispiel verknüpfen Sie ein Datenmodell für das Beispielunternehmen, Litware, Inc. mit Datenquellen. Um diese Schritte abzuschließen, die folgenden Schritte in der "Datenquellen für Modell-Zuordnung" im Verfahren zuerst abschließen.
 

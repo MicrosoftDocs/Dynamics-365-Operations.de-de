@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>Bewegung von Bestand mit zugeordneter Arbeit in der Lagerortverwaltung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mit der Bewegung von Bestand können Sie festlegen, welche Lagerortverwalter reservierten Bestand bewegen dürfen. Dies bietet Flexibilität an geregelten Lagerorten, wo Sie festlegen können, dass eine Arbeitskraft nicht berechtigt ist, einen neuen Entnahmeort zu wählen, um Arbeit zu entnehmen, die bereits erledigt wurde. Es ermöglicht auch einem Lageortleiter festzulegen, welche Funktionen weniger erfahrene Arbeitskräfte haben sollen.
 

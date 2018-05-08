@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-call-center-channel-and-channel-attributes"></a> Callcenter-Kanal und Kanalattribute definieren
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen und Konfigurieren eines neuen Kanalattributs. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USRT. Diese Prozedur ist für die Einzelhandels IT-Rolle bestimmt.
 

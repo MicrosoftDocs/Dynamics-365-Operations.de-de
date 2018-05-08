@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-production-orders-as-finished"></a>Fertigmeldung für Produktionsaufträge
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Einen Produktionsauftrag als abgeschlossen melden. In dieser Phase wird ein Produkt aus dem Produktionsauftrag für Bestand gemeldet und verschoben.
 

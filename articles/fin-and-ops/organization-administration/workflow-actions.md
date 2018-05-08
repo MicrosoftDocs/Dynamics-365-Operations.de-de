@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="workflow-actions"></a>Workflowaktivitäten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die Aktivitäten, die jeder Teilnehmer an einen Workflowgenehmigungsprozess ausführen kann.
 

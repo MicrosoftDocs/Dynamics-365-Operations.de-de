@@ -26,7 +26,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="actual-vs-budget-power-bi-content"></a>Ist-Wert im Vergleich mit Budget-Power BI-Inhalt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird der **Istwert verglichen mit Budget**-Inhalt von Microsoft Power BI beschrieben. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen. 
 

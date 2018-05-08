@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess.  
 

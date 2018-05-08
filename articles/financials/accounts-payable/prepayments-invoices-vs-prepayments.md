@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel erläutert und vergleicht die beiden Methoden, die Organisationen für Vorauszahlungen verwenden können. In einer Methode können Sie eine Vorauszahlungsrechnung erstellen, die einer Bestellung zugeordnet ist. In der anderen Methode erstellen Sie Erfassungsbelege für Vorauszahlungen, indem Sie Journaleinträge erstellen und diese dann als Erfassungsbelege für Vorauszahlungen markieren.
 

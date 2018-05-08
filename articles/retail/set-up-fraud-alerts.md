@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-fraud-alerts"></a>Betrugswarnungen einrichten
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie Kriterien und Regeln einrichteten ,um potenziell gefälschte Aufträge für weitere Prüfung gesperrt zu halten. Betrugsprüfungsfunktionen werden verwendet, um die Gültigkeit von Informationen in einen Auftrag zu bestimmen. Wenn die Informationen im Auftrag auf Grundlage der Betrugskriterien und -Regeln einer Organisation fraglich erscheinen, kann der Auftrag für weitere Prüfung durch einen Administrator gesperrt werden.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Verfolgen von Artikeln und Rohmaterialien im Bestand, in der Produktion und im Verkauf
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Artikelverfolgung verwenden können, um erkennen zu können, wo Artikel oder Rohmaterial verwendet wurden, verwendet werden oder zukünftig in der Produktion und in den Verkaufsprozessen verwendet werden.
 

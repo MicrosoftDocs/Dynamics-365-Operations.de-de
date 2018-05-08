@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-an-open-ended-question"></a>Eine offene Frage erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Offene Fragen ermöglichen Befragungsteilnehmer, ihre eigene Antwort bereitzustellen. Sie können steuern, ob diese Antwort eine Zahl, ein Dezimalwert, ein Datum, ein Kommentar usw. ist. Diese Prozedur führt Sie durch den Prozess zur Erstellung eines bestimmten Fragetyps, eine offene Frage. Um diese Prozedur zu starten, gehen Sie zu "Fragebogen" > "Entwurf" > "Fragen". Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

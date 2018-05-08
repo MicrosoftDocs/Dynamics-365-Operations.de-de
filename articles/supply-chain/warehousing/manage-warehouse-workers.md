@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="manage-warehouse-workers"></a>Verwalten der Lagerortarbeitskräfte
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Sie Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern in Ihren Lagerorten ausgeführt wird.
 

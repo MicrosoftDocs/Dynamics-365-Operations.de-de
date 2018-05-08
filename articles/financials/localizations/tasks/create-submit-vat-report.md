@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-submit-vat-report"></a>Mehrwertsteuererklärung erstellen und übermitteln
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie durch das Erstellen und Übermitteln der Mehrwertsteuererklärung an die deutsche Behörde.
 

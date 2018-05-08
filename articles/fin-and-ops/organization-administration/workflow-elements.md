@@ -27,7 +27,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="workflow-elements"></a>Workflowelemente
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema beschreibt die verschiedenen Elemente, die einen Workflow darstellen.
 

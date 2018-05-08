@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-standard-cost-updates"></a>Standardkostenaktualisierungen verwalten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Die Aktualisierung von Standardkostendaten kann auf zwei unterschiedliche Arten verwaltet werden - durch den Einzelversionsansatz oder durch den Zwei-Versionen-Ansatz. 
 

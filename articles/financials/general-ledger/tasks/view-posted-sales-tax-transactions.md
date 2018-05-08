@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Vorgenommene Mehrwertsteuerbuchungen anzeigen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Sie können gebuchte Mehrwertsteuertransaktionen aus verschiedenen Seiten anzeigen, abhängig davon, was Sie anzeigen möchten. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 

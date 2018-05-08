@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-currency-exchange-rates"></a>Währungswechselkurse importieren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Wenn eine juristische Person Rechnungen in Fremdwährungen erhalten hat, ist es erforderlich, die Fremdwährung in der lokalen Währung umgerechnet. Das bedeutet, dass aktueller Wechselkurse für unterschiedliche Währungen erforderlich sind. Dieses Thema enthält einen Überblick der erforderlichen Einstellungen und der Verarbeitung für den Import von Devisenkursreferenzsätzen der Daten, die über das Internet bei den Wechselkursanbietern, wie der Europäischen Zentralbank Zentralbank und der der russischer Föderation veröffentlicht werden.
 

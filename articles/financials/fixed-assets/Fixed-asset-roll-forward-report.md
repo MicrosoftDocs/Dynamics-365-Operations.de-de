@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rollforwardbericht für Anlagen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Der Bericht **Rollforward für Anlagen** bietet ein einfach zu lesendes Microsoft Excel-Format, die detaillierten Anlagedaten, die Sie für den Periodenabschluss, für Finanzaufstellungen und die Steuererklärung benötigen. Der Bericht umfasst Start- und Endsalden für Anlagen zusammen mit Bewertungsbewegungen für die Periode und sämtlicher neuer Anlagenanschaffungen und -abgänge, die sich während der Periode ereigneten. Daten werden für einzelne Anlagen gemeldet, und Werte werden auch für Anlagengruppen und die juristische Person zusammengefasst.
 

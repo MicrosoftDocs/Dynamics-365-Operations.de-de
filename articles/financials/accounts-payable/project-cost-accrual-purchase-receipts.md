@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Projektkostenabgrenzung beim Empfang von Bestellungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Projektkosten von Einkaufslieferungen in Microsoft Dynamics 365 for Finance and Operations nachverfolgt werden können. 
 

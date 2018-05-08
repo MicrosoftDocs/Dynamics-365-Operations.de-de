@@ -29,9 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Produktdimensionen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
 Es gibt vier Produktdimensionen: Farbe, Konfiguration, Größe und Farbe. Sie kombinieren Produktdimensionen in den Dimensionsgruppen und weisen diesen Dimensionsgruppen Produktmaster zu. Diese Kombinationen der Produktdimensionen bestimmen, wie Produktvarianten definiert sind.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Erweiterte Bankabstimmung MT940 Import – Zusammengesetzter Datenentitäts-Upgrade
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Eine Sequenznummer muss der Bankauszugs-Importentität hinzugefügt werden, um das Format MT940 zu unterstützen. 
 

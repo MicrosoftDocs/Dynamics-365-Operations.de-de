@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components"></a>Definieren Sie die Abhängigkeit der Konfigurationen von anderen Komponenten 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Um diese Schritte auszuführen, müssen Sie die Schritte im Aufgabenleitfaden zuerst ausführen, ER Verwaltungsmodellzuordnungskonfiguraion und Sie müssen Zugriff auf Microsoft Dynamics Lifecycle Services (LCS) haben.
 

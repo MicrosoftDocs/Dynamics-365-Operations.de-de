@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Mehrwertsteuer-Zuweisung und -Außerkraftsetzungen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie man Mehrwertsteuergruppen Retail Channels zuweist. Sie führt auch Schritt für Schritt durch den Prozess der Erstellung einer neuen Mehrwertsteuer-Außerkraftsetzung und ihrer Zuweisung zu einer vorhandenen Mehrwertsteuer-Außerkraftsetzungsgruppe. Diese Prozedur
 

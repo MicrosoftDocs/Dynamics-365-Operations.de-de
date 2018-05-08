@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-address-books"></a>Adressbücher konfigurieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Mit diesem Verfahren und die Entscheidungen, die Sie in der Planung die Konfiguration für das globale Adressbuch und zusätzlichen des Adressbuch themas treffen, um zusätzliche Adressbüchern für Ihre Organisation einrichten.
 

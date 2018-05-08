@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>Grundeinrichtung eines veröffentlichten Produktmasters abschließen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren, wie die erforderlichen Mindesteinstellungen abschließt, die erforderlich ist, bevor der Produktmaster in den Stücklistenversionen verwendet werden kann.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>Übersicht zum Abschreibungsbuchupgrade
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations (1611) wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als ein Buch bekannt ist. Dieses Thema bietet mehrere Dinge, die für das Upgrade zu berücksichtigen sind. 
 
@@ -62,16 +62,16 @@ Option 2: **Vorhandener benutzerdefinierter Nummernkreis** - Diese Option ermög
 Die Parameter befinden sich am Anfang der Klasse  ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 
 
 *//Geben Sie einen vorzuziehenden der Zuteilung von Belege an*  
-*// true, wenn Sie einen vorhandenen Nummernkreiscode verwenden möchten* 
+ *// true, wenn Sie einen vorhandenen Nummernkreiscode verwenden möchten* 
 *false, wenn Sie den vom System definierten Nummernkreis (Standard) verwende möchten*  const  boolesches NumberSequenceUseExistingCode = false;  
 
 *//Wenn der vom System definierte Nummernkreisansatz verwendet wird, geben Sie die Parameter für die Nummersequenz an*
-*//Ein neuer Nummernkreis wird mit mit diesen Parametern erstellt.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
+ *//Ein neuer Nummernkreis wird mit mit diesen Parametern erstellt.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
 *//Wenn der vorhandene Nummernkreisansatz verwendet wird, geben Sie den bestehenden Nummernsequenzcode ein* 
-*//Beleg-Zuweisung geht Zeile-für-Zeile für bestehende Nummernsequenzen.* const str = NumberSequenceExistingCode ''; *//Geben Sie den Umfang des vorhandenen Nummernkreiscode an* 
+ *//Beleg-Zuweisung geht Zeile-für-Zeile für bestehende Nummernsequenzen.* const str = NumberSequenceExistingCode ''; *//Geben Sie den Umfang des vorhandenen Nummernkreiscode an* 
 **//true, wenn der Nummernkreis der angegebenen Anzahl geteilt wird* 
-*//false wenn der angegebene Nummernkreis pro Unternehmen ist* 
+ *//false wenn der angegebene Nummernkreis pro Unternehmen ist* 
  *// Der vom System definierte Nummernkreis wird verwendet, wenn ein Nummernkreiscode mit dem angegebenen Bereich nicht gefunden wird.* const boolean NumberSequenceExistingIsShared = true; 
 
 Erstellen Sie das Projekt erneut, das die Klasse enthält, nachdem die Konstanten geändert wurden. 

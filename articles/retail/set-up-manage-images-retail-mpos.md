@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Bilder für Retail Modern POS einrichten und verwalten
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In diesem Artikel wird beschrieben welche Schritte beim Einrichten und Verwalten von Bildern für verschiedene Retail Modern POS erforderlich sind.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="posting-definition-examples"></a>Buchungsdefinitionsbeispiele
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Beispiele, die zeigen, wie Bestellbelastungen für Budgetzuteilungen und Buchungsdefinitionen verwendet werden.
 

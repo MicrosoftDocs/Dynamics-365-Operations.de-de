@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Automatische Frachtabstimmung einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie Daten für die automatische Frachtabstimmung eingerichtet werden. Dies wird normalerweise von einer Lagerortverwaltung erfolgt. Sie können diese Prozedur im Demodatunternehmen USMF verwenden.
 

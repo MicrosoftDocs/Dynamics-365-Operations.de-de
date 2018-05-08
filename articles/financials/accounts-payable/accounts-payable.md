@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-payable-home-page"></a>Startseite für Kreditorenkonten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält eine Übersicht über die Kreditorenkonten. 
 

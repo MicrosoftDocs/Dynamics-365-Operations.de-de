@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>RFM-Alyse einrichten
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie ein Recency-, Häufigkeits- und monetäre (RFM) Analyse Ihrer Debitoren eingerichtet wird.
 

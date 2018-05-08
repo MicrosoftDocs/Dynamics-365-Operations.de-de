@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="position-budgeting-troubleshooting"></a>Positionsbudgetierung-Problembehebung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Diesee Artikel enthält Antworten auf Fragen, die Sie möglicherweise haben, wenn Sie die Positionsbudgetierung konfigurieren. Es adressiert häufig gestellten Fragen, wie Budgetkostenelemente, Vergütungsgruppen und Kompensationsraster. 
 

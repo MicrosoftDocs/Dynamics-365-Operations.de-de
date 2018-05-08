@@ -26,9 +26,9 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="create-alerts"></a>Warnungen erstellen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a>Erste Schritte
 Vor dem Einrichten einer Warnregel müssen Sie entscheiden, wann oder in welchen Situationen Sie Warnungen erhalten möchten. Wenn Sie wissen, über welches Ereignis Sie benachrichtigt werden möchten, suchen Sie in Microsoft Dynamics 365 for Finance and Operations die Seite, wo die Daten angezeigt werden, die dieses Ereignis verursachen. Das Ereignis kann ein eintretendes Datum oder eine spezifische Änderung sein. Daher müssen Sie die Seite finden, auf der das Datum angegeben ist, oder auf der das Feld, das sich ändert oder der neue Datensatz, der erstellt wird, angezeigt wird. Auf Basis dieser Informationen können Sie nun die Warnregel erstellen.

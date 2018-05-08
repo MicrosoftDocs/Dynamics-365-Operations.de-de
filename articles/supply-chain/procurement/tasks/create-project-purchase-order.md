@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-project-purchase-order"></a>Projektbestellung erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie Sie eine Projektbestellung manuell erstellen. Diese Aufgabe verwendet das USSI-Dataset.
 

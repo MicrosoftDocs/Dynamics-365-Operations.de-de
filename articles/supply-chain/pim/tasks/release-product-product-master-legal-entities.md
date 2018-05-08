@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Ein Produkt bzw. einen Produktmaster für juristische Personen freigeben
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch die Freigabe eines Produkts oder Produktmasters in einer oder mehreren juristischen Personen. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe erstellen, ist USRT, und die Aufgabe ist für den "Manager Verkaufsförderung" und "Produkt-Designer" bestimmt.
 

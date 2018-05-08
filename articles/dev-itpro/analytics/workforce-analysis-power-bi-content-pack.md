@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="workforce-metrics-power-bi-content"></a>Power BI Inhalt Mitarbeitermetrik
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird der Microsoft Power BI-Inhalt **Arbeitskraftkennzahlen** beschrieben. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 

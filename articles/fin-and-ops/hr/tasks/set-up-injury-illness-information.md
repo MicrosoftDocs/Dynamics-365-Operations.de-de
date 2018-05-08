@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-injury-and-illness-information"></a>Angaben zu Verletzungen und Krankheiten einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Arbeitgeber müssen wissen, ob ihre Mitarbeiter verletzt sind oder aufgrund von Gefahren am Arbeitsplatz krank werden. Verwenden Sie das Verletzungs- und Krankheitsformular, um die erforderlichen Informationen einzurichten, um Verletzungen oder Krankheiten am Arbeitsplatz zu erfassen. Sie können Typen von Verletzungen und Krankheiten einrichten, dazu auch Typen von Behandlungen, Kosten und Ergebnissen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Aktualisieren des Formats durch Verwendung einer neuen Basisversion dieses Formats für elektronische Berichterstellung
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, eine Formatkonfiguration für elektronische Berichterstellung (ER) verwalten kann. Diese Prozedur zeigt, wie eine benutzerdefinierte Version eines Formats auf Grundlage des Formats erstellt werden kann, das von einem Konfigurationsanbieter (CP) eingeht. Sie zeigt auch, wie eine neue Basisversion für dieses Format übernommen wird.
 

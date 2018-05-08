@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>Ein vorläufiges Budget für den öffentlichen Sektor erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Sie können vorläufige Budgetregistereinträge für ein bestimmtes Budgetmodell und Dimensionswerte erstellen. Nachdem das tatsächliche Budget genehmigt wurde, können Sie ursprüngliche Budgetregistereinträge mit erstellen. Diese Prozedur wurde unter Verwendung der PSUS-Vorführungsunternehmensdaten in der Partition "Öffentlicher Sektor" erstellt.
 

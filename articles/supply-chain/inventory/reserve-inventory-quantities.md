@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Reservieren von Lagermengen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema werden die verschiedenen Optionen beschrieben, die für die Reservierung von Bestand verfügbar sind.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-pos-permission-groups"></a> POS-Berechtigungsgruppen erstellen
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie eine POS-Berechtigungsgruppe erstellt wird. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USRT. Diese Aufgabe ist für die Rolle "Bereichsleiter (Einzelhandel)" vorgesehen.
 

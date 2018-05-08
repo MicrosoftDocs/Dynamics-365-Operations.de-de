@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-a-customer-invoice"></a>Erstellen einer Debitorenrechnung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechnung, die sich auf einen Auftrag bezieht, und die ein Debitor von einer Organisation erhält. Diese Art von Debitorenrechnung wird auf Basis eines Auftrags, der die einzelnen Auftragspositionen und Artikelnummern enthält, erstellt. Die Artikelnummern werden im Sachkonto angegeben und gebucht. Journaleinträge in untergeordnetem Sachkonto sind bei einer Debitorenrechnung für einen Auftrag nicht verfügbar. Weitere Informationen finden Sie unter [Auftragserechnung erstellen](tasks/create-sales-order-invoices.md).
 

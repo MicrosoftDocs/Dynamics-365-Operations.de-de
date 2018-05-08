@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="monitor-a-master-planning-run"></a>Einen Produktprogrammplanungslauf überwachen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Der Produktionsplaner möchte sehen, ob ein Produktprogrammplanungslauf in Bearbeitung ist. Verwenden Sie das Demodatenunternehmen USMF, um diese Prozedur abzuschließen.
 

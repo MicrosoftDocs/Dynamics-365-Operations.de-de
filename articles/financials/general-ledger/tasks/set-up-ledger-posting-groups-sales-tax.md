@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Einrichten von Sachkontobuchungsgruppen für Mehrwertsteuer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Die Mehrwertsteuer wird zu den Hauptkonten berechnet und gebucht, die in den "Sachkontobuchungsgruppen" angegeben werden. Sachkontobuchungsgruppen werden jedem einzelnen Mehrwertsteuercode zugeordnet. Sie können einzelne Sachkontobuchungsgruppen für jeden Mehrwertsteuercode einrichten, eine Sachkontobuchungsgruppe für alle Mehrwertsteuercodes verwenden oder mehrere Sachkontobuchungsgruppen den Mehrwertsteuercodes zuweisen. Für diese Erfassung wird das Demo-Unternehmen DEMF verwendet. 
 

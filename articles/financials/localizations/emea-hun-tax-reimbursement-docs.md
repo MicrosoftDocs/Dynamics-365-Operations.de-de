@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="tax-reimbursement-documents-for-hungary"></a>Steuerrückerstattungsdokumente für Ungarn
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="set-up-parameters-for-tax-reimbursement-documents"></a>Parameter für Steuerrückerstattungsdokumente einrichten
 

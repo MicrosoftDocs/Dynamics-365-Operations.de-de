@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Einen qualifizierten Pool von Kandidaten zu finden, um freie Stellen zu füllen, kann schwierig sein, insbesondere wenn eine Position einzigartige Qualifikationen erfordert.  Allerdings sind Kandidaten mit den von Ihnen benötigten Qualifikationen möglicherweise bereits in Ihrer Organisation beschäftigt. Sie können nach einer bestimmten Qualifikation unter vorhandenen Mitarbeitern oder neuen Bewerbern suchen. Dies ermöglicht es einem Personalbeschaffungsmitarbeiter, Bewerber schnell zu erfassen und zu rastern, die sich jetzt oder in der Vergangenheit für eine offene Stelle beworben haben, oder es können potenzielle Kandidaten aus ihrem vorhandenen von Mitarbeiter gesucht werden. Verwenden Sie diese Aufgabenaufzeichnung, um zu erfahren, wie die Qualifikationszuordnungsfunktionalität Sie dabei unterstützen kann, die richtige Person für eine offene Stelle zu finden. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

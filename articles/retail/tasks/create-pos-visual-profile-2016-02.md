@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-pos-visual-profile"></a> Ein visuelles POS-Profil erstellen  
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen visuellen Verkaufsstellen (POS)-Profils. Ein visuelles Profil beinhaltet grundlegende Informationen zur Darstellung der POS-Register. Sie können mehrere visuelle Profile erstellen und bestimmte Profile zuweisen, die auf bestimmten Registern ausgeführt werden sollen. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 

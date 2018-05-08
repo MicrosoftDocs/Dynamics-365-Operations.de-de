@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>Kanban-Regel für ein Stücklistenpositionsereignis erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Aufgabe konzentriert sich auf die Einstellungen, die zum Erstellen einer Ereignis-Kanban-Regel erforderlich sind, um die Beschaffung für Produktions-Stücklistenpositionen in einer gemischten schlanken und klassischen Produktionsumgebung sicherzustellen. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für den Fertigungsplaner oder den Wertstrommanager vorgesehen, da dieser die Produktion eines neuen oder geänderten Produkts vorbereitet.
 

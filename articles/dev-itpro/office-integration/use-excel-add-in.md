@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="use-the-excel-add-in"></a>Excel-Add-In verwenden
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Entitätsdaten in Microsoft Excel geöffnet und anschließend mit dem Microsoft Dynamics Office-Add-in für Excel angezeigt, aktualisiert und bearbeitet werden. Sie können die Entitätsdaten über Excel oder Microsoft Dynamics 365 for Finance and Operations öffnen.
 

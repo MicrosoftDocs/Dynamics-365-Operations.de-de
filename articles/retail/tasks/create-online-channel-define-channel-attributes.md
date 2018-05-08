@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-online-channels-and-define-channel-attributes"></a> Onlinekanäle erstellen und Kanalattribute definieren
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen Online Kanals und dessen Hinzufügen zur Organisationshierarchie. Sie müssen die Organisationshierarchie erstellen, bevor Sie einen neuen Online Kanal erstellen können. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 

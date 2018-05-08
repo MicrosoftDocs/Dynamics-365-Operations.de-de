@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchasing-policies"></a>Einkaufsrichtlinien
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Einkaufsrichtlinien. Eine Einkaufsrichtlinie ist Sammlung von Regeln, mit denen der Bestellanforderungsprozess kontrolliert wird. Einkaufsrichtlinien unterstützen Beschaffungsadministratoren beim Implementieren der Beschaffungsstrategie, indem eine Richtlinienstruktur erstellt wird, die auf die Anforderungen einer Organisation für den strategischen Einkauf ausgerichtet ist.
 

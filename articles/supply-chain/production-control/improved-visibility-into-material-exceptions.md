@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="visibility-into-material-exceptions"></a>Sichtbarkeit von Materialausnahmen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Im Arbeitsbereich **Fertigungsbereichsverwaltung** gewähren Ihnen drei Kacheln eine bessere Sichtbarkeit von Ausnahmen bei Rohmaterialien für Produktionsaufträge und Chargenaufträge:
 

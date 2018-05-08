@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="per-diem-rules"></a>Tagessatzregeln
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bei T*Tagessätzen* handelt es sich um eine Vergütung, die Arbeitskräfte erhalten, wenn sie für das Unternehmen unterwegs sind. In der Ausgabenverwaltung können Sie Tagessatzregeln für unterschiedliche Reisesituationen erstellen. Tagessätze können abhängig von der Jahreszeit, dem Reiseziel oder in Abhängigkeit von beidem festgelegt werden. Beim Erstellen einer Tagessatzregel können Sie angeben, dass ein prozentualer Anteil des Tagessatzes einbehalten werden soll, wenn eine Arbeitskraft kostenfreie Verpflegung oder andere Leistungen erhält. Darüber hinaus können für die Reise einer Arbeitskraft auch eine Mindest- und eine Höchstanzahl von Stunden für den Tagessatz festgelegt werden.
 

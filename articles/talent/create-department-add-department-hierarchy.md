@@ -28,7 +28,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Eine Abteilung erstellen und der Abteilungshierarchie zuordnen
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen funktionalen Bereich einer Organisation darstellt. Eine Abteilung ist für einen bestimmten Bereich der Organisation wie zum Beispiel Verkauf, Buchhaltung oder Personalverwaltung zuständig. Sie können Abteilungen verwenden, um zu Funktionsbereiche zu melden. Abteilungen können Gewinn- und Verlustzuständigkeit haben.
 

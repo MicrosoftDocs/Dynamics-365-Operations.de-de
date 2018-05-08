@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="work-breakdown-structures"></a>Projektstrukturpläne
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ein Projektstrukturplan (PSP) ist eine Beschreibung der Arbeit, die für ein Projekt ausgeführt wird. Sie ist eine Hierarchie von Aufgaben, die das Verständnis des Projektteams zur Zusammenstellung der Arbeit und die Größe, Kosten und Dauer der einzelnen Komponenten oder Aufgaben darstellt. Ein PSP hat drei wichtige Funktionen:
 

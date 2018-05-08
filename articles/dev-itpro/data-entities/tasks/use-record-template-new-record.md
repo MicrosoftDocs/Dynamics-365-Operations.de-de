@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a>Datensatzvorlage zum Erstellen eines neuen Datensatzes verwenden
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie eine zuvor definierte Datensatzvorlage verwendet wird, um einen neuen Datensatz zu erstellen. Um diese Prozedur abzuschließen, müssen Sie zuerst die Prozedur „Eine Datensatzvorlage zur Vereinfachung der Dateneingabe erstellen” abschließen.
 

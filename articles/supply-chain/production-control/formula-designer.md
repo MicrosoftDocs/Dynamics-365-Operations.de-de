@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="formula-designer"></a>Formeldesigner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie der Formel-Designer verwendet wird, um Formeln in einer Strukturansicht zu analysieren und zu verwalten.
 

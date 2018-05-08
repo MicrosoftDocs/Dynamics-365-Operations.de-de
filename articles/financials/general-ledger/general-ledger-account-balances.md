@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-account-balances"></a>Kontosalden für das Hauptbuch
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel werden zwei Möglichkeiten beschrieben, Hauptbuchkontosalden anzuzeigen: die Zwischenbilanzlistenseite und die Finanzberichte. Er erläutert auch, wie Dimensionssatzsalden aktualisiert werden.
 

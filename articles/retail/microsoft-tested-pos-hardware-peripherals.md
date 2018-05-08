@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pos-hardware-peripherals"></a>POS-Hardware und -Peripheriegeräte
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Moderne Verkaufsstelle (POS) und Cloud POS können eine breite Palette von POS-Hardwareperipheriegeräten mit mehreren Schnittstellen und Bereitstellungsoptionen verwenden, um die verschiedenen Geschäftsszenarien eines Einzelhändlers zu erreichen. 
 

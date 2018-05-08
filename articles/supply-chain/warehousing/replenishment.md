@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="replenishment"></a>Wiederbeschaffung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die Wiederbeschaffungsstrategien, die für Lagerorte, die die Funktionen der Lagerortverwaltung verwenden, verfügbar sind. Die Informationen in diesem Artikel gelten nicht für die Lagerort-Lösung, die in der Lagerverwaltung verfügbar ist.
 

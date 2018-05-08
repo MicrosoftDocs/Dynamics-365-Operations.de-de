@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="packing-material-fee-calculation-for-austria"></a>Bericht "Berechnung der Verpackungsmaterialgebühren" für Österreich
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zu Verpackungsmaterialsätze und Gebühren in Österreich.
 

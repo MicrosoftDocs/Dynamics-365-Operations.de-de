@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-search"></a>Aktivitätssuche
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 Finance and for Operations.. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen.
 

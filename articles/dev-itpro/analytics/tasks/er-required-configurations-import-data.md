@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Erstellen erforderlicher Konfigurationen zum Importieren von Daten aus einer externen Datei für elektronische Berichterstellung
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator” oder der Rolle „Entwickler für elektronische Berichterstellung” Konfigurationen für elektronische Berichterstellung (EB) entwerfen kann, um Daten in die Dynamics 365 for Finance and Operations-Anwendung aus einer externen Datei zu importieren. In diesem Beispiel erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc., um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Aufgabenleitfaden erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren, ihn. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden. Sie müssen auch die folgenden Dateien mithilfe der Links aus dem Elektronischen Berichterstellungsüberblick-Thema herunterladen und lokal speichern (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 

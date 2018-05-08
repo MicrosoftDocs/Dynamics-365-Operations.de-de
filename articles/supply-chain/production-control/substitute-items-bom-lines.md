@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="material-substitution-in-manufacturing"></a>Materielle Ersetzung in der Fertigung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Materialien während des Produktionsprozesses ersetzt werden. 
 

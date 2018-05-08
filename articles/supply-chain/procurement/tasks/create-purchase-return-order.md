@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-return-order"></a>Einkaufsrücklieferung erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie eine Reklamation erstellt wird, indem die Aktivität "Gutschrift" verwendet wird, um Positionen von einem Kreditorenrechnungsdokument zu einer neuen Bestellung zu kopieren. Sie zeigt Ihnen auch, wie der Auftrag bestätigt und die Lieferung der Waren zurück zum Kreditor verarbeitet wird. Das Beispiel, das in dieser Prozedur angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden. Normalerweise wird diese Aufgabe von einem Einkaufsvertreter ausgeführt.
 

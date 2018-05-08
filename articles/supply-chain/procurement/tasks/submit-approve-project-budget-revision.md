@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a>Projektbudgetüberarbeitungen übermitteln und genehmigen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur stellt Informationen über die Überarbeitung eines Projektbudgets bereit. Sie können ein Projektbudget so oft wie nötig überarbeiten. Sie können jedoch nicht den Betrag einer einzelnen Überarbeitung sehen, wenn das Budget mehr als einmal überarbeitet wurde. 
 

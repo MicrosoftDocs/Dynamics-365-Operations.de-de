@@ -25,7 +25,7 @@ ms.lasthandoff: 03/05/2018
 ---
 # <a name="bank-management-workspace"></a>Arbeitsbereich für die Bankverwaltung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Der Arbeitsbereich **Bankwesen** zeigt Informationen bezüglich der Bankkonten des Unternehmens. Der Arbeitsbereich umfasst eine Ansicht **Zusammenfassung** und eine Seite **Analyse**. Die **Zusammenfassungsansicht** zeigt Übersichtskacheln, Bankkontoinformationen, ein Saldodiagramm und zugehörige Informationen an. Die **Analyseseite** verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Bankkontosalden anzuzeigen.
 

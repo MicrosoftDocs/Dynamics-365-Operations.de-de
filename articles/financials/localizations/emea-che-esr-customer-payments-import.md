@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="esr-customer-payments-import"></a>ESR-Debitorenzahlungen für Importe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Unter dem folgenden Thema finden Sie Informationen zum Importieren von Debitorenzahlungen in das ESR-Forrmat.
 

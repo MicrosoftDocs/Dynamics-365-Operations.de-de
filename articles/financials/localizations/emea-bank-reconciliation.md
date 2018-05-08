@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankauszug und Zahlungsabstimmung für die EU
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema bietet einen Überblick der Funktionen, die Sie verwenden können, um Zahlungsinformationen von den Banken in Formate abzustimmen, die von den europäischer Länder verwendet werden.
 

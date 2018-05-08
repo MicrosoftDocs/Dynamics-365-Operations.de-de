@@ -28,9 +28,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisieren der Belegschaft mithilfe der Abteilungen, Stellen und Positionen
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!INCLUDE [retail name](includes/retail-name.md)]
+[!include [retail name](includes/retail-name.md)]
 
 Abteilungen, Stellen und Positionen sind Organisationselemente, die innerhalb der Personalverwaltung verwaltet werden. Dieses Thema behandelt die grundlegenden Informationen zu diesen Elementen. 
 

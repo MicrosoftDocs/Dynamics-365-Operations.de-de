@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-receivable-home-page"></a>Startseite für Debitoren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mithilfe des Debitorenmoduls lassen sich Debitorenrechnungen und eingehende Zahlungen nachverfolgen. 
 

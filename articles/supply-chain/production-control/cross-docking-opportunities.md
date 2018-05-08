@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie den Prozess des Crossdockings von Materials verwalten, das als fertig gestellt gemeldet wurde, spricht von eine Produktionsauftragsposition an einen ausgehenden Transportdock beendet.
 

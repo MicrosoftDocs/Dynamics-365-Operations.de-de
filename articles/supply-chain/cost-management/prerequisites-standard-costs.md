@@ -29,7 +29,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="prerequisites-for-standard-costs"></a>Voraussetzungen für Standardkosten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema werden die grundlegenden Schritte zur Verwendung von Standardkosten beschrieben. Die weiteren Schritte hängen von den Arbeitsgängen des Unternehmens ab. Diese Schritte unterscheiden sich beispielsweise bei einer Umgebung ohne Produktion, bei einer Produktionsumgebung, in der keine Routings verwendet werden, und bei einer Produktionsumgebung mit Routings. 
 

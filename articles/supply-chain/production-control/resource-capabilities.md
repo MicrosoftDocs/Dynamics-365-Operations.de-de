@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resource-capabilities"></a>Ressourcenfähigkeiten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 «»Dieser Artikel enthält Informationen zu Ressourcenfunktionen. Eine Funktion ist die Fähigkeit einer betrieblichen Ressource, eine bestimmte Aktivität auszuführen. Der Artikel wird beschrieben, wie Funktionen und zugehörige Konzepte, wie Leistungsfähigkeitsebene und Priorität, verwendet werden, damit entsprechende Ressourcen für eine Aktivität verwendet werden können.
 

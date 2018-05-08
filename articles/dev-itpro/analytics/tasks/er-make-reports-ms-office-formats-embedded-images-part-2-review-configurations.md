@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Überprüfen von Konfigurationen zum Erstellen von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: Einstellungsparameter)" Aufgabenleitfaden erstellen.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="eu-entry-certificates"></a>EU-Gelangensbestätigungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Gelangensbestätigungen der Europäischen Union (EU).
 

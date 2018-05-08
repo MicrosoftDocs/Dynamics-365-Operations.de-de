@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="absence-registration-in-time-and-attendance"></a>Abwesenheitserfassung in "Zeit und Anwesenheit"
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema werden die Konzepte für Abwesenheit und erläutert, wie Abwesenheiten in Zeit und Anwesenheit behandelt.
 

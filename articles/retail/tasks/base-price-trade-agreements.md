@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispreis und Handelsvereinbarungen
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von kanalspezifischen Verkaufspreis-Handelsvereinbarungen. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 

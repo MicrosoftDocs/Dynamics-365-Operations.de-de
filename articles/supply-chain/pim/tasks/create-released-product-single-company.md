@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Ein freigegebenes Produkt für ein einzelnes Unternehmen erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In dieser Prozedur wird erläutert, wie ein einzelnes freigegebenes Produkt im Rahmen einer einzelnen gültigen Einheit erstellt wird. Nachdem das freigegebene Produkt erstellt wurde, ist es sofort in ausschließlich dieser Einheit verfügbar. Sie können diese Prozedur im Demodatenunternehmen USMF ausführen. Diese Aufgabe wird in der Regel von einem Produktdesigner ausgeführt.
 

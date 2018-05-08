@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Rohmaterialverbrauch über Stücklisten-Bezugsprinzip steuern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Die Bezugsprinzipien reflektieren verschiedene Verbrauchsstrategien für Rohmaterialen, die in Produktionsprozessen verwendet werden. Verbrauch ist der Prozess, bei dem Material aus dem Bestand vor Ort abgezogen wird und der Wert der verbrauchten Materialien für Produktionsaufträge und Chargenaufträge auf **Ressource in Fertigung** (RIF) gesetzt wird. Rohmaterialien werden normalerweise von einem Standort aus verbraucht, der für den Prozess konfiguriert ist, der das Material verbraucht. Dieser Standort wird als Produktionseingangsstandort bezeichnet.
 

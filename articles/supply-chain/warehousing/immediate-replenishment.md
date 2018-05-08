@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="immediate-replenishment"></a>Sofortige Wiederbeschaffung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mit der sofortigen Wiederbeschaffung können Sie Bestand sofort wiederbeschaffen, nachdem eine Lagerplatzdirektivenposition keinen Bestand zuteilen kann. Die Wiederbeschaffung basiert auf einer einzelnen Position in den Einstellungen der Lagerplatzdirektive. Wenn Lagerbestand nicht in der Maßeinheit vorhanden ist, die durch diese Position angegeben ist, erfolgt die Wiederbeschaffung dieser Maßeinheit umgehend.
 

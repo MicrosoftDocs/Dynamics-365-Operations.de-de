@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Debitoren-Fälligkeitsinformationen einrichten und generieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Handbuch unterstützt Sie dabei, eine Zahlungsfristdefinition sowie Dauerdebitorensalden einzurichten und Salden in der Liste "Saldorückblick" und auf der Seite "Inkasso" anzuzeigen. Für diese Erfassung wird das Demo-Unternehmen USMF verwendet.
 

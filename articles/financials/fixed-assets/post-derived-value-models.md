@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="post-with-derived-books"></a>Buchen mit abgeleiteten Büchern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt, wie Sie die abgeleiteten Bücher verwenden.
 

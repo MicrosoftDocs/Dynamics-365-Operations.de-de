@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="handling-cash-discounts-for-overpayments"></a>Skontobehandlung für Überzahlungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Szenarien, die zeigen, wie eine Zahlung behandelt wird, wenn der Debitor ein Skonto abzieht aber auch zu viel bezahlt. 
 

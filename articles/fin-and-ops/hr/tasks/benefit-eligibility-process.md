@@ -24,7 +24,7 @@ ms.lasthandoff: 02/14/2018
 ---
 # <a name="benefit-eligibility-process"></a>Vergütungsberechtigungsprozess
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie der Leistungberechtigungsprozess arbeitet. Wenn der Prozess abgeschlossen ist, können Sie die Ergebnisse anzeigen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

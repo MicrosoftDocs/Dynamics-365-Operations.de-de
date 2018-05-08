@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-tasks"></a>Serviceaufgaben  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Serviceaufgaben dienen zum Beschreiben der Aufgabe, die im Zuge eines Serviceauftrags auszuführen ist.
 Diese Informationen stehen sowohl dem Techniker als auch dem Debitor zur Verfügung.

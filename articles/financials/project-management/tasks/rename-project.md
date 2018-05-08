@@ -25,7 +25,7 @@ ms.lasthandoff: 11/08/2017
 ---
 # <a name="rename-or-modify-a-project-stage"></a>Umbenennen oder Ändern einer Projektphase
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Projektphasen können zur besseren Übersichtlichkeit des Projektlebenszyklus verwendet werden. Sie können die gewünschten Projektphasen für Ihre Projekte auf der Registerkarte Projektphase des Formulars Projektverwaltungs- und Buchhaltungsparameter einrichten. Dynamics 365 for Finance and Operations beinhaltet fünf vordefinierte und drei benutzerdefinierte Phasen. Sie können den Namen einer Projektphase aktualisieren, die Sie verwenden, um den Fortschritt von Projekten zu verfolgen. Sie können auch Namen für benutzerdefinierte Statusnamen angeben. Diese Aufgabe zeigt, wie eine Projektphase umbenannt oder geändert wird, und verwendet den USSI-Datensatz.
 

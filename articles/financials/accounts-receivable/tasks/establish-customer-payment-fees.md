@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="establish-customer-payment-fees"></a>Debitorenzahlungsgebühren einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Erstellen Sie Zahlungsgebühren für Debitorenzahlungen.
 

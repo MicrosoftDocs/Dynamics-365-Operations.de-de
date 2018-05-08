@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Standardvorlagen für Finanzdimension verwalten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie Finanzdimensions-Standardvorlagen eingerichtet werden. Die Vorlagen können verwendet werden, um Beträge in Quelldokumenten schnell zu verteilen.
 

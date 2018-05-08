@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduce-balance-depreciation"></a>Degressive Abschreibung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel gibt eine Übersicht die Reduktionssaldomethode der Abschreibung.
 

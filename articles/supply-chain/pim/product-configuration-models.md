@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="product-configuration-models-overview"></a>Produktkonfigurationsmodelle – Überblick
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel definiert Begriffe und Konzepte, die zu den Produktkonfigurationsmodellen relevant sind. Produktkonfigurationsmodelle lassen Sie eine generische Produktstruktur erstellen, die verwendet werden kann, wenn viele Produktvarianten für ein bestimmtes Produkt zu konfigurieren.
 

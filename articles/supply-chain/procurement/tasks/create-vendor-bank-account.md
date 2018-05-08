@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-vendor-bank-account"></a>Ein Kreditorenbankkonto erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie Sie ein Bankkonto für einen Kreditor erstellen. Sie können diese Prozedur im Demodatunternehmen USMF verwenden.
 

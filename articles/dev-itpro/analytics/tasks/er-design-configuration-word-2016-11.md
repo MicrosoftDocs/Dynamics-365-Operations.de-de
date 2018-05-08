@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Entwerfen einer Konfiguration zum Generieren von Berichten im Microsoft Word-Format für elektronische Berichterstellung (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” Elektronische Berichterstellungs-(ER)-Formate zum Generieren von Berichten als Microsoft Word-Dateien konfigurieren kann. Diese Schritte können im GBSI-Unternehmen ausgeführt werden.
 
