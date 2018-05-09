@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8b0271aa9db79bd1f002624c7619bb3d572a3ec
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9e57bb9c9e3348f2a9853dfda1351a8a75261beb
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-loyalty-programs"></a><span data-ttu-id="1492e-103"> Treueprogramme definieren</span><span class="sxs-lookup"><span data-stu-id="1492e-103">Define loyalty programs</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1492e-104">Im folgenden Verfahren sehen Sie, wie ein Treueprogramm mit zwei Treuestufen eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="1492e-104">This procedure shows how to set up a loyalty program with two loyalty tiers.</span></span> <span data-ttu-id="1492e-105">Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="1492e-105">This procedure uses the USRT demo data company.</span></span>
 

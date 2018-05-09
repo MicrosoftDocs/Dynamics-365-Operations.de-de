@@ -17,15 +17,15 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0c83c8e4506db41a69e94f35272bb651197f3478
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d53b3f205a1564102b346b3673eca34b98df740a
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-production-order"></a><span data-ttu-id="5581e-103">Produktionsauftrag erstellen</span><span class="sxs-lookup"><span data-stu-id="5581e-103">Create a production order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5581e-104">Diese Prozedur zeigt, wie ein Produktionsauftrag erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="5581e-104">This procedure shows how to create a production order.</span></span> <span data-ttu-id="5581e-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="5581e-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="5581e-106">Dies ist die erste Prozedur von sieben, die den Produktionsauftrags-Lebenszyklus erklärt.</span><span class="sxs-lookup"><span data-stu-id="5581e-106">This is the first procedure out of seven which explains the production order lifecycle.</span></span>
 

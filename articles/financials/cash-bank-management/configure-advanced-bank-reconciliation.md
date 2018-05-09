@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 826484bdd3e2960e5888617191a69f8da6ce8525
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 569989bd85c7768cef55c849199d5950f66d16b4
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="advanced-bank-reconciliation-setup-process"></a><span data-ttu-id="7a1d9-104">Einrichtung des erweiterten Bankabstimmungsprozesses</span><span class="sxs-lookup"><span data-stu-id="7a1d9-104">Advanced bank reconciliation setup process</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="7a1d9-105">Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations mit Bankbuchungen abstimmen.</span><span class="sxs-lookup"><span data-stu-id="7a1d9-105">Advanced bank reconciliation allows you to import electronic bank statements and automatically reconcile with bank transactions in Microsoft Dynamics 365 for Finance and Operations.</span></span>  <span data-ttu-id="7a1d9-106">Dieser Artikel erläutert die Einrichtung von Prozesse für die Abstimmung.</span><span class="sxs-lookup"><span data-stu-id="7a1d9-106">This article will explain the set up processes for reconciliation.</span></span>  
 

@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4d8c82998e6b19adbd67b6b5ea3d68d2fbd08d8b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 32d32cc969548168ce736b18918ce86d9965c4a5
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a><span data-ttu-id="c3b8e-103">Berichtsbeziehungen für eine Position ändern</span><span class="sxs-lookup"><span data-stu-id="c3b8e-103">Modify reporting relationships for a position</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c3b8e-104">Diese Prozedur zeigt, wie Berichtsbeziehungen für einen Mitarbeiter geändert werden.</span><span class="sxs-lookup"><span data-stu-id="c3b8e-104">This procedure shows how to change the reporting relationship for an employee.</span></span> <span data-ttu-id="c3b8e-105">Die Berichtbeziehungen können für das Weiterleiten von Dokumenten durch Workflow verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="c3b8e-105">The reporting relationship can be used for routing documents through workflow.</span></span> <span data-ttu-id="c3b8e-106">Die Prozedur zeigt auch, wie Sie den Mitarbeiter weiteren Hierarchien zuweisen.</span><span class="sxs-lookup"><span data-stu-id="c3b8e-106">The procedure also shows how to assign the employee to additional hierarchies.</span></span> <span data-ttu-id="c3b8e-107">Beispielsweise kann ein Mitarbeiter Teil eines Projektteams mit informellen Berichtsbeziehungen zu einem Projekt-Supervisor sein.</span><span class="sxs-lookup"><span data-stu-id="c3b8e-107">For example, an employee might be a part of a project team with an informal reporting relationship to a project supervisor.</span></span> <span data-ttu-id="c3b8e-108">Zusätzliche Berichtsbeziehungen können für die Position definiert werden, um verschiedene Projekt- oder Matrixszenarien zu berücksichtigen.</span><span class="sxs-lookup"><span data-stu-id="c3b8e-108">Additional reporting relationships can be defined on the position to accommodate various project or matrix scenarios.</span></span> <span data-ttu-id="c3b8e-109">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="c3b8e-109">The demo data company used to create this procedure is USMF.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 42b474302f5a930c3f7969317ba68cb3f22acd91
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f9334e123733357a9c94f45180393b93cf4c40ba
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a><span data-ttu-id="8614b-103">Strukturen für erweiterte Regeln erstellen und zuweisen</span><span class="sxs-lookup"><span data-stu-id="8614b-103">Create and assign advanced rule structures</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8614b-104">Dieser Aufgabenleitfaden führt Sie durch das Erstellen und Zuweisen einer erweiterten Regelstruktur zu einer Kontostruktur.</span><span class="sxs-lookup"><span data-stu-id="8614b-104">This task guide steps through creating and assigning an advanced rule structure to an account structure.</span></span> <span data-ttu-id="8614b-105">Dieser Leitfaden verwendet das Demounternehmen USMF.</span><span class="sxs-lookup"><span data-stu-id="8614b-105">This guide uses the USMF demo company.</span></span>
 

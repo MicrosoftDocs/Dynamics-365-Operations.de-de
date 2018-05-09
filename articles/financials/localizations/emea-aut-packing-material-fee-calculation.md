@@ -18,16 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: aeb91f402eb4ab983e4ccbcaf87a24a817065485
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: edb0036c62cf26a1949099280f54b19bedb29a2f
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="packing-material-fee-calculation-for-austria"></a><span data-ttu-id="fc6ae-103">Bericht "Berechnung der Verpackungsmaterialgebühren" für Österreich</span><span class="sxs-lookup"><span data-stu-id="fc6ae-103">Packing material fee calculation for Austria</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="fc6ae-104">Dieses Thema enthält Informationen zu Verpackungsmaterialsätze und Gebühren in Österreich.</span><span class="sxs-lookup"><span data-stu-id="fc6ae-104">This topic provides information about packing material rates and fees in Austria.</span></span>
 

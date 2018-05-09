@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 829a0bbb1b5ab01728c096872b0ada27cfc570c9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: aaa5b503af95883c2c7fdfb2ad7f3e3062d28961
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-vendor-account"></a><span data-ttu-id="5e53b-103">Erstellen eines Kreditorenkontos</span><span class="sxs-lookup"><span data-stu-id="5e53b-103">Create a vendor account</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5e53b-104">Im folgenden Verfahren, wie ein Kreditorenkonto erstellt und eine Adresse und Kontaktinformationen unter.</span><span class="sxs-lookup"><span data-stu-id="5e53b-104">This procedure shows how to create a vendor account, and add an address and contact information.</span></span> <span data-ttu-id="5e53b-105">Das Verfahren wird nicht angezeigt, wie alle Felder für den Einkauf und die Finanzzwecke aufgefüllt werden.</span><span class="sxs-lookup"><span data-stu-id="5e53b-105">The procedure does not show how to populate all fields for purchasing and financial purposes.</span></span> <span data-ttu-id="5e53b-106">Weitere Informationen über diese Felder zu ermitteln, lesen Sie in den Feldbeschreibungen.</span><span class="sxs-lookup"><span data-stu-id="5e53b-106">To learn more about those fields, please read the field descriptions.</span></span> <span data-ttu-id="5e53b-107">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="5e53b-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="5e53b-108">Kreditorenkonten sind normalerweise von einem Beschaffungsspezialisten oder von Debitoren mitarbeitern erstellt.</span><span class="sxs-lookup"><span data-stu-id="5e53b-108">Vendor accounts are typically created by a procurement professional or accounts receivable personnel.</span></span>
 

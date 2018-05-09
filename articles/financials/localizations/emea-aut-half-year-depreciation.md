@@ -18,16 +18,16 @@ ms.author: sndray
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f18ffed622ea37b801a088d02d20ad9ee79c82d8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e1099fabfb85be6005bbfe8ef978f08c74cbe79e
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="half-year-depreciation-on-additional-acquisitions-for-austria"></a><span data-ttu-id="69c20-103">Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich</span><span class="sxs-lookup"><span data-stu-id="69c20-103">Half-year depreciation on additional acquisitions for Austria</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="69c20-104">Dieses Thema enthält Informationen für Benutzer von juristischen Personen in Österreich zu der Abschreibung von zusätzlichen Anschaffungen, wenn die Abschreibungskonvention für das Halbjahr für die Anlagenabschreibung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="69c20-104">This topic provides information for users in legal entities in Austria about the depreciation of additional acquisitions when the Half year convention is used for fixed asset depreciation.</span></span>
 

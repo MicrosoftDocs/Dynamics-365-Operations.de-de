@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 84ddccde69ad9ea4db14c8380f33bd4bff74447b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 941c0f9a62558151d23a2b35cc22b9653f0900fc
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-electronic-tax-declaration-germany"></a><span data-ttu-id="03340-103">Elektronische Steuererklärung einrichten (Deutschland)</span><span class="sxs-lookup"><span data-stu-id="03340-103">Set up electronic tax declaration (Germany)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="03340-104">Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.</span><span class="sxs-lookup"><span data-stu-id="03340-104">This procedure walks you through setting electronic tax declaration.</span></span>
 

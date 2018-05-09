@@ -20,16 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 83b15e89e87d2936cd175e05fc99e7faf4c0467e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9a9112e88464274fb544e4ba4eaae7b1a36ccd2e
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-fraud-alerts"></a><span data-ttu-id="bcb0e-104">Betrugswarnungen einrichten</span><span class="sxs-lookup"><span data-stu-id="bcb0e-104">Set up fraud alerts</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="bcb0e-105">In diesem Thema wird erläutert, wie Sie Kriterien und Regeln einrichteten ,um potenziell gefälschte Aufträge für weitere Prüfung gesperrt zu halten.</span><span class="sxs-lookup"><span data-stu-id="bcb0e-105">This topic explains how to set up criteria and rules to place potentially fraudulent sales orders on hold for further review.</span></span> <span data-ttu-id="bcb0e-106">Betrugsprüfungsfunktionen werden verwendet, um die Gültigkeit von Informationen in einen Auftrag zu bestimmen.</span><span class="sxs-lookup"><span data-stu-id="bcb0e-106">Fraud review functionality is used to determine the validity of information in a sales order.</span></span> <span data-ttu-id="bcb0e-107">Wenn die Informationen im Auftrag auf Grundlage der Betrugskriterien und -Regeln einer Organisation fraglich erscheinen, kann der Auftrag für weitere Prüfung durch einen Administrator gesperrt werden.</span><span class="sxs-lookup"><span data-stu-id="bcb0e-107">If the information in the sales order appears to be questionable based on an organization’s fraud criteria and rules, the order may be put on hold for further review by an administrator.</span></span>
 

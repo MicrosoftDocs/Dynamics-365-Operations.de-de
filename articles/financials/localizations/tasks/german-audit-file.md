@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bcdf4645d6b6f341ed765126eea0d93c9ebe6c86
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8bcccf762e8b989fe2f932a7fa110b9c3bb2e2c6
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="generate-audit-file-germany"></a><span data-ttu-id="5365e-103">Protokolldatei generieren (Deutschland)</span><span class="sxs-lookup"><span data-stu-id="5365e-103">Generate audit file (Germany)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5365e-104">Im folgenden Verfahren sehen Sie, wie die deutsche Protokolldatei generiert wird.</span><span class="sxs-lookup"><span data-stu-id="5365e-104">This procedure shows how to generate the German audit file.</span></span> <span data-ttu-id="5365e-105">Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit "Deutschland" als Land/Region für die primäre Adresse für die juristischen Person.</span><span class="sxs-lookup"><span data-stu-id="5365e-105">This procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.</span></span>
 

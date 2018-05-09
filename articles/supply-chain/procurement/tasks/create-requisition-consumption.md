@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bad86a4726ce69015f318d9af98992b36d34b29a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ad2a356c4f6bc2c72898e8b841963e6bee6daac0
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-requisition-for-consumption"></a><span data-ttu-id="0f0fd-103">Anforderung für Verbrauch erstellen</span><span class="sxs-lookup"><span data-stu-id="0f0fd-103">Create a requisition for consumption</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0f0fd-104">Diese Prozedur zeigt Ihnen, wie Sie einen Kreditbrief importieren.</span><span class="sxs-lookup"><span data-stu-id="0f0fd-104">This procedure walks you through the process of creating a requisition.</span></span> <span data-ttu-id="0f0fd-105">Sie erfahren Ihnen unterschiedliche Arten an, für Produkte im Beschaffungskatalog zu suchen und wie ein Produkt hinzufügt, das nicht im Katalog ist.</span><span class="sxs-lookup"><span data-stu-id="0f0fd-105">It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog.</span></span> <span data-ttu-id="0f0fd-106">Überprüfen Sie zunächst, müssen Sie eine Einkaufsrichtlinieneinstellung mit der Verbrauch mit der Standardtyp der Anforderung offen.</span><span class="sxs-lookup"><span data-stu-id="0f0fd-106">Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition.</span></span> <span data-ttu-id="0f0fd-107">Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="0f0fd-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="0f0fd-108">Die Prozedur kann in einem Benutzerprofil nur ausgeführt werden, das als Arbeitskraft eingerichtet ist.</span><span class="sxs-lookup"><span data-stu-id="0f0fd-108">The procedure can only be carried out by a user profile that is set up as worker.</span></span>  <span data-ttu-id="0f0fd-109">Diese Aufgaben werden normalerweise von einem Lagerortmitarbeiter ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="0f0fd-109">This task would normally be carried out by an employee.</span></span> <span data-ttu-id="0f0fd-110">Der Mitarbeiter setzen Sicherheitsrolle ermöglicht Ihnen, die Aufgaben besitzen ein, oder, wenn Sie USMF verwenden, können Sie als Alicia anmelden.</span><span class="sxs-lookup"><span data-stu-id="0f0fd-110">The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.</span></span>
 

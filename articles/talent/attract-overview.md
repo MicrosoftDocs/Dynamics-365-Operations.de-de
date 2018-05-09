@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 45383a32afe53f4005e329382ddc0fe511799477
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6b17ed34b7a44f09405d5e6cf8bad3a2ab6a8ccf
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="attract-overview"></a><span data-ttu-id="05462-104">Überblick von Attract</span><span class="sxs-lookup"><span data-stu-id="05462-104">Attract overview</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="05462-105">Attract stellt Funktionen bereit, um den Prozess für die Einstellung neuer Talente zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="05462-105">Attract provides capabilities to manage the process of hiring new talent.</span></span> <span data-ttu-id="05462-106">Kandidaten können zu den offenen Stellen hinzugefügt werden und von Phase zu Phase verschoben werden, bis eine Bewerbung abgeschlossen oder abgelehnt wurde.</span><span class="sxs-lookup"><span data-stu-id="05462-106">Candidates can be added to open jobs and advanced from stage to stage until an offer is extended or the application is rejected.</span></span> <span data-ttu-id="05462-107">In jeder Phase durchlaufen Kandidaten Aktivitäten wie Anrufe, Bewertungen oder Interviews.</span><span class="sxs-lookup"><span data-stu-id="05462-107">In each stage, candidates move through activities like screening calls, assessments, or the scheduling of interviews.</span></span> <span data-ttu-id="05462-108">Nachdem sich die Kandidaten beworben haben, erhalten Sie eine E-Mail mit der Bitte, sich bei Attract anzumelden, wo Sie den Status der Stelle, ihrer Bewerbung und die Antworten auf Aufgaben, die ihnen zugewiesen wurde, nachverfolgen können.</span><span class="sxs-lookup"><span data-stu-id="05462-108">After they apply, candidates get an email inviting them to sign in to Attract, where they can follow the status of the job, their application, and respond to any tasks that are assigned to them.</span></span>
 

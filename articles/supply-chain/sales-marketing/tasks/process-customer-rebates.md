@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8278a57271314104c36b074c7a7ee422751f2c19
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5c2235fd8a1d495f0321a84fd63b98f699da34de
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="generate-and-process-customer-rebates"></a><span data-ttu-id="39518-103">Debitorenrückvergütungen generieren und verarbeiten</span><span class="sxs-lookup"><span data-stu-id="39518-103">Generate and process customer rebates</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="39518-104">Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgenerierung so weit des Übergebens sie als Abgrenzungen zu Debitoren verarbeitet.</span><span class="sxs-lookup"><span data-stu-id="39518-104">This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable.</span></span> <span data-ttu-id="39518-105">Sie läuft Sie durch ein besonderes Beispiel seitens, um zu erläutern, wie die verschiedenen Bedingungen auf den Rückvergütungspositionen die Endbetrag auswirken, die den Debitor gutgeschrieben werden.</span><span class="sxs-lookup"><span data-stu-id="39518-105">It walks you through a specific example to explain how the various conditions on the rebate lines affect the final amounts that will be credited to the customer.</span></span> <span data-ttu-id="39518-106">Sie müssen das USMF-Demodatunternehmen verwenden und führen die folgenden Aufgaben von, bevor Sie Handbuch starten: (1) Für die der Debitorenparameterseite und erweitern die Registerkarte Preise und dann die Preisdetailregisterkarte und prüfen, ob die aktivierens-Preisdetailoption auf "Ja" festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="39518-106">You need to use the USMF demo data company, and carry out the following tasks before you start the guide: (1) Go to the Accounts receivable parameters page, and expand the Prices tab and then the Price details tab, and check that the Enable price details option is set to Yes.</span></span> <span data-ttu-id="39518-107">(2) Die Seite "Rückvergütungsvereinbarungen" aufrufen und die Debitorenrückvergütungsvereinbarung auswählen: USMF-000001.</span><span class="sxs-lookup"><span data-stu-id="39518-107">(2) Go to the Rebate agreements page and select the customer rebate agreement: USMF-000001.</span></span> <span data-ttu-id="39518-108">Wenn das Workflowgenehmigungsstatusfeld nicht zu genehmigtem festgelegt wird, benötigen Sie auf Prüfung im Aktivitätsbereich, um ihn zu genehmigen.</span><span class="sxs-lookup"><span data-stu-id="39518-108">If the Workflow approval status field is not set to Approved, you need click Validation on the Action pane to approve it.</span></span>
 

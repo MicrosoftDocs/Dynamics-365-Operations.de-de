@@ -16,16 +16,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 40415cb3a2d0684ce137eb546b906583d5ad0c98
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7f7ae1baf4c79b7938fcf666e43e8e71087a4f64
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="tax-reimbursement-documents-for-hungary"></a><span data-ttu-id="b3f12-103">Steuerrückerstattungsdokumente für Ungarn</span><span class="sxs-lookup"><span data-stu-id="b3f12-103">Tax reimbursement documents for Hungary</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="set-up-parameters-for-tax-reimbursement-documents"></a><span data-ttu-id="b3f12-104">Parameter für Steuerrückerstattungsdokumente einrichten</span><span class="sxs-lookup"><span data-stu-id="b3f12-104">Set up parameters for tax reimbursement documents</span></span>
 

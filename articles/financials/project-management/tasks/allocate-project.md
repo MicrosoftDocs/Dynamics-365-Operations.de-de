@@ -17,15 +17,15 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a253a37bc83482c5bc971cad585e18ccb230b16f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f1d6121ecadc7ebb4d41139d0505ba35790eee55
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a><span data-ttu-id="cee38-103">Zuweisen eines Projektbudgets oder einer Budgetüberarbeitung zu Perioden</span><span class="sxs-lookup"><span data-stu-id="cee38-103">Allocate a project budget or budget revision across periods</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cee38-104"> Nachdem Sie ein Projektbudget oder eine Überarbeitung eine Projektbudgets eingegeben haben, und bevor Sie sie zur Genehmigung übermitteln, können Sie die Beträge zu Perioden zuordnen.</span><span class="sxs-lookup"><span data-stu-id="cee38-104">After you enter a project budget or project budget revision, and before you submit it for approval, you can allocate the amounts across periods.</span></span> <span data-ttu-id="cee38-105">Wenn das Budget oder die Budgetüberarbeitung abgelehnt wird, können Sie die Beträge auch zuweisen, bevor Sie sie erneut übermitteln.</span><span class="sxs-lookup"><span data-stu-id="cee38-105">If the budget or budget revision is rejected, you can also allocate the amounts before you resubmit it.</span></span> 
 

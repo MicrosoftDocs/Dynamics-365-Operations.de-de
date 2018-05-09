@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec30fc5e4d3289264da0e40dc981c597c04f4c15
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dda5b8e1f970a0de4c362cb825947f0fde4f41d9
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="manage-leave-of-absence"></a><span data-ttu-id="2dd71-103">Beurlaubung verwalten</span><span class="sxs-lookup"><span data-stu-id="2dd71-103">Manage leave of absence</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2dd71-104">Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung von Sonderurlaubs-Datensätzen für Mitarbeiter.</span><span class="sxs-lookup"><span data-stu-id="2dd71-104">This procedure walks through the creation of employee leave records.</span></span> <span data-ttu-id="2dd71-105">Sie können Abwesenheitszeit nach Ursachen nachverfolgen. Dazu gehören medizinischen, pädagogischen oder elterliche Aktivitäten.</span><span class="sxs-lookup"><span data-stu-id="2dd71-105">You can track leave time for reasons that include medical, educational, or parental activities.</span></span> <span data-ttu-id="2dd71-106">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="2dd71-106">The demo data company used to create this procedure is USMF.</span></span>
 

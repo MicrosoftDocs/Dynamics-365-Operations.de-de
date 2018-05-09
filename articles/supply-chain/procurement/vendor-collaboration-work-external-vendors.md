@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0c035f73fb35c6390be3c665c2645b1fdc411650
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-external-vendors"></a><span data-ttu-id="f17ff-103">Kreditorenzusammenarbeit mit externen Kreditoren</span><span class="sxs-lookup"><span data-stu-id="f17ff-103">Vendor collaboration with external vendors</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f17ff-104">Das Modul **Kreditorenzusammenarbeit** richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 for Finance and Operations haben.</span><span class="sxs-lookup"><span data-stu-id="f17ff-104">The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="f17ff-105">Es erlaubt es Kreditoren, mit Bestellungen, Rechnungen, Lieferbestandsinformationen und Angebotsanforderungen zu arbeiten, und es ermöglicht ihnen auch den Zugriff auf Teile ihrer Kreditorenmasterdaten.</span><span class="sxs-lookup"><span data-stu-id="f17ff-105">It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data.</span></span> <span data-ttu-id="f17ff-106">In diesem Thema wird erklärt, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitsschnittstelle verwenden, um mit Bestellungen, Angebotsanforderungen und Lieferbestand zu arbeiten.</span><span class="sxs-lookup"><span data-stu-id="f17ff-106">This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory.</span></span> <span data-ttu-id="f17ff-107">Außerdem wird erklärt, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden, und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten.</span><span class="sxs-lookup"><span data-stu-id="f17ff-107">It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.</span></span>
 

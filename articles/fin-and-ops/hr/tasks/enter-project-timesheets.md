@@ -17,15 +17,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fdc9567040a2ea4e50325c98a2da19da039586bb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b1ccaeffde4c288667fe797d07e08b5a346b4716
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="enter-project-timesheets"></a><span data-ttu-id="c0a0d-103">Arbeitsnachweise des Projekts eingeben</span><span class="sxs-lookup"><span data-stu-id="c0a0d-103">Enter project timesheets</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c0a0d-104">In dieser Prozedur erstellen Sie einen Arbeitszeitnachweis, indem Sie ein leeres Arbeitszeitnachweisformular verwenden.</span><span class="sxs-lookup"><span data-stu-id="c0a0d-104">This procedure lets you create a timesheet by using an empty timesheet form.</span></span> <span data-ttu-id="c0a0d-105">Der neue Arbeitszeitnachweis kann auf Informationen aus einem vorherigen Arbeitszeitnachweis auf aus Projekt- und Aktivitätszuweisungen auf der Seite "Eigene Favoriten" basieren.</span><span class="sxs-lookup"><span data-stu-id="c0a0d-105">The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favorites page.</span></span> <span data-ttu-id="c0a0d-106">Standardmäßig werden auf der Listenseite "Alle Arbeitszeitnachweise" alle Arbeitszeitnachweise für die aktuelle Periode angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c0a0d-106">By default, the All timesheets list page displays all your timesheets for the current period.</span></span> <span data-ttu-id="c0a0d-107">Sie können über die Dropdownliste für das Feld "Anzeigen" auf der Seite "Eigene Arbeitszeitnachweise" die Arbeitszeitnachweise nach Zeitraum oder Projekt filtern oder Arbeitszeitnachweise anzeigen, die im Auftrag anderer Arbeitskräfte erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="c0a0d-107">You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers.</span></span> <span data-ttu-id="c0a0d-108">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USSI.</span><span class="sxs-lookup"><span data-stu-id="c0a0d-108">The demo data company used to create this procedure is USSI.</span></span> <span data-ttu-id="c0a0d-109">Um diese Prozedur zu starten, wechseln Sie zu "Projektverwaltung und Buchhaltung" > "Arbeitszeitnachweis" > "Eigene Arbeitszeitnachweise".</span><span class="sxs-lookup"><span data-stu-id="c0a0d-109">To begin this procedure, go to Project management and accounting > Timesheets >My timesheets</span></span>
 

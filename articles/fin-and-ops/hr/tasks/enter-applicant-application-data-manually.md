@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0da2c4e308ef377b7657f0905fec56e47f27b99
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a9ee95b178b3e304749b5fda2cefc6ead8be953d
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="enter-applicant-and-application-data-manually"></a><span data-ttu-id="4fa0f-103">Bewerber- und Anwendungsdaten manuell eingeben</span><span class="sxs-lookup"><span data-stu-id="4fa0f-103">Enter applicant and application data manually</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4fa0f-104">Im folgenden Verfahren, wird dargestellt, wie Sie Informationen über Bewerber und deren Bewerbung manuell verwalten.</span><span class="sxs-lookup"><span data-stu-id="4fa0f-104">This procedure shows how to manually maintain information about applicants and their application.</span></span>   <span data-ttu-id="4fa0f-105">Sie können die persönlichen Daten, Befragungsdatumsangaben und -zeiten, Referenzen, Kompetenzen und Anpassungsersuchen für Bewerber eingeben und verwalten.</span><span class="sxs-lookup"><span data-stu-id="4fa0f-105">You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants.</span></span> <span data-ttu-id="4fa0f-106">Sie können außerdem den Status der Bewerbungen der Bewerber aktualisieren und Briefe oder E-Mail-Nachrichten für die Kommunikation mit Bewerbern erstellen.</span><span class="sxs-lookup"><span data-stu-id="4fa0f-106">You can also update the status of applicants’ applications for employment and create letters or email messages to communicate with applicants.</span></span> <span data-ttu-id="4fa0f-107">Wenn Sie einen Bewerberdatensatz erstellen, wird ein Personendatensatz für diesen Bewerber im globalen Adressbuch erstellt.</span><span class="sxs-lookup"><span data-stu-id="4fa0f-107">When you create an applicant record, a person record for that applicant is created in the global address book.</span></span>       <span data-ttu-id="4fa0f-108">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="4fa0f-108">The demo data company used to create this procedure is USMF.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: db6c78942d1824adf82869b1258f00a18526058f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 98f6eaf3a3d4754a4443e7f5214f97ea87b6f435
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a><span data-ttu-id="5e97a-103">Produkt mithilfe der Kategoriehierarchien klassifizieren</span><span class="sxs-lookup"><span data-stu-id="5e97a-103">Classify a product using category hierarchies</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5e97a-104">Nutzen Sie Kategoriehierarchien, um Produkte für den Export, die Beschaffung, den Verkauf oder andere Zwecke zu klassifizieren.</span><span class="sxs-lookup"><span data-stu-id="5e97a-104">Use category hierarchies to classify products for export, procurement, sales, or other purposes.</span></span> <span data-ttu-id="5e97a-105">Diese Aufgabe wird in der Regel von einem Produktmanager ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="5e97a-105">This task is typically performed by a product manager.</span></span> <span data-ttu-id="5e97a-106">Das Beispiel verwendet die Produktnummer M0009 im Demodatenunternehmen USMF.</span><span class="sxs-lookup"><span data-stu-id="5e97a-106">The example uses product number M0009 in demo data company USMF.</span></span>
 

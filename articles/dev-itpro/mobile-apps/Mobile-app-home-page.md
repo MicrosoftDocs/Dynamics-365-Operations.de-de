@@ -18,16 +18,16 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4736a7041c746350fa073bd58929c840f7689bf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0a39d137313114181d761b1320fab46651edde87
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="mobile-app-home-page"></a><span data-ttu-id="723b9-103">Mobile App-Startseite</span><span class="sxs-lookup"><span data-stu-id="723b9-103">Mobile app home page</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="723b9-104">In diesem Thema wird die mobile Microsoft Dynamics 365 for Unified Operations-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.</span><span class="sxs-lookup"><span data-stu-id="723b9-104">This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.</span></span>
 

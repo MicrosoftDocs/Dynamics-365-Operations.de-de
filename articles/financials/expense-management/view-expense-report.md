@@ -17,16 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bc2431a8008ce6518974e240d12dc07f097bdbb0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1047af93727f98fc0f15a82c93b388de5d9860f0
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-an-expense-report"></a><span data-ttu-id="aa0c5-103">Anzeigen einer Spesenabrechnung</span><span class="sxs-lookup"><span data-stu-id="aa0c5-103">View an expense report</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="aa0c5-104">Wenn Sie eine Abfrage vornehmen, um Buchungen im Hauptbuch oder Beschaffung anzeigen, könnte die Abfrage zu vielen Informationen zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="aa0c5-104">When you run a query to view transactions in General ledger or Procurement and sourcing, the query might return too much information.</span></span> <span data-ttu-id="aa0c5-105">Daher sollten Sie die Suche einschränken.</span><span class="sxs-lookup"><span data-stu-id="aa0c5-105">Therefore, you might want to narrow your search.</span></span> <span data-ttu-id="aa0c5-106">Um die benötigten Informationen abzurufen, können Sie Detailinformationen zu einer Buchung und die dazugehörige Spesenabrechnung anzeigen.</span><span class="sxs-lookup"><span data-stu-id="aa0c5-106">To get the information that you require, you can drill down into a transaction to see the expense report that it appeared on.</span></span>
 

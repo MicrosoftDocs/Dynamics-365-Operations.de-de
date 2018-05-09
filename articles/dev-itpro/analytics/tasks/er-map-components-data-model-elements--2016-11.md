@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8b32b32a2cc8f7ac36e6c27ab17e550b5e3bd17
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 921e00051e8d9647f16b1e29dfbda8821f28c7e5
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="map-components-of-the-created-format-to-data-model-elements-for-electronic-reporting-er"></a><span data-ttu-id="a4fa9-103">Zuordnen von Komponenten des erstellten Formats zu Datenmodellelementen für elektronische Berichterstellung</span><span class="sxs-lookup"><span data-stu-id="a4fa9-103">Map components of the created format to data model elements for electronic reporting (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a4fa9-104">Die folgende Prozedur zeigt, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder der Rolle „Entwickler für elektronische Berichterstellung” Datenmodellelemente Komponenten der erstellten Elektronischen Berichterstellungs-(ER)-Konfiguration zuordnen kann, die ein elektronisches Dokumentformat für die Zahlungsgeschäftsdomäne definiert.</span><span class="sxs-lookup"><span data-stu-id="a4fa9-104">The following procedure shows how a user in either the System administrator or Electronic reporting developer role can map data model elements to components of the created Electronic reporting (ER) configuration, which defines an electronic document format for the payments business domain.</span></span> <span data-ttu-id="a4fa9-105">Dieses Format wird später verwendet, um elektronische Dokumente zur Verarbeitung von Zahlungen zu generieren.</span><span class="sxs-lookup"><span data-stu-id="a4fa9-105">This format will be used later to generate electronic documents for processing payments.</span></span> <span data-ttu-id="a4fa9-106">In diesem Beispiel erstellen Sie eine Formatkonfiguration für das Beispielunternehmen „Litware, Inc.”.</span><span class="sxs-lookup"><span data-stu-id="a4fa9-106">In this example, you will create a format configuration for the sample company, ‘Litware, Inc.’.</span></span> <span data-ttu-id="a4fa9-107">Diese Schritte können an einem beliebigen Unternehmen ausgeführt werden, da die ER-Konfiguration von allen Unternehmen genutzt werden.</span><span class="sxs-lookup"><span data-stu-id="a4fa9-107">These steps can be performed in any company as ER configurations are shared for all companies.</span></span> <span data-ttu-id="a4fa9-108">Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine Formatkonfiguration erstellen” abschließen.</span><span class="sxs-lookup"><span data-stu-id="a4fa9-108">To complete these steps, you must first complete the steps in the “Create a format configuration” task guide.</span></span>
 

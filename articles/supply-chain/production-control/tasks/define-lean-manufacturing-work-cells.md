@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 953520ec7525d85baee6baf0b70930e52120d6c0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b79362942663583b5f438e0a54fd4960ca7ef919
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-lean-manufacturing-work-cells"></a><span data-ttu-id="144de-103">Lean Manufacturing-Arbeitsgruppe definieren</span><span class="sxs-lookup"><span data-stu-id="144de-103">Define lean manufacturing work cells</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="144de-104">Eine Arbeitsgruppe ist ein Form einer Ressourcengruppen, die in den Lean Manufacturing-Verarbeitungsaktivitäten verwendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="144de-104">A work cell is a specific form of resource groups that can be used in lean manufacturing process activities.</span></span> <span data-ttu-id="144de-105">Arbeitsgruppen haben Eingangs- und Ausgangslagerplätze und eine Kapazitätsdefinition auf Basis eines Produktionsflussmodells.</span><span class="sxs-lookup"><span data-stu-id="144de-105">Work cells have input and output locations and a capacity definition based on a production flow model.</span></span> <span data-ttu-id="144de-106">Weitere Informationen zu den grundlegende Konzepten von Lean-Manufacturing-Arbeitsgruppen und Kapazitätsberechnungen finden Sie in den Whitepapers zum Lean-Manufacturing.</span><span class="sxs-lookup"><span data-stu-id="144de-106">To learn more about the basic concepts of lean manufacturing work cells and capacity calculations, see the white papers on Lean manufacturing.</span></span> <span data-ttu-id="144de-107">Das Demodatenunternehmen in dieser Prozedur ist USMF.</span><span class="sxs-lookup"><span data-stu-id="144de-107">The demo data company used to create this procedure is USMF</span></span>
 

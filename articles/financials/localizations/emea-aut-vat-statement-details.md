@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5a7560d9eefd830fc23b6c817397e8ed9f98d73e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6cf0c54c8428ad8b9bed4640ab9aa3aa2dcf73b4
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vat-statement-details-for-austria"></a><span data-ttu-id="31ba4-103">MwSt-Berichtdetails für Österreich</span><span class="sxs-lookup"><span data-stu-id="31ba4-103">VAT statement details for Austria</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="31ba4-104">In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird.</span><span class="sxs-lookup"><span data-stu-id="31ba4-104">This topic explains how to set up the VAT statement for legal entities in Austria.</span></span>
 

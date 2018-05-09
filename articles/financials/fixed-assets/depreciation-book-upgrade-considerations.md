@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dfba6a237548d962bd3677d20da3745f59638ede
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7093023713a81980010b8254708801b58bc68475
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="depreciation-book-upgrade-overview"></a><span data-ttu-id="cf60e-105">Übersicht zum Abschreibungsbuchupgrade</span><span class="sxs-lookup"><span data-stu-id="cf60e-105">Depreciation book upgrade overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="cf60e-106">In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher.</span><span class="sxs-lookup"><span data-stu-id="cf60e-106">In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books.</span></span> <span data-ttu-id="cf60e-107">In Microsoft Dynamics 365 for Operations (1611) wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als ein Buch bekannt ist.</span><span class="sxs-lookup"><span data-stu-id="cf60e-107">In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.</span></span> <span data-ttu-id="cf60e-108">Dieses Thema bietet mehrere Dinge, die für das Upgrade zu berücksichtigen sind.</span><span class="sxs-lookup"><span data-stu-id="cf60e-108">This topic provides some things to consider for the upgrade.</span></span> 
 
@@ -62,24 +62,24 @@ ms.lasthandoff: 04/13/2018
 <span data-ttu-id="cf60e-145">Die Parameter befinden sich am Anfang der Klasse  ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans.</span><span class="sxs-lookup"><span data-stu-id="cf60e-145">The parameters are located at the beginning of the ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans class.</span></span> 
 
 <span data-ttu-id="cf60e-146">*//Geben Sie einen vorzuziehenden der Zuteilung von Belege an*  
-*// true, wenn Sie einen vorhandenen Nummernkreiscode verwenden möchten* 
+ *// true, wenn Sie einen vorhandenen Nummernkreiscode verwenden möchten* 
 *false, wenn Sie den vom System definierten Nummernkreis (Standard) verwende möchten*  const  boolesches NumberSequenceUseExistingCode = false;</span><span class="sxs-lookup"><span data-stu-id="cf60e-146">*// Specify a preferable approach of vouchers allocation* 
-*// true, if you want to use an existing number sequence code* 
-*// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
+ *// true, if you want to use an existing number sequence code* 
+ *// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
 
 <span data-ttu-id="cf60e-147">*//Wenn der vom System definierte Nummernkreisansatz verwendet wird, geben Sie die Parameter für die Nummersequenz an*
-*//Ein neuer Nummernkreis wird mit mit diesen Parametern erstellt.*</span><span class="sxs-lookup"><span data-stu-id="cf60e-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
-*// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="cf60e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="cf60e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
+ *//Ein neuer Nummernkreis wird mit mit diesen Parametern erstellt.*</span><span class="sxs-lookup"><span data-stu-id="cf60e-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
+ *// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="cf60e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="cf60e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
 
 <span data-ttu-id="cf60e-149">*//Wenn der vorhandene Nummernkreisansatz verwendet wird, geben Sie den bestehenden Nummernsequenzcode ein* 
-*//Beleg-Zuweisung geht Zeile-für-Zeile für bestehende Nummernsequenzen.*</span><span class="sxs-lookup"><span data-stu-id="cf60e-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
-*// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="cf60e-150">const str = NumberSequenceExistingCode ''; *//Geben Sie den Umfang des vorhandenen Nummernkreiscode an* 
+ *//Beleg-Zuweisung geht Zeile-für-Zeile für bestehende Nummernsequenzen.*</span><span class="sxs-lookup"><span data-stu-id="cf60e-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
+ *// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="cf60e-150">const str = NumberSequenceExistingCode ''; *//Geben Sie den Umfang des vorhandenen Nummernkreiscode an* 
 \**//true, wenn der Nummernkreis der angegebenen Anzahl geteilt wird* 
-*//false wenn der angegebene Nummernkreis pro Unternehmen ist* 
+ *//false wenn der angegebene Nummernkreis pro Unternehmen ist* 
  *// Der vom System definierte Nummernkreis wird verwendet, wenn ein Nummernkreiscode mit dem angegebenen Bereich nicht gefunden wird.*</span><span class="sxs-lookup"><span data-stu-id="cf60e-150">const str NumberSequenceExistingCode = ''; *// Specify the scope of the existing number sequence code* 
-*// true, if the specified number sequence is shared* 
-*// false, if the specified number sequence is per-company* 
-*// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="cf60e-151">const boolean NumberSequenceExistingIsShared = true;</span><span class="sxs-lookup"><span data-stu-id="cf60e-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
+ *// true, if the specified number sequence is shared* 
+ *// false, if the specified number sequence is per-company* 
+ *// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="cf60e-151">const boolean NumberSequenceExistingIsShared = true;</span><span class="sxs-lookup"><span data-stu-id="cf60e-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
 
 <span data-ttu-id="cf60e-152">Erstellen Sie das Projekt erneut, das die Klasse enthält, nachdem die Konstanten geändert wurden.</span><span class="sxs-lookup"><span data-stu-id="cf60e-152">Rebuild the project that contains the class after the constants have been modified.</span></span> 
 

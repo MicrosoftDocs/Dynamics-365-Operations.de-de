@@ -18,16 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 800ba4d7b652feff91c28a0038dee31a02683381
-ms.openlocfilehash: e852aa0ff2eb9136a38dc1c06d5654670f128263
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9b0960688fc5f6b37d5e80079c389ea5d18b2766
 ms.contentlocale: de-de
-ms.lasthandoff: 04/24/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="print-a-separate-label-for-credit-memos-that-originate-from-sales"></a><span data-ttu-id="97776-103">Eine separate Beschriftung für die Gutschriften, die vom Vertrieb stammen, drucken</span><span class="sxs-lookup"><span data-stu-id="97776-103">Print a separate label for credit memos that originate from sales</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="97776-104">In diesem Artikel wird beschrieben, wie die Beschriftung definiert wird, die auf Gutschriften erscheinen, die vom Vertrieb stammen.</span><span class="sxs-lookup"><span data-stu-id="97776-104">This article explains how to specify the label that appears on credit memos that originate from sales.</span></span>
 

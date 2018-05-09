@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bb24cf68912b994842f17df37d01c0046587a5eb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3f4bd0a7765a423fd515058a3615092bcabf1b6a
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-purchase-return-order"></a><span data-ttu-id="0f44f-103">Einkaufsrücklieferung erstellen</span><span class="sxs-lookup"><span data-stu-id="0f44f-103">Create a purchase return order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0f44f-104">Diese Prozedur zeigt Ihnen, wie eine Reklamation erstellt wird, indem die Aktivität "Gutschrift" verwendet wird, um Positionen von einem Kreditorenrechnungsdokument zu einer neuen Bestellung zu kopieren.</span><span class="sxs-lookup"><span data-stu-id="0f44f-104">This procedure shows you how to create a purchase return order by using the Credit note action to copy lines from a vendor invoice document to a new PO.</span></span> <span data-ttu-id="0f44f-105">Sie zeigt Ihnen auch, wie der Auftrag bestätigt und die Lieferung der Waren zurück zum Kreditor verarbeitet wird.</span><span class="sxs-lookup"><span data-stu-id="0f44f-105">It also shows you how to confirm the order and process shipment of the goods back to the vendor.</span></span> <span data-ttu-id="0f44f-106">Das Beispiel, das in dieser Prozedur angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="0f44f-106">The example shown in this procedure can be used in the USMF demo data company.</span></span> <span data-ttu-id="0f44f-107">Normalerweise wird diese Aufgabe von einem Einkaufsvertreter ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="0f44f-107">This task would typically be carried out by a purchasing agent.</span></span>
 

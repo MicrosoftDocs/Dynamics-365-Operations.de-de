@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9832a60ee703878701927b66b0b4b63cb7efb985
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e7813f9add1c8cf3c2f22aff826daf22f54f348e
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="count-inventory-in-a-warehouse"></a><span data-ttu-id="a3f67-103">Bestand an einem Lagerort zählen</span><span class="sxs-lookup"><span data-stu-id="a3f67-103">Count inventory in a warehouse</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a3f67-104">Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Buchens einer Lagerinventurerfassung, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen.</span><span class="sxs-lookup"><span data-stu-id="a3f67-104">This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse.</span></span> <span data-ttu-id="a3f67-105">Die Prozedur ist auf die Funktion "Grundlegendes Warehousing", die sich im Inventurverwaltungsmodul befindet, anwendbar. Jedoch nicht auf die Warehousing-Funktion, die im Lagerortverwaltungsmodul verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="a3f67-105">The procedure applies to “basic warehousing” functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module.</span></span> <span data-ttu-id="a3f67-106">Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="a3f67-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="a3f67-107">Wenn Sie eigene Daten verwenden, sollten Sie sicherstellen, dass Sie Produkte und Lagerplatzeinstellung eingerichtet haben und dass Sie eine Lagererfassung für Inventurerfassungen erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="a3f67-107">If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals.</span></span> <span data-ttu-id="a3f67-108">Die Lagerinventur wird in der Regel von einem Lagerortmitarbeiter ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="a3f67-108">Inventory counting is normally carried out by a warehouse employee.</span></span>
 

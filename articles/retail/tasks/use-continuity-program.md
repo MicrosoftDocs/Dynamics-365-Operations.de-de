@@ -17,15 +17,15 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a3875f02a01687b35d26fbc2807e8b11432e9adc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 38d9f3a2e58d121e58ff0117ea4bcf480edb241c
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="use-a-continuity-program"></a><span data-ttu-id="46312-103"> Ein Anschlussprogramm verwenden</span><span class="sxs-lookup"><span data-stu-id="46312-103">Use a continuity program</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="46312-104">Diese Verfahren zeigt den Verkauf eines Kontinuitätsprogramms und die Verarbeitung der zugehörigen Aufträge.</span><span class="sxs-lookup"><span data-stu-id="46312-104">This procedure walks through selling a continuity program and processing related sales orders.</span></span> <span data-ttu-id="46312-105">Damit sie dieses Verfahren abschließen können, muss der Benutzer als Callcenterbenutzer eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="46312-105">To complete this procedure, the user has to be set up as a call center user.</span></span> <span data-ttu-id="46312-106">Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="46312-106">This procedure uses the USRT demo data company.</span></span>
 

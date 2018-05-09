@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 11e506c41eb5e8d5bd28db8e6d5ca51ff9e72a62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ae594d55b1a14ab4e832658aaa12165f1be2b303
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-work-class"></a><span data-ttu-id="e4dff-103">Eine Arbeitsklasse erstellen</span><span class="sxs-lookup"><span data-stu-id="e4dff-103">Create a work class</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e4dff-104">Dieses Verfahren zeigt Ihnen an, wie ein Arbeitsklasse eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="e4dff-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="e4dff-105">Arbeitsklassen werden verwendet, um den Typ der Arbeitsauftragspositionen zuzuweisen und/oder einzuschränken, die ein Lagerarbeiter auf einem mobilen Gerät verarbeiten kann.</span><span class="sxs-lookup"><span data-stu-id="e4dff-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="e4dff-106">Die Positionen, für die eine Arbeitskraft verarbeiten kann, werden von Arbeitsklassen auf Menüeinträge des mobilen Geräts, denen der Lagerarbeiter Zugriff hat zu und der Arbeitsklasse ermittelt, die sowohl für den Arbeitspositionen angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="e4dff-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that’s specified on the work lines.</span></span> <span data-ttu-id="e4dff-107">Arbeitsklassen können auch verwendet werden, um den gesetzten Lagerplatz für eine Arbeitsauftragsposition zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="e4dff-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="e4dff-108">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.</span><span class="sxs-lookup"><span data-stu-id="e4dff-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="e4dff-109">Diese Prozedur ist für die Lagerverwaltung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="e4dff-109">This procedure is intended for the warehouse manager.</span></span>
 

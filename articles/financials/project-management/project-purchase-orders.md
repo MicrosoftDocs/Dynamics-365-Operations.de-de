@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4a69b68fdf9b8a4d6162fe132469d51ff7ff14ca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a900ae4c81a4dbb654a4c395cd62f0a19a4acd67
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-orders-for-a-project"></a><span data-ttu-id="868f9-104">Bestellungen für ein Projekt</span><span class="sxs-lookup"><span data-stu-id="868f9-104">Purchase orders for a project</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="868f9-105">In diesem Artikel werden die verschiedenen Methoden beschrieben, die Sie verwenden können, um Bestellungen für ein Projekt zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="868f9-105">This article describes the various methods that you can use to create purchase orders for a project.</span></span> <span data-ttu-id="868f9-106">Die Methode, die Sie verwenden, wird durch den Zweck der Bestellung, durch den Verbrauchszeitpunkt der eingekauften Artikel und dem Zeitpunkt der Fakturierung für ein Projekt bestimmt.</span><span class="sxs-lookup"><span data-stu-id="868f9-106">The method that you use depends on the purpose of the purchase order, and when the purchased items are consumed and charged to a project.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e4b08aa7376bee6526d1993ee38916b60d0e0648
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a0c440250588e38b4bc8ebdb6830b026361f1d96
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="check-the-availability-of-stock"></a><span data-ttu-id="9db01-103">Überprüfung der Bestandsverfügbarkeit</span><span class="sxs-lookup"><span data-stu-id="9db01-103">Check the availability of stock</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9db01-104">Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lagerbestand für eine bestimmte Artikelnummer überprüfen.</span><span class="sxs-lookup"><span data-stu-id="9db01-104">This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number.</span></span> <span data-ttu-id="9db01-105">Darüber hinaus zeigt sie Ihnen, wie Sie Lieferinformationen zu einem Artikel abrufen.</span><span class="sxs-lookup"><span data-stu-id="9db01-105">It also shows you how to get supply information related to an item.</span></span> <span data-ttu-id="9db01-106">Physischer, verfügbare Lagerbestand ist der verfügbare Lagerbestand, der verfügbar ist – d. h. er ist gekauft, empfangen und erfasst worden.</span><span class="sxs-lookup"><span data-stu-id="9db01-106">Physical on-hand inventory is the on-hand inventory that’s available – that is, it’s purchased, received and registered.</span></span> <span data-ttu-id="9db01-107">Der verfügbare Lagerbestand umfasst den verfügbaren Lagerbestand, aber auch den Lagerbestand, der bestellt wurde und erwartet wird, der aber noch nicht empfangen oder erfasst wurde.</span><span class="sxs-lookup"><span data-stu-id="9db01-107">On-hand inventory includes the available on-hand inventory, but also the inventory that’s been ordered and is expected, but not yet received or registered.</span></span> <span data-ttu-id="9db01-108">Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="9db01-108">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="9db01-109">Wenn Sie USMF verwenden, können Sie die Beispielswerte verwenden, die angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="9db01-109">If you are using USMF you can use the example values that are shown.</span></span> <span data-ttu-id="9db01-110">Diese Aufgaben werden normalerweise von einer Lagerarbeitskraft ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="9db01-110">These tasks would typically be carried out by a warehouse worker.</span></span>
 

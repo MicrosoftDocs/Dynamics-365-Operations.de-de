@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6de8dbd33a02183ee8bafca720c3738e8eac44e8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fcf4ebcb8a9c27961e250177d4254f28aaefc883
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a><span data-ttu-id="0022c-103">Mehrwertsteuer-Ausgleichsperioden einrichten</span><span class="sxs-lookup"><span data-stu-id="0022c-103">Set up sales tax settlement periods</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0022c-104">Mehrwertsteuer-Abrechnungszeiträume enthalten Informationen über die Periodenintervalle für die die Mehrwertsteuer gemeldet und abgeführt werden muss.</span><span class="sxs-lookup"><span data-stu-id="0022c-104">Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid.</span></span> <span data-ttu-id="0022c-105">Ein Abrechnungsprozess kann für einen Abrechnungszeitraum für ein bestimmtes Datumsintervall ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="0022c-105">A settlement process can be run for a settlement period for a specific date interval.</span></span> <span data-ttu-id="0022c-106">Alle Steuercodes, die dem Abrechnungszeitraum zugeordnet sind, werden ausgeglichen.</span><span class="sxs-lookup"><span data-stu-id="0022c-106">All tax codes associated with the settlement period will be settled.</span></span> <span data-ttu-id="0022c-107">Je nach den Einstellungen der zugehörigen "Mehrwertsteuerbehörde", werden die Steuerverbindlichkeiten entweder zu einem Kreditor oder auf ein "Hauptbuchkonto" gebucht.</span><span class="sxs-lookup"><span data-stu-id="0022c-107">Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.</span></span>
 

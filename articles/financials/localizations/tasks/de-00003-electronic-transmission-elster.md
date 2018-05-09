@@ -16,15 +16,15 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c03d8392171cb17b9076f25958f02f65fe72888e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e2ec815c26b65e2839e46a18d5bb659fe9f8b8a0
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="electronic-transmission-of-vat-declaration-elster-germany"></a><span data-ttu-id="c8eff-103">Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER) (Deutschland)</span><span class="sxs-lookup"><span data-stu-id="c8eff-103">Electronic transmission of VAT declaration (ELSTER) (Germany)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c8eff-104">Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.</span><span class="sxs-lookup"><span data-stu-id="c8eff-104">This procedure walks you through setting electronic tax declaration.</span></span>
 

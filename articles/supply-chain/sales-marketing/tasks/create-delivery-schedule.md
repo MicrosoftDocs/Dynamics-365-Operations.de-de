@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 13add634e275a0156c2c0f87d1fec80385d62fea
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 407337d31e0aa68217a27a5709da16ddc7d6e4a1
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-delivery-schedule"></a><span data-ttu-id="30ae0-103">Lieferzeitplan erstellen</span><span class="sxs-lookup"><span data-stu-id="30ae0-103">Create a delivery schedule</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="30ae0-104">Diese Prozedur zeigt, wie ein Lieferzeitplan für einen Auftrag erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="30ae0-104">This procedure demonstrates how to create a delivery schedule for a sales order.</span></span> <span data-ttu-id="30ae0-105">Ein Lieferzeitplan wird verwendet, wenn eine Menge für einen Auftrag oder ein Angebot angefordert wird, um in mehreren Lieferungen geliefert zu werden.</span><span class="sxs-lookup"><span data-stu-id="30ae0-105">A delivery schedule is used when a quantity on an order or a quotation is requested to be delivered in multiple shipments.</span></span> <span data-ttu-id="30ae0-106">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.</span><span class="sxs-lookup"><span data-stu-id="30ae0-106">You can run this procedure in demo data company USMF or on your own data.</span></span>
 

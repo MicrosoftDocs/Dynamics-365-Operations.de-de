@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0161ac3d67b57484f05a64ab785bbbcc90816ba2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8285305466a3762d3dab8a7975dfa51b994f1e6f
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="bom-calculations-groups"></a><span data-ttu-id="5eab4-105">Stücklistenkalkulationsgruppen</span><span class="sxs-lookup"><span data-stu-id="5eab4-105">BOM calculations groups</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5eab4-106">Dieser Artikel enthält Informationen zu Herstellungskostenkalkulationsgruppen und wie man sie einrichtet.</span><span class="sxs-lookup"><span data-stu-id="5eab4-106">This article provides information about calculation groups for bills of materials (BOMs) and how to set them up.</span></span> <span data-ttu-id="5eab4-107">Um eine Herstellkostenkalkulation auszuführen, müssen Sie entweder Berechnungsgruppen einrichten und sie einzelnen Artikeln zuweisen oder eine Standardberechnungsgruppe festlegen.</span><span class="sxs-lookup"><span data-stu-id="5eab4-107">To run a BOM calculation, you must either set up calculation groups and assign them to individual items, or set a default calculation group.</span></span> <span data-ttu-id="5eab4-108">Die Berechnungseinstellungen einer Berechnungsgruppe dienen dann auf der Seite "Herstellkostenkalkulation" als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation.</span><span class="sxs-lookup"><span data-stu-id="5eab4-108">The calculation settings from the calculation group are then used as default values on the BOM calculation page at the time of BOM calculation.</span></span> 
 

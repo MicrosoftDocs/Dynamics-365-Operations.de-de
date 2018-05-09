@@ -17,15 +17,15 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41db5fa77c020c0929868593fec16223676e5e31
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3106412f24826febb934a728a1810534680061be
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="rename-or-modify-a-project-stage"></a><span data-ttu-id="4fe26-103">Umbenennen oder Ändern einer Projektphase</span><span class="sxs-lookup"><span data-stu-id="4fe26-103">Rename or modify a project stage</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4fe26-104">Projektphasen können zur besseren Übersichtlichkeit des Projektlebenszyklus verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="4fe26-104">Project stages can serve as a guide to the project life cycle.</span></span> <span data-ttu-id="4fe26-105">Sie können die gewünschten Projektphasen für Ihre Projekte auf der Registerkarte Projektphase des Formulars Projektverwaltungs- und Buchhaltungsparameter einrichten.</span><span class="sxs-lookup"><span data-stu-id="4fe26-105">You can define the project stages that you want to include in your projects in the Project stage area in the Project management and accounting parameters page.</span></span> <span data-ttu-id="4fe26-106">Dynamics 365 for Finance and Operations beinhaltet fünf vordefinierte und drei benutzerdefinierte Phasen.</span><span class="sxs-lookup"><span data-stu-id="4fe26-106">Dynamics 365 for Finance and Operations provides five predefined project stages and three user-defined stages.</span></span> <span data-ttu-id="4fe26-107">Sie können den Namen einer Projektphase aktualisieren, die Sie verwenden, um den Fortschritt von Projekten zu verfolgen.</span><span class="sxs-lookup"><span data-stu-id="4fe26-107">You can update the name of a project stage that you are using to track the progress of projects.</span></span> <span data-ttu-id="4fe26-108">Sie können auch Namen für benutzerdefinierte Statusnamen angeben.</span><span class="sxs-lookup"><span data-stu-id="4fe26-108">You can also provide names for user-defined status names.</span></span> <span data-ttu-id="4fe26-109">Diese Aufgabe zeigt, wie eine Projektphase umbenannt oder geändert wird, und verwendet den USSI-Datensatz.</span><span class="sxs-lookup"><span data-stu-id="4fe26-109">This task shows how to rename or modify a project stage and uses the USSI data set.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ad1bd0babbf81e6296c59440cf679f131f9976c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7b2d44b8ee6751516621cbb11148c9a92bdf427a
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-sales-commission-rules"></a><span data-ttu-id="b13a5-103">Vertriebsprovisionsregeln einrichten</span><span class="sxs-lookup"><span data-stu-id="b13a5-103">Set up sales commission rules</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b13a5-104">Dieses Verfahren zeigt Ihnen, wie Vertriebsprovisionsberechnung und die Nachverfolgung aktivieren.</span><span class="sxs-lookup"><span data-stu-id="b13a5-104">This procedure shows you how to set up and enable sales commission calculation and tracking.</span></span> <span data-ttu-id="b13a5-105">Die Prozedur zeig, wie Debitoren- und Artikelprovisionsgruppen erstellt werden und ein ausgewählter Debitor und ein Produkt zu den jeweiligen Gruppen verknüpft werden.</span><span class="sxs-lookup"><span data-stu-id="b13a5-105">The procedure shows how to create both customer and item commission groups, and then how to link a selected customer and product to the respective groups.</span></span> <span data-ttu-id="b13a5-106">Diese Gruppen werden im Formular "Provisionsberechnungseinstellung" verwendet, um einen Debitor, einen Artikel und eine Verkäuferkombination zu erstellen, die mit dem Auftrag übereinstimmen muss, um die Verkäufer für eine Provision zu berechtigen.</span><span class="sxs-lookup"><span data-stu-id="b13a5-106">Those groups are then used in the commission calculation setup to create a customer, item, and sales representatives combination that must be matched by the sales order to entitle the sales people to a commission.</span></span> <span data-ttu-id="b13a5-107">Debitoren- und Artikelprovisionsgruppen zu erstellen ist optional, da die Berechnung der Provision auch für einen einzelnen Debitor und/oder einen Artikel ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="b13a5-107">Creating customer and item commission groups are optional, as the calculation of commission can also be done for an individual customer and/or item.</span></span> <span data-ttu-id="b13a5-108">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.</span><span class="sxs-lookup"><span data-stu-id="b13a5-108">You can run this procedure in demo data company USMF or on your own data.</span></span>
 

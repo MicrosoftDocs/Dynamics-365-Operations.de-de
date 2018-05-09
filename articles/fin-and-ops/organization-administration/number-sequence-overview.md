@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 58069d79f92ce015fe4b11b50fb3348722bca4f8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 13b47d755a122199608ece386f4f764ee580b2ed
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="number-sequences"></a><span data-ttu-id="59aa2-103">Nummernkreise</span><span class="sxs-lookup"><span data-stu-id="59aa2-103">Number sequences</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="59aa2-104">Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Bezeichnern für Masterdatensätze und Buchungsdatensätze, die Bezeichner benötigen.</span><span class="sxs-lookup"><span data-stu-id="59aa2-104">Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.</span></span> <span data-ttu-id="59aa2-105">Ein Masterdatensatz oder Buchungsdatensatz, der eine Kennung erfordert, wird als *Referenz* bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="59aa2-105">A master data record or transaction record that requires an identifier is referred to as a *reference*.</span></span>
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/13/2018
 - <span data-ttu-id="59aa2-127">**Bereich:** Reisekosten und Ausgaben</span><span class="sxs-lookup"><span data-stu-id="59aa2-127">**Area:** Travel and expense</span></span> 
 - <span data-ttu-id="59aa2-128">**Referenz:** Ausgaben-Berichtsnummer</span><span class="sxs-lookup"><span data-stu-id="59aa2-128">**Reference:** Expense report number</span></span> 
 - <span data-ttu-id="59aa2-129">**Umfang:** Juristische Person</span><span class="sxs-lookup"><span data-stu-id="59aa2-129">**Scope:** Legal entity</span></span> 
-- <span data-ttu-id="59aa2-130">**Juristische Person:**CS</span><span class="sxs-lookup"><span data-stu-id="59aa2-130">**Legal entity:** CS</span></span>
+- <span data-ttu-id="59aa2-130">**Juristische Person:** CS</span><span class="sxs-lookup"><span data-stu-id="59aa2-130">**Legal entity:** CS</span></span>
 
 | <span data-ttu-id="59aa2-131">Segmente</span><span class="sxs-lookup"><span data-stu-id="59aa2-131">Segments</span></span>  | <span data-ttu-id="59aa2-132">Segmenttyp</span><span class="sxs-lookup"><span data-stu-id="59aa2-132">Segment type</span></span> | <span data-ttu-id="59aa2-133">Wert</span><span class="sxs-lookup"><span data-stu-id="59aa2-133">Value</span></span>     |
 |-----------|--------------|-----------|
@@ -69,7 +69,7 @@ ms.lasthandoff: 04/13/2018
 <span data-ttu-id="59aa2-148">Im folgenden Beispiel werden Auftragsnummern für die Unternehmenskennung **CEU** eingerichtet.</span><span class="sxs-lookup"><span data-stu-id="59aa2-148">In the following example, sales order numbers are set up for the company ID **CEU**.</span></span> 
 
 - <span data-ttu-id="59aa2-149">**Bereich:** Verkäufe</span><span class="sxs-lookup"><span data-stu-id="59aa2-149">**Area:** Sales</span></span> 
-- <span data-ttu-id="59aa2-150">**Referenz:**Verkaufsauftrag</span><span class="sxs-lookup"><span data-stu-id="59aa2-150">**Reference:** Sales order</span></span> 
+- <span data-ttu-id="59aa2-150">**Referenz:** Verkaufsauftrag</span><span class="sxs-lookup"><span data-stu-id="59aa2-150">**Reference:** Sales order</span></span> 
 - <span data-ttu-id="59aa2-151">**Umfang:** Unternehmen</span><span class="sxs-lookup"><span data-stu-id="59aa2-151">**Scope:** Company</span></span> 
 - <span data-ttu-id="59aa2-152">**Unternehmen:** CEU</span><span class="sxs-lookup"><span data-stu-id="59aa2-152">**Company:** CEU</span></span>
 

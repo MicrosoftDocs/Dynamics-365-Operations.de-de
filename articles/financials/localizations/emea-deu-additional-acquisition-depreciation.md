@@ -18,16 +18,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 79b5759b41e77c1a810cb6811fd709aa7c4268af
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 09ba17d3ac28b630f6193284019b5cd0c9f1ece7
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="additional-acquisition-depreciation"></a><span data-ttu-id="e835e-104">Zusätzliche Anschaffungsabschreibung</span><span class="sxs-lookup"><span data-stu-id="e835e-104">Additional acquisition depreciation</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e835e-105">In diesem Artikel wird beschrieben, wie die Abschreibung für zusätzliche Anschaffungen in Deutschland berechnet wird und gibt ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="e835e-105">This article explains how depreciation is calculated for additional acquisitions in Germany and provides an example.</span></span> <span data-ttu-id="e835e-106">Anschaffungregulierungen für Anlagen müssen so kalkuliert werden, als ob die Regulierungen am ersten Tag des Geschäftsjahres vorgenommen wurden, unabhängig davon, wann die Regulierungsbuchungen tatsächlich erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="e835e-106">Acquisition adjustments for fixed assets must always be calculated as if the adjustments were made on the first day of the business year.</span></span>
 

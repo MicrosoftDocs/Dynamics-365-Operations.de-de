@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7170759f55800e6235a2081e30f6b84620ddaa3d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: eaf74ced27ec46f574b87d6608ea597a33353ec9
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="import-audit-file-configuration-germany"></a><span data-ttu-id="c257d-103">Protokolldateikonfiguration importieren (Deutschland)</span><span class="sxs-lookup"><span data-stu-id="c257d-103">Import audit file configuration (Germany)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c257d-104">Im folgenden Verfahren zeigt, wie das Berichterstellungsdatenmodell "Deutsche Protokolldatei" und Formatkonfigurationen importiert werden.</span><span class="sxs-lookup"><span data-stu-id="c257d-104">This procedure shows how to import the German audit file electronic reporting data model and format configurations.</span></span> <span data-ttu-id="c257d-105">Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit "Deutschland" als Land/Region für die primäre Adresse für die juristischen Person.</span><span class="sxs-lookup"><span data-stu-id="c257d-105">This procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 933875f56b0f47990cb1cb767f84b23b9c9710d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ff11cf7b23c48675b108d7d03d241fcec2cb792a
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a><span data-ttu-id="b4406-103">Lagersuche in der Verkaufsstelle</span><span class="sxs-lookup"><span data-stu-id="b4406-103">Inventory lookup in the Point of Sale</span></span> 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="b4406-104">Mithilfe der Lagersuche in der Verkaufsstelle (POS) können Einzelhändler erstklassige Betriebsprozesse in Echtzeit erreichen und Einblicke erlangen, indem sie Filialen, die POS und das Backoffice verbinden.</span><span class="sxs-lookup"><span data-stu-id="b4406-104">Inventory lookup in the point of sale (POS) helps retailers achieve real-time operational excellence and gain insights by connecting stores, the POS, and the back office.</span></span> <span data-ttu-id="b4406-105">Diese Funktionalität bieten eine genaue Echtzeitansicht des Produktbestands über Filialen und Verteilungszentren hinweg.</span><span class="sxs-lookup"><span data-stu-id="b4406-105">This functionality provides an accurate real-time view of product inventory across stores and distribution centers.</span></span> <span data-ttu-id="b4406-106">Einzelhändler werden zudem darin unterstützt, zusätzliche Effektivität und Kosteneinsparungen zu erreichen, indem sie die Bestandsplanung in Echtzeit verbessern.</span><span class="sxs-lookup"><span data-stu-id="b4406-106">It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time.</span></span>
 

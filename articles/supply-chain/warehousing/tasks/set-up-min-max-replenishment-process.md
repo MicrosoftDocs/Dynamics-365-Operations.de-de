@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 30bff74da8399ddc15f2bc84e83887c8b5e60570
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 09a5bbe7601248fd2635fda4a0d87973a6e1ceba
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a><span data-ttu-id="6c5be-103">Einen Min-Max-Auffüllungsprozess einrichten</span><span class="sxs-lookup"><span data-stu-id="6c5be-103">Set up a min-max replenishment process</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6c5be-104">Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wird, der die Min./Max.-Auffüllungsstrategie verwendet.</span><span class="sxs-lookup"><span data-stu-id="6c5be-104">This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy.</span></span> <span data-ttu-id="6c5be-105">Wenn Lagerbestand unter der Untergrenze liegt, wird Arbeit erstellt, um den Lagerplatz aufzufüllen.</span><span class="sxs-lookup"><span data-stu-id="6c5be-105">When inventory falls below the minimum level, work will be created to replenish the location.</span></span> <span data-ttu-id="6c5be-106">Die Prozedur zeigt auch, wie feste Entnahmeorte verwendet werden, um die Lagerauffüllung zuzulassen, selbst wenn der Lagerbestand unter die Untergrenze sinkt und wie der Auffüllungsprozess aktiviert wird, um mithilfe eines Batchauftrags regelmäßig ausgeführt zu werden.</span><span class="sxs-lookup"><span data-stu-id="6c5be-106">The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job.</span></span> <span data-ttu-id="6c5be-107">Diese Aufgaben werden normalerweise von einem Lagerortleiter ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="6c5be-107">These tasks would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="6c5be-108">Sie können diese Prozedur im USMF-Demodatunternehmen ausführen, unter Verwendung der Beispielswerte in den Hinweisen, oder Sie können sie mit Ihren eigenen Daten ausführen.</span><span class="sxs-lookup"><span data-stu-id="6c5be-108">You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data.</span></span> <span data-ttu-id="6c5be-109">Wenn Sie Ihre eigenen Daten verwenden, stellen Sie sicher, dass Sie einen Lagerort haben, der für Lagerortverwaltungsprozesse aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="6c5be-109">If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.</span></span>
 

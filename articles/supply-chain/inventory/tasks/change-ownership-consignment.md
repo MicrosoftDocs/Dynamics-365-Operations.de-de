@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e3058987dcd511c59a9eae1b79ef5d1b6d4b3d68
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 89e1926b070beab6b30d82be2f52a75a68544e27
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a><span data-ttu-id="292b7-103">Besitz des Lagerbestands auf Grundlage des Produktionsbedarfs ändern</span><span class="sxs-lookup"><span data-stu-id="292b7-103">Change the ownership of consignment inventory based on production demand</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="292b7-104">Dieses Verfahren zeigt, wie Sie den Eigentümer des Lieferungsbestandes vom Kreditor auf Ihre juristische Person ändern, wenn ein Bedarf für den Bestand in der Produktion vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="292b7-104">This procedure shows how to change the owner of consignment inventory from the vendor to your legal entity when there is demand for the inventory in production.</span></span> <span data-ttu-id="292b7-105">Diese Besitzänderung wird ausgeführt, indem eine Bestandsbesitz-Änderungserfassung erstellt und gebucht wird.</span><span class="sxs-lookup"><span data-stu-id="292b7-105">This change of ownership is done by creating and posting an inventory ownership change journal.</span></span> <span data-ttu-id="292b7-106">Die Besitzänderungs-Erfassungspositionen kann manuell erstellt werden, oder, wie in dieser Aufzeichnung, basierend auf einem vorhandenen Produktionsbedarf durchgeführt werden</span><span class="sxs-lookup"><span data-stu-id="292b7-106">The ownership change journal lines can be created manually or, as shown in this recording, based on existing production demand.</span></span> <span data-ttu-id="292b7-107">Normalerweise wird diese Aufgabe von einem Fertigungsbereichsvorgesetzten ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="292b7-107">Typically, a shop floor supervisor performs this task.</span></span> <span data-ttu-id="292b7-108">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="292b7-108">You can use this procedure in the USMF demo data company or on your own data.</span></span> <span data-ttu-id="292b7-109">Wenn Sie Ihren eigenen Daten nutzen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind: es wurden ein Lagererfassungsname für die Bestandsbesitzänderung, physisch erfasste verfügbare Artikel im Besitz des Kreditors und mindestens eine Produktionsauftragsposition für Rohstoff eingerichtet.</span><span class="sxs-lookup"><span data-stu-id="292b7-109">If you're using your own data, make sure that you have the following prerequisites: an inventory journal name that has been set up for inventory ownership change, physically recorded vendor-owned on-hand items, and one or more production order lines for the material.</span></span> <span data-ttu-id="292b7-110">Diese Prozedur ist für eine Funktion gedacht, die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="292b7-110">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 

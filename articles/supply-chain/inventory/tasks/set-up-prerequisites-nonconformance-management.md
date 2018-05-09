@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a33a5c9feec99737804949f29befa03bf56eea24
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5f9450872bc26583f8875d1237ed3686f2793971
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-prerequisites-for-management"></a><span data-ttu-id="a7d99-103">Voraussetzungen für Verwaltung einrichten</span><span class="sxs-lookup"><span data-stu-id="a7d99-103">Set up prerequisites for management</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a7d99-104">Verwenden Sie diese Prozedur, um Qualitätsmangelmanagementprozesse zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="a7d99-104">Use this procedure to enable nonconformance management processes.</span></span> <span data-ttu-id="a7d99-105">Ein Qualitätsmangel steht für eine Prozedur oder einen Artikel, bei dem ein Qualitätsproblem vorliegt; die beschreibenden Informationen enthalten die Quelle sowie die Art des Problems.</span><span class="sxs-lookup"><span data-stu-id="a7d99-105">A nonconformance describes a procedure or item that has a quality problem, where the descriptive information includes the source and type of problem.</span></span> <span data-ttu-id="a7d99-106">Für diese Prozedur wird das Demo-Datenunternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="a7d99-106">This procedure uses the USMF demo data company.</span></span> <span data-ttu-id="a7d99-107">Normalerweise wird diese Prozedur von einem Qualitätsmanager ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="a7d99-107">This procedure is typically performed by a quality manager.</span></span>
 

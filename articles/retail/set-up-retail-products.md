@@ -20,16 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: debaa44078547bd2ee6874bb6562d5b2cc631615
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a30dfd4eada57302d882d1c97c2dca526264958c
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-retail-products"></a><span data-ttu-id="ab5de-103">Einrichten von Einzelhandelsprodukten</span><span class="sxs-lookup"><span data-stu-id="ab5de-103">Set up retail products</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="ab5de-104">In diesem Artikel wird beschrieben, wie Einzelhandelsprodukte in Microsoft Dynamics 365 for Retail eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="ab5de-104">This article describes how to set up retail products in Microsoft Dynamics 365 for Retail.</span></span>
 

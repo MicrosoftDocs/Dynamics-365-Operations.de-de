@@ -16,15 +16,15 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ee2c57d9e42d50823c9f77ebd0f13deec2f4342e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0feeba19510d3c2790b1a77bca3c8ec6e7078726
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="specify-a-lading-address-for-an-intra-community-transaction"></a><span data-ttu-id="29102-103">Eine Ladungsadresse für eine innergemeinschaftliche Buchung angeben</span><span class="sxs-lookup"><span data-stu-id="29102-103">Specify a lading address for an intra-community transaction</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="29102-104">Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="29102-104">This procedure shows how to specify a lading address for an intra-community trade transaction.</span></span> <span data-ttu-id="29102-105">Zum Beispiel ein deutsches Unternehmens bestellt Artikel von einem Kreditor mit einer deutschen Geschäftsadresse.</span><span class="sxs-lookup"><span data-stu-id="29102-105">For example, a Germany company orders items from a vendor with a German business address.</span></span> <span data-ttu-id="29102-106">Dieser Kreditor hat einen Lagerort in Italien und liefert die Artikel von dort.</span><span class="sxs-lookup"><span data-stu-id="29102-106">This vendor has a warehouse in Italy and ships the items from there.</span></span> <span data-ttu-id="29102-107">Die Lieferung muss in Intrastat gemeldet werden.</span><span class="sxs-lookup"><span data-stu-id="29102-107">This delivery must be reported in the Intrastat.</span></span> <span data-ttu-id="29102-108">Dasselbe Verhalten gilt für Debitorenrücklieferungen.</span><span class="sxs-lookup"><span data-stu-id="29102-108">The same behavior is valid for customer returns.</span></span>
 <span data-ttu-id="29102-109">Diese Prozedur gilt für alle europäischen Länder/Regionen.</span><span class="sxs-lookup"><span data-stu-id="29102-109">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="29102-110">Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse in Deutschland erstellt.</span><span class="sxs-lookup"><span data-stu-id="29102-110">The task was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="29102-111">Bevor Sie dieses Verfahren ausführen können, müssen Sie Intrastat-Berichte konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="29102-111">Before you can complete this procedure, you must configure Intrastat reporting.</span></span> <span data-ttu-id="29102-112">Diese Prozedur ist für Buchhalter vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="29102-112">This procedure is intended for accountants.</span></span> <span data-ttu-id="29102-113">Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="29102-113">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>

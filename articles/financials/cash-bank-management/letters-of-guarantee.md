@@ -19,16 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5af345af10e4f68cb74432c4fce8bfb514c4503a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c2072c571d584185e867f221c24dc44cdbad1dd6
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="letters-of-guarantee"></a><span data-ttu-id="27b16-104">Bankgarantien</span><span class="sxs-lookup"><span data-stu-id="27b16-104">Letters of guarantee</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="27b16-105">Dieser Artikel enthält Informationen zu Garantiebriefen.</span><span class="sxs-lookup"><span data-stu-id="27b16-105">This article provides information about letters of guarantee.</span></span> <span data-ttu-id="27b16-106">Ein Garantiebrief ist eine Einverständniserklärung seitens einer Bank, einen bestimmten Geldbetrag an eine andere Person zu zahlen, falls seitens eines Debitors der Bank eine regelmäßige Zahlungsverpflichtung gegenüber dieser Person besteht.</span><span class="sxs-lookup"><span data-stu-id="27b16-106">In a letter of guarantee, a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment or obligation to that person.</span></span> 
 

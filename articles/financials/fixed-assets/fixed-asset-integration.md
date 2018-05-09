@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93764a8eb116924df7c887cfd8d36f60a2a89c81
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cd78323c4fd02a6682c26c825e5e73dfe2c83e4c
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-assets-integration"></a><span data-ttu-id="9b026-104">Integration von Anlagevermögen</span><span class="sxs-lookup"><span data-stu-id="9b026-104">Fixed assets integration</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9b026-105">Anlagen können in die Module "Hauptbuch", "Bestandsverwaltung", "Debitoren" und "Kreditoren" integriert werden.</span><span class="sxs-lookup"><span data-stu-id="9b026-105">Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable.</span></span> <span data-ttu-id="9b026-106">Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="9b026-106">You can also set up Fixed assets so that it is integrated with purchase orders.</span></span>
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/13/2018
 <span data-ttu-id="9b026-139">Ebenso können Anlagen, die für den internen Gebrauch bestimmt sind, so eingerichtet werden, dass sie die Kontenart **Anlagenabgang** haben.</span><span class="sxs-lookup"><span data-stu-id="9b026-139">Similarly, fixed assets that are for internal use can be set up so that they have an account type of **Fixed asset issue**.</span></span> <span data-ttu-id="9b026-140">Diese Kontenart wird verwendet, um die Ausstellung der Anlage an den Empfänger nachzuverfolgen.</span><span class="sxs-lookup"><span data-stu-id="9b026-140">This account type is used to track the issuing of the fixed asset to the recipient.</span></span> <span data-ttu-id="9b026-141">Wenn eine Anlage unter Verwendung einer Bestellung angeschafft wurde, fungiert das Anlagenzugangskonto als Gegenkonto zu dem Anlagenabgangskonten.</span><span class="sxs-lookup"><span data-stu-id="9b026-141">When an asset is acquired by using a purchase order, the fixed asset issue account offsets the fixed asset debit account.</span></span> <span data-ttu-id="9b026-142">Die Anlagenanschaffung kann entweder gebucht werden, wenn Sie eine Kreditorenrechnung buchen oder wenn Sie die Anlagenanschaffung in der Erfassung "Anlagen" buchen, möglicherweise mithilfe eines Anschaffungsvorschlags.</span><span class="sxs-lookup"><span data-stu-id="9b026-142">The asset acquisition can be posted either when you post a vendor invoice or when you post the asset acquisition in the Fixed assets journal, possibly by using an acquisition proposal.</span></span> <span data-ttu-id="9b026-143">Sie können die Kontenart **Anlagenabgang** entweder für eine Artikelgruppe oder für einen einzelnen Artikel einrichten, indem Sie die Registerkarte **Bestand** auf der Seite **Lagergruppe** oder **Artikelgruppe** verwenden.</span><span class="sxs-lookup"><span data-stu-id="9b026-143">You can set up the **Fixed asset issue** account type for either an item group or an individual item by using the **Inventory** tab on the **Item group** or **Item posting** page.</span></span> 
 
 <span data-ttu-id="9b026-144">Letztendlich werden die Hauptkonten, die für die Buchung verwendet werden, durch die Optionen für Sachkontenintegration bestimmt, die für die Artikelmodellgruppe angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="9b026-144">Ultimately, the main accounts that are used for posting are determined by the options for ledger integration that are specified for the item model group.</span></span> <span data-ttu-id="9b026-145">Darüber hinaus variieren die Hauptkonten, die verwendet werden, je nachdem, ob der Bestellposition eine Anlage zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="9b026-145">Additionally, the main accounts that are used vary, depending on whether an asset is assigned to the purchase order line.</span></span> <span data-ttu-id="9b026-146">Die Konten werden vom Buchungsprofil der jeweiligen Artikelgruppe abgeleitet.</span><span class="sxs-lookup"><span data-stu-id="9b026-146">The accounts are derived from the posting profile for each item group.</span></span> 
-<span data-ttu-id="9b026-147">**Hinweis:**Ist beim Buchen von Produktzugängen eine Lagerreservierung vorhanden, ist das Zuweisen einer Anlage sowie das Erstellen einer Anlage auf Basis der Position nicht möglich.</span><span class="sxs-lookup"><span data-stu-id="9b026-147">**Note:** If an inventory reservation exists when product receipts are posted, you can’t assign a fixed asset or create a fixed asset from the line.</span></span> 
+<span data-ttu-id="9b026-147">**Hinweis:** Ist beim Buchen von Produktzugängen eine Lagerreservierung vorhanden, ist das Zuweisen einer Anlage sowie das Erstellen einer Anlage auf Basis der Position nicht möglich.</span><span class="sxs-lookup"><span data-stu-id="9b026-147">**Note:** If an inventory reservation exists when product receipts are posted, you can’t assign a fixed asset or create a fixed asset from the line.</span></span> 
 
 <span data-ttu-id="9b026-148">Die Konten, in denen Anlagenbuchungen erfasst werden, und auch die Buchungsart der Anlage sind von zwei Faktoren abhängig: ob Anlagen von der juristischen Person zugekauft oder selbst errichtet werden.</span><span class="sxs-lookup"><span data-stu-id="9b026-148">The accounts that fixed asset transactions are posted to depend on two factors: whether the assets are purchased or constructed by the legal entity, and the transaction type of the asset.</span></span> 
 

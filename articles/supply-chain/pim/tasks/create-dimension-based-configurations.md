@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 103d925a301e62c52faacd7bbaf100d27901728d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 55f69d75b7b00eb640eb3fff5eda28a420fa84ad
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-dimension-based-configurations"></a><span data-ttu-id="7503b-103">Dimensionsbasierte Konfigurationen erstellen</span><span class="sxs-lookup"><span data-stu-id="7503b-103">Create dimension-based configurations</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7503b-104">In der folgenden Prozedur wird gezeigt, wie eine Konfiguration für ein dimensionsbasiertes Produkt definiert wird.</span><span class="sxs-lookup"><span data-stu-id="7503b-104">This procedure shows how to define a configuration for a dimension-based product.</span></span> <span data-ttu-id="7503b-105">Dies ist die letzte Prozedur in der Reihe, die beschreibt, wie Kombinationen für eine dimensionsbasierte Konfiguration erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="7503b-105">This is the last procedure in the series that explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="7503b-106">Die Ausführung dieser Prozedur hängt von den Daten ab, die in den vorherigen sieben Aufzeichnungen erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="7503b-106">The execution of this procedure is dependent on the data created in the previous seven recordings.</span></span> <span data-ttu-id="7503b-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="7503b-107">The demo data company used to create this procedure is USMF.</span></span>
 

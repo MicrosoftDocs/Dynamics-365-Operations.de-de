@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 194f5b0a361d07ba5c3187dd2b5d20549599ae45
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0e0ec311c637697aef7900b38d15bee321e1b6ca
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-activity-relation-successor"></a><span data-ttu-id="cbf21-103">Aktivitätsrelation erstellen: Nachfolger</span><span class="sxs-lookup"><span data-stu-id="cbf21-103">Create activity relation: Successor</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cbf21-104">Der Ablauf von Aktivitäten in einem Leanproduktionsfluss wird durch Aktivitätsrelationen dokumentiert.</span><span class="sxs-lookup"><span data-stu-id="cbf21-104">The flow of activities in a lean production flow is documented through activity relations.</span></span> <span data-ttu-id="cbf21-105">Diese Aufzeichnung zeigt, wie Sie eine Aktivitätsrelation erstellen.</span><span class="sxs-lookup"><span data-stu-id="cbf21-105">This recording shows how to create an activity relation.</span></span>
 
