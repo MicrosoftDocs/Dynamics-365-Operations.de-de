@@ -18,29 +18,29 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a0f89579cd921b1036ea102ccc89f3863fb40ac3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 19ba20ce16c9916e09b862b0ebedbf68259c7769
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="financial-management-home-page"></a><span data-ttu-id="3ba35-103">Startseite für die Finanzverwaltung</span><span class="sxs-lookup"><span data-stu-id="3ba35-103">Financial management home page</span></span>
+# <a name="financial-management-home-page"></a><span data-ttu-id="54ae1-103">Startseite für die Finanzverwaltung</span><span class="sxs-lookup"><span data-stu-id="54ae1-103">Financial management home page</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-<span data-ttu-id="3ba35-104">Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Finanzverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="3ba35-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
+<span data-ttu-id="54ae1-104">Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Finanzverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="54ae1-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-<span data-ttu-id="3ba35-105">Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="3ba35-105">Select a feature area to learn more about it.</span></span>
-- [<span data-ttu-id="3ba35-106">Kreditorenkonten</span><span class="sxs-lookup"><span data-stu-id="3ba35-106">Accounts payable</span></span>](accounts-payable\accounts-payable.md) 
-- [<span data-ttu-id="3ba35-107">Debitoren</span><span class="sxs-lookup"><span data-stu-id="3ba35-107">Accounts receivable</span></span>](accounts-receivable\accounts-receivable.md) 
-- [<span data-ttu-id="3ba35-108">Bargeld- und Bankverwaltung</span><span class="sxs-lookup"><span data-stu-id="3ba35-108">Cash and bank management</span></span>](cash-bank-management\cash-bank-management.md)
-- [<span data-ttu-id="3ba35-109">Kostenrechnung</span><span class="sxs-lookup"><span data-stu-id="3ba35-109">Cost accounting</span></span>](cost-accounting\cost-accounting-home-page.md)
-- [<span data-ttu-id="3ba35-110">Anlagen</span><span class="sxs-lookup"><span data-stu-id="3ba35-110">Fixed assets</span></span>](fixed-assets\fixed-assets.md)
-- [<span data-ttu-id="3ba35-111">Hauptbuch</span><span class="sxs-lookup"><span data-stu-id="3ba35-111">General ledger</span></span>](general-ledger\general-ledger.md) 
-- [<span data-ttu-id="3ba35-112">Projektverwaltung</span><span class="sxs-lookup"><span data-stu-id="3ba35-112">Project management</span></span>](project-management\overview-project-management-accounting.md)
-- [<span data-ttu-id="3ba35-113">Öffentlicher Sektor</span><span class="sxs-lookup"><span data-stu-id="3ba35-113">Public sector</span></span>](public-sector\public-sector-functionality.md) 
-- [<span data-ttu-id="3ba35-114">Budgetierung</span><span class="sxs-lookup"><span data-stu-id="3ba35-114">Budgeting</span></span>](budgeting\budgeting-overview.md) 
+<span data-ttu-id="54ae1-105">Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="54ae1-105">Select a feature area to learn more about it.</span></span>
+- [<span data-ttu-id="54ae1-106">Kreditorenkonten</span><span class="sxs-lookup"><span data-stu-id="54ae1-106">Accounts payable</span></span>](accounts-payable/accounts-payable.md) 
+- [<span data-ttu-id="54ae1-107">Debitoren</span><span class="sxs-lookup"><span data-stu-id="54ae1-107">Accounts receivable</span></span>](accounts-receivable/accounts-receivable.md) 
+- [<span data-ttu-id="54ae1-108">Bargeld- und Bankverwaltung</span><span class="sxs-lookup"><span data-stu-id="54ae1-108">Cash and bank management</span></span>](cash-bank-management/cash-bank-management.md)
+- [<span data-ttu-id="54ae1-109">Kostenrechnung</span><span class="sxs-lookup"><span data-stu-id="54ae1-109">Cost accounting</span></span>](cost-accounting/cost-accounting-home-page.md)
+- [<span data-ttu-id="54ae1-110">Anlagen</span><span class="sxs-lookup"><span data-stu-id="54ae1-110">Fixed assets</span></span>](fixed-assets/fixed-assets.md)
+- [<span data-ttu-id="54ae1-111">Hauptbuch</span><span class="sxs-lookup"><span data-stu-id="54ae1-111">General ledger</span></span>](general-ledger/general-ledger.md) 
+- [<span data-ttu-id="54ae1-112">Projektverwaltung</span><span class="sxs-lookup"><span data-stu-id="54ae1-112">Project management</span></span>](project-management/overview-project-management-accounting.md)
+- [<span data-ttu-id="54ae1-113">Öffentlicher Sektor</span><span class="sxs-lookup"><span data-stu-id="54ae1-113">Public sector</span></span>](public-sector/public-sector-functionality.md) 
+- [<span data-ttu-id="54ae1-114">Budgetierung</span><span class="sxs-lookup"><span data-stu-id="54ae1-114">Budgeting</span></span>](budgeting/budgeting-overview.md) 
 
 
 
