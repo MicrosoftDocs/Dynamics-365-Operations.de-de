@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-accessorial-assignments"></a>Zusatzleistungszuweisungen einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt Ihnen an, wie eine Zusatzleistungszuweisung eingerichtet wird. Diese Einstellung wird normalerweise von einem Transportkoordinator vorgenommen. Bevor Sie diese Anleitung verwenden, müssen Sie die Anweisungen unter "Hubzusatzgebühren und Zusatzleistungsmaster einrichten" ausführen.
 

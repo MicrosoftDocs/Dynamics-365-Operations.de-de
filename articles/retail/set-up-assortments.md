@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-assortments"></a>Sortimente einrichten
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In diesem Artikel wird beschrieben, was ein Sortiment ist, und es wird beschrieben, wie Sie Sortimente in Microsoft Dynamics 365 for Retail einrichten.
 

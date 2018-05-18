@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Eine Bestellung mit einem Lieferzeitplan erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie ein Lieferzeitplan für eine Bestellung erstellt wird. Ein Lieferzeitplan wird verwendet, wenn eine Menge für einen Auftrag oder eine Erfassung angefordert wird, um in mehreren Lieferungen geliefert zu werden. Das Beispiel, das in diesem Leitfaden angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden. Diese Prozedur würde normalerweise durch einen Einkaufsvertreter erfolgen.
 

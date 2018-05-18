@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Einrichten eines Sachkontoalias
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Das folgende Verfahren zeigt die Erstellung eines Kontoalias als Kürzel zur Eingabe einer Kontonummer. Für diese Prozedur wird das Demodatunternehmen USMF verwendet.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-a-succession-plan"></a>Nachfolgeplan entwickeln
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Während Ihre Organisation wächst und Sie die Nachfolgeplanung erwägen, möchten Sie vielleicht jemand finden, der ähnliche Qualifikationen wie eine andere Person hat.  Die Qualifikationszuordnung ermöglicht es Ihnen, Ihre vorhandenen Mitarbeiter und Bewerber zu analysieren, um festzustellen, ob ihre Fertigkeiten denen eines wertgeschätzten Mitarbeiters übereinstimmen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

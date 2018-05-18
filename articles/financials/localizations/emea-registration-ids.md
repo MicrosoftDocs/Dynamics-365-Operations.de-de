@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="registration-ids"></a>Registrierungskennungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Unter den Themen in diesem Abschnitt finden Sie Informationen zum Einrichten und Verwalten von Anmelde-IDs.
 

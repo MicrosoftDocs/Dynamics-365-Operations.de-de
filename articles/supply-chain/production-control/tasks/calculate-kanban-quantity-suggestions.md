@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>Kanban-Mengenvorschläge berechnen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Der Schwerpunkt dieser Prozedur liegt auf dem Optimieren der Kanban-Größe und -Menge für eine bestimmte Kanban-Regel mit der Kanban-Mengenberechnung. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Vorgehensweise ist für den Wertstrommanager vorgesehen. Für dieses Verfahren wird vorausgesetzt, dass Sie die Prozedur "Kanban-Berechnungsrichtlinie zur Kanban-Regel hinzufügen" abgeschlossen haben.
 

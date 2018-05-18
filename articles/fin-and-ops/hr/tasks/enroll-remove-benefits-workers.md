@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Vorteile von Arbeitskräften registrieren und entfernen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Verfahren zeigt, wie einzelne Arbeitskräfte für einen oder mehrere Vorteile registriert werden können und wie mehrere Arbeitskräfte für einen Vorteil registriert werden können. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

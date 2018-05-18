@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="arrival-overview"></a>Wareneingangsübersicht
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zu den Wareneingangsübersichtfunktion. Die Wareneingangsübersichtseite ist Teil dieser Funktionen und bietet eine Übersicht aller Artikel, von denen erwarten wird, dass sie als eingehende Artikel eintreffen.
 

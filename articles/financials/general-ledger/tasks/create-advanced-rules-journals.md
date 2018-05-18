@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-advanced-rules-for-journals"></a>Erweiterte Regeln für Erfassungen erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahrens zeigt das Erstellen von erweiterten Regeln für Erfassungen. Hierzu zählen die Einrichtung Erfassungssteuerungs- und Benutzerbuchungseinschränkungen. Für diese Prozedur wird das Demo-Datenunternehmen USMF verwendet.
 

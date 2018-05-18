@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-application-inbox-records"></a>Bewerbungseingangs-Datensätze genehmigen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren wird gezeigt, wie Sie Bewerbungen prüfen, die über die Seite "Mitarbeiter-Self-Service" eingehen. Neben der Prüfung der Bewerbungen, können Sie die Bewerbung in den Felddatensätzen genehmigen, die Sie auswählen. Bei Bewerbungseingangsdatensätzen handelt es sich um Stellenbewerbungen, die beim Unternehmen eingegangen sind. Nach dem Genehmigen eines Datensatzes wird für die Person, die die Bewerbung übermittelt hat, ein Bewerberdatensatz erstellt. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

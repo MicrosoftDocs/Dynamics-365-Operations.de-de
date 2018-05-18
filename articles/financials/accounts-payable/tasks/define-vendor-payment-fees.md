@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-fees"></a>Gebühren für Kreditorenzahlung definieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Richten Sie Kreditorenzahlungsgebühren ein. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 

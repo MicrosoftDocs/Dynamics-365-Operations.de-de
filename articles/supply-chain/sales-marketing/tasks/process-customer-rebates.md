@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-process-customer-rebates"></a>Debitorenrückvergütungen generieren und verarbeiten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgenerierung so weit des Übergebens sie als Abgrenzungen zu Debitoren verarbeitet. Sie läuft Sie durch ein besonderes Beispiel seitens, um zu erläutern, wie die verschiedenen Bedingungen auf den Rückvergütungspositionen die Endbetrag auswirken, die den Debitor gutgeschrieben werden. Sie müssen das USMF-Demodatunternehmen verwenden und führen die folgenden Aufgaben von, bevor Sie Handbuch starten: (1) Für die der Debitorenparameterseite und erweitern die Registerkarte Preise und dann die Preisdetailregisterkarte und prüfen, ob die aktivierens-Preisdetailoption auf "Ja" festgelegt ist. (2) Die Seite "Rückvergütungsvereinbarungen" aufrufen und die Debitorenrückvergütungsvereinbarung auswählen: USMF-000001. Wenn das Workflowgenehmigungsstatusfeld nicht zu genehmigtem festgelegt wird, benötigen Sie auf Prüfung im Aktivitätsbereich, um ihn zu genehmigen.
 

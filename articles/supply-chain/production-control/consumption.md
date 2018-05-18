@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="calculate-material-consumption"></a>Materialentnahme berechnen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu unterschiedlichen Optionen, die in Zusammenhang mit der Berechnung des Materialverbrauchs stehen. 
 

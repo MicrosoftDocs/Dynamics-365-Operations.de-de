@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="review-collections-information"></a>Inkassoinformationen überprüfen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie Sie Inkassoinformationen sowie verschiedene Einrichtungsoptionen und Inkassobuchungen prüfen können. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 

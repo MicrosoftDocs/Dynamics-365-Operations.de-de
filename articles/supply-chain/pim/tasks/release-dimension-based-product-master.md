@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="release-a-dimension-based-product-master"></a>Dimensionsbasierten Produktmaster veröffentlichen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren, wie ein Produktmaster gemeinsam nutzen, der für die dimensionsbasierten Konfigurationen verwendet wird. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Es ist eine Komponente, dass Sie einen Produktmaster mit der Technologie der dimensionsbasierten Konfiguration erstellt haben. Dies ist die zweite von acht Prozeduren die beschreibt, wie Kombinationen für eine dimensionsbasierte Konfiguration erstellt werden.
 

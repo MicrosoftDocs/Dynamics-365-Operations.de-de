@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="define-loyalty-schemes"></a> Definieren von Treueschemas
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Definieren eines Treueschemas. Treueschemas sind Belohnungserwerbs- und -einlöseregeln für ein Treueprogramm. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 

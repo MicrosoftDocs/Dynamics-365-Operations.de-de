@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-data-allocation"></a>Datenzuteilung für Budgetplanung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die verschiedenen Zuordnungsmethoden, die in Microsoft Dynamics 365 for Finance and Operations verfügbar sind und wie sie verwendet werden können.  
 

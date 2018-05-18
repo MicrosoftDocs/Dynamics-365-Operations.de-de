@@ -5,7 +5,8 @@
 ## [Microsoft Dynamics 365 for Talent bereitstellen](provisioning-talent.md)
 ## [Talent-Umgebung entfernen](remove-talent-environment.md)
 ## [Bereitstellen von Microsoft Dynamics 365 for Talent – Modulare Apps](modular-app-tech-faq.md)
-## [Talentfunktionalität erweitern](extend-talent-functionality.md)
+## [Erweitern Sie Talent-Funktionen](extend-talent-functionality.md)
+## [Zugreifen auf Vorschaufunktionen in Dynamics 365 for Talent: Attract](access-preview-feature.md)
 
 # [Eine Personalverwaltungsstrategie entwickeln](departments-jobs-positions.md)
 ## [Stellenkomponenten einrichten](create-job.md)

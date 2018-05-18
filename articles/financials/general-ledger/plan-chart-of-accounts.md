@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="plan-your-chart-of-accounts"></a>Ihren Kontenplan planen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Themen bietet Informationen, die Ihnen helfen, Kontenpläne für Ihre Organisation zu planen.
 

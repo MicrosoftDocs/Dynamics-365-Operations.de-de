@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-a-call-center-channel"></a>Einrichten eines Callcenterkanals
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ein Unternehmen kann Telekonferenzcenterkanäle in Microsoft Dynamics 365 for Retail definieren. Callcenterkanäle werden bei **Einzelhandel** \> **Messagingkanäle** \> **Callcenter** \> **Alle Callcenter** konfiguriert und sie sind für eine juristische Person bestimmt.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="validate-a-production-flow-and-version"></a>Produktionsfluss und Version überprüfen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Die Prozedur zeigt, wie ein neuer Produktionsfluss und eine erste Version für Lean Manufacturing erstellt werden. Voraussetzungen: Die Produktionsparameter für Lean Manufacturing und die Maßeinheiten der Klasse "Zeit" müssen definiert werden. Sie müssen einen Wertstrom und ein Produktionsbuchungsprofil definieren. Informationen finden Sie in den Whitepapers zu Lean Manufacturing, um sich mit den Konzepten von Produktionsflüssen und Aktivitäten vertraut zu machen. Diese Prozedur bezieht sich auf die juristische Person USMF in den Demodaten. Jedoch angenommen, dass die juristische Person für Lean Manufacturing konfiguriert ist, können andere juristische Personen verwendet werden.
 

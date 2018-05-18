@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-and-marketing"></a>Vertrieb und Marketing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Im Vertriebs- und Marketingmodul können verschiedene Arten von Daten im Verkaufsablauf abgerufen, gespeichert und verwendet werden. Zu diesen Daten zählen die ursprüngliche Vertriebsinitiative, künftige Weiterverfolgungsaktivitäten und zusätzliche Verkäufe.
 

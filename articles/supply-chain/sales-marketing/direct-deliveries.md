@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="direct-deliveries"></a>Direktlieferungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen über Direktlieferungen. Dirketlieferungen sind Lieferungen, die direkt vom Kreditor an den Debitor gesendet werden.
 

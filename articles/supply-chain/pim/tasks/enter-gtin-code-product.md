@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>GTIN-Code für ein Produkt eingeben
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 GTIN-Codes werden von der GS1-Organisation zugewiesen. In diesem Beispiel geben Sie einen Code für die Produktnummer M0001 im Demodatenunternehmen USMF ein.
 

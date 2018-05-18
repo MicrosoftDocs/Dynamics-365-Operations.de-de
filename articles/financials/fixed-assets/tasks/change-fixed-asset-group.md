@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-a-fixed-asset-group"></a>Eine Anlagengruppe ändern
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Die Anlage muss der korrekten Anlagengruppe zugewiesen werden. Die feste Anlagegruppe wird verwendet, wenn Sie:
 

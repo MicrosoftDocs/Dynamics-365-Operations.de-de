@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Einen vordatierten Scheck für einen Debitor erfassen und buchen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Sie können die Details eines vordatierten Schecks erfassen, den Sie von einem Debitor erhalten haben. Sie können den vordatierten Scheck buchen und Finanzbuchungen erstellen.   Führen Sie die folgenden Schritte aus, bevor Sie einen vordatierten Scheck erfasst und gebucht, der von einem Debitor erhalten haben:   • Einrichten von vordatierten Schecks in bar und in der Bankwesenseite • Einrichten einer Zahlungsmethode für vordatierte Schecks, für die der Rolle für diesen Schritt Schatzmeister ist. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 

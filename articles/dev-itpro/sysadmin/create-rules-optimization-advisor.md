@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-rules-for-optimization-advisor"></a>Erstellen von Regeln für Optimierungsratgeber
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird erklärt, wie neue Regeln für den **Optimierungsratgeber** erstellt werden. Sie können beispielsweise eine neue Regel erstellen, die angibt, welche Angebotsanforderungsanfragen einen leeren Titel haben. Durch das Verwenden von Titeln bei Anfragen können sie leicht identifiziert und gesucht werden. Während es ziemlich einfach ist, zeigt dieses Beispiel, was mit Optimierungsregeln erreicht werden kann. 
 

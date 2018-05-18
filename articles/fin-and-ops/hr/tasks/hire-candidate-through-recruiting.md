@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-a-candidate-through-recruiting"></a>Einen Kandidaten über die Personalbeschaffung einstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Auf diese Weise kann ein Personalbeschaffungsmitarbeiter einen Bewerber einstellen, der eine Bewerbung über ein bestimmtes Personalbeschaffungsprojekt übermittelt hat. Wenn Sie einen Bewerber durch ein Personalbeschaffungsprojekt einstellen, wird ein neuer Arbeitskraftdatensatz erstellt und der Datensatz des Bewerbers hat den Status "Eingestellt". Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Um diese Prozedur abzuschließen, gehen Sie zu "Personalverwaltung" > "Personalbeschaffung" > "Bewerbungen" > "Bewerbungen" 
 

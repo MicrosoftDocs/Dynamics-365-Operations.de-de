@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Eine Kanban-Regel mithilfe eines Mindestbestandsereignisses erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur konzentriert sich auf die Einstellungen, die benötigt werden, um eine Kanban-Regel unter Verwendung eines Mindestbestandsereignisses zu erstellen, um zu garantieren, dass ein spezifisches Produkt immer an einem spezifischen Lagerplatz verfügbar ist. Eine Kanban-Regel wird erstellt, um Material zum Lagerplatz zu übertragen, wenn das Bestandsniveau unterhalb von 200 Stücke fällt. Durch das Ausführen der Verarbeitung des bedarfsverursachenden Ereignisses werden die erforderlichen Kanbans erstellt. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für den Fertigungsplaner oder den Wertstrom-Manager vorgesehen, da diese die Produktion eines neuen oder geänderten Produkts in einer schlanken Umgebung vorbereiten.
 

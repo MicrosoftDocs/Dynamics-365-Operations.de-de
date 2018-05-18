@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-integration"></a>Integration von Anlagevermögen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Anlagen können in die Module "Hauptbuch", "Bestandsverwaltung", "Debitoren" und "Kreditoren" integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden.
 
@@ -61,7 +61,7 @@ Dieses Konto ist in der Regel ein Ausgabenkonto. Sie können die Kontenart **Anl
 Ebenso können Anlagen, die für den internen Gebrauch bestimmt sind, so eingerichtet werden, dass sie die Kontenart **Anlagenabgang** haben. Diese Kontenart wird verwendet, um die Ausstellung der Anlage an den Empfänger nachzuverfolgen. Wenn eine Anlage unter Verwendung einer Bestellung angeschafft wurde, fungiert das Anlagenzugangskonto als Gegenkonto zu dem Anlagenabgangskonten. Die Anlagenanschaffung kann entweder gebucht werden, wenn Sie eine Kreditorenrechnung buchen oder wenn Sie die Anlagenanschaffung in der Erfassung "Anlagen" buchen, möglicherweise mithilfe eines Anschaffungsvorschlags. Sie können die Kontenart **Anlagenabgang** entweder für eine Artikelgruppe oder für einen einzelnen Artikel einrichten, indem Sie die Registerkarte **Bestand** auf der Seite **Lagergruppe** oder **Artikelgruppe** verwenden. 
 
 Letztendlich werden die Hauptkonten, die für die Buchung verwendet werden, durch die Optionen für Sachkontenintegration bestimmt, die für die Artikelmodellgruppe angegeben werden. Darüber hinaus variieren die Hauptkonten, die verwendet werden, je nachdem, ob der Bestellposition eine Anlage zugewiesen ist. Die Konten werden vom Buchungsprofil der jeweiligen Artikelgruppe abgeleitet. 
-**Hinweis:**Ist beim Buchen von Produktzugängen eine Lagerreservierung vorhanden, ist das Zuweisen einer Anlage sowie das Erstellen einer Anlage auf Basis der Position nicht möglich. 
+**Hinweis:** Ist beim Buchen von Produktzugängen eine Lagerreservierung vorhanden, ist das Zuweisen einer Anlage sowie das Erstellen einer Anlage auf Basis der Position nicht möglich. 
 
 Die Konten, in denen Anlagenbuchungen erfasst werden, und auch die Buchungsart der Anlage sind von zwei Faktoren abhängig: ob Anlagen von der juristischen Person zugekauft oder selbst errichtet werden. 
 

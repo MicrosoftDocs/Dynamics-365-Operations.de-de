@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="assess-sales-performance-by-product"></a>Verkaufsleistung nach Produkt
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Sie können die Rentabilität für die 10 wichtigsten Produkte mithilfe von Microsoft Dynamics 365 for Retail prüfen. 
 

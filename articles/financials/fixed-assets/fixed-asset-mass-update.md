@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-mass-update"></a>Anlagen-Massenaktualisierung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bei Verwendung von Büchern können die Abschreibungskonventionen für Gruppen von Anlagen geändert werden, die zum gleichen Buch gehören.
 

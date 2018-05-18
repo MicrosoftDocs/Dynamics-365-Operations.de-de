@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="loan-items-to-a-worker"></a>Artikel an eine Arbeitskraft verleihen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren wird dargestellt, wie einer Arbeitskraft ein Artikel geliehen und anschließend erfasst wird, wie die Arbeitskraft den Artikel zurückgibt. Arbeitskräfte können Ausleihartikel auch über ihre Mitarbeiter-Self-Service-Seiten anfordern. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="ledger-journal-types"></a>Sachkonto-Erfassungstypen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Seite **Erfassungsnamen**, um Erfassungen einzurichten, die Sie überall in Microsoft Dynamics 365 for Finance and Operations verwenden können.
 

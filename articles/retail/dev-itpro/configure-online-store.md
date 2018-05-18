@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-online-store"></a>Einen Onlineshop konfigurieren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel bietet Verknüpfungen zu Themen, die Ihnen helfen, einen Online-Shop zentral zu konfigurieren und zu verwalten.
 

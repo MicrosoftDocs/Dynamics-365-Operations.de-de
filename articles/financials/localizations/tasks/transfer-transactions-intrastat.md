@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Buchungen an Intrastat übertragen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen Schritt für Schritt, wie Sie Intrastat-Parameter einrichten und Transaktionen nach Intrastat übertragen. Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.
 

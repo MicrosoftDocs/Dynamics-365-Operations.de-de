@@ -27,7 +27,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Scannen Sie Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations – Warehousing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie Dynamics 365 for Finance and Operations – Warehousing einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen. 
 

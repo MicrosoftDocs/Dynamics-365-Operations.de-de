@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="before-you-buy"></a>Vor dem Einkauf 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Einführung in Dynamics 365 for Finance and Operations? Wir haben eine Schritt-für-Schritt-Anleitung zusammengestellt, egal, ob Sie Finance and Operations noch auswerten oder einen Kauf tätigen wollen.
 

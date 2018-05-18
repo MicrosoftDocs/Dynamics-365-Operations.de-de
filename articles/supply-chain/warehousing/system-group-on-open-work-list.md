@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="system-grouping-on-an-open-work-list"></a>Systemgruppierung in einer offenen Arbeitsliste
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Wenn Sie ein Systemgruppenfeld verwenden, können Sie eine offene Arbeitsliste filtern ohne dass Sie die die Menüoption des mobilen Geräts bearbeiten müssen.
 Sofern dies zutrifft, funktioniert die Systemgruppierung zum Filtern einer Arbeitsliste auf einem einzelnen Arbeitskopffeld. Sie können die Systemgruppierung nicht verwenden, um online Ebenefelder zu filtern.

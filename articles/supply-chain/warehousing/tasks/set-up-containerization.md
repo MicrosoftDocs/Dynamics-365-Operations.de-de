@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-containerization"></a>Verpacken in Container einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In dieser Prozedur wird beschrieben, wie Containerisierung von Ladungen in der "Lagerortverwaltung" automatisiert wird. Automatisierte Containerisierung erstellt Container und die Entnahmearbeit für Lieferungen, wenn eine Welle verarbeitet wird und Arbeitspositionen in Mengen aufgeteilt werden können, die in die Container passen. Dies unterstützt Lagerarbeiter dabei, die Artikel direkt zur Verpackung in den ausgewählten Container zu entnehmen. Verglichen mit dem manuellen Verpackungsprozess, werden Aufgaben wie das Erstellen von Containern, das Zuweisen von Artikeln und das Abschließen von Containern vom System automatisiert. Bei dieser Prozedur wird das USMF-Demo-Unternehmen verwendet und sie wird von einem Lagerortleiter ausgeführt.
 

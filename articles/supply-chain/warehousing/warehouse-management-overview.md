@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="warehouse-management"></a>Lagerortverwaltung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Das Lagerortverwaltungsmodul für Dynamics 365 for Finance and Operations ermöglicht es Ihnen, Lagerortprozesse in der Fertigung, der Verteilung und in Einzelhandelsunternehmen zu verwalten. Dieses Modul verfügt über eine breite Palette von Funktionen, um die Räumlichkeiten des Lagerorts in optimaler Weise und jederzeit zu unterstützen. Lagerortverwaltung ist vollständig mit anderen Geschäftsprozessen in Finance and Operations integriert, wie beispielsweise Transport, Herstellung, Qualitätskontrolle, Einkauf, Übertragung, Vertrieb und Retouren.
 

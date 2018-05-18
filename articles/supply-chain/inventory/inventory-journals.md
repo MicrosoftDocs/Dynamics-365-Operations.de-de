@@ -28,9 +28,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-journals"></a>Lagererfassungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 In diesem Thema wird beschrieben, wie Sie Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandstransaktionen zu buchen.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Rechnungsabgleich und Intercompany-Bestellungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Die einkaufende juristische Person, die in eine Buchung des Intercompany-Handels einbezogen ist, kann auch so eingerichtet werden, dass der Kreditorenrechnungsabgleich verwendet wird. In diesem Fall müssen sowohl die Buchungsanforderungen für den Intercompany-Handel und der Kreditorenrechnungsabgleich erfüllt sein, bevor Intercompany-Kreditorenrechnungen gebucht werden können.
 

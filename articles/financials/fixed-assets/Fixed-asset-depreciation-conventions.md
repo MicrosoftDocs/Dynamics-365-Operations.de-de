@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-asset-depreciation-conventions"></a>Anlagenabschreibungskonventionen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Abschreibungskonventionen werden verwendet, um zu bestimmen, wann und wie eine Abschreibung berechnet wird, sowohl für das Jahr, in dem die Anlage erworben wird als auch für das Jahr, in dem die Anlage abgeht.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="view-an-expense-report"></a>Anzeigen einer Spesenabrechnung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Wenn Sie eine Abfrage vornehmen, um Buchungen im Hauptbuch oder Beschaffung anzeigen, könnte die Abfrage zu vielen Informationen zurückgeben. Daher sollten Sie die Suche einschränken. Um die benötigten Informationen abzurufen, können Sie Detailinformationen zu einer Buchung und die dazugehörige Spesenabrechnung anzeigen.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-iso20022-credit-transfer-configuration"></a>ISO20022-Banküberweisungskonfiguration importieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie Sie eine Berichterstellungskonfiguration der elektronische Kreditorenzahlung importieren. Das deutsche ISO 20022-Banküberweisungsformat wird als Beispiel verwendet. Diese Prozedur kann für andere verfügbare elektronisches Berichterstellungsformat verwendet werden. 
 

@@ -26,9 +26,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="alerts-overview"></a>Warnungsüberblick
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Info über Warnungen
 Warnungen bilden ein Benachrichtigungssystem für wichtige Ereignisse in Microsoft Dynamics 365 for Finance and Operations. Sie können Warnungen verwenden, um über Ereignisse informiert zu bleiben, die Sie während des Arbeitstags nachverfolgen möchten. Sie können eigene Warnregelsätze einfach erstellen, sodass Sie gewarnt werden, wenn Lieferungen überfällig sind, wenn Aufträge gelöscht werden, wenn Preise sich ändern oder wenn ein beliebiges anderes Ereignis eintritt, auf das Sie reagieren müssen.

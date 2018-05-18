@@ -26,7 +26,7 @@ ms.lasthandoff: 03/21/2018
 
 # <a name="corrective-invoicing"></a>Rechnungskorrektur
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  > [!NOTE]
  > Dieses Thema gilt für juristische Personen mit einer primären Adresse in Dänemark, Deutschland, Frankreich, Irland, den Niederlanden oder Großbritannien.

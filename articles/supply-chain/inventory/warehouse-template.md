@@ -29,7 +29,7 @@ ms.lasthandoff: 02/06/2018
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Einrichten eines Lagerorts mithilfe einer Lagerortkonfigurationsvorlage
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird erklärt, wie ein Lagerort mithilfe einer Lagerortkonfigurationsvorlage eingerichtet wird. Es gibt mehrere vordefinierte Konfigurationsvorlagen, die Sie verwenden können. Informationen darüber, wie diese Vorlagen verwendet werden, finden Sie unter [Konfigurationsdatenvorlagen](../../dev-itpro/data-entities/configuration-data-templates.md).
 

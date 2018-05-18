@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-assets-home-page"></a>Startseite für Anlagen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Anlagen sind Objekte von Wert, wie Gebäude, Fahrzeuge, Grundbesitz und Maschinen, die sich im Besitz einer Einzelperson oder einer Organisation befinden. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="analyze-questionnaire-results"></a>Ergebnisse des Fragebogens analysieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Die Fragebogenstatistiken können verwendet werden, um Durchschnitte, Summen und Prozentsätze basierend auf einer Gruppe von demografischen Daten zu berechnen. Um diese Prozedur zu starten, gehen Sie zu "Fragebogen" > "Ergebnisse anzeigen und analysieren" > "Fragebogenstatistik". Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

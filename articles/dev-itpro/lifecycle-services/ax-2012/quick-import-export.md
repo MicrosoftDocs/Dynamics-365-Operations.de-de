@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Führen Test Data Transfer Tool (Beta) für Dynamics AX (AX 2012) aus
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Zweck des Direktimports/-exports ist der Import und Export über weniger Schritte.
 

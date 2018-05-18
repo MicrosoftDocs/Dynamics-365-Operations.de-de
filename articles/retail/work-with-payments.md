@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="payment-methods-in-a-call-center"></a>Zahlungsmethoden in einem Callcenter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In Microsoft Dynamics 365 for Retail umfasst die Konfiguration des Callcenterkanals eine Einstellung, die mit **Aktivieren Sie Auftragsabschluss** bezeichnet wird. Diese Einstellung stellt sicher, dass alle Aufträge, die Benutzer des Kanals erstellen, zur Verarbeitung der Bestellung nur dann freigegeben wird, nachdem sie eine Vorauszahlung oder eine vor-autorisierte Bezahlung getätigt haben, die in der genehmigten Toleranz ist. Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, können Callcenterbenutzer Zahlungen mit Aufträgen für die Debitoren eingeben, indem Sie die Funktionen des Callcenters der Zahlung verwenden möchten. Wenn die Einstellung deaktiviert ist, können die Callcenternutzer die  Callcenterzahlung nicht nutzen, aber sie können die Vorauszahlungen für Aufträge trotzdem anwenden, indem die  Standarddebitorfunktionen verwendet werden. 
 

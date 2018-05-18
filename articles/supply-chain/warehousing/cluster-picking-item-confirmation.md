@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Produktbestätigung für Clusterentnahme
 Mit Clusterentnahme können Sie Artikel für mehrere Aufträge gleichzeitig entnehmen. Wann die Clusterentnahme angewendet wird, ist die Artikelbestätigung wichtig, um die Artikel zu prüfen, die den Clustern hinzugefügt werden. Sie können Artikel in der Clusterentnahme während des Clusterentnahmevorgangs überprüfen.

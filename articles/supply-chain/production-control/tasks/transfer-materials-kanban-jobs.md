@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-materials-with-kanban-jobs-february-2016-only"></a>Materialien mit Kanban-Einzelvorgängen übertragen (nur Februar 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Der Schwerpunkt dieser Prozedur liegt auf dem Ausführen eines Entnahme-Kanban-Einzelvorgangs, um Material zu übertragen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist für Lagerarbeitskräfte vorgesehen.
 

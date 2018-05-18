@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Auslastungen und Lieferungen mithilfe der Ladungsplanungsworkbench planen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren wird gezeigt, wie der Auslastungsplanungswerktisch verwendet wird, um eine Auslastung für einen Auftrag zu erstellen. Im Voraus erstellen wir zuerst den Auftrag. Dieses Verfahren ist Teil der täglichen Arbeit für den Transportkoordinator. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

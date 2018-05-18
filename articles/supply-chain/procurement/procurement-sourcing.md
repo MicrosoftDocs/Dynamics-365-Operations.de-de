@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-home-page"></a>Beschaffungs-Startseite
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält eine Liste der Hilfethemen und weiterer Ressourcen, die für die Beschaffung verfügbar sind.
 

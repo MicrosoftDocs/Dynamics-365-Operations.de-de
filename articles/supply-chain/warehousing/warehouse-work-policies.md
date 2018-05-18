@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="warehouse-work-policies"></a>Lagerortarbeitsrichtlinien
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Lagerortarbeitsrichtlinien in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage von Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird.
 

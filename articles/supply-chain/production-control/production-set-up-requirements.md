@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-setup-requirements"></a>Anforderungen für Produktionseinstellungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel gibt Informationen zu Einrichtungsanforderungen, bevor Sie mit der Produktionssteuerung arbeiten können. 
 

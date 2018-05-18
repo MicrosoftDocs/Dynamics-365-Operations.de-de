@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 150 Prozent
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel gibt eine Übersicht die 150 Prozent Reduktionssaldomethode der Abschreibung.
 

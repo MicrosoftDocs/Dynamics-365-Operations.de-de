@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-versions"></a>Nachkalkulationsversionen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Nachkalkulationsversionen, deren Verwaltung und die Datentypen, die Sie darin einschließen können. Der Hauptzweck einer Nachkalkulationsversion besteht in der Speicherung von Kostendatensätzen für Artikel sowie von Kostenkategorien und Berechnungsformeln für indirekte Kosten.
 

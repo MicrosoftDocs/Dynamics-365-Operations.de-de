@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-posting-profiles"></a>Kreditoren-Buchungsprofile
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Händlerbuchungsprofile steuern die Buchung von Händlertransaktionen im Hauptbuch.
 

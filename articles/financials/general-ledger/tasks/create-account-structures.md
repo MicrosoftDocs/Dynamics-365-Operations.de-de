@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-account-structures"></a>Kontostrukturen erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieser Aufgabenleitfaden führt Sie durch die Erstellung einer Kontostruktur. Bei den Schritten wird das Demodatunternehmen USMF verwendet.
 

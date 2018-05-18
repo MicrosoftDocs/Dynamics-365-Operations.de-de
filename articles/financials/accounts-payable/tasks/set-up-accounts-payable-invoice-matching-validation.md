@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Überprüfung des Kreditorenrechnungsabgleichs einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Für diese Erfassung wird das Demo-Unternehmen USMF verwendet. Die Kreditorenleiter- oder Buchhaltungsleiterrolle würde diese Schritte ausführen. Stellen Sie zu Beginn sicher, dass der Konfigurationsschlüssel "Rechnungsabgleich" ausgewählt wurde. Stellen Sie sicher, dass der Konfigurationsschlüssel "Belastungen" ausgewählt ist, wenn von der juristischen Person Belastungen zur Nachverfolgung von Ausgaben (wie z. B. Fracht) verwendet werden.  Beim Kreditorenrechnungsabgleich handelt es sich um den Prozess zum Abgleich der Informationen aus der Kreditorenrechnung, der Bestellung und des Produktzugangs. Unterschiede zwischen diesen Dokumenten werden als Abgleichsabweichung bezeichnet. Abgleichsabweichungen werden mit den angegebenen Toleranzen verglichen. Übersteigt die Abgleichsabweichung den Toleranzprozentsatz oder -betrag, werden in den Formularen "Kreditorenrechnung" und im Formular "Details zum Rechnungsabgleich" Abweichungssymbole angezeigt.
 

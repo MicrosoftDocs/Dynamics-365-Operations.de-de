@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="number-sequences"></a>Nummernkreise
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Bezeichnern für Masterdatensätze und Buchungsdatensätze, die Bezeichner benötigen. Ein Masterdatensatz oder Buchungsdatensatz, der eine Kennung erfordert, wird als *Referenz* bezeichnet.
 
@@ -52,7 +52,7 @@ Im folgenden Beispiel werden Spesenabrechnungsnummern für die juristische Perso
 - **Bereich:** Reisekosten und Ausgaben 
 - **Referenz:** Ausgaben-Berichtsnummer 
 - **Umfang:** Juristische Person 
-- **Juristische Person:**CS
+- **Juristische Person:** CS
 
 | Segmente  | Segmenttyp | Wert     |
 |-----------|--------------|-----------|
@@ -69,7 +69,7 @@ Sie können ein ähnliches Nummernkreisformat für andere juristische Personen e
 Im folgenden Beispiel werden Auftragsnummern für die Unternehmenskennung **CEU** eingerichtet. 
 
 - **Bereich:** Verkäufe 
-- **Referenz:**Verkaufsauftrag 
+- **Referenz:** Verkaufsauftrag 
 - **Umfang:** Unternehmen 
 - **Unternehmen:** CEU
 

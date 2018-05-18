@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="employee-development-power-bi-content"></a>Power BI-Inhalt – Mitarbeiterentwicklung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird der Microsoft Power BI-Inhalt **Mitarbeiterentwicklung** beschrieben.
 

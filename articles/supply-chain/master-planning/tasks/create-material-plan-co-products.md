@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-material-plan-for-co-products"></a>Materialplan für Co-Produkte erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Der Produktionsplaner plant den Materialbedarf für Artikel, die Co-Produkte der Formel sind. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USP2.
 

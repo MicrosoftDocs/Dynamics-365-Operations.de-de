@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="pay-based-on-registrations"></a>Lohn auf Basis von Erfassungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird im Detail erläutert, wie Lohn auf der Grundlage der Erfassungen von Arbeitskräften berechnet wird. Zudem enthält es Beispiele, die zeigen, wie die verschiedenen Kombinationen von Einrichtungsoptionen angezeigt werden, die für die Berechnung des Ergebnisses verfügbar sind. Nachfolgend sind einige der Bereiche, die erfasst sind:
 

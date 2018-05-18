@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="my-team-mobile-workspace"></a>Mobiler Arbeitsbereich für mein Team
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zum mobilen Arbeitsbereich **Mein Team**. Mit dem Arbeitsbereich können Manager ihre eigenen Mitarbeiter und erweitertes Personal anzeigen. Sie können auch Lob an Personen innerhalb der Mitarbeitergruppe senden.
 

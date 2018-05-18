@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-loyalty-programs"></a> Treueprogramme definieren
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren sehen Sie, wie ein Treueprogramm mit zwei Treuestufen eingerichtet wird. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-new-users"></a>Erstellen neuer Benutzer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Benutzer sind interne Mitarbeiter der Organisation oder externe Debitoren und Kreditoren, die Zugriff auf Microsoft Dynamics AX anfordern, ihre Einzelvorgänge auszuführen. Systemadministratoren können diese Verfahren ausführen, um dem System Benutzer hinzuzufügen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. 
 

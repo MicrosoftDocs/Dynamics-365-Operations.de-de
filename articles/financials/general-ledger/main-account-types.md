@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="main-account-types"></a>Hauptkontotypen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Die Hauptkontotypen bestimmen, wie ein Hauptkonto im Kontenplan verwendet wird.
 

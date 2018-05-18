@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-product-model-components"></a>Produktmodellkomponenten erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Einschränkungs-basierte Produktkonfigurationsmodelle verwenden Komponenten wie Bausteine, um die Produktmodellstruktur einzurichten. Die Komponenten müssen erstellt werden, bevor ein Produktmodell hergestellt werden kann. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

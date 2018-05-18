@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="register-material-consumption-using-a-mobile-device"></a>Materialverbrauch mithilfe eines mobilen Geräts registrieren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird ein Workflow beschrieben, der die Erfassung des Rohmaterialverbrauchs in der Produktion verwendet, indem eine mobiles Gerät verwendet wird.
 

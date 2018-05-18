@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-the-global-address-book"></a>Konfigurieren des globalen Adressbuchs
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Verwenden Sie diese Prozedur, um die Standardwerte und Sicherheitsrichtlinien für das globale Adressbuch festzulegen. 
 

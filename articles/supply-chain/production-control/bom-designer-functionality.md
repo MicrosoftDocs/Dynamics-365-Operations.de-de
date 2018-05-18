@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="bom-designer-functionality"></a>Funktionen des Stücklistendesigners
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Sie die Stücklisten-Designer-Seite verwenden können, um Strukturdarstellungen für Stücklisten (BOMs) zu entwerfen und anzuwenden. Sie können verschiedene Konfigurationen auswählen und festlegen, welche Informationen in den Positionen der Struktur enthalten sein sollen.
 

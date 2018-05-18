@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="modeling-a-lean-organization"></a>Modellierung einer Lean-Organisation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Der Artikel enthält Informationen zu zentralen Konzepten für die Modellierung einer Lean-Organisation. 
 

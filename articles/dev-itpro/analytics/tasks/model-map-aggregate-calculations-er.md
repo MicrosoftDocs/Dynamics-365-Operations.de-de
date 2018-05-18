@@ -24,7 +24,7 @@ ms.lasthandoff: 03/09/2018
 ---
 # <a name="use-a-model-mapping-configuration-for-aggregate-calculations-at-the-database-leveler"></a>Verwenden Sie eine Modellzuordnungskonfiguration für aggregierte Berechnungen auf Datenbankebene (ER) 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur bietet Informationen darüber, wie eine neue Modellzuordnungskonfiguration für elektronische Berichterstellung (EB) entworfen wird und wie integrierte EB-Funktionen für effiziente Aggregationsberechnungen verwendet werden. In dieser Prozedur erstellen Sie eine Konfiguration für das Beispielunternehmen Litware, Inc. 
 

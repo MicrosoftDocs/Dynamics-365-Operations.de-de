@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="file-formats-for-methods-of-payment"></a>Dateiformate für Zahlungsmethoden
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwendet werden können, beschrieben.
 

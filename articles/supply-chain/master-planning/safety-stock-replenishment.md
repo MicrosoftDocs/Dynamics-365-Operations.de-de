@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="safety-stock-fulfillment-for-items"></a>Sicherheitslagerbestandserfüllung für Artikel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Durch Sicherheitslagerbestand wird eine zusätzliche Menge eines Artikels angegeben, der im Bestand gehalten wird, um das Risiko zu verringern, dass der Artikel nicht vorrätig ist. Sicherheitslagerbestand wird als Ausgleichsbestand verwendet, für den Fall das Aufträge eintreffen und der Lieferant nicht in der Lage ist, die zusätzlichen Artikel so bald zu liefern, dass das angeforderte Lieferdatum des Debitors eingehalten werden kann. Wenn Sicherheitslagerbestand verwendet wird, um einen Auftrag zu erfüllen, wird der Sicherheitslagerbestand verringert. Sie können „Produktprogrammplan” verwenden, um den Lagerbestand wieder auf den Sicherheitsbestand anzuheben.    
 

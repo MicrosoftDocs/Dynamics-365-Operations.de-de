@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-purchasing-policies"></a>Erstellen von Einkaufsrichtlinien
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie Einkaufsrichtlinien so erstellt werden, dass sie sich an Ihren Geschäftsprozessen für den Einkauf ausrichten. Bevor Sie Einkaufsrichtlinien erstellen können, sind die Einkaufsrichtlinienparameter einzurichten. Es ist möglich, eine Einkaufsrichtlinie zu erstellen, zu ändern und außer Kraft zu setzen, aber Sie können eine Einkaufsrichtlinie nicht löschen. Diese Prozedur würde normalerweise von einem Einkaufsleiter ausgeführt werden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
 

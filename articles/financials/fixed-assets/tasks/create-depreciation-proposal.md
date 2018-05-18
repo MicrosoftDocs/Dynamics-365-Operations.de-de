@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-depreciation-proposal"></a>Einen Abschreibungsvorschlag erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In dieser Prozedur wird beschrieben, wie Abschreibungschargenvorschläge funktionieren und erläutert, wie Abschreibung für Anlagen vorgeschlagen wird. Bei dieser Aufgabe werden das Demo-Unternehmen USMF sowie die Buchhalterrolle verwendet.
 

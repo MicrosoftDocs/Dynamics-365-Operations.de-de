@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-home-page"></a>Startseite für die Budgetierung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält eine Übersicht über die Budgetierungsfunktionskomponenten, die Budgetierungstools und die Berichtsfunktionen in Finance and Operations. 
 

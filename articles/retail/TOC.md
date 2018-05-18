@@ -23,7 +23,8 @@
 
 # Mehrwertsteuer
 ## [Mehrwertsteuerüberblick](../financials/general-ledger/indirect-taxes-overview.md)
-## [Mehrwertsteuer-Berechnungsmethoden im Feld „Ursprung”](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## [Mehrwertsteuer-Berechnungsmethoden im Feld „Ursprung“](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## #### [Mehrwertsteuer-Zuweisung und -Außerkraftsetzungen](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Callcenter
@@ -167,6 +168,7 @@
 ## [Eine Hardwarestation erstellen und zuordnen](tasks/create-associate-hardware-station.md)
 ## [Register erstellen und zuordnen](tasks/create-associate-registers.md)
 ## [Einen Auszug für ein Einzelhandelsgeschäft erstellen, berechnen und buchen](tasks/create-calculate-post-statement-retail-store.md)
+## [Verbesserungen der Auszugsbuchung](statement-posting-EOD.md)
 ## [Callcenteraufträge erstellen](tasks/create-call-center-orders.md)
 ## [Finanzdimensionen für POS-Register erstellen und in Registern konfigurieren](tasks/create-financial-dimensions-pos.md)
 ## [Finanzdimensionen für Einzelhandelskanäle erstellen und Dimensionswerte in Geschäften konfigurieren](tasks/create-financial-dimensions-retail-channels.md)
@@ -288,8 +290,7 @@
 ### [Hinzufügen von benutzerdefinierten Spalten zu einem POS-Transaktionsraster](dev-itpro/pos-custom-transaction-column.md)
 ### [POS-API oder -Vorgang von POS-Erweiterung aus aufrufen](dev-itpro/pos-api-extension.md)
 ### [Auslöser und Drucken in Retail Modern POS](dev-itpro/pos-trigger-printing.md)
-### [Einer bildschirmlosen designerbasierten Retail Modern POS-Ansicht ein benutzerdefiniertes Steuerelement hinzufügen](dev-itpro/pos-control-non-screen.md)
-### [Einzelhandelsproxy für POS und E-Commerce generieren](dev-itpro/pos-generate-retail-proxy.md)
+### [Hinzufügen eines benutzerdefinierten Steuerelements zu einer Retail Modern POS-Ansicht, die nicht auf einem Bildschirm-Designer basiert](dev-itpro/pos-control-non-screen.md)
 ### [Konfigurationsschritte für Einzelhandelsentwickler, die mit in der Cloud gehosteten Entwicklungsfeldern arbeiten](dev-itpro/cloud-dev-box.md)
 
 ## Commerce-Laufzeit

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="cfo-overview-power-bi-content"></a>Power BI-Inhalt – Überblick (Leiter der Finanzabteilung)
 
-[!INCLUDE [banner](../includes/banner.md)] 
+[!include [banner](../includes/banner.md)] 
 
 In diesem Thema wird der Inhalt des Microsoft Power BI-**Überblick (Leiters der Finanzabteilung)** beschrieben. Dieser Power BI Inhalt gilt für jene, die Microsoft Dynamics 365 for Finance and Operations, Version 7.2 verwenden. Wenn Sie Version 7.3 oder später verwenden, gehen Sie zu [Finanzeinblicke](financial-insights.md).
 

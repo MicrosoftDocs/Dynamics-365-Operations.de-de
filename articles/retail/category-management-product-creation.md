@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manage-retail-product-categories-and-products"></a>Verwalten von Produktkategorien (Retail) und Produkten
 
-[!INCLUDE [banner](./includes/banner.md)]
+[!include [banner](./includes/banner.md)]
 
 Dieses Thema beschreibt eine erweiterte Art, Produktkategorien (Retail) und Produkte in Microsoft Dynamics 365 for Retail zu verwalten. Mit diesen Erweiterungen können Verkaufsmanager eine Struktur von Produkteigenschaften anzeigen, die von der Produkthierarchie (Retail) und freigegebenen Produktdetails geteilt werden.
 

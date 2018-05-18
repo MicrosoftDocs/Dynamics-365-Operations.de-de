@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="vendor-rebates"></a>Kreditorenrückvergütungen
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mithilfe von Kreditorenrückvergütungen können Unternehmen ihre Lieferantenrückvergütungsprogramme anhand automatisierter Aufgaben besser verwalten, die erforderlich sind, um Rückvergütungen, die verdient wurden, zu verwalten, nachzuverfolgen und zu fordern.
 

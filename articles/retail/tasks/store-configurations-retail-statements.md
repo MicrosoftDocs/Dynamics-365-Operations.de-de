@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="store-configurations-for-retail-statements"></a> Konfigurationen für Einzelhandelsauszüge speichern
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt Schritt für Schritt Konfigurationen für das Einzelhandelsgeschäft, die sich darauf auswirken, wie Einzelhandelsauszüge erstellt und gebucht werden. Finanzdimensionen in Einzelhandelsgeschäften werden in einer anderen Prozedur abgedeckt. Für diese Prozedur wird das Demo-Unternehmen USRT verwendet.
 

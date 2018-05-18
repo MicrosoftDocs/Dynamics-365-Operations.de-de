@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-compensation-grids"></a>Vergütungsraster einrichten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Vergütungsstrukturen werden zur Definition und Pflege der Vergütungsstrukturen für feste Vergütungspläne verwendet. Vergütungsraster können zwischen mehreren Plänen geteilt oder kopiert werden, wenn Sie einen neuen Vergütungsplan erstellen.  Vor dem Erstellen eines Vergütungsrasters müssen Ebenen und Referenzpunkte eingerichtet werden. In diesem Beispiel erstellen Sie einen neuen Gradtyp für Vergütungsraster mit Demodaten für Ebenen und Referenzpunkte. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

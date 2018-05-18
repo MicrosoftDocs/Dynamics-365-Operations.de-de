@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Vergütungsprozess definieren und Ergebnisse berechnen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Vergütungsprozesse werden verwendet, um neue Vergütungsbeträge und Prämien für die Mitarbeiter zu bestimmen, die in einem Plan für feste oder variable Vergütung registriert sind. Vergütungsprozesse können mehrmals ausgeführt werden, um "was wäre wenn"-Analysen auszuführen, um Änderungen und Einstellungen zu überprüfen. Diese Prozedur erstellt einen Vergütungsprozess, führt den Prozess aus und zeigt die Ergebnisse an. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

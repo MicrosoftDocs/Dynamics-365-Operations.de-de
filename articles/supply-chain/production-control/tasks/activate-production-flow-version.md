@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="activate-a-production-flow-version"></a>Eine Produktionsflussversion aktivieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Bevor Kanban-Einzelvorgänge erstellt werden können und Aktivitäten für eine Produktionsflussversion verarbeitet werden können, sollten Sie die Version aktivieren. Aktivieren Sie als bewährte Methode die Version, bevor ihr effektives Startdatum und ihre effektive Startuhrzeit ablaufen. Um diese Aufgabe abzuschließen, müssen Sie eine Produktionsflussversion haben, die den Status "Entwurf" hat, um die Version zu aktivieren. 
 

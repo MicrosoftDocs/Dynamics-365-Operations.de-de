@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="adjust-project-transactions"></a>Projektbuchungen regulieren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In diesem Aufgabenleitfaden erfahren Sie, wie Sie eine Buchung an ein Projekt anpassen. Sie können Projektbuchungen jedoch einzeln regulieren oder eine Auswahl aus einer Liste aller Projektbuchungen treffen. Diese Aufgabe wird normalerweise vom Projekt-Supervisor durchgeführt. Dieser Aufgabenleitfaden verwendet den USSI-Datensatz.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="pos-improvements-for-serialized-products"></a>POS-Verbesserungen für serialisierte Produkte
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Überblick 
 Basierend auf den Einstellungen in „Retail Zentralverwaltung” können Produkte entweder als serialisiert oder als nicht serialisiert klassifiziert werden. Wenn Produkte serialisiert sind, kann jedem Artikel eine eindeutige Nummer zugewiesen werden. Das erleichtert die Nachverfolgung von Garantien, von Artikeln sowie die Bestätigung des Besitzes. Obwohl die Möglichkeit der Angabe von Seriennummern für serialisierte Produkte in unserer Modern/Cloud Point of Sale (POS) vorhanden war, sind einige Verbesserungen hinzugefügt worden. So können Kassierer Zeit sparen und produktiver sein.  

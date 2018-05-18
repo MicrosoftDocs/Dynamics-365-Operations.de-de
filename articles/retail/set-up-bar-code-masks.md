@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-code-masks"></a>Einrichten von Strichcodemasken
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Strichcode-Maskenzeichen Strichcodemasken eingerichtet und wie Strichcodemasken zu Strichcodes zugeordnet werden.
 

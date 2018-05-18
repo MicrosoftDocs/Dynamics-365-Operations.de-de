@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="leave-and-absence-management-overview"></a>Urlaubs- und Abwesenheitsübersicht verwalten
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Das Modul **Urlaubs- und Absenzverwaltung** bietet ein flexibles Framework für das Definieren des Abwesenheitsverwaltungsprozesses. Urlaubs- und Abwesenheitspläne können erstellt werden, um festzustellen, wie Mitarbeiter anfallen oder Ihnen Freizeit gewährt wird. Nachdem Mitarbeiter in einem Plan registriert sind, können sie Freizeitersuchen zur Genehmigung durch  Vorgesetzte senden. In Urlaubnachverfolgung können Manager der obersten Ebene und Personalverwaltung (HR)- Manager anzeigen, wer freimacht und wie viel Freizeit jeder Mitarbeiter noch hat.  
 

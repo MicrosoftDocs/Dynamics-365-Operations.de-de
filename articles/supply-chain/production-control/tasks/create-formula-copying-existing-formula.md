@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>Eine Formel durch Kopieren aus einer vorhandenen Formel erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren sehen Sie, wie schnell eine neue Formel durch das Kopieren aus einer vorhandenen Formel erstellt wird. Sie können die Demodatunternehmen USMF, USP2 oder USPI verwenden, um diese Prozedur zu erstellen.
 

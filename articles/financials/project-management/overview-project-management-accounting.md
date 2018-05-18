@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-management-and-accounting"></a>Projektverwaltung und -verrechnung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Die Projektverwaltungs- und Buchhaltungsfunktionen können in mehreren Branchen verwendet werden, um eine Dienstleistung anzubieten, ein Produkt zu erzeugen oder ein Ergebnis zu erreichen.  
 

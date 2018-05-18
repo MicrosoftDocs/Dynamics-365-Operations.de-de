@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Zuweisen eines Projektbudgets oder einer Budgetüberarbeitung zu Perioden
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
  Nachdem Sie ein Projektbudget oder eine Überarbeitung eine Projektbudgets eingegeben haben, und bevor Sie sie zur Genehmigung übermitteln, können Sie die Beträge zu Perioden zuordnen. Wenn das Budget oder die Budgetüberarbeitung abgelehnt wird, können Sie die Beträge auch zuweisen, bevor Sie sie erneut übermitteln. 
 

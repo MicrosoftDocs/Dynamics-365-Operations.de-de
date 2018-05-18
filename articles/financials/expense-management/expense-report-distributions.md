@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="distributions-on-an-expense-report"></a>Verteilungen auf einer Spesenabrechnung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Wenn Sie Ausgaben in einer Spesenabrechnung eingeben, können Sie die Ausgaben auf mehrere Projekte,Finanzdimensionen oder Konten in der Organisation verteilen.
 

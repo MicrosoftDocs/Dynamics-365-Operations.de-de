@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-batch-attributes-for-a-product"></a>Chargenattribute für ein Produkt erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Im folgenden Verfahren wird dargestellt, wie ein Stapelverarbeitungsattribut erstellt, Standardwertbereiche zugeordnet und das Attribut in eine Gruppe einbezogen wird. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist das Unternehmen USP2.
 

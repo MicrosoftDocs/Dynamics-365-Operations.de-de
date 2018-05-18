@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a>Einen vorhandenen Mitarbeiter mittels Personalbeschaffung einstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Manchmal können offene Stellen von den Kandidaten ausgefüllt werden, die bereits Mitarbeiter in der Organisation sind. In diesem Verfahren werden Sie durch die Schritte zum Einstellen eines vorhandenen Mitarbeiters mittels Personalbeschaffungsprozess geführt. In diesem Verfahren wurde bereits ein Personalbeschaffungsprojekt eingerichtet, und ein vorhandener Mitarbeiter hat bereits eine Bewerbung für das Personalbeschaffungsprojekt eingereicht. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

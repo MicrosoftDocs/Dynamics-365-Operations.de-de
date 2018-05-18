@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Finanzdimensionen für POS-Register erstellen und in Registern konfigurieren
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von Finanzdimensionen für Verkaufsstellen (POS)-Register, und zeigt, wie Finanzdimensionswerte für Register konfiguriert werden. Diese Prozedur umfasst keine anderen zugehörigen Schritte, wie Erstellen von Dimensionssätzen und Kontostrukturen. Diese Aufgaben werden in anderen Themen behandelt. Für diese Erfassung wird das Demo-Unternehmen USRT verwendet.
 

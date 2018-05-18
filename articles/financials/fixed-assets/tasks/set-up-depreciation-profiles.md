@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Abschreibungsprofile einrichten und erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Abschreibungsprofile bestimmen den Typ und die Häufigkeit der Abschreibung für eine Anlage.   Bei dieser Aufzeichnung werden das Demo-Unternehmen USMF sowie die Buchhalterrolle verwendet.
 

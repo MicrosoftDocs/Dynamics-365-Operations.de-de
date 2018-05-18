@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-performance-review"></a>Eine Leistungsbeurteilung erstellen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie eine Leistungsüberprüfung erstellt wird und beschreibt den Zweck der Abschnitte der Prüfung. Diese Prozedur wurde mit dem Demodatenunternehmen USMF erstellt. Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
 

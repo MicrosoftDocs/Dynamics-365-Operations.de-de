@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="intercompany-invoicing"></a>Intercompany-Rechnungsstellung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen und Beispiele zur Intercompany-Fakturierung für Projekte in Microsoft Dynamics 365 for Finance and Operations.
 

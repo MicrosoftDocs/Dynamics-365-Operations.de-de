@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-quotations"></a>Projektangebote
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel stellt das Konzept der Projektangebote vor, die Sie verwenden können, um einem Kunden im ersten Schritt der Projektphase ein attraktives Angebot zu unterbreiten. Ein Projektangebot kann eine Vielzahl von Elementen und Dienstleistungen enthalten, die angeboten werden, beispielsweise grundlegende Kontaktinformationen, spezielle Handelsvereinbarungen und Rabatte sowie eventuelle Steuern und Zuschläge. 
 

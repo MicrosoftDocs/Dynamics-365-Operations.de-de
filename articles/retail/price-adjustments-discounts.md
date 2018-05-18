@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-adjustments-and-discounts"></a>Preisregulierungen und Rabatte
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Preisregulierungen und Rabatten für Microsoft Dynamics 365 for Retail.
 

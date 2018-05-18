@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Angebotsanforderungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern. Mit einer Angebotsanforderung werden Kreditoren gebeten, Preise und Lieferzeiten für die angegebenen Produktmengen bereitzustellen.
 Sie können Kreditoren auch bitten, anzugeben, ob zusätzliche Gebühren, etwa Lieferkosten, anfallen, oder ob der Kreditor Rabatte für große Bestellungen oder bei frühzeitiger Bezahlung der Rechnung anbietet.
@@ -57,8 +57,8 @@ Wenn Sie Angebote per E-Mail erhalten, müssen Sie diese Angebote auf der Seite 
 
 Wenn eine zweite Iteration von einer Antwort für einen bestimmten Kreditor erforderlich ist, klicken Sie auf **Zurück** auf der Seite **Antwort auf Angebotsanforderung**. Die Aktion „Zurück” generiert eine neue Erfassung und einen Bericht, der gemäß den Druckverwaltungseinstellungen gedruckt, archiviert und gesendet werden.
 
-[!NOTE]
-Der Name der Seite **Angebotsanforderung** hat geändert. In den früheren Versionen von Microsoft Dynamics 365 for Finance and Operations wird die Seite **Angebotsanforderung-Antwort** genannt.
+> [!NOTE]
+> Der Name der Seite **Angebotsanforderung** hat geändert. In den früheren Versionen von Microsoft Dynamics 365 for Finance and Operations wird die Seite **Angebotsanforderung-Antwort** genannt.
 
 Wenn Sie Bewertungskriterien zu Ihrer Angebotsanforderungsanfrage hinzugefügt haben, hat die Antwort auf die Angebotsanforderung einen Bewertungsbereich, in dem Sie die Punktzahlen eingeben können. Die Gesamtbewertungen werden in der Angebotsanforderung angezeigt, wenn Sie die Antworten auf der Seite **Antworten vergleichen** vergleichen. Auf dieser Seite können Sie auch **Antwortdaten vergleichen**, wie beispielsweise den Positionspreis, das Lieferdatum und den Gesamtpreis.
 
@@ -126,8 +126,8 @@ Wenn Sie Ursachencodes für eine Angebotsanforderungsantwort verwenden möchten,
 
 Auf der Seite **Formulareinstellungen** in „Beschaffung” können Sie die Darstellung Ihrer gedruckten oder gespeicherten Angebotsanforderungsdokumente konfigurieren.
 
-[!NOTE]
-Für eine Konfiguration für den öffentlichen Sektor müssen Sie den Ergänzungsprozess verwenden, um eine Angebotsanforderung zu ändern, die bereits gesendet wurde. Wenn eine Angebotsanforderung gesendet wird, sind Felder gesperrt.
+> [!NOTE]
+> Für eine Konfiguration für den öffentlichen Sektor müssen Sie den Ergänzungsprozess verwenden, um eine Angebotsanforderung zu ändern, die bereits gesendet wurde. Wenn eine Angebotsanforderung gesendet wird, sind Felder gesperrt.
 Um an der Angebotsanforderung Änderungen vornehmen zu können, müssen Sie daher **Erstellen** auswählen, um den Ergänzungsprozess zu beginnen, der zuvor beschrieben wurde. Das Sperrungsverhalten wird von der Option **Angebotsanforderung sperren, wenn diese gesendet wird** auf der Seite **Beschaffungsparameter** gesteuert. Standardmäßig ist dieser Parameter auf **Ja** festgelegt, und für eine Konfiguration für den öffentlichen Sektor kann die Standardeinstellung nicht geändert werden. Daher, obwohl der Ergänzungsprozess in einer Konfiguration, die nicht für den öffentlichen Sektor bestimmt ist, manuell gehandhabt werden kann, muss er in einer Konfiguration für den öffentlichen Sektor verwendet werden.
 
 Wenn Sie eine Angebotsanforderung für eine Bestellung erstellen und einen Lagerartikel zur Angebotsanforderung hinzufügen, wird eine Lagerbuchung mit dem Zugangsstatus **Angebotszugang** erstellt. Es werden nur Angebotsanforderungspositionen mit diesem Status berücksichtigt, wenn Sie einen Produktprogrammplan verwenden, um den Bestand zu berechnen. Wenn Sie möchten, dass der Produktprogrammplan Angebotsanforderungspositionen als erwarteten Zugang umfasst, müssen Sie dieses Verhalten in den Einstellungen des Produktprogrammplans konfigurieren.

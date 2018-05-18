@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Kreditbrief und Importinkasso
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält allgemeine Informationen über Kreditbrief und Importinkasso. Beide Arten von Bankdokumenten werden häufig für den Einkauf und Verkauf im internationalen Warenverkehr verwendet werden.
 

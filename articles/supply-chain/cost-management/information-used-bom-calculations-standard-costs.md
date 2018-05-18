@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>In Stücklistenberechnungen mit Standardkosten verwendete Informationen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In einer Stücklistenberechnung werden anhand von Daten aus mehreren Quellen die Standardkosten eines produzierten Artikels berechnet. Zu diesen Quellen zählen Informationen zu Artikeln, Listenrouten, Berechnungsformeln für indirekte Kosten sowie die Nachkalkulationsversion.
 

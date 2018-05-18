@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="company-directory-mobile-workspace"></a>Unternehmensverzeichnis für mobilen Arbeitsbereich
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zum **Unternehmensverzeichnis** im mobilen Arbeitsbereich. Dieser Arbeitsbereich ermöglicht Benutzern das Anzeigen von Kontakten und Mitarbeitern in der Organisation.
 

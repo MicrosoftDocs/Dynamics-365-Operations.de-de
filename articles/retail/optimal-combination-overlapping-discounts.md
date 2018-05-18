@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Ermittelt die optimale Kombination von überlappenden Rabatten
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Wenn Rabatte überlappen, müssen Sie die Kombination von Rabatten überlappenden bestimmen, die Buchungssumme niedrigsten oder höchsten den Rechnungsrabatt erzeugen. Wenn der Rabattbetrag gemäß dem Preis der Produkte schwankt, die, wie in der allgemeine "kaufen 1 erworben werden, erhalten Sie 1 x-Prozent Rundung" (BOGO) aus Kleinrabatt, wird dieser Prozess ein Abgang der kombinatorischen Optimierung ab.
 

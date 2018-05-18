@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-and-filter-workspaces"></a>Arbeitsbereiche konfigurieren und Filtern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel gibt einen Überblick darüber, wie Arbeitsbereiche konfiguriert und gefiltert werden.
 

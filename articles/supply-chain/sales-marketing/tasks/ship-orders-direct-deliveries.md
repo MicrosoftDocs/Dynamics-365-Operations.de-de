@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Aufträge als Direktlieferungen versenden
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Diese Prozedur zeigt, wie eine Direktauslieferung für einen Auftrag erstellt wird. Sie verwenden die Direktlieferung, wenn Sie Waren an den Debitor direkt vom Kreditor versenden möchten, anstatt sie zunächst an den eigenen Lagerort zu versenden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Um die zweite Unteraufgabe "Erstellen Sie Direktlieferungen von der Workbench" erfolgreich abzuschließen, stellen Sie sicher, dass der Artikel, den Sie im Auftrag ausgewählt haben, einem standardmäßigen Kreditoren zugeordnet ist, der im Einkauf-Inforegister des "Freigegebenen Produktmasters" angegeben ist.
 
