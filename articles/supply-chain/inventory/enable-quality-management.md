@@ -20,16 +20,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 91cc547becfbd0c0d675d87921aed92eb2ab570d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 79b3127f726a08cc24c20145b5ad9969157a899c
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="quality-management-overview"></a>Qualitätsmanagement-Übersicht
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Sie das Qualitätsmanagement in Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
 
@@ -356,10 +356,10 @@ Sie müssen eine Qualitätszuordnung für jede Variante in einem Geschäftsproze
 
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Qualitätsmanagement-Prozesse](quality-management-processes.md)
+[Qualitätsmanagementprozesse](quality-management-processes.md)
 
 [Verwaltung von Qualitätsmängeln aktivieren](enable-nonconformance-management.md)
 

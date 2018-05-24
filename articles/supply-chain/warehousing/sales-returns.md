@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e2125b3616310196b2c5ede0ddcaab24856ddc34
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-returns"></a>Retouren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
 
@@ -88,7 +88,7 @@ Nachdem Sie den Rückgabekopf erstellt haben, können Sie Rücksendepositionen e
 -   Geben Sie manuell die Artikeldetails, die Menge und andere Informationen für jede Rückgabeposition ein.
 -   Erstellen Sie einer Rückgabeposition, indem Sie die **Auftrag suchen** Funktion nutzen. Es wird empfohlen, diese Funktion zu verwenden, wenn Sie einer Rücklieferung erstellen. Die **Auftrag suchen** Funktion erstellt eine Referenz aus der Rückgabeposition für die fakturierte Auftragsposition und ruft Positionsdetails wie Artikelnummer, Menge, Preis, Rabatt und Kostenwerte aus der Auftragsposition ab. Die Referenz stellt sicher, dass, wenn das Produkt an das Unternehmen zurückgegeben ist, sein Wert dieselben Einheitenkosten hat, mit dem es verkauft wurde. Die Referenz geprüft außerdem, dass Rücklieferungen nicht für eine Menge erstellt werden, für die die Menge überschreitet, die in der Rechnung verkauft wurde.
 
-**Hinweis**: Rückgabepositionen, die eine Referenz zu einem Auftrag haben, werden als Korrekturen oder Rückbuchungen des Verkaufs behandelt. Weitere Informationen finden Sie im Abschnitt "Sachkonto buchen" weiter unten in diesem Thema.
+>[Hinweis!] Rückgabepositionen, die eine Referenz zu einem Auftrag haben, werden als Korrekturen oder Rückbuchungen des Verkaufs behandelt. Weitere Informationen finden Sie im Abschnitt "Sachkonto buchen" weiter unten in diesem Thema.
 
 ### <a name="charges"></a>Belastungen
 
@@ -193,15 +193,26 @@ Während des Eingangsprozesses werden Rücklieferungen mit dem allgemeinen Proze
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identifizieren von Produkte in der Wareneingangsübersichtliste
 
-Die **Wareneingangsübersicht** Seite zeigt alle geplanten eingehenden Wareneingängen an. **Hinweis:** Anzeigen der Rücklieferungen müssen separat verarbeitet werden als anderen Typen von Eingangsbuchungen. Nachdem ein eingehendes Paket für die **Wareneingangsübersicht** Seite, (beispielsweise mit Rücksendungsdokument) identifiziert wurde, klicken Sie im Aktivitätsbereich auf **Wareneingang starten**, um eine Wareneingangserfassung zu erstellen und zu initialisieren, die mit dem Zugang übereinstimmt.
+Die **Wareneingangsübersicht** Seite zeigt alle geplanten eingehenden Wareneingängen an. 
+>[Hinweis!] Anzeigen der Rücklieferungen müssen separat verarbeitet werden als anderen Typen von Eingangsbuchungen. Nachdem ein eingehendes Paket für die **Wareneingangsübersicht** Seite, (beispielsweise mit Rücksendungsdokument) identifiziert wurde, klicken Sie im Aktivitätsbereich auf **Wareneingang starten**, um eine Wareneingangserfassung zu erstellen und zu initialisieren, die mit dem Zugang übereinstimmt.
 
 ### <a name="edit-the-arrival-journal"></a>Bearbeiten der Eingangserfassung.
 
-Mit der **Quarantäneverwaltung** Option **Ja** können Sie für einen Quarantäneauftrag die Rückgabeposition erstellen. Wenn eine Position dagegen zur Untersuchung in Quarantäne geschickt wurde, können Sie keinen Dispositionscode festlegen. **Hinweis:** Ist die **Quarantäneverwaltung** Option **Ja** in der Lagersteuerungsgruppe des Artikels festgelegt, wird die **Quarantäneverwaltung** Option auf der **Erfassungspositionen** Seite für die markierten Wareneingangserfassungsposition nicht geändert werden. Wenn die Position in Quarantäne geschickt wird, müssen Sie den jeweiligen Quarantänelagerort angeben. Wenn die Eingangsposition nicht zur Prüfung übermittelt wird, muss der Lagerorteingangsbearbeiter den Dispositionscode direkt in der Empfangserfassungsposition angeben und dann der Wareneingangserfassung buchen. Wenn der gleiche Dispositionscode nicht auf die gesamte Menge der Rückgabeposition zugewiesen wird oder wenn die gesamte Menge der Position nicht erhalten wurde, muss die Position aufteilen. Wenn Sie eine Wareneingangserfassungsposition teilen, teilen Sie auch die Rückgabeposition (**SalesLine**) und erstellen eine neue Loskennung. Sie können die Position teilen, indem Sie die Menge der Empfangserfassungsposition reduzieren. Wenn die Erfassung gebucht ist, wird eine neue Rückgabeposition erstellt, die den Status **Erwartet** für die Restmenge hat. Sie können die Position auch teilen, indem Sie auf **Funktionen** &gt; **Teilen** klicken.
+Mit der **Quarantäneverwaltung** Option **Ja** können Sie für einen Quarantäneauftrag die Rückgabeposition erstellen. Wenn eine Position dagegen zur Untersuchung in Quarantäne geschickt wurde, können Sie keinen Dispositionscode festlegen. 
+ 
+Ist die **Quarantäneverwaltung** Option **Ja** in der Lagersteuerungsgruppe des Artikels festgelegt, wird die **Quarantäneverwaltung** Option auf der **Erfassungspositionen** Seite für die markierten Wareneingangserfassungsposition nicht geändert werden. Wenn die Position in Quarantäne geschickt wird, müssen Sie den jeweiligen Quarantänelagerort angeben. 
+
+Wenn die Eingangsposition nicht zur Prüfung übermittelt wird, muss der Lagerorteingangsbearbeiter den Dispositionscode direkt in der Empfangserfassungsposition angeben und dann der Wareneingangserfassung buchen. Wenn der gleiche Dispositionscode nicht auf die gesamte Menge der Rückgabeposition zugewiesen wird oder wenn die gesamte Menge der Position nicht erhalten wurde, muss die Position aufteilen. Wenn Sie eine Wareneingangserfassungsposition teilen, teilen Sie auch die Rückgabeposition (**SalesLine**) und erstellen eine neue Loskennung. Sie können die Position teilen, indem Sie die Menge der Empfangserfassungsposition reduzieren. Wenn die Erfassung gebucht ist, wird eine neue Rückgabeposition erstellt, die den Status **Erwartet** für die Restmenge hat. Sie können die Position auch teilen, indem Sie auf **Funktionen** &gt; **Teilen** klicken.
 
 ### <a name="process-the-quarantine-order"></a>Quarantäneauftrag verarbeiten
 
-Wenn die zurückgegebenen Produkte zur Prüfung am Quarantänelagerort gesendet werden, wird eine zusätzliche Verarbeitung in einen Quarantäneauftrag abgeschlossen. Ein Quarantäneauftrag wird für jede Eingangsposition erstellt, die in Quarantäne geschickt wird. Der Dispositionscode gibt das Ergebnis des Prüfprozesses an. Sie können einen Quarantäneauftrag teilen, genau wie Sie die Wareneingangserfassung teilen. Wenn Sie den Quarantäneauftrag teilen, können Sie die Rückgabeposition entsprechende teilen. Nachdem der Dispositionscode eingegeben ist, schließen Sie den Quarantäneauftrag ab, indem Sie entweder die **Ende** Funktion oder die **Als fertig melden** Funktion nutzen. Wenn Sie **Als fertig melden** auswählen, wird ein neuer Eingang im ausgewählten Lagerort erstellt. Sie können den Eingang dann verarbeiten, indem die **Wareneingangsübersicht** Seite nutzen. Wenn der Zugang aus einem Quarantäneauftrag stammt, können Sie den Standarddispositionscode nicht ändern, der für die Prüfung zugewiesen wird. Wenn Sie den Quarantäneauftrag abschließen, indem Sie die **Ende** Funktion verwenden, wird das Los automatisch erfasst. Manchmal kann ein Artikel aus der Quarantäne zurück an die Versand- und Empfangsabteilung gesendet werden. Beispielsweise weiß der Quarantäneprüfer möglicherweise nicht, wo der den Artikel lagern soll. In diesem Fall muss der entsprechende Lieferschein aktualisiert werden, um den Dispositionscode korrekt zu erfassen und zu bearbeiten, der aufgrund der Quarantäne angegeben wird. Die Empfangsbestätigung kann an den Debitor gesendet werden, wenn der Rückgabeposition erfasst wird. Der **Rückgabebestätigung** Bericht ähnelt dem Rücklieferungsdokument. Der **Rückgabebestätigung** Bericht ist nicht erfasst oder anderweitig im System registriert, und es ist kein obligatorischer Schritt im Rücklieferungsprozess.
+Wenn die zurückgegebenen Produkte zur Prüfung am Quarantänelagerort gesendet werden, wird eine zusätzliche Verarbeitung in einen Quarantäneauftrag abgeschlossen. Ein Quarantäneauftrag wird für jede Eingangsposition erstellt, die in Quarantäne geschickt wird. Der Dispositionscode gibt das Ergebnis des Prüfprozesses an. 
+
+Sie können einen Quarantäneauftrag teilen, genau wie Sie die Wareneingangserfassung teilen. Wenn Sie den Quarantäneauftrag teilen, können Sie die Rückgabeposition entsprechende teilen. Nachdem der Dispositionscode eingegeben ist, schließen Sie den Quarantäneauftrag ab, indem Sie entweder die **Ende** Funktion oder die **Als fertig melden** Funktion nutzen. Wenn Sie **Als fertig melden** auswählen, wird ein neuer Eingang im ausgewählten Lagerort erstellt. Sie können den Eingang dann verarbeiten, indem die **Wareneingangsübersicht** Seite nutzen. 
+
+Wenn der Zugang aus einem Quarantäneauftrag stammt, können Sie den Standarddispositionscode nicht ändern, der für die Prüfung zugewiesen wird. Wenn Sie den Quarantäneauftrag abschließen, indem Sie die **Ende** Funktion verwenden, wird das Los automatisch erfasst. Manchmal kann ein Artikel aus der Quarantäne zurück an die Versand- und Empfangsabteilung gesendet werden. Beispielsweise weiß der Quarantäneprüfer möglicherweise nicht, wo der den Artikel lagern soll. In diesem Fall muss der entsprechende Lieferschein aktualisiert werden, um den Dispositionscode korrekt zu erfassen und zu bearbeiten, der aufgrund der Quarantäne angegeben wird. 
+
+Die Empfangsbestätigung kann an den Debitor gesendet werden, wenn der Rückgabeposition erfasst wird. Der **Rückgabebestätigung** Bericht ähnelt dem Rücklieferungsdokument. Der **Rückgabebestätigung** Bericht ist nicht erfasst oder anderweitig im System registriert, und es ist kein obligatorischer Schritt im Rücklieferungsprozess.
 
 ## <a name="replace-a-product"></a>Ersetzen eines Produkts
 Es gibt zwei Methoden zum Verwalten von Ersatzprodukten:
@@ -223,7 +234,9 @@ Wenn Sie einen Ersatzartikel an den Debitor versenden, und die **Ersetzen und ve
 
 ![Ersetzungsprozess, wenn ein Dispositionscode verwendet wird](./media/SalesReturn05.png)
 
-Der Ersetzungsartikel wird geliefert, indem ein unabhängiger Auftrag verwendet wird (der Ersetzungsauftrag). Dieser Auftrag wird erstellt, wenn der Lieferschein für die Rücklieferung generiert wird. Der Auftragskopf verwendet Informationen des Debitors, auf den der Rücklieferungskopf verweist. Die Positionsinformationen werden aus den Informationen gesammelt, die auf die Seite **Ersetzungsartikel** eingegeben werden. Die **Ersetzungsartikel** Seite muss für Positionen gefüllt sein, die Dispositionsaktivitäten haben, die mit dem Begriff "Ersetzen" beginnen. Allerdings wird weder die Menge noch die Identität des Wiederbeschaffungsartikel geprüft oder beschränkt. Dieses Verhalten ermöglicht Fälle, in denen der Debitor den gleichen Artikel in einer anderen Konfiguration oder Größe wünscht, und auch Anfragen, in denen Debitoren einen vollständig anderen Artikel wünscht. Standardmäßig wird ein identischer Artikel auf die Seite **Ersetzungsartikel** eingegeben. Sie können jedoch einen anderen Artikel auswählen, vorausgesetzt, dass die Funktion eingerichtet wurde. **Hinweis**: Der Ersetzungsauftrag kann bearbeitet und gelöscht werden, wenn er erstellt wurde.
+Der Ersetzungsartikel wird geliefert, indem ein unabhängiger Auftrag verwendet wird (der Ersetzungsauftrag). Dieser Auftrag wird erstellt, wenn der Lieferschein für die Rücklieferung generiert wird. Der Auftragskopf verwendet Informationen des Debitors, auf den der Rücklieferungskopf verweist. Die Positionsinformationen werden aus den Informationen gesammelt, die auf die Seite **Ersetzungsartikel** eingegeben werden. Die **Ersetzungsartikel** Seite muss für Positionen gefüllt sein, die Dispositionsaktivitäten haben, die mit dem Begriff "Ersetzen" beginnen. Allerdings wird weder die Menge noch die Identität des Wiederbeschaffungsartikel geprüft oder beschränkt. Dieses Verhalten ermöglicht Fälle, in denen der Debitor den gleichen Artikel in einer anderen Konfiguration oder Größe wünscht, und auch Anfragen, in denen Debitoren einen vollständig anderen Artikel wünscht. Standardmäßig wird ein identischer Artikel auf die Seite **Ersetzungsartikel** eingegeben. Sie können jedoch einen anderen Artikel auswählen, vorausgesetzt, dass die Funktion eingerichtet wurde. 
+
+>[Hinweis!] Der Ersetzungsauftrag kann bearbeitet und gelöscht werden, wenn er erstellt wurde.
 
 ## <a name="generate-a-packing-slip"></a>Lieferschein generieren
 Bevor zurückgelieferte Artikel im Lager entgegengenommen werden können, muss der Lieferschein für den zugehörigen Auftrag aktualisiert werden. So wie die Rechnungsaktualisierung die Aktualisierung für die Finanzbuchung darstellt, ist die Lieferscheinaktualisierung die physische Aktualisierung des Lagerdatensatzes. Das bedeutet, dieser Prozess übernimmt die Änderungen in das Lager. Bei Retouren werden die der Dispositionsaktivität zugeordneten Schritte bei der Lieferscheinaktualisierung implementiert. Wenn Sie den Lieferschein generieren, treten folgende Ereignisse auf:
@@ -233,14 +246,19 @@ Bevor zurückgelieferte Artikel im Lager entgegengenommen werden können, muss d
 -   Artikel, die mit der Dispositionsaktivität **Rücklieferung zum Debitor** markiert wurden, werden empfangen und an den Debitor geliefert. Diese Artikel haben keine Auswirkung auf das Lager.
 -   Ein Ersatzauftrag wird erstellt. Dieser Auftrag basiert auf Informationen der **Ersetzungsartikel** Seite.
 
-Sie können den Lieferschein nur für Positionen generieren, die den Retourestatus **Erfasst** haben, und nur für die gesamte Menge der Rückgabeposition. Wenn mehrere Positionen auf der Rücklieferung den **Erfasst** Status haben, können Sie den Lieferschein für eine Teilmenge der Positionen generieren, indem Sie die Positionen aus der anderen **Lieferschein** Seite löschen. Teillieferungen werden in Bezug auf Rücklieferungspositionen und nicht Rücklieferungen definiert. Dies bedeutet, wenn die in einer Rücklieferungsposition angegebene volle Menge eingeht, jedoch kein Artikel aus den anderen Positionen in der Rücklieferung, dann ist die Lieferung keine Teillieferung. Um eine Teillieferung handelt es sich dagegen, wenn z. B. laut einer Rücklieferungsposition zehn Einheiten eines bestimmten Artikels zurückgeliefert werden sollen, jedoch nur vier Einheiten eingehen. Wenn nicht alle erwarteten Rückgabeartikel eingegangen sind, können Sie die Lieferung ruhen lassen und auf den Eingang der restlichen zurückgelieferten Menge warten. Alternativ können Sie die Teillieferung erfassen und buchen. Als Teil des Prozesses der Lieferscheinbuchung kann die Lieferschein-Referenznummer aus den Versanddokumenten des Debitors den Auftragspositionen zugeordnet werden. Diese Zuordnung dient lediglich Referenzzwecken und führt nicht zu Buchungsaktualisierungen. Im Allgemeinen können Sie den Lieferscheinprozess überspringen und Fakturierung direkt eingeben. In diesem Fall sind die Schritte, die während der Buchungsgenerierung ausgeführt werden, bei der Fakturierung abgeschlossen.
+Sie können den Lieferschein nur für Positionen generieren, die den Retourestatus **Erfasst** haben, und nur für die gesamte Menge der Rückgabeposition. Wenn mehrere Positionen auf der Rücklieferung den **Erfasst** Status haben, können Sie den Lieferschein für eine Teilmenge der Positionen generieren, indem Sie die Positionen aus der anderen **Lieferschein** Seite löschen. 
+
+Teillieferungen werden in Bezug auf Rücklieferungspositionen und nicht Rücklieferungen definiert. Dies bedeutet, wenn die in einer Rücklieferungsposition angegebene volle Menge eingeht, jedoch kein Artikel aus den anderen Positionen in der Rücklieferung, dann ist die Lieferung keine Teillieferung. Um eine Teillieferung handelt es sich dagegen, wenn z. B. laut einer Rücklieferungsposition zehn Einheiten eines bestimmten Artikels zurückgeliefert werden sollen, jedoch nur vier Einheiten eingehen. Wenn nicht alle erwarteten Rückgabeartikel eingegangen sind, können Sie die Lieferung ruhen lassen und auf den Eingang der restlichen zurückgelieferten Menge warten. Alternativ können Sie die Teillieferung erfassen und buchen. Als Teil des Prozesses der Lieferscheinbuchung kann die Lieferschein-Referenznummer aus den Versanddokumenten des Debitors den Auftragspositionen zugeordnet werden. Diese Zuordnung dient lediglich Referenzzwecken und führt nicht zu Buchungsaktualisierungen. 
+
+Im Allgemeinen können Sie den Lieferscheinprozess überspringen und Fakturierung direkt eingeben. In diesem Fall sind die Schritte, die während der Buchungsgenerierung ausgeführt werden, bei der Fakturierung abgeschlossen.
 
 ## <a name="generate-an-invoice"></a>Rechnung generieren
 Obwohl die **Rücklieferung** Seite die Informationen und Aktivitäten enthält, die erforderlich sind, um die logistischen besondere Aspekte der Rücklieferung zu verarbeiten, müssen Sie die **Auftrag** Seite verwenden, um den Fakturierungsprozess abzuschließen. Ihre Organisation kann dann Rücklieferungsauftrage und Aufträge gleichzeitig fakturieren, und die gleiche Person kann den Fakturierungsprozess abschließen. Wählen Sie zur Anzeige der Rücklieferung über die **Auftrag** Seite anzuzeigen den Link für die Auftragsnummer den zugehörigen Auftrag aus. Sie können die Rücklieferung auch auf der Seite **Alle Aufträge** finden. Rücklieferungen sind Aufträge, die den Auftragstyp **Zurückgegebener Auftrag** haben.
 
 ### <a name="credit-correction"></a>Habenkorrektur
 
-Als Teil des Rechnungsstellungsprozesses überprüften Sie, ob sonstige Zuschläge korrekt sind. Sollen die Sachkontobuchungen zu Korrekturen (Storno) werden, sollten Sie die Option **Kreditkorrektur** auf der Registerkarte **Andere** der Seite **Buchungsrechnung**  verwenden wenn Sie die Rechnung/eine Gutschrift buchen. **Hinweis**: Standardmäßig ist die **Habenkorrektur** Option aktiviert, wenn die **Gutschrift als Korrektur** Option auf der Seite **Debitorenparameter** aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
+Als Teil des Rechnungsstellungsprozesses überprüften Sie, ob sonstige Zuschläge korrekt sind. Sollen die Sachkontobuchungen zu Korrekturen (Storno) werden, sollten Sie die Option **Kreditkorrektur** auf der Registerkarte **Andere** der Seite **Buchungsrechnung**  verwenden wenn Sie die Rechnung/eine Gutschrift buchen. 
+>[Hinweis!] Standardmäßig ist die **Habenkorrektur** Option aktiviert, wenn die **Gutschrift als Korrektur** Option auf der Seite **Debitorenparameter** aktiviert wurde. Es wird jedoch empfohlen, dass Sie Rücklieferungen nicht mit Storno buchen.
 
 ## <a name="create-intercompany-return-orders"></a>Intercompany-Rücklieferung erstellen
 Rücklieferungen können zwischen zwei Unternehmen innerhalb Ihrer Organisation abgeschlossen werden. Folgende Szenarios werden unterstützt:
@@ -294,7 +312,7 @@ Die Rückgabe verweist auf keine Debitorenrechnung. Der zurückgelieferten Artik
 
 ![Die Rückgabe verweist auf keine Debitorenrechnung](./media/SalesReturn09.png)  
 
-**Hinweis:** Der Artikelmaster-Preis wird als Standardwert für den **Rücklieferungseinstandspreis** Parameter verwendet. Der Standardpreis unterscheidet sich von dem Einstandspreis zum Zeitpunkt des Lagerabgangs. Daher ist die Auswirkungen, dass ein Verlust von 3 verursacht wurde. Darüber hinaus enthält die Rücklieferung nicht den Rabatt, dem Debitor im Auftrag der angegeben wurde. Daher tritt ein übermäßiges Haben auf.
+>[Hinweis!] Der Artikelmaster-Preis wird als Standardwert für den **Rücklieferungseinstandspreis** Parameter verwendet. Der Standardpreis unterscheidet sich von dem Einstandspreis zum Zeitpunkt des Lagerabgangs. Daher ist die Auswirkungen, dass ein Verlust von 3 verursacht wurde. Darüber hinaus enthält die Rücklieferung nicht den Rabatt, dem Debitor im Auftrag der angegeben wurde. Daher tritt ein übermäßiges Haben auf.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Beispiel 2: Habenkorrektur ist für die Rücklieferung ausgewählt
 
@@ -302,7 +320,7 @@ Beispiel 2 entspricht Beispiel 1, aber der **Habenkorrektur** Parameter ist akti
 
 ![Habenkorrektur ist für die Rücklieferung ausgewählt ](./media/SalesReturn10.png)  
 
-**Hinweis:** Die Sachkontobuchungen werden als negative Korrekturen eingegeben.
+>[Hinweis!] Die Sachkontobuchungen werden als negative Korrekturen eingegeben.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Beispiel 3: Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird
 
@@ -310,7 +328,7 @@ In diesem Beispiel wird die Rücklieferungsposition erstellt, indem die **Auftra
 
 ![Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird ](./media/SalesReturn11.png)  
 
-**Hinweis:** **Rabatt** und **Rücklieferungseinstandspreis** werden ordnungsgemäß festgelegt. Aus diesem Grund tritt eine genaue Stornierung der Debitorenrechnung auf.
+>[Hinweis!] **Rabatt** und **Rücklieferungseinstandspreis** werden ordnungsgemäß festgelegt. Aus diesem Grund tritt eine genaue Stornierung der Debitorenrechnung auf.
 
 
 

@@ -19,25 +19,24 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9960af8c4961a42e7e829077da40bcbbf3bc71c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5ccf41d1184280d3c4a000db13847733fd2cf4d2
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cash-discounts"></a>Skonti
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Skonti werden für Kreditoren und Debitoren eingerichtet und freigegeben.  Das verfügbare Skonto kann auf der Debitorenrechnung oder der Kreditorenrechnung definiert werden und wird übernommen, wenn die Rechnung innerhalb des Skontodatums bezahlt wird. 
 
-<a name="cash-discounts"></a>Skonti
---------------
+## <a name="cash-discounts"></a>Skonti
 
 Skonti für Debitoren oder Kreditoren können auf der Skontoseite erstellt werden. Mithilfe des Felds "Nächster Skontocode" können Sie zudem eine Reihe von aufeinander folgenden Skonti definieren, die aufeinander folgen. Weitere Informationen finden Sie weiter unten in diesem Thema unter "Beispiel: Reihe von aufeinander folgenden Skonti". Wenn die Rechnung, die Habenbuchung (entweder Zahlung oder Gutschrift) oder beide nicht in einer Buchungswährung der juristischen Person eingegeben werden, wird das Skonto basierend auf dem Wechselkurs für Skonti für das Datum der Zahlung oder der Gutschrift berechnet. Wenn die Rechnung und das Habendokument in verschiedenen juristischen Personen erfasst werden und die Buchhaltungswährungen der juristischen Personen unterschiedlich sind, wird der Wechselkurs der juristischen Person der Rechnung verwendet, der am Datum des Habendokuments gültig ist. Weitere Informationen finden Sie weiter unten in diesem Thema unter "Beispiel: Wechselkurse für Skonti".
-Standardreihenfolge des Skonto-Hauptkontos
-----------------------------------------------
+
+## <a name="defaulting-order-of-cash-discount-main-account"></a>Standardreihenfolge des Skonto-Hauptkontos
 
 Wird eine Rechnung so frühzeitig beglichen, dass ein Skonto gewährt wird, so wird das Skonto automatisch auf ein Hauptkonto gebucht. Hierbei gilt folgende Standardpriorität:
 1.  Das Hauptkonto, das im alternativen Feld "Alternatives Skontokonto" auf der Seite "Offene Buchungen ausgleichen" oder auf der Seite "Offene Buchungen ausgleichen" des Kreditors angegeben ist.
@@ -65,15 +64,7 @@ Die Buchhaltungswährung der juristischen Person ist EUR, und für US-Dollar sin
 
 Eine Rechnung in Höhe von 1.000 US-Dollar mit den Skontobedingungen von 20D2% wird am 15. Februar gebucht. Der Rechnungsbetrag in der Buchhaltungswährung beträgt 1.100 EUR. Eine Zahlung in Höhe von 980 US-Dollar wird mit der Rechnung vom 1. März ausgeglichen. Der Skontobetrag ist 20 US-Dollar. Der Zahlungsbetrag in der Buchhaltungswährung ist 784 EUR. Der Buchhaltungswährungsbetrag des Skontos wird mit dem Wechselkurs am 1. März berechnet: 20 \* 80 / 100 = 16 EUR.
 
-| **Hinweis**                                                                                                                                                                                                                             |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wenn die Option "Skonti für Teilzahlungen berechnen" auf der Debitorenparameter- oder Kreditorenparameterseite aktiviert ist, wird der Wechselkurs, der am Tag der jeweiligen Teilzahlung gültig ist, verwendet. |
-
- 
-=
-
- 
-
-
+> [!NOTE]
+> Wenn die Option "Skonti für Teilzahlungen berechnen" auf der Debitorenparameter- oder Kreditorenparameterseite aktiviert ist, wird der Wechselkurs, der am Tag der jeweiligen Teilzahlung gültig ist, verwendet. 
 
 

@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner in der elektronischen Berichterstellung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronischen Berichterstattung (ER) verwendet wird. Wenn Sie ein Format für ein bestimmtes elektronisches Dokument in EB entwerfen, können Sie Formeln zum Transformieren von Daten verwenden, sodass sie den Anforderungen für die Dokumenterfüllung und Formatierung zu entsprechen. Diese Formeln ähneln Formeln in Microsoft Excel. Unterschiedliche Arten von Funktionen werden in den Formeln unterstützt: Text, Datum und Uhrzeit, Mathematisches, Logisches, Informationen, Datentypumrechnung und andere (domänenspezifische Funktionen des Unternehmens).
 
@@ -647,7 +647,7 @@ Die Parameter für Druckwährungsnamen-Kennzeichen und Dezimalstellen werden nur
 
 ER ermöglicht es Ihnen, die Liste von Funktionen zu verlängern, die in ER-Ausdrücken verwendet werden. Etwas technischer Aufwand ist erforderlich. Ausführliche Informationen finden Sie unter [Erweitern der Liste der elektronischen Berichtsfunktion](general-electronic-reporting-formulas-list-extension.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
 

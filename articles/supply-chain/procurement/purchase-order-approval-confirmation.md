@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1c7209c91f3821a77e9b127d767c78df403ff6cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 475470fa87455e187e0a93148046cb1df634da1f
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="approve-and-confirm-purchase-orders"></a>Genehmigen und Freigeben von Bestellungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Dieser Artikel beschreibt die Statuswerte einer Bestellung (PO) nach der Erstellung und den Effekt des Änderungsmanagements für Bestellungen.
 
@@ -75,7 +75,7 @@ Wenn ein Teil der bestellten Menge für eine Bestellposition geliefert wurde, k�
 
 Wenn eine Bestellung bestätigt ist, können Sie diese nicht mehr löschen. Sie können jedoch die Gesamtmenge oder die verbleibende Menge einer Bestellung stornieren (solange die Menge noch nicht empfangen oder fakturiert wurde).
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Überblick über Bestellungen](purchase-order-overview.md)

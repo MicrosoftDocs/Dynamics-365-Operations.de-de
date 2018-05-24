@@ -18,16 +18,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 45717bc1a7093c0282d214fc4ce5fdf153bb14a1
 ms.contentlocale: de-de
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurieren elektronischer Berichterstattung, um Daten in Power BI einzubeziehen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung verwenden können, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Power BI-Diensten zu veranlassen. Als Beispiel verwendet dieses Thema Intrastat-Buchungen als Geschäftsdaten, die übertragen werden müssen. Die Power BI-Zuordnungsvisualisierung verwendet diese Intrastat-Buchungsdaten, um eine Ansicht zur Analyse von Import-/Exportaktivitäten von Unternehmen im Power BI-Bericht darzustellen.
 
@@ -132,7 +132,7 @@ Richten Sie die Integration zwischen Finance and Operations und Power BI ein. We
 2. Wählen Sie den Power BI-Bericht **Import- und Exportdetails** aus, den Sie erstellt haben, um diesen Bericht als ein Aktionselement auf der ausgewählten Seite anzuzeigen. 
 3. Klicken Sie auf das Aktionselement, um die Seite Finance and Operatons zu öffnen, die den Bericht anzeigt, den Sie in Power BI entworfen haben. [![Import- und Exportdetailbericht.xlsx](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Zielorte für elektronische Berichterstellung](electronic-reporting-destinations.md)

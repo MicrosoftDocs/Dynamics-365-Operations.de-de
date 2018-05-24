@@ -1,6 +1,6 @@
 ---
 title: Die Suche nach Produkten und Produktvarianten bei der Auftragserfassung
-description: "Verwenden Sie das Feld <strong>Artikelnummer </strong>, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen.  Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht."
+description: "Verwenden Sie das Feld **Artikelnummer**, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen. Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht."
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,20 +20,20 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Die Suche nach Produkten und Produktvarianten bei der Auftragserfassung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
-Verwenden Sie das Feld <strong>Artikelnummer </strong>, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen.  Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht.
+Verwenden Sie das Feld **Artikelnummer**, um nach Produkten und Produktvarianten zu suchen, wenn Sie manuell eine Auftragsposition oder eine Bestellposition erstellen.  Dadurch können Sie schnell Produktvarianten suchen, wenn Ihnen nur die Konfigurationszeichenfolge oder eine der Produktdimensionen zur Verfügung steht.
 
 Manchmal ist die Lage nicht optimal, wenn zu viel von einer Sache vorhanden ist. Das gilt insbesondere, wenn Sie eine Anzahl ähnlicher Produkte verkaufen und versuchen, sich die Artikelnummern oder Produktsuchbegriffe zu merken, um das richtige Produkt zu finden, das einem Auftrag hinzugefügt werden soll. Sie können das Feld **Artikelnummer** in einer Auftragsposition oder einer Bestellposition als Suchfeld verwenden. Sie können einen beliebigen Teil eines Produktnamens, einer Zahl oder Dimension eingeben und eine Auswahlliste erhalten, bei der alle Artikel angezeigt werden, die mit dem Suchbegriff übereinstimmen.
 
@@ -47,7 +47,7 @@ Wenn Sie nach Produkten oder Produktvarianten suchen, ist es wichtig zu verstehe
 
 ### <a name="examples"></a>Beispiele
 
-In den folgenden Beispielen werden Produkte und Produktvarianten verwendet, um zu zeigen, wie die Suche in unterschiedlichen Szenarien gehandhabt wird. **Voraussetzung:** Unter **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter** &gt; **Suchtyp** wählen Sie die Option **Vollständige Übereinstimmung** aus.
+In den folgenden Beispielen werden Produkte und Produktvarianten verwendet, um zu zeigen, wie die Suche in unterschiedlichen Szenarien gehandhabt wird. **Voraussetzung**: Unter **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchparameter &gt; Suchtyp** wählen Sie die Option **Vollständige Übereinstimmung** aus.
 
 | Produkttyp     | Produktname    | Produktnummer anzeigen | Artikelnummer | Variante |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -72,7 +72,7 @@ Beispiele für Produkt- und Produktvariantenbezeichner und -dimensionen, anhand 
 
 Wechseln Sie zur Seite **Vertrieb und Marketing &gt; Setup &gt; Suche &gt; Suchkriterien**. Auf der Seite **Suchkriterien** können Sie Kriterien für Kunden, Interessenten und die Produktsuche definieren. Stellen Sie sicher, dass Sie die Seite mithilfe von Produktsuchkriterien filtern. Dies können Sie, indem Sie auf **Produkt** im Menü der Seite wechseln.  
 
-Um der Anzeigenproduktnummer die Suchkriterien hinzufügen möchten, klicken Sie <strong>Neu</strong> im Menü der Seite. Hierdurch wird einem neuen Datensatzes im <strong>Suchkriterien</strong> Raster hinzu. Öffnen Sie die Spalten-Auswahlliste <strong>Feldname</strong> und wählen Sie <strong>DisplayProductNumber</strong> aus. Um die Konfiguration des Produkts den Suchkriterien hinzuzufügen, erstellen Sie einen neuen Datensatz im Raster <strong>Suchkriterien</strong> und wählen Sie **configId** in der Spalte <strong>Feldname</strong> aus. Auf die gleiche Weise erstellen Sie einen Datensatz mit <strong>Feldname</strong> <strong>InventColorId</strong> für die Farbdimension, <strong>InventSizeId</strong> für die Größendimension und <strong>InventStyleId</strong> für die Stildimension.
+Um der Anzeigenproduktnummer die Suchkriterien hinzufügen möchten, klicken Sie **Neu** im Menü der Seite. Hierdurch wird einem neuen Datensatzes im **Suchkriterien** Raster hinzu. Öffnen Sie die Spalten-Auswahlliste **Feldname** und wählen Sie **DisplayProductNumber** aus. Um die Konfiguration des Produkts den Suchkriterien hinzuzufügen, erstellen Sie einen neuen Datensatz im Raster **Suchkriterien** und wählen Sie **configId** in der Spalte **Feldname** aus. Auf die gleiche Weise erstellen Sie einen Datensatz mit **Feldname** **InventColorId** für die Farbdimension, **InventSizeId** für die Größendimension und **InventStyleId** für die Stildimension.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Schritt 2: Füllen Sie die Datenbanktabelle auf, die für die Produktsuche verwendet wird
 

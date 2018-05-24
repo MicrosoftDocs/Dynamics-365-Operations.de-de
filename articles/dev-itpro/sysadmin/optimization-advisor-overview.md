@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c055c673443255f3e6dda5e1179e1ef28d90e693
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c2a957038bfad065361b46e85b8195214779cc2d
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="optimization-advisor-overview"></a>Optimierungsratgeber – Überblick
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Optimierungsratgeber verwenden können, um eine optimale Konfiguration von Microsoft Dynamics 365 Finance and Operations zu gewährleisten.
 
@@ -50,8 +50,6 @@ Standardsicherheits-Richtlinien gelten für Optimierungsverkaufschancen. Beispie
 Wenn Sie für manche Optimierungsverkaufschancen Maßnahmen ergreifen, berechnet das System die Auswirkungen der Verkaufschance in Bezug auf die Verringerung in der Laufzeit von Geschäftsprozessen. Leider ist diese Funktion nicht für alle Optimierungsverkaufschancen verfügbar.
 
 Um weitere Informationen zu Optimierungsratgeber zu erhalten, sehen Sie sich den kurzen Video [Optimierungsratgeber in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ) an.
-
-> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
 ## <a name="optimization-rules"></a>Optimierungsregeln
 
@@ -93,7 +91,7 @@ Wenn eine Verkaufschance nicht für Ihre Rolle gilt, können Sie **Kontrollkäst
 
 Um die Bewertung bestimmter Regeln zu deaktivieren, wählen Sie die Verkaufschance aus, die durch die Regel generiert wurde, und wählen dann **Analyse deaktivieren** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Erstellen neuer Regeln](./create-rules-optimization-advisor.md)
 

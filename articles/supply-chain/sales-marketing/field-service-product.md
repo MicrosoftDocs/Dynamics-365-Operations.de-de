@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 699830ce6cd993f3dd3fd4ff744ce5a8b9645c32
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: bf5de13fee6db1b467c1cf4d5cc65b46c67b29fe
 ms.contentlocale: de-de
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -66,4 +66,12 @@ In Finance and Operations wird der Wert **Field Service-Produkttyp** in der Date
 - **Bestand:** = Produkttyp = Produkt- und Artikelmodellgruppe, Gelagertes Produkt = True
 - **NonInventory:** = Produkttyp = Produkt- und Artikelmodellgruppe, Gelagertes Produkt = False
 - **Service:** Produkttyp = Dienstleistung
+
+## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
+
+Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
+
+### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>Field Service-Produkte (Finance and Operations nach Field Service): Produkte - Produkte
+
+[![Vorlagenzuordnung in Datenintegration](./media/FSProduct.png)](./media/FSProduct.png)
 

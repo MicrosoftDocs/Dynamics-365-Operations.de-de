@@ -19,16 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurieren von mobile Geräten für Lagerortarbeit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 
@@ -407,10 +407,10 @@ In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei 
 
 **Hinweis:** Produktbestätigungen können nur bei Entnahmen und Einlagerungen erforderlich gemacht werden.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Anzeigeeinstellungen für das mobile Gerät für das Lager](change-warehouse-mobile-device-displays.md)
+[Anzeigeeinstellungen für mobile Geräte für das Lager](change-warehouse-mobile-device-displays.md)
 
 [Einrichtung eines Menüeintrags für mobile Geräte, um Bestellungen bearbeiten zu können (Aufgabenleitfaden)](tasks/set-up-mobile-device-menu.md)
 

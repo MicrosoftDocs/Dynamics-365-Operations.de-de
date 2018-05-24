@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 858328ec60e0ffa5ca46a98b365fb0fc599ae1f0
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="coverage-settings"></a>Dispositionseinstellungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Diese Deckungseinstellungen werden beim Produktprogrammplanungslauf zum Berechnen des Artikelbedarfs verwendet. 
 
@@ -45,14 +45,14 @@ Sie können Deckungseinstellungen auf verschiedene Arten angeben:
 
 <!-- -->
 
-- Angeben von Deckungseinstellungen für eine Dimensionsgruppe. Klicken Sie auf <strong>Produktinformationsverwaltung &gt; Allgemein &gt; Freigegebene Produkte</strong>. Klicken Sie auf der Seite <strong>Detail für freigegebenes Produkt **auf der Registerkarte **Allgemein</strong> in der Gruppe <strong>Verwaltung</strong> auf den Link <strong>Lagerdimensionsgruppe</strong>. Wählen Sie auf der Seite <strong>Lagerdimensionsgruppe</strong> das Feld <strong>Disposition nach Dimensionen</strong> aus, um die Deckungseinstellungen für eine Dimension in der Lagerdimensionsgruppe zu erstellen. Für jede Produktdimension, wie Konfiguration, Farbe, Größe, Stil, muss das Feld <strong>Abdeckungsplan nach Dimensionn</strong> ausgewählt sein.
+- Angeben von Deckungseinstellungen für eine Dimensionsgruppe. Klicken Sie auf **Produktinformationsverwaltung &gt;Allgemein &gt; Freigegebene Produkte**. Klicken Sie auf der Seite **Details für freigegebene Produkte** auf der Registerkarte **Allgemein** in der Gruppe **Administration** auf den Link **Lagerdimensionsgruppe**. Wählen Sie auf der Seite **Lagerdimensionsgruppe** das Feld **Disposition nach Dimensionen** aus, um die Deckungseinstellungen für eine Dimension in der Lagerdimensionsgruppe zu erstellen. Für jede Produktdimension, wie Konfiguration, Farbe, Größe, Stil, muss das Feld **Abdeckungsplan nach Dimensionn**  ausgewählt sein.
 
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Masterpläne](master-plans.md)
+[Produktprogrammpläne](master-plans.md)
 
 
 

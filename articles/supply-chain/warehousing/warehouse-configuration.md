@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 79e0ce728cb3c1eec450d0814d0a3aeda131fe89
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-configuration"></a>Lagerortkonfiguration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enthält Informationen zum Aktivieren eines Lagerortlayouts und Lagerortverfahren.
 
@@ -112,7 +112,7 @@ Lagerplatzrichtlinien werden verwendet, um die Arbeitstransaktionen an die entsp
 
 Um das Definieren der Aktivitäten, die den einzelnen Richtlinienpositionen für Lagerplätze zugeordnet sind, zu erleichtern verwenden Sie eine der vordefinierten Strategien. Sie können beispielsweise die Strategie **Leerer Lagerplatz ohne eingehende Arbeit** verwenden, um freie Lagerplätze an einem Lagerort zu suchen, oder Sie können die Strategie **FEFO-Chargenreservierung** für ausgehende Verkaufskommissionierung verwenden.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Konfigurieren von Lagerplätzen in einem WMS-aktivierten Lagerort (Aufgabenleitfaden)](tasks/configure-locations-wms-enabled-warehouse.md)

@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1176ce1fcd406cf363969e60ae388a83d7df210f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2985e58bd308295e1f698c391f57fc3d116835bd
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="standard-cost-conversion-overview"></a>Standardkostenumrechnung (Überblick)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Eintrag stellt eine Prozessübersicht bereit, die Sie beim Einrichten und Ausführen einer Standardkostenumrechnung unterstützt. Die aufgeführten Schritte werden ausgeführt, nachdem Sie die Voraussetzungen für eine Standardkostenumrechnung abgeschlossen haben. 
 
@@ -96,7 +96,7 @@ Mit dem Bericht **Aufstellung zur Abweichungsanalyse** können Sie Neubewertungs
 -   Analysieren rückdatierter Lagerumlagerungen. Mithilfe des Berichts **Lagerwert** können Sie rückdatierte Lagerumlagerungen anzeigen, die nach der Umrechnung eingegeben wurden. Das Von-Datum und Bis-Datum des Berichts sollten dem Übergangsstartdatum und dem Umrechnungsdatum (minus ein Tag) entsprechen. Die Berichtsauswahlkriterien sollten die umgerechneten Artikel reflektieren. Der Bericht zeigt Lagerumlagerungen an, die während der Übergangsperiode zu Standardkosten vorgenommen wurden.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Voraussetzungen für eine Standardkostenumrechnung](prerequisites-standard-cost-conversion.md)

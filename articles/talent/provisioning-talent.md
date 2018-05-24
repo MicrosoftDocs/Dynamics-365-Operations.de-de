@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent bereitstellen
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 for Talent. Für dieses Thema wird vorausgesetzt, dass Sie Talent durch einen Cloud-Lösungs-Anbieter (CSP) oder Unternehmensarchitektur (EA)- Vereinbarung besitzen. Wenn Sie eine vorhandene Microsoft Dynamics 365 Lizenz haben, die den Talent-Service-Plan bereits beinhaltet, und Sie die Schritte in diesem Thema nicht ausführen können, kontaktieren Sie den Support.
 
@@ -54,17 +54,18 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung
     > Um die vorhandene Umgebung anzeigen oder eine neue Umgebung zu erstellen, muss der Mandantenadministrator der Talent bereitstellt der Lizenz PowerApps P2 zugewiesen werden. Wenn Ihre Organisation keine PowerApps Lizenz P2 hat, können Sie dies aus Ihrem CSP oder über abrufen [PowerApps-Preiskalkulationsseite](https://powerapps.microsoft.com/en-us/pricing/).
 
 4. Wählen Sie **Hinzufügen** aus und aktivieren dann die Umgebung, in der Talent erscheinen soll.
-5. Wählen Sie **Ja**, um den Bedingungen zuzustimmen und Bereitstellung zu starten.
+5. Wählen Sie die Option 'Demo-Daten einbeziehen', wenn Sie möchten, dass Ihre Umgebung den gleichen Demo-Datensatz enthält, der auch in der Talent Test Drive Erfahrung verwendet wird.  Dies ist vorteilhaft für langfristige Demo- oder Schulungsumgebungen und sollte niemals für Produktionsumgebungen verwendet werden.  Beachten Sie, dass Sie diese Option beim ersten Deployment wählen müssen und ein bestehendes Deployment später nicht mehr aktualisieren können.
+6. Wählen Sie **Ja**, um den Bedingungen zuzustimmen und Bereitstellung zu starten.
 
     Die neuen Umgebung wird in der Liste der Umgebung im Navigationsbereich auf der linken Seite dargestellt. Sie können jedoch nicht beginnen, die Umgebung zu verwenden, wenn der Bereitstellungsstatus auf **Bereitgestellt** aktualisiert ist. Dieser Vorgang dauert in der Regel nur einige Minuten. Wenn der Bereitstellungsprozess nicht erfolgreich war, müssen Sie den Support kontaktieren.
 
-6. Wählen Sie **Anmeldung bei Talent**, um die neuen Umgebung zu verwenden.
+7. Wählen Sie **Anmeldung bei Talent**, um die neuen Umgebung zu verwenden.
 
 > [!NOTE]
 > Sollten Sie sich von den definitiven Anforderungen noch nicht abgemeldet haben, können Sie eine Testinstanz von Talent im Projekt bereitstellen. Sie können diese Instanz dann verwenden, um Ihre Lösung zu testen, bevor Sie sie freigeben. Wenn Sie die neuen Umgebung für Testzwecke verwenden, müssen Sie diese Schrittfolge wiederholen, um eine Produktionsumgebung zu erstellen.
 
 > [!NOTE]
-> Talentumgebung, die über LCS bereitgestellt wird, enthält keine Demodaten, die für Personalverwaltung (HR)-Aufgaben konfiguriert oder für Talent bestimmt ist. Wenn Sie eine Umgebung anfordern, die Demodaten enthält, wird empfohlen, dass Sie sich für eine 60-tägige [Talentversuchsumgebung](https://dynamics.microsoft.com/en-us/talent/overview/) anmelden. Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Core HR eingeladen werden. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Sie sind nicht dazu vorgesehen, als Produktionsumgebung verwendet zu werden. Beachten Sie, dass, wenn die Testumgebung nach 60 Tagen abläuft, alle Daten im Modul gelöscht und nicht wiederhergestellt werden können. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
+> Da im Rahmen des Talent-Abonnements nur zwei LCS-Umgebungen erlaubt sind, können Sie auch eine kostenlose 60-Tage-Testumgebung [Talent Testumgebung](https://dynamics.microsoft.com/en-us/talent/overview/) in Anspruch nehmen. Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Core HR eingeladen werden. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Sie sind nicht dazu vorgesehen, als Produktionsumgebung verwendet zu werden. Beachten Sie, dass, wenn die Testumgebung nach 60 Tagen abläuft, alle Daten im Modul gelöscht und nicht wiederhergestellt werden können. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
 
 ## <a name="select-a-powerapps-environment"></a>Eine PowerApps-Umgebung auswählen
 
@@ -104,35 +105,29 @@ Führen Sie die folgenden Anweisungen aus, um das Skript auszufüllen:
 
 1. Laden Sie die ProvisionCDSEnvironment.zip-Datei von folgender elektronischer Adresse hinunter[ProvisionCDSEnvironment-Skripte](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. Entzippen Sie den gesamten Inhalt der Datei ProvisionCDSEnviroinment.zip in einen Ordner.
+2. Klicken Sie in Ihrem Download-Ordner mit der rechten Maustaste auf die gerade heruntergeladene Datei ProvisionCDSEnvironment.zip und wählen Sie **Eigenschaften**.  Wenn sich unten im Dialogfeld ein Sicherheitshinweis befindet, der besagt, dass diese Datei von einem anderen Computer stammt und blockiert werden könnte, um diesen Computer zu schützen, markieren Sie das Kontrollkästchen auf **Blockierung aufheben**, dann klicken Sie auf **Anwenden** und dann auf **Ok**.
 
-3. Führen Sie das Windows PowerShell- oder Windows PowerShell ISE-Programm als Administrator aus.
+3. Entpacken Sie den gesamten Inhalt der Datei ProvisionCDSEnviroinment.zip in einen anderen Ordner als Ihren Stammordner.
 
-   Besuchen Sie das Thema [Ausführungsrichtlinie festlegen](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6), um weitere Informationen über das Festlegen der Ausführungsrichtlinie zu erhalten, sodass Skripts ausgeführt werden können.
+4. Führen Sie das Windows PowerShell- oder Windows PowerShell ISE-Programm als Administrator aus.
+
+   Besuchen Sie das Thema [Ausführungsrichtlinie festlegen](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6), um weitere Informationen über das Festlegen der Ausführungsrichtlinie zu erhalten, sodass Skripts ausgeführt werden können. Wir empfehlen die Verwendung des folgenden "Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process", aber beachten Sie unbedingt die Sicherheitsrichtlinien Ihres Unternehmens und schließen Sie das PowerShell-Fenster, wenn Sie fertig sind. 
   
-4. Innerhalb von PowerShell navigieren Sie zum Ordner, in dem Sie die Datei entzippt haben und führen den folgenden Befehl aus, wodurch Werte, wie unten angewiesen, ersetzt werden:
+5. Innerhalb von PowerShell navigieren Sie zum Ordner, in dem Sie die Datei entzippt haben und führen den folgenden Befehl aus, wodurch Werte, wie unten angewiesen, ersetzt werden:
  
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
    **MyNewEnvironment** sollte durch den Umgebungsnamen ersetzt werden. Dieser Name wird in LCS angezeigt, und er wird sichtbar sein, wenn Benutzer auswählen, welche Talent-Umgebung verwendet werden soll. 
 
-   **YourLocation** sollte durch eine der unterstützten Regionen für Talent ersetzt werden: Europa, -USA, Australien. 
+   **YourLocation** sollte durch eine der unterstützten Regionen für Talent ersetzt werden: USA, Euroa, Australien. 
 
    **- Verbose** ist optional und wird detaillierte Informationen bereitstellen, um Support zui senden, wenn Probleme auftreten.
 
-5. Setzen Sie den Bereitstellungsprozess fort.
+6. Setzen Sie den Bereitstellungsprozess fort.
  
 
-
 ## <a name="grant-access-to-the-environment"></a>Zugriff auf die Umgebung gewähren
-Standardmäßig besitzt nur der globale Administrator, von dem Enterprise Portal installiert wurde, Zugriff auf diese Anwendung. Allerdings muss zusätzliche Bewerbungsbenutzern explizit Zugriff gewährt werden. Um Zugriff zu gewähren, wählen Sie [Benutzer hinzufügen](../dev-itpro/sysadmin/tasks/create-new-users.md) und [weisen die entsprechenden Rollen](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) in der Personalverwaltungsumgebung zu. Darüber hinaus ist es auch notwendig, diese Benutzer der PowerApps-Umgebung hinzuzufügen, damit sie auf die Anwendungen Attract und Onboard Zugriff haben. Das Verfahren wird hier aufgeführt. Wenn Sie Hilfe benötigen, um die Schritte auszuführen, gehen Sie zu [Einführung vom PowerApps-Administratorcenter](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/).
+Standardmäßig besitzt nur der globale Administrator, von dem Enterprise Portal installiert wurde, Zugriff auf diese Anwendung. Allerdings muss zusätzliche Bewerbungsbenutzern explizit Zugriff gewährt werden. Um Zugriff zu gewähren, wählen Sie [Benutzer hinzufügen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) und [weisen die entsprechenden Rollen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) in der Personalverwaltungsumgebung zu. Der globale Administrator, der Talent eingesetzt hat, muss auch die Anwendungen Attract und Onboard starten, um die Initialisierung abzuschließen und den Zugriff für andere Mieter zu ermöglichen.  Bis dies geschieht, können andere Benutzer nicht auf Attract- und Onboard-Anwendungen zugreifen und erhalten Zugriffsverletzungsfehler.
 
-Diese Prozedur wird vom globalen Administrator abgeschlossen, der die Talentumgebung. bereitstellte.
-
-1. [PowerApps-Administratorcenter](https://preview.admin.powerapps.com/environments) öffnen.
-2. Aktivieren Sie die entsprechenden Umgebungen.
-3. Fügen Sie unter der Registerkarte **Sicherheit** die notwendigen Benutzer zur Rolle **Umgebungsersteller** hinzu.
-
-    Beachten Sie, dass dieser letzte Schritt des Hinzufügens von Benutzern zur PowerApps-Umgebung temporär ist. Schließlich wird es automatisch abgeschlossen, wenn Benutzer in Personalverwaltung hinzugefügt werden.
 

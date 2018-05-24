@@ -1,6 +1,6 @@
 ---
 title: Kreditorenrzahlung unter Verwendung eines Zahlungsvorschlags erstellen
-description: "Dieser Artikel gibt einen Überblick über die Zahlungsvorschlagsoptionen und umfasst einige Beispiele, die zeigen, wie Zahlungsvorschläge funktionieren. Zahlungsvorschläge werden oft verwendet, um Kreditorenzahlungen zu erstellen, da die Abfrage dazu verwendet werden kann, Kreditorenrechnungen für die Zahlung, basierend auf Kriterien wie dem Fälligkeitsdatum und dem Skonto, schnell auszuwählen."
+description: "Dieser Artikel gibt einen Überblick über die Zahlungsvorschlagsoptionen und umfasst einige Beispiele, die zeigen, wie Zahlungsvorschläge funktionieren."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Kreditorenrzahlung unter Verwendung eines Zahlungsvorschlags erstellen
+# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Kreditorenzahlungen unter Verwendung eines Zahlungsvorschlags erstellen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel gibt einen Überblick über die Zahlungsvorschlagsoptionen und umfasst einige Beispiele, die zeigen, wie Zahlungsvorschläge funktionieren. Zahlungsvorschläge werden oft verwendet, um Kreditorenzahlungen zu erstellen, da die Abfrage dazu verwendet werden kann, Kreditorenrechnungen für die Zahlung, basierend auf Kriterien wie dem Fälligkeitsdatum und dem Skonto, schnell auszuwählen. 
 
@@ -47,7 +47,7 @@ Die Zahlungsvorschlagsabfrage enthält verschiedene Registerkarten. Jede davon h
 - **Kreditorensaldo überprüfen** – Wenn diese Option auf **Ja** festgelegt ist, prüft das System, ob der Kreditor kein Sollsaldo hat, bevor irgendeine Rechnung bezahlt wird. Wenn ein Kreditor einen Sollsaldo hat, wird keine Zahlung erstellt. So kann beispielsweise der Kreditor Zahlungen oder Gutschriften haben, die gebucht wurden, jedoch noch nicht ausgeglichen wurden. In diesen Fällen sollte dem Kreditor nicht bezahlt werden. Stattdessen sollten die Gutschriften oder die Zahlungen für die ausstehenden Rechnungen ausgeglichen werden.
 - **Negative Zahlungen löschen** – Diese Option funktioniert unterschiedlich, je nachdem, ob Zahlungen für einzelne Rechnungen oder für die Summe der Rechnungen erfolgen, die die Zahlungskriterien erfüllen. Dieses Verhalten wird bei der Zahlungsmethode definiert.
 - **Zahlung für jede Rechnung** – Wenn die Option **Negative Zahlungen löschen** auf **Ja** festgelegt ist und eine nicht beglichene Rechnung und Zahlung für einen Kreditor vorhanden sind, wird nur die Rechnung zur Zahlung ausgewählt. Die vorhandene Zahlung wird nicht mit der Rechnung ausgeglichen. Wenn die Option **Negative Zahlungen löschen** auf **Nein** festgelegt ist und eine Rechnung sowie eine Zahlung nicht ausgeglichen werden, werden sowohl die Rechnung als auch die Zahlung zur Zahlung ausgewählt. Eine Zahlung wird für die Zahlung erstellt, und eine Rückerstattung (negative Zahlung) wird für die Zahlung erstellt.
-- <strong>Zahlung für Summe der Rechnungen</strong> – Wenn die Option <strong>Negative Zahlungen löschen</strong> auf <strong>Ja</strong> festgelegt ist und eine nicht ausgeglichene Rechnung und Zahlung für einen Kreditor vorhanden sind, werden sowohl die nicht ausgeglichene Rechnung als auch die Zahlung zur Zahlung ausgewählt, und die Beträge werden zusammengezählt, um den gesamten Zahlungsbetrag zu erzeugen. Die einzige Ausnahme tritt auf, wenn die Summe zu einer Rückerstattung führt. In diesem Fall wird weder die Rechnung noch die Zahlung ausgewählt. Wenn die Option <strong>Negative Zahlungen löschen **auf **Nein</strong> festgelegt ist und eine Rechnung und eine Zahlung nicht ausgeglichen sind, werden sowohl die Rechnung als auch die Zahlung zur Zahlung ausgewählt, und die Beträge werden zusammengezählt, um den gesamten Zahlungsbetrag zu erzeugen.
+- **Zahlung für Summe der Rechnungen** – Wenn die Option **Negative Zahlungen löschen** auf **Ja** festgelegt ist und eine nicht ausgeglichene Rechnung und Zahlung für einen Kreditor vorhanden sind, werden sowohl die nicht ausgeglichene Rechnung als auch die Zahlung zur Zahlung ausgewählt, und die Beträge werden zusammengezählt, um den gesamten Zahlungsbetrag zu erzeugen. Die einzige Ausnahme tritt auf, wenn die Summe zu einer Rückerstattung führt. In diesem Fall wird weder die Rechnung noch die Zahlung ausgewählt. Wenn die Option **Negative Zahlungen löschen** auf **Nein** festgelegt ist und eine Rechnung und eine Zahlung nicht ausgeglichen sind, werden sowohl die Rechnung als auch die Zahlung zur Zahlung ausgewählt, und die Beträge werden zusammengezählt, um den gesamten Zahlungsbetrag zu erzeugen.
 - **Nur Druckbericht** – Legen Sie diese Option auf **Ja** fest, um die Ergebnisse des Zahlungsvorschlags in einem Bericht zu sehen, aber, ohne irgendwelche Zahlungen zu erstellen.
 - **Kreditorenrechnungen aus anderen juristischen Personen einbeziehen** – Wenn in Ihrer Organisation ein zentralisierte Prozess für Zahlungen vorhanden ist und der Zahlungsvorschlag Rechnungen von anderen juristischen Personen einbeziehen sollte, die in den Suchkriterien enthalten sind, legen Sie diese Option auf **Ja** fest.
 - **Separate Kreditorenzahlung pro juristischer Person vorschlagen** – Wenn diese Option auf **Ja** festgelegt ist, wird eine separate Zahlung für jede juristische Person pro Kreditor erstellt. Der Kreditor auf der Zahlung ist der Kreditor aus der Rechnung von jeder juristischen Person. Wenn diese Option auf **Nein** festgelegt ist und derselbe Kreditor Rechnungen in mehreren juristischen Personen hat, wird eine Zahlung für den Gesamtbetrag der ausgewählten Rechnungen erstellt. Der Kreditor zur Zahlung ist der Kreditor in der aktuellen juristischen Person. Wenn das Kreditorenkonto in der aktuellen juristischen Person nicht vorhanden ist, wird das Kreditorenkonto der ersten zu bezahlenden Rechnung verwendet.
@@ -115,7 +115,8 @@ Mit der Dimensionssteuerung können Steuergruppierung von generierten Positionen
 -   Das Feld **Dimensionskontrolle** ist ohne weitere Definition der Dimensionen aktiviert. Der Zahlungsvorschlag wird erstellt, ohne Dimensionen des Artikeleingangs zu berücksichtigen. Die erstellte Buchung übernimmt keine Dimensionen auf dem angewendeten Eintrag.
 -   Das Feld **Dimensionskontrolle** ist und die weiteren Dimensionen sind aktiviert. Jetzt können Sie definieren, wie die Dimensionen in das Journal kopiert werden. Beispiel: • Wählen Sie das **BusinessUnit** Kontrollkästchen, um einen Zahlungsvorschlag pro Unternehmenseinheit für die Zahlungsmethode zu erstellen, • Wählen Sie das **CostCenter**, um für die Zahlungsmethode einen Zahlungsvorschlag pro Kostenstelle zu erstellen
 
-**Hinweis:** Bei Auswahl mehrerer Dimensionen wird eine dritte Option, ein Zahlungsvorschlag für die ausgewählte Kombination aus Dimensionen erstellt.
+> [[!NOTE]
+> Bei Auswahl mehrerer Dimensionen wird eine dritte Option, ein Zahlungsvorschlag für die ausgewählte Kombination aus Dimensionen erstellt.
 
 #### <a name="bank-account-selection"></a>Bankkontoauswahl
 

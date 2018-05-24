@@ -19,16 +19,16 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e19c0eb8f28f16ba827d5218a96ee21c976aacb7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e195f9976465a933ceaaeb0bd2cbec4f814bc5f8
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-company-specific-hr-parameters"></a>Einrichten von unternehmensspezifischen Personalverwaltungsparametern
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Die Einstellungen einiger Personalverwaltungsparameter (HR) werden über Unternehmen freigegeben, während die Einstellungen anderer Parameter unternehmensspezifisch sind. In diesem Artikel wird beschrieben, wie unternehmensspezifische Personalverwaltungsparameter eingerichtet werden.
 
@@ -57,10 +57,10 @@ Die Einstellungen in der Registerkarte **FMLA** definieren, wie viele Stunden ei
 
 **Hinweis:** Die Anzahl der gearbeiteten Stunden kann, 1,250 Stunden und eine Beschäftigungsdauer von 12 Monate nicht überschreiten. Diese maximalen Werte sind in Übereinstimmung mit dem Bundesgesetz in den USA festgelegt. Schließlich bestimmen die Einstellungen auf der Registerkarte **Mitarbeiter-Self-Service** die Informationen, die ein Manager im Auftrag seiner Angestellter eingeben kann.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Einrichten von Personalverwaltungsparametern in verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md)
+[Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md)
 
 
 

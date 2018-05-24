@@ -19,16 +19,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ba9c828efc39d45a78500d30295e5d1d6c770c99
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 77f475b0937672af268d6da938d5b2a1c9f6448b
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-peripherals-overview"></a>Einzelhandelsperipheriegeräte – Überblick
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In diesem Thema werden einige Konzepte in Verbindung mit Einzelhandelsperipheriegeräten beschrieben. Es werden die verschiedenen Arten Peripheriegeräte beschrieben, die mit der Verkaufsstelle (POS) verbunden werden können und die Komponenten, die für das Verwalten der Verbindung mit dem POS zuständig sind.
 
@@ -801,10 +801,10 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
     6.  Nachdem die DLL-Hosts geschlossen wurden, starten Sie neu Modern POS.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Einzelhandelsperipheriesimulator](dev-itpro/retail-peripheral-simulator.md)
+[Einzelhandels-Peripheriesimulator](dev-itpro/retail-peripheral-simulator.md)
 
 
 

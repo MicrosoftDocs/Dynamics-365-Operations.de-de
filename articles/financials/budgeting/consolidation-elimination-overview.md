@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 60dd33f296a37f0010a948c410738ce5486b780e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d4c966badd87b80e203f475cc632f5388ad1d8e5
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="consolidation-and-elimination-overview"></a>Konsolidierungs- und Löschungsüberblick
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess. Er enthält Antworten auf mehrere häufig gestellten Fragen.
 
@@ -88,7 +88,7 @@ Die Option **Finanzberichterstellung** ist die Lösung. Organisationshierarchien
 Wenn Sie die Option **Unternehmenssalden exportieren** verwenden, um von einer Instanz zu exportieren, und anschließend die Option **Mit Import konsolidieren** auf der anderen Instanz verwenden, können Sie die Daten konsolidieren.
 
 
-Weitere Informationen finden Sie unter [Neubewertung in einem konsolidierten Unternehmen](..\general-ledger\currency-revaluation-consolidation-company.md).
+Weitere Informationen finden Sie unter [Neubewertung in einem konsolidierten Unternehmen](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
 

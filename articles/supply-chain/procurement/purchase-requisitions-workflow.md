@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d6828860d9e56dc8db80a11b4b611b9c0fdc2b62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a5dcc294b3dde7dc7e0f789d9e7678b75bc699b0
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-requisition-workflow"></a>Bestellanforderungsworkflow
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Der Workflowprozess leitet Bestellanforderungen durch den Prüfungsprozess, vom Anfangsstatus "Übersicht" bis zum Endstatus "Genehmigt". Wenn eine Bestellanforderung zur Prüfung übermittelt wird, wird der Workflowprozess gestartet. Nachdem die Bestellanforderung genehmigt wurde, kann eine Bestellung für die Bestellanforderungspositionen generiert und zur Auftragserfüllung an den Kreditor übermittelt werden.
 
@@ -106,7 +106,7 @@ Sie können die Aufwendungsprüfer auf der Seite **Aufwendungsprüfer für Beste
 
 Um einen der Aufwendungsprüfer zu verwenden, den Sie in einem Workflow eingerichtet haben, müssen Sie die Option **Art von Teilnehmer** auf **Aufwendungsbeteiligte** in den Eigenschaften **Zuweisung** für das relevante Workflowelement festlegen.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Erstellen einer Anforderung für Verbrauch (Aufgabenleitfaden)](tasks/create-requisition-consumption.md)

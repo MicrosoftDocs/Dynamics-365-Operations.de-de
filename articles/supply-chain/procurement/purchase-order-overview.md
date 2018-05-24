@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ee9baefc95c24d23edca8438792c9648f77e1bdf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d01ef1c496c7c79795d9d740ee755e84434dfdf1
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-order-overview"></a>Überblick über Bestellungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Dieser Artikel enthält allgemeine Informationen zu Bestellungen (POs) und Links zu Artikeln zu den verschiedenen Phasen die eine Bestellung durchläuft.
 
@@ -82,7 +82,7 @@ Das **Genehmigungsstatus**-Feld wird verwendet, wenn eine Bestellung einen Über
 -   **Bestätigt** – Dieser Status wird zugewiesen, nachdem die Bestellung bestätigt wurde. Normalerweise ist dieser Status der letzte Genehmigungsstatus, der die einer Bestellung zugeordnet ist.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Bestellungserstellung](purchase-order-creation.md)

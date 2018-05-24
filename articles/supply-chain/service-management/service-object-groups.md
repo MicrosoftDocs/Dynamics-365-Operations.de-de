@@ -3,7 +3,7 @@ title: Serviceobjektgruppen
 description: "Objektgruppen sind zum Sortieren und Filtern der Daten von Objekten für Berichte und Statistiken nützlich."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: fa503ac82286099a0eafc7034d169e165b538e2c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2ab3ed8a8f36f980473b17b5dfed8cb3d0054253
 ms.contentlocale: de-de
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="service-object-groups"></a>Serviceobjektgruppen 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Objektgruppen sind zum Sortieren und Filtern der Daten von Objekten für Berichte und Statistiken nützlich. Objekte können z. B. nach der geografischen Position oder nach dem Typ gruppiert werden.
 
@@ -48,6 +48,23 @@ Mit dieser Gruppierungsmethode kann angezeigt werden, für welche Objekttypen da
 
 Ein Debitor ruft an und möchte eine Servicevereinbarung für eine Klimaanlage HIJ einrichten. Für diese Anlage ist noch kein Datensatz vorhanden. Es ist jedoch bereits eine Objektgruppe Klimaanlagen eingerichtet, die allen Klimaanlagenobjekten zugeordnet wurde. Sie können deshalb schnell nach allen anderen Klimaanlagen suchen und die Vorlageninformationen aus diesen Objekten als Grundlage für Servicevertragspositionen für HIJ verwenden. Wenn Sie Objektgruppen auf diese Weise verwenden, können Sie umgehend neue Objekte einrichten und die Serviceaufgaben bestimmen, die dafür ausgeführt werden müssen. 
 
+## <a name="create-service-object-groups"></a>Erstellen von Serviceobjektgruppen
+
+Erstellen von Gruppen, denen Sie Serviceobjekte zuordnen können. Serviceobjekte sind Lagerartikel und andere Produkte, für die Services ausgeführt werden. Wenn Sie Serviceobjekte gruppieren, können Sie Berichte für ähnliche und zugehörige Serviceobjekte erstellen. Beispielsweise kann eine Serviceobjektgruppe aus zwei Serviceobjekten bestehen: Ein Serviceobjekt ist ein Bausatz, und das zweite Serviceobjekt ist der Service, um den Bausatz zu installieren.
+
+Um Serviceobjektgruppen zu erstellen, führen Sie folgende Schritte aus:
+
+1. Klicken Sie auf **Serviceverwaltung > Einstellungen > Serviceobjekte > Serviceobjektgruppen.**
+
+2. Klicken Sie auf **Neu**, um eine neue Serviceobjektgruppe zu erstellen.
+
+3. Geben Sie einen eindeutigen Namen für die Serviceobjektgruppe sowie (optional) eine Beschreibung ein.
+
+Sie können Serviceobjekte der Gruppe zuordnen, indem Sie das Formular **Serviceobjekte** verwenden. 
+
+## <a name="see-also"></a>Siehe auch
+
+[Erstellen von Serviceobjekten](create-service-objects.md)
 
 
 

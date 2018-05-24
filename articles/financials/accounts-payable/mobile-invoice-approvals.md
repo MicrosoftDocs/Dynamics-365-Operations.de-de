@@ -18,16 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobile Rechnungsgenehmigungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mit mobilen Funktionen in Microsoft Dynamics 365 for Finance and Operations können geschäftliche Benutzer mobile Umgebungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieses Thema soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden.
 
@@ -175,9 +175,9 @@ Um die Rechnungsdetailseite für die mobile App zu entwerfen, verwenden Sie die 
 1. In der Finance and Operations-URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceHeaderDetails**, um das Formular zu öffnen
 2. Öffnen Sie den Designer von mobilen **Einstellungen** (Zahnrad) Schaltfläche.
 3. Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten.
-4. Wählen Sie die Seite <strong>Meine Kreditorenrechnungen **aus, die Sie zuvor erstellt haben, und klicken Sie dann auf **Bearbeiten</strong>.
+4. Wählen Sie die Seite **Meine Kreditorenrechnungen** aus, die Sie zuvor erstellt haben, und klicken Sie dann auf **Bearbeiten**.
 5. Auf der **Felder** Registerkarte klicken Sie auf die Spaltenüberschrift **Raster**
-6. Auf **Eigenschaften** &gt; **Seite hinzufügen**. **Hinweis:** Wenn Sie auf das **Raster** Überschrift klicken und eine Seite hinzufügen, wird die Beziehung zur Detailseite automatisch bestimmt.
+6. Klicken Sie auf **Eigenschaften &gt; Seite hinzufügen**. **Hinweis:** Wenn Sie auf das **Raster** Überschrift klicken und eine Seite hinzufügen, wird die Beziehung zur Detailseite automatisch bestimmt.
 7. Geben Sie einen Seitentitel, z.B. **Rechnungsdetails** und einer Beschreibung, wie ein **Ansichtsrechnungskopf und Positionsdetails**.
 8. Klicken Sie auf **Felder auswählen**. Die Reihenfolge, in der Sie hinzufügen, entspricht der Reihenfolge, in der die Felder an Endbenutzer angezeigt werden. Die einzige Methode, die Reihenfolge der Felder zu ändern ist, indem alle Felder erneut auswählen. 
 9. Fügen Sie die folgenden Felder aus dem Auftragskopf, basierend auf den Anforderungen für dieses Szenarios hinzu:

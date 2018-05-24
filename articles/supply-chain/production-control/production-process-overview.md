@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8a12627db93b131450015539bb92ea4780518ed3
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-process-overview"></a>Produktionsprozessübersicht
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält eine Übersicht des Produktionsprozesse. Er beschreibt die verschiedenen Produktionsaufträge, Chargenaufträgen und Kanbans, von der Auftragserstellung bis zum Schließen der Finanzperiode. 
 
@@ -78,7 +78,7 @@ Die folgenden Schritte im Produktionslebenszyklus können bei allen Auftragstype
 12. **Periodenabschluss** – Einige Kostenrechnungsprinzipien, wie regelmäßiger Durchschnitt, Nachkalkulation mit rückwärtiger Leerung, FIFO oder LIFO, erfordern, dass Periodenaktivitäten den Bestand oder die Finanzperiode abschließen. In der Regel versucht das System, den gesamten Material- und Ressourcenverbrauch zu melden sowie auch Korrekturen bei Bestand und Ausschuss, bevor die Periode abgeschlossen wird. Diese Berichterstellung erfolgt normalerweise mithilfe von Lagerumlagerungserfassungen oder Regulierungserfassungen. Die Zielsetzung besteht darin, die wirtschaftliche Leistung von Organisationseinheiten pro Periode zu bewerten. In einigen Fällen, wenn Produktionsaufträge mit langer Laufzeit verwendet werden, die sich über die Finanzberichterstellungsperioden erstrecken, werden Produktionserfassungen verwendet, um den Produktionsfortschritt und den Ressourcenverbrauch am Ende der Periode zu melden.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Produktionsrückmeldung](production-feedback.md)

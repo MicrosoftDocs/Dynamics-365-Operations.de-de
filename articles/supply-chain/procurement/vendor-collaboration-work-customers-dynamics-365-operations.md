@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4252112272e2f86c2c18dc399a713bf652e4228e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6ab1d60839131b3d4bb1782319754ba63d54cfd7
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-customers"></a>Kreditorenzusammenarbeit mit Debitoren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft Dynamics 365 for Finance and Operations zu arbeiten. Kreditoren können eine Serie von Geschäftsprozesse aus den folgenden Arbeitsbereichen ausführen:
 
@@ -141,7 +141,7 @@ Als Kreditor können Sie auf einen Teil der Informationen zugreifen, die der Deb
 
 Die Informationen, auf die zugegriffen werden kann, sind der Name des Kreditors, die Adressen, Kontaktinformationen, Kontaktpersonen und ihre Kontaktinformationen, Kennungsnummern, Steuernummern, Beschaffungskategorien, in denen der Kreditor an den Debitor verkaufen darf, sowie Informationen über Zertifizierungen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Benutzer für Kreditorenzusammenarbeit verwalten](manage-vendor-collaboration-users.md)
 

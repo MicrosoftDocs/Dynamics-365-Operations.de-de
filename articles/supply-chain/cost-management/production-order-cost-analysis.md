@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 703070ae85f504cf204244b2197732dc6849abd6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 40ac5108216fd6d9eb5cd6e76fefd66828a7da84
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-order-cost-analysis"></a>Kostenanalyse für Produktionsauftrag
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel bietet Informationen zur Kostenanalyse, die Sie für abgeschlossene und aktuelle Produktionsaufträge ausführen können. Sie können die vorkalkulierten Kosten und tatsächlichen Kosten analysieren, indem Sie die Seite "Preiskalkulation" oder den Bericht "Vor- und Nachkalkulation" verwenden. Sie können für jeden Komponentenartikel, jeden Arbeitsplan-Arbeitsgang sowie für alle indirekten Kosten Informationen zu den vorkalkulierten Kosten sowie zu den Istkosten (und zur entsprechenden Menge) anzeigen.
 
@@ -59,7 +59,7 @@ Separate Berichte enthalten Informationen zu den einzelnen Buchungstypen. Diese 
 -   **Fertigartikel in Bearbeitung** − In diesem Bericht sind die derzeitigen Produktionsaufträge sowie die fertig gemeldeten Buchungen ab dem angegebenen Buchungsdatum aufgeführt.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Allgemeine Ursachen für Produktionsabweichungen](common-sources-of-production-variances.md)

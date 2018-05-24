@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 88570a8dc9da6f6a2b4d3a9499e1ea406f681451
-ms.openlocfilehash: 4608f43a3db9308881d4737e49df949190e3ede2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18ae41c3c1b19edc2d56a7e3480890c8aea28054
 ms.contentlocale: de-de
-ms.lasthandoff: 04/14/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Spaltendefinitionen in Finanzberichten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Spalte eines Berichts angibt. Wie auch Zeilendefinitionen können grundlegende Spaltendefinitionen in mehreren Berichten verwendet werden.
 
@@ -488,7 +488,7 @@ Im folgenden Beispiel wird ein Teil einer Spaltenbeschreibung angezeigt, die ein
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Dimensionsfilter in einer Spaltendefinition
 
-Ein Dimensionsfilter wird verwendet, um die Spalte **FD** auf bestimmte Dimensionswerte einzuschränken. Der Filter kann eine einzelne Dimension, einen Bereich von Dimensionen oder eine Gruppe von Dimensionen enthalten. Der Filter kann auch Dimensionswertsätze enthalten. Da Dimensionswerte variieren können, muss ein dimensionsbasiertes System nicht einer genauen Länge entsprechen. Der Filter wird unabhängig davon angewendet, ob der Bericht die Berichtsbaumstruktur umfasst. Sie können in jeder Position ein Platzhalterzeichen (\* oder ?) verwenden. Wenn Sie mehrere Konten angeben, setzen Sie ein Komma zwischen die Konten. Beispiel: +Konto=\[1200\]+Konto=\[1100\], Abteilung=\[01?\] Um alle Abteilungen für ein bestimmtes Konto zu erhalten, können Sie die Abteilungsdimension aus dem Dimensionsfilter ausschließen. Beispielsweise werden die folgenden Dimensionsfilter auf dieselbe Weise behandelt:
+Ein Dimensionsfilter wird verwendet, um die Spalte **FD** auf bestimmte Dimensionswerte einzuschränken. Der Filter kann eine einzelne Dimension, einen Bereich von Dimensionen oder eine Gruppe von Dimensionen enthalten. Der Filter kann auch Dimensionswertsätze enthalten. Da Dimensionswerte variieren können, muss ein ..\financial-dimensions\dimension-based System nicht einer genauen Länge entsprechen. Der Filter wird unabhängig davon angewendet, ob der Bericht die Berichtsbaumstruktur umfasst. Sie können in jeder Position ein Platzhalterzeichen (\* oder ?) verwenden. Wenn Sie mehrere Konten angeben, setzen Sie ein Komma zwischen die Konten. Beispiel: +Konto=\[1200\]+Konto=\[1100\], Abteilung=\[01?\] Um alle Abteilungen für ein bestimmtes Konto zu erhalten, können Sie die Abteilungsdimension aus dem Dimensionsfilter ausschließen. Beispielsweise werden die folgenden Dimensionsfilter auf dieselbe Weise behandelt:
 
 -   +Konto=\[1100\],Abteilung
 -   +Konto=\[1100\]
@@ -583,7 +583,7 @@ Sie können eine Spalte erstellen, in der alle Werte in einer angegebenen Spalte
 
 Sie können den Betrag in einer Spalte durch eine angegebene Anzahl von Zeiträumen dividieren. Beispielsweise dividiert die Formel **B/Perioden** den Wert in der Spalte B durch die Anzahl der Perioden in der Spalte B. Wenn die Berechnung mehrere Spalten umfasst, geben Sie die Anzahl der Perioden an, die bei der Berechnung verwendet werden sollen. Beispielsweise addiert die Formel **(B+C)/Perioden** die Beträge in der Spalte B und in der Spalte C und dividiert dann das Ergebnisses durch den Periodenwert.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Zeilendefinitionen in der Finanzberichterstellung](row-definitions-financial-reporting.md)

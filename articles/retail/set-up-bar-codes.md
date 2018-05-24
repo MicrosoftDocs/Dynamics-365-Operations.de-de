@@ -20,16 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bfb47e653cc3ef36135fd7c4f60771a354699af7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e4ad8c2a984229b96cc5b81c0fd505a264ba58f0
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-bar-codes"></a>Strichcodes einrichten
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Strichcodes in Microsoft Dynamics 365 for Retail verwendet werden.
 
@@ -41,10 +41,10 @@ Sie können mithilfe von Strichcodes Produkte erwerben und verkaufen, Produktvar
 4.  Erstellen Sie Strichcodes für Produkte.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Einrichten von Strichcodemasken](set-up-bar-code-masks.md)
+[Strichcodemasken einrichten](set-up-bar-code-masks.md)
 
 
 

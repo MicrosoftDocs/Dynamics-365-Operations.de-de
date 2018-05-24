@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f7001158a498aa28028167a0f76ad610ec09b43c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3726038d9782891988e16cb98cf04cf47b7e66c
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="gantt-chart-for-job-scheduling"></a>Verwenden eines Gantt-Diagramms für die Feinterminierung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Das Gantt-Diagramm wurde so entworfen, dass bevollmächtige Produktionsplaner den Produktionsplan steuern und optimieren können. Im Gantt-Diagramm können einfach Fluss Arbeitsgängen angezeigt und der Produktionsplan bei gleichzeitiger Berücksichtigung der Material- oder Ressourcenmängeln angepasst werden. Dadurch wird der Terminplanern die verfügbaren Ressourcen optimal nutzen, die Arbeit minimieren und die Durchsatzzeiten für Produktionsaufträge optimieren.
 
@@ -156,7 +156,7 @@ Die Gantt-Diagramm können auf den folgenden Seiten geöffnet werden.
 |           <strong>Abschluss des Einzelvorgangs</strong> (Liste im Arbeitsbereich <strong>Produktionsbodenverwaltung</strong>)            |                                                                                               Der Arbeitsbereich <strong>Einzelvorgänge der vollständigen Liste in der Produktionsverwaltung</strong> zeigt Einzelvorgänge von der Produktion und Chargenaufträge, die für die ausgewählten Ressourcen für den Arbeitsbereich in Bearbeitung sind. Auf der Menüoption <strong>Gantt-Diagramm</strong> können Sie das Gantt-Diagramm öffnen, in dem alle Einzelvorgänge, die in der Liste ausgewählt werden, im Diagramm geladen werden.                                                                                               |
 | <strong>Freigeben von Produktionsaufträgen</strong> (aus dem Arbeitsbereich <strong>Produktionsbodenverwaltung</strong> ) |                                                                                                                                         Freigeben von Produktionsaufträgen im Arbeitsbereich <strong>Produktionsverwaltung</strong>. Diese Seite enthält geplante Produktions- und Chargenaufträge der hängigen Freigabe. Auf dieser Seite können Sie für das ausgewählte Gantt-Diagramm Produktionsaufträge öffnen.                                                                                                                                          |
 
-## <a name="see-also"></a>Siehe auch  
+## <a name="additional-resources"></a>Zusätzliche Ressourcen  
 [Visuelle Zeitplanung mit Gantt-Diagramm für Produktions- und Chargenaufträge (Video)](https://youtu.be/BtbuShkGj4I)
 
 [Sichtplanung für Produktion (Vorführungsskript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)

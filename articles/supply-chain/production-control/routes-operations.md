@@ -20,16 +20,16 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 4026fa937ddf88f006cdcd13a8eda10c326ada62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 95e7f5179ac88c0cd6b2336a914c2c527d37d57f
 ms.contentlocale: de-de
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge. Ein Arbeitsplan definiert den Prozess für die Produktion eines Produkts oder die Produktvariante. Er beschreibt jeden Schritt (Arbeitsgang) im Produktionsprozess und den Auftrag für den diese Schritte ausgeführt werden müssen. Für jeden Schritt definiert der Arbeitsplan erforderliche betrieblichen Ressourcen, die Zeit der erforderlichen Einstellungen und die Bearbeitungszeit sowie wie die Kosten berechnet werden sollen.
 
@@ -230,12 +230,12 @@ Wenn Sie keine betriebliche Ressourcen oder eine Ressourcengruppe als Teil der R
 -   **Ressourcencharge** – Diese Option ist grundlegend die gleiche wie die **Charge** Option. Allerdings umfasst die Berechnung das **Chargenkapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Stücklisten und Formeln](bill-of-material-bom.md)
 
-[Kostenkategorien in Produktionsarbeitsplänen](../cost-management/cost-categories-used-production-routings.md)
+[Kostenkategorien in Produktionsrouting](../cost-management/cost-categories-used-production-routings.md)
 
 [Ressourcenfähigkeiten](resource-capabilities.md)
 

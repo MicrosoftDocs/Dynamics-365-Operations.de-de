@@ -1,6 +1,6 @@
 ---
 title: "Händlerzahlungen für einen Teilbetrag"
-description: "Es kann vorkommen, dass Sie eine Zahlung an einen Kreditor leisten, die geringer als der in der Rechnung angegebene Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig."
+description: "Es kann vorkommen, dass Sie eine Zahlung an einen Kreditor leisten, die geringer als der in der Rechnung angegebene Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: aeef806980665c523f10b373f7662ecf509a8172
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d8c012d3e88f3f4fe2e60f1db59978e326c42681
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="vendor-payments-for-a-partial-amount"></a>Händlerzahlungen für einen Teilbetrag
+# <a name="vendor-payments-for-a-partial-amount"></a>Kreditorenzahlungen für einen Teilbetrag
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Es kann vorkommen, dass Sie eine Zahlung an einen Kreditor leisten, die geringer als der in der Rechnung angegebene Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig. 
 
@@ -38,7 +38,7 @@ Es kann vorkommen, dass Sie eine Zahlung an einen Kreditor leisten, die geringer
 Ein Händler kann Ihnen einen Skonto für die Zahlung einer Rechnung vor dem Fälligkeitsdatum anbieten. Beispielsweise geben Sie eine Rechnung für 100.00 ein, die einen Skonto in Höhe von 2 % angibt, wenn die Rechnung innerhalb von 10 Tagen bezahlt wird. Die Fälligkeitsdatumsbedingungen sind 30 Tage. Wenn ein Zahlungsvorschlag das Skonto als Kriterium zum Auswählen einer Rechnung verwendet und der Vorschlag am oder vor dem Skontodatum erfolgt, wird die Rechnung zur Zahlung ausgewählt und die Zahlung über einen Betrag von 98,00 erstellt. Ein Skonto kann auch für eine Einmalzahlung verwendet werden, die manuell erstellt wurde.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Teilzahlungen mit Skonti
-Wenn Sie eine Teilzahlung leisten, planen Sie möglicherweise, eine weitere Teilzahlung zu leisten, um die Rechnung vollständig zu begleichen. Um ein Skonto für eine Teilzahlung in Anspruch zu nehmen, müssen Sie die <strong>**Option Skonti für Teilzahlungen berechnen auf **Ja</strong> auf der Seite <strong>Kreditorenparameter</strong>festlegen. 
+Wenn Sie eine Teilzahlung leisten, planen Sie möglicherweise, eine weitere Teilzahlung zu leisten, um die Rechnung vollständig zu begleichen. Um ein Skonto für eine Teilzahlung in Anspruch zu nehmen, müssen Sie die Option **Skonti für Teilzahlungen berechnen** auf **Ja** auf der Seite **Kreditorenparameter** festlegen. 
 
 Es kann beispielsweise sein, dass Ihnen ein Skonto in Höhe von 2 % gewährt wird, wenn die Rechnung innerhalb von 10 Tagen nach ihrer Ausstellung bezahlt wird. Es wird eine Rechnung über 100,00 Euro gebucht. Wenn Sie innerhalb von 10 Tagen eine Zahlung in Höhe von 49,00 Euro leisten, geben Sie in die Zahlungserfassung einen Sollbetrag von 49,00 Euro ein. Wenn Sie die Teilzahlung auf der Seite **Offene Buchungen ausgleichen** ausgleichen, wird im Feld **Zu verwendender Skontobetrag** der Betrag **1,00** angezeigt. 
 
@@ -46,7 +46,7 @@ Es kann beispielsweise sein, dass Ihnen ein Skonto in Höhe von 2 % gewährt wir
 > Hinweis: Wenn Sie eine Teilzahlung eingeben und im Feld **Auszugleichender Betrag** den vollständigen Rechnungsbetrag beibehalten, wird das Feld **Zu verwendender Rabattbetrag** beim Buchen automatisch neu berechnet.
 
 ## <a name="credit-notes-with-cash-discounts"></a>Gutschriften mit Skonti
-Es kann auch vorkommen, dass Sie einige in einer Rechnung enthaltene Artikel zurückgeben und dafür eine Gutschrift erhalten. Falls ein Skonto für die ursprüngliche Rechnung in Anspruch genommen wurde, können Sie den Wert des Rabatts subtrahieren, um eine Rückerstattung über den korrekten Betrag zu erhalten. Wenn die <strong>**Option Skonti für Gutschriften berechnen  auf **Ja</strong> auf der Seite<strong>Kreditorenkontenparameter</strong> festgelegt ist, wird der Rabatt für die Gutschrift automatisch berechnet. 
+Es kann auch vorkommen, dass Sie einige in einer Rechnung enthaltene Artikel zurückgeben und dafür eine Gutschrift erhalten. Falls ein Skonto für die ursprüngliche Rechnung in Anspruch genommen wurde, können Sie den Wert des Rabatts subtrahieren, um eine Rückerstattung über den korrekten Betrag zu erhalten. Wenn die Option **Skonti für Gutschriften berechnen** auf **Ja** auf der Seite **Kreditorenkontenparameter** festgelegt ist, wird der Rabatt für die Gutschrift automatisch berechnet. 
 
 Es kann beispielsweise sein, dass Ihnen ein Skonto in Höhe von 2 % gewährt wird, wenn die Rechnung innerhalb von 10 Tagen nach ihrer Ausstellung bezahlt wird. Es wird eine Rechnung über 100,00 Euro gebucht. Falls Sie die Waren zurückgeben und eine Gutschrift erhalten, können Sie die Gutschrift für den Gesamtbetrag der Originalrechnung, 100,00, zusammen mit den 2 % Skonto eingeben, das ebenfalls in der Gutschrift definiert wird.  Wenn Sie die Gutschrift auf der Seite **Buchungen ausgleichen** anzeigen, wird im Feld **Auszugleichender Betrag** **98,00** angezeigt. **-2,00** wird im Feld **Skontobetrag** angezeigt. Der Skontobetrag wird auf ein Skontokonto gebucht.
 

@@ -3,7 +3,7 @@ title: Callcenterfunktionen
 description: "Dieser Artikel gibt eine Übersicht über die Call Center Verkaufsfunktionalität in Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,35 +20,43 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
 ms.contentlocale: de-de
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="call-center-functionality"></a>Callcenterfunktionen
+# <a name="call-center"></a>Callcenter 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Dieser Artikel gibt eine Übersicht über die Call Center Verkaufsfunktionalität in Microsoft Dynamics 365 for Retail.
+In Dynamics 365 for Retail ist ein Call Center eine Art Retail-Kanal, der in der Anwendung definiert werden kann. Durch die Definition eines bestimmten Kanals für Ihre Call-Center-Einheiten kann das System bestimmte Datenvorgaben und Auftragsbearbeitungsvorgaben an Kundenaufträge binden, die von einem Benutzer des Call-Center-Kanals angelegt wurden.
 
-Dynamics 365 for Retail unterstützt außerdem Callcenter als einen Einzelhandelskanalstyp. In einem Callcenter nehmen Arbeitskräfte Aufträge von Debitoren per Telefon entgegen und erstellen Aufträge. Callcenterfunktionen umfassen Funktionen, die vorgesehen sind, um es zu vereinfachen, Telephonaufträge anzunehmen und Kundenservice während des Auftragserfüllungsprozesses zu behandeln. So können Callcenterarbeitskräfte Zahlungsinformationen direkt in den Auftrag eingeben und können eine detaillierte Übersicht von Belastungen und der Zahlungen anzeigen, bevor sie den Auftrag versenden. Arbeitskräfte haben auch Optionen zum Steuern der Preisgestaltung und können auf verschiedene Daten zu Debitoren, Produkten und Preisen von der **Auftrag**-Seite zugreifen. Callcenter verfügen zudem über Funktionen für die Verfolgung der Debitorenhistorie sowie und des Auftragsstatus. Jedes Callcenter kann eigene Benutzer, Zahlungsmethoden, Preisgruppen, Finanzdimensionen und Lieferarten haben. Sie können diese Optionen konfigurieren, wenn Sie das Callcenter erstellen. Darüber hinaus können Sie die Seite **Callcenter** verwenden, um die folgenden Gruppen von Funktionen zu aktivieren oder zu deaktivieren, die für Callcenter eindeutig sind:
+Call-Center-Funktionen umfassen erweiterte Einzelhandelspreise und Promotions, Kataloge, Geschenkkarten, Treueprogramme und Gutscheine. Call-Center-Aufträge werden auch von der POS-Anwendung (Point of Sale) genutzt, um kanalübergreifende Auftragserfüllungsszenarien zu unterstützen.
 
--   **Auftragsabschluss** – Diese Gruppe umfasst Funktionen, die mit Zahlungen und Auftragsabschluss auf der Seite **Auftrag** verknüpft sind.
--   **Direktverkauf** – Diese Gruppe umfasst Funktionen, die Quellcodes, Skripts und Kataloganforderungen zugeordnet sind.
+Es ist wichtig zu beachten, dass das Call-Center-Modul zwar auch von anderen Branchen außerhalb des Einzelhandels genutzt werden kann, das aktuelle Release der Call-Center-Anwendung Dynamics 365 for Retail jedoch nicht für den Einsatz in Business-to-Business (B2B)-Auftragsabwicklungsszenarien oder Szenarien mit einer großen Anzahl von Verkaufspositionen optimiert wurde. Es wird empfohlen, dass Benutzer, die die Call-Center-Funktionen für die Auftragsbearbeitung außerhalb der typischen Direct-to-Consumer-Transaktionsverarbeitung nutzen möchten, sich ausreichend Zeit nehmen, um zu testen und zu bestätigen, dass die Call-Center-Funktionalität den funktionalen und Leistungsanforderungen entspricht.
 
-Wenn Sie diese Funktionen in den Callcentereinstellungen aktiviert haben, sind sie auf der Seite **Auftrag** für Benutzer verfügbar, die dem Callcenter zugeordnet sind. Die meisten dieser Funktionen erfordern zusätzliche Einstellungen, bevor sie verwendet werden können. Bevor Benutzer Callcenteraufträge erstellen können, müssen Sie diese Benutzer dem Callcenter als Callcenterbenutzer hinzufügen. Dieser Schritt ermöglicht callcenterkanalspezifische Konfigurationen und Funktionen. Nachfolgend finden Sie einige Beispiele der Funktionen, die zur Verfügung stehen:
+Zusätzlich zur Unterstützung der Auftragserstellung bietet das Call-Center-Modul auch eine benutzerfreundliche Anwendung für den Kundenservice, die es den Benutzern erleichtert, Debitorenkonten zu finden und alle zugehörigen Auftragsdaten und -attribute zu überprüfen. Der Kundendienstbildschirm ist so gestaltet, dass der Benutzer schnell auf die auftragsbezogenen Daten zugreifen kann, um die häufigsten Fragen zu beantworten, die er von Kunden erhält.
 
--   Geführte Verkäufe stellen Konfigurationsoptionen für Telesales-Skripts und Produktbilder bereit, um Verkaufssachbearbeitern zu helfen und zu führen, während diese Aufträge entgegennehmen.
--   Aufträge können erst abgeschlossen werden, wenn Verkaufssachbearbeiter mindestens eine Zahlungsmethode aufgezeichnet haben.
--   Regeln für weiteren Verkauf/ergänzenden Verkauf können konfiguriert werden, um Verkaufssachbearbeiter aufzufordern, bestimmte Produkte für Kunden zu bewerben.
--   Verkaufssachbearbeiter können den Quellcode für den Katalog aufzeichnen, von dem ein Debitor bestellt.
--   Verkaufssachbearbeiter können die Coupons eines Einzelhändlers dem Auftrag hinzufügen.
--   Verkaufssachbearbeiter können Anschlussprogramme verkaufen.
--   Aufträge können manuell oder automatisch gesperrt werden, um anzugeben, dass weitere Untersuchungen erforderlich sind, bevor der Auftrag bearbeitet werden kann.
+Auf dieser Seite finden Sie Links zu relevanter Dokumentation zur Einrichtung, Konfiguration und funktionalen Nutzung der Call-Center-Funktionen in Dynamics 365 for Retail.
 
+## <a name="configure-the-call-center"></a>Callcenter konfigurieren
+[Auftragsabwicklungsoptionen einrichten](set-up-order-processing-options.md)
 
+## <a name="configure-order-processing"></a>Auftragsbearbeitung konfigurieren
+[Betrugswarnungen einrichten](set-up-fraud-alerts.md)
+[Manuelle Auftragsverfolgung](work-with-order-holds.md)
 
+## <a name="configure-payment-processing"></a>Zahlungsabwicklung konfigurieren
+[Zahlungsmethoden in einem Callcenter](work-with-payments.md)
+
+## <a name="configure-direct-marketing"></a>Direktmarketing konfigurieren
+[Callcenterkataloge](call-center-catalogs.md)
+
+[Analyse nach Aktualität, Häufigkeit und finanziellen Gesichtspunkten (RFM) einrichten](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a>Kontinuitätsprogramme konfigurieren
+[Einrichten eines Anschlussprogramms für einen Callcenter](set-up-continuity-program.md)
 
 

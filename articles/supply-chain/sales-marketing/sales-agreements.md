@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-agreements"></a>Kaufverträge
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen.
 
@@ -38,7 +38,7 @@ Die Gültigkeitsperiode der Kaufvertragsposition wird durch die Felder **Gültig
 
 Sie können einen Auftrag direkt von einem Kaufvertrag erstellen, indem Sie die Aktivität **Freigabeauftrag** verwenden. Alternativ können Sie einen gültigen Kaufvertrag auswählen, wenn Sie Aufträge entgegennehmen (mehr unter "Kaufverträge im Bestellungsprozess übernehmen" in diesem Artikel).  
 
-**Hinweis:** In früheren Versionen wurden Kaufverträge als Rahmenaufträge bezeichnet.
+> [Hinweis!] In früheren Versionen wurden Kaufverträge als Rahmenaufträge bezeichnet.
 
 ## <a name="commitment-types"></a>Zusagetypen
 Jede Position in einem Kaufvertrag drückt eine Zusage für den Verkauf eines Artikels aus. Im Allgemeinen gibt es zwei Kategorien von Zusagen:

@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 338e58522f9b9fba3ce22b22488affbab24b1315
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Erstellen von Plänen für variable Vergütung
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Die variable Vergütung ist ein irregulärer Lohn eines Mitarbeiters, wie Prämien oder Bestandsprämien. In diesem Artikel werden die Komponenten beschrieben, die eingerichtet werden müssen, bevor Sie eine variable Vergütung erstellen und Mitarbeiter in einem variablen Vergütungsplan registrieren können.
 
@@ -100,7 +100,7 @@ Sie können die Registerkarte **Überschreibung** verwenden, um bestimmte Werte 
 
 **Organisatorische Überschreibungen** werden verwendet, um die Prämie eines Mitarbeiters auf die Leistung einer oder mehreren Abteilungen zu basieren. Der Prozentsatz, der über die Abteilungen hinweg zugewiesen wird, sollte insgesamt 100 Prozent betragen. Die Einzelleistung des Mitarbeiters wird auch berücksichtigt. Diese Einstellungen werden nur verwendet, wenn beim Ausführen des Vergütungsprozesses die Option **Leistungsbezogene Bezahlung** ausgewählt wird.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Vergütungspläne](compensation-plans.md)

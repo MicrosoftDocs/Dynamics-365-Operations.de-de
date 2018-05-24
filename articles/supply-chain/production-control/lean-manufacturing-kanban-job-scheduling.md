@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6ac4c1afecb72d4007d830a9927bd3171ddd48ec
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5f1044e6731fd757532e34292109b9d81ca38719
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kaban-Einzelvorgang für Lean-Manufacturing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zum Sichtsteuerelement zur Kanban-Einzelvorgangs-Planung und zu unterschiedlichen Methoden, um Kanban-Einzelvorgänge zu planen.  
 
@@ -69,7 +69,7 @@ Die verfügbare Kapazität pro Tag oder Woche wird anhand des Kalenders definier
 
 Die **Kanban-Feinterminierung**-Listenseite enthält eine Infobox, die die verfügbare und gebuchte Periodenkapazität für die ausgewählte Arbeitsgruppe anzeigt. Abhängig von den ausgewählten Zeitplanperioden im Produktionsflussmodell zeigen die Perioden Tage oder Wochen an.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 

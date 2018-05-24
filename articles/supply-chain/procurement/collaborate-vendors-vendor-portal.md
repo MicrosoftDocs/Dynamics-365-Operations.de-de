@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 25dd62081e4a6e196bffaa6cc72ff40ed68c736c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Zusammenarbeit mit Kreditoren mithilfe des Kreditorenportals
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen gelten nur für die Versionen Februar 2016 &amp; und Mai 2016 von Dynamics AX.
 
@@ -96,7 +96,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 |                           Sie senden die neue Version der Bestellung an das Kreditorenportal.                            |                                                                                                                                                                    Die neue Version wird im Kreditorenportal erfasst, und der Status wird in <strong>Externe Prüfung</strong> geändert.                                                                                                                                                                     |
 |                                Der Kreditor genehmigt die neue Version der PO.                                 |                                                                                                                                                     Der Status wird entweder automatisch in <strong>Bestätigt</strong> geändert oder wenn Sie die Antwort vom Kreditor erhalten und die Bestellung dann bestätigen.                                                                                                                                                     |
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Konfigurieren der Sicherheit für Kreditorenportalbenutzer](configure-security-vendor-portal-users.md)

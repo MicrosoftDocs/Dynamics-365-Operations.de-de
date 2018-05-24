@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 58030df8db467f754ec93ecc3f41585b20f03893
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ee130dd357b5ae678f623630165a1ab787d6ae2c
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-definitions-in-financial-report-designer"></a>Berichtsdefinitionen im Finanzberichtdesigner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Berichtsdefinitionen. Eine Berichtsdefinition ist eine Berichtskomponente (oder Baustein), die eine Zeilendefinition, eine Spaltendefinition und eine optionale Berichtstruktur-Definition verwendet, um den Bericht zu erstellen. Eine Berichtsdefinition enthält auch Optionen und Einstellungen zum Anpassen eines Berichts. 
 
@@ -79,8 +79,8 @@ In der folgenden Tabelle werden die Registerkarten in einer Berichtsdefinition u
 <li>Formatieren von Detailberichten</li>
 <li>Formatieren von Berichtsbaumstrukturen</li>
 <li>Generieren eines Ausnahmeberichts</li>
-<li>Angabe zur Währungsumrechnung</li>
-<li>Details zu Zwischensummen und Filterung von Konten</li>
+<li>Angeben der Währungskonvertierung</li>
+<li>Teilergebnisse und das Filtern von Kontodetails</li>
 </ul></td>
 </tr>
 </tbody>
@@ -88,7 +88,7 @@ In der folgenden Tabelle werden die Registerkarten in einer Berichtsdefinition u
 
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Finanzberichterstellung](financial-reporting-intro.md)

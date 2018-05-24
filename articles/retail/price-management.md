@@ -3,7 +3,7 @@ title: Einzelhandelspreisverwaltung
 description: "In diesem Thema werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Microsoft Dynamics 365 für Retail behandelt."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -18,19 +18,18 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7e6babe1bfec60ece4f84a77bbd838faf7274e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-sales-price-management"></a>Einzelhandelspreisverwaltung
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Prozesse für das Erstellen und Verwalten von Verkaufspreisen in Microsoft Dynamics 365 für Retail behandelt. Es bezieht sich auf die Konzepte, die a
-n diesem Prozess beteiligt sind, und auf die Auswirkungen der verschiedenen Konfigurationsoptionen für Verkaufspreise.
+In diesem Thema werden die Prozesse für das Erstellen und Verwalten von Verkaufspreisen in Microsoft Dynamics 365 für Retail behandelt. Es bezieht sich auf die Konzepte, die an diesem Prozess beteiligt sind, und auf die Auswirkungen der verschiedenen Konfigurationsoptionen für Verkaufspreise.
 
 ## <a name="terminology"></a>Terminologie
 Die folgenden Begriffe werden in diesem Thema erläutert.
@@ -199,32 +198,6 @@ Microsoft SQL Server Express ist für Kanaldatenbanken aufgrund der häufig Kost
 Wenn Sie Verkaufspreise in Microsoft Dynamics 365 festlegen, definiueren Sie nicht, ob der Preiswert den Sie festlegen, Mehrwersteuer einschließt oder nicht. Der Wert ist nur der Preis. Allerdings können Sie mit der Einstellung **Preis enthält Mehrwertsteuer** Einzelhandelskanälen so konfigurieren, sodass sie entweder Steuer von Preisen einbeziehen oder ausschließen. Diese Einstellung wird für den Kanal festgelegt und kann auch in einem bestimmten Unternehmen ändern.
 
 Wenn Sie mit den Arten der inklusiven und exklusive Steuern arbeiten, ist es für Sie für Preise ordnungsgemäß außerordentlich wichtig, da der Gesamtbetrag, der vom Debitor bezahlt wird, ändert, wenn die Einstellung **Preis enthält Mehrwertsteuer** im Kanal geändert wird.
-
-### <a name="effect-of-the-price-includes-sales-tax-setting-on-financial-postings"></a>Auswirkung des Preises für Finanzbuchungen enthält Mehrwertsteuereinstellung
-Alle Buchungsbeträge, die im Hauptbuch für Umsatzerlös- und Rabattkonten gebucht werden, sind von der **Preis enthält Mehrwertsteuer** betroffen. Das folgende Beispiel veranschaulicht, wie diese Einstellung wertmäßige Buchungen beeinflusst.
-
-Für das Beispiel wird nur die Umsatzbuchung angeschaut, da die **Preis enthält Mehrwertsteuer** Einstellung nicht die Lagerkostenbuchungen beeinflusst.
-
-#### <a name="example"></a>Beispiel
-Bei diesem Beispiel werden Rabattbeträge konfiguriert, sodass sie separat vom Umsatzerlös gebucht werden.
-
-Sie verkaufen ein Produkt, das einen Steuersatz von 10 Prozent und einen Prozent-Rabatt von 5 verwendet. Die folgenden Konten aus den USRT-Demodaten werden verwendet:
-
-- **Umsatzerlös** 401100
-- **Skonto** 403200
-- **Steuer** 202100
-
-**Fall 1: Steuer-Exklusive (auch als Mehrwertsteuer bekannnt)**
-
-- **Umsatzerlös** $ 100
-- **Skonto** $ 5
-- **Steuer:** $9,5 (= 10 Prozent von $95)
-
-**Rechtssache 2: Steuer-inklusiv (auch als Mehrwertsteuer \[VAT\]bekannt)**
-
-- **Umsatzerlös** $ 90
-- **Rabattprozentsatz** $4.5 (= 5 Prozent von $90)
-- **Steuer** $10
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Unterschiede zwischen der Festsetzung von Enzelhandelspreisen und Nicht-Einzelhandelpreiskalkulation
 Eine einzelne Modul-Preiskalkulation wird verwendet, um Einzelhandelspreise über alle Kanäle zu berechnen: Callcenter, auf Shop Lagermanagement und Onlineshops. Das hilft bei der Aktivierung der einheitlichen Geschäftsszenarien. 

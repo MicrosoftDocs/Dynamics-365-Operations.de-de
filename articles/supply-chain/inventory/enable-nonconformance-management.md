@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 28037713a51a83f4b792adef8a26f02960fa6b07
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 93a7ed31dcad19a29a85352a2bf200915766036c
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nonconformance-management"></a>Qualitätsmangel-Verwaltung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel werden die Basiseinstellungen beschrieben, die erforderlich sind, um Qualitätsmängel zu verwenden. Zusätzliche Einstellungen sind erforderlich, wenn Sie Testbestellungen verwenden möchten.
 
@@ -47,7 +47,7 @@ Um die Verwaltung von Qualitätsmängeln zu aktivieren, führen Sie die folgende
 6.  Definieren Sie die zugehörigen Arbeitsgänge, die Qualitätsmängeln zugewiesen werden. Definieren Sie mithilfe der Seite **Zugehörige Arbeitsgänge** eine Klassifizierung der Arbeiten, die für eine genehmigte Nichtübereinstimmung ausgeführt werden können. Beim Zuweisen eines zugehörigen Arbeitsgangs zu einer Nichtübereinstimmung können auch ausführliche Informationen, wie z. B. zum zugeordneten Material, zu Arbeitsstunden sowie zu sonstigen Zuschlägen definiert werden, die zum Ausführen des Arbeitsgangs erforderlich sind. Diese Informationen werden verwendet, um vorkalkulierte Kosten für den Arbeitsgang zu berechnen. Die ausführlichen Informationen sowie die vorkalkulierten Kosten dienen lediglich zu Referenzzwecken. Die zugehörigen Arbeitsgänge für die Qualität unterscheiden sich von den Arbeitsgängen, die für einen Produktionsarbeitsplan definiert werden können.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Eine Nicht-Konformität erzeugen und verarbeiten (Aufgabenleitfaden)](tasks/create-process-non-conformance.md)

@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 974edd06460df4afe594b0a033a042b8c2763f7f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: be962bffd9dfe756b444f6946990058971896a27
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="demand-forecasting-setup"></a>Einrichten einer Bedarfsplanung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema werden die Einrichtungsaufgaben, die Sie ausführen müssen, um die Bedarfsplanung vorzubereiten, beschrieben.  
 
@@ -78,7 +78,7 @@ Um Bedarfsvorhersagen zu erstellen, können Sie Ihren eigenen Dienst bereitstell
 ## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>Einstellungen für den Machine Learning-Dienst der Finance and Operations-Bedarfsplanung
 Um die Parameter anzuzeigen die für die Finance and Operations Bedarfsplanung konfiguriert werden können, gehen Sie zu **Masterplanung** &gt; **Einstellungen** &gt; **Bedarfsplanung** &gt; **Planungsalgorithmusparameter**. Die **Planungsalgorithmusparameter** Seite zeigt die Standardwerte für die Parameter an. Sie können mithilfe der Parameter die **Bedarfsplanungsparameter** überschreiben. Verwenden Sie die Registerkarte **Allgemein**, um die Parameter global zu überschreiben, oder klicken Sie auf die Registerkarte **Artikelverteilungsschlüssel**, um die Parameter pro Artikelverteilungsschlüssel zu überschreiben. Parameter, die für einen Artikelverteilungsschlüssel überschreiben werden, wirken sich nur auf die Planung von Artikeln aus, die diesem Artikelverteilungsschlüssel zugeordnet sind.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Einführung in die Bedarfsplanung](introduction-demand-forecasting.md)

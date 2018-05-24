@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Budgetplanungsintegration in andere Module
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Budgetpläne können aus mehreren unterschiedlichen Ressourcen generiert werden. Die grundlegenden Elemente für den periodischen Prozess sind die gleichen für alle Ressourcen. 
 
@@ -68,7 +68,7 @@ Bei allen Prozessen können die Registerkarte **Quelle** Daten filtern, indem di
 
 Das Feld **Gesamtsumme nach** oben auf der Seite bestimmt auch das Datum, das verwendet wird. In diesem Feld werden die Summen zusammengezählt, und optional wird das Gültigkeitsdatum auf den ersten Tag des Geschäftsjahrs oder des Finanzzeitraums festgelegt. 
 
-Viele der Felder der Registerkarte <strong>Vorgabe</strong> werden bearbeitbar oder schreibgeschützt, abhängig von der Aktivität, die Sie auswählen. Wenn Sie vom Erstellen eines neuen Budgetplans zum Aktualisieren eines vorhandenen Plans wechseln, ist das Feld <strong>Budgetplanname</strong> nicht verfügbar und die Felder, die dem Auswählen eines vorhandenen Plans zugeordnet sind, sind verfügbar. Auf den Registerkarten <strong>Ziel</strong> und <strong>Quelle **ist das Feld **Sachkonto</strong> nie verfügbar, da der Wert vom ausgewählten Budgetplanungsprozess bestimmt wird. 
+Viele der Felder der Registerkarte <strong>Vorgabe</strong> werden bearbeitbar oder schreibgeschützt, abhängig von der Aktivität, die Sie auswählen. Wenn Sie vom Erstellen eines neuen Budgetplans zum Aktualisieren eines vorhandenen Plans wechseln, ist das Feld **Budgetplanname** nicht verfügbar und die Felder, die dem Auswählen eines vorhandenen Plans zugeordnet sind, sind verfügbar. Auf den Registerkarten **Vorgabe** und **Quelle** ist das Feld **Sachkonto** nie verfügbar, da der Wert vom ausgewählten Budgetplanungsprozess bestimmt wird. 
 
 Im Feld **Budgetklasse** können Sie die Haushaltsplanpositionen entweder als Ausgabenbuchungen oder Umsatzerlösbuchungen festlegen. Normalerweise sind Umsatzerlösbuchungen Habenbeträge auf einem Sachkonto und werden daher als negative Beträge gespeichert. In der Regel werden diese Buchungen auch als negative Beträge im Budgetplan angezeigt. Indem Sie die Budgetklasse jedoch als Feld im Planlayout hinzufügen, können Sie festlegen, dass der Umsatzerlös als positive Beträge angezeigt wird.
 

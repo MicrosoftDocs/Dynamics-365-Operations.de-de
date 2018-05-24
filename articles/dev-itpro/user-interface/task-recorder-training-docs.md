@@ -19,16 +19,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9550faec1bbbdc233631e149c09b8e4faf25f5ff
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fbf7edbd141f5e94c333b64beedf9126d2900d47
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>Dokumentation oder Schulungen mithilfe von"Aufgabenaufzeichnungen" erstellen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
 
@@ -118,7 +118,7 @@ Sie können die Microsoft Aufgabenaufzeichnungen herunterladen und bearbeiten, u
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Ihre Aufgabenaufzeichnungen in den Hilfebereich einbeziehen
 Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich angezeigt werden, sodass sie als Aufgabenleitfaden wiedergegeben oder als Text angezeigt werden können, müssen Sie die Aufgabenaufzeichnungen in Ihrer eigenen BPM-Bibliothek speichern und Ihre Hilfesystemparameter so aktualisieren, dass sie auf die BPM-Bibliothek verweisen. Weitere Informationen finden Sie unter [Verbinden des Hilfesystems](../../fin-and-ops/get-started/help-connect.md)
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Hilfe – Überblick](../../fin-and-ops/get-started/help-overview.md)

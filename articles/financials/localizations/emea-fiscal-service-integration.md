@@ -17,16 +17,16 @@ ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 122f8375c50fa62c4831acc0d059e37a7c1c45f5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 04608cee8639258af1502830b60d4afd9e841e8a
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fiscal-service-esr-integration"></a>Integration von steuerlichem Dienst (ESR)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Österreich sollten alle Barzahlungen durch ein externes Gerät oder einen externen Dienst signiert werden, und sie sollten sicher gespeichert werden. In der Tschechischen Republik sollten alle Barzahlungen an das Behördenportal für eine steuerliche Signatur übermittelt werden. In beiden Ländern sollte ein Barbeleg ausgestellt werden, auf dem die Signatur, bzw. Unterschrift gedruckt wird.
 
@@ -73,7 +73,7 @@ Jede Kasse muss so eingerichtet werden, dass sie mit dem steuerlichen Dienst kom
 <li><strong>Kassen-URL</strong> – Geben Sie die URL des steuerlichen Diensts ein.
 <blockquote>[!WARNING]<br>Drittanbieterdienste oder andere Dienste, die Sie hier konfigurieren, benötigen keine Zertifizierung, und sie erfüllen möglicherweise nicht die Datenschutzstandards von Microsoft. Sie sollten die Datenschutzdokumentation jedes Diensts überprüfen und mit jedem Dienstanbieter zusammenarbeiten, um mehr über die Konformitätsstufe zu erfahren, die jeder Dienst bietet. Sie sind dafür verantwortlich sicherzustellen, dass diese Dienste ihre sicherheitsbezogenen, datenschutzbezogenen und gesetzlichen Standards erfüllen. Sie tragen das Risiko der Verwendung dieser Dienste. Microsoft gewährt keine ausdrücklichen Gewährleistungen, Garantien oder Bedingungen. Es wird dringend empfohlen, dass Sie nur Diensten verwenden, die sichere und autorisierte Verbindungen verwenden (das heißt, Dienste, die das HTTPS-Protokoll verwenden).</blockquote>
 </li>
-<li><strong>Key Vault-Name</strong> – Wenn auf den steuerlichen Dienst über eine sichere Verbindung zugegriffen werden kann (dass heißt, die URL beginnt mit https://), sollten Sie Zertifikate einrichten und sie korrekt auf beiden Seiten speichern (Finance and Operations und beim steuerlichen Dienst des Drittanbieters). In diesem Feld wählen Sie den Namen der Azure Key Vault-Instanz aus, in der das Finance and Operations-Zertifikat gespeichert ist. Weitere Informationen finden Sie unter <a href="https://support.microsoft.com/en-us/help/4040305/setting-up-a-key-vault-client">Einen Azure Key Vault-Client einrichten</a>.</li>
+<li><strong>Key Vault-Name</strong> – Wenn auf den steuerlichen Dienst über eine sichere Verbindung zugegriffen werden kann (dass heißt, die URL beginnt mit https://), sollten Sie Zertifikate einrichten und sie korrekt auf beiden Seiten speichern (Finance and Operations und beim steuerlichen Dienst des Drittanbieters). In diesem Feld wählen Sie den Namen der Azure Key Vault-Instanz aus, in der das Finance and Operations-Zertifikat gespeichert ist. Weitere Informationen finden Sie unter <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Einen Azure Key Vault-Client einrichten</a>.</li>
 <li><strong>Klassenname</strong> – Wählen Sie die Klasse aus, in der Eigenschaften der Integration mit dem steuerlichen Dienst implementiert werden. Die verfügbare Klasse ist <strong>CashRegisterProcessingEFSTA_W</strong>.</li>
 </ul>
 </td>
@@ -83,7 +83,7 @@ Jede Kasse muss so eingerichtet werden, dass sie mit dem steuerlichen Dienst kom
 <td>Wählen Sie für jede Kasse die EB-Formate aus, die verwendet werden müssen, um Belege auszudrucken, Anforderungen an den steuerlichen Dienst zu senden und Antworten vom steuerlichen Dienst zu empfangen. Die EB-Formate, die Sie auswählen, müssen für die primäre Adresse der juristischen Person geeignet sein.</td>
 <td>Für das Belegformat wählen Sie beispielsweise <strong>Barbelegformat (AT)</strong> für Österreich und <strong>Barbelegformat (CZ)</strong> für die Tschechische Republik aus.
 
-Wenn Sie kein Format in der Liste finden, können Sie aktuelle elektronische Formate von LCS herunterladen. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Elektronische Berichtskonfigurationen aus Lifecycle Service herunterladen</a>.</td>
+Wenn Sie kein Format in der Liste finden, können Sie aktuelle elektronische Formate von LCS herunterladen. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Elektronische Berichtskonfigurationen aus Lifecycle Service herunterladen</a>.</td>
 </tr>
 <tr>
 <td>Kassenzertifikatseinstellungen</td>

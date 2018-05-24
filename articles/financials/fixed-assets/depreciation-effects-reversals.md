@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6672047cb3234e4432190d3afb20f46827ad5ef4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fbef7cb9a9fb18809dff96d4a44454d0dc6a31fc
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="depreciation-effects-with-reversals"></a>Abschreibungseffekte bei Rückbuchungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel behandelt mögliche Auswirkung beim Stornieren einer Anlagentransaktion. 
 
@@ -90,7 +90,7 @@ Die Abschreibung ist um 16,95 (983,62 - 966,67) zu niedrig bewertet.
 
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Anlagenabschreibung](fixed-asset-depreciation.md)

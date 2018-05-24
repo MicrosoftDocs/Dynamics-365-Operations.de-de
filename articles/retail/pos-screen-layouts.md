@@ -20,16 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad425ab0848ab04003b7378cb5c488650f01c441
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9082c156fde52aa0c822f8e4753de816f8cc0558
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-screen-layouts-for-pos"></a>Konfigurieren von Bildschirmlayouts für POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Retail-POS-Erfahrungen.
 
@@ -89,12 +89,12 @@ Jede Layoutgröße innerhalb eines Bildschirmlayouts muss mithilfe des Bildschir
 
 **Bild**- Die Bildsteuerung kann verwendet werden, um das Shoplogo oder anderes Brandingbilder im Buchungsbildschirm anzuzeigen. Das Bildsteuerelement ist für vollständige Layouts nur verfügbar. 
 
-**Empfohlene Produkte** - Sofern für die Umgebung konfiguriert, wird das Produktsteuerelement empfohlene Produktvorschläge auf Grundlage von Machine-Learning-Daten angezeigt. Das empfohlene Produktsteuerelement ist nur für vollständige Layouts in Dynamics 365 for Retail, Version 1611, verfügbar. ** Benuterdefiniertes Steuerelement ** - Das benutzerdefinierte Steuerlelement dient als Platzhalter innerhalb des Bildschirmlayouts das die Platzierung von benutzerdefinierten Inhalten zulässt. Das benutzerdefinierte Steuerelement ist für vollständige Layouts nur verfügbar.
+**Empfohlene Produkte** - Sofern für die Umgebung konfiguriert, wird das Produktsteuerelement empfohlene Produktvorschläge auf Grundlage von Machine-Learning-Daten angezeigt. Das empfohlene Produktsteuerelement ist nur für vollständige Layouts in Dynamics 365 for Retail, Version 1611, verfügbar. **Benuterdefiniertes Steuerelement** - Das benutzerdefinierte Steuerlelement dient als Platzhalter innerhalb des Bildschirmlayouts das die Platzierung von benutzerdefinierten Inhalten zulässt. Das benutzerdefinierte Steuerelement ist für vollständige Layouts nur verfügbar.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Einrichten von Retail POS-Layoutdesigner](install-pos-layout-designer.md)
+[Den Retail POS-Layout-Designer installieren](install-pos-layout-designer.md)
 
 
 
