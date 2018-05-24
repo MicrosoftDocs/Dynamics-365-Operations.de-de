@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 6a620f2a0105d578d419d3aac816c7d78fbf3e46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
 ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Bezeichnung der Produktvariantennummern und Namen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie eine Produktnummernbezeichnung einrichten können, um das feste Format [Produktmasternummer – Konfiguration – Größe – Farbe – Stil] zu ersetzen. Die neue Bezeichnung hat ein gezieltes Format, das die Produktmasternummer, aktive Produktdimensionen und Texttrennzeichen Ihrer Wahl umfasst. Darüber hinaus können Sie auch eine Bezeichnung für Produktnamen erstellen. Sie können schließlich auch eine Bezeichnung erstellen, um Konfigurationen zu identifizieren, die vom einschränkungsbasierten Produktkonfigurator erstellt werden. Diese Bezeichnungen können Attribute Ihrer Wahl enthalten.
 
@@ -192,10 +192,10 @@ Abhängig von der Bezeichung versucht das System möglicherweise, eine nicht ein
 
 Während eines Schritts im Konfigurationsprozess schlägt das System einen Konfigurationswert gemäß der Bezeichnung vor. In diesem Schritt können Sie den Konfigurationswert manuell ändern. Wenn Sie die Konfiguration speichern, überprüft das System, dass der Konfigurationswert eindeutig ist. Wenn der Wert, den Sie eingegeben haben, nicht eindeutig ist, erhalten Sie eine Fehlermeldung. Um die Konfiguration zu speichern, müssen Sie einen eindeutigen Konfigurationswert eingeben.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Erstellen einer Produktnummerenbezeichnung für vordefinierte Produktvarianten](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
+[Produktnummernbezeichnung für vordefinierte Produktvarianten erstellen](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Erstellen einer Produktnummerenbezeichnung für konfigurierte Produktvarianten](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 

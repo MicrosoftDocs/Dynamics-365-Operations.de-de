@@ -16,30 +16,28 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7046b687f99df32a3e1410c37c9a30ca285fa08f
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="data-validation-workspace"></a>Datenüberprüfungsarbeitsbereich
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält eine Übersicht über den **Arbeitsbereich für die Prüfliste für Datenprüfung** und der zugeordneten Konfiguration.
-
-## <a name="data-validation-checklist-workspace"></a>Arbeitsbereich für die Prüfliste für Datenüberprüfung
 
 Mit dem **Arbeitsbereich für die Prüfliste für Datenüberprüfung** können Sie Datenprüfungsvorgänge in Unternehmen, Bereichen und bei Personen erfassen. Die Checkliste kann während einer neuen Implementierung, nach einer Aktualisierung oder nach einer Migration verwendet werden. Abhängig von Ihrer Ansicht auf den Arbeitsbereich **Prüfliste für Datenüberprüfung**, sehen Sie entweder alle Aufgaben und Status für eine Datenprüfungsprojekt oder nur die Aufgaben, die Ihnen zugewiesen sind.
 
 Sie müssen ein Datenprüfungsprojekt am oberen Rand des Arbeitsbereichs auswählen. Alle Daten, die im Arbeitsbereich angezeigt werden, werden dann nach dem ausgewählten Datenprüfungsprojekt gefiltert.
 
-### <a name="summary-tiles"></a>Zusammenfassungskacheln
+## <a name="summary-tiles"></a>Zusammenfassungskacheln
 
 Die **Zusammenfassung** Kacheln enthalten eine Übersicht über den Prozess, und helfen, den Datenüberprüfungsprozess zu überwachen. Sie können alle verbleibenden Aufgaben, abgeschlossene Aufgaben, aktuelle Aufgaben und nicht gestartete Aufgaben für den Prozess sehen. Diese Informationen sind für alle Unternehmen, die im ausgewählten Datenprüfungsprojekt enthalten sind.
 
-### <a name="tasks-and-status-section"></a>Aufgaben- und Statusbereich
+## <a name="tasks-and-status-section"></a>Aufgaben- und Statusbereich
 
 Im Abschnitt **Aufgaben und Status** wird der Status des Gesamtdatenprüfungsprojekts auf unterschiedliche Weise angezeigt: Status nach juristischer Person, nach Bereich und nach Aufgabenliste. Sie können den Filter auch auswählen, um den Status für ein bestimmtes Unternehmen anzuzeigen. Jede Statusregisterkarte bietet eine Aufschlüsselung nach Prozentsatz, der abgeschlossen wurde und nach Aufgaben, die noch verbleiben.
 
@@ -52,11 +50,11 @@ Sie können Dateien, Hinweise, Bilder und URLs zu einer Aufgabe zuordnen, indem 
 
 Die Option **Abgeschlossen von** wird automatisch mit dem Namen einer Arbeitskraft ausgefüllt, die die Aufgabe abgeschlossen hat, nachdem die Aufgabe abgeschlossenen ist. Wenn eine Aufgabe markiert wird, die als abgeschlossen markiert wird, wird das Feld **Datum abgeschlossen** automatisch mit dem aktuellen Datum und der Systemzeit aktualisiert.
 
-### <a name="configure-data-validation-project-page"></a>Datenüberprüfungsprojektseite
+## <a name="configure-data-validation-project-page"></a>Datenüberprüfungsprojektseite
 
 Bevor Sie den Arbeitsbereich **Prüfliste für Datenprüfung** verwenden können, müssen Sie den Prozess konfigurieren, indem Sie die Seite **Datenprüfungsprojekt konfigurieren** verwenden. (Klicken Sie auf **Arbeitsbereiche** \> **Prüfungsliste für Datenprüfung** \> **Datenprüfungsprojekt konfigurieren**).
 
-### <a name="task-areas"></a>Aufgabenbereiche
+## <a name="task-areas"></a>Aufgabenbereiche
 
 Sie verwenden Aufgabenbereiche, um Datenprüfungsaufgaben in logische Bereiche der Eigentümerschaft innerhalb der Organisation zu gruppieren. Beispielsweise können Kreditoren, Debitoren oder das Hauptbuch als Aufgabenbereiche verwendet werden.
 

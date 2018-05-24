@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5d379b034c996cb0eff20a44960ba1e2701af81a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-requisition-overview"></a>Übersicht über Bestellanforderung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema beschreibt den Bestellanforderungsworkflow und die verschiedenen Statuswerte, die eine Bestellanforderung haben kann.
 
@@ -192,7 +192,7 @@ Um genehmigte Bestellanforderungspositionen zu konsolidieren, führen Sie folgen
 5.  Erstellen Sie Bestellungen für konsolidierte Anforderungspositionen oder für Bestellanforderungspositionen in einer Konsolidierungseinheit.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Erstellen einer Anforderung für Verbrauch (Aufgabenleitfaden)](tasks/create-requisition-consumption.md)

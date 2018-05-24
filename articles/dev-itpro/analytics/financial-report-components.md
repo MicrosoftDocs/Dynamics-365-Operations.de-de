@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3679ccf304a32385c162ba3663eba2300f028817
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5599135eebfcffdedaaadec86beb214c5c04cbaf
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-report-components"></a>Finanzberichtkomponenten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die Verwendung der Komponenten, der Bausteine oder Berichtsdefinitionen in der Finanzberichterstellung. Diese Bausteine beinhalten Zeilendefinitionen, Spaltendefinitionen und Berichtstruktur-Definitionen. Der Artikel beschreibt, wie Sie Bausteine organisieren und sperren. 
 
@@ -85,7 +85,7 @@ Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer
 2.  Wählen Sie im Dialogfeld **Bausteingruppen** die Bausteingruppe aus, die exportiert werden soll, und klicken Sie dann auf **Exportieren**.
 3.  Wählen Sie im Dialogfeld **Exportieren** die Berichtsdefinitionen aus, die exportiert werden soll:
     -   Um alle Ihre Berichtsdefinitionen und die zugeordneten Bausteine zu exportieren, klicken Sie auf **Alles auswählen**.
-    -   Um bestimmte Berichte, Zeilen, Spalten, Strukturen oder Dimensionssätze zu exportieren, klicken Sie auf die entsprechende Registerkarte und wählen die Artikel aus, die exportiert werden sollen. Drücken und halten Sie die STRG-Taste gedrückt, um mehrere Elemente auf einer Registerkarte auszuwählen. **Hinweis:**Wenn Sie Berichte für den Export auswählen, werden die zugeordneten Zeilen, Spalten, Strukturen und Dimensionssätze ausgewählt.
+    -   Um bestimmte Berichte, Zeilen, Spalten, Strukturen oder Dimensionssätze zu exportieren, klicken Sie auf die entsprechende Registerkarte und wählen die Artikel aus, die exportiert werden sollen. Drücken und halten Sie die STRG-Taste gedrückt, um mehrere Elemente auf einer Registerkarte auszuwählen. **Hinweis:** Wenn Sie Berichte für den Export auswählen, werden die zugeordneten Zeilen, Spalten, Strukturen und Dimensionssätze ausgewählt.
 
 4.  Wenn Sie die Artikel ausgewählt haben, die Sie exportieren möchten, klicken Sie auf **Exportieren**.
 5.  Wählen Sie im Dialogfeld **Speichern unter** einen Speicherort aus, an den die Bausteingruppe exportiert wird.
@@ -109,10 +109,10 @@ Sie können eine Bausteingruppe in eine vorhandene Bausteingruppe importieren. A
 Wenn Sie einen Baustein öffnen, können andere Benutzer auf diesen Baustein nur im schreibgeschützten Modus zugreifen. Manchmal vergisst ein Benutzer, einen Baustein zu schließen oder schaltet das System ab, ohne den Baustein zu schließen. Dadurch bleibt der Baustein ausgecheckt und kein anderer Benutzer kann ihn öffnen. In solchen Fällen kann ein Rechnungslegungsadministrator das **Ausgecheckte Elemente** verwenden, um Bausteine einzuchecken, die Benutzer links augescheckt haben. **Hinweis:** Sie müssen die Rolle eines Administrators innehaben, um Bausteine einzuchecken, indem Sie das Dialogfeld **Ausgecheckte Elemente** verwenden.
 1.  Klicken Sie im Berichts-Designer im Menü **Extras** auf **Ausgecheckte Elemente**.
 2.  Aktivieren Sie im Dialogfeld **Ausgecheckte Elemente** das Kontrollkästchen **Elemente aller Benutzer anzeigen**. Die Liste wird aktualisiert und zeigt alle ausgecheckten Bausteine sowie die Benutzer an, die sie ausgecheckt haben.
-3.  Wählen Sie einen Baustein aus, und klicken Sie anschließend **Auschecken rückgängig machen**.
-4.  Klicken auf **Ja**, um den Bausteins einzuchecken.
+3.  Wählen Sie einen Baustein aus, und klicken Sie dann auf **Auschecken rückgängig machen**.
+4.  Klicken Sie auf **Ja**, um den Baustein einzuchecken.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
 

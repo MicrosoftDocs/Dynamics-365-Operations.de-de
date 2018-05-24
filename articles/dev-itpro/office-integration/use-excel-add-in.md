@@ -38,9 +38,6 @@ Durch das Öffnen der Entitätsdaten in Excel können Sie die Daten mit dem Add-
 
 Weitere Informationen zur Verwendung des Excel-Add-Ins finden Sie unter [Erstellen Sie Vorlage für Kopf- und Positionsmuster in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) Video.
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Öffnen von Entitätsdaten in Excel beim Start von Finance and Operations
 1. Klicken Sie in Finance and Operations auf einer Seite auf **In Microsoft Office öffnen**.
 

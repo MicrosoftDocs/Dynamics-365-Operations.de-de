@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: faccf695642d236dbf74a324ccecaf91f62638be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-receipt-against-purchase-orders"></a>Produkteingang für Bestellungen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Dieser Artikel beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten.
 
@@ -61,7 +61,7 @@ Nachdem der Produktzugang für die Bestellung verarbeitet wurde, wird der Bestel
 
 Sie können über die Aktivitätsgruppe **Zugang** auf der Seite **Bestellung** auf dieser Seite zugreifen. Die Informationen in den Erfassungen enthalten Informationen zu Mengen, Datumsangaben und Dimensionen.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Überblick über Bestellungen](purchase-order-overview.md)

@@ -20,23 +20,23 @@ ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 58c083b2fa76e90d10ec8a197a4743a9e315db46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 855fdd0e57a7001628b715038785379d5a986789
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="delivery-alternatives"></a>Alternative Lieferung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Auftragsabnehmer können die Lieferungsalternativenseite verwenden, um alternative Auftragserfüllungsoptionen zu ermitteln.
+Auftragsabnehmer können die **Lieferungsalternativenseite** verwenden, um alternative Auftragserfüllungsoptionen zu ermitteln.
 
-In Microsoft Dynamics 365 for Operations Version 1611 (November 2016 ) können Auftragsabnehmer die Seite **Lieferalternativen durch Anzeigen** verwenden, um alternative Auftragserfüllungsoptionen zu ermitteln. Das neue Seitenlayout gibt ein besserer Überblick über alle alternativen Optionen. Die Personen, die den Auftrag entgegennehmen können auch hinter das aktuelle Unternehmen blicken, um mehr über die Erfüllungsverkaufschancen zu erfahren. Sie können nun Intercompany-Verkaufschancen und Verkaufschancen von externen Kreditoren anzeigen. Mithilfe der Funktion nach Lieferdatum sortieren, können Auftragsabnehmer eine intelligente Liste der Lieferalternativen anzeigen. Außerdem helfen Parameter, die vorgeschlagenen Lieferungen zu verwalten. Da die Transportzeit die Lieferdaten beeinflussen kann, können Auftragsabnehmer die verschiedenen Transportmöglichkeiten ansehen, die Spediteure anbieten. Da Detailinformationen zu jedem Vorschlag angezeigt werden, können Auftragsannehmer informierte Entscheidungen direkt über die Seite **Lieferalternativen durch Anzeigen** machen.
+Die neute Seite **Alternative Lieferung** gibt ein besserer Überblick über alle alternativen Optionen. Die Personen, die den Auftrag entgegennehmen können auch hinter das aktuelle Unternehmen blicken, um mehr über die Erfüllungsverkaufschancen zu erfahren. Sie können nun Intercompany-Verkaufschancen und Verkaufschancen von externen Kreditoren anzeigen. Mithilfe der Funktion nach Lieferdatum sortieren, können Auftragsabnehmer eine intelligente Liste der Lieferalternativen anzeigen. Außerdem helfen Parameter, die vorgeschlagenen Lieferungen zu verwalten. Da die Transportzeit die Lieferdaten beeinflussen kann, können Auftragsabnehmer die verschiedenen Transportmöglichkeiten ansehen, die Spediteure anbieten. Da Detailinformationen zu jedem Vorschlag angezeigt werden, können Auftragsannehmer informierte Entscheidungen direkt über die Seite **Lieferalternativen durch Anzeigen** machen.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Öffnen Sie die Lieferungsalternativeseite
-Sie können die Seite **Lieferung** **Alternativen** aus der Auftragsposition öffnen.
+Sie können die Seite **Alternative Lieferung** aus der Auftragsposition öffnen.
 
 1.  Klicken Sie auf **Produkte und Lieferung** &gt; **Lieferalternativen**.
 2.  Klicken Sie auf &gt; **Positionsdetails** **Lieferung** &gt; **Lieferalternativen.**
@@ -146,7 +146,7 @@ Informationen in dieser Registerkarte beziehen sich auf die Lieferung alternativ
 
 Diese Registerkarte zeigt die Auswirkungen auf die ausgewählte Lieferungsalternative. Wenn Sie **OK** klicken, wird die Auftragsposition mit den markierten Werte in den Spalten AUSGEWÄHLT aktualisiert. Beachten Sie, dass, wenn die Menge in der ausgewählten Lieferalternative kleiner als die Menge in der Auftragsposition ist, und die Auftragsposition in zwei Positionen aufgeteilt wird: eine Position für die ausgewählte Menge und eine Zeile für die Restmenge. Sie können den Handelszweig auch aktualisieren, damit die Zeitplanpositionen übereinstimmt und die Preiskalkulation beeinflussen.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Lieferterminzusage](delivery-dates-available-promise-calculations.md)

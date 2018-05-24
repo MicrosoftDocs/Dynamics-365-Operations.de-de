@@ -19,16 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d1ee87dbe9dab089a893d9c69d2573a4c4b11b58
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Feldbeschreibungen anzeigen und exportieren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel erläutert, wie eine Feldbeschreibung angezeigt und die Seite "Feldbeschreibungen" verwendet wird, um eine Beschreibung zu exportieren.
 
@@ -97,7 +97,7 @@ Um alle Felder auf einer Seite anzuzeigen, setzen Sie die Option **Inklusive-Fel
 
 Informationen über die verschiedenen Methoden zum Suchen von Seiten finden Sie Abschnitt "Nach einer Seite suchen" weiter oben in diesem Artikel. Wenn Sie den genauen Namen der Seite eingegeben haben, werden die Feldbeschreibungen möglicherweise nicht angezeigt, wenn mehr als eine Seite gleichen Namens vorhanden ist. Klicken Sie auf den Pfeil im Feld **Eine Seite auswählen**, um eine gefilterte Liste der verfügbaren Seiten zu öffnen.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Feldhilfe anpassen](../../dev-itpro/user-interface/customize-field-help.md)

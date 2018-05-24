@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69766e1bf37955bfd4d7253c1b7881780d491d1c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 683d3de59a427df296bb0d3d644f0ec23b3a8e5e
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-designer-interface"></a>Berichts-Designer-Schnittstelle
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel erläutert das Navigieren durch den Berichtsdesigner und wie Sie die verschiedenen Optionen Ihren Bedürfnissen entsprechend verwenden. 
 
@@ -220,11 +220,11 @@ Die Berichtsdesigner-Symbolleiste bietet Schnellzugriff auf Befehle für das Nav
 | [![Schaltfläche "Spaltendefinition"](./media/columnc130389.png)](./media/columnc130389.png)                 | Zeigen Sie die Spaltendefinition an, die der aktiven Berichtsdefinition zugewiesen ist.                                                                                                 |
 | [![Schaltfläche "Berichtsbaumstruktur-Definition"](./media/treec130389.png)](./media/treec130389.png)             | Zeigen Sie die Berichtsbaumstruktur-Definition an, die der aktiven Berichtsdefinition zugewiesen ist.                                                                                         |
 | [![Report-Viewer-Schaltfläche](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Starten Sie den Berichts-Viewer mit der aktuellen Version des generierten Berichts. Diese Schaltfläche ist in einer Berichtsdefinition verfügbar, nachdem mindestens ein Bericht generiert wurde. |
-| [![Schaltfläche "Bericht generieren"](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generieren Sie einen Bericht aus der aktiven Berichtsdefinition. Diese Schaltfläche ist aus einer Berichtsdefinition verfügbar.                                                                      |
+| [![Schaltfläche "Bericht generieren"](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generieren Sie einen Bericht aus der aktiven Berichtsdefinition. Diese Schaltfläche ist in einer Berichtsdefinition verfügbar.                                                                      |
 
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Finanzberichterstellung](financial-reporting-intro.md)

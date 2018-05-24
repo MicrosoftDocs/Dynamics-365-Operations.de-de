@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23b8e0b51f63ecabc704a2fc5b3ebafe657b52f6
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Ändern von Zeilendefinitionszellen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die Informationen, die für jede Zelle in einer Zeilendefinition eines Finanzberichts benötigt werden und erläutert, wie diese Informationen eingegeben werden. 
 
@@ -488,10 +488,10 @@ Ein Dimensionswertsatz ist eine benannte Gruppe von Dimensionswerten. Ein Dimens
 1.  Öffnen Sie im Berichts-Designer die zu ändernde Zeilen-, Spalten- oder Berichtsbaumstruktur-Definition.
 2.  Klicken Sie im Menü **Bearbeiten** auf **Dimensionswertsätze verwalten**.
 3.  Wählen Sie im Dialogfeld **Dimensionswertsätze verwalten** im Feld **Dimension** den Dimensionstyp aus.
-4.  Wählen Sie die den löschenden Satz aus, und klicken Sie auf **Löschen**. Klicken Sie auf **Ja**, um den Dimensionswertsatz dauerhaft zu löschen.
+4.  Wählen Sie den zu löschenden Satz aus, und klicken Sie auf **Löschen**. Klicken Sie auf **Ja**, um den Dimensionswertsatz dauerhaft zu löschen.
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
 

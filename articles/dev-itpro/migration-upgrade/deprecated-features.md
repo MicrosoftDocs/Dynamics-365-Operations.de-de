@@ -3,7 +3,7 @@ title: Veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -78,13 +78,13 @@ Diese beiden Berichte werden nicht mehr in Finance and Operations unterstützt. 
 | **Bereitstellungsoption**        | Alle|
 | **Status**                       | Veraltet: Die Menüoptionen für die beiden Berichte sind in Version 7.3 entfernt worden. Allerdings bleibt der Code für die Berichte im Produkt bestehen. Es ist geplant, den Code in einer zukünftigen Version zu entfernen. |
 
-### <a name="power-bi-content-packs-published-to-powerbicom"></a>Power BI-Inhaltspakete, veröffentlicht in PowerBI.com
-Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel-Leistung** die auf der Website PowerBI.com veröffentlicht wurden, sind infolge von Produktupdates in Microsoft Power BI veraltet. Die Systemverwaltungsformulare, die verwendet werden, um diese Inhaltspakete in PowerBI.com bereitzustellen, werden auch in Finance and Operations veraltet.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-Inhaltspakete auf AppSource
+Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel-Leistung** die auf [Microsoft AppSource](https://appsource.microsoft.com) veröffentlicht wurden, sind infolge von Produktupdates in Microsoft Power BI veraltet. Die Systemverwaltungsformulare, die verwendet werden, um diese Inhaltspakete in PowerBI.com bereitzustellen, werden auch in Finance and Operations veraltet.
 
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Produktupdates in Microsoft Power BI. |
-| **Ersetzt durch eine andere Funktion?**   | Power BI-Inhaltspakete (veröffentlicht in PowerBI.com) werden durch analytische Anwendungen ersetzt, die Lösungsintegrationen auf Datenbankebene ermöglichen. Weitere Informationen zu analytischen Anwendungen finden Sie unter [Eingebettetes Power BI in Arbeitsbereichen](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Ersetzt durch eine andere Funktion?**   | Die Inhaltspakete **Kostenmanagement**, **Finanzleistung** und **Retail Channel-Leistung**Packs, die auf der Site [AppSource](https://appsource.microsoft.com) zur Verfügung stehen, werden durch Analyseanwendungen ersetzt, die eine Lösungsintegrationen auf der Datenbankebene zulassen. Weitere Informationen zu analytischen Anwendungen finden Sie unter [Eingebettetes Power BI in Arbeitsbereichen](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Betroffene Produktbereiche**         | Kostenverwaltung, Finanzen und Einzelhandel                                                                                               |
 | **Bereitstellungsoption**              | Nur Cloud (Integration mit PowerBI.com wird in lokalen Bereitstellungen nicht unterstützt.)                                                                                                            |
 | **Status**                         | Veraltet: Zielzeitrahmen für die Funktionalitätsentfernung ist das zweite Quartal 2018.    |

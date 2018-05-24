@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 31308e64d4871a4d09540df16fdcd02cc83bd0be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4f3905f364ea67eab226323fd3450ebed30e4735
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="order-entry-deadlines"></a>Fristen für Auftrag
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Auftragserfassungsfristen. Eine Auftragserfassungsfrist ist eine Sperrzeit, die bestimmt, ob ein Kundenauftrag als am aktuellen Tag oder dem nächsten Tag empfangen behandelt (und erfüllt) werden soll.
 
@@ -103,7 +103,7 @@ In der folgenden Tabelle sind die in MST umgerechneten Auftragsfristen für Stan
 
 **Hinweis:** Falls die Anpassung auf Sommerzeit aktiviert ist, werden die Auftragsfristen entsprechend angeglichen.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Lieferzeitpläne](delivery-schedules.md)

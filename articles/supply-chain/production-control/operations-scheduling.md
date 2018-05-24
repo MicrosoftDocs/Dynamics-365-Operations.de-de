@@ -20,16 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 81dec9d988b22959df5421b7b84ef532a28e1228
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 660d6b2dfb5fbed58a5c28b77aac3bb4604c7d8d
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="operations-scheduling"></a>Grobterminierung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält allgemeine Informationen zur Grobterminierung. Diese Grobplanung wird häufig verwendet, wenn eine allgemeine Schätzung der Dauer des Produktionsprozesses benötigt wird.
 
@@ -75,7 +75,7 @@ Wenn Sie die Grobterminierung ausführen, können Sie bestimmte Teile des Arbeit
 ## <a name="finite-materials"></a>Begrenztes Material
 Wenn Sie mit begrenztem Material arbeiten, hängt die Planung auch von der Verfügbarkeit des Materials ab, das für die Produktion benötigt wird. Wenn die verfügbaren Komponenten für die Produktion nicht ausreichen, kann die Produktion verzögert werden. Sie können die Planung auf der Materialverwendung beruhen lassen, indem Sie das Material angeben, das für die Produktion verfügbar sein muss. Wenn Sie sowohl die Ressourcenkapazität als auch die Verfügbarkeit des Materials optimieren, wird die Produktion gemäß diesen Einschränkungen berechnet. Der Start eines Produktionsauftrag kann erst geplant werden, wenn Kapazität und Material gleichzeitig und in den erforderlichen Mengen verfügbar sind.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Optionen für die Grobterminierung](operation-scheduling-options.md)

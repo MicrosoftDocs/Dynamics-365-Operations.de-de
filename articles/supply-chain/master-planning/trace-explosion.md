@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3891688542ac6d4f9afce026808c65992a592d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2642ced283d815ad671512cc5a17e531e9169f91
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-tracing-for-explosion"></a>Verwenden der Ablaufverfolgung für die Auflösung
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Artikel wird beschrieben, wie Sie die Funktion Nachverfolgung verwenden können, um die Ursachen hinter dem Ergebnis einer Auftragsauflösung zu untersuchen.
 
@@ -42,7 +42,7 @@ Wenn Sie Ablaufverfolgung aktivieren, können Sie Informationen zu Faktoren anze
 
 Sie können Details zu Verfügbarkeit und Aktivitäten für einen ausgewählten Auftrag anzeigen. Auf der Seite **Auflösung** sind auf der Registerkarte **Erklärung** im oberen Bereich Nachverfolgungsinformationen verfügbar. Ablaufverfolgung tritt auf, wenn Sie einen Auftrag auflösen. Um die Verfolgung für den Bestellvorschlag zu starten, klicken Sie auf **Aktualisieren** und wählen Sie dann das Kontrollkästchen **Nachverfolgung aktivieren**. Sie können das Feld **Text suchen** verwenden, um den Datensatz für spezifische Informationen zu suchen. Suchergebnisse werden in der Struktur hervorgehoben.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Produktprogrammpläne](master-plans.md)

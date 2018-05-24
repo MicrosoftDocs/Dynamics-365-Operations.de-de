@@ -3,7 +3,7 @@ title: Interessent zu Bargeld
 description: "Dieses Thema bietet eine Übersicht der Lösung „Interessent zu Bargeld” zwischen Microsoft Dynamics 365 for Finance and Operations und Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/03/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,22 +20,24 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bc0fa8fe3e20ae4be3e572932f99ccc54e3b746b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f43b3943ce27c44cc0b4756d1d5f23e3be093273
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="prospect-to-cash"></a>Interessent zu Bargeld
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Die „Interessent zu Bargeld”-Lösung bietet direkte Synchronisation zwischen Microsoft Dynamics 365 for Finance and Operations und Microsoft Dynamics 365 for Sales. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Während die Daten zwischen Finance and Operations und Sales fließen, können Sie Vertriebs- und Marketingaktivitäten zwischen Finance and Operations und Sales ausführen und die Auftagserfüllung mit Bestandsverwaltung in Finance and Operations handhaben. 
 
 Für weitere Informationen über die Integration von „Interessent zu Bargeld” sehen Sie sich den kurzen YouTube-Video an:
 
 > [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
+
+[Integration der Konvertierung eines Interessenten in Bargeld (YouTube-Video)](https://youtu.be/AVV9x5x-XCg) 
 
 In der aktuellen Version enthält die Interessent in Bargeldlösung die folgenden Typen der direkten Synchronisierung:
 
@@ -76,7 +78,7 @@ In der aktuellen Version enthält die Interessent in Bargeldlösung die folgende
   - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** – Unterstützung für die Integration von „Interessent zu Bargeld” durch Datenentitäten ist erforderlich.
     
     > [!NOTE]
-    > Nachdem Sie die Hotfixes installiert haben, müssen Sie die folgende Stapelverarbeitung vom Formular **SalesPopulateProspectToCash** auslösen. Dieses Formular wird ausgeblendet, da Sie es nur einmal benötigen. Um auf das Formular zuzugreifen, fügen Sie Folgendes der Browseradresse hinzu, wenn Sie sich bei der Umgebung angemeldet haben: &mi=action: SalesPopulateProspectToCash, beispielsweise `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Wenn das Formular geöffnet wird, klicken Sie auf OK. Dadurch wird ein neues Feld **LineCreationSequnceNumber** in den Tabellen **SalesLine**, **SalesQuotationLine** und **CustInvoiceTrans** mit eindeutigen Werte ergänzt, und die Produktliste wird aktualisiert. Dies ist erforderlich, damit die „Interessent zu Bargeld”-Integration funktioniert.
+    > Nachdem Sie die Hotfixes installiert haben, müssen Sie die folgende Stapelverarbeitung vom Formular **SalesPopulateProspectToCash** auslösen. Dieses Formular wird ausgeblendet, da Sie es nur einmal benötigen. Um auf das Formular zuzugreifen, fügen Sie Folgendes der Browseradresse hinzu, wenn Sie sich bei der Umgebung angemeldet haben: *&mi=action:SalesPopulateProspectToCash*, beispielsweise `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Wenn das Formular geöffnet wird, klicken Sie auf OK. Dadurch wird ein neues Feld **LineCreationSequnceNumber** in den Tabellen **SalesLine**, **SalesQuotationLine** und **CustInvoiceTrans** mit eindeutigen Werte ergänzt, und die Produktliste wird aktualisiert. Dies ist erforderlich, damit die „Interessent zu Bargeld”-Integration funktioniert.
 
 
 ## <a name="system-requirements-for-sales"></a>Systemanforderungen für Sales

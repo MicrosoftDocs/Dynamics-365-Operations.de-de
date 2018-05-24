@@ -18,16 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 33cd67bda4d4b868b00cb1c0a062de03d3aa6273
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: eeb56ec9697447ebd2385f3a0a516fcc9dc1bd3e
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-task-guides-february-2016"></a>Neuer Aufgabenleitfaden verfügbar (Februar 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Diese Themen führen die Aufgabenleitfäden auf, die auf den Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden.  Die Bibliotheken, die veröffentlicht wurden, enthalten (Februar 2016) die APQC Unified-Bibliothek für Microsoft Dynamics AX und (Februar 2016) Erste Schritte.
 
@@ -719,7 +719,7 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 
  
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)

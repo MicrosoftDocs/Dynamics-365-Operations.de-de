@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
-ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 73d1a3316db7589d114c70a4dbf847dc67aa077b
 ms.contentlocale: de-de
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-a-financial-report"></a>Finanzbericht generieren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten. 
 
@@ -155,16 +155,16 @@ Wenn Sie eine Analyse für fehlende Konten ausführen, sind die folgenden Tasten
 | Den ausgewählten Baustein ausschließen  | ALT+X                      |
 | Die ausgewählte Zeilendefinition ausschließen  | STRG+B                     |
 | Den ausgewählten Dimensionswert ausschließen | STRG+D                     |
-| Ausgewählte Berichtsdefinition öffnen  | STRG+R                     |
-| Ausgewählte Zeilendefinition öffnen     | STRG+O                     |
+| Die ausgewählte Berichtsdefinition öffnen  | STRG+R                     |
+| Die ausgewählte Zeilendefinition öffnen     | STRG+O                     |
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Finanzberichterstellung](financial-reporting-intro.md)
 
-[Berichts-Designer-Schnittstelle](report-designer-interface.md)
+[Schnittstelle „Berichts-Designer“](report-designer-interface.md)
 
 
 

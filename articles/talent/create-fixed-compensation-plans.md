@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c5d13024ba15744f81406c4c8f5d5d33de658d63
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cea4aec80bc0b519a6b393724835555b4d0937a8
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-fixed-compensation-plans"></a>Erstellen von Plänen für feste Vergütung
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Feste Vergütung bezieht sich auf das reguläre Bruttogehalt oder den Lohn eines Mitarbeiters. In diesem Artikel werden die Komponenten beschrieben die eingerichtet werden müssen, bevor Sie einen festen Vergütungsplan erstellen und Mitarbeiter registrieren können.
 
@@ -101,7 +101,7 @@ Sie können nun einen Mitarbeiter zu einem Plan für feste Vergütung zuweisen. 
 
 Das System überprüft, ob der Vergütungsbetrag, der für einen Vergütungsplan dieser Klasse oder dieses Bereichs angegeben ist, innerhalb der Mindestwert- und Höchstwert-Referenzpunkte für die gegebene Vergütungsstufe bezüglich der Stelle des Mitarbeiters liegt. Wenn der Vergütungsbetrag außerhalb des zulässigen Bereichs liegt, wird eine Warn- oder eine Fehlermeldung angezeigt, abhängig von der Toleranzstufe, die für den Plan für feste Vergütung festgelegt wurde.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Vergütungspläne](compensation-plans.md)

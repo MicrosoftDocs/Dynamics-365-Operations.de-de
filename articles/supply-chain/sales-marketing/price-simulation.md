@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1db68ea5728cc417f0e70675d9074d5b054883da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="price-simulation"></a>Preissimulation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Preissimulation für Angebote. Preissimulation unterstützte Sie dabei, die Auswirkung von Abzügen auf künftigen Verkaufspreisen während dem Angebotsprozess zu evaluieren, bevor Sie einen bestimmten Preis festlegen.
 
@@ -36,7 +36,7 @@ In einer Preissimulation für ein Angebot wird ein neuer Gesamtbetrag auf Basis 
 
 Der Preis im Angebot wird durch eine Preissimulation nicht geändert. Wenn die Preissimulation für ein gesamtes Angebot gilt, wird sie als Sonderrabatt auf den Angebotskopf angewendet. Wenn die Preissimulation für bestimmte Artikel gilt, wird sie als Sonderrabatt auf die Angebotspositionen angewendet. Der Verkaufspreis pro Einheit in einer erstellten Angebotsposition wird bei Anwendung einer Preissimulation nicht geändert. Stattdessen wird ein Rabattprozentsatz angewendet, der der Preisverringerung für die Angebotsposition entspricht. Durch Anwenden einer Preissimulation werden der Verkaufspreis pro Einheit sowie der Rabattprozentsatz in die Angebotsposition oder in den Angebotskopf übertragen.  
 
-**Hinweis:** Bei Ausführung einer Preissimulation wird für die Simulationserstellung ausschließlich die aktuelle Verkaufswährung verwendet. Beim Anzeigen der Angebotssummen wird dann allerdings eine Kombination aus Unternehmenswährung und Verkaufswährung angezeigt.  
+>[Hinweis!] Bei Ausführung einer Preissimulation wird für die Simulationserstellung ausschließlich die aktuelle Verkaufswährung verwendet. Beim Anzeigen der Angebotssummen wird dann allerdings eine Kombination aus Unternehmenswährung und Verkaufswährung angezeigt.  
 
 Zusätzliche zu den Positionen eines Angebots hinzugefügte Artikel können die Anwendung von Positionsrabatten oder Sammelrabatten zur Folge haben. Sie können auch zur Aktivierung von Rechnungsrabatten führen, durch die sich Gewinnspanne und Deckungsbeitrag der Angebotspositionen sowie des gesamten Rabatts ändern.  
 

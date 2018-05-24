@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 854240bef9d6193c8f0f608687b68e6842fe272c
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
 ms.contentlocale: de-de
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -230,7 +230,47 @@ Arbeitsauftragsintegration erfordert, dass Sie die Auftragsgrundlage einrichten.
 6. Legen Sie das Feld **Auftragsgrundlagentyp** auf **Arbeitsauftragsintegration** fest.
 7. Wählen Sie **Speichern**.
 
-### <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
 
-(Bald verfügbar)
+### <a name="setup-in-data-integration"></a>Einrichtung in der Datenintegration
+
+Stellen Sie sicher, dass **Integrationsschlüssel** für **msdyn_workorders** vorhanden ist
+1. Gehen Sie zu Datenintegration
+2. Wählen Sie **Verbindungssatz** Registerkarte
+3. Wählen Sie das für die Synchronisation der Arbeitsaufträge verwendete Verbindungsset aus.
+4. Wählen Sie **Integrationsschlüssel** Registerkarte
+5. Suchen Sie msdyn_workorders und überprüfen Sie, ob der Schlüssel **msdyn_name (Work Order Number)** hinzugefügt wurde. Wenn es nicht angezeigt wird, fügen Sie es durch Klicken auf **Schlüssel hinzufügen** und klicken Sie auf **Speichern** im oberen Bereich der Seite.
+
+## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
+
+Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Arbeitsaufträge an Aufträge (Field Service to Fin und Ops): WorkOrderHeader
+
+Filter: (msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) and (msdynce_hasexternallymaintainedproductsonly eq true)
+
+[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Arbeitsaufträge an Aufträge (Field Service to Fin und Ops): WorkOrderServiceLineEstimate
+
+Filter: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004)
+
+[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Arbeitsaufträge an Aufträge (Field Service to Fin und Ops): WorkOrderServiceLineUsed
+
+Filter: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and ((msdyn_linestatus eq 690970001) or (msdynce_headersystemstatus eq 690970004))
+
+[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Arbeitsaufträge an Aufträge (Field Service to Fin und Ops): WorkOrderProductLineEstimate
+
+Filter: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004) and (msdyn_allocated eq true)
+
+[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Arbeitsaufträge an Aufträge (Field Service to Fin und Ops): WorkOrderProductLineUsed
+
+Filter: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and ((msdyn_linestatus eq 690970001) or (msdynce_headersystemstatus eq 690970004) or (msdyn_allocated ne true))
+
+[![Vorlagenzuordnung in Datenintegration](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 

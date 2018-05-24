@@ -20,24 +20,22 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Seriennummern im Vertriebsprozess registrieren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Dieses Thema erläutert, wie Sie Seriennummern auf Lieferscheinen oder Rechnungen während des Verkaufsprozesses erfassen können. Diese Funktion ist sinnvoll, wenn ein Unternehmen nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen möchte, aber keine Seriennummern von Zugang bis Abgang im Bestand verwalten muss.
 
 Viele Unternehmen möchten nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen und müssen keine Seriennummern von Zugang bis Abgang im Bestand verwalten. In diesen Szenarien ermöglicht Microsoft Dynamics 365 for Finance and Operations es Ihnen, die Seriennummern auf den Lieferscheinen oder Rechnungen zu erfassen, wenn Produkte verkauft werden. Wenn Produkte später zurückgesendet werden, können Sie jedes Produkt zu einer Rechnung nachverfolgen, um zu bestimmen, ob Sie das Produkt verkauft haben und ob die Service- oder Garantieverpflichtungen gültig sind.
-Gibt es Vorbedinguungen?
-----------------------------
 
 Sie müssen Seriennummern für den Verkaufsprozess aktivieren, indem Sie die Option **Aktiv im Verkaufsprozess** auf der Seite **Rückverfolgungsangabengruppen** auswählen. Die folgenden Ereignisse treten dann in Microsoft Dynamics 365 for Finance and Operations auf:
 -   Wählen Sie im Inforegister **Seriennummern** die Option **Seriennummernkontrolle** aus. Wenn diese Option ausgewählt ist, müssen Sie eine Seriennummer für jeden Artikel auf dem Lieferschein oder der Rechnung erfassen.
@@ -71,8 +69,8 @@ Nein, Sie können die serialisierten Artikel nicht anzeigen, die für Sie verfü
 
 ## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kann ich Seriennummern für Artikelgewicht-Artikel erfassen?
 Nein, Sie können Seriennummern für Artikelgewichtsartikel während des Verkaufsprozesses nicht erfassen. Wenn darüber hinaus ein Produkt als Artikelgewichtsartikel eingerichtet ist, können Sie das Produkt keiner Rückverfolgungsangabengruppe zuweisen, die eingerichtet ist, um Seriennummern nur während des Verkaufsprozesses zu verwenden.
-Kann ich Seriennummern beim Einzelhandels-POS erfassen?
-------------------------------------------------
+
+## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Kann ich Seriennummern beim Einzelhandels-POS erfassen?
 
 Ja, die Einzelhandelsverkaufsstelle (POS) fordert den Benutzer dazu auf, eine Seriennummer einzugeben, wenn der Benutzer einen Artikel verkauft, dem eine Rückverfolgungsangabengruppe zugewiesen ist, die eingerichtet wird, um Seriennummern nur während des Verkaufsprozesses zu verwenden.
 

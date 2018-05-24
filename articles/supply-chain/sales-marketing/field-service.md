@@ -3,7 +3,7 @@ title: Integration mit Microsoft Dynamics 365 for Field Service
 description: "Dieses Thema bietet einen Überblick über die Integration mit Microsoft Dynamics 365 for Field Service."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/10/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: d32a4e376770fc73c79b94924d5ae062d201d84a
-ms.openlocfilehash: a224962152e80293f6cf3425dea74d73a283e31a
+ms.sourcegitcommit: 03a932652cdd93b2a5917d0fca72809d1648b678
+ms.openlocfilehash: b1acf0b64914a3199fcf44f8377e32b26f0af99e
 ms.contentlocale: de-de
-ms.lasthandoff: 04/12/2018
+ms.lasthandoff: 04/25/2018
 
 ---
 
@@ -44,6 +44,12 @@ Die erste Phase der Integration zwischen Field Service und Finance and Operation
 - [Arbeitsaufträge in Field Service mit Aufträgen in Finance and Operations](field-service-work-order.md)
 - [Rechnungen in Field Service mit Freitextrechnungen in Finance and Operations](field-service-invoice.md)
 
+Um ein Beispiel zu sehen, wie Sie einen Arbeitsauftrag zwischen Field Service und Finance und Operations synchronisieren können, sehen Sie sich das kurze YouTube-Video an:
+
+> [!Video https://www.youtube.com/embed/hAB4TDVMjxU]
+
+[Synchronisieren eines Arbeitsauftrags zwischen Field Service und Finance und Operations (YouTube-Video)](https://youtu.be/hAB4TDVMjxU)
+
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemanforderungen für Finance and Operations
 Field Service-Integration unterstützt die folgenden Versionen:
 
@@ -58,5 +64,5 @@ Um die Field Service-Integrationslösung zu nutzen, müssen Sie Folgendes instal
 
 - Dynamics 365 for Field Service Version 1612 (9.0.1.733) (DB 9.0.1.733) online oder eine spätere Version.
 - Interessent zu Bargeld (P2C)-Lösung für Dynamics 365, Version 1.15.0.1 oder eine spätere Version. Die Lösung ist unter [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3) zum Download verfügbar.
-- Field Service-Integrationslösung für Dynamics 365, Version 1.0.0.0 oder eine spätere Version. Die Lösung ist unter AppSource zum Download verfügbar. **(AUSSTEHENDE FREIGABE)**
+- Field Service-Integrationslösung für Dynamics 365, Version 1.0.0.0 oder eine spätere Version. Die Lösung ist unter [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.p2cfieldserviceintegration) zum Download verfügbar.
 

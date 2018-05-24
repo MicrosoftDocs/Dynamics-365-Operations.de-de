@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ca01913a0338004fabcda5136108ec3c5be8ff7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 39f105bd1c6a6da4b73ae2a9c5657b15c6794ec0
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben wie ein Artikel, der Standort und Lagerort als Deckungsdimension hat, geplant wird. Die Lagerortdimension ist eine zwingende Dimension.
 
@@ -49,7 +49,7 @@ In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulic
 
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Produktprogrammplanung und Funktion für mehrere Standorte](master-plan-multisite-functionality.md)

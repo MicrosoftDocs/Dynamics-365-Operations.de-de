@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 044a943eeba91f5dbebd4dcd70bc8152c4109037
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mit Kostenrechnung können Sie einen Einblick erhalten, wie sich der Kostenfluss auf Produkte und Dienste bezieht, die innerhalb einer Organisation geliefert werden. Um die Kostentransparenz anzuzeigen, ist es wichtig, Kostenzuweisung zwischen Kostenobjekten auf Grundlage einer entsprechenden Zuweisungsgrundlage zu erreichen. Standardmäßig wird die Kostenzuweisung für das primäre Kostenelement erreicht. Das ist in einigen Situationen wünschenswert, hat aber mehrere Auswirkungen, die berücksichtigt werden sollten.
 
@@ -297,7 +297,7 @@ Die eindeutige Trennung zwischen **Kostenzuweisung** und **Kostenrolluprichtlini
 
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 -  [Kostenobjektdimensionen](cost-objects.md)
 -  [Kostenelementdimensionen](cost-elements.md)
 -  [Dimensionshierarchien](dimension-hierarchy.md)

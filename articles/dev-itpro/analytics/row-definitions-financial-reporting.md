@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4fbcc83123ce11a8f9208226a67a01e43b255bab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ea1386bc06c0e91a2d1f23dd05794ca6ff99106a
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>Zeilendefinitionen im Finanzberichtdesigner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Zeile eines Finanzberichts angibt. Zeilendefinitionen können mit Spaltendefinitionen, Berichtsstruktur-Definitionen und Berichtsdefinitionen kombiniert werden, um eine Bausteingruppe zu erstellen, die von mehreren Unternehmen verwendet werden kann.
 
@@ -172,7 +172,7 @@ Um die Ansicht der Spalten, an denen Sie in der Zeilendefinition arbeiten, zu ve
 2.  Klicken Sie mit der rechten Maustaste auf die minimierte Spalte, die Sie anzeigen möchten, und klicken Sie anschließend auf **Einblenden**.
 
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Finanzberichterstellung](financial-reporting-intro.md)

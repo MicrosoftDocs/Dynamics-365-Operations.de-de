@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 22264f0d82844e63bc7fc42705184c6ecc27e28d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c71ce3045bd91a136288016cb55b460f7ac787ae
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-purchase-orders"></a>Bestellungen erstellen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Dieser Artikel beschreibt den Prozess und die Optionen bei der manuellen Erstellung einer Bestellung.
 
@@ -86,7 +86,7 @@ POs können so konfiguriert werden, dass vor ihrer Verarbeitung Budgetmittel zur
 
 Möglicherweise müssen Sie den Abschluss einer Bestellung verzögern. Beispielsweise benötigen Sie weitere Informationen über Produkte oder Dienstleistungen oder möglicherweise eine Autorisierung für die Ausgabe. Es gibt verschiedene Möglichkeiten, um eine Bestellung zurückzuhalten. Beispielsweise können Sie warten bis Sie den Auftrag bestätigen. Bei einem Change Management-Workflow kölnnen Sie die Bestellung alternativ nicht zur Genehmigung senden. Wenn Sie alle Bestellungen für einen bestimmten Kreditor blockieren müssen, können Sie auch den Kreditor in den Masterdaten als für die Verarbeitung **Gesperrt** markieren. Es gibt auch Umstände, die die Verarbeitung der Bestellung verhindern. Die Verarbeitung kann beispielsweise verhindert werden, wenn das Kreditlimit überschritten ist oder wenn erforderliche Budgetmittel nicht verfügbar sind.
 
-<a name="see-also"></a>Siehe auch
+<a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
 [Überblick über Bestellungen](purchase-order-overview.md)

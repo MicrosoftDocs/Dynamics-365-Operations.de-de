@@ -3,27 +3,28 @@ title: Sortimentsverwaltung
 description: "In diesem Thema werden die grundlegende Begriffe der Sortimentesverwaltung in Microsoft Dynamics 365 for Retail erläutert und die Implementierungsüberlegungen für Ihr Projekt zur Verfügung gestellt."
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
 ms.contentlocale: de-de
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="assortment-management"></a>Sortimentsverwaltung
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Überblick
 Microsoft Dynamics 365 for Retail stellt *Sortimente* bereit, mit denen Sie die Produktverfügbarkeitskanälen verwalten können. Sortimente bestimmen, welche Produkte für bestimmte Shops und für einen bestimmten Zeitraum verfügbar sind.
@@ -35,25 +36,25 @@ Die Gesamtgesamtproduktion eines Kanals wird durch die veröffentlichten Sortime
 ### <a name="basic-assortment-setup"></a>Grundsortimentseinstellung
 Im folgenden Beispiel wird ein eindeutiges Sortiment für jeden Shop konfiguriert. In diesem Fall steht nur Produkt 1 im Shop 1 zur Verfügung und nur Produkt 2 ist in Shop verfügbar.
 
-![Jedes Produkt ist in jedem Shop verfügbar](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Jedes Produkt ist in jedem Shop verfügbar")
+![Jedem Produkt ist in einem Shop verfügbar](./media/Managing-assortments-figure1.png)
 
 Um Produkt 2 bereitzustellen im Shop 1 können Sie das Produkt für Sortiment 1 hinzufügen.
 
-![Produkt 2 dem Sortiment 1 hinzugefügt](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Produkt 2 dem Sortiment 1 hinzugefügt")
+![Produkt 2 zu Sortiment 1 hinzugefügt](./media/Managing-assortments-figure2.png)
 
 Alternativ können Sie Shop 1 Sortiment. 2 hinzufügen.
 
-![Shop 1 dem Sortiment 2 hinzugefügt](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Shop 1 dem Sortiment 2 hinzugefügt")
+![Shop 1 zu Sortiment 2 hinzugefügt](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisationshierarchien
 In den folgenden Situationen, in denen mehrere Kanäle denselben Sortimenten freigeben sind, können Sie die Sortimente konfigurieren, indem Sie die Kleinsortimentsorganisationshierarchie verwenden. Wenn Knoten dieser Hierarchie hinzugefügt werden, sind alle Kanäle in diesem Knoten und untergenordneten Knoten enthalten.
 
-![Organisationshierarchien](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Organisationshierarchien")
+![Organisationshierarchie](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Produktkategorien
 Ebenso auf der Produktseite können Sie Gruppen von Produkten einbeziehen, indem Sie die Produktkategorie Hierarchien verwenden. Alternativ können Sie auch Sortimente konfigurieren, indem Sie mindestens einen Kategoriehierarchieknoten einbeziehen. In diesem Fall schließt das Sortiment alle Produkte in diesem Kategorieknoten sowie deren zugrunde liegenden Knoten ein.
 
-![Produktkategorien](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Produktkategorien")
+![Produktkategorien](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Ausgeschlossene Produkte oder Kategorien
 Zusätzlich zum Einschließen von Produkten und der Kategorien in Sortimenten können Sie die Ausschließungsoption verwenden, um bestimmte Produkte oder Kategorien zu definieren, die von Sortimenten ausgeschlossen werden sollen. Im folgenden Beispiel möchten Sie alle Produkte in einer bestimmten Kategorie, mit Ausnahme von Produkt 2 einbeziehen. In diesem Fall müssen Sie das Sortimentsproduktnebenprodukt nicht definieren oder zusätzliche Kategorieknoten erstellen. Stattdessen können Sie die Kategorie ein- aber das Produkt ausschließen.
@@ -61,7 +62,7 @@ Zusätzlich zum Einschließen von Produkten und der Kategorien in Sortimenten k�
 > [!NOTE]
 > Wenn ein Produkt in einem oder mehreren Sortimenten nach Definition eingeschlossen und ausgeschlossen ist, gilt das Produkt immer als nicht berücksichtigt.
 
-![Produkt ausschließen](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Produkt ausschließen")
+![Ausgeschlossenes Produkt](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globale und freigegebene Produkte
 Sortimente werden auf globaler Ebene definiert und können Kanäle von mehreren juristischen Personen anzeigen. Die Produkte und Kategorien, die in Sortimenten enthalten sind, werden ebenfalls über juristische Personen freigegeben. Ein Produkt muss jedoch freigegeben werden, bevor es tatsächlich im Kanal verkauft, bestellt oder empfangen wird, berechnet werden oder empfangen werden kann (beispielsweise in der Verkaufsstelle \[POS\]). Daher obwohl zwei Shops in verschiedenen juristischen Personen gemeinsam ein Sortiment nutzen können, das die gleichen Produkte enthält, werden die Produkte nur verfügbar, wenn es an diesen juristischen Personen freigegeben wurden.
