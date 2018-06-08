@@ -3,7 +3,7 @@ title: PowerApps einbetten
 description: "In diesem Thema wird beschrieben, wie PowerApps in den Finance and Operations-Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen."
 author: jasongre
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,18 +16,16 @@ ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 58b6b934c2cf65ff1f9362ce948474e374892999
+ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
+ms.openlocfilehash: ad9fa08d22b949a61dabbb2abf5d87a612a1db7c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/08/2018
 
 ---
 
 # <a name="embed-powerapps"></a><span data-ttu-id="bba10-103">PowerApps einbetten</span><span class="sxs-lookup"><span data-stu-id="bba10-103">Embed PowerApps</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 <span data-ttu-id="bba10-104">In der Plattformaktualisierung 14 in Microsoft Dynamics 365 for Finance and Operations unterstützt die Integration mit Microsoft PowerApps, einen Dienst, sodass die Entwickler und die nicht technischen Benutzer für benutzerdefinierte Geschäfts-Apps für mobile Geräte, Tablets und das Internet ohne Codes zu schreiben.</span><span class="sxs-lookup"><span data-stu-id="bba10-104">In Platform update 14, Microsoft Dynamics 365 for Finance and Operations supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code.</span></span> <span data-ttu-id="bba10-105">PowerApps von Ihnen, Ihrer Organisation oder dem breiteren Ökosystem entwickelt, kann im Finance and Operations Client die Produktfunktionalität erweitern.</span><span class="sxs-lookup"><span data-stu-id="bba10-105">PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality.</span></span> <span data-ttu-id="bba10-106">Beispielsweise bedingt dies eventuell, dass Sie ein PowerApps installieren, um Finance and Operations mit den Informationen zu ergänzen, die aus einem anderen System abgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="bba10-106">For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.</span></span> 
 
