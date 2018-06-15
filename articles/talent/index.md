@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Dynamics 365 for Talent"
 description: "Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement."
-author: rschloma
+author: josaw
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 06/04/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
+ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
+ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
@@ -42,6 +42,9 @@ Sie können Talent verwenden, um diese Aufgaben zu bearbeiten:
 + Überprüfen von Leistungen und Implementieren von Zielen der Arbeitskräfte.
 + Einrichten, Veranstalten und Analysieren von Schulungskursen mit Tagesordnungen, Sitzungen und Protokollen.
 
+Entdecken Sie Dynamics 365 for Talent, indem Sie sich das Video ansehen [Erste Schritte mit Dynamics 365 for Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
+
+
 > [!NOTE] 
 > Dynamics 365 for Talent und die Personalverwaltung in Dynamics 365 for Finance and Operations sind sich sehr ähnlich. Beide Produkte weisen möglicherweise dieselbe Funktion auf. Daher lautet bei Themen, deren hauptsächlicher Bezug die Personalverwaltung ist, der Produktname Dynamics 365 for Finance and Operations. Bei Themen, die sich hauptsächlich um Talent drehen, lautet der Produktname Dynamics 365 for Talent. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
@@ -55,6 +58,8 @@ Bei Ihrer Arbeit mit Talent entscheiden Sie über die Strukturierung Ihrer Organ
 -   [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md) 
 -   [Personalaktivitäten – FAQ](personnel-actions-faq.md)
 -   [Urlaubs- und Abwesenheitsübersicht](leave-absence-overview.md)
+-   [Verwenden von Dynamics 365 for Talent: Urlaub und Abwesenheit (Video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [Personalverwaltung in Dynamics 365 for Talent (Video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>Personalbeschaffung Ihrer Organisation
 
@@ -71,6 +76,7 @@ Sie können Pläne einrichten, um effektiv und ausgewogen Vergütungen sowie Obj
 -   [Vergütungsprozess](process-compensation.md)
 -   [Feste Vergütungspläne erstellen](create-fixed-compensation-plans.md)
 -   [Variable Vergütungspläne erstellen](create-variable-compensation-plans.md)
+-   [Vergütungsverwaltung in Dynamics 365 for Talent (Video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
 ## <a name="develop-and-train-employees"></a>Mitarbeiter fördern und schulen
 
@@ -79,14 +85,16 @@ Um Ihre Mitarbeiter bei Ihren Karrierezielen zu unterstützen und dabei gleichze
 -   [Leistungsverwaltung](performance-management-overview.md)
 -   [Belegschaftsqualifikationen auf den Geschäftsbedarf ausrichten](skills.md)
 -   [Verwalten von Schulung durch Kurse](courses.md)
+-   [Verwalten der Mitarbeiterentwicklung in Dynamics 365 for Talent (Video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
-## <a name="create-and-maintain-benefits"></a>Vergütungen erstellen und verwalten
+## <a name="create-and-maintain-benefits"></a>Vorteile erstellen und verwalten
 
-Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, können Sie Vergütungsprogramme, wie Krankenversicherung und Pensionspläne entwickeln. Sie können Vergütungen (z. B. Verleihprogramme) verwalten, in denen Ihr Unternehmen seinen Mitarbeitern Artikel (z. B. Computer oder Telefone) ausleiht.
+Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, können Sie Vorteilsprogramme, wie Krankenversicherung und Pensionspläne entwickeln. Sie können Vergütungen (z. B. Verleihprogramme) verwalten, in denen Ihr Unternehmen seinen Mitarbeitern Artikel (z. B. Computer oder Telefone) ausleiht.
 
 -   [Ein Vergütungsprogramm verwalten](manage-benefit-program.md)
--   [Vergütungsberechtigungsrichtlinien](benefit-eligibility-policies.md)
+-   [Vorteilsberechtigungsrichtlinien](benefit-eligibility-policies.md)
 -   [Objekte verwalten, die an Arbeitskräfte ausgeliehen werden](loan-items.md)
+-   [Verwalten der Mitarbeitervorteile in Dynamics 365 for Talent (Video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Verwalten von Arbeitsplatzsicherheit und Konformität
 
