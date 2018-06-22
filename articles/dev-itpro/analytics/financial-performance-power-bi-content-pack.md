@@ -1,6 +1,6 @@
 ---
-title: Financial Performance Power BI Inhalt
-description: In diesem Thema wird der Microsoft Power BI-Inhalt Finanzleistung beschrieben.
+title: "Financial Performance PowerBI.com-Lösung"
+description: "Dieses Thema beschreibt die Financial Performance PowerBI.com-Lösung."
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
@@ -18,26 +18,26 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Financial Performance Power BI Inhalt
+# <a name="financial-performance-powerbicom-solution"></a>Financial Performance PowerBI.com-Lösung
 
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> Dieses Inhaltspaket ist veraltet, wie dokumentiert in [Power BI-Inhalt, der auf AppSource veröffentlicht ist](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Diese PowerBI.com-Lösung ist veraltet, wie in [Power BI-Inhaltspakete auf AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) dokumentiert.
 
-In diesem Thema wird der Microsoft Power BI-Inhalt **Finanzleistung** beschrieben. Es werden das Dashboard und die Berichte beschrieben, die enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
+Dieses Thema beschreibt die **Financial Performance** PowerBI.com-Lösung. Es beschreibt das Dashboard und die enthaltenen Berichte und liefert Informationen über das Datenmodell und die Entitäten, mit denen die Lösung erstellt wurde.
 
 ## <a name="main-account-setup"></a>Hauptkonto einrichten
 Da Organisationen möchten, dass Verbindlichkeiten und Umsatzerlöse als positive Beträge auf Berichten angezeigt werden, sind die Einstellungen der Hauptkonten wichtig. Damit diese Hauptkonten als positive Beträge angezeigt werden, muss das Hauptkonto den Typ auf **Verbindlichkeiten** **Umsatzerlös** festlegen. Wenn diese Kontenarten verwendet werden, wird die Berichterstattung über Power BI die Vorzeichen umkehren und die Werte als "positiv" anzeigen.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Dashboard und Berichte sind im Power BI-Inhalt enthalten
+## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Dashboard und Berichte, die in der PowerBI.com-Lösung enthalten sind.
 Das Dashboard enthält zusammengefasste Kacheln von Daten, die auf grundlegenden Berichten basieren. Jede Kachel enthält zusammengefasste Informationen für das aktuelle Jahr aller Unternehmen in einer Organisation. Beispiele für solche Kacheln:
 
 - Bargeld
@@ -74,7 +74,7 @@ Jede dieser Kacheln wird durch einen unterstützenden Bericht gesichert. Diese B
 Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Die folgenden Entitäten wurden als Grundlage des Power BI-Inhaltspakets **Finanzleistung** verwendet:
+Die folgenden Entitäten wurden als Basis für die **Financial Performance** PowerBI.com Lösung verwendet:
 
 **Zusammenführen von Datenentitäten**
 

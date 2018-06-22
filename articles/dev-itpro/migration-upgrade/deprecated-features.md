@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
+ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
+ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/30/2018
 
 ---
 
@@ -162,6 +162,18 @@ Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktemp
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition, Juli 2017, mit Plattformupdate 8
+
+### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Währungskonvertierung für Buchhaltungs- und Berichtswährungen
+
+Die Währungskonvertierung für Buchhaltungs- und Berichtswährungen wurde mit der Einführung des Euro eingeführt.
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Eingeschränkte Nutzung und Hinzufügen der Juristische Person kopieren-Funktion als Ersatz.      |
+| **Ersetzt durch eine andere Funktion?**   | Nein, aber die Juristische Person kopieren-Entität und die Konfigurationsfunktionen wurden hinzugefügt, um den Wechsel zu einem Unternehmen mit sich ändernden Kernanforderungen zu erleichtern. |
+| **Betroffene Produktbereiche**         | Finanzverwaltung     |
+| **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.   |
+
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portal für mobile Geräte für das Lager
 

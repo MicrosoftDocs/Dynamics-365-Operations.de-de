@@ -1,28 +1,28 @@
 ---
 title: Serviceverwaltung
 description: "Mit der Serviceverwaltung können Sie Serviceverträge und Daueraufträge einrichten, Serviceaufträge und Debitorenanfragen handhaben und die Servicebereitstellung für Kunden verwalten und analysieren."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SMAServiceOrderTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.author: YuyuScheller
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
-ms.openlocfilehash: 236ab21b2d1c5a4e82270e5381d163e97437cb7f
+ms.sourcegitcommit: 80a3cb74279f72e8cb94f3a2c38230f409067a47
+ms.openlocfilehash: 89035687d87c674cca7fa5fd3126100c4c0ad892
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/24/2018
 
 ---
 
@@ -44,7 +44,7 @@ Sie können Serviceaufträge erstellen, um Informationen zu geplanten und nicht 
 
 4.  Ausgaben und Gebühren in Bezug auf den Service oder die Reparatur
 
-Debitoren können Serviceanforderungen mit Enterprise Portal über das Internet übermitteln. Sie können diese Anforderungen empfangen, verarbeiten und versenden. Nachdem Sie einen Serviceauftrag erstellt haben, können Sie mithilfe von Servicephasen den Fortschritt überwachen und anhand von Regeln steuern, welche Aktivitäten in jeder Phase aktiviert sind. Wenn ein Serviceauftrag abgeschlossen ist, können Sie den Auftrag abzeichnen, um dessen Vollständigkeit zu bestätigen. Dann können Sie den Auftrag buchen, um den Rechnungsprozess zu starten.
+Sie können diese Anforderungen empfangen, verarbeiten und versenden. Nachdem Sie einen Serviceauftrag erstellt haben, können Sie mithilfe von Servicephasen den Fortschritt überwachen und anhand von Regeln steuern, welche Aktivitäten in jeder Phase aktiviert sind. Wenn ein Serviceauftrag abgeschlossen ist, können Sie den Auftrag abzeichnen, um dessen Vollständigkeit zu bestätigen. Dann können Sie den Auftrag buchen, um den Rechnungsprozess zu starten.
 
 Mithilfe der Berichtstools können Sie Gewinnspannen für Serviceaufträge und Dauerauftragsbuchungen überwachen sowie Arbeitsbeschreibungen und Arbeitsquittungen drucken.
 
@@ -56,47 +56,19 @@ Im folgenden Diagramm werden die Geschäftsprozesse auf oberer Ebene für **Serv
 
 ## <a name="service-management-at-a-glance"></a>Serviceverwaltung auf einen Blick
 
-<table>
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Wichtige Aufgaben</p></th>
-<th><p>Primäre Formulare</p></th>
-<th><p>Häufig verwendete Berichte</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Serviceverträge erfüllen</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa617823(v=ax.60)">Formular "Servicevereinbarungen"</a></p></td>
-<td><p><strong>Gewinnspanne für Serviceauftrag</strong></p></td>
-</tr>
-<tr class="even">
-<td><p>Debitorenabfragen behandeln</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa554361(v=ax.60)">Formular "Serviceaufträge"</a></p></td>
-<td><p><strong>Arbeitsbeschreibung</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/hh242789(v=ax.60)">Einsatzplanung (Formular)</a></p></td>
-<td><p><strong>Buchung - Dauerauftrag</strong></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p></p></td>
-<td><p><strong>Buchungen von Dauerauftragsgebühren</strong></p></td>
-</tr>
-</tbody>
-</table>
+|Wichtige Aufgaben           | Primäre Seiten                         |Häufig verwendete Berichte              |
+|--------------------------|---------------------------------------|-----------------------------|
+|Serviceverträge erfüllen|Serviceverträge                     |Gewinnspanne für Serviceauftrag         |
+|Debitorenabfragen behandeln |Serviceaufträge                         |Arbeitsbeschreibung             |
+|                          |Einsatzplanung                         |Buchung - Dauerauftrag   |
+|                          |                                       |Buchungen von Dauerauftragsgebühren|
 
 
 ## <a name="integration-of-service-management"></a>Integration der Serviceverwaltung
 
-Die Serviceverwaltung kann in die folgenden Module in Microsoft Dynamics 365 for Finance and Operations integriert werden:
+Die Serviceverwaltung kann in die folgenden Module in  integriert werden:
 
   - [Vertrieb und Marketing](../sales-marketing/overview-sales-marketing.md)
-
   - [Personalverwaltung](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
 
   

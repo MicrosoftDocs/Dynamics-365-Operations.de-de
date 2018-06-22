@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
 ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -43,8 +43,7 @@ Die Methode, die verwendet wird, um Stücklisten- und Formelpositionen freizugeb
 - **Freigeben von Stücklisten- und Formelpositionen als Teil der Produktions- oder Chargenauftragsfreigabe** – Bei dieser Methode werden Stücklisten- und Formelpostionen für einen Produktions- oder einen Chargenauftrag als Teil des Prozesses der Freigabe des Auftrags freigegeben. Normalerweise werden während der Freigabe eines Produktions- oder Chargenauftrags Produktionseinzelvorgänge für die Fertigungsbereichsmitarbeiter freigegeben, und die Produktionspapiere werden gedruckt. Bei diesem Prozess wird auch der Status des Auftrags zu **Freigegeben** geändert.
 - **Freigeben von Stücklisten- und Formelpositionen über einen Batchauftrag oder eine manuelle Interaktion** – In dieser Methode können Stücklisten- und Formelpositionen nur durch den Batchauftrag **Automatische Freigabe von Stücklisten- und Formelpositionen** freigegeben werden oder als manuelle Interaktion. Um Stücklisten- und Formelpositionen manuell freizugeben, wählen Sie auf der Produktionsauftrags-Listenseite oder der Produktionsauftrags-Detailseite im Aktivitätsbereich die Option **Für Lagerort freigeben** aus.
 
-Für eine rasche Vorführung zur Freigabe von Stücklisten und Formelzeilen für die Produktion mithilfe eines Stapelverarbeitungsauftrag schauen Sie dieses YouTube-Video an.
-[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
+Für eine rasche Vorführung zur Freigabe von Stücklisten und Formelzeilen für die Produktion mithilfe eines Stapelverarbeitungsauftrag schauen Sie dieses YouTube-Video an: [Freigabe der Produktionskommissionierung für den Lagerort in Chargen](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Freigabe der Stücklisten- und Formelpositionen mithilfe eines Bachauftrags
 
@@ -85,8 +84,7 @@ Die folgende Abbildung zeigt einen Produktionsauftrag, der zwei Arbeitsgänge ha
 
 ![Beispiel der Freigabe von Material pro Arbeitsgangnummer](media/two-operations.PNG)
 
-Für eine rasche Präsentation zur Freigabe von Material in Relation zum Betrag von Endartikeln schauen Sie dieses kurze YouTube-Video an:
-[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
+Für eine rasche Demonstration zur Freigabe von Material in Relation zum Betrag von Endartikeln schauen Sie dieses kurze YouTube-Video an: [Erweiterungen für den Produktionsauftragsfreigabenprozess in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Freigeben von Material im Verhältnis zur Menge der Fertigartikel
 

@@ -1,6 +1,6 @@
 ---
 title: Intrastat
-description: "Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen."
+description: "Dieses Thema enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen."
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
+ms.sourcegitcommit: b4b3d8f7da4fbb107353a25ff177492a0744b4c1
+ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen.
+Dieses Thema enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen.
 
 Intrastat ist das System für die Sammlung von Informationen und Generierung von statistischen Daten über den Warenhandel zwischen Ländern/Regionen der Europäischen Union (EU). Intrastat-Berichte werden benötigt, wenn ein Produkt die Grenze eines anderen EU-Landes/einer anderen Region überschreitet. In einigen Ländern/Regionen sind Intrastat-Berichte außerdem für Dienstleistungen nötig. Erforderliche und optionale Elemente können im Intrastat-Bericht erfasst werden. Die folgenden Elemente sind erforderlich: Die Umsatzsteuernummer (VAT ID) der Partei, die für die Bereitstellung der Informationen verantwortlich ist, der Referenzzeitraum, der Flow (Eingang oder Ausgang), der Warencode mit acht Ziffern, der Mitgliedsstaat des Partners (Mitgliedsstaat der Lieferung bei Eingang und Mitgliedsstaat des Ziels bei Ausgang), der Warenwert, die Warenmenge (Nettogewicht und zugehörige Einheit) sowie die Art der Transaktion. Länder/Regionen können auch optionale Elemente gemäß verschiedenen Bedingungen erfassen. Einige optionale Elemente sind Ursprungsland/-region, Lieferbedingungen, die Art des Transports, ein ausführlicherer Warencode als CN8, die Region des Ursprungs auf Dispositionen und die Region des Ziels auf Eingängen, das Statistikverfahren, der statistische Wert, einer Beschreibung der Waren und der Anschluss/der Flughafen des Ladens/Entladens.
 
@@ -223,6 +223,7 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 </ul></li>
 <li><strong>Elektronische Berichterstellung</strong> - Geben Sie Referenzen auf elektronische Berichterstellungskonfigurationen an, mit denen Sie eine Datei und einen Bericht generieren können.</li>
 <li><strong>Warencodehierarchie</strong> - Geben Sie die Kategoriehierarchie vom <strong>Warencode</strong>-Typ an, der den Intrastat-Warencode CN8 darstellt.</li>
+  <li> <strong>Wechselkurstyp</strong> - Geben Sie optional einen Wechselkurs an, der für die Meldung von Intrastat-Verkäufen und -Einkäufen in Fremdwährung verwendet werden soll. Dieser wird verwendet, wenn der Kurs von demjenigen abweicht, der beim Buchen der Transaktion verwendet wird.</li>  
 </ul></td>
 </tr>
 <tr class="even">
@@ -239,9 +240,5 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 </tr>
 </tbody>
 </table>
-
-
-
-
 
 

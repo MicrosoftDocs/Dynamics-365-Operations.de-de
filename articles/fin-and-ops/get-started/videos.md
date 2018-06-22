@@ -3,7 +3,7 @@ title: Videos zu Dynamics 365 for Finance and Operations
 description: "Diese Seite listet von Microsoft erstellte \"How-to\"- und Tech-Talk-Videos zu Dynamics 365 for Finance and Operations auf, die auf YouTube und anderen Websites verfügbar sind."
 author: josaw1
 manager: AnnBe
-ms.date: 05/08/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1a7f95090f245af8a5520326954ce01747d71f17
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 7783671baa66b9c8ab0bb2626555d5ccbfaa1fe9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -82,6 +82,9 @@ Videos sind nach Funktionen geordnet, also scrollen Sie nach unten, um die gesam
 #### <a name="office-integration"></a>Office-Integration
 - [Erstellen einer Excel-Vorlage für Kopf- und Positionsmuster in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 
+#### <a name="organization-administration"></a>Organisationsverwaltung
+- [Dokumentverwaltung](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
+
 #### <a name="procurement-and-sourcing"></a>Beschaffung
 - [Bestätigung von Bestellungen auf einem mobilen Gerät](https://youtu.be/gZ-gOlJe7H8)
 - [Integrieren eines neuen Anbieters](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
@@ -141,7 +144,7 @@ Videos sind nach Funktionen geordnet, also scrollen Sie nach unten, um die gesam
 
 #### <a name="retail"></a>Retail
 - [Dynamics 365 for Retail POS Erweiterbarkeit: Deep-Dive (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Einzelhandelsarchitektur & Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Retailsarchitektur & Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Was ist neu in Dynamics 365 for Retail POS Erweiterbarkeit (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="support"></a>Unterstützung

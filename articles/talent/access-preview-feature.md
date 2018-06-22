@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2e5dd8f852ac1a6c2997a50a60f03db6adfd218c
-ms.openlocfilehash: 5500bfc1cdd1949d301ae82fad5506dfdbeb59f3
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
 ms.contentlocale: de-de
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -72,8 +72,6 @@ Sie können die Einstellung **Vorschaufunktionen** im Microsoft Dynamics 365 for
     > Stellenangebote sind nur für Kunden sichtbar, die ein oder mehrere LinkedIn-Stellenangebote abonnieren. Ansonsten sehen Kunden eine Stelle nur, wenn sie explizit danach suchen. Es gibt eine Verzögerung, wenn Stellenangebote an LinkedIn gesendet werden. Ein Stellenangebot kann bis zu einigen Stunden dauern, nachdem es von Attract veröffentlicht wurde.
 
 - **Bewerber bewerben** - Sowohl interne als auch externe Bewerber können sich jetzt direkt über die Stellenseite auf der Karriereseite bewerben.
-- **Bewertungen** - Im Rahmen des konfigurierbaren Einstellungsprozesses, entweder für eine bestimmte Stelle oder bei Verwendung einer Stellenvorlage, haben die Benutzer nun Zugriff auf eine neue Aktivitätsart **Bewertung**. Sie können dann die Project: "Gauge"-App in Talent verwenden, um grundlegende Beurteilungen zu erstellen, die sie an Kandidaten senden können. Project: "Gauge" ist auch in der öffentlichen Vorschau. Weitere Anbieter werden in Zukunft hinzukommen.
-- **Project: "Gauge"** - Project: "Gauge" ist eine App in Talent, mit der man einfache Bewertungen oder Umfragen erstellen kann.
 - **Angebotsverwaltung** - Benutzer können jetzt Angebotsschreiben aus Vorlagen erstellen, die Platzhalter enthalten. Wenn die Kandidaten in die Angebotsphase eintreten, können Personalvermittler und Einstellungsmanager das Angebots-Tool verwenden, um das formelle Angebot eines Kandidaten über Vorlagen vorzubereiten, das Angebot zur internen Genehmigung zu senden und schließlich das Angebot an den Kandidaten zur Unterzeichnung zu senden. Viele neue Funktionen werden im Laufe der Zeit dem Angebots-Tool hinzugefügt, und die Vorschaufunktion wird mit diesen Funktionen aktualisiert, sobald wir bereit sind, sie zur Vorschau freizugeben.
 
 ### <a name="core-hr"></a>Zentrale Personalverwaltung
@@ -90,7 +88,7 @@ Unabhängig davon, ob das Feedback positiv oder negativ ist, möchten wir von Ih
     - [Attract Ideas](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Zentrale Personalverwaltung](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-Geben Sie keine persönlichen Daten (Informationen, die Sie identifizieren könnten) in Ihre Feedback- oder Produktbewertungseinreichungen ein. Die gesammelten Informationen können weiter analysiert werden und werden nicht zur Beantwortung von Anfragen im Rahmen der geltenden Datenschutzgesetze verwendet. Personenbezogene Daten, die im Rahmen dieser Programme separat erfasst werden, unterliegen der [Microsoft-Datenschutzerklärung](https://privacy.microsoft.com/en-us/privacystatement).
+Geben Sie keine persönlichen Daten (Informationen, die Sie identifizieren könnten) in Ihre Feedback- oder Produktbewertungseinreichungen ein. Die gesammelten Informationen können weiter analysiert werden und werden nicht zur Beantwortung von Anfragen im Rahmen der geltenden Datenschutzgesetze verwendet. Personenbezogene Daten, die im Rahmen dieser Programme separat erfasst werden, unterliegen der [Microsoft-Datenschutzerklärung](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Setzen Sie ein Lesezeichen für dieses Thema und schauen Sie regelmäßig vorbei, um über neue Vorschaufunktionen auf dem Laufenden zu bleiben, wenn wir sie veröffentlichen.

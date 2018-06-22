@@ -3,7 +3,7 @@ title: Formeldesigner in der elektronischen Berichterstellung
 description: In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronischen Berichterstattung (ER) verwendet wird.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
+ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
+ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/25/2018
 
 ---
 
@@ -175,7 +175,7 @@ Wenn ein Ausdruck mehrere aufeinander folgende Operatoren enthält, die dieselbe
 
 #### <a name="references"></a>Verweise
 
-Alle Datenquellen der aktuellen EB-Komponente, die während des Entwurfs eines Ausdrucks verfügbar sind, können als benannte Referenzen verwendet werden. (Die aktuellen EB-Komponente kann entweder ein Modells oder ein Format sein.) Zum Beispiel enthält das aktuelle EB-Datenmodell die Datenquelle **ReportingDate**, und diese Datenquelle gibt einen Wert des Datentyps **DATETIME** zurück. Um diesen Wert ordnungsgemäß zu formatieren, können Sie im generierenden Dokument auf die Datenquelle im Ausdruck als **DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")** verweisen.
+Alle Datenquellen der aktuellen EB-Komponente, die während des Entwurfs eines Ausdrucks verfügbar sind, können als benannte Referenzen verwendet werden. (Die aktuellen EB-Komponente kann entweder ein Modells oder ein Format sein.) Zum Beispiel enthält das aktuelle EB-Datenmodell die Datenquelle **ReportingDate**, und diese Datenquelle gibt einen Wert des Datentyps **DATETIME** zurück. Um diesen Wert im generierenden Dokument korrekt zu formatieren, können Sie auf die Datenquelle im Ausdruck als **DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")** verweisen.
 
 Allen Zeichen im Namen einer verweisenden Datenquelle, die keinen Buchstaben des Alphabets darstellen, muss ein einfaches Anführungszeichen (') vorausgehen. Wenn der Name einer verweisenden Datenquelle, der mindestens ein Symbol enthält, das keinen Buchstaben des Alphabets darstellt, muss der Name in einfache Anführungszeichen gesetzt werden. (Diese nichtalphabetischen Symbole können Satzzeichen oder andere geschriebene Symbole sein.) Hier sind einige Beispiele:
 
@@ -217,13 +217,13 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 | NULLDATE () | Gibt einen **Null**-Datumswert zurück. | |
 | NULLDATETIME () | Gibt einen **Null**-Datums-/Uhrzeitwert zurück. | |
 | DATETIMEFORMAT "datetime, Format) | Konvertiert den angegebenen Datums-/Uhrzeitwert in eine Zeichenfolge im angegebenen Format. (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** gibt das laufende Finance and Operations-Anwendungsserverdatum, 24. Dezember 2015, als **"24-12-2015"** basierend auf dem angegebenen benutzerdefinierten Format zurück. |
-| DATETIMEFORMAT "datetime, Format, Kultur) | Konvertiert den angegebenen Datums-/Uhrzeitwert in eine Zeichenfolge im angegebenen Format und [Kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "d", "de")** gibt das aktuelle Finance and Operations Anwendungsserverdatum, 24. Dezember 2015, als **"24.12.2015"** basierend auf der ausgewählten deutschen Kultur zurück. |
+| DATETIMEFORMAT "datetime, Format, Kultur) | Konvertiert den angegebenen Datums-/Uhrzeitwert in eine Zeichenfolge im angegebenen Format und [Kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** gibt das aktuelle Finance and Operations Anwendungsserverdatum, 24. Dezember 2015, als **"24.12.2015"** basierend auf der ausgewählten deutschen Kultur zurück. |
 | SESSIONTODAY () | Gibt das aktuelle Finance and Operations-Sitzungsdatum als Datumswert zurück. | |
 | SESSIONNOW () | Gibt das aktuelle Finance and Operations-Sitzungsdatum und -uhrzeit als ein Datums-/Uhrzeitwert zurück. | |
 | DATENFORMAT (Datum, Format) | Gibt eine Zeichenfolgendarstellung des angegebenen Datums im angegebenen Format zurück. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** gibt das aktuelle Finance and Operations-Sitzungsdatum, 24. Dezember 2015, als **"24-12-2015"** basierend auf dem angegebenen benutzerdefinierten Format zurück. |
-| DATENFORMAT (Datum, Format, Kultur) | Konvertieren Sie den angegebenen Datumswert in eine Zeichenfolge im angegebenen Format und der entsprechenden [Kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** gibt das aktuelle Finance and Operations-Sitzungsdatum, 24. Dezember 2015, als **"24.12.2015"** basierend auf der ausgewählten deutschen Kultur zurück. |
+| DATENFORMAT (Datum, Format, Kultur) | Konvertieren Sie den angegebenen Datumswert in eine Zeichenfolge im angegebenen Format und der entsprechenden [Kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** gibt das aktuelle Finance and Operations-Sitzungsdatum, 24. Dezember 2015, als **"24.12.2015"** basierend auf der ausgewählten deutschen Kultur zurück. |
 | DAYOFYEAR (Datum) | Gibt eine ganzzahlige Darstellung der Anzahl von Tagen zwischen dem 1. Januar dem angegebenen Datum zurück. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** gibt **61** zurück. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** gibt **1** zurück. |
-| DAYS (date 1, date 2) | Gibt die Anzahl der Tage zwischen dem ersten angegebenen Datum und dem zweiten angegebenen Datum zurück. Gibt einen positiven Wert zurück, wenn das erste Datum nach dem zweiten Datum liegt, gibt **0** (null) zurück, wenn das erste Datum gleich dem zweiten Datum ist oder gibt anderenfalls einen negativen Wert zurück. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** gibt **-1** zurück. |
+| DAYS (date 1, date 2) | Gibt die Anzahl der Tage zwischen dem ersten angegebenen Datum und dem zweiten angegebenen Datum zurück. Gibt einen positiven Wert zurück, wenn das erste Datum nach dem zweiten Datum liegt, gibt **0** (null) zurück, wenn das erste Datum gleich dem zweiten Datum ist oder gibt einen negativen Wert zurück, wenn das erste Datum vor dem zweiten Datum liegt. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** gibt **-1** zurück. |
 
 ### <a name="data-conversion-functions"></a>Datenumwandlungsfunktionen
 
@@ -238,113 +238,125 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 ### <a name="list-functions"></a>Listenfunktionen
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Funktion</th>
 <th>Beschreibung</th>
 <th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>TEILEN (Eingabe, Länge)</td>
 <td>Teilen Sie die angegebene Eingabezeichenfolge in Teilzeichenfolgen, von denen jede die angegebene Länge hat. Geben Sie das Ergebnis als neue Liste zurück.</td>
 <td><strong>TEILEN (&quot;abcd&quot;, 3)</strong> gibt eine neue Liste zurück, die aus zwei Datensätzen besteht, die ein Feld <strong>ZEICHENFOLGE</strong> haben. Das Feld im ersten Datensatz enthält den Text <strong>&quot;ABC&quot;</strong> und das Feld im zweiten Datensatz beinhaltet den Text <strong>&quot;D&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>TEILUNGSLISTE (Liste, Nummer)</td>
 <td>Teilt die angegebene Liste in Chargen, die jeweils die angegebene Anzahl von Datensätzen enthalten. Geben Sie das Ergebnis als neue Liste von Chargen zurück, die die folgenden Elemente enthält:
 <ul>
 <li>Chargen als regelmäßige Listen (<strong>Wert</strong>-Komponente)</li>
 <li>Die aktuelle Chargennummer (<strong>Chargennummer</strong>-Komponente)</li>
-</ul></td>
+</ul>
+</td>
 <td>In der folgenden Abbildung wird eine Datenquelle <strong>Positionen</strong> als eine Datensatzliste von drei Datensätze erstellt. Diese Liste wird in Chargen aufgeteilt, die jeweils bis zu zwei Datensätze enthalten.
 <p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
 <p>Die folgende Abbildung zeigt das entworfene Formatlayout. In diesem Formatlayout werden die Bindungen an die Datenquelle <strong>Positionen</strong> erstellt, mit Ausgabe im XML-Format zu generieren. Dies Ausgabe präsentiert einzelne Knoten für jede Charge und die darin befindlichen Datensätze.</p>
 <p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
 <p>Die folgende Abbildung zeigt das Ergebnis, wenn das entworfene Format ausgeführt wird.</p>
-<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LIST (record 1 [, record 2, …])</td>
 <td>Gibt eine neue Liste zurück,, die von den angegebenen Argumenten erstellt wird.</td>
 <td><strong>LISTE (model.MainData, model.OtherData)</strong> gibt einen leeren Datensatz zurück, in dem die Liste der Felder alle Felder der <strong>Hauptdaten</strong> und der <strong>Anderen Daten</strong> der Datensatzliste enthält.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTJOIN (list 1, list 2, …)</td>
 <td>Gibt eine neue Liste zurück, die von den angegebenen Argumenten erstellt wird.</td>
 <td><strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> gibt eine Liste von sechs Datensätzen zurück, in der ein Feld des Datentyps <strong>ZEICHENFOLGE</strong> einzelne Buchstaben enthält.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ISEMPTY (Liste)</td>
 <td>Gibt <strong>WAHR</strong> zurück, wenn die angegebene Liste keine Elemente enthält. Andernfalls wird <strong>FALSCH</strong> zurückgegeben.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>EMPTYLIST (Liste)</td>
 <td>Gibt eine leere Liste zurück, indem die angegebene Liste wie eine Quelle für die Listenstruktur verwendet wird.</td>
 <td><strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> gibt eine neue leere Liste zurück, die dieselbe Struktur wie die Liste hat, die durch Funktion <strong>TEILEN</strong> zurückgegeben wird.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ZUERST (Liste)</td>
 <td>Gibt den ersten Datensatz der angegebenen Liste zurück, wenn dieser Datensatz nicht leer ist. Andernfalls ergibt sich eine Ausnahme.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>FIRSTORNULL (Liste)</td>
 <td>Gibt den ersten Datensatz der angegebenen Liste zurück, wenn dieser Datensatz nicht leer ist. Andernfalls wird ein <strong>NULL</strong> Datensatz zurückgegeben.</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIRSTITEM (Liste)</td>
 <td>Gibt eine Liste zurück, die nur das erste Element der gegebenen Liste enthält.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>ALLITEMS (Pfad)</td>
-<td>Gibt eine neue vereinfachte Liste zurück, die alle Elemente darstellt, die mit dem angegebenen Pfad übereinstimmen. Der Pfad muss als gültiger Datenquellenpfad eines Datenquellenelements eines Datensatzlisten-Datentyps definiert werden. Datenelemente, wie beispielsweise die Pfadzeichenfolge und Datum, sollten ein Fehler im EB-Ausdrucksgenerator zur Entwurfszeit erzeugen.</td>
+<td>Diese Funktion wurde als Auswahl im Arbeitsspeicher ausgeführt. Es wird eine neue, vereinfachte Liste zurückgegeben, die alle Elemente darstellt, die dem angegebenen Pfad entsprechen. Der Pfad muss als gültiger Datenquellenpfad eines Datenquellenelements eines Datensatzlisten-Datentyps definiert werden. Datenelemente, wie beispielsweise die Pfadzeichenfolge und Datum, sollten ein Fehler im EB-Ausdrucksgenerator zur Entwurfszeit erzeugen.</td>
 <td>Wenn Sie <strong>TEILEN (&quot;abcdef&quot;, 2)</strong> als Datenquelle (DS) eingeben, wird <strong>ANZAHL (ALLITEMS (DS.Value))</strong> zurückgegeben <strong>3</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
+<td>ALLITEMSQUERY (Pfad)</td>
+<td>Diese Funktion wird als verknüpfte SQL-Abfrage ausgeführt. Es wird eine neue, vereinfachte Liste zurückgegeben, die alle Elemente darstellt, die dem angegebenen Pfad entsprechen. Der angegebene Pfad muss als gültiger Datenquellenpfad eines Datenquellenelements eines Datensatzliste-Datentyps definiert sein und mindestens eine Relation enthalten. Datenelemente, wie beispielsweise die Pfadzeichenfolge und Datum, sollten ein Fehler im EB-Ausdrucksgenerator zur Entwurfszeit erzeugen.</td>
+<td>Definieren Sie die folgenden Datenquellen in Ihrer Modellzuordnung:
+<ul>
+<li><strong>CustInv</strong> (<strong>Tabellendatensätze</strong>-Typ), der auf die CustInvoiceTable-Tabelle verweist</li> 
+<li><strong>FilteredInv</strong> (<strong>Berechnetes Feld</strong>-Typ), der den Ausdruck <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong> enthält </li>
+<li><strong>JourLines</strong> (<strong>Berechnetes Feld</strong>-Typ), der den gewünschten Ausdruck <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong> enthält</li>
+</ul>
+<p>Wenn Sie Ihre Modellzuordnung ausführen, um die Datenquelle <strong>JourLines</strong> aufzurufen, wird die folgende SQL-Anweisung ausgeführt:</p>
+SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...
+</td>
+</tr>
+<tr>
 <td>ORDERBY (Liste [, Ausdruck 1, Ausdruck 2,...])</td>
 <td>Geben Sie die angegebenen Liste zurück, nachdem sie gemäß der angegebenen Argumente sortiert wurde. Diese Argumente können als Ausdrücke definiert werden.</td>
 <td>Wenn <strong>Kreditor</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> eine Liste von Lieferanten zurück, die nach Name in aufsteigender Reihenfolge sortiert ist.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>UMKEHREN (Liste)</td>
 <td>Gibt die angegebene Liste in umgekehrter Sortierreihenfolge zurück.</td>
 <td>Wenn <strong>Kreditor</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> eine Liste von Kreditoren zurück, die nach Namen in absteigender Reihenfolge sortiert ist.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>WO (Liste, Bedingung)</td>
 <td>Gibt die angegebene Liste zurück, nachdem sie gemäß der angegebenen Bedingung gefiltert wurde. Die angegebene Bedingung wird auf die Liste im Arbeitsspeicher angewendet. Hierin unterscheidet sich die Funktion <strong>WO</strong> von der Funktion <strong>FILTER</strong>.</td>
 <td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Aufzählung (LISTE)</td>
 <td>Gibt eine neue Liste zurück, die aus aufgezählten Datensätzen der angegebenen Liste besteht und die folgende Elemente verfügbar macht:
 <ul>
 <li>Angegebene Listendatensätze als regelmäßige Listen (<strong>Wert</strong>-Komponente)</li>
 <li>Der Index des aktuellen Datensatzes (<strong>Nummer</strong>-Komponente)</li>
-</ul></td>
+</ul>
+</td>
 <td>In der folgenden Abbildung wird eine Datenquelle <strong>Aufgezählt</strong> als Aufzählungsliste von Lieferantendatensätzen von der Datenquelle <strong>Lieferanten</strong> erstellt, die sich auf die Tabelle „VendTable” bezieht.
 <p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
 <p>Die folgende Abbildung zeigt das Format. In diesem Format werden Datenbindungen erstellt, um eine Ausgabe im XML-Format zu generieren. In dieser Ausgabe werden einzelne Lieferanten als aufgezählte Knoten präsentiert.</p>
 <p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
 <p>Die folgende Abbildung zeigt das Ergebnis, wenn das entworfene Format ausgeführt wird.</p>
-<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ZÄHLEN (Liste)</td>
 <td>Gibt die erste Zahl des Datensatzes in der angegebenen Liste zurück, wenn die Liste nicht leer ist. Andernfalls wird <strong>0</strong> (Null) zurückgegeben.</td>
 <td><strong>ANZAHL (TEILEN (&quot;abcd&quot;, 3))</strong> gibt <strong>2</strong> zurück, da die Funktion <strong>TEILEN</strong> eine Liste erstellt, die aus zwei Datensätzen besteht.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTOFFIELDS (Pfad)</td>
 <td>Gibt eine Datensatzliste zurück, die von einem Argument von einem der folgenden Typen erstellt wird:
 <ul>
@@ -358,7 +370,8 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 <li>Beschriftung</li>
 <li>Beschreibung</li>
 </ul>
-Zur Laufzeit geben die Felder <strong>Beschriftung</strong> und <strong>Beschreibung</strong> Werte basierend auf den Spracheinstellungen des Formats zurück.</td>
+Zur Laufzeit geben die Felder <strong>Beschriftung</strong> und <strong>Beschreibung</strong> Werte basierend auf den Spracheinstellungen des Formats zurück.
+</td>
 <td>In der folgenden Abbildung wird eine Aufzählung in einem Datenmodell vorgestellt.
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>Die folgende Abbildung zeigt diese Details an:</p>
@@ -372,10 +385,10 @@ Zur Laufzeit geben die Felder <strong>Beschriftung</strong> und <strong>Beschrei
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Die folgende Abbildung zeigt das Ergebnis, wenn das entworfene Format ausgeführt wird.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>
-Basierend auf den Spracheinstellungen des Formats von übergeordneten DATEI- und ORDNER-Elementen, wird übersetzter Text für Beschriftungen und Beschreibungen in der Ausgabe des EB-Formats eingegeben.</blockquote></td>
+<blockquote>[!NOTE]<br>Basierend auf den Spracheinstellungen des Formats von übergeordneten DATEI- und ORDNER-Elementen, wird übersetzter Text für Beschriftungen und Beschreibungen in der Ausgabe des EB-Formats eingegeben.</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIELDS (path, language)</td>
 <td>Gibt eine Datensatzliste zurück, die aus einem Argument erstellt wurde, wie beispielsweise eine Modellaufzählung, eine Formataufzählung oder ein Container. Die Liste, die erstellt wird, besteht aus Datensätzen, die die folgenden Felder haben:
 <ul>
@@ -384,26 +397,27 @@ Basierend auf den Spracheinstellungen des Formats von übergeordneten DATEI- und
 <li>Beschreibung</li>
 <li>IstÜbersetzt</li>
 </ul>
-<p>Zur Laufzeit geben die Felder <strong>Beschriftung</strong> und <strong>Beschreibung</strong> Werte basierend auf den Spracheinstellungen des Formats und der angegebenen Sprache zurück. Das Feld <strong>Wurde übersetzt</strong> gibt an, dass das Feld <strong>Beschriftung</strong> in die angegebene Sprache übersetzt wurde.</td>
+Zur Laufzeit geben die Felder <strong>Beschriftung</strong> und <strong>Beschreibung</strong> Werte basierend auf den Spracheinstellungen des Formats und der angegebenen Sprache zurück. Das Feld <strong>Wurde übersetzt</strong> gibt an, dass das Feld <strong>Beschriftung</strong> in die angegebene Sprache übersetzt wurde.
+</td>
 <td>Beispielsweise verwenden Sie den Datenquellentyp <strong>Berechnetes Feld</strong>, um die Datenquellen <strong>enumType_de</strong> und <strong>enumType_deCH</strong> für die Datenmodellaufzählung <strong>enumType</strong> zu konfigurieren:
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung des Aufzählungswerts in Schweizer Deutsch abzurufen, wenn diese Übersetzung verfügbar ist. Wenn die Schweizerdeutsche Übersetzung nicht verfügbar ist, ist diese Beschriftung auf Deutsch: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.</td>
+In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung des Aufzählungswerts in Schweizer Deutsch abzurufen, wenn diese Übersetzung verfügbar ist. Wenn die Schweizerdeutsche Übersetzung nicht verfügbar ist, ist diese Beschriftung auf Deutsch: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>STRINGJOIN (Liste, Feldname, Trennzeichen)</td>
 <td>Gibt eine Zeichenfolge zurück, die aus verketteten Werten des angegebenen Felds aus der angegebenen Liste besteht. Die Werte sind durch das angegebene Trennzeichen getrennt.</td>
-
-<td>Wenn Sie <strong>SPLIT(&quot;abc&quot; , 1)</strong> als Datenquelle eingeben, gibt der Ausdruck <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> den Wert <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong> zurück.</td>
-
+<td>Wenn Sie <strong>SPLIT(&quot;abc&quot; , 1)</strong> als Datenquelle (DS) eingeben, gibt <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> <strong>&quot;a-b-c&quot;</strong> zurück.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SPLITLISTBYLIMIT (Liste, Grenzwert, Grenzquelle)</td>
-<td>Teilt die angegebene Liste in eine neue Liste von Unterlisten und gibt das Ergebnis im Datensatz-Listeninhalt zurück. Der Begrenzungswertparameter definiert den Wert der Begrenzung für die Teilung der ursprünglichen Liste. Der Begrenzungsquellparameter gibt den Schritt an, in dem die Gesamtsumme erhöht wird. Die Begrenzung wird auf keinen einzelnen Artikel der ursprünglichen Liste angewendet, wenn die Begrenzungsquelle die definierte Begrenzung überschreitet.</td>
-<td>Die folgenden Abbildungen zeigen ein Format und die Datenquellen an, die dafür verwendet werden. 
+<td>Teilt die angegebene Liste in eine neue Liste von Unterlisten und gibt das Ergebnis im Datensatz-Listeninhalt zurück. Der Parameter <strong>Grenzwert</strong> definiert den Wert der Begrenzung für die Teilung der ursprünglichen Liste. Der Parameter <strong>Grenzquelle</strong> gibt den Schritt an, in dem die Gesamtsumme erhöht wird. Die Begrenzung wird auf keinen einzelnen Artikel der ursprünglichen Liste angewendet, wenn die Begrenzungsquelle die definierte Begrenzung überschreitet.</td>
+<td>Die folgende Abbildung zeigt ein Format. 
 <p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
+<p>Die folgende Abbildung zeigt die Datenquellen an, die für das Format verwendet werden.</p>
 <p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
 <p>Die folgende Abbildung zeigt das Ergebnis an, wenn Format ausgeführt wird. In diesem Fall ist die Ausgabeliste eine flache Liste von Warenartikeln.</p>
 <p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
@@ -412,13 +426,13 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Die folgende Abbildung zeigt das Ergebnis, wenn das angepasste Format ausgeführt wird.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>
-Die Begrenzung wird nicht auf den letzten Artikel der ursprünglichen Liste angewendet, weil der Wert (11) der Begrenzungsquelle (Gewicht) die definierte Begrenzung (9) überschreitet. Verwenden Sie entweder die Funktion <strong>WO</strong> oder den Ausdruck <strong>Aktiviert</strong> des entsprechenden Formatelements, um Unterlisten während der Berichtgenerierung, nach Bedarf, zu ignorieren (zu überspringen).</blockquote></td>
+<blockquote>[!NOTE]<br>Die Begrenzung wird nicht auf den letzten Artikel der ursprünglichen Liste angewendet, weil der Wert (11) der Begrenzungsquelle (Gewicht) die definierte Begrenzung (9) überschreitet. Verwenden Sie entweder die Funktion <strong>WO</strong> oder den Ausdruck <strong>Aktiviert</strong> des entsprechenden Formatelements, um Unterlisten während der Berichtgenerierung, nach Bedarf, zu ignorieren (zu überspringen).</blockquote>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FILTER (Liste, Bedingungen)</td>
 <td>Gibt die angegebene Liste zurück, nachdem die Abfrage geändert wurde, um nach der angegebenen Bedingung zu filtern. Diese Funktion unterscheidet sich von der Funktion <strong>WO</strong>, da die angegebene Bedingung auf jede beliebige EB-Datenquelle des Typs <strong>Tabellendatensätze</strong> auf Datenbankebene angewendet wird. Die Liste und die Bedingung können definiert werden, indem Tabellen und Relationen verwendet werden.</td>
-  <td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören. Wenn <strong>Kreditor</strong> als eine EB-Datenquelle konfiguriert ist, die sich auf die Tabelle <strong>VendTable</strong> bezieht und die <strong>parmVendorBankGroup</strong>, die als EB-Datenquelle konfiguriert ist, den Wert im Zeichenfolgendatentyp zurückgibt, gibt <strong>FILTER (Vendor.&#39;&lt;Relations&#39;.VendBankAccount, Vendor.&#39;&lt;Relations&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> eine Liste von ausschließlich den Kreditorenkonten zurück, die zu einer bestimmten Bankgruppe gehören.</td>
+<td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören. Wenn <strong>Kreditor</strong> als ER-Datenquelle konfiguriert ist, die auf die Tabelle <strong>VendTable</strong> verweist, und wenn <strong>parmVendorBankGroup</strong> als ER-Datenquelle konfiguriert ist, die einen Wert des Datentyps <strong>String</strong> zurückgibt, liefert <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> eine Liste nur der Kreditorenkonten, die zu einer bestimmten Bankengruppe gehören.</td>
 </tr>
 </tbody>
 </table>
@@ -441,9 +455,9 @@ Die Begrenzung wird nicht auf den letzten Artikel der ursprünglichen Liste ange
 | LEISTUNG (Zahl, Leistung) | Gibt das Ergebnis der angehobenen spezifischen positiven Zahl der angegebenen Leistung zurück. | **LEISTUNG (10, 2)** gibt **100** zurück. |
 | ZAHLENWERT (Zeichenfolge, Dezimaltrennzeichen, Zifferngruppierungstrennzeichen) | Konvertiert die angegebene Zeichenfolge zu einer Nummer. Das angegebene Dezimaltrennzeichen wird zwischen der ganzen Zahl und den Bruchteilen einer Dezimalzahl verwendet. Das angegebene Zifferngruppierungstrennzeichen wird als Tausendertrennzeichen verwendet. | **ZAHLENWERT ("1234,56 ", ",", " ")** gibt den Wert **1234.56** zurück. |
 | WERT (Zeichenfolge) | Konvertiert die angegebene Zeichenfolge zu einer Nummer. Kommas und Punktzeichen (.) gelten als Dezimaltrennzeichen und es wird ein führender Bindestrich (-) als ein negatives Vorzeichen verwendet. Löst eine Ausnahme aus, wenn die angegebene Zeichenfolge andere nichtnumerische Zeichen enthält. | **WERT ("1 "234,56 ")** löst eine Ausnahme aus. |
-| RUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen gerundet wurde:<ul><li>Wenn der Wert des Dezimalstellenparameters größer als 0 (null) ist, wird die angegebene Zahl auf genau so viele Dezimalstellen gerundet.</li><li>Wenn der Wert des Dezimalstellenparameters **0** (null) ist, wird die angegebene Zahl auf die nächste ganze Zahl gerundet.</li><li>Wenn der Wert des Dezimalstellenparameters kleiner als 0 (null) ist, wir die angegebene Zahl links der Dezimalstelle gerundet.</li></ul> | **RUNDUNG (1200.767, 2)** Rundet auf zwei Dezimalstellen und gibt den Wert **1200.77** zurück.. **RUNDUNG (1200.767, -3)** Rundet auf das nächste Vielfache von 1,000 und gibt den Wert **1000** zurück. |
-| ABRUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen abgerundet wurde.<blockquote>[!NOTE]<br>Diese Funktion verhält sich wie <strong>RUNDUNG</strong>, rundet die angegebene Zahl aber immer ab (in Richtung null).</blockquote> | **ABRUNDUNG (1200.767, 2)** Rundet auf zwei Dezimalstellen ab und gibt den Wert **1200.76** zurück. **ABRUNDUNG (1700.767, -3)** Rundet auf das nächste Vielfache von 1,000 ab und gibt den Wert **1000** zurück. |
-| AUFRUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen aufgerundet wurde.<blockquote>[!NOTE]<br>Diese Funktion verhält sich wie <strong>RUNDUNG</strong>, rundet die angegebene Zahl aber immer auf (weg von null).</blockquote> | **AUFRUNDUNG (1200.763, 2)** Rundet auf zwei Dezimalstellen auf und gibt den Wert **1200.77** zurück. **-AUFRUNDUNG (1200.767, -3)** Rundet auf das nächste Vielfache von 1,000 auf und gibt den Wert **2000** zurück. |
+| RUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen gerundet wurde:<ul><li>Wenn der Wert des **Dezimalstellen**parameters größer als 0 (null) ist, wird die angegebene Zahl auf genau so viele Dezimalstellen gerundet.</li><li>Wenn der Wert des **Dezimalstellen**parameters **0** (null) ist, wird die angegebene Zahl auf die nächste ganze Zahl gerundet.</li><li>Wenn der Wert des **Dezimalstellen**parameters kleiner als 0 (null) ist, wir die angegebene Zahl links der Dezimalstelle gerundet.</li></ul> | **RUNDUNG (1200.767, 2)** Rundet auf zwei Dezimalstellen und gibt den Wert **1200.77** zurück.. **RUNDUNG (1200.767, -3)** Rundet auf das nächste Vielfache von 1,000 und gibt den Wert **1000** zurück. |
+| ABRUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen abgerundet wurde.<blockquote>[!NOTE]<br>Diese Funktion verhält sich wie **RUNDUNG**, rundet die angegebene Zahl aber immer ab (in Richtung null).</blockquote> | **ABRUNDUNG (1200.767, 2)** Rundet auf zwei Dezimalstellen ab und gibt den Wert **1200.76** zurück. **ABRUNDUNG (1700.767, -3)** Rundet auf das nächste Vielfache von 1,000 ab und gibt den Wert **1000** zurück. |
+| AUFRUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen aufgerundet wurde.<blockquote>[!NOTE]<br>Diese Funktion verhält sich wie **RUNDUNG**, rundet die angegebene Zahl aber immer auf (weg von null).</blockquote> | **AUFRUNDUNG (1200.763, 2)** Rundet auf zwei Dezimalstellen auf und gibt den Wert **1200.77** zurück. **-AUFRUNDUNG (1200.767, -3)** Rundet auf das nächste Vielfache von 1,000 auf und gibt den Wert **2000** zurück. |
 
 ### <a name="data-conversion-functions"></a>Datenumwandlungsfunktionen
 
@@ -460,87 +474,80 @@ Die Begrenzung wird nicht auf den letzten Artikel der ursprünglichen Liste ange
 
 | Funktion | Beschreibung | Beispiel |
 |----------|-------------|---------|
-| NULLCONTAINER (Liste) | Gibt einen **NULL**-Datensatz zurück, der die gleiche Struktur beinhaltet, wie die angegebene Datensatzliste oder Datensatz.<blockquote>[!NOTE]<br>Diese Funktion ist veraltet. Verwenden Sie stattdessen <strong>EMPTYRECORD</strong>.</blockquote> | **NULLCONTAINER (TEILEN ("abc", 1))** gibt einen neuen leeren Datensatz zurück, der dieselbe Struktur wie die Liste beinhaltet, die durch Funktion **TEILEN** zurückgegeben wird. |
-| LEERER DATENSATZLIST (Datensatz) | Gibt einen **NULL**-Datensatz zurück, der die gleiche Struktur beinhaltet, wie die angegebene Datensatzliste oder Datensatz.<blockquote>[!NOTE]<br>Ein Datensatz <strong>NULL</strong> ist ein Datensatz, in dem alle Felder einen leeren Wert haben. Ein leerer Wert ist <strong>0</strong> (null) für Zahlen, eine leere Zeichenfolge für Zeichenfolgen usw.</blockquote> | **LEERER DATENSATZ (TEILEN ("abc", 1))** gibt einen neuen leeren Datensatz zurück, der dieselbe Struktur wie die Liste beinhaltet, die durch Funktion **TEILEN** zurückgegeben wird. |
+| NULLCONTAINER (Liste) | Gibt einen **NULL**-Datensatz zurück, der die gleiche Struktur beinhaltet, wie die angegebene Datensatzliste oder Datensatz.<blockquote>[!NOTE]<br>Diese Funktion ist veraltet. Verwenden Sie stattdessen **EMPTYRECORD**.</blockquote> | **NULLCONTAINER (TEILEN ("abc", 1))** gibt einen neuen leeren Datensatz zurück, der dieselbe Struktur wie die Liste beinhaltet, die durch Funktion **TEILEN** zurückgegeben wird. |
+| LEERER DATENSATZLIST (Datensatz) | Gibt einen **NULL**-Datensatz zurück, der die gleiche Struktur beinhaltet, wie die angegebene Datensatzliste oder Datensatz.<blockquote>[!NOTE]<br>Ein Datensatz **NULL** ist ein Datensatz, in dem alle Felder einen leeren Wert haben. Ein leerer Wert ist **0** (null) für Zahlen, eine leere Zeichenfolge für Zeichenfolgen usw.</blockquote> | **LEERER DATENSATZ (TEILEN ("abc", 1))** gibt einen neuen leeren Datensatz zurück, der dieselbe Struktur wie die Liste beinhaltet, die durch Funktion **TEILEN** zurückgegeben wird. |
 
 ### <a name="text-functions"></a>Textfunktionen
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Funktion</th>
 <th>Beschreibung</th>
 <th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>GROSSBUCHSTABE (Zeichenfolge)</td>
 <td>Gibt die angegebene Zeichenfolge zurück, nachdem sie in Großbuchstaben konvertiert wurde.</td>
 <td><strong>GROSSBUCHSTABE (&quot;Beispiel&quot;)</strong> gibt <strong>&quot;BEISPIEL&quot;</strong> zurück.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>KLEINBUCHSTABEN (Zeichenfolge)</td>
 <td>Gibt die angegebene Zeichenfolge zurück, nachdem sie in Kleinbuchstaben konvertiert wurde.</td>
 <td><strong>KLEINBUCHSTABEN (&quot;Beispiel&quot;)</strong> gibt <strong>&quot;Beispiel&quot;</strong> zurück.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LINKS (Zeichenfolge, Anzahl Zeichen)</td>
 <td>Gibt die angegebene Anzahl von Zeichen ab Beginn einer Textzeichenfolge zurück.</td>
 <td><strong>LINKS (&quot;Beispiel&quot;, 3)</strong> gibt <strong>&quot;Sam&quot;</strong> zurück.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>RECHTs (Zeichenfolge, Anzahl Zeichen)</td>
 <td>Gibt die angegebene Anzahl von Zeichen ab Ende einer bestimmten Textzeichenfolge zurück.</td>
 <td><strong>RECHTS (&quot;Beispiel&quot;, 3)</strong> gibt <strong>&quot;ple&quot;</strong> zurück.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>MITTE (Zeichenfolge, Startposition, Anzahl Zeichen)</td>
 <td>Gibt die angegebene Anzahl von Zeichen ab Beginn einer Textzeichenfolge zurück.</td>
 <td><strong>MITTE (&quot;Beispiel&quot;, 2, 3)</strong> gibt <strong>&quot;amp&quot;</strong> zurück.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LEN (Zeichenfolge)</td>
 <td>Gibt die Anzahl von Zeichen in einer Textzeichenfolge zurück.</td>
 <td><strong>LEN (&quot;Beispiel&quot;)</strong> gibt <strong>6</strong> zurück.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>CHAR (Nummer)</td>
 <td>Gibt die Zeichenfolge von Zeichen zurück, die von der angegebene Unicode-Zahl angegeben wird.</td>
 <td><strong>CHAR (255)</strong> gibt <strong>&quot;Ÿ&quot;</strong> zurück.
-<blockquote>[!NOTE]<br>
-Die Zeichenfolge, die diese Funktion zurück gibt, hängt von der Codierung ab, die im übergeordneten DATEI-Formatelement ausgewählt ist. Die Liste unterstützter Codierungen finden Sie unter <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Codierungsklasse</a>.</blockquote>
+<blockquote>[!NOTE]<br>Die Zeichenfolge, die diese Funktion zurück gibt, hängt von der Codierung ab, die im übergeordneten DATEI-Formatelement ausgewählt ist. Die Liste unterstützter Codierungen finden Sie unter <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Codierungsklasse</a>.</blockquote>
 </td>
 </tr>
-<tr class="even">
+<tr>
 <td>VERKETTEN (Zeichenfolge 1, [, Zeichenfolge 2, ...])</td>
 <td>Gibt alle angegebenen Textzeichenfolgen zurück, nachdem sie zu einer Zeichenfolge verknüpft wurden.</td>
 <td><strong>VERKETTEN (&quot;ABC&quot;, &quot;def&quot;)</strong> gibt <strong>&quot;abcdef&quot;</strong> zurück.
-<blockquote>[!NOTE]<br>
-Der Ausdruck <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> gibt auch <strong>&quot;abcdef&quot;</strong> zurück.</blockquote>
+<blockquote>[!NOTE]<br>Der Ausdruck <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> gibt auch <strong>&quot;abcdef&quot;</strong> zurück.</blockquote>
 </td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ÜBERSETZEN (Zeichenfolge, Muster, Ersetzung)</td>
 <td>Gibt die angegebene Zeichenfolge zurück, nachdem alle Vorkommen der Zeichen in der angegebenen Musterzeichenfolge durch die Zeichen in der entsprechenden Position in der angegebenen Austauschzeichenfolge ersetzt wurden.</td>
 <td><strong>ÜBERSETZEN (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> ersetzt das Muster <strong>&quot;cd&quot;</strong> durch die Zeichenfolge <strong>&quot;GH&quot;</strong> und gibt <strong>&quot;abGHef&quot;</strong> zurück.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>ERSETZEN (Zeichenfolge, Muster, Ersetzung, Markierung des regulären Ausdrucks)</td>
 <td>Wenn die angegebene Markierung des regulären Ausdrucks <strong>wahr</strong> ist, wird die angegebene Zeichenfolge zurückgegeben, nachdem sie durch Anwendung des normalen Ausdruck geändert wurde, der als ein Musterargument für diese Funktion angegeben ist. Dieser Ausdruck wird verwendet, um Zeichen zu finden, die ersetzt werden müssen. Zeichen des angegebenen Ersetzungsarguments werden verwendet, um Zeichen zu ersetzen, die gefunden werden. Wenn die angegebene Markierung des regulären Ausdrucks <strong>falsch</strong> ist, verhält sich diese Funktion wie <strong>ÜBERSETZEN</strong>.</td>
 <td><strong>ERSETZEN (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> übernimmt einen regulären Ausdruck, der alle nicht numerischen Symbole entfernt und <strong>&quot;19234564971&quot;</strong> zurückgibt. <strong>ERSETZEN (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> ersetzt das Muster <strong>&quot;cd&quot;</strong> mit der Zeichenfolge <strong>&quot;GH&quot;</strong> und gibt <strong>&quot;abGHef&quot;</strong> zurück.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>TEXT (Eingabe)</td>
 <td>Gibt die angegebene Eingabe zurück, nachdem sie in eine Textzeichenfolge konvertiert wurde, die gemäß den Servergebietsschemaeinstellungen der aktuellen Finance and Operations-Instanz formatiert ist. Für Werte für den <strong>tatsächlich</strong> Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</td>
 <td>Wenn das Servergebietsschema der Finance and Operations-Instanz als <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> definiert wird, wird das aktuelle Finance and Operations-Sitzungsdatum, 17. Dezember 2015, als Textzeichenfolge <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong> zurückgegeben. <strong>TEXT (1/3)</strong> gibt <strong>&quot;0.33&quot;</strong> zurück.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
 <td>Geben Sie die angegebene Zeichenfolge zurück, nachdem sie formatiert wurde, indem sämtliche Vorkommnisse von <strong>%N</strong> durch das <em>n</em>. Argument ersetzt werden. Die Argumente sind Zeichenfolgen. Wenn eine Anfrage nicht für einen Parameter angegeben wird, wird der Parameter als <strong>&quot;%N&quot;</strong> in der Zeichenfolge zurückgegeben. Für Werte für den <strong>tatsächlich</strong> Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</td>
 <td>In der folgenden Abbildung gibt die Datenquelle <strong>PaymentModel</strong> die Liste von Kundendatensätzen über die Komponente <strong>-Kunde</strong> und den Verarbeitungsdatumswert über das Feld <strong>ProcessingDate</strong> zurück.
@@ -563,37 +570,38 @@ Der Ausdruck <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> gibt auch <s
 <p>Wenn ein Bericht für den Kunden <strong>Litware Retail</strong> am 17. Dezember 2015 in der <strong>EN-US</strong>-Kultur und in der <strong>EN-US</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der als Ausnahmenachricht für den Benutzer präsentiert werden kann:</p>
 <p>&quot;Nichts zu drucken. Debitor Litware Retail wird auf 12/17/2015&quot; beendet.</p>
 <p>Wenn derselbe Bericht für den Kunden <strong>Litware Retail</strong> am 17. Dezember 2015 in der <strong>DE</strong>-Kultur und in der <strong>DE</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der ein anderes Datumsformat verwendet:</p>
-<p>&quot;Nichts-zu drucken. Debitor &#39;Litware Retail&#39; wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>
-Die folgende Syntax wird in EB-Formeln für Beschriftungen angewendet:
+<p>&quot;Nichts-zu drucken. Schuldner-"Litware Einzelhandel" wird für 17.12.2015 gesperrt.&quot;</p>
+<blockquote>[!NOTE]<br>Die folgende Syntax wird in EB-Formeln für Beschriftungen angewendet:
 <ul>
 <li><strong>Für Beschriftungen aus Finance and Operations-Ressourcen:</strong> <strong>@&quot;X&quot;</strong>, wobei X die Beschriftungs-ID im Application Object Tree (AOT) ist</li>
 <li><strong>Für Beschriftungen, die sich in ER-Konfigurationen befinden:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, wobei X die Beschriftungs-ID in der ER-Konfiguration ist</li>
-</ul></blockquote></td>
+</ul>
+</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ZAHLENFORMAT (Zahl, Format)</td>
 <td>Gibt eine Zeichenfolgendarstellung der angegebenen Zahl im angegebenen Format zurück. (Informationen zum die unterstützten Formaten, finden Sie unter <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">Standard</a> und <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">Custom</a>.) Im Kontext, dass diese Funktion ausgeführt wird, bestimmt die Kultur, die den Formatnummern verwendet wird.</td>
 <td>Für EN-US Kultur <strong>ZAHLENFORMAT (0.45, &quot;p&quot;)</strong> gibt <strong>&quot;45,00 %&quot;</strong> zurück. <strong>ZAHLENFORMAT (10,45, &quot;#&quot;)</strong> gibt <strong>&quot;10&quot;</strong> zurück.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NUMERALSTOTEXT (Nummer, Sprache, Währung, Drucktwährungsnamenmarkierung, Dezimaltrennzeichen)</td>
-<td>Gibt die angegebene Zahl zurück, nachdem sie in Textzeichenfolgen in der angegebenen Sprache formuliert (konvertiert) wurde. Der Sprachcode ist optional. Wenn er als leere Zeichenfolge definiert ist, wird stattdessen der Sprachcode für den ausgeführten Kontext verwendet. (Der ausgeführte Kontextsprachcode wird für einen generierenden Ordner oder Datei definiert.) Der Währungscode ist auch optional. Wenn dieser als leere Zeichenfolge definiert ist, wird die Unternehmenswährung verwendet.
-<blockquote>[!NOTE]<br>
-Die Parameter für Druckwährungsnamen-Kennzeichen und Dezimalstellen werden nur für die folgenden Sprachcodes analysiert: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> und <strong>RU</strong>. Darüber hinaus wird der Druckwährungsnamen-Kennzeichenparameter nur für Finance and Operations-Unternehmen analysiert, bei denen der Landes- oder Regionenkontext die Deklinierung von Währungsnamen unterstützt.</blockquote></td>
+<td>Gibt die angegebene Zahl zurück, nachdem sie (konvertiert in Textzeichenfolgen) in der angegebenen Sprache formuliert wurde. Der Sprachcode ist optional. Wenn es als leere Zeichenfolge definiert ist, wird stattdessen der Sprachcode für den ausgeführten Kontext verwendet. (Der Sprachcode für den ausgeführten Kontext wird für einen generierenden Ordner oder Datei definiert.) Der Währungscode ist auch optional. Wenn dieser als leere Zeichenfolge definiert ist, wird die Unternehmenswährung verwendet.
+<blockquote>[!NOTE]<br>Die Parameter für <strong>Druckwährungsnamen-Kennzeichen</strong> und <strong>Dezimalstellen</strong> werden nur für die folgenden Sprachcodes analysiert: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> und <strong>RU</strong>. Darüber hinaus wird der <strong>Druckwährungsnamen-Kennzeichen</strong>parameter nur für Finance and Operations-Unternehmen analysiert, bei denen der Landes- oder Regionenkontext die Deklination von Währungsnamen unterstützt.</blockquote>
+</td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> gibt <strong>&quot;Eintausendzweihundertvierunddreißig und 56&quot;</strong> zurück. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> gibt <strong>&quot;Sto dwadzieścia&quot;</strong> zurück. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> gibt <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong> zurück.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>PADLEFT (Zeichenfolge, Länge, Zeichen auffüllen)</td>
 <td>Gibt eine Zeichenfolge mit der angegebenen Länge zurück, bei der der Anfang der angegebenen Zeichenfolge mit den angegebenen Zeichen aufgefüllt ist.</td>
 <td><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> gibt die Textzeichenfolge <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong> zurück.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>TRIM (Zeichenfolge)</td>
 <td>Gibt die angegebene Textzeichenfolge zurück, nachdem führende und nachfolgende Leerzeichen abgeschnitten wurden und nachdem mehrfache Leerzeichen zwischen Wörtern entfernt wurden.</td>
 <td><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> gibt <strong>&quot;Beispieltext&quot;</strong> zurück.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>GETENUMVALUEBYNAME (Enumerationsdatenquellenpfad, Enumerationswertbeschriftungstext)</td>
 <td>Gibt einen Wert der angegebenen Aufzählungsdatenquelle basierend auf dem angegebenen Text und der Aufzählungsbeschriftung zurück.</td>
 <td>In der folgenden Abbildung wird die Aufzählung <strong>ReportDirection</strong> in einem Datenmodell eingeführt. Beachten Sie, dass Beschriftungen für Enumerationswerte definiert werden.
@@ -603,7 +611,24 @@ Die Parameter für Druckwährungsnamen-Kennzeichen und Dezimalstellen werden nur
 <li>Die Modellaufzählung <strong>ReportDirection</strong> wird in einen Bericht als Datenquelle eingefügt, <strong>$Direction</strong>.</li>
 <li>Ein EB-Ausdruck <strong>$IsArrivals</strong> ist dazu konzipiert, die Modellaufzählung als Parameter dieser Funktion zu verwenden. Der Wert dieses Ausdrucks ist <strong>WAHR</strong></li>
 </ul>
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+</td>
+</tr>
+<tr>
+<td>GUIDVALUE (Eingabe)</td>
+<td>Konvertieren Sie die angegebene Eingabe des Datentyps <strong>Zeichenfolge</strong> in ein Datenelement des Datentyps <strong>GUID</strong>.</td>
+<td>Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:
+<ul>
+<li><strong>myID</strong> (<strong>Berechnetes Feld</strong>-Typ), das den gewünschten Ausdruck <strong>GUIDVALUE (&quot;AF5CCDAC-F728-4609-8C8B-, A4B30B0C0AA0&quot;)</strong> enthält</li>
+<li><strong>Users</strong> (<strong>Tabellendatensätze</strong>-Typ), der auf die UserInfo -Tabelle verweist</li>
+</ul>
+Wenn diese Datenquellen definiert sind, können Sie einen Ausdruck wie <strong>FILTER (Users, Users.objectId = myID)</strong> verwenden, um die Tabelle UserInfo nach dem Feld <strong>objectId</strong> des Datentyps <strong>GUID</strong> zu filtern.
+</td>
+</tr>
+<tr>
+<td>JSONVALUE (id, path)</td>
+<td>Analysieren Sie Daten im JavaScript Object Notation (JSON)-Format, auf die über den angegebenen Pfad zugegriffen wird, um einen Skalarwert zu extrahieren, der auf der angegebenen ID basiert.</td>
+<td>Die Datenquelle <strong>$JsonField</strong> enthält folgende Daten in JSON-Format: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. Für diese Datenquelle gibt </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> den Wert <strong>7.3.1234.1</strong> des Datentyps <strong>String</strong> zurück.</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +638,7 @@ Die Parameter für Druckwährungsnamen-Kennzeichen und Dezimalstellen werden nur
 | Funktion | Beschreibung | Beispiel |
 |----------|-------------|---------|
 | TEXT (Eingabe) | Gibt die angegebene Eingabe zurück, nachdem sie in eine Textzeichenfolge konvertiert wurde, die gemäß den Servergebietsschemaeinstellungen der aktuellen Finance and Operations-Instanz formatiert ist. Für Werte für den **tatsächlich** Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt. | Wenn das Servergebietsschema der Finance and Operations-Instanz als **EN-US** definiert ist, gibt **TEXT (NOW ())** das aktuelle Finance and Operations-Sitzungsdatum, 17. Dezember 2015, als die Textzeichenfolge **"12/17/2015 07:59:23 AM"** zurück. **TEXT (1/3)** gibt **"0.33"** zurück. |
-| QRCODE (Zeichenfolge) | Gibt ein QR-Codebild im base64-Binärformat für die angegebene Zeichenfolge zurück. | **QRCODE ("Beispieltext")** gibt **U2FtcGxlIHRleHQ=** zurück. |
+| QRCODE (Zeichenfolge) | Gibt ein Quick Response Code (QR-Code) Bild im base64-Binärformat für die angegebene Zeichenfolge zurück. | **QRCODE ("Beispieltext")** gibt **U2FtcGxlIHRleHQ=** zurück. |
 
 ### <a name="data-collection-functions"></a>Datensammlungsfunktionen
 
@@ -623,19 +648,19 @@ Die Parameter für Druckwährungsnamen-Kennzeichen und Dezimalstellen werden nur
 | SUMIFS (Schlüsselzeichenfolge zum Summieren, Kriterien Range1 Zeichenfolge \[, Kriterien Value1 Zeichenfolge [,Kriterien Range2 Zeichenfolge, Kriterien Value2 Zeichenfolge, …\]) | Gibt die Summe von Werten von XML-Knoten (bei denen der Name als Schlüssel definiert ist) zurück, die während der Ausführung des Formats gesammelt wurde und die angegebenen Bedingungen erfüllt (Koppelungen von Bereichen und Werten). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
 | SUMIF (Schlüsselzeichenfolge zum Summieren, Kriterien-Bereichszeichenfolge, Kriterien-Wertzeichenfolge) | Gibt die Summe von Werten von XML-Knoten (bei denen der Name als Schlüssel definiert ist) zurück, die während der Ausführung des Formats gesammelt wurde und die angegebene Bedingung erfüllt (Bereich und Wert). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
 | COUNTIFS (Kriterien Range1 Zeichenfolge, Kriterien Value1 Zeichenfolge \[, Kriterien Range2 Zeichenfolge, Kriterien Value2 Zeichenfolge…\]) | Gibt die Zahl von XML-Knoten zurück, die während der Ausführung des Formats gesammelt wurde, und die die angegebenen Bedingungen erfüllt (Koppelungen von Bereichen und Werten). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
-| COUNTIF (Kriterien-Bereichszeichenfolge, Kriterien-Wertzeichenfolge) | Gibt Zahl von XML-Knoten zurück, die während der Ausführung des Formats gesammelt wurde und die eingegebene Bedingung erfüllt (Bereich und Wert). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
-| COLLECTEDLIST (Kriterien Range1 Zeichenfolge, Kriterien Value1 Zeichenfolge \[, Kriterien Range2-Zeichenfolge, Kriterien Value2 Zeichenfolge…\]) | Gibt die Liste von Werten von XML-Knoten von XML zurück, die während der Ausführung des Formats gesammelt wurde, und die die eingegebenen Bedingungen erfüllt (Bereich und Wert). Gibt eine leere Liste zurück, wenn die Markierung **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
+| COUNTIF (Kriterien-Bereichszeichenfolge, Kriterien-Wertzeichenfolge) | Gibt die Anzahl der XML-Knoten zurück, die während der Ausführung des Formats gesammelt wurden und die die angegebene Bedingung (Bereich und Wert) erfüllen. Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
+| COLLECTEDLIST (Kriterien Range1 Zeichenfolge, Kriterien Value1 Zeichenfolge \[, Kriterien Range2-Zeichenfolge, Kriterien Value2 Zeichenfolge…\]) | Gibt die Liste der Werte von XML-Knoten von XML zurück, die während der Ausführung des Formats gesammelt wurden und die die angegebenen Bedingungen (Bereich und Wert) erfüllt. Gibt eine leere Liste zurück, wenn die Markierung **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Andere (geschäftsdomänenspezifische) Funktionen
 
 | Funktion | Beschreibung | Beispiel |
 |----------|-------------|---------|
 | CONVERTCURRENCY (Betrag, Quellwährung, Zielwährung, Datum, Unternehmen) | Konvertiert den angegebenen Geldbetrag aus der angegebenen Quellwährung in die angegebene Zielwährung, indem die Einstellungen des angegebenen Finance and Operations-Unternehmens am angegebenen Datum verwendet werden. | **CONVERTCURRENCY (1, "EUR", "USD", HEUTE (), "DEMF")** gibt die Entsprechung von einem Euro in US Dollar am Datum der aktuellen Sitzung, auf den Einstellungen für das DEMF-Unternehmen zurück. |
-| ROUNDAMOUNT (Anzahl, Dezimalstellen, Rundungsregel) | Rundet den angegebenen Betrag auf die angegebene Zahl von Dezimalstellen gemäß der angegebenen Rundungsregel.<blockquote>[!NOTE]<br>Die Rundenregel muss als Wert der <strong>RoundOffType</strong>-Aufzählung von Finance and Operations angegeben werden.</blockquote> | Wenn der Parameter **model.RoundOff** auf **Abwärts** festgelegt ist, gibt **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** den Wert **1000.78** zurück. Wenn der **model.RoundOff**-Parameter entweder auf **Normal** oder **Aufrunden** **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** festgelegt wird, wird der Wert **1000.79** zurückgegeben. |
+| ROUNDAMOUNT (Anzahl, Dezimalstellen, Rundungsregel) | Rundet den angegebenen Betrag auf die angegebene Zahl von Dezimalstellen gemäß der angegebenen Rundungsregel.<blockquote>[!NOTE]<br>Die Rundenregel muss als Wert der **RoundOffType**-Aufzählung von Finance and Operations angegeben werden.</blockquote> | Wenn der Parameter **model.RoundOff** auf **Abwärts** festgelegt ist, gibt **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** den Wert **1000.78** zurück. Wenn der **model.RoundOff**-Parameter entweder auf **Normal** oder **Aufrunden** **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** festgelegt wird, wird der Wert **1000.79** zurückgegeben. |
 | CURCredRef (Ziffern) | Gibt eine Gläubigerreferenz basierend auf den Ziffern der angegebenen Rechnungsnummer zurück. | **CURCredRef ("VEND-200002")** gibt **"2200002"** zurück. |
 | MOD\_97 (Ziffern) | Gibt eine Gläubigerreferenz als MOD97 Ausdruck zurück, basierend auf den Ziffern der angegebenen Rechnungsnummer. | **MOD\_97 ("VEND-200002")** gibt **"20000285"** zurück. |
 | ISOCredRef (Ziffern) | Gibt eine Gläubigerreferenz der Internationale Organisation für Normung (ISO) basierend auf den Ziffern und alphabetischen Symbolen der angegebenen Rechnungsnummer zurück.<blockquote>[!NOTE]<br>Um Symbole aus Alphabeten zu entfernen, die nicht ISO-kompatibel sind, muss der Eingabeparameter übersetzt werden, bevor er an diese Funktion übergeben wird.</blockquote> | **ISOCredRef ("VEND-200002")** gibt **"RF23VEND-200002"** zurück. |
-| CN\_GBT\_AdditionalDimensionID (Zeichenfolge, Zahl) | Ruft die zusätzliche Finanzdimensions-ID ab. Dimensionen werden in dieser Zeichenfolge als durch Trennzeichen getrennte IDs dargestellt. In dieser Zeichenfolge definieren Zahlen den Sequenzcode der angeforderten Dimension. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** gibt **"CC"** zurück. |
+| CN\_GBT\_AdditionalDimensionID (Zeichenfolge, Zahl) | Ruft die angegebene zusätzliche Finanzdimensions-ID ab. Im Parameter **Zeichenfolge** werden Dimensionen als IDs dargestellt, die durch Kommas getrennt sind. Der Parameter **Zahl** definiert den Sequenzcode der gewünschten Dimension in der Zeichenfolge. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** gibt **"CC"** zurück. |
 | GetCurrentCompany () | Gibt die Textdarstellung des Codes für die juristische Person (Unternehmen) zurück, bei dem ein Benutzer derzeit angemeldet ist. | **GETCURRENTCOMPANY ()** gibt **USMF** für einen Benutzer zurück, der beim Unternehmen **Contoso Entertainment System USA** in Finance and Operations angemeldet ist. |
 | CH\_BANK\_MOD\_10 (Stellen) | Gibt eine Gläubigerreferenz als MOD10-Ausdruck zurück, basierend auf den Ziffern der angegebenen Rechnungsnummer. | **CH\_BANK\_MOD\_10 ("VEND-200002")** gibt **3** zurück. |
 | FA\_SUM (Anlagencode, Wertmodellcode, Startdatum, Enddatum) | Gibt den vorbereiteten Datencontainer des Anlagenbetrags für die angegebene Periode zurück. | **FA\_SUM ("COMP-000001", "Current", Date1, Date2)** gibt den vorbereiteten Datenconteiner der Anlage **"COMP-000001"** zurück, der das Wertmodell **"Current"** für eine Periode von **Date1** bis **Date2** hat. |

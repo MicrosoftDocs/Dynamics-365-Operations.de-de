@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fecdca72839ef8ce204b62db6e02e8fa809a30d5
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 613fcf941576b9fb05f5c059699e4cc9c4cabe3e
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -117,12 +117,9 @@ Wenn Sie auf das Menü **Finanzberichterstellung** klicken, wird die Liste der s
 ## <a name="creating-and-modifying-financial-reports"></a>Finanzberichte erstellen und ändern
 Über die Finanzberichte Liste können Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht ändern. Wenn Sie die erforderlichen Berechtigungen besitzen, können Sie einen neuen Finanzbericht erstellen, indem Sie **Neu** anklicken im Aktivitätsbereich. Ein Berichts-Designer-Programm wird auf Ihr Gerät heruntergeladen. Nachdem der Berichts-Designer startete, können Sie den neuen Bericht erstellen. Nachdem Sie den neuen Bericht gespeichert haben, erscheint er in der Finanzberichtsliste. Die Liste enthält nur Berichte, die für das Unternehmen erstellt wurden, das Sie in Finance and Operations verwenden. Weitere Informationen über den Prozess zum Erstellen und Bearbeiten von Finanzberichten in Finance and Operations finden Sie unter [Blogbeiträge](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) im Blog Dynamics Finanzberichterstellung. **Hinweis:** Der Computer, auf den Sie den Berichts-Designer-Client herunterladen, muss Version 4.6.2 vom Microsoft .NET Frameworks installiert haben. Diese Version von Microsoft .NET Frameworks kann heruntergeladen und eingerichtet werden [von](https://www.microsoft.com/en-us/download/details.aspx?id=53345) Wenn Sie Chrome verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichtsdesigner-Client herunterzuladen. Wenn Sie den privaten Browser verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den privaten Modus aktiviert ist. Sie können auch einen Bericht ändern, der in der Finanzberichtsliste erscheint. Wenn der Bereich um den Berichtsnamen aktiviert ist, klicken Sie im Aktivitätsbereich auf **Bearbeiten**. Das Berichtsdesigner-Programm startet.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
-
-[Finanzberichte anzeigen](view-financial-reports.md)
-
-[Dynamics Financial Reporting-Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+- [Finanzberichte anzeigen](view-financial-reports.md)
+- [Dynamics Financial Reporting-Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

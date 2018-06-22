@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 03a932652cdd93b2a5917d0fca72809d1648b678
-ms.openlocfilehash: b1acf0b64914a3199fcf44f8377e32b26f0af99e
+ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
+ms.openlocfilehash: 0c1268d2fddcf7b28ecfc3197f21e9d30a5a5855
 ms.contentlocale: de-de
-ms.lasthandoff: 04/25/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -44,11 +44,9 @@ Die erste Phase der Integration zwischen Field Service und Finance and Operation
 - [Arbeitsaufträge in Field Service mit Aufträgen in Finance and Operations](field-service-work-order.md)
 - [Rechnungen in Field Service mit Freitextrechnungen in Finance and Operations](field-service-invoice.md)
 
-Um ein Beispiel zu sehen, wie Sie einen Arbeitsauftrag zwischen Field Service und Finance und Operations synchronisieren können, sehen Sie sich das kurze YouTube-Video an:
+Um ein Beispiel zu sehen, wie Sie einen Arbeitsauftrag zwischen Field Service und Finance and Operations synchronisieren können, sehen Sie sich das kurze YouTube-Video [Arbeitsaufträge zwischen Dynamics 365 for Field Service und Finance and Operations synchronisieren](https://www.youtube.com/watch?v=hAB4TDVMjxU) an.
 
-> [!Video https://www.youtube.com/embed/hAB4TDVMjxU]
-
-[Synchronisieren eines Arbeitsauftrags zwischen Field Service und Finance und Operations (YouTube-Video)](https://youtu.be/hAB4TDVMjxU)
+[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemanforderungen für Finance and Operations
 Field Service-Integration unterstützt die folgenden Versionen:
