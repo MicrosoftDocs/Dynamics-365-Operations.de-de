@@ -3,7 +3,7 @@ title: PowerApps einbetten
 description: "In diesem Thema wird beschrieben, wie PowerApps in den Finance and Operations-Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen."
 author: jasongre
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -26,8 +26,6 @@ ms.lasthandoff: 04/13/2018
 # <a name="embed-powerapps"></a>PowerApps einbetten
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 In der Plattformaktualisierung 14 in Microsoft Dynamics 365 for Finance and Operations unterstützt die Integration mit Microsoft PowerApps, einen Dienst, sodass die Entwickler und die nicht technischen Benutzer für benutzerdefinierte Geschäfts-Apps für mobile Geräte, Tablets und das Internet ohne Codes zu schreiben. PowerApps von Ihnen, Ihrer Organisation oder dem breiteren Ökosystem entwickelt, kann im Finance and Operations Client die Produktfunktionalität erweitern. Beispielsweise bedingt dies eventuell, dass Sie ein PowerApps installieren, um Finance and Operations mit den Informationen zu ergänzen, die aus einem anderen System abgerufen werden. 
 

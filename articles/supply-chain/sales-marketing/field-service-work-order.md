@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
+ms.sourcegitcommit: 8914723f6ef436bfc9e3a98cc82d5486042b0761
+ms.openlocfilehash: 250b7caa1e1495140d0d4f688ecae4acb8814467
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/07/2018
 
 ---
 
@@ -158,7 +158,7 @@ Synchronisierung von **Vorkalkuliert**-Werten gegenüber **Verwendet**-Werten wi
     - **Produktposition:** = Vorkalkulierte Menge = 5 Einheiten, Verwendete Menge = 6 Einheiten, Positionsstatus = Verwendet, Zugeordnet = Ja
     - **Serviceposition:** Vorkalkulierte Menge = 2 h, Verwendete Mente = 1,5 h, Positionsstatus = Verwendet
 
-    In diesem Beispiel werden der Wert **Verwendete Menge** des Produkts von **6** und der Wert **Vorkalkulierte Menge** der Dienstleistung von **1,5 h** mit Finance and Operations synchronisiert.
+    In diesem Beispiel werden der Wert **Verwendete Menge** des Produkts von **6** und der Wert **Verwendete Menge** der Dienstleistung von **1,5 h** mit Finance and Operations synchronisiert.
 
 ## <a name="sales-order-origin-and-status"></a>Auftragsursprung und Status
 

@@ -1,16 +1,16 @@
 ---
 title: Konfigurieren eines Ausgleichs
-description: "Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieser Artikel beschreibt die Parameter, die für den Ausgleich für Kreditoren und Debitoren verwendet werden."
+description: "Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieses Thema beschreibt die Parameter, die für den Ausgleich sowohl der Kreditorenkonten als auch der Debitoren verwendet werden."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ed520ce3a67fab81da24b36b042152f530d75dd
+ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
+ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieser Artikel beschreibt die Parameter, die für den Ausgleich für Kreditoren und Debitoren verwendet werden. 
+Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieses Thema beschreibt die Parameter, die für den Ausgleich sowohl der Kreditorenkonten als auch der Debitoren verwendet werden. 
 
 Die folgenden Parameter haben Auswirkungen darauf, wie Ausgleiche in Microsoft Dynamics 365 for Finance and Operations verarbeitet werden. Ausgleich ist der Prozess für das Begleichen einer Rechnung durch eine Zahlung oder eine Gutschrift. Diese Parameter werden befinden sich im **Ausgleich**-Bereich der **Debitorenparameter** **Kreditorenkontenparameter**-Seiten.
 
@@ -43,7 +43,7 @@ Die folgenden Parameter haben Auswirkungen darauf, wie Ausgleiche in Microsoft D
   -   Führt die Über- oder Unterzahlung zu einer Differenz, die kleiner ist als die im Feld **Maximale Centdifferenz** definierte Differenz, wird der Centdifferenzbetrag auf das Centdifferenzkonto gebucht.
   -   Wenn die Über- oder Unterzahlung eine Differenz führt, die größer ist als die im Feld **Maximale Centdifferenz** definierte Differenz, wird der Differenzbetrag auf das Differenzkonto gebucht, das für den Buchungstyp **Debitorenskonto** oder **Kreditorenskonto** auf der Seite **Konten für automatische Buchungen** ausgewählt ist.
 - **Skonti für Teilzahlungen berechnen** – Legen Sie diese Option auf **Ja** fest, um die automatische Berechnung von Skonti für Teilzahlungen zu aktivieren.
-  -   Diese Auswirkungen auf diese Option hängen vom Wert des Felds **Skonto verwenden** auf der Seite **Buchungen ausgleichen** ab. Ist die Option auf **Ja** festgelegt, wird der Rabatt verwendet, wenn das Feld **Skonto verwenden** auf **Normal** festgelegt ist. Wenn das Feld **Skonto verwenden** auf **Immer** festgelegt ist, wird das Skonto immer verwendet, unabhängig von der Einstellung in diesem Feld. Wenn das Feld **Skonto verwenden** auf **Niemals** festgelegt ist, wird das Skonto nie verwendet, unabhängig von der Einstellung in diesem Feld.
+  -   Die Auswirkungen auf diese Option hängen vom Wert des Felds **Skonto verwenden** auf der Seite **Buchungen ausgleichen** ab. Ist die Option auf **Ja** festgelegt, wird der Rabatt verwendet, wenn das Feld **Skonto verwenden** auf **Normal** festgelegt ist. Wenn das Feld **Skonto verwenden** auf **Immer** festgelegt ist, wird das Skonto immer verwendet, unabhängig von der Einstellung in diesem Feld. Wenn das Feld **Skonto verwenden** auf **Niemals** festgelegt ist, wird das Skonto nie verwendet, unabhängig von der Einstellung in diesem Feld.
   -   Wenn diese Option auf **Ja** festgelegt ist, und im Feld **Auszugleichender Betrag** auf der Seite **Buchungen ausgleichen** der Wert von einem Benutzer geändert wird, wird der Rabatt automatisch berechnet und als Standardeintrag im Feld **In Anspruch zu nehmender Skonto** angezeigt.
   -   Wenn diese Option auf **Nein** festgelegt und auf der Seite **Offene Buchungen ausgleichen** ein Benutzer den Wert im Feld **Auszugleichender Betrag** ändert, ist der Standardeintrag im Feld **In Anspruch zu nehmender Skonto** **0** (null).
 - **Skonti für Gutschriften berechnen** – Legen Sie diese Option auf **Ja** fest, um ein Skonto für Gutschriften automatisch zu berechnen. Bei Debitoren ist eine Gutschriftbuchung eine negative Transaktion, die im Feld **Rechnung** der Seite **Freitextrechnung** einen Wert besitzt, oder eine Rückgabe auf der Seite **Auftrag**.
@@ -58,7 +58,14 @@ Die folgenden Parameter haben Auswirkungen darauf, wie Ausgleiche in Microsoft D
 - **Ausgleich priorisieren (nur Debitor)** – Legen Sie diese Option auf **Ja** fest, um die Schaltfläche **Nach Priorität markieren** auf den Seiten **Debitorenzahlungen eingeben** und **Buchungen ausgleichen** zu aktivieren. Diese Schaltfläche können Benutzer den zuvor festgelegten Ausgleichsauftrag für die Buchungen zuweisen.  Nach Anwendung des Standardausgleichsauftrags auf eine Buchung mithilfe der Schaltfläche können die Auftrags- und Zahlungszuteilung vor der Buchung geändert werden.
 - **Verwendungspriorität für automatische Ausgleiche**– Legen Sie diese Option auf **Ja**, um die festgelegte Prioritätsreihenfolge zu verwenden, wenn Buchungen automatisch ausgeglichen werden. Dieses Feld ist nur verfügbar, wenn Sie den **Ausgleich priorisieren** und **Automatischer Ausgleich** auf **Ja** festlegen.
 
+## <a name="fixed-dimensions-on-accounts-receivableaccounts-payable-main-accounts"></a>Feste Dimensionen auf Debitoren-/Kreditorenhauptkonten
 
+Wenn auf dem Debitoren-/Kreditorenhauptkonto feste Dimensionen verwendet werden, werden durch den Ausgleichsprozess zusätzliche Buchhaltungseinträge und zwei zusätzliche Kreditorenbuchungen gebucht. Der Ausgleich vergleicht das Debitoren-/Kreditorensachkonto der Rechnung und Zahlung.  Wenn die Zahlung und der Ausgleich gemeinsam abgeschlossen werden, was das typische Szenario ist, wird der Buchhaltungseintrag der Zahlung erst nach Abschluss des Ausgleichsprozesses in das Hauptbuch gebucht. Aufgrund der Reihenfolge der Verarbeitungsereignisse kann die Abrechnung das tatsächliche Debitoren-/Kreditorensachkonto nicht aus dem Buchhaltungseintrag der Zahlung ermitteln. Der Ausgleich rekonstruiert das Sachkonto für die Zahlung. Dies wird zum Problem, wenn eine feste Dimension für das Debitoren-/Kreditorenhauptkonto verwendet wird.
 
+Zur Rekonstruktion des Sachkontos wird das Debitoren-/Kreditorenhauptkonto aus dem Buchungsprofil und die Finanzdimensionen aus dem Kreditorenbuchungsssatz für die Zahlung, wie in der Zahlungserfassung definiert, abgerufen. Feste Dimensionen werden nicht auf Zahlungserfassungen übernommen, sondern als letzter Schritt des Buchungsprozesses auf das Hauptkonto angewendet. Daher ist der feste Dimensionswert nicht in der Kreditorenbuchung enthalten, es sei denn, er wurde von einer anderen Quelle, z.B. dem Kreditor, bestimmt. Das rekonstruierte Konto enthält nicht die feste Dimension. Beim der Ausgleichsprozess wird festgestellt, daß eine Regulierungseingabe erstellt werden muß, da die Rechnung mit dem festen Dimensionswert aber nicht dem rekonstruierten Zahlungskonto gebucht wurde.  Da der Ausgleich mit der Buchung der Regulierungseingabe fortgeführt wird, ist der letzte Schritt der Buchung die Anwendung der festen Dimension. Durch Hinzufügen der festen Dimension zur Regulierungseingabe wird diese mit Soll und Haben auf das gleiche Sachkonto gebucht. Der Ausgleich kann den Buchhaltungseintrag nicht zurücknehmen.
 
+Um zusätzliche Buchhaltungseinträge, Soll und Haben in dem selben Sachkonto zu vermeiden, sollten je nach Ihren Unternehmensanforderungen die folgenden Problemumgehungen berücksichtigt werden. 
+
+-   Organisationen verwenden oft feste Dimensionen, um eine Finanzdimension, die nicht benötigt wird, mit Null zu füllen. Dies ist in der Regel der Fall bei Bilanzkonten, wie z.B. Debitoren/Kreditorenkonten. Kontostrukturen können verwendet werden, um Finanzdimension nicht zu verfolgen, die typischerweise mit Null gefüllt sind.  Sie können die Finanzdimensionen für die Bilanzkonten entfernen, so dass Sie keine festen Dimensionen verwenden müssen.
+-   Wenn Ihr Unternehmen auf dem Debitoren-/Kreditorenhauptkonto feste Dimensionen benötigt, finden Sie eine Möglichkeit, die feste Dimension auf die Zahlung vorzuschlagen, so dass der Wert der festen Dimension auf der Kreditorenbuchung für die Zahlung gespeichert wird. Dadurch kann das System das Debitoren-/Kreditorenhauptkonto unter Berücksichtigung der festen Dimensionswerte rekonstruieren. Der Wert der festen Dimension kann entweder als Standard für den Kreditor oder den Erfassungsnamen für die Zahlungserfassung definiert werden.
 

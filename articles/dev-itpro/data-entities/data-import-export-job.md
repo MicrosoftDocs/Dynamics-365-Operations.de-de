@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
@@ -96,6 +96,9 @@ Das Menü **Neu Sequenzen** ist nur verfügbar, wenn mehrere Entitäten ausgewä
 
 #### <a name="sorting"></a>Sortieren
 Sie können die Option **Sortieren nach** verwenden, um die Entitätsliste in sequenzieller Reihenfolge anzuzeigen.
+
+### <a name="truncating"></a>Kürzen
+Bei Importprojekten können Sie Datensätze in den Entitäten vor dem Import kürzen. Dies ist nützlich, wenn Ihre Datensätze in einen leeren Satz Tabellen importiert werden müssen. Diese Einstellung ist standardmäßig ausgeschaltet.
 
 ## <a name="validate-that-the-source-data-and-target-data-are-mapped-correctly"></a>Überprüfen Sie, ob die Daten und die Zieldaten korrekt zugeordnet werden.
 Zuordnung ist eine Funktion, die Importe und Exporteinzelvorgänge gilt.

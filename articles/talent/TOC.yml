@@ -1,0 +1,84 @@
+- name: "Willkommen bei Dynamics\_365 for Talent"
+  href: index.md
+- name: Erste Schritte
+  href: talent-get-started.md
+  items:
+    - name: Systemanforderungen und Updaterichtlinie
+      href: talent-versions-update-policy.md
+    - name: "Microsoft Dynamics\_365 for Talent bereitstellen"
+      href: provisioning-talent.md
+    - name: Talent-Umgebung entfernen
+      href: remove-talent-environment.md
+    - name: Bereitstellen von Microsoft Dynamics 365 for Talent – Modulare Apps
+      href: modular-app-tech-faq.md
+    - name: Erweitern Sie Talent-Funktionen
+      href: extend-talent-functionality.md
+    - name: Zugreifen auf Vorschaufunktionen in Dynamics 365 for Talent
+      href: access-preview-feature.md
+- name: Eine Personalverwaltungsstrategie entwickeln
+  href: departments-jobs-positions.md
+  items:
+    - name: Stellenkomponenten einrichten
+      href: create-job.md
+    - name: Eine Abteilung erstellen und der Abteilungshierarchie zuordnen
+      href: create-department-add-department-hierarchy.md
+    - name: Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen
+      href: set-up-hr-parameters-across-legal-entities.md
+    - name: Einrichten von unternehmensspezifischen Personalverwaltungsparametern
+      href: set-up-company-specific-hr-parameters.md
+    - name: Personalaktivitäten – FAQ
+      href: personnel-actions-faq.md
+    - name: Geschäftsprozesse formalisieren
+      href: formalize-business-processes.md
+    - name: Workflow zum Verwalten von Mitarbeiterinformationen verwenden
+      href: workflow-manage-employee-information.md
+    - name: Urlaubs- und Abwesenheitsübersicht
+      href: leave-absence-overview.md
+- name: Personalbeschaffung Ihrer Organisation
+  items:
+    - name: Überblick von Attract
+      href: attract-overview.md
+    - name: Überblick von Onboard
+      href: create-onboarding-experience.md
+- name: Mitarbeiter motivieren
+  items:
+    - name: Vergütungspläne
+      href: compensation-plans.md
+    - name: Feste Vergütungspläne erstellen
+      href: create-fixed-compensation-plans.md
+    - name: Variable Vergütungspläne erstellen
+      href: create-variable-compensation-plans.md
+    - name: Vergütungsprozess
+      href: process-compensation.md
+- name: Mitarbeiter fördern und schulen
+  items:
+    - name: Überblick über die Leistungsverwaltung
+      href: performance-management-overview.md
+    - name: Mitarbeiterqualifikationen auf die Geschäftsanforderungen ausrichten
+      href: skills.md
+    - name: Schulungskurse einrichten
+      href: courses.md
+- name: Vorteile erstellen und verwalten
+  href: manage-benefit-program.md
+- name: Vorteilsberechtigungsrichtlinien
+  href: benefit-eligibility-policies.md
+  items:
+    - name: 'Objekte verwalten, die an Arbeitskräfte ausgeliehen werden'
+      href: loan-items.md
+- name: Informationen anhand von Fragebögen sammeln
+  href: questionnaires.md
+  items:
+    - name: Entwerfen eines Fragebogens
+      href: design-questionnaires.md
+    - name: Einen Fragebogen verteilen und ausfüllen
+      href: distribute-questionnaires.md
+    - name: Die Ergebnisse eines Fragebogens auswerten
+      href: evaluate-questionnaire-results.md
+- name: Arbeitsplatzsicherheit und Konformität (Vereinigte Staaten von Amerika)
+  items:
+    - name: Antworten auf Anforderung persönlicher Daten mithilfe von Talent
+      href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/talent/toc.json
+    - name: Formular I-9 – Beschäftigungsüberprüfung
+      href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
+    - name: Einhalten des ADA (Americans with Disabilities Act)
+      href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json

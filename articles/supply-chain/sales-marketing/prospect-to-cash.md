@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f43b3943ce27c44cc0b4756d1d5f23e3be093273
+ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
+ms.openlocfilehash: 9d20a0ba92010be17029b1b0fc826eee1cded279
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -33,11 +33,8 @@ ms.lasthandoff: 05/08/2018
 
 Die „Interessent zu Bargeld”-Lösung bietet direkte Synchronisation zwischen Microsoft Dynamics 365 for Finance and Operations und Microsoft Dynamics 365 for Sales. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Während die Daten zwischen Finance and Operations und Sales fließen, können Sie Vertriebs- und Marketingaktivitäten zwischen Finance and Operations und Sales ausführen und die Auftagserfüllung mit Bestandsverwaltung in Finance and Operations handhaben. 
 
-Für weitere Informationen über die Integration von „Interessent zu Bargeld” sehen Sie sich den kurzen YouTube-Video an:
+Für weitere Informationen über die Integration von „Interessent zu Bargeld” sehen Sie sich den kurzen YouTube-Video an:[![](https://img.youtube.com/vi/AVV9x5x-XCg/0.jpg)](https://www.youtube.com/watch?v=AVV9x5x-XCg)
 
-> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
-
-[Integration der Konvertierung eines Interessenten in Bargeld (YouTube-Video)](https://youtu.be/AVV9x5x-XCg) 
 
 In der aktuellen Version enthält die Interessent in Bargeldlösung die folgenden Typen der direkten Synchronisierung:
 
