@@ -43,17 +43,17 @@ Sie können Debitorenrechnungen auf Basis von Aufträgen oder Lieferscheinen ers
 
 Mithilfe von „Debitoren” lassen sich alle Debitorenrechnungen und eingehenden Zahlungen von Debitoren nachverfolgen. Sie haben die Möglichkeit zum Einrichten der folgenden Elemente: Debitorengruppen, Debitoren, Buchungsprofile, Zinsrechnungen, Mahnschreiben, Provisionen sowie Parameter zu Debitoren, Gebühren, Lieferungen und Zielorte, Wechsel sowie andere Arten von Debitoreninformationen. 
 
-:::Zeile::: :::Spalte::: - [Buchhaltungsverteilungen und Journaleinträge untergeordneter Sachkonten für Freitextrechnungen](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+:::row::: :::column::: - [Buchhaltungsverteilungen und Journaleinträge untergeordneter Sachkonten für Freitextrechnungen](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Debitorenbuchungsprofile](customer-posting-profiles.md)
         - [Einstellungen, Bewilligung und Erfassung von Kreditkarten](credit-card-authorizations.md)
         - [Eine Debitorenrechnung erstellen](configure-customer-invoices.md)
         - [Wiederkehrende Rechnungen einrichten und verarbeiten](set-up-process-recurring-invoices.md)
-        - [Eine Freitextrechnung berichtigen](correct-free-text-invoice.md) :::Spaltenende::: :::Spalte::: - [Wechsel einrichten](set-up-bills-exchange.md)
+        - [Eine Freitextrechnung berichtigen](correct-free-text-invoice.md) :::column-end::: :::column::: - [Wechsel einrichten](set-up-bills-exchange.md)
         - [Zinssätze für einen Zinscode einrichten](set-up-interest-rates-interest-code.md)
         - [Zinsgebühren erlassen, erneut erheben oder rückgängig machen](waive-reinstate-reverse-interest-fees.md)
         - [SEPA-Lastschriftübersicht](sepa-direct-debit-overview.md)
         - [SEPA-Einzugsermächtigung einrichten](sepa-direct-debit-mandate.md)
-        - [Debitoren schließen](close-accounts-receivable.md) :::Spaltenende::: :::Zeilenende:::
+        - [Debitoren schließen](close-accounts-receivable.md) :::column-end::: :::row-end:::
 
 
 ## <a name="set-up-credit-and-collections"></a>Kredit und Inkasso einrichten
@@ -70,13 +70,13 @@ Informationen zu Debitoreninkassi werden in einer zentralen Ansicht auf der Seit
 
 Akzeptieren Sie unterschiedliche Zahlungstypen von Debitoren, wie Wechsel, Bargeld, Schecks, Kreditkarten und elektronische Zahlungen. 
 
-:::Zeile::: :::Spalte::: - [Debitorenzahlung zum Ausgleich mehrerer Rechnungen verwenden, die mehrere Rabattperioden abdecken](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+:::row::: :::column::: - [Debitorenzahlung zum Ausgleich mehrerer Rechnungen verwenden, die mehrere Rabattperioden abdecken](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
         - [Zentralisierte Zahlungen für Debitoren](centralized-payments-accounts-receivable.md)
         - [Eine Debitorenteilzahlung sowie die abschließende Zahlung des Gesamtbetrags vor dem Rabattdatum ausgleichen](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [Eine Debitorenteilzahlung sowie die abschließende Zahlung nach dem Rabattdatum ausgleichen](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::Spaltenende::: :::Spalten::: - [Eine Debitorenteilzahlung mit Rabatten auf Gutschriften ausgleichen](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Eine Debitorenteilzahlung sowie die abschließende Zahlung nach dem Rabattdatum ausgleichen](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::column-end::: :::column::: - [Eine Debitorenteilzahlung mit Rabatten auf Gutschriften ausgleichen](settle-partial-customer-payment-discounts-credit-notes.md)
         - [Eine Debitorenteilzahlung mit mehreren Rabattperioden ausgleichen](settle-partial-customer-payment-multiple-discount-periods.md)
         - [Rückerstattung an Debitoren](reimburse-customers.md)
-        - [Debitorenzahlungen für einen Teilbetrag](customer-payments-partial-amount.md) :::Spaltenende::: :::Zeilenende:::
+        - [Debitorenzahlungen für einen Teilbetrag](customer-payments-partial-amount.md) :::column-end::: :::row-end:::
 
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen

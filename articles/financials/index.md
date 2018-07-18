@@ -33,16 +33,16 @@ Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die
 
 Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.
 
-:::Zeile::: :::Spalte::: - [Kreditoren](accounts-payable/accounts-payable.md) 
+:::row::: :::column::: - [Kreditoren](accounts-payable/accounts-payable.md) 
         - [Debitoren](accounts-receivable/accounts-receivable.md)
         - [Budgeting](budgeting/budgeting-overview.md) 
         - [Bargeldbudgetierung und Bankverwaltung](cash-bank-management/cash-bank-management.md)
-        - [Kostenrechnung](cost-accounting/cost-accounting-home-page.md) :::Spaltenende::: :::Spalte::: - [Spesenverwaltung](expense-management/expense-management.md)
+        - [Kostenrechnung](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [Spesenverwaltung](expense-management/expense-management.md)
         - [Finanzberichterstellung](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Anlagen](fixed-assets/fixed-assets.md)
         - [Hauptbuch](general-ledger/general-ledger.md) 
         - [Projektverwaltung](project-management/overview-project-management-accounting.md)
-        - [Öffentlicher Sektor](public-sector/public-sector-functionality.md) :::Spaltenende::: :::Zeilenende:::
+        - [Öffentlicher Sektor](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
