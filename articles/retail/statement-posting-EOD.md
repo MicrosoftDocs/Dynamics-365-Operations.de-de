@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 86b301833f3655f7172e2d38ddca4239be71760c
-ms.openlocfilehash: bcb4af426e5967643a1c438bb19495576ce51b63
+ms.sourcegitcommit: 4961ee7fcc56af0646e421c9e040e2129cc322c4
+ms.openlocfilehash: e6d6ede65764c0b35c9ce0985af0d9f2cd6653c0
 ms.contentlocale: de-de
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
@@ -58,6 +58,8 @@ Als Teil der Verbesserungen der Auszugsbuchungsfunktion wurden drei neue Paramet
 - **Deaktivieren der Zählung erforderlich** - Wenn diese Option auf **Ja** gesetzt ist, wird der Buchungsprozess für eine Auszug fortgesetzt, auch wenn die Differenz zwischen dem gezählten Betrag und dem Transaktionsbetrag auf dem Auszug außerhalb der Schwelle liegt, die auf der FastTab **Inforegister**für Einzelhandelsgeschäfte definiert ist.
 
 Zusätzlich wurde das Feld **Maximale Anzahl paralleler Auszugsbuchungen** auf dem Inforegister **Stapelverarbeitung** eingeführt. Dieses Feld definiert die Anzahl der Stapelaufgaben, die gleichzeitig ausgeführt werden sollen. Derzeit müssen Sie den Wert dieses Feldes manuell setzen.
+
+Auch mit dem neuen Buchungsprozess, ist es erforderlich, ein **Geschenkkartenprodukt**  im Inforegister **Geschenkkarte** in der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** festzulegen. Dies gilt auch, wenn keine Geschenkkarten von der Organisation verwendet werden. 
 
 Beachten Sie, daß alle Einstellungen und Parameter, die sich auf Auszugsbuchungen beziehen und die für Einzelhandelsgeschäfte und auf der Seite **Einzelhandelsparameter** definiert sind, auf die verbesserte Auszugsbuchung anwendbar sind.
 

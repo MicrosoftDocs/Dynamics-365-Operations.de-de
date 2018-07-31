@@ -3,7 +3,7 @@ title: Produkte direkt von Finance and Operations mit Produkten in Sales synchro
 description: "Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Produkte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Sales zu synchronisieren."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ae50372edcd473f2288f8172b71eac33e24b636
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -78,7 +78,8 @@ Das Feld **Wird extern verwaltet** hilft, sicherzustellen, dass nur Angebote und
 Extern verwaltete Produkte werden automatisch der ersten gültigen Preisliste mit derselben Währung hinzugefügt. Preislisten sind alphabetisch sortiert nach Name. Der Produktverkaufspreis von Finance and Operations wird als Preis in der Preisliste verwendet. Vergewissern Sie sich daher, dass Preislisten in Sales für jede Produktverkaufswährung in Finance and Operations vorhanden sind. Die Währung für die freigegebenen verkäuflichen Produkte ist auf die Buchhaltungswährung in der juristischen Person festgelegt, von der das Produkt exportiert wird.
 
 > [!NOTE]
-> Produktsynchronisierung erfolgt nicht, es sei denn, es gibt eine Liste mit Preisen, die eine entsprechende Währung haben.
+> - Produktsynchronisierung ist nicht erfolgreich, es sei denn, es gibt eine Liste mit Preisen, die eine entsprechende Währung haben.
+> - Sie können auch die verwendete Preisliste mit der Integration steuern, indem Sie den pricelevelid.name [Standard-Preisliste (Name)] im Daten-Integrationsprojekt zuordnen. Die Eingabe muss in Kleinbuchstaben sein. Beispielsweise kann der Standardwert für eine Liste mit Preisen auf Verkäufen mit dem Namen "Standard" wie folgt sein: Empfangsfeld: pricelevelid.name [Standard-Preisliste (Name)] und Zuordnungstyp: ["transformType" "Standard", "defaultValue": "Standard" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Voraussetzungen und Einrichtung der Zuordnung
 
