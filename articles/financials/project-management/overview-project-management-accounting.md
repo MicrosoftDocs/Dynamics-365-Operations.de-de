@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: 46c8ecf8a6988c32d0202c631bef6901f467bb89
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -80,17 +80,37 @@ Sie können die Planung verwenden, wenn die Organisation operativ ausgerichtet i
 ### <a name="create-projects"></a>Projekte erstellen
 
 Sie können sechs Typen von Projekten in Microsoft Finance and Operations erstellen. Jeder Typ wird unterschiedlich für Umsatzerkennung Kosten und eingerichtet. Der gewählte Projekttyp hängt vom Zweck des Projekts ab. Die folgende Tabelle beschreibt die typische Verwendung eines Projekttyps.
-
-                                                                                                                                                                         |
-
-| Projekttyp      | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nach Aufwand | In Aufwandsprojekten werden dem Debitor alle Kosten berechnet, die für ein Projekt anfallen. Zu den Kosten zählen die Kosten für Stunden, Ausgaben, Artikel und Gebühren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Festpreis       | In Festpreisprojekten bestehen Rechnungen aus Akontobuchungen. Ein Festpreisprojekt wird gemäß einem Fakturierungsplan fakturiert, der auf einem Projektvertrag beruht. Der Umsatzerlös für ein Festpreisprojekt kann während des Projekts berechnet und gebucht werden, indem die Methode "Prozentsatz der Fertigstellung" angewendet werden. Alternativ kann der Umsatzerlös berechnet und gebuth werden, wenn das Projekt abgeschlossen ist, indem die Methode "Vollendeter Auftrag" angewendet wird. Bei Unternehmen ist es häufig sinnvoll, den Wert der Ressource in Fertigung (RIF) zu verwenden, um den Grad der Fertigstellung eines Projekts oder einer Gruppe von Projekten zu berechnen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Investition        | Investitionsprojekte sind Projekte, die keine sofortigen Einnahmen erzeugen. Sie werden in der Regel für langfristige interne Projekte verwendet, bei denen die Kosten kapitalisiert werden müssen. Für ein Investitionsprojekt können nur Artikelkosten, Stundenkosten und Ausgaben erfasst werden. Kosten in einem Investitionsprojekt werden durch die Vorkalkulationsfunktion verfolgt und gesteuert. Investitionsprojekte können mit einem optionalen maximalen Kapitalisierungslimit eingerichtet werden. Mit dem Fortschritt des Investitionsprojekts erfassen Sie die Kosten in RIF-Konten, in denen sie bis zum Abschluss des Projekts gehalten werden. Wenn das Projekt gelöscht wird, übertragen Sie den RIF-Wert auf ein Anlagenkonto, ein Sachkonto oder ein neues Projekt. Hinweis: Buchungen für Investitionsprojekte werden nicht auf der Seite **Buchkosten**, **Umsatzerlös antizipieren** oder **Erstellen von Rechnungsvorschlägen** angezeigt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Kostenprojekt      | Ebenso wie Investitionsprojekte dienen Kostenprojekte in der Regel dazu, interne Projekte zu verfolgen, und für Kostenprojekte können nur Stunden, Ausgaben und Artikel erfasst werden. Kostenprojekte haben jedoch in der Regel eine kürzere Dauer als Investitionsprojekte. Des Weiteren können Kostenprojekte im Unterschied zu Investitionsprojekten nicht auf Bilanzkonten aktiviert werden. Stattdessen werden ihre Projektbuchungen nur auf Gewinn- und Verlustkonten gebucht. **HINWEIS** Buchungen für Kostenprojekt werden nicht auf der Seite **Buchkosten**, **Umsatzerlös antizipieren** oder **Erstellen von Rechnungsvorschlägen** angezeigt. Da Kostenprojekte in der Regel verwendet werden, um interne Projekte nachzuverfolgen, müssen sie nicht unbedingt einem Debitorenkonto zugeordnet sein. Wenn die Einstellung jedoch erfordert, dass Artikelbedarf für Bestellungen erstellt werden, müssen Sie das Kostenprojekt einem Debitor zuordnen. Diese Zuordnung ist erforderlich, da der Artikelbedarf als Auftragspositionen verwaltet wird, und das System erfordert, dass ein Debitor angegeben ist. Allerdings ergibt diese Einstellung keinen Artikelbedarf, der automatisch aus einer Bestellung erstellt wird. Für Kostenprojekte wird die **Artikelbedarf erstellen**-Einstellung ignoriert. Wenn Sie einen Artikelbedarf in einem Kostenprojekt benötigen, können Sie einen manuell erstellen, solange ein Debitor dem Projekt zugeordnet ist. |
-| Intern          | Interne Projekte dienen zur Verfolgung der Kosten eines internen Projekts der Organisation. Dieser Projekttyp kann ein Planungstool zum Verwalten des Ressourcenverbrauchs enthalten. **Hinweis:** Buchungen für interne Projekt werden nicht auf **Umsatzerlös antizipieren** oder **Erstellen von Rechnungsvorschlägen** Seite angezeigt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Uhrzeit              | Zeitprojekte dienen dazu, die Zeit zu erfassen, die mit nicht fakturierbaren und nicht produktiven Aktivitäten verbunden ist. Beispiel hierfür ist ein Projekt zur Erfassung der Krankheitszeiten von Arbeitskräften. Buchungen in Zeitprojekten werden nicht im Sachkonto gebucht. Sie werden vielmehr in Arbeitskraftauslastungsberichte eingegliedert. In Zeitprojekten können nur Stundenbuchungen erfasst werden. Sie verwenden eine Stundenerfassung oder einen Arbeitszeitnachweis, um diese Stunden im Projekt zu erfassen. Nachdem die Stunden erfasst wurden, werden sie als Projektbuchungen angezeigt, jedoch ohne eine entsprechende Belegbuchung. **Hinweis** Buchungen für Zeitprojekt werden nicht auf der Seite **Buchkosten**, **Umsatzerlös antizipieren** oder **Erstellen von Rechnungsvorschlägen** angezeigt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+                                                                                                            
+<table>
+  <tr>
+    <td>Projekttyp</th>
+    <td>Beschreibung</th>
+  </tr>
+  <tr>
+    <td>Nach Aufwand</td>
+    <td>In Aufwandsprojekten werden dem Debitor alle Kosten berechnet, die für ein Projekt anfallen. Zu den Kosten zählen die Kosten für Stunden, Ausgaben, Artikel und Gebühren.</td>
+  </tr>
+  <tr>
+    <td>Festpreis</td>
+    <td>In Festpreisprojekten bestehen Rechnungen aus Akontobuchungen. Ein Festpreisprojekt wird gemäß einem Fakturierungsplan fakturiert, der auf einem Projektvertrag beruht. Der Umsatzerlös für ein Festpreisprojekt kann während des Projekts berechnet und gebucht werden, indem die Methode "Prozentsatz der Fertigstellung" angewendet werden. Alternativ kann der Umsatzerlös berechnet und gebuth werden, wenn das Projekt abgeschlossen ist, indem die Methode "Vollendeter Auftrag" angewendet wird. Bei Unternehmen ist es häufig sinnvoll, den Wert der Ressource in Fertigung (RIF) zu verwenden, um den Grad der Fertigstellung eines Projekts oder einer Gruppe von Projekten zu berechnen.</td>
+  </tr>
+  <tr>
+    <td>Investition</td>
+    <td>Investitionsprojekte sind Projekte, die keine sofortigen Einnahmen erzeugen. Sie werden in der Regel für langfristige interne Projekte verwendet, bei denen die Kosten kapitalisiert werden müssen. Für ein Investitionsprojekt können nur Artikelkosten, Stundenkosten und Ausgaben erfasst werden. Kosten in einem Investitionsprojekt werden durch die Vorkalkulationsfunktion verfolgt und gesteuert. Investitionsprojekte können mit einem optionalen maximalen Kapitalisierungslimit eingerichtet werden. Mit dem Fortschritt des Investitionsprojekts erfassen Sie die Kosten in RIF-Konten, in denen sie bis zum Abschluss des Projekts gehalten werden. Wenn das Projekt gelöscht wird, übertragen Sie den RIF-Wert auf ein Anlagenkonto, ein Sachkonto oder ein neues Projekt. <br></br> <strong>HINWEIS:</strong> ​Buchungen für Investitionsprojekte werden nicht auf der Seite <strong>Buchkosten<strong>, <strong>Umsatzerlös antizipieren</strong> oder <strong>Erstellen von Rechnungsvorschlägen</strong> angezeigt.</td>
+  </tr>
+  <tr>
+    <td>Kostenprojekt</td>
+    <td>Ebenso wie Investitionsprojekte dienen Kostenprojekte in der Regel dazu, interne Projekte zu verfolgen, und für Kostenprojekte können nur Stunden, Ausgaben und Artikel erfasst werden. Kostenprojekte haben jedoch in der Regel eine kürzere Dauer als Investitionsprojekte. Des Weiteren können Kostenprojekte im Unterschied zu Investitionsprojekten nicht auf Bilanzkonten aktiviert werden. Stattdessen werden ihre Projektbuchungen nur auf Gewinn- und Verlustkonten gebucht. <br></br> <strong>HINWEIS</strong> Buchungen für Kostenprojekte werden nicht auf der Seite <strong>Buchkosten</strong>, <strong>Umsatzerlös antizipieren</strong> oder <strong>Erstellen von Rechnungsvorschlägen</strong> angezeigt. Da Kostenprojekte in der Regel verwendet werden, um interne Projekte nachzuverfolgen, müssen sie nicht unbedingt einem Debitorenkonto zugeordnet sein. Wenn die Einstellung jedoch erfordert, dass Artikelbedarf für Bestellungen erstellt werden, müssen Sie das Kostenprojekt einem Debitor zuordnen. Diese Zuordnung ist erforderlich, da der Artikelbedarf als Auftragspositionen verwaltet wird, und das System erfordert, dass ein Debitor angegeben ist. Allerdings ergibt diese Einstellung keinen Artikelbedarf, der automatisch aus einer Bestellung erstellt wird. Für Kostenprojekte wird die  <strong>Artikelbedarf erstellen</strong>-Einstellung ignoriert. Wenn Sie einen Artikelbedarf in einem Kostenprojekt benötigen, können Sie einen manuell erstellen, solange ein Debitor dem Projekt zugeordnet ist.</td>
+  </tr>
+  <tr>
+    <td>Intern</td>
+    <td>Interne Projekte dienen zur Verfolgung der Kosten eines internen Projekts der Organisation. Dieser Projekttyp kann ein Planungstool zum Verwalten des Ressourcenverbrauchs enthalten. <br></br><strong>Hinweis:<strong> Transaktionen für interne Projekt werden nicht auf der Seite <strong>Umsatzerlös antizipieren</strong> oder <strong>Erstellen von Rechnungsvorschlägen</strong> angezeigt.</td>
+  </tr>
+  <tr>
+    <td>Uhrzeit</td>
+    <td>Zeitprojekte dienen dazu, die Zeit zu erfassen, die mit nicht fakturierbaren und nicht produktiven Aktivitäten verbunden ist. Beispiel hierfür ist ein Projekt zur Erfassung der Krankheitszeiten von Arbeitskräften. Buchungen in Zeitprojekten werden nicht im Sachkonto gebucht. Sie werden vielmehr in Arbeitskraftauslastungsberichte eingegliedert. In Zeitprojekten können nur Stundenbuchungen erfasst werden. Sie verwenden eine Stundenerfassung oder einen Arbeitszeitnachweis, um diese Stunden im Projekt zu erfassen. Nachdem die Stunden erfasst wurden, werden sie als Projektbuchungen angezeigt, jedoch ohne eine entsprechende Belegbuchung. <br></br><strong>HINWEIS:</strong> Buchungen für Zeitprojekt werden nicht auf der <strong>Buchkosten</strong>, <strong>Umsatzerlös antizipieren</strong> oder <strong>Erstellen von Rechnungsvorschlägen</strong> Seite angezeigt.</td>
+  </tr>
+</table>
 
 
 ### <a name="assign-workers-categories-and-resources"></a>Arbeitskräfte, Kategorien und Ressourcen zuweisen
@@ -239,11 +259,12 @@ In der folgenden Tabelle werden die Methoden zum Berechnen der Kosten für den A
 <li>Vergleichen von Planungsbuchungen mit tatsächlichen Buchungen.</li>
 <li>Behalten, verringern oder erhöhen Sie die Vorkalkulationen für die nächste Periode.</li>
 </ol>
-Finance and Operations verringert nicht automatisch die geplanten Vorkalkulationen. Daher wird empfohlen, dass Sie ein ursprüngliches Planzahlenmodell im Festpreisprojekt verwalten, um eine Basislinie einzurichten, mit der das Projekt verglichen wird, wenn es abgeschlossen ist. &gt; [!NOTE] &gt; Verwenden Sie mindestens zwei Planzahlenmodelle, wenn Sie diesen Ansatz anwenden. Ein Modell sollte die ursprüngliche Planung enthalten. Für das andere Modell sollten Sie Planungsbuchungen eines anderen Modells kopieren. Diese Methode prüft nur Festpreis- und Investitionsprojekte.</td>
+Finance and Operations verringert nicht automatisch die geplanten Vorkalkulationen. Daher wird empfohlen, dass Sie ein ursprüngliches Planzahlenmodell im Festpreisprojekt aufbewahren, um eine Basislinie einzurichten, mit der das Projekt verglichen wird, wenn es abgeschlossen ist. 
+<br></br> <strong>HINWEIS:</strong> Wenn Sie diesen Ansatz verwenden, nutzen Sie mindestens zwei Planzahlenmodelle. Ein Modell sollte die ursprüngliche Planung enthalten. Für das andere Modell sollten Sie Planungsbuchungen eines anderen Modells kopieren. Diese Methode prüft nur Festpreis- und Investitionsprojekte.</td>
 </tr>
 <tr class="odd">
 <td>Restbudget</td>
-<td>Die Methode verwendet ein Restbudgetmodell, um zu den Kosten für den Abschluss des Projekts zu berechnen. Wenn Sie diese Methode verwenden, werden die tatsächlichen Kosten und die geplanten Beträge im Restbudgetmodell zusammen hinzugefügt. Das Ergebnis sind Gesamtkosten. Bevor Sie diese Methode verwenden, muss ein Restbudgetmodell eingerichtet werden, um Buchungen auf der Grundlage der tatsächlichen Buchungen abzuziehen, die im System erfasst sind. Prüfen Sie auf der <strong>Planzahlenmodelle</strong>-Seite, ob die Felder in der Gruppe <strong>Automatische Planungsverringerung</strong> markiert sind. Normalerweise wird ein Restbudget aus einem ursprünglichen Budget kopiert. Während Buchungen eingegeben werden, werden die Buchungen für das Restbudget verringert. Wenn Sie beim Fortschritt des Projekts feststellen, dass das Restbudget angepasst werden muss, können Sie das Restbudget mit Planungsbuchungen belasten. <strong>Hinweis:</strong> Die Methode kann nur angewendet werden, wenn der Vorkalkulation ein Planzahlenmodell zugeordnet ist.</td>
+<td>Die Methode verwendet ein Restbudgetmodell, um zu den Kosten für den Abschluss des Projekts zu berechnen. Wenn Sie diese Methode verwenden, werden die tatsächlichen Kosten und die geplanten Beträge im Restbudgetmodell zusammen hinzugefügt. Das Ergebnis sind Gesamtkosten. Bevor Sie diese Methode verwenden, muss ein Restbudgetmodell eingerichtet werden, um Buchungen auf der Grundlage der tatsächlichen Buchungen abzuziehen, die im System erfasst sind. Prüfen Sie auf der <strong>Planzahlenmodelle</strong>-Seite, ob die Felder in der Gruppe <strong>Automatische Planungsverringerung</strong> markiert sind. Normalerweise wird ein Restbudget aus einem ursprünglichen Budget kopiert. Während Buchungen eingegeben werden, werden die Buchungen für das Restbudget verringert. Wenn Sie beim Fortschritt des Projekts feststellen, dass das Restbudget angepasst werden muss, können Sie das Restbudget mit Planungsbuchungen belasten. <br></br> <strong>HINWEIS.</strong> Die Methode kann nur angewendet werden, wenn der Vorkalkulation ein Planzahlenmodell zugeordnet ist.</td>
 </tr>
 <tr class="even">
 <td>Wie vorhergehende Vorkalkulation</td>
@@ -318,11 +339,19 @@ Das Kostenzahlungsdatum wird nicht auf Basis von Puffertagen berechnet. Nachdem 
 
 Nach der Erstellung aller Verkaufs- und Kreditorenrechnungen, können Sie die Beziehung zwischen Feldern auf der Seite **Cashflow** und in den Feldern auf der Seite **Projektaufstellungen** anzeigen.
 
-| Seite "Cashflow" | Seite "Projektaufstellungen" |
-|----------------|-------------------------|
-| Zufluss flüssiger Mittel   | Umsatzerlös                 |
-| Abfluss flüssiger Mittel  | Gesamtkosten              |
-| Cashflows (netto) | Bruttogewinn            |
+:::row::: :::column:::
+        #### Cash flow page
+        - Cash inflows 
+        - Cash outflows
+        - Net cash flows
+    :::column-end:::
+    :::column:::
+        #### Project statements page
+        - Revenue
+        - Total cost
+        - Gross margin
+    :::column-end:::
+:::row-end:::
 
 ### <a name="review-costs"></a>Kosten prüfen
 
@@ -409,8 +438,4 @@ Nachdem der Auszug berechnet ist, können folgende Informationen auf den verschi
 -   **Verbrauch** – Informationen zum Verbrauch für Stunden, Artikel, Ausgaben und Lohnabrechnungsbuchungen.
 -   **Rechnung** – Informationen zu Rechnungen und Akontofakturierung.
 -   **Stundensatz** – Die Stundensätze für die in GuV-Konten gebuchten Stunden.
-
-
-
-
 

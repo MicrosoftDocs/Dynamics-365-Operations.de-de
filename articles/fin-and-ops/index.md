@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: d1307729945494ee78c0ca6089b384d666fe5f20
+ms.sourcegitcommit: e7e10768dd1e0a441842d5b13964f49153c35be3
+ms.openlocfilehash: cced03d29bb04182a3f5bae86c3bec6d3c086cde
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 07/10/2018
 
 ---
 
@@ -65,7 +65,7 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale gesetzliche Besonderheiten</a></p>
 
 <H3><a href="hr/hr-landing-page.md">Personalverwaltung</a></h3>
-<p><a href="../talent/manage-benefit-program.md">Vergütungen</a></p>
+<p><a href="../talent/manage-benefit-program.md">Vorteile</a></p>
 <p><a href="../talent/performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
 <p><a href="../talent/questionnaires.md">Fragebogen</a></p>
 <p><a href="hr/manage-recruiting-process.md">Personalbeschaffung</a></p>
@@ -114,16 +114,16 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 </td>
 <td>
 <h3>Zugehörige Produkte</h3>
-<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
-<p><a href="../talent/manage-benefit-program.md">Vergütungen</a></p>
-<p><a href="../talent/performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
-<p><a href="../talent/questionnaires.md">Fragebogen</a></p>
-
 <h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
 <p><a href="../retail/call-center-functionality.md">Callcenter</p>
 <p><a href="../retail/define-maintain-retail-channels.md">Kanaleinrichtung und -verwaltung</p>
 <p><a href="../retail/retail-peripherals-overview.md">MPOS und Cloud POS</p>
 <p><a href="../retail/dev-itpro/dev-retail-home-page.md">Retail-Entwicklung und -Verwaltung</p>
+
+<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
+<p><a href="../talent/manage-benefit-program.md">Vorteile</a></p>
+<p><a href="../talent/performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
+<p><a href="../talent/questionnaires.md">Fragebogen</a></p>
 
 </td>
 </tr>

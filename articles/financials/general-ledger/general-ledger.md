@@ -19,10 +19,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2177110dc16528de7eddedb0667faae553a36b12
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -54,9 +54,13 @@ Zudem müssen sie in regelmäßigen Abständen aktualisiert werden, wenn Steuerb
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
+### <a name="whats-new"></a>Neuigkeiten
 
-Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden. 
+Wechseln Sie zu [Versionshinweise](https://docs.microsoft.com/en-us/business-applications-release-notes/), um festzustellen, welche der neuen Funktionalität freigegeben wurden. 
+
+### <a name="videos"></a>Videos
+
+Sehen Sie in den Videos zu Hilfe + Anleitungen nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
 
 ### <a name="blogs"></a>Blogs
 
@@ -66,11 +70,8 @@ Im [Microsoft Dynamics AX-Produktteamblog](https://blogs.msdn.microsoft.com/dax/
 
 Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 
-### <a name="task-guides"></a>Aufgabenleitfäden
-Weitere Hilfe finden Sie als Aufgabenleitfäden innerhalb von Finance and Operations. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche „Hilfe”.
+#### <a name="community-blogs"></a>Communityblogs
 
-### <a name="videos"></a>Videos
-
-Sehen Sie in den Videos zu Hilfe + Anleitungen nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
+- [Was Sie zum Sachkonto in Dynamics 365 für Finanzen und Arbeitsgänge wissen sollen](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
 

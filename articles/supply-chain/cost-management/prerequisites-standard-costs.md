@@ -20,10 +20,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e63f2b4289b640e601492425331ea8f3804d139a
-ms.openlocfilehash: 4f505a2de89863d1a12d415795fdfb82b3557bc0
+ms.sourcegitcommit: 338e0847ea91ee2582df0aab3e31a97c4f24113e
+ms.openlocfilehash: 016eec12c31398beede7fdddc4548ec196ebd704
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -51,7 +51,7 @@ Bevor Sie die Artikelbuchungsregeln definieren, verwenden Sie die Seite **Buchun
 
 **4. Definieren Sie Lagerparameter, die sich auf Standardkosten beziehen.** 
 
--  Definieren Sie mithilfe der Registerkarte **Stücklisten** auf der Seite **Bestandsparameter** zwei Kostensteuerungsparameter, die sich auf Standardkosten beziehen. 
+-  Definieren Sie mithilfe der Registerkarte **Bestandbuchhaltung** auf der Seite **Bestandbuchhaltungsrichtlinie einrichten > Parameter** zwei Kostensteuerungsparameter, die sich auf Standardkosten beziehen.
 
     -  Wählen Sie im Feld **Kostenaufschlüsselung** die Option **Keine** oder **Untergeordnetes Sachkonto** aus. Wenn Sie **Untergeordnetes Sachkonto** auswählen, ist die Kostenaufschlüsselung eine *aktive* Kostenaufschlüsselung. Eine aktive Kostenaufschlüsselung ist von entscheidender Bedeutung für die übergreifende Berechnung, Beibehaltung und Anzeige der Kostengruppensegmentierung in einer mehrstufigen Produktstruktur für Standardkostenartikel. Bei aktiver Kostenaufschlüsselung lassen sich Lagerbestand, Umlaufbestand (Ressourcen in Fertigung, RIF) sowie Wareneinsatz (Cost Of Goods Sold, COGS) pro Kostengruppe in einem einstufigen, mehrstufigen oder in einem Gesamtformat melden und analysieren. Sofern die Kostenaufschlüsselung aktiv ist, wenn Sie die Kosten eines produzierten Artikels aktivieren, wird die Kostengruppensegmentierung im Kostendatensatz des Artikels gespeichert. 
 
