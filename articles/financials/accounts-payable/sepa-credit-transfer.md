@@ -1,7 +1,7 @@
 ---
 title: "Überblick zur SEPA-Kreditübertragung"
 description: "Dieser Artikel stellt allgemeine Informationen zu ISO 20022-Banküberweisungen bereit, die SEPA (Single Euro Payments Area) Banküberweisungen und alle sonstigen elektronische Zahlungen für Kreditoren umfassen. Eine SEPA-Überweisung ist eine Zahlung (in Euro) von einem Unternehmen oder von Einzelperson zu einem anderen Unternehmen oder einer Einzelperson. Der Artikel beschreibt zudem, wie eine SEPA-Überweisung-Zahlungsdatei eingerichtet und übermittelt wird."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

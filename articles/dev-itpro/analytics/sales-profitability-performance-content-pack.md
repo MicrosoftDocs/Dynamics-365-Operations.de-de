@@ -1,7 +1,7 @@
 ---
 title: "Vertriebs-und Rentabilitätsleistungsinhalt für Power BI"
 description: "In diesem Thema wird beschrieben, was im Umsatz- und Rentabilitätsleistung Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article

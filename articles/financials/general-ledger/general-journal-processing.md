@@ -1,7 +1,7 @@
 ---
 title: Allgemeine Erfassungsverarbeitung
 description: "Dieser Artikel beschreibt Fähigkeiten in Microsoft Dynamics 365 for Finance and Operations, mit denen die allgemeine Erfassungsverarbeitung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die interne Steuerung nicht beeinträchtigt werden."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef

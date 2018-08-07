@@ -1,7 +1,7 @@
 --- 
 title: Wellenverarbeitung konfigurieren
 description: "In diesem Leitfaden wird beschrieben, wie die Kriterien eingerichtet werden, die bestimmen, welche Arbeit für einen Lagerort generiert wird, wenn eine Wellen verarbeitet wird und ob Wellen manuell oder automatisch verarbeitet werden."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/07/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution

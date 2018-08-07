@@ -1,7 +1,7 @@
 ---
 title: Kreditbrief und Importinkasso
 description: "Dieser Artikel enthält allgemeine Informationen über Kreditbrief und Importinkasso. Beide Arten von Bankdokumenten werden häufig für den Einkauf und Verkauf im internationalen Warenverkehr verwendet werden."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankLCImport
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 18321
 ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
