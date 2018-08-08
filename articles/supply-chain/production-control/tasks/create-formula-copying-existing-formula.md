@@ -1,7 +1,7 @@
 --- 
 title: Eine Formel durch Kopieren aus einer vorhandenen Formel erstellen
 description: Im folgenden Verfahren sehen Sie, wie schnell eine neue Formel durch das Kopieren aus einer vorhandenen Formel erstellt wird.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/16/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4467022f4a377fc0f4aa5cf5e4a27c74ff95c415
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 64e4e4797c3d62011b8c0673207c68eeea230ee4
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a><span data-ttu-id="8bf06-103">Eine Formel durch Kopieren aus einer vorhandenen Formel erstellen</span><span class="sxs-lookup"><span data-stu-id="8bf06-103">Create a formula by copying from an existing formula</span></span>

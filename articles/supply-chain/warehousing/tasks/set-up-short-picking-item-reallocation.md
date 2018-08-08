@@ -1,7 +1,7 @@
 --- 
 title: "Artikelneuzuordnung für Entnahme mit unzureichender Menge einrichten"
 description: "In diesem Verfahren erfahren Sie, wie Sie Lagerarbeiter ermöglichen alternative Lagerplätze schnell zu finden wenn kein ausreichender Bestand am Lagerort vorhanden ist."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,10 +17,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ed2be84abbdb7a04c6a87301da9a010eb5350969
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 99a4afb58f0c4beef818fd7c0a6a1837e00638d8
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-short-picking-item-reallocation"></a><span data-ttu-id="e2dea-103">Artikelneuzuordnung für Entnahme mit unzureichender Menge einrichten</span><span class="sxs-lookup"><span data-stu-id="e2dea-103">Set up short picking item reallocation</span></span>
