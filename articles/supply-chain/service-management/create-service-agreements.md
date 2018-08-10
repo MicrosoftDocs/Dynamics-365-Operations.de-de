@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Servicevereinbarungen
 description: "In diesem Thema wird beschrieben, wie mithilfe der Funktionen in den Modulen Servicemanagement und Projektmanagement und Buchhaltung Serviceverträge erstellt werden."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/19/2018
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SMAAgreementTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.author: YuyuScheller
+ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

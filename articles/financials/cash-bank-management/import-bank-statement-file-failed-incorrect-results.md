@@ -1,7 +1,7 @@
 ---
 title: Bankauszugsdatei-Importproblembehandlung
 description: "Es ist wichtig, dass die Bankauszugdatei der Bank dem Layout entspricht, das von Microsoft Dynamics 365 for Finance and Operations unterstützt wird. Aufgrund der strengen Standards für Bankauszüge, funktionieren die meisten Integrationen korrekt. Allerdings kann manchmal die Auszugsdatei nicht importiert werden oder enthält falsche Ergebnisse. In der Regel werden diese Probleme durch geringfügige Unterschiede in der Bankauszugdatei verursacht. In diesem Artikel wird beschrieben, wie Sie diese Unterschiede korrigieren und Probleme lösen können."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankStatementFormat
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3

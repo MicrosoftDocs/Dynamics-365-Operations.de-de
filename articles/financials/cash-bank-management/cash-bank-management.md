@@ -1,7 +1,7 @@
 ---
 title: "Startseite für Bargeld- und Bankverwaltung"
 description: "Sie können die Bargeld- und Bankverwaltung verwenden, um die Bankkonten der juristischen Person und die Finanzinstrumente zu verwalten, die diesen Bankkonten zugeordnet sind."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -10,12 +10,12 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

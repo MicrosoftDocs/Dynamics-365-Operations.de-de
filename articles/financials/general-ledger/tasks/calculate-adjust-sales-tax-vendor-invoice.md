@@ -1,7 +1,7 @@
 --- 
 title: Mehrwertsteuer auf einer Kreditorenrechnung berechnen und anpassen
 description: "Wenn das ursprüngliche Quelldokument verschiedene Steuerbeträge anzeigt, können Sie diese Beträge vor dem Buchen anpassen."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman

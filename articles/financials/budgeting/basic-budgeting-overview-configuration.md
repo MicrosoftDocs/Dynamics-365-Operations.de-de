@@ -1,7 +1,7 @@
 ---
 title: "Budgetierungsüberblick"
 description: "Fast jedes Unternehmen, das Financials-Funktionalität in Microsoft Dynamics 365 for Finance and Operations verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Dynamics 365 for Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df

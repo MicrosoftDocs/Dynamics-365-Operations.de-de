@@ -1,7 +1,7 @@
 ---
 title: "Übersicht zum Abschreibungsbuchupgrade"
 description: "In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations (1611) wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als ein Buch bekannt ist. Dieses Thema bietet mehrere Dinge, die für das Upgrade zu berücksichtigen sind."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, Developer
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 221624
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39

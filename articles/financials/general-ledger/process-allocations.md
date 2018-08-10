@@ -1,7 +1,7 @@
 ---
 title: Verarbeiten von Zuteilungen
 description: "Dieser Artikel enthält Informationen zu Zuteilungen, die Optionen zu ihrer Verarbeitung in Microsoft Dynamics 365 for Finance and Operations und wie sie in der Budgetplanung verwendet werden können. Zuweisungen werden verwendet, um Beträge über mehrere Sachkontokombinationen zu verteilen. Sie unterstützen, um sicherzustellen, dass eine Ausgabe oder Umsatzerlös zum richtigen Objekt Buchhaltungsmodul in der Buchhaltung berechnet wird."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 17361
 ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023

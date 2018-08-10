@@ -1,7 +1,7 @@
 --- 
 title: "Produktnummer für vordefinierte Produktvarianten erstellen"
 description: "Diese Verfahren zeigt, wie eine Produktnummerenbezeichnung für vordefinierte Produktvarianten eingerichtet wird und sie der passenden Produktdimensionsgruppe zugeordnet werden kann."
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
@@ -9,10 +9,10 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

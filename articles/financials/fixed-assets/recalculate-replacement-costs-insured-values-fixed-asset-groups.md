@@ -1,7 +1,7 @@
 ---
 title: "Neuberechnung von Wiederbeschaffungskosten und versicherten Werten für Anlagengruppen"
 description: "Dieser Artikel beschreibt den Prozess der Aktualisierung von Wiederbeschaffungskosten und versicherten Werten für Anlagen."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
