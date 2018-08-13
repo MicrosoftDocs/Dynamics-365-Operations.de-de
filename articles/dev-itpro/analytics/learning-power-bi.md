@@ -65,5 +65,3 @@ Die folgenden Daten werden verwendet, um die Berichte im **Weiterbildungs**-Inha
 | Mitarbeitername    | Vorname, Nachname, vollständiger Name                             | Kursteilnehmer |
 | Mitarbeitertitel   | Titel- und Dienstalter                                         | Kursteilnehmer |
 
-
-

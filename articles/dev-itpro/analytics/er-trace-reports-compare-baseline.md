@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
 ms.openlocfilehash: 1a598d0bd053c60c3f8df6b05ecb7ff15addfaa3
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2018
 Sie können die Ergebnisse von ER-Formaten protokollieren, die ausgehende elektronische Dokumente erstellen. Wenn die Protokollgenerierung eingeschaltet ist (ER-Benutzerparameter **Im Debugmodus ausführen**), wird bei jeder Ausführung eines ER-Reports ein neuer Protokolldatenatz im Ausführungsprotokoll des ER-Formats erzeugt. In jeder erzeugten Protokollierung werden die folgenden Details gespeichert:
 
 - Alle Warnungen, die von Validierungsregeln generiert wurden
-- Alle Fehler, die durch Validierungsregeln generiert wurden 
+- Alle Fehler, die durch Validierungsregeln generiert wurden
 - Alle erzeugten Dateien, die als Anlagen des Protokolldatensatzes gespeichert sind.
 
 Sie können einzelne Basisanwendungsdateien für jedes ER-Format speichern. Dateien gelten als Basisdateien, wenn sie die erwarteten Ergebnisse von Berichten beschreiben, die ausgeführt werden. Wenn eine Basisdatei für ein ER-Format verfügbar ist, das bei eingeschalteter Protokollgenerierung ausgeführt wurde, speichert die Protokollierung zusätzlich zu den bereits erwähnten Details das Ergebnis des Vergleichs des erzeugten elektronischen Dokuments mit der Basisdatei. Mit einem Klick erhalten Sie auch das generierte elektronische Dokument und seine Basisdatei in einer einzigen Zip-Datei. Sie können dann einen detaillierten Vergleich durchführen, indem Sie ein externes Tool wie Windiff verwenden.

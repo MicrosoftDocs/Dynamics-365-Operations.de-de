@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 7e2a9297a417fb25384341dcabcafa41c50f8c84
 ms.contentlocale: de-de
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/22/2018
 - [Power BI-Inhalt – Übersicht Leiter der Finanzabteilung](CFO-power-bi.md)
 - [Power BI-Inhalt – Vergütung](compensation-power-bi.md)
 - [Power BI-Inhalt der Kostenrechnungsanalyse](cost-accounting-analysis-content-pack.md) 
-- [Kostenverwaltung für Power BI Inhalt](cost-management-content-pack.md)    
+- [Kostenverwaltung für Power BI Inhalt](cost-management-content-pack.md)
 - [Power BI-Inhalt – Kredit- und Inkassoverwaltung](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Power BI-Inhalt – Mitarbeiterentwicklung](employee-development-PBI.md) 
 - [Financial Insights Power BI Inhalt](financial-insights.md)
@@ -46,5 +46,5 @@ ms.lasthandoff: 05/22/2018
 - [Vertriebs-und Rentabilitätsleistungsinhalt für Power BI](sales-profitability-performance-content-pack.md)
 - [Power BI-Inhalt – Kreditorenzahlungen](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Warehouse Performance Power BI Inhalt](warehouse-power-bi-content.md)
-- [Power BI Inhalt Mitarbeitermetrik](workforce-analysis-power-bi-content-pack.md)  
+- [Power BI Inhalt Mitarbeitermetrik](workforce-analysis-power-bi-content-pack.md)
 
