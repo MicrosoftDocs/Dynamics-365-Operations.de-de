@@ -1,5 +1,5 @@
 --- 
-title: " Parameterkonfigurationen für Einzelhandelsauszüge"
+title: "Retail-Parameter konfigurieren, die sich auf Einzelhandelsauszüge auswirken"
 description: "Diese Prozedur zeigt Konfigurationen für Einzelhandelsparameter, die sich darauf auswirken, wie Einzelhandelsauszüge erstellt und gebucht werden."
 author: josaw1
 manager: AnnBe
@@ -17,29 +17,29 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c0a1f38001f90f04db2826bea60bd3854b1a0bbb
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: ff12587d8332801131d5b0cac84e0db38f8f6142
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="parameter-configurations-for-retail-statements"></a><span data-ttu-id="ea80f-103"> Parameterkonfigurationen für Einzelhandelsauszüge</span><span class="sxs-lookup"><span data-stu-id="ea80f-103">Parameter configurations for Retail statements</span></span>
+# <a name="configure-retail-parameters-that-affect-retail-statements"></a><span data-ttu-id="1bd19-103">Retail-Parameter konfigurieren, die sich auf Einzelhandelsauszüge auswirken</span><span class="sxs-lookup"><span data-stu-id="1bd19-103">Configure Retail parameters that affect retail statements</span></span>
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ea80f-104">Diese Prozedur zeigt Konfigurationen für Einzelhandelsparameter, die sich darauf auswirken, wie Einzelhandelsauszüge erstellt und gebucht werden.</span><span class="sxs-lookup"><span data-stu-id="ea80f-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="ea80f-105">Für diese Prozedur wird das Demo-Unternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="ea80f-105">This procedure uses the USRT demo company.</span></span>
+<span data-ttu-id="1bd19-104">Diese Prozedur zeigt Konfigurationen für Einzelhandelsparameter, die sich darauf auswirken, wie Einzelhandelsauszüge erstellt und gebucht werden.</span><span class="sxs-lookup"><span data-stu-id="1bd19-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="1bd19-105">Für diese Prozedur wird das Demo-Unternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="1bd19-105">This procedure uses the USRT demo company.</span></span>
 
-1. <span data-ttu-id="ea80f-106">Navigieren Sie zu "Einzelhandel und Handel" > "Hauptsitz einrichten" > "Parameter" > "Einzelhandelsparameter".</span><span class="sxs-lookup"><span data-stu-id="ea80f-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
-2. <span data-ttu-id="ea80f-107">Klicken Sie auf die Registerkarte "Buchung".</span><span class="sxs-lookup"><span data-stu-id="ea80f-107">Click the Posting tab.</span></span>
-    * <span data-ttu-id="ea80f-108">Wählen Sie "Ja" aus, wenn Sie die periodischen Rabattbeträge speziell buchen möchten.</span><span class="sxs-lookup"><span data-stu-id="ea80f-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
-    * <span data-ttu-id="ea80f-109">Wählen Sie "Standard" aus, um Standardkonten zu verwenden, oder "Periodisch", wenn Sie definieren möchten, welches Konto für jeden periodischen Rabatt zu verwenden ist.</span><span class="sxs-lookup"><span data-stu-id="ea80f-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
-    * <span data-ttu-id="ea80f-110">Wählen Sie "Zusammenfassung" aus, wenn Bestandspositionen aggregiert werden sollen, wann immer möglich.</span><span class="sxs-lookup"><span data-stu-id="ea80f-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
-    * <span data-ttu-id="ea80f-111">Wählen Sie "Ja" aus, wenn Rechnungen und Zahlungen als Teil des Auszugsbuchungsprozesses automatisch ausgeglichen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="ea80f-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
-    * <span data-ttu-id="ea80f-112">Wählen Sie "Ja" aus, wenn Ablage in Tresor-Buchungen aggregiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="ea80f-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
-    * <span data-ttu-id="ea80f-113">Wählen Sie "Ja" aus, wenn Bankeinzahlungs-Buchungen aggregiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="ea80f-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
-    * <span data-ttu-id="ea80f-114">Wählen Sie "Ja" aus, um eine Aggregation für Auszugsbuchung zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="ea80f-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
-    * <span data-ttu-id="ea80f-115">Wählen Sie "Ja" aus, um Aufträge parallel zu erstellen und zu verarbeiten, wenn Aufstellungen gebucht werden.</span><span class="sxs-lookup"><span data-stu-id="ea80f-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
-    * <span data-ttu-id="ea80f-116">Geben Sie die Höchstmenge der Aufträge ein, die in jeder Stapelverarbeitungsaufgabe bearbeitet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="ea80f-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
-3. <span data-ttu-id="ea80f-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ea80f-117">Click Save.</span></span>
+1. <span data-ttu-id="1bd19-106">Navigieren Sie zu "Einzelhandel und Handel" > "Hauptsitz einrichten" > "Parameter" > "Einzelhandelsparameter".</span><span class="sxs-lookup"><span data-stu-id="1bd19-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
+2. <span data-ttu-id="1bd19-107">Klicken Sie auf die Registerkarte "Buchung".</span><span class="sxs-lookup"><span data-stu-id="1bd19-107">Click the Posting tab.</span></span>
+    * <span data-ttu-id="1bd19-108">Wählen Sie "Ja" aus, wenn Sie die periodischen Rabattbeträge speziell buchen möchten.</span><span class="sxs-lookup"><span data-stu-id="1bd19-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
+    * <span data-ttu-id="1bd19-109">Wählen Sie "Standard" aus, um Standardkonten zu verwenden, oder "Periodisch", wenn Sie definieren möchten, welches Konto für jeden periodischen Rabatt zu verwenden ist.</span><span class="sxs-lookup"><span data-stu-id="1bd19-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
+    * <span data-ttu-id="1bd19-110">Wählen Sie "Zusammenfassung" aus, wenn Bestandspositionen aggregiert werden sollen, wann immer möglich.</span><span class="sxs-lookup"><span data-stu-id="1bd19-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
+    * <span data-ttu-id="1bd19-111">Wählen Sie "Ja" aus, wenn Rechnungen und Zahlungen als Teil des Auszugsbuchungsprozesses automatisch ausgeglichen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="1bd19-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
+    * <span data-ttu-id="1bd19-112">Wählen Sie "Ja" aus, wenn Ablage in Tresor-Buchungen aggregiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="1bd19-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="1bd19-113">Wählen Sie "Ja" aus, wenn Bankeinzahlungs-Buchungen aggregiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="1bd19-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="1bd19-114">Wählen Sie "Ja" aus, um eine Aggregation für Auszugsbuchung zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="1bd19-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
+    * <span data-ttu-id="1bd19-115">Wählen Sie "Ja" aus, um Aufträge parallel zu erstellen und zu verarbeiten, wenn Aufstellungen gebucht werden.</span><span class="sxs-lookup"><span data-stu-id="1bd19-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
+    * <span data-ttu-id="1bd19-116">Geben Sie die Höchstmenge der Aufträge ein, die in jeder Stapelverarbeitungsaufgabe bearbeitet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="1bd19-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
+3. <span data-ttu-id="1bd19-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="1bd19-117">Click Save.</span></span>
 
 

@@ -1,5 +1,5 @@
 --- 
-title: " Finanzdimensionen für Einzelhandelskanäle erstellen und Dimensionswerte in Geschäften konfigurieren"
+title: "Finanzdimensionen für Einzelhandelskanäle erstellen und Dimensionswerte in Geschäften konfigurieren"
 description: "Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen einer Einzelhandelskanalfinanzdimension mit Dimensionswerten und Schritten zum Konfigurieren von Finanzdimensionswerten für Einzelhandelsgeschäfte."
 author: jashanno
 manager: AnnBe
@@ -17,42 +17,42 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3782d5d2a43b6b22a6f5b25c806e9d4bba5999a5
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: cf32d17a36fd699141ce697d23e20b2eb5cbfa54
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a><span data-ttu-id="16569-103"> Finanzdimensionen für Einzelhandelskanäle erstellen und Dimensionswerte in Geschäften konfigurieren</span><span class="sxs-lookup"><span data-stu-id="16569-103">Create financial dimensions for Retail channels and configure dimension values on stores</span></span>
+# <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a><span data-ttu-id="e47e8-103">Finanzdimensionen für Einzelhandelskanäle erstellen und Dimensionswerte in Geschäften konfigurieren</span><span class="sxs-lookup"><span data-stu-id="e47e8-103">Create financial dimensions for retail channels and configure dimension values on stores</span></span>
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="16569-104">Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen einer Einzelhandelskanalfinanzdimension mit Dimensionswerten und Schritten zum Konfigurieren von Finanzdimensionswerten für Einzelhandelsgeschäfte.</span><span class="sxs-lookup"><span data-stu-id="16569-104">This procedure walks through creating a retail channel financial dimension with dimension values and steps to configure financial dimension values on retail stores.</span></span> <span data-ttu-id="16569-105">Das Thema umfasst keine anderen zugehörigen Schritte, wie Erstellen von Dimensionssätzen und Kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="16569-105">The topic does not include other related steps, such as creating dimension sets and account structures.</span></span> <span data-ttu-id="16569-106">Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="16569-106">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="e47e8-104">Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen einer Einzelhandelskanalfinanzdimension mit Dimensionswerten und Schritten zum Konfigurieren von Finanzdimensionswerten für Einzelhandelsgeschäfte.</span><span class="sxs-lookup"><span data-stu-id="e47e8-104">This procedure walks through creating a retail channel financial dimension with dimension values and steps to configure financial dimension values on retail stores.</span></span> <span data-ttu-id="e47e8-105">Das Thema umfasst keine anderen zugehörigen Schritte, wie Erstellen von Dimensionssätzen und Kontostrukturen.</span><span class="sxs-lookup"><span data-stu-id="e47e8-105">The topic does not include other related steps, such as creating dimension sets and account structures.</span></span> <span data-ttu-id="e47e8-106">Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="e47e8-106">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="16569-107">Wechseln Sie zu Hauptbuch >; Kontenplan > Dimensionen > Finanzdimensionen.</span><span class="sxs-lookup"><span data-stu-id="16569-107">Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.</span></span>
-2. <span data-ttu-id="16569-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="16569-108">Click New.</span></span>
-3. <span data-ttu-id="16569-109">Wählen Sie im Feld "Werte verwenden aus" die Option "Einzelhandelskanäle" aus.</span><span class="sxs-lookup"><span data-stu-id="16569-109">In the Use values from field, select 'Retail channels'.</span></span>
-4. <span data-ttu-id="16569-110">Geben Sie im Feld "Dimensionsname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="16569-110">In the Dimension name field, type a value.</span></span>
-5. <span data-ttu-id="16569-111">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="16569-111">Click Activate.</span></span>
-6. <span data-ttu-id="16569-112">Klicken Sie auf "Schließen".</span><span class="sxs-lookup"><span data-stu-id="16569-112">Click Close.</span></span>
-7. <span data-ttu-id="16569-113">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="16569-113">Click Activate.</span></span>
-8. <span data-ttu-id="16569-114">Klicken Sie auf "Dimensionswerte".</span><span class="sxs-lookup"><span data-stu-id="16569-114">Click Dimension values.</span></span>
-9. <span data-ttu-id="16569-115">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="16569-115">Close the page.</span></span>
-10. <span data-ttu-id="16569-116">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="16569-116">Click Save.</span></span>
-11. <span data-ttu-id="16569-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="16569-117">Close the page.</span></span>
-12. <span data-ttu-id="16569-118">Navigieren Sie zu Einzelhandel und Handel > Kanäle > Einzelhandelsgeschäfte > Alle Einzelhandelsgeschäfte.</span><span class="sxs-lookup"><span data-stu-id="16569-118">Go to Retail and commerce > Channels > Retail stores > All retail stores.</span></span>
-13. <span data-ttu-id="16569-119">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="16569-119">In the list, click the link in the selected row.</span></span>
-14. <span data-ttu-id="16569-120">Schalten Sie die Erweiterung des Abschnitts "Finanzdimensionen" ein/aus.</span><span class="sxs-lookup"><span data-stu-id="16569-120">Toggle the expansion of the Financial dimensions section.</span></span>
-15. <span data-ttu-id="16569-121">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="16569-121">Click Edit.</span></span>
-16. <span data-ttu-id="16569-122">Klicken Sie im Feld "Retailchannel" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="16569-122">In the Retailchannel field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="16569-123">Wählen Sie in der Liste den Dimensionswert für den Shop aus, der aktualisiert wird.</span><span class="sxs-lookup"><span data-stu-id="16569-123">In the list, find and select the dimension value for the store being updated.</span></span>
-18. <span data-ttu-id="16569-124">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="16569-124">In the list, click the link in the selected row.</span></span>
-19. <span data-ttu-id="16569-125">Klicken Sie im Feld "Kostenstelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="16569-125">In the CostCenter field, click the drop-down button to open the lookup.</span></span>
-20. <span data-ttu-id="16569-126">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="16569-126">In the list, find and select the desired record.</span></span>
-21. <span data-ttu-id="16569-127">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="16569-127">In the list, click the link in the selected row.</span></span>
-22. <span data-ttu-id="16569-128">Klicken Sie im Feld "Abteilung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="16569-128">In the Department field, click the drop-down button to open the lookup.</span></span>
-23. <span data-ttu-id="16569-129">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="16569-129">In the list, find and select the desired record.</span></span>
-24. <span data-ttu-id="16569-130">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="16569-130">In the list, click the link in the selected row.</span></span>
-25. <span data-ttu-id="16569-131">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="16569-131">Click Save.</span></span>
+1. <span data-ttu-id="e47e8-107">Wechseln Sie zu Hauptbuch >; Kontenplan > Dimensionen > Finanzdimensionen.</span><span class="sxs-lookup"><span data-stu-id="e47e8-107">Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.</span></span>
+2. <span data-ttu-id="e47e8-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="e47e8-108">Click New.</span></span>
+3. <span data-ttu-id="e47e8-109">Wählen Sie im Feld "Werte verwenden aus" die Option "Einzelhandelskanäle" aus.</span><span class="sxs-lookup"><span data-stu-id="e47e8-109">In the Use values from field, select 'Retail channels'.</span></span>
+4. <span data-ttu-id="e47e8-110">Geben Sie im Feld "Dimensionsname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e47e8-110">In the Dimension name field, type a value.</span></span>
+5. <span data-ttu-id="e47e8-111">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="e47e8-111">Click Activate.</span></span>
+6. <span data-ttu-id="e47e8-112">Klicken Sie auf "Schließen".</span><span class="sxs-lookup"><span data-stu-id="e47e8-112">Click Close.</span></span>
+7. <span data-ttu-id="e47e8-113">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="e47e8-113">Click Activate.</span></span>
+8. <span data-ttu-id="e47e8-114">Klicken Sie auf "Dimensionswerte".</span><span class="sxs-lookup"><span data-stu-id="e47e8-114">Click Dimension values.</span></span>
+9. <span data-ttu-id="e47e8-115">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="e47e8-115">Close the page.</span></span>
+10. <span data-ttu-id="e47e8-116">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="e47e8-116">Click Save.</span></span>
+11. <span data-ttu-id="e47e8-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="e47e8-117">Close the page.</span></span>
+12. <span data-ttu-id="e47e8-118">Navigieren Sie zu Einzelhandel und Handel > Kanäle > Einzelhandelsgeschäfte > Alle Einzelhandelsgeschäfte.</span><span class="sxs-lookup"><span data-stu-id="e47e8-118">Go to Retail and commerce > Channels > Retail stores > All retail stores.</span></span>
+13. <span data-ttu-id="e47e8-119">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="e47e8-119">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="e47e8-120">Schalten Sie die Erweiterung des Abschnitts "Finanzdimensionen" ein/aus.</span><span class="sxs-lookup"><span data-stu-id="e47e8-120">Toggle the expansion of the Financial dimensions section.</span></span>
+15. <span data-ttu-id="e47e8-121">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="e47e8-121">Click Edit.</span></span>
+16. <span data-ttu-id="e47e8-122">Klicken Sie im Feld "Retailchannel" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e47e8-122">In the Retailchannel field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="e47e8-123">Wählen Sie in der Liste den Dimensionswert für den Shop aus, der aktualisiert wird.</span><span class="sxs-lookup"><span data-stu-id="e47e8-123">In the list, find and select the dimension value for the store being updated.</span></span>
+18. <span data-ttu-id="e47e8-124">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="e47e8-124">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="e47e8-125">Klicken Sie im Feld "Kostenstelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e47e8-125">In the CostCenter field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="e47e8-126">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="e47e8-126">In the list, find and select the desired record.</span></span>
+21. <span data-ttu-id="e47e8-127">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="e47e8-127">In the list, click the link in the selected row.</span></span>
+22. <span data-ttu-id="e47e8-128">Klicken Sie im Feld "Abteilung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e47e8-128">In the Department field, click the drop-down button to open the lookup.</span></span>
+23. <span data-ttu-id="e47e8-129">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="e47e8-129">In the list, find and select the desired record.</span></span>
+24. <span data-ttu-id="e47e8-130">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="e47e8-130">In the list, click the link in the selected row.</span></span>
+25. <span data-ttu-id="e47e8-131">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="e47e8-131">Click Save.</span></span>
 
 
