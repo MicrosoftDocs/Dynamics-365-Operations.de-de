@@ -1,5 +1,5 @@
 --- 
-title: "Designausdrücke, um die Anwendungsklassenmethoden (ER) aufzurufen"
+title: "EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen"
 description: "Dieser Leitfaden enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fdacd852eeed33b443a3c79b96fc4c4af04bb6b2
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-expressions-to-call-application-class-methods-er"></a>Designausdrücke, um die Anwendungsklassenmethoden (ER) aufzurufen
+# <a name="design-er-expressions-to-call-application-class-methods"></a>EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -145,7 +145,7 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte in der Prozed
     * Die Überprüfungsbedingung wurde so konfiguriert, dass sie FALSE für jeden ungültigen IBAN-Code zurückgibt, indem die vorhandene Methode „verifyMOD1271_36” der Anwendungsklasse „ISO7064” aufgerufen wird. Beachten Sie, dass der Wert des IBAN-Codes dynamisch zur Laufzeit als Argument der aufrufenden Methode basierend auf dem Inhalt der analysierenden TXT-Datei definiert wird.   
 41. Klicken Sie auf „Nachricht bearbeiten”.
 42. Geben Sie im Feld „Formel” die Zeichenfolge „CONCATENATE("ungültiger IBAN-Code wurde gefunden: ", format.Root.Rows.Fields.IBAN)” ein.
-    * CONCATENATE("Ungültiger IBAN-Code wurde gefunden:  ", format.Root.Rows.Fields.IBAN)  
+    * CONCATENATE("Ungültiger IBAN-Code wurde gefunden: ", format.Root.Rows.Fields.IBAN)  
 43. Klicken Sie auf "Speichern".
 44. Schließen Sie die Seite.
 45. Klicken Sie auf "Speichern".

@@ -1,5 +1,5 @@
 ---
-title: Formeldesigner in der elektronischen Berichterstellung
+title: Formeldesigner in der elektronischen Berichterstellung (EB)
 description: In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronischen Berichterstattung (ER) verwendet wird.
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner in der elektronischen Berichterstellung
+# <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
 [!include [banner](../includes/banner.md)]
 
@@ -313,7 +313,7 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 <td>Definieren Sie die folgenden Datenquellen in Ihrer Modellzuordnung:
 <ul>
 <li><strong>CustInv</strong> (<strong>Tabellendatensätze</strong>-Typ), der auf die CustInvoiceTable-Tabelle verweist</li> 
-<li><strong>FilteredInv</strong> (<strong>Berechnetes Feld</strong>-Typ), der den Ausdruck <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong> enthält </li>
+<li><strong>FilteredInv</strong> (<strong>Berechnetes Feld</strong>-Typ), der den Ausdruck <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong> enthält</li>
 <li><strong>JourLines</strong> (<strong>Berechnetes Feld</strong>-Typ), der den gewünschten Ausdruck <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong> enthält</li>
 </ul>
 <p>Wenn Sie Ihre Modellzuordnung ausführen, um die Datenquelle <strong>JourLines</strong> aufzurufen, wird die folgende SQL-Anweisung ausgeführt:</p>
@@ -385,7 +385,7 @@ Zur Laufzeit geben die Felder <strong>Beschriftung</strong> und <strong>Beschrei
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Die folgende Abbildung zeigt das Ergebnis, wenn das entworfene Format ausgeführt wird.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>Basierend auf den Spracheinstellungen des Formats von übergeordneten DATEI- und ORDNER-Elementen, wird übersetzter Text für Beschriftungen und Beschreibungen in der Ausgabe des EB-Formats eingegeben.</blockquote>
+<blockquote>[!NOTE] Basierend auf den Spracheinstellungen des Formats von übergeordneten DATEI- und ORDNER-Elementen, wird übersetzter Text für Beschriftungen und Beschreibungen in der Ausgabe des EB-Formats eingegeben.</blockquote>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Die folgende Abbildung zeigt das Ergebnis, wenn das angepasste Format ausgeführt wird.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>Die Begrenzung wird nicht auf den letzten Artikel der ursprünglichen Liste angewendet, weil der Wert (11) der Begrenzungsquelle (Gewicht) die definierte Begrenzung (9) überschreitet. Verwenden Sie entweder die Funktion <strong>WO</strong> oder den Ausdruck <strong>Aktiviert</strong> des entsprechenden Formatelements, um Unterlisten während der Berichtgenerierung, nach Bedarf, zu ignorieren (zu überspringen).</blockquote>
+<blockquote>[!NOTE] Die Begrenzung wird nicht auf den letzten Artikel der ursprünglichen Liste angewendet, weil der Wert (11) der Begrenzungsquelle (Gewicht) die definierte Begrenzung (9) überschreitet. Verwenden Sie entweder die Funktion <strong>WO</strong> oder den Ausdruck <strong>Aktiviert</strong> des entsprechenden Formatelements, um Unterlisten während der Berichtgenerierung, nach Bedarf, zu ignorieren (zu überspringen).</blockquote>
 </td>
 </tr>
 <tr>
@@ -455,9 +455,9 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 | LEISTUNG (Zahl, Leistung) | Gibt das Ergebnis der angehobenen spezifischen positiven Zahl der angegebenen Leistung zurück. | **LEISTUNG (10, 2)** gibt **100** zurück. |
 | ZAHLENWERT (Zeichenfolge, Dezimaltrennzeichen, Zifferngruppierungstrennzeichen) | Konvertiert die angegebene Zeichenfolge zu einer Nummer. Das angegebene Dezimaltrennzeichen wird zwischen der ganzen Zahl und den Bruchteilen einer Dezimalzahl verwendet. Das angegebene Zifferngruppierungstrennzeichen wird als Tausendertrennzeichen verwendet. | **ZAHLENWERT ("1234,56 ", ",", " ")** gibt den Wert **1234.56** zurück. |
 | WERT (Zeichenfolge) | Konvertiert die angegebene Zeichenfolge zu einer Nummer. Kommas und Punktzeichen (.) gelten als Dezimaltrennzeichen und es wird ein führender Bindestrich (-) als ein negatives Vorzeichen verwendet. Löst eine Ausnahme aus, wenn die angegebene Zeichenfolge andere nichtnumerische Zeichen enthält. | **WERT ("1 "234,56 ")** löst eine Ausnahme aus. |
-| RUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen gerundet wurde:<ul><li>Wenn der Wert des **Dezimalstellen**parameters größer als 0 (null) ist, wird die angegebene Zahl auf genau so viele Dezimalstellen gerundet.</li><li>Wenn der Wert des **Dezimalstellen**parameters **0** (null) ist, wird die angegebene Zahl auf die nächste ganze Zahl gerundet.</li><li>Wenn der Wert des **Dezimalstellen**parameters kleiner als 0 (null) ist, wir die angegebene Zahl links der Dezimalstelle gerundet.</li></ul> | **RUNDUNG (1200.767, 2)** Rundet auf zwei Dezimalstellen und gibt den Wert **1200.77** zurück.. **RUNDUNG (1200.767, -3)** Rundet auf das nächste Vielfache von 1,000 und gibt den Wert **1000** zurück. |
-| ABRUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen abgerundet wurde.<blockquote>[!NOTE]<br>Diese Funktion verhält sich wie **RUNDUNG**, rundet die angegebene Zahl aber immer ab (in Richtung null).</blockquote> | **ABRUNDUNG (1200.767, 2)** Rundet auf zwei Dezimalstellen ab und gibt den Wert **1200.76** zurück. **ABRUNDUNG (1700.767, -3)** Rundet auf das nächste Vielfache von 1,000 ab und gibt den Wert **1000** zurück. |
-| AUFRUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen aufgerundet wurde.<blockquote>[!NOTE]<br>Diese Funktion verhält sich wie **RUNDUNG**, rundet die angegebene Zahl aber immer auf (weg von null).</blockquote> | **AUFRUNDUNG (1200.763, 2)** Rundet auf zwei Dezimalstellen auf und gibt den Wert **1200.77** zurück. **-AUFRUNDUNG (1200.767, -3)** Rundet auf das nächste Vielfache von 1,000 auf und gibt den Wert **2000** zurück. |
+| RUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen gerundet wurde:<ul><li>Wenn der Wert des **Dezimalstellen**-Parameters größer als 0 (null) ist, wird die angegebene Zahl auf genau so viele Dezimalstellen gerundet.</li><li>Wenn der Wert des **Dezimalstellen**-Parameters **0** (null) ist, wird die angegebene Zahl auf die nächste ganze Zahl gerundet.</li><li>Wenn der Wert des **Dezimalstellen**-Parameters kleiner als 0 (null) ist, wir die angegebene Zahl links der Dezimalstelle gerundet.</li></ul> | **RUNDUNG (1200.767, 2)** Rundet auf zwei Dezimalstellen und gibt den Wert **1200.77** zurück.. **RUNDUNG (1200.767, -3)** Rundet auf das nächste Vielfache von 1,000 und gibt den Wert **1000** zurück. |
+| ABRUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen abgerundet wurde.<blockquote>[!NOTE] Diese Funktion verhält sich wie **RUNDUNG**, rundet die angegebene Zahl aber immer ab (in Richtung null).</blockquote> | **ABRUNDUNG (1200.767, 2)** Rundet auf zwei Dezimalstellen ab und gibt den Wert **1200.76** zurück. **ABRUNDUNG (1700.767, -3)** Rundet auf das nächste Vielfache von 1,000 ab und gibt den Wert **1000** zurück. |
+| AUFRUNDEN (Zahl, Dezimalen) | Gibt die angegebene Zahl zurück, nachdem sie auf die angegebene Zahl von Dezimalstellen aufgerundet wurde.<blockquote>[!NOTE] Diese Funktion verhält sich wie **RUNDUNG**, rundet die angegebene Zahl aber immer auf (weg von null).</blockquote> | **AUFRUNDUNG (1200.763, 2)** Rundet auf zwei Dezimalstellen auf und gibt den Wert **1200.77** zurück. **-AUFRUNDUNG (1200.767, -3)** Rundet auf das nächste Vielfache von 1,000 auf und gibt den Wert **2000** zurück. |
 
 ### <a name="data-conversion-functions"></a>Datenumwandlungsfunktionen
 
@@ -474,8 +474,8 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 
 | Funktion | Beschreibung | Beispiel |
 |----------|-------------|---------|
-| NULLCONTAINER (Liste) | Gibt einen **NULL**-Datensatz zurück, der die gleiche Struktur beinhaltet, wie die angegebene Datensatzliste oder Datensatz.<blockquote>[!NOTE]<br>Diese Funktion ist veraltet. Verwenden Sie stattdessen **EMPTYRECORD**.</blockquote> | **NULLCONTAINER (TEILEN ("abc", 1))** gibt einen neuen leeren Datensatz zurück, der dieselbe Struktur wie die Liste beinhaltet, die durch Funktion **TEILEN** zurückgegeben wird. |
-| LEERER DATENSATZLIST (Datensatz) | Gibt einen **NULL**-Datensatz zurück, der die gleiche Struktur beinhaltet, wie die angegebene Datensatzliste oder Datensatz.<blockquote>[!NOTE]<br>Ein Datensatz **NULL** ist ein Datensatz, in dem alle Felder einen leeren Wert haben. Ein leerer Wert ist **0** (null) für Zahlen, eine leere Zeichenfolge für Zeichenfolgen usw.</blockquote> | **LEERER DATENSATZ (TEILEN ("abc", 1))** gibt einen neuen leeren Datensatz zurück, der dieselbe Struktur wie die Liste beinhaltet, die durch Funktion **TEILEN** zurückgegeben wird. |
+| NULLCONTAINER (Liste) | Gibt einen **NULL**-Datensatz zurück, der die gleiche Struktur beinhaltet, wie die angegebene Datensatzliste oder Datensatz.<blockquote>[!NOTE] Diese Funktion ist veraltet. Verwenden Sie stattdessen **EMPTYRECORD**.</blockquote> | **NULLCONTAINER (TEILEN ("abc", 1))** gibt einen neuen leeren Datensatz zurück, der dieselbe Struktur wie die Liste beinhaltet, die durch Funktion **TEILEN** zurückgegeben wird. |
+| LEERER DATENSATZLIST (Datensatz) | Gibt einen **NULL**-Datensatz zurück, der die gleiche Struktur beinhaltet, wie die angegebene Datensatzliste oder Datensatz.<blockquote>[!NOTE] Ein Datensatz **NULL** ist ein Datensatz, in dem alle Felder einen leeren Wert haben. Ein leerer Wert ist **0** (null) für Zahlen, eine leere Zeichenfolge für Zeichenfolgen usw.</blockquote> | **LEERER DATENSATZ (TEILEN ("abc", 1))** gibt einen neuen leeren Datensatz zurück, der dieselbe Struktur wie die Liste beinhaltet, die durch Funktion **TEILEN** zurückgegeben wird. |
 
 ### <a name="text-functions"></a>Textfunktionen
 
@@ -522,14 +522,14 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 <td>CHAR (Nummer)</td>
 <td>Gibt die Zeichenfolge von Zeichen zurück, die von der angegebene Unicode-Zahl angegeben wird.</td>
 <td><strong>CHAR (255)</strong> gibt <strong>&quot;Ÿ&quot;</strong> zurück.
-<blockquote>[!NOTE]<br>Die Zeichenfolge, die diese Funktion zurück gibt, hängt von der Codierung ab, die im übergeordneten DATEI-Formatelement ausgewählt ist. Die Liste unterstützter Codierungen finden Sie unter <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Codierungsklasse</a>.</blockquote>
+<blockquote>[!NOTE] Die Zeichenfolge, die diese Funktion zurück gibt, hängt von der Codierung ab, die im übergeordneten DATEI-Formatelement ausgewählt ist. Die Liste unterstützter Codierungen finden Sie unter <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Codierungsklasse</a>.</blockquote>
 </td>
 </tr>
 <tr>
 <td>VERKETTEN (Zeichenfolge 1, [, Zeichenfolge 2, ...])</td>
 <td>Gibt alle angegebenen Textzeichenfolgen zurück, nachdem sie zu einer Zeichenfolge verknüpft wurden.</td>
 <td><strong>VERKETTEN (&quot;ABC&quot;, &quot;def&quot;)</strong> gibt <strong>&quot;abcdef&quot;</strong> zurück.
-<blockquote>[!NOTE]<br>Der Ausdruck <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> gibt auch <strong>&quot;abcdef&quot;</strong> zurück.</blockquote>
+<blockquote>[!NOTE] Der Ausdruck <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> gibt auch <strong>&quot;abcdef&quot;</strong> zurück.</blockquote>
 </td>
 </tr>
 <tr>
@@ -571,7 +571,7 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 <p>&quot;Nichts zu drucken. Debitor Litware Retail wird auf 12/17/2015&quot; beendet.</p>
 <p>Wenn derselbe Bericht für den Kunden <strong>Litware Retail</strong> am 17. Dezember 2015 in der <strong>DE</strong>-Kultur und in der <strong>DE</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der ein anderes Datumsformat verwendet:</p>
 <p>&quot;Nichts-zu drucken. Schuldner-"Litware Einzelhandel" wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>Die folgende Syntax wird in EB-Formeln für Beschriftungen angewendet:
+<blockquote>[!NOTE] Die folgende Syntax wird in EB-Formeln für Beschriftungen angewendet:
 <ul>
 <li><strong>Für Beschriftungen aus Finance and Operations-Ressourcen:</strong> <strong>@&quot;X&quot;</strong>, wobei X die Beschriftungs-ID im Application Object Tree (AOT) ist</li>
 <li><strong>Für Beschriftungen, die sich in ER-Konfigurationen befinden:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, wobei X die Beschriftungs-ID in der ER-Konfiguration ist</li>
@@ -587,7 +587,7 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 <tr>
 <td>NUMERALSTOTEXT (Nummer, Sprache, Währung, Drucktwährungsnamenmarkierung, Dezimaltrennzeichen)</td>
 <td>Gibt die angegebene Zahl zurück, nachdem sie (konvertiert in Textzeichenfolgen) in der angegebenen Sprache formuliert wurde. Der Sprachcode ist optional. Wenn es als leere Zeichenfolge definiert ist, wird stattdessen der Sprachcode für den ausgeführten Kontext verwendet. (Der Sprachcode für den ausgeführten Kontext wird für einen generierenden Ordner oder Datei definiert.) Der Währungscode ist auch optional. Wenn dieser als leere Zeichenfolge definiert ist, wird die Unternehmenswährung verwendet.
-<blockquote>[!NOTE]<br>Die Parameter für <strong>Druckwährungsnamen-Kennzeichen</strong> und <strong>Dezimalstellen</strong> werden nur für die folgenden Sprachcodes analysiert: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> und <strong>RU</strong>. Darüber hinaus wird der <strong>Druckwährungsnamen-Kennzeichen</strong>parameter nur für Finance and Operations-Unternehmen analysiert, bei denen der Landes- oder Regionenkontext die Deklination von Währungsnamen unterstützt.</blockquote>
+<blockquote>[!NOTE] Die Parameter für <strong>Druckwährungsnamen-Kennzeichen</strong> und <strong>Dezimalstellen</strong> werden nur für die folgenden Sprachcodes analysiert: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> und <strong>RU</strong>. Darüber hinaus wird der <strong>Druckwährungsnamen-Kennzeichen</strong>-Parameter nur für Finance and Operations-Unternehmen analysiert, bei denen der Landes- oder Regionenkontext die Deklination von Währungsnamen unterstützt.</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> gibt <strong>&quot;Eintausendzweihundertvierunddreißig und 56&quot;</strong> zurück. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> gibt <strong>&quot;Sto dwadzieścia&quot;</strong> zurück. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> gibt <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong> zurück.</td>
 </tr>
@@ -656,10 +656,10 @@ Wenn diese Datenquellen definiert sind, können Sie einen Ausdruck wie <strong>F
 | Funktion | Beschreibung | Beispiel |
 |----------|-------------|---------|
 | CONVERTCURRENCY (Betrag, Quellwährung, Zielwährung, Datum, Unternehmen) | Konvertiert den angegebenen Geldbetrag aus der angegebenen Quellwährung in die angegebene Zielwährung, indem die Einstellungen des angegebenen Finance and Operations-Unternehmens am angegebenen Datum verwendet werden. | **CONVERTCURRENCY (1, "EUR", "USD", HEUTE (), "DEMF")** gibt die Entsprechung von einem Euro in US Dollar am Datum der aktuellen Sitzung, auf den Einstellungen für das DEMF-Unternehmen zurück. |
-| ROUNDAMOUNT (Anzahl, Dezimalstellen, Rundungsregel) | Rundet den angegebenen Betrag auf die angegebene Zahl von Dezimalstellen gemäß der angegebenen Rundungsregel.<blockquote>[!NOTE]<br>Die Rundenregel muss als Wert der **RoundOffType**-Aufzählung von Finance and Operations angegeben werden.</blockquote> | Wenn der Parameter **model.RoundOff** auf **Abwärts** festgelegt ist, gibt **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** den Wert **1000.78** zurück. Wenn der **model.RoundOff**-Parameter entweder auf **Normal** oder **Aufrunden** **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** festgelegt wird, wird der Wert **1000.79** zurückgegeben. |
+| ROUNDAMOUNT (Anzahl, Dezimalstellen, Rundungsregel) | Rundet den angegebenen Betrag auf die angegebene Zahl von Dezimalstellen gemäß der angegebenen Rundungsregel.<blockquote>[!NOTE] Die Rundenregel muss als Wert der **RoundOffType**-Aufzählung von Finance and Operations angegeben werden.</blockquote> | Wenn der Parameter **model.RoundOff** auf **Abwärts** festgelegt ist, gibt **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** den Wert **1000.78** zurück. Wenn der **model.RoundOff**-Parameter entweder auf **Normal** oder **Aufrunden** **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** festgelegt wird, wird der Wert **1000.79** zurückgegeben. |
 | CURCredRef (Ziffern) | Gibt eine Gläubigerreferenz basierend auf den Ziffern der angegebenen Rechnungsnummer zurück. | **CURCredRef ("VEND-200002")** gibt **"2200002"** zurück. |
 | MOD\_97 (Ziffern) | Gibt eine Gläubigerreferenz als MOD97 Ausdruck zurück, basierend auf den Ziffern der angegebenen Rechnungsnummer. | **MOD\_97 ("VEND-200002")** gibt **"20000285"** zurück. |
-| ISOCredRef (Ziffern) | Gibt eine Gläubigerreferenz der Internationale Organisation für Normung (ISO) basierend auf den Ziffern und alphabetischen Symbolen der angegebenen Rechnungsnummer zurück.<blockquote>[!NOTE]<br>Um Symbole aus Alphabeten zu entfernen, die nicht ISO-kompatibel sind, muss der Eingabeparameter übersetzt werden, bevor er an diese Funktion übergeben wird.</blockquote> | **ISOCredRef ("VEND-200002")** gibt **"RF23VEND-200002"** zurück. |
+| ISOCredRef (Ziffern) | Gibt eine Gläubigerreferenz der Internationale Organisation für Normung (ISO) basierend auf den Ziffern und alphabetischen Symbolen der angegebenen Rechnungsnummer zurück.<blockquote>[!NOTE] Um Symbole aus Alphabeten zu entfernen, die nicht ISO-kompatibel sind, muss der Eingabeparameter übersetzt werden, bevor er an diese Funktion übergeben wird.</blockquote> | **ISOCredRef ("VEND-200002")** gibt **"RF23VEND-200002"** zurück. |
 | CN\_GBT\_AdditionalDimensionID (Zeichenfolge, Zahl) | Ruft die angegebene zusätzliche Finanzdimensions-ID ab. Im Parameter **Zeichenfolge** werden Dimensionen als IDs dargestellt, die durch Kommas getrennt sind. Der Parameter **Zahl** definiert den Sequenzcode der gewünschten Dimension in der Zeichenfolge. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** gibt **"CC"** zurück. |
 | GetCurrentCompany () | Gibt die Textdarstellung des Codes für die juristische Person (Unternehmen) zurück, bei dem ein Benutzer derzeit angemeldet ist. | **GETCURRENTCOMPANY ()** gibt **USMF** für einen Benutzer zurück, der beim Unternehmen **Contoso Entertainment System USA** in Finance and Operations angemeldet ist. |
 | CH\_BANK\_MOD\_10 (Stellen) | Gibt eine Gläubigerreferenz als MOD10-Ausdruck zurück, basierend auf den Ziffern der angegebenen Rechnungsnummer. | **CH\_BANK\_MOD\_10 ("VEND-200002")** gibt **3** zurück. |

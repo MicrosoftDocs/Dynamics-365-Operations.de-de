@@ -1,5 +1,5 @@
 ---
-title: "Konfigurieren einer parallelen Aktivität in einem Workflow"
+title: "Konfigurieren paralleler Aktivitäten in einem Workflow"
 description: "Führen Sie im Workflow-Editor die folgenden Schritte aus, um eine parallele Aktivität zu konfigurieren."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec1c1d8abc49deb8ef16322370c59d40b01d344c
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurieren einer parallelen Aktivität in einem Workflow
+# <a name="configure-parallel-activities-in-a-workflow"></a>Konfigurieren paralleler Aktivitäten in einem Workflow
 
 [!include [banner](../includes/banner.md)]
 

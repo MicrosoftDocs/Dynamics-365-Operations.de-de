@@ -1,5 +1,5 @@
 ---
-title: Definieren und Verwalten von Kanal-Clients, Kassen und Hardwarestationen
+title: "Peripheriegeräte mit der Verkaufsstelle (POS) verbinden"
 description: "Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden."
 author: rubencdelgado
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: efce1a6f8b87cbaebcf4436e33e832d49a040329
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 9952ece965f467a19c911219382da00dd25a29e7
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definieren und Verwalten von Kanal-Clients, Kassen und Hardwarestationen
+# <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Peripheriegeräte mit der Verkaufsstelle (POS) verbinden
 
 [!include [banner](includes/banner.md)]
 
@@ -76,7 +76,7 @@ Um MPOS mit POS-Peripheriegeräte in einem herkömmlichen, festen POS-Szenario z
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS oder Cloud POS mit eigenständiger Hardwarestation
 [![Freigegebene Peripheriegeräte](./media/shared-300x254.png)](./media/shared.png)
 
-In diesem Szenario ist eine eigenständige Hardwarestation für MPO- und Cloud POS-Kunden freigegeben. Dieses Szenario erfordert die Erstellung eines Hardwarestationsprofils zum Spezifizieren des Download-Pakets, des Ports und des Hardwareprofils, das die Hardwarestation verwendet. Sie können die Hardwarestationsprofile unter **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationsprofile** finden. Nachdem Sie das Hardwarestationsprofil erstellt haben, navigieren Sie zum entsprechenden Einzelhandelskanal (**Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**), und fügen Sie eine neue Hardwarestation hinzu. Weisen Sie diese neue Hardwarestation dem Hardwarestationsprofil zu, das zuvor erstellt wurde. Als Nächstes erstellen Sie eine Beschreibung, die dem Kassierer hilft, die Hardwarestation zu identifizieren. Geben Sie im Feld **Hostname** die URL des Host-Computers im folgenden Format ein: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Ersetzen Sie **&lt;MachineName:Port&gt;** mit dem tatsächlichen Maschinennamen der Hardwarestation und der Anschluss, der im Hardwarestationsprofil angegeben ist). Eine eigenständige sollten Sie die Hardwarestation (EFT)- Terminal Kennung für elektronische Überweisungen auch angeben Dieser Wert gibt den EFT-Terminal an, der mit der Hardwarestation verbunden ist, wenn der Zahlung-Connector mit dem Zahlungsanbieter kommuniziert. Anschließend wechseln Sie vom tatsächlichen Hardwarestationsgerät zum Kanal und wählen die Hardwarestation aus. Klicken Sie dann auf **Herunterladen** und installieren Sie die Hardwarestation. Als nächstes führen Sie aus MPOS oder Cloud POS den Vorgang **Hardwarestation auswählen** aus, um die zuvor installierte Hardwarestation auszuwählen. Wählen Sie **Koppeln**, um eine sichere Beziehung zwischen dem POS und der Hardware einzurichten. Dieser Schritt muss einmal für jede Kombination von einem POS und einer Hardwarestation abgeschlossen werden. Nachdem die Hardwarestation gekoppelt wurde, wird derselbe Vorgang verwendet, um die Hardwarestation zu aktivieren. Für dieses Szenario sollte das Hardwareprofil dem Hardwarestationsprofil zugewiesen werden und nicht dem  Register selbst. Wenn aus einem bestimmten Grund eine Hardwarestation kein direkt zugewiesenes Hardwareprofil enthält, wird das Hardwareprofil, das dem Register zugewiesen, verwendet
+In diesem Szenario ist eine eigenständige Hardwarestation für MPO- und Cloud POS-Kunden freigegeben. Dieses Szenario erfordert die Erstellung eines Hardwarestationsprofils zum Spezifizieren des Download-Pakets, des Ports und des Hardwareprofils, das die Hardwarestation verwendet. Sie können die Hardwarestationsprofile unter **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwarestationsprofile** finden. Nachdem Sie das Hardwarestationsprofil erstellt haben, navigieren Sie zum entsprechenden Einzelhandelskanal (**Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**), und fügen Sie eine neue Hardwarestation hinzu. Weisen Sie diese neue Hardwarestation dem Hardwarestationsprofil zu, das zuvor erstellt wurde. Als Nächstes erstellen Sie eine Beschreibung, die dem Kassierer hilft, die Hardwarestation zu identifizieren. Geben Sie im Feld **Hostname** die URL des Host-Computers im folgenden Format ein: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Ersetzen Sie **&lt;MachineName:Port&gt;** mit dem tatsächlichen Maschinennamen der Hardwarestation und der Anschluss, der im Hardwarestationsprofil angegeben ist). Eine eigenständige sollten Sie die Hardwarestation (EFT)- Terminal Kennung für elektronische Überweisungen auch angeben Dieser Wert gibt den EFT-Terminal an, der mit der Hardwarestation verbunden ist, wenn der Zahlung-Connector mit dem Zahlungsanbieter kommuniziert. Anschließend wechseln Sie vom tatsächlichen Hardwarestationsgerät zum Kanal und wählen die Hardwarestation aus. Klicken Sie dann auf **Herunterladen** und installieren Sie die Hardwarestation. Als nächstes führen Sie aus MPOS oder Cloud POS den Vorgang **Hardwarestation auswählen** aus, um die zuvor installierte Hardwarestation auszuwählen. Wählen Sie **Koppeln**, um eine sichere Beziehung zwischen dem POS und der Hardware einzurichten. Dieser Schritt muss einmal für jede Kombination von einem POS und einer Hardwarestation abgeschlossen werden. Nachdem die Hardwarestation gekoppelt wurde, wird derselbe Vorgang verwendet, um die Hardwarestation zu aktivieren. Für dieses Szenario sollte das Hardwareprofil dem Hardwarestationsprofil zugewiesen werden und nicht dem Register selbst. Wenn aus einem bestimmten Grund eine Hardwarestation kein direkt zugewiesenes Hardwareprofil enthält, wird das Hardwareprofil, das dem Register zugewiesen, verwendet
 
 ## <a name="client-maintenance"></a>Client-Wartung
 ### <a name="registers"></a>Register
@@ -113,7 +113,7 @@ Das Funktionsprofil wird auf der Shopebene festgelegt. Wird verwendet, um Shop �
     -   Zulässige maximale und minimale Preise.
     -   Anwendung und Berechnung von Rabatten.
 -   **Infocodes**-Inforegister:
-    -   Alle Aspekte wie Infocodes werden am POS verwaltet. Details finden Sie unter [Infocodes ](info-codes-retail.md)
+    -   Alle Aspekte wie Infocodes werden am POS verwaltet. Details finden Sie unter [Infocodes](info-codes-retail.md)
 -   **Bonnummerierung**-Inforegister:
     -   Spezifizieren Sie Bonnummerierungsmasken, die Segmente der Shopnummer, Terminalnummer, Konstanten enthalten können, und ob Verkäufe, Retouren, Aufträge und Anmerkungen in separaten Reihenfolgen oder alle in derselben Reihenfolge gedruckt werden.
 

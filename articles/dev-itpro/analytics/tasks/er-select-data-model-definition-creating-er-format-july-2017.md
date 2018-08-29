@@ -1,5 +1,5 @@
 --- 
-title: "Auswählen einer Datenmodelldefinition beim Erstellen eines Formats für elektronische Berichterstellung (ER)"
+title: "Datenmodelldefinitionen beim Erstellen von Formaten auswählen"
 description: "Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter \"Konfigurationsanbieter erstellen und als aktiv markieren\" abschließen."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 70d928b0f0807731a5f96ef5497fb6060fbfebf5
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: dc357db8acbdb98741a694a8a9d3c0c0625c50e4
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a>Auswählen einer Datenmodelldefinition beim Erstellen eines Formats für elektronische Berichterstellung (ER)
+# <a name="select-data-model-definitions-when-you-create-formats"></a>Datenmodelldefinitionen beim Erstellen von Formaten auswählen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -33,7 +33,7 @@ Dieses Verfahren zeigt, wie Stammartikel eines Modells als Datenmodelldefinition
 Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie einen Datensatz verwenden.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
+    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  
 2. Klicken Sie auf "Berichterstellungskonfigurationen".
 
 ## <a name="add-a-new-er-data-model-configuration"></a>Neue ER-Daten-Modellkonfiguration hinzufügen

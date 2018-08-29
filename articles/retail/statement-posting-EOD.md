@@ -1,5 +1,5 @@
 ---
-title: Verbesserungen der Auszugsbuchung
+title: "Verbesserungen der Auszugsbuchungsfunktionalität"
 description: In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden.
 author: josaw1
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 4961ee7fcc56af0646e421c9e040e2129cc322c4
-ms.openlocfilehash: e6d6ede65764c0b35c9ce0985af0d9f2cd6653c0
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: d428da2a6fb8ce5d63c3373def879c9b32cfd492
 ms.contentlocale: de-de
-ms.lasthandoff: 06/12/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="improvements-to-statement-posting"></a>Verbesserungen der Auszugsbuchung
+# <a name="improvements-to-statement-posting-functionality"></a>Verbesserungen der Auszugsbuchungsfunktionalität
 
 [!include[banner](includes/banner.md)]
 
@@ -55,7 +55,7 @@ Als Teil der Verbesserungen der Auszugsbuchungsfunktion wurden drei neue Paramet
 
     Die Funktion zur Verbuchung von Vorversion-Auszügen reserviert den Bestand immer während der Auszugsberechnung (wenn die Reservierung nicht bereits über den Batch-Job **Lager buchen** durchgeführt wurde), unabhängig von der Einstellung dieser Option.
 
-- **Deaktivieren der Zählung erforderlich** - Wenn diese Option auf **Ja** gesetzt ist, wird der Buchungsprozess für eine Auszug fortgesetzt, auch wenn die Differenz zwischen dem gezählten Betrag und dem Transaktionsbetrag auf dem Auszug außerhalb der Schwelle liegt, die auf der FastTab **Inforegister**für Einzelhandelsgeschäfte definiert ist.
+- **Deaktivieren der Zählung erforderlich** - Wenn diese Option auf **Ja** gesetzt ist, wird der Buchungsprozess für eine Auszug fortgesetzt, auch wenn die Differenz zwischen dem gezählten Betrag und dem Transaktionsbetrag auf dem Auszug außerhalb der Schwelle liegt, die auf der FastTab **Inforegister** für Einzelhandelsgeschäfte definiert ist.
 
 Zusätzlich wurde das Feld **Maximale Anzahl paralleler Auszugsbuchungen** auf dem Inforegister **Stapelverarbeitung** eingeführt. Dieses Feld definiert die Anzahl der Stapelaufgaben, die gleichzeitig ausgeführt werden sollen. Derzeit müssen Sie den Wert dieses Feldes manuell setzen.
 

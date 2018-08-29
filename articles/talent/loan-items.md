@@ -1,5 +1,5 @@
 ---
-title: "Verwalten von Artikeln, die an Arbeitskräfte ausgeliehen werden"
+title: "Artikel verwalten, die an Arbeitskräfte ausgeliehen werden"
 description: "Ausleihartikel sind Datensätze, die Managern helfen, die physischen Artikel zu verfolgen, die Ihr Unternehmen an Arbeitskräfte ausleiht."
 author: kherr75
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fe8d8812aaa78c7b5558615f586940488f2dc1b2
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 6c22e85360c3e6e40e0338960866b96d66a0ba50
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="manage-items-lent-to-workers"></a>Verwalten von Artikeln, die an Arbeitskräfte ausgeliehen werden
+# <a name="manage-items-that-are-lent-to-workers"></a>Artikel verwalten, die an Arbeitskräfte ausgeliehen werden
 
 [!include [banner](includes/banner.md)]
 

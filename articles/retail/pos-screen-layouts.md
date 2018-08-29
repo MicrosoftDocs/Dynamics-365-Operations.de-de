@@ -1,5 +1,5 @@
 ---
-title: "Konfigurieren von Bildschirmlayouts für POS"
+title: "Bildschirmlayouts für die Verkaufsstelle (POS)"
 description: "Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Retail -POS-Erfahrungen."
 author: jblucher
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e6d5cb4c5744f843ea2b877103f55f327d371eee
-ms.openlocfilehash: e8606c149db4e821bed02d28c607546ec6ce6956
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
 ms.contentlocale: de-de
-ms.lasthandoff: 06/23/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="configure-screen-layouts-for-pos"></a>Konfigurieren von Bildschirmlayouts für POS
+# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Bildschirmlayouts für die Verkaufsstelle (POS)
 
 [!include [banner](includes/banner.md)]
 
@@ -55,7 +55,7 @@ Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die 
 - **Anwendungshintergrund**- Sie können einen Hintergrund in der gesamten Anwendung anstelle der ausgefüllten Themenfarbe definieren. Für den Anmelde-Hintergrund sollte die Dateigröße so gering wie möglich gehalten werden.
 
 ## <a name="screen-layouts"></a>Bildschirmlayouts
-Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzierung von Benutzeroberflächen-Steuerelementen im POS-Begrüßungsbildschirm- und -**Buchungs**bildschirm.
+Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzierung von Benutzeroberflächen-Steuerelementen im POS-Begrüßungsbildschirm- und -**Buchungs**-Bildschirm.
 
 ![POS-Bildschirmlayout anzeigen](../retail/media/POS-Screen-Layout-View.png)
 
@@ -95,7 +95,7 @@ Die POS-Anwendung wählt automatisch die nächste Layoutgröße für das Gerät 
 ![POS-Layoutgrößen](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Schaltflächenraster
-Für jede Layoutgröße in einem Bildschirmlayout können Sie den POS-Begrüßungsbildschirm und den **Buchungs**bildschirm konfigurieren und zuweisen. Schaltflächenraster für den Begrüßungsbildschirm werden automatisch von links nach rechts, von der niedrigsten Nummer (Begrüßungsbildschirm 1) zur höchsten Nummer angezeigt.
+Für jede Layoutgröße in einem Bildschirmlayout können Sie den POS-Begrüßungsbildschirm und den Bildschirm **Buchung** konfigurieren und zuweisen. Schaltflächenraster für den Begrüßungsbildschirm werden automatisch von links nach rechts, von der niedrigsten Nummer (Begrüßungsbildschirm 1) zur höchsten Nummer angezeigt.
 
 Im vollständig POS-Layout wird die Position der Schaltflächenraster im Bildschirmlayoutdesigner angegeben.
 
@@ -179,7 +179,7 @@ Mit dem Schaltflächenrasterdesigner können Sie Schaltflächenraster konfiguri
     - **Benutzerdefiniertes Thema** – POS-Schaltflächen verwenden standardmäßig die Akzentfarbe des visuellen Profils. Wenn Sie das Kontrollkästchen **Benutzerdefiniertes Design verwenden** aktivieren, können Sie ggf. zusätzliche Farben angeben.
 
         > [!NOTE]
-        > Retail Modern POS und Cloud POS nutzen nur die  **Hintergrundfarbe** und die **Schriftfarbe**.
+        > Retail Modern POS und Cloud POS nutzen nur die **Hintergrundfarbe** und die **Schriftfarbe**.
 
     - **Schaltflächensymbol** – Symbole können Schaltflächen oder Bilder einschließen. Wählen Sie eines der verfügbaren Bilder aus, die als **Einzelhandel \> Kanaleinstellung \> POS-Einstellung \> POS \> Bilder** angegeben werden.
 

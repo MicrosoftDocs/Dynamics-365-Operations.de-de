@@ -1,5 +1,5 @@
 ---
-title: "Wählen Sie zwischen modernem POS und Cloud POS"
+title: "Zwischen Retail Modern POS (MPOS) und Cloud POS wählen"
 description: "In diesem Thema werden die modernem wesentlichen Unterschiede zwischen Retail Modern POS und Cloud POS erklärt. Außerdem werden verschiedene Faktoren beschrieben, die bei Einzelhändlern, die Microsoft Dynamics 365 for Retail implementieren müssen, vorhanden sein müssen, um die beste Wahl für die Anforderungen zu treffen."
 author: jblucher
 manager: AnnBe
@@ -19,18 +19,18 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7eb15f9f73f4773d98160e1b0ec5ce74c159cdea
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: aff9485789a3c7cedcea1a66e233603332c143b2
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="choose-between-modern-pos-and-cloud-pos"></a>Wählen Sie zwischen modernem POS und Cloud POS
+# <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Zwischen Retail Modern POS (MPOS) und Cloud POS wählen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema gibt Implementierer zusätzlichen Hintergrund, Tips und Orientierungshilfe für Faktoren, die sie berücksichtigen sollen, wenn sie Microsoft Dynamics 365 for Retail bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können  Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
+Dieses Thema gibt Implementierer zusätzlichen Hintergrund, Tips und Orientierungshilfe für Faktoren, die sie berücksichtigen sollen, wenn sie Microsoft Dynamics 365 for Retail bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
 
 ## <a name="insights"></a>Einblicke
 Retail bietet eine breite Palette von Bereitstellungs- und Topologieoptionen. Daher können Einzelhändler die Komponenten und die gewünschte Konfiguration auswählen, die in ihrer Geschäfts- und Technologiebedingungen erfüllt werden. Ein Aspekt der Implementierung, der Überlegung voraussetzt, erfordert, ist die Auswahl einer Plattform und des Formularfaktors für die Verkaufsstellen (POS)- Komponente.
@@ -58,7 +58,7 @@ Obwohl MPOS und CPOS von der Komplexität identisch sind, gibt es mehrere wichti
 MPOS auf Windows, einem IOS oder einem androiden Gerät ist eine Anwendung, die auf dieses Gerät verpackt, eingerichtet und gewartet wird.
 
 - **Fenster** – Die MPOS für Windows-Anwendung enthält den gesamten Anwendungscode und die eingebette Handelsausführungszeit (CRT). 
-- **/Android IOS** – Nach diesen Plattformen, wird die Anwendung als Host für den CPOS-Anwendungscode. Das bedeutet, der Anwendungscode kommt vom CPOS-Server auf Microsoft Azure oder der Retail Store Scale Unit (RSSU). Weitere Informationen finden Sie unter[Retail Store Scale Unit,Überblick](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin) .
+- **/Android IOS** – Nach diesen Plattformen, wird die Anwendung als Host für den CPOS-Anwendungscode. Das bedeutet, der Anwendungscode kommt vom CPOS-Server auf Microsoft Azure oder der Retail Store Scale Unit (RSSU). Weitere Informationen finden Sie unter [Retail Store Scale Unit,Überblick](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin) .
 
 #### <a name="cpos"></a>CPOS
 
@@ -87,7 +87,7 @@ Einzelhändler müssen auch entscheiden, wie der POS auf Geräte wie Drucker, Ba
 ## <a name="implementation-considerations"></a>Implementierungsüberlegungen
 Berücksichtigen Sie die folgenden Informationen, wie Sie Ihre POS-Implementierung in den Ladengeschäften planen:
 
-- **Funktionsanforderungen** – Die Kerngeschäftsprozesse und - funktionen sind gleich,  unabhängig von der Plattform, dem Forularfaktor oder der Bereitstellungstopologie. Daher müssen Einzelhändler die meisten Funktionsanforderungen nicht berücksichtigten, wenn sie ihre Implementierung planen.
+- **Funktionsanforderungen** – Die Kerngeschäftsprozesse und - funktionen sind gleich, unabhängig von der Plattform, dem Forularfaktor oder der Bereitstellungstopologie. Daher müssen Einzelhändler die meisten Funktionsanforderungen nicht berücksichtigten, wenn sie ihre Implementierung planen.
 - **Konnektivität** - Netzwerkverfügbarkeit (Fernnetz \[WAN\] und lokale Netzwerke \[LAN\]) ist der größte Faktor, der vorsichtige Überlegung voraussetzt. Sämtliche Vorteile, die ein Null-Bedarf, Cloud-gehostete Lösung in Bezug auf Kosten- und Einfachheit bringt, ist verloren, wenn das System nicht für unternehmenswichtige Prozesse verfügbar ist.
 
     Sofern die Konnektivität für ein gegebenes Gerät sehr zuverlässig und elastisch ist oder wenn ein bestimmter Betrag von Ausfallzeiten für den Einzelhändler akzeptabel ist, wird eine der folgenden Optionen empfohlen:

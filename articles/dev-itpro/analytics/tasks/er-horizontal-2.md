@@ -1,5 +1,5 @@
 --- 
-title: "Ein Format, das horizontal erweiterbare Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten verwendet, ausführen"
+title: "Formate ausführen, um dynamisch Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche hinzuzufügen"
 description: "In den folgenden Schritten wird erläutert, wie einem Benutzer mit der Rolle Systemadministrator oder elektronischer Berichterstellungsentwickler ein Elektronische Berichterstellung-Format (ER) zur Generierung von Berichten als OPENXML-Arbeitsblätter (Excel) konfigurieren kann, in dem die erforderlichen Spalten als horizontal erweiterbare Bereiche erstellt werden können."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2d705d0d2803b5254adc27e6715c1eac311898a7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c7d563da9a02c91cce17cfa1d4a6915dd768ac3d
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="run-a-format-that-uses-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports"></a>Ein Format, das horizontal erweiterbare Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten verwendet, ausführen
+# <a name="run-formats-to-dynamically-add-columns-to-excel-reports-as-horizontally-expandable-ranges"></a>Formate ausführen, um dynamisch Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche hinzuzufügen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

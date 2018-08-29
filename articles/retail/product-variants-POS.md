@@ -1,5 +1,5 @@
 ---
-title: Lagersuche in der Verkaufsstelle
+title: Lagersuche in der Verkaufsstelle (POS)
 description: "In diesem Thema werden die Optionen beschrieben, die für die Anzeige von Lagerbestandsinformationen in der Verkaufsstelle (POS) verfügbar sind."
 author: ashishmsft
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 933875f56b0f47990cb1cb767f84b23b9c9710d4
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e40c558e03ef230fee6726994bc94979d40493c2
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="inventory-lookup-in-the-point-of-sale"></a>Lagersuche in der Verkaufsstelle 
+# <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersuche in der Verkaufsstelle (POS)
 
 [!include [banner](includes/banner.md)]
 

@@ -1,5 +1,5 @@
 --- 
-title: "Elektronische Steuererklärung einrichten (Deutschland)"
+title: "Elektronische Steuererklärungen einrichten (Deutschland)"
 description: "Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 881c7b5ba2e9daa56d6c1b98224bde675efc741d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e7416de30cd5dddbc6a8eca322970de4f603e53c
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="set-up-electronic-tax-declaration-germany"></a>Elektronische Steuererklärung einrichten (Deutschland)
+# <a name="set-up-electronic-tax-declarations-germany"></a>Elektronische Steuererklärungen einrichten (Deutschland)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

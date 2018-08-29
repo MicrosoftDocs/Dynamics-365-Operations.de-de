@@ -1,5 +1,5 @@
 --- 
-title: "Modell und Zuordnung zum Generieren von Dokumenten mit Anwendungsdaten verändern"
+title: "Modelle und Zuordnungen ändern, um Dokumente zu generieren, die Anwendungsdaten haben"
 description: "Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, \"ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 2 - Dokumente erstellen)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c112b2895175bd23db313888ec1e964bdf5ed295
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 580f00faf6694dc2da476ffa75f995d9a24e0f8b
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="modify-model-and-mapping-to-generate-documents-with-application-data"></a>Modell und Zuordnung zum Generieren von Dokumenten mit Anwendungsdaten verändern
+# <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Modelle und Zuordnungen ändern, um Dokumente zu generieren, die Anwendungsdaten haben
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

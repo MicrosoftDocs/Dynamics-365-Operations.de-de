@@ -1,5 +1,5 @@
 ---
-title: "Attribute, Attributgruppen und ihre Zuordnungen mit unterschiedlichen Retail-Entitäten in Finance and Operations."
+title: Attribute und Attributsgruppen
 description: "In diesem Thema wird beschrieben, wie Sie Attribute verwendet, um ein Produkt und dessen Eigenschaften über benutzerdefinierte Felder zu beschreiben."
 author: ashishmsft
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5e04b1f6ef58836eeac85be074e295e6d1f42c52
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 918f8555bc3d2e4a79262b428d5c7ba278fa7409
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Attribute, Attributgruppen und ihre Zuordnungen mit unterschiedlichen Retail-Entitäten in Finance and Operations.
+# <a name="attributes-and-attribute-groups"></a>Attribute und Attributsgruppen
 
 [!include [banner](includes/banner.md)]
 
@@ -67,18 +67,18 @@ Attribute basieren auf *Attributtypen*. Der Attributtyp identifiziert die Art vo
 ### <a name="set-up-attribute-types-in-finance-and-operations"></a>Einstellungsattributtypen im Bereich Finance and Operations
 
 1. Melden Sie sich beim Finance and Operations Backoffice Client als Einzelverkaufmanager an.
-2. Wechseln Sie zu **Produktinformationsverwaltung**&gt; **Einrichtung** &gt; **Kategorien und Attribute** &gt;**Attributtypen**.
+2. Wechseln Sie zu **Produktinformationsverwaltung** &gt; **Einrichtung** &gt; **Kategorien und Attribute** &gt; **Attributtypen**.
 3. Erstellen Sie zwei **Text**-Attributtypen Typ, setzen Sie die Option **Feste Liste** auf **Ja** fest, und fügen Sie anschließend einer Werteliste hinzu:
 
     - Nennen Sie einen Attributtyp **Objektivform** und fügen Sie die folgenden Werte hinzu: **Oval**, **Quadrat** und **Rechteck**.
-    - Nennen Sie den  anderen Attributtyp **Sonnenbrillen-Marke** und fügen die folgenden Werte hinzu: **Rayban**, **Flieger** und **Oakley**.
+    - Nennen Sie den anderen Attributtyp **Sonnenbrillen-Marke** und fügen die folgenden Werte hinzu: **Rayban**, **Flieger** und **Oakley**.
 
 ![Attributtypen](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute-in-finance-and-operations"></a>Einstellungsattributtypen im Bereich Finance and Operations
 
 1. Melden Sie sich beim Backoffice Client als Einzelverkaufmanager an.
-2. Wechseln Sie zu **Produktinformationsverwaltung**&gt; **Einrichtung** &gt; **Kategorien und Attribute** &gt;**Attribute**.
+2. Wechseln Sie zu **Produktinformationsverwaltung** &gt; **Einrichtung** &gt; **Kategorien und Attribute** &gt; **Attribute**.
 3. Erstellt ein Attribut mit der Bezeichnung **Objektiv**.
 4. Legt das Feld **Attributtyp** auf **Objektivform** fest.
 
@@ -102,7 +102,7 @@ Hierbei gelten die verbleibenden Attributmetadatumenoptionen auf der Seite **Att
 - Groß-/Kleinschreibung und Format ignorieren
 - Vollständige Übereinstimmung
 
-Diese Optionen waren ursprünglich für die Verbesserung der Suchfunktion, die ursprünglich für das Onlinetool Schaufenster vorgesehen war. Obwohl Finance and Operations den Online-Storefront nicht umfasst, enthält dieses das eCommerce Publishing Software Development Kit (SDK). Debitoren können dieses SDK verwenden, um Produkte in einen Suchenindex ihrer Wahl zu sperren. Obgleich die Produktdaten importiert werden, sollten Kunden in der Lage sein, noch durchsuchbare Daten, Daten die  abgerufen werden können etc. zu unterscheiden.. Auf diese Weise können sie den optimalen Index erstellen, um sicherzustellen, dass sie nur Attribute indexieren, *die ihrer Meinung nach* indiziert werden sollen.
+Diese Optionen waren ursprünglich für die Verbesserung der Suchfunktion, die ursprünglich für das Onlinetool Schaufenster vorgesehen war. Obwohl Finance and Operations den Online-Storefront nicht umfasst, enthält dieses das eCommerce Publishing Software Development Kit (SDK). Debitoren können dieses SDK verwenden, um Produkte in einen Suchenindex ihrer Wahl zu sperren. Obgleich die Produktdaten importiert werden, sollten Kunden in der Lage sein, noch durchsuchbare Daten, Daten die abgerufen werden können etc. zu unterscheiden.. Auf diese Weise können sie den optimalen Index erstellen, um sicherzustellen, dass sie nur Attribute indexieren, *die ihrer Meinung nach* indiziert werden sollen.
 
 Informationen über den Zweck dieser verbleibenden Optionen finden Sie unter [Überblick über Suchenschemas in SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219669.aspx).
 
@@ -120,10 +120,10 @@ Die Seite **Filteranzeigeneinstellungen** enthält die folgenden Felder:
 
 - **Anzeigeoption** - Die folgenden Ausrichtungsoptionen sind verfügbar:
 
-    - **Liste**Diese Option ist für alle Bedarfstypen verfügbar.
-    - **Bereich** – Diese Option ist für die folgenden Attributtypen verfügbar:**Währung**, **Dezimal** und **Ganzzahl**. 
-    - **Bereich** – Diese Option ist für die folgenden Attributtypen verfügbar:**Währung**, **Dezimal** und **Ganzzahl**.
-    - **Schieberegler mit Leisten** – Diese Option ist für die folgenden Attributtypen verfügbar:**Währung**, **Dezimal** und **Ganzzahl**.
+    - **Liste** Diese Option ist für alle Bedarfstypen verfügbar.
+    - **Bereich** – Diese Option ist für die folgenden Attributtypen verfügbar: **Währung**, **Dezimal** und **Ganzzahl**. 
+    - **Bereich** – Diese Option ist für die folgenden Attributtypen verfügbar: **Währung**, **Dezimal** und **Ganzzahl**.
+    - **Schieberegler mit Leisten** – Diese Option ist für die folgenden Attributtypen verfügbar: **Währung**, **Dezimal** und **Ganzzahl**.
 
 - **Schwellenwert** – Diese Einstellung ist erforderlich, wenn Sie **Bereich** als Anzeigensteuerelementtyp ausgewählt haben. Sie können Werte festlegen, indem Sie ein Trennzeichen (;) als Trennzeichen verwenden.
 
@@ -141,7 +141,7 @@ Die Seite **Filteranzeigeneinstellungen** enthält die folgenden Felder:
 
 ## <a name="attribute-groups"></a>Attributgruppen
 
-Nachdem Attribute definiert wurden, können sie  den Attributgruppen zugewiesen werden. Eine *Attributgruppe* dient dazu, die Attribute einer Komponente oder Unterkomponente in einem Produktkonfigurationsmodell zu gruppieren. Sie können ein Attribut in eine oder mehrere Attributgruppen einbeziehen. Attributgruppen können Benutzer unterstützen, Produkte zu konfigurieren, da die Auswahl in einem bestimmten Kontext angeordnet ist. Sie können Attributgruppen Retailkanälen oder Retailkategorien zuweisen.
+Nachdem Attribute definiert wurden, können sie den Attributgruppen zugewiesen werden. Eine *Attributgruppe* dient dazu, die Attribute einer Komponente oder Unterkomponente in einem Produktkonfigurationsmodell zu gruppieren. Sie können ein Attribut in eine oder mehrere Attributgruppen einbeziehen. Attributgruppen können Benutzer unterstützen, Produkte zu konfigurieren, da die Auswahl in einem bestimmten Kontext angeordnet ist. Sie können Attributgruppen Retailkanälen oder Retailkategorien zuweisen.
 
 Sie können Standardwerte für Attribute auch festlegen, die in einer Attributgruppe enthalten sind. So fügen Sie ein Attribut für Farbe einer Attributgruppe hinzu und wählen **Blau** als standardmäßigen Attributwert aus. In diesem Fall, wenn die Attributgruppe zu einem Retailprodukt hinzugefügt wird, das als Farbe eines der Attribute enthält, wird **Blau** als die Standardfarbe für dieses Produkt.
 
@@ -150,7 +150,7 @@ Sie können Standardwerte für Attribute auch festlegen, die in einer Attributgr
 ### <a name="create-an-attribute-group"></a>Eine Attributgruppe erstellen
 
 1. Melden Sie sich beim Backoffice Client als Einzelverkaufmanager an.
-2. Wechseln Sie zu **Produktinformationsverwaltung**&gt; **Einrichtung** &gt; **Kategorien und Attribute** &gt;**Attributtypen**.
+2. Wechseln Sie zu **Produktinformationsverwaltung** &gt; **Einrichtung** &gt; **Kategorien und Attribute** &gt; **Attributtypen**.
 3. Erstellen Sie eine Attributgruppe mit der Bezeichnung **Modische Sonnenbrille**.
 4. Fügen Sie die folgenden Attributen hinzu: **Objektivform** und **Sonnenbrillen-Marke**.
 
@@ -168,14 +168,14 @@ Gehen Sie folgendermaßen vor, um Attributgruppen zu den Kategorien in der Produ
 4. Wählen Sie unter **Männerkleidung** die Kategorie **Hosen**, und klicken Sie dann auf dem Inforegister **Produktattributgruppen** eine Attributgruppe aus mit der Bezeichnung **Herrengurt**.
 5. Wählen Sie die Kategorie **Modesonnenbrille** und überprüfen Sie die neuen Attribute in der Attributgruppe, **Modesonnenbrille** indem Sie **Attribute anzeigen** auswählen.
 
-    Die Attributgruppe soll die Attribute  neue**Objektivform** und **Sonnenbrillen-Marke** anzeigen.
+    Die Attributgruppe soll die Attribute neue **Objektivform** und **Sonnenbrillen-Marke** anzeigen.
 
 6. Wählen Sie unter **Männerkleidung** die Kategorie **Hosen**, und überprüfen Sie die Attribute für **Herrengurt**, indem Sie **Attribute anzeigen** auswählen.
 
     Die Attributgruppe sollte **Herrengurtmarke**, **Gurtgewebe** und **Gurtgröße**-Attribute angezeigt.
 
 > [!NOTE]
-> Diese Prozedur kann auch verwendet werden, um in Attributgruppen zu kategorisieren in der  Kanalnavigationskategoriehierarchie und in der Hierarchie ergänzende Produktkategorie. In Schritt 2 verwenden Sie die folgenden Navigationspfade:
+> Diese Prozedur kann auch verwendet werden, um in Attributgruppen zu kategorisieren in der Kanalnavigationskategoriehierarchie und in der Hierarchie ergänzende Produktkategorie. In Schritt 2 verwenden Sie die folgenden Navigationspfade:
 >
 > - **Retail** &gt; **Kategorie und Produktverwaltung** &gt; **Kanalnavigationskategorien**
 > - Gehen Sie zu **Retail** &gt; **Kategorie und Produktverwaltung** &gt; **Produkthierarchie (Retail)**.
@@ -185,13 +185,13 @@ Gehen Sie folgendermaßen vor, um Attributgruppen zu den Kategorien in der Produ
 Eine oder mehrere Attributgruppen kann zu einem oder mehreren Retailgeschäften in der Retailgeschäftshierarchie zugeordnet werden. Wenn Produkte für bestimmte Retailgeschäfte erweitert wurden, erben sie die Attribute, die in den Attributgruppen enthalten sind.
 
 1. Melden Sie sich beim Backoffice Client als Einzelverkaufmanager an.
-2. Wählen Sie **Retail** &gt; **Kanaleinstellung**&gt; **Kanalkategorien und Produktattribute**.
+2. Wählen Sie **Retail** &gt; **Kanaleinstellung** &gt; **Kanalkategorien und Produktattribute**.
 3. Weisen Sie dem Houston-Kanal Attributgruppen zu:
 
     1. Wählen Sie den **Houston** Kanal aus.
     2. Auf dem Inforegister **Attributgruppe** aktivieren Sie **Hinzufügen**, und dann **Name** im Feld, und wählen Sie **SharePointProvisionedProductAttributeGroup** aus.
-    3. Wählen Sie wieder**Hinzufügen** und klicken Sie dann im Feld **Name** und wählen Sie **Herrengurt** aus.
-    4. Wählen Sie wieder**Hinzufügen** und klicken Sie dann im Feld **Name** und wählen Sie **Modesonnenbrille** aus.
+    3. Wählen Sie wieder **Hinzufügen** und klicken Sie dann im Feld **Name** und wählen Sie **Herrengurt** aus.
+    4. Wählen Sie wieder **Hinzufügen** und klicken Sie dann im Feld **Name** und wählen Sie **Modesonnenbrille** aus.
 
         > [!NOTE]
         > Eine Option ermöglicht es anzugeben, dass dieser Kanal die Attributgruppen von seinem Kanal in der übergeordneten Hierarchie übernehmen soll. Ist der Option **Erben** auf **Ja**, erbt der untergeordnete Kanalknoten alle Attributgruppen und alle Attribute in Attributgruppen.
@@ -201,13 +201,13 @@ Eine oder mehrere Attributgruppen kann zu einem oder mehreren Retailgeschäften 
     1. Klicken Sie im Aktivitätsbereich auf **Attributmetadaten festlegen**.
     2. Wählen Sie **Mode**, und dann Kategorieknoten und dann auf dem Inforegister **Kanalproduktattribute** wählen Sie **Attribut einschließen** für jedes Attribut aus.
     3. Wählen Sie **Modezubehör** und dann Kategorieknoten und dann **Modesonnenbrille** und dann auf der Registerkarte **Kanalproduktattribute** wählen Sie **Attribut einschließen** für jedes Attribut aus.
-    4. Wählen Sie den **Herrenkleidung**Kategorieknoten und dann **Hosen** und dann auf der Registerkarte **Kanalproduktattribute** wählen Sie **Attribut einschließen** für jedes Attribut aus.
+    4. Wählen Sie den **Herrenkleidung** Kategorieknoten und dann **Hosen** und dann auf der Registerkarte **Kanalproduktattribute** wählen Sie **Attribut einschließen** für jedes Attribut aus.
 
 ![Kanalkategorien und Produktattribute – Attributgruppen](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Überschreiben von Attributwerten
 
- Die Standardwerte von Attributen können auf der Produktebene  überschrieben werden. Die Standardwerte von Attributen können für einzelne Produkte in bestimmten Katalogen überschrieben werden, die für bestimmte Retailkanäle ausgerichtet werden.
+Die Standardwerte von Attributen können auf der Produktebene überschrieben werden. Die Standardwerte von Attributen können für einzelne Produkte in bestimmten Katalogen überschrieben werden, die für bestimmte Retailkanäle ausgerichtet werden.
 
 ### <a name="override-the-attribute-values-of-an-individual-product"></a>Überschreiben Sie die Attributwerte eines Einzelprodukts
 
@@ -217,7 +217,7 @@ Eine oder mehrere Attributgruppen kann zu einem oder mehreren Retailgeschäften 
 4. Wählen Sie das erforderliche Produkt im Raster aus. Klicken Sie anschließend im Aktivitätsbereich auf der Registerkarte **Produkt** in der Gruppe **Verwalten** auf **Produktattribut**.
 5. Wählen Sie ein Attribut im linken Bereich aus, und aktualisieren Sie anschließend den Wert im rechten Bereich.
 
-![Produkthierarchie  – Produktattributgruppen](media/ProdDetailsProdAttrValues.png)
+![Produkthierarchie – Produktattributgruppen](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Überschreiben Sie die Attributwerte eines Einzelprodukts in einem Katalog
 
@@ -241,7 +241,7 @@ Eine oder mehrere Attributgruppen kann zu einem oder mehreren Retailgeschäften 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Überschreiben Sie die Attributwerte eines Einzelprodukts in einem Kanal
 
 1. Melden Sie sich beim Backoffice Client als Einzelverkaufmanager an.
-2. Wählen Sie **Retail** &gt; **Kanaleinstellung**&gt; **Kanalkategorien und Produktattribute**.
+2. Wählen Sie **Retail** &gt; **Kanaleinstellung** &gt; **Kanalkategorien und Produktattribute**.
 3. Wählen Sie den **Houston** Kanal aus.
 4. Auf dem Inforegister **Produkte** aktivieren Sie das erforderliche Produkt aus, und wählen Sie anschließend **Attribute** über dem Produktraster aus.
 

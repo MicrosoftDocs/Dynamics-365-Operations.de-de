@@ -1,5 +1,5 @@
 ---
-title: Zahlungsmethoden in einem Callcenter
+title: Zahlungsmethoden in Callcentern
 description: "Dieses Thema behandelt verschiedene Zahlungsmethoden, die in einem Callcenter in Microsoft Dynamics 365 for Retail verwendet werden können."
 author: josaw1
 manager: AnnBe
@@ -20,18 +20,18 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d709a7f0e087178c0961c268a78a9206ea656bbc
-ms.openlocfilehash: ca32e74b8b9f35dd9a1a48f942766bce98c5ea4b
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 0b86388efab113af605d62c6ad76c8169d9c4643
 ms.contentlocale: de-de
-ms.lasthandoff: 05/31/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Zahlungsmethoden in einem Callcenter
+# <a name="payment-methods-in-call-centers"></a>Zahlungsmethoden in Callcentern
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 for Retail umfasst die Konfiguration des Callcenterkanals eine Einstellung, die mit **Aktivieren Sie Auftragsabschluss** bezeichnet wird. Diese Einstellung stellt sicher, dass alle Aufträge, die Benutzer des Kanals erstellen, zur Verarbeitung der Bestellung nur dann freigegeben wird, nachdem sie eine Vorauszahlung oder eine vor-autorisierte Bezahlung getätigt haben, die in der genehmigten Toleranz ist. Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, können Callcenterbenutzer Zahlungen mit Aufträgen für die Debitoren eingeben, indem Sie die Funktionen des Callcenters der Zahlung verwenden möchten. Wenn die Einstellung deaktiviert ist, können die Callcenternutzer die  Callcenterzahlung nicht nutzen, aber sie können die Vorauszahlungen für Aufträge trotzdem anwenden, indem die  Standarddebitorfunktionen verwendet werden. 
+In Microsoft Dynamics 365 for Retail umfasst die Konfiguration des Callcenterkanals eine Einstellung, die mit **Aktivieren Sie Auftragsabschluss** bezeichnet wird. Diese Einstellung stellt sicher, dass alle Aufträge, die Benutzer des Kanals erstellen, zur Verarbeitung der Bestellung nur dann freigegeben wird, nachdem sie eine Vorauszahlung oder eine vor-autorisierte Bezahlung getätigt haben, die in der genehmigten Toleranz ist. Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, können Callcenterbenutzer Zahlungen mit Aufträgen für die Debitoren eingeben, indem Sie die Funktionen des Callcenters der Zahlung verwenden möchten. Wenn die Einstellung deaktiviert ist, können die Callcenternutzer die Callcenterzahlung nicht nutzen, aber sie können die Vorauszahlungen für Aufträge trotzdem anwenden, indem die Standarddebitorfunktionen verwendet werden.
 
 Im Rahmen von Kanalkonfigurationen kann ein Unternehmen die Zahlungsmethoden definieren, die für einen Callcenterkanal zulässig sind. Der Callcenterkanal verwendet die gleiche Zahlungsmethode, die für die Ladengeschäftskanäle definiert werden.
 
@@ -53,5 +53,5 @@ Während Zahlungsmethoden definiert werden, sollten sie mit einem Sachkonto oder
 
 Für die Preiserstattung-Szenarien, die verarbeitet werden, verwendet das Callcenter auch einige der Zahlungsmethoden, die im Modul "Debitoren" definiert werden. Um diese Zahlungsmethoden zu konfigurieren, gehen Sie zu **Retail** \> **Kanaleinstellung** \> **Callcentereinstellung** \> **Callcenterrückerstattungsmethoden**. Sie müssen diese Konfiguration ausführen, um Rückerstattungsschecks an Kunden zu verarbeiten. Wenn beispielsweise ein Kunde, der ursprünglich für einen Auftrag bezahlt wird, indem er Bargeld oder einen Scheck nutzt, der Benutzer ihm einen Rückerstattungsscheck über das Kreditorenkonto senden soll. In diesem Fall müssen das Bargeld und die Schecks im Callcenter der korrekte Zahlungsmethode des Debitors zugeordnet werden, um sicherzustellen, dass die Preiserstattung ordnungsgemäß verarbeitet wird.
 
-Darüber hinaus wenn ein Benutzer einer Rücklieferung als Callcenterbenutzer in Retail verarbeitet, aber für die Rücklieferung für einen ursprüngliches Verkauf keine Verknüpfung erfolgen kann, muss die **Rückzahlungs**methode in den Callcenterparametern definiert werden. Gehen Sie zu **Retail** \> **Kanaleinstellung** \> **Callcentereinstellung** \> **Callcenterparameter**, und klicken Sie dann auf der Registerkarte **RMA/Return**, im Feld **Zahlungsmethode**, und überprüfen, ob eine Zahlungsmethode definiert wird. Die Zahlungsmethode ist die Zahlungsmethode, die für Rückerstattungen verwendet wird. Normalerweise wird sie entweder als Scheck- oder Debitorenkontomethode definiert.
+Darüber hinaus wenn ein Benutzer einer Rücklieferung als Callcenterbenutzer in Retail verarbeitet, aber für die Rücklieferung für einen ursprüngliches Verkauf keine Verknüpfung erfolgen kann, muss die **Rückzahlungs**-Methode in den Callcenterparametern definiert werden. Gehen Sie zu **Retail** \> **Kanaleinstellung** \> **Callcentereinstellung** \> **Callcenterparameter**, und klicken Sie dann auf der Registerkarte **RMA/Return**, im Feld **Zahlungsmethode**, und überprüfen, ob eine Zahlungsmethode definiert wird. Die Zahlungsmethode ist die Zahlungsmethode, die für Rückerstattungen verwendet wird. Normalerweise wird sie entweder als Scheck- oder Debitorenkontomethode definiert.
 

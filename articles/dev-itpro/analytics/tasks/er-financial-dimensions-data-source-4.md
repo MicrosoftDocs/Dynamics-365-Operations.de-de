@@ -1,5 +1,5 @@
 --- 
-title: "Ausführen eines Berichts, der Finanzdimensionen als Datenquelle verwendet"
+title: "Berichte ausführen, die Finanzdimensionen als Datenquellen verwenden"
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 47ba48461a1c502a93df416d1acac1e85a841079
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6569f9b97d5d15bf74b8b3882bf4bab50970dd0f
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source"></a>Ausführen eines Berichts, der Finanzdimensionen als Datenquelle verwendet
+# <a name="run-reports-that-use-financial-dimensions-as-data-sources"></a>Berichte ausführen, die Finanzdimensionen als Datenquellen verwenden
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

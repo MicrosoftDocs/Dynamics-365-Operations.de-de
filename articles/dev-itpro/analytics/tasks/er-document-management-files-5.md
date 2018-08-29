@@ -1,5 +1,5 @@
 --- 
-title: "Format zum Verwenden von Dokumentverwaltungsdateien in Formatausgaben verändern und ausführen"
+title: "Ändern und Ausführen von Formaten zur Verwendung von Dokumentverwaltungsdateien in EB-Ausgabe"
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b38f69fc169367aa56468b2c8f06b65fd1291c79
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5effbecf98e633d07f9e5eb22d3df1a12967c1e4
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="modify-and-run-format-to-use-document-management-files-in-format-outputs"></a>Format zum Verwenden von Dokumentverwaltungsdateien in Formatausgaben verändern und ausführen
+# <a name="modify-and-run-formats-to-use-document-management-files-in-er-output"></a>Ändern und Ausführen von Formaten zur Verwendung von Dokumentverwaltungsdateien in EB-Ausgabe
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

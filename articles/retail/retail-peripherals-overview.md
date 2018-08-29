@@ -1,5 +1,5 @@
 ---
-title: "Einzelhandelsperipheriegeräte – Überblick"
+title: "Einzelhandelsperipheriegeräte"
 description: "In diesem Thema werden einige Konzepte in Verbindung mit Einzelhandelsperipheriegeräten beschrieben."
 author: rubencdelgado
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 77f475b0937672af268d6da938d5b2a1c9f6448b
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 11e059b52eb5496d8b63a55113099b493f815e69
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Einzelhandelsperipheriegeräte – Überblick
+# <a name="retail-peripherals"></a>Einzelhandelsperipheriegeräte
 
 [!include [banner](includes/banner.md)]
 
@@ -116,12 +116,12 @@ Der Zahlungsgerätensupport wird durch den Zahlungskonnektor implementiert. Zahl
 ## <a name="supported-interfaces"></a>Unterstützte Schnittstellen
 ### <a name="opos"></a>OPOS
 
-Um die meisten Geräten mit Microsoft Dynamics 365 for Retail nutzen zu können, ist das branchenüblichen OLE POS für die primäre Einzelhandelsperipheriegerätplattform in Microsoft Dynamics 365 for  Retail unterstützt. Der OLE für POS-Standard wurde vom National Retail Federation (NRF) erstellt, der branchenüblichen Kommunikationsprotokolle für Einzelhandlesperipheriegeräte erstellt. OPOS ist eine weithin anerkannte Implementierung des OLE für POS-Standards. Es wurde Mitte der 1990er entwickeltes und wurde mehrmals und aktualisiert. OPOS enthält eine Gerätetreiberarchitektur, die eine einfache Integration von POS-Hardware mit Windows-basierten POS-Systemen ermöglicht. OPOS steuert die Kommunikation zwischen kompatibler Hardware und der POS-Software. Ein OPOS-Steuerelement besteht aus zwei Teilen:
+Um die meisten Geräten mit Microsoft Dynamics 365 for Retail nutzen zu können, ist das branchenüblichen OLE POS für die primäre Einzelhandelsperipheriegerätplattform in Microsoft Dynamics 365 for Retail unterstützt. Der OLE für POS-Standard wurde vom National Retail Federation (NRF) erstellt, der branchenüblichen Kommunikationsprotokolle für Einzelhandlesperipheriegeräte erstellt. OPOS ist eine weithin anerkannte Implementierung des OLE für POS-Standards. Es wurde Mitte der 1990er entwickeltes und wurde mehrmals und aktualisiert. OPOS enthält eine Gerätetreiberarchitektur, die eine einfache Integration von POS-Hardware mit Windows-basierten POS-Systemen ermöglicht. OPOS steuert die Kommunikation zwischen kompatibler Hardware und der POS-Software. Ein OPOS-Steuerelement besteht aus zwei Teilen:
 
--   **Steuerelementobjekt** – Das Steuerelementobjekt für eine Einheitenklasse (z.B. Gerätenamen) stellt die Schnittstelle zum Softwareprogramm bereit. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) bietet einen Satz OPOS-Steuerobjekte, die Common Control Objects (CCOs) heißen. Das CCOs werden verwendet, um die POS-Komponente von Microsoft Dynamics 365 for  Retail zu testen. Die Tests stellen sichern, dass über Microsoft Dynamics 365 for Retail über OPOS viele Einheitentypen unterstützt werden, vorausgesetzt, dass der Hersteller ein Serviceobjekt bereitstellt, um das für OPOS erstellt wird. Sie müssen jeden Einheitentyp nicht explizit testen.
+-   **Steuerelementobjekt** – Das Steuerelementobjekt für eine Einheitenklasse (z.B. Gerätenamen) stellt die Schnittstelle zum Softwareprogramm bereit. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) bietet einen Satz OPOS-Steuerobjekte, die Common Control Objects (CCOs) heißen. Das CCOs werden verwendet, um die POS-Komponente von Microsoft Dynamics 365 for Retail zu testen. Die Tests stellen sichern, dass über Microsoft Dynamics 365 for Retail über OPOS viele Einheitentypen unterstützt werden, vorausgesetzt, dass der Hersteller ein Serviceobjekt bereitstellt, um das für OPOS erstellt wird. Sie müssen jeden Einheitentyp nicht explizit testen.
 -   **Serviceobjekt** – Das Serviceobjekt bietet die Kommunikation zwischen dem Steuerobjekt (CCO) und dem Gerät. Normalerweise wird das Serviceobjekt für ein Gerät von dem Gerätenhersteller bereitgestellt. Jedoch in bestimmten Fällen müssen Sie möglicherweise das Serviceobjekt von der Website des Herstellers herunterladen. Beispielsweise kann ein neueres Serviceobjekt verfügbar sein. Um die Adresse der Website des Herstellers suchen, prüfen Sie die Hardwaredokumentation.
 
-[![Steuerobjekt und Serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Unterstützung für die OPOS-Implementierung von Datenbanken für POS stellen sicher, dass die Gerätenhersteller und POS-Herausgeber der Standardspeicherposition ordnungsgemäß implementieren, und POS-Systemen unterstützte Geräte zusammenarbeiten können, wenn sie zuvor nicht zusammen getestet wurden. **Hinweis:** OPOS-Support wird sichergestellt für alle Geräte, die OPOS-Treiber haben. Microsoft Dynamics 365 for  Retail muss den Einheitentyp oder Klassen über OPOS unterstützen. Darüber hinaus können ggf. Serviceobjekte nicht unbedingt mit der aktuellen Version des CCOs auf dem aktuellen Stand befindet. Sie sollten sich bewusst sein, dass sich im Allgemeinen die Servicequalitätsobjekte unterscheidet.
+[![Steuerobjekt und Serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Unterstützung für die OPOS-Implementierung von Datenbanken für POS stellen sicher, dass die Gerätenhersteller und POS-Herausgeber der Standardspeicherposition ordnungsgemäß implementieren, und POS-Systemen unterstützte Geräte zusammenarbeiten können, wenn sie zuvor nicht zusammen getestet wurden. **Hinweis:** OPOS-Support wird sichergestellt für alle Geräte, die OPOS-Treiber haben. Microsoft Dynamics 365 for Retail muss den Einheitentyp oder Klassen über OPOS unterstützen. Darüber hinaus können ggf. Serviceobjekte nicht unbedingt mit der aktuellen Version des CCOs auf dem aktuellen Stand befindet. Sie sollten sich bewusst sein, dass sich im Allgemeinen die Servicequalitätsobjekte unterscheidet.
 
 ### <a name="windows"></a>Windows
 
@@ -321,7 +321,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <td>OPOS</td>
 </tr>
 <tr class="odd">
-<td>Zahlungsterminal </td>
+<td>Zahlungsterminal</td>
 <td><ul>
 <li>Benutzerdefinierter Gerätensupport</li>
 <li>Netzwerk (Weitere Informationen finden Sie in der Zahlungskonnektordokumentation).</li>
@@ -405,7 +405,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <td>OPOS</td>
 </tr>
 <tr class="even">
-<td>Zahlungsterminal </td>
+<td>Zahlungsterminal</td>
 <td><ul>
 <li>Benutzerdefinierter Gerätensupport</li>
 <li>Netzwerk (Weitere Informationen finden Sie in der Zahlungskonnektordokumentation).</li>
@@ -461,7 +461,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Zahlungsterminal </td>
+<td>Zahlungsterminal</td>
 <td><ul>
 <li>Benutzerdefinierter Gerätensupport</li>
 <li>Netzwerk (Weitere Informationen finden Sie in der Zahlungskonnektordokumentation).</li>
@@ -607,7 +607,7 @@ Die folgenden Peripheriegeräte wurden getestet, indem die IPC-Hardwarestation v
 |--------------|--------|-----------|-------------------------------------------------|
 | VeriFone     | 1000SE | OPOS      | Erfordert Anpassung des Zahlungskonnektors |
 
-#### <a name="payment-terminal"></a>Zahlungsterminal 
+#### <a name="payment-terminal"></a>Zahlungsterminal
 
 | Hersteller | Modell | Schnittstelle | Kommentare                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -680,7 +680,7 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine dedizierte (nicht fr
 |--------------|--------|-----------|-------------------------------------------------|
 | VeriFone     | 1000SE | OPOS      | Erfordert Anpassung des Zahlungskonnektors |
 
-#### <a name="payment-terminal"></a>Zahlungsterminal 
+#### <a name="payment-terminal"></a>Zahlungsterminal
 
 | Hersteller | Modell | Schnittstelle | Kommentare                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -738,7 +738,7 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 | Star         | TSP100   | OPOS      | Erfordert TSP650II-Treiber |
 | HP           | F7M67AA  | OPOS      | USB               |
 
-#### <a name="payment-terminal"></a>Zahlungsterminal 
+#### <a name="payment-terminal"></a>Zahlungsterminal
 
 | Hersteller | Modell | Schnittstelle | Kommentare                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -783,7 +783,7 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 -   Wenn das Kleinperipheriegerät mit mehreren POS-Geräten freigegeben ist, prüfen Sie, ob es bis eine der folgenden Kategorien gehören:
     -   Kassenlade
     -   Belegdrucker
-    -   Zahlungsterminal 
+    -   Zahlungsterminal
 
     Wenn das Peripheriegerät nicht einer dieser Kategorien angehört, ist die Hardwarestation nicht so entworfen, dass die Peripherie auf mehrere POS-Geräten genutzt werden kann.
 -   Manchmal können Gerätetreiber die CCOs (Common Control Objects) veranlassen, die Arbeit einzustellen. Wenn ein Gerät vor kurzem eingerichtet wurde, jedoch nicht ordnungsgemäß funktioniert, oder Sie anderer Probleme erkennen, können Sie das Problem häufig auflösen, indem Sie die CCOs erneut installieren. Um die CCOs herunterzuladen, besuchen Sie <http://monroecs.com/oposccos_current.htm>.

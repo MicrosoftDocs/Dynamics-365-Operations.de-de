@@ -18,20 +18,20 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: af594fb7879918e6b9fc423774ee1ec7f635dec0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
 ms.contentlocale: de-de
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="generate-er-reports-by-adding-content-as-raw-xml"></a>ER-Berichte erstellen, indem Sie Inhalt als unformatierten XML-Code hinzufügen
+# <a name="generate-reports-by-adding-content-as-raw-xml"></a>Berichte erstellen, indem Sie Inhalt als unformatierten XML-Code hinzufügen
 
 [!include[banner](../includes/banner.md)]
 
 Mit dem neuen Formatelement **RAW XML** können Sie Elektronische Berichterstellung (ER)-Formate entwerfen, die ausgehende Dokumente im XML-Format erzeugen. In einigen Fällen möchten Sie aus einem oder mehreren der folgenden Gründe XML-Rohdaten zu diesen Berichten hinzufügen:
 
-- Es ist bequemer, unformatierten XML-Code für den ursprünglichen Entwurf und die laufende Verwaltung eines Reports zu verwenden, da die XML-Struktur durch die Ausführung eines Laufzeit-Ausdrucks automatisch generiert werden kann. Daher müssen Mehrfachbindungen nicht für mehrere Formatelemente zur Entwurfszeit bestimmt werden. Es ist möglich, wenn die Datenquellen, die Sie verwenden, Informationen enthalten, die für die Erstellung von XML-Elementen während der Berichtserstellung verwendet werden können. 
+- Es ist bequemer, unformatierten XML-Code für den ursprünglichen Entwurf und die laufende Verwaltung eines Reports zu verwenden, da die XML-Struktur durch die Ausführung eines Laufzeit-Ausdrucks automatisch generiert werden kann. Daher müssen Mehrfachbindungen nicht für mehrere Formatelemente zur Entwurfszeit bestimmt werden. Es ist möglich, wenn die Datenquellen, die Sie verwenden, Informationen enthalten, die für die Erstellung von XML-Elementen während der Berichtserstellung verwendet werden können.
 - Keine andere Methode kann verwendet werden, um den Bericht mit XML-Inhalten zu füllen, der zuvor im System empfangen und gespeichert wurde. Beispielsweise kann die XML-Antwort, die erzeugt wird, den Inhalt einer XML-Anforderung enthalten, die zuvor übermittelt wurde.
 - Keine andere Methode kann verwendet werden, um Zeichen aufgrund ihrer numerischen Codes in das generierte Dokument einzufügen. Für einige Sprachen und Zeichen existieren solche Codes nicht. Beispiele sind der griechische Buchstabe rho (ρ) und HTML-Entitätscodes wie \&eacute; für ein *e*, das einen Akut (é) hat.
 

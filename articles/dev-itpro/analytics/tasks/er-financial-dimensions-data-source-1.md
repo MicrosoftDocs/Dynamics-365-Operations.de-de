@@ -1,5 +1,5 @@
 --- 
-title: Datenmodell zur Verwendung von Finanzdimensionen als Datenquelle entwerfen
+title: Datenmodelle zum Verwenden von Finanzdimensionen als Datenquellen entwerfen
 description: "In den folgenden Schritten wird erläutert, wie ein Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3e55eedba1955ae79733afee1a0b3c7072147bb5
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9b33d78b60ca4e4813dd4b158febee2323cea476
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-data-model-to-use-financial-dimensions-as-a-data-source"></a>Datenmodell zur Verwendung von Finanzdimensionen als Datenquelle entwerfen 
+# <a name="design-data-models-to-use-financial-dimensions-as-data-sources"></a>Datenmodelle zum Verwenden von Finanzdimensionen als Datenquellen entwerfen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren einer manuellen Entscheidung in einem Workflow
+title: Manuellen Entscheidungen in einem Workflow konfigurieren
 description: "Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Entscheidung konfigurieren können."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 245d1fd9e5489a5f996a385979d2e5aaf891846a
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: e942942aac5e9973ebd0a4e3f3a134b0c667ff5b
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurieren einer manuellen Entscheidung in einem Workflow
+# <a name="configure-manual-decisions-in-a-workflow"></a>Manuellen Entscheidungen in einem Workflow konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
@@ -260,7 +260,7 @@ Wenn der Benutzer die Entscheidung nicht innerhalb der vorgesehenen Zeit trifft,
    | 2        | Zuweisen zu: Elke            |
    | 3        | Abschließende Aktivität: \[Auswahl 1\] |
 
-   In diesem Beispiel wird die überfällige Entscheidung Doris zugewiesen. Trifft Doris die Entscheidung nicht innerhalb der vorgesehenen Zeit, wird die Entscheidung Elke zugewiesen. Wenn Erin die Entscheidung nicht innerhalb der vorgesehenen Zeit trifft, wählt das System  **\[Auswahl 1\]** als Entscheidung.
+   In diesem Beispiel wird die überfällige Entscheidung Doris zugewiesen. Trifft Doris die Entscheidung nicht innerhalb der vorgesehenen Zeit, wird die Entscheidung Elke zugewiesen. Wenn Erin die Entscheidung nicht innerhalb der vorgesehenen Zeit trifft, wählt das System **\[Auswahl 1\]** als Entscheidung.
 3. Klicken Sie auf **Eskalation hinzufügen**, um dem Eskalationspfad einen Benutzer hinzuzufügen. Wählen Sie eine der Optionen in der folgenden Tabelle aus, und führen Sie dann die zusätzlichen Schritte für diese Option aus, bevor Sie mit Schritt 4 fortfahren.
    <table>
    <colgroup>

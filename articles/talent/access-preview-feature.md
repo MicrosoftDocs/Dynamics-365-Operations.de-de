@@ -1,5 +1,5 @@
 ---
-title: Zugriff auf Vorschaufunktionen in Dynamics 365 for Talent
+title: Auf Vorschaufunktionen in Talent zugreifen
 description: "In diesem Thema wird beschrieben, wie ein Administrator die Vorschaufunktionen aktivieren kann, und es werden die Funktionen aufgeführt, die derzeit für Vorschau aktiviert sind."
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
 ms.contentlocale: de-de
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="access-preview-features-in-dynamics-365-for-talent"></a>Zugriff auf Vorschaufunktionen in Dynamics 365 for Talent 
+# <a name="access-preview-features-in-talent"></a>Auf Vorschaufunktionen in Talent zugreifen
 
 [!include[banner](../includes/banner.md)]
 

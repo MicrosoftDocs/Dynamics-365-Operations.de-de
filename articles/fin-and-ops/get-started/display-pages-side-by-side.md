@@ -1,5 +1,5 @@
 ---
-title: "Seiten nebeneinander anzeigen, mithilfe des Symbols \"In neuem Fenster öffnen\"."
+title: "Seiten mithilfe der Funktion „In neuem Fenster öffnen” nebeneinander anzeigen"
 description: In diesem Artikel wird beschrieben wie Bildseiten in Microsoft Dynamics 365 for Finance and Operations parallel angezeigt werden.
 author: aneesmsft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4a575665a2b893745a2f2044cd97177917ee1a33
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 8e3ef29618f11b0f247999e3a24e54bff44bf51a
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a>Seiten mithilfe des Symbols „In neuem Fenster öffnen” nebeneinander anzeigen
+# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Seiten mithilfe der Funktion „In neuem Fenster öffnen” nebeneinander anzeigen
 
 [!include [banner](../includes/banner.md)]
 
@@ -45,7 +45,7 @@ Das dynamische Verknüpfen und Aktualisieren geschieht aufgrund der Beziehungen,
 
 Einige Seiten verwenden mehrere Ansichten wie die Rasteransicht, Kopfzeilenansichts- und Detailansicht. Das **In neuem Fenster öffnen** Symbol sorgt dafür, dass die gesamte Seite, in einem neuen Browserfenster geöffnet wird. Daher können Sie zwei Ansichten der selben Seite nicht mithilfe der Funktion **In neuem Fenster öffnen** anzeigen. Fast all diese Seiten haben jedoch eine Navigationsliste, die Sie verwenden können, um zwischen Datensätzen zu wechseln und ähnliche Ergebnisse zu erreichen. 
 
-Vor der Verwendung der Funktion **In neuem Fenster öffnen** sollten Sie den Popupblocker des Browsers konfigurieren, um Einblendungen von der URL der Site "Finance and Operations" zu ermöglichen. Zum Beispiel können Sie Einblendungen von \*.dynamics.com" ermöglichen. 
+Vor der Verwendung der Funktion **In neuem Fenster öffnen** sollten Sie den Popupblocker des Browsers konfigurieren, um Einblendungen von der URL der Site "Finance and Operations" zu ermöglichen. Zum Beispiel können Sie Einblendungen von "\*.dynamics.com" ermöglichen. 
 
 Die Funktion **In neuem Fenster öffnen** ist nur verfügbar, wenn es mehr als eine Seite gibt, die im Fenster geöffnet ist. Zudem schließt sich das Popupfenster automatisch, wenn es keine offene Seiten gibt (das heißt, wenn die letzte Seite in diesem Fenster geschlossen ist). Finance and Operations schließt offene Seiten auch dann, wenn Sie in einen anderen Bereich in der Anwendung navigieren. Wenn Sie geöffnete Popupfenster haben und in einen anderen Bereich in der Anwendung navigieren, werden die Popupfenster automatisch geschlossen, da die Seiten in diesen Dialogfeldern vom System geschlossen wurden. 
 

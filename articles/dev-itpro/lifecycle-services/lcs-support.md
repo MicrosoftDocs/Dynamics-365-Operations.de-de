@@ -1,5 +1,5 @@
 ---
-title: "Erhalten Sie Support für Finance and Operations und Dynamics Lifecycle Services"
+title: "Erhalten Sie Support für Finance and Operations oder Lifecycle Services (LCS)"
 description: "In diesem Artikel wird erklärt, wie Sie Hilfe bei Microsoft Dynamics 365 for Finance and Operations oder Microsoft Dynamics Lifecycle Services (LCS) erhalten."
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a078631d1661d7d61156b9d85c18172abd79827d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 716c747957471ce2c4c919196b4fc2f9061ce6b6
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-and-dynamics-lifecycle-services"></a>Erhalten Sie Support für Microsoft Dynamics 365 for Finance and Operations und Dynamics Lifecycle Services
+# <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Erhalten Sie Support für Finance and Operations oder Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
@@ -76,7 +76,7 @@ Hinweis: Microsoft Premier Kunden und Partners können auch Premier-Supportticke
 <li>Fehler, die ausgeführt werden, wenn Sie LCS nutzen oder Problem beim Zugreifen auf LCS haben.</li>
 <li>Fehler, die ausgeführt werden, wenn Sie Finance and Operations verwenden.</li>
 </ul>
-Für technische Fragen im Zusammenhang mit der Anmeldung und den Zugriff auf CustomerSource, E-Learning, Suche, Wissensdatenbank, Dateidownload und Seiten- oder Systemfehler, gehen Sie zu<a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Website-Support</span></a></td>
+Für technische Fragen im Zusammenhang mit der Anmeldung und den Zugriff auf CustomerSource, E-Learning, Suche, Wissensdatenbank, Dateidownload und Seiten- oder Systemfehler, gehen Sie zu <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Website-Support</span></a></td>
 </tr>
 <tr class="odd">
 <td>Hilfe zu Fragen mit Finance and Operations Lizenzen.</td>

@@ -1,5 +1,5 @@
 --- 
-title: Einen vorhandenen Mitarbeiter mittels Personalbeschaffung einstellen
+title: Vorhandene Mitarbeiter mittels Personalbeschaffung einstellen
 description: "Manchmal können offene Stellen von den Kandidaten ausgefüllt werden, die bereits Mitarbeiter in der Organisation sind."
 author: rschloma
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5dfe5c25b299284267bed91d58e0acefb7250570
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="hire-an-existing-employee-through-recruiting"></a>Einen vorhandenen Mitarbeiter mittels Personalbeschaffung einstellen
+# <a name="hire-existing-employees-through-recruitment"></a>Vorhandene Mitarbeiter mittels Personalbeschaffung einstellen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

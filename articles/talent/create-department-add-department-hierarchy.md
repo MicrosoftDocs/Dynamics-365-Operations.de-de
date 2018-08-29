@@ -1,5 +1,5 @@
 ---
-title: Eine Abteilung erstellen und der Abteilungshierarchie zuordnen
+title: Abteilungen erstellen und sie in die Abteilungshierarchie einbeziehen
 description: "Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen funktionalen Bereich einer Organisation darstellt. Eine Abteilung ist für einen bestimmten Bereich der Organisation wie zum Beispiel Verkauf, Buchhaltung oder Personalverwaltung zuständig. Sie können Abteilungen verwenden, um zu Funktionsbereiche zu melden. Abteilungen können Gewinn- und Verlustzuständigkeit haben."
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
-ms.openlocfilehash: 3fc30669bf7a16616484bf7115cb121ce463840f
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 14e0acb2ea16641eecb81bcf23c8b7d778b2b208
 ms.contentlocale: de-de
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Eine Abteilung erstellen und der Abteilungshierarchie zuordnen
+# <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Abteilungen erstellen und sie in die Abteilungshierarchie einbeziehen
 
 [!include [banner](includes/banner.md)]
 
@@ -37,7 +37,7 @@ Eine Abteilung kann möglicherweise auch eine Gruppe von Kostenstellen umfassen.
 | Feld               | Beschreibung                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name                | Geben Sie einen Namens für die Abteilung ein.                                                                                                                                                                                  |
-| Abteilungsnummer   | Ein Standardwert wird möglicherweise automatisch generiert, wenn ein Zahlenreferenzcode im Feld **Organisationszahl**referenz auf der Seite **Zahlensequenz** zugewiesen wird.                                                 |
+| Abteilungsnummer   | Ein Standardwert wird möglicherweise automatisch generiert, wenn ein Zahlenreferenzcode im Feld **Organisationszahl**-Referenz auf der Seite **Zahlensequenz** zugewiesen wird.                                                 |
 | Suchbegriff         | Einen Namen oder ein Abkürzung eingeben, die für die Suche nach der Abteilung verwendet werden kann.                                                                                                                                            |
 | Memo                | Geben Sie zusätzliche Informationen hier ein.                                                                                                                                                                            |
 | In Hierarchie        | Ein aktiviertes Kontrollkästchen zeigt an, dass die Abteilung in der Abteilungshierarchie enthalten ist. Informationen darüber, wie eine Abteilung der Abteilungshierarchie hinzugefügt wird, lesen Sie die Informationen weiter unten in diesem Artikel. |

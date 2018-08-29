@@ -1,5 +1,5 @@
 --- 
-title: "Zielorte für elektronische Berichterstellung konfigurieren"
+title: "Ziele für die Ausgabe der elektronischen Berichterstellung (EB) konfigurieren"
 description: "Diese Prozedur zeigt, wie verschiedene Ziele für Ausgabekomponenten für elektronische Berichterstellung (ER) eingerichtet und verwendet werden, wie beispielsweise ein Ordner oder eine Datei."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: afe9d397872b9328b59f4036049ab53b3bba2aec
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7c84464f426d6bedff092fd918fcabbc35600f3c
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="configure-destinations-for-electronic-reporting-er"></a>Zielorte für elektronische Berichterstellung konfigurieren
+# <a name="configure-destinations-for-electronic-reporting-er-output"></a>Ziele für die Ausgabe der elektronischen Berichterstellung (EB) konfigurieren
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

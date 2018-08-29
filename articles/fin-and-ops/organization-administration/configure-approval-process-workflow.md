@@ -1,5 +1,5 @@
 ---
-title: Einen Genehmigungsschritt in einem Workflow genehmigen
+title: Genehmigungsprozesse in einem Workflow konfigurieren
 description: Verwenden Sie das folgende Verfahren, um die Eigenschaften des Genehmigungsprozesses zu konfigurieren.
 author: sericks007
 manager: AnnBe
@@ -18,20 +18,20 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf3523b2768b197b3c75b9a8490f621eced91a7a
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 212e9c32c7bb22b0ee0450e04b4090c540df7b54
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>Einen Genehmigungsschritt in einem Workflow genehmigen
+# <a name="configure-approval-processes-in-a-workflow"></a>Genehmigungsprozesse in einem Workflow konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
 Verwenden Sie das folgende Verfahren, um die Eigenschaften des Genehmigungsprozesses zu konfigurieren.
 
-Klicken Sie zum Konfigurieren eines Genehmigungsprozesses im Workflow-Editor mit der rechten Maustaste auf das Genehmigungselement, und klicken Sie dann auf **Eigenschaften**, um das Formular  **Eigenschaftens** zu öffnen.
+Klicken Sie zum Konfigurieren eines Genehmigungsprozesses im Workflow-Editor mit der rechten Maustaste auf das Genehmigungselement, und klicken Sie dann auf **Eigenschaften**, um das Formular **Eigenschaftens** zu öffnen.
 Benennen des Genehmigungsprozesses
 -------------------------
 
@@ -141,7 +141,7 @@ Gehen Sie folgendermaßen vor, wenn der Genehmigungsprozess in einer bestimmten 
 | Die in diesen Schritten ausgewählten Optionen setzen die Optionen außer Kraft, die Sie in den Bereichen **Zuweisung** und **Eskalation** jedes Genehmigungsschritts ausgewählt haben. |
 
 1.  Klicken Sie im linken Bereich auf **Erweiterte Einstellungen**.
-2.  Wählen Sie das Kontrollkästchen **Zeitgrenze für das Workflow****element** festlegen.
+2.  Wählen Sie das Kontrollkästchen **Zeitgrenze für das Workflow** **element** festlegen.
 3.  Legen Sie im Feld **Dauer** fest, wann der Genehmigungsprozess abgeschlossen sein muss. Folgende Optionen stehen zur Auswahl:
     -   **Stunden** – Geben Sie die Anzahl der Stunden ein, in denen der Genehmigungsprozess abgeschlossen sein muss. Wählen Sie dann den Kalender aus, den Ihre Organisation verwendet, und geben Sie Informationen zur Arbeitswoche der Organisation ein.
     -   **Tage** – Geben Sie die Anzahl von Tagen ein, in denen der Genehmigungsprozess abgeschlossen sein muss. Wählen Sie dann den Kalender aus, den Ihre Organisation verwendet, und geben Sie Informationen zur Arbeitswoche der Organisation ein.
@@ -161,11 +161,11 @@ Wenn ein Dokument einem Benutzer zur Genehmigung zugewiesen wird, muss der Benut
 
 **Hinweis**: Das Kontrollkästchen **Aktionen von der Arbeitsliste in Enterprise Portal aktivieren** ist nicht mehr vorhanden.
 
-## <a name="configure-the-approval-steps"></a> Konfigurieren der Genehmigungsschritte
+## <a name="configure-the-approval-steps"></a>Konfigurieren der Genehmigungsschritte
 Ein Genehmigungsprozess besteht aus Genehmigungsschritten. Führen Sie die folgende Prozedur aus, um dem Genehmigungsprozess Schritte hinzuzufügen und die Schritte zu konfigurieren.
 1.  Doppelklicken Sie im Workflow-Editor auf den Genehmigungsprozess. Im Workflow-Editor werden die Schritte des Genehmigungsprozesses angezeigt.
 2.  Ziehen Sie zum Hinzufügen eines Genehmigungsschritts den Schritt aus dem Bereich **Workflow-Elemente** auf die Canvas.
-3.  Informationen zum Konfigurieren eines Genehmigungsschritts finden, finden Sie unter[Konfigurieren eines Genehmigungsschritts](configure-approval-step-workflow.md).
+3.  Informationen zum Konfigurieren eines Genehmigungsschritts finden, finden Sie unter [Konfigurieren eines Genehmigungsschritts](configure-approval-step-workflow.md).
 
 
 

@@ -1,5 +1,5 @@
 --- 
-title: "Hochladen einer Konfiguration nach Lifecycle Services für elektronische Berichterstellung (ER)"
+title: Elektronische Berichterstellungskonfigurationen nach Lifecycle Services hochladen
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle \"Entwickler für elektronische Berichterstellung\" eine neue Konfiguration für \"Elektronische Berichterstellung (ER)\" erstellen kann und sie nach Microsoft Lifecycle Services (LCS) hochladen kann."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6aa6bf7e08285d18210741ba6618878955009280
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Hochladen einer Konfiguration nach Lifecycle Services für elektronische Berichterstellung (ER)
+# <a name="upload-electronic-reporting-configurations-into-lifecycle-services"></a>Elektronische Berichterstellungskonfigurationen nach Lifecycle Services hochladen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -92,6 +92,6 @@ In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen
 10. Klicken Sie auf "Öffnen".
     * Wählen Sie das LCS-Repository aus und öffnen Sie es.  
     * Beachten Sie, dass die ausgewählte Variante als Anlage des ausgewählten LCS-Projekts angezeigt wird.  
-    * Öffnen Sie LSC mithilfe von https://lcs.dynamics.com. Öffnen Sie ein Projekt, das zuvor für Repositoryregistrierung verwendet wurde, öffnen Sie die Anlagenbibliothek dieses Projekts und erweitern Sie den Inhalt des Anlagentyps "GER-Konfiguration" – die hochgeladene ER-Konfiguration wird verfügbar sein. Beachten Sie, dass die hochgeladene LCS-Konfiguratio in eine andere Microsoft Dynamics 365 for Finance and Operations-Instanz importiert werden kann, wenn Anbieter Zugriff auf dieses LCS-Projekt haben.  
+    * Öffnen Sie LCS mithilfe von https://lcs.dynamics.com. Öffnen Sie ein Projekt, das zuvor für Repositoryregistrierung verwendet wurde, öffnen zu die "Anlagenbibliothek" dieses Projekts und erweitern Sie den Inhalt des Anlagentyps "GER-Konfiguration" – die hochgeladene ER-Konfiguration wird verfügbar sein. Beachten Sie, dass die hochgeladene LCS-Konfiguratio in eine andere Microsoft Dynamics 365 for Finance and Operations-Instanz importiert werden kann, wenn Anbieter Zugriff auf dieses LCS-Projekt haben.  
 
 

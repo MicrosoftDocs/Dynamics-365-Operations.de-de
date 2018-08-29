@@ -1,5 +1,5 @@
 ---
-title: "Coupons für Einzelhandelsverkäufe erstellen"
+title: "Coupons für Einzelhandelsverkäufe einrichten"
 description: "Dieses Thema bietet einen Überblick über Einzelhandelscoupons und erläutert deren Einrichtung."
 author: scott-tucker
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: c718a71ca270c67118a90456bac0cf182032d3db
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="create-coupons-for-retail-sales"></a>Coupons für Einzelhandelsverkäufe erstellen
+# <a name="set-up-coupons-for-retail-sales"></a>Coupons für Einzelhandelsverkäufe einrichten
 
 [!include [banner](includes/banner.md)]
 
@@ -50,11 +50,11 @@ Coupons können als Coupons mit begrenzter Nutzung konfiguriert werden. Das Verw
 Die Grenze wird pro Couponcode auf einem Coupon erzwungen. So kann ein Einwegcoupon, der zwei Couponcodes hat, zweimal verwendet werden: einmal für jeden Couponcode. Jeder Code auf einem Coupon kann unabhängig auf Aktiv festgelegt werden.
 
 > [!NOTE]
-> Wenn ein Couponcode die Nutzungsgrenze erreicht hat, führt das System *nicht* automatisch den Status des Couponcodes auf "verwendet" aus. Das System erlaubt aber keine weitere Verwendung eines Couponcodes, der seine Nutzungsgrenze erreicht hat. Wenn der Status eines Couponcodes manuell auf einen Status anders als "Aktiv" festgelegt wird, dann  kann dieser Couponcode nicht in einem beliebigen Kanal verwendet werden.
+> Wenn ein Couponcode die Nutzungsgrenze erreicht hat, führt das System *nicht* automatisch den Status des Couponcodes auf "verwendet" aus. Das System erlaubt aber keine weitere Verwendung eines Couponcodes, der seine Nutzungsgrenze erreicht hat. Wenn der Status eines Couponcodes manuell auf einen Status anders als "Aktiv" festgelegt wird, dann kann dieser Couponcode nicht in einem beliebigen Kanal verwendet werden.
 
 ## <a name="managing-coupons"></a>Verwalten von Coupons
 
-Sie müssen den Rabatt und den Coupon getrennt herstellen. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite aus. Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite  schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.  
+Sie müssen den Rabatt und den Coupon getrennt herstellen. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite aus. Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.  
 
 Im Grunde genommen sind Coupons zusätzliche Validierungen neben Einzelhandelsrabatten. Der Coupon stellt die Couponcodes und Strichcodes bereit, die erforderlich sind, zusammen mit den Datumsbereichen, der eingeschränkten Nutzung und den Kundenanforderungen für die Nutzung des Codes. Der Rabatt enthält den Satz von Produkten, für die der Coupon gültig sein soll. Die Preisgruppen für den Rabatt für die Gruppe von Debitoren, von Kanälen oder von Katalogen, für die der Coupon gültig sein soll.
 

@@ -1,5 +1,5 @@
 ---
-title: Mobile App-Startseite
+title: "Startseite für Dynamics 365 for Unified Operations Mobile-App"
 description: In diesem Thema wird die mobile Microsoft Dynamics 365 for Unified Operations-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4736a7041c746350fa073bd58929c840f7689bf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b9cdb2b2c2b5aaf7743cd2cd0dbfee6c602a5a46
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="mobile-app-home-page"></a>Mobile App-Startseite
+# <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Startseite für Dynamics 365 for Unified Operations Mobile-App
 
 [!include [banner](../includes/banner.md)]
 
