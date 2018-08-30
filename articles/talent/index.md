@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Talent"
+title: "Willkommen bei Dynamics 365 for Talent"
 description: "Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement."
 author: josaw
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
-ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
 ms.contentlocale: de-de
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Willkommen bei Microsoft Dynamics 365 for Talent
+# <a name="welcome-to-dynamics-365-for-talent"></a>Willkommen bei Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -74,7 +74,7 @@ Sie können Pläne einrichten, um effektiv und ausgewogen Vergütungen sowie Obj
 
 -   [Vergütungspläne](compensation-plans.md)
 -   [Vergütungsprozess](process-compensation.md)
--   [Feste Vergütungspläne erstellen](create-fixed-compensation-plans.md)
+-   [Erstellen fester Vergütungspläne](create-fixed-compensation-plans.md)
 -   [Variable Vergütungspläne erstellen](create-variable-compensation-plans.md)
 -   [Vergütungsverwaltung in Dynamics 365 for Talent (Video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 

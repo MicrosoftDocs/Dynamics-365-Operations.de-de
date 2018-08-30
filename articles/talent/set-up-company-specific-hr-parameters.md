@@ -1,5 +1,5 @@
 ---
-title: Einrichten von unternehmensspezifischen Personalverwaltungsparametern
+title: Unternehmensspezifische Personalverwaltungsparameter einrichten
 description: "Die Einstellungen einiger Personalverwaltungsparameter (HR) werden über Unternehmen freigegeben, während die Einstellungen anderer Parameter unternehmensspezifisch sind. In diesem Artikel wird beschrieben, wie unternehmensspezifische Personalverwaltungsparameter eingerichtet werden."
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e195f9976465a933ceaaeb0bd2cbec4f814bc5f8
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: f7ecd72a2a6ba4ba15e412e40508462f6ef0d218
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="set-up-company-specific-hr-parameters"></a>Einrichten von unternehmensspezifischen Personalverwaltungsparametern
+# <a name="set-up-company-specific-human-resources-hr-parameters"></a>Unternehmensspezifische Personalverwaltungsparameter einrichten
 
 [!include [banner](includes/banner.md)]
 

@@ -1,5 +1,5 @@
 --- 
-title: "Überprüfen von Konfigurationen zum Erstellen von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern"
+title: "Konfigurationen zum Generieren von Berichten im Office-Format überprüfen, die eingebettete Bilder haben"
 description: "Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im\"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: - Einstellungsparameter)\" Aufgabenleitfaden erstellen."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe58809c60fa27a605d84a61893ff569ded058ef
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Überprüfen von Konfigurationen zum Erstellen von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern
+# <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurationen zum Generieren von Berichten im Office-Format überprüfen, die eingebettete Bilder haben
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

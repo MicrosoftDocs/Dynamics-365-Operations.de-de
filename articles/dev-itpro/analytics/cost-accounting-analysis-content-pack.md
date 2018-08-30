@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -33,18 +33,18 @@ In diesem Thema wird beschrieben, was im **Buchhaltungsanalyse** Microsoft Power
 
 ## <a name="overview"></a>Überblick
 
-Der **Kostenrechnungsanalyse**-Power BI-Inhalt dient den Kostencontrollern oder all jenen, die für die Ausführung der Kostensteuerung in einer Organisation verantwortlich sind. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten. Er verwendet Buchungsdaten aus dem **Kostenrechnungs**-Modul und stellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten nach Kostenträger filtern, um die Kostensteuerung der Organisationseinheiten vorzunehmen, selbst wenn die Organisation mehrere juristische Personen hat. 
+Der **Kostenrechnungsanalyse**-Power BI-Inhalt dient den Kostencontrollern oder all jenen, die für die Ausführung der Kostensteuerung in einer Organisation verantwortlich sind. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten. Er verwendet Buchungsdaten aus dem **Kostenrechnungs**-Modul und stellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten nach Kostenträger filtern, um die Kostensteuerung der Organisationseinheiten vorzunehmen, selbst wenn die Organisation mehrere juristische Personen hat.
 
-Da der **Kostenrechnungsanalyse**-Inhalt Abweichungen zwischen den Istkosten und den budgetierten Kosten hervorhebt, können Manager über die positiven und negativen Trends für ihre Einsatzkräfte informiert werden. Manager können zu den Kostenfaktorhierarchien oder den einzelnen Kostenfaktoren Detailinformationen anzeigen. Auf diese Weise können Manager einen detaillierten Einblick erhalten, wie Kostenabweichungen aufgetreten sind, und anschließend wirksame Maßnahmen ausführen. 
+Da der **Kostenrechnungsanalyse**-Inhalt Abweichungen zwischen den Istkosten und den budgetierten Kosten hervorhebt, können Manager über die positiven und negativen Trends für ihre Einsatzkräfte informiert werden. Manager können zu den Kostenfaktorhierarchien oder den einzelnen Kostenfaktoren Detailinformationen anzeigen. Auf diese Weise können Manager einen detaillierten Einblick erhalten, wie Kostenabweichungen aufgetreten sind, und anschließend wirksame Maßnahmen ausführen.
 
-Der **Kostenrechnungsanalyse**-Inhalt ermöglicht es Buchhaltern, Kosten zu analysieren, um zu sehen, wie Kosten die Kostenträger der gesamten Organisation durchlaufen. 
+Der **Kostenrechnungsanalyse**-Inhalt ermöglicht es Buchhaltern, Kosten zu analysieren, um zu sehen, wie Kosten die Kostenträger der gesamten Organisation durchlaufen.
 
-Weitere Informationen zur Kostenrechnung finden Sie unter [Startseite Kostenrechnung](../../financials/cost-accounting/cost-accounting-home-page.md). 
+Weitere Informationen zur Kostenrechnung finden Sie unter [Startseite Kostenrechnung](../../financials/cost-accounting/cost-accounting-home-page.md).
 
 Durch das Festlegen der  Zugriffsebenensicherheit in der Kostenrechnung und durch die Kombination mit Zeilenebenensicherheit in Power BI können Sie allen Kostenträgereigentümern Zugriff auf den **Kostenrechnungsanalyse** Power BI Inhalt geben. Alle Daten in den Visualisierungen werden anschließend auf Basis der Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zur Zugriffsebenensicherheit und zur Sicherheit auf Zeilenebene finden Sie unter [Sicherheit für Kostenbuchhaltung für Power BI einrichten](setup-security-cost-accounting-content-pack.md)..
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Sie finden die  **Kostenbuchhaltungsanalyse** Power BI Inhalt in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Power BI-Inhalte herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). 
+Sie finden die  **Kostenbuchhaltungsanalyse** Power BI Inhalt in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Power BI-Inhalte herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
@@ -75,7 +75,7 @@ Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Me
 |                                  | Istkosten nach Kostenelementhierarchie und Kostenobjektdimensions-Mitgliedsname                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Kostenrechnungsanalyse** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md). 
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Kostenrechnungsanalyse** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
 Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verwendet.
 
@@ -113,20 +113,18 @@ Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet w
 
 Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregierte Messungen zu teilen, um eine größere Granularität zu erreichen und tiefere und analytische Einblicke bereitzustellen.
 
-
-|               Entität               |                                                Beispiele für Attribute                                                |
+| Entität                             | Beispiele für Attribute                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|      Kostenrechnungssachkonten       |                                                Kostenrechnungssachkonto                                                |
-|         Kostensteuerungseinheiten         |                                                Name der Kostensteuerungseinheit                                                |
-|      Kostenelementdimensionen       |     Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung      |
-|       Kostenobjektdimensionen       |       Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung        |
-|       Statistische Dimensionen       |       Statistischer Dimensionsname, Statistischer Dimensionsmitgliedsname, Statistischer Dimensionsmitgliedsbeschfreibung        |
-| Kostenobjekt-Dimensionshierarchie  |  Kostenträgerdimensionshierarchiename, Kostenträgerdimensionshierarchieebene, Kostenträgerdimensionshierarchiestruktur   |
+| Kostenrechnungssachkonten            | Kostenrechnungssachkonto                                                                                               |
+| Kostensteuerungseinheiten                 | Name der Kostensteuerungseinheit                                                                                               |
+| Kostenelementdimensionen            | Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung          |
+| Kostenobjektdimensionen             | Kostenelementdimensionsname, Kostenelementdimensionsmitgliedsname, Kostenelementdimensions-Mitgliedsbeschreibung              |
+| Statistische Dimensionen             | Statistischer Dimensionsname, Statistischer Dimensionsmitgliedsname, Statistischer Dimensionsmitgliedsbeschfreibung              |
+| Kostenobjekt-Dimensionshierarchie  | Kostenträgerdimensionshierarchiename, Kostenträgerdimensionshierarchieebene, Kostenträgerdimensionshierarchiestruktur    |
 | Kostenelement-Dimensionshierarchie | Kostenelementdimensionshierarchiename, Kostenelementdimensionshierarchieebene, Kostenelementdimensionshierarchiestruktur |
-| Statistische Dimensionshierarchie  |  Statistische Dimensionshierarchiename, Statistischer Dimenstionhierarchieebene, statistische Kostenträgerdimensionshierarchiestruktur   |
-|        Transaktionsversionen        |                                                     Versionsname                                                     |
-|          Steuerkalender          |                                            Kalender, Beschreibung des Kalenders                                            |
-|            Geschäftsjahr            |                                                    Kalenderjahr                                                     |
-|           Finanzzeiträume           |                                                 Kalenderperioden                                                 |
-
+| Statistische Dimensionshierarchie  | Statistische Dimensionshierarchiename, Statistischer Dimenstionhierarchieebene, statistische Kostenträgerdimensionshierarchiestruktur    |
+| Transaktionsversionen               | Versionsname                                                                                                         |
+| Steuerkalender                   | Kalender, Beschreibung des Kalenders                                                                                       |
+| Geschäftsjahr                       | Kalenderjahr                                                                                                        |
+| Finanzzeiträume                     | Kalenderperioden                                                                                                 |
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Talent bereitstellen"
+title: Talent bereitstellen
 description: "Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Umgebung für Microsoft Dynamics 365 for Talent."
 author: rschloma
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 2fc4119f3b33aa583274f4d823e296752cdde41d
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent bereitstellen
+# <a name="provision-talent"></a>Talent bereitstellen
 
 [!include [banner](includes/banner.md)]
 
@@ -103,7 +103,7 @@ Führen Sie ein PowerShell-Skript aus, um eine neue PowerApps-Umgebung für Tale
 
 Führen Sie die folgenden Anweisungen aus, um das Skript auszufüllen:
 
-1. Laden Sie die ProvisionCDSEnvironment.zip-Datei von folgender elektronischer Adresse hinunter[ProvisionCDSEnvironment-Skripte](https://go.microsoft.com/fwlink/?linkid=870436)  
+1. Laden Sie die ProvisionCDSEnvironment.zip-Datei von folgender elektronischer Adresse hinunter [ProvisionCDSEnvironment-Skripte](https://go.microsoft.com/fwlink/?linkid=870436)  
 
 2. Klicken Sie in Ihrem Download-Ordner mit der rechten Maustaste auf die gerade heruntergeladene Datei ProvisionCDSEnvironment.zip und wählen Sie **Eigenschaften**.  Wenn sich unten im Dialogfeld ein Sicherheitshinweis befindet, der besagt, dass diese Datei von einem anderen Computer stammt und blockiert werden könnte, um diesen Computer zu schützen, markieren Sie das Kontrollkästchen auf **Blockierung aufheben**, dann klicken Sie auf **Anwenden** und dann auf **Ok**.
 

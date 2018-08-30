@@ -1,5 +1,5 @@
 ---
-title: "Bilder für Retail Modern POS einrichten und verwalten"
+title: "Bilder für Retail Modern POS (MPOS) einrichten und verwalten"
 description: "In diesem Artikel wird beschrieben welche Schritte beim Einrichten und Verwalten von Bildern für verschiedene Retail Modern POS erforderlich sind."
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ed4a7044b577ed6af86f6803f6abd4f9b500b4e7
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e364cf988cc80d53605fe88bf0dc1be6021c52e7
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Bilder für Retail Modern POS einrichten und verwalten
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Bilder für Retail Modern POS (MPOS) einrichten und verwalten
 
 [!include [banner](includes/banner.md)]
 
@@ -52,7 +52,7 @@ Die Bilder, die im Retail Modern POS (MPOS) angezeigt werden, müssen extern, au
 4.  Für Bilder wird das Dateinamenformat mit dem Katalognamen fest verbunden und kann nicht geändert werden. Daher benennen Sie Ihre Bilder um, sodass sie entsprechende Katalognamen haben und um sicherzustellen, dass MPOS sie ordnungsgemäß verarbeitet.
 5.  Wählen Sie im Feld **Dateierweiterung** die erwartete Dateinamenerweiterung abhängig vom Typ der Bilder, die Sie haben. Für die Demodaten werden die Katalogbilder beispielsweise mit der .jpg- Erweiterung festgelegt. (Die Bilddateien werden auch umbenannt, sodass sie Katalognamen haben).
 6.  Klicken Sie auf **OK**.
-7.  Um zu überprüfen, ob die Medienvorlage für Bilder ordnungsgemäß gespeichert wurde, klicken Sie auf der Seite **Katalogbilder**, erneut auf **Medienvorlage definieren**. Um die Vorlage ohne das Dialogfeld **Medienvorlage definieren** zu schließen zu validieren, können Sie das Inforegister **Bild-URL für Excel erstellen** verwenden. Überprüfen Sie die Darstellung der Bild URL, und verifizieren Sie, ob die URL mit dem Vorlagenstandard übereinstimmt, der weiter oben erwähnt wurde. Das Dialogfeld **Medienvorlage definieren** hat nun den Bildpfad implizit für alle Katalogbilder festgelegt, die diesen Pfad mit der allgemeinen URL verwenden. Dieser URL-Pfad gilt für alle Katalogbilder, es sei denn, diese werden überschrieben. Der erste Teil des Bildpfads wird von der medienbasierten URL genommen, die Sie im Kanalprofil definiert haben. Der Rest des Pfades wird dem Pfad entnommen, den Sie in der Medienvorlage definiert haben. Die zwei Teile werden verkettet, um die vollständige URL des Bildlagerplatzes bereitzustellen. Beispielsweise erhält ein Katalog in den Demodaten Fabrikam-Basiskatalog. Daher muss der Bildname Fabrikam-Basiskatalog.jpg lauten, damit er den Katalognamen und die .jpg- Dateinamenerweiterung verwendet, die in der Vorlage konfiguriert ist. In diesem Fall lautet nach der Verkettung die URL https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg.
+7.  Um zu überprüfen, ob die Medienvorlage für Bilder ordnungsgemäß gespeichert wurde, klicken Sie auf der Seite **Katalogbilder**, erneut auf **Medienvorlage definieren**. Um die Vorlage ohne das Dialogfeld **Medienvorlage definieren** zu schließen zu validieren, können Sie das Inforegister **Bild-URL für Excel erstellen** verwenden. Überprüfen Sie die Darstellung der Bild URL, und verifizieren Sie, ob die URL mit dem Vorlagenstandard übereinstimmt, der weiter oben erwähnt wurde. Das Dialogfeld **Medienvorlage definieren** hat nun den Bildpfad implizit für alle Katalogbilder festgelegt, die diesen Pfad mit der allgemeinen URL verwenden. Dieser URL-Pfad gilt für alle Katalogbilder, es sei denn, diese werden überschrieben. Der erste Teil des Bildpfads wird von der medienbasierten URL genommen, die Sie im Kanalprofil definiert haben. Der Rest des Pfades wird dem Pfad entnommen, den Sie in der Medienvorlage definiert haben. Die zwei Teile werden verkettet, um die vollständige URL des Bildlagerplatzes bereitzustellen. Beispielsweise erhält ein Katalog in den Demodaten Fabrikam-Basiskatalog. Daher muss der Bildname Fabrikam-Basiskatalog.jpg lauten, damit er den Katalognamen und die .jpg- Dateinamenerweiterung verwendet, die in der Vorlage konfiguriert ist. In diesem Fall wird nach der Verkettung die URL https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg sein.
 8.  Aktivieren Sie die Synchronisierungsvorgänge, um die neue Vorlage zur Kanaldatenbank hinzuzufügen, damit MPOS die Vorlage verwenden kann, um auf die Bilder zuzugreifen.
 9.  Um die Medienvorlage für Katalogbilder auf der Kanalseite zu aktualisieren, müssen Sie sicherstellen, dass Sie **Katalogvorgang 1150** von **Retail IT** &gt; **Distributionszeitplan** laufen lassen.[![catalog1](./media/catalog1.png)](./media/catalog1.png)
 
@@ -147,7 +147,7 @@ Die Produktbilder, die im Offlinemodus verwendet werden müssen, können eingeri
 Die Katalog-, Kategorie-, Mitarbeiter sowie die Debitorenbilder, die im Offline-Modus verwendet werden müssen, können aufgesetzt werden, indem der erforderliche Ziellink des Bilds im Katalog hinzugefügt wird und das Bild als Standardbild für die ausgewählte Entität festlegt wird.
 
 1.  Klicken Sie zum Katalog und klicken Sie im Aktivitätsbereich auf **Medien** &gt; **Bilder**.
-2.  Folgen Sie den Schritte im Abschnitt **Vorschauseite auf Entitätsebene überschreiben**, um die externe Bild-URL hinzuzufügen.
+2.  Folgen Sie den Schritte im Abschnitt „**Vorschauseite auf Entitätsebene überschreiben**”, um die externe Bild-URL hinzuzufügen.
 3.  Aktivieren Sie dieses Bild als standardmäßiges Bild für den Katalog, indem Sie das Kontrollkästchen für das Bild auswählen, das im Raster aufgeführt ist.
 4.  Führen Sie den Katalogvorgang aus. Dieses Bild wird jetzt als Offlinebild für den Katalog in MPOS verwendet.
 5.  Führen Sie einen ähnlichen Prozess für andere Entitäten, wie Kategorie, Mitarbeiter und Debitor durch.

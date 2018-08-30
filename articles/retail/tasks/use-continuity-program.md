@@ -1,5 +1,5 @@
 --- 
-title: " Ein Anschlussprogramm verwenden"
+title: "Verkauf von Anschlussprogrammen und Verarbeitung zugehöriger Aufträge"
 description: "Diese Verfahren zeigt den Verkauf eines Kontinuitätsprogramms und die Verarbeitung der zugehörigen Aufträge."
 author: scott-tucker
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d2642d922fc1fa03644be8195a8c9dd3edfc3483
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 5fe1823c9b684bbc5ac5bd0871cc5c0a0e6ce678
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="use-a-continuity-program"></a> Ein Anschlussprogramm verwenden
+# <a name="selling-continuity-programs-and-processing-related-sales-orders"></a>Verkauf von Anschlussprogrammen und Verarbeitung zugehöriger Aufträge
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
@@ -50,10 +50,10 @@ Diese Verfahren zeigt den Verkauf eines Kontinuitätsprogramms und die Verarbeit
 13. Klicken Sie auf Absenden.
     * Sie haben einen neuen Anschlussauftrag erstellt. Als nächstes führen Sie zwei Stapelverarbeitungsvorgänge aus, die verwendet werden, um die Kontinuitätsaufträge zu verarbeiten.  
 14. Schließen Sie die Seite.
-15. Navigieren Sie zu Einzelhandel und Handel > Anschluss  > Anschlussprogramme verarbeiten.
+15. Navigieren Sie zu Einzelhandel und Handel > Anschluss > Anschlussprogramme verarbeiten.
 16. Geben Sie im Anschlussartikel-Feld "88000" ein, und drücken Sie dann die TAB-Taste.
 17. Klicken Sie auf "OK".
-18. Navigieren Sie zu Einzelhandel und Handel > Anschluss  > Untergeordnete Anschlussaufträge erstellen.
+18. Navigieren Sie zu Einzelhandel und Handel > Anschluss > Untergeordnete Anschlussaufträge erstellen.
     * Dieser Prozess erstellt neue Aufträge auf Grundlage der Einstellungen der Kontinuitätsprogramme.  
 19. Geben Sie im Anschlussartikel-Feld "88000" ein, und drücken Sie dann die TAB-Taste.
     * Artikel '88000' ist ein Anschlussartikel in den USRT-Demodaten.  

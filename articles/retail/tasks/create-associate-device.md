@@ -1,5 +1,5 @@
 --- 
-title: " Ein Gerät erstellen und verknüpfen"
+title: "Geräte erstellen und sie Registern zuordnen"
 description: "Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen Geräts und dessen Zuordnung zu einem Register."
 author: jashanno
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 19be7c38e9612b54fe56ef6e0fd942587dd64a69
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 7df1111a00fc8ad7f684075fb772b1e33916b687
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="create-and-associate-a-device"></a> Ein Gerät erstellen und verknüpfen
+# <a name="create-devices-and-associate-them-with-registers"></a>Geräte erstellen und sie Registern zuordnen
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

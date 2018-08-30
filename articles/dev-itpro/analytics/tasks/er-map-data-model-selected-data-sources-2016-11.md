@@ -1,5 +1,5 @@
 --- 
-title: "Zuordnen eines Datenmodells zu ausgewählten Datenquellen für elektronische Berichterstellung (ER)"
+title: "Datenmodelle der elektronischen Berichterstellung (EB) zu ausgewählten Datenquellen zuordnen"
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer, dem die Systemadministratorrolle oder die Rolle „Entwickler für elektronische Berichterstellung” zugewiesen ist, ein Datenmodell der elektronischen Berichterstellung (EB) ausgewählten Datenquellen von Dynamics 365 for Finance and Operations, Enterprise Edition (November 2016), zuordnen kann."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 13b7fe7f7bfe24bd275428e931993aa46ecb9945
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: f347c19d940330c830509be4d11127f9e3324deb
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="map-a-data-model-to-selected-data-sources-for-electronic-reporting-er"></a>Zuordnen eines Datenmodells zu ausgewählten Datenquellen für elektronische Berichterstellung (ER)
+# <a name="map-electronic-reporting-er-data-models-to-selected-data-sources"></a>Datenmodelle der elektronischen Berichterstellung (EB) zu ausgewählten Datenquellen zuordnen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -82,7 +82,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, dem die Systemadmi
 38. Klicken Sie auf Binden.
 39. In der Struktur ausgewählte "Payments=-Buchungen\Währungscode (Währung)".
 40. Erweitern Sie 'Transactions\>Relations' in der Struktur.
-41. In der Struktur erweitern Sie "Buchungen  \> Geschäftsbeziehung \ Währungstabelle (Währung)".
+41. In der Struktur erweitern Sie "Buchungen\>Geschäftsbeziehung \ Währungstabelle (Währung)".
 42. Wählen Sie in der Strukturdarstellung "Transactions\>Relations\Currency table(Currency)\Currency code(CurrencyCodeISO)".
 43. Klicken Sie auf Binden.
 44. Erweitern Sie 'Payments= Transactions\Debtor' in der Struktur.
@@ -117,7 +117,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, dem die Systemadmi
 73. Wählen Sie 'Transactions\Description(Txt)' in der Struktur aus.
 74. Klicken Sie auf Binden.
 75. In der Struktur ausgewählte "Payments= Transactions\End to end identification code(End2EndID".
-76. Wählen Sie in der Struktur \$TransactionsEndToEndID' aus.
+76. Wählen Sie in der Struktur\$TransactionsEndToEndID' aus.
 77. Klicken Sie auf Binden.
 78. In der Struktur wählen Sie "Payments=-Buchungen \ Betrag (InstructedAmount)" aus.
 79. Wählen Sie in der Struktur 'Transaktion\$Betrag' aus.

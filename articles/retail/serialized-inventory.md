@@ -1,5 +1,5 @@
 ---
-title: "POS-Verbesserungen für serialisierte Produkte"
+title: "Verkaufsstellen-(POS)-Verbesserungen für serialisierte Produkte"
 description: "In diesem Thema werden Verbesserungen aufgelistet, die an serialisierten Produkten vorgenommen wurden, damit Sie Zeit sparen können und produktiver sind."
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -17,18 +17,18 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 74a27761c065e475fa7c10c5812f0307df9f570e
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 65e60f3e289bb68ea055548299d58bca42e84c02
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="pos-improvements-for-serialized-products"></a>POS-Verbesserungen für serialisierte Produkte
+# <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Verkaufsstellen-(POS)-Verbesserungen für serialisierte Produkte
 
 [!include [banner](includes/banner.md)]
 
-## <a name="overview"></a>Überblick 
+## <a name="overview"></a>Übersicht 
 Basierend auf den Einstellungen in „Retail Zentralverwaltung” können Produkte entweder als serialisiert oder als nicht serialisiert klassifiziert werden. Wenn Produkte serialisiert sind, kann jedem Artikel eine eindeutige Nummer zugewiesen werden. Das erleichtert die Nachverfolgung von Garantien, von Artikeln sowie die Bestätigung des Besitzes. Obwohl die Möglichkeit der Angabe von Seriennummern für serialisierte Produkte in unserer Modern/Cloud Point of Sale (POS) vorhanden war, sind einige Verbesserungen hinzugefügt worden. So können Kassierer Zeit sparen und produktiver sein.  
 
 ## <a name="pos-improvements"></a>POS-Verbesserungen

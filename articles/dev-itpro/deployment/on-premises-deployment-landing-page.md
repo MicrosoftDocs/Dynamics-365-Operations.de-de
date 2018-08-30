@@ -1,9 +1,9 @@
 ---
-title: Lokale Bereitstellung
+title: "Startseite für lokale Bereitstellungen"
 description: "Dieses Thema liefert Informationen und Links zu Inhalten über lokale Bereitstellungen."
 author: kfend
 manager: AnnBe
-ms.date: 03/15/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: aba11ae99393eb0d8c3e1df2276faa95ad831d29
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="on-premises-deployment-home-page"></a>Startseite für die lokale Bereitstellung
+# <a name="on-premises-deployments-home-page"></a>Startseite für lokale Bereitstellungen
 
 [!include [banner](../includes/banner.md)]
 
@@ -61,6 +61,6 @@ Sie können Microsoft Dynamics 365 for Finance and Operations (On-Premises) bere
 - [Probleme bei Dynamics 365 for Finance and Operations (lokal) behandeln](troubleshoot-on-prem.md)
 - [Funktionen, die in lokalen Bereitstellungen nicht implementiert sind](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Veraltete Funktionen](../migration-upgrade/deprecated-features.md)
-- [Software-Lebenszyklusrichtlinie und Liste der Versionen](../migration-upgrade/versions-update-policy.md)
+- [Lokale Software-Lebenszyklusrichtlinien- und -Freigaben](../migration-upgrade/on-prem-version-update-policy.md)
  
 

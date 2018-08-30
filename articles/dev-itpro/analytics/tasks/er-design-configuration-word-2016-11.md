@@ -1,5 +1,5 @@
 --- 
-title: "Entwerfen einer Konfiguration zum Generieren von Berichten im Microsoft Word-Format für elektronische Berichterstellung (ER)"
+title: EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” Elektronische Berichterstellungs-(ER)-Formate zum Generieren von Berichten als Microsoft Word-Dateien konfigurieren kann."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
-ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
 ms.contentlocale: de-de
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Entwerfen einer Konfiguration zum Generieren von Berichten im Microsoft Word-Format für elektronische Berichterstellung (ER)
+# <a name="design-er-configurations-to-generate-reports-in-word-format"></a>EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -63,10 +63,10 @@ Diese Prozedur ist eine Funktion, die in Microsoft Dynamics 365 for Operations, 
     * Zusätzlich zum Speichern von Konfigurationsänderungen, wird durch die Aktivität „Speichern” auch die angehängte Word-Vorlage aktualisiert. Die Struktur des entworfenen Formats wird zum zugeordneten Word-Dokument als neuer benutzerdefinierter XML-Abschnitt mit dem Namen „Bericht” übertragen. Beachten Sie, dass die angefügte Word-Vorlage nicht nur das Layout des Dokuments enthält, das wir als ER-Ausgabe generieren möchten. Es enthält auch die Struktur von Daten, die ER in diese Vorlage zur Laufzeit auffüllen wird.  
 2. Klicken Sie auf Anhänge.
     * Nun müssen Sie die Elemente des benutzerdefinierten XML-Abschnitts „Bericht” an die Word-Dokumentteile binden.  
-    * Wenn Sie mit Word-Dokumenten vertraut sind, die als Formulare entworfen werden können, die Inhaltssteuerelemente enthalten, die durch Elemente von benutzerdefinieten XML-Teilen begrenzt sind – geben Sie alle Schritte der nächsten Unteraufgabe wieder, um so ein Dokument zu erstellen. Genauere Informationen finden Sie unter diesem Link (in englischer Sprache): https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Andernfalls überspringen Sie die Schritte in der nächsten Unteraufgabe.  
+    * Wenn Sie mit Word-Dokumenten vertraut sind, die als Formulare entworfen werden können, die Inhaltssteuerelemente enthalten, die durch Elemente von benutzerdefinieten XML-Teilen begrenzt sind – geben Sie alle Schritte der nächsten Unteraufgabe wieder, um so ein Dokument zu erstellen. Weitere Details finden Sie unter diesem Link https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Andernfalls überspringen Sie die Schritte in der nächsten Unteraufgabe.  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>Rufen Sie Word mit benutzerdefiniertem XML-Teil ab, um Datenbindungen vorzunehmen
-    * Öffnen Sie dieses Dokument in Word und gehen Sie folgendermaßen vor:  - Öffnen Sie die Word-Entwicklerregisterkarte (passen Sie das Menüband an, wenn es noch nicht aktiviert ist).  - Wählen Sie den XML-Zuordnungsbereich aus.  - Wählen Sie den benutzerdefinierten XML-Teil „Bericht” in der Suche aus.  - Führen Sie die Zuordnung von Elementen des ausgewählten benutzerdefinierten XML-Teils und der Inhaltssteuerelemente des Word-Dokuments aus.  - Speichern Sie das aktualisierte Word-Dokument in einem lokalen Laufwerk.  
+    * Öffnen Sie dieses Dokument in Word und gehen Sie folgendermaßen vor: - Öffnen Sie die Word-Entwicklerregisterkarte (passen Sie das Menüband an, wenn es noch nicht aktiviert ist).  - Wählen Sie den XML-Zuordnungsbereich aus.  - Wählen Sie den benutzerdefinierten XML-Teil „Bericht” in der Suche aus.  - Führen Sie die Zuordnung von Elementen des ausgewählten benutzerdefinierten XML-Teils und der Inhaltssteuerelemente des Word-Dokuments aus.  - Speichern Sie das aktualisierte Word-Dokument in einem lokalen Laufwerk.  
 
 ## <a name="upload-the-word-template-with-custom-xml-part-bounded-to-content-controls"></a>Hochladen der Word-Vorlage mit benutzerdefiniertem XML-Teil, der an Inhaltssteuerelemente gebunden ist
 1. Klicken Sie auf Löschen.

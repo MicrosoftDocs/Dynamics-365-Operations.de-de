@@ -1,5 +1,5 @@
 ---
-title: "AxErd zurückgezogen"
+title: "AxErd-Seite wurde zurückgezogen"
 description: "Wir mussten die AxErd-Seite zurückziehen. Wir konnten sowohl den Quellcode für das Projekt und die HTML-Dateien für die Website in einem GitHub-Repo zu buchen."
 author: margoc
 manager: AnnBe
@@ -18,22 +18,22 @@ ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
 ms.translationtype: HT
-ms.sourcegitcommit: aa67ac4f29703fff516d648f9c74dbf785d0637a
-ms.openlocfilehash: a1049dbaca80161a6b6638eb74c253fb75e9c391
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 5250a75655b23f1bc92b332a48dfec094af049cf
 ms.contentlocale: de-de
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="axerd-retired"></a>AxErd zurückgezogen
+# <a name="axerd-page-has-been-retired"></a>AxErd-Seite wurde zurückgezogen
 
-Wir mussten leider die AxErd-Webseite zurückziehen, die ein Entitätsbeziehungsdiagramme (ERDs) für viele Microsoft Dynamics AX 2012-Tabellen bereitgestellt hat. Wir konnten sowohl den Quellcode für das Projekt und die HTML-Dateien für die Website in einem GitHub-Repo zu buchen: https://github.com/Microsoft/ax-2012-doc-tools
+Wir mussten leider die AxErd-Webseite zurückziehen, die ein Entitätsbeziehungsdiagramme (ERDs) für viele Microsoft Dynamics AX 2012-Tabellen bereitgestellt hat. Es konnten sowohl der Quellcode für das Projekt als auch die HTML-Dateien für die Website in einem GitHub-Repository gebucht werden: https://github.com/Microsoft/ax-2012-doc-tools
 
-Die HTML-Seiten sind im Repo unter [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)
+Die HTML-Seiten sind im Repository unter [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)
 
-Eine Beschreibung des Zeitpunkts, wie Sie ein eigenes ERDs erstellen, finden Sie unter: [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
+Eine Beschreibung darüber, wie Sie Ihre eigenen Entitätsbezieungsdiagramme (ERDs) erstellen unter [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
 
-Die Lösung im Stamm des AxErd-Ordners [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd). 
+Die Lösung befindet sich im Stamm des AxErd-Ordners [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd). 
 
 
 

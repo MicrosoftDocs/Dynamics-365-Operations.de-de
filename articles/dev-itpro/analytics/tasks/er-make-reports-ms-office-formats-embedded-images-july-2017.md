@@ -1,5 +1,5 @@
 --- 
-title: Entwerfen von Konfigurationen zum Generieren von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern
+title: Konfigurationen zum Generieren von Berichten im Office-Format entwerfen, die eingebettete Bilder haben
 description: "Die Schritte in diesem Thema enthalten Informationen darüber, wie die elektronischen Berichterstattungskonfigurationen (EB) entworfen werden, die elektronische Dokumente in Microsoft Office-Formaten (Excel und Word) generieren, die eingebettete Bilder enthalten."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5e3ba5c76df3dcc5042074a565d102ceaeeadfb0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1fb02e561f6792c57b924ba64a5ca3d3974289ee
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images"></a>Entwerfen von Konfigurationen zum Generieren von Berichten in Microsoft Office-Formaten mit eingebetteten Bildern
+# <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurationen zum Generieren von Berichten im Office-Format entwerfen, die eingebettete Bilder haben
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

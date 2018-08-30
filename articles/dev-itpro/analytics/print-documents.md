@@ -1,6 +1,6 @@
 ---
-title: Drucken in Finance and Operations-Anwendungen
-description: "In Microsoft Dynamics 365  for Finance and Operations können Sie Dokumente drucken, indem Sie entweder einen lokalen Drucker oder ein mit dem Netzwerk verbundenes Gerät verwenden. Dieser Artikel gibt eine Übersicht, wie Dokumente gedruckt werden."
+title: Dokumentdruck
+description: "In Microsoft Dynamics 365 for Finance and Operations können Sie Dokumente drucken, indem Sie entweder einen lokalen Drucker oder ein mit dem Netzwerk verbundenes Gerät verwenden. Dieser Artikel gibt eine Übersicht, wie Dokumente gedruckt werden."
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,28 +18,28 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 30a418e6c49849369f0a0e3ffa28f31b9b88b7e7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5d52568ce49b85f6215ed2835a95e2e016c9c879
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="printing-in-finance-and-operations-applications"></a>Drucken in Finance and Operations-Anwendungen
+# <a name="document-printing"></a>Dokumentdruck
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365  for Finance and Operations können Sie Dokumente drucken, indem Sie entweder einen lokalen Drucker oder ein mit dem Netzwerk verbundenes Gerät verwenden. Dieser Artikel gibt eine Übersicht, wie Dokumente gedruckt werden.
+In Microsoft Dynamics 365 for Finance and Operations können Sie Dokumente drucken, indem Sie entweder einen lokalen Drucker oder ein mit dem Netzwerk verbundenes Gerät verwenden. Dieser Artikel gibt eine Übersicht, wie Dokumente gedruckt werden.
 
 <a name="printing-overview"></a>Drucküberblick
 -----------------
 
-Microsoft Dynamics 365 for Finance and Operations bietet integrierte Dienstleistungen und benutzerdefinierte Anwendungen, die das Nachverfolgen, Generieren, Speichern und Verteilen von Dokumenten vornehmen, die eine Geschäftsaktivität unterstützen. In Microsoft Dynamics 365 for Finance and Operations können Sie Dokumente drucken, indem Sie entweder einen lokalen Drucker oder ein mit dem Netzwerk verbundenes Gerät verwenden. Darüber hinaus können Sie Finance and Operations Seiten und Berichte direkt vom Kunden als PDF-Dateien,oder Microsoft Office-Dokumente exportieren. Schließlich können Sie mit der verteilten Arbeitsauslastung Geschäftsdokumente direkt von einem mobilen Gerät drucken, indem Netzwerkressourcen verwendet werden. Obwohl das Drucken von Anforderungen variieren kann, müssen alle Branchen Ausdrucke von Geschäftsdokumenten mithilfe von Finance and Operations erstellen. Das Drucken von Dokumenten auf Netzwerkgeräten von gehosteten Anwendungen stellt verschiedene  Herausforderungen dar. Nachfolgend finden Sie einige Beispiele:
+Microsoft Dynamics 365 for Finance and Operations bietet integrierte Dienstleistungen und benutzerdefinierte Anwendungen, die das Nachverfolgen, Generieren, Speichern und Verteilen von Dokumenten vornehmen, die eine Geschäftsaktivität unterstützen. In Microsoft Dynamics 365 for Finance and Operations können Sie Dokumente drucken, indem Sie entweder einen lokalen Drucker oder ein mit dem Netzwerk verbundenes Gerät verwenden. Darüber hinaus können Sie Finance and Operations Seiten und Berichte direkt vom Kunden als PDF-Dateien,oder Microsoft Office-Dokumente exportieren. Schließlich können Sie mit der verteilten Arbeitsauslastung Geschäftsdokumente direkt von einem mobilen Gerät drucken, indem Netzwerkressourcen verwendet werden. Obwohl das Drucken von Anforderungen variieren kann, müssen alle Branchen Ausdrucke von Geschäftsdokumenten mithilfe von Finance and Operations erstellen. Das Drucken von Dokumenten auf Netzwerkgeräten von gehosteten Anwendungen stellt verschiedene Herausforderungen dar. Nachfolgend finden Sie einige Beispiele:
 
 -   Druckertreiber sind unter Umständen nicht für das Gerät des Benutzers verfügbar.
 -   Das Gerät des Benutzers verbindet sich nicht mit dem Unternehmensnetzwerk.
 
-Indem ein dedizierter Host verwendet und einigen einfachen Schritten gefolgt wird, können  Systemadministratoren Bereitstellungen konfigurieren, sodass Benutzer direkt aus den Geschäftsanwendungen auf Netzwerkgeräten drucken können.
+Indem ein dedizierter Host verwendet und einigen einfachen Schritten gefolgt wird, können Systemadministratoren Bereitstellungen konfigurieren, sodass Benutzer direkt aus den Geschäftsanwendungen auf Netzwerkgeräten drucken können.
 
 ### <a name="printing-scenarios-in-finance-and-operations-applications"></a>Drucken von Szenarien in Finance and Operations-Anwendungen
 
@@ -57,7 +57,7 @@ Da die Auflösun je nach spezifischem Szenario ändert, stellt Finance and Opera
 -   **Szenario 2** verwendet Clientanwendungen und Microsoft Office 365 Dienstleistungen.
 -   **Szenario 3** erfordert Unterstützung von benutzerdefinierten Anwendungen und von Diensten, die in Microsoft Azure gehostet werden.
 
-Neben der Plattform, die im Azure Abonnement bereitgestellt wird, stellen Finance and Operations Anwendungen Kunden eine integrierte Azure Anwendung des Erstanbieters bereit, damit sie einfacher  Domäne-gehostete Geräte verwenden können, um Dokumente zu drucken.
+Neben der Plattform, die im Azure Abonnement bereitgestellt wird, stellen Finance and Operations Anwendungen Kunden eine integrierte Azure Anwendung des Erstanbieters bereit, damit sie einfacher Domäne-gehostete Geräte verwenden können, um Dokumente zu drucken.
 
 ## <a name="service-overview"></a>Dienstleistungsüberblick
 Während Dokumente, die über gehostete Anwendungen produziert werden, darauf warten, auf einem mit dem Netzwerk verbundenen Gerät gedruckt zu werden, werden diese im Azure BLOB-Speicher gespeichert. Der [Dokument-Routing-Agent](install-document-routing-agent.md) verwendet Azure Authentifizierung, um einen sicheren Kanal zu den Azure Dienstleistungen einzurichten. **Ausführungssequenz**

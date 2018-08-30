@@ -1,5 +1,5 @@
 ---
-title: Demodaten-Bildschirmlayouts in MPOS/CPOS
+title: Demodaten-Bildschirmlayouts in Retail Modern POS (MPOS) und Cloud POS
 description: "Dieses Thema enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Microsoft Dynamics 365 for Retail festgelegt werden."
 author: zlinster
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
-ms.openlocfilehash: e812bb13c903e72e31e62effd0c70f9b9d62de55
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 41930e89a7cae5cdb84e728da47de3bc5de312ca
 ms.contentlocale: de-de
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="demo-data-screen-layouts-in-mposcpos"></a>Demodaten-Bildschirmlayouts in MPOS/CPOS
+# <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Demodaten-Bildschirmlayouts in Retail Modern POS (MPOS) und Cloud POS
 
 [!include [banner](includes/banner.md)]
 

@@ -1,5 +1,5 @@
 --- 
-title: "Definieren Sie die Abhängigkeit der Konfigurationen von anderen Komponenten"
+title: "Die Abhängigkeit der EB-Konfigurationen bei anderen Komponenten definieren"
 description: "Um diese Schritte auszuführen, müssen Sie die Schritte im Aufgabenleitfaden zuerst ausführen, ER Verwaltungsmodellzuordnungskonfiguraion und Sie müssen Zugriff auf Microsoft Dynamics Lifecycle Services (LCS) haben."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cbd65f0734f54ed497758faffb452e4f61ab2089
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 18eb8de7c851e5477d93a00f744fe56929c43ca2
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="define-the-dependency-of-configurations-from-other-components"></a>Definieren Sie die Abhängigkeit der Konfigurationen von anderen Komponenten 
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Die Abhängigkeit der EB-Konfigurationen bei anderen Komponenten definieren
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

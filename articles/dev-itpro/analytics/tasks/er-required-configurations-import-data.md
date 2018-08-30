@@ -1,5 +1,5 @@
 --- 
-title: "Erstellen erforderlicher Konfigurationen zum Importieren von Daten aus einer externen Datei für elektronische Berichterstellung"
+title: EB-Konfigurationen erstellen, um Daten aus externen Dateien zu importieren
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator” oder der Rolle „Entwickler für elektronische Berichterstellung” Konfigurationen für elektronische Berichterstellung (EB) entwerfen kann, um Daten in die Dynamics 365 for Finance and Operations-Anwendung aus einer externen Datei zu importieren."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 999c6da306ff713521ce3bb5750bd7e65dc5daaf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 70bf788b5924e382ab927fcff4c86908923e09d7
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Erstellen erforderlicher Konfigurationen zum Importieren von Daten aus einer externen Datei für elektronische Berichterstellung
+# <a name="create-er-configurations-to-import-data-from-external-files"></a>EB-Konfigurationen erstellen, um Daten aus externen Dateien zu importieren
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -33,7 +33,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 
 ## <a name="add-a-new-er-model-configuration"></a>Neue ER-Modellkonfiguration hinzufügen
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie den Konfigurationsanbieter für Beispielunternehmen Litware, Inc. ist verfügbar und markiert als aktiv. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.    
+    * Überprüfen Sie den Konfigurationsanbieter für Beispielunternehmen Litware, Inc. ist verfügbar und markiert als aktiv. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
 2. Klicken Sie auf "Berichterstellungskonfigurationen".
     * Statt ein neuen Modells zu erstellen, um den Datenimport zu unterstützen, laden Sie die Datei 1099model.xml, die Sie zuvor heruntergeladen haben. Diese Datei enthält ein benutzerdefiniertes Datenmodell von Kreditorenbuchungen. Dieses Datenmodell ist den Dynamics 365 for Finance and Operations-Datenkomponenten zugeordnet, die sich in der AOT-Datenentität befinden.   
 3. Klicken Sie auf „Austauschen”.
@@ -82,9 +82,9 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
     * Beachten Sie, dass das entworfene Format hier als eine Datenquellenkomponente dargestellt wird.  
 6. Erweitern Sie in der Struktur „format: Beleg\*settlement: XML Element 1..1 (settlement): Record”.
 7. Erweitern Sie in der Struktur „format: Beleg\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list”.
-8. Erweitern Sie in der Struktur „format: Beleg\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Datesatzliste\* vendor: XML Element 1..1 (vendor): Record”.
+8. Erweitern Sie in der Struktur „format: Beleg\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Datesatzliste\*vendor: XML Element 1..1 (vendor): Record”.
 9. Erweitern Sie in der Struktur „format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record”.
-10. Erweitern Sie in der Struktur „format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Datesatzliste\* vendor: XML Element 1..1 (vendor): Record”.
+10. Erweitern Sie in der Struktur „format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Datesatzliste\*vendor: XML Element 1..1 (vendor): Record”.
     * Beachten Sie, dass die Präsentation von erforderlichen und optionalen Formatelementen in der vordefinierten Datenquellenkomponente „Format” anders ist.  
 11. Erweitern Sie in der Struktur „Transactions: Record list= format.settlement.'$enumerated”.
     * Beachten Sie, dass die Elemente des Formats, das die Struktur der importierten Datei definiert an die Elemente des benutzerdefinierten Datenmodells gebunden sind. Basierend auf diesen Bindungen wird der Inhalt der importierten XML-Datei zur Laufzeit in das vorhandene Datenmodell gespeichert. Beachten Sie die Bindung des Länderelements. Bei jedem Buchungselement in der eingehenden Datei, die kein solches Element hat, wird der Standardländercode „USA” im Datenmodell aufgefüllt.  
@@ -145,7 +145,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 27. Schließen Sie die Seite.
 28. Schließen Sie die Seite.
 29. Schließen Sie die Seite.
-30. Wechseln Sie zu „Kreditorenkonten” > „Periodische Aufgaben” > „Steuererklärung (US 1099)”  „Kreditorenausgleich für Steuererformulare (US 1099s)”.
+30. Wechseln Sie zu „Kreditorenkonten” > „Periodische Aufgaben” > „Steuererklärung (US 1099)” „Kreditorenausgleich für Steuererformulare (US 1099s)”.
     * Dieses Formular zeigt die kumulativen Buchungen in der Tabelle Tax1099Summary an, die auf Grundlage importierter Buchungen erstellt wurden.  
 31. Legen Sie das Datum "2000-01-01" im Feld "Von Datum" fest.
 32. Klicken Sie auf „Manuelle US 1099-Buchungen”.
@@ -184,7 +184,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 25. Klicken Sie auf "Ausführen".
     * Wenn Sie den Hotfix „KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 for Finance and Operations (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ) installiert haben, wählen Sie die bevorzugte Modellzuordnung im Suchfeld aus. Wenn Sie den Hotfix noch nicht installiert haben, überspringen Sie diesen Schritt und gehen Sie zum nächsten Schritt, da durch die Definition der Standardformatkonfiguration die Zuordnung bereits ausgewählt wurde.  
     * Wenn Sie den Hotfix nicht installiert haben, KB 4012871, beachten Sie, dass das Dialogfeld eine zusätzliche Modellzuordnungsfrage enthält, die verwendet wird, um die Datei, die Sie importieren, zu analysieren. Die Daten werden dann aus dem Dialogfeld zum Datenmodell übertragen. Aktuell können Sie auswählen, welche Formatzuordnung verwendet werden muss, abhängig vom Dateityp, den Sie importieren möchten.  
-    * Wenn Sie planen, diese Modellzuordnung von einem Punkt in Dynamics 365 for Finance and Operations anzurufen,  der speziell für diese Aktivität entworfen wurde, müssen das ER-Ziel und die Formatzuordnung als Teil der Integration markiert sein.  
+    * Wenn Sie planen, diese Modellzuordnung von einem Punkt in Dynamics 365 for Finance and Operations anzurufen, der speziell für diese Aktivität entworfen wurde, müssen das ER-Ziel und die Formatzuordnung als Teil der Integration markiert sein.  
 26. Klicken Sie auf "Abbrechen".
 27. Schließen Sie die Seite.
 28. Schließen Sie die Seite.

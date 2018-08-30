@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren einer bedingten Entscheidung in einem Workflow
+title: Konfigurieren von bedingten Entscheidungen in einem Workflow
 description: Verwenden Sie die folgenden Verfahren, um die Eigenschaften der bedingten Entscheidung zu konfigurieren.
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 597a6a254dcd623f9e7c59a0309eeedee1b5adee
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 64e8b2ed5c538cb982f9f03c1db24e38472be868
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="configure-a-conditional-decision-in-a-workflow"></a>Konfigurieren einer bedingten Entscheidung in einem Workflow
+# <a name="configure-conditional-decisions-in-a-workflow"></a>Konfigurieren von bedingten Entscheidungen in einem Workflow
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Gehen Sie folgendermaßen vor, um einen Namen für die bedingte Entscheidung ein
 1.  Klicken Sie im linken Bereich auf **Grundeinstellungen**.
 2.  Geben Sie im Feld **Name** einen eindeutigen Namen für die bedingte Entscheidung ein.
 
-## <a name="set-conditions"></a> Festlegen von Bedingungen
+## <a name="set-conditions"></a>Festlegen von Bedingungen
 Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten Bedingungen entspricht, welche Verzweigung verwendet wird.
 1.  Klicken Sie im linken Bereich auf **Grundeinstellungen**.
 2.  Klicken Sie auf **Bedingung hinzufügen**.

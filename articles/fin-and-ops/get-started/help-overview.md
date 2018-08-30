@@ -1,9 +1,9 @@
 ---
-title: "Hilfe – Überblick"
+title: Finance and Operations-Hilfesystem
 description: "Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems. Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können."
 author: margoc
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,14 +19,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="help-system-overview"></a>Hilfesytem – Überblick
+# <a name="finance-and-operations-help-system"></a>Finance and Operations-Hilfesystem
 
 [!include [banner](../includes/banner.md)]
 
@@ -52,7 +52,7 @@ Sie können in jedem verwendeten Produkt auf Hilfethemen und Aufgabenleitfäden 
 Dieses Thema beschreibt das Hilfesystem und erläutert, wie Sie debitorenspezifische Dokumentationen und Ressourcen zur Produktschulung für Ihre Organisation erstellen können.
 
 > [!IMPORTANT]
-> Die Registerkarte **Aufgabenleitfäden** ist derzeit nicht in Microsoft Dynamics 365 for Talent und Microsoft Dynamics 365 for Retail verfügbar. Wir arbeiten derzeit daran, diese Funktion in einer künftigen Version zu ermöglichen. Die Aufgabenleitfäden in der "Erste Schritte"-Erfahrung in Talent bleiben verfügbar, um Grundfunktionen abzudecken. Prozedurale Hilfe finden Sie auch auf der docs.microsoft.com-Website ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) für Retail und Talent.
+> Die Registerkarte **Aufgabenleitfäden** ist derzeit nicht in Microsoft Dynamics 365 for Talent und Microsoft Dynamics 365 for Retail verfügbar. Wir arbeiten derzeit daran, diese Funktion in einer künftigen Version zu ermöglichen. Die Aufgabenleitfäden in der "Erste Schritte"-Erfahrung in Talent bleiben verfügbar, um Grundfunktionen abzudecken. Prozedurale Hilfe finden Sie auch auf der docs.microsoft.com-Website ([docs.microsoft.com/dynamics365/unified-operations](../../index.md) für Retail und Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hilfe auf docs.microsoft.com
 
@@ -82,27 +82,19 @@ Um ein RSS-Feed aller Aktualisierungen des Unified Operations-Inhalts zu abonnie
 [RSS-Feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Rückmeldung geben 
-Wir freuen uns über Kundenfeedback. Sie können kommentieren oder Änderungen an unserem Inhalt über GitHub vorschlagen.
+Wir freuen uns über Kundenfeedback. Sie können entweder kommentieren oder Änderungen an unserem Inhalt über GitHub vorschlagen. Weitere Informationen zu unserem Feedbacksystem finden Sie unter [diesem Blogbeitrag](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-a-comment"></a>Geben Sie uns einen Kommentar 
+##### <a name="leave-us-feedback"></a>Feedback senden 
 Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdessen einen Kommentar am unteren Seitenrand.  
 
-1 Klicken Sie auf **Kommentare**, um zu den Kommentaren unten auf der Seite zu gelangen.
+1. Klicken Sie auf **Feedback**, um zu den Kommentaren am unteren Seitenrand zu gelangen, und klicken Sie anschließend entweder auf **Produktfeedback** oder **Anmelden, um Dokumentationsfeedback zu senden**.
 
-![Kommentare](./media/comments.png)
+![Feedback](./media/comments.png)
 
-2 Beginnen Sie damit, Ihre Kommentare einzugeben, und klicken Sie dann auf **Kommentar veröffentlichen**.
+2. Beginnen Sie damit, Ihre Kommentare einzugeben, und klicken Sie dann auf **Feedback senden**.
 
-![Kommentar veröffentlichen](./media/before-signin.png)
+![Kommentar veröffentlichen](./media/feedback.png)
 
-3 Wählen Sie den Kontotyp aus, mit dem Sie sich anmelden möchten:  
-Klicken Sie auf eines der Symbole auf der linken Seite, um diese Website einem bestehenden Konto zuzuordnen, wie beispielsweise einem Twitter-, Facebook- oder Microsoft-Konto. 
-
-Oder 
-
-Auf der rechten Seite geben Sie eine E-Mail-Adresse sowie ein neues Kennwort ein, um ein neues Konto für die Website zu erstellen. 
-
-![Anmeldeoptionen](./media/signin-options.png)
 
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Schlagen Sie eine Änderung vor oder tragen Sie Inhalte bei über GitHub
@@ -115,13 +107,12 @@ Weitere Informationen hierzu finden Sie im Installationshandbuch: https://github
 
 > [!NOTE]
 > Es werden derzeit nur Beiträge zu unseren englischen Repositorys akzeptiert.  
-> Wir akzeptieren keine Probleme enthalten, die durch GitHub gemeldet werden - Achten Sie darauf, eine Pullanforderung für Inhaltsvorschläge zu verwenden. Produkt- und Funktionsrückmeldung wird am besten durch das Dynamics 365 Ideas Portal https://experience.dynamics.com/ideas/ bearbeitet. 
 
 
 ## <a name="task-guides"></a>Aufgabenleitfäden
-Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können einen Aufgabenleitfaden aus dem Hilfe-Bereich öffnen (wiedergeben).  Wenn Sie zuerst auf einen Aufgabenleitfaden klicken, werden im Hilfe-Bereich Schritt für Schritt die Anweisungen für die Aufgabe angezeigt. Lokalisierte Aufgabenleitfäden sind jetzt verfügbar. 
+Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können einen Aufgabenleitfaden aus dem Hilfe-Bereich öffnen (wiedergeben). Wenn Sie zuerst auf einen Aufgabenleitfaden klicken, werden im Hilfe-Bereich Schritt für Schritt die Anweisungen für die Aufgabe angezeigt. Lokalisierte Aufgabenleitfäden sind jetzt verfügbar. 
 
-Wir beauftragen unterschiedliche Aufgabenleitfäden für jedes Produkt wie Dynamics 365 for Retail,  Dynamics 365 for Finance and Operations oder Dynamics 365 for Talent. Der Abschnitt "Auf Aufgabenleitfäden zugreifen" im Hilfebereich beschreibt, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden. 
+Wir beauftragen unterschiedliche Aufgabenleitfäden für jedes Produkt wie Dynamics 365 for Retail, Dynamics 365 for Finance and Operations oder Dynamics 365 for Talent. Der Abschnitt "Auf Aufgabenleitfäden zugreifen" im Hilfebereich beschreibt, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden. 
 
 ![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
 

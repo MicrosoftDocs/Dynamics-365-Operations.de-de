@@ -1,5 +1,5 @@
 ---
-title: Benachrichtigungen in der Verkaufsstelle anzeigen
+title: Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
 description: "In diesem Thema wird beschrieben, wie Auftragsbenachrichtigungen in der Verkaufsstelle und im Benachrichtigungsframework aktiviert werden, die für andere Arbeitsgänge erweitert werden können. Schließlich können Entwickler diese Benachrichtigungen auf Arbeitsgänge mit Ausnahme von Auftragserfüllungsarbeitsgängen erweitern."
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
-ms.openlocfilehash: a55af4c26d74cc392d3c53aacb66e0a8bc97abf2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
 ms.contentlocale: de-de
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="show-order-notifications-in-the-point-of-sale"></a>Benachrichtigungen in der Verkaufsstelle anzeigen
+# <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ So kann das System Auftragserfüllungsarbeitsgänge nur für Benachrichtigungen 
 Um Benachrichtigungen für die Auftragserfüllungsarbeitsgänge zu aktivieren, beachten Sie die folgenden Schritte:
 
 1. Wechseln Sie zu **Retail** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS** &gt; **Betrieb**.
-2. Suchen Sie nach dem Arbeitsgang **Auftragserfüllung** und aktivieren Sie das Kontrollkästchen **Aktivieren Sie Benachrichtigungen**sodass das Benachrichtigungsframework aud den Handler für diesen Arbeitsgang hört. Wenn der Handler implementiert wird, werden Benachrichtigungen für diesen Arbeitsgang dann am Point-of-Sale angezeigt.
+2. Suchen Sie nach dem Arbeitsgang **Auftragserfüllung** und aktivieren Sie das Kontrollkästchen **Aktivieren Sie Benachrichtigungen** sodass das Benachrichtigungsframework aud den Handler für diesen Arbeitsgang hört. Wenn der Handler implementiert wird, werden Benachrichtigungen für diesen Arbeitsgang dann am Point-of-Sale angezeigt.
 3. Gehen Sie zu **Retail** &gt; **Mitarbeiter** &gt; **Arbeitskräfte** &gt;, unter Registerkarte Retail, öffnen Sie POS-Berechtigungen, die der Arbeitskraft zugeordnet werden. Erweitern Sie das Inforegister **Benachrichtigungen**, fügen Sie den **Auftragserfüllung** Arbeitsgang hinzu, und legen Sie das Feld **Anzeigereihenfolge** auf **1** fest. Wenn mehrere Benachrichtigung konfiguriert sind, wird es dazu verwendet, die Benachrichtigungen anzuordnen. Benachrichtigungen, die geringer sind als der Wert **Anzeigereihenfolge** erscheinen über Benachrichtigungen, die einen höheren Wert haben. Benachrichtigungen, die einen Wert **Anzeigereihenfolge** **1** besitzen, werden oben angezeigt.
 
     Benachrichtigungen werden nur für Arbeitsgänge angezeigt, die auf dem Inforegister **Benachrichtigungen** hinzugefügt werden, und Sie können Arbeitsgänge dort hinzufügen, wenn das Kontrollkästchen **Aktivieren Sie Benachrichtigungen** für diese Einzelvorgänge auf der Seite **POS-Vorgängen** aktiviert wurde. Darüber hinaus werden Benachrichtigungen für einen Arbeitsgang angezeigt, wenn der Arbeitsgang zu den POS-Berechtigungen für diese Arbeitskräfte hinzugefügt wird.
@@ -47,7 +47,7 @@ Um Benachrichtigungen für die Auftragserfüllungsarbeitsgänge zu aktivieren, b
     > Benachrichtigungen können in der Benutzerebene überschrieben werden. Öffnen Sie den Datensatz der Arbeitskraft, wählen Sie **POS-Berechtigungen** aus und bearbeiten Sie dann die Benachrichtigungsdauerauftrag des Benutzers.
 
 4. Klicken Sie auf **Retail und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profil** &gt; **Funktionsprofile**. Wählen Sie im Feld **Benachrichtigungsintervall**, wieoft Benachrichtigungen abgerufen werden sollen. Für mehrere Benachrichtigungen muss der POS Echtzeitanrufe der Backofficebewerbung vornehmen. Diese Anrufe verbrauchen die Berechnungskapazität der Backofficebewerbung. Wenn das Benachrichtigungsintervall festlegen, sollten Sie Ihre geschäftlichen Anforderungen und die Auswirkung von Echtzeitanrufen der Backofficebewerbung berücksichtigen. Ein Wert **0** (Null) stellt Benachrichtigungen ab.
-5. Klicken Sie auf **Einzelhandel** &gt; **Handel IT** &gt; **Vertriebsplan**. Wählen Sie den Zeitplan **1060** (**Mitarbeiter**) aus, um die Benachrichtungsabonnementeinstellungen zu synchronisieren, und klicken Sie dann auf **Jetzt ausführen**. Synchronisieren Sie danach das Berechtigungsintervall, indem Sie die **1070** (**(Kanalkonfiguration** auswählen, und klicken Sie dann auf **Jetzt ausführen**.
+5. Klicken Sie auf **Einzelhandel** &gt; **Handel IT** &gt; **Vertriebsplan**. Wählen Sie den Zeitplan **1060** (**Mitarbeiter**) aus, um die Benachrichtungsabonnementeinstellungen zu synchronisieren, und klicken Sie dann auf **Jetzt ausführen**. Synchronisieren Sie danach das Berechtigungsintervall, indem Sie die **1070** (**Kanalkonfiguration**) auswählen, und klicken Sie dann auf **Jetzt ausführen**.
 
 ## <a name="view-notifications-in-the-pos"></a>Benachrichtigungen in POS anzeigen
 
@@ -60,7 +60,7 @@ Wenn neue Aufträge der Filiale zur Erfüllung zugewiesen werden, ändert sich d
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Aktivieren Sie Liveinhalt auf POS-Schaltflächen
 
-POS-Schaltflächen können jetzt eine Anzahl anzeigen, damit Arbeitskräfte einfach bestimmen können welche Aufgaben ihre umgehende Aufmerksamkeit erfordern. Um diese Nummer in einer POS-Schaltfläche anzuzeigen, müssen Sie die Einstellungen Benachrichtigung abschließen,  die weiter oben in diesem Thema beschrieben werden (das heißt, Sie müssen Benachrichtigungen für einen Arbeitsgang aktivieren und richten ein Benachrichtigungsintervall und die POS-Berechtigungsgruppe für die Arbeitskraft ein.) Darüber hinaus müssen Sie das Schaltflächenrasterdesigner öffnen, die Eigenschaften der Schaltfläche anzeigen und **Aktivieren Sie Liveinhalt** aktivieren. Im Feld **Inhalts-Ausrichtung** können Sie auswählen, ob die Anzahl in der oberen rechten Ecke der Schaltfläche (**Oben rechts**) oder im Verteilzentrum (**Mitte**) angezeigt wird.
+POS-Schaltflächen können jetzt eine Anzahl anzeigen, damit Arbeitskräfte einfach bestimmen können welche Aufgaben ihre umgehende Aufmerksamkeit erfordern. Um diese Nummer in einer POS-Schaltfläche anzuzeigen, müssen Sie die Einstellungen Benachrichtigung abschließen, die weiter oben in diesem Thema beschrieben werden (das heißt, Sie müssen Benachrichtigungen für einen Arbeitsgang aktivieren und richten ein Benachrichtigungsintervall und die POS-Berechtigungsgruppe für die Arbeitskraft ein.) Darüber hinaus müssen Sie das Schaltflächenrasterdesigner öffnen, die Eigenschaften der Schaltfläche anzeigen und **Aktivieren Sie Liveinhalt** aktivieren. Im Feld **Inhalts-Ausrichtung** können Sie auswählen, ob die Anzahl in der oberen rechten Ecke der Schaltfläche (**Oben rechts**) oder im Verteilzentrum (**Mitte**) angezeigt wird.
 
 > [!NOTE]
 > Der Liveinhalt kann für Arbeitsgänge aktiviert werden, wenn das Feld **Aktivieren Sie Benachrichtigungen** auf der Seite **POS-Vorgängen** aktiviert wurde, wie weiter oben in diesem Thema beschrieben wurde.

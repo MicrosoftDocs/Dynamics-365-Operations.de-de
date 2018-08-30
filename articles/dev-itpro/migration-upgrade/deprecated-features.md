@@ -1,9 +1,9 @@
 ---
-title: Veraltete Funktionen
+title: Entfernte oder veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
-ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
+ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
+ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
 ms.contentlocale: de-de
-ms.lasthandoff: 05/30/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -38,6 +38,9 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!Note]
 > Ab der Version von Juli 2017 von Dynamics 365 for Finance and Operations, Enterprise Edition mit Plattformupdate 8, wird der Typ der Bereitstellungen bei jeder entfernten oder veralteten Funktion angegeben. Alle vorherigen Versionen, die in diesem Thema erwähnt wurden, haben nur Cloudbereitstellungen unterstützt.
+
+> [!Note]
+> Detaillierte Informationen über Objekte in Finance and Operations finden Sie in den [Berichten der technischen Referenz](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die unterschiedlichen Versionen dieser Berichte vergleichen, um über Objekte zu erfahren, die in jeder Version von Finance and Operations geändert oder entfernt wurden.
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 mit Plattformupdate 15
 Keine Funktionen sind in dieser Version entfernt oder veraltet worden. Plattformupdate 15 ist kumulativ und enthält neue oder geänderte Funktionen aus Plattformupdate 13, Plattformupdate 14 und Plattformupdate 15.
@@ -84,7 +87,7 @@ Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel-
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Produktupdates in Microsoft Power BI. |
-| **Ersetzt durch eine andere Funktion?**   | Die Inhaltspakete **Kostenmanagement**, **Finanzleistung** und **Retail Channel-Leistung**Packs, die auf der Site [AppSource](https://appsource.microsoft.com) zur Verfügung stehen, werden durch Analyseanwendungen ersetzt, die eine Lösungsintegrationen auf der Datenbankebene zulassen. Weitere Informationen zu analytischen Anwendungen finden Sie unter [Eingebettetes Power BI in Arbeitsbereichen](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Ersetzt durch eine andere Funktion?**   | Die Inhaltspakete **Kostenmanagement**, **Finanzleistung** und **Retail Channel-Leistung**-Packs, die auf der Site [AppSource](https://appsource.microsoft.com) zur Verfügung stehen, werden durch Analyseanwendungen ersetzt, die eine Lösungsintegrationen auf der Datenbankebene zulassen. Weitere Informationen zu analytischen Anwendungen finden Sie unter [Eingebettetes Power BI in Arbeitsbereichen](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Betroffene Produktbereiche**         | Kostenverwaltung, Finanzen und Einzelhandel                                                                                               |
 | **Bereitstellungsoption**              | Nur Cloud (Integration mit PowerBI.com wird in lokalen Bereitstellungen nicht unterstützt.)                                                                                                            |
 | **Status**                         | Veraltet: Zielzeitrahmen für die Funktionalitätsentfernung ist das zweite Quartal 2018.    |

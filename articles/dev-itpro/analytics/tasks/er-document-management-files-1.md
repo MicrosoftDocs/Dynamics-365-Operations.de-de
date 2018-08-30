@@ -1,5 +1,5 @@
 --- 
-title: Datenmodell zur Verwendung der Dokumentverwaltungsdateien in Formatausgaben vorbereiten
+title: Datenmodelle zum Verwenden von Dokumentverwaltungsdateien in EB-Ausgabe vorbereiten
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9f99259056fab2d56d1ccf7487681c183551c64f
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fcafaf17315f54594116a143f36e924bc705d839
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="prepare-data-model-to-use-document-management-files-in-format-outputs"></a>Datenmodell zur Verwendung der Dokumentverwaltungsdateien in Formatausgaben vorbereiten
+# <a name="prepare-data-models-to-use-document-management-files-in-er-output"></a>Datenmodelle zum Verwenden von Dokumentverwaltungsdateien in EB-Ausgabe vorbereiten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

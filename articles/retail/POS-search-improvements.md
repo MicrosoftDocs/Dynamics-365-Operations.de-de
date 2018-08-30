@@ -1,5 +1,5 @@
 ---
-title: Produktsuche und Debitorensuche in POS
+title: Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 description: "Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Microsoft Dynamics 365 for Retail."
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b055ae09e87434f9e43c558e2a43d0467d70aaed
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 50b0cec27e343b3b6aba464a04c9883160ab263a
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Überblick über Produkt- und Debitorensuche in der Verkaufsstelle
+# <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
 [!include [banner](includes/banner.md)]
 

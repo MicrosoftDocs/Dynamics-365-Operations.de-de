@@ -1,5 +1,5 @@
 ---
-title: Einrichten eines Callcenterkanals
+title: "Einrichten von Callcenterkanälen"
 description: "Dieses Thema enthält Informationen dazu, wie Aufträge für Callcenter mithilfe Microsoft Dynamics 365 for Retail verarbeitet werden."
 author: josaw1
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0d64a27aa8aed10c210ca3c2956dce67f8d634b8
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: d849279a642363d9cb591cd7a3b20c2883bb4a3b
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="set-up-a-call-center-channel"></a>Einrichten eines Callcenterkanals
+# <a name="set-up-call-center-channels"></a>Einrichten von Callcenterkanälen
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +43,7 @@ Ein E-Mail-Benachrichtigungsprofil kann im Callcenterkanal auch so konfiguriert 
 
 Bevor Vertrieb korrekt durch einen Callcenterkanal verarbeitet werden kann, müssen korrekte [Zahlungsmethoden](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments) und Lieferarten für den Kanal definiert werden.
 
-Auf der Ebene des Callcenterkanals, können andere Standardwerte definiert werden, die  Finanzdimensionen zugeordnet werden, die mit Aufträgen verknüpft werden, die in diesem Kanal erstellt werden.
+Auf der Ebene des Callcenterkanals, können andere Standardwerte definiert werden, die Finanzdimensionen zugeordnet werden, die mit Aufträgen verknüpft werden, die in diesem Kanal erstellt werden.
 
 ## <a name="options-for-order-processing-behavior"></a>Optionen für Auftragsverarbeitungsverhalten
 
@@ -63,7 +63,7 @@ Auch wenn die Einstellung **Aktivieren Sie Auftragsabschluss** deaktiviert ist, 
 
 ### <a name="enable-direct-selling"></a>Direktverkauf aktivieren
 
-Wenn die Einstellung **Aktivieren des Direktverkauf** für den Callcenterkanal aktiviert ist, können Benutzer die Upsell- und Cross-Sell-Funktionen von Retail nutzen. In diesem Fall erscheint ein Popupfenster bei der Auftragserfassung und schlägt andere Produkte vor, die der Callcenterbenutzer dem Debitor anbieten kann. Die Produkte, die vorgeschlagen werden, basieren auf dem Produkt, das derzeit für die Auftragsposition bestellt wurde. Derzeit sind die Upsell und die Cross-Sell-Vorschläge auf Artikelebene auf Produkte oder Kataloge  konfiguriert. Wenn die Einstellung **Aktivieren des Direktverkauf** für den Callcenterkanal deaktiviert ist, werden Popupfenster nicht in der Verkaufserfassung angezeigt, selbst wenn ein gültiger Upsell oder Cross-Sell für einen Artikel definiert wurden, der bestellt ist.
+Wenn die Einstellung **Aktivieren des Direktverkauf** für den Callcenterkanal aktiviert ist, können Benutzer die Upsell- und Cross-Sell-Funktionen von Retail nutzen. In diesem Fall erscheint ein Popupfenster bei der Auftragserfassung und schlägt andere Produkte vor, die der Callcenterbenutzer dem Debitor anbieten kann. Die Produkte, die vorgeschlagen werden, basieren auf dem Produkt, das derzeit für die Auftragsposition bestellt wurde. Derzeit sind die Upsell und die Cross-Sell-Vorschläge auf Artikelebene auf Produkte oder Kataloge konfiguriert. Wenn die Einstellung **Aktivieren des Direktverkauf** für den Callcenterkanal deaktiviert ist, werden Popupfenster nicht in der Verkaufserfassung angezeigt, selbst wenn ein gültiger Upsell oder Cross-Sell für einen Artikel definiert wurden, der bestellt ist.
 
 Wenn die Einstellung **Aktivieren des Direktverkauf** aktiviert ist, werden die Skript- und Bildfunktionen der Auftragseintragsseite auch aktiviert. In diesem Fall ist eine Informationsleiste rechts der Seite bei der Auftragserfassung verfügbar. Dieser Bereich kann die Skripts anzeigen, die mit dem generischen Auftragserfassungsprozess verknüpft sind, den Katalogquellcode, der angewendet wurde, oder die Skripts, die den Artikeln zugeordnet werden, die bestellt wurden. Darüber hinaus kann der Bildbereich ein Produktbild für die Artikel anzeigen, die bestellt wurden, wenn ein Bild für den Artikel in der Produkteinstellung definiert wurde.
 
@@ -77,7 +77,7 @@ Wenn Sie das Callcenterkanal definieren, müssen Sie Kanalbenutzer mit dem Callc
 
 Standardmäßig wird die Markierung **Retailverkauf** im Auftragskopf für alle Aufträge aktiviert, die Callcenterbenutzer erstellen. Hierbei können Aufträge vom Preis des Systems und Funktionen der verkaufsfördernden Maßnahmen profitieren.
 
-Benutzer, die nicht mit einem Callcenterkanal verknüpft sind, nutzen die  Standardauftragserfassungsfunktionen von Microsoft Dynamics 365 for Finance and Operations. Aufträge, die diese Benutzer durch das Auftragseingabeformular eingeben, werden nicht als Retailaufträge systematisch identifiziert. Darüber hinaus sind diese Aufträge, die von diesen Benutzern eingegeben werden, nicht Auftragsabschlussregeln, Einzelhandelspreislogik oder anderen Auftragsprüfungen unterworfen, die in der Callcenterkanalkonfiguration oder im Systemparameter des Callcenters definiert werden können.
+Benutzer, die nicht mit einem Callcenterkanal verknüpft sind, nutzen die Standardauftragserfassungsfunktionen von Microsoft Dynamics 365 for Finance and Operations. Aufträge, die diese Benutzer durch das Auftragseingabeformular eingeben, werden nicht als Retailaufträge systematisch identifiziert. Darüber hinaus sind diese Aufträge, die von diesen Benutzern eingegeben werden, nicht Auftragsabschlussregeln, Einzelhandelspreislogik oder anderen Auftragsprüfungen unterworfen, die in der Callcenterkanalkonfiguration oder im Systemparameter des Callcenters definiert werden können.
 
 Nachdem Sie die Konfiguration des Callcenters abgeschlossen und Kanalbenutzer definiert haben, um das gewünschte Systemverhalten sicherzustellen, überprüfen Sie, ob alle erforderlichen Callcenterparameter bei **Retail** \> **Kanaleinstellung** \> **Callcenter-Einstellung** \> **Callcenter-Parameter** definiert sind. Überprüfen Sie, ob auch zugehörige Nummernkreise definiert sind.
 

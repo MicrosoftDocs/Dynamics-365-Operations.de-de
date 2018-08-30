@@ -18,14 +18,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e7e10768dd1e0a441842d5b13964f49153c35be3
-ms.openlocfilehash: cced03d29bb04182a3f5bae86c3bec6d3c086cde
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
 ms.contentlocale: de-de
-ms.lasthandoff: 07/10/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Einführung in Microsoft Dynamics 365 for Finance and Operations
+# <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentation zu Microsoft Dynamics 365 for Finance and Operations
 [!include [banner](includes/banner.md)]
 
 Erfahren Sie, wie Sie Microsoft Dynamics 365 for Finance and Operations erfolgreich in Ihrem Unternehmen einsetzen können. Dazu dienen die Ressourcen unten, in denen Sie ausgezeichneten Inhalt für Endbenutzer, Entwickler und IT-Fachkräfte finden. 
@@ -49,7 +49,7 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementierungslebenszyklus</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Onboarding eines Projekts</a></p>
-<p><a href="imp-lifecycle/prepare-go-live.md">Vorbereiten des Go-Live</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Vorbereiten der Liveschaltung</a></p>
   
 <h3><a href="../financials/index.md">Finanzverwaltung</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kreditorenkonten</a></p>

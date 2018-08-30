@@ -1,5 +1,5 @@
 --- 
-title: "Designkonfigurationen, um die eingehenden Dokumenten für Bewerbungsdatenenaktualisierungen (ER) zu analysieren"
+title: EB-Konfigurationen entwerfen, um eingehende Dokumente zu analysieren
 description: "Diese Prozedur zeigt, wie elektronische Berichterstellungskonfigurationen (EB) entworfen werden, um ein eingehendes elektronisches Dokument für die Anwendungsdatenaktualisierung zu analysieren."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 96c9397c6a83d61b679492f66f4aa6661f1f8621
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
 ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Designkonfigurationen, um die eingehenden Dokumenten für Bewerbungsdatenenaktualisierungen (ER) zu analysieren
+# <a name="design-er-configurations-to-parse-incoming-documents"></a>EB-Konfigurationen entwerfen, um eingehende Dokumente zu analysieren
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -30,12 +30,12 @@ Diese Prozedur zeigt, wie elektronische Berichterstellungskonfigurationen (EB) e
 
 Diese Prozedur wird für Benutzer erstellt, die die Rolle des Systemadministrators oder des Entwicklers für elektronische Berichterstellung haben, die ihnen zugewiesen sind. 
 
-Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. Bevor Sie beginnen, laden Sie Dateien herunterladen und speichern Sie jene, die im Hilfethema "Generieren Sie elektronische Dokumente und Aktualisierungsbewerbungsdaten mit ER-Tool (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents) aufgeführt sind. Die Dateien sind: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. Bevor Sie beginnen, laden Sie die im Thema „Eingehende Dokumente analysieren, um Anwendungsdaten zu aktualisieren” aufgelisteten Dateien herunter und speichern Sie diese (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Die Dateien sind: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  
 2. Klicken Sie auf "Berichterstellungskonfigurationen".
-    * Anhand des folgenden Szenarios werden die Funktionen beim Analysieren eingehender elektronischer Dokumente im XML-Format gezeigt: Anwendung (Dynamics 365 for Finance and Operations) fordert Daten aus dem Webdienst an (beispielsweise http://efsta.org/ EFSTA-Steuerdienst) und analysiert die eingehenden Antworten, um die Anwendungsdaten entsprechend zu aktualisieren. Um auf effizienteste Weise zu analysieren, wird ein einziges EB-Format verwendet, trotz der anderen Struktur der erwarteten eingehenden Dokumente im XML-Format.   
+    * Anhand des folgenden Szenarios werden die Funktionen beim Analysieren eingehender elektronischer Dokumente im XML-Format gezeigt: ERP-Anwendung (Dynamics 365 for Finance and Operations) fordert Daten aus dem Webdienst an (beispielsweise http://efsta.org/ EFSTA-Steuerdienst) und analysiert die eingehenden Antworten, um die Anwendungsdaten entsprechend zu aktualisieren. Um auf effizienteste Weise zu analysieren, wird ein einziges EB-Format verwendet, trotz der anderen Struktur der erwarteten eingehenden Dokumente im XML-Format.   
 
 ## <a name="import-and-review-er-configurations"></a>EB-Konfigurationen importieren und überprüfen
 Importieren Sie die EB-Modellkonfiguration, die das Beispieldatenmodell enthält, das entwickelt wurde, um die Details der eingehenden Datei zu speichern.  

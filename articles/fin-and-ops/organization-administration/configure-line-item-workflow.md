@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren eines Positionsworkflows
+title: Positionsworkflows konfigurieren
 description: "In diesem Thema wird erläutert, wie das Positionsworkflowelement konfiguriert wird."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30d6aeda6be7bc81763c0b3f20c568d3fc81526
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 0a57baa3ecae727721f62477cfc5fa41f60ad06d
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="configure-a-line-item-workflow"></a>Konfigurieren eines Positionsworkflows
+# <a name="configure-line-item-workflows"></a>Positionsworkflows konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,7 +44,7 @@ Gehen Sie folgendermaßen vor, um anzugeben, ob derselbe Workflow zum Verarbeite
 
 1.  Klicken Sie im linken Bereich auf **Grundeinstellungen**.
 2.  Wird derselbe Workflow zum Verarbeiten aller Positionen in einem Dokument verwendet, klicken Sie **Einzelnen Workflow für alle Positionen aufrufen** auf. Wählen Sie anschließend den Workflow zum Verarbeiten der Positionen aus.
-3.  Wenn ein bestimmter Workflow Positionen verarbeiten sollte, die einen bestimmten Satz von Bedingungen erfüllen, klicken Sie auf**Einen Workflow für jede Position aufrufen**. Folgen Sie diesen Schritten, um die Bedingungen festzulegen:
+3.  Wenn ein bestimmter Workflow Positionen verarbeiten sollte, die einen bestimmten Satz von Bedingungen erfüllen, klicken Sie auf **Einen Workflow für jede Position aufrufen**. Folgen Sie diesen Schritten, um die Bedingungen festzulegen:
     1.  Klicken Sie auf **Hinzufügen**.
     2.  Wählen Sie die Bedingung in der Tabelle aus.
     3.  Geben Sie auf der Registerkarte **Bedingungsname** einen Namen für die festzulegenden Bedingungen ein.

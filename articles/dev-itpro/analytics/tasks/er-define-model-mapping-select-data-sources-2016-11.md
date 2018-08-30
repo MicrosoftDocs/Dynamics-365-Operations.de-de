@@ -1,5 +1,5 @@
 --- 
-title: "Definieren der Modellzuordnung und Auswählen der Datenquellen für elektronische Berichterstellung"
+title: "EB-Modellzuordnungen definieren und Datenquellen für sie auswählen"
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle \"Entwickler für elektronische Berichterstellung\" zugewiesen ist, ein Modell der elektronischen Berichterstellung (ER) auswählen kann."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 512e24b5d0e20f00890e2a9abfe45b660a913913
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2beda3555274fee3f17ad13c54c6823307216385
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="define-model-mapping-and-select-data-sources-for-electronic-reporting-er"></a>Definieren der Modellzuordnung und Auswählen der Datenquellen für elektronische Berichterstellung
+# <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>EB-Modellzuordnungen definieren und Datenquellen für sie auswählen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

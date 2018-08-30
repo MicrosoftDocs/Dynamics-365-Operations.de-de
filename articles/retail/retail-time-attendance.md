@@ -1,5 +1,5 @@
 ---
-title: Zeit und Anwesenheit im Einzelhandel
+title: Zeit- und Anwesenheitsverwaltung in Retail
 description: "In diesem Thema werden Szenarien beschreiben, die für die Verwaltung von Zeit und Anwesenheit Microsoft Dynamics 365 for Retail unterstützt werden."
 author: aamirallaqaband
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d5672579c1e2d51e4b6494a1e86e3606c09a93a2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 21c29c3c37dfacdd98f5c3ec7698f07623da2285
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="retail-time-and-attendance"></a>Einzelhandelszeit und Anwesenheit
+# <a name="time-and-attendance-management-in-retail"></a>Zeit- und Anwesenheitsverwaltung in Retail
 
 [!include [banner](includes/banner.md)]
 
@@ -45,7 +45,7 @@ In diesem Thema werden Szenarien beschreiben, die für die Verwaltung von Zeit u
 
 -   Wenden Sie Profile durch Verwendung der Arbeitsplanung an. Weitere Informationen finden Sie unter <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
-Informationen zu den Konfigurationsschritten finden Sie unter <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
+Weitere Informationen zu den Konfigurationsschritten finden Sie unter <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
 ### <a name="retail-specific-configuration"></a>Einzelhandelsspezifische Konfiguration
 
@@ -135,7 +135,7 @@ Ein Dynamics 365 for Retail Benutzer folgt dem Workflow, um Zeiterfassungen zu b
 -   Massenausstempeln
 -   Erfassen der Abwesenheit
 
-Weitere Informationen zum Verarbeiten von Zeit- und Anwesenheitserfassungen finden Sie unter <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+Informationen zum Verarbeiten von Zeit- und Anwesenheitserfassungen finden Sie unter <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
 
 
 

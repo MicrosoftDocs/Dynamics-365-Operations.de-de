@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: a64621c5310e5f68b9d6f1545bb39ce1519d71cf
 ms.contentlocale: de-de
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -33,16 +33,23 @@ Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die
 
 Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.
 
-:::row::: :::column::: - [Kreditoren](accounts-payable/accounts-payable.md) 
+:::row:::
+    :::column:::
+        - [Kreditoren](accounts-payable/accounts-payable.md) 
         - [Debitoren](accounts-receivable/accounts-receivable.md)
-        - [Budgeting](budgeting/budgeting-overview.md) 
-        - [Bargeldbudgetierung und Bankverwaltung](cash-bank-management/cash-bank-management.md)
-        - [Kostenrechnung](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [Spesenverwaltung](expense-management/expense-management.md)
+        - [Budgetierung](budgeting/budgeting-overview.md) 
+        - [Bargeld- und Bankverwaltung](cash-bank-management/cash-bank-management.md)
+        - [Kostenrechnung](cost-accounting/cost-accounting-home-page.md)
+    :::column-end:::
+    :::column:::
+        - [Spesenverwaltung](expense-management/expense-management.md)
         - [Finanzberichterstellung](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
-        - [Anlagen](fixed-assets/fixed-assets.md)
+        - [Anlagevermögen](fixed-assets/fixed-assets.md)
         - [Hauptbuch](general-ledger/general-ledger.md) 
-        - [Projektverwaltung](project-management/overview-project-management-accounting.md)
-        - [Öffentlicher Sektor](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
+        - [Projektmanagement](project-management/overview-project-management-accounting.md)
+        - [Öffentlicher Sektor](public-sector/public-sector-functionality.md) 
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
