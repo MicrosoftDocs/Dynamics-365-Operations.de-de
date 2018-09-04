@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 056bc38fc69422b17b1b7720ce37089b27e8aa2e
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: ac9e836b0baa24c40554844ea4f3288b80e0c654
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -55,11 +55,13 @@ ms.lasthandoff: 08/07/2018
 
 ## <a name="generate-the-recurring-invoices"></a><span data-ttu-id="0b0cf-125">Generieren der Serienrechnungen</span><span class="sxs-lookup"><span data-stu-id="0b0cf-125">Generate the recurring invoices</span></span>
 <span data-ttu-id="0b0cf-126">Auf der Seite **Serienrechnungen**gibt es eine Aufgabe zum Verarbeiten von Serienrechnungsvorlagen.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-126">On the **Recurring invoices** page, there is a task that processes recurring invoice templates.</span></span> <span data-ttu-id="0b0cf-127">Sie geben das Rechnungsdatum und die Vorlage zum Generieren der Rechnungen an.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-127">You specify the invoice date and the template to generate the invoices from.</span></span> <span data-ttu-id="0b0cf-128">Die Rechnungen werden generiert, und jeder Gruppe von verarbeiteten Rechnungen wird eine individuelle Serienkennung zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-128">Invoices will be generated and assigned a single recurrence ID number for each group of invoices that is processed.</span></span>
-<span data-ttu-id="0b0cf-129">Buchen von Freitext-Serienrechnungen</span><span class="sxs-lookup"><span data-stu-id="0b0cf-129">Post recurring free text invoices</span></span>
+
+<a name="post-recurring-free-text-invoices"></a><span data-ttu-id="0b0cf-129">Buchen von Freitext-Serienrechnungen</span><span class="sxs-lookup"><span data-stu-id="0b0cf-129">Post recurring free text invoices</span></span>
 ---------------------------------
 
 <span data-ttu-id="0b0cf-130">Nachdem Serienrechnungen generiert wurden, werden die Serienkennungen in einer Buchungsaufgabe auf der Seite **Serienrechnungen**angezeigt.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-130">After recurring invoices are generated, the invoice recurrence IDs appear in a posting task on the **Recurring invoices** page.</span></span> <span data-ttu-id="0b0cf-131">Sie können alle Rechnungen für eine Serienkennung anzeigen, indem Sie auf den Link klicken.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-131">You can view all of the invoices for a recurrence ID by clicking the link.</span></span> <span data-ttu-id="0b0cf-132">Beim Überprüfen der Rechnungen für eine Serienkennung können Sie einzelne Rechnungen löschen.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-132">During your review of the invoices for the recurrence ID, you can delete individual invoices.</span></span> <span data-ttu-id="0b0cf-133">Die Wiederholungseinstellungen für den Debitor werden für diese Vorlage zurückgesetzt und können später neu generiert werden.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-133">The customer's recurrence settings will be reset for that template, so that it can be regenerated later.</span></span> <span data-ttu-id="0b0cf-134">Sie können eine, mehrere oder alle Rechnungen für eine Serienkennung buchen.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-134">You can post one, many, or all of the invoices for a recurrence ID.</span></span> <span data-ttu-id="0b0cf-135">Wenn Workflows aktiviert sind, müssen Sie auf **Senden** klicken, bevor Sie die Rechnungen buchen können.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-135">If workflows are enabled, you must click **Submit** before you can post the invoices.</span></span>
-<span data-ttu-id="0b0cf-136">Drucken von Freitext-Serienrechnungen</span><span class="sxs-lookup"><span data-stu-id="0b0cf-136">Print recurring free text invoices</span></span>
+
+<a name="print-recurring-free-text-invoices"></a><span data-ttu-id="0b0cf-136">Drucken von Freitext-Serienrechnungen</span><span class="sxs-lookup"><span data-stu-id="0b0cf-136">Print recurring free text invoices</span></span>
 ----------------------------------
 
 <span data-ttu-id="0b0cf-137">Nach dem Buchen von Serienrechnungen können Sie die Rechnungen auf der Seite mit der Liste mit Freitextrechnungen drucken.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-137">After recurring invoices are posted, you can print the invoices from the free text invoice list page.</span></span> <span data-ttu-id="0b0cf-138">Sie können die ausgewählten Rechnungen drucken oder einen Bereich von Rechnungen auswählen und drucken.</span><span class="sxs-lookup"><span data-stu-id="0b0cf-138">You can print the invoices that are selected, or you can select a range of invoices to print.</span></span>
