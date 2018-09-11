@@ -1,26 +1,27 @@
----
+--- 
 title: Einen Produktionsauftrag als abgeschlossen melden
 description: Diese Prozedur zeigt an, wie ein Produktionsauftrag als abgeschlossen gemeldet wird.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ProdTableListPage, ProdParmReportFinished, ProdJournalTransProd
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 9c523350af46ffa1516ea42aa0328d4f24f57133
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 3ad1027eccd543adf883890d343705b928daa405
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="report-a-production-order-as-finished"></a><span data-ttu-id="9986c-103">Einen Produktionsauftrag als abgeschlossen melden</span><span class="sxs-lookup"><span data-stu-id="9986c-103">Report a production order as finished</span></span>
@@ -50,4 +51,5 @@ ms.lasthandoff: 08/07/2018
 3. <span data-ttu-id="9986c-123">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="9986c-123">In the list, mark the selected row.</span></span>
 4. <span data-ttu-id="9986c-124">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="9986c-124">In the list, click the link in the selected row.</span></span>
     * <span data-ttu-id="9986c-125">Die Erfassung "Fertigmeldung" wurde gebucht.</span><span class="sxs-lookup"><span data-stu-id="9986c-125">The Report as finished journal is posted.</span></span> <span data-ttu-id="9986c-126">Wenn Sie Regulierungen in der Erfassung vornehmen möchten, können Sie manuell eine neue Erfassung erstellen, in der Sie Änderungen vornehmen können.</span><span class="sxs-lookup"><span data-stu-id="9986c-126">If you want to make adjustments to the journal, you can manually create  a new journal where you can make changes.</span></span>  
+
 

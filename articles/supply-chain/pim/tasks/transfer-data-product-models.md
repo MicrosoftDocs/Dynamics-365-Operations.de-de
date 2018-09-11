@@ -3,23 +3,24 @@ title: "Daten für Produktmodelle übertragen"
 description: "Der Export von Daten für ein Produktkonfigurationsmodell setzt voraus, dass Sie mindestens ein verfügbares Produktmodell haben."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: c0109cc019e6de0b992b1512c3e9e0802f00fdb8
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 1c1353b48d6bf20e8e1589069fe25890b021fe6b
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="transfer-data-for-product-models"></a><span data-ttu-id="39bd1-103">Daten für Produktmodelle übertragen</span><span class="sxs-lookup"><span data-stu-id="39bd1-103">Transfer data for product models</span></span>

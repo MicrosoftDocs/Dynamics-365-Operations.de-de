@@ -3,24 +3,25 @@ title: "Termin für eine Auslastung einrichten"
 description: "Dieses Verfahren zeigt, wie eine Dock-Terminplanung für eine Auslastung eingerichtet wird."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WHSLoadPlanningWorkbench, TMSAppointment
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: ca00d466eebb1ff9ceaf3b20dfb9006b86abc809
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: f704b399b1ea24cd1393f1c81e83aa0627047f61
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="set-up-an-appointment-for-a-load"></a><span data-ttu-id="fc71f-103">Termin für eine Auslastung einrichten</span><span class="sxs-lookup"><span data-stu-id="fc71f-103">Set up an appointment for a load</span></span>

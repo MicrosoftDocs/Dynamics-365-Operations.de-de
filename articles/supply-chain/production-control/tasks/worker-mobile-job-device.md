@@ -3,24 +3,25 @@ title: "Eine Arbeitskraft konfigurieren, die das mobile Einzelvorgangsgerät ver
 description: "Dieses Verfahren zeigt Ihnen an, wie Sie richtigen Rollen zu einem Benutzerkonto einer Arbeitskraft zuzuordnen und dann die Arbeitskraft für Fertigungsbereichregistrierungen aktivieren."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 3582561dbcf44a7260c0fc1aa4f11b3e5caffc1d
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: e3f839ba377a0c28aada2c2f56c8f45480d21f80
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="44497-103">Eine Arbeitskraft konfigurieren, die das mobile Einzelvorgangsgerät verwendet</span><span class="sxs-lookup"><span data-stu-id="44497-103">Configure a worker using the mobile job device</span></span>
@@ -68,4 +69,5 @@ ms.lasthandoff: 08/07/2018
 5. <span data-ttu-id="44497-140">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="44497-140">Click Edit.</span></span>
 6. <span data-ttu-id="44497-141">Im Feld "Produktionseinheits" können Sie den standardmäßigen Filter für die Arbeitskraft festlegen.</span><span class="sxs-lookup"><span data-stu-id="44497-141">In the Production unit field, you can set the default filter for the worker.</span></span> <span data-ttu-id="44497-142">Dadurch wird sichergestellt, dass nur Produktions-Einzelvorgänge für die ausgewählte Produktionseinheit angezeigt werden, wenn die Arbeitskraft sich beim Gerät anmeldet.</span><span class="sxs-lookup"><span data-stu-id="44497-142">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span>
 7. <span data-ttu-id="44497-143">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="44497-143">Close the page.</span></span>
+
 

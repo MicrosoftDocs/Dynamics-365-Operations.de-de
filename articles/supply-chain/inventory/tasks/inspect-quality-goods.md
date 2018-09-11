@@ -1,26 +1,27 @@
----
+--- 
 title: "Qualität der Waren inspizieren"
 description: "Diese Prozedur zeigt, wie ein Qualitätsprüfungsauftrag bearbeitet wird."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: b38a3c938117e5cfbb92ce30434ff2a2c9f6d099
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: c2313ba26eac8abf6e603f0230f06103802536c4
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="5ef99-103">Qualität der Waren inspizieren</span><span class="sxs-lookup"><span data-stu-id="5ef99-103">Inspect the quality of goods</span></span>
@@ -55,4 +56,5 @@ ms.lasthandoff: 08/07/2018
 4. <span data-ttu-id="5ef99-130">Klicken Sie auf Auswählen.</span><span class="sxs-lookup"><span data-stu-id="5ef99-130">Click Select.</span></span>
 5. <span data-ttu-id="5ef99-131">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="5ef99-131">Click OK.</span></span>
 6. <span data-ttu-id="5ef99-132">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5ef99-132">Close the page.</span></span>
+
 

@@ -1,26 +1,27 @@
----
+--- 
 title: Ein neues Lagerortlayout erstellen
 description: "Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in einem Lagerort eingerichtet werden."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 11ad27e68e8eb499b2cf8e477d3dbf51d930b736
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 7db15eb5d80291641f0d0398d236b5e883cafcaf
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="c44d1-103">Ein neues Lagerortlayout erstellen</span><span class="sxs-lookup"><span data-stu-id="c44d1-103">Create a new warehouse layout</span></span>
@@ -49,7 +50,7 @@ ms.lasthandoff: 08/07/2018
 7. <span data-ttu-id="c44d1-122">Schalten Sie die Erweiterung des Abschnitts "Lagerplatznamen" ein/aus.</span><span class="sxs-lookup"><span data-stu-id="c44d1-122">Toggle the expansion of the Location names section.</span></span>
     * <span data-ttu-id="c44d1-123">Die Optionen in diesem Abschnitt definieren das Standardformat für Lagerplatznamen.</span><span class="sxs-lookup"><span data-stu-id="c44d1-123">The options in this section define the default format for location names.</span></span> <span data-ttu-id="c44d1-124">In unserem Beispiel schließen wir die Gangnummer, Regalnummer und Regelbodennummer ein.</span><span class="sxs-lookup"><span data-stu-id="c44d1-124">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
 8. <span data-ttu-id="c44d1-125">Legen Sie die Option "Gang einschließen" auf "Ja" fest.</span><span class="sxs-lookup"><span data-stu-id="c44d1-125">Set the Include aisle option to Yes.</span></span>
-9. <span data-ttu-id="c44d1-126">Legen Sie die Option "Regal einschließen" auf "Ja" fest.</span><span class="sxs-lookup"><span data-stu-id="c44d1-126">Set the Include rack option to Yes.</span></span>
+9. <span data-ttu-id="c44d1-126">Legen Sie die Option "Regal einschließen" auf "Ja" fest.</span><span class="sxs-lookup"><span data-stu-id="c44d1-126">Set the Include rack option to Yes.</span></span> 
 10. <span data-ttu-id="c44d1-127">Geben Sie im Feld "Format" für das Regal einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="c44d1-127">In the Format field, for the rack, type a value.</span></span>
     * <span data-ttu-id="c44d1-128">Beispiel: -##</span><span class="sxs-lookup"><span data-stu-id="c44d1-128">For example: -##</span></span>  
 11. <span data-ttu-id="c44d1-129">Legen Sie die Option "Regalboden einschließen" auf "Ja" fest.</span><span class="sxs-lookup"><span data-stu-id="c44d1-129">Set the Include shelf option to Yes.</span></span>
@@ -74,4 +75,5 @@ ms.lasthandoff: 08/07/2018
 14. <span data-ttu-id="c44d1-147">Klicken Sie auf Fertig stellen.</span><span class="sxs-lookup"><span data-stu-id="c44d1-147">Click Finish.</span></span>
 15. <span data-ttu-id="c44d1-148">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="c44d1-148">Close the page.</span></span>
 16. <span data-ttu-id="c44d1-149">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="c44d1-149">Refresh the page.</span></span>
+
 

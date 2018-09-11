@@ -1,26 +1,27 @@
----
+--- 
 title: "Bestand an einem Lagerort zählen"
 description: "Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Buchens einer Lagerinventurerfassung, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 5099e82aa3f0408cbfbf816a69c38c5d48989dd2
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: cff65842f9eefb4365aaec86822173c6cfd35473
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="count-inventory-in-a-warehouse"></a><span data-ttu-id="a3f67-103">Bestand an einem Lagerort zählen</span><span class="sxs-lookup"><span data-stu-id="a3f67-103">Count inventory in a warehouse</span></span>
@@ -68,4 +69,5 @@ ms.lasthandoff: 08/07/2018
 1. <span data-ttu-id="a3f67-141">Klicken Sie auf Lager.</span><span class="sxs-lookup"><span data-stu-id="a3f67-141">Click Inventory.</span></span>
 2. <span data-ttu-id="a3f67-142">Klicken Sie auf "Transaktionen".</span><span class="sxs-lookup"><span data-stu-id="a3f67-142">Click Transactions.</span></span>
     * <span data-ttu-id="a3f67-143">Hier können Sie alle zugehörigen Transaktionen finden, die erstellt werden, wenn Sie die Lagerinventurerfassung buchen.</span><span class="sxs-lookup"><span data-stu-id="a3f67-143">Here you can see any related transactions that will be created when you post your inventory counting journal.</span></span>   
+
 
