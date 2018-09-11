@@ -1,28 +1,29 @@
 --- 
-title: "Ihrer Leistungserfassung Informationen hinzufügen und Lob übermitteln"
+title: "Leistungserfassung hinzufügen und Lob an eine Person senden"
 description: "Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele erreichen oder wie Ihre Leistung für einen bestimmten Zeitraum aussieht."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 92cbb25839b8f202ba37a19ad88a54194a73c179
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="add-information-to-your-performance-journal-and-send-praise"></a>Ihrer Leistungserfassung Informationen hinzufügen und Lob übermitteln
+# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Leistungserfassung hinzufügen und Lob an eine Person senden
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -42,7 +43,7 @@ Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele er
 9. Geben Sie im Feld "Schlüsselwörter" einen Wert ein.
 10. Klicken Sie auf "Externen Link hinzufügen".
 11. Geben Sie im Feld "Beschreibung" die Bezeichnung "Envision" ein.
-12. Geben Sie im Feld „Internetadresse” „<https://www.microsoft.com/en/envision/default>” ein.
+12. Geben Sie im Feld Internetadresse "https://www.microsoft.com/en/envision/default" ein.
 13. Klicken Sie auf die Bezeichnung mit dem Namen "Leistungserfassung" unter der "Speichern"-Schaltfläche, um zum Raster zurückzukehren.
     * Sie können die ausgewählte Erfassung oder Erfassungen einem Ziel hinzufügen, um es anzuzeigen, wenn Sie das Ziel öffnen. Ein Link wird im Inforegistername Link hinzugefügt. Wenn Sie eine Erfassung einem Ziel hinzufügen und dann das Ziel einer Überprüfung hinzufügen, wird die Erfassung automatisch bei der Überprüfung angezeigt.  
     * Sie können die ausgewählte Erfassung oder Erfassungen einer Überprüfung hinzufügen, um sie anzuzeigen, wenn Sie die Überprüfung öffnen.    Ein Link wird in dem Links-Inforegister hinzugefügt.  

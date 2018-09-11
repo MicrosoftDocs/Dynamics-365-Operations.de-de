@@ -1,28 +1,29 @@
 --- 
-title: "Fragebögen mithilfe des Zeitplans verteilen"
+title: Einen Fragebogen mithilfe des Zeitplans verteilen
 description: "Die Fragebogenplanung ermöglicht es Ihnen, Fragebögen für mehrere Befragungsteilnehmer zu planen und zu verteilen."
 author: kherr75
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KMKnowledgeCollectorPlanningTable, KMKnowledgeCollectorPlanningMulti, SysQueryForm, HcmPersonLookup, KMKnowledgeCollectorPlanning
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: f3876d1136bd3300d233a5b4401f3458e95817e0
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: d371873cbd16f050ca042f5c13d93781fe6fc732
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="distribute-questionnaires-by-using-scheduling"></a>Fragebögen mithilfe des Zeitplans verteilen
+# <a name="distribute-questionnaires-using-scheduling"></a>Einen Fragebogen mithilfe des Zeitplans verteilen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

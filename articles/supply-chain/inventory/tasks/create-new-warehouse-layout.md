@@ -1,21 +1,22 @@
----
+--- 
 title: Ein neues Lagerortlayout erstellen
 description: "Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in einem Lagerort eingerichtet werden."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 253440d81edd6f71b52ae349398e3c6a895bf05c
@@ -49,7 +50,7 @@ Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in ein
 7. Schalten Sie die Erweiterung des Abschnitts "Lagerplatznamen" ein/aus.
     * Die Optionen in diesem Abschnitt definieren das Standardformat für Lagerplatznamen. In unserem Beispiel schließen wir die Gangnummer, Regalnummer und Regelbodennummer ein.  
 8. Legen Sie die Option "Gang einschließen" auf "Ja" fest.
-9. Legen Sie die Option "Regal einschließen" auf "Ja" fest.
+9. Legen Sie die Option "Regal einschließen" auf "Ja" fest. 
 10. Geben Sie im Feld "Format" für das Regal einen Wert ein.
     * Beispiel: -##  
 11. Legen Sie die Option "Regalboden einschließen" auf "Ja" fest.
@@ -74,4 +75,5 @@ Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in ein
 14. Klicken Sie auf Fertig stellen.
 15. Schließen Sie die Seite.
 16. Aktualisieren Sie die Seite.
+
 

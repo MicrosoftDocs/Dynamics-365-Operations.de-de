@@ -3,23 +3,24 @@ title: Erstellen von Sachkonto-Abgrenzungsbuchungen
 description: "Dieser Aufgabenleitfaden führt Sie durch die Generierung von Sachkontoabgrenzungsbuchungen, die auf Abgrenzungsschemata basieren."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransAccrual, LedgerJournalTransAccrualTrans
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ef3cad6538d9efbd1c1881f4b7d771382d9b1ba8
-ms.openlocfilehash: a05f0777a14d627dc57ef4f4666abb6f92eee59a
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 368614ff447ae9f5cb6e74274558b92a0873ec7a
 ms.contentlocale: de-de
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="create-ledger-accrual-transactions"></a>Erstellen von Sachkonto-Abgrenzungsbuchungen
@@ -33,7 +34,7 @@ Dieser Aufgabenleitfaden führt Sie durch die Generierung von Sachkontoabgrenzun
 3. Klicken Sie, um dem Link im Feld "Lfd. Nummer" zu folgen.
 4. Markieren Sie in der Liste die ausgewählte Zeile.
 5. Geben Sie im Feld "Konto" die gewünschten Werte an.
-    * In diesem Beispiel definieren wir die Aufwendungen für die Versicherung. Dies wird ein periodischer Ausgabenbetrag.  
+    * In diesem Beispiel definieren wir die Aufwendungen für die Versicherung. Es ist treten regelmäßige Ausgabenbeträge auf.  
 6. Geben Sie im Feld "Beschreibung" einen Wert ein.
 7. Geben Sie im Feld "Soll" eine Zahl ein.
 8. Geben Sie im Feld "Gegenkonto" die gewünschten Werte an.

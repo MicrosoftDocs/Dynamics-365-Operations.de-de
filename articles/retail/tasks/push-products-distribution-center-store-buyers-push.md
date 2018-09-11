@@ -1,33 +1,34 @@
 --- 
-title: "Produkte von Verteilzentren zu Shops mithilfe von Käuferübertragung übertragen"
+title: " Produkte vom Verteilzentrum zu Shops mithilfe von Käuferübertragung übertragen"
 description: "Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung und Verarbeitung einer Käuferübertragung zum Vertreiben von Produkten von einem Lagerplatz an einen oder viele Shops."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 02/17/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimple, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: ed47b4f052dab99dec058910e4b8558481b34e59
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 9d9a5d4fdece1cfb573224bd54d96ccd281c0f09
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 02/07/2018
 
 ---
-# <a name="push-products-from-distribution-centers-to-stores-via-buyers-push"></a>Produkte von Verteilzentren zu Shops mithilfe von Käuferübertragung übertragen
+# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a> Produkte vom Verteilzentrum zu Shops mithilfe von Käuferübertragung übertragen
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
-Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung und Verarbeitung einer Käuferübertragung zum Vertreiben von Produkten von einem Lagerplatz an einen oder viele Shops. Der Benutzer kann mehrere Varianten definieren und das System vorschlagen lassen, wie die Produkte vertrieben werden sollen, oder manuell eingeben, wo die Produkte vertrieben werden und wie viel an jeden Shop vertrieben wird. Diese Prozedur umfasst nicht die Einrichtung von Daten, die in der Käuferübertragung verwendet werden können, wie Wiederbeschaffungsregeln, Organisationshierarchien und Shopgewichte. Für diese Prozedur wird das Demo-Unternehmen USRT verwendet.
+Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung und Verarbeitung einer Käuferübertragung zum Vertreiben von Produkten von einem Lagerplatz an einen oder viele Shops. Der Benutzer kann mehrere Varianten definieren und das System vorschlagen lassen, wie die Produkte vertrieben werden sollen, oder manuell eingeben, wo die Produkte vertrieben werden und wie viel an jeden Shop vertrieben wird. Das Verfahren umfasst nicht die Einrichtung von Daten, die in der Käuferübertragung verwendet werden können, wie Auffüllungsregeln, Organisationshierarchien und Shopgewichte. Für diese Prozedur wird das Demo-Unternehmen USRT verwendet.
 
 1. Gehen Sie zu "Käuferübertragung".
 2. Klicken Sie auf "Neu".
