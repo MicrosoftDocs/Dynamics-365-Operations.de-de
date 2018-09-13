@@ -44,11 +44,13 @@ Um Kreditkarten zu verwenden, müssen Sie einen Zahlungsdienst auf der Seite "Za
 
 ## <a name="adding-a-new-credit-card"></a>Hinzufügen einer neuen Kreditkarte
 Sie können neue Kreditkartendatensätze auf der Seite "Debitoren" mithilfe von "Debitor", "Einrichten", "Kreditkarte" erstellen. Sie können auch Kreditkartendatensätze erstellen, wenn Sie Aufträge auf der Seite "Auftrag" eingeben, indem Sie "Verwalten", "Debitor", "Kreditkarte", "Registrieren" verwenden.
-Eine Kreditkarte zu einem Auftrag hinzufügen
+
+<a name="adding-a-credit-card-to-a-sales-order"></a>Eine Kreditkarte zu einem Auftrag hinzufügen
 -------------------------------------
 
 Sie können eine Kreditkarte einem Auftrag hinzufügen, indem Sie eine Kreditkarte in der Kreditkartensuche im Inforegister "Preis und Rabatte" auf der Seite "Auftrag" auswählen. Um des Autorisierungsprozess zu starten, wählen Sie im Aktivitätsbereich auf der Registerkarte "Verwalten" die Optionen "Kreditkarte" und "Autorisieren" aus.
-Eine Kreditkarte autorisieren
+
+<a name="authorizing-a-credit-card"></a>Eine Kreditkarte autorisieren
 -------------------------
 
 Wenn eine Kreditkarte autorisiert wird, werden die Kreditkartennummer und der Name des Karteninhabers überprüft und der verfügbare Guthabensaldo bestätigt. Optional werden der Kreditkartenüberprüfungswert und die Adresse des Karteninhabers überprüft. Anschließend wird der verfügbare Guthabensaldo des Debitors um den Rechnungsbetrag verringert. Der Zahlungsservice informiert Sie, ob die Kreditkarte akzeptiert oder abgelehnt wurde. Nach der Fakturierung des Auftrags wird die Kreditkarte mit dem Rechnungsbetrag belastet (erfasst).
