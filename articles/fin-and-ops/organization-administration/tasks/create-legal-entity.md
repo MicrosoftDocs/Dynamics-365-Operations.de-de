@@ -3,7 +3,7 @@ title: Erstellen Sie eine juristische Person
 description: "Eine juristische Person ist eine Organisation, die über die Registrierung bei einer Behörde identifiziert wird."
 author: sericks007
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

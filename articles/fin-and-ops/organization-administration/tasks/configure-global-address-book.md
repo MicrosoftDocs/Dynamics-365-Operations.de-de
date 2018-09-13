@@ -3,7 +3,7 @@ title: Konfigurieren des globalen Adressbuchs
 description: "Verwenden Sie diese Prozedur, um die Standardwerte und Sicherheitsrichtlinien für das globale Adressbuch festzulegen."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

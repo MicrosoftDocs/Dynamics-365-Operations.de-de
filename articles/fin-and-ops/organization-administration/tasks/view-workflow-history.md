@@ -3,7 +3,7 @@ title: Workflowhistorie anzeigen
 description: "Verwenden Sie diese Schritte, um den Status eines Dokuments anzuzeigen, das an das Workflowsystem zur Verarbeitung und Genehmigung übermittelt wurde."
 author: jasongre
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

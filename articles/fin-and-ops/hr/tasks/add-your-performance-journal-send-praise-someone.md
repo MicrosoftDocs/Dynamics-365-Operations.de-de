@@ -3,7 +3,7 @@ title: "Leistungserfassung hinzufügen und Lob an eine Person senden"
 description: "Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele erreichen oder wie Ihre Leistung für einen bestimmten Zeitraum aussieht."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Ermöglichen Sie es Benutzern, workflowbezogene E-Mail-Nachrichten zu er
 description: "Sie können das System konfigurieren, um E-Mail-Nachrichten an Benutzer zu senden, wenn workflowbezogene Ereignisse auftreten."
 author: jasongre
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
