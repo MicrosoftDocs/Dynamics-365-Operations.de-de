@@ -23,7 +23,7 @@
       href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
     - name: Go-Live-FAQs
       href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
-    - name: Senden einer Serviceanforderung
+    - name: Serviceanforderung senden
       href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
     - name: 'Abonnements, LCS-Projekte und Azure Active Directory-Mandanten – FAQs'
       href: ../fin-and-ops/get-started/subscription-overview.md
@@ -99,11 +99,9 @@
       href: call-center-functionality.md
     - name: Callcenterkataloge
       href: call-center-catalogs.md
-    - name: Einen Callcenterkatalog erstellen
-      href: create-call-center-catalogs.md
-    - name: Konfigurieren von Lieferarten und Belastungen
+    - name: Lieferarten und Belastungen konfigurieren
       href: configure-call-center-delivery.md
-    - name: Einrichten und Arbeiten mit Betrugswarnungen
+    - name: Betrugswarnungen einrichten und verwenden
       href: set-up-fraud-alerts.md
     - name: Einrichten von Callcenterkanälen
       href: set-up-order-processing-options.md
@@ -133,7 +131,9 @@
       href: MPOS-or-CPOS.md
     - name: Online- und Offline-POS-Vorgänge
       href: pos-operations.md
-    - name: Demodaten-Bildschirmlayouts in MPOS und Cloud-POS
+    - name: Geräteaktivierung eines angepassten Retail Modern POS
+      href: dev-itpro/retail-POS-activation-changes.md
+    - name: Bildschirmlayouts für Demodaten in MPOS und Cloud POS
       href: demo-data.md
     - name: Produkt- und Debitorensuche im POS
       href: POS-search-improvements.md
@@ -299,7 +299,7 @@
       href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
 - name: Personalverwaltung
   items:
-    - name: 'Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen'
+    - name: 'Belegschaft mittels Abteilungen, Stellen und Positionen verwalten'
       href: ../talent/departments-jobs-positions.md
     - name: Komponenten eines Einzelvorgangs einrichten
       href: ../talent/create-job.md

@@ -1,6 +1,6 @@
 > [!IMPORTANT]
-> **Ankündigung für Dynamics 365 im Frühling 2018 – Versionshinweise**
+> **Ankündigung der Versionshinweise zu Dynamics 365**
 >
-> Sie möchten Informationen über zukünftige und kürzlich veröffentlichte Funktionen unserer Unternehmens-Apps oder -Plattform erhalten? 
+> Sie möchten Informationen über zukünftige und vor Kurzem veröffentlichte Funktionen unserer Unternehmens-Apps oder -Plattformen erhalten? 
 > 
-> [Laden Sie die Versionshinweise für den Frühling 2018 herunter](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf). Wir haben alle Details umfassend und vom Anfang bis zum Ende in einer einzigen PDF zusammengefasst, die Sie für die Planung verwenden können. 
+> Dann sehen Sie in den [Versionshinweisen zu Unternehmens-Apps und -Plattformen](https://go.microsoft.com/fwlink/?linkid=2010158) nach. Hier finden Sie zentral und übersichtlich an einer Stelle alle Informationen, die Sie für Ihre Planung benötigen. Je nach Ausgabe der Versionshinweise erhalten Sie auch Infos zu neuen Diensten und Funktionen sowie zukünftigen Funktionen.
