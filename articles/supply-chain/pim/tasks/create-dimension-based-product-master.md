@@ -3,7 +3,7 @@ title: Dimensionsbasierten Produktmaster erstellen
 description: Im folgenden Verfahren, wie einen neuen Produktmaster mit Technologie der dimensionsbasierten Konfiguration erstellt.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

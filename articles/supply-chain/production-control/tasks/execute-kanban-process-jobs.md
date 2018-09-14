@@ -3,7 +3,7 @@ title: "Kanban-Bearbeitungseinzelvorgänge durchführen"
 description: "Diese Prozedur konzentriert sich auf das Ausführen von Kanban-Bearbeitungs-Einzelvorgängen."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

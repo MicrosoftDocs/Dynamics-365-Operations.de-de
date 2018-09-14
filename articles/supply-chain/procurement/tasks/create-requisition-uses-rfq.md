@@ -3,7 +3,7 @@ title: Eine Anforderung erstellen, die eine Angebotsanforderung verwendet
 description: "Dieser Leitfaden zeigt, wie man Preis- und Kreditoreninformationen einer Bestellanforderung von einem Angebotsanforderungsprozess aus hinzufügt."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

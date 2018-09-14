@@ -3,7 +3,7 @@ title: "GTIN-Code für ein Produkt eingeben"
 description: GTIN-Codes werden von der GS1-Organisation zugewiesen.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

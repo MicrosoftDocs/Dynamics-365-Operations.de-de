@@ -3,7 +3,7 @@ title: "Aufträge ohne Lagerort liefern"
 description: Dieser Leitfaden veranschaulicht, wie ein Auftrag aktualisiert wird, wenn Produkte an den Debitor versendet werden.
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

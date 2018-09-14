@@ -3,7 +3,7 @@ title: Erstellen eines Hauptkontos
 description: "Diese Aufgabenleitfaden führt Sie durch das Hinzufügen eines Hauptkontos zu einem vorhandenen Kontenplan."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

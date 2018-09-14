@@ -3,7 +3,7 @@ title: "Bewerbungseingangs-Datensätze genehmigen"
 description: "Im folgenden Verfahren wird gezeigt, wie Sie Bewerbungen prüfen, die über die Seite \"Mitarbeiter-Self-Service\" eingehen."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

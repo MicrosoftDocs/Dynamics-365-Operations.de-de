@@ -3,7 +3,7 @@ title: Aktuellen RIF-Status eines Produktionsauftrags anzeigen
 description: Diese Prozedur zeigt, wie eine RIF-Aufstellung auf einem Produktionsauftrag angezeigt werden soll.
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

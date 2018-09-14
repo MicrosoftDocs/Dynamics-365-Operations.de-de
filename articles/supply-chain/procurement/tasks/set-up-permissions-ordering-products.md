@@ -3,7 +3,7 @@ title: Berechtigungen zum Bestellen von Produkten im Auftrag einer anderen Perso
 description: "Diese Prozedur zeigt, wie Arbeitskräften die Berechtigung erteilt wird, Bestellanforderungen im Auftrag anderer Arbeitskräfte vorzubereiten."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

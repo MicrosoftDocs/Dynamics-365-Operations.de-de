@@ -3,7 +3,7 @@ title: "Artikel für einen für erweitertes Warehousing aktivierten Artikel mith
 description: "Dieses Verfahren zeigt Ihnen an, wie Artikel mithilfe der Wareneingangserfassung erfasst werden, wenn Sie die erweiterten Lagerungsvorgänge verwenden."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Aktive, vorkalkulierte und realisierte Kosten für einen Produktionsauft
 description: "Diese Prozedur zeigt, wie Gründe für eine hohe Produktionsabweichung für einen Produktionsauftrag anzeigt werden."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

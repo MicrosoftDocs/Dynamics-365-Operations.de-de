@@ -3,7 +3,7 @@ title: " Funktionsprofil für einen Verkäufer konfigurieren"
 description: "Dieses Verfahren zeigt, wie Funktionsprofileinstellungen eines Shops konfiguriert wird, das für Verkäufer gilt."
 author: jblucher
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

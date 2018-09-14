@@ -3,7 +3,7 @@ title: Eine Angebotsanforderung erstellen
 description: Diese Prozedur zeigt Ihnen, wie Sie eine Angebotsanforderung erstellen.
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

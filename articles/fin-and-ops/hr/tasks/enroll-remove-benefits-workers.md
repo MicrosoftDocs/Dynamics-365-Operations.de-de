@@ -3,7 +3,7 @@ title: "Vorteile von Arbeitskräften registrieren und entfernen"
 description: "Diese Verfahren zeigt, wie einzelne Arbeitskräfte für einen oder mehrere Vorteile registriert werden können und wie mehrere Arbeitskräfte für einen Vorteil registriert werden können."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: E-Mail-Vorlagen verwalten
 description: "Sie können Informationen aus der Datenbank Ihrer Organisation in die Lesezeichen in einem neuen Dokument übertragen und in Vorlagen verwenden, die Sie bei der Kommunikation mit Bewerbern und Kandidaten unterstützen."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

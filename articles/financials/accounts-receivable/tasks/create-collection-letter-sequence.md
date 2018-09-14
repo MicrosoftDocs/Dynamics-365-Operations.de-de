@@ -3,7 +3,7 @@ title: Mahnschreibensequenzen einrichten
 description: Erstellen Sie mithilfe dieser Aufgabenanleitung eine Mahnschreibensequenz.
 author: mikefalkner
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

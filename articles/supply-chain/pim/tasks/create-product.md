@@ -3,7 +3,7 @@ title: Ein Produkt erstellen
 description: "Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen Produkts in der Produkthierarchie (Einzelhandel)."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

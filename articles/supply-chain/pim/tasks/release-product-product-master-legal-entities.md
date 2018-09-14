@@ -3,7 +3,7 @@ title: "Ein Produkt bzw. einen Produktmaster für juristische Personen freigeben
 description: "Diese Prozedur führt Sie Schritt für Schritt durch die Freigabe eines Produkts oder Produktmasters in einer oder mehreren juristischen Personen."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

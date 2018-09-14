@@ -3,7 +3,7 @@ title: Transportausschreibung einrichten
 description: Dieses Verfahren zeigt Ihnen an, wie eine Transportausschreibung eingerichtet wird.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

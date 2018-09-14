@@ -3,7 +3,7 @@ title: Verkaufsangebote erstellen und bearbeiten
 description: Diese Verfahren zeigt, wie ein Verkaufsangebot erstellt und aktualisiert wird.
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

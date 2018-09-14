@@ -3,7 +3,7 @@ title: "Vergütungsprozess definieren und Ergebnisse berechnen"
 description: "Vergütungsprozesse werden verwendet, um neue Vergütungsbeträge und Prämien für die Mitarbeiter zu bestimmen, die in einem Plan für feste oder variable Vergütung registriert sind."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

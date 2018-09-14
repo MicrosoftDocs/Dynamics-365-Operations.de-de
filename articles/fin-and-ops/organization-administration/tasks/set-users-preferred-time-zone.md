@@ -3,7 +3,7 @@ title: Festlegen der bevorzugten Zeitzone eines Benutzers
 description: "Die folgende Prozedur erklärt, wie ein Benutzer in der Rolle „Systemadministrator” die Zeitzone für einen Benutzer festlegen kann."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

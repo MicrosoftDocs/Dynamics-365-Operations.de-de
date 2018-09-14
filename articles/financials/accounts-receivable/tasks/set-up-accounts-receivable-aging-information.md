@@ -3,7 +3,7 @@ title: "Debitoren-Fälligkeitsinformationen einrichten und generieren"
 description: "Dieses Handbuch unterstützt Sie dabei, eine Zahlungsfristdefinition sowie Dauerdebitorensalden einzurichten und Salden in der Liste \"Saldorückblick\" und auf der Seite \"Inkasso\" anzuzeigen."
 author: mikefalkner
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

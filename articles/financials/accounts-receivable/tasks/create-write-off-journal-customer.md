@@ -3,7 +3,7 @@ title: "Eine Abschreibungserfassung für einen Debitor erstellen"
 description: "In diesem Aufgabenhandbuch wird dargestellt, wie Sie die Parameter für Abschreibungen einrichten und dann Abschreibungstransaktionen auf der Seite \"Inkassi\", der Seite \"Offene Debitorenrechnungen\" und auf der Seite \"Debitoren\" abschreiben."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

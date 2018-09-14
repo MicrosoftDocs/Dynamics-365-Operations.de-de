@@ -3,7 +3,7 @@ title: "Das Banner oder das Logo ändern"
 description: "Im Folgenden werden die Schritte aufgeführt, die Systemadministratoren verwenden können, um das Banner- oder Logobild zu aktualisieren, das für eine juristische Person angezeigt wird."
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

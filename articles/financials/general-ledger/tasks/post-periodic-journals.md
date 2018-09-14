@@ -3,7 +3,7 @@ title: "Periodische Erfassungen veröffentlichen"
 description: Periodische Erfassungen werden mitunter als wiederkehrende Erfassungen bezeichnet, da der Betrag, der Text und andere Informationen jedes Mal wiederholt werden, wenn die periodische Erfassung abgerufen wird.
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

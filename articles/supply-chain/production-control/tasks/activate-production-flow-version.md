@@ -3,7 +3,7 @@ title: Eine Produktionsflussversion aktivieren
 description: "Bevor Kanban-Einzelvorgänge erstellt werden können und Aktivitäten für eine Produktionsflussversion verarbeitet werden können, sollten Sie die Version aktivieren."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

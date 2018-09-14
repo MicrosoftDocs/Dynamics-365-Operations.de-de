@@ -3,7 +3,7 @@ title: "Berichtsbeziehungen für eine Position ändern"
 description: "Diese Prozedur zeigt, wie Berichtsbeziehungen für einen Mitarbeiter geändert werden."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

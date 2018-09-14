@@ -3,7 +3,7 @@ title: "Strichcode für ein Produkt erstellen"
 description: Dieses Verfahren zeigt, wie Sie manuell einen Strichcode mithilfe der Artikelnummer M0001 als Beispiel erstellen.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

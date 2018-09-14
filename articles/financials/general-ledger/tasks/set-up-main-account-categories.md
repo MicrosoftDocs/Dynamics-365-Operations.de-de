@@ -3,7 +3,7 @@ title: Einrichten von Hauptkontokategorien
 description: "Hauptkontokategorien werden für die Standardberichte in der Finanzberichterstellung und in Power BI verwendet."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

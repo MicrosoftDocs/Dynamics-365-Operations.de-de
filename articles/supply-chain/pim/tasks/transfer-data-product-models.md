@@ -3,7 +3,7 @@ title: "Daten für Produktmodelle übertragen"
 description: "Der Export von Daten für ein Produktkonfigurationsmodell setzt voraus, dass Sie mindestens ein verfügbares Produktmodell haben."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

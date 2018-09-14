@@ -3,7 +3,7 @@ title: "Übersichtsprofil zum Wareneingang einrichten"
 description: "Dieser Aufgabe konzentriert sich auf den Einstellungen eines Wareneingangsübersichtprofils."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Dimensionsbasierten Produktmaster veröffentlichen"
 description: "Im folgenden Verfahren, wie ein Produktmaster gemeinsam nutzen, der für die dimensionsbasierten Konfigurationen verwendet wird."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen
 description: "Ziel dieser Aufgabe ist es, ein Menüelement für ein mobiles Gerät einzustellen."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

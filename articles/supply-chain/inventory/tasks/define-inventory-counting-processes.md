@@ -3,7 +3,7 @@ title: Lagerinventurprozesse definieren
 description: "Diese Prozedur führt Sie Schritt für Schritt durch die Konfiguration von grundlegenden Lagerinventurprozessen, indem eine Inventurgruppe und eine Inventurerfassung erstellt wird."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

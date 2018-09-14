@@ -3,7 +3,7 @@ title: Arbeitskraftinformationen eingeben
 description: "Nachdem ein Personalbeschaffungsmitarbeiter ein Masseneinstellungsprojekt erstellt und die Positionen generiert hat, besteht der nächste Schritt darin, die Arbeitskraftinformationen für die Personen einzugeben, die eingestellt werden."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

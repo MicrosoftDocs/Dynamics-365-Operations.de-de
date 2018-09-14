@@ -3,7 +3,7 @@ title: "Eine Attribut-basierte Preiskalkulation für konfigurierbare Produkte ei
 description: Dieses Verfahren zeigt Ihnen, wie Sie attributbasierte Preis einrichten.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

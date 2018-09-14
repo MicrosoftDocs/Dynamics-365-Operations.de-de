@@ -3,7 +3,7 @@ title: Kreditorenrechnungsrichtlinien einrichten
 description: "Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite \"Kreditorenrechnung\" eine Kreditorenrechnung buchen und wenn Sie die Seite \"Richtlinienverstöße\" der Kreditorenrechnung öffnen."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

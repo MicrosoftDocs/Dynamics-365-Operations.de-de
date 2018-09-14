@@ -3,7 +3,7 @@ title: "Konsolidierungsgruppen und zusätzliche Konsolidierungskonten erstellen"
 description: "In diesem Verfahren sehen Sie, wie eine Konsolidierungskontengruppe erstellt und dann Konten zur Gruppe hinzugefügt werden."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

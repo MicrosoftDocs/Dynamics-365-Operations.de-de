@@ -3,7 +3,7 @@ title: "Geschäftsjahr abschließen"
 description: "Dieses Verfahren führt Sie durch den Jahresabschlussprozess, der Salden in ein neues Geschäftsjahr übertragen."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

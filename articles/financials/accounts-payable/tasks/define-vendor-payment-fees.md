@@ -3,7 +3,7 @@ title: "Gebühren für Kreditorenzahlung definieren"
 description: "Richten Sie Kreditorenzahlungsgebühren ein."
 author: abruer
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

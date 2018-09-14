@@ -3,7 +3,7 @@ title: Massen-Finanzperiodenabschluss
 description: "Dieses Verfahren zeigt, wie eine Periode als \"Gesperrt\" oder \"Permanent geschlossen\" oder für mehrere juristische Person auf einmal festgelegt wird."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

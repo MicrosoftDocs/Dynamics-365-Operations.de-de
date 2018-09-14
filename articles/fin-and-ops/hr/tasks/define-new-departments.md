@@ -3,7 +3,7 @@ title: Neue Abteilungen definieren
 description: Abteilungen sind Organisationseinheiten, die einen Funktionsbereich eines Unternehmens, beispielsweise Vertrieb oder Buchhaltung darstellen.
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

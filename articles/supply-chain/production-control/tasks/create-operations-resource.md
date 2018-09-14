@@ -3,7 +3,7 @@ title: Erstellen einer betrieblichen Ressource
 description: "Eine betriebliche Ressource führt die Aktivitäten eines Projekts oder eines Produktionsprozesses aus."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

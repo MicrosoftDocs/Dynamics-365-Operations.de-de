@@ -3,7 +3,7 @@ title: " Loyalitätsbelohnungs-Punktregulierungen verarbeiten"
 description: Dieses Verfahren zeigt, wie Sie Treuekarteinformationen einsehen und die Treuebelohnungspunkte anpassen.
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

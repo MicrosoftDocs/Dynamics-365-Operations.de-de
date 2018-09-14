@@ -3,7 +3,7 @@ title: "Erfassungseinträge oder Buchungen anzeigen"
 description: "Dieses Verfahren führt Sie durch die Verwendung der \"Belegtransaktionsabfrage\", um nach Erfassungseinträgen oder Transaktionen zu suchen."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

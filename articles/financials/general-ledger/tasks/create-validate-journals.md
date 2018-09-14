@@ -3,7 +3,7 @@ title: Erfassungen erstellen und validieren
 description: "Dieser Aufgabenleitfaden erstellt und prüft Erfassungen und Erfassungspositionen."
 author: ryansandness
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

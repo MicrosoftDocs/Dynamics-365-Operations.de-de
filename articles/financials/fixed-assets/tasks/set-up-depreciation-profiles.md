@@ -3,7 +3,7 @@ title: Abschreibungsprofile einrichten und erstellen
 description: "Abschreibungsprofile bestimmen den Typ und die Häufigkeit der Abschreibung für eine Anlage."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Verpacken in Container einrichten
 description: In dieser Prozedur wird beschrieben, wie Containerisierung von Ladungen in der "Lagerortverwaltung" automatisiert wird.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

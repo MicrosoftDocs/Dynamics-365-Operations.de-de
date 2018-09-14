@@ -3,7 +3,7 @@ title: "Eine Anlagengruppe ändern"
 description: Die Anlage muss der korrekten Anlagengruppe zugewiesen werden.
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

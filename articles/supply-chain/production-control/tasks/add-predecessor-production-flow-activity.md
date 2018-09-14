@@ -3,7 +3,7 @@ title: "Eine vorherige Aktivität zu einer Produktionsflussaktivität hinzufüge
 description: "In einer Produktionsflussversion müssen alle Aktivitäten geordnet werden."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

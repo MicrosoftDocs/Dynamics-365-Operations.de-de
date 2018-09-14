@@ -3,7 +3,7 @@ title: "Kosteneinträge für ein Kostenobjekt anzeigen"
 description: "Im folgenden Verfahren sehen Sie, wie Sie Kosteneinträge für einen Kostenträger anzeigen."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

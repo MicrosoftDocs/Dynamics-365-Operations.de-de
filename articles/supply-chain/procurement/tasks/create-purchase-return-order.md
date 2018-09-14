@@ -3,7 +3,7 @@ title: "Einkaufsrücklieferung erstellen"
 description: "Diese Prozedur zeigt Ihnen, wie eine Reklamation erstellt wird, indem die Aktivität \"Gutschrift\" verwendet wird, um Positionen von einem Kreditorenrechnungsdokument zu einer neuen Bestellung zu kopieren."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

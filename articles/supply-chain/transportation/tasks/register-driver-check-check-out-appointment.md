@@ -3,7 +3,7 @@ title: "Ein- und Auschecken des Fahrers für einen Termin erfassen"
 description: Dieses Verfahren zeigt, wie Sie ein Fahrereinchecken und ein Fahrerauschecken erfassen.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

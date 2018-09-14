@@ -3,7 +3,7 @@ title: "Eine Bankfazilitätsvereinbarung für einen Kreditbrief erstellen"
 description: "In dieser Aufgabe gehen Sie Schritt für Schritt durch das Erstellen einer Bankfazilitätsvereinbarung, um einen Kreditbrief zu bearbeiten."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

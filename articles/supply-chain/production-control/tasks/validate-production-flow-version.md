@@ -3,7 +3,7 @@ title: "Produktionsfluss und Version überprüfen"
 description: "Die Prozedur zeigt, wie ein neuer Produktionsfluss und eine erste Version für Lean Manufacturing erstellt werden."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

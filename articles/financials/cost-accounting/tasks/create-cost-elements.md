@@ -3,7 +3,7 @@ title: Kostenelemente erstellen
 description: "Es gibt mehrere Möglichkeiten, Kostenfaktoren in der Kostenrechnung zu erstellen."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

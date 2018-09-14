@@ -3,7 +3,7 @@ title: "Das Datum für die Sitzung ändern"
 description: "Standardmäßig wird das aktuelle Datum verwendet, wenn Journaleinträge oder Quelldokumente eingegeben und gebucht werden."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

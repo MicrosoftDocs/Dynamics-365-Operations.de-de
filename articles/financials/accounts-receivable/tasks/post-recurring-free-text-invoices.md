@@ -3,7 +3,7 @@ title: Freitext-Serienrechnungen generieren und buchen
 description: "Mit Serienrechnungen wird Debitoren regelmäßig ein stets identischer Betrag in Rechnung gestellt."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

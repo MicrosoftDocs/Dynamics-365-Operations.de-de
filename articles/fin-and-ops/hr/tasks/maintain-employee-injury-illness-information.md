@@ -3,7 +3,7 @@ title: Mitarbeiterverletzungs- und Krankheitsinformationen verwalten
 description: "Es wird empfohlen, das \"Einstellungsverletzungs- und -krankheits\" Aufgabenhandbuch zuerst abzuschließen, da einige der Einrichtungsinformationen hier verwendet werden."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

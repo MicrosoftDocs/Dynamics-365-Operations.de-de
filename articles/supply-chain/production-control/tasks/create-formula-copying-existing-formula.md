@@ -3,7 +3,7 @@ title: Eine Formel durch Kopieren aus einer vorhandenen Formel erstellen
 description: Im folgenden Verfahren sehen Sie, wie schnell eine neue Formel durch das Kopieren aus einer vorhandenen Formel erstellt wird.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

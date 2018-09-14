@@ -3,7 +3,7 @@ title: "Eine Bedarfsplanung manuell ändern"
 description: "Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel ändern."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

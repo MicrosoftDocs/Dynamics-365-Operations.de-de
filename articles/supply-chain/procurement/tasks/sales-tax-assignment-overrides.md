@@ -3,7 +3,7 @@ title: "Mehrwertsteuer-Zuweisung und -Außerkraftsetzungen"
 description: Diese Prozedur zeigt, wie man Mehrwertsteuergruppen Retail Channels zuweist.
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

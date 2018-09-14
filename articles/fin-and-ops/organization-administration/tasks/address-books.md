@@ -3,7 +3,7 @@ title: "Adressbücher konfigurieren"
 description: "Mit diesem Verfahren und die Entscheidungen, die Sie in der Planung die Konfiguration für das globale Adressbuch und zusätzlichen des Adressbuch themas treffen, um zusätzliche Adressbüchern für Ihre Organisation einrichten."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

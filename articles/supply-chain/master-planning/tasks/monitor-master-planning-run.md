@@ -3,7 +3,7 @@ title: "Einen Produktprogrammplanungslauf überwachen"
 description: "Der Produktionsplaner möchte sehen, ob ein Produktprogrammplanungslauf in Bearbeitung ist."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

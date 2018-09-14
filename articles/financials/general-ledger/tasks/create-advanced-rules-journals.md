@@ -3,7 +3,7 @@ title: "Erweiterte Regeln für Erfassungen erstellen"
 description: "Dieses Verfahrens zeigt das Erstellen von erweiterten Regeln für Erfassungen."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Grundeinrichtung eines veröffentlichten Produktmasters abschließen"
 description: "Im folgenden Verfahren, wie die erforderlichen Mindesteinstellungen abschließt, die erforderlich ist, bevor der Produktmaster in den Stücklistenversionen verwendet werden kann."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

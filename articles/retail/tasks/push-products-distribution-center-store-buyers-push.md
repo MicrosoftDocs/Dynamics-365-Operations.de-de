@@ -3,7 +3,7 @@ title: " Produkte vom Verteilzentrum zu Shops mithilfe von K채ufer체bertragung �
 description: "Diese Prozedur f체hrt Sie Schritt f체r Schritt durch die Erstellung und Verarbeitung einer K채ufer체bertragung zum Vertreiben von Produkten von einem Lagerplatz an einen oder viele Shops."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

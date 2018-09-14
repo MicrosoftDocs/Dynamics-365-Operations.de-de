@@ -3,7 +3,7 @@ title: Vorgenommene Mehrwertsteuerbuchungen anzeigen
 description: "Sie können gebuchte Mehrwertsteuertransaktionen aus verschiedenen Seiten anzeigen, abhängig davon, was Sie anzeigen möchten."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

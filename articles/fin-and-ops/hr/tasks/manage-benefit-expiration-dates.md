@@ -3,7 +3,7 @@ title: Leistungsablaufdaten verwalten
 description: "Im folgenden Verfahren wird dargestellt, wie Sie einen Vorteil ablaufen lassen oder verlängern können und wie Sie die Registrierungsdaten der Arbeitskräfte verwalten, die im Vorteil registriert sind."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

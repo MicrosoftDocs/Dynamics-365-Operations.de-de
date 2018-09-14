@@ -3,7 +3,7 @@ title: Sachkonto-Zuordnungserfassung verarbeiten
 description: "Mithilfe der Seite \"Zuordnungsanforderung verarbeiten\" können Sie eine Zuordnungserfassung erstellen, die vor der Buchung im Hauptbuch geprüft und genehmigt oder direkt im Hauptbuch gebucht werden kann."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

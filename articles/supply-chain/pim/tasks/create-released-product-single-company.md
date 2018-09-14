@@ -3,7 +3,7 @@ title: "Ein freigegebenes Produkt für ein einzelnes Unternehmen erstellen"
 description: "In dieser Prozedur wird erläutert, wie ein einzelnes freigegebenes Produkt im Rahmen einer einzelnen gültigen Einheit erstellt wird."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

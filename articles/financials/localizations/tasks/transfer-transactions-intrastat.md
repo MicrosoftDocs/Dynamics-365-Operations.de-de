@@ -3,7 +3,7 @@ title: "Buchungen an Intrastat übertragen"
 description: "Diese Prozedur zeigt Ihnen Schritt für Schritt, wie Sie Intrastat-Parameter einrichten und Transaktionen nach Intrastat übertragen."
 author: Anasyash
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

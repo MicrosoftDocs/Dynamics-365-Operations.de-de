@@ -3,7 +3,7 @@ title: Eine wiederholte Bestellung erstellen
 description: "Diese Prozedur zeigt Ihnen, wie man eine Wiederholungsbestellung (PO) erstellt, indem Positionen von früheren Bestelldokumenten zu einer neuen Bestellung oder einer vorhandenen Bestellung kopiert werden."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

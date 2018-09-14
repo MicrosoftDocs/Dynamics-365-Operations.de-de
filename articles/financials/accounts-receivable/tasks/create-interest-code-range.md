@@ -3,7 +3,7 @@ title: Einen Zinscode mit einem Bereich erstellen
 description: "Zinscodes können eingerichtet werden, um verschiedene Zinsbeträge auf Grundlage einen Wertebereich zu berechnen."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

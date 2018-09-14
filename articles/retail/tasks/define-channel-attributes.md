@@ -3,7 +3,7 @@ title: " Kanalattribute definieren"
 description: "Erweitern Sie den Kanal, indem Sie Kanal- und Produktattribute hinzufügen."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
