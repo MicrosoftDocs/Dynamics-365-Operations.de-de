@@ -3,7 +3,7 @@ title: "Kreditoren und Kreditorenbankkonten für ISO20022-Überweisungen einrich
 description: "Diese Verfahren zeigt, wie Sie den Kreditor und dessen spezifische Bankkontoinformationen einrichten, die für ISO20022-Kreditübertragung-Dateigenerierung oder jede andere Kreditorenzahlung erforderlich sind."
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: ea1f0c6c4b3530eeae529d0932f8fd408a09cc54
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 13b3c37f5d013dd896a456018813f20e5e70350b
 ms.contentlocale: de-de
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-vendors-and-vendor-bank-accounts-for-iso20022-credit-transfers"></a><span data-ttu-id="43abd-103">Kreditoren und Kreditorenbankkonten für ISO20022-Überweisungen einrichten</span><span class="sxs-lookup"><span data-stu-id="43abd-103">Set up vendors and vendor bank accounts for ISO20022 credit transfers</span></span>

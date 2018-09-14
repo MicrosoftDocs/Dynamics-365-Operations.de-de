@@ -155,15 +155,17 @@
           href: imp-lifecycle/architecture-overview.md
         - name: Microsoft FastTrack for Finance and Operations
           href: get-started/fasttrack-dynamics-365-overview.md
-        - name: Onboarding eines Implementierungsprojekts
+        - name: Implementierungsprojekt aufnehmen
           href: imp-lifecycle/onboard.md
-        - name: Vorbereiten der Liveschaltung
+        - name: Umgebungsplanung
+          href: imp-lifecycle/environment-planning.md
+        - name: Liveschaltung vorbereiten
           href: imp-lifecycle/prepare-go-live.md
-        - name: Liveschaltung – FAQs
+        - name: FAQs live schalten
           href: imp-lifecycle/go-live-faq.md
-        - name: Senden einer Serviceanforderung
+        - name: Serviceanforderung senden
           href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
-        - name: 'Abonnements, LCS-Projekte und Azure AD-Mandanten – FAQs'
+        - name: 'FAQs zu Abonnements, LCS-Projekten und Azure AD-Mandanten'
           href: get-started/subscription-overview.md
         - name: Verschieben von Umgebungen zwischen Rechenzentren
           href: get-started/move-environments-data-center.md
@@ -460,7 +462,9 @@
               href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
             - name: Standardgegenkonten für Kreditorenrechnungserfassungen und Rechnungsgenehmigungserfassungen
               href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
-            - name: Beheben von Abweichungen beim Abgleich von Rechnungssummen
+            - name: Kreditorenworkflow
+              href: ../financials/accounts-payable/vendor-workflow.md
+            - name: Abweichungen beim Abgleich von Rechnungssummen beheben
               href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
               items:
                 - name: Ausnahmen untersuchen oder auflösen
@@ -475,17 +479,23 @@
               href: ../financials/accounts-payable/vendor-portal-invoicing-workspace.md
             - name: Kreditorenrechnungsautomatisierung
               href: ../financials/accounts-payable/vendor-invoice-automation.md
+            - name: Brokervertragsmanagement
+              href: ../financials/accounts-payable/broker-contract.md
+            - name: Lizenzvertragsmanagement
+              href: ../financials/accounts-payable/royalty-contract.md
             - name: Zahlungen und Ausgleiche
               items:
                 - name: Zentralisierte Zahlungen für Kreditorenkonten
                   href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
-                - name: Konfigurieren eines Ausgleichs
+                - name: Ausgleich konfigurieren
                   href: ../financials/cash-bank-management/configure-settlement.md
+                - name: Übersicht über Kreditorenzahlungen
+                  href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
                 - name: Arbeitsbereich für Kreditorenzahlungen
                   href: ../financials/accounts-payable/vendor-payments-workspace.md
-                - name: Angeben eines Kreuzkurses
+                - name: Kreuzkurs angeben
                   href: ../financials/accounts-payable/specify-cross-rate.md
-                - name: Definieren von Gebühren für die Kreditorenzahlung
+                - name: Gebühren für Kreditorenzahlung festlegen
                   href: ../financials/accounts-payable/tasks/define-vendor-payment-fees.md
                 - name: Definieren von Kreditorenzahlungsbedingungen
                   href: ../financials/accounts-payable/tasks/define-vendor-payment-terms.md
@@ -509,20 +519,24 @@
                   href: ../financials/accounts-payable/single-voucher-multiple-customer-vendor-records.md
                 - name: Ein Skonto außerhalb der Skontoperiode in Anspruch nehmen
                   href: ../financials/accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md
-                - name: 'Einen Rabatt in Anspruch nehmen, der höher ist, als der berechnete Rabatt für eine Kreditorenzahlung'
+                - name: 'Rabatt in Anspruch nehmen, der höher ist, als der berechnete Rabatt für eine Kreditorenzahlung'
                   href: ../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
                 - name: Kreditorenzahlungen für einen Teilbetrag
                   href: ../financials/accounts-payable/vendor-payments-partial-amount.md
+                - name: Seite mit Kreditorenbuchungsliste
+                  href: ../financials/accounts-payable/vendor-transaction-list-page.md
         - name: Debitoren
           href: ../financials/accounts-receivable/accounts-receivable.md
           items:
             - name: Kredit und Inkasso bei Debitoren
               href: ../financials/accounts-receivable/collections-credit-accounts-receivable.md
-            - name: Konfigurieren von Debitoren sowie Kredit und Inkasso
+            - name: Debitoren sowie Kredit und Inkasso konfigurieren
               href: ../financials/accounts-receivable/accounts-receivables-set-up-overview.md
             - name: Kredit und Inkasso einrichten
               href: ../financials/accounts-receivable/set-up-collections.md
-            - name: Einrichten und Verarbeiten von Serienrechnungen
+            - name: Inkassoinformationen überprüfen
+              href: ../financials/accounts-receivable/tasks/review-collections-information.md
+            - name: Serienrechnungen einrichten und verarbeiten
               href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
             - name: Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Freitextrechnungen
               href: ../financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
@@ -536,57 +550,59 @@
               href: ../financials/accounts-receivable/credit-card-authorizations.md
             - name: Freitextrechnung erstellen
               href: ../financials/accounts-receivable/create-free-text-invoice-new.md
-            - name: Eine Vorlage für Freitextrechnungen erstellen
+            - name: Vorlage für Freitextrechnungen erstellen
               href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md
-            - name: Eine Freitextrechnung berichtigen
+            - name: Freitextrechnung korrigieren
               href: ../financials/accounts-receivable/correct-free-text-invoice.md
-            - name: Einrichten von Zinssätzen für einen Zinscode
+            - name: Einem Debitor eine Freitextrechnungsvorlage zuweisen
+              href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+            - name: Freitextserienrechnungen generieren und buchen
+              href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
+            - name: Auftragsrechnungen erstellen
+              href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
+            - name: Zinssätze für einen Zinscode einrichten
               href: ../financials/accounts-receivable/set-up-interest-rates-interest-code.md
-            - name: 'Aufheben, Wiedererheben oder Stornieren von Zinsgebühren'
+            - name: 'Zinsgebühren aufheben, wiedererheben oder stornieren'
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
-            - name: Erstellen einer Debitorenrechnung
+            - name: Zinsen verarbeiten
+              href: ../financials/accounts-receivable/tasks/process-interest.md
+            - name: Kreditorenrechnungsrichtlinien einrichten
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Eingang von Kreditorenrechnungen erfassen und mit der Menge abgleichen
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
+            - name: Debitorenrechnung erstellen
               href: ../financials/accounts-receivable/configure-customer-invoices.md
-            - name: Debitorenzahlungsbedingungen einrichten
+            - name: Debitorenzahlungen anzahlen
+              href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
+            - name: Debitorenzahlungsbedingungen festlegen
               href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
-            - name: Einrichten von Wechseln
+            - name: Debitorenzahlungsmethode festlegen
+              href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
+            - name: Debitorenzahlungsgebühren festlegen
+              href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Wechsel einrichten
               href: ../financials/accounts-receivable/set-up-bills-exchange.md
             - name: Debitoren abschließen
               href: ../financials/accounts-receivable/close-accounts-receivable.md
-            - name: Debitorenaufgaben
-              items:
-                - name: Einem Debitor eine Freitext-Rechnungsvorlage zuweisen
-                  href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
-                - name: Mahnschreibensequenz einrichten
-                  href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
-                - name: Einen Zinscode mit einem Bereich erstellen
-                  href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
-                - name: Auftragsrechnungen erstellen
-                  href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
-                - name: Eine Abschreibungserfassung für einen Debitor erstellen
-                  href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
-                - name: Debitorenzahlungen empfangen
-                  href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
-                - name: Zahlungsmethode des Debitoren einrichten
-                  href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
-                - name: Debitorenzahlungsgebühren einrichten
-                  href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
-                - name: Freitext-Serienrechnungen generieren und buchen
-                  href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
-                - name: Mahnschreiben verarbeiten
-                  href: ../financials/accounts-receivable/tasks/process-collection-letters.md
-                - name: Prozesszinsen
-                  href: ../financials/accounts-receivable/tasks/process-interest.md
-                - name: Eingang von Kreditorenrechnungen erfassen und mit dem Wareneingang abgleichen
-                  href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
-                - name: Inkassoinformationen überprüfen
-                  href: ../financials/accounts-receivable/tasks/review-collections-information.md
-                - name: Debitoren-Fälligkeitsinformationen einrichten und generieren
-                  href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-                - name: Kreditorenrechnungsrichtlinien einrichten
-                  href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Mahnschreibensequenz erstellen
+              href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
+            - name: Mahnschreiben verarbeiten
+              href: ../financials/accounts-receivable/tasks/process-collection-letters.md
+            - name: Direkteinzugsmandat für einen Debitor erstellen
+              href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+            - name: Zinscode mit Bereich erstellen
+              href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
+            - name: Abschreibungserfassung für Debitor erstellen
+              href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
+            - name: Debitorenfälligkeitsinformationen einrichten und erstellen
+              href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Debitorenworkflow
+              href: ../financials/accounts-receivable/customer-workflow.md
             - name: Zahlungen und Ausgleiche
               items:
-                - name: 'Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattperiode enthalten'
+                - name: Übersicht über Debitorenzahlungen
+                  href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
+                - name: 'Debitorenzahlung verwenden, um mehrere Rechnungen auszugleichen, die sich über mehrere Rabattperioden erstrecken'
                   href: ../financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: Zentralisierte Zahlungen für Debitoren
                   href: ../financials/accounts-receivable/centralized-payments-accounts-receivable.md
@@ -598,16 +614,18 @@
                   href: ../financials/accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
                 - name: 'Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat'
                   href: ../financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
-                - name: Ausführen einer Debitorenrückerstattung
+                - name: Debitorenrückerstattung durchführen
                   href: ../financials/accounts-receivable/reimburse-customers.md
                 - name: Debitorenzahlungen für einen Teilbetrag
                   href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+                - name: Seite mit Debitorenbuchungsliste
+                  href: ../financials/accounts-receivable/customer-transactions-list-page.md
         - name: Budgetierung
           href: ../financials/budgeting/budgeting-overview.md
           items:
-            - name: Budgetplanungsüberblick
+            - name: Übersicht über Budgetplanung
               href: ../financials/budgeting/budget-planning-overview-configuration.md
-            - name: Budgetsteuerungsüberblick
+            - name: Übersicht über Budgetsteuerung
               href: ../financials/budgeting/budget-control-overview-configuration.md
             - name: 'Budgetierungsüberblick '
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
@@ -638,59 +656,55 @@
               href: ../financials/cash-bank-management/cash-discounts.md
             - name: Skonti für Überzahlungen
               href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
-            - name: Ausgleichsüberblick
+            - name: IBAN-Kontoprüfung verwalten
+              href: ../financials/cash-bank-management/iban-validation.md
+            - name: Übersicht über Ausgleiche
               href: ../financials/cash-bank-management/settlement-overview.md
-            - name: Ausgleichsüberblick für zentralisierte Zahlungen
+            - name: Übersicht über Ausgleiche bei zentralisierten Zahlungen
               href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
             - name: Kreditbriefe
               href: ../financials/cash-bank-management/letters-of-credit.md
+            - name: Bankfazilitätsvereinbarung für Kreditbrief erstellen
+              href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
+            - name: Bankfazilitäten und Buchungsprofile für Kreditbrief einrichten
+              href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
             - name: Kreditbriefe und Importinkasso
               href: ../financials/cash-bank-management/letters-of-credit-import-collections.md
+            - name: Kreditbrief exportieren
+              href: ../financials/cash-bank-management/tasks/export-letter-credit.md
+            - name: Kreditbrief importieren
+              href: ../financials/cash-bank-management/tasks/import-letter-credit.md
             - name: Bankgarantien
               href: ../financials/cash-bank-management/letters-of-guarantee.md
+            - name: Bankgarantiebuchung
+              href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
+            - name: Bankfazilitätsvereinbarungen für die Bankgarantie erstellen
+              href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+            - name: Bankfazilitäten und Buchungsprofile für Bankgarantien einrichten
+              href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
             - name: Vordatierte Schecks
               href: ../financials/cash-bank-management/postdated-checks.md
+            - name: Vordatierte Schecks einrichten
+              href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
+            - name: Vordatierten Scheck für einen Debitor erfassen und buchen
+              href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
+            - name: Vordatierten Scheck für einen Kreditor erfassen und buchen
+              href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
+            - name: Vordatierten Scheck von einem Debitor ausgleichen
+              href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
+            - name: Vordatierten Scheck für einen Kreditor ausgleichen
+              href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
             - name: Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen
               href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
-            - name: Skonto für Überzahlungen behandeln
+            - name: Skonti für Überzahlungen handhaben
               href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
             - name: Einrichten zentralisierter Zahlungen
               href: ../financials/cash-bank-management/set-up-centralized-payments.md
             - name: Automatischer Ausgleich und Priorisierung
               href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
-            - name: Bargeld- und Bankverwaltungsaufgaben
-              items:
-                - name: Eine Bankfazilitätsvereinbarung für einen Kreditbrief erstellen
-                  href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
-                - name: Bankfazilitätsvereinbarungen für den Garantiebrief erstellen
-                  href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-                - name: Übersicht Debitorenzahlung
-                  href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
-                - name: Akkreditiv exportieren
-                  href: ../financials/cash-bank-management/tasks/export-letter-credit.md
-                - name: Akkreditiv importieren
-                  href: ../financials/cash-bank-management/tasks/import-letter-credit.md
-                - name: Bankgarantiebuchung
-                  href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
-                - name: Einen vordatierten Scheck für einen Debitor erfassen und buchen
-                  href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
-                - name: Einen vordatierten Scheck für einen Kreditor erfassen und buchen
-                  href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
-                - name: Einen vordatierten Scheck von einem Debitor ausgleichen
-                  href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
-                - name: Einen vordatierten Scheck für einen Kreditor ausgleichen
-                  href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
-                - name: Bankfazilitäten und Buchungsprofile für Bankgarantie einrichten
-                  href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-                - name: Bankfazilitäten und Buchungsprofile für Akkreditiv einrichten
-                  href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
-                - name: Vordatierte Schecks einrichten
-                  href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
-                - name: Übersicht Kreditorenzahlung
-                  href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
             - name: Erweiterte Bankabstimmung
               items:
-                - name: Aufgaben der erweiterten Bankabstimmung
+                - name: Aufgaben zur Einrichtung der erweiterten Bankabstimmung
                   href: ../financials/cash-bank-management/configure-advanced-bank-reconciliation.md
                 - name: Einrichten des erweiterten Bankabstimmungs-Importprozesses
                   href: ../financials/cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
@@ -817,9 +831,17 @@
         - name: Anlagen
           href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: Anlage erstellen
+              href: ../financials/fixed-assets/tasks/create-fixed-asset.md
+            - name: Anlagenerweiterung eingeben
+              href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
+            - name: Anlagenanschaffungen vorschlagen
+              href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
+            - name: Anlagen umgliedern
+              href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
             - name: Arbeitsbereich für Anlagen
               href: ../financials/fixed-assets/fixed-asset-management-workspace.md
-            - name: Rollforwardbericht für Anlagen
+            - name: Rollforward-Bericht für Anlagen
               href: ../financials/fixed-assets/Fixed-asset-roll-forward-report.md
             - name: Upgradeübersicht für Abschreibungsbuch
               href: ../financials/fixed-assets/depreciation-book-upgrade-considerations.md
@@ -829,24 +851,44 @@
               href: ../financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
             - name: Mit abgeleiteten Büchern buchen
               href: ../financials/fixed-assets/post-derived-value-models.md
-            - name: Buchen von Anlagenbuchungen auf Buchungsebenen
+            - name: Anlagenbuchungen auf Buchungsebenen buchen
               href: ../financials/fixed-assets/post-fixed-asset-transactions-posting-layers.md
             - name: Anlagenbuchungsoptionen
               href: ../financials/fixed-assets/enter-fixed-asset-transactions.md
-            - name: Neuberechnung von Wiederbeschaffungskosten und versicherten Werten für Anlagengruppen
+            - name: Anlage übertragen
+              href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
+            - name: Anlage teilen
+              href: ../financials/fixed-assets/tasks/split-fixed-asset.md
+            - name: Anlagengruppen einrichten
+              href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
+            - name: Anlagengruppe ändern
+              href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
+            - name: Wiederbeschaffungskosten und versicherte Werten für Anlagengruppen neu berechnen
               href: ../financials/fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups.md
             - name: Buchungskonten für Anlagenveräußerung
               href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
+            - name: Anlage mithilfe einer Freitextrechnung veräußern
+              href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
             - name: Anlagen-Massenaktualisierung
               href: ../financials/fixed-assets/fixed-asset-mass-update.md
-            - name: Erwerben von Anlagen durch Beschaffung
+            - name: Anlagen durch Beschaffung erwerben
               href: ../financials/fixed-assets/acquire-assets-procurement.md
             - name: Einrichten und Integration
               items:
                 - name: Anlagen einrichten
                   href: ../financials/fixed-assets/set-up-fixed-assets.md
+                - name: Anlagenbuchungsprofile einrichten
+                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
                 - name: Integration von Anlagen
                   href: ../financials/fixed-assets/fixed-asset-integration.md
+                - name: Anlagen von Kreditorenkonten erstellen und erwerben
+                  href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
+                - name: 'Abschreibungsbücher einrichten '
+                  href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
+                - name: Abschreibungsprofile einrichten und erstellen
+                  href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
+                - name: Wertmodelle einrichten
+                  href: ../financials/fixed-assets/tasks/set-up-value-models.md
             - name: Abschreibungsmethoden
               items:
                 - name: Abschreibungskonventionen
@@ -861,72 +903,42 @@
                   href: ../financials/fixed-assets/200-percent-reducing-balance-depreciation.md
                 - name: Vorzeitige Abschreibung
                   href: ../financials/fixed-assets/bonus-depreciation.md
+                - name: Vorzeitige Abschreibung einrichten
+                  href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
                 - name: Verbrauchsabschreibung
                   href: ../financials/fixed-assets/consumption-depreciation.md
                 - name: Abschreibungseffekte bei Rückbuchungen
                   href: ../financials/fixed-assets/depreciation-effects-reversals.md
                 - name: Abschreibungsmethoden und -konventionen
                   href: ../financials/fixed-assets/depreciation-methods-conventions.md
+                - name: Abschreibungsvorschlag erstellen
+                  href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
                 - name: Faktorabschreibung
                   href: ../financials/fixed-assets/factor-depreciation.md
                 - name: Buchungskonten für Anlagenerwerb
                   href: ../financials/fixed-assets/fixed-asset-acquisition-posting-accounts.md
                 - name: Anlagenabschreibung
                   href: ../financials/fixed-assets/fixed-asset-depreciation.md
-                - name: Manuelle Abschreibung
-                  href: ../financials/fixed-assets/manual-depreciation.md
-                - name: Degressive Abschreibung
-                  href: ../financials/fixed-assets/reduce-balance-depreciation.md
-                - name: Betrag der Rundung für Abschreibungsberechnungen
-                  href: ../financials/fixed-assets/round-off-amount-depreciation-calculations.md
-                - name: Abschreibungsmethode "Verbleibende lineare Nutzungsdauer"
-                  href: ../financials/fixed-assets/straight-line-life-remaining-depreciation.md
-                - name: Abschreibungsmethode "Lineare Nutzungsdauer"
-                  href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
-            - name: Anlagenaufgaben
-              items:
                 - name: Anlagenabschreibung über juristische Personen hinweg berechnen
                   href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
                 - name: Abschreibungskonventionen für mehrere Anlagen ändern
                   href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
-                - name: Eine Anlagengruppe ändern
-                  href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
-                - name: Anlagen von Kreditoren erstellen und erwerben
-                  href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
-                - name: Einen Abschreibungsvorschlag erstellen
-                  href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
-                - name: Eine Anlage erstellen
-                  href: ../financials/fixed-assets/tasks/create-fixed-asset.md
-                - name: Eine Anlage mithilfe einer Freitextrechnung veräußern
-                  href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
-                - name: Eine Anlagenerweiterung für eine Anlage eingeben
-                  href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
-                - name: Anlagenanschaffungen vorschlagen
-                  href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
-                - name: Anlagen umgliedern
-                  href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
-                - name: Vorzeitigen Abschreibung einrichten
-                  href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-                - name: 'Abschreibungsbücher einrichten '
-                  href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
-                - name: Abschreibungsprofile einrichten und erstellen
-                  href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
-                - name: Anlagengruppen einrichten
-                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
-                - name: Anlagenbuchungsprofile einrichten
-                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
-                - name: Wertmodelle einrichten
-                  href: ../financials/fixed-assets/tasks/set-up-value-models.md
-                - name: Eine Anlage teilen
-                  href: ../financials/fixed-assets/tasks/split-fixed-asset.md
-                - name: Eine Anlage übertragen
-                  href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
+                - name: Manuelle Abschreibung
+                  href: ../financials/fixed-assets/manual-depreciation.md
+                - name: Degressive Abschreibung reduzieren
+                  href: ../financials/fixed-assets/reduce-balance-depreciation.md
+                - name: Rundungsbetrag für Abschreibungsberechnungen
+                  href: ../financials/fixed-assets/round-off-amount-depreciation-calculations.md
+                - name: Abschreibungsmethode „Verbleibende lineare Nutzungsdauer“
+                  href: ../financials/fixed-assets/straight-line-life-remaining-depreciation.md
+                - name: Abschreibungsmethode „Lineare Nutzungsdauer“
+                  href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
         - name: Hauptbuch
           href: ../financials/general-ledger/general-ledger.md
           items:
             - name: Konten
               items:
-                - name: Abgrenzungsüberblick
+                - name: Übersicht über Abgrenzungen
                   href: ../financials/general-ledger/accruals-overview.md
                 - name: Löschungsregeln
                   href: ../financials/general-ledger/elimination-rules.md
@@ -946,15 +958,22 @@
                   href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
                 - name: Kontostrukturen erstellen
                   href: ../financials/general-ledger/tasks/create-account-structures.md
-                - name: Erstellen von Abgrenzungsschemata
+                - name: Abgrenzungsschemata erstellen
                   href: ../financials/general-ledger/tasks/create-accrual-schemes.md
-                - name: Konsolidierungsgruppen und zusätzliche Konsolidierungskonten erstellen
+                - name: Finanzielle Konsolidierungen und Währungsumrechnung
+                  href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                  items:
+                    - name: Online konsolidieren
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: Konsolidierte Finanzaufstellungen erstellen
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: Konsolidierungsgruppen und zusätzliches Konsolidierungskonto erstellen
                   href: ../financials/general-ledger/tasks/create-consolidation-groups.md
                 - name: Hauptkontotypen
                   href: ../financials/general-ledger/main-account-types.md
-                - name: Ein Hauptkonto erstellen
+                - name: Hauptkonto erstellen
                   href: ../financials/general-ledger/tasks/create-main-account.md
-                - name: Ihren Kontenplan planen
+                - name: Kontenplan planen
                   href: ../financials/general-ledger/plan-chart-of-accounts.md
                 - name: Buchungen zwischen Sachkonten ausgleichen
                   href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
@@ -1073,22 +1092,40 @@
           items:
             - name: Plan für die Funktionalität des öffentlichen Sektors
               href: ../financials/public-sector/plan-public-sector-functionality.md
+            - name: Deckblätter und Unterzeichnungsseiten für einen Zahlungsbericht im öffentlichen Sektor erstellen
+              href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: Kreditorenkonten im öffentlichen Sektor
               href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
                 - name: Bestellungscodes im öffentlichen Sektor
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
+                - name: Handelspartnercode im öffentlichen Sektor erstellen und zuweisen
+                  href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
                 - name: Buchungsdefinitionen im öffentlichen Sektor
                   href: ../financials/public-sector/posting-definitions-public-sector.md
-                - name: Plan für einmalige Kreditoren im öffentlichen Sektor
-                  href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
                 - name: Einmalige Kreditoren im öffentlichen Sektor
                   href: ../financials/public-sector/one-time-vendors-public-sector.md
+                - name: Einmaligen Kreditor und Rechnung im öffentlichen Sektor erstellen
+                  href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
+                - name: Kreditorenzertifizierungstyp für den öffentlichen Sektor erstellen
+                  href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
+                - name: Mehrere einmalige Kreditoren und Rechnungen im öffentlichen Sektor importieren und erstellen
+                  href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
+                - name: Plan für einmalige Kreditoren im öffentlichen Sektor
+                  href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
+                - name: Zugriff auf Kaufverträge im öffentlichen Sektor steuern
+                  href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
+                - name: Kaufvertragsklassifizierungen im öffentlichen Sektor einrichten
+                  href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: Debitoren im öffentlichen Sektor
               href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
                 - name: Abrechnungsklassifizierungen und Abrechnungscodes im öffentlichen Sektor
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
+                - name: Abrechnungsklassifizierung im öffentlichen Sektor erstellen
+                  href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
+                - name: Abrechnungscode für den öffentlichen Sektor erstellen
+                  href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
                 - name: Ausgleichspriorität im öffentlichen Sektor
                   href: ../financials/public-sector/settlement-priority-public-sector.md
                 - name: Freitextrechnungen im öffentlichen Sektor
@@ -1098,10 +1135,16 @@
             - name: Budgetierung im öffentlichen Sektor
               href: ../financials/public-sector/budgeting-public-sector.md
               items:
+                - name: Originalbudget erstellen und vorläufige Budgeteinträge im öffentlichen Sektor rückgängig machen
+                  href: ../financials/public-sector/tasks/create-original-budget.md
+                - name: Vorläufiges Budget für den öffentlichen Sektor erstellen
+                  href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
                 - name: Budgetanalyse im öffentlichen Sektor
                   href: ../financials/public-sector/budget-analysis-public-sector.md
                 - name: Vorläufige Budgets und Umlagen im öffentlichen Sektor
                   href: ../financials/public-sector/preliminary-budgets-apportionments-public-sector.md
+                - name: 'Zusage erstellen, um Budgetmittel für den öffentlichen Sektor zu reservieren'
+                  href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
             - name: Anlagen im öffentlichen Sektor
               href: ../financials/public-sector/fixed-asset-public-sector.md
             - name: Hauptbuch im öffentlichen Sektor
@@ -1109,52 +1152,26 @@
               items:
                 - name: Erweiterte Sachkonteneinträge im öffentlichen Sektor
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
+                - name: Erweiterten Sachkontoeintrag im öffentlichen Sektor erstellen
+                  href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
                 - name: Verarbeitung am Jahresende im öffentlichen Sektor
                   href: ../financials/public-sector/year-end-processing-public-sector.md
                 - name: Abgeleitete Finanzhierarchien im öffentlichen Sektor
                   href: ../financials/public-sector/derived-financial-hierarchies-public-sector.md
+                - name: Abgeleitete Finanzhierarchie im öffentlichen Sektor einrichten
+                  href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
             - name: Beschaffung im öffentlichen Sektor
               href: ../financials/public-sector/procurement-sourcing-public-sector.md
             - name: Sicherheitsrollen im öffentlichen Sektor
               href: ../financials/public-sector/security-roles-public-sector.md
             - name: Geldmittel im öffentlichen Sektor
               href: ../financials/public-sector/funds-public-sector.md
-            - name: Aufgaben im öffentlichen Sektor
-              items:
-                - name: Einen Zertifizierungstyp zu einem Kreditor für den öffentlichen Sektor hinzufügen
-                  href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
-                - name: Zugriff auf Kaufverträge im öffentlichen Sektor steuern
-                  href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
-                - name: Einen erweiterten Sachkontoeintrag im öffentlichen Sektor erstellen
-                  href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Einen Handelspartnercode im öffentlichen Sektor erstellen und zuweisen
-                  href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
-                - name: Eine Abrechnungsklassifizierung im öffentlichen Sektor erstellen
-                  href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
-                - name: Einen Abrechnungscode für den öffentlichen Sektor erstellen
-                  href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
-                - name: 'Eine Zusage erstellen, um Budgetmittel für den öffentlichen Sektor zu reservieren'
-                  href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
-                - name: Deckblätter und Unterzeichnungsseiten für einen Zahlungsbericht im öffentlichen Sektor erstellen
-                  href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
-                - name: Einen Geldmitteltyp im öffentlichen Sektor erstellen
-                  href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
-                - name: Einen einmaligen Kreditor und eine Rechnung im öffentlichen Sektor erstellen
-                  href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
-                - name: Ein Originalbudget erstellen und vorläufige Budgeteinträge im öffentlichen Sektor rückgängig machen
-                  href: ../financials/public-sector/tasks/create-original-budget.md
-                - name: Ein vorläufiges Budget für den öffentlichen Sektor erstellen
-                  href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
-                - name: Einen Kreditorenzertifizierungstyp für den öffentlichen Sektor erstellen
-                  href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
-                - name: Mehrere einmalige Kreditoren und Rechnungen im öffentlichen Sektor importieren und erstellen
-                  href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
-                - name: Eine abgeleitete Finanzhierarchie im öffentlichen Sektor einrichten
-                  href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
-                - name: Ein Zahlungsmittel im öffentlichen Sektor einrichten
-                  href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
-                - name: Kaufvertragsklassifizierungen im öffentlichen Sektor einrichten
-                  href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
+            - name: Zahlungsmittel im öffentlichen Sektor einrichten
+              href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
+            - name: Geldmitteltyp im öffentlichen Sektor erstellen
+              href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
+            - name: Zertifizierungstyp zu einem Kreditor für den öffentlichen Sektor hinzufügen
+              href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: Finanzberichterstellung
           href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
@@ -1188,316 +1205,320 @@
               href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
             - name: Ändern von Zeilendefinitionszellen
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: Finanzberichterstellungs-Data Mart zurücksetzen
+            - name: Finanzberichterstellungs-Datamart zurücksetzen
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Lokalisierung und rechtliche Funktionen
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Asien-Pazifik
+        - name: Australien
+          href: ../financials/localizations/australia.md
           items:
-            - name: Australien
-              href: ../financials/localizations/australia.md
+            - name: Australischer Geschäftsvorgangsbericht (Business Activity Statement)
+              href: ../financials/localizations/apac-aus-business-activity-statement.md
+            - name: Berichtsfelder hinzufügen und Geschäftsvorgangsbericht generieren
+              href: ../financials/localizations/tasks/add-bas-report-boxes.md
+            - name: Low-Value-Poolabschreibung (AU)
+              href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
+            - name: Ursachencodes für Geschäftsvorgangsbericht einrichten
+              href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
+        - name: Österreich
+          href: ../financials/localizations/austria.md
+          items:
+            - name: Halbjährliche Abschreibung sonstiger Anschaffungen
+              href: ../financials/localizations/emea-aut-half-year-depreciation.md
+            - name: Verpackungsmaterialgebühren
+              href: ../financials/localizations/emea-aut-packing-material-fee-calculation.md
+            - name: MwSt.-Abrechnung
+              href: ../financials/localizations/emea-aut-vat-statement-details.md
+        - name: Belgien
+          href: ../financials/localizations/belgium.md
+          items:
+            - name: CODA-Bankauszug
+              href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
+            - name: Erstellen und Übertragen von Buchungen an das BLWI
+              href: ../financials/localizations/tasks/be-00011-create-transfer-blwi.md
+            - name: INTERVAT-Steuererklärung
+              href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
+            - name: Abstimmungsbericht
+              href: ../financials/localizations/emea-bel-reconciliation-reports.md
+            - name: Berichterstellung über Zahlungsbilanz einrichten
+              href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
+            - name: PRODCOM einrichten und verwalten
+              href: ../financials/localizations/emea-bel-prodcom-report.md
+        - name: Brasilien
+          href: ../financials/localizations/brazil.md
+          items:
+            - name: Lokalisierungsumfang
+              href: ../financials/localizations/latam-bra-scope.md
+            - name: Steuerbücher
+              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
-                - name: Australischer Geschäftsvorgangsbericht (Business Activity Statement)
-                  href: ../financials/localizations/apac-aus-business-activity-statement.md
-                - name: Berichtsfelder hinzufügen und Geschäftsvorgangsbericht generieren
-                  href: ../financials/localizations/tasks/add-bas-report-boxes.md
-                - name: Low-Value-Poolabschreibung (AU)
-                  href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
-                - name: Ursachencodes für Geschäftsvorgangsbericht einrichten
-                  href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
-            - name: China
-              href: ../financials/localizations/china.md
+                - name: Steuerbücher konfigurieren
+                  href: ../financials/localizations/latam-bra-configure-fiscal-books.md
+                - name: Steuerdokumente für ICMS-Steuer
+                  href: ../financials/localizations/latam-bra-icms-tax-fiscal-documents.md
+                - name: Steuerdokumente importieren
+                  href: ../financials/localizations/latam-bra-import-fiscal-documents.md
+                - name: Buchungen juristischer Personen aus der Hauptbuchkonsolidierung exportieren und importieren
+                  href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
+                - name: XML-Dokumente für NF-e sowie DANFE-Dateien importieren und überprüfen
+                  href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
+                - name: Elektronisches Steuerdokument mittels Textdateien pflegen
+                  href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
+                - name: Elektronische Zahlungsüberweisungen verarbeiten
+                  href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
+                - name: Verwaltung elektronischer Zahlungen für Kreditorenzahlungen
+                  href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
+                - name: Steuerdokumente
+                  href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
+                - name: Textplatzhalter für Steuerdokumente
+                  href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
+                - name: Quelltext für Steuerdokument einrichten
+                  href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
+                - name: Steuerdokumenttext in den Beschaffungsdokumenten verwalten
+                  href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
+                - name: Steuerdokumente für Kreditoren ausstellen
+                  href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
+                - name: Steuerdokumente für Debitoren ausstellen
+                  href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
+                - name: Ergänzende steuerliche Dokumente für Einkauf
+                  href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
+                - name: Ergänzendes Steuerdokument für den Einkauf erstellen und buchen
+                  href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
+                - name: Ergänzendes Steuerdokument für den Einkauf stornieren
+                  href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
+                - name: Referenzierte Steuerdokumente
+                  href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
+                - name: Steuerdokumente des Kreditors empfangen (Produkte)
+                  href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
+                - name: Steuerdokumente des Kreditors empfangen (Anlagen – PIS und COFINS langfristig wiederherstellbar)
+                  href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
+                - name: Steuerdokumente des Kreditors empfangen (Anlagen – ICMS langfristig wiederherstellbar)
+                  href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
+                - name: Steuerdokumente für Debitoren ausstellen (Dienste)
+                  href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
+                - name: Steuerdokumente für Debitoren ausstellen (Anlagen)
+                  href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
+                - name: Steuerdokumente für Debitoren ausstellen (Projekt)
+                  href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
+                - name: Steuerdokumente für Debitoren ausstellen (für Endbenutzer)
+                  href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
+                - name: Steuerdokumente für Debitoren ausstellen (für SUFRAMA-Debitoren)
+                  href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
+                - name: Steuerdokument für Debitoren stornieren (Projekt)
+                  href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
+                - name: Ergänzende steuerliche Dokumente für Verkauf
+                  href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
+                - name: Ergänzendes Steuerdokument für den Verkauf erstellen und buchen
+                  href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
+                - name: Ergänzendes Steuerdokument für den Verkauf stornieren
+                  href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
+                - name: Elektronisches Steuerdokument für Dienstleistungen
+                  href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
+                - name: 'Erfassungen, die während des elektronischen Zahlungsrückgabeprozesses generiert wurden'
+                  href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
+                - name: Projektlastschriften
+                  href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
+            - name: NF-e-Prozess
+              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
-                - name: Stücklistenvergleich
-                  href: ../financials/localizations/apac-chn-bom-comparison.md
-                - name: Chinesische Hierarchie des Kontenplans
-                  href: ../financials/localizations/tasks/china-hierarchy-chart-accounts.md
-                - name: Chinesische Belegkontinuitätsprüfung
-                  href: ../financials/localizations/tasks/chinese-voucher-continuity-check.md
-                - name: Chinesische Belege
-                  href: ../financials/localizations/apac-chn-vouchers.md
-                - name: Steuerintegration konfigurieren
-                  href: ../financials/localizations/apac-chn-tax-integration.md
-                - name: Chinesische Golden-Tax-Integrationsexporteinrichtung
-                  href: ../financials/localizations/tasks/golden-tax-integration-export-setup.md
+                - name: Automatische Übermittlung von NF-e-Steuerdokumenten
+                  href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
+                - name: E-Mails für genehmigte NF-e generieren und DANFE-PDF-Dateien und NF-e-XML-Dateien an die E-Mails anhängen
+                  href: ../financials/localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
+                - name: NF-e-Zertifikate
+                  href: ../financials/localizations/latam-bra-nfe-certs.md
+                - name: 'Einrichten, Importieren und Überprüfen von XML-Dokumenten für NF-e sowie DANFE'
+                  href: ../financials/localizations/latam-bra-set-up-import-nfe.md
+                - name: NF-e-Parameter einrichten
+                  href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
+                - name: NF-e-Parameter für steuerliche Einrichtung einrichten
+                  href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+            - name: Parameter für juristische Personen
+              href: ../financials/localizations/latam-bra-legal-entity-parameters.md
+            - name: Parameter für juristische Personen einrichten
+              href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
+            - name: CIAP-Anlage erwerben
+              href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+            - name: CIAP-Anlage veräußern
+              href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+            - name: CIAP-Buchung eingeben
+              href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
+            - name: CIAP-Habenbetrag berechnen
+              href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
+            - name: CIAP-Habenbetrag aus vorheriger Periode einbeziehen
+              href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
+            - name: Lieferscheine
+              href: ../financials/localizations/tasks/br-00041-delivery-slip.md
+            - name: Nichtsteuerlicher Betrieb
+              href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
+            - name: Sonstige Zuschläge auf Freitextrechnungen
+              href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
+            - name: Zinsen und Gebühren für Kreditorenzahlungen einrichten
+              href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
+            - name: Zinsen und Gebühren auf Kreditorenzahlungen berechnen
+              href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
+            - name: Zinsen und Gebühren auf Debitorenzahlungen einrichten
+              href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
+            - name: Zinsen und Gebühren auf Debitorenzahlungen berechnen
+              href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+            - name: Steuern
+              href: ../financials/localizations/latam-bra-calculate-taxes.md
+              items:
+                - name: Steuer auf Bestellanforderungen berechnen
+                  href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
+                - name: Steuerbewertung erstellen – ICMS
+                  href: ../financials/localizations/tasks/br-10001-4-create-tax-assessment-icms.md
+                - name: Steuerbewertung erstellen - IPI-Steuer
+                  href: ../financials/localizations/tasks/br-10004-2-create-tax-assessment-ipi-tax.md
+                - name: Steuerbewertung erstellen - PIS- und COFINS-Steuer
+                  href: ../financials/localizations/tasks/br-10006-4-create-tax-assessment-pis-cofins-tax.md
+                - name: Steuerregulierungsbuchungen eingeben und buchen
+                  href: ../financials/localizations/tasks/br-10001-3-enter-post-tax-adjustment-transactions.md
+                - name: PIS- und COFINS-Steuerregulierungsbuchungen eingeben
+                  href: ../financials/localizations/tasks/br-10006-3-enter-pis-cofins-tax-adjustment-transactions.md
+                - name: Steuerattribute steuerliche Einrichtung
+                  href: ../financials/localizations/tasks/br-00002-fiscal-establishment-tax-attributes.md
+                - name: Steuerdokumente für ICMS-Steuergutschrift ausstellen
+                  href: ../financials/localizations/tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md
+                - name: Steuerdokumente für ICMS-Steuergutschriftübertragung ausstellen
+                  href: ../financials/localizations/tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md
+                - name: Regulierungscodes für ICMS-Steuer einrichten
+                  href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
+                - name: Regulierungscodes für ICMS-Steuern in Steuerdokumenten einrichten
+                  href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
+                - name: Regulierungscodes für IPI-Steuern einrichten
+                  href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
+                - name: PIS- und COFINS-Anlagen
+                  href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
+                - name: Regulierungscodes für PIS- und COFINS-Steuern einrichten
+                  href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
+                - name: PIS- und COFINS-Tabellen einrichten
+                  href: ../financials/localizations/tasks/br-10006-1-set-up-pis-cofins-tables.md
+                - name: Steuerbewertung für ISS-Steuer
+                  href: ../financials/localizations/tasks/br-10005-tax-assessment-iss-tax.md
+                - name: Steuerattribute
+                  href: ../financials/localizations/latam-bra-tax-attributes.md
+                - name: Steuerzahlungen
+                  href: ../financials/localizations/latam-bra-tax-payments.md
+                - name: Steuer in Verkaufsangeboten
+                  href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
+                - name: 'Quellensteuern '
+                  href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
+                - name: Quellensteuern für Debitorenzahlungen
+                  href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
+                - name: Quellensteuern für Kreditorenzahlungen
+                  href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
+        - name: China
+          href: ../financials/localizations/china.md
+          items:
+            - name: Stücklistenvergleich
+              href: ../financials/localizations/apac-chn-bom-comparison.md
+            - name: Chinesische Hierarchie des Kontenplans
+              href: ../financials/localizations/tasks/china-hierarchy-chart-accounts.md
+            - name: Chinesische Belegkontinuitätsprüfung
+              href: ../financials/localizations/tasks/chinese-voucher-continuity-check.md
+            - name: Chinesische Belege
+              href: ../financials/localizations/apac-chn-vouchers.md
+            - name: Steuerintegration konfigurieren
+              href: ../financials/localizations/apac-chn-tax-integration.md
+            - name: Chinesische Golden-Tax-Integrationsexporteinrichtung
+              href: ../financials/localizations/tasks/golden-tax-integration-export-setup.md
+            - name: Abschreibungsmethoden für Anlagen
+              href: ../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md
+            - name: Die chinesische goldene Steuerdatenentität importieren
+              href: ../financials/localizations/apac-chn-import-golden-tax-data-entity.md
+            - name: Kostenmodell für monatlichen Durchschnitt
+              href: ../financials/localizations/apac-chn-monthly-average-cost-model.md
+            - name: Bestandshauptkonten nach Standort buchen
+              href: ../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md
+            - name: Beitragsbelege aus anderen Modulen
+              href: ../financials/localizations/tasks/post-vouchers-other-modules-like-sales-invoices.md
+            - name: Belege aus der allgemeinen Erfassung buchen
+              href: ../financials/localizations/tasks/post-vouchers-general-journal.md
+            - name: Grundlegende Steuerintegrationsprofile für China einrichten
+              href: ../financials/localizations/tasks/set-up-basic-tax-integration-profile-china.md
+            - name: Chinesische Belege einrichten
+              href: ../financials/localizations/tasks/set-up-chinese-vouchers.md
+            - name: Abschreibungszuteilung für die Anlagengruppe einrichten
+              href: ../financials/localizations/tasks/fixed-asset-depreciation-allocation.md
+            - name: Soll- und Habenbeträge in Sachkonten anzeigen
+              href: ../financials/localizations/apac-chn-negative-debits-credits.md
+            - name: Teilnehmerbetriebsprotokoll nach Arbeitsregel Chinas
+              href: ../financials/localizations/tasks/user-operation-log-china-working-rule.md
+            - name: FAQ zu MwSt. auf Debitorenrechnungen
+              href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
+        - name: Tschechische Republik
+          href: ../financials/localizations/czech-republic.md
+          items:
+            - name: Skontogutschrift
+              href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
+            - name: Anlagen
+              items:
+                - name: Abschreibungsrundung
+                  href: ../financials/localizations/emea-cze-depreciation-rounding.md
+                - name: Halbjährliche Abschreibung auf Anlagenveräußerungen
+                  href: ../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md
+                - name: Abschreibungsunterbrechung (Feiertage)
+                  href: ../financials/localizations/emea-cze-depreciation-suspension-holidays.md
                 - name: Abschreibungsmethoden für Anlagen
-                  href: ../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Die chinesische goldene Steuerdatenentität importieren
-                  href: ../financials/localizations/apac-chn-import-golden-tax-data-entity.md
-                - name: Kostenmodell für monatlichen Durchschnitt
-                  href: ../financials/localizations/apac-chn-monthly-average-cost-model.md
-                - name: Bestandshauptkonten nach Standort buchen
-                  href: ../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md
-                - name: Beitragsbelege aus anderen Modulen
-                  href: ../financials/localizations/tasks/post-vouchers-other-modules-like-sales-invoices.md
-                - name: Belege aus der allgemeinen Erfassung buchen
-                  href: ../financials/localizations/tasks/post-vouchers-general-journal.md
-                - name: Grundlegende Steuerintegrationsprofile für China einrichten
-                  href: ../financials/localizations/tasks/set-up-basic-tax-integration-profile-china.md
-                - name: Chinesische Belege einrichten
-                  href: ../financials/localizations/tasks/set-up-chinese-vouchers.md
-                - name: Abschreibungszuteilung für die Anlagengruppe einrichten
-                  href: ../financials/localizations/tasks/fixed-asset-depreciation-allocation.md
-                - name: Soll- und Habenbeträge in Sachkonten anzeigen
-                  href: ../financials/localizations/apac-chn-negative-debits-credits.md
-                - name: Teilnehmerbetriebsprotokoll nach Arbeitsregel Chinas
-                  href: ../financials/localizations/tasks/user-operation-log-china-working-rule.md
-                - name: FAQ zu MwSt. auf Debitorenrechnungen
-                  href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
-            - name: Indien
-              href: ../financials/localizations/india.md
-              items:
-                - name: Anlagen
-                  href: ../financials/localizations/apac-ind-fixed-assets.md
-                  items:
-                    - name: Anhängen eines tagesbasierten Kalenders an ein Anlagenbuch
-                      href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
-                    - name: Verlagerungsabschreibung berechnen
-                      href: ../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md
-                    - name: Eine Lagersteuerungsgruppe für Kapitalartikel erstellen
-                      href: ../financials/localizations/tasks/apac-ind-create-inventory-model-group.md
-                    - name: Abschreibung erstellen und buchen
-                      href: ../financials/localizations/apac-ind-calculate-post-depreciation.md
-                    - name: Definieren des Verlagerungs- und Branchentyps für Bücher und Verknüpfen mit Anlagen
-                      href: ../financials/localizations/tasks/apac-ind-books-shift-industry-types.md
-                    - name: Anlagenbuchungen zurückbuchen
-                      href: ../financials/localizations/apac-ind-reverse-fixed-assets-transactions.md
-                    - name: Verlagerungsabschreibungsberechnung
-                      href: ../financials/localizations/apac-ind-calculation-shift-depreciation.md
-                    - name: Einrichten eines tagesbasierten Steuerkalenders
-                      href: ../financials/localizations/tasks/apac-ind-day-based-calendar.md
-                    - name: Parameter zur Berechnung von Abschreibungen einrichten
-                      href: ../financials/localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Einrichten einer Anlagengruppenabschreibung für Abschreibungsbücher
-                      href: ../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Übertragung von Kapitalelementen in Anlagen
-                      href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: Indien GST
-                  href: ../financials/localizations/apac-ind-gst.md
-                  items:
-                    - name: Indien GST-Referenzgruppen
-                      href: ../financials/localizations/apac-ind-gst-reference-groups.md
-                    - name: GST-Integration für Kassen
-                      href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Bereitstellungsrichtlinien für Kassen
-                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-                - name: Steuermodulübersicht
-                  href: ../financials/general-ledger/tax-engine.md
-                  items:
-                    - name: Steuermodulintegration
-                      href: ../financials/general-ledger/tax-engine-integration.md
-                    - name: Erweitern des Steuermoduls
-                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
-                - name: Steuerschwellenwert - FAQ
-                  href: ../financials/localizations/apac-ind-tax-thresholds.md
-            - name: Japan
-              href: ../financials/localizations/japan.md
-              items:
-                - name: Eine Anlage beschaffen und dafür den staatlichen Zuschuss beantragen
-                  href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
-                - name: Eine Anlage mit Anlagenstilllegungsverpflichtungen erwerben
-                  href: ../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md
-                - name: Eine Stilllegungsverpflichtungsschätzung für Anlagen anpassen
-                  href: ../financials/localizations/tasks/adjustment-asset-retirement-obligation-estimate.md
-                - name: Bilanzwert der freigegebenen Anlage und Goodwill für Bargeld generierende Einheiten zuordnen
-                  href: ../financials/localizations/tasks/allocate-carrying-amount.md
-                - name: Zuordnungsregeln
-                  href: ../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md
-                - name: Von Kreditoren abgedeckte Bankzahlungsgebühren
-                  href: ../financials/localizations/apac-jpn-bank-payment-fees-vendors.md
-                - name: Abschreibungsmethode während der Nutzungsdauer für ein Buch ändern
-                  href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-book.md
-                - name: Abschreibungsmethode während der Nutzungsdauer für eine Anlage ändern
-                  href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-one-asset.md
-                - name: Sonderabschreibungsparameter und Buchungsprofile konfigurieren
-                  href: ../financials/localizations/tasks/accelerated-depreciation-posting-profiles.md
-                - name: Parameter und Einstellungen der konsolidierten Rechnung für Kreditoren konfigurieren
-                  href: ../financials/localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
-                - name: Abschreibungsprofil und Buchungsprofil für Sonderabschreibung konfigurieren
-                  href: ../financials/localizations/tasks/configure-depreciation-profile-posting.md
-                - name: Hauptkonten für Stilllegungsverpflichtungen für Anlagen und Marktrabattsätze konfigurieren
-                  href: ../financials/localizations/tasks/configure-main-accounts-asset-retirement.md
-                - name: Konsolidierte Rechnungen
-                  href: ../financials/localizations/apac-jpn-consolidate-invoices.md
-                - name: Eine Anlage mit Sonderabschreibung erstellen
-                  href: ../financials/localizations/tasks/create-fixed-asset-additional-depreciation.md
-                - name: Eine Anlage mit Sonderabschreibungsprofil erstellen
-                  href: ../financials/localizations/tasks/create-fixed-asset-special-depreciation-profile.md
-                - name: Ein Sonderabschreibungsdokument erstellen und Nutzungsdaten eingeben
-                  href: ../financials/localizations/tasks/create-accelerated-depreciation-document-enter-usage-data.md
-                - name: Ein beschleunigtes Abschreibungsprofil erstellen und einem Buch zuweisen
-                  href: ../financials/localizations/tasks/create-accelerated-depreciation-profile-assign-it-book.md
-                - name: Ein Reduzierungseintragsdokument für einen staatlichen Zuschuss erstellen und zuweisen
-                  href: ../financials/localizations/tasks/create-assign-reduction-document.md
-                - name: Eine Arbeitsgerätegruppe erstellen und zuweisen
-                  href: ../financials/localizations/tasks/create-assign-equipment-group.md
-                - name: Eine konsolidierte Debitorenrechnung erstellen und bestätigen
-                  href: ../financials/localizations/tasks/create-confirm-customer-consolidated-invoice.md
-                - name: Einen Anerkennungstest erstellen und bestätigen
-                  href: ../financials/localizations/tasks/create-confirm-recognition-test.md
-                - name: Eine konsolidierte Kreditorenrechnung erstellen und bestätigen
-                  href: ../financials/localizations/tasks/create-confirm-vendor-consolidated-invoice.md
-                - name: ZGE-Gruppen und zahlungsmittelgenerierende Einheiten erstellen
-                  href: ../financials/localizations/tasks/create-cgu-group-cash-generating-units.md
-                - name: Pauschalsummenabschreibungsanlagen mithilfe der gleichmäßig festgelegten Methode erstellen
-                  href: ../financials/localizations/tasks/create-lump-sum-depreciation-assets-equally-divided-method.md
-                - name: Leerlaufperiode der Anlage definieren und den Abschreibungsprozess überprüfen
-                  href: ../financials/localizations/tasks/define-asset-idle-period-validate-depreciation-process.md
-                - name: Zinsausgaben für Anlagenstilllegungsverpflichtungen abschreiben und ansammeln
-                  href: ../financials/localizations/tasks/depreciate-accrue-interest-expense.md
-                - name: Anlagen mit gebuchtem Wertminderungseintrag abschreiben
-                  href: ../financials/localizations/tasks/depreciation-fixed-assets-reduction-entry-posted.md
-                - name: Abschreibungs-FAQ
-                  href: ../financials/localizations/apac-jpn-fixed-asset-depreciation.md
-                - name: Eine Anlage mit Wertminderungseintrag entsorgen
-                  href: ../financials/localizations/tasks/dispose-fixed-asset-reduction-entry.md
-                - name: JBA-Zahlungsdateiformat aktivieren
-                  href: ../financials/localizations/tasks/jba-payment-file-format.md
-                - name: Einen Zeitplan für Abschreibungsraten eingeben und zu einem Abschreibungsprofil zuordnen
-                  href: ../financials/localizations/tasks/enter-depreciation-rate-schedule.md
-                - name: Abschreibungsmethode in gleichen Teilen
-                  href: ../financials/localizations/apac-jpn-equally-divided-depreciation-method.md
-                - name: Formular 26 für abschreibungsfähige Steuererklärung
-                  href: ../financials/localizations/tasks/jp-00027-form-26-depreciable-tax-declaration.md
-                - name: Eine EFT-Zahlungsdatei mit JBA-Format generieren
-                  href: ../financials/localizations/tasks/eft-payment-file-jba-format.md
-                - name: Zahlungsgebühr generieren und buchen
-                  href: ../financials/localizations/tasks/post-payment-fee.md
-                - name: Verbrauchssteuerbericht generieren
-                  href: ../financials/localizations/tasks/japan-consumption-tax-report.md
-                - name: Beeinträchtigungsberechnung zu ZGE
-                  href: ../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md
-                - name: Beeinträchtigungsberechnung
-                  href: ../financials/localizations/apac-jpn-impairment-accounting-fixed-assets.md
-                - name: Eine Debitorenzahlung mit JBA-Dateiformat importieren
-                  href: ../financials/localizations/tasks/import-customer-payment-jba-file-format.md
-                - name: Postleitzahlen importieren
-                  href: ../financials/localizations/apac-jpn-import-postal-codes.md
-                - name: Eingangsjournal auf dem T-Kontoformular
-                  href: ../financials/localizations/tasks/jp-00005-input-journal-t-account-form-japan.md
-                - name: Auf Anlagenstilllegungsverpflichtungen bezogene Buchungen abfragen
-                  href: ../financials/localizations/tasks/inquiries-asset-retirement-obligation.md
-                - name: Abzugsfähige Ausgaben abfragen
-                  href: ../financials/localizations/tasks/inquiry-deductible-expenses.md
-                - name: Zahlungsgebühren in einer Erfassung abfragen
-                  href: ../financials/localizations/tasks/inquiries-payment-fee-journal.md
-                - name: Anlage-Masterdatendateien für abzugsfähige Ausgaben verwalten
-                  href: ../financials/localizations/tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md
-                - name: Beeinträchtigungsindikatoren für einzelne Anlagen verwalten
-                  href: ../financials/localizations/tasks/maintain-impairment-indicators-individual-assets.md
-                - name: Einem Kreditor durch Indossierung eines Wechsels bezahlen
-                  href: ../financials/localizations/apac-jpn-endorse-bill-of-exchange.md
-                - name: Eine Lieferantenbuchung durch Indossieren eines Wechsels des Debitors zahlen
-                  href: ../financials/localizations/tasks/pay-vendor-transaction.md
-                - name: Periodischer Ausgleich von zu hohen und zu niedrigen Abschreibungen
-                  href: ../financials/localizations/tasks/periodic-settlement-over-under-depreciation.md
-                - name: Progressive Quellensteuerberechnung
-                  href: ../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md
-                - name: Zusätzliche Abschreibung vorschlagen
-                  href: ../financials/localizations/tasks/propose-additional-depreciation.md
-                - name: Beschleunigte Abschreibung vorschlagen und buchen
-                  href: ../financials/localizations/tasks/propose-post-accelerated-depreciation.md
-                - name: Beeinträchtigungsbetrag nach Charge vorschlagen und buchen
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-batch.md
-                - name: Beeinträchtigungsbetrag mithilfe der Anlagenerfassung vorschlagen und buchen
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-fixed-asset-journal.md
-                - name: Beeinträchtigungsbetrag für eine zahlungsmittelgenerierende Einheit vorschlagen und buchen
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-cash-generating-unit.md
-                - name: Sonderabschreibungsprofil
-                  href: ../financials/localizations/tasks/propose-special-depreciation.md
-                - name: Eine konsolidierte Debitorenrechnung erneut öffnen und bearbeiten
-                  href: ../financials/localizations/tasks/reopen-edit-customer-consolidated-invoice.md
-                - name: Eine konsolidierte Kreditorenrechnung erneut öffnen und bearbeiten
-                  href: ../financials/localizations/tasks/reopen-edit-vendor-consolidated-invoice.md
-                - name: Einen indossierten Wechsel stornieren
-                  href: ../financials/localizations/tasks/reverse-endorsed-bill-exchange.md
-                - name: Erkennungstest durchführen und den Beeinträchtigungsbetrag für einzelne Anlagen berechnen
-                  href: ../financials/localizations/tasks/run-recognition-test-calculate.md
-                - name: 'Einen Debitor und einen Auftrag einrichten, die Ziel der konsolidierten Rechnung werden sollen'
-                  href: ../financials/localizations/tasks/set-up-customer-sales-order-target-consolidated-invoice.md
-                - name: ARO einrichten
-                  href: ../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md
-                - name: Dokumente der Stilllegungsverpflichtungen für Anlagen einrichten und ARO-Betrag in einer Anlage eingeben
-                  href: ../financials/localizations/tasks/set-up-asset-retirement-obligation.md
-                - name: Debitorenrechnungen einrichten
-                  href: ../financials/localizations/tasks/set-up-consolidated-invoices.md
-                - name: Buchung allgemeiner Parameter für Wertminderungseinstellungen und Buchungsprofil einrichten
-                  href: ../financials/localizations/tasks/impairment-accounting.md
-                - name: Verbrauchssteuerbericht für Japan einrichten
-                  href: ../financials/localizations/tasks/setup-japan-consumption-tax-report.md
-                - name: Eine Zahlung für Japan durch Indossierung eines Wechsels des Debitors einrichten
-                  href: ../financials/localizations/tasks/setup-japan-payment-endorsing-customer-bill-exchange.md
-                - name: Masterdaten für das Einbeziehen von abzugsfähigen Ausgaben für mehrere Buchungsebenen einrichten
-                  href: ../financials/localizations/tasks/set-up-master-data-inclusion.md
-                - name: Zahlungsgebühr für Japan einrichten
-                  href: ../financials/localizations/tasks/setup-payment-fee-japan.md
-                - name: Planzahlenverrechnungseinträge einrichten
-                  href: ../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md
-                - name: Kreditorenmaster und Bestellung als Ziel der konsolidierten Rechnung einrichten
-                  href: ../financials/localizations/tasks/vendor-master-po.md
-                - name: Einen indossierten Wechsel ausgleichen
-                  href: ../financials/localizations/tasks/settle-endorsed-bill-exchange.md
-                - name: Konsolidierte Debitorenrechnungen mithilfe einer Zahlungserfassung ausgleichen
-                  href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-payment-journal.md
-                - name: Konsolidierte Debitorenrechnungen mithilfe von Ausgleichsbuchungen ausgleichen
-                  href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-settle-transactions.md
-                - name: Konsolidierte Kreditorenrechnungen mithilfe einer Zahlungserfassung ausgleichen
-                  href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-payment-journal.md
-                - name: Konsolidierte Kreditorenrechnungen mithilfe von Ausgleichsbuchungen ausgleichen
-                  href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-settle-transactions.md
-                - name: Zusammenstellungsliste einer Anlage verwenden
-                  href: ../financials/localizations/tasks/use-assemble-list-fixed-asset.md
-                - name: Zerlegungsliste einer Anlage verwenden
-                  href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
-            - name: Malaysia
-              href: ../financials/localizations/malaysia.md
-              items:
-                - name: Debitorenkredit für Projektverkauf generieren
-                  href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
-                - name: Kreditorenkredit für Projektverkauf generieren
-                  href: ../financials/localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
-                - name: Steuern auf Waren und Dienstleistungen (GST)
-                  href: ../financials/localizations/apac-mys-gst.md
-                - name: GST - GAF-Dateien im erforderlichen Format generieren
-                  href: ../financials/localizations/tasks/my-00010-gst-gaf-files-required-format.md
-                - name: Debitorensoll und -kredit für GST verwalten
-                  href: ../financials/localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
-                - name: Kreditorensoll und -kredit für GST verwalten
-                  href: ../financials/localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
-                - name: GST-Debitorenrechnungen mit einer Entlastungsklausel drucken
-                  href: ../financials/localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
-                - name: GST-Steuerrechnungen drucken
-                  href: ../financials/localizations/tasks/my-00005-print-gst-tax-invoices.md
-                - name: Selbst-berechnete Rechnungen
-                  href: ../financials/localizations/tasks/my-00007-self-billed-invoices.md
-                - name: GST-Entlastungsklauseln einrichten
-                  href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
-            - name: Singapur
-              href: ../financials/localizations/singapore.md
-              items:
-                - name: GST-05-Bericht generieren
-                  href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
-            - name: Thailand
-              href: ../financials/localizations/thailand.md
-              items:
-                - name: Bestandskartenberichte
-                  href: ../financials/localizations/apac-tha-stock-card-reports.md
-                - name: Ersatz-/Regulierungssteuerrechnung
-                  href: ../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md
-                - name: Nicht realisierte Vorsteuer
-                  href: ../financials/localizations/apac-tha-unrealized-vat.md
-                - name: Quellensteuer
-                  href: ../financials/localizations/apac-tha-withholding-tax.md
+                  href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
+                - name: Voranschaffung buchen
+                  href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
+            - name: Periodische Erfassungen buchen
+              href: ../financials/general-ledger/tasks/post-periodic-journals.md
+            - name: Signaturgeber für Druckformulare einrichten
+              href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
+            - name: Perioden in periodischen Erfassungen teilen
+              href: ../financials/localizations/emea-create-post-periodic-journals.md
+            - name: 'Aktualisieren, wie Beträge in Berichten und Dokumenten angezeigt werden'
+              href: ../financials/localizations/emea-amount-printing-forms.md
+            - name: MwSt.-Abrechnung
+              href: ../financials/localizations/emea-cze-vat-statement-details.md
+            - name: Jahresendabschluss
+              href: ../financials/localizations/emea-cze-hun-year-end.md
+        - name: Dänemark
+          href: ../financials/localizations/denmark.md
+          items:
+            - name: Zahlungsbelegformat zu einem Debitorenkonto zuweisen
+              href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
+            - name: Eine Debitorenrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
+              href: ../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md
+            - name: Eine Freitextrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
+              href: ../financials/localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
+            - name: Eine Projektrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
+              href: ../financials/localizations/tasks/create-post-project-invoice-public-sector-customer.md
+            - name: Konfigurationen der elektronischen OIOUBL-Fakturierung importieren
+              href: ../financials/localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+            - name: Eine Freitextrechnung mit einem Zahlungsbeleg buchen
+              href: ../financials/localizations/tasks/post-free-text-invoice-payment-slip.md
+            - name: Eine Projektrechnung mit einem Zahlungsbeleg buchen
+              href: ../financials/localizations/tasks/post-project-invoice-payment-slip.md
+            - name: Eine Verkaufsrechnung mit einem Zahlungsbeleg buchen
+              href: ../financials/localizations/tasks/post-sales-invoice-payment-slip.md
+            - name: Debitorenkonten für die elektronische Fakturierung per OIOUBL einrichten
+              href: ../financials/localizations/tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md
+            - name: Elektronische OIOUBL-Rechnungsstellung einrichten
+              href: ../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md
+            - name: Format für Zahlungsbelege festlegen
+              href: ../financials/localizations/tasks/set-up-payment-slip-format.md
+        - name: Estland
+          href: ../financials/localizations/estonia.md
+          items:
+            - name: Anfragen zu eigenen persönlichen Informationen
+              href: ../financials/localizations/emea-est-personal-info.md
+            - name: MwSt.-Abrechnung
+              href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: Europa
+          href: ../financials/localizations/europe.md
           items:
             - name: Vorschussinhaber
               href: ../financials/localizations/emea-advance-holders.md
               items:
                 - name: Vorschussinhaberbuchungen
                   href: ../financials/localizations/emea-advance-holders-transactions.md
-            - name: Vorauszahlung an einen Mitarbeiter (Osteuropa)
-              href: ../financials/localizations/tasks/advance-payment-employee.md
+                - name: Vorauszahlung an einen Mitarbeiter (Osteuropa)
+                  href: ../financials/localizations/tasks/advance-payment-employee.md
             - name: Erweiterte Fakturierung
               href: ../financials/localizations/emea-advance-invoice.md
             - name: Bankabstimmung
@@ -1526,9 +1547,7 @@
               href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Umlagerungsdokument für eine interne Umlagerung generieren
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
-            - name: EU-Intrastat-Meldung generieren
-              href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
-            - name: Bericht 'Zusammenfassende Meldung' generieren
+            - name: Bericht „Zusammenfassende Meldung“ generieren
               href: ../financials/localizations/tasks/eur-00011-eu-sales-list-report.md
             - name: ISO20022-Dateien
               items:
@@ -1557,6 +1576,10 @@
               items:
                 - name: Buchungen an Intrastat übertragen
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
+                - name: Ladungsadresse für eine innergemeinschaftliche Buchung angeben
+                  href: ../financials/localizations/tasks/eur-00002-specify-lading-address-intra-community.md
+                - name: EU-Intrastat-Meldung generieren
+                  href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
             - name: Lagererfassungsberichte
               href: ../financials/localizations/emea-set-up-report-inventory-journal-names.md
             - name: Rechnungsabgangsfristen
@@ -1601,7 +1624,7 @@
               href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
             - name: Umlagerungsdokument für Warenbewegung innerhalb eines Unternehmens einrichten
               href: ../financials/localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
-            - name: Eine Ladungsadresse für eine innergemeinschaftliche Buchung angeben
+            - name: Ladungsadresse für eine innergemeinschaftliche Buchung angeben
               href: ../financials/localizations/tasks/eur-00002-specify-lading-address-intra-community.md
             - name: Stornobuchung
               href: ../financials/localizations/emea-storno.md
@@ -1623,559 +1646,474 @@
                   href: ../financials/localizations/emea-vat-register-transactions.md
                 - name: MwSt.-Berichterstellung
                   href: ../financials/localizations/emea-vat-reporting.md
-                - name: Mehrwertsteuererklärung erstellen und übermitteln
+                - name: MwSt.-Erklärung erstellen und übermitteln
                   href: ../financials/localizations/tasks/create-submit-vat-report.md
             - name: Buchungen zum Ausgleich anzeigen
               href: ../financials/localizations/emea-transactions-settlement-form.md
-            - name: Österreich
-              href: ../financials/localizations/austria.md
-              items:
-                - name: Halbjährliche Abschreibung sonstiger Anschaffungen
-                  href: ../financials/localizations/emea-aut-half-year-depreciation.md
-                - name: Verpackungsmaterialgebühren
-                  href: ../financials/localizations/emea-aut-packing-material-fee-calculation.md
-                - name: MwSt.-Anweisung
-                  href: ../financials/localizations/emea-aut-vat-statement-details.md
-            - name: Belgien
-              href: ../financials/localizations/belgium.md
-              items:
-                - name: CODA-Bankauszug
-                  href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
-                - name: Erstellen und Übertragen von Buchungen an das BLWI
-                  href: ../financials/localizations/tasks/be-00011-create-transfer-blwi.md
-                - name: INTERVAT-Steuererklärung
-                  href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
-                - name: Abstimmungsbericht
-                  href: ../financials/localizations/emea-bel-reconciliation-reports.md
-                - name: 'Zahlungsbilanz-Berichterstellung einrichten '
-                  href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
-                - name: PRODCOM einrichten und verwalten
-                  href: ../financials/localizations/emea-bel-prodcom-report.md
-            - name: Die Tschechische Republik
-              href: ../financials/localizations/czech-republic.md
-              items:
-                - name: Skontogutschrift
-                  href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
-                - name: Anlagen
-                  items:
-                    - name: Abschreibungsrundung
-                      href: ../financials/localizations/emea-cze-depreciation-rounding.md
-                    - name: Halbjährliche Abschreibung auf Anlagenveräußerungen
-                      href: ../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md
-                    - name: Abschreibungsunterbrechung (Feiertage)
-                      href: ../financials/localizations/emea-cze-depreciation-suspension-holidays.md
-                    - name: Abschreibungsmethoden für Anlagen
-                      href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
-                    - name: Voranschaffung buchen
-                      href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
-                - name: Periodische Erfassungen buchen
-                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
-                - name: Signaturgeber für Druckformulare einrichten
-                  href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
-                - name: Perioden in periodischen Erfassungen teilen
-                  href: ../financials/localizations/emea-create-post-periodic-journals.md
-                - name: 'Aktualisieren, wie Beträge in Berichten und Dokumenten angezeigt werden'
-                  href: ../financials/localizations/emea-amount-printing-forms.md
-                - name: MwSt.-Anweisung
-                  href: ../financials/localizations/emea-cze-vat-statement-details.md
-                - name: Jahresendabschluss
-                  href: ../financials/localizations/emea-cze-hun-year-end.md
-            - name: Dänemark
-              href: ../financials/localizations/denmark.md
-              items:
-                - name: Zahlungsbelegformat zu einem Debitorenkonto zuweisen
-                  href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
-                - name: Eine Debitorenrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
-                  href: ../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md
-                - name: Eine Freitextrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
-                  href: ../financials/localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
-                - name: Eine Projektrechnung für einen Debitor des öffentlichen Sektors erstellen und buchen
-                  href: ../financials/localizations/tasks/create-post-project-invoice-public-sector-customer.md
-                - name: Konfigurationen der elektronischen OIOUBL-Fakturierung importieren
-                  href: ../financials/localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
-                - name: Eine Freitextrechnung mit einem Zahlungsbeleg buchen
-                  href: ../financials/localizations/tasks/post-free-text-invoice-payment-slip.md
-                - name: Eine Projektrechnung mit einem Zahlungsbeleg buchen
-                  href: ../financials/localizations/tasks/post-project-invoice-payment-slip.md
-                - name: Eine Verkaufsrechnung mit einem Zahlungsbeleg buchen
-                  href: ../financials/localizations/tasks/post-sales-invoice-payment-slip.md
-                - name: Debitorenkonten für die elektronische Fakturierung per OIOUBL einrichten
-                  href: ../financials/localizations/tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md
-                - name: Elektronische OIOUBL-Rechnungsstellung einrichten
-                  href: ../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md
-                - name: Exportformat für Zahlungen einrichten
-                  href: ../financials/localizations/tasks/set-up-payment-slip-format.md
-            - name: Estland
-              href: ../financials/localizations/estonia.md
-              items:
-                - name: Anfragen zu eigenen persönlichen Informationen
-                  href: ../financials/localizations/emea-est-personal-info.md
-                - name: MwSt.-Anweisung
-                  href: ../financials/localizations/emea-est-vat-statement-details.md
-            - name: Frankreich
-              href: ../financials/localizations/france.md
-              items:
-                - name: Öffentlicher Sektor
-                  items:
-                    - name: Buchhaltung im öffentlichen Sektor
-                      href: ../financials/localizations/emea-fra-public-sector-accounting.md
-                    - name: Zusagen
-                      href: ../financials/localizations/emea-fra-commitments-public-sector.md
-                    - name: Mandats de Paiement
-                      href: ../financials/localizations/emea-fra-mandats-de-paiement.md
-                    - name: Beschaffung
-                      href: ../financials/localizations/emea-fra-procurement-sourcing-public-sector.md
-                    - name: Titres de recette
-                      href: ../financials/localizations/emea-fra-titres-de-recette-public-sector.md
-                    - name: Zahlungssperren für Kreditorenrechnung
-                      href: ../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
-                - name: Ziehen von Wechseln genehmigen und buchen
-                  href: ../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
-                - name: Chronologische Rechnungsbelege
-                  href: ../financials/localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: Standardprotokolldatei für Frankreich (FEC) erstellen
-                  href: ../financials/localizations/emea-fra-fec-audit-file.md
-                - name: Kontoauszüge für Debitoren und Kreditoren
-                  href: ../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md
-                - name: Tageszinsberechnung für verspätete Zahlung und Pauschalbetrag in der Rechnung und im Mahnschreiben
-                  href: ../financials/localizations/tasks/fr-00018-daily-interest.md
-                - name: Von gesetzlichen Regelungen ausgenommene Abschreibung
-                  href: ../financials/localizations/emea-fra-derogatory-depreciation.md
-                - name: Französische Wechsel und Solawechsel
-                  href: ../financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
-                - name: NAF-Codes und SIRET-Nummern
-                  href: ../financials/localizations/emea-fra-naf-codes-siret-numbers.md
-                - name: NAF-Codes und SIRET-Nummern einrichten
-                  href: ../financials/localizations/tasks/fr-00003-naf-codes-siret-numbers.md
-                - name: Strafen für überfällige Debitorenzahlungen
-                  href: ../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md
-                - name: Erfassung zum Protestieren des Ziehens von Wechseln buchen
-                  href: ../financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
-                - name: Erfassung der erneuten Wechselziehung buchen
-                  href: ../financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md
-                - name: Betreibungstext für Pauschalbetrag auf Debitorenrechnung drucken
-                  href: ../financials/localizations/emea-fra-print-lump-sum-recovery-text.md
-                - name: RB/SL-Abschreibung
-                  href: ../financials/localizations/emea-fra-rbsl-depreciation.md
-                - name: Zahlungsmethode einrichten
-                  href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
-                - name: Zahlungsmethode für Debitor aktualisieren
-                  href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
-                - name: Retail
-                  items:
-                    - name: Kassen
-                      href: ../retail/localizations/emea-fra-cash-registers.md
-                    - name: Bereitstellungsrichtlinien für Kassen
-                      href: ../retail/localizations/emea-fra-deployment.md
-            - name: Deutschland
-              href: ../financials/localizations/germany.md
-              items:
-                - name: Zusätzliche Anschaffungsabschreibung
-                  href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
-                - name: Protokolldatei
-                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
-                  items:
-                    - name: Protokolldateikonfiguration anpassen
-                      href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: Protokolldatei generieren
-                      href: ../financials/localizations/tasks/german-audit-file.md
-                    - name: Protokolldateikonfiguration importieren
-                      href: ../financials/localizations/tasks/import-german-audit-file-configuration.md
-                - name: Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr
-                  href: ../financials/localizations/tasks/de-00002-depreciation.md
-                - name: Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
-                  href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
-                - name: Erfassungslistenbericht
-                  href: ../financials/localizations/emea-deu-journal-list-report.md
-                - name: Elektronische Steuererklärungen einrichten
-                  href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
-            - name: Ungarn
-              href: ../financials/localizations/hungary.md
-              items:
-                - name: Wechselkursberechnung
-                  href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
-                - name: Abschreibungsmethoden für Anlagen
-                  href: ../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md
-                - name: Kostengünstige Anlagen
-                  href: ../financials/localizations/emea-hun-low-cost-fixed-assets.md
-                - name: Anlage in den Bestand verschieben
-                  href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
-                - name: Steuerrückerstattungsdokumente
-                  href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
-                - name: Jahresendabschluss
-                  href: ../financials/localizations/emea-cze-hun-year-end.md
-            - name: Island
-              href: ../financials/localizations/iceland.md
-              items:
-                - name: Kreditorenkonto erstellen und Rechnungserklärungskategorie anfügen
-                  href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
-                - name: Rechnungserklärung für Kreditoren einrichten
-                  href: ../financials/localizations/tasks/set-up-invoice-declaration-vendors.md
-                - name: Erforderliche Zahlungsreferenzen einrichten
-                  href: ../financials/localizations/tasks/set-up-mandatory-payment-references.md
-                - name: Kreditorenrechnungserklärungen aktualisieren und Bericht generieren
-                  href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
-            - name: Italien
-              href: ../financials/localizations/italy.md
-              items:
-                - name: Details von MwSt.-Abrechnung
-                  href: ../financials/localizations/emea-ita-vat-statements-details.md
-                - name: Bericht mit der schwarzen Liste
-                  href: ../financials/localizations/emea-ita-black-list-report.md
-                - name: Fälligkeitsdatum
-                  href: ../financials/localizations/emea-ita-competence-date.md
-                - name: Anlagenabschreibung
-                  href: ../financials/localizations/emea-ita-depreciation-of-fixed-assets.md
-                - name: Modello 770
-                  href: ../financials/localizations/emea-ita-modello770.md
-                - name: Lieferschein-Datumsprüfung auf Rechnungen
-                  href: ../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md
-                - name: Buchen und Drucken eines Lieferscheins mit Transportdokumentdetails
-                  href: ../financials/localizations/emea-ita-packing-slip.md
-                - name: Mehrwertsteuerbücher
-                  href: ../financials/localizations/emea-ita-fiscal-books.md
-                - name: 'Geteilte Zahlung für Rechnungen, die der öffentlichen Verwaltung ausgestellt wurden'
-                  href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
-                - name: Quellensteuer
-                  href: ../financials/localizations/emea-ita-withholding-tax.md
-            - name: Lettland
-              href: ../financials/localizations/latvia.md
-              items:
-                - name: Anlagenbuchhaltung
-                  href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
-                - name: Nachverfolgung von Änderung des Anlagenstandorts
-                  href: ../financials/localizations/emea-lva-fixed-assets-location-fields-change.md
-                - name: Rechnung und Lieferscheinnummerierung
-                  href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
-                - name: Bericht zur Steuer auf natürliche Ressourcen
-                  href: ../financials/localizations/emea-lva-tax-natural-resources.md
-                - name: Details von MwSt.-Abrechnung
-                  href: ../financials/localizations/emea-lva-vat-statement-details.md
-            - name: Litauen
-              href: ../financials/localizations/lithuania.md
-              items:
-                - name: Anlagenreparaturanweisung
-                  href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
-                - name: Eine Anlagenübertragung zwischen Lagerortdokumenten generieren
-                  href: ../financials/localizations/tasks/lt-00003-fixed-asset-transfer.md
-                - name: Rechnung und Lieferscheinnummerierung
-                  href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
-                - name: Details von MwSt.-Abrechnung
-                  href: ../financials/localizations/emea-ltu-vat-statement-details.md
-            - name: Niederlande
-              href: ../financials/localizations/netherlands.md
-              items:
-                - name: Elektronische Steuererklärungen (EVAT)
-                  href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
-                - name: Integration Semansys XBRL
-                  href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
-            - name: Norwegen
-              href: ../financials/localizations/norway.md
-              items:
-                - name: Zahlungsformate für Debitor und Kreditor
-                  href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
-                - name: Debitorenzahlung auf Grundlage der Zahlungskennung
-                  href: ../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md
-                - name: Nettoimportformat
-                  href: ../financials/localizations/emea-nor-nets-import-format.md
-                - name: MwSt.-Anweisung
-                  href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
-                - name: Kassen
-                  href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Bereitstellungsrichtlinien für Kassen
-                  href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Polen
-              href: ../financials/localizations/poland.md
-              items:
-                - name: Positionsrabatte anhand von Artikelpreis berechnen
-                  href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
-                - name: Korrekturhinweise
-                  href: ../financials/localizations/emea-pol-correction-notes.md
-                - name: Duplizierte Verkaufsrechnungsnummerierung
-                  href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
-                - name: Anlagenabschreibung
-                  href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
-                - name: Anlagenveräußerungs-Funktionenerweiterung
-                  href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
-                - name: Retourfähige Verpackung
-                  href: ../financials/localizations/emea-pol-returnable-packages.md
-                - name: Mehrwertsteuerberichte
-                  href: ../financials/localizations/emea-pol-sales-tax-reports.md
-                - name: Standardprotokolldatei
-                  href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
-                - name: Steuerzinsen und Freihandzinsen
-                  href: ../financials/localizations/emea-pol-interest-calculation.md
-                - name: Umsatzsaldenbericht
-                  href: ../financials/localizations/emea-pol-turnover-balances-statement.md
-            - name: Spanien
-              href: ../financials/localizations/spain.md
-              items:
-                - name: Skontos auf die Rechnung anwenden
-                  href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
-                - name: Wechseloptionen
-                  href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
-                - name: Mehrwertsteuer nach vereinnahmten Geldern
-                  href: ../financials/localizations/emea-esp-conditional-sales-tax.md
-                - name: Fakturierung von Gutschriften
-                  href: ../financials/localizations/tasks/emea-esp-credit-invoicing.md
-                - name: Rechnungskonto für Steuerdaten
-                  href: ../financials/localizations/emea-esp-fiscal-data-invoice-account.md
-                - name: Anlagengruppenneubewertung
-                  href: ../financials/localizations/emea-esp-fixed-asset-group-revaluation.md
-                - name: Innergemeinschaftliche MwSt.
-                  href: ../financials/localizations/emea-esp-intra-community-vat.md
-                - name: Einmalige Debitoren
-                  href: ../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md
-                - name: Schecks mit spanischem Layout drucken
-                  href: ../financials/localizations/emea-esp-print-checks-with-spanish-layout.md
-                - name: Solawechseloptionen
-                  href: ../financials/localizations/emea-esp-promissory-note-options.md
-                - name: Erklärung 340
-                  href: ../financials/localizations/emea-esp-report-340.md
-                - name: Verkaufs- und Kaufzyklen
-                  href: ../financials/localizations/emea-esp-sales-purchase-cycle.md
-                - name: Besondere Einträge und Eröffnungsbögen
-                  href: ../financials/localizations/emea-esp-opening-sheets-spain.md
-            - name: Schweden
-              href: ../financials/localizations/sweden.md
-              items:
-                - name: Finanzinformationen für Wirtschaftsprüfer in Schweden exportieren
-                  href: ../financials/localizations/emea-swe-sie-standard-report.md
-                - name: Zahlungsformate importieren
-                  href: ../financials/localizations/emea-swe-payment-formats-import.md
-                - name: Kassen
-                  href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
-            - name: Schweiz
-              href: ../financials/localizations/switzerland.md
-              items:
-                - name: Debitorenzahlungen in ESR importieren
-                  href: ../financials/localizations/emea-che-esr-customer-payments-import.md
-            - name: Vereinigtes Königreich
-              href: ../financials/localizations/united-kingdom.md
-              items:
-                - name: Bauindustrie-Schema
-                  href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
-                - name: Eine Gutschrift für den Rabattausgleich erstellen
-                  href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
-                - name: 'Eine Bestellung erstellen, die Artikel beinhaltet, für die die Mehrwertsteuer für die Verlagerung der Steuerschuld gilt'
-                  href: ../financials/localizations/tasks/purchase-order-reverse-charge-vat.md
-                - name: 'Einen Auftrag mit Artikeln erstellen, für die Mehrwertsteuer für Verlagerung der Steuerschuld gilt'
-                  href: ../financials/localizations/tasks/gb-00002-sales-order.md
-                - name: Artikel-Mehrwertsteuergruppen für die Verlagerung der Steuerschuld einrichten
-                  href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                - name: 'Artikelgruppen, Regeln und Parameter zur Verlagerung der Steuerschuld einrichten'
-                  href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: Mehrwertsteuergruppen für die Steuerschuldumkehr einrichten
-                  href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-        - name: Lateinamerika
+        - name: Frankreich
+          href: ../financials/localizations/france.md
           items:
-            - name: Brasilien
-              href: ../financials/localizations/brazil.md
+            - name: Öffentlicher Sektor
               items:
-                - name: Umfang der Lokalisierung
-                  href: ../financials/localizations/latam-bra-scope.md
-                - name: Steuerbücher
-                  href: ../financials/localizations/latam-bra-fiscal-books.md
-                  items:
-                    - name: Konfiguration von Steuerbüchern
-                      href: ../financials/localizations/latam-bra-configure-fiscal-books.md
-                    - name: Steuerdokumente für ICMS-Steuer
-                      href: ../financials/localizations/latam-bra-icms-tax-fiscal-documents.md
-                    - name: Steuerdokumente importieren
-                      href: ../financials/localizations/latam-bra-import-fiscal-documents.md
-                    - name: Exportieren und Importieren von Buchungen der juristischen Person aus der Hauptbuchkonsolidierung
-                      href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
-                    - name: Importieren und Überprüfen von XML-Dokumenten für NF-e sowie DANFE-Dateien
-                      href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
-                    - name: Elektronische Zahlungsrimessen verarbeiten
-                      href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
-                    - name: Steuerdokumente
-                      href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
-                    - name: Steuerdokument-Textplatzhalter
-                      href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
-                    - name: Ergänzende steuerliche Dokumente für Einkauf
-                      href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
-                    - name: Referenzierte Steuerdokumente
-                      href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
-                    - name: Ergänzende steuerliche Dokumente für Verkauf
-                      href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
-                    - name: Elektronisches Steuerdokument für Dienstleistungen
-                      href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
-                    - name: 'Erfassungen, die während des elektronischen Zahlungsrückgabeprozesses generiert wurden'
-                      href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
-                - name: NF-e-Prozess
-                  href: ../financials/localizations/latam-bra-nf-e-process.md
-                  items:
-                    - name: Automatische Übermittlung von NF-e-Steuerdokumenten
-                      href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
-                    - name: E-Mails für genehmigte NF-e generieren und DANFE-PDF-Dateien und NF-e-XML-Dateien an die E-Mails anhängen
-                      href: ../financials/localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
-                    - name: NF-e-Zertifikate
-                      href: ../financials/localizations/latam-bra-nfe-certs.md
-                    - name: 'Einrichten, Importieren und Überprüfen von XML-Dokumenten für NF-e sowie DANFE'
-                      href: ../financials/localizations/latam-bra-set-up-import-nfe.md
-                    - name: NF-e-Parameter einrichten
-                      href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
-                    - name: NF-e-Parameter für steuerliche Einrichtung einrichten
-                      href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
-                - name: Parameter für juristische Personen
-                  href: ../financials/localizations/latam-bra-legal-entity-parameters.md
-                - name: Erwerben einer CIAP-Anlage
-                  href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
-                - name: Veräußerung einer CIAP-Anlage
-                  href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
-                - name: Steuer
-                  href: ../financials/localizations/latam-bra-calculate-taxes.md
-                  items:
-                    - name: Steuer für Bestellanforderungen berechnen
-                      href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
-                    - name: Steuerbewertung erstellen - ICMS
-                      href: ../financials/localizations/tasks/br-10001-4-create-tax-assessment-icms.md
-                    - name: Steuerbewertung erstellen - IPI-Steuer
-                      href: ../financials/localizations/tasks/br-10004-2-create-tax-assessment-ipi-tax.md
-                    - name: Steuerbewertung erstellen - PIS- und COFINS-Steuer
-                      href: ../financials/localizations/tasks/br-10006-4-create-tax-assessment-pis-cofins-tax.md
-                    - name: Steuerregulierungsbuchungen eingeben und buchen
-                      href: ../financials/localizations/tasks/br-10001-3-enter-post-tax-adjustment-transactions.md
-                    - name: PIS- und COFINS-Steuerregulierungsbuchungen eingeben
-                      href: ../financials/localizations/tasks/br-10006-3-enter-pis-cofins-tax-adjustment-transactions.md
-                    - name: Steuerattribute steuerliche Einrichtung
-                      href: ../financials/localizations/tasks/br-00002-fiscal-establishment-tax-attributes.md
-                    - name: Steuerdokumente für ICMS-Steuergutschrift ausstellen
-                      href: ../financials/localizations/tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md
-                    - name: Steuerdokumente für ICMS-Steuergutschriftübertragung ausstellen
-                      href: ../financials/localizations/tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md
-                    - name: Regulierungscodes für ICMS-Steuer einrichten
-                      href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
-                    - name: Regulierungscodes für ICMS-Steuern in Steuerdokumenten einrichten
-                      href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
-                    - name: Regulierungscodes für IPI-Steuern einrichten
-                      href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
-                    - name: Regulierungscodes für PIS- und COFINS-Steuern einrichten
-                      href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
-                    - name: PIS- und COFINS-Tabellen einrichten
-                      href: ../financials/localizations/tasks/br-10006-1-set-up-pis-cofins-tables.md
-                    - name: Steuerbewertung für ISS-Steuer
-                      href: ../financials/localizations/tasks/br-10005-tax-assessment-iss-tax.md
-                    - name: Steuerattribute
-                      href: ../financials/localizations/latam-bra-tax-attributes.md
-                    - name: Steuerzahlungen
-                      href: ../financials/localizations/latam-bra-tax-payments.md
-                    - name: Steuer in Verkaufsangeboten
-                      href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Quellensteuern '
-                      href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
-                    - name: Quellensteuern für Debitorenzahlungen
-                      href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
-                    - name: Quellensteuern für Kreditorenzahlungen
-                      href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
-                - name: Aufgaben für Brasilien
-                  items:
-                    - name: Parameter der juristischen Person einrichten
-                      href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
-                    - name: Quelltext für Steuerdokument einrichten
-                      href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
-                    - name: Steuerdokumente des Händlers empfangen (Anlagen - PIS und COFINS langfristig wiederherstellbar)
-                      href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
-                    - name: Steuerdokumente des Kreditors empfangen (Produkte)
-                      href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
-                    - name: Ergänzendes Steuerdokument für den Einkauf erstellen und buchen
-                      href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
-                    - name: Ergänzendes Steuerdokument für den Einkauf stornieren
-                      href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
-                    - name: Steuerdokumente für Kreditoren ausstellen
-                      href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
-                    - name: Steuerdokumente für Debitoren ausstellen
-                      href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
-                    - name: Lieferscheine
-                      href: ../financials/localizations/tasks/br-00041-delivery-slip.md
-                    - name: Sonstige Zuschläge auf Freitextrechnungen
-                      href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
-                    - name: Ergänzendes Steuerdokument für den Verkauf erstellen und buchen
-                      href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
-                    - name: Ergänzendes Steuerdokument für den Verkauf stornieren
-                      href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
-                    - name: Elektronisches Steuerdokument mit Textdateien warten
-                      href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
-                    - name: Zinsen und Gebühren für Kreditorenzahlungen einrichten
-                      href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
-                    - name: Zinsen und Gebühren auf Kreditorenzahlungen berechnen
-                      href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
-                    - name: Zinsen und Gebühren auf Debitorenzahlungen einrichten
-                      href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
-                    - name: Zinsen und Gebühren auf Debitorenzahlungen berechnen
-                      href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
-                    - name: Verwaltung elektronischer Zahlungen für Kreditorenzahlungen
-                      href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
-                    - name: Projektlastschriften
-                      href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
-                    - name: Steuerdokumenttext in den Beschaffungsdokumenten verwalten
-                      href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
-                    - name: Steuerdokumente des Händlers empfangen (Anlagen - ICMS langfristig wiederherstellbar)
-                      href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
-                    - name: Steuerdokumente für Debitoren ausstellen (Dienste)
-                      href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
-                    - name: Steuerdokumente für Debitoren ausstellen (Anlagen)
-                      href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
-                    - name: Steuerdokumente für Debitoren ausstellen (Projekt)
-                      href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
-                    - name: Steuerdokumente für Debitoren ausstellen (für Endbenutzer)
-                      href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
-                    - name: Steuerdokumente für Debitoren ausstellen (für SUFRAMA-Debitoren)
-                      href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
-                    - name: Ein Steuerdokument für Debitoren stornieren (Projekt)
-                      href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
-                    - name: Nichtsteuerlicher Betrieb
-                      href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
-                    - name: CIAP-Buchung eingeben
-                      href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
-                    - name: CIAP-Habenbetrag berechnen
-                      href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
-                    - name: CIAP-Haben aus vorheriger Periode einbeziehen
-                      href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
-                    - name: PIS- und COFINS-Anlagen
-                      href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
-            - name: Mexiko
-              href: ../financials/localizations/mexico.md
+                - name: Buchhaltung im öffentlichen Sektor
+                  href: ../financials/localizations/emea-fra-public-sector-accounting.md
+                - name: Zusagen
+                  href: ../financials/localizations/emea-fra-commitments-public-sector.md
+                - name: Mandats de Paiement
+                  href: ../financials/localizations/emea-fra-mandats-de-paiement.md
+                - name: Beschaffung
+                  href: ../financials/localizations/emea-fra-procurement-sourcing-public-sector.md
+                - name: Titres de recette
+                  href: ../financials/localizations/emea-fra-titres-de-recette-public-sector.md
+                - name: Zahlungssperren für Kreditorenrechnung
+                  href: ../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
+            - name: Ziehen von Wechseln genehmigen und buchen
+              href: ../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
+            - name: Chronologische Rechnungsbelege
+              href: ../financials/localizations/emea-fra-chronological-invoices-vouchers.md
+            - name: Standardprotokolldatei für Frankreich (FEC) erstellen
+              href: ../financials/localizations/emea-fra-fec-audit-file.md
+            - name: Kontoauszüge für Debitoren und Kreditoren
+              href: ../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md
+            - name: Tageszinsberechnung für verspätete Zahlung und Pauschalbetrag in der Rechnung und im Mahnschreiben
+              href: ../financials/localizations/tasks/fr-00018-daily-interest.md
+            - name: Von gesetzlichen Regelungen ausgenommene Abschreibung
+              href: ../financials/localizations/emea-fra-derogatory-depreciation.md
+            - name: Französische Wechsel und Solawechsel
+              href: ../financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+            - name: NAF-Codes und SIRET-Nummern
+              href: ../financials/localizations/emea-fra-naf-codes-siret-numbers.md
+            - name: NAF-Codes und SIRET-Nummern einrichten
+              href: ../financials/localizations/tasks/fr-00003-naf-codes-siret-numbers.md
+            - name: Strafen für überfällige Debitorenzahlungen
+              href: ../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md
+            - name: Erfassung zum Protestieren des Ziehens von Wechseln buchen
+              href: ../financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
+            - name: Erfassung der erneuten Wechselziehung buchen
+              href: ../financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md
+            - name: Betreibungstext für Pauschalbetrag auf Debitorenrechnung drucken
+              href: ../financials/localizations/emea-fra-print-lump-sum-recovery-text.md
+            - name: RB/SL-Abschreibung
+              href: ../financials/localizations/emea-fra-rbsl-depreciation.md
+            - name: Zahlungsmethode einrichten
+              href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
+            - name: Zahlungsmethode für Debitor aktualisieren
+              href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
+            - name: Retail
               items:
-                - name: Umfang der Lokalisierung
-                  href: ../financials/localizations/latam-mex-scope.md
-                - name: Inflationsanpassungs-Erklärungsbericht
-                  href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
-                - name: Eine elektronische Rechnung stornieren
-                  href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
-                - name: CFDI-Version 3.3
-                  href: ../financials/localizations/latam-mex-cfdi-3-3.md
-                - name: Debitoren-Registrierungskennungen und andere Informationen
-                  href: ../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md
-                - name: DIOT-Erklärungsanweisung
-                  href: ../financials/localizations/latam-mex-diot-declaration-statement.md
-                - name: E-Rechnungsstellung CFDI
-                  href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
-                - name: Elektronische Rechnungen
-                  href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
-                - name: Elektronische Sachkonto-Kostenrechnungsauszüge
-                  href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
-                - name: Steuerregistrierungskennungen für mexikanische juristische Personen eingeben
-                  href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
-                - name: Elektronische Rechnung abfragen und drucken
-                  href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
-                - name: ISR-Erklärungsbericht
-                  href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
-                - name: Freitextrechnung buchen
-                  href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-                - name: Mexikanischen elektronischen Hauptbuchkontobericht Version 1.1 erzeugen
-                  href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
-                - name: Parameter für eine elektronische Rechnung einrichten
-                  href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
-                - name: Mehrwertsteuer-Codes für Mexiko einrichten
-                  href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
-                - name: Kontenplan für eine juristische Person in Mexiko einrichten
-                  href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
-                - name: RFC-Registrierungskennung für mexikanische Bankkonten angeben
-                  href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
-                - name: Kreditorenregistrierungskennungen
-                  href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
+                - name: Kassen
+                  href: ../retail/localizations/emea-fra-cash-registers.md
+                - name: Bereitstellungsrichtlinien für Kassen
+                  href: ../retail/localizations/emea-fra-deployment.md
+        - name: Deutschland
+          href: ../financials/localizations/germany.md
+          items:
+            - name: Zusätzliche Anschaffungsabschreibung
+              href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
+            - name: Protokolldatei
+              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
+              items:
+                - name: Protokolldateikonfiguration anpassen
+                  href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
+                - name: Protokolldatei generieren
+                  href: ../financials/localizations/tasks/german-audit-file.md
+                - name: Protokolldateikonfiguration importieren
+                  href: ../financials/localizations/tasks/import-german-audit-file-configuration.md
+            - name: Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr
+              href: ../financials/localizations/tasks/de-00002-depreciation.md
+            - name: Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
+              href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
+            - name: Erfassungslistenbericht
+              href: ../financials/localizations/emea-deu-journal-list-report.md
+            - name: Elektronische Steuererklärungen einrichten
+              href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
+        - name: Ungarn
+          href: ../financials/localizations/hungary.md
+          items:
+            - name: Wechselkursberechnung
+              href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
+            - name: Abschreibungsmethoden für Anlagen
+              href: ../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md
+            - name: Kostengünstige Anlagen
+              href: ../financials/localizations/emea-hun-low-cost-fixed-assets.md
+            - name: Anlage in den Bestand verschieben
+              href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
+            - name: Steuerrückerstattungsdokumente
+              href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
+            - name: Jahresendabschluss
+              href: ../financials/localizations/emea-cze-hun-year-end.md
+        - name: Island
+          href: ../financials/localizations/iceland.md
+          items:
+            - name: Kreditorenkonto erstellen und Rechnungserklärungskategorie anfügen
+              href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
+            - name: Rechnungserklärung für Kreditoren einrichten
+              href: ../financials/localizations/tasks/set-up-invoice-declaration-vendors.md
+            - name: Erforderliche Zahlungsreferenzen einrichten
+              href: ../financials/localizations/tasks/set-up-mandatory-payment-references.md
+            - name: Kreditorenrechnungserklärungen aktualisieren und Bericht generieren
+              href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
+        - name: Indien
+          href: ../financials/localizations/india.md
+          items:
+            - name: Anlagen
+              href: ../financials/localizations/apac-ind-fixed-assets.md
+              items:
+                - name: Tagesbasierten Kalender an ein Anlagenbuch anhängen
+                  href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
+                - name: Verlagerungsabschreibung berechnen
+                  href: ../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md
+                - name: Eine Lagersteuerungsgruppe für Kapitalartikel erstellen
+                  href: ../financials/localizations/tasks/apac-ind-create-inventory-model-group.md
+                - name: Abschreibung erstellen und buchen
+                  href: ../financials/localizations/apac-ind-calculate-post-depreciation.md
+                - name: Definieren des Verlagerungs- und Branchentyps für Bücher und Verknüpfen mit Anlagen
+                  href: ../financials/localizations/tasks/apac-ind-books-shift-industry-types.md
+                - name: Anlagenbuchungen zurückbuchen
+                  href: ../financials/localizations/apac-ind-reverse-fixed-assets-transactions.md
+                - name: Verlagerungsabschreibungsberechnung
+                  href: ../financials/localizations/apac-ind-calculation-shift-depreciation.md
+                - name: Einrichten eines tagesbasierten Steuerkalenders
+                  href: ../financials/localizations/tasks/apac-ind-day-based-calendar.md
+                - name: Parameter zur Berechnung von Abschreibungen einrichten
+                  href: ../financials/localizations/tasks/apac-ind-set-up-depreciation.md
+                - name: Einrichten einer Anlagengruppenabschreibung für Abschreibungsbücher
+                  href: ../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md
+                - name: Übertragung von Kapitalelementen in Anlagen
+                  href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
+            - name: Indien GST
+              href: ../financials/localizations/apac-ind-gst.md
+              items:
+                - name: Indien GST-Referenzgruppen
+                  href: ../financials/localizations/apac-ind-gst-reference-groups.md
+                - name: GST-Integration für Kassen
+                  href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+            - name: Bereitstellungsrichtlinien für Kassen
+              href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+            - name: Steuermodulübersicht
+              href: ../financials/general-ledger/tax-engine.md
+              items:
+                - name: Steuermodulintegration
+                  href: ../financials/general-ledger/tax-engine-integration.md
+                - name: Erweitern des Steuermoduls
+                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+            - name: FAQ zu Steuerschwellenwerten
+              href: ../financials/localizations/apac-ind-tax-thresholds.md
+        - name: Italien
+          href: ../financials/localizations/italy.md
+          items:
+            - name: MwSt.-Abrechnungsdetails
+              href: ../financials/localizations/emea-ita-vat-statements-details.md
+            - name: Bericht mit der schwarzen Liste
+              href: ../financials/localizations/emea-ita-black-list-report.md
+            - name: Fälligkeitsdatum
+              href: ../financials/localizations/emea-ita-competence-date.md
+            - name: Anlagenabschreibung
+              href: ../financials/localizations/emea-ita-depreciation-of-fixed-assets.md
+            - name: Modello 770
+              href: ../financials/localizations/emea-ita-modello770.md
+            - name: Lieferschein-Datumsprüfung auf Rechnungen
+              href: ../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md
+            - name: Buchen und Drucken eines Lieferscheins mit Transportdokumentdetails
+              href: ../financials/localizations/emea-ita-packing-slip.md
+            - name: Mehrwertsteuerbücher
+              href: ../financials/localizations/emea-ita-fiscal-books.md
+            - name: 'Geteilte Zahlung für Rechnungen, die der öffentlichen Verwaltung ausgestellt wurden'
+              href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
+            - name: Quellensteuer
+              href: ../financials/localizations/emea-ita-withholding-tax.md
+        - name: Japan
+          href: ../financials/localizations/japan.md
+          items:
+            - name: Anlage beschaffen und staatlichen Zuschuss dafür beantragen
+              href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
+            - name: Eine Anlage mit Anlagenstilllegungsverpflichtungen erwerben
+              href: ../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md
+            - name: Eine Stilllegungsverpflichtungsschätzung für Anlagen anpassen
+              href: ../financials/localizations/tasks/adjustment-asset-retirement-obligation-estimate.md
+            - name: Bilanzwert der freigegebenen Anlage und Goodwill für Bargeld generierende Einheiten zuordnen
+              href: ../financials/localizations/tasks/allocate-carrying-amount.md
+            - name: Zuordnungsregeln
+              href: ../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md
+            - name: Von Kreditoren abgedeckte Bankzahlungsgebühren
+              href: ../financials/localizations/apac-jpn-bank-payment-fees-vendors.md
+            - name: Abschreibungsmethode während der Nutzungsdauer für ein Buch ändern
+              href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-book.md
+            - name: Abschreibungsmethode während der Nutzungsdauer für eine Anlage ändern
+              href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-one-asset.md
+            - name: Sonderabschreibungsparameter und Buchungsprofile konfigurieren
+              href: ../financials/localizations/tasks/accelerated-depreciation-posting-profiles.md
+            - name: Parameter und Einstellungen der konsolidierten Rechnung für Kreditoren konfigurieren
+              href: ../financials/localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
+            - name: Abschreibungsprofil und Buchungsprofil für Sonderabschreibung konfigurieren
+              href: ../financials/localizations/tasks/configure-depreciation-profile-posting.md
+            - name: Hauptkonten für Stilllegungsverpflichtungen für Anlagen und Marktrabattsätze konfigurieren
+              href: ../financials/localizations/tasks/configure-main-accounts-asset-retirement.md
+            - name: Konsolidierte Rechnungen
+              href: ../financials/localizations/apac-jpn-consolidate-invoices.md
+            - name: Eine Anlage mit Sonderabschreibung erstellen
+              href: ../financials/localizations/tasks/create-fixed-asset-additional-depreciation.md
+            - name: Eine Anlage mit Sonderabschreibungsprofil erstellen
+              href: ../financials/localizations/tasks/create-fixed-asset-special-depreciation-profile.md
+            - name: Ein Sonderabschreibungsdokument erstellen und Nutzungsdaten eingeben
+              href: ../financials/localizations/tasks/create-accelerated-depreciation-document-enter-usage-data.md
+            - name: Ein beschleunigtes Abschreibungsprofil erstellen und einem Buch zuweisen
+              href: ../financials/localizations/tasks/create-accelerated-depreciation-profile-assign-it-book.md
+            - name: Ein Reduzierungseintragsdokument für einen staatlichen Zuschuss erstellen und zuweisen
+              href: ../financials/localizations/tasks/create-assign-reduction-document.md
+            - name: Eine Arbeitsgerätegruppe erstellen und zuweisen
+              href: ../financials/localizations/tasks/create-assign-equipment-group.md
+            - name: Eine konsolidierte Debitorenrechnung erstellen und bestätigen
+              href: ../financials/localizations/tasks/create-confirm-customer-consolidated-invoice.md
+            - name: Einen Anerkennungstest erstellen und bestätigen
+              href: ../financials/localizations/tasks/create-confirm-recognition-test.md
+            - name: Eine konsolidierte Kreditorenrechnung erstellen und bestätigen
+              href: ../financials/localizations/tasks/create-confirm-vendor-consolidated-invoice.md
+            - name: ZGE-Gruppen und zahlungsmittelgenerierende Einheiten erstellen
+              href: ../financials/localizations/tasks/create-cgu-group-cash-generating-units.md
+            - name: Pauschalsummenabschreibungsanlagen mithilfe der gleichmäßig festgelegten Methode erstellen
+              href: ../financials/localizations/tasks/create-lump-sum-depreciation-assets-equally-divided-method.md
+            - name: Leerlaufperiode der Anlage definieren und den Abschreibungsprozess überprüfen
+              href: ../financials/localizations/tasks/define-asset-idle-period-validate-depreciation-process.md
+            - name: Zinsausgaben für Anlagenstilllegungsverpflichtungen abschreiben und ansammeln
+              href: ../financials/localizations/tasks/depreciate-accrue-interest-expense.md
+            - name: Anlagen mit gebuchtem Wertminderungseintrag abschreiben
+              href: ../financials/localizations/tasks/depreciation-fixed-assets-reduction-entry-posted.md
+            - name: Abschreibungs-FAQ
+              href: ../financials/localizations/apac-jpn-fixed-asset-depreciation.md
+            - name: Eine Anlage mit Wertminderungseintrag entsorgen
+              href: ../financials/localizations/tasks/dispose-fixed-asset-reduction-entry.md
+            - name: JBA-Zahlungsdateiformat aktivieren
+              href: ../financials/localizations/tasks/jba-payment-file-format.md
+            - name: Einen Zeitplan für Abschreibungsraten eingeben und zu einem Abschreibungsprofil zuordnen
+              href: ../financials/localizations/tasks/enter-depreciation-rate-schedule.md
+            - name: Abschreibungsmethode in gleichen Teilen
+              href: ../financials/localizations/apac-jpn-equally-divided-depreciation-method.md
+            - name: Formular 26 für abschreibungsfähige Steuererklärung
+              href: ../financials/localizations/tasks/jp-00027-form-26-depreciable-tax-declaration.md
+            - name: Eine EFT-Zahlungsdatei mit JBA-Format generieren
+              href: ../financials/localizations/tasks/eft-payment-file-jba-format.md
+            - name: Zahlungsgebühr generieren und buchen
+              href: ../financials/localizations/tasks/post-payment-fee.md
+            - name: Verbrauchssteuerbericht generieren
+              href: ../financials/localizations/tasks/japan-consumption-tax-report.md
+            - name: Beeinträchtigungsberechnung zu ZGE
+              href: ../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md
+            - name: Beeinträchtigungsberechnung
+              href: ../financials/localizations/apac-jpn-impairment-accounting-fixed-assets.md
+            - name: Eine Debitorenzahlung mit JBA-Dateiformat importieren
+              href: ../financials/localizations/tasks/import-customer-payment-jba-file-format.md
+            - name: Postleitzahlen importieren
+              href: ../financials/localizations/apac-jpn-import-postal-codes.md
+            - name: Eingangsjournal auf dem T-Kontoformular
+              href: ../financials/localizations/tasks/jp-00005-input-journal-t-account-form-japan.md
+            - name: Auf Anlagenstilllegungsverpflichtungen bezogene Buchungen abfragen
+              href: ../financials/localizations/tasks/inquiries-asset-retirement-obligation.md
+            - name: Abzugsfähige Ausgaben abfragen
+              href: ../financials/localizations/tasks/inquiry-deductible-expenses.md
+            - name: Zahlungsgebühren in einer Erfassung abfragen
+              href: ../financials/localizations/tasks/inquiries-payment-fee-journal.md
+            - name: Anlage-Masterdatendateien für abzugsfähige Ausgaben verwalten
+              href: ../financials/localizations/tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md
+            - name: Beeinträchtigungsindikatoren für einzelne Anlagen verwalten
+              href: ../financials/localizations/tasks/maintain-impairment-indicators-individual-assets.md
+            - name: Einem Kreditor durch Indossierung eines Wechsels bezahlen
+              href: ../financials/localizations/apac-jpn-endorse-bill-of-exchange.md
+            - name: Eine Lieferantenbuchung durch Indossieren eines Wechsels des Debitors zahlen
+              href: ../financials/localizations/tasks/pay-vendor-transaction.md
+            - name: Periodischer Ausgleich von zu hohen und zu niedrigen Abschreibungen
+              href: ../financials/localizations/tasks/periodic-settlement-over-under-depreciation.md
+            - name: Progressive Quellensteuerberechnung
+              href: ../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md
+            - name: Zusätzliche Abschreibung vorschlagen
+              href: ../financials/localizations/tasks/propose-additional-depreciation.md
+            - name: Beschleunigte Abschreibung vorschlagen und buchen
+              href: ../financials/localizations/tasks/propose-post-accelerated-depreciation.md
+            - name: Beeinträchtigungsbetrag nach Charge vorschlagen und buchen
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-batch.md
+            - name: Beeinträchtigungsbetrag mithilfe der Anlagenerfassung vorschlagen und buchen
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-fixed-asset-journal.md
+            - name: Beeinträchtigungsbetrag für eine zahlungsmittelgenerierende Einheit vorschlagen und buchen
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-cash-generating-unit.md
+            - name: Sonderabschreibungsprofil
+              href: ../financials/localizations/tasks/propose-special-depreciation.md
+            - name: Eine konsolidierte Debitorenrechnung erneut öffnen und bearbeiten
+              href: ../financials/localizations/tasks/reopen-edit-customer-consolidated-invoice.md
+            - name: Eine konsolidierte Kreditorenrechnung erneut öffnen und bearbeiten
+              href: ../financials/localizations/tasks/reopen-edit-vendor-consolidated-invoice.md
+            - name: Einen indossierten Wechsel stornieren
+              href: ../financials/localizations/tasks/reverse-endorsed-bill-exchange.md
+            - name: Erkennungstest durchführen und den Beeinträchtigungsbetrag für einzelne Anlagen berechnen
+              href: ../financials/localizations/tasks/run-recognition-test-calculate.md
+            - name: 'Einen Debitor und einen Auftrag einrichten, die Ziel der konsolidierten Rechnung werden sollen'
+              href: ../financials/localizations/tasks/set-up-customer-sales-order-target-consolidated-invoice.md
+            - name: ARO einrichten
+              href: ../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md
+            - name: Dokumente der Stilllegungsverpflichtungen für Anlagen einrichten und ARO-Betrag in einer Anlage eingeben
+              href: ../financials/localizations/tasks/set-up-asset-retirement-obligation.md
+            - name: Debitorenrechnungen einrichten
+              href: ../financials/localizations/tasks/set-up-consolidated-invoices.md
+            - name: Buchung allgemeiner Parameter für Wertminderungseinstellungen und Buchungsprofil einrichten
+              href: ../financials/localizations/tasks/impairment-accounting.md
+            - name: Verbrauchssteuerbericht für Japan einrichten
+              href: ../financials/localizations/tasks/setup-japan-consumption-tax-report.md
+            - name: Eine Zahlung für Japan durch Indossierung eines Wechsels des Debitors einrichten
+              href: ../financials/localizations/tasks/setup-japan-payment-endorsing-customer-bill-exchange.md
+            - name: Masterdaten für das Einbeziehen von abzugsfähigen Ausgaben für mehrere Buchungsebenen einrichten
+              href: ../financials/localizations/tasks/set-up-master-data-inclusion.md
+            - name: Zahlungsgebühr für Japan einrichten
+              href: ../financials/localizations/tasks/setup-payment-fee-japan.md
+            - name: Planzahlenverrechnungseinträge einrichten
+              href: ../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md
+            - name: Kreditorenmaster und Bestellung als Ziel der konsolidierten Rechnung einrichten
+              href: ../financials/localizations/tasks/vendor-master-po.md
+            - name: Einen indossierten Wechsel ausgleichen
+              href: ../financials/localizations/tasks/settle-endorsed-bill-exchange.md
+            - name: Konsolidierte Debitorenrechnungen mithilfe einer Zahlungserfassung ausgleichen
+              href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-payment-journal.md
+            - name: Konsolidierte Debitorenrechnungen mithilfe von Ausgleichsbuchungen ausgleichen
+              href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-settle-transactions.md
+            - name: Konsolidierte Kreditorenrechnungen mithilfe einer Zahlungserfassung ausgleichen
+              href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-payment-journal.md
+            - name: Konsolidierte Kreditorenrechnungen mithilfe von Ausgleichsbuchungen ausgleichen
+              href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-settle-transactions.md
+            - name: Liste zum Zusammenstellen für Anlagen verwenden
+              href: ../financials/localizations/tasks/use-assemble-list-fixed-asset.md
+            - name: Liste zum Auflösen für Anlagen verwenden
+              href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
+        - name: Lettland
+          href: ../financials/localizations/latvia.md
+          items:
+            - name: Anlagenbuchhaltung
+              href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
+            - name: Nachverfolgung von Änderung des Anlagenstandorts
+              href: ../financials/localizations/emea-lva-fixed-assets-location-fields-change.md
+            - name: Rechnungs- und Lieferscheinnummerierung
+              href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
+            - name: Bericht zur Steuer auf natürliche Ressourcen
+              href: ../financials/localizations/emea-lva-tax-natural-resources.md
+            - name: Details von MwSt.-Abrechnung
+              href: ../financials/localizations/emea-lva-vat-statement-details.md
+        - name: Litauen
+          href: ../financials/localizations/lithuania.md
+          items:
+            - name: Anlagenreparaturanweisung
+              href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
+            - name: Dokument zur Anlagenübertragung zwischen Lagerorten generieren
+              href: ../financials/localizations/tasks/lt-00003-fixed-asset-transfer.md
+            - name: Rechnungs- und Lieferscheinnummerierung
+              href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
+            - name: MwSt.-Abrechnungsdetails
+              href: ../financials/localizations/emea-ltu-vat-statement-details.md
+        - name: Malaysia
+          href: ../financials/localizations/malaysia.md
+          items:
+            - name: Debitorenkredit für Projektverkauf generieren
+              href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
+            - name: Kreditorenkredit für Projektverkauf generieren
+              href: ../financials/localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
+            - name: Steuern auf Waren und Dienstleistungen (GST)
+              href: ../financials/localizations/apac-mys-gst.md
+            - name: GST - GAF-Dateien im erforderlichen Format generieren
+              href: ../financials/localizations/tasks/my-00010-gst-gaf-files-required-format.md
+            - name: Debitorensoll und -kredit für GST verwalten
+              href: ../financials/localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
+            - name: Kreditorensoll und -kredit für GST verwalten
+              href: ../financials/localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
+            - name: GST-Debitorenrechnungen mit einer Entlastungsklausel drucken
+              href: ../financials/localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
+            - name: GST-Steuerrechnungen drucken
+              href: ../financials/localizations/tasks/my-00005-print-gst-tax-invoices.md
+            - name: Selbstberechnete Rechnungen
+              href: ../financials/localizations/tasks/my-00007-self-billed-invoices.md
+            - name: GST-Entlastungsklauseln einrichten
+              href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
+        - name: Mexiko
+          href: ../financials/localizations/mexico.md
+          items:
+            - name: Lokalisierungsumfang
+              href: ../financials/localizations/latam-mex-scope.md
+            - name: Bericht zur Inflationsanpassungserklärung
+              href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
+            - name: Eine elektronische Rechnung stornieren
+              href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
+            - name: CFDI-Version 3.3
+              href: ../financials/localizations/latam-mex-cfdi-3-3.md
+            - name: Debitoren-Registrierungskennungen und andere Informationen
+              href: ../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md
+            - name: DIOT-Erklärungsanweisung
+              href: ../financials/localizations/latam-mex-diot-declaration-statement.md
+            - name: E-Rechnungsstellung CFDI
+              href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
+            - name: Elektronische Rechnungen
+              href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
+            - name: Elektronische Sachkonto-Kostenrechnungsauszüge
+              href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
+            - name: Steuerregistrierungskennungen für mexikanische juristische Personen eingeben
+              href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
+            - name: Elektronische Rechnung abfragen und drucken
+              href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
+            - name: ISR-Erklärungsbericht
+              href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
+            - name: Freitextrechnung buchen
+              href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
+            - name: Mexikanischen elektronischen Hauptbuchkontobericht Version 1.1 erzeugen
+              href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
+            - name: Parameter für eine elektronische Rechnung einrichten
+              href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
+            - name: Mehrwertsteuer-Codes für Mexiko einrichten
+              href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
+            - name: Kontenplan für eine juristische Person in Mexiko einrichten
+              href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
+            - name: RFC-Registrierungskennung für mexikanische Bankkonten angeben
+              href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
+            - name: Kreditorenregistrierungskennungen
+              href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
+        - name: Niederlande
+          href: ../financials/localizations/netherlands.md
+          items:
+            - name: Elektronische Steuererklärungen (EVAT)
+              href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
+            - name: Integration von Semansys XBRL
+              href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
+        - name: Norwegen
+          href: ../financials/localizations/norway.md
+          items:
+            - name: Zahlungsformate für Debitor und Kreditor
+              href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
+            - name: Debitorenzahlung auf Grundlage der Zahlungskennung
+              href: ../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md
+            - name: Nettoimportformat
+              href: ../financials/localizations/emea-nor-nets-import-format.md
+            - name: MwSt.-Abrechnung
+              href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
+            - name: Kassen
+              href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
+            - name: Bereitstellungsrichtlinien für Kassen
+              href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+        - name: Polen
+          href: ../financials/localizations/poland.md
+          items:
+            - name: Positionsrabatte anhand von Artikelpreis berechnen
+              href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
+            - name: Korrekturhinweise
+              href: ../financials/localizations/emea-pol-correction-notes.md
+            - name: Duplizierte Verkaufsrechnungsnummerierung
+              href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
+            - name: Anlagenabschreibung
+              href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
+            - name: Anlagenveräußerungs-Funktionenerweiterung
+              href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Retourfähige Verpackung
+              href: ../financials/localizations/emea-pol-returnable-packages.md
+            - name: Mehrwertsteuerberichte
+              href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Standardprotokolldatei
+              href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
+            - name: Steuerzinsen und Freihandzinsen
+              href: ../financials/localizations/emea-pol-interest-calculation.md
+            - name: Umsatzsaldenbericht
+              href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: Saudi-Arabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2183,6 +2121,82 @@
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Zakat-Berichterstellung für Saudi-Arabien
               href: ../financials/localizations/emea-sau-zakat-reporting.md
+        - name: Singapur
+          href: ../financials/localizations/singapore.md
+          items:
+            - name: GST-05-Bericht generieren
+              href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
+        - name: Spanien
+          href: ../financials/localizations/spain.md
+          items:
+            - name: Skonti auf Rechnung anwenden
+              href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
+            - name: Wechseloptionen
+              href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Mehrwertsteuer nach vereinnahmten Geldern
+              href: ../financials/localizations/emea-esp-conditional-sales-tax.md
+            - name: Fakturierung von Gutschriften
+              href: ../financials/localizations/tasks/emea-esp-credit-invoicing.md
+            - name: Rechnungskonto für Steuerdaten
+              href: ../financials/localizations/emea-esp-fiscal-data-invoice-account.md
+            - name: Anlagengruppenneubewertung
+              href: ../financials/localizations/emea-esp-fixed-asset-group-revaluation.md
+            - name: Innergemeinschaftliche MwSt.
+              href: ../financials/localizations/emea-esp-intra-community-vat.md
+            - name: Einmalige Debitoren
+              href: ../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md
+            - name: Schecks mit spanischem Layout drucken
+              href: ../financials/localizations/emea-esp-print-checks-with-spanish-layout.md
+            - name: Solawechseloptionen
+              href: ../financials/localizations/emea-esp-promissory-note-options.md
+            - name: Erklärung 340
+              href: ../financials/localizations/emea-esp-report-340.md
+            - name: Verkaufs- und Kaufzyklen
+              href: ../financials/localizations/emea-esp-sales-purchase-cycle.md
+            - name: Besondere Einträge und Eröffnungsbögen
+              href: ../financials/localizations/emea-esp-opening-sheets-spain.md
+        - name: Schweden
+          href: ../financials/localizations/sweden.md
+          items:
+            - name: Finanzinformationen für Wirtschaftsprüfer in Schweden exportieren
+              href: ../financials/localizations/emea-swe-sie-standard-report.md
+            - name: Zahlungsformate importieren
+              href: ../financials/localizations/emea-swe-payment-formats-import.md
+            - name: Kassen
+              href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
+        - name: Schweiz
+          href: ../financials/localizations/switzerland.md
+          items:
+            - name: Debitorenzahlungen in ESR importieren
+              href: ../financials/localizations/emea-che-esr-customer-payments-import.md
+        - name: Thailand
+          href: ../financials/localizations/thailand.md
+          items:
+            - name: Bestandskartenberichte
+              href: ../financials/localizations/apac-tha-stock-card-reports.md
+            - name: Ersatz-/Regulierungssteuerrechnung
+              href: ../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md
+            - name: Nicht realisierte Vorsteuer
+              href: ../financials/localizations/apac-tha-unrealized-vat.md
+            - name: Quellensteuer
+              href: ../financials/localizations/apac-tha-withholding-tax.md
+        - name: Vereinigtes Königreich
+          href: ../financials/localizations/united-kingdom.md
+          items:
+            - name: Schema für Baubranche
+              href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
+            - name: Gutschrift für den Rabattausgleich erstellen
+              href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
+            - name: 'Eine Bestellung erstellen, die Artikel beinhaltet, für die die Mehrwertsteuer für die Verlagerung der Steuerschuld gilt'
+              href: ../financials/localizations/tasks/purchase-order-reverse-charge-vat.md
+            - name: 'Einen Auftrag mit Artikeln erstellen, für die Mehrwertsteuer für Verlagerung der Steuerschuld gilt'
+              href: ../financials/localizations/tasks/gb-00002-sales-order.md
+            - name: Artikel-Mehrwertsteuergruppen für die Verlagerung der Steuerschuld einrichten
+              href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+            - name: 'Artikelgruppen, Regeln und Parameter zur Verlagerung der Steuerschuld einrichten'
+              href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+            - name: Mehrwertsteuergruppen für die Verlagerung der Steuerschuld festlegen
+              href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
         - name: Vereinigte Staaten
           href: ../financials/localizations/united-states.md
           items:
@@ -2193,38 +2207,94 @@
     - name: Personalverwaltung
       href: hr/hr-landing-page.md
       items:
-        - name: Eine Personalverwaltungsstrategie entwickeln
+        - name: Strategie zur Personalverwaltung entwickeln
           items:
-            - name: 'Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen'
+            - name: Ziele erstellen
+              href: hr/tasks/create-goal.md
+            - name: 'Belegschaft mittels Abteilungen, Stellen und Positionen verwalten'
               href: ../talent/departments-jobs-positions.md
             - name: Stellenkomponenten einrichten
               href: ../talent/create-job.md
-            - name: Eine Abteilung erstellen und der Abteilungshierarchie zuordnen
+            - name: Neue Abteilungen definieren
+              href: hr/tasks/define-new-departments.md
+            - name: Neue Stellen definieren
+              href: hr/tasks/define-new-jobs.md
+            - name: Abteilung erstellen und der Abteilungshierarchie zuordnen
               href: ../talent/create-department-add-department-hierarchy.md
-            - name: Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen
+            - name: Kalender erstellen und Arbeitszeiten festlegen
+              href: hr/tasks/create-calendar-working-times.md
+            - name: Personalverwaltungsparameter für verschiedene juristische Personen festlegen
               href: ../talent/set-up-hr-parameters-across-legal-entities.md
-            - name: Einrichten von unternehmensspezifischen Personalverwaltungsparametern
+            - name: Unternehmensspezifische Personalverwaltungsparameter einrichten
               href: ../talent/set-up-company-specific-hr-parameters.md
-            - name: Personalaktivitäten – FAQ
+            - name: FAQ zu Personalaktivitäten
               href: ../talent/personnel-actions-faq.md
-            - name: Workflow zum Verwalten von Mitarbeiterinformationen verwenden
+            - name: Mitarbeiterinformationen mittels Workflow verwalten
               href: ../talent/workflow-manage-employee-information.md
+            - name: Berichtsbeziehungen für Positionen ändern
+              href: hr/tasks/modify-reporting-relationships-position.md
+            - name: Bewerbungseingangsdatensätze genehmigen
+              href: hr/tasks/approve-application-inbox-records.md
+            - name: Informationen zur Arbeitskraft eingeben
+              href: hr/tasks/enter-worker-information.md
+            - name: Artikel an Arbeitskräfte verleihen
+              href: hr/tasks/loan-item-worker.md
+            - name: Ausleihartikel einrichten
+              href: hr/tasks/create-loan-items.md
+            - name: An Arbeitskräfte ausgeliehene Artikel verwalten
+              href: ../talent/loan-items.md
+            - name: Nachfolgeplan entwickeln
+              href: hr/tasks/develop-succession-plan.md
+            - name: Projektarbeitsnachweise eingeben
+              href: hr/tasks/enter-project-timesheets.md
+            - name: E-Mail-Vorlagen verwalten
+              href: hr/tasks/manage-email-templates.md
+            - name: Beurlaubungen verwalten
+              href: hr/tasks/manage-leave-absence.md
         - name: Personalbeschaffung
           items:
-            - name: Verwalten von Personalbeschaffungsprozessen
+            - name: Personalbeschaffungsprozesse verwalten
               href: hr/manage-recruiting-process.md
             - name: Masseneinstellungsprojekte
               href: hr/mass-hire-projects.md
-        - name: Motivieren der Mitarbeiter
+            - name: Masseneinstellungsprojekte erstellen
+              href: hr/tasks/create-mass-hire-project.md
+            - name: Bewerber- und Bewerbungsdaten manuell eingeben
+              href: hr/tasks/enter-applicant-application-data-manually.md
+            - name: Stellenanforderungen ausarbeiten und freigeben
+              href: hr/tasks/develop-open-job-requisition.md
+            - name: Positionen einrichten
+              href: hr/tasks/set-up-positions.md
+            - name: Kandidaten mittels Personalbeschaffung einstellen
+              href: hr/tasks/hire-candidate-through-recruiting.md
+            - name: Bestehende Mitarbeiter mittels Personalbeschaffung einstellen
+              href: hr/tasks/hire-existing-employee-through-recruiting.md
+            - name: Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
+              href: hr/tasks/identify-deploy-candidate-selection-tools.md
+        - name: Mitarbeiter motivieren
           items:
             - name: Vergütungspläne
               href: ../talent/compensation-plans.md
-            - name: Erstellen fester Vergütungspläne
+            - name: Feste Vergütungspläne erstellen
               href: ../talent/create-fixed-compensation-plans.md
             - name: Variable Vergütungspläne erstellen
               href: ../talent/create-variable-compensation-plans.md
-            - name: Vergütungsprozess
+            - name: Vergütungsprozesse festlegen und Ergebnisse berechnen
+              href: hr/tasks/define-compensation-process-calculate-results.md
+            - name: Vergütung verarbeiten
               href: ../talent/process-compensation.md
+            - name: Vergütungsraster einrichten
+              href: hr/tasks/set-up-compensation-grids.md
+            - name: Gehalts-/Vergütungsstrukturen und -pläne entwickeln
+              href: hr/tasks/develop-salary-compensation-structure-plan.md
+            - name: Informationen zur Leistungserfassung hinzufügen und Lob aussprechen
+              href: hr/tasks/add-your-performance-journal-send-praise-someone.md
+            - name: Mitarbeiter in einen Plan mit fester Vergütung aufnehmen
+              href: hr/tasks/enroll-employee-fixed-compensation-plan.md
+            - name: Mitarbeiter in einen Plan mit variabler Vergütung aufnehmen
+              href: hr/tasks/enroll-employee-variable-compensation-plan.md
+            - name: Leistungsbeurteilungen erstellen
+              href: hr/tasks/create-performance-review.md
         - name: Mitarbeiter fördern und schulen
           items:
             - name: Überblick über die Leistungsverwaltung
@@ -2235,22 +2305,42 @@
               href: ../talent/courses.md
         - name: Vorteile erstellen und verwalten
           items:
-            - name: Ein Vergütungsprogramm verwalten
+            - name: Vorteilsprogramm verwalten
               href: ../talent/manage-benefit-program.md
-            - name: Vergütungsberechtigungsrichtlinien
+            - name: Richtlinien zur Vorteilsberechtigung
               href: ../talent/benefit-eligibility-policies.md
-            - name: 'Verwalten von Artikeln, die an Arbeitskräfte ausgeliehen werden'
-              href: ../talent/loan-items.md
-        - name: Informationen anhand von Fragebögen sammeln
+            - name: Verfahren zur Vorteilsberechtigung
+              href: hr/tasks/benefit-eligibility-process.md
+            - name: Regeln und Richtlinien zur Vorteilsberechtigung festlegen
+              href: hr/tasks/define-benefit-eligibility-rules-policies.md
+            - name: Mitarbeitervorteilsprogramm anbieten
+              href: hr/tasks/deliver-employee-benefits-program.md
+            - name: Neuen Vorteil erstellen
+              href: hr/tasks/create-new-benefit.md
+            - name: Arbeitskräfte zu Vorteilen anmelden und Vorteile entfernen
+              href: hr/tasks/enroll-remove-benefits-workers.md
+            - name: Leistungsablaufdaten verwalten
+              href: hr/tasks/manage-benefit-expiration-dates.md
+        - name: Informationen mittels Fragebögen erfassen
           items:
             - name: Fragebögen
               href: ../talent/questionnaires.md
-            - name: Entwerfen eines Fragebogens
+            - name: Fragebogen entwerfen
               href: ../talent/design-questionnaires.md
-            - name: Einen Fragebogen verteilen und ausfüllen
+            - name: Fragebogen verteilen und ausfüllen
               href: ../talent/distribute-questionnaires.md
-            - name: Die Ergebnisse eines Fragebogens auswerten
+            - name: Fragebogen mittels Zeitplanung verteilen
+              href: hr/tasks/distribute-questionnaires-scheduling.md
+            - name: Fragebogenergebnisse auswerten
               href: ../talent/evaluate-questionnaire-results.md
+            - name: Fragebogenergebnisse analysieren
+              href: hr/tasks/analyze-questionnaire-results.md
+            - name: Offene Fragen formulieren
+              href: hr/tasks/create-open-ended-question.md
+            - name: Fragen mit vordefinierten Antworten formulieren
+              href: hr/tasks/create-closed-ended-question.md
+            - name: 'Fragen stellen, die von der Antwort auf die vorherige Frage abhängen'
+              href: hr/tasks/make-question-dependent-answer-previous-question.md
         - name: Arbeitsplatzsicherheit und Konformität (Vereinigte Staaten von Amerika)
           items:
             - name: Prüfung des I-9-Formulars
@@ -2259,10 +2349,14 @@
               href: hr/localizations/tasks/employment-verification-i9-verification.md
             - name: Einrichten von Dokumenttypen für I-9-Formulare
               href: hr/localizations/tasks/set-up-i9-document-types.md
-            - name: Erfüllen der Vorgaben des Americans with Disabilities Act
+            - name: Vorgaben des Americans with Disabilities Act erfüllen
               href: hr/localizations/noam-usa-comply-ada.md
-            - name: Verwalten von Arbeitsrückständen
+            - name: Arbeitsplatzhilfsmittel für Arbeitskräfte verwalten
               href: hr/localizations/tasks/manage-worker-accommodations.md
+            - name: Angaben zu Verletzungen und Krankheiten festlegen
+              href: hr/tasks/set-up-injury-illness-information.md
+            - name: Informationen zu Verletzungen und Krankheiten von Mitarbeitern verwalten
+              href: hr/tasks/maintain-employee-injury-illness-information.md
         - name: US-Lohn
           href: hr/localizations/noam-usa-payroll.md
           items:
@@ -2270,7 +2364,7 @@
               items:
                 - name: Lohnzahlung für Arbeitskräfte einrichten
                   href: hr/localizations/noam-usa-worker-position-payroll-tasks.md
-                - name: Arbeitszyklen und Arbeitsperioden einrichten
+                - name: Arbeitszyklen und Arbeitszeiträume einrichten
                   href: hr/localizations/noam-usa-work-cycle-work-period-tasks.md
                 - name: Vergütungsfälligkeitspläne einrichten
                   href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
@@ -2331,88 +2425,6 @@
                   href: hr/localizations/noam-usa-payroll-data-updates.md
                 - name: Standardlohnberichte
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
-        - name: Personalverwaltungsaufgaben
-          items:
-            - name: Hinzufügen von Informationen zur Leistungserfassung und Senden von Lob
-              href: hr/tasks/add-your-performance-journal-send-praise-someone.md
-            - name: Ergebnisse des Fragebogens analysieren
-              href: hr/tasks/analyze-questionnaire-results.md
-            - name: Bewerbungseingangs-Datensätze genehmigen
-              href: hr/tasks/approve-application-inbox-records.md
-            - name: Vergütungsberechtigungsprozess
-              href: hr/tasks/benefit-eligibility-process.md
-            - name: Erstellen von Kalendern und Generieren von Arbeitszeiten
-              href: hr/tasks/create-calendar-working-times.md
-            - name: Erstellen von Fragen mit vordefinierten Antworten
-              href: hr/tasks/create-closed-ended-question.md
-            - name: Ziele erstellen
-              href: hr/tasks/create-goal.md
-            - name: Ausleihartikel einrichten
-              href: hr/tasks/create-loan-items.md
-            - name: Masseneinstellungsprojekte erstellen
-              href: hr/tasks/create-mass-hire-project.md
-            - name: Erstellen neuer Vorteile
-              href: hr/tasks/create-new-benefit.md
-            - name: Erstellen offener Fragen
-              href: hr/tasks/create-open-ended-question.md
-            - name: Erstellen von Leistungsbeurteilungen
-              href: hr/tasks/create-performance-review.md
-            - name: Vorteilsberechtigungsregeln und Richtlinien definieren
-              href: hr/tasks/define-benefit-eligibility-rules-policies.md
-            - name: Vergütungsprozesse definieren und Ergebnisse berechnen
-              href: hr/tasks/define-compensation-process-calculate-results.md
-            - name: Neue Abteilungen definieren
-              href: hr/tasks/define-new-departments.md
-            - name: Neue Einzelvorgänge definieren
-              href: hr/tasks/define-new-jobs.md
-            - name: Mitarbeitervergütungsprogramm bereitstellen
-              href: hr/tasks/deliver-employee-benefits-program.md
-            - name: Stellenanforderungen ausarbeiten und freigeben
-              href: hr/tasks/develop-open-job-requisition.md
-            - name: Gehalts-/Vergütungsstrukturen und -pläne entwickeln
-              href: hr/tasks/develop-salary-compensation-structure-plan.md
-            - name: Nachfolgeplan entwickeln
-              href: hr/tasks/develop-succession-plan.md
-            - name: Einen Fragebogen mithilfe des Zeitplans verteilen
-              href: hr/tasks/distribute-questionnaires-scheduling.md
-            - name: Mitarbeiter in einem Plan für eine feste Vergütung registrieren
-              href: hr/tasks/enroll-employee-fixed-compensation-plan.md
-            - name: Mitarbeiter in einem Plan für variable Vergütung registrieren
-              href: hr/tasks/enroll-employee-variable-compensation-plan.md
-            - name: Registrieren von Arbeitskräften für Vorteile und Entfernen von Vorteilen von Arbeitskräften
-              href: hr/tasks/enroll-remove-benefits-workers.md
-            - name: Manuelles Eingeben von Bewerber- und Anwendungsdaten
-              href: hr/tasks/enter-applicant-application-data-manually.md
-            - name: Arbeitsnachweise des Projekts eingeben
-              href: hr/tasks/enter-project-timesheets.md
-            - name: Arbeitskraftinformationen eingeben
-              href: hr/tasks/enter-worker-information.md
-            - name: Einstellen eines Kandidaten über die Personalbeschaffung
-              href: hr/tasks/hire-candidate-through-recruiting.md
-            - name: Vorhandene Mitarbeiter mittels Personalbeschaffung einstellen
-              href: hr/tasks/hire-existing-employee-through-recruiting.md
-            - name: Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
-              href: hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Artikel an Arbeitskräfte verleihen
-              href: hr/tasks/loan-item-worker.md
-            - name: Mitarbeiterverletzungs- und Krankheitsinformationen verwalten
-              href: hr/tasks/maintain-employee-injury-illness-information.md
-            - name: 'Fragen stellen, die von der Antwort auf die vorherige Frage abhängen'
-              href: hr/tasks/make-question-dependent-answer-previous-question.md
-            - name: Leistungsablaufdaten verwalten
-              href: hr/tasks/manage-benefit-expiration-dates.md
-            - name: E-Mail-Vorlagen verwalten
-              href: hr/tasks/manage-email-templates.md
-            - name: Verwalten von Beurlaubungen
-              href: hr/tasks/manage-leave-absence.md
-            - name: Ändern der Berichtsbeziehungen für Positionen
-              href: hr/tasks/modify-reporting-relationships-position.md
-            - name: Vergütungsraster einrichten
-              href: hr/tasks/set-up-compensation-grids.md
-            - name: Angaben zu Verletzungen und Krankheiten einrichten
-              href: hr/tasks/set-up-injury-illness-information.md
-            - name: Positionen einrichten
-              href: hr/tasks/set-up-positions.md
     - name: Intelligence
       href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
       items:
@@ -3633,8 +3645,10 @@
           items:
             - name: Umsatzprovisionen registrieren
               href: ../supply-chain/sales-marketing/tasks/register-sales-commissions.md
-            - name: Vertriebsprovisionsregeln einrichten
+            - name: Vertriebsprovisionsregeln festlegen
               href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
+        - name: Handelsvergütung
+          href: ../supply-chain/sales-marketing/trade-allowance.md
     - name: Serviceverwaltung
       href: ../supply-chain/service-management/service-management-home-page.md
       items:

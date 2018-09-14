@@ -3,7 +3,7 @@ title: "Neue Vergütung erstellen"
 description: Diese Aufgabe zeigt Ihnen, wie Vorteilselemente erstellt werden, die verwendet werden, wenn ein neuer Vorteile erstellt wird.
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 3e9f5e222bf189657ed30f4bb8aecff7aa00e23c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 5136af93ccd751e6ac710a75914bf5f04750f7a1
 ms.contentlocale: de-de
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-new-benefit"></a><span data-ttu-id="95896-103">Neue Vergütung erstellen</span><span class="sxs-lookup"><span data-stu-id="95896-103">Create a new benefit</span></span>

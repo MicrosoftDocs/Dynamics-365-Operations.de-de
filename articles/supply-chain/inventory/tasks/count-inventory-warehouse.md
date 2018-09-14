@@ -3,7 +3,7 @@ title: "Bestand an einem Lagerort zählen"
 description: "Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Buchens einer Lagerinventurerfassung, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: cff65842f9eefb4365aaec86822173c6cfd35473
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 8c0bbfe8f86d27f81b0d577ed89dfa34ebcf3f18
 ms.contentlocale: de-de
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="count-inventory-in-a-warehouse"></a><span data-ttu-id="a3f67-103">Bestand an einem Lagerort zählen</span><span class="sxs-lookup"><span data-stu-id="a3f67-103">Count inventory in a warehouse</span></span>
