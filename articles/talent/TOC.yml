@@ -6,7 +6,9 @@
       items:
         - name: Neuheiten und Änderungen
           items:
-            - name: Neuigkeiten oder Änderungen in Dynamics 365 for Talent Core HR (Juli 2018)
+            - name: Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (August 2018)
+              href: whats-new-talent-august2018.md
+            - name: Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (Juli 2018)
               href: whats-new-talent-july2018.md
         - name: Systemanforderungen und Updaterichtlinie
           href: talent-versions-update-policy.md
@@ -16,11 +18,11 @@
           href: remove-talent-environment.md
         - name: Bereitstellung für die modularen Talent-Apps
           href: modular-app-tech-faq.md
-        - name: Talent-Funktionen erweitern
-          href: extend-talent-functionality.md
-        - name: Zugriff auf Vorschaufunktionen
+        - name: PowerApps-Apps einbetten
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Auf Vorschaufunktionen zugreifen
           href: access-preview-feature.md
-        - name: Konfigurieren der Lohnintegration zwischen Talent und Dayforce
+        - name: Lohnintegration zwischen Talent und Dayforce konfigurieren
           href: configure-payroll-integration.md
     - name: 'Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen'
       href: departments-jobs-positions.md
@@ -29,11 +31,11 @@
           href: create-job.md
         - name: Erstellen von Abteilungen und Einbeziehen in die Abteilungshierarchie
           href: create-department-add-department-hierarchy.md
-        - name: Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen
+        - name: Personalverwaltungsparameter für verschiedene juristische Personen festlegen
           href: set-up-hr-parameters-across-legal-entities.md
-        - name: Einrichten von unternehmensspezifischen Personalverwaltungsparametern
+        - name: Unternehmensspezifische Personalverwaltungsparameter einrichten
           href: set-up-company-specific-hr-parameters.md
-        - name: Personalaktivitäten – FAQ
+        - name: FAQ zu Personalaktivitäten
           href: personnel-actions-faq.md
         - name: Formalisieren der Geschäftsprozesse
           href: formalize-business-processes.md
@@ -67,10 +69,10 @@
           href: courses.md
     - name: Definieren und Verwalten eines Vorteilsprogramms
       href: manage-benefit-program.md
-    - name: Vorteilsberechtigungsrichtlinien
+    - name: Richtlinien zur Vorteilsberechtigung
       href: benefit-eligibility-policies.md
       items:
-        - name: 'Verwalten von Objekten, die an Arbeitskräfte ausgeliehen werden'
+        - name: An Arbeitskräfte ausgeliehene Artikel verwalten
           href: loan-items.md
     - name: Sammeln von Informationen anhand von Fragebögen
       href: questionnaires.md

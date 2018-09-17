@@ -3,7 +3,7 @@ title: "Ausgleichsüberblick"
 description: "Dieser Artikel enthält allgemeine Informationen zum Ausgleichsprozess. Er beschreibt die Buchungstypen, die ausgeglichen werden können, wann und wie Buchungen ausgeglichen werden und die Ergebnisse des Ausgleichsprozesses."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,8 +16,8 @@ ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
 ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
 ms.openlocfilehash: 2f1f11a7f1340d408374e658ae616ffa99f3c911
@@ -51,7 +51,6 @@ Wenn Buchungen ausgeglichen werden, wird der offene Saldo jeder Buchung bei Beda
 -   Entspricht der Zahlungsbetrag dem Rechnungsbetrag, werden die Zahlung und die Rechnung geschlossen, und der Saldo von beiden ist 0,00.
 
 Wenn aufgrund eines Skontos, einer Abschreibung oder Unterzahlung die [Zahlung geringer als der Rechnungsbetrag ist](../accounts-payable/vendor-payments-partial-amount.md), werden Rechnung und Zahlung je nach Einstellungen des Ausgleichs in den Kreditorenparametern und den Debitorenparametern noch abgeschlossen. Ausgleich kann auch Buchungen generieren. Beispielsweise erzeugt der Ausgleich einer Rechnung und Zahlung ein Skonto, einen realisierten Gewinn oder Verlust, Mehrwertsteueranpassungen, Abschreibungen oder Centdifferenzen.
-
 
 
 

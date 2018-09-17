@@ -1,21 +1,22 @@
----
+--- 
 title: "Qualität der Waren inspizieren"
 description: "Diese Prozedur zeigt, wie ein Qualitätsprüfungsauftrag bearbeitet wird."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: aeed7eab750c606ea0009fa7c51baf96e2f9de51
@@ -55,4 +56,5 @@ Diese Prozedur zeigt, wie ein Qualitätsprüfungsauftrag bearbeitet wird. Sie k�
 4. Klicken Sie auf Auswählen.
 5. Klicken Sie auf "OK".
 6. Schließen Sie die Seite.
+
 

@@ -1,21 +1,22 @@
----
+--- 
 title: Einen Produktionsauftrag planen
 description: Diese Prozedur zeigt, wie ein Produktionsauftrag geplant wird.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob, WrkCtrCapResSum
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
 ms.openlocfilehash: 6cbbf509c9e60040e08ab7932fcb0e8eed5ddd22
@@ -53,4 +54,5 @@ Diese Prozedur zeigt, wie ein Produktionsauftrag geplant wird. Das Demodatenunte
     * Die Kapazitätsauslastungsseite stellt die Kapazitäten dar, die für die Feinterminierung reserviert sind, die Gesamtanzahl von Stunden, die zur Zeit für die Ressource reserviert werden und die Anzahl der Stunden ,die für die Feinterminierung der Ressource verfügbar sind.  
 6. Schließen Sie die Seite.
 7. Schließen Sie die Seite.
+
 
