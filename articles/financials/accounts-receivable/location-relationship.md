@@ -28,6 +28,8 @@ ms.lasthandoff: 06/12/2018
 
 # <a name="add-location-roles-and-party-relationship-types"></a>Neue Standortrollen und Parteibeziehungstypen hinzufügen 
 
+[!include [banner](../includes/banner.md)]
+
 ## <a name="add-location-roles"></a>Lagerplatzrollen hinzufügen
 
 Es gibt zwei Möglichkeiten, neue Standortrollen für Adress- und Kontaktinformationen hinzuzufügen:

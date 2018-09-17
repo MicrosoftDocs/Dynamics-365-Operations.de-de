@@ -25,6 +25,8 @@ ms.lasthandoff: 08/08/2018
 
 # <a name="new-or-updated-task-guides-december-2017"></a>Neue oder aktualisierte Aufgabenleitfäden (Dezember 2017)
 
+[!include [banner](../includes/banner.md)]
+
 Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (Dezember 2016 -- alle Sprachen) für Microsoft Dynamics 365 for Operations auf.
 
 
