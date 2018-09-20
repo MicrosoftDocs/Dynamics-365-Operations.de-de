@@ -17,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
 ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -43,7 +43,7 @@ Mit diesem Power BI Inhalt können Sie Produktionsabweichungen analysieren. Die 
 Der **Produktionsfluss** Power BI Inhalt umfasst Daten, die aus Produktionsaufträgen und Chargenaufträgen stammen. Die Berichte enthalten keine Daten, die den Kanbanproduktionen zugeordnet sind.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Diw **Produktionsleistung** Power BI-Inhalt wird auf der **Produktionsleistung** angezeigt (**Produktionssteuerung** > **Abfragen und Berichte** > **Produktionsleistungsanalyse** > **Produktionsfluss**). 
+Die **Produktionsleistung** Power BI-Inhalt wird auf der **Produktionsleistung** angezeigt (**Produktionssteuerung**\>**Abfragen und Berichte**\>**Produktionsleistungsanalyse**\>**Produktionsfluss**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 
@@ -51,8 +51,8 @@ Der **Produktionsfluss** Power BI Inhalt enthält einen Satz Berichtsseiten. Jed
 
 Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspaket.
 
-| Berichtsseiten                                | Diagramme                                               | Kacheln |
-|--------------------------------------------|------------------------------------------------------|-------|
+| Berichtsseiten                                | Diagramme | Kacheln |
+|--------------------------------------------|--------|-------|
 | Produktionsleistung                     | <ul><li>Anzahl der Produktionsauftragspositionen nach Datum</li><li>Anzahl der Produktionen nach Produkt und Artikelgruppe</li><li>Anzahl der geplanten Produktionsaufträge nach Datum</li><li>10 tiefsten Produkte nach Pünktlichkeit und Vollständigkeit</li></ul> | <ul><li>Gesamtbestellung</li><li>Rechtzeitig und vollständig in Prozent</li><li>Unvollständig in %</li><li>Vorzeitig in %</li><li>verspätet in %</li></ul> |
 | Defekte nach Produkt                         | <ul><li>Fehlerhafter Satz (PPM) nach Datum</li><li>Fehlerhafte Rate nach Produkt (PPM) und Artikelgruppe</li><li>Jährlich produzierte Menge nach Datum</li><li>Top 10 Produkte nach gültigem Preis</li></ul> | <ul><li>Fehlerhafter Satz (PPM)</li><li>Fehlerhafte Menge</li><li>Gesamtmenge</li></ul> |
 | Defekter Trend nach Produkt                   | Defekter Satz (PPM) nach produzierter Menge | Fehlerrate (ppm) |
@@ -88,35 +88,35 @@ Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet w
 
 | Kennzahl                  | Wie die festgelegte Kennzahl berechnet wird |
 |--------------------------|-------------------------------|
-| Produktionsabweichung in %   | SUMME ("Produktionsabweichungs"[Produktionsabweichung]) / SUMME("Produktionsabweichung "[vorkalkulierte Kosten)] |
+| Produktionsabweichung in %   | SUMME ("Produktionsabweichungs"\[Produktionsabweichung\]) / SUMME("Produktionsabweichung "\[vorkalkulierte Kosten)\] |
 | Alle Bestellvorschläge       | COUNTROWS (Geplanter Produktionsauftrag) |
-| Vorzeitig                    | COUNTROWS(FILTER('Geplanter Produktionsauftrag', 'Geplanter Produktionsauftrag'[Geplantes Enddatum] \< 'Geplanter Produktionsauftrag'[Anforderungsdatum])) |
-| Verspätet                     | COUNTROWS(FILTER('Geplanter Produktionsauftrag', 'Geplanter Produktionsauftrag'[Geplantes Enddatum] \> 'Geplanter Produktionsauftrag'[Anforderungsdatum])) |
-| Termingerecht                  | COUNTROWS(FILTER('Geplanter Produktionsauftrag', 'Geplanter Produktionsauftrag'[Geplantes Enddatum] = 'Geplanter Produktionsauftrag'[Anforderungsdatum])) |
-| Termingerecht %                | IF ("geplanter Produktionsauftrag"[Einschaltzeit] \<\> 0, "Einschaltzeit geplanter Produktionsauftrag"[Einschaltzeit], IF ("geplanter Produktionsauftrag"[alle Bestellvorschläge] \<\> 0, 0, LEER())) / "geplanter Produktionsauftrag"[alle Bestellvorschläge] |
-| Abgeschl.                | COUNTROWS(FILTER("Produktionsauftrag", "Produktionsauftrag"[ist RAF'ed] = TRUE)) |
-| Fehlerhafter Satz (PPM)     | IF ("Produktionsauftrag" [Gesamtmenge] = 0, BLANK(), (SUMME(Produktionsauftrag[Ausschussmenge]) / Produktionsauftrag[Gesamtmenge] \* 1000000) |
-| Verzögerte Produktionsrate  | "Produktionsauftrag [Spät \#]/Produktionsauftrag abgeschlossen [Abgeschlossen] |
-| Vorzeitig und vollständig          | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'[Vollständig] = TRUE && 'Produktionsauftrag'[Vorzeitig] = TRUE)) |
-| Vorzeitig \#                 | COUNTROWS (FILTER ("Produktionsauftrag", "Produktionsauftrag" [ist vorzeitig] = TRUE)) |
-| Vorzeitig in %                  | IFERROR( IF('Produktionsauftrag'[Vorzeitig \#] \<\> 0, 'Produktiosnauftrag'[Vorzeitig \#], IF('Produktionsauftrag'[Gesamtauftrag] = 0, BLANK(), 0)) / 'Produktionsauftrag'[Gesamtauftrag], BLANK()) |
-| Unvollständig               | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'[Vollständig] = FALSE && 'Produktionsauftrag'[Is RAF'ed] = TRUE)) |
-| Unvollständig in %             | IFERROR( IF('Produktionsauftrag'[Unvollständig] \<\> 0, 'Produktionsauftrag'[Unvollständig], IF('Produktionsauftrag'[Gesamtauftrag] = 0, BLANK(), 0)) / 'Produktionsauftrag'[Gesamtauftrag], BLANK()) |
-| verzögert               | 'Produktionsauftrag'[Is RAF'ed] = TRUE && 'Produktionsauftrag'[Verzögerter Wert] = 1 |
-| Ist früh                 | 'Produktionsauftrag'[Is RAF'ed] = TRUE && 'Produktionsauftrag'[Tage verzögert] \< 0 |
-| Vollständig               | "Produktionsauftrag" [Gute Menge] \>= "Produktionsauftrag" [Planmenge] |
-| Ist RAF'ed                | 'Produktionsauftrag'[Produktionsstatuswert] = 5 \|\| 'Produktionsauftrag'[Produktionsstatuswert] = 7 |
-| Spät und vollständig           | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'[Vollständig] = TRUE && 'Produktionsauftrag'[Verspätet] = TRUE)) |
-| verspätet \#                  | COUNTROWS (FILTER ("Produktionsauftrag", "Produktionsauftrag" [ist voerspätet] = TRUE)) |
-| verspätet in %                   | IFERROR( IF('Produktionsauftrag'[Spät \#] \<\> 0, 'Produktiosnauftrag'[Spät \#], IF('Produktionsauftrag'[Gesamtauftrag] = 0, BLANK(), 0)) / 'Produktionsauftrag'[Gesamtauftrag], BLANK()) |
-| Rechtzeitig und vollständig        | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'[vollständig] = TRUE && 'Produktionsauftrag'[verspätete] = FALSE && 'Produktionsauftrag'[Vorzeitig] = FALSE)) |
-| Rechtzeitig und vollständig in Prozent      | IFERROR( IF('Produktionsauftrag'[Unvollständig] \<\> 0, 'Produktionsauftrag'[Rechtzeitig und vollständig], IF('Produktionsauftrag'[abgeschlossen] = 0, BLANK(), 0)) / 'Produktionsauftrag'[abgeschlossen], BLANK()) |
+| Vorzeitig                    | COUNTROWS(FILTER('Geplanter Produktionsauftrag', 'Geplanter Produktionsauftrag'\[Geplantes Enddatum\]  'Geplanter Produktionsauftrag'\<\[Anforderungsdatum\])) |
+| Verspätet                     | COUNTROWS(FILTER('Geplanter Produktionsauftrag', 'Geplanter Produktionsauftrag'\[Geplantes Enddatum\]  'Geplanter Produktionsauftrag'\>\[Anforderungsdatum\])) |
+| Termingerecht                  | COUNTROWS(FILTER('Geplanter Produktionsauftrag', 'Geplanter Produktionsauftrag'\[Geplantes Enddatum\]  'Geplanter Produktionsauftrag'\[Anforderungsdatum\])) |
+| Termingerecht %                | IF ("geplanter Produktionsauftrag"\[Einschaltzeit\] \<\> 0, "Einschaltzeit geplanter Produktionsauftrag"\[Einschaltzeit\], IF ("geplanter Produktionsauftrag"\[alle Bestellvorschläge\] \<\> 0, 0, LEER())) / "geplanter Produktionsauftrag"\[alle Bestellvorschläge\] |
+| Abgeschl.                | COUNTROWS(FILTER("Produktionsauftrag", "Produktionsauftrag"\[ist RAF'ed\] = TRUE)) |
+| Fehlerhafter Satz (PPM)     | IF ("Produktionsauftrag" \[Gesamtmenge\] = 0, BLANK(), (SUMME(Produktionsauftrag\[Ausschussmenge\]) / Produktionsauftrag\[Gesamtmenge\]\*  1000000) |
+| Verzögerte Produktionsrate  | "Produktionsauftrag \[Spät \#\]/Produktionsauftrag abgeschlossen \[Abgeschlossen\] |
+| Vorzeitig und vollständig          | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'\[Vollständig\] = TRUE && 'Produktionsauftrag\[Vorzeitig\] = TRUE)) |
+| Vorzeitig \#                 | COUNTROWS (FILTER ("Produktionsauftrag", "Produktionsauftrag" \[ist vorzeitig\] = TRUE)) |
+| Vorzeitig in %                  | IFERROR( IF('Produktionsauftrag'\[Vorzeitig \#\]\>\<  0, 'Produktiosnauftrag'\[Vorzeitig \#\], IF('Produktionsauftrag'\[Gesamtauftrag\] = 0, BLANK(), 0)) / 'Produktionsauftrag'\[Gesamtauftrag\], BLANK()) |
+| Unvollständig               | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'\[Vollständig\] = FALSE && 'Produktionsauftrag'\[Is RAF'ed\] = TRUE)) |
+| Unvollständig in %             | IFERROR( IF('Produktionsauftrag'\[Unvollständig\] \<\> 0, 'Produktionsauftrag'\[Unvollständig\], IF('Produktionsauftrag'\[Gesamtauftrag\] = 0, BLANK(), 0)) / 'Produktionsauftrag'\[Gesamtauftrag\] BLANK()) |
+| verzögert               | 'Produktionsauftrag'\[Is RAF'ed\] = TRUE && 'Produktionsauftrag'\[Verzögerter Wert\] = 1 |
+| Ist früh                 | 'Produktionsauftrag'\[Is RAF'ed\] = TRUE && 'Produktionsauftrag'\[Tage verzögert\]\<  0 |
+| Vollständig               | "Produktionsauftrag" \[Gute Menge\] \>= Produktionsauftrag \[Planmenge\] |
+| Ist RAF'ed                | 'Produktionsauftrag'\[Produktionsstatuswert\] = 5 \|\| 'Produktionsauftrag'\[Produktionsstatuswert\] = 7 |
+| Spät und vollständig           | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'\[Vollständig\] = TRUE && 'Produktionsauftrag'\[Verspätet\] = TRUE)) |
+| verspätet \#                  | COUNTROWS (FILTER ("Produktionsauftrag", "Produktionsauftrag" \[ist voerspätet\] = TRUE)) |
+| verspätet in %                   | IFERROR( IF('Produktionsauftrag'\[Spät\#\]\<\>  0, 'Produktiosnauftrag'\[Spät\#\], IF('Produktionsauftrag'\[Gesamtauftrag\]= 0, BLANK(), 0)) / 'Produktionsauftrag'\[Gesamtauftrag\] BLANK()) |
+| Rechtzeitig und vollständig        | COUNTROWS(FILTER('Produktionsauftrag', 'Produktionsauftrag'\[vollständig\] = TRUE && 'Produktionsauftrag'\[verspätete\] = FALSE && 'Produktionsauftrag'\[Vorzeitig\] = FALSE)) |
+| Rechtzeitig und vollständig in Prozent      | IFERROR( IF('Produktionsauftrag'\[Rechtzeitig und vollständig\]\<\>  0, 'Produktionsauftrag'\[Rechtzeitig und vollständig\], IF('Produktionsauftrag'\[abgeschlossen\] = 0, BLANK(), 0)) / 'Produktionsauftrag'\[abgeschlossen\], BLANK()) |
 | Gesamtbestellung             | COUNTROWS (Produktionsauftrag) |
-| Gesamtmenge           | SUMME('Produktionsauftrag'[Gute Menge]) + SUMME('Produktionsauftrag'[Fehlerhafte Menge]) |
-| Fehlerrate (ppm)        | IF( 'Routentransaktion'[Verarbeitete Menge] = 0, BLANK(), (SUMME('Routentransaktion '[Fehlerhafte Menge]) / 'Routentransaktion'[Verarbeitete Menge]) \* 1000000) |
-| Fehlerverhältnis (ppm) | IF( 'Routentransaktion'[Gesamte gemischte Menge] = 0, BLANK(), (SUMME('Routentransaktion '[Fehlerhafte Menge]) / 'Routentransaktion'[Gesamte gemischte Menge]) \* 1000000) |
-| Verarbeitungsmenge       | SUMME (Arbeitsplanbuchungen [Gute Menge]) + SUMME (Arbeitsplanbuchung[Ausschussmenge]) |
-| Gesamte gemischte Menge     | SUM('Produktionsauftrag'[Gute Menge]) + SUM('Routentransaktion'[Fehlerhafte Menge]) |
+| Gesamtmenge           | SUMME('Produktionsauftrag'\[Gute Menge\]) + SUMME('Produktionsauftrag'\[Fehlerhafte Menge\]) |
+| Fehlerrate (ppm)        | IF( 'Routentransaktion'\[Verarbeitete Menge\] = 0, BLANK(), (SUMME('Routentransaktion '\[Fehlerhafte Menge\]) / 'Routentransaktion'\[Verarbeitete Menge\]) \* 1000000) |
+| Fehlerverhältnis (ppm) | IF( 'Routentransaktion'\[Gesamte gemischte Menge\] = 0, BLANK(), (SUMME('Routentransaktion '\[Fehlerhafte Menge\]) / 'Routentransaktion'\[Gesamte gemischte Menge\]\*)  1000000) |
+| Verarbeitungsmenge       | SUMME (Arbeitsplanbuchungen \[Gute Menge\] + SUMME Arbeitsplanbuchung\[Ausschussmenge\]) |
+| Gesamte gemischte Menge     | SUM('Produktionsauftrag'\[Gute Menge\]) + SUM('Routentransaktion'\[Fehlerhafte Menge\]) |
 
 Die folgenden wichtigen Dimensionen im Verkaufscube werden als Filter verwendet, um die aggregierten Messungen zu teilen, um eine größere Granularität zu erreichen und tiefere und analytische Einblicke bereitzustellen.
 
@@ -130,6 +130,4 @@ Die folgenden wichtigen Dimensionen im Verkaufscube werden als Filter verwendet,
 | Entitäten                  | Benutzerkennung und Name                                                   |
 | Ressourcen                 | Ressourcen-ID, Ressourcenname, Ressourcentyp und Ressourcengruppe |
 | Produkte                  | Produktnummer, Produktname, Artikelgruppenname und Artikel-ID         |
-
-
 

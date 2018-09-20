@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/09/2018
 
 Der Microsoft Power BI-Inhalt **Kostenmanagement** ist für Lagerbuchhalter oder Einzelpersonen in der Organisation bestimmt, die für den Status „Bestand” oder „Ressource in Bearbeitung (RIF)” zuständig oder daran interessiert sind oder die für die Analyse von standardmäßigen Kostenabweichungen zuständig oder daran interessiert sind.
 
-> [!Note]
+> [!NOTE]
 > Der Power BI-Inhalt **Kostenmanagement**, der in diesem Thema beschrieben wird, gilt für Dynamics 365 for Finance and Operations 8.0.
 > 
 > Das Power BI-Inhaltspaket **Kostenmanagement**, das auf AppSource veröffentlicht ist, wurde veraltet. Weitere Informationen zu dieser Veraltung finden Sie unter [Power BI-Inhaltspakete, die auf AppSource veröffentlich sind](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
@@ -171,7 +171,7 @@ Die folgende Tabelle bietet eine Übersicht der Visualisierungen im Power Bl-Inh
 |                                         | Top 10 Ressourcen nach ungünstiger Produktionsabweichung  |
 |                                         | Top 10 Ressourcen nach günstiger Produktionsabweichung    |
 
-### <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
+## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
 Daten aus Microsoft Dynamics 365 for Finance and Operations werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Kostenmanagement** zu füllen. Diese Daten werden als zusammengeführte Messungen dargestellt, die im Entitätsspeicher bereitgestellt werden, der eine Microsoft SQL Server-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie unter [Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
@@ -188,26 +188,25 @@ Die folgende Tabelle zeigt die wesentlichen berechneten Messungen im Power BI-In
 
 | Kennzahl                            | Herstellkostenkalkulation |
 |------------------------------------|-------------|
-| Anfangssaldo                  | Anfangssaldo = [Endsaldo]-[Nettoveränderung] |
-| Anfangssaldomenge             | Anfangssaldomenge = [Endsaldomenge]-[Nettoveränderungsmenge] |
-| Endsaldo                     | Endsaldo = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
-| Endsaldomenge                | Endsaldomenge = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
-| Nettoveränderung                         | Nettoänderung = SUM([AMOUNT]) |
-| Nettoveränderungsmenge                    | Nettoveränderungsmenge = SUM([QTY]) |
-| Lagerumschlagverhältnis nach Betrag | Lagerumschlagverhältnis nach Betrag = if(OR([Durchschnittlicher Bestandssaldo] \<= 0, [Verkaufter oder verbrauchter Bestand] \>= 0), 0, ABS([Verkaufter oder verbrauchter Bestand])/[Durchschnittlicher Bestandssaldo]) |
-| Durchschnittlicher Lagerbestandsaldo          | Duchschnittlicher Bestandssaldo = (([Endsaldo] + [Anfangssaldo]) / 2) |
-| Lagerbestandsverfügbarkeit in Tagen             | Lagerbestandsverfügbarkeit in Tagen = 365 / CostObjectStatementEntries[Lagerumschlagsverhältnis nach Betrag] |
-| Lagergenauigkeit                 | Lagerbestandsgenauigkeit nach Betrag = IF([Endsaldo] \<= 0, IF(OR([Gezählter Bestandsbetrag] \<\> 0, [Endsaldo] \< 0), 0, 1), MAX(0, ([Endsaldo] - ABS([Gezählter Bestandsbetrag]))/[Endsaldo])) |
+| Anfangssaldo                  | Anfangssaldo = \[Endsaldo\]-\[Nettoveränderung\] |
+| Anfangssaldomenge             | Anfangssaldomenge = \[Endsaldomenge\]-\[Nettoveränderungsmenge\] |
+| Endsaldo                     | Endsaldo = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
+| Endsaldomenge                | Endsaldomenge = CALCULATE(SUM(\[QTY\], FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| Nettoveränderung                         | Nettoänderung = SUM(\[AMOUNT\]) |
+| Nettoveränderungsmenge                    | Nettoveränderungsmenge = SUM(\[QTY\]) |
+| Lagerumschlagverhältnis nach Betrag | Lagerumschlagverhältnis nach Betrag = if(OR(\[Durchschnittlicher Bestandssaldo\] \<= 0, \[Verkaufter oder verbrauchter Bestand\]\> = 0), 0, ABS(\[Verkaufter oder verbrauchter Bestand\])/\[Durchschnittlicher Bestandssaldo\]) |
+| Durchschnittlicher Lagerbestandsaldo          | Duchschnittlicher Bestandssaldo = ((\[Endsaldo\]  + \[Anfangssaldo\]) / 2) |
+| Lagerbestandsverfügbarkeit in Tagen             | Lagerbestandsverfügbarkeit in Tagen = 365 / CostObjectStatementEntries\[Lagerumschlagsverhältnis nach Betrag\] |
+| Lagergenauigkeit                 | Lagerbestandsgenauigkeit nach Betrag = IF(\[Endsaldo\]\< = 0, IF(OR(\[Gezählter Bestandsbetrag\] \<\> 0, \[Endsaldo\] \< 0), 0, 1), MAX(0, (\[Endsaldo\] - ABS(\[Gezählter Bestandsbetrag\]))\[Endsaldo\])) |
 
 Die folgenden wesentlichen Dimensionen werden als Filter verwendet, um die aggregierten Messungen zu segmentieren, damit Sie eine stärkere Granularität sowie tiefere analytische Einblicke erlangen.
 
 
-|                         Entität                          |             Beispiele für Attribute              |
+| Entität                                                  | Beispiele für Attribute                          |
 |---------------------------------------------------------|-------------------------------------------------|
-|                        Produkte                         | Produktnummer, Produktname, Einheit, Artikelgruppen |
-| Kategoriehierarchien (Zugewiesen zur Rolle „Kostenmanagement”) |       Kategoriehierarchie, Kategorie-Ebene        |
-|                     Juristische Personen                      |               Name der juristischen Person                |
-|                    Steuerkalender                     |  Steuerkalender, Jahr, Quartal, Periode, Monat  |
-|                          Standort                           |        ID, Name, Adresse, Bundesland, Land        |
-
+| Produkte                                                | Produktnummer, Produktname, Einheit, Artikelgruppen |
+| Kategoriehierarchien (Zugewiesen zur Rolle „Kostenmanagement”) | Kategoriehierarchie, Kategorie-Ebene              |
+| Juristische Personen                                          | Name der juristischen Person                              |
+| Steuerkalender                                        | Steuerkalender, Jahr, Quartal, Periode, Monat   |
+| Standort                                                    | ID, Name, Adresse, Bundesland, Land               |
 

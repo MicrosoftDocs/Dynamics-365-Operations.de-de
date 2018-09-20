@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 44f017fc3460b83b730f2f7c909c6b88480dd918
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
 ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -42,7 +42,6 @@ Alle Beträge im Inhalt werden in der Systemwährung angezeigt. Sie können die 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
 
 Der **Methodenmanager** Power BI-Inhalt wird im **Projektmanagement**-Arbeitsbereich angezeigt.
-
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
 
@@ -85,8 +84,7 @@ In den folgenden Abschnitten werden die aggregierten Messungen, die in jeder Ent
 
 | Zentrale aggregierte Messungen | Feld                                             | Beschreibung |
 |---------------------------|---------------------------------------------------|-------------|
-| Anzahl von Projekten        | COUNTA(ProjectAccountingCube\_Projects[PROJEKTE]) | Die Anzahl verfügbarer Projekte. |
-
+| Anzahl von Projekten        | COUNTA(ProjectAccountingCube\_Projects\[PROJEKTE\]) | Die Anzahl verfügbarer Projekte. |
 
 ### <a name="entity-projectaccountingcubeforecasts"></a>Entität: ProjectAccountingCube\_Forecasts
 **Datenquelle:** ProjTransBudget
@@ -109,18 +107,16 @@ In den folgenden Abschnitten werden die aggregierten Messungen, die in jeder Ent
 
 | Zentrale aggregierte Messungen    | Feld | Beschreibung |
 |------------------------------|-------|-------------|
-| Kostenleistungsindex       | ProjectAccountingCube\_Projects[Ertragswert] ÷ ProjectAccountingCube\_Projects[Gesamte Istkosten der abgeschlossenen Aufgaben] | Die Berechnung das gesamte Ertragswerts geteilt durch die Summe der Istkosten. |
-| Zeitplan-Leistungsindex   | ProjectAccountingCube\_Projects[Ertragswert] ÷ ProjectAccountingCube\_Projects[Gesamte geplante Kosten der abgeschlossenen Aufgaben] | Die Berechnung das gesamte Ertragswerts geteilt durch die Summe der geplanten Istkosten. |
-| Prozentsatz der abgeschlossenen Arbeit | Prozentsatz der abgeschlossenen Arbeit = ProjectAccountingCube\_Projects[Summe der Istkosten der abgeschlossenen Aufgaben] ÷ (ProjectAccountingCube\_Projects[Summe der tatsächlichen Kosten der abgeschlossenen Aufgaben] + ProjectAccountingCube\_Projects[Gesamte geplante Kosten des Projekts] – ProjectAccountingCube\_Projects[Gesamte geplante Kosten der abgeschlossenen Aufgaben]) | Der Gesamtprozentsatz der abgeschlossenen Arbeit basierend auf der Gesamtsumme der Istkosten der abgeschlossenen Aufgaben und der geplanten Kosten des Projekts. |
-| Tatsächliches Verhältnis berechenbarer Stunden  | ProjectAccountingCube\_Projects[Gesamte tatsächliche, fakturierbare, nicht berechenbare Stunden des Projekts] ÷ (ProjectAccountingCube\_Projects[Gesamte tatsächliche, fakturierbare, nicht berechenbare Stunden des Projekts] + ProjectAccountingCube\_Projects[Gesamte tatsächliche, fakturierbare, nicht berechenbare Stunden des Projekts]) | Die gesamten tatsächlichen berechenbaren Stunden basierend auf den verwendeten und nicht berechenbaren Stunden. |
-| Ertragswert                 | ProjectAccountingCube\_Projects[Gesamte geplante Kosten des Projekts] × ProjectAccountingCube\_Projects[Prozentsatz der abgeschlossenen Arbeit] | Die gesamten geplanten Kosten multipliziert mit dem Prozentsatz der abgeschlossenen Arbeit. |
+| Kostenleistungsindex       | ProjectAccountingCube\_Projects\[Ertragswert\] ÷ ProjectAccountingCube\_Projects\[Gesamte Istkosten der abgeschlossenen Aufgaben\] | Die Berechnung das gesamte Ertragswerts geteilt durch die Summe der Istkosten. |
+| Zeitplan-Leistungsindex   | ProjectAccountingCube\_Projects\[Ertragswert\] ÷ ProjectAccountingCubeProjects\_\[Gesamte geplante Kosten der abgeschlossenen Aufgaben\] | Die Berechnung das gesamte Ertragswerts geteilt durch die Summe der geplanten Istkosten. |
+| Prozentsatz der abgeschlossenen Arbeit | Prozentsatz der abgeschlossenen Arbeit = ProjectAccountingCube\_Projects\[Summe der Istkosten der abgeschlossenen Aufgaben\] ÷ (ProjectAccountingCube\_Projects\[Summe der tatsächlichen Kosten der abgeschlossenen Aufgaben\] + ProjectAccountingCube\_Projects\[Gesamte geplante Kosten des Projekts\] – ProjectAccountingCube\_Projects\[Gesamte geplante Kosten der abgeschlossenen Aufgaben\]) | Der Gesamtprozentsatz der abgeschlossenen Arbeit basierend auf der Gesamtsumme der Istkosten der abgeschlossenen Aufgaben und der geplanten Kosten des Projekts. |
+| Tatsächliches Verhältnis berechenbarer Stunden  | ProjectAccountingCube\_Projects\[Gesamte tatsächliche, fakturierbare, nicht berechenbare Stunden des Projekts\] ÷ (ProjectAccountingCube\_\[Gesamte tatsächliche, fakturierbare, nicht berechenbare Stunden des Projekts\] + ProjectAccountingCube\_+ Projects\[Gesamte tatsächliche, fakturierbare, nicht berechenbare Stunden des Projekts\]) | Die gesamten tatsächlichen berechenbaren Stunden basierend auf den verwendeten und nicht berechenbaren Stunden. |
+| Ertragswert                 | ProjectAccountingCube\_Projects\[Gesamte geplante Kosten des Projekts\] × ProjectAccountingCube\_Projects\[Prozentsatz der abgeschlossenen Arbeit\] | Die gesamten geplanten Kosten multipliziert mit dem Prozentsatz der abgeschlossenen Arbeit. |
 
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Entität: ProjectAccountingCube\_TotalEstimatedCosts 
 **Datenquelle:** ProjTable
 
-
-|    Zentrale aggregierte Messungen    |        Feld        |                                          Beschreibung                                           |
-|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
+| Zentrale aggregierte Messungen       | Feld               | Beschreibung |
+|---------------------------------|---------------------|-------------|
 | Geplante Kosten für abgeschlossene Aktivität | Sum(TotalCostPrice) | Der Gesamteinstandspreis in Vorkalkulationen für alle Projektbuchungsarten mit abgeschlossenen Aufgaben. |
-
 

@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
 ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -54,7 +54,7 @@ Bevor Sie anfangen, müssen Sie den Power BI-Bericht erstellen oder erhalten, de
 Gehen Sie wie folgt vor, um eine .pbix-Datei als Visual Studio-Projektartefakt einzufügen.
 
 1. Erstellen Sie ein neues Projekt im entsprechenden Modell.
-2. Wählen Sie das Projekt im Projektmappen-Explorer aus, klicken Sie mit der rechten Maustaste und wählen Sie dann **Hinzufügen** > **Neues Element**.
+2. Wählen Sie das Projekt im Projektmappen-Explorer aus, klicken Sie mit der rechten Maustaste und wählen Sie dann **Hinzufügen**\>**Neues Element**.
 3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Operations-Artefakte** die Vorlage **Ressource** aus.
 4. Geben Sie einen Namen ein, der für die Referenzierung des Berichts in X++-Metadaten verwendet wird, und klicken Sie dann auf **Hinzufügen**.
 
@@ -77,7 +77,7 @@ Gehen Sie wie folgt vor, um die Formulardefinition für den Arbeitsbereich **Res
 
 1. Öffnen Sie den Formulardesigner, um die Designdefinition zu erweitern.
 2. In dieser Designdefinition wählen Sie das oberste Element aus, **Design | Muster: Arbeitsbereich operational**
-3. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Neu** > **Registerkarte**, um das neue Steuerelement **FormTabControl1** hinzuzufügen.
+3. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Neu**\>**Registerkarte**, um das neue Steuerelement **FormTabControl1** hinzuzufügen.
 4. Wählen Sie im Formulardesigner **FormTabControl1**.
 5. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Neue Registerkartenseite**, um eine neue Registerkartenseite hinzuzufügen.
 6. Geben Sie der Registerkarte einen sprechenden Namen, wie beispielsweise **Arbeitsbereich**.
@@ -86,12 +86,12 @@ Gehen Sie wie folgt vor, um die Formulardefinition für den Arbeitsbereich **Res
 9. Geben Sie der Registerkarte einen sprechenden Namen, wie beispielsweise **Analysen**.
 10. Wählen Sie im Formulardesigner **Analysen (Registerkartenseite)**.
 11. Setzen Sie die Legen Sie die **Überschrift**-Eigenschaft auf **Analysen**.
-12. Klicken Sie mit der rechten Maustaste auf das Steuerelement und wählen Sie dann **Neu** > **Gruppe**, um ein neues Formulargruppensteuerelement hinzuzufügen.
+12. Klicken Sie mit der rechten Maustaste auf das Steuerelement und wählen Sie dann **Neu**\>**Gruppe**, um ein neues Formulargruppensteuerelement hinzuzufügen.
 13. Geben Sie der Formulargruppe einen sprechenden Namen, wie beispielsweise **powerBIReportGroup**.
 14. Wählen Sie im Formulardesigner **PanoramaBody (Registerkarte)** und ziehen Sie das Steuerelement auf die Registerkarte **Arbeitsbereich**.
 15. In dieser Designdefinition wählen Sie das oberste Element aus, **Design | Muster: Arbeitsbereich operational**
 16. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Muster entfernen**.
-17. Klicken Sie erneut mit der rechten Maustaste und wählen Sie dann **Muster hinzufügen** > **Arbeitsbereich mit Registerkarten**.
+17. Klicken Sie erneut mit der rechten Maustaste und wählen Sie dann **Muster hinzufügen**\>**Arbeitsbereich mit Registerkarten**.
 18. Führen Sie einen Build aus, um Ihre Änderungen zu überprüfen.
 
 Die folgende Abbildung zeigt, wie das Design nach Anwendung dieser Änderungen aussieht.
@@ -116,7 +116,7 @@ Gehen Sie wie folgt vor, um eine Geschäftslogik hinzuzufügen, die das Steuerel
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
-        private boolean initReportControl = true;     
+        private boolean initReportControl = true;
         protected void initAnalyticalReport()
         {
             if (!initReportControl)
@@ -126,11 +126,11 @@ Gehen Sie wie folgt vor, um eine Geschäftslogik hinzuzufügen, die das Steuerel
             // Note: secure entry point into the Workspace's Analytics report
             if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
             {
-                FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+                // initialize the PBI report control using shared helper
                 PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
             }
             initReportControl = false;
-    }
+        }
         /// <summary>
         /// Initializes the form.
         /// </summary>
@@ -159,23 +159,22 @@ Dieser Abschnitt enthält Informationen über die Helferklasse, mit der ein Powe
 #### <a name="syntax"></a>Syntax
 ```
 public static void initializeReportControl(
-     str                 _resourceName,
-     FormGroupControl    _formGroupControl,
-     str                 _defaultPageName = '',
-     boolean             _showFilterPane = false,
-     boolean             _showNavPane = false,
-     List                _defaultFilters = new List(Types::Class))
+    str                 _resourceName,
+    FormGroupControl    _formGroupControl,
+    str                 _defaultPageName = '',
+    boolean             _showFilterPane = false,
+    boolean             _showNavPane = false,
+    List                _defaultFilters = new List(Types::Class))
 ```
 
 #### <a name="parameters"></a>Parameter
 
-|       Name       |                                                              Beschreibung                                                               |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|   resourceName   |                                                    Der Name der .pbix-Ressource.                                                     |
-| formGroupControl |                                    Das Formular-Gruppensteuerelement, auf das das Power BI-Berichtssteuerelement angewendet wird.                                     |
-| defaultPageName  |                                                         Der Standardseitenname.                                                         |
-|  showFilterPane  |   Ein boolescher Wert, der angibt, ob der Filterbereich angezeigt (<strong>true</strong>) oder ausgeblendet (<strong>false</strong>) werden soll.   |
-|   showNavPane    | Ein boolescher Wert, der angibt, ob der Navigationsbereich angezeigt (<strong>true</strong>) oder ausgeblendet (<strong>false</strong>) werden soll. |
-|  defaultFilters  |                                              Die Standardfilter für den Power BI-Bericht.                                              |
-
+| Name             | Beschreibung                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| resourceName     | Der Name der .pbix-Ressource.                                                                              |
+| formGroupControl | Das Formular-Gruppensteuerelement, auf das das Power BI-Berichtssteuerelement angewendet wird.                                              |
+| defaultPageName  | Der Standardseitenname.                                                                                       |
+| showFilterPane   | Ein boolescher Wert, der angibt, ob der Filterbereich angezeigt (**true**) oder ausgeblendet (**false**) werden soll.     |
+| showNavPane      | Ein boolescher Wert, der angibt, ob der Navigationsbereich angezeigt (**true**) oder ausgeblendet (**false**) werden soll. |
+| defaultFilters   | Die Standardfilter für den Power BI-Bericht.                                                                 |
 

@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -74,7 +74,7 @@ Sie können auch unseren Inhalt mit jeder beliebigen Suchmaschine finden. Um die
 Finance and Operations, Retail, und Talent nutzen alle das gleiche Inhaltsverzeichnis in der Dokumenten-Website. Damit können Kunden den Kontext des Themas anzuzeigen, in dem sie sich befinden. So kann das Filtersteuerelement über der Inhaltstabelle verwendet werden, um nach Themen zu suchen.
 
 ### <a name="follow-a-topic"></a>Einem Thema folgen
-Um einem Thema zu folgen, klicken Sie auf die +Follow-Schaltfläche im Kommentarfeld. Sie müssen sich anmelden, um dem Thema zu folgen. Siehe [Geben Sie uns einen Kommentar](#leave-us-a-comment) für Details.  
+Um einem Thema zu folgen, klicken Sie auf die +Follow-Schaltfläche im Kommentarfeld. Sie müssen sich anmelden, um dem Thema zu folgen. Siehe [Geben Sie uns einen Kommentar](#leave-us-feedback) für Details.  
 
 ### <a name="use-an-rss-feed"></a>Verwenden eines RSS-Feed
 Um ein RSS-Feed aller Aktualisierungen des Unified Operations-Inhalts zu abonnieren, verwenden Sie den folgenden Link von einem Browser aus, der RSS-Feeds unterstützt, wie beispielsweise Internet Explorer, oder einen RSS-Feedmanager: 

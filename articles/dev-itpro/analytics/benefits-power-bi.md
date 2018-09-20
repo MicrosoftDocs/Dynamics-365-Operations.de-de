@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,13 +39,12 @@ Der **Vorteile**-Inhalt für Power BI wird im Arbeitsbereich **Vorteilsverwaltun
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
 Die Berichte, die im **Vorteile**-Inhalt von Power BI enthalten sind, haben Diagramme und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
 
-| Bericht                       | Inhalt                                                                                       |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| Überblick der Vorteils-Registrierung  | Die meisten und am wenigsten registrierten Pläne, Registrierung durch Mitarbeitergruppe und ausgewählte Vorteilsplanoptionen |
-| Mitarbeitervergütungen            | Mitarbeiterregistrierung nach ausgewählten Vorteilen                                                        |
-                                                                                             
-Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+| Bericht                      | Inhalt                                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|
+| Überblick der Vorteils-Registrierung | Die meisten und am wenigsten registrierten Pläne, Registrierung durch Mitarbeitergruppe und ausgewählte Vorteilsplanoptionen |
+| Mitarbeitervergütungen           | Mitarbeiterregistrierung nach ausgewählten Vorteilen                                                        |
 
+Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 Die folgenden Daten werden verwendet, um die Berichte im **Vorteile**-Inhalt von Power BI zu füllen. Diese Tabelle zeigt die Entitäten, auf denen der Inhalt basiert.
@@ -72,6 +71,4 @@ Die folgenden Daten werden verwendet, um die Berichte im **Vorteile**-Inhalt von
 | Mitarbeitername            | Vorname, Nachname, vollständiger Name                                                                       | Aktueller Mitarbeiter, ausgeschiedener Mitarbeiter, Mitarbeitertrend |
 | Mitarbeitertitel           | Titel- und Dienstalter                                                                                   | Aktueller Mitarbeiter, ausgeschiedener Mitarbeiter, Mitarbeitertrend |
 | Mitarbeitertrend           | Arbeitskräfte im Zeitverlauf, Mitarbeiterzahl, Unternehmen und Position                                                        | Unternehmen, Vergütung, geografischer Standort, Mitarbeitername, Vorgesetzter, Kalender-Gegenkonto, Datum Mitarbeitertitel, Demographie, Beschäftigung, Stelle, Vergütungen |
-
-
 

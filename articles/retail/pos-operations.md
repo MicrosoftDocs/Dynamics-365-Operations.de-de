@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -49,6 +49,8 @@ Hinweis: Die Arbeitsgänge unten gelten für die neueste Version von Microsoft D
 | 707 | Gerät aktivieren | Aktiviert das aktuelle Gerät, indem Sie einen authentifizierten Benutzer ermöglichen, Verbindungsinformationen verfügbar zu machen und eine Gerät und Register Kennung zuzuweisen | Nr. | Nr. | Nr. | Nr. | Nr. |
 | 134 | Zugehörigkeit hinzufügen | Hinzufügen einer vorausgewählten Zugehörigkeit zu einer Transaktion. Wählen Sie die Zugehörigkeit auf der Seite **-Schaltflächeneigenschaften**. | Ja | Ja | Nr. | Ja | Nr. |
 | 135 | Zugehörigkeit aus Liste hinzufügen | Hinzufügen einer Zugehörigkeit durch Auswahl aus einer Liste. | Ja | Ja | Ja | Ja | Nr. |
+| 137 | Hinzufügen einer Zugehörigkeit zu einem Debitor | Hinzufügen einer Zugehörigkeit einem Debitor auf der Seite **Debitorendetails**. | Nr. | Nr. | Nr. | Ja | Nr. |
+| 138 | Zugehörigkeit von Debitor entfernen | Zugehörigkeit eines Debitor auf der Seite **Debitorendetails** entfernen. | Nr. | Nr. | Nr. | Ja | Nr. |
 | 643 | Couponcode hinzufügen | Einen Coupon hinzufügen durch Eingabe seines Codes in POS. | Ja | Ja | Nr. | Ja | Nr. |
 | 117 | Treuekarte hinzufügen | Fordern Sie den Benutzer auf, eine Treuekartennummer einzugeben, die der aktuellen Buchung hinzugefügt wird. | Ja | Ja | Nr. | Ja | Nr. |
 | 136 | Seriennummer hinzufügen | Dieser Arbeitsgang erlaubt dem Benutzer, eine Seriennummer für das derzeit ausgewählte Produkt anzugeben. | Ja | Ja | Nr. | Ja | Nr. |

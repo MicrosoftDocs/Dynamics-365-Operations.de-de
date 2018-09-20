@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a271887c4d2cfe4d0ee6518482dc4ebe407ebe56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -63,8 +63,8 @@ Eine Geschäftseinheit eines Datenmodells wird als Container (Datensatz) dargest
 
 Eine einzelne Datenmodellkomponente kann mehrere Hierarchien von domänenspezifischen Geschäftsentitäten enthalten. Sie kann auch Modellzuordnungen enthalten, die einen berichtspezifischen Datenfluss bei Laufzeit unterstützen. Die Hierarchien unterscheiden sich durch einen einzelnen Datensatz, der als Stamm zur Modellzuordnung ausgewählt wurde. Beispielsweise unterstützt das Datenmodell des Zahlungsdomänenbereichs möglicherweise die folgenden Zuordnungen:
 
-- Unternehmen > Kreditor > Zahlungsbuchungen der Kreditorendomäne
-- Debitor > Unternehmen > Zahlungsbuchungen der Debitorendomäne
+- Unternehmen -\> Kreditor -\> Zahlungsbuchungen der Kreditorendomäne
+- Debitor -\> Unternehmen -\> Zahlungsbuchungen der Debitorendomäne
 
 Beachten Sie, dass Geschäftsentitäten (z. B. Unternehmens- und Zahlungstransaktionen) nur einmal erstellt werden. SIe werden von anderen Zuordnungen wiederverwendet.
 
@@ -74,7 +74,7 @@ Eine Modellzuordnung, die ausgehende elektronische Dokumente unterstützt, hat d
 - Sie unterstützt Benutzereingabeparameter, die als Datenquellen für ein Datenmodell definiert werden, wenn einige Daten in der Laufzeit angegeben werden müssen.
 - Sie unterstützt die Umwandlung von Daten aus Finance and Operations in die erforderlichen Gruppen. Sie können damit zudem filtern, sortieren und Daten summieren sowie logisch berechnete Felder anhängen, die mit Formeln entworfen werden, die Microsoft Excel-Formeln ähneln, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)).
 
-[![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
+[![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 Eine Zuordnung, die vorbildliche eingehende elektronische Dokumente unterstützt, umfasst die folgenden Funktionen:
 
@@ -175,7 +175,7 @@ Benötigte **LCS-Projekt**-Repositories können einzeln für jeden Konfiguration
 ## <a name="supported-scenarios"></a>Unterstützte Szenarien
 ### <a name="building-a-data-model"></a>Erstellen eines Datenmodells
 
-ER bietet einen Modell-Designer an, den Sie verwenden können, um ein Datenmodell für eine bestimmte Geschäftsdomäne zu erstellen. Alle domänenspezifischen Geschäftsentitäten und deren Beziehungen untereinander, können in einem Datenmodell als hierarchische Struktur dargestellt werden. Die folgende Abbildung zeigt ein Beispiel für diesen Datenmodelltyp (das Zahlungsdomänendatenmodell). 
+ER bietet einen Modell-Designer an, den Sie verwenden können, um ein Datenmodell für eine bestimmte Geschäftsdomäne zu erstellen. Alle domänenspezifischen Geschäftsentitäten und deren Beziehungen untereinander, können in einem Datenmodell als hierarchische Struktur dargestellt werden. Die folgende Abbildung zeigt ein Beispiel für diesen Datenmodelltyp (das Zahlungsdomänendatenmodell).
 
 [![Zahlungsdomänendatenmodell](./media/ER-overview-04.png)](./media/ER-overview-04.png)
 
@@ -185,19 +185,18 @@ Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufga
 
 Ein Datenmodellinhalt (Etiketten und Beschreibungen) kann in andere Sprachen übersetzt werden, die von Dynamics 365 for Finance and Operations unterstützt werden. Sie möchten möglicherweise Datenmodellinhalte aus folgenden Gründen übersetzen:
 
--   Um Inhalte für fremdsprachige Formatdesigner, die das Datenmodell zur Datenzuordnung von Formatkomponenten verwenden, zur Entwurfszeit verständlicher zu machen.
--   Um Inhalte zur Laufzeit benutzerfreundlicher zu machen, indem Befehle und Hilfen für Laufzeitparameter sowie konfigurierte Prüfungsnachrichten (Fehler und Warnungen) in der bevorzugten Sprache des angemeldeten Benutzers angezeigt werden.
+- Um Inhalte für fremdsprachige Formatdesigner, die das Datenmodell zur Datenzuordnung von Formatkomponenten verwenden, zur Entwurfszeit verständlicher zu machen.
+- Um Inhalte zur Laufzeit benutzerfreundlicher zu machen, indem Befehle und Hilfen für Laufzeitparameter sowie konfigurierte Prüfungsnachrichten (Fehler und Warnungen) in der bevorzugten Sprache des angemeldeten Benutzers angezeigt werden.
 
-Die folgende Abbildung zeigt ein Beispiel, in dem Datenmodellinhalte von Englisch auf Japanisch übersetzt werden können. 
+Die folgende Abbildung zeigt ein Beispiel, in dem Datenmodellinhalte von Englisch auf Japanisch übersetzt werden können.
 
 [![Datenmodellinhalt auf Englisch](./media/ER-overview-05.png)](./media/ER-overview-05.png)
 
 [![Datenmodellinhalt ins Japanische übersetzt](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
-
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Konfigurieren von Datenmodellzuordnungen für ausgehende Dokumente
 
-ER stellt einen Modellzuordnungsdesigner bereit, mit dem der Benutzer Datenmodelle, die zu bestimmten Finance and Operations-Datenquellen erstellt wurden, zuordnen kann. Auf Grundlage die Zuordnung werden die Daten zur Laufzeit aus ausgewählten Datenquellen in das Datenmodell importiert. Das Datenmodell wird dann als abstrakte Datenquelle der ER-Formate verwendet, die ausgehende elektronische Dokumente erstellen. Die folgende Abbildung zeigt ein Beispiel einer solchen Typs der Datenmodellzuordnung (die **Kreditübertragung (SEPA)**-Modellzuordnung des Zahlungsdomänendatenmodells). 
+ER stellt einen Modellzuordnungsdesigner bereit, mit dem der Benutzer Datenmodelle, die zu bestimmten Finance and Operations-Datenquellen erstellt wurden, zuordnen kann. Auf Grundlage die Zuordnung werden die Daten zur Laufzeit aus ausgewählten Datenquellen in das Datenmodell importiert. Das Datenmodell wird dann als abstrakte Datenquelle der ER-Formate verwendet, die ausgehende elektronische Dokumente erstellen. Die folgende Abbildung zeigt ein Beispiel einer solchen Typs der Datenmodellzuordnung (die **Kreditübertragung (SEPA)**-Modellzuordnung des Zahlungsdomänendatenmodells).
 
 [![Beispiel einer Datenmodellzuordnung](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
@@ -210,13 +209,13 @@ ER stellt einen Modellzuordnungsdesigner bereit, mit dem der Benutzer Datenmodel
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Speichern einer entworfenen Modellkomponente als Modellkonfiguration
 
-Mit ER kann ein entworfenes Datenmodell zusammen mit den entsprechenden Datenzuordnungen als Modellkonfiguration der aktuellen Finance and Operations-Instanz gespeichert werden. Die folgende Abbildung zeigt ein Beispiel für diesen Typ der Datenmodellkonfiguration (die Zahlungsmodellkonfiguration). 
+Mit ER kann ein entworfenes Datenmodell zusammen mit den entsprechenden Datenzuordnungen als Modellkonfiguration der aktuellen Finance and Operations-Instanz gespeichert werden. Die folgende Abbildung zeigt ein Beispiel für diesen Typ der Datenmodellkonfiguration (die Zahlungsmodellkonfiguration).
 
 Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **Er-Datenmodell den ausgewählten Datenquellen zuordnen** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
 
 ### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Erstellen eines Formats, das ein Datenmodell als Basis verwendet
 
-ER unterstützt einen Formatdesigner, um ein Format eines elektronischen Dokuments für eine ausgewählte Geschäftsdomäne herzustellen, durch Auswählen der Modellkomponente als Basis. Der gleiche ER-Formatdesigner ermöglicht die Zuordnung eines erstellen Formats zu einer Datenmodellzuordnung einer ausgewählten Domäne als Datenquelle. Die folgende Abbildung zeigt ein Beispiel für diesen Formattyp (die Formatkonfiguration, die das **BACS**-Zahlungsformat für Großbritannien unterstützt). 
+ER unterstützt einen Formatdesigner, um ein Format eines elektronischen Dokuments für eine ausgewählte Geschäftsdomäne herzustellen, durch Auswählen der Modellkomponente als Basis. Der gleiche ER-Formatdesigner ermöglicht die Zuordnung eines erstellen Formats zu einer Datenmodellzuordnung einer ausgewählten Domäne als Datenquelle. Die folgende Abbildung zeigt ein Beispiel für diesen Formattyp (die Formatkonfiguration, die das **BACS**-Zahlungsformat für Großbritannien unterstützt).
 
 [![Beispiel eines Formats, das ein Datenmodell als Basis verwendet](./media/ER-overview-09.png)](./media/ER-overview-09.png)
 
@@ -240,7 +239,7 @@ Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufga
 - [Vorlage eines Zahlungsberichtes (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Begrenzte Vorlage eines Zahlungsberichtes (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Erstellen einer Konfiguration, um Daten von eingehenden elektronischen Dokumenten zu importieren  
+### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Erstellen einer Konfiguration, um Daten von eingehenden elektronischen Dokumenten zu importieren
 Der ER-Format-Designer kann verwendet werden, um ein elektronisches Dokument zu beschreiben, für das Datenimport in XML- oder Textformat geplant wird. Das entworfene Format wird verwendet, um ein eingehendes Dokument zu analysieren. Der ER-Formatzuordnungsdesigner kann verwendet werden, um die Bindung der Elemente des entworfenen Formats zum Datenmodell zu definieren. Die folgenden Abbildungen zeigen ein Beispiel für diese Formattypen und Formatzuordnung. In diesem Beispiel werden NETS-Bankauszüge, die Kreditorenzahlungsdetails im Textformat enthalten, importiert.
 
 [![ER-Formatdesigner](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -260,7 +259,7 @@ Mit ER kann ein entworfenes Format zusammen mit den konfigurierten Datenzuordnun
 
 ### <a name="configuring-finance-and-operations-to-start-to-use-a-created-format-internally"></a>Finance and Operations konfigurieren, um mit der internen Verwendung eines erstellten Formats zu beginnen
 
-Finance and Operations kann so konfiguriert werden, dass die elektronische Berichtsgenerierung unter Verwendung eines erstellten Formats gestartet wird. Der Verweis auf die erstellte Formatkonfiguration sollte in den Einstellungen einer spezifischen Domäne definiert sein. Wenn Sie beispielsweise eine ER-Formatkonfigurierung für elektronische Kreditorenzahlungen im BACS-Format verwenden wollen, sollte auf die Formatkonfiguration in bestimmten Zahlungsmethoden verwiesen werden, wie in den folgenden Abbildungen gezeigt 
+Finance and Operations kann so konfiguriert werden, dass die elektronische Berichtsgenerierung unter Verwendung eines erstellten Formats gestartet wird. Der Verweis auf die erstellte Formatkonfiguration sollte in den Einstellungen einer spezifischen Domäne definiert sein. Wenn Sie beispielsweise eine ER-Formatkonfigurierung für elektronische Kreditorenzahlungen im BACS-Format verwenden wollen, sollte auf die Formatkonfiguration in bestimmten Zahlungsmethoden verwiesen werden, wie in den folgenden Abbildungen gezeigt
 
 [![BACS (Großbritannien ) Formatkonfiguration](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -367,15 +366,9 @@ ER ermöglicht die automatische Übernahme von Änderungen der neuesten Version 
 |                                                  |                       | Kreditorenrechnungserklärung (IS)                   | "Kreditorenrechnungserklärung"-Format für Island                      |
 |                                                  |                       | Bericht 'Kreditorenrechnungserklärung' (IS)            | "Kreditorenrechnungserklärung"-Bericht für Island                      |
 
-
-
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Lokalisierungsanforderungen – Erstellen einer elektronischen Berichtskonfiguration](electronic-reporting-configuration.md)
 
 [Verwalten des Lebenszyklus der elektronischen Berichterstellung](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-
 

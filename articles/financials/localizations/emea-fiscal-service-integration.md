@@ -17,10 +17,10 @@ ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 04608cee8639258af1502830b60d4afd9e841e8a
+ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.openlocfilehash: 308f46ae4afef1eb88548bdebdf8215aabb87442
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/14/2018
 
 ---
 
@@ -183,7 +183,7 @@ In diesem Abschnitt werden Sie Schritt für Schritt durch die folgenden Geschäf
 ### <a name="register-an-automatically-posted-cod-payment-for-a-free-text-invoice-and-print-a-cash-receipt"></a>Registrieren einer automatisch gebuchten Zahlung bei Lieferung für eine Freitextrechnung und Drucken eines Barbelegs
 
 1. Wählen Sie **Debitoren** &gt; **Freitextrechnungen** &gt; **Alle Freitextrechnungen** aus.
-2. Dient zum Erstellen einer Freitextrechnung. Weitere Informationen finden Sie unter [Erstellen einer Freitextrechnung](../accounts-receivable/tasks/create-free-text-invoice.md).
+2. Dient zum Erstellen einer Freitextrechnung. Weitere Informationen finden Sie unter [Erstellen einer Freitextrechnung](../accounts-receivable/create-free-text-invoice-new.md). 
 3. Wählen Sie im Inforegister **Zahlung** eine Zahlungsmethode aus, die als Zahlungsmethode für die Kasse eingerichtet ist.
 4. Wählen Sie Zahlungsbedingungen aus, die für die Zahlung bei Lieferung eingerichtet sind.
 5. Wählen Sie **Buchen** aus.

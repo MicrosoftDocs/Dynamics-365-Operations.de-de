@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 18ae41c3c1b19edc2d56a7e3480890c8aea28054
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -32,46 +32,49 @@ ms.lasthandoff: 08/08/2018
 
 Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Spalte eines Berichts angibt. Wie auch Zeilendefinitionen können grundlegende Spaltendefinitionen in mehreren Berichten verwendet werden.
 
-<a name="create-and-modify-a-column-definition"></a>Erstellen und Ändern einer Spaltendefinition
--------------------------------------
+## <a name="create-and-modify-a-column-definition"></a>Erstellen und Ändern einer Spaltendefinition
 
 Eine Spaltendefinition kann zwei bis 255 Spalten enthalten.
 
 ### <a name="create-a-column-definition"></a>Erstellen einer Spaltendefinition
 
-1.  Klicken Sie im Berichts-Designer im Navigationsbereich auf **Spaltendefinitionen** .
-2.  Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie dann auf **Spaltendefinitionen**.
-3.  Fügen Sie den Inhalt der Spaltendefinition hinzu.
+1. Klicken Sie im Berichts-Designer im Navigationsbereich auf **Spaltendefinitionen** .
+2. Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie dann auf **Spaltendefinitionen**.
+3. Fügen Sie den Inhalt der Spaltendefinition hinzu.
 
 ### <a name="open-a-column-definition"></a>Öffnen einer Spaltendefinition
 
-1.  Klicken Sie im Berichts-Designer im Navigationsbereich auf **Spaltendefinitionen** .
-2.  Doppelklicken Sie auf eine Spaltendefinition, um sie zu öffnen.
+1. Klicken Sie im Berichts-Designer im Navigationsbereich auf **Spaltendefinitionen** .
+2. Doppelklicken Sie auf eine Spaltendefinition, um sie zu öffnen.
 
 ### <a name="add-a-column-to-a-column-definition"></a>Hinzufügen einer Spalte zu einer Spaltendefinition
 
-1.  Im Berichts-Designer klicken Sie auf die **Spaltendefinitionen** und öffnen dann die Spaltendefinition, um sie zu ändern.
-2.  Wählen Sie die Spalte aus, in die die neue Spalte eingefügt werden soll.
-3.  Klicken Sie im Menü **Bearbeiten** auf **Spalte einfügen**. Die neue Spalte erscheint links von der ausgewählten Spalte.
+1. Im Berichts-Designer klicken Sie auf die **Spaltendefinitionen** und öffnen dann die Spaltendefinition, um sie zu ändern.
+2. Wählen Sie die Spalte aus, in die die neue Spalte eingefügt werden soll.
+3. Klicken Sie im Menü **Bearbeiten** auf **Spalte einfügen**. Die neue Spalte erscheint links von der ausgewählten Spalte.
 
 ### <a name="delete-a-column-from-a-column-definition"></a>Löschen einer Spalte aus einer Spaltendefinition
 
-1.  Klicken Sie im Berichts-Designer auf **Spaltendefinitionen**, und öffnen Sie dann die zu ändernde Spaltendefinition.
-2.  Wählen Sie die zu löschende Spalte aus.
-3.  Klicken Sie im Menü **Bearbeiten** auf **Spalte löschen**.
+1. Klicken Sie im Berichts-Designer auf **Spaltendefinitionen**, und öffnen Sie dann die zu ändernde Spaltendefinition.
+2. Wählen Sie die zu löschende Spalte aus.
+3. Klicken Sie im Menü **Bearbeiten** auf **Spalte löschen**.
 
 ## <a name="contents-of-a-column-definition"></a>Inhalt einer Spaltendefinition
 Eine Spaltendefinition enthält die folgenden Informationen:
 
--   Eine Spalte der Zeilendefinitionsbeschreibungen
--   Betragsspalten, die Daten aus den Finanzdaten, einem Microsoft Excel-Arbeitsblatt oder Berechnungen an anderen Daten in der Spaltendefinition enthalten
--   Formatierungsspalten
--   Attributspalten
+- Eine Spalte der Zeilendefinitionsbeschreibungen
+- Betragsspalten, die Daten aus den Finanzdaten, einem Microsoft Excel-Arbeitsblatt oder Berechnungen an anderen Daten in der Spaltendefinition enthalten
+- Formatierungsspalten
+- Attributspalten
 
 Diese Informationen erscheinen in den folgenden Bereichen in der Spaltendefinition:
 
--   Der Überschriftenbereich der Spaltendefinition enthält den Überschriftentext und die Formatierung, die im Bericht erscheint. Eine Überschrift kann für eine einzelne Datenspalte gelten, auf mehrere Spalten ausgebreitet werden oder auf bedingter Basis für Spalten gelten. Die Spaltendefinition kann beliebig viele Spaltenüberschriftszeilen enthalten. **Hinweis:** Spaltenkopfzeilen gelten für jede Datenspalte im Bericht. Berichtsüberschriften gelten für den ganzen Bericht. Sie definieren Berichtskopfzeilen auf der Registerkarte **Kopf- und Fußzeilen** der Berichtsdefinition.
--   Spaltendetailzeilen sind die Zeilen unter den Überschriftszeilen in der Spaltendefinition. In Spaltendetailzeilen werden die Informationen definiert, die im Bericht berücksichtigt werden. In der folgenden Tabelle werden die Spaltendetailzeilen aufgeführt und beschrieben.
+- Der Überschriftenbereich der Spaltendefinition enthält den Überschriftentext und die Formatierung, die im Bericht erscheint. Eine Überschrift kann für eine einzelne Datenspalte gelten, auf mehrere Spalten ausgebreitet werden oder auf bedingter Basis für Spalten gelten. Die Spaltendefinition kann beliebig viele Spaltenüberschriftszeilen enthalten.
+
+    > [!NOTE]
+    > Spaltenüberschriften gelten für jede Datenspalte im Bericht. Berichtsüberschriften gelten für den ganzen Bericht. Sie definieren Berichtskopfzeilen auf der Registerkarte **Kopf- und Fußzeilen** der Berichtsdefinition.
+
+- Spaltendetailzeilen sind die Zeilen unter den Überschriftszeilen in der Spaltendefinition. In Spaltendetailzeilen werden die Informationen definiert, die im Bericht berücksichtigt werden. In der folgenden Tabelle werden die Spaltendetailzeilen aufgeführt und beschrieben.
 
     | Name der Spaltendetailzeile                                                | Beschreibung                                                                                            |
     |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -89,7 +92,10 @@ Diese Informationen erscheinen in den folgenden Bereichen in der Spaltendefiniti
     | Ausrichtung                                                         | Richten Sie die Beschreibung, die in der Zeilendefinition angegeben ist, linksbündig, mittig oder rechtsbündig aus. |
 
 ## <a name="column-restrictions-in-a-column-definition"></a>Spalteneinschränkungen in einer Spaltendefinition
-Sie können Spalteneinschränkungen verwenden, um anzugeben, wie eine Spaltendefinition Daten verwendet oder Informationen berechnet. Sie können auch eine Berichtsspalte auf eine spezifische Einheit oder spezifische Datumsangaben beschränken. **Hinweis:** Ein Code für **Spalteneinschränkung** setzt alle Konflikt verursachende Einstellungen außer Kraft, die der Zeilendefinition zugewiesen ist.
+Sie können Spalteneinschränkungen verwenden, um anzugeben, wie eine Spaltendefinition Daten verwendet oder Informationen berechnet. Sie können auch eine Berichtsspalte auf eine spezifische Einheit oder spezifische Datumsangaben beschränken.
+
+> [!NOTE]
+> Ein Code zur **Spalteneinschränkung** hat Vorrang vor jeglichen anders lautenden Einstellungen in der Zeilendefinition.
 
 ### <a name="column-restrictions-cell"></a>Spalteneinschränkungszelle
 
@@ -97,32 +103,32 @@ Die Zelle **Spalteneinschränkungen** kann Codes umfassen, die Informationen, wi
 
 #### <a name="add-a-column-restriction-in-a-column-definition"></a>Hinzufügen einer Spalteneinschränkung in eine Spaltendefinition
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle **Spalteneinschränkungen** für die einzuschränkende Spalte.
-3.  Wählen Sie im Dialogfeld **Spalteneinschränkungen** eine oder mehrere Codes aus der Liste aus, und klicken Sie anschließend auf **OK**.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie auf die Zelle **Spalteneinschränkungen** für die einzuschränkende Spalte.
+3. Wählen Sie im Dialogfeld **Spalteneinschränkungen** eine oder mehrere Codes aus der Liste aus, und klicken Sie anschließend auf **OK**.
 
 ### <a name="column-restriction-codes"></a>Spalteneinschränkungscodes
 
 In der folgenden Tabelle werden die Spalteneinschränkungscodes beschrieben.
 
-| Spalteneinschränkungscode | Beschreibung                                                                                                                                                                                                                                                                                                                             |
-|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UU                      | Unterdrücken Sie den Unterstrich für eine Spalte, wo entweder ein Unterstrichbefehl (**---**) oder ein doppelter Unterstrichbefehl (**===**) in die Zeilendefinition eingegeben wird. Beispielsweise sollten Sie keine Beträge unterstreichen, die von einer Prozentberechnung produziert werden.                                                                        |
-| SU                      | Unterdrücken Sie Summen und zeigen Sie in dieser Spalte nur Details an (z. B. in statistischen Spalten).                                                                                                                                                                                                                                      |
-| DU                      | Unterdrücken Sie Details, sodass nur **TOT** und **CAL**-Zeilen (von der Zeilendefinition) in der Spalte angezeigt werden.                                                                                                                                                                                                                              |
-| DR                      | Beschränken Sie die Beträge in einer **FD**-Spalte auf die Sollbeträge.                                                                                                                                                                                                                                                                              |
-| CR                      | Beschränken Sie die Beträge in einer **FD**-Spalte auf die Habenbeträge.                                                                                                                                                                                                                                                                             |
-| ADJ                     | Schränken Sie die Beträge in der Spalte auf Zeitraumberichtigungsbeträge (falls verfügbar) ein.                                                                                                                                                                                                                                        |
-| XAD                     | Schränken Sie die Beträge in der Spalte so ein, dass Zeitraumberichtigungsbeträge (falls verfügbar) ausgeschlossen werden.                                                                                                                                                                                                                                                     |
-| PT                      | Schränken Sie die Beträge in der Spalte so ein, sodass nur gebuchte Posten enthalten sind, wenn diese verfügbar sind.                                                                                                                                                                                                                 |
-| UPT                     | Schränken Sie die Beträge in der Spalte so ein, sodass nur nicht gebuchte Posten enthalten sind, wenn diese verfügbar sind. **Hinweis:** Nicht alle Daten unterstützen nicht gebuchte Transaktionen. Weitere Informationen finden Sie im [Datenintegrationshandbuch](http://go.microsoft.com/fwlink/?LinkID=162565) für Ihr Microsoft Dynamics ERP-System. |
+| Spalteneinschränkungscode | Beschreibung |
+|-------------------------|-------------|
+| UU                      | Unterdrücken Sie den Unterstrich für eine Spalte, wo entweder ein Unterstrichbefehl (**---**) oder ein doppelter Unterstrichbefehl (**===**) in die Zeilendefinition eingegeben wird. Beispielsweise sollten Sie keine Beträge unterstreichen, die von einer Prozentberechnung produziert werden. |
+| SU                      | Unterdrücken Sie Summen und zeigen Sie in dieser Spalte nur Details an (z. B. in statistischen Spalten). |
+| DU                      | Unterdrücken Sie Details, sodass nur **TOT** und **CAL**-Zeilen (von der Zeilendefinition) in der Spalte angezeigt werden. |
+| DR                      | Beschränken Sie die Beträge in einer **FD**-Spalte auf die Sollbeträge. |
+| CR                      | Beschränken Sie die Beträge in einer **FD**-Spalte auf die Habenbeträge. |
+| ADJ                     | Schränken Sie die Beträge in der Spalte auf Zeitraumberichtigungsbeträge (falls verfügbar) ein. |
+| XAD                     | Schränken Sie die Beträge in der Spalte so ein, dass Zeitraumberichtigungsbeträge (falls verfügbar) ausgeschlossen werden. |
+| PT                      | Schränken Sie die Beträge in der Spalte so ein, sodass nur gebuchte Posten enthalten sind, wenn diese verfügbar sind. |
+| UPT                     | Schränken Sie die Beträge in der Spalte so ein, sodass nur nicht gebuchte Posten enthalten sind, wenn diese verfügbar sind.<blockquote>[!NOTE] Nicht gebuchte Posten werden nicht von allen Datenanbietern unterstützt. Weitere Informationen finden Sie im <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>Datenintegrationshandbuch</a> für Ihr Microsoft Dynamics ERP-System.</blockquote> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Einschränken einer Spalte auf eine Berichtseinheit
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle **Berichtseinheit** für die einzuschränkende Spalte.
-3.  Wählen Sie im Dialogfeld **Auswahl der Berichtseinheit** in der Liste **Berichtsstruktur** eine Berichtserstellungsbaumstruktur aus.
-4.  Erweitern oder reduzieren Sie die Liste der Einheiten, wählen Sie eine Berichtseinheit aus, und klicken Sie anschließend auf **OK**.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie auf die Zelle **Berichtseinheit** für die einzuschränkende Spalte.
+3. Wählen Sie im Dialogfeld **Auswahl der Berichtseinheit** in der Liste **Berichtsstruktur** eine Berichtserstellungsbaumstruktur aus.
+4. Erweitern oder reduzieren Sie die Liste der Einheiten, wählen Sie eine Berichtseinheit aus, und klicken Sie anschließend auf **OK**.
 
 ## <a name="format-column-headers"></a>Formatieren Sie Spaltenüberschriften
 Sie können die Überschriften, die am oberen Rand der Spalten in einem Bericht angezeigt werden, hinzufügen, ändern und löschen. Sie können bedingte umfassende Spaltenüberschriften basierend auf dem Feld **Periode** aus den Spaltendefinitionen und dem Feld **Basiszeitraum** aus den Berichtsdefinitionen konfigurieren. Mit dem Feature "Basiszeitraum" können Sie beim Erstellen von Berichten mit rollenden Prognosen Zeit sparen.
@@ -131,91 +137,97 @@ Sie können die Überschriften, die am oberen Rand der Spalten in einem Bericht 
 
 Sie können das Dialogfeld **Spaltenüberschrift** verwenden, um Überschriften hinzuzufügen, zu ändern und zu löschen, die am oberen Rand der Spalten in einem Bericht angezeigt werden. In der folgenden Tabelle werden die Felder im Dialogfeld **Spaltenüberschriften** beschrieben.
 
-| Feld                 | Beschreibung                                                                                                                                                                                                                                                                                                              |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Feld                 | Beschreibung |
+|-----------------------|-------------|
 | Spaltenüberschriftstext    | Dieser Text wird in der Spaltenüberschrift angezeigt. Sie können Text direkt in dieses Feld eingeben, oder auf **AutoText einfügen** klicken, um eine Option auszuwählen, die die Spaltenüberschrift jedes Mal aktualisiert, wenn der Bericht generiert wird. Um mehrere Autotextcodes einzubeziehen, klicken Sie erneut auf **AutoText einfügen**, und klicken Sie anschließend auf einen anderen Code in der Liste. |
-| Formatoptionen        | Wenden Sie Formatierungen für Spaltenüberschriften an, beispielsweise Rahmen oder Unterstreichung.                                                                                                                                                                                                                                                           |
-| Zuweisen von Zuweisen bis | Definieren Sie die Spalte oder die Spalten, für die der Überschriftstext gilt.                                                                                                                                                                                                                                                            |
-| Ausrichtung         | Geben Sie an, wie der Spaltenüberschrifttext für die Spalte oder den Bereich der Spalten ausgerichtet sein soll, die in den Feldern **Verbreiten von** und **Verbreiten zu** angegeben sind.                                                                                                                                                               |
+| Formatoptionen        | Wenden Sie Formatierungen für Spaltenüberschriften an, beispielsweise Rahmen oder Unterstreichung. |
+| Zuweisen von Zuweisen bis | Definieren Sie die Spalte oder die Spalten, für die der Überschriftstext gilt. |
+| Ausrichtung         | Geben Sie an, wie der Spaltenüberschrifttext für die Spalte oder den Bereich der Spalten ausgerichtet sein soll, die in den Feldern **Verbreiten von** und **Verbreiten zu** angegeben sind. |
 
 ### <a name="create-a-column-header"></a>Erstellen einer Spaltenüberschrift
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf eine Überschriftszelle.
-3.  Geben Sie im Dialogfeld **Spaltenüberschrift** den Text der Spaltenüberschrift ein. Klicken Sie alternativ auf **AutoText einfügen**, und wählen Sie eine Option aus.
-4.  Wählen Sie im Feld **Formatoptionen** ein Format für die Überschrift aus.
-5.  Geben Sie im Feld **Verbreiten von** den Buchstaben der Spalte ein, die über der die Spaltenüberschrift anfangen soll. Geben Sie im Feld **Verbreiten zu** den Buchstaben der Spalte ein, die über der die Spaltenüberschrift enden soll.
-6.  Wählen Sie unter **Begründung** aus, ob der Text der Spaltenüberschrift links, rechts oder zentriert ausgerichtet sein soll.
-7.  Klicken Sie auf **OK**.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie auf eine Überschriftszelle.
+3. Geben Sie im Dialogfeld **Spaltenüberschrift** den Text der Spaltenüberschrift ein. Klicken Sie alternativ auf **AutoText einfügen**, und wählen Sie eine Option aus.
+4. Wählen Sie im Feld **Formatoptionen** ein Format für die Überschrift aus.
+5. Geben Sie im Feld **Verbreiten von** den Buchstaben der Spalte ein, die über der die Spaltenüberschrift anfangen soll. Geben Sie im Feld **Verbreiten zu** den Buchstaben der Spalte ein, die über der die Spaltenüberschrift enden soll.
+6. Wählen Sie unter **Begründung** aus, ob der Text der Spaltenüberschrift links, rechts oder zentriert ausgerichtet sein soll.
+7. Klicken Sie auf **OK**.
 
 ### <a name="add-a-column-header-row"></a>Hinzufügen einer Spaltenüberschrift
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Wählen Sie eine Zelle in der Überschriftszeile aus.
-3.  Klicken Sie im Menü **Bearbeiten** auf **Zeile einfügen**. Die neue Zeile wird über der Zeile eingefügt, die Sie in Schritt 2 ausgewählt haben. **Hinweis:** Wenn Sie mehr als vier Zeilen für Kopfzeilen auf einem Bericht haben, überschneiden sich die Kopfzeilen, wenn der Bericht in ein Excel-Arbeitsblatt exportiert wird. Vergrößern Sie den oberen Rand in der Berichtsdefinition, damit alle Kopfzeilen im Bericht angezeigt werden.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Wählen Sie eine Zelle in der Überschriftszeile aus.
+3. Klicken Sie im Menü **Bearbeiten** auf **Zeile einfügen**. Die neue Zeile wird über der in Schritt 2 ausgewählten Zeile eingefügt.
+
+> [!NOTE]
+> Wenn Sie mehr als vier Zeilen für Kopfzeilen auf einem Bericht haben, überschneiden sich die Kopfzeilen, wenn der Bericht in ein Excel-Arbeitsblatt exportiert wird. Vergrößern Sie den oberen Rand in der Berichtsdefinition, damit alle Kopfzeilen im Bericht angezeigt werden.
 
 ### <a name="delete-a-column-header-row"></a>Löschen einer Spaltenüberschrift
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Wählen Sie eine zu löschende Zelle in der Überschriftszeile aus.
-3.  Klicken Sie im Menü **Bearbeiten** auf **Zeile löschen**.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Wählen Sie eine zu löschende Zelle in der Überschriftszeile aus.
+3. Klicken Sie im Menü **Bearbeiten** auf **Zeile löschen**.
 
 ### <a name="create-an-automatically-generated-header"></a>Erstellen einer automatisch generierten Überschrift
 
-Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. AutoText-Codes sind Variablen, die bei jedem Generieren eines Berichts aktualisiert werden. Diese Codes können in jeder Spaltenüberschrift enthalten sein und geben Berichtsinformationen (z. B. Datum oder Zeitraumnummer) an, die variieren können. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da AutoText-Codes von den Kalenderinformationen aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für <strong>KALK</strong>-, <strong>FD</strong>- und <strong>AB</strong>-Spalten unterstützt. Die Darstellung des AutoText-Codes in der Spaltenüberschriftszelle beeinflusst auch die Darstellung der Informationen im Bericht. Im <strong>Spaltenüberschrift</strong>-Dialogfeld werden die AutoText-Codes in gemischter Groß- und Kleinschreibung angezeigt. Daher wird der Text im Bericht in Groß- und Kleinbuchstaben angezeigt. In einem Standardkalenderjahr löst <strong>@CalMonthLong</strong> Monat <strong>7</strong> zu <strong>Juli</strong> auf. Wenn der Name des Monats groß geschrieben werden soll(beispielsweise <strong>JULI</strong>), geben Sie den Autotextcode im Feld <strong>Spaltenüberschriftentext</strong> ein. Geben Sie beispielsweise <strong>@CALMONTHLONG</strong> ein. Sie können Codes und Text kombinieren. Geben Sie zum Beispiel den folgenden Überschriftstext ein: <strong>Periode @FiscalPeriod-@FiscalYear ab @StartDate bis @EndDate</strong>. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: <strong>Periode 1-02 von 01/01/02 bis 01/31/02</strong>. <strong>Hinweis:</strong> Das Format einiger Teile des Texts, wie das lange Datum, hängen von Ihren regionalen Einstellungen auf dem Finance and Operations-Server ab. Um diese Einstellungen zu ändern, klicken Sie auf die Schaltfläche <strong>Start</strong>, klicken Sie auf <strong>Systemsteuerung</strong>, und klicken Sie anschließend auf <strong>Region und Sprache</strong>. In der folgenden Tabelle werden die verfügbaren Autotext-Optionen für Spaltenüberschriften aufgeführt.
+Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. AutoText-Codes sind Variablen, die bei jedem Generieren eines Berichts aktualisiert werden. Diese Codes können in jeder Spaltenüberschrift enthalten sein und geben Berichtsinformationen (z. B. Datum oder Zeitraumnummer) an, die variieren können. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da Autotextcodes auf den Kalenderdaten aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für **CALC** und **FD** und **WKS**-Spalten unterstützt. Die Darstellung des AutoText-Codes in der Spaltenüberschriftszelle beeinflusst auch die Darstellung der Informationen im Bericht. Im Dialogfeld **Spaltenüberschrift** werden die Autotextcodes in Groß- und Kleinbuchstaben angezeigt. Daher wird der Text im Bericht in Groß- und Kleinbuchstaben angezeigt. In einem Standardkalenderjahr  löst **@CalMonthLong** Monat **7** zu **Juli** auf. Wenn der Name des Monats groß geschrieben werden soll(beispielsweise **JULI**), geben Sie den Autotextcode im Feld **Spaltenüberschriftentext** ein. Geben Sie beispielsweise **@CALMONTHLONG** ein. Sie können Codes und Text kombinieren. Geben Sie zum Beispiel den folgenden Überschriftstext ein: **Periode@FiscalPeriod-@FiscalYear ab @StartDate bis @EndDate**. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: **Periode 1-02 von 01/01/02 bis 01/31/02**.
+
+> [!NOTE]
+> Das Format einiger Teile des Texts, wie das lange Datum, hängen von Ihren regionalen Einstellungen auf dem Finance and Operations-Server ab. Um diese Einstellungen zu ändern, klicken Sie auf die Schaltfläche **Start**, klicken Sie auf **Systemsteuerung**, und klicken Sie anschließend auf **Region und Sprache**. In der folgenden Tabelle werden die verfügbaren Autotext-Optionen für Spaltenüberschriften aufgeführt.
 
 
-|        Autotext-Option und -Code         |                                                                                                                                           Beschreibung                                                                                                                                            |
-|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Name des Monats (@CalMonthLong)        | Druckt den Namen des aktuellen Monats in der Spaltenüberschrift. Wenn Sie sich entscheiden, die Beträge im Bericht auf Tausend, Millionen oder Milliarden zu runden, oder wenn Sie die Spaltenbreite im Bericht auf weniger als neun Zeichen festlegen, wird der Name des Monats auf die ersten drei Zeichen gekürzt. |
-| Abgekürzter Monatsname (@CalMonthShort) |                                                                                                             Druckt den abgekürzte Monatsnamen für den ausgewählten Finanzzeitraum.                                                                                                              |
-|      Periodenzahl (@FiscalPeriod)      |                                                                  Druckt das numerische Formular des Finanzzeitraums, der für diese Spalte gekennzeichnet ist, aus. Wenn die Spalte mehrere Perioden umfasst, wird die letzte Periode im Bereich gedruckt.                                                                  |
-| Periodenbeschreibung (@FiscalPeriodName)  |                                                                                                          Druckt die Finanzzeitraumbeschreibung, die in den Finanzdaten identifiziert wird, aus.                                                                                                           |
-|        Geschäftsjahr (@FiscalYear)        |                                                                                                                      Druckt das Geschäftsjahr für die Spalte in der numerischen Formular aus.                                                                                                                       |
-|        Kalenderjahr (@CalYear)         |                                                                                                                     Druckt das Kalenderjahr für die Spalte in der numerischen Formular aus.                                                                                                                      |
-|         Startdatum (@StartDate)         |                                                                                                                               Druckt das Startdatum für die Spalte aus.                                                                                                                               |
-|           Enddatum (@EndDate)           |                                                                                                                                Druckt das Enddatum für die Spalte aus.                                                                                                                                |
-|     Einheitsname der Struktur (@UnitName)     |                                                                                           Wenn Sie eine Spalte auf eine bestimmten Einheit der Berichtsbaumstruktur einschränken, drucken Sie den Einheitsnamen in der Spaltenüberschrift aus.                                                                                           |
-|      Einheitenbeschreibung (@UnitDesc)       |                                                                                       Wenn Sie eine Spalte auf eine bestimmten Einheit der Berichtsbaumstruktur einschränken, drucken Sie die Einheitsbeschreibung in der Spaltenüberschrift aus.                                                                                        |
-|          Buchcode (@BookCode)          |                                                                                                                       Druckt den Buchcode, der in der Spalte angegeben wird, aus.                                                                                                                       |
-|           Leerzeile (@Blank)           |                                                                                                                            Fügt eine Leerzeile in der Spaltenüberschrift ein.                                                                                                                            |
+| Autotext-Option und -Code                | Beschreibung |
+|-----------------------------------------|-------------|
+| Name des Monats (@CalMonthLong)              | Druckt den Namen des aktuellen Monats in der Spaltenüberschrift. Wenn Sie sich entscheiden, die Beträge im Bericht auf Tausend, Millionen oder Milliarden zu runden, oder wenn Sie die Spaltenbreite im Bericht auf weniger als neun Zeichen festlegen, wird der Name des Monats auf die ersten drei Zeichen gekürzt. |
+| Abgekürzter Monatsname (@CalMonthShort) | Druckt den abgekürzte Monatsnamen für den ausgewählten Finanzzeitraum. |
+| Periodenzahl (@FiscalPeriod)           | Druckt das numerische Formular des Finanzzeitraums, der für diese Spalte gekennzeichnet ist, aus. Wenn die Spalte mehrere Perioden umfasst, wird die letzte Periode im Bereich gedruckt. |
+| Periodenbeschreibung (@FiscalPeriodName)  | Druckt die Finanzzeitraumbeschreibung, die in den Finanzdaten identifiziert wird, aus. |
+| Geschäftsjahr (@FiscalYear)               | Druckt das Geschäftsjahr für die Spalte in der numerischen Formular aus. |
+| Kalenderjahr (@CalYear)                | Druckt das Kalenderjahr für die Spalte in der numerischen Formular aus. |
+| Startdatum (@StartDate)                 | Druckt das Startdatum für die Spalte aus. |
+| Enddatum (@EndDate)                     | Druckt das Enddatum für die Spalte aus. |
+| Einheitsname der Struktur (@UnitName)         | Wenn Sie eine Spalte auf eine bestimmten Einheit der Berichtsbaumstruktur einschränken, drucken Sie den Einheitsnamen in der Spaltenüberschrift aus. |
+| Einheitenbeschreibung (@UnitDesc)            | Wenn Sie eine Spalte auf eine bestimmten Einheit der Berichtsbaumstruktur einschränken, drucken Sie die Einheitsbeschreibung in der Spaltenüberschrift aus. |
+| Buchcode (@BookCode)                   | Druckt den Buchcode, der in der Spalte angegeben wird, aus. |
+| Leerzeile (@Blank)                     | Fügt eine Leerzeile in der Spaltenüberschrift ein. |
 
 ### <a name="create-a-conditional-spanning-header"></a>Erstellen einer bedingten verbreiteten Überschrift
 
 Kopfzeilen für bedingte Aufteilung können basierend auf Daten für spezifische Zeiträume mehrere Spalten umfassen. Wenn Sie beispielsweise über einen Budgetbericht für das Geschäftsjahr verfügen und die tatsächlichen Budgets vergangener Monate mit den voraussichtlichen Budgets für künftige Monate anzeigen möchten, können Sie eine Kopfzeile für bedingte Aufteilung verwenden, um die Kopfzeile des Berichts automatisch zu aktualisieren. Beachten Sie beim Erstellen einer Kopfzeile für bedingte Aufteilung Folgendes:
 
--   Jedes Beendigungsbedingung (**Verbreiten zu**-Feld), die vor einer Startbedingung (**Verbreiten von**-Feld) entsprochen wird, wird ignoriert. Wenn beispielsweise in Spalte B die Zuweisungsbedingung als „BASE+1 bis BASE“ definiert ist und sich BASE in Spalte C und BASE+1 in Spalte D befinden, wird die Stopp-Bedingung in Spalte C ignoriert, und der Druck der Kopfzeile beginnt bei Spalte D.
--   Wenn Sie Spaltenüberschriften angeben, die sich überschneiden, überschneiden sich diese auch auf dem ausgedruckten Bericht. Der Bericht wird generiert, jedoch die folgende Warnung wird im Feld **Berichtswarteschlangenstatus** angezeigt: "Spaltenüberschriften mit BASE überschneiden sich mit anderen Spaltenüberschriften und können eine Überlappung des Texts zur Folge haben." Beispielsweise ist die Kopfzeilendefinition für Spalte B "B bis BASE+1, und die Kopfzeilendefinition für Spalte D "BASE +1 zu F. in diesem Fall, werden die Kopfzeilen übereinander gedruckt und sind nicht lesbar. Sobald BASIS in einer Definition **Verbreiten aus/Verbreiten bis** verwendet wird, stellen Sie sicher, den Bericht anzuzeigen, der generiert wird, um festzustellen, ob die Überschriften sich überschneiden.
--   Wenn Sie in der Verbreitungsdefinition in einer nicht gedruckten Spalte(**NP**) BASIS angeben, wird diese ignoriert, unabhängig davon, was in der Spaltendefinition definiert ist. Im Wesentlichen entspricht dieses Szenario einer Situation, in der keine Spaltenüberschriftdefinition erstellt wird.
--   Für bedingte Drucksspalten (**P&lt;B**, **P&gt;=B**) verhalten sich bedingte Überschriften wie die einzelnen regulären Spaltenüberschriftdefinition. Ist die Bedingung beispielsweise „false“, wird der Druck der Kopfzeile bei einer beliebigen darauffolgenden Spalte gestartet, die die Zuweisungsbedingung erfüllt.
+- Jedes Beendigungsbedingung (**Verbreiten zu**-Feld), die vor einer Startbedingung (**Verbreiten von**-Feld) entsprochen wird, wird ignoriert. Wenn beispielsweise in Spalte B die Zuweisungsbedingung als „BASE+1 bis BASE“ definiert ist und sich BASE in Spalte C und BASE+1 in Spalte D befinden, wird die Stopp-Bedingung in Spalte C ignoriert, und der Druck der Kopfzeile beginnt bei Spalte D.
+- Wenn Sie Spaltenüberschriften angeben, die sich überschneiden, überschneiden sich diese auch auf dem ausgedruckten Bericht. Der Bericht wird generiert, jedoch die folgende Warnung wird im Feld **Berichtswarteschlangenstatus** angezeigt: "Spaltenüberschriften mit BASE überschneiden sich mit anderen Spaltenüberschriften und können eine Überlappung des Texts zur Folge haben." Beispielsweise ist die Kopfzeilendefinition für Spalte B "B bis BASE+1, und die Kopfzeilendefinition für Spalte D "BASE +1 zu F. in diesem Fall, werden die Kopfzeilen übereinander gedruckt und sind nicht lesbar. Sobald BASIS in einer Definition **Verbreiten aus/Verbreiten bis** verwendet wird, stellen Sie sicher, den Bericht anzuzeigen, der generiert wird, um festzustellen, ob die Überschriften sich überschneiden.
+- Wenn Sie in der Verbreitungsdefinition in einer nicht gedruckten Spalte(**NP**) BASIS angeben, wird diese ignoriert, unabhängig davon, was in der Spaltendefinition definiert ist. Im Wesentlichen entspricht dieses Szenario einer Situation, in der keine Spaltenüberschriftdefinition erstellt wird.
+- Für bedingte Drucksspalten (**P&lt;B**, **P&gt;=B**) verhalten sich bedingte Überschriften wie die einzelnen regulären Spaltenüberschriftdefinition. Ist die Bedingung beispielsweise „false“, wird der Druck der Kopfzeile bei einer beliebigen darauffolgenden Spalte gestartet, die die Zuweisungsbedingung erfüllt.
 
 #### <a name="create-a-conditional-spanning-header"></a>Erstellen einer Kopfzeile für bedingte Aufteilung
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf eine Überschriftszelle.
-3.  Geben Sie im Dialogfeld **Spaltenüberschrift** den Text der Spaltenüberschrift ein. Klicken Sie alternativ auf **AutoText einfügen**, und wählen Sie eine Option aus.
-4.   Wählen Sie im Feld **Formatoptionen** ein Formatierungstil für die Überschrift aus.
-5.  Geben Sie einen Zeitraum an, der relativ zu dem beim Generieren des Berichts angegebenen Basiszeitraum ist. Geben Sie in den Feldern **Verbreiten von** und **Verbreiten bis** einen der folgenden Werte ein: **BASIS**, **BASIS-X** oder **BASIS+X**, wobei X die Anzahl von Perioden des Basiszeitraums ist. Wenn Sie beispielsweise **BASIS** im Feld **Verbreiten von** eingeben, beginnt der bedingte verbreitete Spaltenüberschrifttext in der Spaltenüberschrift, in der der Wert des **Basiszeitraums** der Berichtsdefinition dem **Perioden**-Wert der Spaltendefinition entspricht. Er endet in der Spalte, die im **Verbreiten bis**-Feld angegeben ist. Wenn die Verbreitung z. B. BASIS bis M ist, und der Wert des **Basiszeitraums** der Berichtsdefinition **4** ist, beginnt die Überschrift in der Spalte, in der die Periode auf **4** festgelgt ist, und stoppt bei Spalte M. Überschriften beginnen und enden nur bei Druckspalten.
-6.  Wählen Sie unter **Begründung** aus, ob der Text der Spaltenüberschrift links, rechts oder zentriert ausgerichtet sein soll.
-7.  Klicken Sie auf **OK**.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie auf eine Überschriftszelle.
+3. Geben Sie im Dialogfeld **Spaltenüberschrift** den Text der Spaltenüberschrift ein. Klicken Sie alternativ auf **AutoText einfügen**, und wählen Sie eine Option aus.
+4. Wählen Sie im Feld **Formatoptionen** ein Formatierungstil für die Überschrift aus.
+5. Geben Sie einen Zeitraum an, der relativ zu dem beim Generieren des Berichts angegebenen Basiszeitraum ist. Geben Sie in den Feldern **Verbreiten von** und **Verbreiten bis** einen der folgenden Werte ein: **BASIS**, **BASIS-X** oder **BASIS+X**, wobei X die Anzahl von Perioden des Basiszeitraums ist. Wenn Sie beispielsweise **BASIS** im Feld **Verbreiten von** eingeben, beginnt der bedingte verbreitete Spaltenüberschrifttext in der Spaltenüberschrift, in der der Wert des **Basiszeitraums** der Berichtsdefinition dem **Perioden**-Wert der Spaltendefinition entspricht. Er endet in der Spalte, die im **Verbreiten bis**-Feld angegeben ist. Wenn die Verbreitung z. B. BASIS bis M ist, und der Wert des **Basiszeitraums** der Berichtsdefinition **4** ist, beginnt die Überschrift in der Spalte, in der die Periode auf **4** festgelgt ist, und stoppt bei Spalte M. Überschriften beginnen und enden nur bei Druckspalten.
+6. Wählen Sie unter **Begründung** aus, ob der Text der Spaltenüberschrift links, rechts oder zentriert ausgerichtet sein soll.
+7. Klicken Sie auf **OK**.
 
 #### <a name="example-of-a-conditional-spanning-header"></a>Beispiel einer Kopfzeile für bedingte Aufteilung
 
 Phyllis erstellt einen Bericht für eine dynamische Sechs-Monats-Prognose. Das Wort "Istwert" soll über die Spalten mit Istdaten gedruckt werden, und das Wort "Budget" soll über die Spalten mit Prognosen für das Budget gedruckt werden. Jeden Monat, den der Bericht ausgeführt wird, gibt es eine Istwert-Spalte mehr und eine Budget-Spalte weniger. Phyllis könnte die Spaltendefinition jedes Mal, wenn der Bericht erstellt wird, manuell ändern und die Kopfzeilen anpassen. Sie möchte jedoch Zeit und Arbeit sparen und erstellt Kopfzeilen für bedingte Aufteilung, von denen automatisch bei jeder Ausführung des Berichts Kopfzeilen über den entsprechenden Spalten erstellt werden. Phyllis öffnet den Berichts-Designer, klickt im Navigationsbereich auf **Spaltendefinition** und öffnet die Spaltendefinition für den Bericht. Sie gibt die folgenden Informationen ein. Der Basiszeitraum in der Berichtsdefinition ist 4.
 
 
-|                     |  A:   |       Mrd       |       C:       |       S       |       E:       |       Fr       |       G:       |       H:       |       I       |       J       |       K       |       L       |       Mo       |
+|                     |  A:   | Mrd             | C:             | S             | E:             | Fr             | G:             | H:             | I             | J             | K             | L             | Mo             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-|      Kopfzeile 1       |      |    Tatsächlich     |    Budget     |               |               |               |               |               |               |               |               |               |               |
-|      Kopfzeile 2       |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
-|      Kopfzeile 3       |      |               |               |               |               |               |               |               |               |               |               |               |               |
-|     Spaltentyp     | DESC |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |
-| Buchcode/Attribute |      |    ISTWERT     |  BUDGET2012   |    ISTWERT     |  BUDGET2012   |    ISTWERT     |  BUDGET2012   |    ISTWERT     |  BUDGET2012   |    ISTWERT     |  BUDGET2012   |    ISTWERT     |  BUDGET2012   |
-|     Geschäftsjahr     |      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |
-|       Zeitraum        |      |       1       |       1       |       2       |       2       |       3       |       3       |       4       |       4       |       5       |       5       |       6       |       6       |
-|   Abgedeckte Zeiträume   |      |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |
-|    Spaltenbreite     |  30  |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |
-|    Drucksteuerung    |      |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |
+| Kopfzeile 1            |      | Tatsächlich        | Budget        |               |               |               |               |               |               |               |               |               |               |
+| Kopfzeile 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
+| Kopfzeile 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
+| Spaltentyp         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
+| Buchcode/Attribute |      | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    |
+| Geschäftsjahr         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
+| Zeitraum              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
+| Abgedeckte Zeiträume     |      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      |
+| Spaltenbreite        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
+| Drucksteuerung       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
 Phyllis doppelklickt auf eine Spaltenüberschriftzelle, um das Dialogfeld **Spaltenüberschrift** zu öffnen, in dem sie die folgenden Informationen eingibt.
 
@@ -245,21 +257,22 @@ Jetzt wird jedes Mal, wenn dieser Bericht generiert wird, das Wort "Istwert" üb
 ## <a name="apply-column-justification"></a>Anwenden der Spaltenausrichtung
 Die Zelle **Begründung** wird verwendet, um die Begründungsformatierung in einem Bericht auf eine Berichtspalte anzuwenden. Diese Option betrifft nur die Spaltenbeschreibungen, nicht die Werte selbst.
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle **Begründung**.
-3.  Wählen Sie in der Liste einen der folgenden Werte aus:
-    -   **Keine** - Keine Begründung wird verwendet.
-    -   **Links** - Richten Sie die Spaltenbeschreibungen links aus.
-    -   **Mitte** - Zentrieren Sie die Spaltenbeschreibungen.
-    -   **Rechts** - Richten Sie die Spaltenbeschreibungen rechts aus.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie auf die Zelle **Begründung**.
+3. Wählen Sie in der Liste einen der folgenden Werte aus:
+
+    - **Keine** - Keine Begründung wird verwendet.
+    - **Links** - Richten Sie die Spaltenbeschreibungen links aus.
+    - **Mitte** - Zentrieren Sie die Spaltenbeschreibungen.
+    - **Rechts** - Richten Sie die Spaltenbeschreibungen rechts aus.
 
 ## <a name="add-special-formatting-options"></a>Hinzufügen besonderer Formatierungsoptionen
 In der Spaltendefinition wird von den Detailzeilen der Formatierungsspalte eine spezielle Formatierung auf ausgewählte Spalten angewendet. Obwohl einige der Optionen für **Drucksteuerelemente** und **Spalteneinschränkungen** für **FD**-Spalten spezifisch sind, gelten die meisten Optionen für alle Spaltentypen. Die in der Spaltendefinition angegebene Formatierung setzt die Formatierung außer Kraft, die in der Berichtsdefinition angegeben ist. Die in der Zeilendefinition angegebene Formatierung setzt jedoch die Formatierung außer Kraft, die in der Spaltendefinition angegeben ist. Die folgenden Zeilen werden als Formatierungszeilen betrachtet:
 
--   Spaltenbreite
--   Zusätzliche Leerzeichen vor Spalte
--   Format/Währungsaußerkraftsetzung
--   Drucksteuerung
+- Spaltenbreite
+- Zusätzliche Leerzeichen vor Spalte
+- Format/Währungsaußerkraftsetzung
+- Drucksteuerung
 
 ### <a name="changing-the-column-width"></a>Ändern der Spaltenbreite
 
@@ -267,8 +280,8 @@ Die Zelle **Spaltenbreite** gibt die Anzahl der Zeichen an, die für die Breite 
 
 #### <a name="specify-the-width-of-a-column-on-a-report"></a>Angeben der Breite einer Spalte in einem Bericht
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Geben Sie in Zelle **Spaltenbreite** die Anzahl der Stellen für die Spaltenbreite ein. Die maximale Breite einer beliebigen Spalte ist 255 Zeichen (diese Anzahl umfasst Cent, Kommas und Klammern). Wenn Sie alternativ den Bericht-Designer so aktivieren möchten, dass die richtige Breite für die Spalte basierend auf dem Zelleninhalt auswählt wird, klicken Sie doppelt auf die Zelle **Spaltenbreite** und dann auf **Automatisch anpassen**.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Geben Sie in Zelle **Spaltenbreite** die Anzahl der Stellen für die Spaltenbreite ein. Die maximale Breite einer beliebigen Spalte ist 255 Zeichen (diese Anzahl umfasst Cent, Kommas und Klammern). Wenn Sie alternativ den Bericht-Designer so aktivieren möchten, dass die richtige Breite für die Spalte basierend auf dem Zelleninhalt auswählt wird, klicken Sie doppelt auf die Zelle **Spaltenbreite** und dann auf **Automatisch anpassen**.
 
 ### <a name="add-space-between-columns"></a>Leerzeichen zwischen Spalten hinzufügen
 
@@ -276,8 +289,8 @@ Die Zelle **Zusätzliche Leerzeichen vor Spalte** gibt die Breite des Trennzeich
 
 #### <a name="specify-the-space-between-columns"></a>Angeben der Leerzeichen zwischen Spalten
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Geben Sie in Zelle **Zusätzliche Leerzeichen vor Spalte** die Anzahl der Stellen an, die zwischen Spalten eingefügt werden soll.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Geben Sie in Zelle **Zusätzliche Leerzeichen vor Spalte** die Anzahl der Stellen an, die zwischen Spalten eingefügt werden soll.
 
 ### <a name="specify-a-currency"></a>Angeben einer Währung
 
@@ -285,9 +298,9 @@ Die Zelle **Format/Währungsaußerkraftsetzung** gibt die Formatierung der Dezim
 
 #### <a name="assign-a-format-currency-override-to-a-report-column"></a>Zuweisen einer Berichtsspalte zu einer Währungsaußerkraftsetzung
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie in einer Betragsspalte auf eine Zelle **Format/Währungsaußerkraftsetzung**.
-3.  Wählen Sie im Dialogfeld **Formataußerkraftsetzung** Formatierungsoptionen aus.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie in einer Betragsspalte auf eine Zelle **Format/Währungsaußerkraftsetzung**.
+3. Wählen Sie im Dialogfeld **Formataußerkraftsetzung** Formatierungsoptionen aus.
 
 ### <a name="add-a-print-control-code"></a>Drucksteuerungscode hinzufügen
 
@@ -295,15 +308,15 @@ Die Zelle **Drucksteuerung** kann Codes enthalten, die die Anzeige oder die Druc
 
 #### <a name="regular-print-control-codes"></a>Reguläre Drucksteuerungscodes
 
-| Drucksteuerungscode | Bedeutung                                     | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|--------------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ND                 | Nicht druckbar                                     | Schließen Sie die Beträge in dieser Spalte vom Drucken im Bericht und von Berechnungen aus. Wenn eine nicht druckbare Spalte in einer Berechnung enthalten sein soll, verweisen Sie direkt in der Berechnungsformel auf die Spalte. Beispielsweise ist die nicht druckbare Spalte C in der folgenden Berechnung enthalten: **B+C+D**. Allerdings ist die nicht druckbare Spalte C nicht in der folgenden Berechnung enthalten: **B:D**.                                                                                                                                          |
-| XCR                | Vorzeichen in Spalte ändern, wenn der typische Saldo der Zeile ein Habenwert ist | Erstellen Sie ein Budget oder einen Vergleichsbericht, in der bzw. dem eine ungünstige Abweichung (z. B. ein Umsatzdefizit oder eine Kostenüberschreitung) immer negativ ist. Wenden Sie diesen Code auf einer **CALC**-Spalte an, um das Vorzeichen des Spaltenbetrags umzukehren, wenn der typische Saldo einer gegebenen Zeile ein Habenposten ist (wie von einem **C** in der Spalte **Normaler Saldo** der Zeilendefinition gekennzeichnet). **Hinweis:** Achten Sie bei **TOT**-Zeilen und **CAL**-Zeilen, die üblicherweise ein Habensaldo enthalten, darauf, ein **C** in der Spalte **Normaler Saldo** in der Zeilendefinition einzugeben. |
-| X0                 | Spalte unterdrücken, wenn nur Nullen oder keine Daten enthalten sind          | Schließen Sie eine **FD**-Spalte aus dem Bericht aus, wenn alle Zellen in dieser Spalte entweder leer sind oder Nullen enthalten.                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| RU                 | Runden unterdrücken                               | Verhindern Sie, dass die Beträge in dieser Spalte gerundet werden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| XR                 | Rollup unterdrücken                                 | Unterdrücken Sie ein Rollup. Wenn für den Bericht eine Berichtsbaumstruktur verwendet wird, wird für die Beträge in dieser Spalte kein Rollup in nachfolgende übergeordnete Knoten ausgeführt.                                                                                                                                                                                                                                                                                                                                                                                                   |
-| WDH                 | Spalte auf jeder Seite wiederholen                      | Wiederholen Sie eine angegebene Spalte auf jeder Seite eines Berichts. So können beispielsweise den Drucksteuerungscode **RP** verwenden, um eine Spalte vom Typ **ZEILE** einzubeziehen, der auf jeder Seite Zeilencodes bezieht.                                                                                                                                                                                                                                                                                                                                           |
-| TU                 |  Text umbrechen                                      |  Wenn der Text in einer Spalte zu lang ist, führen Sie mit dieser Option ein Textumbruch durch, damit der gesamte Text innerhalb der Spalte angezeigt wird.                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Drucksteuerungscode | Bedeutung                                     | Beschreibung |
+|--------------------|-------------------------------------------------|-------------|
+| ND                 | Nicht druckbar                                     | Schließen Sie die Beträge in dieser Spalte vom Drucken im Bericht und von Berechnungen aus. Wenn eine nicht druckbare Spalte in einer Berechnung enthalten sein soll, verweisen Sie direkt in der Berechnungsformel auf die Spalte. Beispielsweise ist die nicht druckbare Spalte C in der folgenden Berechnung enthalten: **B+C+D**. Allerdings ist die nicht druckbare Spalte C nicht in der folgenden Berechnung enthalten: **B:D**. |
+| XCR                | Vorzeichen in Spalte ändern, wenn der typische Saldo der Zeile ein Habenwert ist | Erstellen Sie ein Budget oder einen Vergleichsbericht, in der bzw. dem eine ungünstige Abweichung (z. B. ein Umsatzdefizit oder eine Kostenüberschreitung) immer negativ ist. Wenden Sie diesen Code auf einer **CALC**-Spalte an, um das Vorzeichen des Spaltenbetrags umzukehren, wenn der typische Saldo einer gegebenen Zeile ein Habenposten ist (wie von einem **C** in der Spalte **Normaler Saldo** der Zeilendefinition gekennzeichnet).<blockquote>[!NOTE] Geben Sie für <strong>TOT</strong>-Zeilen und </strong>CAL</strong>-Zeilen, die typischerweise einen Habensaldo aufweisen, <strong>C</strong> in der <strong>Standardsaldo</strong>-Spalte in der Zeilendefinition ein.</blockquote> |
+| X0                 | Spalte unterdrücken, wenn nur Nullen oder keine Daten enthalten sind          | Schließen Sie eine **FD**-Spalte aus dem Bericht aus, wenn alle Zellen in dieser Spalte entweder leer sind oder Nullen enthalten. |
+| RU                 | Runden unterdrücken                               | Verhindern Sie, dass die Beträge in dieser Spalte gerundet werden. |
+| XR                 | Rollup unterdrücken                                 | Unterdrücken Sie ein Rollup. Wenn für den Bericht eine Berichtsbaumstruktur verwendet wird, wird für die Beträge in dieser Spalte kein Rollup in nachfolgende übergeordnete Knoten ausgeführt. |
+| WDH                 | Spalte auf jeder Seite wiederholen                      | Wiederholen Sie eine angegebene Spalte auf jeder Seite eines Berichts. So können beispielsweise den Drucksteuerungscode **RP** verwenden, um eine Spalte vom Typ **ZEILE** einzubeziehen, der auf jeder Seite Zeilencodes bezieht. |
+| TU                 |  Text umbrechen                                      |  Wenn der Text in einer Spalte zu lang ist, führen Sie mit dieser Option ein Textumbruch durch, damit der gesamte Text innerhalb der Spalte angezeigt wird. |
 
 #### <a name="conditional-print-control-codes"></a>Bedingte Drucksteuerungscodes
 
@@ -318,37 +331,36 @@ Die Zelle **Drucksteuerung** kann Codes enthalten, die die Anzeige oder die Druc
 
 #### <a name="add-print-control-codes-to-a-report-column"></a>Hinzufügen einer Berichtsspalte zu Drucksteuerungscodes
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle **Drucksteuerung**.
-3.  Wählen Sie im Dialogfeld **Drucksteuerung** einen Code aus der Liste **Drucksteuerungsoptionen auswählen** aus. Um mehr als einen Code auszuwählen, halten Sie die STRG-Taste gedrückt, während Sie die Codes auswählen.
-4.  Wählen Sie im Feld **Bedingte Druckoptionen** eine Option aus. Standardmäßig ist **(keine)** ausgewählt. Sie können nur jeweils einen bedingten Druckcode auswählen.
-5.  Klicken Sie auf **OK**.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie auf die Zelle **Drucksteuerung**.
+3. Wählen Sie im Dialogfeld **Drucksteuerung** einen Code aus der Liste **Drucksteuerungsoptionen auswählen** aus. Um mehr als einen Code auszuwählen, halten Sie die STRG-Taste gedrückt, während Sie die Codes auswählen.
+4. Wählen Sie im Feld **Bedingte Druckoptionen** eine Option aus. Standardmäßig ist **(keine)** ausgewählt. Sie können nur jeweils einen bedingten Druckcode auswählen.
+5. Klicken Sie auf **OK**.
 
 > [!TIP]
 > Sie können die Druckcodes direkt in die Zelle **Drucksteuerung** eingeben. Trennen Sie mehrere Drucksteuerungscodes durch Kommas voneinander.
 
-
 ## <a name="column-types"></a>Spaltentypen
-Der Typ der Informationen, die jede Spalte in einem Bericht umfasst, wird vom Wert in der Zeile **Spaltentyp** in der Spaltendefinition angegeben. Jede Spaltendefinition muss mindestens eine Beschreibungspalte (**DESC**) und eine Betragsspalte (**FD**, **WKS** oder **CALC**) enthalten. **Hinweis:** Die Spaltencodes gelten nicht für alle Buchhaltungssysteme. Wenn Sie einen für Ihr Kontoführungssystem ungültigen Typ auswählen, wird die Spalte im Bericht leer angezeigt.
+Der Typ der Informationen, die jede Spalte in einem Bericht umfasst, wird vom Wert in der Zeile **Spaltentyp** in der Spaltendefinition angegeben. Jede Spaltendefinition muss mindestens eine Beschreibungsspalte (**BESCHR**) und eine Betragsspalte (**FD**, **AB** oder **KALK**) enthalten.
+
+> [!NOTE]
+> Die Spaltentyp-Codes gelten nicht für alle Kontoführungssysteme. Wenn Sie einen für Ihr Kontoführungssystem ungültigen Typ auswählen, wird die Spalte im Bericht leer angezeigt.
 
 ### <a name="specify-a-column-type"></a>Angeben eines Spaltentyps
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie in der entsprechenden Spalte auf eine Zelle in der Zeile **Spaltentyp**.
-3.  Wählen Sie in der Liste einen Spaltentyp aus. In der folgenden Tabelle werden die verschiedenen Spaltentypen beschrieben.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie in der entsprechenden Spalte auf eine Zelle in der Zeile **Spaltentyp**.
+3. Wählen Sie in der Liste einen Spaltentyp aus. In der folgenden Tabelle werden die verschiedenen Spaltentypen beschrieben.
+
     <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
     <thead>
-    <tr class="header">
+    <tr>
     <th>Spaltentypcode</th>
     <th>Beschreibung</th>
     </tr>
     </thead>
     <tbody>
-    <tr class="odd">
+    <tr>
     <td>FD</td>
     <td>Zeigen Sie Finanzdaten oder Daten aus einem Excel-Arbeitsblatt an, wenn Sie in der Zeilendefinition eine Spalte <strong>Verknüpfen mit Finanzdimensionen</strong> oder <strong>Verknüpfen mit Arbeitsblatt</strong> verwenden. Wenn Sie den Spaltentyp <strong>FD</strong> auswählen, werden die Standardeinstellungen automatisch in den folgenden Zeilen festgelegt: <ul>
     <li><strong>Buchcode/Attributkategorie:</strong> ISTWERT</li>
@@ -360,31 +372,31 @@ Der Typ der Informationen, die jede Spalte in einem Bericht umfasst, wird vom We
     </ul>
 Diese Standardeinstellungen können geändert werden.</td>
     </tr>
-    <tr class="even">
+    <tr>
     <td>KALK</td>
     <td>Hier wird das Ergebnis einer einfachen oder komplexen Berechnung angezeigt, die in der Zelle <strong>Formel</strong> angegeben ist. Weitere Informationen finden Sie unter <a href="advanced-formatting-options-financial-reporting.md">Erweiterte Formatierungsoptionen in Finanzberichten</a>.</td>
     </tr>
-    <tr class="odd">
+    <tr>
     <td>DESC</td>
     <td>Zeigen Sie die Zeilenbeschreibung der Zeilendefinition an. Die Beschreibungsspalte ist zwar häufig die erste Spalte im Bericht, kann sich jedoch an einer beliebigen Position befinden.</td>
     </tr>
-    <tr class="even">
+    <tr>
     <td>ZEILE</td>
     <td>Hier werden einzelne Zeilencodes für Finanzzeilen aus der Spalte <strong>Zeilencode</strong> in der Zeilendefinition angezeigt. Weitere Informationen finden Sie unter <a href="row-definitions-financial-reporting.md">Zeilendefinitionen in Finanzberichten</a>.</td>
     </tr>
-    <tr class="odd">
+    <tr>
     <td>ACCT (Kontocodes)</td>
     <td>Hier werden die Finanzdatensegmentwerte oder Dimensionswerte angezeigt, die für jede Zeile gelten. Für Konto- und Buchungsdetailberichte wird das vollqualifizierte Konto gedruckt (z. B. <strong>110140-070-0101</strong>). Falls in der Spalte <strong>Verknüpfen mit Finanzdimensionen</strong> Bereiche in einer zugeordneten Zeilendefinition festgelegt wurden, wird der Bereich von eckigen Klammern umgeben und als einzelner Wert behandelt (z. B. <strong>[110140:110700]-070-[0101:0200]</strong>). Für Finanzberichte und Übersichtsberichte, die mehrere Konten umfassen, wird der Finanzdatenlink aus der Zeilendefinition gedruckt (z. B. <strong>1100:1200</strong>).</td>
     </tr>
-    <tr class="even">
+    <tr>
     <td>FÜLL</td>
     <td>Füllen Sie die Zelle mit einem Zeichen, das Sie in einfachen Anführungszeichen angeben. Wenn Sie kein Zeichen eingeben, ist die Spalte leer. Um beispielsweise eine Spalte mit Auslassungspunkten (...) auszufüllen, geben Sie <strong>AUSFÜLLEN</strong> <strong>'.'</strong> ein.</td>
     </tr>
-    <tr class="odd">
+    <tr>
     <td>SEITE</td>
     <td>Fügen Sie einen vertikalen Seitenumbruch in den Bericht ein. Die Spalten rechts neben der <strong>SEITE</strong>-Spalte werden auf einer anderen Seite angezeigt.</td>
     </tr>
-    <tr class="even">
+    <tr>
     <td>AB</td>
     <td>Zeigen Sie Daten an, die aus einem Excel-Arbeitsblatt abgerufen werden. Wenn Sie den Spaltentyp <strong>AB</strong> auswählen, werden die Standardeinstellungen automatisch in den folgenden Zeilen festgelegt: <ul>
     <li><strong>Geschäftsjahr:</strong> PERIODIC</li>
@@ -392,7 +404,7 @@ Diese Standardeinstellungen können geändert werden.</td>
     </ul>
 Diese Standardeinstellungen können geändert werden.</td>
     </tr>
-    <tr class="odd">
+    <tr>
     <td>ATTR</td>
     <td>Wenn Ihr Kontoführungssystem die Verwendung von Attributen unterstützt, zeigen Sie ein Konto- oder Buchungsattribut in der Spalte an. Mit einem Attribut, das für ein einzelnes vollständiges Konto gelten muss, werden die zugrunde liegenden Konto- oder Buchungsinformationen aus den Finanzdaten extrahiert. Die Attribute auf Kontoebene zeigen Daten aus dem Konto an, und die Attribute auf Buchungsebene zeigen Daten an, die zum Zeitpunkt der Buchung aufgetreten sind. Wenn Sie <strong>ATTR</strong> als Spaltentyp auswählen, geben Sie in der <strong>Buchcode/Attributkategorie</strong>-Detailzeile der Spaltendefinition die Attributkategorie an.</td>
     </tr>
@@ -422,25 +434,25 @@ Die Zelle **Geschäftsjahr** identifiziert das Geschäftsjahr, das in der Spalte
 
 Die Zelle **Periode** identifiziert die Geschäftsperioden, die in der Spalte enthalten sein sollen. Der Zeitraum kann relativ zum Basiszeitraum sein, der beim Generieren des Berichts angegeben wird. Die folgenden Optionen sind verfügbar.
 
-| Mit der folgenden Option...          | Beschreibung                                                                                                                                                                                                                          |
-|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BASIS            | Verwenden Sie den Basiszeitraum.                                                                                                                                                                                                                 |
-| BASE+\#         | Verwenden Sie die \# Periode, nach der Basisperiode. Wenn Sie also beispielsweise die dritte Periode nach der Basisperiode verwenden, geben Sie **BASIS+3** ein.                                                                                               |
-| BASE-\#         | Verwenden Sie die \# Periode, vor der Basisperiode. Wenn Sie also beispielsweise die vorherige Periode verwenden, geben Sie **BASIS-1** ein.                                                                                                                 |
-| BASE-\#:BASE    | Verwenden Sie mehrere Perioden, aus mehreren Perioden vor der Basisperiode durch die Basisperiode. Um beispielsweise die drei vorangegangenen Perioden und die Basisperiode zu verwenden, geben Sie **BASIS-3: BASIS** ein.                                                |
-| BASE:BASE+\#    | Verwenden Sie mehrere Perioden, aus mehreren Basisperioden durch mehrere Perioden nach der Basisperiode. Um beispielsweise die Basisperiode und die folgenden zwei Perioden zu verwenden, geben Sie **BASIS: BASIS+2** ein.                                                  |
+| Mit der folgenden Option...          | Beschreibung |
+|-----------------|-------------|
+| BASIS            | Verwenden Sie den Basiszeitraum. |
+| BASE+\#         | Verwenden Sie die \# Periode, nach der Basisperiode. Wenn Sie also beispielsweise die dritte Periode nach der Basisperiode verwenden, geben Sie **BASIS+3** ein. |
+| BASE-\#         | Verwenden Sie die \# Periode, vor der Basisperiode. Wenn Sie also beispielsweise die vorherige Periode verwenden, geben Sie **BASIS-1** ein. |
+| BASE-\#:BASE    | Verwenden Sie mehrere Perioden, aus mehreren Perioden vor der Basisperiode durch die Basisperiode. Um beispielsweise die drei vorangegangenen Perioden und die Basisperiode zu verwenden, geben Sie **BASIS-3: BASIS** ein. |
+| BASE:BASE+\#    | Verwenden Sie mehrere Perioden, aus mehreren Basisperioden durch mehrere Perioden nach der Basisperiode. Um beispielsweise die Basisperiode und die folgenden zwei Perioden zu verwenden, geben Sie **BASIS: BASIS+2** ein. |
 | BASE-\#:BASE+\# | Verwenden Sie mehrere Perioden, aus mehreren Perioden vor der Basisperiode bis zu mehreren Perioden nach der Basisperiode. Um beispielsweise die drei vorangegangenen Perioden, die Basisperioden und die folgenden zwei Perioden zu verwenden, geben Sie **BASIS-3: BASIS+2** ein. |
-| 1:BASE          | Verwenden Sie mehrere Perioden, aus der ersten Periode durch die Basisperiode.                                                                                                                                                                 |
-| \#              | Verwenden Sie immer eine bestimmte Periodenanzahl. Es wird nicht empfohlen, diese Option zu verwenden, da sie die Flexibilität der Spaltendefinition verringert.                                                                                       |
-| \#:\#           | Verwenden Sie immer einen bestimmten Periodenbereich. Es wird nicht empfohlen, diese Option zu verwenden, da sie die Flexibilität der Spaltendefinition verringert.                                                                                    |
+| 1:BASE          | Verwenden Sie mehrere Perioden, aus der ersten Periode durch die Basisperiode. |
+| \#              | Verwenden Sie immer eine bestimmte Periodenanzahl. Es wird nicht empfohlen, diese Option zu verwenden, da sie die Flexibilität der Spaltendefinition verringert. |
+| \#:\#           | Verwenden Sie immer einen bestimmten Periodenbereich. Es wird nicht empfohlen, diese Option zu verwenden, da sie die Flexibilität der Spaltendefinition verringert. |
 
 Sie können bei jeder Zeitraumangabe Geschäftsjahresabgrenzungen überschreiten und mehrere Jahre in einem Zeitraumbereich kombinieren. Definieren Sie zum Beispiel die Perioden als **BASE-5** (um die letzten sechs Zeiträume anzuzeigen) und führen Sie einen Bericht aus, der einen Basiszeitraum von 2 Perioden hat. In diesem Fall enthält der Bericht die Daten für die ersten beiden Zeiträume des angegebenen Geschäftsjahrs und die letzten vier Zeiträume des vorherigen Geschäftsjahrs.
 
 ### <a name="specify-the-periods-for-an-fd-column"></a>Angeben der Zeiträume für eine FD-Spalte
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie in einer **FD**-Spalte auf die Zelle in der Zeile **Periode**, und wählen Sie dann in der Liste eine Option aus.
-3.  Schließen Sie die Formel in der Formelleiste über dem Navigationsbereich oder in der Zelle **Periode** ab. Ersetzen Sie ein beliebiges Nummernzeichen (\#) durch den entsprechenden Wert.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie in einer **FD**-Spalte auf die Zelle in der Zeile **Periode**, und wählen Sie dann in der Liste eine Option aus.
+3. Schließen Sie die Formel in der Formelleiste über dem Navigationsbereich oder in der Zelle **Periode** ab. Ersetzen Sie ein beliebiges Nummernzeichen (\#) durch den entsprechenden Wert.
 
 #### <a name="periods-covered-cell"></a>Zelle "Abgedeckte Perioden"
 
@@ -455,72 +467,75 @@ Die Zelle **Abgedeckte Perioden** identifiziert den Betrag, der in der Spalte an
 
 ### <a name="specify-the-periods-that-are-covered-for-an-fd-column"></a>Angeben der abgedeckten Zeiträume für eine FD-Spalte
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie in einer **FD**-Spalte auf die Zelle in der Zeile **Abgedeckte Perioden**, und wählen Sie in der Liste eine Option aus.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie in einer **FD**-Spalte auf die Zelle in der Zeile **Abgedeckte Perioden**, und wählen Sie in der Liste eine Option aus.
 
 ### <a name="attribute-filter-in-a-column-definition"></a>Attributfilter in einer Spaltendefinition
 
-Attribute sind Finanzdatenwerte, die ein Konto oder eine Buchung näher definieren. Die Kontoattribute umfassen **Anlage**, **Verbindlichkeiten**, **Umsatzerlös** und **Ausgaben**. Die Transaktionsattribute sind **Buchungsbeschreibung** und **Anwendungsdatum der Buchung**. Die Attributunterstützung unterscheidet sich möglicherweise zwischen den verschiedenen Microsoft Dynamics ERP-Systemen. Die **Attributfilter**-Zelle beschränkt die Daten in den **FD**-Spalten auf bestimmte Werte oder Bereiche für Attributkategorien. Obwohl diese Funktion zusammen mit einer **ATTR**-Spalte verwendet werden kann, ist die **ATTR**-Spalte nicht erforderlich. In einer **FD**-Spalte gibt es eine Grenze für den Konten oder Transaktionen, die der Bericht aus dem Attributfilter umfasst. **Hinweis:** Im Integrationshandbuch für Ihr System sehen Sie, welche Attribute Ihr ERP-System unterstützt.
+Attribute sind Finanzdatenwerte, die ein Konto oder eine Buchung näher definieren. Die Kontoattribute umfassen **Anlage**, **Verbindlichkeiten**, **Umsatzerlös** und **Ausgaben**. Die Transaktionsattribute sind **Buchungsbeschreibung** und **Anwendungsdatum der Buchung**. Die Attributunterstützung unterscheidet sich möglicherweise zwischen den verschiedenen Microsoft Dynamics ERP-Systemen. Die **Attributfilter**-Zelle beschränkt die Daten in den **FD**-Spalten auf bestimmte Werte oder Bereiche für Attributkategorien. Obwohl diese Funktion zusammen mit einer **ATTR**-Spalte verwendet werden kann, ist die **ATTR**-Spalte nicht erforderlich. In einer **FD**-Spalte gibt es eine Grenze für den Konten oder Transaktionen, die der Bericht aus dem Attributfilter umfasst.
+
+> [!NOTE]
+> Informationen zu den von Ihrem ERP-System unterstützten Attributen finden Sie im Integrationshandbuch für Ihr System.
 
 #### <a name="apply-an-attribute-filter-for-an-fd-column-on-a-report"></a>Anwenden eines Attributfilters für eine FD-Spalte in einem Bericht
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle **Attributfilter** für eine **FD**-Spalte.
-3.  Doppelklicken Sie im Dialogfeld **Attributfilter** in die Spalte **Attribut**, und wählen Sie dann den Filtertyp aus.
-4.  Wenn Sie die Ergebnisse weiter einzuschränken möchten, geben Sie in den Spalten und **Von** und **Bis** einen Bereich ein. Das Feld **Von** muss einen positiven Wert enthalten.
-5.  Klicken Sie auf **OK**.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie auf die Zelle **Attributfilter** für eine **FD**-Spalte.
+3. Doppelklicken Sie im Dialogfeld **Attributfilter** in die Spalte **Attribut**, und wählen Sie dann den Filtertyp aus.
+4. Wenn Sie die Ergebnisse weiter einzuschränken möchten, geben Sie in den Spalten und **Von** und **Bis** einen Bereich ein. Das Feld **Von** muss einen positiven Wert enthalten.
+5. Klicken Sie auf **OK**.
 
 #### <a name="example-of-an-attribute-filter"></a>Beispiel eines Attributfilters
 
 Im folgenden Beispiel wird ein Teil einer Spaltenbeschreibung angezeigt, die ein Kontoattribut in der Zeile hat **Buchcode/Attributkategorie** aufweist. Der Attributfilter für diese Spalte gibt den Wertebereich an, der im Bericht berücksichtigt werden soll.
 
-|                              | K    | B                    |
-|------------------------------|------|----------------------|
-| Spaltentyp                  | BESCHR | FD                   |
-| Buchcode/Attributkategorie |      | ISTWERT               |
-| Geschäftsjahr                  |      | BASE                 |
-| Zeitraum                       |      | 1:BASE               |
-| Abgedeckte Zeiträume              |      | PERIODISCH             |
-| ...                          |      |                      |
-| Spaltenbreite                 | 30   |                      |
-| ...                          |      |                      |
-| Attributfilter             |      |  Referenz=\[01:10\] |
+|                              | K    | B                   |
+|------------------------------|------|---------------------|
+| Spaltentyp                  | BESCHR | FD                  |
+| Buchcode/Attributkategorie |      | ISTWERT              |
+| Geschäftsjahr                  |      | BASE                |
+| Zeitraum                       |      | 1:BASE              |
+| Abgedeckte Zeiträume              |      | PERIODISCH            |
+| ...                          |      |                     |
+| Spaltenbreite                 | 30   |                     |
+| ...                          |      |                     |
+| Attributfilter             |      | Referenz=\[01:10\] |
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Dimensionsfilter in einer Spaltendefinition
 
-Ein Dimensionsfilter wird verwendet, um die Spalte **FD** auf bestimmte Dimensionswerte einzuschränken. Der Filter kann eine einzelne Dimension, einen Bereich von Dimensionen oder eine Gruppe von Dimensionen enthalten. Der Filter kann auch Dimensionswertsätze enthalten. Da Dimensionswerte variieren können, muss ein ..\financial-dimensions\dimension-based System nicht einer genauen Länge entsprechen. Der Filter wird unabhängig davon angewendet, ob der Bericht die Berichtsbaumstruktur umfasst. Sie können in jeder Position ein Platzhalterzeichen (\* oder ?) verwenden. Wenn Sie mehrere Konten angeben, setzen Sie ein Komma zwischen die Konten. Beispiel: +Konto=\[1200\]+Konto=\[1100\], Abteilung=\[01?\] Um alle Abteilungen für ein bestimmtes Konto zu erhalten, können Sie die Abteilungsdimension aus dem Dimensionsfilter ausschließen. Beispielsweise werden die folgenden Dimensionsfilter auf dieselbe Weise behandelt:
+Ein Dimensionsfilter wird verwendet, um die Spalte **FD** auf bestimmte Dimensionswerte einzuschränken. Der Filter kann eine einzelne Dimension, einen Bereich von Dimensionen oder eine Gruppe von Dimensionen enthalten. Der Filter kann auch Dimensionswertsätze enthalten. Da Dimensionswerte variieren können, muss ein ..\\financial-dimensions\\dimension-based System nicht einer genauen Länge entsprechen. Der Filter wird unabhängig davon angewendet, ob der Bericht die Berichtsbaumstruktur umfasst. Sie können in jeder Position ein Platzhalterzeichen (\* oder ?) verwenden. Wenn Sie mehrere Konten angeben, setzen Sie ein Komma zwischen die Konten. Beispiel: +Konto=\[1200\]+Konto=\[1100\], Abteilung=\[01?\] Um alle Abteilungen für ein bestimmtes Konto zu erhalten, können Sie die Abteilungsdimension aus dem Dimensionsfilter ausschließen. Beispielsweise werden die folgenden Dimensionsfilter auf dieselbe Weise behandelt:
 
--   +Konto=\[1100\],Abteilung
--   +Konto=\[1100\]
+- +Konto=\[1100\],Abteilung
+- +Konto=\[1100\]
 
 Sie können eine beliebige Kombination von alphanumerischen Zeichen für genaue Treffer verwenden, und Sie können Teildimensionen definieren. Beispielsweise umfasst **Standort = \[10\*\]** alle Standortdimensionswerte, die mit 10 beginnen.
 
 #### <a name="apply-a-dimension-filter-for-a-column-on-a-report"></a>Anwenden eines Dimensionsfilters für eine Spalte in einem Bericht
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle **Dimensionsfilter** für eine **FD**-Spalte.
-3.  Geben Sie im Dialogfeld **Dimensionen** die Filter ein, die angewendet werden sollen.
-4.  Klicken Sie auf **OK**.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie auf die Zelle **Dimensionsfilter** für eine **FD**-Spalte.
+3. Geben Sie im Dialogfeld **Dimensionen** die Filter ein, die angewendet werden sollen.
+4. Klicken Sie auf **OK**.
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formatieren eines Berichts für mehrere Währungen in einer Spaltendefinition
 
 In einem Bericht mit mehreren Währungen können Beträge in der natürlichen Währung (lokal), in der funktionalen Währung (Standard) oder in der Berichtswährung angezeigt werden. Die funktionale Währung eines Unternehmens wird im Microsoft Dynamics ERP-System definiert. Verwechseln Sie diese ERP-Einstellung nicht mit den Optionen für die regionale Einstellung des Betriebssystems, in denen Sie die Währungssymbole auswählen können, die standardmäßig in Berichten verwendet werden. Die folgenden währungsbezogenen Zellen sind in der Spaltendefinition verfügbar:
 
--   **Währungs-Anzeige** – Geben Sie die Art der Währung an (natürliche oder funktionale Währung oder Berichtswährung), in dem die Buchungen angezeigt werden. Diese Funktion wird manchmal auch als Währungsumrechnung bezeichnet. Hierbei handelt es sich um die Möglichkeit, Berichte für Hauptbuchbeträge in einer Währung zu erstellen, bei der es sich möglicherweise nicht um die funktionale Währung des Unternehmens und auch nicht um die Währung handelt, in der die Transaktion eingegeben wurde.
--   **Währungsfilter** - Geben Sie einen Währungsfilter an. Nur Transaktionen, die in der ausgewählten Währung eingegeben werden, werden im Bericht angezeigt.
+- **Währungs-Anzeige** – Geben Sie die Art der Währung an (natürliche oder funktionale Währung oder Berichtswährung), in dem die Buchungen angezeigt werden. Diese Funktion wird manchmal auch als Währungsumrechnung bezeichnet. Hierbei handelt es sich um die Möglichkeit, Berichte für Hauptbuchbeträge in einer Währung zu erstellen, bei der es sich möglicherweise nicht um die funktionale Währung des Unternehmens und auch nicht um die Währung handelt, in der die Transaktion eingegeben wurde.
+- **Währungsfilter** - Geben Sie einen Währungsfilter an. Nur Transaktionen, die in der ausgewählten Währung eingegeben werden, werden im Bericht angezeigt.
 
 > [!NOTE]
 > Um Berichte zu erstellen, die mehrere Währungen verwenden, müssen Sie das Kontrollkästchen **Alle Berichtswährungen einschließen** auf der Registerkarte **Bericht** der Berichtsdefinition auswählen. Gehen Sie folgendermaßen vor, um die funktionale Währung eines Unternehmens festzulegen.
 
-1.  Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Unternehmen**.
-2.  Wählen Sie im Dialogfeld **Unternehmen** ein Unternehmen aus, und klicken Sie anschließend auf **Anzeigen**.
-3.  Im Dialogfeld **Unternehmen anzeigen** unter **Regionale Optionen** können Sie die Währung anzeigen, die für das ausgewählte Unternehmen definiert ist.
+1. Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Unternehmen**.
+2. Wählen Sie im Dialogfeld **Unternehmen** ein Unternehmen aus, und klicken Sie anschließend auf **Anzeigen**.
+3. Im Dialogfeld **Unternehmen anzeigen** unter **Regionale Optionen** können Sie die Währung anzeigen, die für das ausgewählte Unternehmen definiert ist.
 
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Angeben der Währung in einem Bericht mit mehreren Währungen
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Doppelklicken Sie auf die Zelle **Wähungsanzeige** in der entsprechenden **FD**-Spalte, und wählen Sie dann die Option für das Anzeigen von Währungsinformationen aus: **Natürlich/ursprüngliche Währung**, **Funktionale Währung aus Unternehmensinformationen** oder die Berichtswährung.
-3.  Doppelklicken Sie auf die Zelle **Währungsfilter** in der entsprechenden **FD**-Spalte, und wählen Sie dann den entsprechenden Währungscode in der Liste aus. Es werden nur Transaktionen im Bericht angezeigt, die in dieser Währung eingegeben werden.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Doppelklicken Sie auf die Zelle **Wähungsanzeige** in der entsprechenden **FD**-Spalte, und wählen Sie dann die Option für das Anzeigen von Währungsinformationen aus: **Natürlich/ursprüngliche Währung**, **Funktionale Währung aus Unternehmensinformationen** oder die Berichtswährung.
+3. Doppelklicken Sie auf die Zelle **Währungsfilter** in der entsprechenden **FD**-Spalte, und wählen Sie dann den entsprechenden Währungscode in der Liste aus. Es werden nur Transaktionen im Bericht angezeigt, die in dieser Währung eingegeben werden.
 
 > [!NOTE]
 > Die Optionen, die hier beschriebenen werden, hängen vom ERP-System ab. Weitere Informationen finden Sie in der Dokumentation des [Microsoft ERP-Systems](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
@@ -529,8 +544,8 @@ In einem Bericht mit mehreren Währungen können Beträge in der natürlichen W�
 
 Phyllis hat die folgende Auswahl für die Währung in der Spaltendefinition getroffen:
 
--   **Währungsfilter:** Yen
--   **Währungsanzeige:**-Funktional (US-Dollar)
+- **Währungsfilter:** Yen
+- **Währungsanzeige:**-Funktional (US-Dollar)
 
 Basierend auf dem von Phyllis ausgewählten Währungsfilter enthält der Bericht nur Transaktionen, die in japanischen Yen (JPY) eingegeben wurden. Basierend auf ihrer ausgewählten Währungsanzeige zeigt der Bericht diese Transaktionen in der funktionalen Währung US-Dollar (USD) an.
 
@@ -539,33 +554,36 @@ Basierend auf dem von Phyllis ausgewählten Währungsfilter enthält der Bericht
 In der folgenden Tabelle werden die Berichtsergebnisse aufgelistet, die aufgrund der von Phyllis getroffenen Auswahl für verschiedene Kombinationen der Optionen in den Zellen **Währungsanzeige** und **Währungsfilter** auftreten können. Die funktionale Währung ist USD.
 
 
-|            Zelle Währungsanzeige             | Zelle Währungsfilter |                                                                                                       Berichtsergebnis                                                                                                        |
-|----------------------------------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         Natürliche/ursprüngliche Währung         | <strong>YEN</strong> |                                                                   <strong>Y6,000</strong> – Das Ergebnis zeigt nur Buchungen an, die in JPY eingegeben wurden.                                                                   |
-| Funktionale Währung aus Unternehmensinformationen | <strong>YEN</strong> |          <strong>$60</strong> – Das Ergebnis zeigt nur Buchungen an, die in JPY eingegeben wurden, und es zeigt diese in USD an. <strong>Hinweis:</strong> Der Wechselkurs ist ungefähr 100 JPY pro USD.           |
-| Funktionale Währung aus Unternehmensinformationen |        Leer         | <strong>$2.310\*\</strong>* – Das Ergebnis zeigt alle Daten in der funktionalen Währung an, die in den Unternehmensdaten angegeben ist. <strong>Hinweis:</strong> Dieser Betrag ist die Summe aller Buchungen in der funktionalen Währung. |
-|         Natürliche/ursprüngliche Währung         |        Leer         |                                                       <strong>$2,250</strong> – Das Ergebnis zeigt alle Beträge in der Währung an, in der die Buchung ausgeführt wurde.                                                        |
+| Zelle Währungsanzeige                        | Zelle Währungsfilter | Berichtsergebnis |
+|----------------------------------------------|----------------------|---------------|
+| Natürliche/ursprüngliche Währung                 | **YEN**              | **Y6.000** - Das Ergebnis zeigt nur Buchungen an, die in JPY eingegeben wurden. |
+| Funktionale Währung aus Unternehmensinformationen | **YEN**              |**$60** - Das Ergebnis zeigt nur die Transaktionen, die in JPY eingegeben wurden zeigt diese Transaktionen in USD an.<blockquote>[!NOTE] Der Wechselkurs ist ungefähr 100 JPY pro USD.</blockquote> |
+| Funktionale Währung aus Unternehmensinformationen | Leer                | **$2.310**  - Das Ergebnis zeigt alle Daten in der funktionalen Währung an, die unter Unternehmensdaten angegeben ist.<blockquote>[!NOTE] Dieser Betrag ist die Summe aller Buchungen in der funktionalen Währung.</blockquote> |
+| Natürliche/ursprüngliche Währung                 | Leer                | **$2.250** - Das Ergebnis zeigt alle Beträge in der Währung an, in der die Transaktion ausgeführt wurde. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Berechnungsspalte in einer Spaltendefinition
 
-Ein Spaltentyp **CALC** in einer Spaltendefinition unterstützt komplexe Berechnungen in der <strong>Formel</strong>-Zelle, und kann die Operatoren <strong>+</strong>, <strong>-</strong>, <strong>\</strong> und **/* enthalten sowie <strong>IF/THEN/ELSE</strong>-Anweisungen. Eine Berechnungsspalte kann auf jede beliebige andere Spalte auch auf nachfolgende Spalten verweisen. Dazu kann eine Berechnungsspalte das Geschäftsjahr und die Periode enthalten, um Überschriften für die Spalte zu unterstützen. Die Berechnungsformel kann bis zu 1024 Zeichen lang sein. Verwenden Sie eine spezielle Formatüberschreibung, um das Ergebnis der Berechnung in Prozent auszudrücken. <strong>Hinweis:</strong> In den Ergebnissen von Berechnungsformeln werden keine Werte in nicht druckbaren Spaltenbereichen berücksichtigt. Bei <strong>A:D</strong> wird beispielsweise <strong>0</strong> (Null) gedruckt, wohingegen bei <strong>A+B+C</strong> für nicht druckbare Werte der Wert berechnet wird.
+Ein **CALC** Spaltentyp in einer Spaltendefinition unterstützt komplexe Berechnungen in der **Formel** Zelle und kann **+**, **-**, **\***, und **/** Operatoren, und auch **IF/THEN/ELSE** Aussagen enthalten. Eine Berechnungsspalte kann auf jede beliebige andere Spalte auch auf nachfolgende Spalten verweisen. Dazu kann eine Berechnungsspalte das Geschäftsjahr und die Periode enthalten, um Überschriften für die Spalte zu unterstützen. Die Berechnungsformel kann bis zu 1024 Zeichen lang sein. Verwenden Sie eine spezielle Formatüberschreibung, um das Ergebnis der Berechnung in Prozent auszudrücken.
+
+> [!NOTE]
+> In den Ergebnissen von Berechnungsformeln werden keine Werte in nicht druckbaren Spaltenbereichen berücksichtigt. Beispielsweise **A:D** druckt **0** (null), wobei **A+B+C** für nicht druckbare Werte den Wert berechnet.
 
 #### <a name="operators-in-calculation-columns"></a>Operatoren in Berechnungsspalten
 
 Zum Addieren, Subtrahieren, Multiplizieren oder Teilen von Spalten geben Sie die Buchstaben der Spalte in der Reihenfolge der Berechnung ein und verwenden dann den entsprechenden Operator, um die Spaltenbuchstaben voneinander zu trennen. In der folgenden Tabelle werden die Operatoren beschrieben, die Sie in einer Berechnungsspalte verwenden können.
 
-| Bediener | Beispielberechnung | Beschreibung                                                                                                                                                                                                                                    |
-|----------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| +        | A+C                 | Addieren Sie den Betrag in Spalte A zum Betrag in der Spalte C.                                                                                                                                                                                          |
-| :        | A:C A:C-D           | Addieren Sie einen Bereich aufeinanderfolgender Spalten. Beispielsweise addiert die **A:C**-Formel die Summen der Spalten A bis C, und die Formel **A:C-D** addiert die Summen der Spalten A bis C und subtrahiert anschließend den Betrag in der Spalte D.                          |
-| -        | A-C                 | Subtrahieren Sie den Betrag in Spalte A vom Betrag in der Spalte C. **Hinweis:** Sie können auch das Minuszeichen (-) verwenden, um die Vorzeichen in einer Spalte umzukehren. Verwenden Sie beispielsweise **- A+B**, um den umgekehrten Betrag in Spalte A zum Betrag in der Spalte B zu addieren. |
-| \*       | A\*C                | Multiplizieren Sie den Betrag in Spalte A mit dem Betrag in der Spalte C.                                                                                                                                                                                     |
-| /        | A/C                 | Dividieren Sie den Betrag in Spalte A durch den Betrag in der Spalte C.                                                                                                                                                                                       |
+| Bediener | Beispielberechnung | Beschreibung |
+|----------|---------------------|-------------|
+| +        | A+C                 | Addieren Sie den Betrag in Spalte A zum Betrag in der Spalte C. |
+| :        | A:C A:C-D           | Addieren Sie einen Bereich aufeinanderfolgender Spalten. Beispielsweise addiert die **A:C**-Formel die Summen der Spalten A bis C, und die Formel **A:C-D** addiert die Summen der Spalten A bis C und subtrahiert anschließend den Betrag in der Spalte D. |
+| -        | A-C                 | Subtrahieren Sie den Betrag in Spalte C vom Betrag in Spalte A.<blockquote>[!NOTE] Sie können auch das Minuszeichen (-) verwenden, um die Zeichen in einer Spalte umzukehren. Verwenden Sie beispielsweise <strong>- A+B</strong>, um den umgekehrten Betrag in Spalte A zum Betrag in der Spalte B zu addieren.</blockquote> |
+| \*       | A\*C                | Multiplizieren Sie den Betrag in Spalte A mit dem Betrag in der Spalte C. |
+| /        | A/C                 | Dividieren Sie den Betrag in Spalte A durch den Betrag in der Spalte C. |
 
 #### <a name="use-a-calculation-formula-in-a-column-definition"></a>Verwenden einer Berechnungsformel in einer Spaltendefinition
 
-1.  Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2.  Geben Sie in der entsprechenden **CALC**-Spalte eine Formel in der Zelle **Formel** ein.
+1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
+2. Geben Sie in der entsprechenden **CALC**-Spalte eine Formel in der Zelle **Formel** ein.
 
 #### <a name="complex-calculations"></a>Komplexe Berechnungen
 
@@ -573,23 +591,25 @@ Eine komplexe Berechnung kann eine beliebige Kombination von Zellbezügen, Opera
 
 #### <a name="specify-report-cells-in-a-column-calculation"></a>Angeben von Berichtszellen in einer Spaltenberechnung
 
-Sie können auf eine bestimmte Berichtszelle verweisen, indem Sie einen Spaltenbuchstaben und einen Zeilencode eingeben. Beispielsweise bezieht sich **B.100** auf Zeilencode 100 in der Spalte B. Sie können eine vollständige Spalte durch einen bestimmten Berichtszellenbetrag dividieren, der in der gleichen Spalte ist. Die Berechnung **B/B.100** bedeutet beispielsweise, dass der Betrag in der Spalte B durch den Wert in Zeilencode 100 in der Spalte B dividiert werden soll. Wenn die Berechnung auf eine Spalte verweist, die von einer anderen Spalte abhängt, wird die abhängige Spalte zuerst aufgelöst. Wenn Sie in einer Spalte auf eine andere Spalte verweisen, die wiederum zurück auf die erste Spalte verweist, führt dies zu einem Zirkelverweisfehler. **Hinweis:** Die Berechnung ist möglicherweise nicht korrekt, wenn Sie die Berechnungspriorität für den Bericht ändern. Sie können die Berechnungspriorität auf der Registerkarte **Einstellungen** der Berichtsdefinition festlegen.
+Sie können auf eine bestimmte Berichtszelle verweisen, indem Sie einen Spaltenbuchstaben und einen Zeilencode eingeben. Beispielsweise bezieht sich **B.100** auf Zeilencode 100 in der Spalte B. Sie können eine vollständige Spalte durch einen bestimmten Berichtszellenbetrag dividieren, der in der gleichen Spalte ist. Die Berechnung **B/B.100** bedeutet beispielsweise, dass der Betrag in der Spalte B durch den Wert in Zeilencode 100 in der Spalte B dividiert werden soll. Wenn die Berechnung auf eine Spalte verweist, die von einer anderen Spalte abhängt, wird die abhängige Spalte zuerst aufgelöst. Wenn Sie in einer Spalte auf eine andere Spalte verweisen, die wiederum zurück auf die erste Spalte verweist, führt dies zu einem Zirkelverweisfehler.
+
+> [!NOTE]
+> Diese Berechnung ist möglicherweise falsch, wenn Sie die Berechnungspriorität für den Bericht ändern. Sie können die Berechnungspriorität auf der Registerkarte **Einstellungen** der Berichtsdefinition festlegen.
 
 #### <a name="multiply-or-divide-a-column-by-a-base-row"></a>Multiplizieren oder Teilen einer Spalte mit/durch eine(r) Basiszeile
 
-Sie können eine Spalte erstellen, in der alle Werte in einer angegebenen Spalte als Prozentsatz einer Basiszahl angezeigt werden. Damit verfügen Sie über eine Methode, um Beziehungen zwischen Zeilen darzustellen, z. B. einen Prozentsatz einer Zeile mit Umsätzen oder mit Gesamtausgaben. Um jede Zeile in einer bestimmten Spalte mit einer Basiszeile zu multiplizieren oder zu dividieren, geben Sie die zu verwendeten Spalte in die Berechnung ein und geben Sie anschließend **\*BASEROW** oder **/BASEROW** ein. Geben Sie **C\*BASEROW** or **C/BASEROW**. **Hinweis:** Wenn Sie eine Basiszeilenberechnung in einer Spaltendefinition verwenden, sollten Sie sicherstellen, dass jede Zeilendefinition, die mit dieser Spaltendefinition verwendet wird, mindestens eine Basiszeile für Berechnungen enthält.
+Sie können eine Spalte erstellen, in der alle Werte in einer angegebenen Spalte als Prozentsatz einer Basiszahl angezeigt werden. Damit verfügen Sie über eine Methode, um Beziehungen zwischen Zeilen darzustellen, z. B. einen Prozentsatz einer Zeile mit Umsätzen oder mit Gesamtausgaben. Um jede Zeile in einer bestimmten Spalte mit einer Basiszeile zu multiplizieren oder zu dividieren, geben Sie die zu verwendeten Spalte in die Berechnung ein und geben Sie anschließend **\*BASEROW** oder **/BASEROW** ein. Geben Sie **C\*BASEROW** or **C/BASEROW**.
+
+> [!NOTE]
+> Wenn Sie in einer Spaltendefinition eine Basiszeilenberechnung verwenden, muss jede Zeilendefinition, die mit dieser Spaltendefinition verwendet wird, mindestens eine Basiszeile für Berechnungen enthalten.
 
 #### <a name="divide-the-amount-in-a-column-by-the-number-of-periods"></a>Teilen des Betrags in der Spalte durch die Anzahl der Zeiträume
 
 Sie können den Betrag in einer Spalte durch eine angegebene Anzahl von Zeiträumen dividieren. Beispielsweise dividiert die Formel **B/Perioden** den Wert in der Spalte B durch die Anzahl der Perioden in der Spalte B. Wenn die Berechnung mehrere Spalten umfasst, geben Sie die Anzahl der Perioden an, die bei der Berechnung verwendet werden sollen. Beispielsweise addiert die Formel **(B+C)/Perioden** die Beträge in der Spalte B und in der Spalte C und dividiert dann das Ergebnisses durch den Periodenwert.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Zeilendefinitionen in der Finanzberichterstellung](row-definitions-financial-reporting.md)
 
 [Erweiterte Formatierungsoptionen in der Finanzberichterstellung](advanced-formatting-options-financial-reporting.md)
-
-
-
 

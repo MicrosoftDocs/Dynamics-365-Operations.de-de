@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 17b42ae7e177a42b732654f2952ec5fe35acb1a9
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,34 @@ In diesem Thema wird der Microsoft Power BI-Inhalt **Arbeitskraftkennzahlen** be
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
 Der **Arbeitskraftkennzahlen**-Inhalt für Power BI wird im Arbeitsbereich **Personalverwaltung** angezeigt, wenn Sie eines der folgenden Produkte verwenden:
 
-- Microsoft Dynamics 365 for Finance and Operations 
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 Die folgende Tabelle enthält die Metrik, die für jede Berichtsseite verfügbar ist.
 
-| Bericht                                           | Metriken                                                                                                                                                                                                            |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Personen-Metrik                                   | Zusammenfassung der anderen Berichte                                                                                                                           |
-| Mitarbeiterzahlanalyse nach Unternehmen, Abteilung, Standort | Mitarbeiterzahl nach Unternehmen, Mitarbeiterzahl nach Abteilung, Mitarbeiterzahl nach Standort und Mitarbeiterzahl gesamt                                                                                                                           |
-| Mitarbeiterzahlanalyse nach Stelle, Schritt, Manager            | Mitarbeiterzahl nach Stelle, Mitarbeiterzahl nach Schritt, Mitarbeiterzahl nach Manager und Mitarbeiterzahl gesamt                                                                                                                                      |
-| Mitarbeiterzahl-Trendanalyse                         | Mitarbeiteranzahl in diesem Jahr kontra letztem Jahr nach Unternehmen und rollierende Mitarbeiterzahl der letzten 12 Monate.                                                                                                                        |
+| Bericht                                           | Metriken |
+|--------------------------------------------------|---------|
+| Personen-Metrik                                   | Zusammenfassung der anderen Berichte |
+| Mitarbeiterzahlanalyse nach Unternehmen, Abteilung, Standort | Mitarbeiterzahl nach Unternehmen, Mitarbeiterzahl nach Abteilung, Mitarbeiterzahl nach Standort und Mitarbeiterzahl gesamt |
+| Mitarbeiterzahlanalyse nach Stelle, Schritt, Manager            | Mitarbeiterzahl nach Stelle, Mitarbeiterzahl nach Schritt, Mitarbeiterzahl nach Manager und Mitarbeiterzahl gesamt |
+| Mitarbeiterzahl-Trendanalyse                         | Mitarbeiteranzahl in diesem Jahr kontra letztem Jahr nach Unternehmen und rollierende Mitarbeiterzahl der letzten 12 Monate. |
 | FTE-Analyse                                     | Gesamtzahl der Vollzeitmitarbeiter (FTE), Total zugewiesene FTE, FTE nach Abteilung, FTE für die letzten 12 Monate und FTE nach Stelle |
 | Belegschaftsdemografie                           | Mitarbeiterzahl nach Alter und Geschlecht, Mitarbeiterzahl nach ethnischer Herkunft, Mitarbeiterzahl nach Veteranenstatus, Mitarbeiterzahl nach Familienstand, Anzahl an Vollzeitstudenten, durchschnittliche Beschäftigungsdauer, Durchschnittsalter, Anzahl weiblicher und männlicher Mitarbeiter im Vergleich und von Mitarbeiter gesprochene Sprachen. |
-| Stellenanalyse                                | Offene Stellen nach Abteilung, offene kontra besetzte Stellen, aktive kontra inaktive Stellen und Stellen nach Abteilung                                                                                                   |
-| Analyse der Abgänge                               | Abgänge in diesem Jahr im Vergleich zum letzten Jahr, Abgänge, ausscheidende Mitarbeiter nach Alter und Geschlecht, durchschnittliche Beschäftigungsdauer von ausscheidenden Mitarbeitern, ausscheidende Mitarbeiter in diesem Monat und Mitarbeiter mit Ausscheidungsgrund.                                                                   |
-| Personen nach Abteilung                             | Mitarbeiter mit einer Personalnummer nach Abteilung, Position und Zuweisungsstart-und enddaten                                                                                                                       |
-| Dienstalteranalyse                               | Durchschnittliche Beschäftigung, durchschnittliche Dienstjahre nach Unternehmen und Dienstalterliste                                                                                                                                                              |
-| Mitarbeiter-Jahrestage                           | Jahrestage in diesem Monat, Jahrestage im nächsten Monat, Mitarbeiter nach Dienstjahren und Dienstjahre nach Abteilung                                                                                                                                                                    |
-| Mitarbeiter-Geburtstage                               | Geburtstage in diesem Monat, Geburtstage im nächsten Monat, Mitarbeitergeburtstage und Geburtstage nach Monat und Abteilung                                                                                                                                                                    |
-| Masseneinstellungsprojekte                               | Gesamte Masseneinstellungsprojekte, Masseneinstellungsprojekte nach Status, Masseneinstellungsprojekte nach Abteilung und Eigentümer, Masseneinstellungsprojekte nach Einzelvorgang und Masseneinstellungsprojekte                                                                                                                                                                    |
+| Stellenanalyse                                | Offene Stellen nach Abteilung, offene kontra besetzte Stellen, aktive kontra inaktive Stellen und Stellen nach Abteilung |
+| Analyse der Abgänge                               | Abgänge in diesem Jahr im Vergleich zum letzten Jahr, Abgänge, ausscheidende Mitarbeiter nach Alter und Geschlecht, durchschnittliche Beschäftigungsdauer von ausscheidenden Mitarbeitern, ausscheidende Mitarbeiter in diesem Monat und Mitarbeiter mit Ausscheidungsgrund. |
+| Personen nach Abteilung                             | Mitarbeiter mit einer Personalnummer nach Abteilung, Position und Zuweisungsstart-und enddaten |
+| Dienstalteranalyse                               | Durchschnittliche Beschäftigung, durchschnittliche Dienstjahre nach Unternehmen und Dienstalterliste |
+| Mitarbeiter-Jahrestage                           | Jahrestage in diesem Monat, Jahrestage im nächsten Monat, Mitarbeiter nach Dienstjahren und Dienstjahre nach Abteilung |
+| Mitarbeiter-Geburtstage                               | Geburtstage in diesem Monat, Geburtstage im nächsten Monat, Mitarbeitergeburtstage und Geburtstage nach Monat und Abteilung |
+| Masseneinstellungsprojekte                               | Gesamte Masseneinstellungsprojekte, Masseneinstellungsprojekte nach Status, Masseneinstellungsprojekte nach Abteilung und Eigentümer, Masseneinstellungsprojekte nach Einzelvorgang und Masseneinstellungsprojekte |
 
 Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Stellen Sie sicher, dass Sie den **Arbeitskraftkennzahlen** Power BI-Inhalt herunterladen, der der von Ihnen verwendeten Microsoft Dynamics 365-Version entspricht.
 
->[!NOTE]
->Die PBIX-Dateien, die in Lifecycle Services verfügbar sind, gelten nur für Finance and Operations.
+> [!NOTE]
+> Die PBIX-Dateien, die in Lifecycle Services verfügbar sind, gelten nur für Finance and Operations.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 Die folgende Tabelle zeigt die Entitäten, auf denen das Paket basiert.
@@ -88,6 +88,4 @@ Die folgende Tabelle zeigt die Entitäten, auf denen das Paket basiert.
 | Mitarbeitertrend           | Arbeitskräfte im Zeitverlauf, Mitarbeiterzahl, Unternehmen und Position                                 | Unternehmen, geografischer Standort, Mitarbeitername, Vorgesetzter, Kalender-Gegenkonto, Datum, Mitarbeitertitel, Demographie, Beschäftigung, Stelle |
 | Masseneinstellungsprojekt        | Anzahl der Massenprojekte, Projekteigentümer und Projektstatus                     | Unternehmen, Positionsstatus für Masseneinstellung. |
 | Positionen für Masseneinstellung           | Abteilung, Beschäftigungstyp und Position                                           | Datum, Stelle, Masseneinstellungsprojekt |
-
-
 
