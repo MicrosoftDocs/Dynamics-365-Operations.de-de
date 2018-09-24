@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 55699cb41c712b49954f9ad6b03c2e7813a3a98a
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
 ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,21 +36,21 @@ In diesem Thema wird beschrieben, was im **Umsatz- und Rentabilitätsleistung** 
 
 Der **Vertrieb und Rentabilitätsleistung** Power BI Inhalt wurde erstellt, sodass Verkaufsleiter schließlich die eigentliche Vertriebsmetrik des Umsatzerlöses, des Bruttogewinns der Ränder und überwachen können. Es verwendet Transaktionsdaten und stellt eine Gesamtübersicht zu unternehmensweiten Umsatzahlen und eine Aufschlüsselung des Verkaufsergebnisses für Debitoren und Produkte zur Verfügung.
 
-Berichte entsperren Änderungen im Umsatzerlös und im Gewinn-Wachstum im Zeitverlauf. Daher kann der Bericht dazu verwendet werden, um Manager über die positiven und negativen Ausgabentrends für einzelne Kunden und Produkten zu warnen. Darüber hinaus vergleichen die Diagramme den Umsatzerlös und die Rentabilität verschiedener Produktkategorien und Debitorengruppen von gegenseitig. Daher können Kategorie- und Regionalmanager gute und schlechte Produkte zu identifizieren. Schließlich zeichnet ein umfassender Bericht einen einzelnen Umsatzerlös des Debitors mit Gewinnspanne auf. Deshalb haben Kundenbetreuer eine Daten-unterstützte Basis, die dafür verwendet werden kann, die Verkaufs- und Marketing-Aufwände für jedes Debitorenprofil zu optimieren. 
+Berichte entsperren Änderungen im Umsatzerlös und im Gewinn-Wachstum im Zeitverlauf. Daher kann der Bericht dazu verwendet werden, um Manager über die positiven und negativen Ausgabentrends für einzelne Kunden und Produkten zu warnen. Darüber hinaus vergleichen die Diagramme den Umsatzerlös und die Rentabilität verschiedener Produktkategorien und Debitorengruppen von gegenseitig. Daher können Kategorie- und Regionalmanager gute und schlechte Produkte zu identifizieren. Schließlich zeichnet ein umfassender Bericht einen einzelnen Umsatzerlös des Debitors mit Gewinnspanne auf. Deshalb haben Kundenbetreuer eine Daten-unterstützte Basis, die dafür verwendet werden kann, die Verkaufs- und Marketing-Aufwände für jedes Debitorenprofil zu optimieren.
 
 Das **Umsatz- und Rentabilitätsleistung**-Inhaltspaket ermöglicht es Verkaufsleitern, die Verkaufsleistung wie folgt zu analysieren:
 
--   Umsatzerlös, laufenden Jahres (nach Debitorengruppen- und Personendebitoren, Verkaufskategorien und Einzelprodukte und bestimmte geografische Region)
--   Umsatzerlösänderung, jährlich (nach Debitorenregionen und -Verkaufskategorien)
+- Umsatzerlös, laufenden Jahres (nach Debitorengruppen- und Personendebitoren, Verkaufskategorien und Einzelprodukte und bestimmte geografische Region)
+- Umsatzerlösänderung, jährlich (nach Debitorenregionen und -Verkaufskategorien)
 
 Rentabilität kann auf folgende Arten analysiert werden:
 
--   Bruttogewinn und Gewinnspanne (nach Debitorengruppen und Produktverkaufskategorien)
--   Bruttogewinnänderung, jährlich
--   Debitorenrentabilität (nach Umsatz gegen Bruttogewinn)
+- Bruttogewinn und Gewinnspanne (nach Debitorengruppen und Produktverkaufskategorien)
+- Bruttogewinnänderung, jährlich
+- Debitorenrentabilität (nach Umsatz gegen Bruttogewinn)
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Der **Vertrieb und Rentabilitätsleistung** Power BI-Inhalt wird auf der **Vertrieb und Rentabilitätsleistung** angezeigt (**Vertrieb und Marketing** > **Abfragen und Berichte** > **Vertriebsleistungsanalyse** > **Vertrieb und Rentabilitätsleistung**). 
+Der **Vertrieb und Rentabilitätsleistung** Power BI-Inhalt wird auf der **Vertrieb und Rentabilitätsleistung** angezeigt **(Vertrieb und Marketing**\>**Abfragen und Berichte**\>**Vertriebsleistungsanalyse**\>**Vertrieb und Rentabilitätsleistung**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 Der Power BI Inhalt **Umsatz- und Rentabilitätsleistung** enthält einen Bericht, der aus einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspaket.
@@ -77,19 +77,18 @@ Der Power BI Inhalt **Umsatz- und Rentabilitätsleistung** enthält einen Berich
 
 \* Umsatzerlös dieser und letzten Jahr und Wachstum nach Verkaufskategorie.
 
-
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Die folgenden Daten werden verwendet, um den Bericht im Power BI-Inhalt **Umsatz- und Rentabilitätsleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md). 
+Die folgenden Daten werden verwendet, um den Bericht im Power BI-Inhalt **Umsatz- und Rentabilitätsleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
-Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Verkaufscube in Microsoft Dynamics AX 2012 und Microsoft Dynamics AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätsspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
+Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Verkaufscube in Microsoft Dynamics AX 2012 und Microsoft Dynamics AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätsspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
 Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Inhaltspakets verwendet.
 
-| Entität        | Zentrale aggregierte Messungen                   | Datenquelle für Dynamics 365                    | Feld                                        | Beschreibung                                   |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
-| Rechnungspositionen | Umsatzerlös                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Der Betrag in der Buchhaltungswährung.            |
-|               | Wareneinsatz                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Die Summe der Kosten und die Anpassungen.    |
-|               | Betrag der Provisionsposition - Buchhaltungswährung | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Kommissionsbetrag in der Buchungswährung. |
+| Entität        | Zentrale aggregierte Messungen                   | Datenquelle für Dynamics 365 | Feld                                        | Beschreibung                                       |
+|---------------|----------------------------------------------|------------------------------|----------------------------------------------|---------------------------------------------------|
+| Rechnungspositionen | Umsatzerlös                                      | CustInvoiceTrans             | SUM(LineAmountMST)                           | Der Betrag in der Buchhaltungswährung.            |
+|               | Wareneinsatz                           | InventTrans                  | SUM(CostAmountPosted + CostAmountAdjustment) | Die Summe der Kosten und die Anpassungen.    |
+|               | Betrag der Provisionsposition - Buchhaltungswährung | CustInvoiceTrans             | SUM(CommissAmountMST)                        | Kommissionsbetrag in der Buchungswährung. |
 
 Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet werden, um mehrere berechnete Kennzahlen der Rechnungspositionsentität im Dataset des Inhalts zu erstellen.
 

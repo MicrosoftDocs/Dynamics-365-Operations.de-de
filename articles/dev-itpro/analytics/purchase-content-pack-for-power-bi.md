@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 07b6f433a8355d7f9ed6dce8e26f78d38a86a713
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
 ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,32 +36,27 @@ In diesem Thema wird beschrieben, was im **Einkaufs- und Ausgabenanalyse** Micro
 
 Der **Einkaufs- und Ausgabenanalyse** Power BI Inhalt wurde entworfen, um Einkaufsleiter und Manager zu unterstützen, die für Budgets verantwortlich sind und ein Auge auf die Einkaufausgaben haben. Manager können Einkaufsausgaben wie folgt analysieren:
 
--   Einkauf des laufenden Jahres (nach Kreditorengruppen- und Personenkreditoren Beschaffungskategorie, und Einzelprodukte und Standort des Kreditors)
--   Jährliche Einkaufänderung (nach Kreditorengruppe und Beschaffungskategorie)
+- Einkauf des laufenden Jahres (nach Kreditorengruppen- und Personenkreditoren Beschaffungskategorie, und Einzelprodukte und Standort des Kreditors)
+- Jährliche Einkaufänderung (nach Kreditorengruppe und Beschaffungskategorie)
 
 Es verwendet Transaktionsdaten und stellt eine Gesamtübersicht zu unternehmensweiten Umsatzahlen und eine Aufschlüsselung des Einkaufsergebnisses für Debitoren und Produkte zur Verfügung. Berichte zeigen Änderungen im Einkauf, der im Zeitverlauf aufwendet. Daher kann der Bericht dazu verwendet werden, um Manager über die positiven und negativen Ausgabentrends für einzelne Kreditoren und Produkten zu warnen. Diagramme zeigen zusätzlich Einkaufsausgaben für unterschiedliche Beschaffungskategorien und Kreditorengruppen an. Deshalb können Kategorie- und Regional-Manager die Diagramme nutzen, um Änderungen im Ausgabenverhalten zu identifizieren.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Der **Einkaufausgabenanalyse** Poper BI-Inhalt wird auf der **Einkauf und Ausgabenanalyse** angezeigt (**Beschaffung** > **Abfragen und Berichte** > **Einkaufleistungsanalyse** > **Einkauf und Ausgabenanalyse**). 
+Der **Einkaufausgabenanalyse** Power BI-Inhalt wird auf der **Einkauf und Ausgabenanalyse** angezeigt (**Beschaffung**\>**Abfragen und Berichte**\>**Einkaufleistungsanalyse**\>**Einkauf und Ausgabenanalyse**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
 Der Power BI Inhalt **Einkaufsausgabenanalyse** enthält einen Bericht, der aus einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Liste bietet eine Übersicht über die Visualisierungen.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Berichtsseiten</th>
 <th>Diagramme</th>
 <th>Kacheln</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Einkauf pro Kreditor</td>
 <td><ul>
 <li>Top 10 Kreditoren nach Einkauf (gestapeltes Balkendiagramm)</li>
@@ -76,7 +71,7 @@ Der Power BI Inhalt **Einkaufsausgabenanalyse** enthält einen Bericht, der aus 
 <li>Summe aktive Kreditoren</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Einkaufs nach Produkt</td>
 <td><ul>
 <li>Bestellung nach Beschaffungskategorie Produktnamen (Tortendiagramm)</li>
@@ -89,7 +84,7 @@ Der Power BI Inhalt **Einkaufsausgabenanalyse** enthält einen Bericht, der aus 
 <li>Zahl der Produkte, die zu 80% Einkauf betragen</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Einkaufsbericht nach Zeitraum*</td>
 <td><ul>
 <li>Einkauf nach Monat/Tag (Spaltendiagramm)</li>
@@ -102,7 +97,7 @@ Der Power BI Inhalt **Einkaufsausgabenanalyse** enthält einen Bericht, der aus 
 <li>YOY-Einkaufzunahme %</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Einkauf pro Kreditorstandort</td>
 <td><ul>
 <li>Einkauf nach Ort</li>
@@ -111,7 +106,7 @@ Der Power BI Inhalt **Einkaufsausgabenanalyse** enthält einen Bericht, der aus 
 </ul></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Einkaufausgabenanalyse nach Zeit</td>
 <td><ul>
 <li>Einkauf aktuelles Jahr nach Monat/Tag (Liniendiagramm)</li>
@@ -119,7 +114,7 @@ Der Power BI Inhalt **Einkaufsausgabenanalyse** enthält einen Bericht, der aus 
 </ul></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Einkaufausgabenanalyse nach Kreditor</td>
 <td><ul>
 <li>Top 10 % der Bestellung (Trichter)</li>
@@ -136,7 +131,7 @@ Der Power BI Inhalt **Einkaufsausgabenanalyse** enthält einen Bericht, der aus 
 ## <a name="data-model-and-entities"></a>Datenmodell und Entitäten
 Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Einkaufs- und Ausgabenanalyse** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
-Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Einkaufscube in Microsoft Dynamics AX 2012 und Microsoft Dynamics AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter dem Verfahren für die Bereitstellung aggregierter Messungen im Entitäts-Shop unter  [Power BI Integration mit Entität-Shop](power-bi-integration-entity-store.md). Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Inhaltspakets verwendet.
+Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Einkaufscube in Microsoft Dynamics AX 2012 und Microsoft Dynamics AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätsspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter dem Verfahren für die Bereitstellung aggregierter Messungen im Entitäts-Shop unter  [Power BI Integration mit Entität-Shop](power-bi-integration-entity-store.md). Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Inhaltspakets verwendet.
 
 | Entität        | Zentrale aggregierte Messungen | Datenquelle                                 | Feld              | Beschreibung                            |
 |---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|

@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3aa27b3ac263c6c952de7e4b508f48f21ba489ad
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -37,21 +37,21 @@ Die Formatkonfiguration für die elektronische Berichterstellung (ER) umfasst in
 ## <a name="availability-and-general-prerequisites"></a>Verfügbarkeit und allgemeine Voraussetzungen
 Die Funktionalität für die ER-Ziele ist nicht in Microsoft Dynamics AX 7.0 (Februar 2016) verfügbar. Daher müssen Sie Microsoft Dynamics 365 for Operations, Version 1611 (November 2016) einrichten, um alle Funktionen zu verwenden, die in diesem Thema beschrieben sind. Alternativ können Sie eine der folgenden Komponenten installieren. Beachten Sie jedoch, dass diese Alternative eine eher begrenzte ER-Zielerfahrung bietet.
 
--   Microsoft Dynamics AX 7.0.1 (Mai 2016)
--   [Anwendungs-Hotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213) für die ER Zielverwaltung
+- Microsoft Dynamics AX 7.0.1 (Mai 2016)
+- [Anwendungs-Hotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213) für die ER Zielverwaltung
 
 Sie können Ziele nur für ER-Konfigurationen einrichten, die importiert wurden und für die Formate auf der Seite **Konfigurationen für die elektronische Berichterstellung** verfügbar sind.
 
 ## <a name="overview"></a>Überblick
 Die ER-Zielverwaltungsfunktionalität steht unter **Organisationsverwaltung** &gt; **Elektronische Berichterstattung** bereit. Hier können Sie das Standardverhalten für eine Konfiguration überschreiben. Importierte Konfigurationen werden hier nicht angezeigt, bis Sie auf **Neu** klicken und dann im Feld **Verweis** eine Konfiguration für die Zieleinstellungen wählen.
 
-[![Wählen Sie im Feld eine Konfigurationstechnologie aus](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg) 
+[![Wählen Sie im Feld eine Konfigurationstechnologie aus](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg)
 
-Nachdem Sie einen Verweis erstellt haben, können Sie ein Ziel für jeden Ordner oder eine Datei erstellen. 
+Nachdem Sie einen Verweis erstellt haben, können Sie ein Ziel für jeden Ordner oder eine Datei erstellen.
 
 [![Erstellen Sie die Zieldatei.](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> [!NOTE] 
+> [!NOTE]
 > Sie können ein Dateiziel für jede Ausgabekomponente des gleichen Formats im Feld **Dateiname** erstellen (z. B. einen Ordner oder eine Datei). Sie können die Ziele für die Dateiziele im **Zieleinstellungen**-Dialogfeld separat aktivieren und deaktivieren. Die **Einstellungen**-Schaltfläche wird verwendet, um alle Ziele für eine ausgewählte Dateiziel steuern. Im **Zieleinstellungen**-Dialogfeld Sie können jedes Ziel separat steuern, indem Sie die **Aktiviert**-Option nutzen.
 
 [![Dialogfeld Zieleinstellungen](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
@@ -73,7 +73,7 @@ Wenn Sie für das Feld **Zu** oder **CC** auf **Bearbeiten** klicken, erscheint 
 
 Wenn Sie den Typ **Management E-Mail drucken** auswählen, können Sie die feste E-Mail-Adressen im Feld **An** eingeben. Um keine festen E-Mail-Adressen zu verwenden, müssen Sie die E-Mail-Herkunftsart für ein Ziel auswählen. Folgende Werte werden unterstützt: **Kunde**, **Lieferant**, **Interessent**, **Kontakt**, **Konkurrent**, **Arbeitskraft**, **Bewerber**, **Künftiger Kreditor** und **Unzulässiger Lieferant**. Nachdem Sie einen E-Mail-Quelltyp ausgewählt haben, verwenden Sie die Schaltfläche neben dem Feld **E-Mail-Quellkonto**, um das Formular **Formel-Designer** zu öffnen. Sie können dieses Formular verwenden, um eine Formel zuzuordnen, die das ausgewählte Parteienkonto mit dem E-Mail-Ziel darstellt.
 
-[![Durckverwaltungs-E-Mail-Typ konfigurieren](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
+[![Durckverwaltungs-E-Mail-Typ konfigurieren](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg)
 
 Beachten Sie, dass Formeln für die ER-Konfiguration spezifisch sind. Im Feld **Formel** geben Sie einen dokumentspezifischen Verweis auf einen Debitoren- oder Händlerparteityp ein. Anstelle es einzugeben, können Sie einen Datenquellknoten finden, der das Debitoren- oder Händlerkonto darstellt, und klicken Sie auf die Schaltfläche **Datenquelle hinzufügen**, um die Formel zu aktualisieren. Beispiel: Wenn Sie die Konfiguration "Kreditübertragung (ISO 20022)" verwenden, lautet der Knoten, der ein Händlerkonto darstellt, **'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID**. Andernfalls geben Sie einen beliebigen Zeichenfolgenwert ein, wie **DE-001**, um eine Formel zu speichern.
 
@@ -87,23 +87,27 @@ Im Dialogfeld **E-Mail an** klicken Sie auf den Papierkorb neben dem Feld **E-Ma
 
 Verwenden Sie diesen E-Mail-Typ, wenn die Konfiguration, die Sie verwenden, einen Knoten der Datenquellen hat, der eine E-Mail-Adresse ist. Sie können Datenquellen und Funktionen im Formeldesigner verwenden, um eine ordnungsgemäße formatierte E-Mail-Adresse abzurufen.
 
-[![E-Mail-Adressen einem E-Mail-Ziel zuweisen](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
+[![E-Mail-Adressen einem E-Mail-Ziel zuweisen](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg)
 
-**Hinweis:** Ein SMTP-Server (Simple Mail Transfer Protocol) muss konfiguriert und verfügbar sein. Sie können Ihren SMTP-Server in Finance and Operations unter **Systemadministration** &gt; **Einrichten** &gt; **E-Mail** &gt; **E-Mail Parameter** angeben.
+> [!NOTE]
+> Ein SMTP-Server (Simple Mail Transfer Protocol) muss konfiguriert und verfügbar sein. Sie können Ihren SMTP-Server in Finance and Operations unter **Systemadministration** &gt; **Einrichten** &gt; **E-Mail** &gt; **E-Mail Parameter** angeben.
 
 ### <a name="archive-destination"></a>Archivziel
 
 Mit dieser Option können Ausgaben als Microsoft SharePoint-Ordner oder Microsoft Azure Storage senden. Legen Sie **Aktiviert** auf **Ja** fest, um die Ausgabe an ein Ziel zu senden, das über den ausgewählten Dokumenttyp definiert ist. Nur Dokumenttypen mit der Gruppe **Datei** stehen zur Auswahl. Sie legen die Dokumenttypen unter **Organisationsadministration** &gt; **Dokumentenmanagement** &gt; **Dokumenttypen** fest. Die Konfiguration für ER-Ziele ist identisch mit der Konfiguration für das Dokumentverwaltungssystem.
 
-[![Seite „Dokumenttypen”](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
+[![Seite „Dokumenttypen”](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
 
-Der Speicherort bestimmt, wo die Datei gespeichert wird. Nachdem das Ziel **Archiv** aktiviert ist, können Sie die Ergebnisse der Konfigurationsausführung im Einzelvorgangsarchiv gespeichert werden. Sie können die Ergebnisse **Organisationsverwaltung** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstellung archivierte Einzelvorgänge** anzeigen. **Hinweis** Sie können einen Dokumenttyp für das Einzelvorgangsarchiv in Finance and Operations **Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstattungsparameter** auswählen.
+Der Speicherort bestimmt, wo die Datei gespeichert wird. Nachdem das Ziel **Archiv** aktiviert ist, können Sie die Ergebnisse der Konfigurationsausführung im Einzelvorgangsarchiv gespeichert werden. Sie können die Ergebnisse **Organisationsverwaltung** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstellung archivierte Einzelvorgänge** anzeigen.
+
+> [!NOTE]
+> Sie können einen Dokumenttyp für das Einzelvorgangsarchiv in Finance and Operations **Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Elektronische Berichterstattung** &gt; **Elektronische Berichterstattungsparameter**auswählen.
 
 #### <a name="sharepoint"></a>SharePoint
 
-Sie können eine Datei in einem bestimmten SharePoint-Ordner speichern. Sie definieren den Standardwert SharePoint-Server unter: **Organisationsverwaltung** &gt; **Dokumentverwaltung** &gt; **Parameter der Dokumentverwaltung** auf der Registerkarte **SharePoint** . Nachdem der SharePoint-Ordner konfiguriert ist, können Sie diesen als den Ordner auswählen, in dem die ER-Ausgabe für den Dokumenttyp gespeichert wird. 
+Sie können eine Datei in einem bestimmten SharePoint-Ordner speichern. Sie definieren den Standardwert SharePoint-Server unter: **Organisationsverwaltung** &gt; **Dokumentverwaltung** &gt; **Parameter der Dokumentverwaltung** auf der Registerkarte **SharePoint** . Nachdem der SharePoint-Ordner konfiguriert ist, können Sie diesen als den Ordner auswählen, in dem die ER-Ausgabe für den Dokumenttyp gespeichert wird.
 
-[![Einen SharePoint-Ordner auswählen](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
+[![Einen SharePoint-Ordner auswählen](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
 #### <a name="azure-storage"></a>Azure Storage
 
@@ -119,7 +123,10 @@ Wenn Sie **Aktiviert** auf **Ja** setzen, wird eine Vorschau der Ausgabe erstell
 
 ### <a name="power-bi-destination"></a>Power BI-Ziel
 
-Setzen Sie **Aktiviert** auf **Ja**, um Ihre ER-Konfiguration zu verwenden, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Microsoft Power BI-Diensten zu veranlassen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurde. Weitere Informationen finden Sie unter [Eine elektronische Berichtskonfiguration verwenden, um Power BI mit Daten aus Finance and Operations bereitzustellen](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Tipp:** Zum Überschreiben des Standardverhaltens (das Dialogfeld für eine Konfiguration) können Sie einen Zielverweis und ein Dateiziel für die Hauptausgabekomponente erstellen und alle Ziele deaktivieren.
+Setzen Sie **Aktiviert** auf **Ja**, um Ihre ER-Konfiguration zu verwenden, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Microsoft Power BI-Diensten zu veranlassen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurde. Weitere Informationen finden Sie unter [Eine elektronische Berichtskonfiguration verwenden, um Power BI mit Daten aus Finance and Operations bereitzustellen](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+
+> [!TIP]
+> Zum Überschreiben des Standardverhaltens (das Dialogfeld für eine Konfiguration) können Sie einen Zielverweis und ein Dateiziel für die Hauptausgabekomponente erstellen und alle Ziele deaktivieren.
 
 ## <a name="security-considerations"></a>Sicherheitsaspekte
 Für ER Ziele werden zwei Arten von Rechte und Pflichten verwendet. Ein Typ steuert die Fähigkeit zur Pflege aller Ziele, die für eine juristische Person konfiguriert sind (steuert den Zugriff auf die **Elektronische Berichterstellung**-Seite). Der andere Typ steuert die Möglichkeit eines Benutzers der Anwendung, zur Laufzeit die Zieleinstellung zu überschreiben, die von einem ER-Entwickler oder vom funktionaler Berater konfiguriert wurden.
@@ -158,7 +165,4 @@ Die Voraussetzung ist, dass das Format in ER-Konfigurationen verfügbar sein mus
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
-
-
-
 

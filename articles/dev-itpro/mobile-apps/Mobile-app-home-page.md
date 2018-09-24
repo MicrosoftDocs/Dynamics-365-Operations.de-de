@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: b9cdb2b2c2b5aaf7743cd2cd0dbfee6c602a5a46
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: d6d26da330974305fa3725fe7c2506d198b17e2c
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -138,9 +138,10 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <td>8</td>
 <td>Benutzer</td>
 <td>Laden Sie die mobile App herunter, und installieren Sie diese.</td>
-<td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">Für Androide-Smartphones</a></li>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850663">Für iPhones</a></li></ul>
+<td>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations App für Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Unified Operations App für iOS</a><BR/>
+(Windows Phone nicht unterstützt)
 </td>
 </tr>
 <tr class="odd">

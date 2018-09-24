@@ -27,6 +27,9 @@ ms.lasthandoff: 08/08/2018
 ---
 
 # <a name="powerbicom-solutions-home-page"></a>PowerBI.com-Lösungsstartseite
+
+[!include [banner](../includes/banner.md)]
+
 Die folgenden PowerBI.com- Lösungen sind für Dynamics 365 for Finance and Operations Umgebungen verfügbar.
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>PowerBI.com- Lösungen verfügbar von Lifecycle Services (LCS)

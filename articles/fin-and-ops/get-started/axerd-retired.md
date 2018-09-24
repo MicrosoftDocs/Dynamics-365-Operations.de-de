@@ -27,6 +27,8 @@ ms.lasthandoff: 08/08/2018
 
 # <a name="axerd-page-has-been-retired"></a>AxErd-Seite wurde zurückgezogen
 
+[!include [banner](../includes/banner.md)]
+
 Wir mussten leider die AxErd-Webseite zurückziehen, die ein Entitätsbeziehungsdiagramme (ERDs) für viele Microsoft Dynamics AX 2012-Tabellen bereitgestellt hat. Es konnten sowohl der Quellcode für das Projekt als auch die HTML-Dateien für die Website in einem GitHub-Repository gebucht werden: https://github.com/Microsoft/ax-2012-doc-tools
 
 Die HTML-Seiten sind im Repository unter [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)

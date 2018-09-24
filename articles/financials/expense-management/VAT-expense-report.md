@@ -26,6 +26,8 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="vat-recovery-in-expense-management"></a>MwSt.-Rückerstattung in der Ausgabenverwaltung
 
+[!include [banner](../includes/banner.md)]
+
 Um Rückerstattungen für die Buchungen von anrechenbarer Mehrwertsteuer zu erhalten, muss ein Unternehmen oder eine Organisation genaue Informationen erkennen, sammeln, überprüfen und übermitteln. Dieser Prozess umfasst mehrere Aufgaben und kann je nach Größe des Unternehmens mehrere Mitarbeiter oder Rollen einschließen.
 
 Zur Mehrwertsteuerbeitreibung mithilfe von Ausgabenverwaltung müssen die folgenden Voraussetzungen erfüllt werden:

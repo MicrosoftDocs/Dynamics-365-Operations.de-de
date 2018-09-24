@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,25 +30,24 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutzerinteraktionen im Finanzberichtsdesigner eingerichtet werden und wie sie die erstmalige Anmeldung steuern. Sie können auch steuern, wie einzelne Berichte, die Berichtsbibliothek und die Standardspeicherorte angezeigt werden. 
+Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutzerinteraktionen im Finanzberichtsdesigner eingerichtet werden und wie sie die erstmalige Anmeldung steuern. Sie können auch steuern, wie einzelne Berichte, die Berichtsbibliothek und die Standardspeicherorte angezeigt werden.
 
-<a name="set-user-preferences"></a>Benutzereinstellung festlegen
---------------------
+## <a name="set-user-preferences"></a>Benutzereinstellung festlegen
 
-1.  Klicken Sie im Berichts-Designer im Menü **Extras** auf **Optionen**.
-2.  Wählen Sie die Einstellungen im **Optionen**-Dialogfeld aus.
-3.  Klicken Sie auf **OK**.
+1. Klicken Sie im Berichts-Designer im Menü **Extras** auf **Optionen**.
+2. Wählen Sie die Einstellungen im **Optionen**-Dialogfeld aus.
+3. Klicken Sie auf **OK**.
 
 ## <a name="options-dialog-box-options"></a>Optionen des Dialogfelds "Optionen"
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Benutzeroption</th>
 <th>Beschreibung</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Beim Start</td>
 <td>Wählen Sie aus, was angezeigt wird, wenn der Bericht-Designer gestartet wird. Folgende Optionen stehen zur Auswahl:
 <ul>
@@ -57,28 +56,22 @@ Dieser Artikel erläutert, wie Benutzervoreinstellungen zum Anpassen von Benutze
 <li><strong>Leere Umgebung anzeigen</strong> – Öffnet ein leeres Designerfenster.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Bestätigung anzeigen, bevor der Bericht-Designer beendet wird</td>
 <td>Wählen Sie aus, ob eine Warnung angezeigt wird, wenn Sie die Anwendung beenden. Diese Meldung stellt sicher, dass Sie das Programm nicht versehentlich beenden.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Automatisch Zellenunterstreichung in Spaltenüberschriften anwenden</td>
 <td>Wählen Sie aus, ob ein Unterstrich in der Zelle einer neuen Spaltenüberschrift eingefügt werden soll.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Speicherort der Management Reporter-Dateien</td>
 <td>Geben Sie den Standardspeicherort für Dateien an. Die Anwendung verwendet den Standardspeicherort, wenn Sie Bausteingruppen exportieren.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
-
-
-
 

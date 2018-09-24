@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 476b53d7e5a5ee764c23034344f375fff5db47e8
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 8021e54fdd5c4c71c016e52801d3f2f627de761b
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -38,7 +38,7 @@ Videos sind nach Funktionen geordnet, also scrollen Sie nach unten, um die gesam
 
 #### <a name="data-integration"></a>Datenintegration
 - [Integration der Konvertierung eines Interessenten in Bargeld](https://youtu.be/AVV9x5x-XCg) 
-- [Synchronisieren Sie einen Arbeitsauftrag zwischen Dynamics 365 for Field Service and Finance und Operations.](https://www.youtube.com/watch?v=hAB4TDVMjxU&t=2s)
+- [Synchronisieren Sie einen Arbeitsauftrag zwischen Dynamics 365 for Field Service and Finance und Operations.](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### <a name="data-management"></a>Datenverwaltung
 - [Verwendung von Datenentitäten und Datenpaketen in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
@@ -61,6 +61,7 @@ Videos sind nach Funktionen geordnet, also scrollen Sie nach unten, um die gesam
 
 #### <a name="intelligence"></a>Intelligence
 - [Bringen Sie Ihre eigene Datenbank (BYOD) zu Dynamics 365 for Finance and Operations.](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Erläutert das Kostenmanagement Power BI Inhalt in Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 #### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
 - [Anlagenbibliothek in Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
@@ -93,6 +94,9 @@ Videos sind nach Funktionen geordnet, also scrollen Sie nach unten, um die gesam
 - [Chargenausgleich](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
 - [Erweiterungen im Produktions- oder Veröffentlichungsprozess](https://www.youtube.com/watch?v=Rm3ojAz6Zu0&feature=youtu.be)
 - [Visuelle Zeitplanung mit Gantt-Diagramm für Produktions- und Chargenaufträge](https://youtu.be/BtbuShkGj4I)
+
+#### <a name="tax-engine"></a>Steuermodul
+- [Steuermodulübersicht](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 
 #### <a name="warehouse-management"></a>Lagerortverwaltung
 - [Produktionskommissionierung chargenweise an das Lager freigeben](https://youtu.be/8urAJn50dQ8)

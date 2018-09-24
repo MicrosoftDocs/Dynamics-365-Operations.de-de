@@ -1,5 +1,5 @@
 ---
-title: Genehmigen und Freigeben von Bestellungen
+title: "Bestellungen genehmigen und bestätigen"
 description: "Dieser Artikel beschreibt die Statuswerte einer Bestellung (PO) nach der Erstellung und den Effekt des Änderungsmanagements für Bestellungen."
 author: FrankDahl
 manager: AnnBe
@@ -15,18 +15,19 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
+ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 475470fa87455e187e0a93148046cb1df634da1f
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
-# <a name="approve-and-confirm-purchase-orders"></a>Genehmigen und Freigeben von Bestellungen
+# <a name="approve-and-confirm-purchase-orders"></a>Bestellungen genehmigen und bestätigen
 
 [!include [banner](../includes/banner.md)]
 

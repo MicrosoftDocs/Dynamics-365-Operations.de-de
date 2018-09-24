@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -66,13 +66,11 @@ Sie können bestimmte Entitäten einem Import- oder Exportvorgang hinzufügen od
 ### <a name="set-the-data-format-for-the-job"></a>Legen Sie das Datenformat für den Stapelverarbeitungsauftrag fest.
 Wenn Sie eine Einheit auswählen, müssen Sie die Verpackungseinheiten das Format der Daten auswählen, die exportiert oder importiert werden. Sie legen Formate fest, indem Sie die Kachel **Datenquelleneinstellung** verwenden. Ein Quelldatenformat ist eine Kombination aus **Typ**, **Dateiformat**, **Zeilentrennzeichen** und **Spaltentrennzeichen**. Es gibt auch andere Attribute, aber diese sind die Wesentlichen, die man verstehen sollte. In der folgenden Tabelle werden die gültigen Kombinationen aufgeführt.
 
-| **Dateiformat**        | **Zeilen-/Spaltentrennzeichen**                   | **XML-Stil**             |
+| Dateiformat            | Zeilen-/Spaltentrennzeichen                       | XML-Stil                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-k. A.-                     |
 | XML                    | \-k. A.-                                      | XML-Element XML-Attribut |
 | Mit Trennzeichen, fest mit | Komma, Semikolon, Registerkarte, senkrechter Strich, Doppelpunkt | \-k. A.-                     |
-
-
 
 ### <a name="sequence-the-entities"></a>Sequenz der Entitäten
 Entitäten können in einer Datenvorlage in den Serverkonfigurationsdateien oder im Import- und Exporteinzelvorgang sequenziert werden. Wenn Sie einen Einzelvorgang ausführen, der mehr als eine Datenentität enthält, müssen Sie prüfen, ob die Datenentitäten ordnungsgemäß geordnet werden. Sie ordnen die Entitäten hauptsächlich so, dass Sie beliebige funktionalen Abhängigkeiten unter den Entitäten adressieren können. Wenn Entitäten keine funktionalen Abhängigkeiten haben, können Sie diese für Parallelimport oder Export planen.

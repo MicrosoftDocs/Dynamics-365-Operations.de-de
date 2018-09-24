@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 800ba4d7b652feff91c28a0038dee31a02683381
-ms.openlocfilehash: 9c0cf2387b23d56103187f78b3fc5919cece505c
+ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
+ms.openlocfilehash: ffedfb64db1552e9eb207d5aee3556e307978c4b
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/20/2018
 
 ---
 
@@ -31,16 +31,16 @@ Dieses Thema enthält Informationen und Verknüpfungen zu den Ressourcen, die f�
 
 ## <a name="audit-file"></a>Protokolldatei
 - [Deutsche Protokolldatei (GDPdU/GoBD)](emea-deu-gdpdu-audit-data-export.md)
-- [Protokolldateikonfiguration anpassen](/tasks/customize-german-audit-file-configuration.md)
-- [Protokolldatei generieren](/tasks/german-audit-file.md)
-- [Protokolldateikonfiguration importieren](/tasks/import-german-audit-file-configuration.md)
+- [Protokolldateikonfiguration anpassen](tasks/customize-german-audit-file-configuration.md)
+- [Protokolldatei generieren](tasks/german-audit-file.md)
+- [Protokolldateikonfiguration importieren](tasks/import-german-audit-file-configuration.md)
 
 ## <a name="depreciation"></a>Abschreibung
 -   [Zusätzliche Anschaffungsabschreibung](emea-deu-additional-acquisition-depreciation.md)
--   [Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr](/tasks/de-00002-depreciation.md)
+-   [Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr](tasks/de-00002-depreciation.md)
 
 ## <a name="electronic-transmission-of-vat-declaration-elster"></a>Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
-- [Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)](/tasks/de-00003-electronic-transmission-elster.md)
+- [Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
 - [Elster Testmerker (PDF-Download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
 
 ## <a name="credit-memos-originating-from-sales"></a>Gutschriften aus Verkäufen
@@ -50,10 +50,6 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 
 -   Wenn die Option **Rechnungskorrektur auf Verkaufsgutschrift drucken** auf **Nein** festgelegt ist, wird die Beschriftung "Gutschrift" auf alle Gutschriften gedruckt.
 -   Wenn die Option **Rechnungskorrektur auf Verkaufsgutschrift drucken** auf **Ja** festgelegt ist, wird die Beschriftung "Rechnungskorrektur" auf Gutschriften für Aufträge, Freitextrechnungen und Projektrechnungen gedruckt.
-
-## <a name="electronic-tax-declarations"></a>Elektronische Steuererklärung
-
--   [Elektronische Steuererklärung einrichten](/tasks/setup-electronic-tax-declaration-germany.md)
 
 
 ## <a name="reports-for-germany"></a>Berichte für Deutschland

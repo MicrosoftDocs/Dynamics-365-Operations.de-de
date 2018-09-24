@@ -35,7 +35,9 @@ Die Projektverwaltungs- und Buchhaltungsfunktionen können in mehreren Branchen 
 Ein Projekt ist eine Gruppe von Aktivitäten, die vorgesehen sind, um einen Service bereitzustellen, ein Produkt zu erzeugen oder ein Ergebnis zu erreichen. Projekte nach Ressourcen und generieren finanziellen Ergebnisse in Form von Umsatzerlösen oder Anlagen.
 
 ## <a name="projects-across-industries"></a>Projekte in Branchen
-Die Projektverwaltungs- und Buchhaltungsfunktionen kann in mehreren Branchen, wie in der folgenden Abbildung dargestellt, verwendet werden. [![Projekte in Branchen](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+Die Projektverwaltungs- und Buchhaltungsfunktionen kann in mehreren Branchen, wie in der folgenden Abbildung dargestellt, verwendet werden.
+
+[![Projekte in Branchen](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 In einem Callcenter kann ein Ticket verwendet werden, um die Gruppe von Aktivitäten zu beschreiben, die erforderlich sind, um einen Anruf aufzulösen. Beratungsfirmen. z. B. Management oder technische Beratungsunternehmen oder Werbeagenturen, finden ihre Aktivitäten als Projekte anzeigen. Im Marketing stellt eine Kampagne einen Satz Arbeit dar, der geliefert werden muss. In der projektbasierten Fertigung besteht ein Produktionsauftrag aus verschiedene Arbeit zu, die ausgeführt werden muss, um mehrere fertige Artikel zu erzeugen. Welche Bezeichnung auch dafür verwendet wird, diese Projekte beinhalten Ressourcen, Zeitpläne und Kosten. Die Projektverwaltungs- und Buchhaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations können bei der Planung, Durchführung und Analyse dieser Projekte helfen.
 

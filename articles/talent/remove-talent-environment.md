@@ -26,6 +26,8 @@ ms.lasthandoff: 08/08/2018
 ---
 # <a name="remove-talent-environments"></a>Talent-Umgebungen entfernen
 
+[!include [banner](includes/banner.md)]
+
 Dieses Thema führt Sie durch den Prozess des Entfernens einer Testversion oder einer Produktionsumgebung für Microsoft Dynamics 365 for Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Entfernen einer Testversionsumgebung
