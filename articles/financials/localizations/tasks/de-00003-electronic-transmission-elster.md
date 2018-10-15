@@ -1,28 +1,29 @@
 --- 
-title: "Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER) (Deutschland)"
+title: "DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)"
 description: "Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 02/17/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 6ad1c955ab1a84a235a01f54e895c0beaba6a0f0
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 927b283f160d8bd1a6b89c40da05bb7a542eb232
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="electronic-transmission-of-vat-declaration-elster-germany"></a>Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER) (Deutschland)
+# <a name="de-00003-electronic-transmission-of-vat-declaration-elster"></a>DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

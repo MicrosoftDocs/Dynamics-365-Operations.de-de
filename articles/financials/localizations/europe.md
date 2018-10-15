@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 9399df070d450b6eb89dc33ca47ddb77fe8e60b1
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
 ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren Hilfe Sie Dynamics 365 for Finance and Operations für juristische Personen mit einer primären Adresse in Brasilien einrichten können. 
+Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren Hilfe Sie Dynamics 365 for Finance and Operations für juristische Personen mit einer primären Adresse in Europa einrichten können. 
 
 - [Vorauszahlungsinhaber](emea-advance-holders.md)
  - [Vorschussinhaberbuchungen](emea-advance-holders-transactions.md)
@@ -42,12 +42,10 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [Zusammenfassende Meldung](emea-eu-sales-list.md)
 - [Wechselkursregulierungen](emea-exchange-rate-adjustments.md)
 - [Dateiformate für Zahlungsmethoden](emea-select-file-formats-for-the-method-of-payments.md)
-- [Steuerdienste (ESR)-Integration](emea-fiscal-service-integration.md)
+- [Steuerdienste ERS-Integration](emea-fiscal-service-integration.md)
 - [Anlagenveräußerungen für Estland und Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
-- [Neubewertung der Fremdwährung](emea-foreign-currency-revaluation.md)
 - [Umlagerungsdokument für eine interne Umlagerung generieren](tasks/transfer-document-internal-inventory-transfer.md)
-- [EU-Intrastat-Meldung generieren](tasks/eur-00002-eu-intrastat-declaration.md)
-- [Bericht 'Zusammenfassende Meldung' generieren](tasks/eur-00011-eu-sales-list-report.md)
+- [Bericht „Zusammenfassende Meldung“ generieren](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-Dateien
   - [ISO20022-Dateien importieren](emea-ISO20022-file-formats.md)
   - [ISO20022-Direktbelastungskonfiguration importieren](tasks/import-iso20022-direct-debit-configuration.md)
@@ -61,6 +59,8 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
   - [Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [Intrastat](emea-intrastat.md)
   - [Buchungen an Intrastat übertragen](tasks/transfer-transactions-intrastat.md)
+  - [Ladungsadresse für eine innergemeinschaftliche Buchung angeben](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [EU-Intrastat-Meldung generieren](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Lagererfassungsberichte](emea-set-up-report-inventory-journal-names.md)
 - [Rechnungsabgangsfristen](emea-invoice-issue-deadline.md)
 - [Rechnungsverarbeitung](emea-invoice-processing.md)
@@ -82,8 +82,6 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [Zusammenfassende Meldung einrichten](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Zahlungsbelegformats für Projektrechnungen einrichten](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Signaturgeber für Druckformulare einrichten](emea-set-up-signers-for-printing-forms.md)
-- [Umlagerungsdokument für Warenbewegung innerhalb eines Unternehmens einrichten](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
-- [Eine Ladungsadresse für eine innergemeinschaftliche Buchung angeben](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [Stornobuchung](emea-storno.md)
 - [Steuerrichtlinien](emea-tax-directives.md)
 - [Aktualisieren, wie Beträge in Berichten und Dokumenten angezeigt werden](emea-amount-printing-forms.md)

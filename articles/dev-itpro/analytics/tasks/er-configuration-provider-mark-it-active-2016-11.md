@@ -3,23 +3,24 @@ title: Konfigurationsanbieter erstellen und sie als aktiv markieren
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle \"Entwickler für elektronische Berichterstellung\" zugewiesen ist, einen Konfigurationsanbieter für elektronische Berichterstellung (ER) erstellen kann."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 37957f224cb57fd9f6c5014740bcea124a99a03a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Konfigurationsanbieter erstellen und sie als aktiv markieren
@@ -33,10 +34,11 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
 2. Klicken Sie auf "Konfigurationsanbieter".
 3. Klicken Sie auf "Neu".
-    * Ein Anbieterdatensatz ist nach Name und URL eindeutig. Überprüfen Sie den Inhalt dieser Seite und lassen Sie diese Prozedur aus, wenn bereits ein Datensatz für Litware, Inc. (`http://www.litware.com`) besteht.  
+    * Ein Anbieterdatensatz ist nach Name und URL eindeutig. Überprüfen Sie den Inhalt dieser Seite und lassen Sie diese Prozedur aus, wenn bereits ein Datensatz für Litware, Inc. (http://www.litware.com) besteht.  
 4. Geben Sie im Feld "Name" "Litware, Inc." ein.
     * Litware, Inc.  
-5. Geben Sie im Feld "Internetadresse" `http://www.litware.com` ein.
+5. Geben Sie im Feld „Internetadresse” „http://www.litware.com” ein.
+    * http://www.litware.com  
 6. Klicken Sie auf "Speichern".
 7. Schließen Sie die Seite.
 

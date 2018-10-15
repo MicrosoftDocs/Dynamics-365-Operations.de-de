@@ -1,28 +1,29 @@
 --- 
-title: "Berichte ausführen, die Finanzdimensionen als Datenquellen verwenden"
+title: "ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 4: Berichtsausführung)"
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERSolutionTable, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 6569f9b97d5d15bf74b8b3882bf4bab50970dd0f
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 917eae141bbb8792f02d3323054e2a4096dae551
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="run-reports-that-use-financial-dimensions-as-data-sources"></a>Berichte ausführen, die Finanzdimensionen als Datenquellen verwenden
+# <a name="er-use-financial-dimensions-as-a-data-source-part-4-run-the-report"></a>ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 4: Berichtsausführung)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -44,6 +45,6 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren "ER -
 9. Geben Sie im Feld "Kriterien" den Wert "00057" ein.
 10. Klicken Sie auf "OK".
 11. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, das für jede Buchung der ausgewählten Charge, die Finanzdimensionen aus den entsprechenden Dimensionssatz dargestellt werden. Führen Sie diesen Bericht aus, und wählen Sie unterschiedliche Dimensionen aus, um zu sehen, dass der Bericht nicht von der Anzahl der ausgewählten Dimensionen oder der Anzahl der Dimensionen abhängt, die für diese Dynamics 365 for Finance and Operations-Instanz konfiguriert sind.  
+    * Prüfen Sie das generierte Ergebnis. Beachten Sie, das für jede Buchung der ausgewählten Charge, die Finanzdimensionen aus den entsprechenden Dimensionssatz dargestellt werden. Führen Sie diesen Bericht aus und wählen Sie unterschiedliche Dimensionen aus, um zu sehen, dass der Bericht nicht von der Anzahl der ausgewählten Dimensionen oder aus der Anzahl der Dimensionen abhängt, die in Dynamics 365 for Finance and Operations, Enterprise Edition für diese Instanz konfiguriert werden.  
 
 

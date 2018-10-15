@@ -1,28 +1,29 @@
 --- 
-title: "Elektronische Steuererklärungen einrichten (Deutschland)"
+title: "Formular \"Einrichtung der elektronischen Steuererklärung\" für Deutschland"
 description: "Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch."
 author: NickSelin
 manager: AnnBe
-ms.date: 02/17/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: e7416de30cd5dddbc6a8eca322970de4f603e53c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: fbff209963828ab85bdc5ccf800a97ddaf864c0d
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="set-up-electronic-tax-declarations-germany"></a>Elektronische Steuererklärungen einrichten (Deutschland)
+# <a name="setup-electronic-tax-declaration-for-germany"></a>Formular "Einrichtung der elektronischen Steuererklärung" für Deutschland
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

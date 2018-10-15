@@ -1,25 +1,26 @@
 --- 
 title: EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” Elektronische Berichterstellungs-(ER)-Formate zum Generieren von Berichten als Microsoft Word-Dateien konfigurieren kann."
+description: "In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” Elektronische Berichterstellungs-Formate zum Generieren von Berichten als Microsoft Word-Dateien konfigurieren kann."
 author: NickSelin
 manager: AnnBe
-ms.date: 12/21/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren
@@ -30,9 +31,9 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rol
 
 Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen” abschließen. Im Voraus müssen Sie auch die folgenden Vorlagen für den Beispielbericht herunterladen und lokal speichern:
 
-[Vorlage des Zahlungsberichts](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Vorlage des Zahlungsberichts](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Begrenzte Vorlage eines Zahlungsberichtes](https://go.microsoft.com/fwlink/?linkid=862266)
 
-[Begrenzte Vorlage eines Zahlungsberichtes](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Diese Prozedur ist eine Funktion, die in Microsoft Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
 
@@ -49,7 +50,7 @@ Diese Prozedur ist eine Funktion, die in Microsoft Dynamics 365 for Operations, 
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Ersetzen der Excel-Vorlage durch eine Word-Vorlage
     * Aktuell wird das Excel-Dokument als Vorlage verwendet, um die Ausgabe im OPENXML-Format zu generieren. Wir importieren die Vorlage des Berichts im Word-Format.  
 1. Klicken Sie auf Anhänge.
-    * Ersetzen Sie die vorhandene Excel-Vorlage durch die Word-Vorlage, die Sie zuvor heruntergeladen haben, Vorlage eines Zahlungsberichts. Hinweis, diese Vorlage beinhaltet nur das Layout des Dokuments, das wir als ER-Ausgabe generieren möchten.  
+    * Ersetzen Sie die vorhandene Excel-Vorlage durch die Word-Vorlage, die Sie zuvor heruntergeladen haben, SampleVendPaymDocReport.docx. Hinweis, diese Vorlage beinhaltet nur das Layout des Dokuments, das wir als ER-Ausgabe generieren möchten.  
 2. Klicken Sie auf Löschen.
 3. Klicken Sie auf "Ja".
 4. Klicken Sie auf "Neu".

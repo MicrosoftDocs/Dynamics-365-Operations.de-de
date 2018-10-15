@@ -1,28 +1,29 @@
 --- 
-title: Akkreditiv importieren
+title: Importkreditbrief importieren
 description: Diese Prozedur zeigt Ihnen, wie Sie einen Kreditbrief importieren.
 author: kweekley
 manager: AnnBe
-ms.date: 02/26/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 02be2627186a149a05eaccfa3e5906a9fe1d74dd
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: c1768494182a79d7a33044498c1e768e61d937d1
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="import-a-letter-of-credit"></a>Akkreditiv importieren
+# <a name="import-letter-of-credit"></a>Importkreditbrief importieren
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -110,7 +111,8 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 1. Wechseln Sie zu "Bargeld- und Bankverwaltung" > "Kreditbrief" > "Importkreditbrief und Importinkasso".
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-    * Überprüfen Sie den Importkreditbriefstatus.  
+    * Überprüfen Sie den Importkreditbriefstatus.    
+    *   
 4. Schließen Sie die Seite.
 5. Schließen Sie die Seite.
 

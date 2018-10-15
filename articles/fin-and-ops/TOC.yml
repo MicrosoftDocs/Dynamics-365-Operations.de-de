@@ -38,13 +38,19 @@
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: Lokale Software-Lebenszyklusrichtlinien- und -Freigaben
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
+            - name: "Ende des Mainstreamsupports für Microsoft Dynamics AX\_2009 und 2012"
+              href: get-started/mainstream-support-ax-2009-2012.md
             - name: Entfernte oder veraltete Funktionen
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
-            - name: "Features von AX\_2012, die verschoben wurden"
+            - name: "Funktionen von AX\_2012, die verschoben wurden"
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: 'Funktionen, die in lokalen Bereitstellungen nicht implementiert sind'
               href: get-started/features-not-implemented-on-prem.md
-            - name: Finance and Operations Version 8.0 (April 2018)
+            - name: "Finance and Operations Version\_8.1 (Oktober\_2018)"
+              href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: "Platform Update 20 (September\_2018)"
+              href: get-started/whats-new-platform-update-20.md
+            - name: "Finance and Operations Version 8.0 (April\_2018)"
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform Update 15 (März 2018)
               href: get-started/whats-new-platform-update-15.md
@@ -456,6 +462,10 @@
               href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Rechnungsabgleich sowie Intercompany-Bestellungen
               href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+            - name: Kreditorenrechnungsrichtlinien einrichten
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Eingang von Kreditorenrechnungen erfassen und mit der Menge abgleichen
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Überblick über die positive Zahlung
               href: ../financials/accounts-payable/positive-pay-overview.md
             - name: Einrichten und Generieren von Dateien für positive Zahlungen
@@ -566,10 +576,6 @@
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
             - name: Zinsen verarbeiten
               href: ../financials/accounts-receivable/tasks/process-interest.md
-            - name: Kreditorenrechnungsrichtlinien einrichten
-              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-            - name: Eingang von Kreditorenrechnungen erfassen und mit der Menge abgleichen
-              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Debitorenrechnung erstellen
               href: ../financials/accounts-receivable/configure-customer-invoices.md
             - name: Debitorenzahlungen anzahlen
@@ -596,6 +602,8 @@
               href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Debitorenfälligkeitsinformationen einrichten und erstellen
               href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Debitoren unter Verwendung gemeinsamer Nummernkreise kopieren
+              href: ../financials/accounts-receivable/copy-customer.md
             - name: Debitorenworkflow
               href: ../financials/accounts-receivable/customer-workflow.md
             - name: Zahlungen und Ausgleiche
@@ -1539,12 +1547,10 @@
               href: ../financials/localizations/emea-exchange-rate-adjustments.md
             - name: Dateiformate für Zahlungsmethoden
               href: ../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md
-            - name: Steuerdienste (ESR)-Integration
+            - name: Steuerdienste ERS-Integration
               href: ../financials/localizations/emea-fiscal-service-integration.md
             - name: Anlagenveräußerungen für Estland und Litauen
               href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-            - name: Neubewertung der Fremdwährung
-              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Umlagerungsdokument für eine interne Umlagerung generieren
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
             - name: Bericht „Zusammenfassende Meldung“ generieren
@@ -2104,6 +2110,8 @@
               href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
             - name: Anlagenveräußerungs-Funktionenerweiterung
               href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Neubewertung der Fremdwährung
+              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Retourfähige Verpackung
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Mehrwertsteuerberichte
@@ -2114,6 +2122,42 @@
               href: ../financials/localizations/emea-pol-interest-calculation.md
             - name: Umsatzsaldenbericht
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+        - name: Russische Föderation
+          href: ../financials/localizations/russia.md
+          items:
+            - name: Vorschussinhaber
+              href: ../financials/localizations/rus-advance-holders.md
+              items:
+                - name: Vorschussinhaber erstellen
+                  href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
+                - name: Tägliche Arbeitsgänge für Vorschussinhaber
+                  href: ../financials/localizations/rus-advance-holders-daily-operations.md
+            - name: Anlagevermögen
+              items:
+                - name: Erwerb und Inbetriebnahme von Anlagen
+                  href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Budgeterfassungen für erworbene Anlagen erstellen und buchen
+                  href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+                - name: Anlageninventurerfassung
+                  href: ../financials/localizations/rus-fixed-assets-counting.md
+                - name: Währungsneubewertung für Anlagen
+                  href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Teilweise Anlagendemontage (Liquidation)
+                  href: ../financials/localizations/rus-fixed-assets-disassembly.md
+            - name: Zahlungsaufträge einrichten und verarbeiten
+              href: ../financials/localizations/rus-payment-order-settings-processing.md
+            - name: Wechselkurse für Währungsbuchungen einrichten
+              href: ../financials/localizations/rus-exchange-difference.md
+            - name: Vorschau von Sachkontobuchungen
+              href: ../financials/localizations/rus-ledger-transactions-preview.md
+            - name: Bedienstete einrichten
+              href: ../financials/localizations/rus-officials.md
+            - name: Bankkonten einrichten
+              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+            - name: Mehrwertsteuer (MwSt.) für Steuerbevollmächtigte
+              href: ../financials/localizations/rus-tax-agent.md
+            - name: Dimensionssteuerung für Ausgleiche einrichten
+              href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Saudi-Arabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2133,6 +2177,8 @@
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Wechseloptionen
               href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Fälligkeitsdaten berechnen und durchschnittliche Zahlungsperioden auswerten
+              href: ../financials/localizations/emea-esp-invoice-due-dates.md
             - name: Mehrwertsteuer nach vereinnahmten Geldern
               href: ../financials/localizations/emea-esp-conditional-sales-tax.md
             - name: Fakturierung von Gutschriften
@@ -2857,7 +2903,7 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Manuelles Ändern einer Bedarfsplanung
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Mobile Dynamics 365 for Unified Operations-App
+    - name: Dynamics 365 for Unified Operations Mobile-App
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
         - name: Verfügbare mobile Arbeitsbereiche
