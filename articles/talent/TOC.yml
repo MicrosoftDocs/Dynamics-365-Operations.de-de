@@ -6,6 +6,14 @@
       items:
         - name: Neuheiten und Änderungen
           items:
+            - name: "Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (1.\_Oktober 2018)"
+              href: whats-new-talent-october-01.md
+            - name: "Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (24.\_September 2018)"
+              href: whats-new-talent-september-24.md
+            - name: "Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (17.\_September 2018)"
+              href: whats-new-talent-september-17-2018.md
+            - name: "Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (10.\_September 2018)"
+              href: whats-new-talent-september-10.md
             - name: Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (August 2018)
               href: whats-new-talent-august2018.md
             - name: Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (Juli 2018)
@@ -20,10 +28,14 @@
           href: modular-app-tech-faq.md
         - name: PowerApps-Apps einbetten
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Core HR und Common Data Service für Apps
+          href: CoreHREntities.md
         - name: Auf Vorschaufunktionen zugreifen
           href: access-preview-feature.md
         - name: Lohnintegration zwischen Talent und Dayforce konfigurieren
           href: configure-payroll-integration.md
+        - name: Erhalten Sie Support für Talent
+          href: talent-support.md
     - name: 'Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen'
       href: departments-jobs-positions.md
       items:
@@ -39,10 +51,15 @@
           href: personnel-actions-faq.md
         - name: Formalisieren der Geschäftsprozesse
           href: formalize-business-processes.md
-        - name: Verwenden von Workflow zum Verwalten von Mitarbeiterinformationen
+        - name: Verwenden von Workflows zum Verwalten von Mitarbeiterinformationen
           href: workflow-manage-employee-information.md
-        - name: Urlaubs- und Abwesenheitsverwaltung
-          href: leave-absence-overview.md
+    - name: Beurlaubungen und Abwesenheiten verwalten
+      href: leave-absence-overview.md
+      items:
+        - name: Abgrenzen der arbeitsfreien Zeit auf Grundlage der gearbeiteten Stunden
+          href: leave-accrue-hours-worked.md
+        - name: Arbeitszeitkalender
+          href: working-time-calendars.md
     - name: Personalbeschaffung Ihrer Organisation
       items:
         - name: Features und Funktionen von Attract
@@ -57,8 +74,10 @@
           href: create-fixed-compensation-plans.md
         - name: Variable Vergütungspläne erstellen
           href: create-variable-compensation-plans.md
-        - name: Vergütungsprozess
+        - name: Vergütung verarbeiten
           href: process-compensation.md
+        - name: Einrichten von Komponenten eines Einzelvorgangs
+          href: create-job.md
     - name: Fördern und Schulen von Mitarbeitern
       items:
         - name: Leistungsverwaltung

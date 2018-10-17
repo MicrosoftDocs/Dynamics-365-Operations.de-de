@@ -10,41 +10,35 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
-ms.openlocfilehash: 742c7d732ff121bff841ac0149b15bef5a94c756
+ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
+ms.openlocfilehash: 1b1c9719f0697e9d5a51b0e769b3f850dc1690e5
 ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
+ms.lasthandoff: 09/24/2018
 
 ---
-# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a><span data-ttu-id="a898a-103">Eine Anlage mithilfe einer Freitextrechnung veräußern</span><span class="sxs-lookup"><span data-stu-id="a898a-103">Dispose of a fixed asset using a free text invoice</span></span>
+# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a><span data-ttu-id="127ea-103">Anlage mithilfe einer Freitextrechnung veräußern</span><span class="sxs-lookup"><span data-stu-id="127ea-103">Dispose of a fixed asset using a free text invoice</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a898a-104">In diesem Verfahren wird eine Anlage mithilfe des Anschaffungsvorschlags in der Anlagenerfassung abgerufen.</span><span class="sxs-lookup"><span data-stu-id="a898a-104">This procedure shows how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal.</span></span> <span data-ttu-id="a898a-105">Dabei werden die Buchhalterrolle und die Demodaten für die juristische Person USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="a898a-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
+<span data-ttu-id="127ea-104">Dieses Verfahren zeigt, wie eine Anlage über Freitextrechnung veräußert wird.</span><span class="sxs-lookup"><span data-stu-id="127ea-104">This procedure shows how to dispose of a fixed asset using the free text invoice.</span></span>
 
-1. <span data-ttu-id="a898a-106">Wechseln Sie zu "Anlagen" > "Journaleinträge" > "Anlagenerfassung".</span><span class="sxs-lookup"><span data-stu-id="a898a-106">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
-2. <span data-ttu-id="a898a-107">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="a898a-107">Click New.</span></span>
-3. <span data-ttu-id="a898a-108">Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a898a-108">In the Name field, enter or select a value.</span></span>
-4. <span data-ttu-id="a898a-109">Klicken Sie auf "Positionen".</span><span class="sxs-lookup"><span data-stu-id="a898a-109">Click Lines.</span></span>
-5. <span data-ttu-id="a898a-110">Klicken Sie auf "Vorschläge".</span><span class="sxs-lookup"><span data-stu-id="a898a-110">Click Proposals.</span></span>
-6. <span data-ttu-id="a898a-111">Klicken Sie auf "Anschaffungsvorschlag".</span><span class="sxs-lookup"><span data-stu-id="a898a-111">Click Acquisition proposal.</span></span>
-7. <span data-ttu-id="a898a-112">Klicken Sie auf "Filter".</span><span class="sxs-lookup"><span data-stu-id="a898a-112">Click Filter.</span></span>
-8. <span data-ttu-id="a898a-113">Klicken Sie auf "Zurücksetzen, um vorherige Werte zu löschen".</span><span class="sxs-lookup"><span data-stu-id="a898a-113">Click Reset to clear out previous values.</span></span>
-9. <span data-ttu-id="a898a-114">Wählen Sie die Zeile "Anlagenummer" aus.</span><span class="sxs-lookup"><span data-stu-id="a898a-114">Select the Fixed asset number row.</span></span>
-10. <span data-ttu-id="a898a-115">Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a898a-115">In the Criteria field, enter or select a value.</span></span>
-    * <span data-ttu-id="a898a-116">Legen Sie die verbleibenden Kriterien für die Anlagen fest, die Sie mit diesem Vorschlag abrufen möchten.</span><span class="sxs-lookup"><span data-stu-id="a898a-116">Set the remaining criteria for the fixed assets that you want to acquire with this proposal.</span></span>  
-11. <span data-ttu-id="a898a-117">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="a898a-117">Click OK.</span></span>
-12. <span data-ttu-id="a898a-118">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="a898a-118">Click OK.</span></span>
-    * <span data-ttu-id="a898a-119">Überprüfen Sie die erstellten Transaktionspositionen.</span><span class="sxs-lookup"><span data-stu-id="a898a-119">Verify the transaction lines created.</span></span>  
-    * <span data-ttu-id="a898a-120">Nur Anlagen mit dem Anschaffungsdatum und dem Anschaffungspreis, die im Buch festgelegt sind, werden in den Anschaffungsvorschlag einbezogen.</span><span class="sxs-lookup"><span data-stu-id="a898a-120">Only fixed assets with the acquisition date and acquisition price set on the book will be included in the acquisition proposal.</span></span>  
-13. <span data-ttu-id="a898a-121">Klicken Sie auf die Registerkarte 'Bücher'.</span><span class="sxs-lookup"><span data-stu-id="a898a-121">Click the Books tab.</span></span>
-14. <span data-ttu-id="a898a-122">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="a898a-122">Click Post.</span></span>
+1. <span data-ttu-id="127ea-105">Wechseln Sie zu "Debitoren" > "Rechnungen" > "Alle Freitextrechnungen".</span><span class="sxs-lookup"><span data-stu-id="127ea-105">Go to Accounts receivable > Invoices > All free text invoices.</span></span>
+2. <span data-ttu-id="127ea-106">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="127ea-106">Click New.</span></span>
+3. <span data-ttu-id="127ea-107">Geben Sie im Feld "Debitorenkonto" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="127ea-107">In the Customer account field, enter or select a value.</span></span>
+4. <span data-ttu-id="127ea-108">Überprüfen Sie das standardmäßige Rechnungsdatum und bearbeiten Sie es, wenn zutreffend.</span><span class="sxs-lookup"><span data-stu-id="127ea-108">Validate the default Invoice date and edit if applicable.</span></span>
+5. <span data-ttu-id="127ea-109">Überprüfen Sie verbleibende Standardkopffelder, wie Währungen und bearbeiten Sie diese, sofern zutreffend.</span><span class="sxs-lookup"><span data-stu-id="127ea-109">Validate remaining default header fields, such as Currency and edit if applicable.</span></span>
+6. <span data-ttu-id="127ea-110">Geben Sie hier eine Beschreibung in der Rechnungszeile ein.</span><span class="sxs-lookup"><span data-stu-id="127ea-110">Enter a Description into the invoice line.</span></span>
+7. <span data-ttu-id="127ea-111">Geben Sie das Hauptkonto für die Rechnungszeile ein oder wählen Sie dieses aus.</span><span class="sxs-lookup"><span data-stu-id="127ea-111">Enter or select the Main account for the invoice line.</span></span>
+8. <span data-ttu-id="127ea-112">Prüfen Sie die Standard-Mehrwertsteuergruppen und die Artikel-Mehrwertsteuergruppe.</span><span class="sxs-lookup"><span data-stu-id="127ea-112">Validate the default Sales tax group and Item sales tax group.</span></span>
+9. <span data-ttu-id="127ea-113">Geben Sie den Preis je Einheit oder Betrag des Verkaufs der Anlage ein.</span><span class="sxs-lookup"><span data-stu-id="127ea-113">Enter the Unit price or hte Amount of the sale of the fixed asset.</span></span>
+10. <span data-ttu-id="127ea-114">Klicken Sie auf die Positionsdetails.</span><span class="sxs-lookup"><span data-stu-id="127ea-114">Click Line details.</span></span>  
+11. <span data-ttu-id="127ea-115">Wählen Sie im Feld die Anlagennummer aus, die verkauft werden soll.</span><span class="sxs-lookup"><span data-stu-id="127ea-115">Select the Fixed asset number to be sold.</span></span>
+12. <span data-ttu-id="127ea-116">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="127ea-116">Click Post.</span></span>
 
 
