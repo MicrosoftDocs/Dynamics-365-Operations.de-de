@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
-ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
+ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
+ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -41,6 +41,52 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!Note]
 > Detaillierte Informationen über Objekte in Finance and Operations finden Sie in den [Berichten der technischen Referenz](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die unterschiedlichen Versionen dieser Berichte vergleichen, um über Objekte zu erfahren, die in jeder Version von Finance and Operations geändert oder entfernt wurden.
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Chargenübertragungsregeln für Kontoeinträge in untergeordnetem Sachkonto
+Der synchrone Übergangsmodus wird im Hauptbuchparameter nicht mehr weitergeführt.  Dieser Modus wird nur durch asynchrone und geplanten Charge ersetzt, die bereits als Option für die Umlagerung vorhanden sind. 
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Wir entfernen die synchrone Option, wegen den Auswirkungen auf die Leistung des Systems. |
+| **Ersetzt durch eine andere Funktion?**   | Asynchrone und geplanten Charge sind Optionen, die anstatt Synchron verwendet werden können.   |
+| **Betroffene Produktbereiche**         | Hauptbuch, Kreditoren, Debitoren, Beschaffung, Ausgaben    |
+| **Bereitstellungsoption**              | Alle  |
+| **Status**                         | Veraltet:  - Zielzeitrahmen für die Entfernung der Funktionalität ist Version 10.0.|
+
+### <a name="electronic-reporting-for-russia"></a>Elektronisches Berichtsformat für Russland
+Funktion für das Konfigurieren von .txt und  .xml-Datei-Formaten für Meldungen. 
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ersetzt mit elektronischem Bericht. |
+| **Ersetzt durch eine andere Funktion?**   | Ja. |
+| **Betroffene Produktbereiche**         | Hauptbuch |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Entfernt von Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20. |
+
+### <a name="financial-reports-generator-for-russia"></a>Finanzberichtsgenerator für Russland
+Ein Tool, für die Einrichtung der Datenerfassung für Buchhaltungs- und Steuerberichte und um Daten in XLS- und DOC-Berichtsvorlagen zu exportieren. Funktionale Teile: Exportieren von Daten in XLS- und DOC-Berichtsvorlagen, Abfragen, feste Erfordernisse, werden entfernt. 
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Entfernte Teile werden mit der elektronischen Berichterstattung ersetzt. |
+| **Ersetzt durch eine andere Funktion?**   | Ja. Finanzberichtseinstellungsbenutzeroberfläche soll zum Einrichten von Datenerfassungsregeln nach Steuerregister Hauptbuchkonten verwendet werden. Datenexpot in verschiedenen Dateitypen, feste Erfordernisse und Abfrage ähnliche Datenerfassungsregeln sollten in der elektronischen Berichterstellung konfiguriert werden. |
+| **Betroffene Produktbereiche**         | Hauptbuch. |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Entfernt von Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20. |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration mit externen Anbietern zum Senden der elektronischen Berichterstellung nach Kommunikationswegen für Russland
+Funktion, die Karteien generierte elektronische Meldungen zum Ordner für das weitere Versenden an offizielle Anbieter von elektronischer Berichterstellung exportiert sowie den Status zurück importiert.
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ersetzt mit konfigurierbaren Funktion für elektronische Nachrichten. |
+| **Ersetzt durch eine andere Funktion?**   | Ja.  |
+| **Betroffene Produktbereiche**         | Hauptbuch, Steuer |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Entfernt von Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20. |
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 mit Plattformupdate 15
 Keine Funktionen sind in dieser Version entfernt oder veraltet worden. Plattformupdate 15 ist kumulativ und enthält neue oder geänderte Funktionen aus Plattformupdate 13, Plattformupdate 14 und Plattformupdate 15.

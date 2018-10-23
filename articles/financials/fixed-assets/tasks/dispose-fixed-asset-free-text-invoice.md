@@ -10,41 +10,35 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 24c7721a1e5467e98e6c4d245f1d8e24a973f5aa
+ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
+ms.openlocfilehash: 1b1c9719f0697e9d5a51b0e769b3f850dc1690e5
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/24/2018
 
 ---
-# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Eine Anlage mithilfe einer Freitextrechnung veräußern
+# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Anlage mithilfe einer Freitextrechnung veräußern
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
 
-In diesem Verfahren wird eine Anlage mithilfe des Anschaffungsvorschlags in der Anlagenerfassung abgerufen. Dabei werden die Buchhalterrolle und die Demodaten für die juristische Person USMF verwendet.
+Dieses Verfahren zeigt, wie eine Anlage über Freitextrechnung veräußert wird.
 
-1. Wechseln Sie zu "Anlagen" > "Journaleinträge" > "Anlagenerfassung".
+1. Wechseln Sie zu "Debitoren" > "Rechnungen" > "Alle Freitextrechnungen".
 2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.
-4. Klicken Sie auf "Positionen".
-5. Klicken Sie auf "Vorschläge".
-6. Klicken Sie auf "Anschaffungsvorschlag".
-7. Klicken Sie auf "Filter".
-8. Klicken Sie auf "Zurücksetzen, um vorherige Werte zu löschen".
-9. Wählen Sie die Zeile "Anlagenummer" aus.
-10. Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.
-    * Legen Sie die verbleibenden Kriterien für die Anlagen fest, die Sie mit diesem Vorschlag abrufen möchten.  
-11. Klicken Sie auf "OK".
-12. Klicken Sie auf "OK".
-    * Überprüfen Sie die erstellten Transaktionspositionen.  
-    * Nur Anlagen mit dem Anschaffungsdatum und dem Anschaffungspreis, die im Buch festgelegt sind, werden in den Anschaffungsvorschlag einbezogen.  
-13. Klicken Sie auf die Registerkarte 'Bücher'.
-14. Klicken Sie auf "Buchen".
+3. Geben Sie im Feld "Debitorenkonto" einen Wert ein oder wählen Sie einen Wert aus.
+4. Überprüfen Sie das standardmäßige Rechnungsdatum und bearbeiten Sie es, wenn zutreffend.
+5. Überprüfen Sie verbleibende Standardkopffelder, wie Währungen und bearbeiten Sie diese, sofern zutreffend.
+6. Geben Sie hier eine Beschreibung in der Rechnungszeile ein.
+7. Geben Sie das Hauptkonto für die Rechnungszeile ein oder wählen Sie dieses aus.
+8. Prüfen Sie die Standard-Mehrwertsteuergruppen und die Artikel-Mehrwertsteuergruppe.
+9. Geben Sie den Preis je Einheit oder Betrag des Verkaufs der Anlage ein.
+10. Klicken Sie auf die Positionsdetails.  
+11. Wählen Sie im Feld die Anlagennummer aus, die verkauft werden soll.
+12. Klicken Sie auf "Buchen".
 
 

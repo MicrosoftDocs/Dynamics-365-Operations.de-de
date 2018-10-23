@@ -3,13 +3,13 @@ title: Talent bereitstellen
 description: "Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Umgebung für Microsoft Dynamics 365 for Talent."
 author: rschloma
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: josaw
 ms.search.scope: Talent
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 2fc4119f3b33aa583274f4d823e296752cdde41d
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 # <a name="provision-talent"></a>Talent bereitstellen
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/08/2018
 
 Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Produktionsumgebung für Microsoft Dynamics 365 for Talent. Für dieses Thema wird vorausgesetzt, dass Sie Talent durch einen Cloud-Lösungs-Anbieter (CSP) oder Unternehmensarchitektur (EA)- Vereinbarung besitzen. Wenn Sie eine vorhandene Microsoft Dynamics 365 Lizenz haben, die den Talent-Service-Plan bereits beinhaltet, und Sie die Schritte in diesem Thema nicht ausführen können, kontaktieren Sie den Support.
 
-Um zu beginnen, sollte der globale Administrator sich bei [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) anmelden und ein neues Talent Projekt erstellen. Vorausgesetzt, das kein Lizenzierungsabgang die Bereitstellung von Talent verhindert, ist kein Hilfe von Support oder dem Dynamics Engineering (DSE) erforderlich.
+Um zu beginnen, sollte der globale Administrator sich bei [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) anmelden und ein neues Talent Projekt erstellen. Vorausgesetzt, das kein Lizenzierungsabgang die Bereitstellung von Talent verhindert, ist kein Hilfe von Support oder dem Dynamics Engineering (DSE) erforderlich.
 
 ## <a name="create-an-lcs-project"></a>LCS Projekt erstellen
 Um Kreditbriefen für die Talent Umgebung zu verwalten, müssen Sie ein LCS-Projekt zuerst erstellen.
@@ -48,7 +48,6 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung
 
 1. In Ihrem LCS-Projekt wählen Sie die Kachel **Talent App-Verwaltung** aus.
 2. Talent wird immer in einer Umgebung Microsoft PowerApps Bereitgestellt, um PowerApps-Integration und Erweiterbarkeit zu aktivieren. Lesen Sie den Abschnitt "PowerApps-Umgebung" dieses Themas", bevor Sie fortfahren. 
-3. Wenn Sie noch keine PowerApps-Umgebung verfügen, führen Sie die Schritte im Abschnitt "Erstellen einer neuen PowerApps-Umgebung (nach Bedarf) aus, bevor Sie fortfahren.
 
     > [!NOTE]
     > Um die vorhandene Umgebung anzeigen oder eine neue Umgebung zu erstellen, muss der Mandantenadministrator der Talent bereitstellt der Lizenz PowerApps P2 zugewiesen werden. Wenn Ihre Organisation keine PowerApps Lizenz P2 hat, können Sie dies aus Ihrem CSP oder über abrufen [PowerApps-Preiskalkulationsseite](https://powerapps.microsoft.com/en-us/pricing/).
@@ -78,11 +77,6 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche PowerApps-Um
 4. Datenenintegrations- und -Testsstrategien sollten berücksichtigt werden : z. B. Sandbox, UAT, Produktion. Daher wird empfohlen, dass Sie die verschiedenen Auswirkungen für Ihre Bereitstellung beachten, da es nicht leicht ist, später zu ändern, welche Talent-Umgebung einer PowerApps-Umgebung zugeordnet ist.
 5. Die folgenden PowerApps-Umgebungen können nicht für Talent verwendet werden und werden von der Auswahlliste innerhalb von LCS aus gefiltert:
  
-    **CDS 2.0 Umgebung** CDS 2.0 ist am 21. März 2018 verfügbar, aber Talent unterstützt CDS 2.0 nicht. Obwohl Sie CDS 2.0-Datenbanken im PowerApps Admin Center anzeigen und erstellen können, sind diese in Talent nicht verwendbar. Die Option, CDS 2.0-Umgebungen in Talent-Bereitstellungen zu verwenden, wird zu einem späteren Zeitpunkt verfügbar sein.
-   
-   > [!Note]
-   > Um zwischen CDS 1.0- und CDS 2.0-Umgebungen im Verwaltungsportal zu unterscheiden, wählen Sie eine Umgebung aus, und schauen Sie sich die **Details** an. 2,0 CDS Umgebung, die alle der Tatsache "verweisen, dem Sie diese Einstellungen in dem Verwaltungscenter Dynamics 365 verwalten können," Anzeigen der auf einer Instanzversion und haben keine Datenbankregisterkarte. 
- 
    **Standard-Power-App-Umgebung**, Obwohl jeder Mandant automatisch mit einer Standard-PowerApps-Umgebung ausgestattet ist, empfehlen wir, dass Sie ihn nicht mit Talent verwenden, da alle Mandantenbenutzer Zugriff auf die PowerApps-Umgebung haben und unbeabsichtigt produktive Daten beim Testen und Untersuchen von PowerApps oder Flow Integration beeinträchtigen können.
    
    <strong>Testumgebung</strong> Umgebungen mit einem Namen wie 'TestDrive – alias@domain' werden mit einer 60 tägigen Ablaufperiode erstellt und sind nach dieser Frist abgelaufen und Ihre Umgebung wird automatisch entfernt.
@@ -91,42 +85,6 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche PowerApps-Um
   
 6. Es gibt keine spezifische Aktivität, die zu ergreifen ist, sobald Sie die richtige Umgebung bestimmt haben, die verwendet werden soll. Setzen Sie den Bereitstellungsprozess fort. 
  
-## <a name="create-a-new-powerapps-environment-if-required"></a>Erstellen Sie eine neue PowerApps-Umgebung (nach Bedarf)
-
-Führen Sie ein PowerShell-Skript aus, um eine neue PowerApps-Umgebung für Talent im Rahmen des Mandantenadministrators zu erstellen, der die Lizenz für PowerApps Plan 2 hat. Das Skript automatisiert die folgenden Schritte:
-
-
- + Erstellen einer PowerApps-Umgebung
- + Erstellen einer Datenbank CDS 1.0
- + Löschen aller Beispieldaten in der Datenbank CDS 1.0
-
-
-Führen Sie die folgenden Anweisungen aus, um das Skript auszufüllen:
-
-1. Laden Sie die ProvisionCDSEnvironment.zip-Datei von folgender elektronischer Adresse hinunter [ProvisionCDSEnvironment-Skripte](https://go.microsoft.com/fwlink/?linkid=870436)  
-
-2. Klicken Sie in Ihrem Download-Ordner mit der rechten Maustaste auf die gerade heruntergeladene Datei ProvisionCDSEnvironment.zip und wählen Sie **Eigenschaften**.  Wenn sich unten im Dialogfeld ein Sicherheitshinweis befindet, der besagt, dass diese Datei von einem anderen Computer stammt und blockiert werden könnte, um diesen Computer zu schützen, markieren Sie das Kontrollkästchen auf **Blockierung aufheben**, dann klicken Sie auf **Anwenden** und dann auf **Ok**.
-
-3. Entpacken Sie den gesamten Inhalt der Datei ProvisionCDSEnviroinment.zip in einen anderen Ordner als Ihren Stammordner.
-
-4. Führen Sie das Windows PowerShell- oder Windows PowerShell ISE-Programm als Administrator aus.
-
-   Besuchen Sie das Thema [Ausführungsrichtlinie festlegen](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6), um weitere Informationen über das Festlegen der Ausführungsrichtlinie zu erhalten, sodass Skripts ausgeführt werden können. Wir empfehlen die Verwendung des folgenden "Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process", aber beachten Sie unbedingt die Sicherheitsrichtlinien Ihres Unternehmens und schließen Sie das PowerShell-Fenster, wenn Sie fertig sind. 
-  
-5. Innerhalb von PowerShell navigieren Sie zum Ordner, in dem Sie die Datei entzippt haben und führen den folgenden Befehl aus, wodurch Werte, wie unten angewiesen, ersetzt werden:
- 
-   ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
-
-    
-   **MyNewEnvironment** sollte durch den Umgebungsnamen ersetzt werden. Dieser Name wird in LCS angezeigt, und er wird sichtbar sein, wenn Benutzer auswählen, welche Talent-Umgebung verwendet werden soll. 
-
-   **YourLocation** sollte durch eine der unterstützten Regionen für Talent ersetzt werden: USA, Euroa, Australien. 
-
-   **- Verbose** ist optional und wird detaillierte Informationen bereitstellen, um Support zui senden, wenn Probleme auftreten.
-
-6. Setzen Sie den Bereitstellungsprozess fort.
- 
-
 ## <a name="grant-access-to-the-environment"></a>Zugriff auf die Umgebung gewähren
 Standardmäßig besitzt nur der globale Administrator, von dem Enterprise Portal installiert wurde, Zugriff auf diese Anwendung. Allerdings muss zusätzliche Bewerbungsbenutzern explizit Zugriff gewährt werden. Um Zugriff zu gewähren, wählen Sie [Benutzer hinzufügen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) und [weisen die entsprechenden Rollen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) in der Personalverwaltungsumgebung zu. Der globale Administrator, der Talent eingesetzt hat, muss auch die Anwendungen Attract und Onboard starten, um die Initialisierung abzuschließen und den Zugriff für andere Mieter zu ermöglichen.  Bis dies geschieht, können andere Benutzer nicht auf Attract- und Onboard-Anwendungen zugreifen und erhalten Zugriffsverletzungsfehler.
 

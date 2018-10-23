@@ -9,7 +9,7 @@
   items:
     - name: Generieren von Demodaten mit Datenpaketen
       href: data-entities/generate-demo-data-packages.md
-- name: Entwickeln und Anpassen mit Visual Studio
+- name: Entwickeln und Anpassen
   href: dev-tools/developer-home-page.md
   items:
     - name: Anwendungsstapel und Serverarchitektur
@@ -27,7 +27,7 @@
           href: dev-tools/enable-development-machine.md
         - name: 'Entwicklungs- und Build-VMs, die keinen Administratorzugriff ermöglichen – FAQs'
           href: sysadmin/VMs-no-admin-access.md
-        - name: 'Umbenennen von lokalen Umgebungen, um auf Visual Studio Team Services zuzugreifen'
+        - name: Umbenennen lokaler Umgebungen für den Zugriff auf Azure DevOps
           href: migration-upgrade/vso-machine-renaming.md
         - name: Entwicklungssystemanforderungen
           href: dev-tools/development-system-requirements.md
@@ -106,6 +106,8 @@
               href: dev-ref/xpp-variables-data-types.md
             - name: 'X++-Anweisungen, -Schleifen und -Ausnahmebehandlung'
               href: dev-ref/xpp-statements-loops.md
+            - name: SQL-Verbindungsfehler X++-Ausnahme
+              href: dev-ref/sql-connection-error.md
             - name: X++-Operatoren
               href: dev-ref/xpp-operators.md
             - name: X++-Operatorenrangfolge
@@ -251,6 +253,10 @@
               href: extensibility/extensibility-changes-802.md
             - name: Erweiterbarkeitsänderungen in Version 8.0.3
               href: extensibility/extensibility-changes-803.md
+            - name: Erweiterbarkeitsänderungen in Version 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Erweiterbarkeitsänderungen in Version 8.1
+              href: extensibility/extensibility-changes-81.md
         - name: Grundlagen
           items:
             - name: Intrusive Anpassungen
@@ -914,8 +920,10 @@
           href: gdpr/gdpr-ax2012.md
         - name: DSGVO-Datenanforderungen für LCS
           href: gdpr/gdpr-lcs.md
-    - name: Arbeitsbereich für die Prüfliste für Datenüberprüfung
+    - name: Arbeitsbereich für die Prüfliste zur Datenüberprüfung
       href: user-interface/data-validation-workspace.md
+    - name: "Datenverwaltungsfehler\_– Beschreibungen"
+      href: data-entities/dm-error-descriptions.md
 - name: Continuous Delivery
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1107,14 +1115,29 @@
               href: migration-upgrade/in-memory-real-time-aggregate-models.md
             - name: Migrieren von aktualisierten Vertriebs-Cubes in Entitätsspeicher
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
-            - name: Budgetplanung aktualisieren
+            - name: Aktualisieren der Budgetplanung
               href: migration-upgrade/upgrade-budget-planning.md
+    - name: "Datenmigration von AX\_2009 zu Finance and Operations"
+      href: migration-upgrade/data-migration-tool.md
+      items:
+        - name: "AX\_2009-Migration\_– Installieren des Datenmigrationstools"
+          href: migration-upgrade/install-dmt.md
+        - name: "AX\_2009-Migration\_– Generieren von Zuordnungen"
+          href: migration-upgrade/generate-maps.md
+        - name: "AX\_2009-Migration\_– Erstellen von Vorlagen"
+          href: migration-upgrade/create-package-templates-dmt.md
+        - name: "AX\_2009-Migration\_– Erstellen von Migrationsgruppen"
+          href: migration-upgrade/create-definition.md
+        - name: "AX\_2009-Migration\_– Exportieren von Paketen"
+          href: migration-upgrade/ax2009-upgrade-export-package.md
+        - name: "AX\_2009-Migration\_– Importieren von Paketen"
+          href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: Codemigration und Aktualisierung
       href: migration-upgrade/code-migration-home-page.md
       items:
         - name: Migrieren von Code vorbereiten
           href: migration-upgrade/prepare-migration.md
-        - name: Konfigurieren der Visual Studio Team Services-Zuordnung
+        - name: Konfigurieren der Azure DevOps-Zuordnung
           href: migration-upgrade/configure-vso-solution.md
         - name: Modellunterteilung
           href: dev-tools/model-split.md
@@ -1124,6 +1147,8 @@
       items:
         - name: Prozess zum Verschieben auf das neueste Update
           href: migration-upgrade/upgrade-latest-update.md
+        - name: Umgebungen von Version 8.0 auf 8.1 aktualisieren
+          href: migration-upgrade/appupdate-80-81.md
         - name: Software-Lebenszyklusrichtlinien- und -Cloudfreigaben
           href: migration-upgrade/versions-update-policy.md
         - name: Das aktuellste Platform Update auf Umgebungen anwenden
@@ -1248,7 +1273,7 @@
       href: lifecycle-services/complete-tasks-bpm.md
     - name: Arbeiten mit Aktivitätsdiagrammen in BPM-Bibliotheken
       href: lifecycle-services/using-activity-diagrams.md
-    - name: Synchronisieren von BPM-Bibliotheken mit Visual Studio Team Services
+    - name: Synchronisieren der BPM-Bibliotheken mit Azure DevOps
       href: lifecycle-services/synchronize-bpm-vsts.md
     - name: Erstellen von Benutzerakzeptanz-Testbibliotheken mithilfe von Aufgabenleitfäden und BPMs
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
@@ -1266,6 +1291,10 @@
       href: lifecycle-services/user-logins.md
     - name: Anlagenbibliothek
       href: lifecycle-services/asset-library.md
+    - name: Leistungsproblembehandlung mithilfe der Tools in LCS
+      href: lifecycle-services/performancetroubleshooting.md
+    - name: Cookbook für Abfragen
+      href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
       href: lifecycle-services/translation-service-overview.md
       items:

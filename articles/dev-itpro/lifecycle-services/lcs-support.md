@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 7061ee2e8b22d29381131815898902a482b7b730
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
 ms.contentlocale: de-de
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 09/21/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 08/29/2018
 
 In diesem Artikel wird beschrieben, wie Sie Hilfe mit Microsoft Dynamics 365 for Finance and Operations, Enterprise edition oder Microsoft Dynamics Lifecycle Services (LCS) erhalten. 
 
-<a name="contact-support"></a>Kundendienst kontaktieren
----------------
+## <a name="contact-support"></a>Kundendienst kontaktieren
 
 Verwenden Sie die Informationen in diesem Artikel, um Microsoft zu kontaktieren, wenn Sie Fachfragen zu Finance and Operations haben oder wenn Sie die Hilfe benötigen, auf Microsoft Dynamics Lifecycle Services (LCS) zugreifen.
 
@@ -89,8 +88,10 @@ Für technische Fragen im Zusammenhang mit der Anmeldung und den Zugriff auf Cus
 </tbody>
 </table>
 
-Weitere Informationen zu Microsoft Dynamics Supportangebote finden Sie unter [Microsoft Dynamics-Onlinesupport](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
-
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+- [Support für Dynamics 365 for Retail erhalten](../../retail/retail-support.md)
+- [Support für Dynamics 365 for Talent erhalten](../../talent/talent-support.md)
+- Weitere Informationen zu Microsoft Dynamics Supportangebote finden Sie unter [Microsoft Dynamics-Onlinesupport](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
 

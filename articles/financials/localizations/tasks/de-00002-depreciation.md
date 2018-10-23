@@ -1,28 +1,29 @@
 --- 
-title: "Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr (Deutschland)"
+title: "DE-00002 Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr"
 description: "Dieses Handbuch veranschaulicht, wie die Berechnung der Abschreibung für zusätzliche Anschaffungen eingerichtet."
 author: mrolecki
 manager: AnnBe
-ms.date: 05/09/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetParameters, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0db8fe6ca2770c849e2a5fd85969ff008241a566
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 3ba986484936d11c325a8580d125c4fda150375a
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="depreciation-adjustments-for-additional-acquisitions-in-the-second-year-germany"></a>Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr (Deutschland)
+# <a name="de-00002-depreciation-adjustments-for-additional-acquisitions-in-the-second-year"></a>DE-00002 Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

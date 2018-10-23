@@ -3,7 +3,7 @@ title: Die Benutzerumgebung personalisieren
 description: In diesem Artikel wird die Personalisierung von Microsoft Dynamics 365 for Finance and Operations beschrieben.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
-ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
+ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
+ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -64,7 +64,7 @@ Verschiedene Personen und Unternehmen haben eine unterschiedliche Perspektive au
 ### <a name="shortcut-menu-options"></a>Verknüpfungsmenüoptionen
 Ein Kontextmenü enthält mehrere Möglichkeiten, explizit einer Seite zu ändern, um den Anforderungen und Bedürfnissen Ihres Unternehmens zu entsprechen. (Wird auch als *Rechtsklickmenü* oder *Kontextmenü* bezeichnet).
 
-Einige der typischsten und wichtigsten Änderungen, die Sie an einer Seite vornehmen können, sind direkt als Optionen für ein Kontextmenü verfügbar. Zum Beispiel um eine Spalte in einem Raster ein- oder auszublenden, klicken Sie auf eine Rasterspaltenüberschrift mit der rechten Maustaste und wählen Sie dann **Hinzufügen von Spalten** oder **Ausblenden der Spalte** aus.
+Einige der typischsten und wichtigsten Änderungen, die Sie an einer Seite vornehmen können, sind direkt als Optionen für ein Kontextmenü verfügbar. Zum Beispiel ist es ab Platform Upate 17 möglich,  um eine Spalte in einem Raster ein- oder auszublenden, auf eine Rasterspaltenüberschrift mit der rechten Maustaste zu klicken. Wählen Sie dann **Hinzufügen von Spalten** oder **Ausblenden der Spalte** aus.
 
 Darüber hinaus sind die Typen der grundlegendsten expliziten Personalisierung verfügbar, indem Sie auf ein Element mit der rechten Maustaste klicken und dann **Anpassen** auswählen. (Beachten Sie, dass nicht alle Elemente auf der Seite personalisiert werden können.) Wenn Sie diese  Methode der Personalisierung auswählen, wird das Eigenschaftenfenster des Elements angezeigt.
 
@@ -81,27 +81,38 @@ Sie können das Eigenschaftenfenster verwenden, um ein Element in folgender Hins
 Das Eigenschaftenfenster kann andere Personalisierungsfunktionen enthalten, abhängig vom Element. Beispielsweise können Sie mit dem Eigenschaftenfenster für eine Kachel diese Kachel in einem Dashboard höher stufen, und das Eigenschaftenfenster für das Dashboard lässt Sie möglicherweise einen neuen Arbeitsbereich auf diesem Dashboard erstellen.
 
 ### <a name="the-personalization-toolbar"></a>Personalisierungssymbolleiste
-Wenn Sie Elementen verschieben oder ausblenden möchten oder einige Änderungen auf einer Seite vornehmen möchten, können Sie die Symbolleiste **Benutzereinstellungen** verwenden. Um die Symbolleiste **Benutzereinstellungen** zu öffnen, wählen Sie **Personalisieren Sie dieses Formular** im Fenster Eigenschaften eines Elements aus. Sie können **Personalisieren Sie dieses Formular** in der Gruppe **Anpassen** auf der Registerkarte **Optionen** des Aktivitätsbereichs jeder Seite auch auswählen.
+Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten, die über keinen anderen Mechanismen (z. B.  Elemente neu anordnen) verfügbar sind, können Sie die Symbolleiste **Benutzereinstellungen** verwenden. Um die Symbolleiste **Benutzereinstellungen** zu öffnen, wählen Sie **Personalisieren Sie dieses Formular** im Fenster Eigenschaften eines Elements aus. Sie können **Personalisieren Sie dieses Formular** in der Gruppe **Anpassen** auf der Registerkarte **Optionen** des Aktivitätsbereichs jeder Seite auch auswählen.
 
 [![Personalisierungssymbolleiste](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Wenn die **Personalisierungssymbolleiste** geöffnet ist, ist die Seite nicht interaktiv. Sie können deshalb keine Daten eingeben oder Abschnitte erweitern oder reduzieren. Sie können nur Elemente ändern, die die Seite gestalten.
+#### <a name="navigating-the-page"></a>Navigieren auf de Seite 
+Ihre Fähigkeit, auf der Seite zu navigieren, während die **Personalisierungssymbolleiste** geöffnet ist, hängt von der Plattformversion ab, die Sie ausführen. 
 
+- Vor Plattformaktualisierung 19 ist die Seite schreibgeschützt, während die Symbolleiste **Benutzereinstellungen** geöffnet ist (Sie können keine nichts eingeben) und ist nicht interaktiv (Sie können nur die sichtbaren Elemente auf der Seite ändern). Wenn Sie Änderungen zu den Elementen in einem reduzierten Bereich oder auf einer anderen Registerkarte vornehmen möchten, müssen Sie die Symbolleiste **Benutzereinstellungen** schließen,  einen Bereich erweitern oder zu einer gewünschten Registerkarte wechseln, und dann die Symbolleiste  **Benutzereinstellungen** erneut öffnen.  
+
+- Ab Plattformaktualisierung 19, wenn die Symbolleiste **Benutzereinstellungen** geöffnet ist, ist die Seite immer noch schreibgeschützt, ist jedoch interaktiver. Sie können insbesondere den Infoboxbereich erweitern oder reduzieren, Registerkarten wechseln und Bereiche erweitern oder reduzieren, während die Symbolleiste **Benutzereinstellungen** gleich geöffnet ist, wie  dies normalerweise bei einer Seite der Fall ist. Um eine Personalisierungsänderung auf einen reduzierten Bereich oder eine Registerkarte anzuwenden (z. B. ein Inforegister ausblenden), starten Sie die Schaltfläche neben der der reduzierte Bereich oder die Registerkarte angezeigt, wenn sie Tastaturfokus erhält oder wenn Sie darüber fahren.  
+
+#### <a name="personalization-tools"></a>Personalisierungswerkzeuge
 Folgende Tools sind auf der Symbolleiste **Benutzereinstellungen** verfügbar:
 
 - Nutzen Sie das Werkzeug **Auswählen**, um Eigenschaften eines Elements auszuwählen und zu ändern. Nutzen Sie das Werkzeug **Auswählen**, um Eigenschaften eines Elements auszuwählen und zu ändern. Wenn Sie ein Element auswählen, wird das Eigenschaftenfenster des Elements geöffnet, und Sie können beliebige Eigenschaften für dieses Element ändern. Sie können den Prozess für andere Elemente auf Ihrem Formular wiederholen, die personalisierbar sind. Aber aufgrund der Methode, wie gewisse Elemente verwendet werden, können Sie in Finance and Operations gewisse Eigenschaften nicht ändern. Wenn Sie ein Element auswählen, werden Sie möglicherweise sehen, dass einige der Eigenschaften nicht geändert werden können. Sie können beispielsweise kein Feld ausblenden, das erforderlich ist.
-- Wählen Sie das Tool **Umlagern** aus, wenn Sie ein Element auswählen und an einen anderen Lagerplatz innerhalb der aktuellen Elementgruppe umlagern möchten. (Sie können kein Element außerhalb seiner übergeordneten Gruppe verschieben.) Wählen Sie das Tool **Umlagern** aus, und aktivieren Sie anschließend das Element aus, um es zu verschieben. Wenn Sie ein Element auswählen, überprüft Finance and Operations die Seite um zu bestimmen, wohin das Element verschoben werden kann. Es erstellt dann eine Serie "Abstiegszonen." Da Sie das Element innerhalb der aktuellen Gruppe ziehen, wird jede Abstiegszone als farbige, fette Position neben dem Bereich angezeigt, in dem das Element abgelegt werden kann.
-- Wählen Sie das Tool **Ausblenden**, um ein Element auf der Seite auszublenden. Wählen Sie das Tool **Verbergen** aus, und wählen Sie anschließend das Element aus, um es zu verbergen. Wenn Sie das Tool **Ausblenden** auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können sie dann einblenden. Wählen Sie das Tool **Auswählen**, um zu sehen, wie die Seite aussehen wird, wenn die ausgewählten Elementen ausgeblendet sind.
-- Verwenden Sie das Tool **Zusammenfassung**, wenn ein Element im Inforegister Zusammenfassungsbereich angezeigt werden sollen. Das Tool „Zusammenfassung“ gilt nur für Felder, die innerhalb eines Inforegisterabschnitts enthalten sind. Wenn Sie das Tool **Zusammenfassung** auswählen, werden alle Felder, die ausgewählt wurden, in einem schattierten Container angezeigt. Sie können Felder der Inforegisterzusammenfassung interaktiv hinzufügen und Felder aus der Inforegisterzusammenfassung entfernen, indem Sie die Felder auswählen.
-- Wählen Sie das **Überspringen** Tool, um ein Element aus der Tastaturtabulatorsequenz der Seite zu entfernen. Wenn Sie das Tool **Ausblenden** auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können sie Teil von der Tabulatorsequenz erneut erstellen.
-- Wählen Sie das Tool **Bearbeiten** aus, wenn Sie ein Element als „Bearbeitbar“ oder „Nicht bearbeitbar“ markieren wollen. Wenn Sie das Tool **Bearbeiten** auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können definieren, dass sie wieder geändert werden können. Beachten Sie: Mehrere Felder sind obligatorisch und können nicht als nicht bearbeitbar festgelegt werden. Ein Schlosssymbol wird neben den Feldern angezeigt.
-- Verwenden Sie die Schaltfläche **Einfügen**, um eine Liste mit Elementen zu finden, die für eine Seite eingefügt werden können.
 
+- Wählen Sie das Tool **Umlagern** aus, wenn Sie ein Element auswählen und an einen anderen Lagerplatz innerhalb der aktuellen Elementgruppe umlagern möchten. (Sie können kein Element außerhalb seiner übergeordneten Gruppe verschieben.) Wählen Sie das Tool **Umlagern** aus, und aktivieren Sie anschließend das Element aus, um es zu verschieben. Wenn Sie ein Element auswählen, überprüft Finance and Operations die Seite um zu bestimmen, wohin das Element verschoben werden kann. Es erstellt dann eine Serie "Abstiegszonen." Da Sie das Element innerhalb der aktuellen Gruppe ziehen, wird jede Abstiegszone als farbige, fette Position neben dem Bereich angezeigt, in dem das Element abgelegt werden kann.
+
+- Wählen Sie das Tool **Ausblenden**, um ein Element auf der Seite auszublenden. Wählen Sie das Tool **Verbergen** aus, und wählen Sie anschließend das Element aus, um es zu verbergen. Wenn Sie das Tool **Ausblenden** auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können sie dann einblenden. Wählen Sie das Tool **Auswählen**, um zu sehen, wie die Seite aussehen wird, wenn die ausgewählten Elementen ausgeblendet sind.
+    - Ab Plattformaktualisierung 18 können Sie Pflichtfelder  und Abschnitte ausblenden, die Pflichtfelder enthalten. Dast gibt einem Benutzer die Möglichkeit, eine vereinfachte Erfahrung zu erstellen, in der die von der Geschäftslogik als Standard gekennzeichneten Pflichtfelder nicht angezeigt werden. Ausgeblendete Pflichtfelder werden auch vorübergehend sichtbar gemacht, wenn sie leer sind, wenn eine Speicherung versucht wird. 
+
+- Verwenden Sie das Tool **Zusammenfassung**, wenn ein Element im Inforegister Zusammenfassungsbereich angezeigt werden sollen. Das Tool „Zusammenfassung“ gilt nur für Felder, die innerhalb eines Inforegisterabschnitts enthalten sind. Wenn Sie das Tool **Zusammenfassung** auswählen, werden alle Felder, die ausgewählt wurden, in einem schattierten Container angezeigt. Sie können Felder der Inforegisterzusammenfassung interaktiv hinzufügen und Felder aus der Inforegisterzusammenfassung entfernen, indem Sie die Felder auswählen.
+
+- Wählen Sie das **Überspringen** Tool, um ein Element aus der Tastaturtabulatorsequenz der Seite zu entfernen. Wenn Sie das Tool **Ausblenden** auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können sie Teil von der Tabulatorsequenz erneut erstellen.
+
+- Wählen Sie das Tool **Bearbeiten** aus, wenn Sie ein Element als „Bearbeitbar“ oder „Nicht bearbeitbar“ markieren wollen. Wenn Sie das Tool **Bearbeiten** auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können definieren, dass sie wieder geändert werden können. Beachten Sie: Mehrere Felder sind obligatorisch und können nicht als nicht bearbeitbar festgelegt werden. Ein Schlosssymbol wird neben den Feldern angezeigt.
+
+- Verwenden Sie die Schaltfläche **Einfügen**, um eine Liste mit Elementen zu finden, die für eine Seite eingefügt werden können.
     - Wählen Sie das Tool **Feld** unter **Einfügen**, um ein Feld der Seite hinzuzufügen. Wenn Sie das Tool **Feld** verwenden, können Sie nur Felder hinzufügen, die Teil der Seitendefinition sind, aber nicht die derzeit auf der Seite angezeigt werden. Informationen darüber, wie neue Felder erstellt werden, die nicht Teil der Definition der aktuellen Seite sind, finden Sie unter [Benutzerdefinierte Felder](user-defined-fields.md). Nachdem Sie das Tool **Feld** auswählen, müssen Sie die Gruppe oder den Bereich zunächst aktivieren, dem Sie ein Feld hinzufügen möchten. Ein Dialogfeld wird in der Liste der Felder angezeigt, die dem Bereich zugeordnet sind, den Sie ausgewählt haben. Wählen Sie im Dialogfeld mindestens ein Feld aus und wählen Sie **Einfügen**en Benutzer oder mindestens eine Gruppe aus. Wenn Sie ein Feld entfernen, das Sie zuvor hinzugefügten haben, wiederholen Sie den Vorgang aber deaktivieren Sie die Option im Dialogfeld.
     - Wählen Sie das Tool **PowerApp** unter **Einfügen**, um eine App einzfügen, die unter Microsoft PowerApps auf der Seite erstellt wurden. Ausführliche Informationen dazu, wie eine PowerApps-App in eine Seite eingebettet wird, finden Sie unter [Betten Sie Sie PowerApps ein](embed-power-apps.md).
 
 - Wählen Sie die **Verwalten** Schaltfläche, um eine Liste der zu Verwaltungsoptionen finden, die für alle Personalisierungen für die aktuelle Seite zugeordnet werden.
-
     - Wählen Sie **Löschen**, um die Seite zu dem Standard zurückzusetzen, installiertes Bundesland zurückzusetzen. Alle Personalisierungen auf der aktuellen Seite sind deaktiviert. Es gibt keine rückgängig gemachte Aktion. Daher verwenden Sie diese Option, wenn Sie sicher sind, dass Sie die Seite zurücksetzen möchten.
     - Wählen Sie **Importieren**, um eine Personalisierung aus einer Personalisierungsdatei zu verwenden, die Sie oder eine andere Person zuvor für diese Seite erstellt haben. Alle Ihre aktuellen Personalisierungen für die Seite werden von der Personalisierungen aus der ausgewählten Datei ersetzt.
     - Wählen Sie **Exportieren**, um die Personalisierungen für die Seite in einer Datei zu speichern. Sie können hre Personalisierungen mit  anderen Benutzern teilen. Diese Benutzer müssen nur die Datei importieren, die für Ihre Personalisierungen die Seite enthält.

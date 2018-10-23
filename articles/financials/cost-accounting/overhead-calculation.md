@@ -3,7 +3,7 @@ title: Gemeinkostenberechnung
 description: "In diesem Thema werden die typischen Prozesse für die Berechnung und Zuweisung von Gemeinkosten beschrieben."
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 549e9b4b073a4e93dd3a1dd52dd6f43e7420a31b
+ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
+ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/05/2018
 
 ---
 
@@ -191,8 +191,7 @@ Manchmal ist ein Teil der Kosten eine feste Gebühr, und die verbleibenden Koste
 </tbody>
 </table>
 
-Detaillierte Informationen zum Kostenverhalten finden Sie in der Richtlinie Kostenverhalten. (Beachten Sie, dass dieses Thema noch nicht abgedeckt ist, aber bald verfügbar sein wird.)
-
+Weitere Informationen finden Sie unter [Eine Kostenverhaltensrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen](tasks/create-assign-cost-behavior-policy-cost-control-unit.md).
 ### <a name="step-2-process-the-cost-distribution-calculation"></a>Schritt 2: Verarbeiten Sie die Kostenaufteilungsberechnung
 
 Kostenaufteilung wird verwendet, um Kosten von einen Kostenträger in einen oder mehrere andere Kostenträger neu zu verteilen, indem Sie die gewünschte Verrechnungsgrundlage anwenden. Kostenaufteilung und Kostenzuweisung unterscheiden sich in dieser Kostenaufteilung immer auf der Ebene des Selbstkostenelements der Kosten.
@@ -430,7 +429,7 @@ Die fixen Kosten sollten den jeweiligen Kostenträgern gleichmäßig aufgeteilt 
 </tbody>
 </table>
 
-Detaillierte Informationen zur Verrechnungsgrundlage und der Kostenaufteilung finden Sie unter Richtlinie zur Verrechnungsgrundlage und der Kostenbasis. (Beachten Sie, dass dieses Thema noch nicht abgedeckt ist, aber bald verfügbar sein wird.)
+Weitere Informationen finden Sie unter [Eine Kostenverteilungsrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen](tasks/create-assign-cost-distribution-policy-cost-control-unit.md). 
 
 ### <a name="step-3-process-the-overhead-rate-calculation"></a>Schritt 3: Verarbeiten Sie die Gemeinkostensatzberechnung
 
@@ -612,13 +611,13 @@ Die folgende Tabelle zeigt das Ergebnis an, wenn die Personalverwaltungsprojekte
 <td>10001</td>
 <td>Elektrizität</td>
 <td>Variable Kosten</td>
-<td>10,00</td>
+<td>10.00</td>
 <td>31. Januar 2017</td>
 </tr>
 </tbody>
 </table>
 
-Detaillierte Informationen zur Richtlinie über Gemeinkostensätze finden Sie in der Richtlinie Gemeinkostensatz und Zuweisungsgrundlage. (Beachten Sie, dass dieses Thema noch nicht abgedeckt ist, aber bald verfügbar sein wird.)
+Weitere Informationen finden Sie unter [Gemeinkostenberechnung ausführen](cost-rollup.md#perform-overhead-calculation)
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Schritt 4: Verarbeiten Sie die Kostenaufteilungsberechnung
 
@@ -720,12 +719,13 @@ Kostenträger CC004 Montage trägt zu mehreren Kostenträgern bei. Ein statistis
 <tr>
 <td>Produktion 2</td>
 <td>Produkt 2</td>
-<td>15</td>
+<td>September</td>
 </tr>
 </tbody>
 </table>
 
-**Hinweis:** In Finance and Operations können statistische Kennzahlen wie Produktionsstunden, die ein Produkt verbraucht, von den Quelldaten abgeleitet werden. Ausführliche Informationen zur Anzeige statistischer Kennzahlanbieter, finden Sie in der Anbietervorlage statistischen Kennzahl. (Hinweis, dieses Thema ist nicht abgeschlossen, aber bald verfügbar) Die folgende Tabelle zeigt das Ergebnis an, wenn der HR-Service als Verrechnungsgrundlage für Finanzdienstleistungen als Gesamtkosten angewendet würde (Fixkosten und variable Kosten).
+> [!NOTE]
+> In Finance and Operations können statistische Kennzahlen wie Produktionsstunden, die ein Produkt verbraucht, von den Quelldaten abgeleitet werden. Weitere Informationen finden Sie unter [Anbietervorlagen für statistische Maßnahmen](statistical-measure-provider-template.md#statistical-measure-provider-template). Die folgende Tabelle zeigt das Ergebnis angezeigt, wenn HR-Dienste als Zuteilungsbasis für die Gesamtkosten übernommen werden (Fixkosten und variable Kosten).
 
 <table>
 <thead>
@@ -1412,7 +1412,7 @@ In der Finanzrechnung werden Kosten von 10.000,00 für Elektrizität einer blind
 </table>
 
 > [!NOTE]
-> Dieses Thema veranschaulicht, wie ein Selbstkostenelement, hier 10001 Elektrizität die Kostenträger durchläuft. Daher werden diese Gemeinkosten der niedrigsten Ebene in der Organisation zugeordnet. Das bedeutet, die Kostenträger auf unterster Ebene müssen die Kosten tragen. Wenn Sie einen visuellen Fluss der Kosten zwischen dem Kostenträger und dem Kostenobjekt anfordern, können Sie die Richtlinie Kostenzusammenfassung verwenden, um den Kostenfluss zu visualisieren. Für ausführlichere Informationen gehen Sie zur Richtlinie Kostenzusammenfassung. (Beachten Sie, dass dieses Thema noch nicht abgedeckt ist, aber bald verfügbar sein wird.)
+> Dieses Thema veranschaulicht, wie ein Selbstkostenelement, hier 10001 Elektrizität die Kostenträger durchläuft. Daher werden diese Gemeinkosten der niedrigsten Ebene in der Organisation zugeordnet. Das bedeutet, die Kostenträger auf unterster Ebene müssen die Kosten tragen. Wenn Sie einen visuellen Fluss der Kosten zwischen dem Kostenträger und dem Kostenobjekt anfordern, können Sie die Richtlinie Kostenzusammenfassung verwenden, um den Kostenfluss zu visualisieren. Weitere Informationen hierzu finden Sie unter [Kostenzusammenfassung](cost-rollup.md).
 
 
 

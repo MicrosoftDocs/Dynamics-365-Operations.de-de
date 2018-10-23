@@ -1,9 +1,9 @@
 ---
-title: "Konfigurieren von mobile Geräten für Lagerortarbeit"
+title: "Mobile Geräte für Lagerarbeiten einrichten"
 description: "In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
+ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
+ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurieren von mobile Geräten für Lagerortarbeit
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobile Geräte für Lagerarbeiten einrichten
 
 [!include [banner](../includes/banner.md)]
 
@@ -193,7 +193,7 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurieren von Menüoptionen, um vorhandene Arbeit zu verarbeiten
-Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Sie Menüelemente zur Verarbeitung der Arbeit einrichten, die bereits erstellt wurde. Legen Sie das Feld **Modus** auf **Arbeit** fest, und wählen Sie die Option **Vorhandene Arbeit verwenden** aus. Einige zusätzliche Optionen sind anschließend auf der Registerkarte **Allgemeines** verfügbar. Sie können den Zugriff auf die Menüoption steuern, indem Sie mindestens eine Arbeitsklasse auf dem Inforegister **Arbeitsklasse** zuweisen. Die Arbeitsklassen definieren die Arbeit, die die Menüoption verarbeiten kann. Die Arbeitsklasse kann auch verwendet werden, um den Zugriff auf die bestimmten Benutzerrollen oder zum separaten Verarbeiten für unterschiedliche Arten von Arbeitsgängen zu gewähren. In der folgenden Tabelle werden die Optionen beschrieben, die zur Verfügung stehen.
+Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Sie Menüelemente zur Verarbeitung der Arbeit einrichten, die bereits erstellt wurde. Legen Sie das Feld **Modus** auf **Arbeit** fest, und wählen Sie die Option **Vorhandene Arbeit verwenden** aus. Einige zusätzliche Optionen sind anschließend auf der Registerkarte **Allgemeines** verfügbar. Sie können den Zugriff auf die Menüoption steuern, indem Sie mindestens eine Arbeitsklasse auf dem Inforegister **Arbeitsklasse** zuweisen. Die Arbeitsklassen definieren die Arbeit, die die Menüoption verarbeiten kann. Die Arbeitsklasse kann auch verwendet werden, um den Zugriff auf die bestimmten Benutzerrollen oder zum separaten Verarbeiten für unterschiedliche Arten von Arbeitsgängen zu gewähren. In der folgenden Tabelle werden die Optionen beschrieben, die zur Verfügung stehen. Die Option kann mit dem Feld **Ausgeführt von** auf der Seite **Menüoptionen des mobilen Geräts** aktiviert werden. 
 
 <table>
 
@@ -247,6 +247,10 @@ Diese Option ist beispielsweise hilfreich, wenn mehrere Paletten für eine Ladun
 <tr class="even">
 <td>Permanente Inventur-Gruppierung</td>
 <td>Die Arbeitskraft wählt eine Zone, einen Arbeitspool oder einen Lagerplatz aus, und Microsoft Dynamics 365 for Finance and Operations weist Arbeit auf Grundlage der Auswahl zu. Wenn Sie diese Option auswählen, können Sie im Aktivitätsbereich auf <strong>Permanente Inventur</strong> klicken, um zusätzliche Informationen anzuzeigen, und Sie können die Häufigkeit angeben, in der die Arbeitskraft die Inventur wiederholen muss, wenn ein Differenz gefunden wird.</td>
+</tr>
+ <tr class="odd">
+<td>Transportladung</td>
+<td>Diese ‭Funktion ermöglicht es mehreren Lagerarbeitern, eine Bestand von der selben oder einer anderen Ladung auf den gleichen LKW zu laden, der vollständig oder teilweise gelieferten ist.</td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +353,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 <td>Aktivieren Sie diese Option, um Arbeitskräften zu erlauben, Arbeit für einen Auftrag oder eine Ladung in einer einzigen Arbeitseinheit zu kombinieren. Eine Arbeitskraft kann Arbeit nur für den Auftrag oder die Ladung ausführen. Diese Option ist beispielsweise hilfreich, wenn Sie eine Menge für einen Auftrag erhöhen müssen, nachdem die Ladung, die Lieferung und die Arbeit für den Auftrag erstellt wurde. Diese Option ist verfügbar, wenn das Menüelement vorhandene Arbeit verwendet, und die Arbeit vom Benutzer oder dem System weitergeleitet wird.</td>
 </tr>
 <tr class="even">
-<td>Keine</td>
+<td>Älteste Stapelverarbeitung wählen entnehmen</td>
 <td>Geben Sie an, ob die Arbeitskraft zuerst die älteste Charge in einem Lagerplatz entnehmen muss. Die folgenden Optionen sind verfügbar:
 <ul>
 <li><strong>Keine</strong> – Die Arbeitskraft kann jede Charge im Lagerplatz entnehmen. Die Arbeitskraft erhält keine Meldung.</li>

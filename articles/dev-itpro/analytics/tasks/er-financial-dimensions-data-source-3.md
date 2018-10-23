@@ -1,28 +1,29 @@
 --- 
-title: Berichte zum Verwenden von Finanzdimensionen als Datenquellen entwerfen
+title: "ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 3: Berichtsentwurf)"
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/18/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 055401104ae62c75694dff0b2ee64d12b2621686
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 45096a728ad6f9e331b53b4e12ca0ff9317a3939
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="design-reports-to-use-financial-dimensions-as-data-sources"></a>Berichte zum Verwenden von Finanzdimensionen als Datenquellen entwerfen
+# <a name="er-use-financial-dimensions-as-a-data-source-part-3-design-the-report"></a>ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 3: Berichtsentwurf)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

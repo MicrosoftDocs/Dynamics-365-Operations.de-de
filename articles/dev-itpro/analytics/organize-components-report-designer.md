@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
 ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -37,12 +37,9 @@ Sie können Ordner, Berichte, Bausteine und andere Objekte im Berichtsdesigner u
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Umbenennen eines Ordner oder Bausteins im Berichts-Designer
 Im Berichts-Designer können Sie Ordner, Berichtsdefinitionen, Zeilendefinitionen, Spaltendefinitionen und Berichtsbaumstruktur-Definitionen umbenennen.
 
-> [!NOTE]
-> Beim Umbenennen eines Bausteins müssen Sie alle Berichtsdefinitionen, die in dem Baustein verwendet werden, aktualisieren. Andernfalls kann kein neuer Bericht generiert werden.
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Umbenennen eines Ordners oder Bausteins im Berichts-Designer
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Umbenennen eines Ordner oder Bausteins im Berichts-Designer
-
-1. Im Berichts-Designer verwenden Sie den Navigationsbereich, um den Ordner oder das Objekt zu suchen, den bzw. das Sie umbenennen möchten.
+1. Suchen Sie im Berichts-Designer im Navigationsbereich nach dem umzubenennenden Ordner oder Objekt.
 2. Klicken Sie mit der rechten Maustaste auf den Ordner oder das Objekt, und klicken Sie dann auf **Umbenennen**. Das Feld **Name** im Navigationsbereich ist nun verfügbar.
 3. Geben Sie einen neuen Namen ein, und drücken Sie die Eingabetaste.
 4. Wenn der Baustein eine Zeilendefinition, eine Spaltendefinition oder eine Berichtstruktur-Definition ist, müssen Sie weitere Bausteine, die dem Artikel zugeordnet sind, aktualisieren. Klicken Sie mit der rechten Maustaste auf den Baustein, den Sie in Schritt 3 umbenannt haben, wählen Sie **Zuordnungen**, und wählen Sie dann den Artikel in der Liste, um ihn zu aktualisieren.

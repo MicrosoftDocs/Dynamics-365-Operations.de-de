@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
+ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
+ms.openlocfilehash: 34e744884b4bae890d7990103ecc7157c6883869
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
@@ -71,7 +71,7 @@ Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzie
 
 ### <a name="assignment"></a>Zuweisung
 
-Bildschirmlayouts können Unternehmen, Kassen oder Benutzern zugeweisen werden. Die Benutzer-Zuweisung setzt die Kassen- und Shopzuweisung außer Kraft, und die Kassen-Zuweisung setzt die Shopzuweisung außer Kraft. In einem einfachen Szenario, wo alle Benutzer das gleiche Layout unabhängig von der Kasse oder Rolle verwenden, kann das Bildschirmlayout nur für den Shop festgelegt werden. In Fällen, in denen bestimmte Kassen oder Benutzer spezielle Layouts erfordern, können sie ihnen zugeordnet werden.
+Bildschirmlayouts können auf Unternehmens- oder Benutzerebene zugeweisen werden. Die Benutzer-Zuweisung setzt die Kassen- und Shopzuweisung außer Kraft, und die Kassen-Zuweisung setzt die Shopzuweisung außer Kraft. In einem einfachen Szenario, wo alle Benutzer das gleiche Layout unabhängig von der Kasse oder Rolle verwenden, kann das Bildschirmlayout nur für den Shop festgelegt werden. In Fällen, in denen bestimmte Kassen oder Benutzer spezielle Layouts erfordern, können sie ihnen zugeordnet werden.
 
 ### <a name="layout-sizes"></a>Layoutgrößen
 

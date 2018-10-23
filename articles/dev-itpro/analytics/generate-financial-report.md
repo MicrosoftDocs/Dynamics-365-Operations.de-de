@@ -3,7 +3,7 @@ title: Finanzberichte generieren
 description: "Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten."
 author: aprilolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: b1dea07589b7fe953ec47b204441d044c19b5020
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
 ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -34,15 +34,12 @@ Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichte
 
 Um einen Bericht zu generieren, öffnen Sie die Berichtsdefinition und klicken anschließend auf die Schaltfläche Generieren in der Symbolleiste. Das Fenster Berichtswarteschlangenstatus wird geöffnet und gibt den Ort des Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
 
-> [!NOTE]
-> Sie können Berichte nur für Ordner und Orte generieren, auf die Sie zugreifen dürfen.
-
 Für die Erstellung von Berichten sind die folgenden Optionen verfügbar:
 
 - Einrichten eines Zeitplans, um einen Bericht oder eine Gruppe von Berichten automatisch zu generieren
 - Prüfen auf fehlende Konten oder Daten in einem Bericht und Validieren der Richtigkeit eines Berichts
 
-Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf den Registerkarten Berichtsdefinition angegeben haben. Über die Registerkarte Ausgabe- und Verteilung können Sie eine Berichtsbibliothek angeben, um den Bericht einfach freizugeben.
+Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf den Registerkarten Berichtsdefinition angegeben haben.
 
 ## <a name="generate-a-financial-report"></a>Finanzbericht generieren
 
@@ -56,9 +53,6 @@ Nachdem der Bericht generiert wurde, ist der Bericht verfügbar zum Anzeigen im 
 Sie können den Bericht**anzeigen** oder **löschen**.
 
 Um einen Bericht zu generieren, öffnen Sie **Berichtsdesigner**, und klicken Sie anschließend auf die Schaltfläche Generieren in der Symbolleiste. Das Fenster Berichtswarteschlangenstatus wird geöffnet und gibt den Ort des Berichts in der Warteschlange an. Standardmäßig wird der generierte Bericht in Web Viewer geöffnet.
-
-> [!NOTE]
-> Sie können Berichte nur für Ordner und Orte generieren, auf die Sie zugreifen dürfen.
 
 ## <a name="schedule-report-generation"></a>Planen der Berichtsgenerierung
 Viele Unternehmen verwenden einen Kernsatz von Berichten, die in Einklang mit ihren Geschäftsprozessen in geplanten Intervallen ausgeführt werden. Sie können festlegen, dass ein Bericht regelmäßig generiert wird, beispielsweise täglich, wöchentlich, monatlich oder jährlich. Sie können einen einzelnen Bericht oder eine Gruppe von Berichten, die mehrere Unternehmen umfasst, planen. Für jedes der Unternehmen, die z. B. in einer Berichtsbaumstruktur-Definition angegeben sind, müssen Anmeldeinformationen eingegeben werden. Wenn die Anmeldeinformationen nicht gültig sind, zeigt der Bericht nur die Informationen, für die Sie eine Zugriffsberechtigung haben, beispielsweise für das Unternehmen, bei dem Sie zu dem Zeitpunkt angemeldet sind. Die Ausgabeinformationen werden zuerst von der Berichtsgruppe und anschließend von den einzelnen Berichten gelesen.

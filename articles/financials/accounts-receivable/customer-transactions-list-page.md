@@ -1,9 +1,9 @@
 ---
-title: "Liste der „Debitorenbuchung”"
-description: "Dieses Thema enthält Informationen zur Kreditorentransaktionslistenseite für Microsoft Dynamics 365 for Finance and Operations."
+title: Seite mit Debitorenbuchungsliste
+description: "Dieses Thema enthält Informationen zur Kundentransaktionslistenseite für Microsoft Dynamics 365 for Finance and Operations."
 author: mikefalkner
 manager: aolson
-ms.date: 08/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,34 +17,85 @@ ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
-ms.openlocfilehash: e828cb292ad48bb4690117b41589b25edcdf28bc
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: 79479f6949c52830918598583ee91dd85d2d7ac3
 ms.contentlocale: de-de
-ms.lasthandoff: 08/31/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
-# <a name="customer-transaction-list-page"></a>Liste der „Debitorenbuchung”
+# <a name="customer-transactions-list-page"></a>Seite mit Debitorenbuchungsliste
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="view-settlements"></a>Ausgleiche anzeigen
 
-Die Registerkarte **Ansichts-Ausgleiche** im Aktivitätsbereich bietet schnellen Zugriff auf die Ausgleichshistorie und zu weiteren Informationen über die ganze Ausgleichsbuchung. Sie können zusätzliche Buchungen, die mit der ausgewählten Buchung zusammenhängen, mögliche auch anzeigen, da sie Bestandteil desselben Ausgleichs waren, oder es sind sie Zahlungen, die in derselben Zahlungserfassung erstellt wurden.
+Die Registerkarte **Ausgleiche anzeigen** im Aktivitätsbereich bietet schnellen Zugriff auf die Ausgleichshistorie und zu weiteren Informationen über die ganze Ausgleichsbuchung. Sie können zusätzliche Buchungen, die mit der ausgewählten Buchung zusammenhängen, mögliche auch anzeigen, da sie Bestandteil desselben Ausgleichs waren, oder es sind sie Zahlungen, die in derselben Zahlungserfassung erstellt wurden.
 
-1. **Debitorenkonto\> Debitoren** wählen.
-2. Wählen Sie einen Kreditor aus, der Buchungen hat, und wählen Sie dann **Kreditor \> Buchungen** aus.
-3. Wählen Sie eine Buchung aus, um diese genauer anzusehen.
-4. Wählen Sie die Registerkarte **Ausgleiche anzeigen** im Aktivitätsbereich aus.
+1. **Debitoren\> Alle Kunden** wählen.
+2. Wählen Sie einen Kunden, der Transaktionen aufweist, und klicken Sie dann im Aktivitätsbereich, auf der Registerkarte **Kunde**, wählen Sie **Buchungen** aus.
+3. Wählen Sie eine Transaktion aus und klicken Sie dann im Aktivitätsbereich und wählen **Ausgleiche anhzeigen** aus.
 
-    Das Dialogfeld **Hiermit zeigen Sie Ausgleiche angezeigt** wird geöffnet und zeigt die ausgewählte Buchung und alle Dokumente an, die ausgeglichen werden. Dieses Dialogfeld zeigt die Ausgleichshistorieansicht, allerdings werden alle zugeordneten Dokumente einbezogen. 
+    Das Dialogfeld **Ausgleich anzeigen** wird geöffnet und zeigt die ausgewählte Buchung und alle Dokumente an, die ausgeglichen werden. Dieses Dialogfeld zeigt die Ausgleichshistorieansicht, allerdings werden alle zugeordneten Dokumente einbezogen.
 
-5. Sie können verschiedene Funktionen in diesem Formular ausführen. Wählen Sie den Bereich aus, und wählen Sie dann eine der folgenden Einstellungen ein:
+4. Im Dialogfeld können verschiedene Funktionen ausführen. Wählen Sie einen oder mehrere Belege aus und wählen Sie dann eine der folgenden Schaltflächen:
 
-   - **Buchhaltung anzeigen** - Den ausgewählten Beleg und alle damit in Verbindung stehenden Belege anzeigen Klicken Sie auf **Schließen**, um die Dialogfelder zu schließen.
-   - **Exportieren** – Exportiert die ausgewählten Belege in Microsoft Excel.
-   - **Zeigt zugehörige Zahlungen an** – Alle Zahlungserfassungsbuchungen, die in der Zahlungserfassung erstellt wurden, die dem ausgewählten Dokument zugeordnet sind, angezeigt. Darüber hinaus werden alle Ausgleiche, die zu den Zahlungen zugeordnet werden, angezeigt. Die Beschriftung dieses Menüs ändert auch zu**Ausgleiche anzeigen**. Wählen Sie **Ausgleiche anzeigen**, um nur die Buchungen anzuzeigen, die angezeigt wurden, als Sie zunächst das Dialogfeld **Ausgleiche anzeigen** geöffnet haben.
-    - **Ausgleichen von Buchungen** – Dieses Menü wird angezeigt, wenn das ursprüngliche Dokument, das ausgewählt wurde, nicht vollständig ausgeglichen wurde. Wenn Sie diese Option auswählen, wird das Dialogfeld **Bankbuchungen** angezeigt, in dem Sie Buchungen für den Ausgleich auswählen können.
-    - **Ausgleichen von Buchungen rückgängig machen** – Dieses Menü wird angezeigt, wenn das ursprüngliche Dokument, das ausgewählt wurde, vollständig ausgeglichen wurde. Wenn Sie es auswählen, wird das Dialogfeld **Ausgleiche rückgängig machen** angezeigt, in dem Sie die Ausgleiche rückgängig machen können, die für das Dokument ausgeführt wurden.
-    
+    - **Zeigt zugehörige an** – Zeig alle Zahlungserfassungsbuchungen, die in der Zahlungserfassung erstellt wurden, die dem ausgewählten Dokument zugeordnet sind. Darüber hinaus werden alle Ausgleiche, die Zahlungen zugeordnet werden, angezeigt. Während Sie verwandte Zahlungen anzeigen, ändert die Bezeichnung dieser Schaltfläche zu **Ausgleiche anzeigen**. Wählen Sie **Ausgleiche anzeigen**, um nur die Buchungen anzuzeigen, die angezeigt wurden, als Sie  das Dialogfeld **Ausgleiche anzeigen** geöffnet haben.
+    - **Verlauf anzeigen** – Zeit den Ausgleichsverlauf für die Belege an. Klicken Sie auf **Schließen**, um die Dialogfelder zu schließen.
+    - **Buchhaltung anzeigen** - Alle Belege anzeigen, die zu den ausgewählten Dokumenten gehören. Klicken Sie auf **Schließen**, um die Dialogfelder zu schließen.
+    - **Exportieren** – Exportiert die ausgewählten Belege in Microsoft Excel.
+    - **Ausgleichen von Transaktionen** – Diese Schaltfläche wird angezeigt, wenn das ursprüngliche Dokument, das ausgewählt wurde, nicht vollständig ausgeglichen wurde. Wenn Sie diese Schaltfläche auswählen, wird das Dialogfeld **Transaktion ausgleichen** angezeigt, in dem Sie Buchungen für den Ausgleich auswählen können.
+    - **Ausgleich rückgängig machen** – Diese Schaltfläche wird nur angezeigt, wenn das ursprünglich ausgewählte Dokument vollständig ausgeglichen wurde. Wenn Sie diese Schaltfläche auswählen wird das Dialogfeld **Ausgleiche rückgängig machen** angezeigt, in dem Sie die Ausgleiche rückgängig machen können, die für das Dokument ausgeführt wurden.
+
+## <a name="global-transactions"></a>Globale Transaktionen
+
+Die Schaltfläche **Globale Transaktionen** wurde für die Kundenseite hinzugefügt. Mit dieser Schaltfläche können Sie die Transaktionen für einen Kunden für alle juristischen Personen anzeigen. Die Listenseite **Kundentransaktionen** zeigt Transaktionen nur für die juristischen Personen, für die der Benutzer Zugriff hat, basierend auf den Sicherheitseinstellungen.
+
+Die Listenseite zeigt alle Transaktionen für Kunden, die dieselbe Kennung wie der Kunde haben, mit dem Sie gestartet haben. Wenn beispielsweise Kunde US-001 in einer juristischen Personen dieselbe Kennung wie Kunde DE-001 in einer anderen juristischen Person hat, werden alle Transaktionen für beide Lieferanten-IDs angezeigt.
+
+Die Menüs auf der Listenseite **Kundentransaktionen** variieren, je nach der juristischen Person für die Buchung. Wenn zum Beispiel eine Funktion nur für schweizerische juristische Personen verfügbar ist, werden die Menüoptionen für diese Funktion, wenn eine schweizerischen Buchung ausgewählt wurde.
+
+Wenn Sie auf die Funktion zugreifen wollen, führen sie die folgenden Schritte aus.
+
+1. **Debitoren\> Alle Kunden** wählen.
+2. Wählen Sie einen Kunden und klicken Sie dann im Aktivitätsbereich, auf der Registerkarte**Kunde** unter **Transaktionen** auf Gruppe und wählen Sie **Globale Transaktionen**.
+
+## <a name="more-transaction-filters"></a>Weitere Transaktionsfilter 
+
+Der Filter zum Anzeigen offener Buchungen ist durch einen neuen Filter ersetzt, mit dem Sie mehr  Kombinationen von Buchungen anzeigen können. Die folgenden Option stehen im Feld **Anzeigen** zur Verfügung:
+
+- **Alle** – Hiermit können Sie die offenen und geschlossenen Transaktionen für den ausgewählten Kunden anzeigen (offen oder geschlossen).
+- **Geschlossen** – Zeigt nur Transaktionen, die vollständig ausgeglichen und geschlossen wurden.
+- **Offen** – Zeigt nur Transaktionen, die nicht vollständig ausgeglichen und geschlossen wurden.
+- **Öffnet Sie sich ab Datum** – Zeigt nur Buchungen an, die ab einem Datum, das Sie festlegen, nicht vollständig ausgeglichen wurden. Wenn Sie diese Option auswählen, können Sie das Datum ändern, das neben dem Filter angezeigt wird. Buchungen, die einen Wert nach dem **Letzter Ausgleichsdatum** nach dem von Ihnen definierten Datum aufweisen, werden in der Liste angezeigt, wenn dieser Posten vollständig auf dem aktuellen Datum ausgeglichen werden. Allerdings wird der Saldo die Saldenliste ab dem aktuellen Datum, und nicht ab dem ausgewählten Datum.
+
+Ein Filter wird auch hinzugefügt, mit dem Sie Währungsübersetzungsbuchungen ausblenden können. Wählen Sie einfach das Kontrollkästchen **Währungsneubewertungen verbergen**.
+
+## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Ändern Sie einfach das Fälligkeitsdatum und das Skontodatum
+
+Sie können Fälligkeitsdatum und Skontodatum für offene Debitorbuchungen aktualisieren. In der Version 8.1 ist die Erfahrung verbessert worden. Sie können nun Fälligkeitsdaten der Listenseite **Kundentransaktionen** hinzufügen. Wenn Sie auf dem Fälligkeitsdatum in der Listenseite auf**Kundenbuchungen** klicken, können Sie Zahlungsbedingungen, Fälligkeitsdatum, Skontodatum und Skontobedingungen im Dialogfeld **Fälligkeitsdatum und Skontodatumsangaben aktualisieren** auch ändern.
+
+### <a name="activate-the-feature"></a>Aktivieren der Funktion
+
+Um Fälligkeitsdaten der Listenseite **Kundentransaktionen** hinzuzufügen und Zahlungseinstellungen für eine Transaktion mithilfe des Dialogfelds **Fälligkeitsdatum und Skontodatumsangaben aktualisieren** zu ändern, gehen Sie wie folgt vor.
+
+1. Wählen Sie **Debitoren \> Einrichten \> Debitorenparameter**.
+2. Auf der Registerkarte **Ausgleiche** setzen Sie die Option **Fälligkeitsdatum anzeigen und bearbeiten zulassen** auf **Ja**.
+3. Um diese Funktion zu aktivieren, wurden neue Felder der Kundentransaktionen hinzugefügt. Diese Felder werden ausgefüllt, wenn eine neue Buchung abgeschlossen ist. Sie werden auch ausgefüllt, wenn Sie das Dialogfeld **Aktualisierungsfälligkeitsdatum und Skontodatumsangaben** öffnen. Wenn Sie die Option **Fälligkeitsdatum anzeigen und bearbeiten zulassen** auf **Ja** festlegen, können Sie das Dialogfeld **Aktualisierungszahlungsinformation** finden.  Um vorhandene Buchungen sofort zu aktualisieren, wählen Sie **Alle vorhandenen Buchungen aktualisieren** aus. Alternativ, um nur die Felder für neue Buchungen zu füllen, wählen Sie **Fahren Sie fort ohne Aktualisierung**.
+
+Das Fälligkeitsdatum wird nun der Listenseite**Kundentransaktionen** hinzugefügt, und Sie können die Skontodatumsangaben und das Fälligkeitsdatum für Transaktionen einfacher ändern.
+
+### <a name="modify-the-payment-settings"></a>Ändern der Zahlungseinstellungen
+
+Die Listenseite **Kundentransaktionen** zeigt alle Transaktionen für einen Kunden. Wenn Sie das Fälligkeitsdatum für eine Buchung auswählen, wird das Dialogfeld **Aktualisierungsfälligkeitsdatum und Skontodatumsangaben** angezeigt.. Dieses Dialogfeld zeigt das Basisdatum für das Fälligkeitsdatum und Rabattberechnungen, das Fälligkeitsdatum, die Zahlungsbedingungen, die Skontobedingungen, und die Skontodatumsangaben an.
+
+Jedes Feld hat Auswirkungen auf eine andere Buchung, wenn Sie sie bearbeiten:
+
+- **Grunddatum bearbeiten**: Das Fälligkeits- und das Skontodatum werden geändert, wenn das Grunddatum dem Dokumentdatum entspricht.
+- **Bearbeiten Sie das Fälligkeitsdatum:** Nur das Fälligkeitsdatum wird geändert.
+- **Bearbeiten Sie das Skontodatum:** Nur das Skontodatum werden geändert.
+- **Zahlungsbedingungen ändern:** Das Fälligkeitsdatum wird geändert, basierend auf dem Grunddatum und dem Zahlungsbedingungen.
+- **Bearbeiten Sie die Skontobedingungen:** Die Skonti werden basierend auf dem Grunddatum und den Skontobedingungen geändert.
+
+Um die Bearbeitung der Zahlungseinstellungen abzuschließen wählen Sie **Schließen**, um die Änderungen zu speichern.
 

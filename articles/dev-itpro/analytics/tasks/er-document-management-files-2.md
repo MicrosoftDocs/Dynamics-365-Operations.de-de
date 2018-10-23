@@ -1,28 +1,29 @@
 --- 
-title: Datenmodelle zum Verwenden von Dokumentverwaltungsdateien in EB-Ausgabe erweitern
+title: "ER – Verwendung von Dokumentverwaltungsdateien in Formatausgaben (Teil 2: Datenmodell erweitern)"
 description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 8363dd2af728577175a620d7b645d90cea84803a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: cb4c58dc86a159a70634c05408a8db471ebcae4c
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="extend-data-models-to-use-document-management-files-in-er-output"></a>Datenmodelle zum Verwenden von Dokumentverwaltungsdateien in EB-Ausgabe erweitern
+# <a name="er-use-document-management-files-in-format-outputs-part-2-extend-data-model"></a>ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 2: Datenmodell erweitern)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -57,7 +58,7 @@ Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 16
 17. Wählen Sie im Feld "Artikeltyp" "Zeichenfolge" aus.
 18. Klicken Sie auf Hinzufügen.
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-data-sources"></a>Ordnet Modellelementen die neuen Daten in Dynamics 365 for Finance and Operations zu
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Ordnet Modellelementen die neuen Daten in Dynamics 365 for Finance and Operations , Enterprise edition zu
 1. Klicken Sie auf "Modell der Datenquelle zuordnen".
 2. Verwenden Sie den Schnellfilter, um im Feld "Definition" nach dem Wert 'InvoiceCustomer' zu filtern.
     * InvoiceCustomer  

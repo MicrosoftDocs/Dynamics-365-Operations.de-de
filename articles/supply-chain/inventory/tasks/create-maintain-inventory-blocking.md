@@ -1,29 +1,30 @@
----
-title: Sperrung von Lagerbestand erstellen und verwalten
+--- 
+title: Dient zum Erstellen und Verwalten einer Sperrung von Lagerbestand
 description: "Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verfügbarer Lagerbestand durch andere ausgehende Quelldokumente mithilfe der Sperrung von Lagerbestand reserviert wird."
 author: perlynne
 manager: AnnBe
-ms.date: 12/02/2015
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventBlocking, InventItemIdLookupSimple, InventLocationIdLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7272349cf16b9459823a752b8d3df915f42606ef
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 09789dc0b89f8bd36cca9b3e5be366bf17246243
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="create-and-maintain-inventory-blocking"></a>Sperrung von Lagerbestand erstellen und verwalten
+# <a name="create-and-maintain-an-inventory-blocking"></a>Dient zum Erstellen und Verwalten einer Sperrung von Lagerbestand
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -34,7 +35,7 @@ Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verf
 1. Wechseln Sie zu "Lagerverwaltung" > "Periodische Aufgaben" > "Sperrung von Lagerbestand".
 2. Klicken Sie auf "Neu".
 3. Klicken Sie im Feld "Artikelnummer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-4. Wählen Sie in der Liste den Artikel aus.
+4. Wählen Sie in der Liste den Artikel aus. 
     * Wählen Sie eine Artikelnummer mit physischem Lagerbestand aus, die Sie sperren möchten. Wenn Sie USMF verwenden, können Sie Artikel M9201 auswählen.  
 5. Geben Sie im Feld "Menge" eine Zahl ein.
     * Wenn Sie Artikel M9201 verwenden, müssen Sie weniger als 200 auswählen.  
@@ -55,4 +56,5 @@ Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verf
 1. Klicken Sie auf Löschen.
 2. Klicken Sie auf "Ja".
 3. Schließen Sie die Seite.
+
 
