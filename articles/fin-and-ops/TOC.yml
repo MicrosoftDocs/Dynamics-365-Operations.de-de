@@ -8,7 +8,7 @@
           items:
             - name: Anmelden für ein Vorschauabonnement
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
-            - name: Eine Demoumgebung bereitstellen
+            - name: Bereitstellen einer Demoumgebung
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Vergleich von Cloudfunktionen und lokalen Funktionen
               href: get-started/cloud-prem-comparison.md
@@ -29,28 +29,38 @@
               href: get-started/public-preview-releases.md
             - name: Finance and Operations kaufen
               items:
-                - name: Finance and Operations (lokal) kaufen
+                - name: Erwerben von Finance and Operations (on-premises)
                   href: get-started/purchase-on-premises.md
-        - name: Neuheiten und Änderungen
+        - name: Neuerungen und Änderungen
           href: get-started/whats-new-changed.md
           items:
-            - name: Software-Lebenszyklusrichtlinien- und -Cloudfreigaben
+            - name: FAQ zu Dienstupdates für eine Version
+              href: get-started/one-version.md
+            - name: Software-Lebenszyklusrichtlinie und Cloudfreigaben
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-            - name: Lokale Software-Lebenszyklusrichtlinien- und -Freigaben
+            - name: Software-Lebenszyklusrichtlinie und lokale Freigaben
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
             - name: "Ende des Mainstreamsupports für Microsoft Dynamics AX\_2009 und 2012"
               href: get-started/mainstream-support-ax-2009-2012.md
             - name: Entfernte oder veraltete Funktionen
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
-            - name: "Funktionen von AX\_2012, die verschoben wurden"
+            - name: "Verschobene Funktionen von AX\_2012"
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
-            - name: 'Funktionen, die in lokalen Bereitstellungen nicht implementiert sind'
+            - name: In lokalen Bereitstellungen nicht implementierte Funktionen
               href: get-started/features-not-implemented-on-prem.md
-            - name: "Finance and Operations Version\_8.1 (Oktober\_2018)"
+            - name: Platform Update 22 (November 2018)
+              href: get-started/whats-new-platform-update-22.md
+            - name: "Finance and Operations, Version\_8.1.2 (November\_2018)"
+              href: get-started/whats-new-changed-8-1-2.md
+            - name: "Finance and Operations, Version\_8.1.1 (Oktober\_2018)"
+              href: get-started/whats-new-changed-8-1-1.md
+            - name: "Finance and Operations,Version\_8.1 (Oktober\_2018)"
               href: get-started/whats-new-changed-8-1-October-2018.md
-            - name: "Platform Update 20 (September\_2018)"
+            - name: "Platform Update\_21 (Oktober\_2018)"
+              href: get-started/whats-new-platform-update-21.md
+            - name: "Platform Update\_20 (September\_2018)"
               href: get-started/whats-new-platform-update-20.md
-            - name: "Finance and Operations Version 8.0 (April\_2018)"
+            - name: "Finance and Operations, Version\_8.0 (April\_2018)"
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform Update 15 (März 2018)
               href: get-started/whats-new-platform-update-15.md
@@ -126,7 +136,7 @@
               href: get-started/personalize-user-experience.md
             - name: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
               href: get-started/user-defined-fields.md
-            - name: PowerApps-Apps einbetten
+            - name: Einbetten von PowerApps-Apps
               href: get-started/embed-power-apps.md
             - name: Informationen per Suchen finden
               href: get-started/use-lookups-to-find-information.md
@@ -296,11 +306,11 @@
           href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/fin-and-ops/toc.json
     - name: Datenintegration
       items:
-        - name: Eine Datenintegrationsstrategie (Import/Export) auswählen
+        - name: Auswählen einer Datenintegrationsstrategie (Import/Export)
           href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
         - name: Datenintegrations-APIs
           items:
-            - name: Datenverwaltungspaket-API
+            - name: Datenverwaltungspaket-REST-API
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Dienstendpunkte
               href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
@@ -309,29 +319,31 @@
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
               href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
-            - name: Benutzerdefinierte Dienste
+            - name: Benutzerdefinierte Dienstentwicklung
               href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
             - name: Wiederkehrende Integrationen
               href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
-        - name: Entwicklung für die Integration
+            - name: Diensttests mit Hilfsprogrammen von Drittanbietern
+              href: ../dev-itpro/data-entities/third-party-service-test.md
+        - name: Entwicklung für Integration
           items:
             - name: Datenintegration mithilfe von Datenentitäten
               href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Eine Entität für die Datenmigration entwickeln
                   href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
-                - name: Zusammengesetzte Datenentitäten entwickeln
+                - name: Entwickeln zusammengesetzter Datenentitäten
                   href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
-                - name: Unternehmensübergreifende Finanzdatenfreigabe konfigurieren
+                - name: Konfigurieren unternehmensübergreifender Finanzdatenfreigaben
                   href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
-                - name: 'Eine Datensatzvorlage erstellen, um die Dateneingabe zu erleichtern'
+                - name: Erstellen von Datensatzvorlagen zur Erleichterung der Dateneingabe
                   href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
-                - name: Datensatzvorlage zum Erstellen eines neuen Datensatzes verwenden
+                - name: Erstellen von Datensätzen mittels Datensatzvorlagen
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
-            - name: Datenintegration mithilfe des Common Data Service
+            - name: Datenintegration mithilfe von Common Data Service
               href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Ein Szenario zum Konvertieren eines Interessenten in Bargeld konfigurieren
+                - name: Konfigurieren eines Szenarios zum Konvertieren von Interessenten in Bargeld
                   href: ../supply-chain/sales-marketing/prospect-to-cash.md
                   items:
                     - name: Konten von Sales direkt mit Debitoren in Finance and Operations synchronisieren
@@ -383,14 +395,20 @@
             - name: Kopieren von Konfigurationsdaten zwischen Unternehmen oder juristischen Personen
               href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Konfigurationsdatenpakete
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Konfigurationsdatenpakete (nur Version vom Juli 2017)
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
             - name: Konfigurationsdatenvorlagen
               href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
-            - name: Änderungen bei einer Entität nachverfolgen
+            - name: Nachverfolgen von Änderungen an Entitäten
               href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
-            - name: Informationen zu Standarddatenentitäten suchen
+            - name: Suchen von Informationen zu Standarddatenentitäten
               href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+            - name: Datenvorlagen mit mehreren Arbeitsblättern
+              href: ../dev-itpro/data-entities/excel-template-multiple.md
+            - name: Aktivieren der Nachverfolgung von Änderungen an Entitäten
+              href: ../dev-itpro/data-entities/entity-change-track.md
             - name: Konfigurationsschlüssel und Datenentitäten
               href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
             - name: Konfigurationsdatenpakete
@@ -398,10 +416,12 @@
         - name: Einzelvorgänge für Datenimport und -export
           href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
           items:
-            - name: Best Practices zum Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
+            - name: Bewährte Vorgehensweisen beim Import von Belegen mithilfe der Entität der allgemeinen Erfassung
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Entwicklung für Datenentitäten
           items:
+            - name: Gestaltungsprinzipien und optimale Verfahren für Datenentitäten
+              href: ../dev-itpro/dev-tools/design-best-practices.md
             - name: Erstellen neuer Datenentitäten
               href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Datenentitätseigenschaften
@@ -422,21 +442,25 @@
               href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/fin-and-ops/toc.json
             - name: Sicherheit und Datenentitäten
               href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
-            - name: Hilfsprogramme für Dienstleistungstests von Drittanbietern verwenden
+            - name: Verwenden von Drittanbieter-Hilfsprogrammen bei Dienstleistungstests
               href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
-        - name: Eigene Datenbanken nutzen
+            - name: Erstellen schreibgeschützter Entitäten zur Offenlegung von Finanzdimensionen
+              href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
+        - name: Nutzen eigener Datenbanken
           href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
-        - name: Datenaufgabenautomatisierung
+        - name: Automatisierung von Datenaufgaben
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: Datenüberprüfungsarbeitsbereich
+        - name: Arbeitsbereich der Prüfliste zur Datenüberprüfung
           href: ../dev-itpro/user-interface/data-validation-workspace.md
+        - name: Beschreibungen von Datenverwaltungsfehlern
+          href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Finanzverwaltung
       href: ../financials/index.md
       items:
         - name: Kreditorenkonten
           href: ../financials/accounts-payable/accounts-payable.md
           items:
-            - name: Kreditorenrechnungsüberblick
+            - name: Überblick über Kreditorenrechnungen
               href: ../financials/accounts-payable/vendor-invoices-overview.md
             - name: Kreditorenkonten konfigurieren
               href: ../financials/accounts-payable/accounts-payable-overview.md
@@ -1005,13 +1029,15 @@
                   href: ../financials/budgeting/consolidation-elimination-overview.md
                 - name: 'Steuerkalender, Geschäftsjahre und Perioden'
                   href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
-                - name: Kontostrukturen konfigurieren
+                - name: Konfigurieren von Kontostrukturen
                   href: ../financials/general-ledger/configure-account-structures.md
+                - name: Doppelte Währung
+                  href: ../financials/general-ledger/dual-currency.md
             - name: Erfassungen und Sachkonten
               items:
                 - name: Allgemeine Erfassungsverarbeitung
                   href: ../financials/general-ledger/general-journal-processing.md
-                - name: Periodische Erfassungen buchen
+                - name: Buchen periodischer Erfassungen
                   href: ../financials/general-ledger/tasks/post-periodic-journals.md
                 - name: Sachkonto-Zuordnungserfassung verarbeiten
                   href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
@@ -1045,15 +1071,17 @@
                   href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
                 - name: Neubewertung der Fremdwährung für Hauptbuch
                   href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Währungswechselkurse importieren
+                - name: Importieren von Währungswechselkursen
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
                 - name: Ein Beleg
                   href: ../financials/general-ledger/one-voucher.md
-            - name: Periodenendabschluss
+                - name: Sachkontoausgleiche
+                  href: ../financials/general-ledger/ledger-settlements.md
+            - name: Abschluss zum Periodenende
               items:
-                - name: Abschluss des Hauptbuchs am Periodenende
+                - name: Abschließen des Hauptbuchs am Periodenende
                   href: ../financials/general-ledger/close-general-ledger-at-period-end.md
-                - name: Finanzperiodenabschluss-Arbeitsbereich
+                - name: Arbeitsbereich für Abschluss der Finanzperiode
                   href: ../financials/general-ledger/financial-period-close-workspace.md
                 - name: Jahresendabschluss
                   href: ../financials/general-ledger/year-end-close.md
@@ -1473,7 +1501,7 @@
                   href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
                 - name: Voranschaffung buchen
                   href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
-            - name: Periodische Erfassungen buchen
+            - name: Buchen periodischer Erfassungen
               href: ../financials/general-ledger/tasks/post-periodic-journals.md
             - name: Signaturgeber für Druckformulare einrichten
               href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
@@ -1796,10 +1824,14 @@
                   href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
             - name: Bereitstellungsrichtlinien für Kassen
               href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Steuermodulübersicht
+            - name: Überblick über Steuermodul
               href: ../financials/general-ledger/tax-engine.md
               items:
-                - name: Steuermodulintegration
+                - name: Importkonfiguration
+                  href: ../financials/general-ledger/tax-engine-import-configuration.md
+                - name: Anwendbarkeit des Steuermoduls
+                  href: ../financials/general-ledger/tax-engine-applicability.md
+                - name: Integration des Steuermoduls
                   href: ../financials/general-ledger/tax-engine-integration.md
                 - name: Erweitern des Steuermoduls
                   href: ../financials/general-ledger/extend-tax-engine-configurations.md
@@ -2100,7 +2132,9 @@
         - name: Polen
           href: ../financials/localizations/poland.md
           items:
-            - name: Positionsrabatte anhand von Artikelpreis berechnen
+            - name: Aktivieren der Stornobuchung
+              href: ../financials/localizations/emea-pol-red-storno.md
+            - name: Berechnen von Positionsrabatten anhand des Artikelpreises
               href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
             - name: Korrekturhinweise
               href: ../financials/localizations/emea-pol-correction-notes.md
@@ -2116,6 +2150,8 @@
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Mehrwertsteuerberichte
               href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Einrichten von Nummernkreisen nach Lager
+              href: ../financials/localizations/emea-pol-number-sequence-warehouses.md
             - name: Standardprotokolldatei
               href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
             - name: Steuerzinsen und Freihandzinsen
@@ -2128,36 +2164,64 @@
             - name: Vorschussinhaber
               href: ../financials/localizations/rus-advance-holders.md
               items:
-                - name: Vorschussinhaber erstellen
+                - name: Erstellen eines Vorschussinhabers
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Tägliche Arbeitsgänge für Vorschussinhaber
                   href: ../financials/localizations/rus-advance-holders-daily-operations.md
-            - name: Anlagevermögen
+                - name: Fortschrittsberichte zur Budgetsteuerung
+                  href: ../financials/localizations/rus-advance-holders-reports-dailyops.md
+                - name: Neubewerten der Fremdwährung für Vorschussinhaber
+                  href: ../financials/localizations/rus-advance-adjustment-parameters.md
+                - name: Vorschussinhaberberichte
+                  href: ../financials/localizations/rus-local-management-reports-primary-forms.md
+            - name: Bank
               items:
-                - name: Erwerb und Inbetriebnahme von Anlagen
+                - name: Einrichten von Bankkonten
+                  href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+                - name: Einrichten und Verarbeiten von Zahlungsaufträgen
+                  href: ../financials/localizations/rus-payment-order-settings-processing.md
+            - name: Anlagen
+              items:
+                - name: Erwerben und Inbetriebnehmen von Anlagen
                   href: ../financials/localizations/rus-fixed-asset-acquisition.md
-                - name: Budgeterfassungen für erworbene Anlagen erstellen und buchen
+                - name: Erfassen des Erwerbs von Anlagen
+                  href: ../financials/localizations/rus-register-acquisition.md
+                - name: Erstellen und Buchen von Budgeterfassungen für den Anlagenerwerb
                   href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
-                - name: Anlageninventurerfassung
+                - name: Anlagebestandserfassung
                   href: ../financials/localizations/rus-fixed-assets-counting.md
                 - name: Währungsneubewertung für Anlagen
                   href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Neubewerten von Anlagekosten und Anlageabschreibungen
+                  href: ../financials/localizations/rus-fixed-assets-revaluation.md
                 - name: Teilweise Anlagendemontage (Liquidation)
                   href: ../financials/localizations/rus-fixed-assets-disassembly.md
-            - name: Zahlungsaufträge einrichten und verarbeiten
-              href: ../financials/localizations/rus-payment-order-settings-processing.md
-            - name: Wechselkurse für Währungsbuchungen einrichten
+                - name: 'Veräußern, Entsorgen und Abschreiben von Anlagen'
+                  href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
+                - name: Einrichten von Anlagestandorten und Anlagenummerierung
+                  href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
+                - name: Einrichten von Abschreibungen
+                  href: ../financials/localizations/rus-depreciation-setup.md
+                - name: Abschreibungsmethoden
+                  href: ../financials/localizations/rus-depreciation-methods.md
+                - name: Abschreibungszulagen
+                  href: ../financials/localizations/rus-bonus-depreciation.md
+                - name: Berechnen der Abschreibung
+                  href: ../financials/localizations/rus-depreciation-calculation.md
+            - name: Unternehmensbereiche
+              href: ../financials/localizations/rus-company-divisions.md
+            - name: Einrichten von Wechselkursen für Währungsbuchungen
               href: ../financials/localizations/rus-exchange-difference.md
             - name: Vorschau von Sachkontobuchungen
               href: ../financials/localizations/rus-ledger-transactions-preview.md
-            - name: Bedienstete einrichten
+            - name: Einrichten von Bediensteten
               href: ../financials/localizations/rus-officials.md
-            - name: Bankkonten einrichten
-              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
             - name: Mehrwertsteuer (MwSt.) für Steuerbevollmächtigte
               href: ../financials/localizations/rus-tax-agent.md
-            - name: Dimensionssteuerung für Ausgleiche einrichten
+            - name: Einrichten der Dimensionssteuerung bei Ausgleichen
               href: ../financials/localizations/rus-transactions-settlement-date.md
+            - name: Rechnungen zur Zahlung
+              href: ../financials/localizations/rus-invoice-payment.md
         - name: Saudi-Arabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2317,7 +2381,7 @@
               href: hr/tasks/hire-existing-employee-through-recruiting.md
             - name: Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen
               href: hr/tasks/identify-deploy-candidate-selection-tools.md
-        - name: Mitarbeiter motivieren
+        - name: Motivieren der Mitarbeiter
           items:
             - name: Vergütungspläne
               href: ../talent/compensation-plans.md
@@ -2735,7 +2799,7 @@
               href: ../dev-itpro/analytics/entity-store-maintenance.md
             - name: Konfigurieren der Power BI-Integration für Arbeitsbereiche
               href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
-            - name: Eigene Datenbanken nutzen
+            - name: Nutzen eigener Datenbanken
               href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Lagerverwaltung
       href: ../supply-chain/inventory/inventory-home-page.md
