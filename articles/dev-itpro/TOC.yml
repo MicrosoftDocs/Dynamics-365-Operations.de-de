@@ -253,10 +253,14 @@
               href: extensibility/extensibility-changes-802.md
             - name: Erweiterbarkeitsänderungen in Version 8.0.3
               href: extensibility/extensibility-changes-803.md
-            - name: Erweiterbarkeitsänderungen in Version 8.0.4
+            - name: "Änderungen an der Erweiterbarkeit in Version\_8.0.4"
               href: extensibility/extensibility-changes-804.md
-            - name: Erweiterbarkeitsänderungen in Version 8.1
+            - name: "Änderungen an der Erweiterbarkeit in Version\_8.1"
               href: extensibility/extensibility-changes-81.md
+            - name: "Änderungen an der Erweiterbarkeit in Version\_8.1.1"
+              href: extensibility/extensibility-changes-811.md
+            - name: "Änderungen an der Erweiterbarkeit in Version\_8.1.2"
+              href: extensibility/extensibility-changes-812.md
         - name: Grundlagen
           items:
             - name: Intrusive Anpassungen
@@ -303,23 +307,23 @@
               href: extensibility/change-caption-form.md
             - name: Ändern von Formularsteuerelementeigenschaften
               href: extensibility/modify-control-properties.md
-            - name: Ändern von Beschriftungen mithilfe von Beschriftungserweiterungsdateien
-              href: extensibility/change-label.md
             - name: Erweitern des Bereichs von Nummernkreisen
               href: extensibility/extend-number-sequence-scope.md
-            - name: Hinzufügen von neuen Lagerungsdimensionen
+            - name: Hinzufügen neuer Bestandsdimensionen
               href: extensibility/inventory-dimensions.md
             - name: Preis- und Rabatterweiterbarkeit
               href: extensibility/pricing-app73.md
             - name: Tabellenzuordnungserweiterung
               href: extensibility/map-extensions.md
-            - name: Tabellenzuordnungen als Schnittstellen erweitern
+            - name: Erweitern von als Schnittstellen verwendeter Tabellenzuordnungen
               href: extensibility/maps-as-interfaces.md
-            - name: Tabellenzuordnungen für Versionserstellung erweitern
+            - name: Erweitern von zur Versionserstellung verwendeter Tabellenzuordnungen
               href: extensibility/maps-with-versioning.md
+            - name: Erweitern der Dezimalstellengenauigkeit bei ausgewählten Datentypen
+              href: extensibility/decimal-point-precision.md
         - name: Erstellen erweiterbarer Lösungen
           items:
-            - name: Erweiterbaren Code schreiben
+            - name: Schreiben erweiterbaren Codes
               href: extensibility/writing-extensible-code.md
             - name: Klassen
               href: extensibility/extensible-classes.md
@@ -530,17 +534,17 @@
           href: user-interface/toolbar-fields-subpattern.md
         - name: Teilmuster für Symbolleiste und Liste
           href: user-interface/toolbar-list-subpattern.md
-        - name: Teilmuster für Arbeitsbereich-Seitenfiltergruppe
+        - name: Teilmuster für Filtergruppen auf der Arbeitsbereichsseite
           href: user-interface/workspace-filter-group-subpattern.md
-    - name: Steuerelement-Erweiterbarkeit
+    - name: Erweiterbarkeit von Steuerelementen
       items:
-        - name: Erstellen von aextensible-Steuerelementen
+        - name: Erstellen erweiterbarer Steuerelemente
           href: user-interface/build-extensible-control.md
         - name: Tastenkombination für erweiterbare Steuerelemente
           href: user-interface/keyboard-shortcuts-controls.md
         - name: Programmierreferenz für erweiterbares Steuerelement
           href: user-interface/extensible-control-programming-reference.md
-        - name: Steuerelement-Erweiterbarkeit
+        - name: Erweiterbarkeit von Steuerelementen
           href: user-interface/control-extensibility.md
         - name: Lokalisierbare Beschriftungen erstellen
           href: user-interface/create-localizable-labels-client.md
@@ -764,170 +768,30 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
             - name: ValueMetadata-Typ
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
-- name: Datenintegration
+- name: Datenschutz-Grundverordnung (DSGVO)
+  href: gdpr/gdpr-guide.md
   items:
-    - name: Eine Datenintegrationsstrategie (Import/Export) auswählen
-      href: data-entities/integration-overview.md
-    - name: Datenintegrations-APIs
-      items:
-        - name: Datenverwaltungspaket-REST-API
-          href: data-entities/data-management-api.md
-        - name: Dienstendpunkte
-          href: data-entities/services-home-page.md
-          items:
-            - name: Problembehandlung bei Dienstauthentifizierung
-              href: data-entities/troubleshoot-service-authentication.md
-        - name: OData
-          href: data-entities/odata.md
-        - name: Benutzerdefinierte Dienstentwicklung
-          href: data-entities/custom-services.md
-        - name: Wiederkehrende Integrationen
-          href: data-entities/recurring-integrations.md
-        - name: Diensttests mit Hilfsprogrammen von Drittanbietern
-          href: data-entities/third-party-service-test.md
-    - name: Entwicklung für die Integration
-      items:
-        - name: Datenverwaltung und Integration mithilfe von Datenentitäten
-          href: data-entities/data-management-integration-data-entity.md
-          items:
-            - name: Entitäten für die Datenmigration entwickeln
-              href: data-entities/develop-entity-for-data-migration.md
-            - name: Zusammengesetzte Datenentitäten entwickeln
-              href: data-entities/develop-composite-data-entities.md
-            - name: Unternehmensübergreifende Finanzdatenfreigabe konfigurieren
-              href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-            - name: 'Erstellen von Datensatzvorlagen, um die Dateneingabe zu erleichtern'
-              href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-            - name: Erstellen von Datensätzen mit Datensatzvorlagen
-              href: data-entities/tasks/use-record-template-new-record.md
-        - name: Datenintegration mithilfe des Common Data Service
-          href: data-entities/data-integration-cds.md
-          items:
-            - name: Ein Szenario zum Konvertieren eines Interessenten in Bargeld konfigurieren
-              href: ../supply-chain/sales-marketing/prospect-to-cash.md
-              items:
-                - name: Konten von Sales direkt mit Debitoren in Finance and Operations synchronisieren
-                  href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                - name: Produkte direkt von Finance and Operations mit Produkten in Sales synchronisieren
-                  href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
-                - name: Kontakte direkt von Sales mit Kontakten oder Debitoren in Finance and Operations synchronisieren
-                  href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                - name: Verkaufsangebotskopfzeilen und -positionen direkt von Sales mit Finance and Operations synchronisieren
-                  href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                - name: Aufträge direkt zwischen Sales und Finance and Operations synchronisieren
-                  href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                - name: Verkaufsrechnungskopfzeilen und -positionen direkt von Finance and Operations mit Sales synchronisieren
-                  href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-            - name: Konfigurieren der Field Service-Integration
-              href: ../supply-chain/sales-marketing/field-service.md
-              items:
-                - name: Produkte von Finance and Operations mit Produkten in Field Service synchronisieren
-                  href: ../supply-chain/sales-marketing/field-service-product.md
-                - name: Arbeitsaufträge in Field Service mit Aufträgen in Finance and Operations synchronisieren
-                  href: ../supply-chain/sales-marketing/field-service-work-order.md
-                - name: Vereinbarungsrechnungen in Field Service Freitextrechnungen in Finance and Operations synchronisieren
-                  href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Konfigurieren von Project Service Automation-Integration
-              href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
-              items:
-                - name: Project Service Automation-Integrationsparameter
-                  href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
-                - name: Synchronisieren von Projektverträgen und Projekten
-                  href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
-                - name: Synchronisieren von Projektaufgaben
-                  href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
-                - name: Synchronisieren von Projektausgabenkategorien
-                  href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
-                - name: Synchronisieren von Projektvorkalkulationen mit Projektplanungen
-                  href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
-                - name: Synchronisieren von Projekt-Istwerten mit der Projektintegrationserfassung
-                  href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
-        - name: Nutzen externer Webdienste
-          href: data-entities/consume-external-web-service.md
-- name: Datenverwaltung
-  href: data-entities/data-entities-data-packages.md
-  items:
-    - name: Datenentitäten
-      href: data-entities/data-entities.md
-      items:
-        - name: Konfigurationsdatenprojekte
-          href: data-entities/configuration-data-projects.md
-        - name: Konfigurationsdatenpakete
-          href: data-entities/configuration-data-packages.md
-        - name: Konfigurationsdaten zwischen Unternehmen kopieren
-          href: data-entities/copy-configuration.md
-        - name: Konfigurationsdatenvorlagen
-          href: data-entities/configuration-data-templates.md
-        - name: Datenvorlagen mit mehreren Arbeitsblättern
-          href: data-entities/excel-template-multiple.md
-        - name: Aktivieren von Änderungsnachverfolgung für Entitäten
-          href: data-entities/entity-change-track.md
-        - name: Konfigurationsschlüssel und Datenentitäten
-          href: data-entities/config-key-entities.md
-        - name: Informationen zu Standarddatenentitäten suchen
-          href: data-entities/data-entities-report.md
-    - name: Einzelvorgänge für Datenimport und -export
-      href: data-entities/data-import-export-job.md
-      items:
-        - name: Best Practices zum Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
-          href: data-entities/tips-tricks-import-general-journal-entity.md
-    - name: Entwicklung für Datenentitäten
-      items:
-        - name: Gestaltungsprinzipien und optimale Verfahren für Datenentitäten
-          href: dev-tools/design-best-practices.md
-        - name: Erstellen neuer Datenentitäten
-          href: data-entities/build-consuming-data-entities.md
-        - name: Verhaltens-Datenentitätseigenschaften
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: Erstellen von Berechnungsspalten und virtuellen Feldern
-          href: data-entities/data-entity-computed-columns-virtual-fields.md
-        - name: Unternehmensübergreifendes Verhalten
-          href: data-entities/cross-company-behavior.md
-        - name: Länder-/Regionscodes und Konfigurationsschlüssel
-          href: data-entities/countryregion-codes-configuration-keys.md
-        - name: Vererbungsmuster
-          href: data-entities/support-super-type-sub-type.md
-        - name: Regeln des Datenentitäts-Assistenten
-          href: data-entities/data-entity-wizard-rules.md
-        - name: Metadateneigenschaften
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: 'Überprüfungen, Standardwerte und nicht zugeordnete Felder'
-          href: data-entities/validations-defaults-unmapped-fields.md
-        - name: Sicherheit und Datenentitäten
-          href: data-entities/security-data-entities.md
-        - name: 'Erstellen von schreibgeschützten Entitäten, die Finanzdimensionen verfügbar machen'
-          href: financial/read-only-entity-financial.md
-    - name: Eigene Datenbanken nutzen
-      href: analytics/export-entities-to-your-own-database.md
-    - name: Datenaufgabenautomatisierung
-      href: data-entities/data-task-automation.md
-    - name: Ressourcen für die Reaktion auf eine DSGVO-Datenanforderungen
+    - name: Ressourcen für die Reaktion auf DSGVO-Datenanforderungen
       href: gdpr/gdpr-home-page.md
       items:
-        - name: DSGVO-Leitfaden für Finance and Operations
-          href: gdpr/gdpr-guide.md
         - name: Anlagenklassifizierungen
           href: gdpr/gdpr-asset-classification-values.md
-        - name: Bericht der Personensuche
+        - name: Personensuchbericht
           href: gdpr/gdpr-person-search-report.md
-        - name: Bericht der Personensuche erweitern
+        - name: Erweitern des Personensuchberichts
           href: gdpr/gdpr-extend-person-search-report.md
         - name: Zugriff auf sensible Daten verwalten
           href: gdpr/gdpr-auditing-sensitive-data.md
         - name: Antworten auf Anforderungen persönlicher Daten mithilfe von Talent
           href: gdpr/respond-dsr-request-talent.md
-        - name: Antworten auf Anforderungen persönlicher Daten in AX 2012
+        - name: Antworten auf Anfragen zu persönlichen Daten in AX 2012
           href: gdpr/gdpr-ax2012.md
-        - name: DSGVO-Datenanforderungen für LCS
+        - name: DSGVO-Datenanfragen zu LCS
           href: gdpr/gdpr-lcs.md
-    - name: Arbeitsbereich für die Prüfliste zur Datenüberprüfung
-      href: user-interface/data-validation-workspace.md
-    - name: "Datenverwaltungsfehler\_– Beschreibungen"
-      href: data-entities/dm-error-descriptions.md
 - name: Continuous Delivery
   href: dev-tools/continuous-delivery-home-page.md
   items:
-    - name: Entwicklung und Continuous Delivery – FAQ
+    - name: FAQ zu Entwicklung und Continuous Delivery
       href: dev-tools/continuous-delivery-faq.md
     - name: Testpakete aus Build-Ausgabe ausschließen
       href: dev-tools/exclude-test-packages.md
@@ -1036,14 +900,16 @@
           href: ../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
         - name: Einrichten lokaler Projekte
           href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-        - name: Lokale Umgebungen einrichten und bereitstellen
+        - name: Einrichten und Bereitstellen lokaler Umgebungen
           href: deployment/setup-deploy-on-premises-environments.md
           items:
-            - name: Lokale Umgebungen mit Platform Update 12 bereitstellen
+            - name: "Bereitstellen lokaler Umgebungen (Platform Update\_12 und höher)"
               href: deployment/setup-deploy-on-premises-pu12.md
-            - name: Lokale Umgebungen mit Platform Update 8 und 11 bereitstellen
+            - name: "Bereitstellen lokaler Umgebungen (Platform Update\_8 und 11)"
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
-        - name: Angepasste Modelle für lokale Umgebungen entwickeln und bereitstellen
+            - name: Installationsschritte für Einzelhandelskanalkomponenten in einer lokalen Umgebung
+              href: deployment/deploy-retail-onprem.md
+        - name: Entwickeln und Bereitstellen benutzerdefinierter Modelle für lokale Umgebungen
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: Konfigurieren von Reverseproxys für lokale Umgebungen
           href: deployment/onprem-reverseproxy.md
@@ -1149,7 +1015,7 @@
           href: migration-upgrade/upgrade-latest-update.md
         - name: Umgebungen von Version 8.0 auf 8.1 aktualisieren
           href: migration-upgrade/appupdate-80-81.md
-        - name: Software-Lebenszyklusrichtlinien- und -Cloudfreigaben
+        - name: Software-Lebenszyklusrichtlinie und Cloudfreigaben
           href: migration-upgrade/versions-update-policy.md
         - name: Das aktuellste Platform Update auf Umgebungen anwenden
           href: migration-upgrade/upgrade-latest-platform-update.md
@@ -1157,13 +1023,15 @@
           href: migration-upgrade/update-platform-each-release.md
         - name: Sandkastenumgebungen aktualisieren
           href: migration-upgrade/upgrade-sandbox-environment.md
-        - name: 'Daten in Entwicklungs-, Demo oder Sandkastenumgebungen aktualisieren'
+        - name: 'Aktualisieren von Daten in Entwicklungs-, Demo- oder Sandkastenumgebungen'
           href: migration-upgrade/upgrade-data-to-latest-update.md
-        - name: Entwicklungstools aktualisieren
+        - name: Aktualisieren von Entwicklungstools
           href: dev-tools/update-development-tools.md
-    - name: Auf ein aktuelles Update aktualisieren (lokal)
+        - name: Planen und Vorbereiten zwecks Kompilation von Code anhand des neuesten Updates
+          href: migration-upgrade/compile-considerations.md
+    - name: Aktualisieren auf ein aktuelles Update (lokal)
       items:
-        - name: Updates auf eine lokale Bereitstellungen anwenden
+        - name: Anwenden von Updates in lokalen Bereitstellungen
           href: deployment/apply-updates-on-premises.md
         - name: Lokale Bereitstellungen erneut bereitstellen
           href: deployment/redeploy-on-prem.md
@@ -1222,14 +1090,20 @@
     - name: Stapelverarbeitung
       href: sysadmin/batch-processing-overview.md
       items:
-        - name: Stapelverarbeitung und Stapelverarbeitungsserver
+        - name: Chargenverarbeitung und Chargenverarbeitungsserver
           href: sysadmin/batch-server-overview.md
-        - name: Stapelverarbeitungsaufträge erstellen
+        - name: Erstellen von Batchaufträgen
           href: sysadmin/tasks/create-batch-job.md
-    - name: Optimierungsratgeber
+        - name: Kopieren von Chargenverarbeitungsaufträgen
+          href: sysadmin/copy-batch-job.md
+        - name: Aktive Chargenverarbeitungsperioden
+          href: sysadmin/activeperiod.md
+        - name: Sicherheitsrolle Chargenmanager
+          href: sysadmin/runby.md
+    - name: Optimierungsberater
       href: sysadmin/optimization-advisor-overview.md
       items:
-        - name: Regeln für Optimierungsratgeber erstellen
+        - name: Erstellen von Regeln für Optimierungsberater
           href: sysadmin/create-rules-optimization-advisor.md
     - name: Produktionsausfall melden
       href: lifecycle-services/report-production-outage.md

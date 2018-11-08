@@ -1,0 +1,3 @@
+> [!IMPORTANT]
+> <span data-ttu-id="b619c-101">Die in diesem Abschnitt genannte Funktion steht der Benutzerzielgruppe im Rahmen einer privaten Vorschauversion zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="b619c-101">Functionality noted in this topic is available to targeted users as part of a private preview release.</span></span> <span data-ttu-id="b619c-102">Inhalt und Funktionsweise unterliegen Änderungen.</span><span class="sxs-lookup"><span data-stu-id="b619c-102">The content and the functionality are subject to change.</span></span> 
+
