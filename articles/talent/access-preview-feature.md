@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -48,7 +48,8 @@ Sie können die Einstellung **Vorschaufunktionen** im Microsoft Dynamics 365 for
 1. Melden Sie sich bei Microsoft Dynamics 365 for Talent: Attract an.
 2. Wählen Sie im **Setup**-Menü (das Zahnradsymbol) in der oberen rechten Ecke **Admin-Einstellungen**.
 3. Wählen Sie auf der Registerkarte **Feature-Verwaltung** die Option neben **Vorschau-Features**, so dass sie blau wird.
-4. Aktualisieren Sie Ihren Browser, um die neuen Funktionen zu sehen. (Alle Benutzer, die bereits angemeldet sind, sehen die Funktionen beim nächsten Mal, wenn sie sich anmelden, oder sie können ihren Browser aktualisieren, um die Funktionen sofort zu sehen.)
+4. Optional können Sie einzelne Funktionen steuern, indem Sie bestimmte Funktionen auf dieser Seite aktivieren/deaktivieren.
+5. Aktualisieren Sie Ihren Browser, um die neuen Funktionen zu sehen. (Alle Benutzer, die bereits angemeldet sind, sehen die Funktionen beim nächsten Mal, wenn sie sich anmelden, oder sie können ihren Browser aktualisieren, um die Funktionen sofort zu sehen.)
 
 #### <a name="core-hr"></a>Zentrale Personalverwaltung
 
@@ -61,12 +62,11 @@ Sie können die Einstellung **Vorschaufunktionen** im Microsoft Dynamics 365 for
 
 ## <a name="features-that-are-currently-in-preview"></a>Funktionen, die sich derzeit in der Vorschau befinden
 
-### <a name="attract"></a>Attract
+### <a name="attract"></a>Anwerben
 
-- **Stellenvorlagen** - Sie können jetzt Einstellungsvorlagen erstellen. Benutzer können den Einstellungsprozess bereits für eine bestimmte Stelle anpassen. Sie können nun jedoch Vorlagen für den Prozess anlegen und beim Anlegen einer bestimmten Stelle die entsprechende Vorlage auswählen. Daher hilft diese Funktion, den Prozess der Stelleneinrichtung zu rationalisieren.
-- **Karriereseite** - Die aktuelle Version der Karriereseite listet nur alle offenen Stellen auf. In Zukunft wird die Seite jedoch um weitere Funktionen erweitert. Stellen können als intern oder extern gekennzeichnet werden. Interne Benutzer, die sich auf der Website anmelden, sehen sowohl interne als auch externe Stellenangebote. Nicht interne Benutzer und Benutzer, die nicht angemeldet sind, sehen jedoch nur externe Stellen.
-- **Stellenausschreibung** - Sie können jetzt Stellen auf der Karriereseite veröffentlichen.
-- **LinkedIn Stellenausschreibung** - Sie können jetzt Stellen in LinkedIn einstellen.
+- **Relevante Kandidaten für einer Stelle** – Personalbeschaffungsmitarbeiter und Einstellungsmanager können leicht aus allen Bewerbern die relevantesten Kandidaten für eine Stelle erkennen. Die besten 5 Bewerber werden auf der Grundlage der Relevanz ihres Lebenslaufs/Profils bezüglich der Stellenbeschreibung angezeigt.
+- **Relevante Stellen** – Kandidaten können nun eine Liste anderer Stellen anzeigen, die für Sie auf der Grundlage ihres Lebenslaufs/Profils und die Stellenbeschreibungen relevant sind.  Momentan wird dies den Kandidaten als Vorschlag für andere Gelegenheiten angezeigt, sobald Sie sich bewerben.
+- –**BCG-/OFCCP-Unterstützung** – Neue Aktivitätstypen ermöglichen die Nutzung eines vordefinierten Formulars für die Erfassung der Daten des Kandidaten bezüglich beruflicher Chancengleichheit (BCG) und der staatlichen Abteilung zur Überwachung der Chancengleichheit für Beschäftige bei öffentlichen Aufträgen (Office of Federal Contract Compliance Program - OFCCP).  Dies ist ein vordefiniertes Formular und kann nicht bearbeitet werden.
 
     > [!NOTE]
     > Stellenangebote sind nur für Kunden sichtbar, die ein oder mehrere LinkedIn-Stellenangebote abonnieren. Ansonsten sehen Kunden eine Stelle nur, wenn sie explizit danach suchen. Es gibt eine Verzögerung, wenn Stellenangebote an LinkedIn gesendet werden. Ein Stellenangebot kann bis zu einigen Stunden dauern, nachdem es von Attract veröffentlicht wurde.

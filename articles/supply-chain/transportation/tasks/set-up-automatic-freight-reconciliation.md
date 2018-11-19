@@ -3,7 +3,7 @@ title: Automatische Frachtabstimmung einrichten
 description: "Dieses Verfahren zeigt, wie Daten für die automatische Frachtabstimmung eingerichtet werden."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
+ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
+ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
 ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Automatische Frachtabstimmung einrichten
@@ -36,9 +36,9 @@ Dieses Verfahren zeigt, wie Daten für die automatische Frachtabstimmung eingeri
     * Der Frachtbrieftyp definiert, wie Frachtbriefe und Spediteursrechnungen abgeglichen werden sollen.  
 2. Klicken Sie auf "Neu".
 3. Geben Sie im Feld "Frachtbrieftyp" einen Wert ein.
-4. Geben Sie im Feld "Modulassembly" 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer' ein.
+4. Geben Sie im Feld "Modulklasse" den Typ 'Microsoft.Dynamics.Ax.Tms.dll' ein.
     * Dies ist die Standardtransportverwaltungs-Zuordnungsmodul-Codebibliothek.  
-5. Geben Sie im Feld "Modulklasse" 'Microsoft.Dynamics.Ax.Tms.dll' ein.
+5. Geben Sie im Feld "Modulklasse" den Typ 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer' ein.
     * Dies ist die Standardtransportverwaltungs-Zuordnungsmodul-Klasse.  
 6. Klicken Sie auf "Neu".
 7. Wählen Sie im Feld "Beschreibung" den Wert aus, der auf dem Frachtbrief und der Spediteursrechnung übereinstimmen sollten.  

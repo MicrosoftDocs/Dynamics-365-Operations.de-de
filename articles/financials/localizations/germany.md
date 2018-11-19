@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
-ms.openlocfilehash: ffedfb64db1552e9eb207d5aee3556e307978c4b
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 5e007e120693018e6b5b2b0f9e958b3e91844525
 ms.contentlocale: de-de
-ms.lasthandoff: 08/20/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -63,4 +63,5 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 - [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Lokalisierung und rechtliche Funktionen](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
+- [Erstellen Sie eine Umsatzsteuervoranmeldung im XML-Format, ohne Daten für ELSTER (Whitepaper)](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/VATdeclarationXMLELSTER)
 

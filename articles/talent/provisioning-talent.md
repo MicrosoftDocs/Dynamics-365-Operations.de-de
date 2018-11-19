@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
 ms.contentlocale: de-de
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 # <a name="provision-talent"></a>Talent bereitstellen
@@ -47,7 +47,7 @@ Informationen darüber, wie Sie mit Talent beginnen, finden Sie unter der **Tale
 Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung bereitstellen.
 
 1. In Ihrem LCS-Projekt wählen Sie die Kachel **Talent App-Verwaltung** aus.
-2. Talent wird immer in einer Umgebung Microsoft PowerApps Bereitgestellt, um PowerApps-Integration und Erweiterbarkeit zu aktivieren. Lesen Sie den Abschnitt "PowerApps-Umgebung" dieses Themas", bevor Sie fortfahren. 
+2. Talent wird immer in einer Microsoft PowerApps Umgebung bereitgestellt, um PowerApps Integration und Erweiterbarkeit zu aktivieren. Lesen Sie den Abschnitt "PowerApps-Umgebung" dieses Themas", bevor Sie fortfahren. Wenn Sie noch keine PowerApps-Umgebung haben, wählen in Sie in LCS Umgebung verwalten oder navigieren Sie zum PowerApps-Administratorcenter. Folgen Sie dann den Schritten [PowerApps-Umgebung erstellen](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > Um die vorhandene Umgebung anzeigen oder eine neue Umgebung zu erstellen, muss der Mandantenadministrator der Talent bereitstellt der Lizenz PowerApps P2 zugewiesen werden. Wenn Ihre Organisation keine PowerApps Lizenz P2 hat, können Sie dies aus Ihrem CSP oder über abrufen [PowerApps-Preiskalkulationsseite](https://powerapps.microsoft.com/en-us/pricing/).
@@ -73,7 +73,7 @@ Durch die Integration zwischen Talent und der PowerApps-Umgebung können Sie die
 Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche PowerApps-Umgebung Talent bereitgestellt werden soll: 
 1. In LCS wählen Sie verwaltete Umgebung oder navigieren direkt zumn PowerApps-Administratorcenter, in dem Sie die vorhandene Umgebung anzeigen und eine neue Umgebung erstellen können.
 2. Eine einzelne Talentumgebung wird auf eine einzelne PowerApps-Umgebung zugeordnet.
-3. Eine PowerApps-Umgebung enthält die Talentbewerbung, zusammen mit den entsprechenden PowerApps, Flow und CDS Anwendungen. Wenn die PowerApps-Umgebung gelöscht wird, sind die Apps enthalten.
+3. Eine PowerApps-Umgebung enthält die Talentbewerbung, zusammen mit den entsprechenden PowerApps, Flow und CDS Anwendungen. Wenn die PowerApps-Umgebung gelöscht wird, sind die Apps enthalten. Wird eine Talentumgebung bereitgestellt, kann entweder "Test" oder" Produktion " bereitgestellt werden. Wählen Sie den Typ der Umgebung basierend darauf aus, wie die Umgebung verwendet wird. 
 4. Datenenintegrations- und -Testsstrategien sollten berücksichtigt werden : z. B. Sandbox, UAT, Produktion. Daher wird empfohlen, dass Sie die verschiedenen Auswirkungen für Ihre Bereitstellung beachten, da es nicht leicht ist, später zu ändern, welche Talent-Umgebung einer PowerApps-Umgebung zugeordnet ist.
 5. Die folgenden PowerApps-Umgebungen können nicht für Talent verwendet werden und werden von der Auswahlliste innerhalb von LCS aus gefiltert:
  

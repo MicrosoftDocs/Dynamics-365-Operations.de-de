@@ -3,14 +3,14 @@ title: Formeldesigner in der elektronischen Berichterstellung (EB)
 description: In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronischen Berichterstattung (ER) verwendet wird.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/04/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
+ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
+ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -192,7 +192,7 @@ Wenn die Datenquelle **System** einer EB-Zuordnung hinzugefügt wird, die auf di
 Sie können die Art und Weise eingrenzen, in der Werte an die Parameter dieses Methodentyps übergeben werden:
 
 - Nur Konstanten können an andere Methoden dieses Typs übergeben werden. Die Werte der Konstanten werden zur Entwurfszeit definiert.
-- Nur primitive (grundlegende) Datentypen werden für Parameter dieses Typs unterstützt. (Die primitiven Datentypen sind ganze Zahl, tatsächlich, boolesch, Zeichenfolge Zeichenfolge, usw.).
+- Nur primitive (grundlegende) Datentypen werden für Parameter dieses Typs unterstützt. (Die primitiven Datentypen sind ganze Zahlen, tatsächlich, boolesch, Zeichenfolgen, usw.)
 
 #### <a name="paths"></a>Pfade
 
@@ -250,6 +250,12 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 <td>TEILEN (Eingabe, Länge)</td>
 <td>Teilen Sie die angegebene Eingabezeichenfolge in Teilzeichenfolgen, von denen jede die angegebene Länge hat. Geben Sie das Ergebnis als neue Liste zurück.</td>
 <td><strong>TEILEN (&quot;abcd&quot;, 3)</strong> gibt eine neue Liste zurück, die aus zwei Datensätzen besteht, die ein Feld <strong>ZEICHENFOLGE</strong> haben. Das Feld im ersten Datensatz enthält den Text <strong>&quot;ABC&quot;</strong> und das Feld im zweiten Datensatz beinhaltet den Text <strong>&quot;D&quot;</strong>.</td>
+</tr>
+<tr>
+<td>TEILEN (Eingabe, Trennzeichen)</td>
+<td>Teilen Sie die angegebene Eingabezeichenfolge in Teilzeichenfolgen, von denen jede die angegebene Länge hat.</td>
+<td><strong>TEILEN (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> gibt eine neue Liste zurück, die aus ei Datensätzen besteht, die ein Feld <strong>ZEICHEN</strong> hat. Das Feld im ersten Datensatz enthält den Text <strong>&quot;X&quot;</strong>, das Feld im zweiten Datensatz den Text &quot;&nbsp;&quot;, und das Feld im dritten Datensatz enthält den Text <strong>&quot;y&quot;</strong>. Wenn Trennzeichen leer ist, wird eine neue Liste zurückgegeben, die aus einem Datensatz, besteht der ein Feld <strong>ZEICHENFOLGE</strong> hat, das den Eingabetext enthält. Falls die Eingabe leer ist, wird eine neue leere Liste zurückgegeben.
+Wenn Eingabe oder Trennzeichen nicht definiert ist (Null), wird eine Bewerbungsausnahme ausgelöst.</td>
 </tr>
 <tr>
 <td>TEILUNGSLISTE (Liste, Nummer)</td>
@@ -323,12 +329,12 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <tr>
 <td>ORDERBY (Liste [, Ausdruck 1, Ausdruck 2,...])</td>
 <td>Geben Sie die angegebenen Liste zurück, nachdem sie gemäß der angegebenen Argumente sortiert wurde. Diese Argumente können als Ausdrücke definiert werden.</td>
-<td>Wenn <strong>Kreditor</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> eine Liste von Lieferanten zurück, die nach Name in aufsteigender Reihenfolge sortiert ist.</td>
+<td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>ORDERBY (Vendors, Vendors.'name()')</strong> eine Liste von Lieferanten zurück, die nach Name in aufsteigender Reihenfolge sortiert ist.</td>
 </tr>
 <tr>
 <td>UMKEHREN (Liste)</td>
 <td>Gibt die angegebene Liste in umgekehrter Sortierreihenfolge zurück.</td>
-<td>Wenn <strong>Kreditor</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> eine Liste von Kreditoren zurück, die nach Namen in absteigender Reihenfolge sortiert ist.</td>
+<td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> eine Liste von Kreditoren zurück, die nach Namen in absteigender Reihenfolge sortiert ist.</td>
 </tr>
 <tr>
 <td>WO (Liste, Bedingung)</td>
@@ -353,7 +359,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 </tr>
 <tr>
 <td>ZÄHLEN (Liste)</td>
-<td>Gibt die erste Zahl des Datensatzes in der angegebenen Liste zurück, wenn die Liste nicht leer ist. Andernfalls wird <strong>0</strong> (Null) zurückgegeben.</td>
+<td>Gibt die erste Zahl des Datensatzes der angegebenen Liste zurück, wenn dieser Datensatz nicht leer ist. Andernfalls wird <strong>0</strong> (Null) zurückgegeben.</td>
 <td><strong>ANZAHL (TEILEN (&quot;abcd&quot;, 3))</strong> gibt <strong>2</strong> zurück, da die Funktion <strong>TEILEN</strong> eine Liste erstellt, die aus zwei Datensätzen besteht.</td>
 </tr>
 <tr>
@@ -404,7 +410,8 @@ Zur Laufzeit geben die Felder <strong>Beschriftung</strong> und <strong>Beschrei
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung des Aufzählungswerts in Schweizer Deutsch abzurufen, wenn diese Übersetzung verfügbar ist. Wenn die Schweizerdeutsche Übersetzung nicht verfügbar ist, ist diese Beschriftung auf Deutsch: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+<p>In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung des Aufzählungswerts in Schweizer Deutsch abzurufen, wenn diese Übersetzung verfügbar ist. Wenn die schweizerdeutsche Übersetzung nicht verfügbar ist, ist das Etikett auf Deutsch.</p>
+IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 </td>
 </tr>
 <tr>
@@ -432,7 +439,7 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 <tr>
 <td>FILTER (Liste, Bedingungen)</td>
 <td>Gibt die angegebene Liste zurück, nachdem die Abfrage geändert wurde, um nach der angegebenen Bedingung zu filtern. Diese Funktion unterscheidet sich von der Funktion <strong>WO</strong>, da die angegebene Bedingung auf jede beliebige EB-Datenquelle des Typs <strong>Tabellendatensätze</strong> auf Datenbankebene angewendet wird. Die Liste und die Bedingung können definiert werden, indem Tabellen und Relationen verwendet werden.</td>
-<td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören. Wenn <strong>Kreditor</strong> als ER-Datenquelle konfiguriert ist, die auf die Tabelle <strong>VendTable</strong> verweist, und wenn <strong>parmVendorBankGroup</strong> als ER-Datenquelle konfiguriert ist, die einen Wert des Datentyps <strong>String</strong> zurückgibt, liefert <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> eine Liste nur der Kreditorenkonten, die zu einer bestimmten Bankengruppe gehören.</td>
+<td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören. Wenn <strong>Kreditor</strong> als ER-Datenquelle konfiguriert ist, die auf die Tabelle VendTable verweist, und wenn <strong>parmVendorBankGroup</strong> als ER-Datenquelle konfiguriert ist, die einen Wert des Datentyps <strong><Zeichenfolge</strong> zurückgibt, liefert <strong>FILTER (Vendor.&lt;Relations'.VendBankAccount, Vendor.&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> eine Liste nur der Kreditorenkonten, die zu einer bestimmten Bankengruppe gehören.</td>
 </tr>
 </tbody>
 </table>
@@ -446,12 +453,69 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 | NICHT (Bedingung) | Geben Sie den umgekehrten logischen Wert der angegebenen Bedingung zurück. | **NICHT (WAHR=)** gibt **FALSCH** zurück. |
 | AND (condition 1\[, condition 2, …\]) | Gibt **WAHR** zurück, wenn *alle* angegebenen Bedingungen erfüllt sind. Andernfalls wird **FALSCH** zurückgegeben. | **UND (1=1, "a " = "a")** gibt **WAHR** zurück. **UND (1=2, "a " = "a")** gibt **FALSCH** zurück. |
 | OR (condition 1\[, condition 2, …\]) | Gibt **FALSCH** zurück, wenn *alle* angegebenen Bedingungen falsch sind. Gibt **WAHR** zurück, wenn *eine* angegebenen Bedingungen erfüllt ist. | **ODER (1=2, "a " = "a")** gibt **WAHR** zurück. |
+| VALUEIN (Eingabe, Liste, Listenelementausdruck) | Bestimmen, ob die Eingabemit  einem angegebenen Wert eines Artikels in der angegebenen Liste übereinstimmt. Rückhol-__ent_dict_UI wenn die **WAHR** Eingabe das Ergebnis aus den angegebenen Ausdruck für mindestens einen Datensatz ausführen übereinstimmt. Andernfalls wird **FALSCH** zurückgegeben. Der Parameter **Eingabe** stellt den Pfad eines Datenquellenelements dar. Der Wert dieses Elements, der abgeglichen wird. Der Parameter **Liste** stellt den Pfad eines Datenquellenelements des Rekordlistentyps als Liste von Datensätzen dar, die einen Ausdruck enthält. Der Wert dieses Elements wird mit der angegebenen Eingabe verglichen. Das **Listenelementausdruck**-Argument stellt einen Ausdruck dar, der entweder zu einem Feld zeigt oder ein einzelnes Feld der Liste enthält, die zum Abgleich verwendet werden soll. | Beispiele hierzu finden Sie in [Beispiele: VALUEIN (Eingabe, Liste, Listenelementausdruck)](#examples-valuein-input-list-list-item-expression) Abschnitten wie folgt. |
+
+#### <a name="examples-valuein-input-list-list-item-expression"></a>Beispiele: VALUEIN (Eingabe, Liste, Listenelementausdruck)
+Im Allgemeinen wird die Funktion **VALUEIN** zu einem Satz **ODER** Bedingungen umgerechnet:
+
+(Eingabe = list.item1.value) ODER (Eingabe = list.item2.value) ODER...
+
+##### <a name="example-1"></a>Beispiel 1
+Sie definieren die folgende Datenquelle in der Zuordnung eines Projekt-Planzahlenmodells: Typ **Liste** (**Berechnetes Feld** ). Diese Datenquelle enthält den Suchbegriff **TEILUNG ("a,b,c", ", ")**.
+
+Wenn eine Datenquelle aufgerufen wird, die als Ausdruck **VALUEIN ("B", "Liste, List.Value)** konfiguriert ist, gibt er **WAHR** zurück. In diesem Fall wird die Funktion **VALUEIN** zu einem Satz der folgenden Bedingungen umgerechnet:
+
+**(("B" =" a") oder ("B" = "B") oder ("B" = "C"))**, wobei **("B" = "B")** ist gleich **WAHR**
+
+Wenn eine Datenquelle aufgerufen wird, die als Ausdruck **VALUEIN ("B", "Liste, LINKS (List.Value, 0))** konfiguriert ist, gibt er **FALSCH** zurück. In diesem Fall wird die Funktion **VALUEIN** zu einem Satz der folgenden Bedingungen umgerechnet:
+
+**("B" = "")**, das nicht gleich **WAHR** ist
+
+Beachten Sie, ob der obere Grenzwert für die Anzahl der Zeichen im Text beispielsweise eine Bedingung mit 32.768 Zeichen ist. Daher sollten Sie keine Datenquellen erstellen, die möglicherweise zur Laufzeit diesen Grenzwert überschreiten. Wenn das Unterzeichnungslimit überschritten wird, wird die Anwendung nicht mehr ausgeführt und eine Ausnahme ausgelöst. Beispielsweise kann diese Situation erfolgen, wenn die Datenquelle als**WO (List1, VALUEIN (List1.ID, List2, List2.ID)** konfiguriert wird, und die **List1** und **List2** Listen enthalten eine große Anzahl von Datensätzen.
+
+In einigen Fällen wird die Funktion **VALUEIN** zu einem Datenbankauszug übersetzt, indem  **EXISTIERT VERKNÜPFUNG** verwendet wird. Dieses Verhalten ist der Fall, wenn die Funktion **FILTER** verwendet wird und die folgenden Bedingungen erfüllt sind:
+
+- Die Option **BITTEN SIE UM ABFRAGE** wird für die Datenquelle der Funktion **VALUEIN** deaktiviert, die die Liste von Datenträgen bezieht. (Es werden keine zusätzliche Bedingungen auf diese Datenquelle zur Bearbeitungszeit angewendet).
+- Es werden keine eingebetteten Ausdrücke für die Datenquelle der Funktion **VALUEIN** konfiguriert, die sich auf die Liste von Datenträgen bezieht.
+- Ein Listenelement der Funktion **VALUEIN** bezieht sich auf ein Feld (kein Ausdruck oder eine Methode) der angegebenen Datenquelle.
+
+Ändern Sie diese Option anstelle der Funktion **WO** wie weiter oben in diesem Beispiel beschrieben.
+
+##### <a name="example-2"></a>Beispiel 2
+
+Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:
+
+- **In** (**Tabellendatensätze**-Typ), der auf die Intrastat -Tabelle verweist
+- **Port** (**Tabellendatensätze**-Typ), der auf die Intrastat -Port-Tabelle verweist
+
+Wenn eine Datenquelle angerufen wird, die als **FILTERN (IN, VALUEIN(In.Port, Port, Port.PortId)** als Ausdruck konfiguriert, wird die nächste SQL-Anweisung generiert, um Datensätze gefilterten der Intrastat-Tabelle zurückzugeben:
+
+```
+select … from Intrastat
+exists join TableId from IntrastatPort
+where IntrastatPort.PortId = Intrastat.Port
+```
+
+Für **dataAreaId** Felder wird die abschließende SQL-Anweisung vom Anwendungs Operator **EIN** generiert.
+
+##### <a name="example-3"></a>Beispiel 3
+
+Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:
+
+- **LE** (**Berechneter Feld** Typ), der den gewünschten Ausdruck **TEILUNG ("DEMF,GBSI, USMF", ", ")** enthält
+- **Ein** (**Tabellendatensatz** Typ), der sich auf die Intrastat-Tabelle bezieht und für welches die Option **Unternehmensübergreifend** aktiviert ist
+
+Wenn eine Datenquelle angerufen wird, die als **FILTER (in, VALUEIN (In.dataAreaId, Le, Le.Value)** als Ausdruck konfiguriert wird, enthält die abschließende SQL-Anweisung die folgende Bedingung:
+
+```
+Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
+```
 
 ### <a name="mathematical-functions"></a>Rechenoperationen
 
 | Funktion | Beschreibung | Beispiel |
 |----------|-------------|---------|
-| ABS (Nummer) | Gibt den absoluten Wert der angegebenen Zahl zurück. (In anderen Worten gibt sie die Zahl ohne des Vorzeichens zurück). | **ABS (-1)** gibt **1** zurück. |
+| ABS (Nummer) | Gibt den absoluten Wert der angegebenen Zahl zurück. (In anderen Worten gibt sie die Zahl ohne das Vorzeichens zurück). | **ABS (-1)** gibt **1** zurück. |
 | LEISTUNG (Zahl, Leistung) | Gibt das Ergebnis der angehobenen spezifischen positiven Zahl der angegebenen Leistung zurück. | **LEISTUNG (10, 2)** gibt **100** zurück. |
 | ZAHLENWERT (Zeichenfolge, Dezimaltrennzeichen, Zifferngruppierungstrennzeichen) | Konvertiert die angegebene Zeichenfolge zu einer Nummer. Das angegebene Dezimaltrennzeichen wird zwischen der ganzen Zahl und den Bruchteilen einer Dezimalzahl verwendet. Das angegebene Zifferngruppierungstrennzeichen wird als Tausendertrennzeichen verwendet. | **ZAHLENWERT ("1234,56 ", ",", " ")** gibt den Wert **1234.56** zurück. |
 | WERT (Zeichenfolge) | Konvertiert die angegebene Zeichenfolge zu einer Nummer. Kommas und Punktzeichen (.) gelten als Dezimaltrennzeichen und es wird ein führender Bindestrich (-) als ein negatives Vorzeichen verwendet. Löst eine Ausnahme aus, wenn die angegebene Zeichenfolge andere nichtnumerische Zeichen enthält. | **WERT ("1 "234,56 ")** löst eine Ausnahme aus. |
@@ -539,13 +603,13 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 </tr>
 <tr>
 <td>ERSETZEN (Zeichenfolge, Muster, Ersetzung, Markierung des regulären Ausdrucks)</td>
-<td>Wenn die angegebene Markierung des regulären Ausdrucks <strong>wahr</strong> ist, wird die angegebene Zeichenfolge zurückgegeben, nachdem sie durch Anwendung des normalen Ausdruck geändert wurde, der als ein Musterargument für diese Funktion angegeben ist. Dieser Ausdruck wird verwendet, um Zeichen zu finden, die ersetzt werden müssen. Zeichen des angegebenen Ersetzungsarguments werden verwendet, um Zeichen zu ersetzen, die gefunden werden. Wenn die angegebene Markierung des regulären Ausdrucks <strong>falsch</strong> ist, verhält sich diese Funktion wie <strong>ÜBERSETZEN</strong>.</td>
+<td>Wenn die angegebene Markierung des <strong>regulären Ausdrucks</strong> <strong>wahr</strong> ist, wird die angegebene Zeichenfolge zurückgegeben, nachdem sie durch Anwendung des normalen <strong>Ausdruck</strong> geändert wurde, der als ein Musterargument für diese Funktion angegeben ist. Dieser Ausdruck wird verwendet, um Zeichen zu finden, die ersetzt werden müssen. Zeichen des angegebenen <strong>Ersetzungs</strong>arguments werden verwendet, um Zeichen zu ersetzen, die gefunden werden. Wenn die angegebene <strong>Markierung des regulären Ausdrucks</strong> <strong>falsch</strong> ist, verhält sich diese Funktion wie <strong>ÜBERSETZEN</strong>.</td>
 <td><strong>ERSETZEN (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> übernimmt einen regulären Ausdruck, der alle nicht numerischen Symbole entfernt und <strong>&quot;19234564971&quot;</strong> zurückgibt. <strong>ERSETZEN (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> ersetzt das Muster <strong>&quot;cd&quot;</strong> mit der Zeichenfolge <strong>&quot;GH&quot;</strong> und gibt <strong>&quot;abGHef&quot;</strong> zurück.</td>
 </tr>
 <tr>
 <td>TEXT (Eingabe)</td>
 <td>Gibt die angegebene Eingabe zurück, nachdem sie in eine Textzeichenfolge konvertiert wurde, die gemäß den Servergebietsschemaeinstellungen der aktuellen Finance and Operations-Instanz formatiert ist. Für Werte für den <strong>tatsächlich</strong> Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</td>
-<td>Wenn das Servergebietsschema der Finance and Operations-Instanz als <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> definiert wird, wird das aktuelle Finance and Operations-Sitzungsdatum, 17. Dezember 2015, als Textzeichenfolge <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong> zurückgegeben. <strong>TEXT (1/3)</strong> gibt <strong>&quot;0.33&quot;</strong> zurück.</td>
+<td>Wenn das Servergebietsschema der Finance and Operations Instanz als <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> definiert wird, wird das aktuelle Finance and Operations-Sitzungsdatum, 17. Dezember 2015, als Textzeichenfolge <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong> zurückgegeben. <strong>TEXT (1/3)</strong> gibt <strong>&quot;0.33&quot;</strong> zurück.</td>
 </tr>
 <tr>
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
@@ -562,19 +626,19 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 <li>Finance and Operations-Beschriftung SYS18389, die den folgenden Text hat:
 <ul>
 <li><strong>Für die EN-US-Sprache:</strong> &quot;Debitor %1 wird beendet für %2.&quot;</li>
-<li><strong>Für deutsche Sprache:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
+<li><strong>Für deutsche Sprache:</strong> &quot;Debitor "%1 "wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Hier die Formel, die gestaltet werden kann:</p>
 <p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
-<p>Wenn ein Bericht für den Kunden <strong>Litware Retail</strong> am 17. Dezember 2015 in der <strong>EN-US</strong>-Kultur und in der <strong>EN-US</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der als Ausnahmenachricht für den Benutzer präsentiert werden kann:</p>
+<p>Wenn ein Bericht für den Kunden <strong>Litware Retail</strong> am 17. Dezember 2015 in der <strong>EN-US</strong>-Kultur und in der <strong>EN-US</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der dann als Ausnahmenachricht für den Benutzer präsentiert werden kann:</p>
 <p>&quot;Nichts zu drucken. Debitor Litware Retail wird auf 12/17/2015&quot; beendet.</p>
 <p>Wenn derselbe Bericht für den Kunden <strong>Litware Retail</strong> am 17. Dezember 2015 in der <strong>DE</strong>-Kultur und in der <strong>DE</strong>-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der ein anderes Datumsformat verwendet:</p>
 <p>&quot;Nichts-zu drucken. Schuldner-"Litware Einzelhandel" wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE] Die folgende Syntax wird in EB-Formeln für Beschriftungen angewendet:
 <ul>
-<li><strong>Für Beschriftungen aus Finance and Operations-Ressourcen:</strong> <strong>@&quot;X&quot;</strong>, wobei X die Beschriftungs-ID im Application Object Tree (AOT) ist</li>
-<li><strong>Für Beschriftungen, die sich in ER-Konfigurationen befinden:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, wobei X die Beschriftungs-ID in der ER-Konfiguration ist</li>
+<li><strong>Für Beschriftungen aus Finance and Operations-Ressourcen</strong> <strong>@&quot;X&quot;</strong>, wobei <strong>X</strong> die Beschriftungs-ID im Application Object Tree (AOT) ist</li>
+<li><strong>Für Beschriftungen, die sich in ER-Konfigurationen befinden:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, wobei <strong>X</strong> die Beschriftungs-ID in der ER-Konfiguration ist</li>
 </ul>
 </blockquote>
 </td>
@@ -616,7 +680,7 @@ In diesem Fall können Sie den folgenden Ausdruck verwenden, um die Beschriftung
 </tr>
 <tr>
 <td>GUIDVALUE (Eingabe)</td>
-<td>Konvertieren Sie die angegebene Eingabe des Datentyps <strong>Zeichenfolge</strong> in ein Datenelement des Datentyps <strong>GUID</strong>.</td>
+<td>Konvertieren Sie die angegebene Eingabe des Datentyps <strong>Zeichenfolge</strong> in ein Datenelement des Datentyps <strong>GUID</strong>.<blockquote>[!NOTE] Um eine Umwandlung in der entgegengesetzten Richtung zu bewerkstelligen (das heißt, die angegebene Eingabe des Datentyps <strong>GUID</strong> zu einem Datenelement des Datentyps <strong>Zeichenfolge</strong> konvertieren), können Sie dies mithilfe der <strong>TEXT()</strong>-Funktion tun.</blockquote></td>
 <td>Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:
 <ul>
 <li><strong>myID</strong> (<strong>Berechnetes Feld</strong>-Typ), das den gewünschten Ausdruck <strong>GUIDVALUE (&quot;AF5CCDAC-F728-4609-8C8B-, A4B30B0C0AA0&quot;)</strong> enthält</li>
@@ -637,7 +701,7 @@ Wenn diese Datenquellen definiert sind, können Sie einen Ausdruck wie <strong>F
 
 | Funktion | Beschreibung | Beispiel |
 |----------|-------------|---------|
-| TEXT (Eingabe) | Gibt die angegebene Eingabe zurück, nachdem sie in eine Textzeichenfolge konvertiert wurde, die gemäß den Servergebietsschemaeinstellungen der aktuellen Finance and Operations-Instanz formatiert ist. Für Werte für den **tatsächlich** Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt. | Wenn das Servergebietsschema der Finance and Operations-Instanz als **EN-US** definiert ist, gibt **TEXT (NOW ())** das aktuelle Finance and Operations-Sitzungsdatum, 17. Dezember 2015, als die Textzeichenfolge **"12/17/2015 07:59:23 AM"** zurück. **TEXT (1/3)** gibt **"0.33"** zurück. |
+| TEXT (Eingabe) | Gibt die angegebene Eingabe zurück, nachdem sie in eine Textzeichenfolge konvertiert wurde, die gemäß den Servergebietsschemaeinstellungen der aktuellen Finance and Operations-Instanz formatiert ist. Für Werte für den **tatsächlich** Typ, wird die Zeichenkonvertierung auf zwei Dezimalstellen beschränkt. | Wenn das Servergebietsschema der Finance and Operations Instanz als **EN-US**, **TEXT (NOW ())** definiert wird, wird das aktuelle Finance and Operations-Sitzungsdatum, 17. Dezember 2015, als Textzeichenfolge **12/17/2015 07:59:23 AM** zurückgegeben. **TEXT (1/3)** gibt **"0.33"** zurück. |
 | QRCODE (Zeichenfolge) | Gibt ein Quick Response Code (QR-Code) Bild im base64-Binärformat für die angegebene Zeichenfolge zurück. | **QRCODE ("Beispieltext")** gibt **U2FtcGxlIHRleHQ=** zurück. |
 
 ### <a name="data-collection-functions"></a>Datensammlungsfunktionen
@@ -645,11 +709,11 @@ Wenn diese Datenquellen definiert sind, können Sie einen Ausdruck wie <strong>F
 | Funktion | Beschreibung | Beispiel |
 |----------|-------------|---------|
 | FORMATELEMENTNAME () | Gibt den Namen des Elements des aktuellen Formats zurück. Gibt eine leere Zeichenfolge zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | Um mehr darüber zu erfahren, wie diese Funktion verwendet wird, finden Sie Informationen im Aufgabenleitfaden **EB – Verwendung von Daten der Formatausgabe für Inventur und Summierungen**, der Teil des Geschäftsprozesses **IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln** ist. |
-| SUMIFS (Schlüsselzeichenfolge zum Summieren, Kriterien Range1 Zeichenfolge \[, Kriterien Value1 Zeichenfolge [,Kriterien Range2 Zeichenfolge, Kriterien Value2 Zeichenfolge, …\]) | Gibt die Summe von Werten von XML-Knoten (bei denen der Name als Schlüssel definiert ist) zurück, die während der Ausführung des Formats gesammelt wurde und die angegebenen Bedingungen erfüllt (Koppelungen von Bereichen und Werten). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
-| SUMIF (Schlüsselzeichenfolge zum Summieren, Kriterien-Bereichszeichenfolge, Kriterien-Wertzeichenfolge) | Gibt die Summe von Werten von XML-Knoten (bei denen der Name als Schlüssel definiert ist) zurück, die während der Ausführung des Formats gesammelt wurde und die angegebene Bedingung erfüllt (Bereich und Wert). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
-| COUNTIFS (Kriterien Range1 Zeichenfolge, Kriterien Value1 Zeichenfolge \[, Kriterien Range2 Zeichenfolge, Kriterien Value2 Zeichenfolge…\]) | Gibt die Zahl von XML-Knoten zurück, die während der Ausführung des Formats gesammelt wurde, und die die angegebenen Bedingungen erfüllt (Koppelungen von Bereichen und Werten). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
-| COUNTIF (Kriterien-Bereichszeichenfolge, Kriterien-Wertzeichenfolge) | Gibt die Anzahl der XML-Knoten zurück, die während der Ausführung des Formats gesammelt wurden und die die angegebene Bedingung (Bereich und Wert) erfüllen. Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
-| COLLECTEDLIST (Kriterien Range1 Zeichenfolge, Kriterien Value1 Zeichenfolge \[, Kriterien Range2-Zeichenfolge, Kriterien Value2 Zeichenfolge…\]) | Gibt die Liste der Werte von XML-Knoten von XML zurück, die während der Ausführung des Formats gesammelt wurden und die die angegebenen Bedingungen (Bereich und Wert) erfüllt. Gibt eine leere Liste zurück, wenn die Markierung **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
+| SUMIFS (Schlüsselzeichenfolge zum Summieren, Kriterien Range1 Zeichenfolge \[, Kriterien Value1 Zeichenfolge [,Kriterien Range2 Zeichenfolge, Kriterien Value2 Zeichenfolge, …\]) | Gibt die Summe von Werten von XML-Knoten (bei denen der Name als Schlüssel definiert ist) zurück, die während der Ausführung des Formats gesammelt wurden und die angegebenen Bedingungen erfüllen (Koppelungen von Bereichen und Werten). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
+| SUMIF (Schlüsselzeichenfolge zum Summieren, Kriterien-Bereichszeichenfolge, Kriterien-Wertzeichenfolge) | Gibt die Summe von Werten von XML-Knoten (bei denen der Name als Schlüssel definiert ist) zurück, die während der Ausführung des Formats gesammelt wurden und die angegebenen Bedingungen erfüllen (Koppelungen von Bereichen und Werten). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
+| COUNTIFS (Kriterien Range1 Zeichenfolge, Kriterien Value1 Zeichenfolge \[, Kriterien Range2 Zeichenfolge, Kriterien Value2 Zeichenfolge…\]) | Gibt die Zahl von XML-Knoten zurück, die während der Ausführung des Formats gesammelt wurden, und die die angegebenen Bedingungen erfüllen (Koppelungen von Bereichen und Werten). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
+| COUNTIF (Kriterien-Bereichszeichenfolge, Kriterien-Wertzeichenfolge) | Gibt die Zahl von XML-Knoten zurück, die während der Ausführung des Formats gesammelt wurden, und die die angegebenen Bedingungen erfüllen (Bereiche und Werte). Gibt einen Wert **0** (null) zurück, wenn das Kennzeichen **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
+| COLLECTEDLIST (Kriterien Range1 Zeichenfolge, Kriterien Value1 Zeichenfolge \[, Kriterien Range2-Zeichenfolge, Kriterien Value2 Zeichenfolge…\]) | Gibt die Zahl von XML-Knoten zurück, die während der Ausführung des Formats gesammelt wurden, und die die angegebenen Bedingungen erfüllen (Bereiche und Werte). Gibt eine leere Liste zurück, wenn die Markierung **Ausgabedetails sammeln** der aktuellen Dateien deaktiviert ist. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Andere (geschäftsdomänenspezifische) Funktionen
 
@@ -667,6 +731,9 @@ Wenn diese Datenquellen definiert sind, können Sie einen Ausdruck wie <strong>F
 | FA\_BALANCE (Anlagencode, Wertmodellcode, Berichtsjahr, Meldedatum) | Gibt den vorbereiteten Datencontainer des Anlagensaldos zurück. Das Berichterstellungsjahr muss als Wert der Aufzählung **AssetYear** in Finance and Operations angegeben werden. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** gibt den vorbereiteten Datencontainer von Salden für Anlage **"COMP-000001"** zurück, der das Wertmodell **"Current"** zum aktuellen Finance and Operations-Sitzungsdatum hat. |
 | TABLENAME2ID (Zeichenfolge) | Gibt eine ganzzahlige Darstellung einer Tabellenkennung für den angegebenen Tabellennamen zurück. | **TABLENAME2ID ("Intrastat")** gibt **1510** zurück. |
 | ISVALIDCHARACTERISO7064 (Zeichenfolge) | Gibt den booleschen Wert **WAHR** zurück, wenn die angegebene Zeichenfolge eine gültige internationale Bankkontonummer (IBAN) darstellt. Gibt anderenfalls den booleschen Wert **FALSCH** zurück. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** gibt **WAHR** zurück. **ISVALIDCHARACTERISO7064 ("AT61")** gibt **FALSCH** zurück. |
+| NUMSEQVALUE (Nummernkreiscode, "Bereich, Umfangs-ID) | Gibt den neuen, generierten Wert eines Nummernkreises basierend auf dem Nummernkreiscode der angegebenen Anzahl, der Bereich und die Bereichs-ID zurück. Der Bereich muss als Wert der Option **ERExpressionNumberSequenceScopeType** (**Gemeinsam genutzt**, **Juristische Person** oder **Unternehmen**) angegeben werden. Für den Bereich **Gemeinsam genutzt** geben Sie eine Nullkette als die Bereichs-ID an. Für **Unternehmen** und **Juristische Person** Bereiche geben Sie den Unternehmenscode als die Bereichs-ID an. Für **Unternehmen** und **Juristische Person** Bereiche wenn Sie eine Nullkette als die Bereichs-ID angeben, wird der aktuelle Unternehmenscode verwendet. | Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:<ul><li>**enumScope** (**Dynamics 365 for Operations enumeration** Typ), der sich auf die  **ERExpressionNumberSequenceScopeType** Enumeration bezieht.</li><li>Typ **NumSeq** (**Berechnetes Feld** Typ), das den gewünschten Ausdruck **NUMSEQVALUE ("Gen \_1 ", enumScope.Company, "")** enthält</li></ul>Wenn die Datenquelle **NumSeq** aufgerufen wird, wird er dem generierten neuen Wert des **Gen \_1** Nummernkreis zurückgegeben, der für das Unternehmen konfiguriert wurde, der den Kontext liefe, unter dem das ER-Format ausgeführt wird. |
+| NUMSEQVALUE (Nummernkreiscode) | Gibt den neuen generierten Wert eines Nummernkreises zurück, basierend auf dem angegebenen Nummernkreis, dem Bereich **Unternehmen** und (als die Bereichs-ID) den Code des Unternehmens, das den Kontext enthält, unter dem das ER-Format ausgeführt wird. | Sie definieren die folgende Datenquelle in der Zuordnung: **Num Seq** (**Berechneter Feld** Typ). Diese Datenquelle enthält den Suchbegriff **NUMSEQVALUE ("Gene\_1")**. Wenn die Datenquelle **NumSeq** aufgerufen wird, wird er dem generierten neuen Wert des **Gen \_1** Nummernkreis zurückgegeben, der für das Unternehmen konfiguriert wurde, der den Kontext liefe, unter dem das ER-Format ausgeführt wird. |
+| NUMSEQVALUE (Nummernkreiscode RecordID) | Gibt den neuen, generierten Wert eines Nummernkreises basierend auf dem Nummernkreiscode der angegebenen RecordID zurück. | Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:<ul><li>**LedgerParms** (**Tabellen**-Typ), der auf die LedgerParameters-Tabelle verweist</li><li>**NumSeq** (**Berechneter Feld** Typ), das den gewünschten Ausdruck **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)** enthält</li></ul>Wenn die Datenquelle **NumSeq** aufgerufen wird, wird er dem generierten neuen Wert des Gen 1 Nummernkreis zurückgegeben, der für die Hauptbuch-Parameter für das Unternehmen konfiguriert wurde, der den Kontext liefert, unter dem das ER-Format ausgeführt wird. Dieser Nummernkreis kennzeichnet eindeutige Erfassungen und fungiert als eine Chargennummer, die die Buchungen zusammen verknüpft. |
 
 ### <a name="functions-list-extension"></a>Listenerweiterung der Funktionen
 
@@ -674,7 +741,6 @@ ER ermöglicht es Ihnen, die Liste von Funktionen zu verlängern, die in ER-Ausd
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
-
-[Erweitert die Liste der elektronischen Berichtsfunktion (ER)](general-electronic-reporting-formulas-list-extension.md)
+- [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+- [Erweitert die Liste der elektronischen Berichtsfunktion (ER)](general-electronic-reporting-formulas-list-extension.md)
 

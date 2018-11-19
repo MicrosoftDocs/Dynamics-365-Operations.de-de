@@ -3,7 +3,7 @@ title: "Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Ope
 description: "Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Aufträge direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations zu synchronisieren."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e26244ffc380291a40edfbd2c2cb5911b0d8b3cb
+ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/11/2018
 
 ---
 
@@ -32,6 +32,12 @@ ms.lasthandoff: 03/26/2018
 [!include [banner](../includes/banner.md)]
 
 Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Aufträge direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
+
+## <a name="data-flow-in-prospect-to-cash"></a>Datenfluss in Interessent nach Bargeld
+
+Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, um Daten über Instanzen von Finance and Operations und Sales hinweg zu synchronisieren. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Die folgende Abbildung zeigt, wie Daten zwischen Finance and Operations und Sales synchronisiert werden.
+
+[![Datenfluss in Interessent nach Bargeld](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 

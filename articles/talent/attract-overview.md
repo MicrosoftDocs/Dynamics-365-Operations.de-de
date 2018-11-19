@@ -1,6 +1,6 @@
 ---
-title: "Attract – Funktionen und Fähigkeiten"
-description: "Attract stellt Funktionen bereit, um den Prozess für die Einstellung neuer Talente zu verwalten. Kandidaten können zu den offenen Stellen hinzugefügt werden und von Phase zu Phase verschoben werden, bis eine Bewerbung abgeschlossen oder abgelehnt wurde."
+title: Features und Funktionen von Attract
+description: "In diesem Thema werden die Funktionen beschrieben, die Attract zum Verwalten des Einstellungsprozesses für neue Talente bietet."
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
@@ -18,32 +18,32 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 37dd0396787375fccd4082f392e079ed5dab04e9
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/22/2018
 
 ---
-# <a name="attract-features-and-capabilities"></a>Attract – Funktionen und Fähigkeiten
+# <a name="attract-features-and-capabilities"></a>Features und Funktionen von Attract
 
 [!include [banner](includes/banner.md)]
 
-Attract stellt Funktionen bereit, um den Prozess für die Einstellung neuer Talente zu verwalten. Kandidaten können zu den offenen Stellen hinzugefügt werden und von Phase zu Phase verschoben werden, bis eine Bewerbung abgeschlossen oder abgelehnt wurde. In jeder Phase durchlaufen Kandidaten Aktivitäten wie Anrufe, Bewertungen oder Interviews. Nachdem sich die Kandidaten beworben haben, erhalten Sie eine E-Mail mit der Bitte, sich bei Attract anzumelden, wo Sie den Status der Stelle, ihrer Bewerbung und die Antworten auf Aufgaben, die ihnen zugewiesen wurde, nachverfolgen können.
+Attract stellt Funktionen bereit, um den Prozess für die Einstellung neuer Talente zu verwalten. Kandidaten können zu den offenen Stellen hinzugefügt werden und dann von Phase zu Phase verschoben werden, bis eine Bewerbung entweder abgeschlossen oder abgelehnt wurde. In jeder Phase durchlaufen Kandidaten Aktivitäten wie Anrufe, Bewertungen und Interviews. Nachdem sich die Kandidaten beworben haben, erhalten Sie eine E-Mail mit der Bitte, sich bei Attract anzumelden, wo Sie den Status der Stelle und ihrer Bewerbung nachverfolgen können. Sie können auch auf alle Aufgaben antworten, die ihnen zugewiesen wurden.
 
-Attract hat folgende Funktionen.
+In diesem Thema werden die Funktionen von Attract angeboten werden.
 
 ## <a name="attract-dashboard"></a>Attract Dashboard
-Hier können die einzustellenden Teammitglieder die Details für die Stellen sehen, bei denen sie einbezogen sind. Hier können zukünftige Vorgesetzte oder ein Personalbeschaffungsmitarbeiter eine neue Stelle in Attract hinzufügen, entweder durch Erstellen einer individuellen Stelle oder durch Importieren einer Zahl aus einer Excel-Tabelle..
+Auf dem Dashboard können Einstellungsteammitglieder die Details der Stellen anzeigen, denen an denen sie teilnehmen. Auf dem Dashboard können zukünftige Vorgesetzte oder ein Personalbeschaffungsmitarbeiter neue Stellen in Attract hinzufügen, entweder durch Erstellen einer individuellen Stelle oder durch gleichzeitiges Importieren mehrerer Stellen aus einer Microsoft Excel-Tabelle.
 
-## <a name="jobs"></a>Stellen
-Auf der Seite **Stelle** können Details wie die Stellenbeschreibung und der Arbeitsort angezeigt und bearbeitet werden. Auf der Seite **Stelle** wird das Einstellungsteam zusammengestellt und hier können Sie die Interviewer und Einstellungsmitarbeiter im Team ändern. Neue Kandidaten können auf der Seite **Stelle** ebenfalls hinzugefügt werden.
+## <a name="jobs"></a>Stellentyp
+Auf der Seite **Stelle** können Details wie die Stellenbeschreibung und der Arbeitsort angezeigt und bearbeitet werden. Auf der Seite **Stelle** wird auch das Einstellungsteam zusammengestellt und hier können Sie die Interviewer und Einstellungsmitarbeiter im Team ändern. Neue Kandidaten können auf der Seite **Stelle** ebenfalls hinzugefügt werden.
 
 ## <a name="candidates"></a>Kandidaten
-Kandidaten können einer Stelle einzeln hinzugefügt werden oder in größeren Zahlen aus einem Excel-Arbeitsblatt hochgeladen werden. Alle Kandidaten werden automatisch zur ersten Phase, der Bewerbungsphase im Einstellungsprozess für eine Stelle hinzugefügt. Die Bewerbungsinformationen aller Kandidaten können hier angezeigt und verwaltet werden. Zusätzliche Dokumente können zusammen mit Kontaktinformationen wie Telefonnummern, E-Mail-Adressen und Links zu den Social Media-Konten hochgeladen und angezeigt werden. Wenn der Kandidat einen Link zu ihrem LinkedIn-Profil bereitgestellt hat und die LinkedIn-Integration (der eine LinkedIn-Einstellungslizenz erforderlich) eingerichtet wurde, wird das Profil des Kandidaten angezeigt.
+Kandidaten können einer Stelle einzeln hinzugefügt werden, oder sie können in größeren Zahlen aus einem Excel-Arbeitsblatt hochgeladen werden. Alle Kandidaten werden automatisch zur Bewerbungsphase hinzugefügt, die ist die erste Phase im Einstellungsprozess für jede Stelle. Während dieser Phase können alle Informationen der Bewerbung eines Kandidaten angezeigt und verwaltet werden. Zusätzliche Dokumente können zusammen mit Kontaktinformationen wie Telefonnummern, E-Mail-Adressen und Links zu den Social Media-Konten hochgeladen und angezeigt werden. Wenn ein Kandidat einen Link zu seinem LinkedIn-Profil bereitgestellt hat und wenn LinkedIn-Integration eingerichtet wurde, wird das Profil des Kandidaten angezeigt. (LinkedIn-Integration erfordert eine LinkedIn Recruiter-Lizenz.)
 
 ## <a name="stages"></a>Phasen
-Attract stellt stellt einen vordefinierten Prozess bereit, der vier grundlegende Phasen enthält: Bewerben, Auswahl, Interview und Angebot. Neue Kandidaten beginnen in der Bewerbungsphase, wo das Anschreiben, das Resümee, das Portfolio und andere Bewerberdokumenten geprüft werden. Von dort kann ein Kandidat zum Auswahlverfahren gelangen, wo er gebeten wird, an einem telefonischen Interview oder einem Interview über Skype-Videogespräch teilzunehmen. Der zukünftiger Vorgesetzte und der Personalbeschaffungsmitarbeiter können Rückmeldungen zu den Kandidaten bereitstellen und diese in die nächste Phase schieben. Dann werden persönliche Interviews mit den verfügbaren Mitglieder des Einstellungsteams geplant und können angepasst werden, um Bereichsgespräche oder Einzelgespräche von unterschiedlicher Länge durchzuführen. Nach dem Gespräch wird die Rückmeldung vom Gesprächsteam erfasst und überprüft. Ausgewählte Kandidaten gelangen in das Endstadium, wo ein Angebot zur Prüfung und Genehmigung erstellt und vorbereitet wird. 
+Attract stellt einen vordefinierten Prozess bereit, der über vier grundlegende Phasen verfügt: Bewerben, Auswahl, Interview und Angebot. Neue Kandidaten beginnen in der Bewerbungsphase, wo das Anschreiben, das Resümee, das Portfolio und andere Bewerberdokumenten geprüft werden. Von dort können Kandidaten zum Auswahlverfahren gelangen, wo er gebeten wird, an einem telefonischen Interview oder einem Interview über ein Skype-Videogespräch teilzunehmen. Der zukünftiger Vorgesetzte und der Personalbeschaffungsmitarbeiter können Rückmeldungen zu den Kandidaten bereitstellen und diese in die nächste Phase schieben. Dies ist die Vorstellungsgesprächsphase. Dann werden persönliche Gespräche mit verfügbaren Mitglieder des Einstellungsteams geplant. Diese Gespräche können als Einzel- oder Gruppengespräche in verschiedener Länge geplant werden. Nach dem Gespräch wird die Rückmeldung vom Gesprächsteam erfasst und überprüft. Ausgewählte Kandidaten gelangen dann zur Endphase, die Angebotsphase. In dieser Phase wird ein Angebot unterbreitet und zur Überprüfung und Zustimmung durch den Kandidaten vorbereitet.
 
 ## <a name="candidate-app"></a>App Kandidat
-Die Kandidaten erhalten eine E-Mail, sobald diese einer Stelle hinzugefüt wurden mit einem Link, die App herunterzuladen. Diese Internet-App gibt den Kandidaten die Stellendetails und ist das Tool, um mit dem Einstellungsteam zu kommunizieren. Kandidaten können ihre Verfügbarkeit für Gespräche auch senden.
+Sobald die Kandidaten der Stelle hinzugefügt wurden, erhalten Sie eine E-Mail mit einem Link zum Abruf der Web-App. Die App bietet Stellendetails und wird verwendet, um mit dem Einstellungsteam zu kommunizieren. Kandidaten können damit ihre Verfügbarkeit für Gespräche senden.
 

@@ -3,7 +3,7 @@ title: Finance and Operations-Hilfesystem
 description: "Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems. Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können."
 author: margoc
 manager: AnnBe
-ms.date: 07/12/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
+ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
+ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
 ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 
@@ -45,14 +45,14 @@ Finance and Operations umfasst ein vollständig neues Hilfesystem, das auf zwei 
 -   Eine Dokumentationswebsite
 -   Aufgabenleitfäden
 
-Sie können in jedem verwendeten Produkt auf Hilfethemen und Aufgabenleitfäden im Hilfebereich zugreifen. Der folgende Screenshot zeigt Dynamics 365 für Finance and Operations
+Sie können auf die Hilfe aus dem Hilfebereich zugreifen, unabhängig davon, welches Produkt Sie verwenden. Der folgende Screenshot zeigt Finance and Operations.
 
 ![Hilfebereich](./media/help-pane-ops-task-guides.png)
 
 Dieses Thema beschreibt das Hilfesystem und erläutert, wie Sie debitorenspezifische Dokumentationen und Ressourcen zur Produktschulung für Ihre Organisation erstellen können.
 
 > [!IMPORTANT]
-> Die Registerkarte **Aufgabenleitfäden** ist derzeit nicht in Microsoft Dynamics 365 for Talent und Microsoft Dynamics 365 for Retail verfügbar. Wir arbeiten derzeit daran, diese Funktion in einer künftigen Version zu ermöglichen. Die Aufgabenleitfäden in der "Erste Schritte"-Erfahrung in Talent bleiben verfügbar, um Grundfunktionen abzudecken. Prozedurale Hilfe finden Sie auch auf der docs.microsoft.com-Website ([docs.microsoft.com/dynamics365/unified-operations](../../index.md) für Retail und Talent.
+> **Aufgabenleitfäden** sind momentN nicht für Einzelhandel oder im Hilfebereich für Talent verfügbar (einige Aufgabenleitfäden sind im Bereich Erste Schritte für Talent verfügbar). Prozedurale Hilfe finden Sie auch auf der docs.microsoft.com-Website ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) für Retail und Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hilfe auf docs.microsoft.com
 
@@ -66,15 +66,14 @@ Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operatio
 ### <a name="searching-on-docsmicrosoftcom"></a>Suche auf docs.microsoft.com
 Wir erhalten viele Fragen zur Suche nach unserem Inhalt. Wenn Sie auf unserer Website von einer Seite über Finance and Operations beginnen, schränken wir den Umfang Ihrer Suche nur auf den Inhalt für Finance and Operations ein. Sie können die Einschränkung des Umfangs entfernen, indem Sie auf das X neben Operations im Suchfeld klicken. 
 
-![Aufträge durchsuchen](./media/search-scope-2.png)
+![Durchsuchen](./media/search-scope-2.png)
 
 Sie können auch unseren Inhalt mit jeder beliebigen Suchmaschine finden. Um die besten Ergebnisse zu erhalten, wird empfohlen, dass Sie eine Websitesuche verwenden, wie beispielsweise Website: docs.microsoft.com dynamics 365 "Suchbegriff"  
 
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>Das docs.microsoft.com-Inhaltsverzeichnis
-Finance and Operations, Retail, und Talent nutzen alle das gleiche Inhaltsverzeichnis in der Dokumenten-Website. Damit können Kunden den Kontext des Themas anzuzeigen, in dem sie sich befinden. So kann das Filtersteuerelement über der Inhaltstabelle verwendet werden, um nach Themen zu suchen.
+Finance and Operations und Retail nutzen alle das gleiche Inhaltsverzeichnis in der Dokumenten-Website. Damit können Kunden den Kontext des Themas anzuzeigen, in dem sie sich befinden. So kann das Filtersteuerelement über der Inhaltstabelle verwendet werden, um nach Themen zu suchen. 
 
-### <a name="follow-a-topic"></a>Einem Thema folgen
-Um einem Thema zu folgen, klicken Sie auf die +Follow-Schaltfläche im Kommentarfeld. Sie müssen sich anmelden, um dem Thema zu folgen. Siehe [Geben Sie uns einen Kommentar](#leave-us-feedback) für Details.  
+Sie können Hilfe für andere Dynamics 365 Produkte erhalten, indem Sie danach suchen oder auf der Breadcrumb-Site auf Dynamics 365 klicken, um zu unserer Hubseite zu gelangen. 
 
 ### <a name="use-an-rss-feed"></a>Verwenden eines RSS-Feed
 Um ein RSS-Feed aller Aktualisierungen des Unified Operations-Inhalts zu abonnieren, verwenden Sie den folgenden Link von einem Browser aus, der RSS-Feeds unterstützt, wie beispielsweise Internet Explorer, oder einen RSS-Feedmanager: 
@@ -106,17 +105,18 @@ Weitere Informationen hierzu finden Sie im Installationshandbuch: https://github
 
 
 > [!NOTE]
-> Es werden derzeit nur Beiträge zu unseren englischen Repositorys akzeptiert.  
+> Es werden derzeit nur Beiträge für unseren englischen Inhaltssatz akzeptiert.  
 
 
 ## <a name="task-guides"></a>Aufgabenleitfäden
 Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können einen Aufgabenleitfaden aus dem Hilfe-Bereich öffnen (wiedergeben). Wenn Sie zuerst auf einen Aufgabenleitfaden klicken, werden im Hilfe-Bereich Schritt für Schritt die Anweisungen für die Aufgabe angezeigt. Lokalisierte Aufgabenleitfäden sind jetzt verfügbar. 
 
-Wir beauftragen unterschiedliche Aufgabenleitfäden für jedes Produkt wie Dynamics 365 for Retail, Dynamics 365 for Finance and Operations oder Dynamics 365 for Talent. Der Abschnitt "Auf Aufgabenleitfäden zugreifen" im Hilfebereich beschreibt, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden. 
+Microsoft Aufgabenleitfadenbibliotheken für gelieferte Versionen bis Dezember 2017 für Finance and Operations. Der Abschnitt [Auf Aufgabenleitfäden zugreifen aus dem Hilfebereich](help-overview.md#accessing-task-guides-from-the-help-pane) beschreibt, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden. 
 
 ![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
 
 Um die geführte, interaktive Umgebung zu starten, klicken Sie auf **Aufgabenleitfaden starten** unten im Hilfebereich. Ein schwarzer Mauszeiger öffnet und gibt die Aktivität an, die Sie ausführen müssen. Folgen Sie den Richtungen, die in der Benutzeroberfläche angezeigt werden, und geben Sie Daten ein, wie vorgesehen. 
+
 ![Schrittanleitung des Aufgabenleitfadens](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT] 
@@ -126,7 +126,11 @@ Um die geführte, interaktive Umgebung zu starten, klicken Sie auf **Aufgabenlei
 
 Aufgabenleitfäden werden mit der Aufgabenaufzeichnung erstellt. Wenn Sie die Aufgabenaufzeichnung verwenden, werden alle Ihre Aktivitäten in Finance and Operations Benutzeroberfläche (wie Klicken auf Menüs, Ändern von Einstellungen und Dateneingabe) aufgezeichnet. Die Schritte, die Sie erfassen, werden zusammenfassend als Aufgabenaufzeichnung bezeichnet. Wie wir im vorherigen Abschnitt erklärt haben, können Aufgabenaufzeichnungen im Hilfe-Bereich angezeigt und als Aufgabenleitfaden wiedergegeben werden. Jedoch gibt es andere Methoden, wie Sie die Aufgabenaufzeichnungen verwenden können:
 
--   **Speichern von Aufgabenaufzeichnungen im BPM** - Sie können eine Aufgabenaufzeichnungin einer Hierarchie einer BPM-Bibliothek in LCS speichern Wenn Sie eine Aufgabenaufzeichung in BPM speichern, wird ein Flussdiagramm zusammen mit den Schritten der Aufzeichnung generiert und angezeigt. **Hinweis:** Um eine Aufgabenaufzeichnung im Hilfe-Bereich von Finance and Operations anzuzeigen und sie als Aufgabenleitfaden wiederzugeben, müssen Sie die Aufzeichnung in einer BPM-Bibliothek speichern.
+-   **Speichern von Aufgabenaufzeichnungen im BPM** - Sie können eine Aufgabenaufzeichnungin einer Hierarchie einer BPM-Bibliothek in LCS speichern Wenn Sie eine Aufgabenaufzeichung in BPM speichern, wird ein Flussdiagramm zusammen mit den Schritten der Aufzeichnung generiert und angezeigt. 
+
+    > [!Note]
+    > Um eine Aufgabenaufzeichnung im Hilfe-Bereich von Finance and Operations anzuzeigen und sie als Aufgabenleitfaden wiederzugeben, müssen Sie die Aufzeichnung in einer BPM-Bibliothek speichern.
+    
 -   **Aufgabenaufzeichnungen als Word-Dokumente speichern** - Indem Sie eine Aufgabenaufzeichnung als Word Dokument speichern, können Sie einfach druckbare Trainingshandbücher für Ihre Organisation erstellen.
 
 Weitere Informationen zur Aufgabenaufzeichnung finden Sie unter [Aufgabenaufzeichnung in Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
@@ -142,7 +146,7 @@ Um auf Hilfeinhalte innerhalb von Finance and Operations zuzugreifen, klicken Si
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Auf Hilfethemen über den Hilfebereich zugreifen
 
-Im Hilfe-Bereich können Sie auf Artikel zugreifen, die für den Finance and Operations Client gelten. Wenn Sie zuerst den Hilfebereich öffnen und auf die Registerkarte **Wiki** klicken, finden Sie die Artikel, die für die Seite gelten, an denen Sie derzeit in Finance and Operations sind. Wenn keine Artikel gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Wenn Sie auf einen Artikel im Bereich Hilfe klicken, wird eine neue Registerkarte in Ihrem Browser geöffnet und der Artikel angezeigt. 
+Im Hilfe-Bereich können Sie auf Artikel zugreifen, die für den Finance and Operations Client gelten. Wenn Sie zuerst den Hilfebereich öffnen und auf die Registerkarte **Hilfe** klicken, finden Sie die Artikel, die für die Seite gelten, an denen Sie derzeit in Finance and Operations sind. Wenn keine Artikel gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Wenn Sie auf einen Artikel im Bereich Hilfe klicken, wird eine neue Registerkarte in Ihrem Browser geöffnet und der Artikel angezeigt. 
 
 > [!IMPORTANT]
 > Dieser Abschnitt gilt nicht für Dynamics 365 for Talent. Das Hilfesystem für Talent stellt automatisch eine Verbindung mit den Aufgabenleitfäden für das Produkt bereit. Sie können auch keine benutzerdefinierten Aufgabenleitfäden für Talent erstellen. 
@@ -160,7 +164,9 @@ Bevor Sie auf Aufgabenleitfäden aus dem Bereich **Hilfe** zugreifen können, mu
 Gehen Sie auf der Seite **Systemparameter** folgendermaßen vor:
 
 1.  **Wichtig:** Beim erstmaligen Öffnen der Registerkarte "Hilfe" müssen Sie die Verbindung zu den Lifecycle Services herstellen. Klicken Sie auf den Link mitten im Formular, warten Sie auf die Verbindung, schließen Sie das Dialogfeld, und klicken Sie anschließend auf **OK**, um zum Parameterformular zu gelangen.
+
 ![Mit LCS verbinden](./media/connect-to-lcs-crop-1024x365.png)
+
 2.  Wählen Sie das Projekt Lifecycle Services, um eine Verbindung herzustellen.
 3.  Wählen Sie BPM-Bibliotheken (innerhalb des ausgewählten Projekts) aus, von denen Sie die Aufgabenaufzeichnungen abrufen wollen.
     - Für Finance and Operations wählen Sie für Microsoft-Inhalt die QPC vereinheitlichte Bibliothek für Microsoft Dynamics 365 for Finance and Operations, Februar 2017 aus. 
@@ -173,38 +179,29 @@ Nachdem ein Systemadministrator diese Schritte eingerichtet hat, können Sie den
 
 ![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides"></a>Wo sind die übersetzten Aufgabenleitfäden?
+### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Wo sind die übersetzten Aufgabenleitfäden für Microsoft-Bibliotheken?
 
 Übersetzte Aufgabenleitfäden werden in die Bibliotheken mit "Alle Sprachen" im Titel freigegeben. Um lokalisierte Aufgabenleitfäden in Finance and Operations anzuzeigen, stellen Sie sicher, dass die mit der entsprechenden Bibliothek verbunden sind. Die im Aufgabenleitfaden angezeigte Sprache wird für jeden Benutzer durch Spracheinstellungen unter **Optionen** &gt; **Voreinstellungen** gesteuert. 
 -   Wenn ein Aufgabenleitfaden übersetzt wurde, wird beim Öffnen der gesamte Text des Leitfadens in der ausgewählten Sprache angezeigt.
 -   Wenn ein Aufgabenleitfaden noch nicht übersetzt wurde, wird beim Öffnen nur ein Teil des Texts (der Text der Steuerelemente) in der ausgewählten Sprache angezeigt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-In der folgenden Tabelle werden unsere Websites aufgeführt. Unsere Content Websites werden organisiert, um den Debitorenlebenszyklus zu unterstützen. Jede Phase wird durch eine andere gruppe von Sites unterstützt. Für Sites, die ein Sternchen (\*) neben dem Namen besitzen,ist es erforderlich, dass Sie sich über ein Konto anmelden, das einem Dienstleistungsplan zugeordnet ist.
+
+- [Finance and Operations-Hilfesystem (herunterladbares Datenblatt)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+- [Aufgabenaufzeichnung](../../dev-itpro/user-interface/task-recorder.md)
+- [Dokumentation oder Schulungen mithilfe von"Aufgabenaufzeichnungen" erstellen](../../dev-itpro/user-interface/task-recorder.md)
+
+In der folgenden Tabelle werden unsere Websites aufgeführt. Für Sites, die ein Sternchen (\*) neben dem Namen besitzen,ist es erforderlich, dass Sie sich über ein Konto anmelden, das einem Dienstleistungsplan zugeordnet ist.
 
 | Standort                                                                     | Beschreibung                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Docs.microsoft.com](/dynamics365/) | Hosts oder Links zu allen Produktdokumentationen für Dynamics 365.                                                                                                                                                               |
-| [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Bietet einen Cloud-basierten Kooperationsbereich, den Debitoren und Partner verwenden können, um Dynamics 365 for Finance and Operations-Projekte von Presales bis zur Implementierung und den Arbeitsgängen zu verwalten. Diese Site ist in alle Phasen einer Implementierung hilfreich. |
-| [CustomerSource](http://www.customersource.com/)\*                       | Hostet Ressourcen des umfangreichen Trainings und ist die primäre Stützsite für Dynamics 365 for Finance and Operations. Eine Anmeldung kann in erforderlich sein, um auf bestimmte Ressourcen auf der Website zugreifen.                                                                      |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Die kostehlose Microsoft e-Learning-Site.                                                                                                                                                               |
+| [Lifecycle Services](https://lcs.dynamics.com/en/)\*                      | Bietet einen Cloud-basierten Kooperationsbereich, den Debitoren und Partner verwenden können, um Dynamics 365 for Finance and Operations-Projekte von Presales bis zur Implementierung und den Arbeitsgängen zu verwalten. Diese Site ist in alle Phasen einer Implementierung hilfreich. |
 | [Support-Blog](http://aka.ms/AXSupportBlog)                              | Hält Tipps und Tricks bereit, die vom Dynamics 365 for Finance and Operations-Support-Team gepostet werden.                                                                                                                                                  |
-| [MSDN](http://aka.ms/AXMSDN)                                             | Hostet Inhalte aus früheren Versionen, die für Entwickler geschrieben wurden.                                                                                                                                                                       |
-| [TechNet](http://aka.ms/TechNet)                                         | Hostet Inhalte aus früheren Versionen, die für IT-Experten und Anwendungsbenutzer geschrieben wurden.                                                                                                                                           |
-| [Dynamics-Community](http://community.dynamics.com/)                  | Hostet Blogs, Foren und Videos.                                                                                                                                                                                                           |
+| [Docs.microsoft.com/previous Versionen](https://docs.microsoft.com/en-us/previous-versions/dynamics/)                                             | Hostet Inhalt aus früheren Versionen.                                                                                                                                                                       |
+| [Dynamics-Community](https://community.dynamics.com/)                  | Hostet Blogs, Foren und Videos.                                                                                                                                                                                                           |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/en-us/dynamics365/home)                 | Stellt Auswertungen und Verkaufsinformationen bereit.                                                                                                                                                                                                 |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                      | Hostet mehrere Trainingsressourcen für Finance and Operations, herunterladbare Berichte und Whitepapers und ist die primäre Site für Dienstleistungs-Planhalter. Möglicherweise wird ein Dienstleistungsplan benötigt, um auf einige Ressourcen auf der Website zuzugreifen.     |
 
-
-
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
-[Finance and Operations-Hilfesystem (herunterladbares Datenblatt)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
-
-[Aufgabenaufzeichnung](../../dev-itpro/user-interface/task-recorder.md)
-
-[Dokumentation oder Schulungen mithilfe von"Aufgabenaufzeichnungen" erstellen](../../dev-itpro/user-interface/task-recorder.md)
-
-[Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
-[Neue oder aktualisierte Aufgabenleitfäden (August 2016)](new-updated-task-guides-available-august-2016.md)
-[Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)
-[Neue oder aktualisierte Aufgabenleitfäden (Februar 2016)](new-task-guides-available-february-2016.md)
 

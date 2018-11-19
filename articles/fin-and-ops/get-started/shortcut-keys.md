@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
+ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
@@ -192,7 +192,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Formular als Favorit hinzufügen/entfernen (mit Fokus auf einem Formular im Navigationsbereich)   | UMSCHALT+F                    |
 | Zum Standardaktivitätsbereich wechseln                                              | ALT+M,A oder STRG+F6         |
 | Zum Bereich „Filter” wechseln (was möglicherweise einschließt, ihn zu öffnen)                        | ALT+M,F oder STRG+F3         |
-| Fokus zum Seiteninhalt verschieben (mit Fokus auf der Navigationsliste)            | ALT+M,M oder STRG+F3         |
+| Fokus zum Seiteninhalt verschieben (mit Fokus auf den Filterbereich)                | ALT+M,M oder STRG+F3         |
 | Zur Navigationsliste auf dem Formular „Details” wechseln (was möglicherweise einschließt, sie zu öffnen)    | ALT+M,S oder STRG+F8         |
 | Fokus zum Seiteninhalt verschieben (mit Fokus auf der Navigationsliste)            | ALT+M,M oder STRG+F8         |
 | Schließen der Navigationsliste auf dem Formular "Details" (mit Fokus in der Navigationsliste) | ESC                        |
