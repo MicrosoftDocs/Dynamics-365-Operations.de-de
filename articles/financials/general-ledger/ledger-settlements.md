@@ -27,7 +27,6 @@ ms.lasthandoff: 10/12/2018
 # <a name="ledger-settlements"></a>Sachkontoausgleiche
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Mit dem Sachkontoausgleich können Sie Haben- und Solltransaktionen im Hauptbuch abgleichen und Sie als ausgeglichen markieren. Auf diese Weise können Sie sicherstellen, dass zugehörige Buchungen gelöscht wurden. Sie können einen Ausgleich auch stornieren, wenn er versehentlich vorgenommen wurden.
 
