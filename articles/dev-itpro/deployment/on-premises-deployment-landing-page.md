@@ -3,7 +3,7 @@ title: "Startseite für lokale Bereitstellungen"
 description: "Dieses Thema liefert Informationen und Links zu Inhalten über lokale Bereitstellungen."
 author: kfend
 manager: AnnBe
-ms.date: 09/11/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,50 +18,57 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
-ms.openlocfilehash: e65edc9d613c9898776e30ea5ab4104a3ce5b4c8
+ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
+ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
 ms.contentlocale: de-de
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 11/02/2018
 
 ---
-# <a name="on-premises-deployments-home-page"></a><span data-ttu-id="9e4b6-103">Startseite für lokale Bereitstellungen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-103">On-premises deployments home page</span></span>
+# <a name="on-premises-deployments-home-page"></a><span data-ttu-id="94ccf-103">Startseite für lokale Bereitstellungen</span><span class="sxs-lookup"><span data-stu-id="94ccf-103">On-premises deployments home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="9e4b6-104">Sie können Microsoft Dynamics 365 for Finance and Operations (On-Premises) bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="9e4b6-104">You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises).</span></span> <span data-ttu-id="9e4b6-105">Wenn Sie eine lokale Bereitstellungsform auswählen, unterscheiden sich die Systemanforderungen, die Hardwareauslegung und die Funktionalität von einer Cloud-Bereitstellung.</span><span class="sxs-lookup"><span data-stu-id="9e4b6-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="9e4b6-106">Dieses Thema bietet Links zu Inhalten mit Informationen speziell zu lokalen Bereitstellungen.</span><span class="sxs-lookup"><span data-stu-id="9e4b6-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
+<span data-ttu-id="94ccf-104">Sie können Microsoft Dynamics 365 for Finance and Operations (On-Premises) bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="94ccf-104">You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises).</span></span> <span data-ttu-id="94ccf-105">Wenn Sie eine lokale Bereitstellungsform auswählen, unterscheiden sich die Systemanforderungen, die Hardwareauslegung und die Funktionalität von einer Cloud-Bereitstellung.</span><span class="sxs-lookup"><span data-stu-id="94ccf-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="94ccf-106">Dieses Thema bietet Links zu Inhalten mit Informationen speziell zu lokalen Bereitstellungen.</span><span class="sxs-lookup"><span data-stu-id="94ccf-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="9e4b6-107">Erste Schritte</span><span class="sxs-lookup"><span data-stu-id="9e4b6-107">Get started</span></span>
-- [<span data-ttu-id="9e4b6-108">Neuheiten oder Änderungen in den lokalen Bereitstellungen von Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.2 mit Plattformaktualisierung 12 (März 2018)</span><span class="sxs-lookup"><span data-stu-id="9e4b6-108">What's new or changed in on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with platform update 12 (March 2018)</span></span>](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
-- [<span data-ttu-id="9e4b6-109">Dynamics 365 for Finance and Operations (on-premises) Übersicht</span><span class="sxs-lookup"><span data-stu-id="9e4b6-109">Dynamics 365 for Finance and Operations (on-premises) overview</span></span>](on-premises-overview.md)
-- [<span data-ttu-id="9e4b6-110">Planung Ihrer On-premises-Bereitstellung</span><span class="sxs-lookup"><span data-stu-id="9e4b6-110">Planning for your on-premises deployment</span></span>](plan-onprem-deployment.md)
-- [<span data-ttu-id="9e4b6-111">Systemanforderungen für lokale Bereitstellungen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-111">System requirements for on-premises deployments</span></span>](../../fin-and-ops/get-started/system-requirements-on-prem.md)
-- [<span data-ttu-id="9e4b6-112">Hardwarekalkulation für lokale Umgebungen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-112">Hardware sizing for on-premises environments</span></span>](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- <span data-ttu-id="9e4b6-113">«»[Kauf von Dynamics 365 for Finance and Operations (lokal)](../../fin-and-ops/get-started/purchase-on-premises.md)</span><span class="sxs-lookup"><span data-stu-id="9e4b6-113">[Purchase Dynamics 365 for Finance and Operations(on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)</span></span>
-- [<span data-ttu-id="9e4b6-114">Vergleich von Cloudfunktionen und lokalen Funktionen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-114">Cloud and on-premises feature comparison</span></span>](../../fin-and-ops/get-started/cloud-prem-comparison.md)
+## <a name="get-started"></a><span data-ttu-id="94ccf-107">Erste Schritte</span><span class="sxs-lookup"><span data-stu-id="94ccf-107">Get started</span></span>
+- [<span data-ttu-id="94ccf-108">Optionen für lokale Bereitstellungen</span><span class="sxs-lookup"><span data-stu-id="94ccf-108">On-premises deployment option</span></span>](on-premises-overview.md)
+- [<span data-ttu-id="94ccf-109">Planen und Vorbereiten lokaler Bereitstellungen</span><span class="sxs-lookup"><span data-stu-id="94ccf-109">Plan and prepare for on-premises deployments</span></span>](plan-onprem-deployment.md)
+- [<span data-ttu-id="94ccf-110">Systemanforderungen für lokale Bereitstellungen</span><span class="sxs-lookup"><span data-stu-id="94ccf-110">System requirements for on-premises deployments</span></span>](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [<span data-ttu-id="94ccf-111">Hardwarekalkulation für lokale Umgebungen</span><span class="sxs-lookup"><span data-stu-id="94ccf-111">Hardware sizing for on-premises environments</span></span>](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+- [<span data-ttu-id="94ccf-112">Finance and Operations (lokal) kaufen</span><span class="sxs-lookup"><span data-stu-id="94ccf-112">Buy Finance and Operations (on-premises)</span></span>](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [<span data-ttu-id="94ccf-113">Vergleich von Cloudfunktionen und lokalen Funktionen</span><span class="sxs-lookup"><span data-stu-id="94ccf-113">Comparison of cloud and on-premises features</span></span>](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
-## <a name="onboard"></a><span data-ttu-id="9e4b6-115">Onboard</span><span class="sxs-lookup"><span data-stu-id="9e4b6-115">Onboard</span></span>
-- [<span data-ttu-id="9e4b6-116">Lokales Projekt in Lifecycle Services erstellen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-116">Create an on-premises project in Lifecycle Services</span></span>](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [<span data-ttu-id="9e4b6-117">Lokale Einrichtung und Bereitstellungs-Umgebungen (Platform-Update 12)</span><span class="sxs-lookup"><span data-stu-id="9e4b6-117">Set up and deploy on-premises environments (Platform update 12)</span></span>](setup-deploy-on-premises-pu12.md)
-- [<span data-ttu-id="9e4b6-118">Lokale Einrichtung und Bereitstellungs-Umgebungen (Platform-Update 8 und 11)</span><span class="sxs-lookup"><span data-stu-id="9e4b6-118">Set up and deploy on-premises environments (Platform update 8 and 11)</span></span>](setup-deploy-on-premises-pu8-pu11.md)
-- [<span data-ttu-id="9e4b6-119">Netzwerkdruckergeräte in on-premises-Umgebungen installieren</span><span class="sxs-lookup"><span data-stu-id="9e4b6-119">Install network printer devices in on-premises environments</span></span>](../analytics/install-network-printer-onprem.md)
-- [<span data-ttu-id="9e4b6-120">SQL Server Reporting Services für eine lokale Bereitstellung konfigurieren</span><span class="sxs-lookup"><span data-stu-id="9e4b6-120">Configure SQL Server Reporting Services for an on-premises deployment</span></span>](../analytics/configure-ssrs-on-premises.md)
-- [<span data-ttu-id="9e4b6-121">Angepasste Modelle für lokale Umgebungen entwickeln und bereitstellen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-121">Develop and deploy custom models to on-premises environments</span></span>](develop-deploy-custom-models-on-premises.md)
+## <a name="onboard"></a><span data-ttu-id="94ccf-114">Aufnehmen</span><span class="sxs-lookup"><span data-stu-id="94ccf-114">Onboard</span></span>
+- [<span data-ttu-id="94ccf-115">Lokale Projekte in Lifecycle Services (LCS) erstellen</span><span class="sxs-lookup"><span data-stu-id="94ccf-115">Set up on-premises projects in Lifecycle Services (LCS)</span></span>](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [<span data-ttu-id="94ccf-116">Einrichten und bereitstellen lokaler Umgebungen (Platform Update 12 und höher)</span><span class="sxs-lookup"><span data-stu-id="94ccf-116">Set up and deploy on-premises environments (Platform update 12 and later)</span></span>](setup-deploy-on-premises-pu12.md)
+- [<span data-ttu-id="94ccf-117">Lokale Einrichtung und Bereitstellungs-Umgebungen (Platform-Update 8 und 11)</span><span class="sxs-lookup"><span data-stu-id="94ccf-117">Set up and deploy on-premises environments (Platform update 8 and 11)</span></span>](setup-deploy-on-premises-pu8-pu11.md)
+- [<span data-ttu-id="94ccf-118">Netzwerkdruckergeräte in lokalen Umgebungen installieren</span><span class="sxs-lookup"><span data-stu-id="94ccf-118">Install network printer devices in on-premises environments</span></span>](../analytics/install-network-printer-onprem.md)
+- [<span data-ttu-id="94ccf-119">SQL Server Reporting Services für lokale Bereitstellungen konfigurieren</span><span class="sxs-lookup"><span data-stu-id="94ccf-119">Configure SQL Server Reporting Services for on-premises deployments</span></span>](../analytics/configure-ssrs-on-premises.md)
+- [<span data-ttu-id="94ccf-120">Angepasste Modelle für lokale Umgebungen entwickeln und bereitstellen</span><span class="sxs-lookup"><span data-stu-id="94ccf-120">Develop and deploy custom models to on-premises environments</span></span>](develop-deploy-custom-models-on-premises.md)
 
-## <a name="work-in-your-on-premises-deployment"></a><span data-ttu-id="9e4b6-122">In Ihrer lokalen Bereitstellung arbeiten</span><span class="sxs-lookup"><span data-stu-id="9e4b6-122">Work in your on-premises deployment</span></span>
-- [<span data-ttu-id="9e4b6-123">Dokumentverwaltung konfigurieren</span><span class="sxs-lookup"><span data-stu-id="9e4b6-123">Configure document management</span></span>](../../fin-and-ops/organization-administration/configure-document-management.md)
-- [<span data-ttu-id="9e4b6-124">Elektronische Berichtskonfigurationen importieren</span><span class="sxs-lookup"><span data-stu-id="9e4b6-124">Import Electronic reporting configurations</span></span>](../analytics/electronic-reporting-import-ger-configurations.md)
-- [<span data-ttu-id="9e4b6-125">Funktionalitäten zum Generieren, Veröffentlichen und Drucken von Dokumenten in lokalen Bereitstellungen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-125">Document generation, publishing, and printing capabilities in on-premises deployments</span></span>](../analytics/printing-capabilities-on-premises.md)
-- [<span data-ttu-id="9e4b6-126">Einen Reverseproxy für Ihre lokale Umgebung konfigurieren</span><span class="sxs-lookup"><span data-stu-id="9e4b6-126">Configure reverse proxy for your on-premises environment</span></span>](onprem-reverseproxy.md)
-- [<span data-ttu-id="9e4b6-127">Technischen Support einrichten</span><span class="sxs-lookup"><span data-stu-id="9e4b6-127">Set up technical support</span></span>](../lifecycle-services/support-experience.md)
-- [<span data-ttu-id="9e4b6-128">Fehlersuche für die Internetverbindung von Clients</span><span class="sxs-lookup"><span data-stu-id="9e4b6-128">Client Internet connection troubleshooting</span></span>](../user-interface/client-disconnected.md)
-- [<span data-ttu-id="9e4b6-129">Updates auf eine lokale Bereitstellung anwenden</span><span class="sxs-lookup"><span data-stu-id="9e4b6-129">Apply updates to an on-premises deployment</span></span>](apply-updates-on-premises.md)
-- [<span data-ttu-id="9e4b6-130">Lokale Bereitstellung erneut bereitstellen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-130">Redeploy an on-premises deployment</span></span>](redeploy-on-prem.md)
+## <a name="work-in-your-on-premises-deployment"></a><span data-ttu-id="94ccf-121">In Ihrer lokalen Bereitstellung arbeiten</span><span class="sxs-lookup"><span data-stu-id="94ccf-121">Work in your on-premises deployment</span></span>
+- [<span data-ttu-id="94ccf-122">Dokumentverwaltung konfigurieren</span><span class="sxs-lookup"><span data-stu-id="94ccf-122">Configure document management</span></span>](../../fin-and-ops/organization-administration/configure-document-management.md)
+- [<span data-ttu-id="94ccf-123">Elektronische Berichtskonfigurationen (ER) importieren</span><span class="sxs-lookup"><span data-stu-id="94ccf-123">Import Electronic reporting (ER) configurations</span></span>](../analytics/electronic-reporting-import-ger-configurations.md)
+- [<span data-ttu-id="94ccf-124">Generieren, Veröffentlichen und Drucken von Dokumenten in lokalen Bereitstellungen</span><span class="sxs-lookup"><span data-stu-id="94ccf-124">Document generation, publishing, and printing in on-premises deployments</span></span>](../analytics/printing-capabilities-on-premises.md)
+- [<span data-ttu-id="94ccf-125">Konfigurieren von Reverseproxys für lokale Umgebungen</span><span class="sxs-lookup"><span data-stu-id="94ccf-125">Configure reverse proxies for on-premises environments</span></span>](onprem-reverseproxy.md)
+- [<span data-ttu-id="94ccf-126">Einrichten des technischen Support für Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="94ccf-126">Set up technical support for Finance and Operations</span></span>](../lifecycle-services/support-experience.md)
+- [<span data-ttu-id="94ccf-127">Clientinternetverbindung</span><span class="sxs-lookup"><span data-stu-id="94ccf-127">Client internet connectivity</span></span>](../user-interface/client-disconnected.md)
+- [<span data-ttu-id="94ccf-128">Updates auf eine lokale Bereitstellungen anwenden</span><span class="sxs-lookup"><span data-stu-id="94ccf-128">Apply updates to on-premises deployments</span></span>](apply-updates-on-premises.md)
+- [<span data-ttu-id="94ccf-129">Lokale Umgebungen neu bereitstellen</span><span class="sxs-lookup"><span data-stu-id="94ccf-129">Redeploy on-premises environments</span></span>](redeploy-on-prem.md)
 
-## <a name="other-resources"></a><span data-ttu-id="9e4b6-131">Weitere Ressourcen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-131">Other resources</span></span>
-- [<span data-ttu-id="9e4b6-132">Probleme bei Dynamics 365 for Finance and Operations (lokal) behandeln</span><span class="sxs-lookup"><span data-stu-id="9e4b6-132">Troubleshoot Dynamics 365 for Finance and Operations on-premises</span></span>](troubleshoot-on-prem.md)
-- [<span data-ttu-id="9e4b6-133">On-premises-Diagnosen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-133">On-premises diagnostics</span></span>](on-premises-diagnostics.md)
-- [<span data-ttu-id="9e4b6-134">Funktionen, die in lokalen Bereitstellungen nicht implementiert sind</span><span class="sxs-lookup"><span data-stu-id="9e4b6-134">Features not implemented in on-premises deployments</span></span>](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
-- [<span data-ttu-id="9e4b6-135">Veraltete Funktionen</span><span class="sxs-lookup"><span data-stu-id="9e4b6-135">Deprecated features</span></span>](../migration-upgrade/deprecated-features.md)
-- [<span data-ttu-id="9e4b6-136">Lokale Software-Lebenszyklusrichtlinien- und -Freigaben</span><span class="sxs-lookup"><span data-stu-id="9e4b6-136">Software lifecycle policy and on-premises releases</span></span>](../migration-upgrade/on-prem-version-update-policy.md)
+## <a name="retail"></a><span data-ttu-id="94ccf-130">Retail</span><span class="sxs-lookup"><span data-stu-id="94ccf-130">Retail</span></span>
+- [<span data-ttu-id="94ccf-131">In lokalen Bereitstellungen verfügbare Einzelhandelsfunktionen</span><span class="sxs-lookup"><span data-stu-id="94ccf-131">Retail capabilities that are available in on-premises deployments</span></span>](../../retail/retail-onprem.md)
+- [<span data-ttu-id="94ccf-132">Installationsschritte für Retail Channel Komponenten in einer lokalen Umgebung</span><span class="sxs-lookup"><span data-stu-id="94ccf-132">Installation steps for Retail channel components in an on-premises envionrment</span></span>](deploy-retail-onprem.md)
+- [<span data-ttu-id="94ccf-133">Konfigurieren, Installieren und aktivieren Sie Retail Modern (MPOS)</span><span class="sxs-lookup"><span data-stu-id="94ccf-133">Configure, install, and activate Retail Modern POS (MPOS)</span></span>](../../retail/retail-modern-pos-device-activation.md)
+- [<span data-ttu-id="94ccf-134">Konfigurieren und Installieren von Retail Store Scale Unit</span><span class="sxs-lookup"><span data-stu-id="94ccf-134">Configure and install Retail Store Scale Unit</span></span>](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+
+
+
+## <a name="other-resources"></a><span data-ttu-id="94ccf-135">Weitere Ressourcen</span><span class="sxs-lookup"><span data-stu-id="94ccf-135">Other resources</span></span>
+- [<span data-ttu-id="94ccf-136">Problembehandlung lokaler Bereitstellungen</span><span class="sxs-lookup"><span data-stu-id="94ccf-136">Troubleshoot on-premises deployments</span></span>](troubleshoot-on-prem.md)
+- [<span data-ttu-id="94ccf-137">On-premises-Diagnosen</span><span class="sxs-lookup"><span data-stu-id="94ccf-137">On-premises diagnostics</span></span>](on-premises-diagnostics.md)
+- [<span data-ttu-id="94ccf-138">Funktionen, die in lokalen Bereitstellungen nicht implementiert sind</span><span class="sxs-lookup"><span data-stu-id="94ccf-138">Features that aren't implemented in on-premises deployments</span></span>](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
+- [<span data-ttu-id="94ccf-139">Entfernte oder veraltete Funktionen</span><span class="sxs-lookup"><span data-stu-id="94ccf-139">Removed or deprecated features</span></span>](../migration-upgrade/deprecated-features.md)
+- [<span data-ttu-id="94ccf-140">Lokale Software-Lebenszyklusrichtlinien- und -Freigaben</span><span class="sxs-lookup"><span data-stu-id="94ccf-140">Software lifecycle policy and on-premises releases</span></span>](../migration-upgrade/on-prem-version-update-policy.md)
  
 

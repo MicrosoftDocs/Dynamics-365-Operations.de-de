@@ -1,0 +1,137 @@
+---
+title: Personalbeschaffung mittels LinkedIn Recruiter
+description: "Dieses Thema enthält Informationen zur Verwendung von Machine Learning, um Stellen- und Kandidaten-Empfehlungen zu erhalten."
+author: josaw
+manager: AnnBe
+ms.date: 10/15/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+ms.search.form: 
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Talent, Core
+ms.custom: 7521
+ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
+ms.search.region: Global
+ms.search.industry: 
+ms.author: josaw
+ms.search.validFrom: 2018-10-15
+ms.dyn365.ops.version: Talent October 2018 update
+ms.translationtype: HT
+ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
+ms.openlocfilehash: 106103e2c3d8f3d89aac5140174e5794da22536f
+ms.contentlocale: de-de
+ms.lasthandoff: 10/24/2018
+
+---
+
+# <a name="sourcing-with-linkedin-recruiter"></a><span data-ttu-id="5e174-103">Personalbeschaffung mittels LinkedIn Recruiter</span><span class="sxs-lookup"><span data-stu-id="5e174-103">Sourcing with LinkedIn Recruiter</span></span>
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="5e174-104">LinkedIn ist die weltgrößte Talentdatenbank und häufig das Hauptsystem, dass Personalbeschaffer verwenden, um neue Kandidaten zu suchen und mit ihnen zu kommunizieren, um zu besetzende Stellen zu füllen.</span><span class="sxs-lookup"><span data-stu-id="5e174-104">LinkedIn is the world’s largest talent database and often the primary system that recruiters use to find, communicate with, and source candidates for the jobs that recruiters are looking to fill.</span></span> <span data-ttu-id="5e174-105">LinkedIn Recruiter-Interaktion mit Dynamics 365 for Talent: Attract vereinfacht es Benutzern anzustellen und die Daten zwischen zwei Systemen synchron zu halten.</span><span class="sxs-lookup"><span data-stu-id="5e174-105">LinkedIn Recruiter integration with Dynamics 365 for Talent: Attract makes it easier for users to hire, and to keep the data in sync between the two systems.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="5e174-106">Sie benötigen Lizenzen für umfassende Add-On für Neueinstellungen und LinkedIn Recruiter, um LinkedIn Recruiter-Integration mit Attract verwenden zu können.</span><span class="sxs-lookup"><span data-stu-id="5e174-106">You need the Comprehensive hiring add-on and LinkedIn Recruiter seats to be able to use LinkedIn Recruiter integration with Attract.</span></span>
+
+## <a name="set-up-linkedin-recruiter-with-attract"></a><span data-ttu-id="5e174-107">LinkedIn Recruiter bei Attract einrichten</span><span class="sxs-lookup"><span data-stu-id="5e174-107">Set up LinkedIn Recruiter with Attract</span></span> 
+
+<span data-ttu-id="5e174-108">Bevor Sie die LinkedIn Recruiter-Funktionen verwenden können, müssen Sie Zugriff auf Vertrags- oder Firmenebene bei Ihrer Attract-Instanz konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="5e174-108">Before you can use the LinkedIn Recruiter capabilities, you must configure contract-level or company-level access with your Attract instance.</span></span> <span data-ttu-id="5e174-109">Zum Abschluss des Konfigurationsvorgangs müssen Sie mit dem Benutzer zusammenarbeiten, der ein Administrator auf Ihrem LinkedIn Recruiter-Vertrag ist.</span><span class="sxs-lookup"><span data-stu-id="5e174-109">To complete the configuration process, you must work with the user who is an Admin on your LinkedIn Recruiter contract.</span></span> <span data-ttu-id="5e174-110">Führen Sie die folgenden Schritte aus, um LinkedIn Recruiter für Attract zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="5e174-110">Complete the following steps to configure LinkedIn Recruiter with Attract.</span></span>
+
+1.  <span data-ttu-id="5e174-111">Melden Sie sich bei Attract als Administrator an und wechseln Sie zu **Administratoreinstellungen**.</span><span class="sxs-lookup"><span data-stu-id="5e174-111">Sign in to Attract as an Admin and go to **Admin Settings**.</span></span>
+
+2.  <span data-ttu-id="5e174-112">Wählen Sie im linken Bereich die Registerkarte **LinkedIn-Integration** aus.</span><span class="sxs-lookup"><span data-stu-id="5e174-112">On the left pane, click the **LinkedIn Integration** tab.</span></span>
+
+<span data-ttu-id="5e174-113">[![Attract-Administratoransicht, um die LinkedIn Recruiter-Integration zu starten](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)</span><span class="sxs-lookup"><span data-stu-id="5e174-113">[![Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)</span></span>
+
+3.  <span data-ttu-id="5e174-114">Klicken Sie auf **Verbinden**, um die Einrichtung zu starten und durch den LinkedIn-Anmeldungsprozess geführt zu werden.</span><span class="sxs-lookup"><span data-stu-id="5e174-114">Click **Connect** to start the setup and be guided through the LinkedIn sign-in process.</span></span>
+
+4.  <span data-ttu-id="5e174-115">Wenn Sie über mehrere LinkedIn-Vertragslizenzen verfügen, wählen Sie den Vertrag aus, den Sie mit dem Attract-System verbinden möchten.</span><span class="sxs-lookup"><span data-stu-id="5e174-115">If you have seats on multiple LinkedIn contracts, select the contract that you would like to connect to the Attract system.</span></span> <span data-ttu-id="5e174-116">Wenn Sie über nur eine LinkedIn-Vertragslizenz verfügen, ist dieser Schritt nicht erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5e174-116">If you have a seat on only one LinkedIn contract, this step will not be needed.</span></span>
+
+5.  <span data-ttu-id="5e174-117">Das LinkedIn-Widget lädt jetzt Ihre Administratoreinstellungen mit der Liste der angezeigten Integrationen.</span><span class="sxs-lookup"><span data-stu-id="5e174-117">The LinkedIn widget will now load in your Admin settings with the list of integrations shown.</span></span> <span data-ttu-id="5e174-118">Klicken Sie unter **Recruiter System Connect** auf **Anfordern**.</span><span class="sxs-lookup"><span data-stu-id="5e174-118">Under **Recruiter System connect**, click **Request**.</span></span>
+
+<span data-ttu-id="5e174-119">[![Attract-Administratoransicht, um die LinkedIn Recruiter-Integration anzufordern](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)</span><span class="sxs-lookup"><span data-stu-id="5e174-119">[![Attract Admin view to Request LinkedIn Recruiter integration](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)</span></span>
+
+6.  <span data-ttu-id="5e174-120">Nachdem die Integration von Attract angefordert wurde, wird es als **Bereit für Partner** angezeigt und kann über die **Recruiter-Administratoreinstellungen** aktiviert werden.</span><span class="sxs-lookup"><span data-stu-id="5e174-120">After the integration is requested from Attract, it will show as **Partner ready** and is ready to be turned on from **Recruiter Admin settings**.</span></span> <span data-ttu-id="5e174-121">Wenn **Partner benachrichtigen** auf dieser Seite angezeigt wird, warten Sie eine einige Sekunden, klicken Sie auf **Partner benachrichtigen** und aktualisieren Sie anschließend die Seite.</span><span class="sxs-lookup"><span data-stu-id="5e174-121">If you see **Notify partner** on this page, wait a few seconds, click **Notify partner**, and then refresh the page.</span></span> <span data-ttu-id="5e174-122">Es sollte jetzt als **Bereit für Partner** angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="5e174-122">It should now show as **Partner ready**.</span></span>
+
+<span data-ttu-id="5e174-123">[![Attract-Administratoransicht, um die Attract-Seite der abgeschlossenen mit Anforderungen anzugeben](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)</span><span class="sxs-lookup"><span data-stu-id="5e174-123">[![Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)</span></span>
+
+<span data-ttu-id="5e174-124">Um den nächsten Schritt durchführen, müssen Sie über das Administratorrecht für Ihren LinkedIn Recruiter-Vertrag verfügen.</span><span class="sxs-lookup"><span data-stu-id="5e174-124">To complete the next step, you need to have an Admin privilege on your LinkedIn Recruiter Contract.</span></span>
+
+7.  <span data-ttu-id="5e174-125">Melden Sie sich bei LinkedIn mithilfe des Administratorkontos an, und wechseln Sie oben rechts zu LinkedIn Recruiter.</span><span class="sxs-lookup"><span data-stu-id="5e174-125">Sign in to LinkedIn using the Admin account and go to LinkedIn Recruiter on the top right.</span></span> 
+
+8. <span data-ttu-id="5e174-126">Klicken Sie im Menü **Mehr** am oberen Rand des Bildschirms auf **Administratoreinstellungen** und dann auf die Registerkarte **ATS**.</span><span class="sxs-lookup"><span data-stu-id="5e174-126">On the **More** menu at the top of the screen, click **Admin Settings**, and then click the **ATS** Tab.</span></span>
+
+<span data-ttu-id="5e174-127">Das Attract-System wird ein mit paar Optionen aufgeführt, die aktiviert werden können.</span><span class="sxs-lookup"><span data-stu-id="5e174-127">The Attract system will be listed with a couple of options that can be turned on.</span></span>
+
+9. <span data-ttu-id="5e174-128">Wenn Sie nur 1-Click Export für den **In-ATS-Anzeige** und das **In-ATS-Widget** aktivieren möchten, wählen Sie **Zugriff auf Firmenebene** aus.</span><span class="sxs-lookup"><span data-stu-id="5e174-128">If you want to enable only 1-Click export for the **In-ATS indicator** and the **In-ATS Profile Widget**, select **Company-level access**.</span></span> <span data-ttu-id="5e174-129">Wenn Sie alle Funktionen bei Zugriff auf Firmenebene und den InMail-Verlauf, Hinweisverlauf und den Zugriff auf das InMail-Kurzprofil aktivieren möchten, wählen Sie **Zugriff auf Vertragsebene** aus.</span><span class="sxs-lookup"><span data-stu-id="5e174-129">If you want to enable all of Company-level access features plus InMail history, Notes history, and the InMail stub profile access, select **Contract-level access**.</span></span>
+
+10. <span data-ttu-id="5e174-130">Aktivieren Sie die gewünschte Zugriffsebene in den **Administrator-ATS**-Einstellungen von LinkedIn Recruiter.</span><span class="sxs-lookup"><span data-stu-id="5e174-130">Turn on the desired access level from your LinkedIn Recruiter **Admin-ATS** settings.</span></span>
+
+<span data-ttu-id="5e174-131">[![Einschalten der Attract-Integration aus der LinkedIn Recruiter-Administratoransicht](./media/EnableRSC.png)](./media/EnableRSC.png)</span><span class="sxs-lookup"><span data-stu-id="5e174-131">[![Turn on Attract integration from LinkedIn Recruiter Admin view](./media/EnableRSC.png)](./media/EnableRSC.png)</span></span>
+
+12. <span data-ttu-id="5e174-132">Kehren Sie als ein AttractAdmin zu den Attract-Administratoreinstellungen zurück und wählen Sie die Registerkarte **LinkedIn-Integration** aus. Sie sollten sehen, wie das LinkedIn-Widget geladen wird und **Aktiviert** sollte mit der ausgewählten Zugriffsebene eingeschaltet sein.</span><span class="sxs-lookup"><span data-stu-id="5e174-132">Go back to Attract Admin Settings as an AttractAdmin and select the **LinkedIn integration** tab. You should now see the LinkedIn widget load showing **Enabled** with the selected access level turned on.</span></span>
+
+<span data-ttu-id="5e174-133">[![LinkedIn Recruiter-Integration abgeschlossen](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)</span><span class="sxs-lookup"><span data-stu-id="5e174-133">[![LinkedIn Recruiter integration complete](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)</span></span>
+
+## <a name="using-linkedin-recruiter-capabilities"></a><span data-ttu-id="5e174-134">Verwenden der LinkedIn Recruiter-Funktionen</span><span class="sxs-lookup"><span data-stu-id="5e174-134">Using LinkedIn Recruiter capabilities</span></span>
+
+<span data-ttu-id="5e174-135">Nachdem die LinkedIn Recruiter-Funktionen vom Attract-Administrator aktiviert wurden, ist es beriet für Zugriff durch Einstellungsmanager und Personalbeschaffer.</span><span class="sxs-lookup"><span data-stu-id="5e174-135">After LinkedIn Recruiter capabilities has been enabled by the Attract Admin it is available for hiring managers and recruiters to access.</span></span> <span data-ttu-id="5e174-136">Um diese Funktionen zu verwenden, verbinden Sie Ihr LinkedIn-Konto unter **Benutzereinstellungen**.</span><span class="sxs-lookup"><span data-stu-id="5e174-136">To use these capabilities, connect your LinkedIn account under **User Settings**.</span></span> <span data-ttu-id="5e174-137">Einige Funktionen sind verfügbar, nachdem die Administrator- und Benutzereinstellungen verbunden wurden.</span><span class="sxs-lookup"><span data-stu-id="5e174-137">Several capabilities will be available after both the Admin and User settings have been connected.</span></span>
+
+### <a name="in-ats-profile-widget"></a><span data-ttu-id="5e174-138">In-ATS-Profil-Widget</span><span class="sxs-lookup"><span data-stu-id="5e174-138">In-ATS profile widget</span></span>
+
+<span data-ttu-id="5e174-139">Sie können das LinkedIn-Profil des Kandidaten in Attract anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5e174-139">You can view the candidate’s LinkedIn profile in Attract.</span></span> <span data-ttu-id="5e174-140">Das LinkedIn-Widget zeigt das Kandidatenprofil an, wenn die ATS-Informationen mit den LinkedIn-Informationen seiner Benutzer übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="5e174-140">The LinkedIn widget will display the candidate profile when the ATS information matches the LinkedIn information of its users.</span></span>
+
+<span data-ttu-id="5e174-141">Um ein Profil anzuzeigen, navigieren Sie entweder von einer Stelle oder einem Talentpool zum Kandidatenprofil.</span><span class="sxs-lookup"><span data-stu-id="5e174-141">To view a profile, go the candidate profile either from a job or talent pool.</span></span> <span data-ttu-id="5e174-142">Im Kandidatenprofil wählen Sie die Registerkarte **LinkedIn** aus und das Profil-Widget wird geladen.</span><span class="sxs-lookup"><span data-stu-id="5e174-142">In the candidate profile, select the **LinkedIn** tab and the profile widget will load.</span></span> <span data-ttu-id="5e174-143">Verwenden des Profil-Widgets, angeben, ob dies die richtige Übereinstimmung ist.</span><span class="sxs-lookup"><span data-stu-id="5e174-143">Using the profile widget, indicate if this is the correct match.</span></span> <span data-ttu-id="5e174-144">Wenn nicht, suchen Sie die korrekte Person.</span><span class="sxs-lookup"><span data-stu-id="5e174-144">If it is not, find the correct person.</span></span> <span data-ttu-id="5e174-145">Sie können den Kandidaten auch in Ihren LinkedIn Recruiter-Projekten von dieser Seite speichern.</span><span class="sxs-lookup"><span data-stu-id="5e174-145">You can also save the candidate to your LinkedIn Recruiter projects from this page.</span></span>
+
+### <a name="1-click-export"></a><span data-ttu-id="5e174-146">1-Click-Export</span><span class="sxs-lookup"><span data-stu-id="5e174-146">1-click export</span></span> 
+
+<span data-ttu-id="5e174-147">Bei der Beschaffung von Kandidaten in LinkedIn können Sie den Kandidaten per 1-Click-Export zu der Stelle exportieren, die derzeit geöffnet ist.</span><span class="sxs-lookup"><span data-stu-id="5e174-147">While sourcing candidates in LinkedIn, you can 1-click export the candidate to the jobs that you currently have open.</span></span> <span data-ttu-id="5e174-148">Führen Sie für einen 1-Click-Export 1 folgende Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="5e174-148">Complete the following steps for a 1-click export.</span></span> <span data-ttu-id="5e174-149">Bevor Sie diese Schritte ausführen, sollten Sie sicherstellen, dass Ihnen die Rolle des Einstellungsmanagers oder Personalbeschaffers für die Stelle zugewiesen wurde und dass die Stelle über eine Phase **Interessent** verfügt.</span><span class="sxs-lookup"><span data-stu-id="5e174-149">Before you complete these steps, verify that you are a assigned the role of Hiring manager or Recruiter for the job and that the job has a **Prospect** stage.</span></span>
+
+1.  <span data-ttu-id="5e174-150">Erstellen Sie die Stelle, weisen Sie die geeigneten Rollen zu und aktivieren Sie die Stelle.</span><span class="sxs-lookup"><span data-stu-id="5e174-150">Create the job, assign the appropriate roles, and activate the job.</span></span>
+
+2.  <span data-ttu-id="5e174-151">Wenn die Stelle aktiviert wurde, navigieren Sie zu LinkedIn Recruiter.</span><span class="sxs-lookup"><span data-stu-id="5e174-151">When the job is activated, navigate to LinkedIn Recruiter.</span></span>
+
+3.  <span data-ttu-id="5e174-152">Suchen Sie den Kandidaten, den Sie sich wünschen und rufen Sie sein Profil auf.</span><span class="sxs-lookup"><span data-stu-id="5e174-152">Find the candidate that you are looking for and go to their profile.</span></span>
+
+4.  <span data-ttu-id="5e174-153">Mit dem Stellensuchfeld in der Kontaktkarte können Sie nach Titel oder der in Attract aktivierten Stellen-ID nach der Stelle suchen.</span><span class="sxs-lookup"><span data-stu-id="5e174-153">Using the job search box in the contact card, find the job using the title or the Job ID that was activated in Attract.</span></span> <span data-ttu-id="5e174-154">Wenn Sie nicht die Stelle nicht finden, klicken Sie auf **ATS ändern**, um die korrekte Attract-Instanz zu suchen.</span><span class="sxs-lookup"><span data-stu-id="5e174-154">If you don’t find the job, click **Change ATS** to find the correct Attract instance.</span></span>
+
+5. <span data-ttu-id="5e174-155">Nachdem die Stelle ausgewählt ist, klicken Sie auf **Exportieren**.</span><span class="sxs-lookup"><span data-stu-id="5e174-155">After the job is selected, click **Export**.</span></span> <span data-ttu-id="5e174-156">Der Kandidat wird jetzt von Attract abgerufen.</span><span class="sxs-lookup"><span data-stu-id="5e174-156">The candidate is now fetched by Attract.</span></span>
+
+6.  <span data-ttu-id="5e174-157">Wechseln Sie zu Attract und öffnen Sie die jeweiligen Stelle.</span><span class="sxs-lookup"><span data-stu-id="5e174-157">Go to Attract and open the respective job.</span></span> <span data-ttu-id="5e174-158">Sie finden den Kandidaten, den Sie soeben exportiert haben, in der **Interessent**-Phase der Stelle.</span><span class="sxs-lookup"><span data-stu-id="5e174-158">You will find the candidate that you just exported in the **Prospect** stage of the job.</span></span>
+
+### <a name="in-ats-indicator"></a><span data-ttu-id="5e174-159">In-ATS-Anzeige</span><span class="sxs-lookup"><span data-stu-id="5e174-159">In-ATS indicator</span></span> 
+
+<span data-ttu-id="5e174-160">Mit LinkedIn Recruiter können Sie nachverfolgen, ob sich ein Kandidat auf anderen Stelle in Ihrem Unternehmen beworben hat, nachsehen, in welcher Phase der Bewerbung er sich befindet und die Rückmeldung und Kommentare von Attract in LinkedIn Recruiter anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5e174-160">Using LinkedIn recruiter, you can track whether a candidate has applied to other jobs in your organization, look at where they are in different stages of job applications, and view the feedback and comments from Attract in LinkedIn Recruiter.</span></span>
+
+1.  <span data-ttu-id="5e174-161">Öffnen Sie LinkedIn Recruiter und suchen Sie das Kandidatenprofil, das Sie sich wünschen.</span><span class="sxs-lookup"><span data-stu-id="5e174-161">Open LinkedIn Recruiter and locate the candidate profile that you are looking for.</span></span>
+
+2.  <span data-ttu-id="5e174-162">Scrollen Sie nach unten, um den Bereich **In-ATS** im Profil des Kandidaten anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5e174-162">Scroll down to view the **In-ATS** section on the candidate’s profile.</span></span>
+
+3.  <span data-ttu-id="5e174-163">Sie können dieses Widget verwenden, um in der LinkedIn Recruiter-Ansicht alle Informationen zum Kandidaten anzuzeigen, die in Attract vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="5e174-163">You can use this widget to view all of the information about the candidate that’s present in Attract from within the LinkedIn Recruiter view.</span></span>
+
+4.  <span data-ttu-id="5e174-164">Wählen Sie die Registerkarte **Stellen und Status** aus, um Stellen anzuzeigen, von denen sie Bestandteil sind, und wie sie bei jeder Stelle abschneiden.</span><span class="sxs-lookup"><span data-stu-id="5e174-164">Select the **Jobs & Statuses** tab to see jobs they are part of, the latest status, and how they have been moving against each job.</span></span>
+
+5.  <span data-ttu-id="5e174-165">Wählen Sie die Registerkarte **Feedback zum Gespräch** aus, um Feedback anzuzeigen, das die Gesprächsleiter in Attract übermittelt haben.</span><span class="sxs-lookup"><span data-stu-id="5e174-165">Select the **Interview Feedback** tab to see feedback that the interviewers have submitted in Attract.</span></span>
+
+6.  <span data-ttu-id="5e174-166">Wählen Sie die Registerkarte **Hinweise** aus, um Hinweise anzuzeigen, die für den Bewerber in Attract hinterlassen wurden.</span><span class="sxs-lookup"><span data-stu-id="5e174-166">Select the **Notes** tab to see notes that have been captured for this applicant in Attract.</span></span>
+
+### <a name="inmail-history"></a><span data-ttu-id="5e174-167">InMail-Verlauf</span><span class="sxs-lookup"><span data-stu-id="5e174-167">InMail history</span></span>
+
+<span data-ttu-id="5e174-168">Der LinkedIns InMail-Verlauf ist bei Zugriff auf Vertragsebene bei LinkedIn Recruiter verfügbar.</span><span class="sxs-lookup"><span data-stu-id="5e174-168">The LinkedIn InMail history is available with contract-level access with LinkedIn Recruiter.</span></span> <span data-ttu-id="5e174-169">Wenn er aktiviert ist, können Sie Ihren gesamten InMail-Verlauf mit dem Kandidaten anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5e174-169">When it is enabled, you can view your entire InMail history with the candidate.</span></span> <span data-ttu-id="5e174-170">Sie können außerdem sehen, wer sonst aus Ihrer Organisation mit dem Kandidaten per InMail korrespondiert hat. Allerdings werden diese Nachrichten nicht angezeigt.</span><span class="sxs-lookup"><span data-stu-id="5e174-170">You can also see who else from your organization has exchanged InMail with the candidate, however you can't view the messages between them.</span></span>
+
+<span data-ttu-id="5e174-171">Um den InMail-Verlauf anzuzeigen, navigieren Sie zum Profil des Kandidaten, zur Registerkarte **LinkedIn** und scrollen ans Ende der Seite, um den Verlauf anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="5e174-171">To view InMail history, go to a candidate’s profile, go to the **LinkedIn** tab and scroll to the bottom of the page to view the history.</span></span> <span data-ttu-id="5e174-172">Sie können den InMail-Verlauf nur anzeigen, wenn der Kandidat auf Ihre Anforderung reagiert hat und sein Profil in LinkedIn für Sie freigibt.</span><span class="sxs-lookup"><span data-stu-id="5e174-172">You can view the InMail history only if the candidate has responded to your request and chosen to share their profile with you in LinkedIn.</span></span> <span data-ttu-id="5e174-173">Die Nachrichten aus InMail werden alle paar Stunden mit Attract synchronisiert.</span><span class="sxs-lookup"><span data-stu-id="5e174-173">The messages from InMail sync with Attract every couple of hours.</span></span>
+
+### <a name="notes-history"></a><span data-ttu-id="5e174-174">Hinweisverlauf</span><span class="sxs-lookup"><span data-stu-id="5e174-174">Notes history</span></span> 
+
+<span data-ttu-id="5e174-175">Der LinkedIns Hinweis-Verlauf ist bei Zugriff auf Vertragsebene bei LinkedIn Recruiter verfügbar.</span><span class="sxs-lookup"><span data-stu-id="5e174-175">The LinkedIn notes history is available with contract-level access with LinkedIn Recruiter.</span></span> <span data-ttu-id="5e174-176">Wenn er aktiviert ist, können Sie die Hinweise anzeigen, die von verschiedenen Personalbeschaffern aus Ihrer Organisation zum Kandidaten hinterlassen wurden.</span><span class="sxs-lookup"><span data-stu-id="5e174-176">When it is enabled, you can view the notes that have been captured about the candidate by different recruiters from your organization.</span></span>
+
+<span data-ttu-id="5e174-177">Um den Hinweis-Verlauf anzuzeigen, navigieren Sie zum Profil des Kandidaten, zur Registerkarte **LinkedIn** und scrollen ans Ende der Seite, um den Verlauf anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="5e174-177">To view Notes history, go to a candidate’s profile, go to the **LinkedIn** tab and scroll to the bottom of the page to view the history.</span></span> <span data-ttu-id="5e174-178">Sie können alle Hinweise zum Kandidaten von LinkedIn Recruiter anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5e174-178">You can view all the notes about the candidate from LinkedIn Recruiter.</span></span>
+
+### <a name="inmail-stub-profile"></a><span data-ttu-id="5e174-179">InMail-Kurzprofil</span><span class="sxs-lookup"><span data-stu-id="5e174-179">InMail stub profile</span></span>
+
+<span data-ttu-id="5e174-180">Das InMail-Kurzprofil ist bei Zugriff auf Vertragsebene bei LinkedIn Recruiter verfügbar.</span><span class="sxs-lookup"><span data-stu-id="5e174-180">The InMail stub profile is available with contract-level access with LinkedIn Recruiter.</span></span> <span data-ttu-id="5e174-181">Wenn Kandidaten der Freigabe ihres LinkedIn-Profilen für einen Benutzer in Ihrem Unternehmen zustimmen, können Sie die Kandidaten in Attract verfolgen und für jeden Kandidaten wird ein neuer Kandidatendatensatz erstellt.</span><span class="sxs-lookup"><span data-stu-id="5e174-181">If candidates agree to share their LinkedIn profiles with any user in your organization, you can track the candidates in Attract and a new candidate record will be created for each candidate.</span></span>
+
+<span data-ttu-id="5e174-182">Um die Kandidatenliste anzuzeigen, navigieren Sie zu **Talentpools**, um einen vom System erstellten LinkedIn-Talentpool anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="5e174-182">To view the list of candidates, go to **Talent pools** to see a system-created LinkedIn talent pool.</span></span> <span data-ttu-id="5e174-183">Dieser Talentpool enthält die Liste der Kandidaten und deren Kurzprofile, wie Sie von LinkedIn empfangen wurden. Es werden der Vorname und Nachname des Kandidaten angezeigt.</span><span class="sxs-lookup"><span data-stu-id="5e174-183">This talent pool contains the list candidates and their stub profiles as received from LinkedIn, showing the candidate's first name and last name.</span></span> <span data-ttu-id="5e174-184">Die E-Mail-ID des Kandidaten wird angezeigt, wenn sich der Kandidat für die Freigabe seiner E-Mail-Adresse entschieden hat.</span><span class="sxs-lookup"><span data-stu-id="5e174-184">The candidate’s email ID will be displayed if the candidate had chosen to share their email address.</span></span>
+
