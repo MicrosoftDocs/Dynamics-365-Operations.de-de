@@ -50,11 +50,12 @@ Die folgenden Workflowtypen stehen für die Beschaffung zur Verfügung.
 | Workflow für Antrag zum Hinzufügen eines Kreditors  | Erstellen Sie Prüfungs- und Genehmigungsworkflows zum Hinzufügen neuer Kreditoren über Kreditorenanforderungen. |
 
 ## <a name="creating-a-workflow"></a>Erstellen eines Workflows
+
 Um einen Workflow zu erstellen, wechseln Sie zu Beschaffung &gt; Einrichtung &gt; Beschaffungsworkflows und erstellen Sie einen neuen Workflow, indem sie den Workflowtyp auswählen, den Sie erstellen möchten.  
 
 Auf der Workflowarbeitsfläche können Sie Workflowelemente in den Designer ziehen und die Elemente in einen Fluss verknüpfen. Die Workflowelemente sollten konfiguriert werden. Für Genehmigungs- und Aufgabenworkflowelemente können Sie konfigurieren, welcher Teilnehmer Aktivitäten ausführen soll.
-Teilnehmertypen
-----------------------
+
+## <a name="types-of-participants"></a>Teilnehmertypen
 
 Sie können folgenden Teilnehmergruppen einen Genehmigungsschritt zuweisen.
 
@@ -68,13 +69,12 @@ Sie können folgenden Teilnehmergruppen einen Genehmigungsschritt zuweisen.
 
 
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Bestellanforderungsworkflow](purchase-requisitions-workflow.md)
+- [Bestellanforderungsworkflow](purchase-requisitions-workflow.md)
 
-[Onboarding von Kreditoren](vendor-onboarding.md)
+- [Onboarding von Kreditoren](vendor-onboarding.md)
 
 

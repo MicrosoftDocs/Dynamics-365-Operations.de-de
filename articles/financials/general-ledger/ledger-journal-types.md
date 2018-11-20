@@ -1,9 +1,9 @@
 ---
-title: Sachkontoerfassungstypen
-description: "In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Seite **Erfassungsnamen**, um Erfassungen einzurichten, die Sie überall in Microsoft Dynamics 365 for Finance and Operations verwenden können."
+title: Sachkonto-Erfassungstypen
+description: "In diesem Thema werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9f8fc40f199b83a9e0cb36ce905163c3ed547057
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
 ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Seite **Erfassungsnamen**, um Erfassungen einzurichten, die Sie überall in Microsoft Dynamics 365 for Finance and Operations verwenden können.
+In diesem Thema werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Seite **Erfassungsnamen**, um Erfassungen einzurichten, die Sie überall in Microsoft Dynamics 365 for Finance and Operations verwenden können.
 
 | Journaltyp                      | Kostenträger                       | Transaktionen auf dieser Seite eingeben                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
@@ -53,7 +53,8 @@ In diesem Artikel werden die Erfassungstypen beschrieben, die Sie für Finanzerf
 | Lohnzahlung              | Geben Sie Zahlungen basierend auf Lohnlohnauszügen aus. Sie können Buchungen in dieser Erfassung nicht manuell eingeben. Sie müssen Lohnauszüge generieren und dann diese Aufstellungen für Zahlung übermitteln.                                                                                                                                                              |                                                                |
 | Periodisch                          | Erstellen der periodischen Buchungen für die periodische Erfassung.                                                                                                                                                                                                                                                                                                      | Periodische Erfassungen                                              |
 | Anlagen buchen                 | Ausführung von Anlagenbuchungen.                                                                                                                                                                                                                                                                                                                              | Feststehende Inhaltsteile                                                   |
-| Projekt - Ausgaben                | Erstellen von Projektausgabenbuchungen.                                                                                                                                                                                                                                                                                                                        | Ausgaben                                                        |
+| Projekt - Ausgaben                | Erstellen von Projektausgabenbuchungen.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
+| Berichtswährungsregulierung     | Erstellen von Regulierungen in der Berichtswährung für Salden aus Sachkonten.               | Erfassungen der Berichtswährungsregulierung                         |
 | Statistische Buchungen            | Erstellen statistischer Buchungen.                                                                                                                                                                                                                                                                                                                            |                                                                |
 | Kreditoren-Bankrimesse            | Erstellen einer Solawechsel-Rimessedatei, die an die Bank Ihrer Organisation gesendet werden kann.                                                                                                                                                                                                                                                                      | Rimesseerfassung                                             |
 | Kreditorenzahlung               | Erstellen von Buchungen für Kreditorenzahlungen.                                                                                                                                                                                                                                                                                                                    | Zahlungserfassung                                                |

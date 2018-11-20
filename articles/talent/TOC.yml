@@ -1,22 +1,31 @@
-- name: "Willkommen bei Dynamics\_365 for Talent"
+- name: "Dynamics\_365 for Talent"
   href: index.md
   items:
     - name: Erste Schritte
       href: talent-get-started.md
       items:
-        - name: Neuheiten und Änderungen
+        - name: Neuerungen und Änderungen
+          href: whats-new.md
           items:
-            - name: "Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (1.\_Oktober 2018)"
+            - name: "Neuerungen oder Änderungen in Dynamics\_365 for Talent Core HR (31.\_Oktober 2018)"
+              href: whats-new-talent-october-31.md
+            - name: "Neuerungen oder Änderungen in Dynamics\_365 for Talent Core HR (19.\_Oktober 2018)"
+              href: whats-new-talent-october-19.md
+            - name: "Neuerungen oder Änderungen in Dynamics\_365 for Talent Core HR (15.\_Oktober 2018)"
+              href: whats-new-talent-october-11.md
+            - name: "Neuerungen oder Änderungen in Dynamics\_365 for Talent Core HR (8.\_Oktober 2018)"
+              href: whats-new-talent-october-8.md
+            - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (1.\_Oktober 2018)"
               href: whats-new-talent-october-01.md
-            - name: "Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (24.\_September 2018)"
+            - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (24.\_September 2018)"
               href: whats-new-talent-september-24.md
-            - name: "Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (17.\_September 2018)"
+            - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (17.\_September 2018)"
               href: whats-new-talent-september-17-2018.md
-            - name: "Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (10.\_September 2018)"
+            - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (10.\_September 2018)"
               href: whats-new-talent-september-10.md
-            - name: Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (August 2018)
+            - name: Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (August 2018)
               href: whats-new-talent-august2018.md
-            - name: Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (Juli 2018)
+            - name: Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (Juli 2018)
               href: whats-new-talent-july2018.md
         - name: Systemanforderungen und Updaterichtlinie
           href: talent-versions-update-policy.md
@@ -26,13 +35,15 @@
           href: remove-talent-environment.md
         - name: Bereitstellung für die modularen Talent-Apps
           href: modular-app-tech-faq.md
-        - name: PowerApps-Apps einbetten
+        - name: Einbetten von PowerApps-Apps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR und Common Data Service für Apps
           href: CoreHREntities.md
-        - name: Auf Vorschaufunktionen zugreifen
+        - name: Integrationen
+          href: talent-financeandoperations-integration.md
+        - name: Zugreifen auf Vorschaufunktionen
           href: access-preview-feature.md
-        - name: Lohnintegration zwischen Talent und Dayforce konfigurieren
+        - name: Konfigurieren der Lohnintegration zwischen Talent und Dayforce
           href: configure-payroll-integration.md
         - name: Erhalten Sie Support für Talent
           href: talent-support.md
@@ -60,11 +71,39 @@
           href: leave-accrue-hours-worked.md
         - name: Arbeitszeitkalender
           href: working-time-calendars.md
-    - name: Personalbeschaffung Ihrer Organisation
+    - name: Personalbeschaffung in Ihrer Organisation
       items:
-        - name: Features und Funktionen von Attract
+        - name: Funktionen und Leistungsspektrum von Attract
           href: attract-overview.md
-        - name: Erstellen einer motivierenden Onboarding-Erfahrung
+        - name: Erstellen einer Prozessvorlage in Attract
+          href: Process-templates-Attract.md
+        - name: 'Erstellen, Genehmigen und Buchen von Aufträgen in Attract'
+          href: Creating-jobs-Attract.md
+        - name: Personalbeschaffung durch Talentschmieden
+          href: attract-talent-pools.md
+        - name: Personalbeschaffung mittels LinkedIn Recruiter
+          href: attract-linked-in-recruiter.md
+        - name: Aktivitäten beim Einstellungsverfahren in Attract
+          href: activities-attract.md
+        - name: Erweiterbarkeit
+          href: extensibility-attract.md
+        - name: Website mit Stellenangeboten und Kandidatenerfahrungen
+          href: career-site.md
+        - name: Einrichten der Angebotsverwaltung
+          href: offer-setup.md
+        - name: 'Erstellen, Genehmigen und Unterschreiben von Angeboten'
+          href: creating-offers.md
+        - name: Erstellen und Verwalten von E-Mail-Vorlagen
+          href: email-templates.md
+        - name: Berichterstellung und Analyse
+          href: Reporting-Analytics-Attract.md
+        - name: Sicherheit und Rollenverwaltung in Attract
+          href: security-attract.md
+        - name: Administratoreinstellungen in Attract
+          href: Admin-Settings-Attract.md
+        - name: Praktische Empfehlungen
+          href: Intelligent-Recommendations.md
+        - name: Gestalten eines motivierenden Onboardings
           href: create-onboarding-experience.md
     - name: Motivieren der Mitarbeiter
       items:

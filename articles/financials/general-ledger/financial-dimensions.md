@@ -3,7 +3,7 @@ title: Finanzdimensionen
 description: "In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen beschrieben und wie sie eingerichtet wurden."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 10/26/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 9973d03de031ad2fa5647bb167c12b9231633a22
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
 ms.contentlocale: de-de
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -51,9 +51,9 @@ Im Folgenden finden Sie einige der Beschränkungen:
 
 ## <a name="custom-dimensions"></a>Benutzerdefinierte Dimensionen
 
-Um eine benutzerdefinierte Finanzdimension zu erstellen, wählen Sie im Feld **Werte nutzen ab** **&lt;&nbsp;Benutzerdefinierte Dimension&nbsp;&gt;**.
+Um eine benutzerdefinierte Finanzdimension zu erstellen, wählen Sie im Feld **Werte verwenden ab**" die Option **Benutzerdefinierte Dimension** aus.
 
-Sie können auch eine Kontenmaske angeben. Sie beschränkt die Menge und die Art von Informationen, die für Dimensionswerte eingegeben werden können. Sie können Zeichen eingeben, die dieselben bleiben für jeden Dimensionswert, wie Buchstaben oder einen Bindestrich (-). Sie können auch Nummernzeichen (\#) und kaufmännische Und-Zeichen (&) als Platzhalter für Buchstaben und Zahlen eingeben, die sich jedes Mal ändern, wenn ein Dimensionswert erstellt wird. Verwenden Sie ein Nummernzeichen (\#) als Platzhalter für eine Zahl und ein kaufmännisches Und-Zeichen (&) als Platzhalter für einen Buchstaben. Das Feld für die Formatmaske ist nur verfügbar, wenn Sie **&lt;&nbsp;Benutzerdefinierte Dimension&nbsp;&gt;** im Feld **Werte nutzen ab**.
+Sie können auch eine Kontenmaske angeben. Sie beschränkt die Menge und die Art von Informationen, die für Dimensionswerte eingegeben werden können. Sie können Zeichen eingeben, die dieselben bleiben für jeden Dimensionswert, wie Buchstaben oder einen Bindestrich (-). Sie können auch Nummernzeichen (\#) und kaufmännische Und-Zeichen (&) als Platzhalter für Buchstaben und Zahlen eingeben, die sich jedes Mal ändern, wenn ein Dimensionswert erstellt wird. Verwenden Sie ein Nummernzeichen (\#) als Platzhalter für eine Zahl und ein kaufmännisches Und-Zeichen (&) als Platzhalter für einen Buchstaben. Das Feld für die Formatmaske ist nur verfügbar, wenn Sie **Benutzerdefinierte Dimension** im Feld **Werte nutzen** auswählen.
 
 **Beispiel**
 
@@ -108,14 +108,30 @@ Sie können abgeleitete Dimensionswerte auf der Dimensionsseite einrichten.
 
 Geben Sie die Dimension an, die von der Dimension in der ersten Spalte berechnet werden sollen. Um beispielsweise die Kostenstelle als die Dimension zu verwenden, von der die Abteilung und die elektronische Adresse abgeleitete werden, geben Sie Kostenstelle 10, Abteilung 20 und elektronische Adresse 30 ein. Wenn Sie Kostenstelle 10 in einem Rahmen-Datensatz oder in einer Transaktionsseite erfassen, werden Abteilung 20 und elektronische Adresse 30  standardmäßig eingegeben.
 
+### <a name="overriding-existing-values-with-derived-dimensions"></a>Vorhandene Dimensionswerte mit abgeleiteten Werten ersetzen
+ 
 Der abgeleitete Dimensionsprozess ersetzt nicht vorhandene Werte für abgeleitete Dimensionen. Wenn Sie z.B. Kostenstelle 10 eingeben, und keine andere Dimension eingegeben wird, werden Abteilung 20 und elektronische Adresse 30 standardmäßig eingegeben. Wenn Sie aber die Kostenstelle ändern, werden die eingegebenen Werte, die bereits eingerichtet wurden, nicht geändert. Daher können Sie Standarddimensionen auf Hauptdatensätzen einrichten, und diese Dimensionen werden nicht über abgeleitete Dimensionen geändert.
+
+Sie können das Verhalten von abgeleiteten Dimensionen ändern, um vorhandene Werte zu überschreiben, indem Sie das Kontrollkästchen **Ersetzen Sie vorhandene Dimensionswerte über abgeleitete Werte** auf der Seite **Abgeleitete Dimensionen** auswählen. Wenn dieses Feld aktiviert ist, können Sie eine Dimension mit abgeleiteten Dimensionswerten eingeben und die abgeleiteten Dimensionswerte überschreiben danm alle Werte, die bereits vorhanden sind. Wenn Sie das vorhergehende Beispiel verwenden, wenn Sie Kostenstelle 10 eingeben, und keine andere Dimension eingegeben wird, werden Abteilung 20 und elektronische Adresse 30 standardmäßig eingegeben. Wenn die Werte bereits Abteilung 50 und elektronische Adresse 60 waren, werden die Werte jetzt zu Abteilung 20 bzw. elektronische Adresse 30 geändert.
+ 
+Abgeleitete Dimensionen mit dieser Einstellung ersetzen nicht automatisch die vorhandenen Dimensionswerte, wenn Dimensionswerte übernommen werden. Dimensionswerte werden nur überschrieben, wenn Sie einen neuen Dimensionswert auf einer Seite eingeben und es abgeleitete vorhandene Werte für diese Dimension auf der Seite gibt.
+
+### <a name="preventing-changes-with-derived-dimensions"></a>Verhindert Änderungen mit abgeleiteten Dimensionen
+ 
+Wenn Sie **Segment hinzufügen** auf **Abgeleitete Dimensionsseite** verwenden, um ein Segment als abgeleitete Dimension hinzuzufügen, wird eine Option im unteren Bereich der Seite **Segment hinzufügen** angegeben, die es Ihnen ermöglicht, Änderungen für diese Dimension zu verhindern, wenn sie auf einer Seite abgeleitet wird. Die Standardeinstellung ist deaktiviert, damit sie nicht verhindert, dass die abgeleiteten Werte geändert werden. Ändert die Einstellungen auf **Ja**, wenn Sie verhindern möchten, dass die Dimension geändert wird, nachdem sie abgeleitet wurde. Wenn beispielsweise der Wert für die Abteilungsdimension von der Kostenstellendimension berechnet wird, kann der Wert für die Abteilung nicht geändert werden, wenn die Einstellung **Sperren Sie Änderungen** auf **Ja** festgelegt ist. 
+ 
+Die Einstellung verhindert nicht Änderungen, wenn der Dimensionswert gültig ist, aber nicht in der abgeleiteten Dimensionsliste aufgeführt ist. Wenn beispielsweise Abteilung 20 von Kostenstelle 10 berechnet wird und Sie die Kostenstelle 10 eingeben, können Sie Abteilung 20 nicht bearbeiten. Wenn Sie jedoch Kostenstelle 20 eingeben und diese nicht in der Liste mit abgeleiteten Dimensionen für Kostenstelle ist, dann können Sie den Wert für die Abteilung bearbeitet. 
+ 
+In allen Fällen werden der Kontowert und alle Dimensionswerte mit den Kontostrukturen geprüft, nachdem die abgeleiteten Dimensionswerte angewendet wurden. Wenn Sie abgeleitete Dimensionen verwenden und die Prüfung fehlschlägt, wenn sie auf einer Seite verwendet werden, müssen Sie die abgeleitete Dimensionswerte auf der abgeleiteten Dimensionsseite ändern, bevor Sie sie in Transaktionen verwenden können. 
+ 
+Wenn Sie Dimensionen auf dem Inforegister **Finanzverhältnisdimensionen** ändern, ist die Dimension, die markiert wird, um Änderungen zu verhindern, nicht bearbeitbar. Wenn Sie ein Konto und Dimensionen in das segmentierte Eintragssteuerelement auf einer Seite eingeben, sind die Dimensionen bearbeitbar. Wenn Sie jedoch das Hervorgehoben vom segmentierten Eintragssteuerelement verschieben in ein anderes Feld, werden das Konto und die Dimensionen mit der abgeleitete Dimensionsliste verglichen und die Kontostrukturen geprüft, um sicherzustellen, dass Sie die entsprechenden Werten eingegeben haben. 
 
 ### <a name="derived-dimensions-and-entities"></a>Abgeleitete Dimensionen und Entitäten
 
 Sie können Dimensionssegmente und die abgeleiteten Werte einrichten, indem Sie Entitäten verwenden.
 
 - Die abgeleitete Dimensionsentität richtet die treibenden Dimensionen und die Segmente ein, die für diese Dimensionen verwendet werden.
-- Mit der DerivedDimensionValue-Entität können Sie die Werte importieren, die für jede treibende Dimension berechnet werden sollen.
+- Die abgeleiteten Dimensionswertentität ermöglicht es Ihnen, die Werte zu importieren, die für jede treibende Dimension berechnet werden sollen.
 
 Wenn Sie eine Entität verwenden, um Daten zu importieren, wenn diese Dimensionen Entität importiert wird, werden die abgeleiteten Dimensionsregeln beim Import verwendet, es sei denn, die Entität überschreibt diese Dimensionen explizit.
 

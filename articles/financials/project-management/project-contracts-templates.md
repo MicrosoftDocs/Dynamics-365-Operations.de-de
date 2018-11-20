@@ -3,7 +3,7 @@ title: "Synchronisieren von Projektverträgen und Projekten direkt aus Project S
 description: "Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Projektverträge und Projekte direkt aus Microsoft Dynamics 365 for Project Service Automation in Microsoft Dynamics 365 for Finance and Operations zu synchronisieren."
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 65a274323a2d95c9c76727c9e40aa7e649e6350a
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -95,8 +95,8 @@ Wenn die Project Service Automation zu Finance and Operations Integrationslösun
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 
 - Vor der Synchronisierung von Projektverträgen und Projekten müssen Sie zunächst Konten synchronisieren.
-- In Ihrem Verbindungssatz fügen Sie eine Integrationsschlüsselfeldzuordnung für **msdyn\_organizationalunits** zu **msdyn\_name \[Name\]** hinzu. Möglicherweise müssen Sie zuerst ein Projekt im Verbindungssatz hinzufügen. Weitere Informationen zu Integrationsschlüsseln finden Sie unter [Dynamics 365-Datenintegration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
-- In Ihrem Verbindungssatz fügen Sie eine Integrationsschlüsselfeldzuordnung für **msdyn\_projects** zu **msdynce\_projectnumber \[Project Number\]** hinzu. Möglicherweise müssen Sie zuerst ein Projekt im Verbindungssatz hinzufügen. Weitere Informationen zu Integrationsschlüsseln finden Sie unter [Dynamics 365-Datenintegration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
+- In Ihrem Verbindungssatz fügen Sie eine Integrationsschlüsselfeldzuordnung für **msdyn\_organizationalunits** zu **msdyn\_name \[Name\]** hinzu. Möglicherweise müssen Sie zuerst ein Projekt im Verbindungssatz hinzufügen. Weitere Informationen finden Sie unter [Integrieren von Daten in Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) Sie unter.
+- In Ihrem Verbindungssatz fügen Sie eine Integrationsschlüsselfeldzuordnung für **msdyn\_projects** zu **msdynce\_projectnumber \[Project Number\]** hinzu. Möglicherweise müssen Sie zuerst ein Projekt im Verbindungssatz hinzufügen. Weitere Informationen finden Sie unter [Integrieren von Daten in Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) Sie unter.
 - **SourceDataID** für Projektverträge und Projekte kann mit einem anderen Wert aktualisiert oder von der Zuordnung entfernt werden. Der Standardvorlagewert ist **Project Service Automation**.
 - Die Zuordnung **PaymentTerms** muss aktualisiert werden, damit er gültige Zahlungsbedingungen im Bereich Finance and Operations anzeigt. Sie können die Zuordnung aus der Projektaufgabe auch wieder entfernen. Die Standardwerte für Standardwertzuordnung hat Demodaten. Die folgende Tabelle zeigt die Werte in der Project Service Automation.
 

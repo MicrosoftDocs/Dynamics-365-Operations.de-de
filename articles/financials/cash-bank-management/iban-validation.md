@@ -16,20 +16,20 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
-ms.openlocfilehash: e091aab70a98e0f4b96c41c1ee48926947539105
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 19e0528b95952de8e5503c361efcfeca4c529caf
 ms.contentlocale: de-de
-ms.lasthandoff: 08/31/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
-# <a name="manage-international-bank-account-number-iban-account-validation"></a>Verwalten Sie die Kontoprüfung (IBAN) der internationalen Bankkontonummer
+# <a name="manage-international-bank-account-number-iban-validation"></a>Verwalten Sie die Kontoprüfung (IBAN) der internationalen Bankkontonummer
 
 [!include [banner](../includes/banner.md)]
 
 Internationale Bankkontonummer (IBAN) Kontoüberprüfung erhöht den Betrag der Prüfung, die  ausgeführt wird, wenn Sie eine IBAN einem Bankkonto hinzufügen.
 
-Die Struktur der IBAN wird in Microsoft Dynamics 365 for Finance and Operations gespeichert und automatisch beim Verwenden der IBAN auf Bankkonten geladen. Die Kontonummer ist Teil der Struktur, die für eine IBAN-Nummer definiert wird. Basierend auf dieser Struktur wenn die Position und die Länge der Kontonummer der IBAN nicht mit der Position übereinstimmen, die in der Struktur für jedes Land oder jede Region definiert wird, werden Warnungsnachrichten angezeigt.
+Informationen zur Struktur der IBAN werden in Microsoft Dynamics 365 for Finance and Operations gespeichert. Diese Informationen werden beim erstmaligen Verwenden der IBAN automatisch auf Bankkonten geladen. Sie enthält die Länge der IBAN, die Anfangspositionen der Bankkontonummer und die Routingnummer und die Länge der Kontonummer und die Routingnummer.
 
 ## <a name="set-up-iban-structures"></a>Einrichten der IBAN-Struktur
 
@@ -44,7 +44,9 @@ Die Struktur der IBAN wird in Microsoft Dynamics 365 for Finance and Operations 
 2. Bankkonto erstellen.
 3. Auf dem Inforegister **Zusätzliche Informationen** können Sie eine IBAN-Nummer eingeben.
 
-    Basierend auf dieser Struktur wenn die Position und die Länge der Kontonummer der IBAN nicht mit der Position übereinstimmen, die in der Struktur für jedes Land oder jede Region definiert wird, werden Warnungsnachrichten angezeigt. Sie können nicht fortfahren, wenn die Länge der IBAN nicht der Länge in der IBAN-Struktur entspricht.
+    Wenn die Länge der IBAN nicht mit der Länge übereinstimmt, die für jedes Land oder jede Region definiert ist, erhalten Sie eine Warnmeldung. Sie können nicht fortfahren, wenn die Länge der IBAN nicht der Länge in der definierten IBAN-Struktur entspricht.
 
     Es wird auch geprüft, ob die Bankkontonummer mit dem Teil der IBAN übereinstimmt, die die Bankkontonummer darstellt. Wenn die Kontonummer nicht übereinstimmt, erhalten Sie eine Warnmeldung. Eine Warnmeldung wird angezeigt. Sie können fortfahren, selbst wenn die Kontonummer nicht übereinstimmt.
+
+    Es wird auch geprüft, ob die Bankkontonummer mit dem Teil der IBAN übereinstimmt, die die Bankroutingnummer darstellt. Die Routingnummer enthält eine Banknummer und häufig eine zusätzliche Bankfiliale. Wenn die Bankroutingnummer nicht übereinstimmt, erhalten Sie eine Warnmeldung. Eine Warnmeldung wird angezeigt. Sie können fortfahren, selbst wenn die Bankroutingnummer nicht übereinstimmt.
 

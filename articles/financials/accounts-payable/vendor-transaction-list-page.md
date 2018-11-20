@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 53740f6ed0d463de5ba962f1ba15b208634a0739
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 45033b8b015d468b7ee0f6c3fba5e6fb6201433e
 ms.contentlocale: de-de
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/01/2018
 
 ## <a name="view-settlements"></a>Ausgleiche anzeigen
 
-Die Registerkarte **Ausgleiche anzeigen** im Aktivitätsbereich bietet schnellen Zugriff auf die Ausgleichshistorie und zu weiteren Informationen über die ganze Ausgleichsbuchung. Sie können zusätzliche Buchungen, die mit der ausgewählten Buchung zusammenhängen, mögliche auch anzeigen, da sie Bestandteil desselben Ausgleichs waren, oder es sind sie Zahlungen, die in derselben Zahlungserfassung erstellt wurden.
+Die Registerkarte **Ausgleiche anzeigen** im Aktivitätsbereich bietet schnellen Zugriff auf die Ausgleichshistorie und zu detaillierte Informationen über die Ausgleichsbuchung. Sie können zusätzliche Buchungen, die mit der ausgewählten Buchung zusammenhängen, mögliche auch anzeigen, da sie Bestandteil desselben Ausgleichs waren, oder es sind sie Zahlungen, die in derselben Zahlungserfassung erstellt wurden.
 
 1. Wählen Sie **Kreditorenkonten \> Alle Kreditoren** aus.
 2. Wählen Sie einen Lieferant, der Transaktionen aufweist, und klicken Sie dann im Aktivitätsbereich, auf der Registerkarte **Lieferant**, wählen Sie **Buchungen** aus.
@@ -49,7 +49,7 @@ Die Registerkarte **Ausgleiche anzeigen** im Aktivitätsbereich bietet schnellen
 
 ## <a name="global-transactions"></a>Globale Transaktionen
 
-Die Schaltfläche **Globale Transaktionen** ist für den Kreditor hinzugefügt. Mit dieser Schaltfläche können Sie die Transaktionen für einen Kreditor für alle juristischen Personen anzeigen. Die Listenseite **Kreditorentransaktionen** zeigt Transaktionen nur für die juristischen Personen, für die der Benutzer Zugriff hat, basierend auf den Sicherheitseinstellungen.
+Die Schaltfläche **Globale Transkationen** wird auch auf der Listenseite **Lieferantentransaktionen** angezeigt. Mit dieser Schaltfläche können Sie die Transaktionen für einen Kreditor für alle juristischen Personen anzeigen. Die Listenseite **Kreditorentransaktionen** zeigt Transaktionen nur für die juristischen Personen, für die der Benutzer Zugriff hat, basierend auf den Sicherheitseinstellungen.
 
 Die Listenseite enthält alle Transaktionen für Lieferanten, die dieselbe Kennung wie der Lieferant hat, mit dem Sie mit gestartet haben. Wenn beispielsweise Lieferant US-001 in einer juristischen Personen dieselbe Kennung wie DE-001 Lieferant in einer anderen juristischen Person hat, werden alle Transaktionen für beide Lieferanten-IDs angezeigt.
 
@@ -67,13 +67,13 @@ Der Filter zum Anzeigen offener Buchungen ist durch einen neuen Filter ersetzt, 
 - **Alle** – Hiermit können Sie die offenen und geschlossenen Transaktionen für den ausgewählten Kreditor anzeigen (offen oder geschlossen).
 - **Geschlossen** – Zeigt nur Transaktionen, die vollständig ausgeglichen und geschlossen wurden.
 - **Offen** – Zeigt nur Transaktionen, die nicht vollständig ausgeglichen und geschlossen wurden.
-- **Öffnet Sie sich ab Datum** – Zeigt nur Buchungen an, die ab einem Datum, das Sie festlegen, nicht vollständig ausgeglichen wurden. Wenn Sie diese Option auswählen, können Sie das Datum ändern, das neben dem Filter angezeigt wird. Buchungen, die einen Wert nach dem **Letzter Ausgleichsdatum** nach dem von Ihnen definierten Datum aufweisen, werden in der Liste angezeigt, wenn dieser Posten vollständig auf dem aktuellen Datum ausgeglichen werden. Allerdings wird der Saldo die Saldenliste ab dem aktuellen Datum, und nicht ab dem ausgewählten Datum.
+- **Offen, einschließlich geschlossen am oder nach Datum** – Nur Transaktionen anzeigen, die an oder nach einem angegeben Datum nicht vollständig ausgeglichen wurden. Wenn Sie diese Option auswählen, können Sie das Datum ändern, das neben dem Filter angezeigt wird. Buchungen, die einen Wert nach dem **Letzter Ausgleichsdatum** nach oder an dem von Ihnen definierten Datum aufweisen, werden in der Liste angezeigt, wenn dieser Posten vollständig auf dem aktuellen Datum ausgeglichen werden. Allerdings wird der Saldo die Saldenliste ab dem aktuellen Datum, und nicht ab dem ausgewählten Datum.
 
-Ein Filter wird auch hinzugefügt, mit dem Sie Währungsübersetzungsbuchungen ausblenden können. Wählen Sie einfach das Kontrollkästchen **Währungsneubewertungen verbergen**.
+Aktivieren Sie das Kontrollkästchen **Währungsneubewertungen ausblenden**, um Transaktionen für Währungsumrechnungen auszublenden.
 
-## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Ändern Sie einfach das Fälligkeitsdatum und das Skontodatum
+## <a name="modify-due-dates-and-discount-dates"></a>Ändern von Fälligkeitsdatum und Skontodatum
 
-Sie können Fälligkeitsdatum und Skontodatum für offene Debitorbuchungen aktualisieren. In der Version 8.1 ist die Erfahrung verbessert worden. Sie können nun Fälligkeitsdaten der Listenseite **Lieferantentransaktionen** hinzufügen. Wenn Sie auf dem Fälligkeitsdatum in der Listenseite **Kreditorenbuchungen** klicken, können Sie Zahlungsbedingungen, Fälligkeitsdatum, Skontodatum und Skontobedingungen im Dialogfeld **Fälligkeitsdatum- und -Skontodatumsangaben aktualisieren** auch ändern.
+Sie können Fälligkeitsdatum und Skontodatum für offene Debitorbuchungen aktualisieren. In der Freigabe 8.1 können Sie nun Fälligkeitsdaten der Listenseite **Lieferantentransaktionen** hinzufügen. Wenn Sie auf dem Fälligkeitsdatum in der Listenseite **Kreditorenbuchungen** klicken, können Sie Zahlungsbedingungen, Fälligkeitsdatum, Skontodatum und Skontobedingungen im Dialogfeld **Fälligkeitsdatum- und -Skontodatumsangaben aktualisieren** auch ändern.
 
 ### <a name="activate-the-feature"></a>Aktivieren der Funktion
 
@@ -91,11 +91,11 @@ Die Listenseite **Lieferantentransaktionen** zeigt alle Transaktionen für einen
 
 Jedes Feld hat Auswirkungen auf eine andere Buchung, wenn Sie sie bearbeiten:
 
-- **Grunddatum bearbeiten**: Das Fälligkeits- und das Skontodatum werden geändert, wenn das Grunddatum dem Dokumentdatum entspricht.
-- **Bearbeiten Sie das Fälligkeitsdatum:** Nur das Fälligkeitsdatum wird geändert
-- **Bearbeiten Sie das Skontodatum:** Nur das Skontodatum werden geändert.
-- **Zahlungsbedingungen ändern:** Das Fälligkeitsdatum wird geändert, basierend auf dem Grunddatum und dem Zahlungsbedingungen.
-- **Bearbeiten Sie die Skontobedingungen:** Die Skonti werden basierend auf dem Grunddatum und den Skontobedingungen geändert.
+- **Grunddatum bearbeiten** - Das Fälligkeits- und das Skontodatum werden geändert, wenn das Grunddatum dem Dokumentdatum entspricht.
+- **Bearbeiten Sie das Fälligkeitsdatum:** - Nur das Fälligkeitsdatum wird geändert
+- **Bearbeiten Sie das Skontodatum** - Nur das Skontodatum werden geändert.
+- **Zahlungsbedingungen ändern** - Das Fälligkeitsdatum wird geändert, basierend auf dem Grunddatum und dem Zahlungsbedingungen.
+- **Bearbeiten Sie die Skontobedingungen** - Die Skonti werden basierend auf dem Grunddatum und den Skontobedingungen geändert.
 
 Um die Bearbeitung der Zahlungseinstellungen abzuschließen wählen Sie **Schließen**, um die Änderungen zu speichern.
 
