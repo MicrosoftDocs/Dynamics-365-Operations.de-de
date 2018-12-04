@@ -1,0 +1,122 @@
+---
+title: Power BI-Inhalt des Practice Manager
+description: "In diesem Thema wird beschrieben, was im Power Bl-Inhalt des Practice Manager enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden."
+author: KimANelson
+manager: AnnBe
+ms.date: 12/18/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+ms.search.form: ProjManagementWorkspace
+audience: Application User, IT Pro
+ms.reviewer: sericks
+ms.search.scope: Core, Operations
+ms.assetid: 
+ms.search.region: Global
+ms.author: knelson
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.translationtype: HT
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
+ms.contentlocale: de-de
+ms.lasthandoff: 08/13/2018
+
+---
+
+# <a name="practice-manager-power-bi-content"></a>Power BI-Inhalt des Practice Manager
+
+[!include [banner](../includes/banner.md)]
+
+In diesem Thema wird beschrieben, was im Microsoft Power Bl-Inhalt des **Practice Manager** enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+
+## <a name="overview"></a>Überblick
+
+Der Power BI-Inhalt des **Practice Manager** wurde für Methodenmanager und Projektmanager erstellt. Er stellt Schlüsselmetrik bereit, die sich auf die Projekte bezieht, an denen die Organisation gerade arbeitet. Das Dashboard bietet eine Übersicht der Projekte und zugehörigen Debitoren. Ein Berichtsebenenfilter kann verwendet werden, um für bestimmte juristische Personen Meldung zu erteilen. Dieses Power BI Inhalt extrahiert Daten aus aggregierten Messungen der Projektbuchhaltung.
+
+Der Power BI-Inhalt des **Practice Manager** umfasst fünf Berichtsseiten: eine Übersichtsseite und vier Seiten, die Details zu Projektkosten, Umsatzerlösen, Ertragswertverwaltung und Stundenmetrik enthalten, die über unterschiedliche Dimensionen hinweg unterteilt sind.
+
+Alle Beträge im Inhalt werden in der Systemwährung angezeigt. Sie können die Systemwährung auf der Seite **Systemparameter** festlegen.
+
+## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
+
+Der **Methodenmanager** Power BI-Inhalt wird im **Projektmanagement**-Arbeitsbereich angezeigt.
+
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
+
+Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im BI-Inhalt **Practice Manager** befinden.
+
+| Berichtsseiten       | Metriken |
+|-------------------|---------|
+| Projektüberblick | <ul><li>Erstelltes Projekte</li><li>Vorkalkulierte Projekte</li><li>In Bearbeitung befindliche Projekte</li><li>Tatsächlicher Umsatz nach Debitor</li><li>Budgetbruttogewinn nach Projekt</li><li>Übersicht der Ertragswertverwaltung</li></ul> |
+| Kosten              | <ul><li>Istwert im Vergleich zu Budgetkosten nach Monat</li><li>Istwert im Vergleich zu Budgetkosten nach Jahr</li><li>Istwert im Vergleich zu Budgetkosten nach Kategorie</li><li>Istkosten nach Buchungstyp</li></ul> |
+| Umsatzerlös           | <ul><li>Tatsächlicher Umsatz nach Monat</li><li>Tatsächlicher Umsatz nach Postleitzahl</li><li>Istwert im Vergleich zu Budgetumsatz nach Kategorie</li><li>Tatsächlicher Umsatz nach Debitorenbranche</li></ul> |
+| EVM               | Kosten- und Zeitplan-Leistungsindex nach Projekt |
+| Stunden             | <ul><li>Tatsächliche fakturierbare verwendete Stunden im Vergleich zu tatsächlichen, fakturierbaren, nicht berechenbaren Stunden im Vergleich zu Budgetstunden</li><li>Tatsächliche, fakturierbare, verwendete Stunden im Vergleich zu tatsächlichen, fakturierbaren, nicht berechenbaren Stunden nach Projekt</li><li>Tatsächliche, fakturierbare, verwendete Stunden im Vergleich zu tatsächlichen, fakturierbaren, nicht berechenbaren Stunden nach Ressource</li><li>Verhältnis tatsächlicher, fakturierbarer Stunden nach Projekt</li><li>Verhältnis tatsächlicher, fakturierbarer Stunden nach Ressource</li></ul> |
+
+Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Sie können auch die Funktionen zum Export zugrunde liegender Daten verwenden, um die zugrunde liegenden Daten zu exportieren, die in einer Visualisierung zusammengefasst sind.
+
+## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
+
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Practice Manager** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
+
+In den folgenden Abschnitten werden die aggregierten Messungen, die in jeder Entität verwendet werden, beschrieben.
+
+### <a name="entity-projectaccountingcubeactualhourutilization"></a>Entität: ProjectAccountingCube\_ActualHourUtilization
+**Datenquelle:** ProjEmplTrans
+
+| Zentrale aggregierte Messungen      | Feld                              | Beschreibung |
+|--------------------------------|------------------------------------|-------------|
+| Tatsächlich berechenbar - Auslastungsstunden | Sum(ActualUtilizationBillableRate) | Die Gesamtsumme tatsächlich verwendeter, fakturierbarer Stunden. |
+| Tatsächlich berechenbar - Nicht berechenbare Stunden   | Sum(ActualBurdenBillableRate)      | Die Gesamtsumme der tatsächlichen Belastungsrate. |
+
+### <a name="entity-projectaccountingcubeactuals"></a>Entität: ProjectAccountingCube\_Actuals
+**Datenquelle:** ProjTransPosting
+
+| Zentrale aggregierte Messungen | Feld              | Beschreibung |
+|---------------------------|--------------------|-------------|
+| Tatsächlicher Umsatzerlös            | Sum(ActualRevenue) | Die Gesamtsumme gebuchter Umsatzerlöse für alle Buchungen. |
+| Istkosten               | Sum(ActualCost)    | Die Gesamtsumme der gebuchten Kosten für alle Buchungsarten. |
+
+### <a name="entity-projectaccountingcubecustomer"></a>Entität: ProjectAccountingCube\_Customer
+**Datenquelle:** CustTable
+
+| Zentrale aggregierte Messungen | Feld                                             | Beschreibung |
+|---------------------------|---------------------------------------------------|-------------|
+| Anzahl von Projekten        | COUNTA(ProjectAccountingCube\_Projects\[PROJEKTE\]) | Die Anzahl verfügbarer Projekte. |
+
+### <a name="entity-projectaccountingcubeforecasts"></a>Entität: ProjectAccountingCube\_Forecasts
+**Datenquelle:** ProjTransBudget
+
+| Zentrale aggregierte Messungen | Feld                  | Beschreibung |
+|---------------------------|------------------------|-------------|
+| Budgetkosten               | Sum(BudgetCost)        | Die Gesamtsumme der geplanten Kosten für alle Buchungsarten. |
+| Umsatzerlös gemäß Budget            | Sum(BudgetRevenue)     | Die Gesamtsumme des geplanten, antizipierten/fakturierten Umsatzerlöses. |
+| Bruttogewinn gemäß Budget       | Sum(BudgetGrossMargin) | Die Differenz zwischen der Gesamtsumme des geplanten Umsatzerlöses und die Summe der gesamten geplanten Kosten. |
+
+### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Entität: ProjectAccountingCube\_ProjectPlanCostsView
+**Datenquelle:** Projekt
+
+| Zentrale aggregierte Messungen | Feld                    | Beschreibung |
+|---------------------------|--------------------------|-------------|
+| Geplante Kosten              | Sum(SumOfTotalCostPrice) | Der Gesamteinstandspreis in Vorkalkulationen für alle Projektbuchungsarten mit geplanten Aufgaben. |
+
+### <a name="entity-projectaccountingcubeprojects"></a>Entität: ProjectAccountingCube\_Projects
+**Datenquelle:** Projekt
+
+| Zentrale aggregierte Messungen    | Feld | Beschreibung |
+|------------------------------|-------|-------------|
+| Kostenleistungsindex       | ProjectAccountingCube\_Projects\[Ertragswert\] ÷ ProjectAccountingCube\_Projects\[Gesamte Istkosten der abgeschlossenen Aufgaben\] | Die Berechnung das gesamte Ertragswerts geteilt durch die Summe der Istkosten. |
+| Zeitplan-Leistungsindex   | ProjectAccountingCube\_Projects\[Ertragswert\] ÷ ProjectAccountingCubeProjects\_\[Gesamte geplante Kosten der abgeschlossenen Aufgaben\] | Die Berechnung das gesamte Ertragswerts geteilt durch die Summe der geplanten Istkosten. |
+| Prozentsatz der abgeschlossenen Arbeit | Prozentsatz der abgeschlossenen Arbeit = ProjectAccountingCube\_Projects\[Summe der Istkosten der abgeschlossenen Aufgaben\] ÷ (ProjectAccountingCube\_Projects\[Summe der tatsächlichen Kosten der abgeschlossenen Aufgaben\] + ProjectAccountingCube\_Projects\[Gesamte geplante Kosten des Projekts\] – ProjectAccountingCube\_Projects\[Gesamte geplante Kosten der abgeschlossenen Aufgaben\]) | Der Gesamtprozentsatz der abgeschlossenen Arbeit basierend auf der Gesamtsumme der Istkosten der abgeschlossenen Aufgaben und der geplanten Kosten des Projekts. |
+| Tatsächliches Verhältnis berechenbarer Stunden  | ProjectAccountingCube\_Projects\[Gesamte tatsächliche, fakturierbare, nicht berechenbare Stunden des Projekts\] ÷ (ProjectAccountingCube\_\[Gesamte tatsächliche, fakturierbare, nicht berechenbare Stunden des Projekts\] + ProjectAccountingCube\_+ Projects\[Gesamte tatsächliche, fakturierbare, nicht berechenbare Stunden des Projekts\]) | Die gesamten tatsächlichen berechenbaren Stunden basierend auf den verwendeten und nicht berechenbaren Stunden. |
+| Ertragswert                 | ProjectAccountingCube\_Projects\[Gesamte geplante Kosten des Projekts\] × ProjectAccountingCube\_Projects\[Prozentsatz der abgeschlossenen Arbeit\] | Die gesamten geplanten Kosten multipliziert mit dem Prozentsatz der abgeschlossenen Arbeit. |
+
+### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Entität: ProjectAccountingCube\_TotalEstimatedCosts 
+**Datenquelle:** ProjTable
+
+| Zentrale aggregierte Messungen       | Feld               | Beschreibung |
+|---------------------------------|---------------------|-------------|
+| Geplante Kosten für abgeschlossene Aktivität | Sum(TotalCostPrice) | Der Gesamteinstandspreis in Vorkalkulationen für alle Projektbuchungsarten mit abgeschlossenen Aufgaben. |
+
