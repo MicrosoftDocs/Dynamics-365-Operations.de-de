@@ -47,6 +47,8 @@
       href: dev-itpro/updating-environments.md
     - name: Testen auf Leistungsprobleme
       href: dev-itpro/retail-implementation-testing-performance.md
+- name: Verteilte Auftragsverwaltung (DOM)
+  href: dom.md
 - name: Zahlungen
   items:
     - name: Zahlungsmethoden
@@ -55,13 +57,15 @@
       href: ../financials/accounts-receivable/credit-card-authorizations.md
     - name: Konfigurieren von Bargeld-Denominationen für den POS
       href: cash-denominations.md
+    - name: Einrichten von Szenarien für die Rechnungszahlung
+      href: payinvoice.md
     - name: FAQs zu Zahlungen
       href: dev-itpro/payments-retail.md
 - name: Bestellungen
   items:
-    - name: Überblick über Bestellungen
+    - name: Übersicht über Bestellungen
       href: ../supply-chain/procurement/purchase-order-overview.md
-    - name: Bestellungen erstellen
+    - name: Erstellen von Bestellungen
       href: ../supply-chain/procurement/purchase-order-creation.md
     - name: Produkteingang für Bestellungen
       href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
@@ -89,7 +93,7 @@
       href: tasks/store-configurations-retail-statements.md
 - name: Mehrwertsteuer
   items:
-    - name: Mehrwertsteuerüberblick
+    - name: Mehrwertsteuerübersicht
       href: ../financials/general-ledger/indirect-taxes-overview.md
     - name: Mehrwertsteuer-Berechnungsmethoden im Feld „Ursprung”
       href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
@@ -213,9 +217,11 @@
       href: Order-fulfillment-POS-setup.md
     - name: Anzeigen von Auftragsbenachrichtigungen im POS
       href: Notifications-POS.md
+- name: Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
+  href: orderexchanges.md
 - name: Überwachung und Analyse
   items:
-    - name: Verkaufs- und Margenleistung überwachen
+    - name: Überwachen der Verkaufs- und Margenleistung
       href: monitor-sales-margin-performance.md
     - name: Verkaufstrends und -muster analysieren
       href: analyze-sales-trends-patterns.md
@@ -235,7 +241,9 @@
       href: price-management.md
     - name: Preisregulierungen und Rabatte
       href: price-adjustments-discounts.md
-    - name: Die optimale Kombination sich überschneidender Rabatte bestimmen
+    - name: Anwenden mehrerer Einzelhandelsrabatte auf ein Produkt
+      href: Apply-multiple-retail-discounts.md
+    - name: Bestimmen der optimalen Kombination sich überschneidender Rabatte
       href: optimal-combination-overlapping-discounts.md
     - name: Kanalspezifische Rabatte definieren
       href: define-channel-specific-discounts.md
@@ -273,7 +281,7 @@
       href: ../supply-chain/pim/search-products-product-variants.md
 - name: Loyalität
   items:
-    - name: Überblick über die Loyalität
+    - name: Übersicht über die Loyalität
       href: set-up-customer-loyalty-program.md
 - name: Bestand
   items:
@@ -482,13 +490,15 @@
           href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
         - name: Bing Karten verwalten
           href: dev-itpro/manage-bing-maps.md
-    - name: Retail-Erweiterungsressourcen und Beschriftungsdateien lokalisieren
+    - name: Lokalisieren von Retail-Erweiterungsressourcen und Beschriftungsdateien
       href: dev-itpro/extension-resource-localization.md
-    - name: Verkaufsstellenerweiterbarkeit
+    - name: Erweiterbarkeit von Verkaufsstellen
       items:
         - name: Retail POS-Bildschirmlayouts
           href: pos-screen-layouts.md
-        - name: Den POS-Layoutdesigner installieren
+        - name: Öffnen der URL in POS
+          href: Open-URL-in-POS.md
+        - name: Installieren des POS-Layoutdesigners
           href: install-pos-layout-designer.md
         - name: Retail Modern POS im Offlinemodus
           href: dev-itpro/retail-modern-pos-offline.md
@@ -508,6 +518,10 @@
           href: dev-itpro/gift-card.md
         - name: Erstellen und Anwenden von Branding in der Retail Experience-App
           href: dev-itpro/create-retail-experience-app.md
+        - name: Einrichten der POS Hybrid-App unter Android und iOS
+          href: dev-itpro/hybridApp.md
+        - name: Überschreiben des POS-Anforderungshandlers
+          href: dev-itpro/pos-handler.md
     - name: Hardwarestation und Erweiterbarkeit
       href: dev-itpro/hardware-station-extensibility.md
     - name: Retail Server-Erweiterbarkeit
@@ -562,9 +576,13 @@
           href: dev-itpro/payment-custom-error-messages.md
         - name: Erstellen von Windows-Installationsprogrammen für Zahlungskonnektoren
           href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Verwenden von Zahlungsdaten
+          href: payment-connector-data-fields.md
     - name: Retail SDK
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Anstehende Änderungen im Retail SDK
+          href: dev-itpro/UpcomingSDKChanges.md
         - name: Zusammenführen der Buildsysteme für Retail und Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: "Retail\_SDK-Erweiterbarkeitsbeispiele"
