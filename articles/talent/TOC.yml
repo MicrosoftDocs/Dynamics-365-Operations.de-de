@@ -7,6 +7,10 @@
         - name: Neuerungen und Änderungen
           href: whats-new.md
           items:
+            - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (27.\_November 2018)"
+              href: whats-new-talent-november-27.md
+            - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (15.\_November 2018)"
+              href: whats-new-talent-november-15.md
             - name: "Neuerungen oder Änderungen in Dynamics\_365 for Talent Core HR (31.\_Oktober 2018)"
               href: whats-new-talent-october-31.md
             - name: "Neuerungen oder Änderungen in Dynamics\_365 for Talent Core HR (19.\_Oktober 2018)"
@@ -95,8 +99,6 @@
           href: creating-offers.md
         - name: Erstellen und Verwalten von E-Mail-Vorlagen
           href: email-templates.md
-        - name: Berichterstellung und Analyse
-          href: Reporting-Analytics-Attract.md
         - name: Sicherheit und Rollenverwaltung in Attract
           href: security-attract.md
         - name: Administratoreinstellungen in Attract
@@ -264,5 +266,29 @@
           href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Erstellen eines Ziels
           href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Erstellen einer Leistungsbeurteilung
+        - name: Eine Leistungsbeurteilung erstellen
           href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Problembehandlung – Talent
+      items:
+        - name: Analytics-Berichte werden nicht aktualisiert
+          href: analytic-reports-not-updated.md
+        - name: Eine Umgebung in der PowerApps-Administratorzentrum kann nicht erstellt werden
+          href: create-envi-powerapps-admin-ctr.md
+        - name: Talent-Client wurde getrennt
+          href: client-disconnects.md
+        - name: Behandlung von Datenbanksicherungen
+          href: database-backups.md
+        - name: Vermeiden Sie abgeschnittenen Text in der Positionshierarchie und beim Exportieren in Visio
+          href: avoid-text-truncation-position-hierarchy-visio.md
+        - name: Vergütungsprozesses ausführen
+          href: run-compensation-process.md
+        - name: Aufgabenleitfäden in LCS speichern und erneut wiedergeben
+          href: save-play-task-guides-LCS.md
+        - name: Zugriff auf private Informationen nach Sicherheitsrolle
+          href: security-roles-addresses.md
+        - name: Talent wird nicht in den Microsoft Dynamics 365-Anwendungen angezeigt (CDS1.0)
+          href: talent-not-in-home-CDS.md
+        - name: 'Benutzer kann auf Core HR, aber nicht auf die Onboard- oder Attract-Anwendung zugreifen'
+          href: user-access-core-hr.md
+        - name: Berichtsoptionen in Talent
+          href: talent-reporting-options.md
