@@ -3,7 +3,7 @@ title: "Startseite für die Produktprogrammplanung"
 description: "Produktprogrammplanung ermöglicht es Unternehmen, die zukünftigen Anforderung für Rohmaterialen und Kapazität zu bestimmen und abzustimmen, um die Unternehmensziele zu erfüllen."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
 ms.contentlocale: de-de
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -58,13 +58,13 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 
 ## <a name="quick-links"></a>Direktlinks
 
-|      |   |
-|------|---|
-|        [Produktprogrammpläne](master-plans.md)       |     [Plan mit Einschränkungen erstellen](./tasks/constrained-plan.md)  |
-| [Materialplan für Co-Produkte erstellen](./tasks/create-material-plan-co-products.md)   |  [Produktprogrammplanung und Funktion für mehrere Standorte](master-plan-multisite-functionality.md)  |
-| [Intercompany-Plan erstellen](./tasks/create-intercompany-plan.md) | [Bedarfsplanung – Überblick](introduction-demand-forecasting.md)  | 
-|[Planzahlenverrechnungsschlüssel](reduction-keys.md)| [Notwendige Planungsgrundlagen](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (e-Learning) (erfordert CustomerSource-Konto)     |
-|  [Notwendige Planungsgrundlagen für die Prozessproduktion](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (e-Learning) (erfordert CustomerSource-Konto) | [Intercompany-Planungsgrundlagen](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (e-Learning) (erfordert CustomerSource-Konto)|
+- [Produktprogrammpläne](master-plans.md)  
+- [Plan mit Einschränkungen erstellen](./tasks/constrained-plan.md)
+- [Materialplan für Co-Produkte erstellen](./tasks/create-material-plan-co-products.md)
+- [Produktprogrammplanung und Funktion für mehrere Standorte](master-plan-multisite-functionality.md)
+- [Intercompany-Plan erstellen](./tasks/create-intercompany-plan.md)
+- [Bedarfsplanung – Überblick](introduction-demand-forecasting.md)
+- [Planzahlenverrechnungsschlüssel](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

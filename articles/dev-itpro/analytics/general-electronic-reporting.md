@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
 ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -63,8 +63,8 @@ Eine Geschäftseinheit eines Datenmodells wird als Container (Datensatz) dargest
 
 Eine einzelne Datenmodellkomponente kann mehrere Hierarchien von domänenspezifischen Geschäftsentitäten enthalten. Sie kann auch Modellzuordnungen enthalten, die einen berichtspezifischen Datenfluss bei Laufzeit unterstützen. Die Hierarchien unterscheiden sich durch einen einzelnen Datensatz, der als Stamm zur Modellzuordnung ausgewählt wurde. Beispielsweise unterstützt das Datenmodell des Zahlungsdomänenbereichs möglicherweise die folgenden Zuordnungen:
 
-- Unternehmen -\> Kreditor -\> Zahlungsbuchungen der Kreditorendomäne
-- Debitor -\> Unternehmen -\> Zahlungsbuchungen der Debitorendomäne
+- Unternehmen \> Kreditor \> Zahlungsbuchungen der Kreditorendomäne
+- Debitor \> Unternehmen \> Zahlungsbuchungen der Debitorendomäne
 
 Beachten Sie, dass Geschäftsentitäten (z. B. Unternehmens- und Zahlungstransaktionen) nur einmal erstellt werden. SIe werden von anderen Zuordnungen wiederverwendet.
 
@@ -164,13 +164,23 @@ Informationen zum Registrieren eines neuen ER-Anbieters enthält der Aufgabenlei
 
 #### <a name="repository"></a>Repository
 
-Ein ER-Repository speichert ER-Konfigurationen. Zwei Typen von ER-Repositorys werden derzeit unterstützt: **Operations-Ressourcen** und **LCS-Projekt**.
+Ein ER-Repository speichert ER-Konfigurationen. Vier Typen von EB-Repositorys werden derzeit unterstützt: **Betriebliche Ressourcen**, **LCS-Projekt (LCS)**, **Dateisystem** und **Gesetzliche Konfigurationsdienste (RCS)**.
 
 Ein **Operations-Ressourcen**-Repository bietet Zugriff auf die Liste der Konfigurationen, die Microsoft als ER-Konfigurationsanbieter als Teil der Finance and Operations-Lösung freigibt. Diese Konfigurationen können in die aktuelle Finance and Operations-Instanz importiert und für die elektronische Berichtserstellung verwendet werden. Sie können auch für zusätzliche Lokalisierungen und Anpassungen verwendet werden.
 
 Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das in dem Repository-Registrierungsstadium ausgewählt wurde. ER ermöglicht Ihnen, freigegebene Konfigurationen von der aktuellen Finance and Operations-Instanz in ein spezifisches **LCS-Projekt**-Repository hochzuladen. Sie können auch Konfigurationen aus einem **LCS-Projekt**-Repository in die aktuelle Finance and Operations-Instanz importieren.
 
-Benötigte **LCS-Projekt**-Repositories können einzeln für jeden Konfigurationsanbieter der aktuellen Finance and Operations-Instanz registriert werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
+Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen, die sich als XML-Dateien im speziellen Ordner des lokalen Dateisystems des Computer befinden, auf dem der AOS-Dienst gehostet wird. Obligatorischer Ordner wird in der Repositoryregistrierungsphase ausgewählt. Sie können Konfigurationen aus einem **Dateisystem**-Repository in die aktuelle Finance and Operations-Instanz importieren. Beachten Sie, dass auf diesen Repositorytyp in den folgenden Dynamics 365 for Finance and Operations-Umgebungen zugegriffen werden kann:
+- in der Cloud gehostete Umgebungen, die für Entwicklungszwecke bereitgestellt werden (enthalten Testmodelle eingeschlossener Suiten)
+- lokal bereitgestellte Umgebungen (lokal oder lokale Geschäftsdatenbereitstellung (LBD))
+
+Besuchen Sie die Seite [Elektronische Berichterstellungs-(EB)-Konfigurationen importieren](/electronic-reporting-import-ger-configurations.md) für weitere Details dazu.
+
+Ein **RCS-Instanz**-Repository bietet Zugriff auf die Konfigurationsliste einer bestimmten RCS-Instanz, die in der Repository-Registrierungsphase ausgewählt wurde. Mithilfe von EB können Sie abgeschlossene oder geteilte Konfigurationen aus der ausgewählten RCS-Instanz in die aktuelle Finance and Operations-Instanz importieren und sie können für die elektronische Berichterstellung verwendet werden.
+
+Besuchen Sie die Seite [Elektronische Berichterstellungs-(EB)-Konfigurationen aus Gesetzlichen Konfigurationsdiensten (RCS) importieren](/rcs-download-configurations.md) für weitere Details dazu.
+
+Benötigte **LCS-Projekt**-, **Dateisystem**- und **Gesetzliche Konfigurationsdienste (RCS)**-Repositorys können einzeln für jeden Konfigurationsanbieter der aktuellen Finance and Operations-Instanz registriert werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
 
 ## <a name="supported-scenarios"></a>Unterstützte Szenarien
 ### <a name="building-a-data-model"></a>Erstellen eines Datenmodells
@@ -270,7 +280,7 @@ Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufga
 ## <a name="handling-er-components"></a>ER-Komponenten handhaben
 ### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>Veröffentlichen einer ER-Komponente in LCS, um diese extern anzubieten (Lokalisierung)
 
-Der Eigentümer einer erstellten Komponente (Modell oder Format) kann ER zum Veröffentlichen der abgeschlossenen Version dieser Komponente in LCS verwenden. HIerfür ist ein Repository des **LCS-Projekt**-Typs für den aktuellen ER-Konfigurationsanbieter erforderlich. Wenn der Status der abgeschlossenen Version einer Komponente von **ABGESCHLOSSEN** in **GEMEINSAM GENUTZT** geändert wird, wird diese Version in LCS veröffentlicht. Wenn eine Komponente in LCS veröffentlicht wurde, wird der Besitzer dieser Komponente ein Anbieter des Dienstes, und betreut diesen. Wenn beispielsweise diese Formatkomponente erstellt wurde, um ein elektronisches Dokument zu generieren, das gesetzlich obligatorisch ist (beispielsweise in Übereinstimmung mit dem Lokalisierungsszenario), wird vorausgesetzt, dass dieses Format mit den Gesetzesänderungen konform ist und der Anbieter neue Versionen der Komponente bereitstellt, sobald neue Gesetzgebungsanforderungen auftreten. Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Upload einer Konfiguration nach Lifecycle Services**(Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
+Der Eigentümer einer erstellten Komponente (Modell oder Format) kann ER zum Veröffentlichen der abgeschlossenen Version dieser Komponente in LCS verwenden. HIerfür ist ein Repository des **LCS-Projekt**-Typs für den aktuellen ER-Konfigurationsanbieter erforderlich. Wenn der Status der abgeschlossenen Version einer Komponente von **ABGESCHLOSSEN** in **GEMEINSAM GENUTZT** geändert wird, wird diese Version in LCS veröffentlicht. Wenn eine Komponente in LCS veröffentlicht wurde, wird der Besitzer dieser Komponente ein Anbieter des Dienstes, und betreut diesen. Wenn beispielsweise diese Formatkomponente erstellt wurde, um ein elektronisches Dokument zu generieren, das gesetzlich obligatorisch ist (beispielsweise in Übereinstimmung mit dem Lokalisierungsszenario), wird vorausgesetzt, dass dieses Format mit den Gesetzesänderungen konform ist und der Anbieter neue Versionen der Komponente bereitstellt, sobald neue Gesetzgebungsanforderungen auftreten. Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufgabenleitfaden **ER Upload einer Konfiguration nach Lifecycle Services** (Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozesses) wieder.
 
 ### <a name="importing-an-er-component-from-lcs-to-use-it-internally"></a>Importieren einer ER-Komponente aus LCS zur internen Nutzung
 

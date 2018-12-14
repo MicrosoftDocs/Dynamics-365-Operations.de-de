@@ -3,7 +3,7 @@ title: "Neuheiten und Änderungen"
 description: "Diese Seite weist auf Themen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 for Finance and Operations zu erlernen."
 author: josaw1
 manager: AnnBe
-ms.date: 11/03/2018
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 9b72fe490601d474c54c8bee556719608f4379d3
-ms.openlocfilehash: cd5403a5ab5a4be06b5565528ced30fa0be3cee0
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: e82fffa6a67808de66d5f17d2228549c1b09b75d
 ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -61,6 +61,12 @@ Diese Tabelle enthält die wichtigsten Versionen der Anwendung. Monatscloudaktua
 <tbody>
 <tr class="even">
 </tr>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.1.3</td>
+<td>8.1.227  </td>
+<td>2018. Dezember</td>
+  <td><a href="whats-new-changed-8-1-3.md">Neues oder Änderungen in Dynamics 365 for Finance and Operations, Version 8.1.3 (Dezember 2018)</a></td>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.1.2</td>
@@ -144,11 +150,16 @@ Diese Tabelle enthält die wichtigsten Versionen der Anwendung. Monatscloudaktua
 </tr>
 </thead>
 <tbody>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Plattformupdate 23</td>
+<td>7.0.5126 </td>
+<td>2018. Dezember</td>
+<td><a href="whats-new-platform-update-23.md">Neues oder Änderungen in Dynamics 365 for Finance and Operations, Plattform-Update 23 (Dezember 2018)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Plattformupdate 22</td>
 <td>7.0.5095</td>
-<td>Oktober 2018</td>
+<td>November 2018</td>
 <td><a href="whats-new-platform-update-22.md">Neues oder Änderungen in Dynamics 365 for Finance and Operations, Plattform-Update 22 (November 2018)</a></td><tbody><tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Plattformupdate 21</td>
