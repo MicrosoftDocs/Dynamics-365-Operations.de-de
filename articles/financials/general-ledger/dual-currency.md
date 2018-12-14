@@ -17,14 +17,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c026a540fb7d30644d485b6a057c2c46bd7c091d
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
 ms.contentlocale: de-de
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
 # <a name="dual-currency"></a>Doppelte Währung
+
+[!include [banner](../includes/banner.md)]
 
 Funktion, die in Microsoft Dynamics 365 for Finance and Operations Version 8.1 (Oktober 2018) eingeführt wurde ermöglicht die Buchhaltungswährung als zweite Berichtswährung zu verwenden. Diese Funktion wird auch als *Doppelte Währung* bezeichnet. Die Änderungen für doppelte Währung können nicht durch einen Konfigurationsschlüssel oder einen Parameter deaktiviert werden. Da die Berichtswährung als zweite Buchhaltungswährung verwendet wird, änderte sich die Art, in der die Berichtswährung in der Buchungslogik berechnet wird.
 
@@ -67,8 +69,8 @@ Folgende Module verwenden die Berichtswährung als zweite Buchhaltungswährung:
 
 - [Hauptbuch](#general-ledger)
 - [Finanzberichterstellung](#financial-reporting)
-- [Kreditorenkonten](#accounts-payable/accounts-receivable)
-- [Debitoren](#accounts-payable/accounts-receivable)
+- [Kreditorenkonten](#accounts-payable-and-accounts-receivable)
+- [Debitoren](#accounts-payable-and-accounts-receivable)
 - [Bargeld- und Bankverwaltung](#cash-and-bank-management)
 - [Anlagevermögen](#fixed-assets)
 
@@ -90,7 +92,7 @@ Dank der Verbesserung am Modul **Finanzberichterstellung** können Sie Berichtsw
 
 Diese Änderung wird durch die Einstellung **Währungsanzeige** in der Spaltendefinition verfügbar. Wenn Sie **Berichtswährung aus dem Hauptbuch** auswählen, werden die Beträge in der Spalte nicht umgerechnet. Stattdessen werden Sie direkt im Hauptbuch gemeldet. Wenn Sie in der Spalte umgerechnete Beträge anzeigen möchten, wählen Sie die Option **In XXXX umrechnen** aus, wobei *XXXX* die Berichtswährung ist, die in der Spalte angezeigt werden soll. In diesem Fall werden Buchhaltungswährungsbeträge in die ausgewählte Währung umgerechnet, indem die vorhandene Übersetzungsfunktion verwendet wird.
 
-### <a name="accounts-payableaccounts-receivable"></a>Kreditorenkonten/Debitoren
+### <a name="accounts-payable-and-accounts-receivable"></a>Kreditorenkonten und Debitoren
 
 Die Module **Kreditorenkonten** und **Debitoren** haben bereits Berichtswährungsbeträge verfolgt. Allerdings wurden die Beträge in verschiedenen Prozesse nicht angezeigt oder verwendet. Die folgenden Änderungen wurden vorgenommen:
 

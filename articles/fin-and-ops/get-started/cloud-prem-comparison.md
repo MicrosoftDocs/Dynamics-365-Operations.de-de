@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
-ms.openlocfilehash: bc2b8aafa28d3998e223891fa95e3fe8175349e6
+ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
+ms.openlocfilehash: 58bba3dead4d2a8ed3ae424694377e410df16f4c
 ms.contentlocale: de-de
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -62,7 +62,7 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | | Integration mit PowerBI.com| Ja | Nr. |
 | | Analytische Arbeitsbereiche | Ja | Nr. |
 | | Intelligente Geschäftsprozesse: Empfehlungen| Ja | Nr. |
-| | Power BI-Berichte mit OData mithilfe des Power PI-Desktops oder des Excel PowerQuery-Tools genehmigen | Ja | Nr. |
+| | Power BI-Berichte mit OData mithilfe des Power BI-Desktops oder des Excel PowerQuery-Tools genehmigen | Ja | Nr. |
 | | SQL Server Reporting Services unterstützt die Skalierung nach Außen  | Ja | Nr. |
 | | Telemetrie wird in die Cloud übertragen | Ja | Nr. |
 | Lagerverwaltung| | Ja | Ja |
@@ -90,7 +90,7 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | Serviceverwaltung| | Ja | Ja |
 | Lieferkettenverwaltung| | Ja | Ja |
 | Transportverwaltung| | Ja | Ja |
-| Kreditor-Kooperation| | Ja | Ja|
+| Kreditor-Kooperation| | Ja | Nr. |
 | Lagerortverwaltung| | Ja | Ja |
 | | Mobile App am Lagerort| Ja | Ja |
 | | Power BI-Berichte am Lagerort| Ja | Nr. |

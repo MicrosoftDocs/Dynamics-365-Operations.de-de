@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
+ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
+ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
 ms.contentlocale: de-de
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -152,6 +152,7 @@ Hinweis: Die Arbeitsgänge unten gelten für die neueste Version von Microsoft D
 | 644 | Couponcode entfernen | Fordern Sie den Benutzer auf, Coupons zu entfernen, indem Sie diese in einer Liste auswählen Coupons, die momentan mit der Buchung zusammenhängen. | Ja | Ja | Nr. | Ja | Nr. |
 | 1057 | Z erneut drucken | Druckt den Z-Bericht für die vorherige Schicht oder einer ausgewählten Schicht aus. | Ja | Ja | Ja | Nr. | Nr. |
 | 1216 | Ein neues Kennwort eingeben | Diesen Vorgang kann ein Benutzer, der über die Kennwortrücksetzungsberechtigung verfügt, verwenden kann, um das Kennwort eines Mitarbeiters zurückzusetzen, indem er ein temporäres Kennwort verwendet. | Ja | Ja | Ja | Nr. | Nr. |
+| 1219 | URL in POS öffnen | Mithilfe dieses Arbeitsgangs kann ein Benutzer eine von einem Administrator konfigurierte URL in POS öffnen. | Ja | Ja | Ja | Ja | Nr. | 
 | 109 | Produkt zurückgeben | Dient zum Ausführen einer Retoure für einzelne Produkte. Das nächste gescannte Produkt wird als zurückgegebenes Produkt mit einer negativen Menge und einem negativen Preis angezeigt. | Ja | Ja | Nr. | Ja | Nr. |
 | 114 | Retourenbuchung | Zurückrufen einer vorherigen Buchung anhand der Bonnummer, um einige oder alle Produkte zurückzugeben. | Ja | Ja | Ja | Ja§ | Nr. |
 | 1211 | Ablage in Tresor | Führt eine Ablage im Tresor durch, um Geld aus dem Register in einen Tresor einzuschließen. | Ja | Ja | Ja | Ja | Nr. |

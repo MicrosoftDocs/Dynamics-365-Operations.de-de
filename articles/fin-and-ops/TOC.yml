@@ -44,11 +44,15 @@
               href: get-started/mainstream-support-ax-2009-2012.md
             - name: Entfernte oder veraltete Funktionen
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
-            - name: "Verschobene Funktionen von AX\_2012"
+            - name: "Funktionen von AX\_2012, die verschoben wurden"
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
-            - name: In lokalen Bereitstellungen nicht implementierte Funktionen
+            - name: In On-Premises-Bereitstellungen nicht implementierte Funktionen
               href: get-started/features-not-implemented-on-prem.md
-            - name: Platform Update 22 (November 2018)
+            - name: "Finance and Operations, Version\_8.1.3 (Dezember\_2018)"
+              href: get-started/whats-new-changed-8-1-3.md
+            - name: Platform update 23 ( (Dezember 2018)
+              href: get-started/whats-new-platform-update-23.md
+            - name: Platform update 22 (November 2018)
               href: get-started/whats-new-platform-update-22.md
             - name: "Finance and Operations, Version\_8.1.2 (November\_2018)"
               href: get-started/whats-new-changed-8-1-2.md
@@ -56,13 +60,13 @@
               href: get-started/whats-new-changed-8-1-1.md
             - name: "Finance and Operations,Version\_8.1 (Oktober\_2018)"
               href: get-started/whats-new-changed-8-1-October-2018.md
-            - name: "Platform Update\_21 (Oktober\_2018)"
+            - name: "Platform update\_21 (Oktober\_2018)"
               href: get-started/whats-new-platform-update-21.md
-            - name: "Platform Update\_20 (September\_2018)"
+            - name: "Platform update\_20 (September\_2018)"
               href: get-started/whats-new-platform-update-20.md
             - name: "Finance and Operations, Version\_8.0 (April\_2018)"
               href: get-started/whats-new-changed-8-0-April-2018.md
-            - name: Platform Update 15 (März 2018)
+            - name: Platform update 15 (März 2018)
               href: get-started/whats-new-platform-update-15.md
             - name: 'Lokale Bereitstellungen von Finance and Operations, Enterprise Edition 7.2 mit Platform Update 12, März 2018'
               href: get-started/whats-new-LBD-PU12-App72.md
@@ -146,12 +150,14 @@
               href: organization-administration/tasks/set-users-preferred-time-zone.md
             - name: Lifecycle Services verstehen
               href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json
-        - name: Dokumentation lesen und ausführen
+        - name: Lesen und Ausführen der Dokumentation
           items:
             - name: Hilfesystem
               href: get-started/help-overview.md
             - name: Verbinden des Hilfesystems
               href: get-started/help-connect.md
+            - name: Verbinden einer benutzerdefinierten Hilfe-Website
+              href: get-started/help-custom.md
             - name: Anzeigen und Exportieren von Feldbeschreibungen
               href: get-started/view-export-field-descriptions.md
             - name: Aufgabenleitfäden und Aufgabenaufzeichnung
@@ -205,7 +211,7 @@
         - name: Voraussetzungen für Standardkosten
           href: ../supply-chain/cost-management/prerequisites-standard-costs.md
           items:
-            - name: Standardkostenumrechnung (Überblick)
+            - name: Standardkostenumrechnung (Übersicht)
               href: ../supply-chain/cost-management/standard-cost-conversion-overview.md
             - name: Voraussetzung für eine Standardkostenumrechnung
               href: ../supply-chain/cost-management/prerequisites-standard-cost-conversion.md
@@ -1091,7 +1097,7 @@
                   href: ../financials/general-ledger/tasks/mass-financial-period-close.md
             - name: Mehrwertsteuer
               items:
-                - name: Mehrwertsteuerüberblick
+                - name: Mehrwertsteuerübersicht
                   href: ../financials/general-ledger/indirect-taxes-overview.md
                 - name: Mehrwertsteuersätze basierend auf der Berechnungsgrundlage und den Berechnungsmethoden
                   href: ../financials/general-ledger/marginal-base-field.md
@@ -1241,8 +1247,10 @@
               href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
             - name: Ändern von Zeilendefinitionszellen
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: Finanzberichterstellungs-Datamart zurücksetzen
+            - name: Zurücksetzen des Finanzberichterstellungs-Datamart
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: Elektronische Nachrichten
+          href: ../financials/general-ledger/electronic-messaging.md
     - name: Lokalisierung und rechtliche Funktionen
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -1644,7 +1652,7 @@
               href: ../financials/localizations/emea-registration-ids.md
             - name: Verlagerung der Steuerschuld
               href: ../financials/localizations/emea-reverse-charge.md
-            - name: SEPA-Kreditübertragungsüberblick
+            - name: SEPA-Kreditübertragungsübersicht
               href: ../financials/accounts-payable/sepa-credit-transfer.md
             - name: SEPA-Lastschriftüberblick
               href: ../financials/accounts-receivable/sepa-direct-debit-overview.md
@@ -2222,6 +2230,10 @@
               href: ../financials/localizations/rus-transactions-settlement-date.md
             - name: Rechnungen zur Zahlung
               href: ../financials/localizations/rus-invoice-payment.md
+            - name: Finanzberichterstellung
+              href: ../financials/localizations/rus-financial-reports.md
+            - name: Erstellen eines Einkaufsbuchs
+              href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Saudi-Arabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2407,7 +2419,7 @@
               href: hr/tasks/create-performance-review.md
         - name: Mitarbeiter fördern und schulen
           items:
-            - name: Überblick über die Leistungsverwaltung
+            - name: Übersicht über die Leistungsverwaltung
               href: ../talent/performance-management-overview.md
             - name: Mitarbeiterqualifikationen auf die Geschäftsanforderungen ausrichten
               href: ../talent/skills.md
@@ -2741,6 +2753,8 @@
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: Importieren von Konfigurationen von Lifecycle Services
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: 'Importieren von Konfigurationen für die elektronische Berichterstellung (Electronic Reporting, ER) aus den gesetzlichen Konfigurationsdiensten (Regulatory Configuration Services, RCS)'
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md
                 - name: Herunterladen von Konfigurationen von Lifecycle Services
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
                 - name: Importieren von Konfigurationen
@@ -3046,7 +3060,7 @@
               href: ../supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts.md
         - name: Bestellungen
           items:
-            - name: Überblick über Bestellungen
+            - name: Übersicht über Bestellungen
               href: ../supply-chain/procurement/purchase-order-overview.md
             - name: Bestellungen genehmigen und bestätigen
               href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
@@ -3343,7 +3357,7 @@
                   href: ../supply-chain/production-control/flushing-principles.md
                 - name: Crossdocking von Produktionsaufträgen zu Ausgangsrampen
                   href: ../supply-chain/production-control/cross-docking-opportunities.md
-                - name: Lagerplatz für den Produktions-Warenabgang für fertige Waren festlegen
+                - name: Standort für den Produktions-Warenabgang für fertige Waren festlegen
                   href: ../supply-chain/production-control/production-output-location.md
                 - name: Fertigmeldung für Stücklisten
                   href: ../supply-chain/production-control/report-boms-as-finished.md
@@ -4145,13 +4159,15 @@
               href: ../supply-chain/warehousing/change-warehouse-mobile-device-displays.md
             - name: Gemischter Ladungsträger – Empfang auf einem mobilen Gerät
               href: ../supply-chain/warehousing/mixed-license-plate-receiving.md
-            - name: Anzeige von älteren Chargen am Lagerort auf einem mobilen Gerät konfigurieren
+            - name: Konfigurieren der Anzeige von älteren Chargen am Lagerort auf einem mobilen Gerät
               href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
-            - name: Älteste Charge mit einem mobilen Gerät entnehmen
+            - name: Entnahme der ältesten Charge mit einem mobilen Gerät
               href: ../supply-chain/warehousing/pick-oldest-batch.md
-        - name: Aktualisierung und Migration
+            - name: Verwenden des Prozessleitfadens
+              href: ../supply-chain/warehousing/process-guide-framework.md
+        - name: Upgrade und Migration
           items:
-            - name: Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
+            - name: Upgrade von Lagerortverwaltungsprozessen von Microsoft Dynamics AX 2012 auf Finance and Operations
               href: ../supply-chain/warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Zugänge für die Erfassung und Einlagerung
           items:

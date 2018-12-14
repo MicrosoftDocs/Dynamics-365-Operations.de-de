@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
 ms.contentlocale: de-de
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -53,10 +53,10 @@ Der synchrone Übergangsmodus wird im Hauptbuchparameter nicht mehr weitergefüh
 | **Ersetzt durch eine andere Funktion?**   | Asynchrone und geplanten Charge sind Optionen, die anstatt Synchron verwendet werden können.   |
 | **Betroffene Produktbereiche**         | Hauptbuch, Kreditoren, Debitoren, Beschaffung, Ausgaben    |
 | **Bereitstellungsoption**              | Alle  |
-| **Status**                         | Veraltet:  - Zielzeitrahmen für die Entfernung der Funktionalität ist Version 10.0.|
+| **Status**                         | Veraltet: - Zielzeitrahmen für die Entfernung der Funktionalität ist Version 10.0.|
 
 ### <a name="electronic-reporting-for-russia"></a>Elektronisches Berichtsformat für Russland
-Funktion für das Konfigurieren von .txt und  .xml-Datei-Formaten für Meldungen. 
+Funktion für das Konfigurieren von .txt und .xml-Datei-Formaten für Meldungen. 
 
 |   |  |
 |------------|--------------------|
@@ -87,6 +87,19 @@ Funktion, die Karteien generierte elektronische Meldungen zum Ordner für das we
 | **Betroffene Produktbereiche**         | Hauptbuch, Steuer |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Entfernt von Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20. |
+
+
+### <a name="profit-tax-register-wizard"></a>Gewinnsteuerregister-Assistent
+Funktion zum Erstellen von Vorlagen für neue Gewinnsteuerregister. Diese Funktion erstellt X++-Objekte für neue Register, die dann als Vorlagen erstellt werden, bei denen die entsprechende Berechnungslogik hinzugefügt wurde.
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Funktion ist nicht mit dem Dynamics 365 for Finance and Operations-Erweiterbarkeitsmodell kompatibel. |
+| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Betroffene Produktbereiche**         | MwSt. |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Entfernt von Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 mit Plattformupdate 15
 Keine Funktionen sind in dieser Version entfernt oder veraltet worden. Plattformupdate 15 ist kumulativ und enthält neue oder geänderte Funktionen aus Plattformupdate 13, Plattformupdate 14 und Plattformupdate 15.
@@ -993,6 +1006,17 @@ Der Produktgenerator wurde zur dynamischen Konfiguration von Artikel aus einem A
 | **Ersetzt durch eine andere Funktion?**   | Ja. Die einschränkungsbasierte Konfiguration wurde in Dynamics AX 2012 eingeführt, wo bereits angekündigt wurde, dass der Produkt-Generator in zukünftigen Versionen veraltet sein wird. Die Technologie der einschränkungsbasierten Konfiguration wird bei den Produktmastern ausgewählt, um die Konfiguration zu aktivieren. Weitere Informationen finden Sie unter [Erstellen eines Produktkonfigurationsmodells](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung, Vertrieb und Marketing  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.      |
+
+### <a name="production-floor-app"></a>Produktions-App
+Dies ist die App für Tabletgeräte, auf denen Windows 8.1 RT und Windows 8.1 Pro ausgeführt wird.
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Mit dem Wechsel zu einem webbasierten Client ist es möglich, ähnliche Funktionen durch den systemeigenen Dynamics AX 7.0-Client bereitzustellen. Das Einzelvorgangslisten-Gerät stellt eine Produktionsbenutzer-Oberfläche bereit, die für Toucheingabe- und Tabletformularfaktoren optimiert ist. |
+| **Ersetzt durch eine andere Funktion?**   | Ja. Das Einzelvorgangslisten-Gerät, das ein systemeigener Bestandteil von Microsoft Dynamics AX 7.0 ist.                                                                           |
+| **Betroffene Produktbereiche**         | Produktionssteuerung                                                |
+| **Status**                         | Veraltet: Ein Datum für die Entfernung aus dem Microsoft Store ist für diese Funktion noch nicht festgelegt worden.                                                |
+
 
 ### <a name="rename-product-dimension"></a>Produktdimension umbenennen
 

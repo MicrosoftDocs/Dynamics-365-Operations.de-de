@@ -1,9 +1,9 @@
 ---
 title: "Produkteingang für Bestellungen"
-description: "Dieser Artikel beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten."
+description: "Dieses Thema beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
+ms.sourcegitcommit: 09432d278c51301f8b01fef8cbd3353af75a88f3
+ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/08/2018
 
 [!include [retail name](../includes/retail-name.md)]
 
-Dieser Artikel beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten.
+Dieses Thema beschreibt die verschiedenen Optionen für die Registrierung von zugehenden Produkten.
 
 Der Produktzugang ist der Vorgang des Festhaltens des Zugangs von bestellten Produkten. So können die Bestellpositionen für die Fakturierung verarbeitet werden. In einigen Fällen durchlaufen Produkte eine Vorregistrierung, bei der weitere Informationen vom Lieferanten vor dem Zugang der Produkte festgehalten werden. Wenn Produkte zugehen werden sie zuerst als **Registriert** markiert. Produkte können dann zusätzliche Prozesse durchlaufen – beispielsweise die Qualitätssicherung – bevor Sie letztendlich als **Eingegangen** markiert werden.
 
@@ -46,8 +46,6 @@ Produkte, die am Lagerort eingehen, können Qualitätskontrollen durchlaufen, be
 
 ## <a name="product-receipt"></a>Produktzugang
 In den meisten Fällen wird die Aktion **Produktzugang** auf der Seite **Bestellungen** verwendet, um Produkte für die Bestellung als **Empfangen** zu kennzeichnen. Die Seite **Buchen des Produktzugangs** hat verschiedene Optionen für die als geliefert gebuchte Menge. Sie können z. B. das Feld **Menge** auf **Bestellte menge** oder **Menge der aktuellen Lieferung** festlegen. Alternativ nutzen Sie bei einem Lagereingangsprozess das Feld **Registrierte Menge**. Sie können die Mengen für jede Auftragsposition die als **Empfangen** gekennzeichnet wird ändern, um eventuelle Differenzen zu berücksichtigen (z. B. zu große oder kleine Lieferungen). Während des Produktzugangs müssen Sie einen Produktezugangsbezeichner festlegen. Dieser ist in der Regel ein Verweis auf den Lieferschein des Lieferanten. Dieser Bezeichner ist für Buchung erforderlich. Er ermöglicht Prüfungen oder Audits der Lieferscheine des Lieferanten gegen den Zugang und die gebuchten Bestände oder Ausgaben.  
-
-Wenn ein Mitarbeiter Waren über eine Bestellanforderung bestellt, kann dieser Mitarbeiter zur Bestätigung des Produkteingangs aufgefordert werden. Dieses Verhalten können Sie über einen Workflow konfigurieren. Sie können die Workflow-Bedingung so konfigurieren, dass sie Ihren Geschäftsprozessen entsprechen.  
 
 POs können für Produkte erstellt werden, die nicht als Bestand vorgesehen sondern Ausgaben sind. Diese Kategorie umfasst Bestellpositionen bei denen Produkte als über ihre Lagersteuerungsgruppe als **Nicht gelagert** markiert werden sowie Positionen, die Beschaffungskategorien verwenden. In diesem Fall durchlaufen die Artikel möglicherweise nicht die Zugangsregistrierung am Lagerort. Stattdessen wir die Aktion **Produktzugang** verwendet, um den Zugang direkt auf der Bestellung festzuhalten. Der Zugang basiert auf der Bestellten menge und nicht auf der erfassten Menge.  
 

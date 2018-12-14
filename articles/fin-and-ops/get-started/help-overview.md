@@ -1,9 +1,9 @@
 ---
 title: Finance and Operations-Hilfesystem
-description: "Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems. Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können."
+description: "Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems."
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
-ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: dc057faf3cd08ea1c939d0cc35ae404bde59e514
 ms.contentlocale: de-de
-ms.lasthandoff: 10/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems. Er erläutert auch, wie Sie benutzerspezifische Dokumentationen und Schulungen für Ihre Organisation bereitstellen können. 
+Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems. 
 
 > [!NOTE] 
 > Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
@@ -48,8 +48,6 @@ Finance and Operations umfasst ein vollständig neues Hilfesystem, das auf zwei 
 Sie können auf die Hilfe aus dem Hilfebereich zugreifen, unabhängig davon, welches Produkt Sie verwenden. Der folgende Screenshot zeigt Finance and Operations.
 
 ![Hilfebereich](./media/help-pane-ops-task-guides.png)
-
-Dieses Thema beschreibt das Hilfesystem und erläutert, wie Sie debitorenspezifische Dokumentationen und Ressourcen zur Produktschulung für Ihre Organisation erstellen können.
 
 > [!IMPORTANT]
 > **Aufgabenleitfäden** sind momentN nicht für Einzelhandel oder im Hilfebereich für Talent verfügbar (einige Aufgabenleitfäden sind im Bereich Erste Schritte für Talent verfügbar). Prozedurale Hilfe finden Sie auch auf der docs.microsoft.com-Website ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) für Retail und Talent.
@@ -83,7 +81,7 @@ Um ein RSS-Feed aller Aktualisierungen des Unified Operations-Inhalts zu abonnie
 ### <a name="give-feedback"></a>Rückmeldung geben 
 Wir freuen uns über Kundenfeedback. Sie können entweder kommentieren oder Änderungen an unserem Inhalt über GitHub vorschlagen. Weitere Informationen zu unserem Feedbacksystem finden Sie unter [diesem Blogbeitrag](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-feedback"></a>Feedback senden 
+#### <a name="leave-us-feedback"></a>Feedback senden 
 Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdessen einen Kommentar am unteren Seitenrand.  
 
 1. Klicken Sie auf **Feedback**, um zu den Kommentaren am unteren Seitenrand zu gelangen, und klicken Sie anschließend entweder auf **Produktfeedback** oder **Anmelden, um Dokumentationsfeedback zu senden**.
@@ -93,8 +91,6 @@ Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdesse
 2. Beginnen Sie damit, Ihre Kommentare einzugeben, und klicken Sie dann auf **Feedback senden**.
 
 ![Kommentar veröffentlichen](./media/feedback.png)
-
-
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Schlagen Sie eine Änderung vor oder tragen Sie Inhalte bei über GitHub
 Um eine Änderung vorzuschlagen, müssen Sie ein GitHub-Konto haben und unterzeichnen eine Lizenzvereinbarung der beteiligten Person.  Nachdem Sie eine Pullanforderung senden, wiederholen Sie die vorgeschlagenen Änderungen. Gegebenenfalls besprechen wir sie intern und wenden uns wieder an Sie.  
@@ -122,22 +118,7 @@ Um die geführte, interaktive Umgebung zu starten, klicken Sie auf **Aufgabenlei
 > [!IMPORTANT] 
 > Die Daten, die Sie eingeben, wenn Sie einen Aufgabenleitfaden wiedergeben, sind real. In einer Produktionsumgebung werden die Daten in das Unternehmen eingegeben, das Sie derzeit verwenden.
 
-### <a name="it-all-begins-with-task-recorder"></a>Alles beginnt mit der Aufgabenaufzeichnung
-
-Aufgabenleitfäden werden mit der Aufgabenaufzeichnung erstellt. Wenn Sie die Aufgabenaufzeichnung verwenden, werden alle Ihre Aktivitäten in Finance and Operations Benutzeroberfläche (wie Klicken auf Menüs, Ändern von Einstellungen und Dateneingabe) aufgezeichnet. Die Schritte, die Sie erfassen, werden zusammenfassend als Aufgabenaufzeichnung bezeichnet. Wie wir im vorherigen Abschnitt erklärt haben, können Aufgabenaufzeichnungen im Hilfe-Bereich angezeigt und als Aufgabenleitfaden wiedergegeben werden. Jedoch gibt es andere Methoden, wie Sie die Aufgabenaufzeichnungen verwenden können:
-
--   **Speichern von Aufgabenaufzeichnungen im BPM** - Sie können eine Aufgabenaufzeichnungin einer Hierarchie einer BPM-Bibliothek in LCS speichern Wenn Sie eine Aufgabenaufzeichung in BPM speichern, wird ein Flussdiagramm zusammen mit den Schritten der Aufzeichnung generiert und angezeigt. 
-
-    > [!Note]
-    > Um eine Aufgabenaufzeichnung im Hilfe-Bereich von Finance and Operations anzuzeigen und sie als Aufgabenleitfaden wiederzugeben, müssen Sie die Aufzeichnung in einer BPM-Bibliothek speichern.
-    
--   **Aufgabenaufzeichnungen als Word-Dokumente speichern** - Indem Sie eine Aufgabenaufzeichnung als Word Dokument speichern, können Sie einfach druckbare Trainingshandbücher für Ihre Organisation erstellen.
-
-Weitere Informationen zur Aufgabenaufzeichnung finden Sie unter [Aufgabenaufzeichnung in Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
-
-### <a name="creating-customized-task-recordings"></a>Erstellen von angepassten Aufgabenaufzeichnungen
-
-Sie können eigene Aufgabenaufzeichnungen erstellen, oder Sie können von Microsoft zur Verfügung gestellte Aufgabenaufzeichnungen herunterladen und anpassen. Daher können Sie eine benutzerdefinierte Hilfe für Ihre Organisation erstellen, die Ihre spezifische Finance and Operations-Implementierung anzeigt. Um eine Aufgabenaufzeichnung im Hilfe-Bereich von Finance and Operations anzuzeigen und sie als Aufgabenleitfaden wiederzugeben, müssen Sie die Aufzeichnung in einer BPM-Bibliothek in LCS speichern. Wenn Partner eine Bibliothek auf eine Unternehmensbibliothek hochstufen und in eine Lösung aufnehmen, wir diese für die Kunden verfügbar. Ausführliche Anweisungen finden Sie unter [Verwenden der Aufgabenaufzeichnungen zum Erstellen einer Dokumentation oder eines Trainings](../../dev-itpro/user-interface/task-recorder.md).
+Sie können Aufgabenaufzeichnung verwenden, um Ihre eigenen benutzerdefinierten Aufgabenleitfäden zu erstellen. Weitere Informationen finden Sie unter [Dokumentation oder Schulung mithilfe von Aufgabenaufzeichnungen erstellen](../../dev-itpro/user-interface/task-recorder-training-docs.md)...
 
 ## <a name="in-product-help"></a>Produkthilfe
 Um auf Hilfeinhalte innerhalb von Finance and Operations zuzugreifen, klicken Sie entweder auf das **Hilfe** (**?**) Symbol oder drücken Sie Strg+Shift+?. In beiden Fällen wird der Bereich Hilfe geöffnet. Über den Bereich Hilfe können Sie auf Artikel oder Aufgabenleitfäden zugreifen. 
@@ -184,6 +165,11 @@ Nachdem ein Systemadministrator diese Schritte eingerichtet hat, können Sie den
 Übersetzte Aufgabenleitfäden werden in die Bibliotheken mit "Alle Sprachen" im Titel freigegeben. Um lokalisierte Aufgabenleitfäden in Finance and Operations anzuzeigen, stellen Sie sicher, dass die mit der entsprechenden Bibliothek verbunden sind. Die im Aufgabenleitfaden angezeigte Sprache wird für jeden Benutzer durch Spracheinstellungen unter **Optionen** &gt; **Voreinstellungen** gesteuert. 
 -   Wenn ein Aufgabenleitfaden übersetzt wurde, wird beim Öffnen der gesamte Text des Leitfadens in der ausgewählten Sprache angezeigt.
 -   Wenn ein Aufgabenleitfaden noch nicht übersetzt wurde, wird beim Öffnen nur ein Teil des Texts (der Text der Steuerelemente) in der ausgewählten Sprache angezeigt.
+
+## <a name="creating-custom-help"></a>Erstellen einer benutzerdefinierten Hilfe
+Sie können Hilfe für Benutzer erstellen, indem Sie benutzerdefinierte Aufgabenleitfäden erstellen oder Ihre eigene Website mit dem Hilfebereich verbinden. Weitere Details finden Sie unter: 
+- [Wie Sie eine Aufgabenaufzeichnung zu Dokumentations- und Schulungszwecken erstellen](../../dev-itpro/user-interface/task-recorder.md).
+- [Benutzerdefinierte Hilfe für Finance and Operations erstellen (Whitepaper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
