@@ -38,95 +38,93 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 
 ## <a name="dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations
 
-| Bereich | Funktion | Cloud | Lokal|
+| Bereich | Funktion | Cloud | Lokal |
 |---|---|---|---|
 | Compliance und Bescheinigungen | | Ja | Ja |
-| | SOC 1 Type 1 Zertifizierung| Ja | Nr. |
+| | SOC 1 Type 1 Zertifizierung | Ja | Nr. |
 | Kostenrechnung | | Ja | Ja |
-| | Power BI-Inhalt der Kostenrechnungsanalyse| Ja | Nr. |
-| | Kostenrechnungsarbeitsbereich für mobile App| Ja | Nr. |
-| Kostenverwaltung| | Ja | Ja |
 | | Power BI-Inhalt der Kostenrechnungsanalyse | Ja | Nr. |
-| Datenverwaltung und -integration| | Ja | Ja |
-| | Konfigurations-getriebene Erweiterung| Ja | Nr. |
-| | Exportieren von Daten in Ihrem eigenen Data Warehouse| Ja | Ja |
+| | Kostenrechnungsarbeitsbereich für mobile App | Ja | Nr. |
+| Kostenverwaltung | | Ja | Ja |
+| | Power BI-Inhalt der Kostenrechnungsanalyse | Ja | Nr. |
+| Datenverwaltung und -integration | | Ja | Ja |
+| | Konfigurations-getriebene Erweiterung | Ja | Nr. |
+| | Exportieren von Daten in Ihrem eigenen Data Warehouse | Ja | Ja |
 | | Aktivieren des Exports von stufenweisen Aktualisierungen an einer Datenentität | Ja | Nr. |
-| | Datenintegrationen                 |Ja | Ja|
-| Dokumentverwaltung| | Ja| Ja |
-| Finanzverwaltung|  | Ja | Ja |
-| Hilfe| | Ja | Nr. |
+| | Datenintegrationen | Ja | Ja |
+| Dokumentverwaltung | | Ja| Ja |
+| Finanzverwaltung | | Ja | Ja |
+| Hilfe | | Ja | Nr. |
 | Personalverwaltung | | Ja | Ja |
-| Intelligence| | Ja | Ja |
-| | Elektronische Meldung (ER) - Integration mit Kreditbriefen | Ja | Nr.|
-| | Elektronische Meldung (ER) - Integration mit SharePoint | Ja | Nr.|
-| | Integration mit PowerBI.com| Ja | Nr. |
+| Intelligence | | Ja | Ja |
+| | Elektronische Meldung (ER) - Integration mit Kreditbriefen | Ja | Nr. |
+| | Elektronische Meldung (ER) - Integration mit SharePoint | Ja | Nr. |
+| | Integration mit PowerBI.com | Ja | Nr. |
 | | Analytische Arbeitsbereiche | Ja | Nr. |
-| | Intelligente Geschäftsprozesse: Empfehlungen| Ja | Nr. |
+| | Intelligente Geschäftsprozesse: Empfehlungen | Ja | Nr. |
 | | Power BI-Berichte mit OData mithilfe des Power BI-Desktops oder des Excel PowerQuery-Tools genehmigen | Ja | Nr. |
-| | SQL Server Reporting Services unterstützt die Skalierung nach Außen  | Ja | Nr. |
+| | SQL Server Reporting Services unterstützt die Skalierung nach Außen | Ja | Nr. |
 | | Telemetrie wird in die Cloud übertragen | Ja | Nr. |
-| Lagerverwaltung| | Ja | Ja |
-| Lifecycle Services| | Ja | Ja |
+| Lagerverwaltung | | Ja | Ja |
+| Lifecycle Services | | Ja | Ja |
 | | Konfigurierbare Geschäftsprozesse | Ja | Nr. |
-| Lokalisierungen| | Ja | Ja |
-| Fertigung| | Ja | Ja |
-| Produktprogrammplanung und Bedarfsplanung| | Ja | Ja |
-| Mobile App Arbeitsbereiche und Plattform  | | Ja | Ja |
-| Office-Integration| | Ja | Ja |
+| Lokalisierungen | | Ja | Ja |
+| Fertigung | | Ja | Ja |
+| Produktprogrammplanung und Bedarfsplanung | | Ja | Ja |
+| Mobile App Arbeitsbereiche und Plattform | | Ja | Ja |
+| Office-Integration | | Ja | Ja |
 | Organisationsverwaltung | | Ja | Ja |
-| Payroll|  | Ja | Ja |
-| | Direktüberweisung| Ja | Nr. |
-| Beschaffung| | Ja | Ja |
-| | Angebot für die Bestellanforderungsposition aus dem externen Katalog| Ja | Nr. |
-| | Einkaufausgabenanalyse Power BI-Berichte| Ja | Nr. |
+| Payroll | | Ja | Ja |
+| | Direktüberweisung | Ja | Nr. |
+| Beschaffung | | Ja | Ja |
+| | Angebot für die Bestellanforderungsposition aus dem externen Katalog | Ja | Nr. |
+| | Einkaufausgabenanalyse Power BI-Berichte | Ja | Nr. |
 | Produktinformationsverwaltung | | Ja | Ja |
-| Produktmasterdaten| | Ja | Ja|
+| Produktmasterdaten | | Ja | Ja |
 | Produktion | | Ja | Ja |
-| | Power BI-Berichte – Produktionsleistung| Ja | Nr. |
-| Projektverwaltung und -verrechnung|  | Ja | Ja |
-| Vertrieb| | Ja | Ja |
-| | Vertriebs-und Rentabilitätsleistungsinhalt für Power BI Berichte| Ja | Nr. |
+| | Power BI-Berichte – Produktionsleistung | Ja | Nr. |
+| Projektverwaltung und -verrechnung | | Ja | Ja |
+| Vertrieb | | Ja | Ja |
+| | Vertriebs-und Rentabilitätsleistungsinhalt für Power BI Berichte | Ja | Nr. |
 | Sicherheit | | Ja | Ja |
-| Serviceverwaltung| | Ja | Ja |
-| Lieferkettenverwaltung| | Ja | Ja |
-| Transportverwaltung| | Ja | Ja |
-| Kreditor-Kooperation| | Ja | Nr. |
-| Lagerortverwaltung| | Ja | Ja |
-| | Mobile App am Lagerort| Ja | Ja |
-| | Power BI-Berichte am Lagerort| Ja | Nr. |
+| Serviceverwaltung | | Ja | Ja |
+| Lieferkettenverwaltung | | Ja | Ja |
+| Transportverwaltung | | Ja | Ja |
+| Kreditor-Kooperation | | Ja | Nr. |
+| Lagerortverwaltung | | Ja | Ja |
+| | Mobile App am Lagerort | Ja | Ja |
+| | Power BI-Berichte am Lagerort | Ja | Nr. |
 | Webclient | | Ja | Ja |
-| | Aufgabenaufzeichnung - Aufgabenaufzeichnung aus der BPM-Bibliothek speichern oder laden| Ja | Nr. |
+| | Aufgabenaufzeichnung - Aufgabenaufzeichnung aus der BPM-Bibliothek speichern oder laden | Ja | Nr. |
 | Unterstützung | | Ja | Ja |
-| | Zugriff auf Support über das Menü Hilfe und Support| Ja | Nr. |
+| | Zugriff auf Support über das Menü Hilfe und Support | Ja | Nr. |
 
 ### <a name="development-and-administration"></a>Entwicklung und Verwaltung
 
-| Bereich | Funktion | Cloud | Lokal|
+| Bereich | Funktion | Cloud | Lokal |
 |---|---|---|---|
 | Produzieren und testen | | Ja | Ja |
-| Erweiterbarkeit|  | Ja | Ja |
-| Überwachung und Telemetrie  || Ja | Ja |
-| Plattformkompatibilität  || Ja | Ja |
+| Erweiterbarkeit | | Ja | Ja |
+| Überwachung und Telemetrie | | Ja | Ja |
+| Plattformkompatibilität | | Ja | Ja |
 | Wartung | | Ja | Ja |
 | | Wartungsumgebungen | Ja | Nr. |
 | Trace Parser und PerfTimer | | Ja | Nr. |
 | Upgrade durchführen | | Ja | Ja |
 | | Upgrade durchführen | Ja | Nr. |
 | | Aktualisierung und Support für frühere Versionen | Ja | Nr. |
-| Visual Studio Entwicklung |  | Ja | Ja |
-
+| Visual Studio Entwicklung | | Ja | Ja |
 
 ### <a name="retail"></a>Retail 
 Eine Liste der Einzelhandelsfunktionen, die in den lokalen Bereitstellungen verfügbar sind, finden Sie unter [In lokalen Bereitstellungen verfügbare Einzelhandelsfunktionen](../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
 
-| Bereich | Funktion | Cloud | Lokal|
+| Bereich | Funktion | Cloud | Lokal |
 |---|---|---|---|
 | Alle Talent-Bereiche | Alle Talentfunktionen | Ja | Nr. |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Funktionen, die in lokalen Bereitstellungen nicht implementiert sind](features-not-implemented-on-prem.md)
-
 

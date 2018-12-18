@@ -51,7 +51,7 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Onboarding eines Projekts</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Vorbereiten der Liveschaltung</a></p>
-  
+
 <h3><a href="../financials/index.md">Finanzverwaltung</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kreditorenkonten</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Debitorenkonten</a></p>
@@ -65,7 +65,7 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 <p><a href="../financials/public-sector/public-sector-functionality.md">Öffentlicher Sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale gesetzliche Besonderheiten</a></p>
 
-<H3><a href="hr/hr-landing-page.md">Personalverwaltung</a></h3>
+<h3><a href="hr/hr-landing-page.md">Personalverwaltung</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Vorteile</a></p>
 <p><a href="../talent/performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
 <p><a href="../talent/questionnaires.md">Fragebogen</a></p>
