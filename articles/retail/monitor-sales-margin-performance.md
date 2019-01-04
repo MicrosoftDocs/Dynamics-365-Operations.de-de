@@ -35,21 +35,19 @@ Sie können den Verkauf und die Gewinnspannen mit Microsoft Dynamics 365 for Ret
 
 Im Rahmen von Microsoft Dynamics 365 for Retail können Benutzer den Verkauf und die Gewinnspanne in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für die folgenden Dimensionen überwachen:
 
--   Produkte
--   Kategorien
--   Rabatte
--   Jahre als Zeitraum
--   Register/Terminals
--   Mitarbeiter/Angestellte
--   Kunden
--   Organisationseinheiten
+- Produkte
+- Kategorien
+- Rabatte
+- Jahre als Zeitraum
+- Register/Terminals
+- Mitarbeiter/Angestellte
+- Kunden
+- Organisationseinheiten
 
 Darüber hinaus können die Benutzer mit zwei eindeutigen Berichte mit der hierarchischen Rasterstrukturierung den Verkauf und die Gewinnspanne vom obersten Konten aus für die einzelnen untergeordneten Knoten der Kategorie in der standardmäßigen Produktkategoriehierarchie detailliert darstellen. Die Benutzer können von der obersten Organisationseinheit aus einen einzelnen Kanal in der Organisationshierarchie detailliert darstellen, die als standardmäßige Organisationshierarchie für die Berichterstellungshierarchie im Einzelhandel definiert wird. Sie können die Berichte über die folgenden Orten öffnen:
 
--   **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Retail** &gt; **Channels** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
--   **Kategorie- und Produktverwaltung**-Arbeitsbereich &gt; **Retail** &gt; **Produkt und Kategorien** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
--   **Verwaltung von Preisen und Rabatten**-Arbeitsbereich &gt; **Retail** &gt; **Preise und Rabatte** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
--   **Abfragen und Berichte**-Abschnitt &gt; **Retail** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte**
-
-
+- **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Retail** &gt; **Channels** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
+- **Kategorie- und Produktverwaltung**-Arbeitsbereich &gt; **Retail** &gt; **Produkt und Kategorien** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
+- **Verwaltung von Preisen und Rabatten**-Arbeitsbereich &gt; **Retail** &gt; **Preise und Rabatte** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
+- **Abfragen und Berichte**-Abschnitt &gt; **Retail** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte**
 

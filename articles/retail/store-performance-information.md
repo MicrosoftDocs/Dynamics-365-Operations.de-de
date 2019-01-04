@@ -31,21 +31,19 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke zu Speicherleistung basierend auf Ihren Microsoft Dynamics 365 for Retail-Daten zu erhalten. 
+In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke zu Speicherleistung basierend auf Ihren Microsoft Dynamics 365 for Retail-Daten zu erhalten.
 
 In Microsoft Dynamics 365 for Retail können Benutzer die Shopleistung in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für eine ausgewählte Periode überprüfen, indem sie den vordefinierten Bericht **Kanalzusammenfassung** an einer der folgenden Stellen öffnen:
 
--   **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**
--   **Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**
--   **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Kanalzusammenfassung**
+- **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**
+- **Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht Kanalzusammenfassung**
+- **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht Kanalzusammenfassung**
 
 Der Bericht enthält eine Momentaufnahme der folgenden Zusammenfassungen im Rahmen der Shopleistung:
 
--   Übersicht Bruttoverkäufe
--   Übersicht Zahlungsmitteltyp
--   Steuerzusammenfassung
--   Preisüberschreibungsübersicht
--   Rabattübersicht
-
-
+- Übersicht Bruttoverkäufe
+- Übersicht Zahlungsmitteltyp
+- Steuerzusammenfassung
+- Preisüberschreibungsübersicht
+- Rabattübersicht
 

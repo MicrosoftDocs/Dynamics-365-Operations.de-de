@@ -35,15 +35,13 @@ Sie können die Verkaufstrends und -muster mit Microsoft Dynamics 365 for Retail
 
 In Microsoft Dynamics 365 for Retail können Benutzer die Verkaufstrends und -muster in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für ausgewählte Jahre überprüfen, indem sie den vordefinierten Bericht **Bericht 'Kanal Umsatz nach Jahr'** an einer der folgenden Stellen öffnen: Sie können den Bericht über die folgenden Orte öffnen:
 
--   **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht 'Kanal Umsatz nach Jahr'**
--   **Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht 'Kanal Umsatz nach Jahr'**
--   **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht 'Kanal Umsatz nach Jahr'**
+- **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht 'Kanal Umsatz nach Jahr'**
+- **Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht 'Kanal Umsatz nach Jahr'**
+- **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht 'Kanal Umsatz nach Jahr'**
 
 Benutzer können die Verkaufstrends und -muster pro Stunde in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für eine ausgewählte Periode überprüfen, indem sie den vordefinierten Bericht **Bericht 'Kanal Umsatz nach Stunde'** an einer der folgenden Stellen öffnen: Sie können den Bericht über die folgenden Orte öffnen:
 
--   **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht 'Kanal Umsatz nach Stunde'**
--   **Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht 'Kanal Umsatz nach Stunde'**
--   **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht 'Kanal Umsatz nach Stunde'**
-
-
+- **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht 'Kanal Umsatz nach Stunde'**
+- **Finanzdaten für den Einzelhandelsshop**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Finanzdaten für den Einzelhandelsshop** &gt; **Berichte** &gt; **Bericht 'Kanal Umsatz nach Stunde'**
+- **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht 'Kanal Umsatz nach Stunde'**
 

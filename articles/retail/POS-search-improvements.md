@@ -66,7 +66,7 @@ Die Benutzererfahrung bei der lokalen Produktsuche ist jetzt benutzerfreundliche
 - Einzelhändler können die Produktsuche nun so konfigurieren, dass Suchvorschläge angezeigt werden, wenn Produktnamen eingegeben werden. Eine neue Einstellung für diese Funktion ist im POS-Funktionsprofil in einer Gruppe namens **Produktsuche** verfügbar. Die Einstellung hat die Bezeichnung **Beim Eingeben Vorschläge anzeigen**. Diese Funktion ermöglicht Mitarbeitern, schnell das gesuchte Produkt zu finden, da sie nicht den ganzen Namen eingeben müssen.
 - Der Produktsuchalgorithmus sucht nun auch in der **Suchbegriff**-Eigenschaft des Produkts nach den Suchbegriffen.
 
-![Produktvorschläge](./media/Productsuggestions.png "Produktvorschläge")
+    ![Produktvorschläge](./media/Productsuggestions.png "Produktvorschläge")
 
 ## <a name="customer-search"></a>Debitorensuche
 
