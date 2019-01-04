@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
 ms.contentlocale: de-de
-ms.lasthandoff: 11/13/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -40,6 +40,7 @@ ms.lasthandoff: 11/13/2018
 ![Entität für POS-Bildschirmlayout](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a><span data-ttu-id="b0d1b-108">Visuelles Profil</span><span class="sxs-lookup"><span data-stu-id="b0d1b-108">Visual profile</span></span>
+
 <span data-ttu-id="b0d1b-109">Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die Sichtelementen anzugeben, die kassenspezifisch sind und gemeinsam genutzt werden.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-109">Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users.</span></span> <span data-ttu-id="b0d1b-110">Jeder Benutzer, der sich an der Kasse anmeldet, sieht dasselbe Thema, Farben und Bilder.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-110">Every user who signs in to the register sees the same theme, colors, and images.</span></span>
 
 ![POS-Begrüßungsbildschirm mit hellem Thema](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ ms.lasthandoff: 11/13/2018
 - <span data-ttu-id="b0d1b-123">**Anwendungshintergrund**- Sie können einen Hintergrund in der gesamten Anwendung anstelle der ausgefüllten Themenfarbe definieren.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-123">**Application background** – You can specify a background image that is used instead of the solid theme color throughout the application.</span></span> <span data-ttu-id="b0d1b-124">Für den Anmelde-Hintergrund sollte die Dateigröße so gering wie möglich gehalten werden.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-124">As for login backgrounds, the file size should be kept as small as possible.</span></span>
 
 ## <a name="screen-layouts"></a><span data-ttu-id="b0d1b-125">Bildschirmlayouts</span><span class="sxs-lookup"><span data-stu-id="b0d1b-125">Screen layouts</span></span>
+
 <span data-ttu-id="b0d1b-126">Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzierung von Benutzeroberflächen-Steuerelementen im POS-Begrüßungsbildschirm- und -**Buchungs**-Bildschirm.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-126">Screen layout configurations determine the actions, content, and placement of UI controls on the POS welcome screen and **Transaction** screen.</span></span>
 
 ![POS-Bildschirmlayout anzeigen](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ ms.lasthandoff: 11/13/2018
 ![POS-Layoutgrößen](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a><span data-ttu-id="b0d1b-163">Schaltflächenraster</span><span class="sxs-lookup"><span data-stu-id="b0d1b-163">Button grids</span></span>
+
 <span data-ttu-id="b0d1b-164">Für jede Layoutgröße in einem Bildschirmlayout können Sie den POS-Begrüßungsbildschirm und den Bildschirm **Buchung** konfigurieren und zuweisen.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-164">For each layout size in a screen layout, you can configure and assign button grids for the POS welcome screen and **Transaction** screen.</span></span> <span data-ttu-id="b0d1b-165">Schaltflächenraster für den Begrüßungsbildschirm werden automatisch von links nach rechts, von der niedrigsten Nummer (Begrüßungsbildschirm 1) zur höchsten Nummer angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-165">Button grids for the welcome screen are automatically laid out from left to right, from the lowest number (Welcome screen 1) to the highest number.</span></span>
 
 <span data-ttu-id="b0d1b-166">Im vollständig POS-Layout wird die Position der Schaltflächenraster im Bildschirmlayoutdesigner angegeben.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-166">In Full POS layouts, the placement of button grids is specified in the screen layout designer.</span></span>
@@ -104,6 +107,7 @@ ms.lasthandoff: 11/13/2018
 ![Kompakte Layoutschaltflächenraster](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a><span data-ttu-id="b0d1b-170">Bilder</span><span class="sxs-lookup"><span data-stu-id="b0d1b-170">Images</span></span>
+
 <span data-ttu-id="b0d1b-171">Für jede Layoutgröße in einem Bildschirmlayout, können Sie angeben, Bildern in der POS-Benutzeroberfläche einzubeziehen.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-171">For each layout size in a screen layout, you can specify images to include in the POS UI.</span></span> <span data-ttu-id="b0d1b-172">Für POS-Layouts kann nur ein Bild für den Begrüßungsbildschirm angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-172">For Full POS layouts, a single image can be specified for the welcome screen.</span></span> <span data-ttu-id="b0d1b-173">Das Bild wird als das erste Benutzeroberflächenelement auf der linken Seite angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-173">This image appears as the first UI element on the left.</span></span> <span data-ttu-id="b0d1b-174">Im Feld **Buchung** können Bilder als Registerkartenbilder oder als Logo verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-174">On the **Transaction** screen, images can be used as tab images or as a logo.</span></span> <span data-ttu-id="b0d1b-175">Kompakte POS-Layouts verwenden diese Bilder.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-175">Compact POS layouts don't use these images.</span></span>
 
 ### <a name="screen-layout-designer"></a><span data-ttu-id="b0d1b-176">Designer für Bildschirmlayout</span><span class="sxs-lookup"><span data-stu-id="b0d1b-176">Screen layout designer</span></span>
@@ -141,11 +145,13 @@ ms.lasthandoff: 11/13/2018
     - <span data-ttu-id="b0d1b-222">**Benuterdefiniertes Steuerelement** - Das benutzerdefinierte Steuerlelement dient als Platzhalter innerhalb des Bildschirmlayouts das die Platzierung von benutzerdefinierten Inhalten zulässt.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-222">**Custom control** – The custom control acts as a placeholder in the screen layout and lets you reserve space for custom content.</span></span> <span data-ttu-id="b0d1b-223">Das benutzerdefinierte Steuerelement ist hur für volle Layouts verfügbar.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-223">The custom control is available only for Full layouts.</span></span>
 
 ### <a name="compact-layout-designer"></a><span data-ttu-id="b0d1b-224">Kompaktes Bildschirmlayout</span><span class="sxs-lookup"><span data-stu-id="b0d1b-224">Compact layout designer</span></span>
+
 <span data-ttu-id="b0d1b-225">Wie der volle Layoutdesigner kann der kompakte Layoutdesigner POS-Bildschirmlayouts für Telefone und kleine Tablets konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-225">Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets.</span></span> <span data-ttu-id="b0d1b-226">Jedoch in diesem Fall ist das Layout fix.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-226">However, in this case, the layout itself is fixed.</span></span> <span data-ttu-id="b0d1b-227">Sie können eine Vielzahl von Steuerelementen im Layout konfigurieren, indem Sie auf das Kontextmenü mit der rechten Maustaste klicken und verwenden.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-227">You can configure the controls in the layout by right-clicking and using the shortcut menu.</span></span> <span data-ttu-id="b0d1b-228">Allerdings können Sie Drag & Drop-Vorgänge für zusätzlichen Inhalt nicht verwenden.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-228">However, you can't use drag-and-drop operations for additional content.</span></span>
 
 ![Kompakter Layoutdesigner](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a><span data-ttu-id="b0d1b-230">Designer für Schaltflächenraster</span><span class="sxs-lookup"><span data-stu-id="b0d1b-230">Button grid designer</span></span>
+
 <span data-ttu-id="b0d1b-231">Mit dem Schaltflächenrasterdesigner können Sie Schaltflächenraster konfigurieren, die für den POS-Begrüßungsbildschirm und den Bildschirm **Buchung** für volle und kompakte Layouts verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-231">The button grid designer lets you configure button grids that can be used on the POS welcome screen and **Transaction** screen for both Full and Compact layouts.</span></span> <span data-ttu-id="b0d1b-232">Der gleiche Schaltflächenraster kann für verschiedene Layouts und Layouttypen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-232">The same button grid can be used across layouts and layout types.</span></span> <span data-ttu-id="b0d1b-233">Wie der Bildschirmlayoutdesigner verwendet der Schaltflächenrasterdesigner die ClickOnce Bereitstellung, um die neueste Version der Anwendung herunterzuladen, zu installieren und zu starten, wenn der Benutzer darauf zugreift.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-233">Like the screen layout designer, the button grid designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</span></span> <span data-ttu-id="b0d1b-234">Stellen Sie sicher, dass Sie die ClickOnce Browseranforderungen überprüfen.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-234">Be sure to check the browser requirements for ClickOnce.</span></span> <span data-ttu-id="b0d1b-235">Einige Browser wie beispielsweise Google Chrome, benötigen Erweiterungen.</span><span class="sxs-lookup"><span data-stu-id="b0d1b-235">Some browsers, such as Google Chrome, require extensions.</span></span>
 
 ![Designer für Schaltflächenraster](../retail/media/Button-Grid-Designer.png)

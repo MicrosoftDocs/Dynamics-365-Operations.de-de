@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 19c972164474c972aab642c3cccc67cf396a6cb2
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 0bcc5989edd9913fce414c0c24068f111d8c1aeb
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -58,5 +58,4 @@ ms.lasthandoff: 08/08/2018
 <span data-ttu-id="e2f6e-124">Sie können die neue erweiterte Struktur für Produkteigenschaften verwenden, um aktualisierte Produkteigenschaften auszuwählen, die an die zugeordneten Produkte mit Push übertragen werden müssen.</span><span class="sxs-lookup"><span data-stu-id="e2f6e-124">You can use the new enhanced structure for product properties to select updated product properties that must be pushed to the associated products.</span></span> <span data-ttu-id="e2f6e-125">Wählen Sie auf der Seite **Produkthierarchie (Retail)** im Aktivitätsbereich die Option **Kategorie** aus, und wählen Sie dann **Produkte aktualisieren**, um das Dialogfeld **Produkte aktualisieren** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e2f6e-125">On the **Retail product hierarchy** page, on the Action Pane, select **Category**, and then select **Update products** to open the **Update products** dialog box.</span></span>
 
 ![Das Produktedialogfeld aktualisieren](media/NewUpdateProductsEnhancedView.PNG)
-
 
