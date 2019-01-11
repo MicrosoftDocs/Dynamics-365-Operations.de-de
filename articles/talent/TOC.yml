@@ -7,6 +7,10 @@
         - name: Neuerungen und Änderungen
           href: whats-new.md
           items:
+            - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (14.\_Dezember 2018)"
+              href: whats-new-talent-december-14.md
+            - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (6.\_Dezember 2018)"
+              href: whats-new-talent-december-6.md
             - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (27.\_November 2018)"
               href: whats-new-talent-november-27.md
             - name: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (15.\_November 2018)"
@@ -71,6 +75,8 @@
     - name: Beurlaubungen und Abwesenheiten verwalten
       href: leave-absence-overview.md
       items:
+        - name: Urlaubs- und Abwesenheitskonzepte
+          href: leave-absence-concepts.md
         - name: Abgrenzen der arbeitsfreien Zeit auf Grundlage der gearbeiteten Stunden
           href: leave-accrue-hours-worked.md
         - name: Arbeitszeitkalender
@@ -125,16 +131,19 @@
           href: performance-management-overview.md
         - name: Ausrichten der Mitarbeiterqualifikationen an den Geschäftsanforderungen
           href: skills.md
-        - name: Einrichten von Schulungskursen
+        - name: Schulungskurse einrichten
           href: courses.md
-    - name: Definieren und Verwalten eines Vorteilsprogramms
-      href: manage-benefit-program.md
-    - name: Richtlinien zur Vorteilsberechtigung
-      href: benefit-eligibility-policies.md
+    - name: Vorteilsprogramm definieren und verwalten
       items:
+        - name: Vorteilsprogramm verwalten
+          href: manage-benefit-program.md
+        - name: Richtlinien zur Vorteilsberechtigung
+          href: benefit-eligibility-policies.md
+        - name: Affordable Care Act-(ACA)-Berichte erstellen
+          href: generate-aca-reports.md
         - name: An Arbeitskräfte ausgeliehene Artikel verwalten
           href: loan-items.md
-    - name: Sammeln von Informationen anhand von Fragebögen
+    - name: Informationen mittels Fragebögen erfassen
       href: questionnaires.md
       items:
         - name: Entwerfen von Fragebögen
@@ -272,12 +281,10 @@
       items:
         - name: Analytics-Berichte werden nicht aktualisiert
           href: analytic-reports-not-updated.md
-        - name: Eine Umgebung in der PowerApps-Administratorzentrum kann nicht erstellt werden
+        - name: Eine Umgebung im PowerApps Admin Center kann nicht erstellt werden
           href: create-envi-powerapps-admin-ctr.md
         - name: Talent-Client wurde getrennt
           href: client-disconnects.md
-        - name: Behandlung von Datenbanksicherungen
-          href: database-backups.md
         - name: Vermeiden Sie abgeschnittenen Text in der Positionshierarchie und beim Exportieren in Visio
           href: avoid-text-truncation-position-hierarchy-visio.md
         - name: Vergütungsprozesses ausführen
