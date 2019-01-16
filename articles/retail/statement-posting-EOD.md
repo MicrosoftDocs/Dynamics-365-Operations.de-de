@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: d428da2a6fb8ce5d63c3373def879c9b32cfd492
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -59,11 +59,12 @@ Als Teil der Verbesserungen der Auszugsbuchungsfunktion wurden drei neue Paramet
 
 Zusätzlich wurde das Feld **Maximale Anzahl paralleler Auszugsbuchungen** auf dem Inforegister **Stapelverarbeitung** eingeführt. Dieses Feld definiert die Anzahl der Stapelaufgaben, die gleichzeitig ausgeführt werden sollen. Derzeit müssen Sie den Wert dieses Feldes manuell setzen.
 
-Auch mit dem neuen Buchungsprozess, ist es erforderlich, ein **Geschenkkartenprodukt**  im Inforegister **Geschenkkarte** in der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** festzulegen. Dies gilt auch, wenn keine Geschenkkarten von der Organisation verwendet werden. 
+Auch mit dem neuen Buchungsprozess, ist es erforderlich, ein **Geschenkkartenprodukt** im Inforegister **Geschenkkarte** in der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** festzulegen. Dies gilt auch, wenn keine Geschenkkarten von der Organisation verwendet werden.
 
 Beachten Sie, daß alle Einstellungen und Parameter, die sich auf Auszugsbuchungen beziehen und die für Einzelhandelsgeschäfte und auf der Seite **Einzelhandelsparameter** definiert sind, auf die verbesserte Auszugsbuchung anwendbar sind.
 
 ## <a name="processing"></a>Bearbeitung
+
 Auszüge können über die Menüpunkte **Auszüge im Stapel berechnen** und **Auszüge im Stapel buchen** berechnet und gebucht werden. Alternativ können die Auszüge auch manuell berechnet und gebucht werden, indem Sie den Menüpunkt **Einzelhandelsauszüge** verwenden, den die verbesserte Auszugsbuchung bietet.
 
 Der Ablauf und die Schritte für die Berechnung und Buchung von Auszügen in einem Stapel sind derselbe wie in der Funktion zum Buchen von Altauszügen. Allerdings wurden wesentliche Verbesserungen in der Kern-Backend-Verarbeitung der Auszüge vorgenommen. Diese Verbesserungen machen den Prozess widerstandsfähiger und sorgen für eine bessere Einsicht in die Zustände und Fehlerinformationen. So kann der Benutzer die Fehlerursache beheben und den Buchungsprozess fortsetzen, ohne dass es zu Datenbeschädigungen kommt und ohne dass Datenkorrekturen erforderlich sind.
@@ -71,6 +72,7 @@ Der Ablauf und die Schritte für die Berechnung und Buchung von Auszügen in ein
 In den folgenden Abschnitten werden einige der wichtigsten Verbesserungen für die Funktion der Auszugsbuchung beschrieben, die in der Benutzungsoberfläche für Einzelhandelsauszüge und gebuchte Auszüge erscheinen.
 
 ### <a name="status-details"></a>Statusdetails
+
 In der Auszugsbuchungsroutine wurde ein neues Zustandsmodell über die Berechnungs- und Buchungsprozesse hinweg eingeführt.
 
 Die folgende Tabelle beschreibt die verschiedenen Zustände und deren Reihenfolge bei der Berechnung.
@@ -109,9 +111,11 @@ Jeder Zustand in den vorhergehenden Tabellen ist unabhängig und es wird eine hi
 Zusätzlich zeigt die Kopfzeile des zweiten und dritten Abschnitts den Gesamtstatus des jeweiligen Prozesses an.
 
 ### <a name="event-logs"></a>Ereignisprotokolle
+
 Ein Auszug durchläuft mehrere Operationen (z.B. Anlegen, Berechnen, Löschen und Buchen), wobei mehrere Instanzen desselben Vorgangs während des Lebenszyklus des Auszugs aufgerufen werden können. Beispielsweise kann ein Benutzer nach der Erstellung und Berechnung eines Auszugs den Auszug löschen und neu berechnen. Die Schaltfläche **Ereignisprotokolle** in der Gruppe **Ausführungsdetails** der Anweisung bietet einen vollständigen Audit-Trail der verschiedenen Operationen, die auf einer Anweisung aufgerufen wurden, zusammen mit Informationen darüber, wann diese Operationen aufgerufen wurden.
 
 ### <a name="aggregated-transactions"></a>Zusammengeführte Transaktionen
+
 Während des Buchungsvorgangs werden die Verkaufsbuchungen gemäß den Einstellungen zusammengefasst. Diese aggregierten Transaktionen werden im System gespeichert und zum Anlegen von Debitorenaufträgen verwendet. Jede aggregierte Transaktion erzeugt einen entsprechenden Debitorenauftrag im System. Sie können die aggregierten Transaktionen über die Schaltfläche **Zusammengeführte Transaktionen** in der Gruppe **Ausführungsdetails** des Auszugs anzeigen.
 
 Die Registerkarte **Debitorenauftragsdetail** einer aggregierten Transaktion zeigt die folgenden Informationen an:
@@ -136,11 +140,13 @@ Die aggregierte Transaktionssicht bietet folgende Vorteile:
 - Eine aggregierte XML-Datei erleichtert die Identifizierung von Problemen bei der Auftragserstellung und Fakturierung.
 
 ### <a name="journal-vouchers"></a>Erfassungsbelege
+
 Die Schaltfläche **Erfassungsbelege** in der Gruppe **Ausführungsdetails** des Auszugs zeigt alle verschiedenen Belegtransaktionen, die für einen Auszug erstellt werden und die sich auf Rabatte, Einnahmen-/Ausgabenkonten, Geschenkkarten usw. beziehen.
 
 Derzeit zeigt das Programm diese Daten nur für gebuchte Auszüge an.
 
 ### <a name="payment-journals"></a>Zahlungserfassungen
+
 Die Schaltfläche **Zahlungserfassungen** in der Gruppe **Ausführungsdetails** des Auszugs zeigt alle verschiedenen Zahlungsjournale, die zu einem Auszug erstellt werden.
 
 Derzeit zeigt das Programm diese Daten nur für gebuchte Auszüge an.

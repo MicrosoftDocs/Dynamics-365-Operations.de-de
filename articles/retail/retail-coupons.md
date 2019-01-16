@@ -19,10 +19,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: c718a71ca270c67118a90456bac0cf182032d3db
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,16 +32,16 @@ ms.lasthandoff: 08/08/2018
 
 ## <a name="overview-of-coupons"></a>Überblick über Coupons
 
-Coupons sind Codes und Strichcodes, die verwendet werden, um Buchungen Einzelhandelsrabatte hinzuzufügen. Jeder Coupon kann mehrere Codes haben, und jeder Code kann sein eigenes Gültigkeitsdatum haben. 
+Coupons sind Codes und Strichcodes, die verwendet werden, um Buchungen Einzelhandelsrabatte hinzuzufügen. Jeder Coupon kann mehrere Codes haben, und jeder Code kann sein eigenes Gültigkeitsdatum haben.
 
-Jeder Coupon wird einem Kleinrabatt zugeordnet. Die Preisgruppen, die dem Rabatt zugeordnet werden, definieren die Kunden, die einen Coupon oder die Kanäle verwenden können, in denen ein Coupon gültig ist. 
+Jeder Coupon wird einem Kleinrabatt zugeordnet. Die Preisgruppen, die dem Rabatt zugeordnet werden, definieren die Kunden, die einen Coupon oder die Kanäle verwenden können, in denen ein Coupon gültig ist.
 
 Im Grunde genommen sind Coupons zusätzliche Validierungen neben Einzelhandelsrabatten. Der Coupon stellt die Couponcodes und Strichcodes bereit, die erforderlich sind, zusammen mit den Datumsbereichen des Codes. Der Coupon enthält auch optionale Verwendungslimiten und von Kunden erforderliche Eigenschaften. Der Rabatt enthält den Satz von Produkten, für die der Coupon gültig sein soll. Die Preisgruppen für den Rabatt für die Gruppe von Debitoren, von Kanälen oder von Katalogen, für die der Coupon gültig sein soll.
 
-Um einen Coupon zu erstellen, stellen Sie den Rabatt und den Coupon getrennt her. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite in Microsoft Dynamics 365 für Einzelhandel aus. 
+Um einen Coupon zu erstellen, stellen Sie den Rabatt und den Coupon getrennt her. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite in Microsoft Dynamics 365 für Einzelhandel aus.
 
 > [!NOTE]
-> Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite in Microsoft Dynamics 365 für Einzelhandel schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.
+> Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite in Microsoft Dynamics 365 for Retail schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.
 
 ### <a name="limited-use-coupons"></a>Begrenzte Nutzung der Coupons
 
@@ -54,25 +54,25 @@ Die Grenze wird pro Couponcode auf einem Coupon erzwungen. So kann ein Einwegcou
 
 ## <a name="managing-coupons"></a>Verwalten von Coupons
 
-Sie müssen den Rabatt und den Coupon getrennt herstellen. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite aus. Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.  
+Sie müssen den Rabatt und den Coupon getrennt herstellen. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite aus. Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.
 
 Im Grunde genommen sind Coupons zusätzliche Validierungen neben Einzelhandelsrabatten. Der Coupon stellt die Couponcodes und Strichcodes bereit, die erforderlich sind, zusammen mit den Datumsbereichen, der eingeschränkten Nutzung und den Kundenanforderungen für die Nutzung des Codes. Der Rabatt enthält den Satz von Produkten, für die der Coupon gültig sein soll. Die Preisgruppen für den Rabatt für die Gruppe von Debitoren, von Kanälen oder von Katalogen, für die der Coupon gültig sein soll.
 
-## <a name="system-setup-for-coupons"></a>System einrichten für Coupons 
+## <a name="system-setup-for-coupons"></a>System einrichten für Coupons
 
-Bevor Sie einen Coupon einrichten können, müssen Sie den Couponstrichcode und zwei Couponnummernkreise einrichten. 
+Bevor Sie einen Coupon einrichten können, müssen Sie den Couponstrichcode und zwei Couponnummernkreise einrichten.
 
-1.  **Maskenzeichen** Auf der Seite zum Erstellen eines neuen Couponcode Maskenzeichens. Sie können jedes nicht verwendete Zeichen auswählen.
-2.  Auf der Seite **Strichcodemaske - Einstellungen** können Sie eine neue Strichcodemaske erstellen. Legen Sie das Feld **Dateityp** auf **Coupon** fest.
-3.  Auf der Seite **Strichcode-Einstellungen** erstellen Sie einen neuen Strichcode, der die Strichcodemaske verwendet, die Sie soeben erstellt haben.
-4.  Auf der Seite **Nummernkreise** werden zwei neue Nummernkreise erstellt. Ein Nummernkreis ist für die Couponcode-Kennung, und die andere Sequenz für die Couponnummer. Die Couponcode-Kennung ist der eindeutige Bezeichner für jeden Couponcode für einen Coupon. Die Couponnummer ist die eindeutige Kennung für den Coupon. Jeder Coupon kann mehrere Codes und Strichcodes besitzen, die den Coupon starten.
+1. **Maskenzeichen** Auf der Seite zum Erstellen eines neuen Couponcode Maskenzeichens. Sie können jedes nicht verwendete Zeichen auswählen.
+2. Auf der Seite **Strichcodemaske - Einstellungen** können Sie eine neue Strichcodemaske erstellen. Legen Sie das Feld **Dateityp** auf **Coupon** fest.
+3. Auf der Seite **Strichcode-Einstellungen** erstellen Sie einen neuen Strichcode, der die Strichcodemaske verwendet, die Sie soeben erstellt haben.
+4. Auf der Seite **Nummernkreise** werden zwei neue Nummernkreise erstellt. Ein Nummernkreis ist für die Couponcode-Kennung, und die andere Sequenz für die Couponnummer. Die Couponcode-Kennung ist der eindeutige Bezeichner für jeden Couponcode für einen Coupon. Die Couponnummer ist die eindeutige Kennung für den Coupon. Jeder Coupon kann mehrere Codes und Strichcodes besitzen, die den Coupon starten.
 
     > [!NOTE]
     > Für beide Nummernkreise müssen Sie das Feld **Bereich** auf **Unternehmen** festlegen. In den meisten Fällen sollten Sie beide laufenden Nummern automatisch generieren.
 
-5.  Auf der Seite **Freigegebene Einzelhandelsparameter** auf der Registerkarte **Strichcodes**, wählen Sie den Strichcode aus, den Sie eben erstellt haben.
-6.  Auf der Seite **Retailparameter** auf der Registerkarte **Nummernkreise** wählen Sie die Nummernkreise aus, die Sie für die Couponnummer und Couponcode Kennung erstellten.
-7.  Sie können die Seite **Coupons** öffnen und jetzt neue Coupons erstellen.
+5. Auf der Seite **Freigegebene Einzelhandelsparameter** auf der Registerkarte **Strichcodes**, wählen Sie den Strichcode aus, den Sie eben erstellt haben.
+6. Auf der Seite **Retailparameter** auf der Registerkarte **Nummernkreise** wählen Sie die Nummernkreise aus, die Sie für die Couponnummer und Couponcode Kennung erstellten.
+7. Sie können die Seite **Coupons** öffnen und jetzt neue Coupons erstellen.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Die Auswirkungen von Teilausführungsaktualisierungen auf Coupons
 

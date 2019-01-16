@@ -3,7 +3,7 @@ title: Finanzdimensionen
 description: "In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen beschrieben und wie sie eingerichtet wurden."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
+ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
 ms.contentlocale: de-de
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -93,6 +93,8 @@ Sie können Werte in den Hauptdatensätzen, wie Debitoren und Kreditoren, als St
 Diese Funktion wird durch die Einstellungen in der Dimension gesteuert. Diese Einstellung hat den Namen **Kopieren Sie Werte dieser Dimension bei jedem neu erstellten DimensionName**, wobei **DimensionName** der Name der Dimension ist. Standardmäßig ist die Funktion ausgeschaltet. Allerdings kann sie jederzeit aktiviert werden.
 
 Wenn bereits Datensätze für die Dimension vorhanden sind, werden die Hauptdatensätze aktualisiert, , wenn Sie die Funktion aktivieren. Allerdings werden vorhandene Dokumente und Buchungen nicht aktualisiert.
+
+Wenn Sie eine Vorlage verwenden, um einen Hauptdatensatz zu erstellen, stellen Sie sicher, dass der Vorlagenwert für das Vorlagenpassungsmaß leer ist. Wenn Sie beispielsweise Debitoren aus einer Vorlage erstellen, stellen Sie sicher, dass die in der Vorlage Debitorendimension leer ist. Der Debitorendimensionswert wird als Standard die neuen Debitornummer, wenn Sie den neuen Debitor erstellen.  
 
 ## <a name="derived-dimensions"></a>Abgeleitete Dimensionen
 

@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: a0359f8312e5e3fe1349dbc89831c98c46cd61ff
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 73626ad21dfe2be7400f321a3eee272c896276f3
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,24 +34,22 @@ Führen Sie im Workflow-Editor die folgenden Schritte aus, um einen Parallelzwei
 Ein Parallelzweig ist eigentlich ein Workflow, der im Kontext eines übergeordneten Workflows ausgeführt wird.
 
 ## <a name="name-a-branch"></a>Einen Zweig benennen
+
 Gehen Sie folgendermaßen vor, um einen Namen für einen Parallelzweig einzugeben.
-1.  Klicken Sie mit der rechten Maustaste auf den Parallelzweig, und klicken Sie anschließend auf **Eigenschaften**. Das Formular **Eigenschaften** wird angezeigt.
-2.  Klicken Sie im linken Bereich auf **Grundeinstellungen**.
-3.  Geben Sie im Feld **Name** einen eindeutigen Namen für den Parallelzweig ein.
-4.  Klicken Sie auf **Schließen**.
+
+1. Klicken Sie mit der rechten Maustaste auf den Parallelzweig, und klicken Sie anschließend auf **Eigenschaften**. Das Formular **Eigenschaften** wird angezeigt.
+2. Klicken Sie im linken Bereich auf **Grundeinstellungen**.
+3. Geben Sie im Feld **Name** einen eindeutigen Namen für den Parallelzweig ein.
+4. Klicken Sie auf **Schließen**.
 
 ## <a name="design-and-configure-the-elements-of-a-branch"></a>Entwerfen und Konfigurieren der Elemente eines Zweigs
+
 Gehen Sie folgendermaßen vor, um die Elemente eines Parallelzweigs zu entwerfen und zu konfigurieren.
-1.  Doppelklicken Sie auf den Parallelzweig.
-2.  Ziehen Sie Workflowelemente auf die Canvas, und konfigurieren Sie die Elemente analog zum Erstellen eines Workflows. Weitere Informationen finden Sie unter "Erstellen eines Workflows".
 
+1. Doppelklicken Sie auf den Parallelzweig.
+2. Ziehen Sie Workflowelemente auf die Canvas, und konfigurieren Sie die Elemente analog zum Erstellen eines Workflows. Weitere Informationen finden Sie unter [Erstellen eines Workflows.](create-workflow.md).
 
-
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Erstellen eines Workflows](create-workflow.md)
-
-
-
 

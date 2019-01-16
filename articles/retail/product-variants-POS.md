@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: e40c558e03ef230fee6726994bc94979d40493c2
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -52,8 +52,8 @@ Die Mengen **Reserviert** und **Bestellt** werden auch für jeden Lagerplatz ang
 
 Die Liste der Lagerplätze umfasst zwei Typen von Entitäten:
 
-- **Einzelhandelsfilialen** – In der Liste werden Filialen angezeigt, die mithilfe der Filiallokatorgruppe für die aktuelle Filiale in der Retail Zentralverwaltung konfiguriert werden. 
-- **Verteilungszentren** – Verschiedene Typen von Verteilungszentren (beispielsweise Lagerorte) können in Microsoft Dynamics 365 for Retail konfiguriert werden. Allerdings zeigt die Liste nur Bestandsverfügbarkeitsinformationen für Verteilungszentren des Standardtyps **Standard** an. 
+- **Einzelhandelsfilialen** – In der Liste werden Filialen angezeigt, die mithilfe der Filiallokatorgruppe für die aktuelle Filiale in der Retail Zentralverwaltung konfiguriert werden.
+- **Verteilungszentren** – Verschiedene Typen von Verteilungszentren (beispielsweise Lagerorte) können in Microsoft Dynamics 365 for Retail konfiguriert werden. Allerdings zeigt die Liste nur Bestandsverfügbarkeitsinformationen für Verteilungszentren des Standardtyps **Standard** an.
 
     > [!NOTE]
     > Bestandsverfügbarkeitsinformationen wird nicht für Lagerorte der Typen **Zustellung**, **Quarantäne** und **Waren im Arbeitsplan** für die POS angezeigt.
@@ -86,7 +86,7 @@ In der Ansicht **Dimensionsbasierte Matrix** umfassen die Zellen für die Produk
 | **0** (null)                             | Eine Variante ist für den ausgewählten Lagerplatz freigegeben worden, aber der Artikel ist nicht im ausgewählten Lagerplatz verfügbar. Sie können jedoch zusätzliche Aktivitäten in der Zelle ausführen. (Diese Aktivitäten werden detaillierter später in diesem Thema beschrieben.) |
 | **n/v** oder eine inaktive Zelle              | Eine Variante ist für den ausgewählten Lagerplatz nicht freigegeben worden, und Sie können keine zusätzlichen Aktivitäten in der Zelle ausführen. |
 
-Sie können auch den Pivot für Dimensionen ändern, indem Sie die neue Dimension auswählen, die zu verwenden ist. 
+Sie können auch den Pivot für Dimensionen ändern, indem Sie die neue Dimension auswählen, die zu verwenden ist.
 
 ![Ändern des Pivot](media/ChangePivot.png)
 
@@ -108,14 +108,12 @@ Darüber können in der Ansicht **Dimensionsbasierte Matrix** mehr Aktivitäten 
 
 Die folgende Tabelle enthält weitere Informationen über die zusätzlichen Aktivitäten, die verfügbar sind.
 
-
-|        Vorgang        |                                                                                                                    Beschreibung                                                                                                                    |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Jetzt verkaufen       |                               Fügen Sie die ausgewählten Artikelvarianten der Transaktion hinzu, und leiten Sie den Benutzer zum Transaktionsbildschirm um. (Diese Aktivität ist nicht verfügbar, wenn der ausgewählte Lagerplatz ein Verteilungszentrum ist.)                               |
-|   Abholung im Shop   |      Erstellen Sie einen Debitorenauftrag für die Produktvariante, die vom ausgewählten Lagerplatz abgeholt wird, und leiten Sie den Benutzer zum Buchungsbildschirm um. (Diese Aktivität ist nicht verfügbar, wenn der ausgewählte Lagerplatz ein Verteilungszentrum ist.)       |
-|     Produkt versenden     |                                                 Erstellen Sie einen Debitorenauftrag für die Produktvariante, die vom ausgewählten Lagerplatz geliefert wird, und leiten Sie den Benutzer zum Buchungsbildschirm um.                                                 |
-|     Verfügbarkeit     |                                                                             Zeigen Sie die VfZ-Informationen für die ausgewählte Variantenkombination für den ausgewählten Lagerplatz an.                                                                              |
-|  Alle Lagerplätze anzeigen  | Wechseln Sie zur standardmäßigen Lagersuchansicht und heben Sie Bestandsverfügbarkeitsinformationen für die Artikelvariante für alle Filialen in der Filiallokatorgruppe und auch in Verteilungszentren des Typs <strong>Standard/Standard</strong> hervor. |
-| Produktdetails anzeigen |                                                                         Leiten Sie den Benutzer zur Seite <strong>Produktdetails</strong> des zugeordneten Produktmasters um.                                                                          |
-
+| Vorgang               | Beschreibung |
+|----------------------|-------------|
+| Jetzt verkaufen             | Fügen Sie die ausgewählten Artikelvarianten der Transaktion hinzu, und leiten Sie den Benutzer zum Transaktionsbildschirm um. (Diese Aktivität ist nicht verfügbar, wenn der ausgewählte Lagerplatz ein Verteilungszentrum ist.) |
+| Abholung im Shop     | Erstellen Sie einen Debitorenauftrag für die Produktvariante, die vom ausgewählten Lagerplatz abgeholt wird, und leiten Sie den Benutzer zum Buchungsbildschirm um. (Diese Aktivität ist nicht verfügbar, wenn der ausgewählte Lagerplatz ein Verteilungszentrum ist.) |
+| Produkt versenden         | Erstellen Sie einen Debitorenauftrag für die Produktvariante, die vom ausgewählten Lagerplatz geliefert wird, und leiten Sie den Benutzer zum Buchungsbildschirm um. |
+| Verfügbarkeit         | Zeigen Sie die VfZ-Informationen für die ausgewählte Variantenkombination für den ausgewählten Lagerplatz an. |
+| Alle Lagerplätze anzeigen   | Wechseln Sie zur standardmäßigen Lagersuchansicht und heben Sie Bestandsverfügbarkeitsinformationen für die Artikelvariante für alle Filialen in der Filiallokatorgruppe und auch in Verteilungszentren des Typs **Standard/Standard** hervor. |
+| Produktdetails anzeigen | Leiten Sie den Benutzer zur Seite **Produktdetails** des zugeordneten Produktmasters um. |
 

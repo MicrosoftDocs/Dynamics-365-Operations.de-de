@@ -3,7 +3,7 @@ title: "Aktivitäten im Prozess"
 description: "Dieses Thema enthält Informationen zu den unterschiedlichen Aktivitätstypen, die im Einstellungsprozess verwendet werden können."
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: ccd9e2d0ff1f7fb6825c6823936b4013b3054f5d
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
 ms.contentlocale: de-de
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -62,6 +62,10 @@ Die Gesprächsaktivität ist optional. Diese Aktivität besitzt drei Teile: Kand
 - Um den Kandidaten eine E-Mail zu senden, um ihre Verfügbarkeit anzufordern, legen Sie die Option **Kandidatenverfügbarkeit anfordern** auf **Ein** fest. Wenn Sie die Option auf **Aus** festlegen, wird dieser Schritt nicht im Einstellungsprozess für die Stelle angezeigt.
 - Um mit Skype for Business einen Live-Stream oder eine Telefonkonferenz durchzuführen, legen Sie das Feld **Onlinebesprechung** auf **Skype for Business** fest. Der korrekte Link **Skype-Meeting beitreten** wird anschließend der Gesprächsterminanfrage hinzugefügt.
 - Um den Kandidaten eine E-Mail zu senden, um die Planung abzuschließen, legen Sie die Option **E-Mail an Kandidaten senden** auf **Ein** fest. Wird die Option auf **Aus** festgelegt, erhalten Kandidaten den Gesprächsterminplan nur, wenn sie sich am Kandidatenportal anmelden.
+
+>[!NOTE]
+> - Für alle 1:1-Gespräche werden Erinnerungen zu den Befragungspersonen alle 24 Stunden gesendet, wenn die Befragungsperson (angenommen oder abgelehnt) nicht auf die Gesprächsanforderung reagiert hat.
+> - Für alle Bereichsgespräche gibt es keine automatischen Erinnerungen für Gesprächsanforderungen. Um eine Erinnerung manuell zu starten, bearbeiten Sie das Gespräch und verwenden Sie die **Aktualisieren und übermitteln** Option, um die Anforderung an die Befragungspersonen zu senden
 
 Die Feedbackkomponente ermöglicht es Personen Empfehlungen für einen Bewerber einzugeben. Sie können auch jeden Feedback-Kommentar eingeben, den sie haben. Wenn Sie die Option **Feedbackteilnehmer von Einstellungsteam erben** aktivieren, werden der Personalbeschaffungsmitarbeiter, der zukünftige Vorgesetzte und die Gesprächsleiter automatisch in der Feedbackkomponente eingegeben. Organisationen können Gesprächsleitern erlauben, Feedback anderer Personen anzuzeigen, bevor sie ihr eigenes Feedback senden. Organisationen können Gesprächsleitern auch erlauben, ihr Feedback nach dem Senden zu bearbeiten.
 

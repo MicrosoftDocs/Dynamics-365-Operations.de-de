@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
-ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
 ms.contentlocale: de-de
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -42,7 +42,8 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 - **Buchungsbildschirm** – Der Arbeitsgang kann aus POS-Schaltflächenrastern aufgerufen werden, die im Feld POS-Buchungs-Bildschirm konfiguriert werden.
 - **Willkommen-Bildschirm** – Der Arbeitsgang kann aus POS-Schaltflächenrastern aufgerufen werden, die im Feld POS-Buchungs-Bildschirm konfiguriert werden.
 
-Hinweis: Die Arbeitsgänge unten gelten für die neueste Version von Microsoft Dynamics 365 for Retail. Einige Vorgänge haben sich möglicherweise geändert oder sind möglicherweise in früheren Versionen nicht verfügbar.
+> [!NOTE]
+> Die Arbeitsgänge unten gelten für die neueste Version von Microsoft Dynamics 365 for Retail. Einige Vorgänge haben sich möglicherweise geändert oder sind möglicherweise in früheren Versionen nicht verfügbar.
 
 | ID | Arbeitsgang | Beschreibung | Schaltflächenraster | Transaktionsbildschirm | Willkommensbildschirm | Verfügbar offline | Gebietsschemaspezifisch |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

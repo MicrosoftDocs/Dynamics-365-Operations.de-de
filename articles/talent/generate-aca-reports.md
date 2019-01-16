@@ -3,7 +3,7 @@ title: Affordable Care Act-(ACA)-Berichte erstellen
 description: "Funktion ist verfügbar, um Arbeitgeber zu unterstützten, die Informationen erfassen müssen, die auf den Formularen 1095-B und 1095-C aufgrund des Abschnitts \"Employer Mandate \" im Affordable Care Act gemeldet wurden. Hinweis: Diese Funktionalität ist nur für juristische Personen in den USA aktiviert."
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
+ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
+ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/17/2018
 
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Affordable Care Act-(ACA)-Berichte erstellen
@@ -54,7 +54,7 @@ Auf der Seite **Manager des Dispositionsdatums für Unterhaltsberechtigte** kön
 ## <a name="generate-1095b-and-1095c-forms"></a>1095B- und 1095C-Formulare generieren
 Sie können Formulare 109-B und mit 1095-C im Produkt erstellen und sie an jeden der Mitarbeiter verteilen. Das System kann 1095-C und die entsprechenden 1094-C-Übertragungsdateien zum Senden an die IRS generieren.  
 
-Wenn Sie das Formular 1095-C generieren, geben Sie das entsprechende Kalender- oder Geschäftsjahr ein und, ob Sie das zwei- oder dreiseitige Formular drucken möchten. Das dreiseitige Formular ist nur erforderlich, wenn der Arbeitgeber eigenversicherte Abdeckung bereitgestellt hat und ein Mitarbeiter mehr als sechs abgedeckte Unterhaltsberechtigte einschließlich sich selbst angibt. Wenn Sie das zweiseitige Formular generieren, erkennt das System automatisch, ob ein Mitarbeiter mehr als 6 abgedeckte Unterhaltsberechtigte hat und schließt den Mitarbeiter bei der Formulargenerierung aus. Wenn darüber hinaus das dreiseitige Formular generiert wird, schließt das System nur die Mitarbeiter ein, die mehr als sechs abgedeckte Unterhaltsberechtigte haben.
+Wenn Sie das Formular 1095-C generieren, geben Sie das jeweilige Geschäftsjahr ein und geben Sie an, ob Sozialversicherungsnummern maskiert werden. Wenn Sie 1095-C Formulare für mehr als 500 Mitarbeiter drucken, erhalten Sie mehr als eine PDF-Datei. Es wird empfohlen, dass Sie **Maximale Dateigröße** im Fenster **Parameter der Dokumentverwaltung** auf 150 MB erhöhen.
 
 ## <a name="viewing-information"></a>Informationen anzeigen
 Sie können die Seite **Deckung für Affordable Care Act für Arbeitskraft** verwenden, um festzustellen, welche Mitarbeiter jeder Dispositionssteuerungsgruppe zugewiesen wurden, welche Mitarbeiter im Bericht nicht eingeschlossen werden müssen und welche Mitarbeiter nicht zugewiesen sind.

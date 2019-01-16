@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 80fa443fc235496a111a8a866d2e703202721268
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -33,35 +33,41 @@ ms.lasthandoff: 08/08/2018
 
 In diesem Artikel werden die Daten beschrieben , die im Rahmen des Initialisierungsprozesses für Microsoft Dynamics 365 for Retail erstellt werden.
 
-Nachdem die Einzelhandelslösung über Microsoft Dynamics Lifecycle Services (LCS) bereitgestellt wurde, müssen Sie die Einzelhandelskonfiguration initialisieren, um die grundlegenden Konfigurationsdaten zu erstellen. **Wichtig:** Bevor Sie die Einzelhandelskonfiguration initialisieren, überprüfen Sie, ob Sie eine Sprache und eine Postadresse für jede juristische Person angegeben haben, für die Sie Einzelhandelsgeschäfte einrichten werden. Dieser Schritt muss für jede juristische Person abgeschlossen werden, die Sie für Einzelhandel verwenden. Um die Einzelhandelskonfiguration zu initialisieren, führen Sie die folgenden Schritte aus:
+Nachdem die Einzelhandelslösung über Microsoft Dynamics Lifecycle Services (LCS) bereitgestellt wurde, müssen Sie die Einzelhandelskonfiguration initialisieren, um die grundlegenden Konfigurationsdaten zu erstellen.
 
-1.  Start des Dynamics 365 for Retail-Client
-2.  Klicken Sie auf **Einzelhandel** &gt; **Zentralverwaltungseinrichtun** &gt; **Parameter** &gt; **Einzelhandelsparamete**.
-3.  Klicken Sie auf **Initialisieren**.
+> [!IMPORTANT]
+> Bevor Sie die Einzelhandelskonfiguration initialisieren, überprüfen Sie, ob Sie eine Sprache und eine Postadresse für jede juristische Person angegeben haben, für die Sie Einzelhandelsgeschäfte einrichten werden. Dieser Schritt muss für jede juristische Person abgeschlossen werden, die Sie für Einzelhandel verwenden.
+
+Um die Einzelhandelskonfiguration zu initialisieren, führen Sie die folgenden Schritte aus:
+
+1. Start des Dynamics 365 for Retail-Client
+2. Klicken Sie auf **Einzelhandel** &gt; **Zentralverwaltungseinrichtun** &gt; **Parameter** &gt; **Einzelhandelsparamete**.
+3. Klicken Sie auf **Initialisieren**.
 
 Durch die Initialisierung werden die folgenden Standardkonfigurationsdaten erstellt:
 
--   Einzelhandel-Steuerprogramm-Aufträge und -Unteraufträge
--   Retail Channel-Schema
--   Einzelhandel-Vertriebszeitpläne
--   Standard-Bildschirmlayouts mit Schaltflächenrastern, Bildern und Themen
--   Zeitzoneninformation
--   Verkaufsstellen(POS)-Vorgänge
--   POS-Berechtigungen
--   Kanalberichte
--   Attributmetadaten
--   Entitätsprüfungsvorlagen
--   Batchauftrag, um den Commerce Data Exchange-Sitzungsverlauf zu bereinigen
+- Einzelhandel-Steuerprogramm-Aufträge und -Unteraufträge
+- Retail Channel-Schema
+- Einzelhandel-Vertriebszeitpläne
+- Standard-Bildschirmlayouts mit Schaltflächenrastern, Bildern und Themen
+- Zeitzoneninformation
+- Verkaufsstellen(POS)-Vorgänge
+- POS-Berechtigungen
+- Kanalberichte
+- Attributmetadaten
+- Entitätsprüfungsvorlagen
+- Batchauftrag, um den Commerce Data Exchange-Sitzungsverlauf zu bereinigen
 
-Darüber hinaus ist das Protokollieren in Zusammenhang mit der Zahlungskartenindustrie (PCI) für die Dynamics 365 Retail- Datenbank aktiviert. **Hinweis:** Es gibt eine Option, um das Einzelhandel-Steuerprogramm separat zu konfigurieren. Mit dieser Option können Sie die Einzelhandel-Steuerprogramm-Konfiguration auf die Standardeinstellungen zurücksetzen. Nachdem die Initialisierung abgeschlossen wurde, müssen Sie zusätzliche Einzelhandelsdaten konfigurieren. Nachfolgend finden Sie einige Beispiele:
+Darüber hinaus ist das Protokollieren in Zusammenhang mit der Zahlungskartenindustrie (PCI) für die Dynamics 365 Retail- Datenbank aktiviert.
 
--   Einzelhandelsparameter
--   Einzelhandel-Steuerprogramm-Parameter
--   Retail Channels
--   Register und Geräte
--   Sortimente
+> [!NOTE]
+> Es gibt eine Option, um das Einzelhandel-Steuerprogramm separat zu konfigurieren. Mit dieser Option können Sie die Einzelhandel-Steuerprogramm-Konfiguration auf die Standardeinstellungen zurücksetzen.
 
+Nachdem die Initialisierung abgeschlossen wurde, müssen Sie zusätzliche Einzelhandelsdaten konfigurieren. Nachfolgend finden Sie einige Beispiele:
 
-
-
+- Einzelhandelsparameter
+- Einzelhandel-Steuerprogramm-Parameter
+- Retail Channels
+- Register und Geräte
+- Sortimente
 

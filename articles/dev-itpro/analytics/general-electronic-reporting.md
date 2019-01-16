@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
+ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
+ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
 ms.contentlocale: de-de
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -174,11 +174,11 @@ Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen,
 - in der Cloud gehostete Umgebungen, die für Entwicklungszwecke bereitgestellt werden (enthalten Testmodelle eingeschlossener Suiten)
 - lokal bereitgestellte Umgebungen (lokal oder lokale Geschäftsdatenbereitstellung (LBD))
 
-Besuchen Sie die Seite [Elektronische Berichterstellungs-(EB)-Konfigurationen importieren](/electronic-reporting-import-ger-configurations.md) für weitere Details dazu.
+Besuchen Sie die Seite [Elektronische Berichterstellungs-(EB)-Konfigurationen importieren](./electronic-reporting-import-ger-configurations.md) für weitere Details dazu.
 
 Ein **RCS-Instanz**-Repository bietet Zugriff auf die Konfigurationsliste einer bestimmten RCS-Instanz, die in der Repository-Registrierungsphase ausgewählt wurde. Mithilfe von EB können Sie abgeschlossene oder geteilte Konfigurationen aus der ausgewählten RCS-Instanz in die aktuelle Finance and Operations-Instanz importieren und sie können für die elektronische Berichterstellung verwendet werden.
 
-Besuchen Sie die Seite [Elektronische Berichterstellungs-(EB)-Konfigurationen aus Gesetzlichen Konfigurationsdiensten (RCS) importieren](/rcs-download-configurations.md) für weitere Details dazu.
+Besuchen Sie die Seite [Elektronische Berichterstellungs-(EB)-Konfigurationen aus Gesetzlichen Konfigurationsdiensten (RCS) importieren](./rcs-download-configurations.md) für weitere Details dazu.
 
 Benötigte **LCS-Projekt**-, **Dateisystem**- und **Gesetzliche Konfigurationsdienste (RCS)**-Repositorys können einzeln für jeden Konfigurationsanbieter der aktuellen Finance and Operations-Instanz registriert werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
 

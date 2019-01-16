@@ -3,7 +3,7 @@ title: Einrichten der Angebotsverwaltung
 description: In diesem Thema wird beschrieben, wie Angebote in Talent eingerichtet werden.
 author: josaw
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fa2f2f9f67562524961352a87a7db49992776e46
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
 ms.contentlocale: de-de
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="set-up-offer-management"></a>Einrichten der Angebotsverwaltung 
@@ -105,7 +105,7 @@ Um die Datenregeln für die CSV-Datei zu erstellen, gehen Sie folgendermaßen vo
 
 1.  Sie können einen vorhandenen Regelsatzupload löschen, wenn der Platzhalter, der definiert ist, von keiner anderen Dokumentvorlage verwendet wird.
 
->[!NOTIZEN]
+>[!NOTE]
 > - Jeder Platzhalter kann einen eindeutigen Satz Spalten haben, der davon abhängig ist. Wenn beispielsweise **Jährliches Gehalt** **Arbeitsort** **Ebene** abhängig ist, können Sie einen anderen Regelsatz nicht hochgeladen, **Jährliches Gehalt** aus einem anderen Satz Spalten abhängig ist.
 
 > - Sie können Beispielangebotdatenregelsätze auf der Registerkarte **Beispiele** auf der Seite **Angebotdatenregeln** herunterladen.
@@ -136,7 +136,7 @@ Um eine Angebotsunterlagevorlage zu erstellen, gehen Sie folgendermaßen vor.
 
     - Hashtag der Angebotdatenenplatzhalter direkt in Position. Typ **\#** und dann starten Sie das Eingeben des Namens des Angebotsdatenenplatzhalters. Wählen Sie in der Dropdownliste eine Option aus. Klicken Sie oder drücken Sie **Eingeben**, um den Angebotdatenenplatzhalter einzufügen.
 
-    >[!NOTIZEN]
+    >[!NOTE]
     > - Um einen Platzhalter der Angebotsunterlagevorlage zuzuordnen ohne den Wert dem Kandidaten zu zeigen, gehen Sie zu Ddatenenplatzhalter und klicken Sie auf das Symbol **Anheften**. Dies überträgt den einzufügenden dem Abschnitt **Fixierte Angebotdaten** der Angebotsunterlagevorlage. Zum Aufheben, führen Sie die selben Schritte aus aber klicken Sie **Markierung aufheben** in der Liste der Angebotsdatenenplatzhalter.
 
     > - Um die Liste aktiver Angebotdatenenplatzhalter anzuzeigen, wechseln Sie zur Registerkarte **Aktiv** im rechten Bereich.
@@ -175,7 +175,7 @@ Angebotpakete sind die Angebotartefakte, die mit den Kandidaten geteilt werden u
 
 1.  Klicken Sie auf **Vorlage hinzufügen**.
 
-    >[!NOTIZEN]
+    >[!NOTE]
     > - Sie können eine vorhandenen Vorlage auswählen, um eine neue Vorlage zu erstellen oder eine bestehende verwenden.
 
     > - Wenn Sie sich entschieden haben, eine vorhandene Vorlage hinzuzufügen, müssen Sie prüfen, ob die Angebotsunterlagevorlage gespeichert, abgeschlossen oder als aktiv markiert wurde.
@@ -198,8 +198,10 @@ Es gibt verschiedene Teile des Angeboterstellungsprozesses, der von einem Attrac
 
 - **Angeboterfahrung des Kandidaten** - Als Administrator, können Sie auswählen, ob alle Angebote ein Ablaufdatum haben, und falls ja, wofür das Standardgegenkonto für das Ablaufdatum sein soll. Sie können auch konfigurieren, ob Kandidaten ein Angebot ablehnen können.
 
-- **E-Unterschriften** - Zurzeit ist die einzige verfügbare Option für die elektronischen Signatur, dass Kandidaten ihren Namen im Angebotpaket bei Annahme des Angebots eingeben. Wir lancieren Partnersintegrationen mit anderen Anbietern der elektronischen Signatur in der Zukunft.
+- **E-Unterschriften** - Als Administrator, können Sie die Methode auswählen, die auch Kandidaten verwenden können, um Angebote zu signieren.
+    - Adobe Sign- alle Angebotpakete werden auf Adobe Sign übermittelt und unterzeichnet. Jeder Angebotersteller, der die Angebotanforderungen veröffentlicht, muss eine Adobe Sign Lizenz haben, um sich mit Attract zu verbinden. 
 
+    - ESign - Dies ist die Standardeinstellung, wo der Benutzer ein Angebot signieren kann, indem er Namen und Initialen eingibt.
 
 Weitere Informationen zu den Angeboterstellungsprozessund  finden Sie unter [Erstellen, genehmigen und unterzeichnen von Angeboten ](./creating-offers.md).
 

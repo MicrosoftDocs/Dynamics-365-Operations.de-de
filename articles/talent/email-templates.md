@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 85581968d9d242460117693174acbf906463997f
+ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
+ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
 ms.contentlocale: de-de
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 10/22/2018
 [!include[banner](../includes/banner.md)]
 
 Mithilfe der Email-Vorlagen-Bibliothek können Administratoren ein einheitliches Design und Branding für alle E-Mails erstellen, die von Microsoft Dynamics 365 for Talent: attract gesendet werden. Administratoren können auch eine Sammlung von E-Mail-Inhaltsvorlagen zusammenstellen, die von anderen E-Mail-Nutzern verwendet werden können. Das Einstellungsteam kann diese Vorlagen in ihrem Workflow verwenden, um E-Mail-Nachrichten effizienter zu senden. Einige E-Mails werden in Attract so konfiguriert, dass sie automatisch gesendet werden, und der Administrator kann die Email-Vorlagen-Bibliothek verwenden, um den Inhalt für die E-Mails anzupassen.
+
+> [!NOTE]
+> Um E-Mail-Vorlagen zu verwenden, muss die Organisation das Verständliche Einstellungsadd-on haben.
 
 ## <a name="global-template-configurations"></a>Globale Konfigurationsvorlagen
 
