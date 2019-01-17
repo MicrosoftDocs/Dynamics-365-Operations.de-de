@@ -257,13 +257,15 @@
               href: extensibility/extensibility-changes-804.md
             - name: "Änderungen an der Erweiterbarkeit in Version\_8.1"
               href: extensibility/extensibility-changes-81.md
-            - name: "Änderungen an der Erweiterbarkeit in Version\_8.1.1"
+            - name: "Erweiterbarkeitsänderungen in Version\_8.1.1"
               href: extensibility/extensibility-changes-811.md
-            - name: "Änderungen an der Erweiterbarkeit in Version\_8.1.2"
+            - name: "Erweiterbarkeitsänderungen in Version\_8.1.2"
               href: extensibility/extensibility-changes-812.md
+            - name: Erweiterbarkeitsänderungen in Version 8.1.3
+              href: extensibility/extensibility-changes-813.md
         - name: Grundlagen
           items:
-            - name: Intrusive Anpassungen
+            - name: Tiefgreifende Anpassungen
               href: extensibility/intrusive-customizations.md
             - name: Klassenerweiterungsmodell
               href: extensibility/class-extensions.md
@@ -883,16 +885,37 @@
       href: deployment/deploy-demo-environment.md
     - name: Cloudbereitstellung
       items:
+        - name: Self-Service-Bereitstellung
+          href: deployment/infrastructure-stack.md
+          items:
+            - name: Eine neue Umgebung bereitstellen
+              href: deployment/deployenvironment-newinfrastructure.md
+            - name: Bereitstellung – FAQ
+              href: deployment/deploymentFAQ.md
+            - name: Bekannte Probleme bei der Self-Service-Bereitstellung
+              href: deployment/known-issues-new-deployment-experience.md
+            - name: Wartungsarbeitsgänge für Bereitstellungen
+              href: deployment/maintenanceoperationsguide-newinfrastructure.md
+            - name: Eine Umgebung aktualisieren
+              href: deployment/updateenvironment-newinfrastructure.md
+            - name: 'Probleme bei Umgebungen behandeln, die durch Self-Service-Bereitstellung verfügbar sind'
+              href: deployment/troubleshoot-newinfrastructure.md
         - name: Azure Ressourcen-Manager – Vollständiges Onboarding
           href: deployment/arm-onboarding.md
         - name: Azure ExpressRoute und Finance and Operations
           href: deployment/expressroute.md
         - name: Finance and Operations-Architektur
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+        - name: Anwenden von Updates auf Cloudumgebungen
+          href: deployment/apply-deployable-package-system.md
+        - name: Updates und Erweiterungen auf in der Cloud gehostete Retail Channel-Komponenten anwenden
+          href: deployment/Update-retail-channel.md
+        - name: In der Cloud gehostete Retail Channel-Komponenten initialisieren
+          href: deployment/Initialize-Retail-Channels.md
     - name: Lokale Bereitstellung
       href: deployment/on-premises-deployment-landing-page.md
       items:
-        - name: Optionen für lokale Bereitstellungen
+        - name: Option für lokale Bereitstellungen
           href: deployment/on-premises-overview.md
         - name: Planen und Vorbereiten lokaler Bereitstellungen
           href: deployment/plan-onprem-deployment.md
@@ -931,8 +954,6 @@
       items:
         - name: Erstellen von bereitstellbaren Modellpaketen
           href: deployment/create-apply-deployable-package.md
-        - name: Anwenden von Updates auf Cloudumgebungen
-          href: deployment/apply-deployable-package-system.md
         - name: Einrichten von bereitstellbaren Paketen über die Eingabeaufforderung
           href: deployment/install-deployable-package.md
         - name: Ein Paket deinstallieren
@@ -1021,9 +1042,7 @@
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: "Die Dynamics\_AX-Plattform auf die Version von August 2016 aktualisieren"
           href: migration-upgrade/update-platform-each-release.md
-        - name: Sandkastenumgebungen aktualisieren
-          href: migration-upgrade/upgrade-sandbox-environment.md
-        - name: 'Aktualisieren von Daten in Entwicklungs-, Demo- oder Sandkastenumgebungen'
+        - name: 'Daten in Entwicklungs-, Demo- oder Sandkastenumgebungen aktualisieren'
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Aktualisieren von Entwicklungstools
           href: dev-tools/update-development-tools.md

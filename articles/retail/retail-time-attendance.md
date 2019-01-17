@@ -20,10 +20,10 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 21c29c3c37dfacdd98f5c3ec7698f07623da2285
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 4c54909a02376a62a72a986e634649fa0ae54284
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -31,112 +31,113 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden Szenarien beschreiben, die für die Verwaltung von Zeit und Anwesenheit Microsoft Dynamics 365 for Retail unterstützt werden. 
+In diesem Thema werden Szenarien beschreiben, die für die Verwaltung von Zeit und Anwesenheit Microsoft Dynamics 365 for Retail unterstützt werden.
 
-<a name="manage-worker-setup-and-scheduling"></a>Verwalten Sie Arbeitskrafteinstellung und Feinterminierung
-----------------------------------
+## <a name="manage-worker-setup-and-scheduling"></a>Verwalten Sie Arbeitskrafteinstellung und Feinterminierung
 
 ### <a name="initial-configuration"></a>Ausgangskonfiguration
 
--   Führen Sie den Konfigurationsassistenten aus.
--   Registrieren Sie Arbeitskräfte als Zeiterfassungsarbeitskräfte.
+- Führen Sie den Konfigurationsassistenten aus.
+- Registrieren Sie Arbeitskräfte als Zeiterfassungsarbeitskräfte.
 
 ### <a name="plan-worker-schedules"></a>Planen von Arbeitskraftzeitplänen
 
--   Wenden Sie Profile durch Verwendung der Arbeitsplanung an. Weitere Informationen finden Sie unter <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
+- Wenden Sie Profile durch Verwendung der Arbeitsplanung an. Weitere Informationen zu [Arbeitszeitprofilen finden Sie unter](https://technet.microsoft.com/library/aa551234.aspx)
 
-Weitere Informationen zu den Konfigurationsschritten finden Sie unter <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
+Informationen über die Konfigurationsschritte, finden [Zeit und Anwesenheit](https://technet.microsoft.com/library/aa496971.aspx) Sie unter.
 
 ### <a name="retail-specific-configuration"></a>Einzelhandelsspezifische Konfiguration
 
--   Aktivieren Sie ein Funktionsprofil für die Zeiterfassung für Arbeitskräfte, für die Sie Zeiterfassungen aktivieren möchten. Klicken Sie auf **POS-Funktionensprofile** &gt; **Funktionen** &gt; **POS-Zeiterfassungen** &gt; **Zeiterfassungen aktivieren.**
--   Konfigurieren Sie Point-of-Sale-Berechtigungsgruppen (POS), um die Berechtigung zum Anzeigen von Zeiterfassungseinträgen zu aktivieren. Diese Berechtigung ermöglicht einem Benutzer die Anzeige der Zeiterfassungen anderer Arbeitskräfte im Shop (und von jedem anderen Shops, dem der Benutzer zugeordnet ist, über das Adressbuch). Sie sollten diese Berechtigung für eine Managerrolle aber nicht für eine Kassiererrolle aktivieren. Klicken Sie auf **POS-Berechtigungsgruppen** &gt; **Zeiterfassungseinträge anzeigen.**
+- Aktivieren Sie ein Funktionsprofil für die Zeiterfassung für Arbeitskräfte, für die Sie Zeiterfassungen aktivieren möchten. Klicken Sie auf **POS-Funktionensprofile** &gt; **Funktionen** &gt; **POS-Zeiterfassungen** &gt; **Zeiterfassungen aktivieren.**
+- Konfigurieren Sie Point-of-Sale-Berechtigungsgruppen (POS), um die Berechtigung zum Anzeigen von Zeiterfassungseinträgen zu aktivieren. Diese Berechtigung ermöglicht einem Benutzer die Anzeige der Zeiterfassungen anderer Arbeitskräfte im Shop (und von jedem anderen Shops, dem der Benutzer zugeordnet ist, über das Adressbuch). Sie sollten diese Berechtigung für eine Managerrolle aber nicht für eine Kassiererrolle aktivieren. Klicken Sie auf **POS-Berechtigungsgruppen** &gt; **Zeiterfassungseinträge anzeigen.**
 
 ## <a name="register-time"></a>Kassenzeit
+
 ### <a name="cashier-and-non-cashier-time-registrations"></a>Kassierer- und Nichtkassiererzeiterfassungen
 
--   Im POS:
-    -   Einstempel-Vorgänge:
-        -   Melden Sie sich mit einem Vorgäng ohne Kassenlade oder mit einer neuen Schicht an.
-        -   Wählen Sie einen Zeituhrarbeitsgang aus.
-        -   Wählen Sie einen gewünschten Vorgang aus:
-            -   Einstempeln
-            -   Pause für Arbeit
-            -   Mittagspause
-            -   Ausstempeln
+- Im POS:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Aktueller Status:</th>
-    <th>Verfügbare Vorgänge</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Einstempeln</td>
-    <td><ul>
-    <li>Pause für Arbeit</li>
-    <li>Mittagspause</li>
-    <li>Ausstempeln</li>
-    </ul></td>
-    </tr>
-    <tr class="even">
-    <td>Pause für Arbeit</td>
-    <td>Einstempeln</td>
-    </tr>
-    <tr class="odd">
-    <td>Mittagspause</td>
-    <td>Einstempeln</td>
-    </tr>
-    <tr class="even">
-    <td>Ausstempeln</td>
-    <td>Einstempeln</td>
-    </tr>
-    </tbody>
-    </table>
+    - Einstempel-Vorgänge:
 
-    [![TimeClockStates](./media/timeclockstates.png)](./media/timeclockstates.png)
--   Sehen Sie die Bestätigungsmeldung an, und überprüfen Sie, ob die Uhrzeit der aktuellen Aktivität korrekt ist.
--   Arbeitsprotokoll:
-    -   Klicken Sie auf **Arbeitsprotokoll**, um die Zeituhraktivität anzuzeigen.
-    -   Verwenden Sei Zeitfilter, um unterschiedliche Zeitfenster auszuwählen.
-    -   Wenn Sie an mehreren Filialstandorten arbeiten, Sie Ihre Zeiterfassungen von allen Shops, in denen Sie Zeit erfasst haben. Sie können den Shopfilter verwenden, um Zeiterfassungen von einem ausgewählten Shop anzuzeigen.
+        - Melden Sie sich mit einem Vorgäng ohne Kassenlade oder mit einer neuen Schicht an.
+        - Wählen Sie einen Zeituhrarbeitsgang aus.
+        - Wählen Sie einen gewünschten Vorgang aus:
 
-<!-- -->
+            - Einstempeln
+            - Pause für Arbeit
+            - Mittagspause
+            - Ausstempeln
 
--   Unterschiedliche Zeitzonen:
-    -   Wenn Sie Zeit von einem anderen Standort (für das Kassiererarbeitsprotokoll oder mithilfe von **Zeiterfassungseinträge anzeigen** für ein Managerszenario) anzeigen und dieser Standort in einer anderen Zeitzone ist, werden die Zeiterfassungen, die Sie sehen, in Ihre lokale Zeitzone umgewandelt. Beispielsweise sind Sie ein Manager für zwei Shops, eine in Arizona und der andere im Nevada. Ein Kassierer Einstempeln erfasst ein an 9:00 Uhr in Arizona. In diesem Moment ist es in Nevada 8:00 Uhr. Wenn Sie also im Shop in Nevada sind und Zeiterfassungen anzeigen, wird die Zeiterfassung als 8 Uhr angegeben.
+        <table>
+        <thead>
+        <tr>
+        <th>Aktueller Status:</th>
+        <th>Verfügbare Vorgänge</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Einstempeln</td>
+        <td>
+        <ul>
+        <li>Pause für Arbeit</li>
+        <li>Mittagspause</li>
+        <li>Ausstempeln</li>
+        </ul>
+        </td>
+        </tr>
+        <tr>
+        <td>Pause für Arbeit</td>
+        <td>Einstempeln</td>
+        </tr>
+        <tr>
+        <td>Mittagspause</td>
+        <td>Einstempeln</td>
+        </tr>
+        <tr>
+        <td>Ausstempeln</td>
+        <td>Einstempeln</td>
+        </tr>
+        </tbody>
+        </table>
+
+        [![TimeClockStates](./media/timeclockstates.png)](./media/timeclockstates.png)
+
+- Sehen Sie die Bestätigungsmeldung an, und überprüfen Sie, ob die Uhrzeit der aktuellen Aktivität korrekt ist.
+- Arbeitsprotokoll:
+
+    - Klicken Sie auf **Arbeitsprotokoll**, um die Zeituhraktivität anzuzeigen.
+    - Verwenden Sei Zeitfilter, um unterschiedliche Zeitfenster auszuwählen.
+    - Wenn Sie an mehreren Filialstandorten arbeiten, Sie Ihre Zeiterfassungen von allen Shops, in denen Sie Zeit erfasst haben. Sie können den Shopfilter verwenden, um Zeiterfassungen von einem ausgewählten Shop anzuzeigen.
+
+- Unterschiedliche Zeitzonen:
+
+    - Wenn Sie Zeit von einem anderen Standort (für das Kassiererarbeitsprotokoll oder mithilfe von **Zeiterfassungseinträge anzeigen** für ein Managerszenario) anzeigen und dieser Standort in einer anderen Zeitzone ist, werden die Zeiterfassungen, die Sie sehen, in Ihre lokale Zeitzone umgewandelt. Beispielsweise sind Sie ein Manager für zwei Shops, eine in Arizona und der andere im Nevada. Ein Kassierer Einstempeln erfasst ein an 9:00 Uhr in Arizona. In diesem Moment ist es in Nevada 8:00 Uhr. Wenn Sie also im Shop in Nevada sind und Zeiterfassungen anzeigen, wird die Zeiterfassung als 8 Uhr angegeben.
 
 ## <a name="view-worker-time-registrations"></a>Zeiterfassungsarbeitskräfte anzeigen
+
 ### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Anzeigen von Arbeitskraftzeiterfassungen und Filtern nach Shop oder Aktivitätstyp
 
 Im POS:
 
--   Wählen Sie **Zeiterfassungseinträge anzeigen** aus.
--   Sie sehen Zeituhrerfassungsaktivitäten von allen Arbeitskräften, die den gleichen Filialen zugewiesen sind, denen Sie zugewiesen sind.
--   Sie können den Aktivitätstyp und Shopfilter verwenden, um Zeiterfassungen zu filtern.
+- Wählen Sie **Zeiterfassungseinträge anzeigen** aus.
+- Sie sehen Zeituhrerfassungsaktivitäten von allen Arbeitskräften, die den gleichen Filialen zugewiesen sind, denen Sie zugewiesen sind.
+- Sie können den Aktivitätstyp und Shopfilter verwenden, um Zeiterfassungen zu filtern.
 
 ## <a name="process-and-manage-time-registrations"></a>Verarbeiten und Verwalten von Zeit- und Anwesenheitserfassungen
+
 Ein Dynamics 365 for Retail Benutzer folgt dem Workflow, um Zeiterfassungen zu berechnen, zu genehmigen und in die Lohnabrechnung zu übertragen.
 
 ### <a name="primary-operations"></a>Primäre Vorgänge
 
--   Berechnen
--   Genehmigen
--   An Lohnabrechnung übertragen
+- Berechnen
+- Genehmigen
+- An Lohnabrechnung übertragen
 
 ### <a name="other-common-operations"></a>Andere allgemeine Vorgänge
 
--   Massenausstempeln
--   Erfassen der Abwesenheit
+- Massenausstempeln
+- Erfassen der Abwesenheit
 
-Informationen zum Verarbeiten von Zeit- und Anwesenheitserfassungen finden Sie unter <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
-
-
-
+Weitere Informationen dazu, wie Anwesenheitserfassungen in den Erfassungen verarbeitet werden, finden [Anwesenheitserfassungen und Prozesszeit](https://technet.microsoft.com/library/aa573180.aspx).
 

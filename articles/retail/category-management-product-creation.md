@@ -59,4 +59,3 @@ Sie können die neue erweiterte Struktur für Produkteigenschaften verwenden, um
 
 ![Das Produktedialogfeld aktualisieren](media/NewUpdateProductsEnhancedView.PNG)
 
-

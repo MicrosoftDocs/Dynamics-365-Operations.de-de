@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
-ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
 ms.contentlocale: de-de
-ms.lasthandoff: 10/25/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,36 +29,35 @@ ms.lasthandoff: 10/25/2018
 
 [!include [banner](../includes/banner.md)]
 
-In Dynamics 365 for Finance and Operations stehen die folgenden Tastenkombinationen zur Verfügung. 
+In Dynamics 365 for Finance and Operations stehen die folgenden Tastenkombinationen zur Verfügung.
 
-**Hinweis:** Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
+> [!NOTE]
+> Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
 
 ## <a name="finding-a-shortcut"></a>Eine Tastenkombination suchen
-Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombinationen direkt über die Benutzeroberfläche ermitteln. Klicken Sie einfach auf einem Steuerelement mit der rechten Maustaste und wählen Sie **Tastenkombinationen anzeigen** aus. Daraufhin wird ein Dialogfeld geöffnet, welches die Tastenkombinationen anzeigt, die Sie verwenden können, basierend darauf, wo Sie auf der Seite sind. 
 
+Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombinationen direkt über die Benutzeroberfläche ermitteln. Klicken Sie einfach auf einem Steuerelement mit der rechten Maustaste und wählen Sie **Tastenkombinationen anzeigen** aus. Daraufhin wird ein Dialogfeld geöffnet, welches die Tastenkombinationen anzeigt, die Sie verwenden können, basierend darauf, wo Sie auf der Seite sind.
 
 ## <a name="action-shortcuts"></a>Aktivitätskürzel
 
-|                                                   |                                  |
-|---------------------------------------------------|----------------------------------|
-| **Aktion**                                    | **Taste(n)**                        |
-| Aktivitätssuche öffnen                                | STRG+’ oder ALT+Q                  |
-| Zum Standardaktivitätsbereich wechseln                  | ALT+M,A oder STRG+F6               |
-| Öffnen einer Registerkarte im Aktivitätsbereich oder einem Menü           | Eingabe oder Leertaste oder ALT+NACH-UNTEN-TASTE |
-| Zur nächsten/vorherigen Option in einem Menü wechseln            | NACH-UNTEN-TASTE / NACH-OBEN-TASTE            |
-| Schließen einer Registerkarte im Aktivitätsbereich oder einem Menü          | ESC                              |
-| Simulieren eines Klicks mit der rechten Maustaste                            | UMSCHALT+F10                        |
-| Öffnet das Finanz- und Operations-Kontextmenü      | STRG+F10                         |
-| Ausführen der Standardschaltfläche in einem Formular/in einem Dialogfeld   | ALT+EINGABETASTE                        |
-| Auf eine Schaltfläche oder Kachel klicken                            | EINGABETASTE oder LEERTASTE                   |
-| Aktualisierungsinformationen für eine Anzahlkachel anzeigen         | ALT+NACH-OBEN-TASTE                     |
-| Zurzeit verfügbare Tastenkombinationen anzeigen                | ALT+UMSCHALT+ K                      |                              
+| Aktion                                      | Taste(n)                            |
+|-------------------------------------------------|----------------------------------|
+| Aktivitätssuche öffnen                              | STRG+’ oder ALT+Q                  |
+| Zum Standardaktivitätsbereich wechseln                | ALT+M,A oder STRG+F6               |
+| Öffnen einer Registerkarte im Aktivitätsbereich oder einem Menü         | Eingabe oder Leertaste oder ALT+NACH-UNTEN-TASTE |
+| Zur nächsten/vorherigen Option in einem Menü wechseln          | NACH-UNTEN-TASTE / NACH-OBEN-TASTE            |
+| Schließen einer Registerkarte im Aktivitätsbereich oder einem Menü        | ESC                              |
+| Simulieren eines Klicks mit der rechten Maustaste                          | UMSCHALT+F10                        |
+| Öffnet das Finanz- und Operations-Kontextmenü    | STRG+F10                         |
+| Ausführen der Standardschaltfläche in einem Formular/in einem Dialogfeld | ALT+EINGABETASTE                        |
+| Auf eine Schaltfläche oder Kachel klicken                          | EINGABETASTE oder LEERTASTE                   |
+| Aktualisierungsinformationen für eine Anzahlkachel anzeigen       | ALT+NACH-OBEN-TASTE                     |
+| Zurzeit verfügbare Tastenkombinationen anzeigen              | ALT+UMSCHALT+ K                      |
 
 ## <a name="date-picker-shortcuts"></a>Datumsauswahlverknüpfungen
 
-|                                       |                                           |
+| Aktion                            | Taste(n)                                     |
 |---------------------------------------|-------------------------------------------|
-| **Aktion**                        | **Taste(n)**                                 |
 | Die Datumsauswahl öffnen                  | ALT+NACH-UNTEN-TASTE                            |
 | Zwischen Daten in der Datumsauswahl wechseln | STRG+Pfeiltasten                           |
 | Zum nächsten/vorherigen Monat wechseln       | BILD-AB / BILD-AUF                       |
@@ -70,9 +69,8 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 ## <a name="factbox-shortcuts"></a>Infoboxverknüpfungen
 
-|                                                                                 |                                           |
+| Aktion                                                                      | Taste(n)                                     |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| **Aktion**                                                                  | **Taste(n)**                                 |
 | Öffnen des Infoboxbereichs (oder Verschieben des Fokus zum Infoboxbereich, wenn bereits offen ist) | ALT+M,B oder STRG+F2                        |
 | Schließen des Infoboxbereichs (mit Fokus im Infoboxbereich)                         | ESC                                       |
 | Zur nächsten/vorherigen Infobox (mit Fokus im Infoboxbereich) wechseln              | ALT+UMSCHALT+NACH-UNTEN-TASTE / ALT+UMSCHALT+NACH-OBEN-TASTE |
@@ -82,42 +80,39 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 ## <a name="filtering-shortcuts"></a>Verknüpfungen filtern
 
-|                                    |                          |
-|------------------------------------|--------------------------|
-| **Ergebnis**                     | **Drücken**                |
-| Öffnen der Rasterfilterung für die aktuelle Spalte                        | STRG+G                   |
-| Schließen der Rasterfilterung für die aktuelle Spalte                       | ESC                      |
+| Ergebnis                                                                                                          | Taste(n)                    |
+|---------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Öffnen der Rasterfilterung für die aktuelle Spalte                                                                          | STRG+G                   |
+| Schließen der Rasterfilterung für die aktuelle Spalte                                                                         | ESC                      |
 | Öffnen des Bereichs "Filter" (oder Wechseln des Fokus zwischen dem Bereich "Filter" und dem Hauptformular, wenn der Bereich "Filter" bereits offen ist) | ALT+M,F oder STRG+F3       |
-| Schließen des Bereichs "Filter" (mit Fokus im Bereich "Filter")             | ESC                      |
-| Erweiterte Filterung/Sortierung öffnen                                      | STRG+UMSCHALT+F3            | 
+| Schließen des Bereichs "Filter" (mit Fokus im Bereich "Filter")                                                               | ESC                      |
+| Erweiterte Filterung/Sortierung öffnen                                                                                        | STRG+UMSCHALT+F3            |
 
 ## <a name="form-shortcuts"></a>Formularverknüpfungen
 
-|                                                     |                   |
-|-----------------------------------------------------|-------------------|
-| **Ergebnis**                                      | **Drücken**         |
-| Neuen Datensatz erstellen                                 | ALT+N             |
-| Löschen eines Datensatzes                                     | ALT+DEL oder ALT+F9 |
-| Datensatz speichern                                         | ALT+S oder STRG+S   |
-| Wiederherstellen                                    | STRG+UMSCHALT+F5     |
-| Datenaktualisierung                                        | UMSCHALT+F5          |
-| Zum sichtbaren ersten Feld im Formular wechseln         | ALT+SHIFT+F       |
-| Bearbeitungsmodus ein-/ausschalten                                    | F2                |
-| Anfügen eines Dokuments                                   | STRG+UMSCHALT+A      |
-| Nach Excel exportieren                                     | STRG+UMSCHALT+E      |
-| Zum vorherigen Datensatz wechseln (außerhalb eines Rasters)        | STRG+NACH-OBEN-TASTE     |
-| Zum nächsten Datensatz wechseln (außerhalb eines Rasters)            | STRG+NACH-UNTEN-TASTE   |
-| Zum ersten Datensatz wechseln (außerhalb eines Rasters)           | STRG+POS1         |
-| Zum letzten Datensatz wechseln (außerhalb eines Rasters)            | STRG+ENDE          |
-| Das Formular schließen ("Zurück" klicken)                         | ESC               |
-| Das Formular mit explizitem Speichern schließen                   | UMSCHALT+ESC         |
-| Das Formular schließen und dabei alle nicht gespeicherten Änderungen verwerfen       | ALT+UMSCHALT+Q       |
+| Ergebnis                                    | Taste(n)             |
+|-----------------------------------------------|-------------------|
+| Neuen Datensatz erstellen                           | ALT+N             |
+| Löschen eines Datensatzes                               | ALT+DEL oder ALT+F9 |
+| Datensatz speichern                                   | ALT+S oder STRG+S   |
+| Wiederherstellen                              | STRG+UMSCHALT+F5     |
+| Datenaktualisierung                                  | UMSCHALT+F5          |
+| Zum sichtbaren ersten Feld im Formular wechseln   | ALT+SHIFT+F       |
+| Bearbeitungsmodus ein-/ausschalten                              | F2                |
+| Anfügen eines Dokuments                             | STRG+UMSCHALT+A      |
+| Nach Excel exportieren                               | STRG+UMSCHALT+E      |
+| Zum vorherigen Datensatz wechseln (außerhalb eines Rasters)  | STRG+NACH-OBEN-TASTE     |
+| Zum nächsten Datensatz wechseln (außerhalb eines Rasters)      | STRG+NACH-UNTEN-TASTE   |
+| Zum ersten Datensatz wechseln (außerhalb eines Rasters)     | STRG+POS1         |
+| Zum letzten Datensatz wechseln (außerhalb eines Rasters)      | STRG+ENDE          |
+| Das Formular schließen ("Zurück" klicken)                   | ESC               |
+| Das Formular mit explizitem Speichern schließen             | UMSCHALT+ESC         |
+| Das Formular schließen und dabei alle nicht gespeicherten Änderungen verwerfen | ALT+UMSCHALT+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Formularnavigationsverknüpfungen
 
-|                                                     |                                              |
+| Aktion                                          | Taste(n)                                        |
 |-----------------------------------------------------|----------------------------------------------|
-| **Aktion**                                      | **Taste(n)**                                    |
 | Zum nächsten/vorherigen Feld wechseln                     | Registerkarte / UMSCHALT+TAB                              |
 | Zur nächsten/vorherigen Registerkarte wechseln                       | ALT+UMSCHALT+NACH-RECHTS-TASTE / ALT+UMSCHALT+NACH-LINKS-TASTE |
 | Zur &lt;n&gt;nten Registerkarte wechseln                         | ALT+UMSCHALT+&lt;n&gt; (&lt;n&gt; = 1-9)        |
@@ -134,30 +129,28 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 ## <a name="grid-shortcuts"></a>Rasterverknüpfungen
 
-|                                                                                                                        |                                 |
+| Aktion                                                                                                             | Taste(n)                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Aktion**                                                                                                         | **Taste(n)**                       |
 | Zur nächsten/vorherigen Spalte wechseln                                                                                       | Registerkarte / UMSCHALT+TAB                 |
 | Zur nächsten/vorherigen Zeile wechseln                                                                                          | NACH-UNTEN-TASTE / NACH-OBEN-TASTE           |
-| Ohne Auswahl zur nächsten/vorherigen Zeile wechseln<br><br>**Hinweis:** Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl. | STRG+NACH-OBEN-TASTE / STRG+NACH-UNTEN-TASTE |
-| Die aktuelle Zeile auswählen/Auswahl für aktuelle Zeile aufhaben<br><br>**Hinweis:** Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.                    | STRG+LEERTASTE / STRG+KLICK         |
-| Die nächste/vorherige Zeile zum ausgewählten Satz hinzufügen<br><br>**Hinweis:** Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.   | UMSCHALT+LEERTASTE                     |
-| Einen Bereich von Zeilen dem ausgewählten Satz hinzufügen<br><br>**Hinweis:** Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.         | UMSCHALT+KLICK                     |
+| Ohne Auswahl zur nächsten/vorherigen Zeile wechseln<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote> | STRG+NACH-OBEN-TASTE / STRG+NACH-UNTEN-TASTE |
+| Die aktuelle Zeile auswählen/Auswahl für aktuelle Zeile aufhaben<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote>                    | STRG+LEERTASTE / STRG+KLICK         |
+| Die nächste/vorherige Zeile zum ausgewählten Satz hinzufügen<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote>   | UMSCHALT+LEERTASTE                     |
+| Einen Bereich von Zeilen dem ausgewählten Satz hinzufügen<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote>         | UMSCHALT+KLICK                     |
 | Zur nächsten/vorherigen Seite mit Daten wechseln                                                                                   | BILD-AUF / BILD-AB             |
 | Am unteren Ende des Rasters eine neue Zeile erstellen                                                                             | NACH-UNTEN-TASTE (von der letzten Zeile)  |
 | Alle Zeilen auswählen oder löschen                                                                                               | STRG+UMSCHALT+M                    |
 | Zum ersten Datensatz wechseln                                                                                               | STRG+POS1                       |
 | Zum letzten Datensatz wechseln                                                                                                | STRG+ENDE                        |
-| Die Standardaktivität in einem Raster ausführen<br><br>**Hinweis:** Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben                 | EINGABETASTE                           |
+| Die Standardaktivität in einem Raster ausführen<blockquote>[!NOTE] Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben</blockquote> | EINGABETASTE                           |
 | Fokus zwischen ausgewählter Zeile und Kopfzeile umschalten                                                               | ALT+UMSCHALT+H                     |
 | Die aktuelle Spalte vergrößern/verkleinern (mit Fokus in der Kopfzeile)                                                  | NACH-RECHTS-TASTE / NACH-LINKS-TASTE        |
 | Rasterfilterung für die aktuelle Spalte öffnen (mit Fokus in der Kopfzeile)                                              | EINGABETASTE                           |
 
 ## <a name="input-control-shortcuts"></a>Eingabesteuerungsverknüpfungen
 
-|                                                                              |                               |
+| Aktion                                                                   | Taste(n)                         |
 |------------------------------------------------------------------------------|-------------------------------|
-| **Aktion**                                                               | **Taste(n)**                     |
 | Den Link öffnen                                                           | STRG+EINGABETASTE                    |
 | Sitzungsdatum in ein Datumsfeld eingeben                                       | D+TAB                         |
 | Aktuelles Datum in ein Datumsfeld eingeben                                       | T+TAB                         |
@@ -171,17 +164,15 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 ## <a name="messaging-shortcuts"></a>Nachrichtenverknüpfungen
 
-|                          |               |
+| Aktion               | Taste(n)         |
 |--------------------------|---------------|
-| **Aktion**           | **Taste(n)**     |
 | Zum Nachrichtencenter wechseln | STRG+UMSCHALT+F7 |
 | Zur Meldungsleiste wechseln    | STRG+F7       |
 
 ## <a name="navigation-shortcuts"></a>Navigationsverknüpfungen
 
-|                                                                               |                            |
+| Aktion                                                                    | Taste(n)                      |
 |-------------------------------------------------------------------------------|----------------------------|
-| **Aktion**                                                                | **Taste(n)**                  |
 | Zum Dashboard wechseln                                                           | Alt+UMSCHALT+POS1             |
 | Zur Navigationsleiste wechseln                                                    | ALT+M,N oder Alt+UMSCHALTTASTE+F1    |
 | Zur Unternehmensauswahl wechseln                                                    | STRG+UMSCHALT+O               |
@@ -201,9 +192,8 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 ## <a name="personalization-shortcuts"></a>Personalisierungsverknüpfungen
 
-|                                                                                                                        |                                     |
+| Aktion                                                                                                             | Taste(n)                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Aktion**                                                                                                         | **Taste(n)**                           |
 | Die Seite in den Personalisierungsmodus umstellen                                                                          | STRG+UMSCHALTTASTE+P                        |
 | Das Tool „Auswählen” verwenden (wenn im Personalisierungsmodus)                                                                     | A                                   |
 | Das Dialogfeld des Steuerelements zur schnellen Personalisierung öffnen (wenn das Tool „Auswählen” verwendet wird)                              | LEERTASTE oder EINGABETASTE                      |
@@ -230,9 +220,8 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 
 ## <a name="segmented-entry-shortcuts"></a>Segmentierte Eintragsverknüpfungen
 
-|                                                                                                                         |                                  |
+| Aktion                                                                                                              | Taste(n)                            |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Aktion**                                                                                                          | **Taste(n)**                        |
 | Die Dropdownliste öffnen (wenn die Dropdownliste geschlossen ist)                                                             | ALT+NACH-UNTEN-TASTE                   |
 | Fokus ins Eingabefeld für das aktuelle Segment in der Dropdownliste verschieben (wenn die Dropdownliste bereits offen ist) | ALT+NACH-UNTEN-TASTE                   |
 | Die Dropdownliste schließen                                                                                                | ALT+NACH-OBEN-TASTE                     |
@@ -244,5 +233,4 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | In der Suche eine Zeile nach oben/unten wechseln                                                                                        | NACH-OBEN-TASTE / NACH-UNTEN-TASTE            |
 | In der Suche eine Seite nach oben/unten wechseln                                                                                       | BILD-AUF / BILD-AB              |
 | Ganz nach oben/unten in der Suche wechseln                                                                                    | POS1 / ENDE                       |
-
 

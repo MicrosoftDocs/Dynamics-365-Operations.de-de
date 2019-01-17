@@ -34,42 +34,46 @@ Dieses Thema beschreibt die verschiedenen Elemente, die einen Workflow darstelle
 Ein Workflow besteht aus Elementen. In den folgenden Abschnitten wird jeder Elementtyp beschrieben.
 
 ## <a name="tasks"></a>Aufgaben
+
 Bei einer *Aufgabe* handelt es sich um eine auszuführende Arbeitseinheit. Es können zwei Arten von Aufgaben zu einem Workflow hinzugefügt werden: manuelle Aufgaben und automatisierte Aufgaben.
 
 ### <a name="manual-task"></a>Manuelle Aufgabe
 
 Bei einer *manuellen Aufgabe* handelt es sich um eine Arbeitseinheit, die von einem Benutzer auszuführen ist. Beispielsweise beinhaltet ein Workflow für Spesenabrechnungen manuelle Aufgaben, die von den zugewiesenen Benutzern folgende Aktionen erfordern:
 
--   Prüfen der zusammen mit einer Spesenabrechnung eingereichten Belege.
--   Anrufen des Vorgesetzten eines Mitarbeiters.
+- Prüfen der zusammen mit einer Spesenabrechnung eingereichten Belege.
+- Anrufen des Vorgesetzten eines Mitarbeiters.
 
 ### <a name="automated-task"></a>Automatisierte Aufgabe
 
 Bei einer *automatisierten Aufgabe* handelt es sich um eine Arbeitseinheit, die vom System auszuführen ist. Es sind keine manuellen Benutzeraktivitäten erforderlich. Beispielsweise beinhaltet ein Workflow für Aufträge automatisierte Aufgaben, die vom System folgende Aktionen erfordern:
 
--   Ausführen einer Kreditprüfung.
--   Erstellen eines Debitorendatensatzes für den Debitor, sofern noch nicht vorhanden.
+- Ausführen einer Kreditprüfung.
+- Erstellen eines Debitorendatensatzes für den Debitor, sofern noch nicht vorhanden.
 
 ## <a name="approval-processes"></a>Genehmigungsprozesse
+
 Bei einem *Genehmigungsprozess* handelt es sich um einen Prozess, der aus getrennten Schritten besteht. Bei jedem Genehmigungsschritt kann der Benutzer die folgenden Aktivitäten ausführen:
 
--   Dient zum Genehmigen des Dokuments.
--   Dient zum Ablehnen des Dokuments.
--   eine Änderung am Dokument anzufordern,
--   Dokument einem anderen Benutzer zur Genehmigung zuweisen.
+- Dient zum Genehmigen des Dokuments.
+- Dient zum Ablehnen des Dokuments.
+- eine Änderung am Dokument anzufordern,
+- Dokument einem anderen Benutzer zur Genehmigung zuweisen.
 
 ## <a name="line-item-workflow-elements"></a>Elemente von Positionsworkflows
+
 Ein Workflow kann zum Verarbeiten von Dokumenten oder der Positionen in einem Dokument erstellt werden. Angenommen, Sie haben einen Genehmigungsworkflow für Arbeitszeitnachweise erstellt. (Wir bezeichnen diesen Workflow als *Dokumentworkflow*.) Sie können ein *Positionsworkflow*-Element zu diesem Dokumentworkflow hinzufügen. Bei der Ausführung des Positionselements wird jede Position im Dokument zur Verarbeitung übermittelt. Dabei können alle Positionen durch denselben Positionsworkflow oder jede Position durch einen anderen Positionsworkflow verarbeitet werden. Angenommen, ein Mitarbeiter hat einen Arbeitszeitnachweis übermittelt, der der folgenden Abbildung ähnelt.
 
-![Workflow mit Positionen](./media/workflow_lineitemworkflow.gif) 
+![Workflow mit Positionen](./media/workflow_lineitemworkflow.gif)
 
 In diesem Szenario möchten Sie vielleicht die folgenden Positionsworkflows erstellen:
 
--   **Positionsworkflow 1** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 1111 verwendet.
--   **Positionsworkflow 2** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 2222 verwendet.
--   **Positionsworkflow 3** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 3333 verwendet.
+- **Positionsworkflow 1** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 1111 verwendet.
+- **Positionsworkflow 2** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 2222 verwendet.
+- **Positionsworkflow 3** – Dieser Workflow wird zum Verarbeiten von Positionen mit Projektkennung 3333 verwendet.
 
 ## <a name="flow-control-elements"></a>Flusssteuerelemente
+
 Mithilfe der folgenden Elemente können Sie Workflows mit alternativen Verzweigungen oder gleichzeitig ausgeführten Verzweigungen entwerfen.
 
 ### <a name="manual-decision"></a>Manuelle Entscheidung
@@ -87,7 +91,4 @@ Eine *parallele Aktivität* ist ein Workflowelement, das zwei oder mehr Workflow
 ### <a name="subworkflow"></a>Untergeordneter Workflow
 
 Ein *untergeordneter Workflow* ist ein Workflow, der im Kontext eines anderen Workflows ausgeführt wird.
-
-
-
 

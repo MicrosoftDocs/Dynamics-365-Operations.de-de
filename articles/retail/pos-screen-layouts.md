@@ -40,6 +40,7 @@ Die folgende Abbildung zeigt die Beziehungen zwischen den unterschiedlichen Enti
 ![Entität für POS-Bildschirmlayout](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Visuelles Profil
+
 Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die Sichtelementen anzugeben, die kassenspezifisch sind und gemeinsam genutzt werden. Jeder Benutzer, der sich an der Kasse anmeldet, sieht dasselbe Thema, Farben und Bilder.
 
 ![POS-Begrüßungsbildschirm mit hellem Thema](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die 
 - **Anwendungshintergrund**- Sie können einen Hintergrund in der gesamten Anwendung anstelle der ausgefüllten Themenfarbe definieren. Für den Anmelde-Hintergrund sollte die Dateigröße so gering wie möglich gehalten werden.
 
 ## <a name="screen-layouts"></a>Bildschirmlayouts
+
 Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzierung von Benutzeroberflächen-Steuerelementen im POS-Begrüßungsbildschirm- und -**Buchungs**-Bildschirm.
 
 ![POS-Bildschirmlayout anzeigen](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ Die POS-Anwendung wählt automatisch die nächste Layoutgröße für das Gerät 
 ![POS-Layoutgrößen](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Schaltflächenraster
+
 Für jede Layoutgröße in einem Bildschirmlayout können Sie den POS-Begrüßungsbildschirm und den Bildschirm **Buchung** konfigurieren und zuweisen. Schaltflächenraster für den Begrüßungsbildschirm werden automatisch von links nach rechts, von der niedrigsten Nummer (Begrüßungsbildschirm 1) zur höchsten Nummer angezeigt.
 
 Im vollständig POS-Layout wird die Position der Schaltflächenraster im Bildschirmlayoutdesigner angegeben.
@@ -104,6 +107,7 @@ Schaltflächenraster für den POS-Begrüßungsbildschirm werden automatisch von 
 ![Kompakte Layoutschaltflächenraster](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a>Bilder
+
 Für jede Layoutgröße in einem Bildschirmlayout, können Sie angeben, Bildern in der POS-Benutzeroberfläche einzubeziehen. Für POS-Layouts kann nur ein Bild für den Begrüßungsbildschirm angegeben werden. Das Bild wird als das erste Benutzeroberflächenelement auf der linken Seite angezeigt. Im Feld **Buchung** können Bilder als Registerkartenbilder oder als Logo verwendet werden. Kompakte POS-Layouts verwenden diese Bilder.
 
 ### <a name="screen-layout-designer"></a>Designer für Bildschirmlayout
@@ -141,11 +145,13 @@ Mit dem vollständigen Layoutbereich können Benutzer Benutzeroberflächen-Kontr
     - **Benuterdefiniertes Steuerelement** - Das benutzerdefinierte Steuerlelement dient als Platzhalter innerhalb des Bildschirmlayouts das die Platzierung von benutzerdefinierten Inhalten zulässt. Das benutzerdefinierte Steuerelement ist hur für volle Layouts verfügbar.
 
 ### <a name="compact-layout-designer"></a>Kompaktes Bildschirmlayout
+
 Wie der volle Layoutdesigner kann der kompakte Layoutdesigner POS-Bildschirmlayouts für Telefone und kleine Tablets konfigurieren. Jedoch in diesem Fall ist das Layout fix. Sie können eine Vielzahl von Steuerelementen im Layout konfigurieren, indem Sie auf das Kontextmenü mit der rechten Maustaste klicken und verwenden. Allerdings können Sie Drag & Drop-Vorgänge für zusätzlichen Inhalt nicht verwenden.
 
 ![Kompakter Layoutdesigner](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Designer für Schaltflächenraster
+
 Mit dem Schaltflächenrasterdesigner können Sie Schaltflächenraster konfigurieren, die für den POS-Begrüßungsbildschirm und den Bildschirm **Buchung** für volle und kompakte Layouts verwendet werden können. Der gleiche Schaltflächenraster kann für verschiedene Layouts und Layouttypen verwendet werden. Wie der Bildschirmlayoutdesigner verwendet der Schaltflächenrasterdesigner die ClickOnce Bereitstellung, um die neueste Version der Anwendung herunterzuladen, zu installieren und zu starten, wenn der Benutzer darauf zugreift. Stellen Sie sicher, dass Sie die ClickOnce Browseranforderungen überprüfen. Einige Browser wie beispielsweise Google Chrome, benötigen Erweiterungen.
 
 ![Designer für Schaltflächenraster](../retail/media/Button-Grid-Designer.png)

@@ -31,20 +31,18 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Sie können die Rentabilität für die 10 wichtigsten Produkte mithilfe von Microsoft Dynamics 365 for Retail prüfen. 
+Sie können die Rentabilität für die 10 wichtigsten Produkte mithilfe von Microsoft Dynamics 365 for Retail prüfen.
 
 Im Rahmen von Microsoft Dynamics 365 for Retail können Benutzer die Rentabilität für die wichtigsten Produkte (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage eines der folgenden Kriterien überprüfen:
 
--   Verkaufsbetrag
--   Menge
--   Bruttogewinnspanne
--   Gewinnspanne (Prozent)
+- Verkaufsbetrag
+- Menge
+- Bruttogewinnspanne
+- Gewinnspanne (Prozent)
 
 Für diese Bewertung können Sie den vordefinierten **Bericht über Top-Produkte** verwenden, den Sie an folgenden Stellen öffnen können:
 
--   **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
--   **Kategorie- und Produktverwaltungs**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopverwaltung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
--   **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht über Top-Produkte**
-
-
+- **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
+- **Kategorie- und Produktverwaltungs**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopverwaltung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
+- **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht über Top-Produkte**
 

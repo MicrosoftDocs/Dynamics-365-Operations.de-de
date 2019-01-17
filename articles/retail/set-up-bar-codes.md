@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e4ad8c2a984229b96cc5b81c0fd505a264ba58f0
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 15d12abe32d3f5a47348016c67a4fb02d0a5d8e3
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -33,19 +33,19 @@ ms.lasthandoff: 08/08/2018
 
 In diesem Artikel wird beschrieben, wie Strichcodes in Microsoft Dynamics 365 for Retail verwendet werden.
 
-Sie können mithilfe von Strichcodes Produkte erwerben und verkaufen, Produktvarianten nachverfolgen und Debitoren und Mitarbeiter einrichten. Sie können außerdem Strichcodes verwenden, um Coupons, Geschenkkarten und Gutschriften auszustellen und zu indossieren. Sie können Einzelhandelsprodukte entweder mit standardmäßigen Strichcodes oder mit benutzerdefinierten, firmeninternen Strichcodes einrichten. Produkte können mehrere Strichcodes aufweisen. Beispielsweise könnte ein Produkt mehrere Strichcodes haben, wenn es von verschiedenen Herstellern stammt oder wenn es über Varianten verfügt, hinsichtlich Größe, Stil oder Farbe. Strichcodes können das Gewicht oder den Preis des Produkts enthalten. Strichcodemasken sind Vorlagen, die verwendet werden, um Strichcodes zu erstellen. **Hinweis:** Wenn Sie einen eindeutigen Strichcodes für jede Variantenkombination zuweisen, können Sie den Strichcode am Register scannen und vom Programm feststellen lassen, welche Variante des Produkts verkauft wird. Sie können außerdem Statistiken zu Verkäufen nach Varianten sammeln und anzeigen. Jede Größen-, Farb- und Stilgruppe kann einer eindeutigen Nummer zugewiesen werden, durch die diese Gruppe im Strichcode gekennzeichnet ist. In Dynamics 365 for Retail wird die Strichcodemaske verwendet, um für jede Variantenkombination automatisch Strichcodes zu generieren. Diese Funktion kann hilfreich sein, wenn es viele Größen, Farben und Stile gibt, da die Anzahl der Kombinationen mit jedem zusätzlichen Variantencode erheblich zunimmt. Wird diese Funktion nicht verwendet, müssen die Strichcodes manuell jeder Kombination zugewiesen werden, die eine Produktvariante darstellt. Sie können Strichcodes manuell oder automatisch erstellen. Um Strichcodes zu erstellen, schließen Sie die folgenden Aufgaben im Auftrag ab, in dem sie aufgeführt sind.
+Sie können mithilfe von Strichcodes Produkte erwerben und verkaufen, Produktvarianten nachverfolgen und Debitoren und Mitarbeiter einrichten. Sie können außerdem Strichcodes verwenden, um Coupons, Geschenkkarten und Gutschriften auszustellen und zu indossieren. Sie können Einzelhandelsprodukte entweder mit standardmäßigen Strichcodes oder mit benutzerdefinierten, firmeninternen Strichcodes einrichten. Produkte können mehrere Strichcodes aufweisen. Beispielsweise könnte ein Produkt mehrere Strichcodes haben, wenn es von verschiedenen Herstellern stammt oder wenn es über Varianten verfügt, hinsichtlich Größe, Stil oder Farbe. Strichcodes können das Gewicht oder den Preis des Produkts enthalten. Strichcodemasken sind Vorlagen, die verwendet werden, um Strichcodes zu erstellen.
 
-1.  [Einrichten von Strichcode-Maskenzeichen](set-up-bar-code-masks.md).
-2.  [Einrichten von Strichcodemasken](set-up-bar-code-masks.md).
-3.  Konfigurieren Sie Strichcodeeinstellungen.
-4.  Erstellen Sie Strichcodes für Produkte.
+> [!NOTE]
+> Wenn Sie einen eindeutigen Strichcodes für jede Variantenkombination zuweisen, können Sie den Strichcode am Register scannen und vom Programm feststellen lassen, welche Variante des Produkts verkauft wird. Sie können außerdem Statistiken zu Verkäufen nach Varianten sammeln und anzeigen. Jede Größen-, Farb- und Stilgruppe kann einer eindeutigen Nummer zugewiesen werden, durch die diese Gruppe im Strichcode gekennzeichnet ist. In Dynamics 365 for Retail wird die Strichcodemaske verwendet, um für jede Variantenkombination automatisch Strichcodes zu generieren. Diese Funktion kann hilfreich sein, wenn es viele Größen, Farben und Stile gibt, da die Anzahl der Kombinationen mit jedem zusätzlichen Variantencode erheblich zunimmt. Wird diese Funktion nicht verwendet, müssen die Strichcodes manuell jeder Kombination zugewiesen werden, die eine Produktvariante darstellt.
 
+Sie können Strichcodes manuell oder automatisch erstellen. Um Strichcodes zu erstellen, schließen Sie die folgenden Aufgaben im Auftrag ab, in dem sie aufgeführt sind.
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+1. [Einrichten von Strichcode-Maskenzeichen](set-up-bar-code-masks.md).
+2. [Einrichten von Strichcodemasken](set-up-bar-code-masks.md).
+3. Konfigurieren Sie Strichcodeeinstellungen.
+4. Erstellen Sie Strichcodes für Produkte.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Strichcodemasken einrichten](set-up-bar-code-masks.md)
-
-
-
 

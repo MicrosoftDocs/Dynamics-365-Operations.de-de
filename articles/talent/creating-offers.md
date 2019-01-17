@@ -3,7 +3,7 @@ title: Erstellen, Genehmigen und Unterschreiben von Angeboten
 description: "In diesem Themas wird ausgeführt, wie Sie ein Angebot für einen Kandidaten mit Dynamics 365 for Talent erstellen, genehmigen und signieren."
 author: josaw
 manager: AnnBe
-ms.date: 10/19/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: f6b17dca13431a9d674920833b4a44141fac0bd8
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
 ms.contentlocale: de-de
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -104,6 +104,11 @@ Sie können mehrere Aktivitäten ausführen, bevor Sie dem Kandidaten das Angebo
 -  Sie können ein Angebotsablaufdatum angeben. Es wird erwartet, dass Kandidaten das Angebot vor dem Ablaufdatum annehmen oder ablehnen.  Dem Kandidaten wird 48 Stunden vor Ablauf des Angebots eine Erinnerung gesendet.
 
 -  Es kann weitere Dokumente geben, die Sie in das Angebotsaufnahmeverfahren einbeziehen möchten. Sie haben die Möglichkeit den erforderlichen Dokumenttyp aufzuführen.
+
+- E-Unterschriftenoption: Wenn Adobe Sign als bevorzugte E-Unterschriftmethode ausgewählt wurde, müssen sich Angebotersteller mit ihrer Adobe Sign Lizenz verbinden. Es gibt zwei Möglichkeiten, dazu. Gehen Sie zu Benutzer **Einstellungen** in **Angebot**, **Verbindungen** und verbinden Sie mit **Adobe Sign**. Alternativ werden Sie aufgefordert, das Senden-Angebot zum Kandidatenbildschirm herzustellen, wenn die Verbindung nicht bereits anhand der Benutzereinstellungen eingerichtet wurde. 
+
+> [!NOTE]
+> Benutzer müssen ihr Adobe Sign Konto nur einmal verbinden. Die gleiche Benutzerlizenz wird für alle zukünftigen Angebotpakete verwendet, die vom gleichen Benutzer gesendet werden. 
 
 -  Sie können die E-Mail-Vorlage anzeigen und nach Bedarf bearbeiten.
 

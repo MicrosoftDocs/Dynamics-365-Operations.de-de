@@ -16,10 +16,10 @@ ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a67b51ced4bea11be258aed359a758d88294beb1
-ms.openlocfilehash: bc48aa5ccf50705ef0c5087608798875953fe888
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: f88b485b0bdbf66532adff530e399bdd9d5b0ed5
 ms.contentlocale: de-de
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -41,7 +41,7 @@ Für die meisten Benutzer umfasst die tägliche Systemverwendung viele Dateneing
 
 Jede Seite, die über das Navigationsbereichsmenü aufgerufen wird, ist auch über den am weitesten links stehende Bereich über das Kästchen **Suchen** verfügbar. Drücken Sie ALT+G, um den Fokus auf das Feld **Suchen** zu richten und geben Sie dann den Namen oder die Beschreibung der Seite ein.
 
-!["Bankkonten" in das Suchfeld eingegeben](media/6d08b0be32808221023e2aa92d69fd70.png  "\"Bankkonten\" in das Suchfeld eingegeben")
+!["Bankkonten" in das Suchfeld eingegeben](media/6d08b0be32808221023e2aa92d69fd70.png "\"Bankkonten\" in das Suchfeld eingegeben")
 
 Weitere Informationen finden Sie unter [Navigationssuche](navigation-search.md)
 
@@ -56,17 +56,17 @@ Jede Aktivität, die auf einer Seite angegeben wird, kann über eine Tastatur ü
 
 Sie möchten die Aktivität **E-Mail-Benachrichtigungsprotokoll** ausführen, die in der Gruppe **E-Mail-Benachrichtigung** auf der Registerkarte **Auftrag** im Aktivitätsbereich angezeigt wird.
 
-![E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg  "E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich")
+![E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich")
 
 Eine Option ist, die Tastatur zu verwenden. Drücken Sie STRG+F6, um den Fokus im Aktivitätsbereich zu verschieben, und die Registerkarte der Verschiebung von allen Registerkarten und Aktivitäten wiederholt zu übertragen, nachdem die Aktivität **E-Mail-Benachrichtigungsprotokoll** im Fokus liegt.
 
 Sie können jedoch auch die Aktivität direkt ausführen. Von Überall auf der Seite klicken Sie Ctrl+Apostrophe ('), um das Suchfeld für Aktivitäten anzuzeigen.
 
-![Suchfeld für Aktivitäten](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg  "Suchfeld für Aktivitäten")
+![Suchfeld für Aktivitäten](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Suchfeld für Aktivitäten")
 
 Im Suchfeld tippen Sie Wörter ein, die die Aktion beschreiben. Die Aktivität wird für Sie verfügbar gemacht, und Sie können sie direkt ausführen. Beispielsweise indem Sie **E-Mail**, **benachrich** (ein Teil eines Worts) oder **Protokoll** eingeben, können Sie zur E-Mail-Benachrichtigungs-Protokollfunktionen springen.
 
-!["E-Mail" in das Suchfeld eingegeben](media/image4.png "'E-Mail' in das Suchfeld eingegeben") 
+!["E-Mail" in das Suchfeld eingegeben](media/image4.png "'E-Mail' in das Suchfeld eingegeben")
 
 !["Benachrich" in das Suchfeld eingegeben](media/image5.png "'Benachrich' in das Suchfeld eingegeben")
 
@@ -82,7 +82,7 @@ In der täglichen Systemverwendung nicht jedes Feld obligatorisch, um jede Aufga
 
 Allerdings stellen Sie möglicherweise fest, dass einige Felder, die Sie häufig aufrufen, um Aufgaben auszuführen, nicht in der Standardtabulatorsequenz enthalten sind. In diesem Fall, wenn Sie Windows-Sprachausgabe auswählen, können Sie die Windows-Sprachausgaben-Tastatur-Aktivitäten nutzen, um auf diese Felder zuzugreifen und ihren Inhalt zu überprüfen. Sie können auch die Option **Erweiterte Tabulatorsequenz** auf der Seite **Optionen** aktivieren. Diese Option macht alle bearbeitbaren und schreibgeschützten Felder Teil der Tabulatorsequenz. Sie können die Seitenpersonalisierung dann verwenden, um eine benutzerdefinierte Tabulatorsequenz zu erstellen und Felder zu unterdrücken, die nicht Teil der Tabulatorsequenz sein müssen. Weitere Informationen über die Personalisierung, finden Sie unter [Personalisieren Sie die Benutzerfreundlichkeit](personalize-user-experience.md).
 
-!["Verbesserte Registerkartensequenz"-Option](media/8c0f12bbb3f26032997ef0ba95d89b6a.png  "'Verbesserte Registerkartensequenz'-Option")
+!["Verbesserte Registerkartensequenz"-Option](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "'Verbesserte Registerkartensequenz'-Option")
 
 ## <a name="form-patterns"></a>Formularmuster
 

@@ -31,28 +31,29 @@ ms.lasthandoff: 08/08/2018
 
 In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations beschrieben.
 
-<a name="what-is-workflow"></a>Was ist ein Arbeitsplan?
------------------
+## <a name="what-is-workflow"></a>Was ist ein Arbeitsplan?
 
 Der Begriff *Workflow* kann auf zwei Arten definiert werden: als System und als Geschäftsprozess.
+
 ### <a name="workflow-is-a-system"></a>Workflow als System
 
 Workflow ist ein System, das mit Finance and Operations installiert wird und auf dem Anwendungsobjektserver (AOS/Application Object Server) ausgeführt wird. Das Workflowsystem verfügt über Funktionen, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können.
 
 ### <a name="workflow-is-a-business-process"></a>Workflow als Geschäftsprozess
 
-Ein Workflow stellt einen Geschäftsprozess dar. Ein Workflow definiert, wie ein Dokument das System durchläuft, indem angezeigt wird, wer eine Aufgabe abschließen, eine Entscheidung treffen oder ein Dokument genehmigen muss. Die folgende Abbildung zeigt z. B. einen Workflow für Spesenabrechnungen. 
+Ein Workflow stellt einen Geschäftsprozess dar. Ein Workflow definiert, wie ein Dokument das System durchläuft, indem angezeigt wird, wer eine Aufgabe abschließen, eine Entscheidung treffen oder ein Dokument genehmigen muss. Die folgende Abbildung zeigt z. B. einen Workflow für Spesenabrechnungen.
 
-![Workflow mit Elementen, die Benutzern zugewiesen sind](./media/workflow_user.gif) 
+![Workflow mit Elementen, die Benutzern zugewiesen sind](./media/workflow_user.gif)
 
 Beispiel zum besseren Verständnis dieses Workflows: Steffen reicht eine Spesenabrechnung in Höhe von 7.000 Euro ein. In diesem Szenario muss Joachim die Belege prüfen, die Steffen an ihn weiterleitet. Anschließend muss die Spesenabrechnung von Frank und Saskia genehmigt werden. Nehmen wir nun an, Steffen reicht eine Spesenabrechnung in Höhe von 11.000 Euro ein. In diesem Szenario muss Joachim die Belege prüfen, und Frank, Saskia und Anne müssen die Spesenabrechnung genehmigen.
 
 ## <a name="benefits-of-using-the-workflow-system"></a>Vorteile des Workflowsystems
 
 Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vorteile:
--   **Konsistente Prozesse** – Sie können die Verarbeitung bestimmter Dokumente definieren, z. B. von Bestellanforderungen und Spesenabrechnungen. Das Workflowsystem gewährleistet, dass Dokumente konsistent und effizient verarbeitet und genehmigt werden.
--   **Prozesssichtbarkeit** – Sie können den Status, die Historie und die Leistungskennzahlen von Workflowinstanzen nachverfolgen. So können Sie besser feststellen, ob zur Effizienzsteigerung Änderungen am Workflow vorgenommen werden sollten.
--   **Zentralisierte Arbeitsliste** – Benutzer können eine zentralisierte Arbeitsliste öffnen, um die ihnen zugeordneten Workflowaufgaben und -genehmigungen anzuzeigen.
+
+- **Konsistente Prozesse** – Sie können die Verarbeitung bestimmter Dokumente definieren, z. B. von Bestellanforderungen und Spesenabrechnungen. Das Workflowsystem gewährleistet, dass Dokumente konsistent und effizient verarbeitet und genehmigt werden.
+- **Prozesssichtbarkeit** – Sie können den Status, die Historie und die Leistungskennzahlen von Workflowinstanzen nachverfolgen. So können Sie besser feststellen, ob zur Effizienzsteigerung Änderungen am Workflow vorgenommen werden sollten.
+- **Zentralisierte Arbeitsliste** – Benutzer können eine zentralisierte Arbeitsliste öffnen, um die ihnen zugeordneten Workflowaufgaben und -genehmigungen anzuzeigen.
 
 
 ## <a name="workflow-content"></a>Workflowinhalt

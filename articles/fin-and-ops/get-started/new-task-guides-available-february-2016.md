@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: eeb56ec9697447ebd2385f3a0a516fcc9dc1bd3e
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,104 +29,87 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Diese Themen führen die Aufgabenleitfäden auf, die auf den Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden.  Die Bibliotheken, die veröffentlicht wurden, enthalten (Februar 2016) die APQC Unified-Bibliothek für Microsoft Dynamics AX und (Februar 2016) Erste Schritte.
+Diese Themen führen die Aufgabenleitfäden auf, die auf den Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden. Die Bibliotheken, die veröffentlicht wurden, enthalten (Februar 2016) die APQC Unified-Bibliothek für Microsoft Dynamics AX und (Februar 2016) Erste Schritte.
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Februar 2016)
----------------------------------------------------------------------------------
+## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Februar 2016)
 
 Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die Nutzung von Dynamics AX 7.0.0. Wenn Sie lokalisierte Versionen von Aufgabenleitfäden benötigen, finden Sie diese in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Mai 2016). Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kreditorenkonten
 
-|                                                           |                    |
-|-----------------------------------------------------------|--------------------|
-| **BPM-Position**                                              | **Land/Region** |
-| Entscheidende Rechnungsdaten im Kreditorensystem mithilfe der Kreditorenrechnung        | Global             |
-| Entscheidende Rechnungsdaten im Kreditorensystem mithilfe der Rechnungserfassung     | Global             |
-| Entscheidende Rechnungsdaten im Kreditorensystem mithilfe des Rechnungspools        | Global             |
-| Entscheidende Rechnungsdaten im Kreditorensystem mithilfe des Rechnungsregisters    | Global             |
-| Erfassen des Eingangs von Kreditorenrechnungen und Abgleichen mit dem Wareneingang | Global             |
-| Einrichten der Kreditorenkonten-Rechnungsabgleichprüfung       | Global             |
-| Kreditorenrechnungsrichtlinien einrichten                            | Global             |
+| BPM-Zeile                                                  | Land/Region |
+|-----------------------------------------------------------|----------------|
+| Entscheidende Rechnungsdaten im Kreditorensystem mithilfe der Kreditorenrechnung        | Global         |
+| Entscheidende Rechnungsdaten im Kreditorensystem mithilfe der Rechnungserfassung     | Global         |
+| Entscheidende Rechnungsdaten im Kreditorensystem mithilfe des Rechnungspools        | Global         |
+| Entscheidende Rechnungsdaten im Kreditorensystem mithilfe des Rechnungsregisters    | Global         |
+| Erfassen des Eingangs von Kreditorenrechnungen und Abgleichen mit dem Wareneingang | Global         |
+| Einrichten der Kreditorenkonten-Rechnungsabgleichprüfung       | Global         |
+| Kreditorenrechnungsrichtlinien einrichten                            | Global         |
 
+### <a name="accounts-receivable"></a>Debitorenkonten
 
- 
-### <a name="accounts-receivable"></a>Debitoren
+| BPM-Zeile                                                    | Land/Region |
+|-------------------------------------------------------------|----------------|
+| Weist einem Debitor eine wiederholende Freitext-Rechnungsvorlage zu | Global         |
+| Erstellen einer Mahnschreibensequenz                         | Global         |
+| Einzugsermächtigung für einen Debitor erstellen                | Global         |
+| Erstellt eine Vorlage für Freitextrechnungen                         | Global         |
+| Erstellen Sie eine Abschreibenserfassung für einen Debitor                   | Global         |
+| Erstellen eines Zinscodes mit einem Bereich                        | Global         |
+| Freitextrechnungen erstellen und verarbeiten                       | Global         |
+| Auftragsrechnungen erstellen                                 | Global         |
+| Freitext-Serienrechnungen generieren und buchen              | Global         |
+| Mahn-Schreiben verarbeiten                                  | Global         |
+| Prozesszinsen                                            | Global         |
+| Prüfen von Inkassoinformationen                              | Global         |
+| Debitorenfälligkeitsinformationen einrichten und erstellen   | Global         |
 
-|                                                             |                    |
-|-------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                | **Land/Region** |
-| Weist einem Debitor eine wiederholende Freitext-Rechnungsvorlage zu | Global             |
-| Erstellen einer Mahnschreibensequenz                         | Global             |
-| Einzugsermächtigung für einen Debitor erstellen                | Global             |
-| Erstellt eine Vorlage für Freitextrechnungen                         | Global             |
-| Erstellen Sie eine Abschreibenserfassung für einen Debitor                   | Global             |
-| Erstellen eines Zinscodes mit einem Bereich                        | Global             |
-| Freitextrechnungen erstellen und verarbeiten                       | Global             |
-| Auftragsrechnungen erstellen                                 | Global             |
-| Freitext-Serienrechnungen generieren und buchen              | Global             |
-| Mahn-Schreiben verarbeiten                                  | Global             |
-| Prozesszinsen                                            | Global             |
-| Prüfen von Inkassoinformationen                              | Global             |
-| Debitoren-Fälligkeitsinformationen einrichten und generieren   | Global             |
-
-
- 
 ### <a name="cash-and-bank-management"></a>Bargeld- und Bankverwaltung
 
-|                                                                      |                    |
-|----------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                         | **Land/Region** |
-| Erstellen einer Bankfazilitätsvereinbarung für einen Kreditbrief                | Global             |
-| Erstellen einer Bankfazilitätsvereinbarung für einen Garantiebrief             | Global             |
-| Übersicht Debitorenzahlungen                                           | Global             |
-| Kreditorenzahlungsgebühren definieren                                           | Global             |
-| Kreditorenzahlungsbedingungen definieren                                          | Global             |
-| Debitorenzahlungen einzahlen                                            | Global             |
-| Zahlungsmethode des Debitors einrichten                                 | Global             |
-| Debitorenzahlungsgebühren einrichten                                      | Global             |
-| Debitorenzahlungsbedingungen einrichten                                     | Global             |
-| Kreditbrief exportieren                                              | Global             |
-| Importkreditbrief importieren                                              | Global             |
-| Garantiebriefbuchung                                      | Global             |
-| Erfassen und Buchen eines vordatierten Schecks von einem Debitor                   | Global             |
-| Erfassen und Buchen eines vordatierten Schecks für einen Kreditor                     | Global             |
-| Einrichten der Bankfazilitäten und Buchungsprofile     | Global             |
-| Einrichten der Bankfazilitäten und Buchungsprofile | Global             |
-| Einrichten von vordatierten Schecks                                              | Global             |
-| Ausgleichen eines vordatierten Schecks für einen Kreditor                                | Global             |
-| Ausgleichen eines vordatierten Schecks von einem Debitor                             | Global             |
-| Gebühren für Kreditorenzahlung anzeigen                                              | Global             |
+| BPM-Zeile                                                             | Land/Region |
+|----------------------------------------------------------------------|----------------|
+| Erstellen einer Bankfazilitätsvereinbarung für einen Kreditbrief                | Global         |
+| Erstellen einer Bankfazilitätsvereinbarung für einen Garantiebrief             | Global         |
+| Übersicht Debitorenzahlungen                                           | Global         |
+| Kreditorenzahlungsgebühren definieren                                           | Global         |
+| Kreditorenzahlungsbedingungen definieren                                          | Global         |
+| Debitorenzahlungen einzahlen                                            | Global         |
+| Zahlungsmethode des Debitors einrichten                                 | Global         |
+| Debitorenzahlungsgebühren einrichten                                      | Global         |
+| Debitorenzahlungsbedingungen einrichten                                     | Global         |
+| Kreditbrief exportieren                                              | Global         |
+| Importkreditbrief importieren                                              | Global         |
+| Garantiebriefbuchung                                      | Global         |
+| Erfassen und Buchen eines vordatierten Schecks von einem Debitor                   | Global         |
+| Erfassen und Buchen eines vordatierten Schecks für einen Kreditor                     | Global         |
+| Einrichten der Bankfazilitäten und Buchungsprofile     | Global         |
+| Einrichten der Bankfazilitäten und Buchungsprofile | Global         |
+| Einrichten von vordatierten Schecks                                              | Global         |
+| Ausgleichen eines vordatierten Schecks für einen Kreditor                                | Global         |
+| Vordatierten Scheck von einem Debitor ausgleichen                             | Global         |
+| Übersicht über Kreditorenzahlungen                                              | Global         |
 
-
- 
 ### <a name="compliance"></a>Konformität
 
-|                                            |                    |
-|--------------------------------------------|--------------------|
-| **BPM-Position**                               | **Land/Region** |
-| Definieren Sie Überwachungsrichtlinien für Quelldokumente | Global             |
+| BPM-Zeile                                   | Land/Region |
+|--------------------------------------------|----------------|
+| Überwachungsrichtlinien für Quelldokumente definieren | Global         |
 
-
- 
 ### <a name="cost-management"></a>Kostenverwaltung
 
-|                                                                     |                    |
-|---------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                        | **Land/Region** |
-| Vergleichen der aktiven, vorkalkulierten und realisierten Kosten für einen Produktionsauftrag | Global             |
-| Kosteneinträge für einen Kostenträger anzeigen                                 | Global             |
-| Kostenobjektsaldo anzeigen                                            | Global             |
-| Aktueller Status des Produktionsauftrags.                       | Global             |
-| Hier werden Bestandsauszug und KPIs nach Kostenträger an                     | Global             |
+| BPM-Zeile                                                            | Land/Region |
+|---------------------------------------------------------------------|----------------|
+| Aktive, vorkalkulierte und realisierte Kosten für einen Produktionsauftrag vergleichen | Global         |
+| Kosteneinträge für einen Kostenträger anzeigen                                 | Global         |
+| Kostenobjektsaldo anzeigen                                            | Global         |
+| Aktueller Status des Produktionsauftrags.                       | Global         |
+| Lageraufstellung und KPI nach Kostenobjekt anzeigen                     | Global         |
 
+### <a name="countryregion-functionality"></a>Land/Region-Funktion
 
- 
-### <a name="countryregion-functionality"></a>Land/Region-Funktionalität
-
-|                                                                                                        |                                 |
+| BPM-Zeile                                                                                               | Land/Region                  |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
-| **BPM-Position**                                                                                           | **Land/Region**              |
 | Fügen Sie BAS-Berichtsfelder hinzu und Generieren des Australien-Geschäftsvorgangsberichts (Business Activity Statement) BAS                        | Australien und Neuseeland       |
 | Ursachencodes für eine Streitigkeit einrichten                                                                  | Australien und Neuseeland       |
 | Zuweisen eines Zahlungsbelegformats zu einem Debitorenkonto                                                     | Dänemark                         |
@@ -262,472 +245,406 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 | GB-00009 Eine Gutschrift zu dem Ausgleichsrabatt erstellen                                               | Vereinigtes Königreich                  |
 | GB-00009 Parameter für Gutschrift zu Skonto einrichten                                   | Vereinigtes Königreich                  |
 
-
- 
 ### <a name="develop-vision-and-strategy"></a>Vision und Strategie entwickeln
 
-|                                                                                          |                    |
-|------------------------------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                                             | **Land/Region** |
-| Ergebnisse des Fragebogens analysieren                                                            | Global             |
-| Erstellen Sie eine geschlossene abgeschlossene Frage                                                           | Global             |
-| Erstellen Sie eine offene abgeschlossene Frage                                                            | Global             |
-| Stellen Sie eine Frage, die von der Antwort auf die vorherige Frage abhängt (Bedingte Fragen) | Global             |
-| Zählen Sie einen Fragebogen auf Grundlage Prozent                                                   | Global             |
+| BPM-Zeile                                                                                 | Land/Region |
+|------------------------------------------------------------------------------------------|----------------|
+| Fragebogenergebnisse analysieren                                                            | Global         |
+| Eine Frage mit vordefinierten Antworten erstellen                                                           | Global         |
+| Erstellen Sie eine offene abgeschlossene Frage                                                            | Global         |
+| Stellen Sie eine Frage, die von der Antwort auf die vorherige Frage abhängt (Bedingte Fragen) | Global         |
+| Zählen Sie einen Fragebogen auf Grundlage Prozent                                                   | Global         |
 
-
- 
 ### <a name="electronic-reporting"></a>Elektronische Berichterstellung
 
-|                                                 |                    |
-|-------------------------------------------------|--------------------|
-| **BPM-Position**                                    | **Land/Region** |
-| ER Definition Modell-Zuordnung und wählen Datenquellen aus | Global             |
-| ER Domänenspezifisches Datenmodell entwerfen            | Global             |
-| ER Domänenspezifisches Datenformat entwerfen                | Global             |
-| Er-Datenmodell zu den ausgewählten Datenquellen zuordnen      | Global             |
-| ER Dienstanbieter auswählen                      | Global             |
+| BPM-Zeile                                        | Land/Region |
+|-------------------------------------------------|----------------|
+| ER Definition Modell-Zuordnung und wählen Datenquellen aus | Global         |
+| ER Domänenspezifisches Datenmodell entwerfen            | Global         |
+| ER Domänenspezifisches Datenformat entwerfen                | Global         |
+| Er-Datenmodell zu den ausgewählten Datenquellen zuordnen      | Global         |
+| ER Dienstanbieter auswählen                      | Global         |
 
-
- 
 ### <a name="expense-management"></a>Ausgabenverwaltung
 
-|                              |                    |
-|------------------------------|--------------------|
-| **BPM-Position**                 | **Land/Region** |
-| Ausgabenverwaltung konfigurieren | Global             |
+| BPM-Zeile                     | Land/Region |
+|------------------------------|----------------|
+| Ausgabenverwaltung konfigurieren | Global         |
 
+### <a name="fixed-assets"></a>Anlagevermögen
 
- 
-### <a name="fixed-assets"></a>Anlagen
+| BPM-Zeile                                                  | Land/Region |
+|-----------------------------------------------------------|----------------|
+| Abschreibungskonventionen für mehrere Anlagen ändern | Global         |
+| Erstellen eines Anlagegegenstands                                      | Global         |
+| Anlagen von "Kreditoren" erstellen und anschaffen           | Global         |
+| Abschreibungsvorschlag erstellen                              | Global         |
+| Eine Anlage mithilfe einer Freitextrechnung veräußern        | Global         |
+| Eingeben einer Anlagenerweiterung für eine Anlage                        | Global         |
+| Anlagenanschaffungen vorschlagen                          | Global         |
+| Abschreibungsprofile einrichten und erstellen                   | Global         |
+| Einrichten der vorzeitigen Abschreibung                                 | Global         |
+| Abschreibungsbücher einrichten                                 | Global         |
+| Anlagengruppen einrichten                                 | Global         |
+| Einrichten von Anlagenbuchungsprofilen                       | Global         |
+| Einrichten von Wertmodellen                                       | Global         |
+| Anlage teilen                                       | Global         |
+| Anlage übertragen                                    | Global         |
 
-|                                                           |                    |
-|-----------------------------------------------------------|--------------------|
-| **BPM-Position**                                              | **Land/Region** |
-| Ändern der Abschreibungskonventionen für mehrere Anlagen | Global             |
-| Erstellen eines Anlagegegenstands                                      | Global             |
-| Anlagen von "Kreditoren" erstellen und anschaffen           | Global             |
-| Abschreibungsvorschlag erstellen                              | Global             |
-| Eine Anlage mithilfe einer Freitextrechnung veräußern        | Global             |
-| Eingeben einer Anlagenerweiterung für eine Anlage                        | Global             |
-| Anlagenanschaffungen vorschlagen                          | Global             |
-| Abschreibungsprofile einrichten und erstellen                   | Global             |
-| Einrichten der vorzeitigen Abschreibung                                 | Global             |
-| Abschreibungsbücher einrichten                                 | Global             |
-| Anlagengruppen einrichten                                 | Global             |
-| Einrichten von Anlagenbuchungsprofilen                       | Global             |
-| Einrichten von Wertmodellen                                       | Global             |
-| Eine Anlage aufteilen                                       | Global             |
-| Eine Anlage übertragen                                    | Global             |
-
-
- 
 ### <a name="general-ledger"></a>Hauptbuch
 
-|                                                                   |                    |
-|-------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                      | **Land/Region** |
-| Geschäftsjahr abschließen                                             | Global             |
-| Erstellen von Journaleinträgen mithilfe einer Vorlage                           | Global             |
-| Erstellen eines Hauptkontos                                             | Global             |
-| Kontostrukturen erstellen                                         | Global             |
-| Erstellen von Abgrenzungsschemata                                            | Global             |
-| Erweiterte Regeln für Erfassungen erstellen                                | Global             |
-| Strukturen für erweiterte Regeln erstellen und zuweisen                        | Global             |
-| Erstellen und Validieren von Erfassungen                                      | Global             |
-| Erstellen von Konsolidierungsgruppen und zusätzlichen Konsolidierungskonten | Global             |
-| Erstellen von Sachkonto-Abgrenzungsbuchungen                                | Global             |
-| Finanzdimensionen definieren                                       | Global             |
-| Erfassen von gebuchten Erfassungseinträge                                 | Global             |
-| Standardvorlagen für Finanzdimension verwalten                    | Global             |
-| Massen-Finanzperiodenabschluss                                       | Global             |
-| Durchführen einer Onlinekonsolidierung                                   | Global             |
-| Periodische Erfassungen öffnen                                            | Global             |
-| Vorbereiten einer juristischen Person für die Verwendung im Konsolidierungsprozess       | Global             |
-| Löschungsbuchung verarbeiten                                  | Global             |
-| Sachkonto-Zuordnungserfassung genehmigen                                 | Global             |
-| Einrichten eines Sachkontoalias                                     | Global             |
-| Sie können Löschungsregeln einrichten.                                          | Global             |
-| Einrichten von Hauptkontokategorien                                    | Global             |
-| Ausgleichen von Buchungen zwischen Sachkonten                       | Global             |
-| Erfassungseinträge oder Transaktionen anzeigen                              | Global             |
-| Ansichtsverwandter Intergesellschaftsbeleg aus der Erfassung                    | Global             |
+| BPM-Zeile                                                          | Land/Region |
+|-------------------------------------------------------------------|----------------|
+| Geschäftsjahr abschließen                                             | Global         |
+| Erstellen von Journaleinträgen mithilfe einer Vorlage                           | Global         |
+| Erstellen eines Hauptkontos                                             | Global         |
+| Kontostrukturen erstellen                                         | Global         |
+| Erstellen von Abgrenzungsschemata                                            | Global         |
+| Erweiterte Regeln für Erfassungen erstellen                                | Global         |
+| Strukturen für erweiterte Regeln erstellen und zuweisen                        | Global         |
+| Erstellen und Validieren von Erfassungen                                      | Global         |
+| Erstellen von Konsolidierungsgruppen und zusätzlichen Konsolidierungskonten | Global         |
+| Erstellen von Sachkonto-Abgrenzungsbuchungen                                | Global         |
+| Finanzdimensionen definieren                                       | Global         |
+| Erfassen von gebuchten Erfassungseinträge                                 | Global         |
+| Standardvorlagen für Finanzdimension verwalten                    | Global         |
+| Massen-Finanzperiodenabschluss                                       | Global         |
+| Durchführen einer Onlinekonsolidierung                                   | Global         |
+| Periodische Erfassungen öffnen                                            | Global         |
+| Vorbereiten einer juristischen Person für die Verwendung im Konsolidierungsprozess       | Global         |
+| Löschungsbuchung verarbeiten                                  | Global         |
+| Sachkonto-Zuordnungserfassung genehmigen                                 | Global         |
+| Einrichten eines Sachkontoalias                                     | Global         |
+| Sie können Löschungsregeln einrichten.                                          | Global         |
+| Einrichten von Hauptkontokategorien                                    | Global         |
+| Ausgleichen von Buchungen zwischen Sachkonten                       | Global         |
+| Erfassungseinträge oder Transaktionen anzeigen                              | Global         |
+| Ansichtsverwandter Intergesellschaftsbeleg aus der Erfassung                    | Global         |
 
-
- 
 ### <a name="human-capital-management"></a>Human Capital Management
 
-|                                                                  |                    |
-|------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                     | **Land/Region** |
-| Ergebnisse des Fragebogens analysieren                                    | Global             |
-| Bewerbungseingangs-Datensätze genehmigen                                | Global             |
-| Vergütungsberechtigungsprozess                                      | Global             |
-| Erstellen eines Masseneinstellungsprojekts                                       | Global             |
-| Ausleihartikel einrichten                                                | Global             |
-| Definieren Sie Vorteilsberechtigungsregeln und Richtlinien                    | Global             |
-| Definieren eines Vergütungsprozesses und Berechnen von Ergebnissen                | Global             |
-| Definieren Sie neue Abteilungen                                           | Global             |
-| Neue Einzelvorgänge definieren                                                  | Global             |
-| Mitarbeitervergütungsprogramm bereitstellen                                | Global             |
-| Stellenanforderung ausarbeiten und freigeben                                 | Global             |
-| Nachfolgeplan entwickeln                                          | Global             |
-| Überprüfung der Beschäftigungsüberprüfung i9                          | Global             |
-| Registrieren und Entfernen von Vorteilen für eine Arbeitskraft                          | Global             |
-| Registrieren von Mitarbeitern in einem Plan für feste Vergütung                    | Global             |
-| Registrieren von Mitarbeitern in einem Plan für variable Vergütung                 | Global             |
-| Geben Sie Bewerber und Anwendungsdaten manuell ein                    | Global             |
-| Arbeitskraftinformationen eintragen                                         | Global             |
-| Einstellen eines vorhandenen Kandidaten mittels Personalbeschaffung                    | Global             |
-| Erstellen Sie Kandidaten durch die zu Einstellungszwecken ein                                | Global             |
-| mehrere Positionen besetzen                                          | Global             |
-| Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen                    | Global             |
-| Ausleihartikel für eine Arbeitskraft                                            | Global             |
-| Verwalten von Mitarbeiterverletzungs- und Krankheitsinformationen                 | Global             |
-| Stellen Sie eine Frage, die von der Antwort auf die vorherige Frage abhängt | Global             |
-| Leistungsablauftermine verwalten                                  | Global             |
-| E-Mail-Vorlagen verwalten                                           | Global             |
-| Verwalten von Mitarbeiterübergänge und -Übertragungen                        | Global             |
-| Beurlaubung verwalten                                          | Global             |
-| Arbeitsrückstände verwalten                                     | Global             |
-| Ändern der Berichtsbeziehungen für eine Position                    | Global             |
-| Vergütungsraster einrichten                                        | Global             |
-| Angaben zu Verletzungen und Krankheiten einrichten                            | Global             |
-| Angaben zu Verletzungen und Krankheiten einrichten                            | Global             |
-| Einrichten von Vergütungsberechtigungsrichtlinien                             | Global             |
-| I-9-Dokumenttypen einrichten                                     | Global             |
+| BPM-Zeile                                                         | Land/Region |
+|------------------------------------------------------------------|----------------|
+| Fragebogenergebnisse analysieren                                    | Global         |
+| Bewerbungseingangsdatensätze genehmigen                                | Global         |
+| Vergütungsberechtigungsprozess                                      | Global         |
+| Erstellen eines Masseneinstellungsprojekts                                       | Global         |
+| Ausleihartikel einrichten                                                | Global         |
+| Definieren Sie Vorteilsberechtigungsregeln und Richtlinien                    | Global         |
+| Definieren eines Vergütungsprozesses und Berechnen von Ergebnissen                | Global         |
+| Definieren Sie neue Abteilungen                                           | Global         |
+| Neue Einzelvorgänge definieren                                                  | Global         |
+| Mitarbeitervergütungsprogramm bereitstellen                                | Global         |
+| Stellenanforderung ausarbeiten und freigeben                                 | Global         |
+| Nachfolgeplan entwickeln                                          | Global         |
+| Überprüfung der Beschäftigungsüberprüfung i9                          | Global         |
+| Registrieren und Entfernen von Vorteilen für eine Arbeitskraft                          | Global         |
+| Registrieren von Mitarbeitern in einem Plan für feste Vergütung                    | Global         |
+| Registrieren von Mitarbeitern in einem Plan für variable Vergütung                 | Global         |
+| Geben Sie Bewerber und Anwendungsdaten manuell ein                    | Global         |
+| Arbeitskraftinformationen eintragen                                         | Global         |
+| Einstellen eines vorhandenen Kandidaten mittels Personalbeschaffung                    | Global         |
+| Erstellen Sie Kandidaten durch die zu Einstellungszwecken ein                                | Global         |
+| mehrere Positionen besetzen                                          | Global         |
+| Hilfsmittel zur Kandidatenauswahl ermitteln und bereitstellen                    | Global         |
+| Ausleihartikel für eine Arbeitskraft                                            | Global         |
+| Verwalten von Mitarbeiterverletzungs- und Krankheitsinformationen                 | Global         |
+| Stellen Sie eine Frage, die von der Antwort auf die vorherige Frage abhängt | Global         |
+| Leistungsablauftermine verwalten                                  | Global         |
+| E-Mail-Vorlagen verwalten                                           | Global         |
+| Verwalten von Mitarbeiterübergänge und -Übertragungen                        | Global         |
+| Beurlaubung verwalten                                          | Global         |
+| Arbeitsrückstände verwalten                                     | Global         |
+| Ändern der Berichtsbeziehungen für eine Position                    | Global         |
+| Vergütungsraster einrichten                                        | Global         |
+| Angaben zu Verletzungen und Krankheiten einrichten                            | Global         |
+| Angaben zu Verletzungen und Krankheiten einrichten                            | Global         |
+| Einrichten von Vergütungsberechtigungsrichtlinien                             | Global         |
+| I-9-Dokumenttypen einrichten                                     | Global         |
 
+### <a name="inventory-management"></a>Lagerverwaltung
 
- 
-### <a name="inventory-management"></a>Bestandsverwaltung
+| BPM-Zeile                                                                          | Land/Region |
+|-----------------------------------------------------------------------------------|----------------|
+| Bestandswerte im Lagerort anpassen                                              | Global         |
+| Überprüfung der Bestandsverfügbarkeit                                                   | Global         |
+| Korrigieren von Bestandsnachverfolgungsinformationen                                            | Global         |
+| Bestand an einem Lagerort zählen                                                    | Global         |
+| Ein neues Lagerortlayout erstellen                                                     | Global         |
+| Dient zum Erstellen und Verwalten einer Sperrung von Lagerbestand                                         | Global         |
+| Erstellen und Verarbeiten einer Nichtübereinstimmung                                              | Global         |
+| Lagerinventurprozesse definieren                                               | Global         |
+| Bestandswerte im Lagerort inititalisieren                                          | Global         |
+| Überprüfen Sie die Qualität von Waren                                                      | Global         |
+| Strichcodetypen verwalten                                                            | Global         |
+| Erfassen von Artikeln für einen Artikel mit aktiviertem grundlegenden Warehousing mithilfe einer Wareneingangserfassung | Global         |
+| Wareneingangsübersicht einrichten                                                  | Global         |
+| Testbestellungen einrichten                                                             | Global         |
+| Verfolgung eines Artikels oder Rohmaterials                                                     | Global         |
+| Physischen Bestand im Lagerort übertragen                                  | Global         |
 
-|                                                                                   |                    |
-|-----------------------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                                      | **Land/Region** |
-| Bestandswerte im Lagerort anpassen                                              | Global             |
-| Überprüfung der Bestandsverfügbarkeit                                                   | Global             |
-| Korrigieren von Bestandsnachverfolgungsinformationen                                            | Global             |
-| Bestand an einem Lagerort zählen                                                    | Global             |
-| Ein neues Lagerortlayout erstellen                                                     | Global             |
-| Dient zum Erstellen und Verwalten einer Sperrung von Lagerbestand                                         | Global             |
-| Erstellen und Verarbeiten einer Nichtübereinstimmung                                              | Global             |
-| Lagerinventurprozesse definieren                                               | Global             |
-| Bestandswerte im Lagerort inititalisieren                                          | Global             |
-| Überprüfen Sie die Qualität von Waren                                                      | Global             |
-| Strichcodetypen verwalten                                                            | Global             |
-| Erfassen von Artikeln für einen Artikel mit aktiviertem grundlegenden Warehousing mithilfe einer Wareneingangserfassung | Global             |
-| Wareneingangsübersicht einrichten                                                  | Global             |
-| Testbestellungen einrichten                                                             | Global             |
-| Verfolgung eines Artikels oder Rohmaterials                                                     | Global             |
-| Übergangsphysischer bestand im Lagerort                                  | Global             |
-
-
- 
 ### <a name="manufacturing"></a>Fertigung
 
-|                                                               |                    |
-|---------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                  | **Land/Region** |
-| Kanban-Berechnungsrichtlinie zur Kanban-Regel hinzufügen     | Global             |
-| Batchauftragslebenszyklus von der Erstellung bis zum Start                    | Global             |
-| Kanban-Mengenvorschläge berechnen                         | Global             |
-| Kanban-Regeln für einen Prozesseinzelvorgang ändern                         | Global             |
-| Konfigurieren einer Arbeitskraft, die das mobile Einzelvorgangsgerät verwendet                | Global             |
-| Formel kopieren                                                | Global             |
-| Erstellen einer Formel durch Kopieren aus einer vorhandenen Formel          | Global             |
-| Erstellen einer Produktionsflussversion                              | Global             |
-| Erstellen Sie einen Produktionsauftrag                                     | Global             |
-| Kanban-Regel für Verkaufsereignis erstellen                              | Global             |
-| Wertstrom erstellen                                         | Global             |
-| Aktivitätsrelation erstellen: Nachfolger                           | Global             |
-| Erstellen einer betrieblichen Ressource                                 | Global             |
-| Kanban-Regeln für Festmengen erstellen                            | Global             |
-| Neue Kanban-Regeln durch Duplizieren von vorhandenen Kanban-Regeln erstellen  | Global             |
-| Erstellen Sie Verarbeitungsaktivitäten für Produktion              | Global             |
-| Ressourcenfunktionen erstellen                                  | Global             |
-| Erstellen Sie Übertragungsaktivitäten für Produktion             | Global             |
-| Arbeitszeit-Planungseigenschaften erstellen                     | Global             |
-| Erstellen von Schichtmodellen                                 | Global             |
-| Definieren Sie Kalender und Arbeitsaufträge                            | Global             |
-| Definieren einer Ressourcengruppe für einzelne Fertigung                  | Global             |
-| Lean-Manufacturing-Arbeitsgruppen definieren                          | Global             |
-| Lean Schedule-Gruppen definieren                                   | Global             |
-| Produktionsflussmodelle definieren                                 | Global             |
-| Ressourcenfunktionen definieren                                  | Global             |
-| Lohnprozess für Zeit und Anwesenheit aktivieren                | Global             |
-| Produktionsauftrag beenden                                        | Global             |
-| Einen Produktionsauftrag vorkalkulieren                                   | Global             |
-| Schlanker Bedarfsverursacher aus Aufträgen                                | Global             |
-| Maßeinheit verwalten                                        | Global             |
-| Kanban-Einzelvorgänge planen                                    | Global             |
-| Bereiten Sie einen Kanban-Bearbeitungseinzelvorgang vor, wenn Materialien verfügbar sind     | Global             |
-| Bereiten Sie einen Kanban-Bearbeitungseinzelvorgang vor, wenn keine Materialien verfügbar sind | Global             |
-| Freigeben eines Produktionsauftrags                                    | Global             |
-| Entfernt einen Kanban-Einzelvorgang von der Planung                         | Global             |
-| Einen Produktionsauftrag als abgeschlossen melden.                         | Global             |
-| Fertigmeldung für Status auf einem mobilen Einzelvorgangsgerät                        | Global             |
-| Kanban-Einzelvorgangsstatus zurücksetzen                                      | Global             |
-| Produktionsaufträge in die Zeitplanung aufnehmen                                   | Global             |
-| Kanban-Einzelvorgänge planen                                          | Global             |
-| Starten Sie einen Produktionsauftrag                                      | Global             |
-| Übergangsmaterial mit Kanban-Einzelvorgängen                            | Global             |
-| Produktionsflussversionen überprüfen                          | Global             |
+| BPM-Zeile                                                      | Land/Region |
+|---------------------------------------------------------------|----------------|
+| Kanban-Mengen-Berechnungsrichtlinie zu einer Kanban-Regel hinzufügen     | Global         |
+| Batchauftragslebenszyklus von der Erstellung bis zum Start                    | Global         |
+| Kanban-Mengenvorschläge berechnen                         | Global         |
+| Kanban-Regeln für einen Prozesseinzelvorgang ändern                         | Global         |
+| Konfigurieren einer Arbeitskraft, die das mobile Einzelvorgangsgerät verwendet                | Global         |
+| Formel kopieren                                                | Global         |
+| Erstellen einer Formel durch Kopieren aus einer vorhandenen Formel          | Global         |
+| Erstellen einer Produktionsflussversion                              | Global         |
+| Erstellen Sie einen Produktionsauftrag                                     | Global         |
+| Kanban-Regel für Verkaufsereignis erstellen                              | Global         |
+| Wertstrom erstellen                                         | Global         |
+| Aktivitätsrelation erstellen: Nachfolger                           | Global         |
+| Erstellen einer betrieblichen Ressource                                 | Global         |
+| Kanban-Regeln für Festmengen erstellen                            | Global         |
+| Neue Kanban-Regeln durch Duplizieren von vorhandenen Kanban-Regeln erstellen  | Global         |
+| Erstellen Sie Verarbeitungsaktivitäten für Produktion              | Global         |
+| Ressourcenfunktionen erstellen                                  | Global         |
+| Erstellen Sie Übertragungsaktivitäten für Produktion             | Global         |
+| Arbeitszeit-Planungseigenschaften erstellen                     | Global         |
+| Erstellen von Schichtmodellen                                 | Global         |
+| Definieren Sie Kalender und Arbeitsaufträge                            | Global         |
+| Definieren einer Ressourcengruppe für einzelne Fertigung                  | Global         |
+| Lean-Manufacturing-Arbeitsgruppen definieren                          | Global         |
+| Lean Schedule-Gruppen definieren                                   | Global         |
+| Produktionsflussmodelle definieren                                 | Global         |
+| Ressourcenfunktionen definieren                                  | Global         |
+| Lohnprozess für Zeit und Anwesenheit aktivieren                | Global         |
+| Produktionsauftrag beenden                                        | Global         |
+| Einen Produktionsauftrag vorkalkulieren                                   | Global         |
+| Schlanker Bedarfsverursacher aus Aufträgen                                | Global         |
+| Maßeinheit verwalten                                        | Global         |
+| Kanban-Einzelvorgänge planen                                    | Global         |
+| Bereiten Sie einen Kanban-Bearbeitungseinzelvorgang vor, wenn Materialien verfügbar sind     | Global         |
+| Bereiten Sie einen Kanban-Bearbeitungseinzelvorgang vor, wenn keine Materialien verfügbar sind | Global         |
+| Freigeben eines Produktionsauftrags                                    | Global         |
+| Entfernt einen Kanban-Einzelvorgang von der Planung                         | Global         |
+| Einen Produktionsauftrag als abgeschlossen melden.                         | Global         |
+| Fertigmeldung für Status auf einem mobilen Einzelvorgangsgerät                        | Global         |
+| Kanban-Einzelvorgangsstatus zurücksetzen                                      | Global         |
+| Produktionsaufträge in die Zeitplanung aufnehmen                                   | Global         |
+| Kanban-Einzelvorgänge planen                                          | Global         |
+| Starten Sie einen Produktionsauftrag                                      | Global         |
+| Übergangsmaterial mit Kanban-Einzelvorgängen                            | Global         |
+| Produktionsflussversionen überprüfen                          | Global         |
 
-
- 
 ### <a name="master-planning"></a>Produktprogrammplanung
 
-|                                                   |                    |
-|---------------------------------------------------|--------------------|
-| **BPM-Position**                                      | **Land/Region** |
-| Dispositionsregeln für Artikel definieren                   | Global             |
-| Grundlagenplanung ausarbeiten                         | Global             |
-| Plan mit Einschränkungen erstellen                       | Global             |
-| Kritische Material- und Lieferantenkapazitäten identifizieren | Global             |
-| Ändern Sie eine Bedarfsplanung manuell                 | Global             |
+| BPM-Zeile                                          | Land/Region |
+|---------------------------------------------------|----------------|
+| Dispositionsregeln für Artikel definieren                   | Global         |
+| Grundlagenplanung ausarbeiten                         | Global         |
+| Plan mit Einschränkungen erstellen                       | Global         |
+| Kritische Material- und Lieferantenkapazitäten identifizieren | Global         |
+| Manuelles Ändern einer Bedarfsplanung                 | Global         |
 
-
- 
 ### <a name="organization-administration"></a>Organisationsverwaltung
 
-|                                           |                    |
-|-------------------------------------------|--------------------|
-| **BPM-Position**                              | **Land/Region** |
-| Ändern Sie das Banner oder das Logo                 | Global             |
-| Adressbücher konfigurieren                   | Global             |
-| Konfigurieren des globalen Adressbuchs         | Global             |
-| Organisationseinheit erstellen                  | Global             |
-| Einrichten elektronischer Signaturen              | Global             |
-| Einrichten von Nummernsequenzen mit einem Assistenten | Global             |
+| BPM-Zeile                                  | Land/Region |
+|-------------------------------------------|----------------|
+| Das Banner oder das Logo ändern                 | Global         |
+| Konfigurieren von Adressbüchern                   | Global         |
+| Konfigurieren des globalen Adressbuchs         | Global         |
+| Organisationseinheit erstellen                  | Global         |
+| Einrichten elektronischer Signaturen              | Global         |
+| Einrichten von Nummernkreisen mit einem Assistenten | Global         |
 
-
- 
 ### <a name="planning"></a>Planung
 
-|                        |                    |
-|------------------------|--------------------|
-| **BPM-Position**           | **Land/Region** |
-| Verfügbarkeit ermitteln | Global             |
+| BPM-Zeile               | Land/Region |
+|------------------------|----------------|
+| Verfügbarkeit ermitteln | Global         |
 
-
- 
 ### <a name="procurement-and-sourcing"></a>Beschaffung
 
-|                                                                  |                    |
-|------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                     | **Land/Region** |
-| Kaufvertrag erstellen                                      | Global             |
-| Erstellen eines Freigabeauftrags für Einkauf aus einem Kaufvertrag        | Global             |
-| Erstellen eines Freigabeauftrags für Einkauf, wenn Sie die Bestellung erstellen | Global             |
-| Erstellen einer Anforderung für Verbrauch                             | Global             |
-| Erstellen eines Kreditorenkontos                                          | Global             |
-| Nach Kreditor suchen                                               | Global             |
-| Einrichten einer Beschaffungskategoriehierarchie                          | Global             |
+| BPM-Zeile                                                         | Land/Region |
+|------------------------------------------------------------------|----------------|
+| Kaufvertrag erstellen                                      | Global         |
+| Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag erstellen        | Global         |
+| Erstellen eines Freigabeauftrags für Einkauf, wenn Sie die Bestellung erstellen | Global         |
+| Erstellen einer Anforderung für Verbrauch                             | Global         |
+| Erstellen eines Kreditorenkontos                                          | Global         |
+| Nach Kreditor suchen                                               | Global         |
+| Beschaffungskategoriehierarchie einrichten                          | Global         |
 
-
- 
 ### <a name="product-information-and-configuration"></a>Produktinformation und -konfiguration
 
-|                                                       |                    |
-|-------------------------------------------------------|--------------------|
-| **BPM-Position**                                          | **Land/Region** |
-| Berechnung zu einem Produktkonfigurationsmodell hinzufügen    | Global             |
-| Produktkonfigurationsmodell genehmigen                 | Global             |
-| Schließen Sie die Grundeinrichtung eines freigegebenen Produktmasters ab | Global             |
-| Erstellen eines ..\financial-dimensions\dimension-based Produktmasters               | Global             |
-| Erstellen Sie eine Hierarchie zur Produktklassifizierung          | Global             |
-| Produktkonfigurationsmodell erstellen                  | Global             |
-| Erstellen eines Produktmasters                               | Global             |
-| Erstellen einer Ausdruckseinschränkung                       | Global             |
-| Erstellen von Chargenattributen für ein Produkt                 | Global             |
-| Konfigurationsregeln erstellen                            | Global             |
-| Produktmodellkomponenten erstellen                       | Global             |
-| Variantengruppen definieren                           | Global             |
-| Konfigurationsroute definieren                            | Global             |
-| Stückliste für ein Produktkonfigurationsmodell verwalten        | Global             |
-| Arbeitsplan für ein Produktmodell verwalten                    | Global             |
-| Details für freigegebene Produkte verwalten                              | Global             |
-| Freigeben eines ..\financial-dimensions\dimension-based Produktmasters              | Global             |
-| Daten für Produktmodelle                      | Global             |
+| BPM-Zeile                                                           | Land/Region |
+|--------------------------------------------------------------------|----------------|
+| Berechnung zu einem Produktkonfigurationsmodell hinzufügen                 | Global         |
+| Produktkonfigurationsmodell genehmigen                              | Global         |
+| Schließen Sie die Grundeinrichtung eines freigegebenen Produktmasters ab              | Global         |
+| Erstellem eines..\\Finanzdimension\\Dimension basierter Produktmaster  | Global         |
+| Eine Hierarchie zur Produktklassifizierung erstellen                       | Global         |
+| Produktkonfigurationsmodell erstellen                               | Global         |
+| Erstellen eines Produktmasters                                            | Global         |
+| Erstellen einer Ausdruckseinschränkung                                    | Global         |
+| Erstellen von Chargenattributen für ein Produkt                              | Global         |
+| Konfigurationsregeln erstellen                                         | Global         |
+| Produktmodellkomponenten erstellen                                    | Global         |
+| Variantengruppen definieren                                        | Global         |
+| Konfigurationsroute definieren                                         | Global         |
+| Stückliste für ein Produktkonfigurationsmodell verwalten                     | Global         |
+| Arbeitsplan für ein Produktmodell verwalten                                 | Global         |
+| Details für freigegebene Produkte verwalten                                           | Global         |
+| Freigeben  einer ..\\Finanzdimension\\Dimension basierter Produktmaster | Global         |
+| Daten für Produktmodelle übertragen                                   | Global         |
 
-
- 
 ### <a name="public-sector"></a>Öffentlicher Sektor
 
-|                                                                                         |                    |
-|-----------------------------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                                            | **Land/Region** |
-| Hinzufügen eines Zertifizierungstyp zu einem Kreditor für den öffentlichen Sektor                                  | Global             |
-| Steuern Sie den Zugriff auf Rahmenbestellungen für öffentlichen Sektor                                 | Global             |
-| Erstellen Sie eine Abrechnungsklassifizierung für öffentlichen Sektor                                       | Global             |
-| Erstellen Sie einen Abrechnungscode für öffentlichen Sektor                                                 | Global             |
-| Erstellen einer Zusage, Budgetmittel für öffentlichen Sektor zu reservieren                           | Global             |
-| Erstellen Sie ein benutzerdefiniertes Feld für einen Abrechnungscode für öffentlichen Sektor                              | Global             |
-| Erstellen Sie einen Zahlungsmittelcode für öffentlichen Sektor                                                    | Global             |
-| Erstellen Sie einen Einmal-Kreditor und einer Rechnung für öffentlichen Sektor                                  | Global             |
-| Erstellen eines vorläufigen Budgets für den "Öffentlichen Sektor"                                           | Global             |
-| Erstellen eines Kreditoren-Zertifizierungstyps für den öffentlichen Sektor                                    | Global             |
-| Erstellen Sie einen erweiterten Sachkontoeintrag für öffentlichen Sektor                                       | Global             |
-| Erstellen Sie ein ursprüngliches Budget und machen Sie dann vorläufige Budgeteinträge rückgängig für öffentlichen Sektor | Global             |
-| Erstellen und weisen Sie einen Handelspartnercode für öffentlichen Sektor zu                              | Global             |
-| Erstellen Sie Abdeckungs- und Unterzeichnungsseiten für Zahlungsberichte für öffentlichen Sektor                 | Global             |
-| Importieren und erstellen Sie mehrere einmalige Kreditoren und Rechnungen für öffentlichen Sektor              | Global             |
-| Richten Sie eine abgeleitete Finanzhierarchie für öffentlichen Sektor                                  | Global             |
-| Erstellen Sie einen Zahlungsmittelcode für öffentlichen Sektor                                                         | Global             |
-| Rahmenbestellungsklassifizierungen einrichten                             | Global             |
+| BPM-Zeile                                                                                | Land/Region |
+|-----------------------------------------------------------------------------------------|----------------|
+| Hinzufügen eines Zertifizierungstyp zu einem Kreditor für den öffentlichen Sektor                                  | Global         |
+| Steuern Sie den Zugriff auf Rahmenbestellungen für öffentlichen Sektor                                 | Global         |
+| Erstellen Sie eine Abrechnungsklassifizierung für öffentlichen Sektor                                       | Global         |
+| Erstellen Sie einen Abrechnungscode für öffentlichen Sektor                                                 | Global         |
+| Erstellen einer Zusage, Budgetmittel für öffentlichen Sektor zu reservieren                           | Global         |
+| Erstellen Sie ein benutzerdefiniertes Feld für einen Abrechnungscode für öffentlichen Sektor                              | Global         |
+| Erstellen Sie einen Zahlungsmittelcode für öffentlichen Sektor                                                    | Global         |
+| Erstellen Sie einen Einmal-Kreditor und einer Rechnung für öffentlichen Sektor                                  | Global         |
+| Erstellen eines vorläufigen Budgets für den "Öffentlichen Sektor"                                           | Global         |
+| Erstellen eines Kreditoren-Zertifizierungstyps für den öffentlichen Sektor                                    | Global         |
+| Erstellen Sie einen erweiterten Sachkontoeintrag für öffentlichen Sektor                                       | Global         |
+| Erstellen Sie ein ursprüngliches Budget und machen Sie dann vorläufige Budgeteinträge rückgängig für öffentlichen Sektor | Global         |
+| Erstellen und weisen Sie einen Handelspartnercode für öffentlichen Sektor zu                              | Global         |
+| Erstellen Sie Abdeckungs- und Unterzeichnungsseiten für Zahlungsberichte für öffentlichen Sektor                 | Global         |
+| Importieren und erstellen Sie mehrere einmalige Kreditoren und Rechnungen für öffentlichen Sektor              | Global         |
+| Richten Sie eine abgeleitete Finanzhierarchie für öffentlichen Sektor                                  | Global         |
+| Erstellen Sie einen Zahlungsmittelcode für öffentlichen Sektor                                                         | Global         |
+| Rahmenbestellungsklassifizierungen einrichten                             | Global         |
 
-
- 
 ### <a name="retail-and-commerce"></a>Einzelhandel und Handel
 
-|                                                                                           |                    |
-|-------------------------------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                                              | **Land/Region** |
-| Fügen Sie verschiedene Produkte zur Bestellung unter Verwendung der verschiedenen Gewichte hinzu                              | Global             |
-| Basispreis und Handelsvereinbarungen                                                           | Global             |
-| Kategoriepreiskalkulationsregeln, um Handelsvereinbarungen zu erstellen                                         | Global             |
-| Konfigurieren und aktivieren Sie einen Einzelvorgang, um Auszüge zu berechnen                                             | Global             |
-| Konfigurieren und Aktivieren eines Einzelvorgangs, um Auszüge zu buchen                                                  | Global             |
-| Verarbeitung der Kreditkartendaten konfigurieren                                                          | Global             |
-| Verknüpfte Produkte konfigurieren                                                                 | Global             |
-| Erstellen eines visuellen POS-Profils                                                               | Global             |
-| Produkt erstellen                                                                          | Global             |
-| Erstellen eines Produktmasters                                                                   | Global             |
-| Erstellen und verknüpfen Sie ein Gerät                                                             | Global             |
-| Erstellen und ordnen Sie eine Hardwarestation zu                                                   | Global             |
-| Erstellen von Finanzdimensionen für POS-Register und Konfigurieren der Dimensionswerte in Registern | Global             |
-| Erstellen Sie Finanzdimensionen für Einzelhandelskanäle und konfigurieren Sie Dimensionswerte in Geschäften  | Global             |
-| Erstellen Sie Onlinekanal und definieren Sie Kanalattribute                                       | Global             |
-| POS-Berechtigungsgruppen erstellen                                                              | Global             |
-| Erstellen Sie Produktpakete und verwenden Sie in der Bestellung                                         | Global             |
-| Definieren Sie Callcenter-Kanal und Kanalattribute                                         | Global             |
-| Kanalattribute definieren                                                                 | Global             |
-| Treueprogramme definieren                                                                   | Global             |
-| Treuebelohnungspunkte definieren                                                              | Global             |
-| Definieren von Treueschemas                                                                    | Global             |
-| Die Beziehungen zwischen Organisationseinheiten entwerfen                                     | Global             |
-| Generieren und Ausführung von Fertigberichten                                                       | Global             |
-| Verwalten von Handelsrabatten für Debitoren                                                      | Global             |
-| Parameterkonfigurationen für Einzelhandelsauszüge                                            | Global             |
-| Zahlungskonfigurationen für Einzelhandelsauszüge                                              | Global             |
-| Hardwarestation herunterladen mit Self-Service                                         | Global             |
-| Buchen von Online-Verkäufen und -Zahlungen                                                      | Global             |
-| Prozessloyalitätsbelohnungs-Punktregulierungen                                                  | Global             |
-| Übertragung von Produkten vom Verteilzentrum zu Shops mithilfe von Käuferübertragung                        | Global             |
-| Ein Produkt bzw. einen Produktmaster für juristische Personen freigeben                                        | Global             |
-| Einzelhandelspreisregulierungen verwalten                                                                  | Global             |
-| Shopkonfigurationen für Einzelhandelsauszüge                                                | Global             |
+| BPM-Zeile                                                                                  | Land/Region |
+|-------------------------------------------------------------------------------------------|----------------|
+| Fügen Sie verschiedene Produkte zur Bestellung unter Verwendung der verschiedenen Gewichte hinzu                              | Global         |
+| Basispreis und Handelsvereinbarungen                                                           | Global         |
+| Kategoriepreiskalkulationsregeln, um Handelsvereinbarungen zu erstellen                                         | Global         |
+| Konfigurieren und aktivieren Sie einen Einzelvorgang, um Auszüge zu berechnen                                             | Global         |
+| Konfigurieren und Aktivieren eines Einzelvorgangs, um Auszüge zu buchen                                                  | Global         |
+| Verarbeitung der Kreditkartendaten konfigurieren                                                          | Global         |
+| Verknüpfte Produkte konfigurieren                                                                 | Global         |
+| Erstellen eines visuellen POS-Profils                                                               | Global         |
+| Produkt erstellen                                                                          | Global         |
+| Erstellen eines Produktmasters                                                                   | Global         |
+| Erstellen und verknüpfen Sie ein Gerät                                                             | Global         |
+| Erstellen und ordnen Sie eine Hardwarestation zu                                                   | Global         |
+| Erstellen von Finanzdimensionen für POS-Register und Konfigurieren der Dimensionswerte in Registern | Global         |
+| Erstellen Sie Finanzdimensionen für Einzelhandelskanäle und konfigurieren Sie Dimensionswerte in Geschäften  | Global         |
+| Erstellen Sie Onlinekanal und definieren Sie Kanalattribute                                       | Global         |
+| POS-Berechtigungsgruppen erstellen                                                              | Global         |
+| Erstellen Sie Produktpakete und verwenden Sie in der Bestellung                                         | Global         |
+| Definieren Sie Callcenter-Kanal und Kanalattribute                                         | Global         |
+| Kanalattribute definieren                                                                 | Global         |
+| Treueprogramme definieren                                                                   | Global         |
+| Treuebelohnungspunkte definieren                                                              | Global         |
+| Definieren von Treueschemas                                                                    | Global         |
+| Die Beziehungen zwischen Organisationseinheiten entwerfen                                     | Global         |
+| Generieren und Ausführung von Fertigberichten                                                       | Global         |
+| Verwalten von Handelsrabatten für Debitoren                                                      | Global         |
+| Parameterkonfigurationen für Einzelhandelsauszüge                                            | Global         |
+| Zahlungskonfigurationen für Einzelhandelsauszüge                                              | Global         |
+| Hardwarestation herunterladen mit Self-Service                                         | Global         |
+| Buchen von Online-Verkäufen und -Zahlungen                                                      | Global         |
+| Prozessloyalitätsbelohnungs-Punktregulierungen                                                  | Global         |
+| Übertragung von Produkten vom Verteilzentrum zu Shops mithilfe von Käuferübertragung                        | Global         |
+| Ein Produkt bzw. einen Produktmaster für juristische Personen freigeben                                        | Global         |
+| Einzelhandelspreisregulierungen verwalten                                                                  | Global         |
+| Konfigurationen für Einzelhandelsauszüge speichern                                                | Global         |
 
+### <a name="sales"></a>Verk.
 
- 
-### <a name="sales"></a>Vertrieb
+| BPM-Zeile                                   | Land/Region |
+|--------------------------------------------|----------------|
+| Aufträge bestätigen                       | Global         |
+| Erstellen einer neuen Handelsvereinbarung               | Global         |
+| Erstellen einer Bestellung auf Grundlage eines Auftrags | Global         |
+| Verkaufsangebote erstellen und bearbeiten           | Global         |
+| Lieferzeitplan erstellen                   | Global         |
+| Kaufverträgen eintragen                     | Global         |
+| Kaufverträge erfüllen                   | Global         |
+| Erstellen und Verarbeiten erstellter Debitorenrückvergütungen      | Global         |
+| Anwendbare Preise und Rabatte nachschlagen    | Global         |
+| Massenerstellung von Verkaufsangeboten               | Global         |
+| Zahlungsnachlässe verarbeiten                | Global         |
+| Registrieren von Verkaufsprovisionen                 | Global         |
+| Vertriebsprovisionsregeln einrichten              | Global         |
+| Versenden von Aufträgen als Direktlieferungen           | Global         |
+| Liefern von Aufträgen ohne Lagerort      | Global         |
 
-|                                            |                    |
-|--------------------------------------------|--------------------|
-| **BPM-Position**                               | **Land/Region** |
-| Aufträge bestätigen                       | Global             |
-| Erstellen einer neuen Handelsvereinbarung               | Global             |
-| Erstellen einer Bestellung auf Grundlage eines Auftrags | Global             |
-| Verkaufsangebote erstellen und bearbeiten           | Global             |
-| Lieferzeitplan erstellen                   | Global             |
-| Kaufverträgen eintragen                     | Global             |
-| Kaufverträge erfüllen                   | Global             |
-| Erstellen und Verarbeiten erstellter Debitorenrückvergütungen      | Global             |
-| Anwendbare Preise und Rabatte nachschlagen    | Global             |
-| Massenerstellung von Verkaufsangeboten               | Global             |
-| Zahlungsnachlässe verarbeiten                | Global             |
-| Registrieren von Verkaufsprovisionen                 | Global             |
-| Vertriebsprovisionsregeln einrichten              | Global             |
-| Versenden von Aufträgen als Direktlieferungen           | Global             |
-| Liefern von Aufträgen ohne Lagerort      | Global             |
-
-
- 
 ### <a name="sales-tax"></a>Mehrwertsteuer
 
-|                                                    |                    |
-|----------------------------------------------------|--------------------|
-| **BPM-Position**                                       | **Land/Region** |
-| Berechnen und Anpassen der Mehrwertsteuer auf einer Kreditorenrechnung | Global             |
-| Erstellen einer Mehrwertsteuerzahlung                         | Global             |
-| Mehrwertsteuerbuchungen auf Dokumente erstellen         | Global             |
-| Einrichten von Sachkontobuchungsgruppen für Mehrwertsteuer         | Global             |
-| Einrichten von Mehrwertsteuerbehörden                       | Global             |
-| Mehrwertsteuercodes einrichten                             | Global             |
-| Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen einrichten  | Global             |
-| Mehrwertsteuer-Erklärungscodes einrichten                   | Global             |
-| Mehrwertsteuer-Ausgleichsperioden einrichten                | Global             |
-| Quellensteuer einrichten                             | Global             |
-| Vorgenommene Mehrwertsteuerbuchungen anzeigen                 | Global             |
+| BPM-Zeile                                           | Land/Region |
+|----------------------------------------------------|----------------|
+| Berechnen und Anpassen der Mehrwertsteuer auf einer Kreditorenrechnung | Global         |
+| Erstellen einer Mehrwertsteuerzahlung                         | Global         |
+| Mehrwertsteuerbuchungen auf Dokumente erstellen         | Global         |
+| Einrichten von Sachkontobuchungsgruppen für Mehrwertsteuer         | Global         |
+| Einrichten von Mehrwertsteuerbehörden                       | Global         |
+| Mehrwertsteuercodes einrichten                             | Global         |
+| Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen einrichten  | Global         |
+| Mehrwertsteuer-Erklärungscodes einrichten                   | Global         |
+| Mehrwertsteuer-Ausgleichsperioden einrichten                | Global         |
+| Quellensteuer einrichten                             | Global         |
+| Vorgenommene Mehrwertsteuerbuchungen anzeigen                 | Global         |
 
-
- 
 ### <a name="security"></a>Sicherheit
 
-|                                                         |                    |
-|---------------------------------------------------------|--------------------|
-| **BPM-Position**                                            | **Land/Region** |
-| Erstellen neuer Benutzer                                        | Global             |
-| Identifizieren und beheben Sie Konflikte bei der Aufgabentrennung | Global             |
-| Regeln für Aufgabentrennung einrichten                            | Global             |
+| BPM-Zeile                                                | Land/Region |
+|---------------------------------------------------------|----------------|
+| Erstellen neuer Benutzer                                        | Global         |
+| Identifizieren und beheben Sie Konflikte bei der Aufgabentrennung | Global         |
+| Regeln für Aufgabentrennung einrichten                            | Global         |
 
-
- 
 ### <a name="warehouse-and-transportation"></a>Lagerort- und Transport
 
-|                                                                                   |                    |
-|-----------------------------------------------------------------------------------|--------------------|
-| **BPM-Position**                                                                      | **Land/Region** |
-| Zuordnen eines Brennstoffindex mit einem Spediteur als Zubehörzuschlag                    | Global             |
-| Konfigurieren Sie Lagerplätze in einem WMS aktivierten Lagerort                                    | Global             |
-| Erstellen einer Arbeitsklasse                                                               | Global             |
-| Permanenten Inventurprüfung definieren                                                             | Global             |
-| Kennzeichenbeschriftungs-Druck aktivieren                                               | Global             |
-| Erfassen von Artikeln für einen Artikel mit aktiviertem grundlegenden Warehousing mithilfe einer Wareneingangserfassung | Global             |
-| Spediteur-Kraftstoffindizes einrichten                                                       | Global             |
-| Richten Sie die Lagerplatzdirektive für jeden Arbeitsauftragstyp ein                           | Global             |
-| Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung       | Global             |
-| Einrichten einer Menüoption für das mobile Gerät, um die eingegangenen Artikel zu erfassen                       | Global             |
-| Richten Sie Betragsinformationen für Bestellungen ein                                        | Global             |
-| Einrichen von Zusatzleistungszuweisungen                                                    | Global             |
-| Dispositionscodes einrichten                                                         | Global             |
-| Hubzusatzgebühren und Zusatzleistungsmaster einrichten                            | Global             |
-| Satzmaster einrichten                                                               | Global             |
-| Einrichten von Spediteuren                                                          | Global             |
-| Verwenden Sie den Auslastungs-Planungs-Werktisch, um in und Lieferungen planen                       | Global             |
+| BPM-Zeile                                                                          | Land/Region |
+|-----------------------------------------------------------------------------------|----------------|
+| Brennstoffindex einem Spediteur als Zusatzgebühr zuordnen                    | Global         |
+| Konfigurieren Sie Lagerplätze in einem WMS aktivierten Lagerort                                    | Global         |
+| Erstellen einer Arbeitsklasse                                                               | Global         |
+| Permanenten Inventurprüfung definieren                                                             | Global         |
+| Kennzeichenbeschriftungs-Druck aktivieren                                               | Global         |
+| Erfassen von Artikeln für einen Artikel mit aktiviertem grundlegenden Warehousing mithilfe einer Wareneingangserfassung | Global         |
+| Spediteur-Kraftstoffindizes einrichten                                                       | Global         |
+| Richten Sie die Lagerplatzdirektive für jeden Arbeitsauftragstyp ein                           | Global         |
+| Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung       | Global         |
+| Einrichten einer Menüoption für das mobile Gerät, um die eingegangenen Artikel zu erfassen                       | Global         |
+| Richten Sie Betragsinformationen für Bestellungen ein                                        | Global         |
+| Einrichen von Zusatzleistungszuweisungen                                                    | Global         |
+| Dispositionscodes einrichten                                                         | Global         |
+| Hubzusatzgebühren und Zusatzleistungsmaster einrichten                            | Global         |
+| Satzmaster einrichten                                                               | Global         |
+| Einrichten von Spediteuren                                                          | Global         |
+| Verwenden Sie den Auslastungs-Planungs-Werktisch, um in und Lieferungen planen                       | Global         |
 
-
- 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Aufgabenleitfäden in der Getting Started-Bibliothek (Februar 2016)
 
-|                                                    |                    |
-|----------------------------------------------------|--------------------|
-| **BPM-Position**                                       | **Land/Region** |
-| Sachkontensaldo analysieren                            | Global             |
-| Erstellen eines freigegebenen Produkts für ein einzelnes Unternehmen     | Global             |
-| Erstellen und Planen eines Produktionsauftrags             | Global             |
-| Effektiver Verkauf                            | Global             |
-| Elektronische Berichterstellung                               | Global             |
-| Mitarbeiter-Self-Service                              | Global             |
-| So verringern Sie die Dauer der ausstehenden Verkäufe in Tagen          | Global             |
-| Einführung in die Lokalisierungsfunktionen von AX      | Global             |
-| Einführung in die landesspezifischen Funktionen für Japan | Japan              |
-| Preisgestaltung und verkaufsfördernde Maßnahmen verwalten                      | Global             |
-| Manager-Self-Service                               | Global             |
-| Projektüberblick                                  | Global             |
-| Einrichten und Konfigurieren von Kanälen                      | Global             |
+| BPM-Zeile                                           | Land/Region |
+|----------------------------------------------------|----------------|
+| Sachkontensaldo analysieren                            | Global         |
+| Ein freigegebenes Produkt für ein einzelnes Unternehmen erstellen     | Global         |
+| Erstellen und Planen eines Produktionsauftrags             | Global         |
+| Effektiver Verkauf                            | Global         |
+| Elektronische Berichterstellung                               | Global         |
+| Mitarbeiter-Self-Service                              | Global         |
+| So verringern Sie die Dauer der ausstehenden Verkäufe in Tagen          | Global         |
+| Einführung in die Lokalisierungsfunktionen von AX      | Global         |
+| Einführung in die landesspezifischen Funktionen für Japan | Japan          |
+| Preisgestaltung und verkaufsfördernde Maßnahmen verwalten                      | Global         |
+| Manager-Self-Service                               | Global         |
+| Projektüberblick                                  | Global         |
+| Einrichten und Konfigurieren von Kanälen                      | Global         |
 
- 
-
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
-
-
-
 

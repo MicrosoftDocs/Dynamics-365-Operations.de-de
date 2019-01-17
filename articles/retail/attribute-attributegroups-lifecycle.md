@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 918f8555bc3d2e4a79262b428d5c7ba278fa7409
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/08/2018
 [!include [banner](includes/banner.md)]
 
 *Attribute* enthalten eine weitere Möglichkeit, ein Produkt und dessen Eigenschaften nach benutzerdefinierte Felder (wie **Speichergröße**, **Festplattenkapazität**, **Ist der kompatible Energiestern**, usw.) zu beschreiben. In Microsoft Dynamics 365 for Finance and Operations können Attributte unterschiedlichen Retailentitäten zugeordnet werden, wie Produktkategorien und Retailkanäle und Standardwerte können für sie festgelegt werden. Produkte erben deren Attribute und Standardwerte für diese Attribute, wenn sie Produktkategorien oder Retailkanälen zugeordnet sind. Die Standardwerte können auf der Einzelproduktebene, Retailkanalebene oder in einem Retailkatalog überschrieben werden.
- 
+
 So kann beispielsweise ein Fernsehprodukt folgende Attribute haben.
 
 | Kategorie   | Attribut                | Zulässige Werte          | Standardwert |
@@ -50,7 +50,7 @@ So kann beispielsweise ein Fernsehprodukt folgende Attribute haben.
 | Plasma     | Betriebstemperatur von      | 32–110 Grad              | 32            |
 |            | Betriebstemperatur bis        | 32–110 Grad              | 100           |
 | Projektion | Projektionstubus-Garantie | 6, 12 oder 18 Monate         | 12            |
-|            | # der Projektionstubus    | 1 – 5                         | 3             |
+|            | \# des Projektionstubus   | 1 – 5                         | 3             |
 
 ## <a name="attributes-and-attribute-types"></a>Attribute und Attributtypen
 
@@ -104,7 +104,7 @@ Hierbei gelten die verbleibenden Attributmetadatumenoptionen auf der Seite **Att
 
 Diese Optionen waren ursprünglich für die Verbesserung der Suchfunktion, die ursprünglich für das Onlinetool Schaufenster vorgesehen war. Obwohl Finance and Operations den Online-Storefront nicht umfasst, enthält dieses das eCommerce Publishing Software Development Kit (SDK). Debitoren können dieses SDK verwenden, um Produkte in einen Suchenindex ihrer Wahl zu sperren. Obgleich die Produktdaten importiert werden, sollten Kunden in der Lage sein, noch durchsuchbare Daten, Daten die abgerufen werden können etc. zu unterscheiden.. Auf diese Weise können sie den optimalen Index erstellen, um sicherzustellen, dass sie nur Attribute indexieren, *die ihrer Meinung nach* indiziert werden sollen.
 
-Informationen über den Zweck dieser verbleibenden Optionen finden Sie unter [Überblick über Suchenschemas in SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219669.aspx).
+Informationen über den Zweck dieser verbleibenden Optionen finden Sie unter [Überblick über Suchenschemas in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Attributfiltereinstellungen
 
@@ -121,7 +121,7 @@ Die Seite **Filteranzeigeneinstellungen** enthält die folgenden Felder:
 - **Anzeigeoption** - Die folgenden Ausrichtungsoptionen sind verfügbar:
 
     - **Liste** Diese Option ist für alle Bedarfstypen verfügbar.
-    - **Bereich** – Diese Option ist für die folgenden Attributtypen verfügbar: **Währung**, **Dezimal** und **Ganzzahl**. 
+    - **Bereich** – Diese Option ist für die folgenden Attributtypen verfügbar: **Währung**, **Dezimal** und **Ganzzahl**.
     - **Bereich** – Diese Option ist für die folgenden Attributtypen verfügbar: **Währung**, **Dezimal** und **Ganzzahl**.
     - **Schieberegler mit Leisten** – Diese Option ist für die folgenden Attributtypen verfügbar: **Währung**, **Dezimal** und **Ganzzahl**.
 
@@ -228,13 +228,13 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
 5. Auf dem Inforegister **Produkte** aktivieren Sie das erforderliche Produkt aus, und wählen Sie anschließend **Attribute** über dem Produktraster aus.
 6. Auf den folgenden Inforegistern aktualisieren Sie die Werte die erforderlichen Attribute:
 
-   - Gemeinsam genutzte Produktmedien
-   - Gemeinsam genutzte Produktattribute
-   - Kanalmedien
-   - Kanalspezifische Produktattribute
+    - Gemeinsam genutzte Produktmedien
+    - Gemeinsam genutzte Produktattribute
+    - Kanalmedien
+    - Kanalspezifische Produktattribute
 
-     > [!NOTE]
-     > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
+    > [!NOTE]
+    > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
 
 ![Katalog-Produktattributwertgruppen](media/CatalogProdAttrValues.png)
 
@@ -250,11 +250,11 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
 
 5. Auf den folgenden Inforegistern aktualisieren Sie die Werte die erforderlichen Attribute:
 
-   - Gemeinsam genutzte Produktmedien
-   - Gemeinsam genutzte Produktattribute
-   - Kanalmedien
-   - Kanalspezifische Produktattribute
+    - Gemeinsam genutzte Produktmedien
+    - Gemeinsam genutzte Produktattribute
+    - Kanalmedien
+    - Kanalspezifische Produktattribute
 
-     > [!NOTE]
-     > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
+    > [!NOTE]
+    > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
 

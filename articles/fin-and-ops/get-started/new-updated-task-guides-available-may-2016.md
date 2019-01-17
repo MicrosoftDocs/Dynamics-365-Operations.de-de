@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,10 +31,12 @@ ms.lasthandoff: 08/08/2018
 
 Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (Mai 2016 -- alle Sprachen) für Microsoft Dynamics AX auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Mai 2016 - alle Sprachen)
-------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Mai 2016 - alle Sprachen)
 
-Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden zur Aktualisierung der Hilfe von Microsoft Dynamics AX können 2016 und Microsoft Dynamics AX Februar 2016. Die in der APQC Unified-Bibliothek aus Februar 2016 veröffentlichten Aufgabenleitfäden sind in dieser Bibliothek enthalten. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md). <strong>Hinweis:</strong> Das Sternchen (<strong>\</strong>*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass der Aufgabenleitfaden für diesen Geschäftsprozess für Dynamics AX 2016 (Mai 2016) erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
+Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden zur Aktualisierung der Hilfe von Microsoft Dynamics AX können 2016 und Microsoft Dynamics AX Februar 2016. Die in der APQC Unified-Bibliothek aus Februar 2016 veröffentlichten Aufgabenleitfäden sind in dieser Bibliothek enthalten. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
+
+> [!NOTE]
+> :Das Sternchen (\*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass die Aufgabe für diesen Geschäftsprozess für Dynamics AX 2016 (Mai 2016) erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
 
 ### <a name="countryregion-functionality"></a>Land/Region-Funktion
 
@@ -62,15 +64,15 @@ Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden zur Aktualisi
 
 ### <a name="electronic-reporting"></a>Elektronische Berichterstellung
 
-|                                  BPM-Zeile                                  | Land/Region |
+| BPM-Zeile                                                                   | Land/Region |
 |----------------------------------------------------------------------------|----------------|
-|                         ER Konfigurieren Sie Ziele                          |     Global     |
-|     ER Entwerfen einer Konfiguration für das Erstellen von Berichten im OPENXML-Format     |     Global     |
-| ER Generieren Sie elektronische Dokumente für Zahlungen mithilfe einer Formatkonfiguration |     Global     |
-|             ER Import einer Konfiguration von Lifecycle Services              |     Global     |
-|               <strong>\</strong>*EB – Dienstanbieter auswählen                |     Global     |
-|   ER Upgrade Ihres Formats durch Verwendung einer neuen Basisversion dieses Formats    |     Global     |
-|             ER Upload einer Konfiguration nach Lifecycle Services              |     Global     |
+| ER Konfigurieren Sie Ziele                                                  | Global         |
+| ER Entwerfen einer Konfiguration für das Erstellen von Berichten im OPENXML-Format         | Global         |
+| ER Generieren Sie elektronische Dokumente für Zahlungen mithilfe einer Formatkonfiguration | Global         |
+| ER Import einer Konfiguration von Lifecycle Services                          | Global         |
+| \*ER Dienstanbieter auswählen                                               | Global         |
+| ER Upgrade Ihres Formats durch Verwendung einer neuen Basisversion dieses Formats      | Global         |
+| ER Upload einer Konfiguration nach Lifecycle Services                          | Global         |
 
 ### <a name="human-capital-management"></a>Human Capital Management
 
@@ -176,25 +178,21 @@ Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden zur Aktualisi
 
 ### <a name="warehouse-and-transportation"></a>Lagerort- und Transport
 
-|                                     BPM-Zeile                                     | Land/Region |
-|----------------------------------------------------------------------------------|----------------|
-|                            Wellenverarbeitung konfigurieren                             |     Global     |
-| <strong>\</strong>*Melden Sie einen nicht kennzeichengesteuerten Lagerplatz als beendet |     Global     |
-|                      Richten Sie einen Min-Max-Auffüllungsprozess ein                      |     Global     |
-|                             Containerisierung einrichten                              |     Global     |
-|                              Richten Sie manuelle Verpackung ein                               |     Global     |
-|                  Transporteinschränkungen für einen Artikel einrichten                   |     Global     |
-|                <strong>\</strong>*Lagerortarbeitsrichtlinien einrichten                 |     Global     |
+|                                     BPM-Zeile                    | Land/Region |
+|-----------------------------------------------------------------|----------------|
+| Konfigurieren Sie Wellenverarbeitung                                       | Global         |
+| \*Melden Sie einen nicht kennzeichengesteuerte Lagerplatz als beendet | Global         |
+| Richten Sie einen Min-Max-Auffüllungsprozess ein                          | Global         |
+| Containerisierung einrichten                                         | Global         |
+| Richten Sie manuelle Verpackung ein                                           | Global         |
+| Transporteinschränkungen für einen Artikel einrichten                   | Global         |
+| \*Lagerortarbeitsrichtlinien einrichten                                 | Global         |
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Neuer Aufgabenleitfaden verfügbar (Februar 2016)](new-task-guides-available-february-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
-
-
-
 

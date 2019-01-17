@@ -42,25 +42,30 @@ Zusätzlich zur Unterstützung der Auftragserstellung bietet das Call-Center-Mod
 Auf dieser Seite finden Sie Links zu relevanter Dokumentation zur Einrichtung, Konfiguration und funktionalen Nutzung der Call-Center-Funktionen in Dynamics 365 for Retail.
 
 ## <a name="configure-the-call-center"></a>Callcenter konfigurieren
+
 [Auftragsabwicklungsoptionen einrichten](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Auftragsbearbeitung konfigurieren
+
 [Betrugswarnungen einrichten](set-up-fraud-alerts.md)
 
 [Manuelle Auftragssperren](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Zahlungsabwicklung konfigurieren
+
 [Zahlungsmethoden in einem Callcenter](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurieren von Lieferarten
+
 [Konfigurieren von Callcenter-Lieferarten und -Belastungen](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Direktmarketing konfigurieren
+
 [Callcenterkataloge](call-center-catalogs.md)
 
 [Analyse nach Aktualität, Häufigkeit und finanziellen Gesichtspunkten (RFM) einrichten](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Kontinuitätsprogramme konfigurieren
-[Einrichten eines Anschlussprogramms für einen Callcenter](set-up-continuity-program.md)
 
+[Einrichten eines Anschlussprogramms für einen Callcenter](set-up-continuity-program.md)
 

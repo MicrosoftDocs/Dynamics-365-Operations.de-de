@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 1ea4309d57a7b6b4ca4ae3fdd995c95d93c5c080
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: faf8cdcee70b55842072298b51789f6cd7a577af
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -34,40 +34,37 @@ ms.lasthandoff: 08/08/2018
 In diesem Thema wird beschrieben, wie Spracheinstellungen in Retail Modern POS (MPOS) und Cloud POS geändert werden.
 
 ## <a name="overview"></a>Überblick
+
 Retail Modern POS (MPOS) und Cloud POS unterstützen Umgebung, in denen Spracheinstellungen und -übersetzungen zwischen die Filiale und die Benutzereinstellungen variieren können. Beispielsweise kann sich der Shop in einer Region befinden, der in Englisch die gängigsten für seine Kunden ist, manche Arbeitskräfte ziehen sie vor, die Anwendung mit französischen Übersetzungen zu verwenden.
 
 ## <a name="data-language"></a>Sprache der Daten
-Unabhängig von der Einstellungen des Benutzers verwendet MPOS und Cloud POS immer die Spracheinstellungen des Shops, um die Übersetzungen bestimmt, die für Daten verwendet werden. Dadurch wird sichergestellt, dass alle Benutzer und Debitoren eine konsistente Erfahrung haben.  Beispiele zu Daten sind:
 
--   Produkte
--   Attribute und Werte
--   Kategorienamen
--   Gedruckte oder per E-Mail übermittelte Transaktionsbelege
--   Namen der Zahlungsmethoden
--   Zeilenanzeigemeldungen
+Unabhängig von der Einstellungen des Benutzers verwendet MPOS und Cloud POS immer die Spracheinstellungen des Shops, um die Übersetzungen bestimmt, die für Daten verwendet werden. Dadurch wird sichergestellt, dass alle Benutzer und Debitoren eine konsistente Erfahrung haben. Beispiele zu Daten sind:
+
+- Produkte
+- Attribute und Werte
+- Kategorienamen
+- Gedruckte oder per E-Mail übermittelte Transaktionsbelege
+- Namen der Zahlungsmethoden
+- Zeilenanzeigemeldungen
 
 Die Sprache der Filiale wird auch für den POS-Haupt-Anmelden Bildschirm verwendet, da der Benutzer nicht bekannt, vor dem Anmelden. Wenn eine Übersetzung nicht für die Sprache der Filiale verfügbar ist, stellt der Betrag vom POS der Sprache des Unternehmens wieder her.
 
 ### <a name="configuring-the-stores-language-setting"></a>Konfigurieren der Spracheinstellung des Shops
 
-Die Spracheinstellung eines Shops wird über **Alle Einzelhandelsgeschäfte** auf der Seite **Ladengeschäft** unter **Allgemein &gt; Regionaleinstellungen &gt; Sprache festgelegt. **Verwenden Sie das Dropdownfeld, um eine Sprache für jeden Shop auszuwählen.
+Die Spracheinstellung eines Shops wird über **Alle Einzelhandelsgeschäfte** auf der Seite **Ladengeschäft** unter &gt;**Allgemein  Regionaleinstellungen &gt; Sprache** festgelegt. Verwenden Sie das Dropdownfeld, um eine Sprache für jeden Shop auszuwählen.
 
 ## <a name="user-interface-language"></a>Benutzeroberflächensprache
+
 Die Einstellung des POS- Benutzers werden die Übersetzungen, die in der Bewerbungsbenutzeroberfläche verwendet werden. Dies umfasst alle Beschriftungen, Menüs und Listen ein, die nicht als Daten anwenden. Eine Ausnahme ist der Text, der in POS-Schaltflächenrastern angezeigt wird. Die Schaltflächenraster nicht unterstützt Übersetzungen, sodass die Konten immer Text anzeigen, wie auf der Schaltfläche definiert. Um zu unterstützen übersetzte Schaltflächen, müssen Sie separate Schaltflächenraster kopieren und verwalten und diese den entsprechenden Benutzer zuweisen.
 
 ### <a name="configuring-the-users-language-setting"></a>Konfigurieren der Spracheinstellung der Benutzers
 
-Die Spracheinstellung des POS-Benutzers wird unter **Alle Arbeitskräfte** auf der Seite **Arbeitskraft** unter **Einzelhandel &gt; Sprache** festgelegt.  Sie wird nicht auf der Hauptregisterkarte „Profil“ festgelegt. Diese Einstellung wird nicht durch POS verwendet. Wenn die Sprache des Benutzers nicht festgelegt wird oder sie auf eine Sprache festgelegt wird, in der Übersetzungen nicht verfügbar sind, stellt das POS die Sprache des Shops wieder her.  
+Die Spracheinstellung des POS-Benutzers wird unter **Alle Arbeitskräfte** auf der Seite **Arbeitskraft** unter **Einzelhandel &gt;  Sprache** festgelegt. Sie wird nicht auf der Hauptregisterkarte „Profil“ festgelegt. Diese Einstellung wird nicht durch POS verwendet. Wenn die Sprache des Benutzers nicht festgelegt wird oder sie auf eine Sprache festgelegt wird, in der Übersetzungen nicht verfügbar sind, stellt das POS die Sprache des Shops wieder her.
 
-|             |                            |                                                                   |
-|-------------|----------------------------|-------------------------------------------------------------------|
-| ** **       | **Sprache der Benutzeroberfläche** ** **      | **Datensprache (Produkte, Bonlayouts, Zeilenanzeige usw.)** |
-| **Unternehmen** | Standard                    | Standard                                                           |
-| **Shop**   | Überschreibt Unternehmen          | Überschreibt Unternehmen                                                 |
-| **Benutzer**    | Überschreibt Shop oder Unternehmen | Nie                                                             |
-
-
-
-
-
+|             | Sprache der Benutzeroberfläche                  | Datensprache (Produkte, Bonlayouts, Zeilenanzeige usw.) |
+|-------------|----------------------------|---------------------------------------------------------------|
+| **Unternehmen** | Standard                    | Standard                                                       |
+| **Shop**   | Überschreibt Unternehmen          | Überschreibt Unternehmen                                             |
+| **Benutzer**    | Überschreibt Shop oder Unternehmen | Nie                                                         |
 

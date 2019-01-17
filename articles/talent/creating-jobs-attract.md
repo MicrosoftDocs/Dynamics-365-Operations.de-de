@@ -3,7 +3,7 @@ title: "Erstellen, Genehmigen und Buchen von Aufträgen in Attract"
 description: "In diesem Thema werden die Elemente einer Stelle in Attract beschrieben. Es wird auch erklärt, wie eine Stelle erstellt wird."
 author: josaw
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: af945042c150fff1a95cdb046f2a712cb2c2c061
+ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
+ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
 ms.contentlocale: de-de
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/23/2018
 
 ---
 
@@ -75,7 +75,25 @@ Weitere Informationen zu Aktivitäten, die dem Einstellungsprozess hinzugefügt 
 
 ## <a name="postings"></a>Buchungen
 
-Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder zu Talent Careers (eine Microsoft Dynamics 365 for Talent-Karriereseite) oder zu LinkedIn veröffentlicht werden. Das Attract-Team arbeitet ständig an Partnerschaften mit Stellenbörsenaggregatoren. Daher erweitert sich diese Liste mit der Zeit.
+Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder zu Talent Careers (eine Microsoft Dynamics 365 for Talent-Karriereseite) oder zu LinkedIn veröffentlicht werden. 
+
+> [!NOTE]
+> Es gibt drei wichtige die für den Stellenausschreibungsprozess für LinkedIn zu beachten sind.
+> 1. Die Stellen, die in LinkedIn erfasst werden, sind als Stellen mit "begrenzten Listen" erfasst. Begrenzte Listeneinzelvorgänge können nicht auf verschiedenen LinkedIn-Site vermarktet werden.  Wenn Sie limitierte Listenaufträge aus Attract in LinkedImn buchen, sollten Sie mit LinkedIn arbeiten um "Stellen-Zusammenfassung" zu aktivieren. Lesen Sie sich bitte die Links umten und kontaktieren Sie den Support von LinkedIn für weitere Details.
+>
+>    [" Begrenzte Listen mit erstklassige freie Stellen für Stellen-Zusammenfassung](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
+>
+>    [ Stellen-Zusammenfassung FAQ](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
+>
+> 1. Wenn Sie Stellen in LinkedIn buchen, vergleicht Attract die Microsoft 365 Organisationsnamen mit der Stelle. LinkedIn verknüpft die Einzelvorgänge für ein Unternehmen auf der LinkedIn-Seite basierend auf dem Organisationsnamen, der erfolgreich verlaufen ist. Wenn Ihre Stelle für das falsche Unternehmen auf LinkedIn aufgeführt wird, überprüfen Sie, ob Ihre Microsoft 365 Organisationsname mit dem Unternehmensnamen auf LinkedIn übereinstimmt.  
+>
+>    [Ändern von Adressenkontakt und mehr](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
+>
+>    Wenn Sie Probleme nach diesem Schritt haben, wenden Sie sich bitte an den LinkedIn-Support. 
+> 
+> 1. Es wird möglicherweise bis zu 24 Stunden dauern, bis die die erfassten Stellen auf LinkedIn für Kandidaten in LinkedIn ersichtlich sind aufgrund des aktuellen LinkedIn-Stapelverarbeitungs-Buchungsprozesses.
+
+Das Attract-Team arbeitet ständig an Partnerschaften mit Stellenbörsenaggregatoren. Daher erweitert sich diese Liste mit der Zeit.
 
 Weitere Informationen zu Stellenausschreibungen finden Sie unter [Funktionen für Karriereseiten in Attract](./career-site.md).
 

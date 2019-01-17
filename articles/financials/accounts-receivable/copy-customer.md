@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 08e939f87bc4a1769533b205bc5706648e1d1dce
+ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
 ms.contentlocale: de-de
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -62,7 +62,7 @@ Wenn Sie einen Debitor kopieren, versucht das System, die neuen Debitordaten zu 
 
 ## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a>Debitor unter Verwendung der Umsatzsteuernummer-Suchfunktion kopieren
 
-Sie können Debitoren auch kopieren, indem Sie die Suchfunktion der Umsatzsteuernummer verwenden, die sich in der Gruppe **Registrierung** auf der Registerkarte **Debitor** im Aktivitätsbereich der Seite **Alle Debitoren** befindet. Das Dialogfeld mit der **Umsatzsteuernummernsuche** zeigt die Umsatzsteuernummern, die Debitorkennung, den Debitorennamen und die juristische Person an, in der die Umsatzsteuernummer verwendet wird. Sie können einen Debitoren nur kopieren, wenn er sich in einer juristischen Person befindet, die nicht die aktuelle juristische Person ist. Nachdem Sie einen Debitor ausgewählt haben, der dieses Kriterium erfüllt, führen Sie die folgenden Schritte aus.
+Sie können Debitoren auch kopieren, indem Sie die Umsatzsteuernummer-Suchfunktion verwenden, die sich in der Gruppe **Registrierung** auf der Registerkarte **Debitor** im Aktivitätsbereich der Seite **Alle Debitoren** befindet. Das Dialogfeld mit der **Umsatzsteuernummernsuche** zeigt die Umsatzsteuernummern, die Debitorkennung, den Debitorennamen und die juristische Person an, in der die Umsatzsteuernummer verwendet wird. Sie können einen Debitoren nur kopieren, wenn er sich in einer juristischen Person befindet, die nicht die aktuelle juristische Person ist. Nachdem Sie einen Debitor ausgewählt haben, der dieses Kriterium erfüllt, führen Sie die folgenden Schritte aus.
 
 1. Die Option **Debitor kopieren** wird angezeigt. Standardmäßig ist diese Option auf **Nein** festgelegt. Um den Debitor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf **Ja** fest. 
 2. Wählen Sie **Auswählen**. Der neue Debitor wird erstellt.
