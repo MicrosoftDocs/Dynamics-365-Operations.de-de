@@ -35,8 +35,10 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 2. Klicken Sie auf **Berichterstellungskonfigurationen**.
 3. Wählen Sie **Zahlungen (vereinfachtes Modell)** in der Struktur aus.
 4. Klicken Sie auf **Konfiguration erstellen** um das Dropdown-Dialogfeld zu öffnen.
+
  > [!NOTE]
  > Wenn **Konfiguration erstellen** nicht angezeigt wird, müssen Sie den Entwurfsmodus der Seite **Elektronische Berichterstellungsparameter** aktivieren. 
+ 
 5. Im **neuen** Feld geben Sie **Format auf Grundlage Datenmodell PaymentModel** ein.
 6. Geben Sie im Feld **Name** **BACS (Großbritannien fiktiv)** ein.
 7. Geben Sie im Feld **Beschreibung** den Typ **BACS-Kreditorenzahlungsformat (Großbritannien fiktiv**en Namens)" ein.
@@ -44,6 +46,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
     * Ein spezielles Format elektronischer Dokumente kann definiert werden. Lassen Sie das Feld leer, wenn Sie ein Format zur Laufzeit auswählen möchten.  
 8. Geben Sie im Feld **Datenmodelldefinition** einen Wert ein, oder wählen Sie einen Wert aus.
 9. Klicken Sie auf **Konfiguration erstellen**. Ein neuer Konfiguration wurde erstellt. Die Entwurfsversion kann verwendet werden, um das Designformat für die Verwaltung von elektronischen Dokumenten zu speichern.  
+
  > [!NOTE]
  > Wenn **Konfiguration erstellen** nicht angezeigt wird, müssen Sie den Entwurfsmodus der Seite **Elektronische Berichterstellungsparameter** aktivieren.
 
