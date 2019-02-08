@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b40b81fc24086e73b54cfe0cb5e6a81ec5838ab5
+ms.sourcegitcommit: 901ab6e309754338925c34c2cbecb3b83a0b0452
+ms.openlocfilehash: 48787d1eb662322c726698573b27023ae9eed56f
 ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 02/07/2019
 
 ---
 
@@ -30,7 +30,6 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 <span data-ttu-id="b89e7-104">In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="b89e7-104">This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization.</span></span> 
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 08/08/2018
 ## <a name="job-titles"></a><span data-ttu-id="b89e7-115">Stellenbezeichnungen</span><span class="sxs-lookup"><span data-stu-id="b89e7-115">Job titles</span></span>
 <span data-ttu-id="b89e7-116">Vor der Erstellung von Stellen sind zugehörige Stellenbezeichnungen einzurichten.</span><span class="sxs-lookup"><span data-stu-id="b89e7-116">Before you create jobs, you must set up titles for those jobs.</span></span> <span data-ttu-id="b89e7-117">Positionen erben die Stellenbezeichnungen von den Stellen, denen die Positionen zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="b89e7-117">Positions inherit job titles from the jobs that the positions are associated with.</span></span> 
 
-<span data-ttu-id="b89e7-118">Verwalten Sie Positionen mithilfe der **Titel**-Seite, die Sie öffnen können, indem Sie die Suchfunktion verwenden.</span><span class="sxs-lookup"><span data-stu-id="b89e7-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="b89e7-119">Auf der **Titel** Seite geben Sie die Positionen ein, die Sie einplanen und für die Einzelvorgänge verwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="b89e7-119">On the **Titles **page, enter the titles that you plan to use for your jobs.</span></span>
+<span data-ttu-id="b89e7-118">Verwalten Sie Positionen mithilfe der **Titel**-Seite, die Sie öffnen können, indem Sie die Suchfunktion verwenden.</span><span class="sxs-lookup"><span data-stu-id="b89e7-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="b89e7-119">Auf der **Titel** Seite geben Sie die Positionen ein, die Sie einplanen und für die Einzelvorgänge verwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="b89e7-119">On the \*\*Titles \*\*page, enter the titles that you plan to use for your jobs.</span></span>
 
 ## <a name="job-types"></a><span data-ttu-id="b89e7-120">Stellentypen</span><span class="sxs-lookup"><span data-stu-id="b89e7-120">Job types</span></span>
 <span data-ttu-id="b89e7-121">Verwenden Sie Stellentypen als Gruppe, um ähnliche Stellen in Kategorien zu klassifizieren.</span><span class="sxs-lookup"><span data-stu-id="b89e7-121">You use job types to group similar jobs into categories.</span></span> <span data-ttu-id="b89e7-122">Stellentypen sind nicht erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b89e7-122">Job types aren't required.</span></span> <span data-ttu-id="b89e7-123">Planen Sie jedoch, Stellentypen zur Einrichtung von Berechtigungsregeln für die Vergütungsverwaltung zu verwenden, richten Sie vor der Einrichtung von Stellen zunächst Stellentypen ein.</span><span class="sxs-lookup"><span data-stu-id="b89e7-123">However, if you plan to use job types when you set up eligibility rules for compensation management, you should set up job types before you set up jobs.</span></span> <span data-ttu-id="b89e7-124">Beispiele für Stellentypen sind Voll- und Teilzeit oder festes Salär und Stundenlohn.</span><span class="sxs-lookup"><span data-stu-id="b89e7-124">Some examples of job types are full-time and part-time, or salary and hourly pay.</span></span> <span data-ttu-id="b89e7-125">Verwalten Sie Stellentypen mithilfe der Seite **Stellenarten**.</span><span class="sxs-lookup"><span data-stu-id="b89e7-125">You maintain job types by using the **Job types** page.</span></span> <span data-ttu-id="b89e7-126">Geben Sie auf der Seite **Stellenarten** einen Namen und eine kurze Beschreibung des Positionstyps ein.</span><span class="sxs-lookup"><span data-stu-id="b89e7-126">On the **Job types** page, enter a name and a brief description for the job type.</span></span> <span data-ttu-id="b89e7-127">Wählen Sie im Feld **Status befreit** eine der folgenden Optionen aus, um den Ausnahmezustand des Fair Labor Standards Act (FLSA) für Stellen anzugeben, die zu folgenden Stellenarten gehören:</span><span class="sxs-lookup"><span data-stu-id="b89e7-127">In the **Exempt status** field, select one of the following options to indicate the Fair Labor Standards Act (FLSA) exempt status of jobs that have this job type:</span></span>
