@@ -1,13 +1,13 @@
 ---
 title: Debitoren unter Verwendung gemeinsamer Nummernkreise kopieren
-description: "In diesem Thema wird erläutert, wie Sie gemeinsame Nummernkreise verwenden, um einen Debitor unter Beibehaltung der gleichen Debitorkennung zu einer anderen juristischen Person zu kopieren."
+description: In diesem Thema wird erläutert, wie Sie gemeinsame Nummernkreise verwenden, um einen Debitor unter Beibehaltung der gleichen Debitorkennung zu einer anderen juristischen Person zu kopieren.
 author: mikefalkner
 manager: aolson
 ms.date: 08/31/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
-ms.contentlocale: de-de
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302303"
 ---
-
 # <a name="copy-customers-by-using-shared-number-sequences"></a>Debitoren unter Verwendung gemeinsamer Nummernkreise kopieren
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Sie können Debitoren auch zwischen juristischen Personen kopieren, wenn Sie man
 
 ## <a name="copy-a-customer"></a>Debitor kopieren
 
-Um einen Debitoren zu kopieren, wählen Sie **Neu** auf der Listenseite **Alle Debitoren**, um das Dialogfeld **Debitor erstellen** zu öffnen. Sie sehen, dass die neue Debitorkennung nicht sofort zugewiesen wird. Dieses Verhalten unterscheidet sich von früheren Versionen von Microsoft Dynamics 365 for Finance and Operations. Da Sie die Debitorengruppe noch nicht ausgewählt haben, kann das System nicht den richtigen Nummernkreis ermitteln, der verwendet werden soll. Darüber hinaus kann es nicht feststellen, ob Sie versuchen, einen neuen Debitor zu erstellen oder einen Debitor zu kopieren. Daher wird die Debitorkennung erst zugewiesen, wenn Sie unten im Dialogfeld **Speichern** auswählen.
+Um einen Debitoren zu kopieren, wählen Sie **Neu** auf der Listenseite **Alle Debitoren**, um das Dialogfeld **Debitor erstellen** zu öffnen. Sie sehen, dass die neue Debitorkennung nicht sofort zugewiesen wird. Dieses Verhalten unterscheidet sich vom Verhalten der Vorgängerversionen von Microsoft Dynamics 365 for Finance and Operations. Da Sie die Debitorengruppe noch nicht ausgewählt haben, kann das System nicht den richtigen Nummernkreis ermitteln, der verwendet werden soll. Darüber hinaus kann es nicht feststellen, ob Sie versuchen, einen neuen Debitor zu erstellen oder einen Debitor zu kopieren. Daher wird die Debitorkennung erst zugewiesen, wenn Sie unten im Dialogfeld **Speichern** auswählen.
 
 Wenn Sie einen neuen Debitor erstellen, können Sie alle Felder weiter füllen, wie Sie es gewohnt sind. Wenn Sie fertig sind und **Speichern** auswählen, werden Sie feststellen, dass die Debitorkennung automatisch zugewiesen wurde. Bei manuellen Nummernkreisen sehen Sie, dass Ihre manuelle Debitorkennung verwendet wurde.
 
@@ -66,4 +65,3 @@ Sie können Debitoren auch kopieren, indem Sie die Umsatzsteuernummer-Suchfunkti
 
 1. Die Option **Debitor kopieren** wird angezeigt. Standardmäßig ist diese Option auf **Nein** festgelegt. Um den Debitor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf **Ja** fest. 
 2. Wählen Sie **Auswählen**. Der neue Debitor wird erstellt.
-

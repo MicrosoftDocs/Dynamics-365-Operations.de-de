@@ -1,13 +1,13 @@
 ---
-title: "Business Intelligence (BI) und Berichterstellung – Startseite"
-description: "In diesem Thema erhalten Sie Hinweise zu Ressourcen. Diese bieten Ihnen weitere Informationen über die Tools zu Business Intelligence und zur Berichterstellung, die in Microsoft Dynamics 365 for Finance and Operations verfügbar sind."
+title: Business Intelligence (BI) und Berichterstellung – Startseite
+description: In diesem Thema erhalten Sie Hinweise zu Ressourcen. Diese bieten Ihnen weitere Informationen über die Tools zu Business Intelligence und zur Berichterstellung, die in Microsoft Dynamics 365 for Finance and Operations verfügbar sind.
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302311"
 ---
-
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Business Intelligence (BI) und Berichterstellung – Startseite
 
 [!include [banner](../includes/banner.md)]
@@ -45,11 +44,11 @@ Benutzer können mit Daten interagieren, indem Sie auf visuelle Elemente auf der
 
 Weitere Informationen finden Sie in folgenden Themen:
 
-- [Eingebettete Power BI in Arbeitsbereichen](embed-power-bi-workspaces.md)
-- [Integration von Power BI Embedded](power-bi-embedded-integration.md)
-- [Über Power BI Embedded Analysen zu Arbeitsbereichen hinzufügen](add-analytics-tab-workspaces.md)
-- [Über Power BI Embedded Analyse-Arbeitsbereiche und Berichte absichern](secure-analytical-workspaces.md)
-- [Power BI-Inhalt für Finance and Operations](power-bi-home-page.md)
+- [Eingebettetes Power BI in Arbeitsbereichen](embed-power-bi-workspaces.md)
+- [Power BI Embedded-Integration](power-bi-embedded-integration.md)
+- [Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen](add-analytics-tab-workspaces.md)
+- [Analysearbeitsbereiche und -berichte mit Power BI Embedded schützen](secure-analytical-workspaces.md)
+- [Power BI-Inhalte für Finance and Operations](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Geschäftsdokumente und Drucken
 Berichterstellungslösungen werden häufig verwendet, um die Details von Geschäftstransaktionen zu erfassen und zu kommunizieren. Daher muss eine Berichterstellungslösung in der Lage sein, physische Darstellungen von Geschäftsdaten mithilfe vorhandener Geräte zu erzeugen, wie beispielsweise Netzwerkdruckern. Beispiele von Geschäftsdokumenten umfassen Verkaufsrechnungen, Debitorenaufstellungen und Schecks.
@@ -91,4 +90,3 @@ Die folgenden Berichte enthalten Referenzinformationen zu den Objekten in Financ
 - [Bericht zu Lizenzcodes und Konfigurationsschlüsseln](../sysadmin/license-codes-configuration-keys-report.md)
 - [Bericht zu SQL Server Reporting Services-Berichten](SSRS-report.md)
 - [Bericht zu Workflowtypen](../../fin-and-ops/organization-administration/workflow-types-report.md)
-

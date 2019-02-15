@@ -1,13 +1,13 @@
 ---
 title: Debitorenworkflow
-description: "Dieses Thema enthält Informationen zum Debitorenworkflow. Sie ändern bestimmte Felder für einen Debitor und senden diese Änderungen zur Genehmigung, indem Sie den Workflow durchlaufen, bevor die Änderungen dem Debitor hinzugefügt werden."
+description: Dieses Thema enthält Informationen zum Debitorenworkflow. Sie ändern bestimmte Felder für einen Debitor und senden diese Änderungen zur Genehmigung, indem Sie den Workflow durchlaufen, bevor die Änderungen dem Debitor hinzugefügt werden.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: shylaw
@@ -16,25 +16,24 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 1b0e1621b256e6bbb42f97134b87dd65fa146193
-ms.contentlocale: de-de
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302329"
 ---
-
 # <a name="customer-workflow"></a>Debitorenworkflow
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, Version 8.0.4, wurde mit dem Debitorenworkflow ergänzt. Sie können bestimmte Felder für einen Debitor ändern und diese Änderungen dann zur Genehmigung einreichen, indem Sie den Workflow durchlaufen, bevor die Änderungen dem Debitor hinzugefügt werden.
+Der Debitorenworkflow wurde zu Version 8.0.4 von Microsoft Dynamics 365 for Finance and Operations hinzugefügt. Sie können bestimmte Felder für einen Debitor ändern und diese Änderungen dann zur Genehmigung einreichen, indem Sie den Workflow durchlaufen, bevor die Änderungen dem Debitor hinzugefügt werden.
 
 ## <a name="set-up-the-customer-workflow"></a>Debitorenworkflow einrichten
 
 Bevor Sie die Debitorenworkflowfunktion verwenden können, müssen Sie sie aktivieren.
 
-1. Gehen Sie zu **Debitoren \> Einrichtung \> Debitorenkontenparameter**.
+1. Gehen Sie zu **Debitoren \> Einrichtung \> Debitorenparameter**.
 2. Um die Funktion einzuschalten, legen Sie auf der Registerkarte **Allgemein** im Inforegister **Debitorengenehmigung** die Option **Debitorengenehmigungen aktivieren** auf **Ja** fest.
 3. Wählen Sie dann im Feld **Datenentitätsverhalten** die gewünschte Funktionsweise von Datenentitäten beim Import von Daten aus:
 
@@ -62,4 +61,3 @@ Liegt mindestens eine vorgeschlagene Änderung vor, werden im Aktivitätsbereich
     Der Status auf der Seite ändert sich in **Änderungen mit ausstehender Genehmigung**.
 
 Der Workflow folgt dem Standardworkflowablauf aus Finance and Operations. Die genehmigende Person wird an die Seite **Debitor** weitergeleitet. Dort kann sie die Änderungen auf der Seite **Vorgeschlagene Änderungen** einsehen und den Workflow dann mit **Workflow \> Genehmigen** genehmigen. Sind alle Genehmigungen bearbeitet, werden die Felder mit den vorgeschlagenen Werten aktualisiert.
-
