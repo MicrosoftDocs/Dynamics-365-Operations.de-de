@@ -1,13 +1,13 @@
---- 
+---
 title: ER Erstellen eine Formatkonfiguration (November 2016)
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle \"Entwickler für elektronische Berichterstellung\" zugewiesen ist, eine Format-Konfiguration für elektronische Berichterstellung (ER) erstellen kann."
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, eine Format-Konfiguration für elektronische Berichterstellung (ER) erstellen kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377548"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Erstellen eine Formatkonfiguration (November 2016)
 
@@ -35,8 +35,10 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 2. Klicken Sie auf **Berichterstellungskonfigurationen**.
 3. Wählen Sie **Zahlungen (vereinfachtes Modell)** in der Struktur aus.
 4. Klicken Sie auf **Konfiguration erstellen** um das Dropdown-Dialogfeld zu öffnen.
+
  > [!NOTE]
  > Wenn **Konfiguration erstellen** nicht angezeigt wird, müssen Sie den Entwurfsmodus der Seite **Elektronische Berichterstellungsparameter** aktivieren. 
+ 
 5. Im **neuen** Feld geben Sie **Format auf Grundlage Datenmodell PaymentModel** ein.
 6. Geben Sie im Feld **Name** **BACS (Großbritannien fiktiv)** ein.
 7. Geben Sie im Feld **Beschreibung** den Typ **BACS-Kreditorenzahlungsformat (Großbritannien fiktiv**en Namens)" ein.
@@ -44,9 +46,6 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
     * Ein spezielles Format elektronischer Dokumente kann definiert werden. Lassen Sie das Feld leer, wenn Sie ein Format zur Laufzeit auswählen möchten.  
 8. Geben Sie im Feld **Datenmodelldefinition** einen Wert ein, oder wählen Sie einen Wert aus.
 9. Klicken Sie auf **Konfiguration erstellen**. Ein neuer Konfiguration wurde erstellt. Die Entwurfsversion kann verwendet werden, um das Designformat für die Verwaltung von elektronischen Dokumenten zu speichern.  
- > [!NOTE]
- > Wenn **Konfiguration erstellen** nicht angezeigt wird, müssen Sie den Entwurfsmodus der Seite **Elektronische Berichterstellungsparameter** aktivieren.
-
 
 ## <a name="design-the-format-of-an-electronic-document"></a>Entwerfen Sie Format elektronischer Dokumente
 1. Klicken Sie auf **Designer**.
@@ -159,5 +158,4 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 41. Klicken Sie auf **OK**.
 42. Klicken Sie auf **Speichern**.
 43. Schließen Sie die Seite.
-
 
