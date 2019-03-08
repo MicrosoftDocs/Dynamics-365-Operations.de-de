@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,59 +17,57 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7eb6d743131937081ce83b31988d792185cb28b2
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308643"
 ---
-
-# <a name="workflow-system"></a><span data-ttu-id="b3bf4-103">Workflowsystem</span><span class="sxs-lookup"><span data-stu-id="b3bf4-103">Workflow system</span></span>
+# <a name="workflow-system"></a><span data-ttu-id="f65ca-103">Workflowsystem</span><span class="sxs-lookup"><span data-stu-id="f65ca-103">Workflow system</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b3bf4-104">In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations beschrieben.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-104">This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.</span></span>
+<span data-ttu-id="f65ca-104">In diesem Thema wird das Workflowsystem in Microsoft Dynamics 365 for Finance and Operations beschrieben.</span><span class="sxs-lookup"><span data-stu-id="f65ca-104">This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
-## <a name="what-is-workflow"></a><span data-ttu-id="b3bf4-105">Was ist ein Arbeitsplan?</span><span class="sxs-lookup"><span data-stu-id="b3bf4-105">What is workflow?</span></span>
+## <a name="what-is-workflow"></a><span data-ttu-id="f65ca-105">Was ist ein Arbeitsplan?</span><span class="sxs-lookup"><span data-stu-id="f65ca-105">What is workflow?</span></span>
 
-<span data-ttu-id="b3bf4-106">Der Begriff *Workflow* kann auf zwei Arten definiert werden: als System und als Geschäftsprozess.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-106">The term *workflow* can be defined in two ways: as a system and as a business process.</span></span>
+<span data-ttu-id="f65ca-106">Der Begriff *Workflow* kann auf zwei Arten definiert werden: als System und als Geschäftsprozess.</span><span class="sxs-lookup"><span data-stu-id="f65ca-106">The term *workflow* can be defined in two ways: as a system and as a business process.</span></span>
 
-### <a name="workflow-is-a-system"></a><span data-ttu-id="b3bf4-107">Workflow als System</span><span class="sxs-lookup"><span data-stu-id="b3bf4-107">Workflow is a system</span></span>
+### <a name="workflow-is-a-system"></a><span data-ttu-id="f65ca-107">Workflow als System</span><span class="sxs-lookup"><span data-stu-id="f65ca-107">Workflow is a system</span></span>
 
-<span data-ttu-id="b3bf4-108">Workflow ist ein System, das mit Finance and Operations installiert wird und auf dem Anwendungsobjektserver (AOS/Application Object Server) ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-108">Workflow is a system that is installed with Finance and Operations and runs on the Application Object Server (AOS).</span></span> <span data-ttu-id="b3bf4-109">Das Workflowsystem verfügt über Funktionen, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-109">The workflow system provides functionality that you can use to create individual workflows, or business processes.</span></span>
+<span data-ttu-id="f65ca-108">Workflow ist ein System, das mit Finance and Operations installiert wird und auf dem Anwendungsobjektserver (AOS/Application Object Server) ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="f65ca-108">Workflow is a system that is installed with Finance and Operations and runs on the Application Object Server (AOS).</span></span> <span data-ttu-id="f65ca-109">Das Workflowsystem verfügt über Funktionen, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="f65ca-109">The workflow system provides functionality that you can use to create individual workflows, or business processes.</span></span>
 
-### <a name="workflow-is-a-business-process"></a><span data-ttu-id="b3bf4-110">Workflow als Geschäftsprozess</span><span class="sxs-lookup"><span data-stu-id="b3bf4-110">Workflow is a business process</span></span>
+### <a name="workflow-is-a-business-process"></a><span data-ttu-id="f65ca-110">Workflow als Geschäftsprozess</span><span class="sxs-lookup"><span data-stu-id="f65ca-110">Workflow is a business process</span></span>
 
-<span data-ttu-id="b3bf4-111">Ein Workflow stellt einen Geschäftsprozess dar.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-111">A workflow represents a business process.</span></span> <span data-ttu-id="b3bf4-112">Ein Workflow definiert, wie ein Dokument das System durchläuft, indem angezeigt wird, wer eine Aufgabe abschließen, eine Entscheidung treffen oder ein Dokument genehmigen muss.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="b3bf4-113">Die folgende Abbildung zeigt z. B. einen Workflow für Spesenabrechnungen.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-113">For example, the following illustration shows a workflow for expense reports.</span></span>
+<span data-ttu-id="f65ca-111">Ein Workflow stellt einen Geschäftsprozess dar.</span><span class="sxs-lookup"><span data-stu-id="f65ca-111">A workflow represents a business process.</span></span> <span data-ttu-id="f65ca-112">Ein Workflow definiert, wie ein Dokument das System durchläuft, indem angezeigt wird, wer eine Aufgabe abschließen, eine Entscheidung treffen oder ein Dokument genehmigen muss.</span><span class="sxs-lookup"><span data-stu-id="f65ca-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="f65ca-113">Die folgende Abbildung zeigt z. B. einen Workflow für Spesenabrechnungen.</span><span class="sxs-lookup"><span data-stu-id="f65ca-113">For example, the following illustration shows a workflow for expense reports.</span></span>
 
 ![Workflow mit Elementen, die Benutzern zugewiesen sind](./media/workflow_user.gif)
 
-<span data-ttu-id="b3bf4-115">Beispiel zum besseren Verständnis dieses Workflows: Steffen reicht eine Spesenabrechnung in Höhe von 7.000 Euro ein.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-115">To better understand this workflow, suppose that Sam submits an expense report for USD 7,000.</span></span> <span data-ttu-id="b3bf4-116">In diesem Szenario muss Joachim die Belege prüfen, die Steffen an ihn weiterleitet.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-116">In this scenario, Ivan must review the receipts that Sam routes to him.</span></span> <span data-ttu-id="b3bf4-117">Anschließend muss die Spesenabrechnung von Frank und Saskia genehmigt werden.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-117">Then Frank and Sue must approve the expense report.</span></span> <span data-ttu-id="b3bf4-118">Nehmen wir nun an, Steffen reicht eine Spesenabrechnung in Höhe von 11.000 Euro ein.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-118">Now suppose that Sam submits an expense report for USD 11,000.</span></span> <span data-ttu-id="b3bf4-119">In diesem Szenario muss Joachim die Belege prüfen, und Frank, Saskia und Anne müssen die Spesenabrechnung genehmigen.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-119">In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.</span></span>
+<span data-ttu-id="f65ca-115">Beispiel zum besseren Verständnis dieses Workflows: Steffen reicht eine Spesenabrechnung in Höhe von 7.000 Euro ein.</span><span class="sxs-lookup"><span data-stu-id="f65ca-115">To better understand this workflow, suppose that Sam submits an expense report for USD 7,000.</span></span> <span data-ttu-id="f65ca-116">In diesem Szenario muss Joachim die Belege prüfen, die Steffen an ihn weiterleitet.</span><span class="sxs-lookup"><span data-stu-id="f65ca-116">In this scenario, Ivan must review the receipts that Sam routes to him.</span></span> <span data-ttu-id="f65ca-117">Anschließend muss die Spesenabrechnung von Frank und Saskia genehmigt werden.</span><span class="sxs-lookup"><span data-stu-id="f65ca-117">Then Frank and Sue must approve the expense report.</span></span> <span data-ttu-id="f65ca-118">Nehmen wir nun an, Steffen reicht eine Spesenabrechnung in Höhe von 11.000 Euro ein.</span><span class="sxs-lookup"><span data-stu-id="f65ca-118">Now suppose that Sam submits an expense report for USD 11,000.</span></span> <span data-ttu-id="f65ca-119">In diesem Szenario muss Joachim die Belege prüfen, und Frank, Saskia und Anne müssen die Spesenabrechnung genehmigen.</span><span class="sxs-lookup"><span data-stu-id="f65ca-119">In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.</span></span>
 
-## <a name="benefits-of-using-the-workflow-system"></a><span data-ttu-id="b3bf4-120">Vorteile des Workflowsystems</span><span class="sxs-lookup"><span data-stu-id="b3bf4-120">Benefits of using the workflow system</span></span>
+## <a name="benefits-of-using-the-workflow-system"></a><span data-ttu-id="f65ca-120">Vorteile des Workflowsystems</span><span class="sxs-lookup"><span data-stu-id="f65ca-120">Benefits of using the workflow system</span></span>
 
-<span data-ttu-id="b3bf4-121">Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vorteile:</span><span class="sxs-lookup"><span data-stu-id="b3bf4-121">There are several benefits of using the workflow system in your organization:</span></span>
+<span data-ttu-id="f65ca-121">Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vorteile:</span><span class="sxs-lookup"><span data-stu-id="f65ca-121">There are several benefits of using the workflow system in your organization:</span></span>
 
-- <span data-ttu-id="b3bf4-122">**Konsistente Prozesse** – Sie können die Verarbeitung bestimmter Dokumente definieren, z. B. von Bestellanforderungen und Spesenabrechnungen.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="b3bf4-123">Das Workflowsystem gewährleistet, dass Dokumente konsistent und effizient verarbeitet und genehmigt werden.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
-- <span data-ttu-id="b3bf4-124">**Prozesssichtbarkeit** – Sie können den Status, die Historie und die Leistungskennzahlen von Workflowinstanzen nachverfolgen.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="b3bf4-125">So können Sie besser feststellen, ob zur Effizienzsteigerung Änderungen am Workflow vorgenommen werden sollten.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
-- <span data-ttu-id="b3bf4-126">**Zentralisierte Arbeitsliste** – Benutzer können eine zentralisierte Arbeitsliste öffnen, um die ihnen zugeordneten Workflowaufgaben und -genehmigungen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="b3bf4-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
+- <span data-ttu-id="f65ca-122">**Konsistente Prozesse** – Sie können die Verarbeitung bestimmter Dokumente definieren, z. B. von Bestellanforderungen und Spesenabrechnungen.</span><span class="sxs-lookup"><span data-stu-id="f65ca-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="f65ca-123">Das Workflowsystem gewährleistet, dass Dokumente konsistent und effizient verarbeitet und genehmigt werden.</span><span class="sxs-lookup"><span data-stu-id="f65ca-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
+- <span data-ttu-id="f65ca-124">**Prozesssichtbarkeit** – Sie können den Status, die Historie und die Leistungskennzahlen von Workflowinstanzen nachverfolgen.</span><span class="sxs-lookup"><span data-stu-id="f65ca-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="f65ca-125">So können Sie besser feststellen, ob zur Effizienzsteigerung Änderungen am Workflow vorgenommen werden sollten.</span><span class="sxs-lookup"><span data-stu-id="f65ca-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
+- <span data-ttu-id="f65ca-126">**Zentralisierte Arbeitsliste** – Benutzer können eine zentralisierte Arbeitsliste öffnen, um die ihnen zugeordneten Workflowaufgaben und -genehmigungen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="f65ca-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
 
 
-## <a name="workflow-content"></a><span data-ttu-id="b3bf4-127">Workflowinhalt</span><span class="sxs-lookup"><span data-stu-id="b3bf4-127">Workflow content</span></span>
+## <a name="workflow-content"></a><span data-ttu-id="f65ca-127">Workflowinhalt</span><span class="sxs-lookup"><span data-stu-id="f65ca-127">Workflow content</span></span>
 
-+ [<span data-ttu-id="b3bf4-128">Workflowarchitektur</span><span class="sxs-lookup"><span data-stu-id="b3bf4-128">Workflow architecture</span></span>](workflow-system-architecture.md)
-+ [<span data-ttu-id="b3bf4-129">Workflowelemente</span><span class="sxs-lookup"><span data-stu-id="b3bf4-129">Workflow elements</span></span>](workflow-elements.md)
-+ [<span data-ttu-id="b3bf4-130">Workflowaktivitäten</span><span class="sxs-lookup"><span data-stu-id="b3bf4-130">Workflow actions</span></span>](workflow-actions.md)
-+ [<span data-ttu-id="b3bf4-131">Erstellen eines Workflows</span><span class="sxs-lookup"><span data-stu-id="b3bf4-131">Create a workflow</span></span>](create-workflow.md)
-+ [<span data-ttu-id="b3bf4-132">Konfigurieren von Workfloweigenschaften</span><span class="sxs-lookup"><span data-stu-id="b3bf4-132">Configure workflow properties</span></span>](configure-workflow-properties.md)
-+ [<span data-ttu-id="b3bf4-133">Konfigurieren einer manuellen Entscheidung in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="b3bf4-133">Configure a manual task in a workflow</span></span>](configure-manual-task-workflow.md)
-+ [<span data-ttu-id="b3bf4-134">Konfigurieren einer automatisierten Aufgabe in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="b3bf4-134">Configure an automated task in a workflow</span></span>](configure-automated-task-workflow.md)
-+ [<span data-ttu-id="b3bf4-135">Einen Genehmigungsschritt in einem Workflow konfirgurieren</span><span class="sxs-lookup"><span data-stu-id="b3bf4-135">Configure an approval process in a workflow</span></span>](configure-approval-process-workflow.md)
-+ [<span data-ttu-id="b3bf4-136">Einen Genehmigungsschritt in einem Workflow genehmigen</span><span class="sxs-lookup"><span data-stu-id="b3bf4-136">Configure an approval step in a workflow</span></span>](configure-approval-step-workflow.md)
-+ [<span data-ttu-id="b3bf4-137">Konfigurieren einer manuellen Entscheidung in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="b3bf4-137">Configure a manual decision in a workflow</span></span>](configure-manual-decision-workflow.md)
-+ [<span data-ttu-id="b3bf4-138">Konfigurieren einer bedingten Entscheidung in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="b3bf4-138">Configure a conditional decision in a workflow</span></span>](configure-conditional-decision-workflow.md)
-+ [<span data-ttu-id="b3bf4-139">Konfigurieren einer parallelen Aktivität in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="b3bf4-139">Configure a parallel activity in a workflow</span></span>](configure-parallel-activity-workflow.md)
-+ [<span data-ttu-id="b3bf4-140">Konfigurieren eines Parallelzweigs in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="b3bf4-140">Configure a parallel branch in a workflow</span></span>](configure-parallel-branch-workflow.md)
-+ [<span data-ttu-id="b3bf4-141">Konfigurieren eines Positionsworkflows</span><span class="sxs-lookup"><span data-stu-id="b3bf4-141">Configure a line-item workflow</span></span>](configure-line-item-workflow.md)
-
++ [<span data-ttu-id="f65ca-128">Workflowarchitektur</span><span class="sxs-lookup"><span data-stu-id="f65ca-128">Workflow architecture</span></span>](workflow-system-architecture.md)
++ [<span data-ttu-id="f65ca-129">Workflowelemente</span><span class="sxs-lookup"><span data-stu-id="f65ca-129">Workflow elements</span></span>](workflow-elements.md)
++ [<span data-ttu-id="f65ca-130">Workflowaktivitäten</span><span class="sxs-lookup"><span data-stu-id="f65ca-130">Workflow actions</span></span>](workflow-actions.md)
++ [<span data-ttu-id="f65ca-131">Erstellen eines Workflows</span><span class="sxs-lookup"><span data-stu-id="f65ca-131">Create a workflow</span></span>](create-workflow.md)
++ [<span data-ttu-id="f65ca-132">Konfigurieren von Workfloweigenschaften</span><span class="sxs-lookup"><span data-stu-id="f65ca-132">Configure workflow properties</span></span>](configure-workflow-properties.md)
++ [<span data-ttu-id="f65ca-133">Konfigurieren einer manuellen Entscheidung in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="f65ca-133">Configure a manual task in a workflow</span></span>](configure-manual-task-workflow.md)
++ [<span data-ttu-id="f65ca-134">Konfigurieren einer automatisierten Aufgabe in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="f65ca-134">Configure an automated task in a workflow</span></span>](configure-automated-task-workflow.md)
++ [<span data-ttu-id="f65ca-135">Einen Genehmigungsschritt in einem Workflow konfirgurieren</span><span class="sxs-lookup"><span data-stu-id="f65ca-135">Configure an approval process in a workflow</span></span>](configure-approval-process-workflow.md)
++ [<span data-ttu-id="f65ca-136">Einen Genehmigungsschritt in einem Workflow genehmigen</span><span class="sxs-lookup"><span data-stu-id="f65ca-136">Configure an approval step in a workflow</span></span>](configure-approval-step-workflow.md)
++ [<span data-ttu-id="f65ca-137">Konfigurieren einer manuellen Entscheidung in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="f65ca-137">Configure a manual decision in a workflow</span></span>](configure-manual-decision-workflow.md)
++ [<span data-ttu-id="f65ca-138">Konfigurieren einer bedingten Entscheidung in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="f65ca-138">Configure a conditional decision in a workflow</span></span>](configure-conditional-decision-workflow.md)
++ [<span data-ttu-id="f65ca-139">Konfigurieren einer parallelen Aktivität in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="f65ca-139">Configure a parallel activity in a workflow</span></span>](configure-parallel-activity-workflow.md)
++ [<span data-ttu-id="f65ca-140">Konfigurieren eines Parallelzweigs in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="f65ca-140">Configure a parallel branch in a workflow</span></span>](configure-parallel-branch-workflow.md)
++ [<span data-ttu-id="f65ca-141">Konfigurieren eines Positionsworkflows</span><span class="sxs-lookup"><span data-stu-id="f65ca-141">Configure a line-item workflow</span></span>](configure-line-item-workflow.md)

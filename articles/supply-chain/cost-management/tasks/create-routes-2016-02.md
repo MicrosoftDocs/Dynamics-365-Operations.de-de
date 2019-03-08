@@ -1,13 +1,13 @@
---- 
+---
 title: Routen erstellen (nur Februar 2016)
-description: "Diese Aufgabe konzentriert sich auf das Erstellen der Produktionsarbeitspläne für ein fertiges Produkt und ein halbfertiges Produkt."
+description: Diese Aufgabe konzentriert sich auf das Erstellen der Produktionsarbeitspläne für ein fertiges Produkt und ein halbfertiges Produkt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,96 +15,95 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 63ad2cc0c41a5931750dffbfc64bc7ce965a1da4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316463"
 ---
-# <a name="create-routes-february-2016-only"></a><span data-ttu-id="c5068-103">Arbeitspläne erstellen (nur Februar 2016)</span><span class="sxs-lookup"><span data-stu-id="c5068-103">Create routes (February 2016 only)</span></span>
+# <a name="create-routes-february-2016-only"></a><span data-ttu-id="b2bfb-103">Arbeitspläne erstellen (nur Februar 2016)</span><span class="sxs-lookup"><span data-stu-id="b2bfb-103">Create routes (February 2016 only)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="c5068-104">Diese Aufgabe konzentriert sich auf das Erstellen der Produktionsarbeitspläne für ein fertiges Produkt und ein halbfertiges Produkt.</span><span class="sxs-lookup"><span data-stu-id="c5068-104">This task focuses on creating the production routes for a finished product and a semi-finished product.</span></span> <span data-ttu-id="c5068-105">Es ist die fünfte Aufgabe in der Stücklistenberechnungsserie.</span><span class="sxs-lookup"><span data-stu-id="c5068-105">It is the fifth task in the BOM calculation series.</span></span> <span data-ttu-id="c5068-106">Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="c5068-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="b2bfb-104">Diese Aufgabe konzentriert sich auf das Erstellen der Produktionsarbeitspläne für ein fertiges Produkt und ein halbfertiges Produkt.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-104">This task focuses on creating the production routes for a finished product and a semi-finished product.</span></span> <span data-ttu-id="b2bfb-105">Es ist die fünfte Aufgabe in der Stücklistenberechnungsserie.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-105">It is the fifth task in the BOM calculation series.</span></span> <span data-ttu-id="b2bfb-106">Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-106">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-a-route-for-a-semi-finished-product"></a><span data-ttu-id="c5068-107">Arbeitsplan für ein halbfertiges Produkt erstellen</span><span class="sxs-lookup"><span data-stu-id="c5068-107">Create a route for a semi-finished product</span></span>
-1. <span data-ttu-id="c5068-108">Wechseln Sie zu "Produktinformationsverwaltung" > "Produkte" > "Freigegebene Produkte".</span><span class="sxs-lookup"><span data-stu-id="c5068-108">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="c5068-109">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="c5068-109">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="c5068-110">Wählen Sie die Artikelnummer BOM_2 aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-110">Select the item number BOM_2.</span></span>  
-3. <span data-ttu-id="c5068-111">Klicken Sie im Aktivitätsbereich auf "Entwickler".</span><span class="sxs-lookup"><span data-stu-id="c5068-111">On the Action Pane, click Engineer.</span></span>
-4. <span data-ttu-id="c5068-112">Klicken Sie auf "Arbeitsplan".</span><span class="sxs-lookup"><span data-stu-id="c5068-112">Click Route.</span></span>
-5. <span data-ttu-id="c5068-113">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="c5068-113">Click New.</span></span>
-6. <span data-ttu-id="c5068-114">Klicken Sie auf Arbeitsplan und Arbeitsplanversion.</span><span class="sxs-lookup"><span data-stu-id="c5068-114">Click Route and route version.</span></span>
-7. <span data-ttu-id="c5068-115">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-115">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="c5068-116">Geben Sie beispielsweise ROUTE_2 ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-116">For example, type ROUTE_2.</span></span>  
-8. <span data-ttu-id="c5068-117">Geben Sie im Feld "Standort" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-117">In the Site field, enter or select a value.</span></span>
-    * <span data-ttu-id="c5068-118">Geben Sie für dieses Beispiel „Standort 1” ein oder wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-118">For this example, enter or select Site 1.</span></span>  
-9. <span data-ttu-id="c5068-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="c5068-119">Click OK.</span></span>
-10. <span data-ttu-id="c5068-120">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="c5068-120">Click New.</span></span>
-11. <span data-ttu-id="c5068-121">Geben Sie im Feld 'Arbeitsgang' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-121">In the Operation field, enter or select a value.</span></span>
-    * <span data-ttu-id="c5068-122">Wählen Sie für dieses Beispiel „Zusammenstellung” aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-122">For this example, select Assembly.</span></span>  
-12. <span data-ttu-id="c5068-123">Geben Sie im Feld "Laufzeit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-123">In the Run time field, enter a number.</span></span>
-    * <span data-ttu-id="c5068-124">Geben Sie beispielsweise "1" ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-124">For example, type 1.</span></span> <span data-ttu-id="c5068-125">Ausführungszeiten sind oft Teil des Preises, der für einen Artikel berechnet wurde.</span><span class="sxs-lookup"><span data-stu-id="c5068-125">Run times are often part of the price that is calculated for an item.</span></span>  
-13. <span data-ttu-id="c5068-126">Geben Sie im Feld "Arbeitsplangruppe" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-126">In the Route group field, enter or select a value.</span></span>
-    * <span data-ttu-id="c5068-127">Wählen Sie für dieses Beispiel „STD” aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-127">For this example, select Std.</span></span>  
-14. <span data-ttu-id="c5068-128">Klicken Sie auf die Registerkarte "Einstellungen".</span><span class="sxs-lookup"><span data-stu-id="c5068-128">Click the Setup tab.</span></span>
-15. <span data-ttu-id="c5068-129">Geben Sie im Feld "Rüstkostenkategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-129">In the Setup category field, enter or select a value.</span></span>
-    * <span data-ttu-id="c5068-130">Wählen Sie für dieses Beispiel „Zusammenstellung” aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-130">For this example, select Assembly.</span></span>  
-16. <span data-ttu-id="c5068-131">Klicken Sie auf die Registerkarte 'Zeiten'.</span><span class="sxs-lookup"><span data-stu-id="c5068-131">Click the Times tab.</span></span>
-17. <span data-ttu-id="c5068-132">Geben Sie im Feld „Rüstzeit” eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-132">In the Setup time field, enter a number.</span></span>
-    * <span data-ttu-id="c5068-133">Geben Sie für dieses Beispiel 1 ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-133">For this example, type 1.</span></span> <span data-ttu-id="c5068-134">Rüstzeiten sind oft Teil des Preises, der für einen Artikel berechnet wurde.</span><span class="sxs-lookup"><span data-stu-id="c5068-134">Setup times are often part of the price that is calculated for an item.</span></span>  
-18. <span data-ttu-id="c5068-135">Klicken Sie im Aktivitätsbereich auf „Arbeitsplanversion”.</span><span class="sxs-lookup"><span data-stu-id="c5068-135">On the Action Pane, click Route version.</span></span>
-19. <span data-ttu-id="c5068-136">Klicken Sie auf Genehmigen.</span><span class="sxs-lookup"><span data-stu-id="c5068-136">Click Approve.</span></span>
-20. <span data-ttu-id="c5068-137">Wählen Sie „Ja” aus in „Möchten Sie auch den Arbeitsplan genehmigen?”.</span><span class="sxs-lookup"><span data-stu-id="c5068-137">Select Yes in the Do you also want to approve the route? field.</span></span>
-21. <span data-ttu-id="c5068-138">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="c5068-138">Click OK.</span></span>
-22. <span data-ttu-id="c5068-139">Klicken Sie im Aktivitätsbereich auf „Arbeitsplanversion”.</span><span class="sxs-lookup"><span data-stu-id="c5068-139">On the Action Pane, click Route version.</span></span>
-23. <span data-ttu-id="c5068-140">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="c5068-140">Click Activate.</span></span>
-24. <span data-ttu-id="c5068-141">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="c5068-141">Close the page.</span></span>
-25. <span data-ttu-id="c5068-142">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="c5068-142">Close the page.</span></span>
+## <a name="create-a-route-for-a-semi-finished-product"></a><span data-ttu-id="b2bfb-107">Arbeitsplan für ein halbfertiges Produkt erstellen</span><span class="sxs-lookup"><span data-stu-id="b2bfb-107">Create a route for a semi-finished product</span></span>
+1. <span data-ttu-id="b2bfb-108">Wechseln Sie zu "Produktinformationsverwaltung" > "Produkte" > "Freigegebene Produkte".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-108">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="b2bfb-109">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-109">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="b2bfb-110">Wählen Sie die Artikelnummer BOM_2 aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-110">Select the item number BOM_2.</span></span>  
+3. <span data-ttu-id="b2bfb-111">Klicken Sie im Aktivitätsbereich auf "Entwickler".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-111">On the Action Pane, click Engineer.</span></span>
+4. <span data-ttu-id="b2bfb-112">Klicken Sie auf "Arbeitsplan".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-112">Click Route.</span></span>
+5. <span data-ttu-id="b2bfb-113">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-113">Click New.</span></span>
+6. <span data-ttu-id="b2bfb-114">Klicken Sie auf Arbeitsplan und Arbeitsplanversion.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-114">Click Route and route version.</span></span>
+7. <span data-ttu-id="b2bfb-115">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-115">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="b2bfb-116">Geben Sie beispielsweise ROUTE_2 ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-116">For example, type ROUTE_2.</span></span>  
+8. <span data-ttu-id="b2bfb-117">Geben Sie im Feld "Standort" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-117">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="b2bfb-118">Geben Sie für dieses Beispiel „Standort 1” ein oder wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-118">For this example, enter or select Site 1.</span></span>  
+9. <span data-ttu-id="b2bfb-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-119">Click OK.</span></span>
+10. <span data-ttu-id="b2bfb-120">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-120">Click New.</span></span>
+11. <span data-ttu-id="b2bfb-121">Geben Sie im Feld 'Arbeitsgang' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-121">In the Operation field, enter or select a value.</span></span>
+    * <span data-ttu-id="b2bfb-122">Wählen Sie für dieses Beispiel „Zusammenstellung” aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-122">For this example, select Assembly.</span></span>  
+12. <span data-ttu-id="b2bfb-123">Geben Sie im Feld "Laufzeit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-123">In the Run time field, enter a number.</span></span>
+    * <span data-ttu-id="b2bfb-124">Geben Sie beispielsweise "1" ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-124">For example, type 1.</span></span> <span data-ttu-id="b2bfb-125">Ausführungszeiten sind oft Teil des Preises, der für einen Artikel berechnet wurde.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-125">Run times are often part of the price that is calculated for an item.</span></span>  
+13. <span data-ttu-id="b2bfb-126">Geben Sie im Feld "Arbeitsplangruppe" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-126">In the Route group field, enter or select a value.</span></span>
+    * <span data-ttu-id="b2bfb-127">Wählen Sie für dieses Beispiel „STD” aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-127">For this example, select Std.</span></span>  
+14. <span data-ttu-id="b2bfb-128">Klicken Sie auf die Registerkarte "Einstellungen".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-128">Click the Setup tab.</span></span>
+15. <span data-ttu-id="b2bfb-129">Geben Sie im Feld "Rüstkostenkategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-129">In the Setup category field, enter or select a value.</span></span>
+    * <span data-ttu-id="b2bfb-130">Wählen Sie für dieses Beispiel „Zusammenstellung” aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-130">For this example, select Assembly.</span></span>  
+16. <span data-ttu-id="b2bfb-131">Klicken Sie auf die Registerkarte 'Zeiten'.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-131">Click the Times tab.</span></span>
+17. <span data-ttu-id="b2bfb-132">Geben Sie im Feld „Rüstzeit” eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-132">In the Setup time field, enter a number.</span></span>
+    * <span data-ttu-id="b2bfb-133">Geben Sie für dieses Beispiel 1 ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-133">For this example, type 1.</span></span> <span data-ttu-id="b2bfb-134">Rüstzeiten sind oft Teil des Preises, der für einen Artikel berechnet wurde.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-134">Setup times are often part of the price that is calculated for an item.</span></span>  
+18. <span data-ttu-id="b2bfb-135">Klicken Sie im Aktivitätsbereich auf „Arbeitsplanversion”.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-135">On the Action Pane, click Route version.</span></span>
+19. <span data-ttu-id="b2bfb-136">Klicken Sie auf Genehmigen.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-136">Click Approve.</span></span>
+20. <span data-ttu-id="b2bfb-137">Wählen Sie „Ja” aus in „Möchten Sie auch den Arbeitsplan genehmigen?”.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-137">Select Yes in the Do you also want to approve the route? field.</span></span>
+21. <span data-ttu-id="b2bfb-138">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-138">Click OK.</span></span>
+22. <span data-ttu-id="b2bfb-139">Klicken Sie im Aktivitätsbereich auf „Arbeitsplanversion”.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-139">On the Action Pane, click Route version.</span></span>
+23. <span data-ttu-id="b2bfb-140">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-140">Click Activate.</span></span>
+24. <span data-ttu-id="b2bfb-141">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-141">Close the page.</span></span>
+25. <span data-ttu-id="b2bfb-142">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-142">Close the page.</span></span>
 
-## <a name="create-a-route-for-a-finished-product"></a><span data-ttu-id="c5068-143">Arbeitsplan für ein fertiges Produkt erstellen</span><span class="sxs-lookup"><span data-stu-id="c5068-143">Create a route for a finished product</span></span>
-1. <span data-ttu-id="c5068-144">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="c5068-144">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="c5068-145">Wählen Sie die Artikelnummer BOM_1 aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-145">Select the item number BOM_1.</span></span>  
-2. <span data-ttu-id="c5068-146">Klicken Sie im Aktivitätsbereich auf "Entwickler".</span><span class="sxs-lookup"><span data-stu-id="c5068-146">On the Action Pane, click Engineer.</span></span>
-3. <span data-ttu-id="c5068-147">Klicken Sie auf "Arbeitsplan".</span><span class="sxs-lookup"><span data-stu-id="c5068-147">Click Route.</span></span>
-4. <span data-ttu-id="c5068-148">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="c5068-148">Click New.</span></span>
-5. <span data-ttu-id="c5068-149">Klicken Sie auf Arbeitsplan und Arbeitsplanversion.</span><span class="sxs-lookup"><span data-stu-id="c5068-149">Click Route and route version.</span></span>
-6. <span data-ttu-id="c5068-150">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-150">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="c5068-151">Geben Sie für dieses Beispiel ROUTE_1 ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-151">For this example, type ROUTE_1.</span></span>  
-7. <span data-ttu-id="c5068-152">Geben Sie im Feld "Standort" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-152">In the Site field, enter or select a value.</span></span>
-    * <span data-ttu-id="c5068-153">Geben Sie für dieses Beispiel „Standort 1” ein oder wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-153">For this example, enter or select Site 1.</span></span>  
-8. <span data-ttu-id="c5068-154">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="c5068-154">Click OK.</span></span>
-9. <span data-ttu-id="c5068-155">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="c5068-155">Click New.</span></span>
-10. <span data-ttu-id="c5068-156">Geben Sie im Feld 'Arbeitsgang' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-156">In the Operation field, enter or select a value.</span></span>
-    * <span data-ttu-id="c5068-157">Wählen Sie für dieses Beispiel „Verpackung” aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-157">For this example, select Packing.</span></span>  
-11. <span data-ttu-id="c5068-158">Geben Sie im Feld "Laufzeit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-158">In the Run time field, enter a number.</span></span>
-    * <span data-ttu-id="c5068-159">Geben Sie für dieses Beispiel 1 ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-159">For this example, type 1.</span></span>  
-12. <span data-ttu-id="c5068-160">Geben Sie im Feld "Arbeitsplangruppe" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-160">In the Route group field, enter or select a value.</span></span>
-    * <span data-ttu-id="c5068-161">Wählen Sie für dieses Beispiel „STD” aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-161">For this example, select Std.</span></span>  
-13. <span data-ttu-id="c5068-162">Klicken Sie auf die Registerkarte "Einstellungen".</span><span class="sxs-lookup"><span data-stu-id="c5068-162">Click the Setup tab.</span></span>
-14. <span data-ttu-id="c5068-163">Geben Sie im Feld "Rüstkostenkategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-163">In the Setup category field, enter or select a value.</span></span>
-    * <span data-ttu-id="c5068-164">Wählen Sie für dieses Beispiel „Verpackung” aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-164">For this example, select Packing.</span></span>  
-15. <span data-ttu-id="c5068-165">Klicken Sie auf die Registerkarte 'Zeiten'.</span><span class="sxs-lookup"><span data-stu-id="c5068-165">Click the Times tab.</span></span>
-16. <span data-ttu-id="c5068-166">Geben Sie im Feld „Rüstzeit” eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-166">In the Setup time field, enter a number.</span></span>
-    * <span data-ttu-id="c5068-167">Geben Sie für dieses Beispiel 1 ein.</span><span class="sxs-lookup"><span data-stu-id="c5068-167">For this example, type 1.</span></span>  
-17. <span data-ttu-id="c5068-168">Klicken Sie im Aktivitätsbereich auf „Arbeitsplanversion”.</span><span class="sxs-lookup"><span data-stu-id="c5068-168">On the Action Pane, click Route version.</span></span>
-18. <span data-ttu-id="c5068-169">Klicken Sie auf Genehmigen.</span><span class="sxs-lookup"><span data-stu-id="c5068-169">Click Approve.</span></span>
-19. <span data-ttu-id="c5068-170">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="c5068-170">Click OK.</span></span>
-20. <span data-ttu-id="c5068-171">Klicken Sie im Aktivitätsbereich auf „Arbeitsplanversion”.</span><span class="sxs-lookup"><span data-stu-id="c5068-171">On the Action Pane, click Route version.</span></span>
-21. <span data-ttu-id="c5068-172">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="c5068-172">Click Activate.</span></span>
-22. <span data-ttu-id="c5068-173">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="c5068-173">Close the page.</span></span>
-23. <span data-ttu-id="c5068-174">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="c5068-174">Close the page.</span></span>
+## <a name="create-a-route-for-a-finished-product"></a><span data-ttu-id="b2bfb-143">Arbeitsplan für ein fertiges Produkt erstellen</span><span class="sxs-lookup"><span data-stu-id="b2bfb-143">Create a route for a finished product</span></span>
+1. <span data-ttu-id="b2bfb-144">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-144">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="b2bfb-145">Wählen Sie die Artikelnummer BOM_1 aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-145">Select the item number BOM_1.</span></span>  
+2. <span data-ttu-id="b2bfb-146">Klicken Sie im Aktivitätsbereich auf "Entwickler".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-146">On the Action Pane, click Engineer.</span></span>
+3. <span data-ttu-id="b2bfb-147">Klicken Sie auf "Arbeitsplan".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-147">Click Route.</span></span>
+4. <span data-ttu-id="b2bfb-148">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-148">Click New.</span></span>
+5. <span data-ttu-id="b2bfb-149">Klicken Sie auf Arbeitsplan und Arbeitsplanversion.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-149">Click Route and route version.</span></span>
+6. <span data-ttu-id="b2bfb-150">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-150">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="b2bfb-151">Geben Sie für dieses Beispiel ROUTE_1 ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-151">For this example, type ROUTE_1.</span></span>  
+7. <span data-ttu-id="b2bfb-152">Geben Sie im Feld "Standort" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-152">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="b2bfb-153">Geben Sie für dieses Beispiel „Standort 1” ein oder wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-153">For this example, enter or select Site 1.</span></span>  
+8. <span data-ttu-id="b2bfb-154">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-154">Click OK.</span></span>
+9. <span data-ttu-id="b2bfb-155">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-155">Click New.</span></span>
+10. <span data-ttu-id="b2bfb-156">Geben Sie im Feld 'Arbeitsgang' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-156">In the Operation field, enter or select a value.</span></span>
+    * <span data-ttu-id="b2bfb-157">Wählen Sie für dieses Beispiel „Verpackung” aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-157">For this example, select Packing.</span></span>  
+11. <span data-ttu-id="b2bfb-158">Geben Sie im Feld "Laufzeit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-158">In the Run time field, enter a number.</span></span>
+    * <span data-ttu-id="b2bfb-159">Geben Sie für dieses Beispiel 1 ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-159">For this example, type 1.</span></span>  
+12. <span data-ttu-id="b2bfb-160">Geben Sie im Feld "Arbeitsplangruppe" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-160">In the Route group field, enter or select a value.</span></span>
+    * <span data-ttu-id="b2bfb-161">Wählen Sie für dieses Beispiel „STD” aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-161">For this example, select Std.</span></span>  
+13. <span data-ttu-id="b2bfb-162">Klicken Sie auf die Registerkarte "Einstellungen".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-162">Click the Setup tab.</span></span>
+14. <span data-ttu-id="b2bfb-163">Geben Sie im Feld "Rüstkostenkategorie" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-163">In the Setup category field, enter or select a value.</span></span>
+    * <span data-ttu-id="b2bfb-164">Wählen Sie für dieses Beispiel „Verpackung” aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-164">For this example, select Packing.</span></span>  
+15. <span data-ttu-id="b2bfb-165">Klicken Sie auf die Registerkarte 'Zeiten'.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-165">Click the Times tab.</span></span>
+16. <span data-ttu-id="b2bfb-166">Geben Sie im Feld „Rüstzeit” eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-166">In the Setup time field, enter a number.</span></span>
+    * <span data-ttu-id="b2bfb-167">Geben Sie für dieses Beispiel 1 ein.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-167">For this example, type 1.</span></span>  
+17. <span data-ttu-id="b2bfb-168">Klicken Sie im Aktivitätsbereich auf „Arbeitsplanversion”.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-168">On the Action Pane, click Route version.</span></span>
+18. <span data-ttu-id="b2bfb-169">Klicken Sie auf Genehmigen.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-169">Click Approve.</span></span>
+19. <span data-ttu-id="b2bfb-170">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-170">Click OK.</span></span>
+20. <span data-ttu-id="b2bfb-171">Klicken Sie im Aktivitätsbereich auf „Arbeitsplanversion”.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-171">On the Action Pane, click Route version.</span></span>
+21. <span data-ttu-id="b2bfb-172">Klicken Sie auf Aktivieren.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-172">Click Activate.</span></span>
+22. <span data-ttu-id="b2bfb-173">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-173">Close the page.</span></span>
+23. <span data-ttu-id="b2bfb-174">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-174">Close the page.</span></span>
 
-## <a name="enable-automatic-consumption-of-setup-time"></a><span data-ttu-id="c5068-175">Automatischen Verbrauch der Rüstzeit aktivieren</span><span class="sxs-lookup"><span data-stu-id="c5068-175">Enable automatic consumption of setup time</span></span>
-1. <span data-ttu-id="c5068-176">Wechseln Sie zu „Produktionssteuerung” > „Einrichten”  >„Arbeitspläne” > „Arbeitsplangruppen”.</span><span class="sxs-lookup"><span data-stu-id="c5068-176">Go to Production control > Setup > Routes > Route groups.</span></span>
-2. <span data-ttu-id="c5068-177">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-177">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="c5068-178">Wählen Sie STD in der Liste aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-178">Select Std in the list.</span></span>  
-3. <span data-ttu-id="c5068-179">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="c5068-179">Click Edit.</span></span>
-4. <span data-ttu-id="c5068-180">Wählen Sie „Ja” im Feld „Rüstzeit” aus.</span><span class="sxs-lookup"><span data-stu-id="c5068-180">Select Yes in the Setup time field.</span></span>
-    * <span data-ttu-id="c5068-181">Rüstzeiten sind oft Teil des Preises, der für einen Artikel berechnet wurde.</span><span class="sxs-lookup"><span data-stu-id="c5068-181">Setup times are often part of the price that is calculated for an item.</span></span>  
-5. <span data-ttu-id="c5068-182">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="c5068-182">Click Save.</span></span>
-6. <span data-ttu-id="c5068-183">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="c5068-183">Close the page.</span></span>
-
+## <a name="enable-automatic-consumption-of-setup-time"></a><span data-ttu-id="b2bfb-175">Automatischen Verbrauch der Rüstzeit aktivieren</span><span class="sxs-lookup"><span data-stu-id="b2bfb-175">Enable automatic consumption of setup time</span></span>
+1. <span data-ttu-id="b2bfb-176">Wechseln Sie zu „Produktionssteuerung” > „Einrichten”  >„Arbeitspläne” > „Arbeitsplangruppen”.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-176">Go to Production control > Setup > Routes > Route groups.</span></span>
+2. <span data-ttu-id="b2bfb-177">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-177">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="b2bfb-178">Wählen Sie STD in der Liste aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-178">Select Std in the list.</span></span>  
+3. <span data-ttu-id="b2bfb-179">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-179">Click Edit.</span></span>
+4. <span data-ttu-id="b2bfb-180">Wählen Sie „Ja” im Feld „Rüstzeit” aus.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-180">Select Yes in the Setup time field.</span></span>
+    * <span data-ttu-id="b2bfb-181">Rüstzeiten sind oft Teil des Preises, der für einen Artikel berechnet wurde.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-181">Setup times are often part of the price that is calculated for an item.</span></span>  
+5. <span data-ttu-id="b2bfb-182">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="b2bfb-182">Click Save.</span></span>
+6. <span data-ttu-id="b2bfb-183">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b2bfb-183">Close the page.</span></span>
 

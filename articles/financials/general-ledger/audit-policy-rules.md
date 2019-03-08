@@ -1,13 +1,13 @@
 ---
-title: "Überwachungsrichtlinienregeln"
-description: "Mithilfe von Überwachungsrichtlinien kann zur Sicherheit überprüft werden, ob Spesenabrechnungen, Kreditorenrechnungen und Bestellungen den von Ihnen erstellten Richtlinienregeln entsprechen. Alle Regeln, die einer Überwachungsrichtlinie zugeordnet sind, werden nach einem von Ihnen angegeben Zeitplan im Stapelverarbeitungsmodus ausgeführt.  Jede Richtlinienregel ist eine Instanz eines Richtlinienregeltyps. Für jeden Richtlinienregeltyp kann jeweils nur eine Richtlinienregel aktiv sein."
+title: Überwachungsrichtlinienregeln
+description: Mithilfe von Überwachungsrichtlinien kann zur Sicherheit überprüft werden, ob Spesenabrechnungen, Kreditorenrechnungen und Bestellungen den von Ihnen erstellten Richtlinienregeln entsprechen. Alle Regeln, die einer Überwachungsrichtlinie zugeordnet sind, werden nach einem von Ihnen angegeben Zeitplan im Stapelverarbeitungsmodus ausgeführt.  Jede Richtlinienregel ist eine Instanz eines Richtlinienregeltyps. Für jeden Richtlinienregeltyp kann jeweils nur eine Richtlinienregel aktiv sein.
 author: ryansandness
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,24 +18,23 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 18b8a1649a26ebacc34b828ed25ec9646dd438a1
-ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310230"
 ---
-
-# <a name="audit-policy-rules"></a><span data-ttu-id="25fa4-106">Überwachungsrichtlinienregeln</span><span class="sxs-lookup"><span data-stu-id="25fa4-106">Audit policy rules</span></span>
+# <a name="audit-policy-rules"></a><span data-ttu-id="50883-106">Überwachungsrichtlinienregeln</span><span class="sxs-lookup"><span data-stu-id="50883-106">Audit policy rules</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="25fa4-107">Mithilfe von Überwachungsrichtlinien kann zur Sicherheit überprüft werden, ob Spesenabrechnungen, Kreditorenrechnungen und Bestellungen den von Ihnen erstellten Richtlinienregeln entsprechen.</span><span class="sxs-lookup"><span data-stu-id="25fa4-107">You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create.</span></span> <span data-ttu-id="25fa4-108">Alle Regeln, die einer Überwachungsrichtlinie zugeordnet sind, werden nach einem von Ihnen angegeben Zeitplan im Stapelverarbeitungsmodus ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="25fa4-108">All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.</span></span>  <span data-ttu-id="25fa4-109">Jede Richtlinienregel ist eine Instanz eines Richtlinienregeltyps.</span><span class="sxs-lookup"><span data-stu-id="25fa4-109">Each policy rule is an instance of a policy rule type.</span></span> <span data-ttu-id="25fa4-110">Für jeden Richtlinienregeltyp kann jeweils nur eine Richtlinienregel aktiv sein.</span><span class="sxs-lookup"><span data-stu-id="25fa4-110">For each policy rule type, only one policy rule can be active at a time.</span></span> 
+<span data-ttu-id="50883-107">Mithilfe von Überwachungsrichtlinien kann zur Sicherheit überprüft werden, ob Spesenabrechnungen, Kreditorenrechnungen und Bestellungen den von Ihnen erstellten Richtlinienregeln entsprechen.</span><span class="sxs-lookup"><span data-stu-id="50883-107">You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create.</span></span> <span data-ttu-id="50883-108">Alle Regeln, die einer Überwachungsrichtlinie zugeordnet sind, werden nach einem von Ihnen angegeben Zeitplan im Stapelverarbeitungsmodus ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="50883-108">All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.</span></span>  <span data-ttu-id="50883-109">Jede Richtlinienregel ist eine Instanz eines Richtlinienregeltyps.</span><span class="sxs-lookup"><span data-stu-id="50883-109">Each policy rule is an instance of a policy rule type.</span></span> <span data-ttu-id="50883-110">Für jeden Richtlinienregeltyp kann jeweils nur eine Richtlinienregel aktiv sein.</span><span class="sxs-lookup"><span data-stu-id="50883-110">For each policy rule type, only one policy rule can be active at a time.</span></span> 
 
-<a name="queries-and-query-types"></a><span data-ttu-id="25fa4-111">Abfragen und Abfragetypen</span><span class="sxs-lookup"><span data-stu-id="25fa4-111">Queries and query types</span></span>
+<a name="queries-and-query-types"></a><span data-ttu-id="50883-111">Abfragen und Abfragetypen</span><span class="sxs-lookup"><span data-stu-id="50883-111">Queries and query types</span></span>
 -----------------------
 
-<span data-ttu-id="25fa4-112">Beim Erstellen einer Überwachungsrichtlinie wird zuerst ein Richtlinienregeltyp ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="25fa4-112">When you create an audit policy rule, you first select a policy rule type.</span></span> <span data-ttu-id="25fa4-113">Mit dem Richtlinienregeltyp wird die Entwicklungsumgebungsabfrage angegeben, die als Ausgangspunkt für die Erstellung der Richtlinienregel verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="25fa4-113">The policy rule type specifies the Application Object Tree (AOT) query to use as the starting point for creating the policy rule.</span></span> <span data-ttu-id="25fa4-114">Zudem wird der Abfragetyp für die Richtlinienregel angegeben.</span><span class="sxs-lookup"><span data-stu-id="25fa4-114">It also specifies the query type to use for the policy rule.</span></span> <span data-ttu-id="25fa4-115">Mit der Abfrage wird das Quelldokument bestimmt, das die Richtlinienregel überprüft.</span><span class="sxs-lookup"><span data-stu-id="25fa4-115">The query determines the source document that the policy rule evaluates.</span></span> <span data-ttu-id="25fa4-116">Außerdem werden die Felder im Quelldokument angegeben, das die juristische Person identifiziert, sowie das Feld mit dem Datum, das bei der Auswahl der zu überwachenden Dokumente verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="25fa4-116">It also specifies the fields in the source document that identify both the legal entity and the date to use when documents are selected for audit.</span></span> <span data-ttu-id="25fa4-117">Der Abfragetyp steuert die Standardfelder auf der Abfrageseite und der Seite "Überwachungsrichtlinienregel".</span><span class="sxs-lookup"><span data-stu-id="25fa4-117">The query type controls the default fields in the query page and in the Audit policy rule page.</span></span> <span data-ttu-id="25fa4-118">In der folgenden Tabelle werden die für Überwachungsrichtlinien verfügbaren Abfragetypen aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="25fa4-118">The following table shows the query types that are available for audit policy rules.</span></span>
+<span data-ttu-id="50883-112">Beim Erstellen einer Überwachungsrichtlinie wird zuerst ein Richtlinienregeltyp ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="50883-112">When you create an audit policy rule, you first select a policy rule type.</span></span> <span data-ttu-id="50883-113">Mit dem Richtlinienregeltyp wird die Entwicklungsumgebungsabfrage angegeben, die als Ausgangspunkt für die Erstellung der Richtlinienregel verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="50883-113">The policy rule type specifies the Application Object Tree (AOT) query to use as the starting point for creating the policy rule.</span></span> <span data-ttu-id="50883-114">Zudem wird der Abfragetyp für die Richtlinienregel angegeben.</span><span class="sxs-lookup"><span data-stu-id="50883-114">It also specifies the query type to use for the policy rule.</span></span> <span data-ttu-id="50883-115">Mit der Abfrage wird das Quelldokument bestimmt, das die Richtlinienregel überprüft.</span><span class="sxs-lookup"><span data-stu-id="50883-115">The query determines the source document that the policy rule evaluates.</span></span> <span data-ttu-id="50883-116">Außerdem werden die Felder im Quelldokument angegeben, das die juristische Person identifiziert, sowie das Feld mit dem Datum, das bei der Auswahl der zu überwachenden Dokumente verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="50883-116">It also specifies the fields in the source document that identify both the legal entity and the date to use when documents are selected for audit.</span></span> <span data-ttu-id="50883-117">Der Abfragetyp steuert die Standardfelder auf der Abfrageseite und der Seite "Überwachungsrichtlinienregel".</span><span class="sxs-lookup"><span data-stu-id="50883-117">The query type controls the default fields in the query page and in the Audit policy rule page.</span></span> <span data-ttu-id="50883-118">In der folgenden Tabelle werden die für Überwachungsrichtlinien verfügbaren Abfragetypen aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="50883-118">The following table shows the query types that are available for audit policy rules.</span></span>
 
 <table>
 <colgroup>
@@ -45,62 +44,61 @@ ms.lasthandoff: 08/07/2018
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="25fa4-119">Abfragetyp</span><span class="sxs-lookup"><span data-stu-id="25fa4-119">Query type</span></span></th>
-<th><span data-ttu-id="25fa4-120">Verwendungszweck</span><span class="sxs-lookup"><span data-stu-id="25fa4-120">Purpose</span></span></th>
-<th><span data-ttu-id="25fa4-121">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="25fa4-121">More information</span></span></th>
+<th><span data-ttu-id="50883-119">Abfragetyp</span><span class="sxs-lookup"><span data-stu-id="50883-119">Query type</span></span></th>
+<th><span data-ttu-id="50883-120">Verwendungszweck</span><span class="sxs-lookup"><span data-stu-id="50883-120">Purpose</span></span></th>
+<th><span data-ttu-id="50883-121">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="50883-121">More information</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="25fa4-122">Bedingt</span><span class="sxs-lookup"><span data-stu-id="25fa4-122">Conditional</span></span></td>
-<td><span data-ttu-id="25fa4-123">Überprüfen der Attribute des Quelldokuments auf angegebene Werte.</span><span class="sxs-lookup"><span data-stu-id="25fa4-123">Evaluate source document attributes against specified values.</span></span></td>
+<td><span data-ttu-id="50883-122">Bedingt</span><span class="sxs-lookup"><span data-stu-id="50883-122">Conditional</span></span></td>
+<td><span data-ttu-id="50883-123">Überprüfen der Attribute des Quelldokuments auf angegebene Werte.</span><span class="sxs-lookup"><span data-stu-id="50883-123">Evaluate source document attributes against specified values.</span></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="25fa4-124">Zusammenführen</span><span class="sxs-lookup"><span data-stu-id="25fa4-124">Aggregate</span></span></td>
-<td><span data-ttu-id="25fa4-125">Überprüfen mehrerer Quelldokumente oder Quelldokumentpositionen auf eine Richtlinienregel durch Aggregieren numerischer Werte.</span><span class="sxs-lookup"><span data-stu-id="25fa4-125">Evaluate multiple source documents or source document lines against a policy rule by aggregating numeric values.</span></span></td>
+<td><span data-ttu-id="50883-124">Zusammenführen</span><span class="sxs-lookup"><span data-stu-id="50883-124">Aggregate</span></span></td>
+<td><span data-ttu-id="50883-125">Überprüfen mehrerer Quelldokumente oder Quelldokumentpositionen auf eine Richtlinienregel durch Aggregieren numerischer Werte.</span><span class="sxs-lookup"><span data-stu-id="50883-125">Evaluate multiple source documents or source document lines against a policy rule by aggregating numeric values.</span></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="25fa4-126">Musteraufnahme</span><span class="sxs-lookup"><span data-stu-id="25fa4-126">Sampling</span></span></td>
-<td><span data-ttu-id="25fa4-127">Zufällige Auswahl eines angegebenen Prozentsatzes an Quelldokumenten zur Überprüfung auf Richtlinienverletzungen.</span><span class="sxs-lookup"><span data-stu-id="25fa4-127">Randomly select a specified percentage of the source documents to evaluate for policy violations.</span></span></td>
-<td><span data-ttu-id="25fa4-128">Wenn Sie diese Option auswählen, verwenden Sie die Seite "Überwachungsrichtlinienregel", mit der Sie den Prozentsatz der Dokumente für die zufällige Auswahl zur Überwachung angeben können.</span><span class="sxs-lookup"><span data-stu-id="25fa4-128">When you select this option, use the Audit policy rule page to specify the percentage of documents to randomly select for audit.</span></span></td>
+<td><span data-ttu-id="50883-126">Musteraufnahme</span><span class="sxs-lookup"><span data-stu-id="50883-126">Sampling</span></span></td>
+<td><span data-ttu-id="50883-127">Zufällige Auswahl eines angegebenen Prozentsatzes an Quelldokumenten zur Überprüfung auf Richtlinienverletzungen.</span><span class="sxs-lookup"><span data-stu-id="50883-127">Randomly select a specified percentage of the source documents to evaluate for policy violations.</span></span></td>
+<td><span data-ttu-id="50883-128">Wenn Sie diese Option auswählen, verwenden Sie die Seite "Überwachungsrichtlinienregel", mit der Sie den Prozentsatz der Dokumente für die zufällige Auswahl zur Überwachung angeben können.</span><span class="sxs-lookup"><span data-stu-id="50883-128">When you select this option, use the Audit policy rule page to specify the percentage of documents to randomly select for audit.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="25fa4-129">Duplizieren</span><span class="sxs-lookup"><span data-stu-id="25fa4-129">Duplicate</span></span></td>
-<td><span data-ttu-id="25fa4-130">Überprüfen der Quelldokumente auf doppelte Einträge in angegebenen Feldern.</span><span class="sxs-lookup"><span data-stu-id="25fa4-130">Evaluate source documents to determine whether they contain duplicate entries in specified fields.</span></span></td>
-<td><span data-ttu-id="25fa4-131">Wenn Sie diese Option auswählen, verwenden Sie die Seite "Überwachungsrichtlinienregel", mit der Sie die Anzahl der Tage angeben können, die dem Startdatum des Datumsbereichs für die Dokumentauswahl bei der Überprüfung auf doppelte Einträge hinzugefügt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="25fa4-131">When you select this option, use the Audit policy rule page to specify the number of days to add to the start of the document selection date range when documents are evaluated for duplicate entries.</span></span></td>
+<td><span data-ttu-id="50883-129">Duplizieren</span><span class="sxs-lookup"><span data-stu-id="50883-129">Duplicate</span></span></td>
+<td><span data-ttu-id="50883-130">Überprüfen der Quelldokumente auf doppelte Einträge in angegebenen Feldern.</span><span class="sxs-lookup"><span data-stu-id="50883-130">Evaluate source documents to determine whether they contain duplicate entries in specified fields.</span></span></td>
+<td><span data-ttu-id="50883-131">Wenn Sie diese Option auswählen, verwenden Sie die Seite "Überwachungsrichtlinienregel", mit der Sie die Anzahl der Tage angeben können, die dem Startdatum des Datumsbereichs für die Dokumentauswahl bei der Überprüfung auf doppelte Einträge hinzugefügt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="50883-131">When you select this option, use the Audit policy rule page to specify the number of days to add to the start of the document selection date range when documents are evaluated for duplicate entries.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="25fa4-132">Listensuche</span><span class="sxs-lookup"><span data-stu-id="25fa4-132">List search</span></span></td>
-<td><span data-ttu-id="25fa4-133">Überprüfen der Quelldokumente auf bestimmte Entitäten.</span><span class="sxs-lookup"><span data-stu-id="25fa4-133">Evaluate source documents for specific entities.</span></span></td>
-<td><span data-ttu-id="25fa4-134">Das überwachte Dokument wird durch das Stammdokument der Abfrage definiert.</span><span class="sxs-lookup"><span data-stu-id="25fa4-134">The root document of the query defines the document that is being audited.</span></span> <span data-ttu-id="25fa4-135">Die Abfrage muss eine Listenabfrage sein, die eine Referenz zur dirpartytable-Tabelle enthält.</span><span class="sxs-lookup"><span data-stu-id="25fa4-135">The query must be a list query that includes a reference to the dirpartytable table.</span></span> <span data-ttu-id="25fa4-136">Diese Option kann nur mit den folgenden Entwicklungsumgebungsabfragen verwendet werden:</span><span class="sxs-lookup"><span data-stu-id="25fa4-136">This option can be used only with the following AOT queries:</span></span>
+<td><span data-ttu-id="50883-132">Listensuche</span><span class="sxs-lookup"><span data-stu-id="50883-132">List search</span></span></td>
+<td><span data-ttu-id="50883-133">Überprüfen der Quelldokumente auf bestimmte Entitäten.</span><span class="sxs-lookup"><span data-stu-id="50883-133">Evaluate source documents for specific entities.</span></span></td>
+<td><span data-ttu-id="50883-134">Das überwachte Dokument wird durch das Stammdokument der Abfrage definiert.</span><span class="sxs-lookup"><span data-stu-id="50883-134">The root document of the query defines the document that is being audited.</span></span> <span data-ttu-id="50883-135">Die Abfrage muss eine Listenabfrage sein, die eine Referenz zur dirpartytable-Tabelle enthält.</span><span class="sxs-lookup"><span data-stu-id="50883-135">The query must be a list query that includes a reference to the dirpartytable table.</span></span> <span data-ttu-id="50883-136">Diese Option kann nur mit den folgenden Entwicklungsumgebungsabfragen verwendet werden:</span><span class="sxs-lookup"><span data-stu-id="50883-136">This option can be used only with the following AOT queries:</span></span>
 <ul>
-<li><span data-ttu-id="25fa4-137"><span class="ui">AuditPolicyExpenseList</span> (Spesenabrechnung - überwachte Mitarbeiter)</span><span class="sxs-lookup"><span data-stu-id="25fa4-137"><span class="ui">AuditPolicyExpenseList</span> (Expense report monitored employees)</span></span></li>
-<li><span data-ttu-id="25fa4-138"><span class="ui">AuditPolicyPurchList</span> (Bestellung - überwachte Kreditoren)</span><span class="sxs-lookup"><span data-stu-id="25fa4-138"><span class="ui">AuditPolicyPurchList</span> (Purchase order monitored vendors)</span></span></li>
-<li><span data-ttu-id="25fa4-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Kreditorenrechnung - überwachte Kreditoren)</span><span class="sxs-lookup"><span data-stu-id="25fa4-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Vendor invoice monitored vendors)</span></span></li>
+<li><span data-ttu-id="50883-137"><span class="ui">AuditPolicyExpenseList</span> (Spesenabrechnung - überwachte Mitarbeiter)</span><span class="sxs-lookup"><span data-stu-id="50883-137"><span class="ui">AuditPolicyExpenseList</span> (Expense report monitored employees)</span></span></li>
+<li><span data-ttu-id="50883-138"><span class="ui">AuditPolicyPurchList</span> (Bestellung - überwachte Kreditoren)</span><span class="sxs-lookup"><span data-stu-id="50883-138"><span class="ui">AuditPolicyPurchList</span> (Purchase order monitored vendors)</span></span></li>
+<li><span data-ttu-id="50883-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Kreditorenrechnung - überwachte Kreditoren)</span><span class="sxs-lookup"><span data-stu-id="50883-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Vendor invoice monitored vendors)</span></span></li>
 </ul>
-<span data-ttu-id="25fa4-140">Geben Sie bei Auswahl dieser Option die überwachten Entitäten auf der Seite "Überwachungsrichtlinienregel" an.</span><span class="sxs-lookup"><span data-stu-id="25fa4-140">When you select this option, specify the monitored entities in the Audit policy rule page.</span></span></td>
+<span data-ttu-id="50883-140">Geben Sie bei Auswahl dieser Option die überwachten Entitäten auf der Seite "Überwachungsrichtlinienregel" an.</span><span class="sxs-lookup"><span data-stu-id="50883-140">When you select this option, specify the monitored entities in the Audit policy rule page.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="25fa4-141">Schlüsselwortsuche</span><span class="sxs-lookup"><span data-stu-id="25fa4-141">Keyword search</span></span></td>
-<td><span data-ttu-id="25fa4-142">Überprüfen von Quelldokumenten auf bestimmte Wörter.</span><span class="sxs-lookup"><span data-stu-id="25fa4-142">Evaluate source documents to determine whether they contain certain words.</span></span></td>
-<td><span data-ttu-id="25fa4-143">Geben Sie bei Auswahl dieser Option die zu suchenden Wörter auf der Seite "Überwachungsrichtlinienregel" ein.</span><span class="sxs-lookup"><span data-stu-id="25fa4-143">When you select this option, enter the words to look for in the Audit policy rule page.</span></span> <span data-ttu-id="25fa4-144">Die Seite "Überwachungsrichtlinienregel" enthält auch Optionen, mit denen Sie die Tabellen und Felder angeben können, die auf die eingegebenen Wörter überprüft werden sollen.</span><span class="sxs-lookup"><span data-stu-id="25fa4-144">The Audit policy rule page also includes options that let you specify the tables and fields to evaluate for the words you entered.</span></span></td>
+<td><span data-ttu-id="50883-141">Schlüsselwortsuche</span><span class="sxs-lookup"><span data-stu-id="50883-141">Keyword search</span></span></td>
+<td><span data-ttu-id="50883-142">Überprüfen von Quelldokumenten auf bestimmte Wörter.</span><span class="sxs-lookup"><span data-stu-id="50883-142">Evaluate source documents to determine whether they contain certain words.</span></span></td>
+<td><span data-ttu-id="50883-143">Geben Sie bei Auswahl dieser Option die zu suchenden Wörter auf der Seite "Überwachungsrichtlinienregel" ein.</span><span class="sxs-lookup"><span data-stu-id="50883-143">When you select this option, enter the words to look for in the Audit policy rule page.</span></span> <span data-ttu-id="50883-144">Die Seite "Überwachungsrichtlinienregel" enthält auch Optionen, mit denen Sie die Tabellen und Felder angeben können, die auf die eingegebenen Wörter überprüft werden sollen.</span><span class="sxs-lookup"><span data-stu-id="50883-144">The Audit policy rule page also includes options that let you specify the tables and fields to evaluate for the words you entered.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="common-parameters"></a><span data-ttu-id="25fa4-145">Allgemeine Parameter</span><span class="sxs-lookup"><span data-stu-id="25fa4-145">Common parameters</span></span>
-<span data-ttu-id="25fa4-146">Alle Richtlinienregeln für eine bestimmte Überwachungsrichtlinie besitzen dieselben Stapelverarbeitungsparameter und denselben Datumsbereich für die Dokumentauswahl.</span><span class="sxs-lookup"><span data-stu-id="25fa4-146">All of the policy rules for a particular audit policy share the same batch parameters and the same document selection date range.</span></span> <span data-ttu-id="25fa4-147">Diese Parameter werden auf der Seite "Zusätzliche Optionen" für die Richtlinie angegeben.</span><span class="sxs-lookup"><span data-stu-id="25fa4-147">These parameters are specified for the policy in the Additional options page.</span></span>
+## <a name="common-parameters"></a><span data-ttu-id="50883-145">Allgemeine Parameter</span><span class="sxs-lookup"><span data-stu-id="50883-145">Common parameters</span></span>
+<span data-ttu-id="50883-146">Alle Richtlinienregeln für eine bestimmte Überwachungsrichtlinie besitzen dieselben Stapelverarbeitungsparameter und denselben Datumsbereich für die Dokumentauswahl.</span><span class="sxs-lookup"><span data-stu-id="50883-146">All of the policy rules for a particular audit policy share the same batch parameters and the same document selection date range.</span></span> <span data-ttu-id="50883-147">Diese Parameter werden auf der Seite "Zusätzliche Optionen" für die Richtlinie angegeben.</span><span class="sxs-lookup"><span data-stu-id="50883-147">These parameters are specified for the policy in the Additional options page.</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="25fa4-148">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="25fa4-148">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="50883-148">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="50883-148">Additional resources</span></span>
 --------
 
-<span data-ttu-id="25fa4-149">[Überwachungsrichtlinienverletzungen und - anfragen](audit-policy-violations-cases.md)
-[Definieren Sie Überwachungsrichtlinien für Quelldokumente](tasks/define-audit-policies-source-documents.md)</span><span class="sxs-lookup"><span data-stu-id="25fa4-149">[Audit policy violations and cases](audit-policy-violations-cases.md)
+<span data-ttu-id="50883-149">[Überwachungsrichtlinienverletzungen und - anfragen](audit-policy-violations-cases.md)
+[Definieren Sie Überwachungsrichtlinien für Quelldokumente](tasks/define-audit-policies-source-documents.md)</span><span class="sxs-lookup"><span data-stu-id="50883-149">[Audit policy violations and cases](audit-policy-violations-cases.md)
 [Define audit policies for source documents](tasks/define-audit-policies-source-documents.md)</span></span>
-
 
 
