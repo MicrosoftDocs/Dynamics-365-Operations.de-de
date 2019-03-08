@@ -1,13 +1,13 @@
 ---
 title: Synchronisieren von Projektvorkalkulationen direkt aus Project Service Automation mit Finance and Operations
-description: "Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Projektstundenvorkalkulationen und Projektausgabenvorkalkulationen direkt von Microsoft Dynamics 365 for Project Service Automation mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren."
+description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Projektstundenschätzungen und Projektausgabenvorkalkulationen direkt aus Microsoft Dynamics 365 for Project Service Automation mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 21338b889e0377dbfd5adfd461ea81b39a75baf8
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353953"
 ---
 # <a name="synchronize-project-estimates-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronisieren von Projektvorkalkulationen direkt aus Project Service Automation mit Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Projektstundenschätzungen und Projektausgaben direkt von Microsoft Dynamics 365 for Project Service Automation zu Dynamics 365 for Finance and Operations zu schätzen.
+Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Projektstundenschätzungen und Projektausgabenvorkalkulationen direkt aus Microsoft Dynamics 365 for Project Service Automation mit Dynamics 365 for Finance and Operations zu synchronisieren.
 
 > [!NOTE]
-> - Projektaufgabenintegration, Ausgabentransaktionskategorien, Stundenvorkalkulationen, Ausgabenvorkalkulationen und Funktionalitätssperren sind in Microsoft Dynamics 365 for Finance and Operations, Version 8.0, verfügbar.
-> - Integration von Ist-Werten ist in Microsoft Dynamics 365 for Finance and Operations, Version 8.0.1 oder höher, verfügbar.
-> - Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.0 verwenden, nachdem Sie KB 4132657 und 4132660 KB installiert haben, sind Sie in der Lage, die Vorlagen zu verwenden, um Projektaufgaben, Ausgabentransaktionskategorien, geschätzte Stunden, geschätzte Ausgaben und Ist-Werte zu integrieren und die Funktionalitätssperre zu konfigurieren. Wenn Sie die Buchhaltungsverteilungen zurücksetzen müssen, wird empfohlen, dass Sie auch 4131710 KB einrichten.
+> - Projektaufgaben-Integration, Ausgabenbuchungskategorien, Stundenschätzungen, Ausgabenenschätzungen und Funktionenssperre sind in Microsoft Dynamics 365 for Finance and Operations, Version 8.0 verfügbar.
+> - Integration von Ist-Werten ist in Microsoft Dynamics 365 for Finance and Operations, Version 8.0.1 oder höher verfügbar.
+> - Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 verwenden und KB 4132657 und 4132660 KB einrichten, sind Sie in der Lage, die Vorlagen zu verwenden, um Projektaufgaben, Ausgabentransaktionskategorien, geschätzte Stunden, geschätzte Ausgaben und aktuelle Kosten zu integrieren und die Funktionalitätssperre zu konfigurieren. Wenn Sie die Buchhaltungsverteilungen zurücksetzen müssen, wird empfohlen, dass Sie auch 4131710 KB einrichten.
 
 ## <a name="data-flow-for-project-service-automation-to-finance-and-operations"></a>Datenfluss für Project Service Automation zu Finance and Operations
 
@@ -47,7 +47,7 @@ Die folgende Abbildung zeigt, wie Daten als Teil der Integration zwischen Projec
 
 ### <a name="template-and-tasks"></a>Vorlage und Aufgaben
 
-Wenn Sie auf die verfügbaren Vorlagen im Microsoft PowerApps Admin Center zugreifen möchten, wählen Sie **Projekte** aus, und wählen Sie dann in der oberen rechten Ecke **Neues Projekt** aus, um die öffentlichen Vorlagen auszuwählen.
+Wenn Sie auf die verfügbaren Vorlagen im Microsoft PowerApps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
 
 Die folgenden Vorlagen und zugrunde liegenden Aufgaben werden verwendet, um Projektausgabenkategorien von Finance and Operations zu Project Service Automation zu synchronisieren:
 
@@ -171,4 +171,3 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenaufgabenzuordnun
 [![Vorlagenzuordnung](./media/ExpenseEstimateTransactionRelationshipsMapping.jpg)](./media/ExpenseEstimateTransactionRelationshipsMapping.jpg)
 
 [![Vorlagenzuordnung](./media/ExpenseEstimatesMapping.jpg)](./media/ExpenseEstimatesMapping.jpg)
-

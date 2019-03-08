@@ -1,13 +1,13 @@
---- 
+---
 title: Arbeitskraftinformationen eingeben
-description: "Nachdem ein Personalbeschaffungsmitarbeiter ein Masseneinstellungsprojekt erstellt und die Positionen generiert hat, besteht der nächste Schritt darin, die Arbeitskraftinformationen für die Personen einzugeben, die eingestellt werden."
+description: Nachdem ein Personalbeschaffungsmitarbeiter ein Masseneinstellungsprojekt erstellt und die Positionen generiert hat, besteht der nächste Schritt darin, die Arbeitskraftinformationen für die Personen einzugeben, die eingestellt werden.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMMassHireProject, HRMMassHireLine
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0d850f271a3add191fcdc8ff5624bebbc6c6327f
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339555"
 ---
 # <a name="enter-worker-information"></a>Arbeitskraftinformationen eingeben
 
@@ -44,5 +44,4 @@ Nachdem ein Personalbeschaffungsmitarbeiter ein Masseneinstellungsprojekt erstel
 7. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 8. Heben Sie in der Liste die Markierung der ausgewählten Zeile auf.
     * Wählen Sie die nächste Projektposition aus und setzen Sie die Eingabe der Arbeitskraftinformationen für jede Person fort, die Sie einstellen.  
-
 

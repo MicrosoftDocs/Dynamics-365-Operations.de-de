@@ -1,13 +1,13 @@
 ---
-title: "Kontosalden für das Hauptbuch"
-description: "In diesem Artikel werden zwei Möglichkeiten beschrieben, Hauptbuchkontosalden anzuzeigen: die Zwischenbilanzlistenseite und die Finanzberichte. Er erläutert auch, wie Dimensionssatzsalden aktualisiert werden."
+title: Kontosalden für das Hauptbuch
+description: 'In diesem Artikel werden zwei Möglichkeiten beschrieben, Hauptbuchkontosalden anzuzeigen: die Zwischenbilanzlistenseite und die Finanzberichte. Er erläutert auch, wie Dimensionssatzsalden aktualisiert werden.'
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a505610e94daeb73abef37a88f6c506a6bd7bc30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0ea3cf6887d11fbf9adf745fef691124c88527c6
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354850"
 ---
-
 # <a name="general-ledger-account-balances"></a>Kontosalden für das Hauptbuch
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Wenn ein Benutzer die Parameter ändert, werden die Salden aktualisiert. Benutze
 Benutzer können Details für die Salden und somit die Transaktionen anzeigen, die den Saldo bilden.    
 
 Weitere Informationen hierzu finden Sie unter [Finanzberichte anzeigen](view-financial-reports.md).
-
 
 
 

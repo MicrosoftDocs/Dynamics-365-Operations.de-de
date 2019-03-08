@@ -1,13 +1,13 @@
---- 
+---
 title: Einrichten der vorzeitigen Abschreibung
 description: Die folgende Prozedur zeigt, wie ein Sonderabschreibungsbetrag erstellt wird und es einem Anlagenbuch zuordnet wird.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6bbd6b78d05fcc9d95f6e6409db2619a210ad760
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e6ebb13084626b477b6e0b24acdc09e2c0d3d6d
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339210"
 ---
 # <a name="set-up-bonus-depreciation"></a>Einrichten der vorzeitigen Abschreibung
 
@@ -48,5 +48,4 @@ Die folgende Prozedur zeigt, wie ein Sonderabschreibungsbetrag erstellt wird und
 7. Geben Sie im Feld "Sonderabschreibung" einen Wert ein oder wählen Sie einen aus.
     * Der Prozentsatz oder Betrag wird standardmäßig aus der Sonderabschreibungseinstellung übernommen.  
 8. Geben Sie im Feld "Priorität" eine Zahl ein.
-
 

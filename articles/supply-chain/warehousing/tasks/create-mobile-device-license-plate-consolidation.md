@@ -1,13 +1,13 @@
---- 
-title: "Menüoption für ein mobiles Gerät für die Ladungsträger-Konsolidierung erstellen"
-description: "Diese Verfahren zeigt, wie Sie eine Menüoption des mobilen Geräts für Ladungsträgerkonsolidierungsarbeit erstellen."
+---
+title: Menüoption für ein mobiles Gerät für die Ladungsträger-Konsolidierung erstellen
+description: Diese Verfahren zeigt, wie Sie eine Menüoption des mobilen Geräts für Ladungsträgerkonsolidierungsarbeit erstellen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: shylaw
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bfe07426e9ff11c60c5f703b810ba09d6c863399
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7b8d20561ff092bd64c17c5d9335e9f54a1d191b
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343649"
 ---
 # <a name="create-a-mobile-device-menu-item-for-license-plate-consolidation"></a>Menüoption für ein mobiles Gerät für die Ladungsträger-Konsolidierung erstellen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Verfahren zeigt, wie Sie eine Menüoption des mobilen Geräts für Ladungsträgerkonsolidierungsarbeit erstellen. Dies ermöglicht Lagerarbeiteren das Konsolidieren von Artikeln auf Ladungsträgern mit Artikeln auf einem anderen Ladungsträger innerhalb desselben Standorts. Sie können dies beispielsweise nutzen, wenn aufeinander folgende Stagingschritte bei beiden Arbeitsaufträgen identisch waren, damit die Arbeit für den zusammengeführten Artikel nur einmal ausgeführt werden muss. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Diese Aufgabe wird normalerweise von einem Lagerortleiter ausgeführt. Diese Prozedur ist für eine Funktion gedacht, die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
+Diese Verfahren zeigt, wie Sie eine Menüoption des mobilen Geräts für Ladungsträgerkonsolidierungsarbeit erstellen. Dies ermöglicht Lagerarbeiteren das Konsolidieren von Artikeln auf Ladungsträgern mit Artikeln auf einem anderen Ladungsträger innerhalb desselben Standorts. Sie können dies beispielsweise nutzen, wenn aufeinander folgende Stagingschritte bei beiden Arbeitsaufträgen identisch waren, damit die Arbeit für den zusammengeführten Artikel nur einmal ausgeführt werden muss. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Diese Aufgabe wird normalerweise von einem Lagerortleiter ausgeführt. Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
 1. Wechseln Sie zu "Lagerortverwaltung" > "Einstellungen" > "Mobiles Gerät" > "Menüoptionen für mobiles Gerät".
 2. Klicken Sie auf "Neu".
@@ -36,5 +36,4 @@ Diese Verfahren zeigt, wie Sie eine Menüoption des mobilen Geräts für Ladungs
 4. Geben Sie im Feld "Titel" einen Wert ein.
 5. Wählen Sie im Feld "Modus" "Indirekt"aus.
 6. Wählen Sie im Feld "Aktivitätscode" "Kennzeichen konsolidieren" aus.
-
 

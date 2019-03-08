@@ -1,13 +1,13 @@
 ---
 title: Rechnungsabgleich und Intercompany-Bestellungen
-description: "Die einkaufende juristische Person, die in eine Buchung des Intercompany-Handels einbezogen ist, kann auch so eingerichtet werden, dass der Kreditorenrechnungsabgleich verwendet wird. In diesem Fall müssen sowohl die Buchungsanforderungen für den Intercompany-Handel und der Kreditorenrechnungsabgleich erfüllt sein, bevor Intercompany-Kreditorenrechnungen gebucht werden können."
+description: Die einkaufende juristische Person, die in eine Buchung des Intercompany-Handels einbezogen ist, kann auch so eingerichtet werden, dass der Kreditorenrechnungsabgleich verwendet wird. In diesem Fall müssen sowohl die Buchungsanforderungen für den Intercompany-Handel und der Kreditorenrechnungsabgleich erfüllt sein, bevor Intercompany-Kreditorenrechnungen gebucht werden können.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 68b586f8afe7557bf6edee3eca0261d1e9cac0f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357564"
 ---
-
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Rechnungsabgleich und Intercompany-Bestellungen
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Sie führen beispielsweise die folgenden Schritte durch.
 2.  In Fabrikam Sales nehmen Sie eine Rechnungsaktualisierung für ICSO999 vor. Die Buchung schlägt fehl, da der Artikel nicht vorrätig ist und noch nicht eingegangen ist. Daher können die Finanzdaten nicht aktualisiert werden.
 3.  Sie erfassen den Eingang des Artikels und buchen in Fabrikam Sales einen Lieferschein für ICSO999. Ein Produktzugang für ICPO333 wird automatisch in Fabrikam Purchase gebucht. Die eingegangene Menge des Artikels "B-R14" wird in Fabrikam Purchase zu "100" geändert.
 4.  In Fabrikam Sales nehmen Sie eine Rechnungsaktualisierung für ICSO999 vor. Die Buchung ist in beiden juristischen Personen erfolgreich. Die erworbene Menge des Artikels "B-R14" wird in Fabrikam Purchase zu "100" geändert.
-
 
 
 

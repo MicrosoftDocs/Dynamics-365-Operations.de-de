@@ -1,13 +1,13 @@
---- 
+---
 title: Modellzuordnungskonfigurationen der elektronischen Berichterstellung (EB) erstellen
-description: "Verwenden Sie diese Prozedur, um eine neue Modellzuordnungskonfiguration für elektronische Berichterstellung (EB) zu entwerfen und integrierte EB-Funktionen für effiziente Aggregationsberechnungen zu verwenden."
+description: Verwenden Sie diese Prozedur, um eine neue Modellzuordnungskonfiguration für elektronische Berichterstellung (EB) zu entwerfen und integrierte EB-Funktionen für effiziente Aggregationsberechnungen zu verwenden.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 614ef06fcf5761f1cf2afb6e7655558d2858d763
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357173"
 ---
 # <a name="create-electronic-reporting-er-model-mapping-configurations"></a>Modellzuordnungskonfigurationen der elektronischen Berichterstellung (EB) erstellen
 
@@ -65,5 +65,4 @@ Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. U
 4. Geben Sie im Feld „Name” die Bezeichnung „Intrastat-Beispielzuordnung” ein.
     * Intrastat-Beispielzuordnung  
 5. Klicken Sie auf Konfiguration erstellen.
-
 

@@ -1,13 +1,13 @@
 ---
 title: Manuellen Entscheidungen in einem Workflow konfigurieren
-description: "Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Entscheidung konfigurieren können."
+description: Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Entscheidung konfigurieren können.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d09e99a5bf99593a8fa7682f9d4f29eaa4e7c836
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341395"
 ---
-
 # <a name="configure-manual-decisions-in-a-workflow"></a>Manuellen Entscheidungen in einem Workflow konfigurieren
 
 [!include [banner](../includes/banner.md)]
@@ -164,7 +163,7 @@ Sie können Benachrichtigungen an Personen senden, wenn eine Entscheidung getrof
     </tr>
     <tr>
     <td>Benutzer</td>
-    <td>Bestimmte Benutzer von Microsoft Dynamics 365 Finance and Operations</td>
+    <td>Bestimmte Microsoft Dynamics 365 for Finance and Operations-Benutzer</td>
     <td>
     <ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
@@ -372,4 +371,3 @@ Gehen Sie folgendermaßen vor, wenn die Entscheidung in einer bestimmten Zeit ge
     - **Jahre** – Wählen Sie den Tag, die Woche und den Monat aus, bis zu dem die Entscheidung getroffen werden muss. Sie können z. B. angeben, dass die Entscheidung bis Freitag der dritten Woche im Dezember getroffen werden soll.
 
 4. Wenn die Zeitgrenze überschritten wird, wird die Entscheidung automatisch getroffen. Wählen Sie in der Liste **Aktivität** die Option aus, die automatisch vom System ausgewählt werden soll.
-

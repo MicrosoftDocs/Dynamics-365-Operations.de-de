@@ -1,13 +1,13 @@
 ---
-title: "Beschaffungsübersicht"
-description: "Dieser Artikel enthält eine Übersicht der Funktionen, die im Beschaffungsmodul verfügbar sind."
+title: Beschaffungsübersicht
+description: Dieser Artikel enthält eine Übersicht der Funktionen, die im Beschaffungsmodul verfügbar sind.
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1fc824a308d17c75d9c16391778570272e160699
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
-ms.contentlocale: de-de
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351630"
 ---
-
 # <a name="procurement-and-sourcing-overview"></a>Beschaffungsübersicht
 
 [!include [banner](../includes/banner.md)]
@@ -90,7 +89,6 @@ Fakturierte Bestellungen erfassen die Verbindlichkeiten im Kreditorenkonto inner
 
 ## <a name="vendor-performance"></a>Kreditorleistung
 Leistung und Prüfung des Einkaufs wird unterstützt durch *Beschaffungs- und Kreditorenberichte,* die eine Ausgabenanalyse und Kreditorenleistungsanalyse enthalten.
-
 
 
 

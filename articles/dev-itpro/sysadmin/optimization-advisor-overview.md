@@ -1,45 +1,44 @@
 ---
 title: Optimierungsratgeber
-description: "In diesem Thema wird beschrieben, wie Sie Optimierungsratgeber verwenden können, um eine optimale Konfiguration von Microsoft Dynamics 365 Finance and Operations zu gewährleisten."
+description: In diesem Thema wird beschrieben, wie Sie Optimierungsratgeber verwenden können, um eine optimale Konfiguration von Microsoft Dynamics 365 Finance and Operations zu gewährleisten.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 206b8a23a52d412d1810b8a355b09ecc461f00b3
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335622"
 ---
-
 # <a name="optimization-advisor"></a>Optimierungsratgeber
 
 [!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Optimierungsratgeber verwenden können, um eine optimale Konfiguration von Microsoft Dynamics 365 Finance and Operations zu gewährleisten.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
 Falsche Konfiguration und Einstellung eines Moduls können die Verfügbarkeit von Funktionen im Bereich Finance and Operations, die Systemleistung und das reibungslose Funktionieren von Unternehmensabläufen beeinträchtigen. Die Qualität von Geschäftsdaten (beispielsweise die Korrektheit, Vollständigkeit und Sauberkeit der Daten) wirkt sich auch auf die Systemleistung und beispielsweise die Entscheidungsfähigkeit oder Produktivität einer Organisation aus.
 
 Der Arbeitsbereich **Optimierungsratgeber** ist ein Tool, mit dem durch Poweruser, Business Analysten, Funktionsberater und IT-Supportfunktionen Probleme in der Modulkonfiguration und in Geschäftsdaten identifiziert werden können. Optimierungsratgeber schlägt Verfahren für Modulkonfiguration vor und bezeichnet die Daten, die veraltet oder falsch sind.
 
-Optimierungsratgeber führt in regelmäßigen Zeitabständen eine Gruppe von Regeln für bewährte Methoden aus. Ein Standardsatz an Regeln wird zusammen mit Microsoft Dynamics 365 for Finance and Operations, Version 8.0 (April 2018) freigegeben. Allerdings können auch Benutzer Regeln erstellen, die spezifisch auf die Anpassungen, Lösungen von den unabhängigen Softwareherstellern (ISVs) und Geschäftsdaten bestimmt sind. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Erstellen neuer Regeln](./create-rules-optimization-advisor.md).
+Optimierungsratgeber führt in regelmäßigen Zeitabständen eine Gruppe von Regeln für bewährte Methoden aus. Zusammen mit Microsoft Dynamics 365 for Finance and Operations Version 8.0 (April 2018) wird ein Standardregelsatz veröffentlicht. Allerdings können auch Benutzer Regeln erstellen, die spezifisch auf die Anpassungen, Lösungen von den unabhängigen Softwareherstellern (ISVs) und Geschäftsdaten bestimmt sind. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Erstellen neuer Regeln](./create-rules-optimization-advisor.md).
 
 Wenn ein Verstoß einer Regel erkannt wird, wird eine Optimierungsverkaufschance generiert und wird im Arbeitsbereich **Optimierungsratgeber** angezeigt. Ein Benutzer kann entsprechenden Korrektur-Aktivitäten direkt im Formular **Optimierungsratgeber** ausführen.
 
@@ -49,7 +48,7 @@ Standardsicherheits-Richtlinien gelten für Optimierungsverkaufschancen. Beispie
 
 Wenn Sie für manche Optimierungsverkaufschancen Maßnahmen ergreifen, berechnet das System die Auswirkungen der Verkaufschance in Bezug auf die Verringerung in der Laufzeit von Geschäftsprozessen. Leider ist diese Funktion nicht für alle Optimierungsverkaufschancen verfügbar.
 
-Um weitere Informationen zu Optimierungsratgeber zu erhalten, sehen Sie sich den kurzen Video [Optimierungsratgeber in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ) an.
+Für weitere Informationen zum Optimierungsratgeber sehen Sie sich das kurze [Optimierungsratgeber in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)-Video an.
 
 ## <a name="optimization-rules"></a>Optimierungsregeln
 
@@ -95,5 +94,4 @@ Um die Bewertung bestimmter Regeln zu deaktivieren, wählen Sie die Verkaufschan
 
 [Erstellen neuer Regeln](./create-rules-optimization-advisor.md)
 
-[Optimierungsberater in Dynamics 365 for Finance and Operations, (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
-
+[Optimierungsratgeber in Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

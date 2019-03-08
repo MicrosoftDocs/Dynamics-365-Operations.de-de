@@ -1,13 +1,13 @@
---- 
+---
 title: Einrichten von Nummernsequenzen mit einem Assistenten
-description: "Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Kennungen für Masterdaten- und Buchungsdatensätze, die diese benötigen."
+description: Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Kennungen für Masterdaten- und Buchungsdatensätze, die diese benötigen.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1808ab9240ab291f9d203893a634bd390f16e2e7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96c1bc711350b447611977c3f2070fbc08fbae0f
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328239"
 ---
 # <a name="set-up-number-sequences-by-using-a-wizard"></a>Einrichten von Nummernsequenzen mit einem Assistenten
 
@@ -36,5 +36,4 @@ Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Kennungen für Mas
     * Wählen Sie die Option Fortlaufend nicht aus, wenn die Nummern für den Nummernkreis vorab zugeordnet werden müssen.     Sie können ein Bereichssegment zum Format eines Nummernkreises hinzufügen, indem Sie das Format in der Liste auswählen und dann auf "Bereich in Format einschließen" klicken.     Sie können ein Bereichssegment aus dem Format eines Nummernkreises entfernen, indem Sie das Format in der Liste auswählen und dann auf "Bereich aus Format entfernen" klicken.     Wenn Sie einen Nummernkreis aus der automatischen Generierung ausschließen möchten, wählen Sie den Nummernkreis in der Liste aus, und klicken Sie dann auf Löschen.  
 4. Klicken Sie auf Weiter.
 5. Klicken Sie auf Fertig stellen.
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Überprüfung der Beschäftigungsüberprüfung i9"
-description: "Aufgrund des Immigration Reform and Control Acts (IRCA) sind Arbeitgeber in den USA dazu verpflichtet, den Status der Beschäftigungsberechtigung neuer Mitarbeiter zu prüfen."
+---
+title: Überprüfung der Beschäftigungsüberprüfung i9
+description: Aufgrund des Immigration Reform and Control Acts (IRCA) sind Arbeitgeber in den USA dazu verpflichtet, den Status der Beschäftigungsberechtigung neuer Mitarbeiter zu prüfen.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User
 ms.reviewer: josaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4d7346507179d237f60459978b9b7c6351f48611
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333322"
 ---
 # <a name="employment-verification-i9-verification"></a>Überprüfung der Beschäftigungsüberprüfung i9
 
@@ -54,5 +54,4 @@ Aufgrund des Immigration Reform and Control Acts (IRCA) sind Arbeitgeber in den 
 21. Wählen Sie im Feld "I-9-Dokumenttyp" die Art des von der Arbeitskraft vorgelegten Dokuments aus.
 22. Geben Sie im Feld "Dokumentnummer" einen Wert ein oder wählen Sie einen Wert aus.
 23. Klicken Sie auf "Speichern".
-
 

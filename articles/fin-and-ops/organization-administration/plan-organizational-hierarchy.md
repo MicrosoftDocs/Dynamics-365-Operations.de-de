@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 633d85333a510cec9cee2721e6e2330a47b6c78c
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331988"
 ---
-
 # <a name="plan-your-organizational-hierarchy"></a>Planen Ihrer Organisationshierarchie
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Bevor Sie Organisationen und Organisationshierarchien in Microsoft Dynamics 365 
 
 Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen ein Unternehmen besteht. Daher ist die Struktur Ihres Unternehmens der wichtige Gesichtspunkt, wenn Sie Organisationen modellieren. Wir empfehlen, die Organisationsstrukturen auf Basis von Feedback der Führungskräfte und Bereichsleiter von Funktionsbereichen wie Finanzen und Buchhaltung, Personalverwaltung, Arbeitsgänge, Einkauf sowie Vertrieb und Marketing zu definieren.
 
-Wenn Sie Hierarchien planen, ist es auch wichtig, die Beziehung zwischen der Organisationshierarchie und den Finanzdimensionen zu planen. Sie können mehrere Organisationshierarchien einrichten, um verschiedene Ansichten Ihres Unternehmens darzustellen. Wenn Sie Finanzdimensionen verwenden, können Sie Berichte auf Grundlage dieser Ansichten erstellen. Arbeiten Sie mit Ihrem Microsoft Dynamics 365 for Finance and Operations-Partner zusammen, um Hierarchien zu erstellen, die auf die organisationsbezogenen und gesetzlichen Berichterstellungsanforderungen eingehen.
+Wenn Sie Hierarchien planen, ist es auch wichtig, die Beziehung zwischen der Organisationshierarchie und den Finanzdimensionen zu planen. Sie können mehrere Organisationshierarchien einrichten, um verschiedene Ansichten Ihres Unternehmens darzustellen. Wenn Sie Finanzdimensionen verwenden, können Sie Berichte auf Grundlage dieser Ansichten erstellen. Arbeiten Sie mit Ihrem Microsoft Dynamics 365 for Finance and Operations-Partner zusammen, um Hierarchien erstellen, die auf die organisationsbezogenen und gesetzlichen Berichterstellungsanforderungen eingehen.
 
 > [!NOTE]
 > Obwohl Sie Finanzdimensionen verwenden können, um juristische Personen darzustellen, ohne die juristischen Personen in Finance and Operations zu erstellen, sind Finanzdimensionen nicht dafür angelegt, auf die betrieblichen oder geschäftlichen Anforderungen von juristischen Personen einzugehen. Die Interunit-Buchhaltungsfunktionen in Finance and Operations sind nur für die Buchhaltungseinträge vorgesehen, die durch die einzelnen Buchungen erstellt werden.
@@ -168,7 +167,7 @@ Organisationseinheiten verwenden den Landeskontext der übergeordneten juristisc
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Wenn die Organisation als juristische Person modelliert wird
 
-Bei Ländern/Regionen, die von Finance and Operations unterstützt werden, können die meisten Offenlegungsberichte erstellt werden. Informationen darüber, welche Berichte für welches Land/Region verfügbar sind, finden Sie im [Microsoft Dynamics-Lokalisierungs-Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) für Finance and Operations. (Eine CustomerSource-Anmeldung ist erforderlich.)
+Bei Ländern/Regionen, die von Finance and Operations unterstützt werden, können die meisten Offenlegungsberichte erstellt werden. Informationen darüber, welche Berichte für welches Land/Region verfügbar sind, finden Sie im [Microsoft Dynamics-Lokalisierungs-Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) für Finance and Operations. (Eine CustomerSource -Anmeldung ist erforderlich.)
 
 > [!NOTE]
 > In Finance and Operations  ermöglicht Ihnen eine Buchungsebene im Hauptbuch, Anpassungseingaben an einer Muttergesellschaft vorzunehmen, die einen anderen Rechnungslegungsstandard als das untergeordnete Unternehmen verwendet. Beispielsweise können Sie für ein Unternehmen, das in Großbritannien allgemein anerkannte Buchhaltungsverfahren (UK GAAP) verwendet, Anpassungseingaben auf der Buchungsebene vornehmen. Diese Einträge können in ein übergeordnetes Unternehmen konsolidiert werden, das in den USA allgemein anerkannte Rechnungslegungsgrundsätze (GAAP) verwendet. Die Anpassungseingaben haben keinen Einfluss auf die UK GAAP-Berichterstellung.
@@ -243,4 +242,3 @@ Berücksichtigen Sie die folgenden optimalen Verfahren bei der Implementierung e
 - Verwenden Sie vor dem Entwerfen von umfassenden Neustrukturierungsszenarien die Gültigkeitsdaten der Hierarchie, um eine Auswirkungsanalyse und einen Validierungstest durchzuführen.
 - Verwenden Sie zum Ändern einer Hierarchie den Entwurfsmodus, bevor Sie eine neue Version in einer Produktionsumgebung veröffentlichen.
 - Begrenzen Sie die Anzahl der Personen, die zum Hinzufügen oder Entfernen von Organisationen von einer Hierarchie in einer Produktionsumgebung berechtigt sind. Durch eine kleinere Anzahl verringert sich die Wahrscheinlichkeit für kostspielige Fehler und Korrekturen.
-

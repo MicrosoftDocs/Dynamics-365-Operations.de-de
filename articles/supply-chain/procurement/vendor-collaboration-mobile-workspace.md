@@ -1,13 +1,13 @@
 ---
-title: "Mobiler Arbeitsbereich für Kreditorenzusammenarbeit"
-description: "Dieses Thema enthält Informationen zur Lieferantenzusammenarbeit im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen."
+title: Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
+description: Dieses Thema enthält Informationen zur Lieferantenzusammenarbeit im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
 author: mkirknel
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: df27ff3477443611278436a680d70ea81a21763e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 83fcf1d0432d5afa71d6f9d7d22cea5a583777bf
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358645"
 ---
-
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zur **Lieferantenzusammenarbeit** im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
 
-Dieser mobile Arbeitsbereich soll mit der Mobil-App für Microsoft Dynamics 365 für Unified Operations verwendet werden.
+Dieser mobile Arbeitsbereich soll mit der Microsoft Dynamics 365 for Unified Operations Mobile-App verwendet werden.
 
-## <a name="overview"></a>Überblick 
-Der mobile Arbeitsbereich für die **Kreditorenzusammenarbeit** hält Kreditoren über neue Bestellungen auf dem Laufenden, sodass diese neue Bestellungen im Webclient von Microsoft Dynamics 365 for Finance and Operations anzeigen können und auf diese antworten können. 
+## <a name="overview"></a>Übersicht 
+Der Arbeitsbereich für die **Kreditor-Kooperation** hält Kreditoren über neue Bestellungen auf dem Laufenden, sodass diese neue Bestellungen im Webclient von Microsoft Dynamics 365 for Finance and Operations sehen und auf diese reagieren können. 
 
 >[!NOTE]
 > Der mobile Arbeitsbereich sollte als Ergänzung und nicht als Ersatz der Weboberfläche für die Kreditor-Kooperation eingesetzt werden. 
@@ -60,11 +59,11 @@ Der mobile Arbeitsbereich **Kreditorenzusammenarbeit** ermöglicht einem Kredito
 ## <a name="prerequisites"></a>Voraussetzungen
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operations verwenden 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operationsverwenden 
 Wenn Microsoft Dynamics 365 for Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Kreditor-Kooperation** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder später verwenden.
-Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder später für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
+Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
 
 <table>
 <thead>
@@ -76,11 +75,11 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisier
 </thead>
 <tbody>
 <tr class="odd">
-<td>3216943 KB muss implementiert werden, wenn Sie Plattformaktualisierung 3 verwenden.</td>
+<td>3216943 KB muss implementiert werden, wenn Sie Plattformaktualisierung 3. verwenden.</td>
 <td>Systemadministrator</td>
-<td>3216943 KB ist eine binäre Aktualisierung, die erforderlich ist, wenn Sie Plattformaktualisierung 3 verwenden. Um diesen KB zu implementieren, muss Ihr Systemadministrator folgende Schritte ausführen.
+<td>3216943 KB ist eine binäre Aktualisierung, die erforderlich ist, wenn Sie Plattformaktualisierung 3. verwenden. Um diesen KB zu implementieren, muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
-<li>Herunterladen von KB 3216943 von Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Download von KB 3216943 von Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li>Binäre Aktualisierung instalieren, die zur Bereitstellung als geeignetes Paket geliefert wird. Informationen dazu, wie ein bereitgestelltes Paket übernommen wird, finden Sie unter <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Ein bereitgestelltes Paket anwenden</a>.</li>
 </ol></td>
 </tr>
@@ -115,7 +114,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisier
 
 Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:
 
--   [Für Androide-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Bei der mobile App anmelden
@@ -171,4 +170,3 @@ Sämtliche Änderungen, die in der Auftragspositionsantwort vorgenommen wurden, 
 
 ### <a name="open-confirmed-orders"></a>Offene bestätigte Aufträge
 Wenn die Bestellung vom Debitor bestätigt wird (d. h. der Status des Auftrags, wird auf **Bestätigt** geändert), erscheint sie unter den offenen, bestätigten Aufträgen. Sie bleibt in der Liste, bis sie als vom Debitor empfangen registriert wird.
-

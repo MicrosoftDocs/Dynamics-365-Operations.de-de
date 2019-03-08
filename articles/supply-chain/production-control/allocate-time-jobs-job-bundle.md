@@ -1,13 +1,13 @@
 ---
-title: "Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen"
-description: "Sie können Einzelvorgänge in der Fertigungssteuerung bündeln. Sie können mehrere Einzelvorgänge auf der Seite \"Einzelvorgangsliste\" gleichzeitig starten."
+title: Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen
+description: Sie können Einzelvorgänge in der Fertigungssteuerung bündeln. Sie können mehrere Einzelvorgänge auf der Seite "Einzelvorgangsliste" gleichzeitig starten.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgBundleSlize, JmgProdParameters, JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33d6bab9beb28d18e2094d7fb5e670e9425aac39
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a5204288ce3eaabb605f136ea788d235f408f349
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329113"
 ---
-
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen
 
 [!include [banner](../includes/banner.md)]
@@ -109,7 +108,6 @@ Berücksichtigen Sie die drei Einzelvorgänge, die von einer Arbeitskraft ausgef
 | Einzelvorgang 3 | (3,33 ÷ 5) × 12,00 EUR                 | 8,00 EUR                | 5 Stunden        | 40,00 EUR         |
 
 Die korrigierten Kosten pro Stunde und die Einzelvorgangszeit werden in einer Produktionserfassung gebucht. **Hinweis:** Wenn Sie die Option **Kostenkategorie** auf der Registerkarte **Allgemein** auf der Seite **Produktionsauftragsstandards** auswählen, wird die tatsächliche Zeit für jeden Einzelvorgang zu einer Produktionserfassung übertragen, wo die Kosten auf die Kostenkategorie des spezifischen Einzelvorgangs angewendet werden.
-
 
 
 

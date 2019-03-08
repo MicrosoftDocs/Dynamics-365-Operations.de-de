@@ -1,13 +1,13 @@
 ---
-title: "Erstellte XML-Dateien auf Grundlage der Dateigröße und Inhaltsmenge teilen"
-description: "Dieses Thema enthält Informationen darüber, wie Sie generierte Dateien anhand der Dateigröße und der Anzahl der Inhaltselemente aufteilen können."
+title: Erstellte XML-Dateien auf Grundlage der Dateigröße und Inhaltsmenge teilen
+description: Dieses Thema enthält Informationen darüber, wie Sie generierte Dateien anhand der Dateigröße und der Anzahl der Inhaltselemente aufteilen können.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 8c3899d5c6602b3afe13b447b40f0b4dcc701448
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 0f13194575e2f19f585f09ffad99144c9a9fc3b1
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347099"
 ---
-
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Erstellte XML-Dateien auf Grundlage der Dateigröße und Inhaltsmenge teilen
 
 [!include[banner](../includes/banner.md)]
@@ -49,4 +48,3 @@ Um mehr über diese Funktion zu erfahren, spielen Sie den Aufgabenleitfaden **ER
 [Zielorte für elektronische Berichterstellung](electronic-reporting-destinations.md)
 
 [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
-

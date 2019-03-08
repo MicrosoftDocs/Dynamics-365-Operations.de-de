@@ -1,13 +1,13 @@
 ---
-title: "Abgrenzungsüberblick"
+title: Abgrenzungsüberblick
 description: Dieser Artikel beschreibt Abgrenzungen und gibt Informationen, wie sie aufgesetzt werden und wie Transaktionen erstellt werden.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAccuralTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 23c6a3402e4bc4a22d764017ba56554001300a67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 00ecc493e6dcf59ab61e7082297c95516a248b58
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339693"
 ---
-
 # <a name="accruals-overview"></a>Abgrenzungsüberblick
 
 [!include [banner](../includes/banner.md)]
@@ -47,4 +46,3 @@ Wenn Sie eine Erfassung eingeben, können Sie im Menü **Funktionen** auf **Sach
 
 
 Weitere Informationen finden Sie unter [Erstellen von Abgrenzungsschemata](tasks/create-accrual-schemes.md) [Erstellen von Sachkonto-Abgrenzungsbuchungen](tasks/create-ledger-accrual-transactions.md).
-

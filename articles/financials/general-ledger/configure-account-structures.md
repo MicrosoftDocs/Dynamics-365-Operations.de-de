@@ -1,13 +1,13 @@
 ---
 title: Kontostrukturen konfigurieren
-description: "Dieses Thema enthält Informationen zu Kontostrukturen und Finanzdimensionen."
+description: Dieses Thema enthält Informationen zu Kontostrukturen und Finanzdimensionen.
 author: aprilolson
 manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 8435389a523d8393e9d4daa0cb1244203c0dbb12
 ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351722"
 ---
-
 # <a name="configure-account-structures"></a>Kontostrukturen konfigurieren
 
 [!include[banner](../includes/banner.md)]
@@ -100,4 +99,3 @@ Bei der Einrichtung Ihrer Kontostruktur gibt es einige bewährte Methoden, die S
 Wenn Sie mit Ihrer neuen Einrichtung oder einer Änderung der Kontostruktur zufrieden sind, müssen Sie diese aktivieren. Wenn eine Kontostruktur einem Sachkonto zugeordnet ist, kann diese Aktivierung ein langwieriger Prozess sein, da alle nicht gebuchten Vorgänge im System mit der neuen Struktur synchronisiert werden müssen. Gebuchte Transaktionen werden nicht durch Kontostrukturänderungen beeinflusst.
 
 Weitere Informationen finden Sie unter [Ihren Kontenplan planen](plan-chart-of-accounts.md), [Finanzdimensionen](financial-dimensions.md), [Eingeben von Konto- und Dimensionskombinationen (segmentierte Eintragssteuerung)](enter-account-dimension-combinations-segmented-entry-control.md).
-

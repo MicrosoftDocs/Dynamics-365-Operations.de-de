@@ -1,13 +1,13 @@
 ---
-title: "Steuerkalender, Geschäftsjahre und Finanzzeiträume"
-description: "Dieser Artikel behandelt Steuerkalender, Geschäftsjahre und Perioden und erläutert, wie diese für juristische Personen, Anlagen und die Budgetierung verwendet werden."
+title: Steuerkalender, Geschäftsjahre und Finanzzeiträume
+description: Dieser Artikel behandelt Steuerkalender, Geschäftsjahre und Perioden und erläutert, wie diese für juristische Personen, Anlagen und die Budgetierung verwendet werden.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FiscalCalendars
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 431d654aaffc27d54fd590dc7d5d2ab6c2313908
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361658"
 ---
-
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Steuerkalender, Geschäftsjahre und Finanzzeiträume
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ Budgetzyklen sind der Zeitraum, in dem ein Budget verwendet wird. Budgetzyklen k
 
 ## <a name="maintain-periods-for-your-organization"></a>Verwalten von Perioden für die Organisation
 Auf der Seite Sachkontokalender können Sie die Details zum Steuerkalender, zu den Geschäftsjahren und zu den Perioden angezeigt werden, die in Ihrer Organisation verwendet werden. Sie können auch den Status der Perioden ändern und auswählen, welche Benutzer Buchungen für bestimmte Perioden vornehmen können. Zu Beginn einer neuen Periode soll zum Beispiel eine Gruppe von Benutzern die Buchung von Posten aus der vorherigen Periode abschließen, während andere Gruppen nur in der neuen Periode arbeiten.
-
 
 
 

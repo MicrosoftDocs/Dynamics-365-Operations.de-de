@@ -1,13 +1,13 @@
---- 
-title: "Ausleihartikel für eine Arbeitskraft"
-description: "Im folgenden Verfahren wird dargestellt, wie einer Arbeitskraft ein Artikel geliehen und anschließend erfasst wird, wie die Arbeitskraft den Artikel zurückgibt."
+---
+title: Ausleihartikel für eine Arbeitskraft
+description: Im folgenden Verfahren wird dargestellt, wie einer Arbeitskraft ein Artikel geliehen und anschließend erfasst wird, wie die Arbeitskraft den Artikel zurückgibt.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPersonLoan, HcmPersonLookup
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 9041a24a7197c350a38339408197f643f2b9b6dd
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332218"
 ---
 # <a name="loan-item-to-a-worker"></a>Ausleihartikel für eine Arbeitskraft
 
@@ -43,5 +43,4 @@ Im folgenden Verfahren wird dargestellt, wie einer Arbeitskraft ein Artikel geli
 1. Wechseln Sie zu "Personalverwaltung" > "Arbeitskräfte" > "Ausleihartikel" > "Ausgeliehene Ausrüstung".
 2. Klicken Sie auf "Bearbeiten".
 3. Geben Sie im Feld "Tatsächliche Rückgabe" ein Datum ein.
-
 

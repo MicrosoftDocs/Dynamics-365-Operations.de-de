@@ -1,34 +1,33 @@
 ---
-title: "Doppelte Währung"
-description: "Dieses Thema enthält Informationen zu doppelter Währung. Dabei wird die Berichtswährung als eine zweite Buchhaltungswährung für Microsoft Dynamics 365 for Finance and Operations verwendet."
+title: Doppelte Währung
+description: Dieses Thema enthält Informationen zu doppelter Währung. Dabei wird die Berichtswährung als eine zweite Buchhaltungswährung für Microsoft Dynamics 365 for Finance and Operations verwendet.
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.contentlocale: de-de
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330309"
 ---
-
 # <a name="dual-currency"></a>Doppelte Währung
 
 [!include [banner](../includes/banner.md)]
 
-Funktion, die in Microsoft Dynamics 365 for Finance and Operations Version 8.1 (Oktober 2018) eingeführt wurde ermöglicht die Buchhaltungswährung als zweite Berichtswährung zu verwenden. Diese Funktion wird auch als *Doppelte Währung* bezeichnet. Die Änderungen für doppelte Währung können nicht durch einen Konfigurationsschlüssel oder einen Parameter deaktiviert werden. Da die Berichtswährung als zweite Buchhaltungswährung verwendet wird, änderte sich die Art, in der die Berichtswährung in der Buchungslogik berechnet wird.
+Funktion, die in Microsoft Dynamics 365 for Finance and Operations Version 8.1 (Oktober 2018) eingeführt wurden, ermöglichen es, die Berichtswährung als zweite Buchhaltungswährung zu verwenden. Diese Funktion wird auch als *Doppelte Währung* bezeichnet. Die Änderungen für doppelte Währung können nicht durch einen Konfigurationsschlüssel oder einen Parameter deaktiviert werden. Da die Berichtswährung als zweite Buchhaltungswährung verwendet wird, änderte sich die Art, in der die Berichtswährung in der Buchungslogik berechnet wird.
 
 Darüber hinaus wurden verschiedene Module verbessert, um die Berichtswährung in verschiedenen Prozessen zu überwachen, zu melden und zu verwenden. Die betroffen Module sind **Hauptbuch**, **Finanzberichterstellung**, **Kreditoren**, **Debitoren**, **Bargeld- und Bankverwaltung** und **Anlagevermögen**. Nachdem einer Aktualisierung, müssen Sie bestimmte Schritte für Bargeld- und Bankverwaltung und Anlagen abschließen. Stellen Sie daher sicher, dass Sie die entsprechenden Themen sorgfältig lesen.
 
@@ -184,4 +183,3 @@ Darüber hinaus wurden am Abschreibungsprozess größere Änderungen vorgenommen
     - Wenn ein Abschreibungstransaktionstyp in die Anlagenerfassung eingegeben wird, werden die Berichtswährungsbeträge in den neue Spalten angezeigt. Diese Beträge können geändert werden.
     - Wenn die Buchhaltungswährung und Berichtswährungen im Sachkonto überein, werden die Beträge synchron gehalten. Wenn Sie den **Haben**-Betrag   ändern, wird der **Habenwert in Berichtswährung**-Betrag automatisch geändert, sodass er übereinstimmt.
     - Werden ein anderer Transaktionstyp in die Anlagenerfassung eingegeben wird, werden die Beträge **Sollwert in Berichtswährung** und **Habenwert in Berichtswährung** niemals angezeigt, weder vor noch nach der Buchung. Die Buchhaltungswährungs- und Berichtswährungsbeträge sind auf dem Beleg, der im Hauptbuch gebucht wird, weiterhin verfügbar.
-

@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren von Callcenter-Lieferarten und -Belastungen
-description: "In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 for Retail Lieferarten und Gebühren für einen Call-Center-Auftrag einrichten."
+description: In diesem Thema wird beschrieben, wie Sie in Microsoft Dynamics 365 for Retail Lieferarten und Gebühren für einen Callcenter-Auftrag einrichten.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,19 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: ebc8ee52da7d10ca18147684a0190e52a495ad5a
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328423"
 ---
-
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurieren von Callcenter-Lieferarten und -Belastungen
 
 [!INCLUDE [banner](includes/banner.md)]
 
-Wenn ein Auftrag in Microsoft Dynamics 365 for Retail erteilt wird und die Person, die den Auftrag eingegeben hat, mit einem Callcenterkanal verknüpft ist, werden Logik und Regeln verwendet, um die Lieferart (Lieferart) zu validieren und die Gebühren für den Auftrag zu berechnen.
+Wenn ein Auftrag in Microsoft Dynamics 365 for Retail erteilt wird und die Person, die den Auftrag eingegeben hat, mit einem Callcenterkanal verknüpft ist, werden Logik und Regeln verwendet, um die Art der Lieferung (Lieferart) zu validieren und die Gebühren für den Auftrag zu berechnen.
 
 Wenn Sie einen Auftrag erstellen, können Sie eine Lieferart im Auftragskopf und den Auftragspositionen auswählen. Standardmäßig wird für alle Auftragspositionen der Lieferungsmodus verwendet, den Sie in der Kopfzeile wählen. Sie können jedoch den Standardlieferungsmodus auf einzelnen Verkaufspositionen nach Bedarf überschreiben. Sie können auch eine Lieferart auf einem Kundendatensatz definieren. Wenn dann Aufträge für den Kunden angelegt werden, wird diese Lieferart standardmäßig auf dem Auftragskopf verwendet.
 
@@ -96,4 +95,3 @@ Sie können optional einen Eillieferungscode mit jeder von Ihnen konfigurierten 
 Bei Bestellungen, die beispielsweise am nächsten Tag per Luftfracht verschickt werden, muss die Kommissionierung täglich bis 13 Uhr im Lager erfolgen. In diesem Fall kann ein Eillieferungscode erstellt werden, der mit jeder im System konfigurierten Lieferart für den nächsten Tag verknüpft werden kann. Wenn das Lager seine Entnahmeserie erzeugt, kann der entsprechende Eillieferungscode im Feld **Eillieferung** als Filter verwendet werden, so dass die Entnahme nur für Aufträge durchgeführt wird, die Lieferarten haben, die mit diesem Code verknüpft sind.
 
 Zusätzlich kann bei der Eingabe eines Callcenterauftrags ein Eillieferungscode entweder manuell auf den Auftragskopf oder auf eine einzelne Auftragspositionen angewendet werden. Auch hier kann der Code für Sortier- oder Berichtszwecke verwendet werden. Manchmal muss ein Auftrag wegen eines Kundenserviceproblems sorgfältig behandelt werden. In diesem Fall kann ein spezieller Eillieferungscode auf den Auftragskopf oder die Auftragszeilen angewendet werden, um den Auftrag während des Ausführungsprozesses zu identifizieren und zu priorisieren.
-

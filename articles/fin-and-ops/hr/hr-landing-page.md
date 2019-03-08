@@ -1,13 +1,13 @@
 ---
 title: Personalverwaltung
-description: "Personalverwaltungen rationalisieren viele routinemäßige Protokollierungsaufgaben und automatisieren zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Darüber hinaus bieten sie einen Rahmen für Personalverwaltungsmitarbeiter, um die Bereiche, für die sie zuständig sind, zu verwalten. Diese Bereiche umfassen das Beschaffen und Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement."
+description: Personalverwaltungen rationalisieren viele routinemäßige Protokollierungsaufgaben und automatisieren zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Darüber hinaus bieten sie einen Rahmen für Personalverwaltungsmitarbeiter, um die Bereiche, für die sie zuständig sind, zu verwalten. Diese Bereiche umfassen das Beschaffen und Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement.
 author: rschloma
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341763"
 ---
-
 # <a name="human-resources"></a>Personalverwaltung
 
 [!include [banner](../includes/banner.md)]
@@ -77,11 +76,11 @@ Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, kö
 
 - [Ein Vergütungsprogramm verwalten](../../talent/manage-benefit-program.md)
 - [Vergütungsberechtigungsrichtlinien](../../talent/benefit-eligibility-policies.md)
-- [Verwalten von Artikeln, die an Arbeitskräfte ausgeliehen werden](../../talent/loan-items.md)
+- [Objekte verwalten, die an Arbeitskräfte ausgeliehen werden](../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Verwalten von Arbeitsplatzsicherheit und Konformität
 
-Microsoft Dynamics AX hilft Ihnen dabei, eine sichere Arbeitsumgebung zu verwalten, die mit den geltenden Gesetzen übereinstimmt, einschließlich der Vorgaben des Americans with Disabilities Act (Gesetz für die Rechte Behinderter in den USA) und der Einwanderungs- und Einbürgerungsgesetze. So können Sie beispielsweise die physischen Anforderungen für bestimmte Stellen verwalten sowie Anforderungen von Arbeitsplatzhilfsmitteln nachverfolgen, um so die Organisation dabei zu unterstützen, die Qualifikationen ihrer Belegschaft zu optimieren.
+Microsoft Dynamics AX hilft Ihnen bei der Verwaltung einer sicheren Arbeitsumgebung, die mit den geltenden Gesetzen übereinstimmt, einschließlich der Vorgaben des Americans with Disabilities Act (Gesetz für die Rechte von Menschen mit Behinderungen in den USA) und der Einwanderungs- und Einbürgerungsgesetze. So können Sie beispielsweise die physischen Anforderungen für bestimmte Stellen verwalten sowie Anforderungen von Arbeitsplatzhilfsmitteln nachverfolgen, um so die Organisation dabei zu unterstützen, die Qualifikationen ihrer Belegschaft zu optimieren.
 
 - [Formular I-9 – Beschäftigungsüberprüfung](localizations/noam-usa-form-i-9-verification.md)
 - [Erfüllen der Vorgaben des Americans with Disabilities Act](localizations/noam-usa-comply-ada.md)
@@ -95,4 +94,3 @@ Sie können Fragebögen entwerfen und verwalten, um Informationen für die versc
 - [Entwerfen eines Fragebogens](../../talent/design-questionnaires.md)
 - [Einen Fragebogen verteilen und ausfüllen](../../talent/distribute-questionnaires.md)
 - [Die Ergebnisse eines Fragebogens anzeigen und auswerten](../../talent/evaluate-questionnaire-results.md)
-

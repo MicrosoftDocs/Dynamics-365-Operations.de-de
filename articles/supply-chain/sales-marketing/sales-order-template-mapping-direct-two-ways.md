@@ -1,37 +1,36 @@
 ---
-title: "Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations"
-description: "Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Aufträge direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations zu synchronisieren."
+title: Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations
+description: Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Microsoft Dynamics 365 for Sales mit Microsoft Dynamics 365 for Finance and Operations auszuführen.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
 ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.contentlocale: de-de
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339118"
 ---
-
-# <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Operations
+# <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Aufträge direkt zwischen Sales und Finance and Operations synchronisieren
 
 [!include [banner](../includes/banner.md)]
 
-Das Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Aufträge direkt zwischen Microsoft Dynamics 365 for Sales und Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
+Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Microsoft Dynamics 365 for Sales mit Microsoft Dynamics 365 for Finance and Operations auszuführen.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Datenfluss in Interessent nach Bargeld
 
@@ -198,4 +197,3 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Interessent zu Bargeld](prospect-to-cash.md)
-

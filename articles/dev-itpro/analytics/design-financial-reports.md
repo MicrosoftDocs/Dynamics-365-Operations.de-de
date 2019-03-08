@@ -1,13 +1,13 @@
 ---
 title: Finanzberichte entwerfen und verwalten
-description: "Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Finance and Operations führen."
+description: Dieser Artikel enthält Übungen, die Sie durch das Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Finance and Operations führen.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReportingSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 9d2d9bef0b70d5f645e358a970750aefef890ec1
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343879"
 ---
-
 # <a name="view-and-design-financial-reports"></a>Finanzberichte entwerfen und verwalten
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel enthält Übungen, die Sie durch Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Finance and Operations führen. Die Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Finance and for Operations und einem Berichts-Designer, der Finanzberichte erstellt und bearbeitet.
+Dieser Artikel enthält Übungen, die Sie durch das Anzeigen und Erstellen von Finanzberichten für Microsoft Dynamics 365 for Finance and Operations führen. Die Finanzberichterstellung besteht aus einer Betrachtungserfahrung in Finance and for Operations und einem Berichts-Designer, der Finanzberichte erstellt und bearbeitet.
 
 ## <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Übung 1: Generieren und untersuchen Sie einen Standardfinanzbericht
 
@@ -199,4 +198,3 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 [Finanzberichte anzeigen](../../financials/general-ledger/view-financial-reports.md)
 
 [Dynamics Financial Reporting-Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-

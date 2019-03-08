@@ -1,13 +1,13 @@
 ---
-title: "Einzelhandelsperipheriegeräte"
-description: "In diesem Thema werden einige Konzepte in Verbindung mit Einzelhandelsperipheriegeräten beschrieben."
+title: Einzelhandelsperipheriegeräte
+description: In diesem Thema werden einige Konzepte in Verbindung mit Einzelhandelsperipheriegeräten beschrieben.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: c2539af8a29b580a10002bc8648505d42c7b8456
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347858"
 ---
-
 # <a name="retail-peripherals"></a>Einzelhandelsperipheriegeräte
 
 [!include [banner](includes/banner.md)]
@@ -40,7 +39,7 @@ Navigieren: Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **
 
 ### <a name="devices"></a>Geräte
 
-Navigieren: Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Geräte**. Ein Gerät ist eine Entität, die eine physische Instanz eines Gerätes darstellt, das dem POS-Register zugeordnet ist. Wenn ein Gerät eingerichtet wird, wird es einem POS-Register zugeordnet. Die Geräteentität verfolgt Informationen darüber, ob ein POS-Register aktiviert ist, welcher Client verwendet wird und das Anwendungspaket, das für ein bestimmtes Gerät bereitgestellt wurde. Geräte können zu folgenden Anwendungstypen zugeordnet werden: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, Retail Modern POS – iOS.
+Navigieren: Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Geräte**. Ein Gerät ist eine Entität, die eine physische Instanz eines Gerätes darstellt, das dem POS-Register zugeordnet ist. Wenn ein Gerät eingerichtet wird, wird es einem POS-Register zugeordnet. Die Geräteentität verfolgt Informationen darüber, ob ein POS-Register aktiviert ist, welcher Client verwendet wird und das Anwendungspaket, das für ein bestimmtes Gerät bereitgestellt wurde. Geräte können zu folgenden Anwendungsarten zugeordnet werden: Retail Modern POS, Retail Cloud POS, Retail Modern POS, Windows Phone, Retail Modern POS – Android und Retail Modern POS – IOS
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -119,7 +118,7 @@ Der Zahlungsgerätensupport wird durch den Zahlungskonnektor implementiert. Zahl
 
 Um die meisten Geräten mit Microsoft Dynamics 365 for Retail nutzen zu können, ist das branchenüblichen OLE POS für die primäre Einzelhandelsperipheriegerätplattform in Microsoft Dynamics 365 for Retail unterstützt. Der OLE für POS-Standard wurde vom National Retail Federation (NRF) erstellt, der branchenüblichen Kommunikationsprotokolle für Einzelhandlesperipheriegeräte erstellt. OPOS ist eine weithin anerkannte Implementierung des OLE für POS-Standards. Es wurde Mitte der 1990er entwickeltes und wurde mehrmals und aktualisiert. OPOS enthält eine Gerätetreiberarchitektur, die eine einfache Integration von POS-Hardware mit Windows-basierten POS-Systemen ermöglicht. OPOS steuert die Kommunikation zwischen kompatibler Hardware und der POS-Software. Ein OPOS-Steuerelement besteht aus zwei Teilen:
 
-- **Steuerelementobjekt** – Das Steuerelementobjekt für eine Einheitenklasse (z.B. Gerätenamen) stellt die Schnittstelle zum Softwareprogramm bereit. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) bietet einen Satz OPOS-Steuerobjekte, die Common Control Objects (CCOs) heißen. Das CCOs werden verwendet, um die POS-Komponente von Microsoft Dynamics 365 for Retail zu testen. Die Tests stellen sichern, dass über Microsoft Dynamics 365 for Retail über OPOS viele Einheitentypen unterstützt werden, vorausgesetzt, dass der Hersteller ein Serviceobjekt bereitstellt, um das für OPOS erstellt wird. Sie müssen jeden Einheitentyp nicht explizit testen.
+- **Steuerelementobjekt** – Das Steuerelementobjekt für eine Einheitenklasse (z.B. Gerätenamen) stellt die Schnittstelle zum Softwareprogramm bereit. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) bietet einen Satz OPOS-Steuerobjekte, die Common Control Objects (CCOs) heißen. Mit den CCOs wird die POS-Komponente von Microsoft Dynamics 365 for Retail getestet. Die Tests stellen sichern, dass über Microsoft Dynamics 365 for Retail über OPOS viele Einheitentypen unterstützt werden, vorausgesetzt, dass der Hersteller ein Serviceobjekt bereitstellt, um das für OPOS erstellt wird. Sie müssen jeden Einheitentyp nicht explizit testen.
 - **Serviceobjekt** – Das Serviceobjekt bietet die Kommunikation zwischen dem Steuerobjekt (CCO) und dem Gerät. Normalerweise wird das Serviceobjekt für ein Gerät von dem Gerätenhersteller bereitgestellt. Jedoch in bestimmten Fällen müssen Sie möglicherweise das Serviceobjekt von der Website des Herstellers herunterladen. Beispielsweise kann ein neueres Serviceobjekt verfügbar sein. Um die Adresse der Website des Herstellers suchen, prüfen Sie die Hardwaredokumentation.
 
 [![Steuerobjekt und -Serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -127,7 +126,7 @@ Um die meisten Geräten mit Microsoft Dynamics 365 for Retail nutzen zu können,
 Steuerobjekt- und Serviceobjekt-Unterstützung für die OPOS-Implementierung von Datenbanken für POS stellen sicher, dass die Gerätenhersteller und POS-Herausgeber der Standardspeicherposition ordnungsgemäß implementieren, und POS-Systemen unterstützte Geräte zusammenarbeiten können, wenn sie zuvor nicht zusammen getestet wurden.
 
 > [!NOTE]
-> OPOS-Support wird sichergestellt für alle Geräte, die OPOS-Treiber haben. Microsoft Dynamics 365 for Retail muss den Einheitentyp oder Klassen über OPOS unterstützen. Darüber hinaus können ggf. Serviceobjekte nicht unbedingt mit der aktuellen Version des CCOs auf dem aktuellen Stand befindet. Sie sollten sich bewusst sein, dass sich im Allgemeinen die Servicequalitätsobjekte unterscheidet.
+> OPOS-Support wird sichergestellt für alle Geräte, die OPOS-Treiber haben. Microsoft Dynamics 365 for Retail muss zunächst diesen Gerätetyp oder diese Klasse über OPOS unterstützen. Darüber hinaus können ggf. Serviceobjekte nicht unbedingt mit der aktuellen Version des CCOs auf dem aktuellen Stand befindet. Sie sollten sich bewusst sein, dass sich im Allgemeinen die Servicequalitätsobjekte unterscheidet.
 
 ### <a name="windows"></a>Windows
 
@@ -203,7 +202,7 @@ Weitere Informationen finden Sie unter [Retail-Hardwarestation-Konfiguration und
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Modern POS für Windows-Einstellung und -Konfiguration
 
-Weitere Informationen finden Sie unter [Retail Modern POS-Konfiguration und -Installation](retail-modern-pos-device-activation.md).
+Weitere Informationen finden Sie unter [Retail Modern POS-Konfiguraton und -Installation](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-Geräte Einrichtung und Konfiguration
 
@@ -296,7 +295,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <ul>
 <li>OPOS</li>
 <li>Netzwerk
-<blockquote>[!NOTE] Nur eine Kassenlade kann eingerichtet werden, wenn das <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</blockquote>
+<blockquote>HINWEIS: Es kann nur eine Kassenlade eingerichtet werden, wenn das <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</blockquote>
 </li>
 </ul>
 </td>
@@ -307,7 +306,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <ul>
 <li>OPOS</li>
 <li>Netzwerk
-<blockquote>[!NOTE] Nur eine Kassenlade kann eingerichtet werden, wenn das <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</blockquote>
+<blockquote>HINWEIS: Es kann nur eine Kassenlade eingerichtet werden, wenn das <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</blockquote>
 </li>
 </ul>
 </td>
@@ -375,7 +374,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <ul>
 <li>OPOS</li>
 <li>Windows-Treiber
-<blockquote>[!NOTE] Für Windows-Drucker in einem Netzwerk, muss der Benutzer der Hardwarestation über die Berechtigung verfügen, den Drucker zuzugreifen.</blockquote>
+<blockquote>HINWEIS: Für Windows-Drucker in einem Netzwerk, muss der Benutzer der Hardwarestation über die Berechtigung verfügen, den Drucker zuzugreifen.</blockquote>
 </li>
 <li>Netzwerk</li>
 </ul>
@@ -405,7 +404,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <ul>
 <li>OPOS</li>
 <li>Netzwerk
-<blockquote>[!NOTE] Nur eine Kassenlade pro Hardwareprofil kann eingerichtet werden, wenn <strong>Verwenden der freigegebenen Schicht </strong>für die Kassenlade konfiguriert wird.</blockquote>
+<blockquote>HINWEIS: Nur eine Kassenlade pro Hardwareprofil kann eingerichtet werden, wenn <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</blockquote>
 </li>
 </ul>
 </td>
@@ -470,7 +469,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <ul>
 <li>OPOS</li>
 <li>Windows-Treiber
-<blockquote>[!NOTE] Für Windows-Drucker in einem Netzwerk, muss der Benutzer der Hardwarestation über die Berechtigung verfügen, den Drucker zuzugreifen.</blockquote>
+<blockquote>HINWEIS: Für Windows-Drucker in einem Netzwerk, muss der Benutzer der Hardwarestation über die Berechtigung verfügen, den Drucker zuzugreifen.</blockquote>
 </li>
 <li>Netzwerk</li>
 </ul>
@@ -492,7 +491,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <ul>
 <li>OPOS</li>
 <li>Netzwerk
-<blockquote>[!NOTE] Nur eine Kassenlade pro Hardwareprofil kann eingerichtet werden, wenn <strong>Verwenden der freigegebenen Schicht </strong>für die Kassenlade konfiguriert wird.</blockquote>
+<blockquote>HINWEIS: Nur eine Kassenlade pro Hardwareprofil kann eingerichtet werden, wenn <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</blockquote>
 </li>
 </ul>
 </td>
@@ -523,7 +522,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 Weitere Informationen dazu, wie Sie Hardwareprofile erstellt finden Sie unter [Definieren und Verwalten von Kanal-Clients, einschließlich Registern und Hardwarestationen](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> Für Microsoft Dynamics 365 for Retail, Version 1611 wird das Hardwarestationsprofil nicht mehr verwendet. Attribute, die Sie bereits im Vorfeld im Hardwarestationsprofil einrichten, sind jetzt Teil der Hardwarestation selbst.
+> Für Microsoft Dynamics 365 for Retail-Version 1611 wird das Hardware-Stationsprofil nicht mehr verwendet. Attribute, die Sie bereits im Vorfeld im Hardwarestationsprofil einrichten, sind jetzt Teil der Hardwarestation selbst.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS für Windows mit einer IPC-Hardwarestation (integriert)
 
@@ -743,7 +742,6 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine dedizierte (nicht fr
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Benutzerdefiniert    | Per Netzwerk verbunden     |
-| Star         | TSP100   | OPOS      | Erfordert TSP650II-Treiber |
 | HP           | F7M67AA  | OPOS      | USB               |
 
 #### <a name="bar-code-scanner"></a>Strichcodescanner
@@ -818,7 +816,6 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Benutzerdefiniert    | Per Netzwerk verbunden     |
-| Star         | TSP100   | OPOS      | Erfordert TSP650II-Treiber |
 | HP           | F7M67AA  | OPOS      | USB               |
 
 #### <a name="payment-terminal"></a>Zahlungsterminal
@@ -845,7 +842,7 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 - Der Computer, der Modern POS ausführt, vertraut dem Zertifikat, das auf dem Computer verwendet wird, der die Hardwarestation ausführt.
 
     - Wenn Sie diese Einstellung überprüfen, gehen Sie in einem Webbrowser zu der folgenden URL: `https://<Computer Name>:<Port Number>/HardwareStation/ping`.
-    - Diese URL nutzt ein Ping, um sicherzustellen, dass auf den Computer zugegriffen werden kann, und der Browser gibt an, ob dem Zertifikat vertraut wird. (Wenn Sie z.B Internet Explorer nutzen, wird ein Schlosssymbol in die Adressenleiste angezeigt. Wenn Sie auf dieses Symbol klicken, überprüft Internet Explorer, ob dem Zertifikat derzeit vertraut wird. Sie können das Zertifikat auf dem lokalen Computer installieren, indem Sie die Details des Zertifikats anzeigen).
+    - Diese URL nutzt ein Ping, um sicherzustellen, dass auf den Computer zugegriffen werden kann, und der Browser gibt an, ob dem Zertifikat vertraut wird. (Wenn Sie z.B Internet Explorer nutzen, wird ein Schlosssymbol in der Adressenleiste angezeigt. Wenn Sie auf dieses Symbol klicken, überprüft Internet Explorer, ob dem Zertifikat derzeit vertraut wird. Sie können das Zertifikat auf dem lokalen Computer installieren, indem Sie die Details des Zertifikats anzeigen).
 
 - Auf dem Computer, der die Hardwarestation ausführt, ist der Port, der von der Hardwarestation verwendet wird, in der Firewall geöffnet.
 - Die Hardwarestation hat ordnungsgemäß installierte Handelskontoinformationen über das Handelsinformations-Installationstool, das zum Ende der Installationsprogramms für die Hardwarestation ausgeführt wird.
@@ -894,4 +891,3 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Einzelhandels-Peripheriesimulator](dev-itpro/retail-peripheral-simulator.md)
-

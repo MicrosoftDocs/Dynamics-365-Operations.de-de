@@ -1,13 +1,13 @@
 ---
 title: Projektressourcen
-description: "Dieser Artikel enthält Informationen zu Projektressourcen."
+description: Dieser Artikel enthält Informationen zu Projektressourcen.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectsListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 34f80d283bb710d7db3137a439dbe8dc67d22682
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351653"
 ---
-
 # <a name="project-resourcing"></a>Projektressourcen
 
 [!include [banner](../includes/banner.md)]
 
 Dieser Artikel enthält Informationen zu Projektressourcen.
 
-Eine Herausforderung für Projektmanager und Ressourcen-Manager während der Projektplanungsphase ist die Ressourcenzuordnung bei der sie die richtige Ressource für die Arbeit an einem Projekt festlegen und reservieren müssen. In Microsoft Dynamics 365 for Finance and Operations können Sie mit Ressourcenfunktionalitäten für Projekte Rollen definieren, die als temporäre Ressourcen behandelt werden, die für ein bestimmtes Arbeitspaket oder Teil des Projekts reserviert werden können. Mit diesem Ressourcentyp können Projektmanager und Ressourcen-Manager die folgenden Aufgaben abschließen:
+Eine Herausforderung für Projektmanager und Ressourcen-Manager während der Projektplanungsphase ist die Ressourcenzuordnung bei der sie die richtige Ressource für die Arbeit an einem Projekt festlegen und reservieren müssen. In Microsoft Dynamics 365 for Finance and Operations können Sie mit Ressourcenfunktionalitäten für Projekte Rollen definieren, die als temporäre Ressourcen behandelt werden, die einem bestimmten Arbeitspaket oder Teil des Projekts reservieren werden können. Mit diesem Ressourcentyp können Projektmanager und Ressourcen-Manager die folgenden Aufgaben abschließen:
 
 - Definieren einer Rolle, die die erforderlichen Kompetenzen hat, um den Ressourcen zu entsprechen.
 - Verwenden von Rollen, um einen ersten Auftragsplan zu definieren, der auf den reservierten Ressourcen basiert.
@@ -351,4 +350,3 @@ Nachdem Sie die vorherigen Aufgaben abgeschlossen haben, können Sie die folgend
 ## <a name="monitor-project-teams"></a>Überwachung von Projektteams
 1. Wählen Sie auf der Seite **Alle Projekte** den **Projekt-ID**-Link für das **XYZ-Upgrade-Phase 2**-Projekt aus.
 2. Überprüfen Sie auf dem **Projektteam und Planung**-Inforegister, dass die Projektressourcen korrekt aufgelistet werden.
-

@@ -1,13 +1,13 @@
 ---
-title: "Verkaufsstellen-(POS)-Verbesserungen für serialisierte Produkte"
-description: "In diesem Thema werden Verbesserungen aufgelistet, die an serialisierten Produkten vorgenommen wurden, damit Sie Zeit sparen können und produktiver sind."
+title: Verkaufsstellen-(POS)-Verbesserungen für serialisierte Produkte
+description: In diesem Thema werden Verbesserungen aufgelistet, die an serialisierten Produkten vorgenommen wurden, damit Sie Zeit sparen können und produktiver sind.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,14 +16,13 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346202"
 ---
-
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Verkaufsstellen-(POS)-Verbesserungen für serialisierte Produkte
 
 [!include [banner](includes/banner.md)]
@@ -43,4 +42,3 @@ Basierend auf den Einstellungen in „Retail Zentralverwaltung” können Produk
 - **Seriennummern sind nicht erforderlich, um Debitorenaufträge erteilen zu können** – Debitorenaufträge können in einem Shop erteilt werden und in einem anderen ausgeführt werden. Ein Kassierer, der einen Kundenauftrag erteilt, muss nicht die Seriennummer angeben. Die Seriennummer wird während der Entnahme oder des Entnahmeschritts angegeben. Eine Seriennummer muss jedoch für alle Positionsartikel angegeben werden, für die der Liefertyp **Zum Mitnehmen** ausgewählt ist. Andernfalls kann die Transaktion nicht abgeschlossen werden.
 - **Serialisierte Produkte werden nicht in der Buchungsansicht aggregiert** – Die Einstellung **Produkte aggregieren** in der Feldgruppe **Terminal** auf der Seite **Funktionsprofil** ermöglicht es ihnen, dieselben nicht serialisierten Produkte in der Buchungsansicht zu aggregieren. Wenn dieselben Produkte aggregiert werden, können sie leichter im Transaktionsraster angezeigt werden. Da jedoch Seriennummern im Allgemeinen eindeutig sind und Vertriebsmitarbeiter keine Seriennummern bis zum Auschecken eingeben müssen, gilt die Einstellung **Produkte aggregieren** nicht für serialisierte Produkte. Daher werden serialisierte Produkte nicht in der Transaktionsansicht aggregiert, wenn die Einstellung **Produkte aggregieren** aktiviert ist.
 - **Möglichkeit, die Erfassungen nach Seriennummer zu durchsuchen** – Die Erfassungen können jetzt zusätzlich über Seriennummern durchsucht werden. Öffnen Sie hierfür den Arbeitsgang „Erfassungen”, und klicken Sie auf die Schaltfläche „Erweiterte Suche” in der App-Leiste. Mithilfe der Schaltfläche „Filter hinzufügen” kann ein Filter angewendet werden, um auch nach den Seriennummern zu suchen.
-

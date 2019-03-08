@@ -1,13 +1,13 @@
 ---
 title: Transaktionen in der Verkaufsstelle (POS) anhalten und fortsetzen
-description: "In diesem Thema wird erläutert, wie Transaktionen unterbrochen und später fortgesetzt werden können oder sie in einem anderen Register fortsetzen können mithilfe von Microsoft Dynamics 365 for Retail."
+description: In diesem Thema wird erläutert, wie Benutzer laufende Transaktionen aussetzen und sie später oder in einem anderen Register mit Microsoft Dynamics 365 for Retail wiederaufnehmen können.
 author: jblucher
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ffb04609318c7de4b9ef729a8e03a7f9395806b8
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333897"
 ---
-
 # <a name="suspend-and-resume-transactions-in-the-point-of-sale-pos"></a>Transaktionen in der Verkaufsstelle (POS) anhalten und fortsetzen
 
 [!include [banner](includes/banner.md)]
@@ -83,4 +82,3 @@ Um schnell und einfach eine unterbrochene Buchung aufzurufen, scannen Sie den St
 ### <a name="void-a-suspended-transaction"></a>Ausgesetzte Buchung stornieren
 
 Sie können unterbrochene Buchungen stornieren, indem Sie die Buchung zuerst erneut aufrufen und dann **Transaktion stornieren** ausführen oder die Buchung in der Liste **Transaktion zurückrufen** auswählen und **Storniert** auf der App-Leiste auswählen. Alternativ kann der Shop konfiguriert werden, damit Benutzer aufgefordert werden, unterbrochene Transaktionen zu stornieren, wenn sie ihre Schicht schließen.
-

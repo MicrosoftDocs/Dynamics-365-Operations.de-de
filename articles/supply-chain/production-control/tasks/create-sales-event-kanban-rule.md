@@ -1,13 +1,13 @@
---- 
-title: "Kanban-Regel für ein Verkaufsereignis erstellen"
-description: "Ziel dieser Prozedur ist es, die notwendigen Einstellungen vorzunehmen, um eine Kanban-Regel zu erstellen, die während der Auftragserstellung ausgelöst wird."
+---
+title: Kanban-Regel für ein Verkaufsereignis erstellen
+description: Ziel dieser Prozedur ist es, die notwendigen Einstellungen vorzunehmen, um eine Kanban-Regel zu erstellen, die während der Auftragserstellung ausgelöst wird.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d2bee6e81acd029406c95237f0b4ba4ab2565ea1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f1f66157b2e74ad1b490e10112cbc121ac9826fb
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342016"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Kanban-Regel für ein Verkaufsereignis erstellen
 
@@ -73,5 +73,4 @@ Ziel dieser Prozedur ist es, die notwendigen Einstellungen vorzunehmen, um eine 
 1. Klicken Sie auf "Produkt und Beschaffung".
 2. Klicken Sie auf "Bedarfsverursacherstruktur anzeigen".
     * Beachten Sie, dass ein Kanban mit derselben Menge wie die Auftragsposition erstellt wird. Sie können außerdem die Materialabgänge sehen, die erforderlich sind, um L0050 zu erzeugen. Dies ist der letzte Schritt in diesem Verfahren.  
-
 

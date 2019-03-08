@@ -1,13 +1,13 @@
 ---
-title: "Mobiler Arbeitsbereich für Projektzeiterfassung"
-description: "Dieses Thema enthält Informationen zur Projektzeiterfassungs im mobilen Arbeitsbereich. Dieser Verknüpfung ermöglicht Benutzern Zeit für ein Projekt einzugeben und zu speichern, indem sie das mobile Gerät verwenden."
+title: Mobiler Arbeitsbereich für Projektzeiterfassung
+description: Dieses Thema enthält Informationen zur Projektzeiterfassungs im mobilen Arbeitsbereich. Dieser Verknüpfung ermöglicht Benutzern Zeit für ein Projekt einzugeben und zu speichern, indem sie das mobile Gerät verwenden.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -18,23 +18,22 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: e671fe6e7c99bfb6d66f3b00560c3b0c404d2343
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9bf79af6eea6f899158fc3c8d523587cb11c90ad
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333000"
 ---
-
 # <a name="project-time-entry-mobile-workspace"></a>Mobiler Arbeitsbereich für Projektzeiterfassung
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zur **Projektzeiterfassungs** im mobilen Arbeitsbereich. Dieser Verknüpfung ermöglicht Benutzern Zeit für ein Projekt einzugeben und zu speichern, indem sie das mobile Gerät verwenden.
 
-Dieser mobile Arbeitsbereich soll mit der Mobil-App für Microsoft Dynamics 365 für Unified Operations verwendet werden. 
+Dieser mobile Arbeitsbereich soll mit der Microsoft Dynamics 365 for Unified Operations Mobile-App verwendet werden. 
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 Im Rahmen ihrer täglichen Arbeit sind Projektressourcen häufig am Stadt oder am Reisen. Der mobile Arbeitsbereich **Projektzeiterfassung** ermöglicht Benutzern, die verrechenbare oder nicht verrechenbare Zeit im Projekt auf dem mobilen Gerät ihrer Wahl einzugeben. Deshalb kann die Projektressource die Zeiterfassungen jederzeit und überall erfassen. Sie können auch Zeiterfassungen anzeige , die bereits erfasst wurden. 
 
 Speziell im mobilen Arbeitsbereich **Projektzeiterfassung**, können Benutzer von mobilen Arbeitsbereichen diese Aufgaben ausführen:
@@ -48,11 +47,11 @@ Speziell im mobilen Arbeitsbereich **Projektzeiterfassung**, können Benutzer vo
 ## <a name="prerequisites"></a>Voraussetzungen
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operations verwenden
-Wenn Microsoft Dynamics 365 for Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Projektzeiterfassung** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operationsverwenden
+Wenn Microsoft Dynamics 365 for Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Projektzeiteintrag** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder später verwenden.
-Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder später für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
+Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
 
 <table>
 <thead>
@@ -69,7 +68,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisier
 <td>Systemadministrator</td>
 <td>4018050 KB ist ein X++-Aktualisierungs- oder -Metadatenhotfix, der den mobilen Arbeitsbereich <strong>Projektzeiterfassung</strong> enthält. Um KB 4018050 muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Laden Sie den Metadatenhotfix für Microsoft Dynamics Lifecycle Services (LCS) herunter</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Den Metadatenhotfix von Microsoft Dynamics Lifecycle Services (LCS) herunterladen</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installieren Sie den Metadatenhotfix</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Erstellen eines zur Bereitstellung geeigneten Paket</a>, das die <strong>ApplicationSuite</strong> und <strong>ProjectMobile</strong> Modelle enthält und laden Sie dann das zur Bereitstellung geeignete Paket in LCS hoch.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Das bereitstellbare Paket übernehmen</a>.</li>
@@ -88,7 +87,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisier
 
 Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:
 
--   [Für Androide-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Bei der mobile App anmelden
@@ -114,4 +113,3 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 11. Positionseigenschaft auswählen.
 12. Geben Sie optional alle externen oder internen Kommentare ein.
 13. Wählen Sie **Fertig**.
-

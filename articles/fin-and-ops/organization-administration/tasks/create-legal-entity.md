@@ -1,13 +1,13 @@
---- 
+---
 title: Erstellen Sie eine juristische Person
-description: "Eine juristische Person ist eine Organisation, die über die Registrierung bei einer Behörde identifiziert wird."
+description: Eine juristische Person ist eine Organisation, die über die Registrierung bei einer Behörde identifiziert wird.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntity, OMNewLegalEntity
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2b1869afa9ebbfc81ca321c57cc8e01739103d16
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 89d3babc4447ca7398521b93634db7ecb6cfb5de
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338543"
 ---
 # <a name="create-a-legal-entity"></a>Erstellen Sie eine juristische Person
 
@@ -57,5 +57,4 @@ Eine juristische Person ist eine Organisation, die über die Registrierung bei e
 16. Erweitern Sie den Abschnitt "Steuererklärung (US 1099)".
     * Geben Sie im Abschnitt "Steuererklärung (US 1099)" die Informationen zur Steuererklärung (US 1099) für die juristische Person ein.  
 17. Klicken Sie auf "Speichern".
-
 

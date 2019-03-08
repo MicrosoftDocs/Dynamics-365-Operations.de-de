@@ -1,13 +1,13 @@
 ---
-title: "Einrichten von Callcenterkanälen"
-description: "Dieses Thema enthält Informationen dazu, wie Aufträge für Callcenter mithilfe Microsoft Dynamics 365 for Retail verarbeitet werden."
+title: Einrichten von Callcenterkanälen
+description: Die Themen dieses Abschnitts enthalten Informationen zum Verarbeiten von Bestellungen für Callcenter mit Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334840"
 ---
-
 # <a name="set-up-call-center-channels"></a>Einrichten von Callcenterkanälen
 
 [!include [banner](includes/banner.md)]
 
-Ein Unternehmen kann Telekonferenzcenterkanäle in Microsoft Dynamics 365 for Retail definieren. Callcenterkanäle werden bei **Einzelhandel** \> **Messagingkanäle** \> **Callcenter** \> **Alle Callcenter** konfiguriert und sie sind für eine juristische Person bestimmt.
+Ein Unternehmen kann Callcenter-Kanäle in Microsoft Dynamics 365 for Retaildefinieren. Callcenterkanäle werden bei **Einzelhandel** \> **Messagingkanäle** \> **Callcenter** \> **Alle Callcenter** konfiguriert und sie sind für eine juristische Person bestimmt.
 
 Wenn ein neuer Callcenterkanal erstellt wird, wird er systematisch einer Organisationseinheitsnummer zugewiesen. Da Callcenter als Organisationseinheiten erstellt werden, können Benutzer den Callcenterkanal zu verschiedenen Kleinfunktionen, z. B. Sortimente, Katalogen und bestimmte Lieferarten verknüpfen.
 
@@ -77,7 +76,6 @@ Wenn Sie das Callcenterkanal definieren, müssen Sie Kanalbenutzer mit dem Callc
 
 Standardmäßig wird die Markierung **Retailverkauf** im Auftragskopf für alle Aufträge aktiviert, die Callcenterbenutzer erstellen. Hierbei können Aufträge vom Preis des Systems und Funktionen der verkaufsfördernden Maßnahmen profitieren.
 
-Benutzer, die nicht mit einem Callcenterkanal verknüpft sind, nutzen die Standardauftragserfassungsfunktionen von Microsoft Dynamics 365 for Finance and Operations. Aufträge, die diese Benutzer durch das Auftragseingabeformular eingeben, werden nicht als Retailaufträge systematisch identifiziert. Darüber hinaus sind diese Aufträge, die von diesen Benutzern eingegeben werden, nicht Auftragsabschlussregeln, Einzelhandelspreislogik oder anderen Auftragsprüfungen unterworfen, die in der Callcenterkanalkonfiguration oder im Systemparameter des Callcenters definiert werden können.
+Benutzer, die nicht mit einer Callcenterkanalverwendung die von Microsoft Dynamics 365 for Finance and OperationsStandardauftragserfassungsfunktionen verknüpft werden. Aufträge, die diese Benutzer durch das Auftragseingabeformular eingeben, werden nicht als Retailaufträge systematisch identifiziert. Darüber hinaus sind diese Aufträge, die von diesen Benutzern eingegeben werden, nicht Auftragsabschlussregeln, Einzelhandelspreislogik oder anderen Auftragsprüfungen unterworfen, die in der Callcenterkanalkonfiguration oder im Systemparameter des Callcenters definiert werden können.
 
 Nachdem Sie die Konfiguration des Callcenters abgeschlossen und Kanalbenutzer definiert haben, um das gewünschte Systemverhalten sicherzustellen, überprüfen Sie, ob alle erforderlichen Callcenterparameter bei **Retail** \> **Kanaleinstellung** \> **Callcenter-Einstellung** \> **Callcenter-Parameter** definiert sind. Überprüfen Sie, ob auch zugehörige Nummernkreise definiert sind.
-

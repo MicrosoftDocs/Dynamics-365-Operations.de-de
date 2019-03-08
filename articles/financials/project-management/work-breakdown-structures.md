@@ -1,13 +1,13 @@
 ---
-title: "Projektstrukturpläne"
-description: "Ein Projektstrukturplan (PSP) ist eine Beschreibung der Arbeit, die für ein Projekt ausgeführt wird. Sie ist eine Hierarchie von Aufgaben, die das Verständnis des Projektteams zur Zusammenstellung der Arbeit und die Größe, Kosten und Dauer der einzelnen Komponenten oder Aufgaben darstellt."
+title: Projektstrukturpläne
+description: Ein Projektstrukturplan (PSP) ist eine Beschreibung der Arbeit, die für ein Projekt ausgeführt wird. Sie ist eine Hierarchie von Aufgaben, die das Verständnis des Projektteams zur Zusammenstellung der Arbeit und die Größe, Kosten und Dauer der einzelnen Komponenten oder Aufgaben darstellt.
 author: KimANelson
 manager: AnnBe
 ms.date: 06/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df4bc39f8df80580261102941712622ed59262bd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358898"
 ---
-
 # <a name="work-breakdown-structures"></a>Projektstrukturpläne
 
 [!include [banner](../includes/banner.md)]
@@ -90,7 +89,7 @@ Sie können die folgenden Hierarchiearbeitsgänge abschließen, um die Erstellun
 
 **Neue Aufgabe** Jede neue Aufgabe, die Sie erstellen, wird automatisch unter dem Stammknoten erstellt und es wird automatisch eine PSP-Nummer zugewiesen. Die PSP-Nummer stellt die Bearbeitungsebene in der Hierarchie dar. Für Aufgaben in der ersten Ebene unter der Projektstammaufgabe, wird ein Nummerierungsschema von 1, 2, 3, usw. verwendet. Für Aufgaben unter der ersten Ebene wird ein Nummerierungsschema von 1.1, 1.2, 1.3, usw. verwendet. Für jede Ebene, die unter einer vorherigen Ebene hinzugefügt wird, werden neuen Unternummern hinzugefügt. 
 
-So können Sie die PSP-Nummerierung zurzeit nicht anpassen. 
+So können Sie die PSP-Nummerierung zurzeit nicht anpassen. 
 
 **Herunterstufen von Aufgaben** Wenn Sie eine Aufgabe herunterstufen, wird diese zum untergeordneten Element der Aufgabe, die ihr vorangeht. Die PSP-Nummer der neuen untergeordneten Aufgabe wird automatisch anhand der PSP-Nummer ihres neuen übergeordneten Artikels neu berechnet. Die übergeordnete Aufgabe ist jetzt ein Zusammenfassung- oder Containeraufgabe und wird daher zu einer konstituierenden Aufgabe. 
 
@@ -314,7 +313,6 @@ Aufwand = Anzahl von Ressourcen × Dauer × Anzahl der Stunden im Standardarbeit
 Sie können alle Planungsfehlern gleichzeitig beheben, indem Sie auf **Alle Planungsfehlern korrigieren** klicken. 
 
 Alternativ können Sie Planungsfehler einzeln korrigieren, indem Sie auf das Warnsymbol für jede Aufgabe klicken.
-
 
 
 

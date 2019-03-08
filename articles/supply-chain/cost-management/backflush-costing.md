@@ -1,13 +1,13 @@
 ---
-title: "Nachkalkulation für Produktionskosten"
-description: "Dieses Thema enthält das Konzepts der Nachkalkulation für Produktionskosten, die für Lean Manufacturing verwendet werden."
+title: Nachkalkulation für Produktionskosten
+description: Dieses Thema enthält das Konzepts der Nachkalkulation für Produktionskosten, die für Lean Manufacturing verwendet werden.
 author: cvocph
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9fe717752da4c697cf0d896c0d40832330f0d118
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352711"
 ---
-
 # <a name="backflush-costing"></a>Nachkalkulation für Produktionskosten
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,7 @@ Produkte werden aus dem Produktionsfluss unter den folgenden Bedingungen erhalte
 Produkte, die vom Produktionsfluss empfangen werden, werden vom RIF zu den Standardkosten abgezogen.
 
 ## <a name="products-in-wip"></a>Produkte in RIF
-Mit dem RIF-Modell von Manufacturing in Microsoft Dynamics 365 for Finance and Operations können Sie den Kanbanstatus der Handhabungseinheit verwenden, um das Material, die Halbfertigprodukte und Produkte, die Teil von RIF sind, zu verwalten.
+Mit dem RIF-Modell von Lean Manufacturing in Microsoft Dynamics 365 for Finance and Operations können Sie den Kanbanstatus der Handhabungseinheit verwenden, um das Material, die Halbfertigprodukte und Produkte, die Teil von RIF sind, zu verwalten.
 
 -   **Zugewiesen** - Der Kanban kann Material verbraucht haben, das in RIF berechnet wird.
 -   **Eingegangen** -, Wenn das Kanban sich auf eine letzte Aktivität bezieht, in der **Aktualisierungsbestand bei Empfang** auf **Nein** festgelegt ist, stellt er eine volle Handhabungseinheit eines Produkts oder des Halbfertig-Produdukts dar, das nicht dem Lager erfasst wird.
@@ -122,7 +121,6 @@ Sie sollten Nachkalkulationen in regelmäßigen Abständen ausführten, um den W
     -   Alle indirekten Kosten, die für das verbrauchte Material innerhalb der Periode berechnet werden, sind von RIF kalkuliert und abgezogen. Die verbleibenden indirekten Kosten werden als Abweichung gebucht.
 
 5.  Berechnen Sie die Produktionsabweichungen zu den Standardkosten. Die Abweichung wird basierend pro Kostengruppe berechnet.
-
 
 
 

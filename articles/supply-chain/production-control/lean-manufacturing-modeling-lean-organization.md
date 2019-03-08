@@ -1,13 +1,13 @@
 ---
 title: Modellierung einer Lean-Organisation
-description: "Der Artikel enthält Informationen zu zentralen Konzepten für die Modellierung einer Lean-Organisation."
+description: Der Artikel enthält Informationen zu zentralen Konzepten für die Modellierung einer Lean-Organisation.
 author: cvocph
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 254616174d3f3c449e2a55dfc5f080d6276105b0
 ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.contentlocale: de-de
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350986"
 ---
-
 # <a name="modeling-a-lean-organization"></a>Modellierung einer Lean-Organisation
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ In den Produktionsszenarien, die auf Produktionsaufträgen basieren, wird Materi
 
 Um Lieferzeiten und überschüssigen Bestand zwischen den Ressourcen zu reduzieren, die von der Chargenproduktion verursacht werden, führt Lean Manufacturing Kanbanauffüllung und Supermärkte in der Fertigung und Lagerort-Wiederbeschaffung ein. Diese Funktionen unterbrechen normalerweise die Produktion von teilweise unabhängigec Kanbanzyklen. Die Auffüllung eines Kanbans für ein Halbfertigprodukt wird nicht mehr durch einen Auftrag für ein Fertigprodukt ausgelöst. 
 
-Um einen Produktions- und Kostenkontext für die verschiedenen Kanbanszenarien neu einzurichten, die in Microsoft Dynamics 365 for Finance and Operations vorgeschlagen werden, wurden aktivitätsbasierte Produktionsflüsse als Grundlage des Lean Manufacturing eingeführt. Alle Kanban-Regeln beziehen sich auf diese vordefinierte Struktur. Das aktivitätsbasierte Modell unterstützt die Einstellung umfassender Szenarien. Jedoch fügt dieses Modell keine Komplexität für die Fertigungsbereichsarbeitskräfte hinzu, da alle Szenarien die gleiche aktivitätsbasierte Benutzeroberfläche verwenden.
+Um einen Produktions- und Kostenkontext für die verschiedenen Kanbanszenarien neu einzurichten, die in Microsoft Dynamics 365 for Finance and Operations vorgeschlagen werden, werden die aktivitätsbasierten Produktionsflüsse als Grundlage des Lean Manufacturing eingeführt. Alle Kanban-Regeln beziehen sich auf diese vordefinierte Struktur. Das aktivitätsbasierte Modell unterstützt die Einstellung umfassender Szenarien. Jedoch fügt dieses Modell keine Komplexität für die Fertigungsbereichsarbeitskräfte hinzu, da alle Szenarien die gleiche aktivitätsbasierte Benutzeroberfläche verwenden.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halbfertigprodukte (Nicht-Stücklisten-Ebenen)
 Lean Manufacturing integriert Kanbans für inventarisierte Produkte und Halbfertigprodukte in einem einzigen Framework und bietet eine einheitliche Benutzerfreundlichkeit für alle Anfragen. Aufgrund dieser Architektur, müssen zusätzliche Stücklistenebenen nicht mehr erfasst werden, um die für Halbfertigprodukte zu verwendende Kanbans zu aktivieren. Diese Architektur hilft zudem dabei, Lagerbuchungen auf ein Minimum zu beschränken.
@@ -65,7 +64,6 @@ Um die fortlaufende Verbesserung zu unterstützen, werden die Produktionsflüsse
 
 ## <a name="simplicity"></a>Einfachheit
 Für die Implementierung des Lean Manufacturing haben wir den Produktionsfluss und den Aktivitätsansatz ausgewählt, der die Modellierung von einfachen und komplexen Produktionsszenarien in einer einzelnen skalierbaren Architektur ermöglicht. Eine genauere Betrachtung des Aktivitätskonzepts zeigt eine neue Einfachheit für die Benutzer, die es wirklich brauchen: Die Fertigungs- und die Logistikarbeitskräfte. Durch Berichte anhand aktivitätsbasierter Einzelvorgänge anstelle der Lagerbuchungen überträgt eine einheitliche Benutzeroberfläche für alle Lean Manufacturing-Varianten die Geschäftskomplexität von der Benutzeroberfläche dahin, wo sie gehört: zum Produktionsfluss als Grundlage des Lean Manufacturing.
-
 
 
 

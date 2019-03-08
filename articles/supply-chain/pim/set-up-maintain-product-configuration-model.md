@@ -5,9 +5,9 @@ author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10faa26a53b026a70487124d696b0313d1f5814d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8504eb789b0d449cf2e29d4314d189dc0b8a6b43
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360669"
 ---
-
 # <a name="set-up-a-product-configuration-model"></a>Einrichten eines Produktkonfigurationsmodells
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Dieser Artikel beschreibt die Schritte zum Einrichten und Erstellen eines Produk
 | Testen Sie ein Produktkonfigurationsmodell.                         | Testen Sie das Produktkonfigurationsmodell, entweder von der Seite **Details zum einschränkungsbasierten Produktkonfigurationsmodell** oder der Seite **Liste der Produktkonfigurationsmodelle** aus. Beim Testen der Produktkonfigurationsmodelle wird der Produktmodellkonfigurationsprozess simuliert, der während der Auftragsbehandlung abläuft.                                                                                                |
 | Erstellen Sie ein Produktkonfigurationsmodell-Vorlage.                | Erstellen Sie eine Produktkonfigurationsmodell-Vorlage auf der Seite **Konfigurationsvorlage**. Eine Konfigurationsvorlage enthält Werte für Attribute im Produktkonfigurationsmodell. Wählen Sie die Attributwerte auf der Seite **Position konfigurieren** aus. Sie können auswählen, eine Produktmodell-Konfigurationsvorlage während der Produktmodellkonfiguration zu laden.                                                   |
 | Konfigurieren Sie einen Artikel.                                          | Produktkonfigurationsmodelle können aus einem Auftrag, einem Verkaufsangebot, einer Bestellung oder einem Produktionsauftrag heraus konfiguriert werden.                                                                                                                                                                                                                                                                           |
-
 
 
 

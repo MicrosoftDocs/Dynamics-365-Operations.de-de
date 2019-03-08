@@ -1,13 +1,13 @@
 ---
-title: "Materialverbrauch mithilfe eines mobilen Geräts registrieren"
-description: "In diesem Thema wird ein Workflow beschrieben, der die Erfassung des Rohmaterialverbrauchs in der Produktion verwendet, indem eine mobiles Gerät verwendet wird."
+title: Materialverbrauch mithilfe eines mobilen Geräts registrieren
+description: In diesem Thema wird ein Workflow beschrieben, der die Erfassung des Rohmaterialverbrauchs in der Produktion verwendet, indem eine mobiles Gerät verwendet wird.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5b9c73cf9b23eb8ad9ed872b76b92b395609e9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b84b63ec519ae686b55905170c956fcb2b08334a
-ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336128"
 ---
-
 # <a name="register-material-consumption-using-a-mobile-device"></a>Materialverbrauch mithilfe eines mobilen Geräts registrieren
 
 [!include [banner](../includes/banner.md)]
@@ -41,21 +40,21 @@ Dieser Workflow ist relevant, wenn es eine stringente Anforderung für die Nachw
 
 Ein fortlaufender Produktionsrozess (5) verbraucht das Rohmaterial in der RM-100. Das Material ist am Lagerplatz Bulk-001 (1) beim (1) PL-Kennzeichen mit zwei Chargen, B1 und, B2, für eine Menge von 100 Kilogramm verfügbar. Lagerortarbeit (2) ist für RM-100 freigegeben und verarbeitet, und das Material ist von dem Bulk-001 Produktionseingangslagerplatzes (3) PIL-01 entnommen, der al ein nicht von einem Ladungsträger gesteuerter Lagerplatz definiert ist. Der Bediener wiegt Material vom Produktionseingangsstandort (3) aus und erfasst das Gewicht und die Chargennummer entspredhend dem Verbrauch (4). Über einen Produktionseingangslagerplatz wird ein Teil des Materials manuell dem Produktionsprozess in festgelegten Zeitintervallen hinzugefügt. Wenn Bediener Material hinzufügt, wird dieses auf einer Waage gewogen und die Chargennummer wird erfasst.
 
-## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Einrichten des Workflows, um den Verbrauchs unter Verwenden eines tragbaren Geräts mit laufender Erfassung zu erfassen
+## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>Einrichten des Workflows, um den Verbrauchs unter Verwenden eines tragbaren Geräts mit laufender Erfassung zu erfassen
 Erstellen Sie ein Endproduktprodukt, FG-100, mit einer Stückliste, die das Chargen kontrollierte Rohmaterial RM-100 hat. Fügen Sie zwei Chargen, B1 und B2 von RM-100 in einer Menge von 100 dem Lagerplatz hinzu: Bulk-001 mit Kennzeichnungsplatte: PL-1. Das Stücklisten-Bezugsprinzip für die Stücklistenposition für RM-100 wird auf **Manuell** festgelegt. Der Produktions-Wareneingang wird auf PIL-01 gesetzt. Sie können das tun, indem Sie diesen Speicherort als den Standardproduktionswareneingangs-Lagerplatz auf Lagerort 51 auswählen.
 
 1.  Erstellen eines neuen Menüelements für ein mobiles Geräts: 
 
--    **Menüartikelname** – Materialverbrauch registrieren. 
+-    **Menüartikelname** - Materialverbrauch registrieren. 
 -    **Titel** – Materialverbrauch registrieren. 
 -    **Modus** - Indirekt. 
--    **Aktivitätscode** – Erfassen des tatsächlichen Materialverbrauchs.
+-    **Aktivitätscode** - Erfassen des tatsächlichen Materialverbrauchs.
 
 2.  Menüartikel Gerätemenü **Produktion Mobile** hinzufügen.
 3.  Wählen Sie diese Option aus, um einen Produktionsauftrag für ein fertiges Produkt zu erstellen. 
 
--    **Artikelnummer** – FG-100 
--    **Standort** - 5 
+-    **Artikelnummer** - FG-100 
+-    **Standort** - 5 
 -    **Lagerort** - 51 
 -    **Menge** - 150
 
@@ -69,7 +68,7 @@ Dadurch wird das Material vom Sammellagerplatz zum Lagerplatz für Produktions-W
 
 Nachdem der Produktionsauftrag gestartet wurde, können Sie mit Materialentnahme den Workflow zum tragbaren Gerät erfassen. Beginnen wir damit, indem wir den Verbrauch von 25 Kilogramm von Charge B1 erfassen.
 
-6.  Wählen Sie die Menüoption **Erfassen Sie Material** **Verbrauch** im Menü für das tragbaren Gerät aus, geben Sie die folgenden Details ein: 
+6.  Wählen Sie die Menüoption  **Erfassen Sie Material** **Verbrauch** im Menü für das tragbaren Gerät aus, geben Sie die folgenden Details ein: 
 
 -    Die Produktionsauftragsnummer. 
 -    Der Lagerplatz, an dem das Material verbraucht wird, in diesem Fall PIL-01. 
@@ -91,6 +90,5 @@ Nachdem Sie Ihre Erfassung abgeschlossen haben, wählen Sie **Fertig**, um die E
 -   Der neue Workflow unterstützt auch die Erfassung von Seriennummern.
 -   Es ist nur möglich, eine Artikelnummer zu erfassen, die in der Stückliste oder in der Formel für den ausgewählten Produktionsauftrag oder den Chargenauftrag definiert wird.
 -   Material kann bereits verbraucht sein. Wenn beispielsweise das Material mit einem Mengenverbrauch von 100 Kilogramm geschätzt wird, dann kann es mit einer Menge von beispielsweise 105 kg bereits verbraucht sein.
-
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Kanban-Einzelvorgänge planen"
-description: "Der Schwerpunkt dieser Prozedur liegt auf der Planung von Kanban-Bearbeitungseinzelvorgängen für eine spezielle Arbeitsgruppe."
+---
+title: Kanban-Einzelvorgänge planen
+description: Der Schwerpunkt dieser Prozedur liegt auf der Planung von Kanban-Bearbeitungseinzelvorgängen für eine spezielle Arbeitsgruppe.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, KanbanPeriodCapacityPart, SysLookupMultiSelectGrid, KanbanBoardScheduleJobForward
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5170fecf0190591d74f45d35fecc4472e7f5e900
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f36544993a9280ae10489a19252bc105abd40ac9
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359542"
 ---
 # <a name="schedule-kanban-jobs"></a>Kanban-Einzelvorgänge planen
 
@@ -61,5 +61,4 @@ Der Schwerpunkt dieser Prozedur liegt auf der Planung von Kanban-Bearbeitungsein
 6. Klicken Sie auf "Zeitplan".
     * Beachten Sie, dass beide Einzelvorgänge zur gewünschten Periode hinzugefügt werden.  
     * Im Abschnitt "Periodenkapazität" können Sie die Auslastung für jede Periode sehen. Das Feld "Verbrauch" zeigt den geplanten Verbrauch in dieser Periode an. Wenn der geplante Verbrauch höher als die verfügbare Kapazität in dieser Periode ist, wird der überladene Verbrauch ausgewählt.  
-
 

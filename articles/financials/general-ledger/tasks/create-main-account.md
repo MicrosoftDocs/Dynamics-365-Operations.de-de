@@ -1,13 +1,13 @@
---- 
+---
 title: Erstellen eines Hauptkontos
-description: "Diese Aufgabenleitfaden führt Sie durch das Hinzufügen eines Hauptkontos zu einem vorhandenen Kontenplan."
+description: Diese Aufgabenleitfaden führt Sie durch das Hinzufügen eines Hauptkontos zu einem vorhandenen Kontenplan.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MainAccount, CompanyInfoList
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5fd332121bae2be55ada39b33e5f381096c9b74d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: db813353eef97375451e78320d6d14de74292309
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331574"
 ---
 # <a name="create-a-main-account"></a>Erstellen eines Hauptkontos
 
@@ -35,7 +35,7 @@ Diese Aufgabenleitfaden führt Sie durch das Hinzufügen eines Hauptkontos zu ei
 4. Geben Sie im Feld "Name" einen Wert ein.
 5. Wählen Sie im Feld "Hauptkontotyp" den Typ aus, der den Kontoensaldo und den Lagerplatz in Finanzaufstellungen abbildet.
 6. Wählen sie in der Liste die Kontokategorie, zu der das Hauptkonto gehört.
-    * Kontokategorien werden für Standard Finanzberichte und Power BI-Dashboardinhalt verwendet.  
+    * Kontokategorien werden für Standard-Finanzberichte und Power BI-Dashboardinhalt verwendet.  
 7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
     * Ändern Sie den standardmäßigen Sollsaldo oder Habensaldo.  
 8. Wählen Sie im Feld "Standardwährung" einen Wert aus der Liste der Währungen aus.
@@ -53,5 +53,4 @@ Diese Aufgabenleitfaden führt Sie durch das Hinzufügen eines Hauptkontos zu ei
 20. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 21. Wählen Sie im Feld "Währungsumrechnungstyp" die Methode für die Berechnung der Wechselkurse für das Konto aus.
 22. Schließen Sie die Seite.
-
 

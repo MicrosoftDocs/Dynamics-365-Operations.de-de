@@ -1,32 +1,31 @@
 ---
 title: Produktbezeichner
-description: "Dieses Thema enthält Informationen zu den unterschiedlichen Arten von Produktbezeichnern und erläutert, wie Sie Produktbezeichner in Ihren Produktdaten hinzufügen können."
+description: Dieses Thema enthält Informationen zu den unterschiedlichen Arten von Produktbezeichnern und erläutert, wie Sie Produktbezeichner in Ihren Produktdaten hinzufügen können.
 author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: afd542a652abdf6e45c83a6097dc8f0d36efa905
-ms.contentlocale: de-de
-ms.lasthandoff: 03/23/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335415"
 ---
-
 # <a name="product-identifiers"></a>Produktbezeichner 
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Wenn Sie mit Produkten in der Produktion (BDE) oder in einem Lagerort in Microso
 
 ## <a name="unique-product-numberproduct-id"></a>Eindeutige Produktnummer/Produkt-ID
 
-In Microsoft Dynamics 365 for Finance and Operations ist die primäre Kennung für ein Produkt die Produktnummer (das heißt die eindeutige Produktkennung). Diese Nummer kann automatisch durch einen Nummernkreis generiert werden, oder sie kann manuell einem Produkt zugeordnet werden. Für Produktvarianten können die Zahlen durch die Produktnomenklaturvorlage definiert werden.
+In Microsoft Dynamics 365 for Finance and Operations der primäre Bezeichner für ein Produkt ist die Produktnummer (d.h. die eindeutige Produkt-ID). Diese Nummer kann automatisch durch einen Nummernkreis generiert werden, oder sie kann manuell einem Produkt zugeordnet werden. Für Produktvarianten können die Zahlen durch die Produktnomenklaturvorlage definiert werden.
 
 In vielen Fällen wird die Produktnummer ursprünglich nicht im Bereich Finance and Operations erstellt. Stattdessen ist es mit einem Produkt in einem Produktlebenszyklussystem (PLM) oder einem  Produktdatenverwaltungssystem (PDM) zugeordnet. In diesem Fall können Sie Datenentitäten verwenden, um die Produkte und Produktvarianten zu importieren. Finance and Operations wird dann die Zahlen in allen Arbeitsgängen verwenden.
 
@@ -186,4 +185,3 @@ Sie können jetzt die Datenentitäten **Common Data Service-Bezeichnerentität d
 ## <a name="related-topic"></a>Verwandtes Thema
 
 [Nach Produkten und Produktvarianten bei der Auftragserfassung suchen](search-products-product-variants.md)
-

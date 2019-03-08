@@ -1,13 +1,13 @@
---- 
-title: "Richten Sie Voraussetzungen für die Qualitätsmangelverwaltung ein"
-description: "Verwenden Sie diese Prozedur, um Qualitätsmangelmanagementprozesse zu aktivieren."
+---
+title: Richten Sie Voraussetzungen für die Qualitätsmangelverwaltung ein
+description: Verwenden Sie diese Prozedur, um Qualitätsmangelmanagementprozesse zu aktivieren.
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters, InventTestReportSetup, SysUserManagement, SysUserSetup, InventTestDiagnosticType, InventTestMiscCharges, InventTestOperation, InventProblemType, InventProblemTypeSetup, InventQuarantineZone
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0a4062acc91e024e3a0a41c0b3cb35ff5ffe2a4a
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337669"
 ---
 # <a name="set-up-prerequisites-for-nonconformance-management"></a>Richten Sie Voraussetzungen für die Qualitätsmangelverwaltung ein
 
@@ -102,5 +102,4 @@ Verwenden Sie diese Prozedur, um Qualitätsmangelmanagementprozesse zu aktiviere
 3. Geben Sie im Feld "Quarantänezone" einen Wert ein.
 4. Geben Sie im Feld "Beschreibung" einen Wert ein.
 5. Schließen Sie die Seite.
-
 

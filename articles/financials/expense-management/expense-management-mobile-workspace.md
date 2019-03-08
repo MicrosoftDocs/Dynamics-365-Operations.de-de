@@ -1,13 +1,13 @@
 ---
-title: "Mobiler Arbeitsbereich für Spesenverwaltung"
-description: "Dieses Thema enthält Informationen über den mobilen Arbeitsbereich für die Spesenverwaltung. Dieser Arbeitsbereich ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können. Benutzer können auch schnell eine Spesenposition erstellen, indem sie einen beigefügten Beleg verwenden und ihre Spesenberichte erstellen und verwalten."
+title: Mobiler Arbeitsbereich für Spesenverwaltung
+description: Dieses Thema enthält Informationen über den mobilen Arbeitsbereich für die Spesenverwaltung. Dieser Arbeitsbereich ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können. Benutzer können auch schnell eine Spesenposition erstellen, indem sie einen beigefügten Beleg verwenden und ihre Spesenberichte erstellen und verwalten.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 6ec9966826830e9ceaa3ed7e1b06e2cb89e8a780
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344339"
 ---
-
 # <a name="expense-management-mobile-workspace"></a>Mobiler Arbeitsbereich für Spesenverwaltung
 
 [!include [banner](../includes/banner.md)]
@@ -32,21 +31,21 @@ ms.lasthandoff: 03/26/2018
 Dieses Thema enthält Informationen über den mobilen Arbeitsbereich für die **Spesenverwaltung**. Dieser Arbeitsbereich ermöglicht Benutzern einen Beleg zu erfassen und hochzuladen, sodass sie diesen einer Spesenabrechnung später zuordnen können. Benutzer können auch schnell eine Spesenposition erstellen, indem sie einen beigefügten Beleg verwenden und ihre Spesenberichte erstellen und verwalten. Darüber hinaus können die Genehmiger den mobilen Arbeitsbereich für die **Spesenverwaltung** verwenden, um Spesenberichte zu überprüfen, die ihnen zugewiesen sind, und diese Spesenberichte entweder genehmigen oder ablehnen.
 
 
-Dieser mobile Arbeitsbereich soll mit der Mobil-App für Microsoft Dynamics 365 für Unified Operations verwendet werden.
+Dieser mobile Arbeitsbereich soll mit der Microsoft Dynamics 365 for Unified Operations Mobile-App verwendet werden.
 
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
 Viele Organisationen verlangen, dass eine Kopie eines Belegs zu einer Reise-zugeordnet oder der geschäftsbezogenen Spesenabrechnung zugeordnet ist, die ein Mitarbeiter übermittelt für die Rückerstattung. Der mobile Arbeitsbereich **Spesenverwaltung** ermöglicht es Benutzern schnell neue Ausgabenpositionen im mobilen Gerät ihrer Wahl erstellen, indem er ein Foto des Belegs mitsendet. Alternativ können Benutzer ein Foto eines Belegs erfassen und später der Spesenabrechnung zuordnen. Auch Mitarbeiter können ihre Spesenberichte erstellen und verwalten, und sie dann über ihr mobiles Gerät zur Genehmigung und Erstattung vorlegen.
 
 
 Insbesondere ermöglicht der mobile Arbeitsbereich für die **Spesenverwaltung** den Benutzern, die folgenden Aufgaben auszuführen:
 
-- Fotografieren Sie einen Beleg und laden Sie ihn zu Microsoft Dynamics 365 for Finance and Operations hoch. Sie können dieses Foto später einem Spesenbericht hinzufügen.
+- Machen Sie ein Foto eines Bons, und laden Sie ihn in Microsoft Dynamics 365 for Finance and Operations hoch. Sie können dieses Foto später einem Spesenbericht hinzufügen.
 - Laden Sie eine Datei als erfassten Beleg hoch. Sie können diese Datei später einem Spesenbericht hinzufügen.
 - Erstellen Sie neue Ausgabenposition, indem Sie einen einzigen Zugang verwenden. Sie können diese Position später einem Spesenbericht hinzufügen und diesen zur Genehmigung und Erstattung vorlegen.
 
-Wenn Sie Microsoft Dynamics 365 for Finance and Operations, können Sie auch die folgenden Funktionen verwenden:
+Wenn Sie Microsoft Dynamics 365 for Finance and Operations verwenden, können Sie auch diese Funktionen verwenden:
 
 - Erstellen eines neuen Spesenberichts.
 - Fügen Sie einem Spesenbericht Kreditkartentransaktionen sowie andere bereits erzeugte Spesen hinzu.
@@ -58,13 +57,13 @@ Wenn Sie Microsoft Dynamics 365 for Finance and Operations, können Sie auch die
 - Genehmigen Sie Spesenberichte oder lehnen Sie diese ab, für die Sie als Genehmiger zugewiesen sind.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Die Voraussetzungen variieren abhängig von der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
+Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operations verwenden 
-Wenn Microsoft Dynamics 365 for Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Spesenverwaltung** aktivieren. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operationsverwenden 
+Wenn Microsoft Dynamics 365 for Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Ausgabenverwaltung** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder später verwenden.
-Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisierung 3 oder später für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
+Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
 
 <table>
 <thead>
@@ -80,7 +79,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisier
 <td>Systemadministrator</td>
 <td>KB 4019015 ist ein X++ Update oder Metadaten-Hotfix, der den mobilen Arbeitsbereich <strong>Spesenverwaltung</strong> enthält. Um KB 4019015 muss Ihr Systemadministrator folgende Schritte ausführen.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Laden Sie den Metadatenhotfix für Microsoft Dynamics Lifecycle Services (LCS) herunter</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Den Metadatenhotfix von Microsoft Dynamics Lifecycle Services (LCS) herunterladen</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installieren Sie den Metadatenhotfix</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Erstellen Sie ein bereitstellbares Paket,</a> das die Modelle <strong>ApplicationSuite</strong> und <strong>ExpenseMobile</strong> enthält, und laden Sie dieses auf LCS hoch.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Das bereitstellbare Paket übernehmen</a>.</li>
@@ -94,10 +93,10 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformaktualisier
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Laden Sie Dynamics 365 for Operations mobile App herunter und installieren Sie diese.
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Laden Sie die mobile App Dynamics 365 for Operations herunter, und installieren Sie diese.
 Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:
 
-- [Für Androide-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
+- [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Bei der mobile App anmelden
@@ -243,4 +242,3 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 22. Wählen Sie **Senden**.
 23. Geben Sie etwaige Kommentare für den Genehmiger ein.
 24. Wählen Sie **Fertig**.
-

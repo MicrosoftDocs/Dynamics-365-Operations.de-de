@@ -1,32 +1,31 @@
 ---
-title: "Statistische Dimensionselement und statistischen Maßnahmenanbieter-Vorlagen"
-description: "Dieses Thema enthält Informationen über statische Dimensionselemente und statistische Maßnahmenanbieter-Vorlagen Statistische Dimensionswerte können als Verrechnungsgrundlage in den Richtlinien wie Kostenaufteilung und Prozentsatz verwendet werden. Sie können auch verwendet werden, um nicht-monetären Verbrauch durch Kosten zu melden."
+title: Statistische Dimensionselement und statistischen Maßnahmenanbieter-Vorlagen
+description: Dieses Thema enthält Informationen über statische Dimensionselemente und statistische Maßnahmenanbieter-Vorlagen Statistische Dimensionswerte können als Verrechnungsgrundlage in den Richtlinien wie Kostenaufteilung und Prozentsatz verwendet werden. Sie können auch verwendet werden, um nicht-monetären Verbrauch durch Kosten zu melden.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cc9170f10fe2be0446b1c974a50dbdf1cb5fe236
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8c74c47a5e0ca72fc4509786b091a70b5e292b54
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360301"
 ---
-
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Statistische Dimensionselement und statistischen Maßnahmenanbieter-Vorlagen
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ Nachfolgend sind einige Beispiele von typischen statistischen Dimensionsmitglied
 
 ## <a name="statistical-measure-provider-template"></a>Anbietervorlagen für statistische Maßnahmen
 
-Statistische Kennzahlen können aus mehreren Quellen stammen. Microsoft Dynamics 365 for Finance and Operations ist eine hervorragende Quelle, um statistische Kennzahlen zu extrahieren. Sie können eine Anbietervorlage verwenden, statistische Kennzahl der statistischen Kennzahlen leicht zu konfigurieren, die zum Extrahieren möchten.
+Statistische Kennzahlen können aus mehreren Quellen stammen. Microsoft Dynamics 365 for Finance and Operations ist eine großartige Quelle für statistische Kennzahlen. Sie können eine Anbietervorlage verwenden, statistische Kennzahl der statistischen Kennzahlen leicht zu konfigurieren, die zum Extrahieren möchten.
 
 Die Definition einer statistischen Anbietervorlage ist generisch und kann in verschiedenen statistischen Dimensionsmitgliedern wiederverwendet werden.
 
@@ -138,7 +137,7 @@ Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verw
 
 | Name        | Datenkonnektor                                                                     | Statistisches Dimensionselement |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| FTEs D365FO | Dynamics 365 for Finance and Operations – Statistische Massnahmen | FTEs                         |
+| FTEs D365FO | Dynamics 365 for Finance and Operations – Statistische Kennzahlen | FTEs                         |
 
 **Daten-Konfigurationsanbieter**
 
@@ -226,7 +225,7 @@ Gehen Sie zu **Kostenrechnungssachkonto** \> **Tatsächliche Version** \> **Verw
 
 | Name           | Datenkonnektor                                                                     | Statistisches Dimensionselement |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Pack CC D365FO | Dynamics 365 for Finance and Operations – Statistische Massnahmen | CC Pack                      |
+| Pack CC D365FO | Dynamics 365 for Finance and Operations – Statistische Kennzahlen | CC Pack                      |
 
 Das System erkennt, dass ProdRouteTrans eine Tabelle ist, bei der jeder Datensatz zu einer juristischen Person einem separaten Datensatz gehört. Aus diesem Grund werden Sie gefragt, die juristische Person auszuwählen, für die die Buchungen importiert werden soll.
 
@@ -347,4 +346,3 @@ Wenn die vordefinierte Dimensionsmitgliedzuweisungsbasis Elektrizität als Verre
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Zuteilungsbasen](allocation-bases.md)
-

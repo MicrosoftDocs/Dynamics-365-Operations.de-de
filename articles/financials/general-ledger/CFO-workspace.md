@@ -1,14 +1,14 @@
 ---
-title: "Hinzufügen von Finanzdimensionen zum CFO-Arbeitsbereich"
-description: "In diesem Thema wird erläutert, wie der CFO-Arbeitsbereich Finanzdimensionen hinzufügt, sodass sie für die Sach- und Budgetberichten verwendet werden können."
+title: Hinzufügen von Finanzdimensionen zum CFO-Arbeitsbereich
+description: In diesem Thema wird erläutert, wie der CFO-Arbeitsbereich Finanzdimensionen hinzufügt, sodass sie für die Sach- und Budgetberichten verwendet werden können.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,24 +18,23 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a15414eff99751d4e77e5b3bf315a556efb7ad5d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5faefe5da8c3a64987a38ebef92eb87049ebe874
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332678"
 ---
-
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Hinzufügen von Finanzdimensionen zum CFO-Arbeitsbereich
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie der CFO-Arbeitsbereich Finanzdimensionen hinzufügt, sodass sie für die Sach- und Budgetberichten verwendet werden können. Der CFO-Arbeitsbereich hat eine Registerkarte **Überblick** und eine **Finanzen** Registerkarte. Die Berichte zu diesen zwei Registerkarten werden mit zwei Kennzahlen unterstützt: LedgerActivityMeasure und BudgetActivityMeasure. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Juli 2017), gibt es eine Beziehung zwischen jenen zwei Kennzahlen und der DimensionCombinationEntity-Entität. Andernfalls können Sie Dimensionen auswählen.
+In diesem Thema wird erläutert, wie der CFO-Arbeitsbereich Finanzdimensionen hinzufügt, sodass sie für die Sach- und Budgetberichten verwendet werden können. Der CFO-Arbeitsbereich hat eine Registerkarte **Überblick** und eine **Finanzen** Registerkarte. Die Berichte zu diesen zwei Registerkarten werden mit zwei Kennzahlen unterstützt: LedgerActivityMeasure und BudgetActivityMeasure. In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017), gibt es eine Beziehung zwischen diesen zwei Kennzahlen und der DimensionCombinationEntity-Entität. Andernfalls können Sie Dimensionen auswählen.
 
 1. In Finance and Operations auf der Seite **Entitäts-Shop**, aktualisieren Sie **LedgerActivityMeasure** und die Kennzahlen **BudgetActivityMeasure**.
-2. In Microsoft Visual Studio, öffnen Sie den Anwendungs-Explorer und suchen **LedgerCFO**.
+2. Öffnen Sie in Microsoft Visual Studio den Anwendungs-Explorer und suchen Sie **LedgerCFO**.
 3. Unter **Ressourcen** öffnen Sie **LedgerCFOWorkspacePBIX**.
-4. Wenn die Ressource im Microsoft Power BI Desktop geöffnet wird, wählen Sie **Daten abrufen** **SQL Server-Datenbank** und anschließend **Verbinden**.
+4. Wenn die Ressource im Microsoft Power BI Desktop geöffnet wird, wählen Sie **Daten abrufen**, **SQL Server-Datenbank**, und dann **Verbinden** aus.
 5. Geben Sie den Server mit der Berichtsdatenbank **AxDW** als Datenbank ein. Wählen Sie zunächst **Direct Query** und dann **OK** aus.
 6. Suchen und wählen Sie **LedgerActivityMeasure \_DimensionCombination** aus und anschließend **Laden** aus.
 
@@ -57,4 +56,3 @@ In diesem Thema wird erläutert, wie der CFO-Arbeitsbereich Finanzdimensionen hi
 16. Stellen Sie das Projekt zusammen und öffnen Sie dann die Anwendung, um die Ergebnisse anzeigen.
 
     [![Arbeitsabereich abgeschlossen](./media/workspace.png)](./media/workspace.png)
-

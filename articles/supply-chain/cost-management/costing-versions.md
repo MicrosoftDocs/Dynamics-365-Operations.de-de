@@ -1,13 +1,13 @@
 ---
 title: Nachkalkulationsversionen
-description: "Dieser Artikel enthält Informationen zu Nachkalkulationsversionen, deren Verwaltung und die Datentypen, die Sie darin einschließen können. Der Hauptzweck einer Nachkalkulationsversion besteht in der Speicherung von Kostendatensätzen für Artikel sowie von Kostenkategorien und Berechnungsformeln für indirekte Kosten."
+description: Dieser Artikel enthält Informationen zu Nachkalkulationsversionen, deren Verwaltung und die Datentypen, die Sie darin einschließen können. Der Hauptzweck einer Nachkalkulationsversion besteht in der Speicherung von Kostendatensätzen für Artikel sowie von Kostenkategorien und Berechnungsformeln für indirekte Kosten.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a73be45d183f3cbdc19efbb9ee29fa621a113c66
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cb8e8193b3312a63042a44cb082a33a196cbc1be
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330148"
 ---
-
 # <a name="costing-versions"></a>Nachkalkulationsversionen
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Der Hauptgrund zum Aktivieren von Einkaufspreisdaten besteht im Definieren von E
 Zum Aktivieren von Einkaufspreisinformationen definieren Sie zunächst eine Herstellkostenkalkulationsgruppe mit dem Einstandspreismodell für den Einkaufspreis des Artikels, und weisen Sie die Herstellkostenkalkulationsgruppe eingekauften Artikeln zu. Daraufhin verwenden Sie ein Einstandspreismodell für die Herstellkostenkalkulationsgruppe, wenn Herstellkostenkalkulationen mit geplanten Kosten ausgeführt werden, um den Verkaufspreis produzierter Artikel zu berechnen. 
 
 Die Einkaufspreisdatensätze für Artikel dienen auch zu Referenzzwecken. Durch Ändern des Status des Einkaufspreisdatensatzes eines Artikels von **Ausstehend** zu **Aktiv** kann der Basiseinkaufspreis des Artikels aktualisiert werden. Der Basiseinkaufspreis ist jedoch nicht standortspezifisch und kann manuell außer Kraft gesetzt werden. Der Basiseinkaufspreis des Artikels wird als Standardeinkaufspreis für Bestellungen genutzt.
-
 
 
 

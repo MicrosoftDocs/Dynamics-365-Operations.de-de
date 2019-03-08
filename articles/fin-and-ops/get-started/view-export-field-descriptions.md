@@ -1,13 +1,13 @@
 ---
 title: Feldbeschreibungen anzeigen und exportieren
-description: "Dieser Artikel erläutert, wie eine Feldbeschreibung angezeigt und die Seite \"Feldbeschreibungen\" verwendet wird, um eine Beschreibung zu exportieren."
+description: Dieser Artikel erläutert, wie eine Feldbeschreibung angezeigt und die Seite "Feldbeschreibungen" verwendet wird, um eine Beschreibung zu exportieren.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7be1495fc42b5f19884a7d9df747f6bec9b64680
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359335"
 ---
-
 # <a name="view-and-export-field-descriptions"></a>Feldbeschreibungen anzeigen und exportieren
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Wenn Sie Zugriff auf die Entwicklungsumgebung von Finance and Operations haben, 
 Sie können Felder anzeigen, indem Sie über ein Feld fahren. Ist keine Beschreibung verfügbar, sehen Sie den Feldnamen beim Bewegen über das Feld.
 
 > [!NOTE]
-> In Microsoft Dynamics AX 7.0. (Februar 2016) können Feldbeschreibungen nur auf der Seite **Feldbeschreibungen** eingesehen werden.
+> In Dynamics AX 7.0. (Februar 2016) können Feldbeschreibungen nur auf der Seite **Feldbeschreibungen** eingesehen werden.
 
 Die folgende Abbildung zeigt die Feldbeschreibung, die angezeigt wird, wenn Sie mit den Mauszeiger über das Feld **Artikel während der Inventur sperren** bewegen.
 
@@ -109,4 +108,3 @@ Informationen über die verschiedenen Methoden zum Suchen von Seiten finden Sie 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Feldhilfe anpassen](../../dev-itpro/user-interface/customize-field-help.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten
-description: "In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von ER-Konfigurationen für die Microsoft Dynamics 365 for Finance and Operations-Lösung verwalten."
+description: In diesem Thema wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen für die elektronische Berichterstellung (EB) für die Microsoft Dynamics 365 for Finance and Operations-Lösung verwalten.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,23 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5724ba62bfb2c6e75ae895dc9285966c25f387a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 76ea412a3c10bf33fc06603bab8b94b2eadb9803
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344799"
 ---
-
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von ER-Konfigurationen für die Microsoft Dynamics 365 for Finance and Operations-Lösung verwalten.
+In diesem Thema wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen für die elektronische Berichterstellung (EB) für die Microsoft Dynamics 365 for Finance and Operations-Lösung verwalten.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Die elektronische Berichterstellung (ER) ist ein Modul, das gesetzlich vorgeschriebene und länderspezifische elektronische Dokumente in Microsoft Dynamics 365 for Finance and Operations unterstützt. Im Allgemeinen setzt ER die Möglichkeit der Ausführung der folgenden Aufgaben für ein einzelnes elektronisches Dokument voraus. Genauere Informationen finden Sie in der [Berichterstellungsüberblick](general-electronic-reporting.md).
+Die elektronische Berichterstellung (EB) ist ein Modul, das gesetzlich vorgeschriebene und länderspezifische elektronische Dokumente in Microsoft Dynamics 365 for Finance and Operations unterstützt. Im Allgemeinen setzt ER die Möglichkeit der Ausführung der folgenden Aufgaben für ein einzelnes elektronisches Dokument voraus. Genauere Informationen finden Sie in der [Berichterstellungsüberblick](general-electronic-reporting.md).
 
 - Entwerfen einer Vorlage für ein elektronisches Dokument:
 
@@ -89,4 +88,3 @@ ER-Konfigurationen, die in der Testumgebung entworfene wurden, können in die Te
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
-

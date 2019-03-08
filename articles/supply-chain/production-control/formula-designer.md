@@ -1,32 +1,31 @@
 ---
 title: Formeldesigner
-description: "In diesem Thema wird erläutert, wie der Formel-Designer verwendet wird, um Formeln in einer Strukturansicht zu analysieren und zu verwalten."
+description: In diesem Thema wird erläutert, wie der Formel-Designer verwendet wird, um Formeln in einer Strukturansicht zu analysieren und zu verwalten.
 author: cvocph
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 31a46230251be3a654092a4acc05a404533001b2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348502"
 ---
-
 # <a name="formula-designer"></a>Formeldesigner
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ Der Filter, der für die Formel und den Arbeitsplan angewendet wird, wird im Kop
 <tbody>
 <tr class="odd">
 <td>Produktdimensionen</td>
-<td>Wenn das ausgewählte Fertigprodukt ein Produktmaster ist, können Sie die aktiven Produktdimensionen für die Hauptauswahl definieren. Beachten Sie, dass beim Öffnen des Formel-Designers für ein Produkt, das kein Produktmaster ist, im Dialogfeld <strong>Filter</strong> keine Produktdimensionen ausgewählt werden können.</p></td>
+<td>Wenn das ausgewählte Fertigprodukt ein Produktmaster ist, können Sie die aktiven Produktdimensionen für die Hauptauswahl definieren. Beachten Sie, dass beim Öffnen des Formel-Designers für ein Produkt, das kein Produktmaster ist, im Dialogfeld <strong>Filtern</strong> keine Produktdimensionen ausgewählt werden können.</p></td>
 </tr>
 <tr class="even">
 <td>Standort</td>
@@ -121,5 +120,4 @@ Klicken Sie auf **Einstellungen**, um die Informationen anzupassen, die in der F
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     Stückliste     | Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die in der Strukturansicht angezeigt werden sollen. Im Formeldesigner werden die ausgewählten Kriterien am unteren Rand der beiden Registerkarten angezeigt. |
 |    Arbeitsplan    |                                           Verwenden Sie die Kontrollkästchen, um die Kriterien auszuwählen, die für die Arbeitspläne angezeigt werden sollen.                                           |
-
 

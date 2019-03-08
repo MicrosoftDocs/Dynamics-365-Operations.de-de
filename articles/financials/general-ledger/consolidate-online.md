@@ -1,14 +1,14 @@
 ---
 title: Online Finanzkonsolidierungen
-description: "In diesem Thema wird die Online-Finanzkonsolidierungen und Währungsumrechnung im Hauptbuch behandelt."
+description: In diesem Thema wird die Online-Finanzkonsolidierungen und Währungsumrechnung im Hauptbuch behandelt.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
 ms.openlocfilehash: fd29dc5f932c9cd274a42923e1ff659dd5d8e9d6
-ms.contentlocale: de-de
-ms.lasthandoff: 08/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341257"
 ---
-
 # <a name="consolidate-online"></a>Online konsolidieren
 
 [!include [banner](../includes/banner.md)]
@@ -97,4 +96,3 @@ Auf der Registerkarte **Währungsumrechnung** definieren Sie die juristische Per
 Weitere Informationen zu Konsolidierungs- und Währungsumrechnungen, finden Sie im übergeordneten Thema dieses Themas unter [Währungsumrechnung und Finanzkonsolidierungen](./financial-consolidations-currency-translation.md)
 
 Informationen zum Szenarien, in denen Sie möglicherweise Finanzaufstellungen generieren können, finden Sie unter [Konsolidierte Finanzaufstellungen erstellen](./generating-consolidated-financial-statements.md).
-

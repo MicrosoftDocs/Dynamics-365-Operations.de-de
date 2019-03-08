@@ -1,13 +1,13 @@
 ---
-title: "Konsolidierungs- und Löschungsüberblick"
-description: "Dieser Artikel enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess. Er enthält Antworten auf mehrere häufig gestellten Fragen."
+title: Konsolidierungs- und Löschungsüberblick
+description: Dieser Artikel enthält allgemeine Informationen zum Konsolidierungs- und Beseitigungsprozess. Er enthält Antworten auf mehrere häufig gestellten Fragen.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c972b1a0b9be61875c17a05ce3ec8fce1ac5a4e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d4c966badd87b80e203f475cc632f5388ad1d8e5
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345719"
 ---
-
 # <a name="consolidation-and-elimination-overview"></a>Konsolidierungs- und Löschungsüberblick
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Wenn Sie Daten konsolidieren, werden die finanziellen Ergebnisse mehrerer Untern
 -   **Online konsolidieren** - Diese Option konsolidiert Tagessalden nach den ausgewählten Konten und Dimensionen und speichert sie in einem Konsolidierungsunternehmen.
 -   **Finanzberichterstellung** - Diese Option ermöglicht die Konsolidierung von Transaktionen und Salden und kann jederzeit generiert werden. Mehrere Ebenen von Hierarchien können erstellt werden, und mehrere Berichtswährungen können angezeigt werden.
 -   **Mit Import konsolidieren** - Diese Option importiert Salden in einem Konsolidierungsunternehmen.
--   **Unternehmenssalden exportieren** - Diese Option stellt eine Exportdatei von Unternehmenssalden bereit. Die Datei kann dann in andere Instanzen oder in Systeme importiert werden. Finanzberichterstellung kann auch verwendet werden, um die Salden in eine Microsoft- Excel-Datei zu exportieren.
+-   **Unternehmenssalden exportieren** - Diese Option stellt eine Exportdatei von Unternehmenssalden bereit. Die Datei kann dann in andere Instanzen oder in Systeme importiert werden. Eine Finanzberichterstellung kann auch verwendet werden, um die Salden nach einer Microsoft Excel-Datei zu exportieren.
 
 Löschungen können auf mehrere Arten gemeldet werden:
 
@@ -89,6 +88,5 @@ Wenn Sie die Option **Unternehmenssalden exportieren** verwenden, um von einer I
 
 
 Weitere Informationen finden Sie unter [Neubewertung in einem konsolidierten Unternehmen](../general-ledger/currency-revaluation-consolidation-company.md).
-
 
 

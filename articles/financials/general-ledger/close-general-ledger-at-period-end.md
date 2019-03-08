@@ -1,13 +1,13 @@
 ---
 title: Abschluss des Hauptbuchs am Ende der Periode
-description: "In diesem Thema werden die Aufgaben beschrieben, die in der Regel ausgeführt werden, wenn ein Periodenabschluss für Hauptbuch ausgeführt wird."
+description: In diesem Thema werden die Aufgaben beschrieben, die in der Regel ausgeführt werden, wenn ein Periodenabschluss für Hauptbuch ausgeführt wird.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerPeriodCloseWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 23d4b9b070a48e1964ecd6896afe071b564d1194
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5643a06cb23eedd7c8676ad48be2ad2e78cdfc9b
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329297"
 ---
-
 # <a name="close-the-general-ledger-at-period-end"></a>Abschluss des Hauptbuchs am Ende der Periode
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ Weitere Informationen zu Workflows finden Sie unter den folgenden Themen:
 - [Finanzperiodenabschluss-Arbeitsbereich](financial-period-close-workspace.md) 
 - [Jahresabschluss](Year-end-close.md)  
 - [Massen-Finanzperiodenabschluss](tasks/mass-financial-period-close.md)
-
 
 
 

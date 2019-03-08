@@ -1,13 +1,13 @@
 ---
 title: Zeilendefinitionen im Finanzberichtdesigner
-description: "Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Zeile eines Finanzberichts angibt. Zeilendefinitionen können mit Spaltendefinitionen, Berichtsstruktur-Definitionen und Berichtsdefinitionen kombiniert werden, um eine Bausteingruppe zu erstellen, die von mehreren Unternehmen verwendet werden kann."
+description: Eine Zeilendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Zeile eines Finanzberichts angibt. Zeilendefinitionen können mit Spaltendefinitionen, Berichtsstruktur-Definitionen und Berichtsdefinitionen kombiniert werden, um eine Bausteingruppe zu erstellen, die von mehreren Unternehmen verwendet werden kann.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "350434"
 ---
-
 # <a name="row-definitions-in-financial-report-designer"></a>Zeilendefinitionen im Finanzberichtdesigner
 
 [!include [banner](../includes/banner.md)]
@@ -158,9 +157,9 @@ Sie können Schriftarten für Ihren Bericht erstellen und ändern. Sie können d
 
 ### <a name="format-row-text"></a>Formatieren von Zeilentext
 
-Die Formatierung, die in der Zeilendefinition angegeben wird, überschreibt jede Formatierung, die in der Spaltendefinition und der Berichtsdefinition angegeben ist. Sie können das Textformat mit den Steuerelementen auf der Formatierungssymbolleiste ändern. Diese Steuerelemente sind Standard-Microsoft Windows-Kontrollen.
+Die Formatierung, die in der Zeilendefinition angegeben wird, überschreibt jede Formatierung, die in der Spaltendefinition und der Berichtsdefinition angegeben ist. Sie können das Textformat mit den Steuerelementen auf der Formatierungssymbolleiste ändern. Diese Steuerelemente sind Microsoft Windows-Standardsteuerelemente.
 
-1. Im Berichts-Designer öffnen Sie die zu ändernde Zeilendefinition.
+1. Öffnen Sie im Berichts-Designer die zu bearbeitende Zeilendefinition.
 2. Wählen Sie die Zellen aus, die formatiert werden sollen. Um mehrere Zellen auszuwählen, halten Sie die STRG-Taste gedrückt, während Sie die Zelle auswählen.
 3. Klicken Sie auf die Symbolleistenschaltfläche des Formats, das übernommen werden soll. Um beispielsweise eine Zeile einzurücken, wählen Sie die Zeile aus, und klicken Sie anschließend auf **Einrückung erhöhen** ![Einrückung erhöhen](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Einrückung erhöhen") in der Symbolleiste.
 
@@ -189,4 +188,3 @@ Um die Ansicht der Spalten, an denen Sie in der Zeilendefinition arbeiten, zu ve
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
-

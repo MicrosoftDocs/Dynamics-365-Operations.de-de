@@ -1,31 +1,30 @@
 ---
-title: "Coupons für Einzelhandelsverkäufe einrichten"
-description: "Dieses Thema bietet einen Überblick über Einzelhandelscoupons und erläutert deren Einrichtung."
+title: Coupons für Einzelhandelsverkäufe einrichten
+description: Dieses Thema bietet einen Überblick über Einzelhandelscoupons und erläutert deren Einrichtung.
 author: scott-tucker
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336588"
 ---
-
 # <a name="set-up-coupons-for-retail-sales"></a>Coupons für Einzelhandelsverkäufe einrichten
 
 [!include [banner](includes/banner.md)]
@@ -38,7 +37,7 @@ Jeder Coupon wird einem Kleinrabatt zugeordnet. Die Preisgruppen, die dem Rabatt
 
 Im Grunde genommen sind Coupons zusätzliche Validierungen neben Einzelhandelsrabatten. Der Coupon stellt die Couponcodes und Strichcodes bereit, die erforderlich sind, zusammen mit den Datumsbereichen des Codes. Der Coupon enthält auch optionale Verwendungslimiten und von Kunden erforderliche Eigenschaften. Der Rabatt enthält den Satz von Produkten, für die der Coupon gültig sein soll. Die Preisgruppen für den Rabatt für die Gruppe von Debitoren, von Kanälen oder von Katalogen, für die der Coupon gültig sein soll.
 
-Um einen Coupon zu erstellen, stellen Sie den Rabatt und den Coupon getrennt her. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite in Microsoft Dynamics 365 für Einzelhandel aus.
+Um einen Coupon zu erstellen, stellen Sie den Rabatt und den Coupon getrennt her. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite in Microsoft Dynamics 365 for Retail aus.
 
 > [!NOTE]
 > Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite in Microsoft Dynamics 365 for Retail schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.
@@ -81,4 +80,3 @@ Couponfunktionen enthalten mehrere eindeutige Funktionen in Dynamics 365 for Ret
 - **HQ wird teilweise aktualisiert, wobei Retail Server und POS nicht aktualisiert werden.** In einer Hauptniederlassungsaktualisierung werden die Coupon- und Rabattseiten aktualisiert, und der Einzelhandelspreis wird ebenfalls aktualisiert. Wenn nur eine dieser zwei Komponenten aktualisiert wird, stimmen mehrere Seiten im Einzelhandel nicht mit den Herstellkostenkalkulationsdaten überein. Daher können unerwartete Rabattberechnungen oder möglicherweise Fehler während der Rabattberechnungen auftreten.
 - **HQ wird teilweise aktualisiert, wobei Retail Server und POS nicht aktualisiert werden (N-1).** Nicht alle Einzelhandelsgeschäfte können gleichzeitig aktualisiert werden und es empfiehlt sich, anschließend die Hauptniederlassung zu aktualisieren, bevor Sie Einzelhandelsgeschäfte aktualisieren. Im Szenario N-1 sind neue Funktionen, die den Coupons zugeordnet ist, nicht in den Filialen verfügbar, die noch nicht aktualisiert wurden. So führen die Couponfunktionen "Positionen ausschließen" ein. Wenn Sie "Position ausschließen" verwenden, werden in einer Filiale keine Rabatt angewendet, die nicht in einer früheren Version ausgeführt werden.
 - **HQ wird nicht aktualisiert, wobei Retail Server und POS aktualisiert werden (N+1).** Weil das aktualisierte Preismodul im Retail Server für bestehende Rabattcodes der Herstellkostenkalkulationen behandelt werden, sollten mit der Aktualisierung keine funktionalen Auswirkungen auf dieses Szenario haben.
-

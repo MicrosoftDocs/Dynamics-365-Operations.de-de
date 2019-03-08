@@ -1,14 +1,14 @@
 ---
-title: "Finanzielle Konsolidierungswährungsumrechnung"
-description: "In diesem Thema wird die Finanzkonsolidierungen und Währungsumrechnung im Hauptbuch behandelt."
+title: Finanzielle Konsolidierungswährungsumrechnung
+description: In diesem Thema wird die Finanzkonsolidierungen und Währungsumrechnung im Hauptbuch behandelt.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353999"
 ---
-
-# <a name="financial-consolidations-and-currency-translation"></a>Finanzielle Konsolidierungswährungsumrechnung
+# <a name="financial-consolidations-and-currency-translation"></a>Finanzielle Konsolidierungen und Währungsumrechnung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema führt Sie durch den Ansatz von Microsoft Dynamics 365 for Finance and Operations und Finanzberichterstattung für Konsolidierungen. Es beschreibt Szenarien, die mehrere Unternehmen, Berichte Aggregation, Löschen und Minderheitsbeteiligung umfassen. Es wird auch erklärt, wie spezielle Szenarien behandelt werden, wie beispielsweise juristische Personen mit verschiedenen Finanzzeiträumen oder verschiedene Kontenpläne.
+Dieses Thema führt Sie durch den Ansatz von Microsoft Dynamics 365 for Finance and Operations und von der Finanzberichterstattung für Konsolidierungen. Es beschreibt Szenarien, die mehrere Unternehmen, Berichte Aggregation, Löschen und Minderheitsbeteiligung umfassen. Es wird auch erklärt, wie spezielle Szenarien behandelt werden, wie beispielsweise juristische Personen mit verschiedenen Finanzzeiträumen oder verschiedene Kontenpläne.
 
 Dieses Thema wurde für Benutzer und funktionale Berater geschrieben, und es wird davon ausgegangen, dass Leser ein allgemeines Verständnis zu Finance and Operations und Finanzberichterstellung haben. Grundeinstellungen werden nicht erfasst.
 
@@ -181,4 +180,3 @@ Nachfolgend sind einige der Konsolidierungsszenarien, die Finanzberichterstattun
 
 ## <a name="generating-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 Informationen zum Szenarien, in denen Sie möglicherweise Finanzaufstellungen generieren können, finden Sie unter [Konsolidierte Finanzaufstellungen erstellen](./generating-consolidated-financial-statements.md).
-

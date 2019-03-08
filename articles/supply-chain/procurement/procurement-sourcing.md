@@ -1,13 +1,13 @@
 ---
 title: Beschaffungs-Startseite
-description: "Dieses Thema enthält eine Liste der Hilfethemen und weiterer Ressourcen, die für die Beschaffung verfügbar sind."
+description: Dieses Thema enthält eine Liste der Hilfethemen und weiterer Ressourcen, die für die Beschaffung verfügbar sind.
 author: mkirknel
 manager: AnnBe
 ms.date: 09/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 091b50c26cf596fc03e42f60fc662b8d1f25f06b
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338589"
 ---
-
 # <a name="procurement-and-sourcing-home-page"></a>Beschaffungs-Startseite
 
 [!include [banner](../includes/banner.md)]
@@ -55,12 +54,12 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 -   [Kreditorenzusammenarbeit mit externen Kreditoren](vendor-collaboration-work-external-vendors.md)
 -   [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Benutzer für Kreditor-Kooperationen verwalten](manage-vendor-collaboration-users.md)
--   [Kreditammenarbeit einrichten und verwalten](set-up-maintain-vendor-collaboration.md)
--   [Eingehendes Lieferungsbestands-Vorführungsskript für Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(Whitepaper)
+-   [Kreditorenzusammenarbeit einrichten und verwalten](set-up-maintain-vendor-collaboration.md)
+-   [Demo-Skript für die Lieferungsbestandsprozesse für Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(White Paper)
 -   [Lagerbestand mithilfe der Kreditorenkooperation überwachen](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals](collaborate-vendors-vendor-portal.md) (nur Februar 2016- und Mai 2016-Versionen von Dynamics AX)
 -   [Konfiguration der Sicherheitseinstellungen für Kreditorenportalbenutzer](configure-security-vendor-portal-users.md) (nur Februar 2016 und Mai 2016-Versionen von Finance and Operations)
--   [Mobiler Arbeitsbereich für die Kreditor-Kooperation für die Microsoft Dynamics 365 Finance and Operations-App](vendor-collaboration-mobile-workspace.md)
+-   [Mobiler Arbeitsbereich für Kreditorenzusammenarbeit für Microsoft Dynamics 365 for Finance and Operations App](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Beschaffungsproduktverwaltung
 -   [Beschaffungskataloge](procurement-catalogs.md)
@@ -102,7 +101,6 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 -   [Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (Whitepaper)
 -   [Einkaufsrichtlinien](purchase-policies.md)
 -   [Einkaufsrichtlinien erstellen](tasks/create-purchasing-policies.md)
-
 
 
 

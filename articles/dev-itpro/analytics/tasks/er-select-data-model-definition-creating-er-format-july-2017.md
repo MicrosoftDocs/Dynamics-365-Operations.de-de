@@ -1,13 +1,13 @@
---- 
-title: "Datenmodelldefinitionen beim Erstellen von Formaten auswählen"
-description: "Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter \"Konfigurationsanbieter erstellen und als aktiv markieren\" abschließen."
+---
+title: Datenmodelldefinitionen beim Erstellen von Formaten auswählen
+description: Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: dc357db8acbdb98741a694a8a9d3c0c0625c50e4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334495"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Datenmodelldefinitionen beim Erstellen von Formaten auswählen
 
@@ -81,7 +81,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
     * Verwenden Sie den ER-Designer, um das Lagermodell der Zuordnungen für die erforderlichen Stammartikel anzugeben.  
 2. Klicken Sie auf Designer.
     * Einrichtung ausgewälter Modellzuordnungen für den ausgewählten Stammartikel des Modells simulieren.  
-3. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabellendatensätze" aus.
+3. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabellendatensätze' aus.
 4. Klicken Sie auf "Stamm hinzufügen".
 5. Geben Sie im Feld Name den Typ Sachkonto ein.
 6. Im Tabellenfeld geben Sie "LedgerJournalTrans" ein.
@@ -98,5 +98,4 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 4. Geben Sie im Feld "Datenmodelldefinition" einen Wert ein, oder wählen Sie einen Wert aus.
     * Beachten Sie, dass ein Stammartikel nun verfügbar ist, um diesen den Bewerbungsdatenquellen zuzuordnen. Wenn mindestens eine vorbildliche Zuordnung eingegeben wird, werden nur die Stammartikel des Modells, die den Bewerbungsdatenquellen zugeordnet werden, als vorbildliche Definition ausgewählt werden können, für die das ER-Format hinzugefügt wird.   
 5. Schließen Sie die Seite.
-
 

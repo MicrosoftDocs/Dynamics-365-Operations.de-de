@@ -1,13 +1,13 @@
 ---
-title: "Währungswechselkurse importieren"
-description: "Wenn eine juristische Person Rechnungen in Fremdwährungen erhalten hat, ist es erforderlich, die Fremdwährung in der lokalen Währung umgerechnet. Das bedeutet, dass aktueller Wechselkurse für unterschiedliche Währungen erforderlich sind. Dieses Thema enthält einen Überblick der erforderlichen Einstellungen und der Verarbeitung für den Import von Devisenkursreferenzsätzen der Daten, die über das Internet bei den Wechselkursanbietern, wie der Europäischen Zentralbank Zentralbank und der der russischer Föderation veröffentlicht werden."
+title: Währungswechselkurse importieren
+description: Wenn eine juristische Person Rechnungen in Fremdwährungen erhalten hat, ist es erforderlich, die Fremdwährung in der lokalen Währung umgerechnet. Das bedeutet, dass aktueller Wechselkurse für unterschiedliche Währungen erforderlich sind. Dieses Thema enthält einen Überblick der erforderlichen Einstellungen und der Verarbeitung für den Import von Devisenkursreferenzsätzen der Daten, die über das Internet bei den Wechselkursanbietern, wie der Europäischen Zentralbank Zentralbank und der der russischer Föderation veröffentlicht werden.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: edd72b48a640126577dd7a2add3a4891ae505fdf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333391"
 ---
-
 # <a name="import-currency-exchange-rates"></a>Währungswechselkurse importieren
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Sie können Wechselkurse der Wechselkursanbieterquelle importieren und setzen si
 | **Erforderliche Währungspaare erstellen**    | Dieses Kontrollkästchen verwaltet die automatische Erstellung von Währungspaaren, wenn die Währungspaare, die zu importieren sind, sind nicht zulässig. Diese Option kann möglicherweise nicht für mehrere Anbieter verfügbar.                                                                                                                                                                                               |
 | **Vorhandene Wechselkurse überschreiben**   | Dieses Kontrollkästchen verwaltet die Aktualisierung des vorhandenen Wechselkurs für ein Währungspaar, wenn der Wechselkurs für ein bestimmtes Datum bereits vorhanden ist. Wenn Sie dieses Kontrollkästchen nicht aktivieren, wird der Wechselkurs für das spezifische Datum nicht importiert, wenn ein anderer Wechselkurs bereits vorhanden ist.                                                                                       |
 | **Import an Feiertagen verhindern** | Dieses Kontrollkästchen verwaltet den Import des Wechselkurses für ein Datum, das einen von Feiertag ist. Wenn Sie z.B. dieses Kontrollkästchen aktivieren und die Zentralbank europäische als der Wechselkursanbieter verwenden, das Feld nicht den Wechselkurs an einem gesetzlichen Feiertag, der der aktuellen juristischen Person zugeordnet ist. Diese Option kann möglicherweise nicht für mehrere Anbieter verfügbar. |
-
 
 
 

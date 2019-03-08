@@ -1,13 +1,13 @@
 ---
-title: "Power BI-Inhalt – Mitarbeiterentwicklung"
-description: In diesem Thema wird der Microsoft Power BI-Inhalt Mitarbeiterentwicklung beschrieben.
+title: Power BI-Inhalt zur Mitarbeiterentwicklung
+description: In diesem Thema wird der Power BI-Inhalt zur Mitarbeiterentwicklung beschrieben.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,22 +15,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347168"
 ---
-
-# <a name="employee-development-power-bi-content"></a>Power BI-Inhalt – Mitarbeiterentwicklung
+# <a name="employee-development-power-bi-content"></a>Power BI-Inhalt zur Mitarbeiterentwicklung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Microsoft Power BI-Inhalt **Mitarbeiterentwicklung** beschrieben.
+In diesem Thema wird der Power BI-Inhalt zur **Mitarbeiterentwicklung** beschrieben.
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
-Die Berichte, die im Power BI-Inhalt **Mitarbeiterentwicklung** enthalten sind, enthalten Diagramme und Tabellen, die zusätzliche Informationen. Die Berichte werden in der folgenden Tabelle näher erläutert.
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI-Inhalt enthalten sind
+Die Berichte, die im Power BI-Inhalt zur **Mitarbeiterentwicklung** enthalten sind, umfassen Diagramme und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
 
 | Bericht                        | Inhalt |
 |-------------------------------|----------|
@@ -70,4 +69,3 @@ Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und a
 | Mitarbeiterfähigkeitsanalyse  | Zertifiziert, Ebene, Datumsebene und Qualifikation                                                                    | Name des Mitarbeiters, Fähigkeit |
 | Leistung              | Bewertung, Beschreibung und Bewertungsmodell                                                                      | Aktueller Mitarbeiter, aktuelle Position, Mitarbeitertrend, bevorzugte Stellenfähigkeiten, vergangene Positionszuweisung, Positionstrend, ausgeschiedener Mitarbeiter |
 | Qualifikation                    | Qualifikation, Fähigkeitstyp und Bewertung                                                                              | Mitarbeiterfähigkeitsanalyse, bevorzugte Stellenfähigkeit |
-

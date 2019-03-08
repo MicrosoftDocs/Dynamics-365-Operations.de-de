@@ -1,13 +1,13 @@
 ---
 title: Projektkostenabgrenzung beim Empfang von Bestellungen
-description: "In diesem Thema wird beschrieben, wie Projektkosten von Einkaufslieferungen in Microsoft Dynamics 365 for Finance and Operations nachverfolgt werden können."
+description: In diesem Thema wird beschrieben, wie Projektkosten von Bestellbelegen in Microsoft Dynamics 365 for Finance and Operations nachverfolgt werden können.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostControlCommittedCost
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bc822652abbba68f094fe5b8a65f796165a92c4c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9a74b684e955376b9c3036954f4a6e6628c468f0
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340429"
 ---
-
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Projektkostenabgrenzung beim Empfang von Bestellungen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Projektkosten von Einkaufslieferungen in Microsoft Dynamics 365 for Finance and Operations nachverfolgt werden können. 
+In diesem Thema wird beschrieben, wie Projektkosten von Bestellbelegen in Microsoft Dynamics 365 for Finance and Operations nachverfolgt werden können. 
 
 Rechnungen für ein Projekt werden häufig später als die Waren und Dienstleistungen geliefert, was erheblichen Auswirkungen auf Projektleistungskennzahlen (KPIs) haben kann. Es wichtig, in der Lage zu sein, diese Buchungen in Projektberichten und Finanzberichten zu verfolgen.
 
@@ -82,7 +81,6 @@ In der **Zugesagte Kosten** Seite werden die in Schritt 1 erstellten Datensätze
 [![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 Die Kreditorenrechnung wird zwar weiterhin im einem ausstehenden Status, wenn die tatsächliche Kreditorenrechnung Eingang.
-
 
 
 

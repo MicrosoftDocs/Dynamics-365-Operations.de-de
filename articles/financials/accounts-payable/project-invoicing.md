@@ -1,13 +1,13 @@
 ---
 title: Projektrechnung
-description: "Dieser Artikel enthält einen Überblick über die Projektrechnungsstellung für Zeit- und Materialprojekte und Festpreisprojekte. Er umfasst Informationen zu Rechnungsvorschlägen (vorläufige Rechnungen), Rechnungskontrolle, Akonto-Rechnungsstellung, Kreditorenrechnungsstellung und Gutschriften."
+description: Dieser Artikel enthält einen Überblick über die Projektrechnungsstellung für Zeit- und Materialprojekte und Festpreisprojekte. Er umfasst Informationen zu Rechnungsvorschlägen (vorläufige Rechnungen), Rechnungskontrolle, Akonto-Rechnungsstellung, Kreditorenrechnungsstellung und Gutschriften.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5dd51e442479a05ce715fe91ebab0c99df9a8b6f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2434e0a97846ce9ca0643327a7a032a9998bde5b
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346317"
 ---
-
 # <a name="project-invoicing"></a>Projektrechnung
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,6 @@ Das selbe Dokument kann Transaktionen, die für Gutschriften, Kreditbuchungen un
 Wird ein Betrag gutgeschrieben, muss zunächst der fakturierte Betrag ausgewählt werden, für den die Gutschrift erstellt werden soll und dann die Gutschrift erstellt werden. Gehen Sie zum Erstellen der Gutschrift gemäß dem Verfahren vor, das auch zum Generieren einer Debitorenrechnung verwendet wird. 
 
 Sie können eine Rechnung mit einem negativen Betrag erstellen; die dann eine als Gutschrift klassifizierte Rechnung ist. Um eine Gutschrift zu erstellen und zu drucken, müssen Sie die Transaktionen auswählen, die zuvor in Rechnung gestellt wurden und diese Transaktionen dann bearbeiten. Augenommen bei juristischen Personen, deren primäre Adresse sich in Deutschland befindet, ist der Titel der Rechnung "Rechnungskorrektur".
-
 
 
 

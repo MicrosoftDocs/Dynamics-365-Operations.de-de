@@ -1,13 +1,13 @@
 ---
 title: Stapelverarbeitung von Warnungen
-description: "Dieses Thema enthält allgemeine Informationen über die Stapelverarbeitung von Warnungen in Microsoft Dynamics 365 for Finance and Operations."
+description: Dieses Thema enthält Informationen über Stapelverarbeitungsvorgänge von Warnungen in Microsoft Dynamics 365 for Finance and Operations.
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 482cf30b4f82e8801ebc12e3925c1efb09f7eb1e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 74db212b2086bd7c94825d8a52d9a8b86ea7b739
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341924"
 ---
-
 # <a name="batch-processing-of-alerts"></a>Stapelverarbeitung von Warnungen
 
 [!include [banner](../includes/banner.md)]
 
-Warnungen werden mit der Stapelverarbeitungsfunktion Microsoft Dynamics 365 for Finance and Operations verarbeitet. Sie müssen die Stapelverarbeitung einrichten, bevor Warnungen übermittelt werden können.
+Warnungen werden in Microsoft Dynamics 365 for Finance and Operations mit der Stapelverarbeitungsvorgangsfunktion verarbeitet. Sie müssen die Stapelverarbeitung einrichten, bevor Warnungen übermittelt werden können.
 
 Finance and Operations unterstützt zwei Typen von Ereignissen:
 
@@ -84,4 +83,3 @@ Wenn ein Stapelverarbeitungsfenster eingerichtet wurde, wird eine Warnung gesend
 
 1. Gehen Sie zu **Systemverwaltung** &gt; **Periodische Aufgaben** &gt; **Warnungen** &gt; **Änderungsbasierte Warnungen**.
 2. Im Dialogfeld **Warnung Fälligkeitsdatum** geben Sie die entsprechenden Informationen ein.
-

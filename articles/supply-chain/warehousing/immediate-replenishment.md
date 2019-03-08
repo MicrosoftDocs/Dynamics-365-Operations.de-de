@@ -1,13 +1,13 @@
 ---
 title: Sofortige Wiederbeschaffung
-description: "In diesem Thema wird beschrieben, wie Sie die sofortige Wiederbeschaffung verwenden können, um den Lagerbestand wieder zu ergänzen, wenn eine Lagerplatzdirektive keinen Bestand zuordnen kann."
+description: In diesem Thema wird beschrieben, wie Sie die sofortige Wiederbeschaffung verwenden können, um den Lagerbestand wieder zu ergänzen, wenn eine Lagerplatzdirektive keinen Bestand zuordnen kann.
 author: Mirzaab
 manager: AnnBe
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: ab1f06951d5daceaf002b2cc23236dd818457985
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a11a26df85647aa36cd30c42f81be4ec2af4409b
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348594"
 ---
-
 # <a name="immediate-replenishment"></a>Sofortige Wiederbeschaffung
 
 [!include [banner](../includes/banner.md)]
@@ -58,4 +57,3 @@ Wenn die sofortige Wiederbeschaffung für eine Lagerplatzdirektivenposition ausg
 
 - Stellen Sie sicher, dass die Bedarfswiederbeschaffungsvorlage, die angewendet wird, für die Verwendung der korrekten Lagerplatzvorlagen und Arbeitsvorlagen des Typs **Wiederbeschaffung** eingerichtet ist.
 - Stellen Sie sicher, dass es genügend verfügbaren Lagerbestand an den Lagerplätzen gibt, in denen die Bedarfswiederbeschaffungsvorlage nach verfügbarem Lagerbestand für die Wiederbeschaffung sucht.
-

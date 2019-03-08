@@ -1,13 +1,13 @@
---- 
-title: "EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen"
-description: "Dieser Leitfaden enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden."
+---
+title: EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen
+description: Dieser Leitfaden enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fdacd852eeed33b443a3c79b96fc4c4af04bb6b2
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357242"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen
 
@@ -34,7 +34,7 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte in der Prozed
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
-    * Nehmen wir an, Sie entwerfen einen Prozess für die Analyse eingehender Bankauszüge für eine Anwendungsdatenaktualisierung. Sie erhalten die eingehenden Bankauszüge als TXT-Dateien, die IBAN-Codes enthalten. Als Teil des Bankauszugs-Importprozesses müssen Sie die Korrektheit dieser IBAN-Codes mithilfe der Logik überprüfen, die bereits in Dynamics 365 for Finance and Operations verfügbar ist.   
+    * Nehmen wir an, Sie entwerfen einen Prozess für die Analyse eingehender Bankauszüge für eine Anwendungsdatenaktualisierung. Sie erhalten die eingehenden Bankauszüge als TXT-Dateien, die IBAN-Codes enthalten. Als Teil des Bankauszug-Importprozesses müssen Sie die Korrektheit dieser IBAN-Codes mithilfe der Logik überprüfen, die bereits in Dynamics 365 for Finance and Operations verfügbar ist.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Neue EB-Modellkonfiguration importieren
 1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
@@ -103,7 +103,7 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte in der Prozed
     * Zu Datenmodell zuordnen  
 6. Klicken Sie auf "Speichern".
 7. Klicken Sie auf Designer.
-8. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Klasse" aus.
+8. Wählen Sie in der Struktur "Dynamics 365 for Operations\Klasse" aus.
 9. Klicken Sie auf "Stamm hinzufügen".
     * Fügen Sie eine neue Datenquelle hinzu, um die vorhandene Anwendungslogik für die IBAN-Codeprüfung aufzurufen.  
 10. Geben Sie im Feld „Name” die Bezeichnung „Codes überprüfen” ein.
@@ -157,5 +157,4 @@ Zu Textwecken führen Sie die Formatzuordnung mithilfe der Datei SampleIncomingM
     * Klicken Sie auf „Durchsuchen”, und navigieren Sie zur Datei SampleIncomingMessage.txt, die Sie bereits zuvor heruntergeladen haben.  
 2. Klicken Sie auf "OK".
     * Überprüfen Sie die Ausgabe im XML-Format, das die Daten darstellt, die aus der ausgewählten Datei importiert wurden und in das Datenmodell übertragen wurden. Beachten Sie, dass nur 3 Positionen der importierten TXT-Datei verarbeitet wurden. Der IBAN-Code in Position 4, der ungültig ist, wurde übersprungen, und eine Fehlermeldung wird im Infolog bereitgestellt.  
-
 

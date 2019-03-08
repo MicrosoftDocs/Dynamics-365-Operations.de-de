@@ -1,13 +1,13 @@
---- 
+---
 title: Identifizieren und beheben Sie Konflikte bei der Aufgabentrennung
-description: "Sie können Regeln einrichten, Aufgaben abzugrenzen, die von unterschiedlichen Benutzern ausgeführt werden müssen."
+description: Sie können Regeln einrichten, Aufgaben abzugrenzen, die von unterschiedlichen Benutzern ausgeführt werden müssen.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9d4a6bd14090213cc19a072d030bc26886c7a8d0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c3a366ea4b558ba4e4af7336992dbb091b0b1414
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353102"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifizieren und beheben Sie Konflikte bei der Aufgabentrennung
 
@@ -48,5 +48,4 @@ Sie können Regeln einrichten, Aufgaben abzugrenzen, die von unterschiedlichen B
     * Wählen Sie eine Rolle aus.  
 2. Klicken Sie auf Aufgaben und Rollen überprüfen.
     * Werden irgendwelche verstoßen vorhandene Rollen die ausgewählte Regel, wird eine Meldung angezeigt, die den Namen der Rolle und die Namen der Konflikte verursachenden Aufgaben enthält. Der Administrator muss entweder den Ausgleich für das Sicherheitsrisiko angeben oder Rolle ändern, sodass sie nicht die Regeln für Aufgabentrennung verstößt.     Wenn keine Rollen die ausgewählte Regel verstoßen, wird eine Meldung mit, dass alle Rollen in der Kompatibilität sind.  
-
 

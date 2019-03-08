@@ -1,13 +1,13 @@
 ---
-title: "Crossdocking von Produktionsaufträgen zu Ausgangsrampen"
+title: Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 description: In diesem Thema wird beschrieben, wie Sie den Prozess des Crossdockings von Materials verwalten, das als fertig gestellt gemeldet wurde, spricht von eine Produktionsauftragsposition an einen ausgehenden Transportdock beendet.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8691bb6702028070810a1503add33985de5ede3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 62194012cfbe101d19e9de3254afb004da79a562
-ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329021"
 ---
-
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Crossdocking von Produktionsaufträgen zu Ausgangsrampen
 
 [!include [banner](../includes/banner.md)]
@@ -39,13 +38,13 @@ Crossdocking aus der Produktion an einen ausgehenden Lagerplatz ist für Herstel
 
 Falls kein unmittelbarer Bedarf für ein Produkt besteht, muss es bei Lagerortlagerplätzen am Produktionsstandort eingelagert werden. Dieser Vorgang ist auch als *opportunistisches Crossdocking* bekannt. Dies gibt an, dass die Verkaufschance bei Bedarf zum Versand des Produkts genutzt werden soll, anstatt das Produkt für interne Lagerung zu halten.
 
-Im folgenden Beispiel werden drei Variationen eines Ablaufs dargestellt, der am Ende der Produktionsposition (2) beginnt.
+Im folgenden Beispiel werden drei Variationen eines Flusses dargestellt, der am Ende der Produktionsposition (2) beginnt.
 
-Ein Produkt wird dem Warenausgangslagerplatz (3) als fertig gemeldet und einem Gabelstaplerfahrer holt die Palette an diesem Lagerplatz (3) ab.
+Ein Produkt wird dem Warenausgangslagerplatz (3) als fertig gemeldet und ein Gabelstaplerfahrer holt die Palette an diesem Lagerplatz (3) ab.
 
 -   Wenn es eine geplante Aktivität (6) für die Umlagerung des Produkts von der Fertigung (1) zu Verteilzentrum (7) gibt, wird der LKW-Fahrer vom System aufgefordert, die Palette an einen Frachttürlagerplatz (4) zu bringen.
--   Wenn der Frachttür bereits ein Anhänger zugewiesen ist, wird der LKW-Fahrer anfordert, das Produkt direkt auf den Anhänger zu laden.
--   Wenn keine Aktivität für die Umlagerung des Produkts geplant ist, wird der Staplerfahrer angewiesen, das Produkt an einen Lagerplatz im Lagerort (5) zu bringen.
+-   Wenn der Frachttür bereits ein Anhänger zugewiesen ist, wird der LKW-Fahrer aufgefordert, das Produkt direkt auf den Anhänger zu laden.
+-   Wenn keine Aktivität für die Umlagerung des Produkts geplant ist, wird der Staplerfahrer angewiesen, das Produkt zu einem Lagerplatz am internen Lagerort (5) zu bringen.
 
 [![Opportunistisches Crossdocking](./media/scenario1.png)](./media/scenario1.png)
 
@@ -107,7 +106,7 @@ Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es z
 8.  Erstellen Sie einen Produktionsauftrag. Wechseln Sie zur Listenseite **Produktionsauftrag** und erstellen Sie einen Produktionsauftrag für Produkt L0101. Menge = 20. Schätzen und starten Sie den Produktionsauftrag. Beachten Sie, dass das Felde **Kommissionierliste jetzt buchen** auf **Nein** festgelegt bleibt.
 9.  Vom mobilen Gerät als beendet melden. Wechseln Sie zum Portal für das mobile Gerät wählen Sie die Menüoption **Fertig melden und einlagern** aus. Melden Sie L0101 jetzt vom Handgerät als fertig. Menge = 10. Beachten Sie, dass der Einlieferungslagerplatz **BAYDOOR** ist. Dieser Lagerplatz stammt aus der Lagerplatzdirektive **Umlagerungsabgang** für den Arbeitsauftragstyp **Einlagern**. Beachten Sie auch, dass Arbeit des Typs **Übergangsabgang** erstellt und ausgeführt wurde. Wechseln Sie zu den Arbeitsdetails des Umlagerungsauftrags, um die Arbeit zu überprüfen.
 10. Melden Sie jetzt zusätzliche 10 Artikel aus den mobilen Geräten. Beachten Sie, dass der Einlieferungslagerplatz wieder **BAYDOOR** ist. Beachten Sie auch, dass ein neuer Arbeitstyps **Übergangsabgang** für 10 Stück erstellt wurde.
-11. Versuchen Sie nun, weitere, 20 Stück zu für den Produktionsauftrag zu beginnen und dann 20 St. als fertig zu melden, indem Sie das tragbare Gerät verwenden. Diesmal wird Lagerplatz **LP-001** als Einlieferungslagerplatz vorgeschlagen. Dieser Lagerplatz stammt aus der Lagerplatzdirektive für **Einlagerung von Fertigerzeugnissen**. Diese Lagerplatzdirektive wird verwendet, da keine Möglichkeit für Crossdocking vorhanden ist. Der Umlagerungsauftrag für LP-001 wurde vollständig von den zwei Crossdockingaktivitäten in Schritt 9 und 10 erfüllt. Beachten Sie, dass Arbeit vom Typ **Einlagerung von Fertigerzeugnissen** erstellt und verarbeitet wurde.
+11. Versuchen Sie nun, weitere 20 Stück für den Produktionsauftrag zu starten und dann 20 St. als fertig zu melden, indem Sie das tragbare Gerät verwenden. Diesmal wird Lagerplatz **LP-001** als Einlieferungslagerplatz vorgeschlagen. Dieser Lagerplatz stammt aus der Lagerplatzdirektive für **Einlagerung von Fertigerzeugnissen**. Diese Lagerplatzdirektive wird verwendet, da keine Möglichkeit für Crossdocking vorhanden ist. Der Umlagerungsauftrag für LP-001 wurde vollständig von den zwei Crossdockingaktivitäten in Schritt 9 und 10 erfüllt. Beachten Sie, dass Arbeit vom Typ **Einlagerung von Fertigerzeugnissen** erstellt und verarbeitet wurde.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Szenario 2 - Crossdocking aus der Produktion zu Umlagerungsaufträgen mit einer Terminplanung
 
@@ -118,7 +117,7 @@ Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es a
 3.  Öffnen Sie die **Ladungsplanungsworkbench**.
 4.  Wechseln Sie aus der Ladungsplanungsworkbench zum Abschnitt **Auslastung**, und wählen Sie **Terminplanung** im Menü **Transport** aus, um eine neue Terminplanung zu erstellen. Beachten Sie, dass die Terminplanung eine Referenz zu dem Umlagerungsauftrag im Feld **Auftragsnummer** hat. Im Feld **Geplantes Startdatum/-uhrzeit am Lagerplatz** können Sie das Datum und die Uhrzeit für den Termin festlegen. Dieses Datum und die Uhrzeit werden verwendet, wenn Crossdockingbedarf während des Crossdockingprozesses priorisiert wird. Die Angaben zu Datum und Uhrzeit, die Sie in diesem Feld festlegen, aktualisieren das Feld **Geplantes Datum und Uhrzeit des Versands der Ladung** bei der entsprechende Auslastung. Der Lagerplatz auf dem Inforegister **Versanddetails** bestimmt den Lagerplatz, an den der Umlagerungsauftrag versendet wurde.
 5.  Geben Sie im **Ladungsplanungsworkbench** an den Lagerort frei.
-6.  Erstellen Sie einen Produktionsauftrag für Artikelnummer **L0101** und legen Sie den Status mit einer Menge von 20 auf **Gestartet** fest.
+6.  Erstellen Sie einen Produktionsauftrag für Artikelnummer **L0101**, und legen Sie den Status mit einer Menge von 20 auf **Gestartet** fest.
 7.  Vom mobilen Gerät als beendet melden.
 8.  Wechseln Sie zum Portal für das mobile Gerät und wählen Sie die Menüoption **Fertig melden und einlagern** aus.
 9.  Melden Sie Artikelnummer **L0101** Handgerät als fertig. Beachten Sie, dass der Einlieferungslagerplatz jetzt **BAYDOOR 2** ist. Diese Option ist vom Terminplanung anstelle von **Umlagerungseingang** Lagerplatzdirektive gefunden.
@@ -126,6 +125,5 @@ Nachdem ein Produkt an der Fertigungsstraße als fertig gemeldet wird, wird es a
 ### <a name="additional-information"></a>Weitere Informationen
 
 -   Das Crossdockingszenario wird für Chargen- und seriengesteuerte Artikel unterstützt. Die Chargen- und Seriennummerdimensionen über und unter dem Lagerplatz in der Reservierungshierarchie sind definiert. 
-
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Konfigurationen zum Generieren von Berichten im Office-Format überprüfen, die eingebettete Bilder haben"
-description: "Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im\"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: - Einstellungsparameter)\" Aufgabenleitfaden erstellen."
+---
+title: Konfigurationen zum Generieren von Berichten im Office-Format überprüfen, die eingebettete Bilder haben
+description: 'Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: - Einstellungsparameter)" Aufgabenleitfaden erstellen.'
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331413"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurationen zum Generieren von Berichten im Office-Format überprüfen, die eingebettete Bilder haben
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 08/08/2018
 
 Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: Einstellungsparameter)" Aufgabenleitfaden erstellen.
 
-Dieses Verfahren zeigt, wie die elektronische Berichterstattungskonfiguration (ER) entworfen wird, um elektronische Dokumente zu generieren, die eingebettete Bilder in Microsoft Excel und in Microsoft Word enthalten. In diesem Beispiel überprüfen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. 
+Dieses Verfahren zeigt, wie die Konfigurationen für die elektronische Berichterstellung (EB) entworfen werden, um elektronische Dokumente zu generieren, die eingebettete Bilder in Microsoft Excel und Microsoft Word enthalten. In diesem Beispiel überprüfen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. 
 
 Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden.
 
@@ -91,5 +91,4 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 14. In der Struktur Label Container erweitern.
     * Einige Beschriftungen, die auf dem vorgedruckten Scheckformular produziert werden, werden in den Bericht einbezogen, falls sie für Testzwecke erstellt wurden. Allerdings werden die nicht während des tatsächlichen Drucks gedruckt, da das vorgedruckte Formular diese ie bereits beinhaltet.  
 15. Schließen Sie die Seite.
-
 

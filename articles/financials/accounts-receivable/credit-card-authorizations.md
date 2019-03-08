@@ -1,13 +1,13 @@
 ---
 title: Einstellungen, Autorisierung und Erfassung von Kreditkarten
-description: "Dieser Artikel stellt eine Übersicht der Kreditkartenautorisierung in Microsoft Dynamics 365 for Finance and Operations bereit. Er umfasst Informationen darüber, wie ein Zahlungsdienst eingerichtet, eine Kreditkarte einem Auftrag hinzugefügt und eine Autorisierung storniert wird."
+description: Dieser Artikel stellt eine Übersicht der Kreditkartenautorisierung in Microsoft Dynamics 365 for Finance and Operations bereit. Er umfasst Informationen darüber, wie ein Zahlungsdienst eingerichtet, eine Kreditkarte einem Auftrag hinzugefügt und eine Autorisierung storniert wird.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7a1d3c73e4305375ddf356b93b9502b0255df99b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a6354563fdebff901498f1cd6caed3aedae668b
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343005"
 ---
-
 # <a name="credit-card-setup-authorization-and-capture"></a>Einstellungen, Autorisierung und Erfassung von Kreditkarten
 
 [!include [banner](../includes/banner.md)]
@@ -78,7 +77,6 @@ Wenn Sie einen Teil eines Auftrags versenden, wird der Betrag der Teilbestellung
 
 ## <a name="voiding-an-authorization"></a>Autorisierung stornieren 
 Um eine Kreditkartenautorisierung zu stornieren, können Sie die Zahlungsmethode zu einer anderen Methode ändern die keinen Typ von "Kreditkarte" hat.
-
 
 
 

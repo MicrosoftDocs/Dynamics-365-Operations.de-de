@@ -1,13 +1,13 @@
 ---
 title: Rekrutierungs-Power BI-Inhalt
-description: "In diesem Thema wird der Inhalt der Power BI-Personalbeschaffung beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+description: In diesem Thema wird der Power BI-Inhalt zur Personalbeschaffung beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,25 +18,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 0d6bc8584d202810ed14367d36d113d9b109ea7a
-ms.contentlocale: de-de
-ms.lasthandoff: 12/19/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347996"
 ---
-
 # <a name="recruiting-power-bi-content"></a>Rekrutierungs-Power BI-Inhalt
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der **Personalbeschaffungs**-Inhalt für Microsoft Power BI beschrieben. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird der Microsoft Power BI-Inhalt zur **Personalbeschaffung** beschrieben. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Der **Personalbeschaffung** wird im Power BI-Inhalt **Einstellungsverwaltung** angezeigt.
+## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
+Der **Recruiting** Power BI-Inhalt wird im Arbeitsbereich **Einstellungsverwaltung** angezeigt.
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Berichte und Grafiken im Arbeitsbereich "Personalbeschaffungsverwaltung"
-Der Arbeitsbereich **Personalbeschaffungsverwaltung** enthält eine Registerkarte **Analyse** . Diese Registerkarte enthält die eingebetteten Power BI-Inhalte für die Personalbeschaffung. Der Inhalt besteht aus einer Übersichtsregisterkarte und zusätzlichen Registerkarten mit Details. Die Berichte werden auf jeder Registerkarte näher erläutert.
+Der Arbeitsbereich **Personalbeschaffungsverwaltung** enthält eine Registerkarte **Analyse**. Diese Registerkarte enthält die eingebetteten Power BI-Inhalte für die Personalbeschaffung. Der Inhalt besteht aus einer Übersichtsregisterkarte und zusätzlichen Registerkarten mit Details. Die Berichte werden auf jeder Registerkarte näher erläutert.
 
 | Bericht               | Inhalt |
 |----------------------|----------|
@@ -48,7 +47,7 @@ Der Arbeitsbereich **Personalbeschaffungsverwaltung** enthält eine Registerkart
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-Die folgende Tabelle zeigt die Entitäten, auf denen der Power BI Inhalt **Personalbeschaffung** basiert.
+Die folgende Tabelle zeigt die Entitäten, auf denen der **Rekrutierungs**-Power BI-Inhalt basiert.
 
 | Entität               | Inhalt                                                         | Beziehungen mit anderen Entitäten |
 |----------------------|------------------------------------------------------------------|-----------------------------------|
@@ -66,4 +65,3 @@ Die folgende Tabelle zeigt die Entitäten, auf denen der Power BI Inhalt **Perso
 | Leistung          | Bewertung, Beschreibung und Bewertungsmodell                            | Bewerber, Bewerber angestellt, Bewerber beendeter |
 | Personalbeschaffungsprojekt  | Projektbeschreibung, Projektstatus und Öffnungen                | Bewerber, Bewerber angestellt, Bewerber beendeter |
 | Beendeter Bewerber | Gesperrte Bewerber, Grund, Leistung und Kündigungsdatum | Unternehmen, Kalender-Gegenkonto, Datum, Standort, Leistung, Demografie, Anstellung, Medien, Personalbeschaffungsprojekt, Bewerbername. |
-

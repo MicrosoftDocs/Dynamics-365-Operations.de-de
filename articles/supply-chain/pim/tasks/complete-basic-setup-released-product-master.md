@@ -1,13 +1,13 @@
---- 
-title: "Grundeinrichtung eines veröffentlichten Produktmasters abschließen"
-description: "Im folgenden Verfahren, wie die erforderlichen Mindesteinstellungen abschließt, die erforderlich ist, bevor der Produktmaster in den Stücklistenversionen verwendet werden kann."
+---
+title: Grundeinrichtung eines veröffentlichten Produktmasters abschließen
+description: Im folgenden Verfahren, wie die erforderlichen Mindesteinstellungen abschließt, die erforderlich ist, bevor der Produktmaster in den Stücklistenversionen verwendet werden kann.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0d3a91977c38c0ce0f9fe114bec943c7cb32a5d4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 35617f5bec877fbe8a89d015eda16a66ee14d335
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354781"
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>Grundeinrichtung eines veröffentlichten Produktmasters abschließen
 
@@ -63,5 +63,4 @@ Dies ist die dritte von acht Prozeduren, die beschreibt, wie Kombinationen für 
     * Wählen Sie Produktion aus, um anzugeben, dass die standardmäßige Zubehöroption für diesen Produktmaster, sie zu erzeugen ist.  
 24. Schließen Sie die Seite.
 25. Schließen Sie das Formular 'Details für freigegebene Produkte'.
-
 

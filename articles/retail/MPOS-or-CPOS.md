@@ -1,36 +1,35 @@
 ---
-title: "Zwischen Retail Modern POS (MPOS) und Cloud POS wählen"
-description: "In diesem Thema werden die modernem wesentlichen Unterschiede zwischen Retail Modern POS und Cloud POS erklärt. Außerdem werden verschiedene Faktoren beschrieben, die bei Einzelhändlern, die Microsoft Dynamics 365 for Retail implementieren müssen, vorhanden sein müssen, um die beste Wahl für die Anforderungen zu treffen."
+title: Zwischen Retail Modern POS (MPOS) und Cloud POS wählen
+description: In diesem Thema werden die wesentlichen Unterschiede zwischen Retail Modern POS und Cloud POS erklärt. Außerdem werden verschiedene Faktoren beschrieben, die Einzelhändler, die Microsoft Dynamics 365 for Retail implementieren, bedenken müssen, um die beste Wahl für ihre Anforderungen zu treffen.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336243"
 ---
-
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Zwischen Retail Modern POS (MPOS) und Cloud POS wählen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema gibt Implementierer zusätzlichen Hintergrund, Tips und Orientierungshilfe für Faktoren, die sie berücksichtigen sollen, wenn sie Microsoft Dynamics 365 for Retail bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
+Dieses Thema gibt Implementierern zusätzliche Hintergrundinformationen, Tipps und Orientierungshilfe für Faktoren, die sie berücksichtigen sollten, wenn sie Microsoft Dynamics 365 for Retail bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
 
 ## <a name="insights"></a>Einblicke
 
@@ -40,10 +39,10 @@ Retail bietet eine breite Palette von Bereitstellungs- und Topologieoptionen. Da
 
 Retail unterstützt die folgenden: POS-Optionen
 
-- Retail Modern POS (MPOS) für Microsoft Windows
-- MPOS für Windows Windows Phone
-- MPOS für Apple iPad oder Google-Android Tablet
-- Cloud POS (CPOS), die Microsoft Edge, Internet Explorer und Googel Chrome Browser unterstützt
+- 'Retail Modern POS (MPOS) für Microsoft Windows
+- MPOS für Microsoft Windows Phone
+- MPOS für Apple iPad oder Google Android-Tablet
+- Cloud POS (CPOS) mit Unterstützung von Microsoft Edge-, Internet Explorer- und Google Chrome-Browsern
 
 In allen Fällen teilt POS (MPOS und CPOS) den gleichen Kernanwendungscode. Dieser Schritt ist wichtig für folgende Gründe:
 
@@ -58,10 +57,10 @@ Obwohl MPOS und CPOS von der Komplexität identisch sind, gibt es mehrere wichti
 
 #### <a name="mpos"></a>MPOS
 
-MPOS auf Windows, einem IOS oder einem androiden Gerät ist eine Anwendung, die auf dieses Gerät verpackt, eingerichtet und gewartet wird.
+MPOS auf einem Windows-, iOS- oder Android-Gerät ist eine Anwendung, die auf dieses Gerät verpackt, eingerichtet und gewartet wird.
 
 - **Fenster** – Die MPOS für Windows-Anwendung enthält den gesamten Anwendungscode und die eingebette Handelsausführungszeit (CRT). 
-- **/Android IOS** – Nach diesen Plattformen, wird die Anwendung als Host für den CPOS-Anwendungscode. Das bedeutet, der Anwendungscode kommt vom CPOS-Server auf Microsoft Azure oder der Retail Store Scale Unit (RSSU). Weitere Informationen finden Sie unter [Retail Store Scale Unit,Überblick](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin) .
+- **iOS/Android** – Auf diesen Plattformen dient die Anwendung als Host für den CPOS-Anwendungscode. Das bedeutet, der Anwendungscode stammt von dem CPOS-Server auf Microsoft Azure oder der Retail Store Scale Unit (RSSU). Weitere Informationen finden Sie unter [Retail Store Scale Unit-Überblick](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>CPOS
 
@@ -74,7 +73,7 @@ Neben einer Plattform und einem Formularfaktor müssen Einzelhändler eine Berei
 | POS-Bewerbung         | Retail Server | Verfügbar offline |
 |-------------------------|---------------|-------------------|
 | MPOS für Windows        | Cloud oder RSSU | Ja               |
-| MPOS für oder Android IOS | Cloud oder RSSU | Nr.                |
+| MPOS für iOS oder Android | Cloud oder RSSU | Nr.                |
 | Cloud POS               | Cloud oder RSSU | Nr.                |
 
 #### <a name="retail-server"></a>Retail Server
@@ -87,7 +86,7 @@ MPOS für Windows unterstützt Offline-Modus. Im Offline-Modus kann der POS weit
 
 ### <a name="pos-peripheralhardware-considerations"></a>POS-Peripheriegeräte-/-Hardwareüberlegungen
 
-Einzelhändler müssen auch entscheiden, wie der POS auf Geräte wie Drucker, Bargeldladen und Zahlungsterminals zugreift. Nur MPOS für Windows unterstützt direkte Kommunikation mit diesen Geräten. MPOS für Windows Phone, IOS oder Android und Cloud POS benötigen eine Hardwarestation, um diese Geräte zuzugreifen. Hardwarestationen können einem POS-Register zugewiesen werden oder unter den Kassen in einer Filiale verwendet werden. Weitere Informationen dazu, wie die Hardwarestation installiert wird, finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
+Einzelhändler müssen auch entscheiden, wie der POS auf Geräte wie Drucker, Bargeldladen und Zahlungsterminals zugreift. Nur MPOS für Windows unterstützt direkte Kommunikation mit diesen Geräten. MPOS für Windows Phone, IOS oder Android und Cloud POS benötigen eine Hardwarestation, um auf diese Geräte zuzugreifen. Hardwarestationen können einem POS-Register zugewiesen werden oder unter den Kassen in einer Filiale verwendet werden. Weitere Informationen dazu, wie die Hardwarestation installiert wird, finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
 
 ## <a name="implementation-considerations"></a>Implementierungsüberlegungen
 
@@ -106,4 +105,3 @@ Berücksichtigen Sie die folgenden Informationen, wie Sie Ihre POS-Implementieru
 - **Hardwaregeräte/Peripheriegeräte** – Ein wichtiger Aspekt eines Retail POS-Systems ist die Möglichkeit, Drucker, Geldladen und Zahlungsterminals zu verwenden. Obwohl alle verfügbaren POS-Optionen Peripheriegeräte verwenden, können nur MPOS für Windows diese direkt unterstützen. Bei allen anderen Anwendungen ist eine oder mehrere Hardwarestationen erforderlich. Obwohl dieser Ansatz Flexibilität hinzufügt, müssen zusätzliche Komponenten bereitgestellt, konfiguriert und verwaltet werden.
 - **Systemanforderungen** – Die Systemanforderungen für die POS-Anwendung unterscheiden sich. Stellen Sie sicher, die neuesten Informationen zu überprüfen, bevor Sie Ihre Auswahl treffen. Weil CPOS beispielsweise in einen Browser ausgeführt wird, unterstützt sie einen breiteren Bereich von Betriebssystemen. Weitere Informationen zu den Systemanforderungen finden Sie unter [Systemanforderungen für Cloud-Bereitstellung](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Bereitstellung und Verwalten** – Die Komplexität der Bereitstellung und Wartungsanforderungen kann unterschiedlich sein, abhängig von der Anwendungen und der Bereitstellungs-Auswahlen. Beispiel für eine Cloud-gehostete CPOS-Bereitstellung ist, dass Sie nicht jedes Gerät installieren und aktualisieren müssen. Daher verringert dieser Ansatz Komplexität und Kosten. Wenn Sie jedoch MPOS für jedes Register bereitstellen und den Offline-Modus aktivieren, und Sie auch geteilte Hardware-Stationen bereitstellen, erhöhen Sie die Anzahl von Endpunkten, die verwaltet werden müssen.
-

@@ -1,13 +1,13 @@
 ---
 title: Allgemeine Erfassungsverarbeitung
-description: "Dieses Thema beschreibt Fähigkeiten in Microsoft Dynamics 365 for Finance and Operations, mit denen die allgemeine Erfassungsverarbeitung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die interne Steuerung nicht beeinträchtigt werden."
+description: Dieses Thema beschreibt die Funktionen in Microsoft Dynamics 365 for Finance and Operations, mit denen die allgemeine Erfassung einfacher wird und die auch helfen, sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
 ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
-ms.contentlocale: de-de
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358438"
 ---
-
 # <a name="general-journal-processing"></a>Allgemeine Erfassungsverarbeitung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt Fähigkeiten in Microsoft Dynamics 365 for Finance and Operations, mit denen die allgemeine Erfassungsverarbeitung einfacher wird und die auch helfen sicherzustellen, dass die korrekten Daten erfasst und die interne Steuerung nicht beeinträchtigt werden.  
+Dieses Thema beschreibt die Funktionen in Microsoft Dynamics 365 for Finance and Operations, mit denen die allgemeine Erfassung einfacher wird und die auch helfen, sicherzustellen, dass die korrekten Daten erfasst und die internen Kontrollen nicht beeinträchtigt werden.  
 
 ## <a name="journal-names"></a>Journale
 
@@ -55,7 +54,7 @@ Ein Journal kann nur für ein bestimmtes Segment oder für einen Bereich für Ha
 Die Option **Automatische Rückbuchung** ist nur in allgemeinen Erfassungen verfügbar. Beispiel: Sie haben eine Abgrenzungsregulierung, in der das eigentliche Dokument noch nicht verarbeitet wurde, wie in der folgenden Abbildung dargestellt.
 [![Erfassungsrücksetzung](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-Rückbuchung allgemeine Erfassung Das Microsoft Excel-Add-in für Journaleinträge bietet eine weitere Ebene der Automatisierung und erleichtert die Dateneingabe. Die **Positionen in Excel öffnen**-Aktivität ist auf den Seiten **Allgemeine Erfassung** und **Alle Journale** verfügbar. 
+Das Microsoft Excel-Add-in für Journaleinträge bietet eine weitere Ebene der Automatisierung und erleichtert die Dateneingabe. Die **Positionen in Excel öffnen**-Aktivität ist auf den Seiten **Allgemeine Erfassung** und **Alle Journale** verfügbar. 
 
 Auf der Seite **Periodische Erfassungen** können Sie wiederholende Erfassungen einrichten, um die Erfassungsverarbeitung zu automatisieren. 
 
@@ -97,4 +96,3 @@ Weitere Informationen finden Sie in folgenden Themen:
 Sie können **Buchung simulieren** im Menü **Überprüfen** für die meisten Erfassungen finden. Wenn Sie eine Erfassung mit der Funktion **Überprüfen** prüft das System die Erfassung für bestimmte Fehlerbedingungen. Wenn Sie die Funktion **Buchung simulieren** verwenden, führt das System alle gleichen Prozessen aus, die während des Buchens durchgeführt werden, ohne die Erfassung zu buchen. Sie können die Verbuchungsmeldungen, die angezeigt werden, überprüfen, die Fehler beheben, die Sie finden und dann das Menü **Buchen** klicken, um die Erfassung zu buchen. 
 
 **Buchen simulieren** ist nicht verfügbar für Stapelverarbeitung. Allerdings ist ein Code vorhanden, um die Buchung in Chargen zu simulieren und Entwickler können den Code erweitern, um diese Funktionen ergänzen.  
-

@@ -1,13 +1,13 @@
 ---
-title: "Debitorenaufträge im Retail Modern POS (MPOS)"
-description: "Dieses Thema enthält Informationen zu Bestellungen in n Retail Modern POS (MPOS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen."
+title: Debitorenaufträge in Retail Modern POS (MPOS)
+description: Dieses Thema enthält Informationen zu Debitorenaufträgen in Retail Modern POS (MPOS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336611"
 ---
-
-# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Debitorenaufträge im Retail Modern POS (MPOS)
+# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Debitorenaufträge in Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zu Bestellungen in n Retail Modern POS (MPOS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen.
+Dieses Thema enthält Informationen zu Debitorenaufträgen in Retail Modern POS (MPOS). Debitorenaufträge sind auch Sonderauftrag. Das Thema enthält eine Diskussion zu zugehörigen Parametern und Buchungsflüssen.
 
 In einer Omni-Channel-Welt stellen viele Einzelhändler von Debitorenaufträgen als Option oder Sonderaufträge, um die verschiedenen Produkt- und Erfüllungsbedingungen zu erfüllen. Nachfolgend sind einige typische Szenarios:
 
@@ -57,7 +56,7 @@ Nachfolgend sind einige der Parameter, die auf der Seite e **Einzelhandelsparame
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaktionsfluss für Kundenbestellungen
 
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Debitorenauftrag im Retail Modern POS erstellen
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Erstellen eines Debitorenauftrags in Retail Modern POS
 
 1. Dient zum Hinzufügen eines Debitors zur Buchung.
 2. Produkte zum Warenkorb hinzufügen
@@ -97,9 +96,8 @@ Debitorenaufträge können von den Verkaufsstellen (POS)-Kunden entweder im sync
 1. Klicken Sie auf **Einzelhandel und Handel** &gt; **Kanaleinrichtung** &gt; **POS-Einrichtung** &gt; **POS-Profil** &gt; **Funktionsprofile**.
 2. Wählen Sie im Inforegister **Allgemein** unter **Kundenauftrag in asynchronem Modus erstellen** die Option **Ja** aus.
 
-Wenn die Option **Kundenauftrag in asynchronem Modus** auf **Ja** gesetzt ist, werden Debitorenaufträge immer in asynchronen Modus erstellt, selbst wenn Retail Transaction Service (RTS) verfügbar ist. Wenn Sie diesen Option auf **Nein** setzen, werden Debitorenaufträge immer im Modus synchronen mithilfe von RTS erstellt. Wenn Debitorenaufträge asynchronen erstellt werden, werden sie in Retail mittels Pulles (P)-Aufträgen abgerufen. Die entsprechenden Aufträge werden in Retail erstellt, wenn **Aufträge synchronisieren** entweder manuell oder mithilfe von Chargenaufträgen ausgeführt wird.
+Wenn die Option **Kundenauftrag in asynchronem Modus** auf **Ja** festgelegt wurde, werden Debitorenaufträge immer in asynchronen Modus erstellt, selbst wenn Retail Transaction Service (RTS) verfügbar ist. Wenn Sie diesen Option auf **Nein** setzen, werden Debitorenaufträge immer im Modus synchronen mithilfe von RTS erstellt. Wenn Debitorenaufträge asynchronen erstellt werden, werden sie in Retail mittels Pulles (P)-Aufträgen abgerufen. Die entsprechenden Aufträge werden in Retail erstellt, wenn **Aufträge synchronisieren** entweder manuell oder mithilfe von Chargenaufträgen ausgeführt wird.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Hybriddebitorenaufträge](hybrid-customer-orders.md)
-

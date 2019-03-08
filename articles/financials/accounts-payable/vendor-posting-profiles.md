@@ -1,13 +1,13 @@
 ---
 title: Kreditoren-Buchungsprofile
-description: "Händlerbuchungsprofile steuern die Buchung von Händlertransaktionen im Hauptbuch."
+description: Händlerbuchungsprofile steuern die Buchung von Händlertransaktionen im Hauptbuch.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPosting
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ae019ebec2788fc499b0f2ef27a7eb2832ceaa9d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3571726fd3603371b8e1daec7d6ebe85d72d280d
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346524"
 ---
-
 # <a name="vendor-posting-profiles"></a>Kreditoren-Buchungsprofile
 
 [!include [banner](../includes/banner.md)]
@@ -144,7 +143,6 @@ Geben Sie die folgenden Werte an, um das Buchungsprofil einzurichten:
 | **Ausgleich** | Aktivieren Sie diese Option, um den automatischen Ausgleich von Buchungen mit diesem Buchungsprofil zu aktivieren. Ist diese Option deaktiviert, müssen die Buchungen manuell mithilfe der Seite "Offene Buchungen ausgleichen" ausgeglichen werden. |
 | **Stornieren**     | Aktivieren Sie diese Option, wenn Sie in der Lage sein möchten, Buchungen mit diesem Buchungsprofil zu stornieren.                                                                                                               |
 | **Schließen**      | Wählen Sie ein Buchungsprofil aus, das geändert werden soll, wenn Buchungen mit diesem Buchungsprofil abgeschlossen werden. Eine Buchung gilt als abgeschlossen, wenn sie vollständig ausgeglichen wurde.                                       |
-
 
 
 

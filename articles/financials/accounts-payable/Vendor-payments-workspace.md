@@ -1,30 +1,29 @@
 ---
-title: "Arbeitsbereich für Kreditorenzahlungen"
-description: "Dieses Thema enthält Informationen zum Arbeitsbereich für Kreditorenzahlungen. Im Arbeitsbereich für Kreditorenzahlungen werden Informationen angezeigt, die zum Verarbeiten von Kreditorenzahlungen dienen."
+title: Arbeitsbereich für Kreditorenzahlungen
+description: Dieses Thema enthält Informationen zum Arbeitsbereich für Kreditorenzahlungen. Im Arbeitsbereich für Kreditorenzahlungen werden Informationen angezeigt, die zum Verarbeiten von Kreditorenzahlungen dienen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymentWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 03fd290f8ad780e740a8fe6552c7a64c44b65a67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: fa8ddf52d34c3662e120509156ab0b343bb4cc16
-ms.contentlocale: de-de
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346110"
 ---
-
 # <a name="vendor-payments-workspace"></a>Arbeitsbereich für Kreditorenzahlungen
 
 [!include [banner](../includes/banner.md)]
@@ -69,5 +68,4 @@ Die folgende Tabelle enthält die Visualisierungen, die für jede Berichtsseite 
 |         Zahlungsworkflow          |                                                                                <ul><li>Kreditorenzahlungsworkflowinstanzen</li><li>Kreditorenzahlungsworkflowinstanzen pro Genehmiger</li><li>Kreditorenzahlungsworkflowinstanzen pro Unternehmen</li><li>Durchschnittliche Tage im Arbeitsplan nach Genehmiger</li></ul>                                                                                |
 |    Kreditoren-/Händlersaldo     |                                                                                                                   <ul><li>Kreditoren-/Händlersaldo</li><li>Kreditoren-/Händlersaldo nach Unternehmen</li><li>Kreditoren-/Händlersaldo-Details</li></ul>                                                                                                                    |
 |    Rechnungen mit Zahlungssperre     |                                                                                         <ul><li>Rechnungen mit Zahlungssperre</li><li>Rechnungen mit Zahlungssperre, Details</li><li>Rechnungen mit Zahlungssperre nach Unternehmen</li><li>Rechnungen mit Zahlungssperre nach Lieferantengruppe</li></ul>                                                                                          |
-
 

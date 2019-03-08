@@ -1,13 +1,13 @@
 ---
-title: "Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)"
-description: "In diesem Artikel werden die Funktionen beschrieben, die in Microsoft Dynamics AX 7.0 entweder neu oder geändert sind. Diese Version enthält beide Plattform- und Anwendungsfunktionen, die im Februar 2016 veröffentlicht wurden."
+title: Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics AX 7.0 entweder neu oder geändert sind. Diese Version enthält beide Plattform- und Anwendungsfunktionen, die im Februar 2016 veröffentlicht wurden.
 author: sericks007
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334886"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel werden die Funktionen beschrieben, die in Microsoft Dynamics AX 7.0 entweder neu oder geändert sind. Diese Version enthält beide Plattform- und Anwendungsfunktionen, die im Februar 2016 veröffentlicht wurden.
+In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics AX 7.0 entweder neu oder geändert sind. Diese Version enthält beide Plattform- und Anwendungsfunktionen, die im Februar 2016 veröffentlicht wurden.
 
 ## <a name="cost-management"></a>Kostenverwaltung
 
@@ -119,7 +118,7 @@ Diese Funktion funktioniert unabhängig von den Nachkalkulationsmethoden, die de
 | Entwickeln Sie Ihre Lösungen mit Microsoft Visual Studio. | Microsoft MorphX ist die wichtigste Entwicklungsumgebung, aber einige Entwicklungsaktivitäten erfolgen in Visual Studio. | Visual Studio ist die einzige Entwicklungsumgebung. | Vertraute Dynamics AX 2012-Konzepte bleiben erhalten und werden nahtlos an das Visual Studio-Framework und die Paradigmen angepasst. Es ermöglicht eine Standardinteroperabilität mit anderen .NET-Sprachen und -Projekten. |
 | Compile Common Intermediate Language (CIL) für alle Funktionen. | X++ wird zu p-Code kompiliert. | Der nagelneue X++-Compiler generiert CIL für alle Funktionen. CIL ist die Intermediate-Language, die bereits von anderen .NET-basierten Sprachen verwendet wird. | CIL ist schneller, kann Klassen in verwalteten Dynamic Link Librarys (DLLs) effizienter referenzieren und kann auf einer größere Toolbasis von .NET-Hilfsprogrammen ausgeführt werden. |
 | Im Microsoft Dynamics AX-Client sind BI-Berichte und -Visualisierungen eingebettet. | Nicht verfügbar | Erstellen Sie die intuitive und flüssige Visualisierungen. | Sie ermöglichen bessere Entscheidungen auf Grundlage von BI. |
-| Integration mit Microsoft Office. | Nicht verfügbar | Neue Funktionen umfassen die Excel-Datenkonnektor-Anwendung, die **Arbeitsmappen-Designer**-Seite, die Export-API und die Dokumentverwaltung. | Sie können Produktivitätslösungen für die Endbenutzer erstellen. |
+| Integration in Microsoft Office. | Nicht verfügbar | Neue Funktionen umfassen die Excel-Datenkonnektor-Anwendung, die **Arbeitsmappen-Designer**-Seite, die Export-API und die Dokumentverwaltung. | Sie können Produktivitätslösungen für die Endbenutzer erstellen. |
 | Automatisieren Sie Builds, Tests und Bereitstellungen. | Teilweise verfügbar | Stellen Sie die Entwicklertopologie über die "Developer and Build"-VM bereit. Konfigurieren Sie die Build-WM für die automatische Erkennung und den Build von Module aus Visual Studio Online (VSO) und für Tests. C\#- und X++-Modulkompilierung und -Referenzen werden unterstützt. | Es erhöht die Entwicklerproduktivität, indem es die Kosten und den Aufwand für das Testen und die Validierung verringert. |
 | Anpassen mit Overlays und Erweiterungen. | Erweiterungen sind nicht verfügbar. | Die aktuelle Version von Dynamics AX-hat ein neues Anpassungsmodell. | Sie können Quellcode und Metadaten von Modellelementen anpassen, die von Microsoft oder von Drittanbietern bereitgestellt werden. |
 | Erstellen Sie neue Steuerelemente und Benutzeroberflächenelemente, indem Sie X++ und ein modernes Internet-Framework verwenden. | Benutzerdefinierte Steuerelemente basieren auf externen Frameworks wie Microsoft ActiveX und Windows Presentation Foundation (WPF). | Es ist einfacher, Steuerelemente in der aktuellen Version zu erstellen. Das X++-Framework kann für das Anwendungsverhalten und die Geschäftslogik verwendet werden, und ein HTML/JavaScript-basierter Client ermöglicht moderne Visualisierungen. | Ihre Steuerelemente können so konzipiert werden, das sie wie die vordefinierten Dynamics AX-Steuerelemente aussehen und sich auch so verhalten. |
@@ -141,7 +140,7 @@ Diese Funktion funktioniert unabhängig von den Nachkalkulationsmethoden, die de
 </thead>
 <tbody>
 <tr>
-<td>Export von Kontenstrukturen nach Microsoft Excel.</td>
+<td>Exportieren Sie Kontostrukturen in Microsoft Excel.</td>
 <td>Nicht verfügbar</td>
 <td>Sie können eine ausgewählte Kontostruktur nun nach Excel exportieren.</td>
 <td>Zahlreiche Kunden haben die Möglichkeit angefordert, Kontostrukturen zur einfacheren Filterung nach Excel exportieren zu können.</td>
@@ -213,7 +212,7 @@ Diese Funktion funktioniert unabhängig von den Nachkalkulationsmethoden, die de
 <td>Sie können nun Finanzberichte anzeigen, ohne auf einen anderen Client/eine andere Anwendung zugreifen zu müssen.</td>
 </tr>
 <tr>
-<td>Drucken von Finanzberichten (Management Reporter) über den Microsoft Dynamics AX-Client.</td>
+<td>Drucken von Finanzberichten (Management Reporter) innerhalb des Microsoft Dynamics AX-Clients.</td>
 <td>Das Drucken eines Berichts über die Druckoptionen des Browsers druckt nur das, was Benutzer auf dem Bildschirm sehen kann.</td>
 <td>Benutzer können die Detailsstufe und Seiteneinrichtung eines Berichts über die Druckoption im Finanzbericht im Dynamics AX-Client nutzen.</td>
 <td>Gedruckte Berichte sehen wie gewünscht aus.</td>
@@ -550,7 +549,7 @@ Es wurden keine neuen Funktionen hinzugefügt.
 | Warnen des Benutzers, wenn ein Auftrag oder Produktionsauftrag nicht zur Lieferung bis zum eingeplanten Datum bereit ist. | Die Warnungen, die von der Produktprogrammplanung erstellt werden, werden als *Verfügbarkeitsmeldungen* bezeichnet. Eine *Verfügbarkeit* ist ein Vertrag zwischen zwei Parteien, eine Anlage für einen Preis zu kaufen oder zu verkaufen, der heute vereinbart wird (der *Verfügbarkeitspreis*), obwohl Lieferung und Zahlung zu einem späteren Zeitpunkt stattfinden (das *Lieferdatum*). | *Verfügbarkeitsmeldungen* und *Verfügbarkeitsdaten* wurden in *berechnete Verzögerungen* und *verzögerte Datumsangaben*, umbenannt. | Die Terminologie, die in AX 2012 verwendet wird, war ungenau und führte zu falschen Übersetzungen. |
 | Sorgen Sie für schnellen Einblick in den Status eines Produktprogrammplanungslaufs, in dringenden Bestellvorschläge und in Bestellvorschläge, die Verzögerungen verursachen. | Die Information ist verfügbar, aber sie ist auf mehrere Formulare verteilt. | Der **Produktprogrammplanung**-Arbeitsbereich bietet auf einen Blick Informationen darüber, wann der letzte Produktprogrammplanungslauf abgeschlossen wurde, ob dabei Fehler aufgetreten sind, wie die dringenden Bestellvorschläge aussehen und welche Bestellvorschläge Verzögerungen verursachen. | Sie profitieren von dem Überblick, den der Arbeitsbereich bereitstellt. Relevante Information werden zusammengeführt und verbessern die Produktprogrammplanung und steigern die Produktivität. |
 | Verwendung von Excel zur Aktualisierung von Bedarfsplanungen. | Nicht verfügbar | Sie können die nahtlose Integration mit Excel nutzen, wenn Sie Bedarfsplanungen eingeben, Aktualisierungen durchführen und Bedarfsplanungen löschen. | So steigern Sie die Leistungsfähigkeit und Produktivität. |
-| Die Möglichkeit den zukünftigen Bedarf zu schätzen und Bedarfsplanungen basierend auf früheren Buchungsdaten zu erstellen. | In Microsoft Dynamics AX 2012 R3 werden die Planzahlenmodell in Microsoft SQL Server Analysis Service verwendet, um Bedarfsplanungsvorhersagen zu erstellen. | Kalkulieren Sie den zukünftigen Bedarf mithilfe der Leistung und der Erweiterbarkeit eines Microsoft Azure Machine Learning-Clouddienstes. Er ist bedienungsfreundlich und erweitert die Planzahlenmodelle in Machine Learning für die Kundenanforderungen. Die Dienst führt eine bestmögliche Modellauswahl durch und bietet Key Performance Indicators (KPIs) an. Mit diesen kann die Prognosegenauigkeit berechnet werden. | Generieren Sie genauere Planungen mit den Machine Learning-Techniken. |
+| Die Möglichkeit den zukünftigen Bedarf zu schätzen und Bedarfsplanungen basierend auf früheren Buchungsdaten zu erstellen. | In Microsoft Dynamics AX 2012 R3, werden die in Planungsmodelle aus Microsoft SQL Server Analysis Service verwendeten, um Bedarfsplanungsvorhersagen zu erstellen. | Kalkulieren Sie den zukünftigen Bedarf mithilfe der Leistung und der Erweiterbarkeit eines Microsoft Azure Machine Learning-Clouddienstes. Er ist bedienungsfreundlich und erweitert die Planzahlenmodelle in Machine Learning für die Kundenanforderungen. Die Dienst führt eine bestmögliche Modellauswahl durch und bietet Key Performance Indicators (KPIs) an. Mit diesen kann die Prognosegenauigkeit berechnet werden. | Generieren Sie genauere Planungen mit den Machine Learning-Techniken. |
 | Optimierung von Auftragsdatum und die Menge basierend auf einer visuellen Übersicht der zusammenhängender Aktivitäten aus dem Produktprogrammplanungslauf. | Der Diagramm zum Überblick der Aktivitäten ist nur verfügbar. Es zeigt alle zugehörigen Aktivitäten. Falls Aktivitäten angewendet werden, werden sie sofort von der Ansicht entfernt. | Das Aktionsdiagramm bietet einen besseren Überblick. Es schließt Optionen ein, mit denen Sie nur angewandte Aktivitäten und direkt zugeordnete Aktivitäten anzeigen können. Falls Aktivitäten angewendet werden, werden sie abgeblendet angezeigt. Daher wird der Überblick erhalten. Zusätzliche Informationen werden dem Funktionsdiagramm hinzugefügt, um die Daten auf einer Seite anzuzeigen. | Sie profitieren von Produktivitätsverbesserung, da Sie sich nur auf die relevanten Aktivitäten konzentrieren können. |
 
 ## <a name="procurement-and-sourcing"></a>Beschaffung
@@ -559,7 +558,7 @@ Es wurden keine neuen Funktionen hinzugefügt.
 |------------------|------------------|-----------------|------------------------|
 | Verwenden Sie den **Bestellungsvorbereitung**-Arbeitsbereich, um einen schnellen Einblick in den Status von Bestellungen zu erhalten, die vorbereitet werden. | Nicht unterstützt | Der **Bestellungsvorbereitung**-Arbeitsbereich bietet einen Überblick der Aufträge vom Zeitpunkt der Erstellung als Entwurf über den Workflowgenehmigungsstatus bis zur Bestätigung. | Ihre Einkaufsabteilung muss nicht mehr Informationen aus mehreren Seiten suchen. Sie profitiert von dem Überblick, den der Arbeitsbereich bereitstellt. |
 | Verwenden Sie den **Bestellungszugang und Weiterverfolgung**-Arbeitsbereich, um schnellen Einblick in Bestellungen zu erhalten, die gerade im Zugang sind. | Nicht unterstützt | Der **Bestellungszugang und Weiterverfolgung**-Arbeitsbereich bietet einen Überblick über bestätigten Bestellungen, die Zugänge oder Lieferungen aufweisen. Der Arbeitsbereich umfasst Listen von Buchen-Bis-Zugängen und ausstehenden Zugängen, um beim proaktiven Prüfung und bei der Nachverfolgung durch den Lieferanten weiterzuhelfen. Der Arbeitsbereich listet auch Bestellungen auf, bei denen die Eingangsregistrierung am Lagerort ausgeführt wurde, um sicherzustellen, dass der Zugang gebucht wird. Bestellungsrücksendung, die noch nicht geliefert wurden, sind auch zur Prüfung verfügbar. | Ihre Einkaufsabteilung profitiert von dem Überblick, den der Arbeitsbereich bereitstellt. Relevante Information werden zusammengeführt und verbessern die Weiterverfolgung und steigern die Produktivität. |
-| Senden Sie Bestellungen zur Bestätigung an ein Kreditorenportal , das im Dynamics AX-Client gehostet wird. Lassen Sie den Kreditor bestätigen oder ablehnen. | Nicht unterstützt | Die Kreditorenportalbenutzeroberfläche ermöglicht Kreditoren Bestellungen als empfangen oder abgelehnt zu erhalten. Ist ermöglicht dem Kreditor außerdem eine Übersicht über alle bestätigten Bestellungen für ein Konto. Der Einkaufsvertreter kann Bestellung übermitteln und eine Bestätigung vom Kreditor anfordern. Der Kreditor muss ein registrierter Benutzer von Microsoft Azure Active Directory (Azure AD) in Dynamics AX und eine Kontaktperson für den Kreditor sein und eine dedizierte Sicherheitsrolle haben. | Ihre Einkaufsabteilung profitiert von weniger Belegen und Aufwand zur manuellen Nachverfolgung von Bestellungen. Eine zentrale Information verringert Missverständnisse zwischen Debitor und Kreditor. |
+| Senden Sie Bestellungen zur Bestätigung an ein Kreditorenportal , das im Dynamics AX-Client gehostet wird. Lassen Sie den Kreditor bestätigen oder ablehnen. | Nicht unterstützt | Die Kreditorenportalbenutzeroberfläche ermöglicht Kreditoren Bestellungen als empfangen oder abgelehnt zu erhalten. Ist ermöglicht dem Kreditor außerdem eine Übersicht über alle bestätigten Bestellungen für ein Konto. Der Einkaufsvertreter kann Bestellung übermitteln und eine Bestätigung vom Kreditor anfordern. Der Kreditor muss ein registrierter Microsoft Azure Active Directory (Azure AD)-Benutzer in Dynamics AX und eine Kontaktperson für den Kreditor sein und eine dedizierte Sicherheitsrolle haben. | Ihre Einkaufsabteilung profitiert von weniger Belegen und Aufwand zur manuellen Nachverfolgung von Bestellungen. Eine zentrale Information verringert Missverständnisse zwischen Debitor und Kreditor. |
 
 ## <a name="projects"></a>Projekte
 
@@ -624,7 +623,7 @@ Der <strong>Katalogverwaltung</strong>-Arbeitsbereich ermöglicht die folgenden 
 <ul>
 <li>Erstellen und Konfigurieren neuer Kanäle und verbundener Entitäten.</li>
 <li>Verwalten der täglichen Shopaktionen.</li>
-<li>Verarbeiten von Einzelhandelstransaktionen in Microsoft Dynamics AX, Generieren von Auszugsberechnungschargen (Einzelhandel) und Aktualisieren von Microsoft Dynamics AX-Bestands und -Finanzdaten.</li>
+<li>Verarbeiten Sie Einzelhandelstransaktionen in Microsoft Dynamics AX, erstellen Sie Einzelhandelsabrechnungen und aktualisieren Sie Microsoft Dynamics AX Bestände und Finanzkennzahlen.</li>
 </ul>
 </td>
 <td>Der <strong>Kanalbereitstellung</strong>-Arbeitsbereich ermöglicht die folgenden Aufgaben:
@@ -632,7 +631,7 @@ Der <strong>Katalogverwaltung</strong>-Arbeitsbereich ermöglicht die folgenden 
 <li>Erstellen neuer Kanäle und verbundener Entitäten.</li>
 <li>Nachverfolgen des Status der Ladengeschäftkonfiguration.</li>
 <li>Durchführen der erforderlichen Schritte, um eine Aufgabe abzuschließen, oder Bereitstellen von Informationen, um die Aufgabe abzuschließen.</li>
-<li>Nachverfolgen des Status von Geräten und direktes Validieren und Herunterladen der Einzelhandel-Modern-POS (MPOS)-Programminstallation in den Filialen.</li>
+<li>Nachverfolgen des Status von Geräten und direktes Validieren und Herunterladen der Retail Modern POS (MPOS)-Programminstallation in den Filialen.</li>
 <li>Zugreifen auf alle zugehörigen Seiten.</li>
 </ul>Der 
 <strong>Einzelhandelsshopleitung</strong>-Arbeitsbereich ermöglicht die folgenden Aufgaben:
@@ -655,7 +654,7 @@ Der <strong>Katalogverwaltung</strong>-Arbeitsbereich ermöglicht die folgenden 
 <tr>
 <td>Verwalten des IT-Betriebs im Einzelhandel</td>
 <td>Der Benutzer muss auf mehrere Formulare zugreifen.</td>
-<td>Der <strong>IT (Einzelhandel)</strong> Arbeitsbereich ermöglicht Commerce Data Exchange-Abfragen an einem einzigen Ort für einen angegebenen Kanal. So können Sie die folgenden Aufgaben ausführen:
+<td>Der <strong>Retail IT</strong> Arbeitsbereich ermöglicht Commerce Data Exchange-Abfragen an einem einzigen Ort für einen angegebenen Kanal. So können Sie die folgenden Aufgaben ausführen:
 <ul>
 <li>Downloadsitzungen.</li>
 <li>Uploadsitzungen.</li>
@@ -666,7 +665,7 @@ Der <strong>Katalogverwaltung</strong>-Arbeitsbereich ermöglicht die folgenden 
 </tr>
 <tr>
 <td>Import-/Exportieren von Daten nach Datenentitäten.</td>
-<td>AX 2012 unterstützt standardmäßig die Microsoft Dynamics Retail Management System (RMS)-Migration über das Data Import/Export Framework.</td>
+<td>AX 2012 unterstützt standardmäßig die Microsoft Dynamics Retail Management System (RMS) -Migration über das Data Import/Export Framework.</td>
 <td>Einzelhandeltsdatenentitäten wurden erweitert, alle Master- und Referenzdaten zu unterstützen, die zum Einzelhandel gehören. Es gibt außerdem eine erweiterte Unterstützung für Datenentitäten in der gesamten Dynamics AX-Lösung.</td>
 <td>Datenentitäten ermöglichen Kunden das Metadatum-gesteuerte Importieren und Exportieren von Daten. OData-Entitäten ermöglichten die Integration von Dynamics AX mit Programmen von Drittanbietern.</td>
 </tr>
@@ -734,16 +733,16 @@ Die Einzelhandel-Server und Datenverwaltung bietet Kunden und Unternehmen die M�
 <td>Er bietet gehostete und skalierbare E-Commerce-Dienste, die mit Onlineshops von Drittanbietern verwendet werden können.</td>
 </tr>
 <tr>
-<td>Verschieben von Daten zwischen dem Microsoft Dynamics AX-Backoffice und Kanälen über Commerce Data Exchange.</td>
-<td>Commerce Data Exchange ist ein System, das Daten zwischen Microsoft Dynamics AX und Einzelhandelskanälen, wie Onlineshops oder physische Shops, austauscht. Weitere Informationen finden Sie in <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange AX [2012]</a>.</td>
-<td>Die Funktion entspricht der in Microsoft Dynamics AX 2012 CU8. Beachten Sie jedoch die folgenden Details:
+<td>Verschieben Sie Daten zwischen dem Microsoft Dynamics AXBack-Office und Kanälen, indem Commerce Data Exchangeverwenden.</td>
+<td>Commerce Data Exchange ist ein System, das Daten zwischen Microsoft Dynamics AX und den Handelskanälen wie Online-Shops oder Filialen überträgt. Weitere Informationen finden Sie unter <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Es besteht eine funktionale Parität mit Microsoft Dynamics AX 2012 CU8. Beachten Sie jedoch die folgenden Details:
 <ul>
 <li>Commerce Data Exchange wurde für die Cloud überarbeitet.</li>
 <li>Der Async-Dienst arbeitet mit einem direkten Datenbankzugriff der Kanaldatenbank.</li>
-<li>Der Commerce Data Exchange: Real-time Service wird als Microsoft Dynamics AX-Dienst gehostet.</li>
+<li>Commerce Data Exchange: Echtzeit-Service wird als Microsoft Dynamics AX Custom Service gehostet.</li>
 <li>MPOS verwaltet die Synchronisierung zwischen Offlinen Datenbanken und Einzelhandl-Server.</li>
 </ul></td>
-<td>Commerce Data Exchange wurde für die Cloud-Plattform überarbeitet. Es verwaltet auch weiterhin den Datenaustausch zwischen Microsoft Dynamics AX und Einzelhandelskanälen, wie Onlineshops oder physische Shops.</td>
+<td>Commerce Data Exchange wurde für die Cloud-Plattform neu entwickelt. Es verwaltet auch weiterhin den Datenaustausch zwischen Microsoft Dynamics AX und Einzelhandelskanälen, wie Onlineshops oder physische Shops.</td>
 </tr>
 <tr>
 <td>Unterstützung von Plug & Play und halb-integrierten, kanalübergreifenden Zahlungen über das Zahlung-SDK.</td>
@@ -758,11 +757,11 @@ Die Einzelhandel-Server und Datenverwaltung bietet Kunden und Unternehmen die M�
 <td>Die Kunden können Kredit-/Debitkartenbuchungen für Zahlungen verarbeiten.</td>
 </tr>
 <tr>
-<td>Aktivieren von Geräten über ein Microsoft-Konto (Microsoft Azure Active Directory (Azure AD)).</td>
+<td>Aktivieren von Geräten mit einem Microsoft-Konto verwenden (Microsoft Azure Active Directory (Azure AD)).</td>
 <td>Nicht verfügbar</td>
 <td>Die Funktionen stehen bereit:
 <ul>
-<li>Erweiterte Sicherheit über die Azure AD-basierte Aktivierung für die Cloud.</li>
+<li>Erweiterte Sicherheit über die Azure AD-basierte Aktivierung für die Cloud</li>
 <li>Erweiterte Sicherheit für die Tokenverwaltung.</li>
 <li>Verbessertes Zuverlässigkeit, Problembehandlung und Fehlerbenachrichtigung während der Aktivierung</li>
 <li>Vereinfachte IT-Verwaltungsaufgaben bei der Aktivierung.</li>
@@ -770,7 +769,7 @@ Die Einzelhandel-Server und Datenverwaltung bietet Kunden und Unternehmen die M�
 </ul></td>
 <td>Es bietet folgende Vorteile:
 <ul>
-<li>Die Sicherheit wird durch Azure AD und Gerät-Token/IDs erhöht (RS-Aufrufe, die ein Token verwenden, benutzerspezifischer Anwendungsspeicher).</li>
+<li>Die Sicherheit wird durch Azure AD und Gerät-Token/IDs erhöht (RS-Aufrufe, die ein Token verwenden, benutzerspezifischer Anwendungsspeicher)</li>
 <li>Die nicht autorisierte Remote Verwendung von MPOS (Brick-Device) wird verhindert.</li>
 <li>MPOS-Geräte werden zu PCI-Kompatibilitätszwecken nachverfolgt.</li>
 <li>Physische Geräte werden einer Geschäftseinheit über ein Gerätentoken zugeordnet (Register).</li>
@@ -823,7 +822,7 @@ Einzelhändler bietet interaktive mobile Erfahrungen an jedem Ort, jederzeit und
 <li>Annehmen und Erhalten von Aufträge und prüfen von Bestandsmengen.</li>
 <li>Anzeigen von Shop-Berichten.</li>
 </ul></td>
-<td>Funktionalität entspricht AX 2012 MPOS. Dies umfasst die folgende Funktionalitäten:
+<td>Funktionalität entspricht AX 2012 MPOS  Dies umfasst die folgende Funktionalitäten:
 <ul>
 <li>Kundensuche über Shop/Kanäle hinweg.</li>
 <li>Die Möglichkeit, Kundenaufträge zu erstellen, ohne auf Echtzeitdienste zuzugreifen.</li>
@@ -966,13 +965,13 @@ Es gibt eine verbesserte "low-touch" Clientkomponenteninstallation über die Sel
 <td>Die Cloudbereitstellungsdienste bieten die folgenden Vorteile:
 <ul>
 <li>Erheblich reduzierter Bereitstellungsaufwand und -komplexität für Einzelhandel-Hauptsitz-Komponenten.</li>
-<li>Native Bereitstellung der öffentlichen Microsoft Azure-Cloud.</li>
+<li>Native Bereitstellung die öffentlich Microsoft Azure-Cloud</li>
 <li>Verbesserte Self-Service-Installation von In-Store-Komponenten, um die Konfiguration einfacher und intuitiver vorzunehmen</li>
 </ul></td>
 </tr>
 <tr>
 <td>Überwachen des Status des Systems, und Diagnose von Fehlern und Problemen</td>
-<td>Diese Funktionen erfordern <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack für Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Diese Funktionen erfordern <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack für Microsoft Dynamics AX 2012 R3 CU8 Retail.</a></td>
 <td>Überwachen sowie Diagnose für Einhelhandel-Komponenten ist jetzt über das Dashboard in <strong>Betriebseinblick</strong> in LCS verfügbar.</td>
 <td>Das <strong>Betriebseinblick</strong>-Dashboard ist ein Cloud-basiertes Überwachungsportal, das die Installation der System Center Operations Manager (SCOM)-Infrastruktur überflüssig macht.</td>
 </tr>
@@ -985,7 +984,7 @@ Es gibt eine verbesserte "low-touch" Clientkomponenteninstallation über die Sel
 </tbody>
 </table>
 
-## <a name="sales"></a>Vertrieb
+## <a name="sales"></a>Verk.
 
 <table>
 <thead>
@@ -1023,7 +1022,7 @@ Es wurden keine neuen Funktionen hinzugefügt.
 
 Es wurden keine neuen Funktionen hinzugefügt.
 
-## <a name="warehouse-management"></a>Warehouse-Verwaltung
+## <a name="warehouse-management"></a>Lagerortverwaltung
 
 | Wie können Sie vorgehen? | Dynamics AX 2012 | Dynamics AX 7.0 | Warum ist dieses wichtig? |
 |------------------|------------------|-----------------|------------------------|
@@ -1034,4 +1033,3 @@ Es wurden keine neuen Funktionen hinzugefügt.
 [Neuheiten und Änderungen](whats-new-changed.md)
 
 [Neuer Aufgabenleitfaden verfügbar (Februar 2016)](new-task-guides-available-february-2016.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Gewichteter Durchschnitt mit physischem Wert und Markierung
-description: "Beim gewichteten Durchschnitt handelt es sich um ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Für dieses Modell werden Abgänge aus dem Bestand mit dem Durchschnittswert der Artikel, die im Rahmen der Lagerabschlussperiode in den Bestand eingehen, sowie des gesamten verfügbaren Bestands der vorangegangenen Periode bewertet."
+description: Beim gewichteten Durchschnitt handelt es sich um ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Für dieses Modell werden Abgänge aus dem Bestand mit dem Durchschnittswert der Artikel, die im Rahmen der Lagerabschlussperiode in den Bestand eingehen, sowie des gesamten verfügbaren Bestands der vorangegangenen Periode bewertet.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc70b9cffd8716bc1d90cdb611076b4fc0bf6b30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355678"
 ---
-
 # <a name="weighted-average-with-physical-value-and-marking"></a>Gewichteter Durchschnitt mit physischem Wert und Markierung
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
 - Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
 - Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
@@ -111,7 +110,7 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
 - Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
 - Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
@@ -140,7 +139,7 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
 - Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
 - Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
@@ -173,7 +172,7 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unitprice angegeben.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Menge@Einheitenpreis der Wert der Lagerbuchung angegeben.
 - Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
 - Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
@@ -221,14 +220,13 @@ Das folgende Diagramm gibt Aufschluss über diese Reihe von Buchungen sowie übe
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über oder unter den einzelnen vertikalen Pfeilen ist im Format Menge@"Unitprice" der Wert der Lagerbuchung angegeben.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format Quantity@"Unitprice" der Wert der Lagerbuchung angegeben.
 - Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
 - Ein Lagerbuchungswert ohne Klammer weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
 - Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
 - Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung "Lagerabschluss" gekennzeichnet.
 - Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch einen roten gepunkteten Pfeil dargestellt, der diagonal von einem Zugang zu einem Abgang verläuft.
-
 
 
 

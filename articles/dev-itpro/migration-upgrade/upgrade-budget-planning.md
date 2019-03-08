@@ -1,13 +1,13 @@
 ---
 title: Budgetplanung aktualisieren
-description: "Es gibt erhebliche Unterschiede bei der Budgetplanung zwischen Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Finance and Operations. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist."
+description: Zwischen Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Finance and Operations gibt es erhebliche Unterschiede in der Budgetplanung. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.
 author: ryansandness
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -17,31 +17,30 @@ ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 3d57419ca5c59be185c87b869302b41bef05a3c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a39f516bb6d023ea18492ba3dfe721bd1127c60e
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342959"
 ---
-
 # <a name="upgrade-budget-planning"></a>Budgetplanung aktualisieren
 
 [!include [banner](../includes/banner.md)]
 
-Es gibt erhebliche Unterschiede bei der Budgetplanung zwischen Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Finance and Operations. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.  
+Zwischen Microsoft Dynamics AX 2012 und Microsoft Dynamics 365 for Finance and Operations gibt es erhebliche Unterschiede in der Budgetplanung. Einige Funktionen wurden nicht aktualisiert und erfordern daher eine Rekonfiguration. In diesem Thema wird erläutert, was umkonfiguriert werden muss und es werden auch neue Funktionen beschrieben, die berücksichtigt werden sollten, wenn die Aktualisierung abgeschlossen ist.  
 
-Budgetplanung in Microsoft Dynamics 365 for Finance and Operations verfügt über eine Vielzahl von Erweiterungen, die nicht in Microsoft Dynamics AX 2012 verfügbar waren. In diesem Thema werden die Änderungen erklärt, die Kunden bei einer Aktualisierung durchführen müssen. Es unterstreicht auch die neuen Funktionen, die im Aktualisierungsprozess berücksichtigt werden sollen. Aufgrund der umfangreichen Änderungen können keine vorhandenen Budgetpläne geöffnet werden, bis die Änderungen vorgenommen werden, die in diesem Thema aufgeführt sind. Berichte funktionieren weiterhin und erfordern keine zusätzliche Änderungen.
+Die Budgetplanung in Microsoft Dynamics 365 for Finance and Operations enthält viele Erweiterungen, die in Microsoft Dynamics AX 2012 nicht verfügbar waren. In diesem Thema werden die Änderungen erklärt, die Kunden bei einer Aktualisierung durchführen müssen. Es unterstreicht auch die neuen Funktionen, die im Aktualisierungsprozess berücksichtigt werden sollen. Aufgrund der umfangreichen Änderungen können keine vorhandenen Budgetpläne geöffnet werden, bis die Änderungen vorgenommen werden, die in diesem Thema aufgeführt sind. Berichte funktionieren weiterhin und erfordern keine zusätzliche Änderungen.
 
 ## <a name="overview-of-changes"></a>Überblick über die Änderungen
-Viele signifikante Veränderungen sind bei der Budgetierung für Finance and Operations vorgenommen worden. Diese Änderungen sind vorgesehen, um die Budgetplanung zu vereinfachen und zu konfigurieren, um die jährliche Wartung und der Setup zu reduzieren. Die folgenden Bereiche im AX 2012 sind nicht mehr in Finance and Operations enthalten:
+Viele signifikante Veränderungen sind bei der Budgetierung für Finance and Operations vorgenommen worden. Diese Änderungen sind vorgesehen, um die Budgetplanung zu vereinfachen und zu konfigurieren, um die jährliche Wartung und der Setup zu reduzieren. Die folgenden Bereiche in AX 2012 existieren in Finance and Operations nicht mehr:
 
 -   Budgetplanvorlagen (Budgetplanungskonfiguration)
 -   Budgetplanordner (Budgetplanungskonfiguration)
 -   Budgetplaneinschränkungen (Budgetplankonfiguration)
 -   Vorlagen und Regeln für die Budgetplanungsphasen und Vorlagen (Budgetplanungsprozess)
 -   Matrixfelder für Arbeitsblattvorlagen
--   Microsoft Excel-Vorlagen für die Budgetplanung
+-   Budgetplan Microsoft Excel Vorlagen-Assistent
 
 Zahlreiche neue Konzepte können nicht aus früheren Funktionen direkt aktualisiert werden. Daher müssen Sie gewisse Rekonfigurationen ausführen, um diese neuen Konzepte zu adressieren. In den folgenden Abschnitten werden die Konzepte beschrieben, die die Artikel in der obigen Liste ersetzt haben.
 
@@ -160,7 +159,6 @@ Einige Datenentitäten wurden hinzugefügt, um eine rasche Implementierung der B
 -   Budgetplanprioritäten
 -   Budgetplanspalten
 -   Budgetplanlayout-Elemente
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung"
-description: "Diese Prozedur zeigt an, wie ein Menüelement \"Mobiles Gerät\" eingerichtet wird."
+---
+title: Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung
+description: Diese Prozedur zeigt an, wie ein Menüelement "Mobiles Gerät" eingerichtet wird.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 326a0039d2769ee5f459a87c302c93604d2379aa
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337554"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung
 
@@ -81,5 +81,4 @@ Diese Prozedur zeigt an, wie ein Menüelement "Mobiles Gerät" eingerichtet wird
 5. Klicken Sie auf den Pfeil nach rechts.
 6. Klicken Sie auf "Speichern".
 7. Schließen Sie die Seite.
-
 

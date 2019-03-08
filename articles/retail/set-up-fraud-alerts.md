@@ -1,13 +1,13 @@
 ---
 title: Einstellungen und Arbeiten mit Callcenterbetrugswarnungen
-description: "In diesem Thema wird erläutert, wie Regeln eingerichtet werden, um Kundendienstmitarbeiter vor möglicherweise gefälschten Informationen zu warnen, wenn Aufträge verarbeitet werden. Sie können auch spezielle Codes definieren, die verwendet werden, um automatisch oder manuell verdächtige Aufträge zu sperren."
+description: In diesem Thema wird erläutert, wie Regeln eingerichtet werden, um Kundendienstmitarbeiter vor möglicherweise gefälschten Informationen zu warnen, wenn Aufträge verarbeitet werden. Sie können auch spezielle Codes definieren, die verwendet werden, um automatisch oder manuell verdächtige Aufträge zu sperren.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13b6a18750e79a17c7f6034780922c64b12390e2
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361497"
 ---
-
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Einstellungen und Arbeiten mit Callcenterbetrugswarnungen
 
 [!include [banner](includes/banner.md)]
@@ -69,4 +68,3 @@ Die Reihenfolge wird gespeichert, jedoch wird die Markierung auf **nicht verarbe
 Um die Aufträge anzuzeigen und zu verwalten, die für Betrugsprüfung gesperrt sind, wechseln Sie zu **Retail** \> **Debitoren** \> **Auftragssperre**. Auf der Seite **Aufträge sperren** wählen Sie einen Eintrag in der Liste aus, und klicken Sie dann auf **Auftrag gesperrt**, um eine detailliertere Ansicht anzuzeigen, die Informationen über den Grund für die Sperre enthält. Auf dem Inforegister **Betrugsdetails** können Sie die systematische die Betrugskriterien anzeigen, die gefunden wurden, um für eine Übereinstimmung die Reihenfolge und die Bewertungen abzustimmen. Wenn der Auftrag manuell gesperrt wurde, können Sie beliebige Kommentare anzeigen, die vom Benutzer eingegeben wurden, der den Auftrag gesperrt hat unter **Betrugs-Hinweise** im Inforegister  **Hinweise**.
 
 Weitere Informationen zum Arbeiten mit dem Formular, finden Sie unter [Auftrag sperren ](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
-

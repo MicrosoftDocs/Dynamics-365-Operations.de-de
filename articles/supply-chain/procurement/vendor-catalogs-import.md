@@ -5,31 +5,30 @@ author: mkirknel
 manager: AnnBe
 ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: cf81823de46da9a834f0214896b9e634989cac0e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ac7754bd6361ad74f7ab4d564ae3114dd4b9f165
-ms.openlocfilehash: caf801ea27ade63c24bb0907313e7f8294c50702
-ms.contentlocale: de-de
-ms.lasthandoff: 04/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362026"
 ---
-
 # <a name="import-vendor-catalogs"></a>Lieferantenkataloge importieren
 [!include[banner](../includes/banner.md)]
 
-## <a name="vendor-catalogs-import"></a>Lieferantenkataloge importieren
+## <a name="vendor-catalogs-import"></a>Lieferantenkatalogimport
 
 In Microsoft Dynamics 365 for Finance and Operations können Einkäufer Kataloge erstellen und verwalten, die Unternehmensmitarbeiter beim Bestellen von Artikeln und Dienstleistungen für den internen Gebrauch verwenden können. Beim Erstellen eines Beschaffungskatalogs können Sie die Artikel und Dienstleistungen hinzufügen, die für Mitarbeiter verfügbar sein sollen, indem Sie entweder die Lieferantenkatalogdaten importieren oder die Lieferantenkatalogdaten manuell dem Produktmaster hinzufügen. 
 
@@ -53,7 +52,7 @@ Führen Sie zum Importieren der Lieferantenkatalogdaten die folgenden Aufgaben a
 
 6.  Laden Sie die CMR-Datei hoch.
 
-7.  Prüfen Sie die Produkte im Lieferantenkatalog, um sie entweder zu genehmigen oder abzulehnen. Die Produkte werden automatisch den Beschaffungskategorien in Dynamics 365 for Finance and Operations. zugeordnet. 
+7.  Prüfen Sie die Produkte im Lieferantenkatalog, um sie entweder zu genehmigen oder abzulehnen. Die Produkte werden automatisch den Beschaffungskategorien in Dynamics 365 for Finance and Operationszugeordnet. 
     
 Genehmigte Produkte werden dem Produktmaster hinzugefügt und für die ausgewählten juristischen Personen freigegeben. Nur genehmigte Produkte können dem Beschaffungskatalog hinzugefügt werden.
 
@@ -69,5 +68,4 @@ Bei der Katalogimport-Dateivorlage handelt es sich um eine XSD-Datei, mit der ei
 
 3. Wählen Sie im Dialogfeld **Speichern unter** den Ort aus, an dem die Katalogdateivorlage gespeichert werden soll, und speichern Sie sie.
 
-Weitere Informationen und Beispiele finden Sie in diesem Blogbeitrag: [Kreditorenkataloge in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
-
+Weitere Informationen und Beispiele finden Sie in diesem Blogbeitrag: [Kreditorenkataloge in Dynamics AX.](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/)

@@ -1,13 +1,13 @@
 ---
 title: Zahlungsmethoden
-description: "Jeder Zahlungstyp, der von einem Einzelhändler akzeptiert wird, muss beim Einrichten des Systems konfiguriert werden. In diesem Artikel wird beschrieben, wie Sie die Zahlungstypen einrichten können und beschreibt den Prozess, um sie einzurichten."
+description: Jeder Zahlungstyp, der von einem Einzelhändler akzeptiert wird, muss beim Einrichten des Systems konfiguriert werden. In diesem Artikel wird beschrieben, wie Sie die Zahlungstypen einrichten können und beschreibt den Prozess, um sie einzurichten.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 60f0a2e5fa2dc2bc37a04b159a4834a52117893d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 1ba80e48c8b3b5ed94b9e03302788099a1d31909
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328975"
 ---
-
 # <a name="payment-methods"></a>Zahlungsmethoden
 
 [!include [banner](includes/banner.md)]
 
 Jeder Zahlungstyp, der von einem Einzelhändler akzeptiert wird, muss beim Einrichten des Systems konfiguriert werden. In diesem Artikel wird beschrieben, wie Sie die Zahlungstypen einrichten können und beschreibt den Prozess, um sie einzurichten.
 
-Einzelhändler können für die von ihnen verkauften Produkte und angebotenen Dienstleistungen verschiedene Zahlungsformen akzeptieren. Obwohl die Barzahlung am häufigsten ist, können Einzelhändler Zahlungen auch in Form von Schecks, Kredikarten, Gutscheinen usw. entgegennehmen. Jeder Zahlungstyp, der von einem Einzelhändler akzeptiert wird, muss beim Einrichten des Systems in Dynamics 365 for Retail konfiguriert werden. Die folgende Liste beschreibt die Zahlungstypen, die in Dynamics 365 for Retail eingerichtet werden können:
+Einzelhändler können für die von ihnen verkauften Produkte und angebotenen Dienstleistungen verschiedene Zahlungsformen akzeptieren. Obwohl die Barzahlung am häufigsten ist, können Einzelhändler Zahlungen auch in Form von Schecks, Kredikarten, Gutscheinen usw. entgegennehmen. Jeder vom Einzelhändler akzeptierte Zahlungstyp muss beim Einrichten des Systems in Dynamics 365 for Retail konfiguriert werden. In der folgenden Liste wird jeder Zahlungstyp beschrieben, der in Dynamics 365 for Retail eingerichtet werden kann:
 
 - **Bargeld** – Geld in der physischen Form der Währung, z. B. Banknoten und Münzen. Die Währung kann entweder die Unternehmenswährung oder die im Shop gültige lokale Währung sein.
 - **Scheck** – Ein übertragbares Wertpapier, das eine Zahlungsanweisung an die angegebene Bank enthält, einen bestimmten Betrag in einer bestimmten Währung zu zahlen. Ein Scheck ist im Allgemeinen entweder für eine unbegrenzte Dauer oder sechs Monate nach dem Ausstellungsdatum gültig, sofern kein anderer Gültigkeitszeitraum angegeben ist. Dieser Zeitraum variiert und hängt von der Bank ab, bei der der Scheck gezogen wird. Es gibt verschiedene Arten von Schecks, z. B. Orderschecks, Blankoschecks, Inhaberschecks und Schecks für Einzahlungen auf das Konto des Begünstigten. Schecks können für jeden Shop als Zahlungsmethode eingerichtet werden. Schecks können in der Währung akzeptiert werden, die entweder auf Unternehmensebene oder Shopebene definiert ist. Damit Schecks in einem Shop als Zahlungsmittel akzeptiert werden können, müssen Schecks als Zahlungsmethode eingerichtet werden.
@@ -50,4 +49,3 @@ Zum Einrichten von Zahlungsmethoden müssen Sie die folgenden Aufgaben abschlie�
 2. Einrichten von organisationsweiten Kartentypen und Kartennummern Wenn Kredit- oder Debitkarten akzeptiert werden, müssen Sie eine Zahlungsmethode für Karten und anschließend die organisationsweiten Kartentypen und Kartennummern erstellen.
 3. Einrichten von Shopzahlungsmethoden Ordnen Sie die Zahlungsmethoden den einzelnen Shops zu, und geben Sie dann für jede Zahlungsmethode shopspezifische Einstellungen ein.
 4. Einrichten von Kartenzahlungsmethoden für Shops Schließen Sie für alle Zahlungsmittel vom Typ "Karte", die im Shop akzeptiert werden, die Karteneinrichtung ab.
-

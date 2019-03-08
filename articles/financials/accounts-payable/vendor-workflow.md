@@ -1,13 +1,13 @@
 ---
 title: Lieferantenworkflow
-description: "Ändern Sie Kreditordatendaten und Nutzen Sie zur Genehmigung Workflow."
+description: Ändern Sie Kreditordatendaten und Nutzen Sie zur Genehmigung Workflow.
 author: mikefalkner
 manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 950a1852acf9f3e4747ce2d55738c0eb3a646897
-ms.contentlocale: de-de
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329688"
 ---
-
 # <a name="vendor-workflow"></a>Lieferantenworkflow
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,7 @@ Die Funktion Workflow kann erst nach der Aktivierung verwendet werden.
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>Ändern Sie Kreditoreninformationen und übermitteln Sie die Änderungen an den Workflow
 
-Wenn Sie ein Feld ändern, das für den Workflow aktiviert ist, wird die Seite **Vorgeschlagene Änderungen** angezeigt. Diese Seite enthält den ursprünglichen Wert des Felds und den neuen Wert, den Sie eingegeben haben. Das Feld, das Sie ändern, wird auf den ursprünglichen Wert zurückgesetzt. Eine Statusmeldung informiert Sie auch, dass die Änderungen nicht übermittelt wurden. 
+Wenn Sie ein Feld ändern, das für den Workflow aktiviert ist, wird die Seite **Vorgeschlagene Änderungen** angezeigt. Diese zeigt den ursprünglichen Feldwert und den neu eingegebenen Wert. Das Feld, das Sie ändern, wird auf den ursprünglichen Wert zurückgesetzt. Eine Statusmeldung informiert Sie auch, dass die Änderungen nicht übermittelt wurden. 
 
 Immer wenn Sie ein Feld ändern, das für den Workflow aktiviert ist, wird dieses Feld der Liste auf der Seite **Vorgeschlagene Änderungen** hinzugefügt. Um den vorgeschlagenen Wert für ein Feld zu verwerfen, verwenden Sie die Schaltfläche **Verwerfen** neben dem Feld in der Liste. Um sämtliche Änderungen zu verwerfen, verwenden Sie die Schaltfläche **Alle Änderungen verwerfen** am unteren Seitenrand. Klicken Sie auf **OK**, um die Seite zu schließen.
 
@@ -59,7 +58,6 @@ Nachdem Sie mindestens eine vorgeschlagene Änderung haben, werden zwei zusätzl
 1. Wählen Sie **Vorgeschlagene Änderungen**, um die Seite **Vorgeschlagene Änderungen** zu öffnen und die Änderungen zu prüfen.
 2. Wählen Sie **Workflow\>Übermitteln, um die Änderungen für den Workflow zu ändern**.
 
-    Der Status auf der Seite wird zu **Ändert ausstehenden Genehmigungen** geändert.
+    Der Status auf der Seite ändert sich in **Änderungen mit ausstehender Genehmigung**.
 
-Der Workflow Standardworkflowprozess erfolgt gemäß dem Prozess in Microsoft Dynamics 365 for Finance and Operations. Die genehmigende Person wird auf die Seite **Kreditor** verwiesen, auf der sie die Änderungen auf der Seite Überprüfen **Vorgeschlagene Änderungen** und dann **Workflow \> Genehmigen** auswählen können, um den Workflow zu genehmigen. Wenn alle Genehmigungen abgeschlossen sind, werden die Felder mit den Werten gefüllt, die Sie vorschlugen.
-
+Der Workflow erfolgt gemäß dem Standardworkflowprozess in Microsoft Dynamics 365 for Finance and Operations Die genehmigende Person wird auf die Seite **Kreditor** verwiesen, auf der sie die Änderungen auf der Seite Überprüfen **Vorgeschlagene Änderungen** und dann **Workflow \> Genehmigen** auswählen können, um den Workflow zu genehmigen. Sind alle Genehmigungen bearbeitet, werden die Felder mit den vorgeschlagenen Werten aktualisiert.

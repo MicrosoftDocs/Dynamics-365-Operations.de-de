@@ -1,13 +1,13 @@
 ---
-title: "Über Power BI Embedded Analysen zu Arbeitsbereichen hinzufügen"
-description: "Dieses Thema zeigt, wie Sie der Registerkarte Analysen eines Arbeitsbereichs einen Power BI-Bericht hinzufügen."
+title: Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
+description: Dieses Thema zeigt, wie Sie in die Registerkarte "Analysen" eines Arbeitsbereichs einen Power BI-Bericht einbetten.
 author: tjvass
 manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a190e15dc304f60739c80d75222830ee737c5a32
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355218"
 ---
-
-# <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Über Power BI Embedded Analysen zu Arbeitsbereichen hinzufügen
+# <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,11 +30,11 @@ ms.lasthandoff: 08/13/2018
 > Diese Funktion wird in Dynamics 365 for Finance and Operations (Version 7.2 und höher) unterstützt.
 
 ## <a name="introduction"></a>Einführung
-Dieses Thema zeigt, wie Sie der Registerkarte **Analysen** eines Arbeitsbereichs einen Microsoft Power BI-Bericht hinzufügen. Für das hier gezeigte Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** in der Anwendung Flottenmanagement, um der Registerkarte **Analysen** einen analytischen Arbeitsbereich hinzuzufügen.
+Dieses Thema zeigt, wie Sie in die Registerkarte **Analysen** eines Arbeitsbereichs einen Microsoft Power BI-Bericht einbetten. Für das hier gezeigte Beispiel erweitern wir den Arbeitsbereich **Reservierungsverwaltung** in der Anwendung Flottenmanagement, um der Registerkarte **Analysen** einen analytischen Arbeitsbereich hinzuzufügen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 + Zugriff auf eine Entwicklerumgebung mit Plattform-Update 8 oder höher.
-+ Einen Analysebericht (.pbix-Datei), der mit Microsoft Power BI Desktop erstellt wurde, und der ein Datenmodell verwendet, das von der Entitätsspeicher-Datenbank gespeist wird.
++ Einen Analysebericht (PBIX-Datei), der mit Microsoft Power BI Desktop erstellt wurde, und der ein Datenmodell verwendet, das von der Entitätsspeicher-Datenbank gespeist wird.
 
 ## <a name="overview"></a>Überblick
 Egal, ob Sie einen vorhandenen Anwendungsarbeitsbereich erweitern oder einen eigenen neuen Arbeitsbereich anlegen, können Sie eingebettete analytische Ansichten nutzen, um informative und interaktive Ansichten Ihrer Geschäftsdaten bereitzustellen. Der Prozess für das Hinzufügen einer Registerkarte mit analytischem Arbeitsbereich umfasst 4 Schritte.
@@ -51,7 +50,7 @@ Egal, ob Sie einen vorhandenen Anwendungsarbeitsbereich erweitern oder einen eig
 ## <a name="add-a-pbix-file-as-a-resource"></a>Eine .pbix-Datei als Ressource hinzufügen
 Bevor Sie anfangen, müssen Sie den Power BI-Bericht erstellen oder erhalten, den Sie in den Arbeitsbereich einbetten wollen. Weitere Informationen zum Erstellen von analytischen Berichten finden Sie unter [Erste Schritte mit Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
 
-Gehen Sie wie folgt vor, um eine .pbix-Datei als Visual Studio-Projektartefakt einzufügen.
+Gehen Sie wie folgt vor, um eine PBIX-Datei als Visual Studio-Projektartefakt hinzuzufügen.
 
 1. Erstellen Sie ein neues Projekt im entsprechenden Modell.
 2. Wählen Sie das Projekt im Projektmappen-Explorer aus, klicken Sie mit der rechten Maustaste und wählen Sie dann **Hinzufügen**\>**Neues Element**.
@@ -154,7 +153,7 @@ Damit haben Sie die Aufgabe abgeschlossen, die Geschäftslogik hinzuzufügen, mi
 ## <a name="reference"></a>Referenz
 
 ### <a name="pbireporthelperinitializereportcontrol-method"></a>Die Methode PBIReportHelper.initializeReportControl
-Dieser Abschnitt enthält Informationen über die Helferklasse, mit der ein Power BI-Bericht (.pbix-Ressource) in ein Formular-Gruppensteuerelement eingebettet wird.
+Dieser Abschnitt enthält Informationen über die Helferklasse, mit der ein Power BI-Bericht (PBIX-Ressource) in ein Formular-Gruppensteuerelement eingebettet wird.
 
 #### <a name="syntax"></a>Syntax
 ```
@@ -177,4 +176,3 @@ public static void initializeReportControl(
 | showFilterPane   | Ein boolescher Wert, der angibt, ob der Filterbereich angezeigt (**true**) oder ausgeblendet (**false**) werden soll.     |
 | showNavPane      | Ein boolescher Wert, der angibt, ob der Navigationsbereich angezeigt (**true**) oder ausgeblendet (**false**) werden soll. |
 | defaultFilters   | Die Standardfilter für den Power BI-Bericht.                                                                 |
-

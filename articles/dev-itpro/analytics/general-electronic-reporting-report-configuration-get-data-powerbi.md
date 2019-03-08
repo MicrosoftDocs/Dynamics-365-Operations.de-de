@@ -1,13 +1,13 @@
 ---
-title: Konfigurieren elektronischer Berichterstellung (EB), um Daten in Power BI einzubeziehen
-description: "In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung verwenden können, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Power BI-Diensten zu veranlassen."
+title: Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen
+description: In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung (EB) verwenden können, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Power BI-Diensten zu veranlassen.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e2d3c03a75fd03dfd3a96a181eff20f934546ec4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335783"
 ---
-
-# <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurieren elektronischer Berichterstellung (EB), um Daten in Power BI einzubeziehen
+# <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung verwenden können, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Power BI-Diensten zu veranlassen. Als Beispiel verwendet dieses Thema Intrastat-Buchungen als Geschäftsdaten, die übertragen werden müssen. Die Power BI-Zuordnungsvisualisierung verwendet diese Intrastat-Buchungsdaten, um eine Ansicht zur Analyse von Import-/Exportaktivitäten von Unternehmen im Power BI-Bericht darzustellen.
+In diesem Thema wird erläutert, wie Sie die Konfiguration der elektronischen Berichterstellung (EB) verwenden können, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Power BI-Diensten zu veranlassen. Als Beispiel verwendet dieses Thema Intrastat-Buchungen als Geschäftsdaten, die übertragen werden müssen. Die Power BI-Zuordnungsvisualisierung verwendet diese Intrastat-Buchungsdaten, um eine Ansicht zur Analyse von Import-/Exportaktivitäten von Unternehmen im Power BI-Bericht darzustellen.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Microsoft Power BI ist eine Sammlung von Softwaredienstleistungen, Apps und Konnektoren, die zusammenarbeiten, um externe Quellen von Daten in zusammenhängende, visuell anschauliche und interaktive Überblicke zu verwandeln. Die Elektronisches Berichterstellung (ER) ermöglicht es Benutzern von Microsoft Dynamics 365 for Finance and Operations, Datenquellen einfach zu konfigurieren und die Übertragung von Daten von Finance and Operations nach Power BI zu veranlassen. Die Daten werden als Dateien im Format OpenXML-Arbeitsblatt (Microsoft Excel-Arbeitsmappendatei) übertragen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurde. Die gespeicherten Dateien werden in Power BI verwendet, um Berichte zu erstellen, die Visualisierungen enthalten (Tabellen, Diagramme, Zuordnungen usw.). Power BI-Berichte werden für Power BI-Benutzer freigegeben, und auf sie wird in Power BI-Dashboards und auf Finance and Operations-Seiten zugegriffen. In diesem Thema werden die folgenden Aufgaben erläutert:
+Microsoft Power BI ist eine Sammlung von Softwaredienstleistungen, Apps und Konnektoren, die zusammenarbeiten, um externe Quellen von Daten in zusammenhängende, visuell anschauliche und interaktive Überblicke zu verwandeln. Mit der elektronischen Berichterstellung (EB) können Benutzer von Microsoft Dynamics 365 for Finance and Operations leicht Datenquellen konfigurieren und die Übertragung von Daten von Finance and Operations zu Power BI veranlassen. Die Daten werden als Dateien im OpenXML-Arbeitsblattformat (Microsoft Excel-Arbeitsmappendatei) übertragen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurde. Die gespeicherten Dateien werden in Power BI verwendet, um Berichte zu erstellen, die Visualisierungen enthalten (Tabellen, Diagramme, Karten usw.). Power BI-Berichte werden für Power BI-Benutzer freigegeben, und auf sie wird in Power BI-Dashboards und auf Finance and Operations-Seiten zugegriffen. In diesem Thema werden die folgenden Aufgaben erläutert:
 
 - Konfigurieren Sie Finance and Operations.
 - Bereiten Sie die Formatkonfiguration Ihrer elektronischen Berichterstellung vor, um Daten aus Finance and Operations abzurufen.
-- Konfigurieren Sie die elektronische Berichterstellungsumgebung, um Daten nach Power BI zu übertragen.
+- Konfigurieren Sie die EB-Umgebung, um Daten nach Power BI zu übertragen.
 - Verwenden Sie übertragene Daten, um einen Power BI-Bericht zu erstellen.
 - Machen Sie den Power BI-Bericht in Finance and Operations zugänglich.
 
@@ -54,13 +53,13 @@ Um das Beispiel in diesem Thema abzuschließen, müssen Sie den folgenden Zugrif
 - Zugriff auf das Power BI-Framework
 
 ## <a name="configure-document-management-parameters"></a>Parameter der Dokumentverwaltung konfigurieren
-1. Auf der Seite **Parameter der Dokumentverwaltung** konfigurieren Sie den Zugriff auf SharePoint Server, der im Unternehmen verwendet wird, bei dem Sie sich angemeldet haben (in diesem Beispiel das Unternehmen DEMF).
-2. Testen Sie die Verbindung mit dem SharePoint Server, um sicherzustellen, dass Ihnen der Zugriff gewährt wurde.
+1. Konfigurieren Sie auf der Seite **Parameter für Dokumentverwaltung** den Zugriff auf SharePoint Server, der im Unternehmen verwendet wird, bei dem Sie sich angemeldet haben (in diesem Beispiel das Unternehmen DEMF).
+2. Testen Sie die Verbindung zum SharePoint Server, um sicherzustellen, dass Ihnen der Zugriff gewährt wurde.
 
     [![Seite "Parameter der Dokumentverwaltung"](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
-3. Öffnen Sie die konfigurierte SharePoint-Site. Erstellen Sie einen neuen Ordner, in dem die elektronische Berichterstellung Excel-Dateien speichert, die die Geschäftsdaten haben, die Power BI-Berichte als Quelle von Power BI-Datasets benötigen.
-4. Erstellen Sie in Finance and Operations, auf der Seite **Dokumenttypen**, einen neuen Dokumenttyp, der für den Zugriff auf den SharePoint-Ordner verwendet wird, den Sie soeben erstellt haben. Geben Sie **Datei** in das Feld **Gruppe** ein und **SharePoint** in das Feld **Standort**, und geben Sie dann die Adresse des SharePoint-Ordners ein.
+3. Öffnen Sie die konfigurierte SharePoint-Site. Erstellen Sie einen neuen Ordner, in dem die elektronische Berichterstellung Excel-Dateien speichert, die die Geschäftsdaten umfassen, die Power BI-Berichte als Quelle von Power BI-Datasets benötigen.
+4. Erstellen Sie in Finance and Operations auf der Seite **Dokumenttypen** einen neuen Dokumenttyp, der für den Zugriff auf den SharePoint-Ordner verwendet wird, den Sie soeben erstellt haben. Geben Sie **Datei** in das Feld **Gruppe** und **SharePoint** in das Feld **Standort** ein, und geben Sie dann die Adresse des SharePoint-Ordners ein.
 
     [![Seite „Dokumenttypen”](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
@@ -142,7 +141,7 @@ Klicken Sie auf die Schaltfläche **Einstellungen** für den neuen Zieldatensatz
 
     [![Seite Batchaufträge](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png)
 
-7. Wenn dieser Einzelvorgang erstmals ausgeführt wird, erstellt das Ziel eine neue Excel-Datei, die den konfigurierten Namen im ausgewählten SharePoint-Ordner hat. An jedem darauf folgenden Zeitpunkt, an dem der Einzelvorgang ausgeführt wird, erstellt das Ziel eine neue Version dieser Excel-Datei.
+7. Wenn dieser Einzelvorgang erstmals ausgeführt wird, erstellt das Ziel eine neue Excel-Datei, die den konfigurierten Namen im ausgewählten SharePoint-Ordner aufweist. An jedem darauf folgenden Zeitpunkt, an dem der Einzelvorgang ausgeführt wird, erstellt das Ziel eine neue Version dieser Excel-Datei.
 
     [![Neue Version der Excel-Datei](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
@@ -151,7 +150,7 @@ Klicken Sie auf die Schaltfläche **Einstellungen** für den neuen Zieldatensatz
 
     [![Ein Dataset erstellen](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
-2. Wählen Sie die Option **SharePoint – Teamwebsites** aus, und geben Sie dann den Pfad von SharePoint Server ein, den Sie verwenden (`https://ax7partner.litware.com` in unserem Beispiel).
+2. Wählen Sie die Option **SharePoint – Teamwebsites** aus, und geben Sie dann den Pfad von SharePoint Server ein, den Sie verwenden (in unserem Beispiel `https://ax7partner.litware.com`).
 3. Navigieren Sie dann zum Ordner **/Freigegebene Dokumente/GER-Daten/PowerBI**, und wählen Sie die Excel-Datei aus, die Sie als Datenquelle für das neue Power BI-Dataset erstellt haben.
 
     [![Auswählen der Excel-Datei](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
@@ -160,17 +159,17 @@ Klicken Sie auf die Schaltfläche **Einstellungen** für den neuen Zieldatensatz
 
     [![Dataset auf dem Dashboard](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
 
-5. Konfigurieren Sie den Aktualisierungszeitplan für dieses Dataset, um ein periodisches Update zu erzwingen. Periodische Aktualisierungen ermöglichen die Nutzung neuer Geschäftsdaten, die von Finance and Operations kommen, und zwar mittels der periodischen Ausführung des Berichts der elektronischen Berichterstellung durch neue Versionen der Excel-Datei, die auf dem SharePoint Server erstellt werden.
+5. Konfigurieren Sie den Aktualisierungszeitplan für dieses Dataset, um ein periodisches Update zu erzwingen. Periodische Aktualisierungen ermöglichen die Nutzung neuer Geschäftsdaten, die von Finance and Operations eingehen, und zwar mittels der periodischen Ausführung des Berichts der elektronischen Berichterstellung durch neue Versionen der Excel-Datei, die auf dem SharePoint Server erstellt werden.
 
-## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Einen Power BI-Bericht mithilfe des neuen Dataset erstellen
-1. Zum Erstellen eines neuen Power BI-Berichts klicken Sie auf das Power BI-Dataset **Details importieren und exportieren**, das Sie erstellt haben.
+## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Einen Power BI-Bericht mithilfe des neuen Datasets erstellen
+1. Klicken Sie auf das Power BI-Dataset **Import- und Exportdetails**, das Sie erstellt haben.
 2. Konfigurieren Sie dann die Visualisierung. Wählen Sie beispielsweise die Visualisierung **Ausgefüllte Zuordnung** aus, und konfigurieren Sie sie wie folgt:
 
     - Weisen Sie das Datasetfeld **CountryOrigin** dem Feld **Lagerplatz** in der Zuordnungsvisualisierung zu.
     - Weisen Sie das Datasetfeld **Betrag** dem Feld **Farbsättigung** der Zuordnungsvisualisierung zu.
     - Fügen Sie die Datasetfelder **Aktivität** und **Jahr** der Feldersammlung **Filter** der Zuordnungsvisualisierung hinzu.
 
-3. Speichern Sie den Power BI-Bericht als **Detailbericht importieren und exportieren**
+3. Speichern Sie den Power BI-Bericht als **Import- und Exportdetailbericht**.
 
     [![Import- und Exportdetailbericht.xlsx](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
 
@@ -184,12 +183,12 @@ Klicken Sie auf die Schaltfläche **Einstellungen** für den neuen Zieldatensatz
 
     [![Aktualisierte Zuordnung](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
-## <a name="access-power-bi-report-in-finance-and-operations"></a>Machen Sie den Power BI-Bericht in Finance and Operations zugänglich.
+## <a name="access-power-bi-report-in-finance-and-operations"></a>Zugriff auf den Power BI-Bericht in Finance and Operations
 Richten Sie die Integration zwischen Finance and Operations und Power BI ein. Weitere Informationen finden Sie unter [Konfigurieren der Power BI-Integration für Arbeitsbereiche](configure-power-bi-integration.md).
 
-1. Auf der Arbeitsbereichsseite **Elektronische Berichterstellung**, die die Power BI-Integration unterstützt (**Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Arbeitsbereich der elektronischen Berichterstellung**), klicken Sie auf **Optionen** &gt; **Berichtkatalog öffnen**.
-2. Wählen Sie den Power BI-Bericht **Import- und Exportdetails** aus, den Sie erstellt haben, um diesen Bericht als ein Aktionselement auf der ausgewählten Seite anzuzeigen.
-3. Klicken Sie auf das Aktionselement, um die Seite Finance and Operatons zu öffnen, die den Bericht anzeigt, den Sie in Power BI entworfen haben.
+1. Auf der Arbeitsbereichsseite **Elektronische Berichterstellung**, die die Power BI-Integration unterstützt (**Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Arbeitsbereich der elektronischen Berichterstellung**), klicken Sie auf **Optionen** &gt; **Berichtskatalog öffne**.
+2. Wählen Sie den Power BI-Bericht **Import- und Exportdetails** aus, den Sie erstellt haben, um diesen Bericht als Aktivitätselement auf der ausgewählten Seite anzuzeigen.
+3. Klicken Sie auf das Aktivitätselement, um die Seite "Finance and Operations" zu öffnen, die den Bericht anzeigt, den Sie in Power BI entworfen haben.
 
     [![Import- und Exportdetailbericht.xlsx](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
@@ -198,4 +197,3 @@ Richten Sie die Integration zwischen Finance and Operations und Power BI ein. We
 [Zielorte für elektronische Berichterstellung](electronic-reporting-destinations.md)
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
-

@@ -1,13 +1,13 @@
---- 
+---
 title: Ergebnisse des Fragebogens analysieren
-description: "Die Fragebogenstatistiken können verwendet werden, um Durchschnitte, Summen und Prozentsätze basierend auf einer Gruppe von demografischen Daten zu berechnen."
+description: Die Fragebogenstatistiken können verwendet werden, um Durchschnitte, Summen und Prozentsätze basierend auf einer Gruppe von demografischen Daten zu berechnen.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMQuestionnaireStatistics, KMQuestionnaireStatisticsLine
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: a70ea145d8c7134a32e8f0fc6980daca9a010bb0
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332747"
 ---
 # <a name="analyzing-questionnaire-results"></a>Ergebnisse des Fragebogens analysieren
 
@@ -68,5 +68,4 @@ Die Fragebogenstatistiken können verwendet werden, um Durchschnitte, Summen und
 1. Klicken Sie auf "Ergebnis".
 2. Klicken Sie auf "Ergebnis".
 3. Schließen Sie die Seite.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Lean Manufacturing Übersicht"
-description: "Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics 365 for Finance and Operations bereit."
+title: Lean Manufacturing Übersicht
+description: Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Dynamics 365 for Finance and Operations bereit.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 99030966587a2784f61cecbfc7f9985f75f6d779
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359887"
 ---
-
 # <a name="lean-manufacturing-overview"></a>Übersicht über Lean Manufacturing
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Um die Grundlage für das Lean Manufacturing zu erstellen, modellieren Sie die F
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a>Verwenden von Kanbans, um Bedarfsanforderungen zu signalisieren
 Ein Pullsystem produziert nur dann Waren, wenn Waren erforderlich sind. Diese Methode verringert Lieferzeiten und überschüssige Bestände. Sie können Kanbans verwenden, um Anforderungen zu planen, nachzuverfolgen und zu bearbeiten, die auf Produktionsflüssen basieren. Wenn Sie ein Kanban-Framework erstellen möchten, erstellen Sie Kanban-Regeln, die definieren, wann Kanbans erstellt werden und wie die Anforderungen erfüllt werden. Sie können zwei Arten von Kanban-Regeln erstellen. Fertigungsregeln erstellen Kanban-Bearbeitungseinzelvorgänge, und Kanban-Widerrufsregeln erstellen Kanban-Übertragungseinzelvorgänge. Sie können die folgenden Auffüllungsstrategien einrichten:
--   **Feste Menge** Kanban-Regeln sind einer festen Anzahl von Handhabungseinheiten zugeordnet, was bedeutet, dass die Zahlen von aktiven Kanbans konstant sind. Sobald alle Produkte aus einem Kanban und die verbraucht werden Handhabungseinheiten manuell geleert werden, wird ein neues Kanban desselben Typs erstellt. Wenn Sie für Regeln für Kanbans für feste Mengen erstellen, können Sie die optimalen Kanban-Mengen und die Produktmengen berechnen, die verwendet werden. Die Berechnung berücksichtigt Planung, tatsächlichen Bedarf aus offenen Aufträgen, die Lieferzeit zum Auffüllen von Artikeln und historische Nachfragen.
+-   **Feste Menge** Kanban-Regeln sind einer festen Anzahl von Handhabungseinheiten zugeordnet, was bedeutet, dass die Zahlen von aktiven Kanbans konstant sind. Sobald alle Produkte aus einem Kanban verbraucht und die Handhabungseinheiten manuell geleert sind, wird ein neues Kanban desselben Typs erstellt.Wenn Sie für Regeln für Kanbans für feste Mengen erstellen, können Sie die optimalen Kanban-Mengen und die Produktmengen berechnen, die verwendet werden. Die Berechnung berücksichtigt Planung, tatsächlichen Bedarf aus offenen Aufträgen, die Lieferzeit zum Auffüllen von Artikeln und historische Nachfragen.
 -   **Geplante** Kanban-Regeln füllen Anforderungen auf, die durch den Produktprogrammplan berechnet werden. Produktprogrammplan generiert geplante Kanbans, die zu Kanbans umgewandelt werden können.
 -   Kanban-Regeln für **Ereignisse** füllen Anforderungen auf, die aus Auftragspositionen, Produktionsstücklistenpositionen, Kanban-Positionen oder Einstellungen für den Mindestlagerbestand entstehen. Wenn Ereignis-Kanbans generiert werden, werden sie den Quellanforderungen zugewiesen.
 
@@ -66,9 +65,9 @@ Lean Manufacturing stellt Transparenz für den aktuellen Status der Produktions-
 -   Überwachen und Registrieren des Status von Kanban-Einzelvorgängen.
 
 In der folgenden Liste werden die speziellen Kanban-Übersichten beschrieben:
--   Kanban-Einzelvorgangs-Planung – Bietet eine Übersicht der Kanban-Einzelvorgänge. In der Übersicht werden Kanban-Einzelvorgänge und deren Status für eine oder mehrere Arbeitsgruppen angezeigt. Die Einzelvorgänge sind nach Planungsperioden (Tage oder Wochen) aufgelistet, die im Produktionsflussmodell definiert sind. Die Übersicht zeigt außerdem den Kapazitätsverbrauch für jede Planungsperiode an, sodass Sie die geplante Auslastung überwachen können. Sie können den Status von Kanban-Einzelvorgängen ändern, Kanban-Einzelvorgänge für verschiedene Planungsperioden neu planen und andere Aufgaben ausführen.
+-   Kanban-Einzelvorgangs-Planung – Bietet eine Übersicht der Kanban-Einzelvorgänge. In der Übersicht werden Kanban-Einzelvorgänge und deren Status für eine oder mehrere Arbeitsgruppen angezeigt. Die Einzelvorgänge sind nach Planungsperioden (Tage oder Wochen) aufgelistet, die im Produktionsflussmodell definiert sind. Die Übersicht zeigt außerdem den Kapazitätsverbrauch für jede Planungsperiode an, sodass Sie die geplante Auslastung überwachen können. Sie können den Status von Kanban-Einzelvorgängen ändern, Kanban-Einzelvorgänge für verschiedene Planungsperioden neu planen und andere Aufgaben ausführen.
 -   Kanban-Übersicht für Umlagerungseinzelvorgänge – Diese Übersicht stellt einen Überblick über die aktuellen Umlagerungseinzelvorgänge bereit. Sie können Entnahmelisten aktualisieren und erfassen, Umlagerungseinzelvorgänge starten und abschließen und andere Aufgaben ausführen.
--   Kanban-Übersicht für Bearbeitungs-Einzelvorgänge – Diese Übersicht wurde entworfen, um den normalen Produktionsfluss zu unterstützen und einen Überblick über den aktuellen Status in einer oder mehreren Arbeitsgruppen zu geben. Mit dieser Übersicht können Kanbans priorisiert, entnommen oder produziert werden. Die Übersicht wurde auch entworfen, um Scannen von Strichcodes für die Berichterstellung von Kanbans zu unterstützen.
+-   Kanban-Übersicht für Bearbeitungs-Einzelvorgänge – Diese Übersicht wurde entworfen, um den normalen Produktionsfluss zu unterstützen und einen Überblick über den aktuellen Status in einer oder mehreren Arbeitsgruppen zu geben. Mit dieser Übersicht können Kanbans priorisiert, entnommen oder produziert werden. Die Übersicht wurde auch entworfen, um Scannen von Strichcodes für die Berichterstellung von Kanbans zu unterstützen.
 
 ## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanban-Einzelvorgänge und Integration in Finance and Operations-Prozesse
 Kanban-Einzelvorgänge sind vollständig in aktuelle Prozesse für Lagerbuchungen in Finance and Operations integriert.
@@ -79,7 +78,6 @@ Kanban-Einzelvorgänge sind vollständig in aktuelle Prozesse für Lagerbuchunge
 Darüber hinaus unterstützt Lean Manufacturing die Einkaufs- und Rechnungsstellungsverfahren für Dienstleistungen, auf die durch Fremdarbeitsaktivitäten verwiesen wird.
 -   Sie können Kaufvertragspositionen und Dienste Fremdarbeitsaktivitäten zuweisen.
 -   Sie können periodische Bestellungen und Empfangsbestätigungen erstellen, um den Einkauf und die Rechnungsstellung von Dienstleistungen zu unterstützen.
-
 
 
 

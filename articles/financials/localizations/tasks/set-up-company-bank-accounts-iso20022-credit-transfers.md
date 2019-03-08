@@ -1,13 +1,13 @@
---- 
-title: "Unternehmens-Bankkonten für ISO20022-Überweisungen einrichten"
-description: "Dieses Verfahren zeigt, wie Sie die unternehmensspezifischen Bankkontoinformationen einrichten, die für die Zahlungsdateigenerierung erforderlich sind."
+---
+title: Unternehmens-Bankkonten für ISO20022-Überweisungen einrichten
+description: Dieses Verfahren zeigt, wie Sie die unternehmensspezifischen Bankkontoinformationen einrichten, die für die Zahlungsdateigenerierung erforderlich sind.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2a84408ea24e4221b041782b681c2a2bf1bd8436
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1d0eabdfdeb5ed7d0bdb6df87ebdfa0d41e87492
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334932"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a>Unternehmens-Bankkonten für ISO20022-Überweisungen einrichten
 
@@ -31,7 +31,7 @@ Dieses Verfahren zeigt, wie Sie die unternehmensspezifischen Bankkontoinformatio
 
 Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF.
 
-Dies ist der zweite von fünf Aufgaben, die das Verfahren für Kreditorenzahlung über elektronischen Berichterstellungskonfigurationen zeigen. Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+Dies ist der zweite von fünf Aufgaben, die das Verfahren für Kreditorenzahlung über elektronischen Berichterstellungskonfigurationen zeigen. Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
 
 ## <a name="set-up-iban-and-swift-code"></a>Einrichten von IBAN- und SWIFT-Code
@@ -51,5 +51,4 @@ Dies ist der zweite von fünf Aufgaben, die das Verfahren für Kreditorenzahlung
 3. Erweitern Sie den Abschnitt "Bankkontoinformationen".
 4. Geben Sie im Feld 'Bankkonto' einen Wert ein, oder wählen Sie einen Wert aus.
 5. Klicken Sie auf "Speichern".
-
 

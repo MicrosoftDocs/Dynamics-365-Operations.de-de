@@ -1,13 +1,13 @@
 ---
-title: "Einrichten und Generieren von Dateien für positive Zahlungen"
+title: Einrichten und Generieren von Dateien für positive Zahlungen
 description: In diesem Artikel wird beschrieben, wie positiven Lohndateien eingerichtet und positive Lohndateien generiert werden.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346087"
 ---
-
 # <a name="set-up-and-generate-positive-pay-files"></a>Einrichten und Generieren von Dateien für positive Zahlungen
 
 [!include [banner](../includes/banner.md)]
@@ -160,7 +159,6 @@ Nachdem die Schecks, die in einer positiven Lohndatei aufgeführt sind, bezahlt 
 
 ## <a name="recall-a-positive-pay-file"></a>Datei für eine positive Zahlung zurückrufen
 Wenn Sie eine Datei für positive Zahlungen ändern müssen, können Sie diese erneut aufrufen. Wählen Sie auf der **Zusammenfassung der Datei für positive Zahlungen**-Seite eine positive Lohndatei deren Status **Erstellt** ist aus, und wählen Sie dann die Aktivität **Zurückziehen** aus. Für jeden Scheck in der positiven Lohndatei zeigt das Feld an, ob der Scheck in einer positiven Lohndatei zurückgesetzt wurde. Sie können dann eine neue positive Lohndatei erstellen, die dem Scheck umfasst, der erneut aufgerufen wurde.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Produktionsauftrag vorkalkulieren
-description: "Sie können dieses Verfahren ausführen, indem Sie das USMF-Demodatunternehmen oder Ihren eigenen Datensatz verwenden."
+description: Sie können dieses Verfahren ausführen, indem Sie das USMF-Demodatunternehmen oder Ihren eigenen Datensatz verwenden.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8274e390a177f51649f5cad70ef7ad5bd50a8830
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
-ms.openlocfilehash: 862281adac67757e1ce0e9ddd1e96483363abb9a
-ms.contentlocale: de-de
-ms.lasthandoff: 02/06/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351860"
 ---
 # <a name="estimate-a-production-order"></a>Produktionsauftrag vorkalkulieren
 
@@ -42,4 +42,3 @@ Sie können dieses Verfahren ausführen, indem Sie das USMF-Demodatunternehmen o
 1. Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".
 2. Klicken Sie auf Berechnungsdetails anzeigen
     * Auf dieser Seite wird die Kostenaufschlüsselung angezeigt. So können Sie beispielsweise den gesamten Einstandspreis pro Einheit für das Fertigprodukt in der ersten Zeile anzeigen. Die folgenden Zeilen enthalten Kosten gemäß der Stückliste, den Produktionsarbeitsplan und die indirekten Kosten.  
-

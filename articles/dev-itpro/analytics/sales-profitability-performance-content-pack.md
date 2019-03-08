@@ -1,13 +1,13 @@
 ---
-title: "Vertriebs-und Rentabilitätsleistungsinhalt für Power BI"
-description: "In diesem Thema wird beschrieben, was im Umsatz- und Rentabilitätsleistung Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+title: Vertriebs-und Rentabilitätsleistungsinhalt für Power BI
+description: In diesem Thema wird beschrieben, was im Vertriebs-und Rentabilitätsleistungsinhalt für Power BI enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,23 +18,22 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360416"
 ---
-
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Vertriebs-und Rentabilitätsleistungsinhalt für Power BI
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im **Umsatz- und Rentabilitätsleistung** Microsoft Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im **Vertriebs-und Rentabilitätsleistungsinhalt** für Microsoft Power BI enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Der **Vertrieb und Rentabilitätsleistung** Power BI Inhalt wurde erstellt, sodass Verkaufsleiter schließlich die eigentliche Vertriebsmetrik des Umsatzerlöses, des Bruttogewinns der Ränder und überwachen können. Es verwendet Transaktionsdaten und stellt eine Gesamtübersicht zu unternehmensweiten Umsatzahlen und eine Aufschlüsselung des Verkaufsergebnisses für Debitoren und Produkte zur Verfügung.
+Der **Vertriebs-und Rentabilitätsleistungsinhalt** für Power BI wurde erstellt, sodass Verkaufsleiter die Vertriebsmetrik der Umsatzerlöse, des Bruttogewinns und der Margen überwachen können. Es verwendet Transaktionsdaten und stellt eine Gesamtübersicht zu unternehmensweiten Umsatzahlen und eine Aufschlüsselung des Verkaufsergebnisses für Debitoren und Produkte zur Verfügung.
 
 Berichte entsperren Änderungen im Umsatzerlös und im Gewinn-Wachstum im Zeitverlauf. Daher kann der Bericht dazu verwendet werden, um Manager über die positiven und negativen Ausgabentrends für einzelne Kunden und Produkten zu warnen. Darüber hinaus vergleichen die Diagramme den Umsatzerlös und die Rentabilität verschiedener Produktkategorien und Debitorengruppen von gegenseitig. Daher können Kategorie- und Regionalmanager gute und schlechte Produkte zu identifizieren. Schließlich zeichnet ein umfassender Bericht einen einzelnen Umsatzerlös des Debitors mit Gewinnspanne auf. Deshalb haben Kundenbetreuer eine Daten-unterstützte Basis, die dafür verwendet werden kann, die Verkaufs- und Marketing-Aufwände für jedes Debitorenprofil zu optimieren.
 
@@ -49,11 +48,11 @@ Rentabilität kann auf folgende Arten analysiert werden:
 - Bruttogewinnänderung, jährlich
 - Debitorenrentabilität (nach Umsatz gegen Bruttogewinn)
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Der **Vertrieb und Rentabilitätsleistung** Power BI-Inhalt wird auf der **Vertrieb und Rentabilitätsleistung** angezeigt **(Vertrieb und Marketing**\>**Abfragen und Berichte**\>**Vertriebsleistungsanalyse**\>**Vertrieb und Rentabilitätsleistung**).
+## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
+Der **Vertriebs-und Rentabilitätsleistungsinhalt** für Power BI wird auf der Seite **Verkaufs- und Rentabilitätsleistung** (**Verkauf und Marketing** \> **Anfragen und Berichte** \> **Verkaufsleistungsanalyse** \> **Verkaufs- und Rentabilitätsleistung**) dargestellt.
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
-Der Power BI Inhalt **Umsatz- und Rentabilitätsleistung** enthält einen Bericht, der aus einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspaket.
+## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Metriken, die im Power BI-Inhalt enthalten sind
+Der **Vertriebs-und Rentabilitätsleistungsinhalt** für Power BI enthält einen Bericht, der aus einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspaket.
 
 | Berichtsseiten            | Diagramme                                     | Kacheln                                                   |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
@@ -78,9 +77,9 @@ Der Power BI Inhalt **Umsatz- und Rentabilitätsleistung** enthält einen Berich
 \* Umsatzerlös dieser und letzten Jahr und Wachstum nach Verkaufskategorie.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Die folgenden Daten werden verwendet, um den Bericht im Power BI-Inhalt **Umsatz- und Rentabilitätsleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
+Die folgenden Daten werden verwendet, um den Bericht im **Vertriebs-und Rentabilitätsleistungsinhalt** für Power BI auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
-Die gesamten Messungen in diesem Inhaltspaket sind die Teilmenge der gesamten Messungen, die im Verkaufscube in Microsoft Dynamics AX 2012 und Microsoft Dynamics AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätsspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie unter [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
+Die aggregierenden Messungen in diesem Inhalt sind die Teilmenge der aggregierenden Messungen, die im Verkaufscube in Microsoft Dynamics AX 2012 und Microsoft Dynamics AX 2012 R3 verfügbar waren. Um die Cube-Messungen im Entitätsspeicher bereitzustellen, müssen Sie diese bereitstellbar machen. Weitere Informationen finden Sie in der Prozedur zur Bereitstellung von aggregierenden Messungen im Entitätsspeicher im [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)-Blog.
 
 Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Inhaltspakets verwendet.
 
@@ -109,4 +108,3 @@ Die folgenden wichtigen Dimensionen im Verkaufscube werden als Filter verwendet,
 | Daten            | Daten                                                |
 
 Standardmäßig zeigt das Inhaltspaket Daten während des laufenden Kalenderjahrs an. Allerdings können Sie den im Berichtsfilterabschnitt Datumsfilter ändern. Sie können das den Unternehmensfilter auch ändern.
-

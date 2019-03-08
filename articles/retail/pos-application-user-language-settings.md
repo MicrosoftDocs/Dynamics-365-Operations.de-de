@@ -1,13 +1,13 @@
 ---
 title: Verkaufsstellen-(POS)-Anwendung und Benutzerspracheinstellungen
-description: "In diesem Thema wird beschrieben, wie Spracheinstellungen in Retail Modern POS (MPOS) und Cloud POS geändert werden."
+description: In diesem Thema wird beschrieben, wie Spracheinstellungen in Retail Modern POS (MPOS) und Cloud POS geändert werden.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: faf8cdcee70b55842072298b51789f6cd7a577af
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336749"
 ---
-
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Verkaufsstellen-(POS)-Anwendung und Benutzerspracheinstellungen
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Spracheinstellungen in Retail Modern POS (MPOS) und Cloud POS geändert werden.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
 Retail Modern POS (MPOS) und Cloud POS unterstützen Umgebung, in denen Spracheinstellungen und -übersetzungen zwischen die Filiale und die Benutzereinstellungen variieren können. Beispielsweise kann sich der Shop in einer Region befinden, der in Englisch die gängigsten für seine Kunden ist, manche Arbeitskräfte ziehen sie vor, die Anwendung mit französischen Übersetzungen zu verwenden.
 
@@ -67,4 +66,3 @@ Die Spracheinstellung des POS-Benutzers wird unter **Alle Arbeitskräfte** auf d
 | **Unternehmen** | Standard                    | Standard                                                       |
 | **Shop**   | Überschreibt Unternehmen          | Überschreibt Unternehmen                                             |
 | **Benutzer**    | Überschreibt Shop oder Unternehmen | Nie                                                         |
-

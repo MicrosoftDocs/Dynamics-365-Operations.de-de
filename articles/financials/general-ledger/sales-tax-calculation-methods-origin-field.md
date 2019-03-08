@@ -1,13 +1,13 @@
 ---
 title: Mehrwertsteuer-Berechnungsmethoden im Feld "Ursprung"
-description: "In diesem Artikel wird beschrieben die Optionen im Feld \"Ursprung\" auf der Mehrwertsteuercodeseite und wie Mehrwertsteuer basierend auf der ausgewählten Option für einen Mehrwertsteuercode berechnet wird."
+description: In diesem Artikel wird beschrieben die Optionen im Feld "Ursprung" auf der Mehrwertsteuercodeseite und wie Mehrwertsteuer basierend auf der ausgewählten Option für einen Mehrwertsteuercode berechnet wird.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 1473eeb2950296f5ae6250d7a53794af3d9cba81
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330677"
 ---
-
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Mehrwertsteuer-Berechnungsmethoden im Feld "Ursprung"
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,6 @@ Dokument/Erfassung ist auf "Beträge einschließlich Mehrwertsteuer" festgelegt 
 [Bestimmen von Mehrwertsteuersteuersätzen auf Grundlage der Felder Berechnungsgrundlage und Berechnungsmethode](marginal-base-field.md)
 
 [Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes](whole-amount-interval-options-sales-tax-codes.md)
-
 
 
 

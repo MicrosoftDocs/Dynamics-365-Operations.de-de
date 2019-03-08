@@ -1,32 +1,31 @@
 ---
-title: "Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung"
-description: "Dieses Thema enthält Informationen dazu, wie die korrekten Stufe der sekundären Kostenelemente bestimmt und Kostenrollupregeln erstellt werden, die in Organisationsberichterstellung und Kostennachweisbarkeit passen."
+title: Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung
+description: Dieses Thema enthält Informationen dazu, wie die korrekten Stufe der sekundären Kostenelemente bestimmt und Kostenrollupregeln erstellt werden, die in Organisationsberichterstellung und Kostennachweisbarkeit passen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e809cb2cadadc623134805e028de7f2e64dd662f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356138"
 ---
-
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung 
 
 [!include [banner](../includes/banner.md)]
@@ -251,7 +250,7 @@ Die Seite **Kostenobjekt-Kostenobjektsaldo-Journaleintragsdetails**, auf die von
 | CC003       | Montage     | SC-CC002 | Finanzen         | 11.527,75   | 31-01-2017 |
 | CC004       | Verpackung    | SC-CC002 | Finanzen         | 6.207,25    | 31-01-2017 |
 
-Nachdem die **Gemeinkostenberechnung** abgeschlossen wurde, können Sie die Ergebnisse mithilfe solcher Tools wie Microsoft SharePoint-Workspace, -Excel- oder -Power BI melden.
+Nachdem die **Gemeinkostenberechnung** abgeschlossen wurde, können Sie die Ergebnisse mithilfe von Tools wie Microsoft SharePoint Workspace, Excel oder Power BI melden.
 
 ## <a name="view-reporting-in-excel"></a>Berichtserstellung in Excel anzeigen 
 
@@ -302,4 +301,3 @@ Die eindeutige Trennung zwischen **Kostenzuweisung** und **Kostenrolluprichtlini
 -  [Kostenelementdimensionen](cost-elements.md)
 -  [Dimensionshierarchien](dimension-hierarchy.md)
 -  [Gemeinkostenberechnung](overhead-calculation.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Buchen einer Spesenabrechnung
-description: "In diesem Thema wird erläutert, wie eine Spesenabrechnung im Hauptbuch gebucht wird."
+description: In diesem Thema wird erläutert, wie eine Spesenabrechnung im Hauptbuch gebucht wird.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1252825848aedcdaf633c04edddddca7dd09d774
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: cc3aae061038202ec4f314654d9149c31e2575bb
-ms.contentlocale: de-de
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359404"
 ---
-
 # <a name="post-an-expense-report"></a>Buchen einer Spesenabrechnung
 
 [!include [banner](../includes/banner.md)]
@@ -35,4 +34,3 @@ Wenn eine Spesenabrechnung Ausgaben beinhaltet, die einem anderen Unternehmen in
 Um eine Spesenabrechnung über die Seite **Genehmigte Spesenabrechnungen** zu buchen, wählen Sie Spesenabrechnung und klicken anschließend auf den Aktivitätsbereich, wählen Sie **Buchen** aus.
 
 Sie können alle Spesenabrechnungen in der Liste auch gleichzeitig buchen. Wählen Sie alle Spesenabrechnungen aus, und wählen Sie dann **Buchen** aus.
-
