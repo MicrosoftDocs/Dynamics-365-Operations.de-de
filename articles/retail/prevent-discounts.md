@@ -1,13 +1,13 @@
 ---
-title: "Optionen zur Sperrung von Rabatten für Einzelhandelsprodukte"
-description: "Es gibt verschiedene Ursachen, warum Einzelhändler mehrere Produkte nicht als ermäßigt anzeigen wollen, entweder während einer Aktion oder während des Verkaufs am Point-of-Sale."
+title: Optionen zur Sperrung von Rabatten für Einzelhandelsprodukte
+description: Es gibt verschiedene Ursachen, warum Einzelhändler mehrere Produkte nicht als ermäßigt anzeigen wollen, entweder während einer Aktion oder während des Verkaufs am Point-of-Sale.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailPeriodicDiscount
 audience: Application User
 ms.reviewer: josaw
@@ -19,27 +19,25 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: c9d3e7af95dffddfddc34059d93a2a5a350d08e5
-ms.contentlocale: de-de
-ms.lasthandoff: 01/15/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346064"
 ---
-
-# <a name="options-for-preventing-discounts-for-retail-products"></a><span data-ttu-id="ee917-103">Optionen zur Sperrung von Rabatten für Einzelhandelsprodukte</span><span class="sxs-lookup"><span data-stu-id="ee917-103">Options for preventing discounts for retail products</span></span>
+# <a name="options-for-preventing-discounts-for-retail-products"></a><span data-ttu-id="39774-103">Optionen zur Sperrung von Rabatten für Einzelhandelsprodukte</span><span class="sxs-lookup"><span data-stu-id="39774-103">Options for preventing discounts for retail products</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="ee917-104">Es gibt verschiedene Ursachen, warum Einzelhändler mehrere Produkte nicht als ermäßigt anzeigen wollen, entweder während einer Aktion oder während des Verkaufs am Point-of-Sale.</span><span class="sxs-lookup"><span data-stu-id="ee917-104">There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.</span></span>
+<span data-ttu-id="39774-104">Es gibt verschiedene Ursachen, warum Einzelhändler mehrere Produkte nicht als ermäßigt anzeigen wollen, entweder während einer Aktion oder während des Verkaufs am Point-of-Sale.</span><span class="sxs-lookup"><span data-stu-id="39774-104">There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.</span></span>
 
-<span data-ttu-id="ee917-105">Die folgenden Optionen, die auf der Registerkarte **Einzelhandel** aus freigegebenen Produkten gefunden werden können, ermöglichen es zu verhindern, alle oder manuell Rabatte zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="ee917-105">The following options, which can be found on the **Retail** tab of released products, will allow the product to be configured to prevent all or manual discounts.</span></span> <span data-ttu-id="ee917-106">Die Einstellungen können auf Kategorieebene von der Einzelhandelskategoriehierarchie auch angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="ee917-106">The settings can also be specified at the category level from the retail category hierarchy.</span></span>
+<span data-ttu-id="39774-105">Die folgenden Optionen, die auf der Registerkarte **Einzelhandel** aus freigegebenen Produkten gefunden werden können, ermöglichen es zu verhindern, alle oder manuell Rabatte zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="39774-105">The following options, which can be found on the **Retail** tab of released products, will allow the product to be configured to prevent all or manual discounts.</span></span> <span data-ttu-id="39774-106">Die Einstellungen können auf Kategorieebene von der Einzelhandelskategoriehierarchie auch angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="39774-106">The settings can also be specified at the category level from the retail category hierarchy.</span></span>
 
-- <span data-ttu-id="ee917-107">**Sperren Sie Alle Rabatte**: Wählen Sie diese Option aus, um alle Arten Rabatte, die angewendet werden können, für dieses Produkt zu verhindern.</span><span class="sxs-lookup"><span data-stu-id="ee917-107">**Prevent all discounts** – Select this option to prevent all types of discounts from being applied to this product.</span></span> <span data-ttu-id="ee917-108">Dazu zählen Aktionen wie Angebots-Sortiment, Mengen und Schwellenwertrabatte sowie manuelle Positions- und Buchungsrabatte, die im Zuge eines Verkaufs von einem POS-Benutzer angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="ee917-108">This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.</span></span>
-- <span data-ttu-id="ee917-109">**Sperren Sie manuelle Rabatte**: Wählen Sie diese Option, um manuelle Positions- oder Buchungsrabatte nur zu verhindern, die im Rahmen eines Verkaufs von einem POS-Benutzer angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="ee917-109">**Prevent manual discounts** – Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user.</span></span> <span data-ttu-id="ee917-110">Produkte mit dieser Option, die ausgewählt werden, stehen für Aktionen, wie Mischungs- und Abgleichungs- und Menge und Schwellenwertrabatte immer noch zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="ee917-110">Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.</span></span>
+- <span data-ttu-id="39774-107">**Sperren Sie Alle Rabatte**: Wählen Sie diese Option aus, um alle Arten Rabatte, die angewendet werden können, für dieses Produkt zu verhindern.</span><span class="sxs-lookup"><span data-stu-id="39774-107">**Prevent all discounts** – Select this option to prevent all types of discounts from being applied to this product.</span></span> <span data-ttu-id="39774-108">Dazu zählen Aktionen wie Angebots-Sortiment, Mengen und Schwellenwertrabatte sowie manuelle Positions- und Buchungsrabatte, die im Zuge eines Verkaufs von einem POS-Benutzer angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="39774-108">This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.</span></span>
+- <span data-ttu-id="39774-109">**Sperren Sie manuelle Rabatte**: Wählen Sie diese Option, um manuelle Positions- oder Buchungsrabatte nur zu verhindern, die im Rahmen eines Verkaufs von einem POS-Benutzer angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="39774-109">**Prevent manual discounts** – Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user.</span></span> <span data-ttu-id="39774-110">Produkte mit dieser Option, die ausgewählt werden, stehen für Aktionen, wie Mischungs- und Abgleichungs- und Menge und Schwellenwertrabatte immer noch zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="39774-110">Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ee917-111">Hinweis: Diese Einstellungen schränken nicht den Preisüberschreibungsarbeitsgang ein, da dieses den Basispreis festlegt und Rabatt nicht behandelt werden. .</span><span class="sxs-lookup"><span data-stu-id="ee917-111">These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.</span></span>
+> <span data-ttu-id="39774-111">Hinweis: Diese Einstellungen schränken nicht den Preisüberschreibungsarbeitsgang ein, da dieses den Basispreis festlegt und Rabatt nicht behandelt werden. .</span><span class="sxs-lookup"><span data-stu-id="39774-111">These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.</span></span>
 
-<span data-ttu-id="ee917-112">[![Rabattfeld verhindern](./media/prevent-discounts.png)](./media/prevent-discounts.png)</span><span class="sxs-lookup"><span data-stu-id="ee917-112">[![prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)</span></span>
-
+<span data-ttu-id="39774-112">[![Rabattfeld verhindern](./media/prevent-discounts.png)](./media/prevent-discounts.png)</span><span class="sxs-lookup"><span data-stu-id="39774-112">[![prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)</span></span>

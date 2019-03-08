@@ -1,13 +1,13 @@
---- 
+---
 title: " Treuebelohnungspunkte definieren"
-description: "Diese Prozedur führt Sie Schritt für Schritt durch das Definieren von Treuebelohnungspunkten."
+description: Diese Prozedur führt Sie Schritt für Schritt durch das Definieren von Treuebelohnungspunkten.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailLoyaltyRewardPoints
 audience: Application User
 ms.reviewer: josaw
@@ -17,33 +17,32 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 85ae26123d41fa74d32b102ddb7f021e9846a676
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354505"
 ---
-# <a name="define-loyalty-reward-points"></a><span data-ttu-id="f154c-103"> Treuebelohnungspunkte definieren</span><span class="sxs-lookup"><span data-stu-id="f154c-103">Define loyalty reward points</span></span>
+# <a name="define-loyalty-reward-points"></a><span data-ttu-id="72d4e-103"> Treuebelohnungspunkte definieren</span><span class="sxs-lookup"><span data-stu-id="72d4e-103">Define loyalty reward points</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f154c-104">Diese Prozedur führt Sie Schritt für Schritt durch das Definieren von Treuebelohnungspunkten.</span><span class="sxs-lookup"><span data-stu-id="f154c-104">This procedure walks through defining loyalty reward points.</span></span> <span data-ttu-id="f154c-105">Sie sollten Treuebelohnungspunkte einrichten, bevor Sie ein Treueprogramm einrichten.</span><span class="sxs-lookup"><span data-stu-id="f154c-105">You should set up loyalty reward points before you set up a loyalty program.</span></span> <span data-ttu-id="f154c-106">Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="f154c-106">This procedure uses the USRT demo data company.</span></span>
+<span data-ttu-id="72d4e-104">Diese Prozedur führt Sie Schritt für Schritt durch das Definieren von Treuebelohnungspunkten.</span><span class="sxs-lookup"><span data-stu-id="72d4e-104">This procedure walks through defining loyalty reward points.</span></span> <span data-ttu-id="72d4e-105">Sie sollten Treuebelohnungspunkte einrichten, bevor Sie ein Treueprogramm einrichten.</span><span class="sxs-lookup"><span data-stu-id="72d4e-105">You should set up loyalty reward points before you set up a loyalty program.</span></span> <span data-ttu-id="72d4e-106">Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.</span><span class="sxs-lookup"><span data-stu-id="72d4e-106">This procedure uses the USRT demo data company.</span></span>
 
-1. <span data-ttu-id="f154c-107">Navigieren Sie zu Einzelhandel und Handel > Debitoren > Treue > Treuebelohnungspunkte.</span><span class="sxs-lookup"><span data-stu-id="f154c-107">Go to Retail and commerce > Customers > Loyalty > Loyalty reward points.</span></span>
-2. <span data-ttu-id="f154c-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="f154c-108">Click New.</span></span>
-3. <span data-ttu-id="f154c-109">Geben Sie im Feld "Belohnungspunktkennung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="f154c-109">In the Reward point ID field, type a value.</span></span>
-4. <span data-ttu-id="f154c-110">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="f154c-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="f154c-111">Wählen Sie im Belohnungspunkttyp-Feld eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="f154c-111">In the Reward point type field, select an option.</span></span>
-    * <span data-ttu-id="f154c-112">Wählen Sie "Menge" aus, wenn die Belohnungspunkte auf die nächste ganze Zahl gerundet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="f154c-112">Select Quantity if you want the reward points to be rounded to the nearest integer.</span></span> <span data-ttu-id="f154c-113">Wählen Sie "Betrag" aus, wenn die Belohnungspunkte gemäß Währungsrundungsregeln gerundet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="f154c-113">Select Amount if you want the reward points to be rounded according to currency rounding rules.</span></span> <span data-ttu-id="f154c-114">Wenn Sie "Menge" auswählen, fahren Sie mit dem nächsten Schritt dieses Verfahrens fort.</span><span class="sxs-lookup"><span data-stu-id="f154c-114">If you select Quantity, skip the next step of this procedure..</span></span>  
-6. <span data-ttu-id="f154c-115">Geben Sie im Feld "Währung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="f154c-115">In the Currency field, type a value.</span></span>
-    * <span data-ttu-id="f154c-116">Für Betragstypbelohnungs-Punkte haben alle ausgegebenen Punkte die ausgewählte Währung.</span><span class="sxs-lookup"><span data-stu-id="f154c-116">For Amount type reward points, all points issued will have the selected currency.</span></span> <span data-ttu-id="f154c-117">Für Mengentyp-Belohnungspunkte gilt dieses Feld nicht – überspringen Sie diesen Schritt.</span><span class="sxs-lookup"><span data-stu-id="f154c-117">For Quantity type reward points, this field doesn't apply—skip this step.</span></span>  
-7. <span data-ttu-id="f154c-118">Aktivieren oder deaktivieren Sie das Kontrollkästchen ''Einlösbar".</span><span class="sxs-lookup"><span data-stu-id="f154c-118">Check or uncheck the Redeemable checkbox.</span></span>
-8. <span data-ttu-id="f154c-119">Geben Sie eine Zahl im Feld "Einlöserang" ein.</span><span class="sxs-lookup"><span data-stu-id="f154c-119">In the Redeem ranking field, enter a number.</span></span>
-    * <span data-ttu-id="f154c-120">Einlöserang wird verwendet, wenn zwei oder mehr einlösbare Belohnungspunkte verwendet werden können, um für Produkte zu bezahlen.</span><span class="sxs-lookup"><span data-stu-id="f154c-120">Redeem ranking is used when two or more redeemable reward points can be used to pay for products.</span></span> <span data-ttu-id="f154c-121">Wenn die beiden Belohnungspunkte den gleichen Einlöserang haben, wird der, dessen Punktzahl niedriger sein muss, verwendet.</span><span class="sxs-lookup"><span data-stu-id="f154c-121">If the two reward points have the same redeem ranking, then the one that needs to lower number of points will be used.</span></span>  
-9. <span data-ttu-id="f154c-122">Geben Sie eine Zahl in das Feld "Wert für Ablaufzeit" ein.</span><span class="sxs-lookup"><span data-stu-id="f154c-122">In the Expiration time value field, enter a number.</span></span>
-    * <span data-ttu-id="f154c-123">Die Belohnungspunkte laufen die angegebene Anzahl von Tagen, Monaten oder Jahren ab, nachdem die Punkte ausgestellt werden.</span><span class="sxs-lookup"><span data-stu-id="f154c-123">The reward points will expire the specified number of days, months, or years after when the points are issued.</span></span> <span data-ttu-id="f154c-124">Ein Wert von "0" bedeutet, dass die Loyalitätsbelohnungspunkte niemals ablaufen.</span><span class="sxs-lookup"><span data-stu-id="f154c-124">A value of ‘0’ means the loyalty reward points will never expire.</span></span>  
-10. <span data-ttu-id="f154c-125">Wählen Sie im Feld "Einheit für Ablaufzeit" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="f154c-125">In the Expiration time unit field, select an option.</span></span>
-11. <span data-ttu-id="f154c-126">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="f154c-126">Click Save.</span></span>
-
+1. <span data-ttu-id="72d4e-107">Navigieren Sie zu Einzelhandel und Handel > Debitoren > Treue > Treuebelohnungspunkte.</span><span class="sxs-lookup"><span data-stu-id="72d4e-107">Go to Retail and commerce > Customers > Loyalty > Loyalty reward points.</span></span>
+2. <span data-ttu-id="72d4e-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="72d4e-108">Click New.</span></span>
+3. <span data-ttu-id="72d4e-109">Geben Sie im Feld "Belohnungspunktkennung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="72d4e-109">In the Reward point ID field, type a value.</span></span>
+4. <span data-ttu-id="72d4e-110">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="72d4e-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="72d4e-111">Wählen Sie im Belohnungspunkttyp-Feld eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="72d4e-111">In the Reward point type field, select an option.</span></span>
+    * <span data-ttu-id="72d4e-112">Wählen Sie "Menge" aus, wenn die Belohnungspunkte auf die nächste ganze Zahl gerundet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="72d4e-112">Select Quantity if you want the reward points to be rounded to the nearest integer.</span></span> <span data-ttu-id="72d4e-113">Wählen Sie "Betrag" aus, wenn die Belohnungspunkte gemäß Währungsrundungsregeln gerundet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="72d4e-113">Select Amount if you want the reward points to be rounded according to currency rounding rules.</span></span> <span data-ttu-id="72d4e-114">Wenn Sie "Menge" auswählen, fahren Sie mit dem nächsten Schritt dieses Verfahrens fort.</span><span class="sxs-lookup"><span data-stu-id="72d4e-114">If you select Quantity, skip the next step of this procedure..</span></span>  
+6. <span data-ttu-id="72d4e-115">Geben Sie im Feld "Währung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="72d4e-115">In the Currency field, type a value.</span></span>
+    * <span data-ttu-id="72d4e-116">Für Betragstypbelohnungs-Punkte haben alle ausgegebenen Punkte die ausgewählte Währung.</span><span class="sxs-lookup"><span data-stu-id="72d4e-116">For Amount type reward points, all points issued will have the selected currency.</span></span> <span data-ttu-id="72d4e-117">Für Mengentyp-Belohnungspunkte gilt dieses Feld nicht – überspringen Sie diesen Schritt.</span><span class="sxs-lookup"><span data-stu-id="72d4e-117">For Quantity type reward points, this field doesn't apply—skip this step.</span></span>  
+7. <span data-ttu-id="72d4e-118">Aktivieren oder deaktivieren Sie das Kontrollkästchen ''Einlösbar".</span><span class="sxs-lookup"><span data-stu-id="72d4e-118">Check or uncheck the Redeemable checkbox.</span></span>
+8. <span data-ttu-id="72d4e-119">Geben Sie eine Zahl im Feld "Einlöserang" ein.</span><span class="sxs-lookup"><span data-stu-id="72d4e-119">In the Redeem ranking field, enter a number.</span></span>
+    * <span data-ttu-id="72d4e-120">Einlöserang wird verwendet, wenn zwei oder mehr einlösbare Belohnungspunkte verwendet werden können, um für Produkte zu bezahlen.</span><span class="sxs-lookup"><span data-stu-id="72d4e-120">Redeem ranking is used when two or more redeemable reward points can be used to pay for products.</span></span> <span data-ttu-id="72d4e-121">Wenn die beiden Belohnungspunkte den gleichen Einlöserang haben, wird der, dessen Punktzahl niedriger sein muss, verwendet.</span><span class="sxs-lookup"><span data-stu-id="72d4e-121">If the two reward points have the same redeem ranking, then the one that needs to lower number of points will be used.</span></span>  
+9. <span data-ttu-id="72d4e-122">Geben Sie eine Zahl in das Feld "Wert für Ablaufzeit" ein.</span><span class="sxs-lookup"><span data-stu-id="72d4e-122">In the Expiration time value field, enter a number.</span></span>
+    * <span data-ttu-id="72d4e-123">Die Belohnungspunkte laufen die angegebene Anzahl von Tagen, Monaten oder Jahren ab, nachdem die Punkte ausgestellt werden.</span><span class="sxs-lookup"><span data-stu-id="72d4e-123">The reward points will expire the specified number of days, months, or years after when the points are issued.</span></span> <span data-ttu-id="72d4e-124">Ein Wert von "0" bedeutet, dass die Loyalitätsbelohnungspunkte niemals ablaufen.</span><span class="sxs-lookup"><span data-stu-id="72d4e-124">A value of ‘0’ means the loyalty reward points will never expire.</span></span>  
+10. <span data-ttu-id="72d4e-125">Wählen Sie im Feld "Einheit für Ablaufzeit" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="72d4e-125">In the Expiration time unit field, select an option.</span></span>
+11. <span data-ttu-id="72d4e-126">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="72d4e-126">Click Save.</span></span>
 

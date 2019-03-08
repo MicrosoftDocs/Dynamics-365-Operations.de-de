@@ -1,13 +1,13 @@
---- 
-title: "Einem Produktkonfigurationsmodell eine Ausdruckseinschränkung hinzufügen"
-description: "Im folgenden Verfahren sehen Sie, wie Sie einen neuen Einschränkungsausdruck einem Produktkonfigurationsmodell hinzufügen können."
+---
+title: Einem Produktkonfigurationsmodell eine Ausdruckseinschränkung hinzufügen
+description: Im folgenden Verfahren sehen Sie, wie Sie einen neuen Einschränkungsausdruck einem Produktkonfigurationsmodell hinzufügen können.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, SysClientPolymorphicCreateSelector, PCConstraintEditor, PCRuntimeConfiguratorValidate
 audience: Application User
 ms.reviewer: shylaw
@@ -16,39 +16,38 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 56f94b82f8b2642b12a993bde7d6bb323da79f98
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360577"
 ---
-# <a name="add-an-expression-constraint-to-a-product-configuration-model"></a><span data-ttu-id="d8b8e-103">Einem Produktkonfigurationsmodell eine Ausdruckseinschränkung hinzufügen</span><span class="sxs-lookup"><span data-stu-id="d8b8e-103">Add an expression constraint to a product configuration model</span></span>
+# <a name="add-an-expression-constraint-to-a-product-configuration-model"></a><span data-ttu-id="a36b3-103">Einem Produktkonfigurationsmodell eine Ausdruckseinschränkung hinzufügen</span><span class="sxs-lookup"><span data-stu-id="a36b3-103">Add an expression constraint to a product configuration model</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d8b8e-104">Im folgenden Verfahren sehen Sie, wie Sie einen neuen Einschränkungsausdruck einem Produktkonfigurationsmodell hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-104">This procedure shows how you can add a new constraint expression to a product configuration model.</span></span> <span data-ttu-id="d8b8e-105">Es zeigt, wie Sie vorgeben, dass der "Eckschutz" an einem Lautsprecher angebracht werden muss, wenn der Benutzer einen vorderen Metallgrill ausgewählt hat.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-105">It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal.</span></span> <span data-ttu-id="d8b8e-106">Das Verfahren verwendet die Komponente "High end speaker" im Vorführungsunternehmen USMF.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
+<span data-ttu-id="a36b3-104">Im folgenden Verfahren sehen Sie, wie Sie einen neuen Einschränkungsausdruck einem Produktkonfigurationsmodell hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="a36b3-104">This procedure shows how you can add a new constraint expression to a product configuration model.</span></span> <span data-ttu-id="a36b3-105">Es zeigt, wie Sie vorgeben, dass der "Eckschutz" an einem Lautsprecher angebracht werden muss, wenn der Benutzer einen vorderen Metallgrill ausgewählt hat.</span><span class="sxs-lookup"><span data-stu-id="a36b3-105">It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal.</span></span> <span data-ttu-id="a36b3-106">Das Verfahren verwendet die Komponente "High end speaker" im Vorführungsunternehmen USMF.</span><span class="sxs-lookup"><span data-stu-id="a36b3-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
 
 
-## <a name="create-an-expression-constraint"></a><span data-ttu-id="d8b8e-107">Erstellen einer Ausdruckseinschränkung</span><span class="sxs-lookup"><span data-stu-id="d8b8e-107">Create an expression constraint</span></span>
-1. <span data-ttu-id="d8b8e-108">Klicken Sie auf "Produktvariantenmodell-Definition".</span><span class="sxs-lookup"><span data-stu-id="d8b8e-108">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="d8b8e-109">Klicken Sie auf "Produktkonfigurationsmodelle".</span><span class="sxs-lookup"><span data-stu-id="d8b8e-109">Click Product configuration models.</span></span>
-3. <span data-ttu-id="d8b8e-110">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-110">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="d8b8e-111">Diese Beispiel verwendet das Spitzenlautsprechermodell.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-111">This example uses the high end speaker model.</span></span>  
-4. <span data-ttu-id="d8b8e-112">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-112">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="d8b8e-113">Erweitern Sie den Abschnitt "Einschränkungen".</span><span class="sxs-lookup"><span data-stu-id="d8b8e-113">Expand the Constraints section.</span></span>
-6. <span data-ttu-id="d8b8e-114">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-114">Click Add.</span></span>
-7. <span data-ttu-id="d8b8e-115">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="d8b8e-115">Click Create.</span></span>
-8. <span data-ttu-id="d8b8e-116">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-116">In the Name field, type a value.</span></span>
+## <a name="create-an-expression-constraint"></a><span data-ttu-id="a36b3-107">Erstellen einer Ausdruckseinschränkung</span><span class="sxs-lookup"><span data-stu-id="a36b3-107">Create an expression constraint</span></span>
+1. <span data-ttu-id="a36b3-108">Klicken Sie auf "Produktvariantenmodell-Definition".</span><span class="sxs-lookup"><span data-stu-id="a36b3-108">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="a36b3-109">Klicken Sie auf "Produktkonfigurationsmodelle".</span><span class="sxs-lookup"><span data-stu-id="a36b3-109">Click Product configuration models.</span></span>
+3. <span data-ttu-id="a36b3-110">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="a36b3-110">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="a36b3-111">Diese Beispiel verwendet das Spitzenlautsprechermodell.</span><span class="sxs-lookup"><span data-stu-id="a36b3-111">This example uses the high end speaker model.</span></span>  
+4. <span data-ttu-id="a36b3-112">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="a36b3-112">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="a36b3-113">Erweitern Sie den Abschnitt "Einschränkungen".</span><span class="sxs-lookup"><span data-stu-id="a36b3-113">Expand the Constraints section.</span></span>
+6. <span data-ttu-id="a36b3-114">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="a36b3-114">Click Add.</span></span>
+7. <span data-ttu-id="a36b3-115">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="a36b3-115">Click Create.</span></span>
+8. <span data-ttu-id="a36b3-116">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="a36b3-116">In the Name field, type a value.</span></span>
 
-## <a name="enter-expression"></a><span data-ttu-id="d8b8e-117">Ausdruck eingeben</span><span class="sxs-lookup"><span data-stu-id="d8b8e-117">Enter expression</span></span>
-1. <span data-ttu-id="d8b8e-118">Klicken Sie auf "Ausdruck bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="d8b8e-118">Click Edit expression.</span></span>
-    * <span data-ttu-id="d8b8e-119">Wenn Sie die Benutzeroberfläche in der Aufgabe "Aufzeichung" in dieser Phase entsperren, können Sie IntelliSense und die Liste der Symbole verwenden, um die "Ausdruckseinschränkung" zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-119">If you unlock the user interface in the task recording at this stage, you can use IntelliSense and the list of symbols to build the constraint expression .</span></span>  
-2. <span data-ttu-id="d8b8e-120">Geben Sie im Feld "ConstraintBody" "Implies[FrontGrill=="Metal", CornerProtection] " ein.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-120">In the ConstraintBody field, enter 'Implies[FrontGrill=="Metal", CornerProtection] '.</span></span>
-    * <span data-ttu-id="d8b8e-121">Dieser logische Ausdruck besagt: Wenn der vordere Grill aus Metall ist, muss die Option "Eckschutz" ausgewählt werden.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-121">This expression logic states: If the Front grill is  metal, then the corner protection option must be selected.</span></span>  
-3. <span data-ttu-id="d8b8e-122">Klicken Sie auf "Überprüfen".</span><span class="sxs-lookup"><span data-stu-id="d8b8e-122">Click Validate.</span></span>
-    * <span data-ttu-id="d8b8e-123">Die Validierungsfunktion wird durch den Einschränkungsausdruck und Überprüfungen auf Syntaxfehler ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="d8b8e-123">The validate function runs through the constraint expression and checks for syntax errors.</span></span>  
-4. <span data-ttu-id="d8b8e-124">Klicken Sie auf "Schließen".</span><span class="sxs-lookup"><span data-stu-id="d8b8e-124">Click Close.</span></span>
-5. <span data-ttu-id="d8b8e-125">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="d8b8e-125">Click OK.</span></span>
-
+## <a name="enter-expression"></a><span data-ttu-id="a36b3-117">Ausdruck eingeben</span><span class="sxs-lookup"><span data-stu-id="a36b3-117">Enter expression</span></span>
+1. <span data-ttu-id="a36b3-118">Klicken Sie auf "Ausdruck bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="a36b3-118">Click Edit expression.</span></span>
+    * <span data-ttu-id="a36b3-119">Wenn Sie die Benutzeroberfläche in der Aufgabe "Aufzeichung" in dieser Phase entsperren, können Sie IntelliSense und die Liste der Symbole verwenden, um die "Ausdruckseinschränkung" zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="a36b3-119">If you unlock the user interface in the task recording at this stage, you can use IntelliSense and the list of symbols to build the constraint expression .</span></span>  
+2. <span data-ttu-id="a36b3-120">Geben Sie im Feld "ConstraintBody" "Implies[FrontGrill=="Metal", CornerProtection] " ein.</span><span class="sxs-lookup"><span data-stu-id="a36b3-120">In the ConstraintBody field, enter 'Implies[FrontGrill=="Metal", CornerProtection] '.</span></span>
+    * <span data-ttu-id="a36b3-121">Dieser logische Ausdruck besagt: Wenn der vordere Grill aus Metall ist, muss die Option "Eckschutz" ausgewählt werden.</span><span class="sxs-lookup"><span data-stu-id="a36b3-121">This expression logic states: If the Front grill is  metal, then the corner protection option must be selected.</span></span>  
+3. <span data-ttu-id="a36b3-122">Klicken Sie auf "Überprüfen".</span><span class="sxs-lookup"><span data-stu-id="a36b3-122">Click Validate.</span></span>
+    * <span data-ttu-id="a36b3-123">Die Validierungsfunktion wird durch den Einschränkungsausdruck und Überprüfungen auf Syntaxfehler ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="a36b3-123">The validate function runs through the constraint expression and checks for syntax errors.</span></span>  
+4. <span data-ttu-id="a36b3-124">Klicken Sie auf "Schließen".</span><span class="sxs-lookup"><span data-stu-id="a36b3-124">Click Close.</span></span>
+5. <span data-ttu-id="a36b3-125">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="a36b3-125">Click OK.</span></span>
 

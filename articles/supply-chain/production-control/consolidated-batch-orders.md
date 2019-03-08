@@ -1,13 +1,13 @@
 ---
-title: "Konsolidierte Chargenaufträge"
-description: "Dieser Artikel beschreibt das Konzept der konsolidierten Chargenaufträgen."
+title: Konsolidierte Chargenaufträge
+description: Dieser Artikel beschreibt das Konzept der konsolidierten Chargenaufträgen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PmfAddToConsOrder, PmfBulkItemConv, PmfBulkPackOnHand, PmfConsOrderListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,31 +19,29 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 49c2df19168855e6e6ab9ff061bcdce698947b20
-ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358806"
 ---
-
-# <a name="consolidated-batch-orders"></a><span data-ttu-id="514ca-103">Konsolidierte Chargenaufträge</span><span class="sxs-lookup"><span data-stu-id="514ca-103">Consolidated batch orders</span></span>
+# <a name="consolidated-batch-orders"></a><span data-ttu-id="0c23a-103">Konsolidierte Chargenaufträge</span><span class="sxs-lookup"><span data-stu-id="0c23a-103">Consolidated batch orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="514ca-104">Dieser Artikel beschreibt das Konzept der konsolidierten Chargenaufträgen.</span><span class="sxs-lookup"><span data-stu-id="514ca-104">This article describes the concept of consolidated batch orders.</span></span>
+<span data-ttu-id="0c23a-104">Dieser Artikel beschreibt das Konzept der konsolidierten Chargenaufträgen.</span><span class="sxs-lookup"><span data-stu-id="0c23a-104">This article describes the concept of consolidated batch orders.</span></span>
 
-<span data-ttu-id="514ca-105">Ein produzierter Sammelartikel wird als übergeordneter Artikel angesehen, und ein verpackter Artikel ist ein untergeordneter Artikel.</span><span class="sxs-lookup"><span data-stu-id="514ca-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="514ca-106">Die Beziehung zwischen dem Sammelartikel und dem verpackten Artikel wird in einer Konvertierung von Sammelartikeln ausgedrückt.</span><span class="sxs-lookup"><span data-stu-id="514ca-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="514ca-107">Diese Konvertierung von Sammelartikeln wird im Sammelartikel selbst definiert.</span><span class="sxs-lookup"><span data-stu-id="514ca-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
+<span data-ttu-id="0c23a-105">Ein produzierter Sammelartikel wird als übergeordneter Artikel angesehen, und ein verpackter Artikel ist ein untergeordneter Artikel.</span><span class="sxs-lookup"><span data-stu-id="0c23a-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="0c23a-106">Die Beziehung zwischen dem Sammelartikel und dem verpackten Artikel wird in einer Konvertierung von Sammelartikeln ausgedrückt.</span><span class="sxs-lookup"><span data-stu-id="0c23a-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="0c23a-107">Diese Konvertierung von Sammelartikeln wird im Sammelartikel selbst definiert.</span><span class="sxs-lookup"><span data-stu-id="0c23a-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
 
-<span data-ttu-id="514ca-108">Verpackte Artikel können Containern entweder der gleichen Größe oder mit mehreren Größen verpackt werden, die als eine Einheit eingestuft werden.</span><span class="sxs-lookup"><span data-stu-id="514ca-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="514ca-109">Indem Sie die Aufträge für einen Sammelartikel konsolidieren, können Sie alle zugehörigen Chargenaufträge in einer einzigen Ansicht anzeigen, mit deren Hilfe Sie noch verbleibende Arbeit leichter ermitteln können.</span><span class="sxs-lookup"><span data-stu-id="514ca-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
+<span data-ttu-id="0c23a-108">Verpackte Artikel können Containern entweder der gleichen Größe oder mit mehreren Größen verpackt werden, die als eine Einheit eingestuft werden.</span><span class="sxs-lookup"><span data-stu-id="0c23a-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="0c23a-109">Indem Sie die Aufträge für einen Sammelartikel konsolidieren, können Sie alle zugehörigen Chargenaufträge in einer einzigen Ansicht anzeigen, mit deren Hilfe Sie noch verbleibende Arbeit leichter ermitteln können.</span><span class="sxs-lookup"><span data-stu-id="0c23a-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
 
-<span data-ttu-id="514ca-110">Ein konsolidierter Chargenauftrag kann eine beliebige Kombination der folgenden Aufträge enthalten:</span><span class="sxs-lookup"><span data-stu-id="514ca-110">A consolidated batch order can contain any combination of the following orders:</span></span>
+<span data-ttu-id="0c23a-110">Ein konsolidierter Chargenauftrag kann eine beliebige Kombination der folgenden Aufträge enthalten:</span><span class="sxs-lookup"><span data-stu-id="0c23a-110">A consolidated batch order can contain any combination of the following orders:</span></span>
 
--   <span data-ttu-id="514ca-111">Einzelner Sammelauftrag und mehrere Verpackungsaufträge</span><span class="sxs-lookup"><span data-stu-id="514ca-111">A single bulk order and multiple packed orders</span></span>
--   <span data-ttu-id="514ca-112">Mehrere Sammelaufträge und mehrere Verpackungsaufträge</span><span class="sxs-lookup"><span data-stu-id="514ca-112">Multiple bulk orders and multiple packed orders</span></span>
--   <span data-ttu-id="514ca-113">Mehrere Sammelaufträge und ein einzelner Verpackungsauftrag</span><span class="sxs-lookup"><span data-stu-id="514ca-113">Multiple bulk orders and a single packed order</span></span>
--   <span data-ttu-id="514ca-114">Nur Verpackungsaufträge</span><span class="sxs-lookup"><span data-stu-id="514ca-114">Only packed orders</span></span>
-
+-   <span data-ttu-id="0c23a-111">Einzelner Sammelauftrag und mehrere Verpackungsaufträge</span><span class="sxs-lookup"><span data-stu-id="0c23a-111">A single bulk order and multiple packed orders</span></span>
+-   <span data-ttu-id="0c23a-112">Mehrere Sammelaufträge und mehrere Verpackungsaufträge</span><span class="sxs-lookup"><span data-stu-id="0c23a-112">Multiple bulk orders and multiple packed orders</span></span>
+-   <span data-ttu-id="0c23a-113">Mehrere Sammelaufträge und ein einzelner Verpackungsauftrag</span><span class="sxs-lookup"><span data-stu-id="0c23a-113">Multiple bulk orders and a single packed order</span></span>
+-   <span data-ttu-id="0c23a-114">Nur Verpackungsaufträge</span><span class="sxs-lookup"><span data-stu-id="0c23a-114">Only packed orders</span></span>
 
 
 

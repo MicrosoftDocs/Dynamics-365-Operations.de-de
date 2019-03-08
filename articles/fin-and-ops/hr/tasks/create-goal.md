@@ -1,13 +1,13 @@
---- 
+---
 title: Ein Ziel erstellen
-description: "Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen und die Ziele mit einer Überprüfung verknüpfen."
+description: Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen und die Ziele mit einer Überprüfung verknüpfen.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings
 audience: Application User
 ms.reviewer: rschloma
@@ -16,48 +16,47 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
-ms.contentlocale: de-de
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350710"
 ---
-# <a name="create-a-goal"></a><span data-ttu-id="d925e-103">Ein Ziel erstellen</span><span class="sxs-lookup"><span data-stu-id="d925e-103">Create a goal</span></span>
+# <a name="create-a-goal"></a><span data-ttu-id="b40f9-103">Ein Ziel erstellen</span><span class="sxs-lookup"><span data-stu-id="b40f9-103">Create a goal</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d925e-104">Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen und die Ziele mit einer Überprüfung verknüpfen.</span><span class="sxs-lookup"><span data-stu-id="d925e-104">You can create goals, add activities to goals, track measurements, and link the goals to a review.</span></span> <span data-ttu-id="d925e-105">Diese Prozedur wurde mit dem Demodatenunternehmen USMF erstellt.</span><span class="sxs-lookup"><span data-stu-id="d925e-105">This procedure was created using the USMF demo data company.</span></span> <span data-ttu-id="d925e-106">Diese Prozedur ist für eine Funktion gedacht, die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="d925e-106">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
+<span data-ttu-id="b40f9-104">Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen und die Ziele mit einer Überprüfung verknüpfen.</span><span class="sxs-lookup"><span data-stu-id="b40f9-104">You can create goals, add activities to goals, track measurements, and link the goals to a review.</span></span> <span data-ttu-id="b40f9-105">Diese Prozedur wurde mit dem Demodatenunternehmen USMF erstellt.</span><span class="sxs-lookup"><span data-stu-id="b40f9-105">This procedure was created using the USMF demo data company.</span></span> <span data-ttu-id="b40f9-106">Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="b40f9-106">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
-1. <span data-ttu-id="d925e-107">Wechseln Sie zu Alle Arbeitsbereiche > Mitarbeiter-Self-Service.</span><span class="sxs-lookup"><span data-stu-id="d925e-107">Go to All workspaces > Employee self service.</span></span>
-2. <span data-ttu-id="d925e-108">Klicken Sie auf "Alle Ziele anzeigen".</span><span class="sxs-lookup"><span data-stu-id="d925e-108">Click View all goals</span></span>
-3. <span data-ttu-id="d925e-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="d925e-109">Click New.</span></span>
-4. <span data-ttu-id="d925e-110">Geben Sie im Feld Name "Contos-Projekt abschließen" ein.</span><span class="sxs-lookup"><span data-stu-id="d925e-110">In the Name field, type 'Complete the Contoso project'.</span></span>
-5. <span data-ttu-id="d925e-111">Geben Sie im "Überblick" "Ich werde das Contoso-Projekt in 30 Tagen abschließen" ein.</span><span class="sxs-lookup"><span data-stu-id="d925e-111">In the Overview field, enter 'I will finish the Contoso project in 30 days'.</span></span>
-    * <span data-ttu-id="d925e-112">Ziele können für eine Person, ein Team oder sogar ein Unternehmen gelten.</span><span class="sxs-lookup"><span data-stu-id="d925e-112">Goals can apply to an individual, a team, or even a corporation.</span></span> <span data-ttu-id="d925e-113">Die Standardeinstellung für Mitarbeiterziele ist "Einzeln".</span><span class="sxs-lookup"><span data-stu-id="d925e-113">The default setting for Employee goals is Individual.</span></span>  
-6. <span data-ttu-id="d925e-114">Geben Sie im Feld "Zielkategorie" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="d925e-114">In the Goal category field, enter or select a value.</span></span>
-7. <span data-ttu-id="d925e-115">Im Feld Startdatum können Sie das angezeigte Datum ändern.</span><span class="sxs-lookup"><span data-stu-id="d925e-115">In the Start date field, change the date shown.</span></span>
-8. <span data-ttu-id="d925e-116">Im Feld Enddatum können Sie das angezeigte Datum ändern.</span><span class="sxs-lookup"><span data-stu-id="d925e-116">In the End date field, change the date shown.</span></span>
-    * <span data-ttu-id="d925e-117">Wenn Sie ein Ziel abschließen, geben Sie das Datum ein, am dem Sie das Ziel absolviert haben.</span><span class="sxs-lookup"><span data-stu-id="d925e-117">When you complete a goal, enter the date that you completed the goal here.</span></span>  
-9. <span data-ttu-id="d925e-118">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="d925e-118">Click Save.</span></span>
-10. <span data-ttu-id="d925e-119">Erweitern Sie den Abschnitt "Messungen".</span><span class="sxs-lookup"><span data-stu-id="d925e-119">Expand the Measurements section.</span></span> <span data-ttu-id="d925e-120">Wenn es bereits erweitert ist, klicken Sie zweimal auf den Erweiterungspfeil.</span><span class="sxs-lookup"><span data-stu-id="d925e-120">If it is already expanded, click the Expand arrow twice.</span></span>
-11. <span data-ttu-id="d925e-121">Klicken Sie auf "Messung hinzufügen", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d925e-121">Click Add measurement to open the drop dialog.</span></span>
-12. <span data-ttu-id="d925e-122">Geben Sie im Feld "Messung" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="d925e-122">In the Measurement field, enter or select a value.</span></span>
-13. <span data-ttu-id="d925e-123">Geben Sie im Feld "Zielbetrag" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="d925e-123">In the Target amount field, enter a number.</span></span>
-14. <span data-ttu-id="d925e-124">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="d925e-124">Click OK.</span></span>
-15. <span data-ttu-id="d925e-125">Erweitern Sie den Abschnitt "Aktivitäten".</span><span class="sxs-lookup"><span data-stu-id="d925e-125">Expand the Activities section.</span></span> <span data-ttu-id="d925e-126">Wenn es bereits erweitert ist, klicken Sie zweimal auf den Erweiterungspfeil.</span><span class="sxs-lookup"><span data-stu-id="d925e-126">If it is already expanded, click the Expand arrow twice.</span></span>
-16. <span data-ttu-id="d925e-127">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="d925e-127">Click Add.</span></span>
-17. <span data-ttu-id="d925e-128">Geben Sie im Feld "Titel" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d925e-128">In the Title field, type a value.</span></span>
-18. <span data-ttu-id="d925e-129">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d925e-129">In the Description field, type a value.</span></span>
-19. <span data-ttu-id="d925e-130">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="d925e-130">Click Save.</span></span>
-20. <span data-ttu-id="d925e-131">Klicken Sie zum Öffnen des Dropdown-Dialogfeld auf "Abschnitte anzeigen".</span><span class="sxs-lookup"><span data-stu-id="d925e-131">Click Show sections to open the drop dialog.</span></span>
-21. <span data-ttu-id="d925e-132">Wählen Sie "Nein" im Feld "Messungen anzeigen" aus.</span><span class="sxs-lookup"><span data-stu-id="d925e-132">Select No in the Show measurements field.</span></span>
-22. <span data-ttu-id="d925e-133">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="d925e-133">Click Save.</span></span>
-23. <span data-ttu-id="d925e-134">Klicken Sie zum Öffnen des Dropdown-Dialogfeld auf "Abschnitte anzeigen".</span><span class="sxs-lookup"><span data-stu-id="d925e-134">Click Show sections to open the drop dialog.</span></span>
-24. <span data-ttu-id="d925e-135">Wählen Sie "Ja" im Feld "Messungen anzeigen" aus.</span><span class="sxs-lookup"><span data-stu-id="d925e-135">Select Yes in the Show measurements field.</span></span>
-25. <span data-ttu-id="d925e-136">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="d925e-136">Click Save.</span></span>
-    * <span data-ttu-id="d925e-137">Es gibt oftmals Ziele, die für alle Teammitglieder oder Mitarbeiter gleich oder ähnlich sind.</span><span class="sxs-lookup"><span data-stu-id="d925e-137">There are often goals that are the same or similar for team members or all employees.</span></span>     <span data-ttu-id="d925e-138">Ihr Personalverwaltungsadministrator oder Manager können Zielvorlagen für diese Ziele erstellen.</span><span class="sxs-lookup"><span data-stu-id="d925e-138">Your HR administrator or manager can create goal templates for those goals.</span></span> <span data-ttu-id="d925e-139">Sie können eine Ziel aus einer Vorlage hinzufügen und dieses anschließend ändern, um die Zeitachsen abzugleichen.</span><span class="sxs-lookup"><span data-stu-id="d925e-139">You can add a goal from a template, and then modify it to match your timelines.</span></span>  
-    * <span data-ttu-id="d925e-140">Es gibt oftmals merhere Ziele, die für alle Teammitglieder oder Mitarbeiter gleich oder ähnlich sind.</span><span class="sxs-lookup"><span data-stu-id="d925e-140">There are often several goals that are the same or similar for team members or all employees.</span></span>     <span data-ttu-id="d925e-141">Ihr Personalverwaltungsadministrator oder Manager können Zielgruppen erstellen, die eine oder mehrere Zielvorlagen enthalten.</span><span class="sxs-lookup"><span data-stu-id="d925e-141">Your HR administrator or manager can create goal groups that contain one or more goal templates.</span></span> <span data-ttu-id="d925e-142">Sie können Ziele aus einer Vorlagengruppe hinzufügen und diese anschließend ändern, um die Zeitachsen abzugleichen.</span><span class="sxs-lookup"><span data-stu-id="d925e-142">You can add goals from a goal group, and then modify them to match your timelines.</span></span>  
-    * <span data-ttu-id="d925e-143">Beim Erstellen einer Überprüfung können Sie dieser Überprüfung Ziele hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="d925e-143">When you create a review, you can add goals to that review.</span></span> <span data-ttu-id="d925e-144">Lesen Sie den Aufgabenleitfaden für Überprüfungen, um zu sehen, inwiefern Sie Ziele den Überprüfungen hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="d925e-144">Refer to the task guide for reviews to see how you can add goals to your reviews.</span></span>  
-
+1. <span data-ttu-id="b40f9-107">Wechseln Sie zu Alle Arbeitsbereiche > Mitarbeiter-Self-Service.</span><span class="sxs-lookup"><span data-stu-id="b40f9-107">Go to All workspaces > Employee self service.</span></span>
+2. <span data-ttu-id="b40f9-108">Klicken Sie auf "Alle Ziele anzeigen".</span><span class="sxs-lookup"><span data-stu-id="b40f9-108">Click View all goals</span></span>
+3. <span data-ttu-id="b40f9-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b40f9-109">Click New.</span></span>
+4. <span data-ttu-id="b40f9-110">Geben Sie im Feld Name "Contos-Projekt abschließen" ein.</span><span class="sxs-lookup"><span data-stu-id="b40f9-110">In the Name field, type 'Complete the Contoso project'.</span></span>
+5. <span data-ttu-id="b40f9-111">Geben Sie im "Überblick" "Ich werde das Contoso-Projekt in 30 Tagen abschließen" ein.</span><span class="sxs-lookup"><span data-stu-id="b40f9-111">In the Overview field, enter 'I will finish the Contoso project in 30 days'.</span></span>
+    * <span data-ttu-id="b40f9-112">Ziele können für eine Person, ein Team oder sogar ein Unternehmen gelten.</span><span class="sxs-lookup"><span data-stu-id="b40f9-112">Goals can apply to an individual, a team, or even a corporation.</span></span> <span data-ttu-id="b40f9-113">Die Standardeinstellung für Mitarbeiterziele ist "Einzeln".</span><span class="sxs-lookup"><span data-stu-id="b40f9-113">The default setting for Employee goals is Individual.</span></span>  
+6. <span data-ttu-id="b40f9-114">Geben Sie im Feld "Zielkategorie" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b40f9-114">In the Goal category field, enter or select a value.</span></span>
+7. <span data-ttu-id="b40f9-115">Im Feld Startdatum können Sie das angezeigte Datum ändern.</span><span class="sxs-lookup"><span data-stu-id="b40f9-115">In the Start date field, change the date shown.</span></span>
+8. <span data-ttu-id="b40f9-116">Im Feld Enddatum können Sie das angezeigte Datum ändern.</span><span class="sxs-lookup"><span data-stu-id="b40f9-116">In the End date field, change the date shown.</span></span>
+    * <span data-ttu-id="b40f9-117">Wenn Sie ein Ziel abschließen, geben Sie das Datum ein, am dem Sie das Ziel absolviert haben.</span><span class="sxs-lookup"><span data-stu-id="b40f9-117">When you complete a goal, enter the date that you completed the goal here.</span></span>  
+9. <span data-ttu-id="b40f9-118">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="b40f9-118">Click Save.</span></span>
+10. <span data-ttu-id="b40f9-119">Erweitern Sie den Abschnitt "Messungen".</span><span class="sxs-lookup"><span data-stu-id="b40f9-119">Expand the Measurements section.</span></span> <span data-ttu-id="b40f9-120">Wenn es bereits erweitert ist, klicken Sie zweimal auf den Erweiterungspfeil.</span><span class="sxs-lookup"><span data-stu-id="b40f9-120">If it is already expanded, click the Expand arrow twice.</span></span>
+11. <span data-ttu-id="b40f9-121">Klicken Sie auf "Messung hinzufügen", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b40f9-121">Click Add measurement to open the drop dialog.</span></span>
+12. <span data-ttu-id="b40f9-122">Geben Sie im Feld "Messung" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b40f9-122">In the Measurement field, enter or select a value.</span></span>
+13. <span data-ttu-id="b40f9-123">Geben Sie im Feld "Zielbetrag" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b40f9-123">In the Target amount field, enter a number.</span></span>
+14. <span data-ttu-id="b40f9-124">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b40f9-124">Click OK.</span></span>
+15. <span data-ttu-id="b40f9-125">Erweitern Sie den Abschnitt "Aktivitäten".</span><span class="sxs-lookup"><span data-stu-id="b40f9-125">Expand the Activities section.</span></span> <span data-ttu-id="b40f9-126">Wenn es bereits erweitert ist, klicken Sie zweimal auf den Erweiterungspfeil.</span><span class="sxs-lookup"><span data-stu-id="b40f9-126">If it is already expanded, click the Expand arrow twice.</span></span>
+16. <span data-ttu-id="b40f9-127">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b40f9-127">Click Add.</span></span>
+17. <span data-ttu-id="b40f9-128">Geben Sie im Feld "Titel" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b40f9-128">In the Title field, type a value.</span></span>
+18. <span data-ttu-id="b40f9-129">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b40f9-129">In the Description field, type a value.</span></span>
+19. <span data-ttu-id="b40f9-130">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="b40f9-130">Click Save.</span></span>
+20. <span data-ttu-id="b40f9-131">Klicken Sie zum Öffnen des Dropdown-Dialogfeld auf "Abschnitte anzeigen".</span><span class="sxs-lookup"><span data-stu-id="b40f9-131">Click Show sections to open the drop dialog.</span></span>
+21. <span data-ttu-id="b40f9-132">Wählen Sie "Nein" im Feld "Messungen anzeigen" aus.</span><span class="sxs-lookup"><span data-stu-id="b40f9-132">Select No in the Show measurements field.</span></span>
+22. <span data-ttu-id="b40f9-133">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="b40f9-133">Click Save.</span></span>
+23. <span data-ttu-id="b40f9-134">Klicken Sie zum Öffnen des Dropdown-Dialogfeld auf "Abschnitte anzeigen".</span><span class="sxs-lookup"><span data-stu-id="b40f9-134">Click Show sections to open the drop dialog.</span></span>
+24. <span data-ttu-id="b40f9-135">Wählen Sie "Ja" im Feld "Messungen anzeigen" aus.</span><span class="sxs-lookup"><span data-stu-id="b40f9-135">Select Yes in the Show measurements field.</span></span>
+25. <span data-ttu-id="b40f9-136">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="b40f9-136">Click Save.</span></span>
+    * <span data-ttu-id="b40f9-137">Es gibt oftmals Ziele, die für alle Teammitglieder oder Mitarbeiter gleich oder ähnlich sind.</span><span class="sxs-lookup"><span data-stu-id="b40f9-137">There are often goals that are the same or similar for team members or all employees.</span></span>     <span data-ttu-id="b40f9-138">Ihr Personalverwaltungsadministrator oder Manager können Zielvorlagen für diese Ziele erstellen.</span><span class="sxs-lookup"><span data-stu-id="b40f9-138">Your HR administrator or manager can create goal templates for those goals.</span></span> <span data-ttu-id="b40f9-139">Sie können eine Ziel aus einer Vorlage hinzufügen und dieses anschließend ändern, um die Zeitachsen abzugleichen.</span><span class="sxs-lookup"><span data-stu-id="b40f9-139">You can add a goal from a template, and then modify it to match your timelines.</span></span>  
+    * <span data-ttu-id="b40f9-140">Es gibt oftmals merhere Ziele, die für alle Teammitglieder oder Mitarbeiter gleich oder ähnlich sind.</span><span class="sxs-lookup"><span data-stu-id="b40f9-140">There are often several goals that are the same or similar for team members or all employees.</span></span>     <span data-ttu-id="b40f9-141">Ihr Personalverwaltungsadministrator oder Manager können Zielgruppen erstellen, die eine oder mehrere Zielvorlagen enthalten.</span><span class="sxs-lookup"><span data-stu-id="b40f9-141">Your HR administrator or manager can create goal groups that contain one or more goal templates.</span></span> <span data-ttu-id="b40f9-142">Sie können Ziele aus einer Vorlagengruppe hinzufügen und diese anschließend ändern, um die Zeitachsen abzugleichen.</span><span class="sxs-lookup"><span data-stu-id="b40f9-142">You can add goals from a goal group, and then modify them to match your timelines.</span></span>  
+    * <span data-ttu-id="b40f9-143">Beim Erstellen einer Überprüfung können Sie dieser Überprüfung Ziele hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b40f9-143">When you create a review, you can add goals to that review.</span></span> <span data-ttu-id="b40f9-144">Lesen Sie den Aufgabenleitfaden für Überprüfungen, um zu sehen, inwiefern Sie Ziele den Überprüfungen hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="b40f9-144">Refer to the task guide for reviews to see how you can add goals to your reviews.</span></span>  
 
