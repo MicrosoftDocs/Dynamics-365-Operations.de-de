@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren paralleler Verzweigungen in einem Workflow
-description: "Führen Sie im Workflow-Editor die folgenden Schritte aus, um einen Parallelzweig zu konfigurieren."
+description: Führen Sie im Workflow-Editor die folgenden Schritte aus, um einen Parallelzweig zu konfigurieren.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,39 +17,37 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 73626ad21dfe2be7400f321a3eee272c896276f3
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367339"
 ---
-
-# <a name="configure-parallel-branches-in-a-workflow"></a><span data-ttu-id="a4840-103">Konfigurieren paralleler Verzweigungen in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="a4840-103">Configure parallel branches in a workflow</span></span>
+# <a name="configure-parallel-branches-in-a-workflow"></a><span data-ttu-id="7a09b-103">Konfigurieren paralleler Verzweigungen in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="7a09b-103">Configure parallel branches in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a4840-104">Führen Sie im Workflow-Editor die folgenden Schritte aus, um einen Parallelzweig zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="a4840-104">To configure a parallel branch, complete the following procedures in the workflow editor.</span></span>
+<span data-ttu-id="7a09b-104">Führen Sie im Workflow-Editor die folgenden Schritte aus, um einen Parallelzweig zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="7a09b-104">To configure a parallel branch, complete the following procedures in the workflow editor.</span></span>
 
-<span data-ttu-id="a4840-105">Ein Parallelzweig ist eigentlich ein Workflow, der im Kontext eines übergeordneten Workflows ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="a4840-105">A parallel branch is essentially a workflow that runs in the context of a parent workflow.</span></span>
+<span data-ttu-id="7a09b-105">Ein Parallelzweig ist eigentlich ein Workflow, der im Kontext eines übergeordneten Workflows ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="7a09b-105">A parallel branch is essentially a workflow that runs in the context of a parent workflow.</span></span>
 
-## <a name="name-a-branch"></a><span data-ttu-id="a4840-106">Einen Zweig benennen</span><span class="sxs-lookup"><span data-stu-id="a4840-106">Name a branch</span></span>
+## <a name="name-a-branch"></a><span data-ttu-id="7a09b-106">Einen Zweig benennen</span><span class="sxs-lookup"><span data-stu-id="7a09b-106">Name a branch</span></span>
 
-<span data-ttu-id="a4840-107">Gehen Sie folgendermaßen vor, um einen Namen für einen Parallelzweig einzugeben.</span><span class="sxs-lookup"><span data-stu-id="a4840-107">Follow these steps to enter a name for a parallel branch.</span></span>
+<span data-ttu-id="7a09b-107">Gehen Sie folgendermaßen vor, um einen Namen für einen Parallelzweig einzugeben.</span><span class="sxs-lookup"><span data-stu-id="7a09b-107">Follow these steps to enter a name for a parallel branch.</span></span>
 
-1. <span data-ttu-id="a4840-108">Klicken Sie mit der rechten Maustaste auf den Parallelzweig, und klicken Sie anschließend auf **Eigenschaften**.</span><span class="sxs-lookup"><span data-stu-id="a4840-108">Right-click the parallel branch, and then click **Properties**.</span></span> <span data-ttu-id="a4840-109">Das Formular **Eigenschaften** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="a4840-109">The **Properties** form is displayed.</span></span>
-2. <span data-ttu-id="a4840-110">Klicken Sie im linken Bereich auf **Grundeinstellungen**.</span><span class="sxs-lookup"><span data-stu-id="a4840-110">In the left pane, click **Basic Settings**.</span></span>
-3. <span data-ttu-id="a4840-111">Geben Sie im Feld **Name** einen eindeutigen Namen für den Parallelzweig ein.</span><span class="sxs-lookup"><span data-stu-id="a4840-111">In the **Name** field, enter a unique name for the parallel branch.</span></span>
-4. <span data-ttu-id="a4840-112">Klicken Sie auf **Schließen**.</span><span class="sxs-lookup"><span data-stu-id="a4840-112">Click **Close**.</span></span>
+1. <span data-ttu-id="7a09b-108">Klicken Sie mit der rechten Maustaste auf den Parallelzweig, und klicken Sie anschließend auf **Eigenschaften**.</span><span class="sxs-lookup"><span data-stu-id="7a09b-108">Right-click the parallel branch, and then click **Properties**.</span></span> <span data-ttu-id="7a09b-109">Das Formular **Eigenschaften** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7a09b-109">The **Properties** form is displayed.</span></span>
+2. <span data-ttu-id="7a09b-110">Klicken Sie im linken Bereich auf **Grundeinstellungen**.</span><span class="sxs-lookup"><span data-stu-id="7a09b-110">In the left pane, click **Basic Settings**.</span></span>
+3. <span data-ttu-id="7a09b-111">Geben Sie im Feld **Name** einen eindeutigen Namen für den Parallelzweig ein.</span><span class="sxs-lookup"><span data-stu-id="7a09b-111">In the **Name** field, enter a unique name for the parallel branch.</span></span>
+4. <span data-ttu-id="7a09b-112">Klicken Sie auf **Schließen**.</span><span class="sxs-lookup"><span data-stu-id="7a09b-112">Click **Close**.</span></span>
 
-## <a name="design-and-configure-the-elements-of-a-branch"></a><span data-ttu-id="a4840-113">Entwerfen und Konfigurieren der Elemente eines Zweigs</span><span class="sxs-lookup"><span data-stu-id="a4840-113">Design and configure the elements of a branch</span></span>
+## <a name="design-and-configure-the-elements-of-a-branch"></a><span data-ttu-id="7a09b-113">Entwerfen und Konfigurieren der Elemente eines Zweigs</span><span class="sxs-lookup"><span data-stu-id="7a09b-113">Design and configure the elements of a branch</span></span>
 
-<span data-ttu-id="a4840-114">Gehen Sie folgendermaßen vor, um die Elemente eines Parallelzweigs zu entwerfen und zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="a4840-114">Follow these steps to design and configure the elements of a parallel branch.</span></span>
+<span data-ttu-id="7a09b-114">Gehen Sie folgendermaßen vor, um die Elemente eines Parallelzweigs zu entwerfen und zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="7a09b-114">Follow these steps to design and configure the elements of a parallel branch.</span></span>
 
-1. <span data-ttu-id="a4840-115">Doppelklicken Sie auf den Parallelzweig.</span><span class="sxs-lookup"><span data-stu-id="a4840-115">Double-click the parallel branch.</span></span>
-2. <span data-ttu-id="a4840-116">Ziehen Sie Workflowelemente auf die Canvas, und konfigurieren Sie die Elemente analog zum Erstellen eines Workflows.</span><span class="sxs-lookup"><span data-stu-id="a4840-116">Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow.</span></span> <span data-ttu-id="a4840-117">Weitere Informationen finden Sie unter [Erstellen eines Workflows.](create-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="a4840-117">For more information, see [Create a workflow](create-workflow.md).</span></span>
+1. <span data-ttu-id="7a09b-115">Doppelklicken Sie auf den Parallelzweig.</span><span class="sxs-lookup"><span data-stu-id="7a09b-115">Double-click the parallel branch.</span></span>
+2. <span data-ttu-id="7a09b-116">Ziehen Sie Workflowelemente auf die Canvas, und konfigurieren Sie die Elemente analog zum Erstellen eines Workflows.</span><span class="sxs-lookup"><span data-stu-id="7a09b-116">Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow.</span></span> <span data-ttu-id="7a09b-117">Weitere Informationen finden Sie unter [Erstellen eines Workflows.](create-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="7a09b-117">For more information, see [Create a workflow](create-workflow.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="a4840-118">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="a4840-118">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="7a09b-118">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="7a09b-118">Additional resources</span></span>
 
-[<span data-ttu-id="a4840-119">Erstellen eines Workflows</span><span class="sxs-lookup"><span data-stu-id="a4840-119">Create a workflow</span></span>](create-workflow.md)
-
+[<span data-ttu-id="7a09b-119">Erstellen eines Workflows</span><span class="sxs-lookup"><span data-stu-id="7a09b-119">Create a workflow</span></span>](create-workflow.md)

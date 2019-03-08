@@ -1,13 +1,13 @@
 ---
-title: "Steuerrichtlinien für Europa"
-description: "Sie können angeben, um eine Erläuterung von Mehrwertsteuercodes auf Verkaufs- und Projektrechnungen einzubeziehen. Sie können Referenznummern in Verkaufsrechnungen, Freitextrechnungen und Projektrechnungen drucken."
+title: Steuerrichtlinien für Europa
+description: Sie können angeben, um eine Erläuterung von Mehrwertsteuercodes auf Verkaufs- und Projektrechnungen einzubeziehen. Sie können Referenznummern in Verkaufsrechnungen, Freitextrechnungen und Projektrechnungen drucken.
 author: epodkolz
 manager: AnnBe
 ms.date: 05/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,21 +15,19 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 42861a66b44d6156341bf2d4d895a4bf35295ee6
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370326"
 ---
-
-# <a name="tax-directives-for-europe"></a><span data-ttu-id="5c037-104">Steuerrichtlinien für Europa</span><span class="sxs-lookup"><span data-stu-id="5c037-104">Tax directives for Europe</span></span>
+# <a name="tax-directives-for-europe"></a><span data-ttu-id="8f5ec-104">Steuerrichtlinien für Europa</span><span class="sxs-lookup"><span data-stu-id="8f5ec-104">Tax directives for Europe</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5c037-105">Die EU-Direktive bietet Bestimmungen, die von allen Mitgliedsstaaten befolgt werden müssen, in Bezug auf Rechnungsregeln und Informationen, die bei der Rechnungserstellung beachtet werden müssen.</span><span class="sxs-lookup"><span data-stu-id="5c037-105">EU Directive provides regulations to be followed by all Member States regarding invoice rules and information that must be included when creating invoices.</span></span> <span data-ttu-id="5c037-106">Die EU-Direktive führt Informationen auf, die von Lieferanten für seine Kunden in der EU erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="5c037-106">EU Directive lists the information that is required by suppliers for their customers in the EU.</span></span> <span data-ttu-id="5c037-107">Beispielsweise könnte eine Rechnung eine Referenz enthalten, die den rechtlichen Gründe für eine Nullbewertung der Mehrwertsteuer oder eine Ausnahme beschreibt.</span><span class="sxs-lookup"><span data-stu-id="5c037-107">For example, an invoice could include a reference that describes the legal grounds for a VAT zero-rating or an exemption.</span></span> <span data-ttu-id="5c037-108">Wenn mit einer Rechnung eine zuvor ausgestellte Rechnung angepasst wird, beispielsweise eine Gutschrift, muss eine eindeutige Referenz zur ursprünglichen Rechnung vorgenommen werden.</span><span class="sxs-lookup"><span data-stu-id="5c037-108">If an invoice adjusts an earlier issued invoice, such as a credit note, an unambiguous reference should be made to the original invoice.</span></span>
+<span data-ttu-id="8f5ec-105">Die EU-Direktive bietet Bestimmungen, die von allen Mitgliedsstaaten befolgt werden müssen, in Bezug auf Rechnungsregeln und Informationen, die bei der Rechnungserstellung beachtet werden müssen.</span><span class="sxs-lookup"><span data-stu-id="8f5ec-105">EU Directive provides regulations to be followed by all Member States regarding invoice rules and information that must be included when creating invoices.</span></span> <span data-ttu-id="8f5ec-106">Die EU-Direktive führt Informationen auf, die von Lieferanten für seine Kunden in der EU erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="8f5ec-106">EU Directive lists the information that is required by suppliers for their customers in the EU.</span></span> <span data-ttu-id="8f5ec-107">Beispielsweise könnte eine Rechnung eine Referenz enthalten, die den rechtlichen Gründe für eine Nullbewertung der Mehrwertsteuer oder eine Ausnahme beschreibt.</span><span class="sxs-lookup"><span data-stu-id="8f5ec-107">For example, an invoice could include a reference that describes the legal grounds for a VAT zero-rating or an exemption.</span></span> <span data-ttu-id="8f5ec-108">Wenn mit einer Rechnung eine zuvor ausgestellte Rechnung angepasst wird, beispielsweise eine Gutschrift, muss eine eindeutige Referenz zur ursprünglichen Rechnung vorgenommen werden.</span><span class="sxs-lookup"><span data-stu-id="8f5ec-108">If an invoice adjusts an earlier issued invoice, such as a credit note, an unambiguous reference should be made to the original invoice.</span></span>
 
-- <span data-ttu-id="5c037-109">Um eine Beschreibung der Mehrwertsteuercodes auf einer Verkaufsrechnung, Freitextrechnung oder einem Projektrechnungsbericht zu drucken, richten Sie den Referenztext der Steuer-Direktive auf den Mehrwertsteuercodes ein.</span><span class="sxs-lookup"><span data-stu-id="5c037-109">To print a description of sales tax codes on a sales invoice, free text invoice, or project invoice report, set up the Tax Directive reference text on the sales tax codes.</span></span>
-- <span data-ttu-id="5c037-110">Für Gutschriften werden die Nummer und das Datum der ursprünglichen Rechnung zusammen mit dem Grund für die Berichtigung gedruckt.</span><span class="sxs-lookup"><span data-stu-id="5c037-110">For credit notes, the number and date of the original invoice are printed along with the reason for correction.</span></span>
-
+- <span data-ttu-id="8f5ec-109">Um eine Beschreibung der Mehrwertsteuercodes auf einer Verkaufsrechnung, Freitextrechnung oder einem Projektrechnungsbericht zu drucken, richten Sie den Referenztext der Steuer-Direktive auf den Mehrwertsteuercodes ein.</span><span class="sxs-lookup"><span data-stu-id="8f5ec-109">To print a description of sales tax codes on a sales invoice, free text invoice, or project invoice report, set up the Tax Directive reference text on the sales tax codes.</span></span>
+- <span data-ttu-id="8f5ec-110">Für Gutschriften werden die Nummer und das Datum der ursprünglichen Rechnung zusammen mit dem Grund für die Berichtigung gedruckt.</span><span class="sxs-lookup"><span data-stu-id="8f5ec-110">For credit notes, the number and date of the original invoice are printed along with the reason for correction.</span></span>
 

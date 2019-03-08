@@ -1,13 +1,13 @@
 ---
-title: "Dateiformate für Zahlungsmethoden"
-description: "In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwendet werden können, beschrieben."
+title: Dateiformate für Zahlungsmethoden
+description: In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwendet werden können, beschrieben.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymMode, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -17,42 +17,40 @@ ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 350bea3e4a698e5e7c71fe4fcbb7e7386939511e
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370370"
 ---
-
-# <a name="file-formats-for-methods-of-payment"></a><span data-ttu-id="2dbfc-103">Dateiformate für Zahlungsmethoden</span><span class="sxs-lookup"><span data-stu-id="2dbfc-103">File formats for methods of payment</span></span>
+# <a name="file-formats-for-methods-of-payment"></a><span data-ttu-id="d991c-103">Dateiformate für Zahlungsmethoden</span><span class="sxs-lookup"><span data-stu-id="d991c-103">File formats for methods of payment</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2dbfc-104">In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwendet werden können, beschrieben.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-104">This topic describes the two methods for getting file formats that you can use for methods of payment.</span></span>
+<span data-ttu-id="d991c-104">In diesem Thema werden die zwei Methoden für das Zuweisen von Dateiformaten, die für Zahlungsmethoden verwendet werden können, beschrieben.</span><span class="sxs-lookup"><span data-stu-id="d991c-104">This topic describes the two methods for getting file formats that you can use for methods of payment.</span></span>
 
-<span data-ttu-id="2dbfc-105">Es gibt zwei Methoden, die Sie verwenden können, um die Dateiformate für die Verwendung mit Zahlungsmethoden, elektronischen Meldedateiformaten (ER)- oder X++-Dateiformate abzurufen.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-105">There are two methods that you can use to get file formats for use with methods of payment, electronic reporting (ER) file formats or X++ file formats.</span></span> <span data-ttu-id="2dbfc-106">Wenn Sie eine Zahlungsmethode für einen Debitor oder Kreditor einrichten, geben Sie an, welche Dateiformate und Standardwerten für Zahlungen verwendet werden sollen und wie Zahlungen verarbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-106">When you set up a method of payment for a customer or vendor, you indicate which file formats and standards should be used for payments and how payments will be processed.</span></span> <span data-ttu-id="2dbfc-107">Folgende Formattypenb stehen zur Auswahl:</span><span class="sxs-lookup"><span data-stu-id="2dbfc-107">You can select from the following types of formats:</span></span>
+<span data-ttu-id="d991c-105">Es gibt zwei Methoden, die Sie verwenden können, um die Dateiformate für die Verwendung mit Zahlungsmethoden, elektronischen Meldedateiformaten (ER)- oder X++-Dateiformate abzurufen.</span><span class="sxs-lookup"><span data-stu-id="d991c-105">There are two methods that you can use to get file formats for use with methods of payment, electronic reporting (ER) file formats or X++ file formats.</span></span> <span data-ttu-id="d991c-106">Wenn Sie eine Zahlungsmethode für einen Debitor oder Kreditor einrichten, geben Sie an, welche Dateiformate und Standardwerten für Zahlungen verwendet werden sollen und wie Zahlungen verarbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="d991c-106">When you set up a method of payment for a customer or vendor, you indicate which file formats and standards should be used for payments and how payments will be processed.</span></span> <span data-ttu-id="d991c-107">Folgende Formattypenb stehen zur Auswahl:</span><span class="sxs-lookup"><span data-stu-id="d991c-107">You can select from the following types of formats:</span></span>
 
--   <span data-ttu-id="2dbfc-108">Warenexport</span><span class="sxs-lookup"><span data-stu-id="2dbfc-108">Export</span></span>
--   <span data-ttu-id="2dbfc-109">Warenimport</span><span class="sxs-lookup"><span data-stu-id="2dbfc-109">Import</span></span>
--   <span data-ttu-id="2dbfc-110">Zurück</span><span class="sxs-lookup"><span data-stu-id="2dbfc-110">Return</span></span>
--   <span data-ttu-id="2dbfc-111">Geldtransfer</span><span class="sxs-lookup"><span data-stu-id="2dbfc-111">Remittance</span></span>
+-   <span data-ttu-id="d991c-108">Warenexport</span><span class="sxs-lookup"><span data-stu-id="d991c-108">Export</span></span>
+-   <span data-ttu-id="d991c-109">Warenimport</span><span class="sxs-lookup"><span data-stu-id="d991c-109">Import</span></span>
+-   <span data-ttu-id="d991c-110">Zurück</span><span class="sxs-lookup"><span data-stu-id="d991c-110">Return</span></span>
+-   <span data-ttu-id="d991c-111">Geldtransfer</span><span class="sxs-lookup"><span data-stu-id="d991c-111">Remittance</span></span>
 
-### <a name="method-1-electronic-reporting-file-formats"></a><span data-ttu-id="2dbfc-112">Methode 1: Elektronische Berichterstellungsformate</span><span class="sxs-lookup"><span data-stu-id="2dbfc-112">Method 1: Electronic reporting file formats</span></span>
+### <a name="method-1-electronic-reporting-file-formats"></a><span data-ttu-id="d991c-112">Methode 1: Elektronische Berichterstellungsformate</span><span class="sxs-lookup"><span data-stu-id="d991c-112">Method 1: Electronic reporting file formats</span></span>
 
-<span data-ttu-id="2dbfc-113">Für Dateiformate, die auf der Grundlage der ER-Konfigurationen basieren, müssen Sie die Konfigurationen aus dem Lifecycle Services (LCS) importieren.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-113">For file formats that are based on ER configurations, you must import the configurations from Lifecycle Services (LCS).</span></span> <span data-ttu-id="2dbfc-114">Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span><span class="sxs-lookup"><span data-stu-id="2dbfc-114">For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span></span> <span data-ttu-id="2dbfc-115">Nachdem Sie diese Berichterstellungskonfigurationen für Dateiformate importieren haben, sind die importierten Formate verfügbar auf der Seite **Zahlungsmethoden**.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-115">After you import reporting configurations for those file formats, the imported formats will be available to select on the **Methods of payment** page.</span></span> <span data-ttu-id="2dbfc-116">Der Prozess für den Import und die Auswahl von Dateiformaten für Europa ist gleich wie die Prozedur für Japan.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-116">The process for importing and selecting file formats for Europe is similar to the procedure for Japan.</span></span> <span data-ttu-id="2dbfc-117">Weitere Informationen finden Sie unter [Aktivieren Sie das JBA-Zahlungsdateiformat](tasks/jba-payment-file-format.md)</span><span class="sxs-lookup"><span data-stu-id="2dbfc-117">For more details, see [Enable the JBA payment file format](tasks/jba-payment-file-format.md)</span></span>
+<span data-ttu-id="d991c-113">Für Dateiformate, die auf der Grundlage der ER-Konfigurationen basieren, müssen Sie die Konfigurationen aus dem Lifecycle Services (LCS) importieren.</span><span class="sxs-lookup"><span data-stu-id="d991c-113">For file formats that are based on ER configurations, you must import the configurations from Lifecycle Services (LCS).</span></span> <span data-ttu-id="d991c-114">Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span><span class="sxs-lookup"><span data-stu-id="d991c-114">For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span></span> <span data-ttu-id="d991c-115">Nachdem Sie diese Berichterstellungskonfigurationen für Dateiformate importieren haben, sind die importierten Formate verfügbar auf der Seite **Zahlungsmethoden**.</span><span class="sxs-lookup"><span data-stu-id="d991c-115">After you import reporting configurations for those file formats, the imported formats will be available to select on the **Methods of payment** page.</span></span> <span data-ttu-id="d991c-116">Der Prozess für den Import und die Auswahl von Dateiformaten für Europa ist gleich wie die Prozedur für Japan.</span><span class="sxs-lookup"><span data-stu-id="d991c-116">The process for importing and selecting file formats for Europe is similar to the procedure for Japan.</span></span> <span data-ttu-id="d991c-117">Weitere Informationen finden Sie unter [Aktivieren Sie das JBA-Zahlungsdateiformat](tasks/jba-payment-file-format.md)</span><span class="sxs-lookup"><span data-stu-id="d991c-117">For more details, see [Enable the JBA payment file format](tasks/jba-payment-file-format.md)</span></span>
 
-### <a name="method-2-x-file-formats"></a><span data-ttu-id="2dbfc-118">Methode 2: X++-Dateiformate</span><span class="sxs-lookup"><span data-stu-id="2dbfc-118">Method 2: X++ file formats</span></span>
+### <a name="method-2-x-file-formats"></a><span data-ttu-id="d991c-118">Methode 2: X++-Dateiformate</span><span class="sxs-lookup"><span data-stu-id="d991c-118">Method 2: X++ file formats</span></span>
 
-<span data-ttu-id="2dbfc-119">Um Dateiformate auszuwählen, die auf der Grundlage X++-Code basieren, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-119">To select file formats that are based on X++ code, complete the following steps.</span></span>
+<span data-ttu-id="d991c-119">Um Dateiformate auszuwählen, die auf der Grundlage X++-Code basieren, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="d991c-119">To select file formats that are based on X++ code, complete the following steps.</span></span>
 
-1.  <span data-ttu-id="2dbfc-120">Gehen Sie zur Seite **Zahlungsmethode**</span><span class="sxs-lookup"><span data-stu-id="2dbfc-120">Go to the **Methods of payment** page.</span></span>
-2.  <span data-ttu-id="2dbfc-121">Wählen Sie im Inforegister **Dateiformate** **Einstellungen**.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-121">On the **File formats** FastTab, click **Setup**.</span></span>
-3.  <span data-ttu-id="2dbfc-122">Wählen Sie die Registerkarte aus, die dem Dateiformattyp entspricht.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-122">Select the tab that corresponds with the file format type.</span></span>
-4.  <span data-ttu-id="2dbfc-123">Wählen Sie ein Dateiformat aus der Liste **Verfügbar** aus und verschieben Sie diese mit dem Pfeilsteuerelement in die Liste **Ausgewählt**.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-123">Select a file format from the **Available** list and move it to the **Selected** list with the arrow control.</span></span>
-5.  <span data-ttu-id="2dbfc-124">Schließen Sie das Formular **Dateiformate für Zahlungsmethoden**.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-124">Close the **File formats for methods of payment** page.</span></span>
-6.  <span data-ttu-id="2dbfc-125">Wählen Sie im Inforegister **Dateiformate** das Dateiformat für die Zahlungsmethode aus dem entsprechenden Dateiformatfeld aus.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-125">On the **File formats** FastTab, select the file format to use for the method of payment from the appropriate file format field.</span></span> <span data-ttu-id="2dbfc-126">Die allgemeinen elektronischen Berichtsoptionen sollen **Nein** für X++-Dateiformate sein.</span><span class="sxs-lookup"><span data-stu-id="2dbfc-126">The General electronic reporting options should be set to **No** for X++ file formats.</span></span>
-
+1.  <span data-ttu-id="d991c-120">Gehen Sie zur Seite **Zahlungsmethode**</span><span class="sxs-lookup"><span data-stu-id="d991c-120">Go to the **Methods of payment** page.</span></span>
+2.  <span data-ttu-id="d991c-121">Wählen Sie im Inforegister **Dateiformate** **Einstellungen**.</span><span class="sxs-lookup"><span data-stu-id="d991c-121">On the **File formats** FastTab, click **Setup**.</span></span>
+3.  <span data-ttu-id="d991c-122">Wählen Sie die Registerkarte aus, die dem Dateiformattyp entspricht.</span><span class="sxs-lookup"><span data-stu-id="d991c-122">Select the tab that corresponds with the file format type.</span></span>
+4.  <span data-ttu-id="d991c-123">Wählen Sie ein Dateiformat aus der Liste **Verfügbar** aus und verschieben Sie diese mit dem Pfeilsteuerelement in die Liste **Ausgewählt**.</span><span class="sxs-lookup"><span data-stu-id="d991c-123">Select a file format from the **Available** list and move it to the **Selected** list with the arrow control.</span></span>
+5.  <span data-ttu-id="d991c-124">Schließen Sie das Formular **Dateiformate für Zahlungsmethoden**.</span><span class="sxs-lookup"><span data-stu-id="d991c-124">Close the **File formats for methods of payment** page.</span></span>
+6.  <span data-ttu-id="d991c-125">Wählen Sie im Inforegister **Dateiformate** das Dateiformat für die Zahlungsmethode aus dem entsprechenden Dateiformatfeld aus.</span><span class="sxs-lookup"><span data-stu-id="d991c-125">On the **File formats** FastTab, select the file format to use for the method of payment from the appropriate file format field.</span></span> <span data-ttu-id="d991c-126">Die allgemeinen elektronischen Berichtsoptionen sollen **Nein** für X++-Dateiformate sein.</span><span class="sxs-lookup"><span data-stu-id="d991c-126">The General electronic reporting options should be set to **No** for X++ file formats.</span></span>
 
 
 
