@@ -1,13 +1,13 @@
 ---
 title: Intrastat
-description: "Dieses Thema enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen."
+description: Dieses Thema enthält Informationen zur Intrastat-Berichterstattung für den Warenhandel und in einigen Fällen Dienstleistungen unter Ländern/Regionen der Europäischen Union (EU). Er gibt einen Überblick über Berichterstellungsprozesses und beschreibt die erforderlichen Einstellungen und die Voraussetzungen.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: b4b3d8f7da4fbb107353a25ff177492a0744b4c1
 ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370382"
 ---
-
 # <a name="intrastat"></a>Intrastat
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,7 @@ Die folgenden Abschnitte beschreiben den allgemeinen Informationsfluss, der für
 
 ### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Geben Sie eine Buchung ein, welche die Grenze eines anderen EU-Landes/einer anderen Region überschreitet
 
-Eine Debitorenrechnung, eine Freitextrechnung, eine Einkaufsrechnung, Projektrechnung, ein Debitorenlieferschein, ein Kreditorenproduktzugang oder Umlagerungsauftrag wird in die Intrastat-Erfassung übertragen, wenn die Länder-/Regionsart des Ziels (auf Dispositionen) oder Lieferung (auf Eingängen) ist **EU**. Diese Funktion wurde für Microsoft Dynamics 365 for Operations (1611) erweitert und gestattet, Ladungsadressen für eine Intragemeinschaftsbuchung anzugeben. Wenn eine Ladungsadresse sich von einer Kreditoren-Geschäftsadresse unterscheidet (oder Debitoren-Geschäftsadresse für Rücklieferung) funktioniert der Intrastat-Bericht mit diesen Informationen. Wenn Sie einen Auftrag, eine Freitextrechnung, eine Bestellung, eine Kreditorenrechnung, Projektrechnung oder einen Umlagerungsauftrag erstellen, besitzen einige Felder, die für Außenhandel zugeordnet sind, Standardwerte im Dokumentkopf oder in der Position. Der standardmäßige Buchungscode wird aus dem entsprechenden Feld auf der Seite **Außenhandelsparameter** entnommen. Der standardmäßige Warencode, Ursprungsland/-region und Bundesland/Kanton des Ursprungs werden dem Artikel selbst übernommen. Sie können die Standardwerte ändern und können auch andere außenhandelsbezogene Informationen ausfüllen: Statistiken-Verfahren, Transportmethode und Port.
+Eine Debitorenrechnung, eine Freitextrechnung, eine Einkaufsrechnung, Projektrechnung, ein Debitorenlieferschein, ein Kreditorenproduktzugang oder Umlagerungsauftrag wird in die Intrastat-Erfassung übertragen, wenn die Länder-/Regionsart des Ziels (auf Dispositionen) oder Lieferung (auf Eingängen) ist **EU**. Diese Funktion wurde für Microsoft Dynamics 365 for Operations (1611) erweitert und ermöglicht Ihnen, Ladungsadressen für eine innergemeinschaftliche Transaktion anzugeben. Wenn eine Ladungsadresse sich von einer Kreditoren-Geschäftsadresse unterscheidet (oder Debitoren-Geschäftsadresse für Rücklieferung) funktioniert der Intrastat-Bericht mit diesen Informationen. Wenn Sie einen Auftrag, eine Freitextrechnung, eine Bestellung, eine Kreditorenrechnung, Projektrechnung oder einen Umlagerungsauftrag erstellen, besitzen einige Felder, die für Außenhandel zugeordnet sind, Standardwerte im Dokumentkopf oder in der Position. Der standardmäßige Buchungscode wird aus dem entsprechenden Feld auf der Seite **Außenhandelsparameter** entnommen. Der standardmäßige Warencode, Ursprungsland/-region und Bundesland/Kanton des Ursprungs werden dem Artikel selbst übernommen. Sie können die Standardwerte ändern und können auch andere außenhandelsbezogene Informationen ausfüllen: Statistiken-Verfahren, Transportmethode und Port.
 
 ### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Mithilfe der Intrastat-Erfassung können Sie Informationen zum Handel zwischen EU-Ländern/Regionen generieren und melden
 
@@ -104,7 +103,7 @@ In der folgenden Tabelle werden die Komponenten für Intrastat-Berichte angezeig
 </tr>
 <tr class="even">
 <td>Elektronische Berichterstellung</td>
-<td>Einrichten der elektronischen Berichterstellungskonfigurationen, um Intrastat-Daten in einer elektronischen Datei zu exportieren, die das Format hat, das von den zuständigen Behörden angefordert wird, und Intrastat-Daten in einem benutzerfreundlichen, lesbaren Format in der Vorschau anzuzeigen (beispielsweise in Microsoft Excel).</td>
+<td>Einrichten von Konfigurationen zur elektronischen Berichterstellung, um Intrastat-Daten in einer elektronischen Datei zu exportieren, die das Format hat, das von den zuständigen Behörden angefordert wird, und um Intrastat-Daten in einem benutzerfreundlichen, lesbaren Format in der Vorschau anzuzeigen (beispielsweise in Microsoft Excel).</td>
 </tr>
 <tr class="even">
 <td>Lagerort</td>
@@ -141,7 +140,7 @@ In den folgenden Abschnitten werden die Einstellungen beschrieben, die für Intr
 </tr>
 <tr class="even">
 <td>Art des Geschäftes</td>
-<td>Richten Sie die Art der Buchung gemäß den Anforderungen Ihres Landes/Ihrer Region ein. Für jeden Buchungscode, den Sie einrichten, müssen Sie die Regeln für die Berechnung der Rechnungsbeträge und von statistischen Beträgen für Umlagerungsaufträge und Verkauf/Bestellungen einrichten.
+<td>Richten Sie die Art der Transaktion gemäß den Anforderungen Ihres Landes/Ihrer Region ein. Für jeden Buchungscode, den Sie einrichten, müssen Sie die Regeln für die Berechnung der Rechnungsbeträge und von statistischen Beträgen für Umlagerungsaufträge und Verkauf/Bestellungen einrichten.
 <ul>
 <li>Für Umlagerungsaufträge richten Sie eine der folgenden Regeln für die Berechnung der Rechnungsbeträge und statistischen Beträgen ein:
 <ul>
@@ -228,7 +227,7 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 </tr>
 <tr class="even">
 <td>Kontaktinformationen des Beauftragten</td>
-<td>Geben Sie Name, Adresse, die Umsatzsteuernummer, Telefonnummer und die Faxnummer des Agenten an.</td>
+<td>Geben Sie den Namen, die Adresse, Umsatzsteuernummer, Telefonnummer und Faxnummer des Agenten an.</td>
 </tr>
 <tr class="odd">
 <td>Länder-/Regionseigenschaften</td>
@@ -240,5 +239,4 @@ Verwenden Sie die **Außenhandelsparameter** Seite, um die Parameter in der folg
 </tr>
 </tbody>
 </table>
-
 

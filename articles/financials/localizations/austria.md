@@ -1,13 +1,13 @@
 ---
-title: "Österreich"
-description: "Dieses Thema bietet eine Übersicht über Dynamics 365 for Finance and Operations-Funktionen, die spezifisch für Österreich sind."
+title: Österreich
+description: Dieses Thema bietet eine Übersicht der Dynamics 365 for Finance and Operations-Funktionen, die für Österreich spezifisch sind.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Austria
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 7d0042357e2afebf7bcc39b0f55dd4e0cfd2221a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 3831a6b5ec458495134b4b490d33a9acd76b6d2e
-ms.openlocfilehash: 5984bc59d67a164a979e663b1f670b8a7df765dc
-ms.contentlocale: de-de
-ms.lasthandoff: 03/20/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370373"
 ---
-
 # <a name="austria"></a>Österreich
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren Hilfe Sie Dynamics 365 for Finance and Operations für juristische Personen mit einer primären Adresse in Österreich einrichten können.
+Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren Hilfe Sie Dynamics 365 for Finance and Operations für juristische Personen mit primärer Adresse in Österreich einrichten können.
 
 ## <a name="depreciation"></a>Abschreibung
 
@@ -66,4 +65,3 @@ Weitere Informationen zu den Einstellungen des MwSt. -Auszugs finden Sie unter [
 - [Microsoft Dynamics-Lokalisierungs-Portal: Österreich-Bericht](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Austria.html)
 - [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-

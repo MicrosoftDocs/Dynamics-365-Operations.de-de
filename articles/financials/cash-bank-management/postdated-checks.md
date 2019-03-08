@@ -1,13 +1,13 @@
 ---
 title: Vordatierte Schecks
-description: "Dieser Artikel bietet Informationen zur Unterstützung für vordatierte Schecks in Microsoft Dynamics 365 for Finance and Operations. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden."
+description: Dieser Artikel enthält Informationen über die Unterstützung bei vordatierten Prüfungen in Microsoft Dynamics 365 for Finance and Operations. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPostDatedChecks, CustPostDatedChecks
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ea1cd9926f3ea55d82f9030372a15b3545ed824
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 8fd721dc3166dcd981b749c673d3c625b4e5ae36
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362923"
 ---
-
 # <a name="postdated-checks"></a>Vordatierte Schecks
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel bietet Informationen zur Unterstützung für vordatierte Schecks in Microsoft Dynamics 365 for Finance and Operations. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden.
+Dieser Artikel enthält Informationen über die Unterstützung bei vordatierten Prüfungen in Microsoft Dynamics 365 for Finance and Operations. Vordatierte Schecks sind Schecks, die ausgestellt werden, um Zahlungen zu einem späteren Datum leisten oder erhalten zu können. Daher kann der Scheck nicht bis zum angegebene Datum eingewechselt werden.
 
-Microsoft Dynamics 365 for Finance and Operations unterstützt den vollständigen Verwaltungszyklus für vordatierte Schecks in Debitoren und Kreditoren wie in der folgenden Tabelle dargestellt.
+Microsoft Dynamics 365 for Finance and Operations unterstützt den vollständigen Verwaltungszyklus für vordatierte Prüfungen in Debitoren und Kreditoren wie in der folgenden Tabelle dargestellt.
 <table>
 <colgroup>
 <col width="50%" />
@@ -97,7 +96,6 @@ Weitere Informationen finden Sie in folgenden Themen:
 [Einen vordatierten Scheck für einen Kreditor erfassen und buchen](tasks/register-post-postdated-check-vendor.md) 
 
 [Einen vordatierten Scheck für einen Kreditor ausgleichen](tasks/settle-postdated-check-vendor.md)
-
 
 
 

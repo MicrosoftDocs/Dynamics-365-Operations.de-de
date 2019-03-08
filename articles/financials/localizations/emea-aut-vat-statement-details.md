@@ -1,13 +1,13 @@
 ---
-title: "MwSt-Berichtdetails für Österreich"
-description: "In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird."
+title: MwSt-Berichtdetails für Österreich
+description: In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 6cf0c54c8428ad8b9bed4640ab9aa3aa2dcf73b4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5a7560d9eefd830fc23b6c817397e8ed9f98d73e
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370349"
 ---
-
 # <a name="vat-statement-details-for-austria"></a>MwSt-Berichtdetails für Österreich
 
 [!include [banner](../includes/banner.md)]
@@ -107,7 +106,6 @@ Am Ende der MwSt Berichtsperiode führen Sie **Mehrwertsteuer** **begleichen und
 **Letzte Korrekturen** – enthalten Mehrwertsteuerbuchungen, die in der letzten Ausgleichsberechnung für den Zeitraum enthalten sin.| |Format mapping|Specify U30.|d
 
 Um eine MwSt. -XML-Datei zu generieren, verwenden Sie die Seite the **Mehrwertsteuerberichtsausgleichsperiode**.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Anforderungen für Produktionseinstellungen"
-description: "Dieser Artikel gibt Informationen zu Einrichtungsanforderungen, bevor Sie mit der Produktionssteuerung arbeiten können."
+title: Anforderungen für Produktionseinstellungen
+description: Dieser Artikel gibt Informationen zu Einrichtungsanforderungen, bevor Sie mit der Produktionssteuerung arbeiten können.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b811c11271097f4bb7910c34f7775955abba526d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 47fe11168ad2ddea2a7033eda8d8bd8220efea32
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366626"
 ---
-
 # <a name="production-setup-requirements"></a>Anforderungen für Produktionseinstellungen
 
 [!include [banner](../includes/banner.md)]
@@ -78,7 +77,6 @@ Bei Verwendung von Arbeitsplänen müssen Arbeitsgänge für jeden einzelnen ein
 1.  **Produktionsgruppen** – Richten Sie Produktionsgruppen ein, um Beziehungen zwischen dem Produktionsauftrag und den Sachkonten herzustellen. Die Sachkonten dienen zum Buchen oder zum Gruppieren von Aufträgen für die Berichterstellung.
 2.  **Produktionspools** – Erstellen Sie Produktionspools zum Gruppieren von Produktionsaufträgen ein, sodass Sie dringende Produktionsaufträge verarbeiten oder Auftragsgruppen löschen und buchen können.
 3.  **Eigenschaften** – Sie können Eigenschaften festlegen, um spezielle Attribute zu erstellen, die Ressourcen zugewiesen werden können, um die Reihenfolge der Produktionen zu steuern. Diese Attribute sind mit dem Schichtplan verbunden.
-
 
 
 

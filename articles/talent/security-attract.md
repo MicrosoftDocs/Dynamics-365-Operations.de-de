@@ -1,14 +1,14 @@
 ---
 title: Sicherheit und Rollenverwaltung in Attract
-description: "Dieser Abschnitt enthält Informationen über Sicherheitsrollen in Microsoft Dynamics 365 for Talent - Attract."
+description: Dieses Thema enthält Informationen über Rollensicherheit in Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9eb12bd6b9fc1aa66002908e5989b3ac504ab673
-ms.contentlocale: de-de
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374779"
 ---
-
 # <a name="security-and-role-management-in-attract"></a>Sicherheit und Rollenverwaltung in Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract nutzt diese rollenbasierte Sicherheit. Das bedeutet, dass der Zugriff nicht für einzelne Benutzer, sondern für Sicherheitsrollen gewährt wird, denen Benutzer zugewiesen werden. Ein Benutzer, der einer Sicherheitsrolle zugewiesen wird, besitzt Zugriff auf eine Gruppe von Rechten, die dieser Rolle zugeordnet sind.
+Microsoft Dynamics 365 for Talent: Attract verwendet rollenbasierte Sicherheit. Das bedeutet, dass der Zugriff nicht für einzelne Benutzer, sondern für Sicherheitsrollen gewährt wird, denen Benutzer zugewiesen werden. Ein Benutzer, der einer Sicherheitsrolle zugewiesen wird, besitzt Zugriff auf eine Gruppe von Rechten, die dieser Rolle zugeordnet sind.
 
 Attract stellt fünf grundlegende Benutzerrollen bereit:
 
@@ -53,7 +52,7 @@ Die folgenden Abschnitte enthalten eine allgemeine Beschreibung der jeweiligen R
 
 ## <a name="administrator"></a>Administrator
 
-Benutzer, die der Rolle zugewiesen sind, können auf alle Daten in Attract zugreifen und diese ändern. Administratoren können Daten erstellen, lesen, aktualisieren und löschen. Zudem haben Sie Zugriff auf das Administratorencenter, in dem sie die Attract Bewerbung konfigurieren und Benutzerinformationen einrichten können. Es wird empfohlen, dass mindestens eine Person der Administratorrolle zugewiesen wird. Standardmäßig wird der Umgebungsadministrator in Microsoft PowerApps als Administrator in Attract  festgelegt. Wenn Sie sich für die Testversion von Attract angemeldet haben, wird die Administrator-Rolle Ihnen automatisch zugewiesen. Momentan Stellen erstellen, müssen Benutzer, der der Administratorrolle haben, die entweder Werbeoffizierrolle oder die Personalerrolle verfügen.
+Benutzer, die der Rolle zugewiesen sind, können auf alle Daten in Attract zugreifen und diese ändern. Administratoren können Daten erstellen, lesen, aktualisieren und löschen. Zudem haben Sie Zugriff auf das Administratorencenter, in dem sie die Attract Bewerbung konfigurieren und Benutzerinformationen einrichten können. Es wird empfohlen, dass mindestens eine Person der Administratorrolle zugewiesen wird. Standardmäßig wird der Umgebungsadministrator in Microsoft PowerApps als Administrator in Attract festgelegt. Wenn Sie sich für die Testversion von Attract angemeldet haben, wird die Administrator-Rolle Ihnen automatisch zugewiesen. Momentan Stellen erstellen, müssen Benutzer, der der Administratorrolle haben, die entweder Werbeoffizierrolle oder die Personalerrolle verfügen.
 
 ## <a name="hiring-manager"></a>Zukünftiger Vorgesetzter
 
@@ -65,7 +64,7 @@ Benutzer, die der Personalbeschaffungsrolle zugewiesen werden, besitzen die Rech
 
 ## <a name="interviewer"></a>Gesprächsleiter
 
-Jeder Benutzer, der ein Microsoft Azures Active Directory (Azure AD) Konto in der Organisation besitzt, kann einem Personalbeschaffungsteam als Befrager hinzugefügt werden. Benutzer, die der Befragungsrolle zugewiesen werden, können die Stellendetails und die Bewerberdaten für die Stelle sehen, für die sie im Einstellungsteam sind. Für diese Stellen können Befrager auch Einstellungsempfehlungen vornehmen und Rückmeldungen zu den Kandidaten bereitstellen. Diese können jedoch die Stellendetails oder Bewerberdaten nicht aktualisieren.
+Jeder Benutzer, der ein Microsoft Azure Active Directory (Azure AD)-Konto in der Organisation besitzt, kann einem Personalbeschaffungsteam als Befrager hinzugefügt werden. Benutzer, die der Befragungsrolle zugewiesen werden, können die Stellendetails und die Bewerberdaten für die Stelle sehen, für die sie im Einstellungsteam sind. Für diese Stellen können Befrager auch Einstellungsempfehlungen vornehmen und Rückmeldungen zu den Kandidaten bereitstellen. Diese können jedoch die Stellendetails oder Bewerberdaten nicht aktualisieren.
 
 ## <a name="read-only"></a>Schreibgeschützt
 
@@ -108,7 +107,7 @@ Die folgenden Rechte gelten für die stellenspezifischen Daten für Bewerber und
 | Zu nächster Phase           | Kann zurückweisen, wenn der Benutzer im Einstellungsteam ist | Kann weiter machen, wenn der Benutzer im Einstellungsteam ist | Nicht zulässig |
 | Verwaltung des Startangebots | Kann Angebotsverwaltung beginnen | Es gibt eine Konfigurationsoption auf der Angebotaktivität. | Nicht zulässig |
 
-\*\* Eine Konfigurationsoption in der [Feedback-Aktivitätseinrichtung](./activities-attract.md#feedback-activity) steuert, ob der Befrager die Rückmeldungen der anderen sehen kann.
+\*\* Eine Konfigurationsoption in der [Feedback-Aktivitätseinrichtung](activities-attract.md#feedback-activity) steuert, ob der Befrager die Rückmeldungen der anderen sehen kann.
 
 ## <a name="process-templates"></a>Vorlagen verarbeiten
 
@@ -146,4 +145,3 @@ Kandidaten sind Personen, die einer Talentschmiede hinzugefügt wurden, werden j
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profile - Kandidatendetails | Erstellen, lesen, aktualisieren und löschen | Erstellen, lesen, aktualisieren und löschen | Kein Zugriff   |
 | Dokumente                   | Erstellen, lesen, aktualisieren und löschen | Erstellen, lesen, aktualisieren und löschen | Kein Zugriff   |
-

@@ -1,32 +1,31 @@
 ---
 title: Kostensteuerungs-Arbeitsbereich
-description: "Dieses Thema enthält Informationen zum Kostensteuerung-Arbeitsbereich. Dieser Arbeitsbereich ist ein zentraler Punkt, in dem Vorgesetze, die für die Steuerung eines Kostenobjekts oder für das Festlegen eines Satzes von Kostenobjekten in einer Dimension oder über Dimensionen hinweg zuständig sind, auf Berichte zugreifen können."
+description: Dieses Thema enthält Informationen zum Kostensteuerung-Arbeitsbereich. Dieser Arbeitsbereich ist ein zentraler Punkt, in dem Vorgesetze, die für die Steuerung eines Kostenobjekts oder für das Festlegen eines Satzes von Kostenobjekten in einer Dimension oder über Dimensionen hinweg zuständig sind, auf Berichte zugreifen können.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c6a196c677ed27666efec8a180f1d3b7e7ee931c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363751"
 ---
-
 # <a name="cost-control-overview"></a>Überblick der Kostensteuerung 
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,7 @@ Auf dem Inforegister **Datenenfilterung** können Sie die Datenengrundlage für 
 |-------------------------------------------------------------------|-------------|
 | Kostenrechnungssachkonto                                            | Das **Kostenrechnungssachkonto**, auf dem der Bericht basiert. Der Wert wird aus dem Feld **Kostenkontrolleinheit** abgeleitet. |
 | Kostensteuerungseinheit                                                 | Der Wert, den Sie auswählen, bestimmt das Kostenrechnungs-Sachkonto und die Kostenobjekte, auf denen dieser Bericht basiert. |
-| Statistische Dimensionshierarchie, Kostenelementdimensionshierarchie | Ein Konfigurationssatz des **Kostensteuerung**-Arbeitsbereichs kann entweder nicht-monetäre oder monetäre Werte melden, aber nicht im gleichen Layout. Wählen Sie einen Wert im Feld **Kostenelement-Dimensionshierarchie** aus, um monetäre Werte zu melden. Wählen Sie einen Wert im Feld **Statistische Dimensionshierarchie** aus, um nicht monetäre Werte zu melden. Der Dimensionshierarchiedatensatz, den Sie auswählen, bestimmt die Struktur die Ebenen der Berichtserstellung und Aggregation.<blockquote>[!NOTE]<br>Um nicht-monetäre und monetäre Werte nebeneinander anzuzeigen, können Sie die Daten in Microsoft Excel für das Microsoft-Power BI-Inhaltspaket exportieren.</blockquote> |
+| Statistische Dimensionshierarchie, Kostenelementdimensionshierarchie | Ein Konfigurationssatz des **Kostensteuerung**-Arbeitsbereichs kann entweder nicht-monetäre oder monetäre Werte melden, aber nicht im gleichen Layout. Wählen Sie einen Wert im Feld **Kostenelement-Dimensionshierarchie** aus, um monetäre Werte zu melden. Wählen Sie einen Wert im Feld **Statistische Dimensionshierarchie** aus, um nicht monetäre Werte zu melden. Der Dimensionshierarchiedatensatz, den Sie auswählen, bestimmt die Struktur die Ebenen der Berichtserstellung und Aggregation.<blockquote>[!NOTE]<br>Um nicht-monetäre und monetäre Werte nebeneinander anzuzeigen, können Sie die Daten nach Microsoft Excel für das Microsoft Power BI-Inhaltspaket exportieren.</blockquote> |
 | Kostenobjekt-Dimensionshierarchie                                   | Wählen Sie die Dimensionshierarchie der Kostenelementdimension aus, die dem Zweck der Berichterstellung, die Sie definieren, entspricht. |
 | Ursprüngliche Budgetversion                                           | Wählen Sie die Budgetversion-ID aus, die als ursprüngliches Budget im Rahmen dieses Berichts dient. |
 | Überarbeitete Budgetversion                                            | Wählen Sie die Budgetversion-ID aus, die als überarbeitetes Budget im Rahmen dieses Berichts dient. |
@@ -157,6 +156,5 @@ Im folgenden Beispiel hat der Verteilschlüssel den Typ **Formelzuteilungsbasis*
 Zusätzliche Ressourcen 
 
 [Zugriffsrechte für Kostenobjekt-Controller definieren](access-rights-cost-object-controller.md)
-
 
 

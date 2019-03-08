@@ -1,31 +1,30 @@
 ---
 title: Einrichten von Serviceintervallen
-description: "Durch das Servicevereinbarungsintervall wird die Häufigkeit angegeben, mit der bei der automatischen Erstellung von Serviceaufträgen Serviceauftragspositionen für Servicevereinbarungspositionen erstellt werden."
+description: Durch das Servicevereinbarungsintervall wird die Häufigkeit angegeben, mit der bei der automatischen Erstellung von Serviceaufträgen Serviceauftragspositionen für Servicevereinbarungspositionen erstellt werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAAgreementinterval
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d9203b01f578779d45d63c18d1c1afd2fe59125b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 4ea10e4c0fbfd21538bba16d2b01deb3e4b3a10d
-ms.openlocfilehash: 03ebf4fd4615eac77e6f990a2d4e7f7326c0d257
-ms.contentlocale: de-de
-ms.lasthandoff: 02/20/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365821"
 ---
-
 # <a name="set-up-service-intervals"></a>Einrichten von Serviceintervallen  
 
 [!include [banner](../includes/banner.md)]
@@ -55,4 +54,3 @@ Sie möchten ein Serviceintervall von 10 Tagen erstellen.
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Serviceintervalle](service-intervals.md)  
-

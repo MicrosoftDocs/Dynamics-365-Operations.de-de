@@ -1,13 +1,13 @@
---- 
-title: "EUR-00012 Ausstellen einer EU-Gelangensbestätigung"
-description: "Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung nach und konfiguriert ein Debitorenkonto, um Eintragsbescheinigungen zu verwenden und eine Bescheinigung auszustellen."
+---
+title: EUR-00012 Ausstellen einer EU-Gelangensbestätigung
+description: Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung nach und konfiguriert ein Debitorenkonto, um Eintragsbescheinigungen zu verwenden und eine Bescheinigung auszustellen.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 5a566b1d25064e3fccc8953dc883aa63bd16a301
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370360"
 ---
 # <a name="eur-00012-issue-an-eu-entry-certificate"></a>EUR-00012 Ausstellen einer EU-Gelangensbestätigung
 
@@ -87,5 +87,4 @@ Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung na
 3. Klicken Sie auf "OK".
 4. Klicken Sie im Aktivitätsbereich auf "Rechnung".
 5. Ausgestellte Gelangensbestätigungen anzeigen
-
 

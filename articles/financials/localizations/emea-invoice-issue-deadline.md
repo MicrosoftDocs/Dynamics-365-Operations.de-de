@@ -1,13 +1,13 @@
 ---
 title: Rechnungsabgangsfrist
-description: "In diesem Artikel wird erläutert, wie Parameter eingerichtet werden, um die Fälligkeitsdaten für die Erstellung von Debitorenrechnungen und Kreditorenrechnungen in der Europäischen Union zu berechnen."
+description: In diesem Artikel wird erläutert, wie Parameter eingerichtet werden, um die Fälligkeitsdaten für die Erstellung von Debitorenrechnungen und Kreditorenrechnungen in der Europäischen Union zu berechnen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 942b48170d7c164e16d2b8f5544b8777668adab3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 34dac634e09a8daa8a22b9f1efbc18ca44444e21
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370385"
 ---
-
 # <a name="invoice-issue-deadline"></a>Rechnungsabgangsfrist
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Verwenden Sie die Seite **Berechnung für Fälligkeitsdatum der Rechnungsausstel
 Sie können auch Datumskontrollenparameter einrichten, um sicherzustellen, dass Debitorenrechnungen und Gutschriften für Debitorentransaktionen innerhalb des angegebenen Zeitraums generiert werden, nachdem die Lieferung erfolgt ist. Sie finden diese Parameter im Bereich **Rechnungsdatenkontrolle** auf der Seite **Debitorenkontenparameter**.
 
 ## <a name="example"></a>Beispiel
-Um Microsoft Dynamics 365 for Finance and Operations einzurichten, um die Fälligkeitsdaten für die Ausstellung von Rechnungen für Lieferungen innerhalb der EU am 15. Tag des Folgemonats, nachdem die Lieferung zugestellt wurde, zu berechnen, erstellen Sie einen Datumsintervallcode und eine Berechnungsregel, die die folgenden Einstellungen besitzen:
+Um Microsoft Dynamics 365 for Finance and Operations so einzurichten, dass Fälligkeitsdaten für die Ausstellung von Rechnungen für Lieferungen innerhalb der EU am 15. Tag des Folgemonats, nachdem die Lieferung zugestellt wurde, berechnet werden, erstellen Sie einen Datumsintervallcode und eine Berechnungsregel, die die folgenden Einstellungen besitzen:
 
 ### <a name="date-interval-code"></a>Datumsintervallcode
 
@@ -118,7 +117,6 @@ Wenn Sie keinen Zugriff auf die Seiten für die Durchführung der in diesem Arti
 </tr>
 </tbody>
 </table>
-
 
 
 

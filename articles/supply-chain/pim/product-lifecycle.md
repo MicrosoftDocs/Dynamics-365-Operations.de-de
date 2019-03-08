@@ -5,28 +5,27 @@ author: cvocph
 manager: AnnBe
 ms.date: 12/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: bf9e8fe828cae0f643bfb89c34f1d545e3993619
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
-ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
-ms.contentlocale: de-de
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364832"
 ---
-
 # <a name="product-lifecycle-state"></a>Produktlebenszyklus-Status 
 
 [!include [banner](../includes/banner.md)]
@@ -114,4 +113,3 @@ Verwenden Sie die folgenden Kriterien, um die freigegebenen Produkte und Produkt
 -  [Einem veröffentlichten Produkt einen Produktlebenszyklusstatus zuweisen (Aufgabenleitfaden)](tasks/product-lifecycle-state-released-product.md)
 -  [Veraltete Produktvarianten finden und einen Produktlebenszyklus-Status (Aufgabenleitfaden) zuweisen](tasks/obsolete-product-variants.md)
 -  [Ein Produktlebenszyklusstatus erstellen, um Produkte vom Produktprogrammplan (Aufgabenleitfaden) auszuschließen](tasks/exclude-products-master-planning.md)
-

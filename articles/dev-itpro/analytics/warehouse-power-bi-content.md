@@ -1,13 +1,13 @@
 ---
-title: Warehouse Performance Power BI Inhalt
-description: "In diesem Thema wird beschrieben, was im Warehouse Performance Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+title: Power BI-Inhalt zur Lagerortleistung
+description: In diesem Thema wird beschrieben, was im Warehouse Performance Power BI Inhalt enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,35 +18,34 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 99966a67fa1fd91fc54e7100f8e2e41b87f6a406
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365361"
 ---
-
-# <a name="warehouse-performance-power-bi-content"></a>Warehouse Performance Power BI Inhalt
+# <a name="warehouse-performance-power-bi-content"></a>Power BI-Inhalt zur Lagerortleistung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im **Lagerortleistung** Microsoft Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im **Warehouse Performance** Power BI Inhalt enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Der Microsoft Power BI Inhalt **Lagerortleistung** wurde erstellt, damit Lagerort und Betriebsleiter wichtige eingehende und ausgehende Bestandmetriken überwachen können. Er verwendet Lagerortverwaltung, Produkt und andere Transaktionsdaten von Ihrem System und stellt eine gesamte Ansicht der Lagerortleistung und eine Aufschlüsselung für Kreditoren, Produktgruppen, Produkte und Standort und Lagerorte bereit.
+Der Power BI Inhalt **Lagerortleistung** wurde erstellt, damit Lagerort und Betriebsleiter wichtige eingehende und ausgehende Bestandmetriken überwachen können. Er verwendet Lagerortverwaltung, Produkt und andere Transaktionsdaten von Ihrem System und stellt eine gesamte Ansicht der Lagerortleistung und eine Aufschlüsselung für Kreditoren, Produktgruppen, Produkte und Standort und Lagerorte bereit.
 
-Lagerortverwaltung kann den Power PI Inhalt **Lagerortleistung** verwenden, um die folgenden drei Bereiche zu messen:
+Lagerortverwaltung kann den Power BI Inhalt **Lagerortleistung** verwenden, um die folgenden drei Bereiche zu messen:
 
 - **Eingehende Leistung** – Misst, wie gut ein Lieferant gegenüber dem Kunden ist (das heißt, misst die Lieferleistung) und misst die Erfüllungsleistung, damit Sie Probleme, die Arbeitskräfte oder Artikel über einen Zeitraum berücksichtigen, identifizieren können. Es ist wichtig, dass Sie rechtzeitig wissen, ob Kreditoren rechtzeitig, früh oder zu spät liefern, damit Sie bestimmen können, wie die Leistung des Kunden die Gesamtleistung beeinflusst. Ein Kreditor, der außerhalb der vereinbarten Daten liefert, kann zusätzlichen Druck auf den Lagerort ausüben, weil unerwartete Arbeit entstehen kann und die Durchschnittliche Lagerzeit sich verändert.
 - **Versandleistung** – Misst, ob Ihr Lagerort vollständig oder in Teilen an Debitoren versendet (das heißt, misst die Versand und Lieferleistung), sodass mögliche Probleme mit Produkten, Standorten oder Lagerorten erkannt werden können. Wenn Sie feststellen, dass der Versand in bestimmte Bereiche oder Städte zu spät erfolgt, müssen Sie möglicherweise mehr Aufmerksamkeit für Transporte oder Kundenbetreuung aufwenden.
 - **Lagerplatzbestandsrichtigkeit** – Bestandsrichtigkeit ist eine wichtige interne Lagerort-Business Intelligence (BI). Es ist außerordentlich wichtig, dass Sie bestimmen, wie genau Sie im Allgemeinen zählen. Es ist allerdings auch wichtig, dass Sie bestimmen, wie genau Sie Artikel an den richtigen Lagerplätzen speichern und dass Sie Abweichungsdaten markieren, damit Sie eine Position für Artikel oder eine eingeleitete gesamte Inventur für bestimmte Artikel suchen können. (Aktuell wird die neue elementbasierte Inventurfunktion als Hotfix geliefert.) Wenn Sie diesen Power BI Inhalt verwenden, um die Korrektheit der verfügbaren Lagerbestanddaten pro Standort zu bestimmen, können Sie auch Diebstähle in Ihren Geschäften identifizieren. Sie können außerdem bestimmen, ob Lagerplätze verfügbare Mengen haben, die von den Enterprise Ressourcenplanungsdaten (ERP) abweichen. Diese Lagerplätze sind möglicherweise zu groß, oder sie können möglicherweise nicht gezählt werden. Alternativ könnten einige physische Positionen ungültig sein, damit ist es schwierig, einen einzelnen Artikeltyp in Einklang mit verfügbaren Daten zu halten.
 
-## <a name="accessing-the-power-bi-content-pack"></a>Zugreifen auf Power BI Inhaltspaket
-Die **Lagerhausleistung** Power BI-Inhalt wird in der **Lagerhausleistung**angezeigt (**Lagerhausverwaltung**\>**Abfragen und Berichte**\>**Produktionsleistungsanalyse**\>**Lagerhausfluss**).
+## <a name="accessing-the-power-bi-content-pack"></a>Zugreifen auf das Power BI-Inhaltspaket
+Die **Lagerhausleistung** Power BI-Inhalt wird in der **Lagerhausleistung** angezeigt (**Lagerhausverwaltung** \> **Abfragen und Berichte** \> **Produktionsleistungsanalyse** \> **Lagerhausfluss**).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
-Die **Lagerortleistung** Power BI Inhalt enthält einen Bericht. Dieser Bericht enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im **Lagerortleistung** Power Bl Inhalt.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriken, die im Power BI-Inhalt enthalten sind
+Die **Lagerortleistung** Power BI Inhalt enthält einen Bericht. Dieser Bericht enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Power BI-Inhalt zu **Lagerhausleistung**.
 
 | Berichtsseiten                 | Diagramme                                   | Beschreibung |
 |-----------------------------|------------------------------------------|-------------|
@@ -79,7 +78,7 @@ Die **Lagerortleistung** Power BI Inhalt enthält einen Bericht. Dieser Bericht 
 | Versandleistung        | Nach Standort/Lagerort Versendet              | Der Prozentsatz, der frühzeitig rechtzeitig oder zu spät versandt wurde, nach Artikel oder Artikelgrupp, |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Das Datenmodells und Berechnungen verstehen
-Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Lagerortleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Lagerortleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
 Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verwendet.
 
@@ -113,4 +112,3 @@ Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verw
 | Versandleistung        | Versand nach Produkt                       | CustPackingSlipOnTimeStatus           | Früh, rechtzeitig und verspätet erhalten (siehe Beschreibungen oben in dieser Tabelle). |
 | Versandleistung        | Geliefert an Debitoren                      | CustPackingSlipOnTimeStatus           | Früh, rechtzeitig und verspätet erhalten (siehe Beschreibungen oben in dieser Tabelle). |
 | Versandleistung        | Nach Standort/Lagerort Versendet              | CustPackingSlipOnTimeStatus           | Früh, rechtzeitig und verspätet erhalten (siehe Beschreibungen oben in dieser Tabelle). |
-

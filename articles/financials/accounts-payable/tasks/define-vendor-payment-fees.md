@@ -1,13 +1,13 @@
---- 
-title: "Gebühren für Kreditorenzahlung definieren"
-description: "Richten Sie Kreditorenzahlungsgebühren ein."
+---
+title: Gebühren für Kreditorenzahlung definieren
+description: Richten Sie Kreditorenzahlungsgebühren ein.
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399291a98ddc6b01fb08f7a5c629ec7a6f8acfbf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f62d07ffa1ee4a525f0f266922bc88e5ac8d5ada
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363199"
 ---
 # <a name="define-vendor-payment-fees"></a>Gebühren für Kreditorenzahlung definieren
 
@@ -58,5 +58,4 @@ Richten Sie Kreditorenzahlungsgebühren ein. Für diese Aufgabe wird das Demo-Un
 17. Wählen Sie im Feld "Gebührwährung" die Währung aus, in der die Gebühr berechnet wird.
     * Diese Währung ist für die Gebühr. Die Zahlungswährung wird verwendet, um zu definieren, wann die Gebührenregel basierend auf der Währung der Zahlung veranschlagt werden soll. Beispielsweise erhebt Ihre Bank möglicherweise eine Gebühr, wenn eine Zahlung in EUR geleistet wird, aber bei allen anderen Zahlungen wird keine Gebühr veranschlagt.  
 18. Klicken Sie auf "Speichern".
-
 

@@ -1,13 +1,13 @@
---- 
-title: "EUR-00012 Erhalt einer EU-Gelangensbestätigung"
-description: "Diese Prozedur läuft Sie durch das Erfassen einer EU-Eintragsbescheinigung durch, die von einem Fremdhersteller ausgestellt und von Ihrem Debitor empfangen wurde."
+---
+title: EUR-00012 Erhalt einer EU-Gelangensbestätigung
+description: Diese Prozedur läuft Sie durch das Erfassen einer EU-Eintragsbescheinigung durch, die von einem Fremdhersteller ausgestellt und von Ihrem Debitor empfangen wurde.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustEntryCertificateJour_W
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: cbcf6d8dc71b833b3d90e72e7ef6c9d438241640
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370344"
 ---
 # <a name="eur-00012-receive-an-eu-entry-certificate"></a>EUR-00012 Erhalt einer EU-Gelangensbestätigung
 
@@ -41,5 +41,4 @@ Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, is
 6. Klicken Sie auf "Speichern".
     * Weitere Informationen zur Identifikation der Charge.  
     * So fügen Sie ein gescanntes Bild der EU-Eintragsbescheinigung der Erfassung pflegen.  
-
 

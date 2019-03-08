@@ -1,34 +1,34 @@
 ---
-title: "Startseite für lokale Bereitstellungen"
-description: "Dieses Thema liefert Informationen und Links zu Inhalten über lokale Bereitstellungen."
+title: Startseite für lokale Bereitstellungen
+description: Dieses Thema liefert Informationen und Links zu Inhalten über lokale Bereitstellungen.
 author: kfend
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: c51cce929384b7e822213dcb9df9007edfe3700c
+ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
 ms.translationtype: HT
-ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
-ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
-ms.contentlocale: de-de
-ms.lasthandoff: 11/02/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "373276"
 ---
 # <a name="on-premises-deployments-home-page"></a>Startseite für lokale Bereitstellungen
 
 [!include [banner](../includes/banner.md)]
 
-Sie können Microsoft Dynamics 365 for Finance and Operations (On-Premises) bereitstellen. Wenn Sie eine lokale Bereitstellungsform auswählen, unterscheiden sich die Systemanforderungen, die Hardwareauslegung und die Funktionalität von einer Cloud-Bereitstellung. Dieses Thema bietet Links zu Inhalten mit Informationen speziell zu lokalen Bereitstellungen.
+Sie können Microsoft Dynamics 365 for Finance and Operations beretstellen (lokal). Wenn Sie eine lokale Bereitstellungsform auswählen, unterscheiden sich die Systemanforderungen, die Hardwareauslegung und die Funktionalität von einer Cloud-Bereitstellung. Dieses Thema bietet Links zu Inhalten mit Informationen speziell zu lokalen Bereitstellungen.
 
 ## <a name="get-started"></a>Erste Schritte
 - [Optionen für lokale Bereitstellungen](on-premises-overview.md)
@@ -59,10 +59,11 @@ Sie können Microsoft Dynamics 365 for Finance and Operations (On-Premises) bere
 ## <a name="retail"></a>Retail
 - [In lokalen Bereitstellungen verfügbare Einzelhandelsfunktionen](../../retail/retail-onprem.md)
 - [Installationsschritte für Retail Channel Komponenten in einer lokalen Umgebung](deploy-retail-onprem.md)
-- [Konfigurieren, Installieren und aktivieren Sie Retail Modern (MPOS)](../../retail/retail-modern-pos-device-activation.md)
+- [Konfigurieren, Installieren und Aktivieren von Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
 - [Konfigurieren und Installieren von Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-
+## <a name="upgrade"></a>Upgrade durchführen
+- [In-Place-Upgrade-Prozess für lokale Umgebungen](../migration-upgrade/on-prem-upgrade.md)
 
 ## <a name="other-resources"></a>Weitere Ressourcen
 - [Problembehandlung lokaler Bereitstellungen](troubleshoot-on-prem.md)
@@ -71,4 +72,3 @@ Sie können Microsoft Dynamics 365 for Finance and Operations (On-Premises) bere
 - [Entfernte oder veraltete Funktionen](../migration-upgrade/deprecated-features.md)
 - [Lokale Software-Lebenszyklusrichtlinien- und -Freigaben](../migration-upgrade/on-prem-version-update-policy.md)
  
-

@@ -1,13 +1,13 @@
 ---
 title: Retouren
-description: "Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen."
+description: Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362693"
 ---
-
 # <a name="sales-returns"></a>Retouren
 
 [!include [banner](../includes/banner.md)]
 
 Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
 
-Debitoren können Rückgabeartikel unterschiedlichen Gründen vornehmen. So kann ein Artikel fehlerhaft sein, oder er entsprach möglicherweise nicht den Erwartungen des Debitors. Die Rücklieferungen starten wenn Debitoren eine Artikelrückgabe anfordern. Nachdem die Anforderung des Debitors erhalten ist, wird eine Rücklieferung im Microsoft Dynamics 365 for Finance and Operations erstellt.
+Debitoren können Rückgabeartikel unterschiedlichen Gründen vornehmen. So kann ein Artikel fehlerhaft sein, oder er entsprach möglicherweise nicht den Erwartungen des Debitors. Die Rücklieferungen starten wenn Debitoren eine Artikelrückgabe anfordern. Nach Eingang der Kundenanfrage wird in Microsoft Dynamics 365 for Finance and Operations ein Rücklieferungsauftrag erstellt.
 
 ## <a name="return-order-process"></a>Rücklieferungsprozess
 Die folgende Abbildung bietet eine Übersicht über den Rücklieferungprozess.  
@@ -133,7 +132,7 @@ Zusätzlich zum bestimmten der Disposition der zurückgegebenen Güter können D
 <ul>
 <li>Es gibt genügend Vertrauen unter den Parteien.</li>
 <li>Die Kosten für die Rücksendung des fehlerhaften Artikels sind zu kostspielig.</li>
-<li>Die Artikel können nicht zurück in das Lager genommen werden. Aufgrund anderen Bedingungen ist eine physische Rücklieferung nicht erforderlich.</li>
+<li>Die Artikel können nicht direkt wieder dem Lager angenommen werden. Aufgrund anderen Bedingungen ist eine physische Rücklieferung nicht erforderlich.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -329,7 +328,6 @@ In diesem Beispiel wird die Rücklieferungsposition erstellt, indem die **Auftra
 ![Die Rücklieferungsposition wird erstellt, indem die Auftrag suchen-Funktion verwendet wird ](./media/SalesReturn11.png)  
 
 >[Hinweis!] **Rabatt** und **Rücklieferungseinstandspreis** werden ordnungsgemäß festgelegt. Aus diesem Grund tritt eine genaue Stornierung der Debitorenrechnung auf.
-
 
 
 

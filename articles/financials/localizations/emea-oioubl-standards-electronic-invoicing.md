@@ -1,30 +1,29 @@
 ---
-title: "Unterstützte Standards für die elektronische Rechnungsstellung in Europa"
-description: "Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung in Microsoft Dynamics 365 for Finance and Operations in der europäischen Region."
+title: Unterstützte Standards für die elektronische Rechnungsstellung in Europa
+description: Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung in Microsoft Dynamics 365 for Finance and Operations in der europäischen Region.
 author: mrolecki
 manager: AnnBe
 ms.date: 07/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 10274
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 366e67415b82c6bbc6b066b4ce44e4654bd93103
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 354b9fd50dbd628b91fd4d77c4cb323ddc36428f
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370332"
 ---
-
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Unterstützte Standards für die elektronische Rechnungsstellung in Europa
 
 [!include [banner](../includes/banner.md)]
@@ -67,7 +66,7 @@ Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserst
 -   Projektrechnung (ES)
 -   Projektrechnung (IT)
 
-Die von Ihnen erstellten elektronischen Rechnungen und Gutschriften enthalten die erforderlichen Informationen, wie beispielsweise die EAN-Nummer (European Article Numbering), den Ansprechpartner, die Kontonummer sowie Adressinformationen für den Kunden. Bei der Erstellung von Rechnungen werden Auswertungsregeln angewendet, Sie können also überprüfen, ob die richtigen Informationen eingetragen wurden. Welche Informationen gefordert werden, unterscheidet sich für die einzelnen Länder. Die Anforderungen und die unterstützten Länder und Formate verändern sich in unregelmäßigen Abständen, Sie sollten also immer die Shared Asset Library der Microsoft Dynamics Lifecycle-Services (LCS) besuchen und die aktuellste Liste der verfügbaren Dateien mit dem Anlagentyp der **GER-Konfiguration** abfragen.
+Die von Ihnen erstellten elektronischen Rechnungen und Gutschriften enthalten die erforderlichen Informationen, wie beispielsweise die EAN-Nummer (European Article Numbering), den Ansprechpartner, die Kontonummer sowie Adressinformationen für den Kunden. Bei der Erstellung von Rechnungen werden Auswertungsregeln angewendet, Sie können also überprüfen, ob die richtigen Informationen eingetragen wurden. Welche Informationen gefordert werden, unterscheidet sich für die einzelnen Länder. Die Anforderungen und die unterstützten Länder und Formate verändern sich in unregelmäßigen Abständen, Sie sollten also immer die Bibliothek der freigegebenen Anlagen in Microsoft Dynamics Lifecycle Services (LCS) besuchen und die aktuellste Liste der verfügbaren Dateien mit dem Anlagentyp der **GER-Konfiguration** abfragen.
 
 ## <a name="additional-information"></a>Weitere Informationen
 Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie in den folgenden [Aufgabenleitfäden](../../fin-and-ops/get-started/help-overview.md#task-guides) im Feld Hilfe:
@@ -78,4 +77,3 @@ Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie
 
 > [!NOTE] 
 > Diese Aufgabenleitfäden wurden für das für Dänemark spezifische Format elektronischer Rechnungen erstellt, *OIOUBL*, sie gelten jedoch mit geringen Abweichungen auch für andere unterstütze Länder.
-

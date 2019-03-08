@@ -1,13 +1,13 @@
 ---
-title: "Power BI-Inhalt – Produktionsleistung"
-description: "In diesem Thema wird beschrieben, was im Warehouse Performance Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+title: Power BI-Inhalt – Produktionsleistung
+description: In diesem Thema wird beschrieben, was im Power BI-Inhalt – Produktionsleistung enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,38 +16,37 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365959"
 ---
-
 # <a name="production-performance-power-bi-content"></a>Power BI-Inhalt – Produktionsleistung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im **Produktionsleistung** Microsoft Power Bl Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im **Produktionsleistung** Microsoft Power BI-Inhalt enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Der **Produktionsfluss** ist für Power BI Inhalt für Produktions-Managers oder Personen in der Organisation, die für Produktionssteuerung zuständig sind.
+Die Power BI-Inhalte – **Produktionsleistung** richten sich an Produktionsmanager oder Personen in einer Organisation, die für die Produktionskontrolle verantwortlich sind.
 
-Die Berichte, die in Power BI Inhalt eingeschlossen sind, um die Leistung von Produktionsvorgängen hinsichtlich der fristgerechten Ausführung, der Qualität und der Kosten zu überwachen. Die Berichte verwenden Transaktionsdaten von Produktionsaufträgen sowie von Chargenaufträgen und bieten eine gesamte wertberichtigte, unternehmensweite Produktionsmetrik und eine Aufschlüsselung der Metrik nach Produkt und Ressource an.
+Mit den enthaltenen Berichten können Sie mit Power BI die Leistung von Produktionsvorgängen im Hinblick auf zeitnahe Ausführung, Qualität und Kosten überwachen. Die Berichte verwenden Transaktionsdaten von Produktionsaufträgen sowie von Chargenaufträgen und bieten eine gesamte wertberichtigte, unternehmensweite Produktionsmetrik und eine Aufschlüsselung der Metrik nach Produkt und Ressource an.
 
-Der Power BI Inhalt hebt die Möglichkeit der Organisation hervor, die Produktion pünktlich und vollständig abzuschließen. Zukünftige Leistung wird auf Basis der projektiert Produktionspläne geplant. Verständliche Berichte enthalten detaillierte Einblicke in Produktfehler, die während der Produktion anfallen, und zeigt auch die Defektsätze für Ressourcen und Arbeitsgänge.
+Der Power BI-Inhalt unterstreicht die Fähigkeit der Organisation, die Produktion pünktlich und vollständig abzuschließen. Zukünftige Leistung wird auf Basis der projektiert Produktionspläne geplant. Verständliche Berichte enthalten detaillierte Einblicke in Produktfehler, die während der Produktion anfallen, und zeigt auch die Defektsätze für Ressourcen und Arbeitsgänge.
 
-Mit diesem Power BI Inhalt können Sie Produktionsabweichungen analysieren. Die Produktionsabweichung wird als Differenz zwischen aktiven Kosten und realisierten Kosten berechnet. Die Berechnung von Produktionsabweichungen erfolgt, wenn Produktionsaufträge oder Chargenaufträge den Status **Beendet** erreichen.
+Mit diesem Power BI-Inhalt können Sie Produktionsabweichungen analysieren. Die Produktionsabweichung wird als Differenz zwischen aktiven Kosten und realisierten Kosten berechnet. Die Berechnung von Produktionsabweichungen erfolgt, wenn Produktionsaufträge oder Chargenaufträge den Status **Beendet** erreichen.
 
-Der **Produktionsfluss** Power BI Inhalt umfasst Daten, die aus Produktionsaufträgen und Chargenaufträgen stammen. Die Berichte enthalten keine Daten, die den Kanbanproduktionen zugeordnet sind.
+Der Power BI-Inhalte – **Produktionsleistung** umfasst Daten, die aus Produktionsaufträgen und Chargenaufträgen stammen. Die Berichte enthalten keine Daten, die den Kanbanproduktionen zugeordnet sind.
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Die **Produktionsleistung** Power BI-Inhalt wird auf der **Produktionsleistung** angezeigt (**Produktionssteuerung**\>**Abfragen und Berichte**\>**Produktionsleistungsanalyse**\>**Produktionsfluss**). 
+## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
+Der Power BI-Inhalt – **Produktionsleistung** wird auf der Seite **Produktionsleistung** angezeigt (**Produktionssteuerung** \> **Anfragen und Berichte** \> **Produktionsleistungsanalyse** \> **Produktionsleistung**). 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriken, die im Power BI-Inhalt enthalten sind
 
-Der **Produktionsfluss** Power BI Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden.
+Der Power BI-Berichte – **Produktionsleistung** enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden.
 
 Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspaket.
 
@@ -63,9 +62,9 @@ Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspak
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
-Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Produktionsleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen zu den Entitätsshop finden Sie unter [Power BI-Integration mit Entitäts-Shop](power-bi-integration-entity-store.md).
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Produktionsleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen zum Entitätsshop finden Sie unter [Power BI-Integration mit Entitäts-Shop](power-bi-integration-entity-store.md).
 
-Die folgenden aggregierten Messungen der Rechnungspositionsentität werden als Grundlage des Power BI Inhalts verwendet.
+Die folgenden aggregierende Messungen der Rechnungspositionsentität werden als Grundlage des Power BI-Inhalts verwendet.
 
 | Entität                   | Zentrale aggregierte Messungen  | Datenquelle für Finance and Operations | Feld              |
 |--------------------------|-----------------------------|----------------------------------------|--------------------|
@@ -130,4 +129,3 @@ Die folgenden wichtigen Dimensionen im Verkaufscube werden als Filter verwendet,
 | Entitäten                  | Benutzerkennung und Name                                                   |
 | Ressourcen                 | Ressourcen-ID, Ressourcenname, Ressourcentyp und Ressourcengruppe |
 | Produkte                  | Produktnummer, Produktname, Artikelgruppenname und Artikel-ID         |
-

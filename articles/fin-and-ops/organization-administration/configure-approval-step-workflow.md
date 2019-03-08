@@ -1,13 +1,13 @@
 ---
 title: Genehmigungsschritte in einem Workflow konfigurieren
-description: "Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können."
+description: Dieses Thema erläutert, wie Sie die Eigenschaften eines Genehmigungsschritts konfigurieren können.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f52b6ffed7c1edb97c7a673cefbc8bf486ba831
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 813866d63f38f5865666bad96f6f3590716a93ad
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368052"
 ---
-
 # <a name="configure-approval-steps-in-a-workflow"></a>Genehmigungsschritte in einem Workflow konfigurieren
 
 [!include [banner](../includes/banner.md)]
@@ -135,7 +134,7 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem der Genehmigungsschritt zugewie
     </tr>
     <tr>
     <td>Benutzer</td>
-    <td>Bestimmte Benutzer von Microsoft Dynamics 365 Finance and Operations</td>
+    <td>Bestimmte Microsoft Dynamics 365 for Finance and Operations-Benutzer</td>
     <td>
     <ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
@@ -278,4 +277,3 @@ Wenn ein Benutzer ein Dokument nicht innerhalb der vorgesehenen Zeit bearbeitet,
 
 5. Wiederholen Sie die Schritte 3 bis 4 für alle Benutzer, die dem Eskalationspfad hinzugefügt werden sollen. Sie können die Reihenfolge der Benutzer ändern.
 6. Wenn die Benutzer im Eskalationspfad nicht innerhalb der vorgesehenen Zeit antworten, wird das Dokument automatisch bearbeitet. Um die vom System auszuführende Aktivität anzugeben, wählen Sie die Zeile **Aktivität** aus, klicken Sie dann auf die Registerkarte **Aktivität bei Beendigung** und wählen eine Aktivität aus.
-

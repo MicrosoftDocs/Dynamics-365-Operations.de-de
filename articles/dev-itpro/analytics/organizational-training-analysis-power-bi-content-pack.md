@@ -1,13 +1,13 @@
 ---
-title: Power BI Inhalt Organisatorische Schulungen
-description: "In diesem Thema wird der Power BI-Inhalt „Finance and Operations – Organisatorisches Training” beschrieben."
+title: Organisatorische Trainings Power BI-Inhalt
+description: In diesem Thema wird der Power BI-Inhalt „Finance and Operations – Organisatorisches Training” beschrieben.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6c1855013dc449950877f8727a5453942aeb75de
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367523"
 ---
-
-# <a name="organizational-training-power-bi-content"></a>Power BI Inhalt Organisatorische Schulungen
+# <a name="organizational-training-power-bi-content"></a>Organisatorische Trainings Power BI-Inhalt
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,4 +58,3 @@ Finance and Operations-Daten werden für die Berichte des Inhaltspakets für das
 | Training\_Position        | Position, Titel und FTE                  | Training\_CourseAgenda Training\_CourseAttendees |
 | Training\_WorkerName      | Vorname, Nachname, vollständiger Name                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Titel- und Dienstalter                                         | Training\_CourseAttendees |
-

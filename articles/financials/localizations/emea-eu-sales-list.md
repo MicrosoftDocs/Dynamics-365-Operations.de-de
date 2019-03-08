@@ -1,13 +1,13 @@
 ---
 title: Zusammenfassende Meldung
-description: "Dieser Artikel enthält Informationen über Verkaufslisten-Berichte der Europäischen Union (EU)."
+description: Dieser Artikel enthält Informationen über Verkaufslisten-Berichte der Europäischen Union (EU).
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2c4fe1c93693cee9164f2c22ad71a29abd6473d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370390"
 ---
-
 # <a name="eu-sales-list-reporting"></a>Zusammenfassende Meldung
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,7 @@ Indem sie die ESL verwenden, können Steuerbehörden von jedem EU-Mitgliedsstaat
 Sie können die folgenden Aufgaben für eine zusammenfassende Meldung ausführen:
 
 -   Sammeln von Informationen zu Innergemeinschaftshandelsbuchungen. Eine Innergemeinschaftshandelsbuchung kann eine Verkaufsrechnung, eine Freitextrechnung, Projektrechnung oder eine Kreditorenrechnung sein. Eine Buchung wird auf Basis des Landes/der Region der Gegenpartei identifiziert. Innergemeinschaftshandelsbuchungen verschiedener Arten werden in der Tabelle für die zusammenfassende Meldung gesammelt, in der sie im Allgemeinen Formular dargestellt werden. Jeder Datensatz der ESL-Tabelle stellt eine einzelne Buchung dar und besteht aus dem USt-Bezeichner einer Gegenpartei und dem Gesamtwert von Waren und Dienstleistungen, die geliefert wurden.
--   (Optional) Anzeigen der **zusammenfassenden Meldung** in der Vorschau. Sie können die **zusammenfassende Meldung** für eine bestimmte Periode in Form einer Microsoft-Excel-Arbeitsmappe in der Vorschau anzeigen und überprüfen.
+-   (Optional) Anzeigen der **zusammenfassenden Meldung** in der Vorschau. Sie können den Bericht **Zusammenfassende Meldung** für eine bestimmte Periode in Form einer Microsoft Excel-Arbeitsmappe in der Vorschau anzeigen und überprüfen.
 -   Erstellen der **zusammenfassenden Meldung**. Die **zusammenfassende Meldung** wird in Form einer elektronischen Datei eines bestimmten Formats generiert, das für jeden Mitgliedsstaat der EU spezifisch ist. Im Allgemeinen enthält eine **zusammenfassende Meldung** grundlegende Informationen über die Berichterstellungspartei und Werte von Waren- und Dienstlieferungen. Die Informationen werden nach Land und das USt-Bezeichner einer Gegenpartei gruppiert.
 -   Schließen des Zeitraums der zusammenfassenden Meldung. Nachdem die **zusammenfassende Meldung** generiert und an Behörden übermittelt wurde, können die Datensätze der ESL-Tabelle als **geschlossen** markiert werden. Diese Buchungen werden nicht in weitere Berichte eingeschlossen.
 
@@ -122,7 +121,7 @@ In der folgenden Tabelle werden die Voraussetzungen angezeigt, die vorhanden sei
 <li><strong>Länder-/Regionsparameter</strong>-Registerkarte: Identifizieren Sie EU-Mitgliedsstaaten. Erstellen Sie für jeden EU-Mitgliedstaat einen Datensatz auf der Seite, und geben Sie die folgenden Informationen an:
 <ul>
 <li><strong>Land/Region</strong> – Wählen Sie ein Land/eine Region aus.</li>
-<li><strong>Länder-/Regionsart</strong> – Wenn der <strong>Land/Region</strong>-Wert das Land/die Region ist, in dem/der Ihr Unternehmen erfasst ist, wählen Sie <strong>Inland</strong> aus. Wenn der <strong>Land/Region</strong>-Wert ein anderer EU-Mitgliedstaat ist als das Land/die Region, in dem/der Ihr Unternehmen erfasst ist, wählen Sie <strong>EU</strong> aus. Wenn der Wert <strong>Land/Region</strong> kein EU-Mitgliedsstaat ist, wählen Sie <strong>Drittland/-region</strong> aus.</li>
+<li><strong>Länder-/Regionsart</strong> – Wenn der <strong>Land/Region</strong>-Wert das Land/die Region ist, in dem/der Ihr Unternehmen erfasst ist, wählen Sie <strong>Inland</strong> aus. Wenn der <strong>Land/Region</strong>-Wert ein anderer EU-Mitgliedstaat ist als das Land/die Region, in dem/der Ihr Unternehmen erfasst ist, wählen Sie <strong>EU</strong> aus. Wenn der <strong>Land/Region</strong>-Wert kein EU-Mitgliedsstaat ist, wählen Sie <strong>Drittland/-region</strong> aus.</li>
 </ul></li>
 <li><strong>Nummernkreise</strong>-Registerkarte: Wählen Sie auf der Position, in der der <strong>Referenz</strong>-Wert <strong>Zusammenfassende Meldung</strong> entspricht, einen Nummernkreiscode aus.</li>
 </ul></td>
@@ -158,7 +157,6 @@ Sie können eine **Zusammenfassende Meldung** generieren, indem Sie die Funktion
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Schließen des Zeitraums der zusammenfassenden Meldung
 
 Wenn Sie den Berichterstellungsprozess für eine bestimmte Periode abgeschlossen haben (beispielsweise, wenn Steuerbehörden die **Zusammenfassende Meldung** angenommen haben), können Sie die ESL-Datensätze markieren, die im Bericht für die Periode enthalten sind, indem Sie den Wert **Berichtsstatus** auf **Geschlossen** festlegen. Um diesen Status festzulegen, verwenden Sie die **Als geschlossen markieren**-Funktion auf der Seite **Zusammenfassende Meldung**. Wenn Sie den Abschluss der Periode zurücksetzen, können Sie ESL-Datensätze markieren, indem Sie den Wert **Berichtsstatus** auf **Enthalten** festlegen. Diese Datensätze können erneut in einer **Zusammenfassenden Meldung** eingeschlossen werden. Um diesen Status festzulegen, verwenden Sie die **Als** **einbezogen markieren**-Funktion auf der Seite **Zusammenfassende Meldung**.
-
 
 
 

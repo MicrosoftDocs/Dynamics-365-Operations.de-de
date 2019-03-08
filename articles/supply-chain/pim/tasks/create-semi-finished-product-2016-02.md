@@ -1,13 +1,13 @@
---- 
+---
 title: Ein halbfertiges Produkt erstellen (Februar 2016)
 description: Diese Aufgabe konzentriert sich auf das Erstellen eines halbfertigen Produkts.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, InventItemPrice
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 9caeae552471eed1cb1d8630f387ca31107fcece
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362854"
 ---
 # <a name="create-a-semi-finished-product-february-2016"></a>Ein halbfertiges Produkt erstellen (Februar 2016)
 
@@ -73,5 +73,4 @@ Diese Aufgabe konzentriert sich auf das Erstellen eines halbfertigen Produkts. E
     * Wählen Sie für dieses Beispiel die Option „Kostengruppe M1” aus.  
 30. Verwenden Sie die Verknüpfung zum Speichern eines Datensatzes.
 31. Schließen Sie die Seite.
-
 

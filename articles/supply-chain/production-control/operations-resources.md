@@ -1,13 +1,13 @@
 ---
 title: Operations-Ressourcen
-description: "Betriebliche Ressourcen führen die Aktivitäten eines Projekts oder eines Produktionsprozesses aus. Sie können unterschiedlicher Art sein und verschiedene Funktionen haben."
+description: Betriebliche Ressourcen führen die Aktivitäten eines Projekts oder eines Produktionsprozesses aus. Sie können unterschiedlicher Art sein und verschiedene Funktionen haben.
 author: sorenva
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e11d64ec37775f4fe2fc113af238a6294b459454
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366603"
 ---
-
 # <a name="operations-resources"></a>Operations-Ressourcen
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,6 @@ Wenn eine Ressourcengruppe als Lean-Arbeitsgruppe verwendet wird, wird die Kapaz
 
 ## <a name="costing-resources"></a>Nachkalkulationsressourcen
 Wenn Sie eine Aktivität wie einen Arbeitsplan-Arbeitsgang oder eine Projektstundenplanung definieren, können Sie die Anforderung für eine bestimmte betriebliche Ressourcen oder -Ressourcengruppe angeben. Sie können jedoch auch die Anforderung für eine betriebliche Ressource eines bestimmten Typs oder einer betrieblichen Ressource mit einer bestimmten Funktion oder Kompetenz angeben. Aus diesem Grund wird die tatsächliche Ressourcenzuweisung nicht getätigt, bis die Aktivität geplant ist und die Kapazität reserviert ist. Daher können Sie auf einem Arbeitsplan-Arbeitsgang angeben, dass Vorkalkulation und Herstellkostenkalkulation auf Basis einer Einzelgeschäftressource erfolgen müssen. Diese betriebliche Ressource wird als Nachkalkulationsressource bezeichnet. Sie können Kostenkategorien und Arbeitsgangzeiten aus der Nachkalkulationsressource zur Aktivität übertragen. Wenn der Arbeitsgang geplant wird, werden Vorkalkulation und Stücklistenberechnung unter Verwendung der tatsächlich geplanten betrieblichen Ressource erstellt.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Steuerrückerstattungsdokumente für Ungarn"
-description: "In diesem Thema wird erläutert, wie Steuerrückerstattungsdokumente für Ungarn eingerichtet und erstellt werden."
+title: Steuerrückerstattungsdokumente für Ungarn
+description: In diesem Thema wird erläutert, wie Steuerrückerstattungsdokumente für Ungarn eingerichtet und erstellt werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Austria
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7f7ae1baf4c79b7938fcf666e43e8e71087a4f64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 40415cb3a2d0684ce137eb546b906583d5ad0c98
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370348"
 ---
-
 # <a name="tax-reimbursement-documents-for-hungary"></a>Steuerrückerstattungsdokumente für Ungarn
 
 [!include [banner](../includes/banner.md)]
@@ -83,4 +82,3 @@ Wenn Ihre Organisation einem Debitor für Mehrwertsteuer Erstattung bietet, müs
 3. Wählen Sie **Steuerrückerstattung** &gt; **MwSt. ausgeglichen.** aus.
 
 Das Kontrollkästchen **MwSt. ausgeglichen.** ist für die Rechnung und die Rechnungspositionen aktiviert.
-

@@ -1,13 +1,13 @@
---- 
-title: "DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)"
-description: "Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch."
+---
+title: DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
+description: Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 927b283f160d8bd1a6b89c40da05bb7a542eb232
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370335"
 ---
 # <a name="de-00003-electronic-transmission-of-vat-declaration-elster"></a>DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 
@@ -54,5 +54,4 @@ Sie sollten ein gültiges Zertifikat (wie test-soft-pse.pfx) und eine Steuerbeh�
 12. Klicken Sie auf "Speichern".
 13. Schließen Sie die Seite.
 14. Klicken Sie auf "Speichern".
-
 

@@ -1,13 +1,13 @@
 ---
 title: Sachkonto-Zuordnungsregeln
-description: "Dieser Artikel enthält Informationen zu Sachkonto-Zuordnungsregeln. Er beschreibt die verschiedenen Komponenten dieser Zuordnungsregeln und der Zuordnungsmethoden, die für sie verwendet werden können."
+description: Dieser Artikel enthält Informationen zu Sachkonto-Zuordnungsregeln. Er beschreibt die verschiedenen Komponenten dieser Zuordnungsregeln und der Zuordnungsmethoden, die für sie verwendet werden können.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: abbeb1bb4481139dff902916362a479f94fb96e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 63562cde3f2813fdcfc9df7ccbfc623aa2fbe9b1
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365729"
 ---
-
 # <a name="ledger-allocation-rules"></a>Sachkonto-Zuordnungsregeln
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Jede Zuordnungsregel besitzt vier Komponenten: Allgemeines, Quelle, Ziel und Geg
 -   **Ziel** – Mithilfe dieser wird definiert, wie das Ergebnis der Zuweisungsberechnung auf die verteilt und aufgeteilt werden soll. Beispielsweise kann es eine Zielposition für jede Abteilung geben.
 -   **Gegenkonto** – Diese Komponente definiert, wie Hauptkonten und Dimensionen für die Gegenbuchungen bestimmt werden, die die Zieleinträge ausgleichen. Benutzerdefinierte Optionen werden in der Regel anstelle von Konten und Dimensionen auf Quellbasis verwendet. Wenn **Datenquelle** auf **Fester Wert** festgelegt ist, kann **Quelle** nicht als Option verwendet werden.
 -   **Sachkontozuteilungsbasisregeln** – Diese Regeln verwenden ihre eigenen Quellfilterkriterien, um festzulegen, welche Sachkontosalden für die Zuweisung verwendet werden sollen (beispielsweise, Umsatzerlös pro Abteilung). Jede Zuordnungsbasisregel kann für eine Vielzahl von Zuordnungsregeln verwendet werden.
-
 
 
 

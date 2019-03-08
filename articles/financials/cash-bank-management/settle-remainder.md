@@ -1,13 +1,13 @@
 ---
 title: Rest ausgleichen
-description: "Sie können den Ausgleich über die noch zu bezahlenden Betragsaktivität ausgleichen, indem Sie den Betrag einem Sachkonto zuweisen."
+description: Sie können den Ausgleich über die noch zu bezahlenden Betragsaktivität ausgleichen, indem Sie den Betrag einem Sachkonto zuweisen.
 author: mikefalkner
 manager: aolson
 ms.date: 10/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
+ms.openlocfilehash: 408a36a7cf221463b38260bd8830b422e58ccb64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
-ms.openlocfilehash: e67bd36adc92bffea48087d0322ab14e9c066a4e
-ms.contentlocale: de-de
-ms.lasthandoff: 12/06/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367201"
 ---
-
 # <a name="settle-remainder"></a>Rest ausgleichen
 
 [!include [banner](../includes/banner.md)]
@@ -71,4 +70,3 @@ Um den Rest auszugleichen, führen Sie die folgenden Schritte aus:
 7)  Sie können auch eine Zahlungserfassung mit dem Ausgleichsrest auswählen oder ihn nur buchen ohne eine Erfassung zu erstellen. Wählen Sie **Ja** für **Bearbeiten in der Erfassung**, um eine Zahlungserfassung zu erstellen. Sie können die Zahlungserfassung weiter bearbeiten, die Sie erstellen.
 8)  **Rest ausgleichen** anklicken. Wenn Sie sich entscheiden, eine Erfassung zu erstellen, wird die Schaltfläche zu **Erfassung erstellen** geändert. **Erfassung erstellen** anklicken.
 9)  Wenn Sie eine Zahlungserfassung erstellt haben, wird die Erfassungsseite **Rest ausgleichen** geöffnet. Eine zusätzliche Erfassungsposition wird der Erfassung für den Ausgleich des Restbetrags mit dem als Ausgleichsrestkonto als Gegenkonto hinzugefügt. Wenn Sie einen Debitor oder Lieferant hinzufügen, sodass der Regulierungsbetrag zu einem anderen Debitor oder Lieferanten verschoben werden kann, ist eine weitere Position zur Erfassung hinzuzufügen, um den Ausgleichsbetrag zu diesem Debitor oder Kreditor zu verschieben.
-

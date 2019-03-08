@@ -5,9 +5,9 @@ author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e72d4e90ac83787ed7c58d91c2102696acfac68
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b64d9e53736fd3b81ee997ed28ccfa62ed7e9ce6
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367546"
 ---
-
 # <a name="manage-standard-cost-updates"></a>Standardkostenaktualisierungen verwalten
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,6 @@ Das folgende Beispiel veranschaulicht, wie der Einzelversions- und der Zwei-Vers
 -   **Zwei-Versionen-Ansatz für die Aktualisierung von Kostendaten** − Für den Zwei-Versionen-Ansatz wird eine zusätzliche Nachkalkulationsversion benötigt, in der ausschließlich die Kostenaktualisierungen enthalten sind. Der Bezeichner für diese Version ist "2016-STD-ÄNDERUNGEN". Kostenaktualisierungen werden in "2016-STD-ÄNDERUNGEN" erfasst und auf den Status "Ausstehend" festgelegt. Beim Zwei-Versionen-Ansatz ist für die Herstellkostenkalkulation der ausstehenden Kosten für produzierte Artikel eine Fallback-Datenquelle erforderlich. Denn die zusätzliche Nachkalkulationsversion "2016-STD-ÄNDERUNGEN" enthält lediglich einen Teil der Kostendaten. Das Fallback kann entweder als aktive Kosten oder als Nachkalkulationsversion "2016-STD" ausgedrückt werden, da beide die Quelle der Kostendaten identifizieren, wenn sie nicht in "2016-STD-ÄNDERUNGEN" enthalten sind. Nach Aktivierung der ausstehenden Kosten enthält die Nachkalkulationsversion "2016-STD-ÄNDERUNGEN" die derzeit aktiven Kosten (also die Aktualisierungen), wohingegen die ursprüngliche Nachkalkulationsversion "2016-STD" unverändert bleibt. Beim Zwei-Versionen-Ansatz sollten Sperrrichtlinien eingerichtet werden, um eine Aktualisierung der ursprünglichen Nachkalkulationsversion zu verhindern. Für die zusätzliche Nachkalkulationsversion sollten exakt die gleichen Richtlinien eingerichtet werden. Davon ausgenommen sind das angegebene Anfangsdatum sowie die selektive Verwendung von Sperrrichtlinien, um Aktualisierungen zuzulassen. Das angegebene Anfangsdatum muss zur Berücksichtigung des geplanten Aktivierungsdatums bei jeder Änderung geändert werden.
 
 In diesem Beispiel wurde eine zusätzliche Nachkalkulationsversion zum Verwalten von Aktualisierungen im Laufe des Jahres 2016 verwendet. Es können auch mehrere zusätzliche Nachkalkulationsversionen verwendet werden, beispielsweise getrennte Versionen für jede einzelne Änderung. Falls mehrere zusätzliche Nachkalkulationen verwendet werden, muss das Fallback als aktive Kosten ausgedrückt werden, da sie sich über mehrere Nachkalkulationsversionen erstrecken würden.
-
 
 
 

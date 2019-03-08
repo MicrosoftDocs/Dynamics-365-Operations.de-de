@@ -1,13 +1,13 @@
 ---
 title: Finanzberichtkomponenten
-description: "Dieser Artikel beschreibt die Verwendung der Komponenten, der Bausteine oder Berichtsdefinitionen in der Finanzberichterstellung. Diese Bausteine beinhalten Zeilendefinitionen, Spaltendefinitionen und Berichtstruktur-Definitionen. Dieser Artikel erläutert, wie Bausteine organisiert und gesperrt werden, und wie Sie mit Bausteingruppen arbeiten."
+description: Dieser Artikel beschreibt die Verwendung der Komponenten, der Bausteine oder Berichtsdefinitionen in der Finanzberichterstellung. Diese Bausteine beinhalten Zeilendefinitionen, Spaltendefinitionen und Berichtstruktur-Definitionen. Dieser Artikel erläutert, wie Bausteine organisiert und gesperrt werden, und wie Sie mit Bausteingruppen arbeiten.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0829c9eb54a8a5ca1f78bfe85de4779e541b945a
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368144"
 ---
-
 # <a name="financial-report-components"></a>Finanzberichtkomponenten
 
 [!include [banner](../includes/banner.md)]
 
 Dieser Artikel beschreibt die Verwendung der Komponenten, der Bausteine oder Berichtsdefinitionen in der Finanzberichterstellung. Diese Bausteine beinhalten Zeilendefinitionen, Spaltendefinitionen und Berichtstruktur-Definitionen. Der Artikel beschreibt, wie Sie Bausteine organisieren und sperren.
 
-Die Designphilosophie hinter dem Finanzberichtdesigner ist, Informationen in kleinste Komponenten oder Grundbausteine zu zerteilen, sie zu mischen und nach Bedarf zusammenzufügen. Daher ist die Berichtsformatierung von Ihren finanziellen Daten geetrennt, und Sie können das Design eines Berichts ändern, ohne die Finanzdaten in Ihrem Microsoft Dynamics ERP-System zu ändern. Mithilfe dieses Bausteinansatzes können Sie Text, Beträge und Berechnungen kombinieren, um die Berichte zu erstellen, die Sie benötigen. Zudem fördert diese Flexibilität die Kreativität, indem es das Anzeigen Ihrer Arbeitsgänge auf unterschiedliche Arten erleichtert. Die einzelnen Bausteine einer Berichtsdefinition sind einem dreidimensionalen Arbeitsblatt ähnlich, sie bieten jedoch mehr Leistung. Eine Berichtsdefinition gibt die Zeilendefinition, die Spaltendefinition und die optionale Berichtstruktur-Definition an, die für den Bericht verwendet werden sollte. Sie umfasst auch Informationen zum Speicherort des generierten Berichts und wie er formatiert wird.
+Die Designphilosophie hinter dem Finanzberichtdesigner ist, Informationen in kleinste Komponenten oder Grundbausteine zu zerteilen, sie zu mischen und nach Bedarf zusammenzufügen. Daher ist die Berichtsformatierung von Ihren Finanzdaten getrennt, und Sie können das Design eines Berichts ändern, ohne die Finanzdaten in Ihrem Microsoft Dynamics ERP-System zu ändern. Mithilfe dieses Bausteinansatzes können Sie Text, Beträge und Berechnungen kombinieren, um die Berichte zu erstellen, die Sie benötigen. Zudem fördert diese Flexibilität die Kreativität, indem es das Anzeigen Ihrer Arbeitsgänge auf unterschiedliche Arten erleichtert. Die einzelnen Bausteine einer Berichtsdefinition sind einem dreidimensionalen Arbeitsblatt ähnlich, sie bieten jedoch mehr Leistung. Eine Berichtsdefinition gibt die Zeilendefinition, die Spaltendefinition und die optionale Berichtstruktur-Definition an, die für den Bericht verwendet werden sollte. Sie umfasst auch Informationen zum Speicherort des generierten Berichts und wie er formatiert wird.
 
 ## <a name="building-blocks-of-a-report"></a>Bausteine eines Berichts
 
@@ -82,7 +81,7 @@ Sie können alle Bausteine anzeigen, die einer Bausteingruppe zugewiesen sind. S
 
 ### <a name="export-a-building-block-group"></a>Exportieren einer Bausteingruppe
 
-Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren. Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Finance and Operations-Installationen kopieren. Der Berichtsdesigner umfasst die referenzierten Schriftschnitte und Dimensionssätze mit der Bausteingruppe.
+Sie können eine Bausteingruppe oder bestimmte Berichtsbausteine innerhalb einer Bausteingruppe exportieren.Sie können die exportierte Bausteingruppe als Sicherung verwenden. Sie können auch die exportierten Daten zwischen Finance and Operations-Installationen kopieren.Der Berichtsdesigner umfasst die referenzierten Schriftschnitte und Dimensionssätze mit der Bausteingruppe.
 
 1. Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Bausteingruppen**.
 2. Wählen Sie im Dialogfeld **Bausteingruppen** die Bausteingruppe aus, die exportiert werden soll, und klicken Sie dann auf **Exportieren**.
@@ -128,4 +127,3 @@ Wenn Sie einen Baustein öffnen, können andere Benutzer auf diesen Baustein nur
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
-
